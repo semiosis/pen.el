@@ -1,0 +1,1390 @@
+Absolute Zero
+    Absolute zero is the lowest temperature
+    that is theoretically possible, at which
+    the motion of particles that constitutes
+    heat would be minimal.
+    
+    It is zero on the Kelvin scale, equivalent
+    to –273.15°C or –459.67°F.
+    
+    In order to increase stability, most
+    quantum computing systems operate at
+    temperatures near absolute zero.
+
+Algorithm
+    An algorithm is the specification of a
+    precise set of instructions that can be
+    mechanically applied to yield the solution
+    to any given instance of a problem.
+
+Anyon
+    An anyon is an elementary particle or
+    particle-like excitation having properties
+    intermediate between those of bosons and
+    fermions.
+    
+    The anyon is sometimes referred to as a
+    Majorana fermion but a more appropriate
+    term to apply to the anyon is a particle
+    in a Majorana bound state or in a Majorana
+    zero mode.
+    
+    This name is more appropriate than
+    Majorana fermion because the statistics of
+    these objects is no longer fermionic.
+    
+    Instead, the Majorana bound states are an
+    example of non-abelian anyons:
+    interchanging them changes the state of
+    the system in a way that depends only on
+    the order in which the exchange was
+    performed.
+    
+    The non-abelian statistics that Majorana
+    bound states possess allows them to be
+    used as a building block for a topological
+    quantum computer.
+
+Bose-Einstein Condensate
+    The Bose-Einstein Condensate is a super-
+    cold cloud of atoms that behaves like a
+    single atom that was predicted by Albert
+    Einstein and Indian theorist Satyendra
+    Nath Bose.
+    
+    Peter Engels, a researcher at Washington
+    State University, explains, “This large
+    group of atoms does not behave like a
+    bunch of balls in a bucket.
+    
+    It behaves as one big super-atom.
+    
+    Therefore it magnifies the effects of
+    quantum mechanics.” Theoretically, a Bose-
+    Einstein condensate (BEC) can act as a
+    stable qubit.
+
+Coherence Time
+    Coherence time is the length of time a
+    quantum superposition state can survive.
+
+Doped Diamonds
+    A doped diamond is one into which a defect
+    has been intentionally added.
+    
+    Physicists have discovered that they can
+    can make good use of these defects to
+    manipulating the spin of quantum
+    particles.
+
+Entanglement
+    Entanglement is a physical phenomenon that
+    occurs when pairs or groups of particles
+    are generated or interact in ways such
+    that the quantum state of each particle
+    cannot be described independently.
+    
+    If you think that is difficult to
+    understand, you’re not alone.
+    
+    Albert Einstein referred to this
+    phenomenon as “spooky action at a
+    distance.”
+
+’Fault-tolerant’ Material
+    Fault tolerant materials are a unique
+    class of advanced materials that are
+    electrically insulating on the inside but
+    conducting on the surface.
+    
+    Inducing high-temperature
+    superconductivity on the surface of a
+    topological insulator opens the door to
+    the creation of a pre-requisite for fault-
+    tolerant quantum computing.
+    
+    One of those materials is graphene.
+    
+    Interestingly, the edges of graphene
+    basically turn it into a kind of
+    topological insulator that could be used
+    in quantum computers.
+
+Magic State Distillation
+    Magic State Distillation is the “magic”
+    behind universal quantum computation.
+    
+    It is a particular approach to building
+    noise-resistant quantum computers.
+    
+    To overcome the detrimental effects of
+    unwanted noise, so-called “fault-tolerant”
+    techniques are developed and employed.
+    
+    Magic states are an essential (but
+    difficult to achieve and maintain) extra
+    ingredient that boosts the power of a
+    quantum device to achieve the improved
+    processing power of a quantum computer.
+
+Micro-drum
+    A micro-drum is a microscopic mechanical
+    drum.
+    
+    It has been reported that physicists at
+    the National Institute of Standards and
+    Technology (NIST) have ‘entangled’ a
+    microscopic mechanical drum with
+    electrical signals confirming that it
+    could be used as a quantum memory.
+    
+    NIST’s achievement also marks the first-
+    ever entanglement of a macroscopic
+    oscillator which expands the range of
+    practical uses of the drum.
+
+Quantum Contextuality
+    Quantum contextuality is a phenomenon
+    necessary for the “magic” behind universal
+    quantum computation.
+    
+    Physicists have long known that measuring
+    things at the quantum level establishes a
+    state that didn’t exist before the
+    measurement.
+    
+    In other words, what you measure
+    necessarily depends on how you carried out
+    the observation – it depends on the
+    ‘context’ of the experiment.
+    
+    Scientists at the Perimeter Institute for
+    Theoretical Physics have discovered that
+    this context is the key to unlocking the
+    potential power of quantum computation.
+
+Quantum Logic Gates
+    In quantum computing and specifically the
+    quantum circuit model of computation, a
+    quantum gate (or quantum logic gate) is a
+    basic quantum circuit operating on a small
+    number of qubits.
+    
+    They are the building blocks of quantum
+    circuits, like classical logic gates are
+    for conventional digital circuits.
+    
+    Quantum logic gates are represented by
+    unitary matrices.
+    
+    The most common quantum gates operate on
+    spaces of one or two qubits, just like the
+    common classical logic gates operate on
+    one or two bits.
+    
+    This means that as matrices, quantum gates
+    can be described by 2 × 2 or 4 × 4 unitary
+    matrices.
+    
+    Quantum gates are usually represented as
+    matrices.
+    
+    A gate which acts on k qubits is
+    represented by a 2k x 2k unitary matrix.
+    
+    The number of qubits in the input and
+    output of the gate have to be equal.
+
+Quantum Memory State
+    Quantum Memory State is the state in which
+    qubits much sustain themselves in order to
+    be of value in quantum computing.
+    
+    To date, these states have proved
+    extremely fragile because the least bit of
+    interference at the quantum level can
+    destroy them.
+    
+    For this reason, most experiments with
+    qubits require particles to be cooled to
+    near absolute zero as well as heavy
+    shielding.
+
+Quantum Register
+    A collection of n qubits is called a
+    quantum register of size n.
+
+Qubit
+    A quantum bit or qubit operates in the
+    weirdly wonderful world of quantum
+    mechanics.
+    
+    At that level, subatomic particles can
+    exist in multiple states at once.
+    
+    This is multi-state capability is called
+    superposition.
+    
+    One commonly used particle is the
+    electron, and state normally used to
+    generate a superposition is spin (spin up
+    could represent a “0” and spin down could
+    represent a “1”.
+    
+    Additional qubits can be added by a
+    process called entanglement.
+    
+    Theoretically, each extra entangled qubit
+    doubles the number of parallel operations
+    that can be carried out.
+    
+    MIT’s Seth Lloyd notes, “We could map the
+    whole Universe — all of the information
+    that has existed since the Big Bang — onto
+    300 qubits.”
+
+Spin
+    Spin sometimes called “nuclear spin” or
+    “intrinsic spin” is the quantum version
+    form of angular momentum carried by
+    elementary particles, composite particles
+    (hadrons), and atomic nuclei.
+    
+    Having said that, the website Ask a
+    Mathematician/Ask a Physicist states,
+    “Spin has nothing to do with actual
+    spinning.
+    
+    … Physicists use the word ‘spin’ or
+    ‘intrinsic spin’ to distinguish the
+    angular momentum that particles ‘just
+    kinda have’ from the regular angular
+    momentum of physically rotating things.”
+
+Superposition
+    Superposition is an ambiguous state in
+    which a particle can be both a “0” and a
+    “1”.
+
+Topological Qubit
+    Topological qubits rely on a rare and
+    extraordinarily finicky quantum state;
+    however, once formed, they theoretically
+    would behave like sturdy knots — resistant
+    to the disturbances that wreck the
+    delicate properties of every other kind of
+    qubit.
+
+Transmon
+    A transmon is a superconducting loop-
+    shaped qubit that can be created at
+    extremely low temperatures and, at the
+    moment, up to five of them can be linked
+    together.
+    
+    A standard transmon can maintain its
+    coherence for around 50 microseconds –
+    long enough to be used in quantum
+    circuits.
+    
+    What’s more, coherence times twice that
+    length, and transmon arrays of 10 to 20
+    loops, are supposedly just around the
+    corner.
+
+Xmon
+    An Xmon is a cross-shaped qubit created by
+    a team at the University of California,
+    Santa Barbara.
+    
+    The team found that by placing five Xmons
+    in a single row (with each qubit talking
+    to its nearest neighbor) they were able to
+    create a stable and effective quantum
+    arrangement that provides the most
+    stability and fewest errors.
+    
+    Like most other qubits, the Xmon must be
+    created at temperatures approaching
+    absolute zero.
+
+Bloch Sphere
+    In quantum mechanics, the Bloch sphere is
+    a geometrical representation of the pure
+    state space of a two-level quantum
+    mechanical system (qubit), named after the
+    physicist Felix Bloch.
+    
+    The Bloch sphere is a unit sphere, with
+    antipodal points corresponding to a pair
+    of mutually orthogonal state vectors.
+    
+    The Bloch Sphere provides the following
+    interpretation: the poles represent
+    classical bits and we use the notation |0⟩
+    and |1⟩.
+    
+    However, while these are the only possible
+    states for the classical bit
+    representation, quantum bits cover the
+    whole sphere.
+    
+    Thus, there is much more information
+    involved in the quantum bits, and the
+    Bloch sphere depicts this.
+    
+    When the qubit is measured, it collapses
+    to one of the two poles.
+    
+    Which of the two poles depends on which
+    direction the arrow in the Bloch
+    representation points to: if the arrow is
+    closer to the north pole, there is a
+    greater probability of collapsing to that
+    pole; and the same for the south pole.
+    
+    It should be observed that this introduces
+    the notion of probability to the Bloch
+    sphere: the angle θ of the arrow with the
+    vertical axes corresponds to that
+    probability.
+    
+    If the arrow points to the equator, there
+    is 50-50 chance of collapsing at either
+    pole.
+
+Coherence
+    The coherence of a qubit, roughly
+    speaking, is its ability to maintain
+    superposition over time.
+    
+    It is therefore the absence of
+    “decoherence”, which is any process that
+    collapses the quantum state into a
+    classical state, for instance by
+    interaction with an environment.
+
+DiVincenzo Criteria
+    The DiVincenzo criteria are a list of
+    conditions that are necessary to construct
+    a quantum computer, and they were first
+    proposed by the theoretical physicist
+    David P.
+    
+    DiVincenzo in his 2000 paper “The Physical
+    Implementation of Quantum Computation”.
+    
+    The DiVincenzo criteria consist of 5+2
+    conditions that an experimental setup must
+    satisfy in order to successfully implement
+    quantum algorithms, such as Grover’s
+    search algorithm, or Shor factorisation.
+    
+    The two additional conditions are
+    necessary to implement quantum
+    communication, such as that used in the
+    quantum key distribution.
+
+    1 - A scalable physical system with well characterized qubits.
+    2 - The ability to initialize the state of the qubits to a simple fiducial state.
+    3 - Long relevant decoherence times.
+    4 - A "universal" set of quantum gates.
+    5 - A qubit-specific measurement capability.
+    6 - The ability to interconvert stationary and flying qubits.
+    7 - The ability to faithfully transmit flying qubits between specified locations.
+
+Entanglement
+    Quantum entanglement is a special
+    connection between two qubits.
+    
+    There are many ways of generating
+    entanglement.
+    
+    One way is to bring two qubits close
+    together, to perform an operation to
+    entangle them and then move them apart
+    again.
+    
+    When they are entangled, you can move them
+    arbitrarily far away from each other and
+    they will remain entangled.
+    
+    This entanglement will manifest itself in
+    the outcomes of measurements on these
+    qubits.
+    
+    When measured, these qubits will always
+    yield zero or one randomly, but no matter
+    how far away they are from each other,
+    they will always yield the same outcome.
+    
+    Entanglement has two very special
+    properties that allow all the applications
+    derived from it to be made: the first
+    property is that entanglement cannot be
+    shared.
+    
+    If two qubits are maximally entangled with
+    each other, then no other party in the
+    universe can have a share of this
+    entanglement.
+    
+    This property is called the monogamy of
+    entanglement.
+    
+    The second property of entanglement, which
+    makes it so powerful, is called maximal
+    coordination.
+    
+    This property manifests itself when
+    measuring the qubits.
+    
+    When two qubits that are entangled are
+    measured in the same basis, no matter how
+    far away they are from each other, they
+    will always yield the same outcome.
+    
+    This outcome is not decided beforehand,
+    but is completely random and decided on
+    when the measurement takes place.
+
+Majorana Fermions
+    Elementary particles, (the “fermions”)
+    which form the matter, are described by an
+    equation formulated in 1928 by Paul Dirac,
+    the Dirac Equation.
+    
+    It implies that every fundamental particle
+    in the universe has an antiparticle, which
+    has the same mass but the opposite charge.
+    
+    In 1932 was found the first antiparticle:
+    the positron, associated with the
+    electron.
+    
+    The electron and the other elementary
+    particles have distinct antiparticles and
+    they acquire mass through Higgs mechanism:
+    in physics they are called “Dirac
+    fermions”.
+    
+    In 1937, the Italian physicist Ettore
+    Majorana found out a more general equation
+    (Majorana Equation) that predicts the
+    existence of neutral fermions (without
+    electric charge) that are their own
+    antiparticles.
+    
+    Majorana fermions are exotic particles
+    because they acquire the mass, not through
+    Higgs mechanism, but interacting with
+    themselves, because they are their own
+    antiparticles.
+    
+    This kind of interaction happens without
+    annihilation, because Majorana fermions
+    are very stable and interact very little
+    with “ordinary” matter.
+
+Measurement
+    Measurement is the act of observing a
+    quantum state.
+    
+    This observation will yield classical
+    information, such as a bit.
+    
+    It is important to note that this
+    measurement process will change the
+    quantum state.
+    
+    For instance, if the state is in
+    superposition, this measurement will
+    ‘collapse’ it into a classical state: zero
+    or one.
+    
+    This collapse process takes place
+    randomly.
+    
+    Before a measurement is done, there is no
+    way of knowing what the outcome will be.
+    
+    However, it is possible to calculate the
+    probability of each outcome.
+    
+    This probability is a prediction about the
+    quantum state, a prediction that we can
+    test by preparing the state several times,
+    measuring it and then counting the
+    fraction of each outcome.
+
+No Cloning Theorem
+    The no-cloning principle is a fundamental
+    property of quantum mechanics which states
+    that, given an unknown quantum state,
+    there is no reliable way of producing
+    extra copies of that state.
+    
+    This means that information encoded in
+    quantum states is essentially unique.
+    
+    This is sometimes very annoying, such as
+    when you want to protect quantum
+    information from outside influences, but
+    it is also sometimes very useful, such as
+    when you want to communicate securely with
+    someone else.
+
+Quantum Advantage
+    For a given problem, the improvement in
+    run time for a quantum computer versus a
+    conventional computer running the best
+    known conventional algorithm.
+
+Quantum Algorithm
+    An algorithm is a collection of
+    instructions that allows you to compute a
+    function, for instance the square of a
+    number.
+    
+    A quantum algorithm is exactly the same
+    thing, but the instructions also allow
+    superpositions to be made and entanglement
+    to be created.
+    
+    This allows quantum algorithms to do
+    certain things that cannot be done
+    efficiently with regular algorithms.
+
+Quantum Dot
+    Quantum dots are effectively “artificial
+    atoms.” They are nanocrystals of
+    semiconductor wherein an electron-hole
+    pair can be trapped.
+    
+    The nanometer size is comparable to the
+    wavelength of light and so, just like in
+    an atom, the electron can occupy discrete
+    energy levels.
+    
+    The dots can be confined in a photonic
+    crystal cavity, where they can be probed
+    with laser light.
+
+Quantum Error Correction
+    Quantum computers are always in contact
+    with the environment.
+    
+    This environment can disturb the
+    computational state of the system, thereby
+    causing information loss.
+    
+    Quantum error correction combats this loss
+    by taking the computational state of the
+    system and spreading it out over an
+    entangled state over many qubits.
+    
+    This entanglement allows outside classical
+    observers to observe and remedy
+    disturbances without observing the
+    computational state itself, which would
+    collapse it.
+
+Quantum Internet
+    Researchers at QuTech in the Netherlands
+    are trying to build the world’s first
+    quantum internet.
+    
+    Quantum Internet is like the regular
+    Internet but it can send quantum states
+    and establish entanglement.
+    
+    Building a full-scale quantum internet is
+    of course very hard.
+    
+    So they will begin by establishing a small
+    four-node network by 2020.
+    
+    This four-node network would serve as a
+    testbed for the larger network.
+    
+    The four nodes in this network will be
+    four cities in the Netherlands: Delft,
+    Amsterdam, Leiden and The Hague.
+
+Quantum Indeterminacy
+    The fundamental condition of existence,
+    supported by all empirical evidence, in
+    which an isolated quantum system, such as
+    a free electron, does not possess fixed
+    properties until observed in experiments
+    designed to measure those properties.
+    
+    That is, a particle does not have a
+    specific mass, or position, or velocity,
+    or spin, until those properties are
+    measured.
+    
+    Indeed, in a strict sense the particle
+    does not exist until observed.
+
+Quantum Logic Gates
+    Quantum Logic Gates are analogous to
+    conventional electronic logic gates in
+    conventional computers but different in
+    that the system follows the strange rules
+    of quantum mechanics.
+    
+    An early realization of a quantum logic
+    gate used a single trapped beryllium ion
+    to demonstrate a two-bit quantum logic
+    gate.
+    
+    One qubit, the control qubit, is specified
+    by the (quantized) external vibrations of
+    the ion in the atom trap; the two lowest
+    vibrational levels correspond to values of
+    0 and 1.
+    
+    The other qubit (the target qubit) is
+    specified by an internal state of one of
+    the ion’s electrons; it has a “spin-down”
+    state (0) and a “spin-up” state (1).
+    
+    Shooting laser pulses at a single ion
+    causes it to act as a two-bit “controlled
+    NOT” gate.
+    
+    If the control qubit is 0, the target bit
+    is left alone.
+    
+    If the control qubit is 1, the target bit
+    flips its spin.
+
+Quantum Key Distribution (QKD)
+    Quantum key distribution (QKD) is a method
+    that leverages the properties of quantum
+    mechanics, such as the no cloning theorem,
+    to allow two people to securely agree on a
+    key (OTP – One Time Pad).
+    
+    A key in this context is a secret code-
+    word that is shared only between you and
+    the person you are trying to communicate
+    with.
+    
+    This secret code-word can then be used to
+    encrypt messages such that they can be
+    transmitted without being read by a
+    malicious third party.
+
+Quantum Repeater
+    Quantum repeaters enable long distance
+    communication over a quantum network.
+    
+    An optical fiber can transmit a qubit over
+    roughly 100 kilometers.
+    
+    If you want to send a quantum information
+    over an very long distance just a fiber is
+    not good enough.
+    
+    To send information over this long
+    distances we need quantum repeaters.
+    
+    Quantum repeaters can be thought of as a
+    series of short entangled links connecting
+    the two points.
+    
+    The quantum information can then be
+    teleported through these links and arrive
+    safely at its destination.
+
+Quantum Sensors
+    A quantum sensor is a device that exploits
+    quantum correlations, such as quantum
+    entanglement, to achieve a sensitivity or
+    resolution that is better than can be
+    achieved using only classical systems.
+    
+    A quantum sensor can measure the effect of
+    the quantum state of another system on
+    itself.
+    
+    The mere act of measurement influences the
+    quantum state and alters the probability
+    and uncertainty associated with its state
+    during measurement.
+    
+    Quantum sensor is also a term used in
+    other settings where entangled quantum
+    systems are exploited to make better
+    atomic clocks or more sensitive
+    magnetometers.
+    
+    If you have a super sensitive detector,
+    its killer app is surely in measuring the
+    smallest effects you could possibly
+    imagine.
+    
+    This might mean be the tiny disturbances
+    in space as a gravitational wave goes by;
+    or a small change in a magnetic field,
+    perhaps that of the Earth itself; or even
+    overcoming the shortcomings of
+    conventional radar systems, to build a
+    quantum radar for detecting stealth
+    planes.
+
+Quantum Tunneling
+    Quantum Tunnelling is the quantum
+    mechanical effect in which particles have
+    a finite probability of crossing an energy
+    barrier, or transitioning through an
+    energy state normally forbidden to them by
+    classical physics, due to the wave-like
+    aspect of particles.
+    
+    The probability wave of a particle
+    represents the probability of finding the
+    particle in a certain location, and there
+    is a finite probability that the particle
+    is located on the other side of the
+    barrier.
+
+Quantum Simulators
+    Quantum simulation, which originated to a
+    great extent with Richard Feynman’s 1982
+    proposal, has evolved into a field where
+    scientists use a controllable quantum
+    system to study a second, less
+    experimentally feasible quantum
+    phenomenon.
+    
+    In short, a full-scale quantum computer
+    does not yet exist, and classical
+    computers often cannot solve quantum
+    problems, thus a “quantum simulator”
+    presents an attractive alternative to gain
+    insight into, for example, complex
+    material properties.
+
+Quantum Supremacy
+    A calculation on a quantum computer that
+    cannot be in practice be performed on any
+    foreseeable conventional computer.
+    
+    Either the number of CPU steps required or
+    the necessary computer memory increases
+    exponentially with the size of the input.
+    
+    This means that for all but the simplest
+    cases, the calculation becomes unfeasible
+    on a real machine using only conventional
+    digital hardware.
+
+Qubit
+    A classical bit can be in two states, it
+    can be either zero or it can be one.
+    
+    A quantum bit or qubit, however, can be in
+    a sort of zero state and in a one state at
+    the same time.
+    
+    This situation is called a superposition
+    of (quantum) states.
+    
+    Qubits have some very particular
+    properties: for instance, it is not
+    possible to make copies of qubits.
+    
+    This is sometimes very useful, such as
+    when you want to keep information private,
+    and in fact this property is used in
+    quantum cryptography.
+    
+    But it is also sometimes very annoying,
+    because if you can’t copy a qubit, you
+    can’t use this copying mechanism as a way
+    to fix errors.
+
+Superconducting Quantum Computing
+    Superconducting quantum computing is an
+    implementation of a quantum computer in
+    superconducting electronic circuits.
+    
+    Research in superconducting quantum
+    computing is conducted by IBM, Google,
+    Rigetti Computing, Microsoft and Intel.
+    
+    The devices are typically designed in the
+    radio-frequency spectrum, cooled down in
+    dilution refrigerators below 100mK and
+    addressed with conventional electronic
+    instruments, e.g.
+    
+    frequency synthesizers and spectrum
+    analyzers.
+    
+    The typical dimensions, of a scale of
+    micrometers, with sub-micrometer
+    resolution, allow a convenient design of a
+    quantum Hamiltonian with the well-
+    established integrated circuit technology.
+
+Superposition
+    Superposition is a fundamental principle
+    of quantum mechanics.
+    
+    It states that, like waves in classical
+    physics, quantum states can be added
+    together – superposed – to yield a new
+    valid quantum state; and conversely, that
+    every quantum state can be seen as a
+    linear combination, a sum of other
+    distinct quantum states.
+
+Teleportation
+    Quantum teleportation is a method to send
+    qubits using entanglement.
+    
+    Teleportation works as follows: first
+    Alice and Bob need to establish an
+    entangled pair of qubits between them.
+    
+    Alice then takes the qubit that she wants
+    to send and the qubit that is entangled
+    with Bob’s qubit and performs a
+    measurement on them.
+    
+    This measurement collapses the qubits and
+    destroys the entanglement, but gives her
+    two classical outcomes in the form of two
+    classical bits.
+    
+    Alice takes this two classical bits and
+    sends them over the classical Internet to
+    Bob.
+    
+    Bob then applies a correction operation
+    that depends on these two classical bits
+    to his qubit.
+    
+    This allows him to recover the qubit that
+    was originally in Alice’s possession.
+    
+    Note that we have now transmitted a qubit
+    without really using a physical carrier
+    that is capable of transmitting qubits.
+    
+    But of course you already need
+    entanglement to do this.
+    
+    It is also important to note that quantum
+    teleportation does not allow for faster
+    than light communication.
+    
+    This is so because Bob cannot make sense
+    of the qubit in her possession before he
+    gets the classical measurement outcomes
+    from Alice.
+    
+    These classical measurement outcomes must
+    take a certain amount of time to be
+    transmitted.
+    
+    And this time is lower bounded by the
+    speed of light.
+
+Topological Quantum Computing
+    A topological quantum computer is a
+    theoretical quantum computer that employs
+    two-dimensional quasiparticles called
+    anyons, whose world lines pass around one
+    another to form braids in a three-
+    dimensional spacetime (i.e., one temporal
+    plus two spatial dimensions).
+    
+    These braids form the logic gates that
+    make up the computer.
+    
+    The advantage of a quantum computer based
+    on quantum braids over using trapped
+    quantum particles is that the former is
+    much more stable.
+    
+    Small, cumulative perturbations can cause
+    quantum states to decohere and introduce
+    errors in the computation, but such small
+    perturbations do not change the braids’
+    topological properties.
+    
+    This is like the effort required to cut a
+    string and reattach the ends to form a
+    different braid, as opposed to a ball
+    (representing an ordinary quantum particle
+    in four-dimensional spacetime) bumping
+    into a wall.
+    
+    Alexei Kitaev proposed topological quantum
+    computation in 1997.
+
+Universal Quantum Computer
+    A Quantum Turing machine (QTM), also a
+    universal quantum computer, is an abstract
+    machine used to model the effect of a
+    quantum computer.
+    
+    It provides a very simple model which
+    captures all of the power of quantum
+    computation.
+    
+    Any quantum algorithm can be expressed
+    formally as a particular quantum Turing
+    machine.
+    
+    Such Turing machines were first proposed
+    in a 1985 article written by Oxford
+    University physicist David Deutsch
+    suggesting quantum gates could function in
+    a similar fashion to traditional digital
+    computing binary logic gates.
+    
+    Quantum Turing machines are not always
+    used for analyzing quantum computation;
+    the quantum circuit is a more common
+    model. These models are computationally
+    equivalent.
+
+amplitude
+    Amplitudes are complex numbers, and each
+    possible outcome has a corresponding
+    amplitude.
+    
+    Amplitudes are analogous to conventional
+    probabilities, as the magnitude of the
+    amplitude is correlated to the chance of
+    measuring that outcome.
+    
+    Unlike conventional probabilities,
+    amplitudes have phase and can interfere
+    with each other.
+
+auxiliary qubit
+    Certain quantum operations require, or can
+    be made more efficient using, extra qubits
+    that do not store the inputs or outputs of
+    the operation.
+    
+    Since these extra qubits do not contain
+    useful information before or after the
+    operation, their role is auxiliary.
+    
+    If the state of the auxiliary qubits is
+    known before the operation, they are known
+    as ‘clean’ qubits (and are usually set to
+    ).
+    
+    If the state is unknown, they are referred
+    to as ‘dirty’ qubits.
+
+backend
+    The term backend can refer to either a
+    quantum system or a high-performance
+    classical simulator of a quantum system.
+    
+    At our Compute resources page we list all
+    current IBM Quantum systems and
+    simulators.
+
+Bloch sphere
+    The Bloch sphere (named after Felix Bloch)
+    is a visual representation of the state of
+    a qubit.
+    
+    Note that the Bloch sphere is different
+    from the q-sphere; for more details, see
+    the q-sphere visualization topic in the
+    IBM Quantum Composer docs.
+    
+    Multiple states can also be simultaneously
+    displayed (see below).
+    
+    The components of the Bloch representation
+    of the qubit state are found from the
+    expectation values of the , , and gates.
+    
+    A qubit described by a statevector has
+    unit length and is found on the surface of
+    the Bloch sphere.
+    
+    Qubits characterized by a density matrix
+    will in general have length less than one,
+    as determined by the purity of the state,
+    and lie within the Bloch sphere.
+    
+    Evolution of a qubit statevector after
+    applying a series of gates.
+
+classical register
+    See register.
+
+CLOPS
+    CLOPS, or circuit layer operations per
+    second, is a measure of how many layers of
+    a QV circuit a QPU (quantum processing
+    unit) can execute per unit of time.
+    
+    Find more information about this metric in
+    the paper called Quality, Speed, and
+    Scale: three key attributes to measure the
+    performance of near-term quantum
+    computers.
+
+entanglement
+    Entanglement is a property of quantum
+    systems comprised of more than one
+    subsystem (i.e., qubits), where the
+    quantum state of any one subsystem cannot
+    be uniquely described independently of the
+    remaining subsystems.
+    
+    Mathematically an entangled state is one
+    that can not be written as as product of
+    subsystem states.
+    
+    Subsystems of entangled states are mixed
+    states requiring a density matrix
+    representation.
+    
+    For a bipartite quantum system, the
+    entanglement is equal to the entropy of
+    the subsystems.
+
+fair-share queue
+    Fair-share queuing executes jobs on a
+    quantum system in a dynamic order so that
+    no provider can monopolize the system.
+    
+    The shares in fair-share queuing represent
+    the fraction of system time that is
+    allocated to a given provider.
+    
+    Providers with the most device time have
+    the highest priority in the fair-share
+    algorithm.
+    
+    A provider’s dynamic priority depends on
+    how much of the provider’s allotted system
+    time has been consumed over a given
+    floating window of time.
+    
+    When you send a job, it will be executed
+    by the provider with the highest dynamic
+    priority (or lowest fraction of allotted
+    time used) at that moment.
+    
+    For more information, see the Fair-share
+    queuing section.
+
+global phase
+    A phase applied to a statevector as a
+    whole, .
+    
+    States related by a global phase are
+    equivalent in quantum mechanics; global
+    phases can be ignored.
+    
+    This is a consequence of the fact that
+    only energy differences, as opposed to
+    absolute values, matter in determining the
+    dynamics of physical systems.
+    
+    See An aside on global phase in the Field
+    Guide.
+
+job
+    A job ties together all of the relevant
+    information about a computation on IBM
+    Quantum: a quantum circuit, choice of
+    backend, the choice of how many shots to
+    execute on the backend, and the results
+    upon executing the quantum circuit on the
+    backend.
+
+OpenQASM
+    A quantum assembly language dialect (see
+    QASM).
+    
+    For more information, see the OpenQASM
+    code topic in the IBM Quantum Composer
+    docs.
+
+OpenQASM circuit
+    Quantum circuit format generated by the
+    Qiskit program.
+    
+    OpenQASM is the low-level language
+    consumed by the Quantum Processing Unit
+    (QPU).
+
+phase
+    See relative phase.
+
+provider
+    Access to the various services offered by
+    IBM Quantum is controlled by the providers
+    to which you are assigned.
+    
+    A provider is defined by a hierarchical
+    organization of hub, group, and project.
+    
+    A hub is the top level of a given
+    hierarchy (organization) and contains
+    within it one or more groups.
+    
+    These groups are in turn populated with
+    projects.
+    
+    The combination of hub/group/project is
+    called a provider.
+    
+    Users can belong to more than one provider
+    at any given time.
+
+QASM
+    QASM is an abbreviation for quantum
+    assembly language.
+    
+    It is a set of text-based instructions to
+    describe and visualize quantum circuits.
+    
+    IBM Quantum uses a dialect called
+    OpenQASM; see more in the OpenQASM code
+    topic in the IBM Quantum Composer docs.
+
+Qiskit program
+    Qiskit Python source code that describes
+    the problem to solve, combining classical
+    and quantum computation.
+    
+    It takes inputs from the users, makes the
+    calculation, and returns the results.
+    
+    Each instance of a Qiskit program
+    execution is similar to a computer process
+    and is represented as a runtime job.
+
+Qiskit program metadata
+    The data that defines your program.
+    
+    Critical components are name, maximum
+    execution time, version, backend
+    requirements, and input/output parameters.
+
+Qiskit Runtime
+    Qiskit Runtime is a cloud service that
+    runs the Qiskit program remotely as a
+    process, passing the input from the user,
+    and handling the connectivity between the
+    Qiskit program, the user, and the quantum
+    processing unit.
+    
+    You can repeat this multiple times with
+    the same or different Qiskit programs.
+
+Qiskit Runtime manager
+    The main task of this component of the
+    architecture is to prepare Qiskit Runtime,
+    load the Qiskit programs, and supervise
+    the correct execution.
+
+quantum circuit
+    A quantum circuit is a computational
+    routine consisting of coherent quantum
+    operations on quantum data, such as
+    qubits, and concurrent real-time classical
+    computation.
+    
+    It is an ordered sequence of quantum
+    gates, measurements, and resets, which may
+    be conditioned on and use data from the
+    real-time classical computation.
+    
+    A set of quantum gates is said to be
+    universal if any unitary transformation of
+    the quantum data can be efficiently
+    approximated arbitrarily well as a
+    sequence of gates in the set.
+    
+    Any quantum program can be represented by
+    a sequence of quantum circuits and non-
+    concurrent classical computation.
+
+quantum computer
+    A quantum computer is a device capable of
+    executing coherent controlled quantum
+    dynamics.
+
+quantum gate
+    A quantum gate is a reversible (unitary)
+    operation applied to one or more qubits.
+
+Quantum processing unit (QPU)
+    Part of the computational unit that
+    performs the quantum computation.
+
+quantum register
+    See register.
+
+qubit
+    A qubit (pronounced “cue-bit” and short
+    for quantum bit) is the basic unit of
+    quantum information.
+    
+    A qubit consists of two-levels that can be
+    expressed using the “computational basis”
+    states , and .
+    
+    Unlike a classical bit, the state of a
+    qubit can be a linear combination
+    (superposition) of both computational
+    states.
+    
+    Read more about the qubit in the Field
+    guide in the IBM Quantum Composer docs.
+
+register
+    A quantum register is a collection of
+    qubits on which gates and other operations
+    act.
+    
+    A classical register consists of bits that
+    can be written to and read within the
+    coherence time of the quantum circuit.
+
+relative phase
+    A phase difference between components of a
+    superposition state.
+    
+    By convention, the first term in a
+    superposition is made to be real, and the
+    remaining states have phase values
+    relative to this, e.g., .
+
+seed
+    A seed is the value introduced into the
+    algorithm that generates pseudorandom
+    numbers.
+    
+    The simulator creates randomness by
+    generating results based on the seed.
+
+shot
+    Because the measurement of a qubit in a
+    superposition state is random — the
+    outcome is sometimes 0 and sometimes 1 —
+    you must repeat the measurement multiple
+    times to determine the likelihood that a
+    qubit is in a particular state.
+    
+    When performing the experiment, you will
+    be asked how many shots, or executions, to
+    run in order to determine the qubit state
+    probabilities.
+
+simulator
+    For a quantum computer comprised of a
+    small number of qubits , we can simulate
+    its behavior on a classical computer.
+    
+    In general such a computation requires
+    storing complex numbers, where is the
+    number of qubits.
+    
+    For circuits composed solely of Clifford
+    gates, or circuits generating quantum
+    states that are weakly entangled, special
+    simulation techniques allow for simulating
+    a greater number of qubits.
+    
+    See the Simulators overview topic to learn
+    about the IBM Quantum simulators.
+
+statevector
+    Any single realization of a quantum system
+    can be described through a complex vector
+    known as its statevector.
+    
+    In a gate-based quantum computer the state
+    of qubits has elements; the dimension of
+    the statevector grows exponentially with .
+
+superposition
+    A superposition in quantum mechanics is a
+    weighted sum, or linear combination, of
+    two or more quantum states.
+    
+    A quantum computer with qubits can exist
+    in a superposition of all of its
+    computational basis states , through .
+    
+    Exploiting this ability is fundamental to
+    most quantum algorithms.
+
+transpilation
+    Transpilation is the process where a
+    quantum circuit is transformed into a new
+    quantum circuit that performs the same
+    task, but is restructured to be compatible
+    with the physical layout of a particular
+    quantum system and, where possible,
+    optimize its performance.
+
+uncertainty principle
+    In quantum physics, we cannot
+    simultaneously know two non-commuting
+    variables (like the position and momentum
+    of a particle).
+    
+    This implies that a quantum system in a
+    perfectly definite state can be certain
+    under one measurement and completely
+    random under another.
+    
+    Moreover, if a quantum system starts out
+    in an arbitrary unknown state, no
+    measurement can reveal complete
+    information about that state; the more
+    information the measurement reveals, the
+    more the state is disturbed.
+    
+    This is a underlying principle of quantum
+    cryptography.
+
+universal fault-tolerant quantum computer
+    A universal fault-tolerant quantum
+    computer is the grand challenge of quantum
+    computing.
+    
+    It is a device that can properly perform
+    universal quantum operations using
+    unreliable components.
+    
+    See also:
+    - "universal quantum computer"
+
+universal quantum computer
+    A machine that can simulate an arbitrary
+    quantum state from an arbitrary initial
+    quantum state.
+    
+    See also:
+    - "universal fault-tolerant quantum computer"
+
+monogamy
+    [property of entanglement]
+
+maximal coordination
+    [property of entanglement]
+    
+    Makes entanglement powerful.

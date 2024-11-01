@@ -1,0 +1,2 @@
+;;; Generated package description from emacsql-sqlite3.el  -*- no-byte-compile: t -*-
+(define-package "emacsql-sqlite3" "20200914.508" "Yet another EmacSQL backend for SQLite" '((emacs "26.1") (emacsql "3.0.0")) :commit "209fd0c2649db0c7532e543ec12e7ba881a3325c" :authors '(("Zhu Zihao" . "all_but_last@163.com")) :maintainer '("Zhu Zihao" . "all_but_last@163.com") :keywords '("extensions") :url "https://github.com/cireu/emacsql-sqlite3")

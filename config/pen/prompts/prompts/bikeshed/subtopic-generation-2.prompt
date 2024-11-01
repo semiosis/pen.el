@@ -1,0 +1,64 @@
+title: subtopic generation
+prompt-version: 2
+doc: Given a topic, generate a list of subtopics
+prompt: |-
+    List a number of subtopics or fields of study
+    given a topic:
+    
+    <delim>
+    7 subtopics of natural language processing / NLP:
+    - language modelling
+    - named entity recognition  
+    - sequence classification
+    - summarization
+    - text generation
+    - topic modelling
+    - translation
+    <delim>
+    8 fields of microbiology:
+    - Bacteriology
+    - Mycology
+    - Protozoology
+    - Phycology/algology
+    - Parasitology
+    - Immunology
+    - Virology
+    - Nematology
+    <delim>
+    6 subtopics of music theory:
+    - composition
+    - performance
+    - orchestration
+    - ornamentation
+    - improvisation
+    - electronic sound production
+    <delim>
+    3 subtopics of language modelling in NLP:
+    - casual language modelling
+    - masked language modelling
+    - text generation
+    <delim>
+    20 subtopics or fields within <topic>, in no particular order:
+    <:pp><existing subtopics>-
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "<delim>"
+- "\n\n"
+cache: true
+vars:
+- topic
+- existing subtopics
+examples:
+- Advanced Type Systems in Haskell
+- |
+  - Dependent Types
+  - Impredicative Types
+preprocessors:
+- 
+- awk 1
+postprocessor: head -n 30 | sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9
+  _-]\+$/p' | uniqnosort
+n-collate: 1

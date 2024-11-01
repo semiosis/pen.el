@@ -1,0 +1,6 @@
+cd /root/notes;  "o" "#" "<==" "zsh"
+cd /root/notes;  "o" "https://youtu.be/X3ezDMnY0Jc?t=188" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=iK3tz3LDrb0" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://www.youtube.com/watch?v=f41aB2y8CvQ&ab_channel=TruthUnites" "#" "<==" "o"

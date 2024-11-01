@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: no-op
+# group: syntax
+# key: nop
+# --
+pass

@@ -1,0 +1,14 @@
+
+~~~~~~~~
+
+The program snippets from the Pure Haskell Tutorial Chapter look like:
+
+-- file Main.hs
+
+module Main where
+
+main :: IO ()
+
+main = do
+
+putStrLn "Hello world!"

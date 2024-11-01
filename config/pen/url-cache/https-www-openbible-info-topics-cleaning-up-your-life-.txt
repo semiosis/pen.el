@@ -1,0 +1,892 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 11905
+Connection: close
+Date: Thu, 05 Oct 2023 00:46:26 GMT
+Server: Apache
+Cache-Control: max-age=600
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 35202ecfee8e63e178de36be1b541f0e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD62-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: 6Zp4X5O9ApLCEwI7JVqwsHAlLNIZvrMK3FfGiWenH-t3SJstWSseDw==
+Age: 5
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>What Does the Bible Say About Cleaning Up Your Life?</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/topics/cleaning_up_your_life/" />
+<meta name="description" content="Bible verses about Cleaning Up Your Life" />
+</head>
+<body class="topics inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<form action="/topics/" method="get" class="topic-search">
+	<p><label>What does the Bible say about
+		<input type="text" size="30" name="q" maxlength="100" value="Cleaning Up Your Life" /></label>?
+		<input type="submit" value="Find Out" />
+	</p>
+	<p class="alpha-nav">
+						<a href="/topics/a">A</a>
+							&#8227;
+								<a href="/topics/b">B</a>
+							&#8227;
+								<a href="/topics/c">C</a>
+							&#8227;
+								<a href="/topics/d">D</a>
+							&#8227;
+								<a href="/topics/e">E</a>
+							&#8227;
+								<a href="/topics/f">F</a>
+							&#8227;
+								<a href="/topics/g">G</a>
+							&#8227;
+								<a href="/topics/h">H</a>
+							&#8227;
+								<a href="/topics/i">I</a>
+							&#8227;
+								<a href="/topics/j">J</a>
+							&#8227;
+								<a href="/topics/k">K</a>
+							&#8227;
+								<a href="/topics/l">L</a>
+							&#8227;
+								<a href="/topics/m">M</a>
+							&#8227;
+								<a href="/topics/n">N</a>
+							&#8227;
+								<a href="/topics/o">O</a>
+							&#8227;
+								<a href="/topics/p">P</a>
+							&#8227;
+								<a href="/topics/q">Q</a>
+							&#8227;
+								<a href="/topics/r">R</a>
+							&#8227;
+								<a href="/topics/s">S</a>
+							&#8227;
+								<a href="/topics/t">T</a>
+							&#8227;
+								<a href="/topics/u">U</a>
+							&#8227;
+								<a href="/topics/v">V</a>
+							&#8227;
+								<a href="/topics/w">W</a>
+							&#8227;
+								<a href="/topics/y">Y</a>
+							&#8227;
+								<a href="/topics/z">Z</a>
+					</p></form>
+<h1><span class="small">		62 Bible Verses about
+	</span> Cleaning Up Your Life</h1>
+<p><a href="https://twitter.com/share?url=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fcleaning_up_your_life%2F" target="_blank" class="share" aria-label="Share on Twitter"><span style="background-color: #55acee"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M26.67 9.38c-.78.35-1.63.58-2.51.69.9-.54 1.6-1.4 1.92-2.42-.85.5-1.78.87-2.78 1.06a4.38 4.38 0 0 0-7.57 3c0 .34.04.68.11 1-3.64-.18-6.86-1.93-9.02-4.57-.38.65-.59 1.4-.59 2.2 0 1.52.77 2.86 1.95 3.64-.72-.02-1.39-.22-1.98-.55v.06c0 2.12 1.51 3.89 3.51 4.29a4.37 4.37 0 0 1-1.97.07c.56 1.74 2.17 3 4.09 3.04a8.82 8.82 0 0 1-5.44 1.87c-.35 0-.7-.02-1.04-.06a12.43 12.43 0 0 0 6.71 1.97c8.05 0 12.45-6.67 12.45-12.45 0-.19-.01-.38-.01-.57.84-.62 1.58-1.39 2.17-2.27z"/></g></svg></span></a>
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fcleaning_up_your_life%2F" target="_blank" class="share" aria-label="Share on Facebook"><span style="background-color: #3b5998"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M21 6.144C20.656 6.096 19.472 6 18.097 6c-2.877 0-4.85 1.66-4.85 4.7v2.62H10v3.557h3.247V26h3.895v-9.123h3.234l.497-3.557h-3.73v-2.272c0-1.022.292-1.73 1.858-1.73h2V6.143z" fill-rule="evenodd"/></g></svg></span></a></p>
+<form action="/topics/cleaning_up_your_life" method="post" id="vote"><input type="hidden" name="w" value="cleaning_up_your_life" /><input type="hidden" id="db" name="db" value="dy" />
+									<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+1%3A9&amp;version=ESV" class="bibleref">1 John 1:9</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62001009" type="submit" id="vote_u_62001009" value="1">Helpful</button>
+					<button name="vote_d_62001009" type="submit" id="vote_d_62001009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A1-2&amp;version=ESV" class="bibleref">Romans 12:1-2</a>
+					<span class="note">
+						ESV / 35 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012001-45012002" type="submit" id="vote_u_45012001-45012002" value="1">Helpful</button>
+					<button name="vote_d_45012001-45012002" type="submit" id="vote_d_45012001-45012002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A21&amp;version=ESV" class="bibleref">Romans 12:21</a>
+					<span class="note">
+						ESV / 22 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012021" type="submit" id="vote_u_45012021" value="1">Helpful</button>
+					<button name="vote_d_45012021" type="submit" id="vote_d_45012021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not be overcome by evil, but overcome evil with good.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+3%3A16&amp;version=ESV" class="bibleref">John 3:16</a>
+					<span class="note">
+						ESV / 18 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43003016" type="submit" id="vote_u_43003016" value="1">Helpful</button>
+					<button name="vote_d_43003016" type="submit" id="vote_d_43003016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Peter+2%3A24&amp;version=ESV" class="bibleref">1 Peter 2:24</a>
+					<span class="note">
+						ESV / 12 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_60002024" type="submit" id="vote_u_60002024" value="1">Helpful</button>
+					<button name="vote_d_60002024" type="submit" id="vote_d_60002024" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+15%3A3&amp;version=ESV" class="bibleref">John 15:3</a>
+					<span class="note">
+						ESV / 12 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43015003" type="submit" id="vote_u_43015003" value="1">Helpful</button>
+					<button name="vote_d_43015003" type="submit" id="vote_d_43015003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Already you are clean because of the word that I have spoken to you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+21%3A36&amp;version=ESV" class="bibleref">Luke 21:36</a>
+					<span class="note">
+						ESV / 12 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42021036" type="submit" id="vote_u_42021036" value="1">Helpful</button>
+					<button name="vote_d_42021036" type="submit" id="vote_d_42021036" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+14%3A6&amp;version=ESV" class="bibleref">John 14:6</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43014006" type="submit" id="vote_u_43014006" value="1">Helpful</button>
+					<button name="vote_d_43014006" type="submit" id="vote_d_43014006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Jesus said to him, &#8220;I am the way, and the truth, and the life. No one comes to the Father except through me.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+5%3A24&amp;version=ESV" class="bibleref">John 5:24</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43005024" type="submit" id="vote_u_43005024" value="1">Helpful</button>
+					<button name="vote_d_43005024" type="submit" id="vote_d_43005024" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Peter+4%3A8&amp;version=ESV" class="bibleref">1 Peter 4:8</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_60004008" type="submit" id="vote_u_60004008" value="1">Helpful</button>
+					<button name="vote_d_60004008" type="submit" id="vote_d_60004008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Above all, keep loving one another earnestly, since love covers a multitude of sins.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Thessalonians+5%3A21-22&amp;version=ESV" class="bibleref">1 Thessalonians 5:21-22</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_52005021-52005022" type="submit" id="vote_u_52005021-52005022" value="1">Helpful</button>
+					<button name="vote_d_52005021-52005022" type="submit" id="vote_d_52005021-52005022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But test everything; hold fast what is good. Abstain from every form of evil.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A25&amp;version=ESV" class="bibleref">Colossians 3:25</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003025" type="submit" id="vote_u_51003025" value="1">Helpful</button>
+					<button name="vote_d_51003025" type="submit" id="vote_d_51003025" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For the wrongdoer will be paid back for the wrong he has done, and there is no partiality.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A2&amp;version=ESV" class="bibleref">Romans 12:2</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012002" type="submit" id="vote_u_45012002" value="1">Helpful</button>
+					<button name="vote_d_45012002" type="submit" id="vote_d_45012002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+1%3A12&amp;version=ESV" class="bibleref">Jeremiah 1:12</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24001012" type="submit" id="vote_u_24001012" value="1">Helpful</button>
+					<button name="vote_d_24001012" type="submit" id="vote_d_24001012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then the <span class="sc">Lord</span> said to me, &#8220;You have seen well, for I am watching over my word to perform it.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+3%3A16&amp;version=ESV" class="bibleref">Revelation 3:16</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66003016" type="submit" id="vote_u_66003016" value="1">Helpful</button>
+					<button name="vote_d_66003016" type="submit" id="vote_d_66003016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So, because you are lukewarm, and neither hot nor cold, I will spit you out of my mouth.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&amp;version=ESV" class="bibleref">2 Timothy 1:7</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_55001007" type="submit" id="vote_u_55001007" value="1">Helpful</button>
+					<button name="vote_d_55001007" type="submit" id="vote_d_55001007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For God gave us a spirit not of fear but of power and love and self-control.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+19%3A14&amp;version=ESV" class="bibleref">Psalm 19:14</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19019014" type="submit" id="vote_u_19019014" value="1">Helpful</button>
+					<button name="vote_d_19019014" type="submit" id="vote_d_19019014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Let the words of my mouth and the meditation of my heart be acceptable in your sight, O <span class="sc">Lord</span>, my rock and my redeemer.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Titus+1%3A9&amp;version=ESV" class="bibleref">Titus 1:9</a>
+					<span class="note">
+						ESV / 8 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_56001009" type="submit" id="vote_u_56001009" value="1">Helpful</button>
+					<button name="vote_d_56001009" type="submit" id="vote_d_56001009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+8%3A58&amp;version=ESV" class="bibleref">John 8:58</a>
+					<span class="note">
+						ESV / 8 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43008058" type="submit" id="vote_u_43008058" value="1">Helpful</button>
+					<button name="vote_d_43008058" type="submit" id="vote_d_43008058" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Jesus said to them, &#8220;Truly, truly, I say to you, before Abraham was, I am.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+24%3A44&amp;version=ESV" class="bibleref">Matthew 24:44</a>
+					<span class="note">
+						ESV / 8 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40024044" type="submit" id="vote_u_40024044" value="1">Helpful</button>
+					<button name="vote_d_40024044" type="submit" id="vote_d_40024044" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+9%3A13&amp;version=ESV" class="bibleref">Matthew 9:13</a>
+					<span class="note">
+						ESV / 8 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40009013" type="submit" id="vote_u_40009013" value="1">Helpful</button>
+					<button name="vote_d_40009013" type="submit" id="vote_d_40009013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Go and learn what this means: &#8216;I desire mercy, and not sacrifice.&#8217; For I came not to call the righteous, but sinners.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Titus+3%3A5&amp;version=ESV" class="bibleref">Titus 3:5</a>
+					<span class="note">
+						ESV / 7 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_56003005" type="submit" id="vote_u_56003005" value="1">Helpful</button>
+					<button name="vote_d_56003005" type="submit" id="vote_d_56003005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+22%3A37&amp;version=ESV" class="bibleref">Matthew 22:37</a>
+					<span class="note">
+						ESV / 7 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40022037" type="submit" id="vote_u_40022037" value="1">Helpful</button>
+					<button name="vote_d_40022037" type="submit" id="vote_d_40022037" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And he said to him, &#8220;You shall love the Lord your God with all your heart and with all your soul and with all your mind.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+5%3A10&amp;version=ESV" class="bibleref">Revelation 5:10</a>
+					<span class="note">
+						ESV / 6 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66005010" type="submit" id="vote_u_66005010" value="1">Helpful</button>
+					<button name="vote_d_66005010" type="submit" id="vote_d_66005010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And you have made them a kingdom and priests to our God, and they shall reign on the earth.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Peter+3%3A15&amp;version=ESV" class="bibleref">1 Peter 3:15</a>
+					<span class="note">
+						ESV / 6 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_60003015" type="submit" id="vote_u_60003015" value="1">Helpful</button>
+					<button name="vote_d_60003015" type="submit" id="vote_d_60003015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But in your hearts honor Christ the Lord as holy, always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A30&amp;version=ESV" class="bibleref">Ephesians 4:30</a>
+					<span class="note">
+						ESV / 6 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004030" type="submit" id="vote_u_49004030" value="1">Helpful</button>
+					<button name="vote_d_49004030" type="submit" id="vote_d_49004030" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And do not grieve the Holy Spirit of God, by whom you were sealed for the day of redemption.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jude+1%3A3&amp;version=ESV" class="bibleref">Jude 1:3</a>
+					<span class="note">
+						ESV / 5 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_65001003" type="submit" id="vote_u_65001003" value="1">Helpful</button>
+					<button name="vote_d_65001003" type="submit" id="vote_d_65001003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Beloved, although I was very eager to write to you about our common salvation, I found it necessary to write appealing to you to contend for the faith that was once for all delivered to the saints.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+2%3A8-9&amp;version=ESV" class="bibleref">Ephesians 2:8-9</a>
+					<span class="note">
+						ESV / 5 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49002008-49002009" type="submit" id="vote_u_49002008-49002009" value="1">Helpful</button>
+					<button name="vote_d_49002008-49002009" type="submit" id="vote_d_49002008-49002009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+24%3A23-24&amp;version=ESV" class="bibleref">Matthew 24:23-24</a>
+					<span class="note">
+						ESV / 5 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40024023-40024024" type="submit" id="vote_u_40024023-40024024" value="1">Helpful</button>
+					<button name="vote_d_40024023-40024024" type="submit" id="vote_d_40024023-40024024" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then if anyone says to you, &#8216;Look, here is the Christ!&#8217; or &#8216;There he is!&#8217; do not believe it. For false christs and false prophets will arise and perform great signs and wonders, so as to lead astray, if possible, even the elect.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+16%3A15&amp;version=ESV" class="bibleref">Revelation 16:15</a>
+					<span class="note">
+						ESV / 4 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66016015" type="submit" id="vote_u_66016015" value="1">Helpful</button>
+					<button name="vote_d_66016015" type="submit" id="vote_d_66016015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					(&#8220;Behold, I am coming like a thief! Blessed is the one who stays awake, keeping his garments on, that he may not go about naked and be seen exposed!&#8221;)				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Timothy+3%3A2&amp;version=ESV" class="bibleref">1 Timothy 3:2</a>
+					<span class="note">
+						ESV / 4 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_54003002" type="submit" id="vote_u_54003002" value="1">Helpful</button>
+					<button name="vote_d_54003002" type="submit" id="vote_d_54003002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Therefore an overseer must be above reproach, the husband of one wife, sober-minded, self-controlled, respectable, hospitable, able to teach,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+11%3A14-15&amp;version=ESV" class="bibleref">2 Corinthians 11:14-15</a>
+					<span class="note">
+						ESV / 4 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_47011014-47011015" type="submit" id="vote_u_47011014-47011015" value="1">Helpful</button>
+					<button name="vote_d_47011014-47011015" type="submit" id="vote_d_47011014-47011015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And no wonder, for even Satan disguises himself as an angel of light. So it is no surprise if his servants, also, disguise themselves as servants of righteousness. Their end will correspond to their deeds.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+14%3A2&amp;version=ESV" class="bibleref">John 14:2</a>
+					<span class="note">
+						ESV / 4 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43014002" type="submit" id="vote_u_43014002" value="1">Helpful</button>
+					<button name="vote_d_43014002" type="submit" id="vote_d_43014002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you?				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+7%3A13-14&amp;version=ESV" class="bibleref">Matthew 7:13-14</a>
+					<span class="note">
+						ESV / 4 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40007013-40007014" type="submit" id="vote_u_40007013-40007014" value="1">Helpful</button>
+					<button name="vote_d_40007013-40007014" type="submit" id="vote_d_40007013-40007014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+19%3A7&amp;version=ESV" class="bibleref">Revelation 19:7</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66019007" type="submit" id="vote_u_66019007" value="1">Helpful</button>
+					<button name="vote_d_66019007" type="submit" id="vote_d_66019007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Let us rejoice and exult and give him the glory, for the marriage of the Lamb has come, and his Bride has made herself ready;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+8%3A3-4&amp;version=ESV" class="bibleref">Revelation 8:3-4</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66008003-66008004" type="submit" id="vote_u_66008003-66008004" value="1">Helpful</button>
+					<button name="vote_d_66008003-66008004" type="submit" id="vote_d_66008003-66008004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And another angel came and stood at the altar with a golden censer, and he was given much incense to offer with the prayers of all the saints on the golden altar before the throne, and the smoke of the incense, with the prayers of the saints, rose before God from the hand of the angel.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+4%3A7&amp;version=ESV" class="bibleref">1 John 4:7</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62004007" type="submit" id="vote_u_62004007" value="1">Helpful</button>
+					<button name="vote_d_62004007" type="submit" id="vote_d_62004007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Peter+2%3A1&amp;version=ESV" class="bibleref">2 Peter 2:1</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_61002001" type="submit" id="vote_u_61002001" value="1">Helpful</button>
+					<button name="vote_d_61002001" type="submit" id="vote_d_61002001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+11%3A4&amp;version=ESV" class="bibleref">2 Corinthians 11:4</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_47011004" type="submit" id="vote_u_47011004" value="1">Helpful</button>
+					<button name="vote_d_47011004" type="submit" id="vote_d_47011004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For if someone comes and proclaims another Jesus than the one we proclaimed, or if you receive a different spirit from the one you received, or if you accept a different gospel from the one you accepted, you put up with it readily enough.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+3%3A11&amp;version=ESV" class="bibleref">1 Corinthians 3:11</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46003011" type="submit" id="vote_u_46003011" value="1">Helpful</button>
+					<button name="vote_d_46003011" type="submit" id="vote_d_46003011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For no one can lay a foundation other than that which is laid, which is Jesus Christ.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+8%3A38-39&amp;version=ESV" class="bibleref">Romans 8:38-39</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45008038-45008039" type="submit" id="vote_u_45008038-45008039" value="1">Helpful</button>
+					<button name="vote_d_45008038-45008039" type="submit" id="vote_d_45008038-45008039" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+6%3A23&amp;version=ESV" class="bibleref">Romans 6:23</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45006023" type="submit" id="vote_u_45006023" value="1">Helpful</button>
+					<button name="vote_d_45006023" type="submit" id="vote_d_45006023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+2%3A11&amp;version=ESV" class="bibleref">Romans 2:11</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45002011" type="submit" id="vote_u_45002011" value="1">Helpful</button>
+					<button name="vote_d_45002011" type="submit" id="vote_d_45002011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For God shows no partiality.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+4%3A12&amp;version=ESV" class="bibleref">Acts 4:12</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44004012" type="submit" id="vote_u_44004012" value="1">Helpful</button>
+					<button name="vote_d_44004012" type="submit" id="vote_d_44004012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+6%3A37&amp;version=ESV" class="bibleref">John 6:37</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43006037" type="submit" id="vote_u_43006037" value="1">Helpful</button>
+					<button name="vote_d_43006037" type="submit" id="vote_d_43006037" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					All that the Father gives me will come to me, and whoever comes to me I will never cast out.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+3%3A1-36&amp;version=ESV" class="bibleref">John 3:1-36</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43003001-43003036" type="submit" id="vote_u_43003001-43003036" value="1">Helpful</button>
+					<button name="vote_d_43003001-43003036" type="submit" id="vote_d_43003001-43003036" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now there was a man of the Pharisees named Nicodemus, a ruler of the Jews. This man came to Jesus by night and said to him, &#8220;Rabbi, we know that you are a teacher come from God, for no one can do these signs that you do unless God is with him.&#8221; Jesus answered him, &#8220;Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God.&#8221; Nicodemus said to him, &#8220;How can a man be born when he is old? Can he enter a second time into his mother's womb and be born?&#8221; Jesus answered, &#8220;Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+21%3A31&amp;version=ESV" class="bibleref">Luke 21:31</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42021031" type="submit" id="vote_u_42021031" value="1">Helpful</button>
+					<button name="vote_d_42021031" type="submit" id="vote_d_42021031" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So also, when you see these things taking place, you know that the kingdom of God is near.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+21%3A28&amp;version=ESV" class="bibleref">Luke 21:28</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42021028" type="submit" id="vote_u_42021028" value="1">Helpful</button>
+					<button name="vote_d_42021028" type="submit" id="vote_d_42021028" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now when these things begin to take place, straighten up and raise your heads, because your redemption is drawing near.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Mark+4%3A19&amp;version=ESV" class="bibleref">Mark 4:19</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_41004019" type="submit" id="vote_u_41004019" value="1">Helpful</button>
+					<button name="vote_d_41004019" type="submit" id="vote_d_41004019" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But the cares of the world and the deceitfulness of riches and the desires for other things enter in and choke the word, and it proves unfruitful.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+25%3A1-13&amp;version=ESV" class="bibleref">Matthew 25:1-13</a>
+					<span class="note">
+						ESV / 3 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40025001-40025013" type="submit" id="vote_u_40025001-40025013" value="1">Helpful</button>
+					<button name="vote_d_40025001-40025013" type="submit" id="vote_d_40025001-40025013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Then the kingdom of heaven will be like ten virgins who took their lamps and went to meet the bridegroom. Five of them were foolish, and five were wise. For when the foolish took their lamps, they took no oil with them, but the wise took flasks of oil with their lamps. As the bridegroom was delayed, they all became drowsy and slept. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+21%3A7&amp;version=ESV" class="bibleref">Revelation 21:7</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66021007" type="submit" id="vote_u_66021007" value="1">Helpful</button>
+					<button name="vote_d_66021007" type="submit" id="vote_d_66021007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The one who conquers will have this heritage, and I will be his God and he will be my son.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+8%3A3&amp;version=ESV" class="bibleref">Revelation 8:3</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66008003" type="submit" id="vote_u_66008003" value="1">Helpful</button>
+					<button name="vote_d_66008003" type="submit" id="vote_d_66008003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And another angel came and stood at the altar with a golden censer, and he was given much incense to offer with the prayers of all the saints on the golden altar before the throne,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+7%3A13-14&amp;version=ESV" class="bibleref">Revelation 7:13-14</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66007013-66007014" type="submit" id="vote_u_66007013-66007014" value="1">Helpful</button>
+					<button name="vote_d_66007013-66007014" type="submit" id="vote_d_66007013-66007014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then one of the elders addressed me, saying, &#8220;Who are these, clothed in white robes, and from where have they come?&#8221; I said to him, &#8220;Sir, you know.&#8221; And he said to me, &#8220;These are the ones coming out of the great tribulation. They have washed their robes and made them white in the blood of the Lamb.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+4%3A1&amp;version=ESV" class="bibleref">Revelation 4:1</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66004001" type="submit" id="vote_u_66004001" value="1">Helpful</button>
+					<button name="vote_d_66004001" type="submit" id="vote_d_66004001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					After this I looked, and behold, a door standing open in heaven! And the first voice, which I had heard speaking to me like a trumpet, said, &#8220;Come up here, and I will show you what must take place after this.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+3%3A5&amp;version=ESV" class="bibleref">Revelation 3:5</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66003005" type="submit" id="vote_u_66003005" value="1">Helpful</button>
+					<button name="vote_d_66003005" type="submit" id="vote_d_66003005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The one who conquers will be clothed thus in white garments, and I will never blot his name out of the book of life. I will confess his name before my Father and before his angels.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+2%3A17&amp;version=ESV" class="bibleref">Revelation 2:17</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66002017" type="submit" id="vote_u_66002017" value="1">Helpful</button>
+					<button name="vote_d_66002017" type="submit" id="vote_d_66002017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He who has an ear, let him hear what the Spirit says to the churches. To the one who conquers I will give some of the hidden manna, and I will give him a white stone, with a new name written on the stone that no one knows except the one who receives it.&#8217;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+2%3A11&amp;version=ESV" class="bibleref">Revelation 2:11</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66002011" type="submit" id="vote_u_66002011" value="1">Helpful</button>
+					<button name="vote_d_66002011" type="submit" id="vote_d_66002011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He who has an ear, let him hear what the Spirit says to the churches. The one who conquers will not be hurt by the second death.&#8217;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+1%3A6&amp;version=ESV" class="bibleref">Revelation 1:6</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66001006" type="submit" id="vote_u_66001006" value="1">Helpful</button>
+					<button name="vote_d_66001006" type="submit" id="vote_d_66001006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And made us a kingdom, priests to his God and Father, to him be glory and dominion forever and ever. Amen.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Timothy+4%3A3-4&amp;version=ESV" class="bibleref">2 Timothy 4:3-4</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_55004003-55004004" type="submit" id="vote_u_55004003-55004004" value="1">Helpful</button>
+					<button name="vote_d_55004003-55004004" type="submit" id="vote_d_55004003-55004004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A15&amp;version=ESV" class="bibleref">1 Thessalonians 4:15</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_52004015" type="submit" id="vote_u_52004015" value="1">Helpful</button>
+					<button name="vote_d_52004015" type="submit" id="vote_d_52004015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For this we declare to you by a word from the Lord, that we who are alive, who are left until the coming of the Lord, will not precede those who have fallen asleep.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+6%3A9&amp;version=ESV" class="bibleref">Ephesians 6:9</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49006009" type="submit" id="vote_u_49006009" value="1">Helpful</button>
+					<button name="vote_d_49006009" type="submit" id="vote_d_49006009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Masters, do the same to them, and stop your threatening, knowing that he who is both their Master and yours is in heaven, and that there is no partiality with him.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+3%3A26&amp;version=ESV" class="bibleref">Galatians 3:26</a>
+					<span class="note">
+						ESV / 2 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48003026" type="submit" id="vote_u_48003026" value="1">Helpful</button>
+					<button name="vote_d_48003026" type="submit" id="vote_d_48003026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For in Christ Jesus you are all sons of God, through faith.				</p>
+			</div>
+			</form>
+<h2>Suggest a Verse</h2>
+<form action="/topics/cleaning_up_your_life" method="post" id="form-verse">
+	<h3><label for="preview">Enter a Verse Reference <span class="note">(e.g., <cite class="bibleref">John 3:16-17</cite>)</span></label></h3>
+	<p>
+		<input type="text" size="30" maxlength="100" name="preview" id="preview" value=""/>
+		<input type="submit" id="preview-button" value="Preview" />
+		<input type="hidden" name="verse" id="verse" value="" />
+		<br /><span class="note">Visit the <a href="https://www.biblegateway.com/">Bible</a> online to search for words if you don&rsquo;t know the specific passage your&rsquo;re looking for.</span>
+	</p>
+	<div id="preview-text">
+			</div>
+</form><script type="text/javascript">
+document.body.className += " script";
+var OB = {};
+
+OB.Verse =
+{
+	previewUrl: '/topics/tools/verse',
+
+	Preview: function(e)
+	{
+		e.preventDefault();
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", OB.Verse.previewUrl + "?verse=" + encodeURIComponent(document.getElementById("preview").value));
+		xhr.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				OB.Verse.PreviewResponse(JSON.parse(this.responseText));
+			}
+		}
+		xhr.send();
+	},
+
+	PreviewResponse: function(response)
+	{
+		if (response.content && response.id && response.reference)
+		{
+			document.getElementById("preview-text").innerHTML = '<h3>' + response.reference + '</h3><p>' + response.content + '</p><p><input type="submit" value="Suggest This Verse" /></p>';
+			document.getElementById("verse").value = response.id;
+		}
+		else
+		{
+			document.getElementById("preview-text").innerHTML = '<p class="error">Sorry, we couldn&#8217;t find a passage matching the verse you suggest. Please double-check your spelling and try again.</p>';
+		}
+	}
+};
+
+OB.Vote =
+{
+	myUrl: '/topics/tools/vote',
+
+	Vote: function(e)
+	{
+		e.preventDefault();
+		var encodedWord = encodeURIComponent(document.URL.replace(/\/+$/, '').split(/\//).pop());
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", OB.Vote.myUrl + "?w=" + encodedWord);
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send("word=" + encodedWord + "&db=" + encodeURIComponent(document.getElementById("db").value) + "&id=" + encodeURIComponent(this.id));
+		this.parentNode.innerHTML = "Thank you for your vote.";
+	},
+
+	Over: function()
+	{
+		this.className += " visible";
+	},
+
+	Out: function()
+	{
+		this.className = this.className.replace(/ visible/);
+	}
+};
+
+var buttons = document.querySelectorAll("form#vote button");
+for (var i = 0, j = buttons.length; i < j; i++) {
+	buttons[i].addEventListener("click", OB.Vote.Vote, false);
+}
+document.getElementById("preview-button").addEventListener("click", OB.Verse.Preview, false);
+var divs = document.querySelectorAll("div.verse");
+for (var i = 0, j = divs.length; i < j; i++) {
+	var div = divs[i];
+	div.addEventListener("mouseenter", OB.Vote.Over, false);
+	div.addEventListener("mouseleave", OB.Vote.Out, false);
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+	<strong>Cite this page</strong>: Editor: Stephen Smith. Publication date: Sep 27, 2023. Publisher: OpenBible.info.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

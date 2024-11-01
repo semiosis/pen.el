@@ -1,0 +1,54 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 22 Sep 2023 06:47:42 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-Control: private; max-age=0
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin
+Strict-Transport-Security: max-age=31556900
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdnjs.cloudflare.com/; frame-src 'self' https://www.google.com/recaptcha/; style-src 'self' 'unsafe-inline'; img-src 'self' https://account.ycombinator.com; frame-ancestors 'self'
+
+<html lang="en" op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?EcTlVqp9UtKKNvEDtg3d">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>The ecclesial community in question is United Methodist. You could set up ChatGP... | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.svg" width="18" height="18" style="border:1px white solid; display:block"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+                            <a href="newest">new</a> | <a href="front">past</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="show">show</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D37599729">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr id="pagespace" title="The ecclesial community in question is United Methodist. You could set up ChatGP..." style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+    <tr class='athing' id='37599729'>    <td class='ind'></td><td valign="top" class="votelinks">
+      <center><a id='up_37599729'href='vote?id=37599729&amp;how=up&amp;goto=item%3Fid%3D37599729'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=NoZebra120vClip" class="hnuser">NoZebra120vClip</a> <span class="age" title="2023-09-21T16:07:33"><a href="item?id=37599729">14 hours ago</a></span> <span id="unv_37599729"></span>          <span class='navs'>
+             | <a href="item?id=37597011">parent</a> | <a href="context?id=37599729" rel="nofollow">context</a> | <a href="fave?id=37599729&amp;auth=3d7479680ccaf88d0c72b2ce6e732990df4e24fc">favorite</a><span class="onstory"> |  on: <a href="item?id=37597011">Church uses ChatGPT for AI-generated service</a></span>          </span>
+                  </span></div><br><div class="comment">
+                  <span class="commtext c00">The ecclesial community in question is United Methodist.<p>You could set up ChatGPT as a leader in a Unitarian Universalist community, and it&#x27;d undoubtedly find acceptance and even growth.<p>LLMs are indifferent and noncommittal about all these topics. Ask them about God, faith, religion, or spirituality, and the answers boil down to &quot;there&#x27;s no one right answer&quot; and &quot;some people say... but other people say...&quot;<p>They&#x27;ve been pretty good at writing hymns. Just from nicking public domain lyrics and stitching them together like W. S. Burroughs cut-ups.</span>
+              <div class='reply'></div></div></td></tr>
+          <tr style="height:10px"></tr><tr><td colspan="2"></td><td><form action="comment" method="post"><input type="hidden" name="parent" value="37599729"><input type="hidden" name="goto" value="item?id=37599729"><input type="hidden" name="hmac" value="68cf70f0a11e812abc2b93771507e1ee65015619"><textarea name="text" rows="8" cols="80" wrap="virtual"></textarea><br><br>
+<input type="submit" value="reply"></form></td></tr>  </table><br><br><table border="0" class='comment-tree'>
+            <tr class='athing comtr' id='37605958'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_37605958'href='vote?id=37605958&amp;how=up&amp;goto=item%3Fid%3D37599729'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jncfhnb" class="hnuser">jncfhnb</a> <span class="age" title="2023-09-21T23:41:03"><a href="item?id=37605958">7 hours ago</a></span> <span id="unv_37605958"></span>          <span class='navs'>
+             <a class="togg clicky" id="37605958" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <span class="commtext c00">LLMs do no such thing generically. Chat GPT has been taught to do this</span>
+              <div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=37605958&amp;goto=item%3Fid%3D37599729%2337605958">reply</a></u>
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            </table>
+  <br><br>
+</td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br>
+<center><a href="https://www.ycombinator.com/apply/">Applications are open for YC Winter 2024</a></center><br>
+<center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a> | <a href="newsfaq.html">FAQ</a> | <a href="lists">Lists</a> | <a href="https://github.com/HackerNews/API">API</a> | <a href="security.html">Security</a> | <a href="https://www.ycombinator.com/legal/">Legal</a> | <a href="https://www.ycombinator.com/apply/">Apply to YC</a> | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br>
+<form method="get" action="//hn.algolia.com/">Search: <input type="text" name="q" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form></center></td></tr>      </table></center></body>
+      <script type='text/javascript' src='hn.js?EcTlVqp9UtKKNvEDtg3d'></script>
+  </html>

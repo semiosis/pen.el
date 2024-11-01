@@ -1,0 +1,7 @@
+
+stack exec DoLetExample3
+stack exec ForeachExample
+stack exec ForeachExample2
+stack exec ListExamples
+
+#

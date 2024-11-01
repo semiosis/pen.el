@@ -1,0 +1,427 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 5556
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Wed, 20 Apr 2022 22:22:37 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"626087ad-a660"
+expires: Thu, 15 Sep 2022 05:30:35 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 2E7A:5B70:615FE:6C243:6322B623
+Accept-Ranges: bytes
+Date: Thu, 15 Sep 2022 05:20:37 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10323-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1663219237.062906,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: a5f64df3c169451c55689ed431853c116629a076
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Extending VisiData With Plugins &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/advanced/extending-visidata.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Debugging VisiData" href="../debugging-visidata/" />
+    <link rel="prev" title="Configuring VisiData" href="../configuring-visidata/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Extending VisiData With Plugins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-visidata-s-plugin-installer">Using VisiData’s plugin installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-install-a-plugin-manually">How to install a plugin manually</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#where-to-find-plugins">Where to find plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Extending VisiData With Plugins</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="extending-visidata-with-plugins">
+<h1>Extending VisiData With Plugins<a class="headerlink" href="#extending-visidata-with-plugins" title="Permalink to this headline">¶</a></h1>
+<p>VisiData allows users to extend the program’s functionality through plugins. You can <a class="reference external" href="https://www.visidata.org/docs/api/">write your own</a>, or use plugins other people have written. This chapter focuses on incorporating already-written plugins.</p>
+<div class="section" id="using-visidata-s-plugin-installer">
+<h2>Using VisiData’s plugin installer<a class="headerlink" href="#using-visidata-s-plugin-installer" title="Permalink to this headline">¶</a></h2>
+<p>VisiData provides an interface for installing certain plugins. To open the interface, press <kbd class="kbd docutils literal notranslate">Space</kbd> to raise the longname-command prompt, type <code class="docutils literal notranslate"><span class="pre">open-plugins</span></code>, and press <kbd class="kbd docutils literal notranslate">Enter</kbd>:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem  </span><span class="ansi4 ansi30 ansi48-110">H</span><span class="ansi30"></span><span class="ansi30 ansi48-110">elp     Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv40"> name              </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> instal…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> description                            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> maintainer         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> latest</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">&gt;</span><span class="ansi40"> 
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> vfake             </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║        | replace column with fake values        | Saul Pwanson @saul…| 2020-1…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> dedupe            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> adds commands for selection and remova…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Jeremy Singer-Vine…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2021-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> normcol           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> normalizes column names in any given s…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Jeremy Singer-Vine…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2020-1…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> fec</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> loader for .fec files from the Federal…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Jeremy Singer-Vine…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2019-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> sparkline         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> add a sparkline column to visualise tr…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Lucas Messenger @l…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2020-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> rownum            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> add column of original row ordering    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Saul Pwanson @saul…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2019-1…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> vmailcap          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> add mailcap-view(-selected) commands t…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Saul Pwanson @saul…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2020-1…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> vmutagen          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> add mp3 metadata columns to DirSheet   </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Saul Pwanson @saul…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2019-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> vds3</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> add support for Amazon S3 paths</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> AJ Kerrigan @ajker…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2021-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> genericSQL        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> add loaders for SQL databases (Oracle,…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Andrew Swanson @as…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2020-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> diff</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> adds command to create diff sheets     </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Anja Kefala @anjak…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2020-1…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> marks             </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> adds commands for marking selected row…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Saul Pwanson @saul…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2020-1…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> conll             </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CoNLL data loader</span><span class="ansi40">                      </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Paul McCann &lt;polm@…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2020-1…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> darkdraw          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> textart and animation for the terminal…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> devottys @devottys </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2021-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> f5log             </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> parse F5 BIG-IP ltm, gtm, asm, apm, au…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> James Deucker &lt;f5l…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2022-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> parent_navigation </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> navigate a parent sheet from its child </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> AJ Kerrigan @ajker…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2022-0…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> vd_toml           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> add a loader for TOML files</span><span class="ansi40">            </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> AJ Kerrigan @ajker…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 2022-0…</span><span class="ansi40"> 
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110">3› plugins_global| "open-plugins"</span><span class="ansi48-110">                                    </span><span class="ansi1 ansi48-110"></span><span class="ansi1 ansi30 ansi48-110">Space           17 plugins  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+<p>To install and <em>activate</em> any of these plugins, navigate to its row and press <kbd class="kbd docutils literal notranslate">a</kbd>. To <em>deactivate</em> a plugin, navigate to its row and press <kbd class="kbd docutils literal notranslate">d</kbd>.</p>
+</div>
+<div class="section" id="how-to-install-a-plugin-manually">
+<h2>How to install a plugin manually<a class="headerlink" href="#how-to-install-a-plugin-manually" title="Permalink to this headline">¶</a></h2>
+<p>You can also manually install plugins that are not available through the installer. Doing so involves two steps:</p>
+<ul class="simple">
+<li>First, make the plugin available to VisiData. Depending on the plugin, you’ll do this either by saving the plugin file to your <code class="docutils literal notranslate"><span class="pre">~/.visidata/</span></code> directory, or by running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">[plugin_package_name]</span></code>.</li>
+<li>Then, use your <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> configuration file to import the plugin. If you’ve saved your plugin as <code class="docutils literal notranslate"><span class="pre">~/.visidata/myplugin.py</span></code>, all you need to do is add a line that says <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">myplugin</span></code>.</li>
+</ul>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>To demonstrate, let’s install <a class="reference external" href="https://github.com/jsvine/visidata-plugins">a “dedupe” plugin</a>:</p>
+<ul class="simple">
+<li>Open <a class="reference external" href="https://raw.githubusercontent.com/jsvine/visidata-plugins/master/plugins/dedupe.py">this file</a> in your browser and save it to <code class="docutils literal notranslate"><span class="pre">~/.visidata/dedupe.py</span></code> on your computer.</li>
+<li>Open your <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> file, add <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">dedupe</span></code> on a new line, and save the file.</li>
+</ul>
+<p>That’s it. Next time you start VisiData, you should have access to two new commands: <code class="docutils literal notranslate"><span class="pre">select-duplicate-rows</span></code> and <code class="docutils literal notranslate"><span class="pre">dedupe-rows</span></code>.</p>
+<p>Let’s give the plugin a spin. Download <a class="reference download internal" download="" href="../../_downloads/05d111ac778b5782d1616b1cabfbcea8/dedupe-example.csv"><code class="xref download docutils literal notranslate"><span class="pre">dedupe-example.csv</span></code></a> and open it in VisiData:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>vd dedupe-example.csv
+</pre></div>
+</div>
+<p>You should see this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem  </span><span class="ansi4 ansi30 ansi48-110">H</span><span class="ansi30"></span><span class="ansi30 ansi48-110">elp     Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv37 inv_foreground"></span><span class="ansi1 ansi4 inv37 inv40"> animal </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> name   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> dog    </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">| Apollo ║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> dog    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Bambi  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> dog    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Cutie  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> fish   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Fido   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> fish   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Fido   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110">1› dedupe-example| saul.pw/VisiData v2.8 | opening datasets/dedupe-example.c             5 rows  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+<p>Press <kbd class="kbd docutils literal notranslate">Space</kbd> to initiate the longname-command prompt, and type <code class="docutils literal notranslate"><span class="pre">dedupe-rows</span></code>:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem  </span><span class="ansi4 ansi30 ansi48-110">H</span><span class="ansi30"></span><span class="ansi30 ansi48-110">elp     Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv37 inv_foreground"></span><span class="ansi1 ansi4 inv37 inv40"> animal </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> name   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> dog    </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">| Apollo ║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> dog    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Bambi  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> dog    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Cutie  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> fish   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Fido   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> fish   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Fido   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+</span><span class="ansi37 ansi40">command name:</span><span class="ansi40"> </span><span class="ansi37 ansi40">dedupe-rows</span><span class="ansi40">                                 </span><span class="ansi1 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110"> Space   exec-longname         5 rows  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+<p>Press <kbd class="kbd docutils literal notranslate">Enter</kbd> to execute the command. Now you should see a new copy of the sheet, but with the duplicate row removed:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem  </span><span class="ansi4 ansi30 ansi48-110">H</span><span class="ansi30"></span><span class="ansi30 ansi48-110">elp     Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv37 inv_foreground"></span><span class="ansi1 ansi4 inv37 inv40"> animal </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> name   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> dog    </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">| Apollo ║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> dog    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Bambi  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> dog    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Cutie  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> fish   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> Fido   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                                                                                  
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110">2› dedupe-example_deduped| </span><span class="ansi1 ansi33 ansi48-110"></span><span class="ansi1 ansi33 ansi40">No key cols specified. Using all columns.</span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110"> |  Space            4 rows  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="where-to-find-plugins">
+<h2>Where to find plugins<a class="headerlink" href="#where-to-find-plugins" title="Permalink to this headline">¶</a></h2>
+<p>Plugin support is a relatively new feature of VisiData, so there aren’t many public plugins yet available. Here is a (likely incomplete) list of resources:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jsvine/visidata-plugins">jsvine/visidata-plugins</a></li>
+<li><a class="reference external" href="https://github.com/ajkerrigan/visidata-plugins">ajkerrigan/visidata-plugins</a></li>
+<li><a class="reference external" href="https://github.com/anjakefala/vd-plugins">anjakefala/vd-plugins</a></li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">As with any software you download, plugins may contain malicious code. If you’re unsure whether a plugin is safe to install, err on the side of caution.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../debugging-visidata/" class="btn btn-neutral float-right" title="Debugging VisiData" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../configuring-visidata/" class="btn btn-neutral float-left" title="Configuring VisiData" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

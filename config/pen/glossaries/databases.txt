@@ -1,0 +1,159 @@
+durability
+    [ACID property]
+
+    Guarantees that transactions that have
+    committed will survive permanently.
+
+    For example, if a flight booking reports
+    that a seat has successfully been booked,
+    then the seat will remain booked even if
+    the system crashes.
+
+Create, read, update and delete
+CRUD
+    Create, read, update, and delete are the
+    four basic functions of persistent
+    storage.
+    
+    Alternate words are sometimes used when
+    defining the four basic functions of CRUD,
+    such as retrieve instead of read, modify
+    instead of update, or destroy instead of
+    delete.
+
+federation
+    [#databases]
+
+    Several databases hold information, but
+    certain instances are completely
+    responsible for different portions of the
+    data commonly based off characteristics of
+    the data itself.
+
+    Federation is typically across machines.
+    
+    Federating data on a single machine is an
+    inappropriate use of the term.
+    
+    Federation more often applies to schemes
+    that divide on logical boundaries, such as
+    the geographic definition above.
+    
+    The Internet is more global, so lets think
+    of countries instead.
+    
+    If we were to take each country and design
+    our systems such that all data related to
+    each country existed on a different
+    server, we have a geographically federated
+    systems.
+    
+    Another common (and practical) example is
+    federating based on quality of service
+    (paying users vs. free users).
+    
+    The motivation behind this is clear, it
+    makes the task of ensuring service levels
+    on the database easier because the data
+    set is smaller and it allows one to
+    prioritize the investment to improve an
+    aspect of the system because of the
+    logical separation (e.g. more immediacy
+    and money can be applied to ensuring
+    availability of the servers that service
+    paying users.)
+
+ETL
+extract, transform, load
+    [process]
+
+    - data Extraction,
+    - Transformation, and
+    - Loading.
+
+    The process by which data is extracted
+    from data sources that are not optimized.
+
+    But also encompasses the details, the
+    overlap and the advancements in ETL.
+    - The transportation of data.
+    - The overlap between each of these
+      stages.
+    - How new technologies are changing this
+      flow.
+
+    Three database functions that are combined
+    into one tool to pull data out of one
+    database and place it into another
+    database.
+    
+    Extract is the process of reading data
+    from a database.
+    
+    In this stage, the data is collected,
+    often from multiple and different types of
+    sources.
+
+    https://www.holistics.io/blog/the-rise-and-fall-of-the-olap-cube/
+
+    OLAP cube usage also meant that data teams
+    had to manage complicated pipelines to
+    transform data from an SQL database into
+    these cubes.
+    
+    If you were working with a large amount of
+    data, such transformation tasks could take
+    a long time to complete, so a common
+    practice would be to run all ETL pipelines
+    before the analysts came in to work.
+    
+    This way, the analysts wouldn’t need to
+    wait for their cubes to be loaded with the
+    latest data — they could have the
+    computers do the data heavy-lifting at
+    night, and start work immediately in the
+    mornings.
+    
+    This approach, of course, became more
+    problematic as companies globalized, and
+    opened offices in multiple timezones that
+    demanded access to the same analytical
+    systems.
+    
+    (How do you run your pipelines at ‘night’
+    when your night is another office’s
+    morning?)
+
+sharding
+    A type of database partitioning that
+    separates
+    
+    very large databases the into smaller,
+    faster, more easily managed parts called
+    data shards.
+    
+    The word shard means a small part of a
+    whole.
+
+shard
+database shard
+    A horizontal partition of data in a
+    database or search engine.
+    
+    Each shard is held on a separate database
+    server instance, to spread load.
+    
+    Some data within a database remains
+    present in all shards, but some appears
+    only in a single shard.
+    
+    Each shard (or server) acts as the single
+    source for this subset of data.
+
+ODBC
+Open Database Connector
+    It's an API to various databases.
+    
+    It's quite old (1990s).
+
+    It's not a variant of SQL.

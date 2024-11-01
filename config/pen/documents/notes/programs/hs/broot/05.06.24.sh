@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "broot" "--outcmd" "/root/.pen/tmp/tmp.LGgUrW0lAI" "#" "<==" "br"
+cd /root/.pen/documents/notes;  "broot" "--outcmd" "/root/.pen/tmp/tmp.zEFtdWguua" "#" "<==" "br"
+cd /root/.pen/documents/notes;  "broot" "--outcmd" "/root/.pen/tmp/tmp.E5h9dUaY5F" "#" "<==" "br"
+cd /root/.pen/documents/notes;  "broot" "--outcmd" "/root/.pen/tmp/tmp.H6C6fAa1ek" "#" "<==" "br"
+cd /root/.pen/documents/notes;  "broot" "--outcmd" "/root/.pen/tmp/tmp.5HITMtUU0i" "#" "<==" "br"

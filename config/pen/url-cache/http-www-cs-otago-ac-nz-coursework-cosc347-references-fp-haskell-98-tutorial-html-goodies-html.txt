@@ -1,0 +1,584 @@
+HTTP/1.1 200 OK
+Date: Tue, 05 Apr 2022 03:38:22 GMT
+Server: Apache
+Last-Modified: Wed, 28 Feb 2001 20:43:34 GMT
+ETag: "7d93-37e6407462980"
+Accept-Ranges: bytes
+Content-Length: 32147
+Content-Type: text/html; charset=UTF-8
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+
+
+<title>A Gentle Introduction to Haskell: Values and Types</title>
+<p>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="intro.html">back</a> <a href="functions.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-values-etc"></a><p>
+<a name="sect2"></a>
+<h2>2<tt>&nbsp;&nbsp;</tt>Values, Types, and Other Goodies</h2>
+<p>
+Because Haskell is a purely functional language, all computations are
+done via the evaluation of <I>expressions</I> (syntactic terms) to
+yield <I>values</I> (abstract entities that we regard as answers).
+Every value has an associated 
+<I>type</I>.  (Intuitively, we can think of types as sets of values.)
+Examples of expressions include atomic values such as the integer <tt>5</tt>,
+the character <tt>'a'</tt>, and the function <tt>\x&nbsp;-&gt;&nbsp;x+1</tt>, as well as
+structured values such as the list <tt>[1,2,3]</tt> and the pair <tt>('b',4)</tt>.<p>
+Just as expressions denote values, type expressions are
+syntactic terms that denote type values (or just <I>types</I>).
+Examples of type expressions include the atomic types <tt>Integer
+</tt>(infinite-precision integers), <tt>Char</tt> (characters), <tt>Integer-&gt;Integer
+</tt>(functions mapping <tt>Integer</tt> to <tt>Integer</tt>), as well as the structured types
+<tt>[Integer]</tt> (homogeneous lists of integers) and <tt>(Char,Integer)
+</tt>(character, integer pairs).<p>
+All Haskell values are "first-class"---they may be passed as
+arguments to functions, returned as results, placed in data
+structures, etc.  Haskell types, on the other hand, are <I>not
+</I>first-class.  Types in a sense describe values, and the
+association of a value with its type is called a <I>typing</I>.  Using
+the examples of values and types above, we write typings as follows:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;::&nbsp;Integer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'a'&nbsp;::&nbsp;Char<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inc&nbsp;::&nbsp;Integer&nbsp;-&gt;&nbsp;Integer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1,2,3]&nbsp;::&nbsp;[Integer]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('b',4)&nbsp;::&nbsp;(Char,Integer)<br>
+
+<br>
+
+</tt>The "<tt>::</tt>" can be read "has type."<p>
+Functions in Haskell are normally defined by a series of 
+<I>equations</I>.  For example, the function <tt>inc</tt> can be
+defined by the single equation:
+<tt><br>
+
+<br>
+inc&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;n+1<br>
+
+<br>
+
+</tt>An equation is an example of a <I>declaration</I>.  Another kind of
+declaration is a <I>type signature declaration
+</I>(<a href="../onlinereport/decls.html#type-signatures">&sect;4.4.1</a>), with which we can declare an explicit typing
+for <tt>inc</tt>:
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Integer&nbsp;-&gt;&nbsp;Integer<br>
+
+<br>
+
+</tt>We will have much more to say about function definitions in Section
+<a href="functions.html#tut-functions">3</a>.<p>
+For pedagogical purposes, when we wish to indicate that an expression
+e<sub>1</sub> evaluates, or "reduces," to another expression or value e<sub>2</sub>,
+we will write:
+<p>
+e<sub>1</sub>    =&gt;    e<sub>2</sub> <p>
+
+For example, note that:
+<p>
+<tt>inc&nbsp;(inc&nbsp;3)</tt>    =&gt;    <tt>5</tt> <p>
+<p>
+Haskell's static type system defines the formal relationship
+between types and values (<a href="../onlinereport/decls.html#type-semantics">&sect;4.1.4</a>).  The static type
+system ensures that Haskell programs are <I>type safe</I>; that is,
+that the programmer has not mismatched types in some way.  For
+example, we cannot generally add together two characters, so the
+expression <tt>'a'+'b'</tt> is ill-typed.  The main advantage of statically
+typed languages is well-known: All type errors are detected at
+compile-time.  Not all errors are caught by the type system; an
+expression such as <tt>1/0</tt> is typable but its evaluation will result in
+an error at execution time.  Still, the type system finds many
+program errors at compile time, aids the user in reasoning about
+programs, and also permits a compiler to generate more efficient code
+(for example, no run-time type tags or tests are required).<p>
+The type system also ensures that user-supplied type signatures are
+correct.  In fact, Haskell's type system is powerful enough to allow
+us to avoid writing any type signatures at all; (With a few
+exceptions to be described later.) we say that the type
+system <I>infers</I> the correct types for us.  Nevertheless, judicious
+placement of type signatures such as that we gave for <tt>inc</tt> is a good idea,
+since type signatures are a very effective form of documentation and
+help bring programming errors to light.<p>
+[The reader will note that we have capitalized identifiers that
+denote specific types, such as <tt>Integer</tt> and <tt>Char</tt>, but not identifiers
+that denote values, such as <tt>inc</tt>.  This is not just a convention: it
+is enforced by Haskell's lexical syntax.  In fact, the case of the
+other characters matters, too: <tt>foo</tt>, <tt>fOo</tt>, and <tt>fOO</tt> are all
+distinct identifiers.]<a name="tut-polymorphism"></a><p>
+<a name="sect2.1"></a>
+<h3>2.1<tt>&nbsp;&nbsp;</tt>Polymorphic Types</h3>
+<p>
+Haskell also incorporates <I>polymorphic</I> types---types that are
+universally quantified in some way over all types.  Polymorphic
+type expressions essentially describe families of types.  For
+example, (forall <tt>a</tt>)<tt>[a]</tt> is the family of types consisting of,
+for every type <tt>a</tt>, the type of lists of <tt>a</tt>.  Lists of integers
+(e.g. <tt>[1,2,3]</tt>), lists of characters (<tt>['a','b','c']</tt>), even lists of
+lists of integers, etc., are all members of this family.  (Note,
+however, that <tt>[2,'b']</tt> is <I>not</I> a valid example, since there is
+no single type that contains both <tt>2</tt> and <tt>'b'</tt>.)<p>
+[Identifiers such as <tt>a</tt> above are called <I>type variables</I>,
+and are uncapitalized to distinguish them from specific types such as
+<tt>Int</tt>.  Furthermore, since Haskell has only universally quantified
+types, there is no need to explicitly write out the symbol for
+universal quantification, and thus we simply write <tt>[a]</tt> in the
+example above.  In other words, all type variables are implicitly
+universally quantified.]<p>
+Lists are a commonly used data structure in functional languages, and
+are a good vehicle for explaining the principles of polymorphism.  The
+list <tt>[1,2,3]</tt> in Haskell is actually shorthand for the list
+<tt>1:(2:(3:[]))</tt>, where <tt>[]</tt> is the empty list and <tt>:</tt> is the infix
+operator that adds its first argument to the front of its second
+argument (a list). (<tt>:</tt> and <tt>[]</tt> are like Lisp's <tt>cons</tt> and
+<tt>nil</tt>, respectively.) Since <tt>:</tt> is right associative, we can also
+write this list as <tt>1:2:3:[]</tt>.<p>
+As an example of a user-defined function that operates on lists,
+consider the problem of counting the number of elements in a list:
+<tt><br>
+
+<br>
+length&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;[a]&nbsp;-&gt;&nbsp;Integer<br>
+length&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;0<br>
+length&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;1&nbsp;+&nbsp;length&nbsp;xs<br>
+
+<br>
+
+</tt>This definition is almost self-explanatory.  We can read the equations
+as saying: "The length of the empty list is 0, and the length of a
+list whose first element is <tt>x</tt> and remainder is <tt>xs</tt> is 1 plus the
+length of <tt>xs</tt>." (Note the naming convention used here; <tt>xs</tt> is the
+plural of <tt>x</tt>, and should be read that way.)<p>
+Although intuitive, this example highlights an important aspect of
+Haskell that is yet to be explained: <I>pattern matching</I>.  The
+left-hand sides of the equations contain patterns such as <tt>[]
+</tt>and <tt>x:xs</tt>.  In a function application these patterns are 
+matched against actual parameters in a fairly intuitive way (<tt>[]
+</tt>only matches the empty list, and <tt>x:xs</tt> will successfully match any
+list with at least one element, binding <tt>x</tt> to the first element and
+<tt>xs</tt> to the rest of the list).  If the match succeeds, the right-hand
+side is evaluated and returned as the result of the application.  If
+it fails, the next equation is tried, and if all equations fail, an
+error results.<p>
+Defining functions by pattern matching is quite common in Haskell, and
+the user should become familiar with the various kinds of patterns
+that are allowed; we will return to this issue in
+Section <a href="patterns.html#tut-pattern-matching">4</a>. <p>
+The <tt>length</tt> function is also an example of a polymorphic
+function.  It can 
+be applied to a list containing elements of any type, for example
+<tt>[Integer]</tt>, <tt>[Char]</tt>, or <tt>[[Integer]]</tt>.
+<p>
+<table >
+<tr><td>
+  <tt>length&nbsp;[1,2,3]</tt>      </td><td align=center>    =&gt;    </td><td> 3</td></tr><tr><td><tt>length&nbsp;['a','b','c']</tt></td><td align=center>    =&gt;    </td><td> 3</td></tr><tr><td><tt>length&nbsp;[[1],[2],[3]]</tt>   </td><td align=center>    =&gt;    </td><td> 3
+</td></tr></table>
+<p>
+<p>
+Here are two other useful polymorphic functions on lists that will be
+used later.  Function <tt>head</tt> returns the first element of a list,
+function <tt>tail</tt> returns all but the first.
+<tt><br>
+
+<br>
+head&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;[a]&nbsp;-&gt;&nbsp;a<br>
+head&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x<br>
+<br>
+tail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;[a]&nbsp;-&gt;&nbsp;[a]<br>
+tail&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;xs<br>
+
+<br>
+
+</tt>Unlike <tt>length</tt>, these functions are not defined for all possible
+values of their argument.  A runtime error occurs when these functions
+are applied to an empty list.  <p>
+With polymorphic types, we find that some types are in a sense
+strictly more general than others in the sense that the set of
+values they define is larger.  For example, the type <tt>[a]
+</tt>is more general than <tt>[Char]</tt>.  In other words, the latter type can be
+derived from the former by a suitable substitution for <tt>a</tt>.  With
+regard to this generalization ordering, Haskell's type system
+possesses two important properties: First, every well-typed expression
+is guaranteed to have a unique principal type (explained below),
+and second, the principal type can be inferred automatically
+(<a href="../onlinereport/decls.html#type-semantics">&sect;4.1.4</a>).  In comparison to a monomorphically
+typed language such as C, the reader will find that 
+polymorphism improves expressiveness, and type inference
+lessens the burden of types on the programmer.<p>
+An expression's or function's principal type is the least general type
+that, intuitively, "contains all instances of the expression".  For
+example, the principal type of <tt>head</tt> is <tt>[a]-&gt;a</tt>; <tt>[b]-&gt;a</tt>,
+<tt>a-&gt;a</tt>, or even <tt>a</tt> are correct types, but too general, whereas something
+like <tt>[Integer]-&gt;Integer</tt> is too specific.  The existence of unique principal
+types is the hallmark feature of the <I>Hindley-Milner type system</I>,
+which forms the basis of the type systems of Haskell, ML,
+Miranda, ("Miranda" is a trademark of Research Software,
+Ltd.) and several other (mostly functional) languages.<a name="tut-user-types"></a><p>
+<a name="sect2.2"></a>
+<h3>2.2<tt>&nbsp;&nbsp;</tt>User-Defined Types</h3>
+<p>
+We can define our own types in Haskell using a <tt>data</tt> declaration,
+which we introduce via a series of examples (<a href="../onlinereport/decls.html#datatype-decls">&sect;4.2.1</a>).<p>
+An important predefined type in Haskell is that of truth values:
+<tt><br>
+
+<br>
+data&nbsp;Bool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;False&nbsp;|&nbsp;True<br>
+
+<br>
+
+</tt>The type being defined here is <tt>Bool</tt>, and it has exactly two values:
+<tt>True</tt> and <tt>False</tt>.  Type <tt>Bool</tt> is an example of a (nullary) <I>type
+constructor</I>, and <tt>True</tt> and <tt>False</tt> are (also nullary) <I>data
+constructors</I> (or just <I>constructors</I>, for short).<p>
+Similarly, we might wish to define a color type:
+<tt><br>
+
+<br>
+data&nbsp;Color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Red&nbsp;|&nbsp;Green&nbsp;|&nbsp;Blue&nbsp;|&nbsp;Indigo&nbsp;|&nbsp;Violet<br>
+
+<br>
+
+</tt>Both <tt>Bool</tt> and <tt>Color</tt> are examples of enumerated types, since
+they consist of a finite number of nullary data constructors.<p>
+Here is an example of a type with just one data constructor:
+<tt><br>
+
+<br>
+data&nbsp;Point&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Pt&nbsp;a&nbsp;a<br>
+
+<br>
+
+</tt>Because of the single constructor, a type like <tt>Point</tt> is often
+called a <I>tuple type</I>, since it is essentially just a cartesian
+product (in this case binary) of other types. (Tuples are
+somewhat like records in other languages.)
+In contrast, multi-constructor types, such as <tt>Bool</tt> and
+<tt>Color</tt>, are called (disjoint) union or sum types.<p>
+More importantly, however, <tt>Point</tt> is an example of a 
+polymorphic type: for any type t, it defines the type of cartesian
+points that use t as the coordinate type.  The <tt>Point</tt> type can now be seen
+clearly as a unary type constructor, since from the type t it
+constructs a new type <tt>Point&nbsp;</tt>t.  (In the same sense, using the list
+example given earlier, <tt>[]</tt> is also a type constructor.  Given any type t
+we can "apply" <tt>[]</tt> to yield a new type <tt>[</tt>t<tt>]</tt>.  The Haskell
+syntax allows <tt>[]&nbsp;</tt>t to be written as <tt>[</tt>t<tt>]</tt>.  Similarly,
+<tt>-&gt;</tt> is a type constructor: given two types t and u,
+t<tt>-&gt;</tt>u is the type of functions mapping elements of type t to
+elements of type u.)<p>
+Note that the type of the binary data constructor <tt>Pt</tt> is <tt>a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Point&nbsp;a</tt>, 
+and thus the following typings are valid:
+<tt><br>
+
+<br>
+Pt&nbsp;&nbsp;2.0&nbsp;&nbsp;3.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Point&nbsp;Float<br>
+Pt&nbsp;&nbsp;'a'&nbsp;&nbsp;'b'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Point&nbsp;Char<br>
+Pt&nbsp;True&nbsp;False&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Point&nbsp;Bool<br>
+
+<br>
+
+</tt>On the other hand, an expression such as <tt>Pt&nbsp;'a'&nbsp;1</tt> is ill-typed
+because <tt>'a'</tt> and <tt>1</tt> are of different types.<p>
+It is important to distinguish between applying a <I>data constructor</I> to
+yield a <I>value</I>, and applying a <I>type constructor</I> to yield a
+<I>type</I>; the former happens at run-time and is how we compute
+things in Haskell, whereas the latter happens at compile-time and is
+part of the type system's process of ensuring type safety.<p>
+[Type constructors such as <tt>Point</tt> and data constructors such as
+<tt>Pt</tt> are in separate namespaces.  This allows the same name to be used
+for both a type constructor and data constructor, as in the following:
+<tt><br>
+
+<br>
+data&nbsp;Point&nbsp;a&nbsp;=&nbsp;Point&nbsp;a&nbsp;a<br>
+
+<br>
+
+</tt>While this may seem a little confusing at first, it serves to make the
+link between a type and its data constructor more obvious.]<a name="tut-recursive-types"></a><p>
+<a name="sect2.2.1"></a>
+<h4>2.2.1<tt>&nbsp;&nbsp;</tt>Recursive Types</h4>
+<p>
+Types can also be recursive, as in the type of binary trees:
+<tt><br>
+
+<br>
+data&nbsp;Tree&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Leaf&nbsp;a&nbsp;|&nbsp;Branch&nbsp;(Tree&nbsp;a)&nbsp;(Tree&nbsp;a)&nbsp;<br>
+
+<br>
+
+</tt>Here we have defined a polymorphic binary tree type whose elements
+are either leaf nodes containing a value of type <tt>a</tt>, or internal
+nodes ("branches") containing (recursively) two sub-trees.<p>
+When reading data declarations such as this, remember again that <tt>Tree</tt> is a
+type constructor, whereas <tt>Branch</tt> and <tt>Leaf</tt> are data constructors.
+Aside from establishing a connection between these constructors, the
+above declaration is essentially defining the following types for
+<tt>Branch</tt> and <tt>Leaf</tt>:
+<tt><br>
+
+<br>
+Branch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;Tree&nbsp;a<br>
+Leaf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;Tree&nbsp;a<br>
+
+<br>
+<p>
+</tt>With this example we have defined a type sufficiently rich to
+allow defining some interesting (recursive) functions that use it.
+For example, suppose we wish to define a function <tt>fringe</tt> that
+returns a list of all the elements in the leaves of a tree from left
+to right.  It's usually helpful to write down the type of new
+functions first; in this case we see that the type should be 
+<tt>Tree&nbsp;a&nbsp;-&gt;&nbsp;[a]</tt>.  That is, <tt>fringe</tt> is a polymorphic function that,
+for any type <tt>a</tt>, maps trees of <tt>a</tt> into lists of <tt>a</tt>.  A suitable
+definition follows:
+<tt><br>
+
+<br>
+fringe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;[a]<br>
+fringe&nbsp;(Leaf&nbsp;x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[x]<br>
+fringe&nbsp;(Branch&nbsp;left&nbsp;right)&nbsp;=&nbsp;&nbsp;fringe&nbsp;left&nbsp;++&nbsp;fringe&nbsp;right<br>
+
+<br>
+
+</tt>Here <tt>++</tt> is the infix operator that concatenates two lists (its full
+definition will be given in Section <a href="monads.html#tut-monadic-classes">9.1</a>).  As
+with the <tt>length</tt> example given earlier, the <tt>fringe</tt> function is
+defined using pattern matching, except that here we see patterns involving
+user-defined constructors: <tt>Leaf</tt> and <tt>Branch</tt>.  [Note that the
+formal parameters are easily identified as the ones beginning with
+lower-case letters.]<a name="tut-type-synonyms"></a><p>
+<a name="sect2.3"></a>
+<h3>2.3<tt>&nbsp;&nbsp;</tt>Type Synonyms</h3>
+<p>
+For convenience, Haskell provides a way to define <I>type synonyms</I>;
+i.e. names for commonly used types.  Type synonyms are created using a
+<tt>type</tt> declaration (<a href="../onlinereport/decls.html#type-synonym-decls">&sect;4.2.2</a>).  Here are several
+examples:
+<tt><br>
+
+<br>
+type&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[Char]<br>
+type&nbsp;Person&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(Name,Address)<br>
+type&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;String<br>
+data&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;None&nbsp;|&nbsp;Addr&nbsp;String<br>
+
+<br>
+<p>
+</tt>Type synonyms do not define new types, but simply give new names
+for existing types.  For example, the type <tt>Person&nbsp;-&gt;&nbsp;Name</tt> is
+precisely equivalent to <tt>(String,Address)&nbsp;-&gt;&nbsp;String</tt>.  The new names
+are often shorter than the types they are synonymous with, but this is
+not the only purpose of type synonyms: they can also improve
+readability of programs by being more mnemonic; indeed, the above
+examples highlight this.  We can even give new names to polymorphic
+types:
+<tt><br>
+
+<br>
+type&nbsp;AssocList&nbsp;a&nbsp;b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[(a,b)]<br>
+
+<br>
+
+</tt>This is the type of "association lists" which associate values of
+type <tt>a</tt> with those of type <tt>b</tt>.<a name="tut-built-ins"></a><p>
+<a name="sect2.4"></a>
+<h3>2.4<tt>&nbsp;&nbsp;</tt>Built-in Types Are Not Special</h3>
+<p>
+Earlier we introduced several "built-in" types such as lists,
+tuples, integers, and characters.  We have also shown how new
+user-defined types can be defined.  Aside from special syntax, are
+the built-in types in any way more special than the user-defined ones?
+The answer is <I>no</I>.  The special syntax is for convenience and for
+consistency with historical convention, but has no semantic
+consequences.<p>
+We can emphasize this point by considering what the type
+declarations would look like for these built-in types if in fact we
+were allowed to use the special syntax in defining them.  For example,
+the <tt>Char</tt> type might be written as:
+<tt><br>
+
+<br>
+data&nbsp;Char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;'a'&nbsp;|&nbsp;'b'&nbsp;|&nbsp;'c'&nbsp;|&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;This&nbsp;is&nbsp;not&nbsp;valid<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;'A'&nbsp;|&nbsp;'B'&nbsp;|&nbsp;'C'&nbsp;|&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;Haskell&nbsp;code!<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;'1'&nbsp;|&nbsp;'2'&nbsp;|&nbsp;'3'&nbsp;|&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+
+<br>
+
+</tt>These constructor names are not syntactically valid; to fix them we
+would have to write something like:
+<tt><br>
+
+<br>
+data&nbsp;Char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Ca&nbsp;|&nbsp;Cb&nbsp;|&nbsp;Cc&nbsp;|&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;CA&nbsp;|&nbsp;CB&nbsp;|&nbsp;CC&nbsp;|&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;C1&nbsp;|&nbsp;C2&nbsp;|&nbsp;C3&nbsp;|&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+
+<br>
+
+</tt>Even though these constructors are more concise, they are quite
+unconventional for representing characters.<p>
+In any case, writing "pseudo-Haskell" code in this way helps us to
+see through the special syntax.  We see now that <tt>Char</tt> is just an
+enumerated type consisting of a large number of nullary constructors.
+Thinking of <tt>Char</tt> in this way makes it clear that we can
+pattern-match against characters in function definitions, just as we
+would expect to be able to do so for any of a type's constructors.<p>
+[This example also demonstrates the use of <I>comments</I> in
+Haskell; the characters <tt>--</tt> and all subsequent characters to the end
+of the line are ignored.  Haskell also permits <I>nested</I> comments
+which have the form <tt>{-</tt>...<tt>-}</tt> and can appear anywhere
+(<a href="../onlinereport/lexemes.html#lexemes">&sect;2.2</a>).]<p>
+Similarly, we could define <tt>Int</tt> (fixed precision integers) and
+<tt>Integer</tt> by: 
+<tt><br>
+
+<br>
+data&nbsp;Int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;-65532&nbsp;|&nbsp;...&nbsp;|&nbsp;-1&nbsp;|&nbsp;0&nbsp;|&nbsp;1&nbsp;|&nbsp;...&nbsp;|&nbsp;65532&nbsp;&nbsp;--&nbsp;more&nbsp;pseudo-code<br>
+data&nbsp;Integer&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;-2&nbsp;|&nbsp;-1&nbsp;|&nbsp;0&nbsp;|&nbsp;1&nbsp;|&nbsp;2&nbsp;...<br>
+
+<br>
+
+</tt>where <tt>-65532</tt> and <tt>65532</tt>, say, are the maximum and minimum fixed
+precision integers for a given implementation.  <tt>Int</tt> is a much larger
+enumeration than <tt>Char</tt>, but it's still finite!  In contrast, the
+pseudo-code for <tt>Integer</tt> 
+is intended to convey an <I>infinite</I> enumeration.<p>
+Tuples are also easy to define playing this game:
+<tt><br>
+
+<br>
+data&nbsp;(a,b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(a,b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;more&nbsp;pseudo-code<br>
+data&nbsp;(a,b,c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(a,b,c)<br>
+data&nbsp;(a,b,c,d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(a,b,c,d)<br>
+&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+
+<br>
+
+</tt>Each declaration above defines a tuple type of a particular length,
+with <tt>(...)</tt> playing a role in both the expression syntax (as data
+constructor) and type-expression syntax (as type constructor).  The
+vertical dots after the last declaration are intended to convey an
+infinite number of such declarations, reflecting the fact that tuples
+of all lengths are allowed in Haskell.<p>
+Lists are also easily handled, and more interestingly, they are recursive:
+<tt><br>
+
+<br>
+&nbsp;data&nbsp;[a]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[]&nbsp;|&nbsp;a&nbsp;:&nbsp;[a]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;more&nbsp;pseudo-code<br>
+
+<br>
+
+</tt>We can now see clearly what we described about lists earlier: <tt>[]</tt> is
+the empty list, and <tt>:</tt> is the infix list constructor; thus <tt>[1,2,3]
+</tt>must be equivalent to the list <tt>1:2:3:[]</tt>.  (<tt>:</tt> is right
+associative.)  The type of <tt>[]</tt> is <tt>[a]</tt>, and the type of <tt>:</tt> is
+<tt>a-&gt;[a]-&gt;[a]</tt>.<p>
+[The way "<tt>:</tt>" is defined here is actually legal syntax---infix
+constructors are permitted in <tt>data</tt> declarations, and are
+distinguished from infix operators (for pattern-matching purposes) by
+the fact that they must begin with a "<tt>:</tt>" (a property trivially
+satisfied by "<tt>:</tt>").]<p>
+At this point the reader should note carefully the differences between
+tuples and lists, which the above definitions make abundantly clear.
+In particular, note the recursive nature of the list type whose
+elements are homogeneous and of arbitrary length, and the
+non-recursive nature of a (particular) tuple type whose elements are
+heterogeneous and of fixed length.  The typing rules for tuples and
+lists should now also be clear:<p>
+For <tt>(</tt>e<sub>1</sub><tt>,</tt>e<sub>2</sub><tt>,</tt>...<tt>,</tt>e<sub>n</sub><tt>)</tt>, n&gt;=2, if t<sub>i</sub> is the
+type of e<sub>i</sub>, then the type of the tuple is 
+<tt>(</tt>t<sub>1</sub><tt>,</tt>t<sub>2</sub><tt>,</tt>...<tt>,</tt>t<sub>n</sub><tt>)</tt>.<p>
+For <tt>[</tt>e<sub>1</sub><tt>,</tt>e<sub>2</sub><tt>,</tt>...<tt>,</tt>e<sub>n</sub><tt>]</tt>, n&gt;=0, each e<sub>i</sub> must have
+the same type t, and the type of the list is <tt>[</tt>t<tt>]</tt>.<a name="tut-list-comps"></a><p>
+<a name="sect2.4.1"></a>
+<h4>2.4.1<tt>&nbsp;&nbsp;</tt>List Comprehensions and Arithmetic Sequences</h4>
+<p>
+As with Lisp dialects, lists are pervasive in Haskell, and as with
+other functional languages, there is yet more syntactic sugar to aid
+in their creation.  Aside from the constructors for lists just
+discussed, Haskell provides an expression known as a <I>list
+comprehension</I> that is best explained by example:
+<tt><br>
+
+<br>
+[&nbsp;f&nbsp;x&nbsp;|&nbsp;x&nbsp;&lt;-&nbsp;xs&nbsp;]<br>
+
+<br>
+
+</tt>This expression can intuitively be read as "the list of all <tt>f&nbsp;x</tt> 
+such that <tt>x</tt> is drawn from <tt>xs</tt>."  The similarity to set notation is
+not a coincidence.  The phrase <tt>x&nbsp;&lt;-&nbsp;xs</tt> is called a <I>generator</I>,
+of which more than one is allowed, as in:
+<tt><br>
+
+<br>
+[&nbsp;(x,y)&nbsp;|&nbsp;x&nbsp;&lt;-&nbsp;xs,&nbsp;y&nbsp;&lt;-&nbsp;ys&nbsp;]<br>
+
+<br>
+
+</tt>This list comprehension forms the cartesian product of the two lists
+<tt>xs</tt> and <tt>ys</tt>.  The elements are selected as if the generators were
+"nested" from left to right (with the rightmost generator varying
+fastest); thus, if <tt>xs</tt> is <tt>[1,2]</tt> and <tt>ys</tt> is <tt>[3,4]</tt>, the result is
+<tt>[(1,3),(1,4),(2,3),(2,4)]</tt>.<p>
+Besides generators, boolean expressions called <I>guards</I> are
+permitted.  Guards place constraints on the elements generated.  For
+example, here is a concise definition of everybody's favorite sorting
+algorithm:
+<tt><br>
+
+<br>
+quicksort&nbsp;&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[]<br>
+quicksort&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;quicksort&nbsp;[y&nbsp;|&nbsp;y&nbsp;&lt;-&nbsp;xs,&nbsp;y&lt;x&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++&nbsp;[x]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++&nbsp;quicksort&nbsp;[y&nbsp;|&nbsp;y&nbsp;&lt;-&nbsp;xs,&nbsp;y&gt;=x]<br>
+
+<br>
+<p>
+</tt>To further support the use of lists, Haskell has special syntax for
+<I>arithmetic sequences</I>, which are best explained by a series of
+examples:
+<p>
+<table >
+<tr><td>
+<tt>[1..10]</tt>     </td><td align=center>=&gt;</td><td>   <tt>[1,2,3,4,5,6,7,8,9,10]</tt></td></tr><tr><td><tt>[1,3..10]</tt>   </td><td align=center>=&gt;</td><td>   <tt>[1,3,5,7,9]</tt></td></tr><tr><td><tt>[1,3..]</tt>     </td><td align=center>=&gt;</td><td>   <tt>[1,3,5,7,9,&nbsp;...</tt>     
+                             (infinite sequence)</td></tr></table>
+<p>
+
+More will be said about arithmetic sequences in Section
+<a href="stdclasses.html#tut-enum-classes">8.2</a>, and "infinite lists" in Section
+<a href="functions.html#tut-infinite">3.4</a>.<a name="tut-strings"></a><p>
+<a name="sect2.4.2"></a>
+<h4>2.4.2<tt>&nbsp;&nbsp;</tt>Strings</h4>
+<p>
+As another example of syntactic sugar for built-in types, we
+note that the literal string <tt>"hello"</tt> is actually shorthand for the
+list of characters <tt>['h','e','l','l','o']</tt>.  Indeed, the type of
+<tt>"hello"</tt> is <tt>String</tt>, where <tt>String</tt> is a predefined type synonym
+(that we gave as an earlier example):
+<tt><br>
+
+<br>
+type&nbsp;String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[Char]<br>
+
+<br>
+
+</tt>This means we can use predefined polymorphic list functions to operate
+on strings.  For example:
+<p>
+
+<tt>"hello"&nbsp;++&nbsp;"&nbsp;world"</tt>    =&gt;    <tt>"hello&nbsp;world"
+<p>
+<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="intro.html">back</a> <a href="functions.html">next</a> <a href="index.html">top</a>
+<p>
+</tt>

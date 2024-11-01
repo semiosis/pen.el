@@ -1,0 +1,1 @@
+- haskell guru: Unless is the equivalent of if. But instead of evaluating both branches, it evaluates the first one only if the condition is false.

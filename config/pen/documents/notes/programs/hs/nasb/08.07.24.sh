@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "nasb" "Romans" "3:20" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "nasb" "Romans" "3:20-25" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "nasb" "Romans" "3:20-23" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "nasb" "Romans" "3:20-24" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "nasb" "Romans" "3:20-26" "#" "<==" "zsh"

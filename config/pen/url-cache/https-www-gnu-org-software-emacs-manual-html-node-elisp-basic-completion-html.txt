@@ -1,0 +1,303 @@
+HTTP/1.1 200 OK
+Date: Fri, 26 Jan 2024 23:24:07 GMT
+Server: Apache/2.4.29
+Strict-Transport-Security: max-age=63072000
+X-Frame-Options: sameorigin
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: (null)
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+Expires: Fri, 26 Jan 2024 23:24:07 GMT
+Vary: Accept-Encoding
+Content-Length: 4585
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Language: en
+
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.0.3, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Basic Completion (GNU Emacs Lisp Reference Manual)</title>
+
+<meta name="description" content="Basic Completion (GNU Emacs Lisp Reference Manual)">
+<meta name="keywords" content="Basic Completion (GNU Emacs Lisp Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rev="made" href="mailto:bug-gnu-emacs@gnu.org">
+<link rel="icon" type="image/png" href="/graphics/gnu-head-mini.png">
+<meta name="ICBM" content="42.256233,-71.006581">
+<meta name="DC.title" content="gnu.org">
+<style type="text/css">
+@import url('/software/emacs/manual.css');
+</style>
+</head>
+
+<body lang="en">
+<div class="subsection-level-extent" id="Basic-Completion">
+<div class="nav-panel">
+<p>
+Next: <a href="Minibuffer-Completion.html" accesskey="n" rel="next">Completion and the Minibuffer</a>, Up: <a href="Completion.html" accesskey="u" rel="up">Completion</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h4 class="subsection" id="Basic-Completion-Functions">21.6.1 Basic Completion Functions</h4>
+
+<p>The following completion functions have nothing in themselves to do
+with minibuffers.  We describe them here to keep them near the
+higher-level completion features that do use the minibuffer.
+</p>
+<dl class="first-deffn first-defun-alias-first-deffn">
+<dt class="deffn defun-alias-deffn" id="index-try_002dcompletion"><span class="category-def">Function: </span><span><strong class="def-name">try-completion</strong> <var class="def-var-arguments">string collection &amp;optional predicate</var><a class="copiable-link" href='#index-try_002dcompletion'> &para;</a></span></dt>
+<dd><p>This function returns the longest common substring of all possible
+completions of <var class="var">string</var> in <var class="var">collection</var>.
+</p>
+<a class="index-entry-id" id="index-completion-table"></a>
+<p><var class="var">collection</var> is called the <em class="dfn">completion table</em>.  Its value must
+be a list of strings or cons cells, an obarray, a hash table, or a
+completion function.
+</p>
+<p><code class="code">try-completion</code> compares <var class="var">string</var> against each of the
+permissible completions specified by the completion table.  If no
+permissible completions match, it returns <code class="code">nil</code>.  If there is
+just one matching completion, and the match is exact, it returns
+<code class="code">t</code>.  Otherwise, it returns the longest initial sequence common
+to all possible matching completions.
+</p>
+<p>If <var class="var">collection</var> is a list, the permissible completions are
+specified by the elements of the list, each of which should be either
+a string, or a cons cell whose <small class="sc">CAR</small> is either a string or a symbol
+(a symbol is converted to a string using <code class="code">symbol-name</code>).  If the
+list contains elements of any other type, those are ignored.
+</p>
+<a class="index-entry-id" id="index-obarray-in-completion"></a>
+<p>If <var class="var">collection</var> is an obarray (see <a class="pxref" href="Creating-Symbols.html">Creating and Interning Symbols</a>), the names
+of all symbols in the obarray form the set of permissible completions.
+</p>
+<p>If <var class="var">collection</var> is a hash table, then the keys that are strings or
+symbols are the possible completions.  Other keys are ignored.
+</p>
+<p>You can also use a function as <var class="var">collection</var>.  Then the function is
+solely responsible for performing completion; <code class="code">try-completion</code>
+returns whatever this function returns.  The function is called with
+three arguments: <var class="var">string</var>, <var class="var">predicate</var> and <code class="code">nil</code> (the
+third argument is so that the same function can be used
+in <code class="code">all-completions</code> and do the appropriate thing in either
+case).  See <a class="xref" href="Programmed-Completion.html">Programmed Completion</a>.
+</p>
+<p>If the argument <var class="var">predicate</var> is non-<code class="code">nil</code>, then it must be a
+function of one argument, unless <var class="var">collection</var> is a hash table, in
+which case it should be a function of two arguments.  It is used to
+test each possible match, and the match is accepted only if
+<var class="var">predicate</var> returns non-<code class="code">nil</code>.  The argument given to
+<var class="var">predicate</var> is either a string or a cons cell (the <small class="sc">CAR</small> of
+which is a string) from the alist, or a symbol (<em class="emph">not</em> a symbol
+name) from the obarray.  If <var class="var">collection</var> is a hash table,
+<var class="var">predicate</var> is called with two arguments, the string key and the
+associated value.
+</p>
+<p>In addition, to be acceptable, a completion must also match all the
+regular expressions in <code class="code">completion-regexp-list</code>.  (Unless
+<var class="var">collection</var> is a function, in which case that function has to
+handle <code class="code">completion-regexp-list</code> itself.)
+</p>
+<p>In the first of the following examples, the string &lsquo;<samp class="samp">foo</samp>&rsquo; is
+matched by three of the alist <small class="sc">CAR</small>s.  All of the matches begin with
+the characters &lsquo;<samp class="samp">fooba</samp>&rsquo;, so that is the result.  In the second
+example, there is only one possible match, and it is exact, so the
+return value is <code class="code">t</code>.
+</p>
+<div class="example smallexample">
+<div class="group"><pre class="example-preformatted">(try-completion
+ &quot;foo&quot;
+ '((&quot;foobar1&quot; 1) (&quot;barfoo&quot; 2) (&quot;foobaz&quot; 3) (&quot;foobar2&quot; 4)))
+     &rArr; &quot;fooba&quot;
+</pre></div><pre class="example-preformatted">
+
+</pre><div class="group"><pre class="example-preformatted">(try-completion &quot;foo&quot; '((&quot;barfoo&quot; 2) (&quot;foo&quot; 3)))
+     &rArr; t
+</pre></div></div>
+
+<p>In the following example, numerous symbols begin with the characters
+&lsquo;<samp class="samp">forw</samp>&rsquo;, and all of them begin with the word &lsquo;<samp class="samp">forward</samp>&rsquo;.  In
+most of the symbols, this is followed with a &lsquo;<samp class="samp">-</samp>&rsquo;, but not in all,
+so no more than &lsquo;<samp class="samp">forward</samp>&rsquo; can be completed.
+</p>
+<div class="example smallexample">
+<div class="group"><pre class="example-preformatted">(try-completion &quot;forw&quot; obarray)
+     &rArr; &quot;forward&quot;
+</pre></div></div>
+
+<p>Finally, in the following example, only two of the three possible
+matches pass the predicate <code class="code">test</code> (the string &lsquo;<samp class="samp">foobaz</samp>&rsquo; is
+too short).  Both of those begin with the string &lsquo;<samp class="samp">foobar</samp>&rsquo;.
+</p>
+<div class="example smallexample">
+<div class="group"><pre class="example-preformatted">(defun test (s)
+  (&gt; (length (car s)) 6))
+     &rArr; test
+</pre></div><div class="group"><pre class="example-preformatted">(try-completion
+ &quot;foo&quot;
+ '((&quot;foobar1&quot; 1) (&quot;barfoo&quot; 2) (&quot;foobaz&quot; 3) (&quot;foobar2&quot; 4))
+ 'test)
+     &rArr; &quot;foobar&quot;
+</pre></div></div>
+</dd></dl>
+
+<dl class="first-deffn first-defun-alias-first-deffn">
+<dt class="deffn defun-alias-deffn" id="index-all_002dcompletions"><span class="category-def">Function: </span><span><strong class="def-name">all-completions</strong> <var class="def-var-arguments">string collection &amp;optional predicate</var><a class="copiable-link" href='#index-all_002dcompletions'> &para;</a></span></dt>
+<dd><p>This function returns a list of all possible completions of
+<var class="var">string</var>.  The arguments to this function
+are the same as those of <code class="code">try-completion</code>, and it
+uses <code class="code">completion-regexp-list</code> in the same way that
+<code class="code">try-completion</code> does.
+</p>
+
+<p>If <var class="var">collection</var> is a function, it is called with three arguments:
+<var class="var">string</var>, <var class="var">predicate</var> and <code class="code">t</code>; then <code class="code">all-completions</code>
+returns whatever the function returns.  See <a class="xref" href="Programmed-Completion.html">Programmed Completion</a>.
+</p>
+<p>Here is an example, using the function <code class="code">test</code> shown in the
+example for <code class="code">try-completion</code>:
+</p>
+<div class="example smallexample">
+<div class="group"><pre class="example-preformatted">(defun test (s)
+  (&gt; (length (car s)) 6))
+     &rArr; test
+</pre></div><pre class="example-preformatted">
+
+</pre><div class="group"><pre class="example-preformatted">(all-completions
+ &quot;foo&quot;
+ '((&quot;foobar1&quot; 1) (&quot;barfoo&quot; 2) (&quot;foobaz&quot; 3) (&quot;foobar2&quot; 4))
+ 'test)
+     &rArr; (&quot;foobar1&quot; &quot;foobar2&quot;)
+</pre></div></div>
+</dd></dl>
+
+<dl class="first-deffn first-defun-alias-first-deffn">
+<dt class="deffn defun-alias-deffn" id="index-test_002dcompletion"><span class="category-def">Function: </span><span><strong class="def-name">test-completion</strong> <var class="def-var-arguments">string collection &amp;optional predicate</var><a class="copiable-link" href='#index-test_002dcompletion'> &para;</a></span></dt>
+<dd><a class="anchor" id="Definition-of-test_002dcompletion"></a><p>This function returns non-<code class="code">nil</code> if <var class="var">string</var> is a valid
+completion alternative specified by <var class="var">collection</var> and
+<var class="var">predicate</var>.  The arguments are the same as in
+<code class="code">try-completion</code>.  For instance, if <var class="var">collection</var> is a list of
+strings, this is true if <var class="var">string</var> appears in the list and
+<var class="var">predicate</var> is satisfied.
+</p>
+<p>This function uses <code class="code">completion-regexp-list</code> in the same
+way that <code class="code">try-completion</code> does.
+</p>
+<p>If <var class="var">predicate</var> is non-<code class="code">nil</code> and if <var class="var">collection</var> contains
+several strings that are equal to each other, as determined by
+<code class="code">compare-strings</code> according to <code class="code">completion-ignore-case</code>,
+then <var class="var">predicate</var> should accept either all or none of them.
+Otherwise, the return value of <code class="code">test-completion</code> is essentially
+unpredictable.
+</p>
+<p>If <var class="var">collection</var> is a function, it is called with three arguments,
+the values <var class="var">string</var>, <var class="var">predicate</var> and <code class="code">lambda</code>; whatever
+it returns, <code class="code">test-completion</code> returns in turn.
+</p></dd></dl>
+
+<dl class="first-deffn first-defun-alias-first-deffn">
+<dt class="deffn defun-alias-deffn" id="index-completion_002dboundaries"><span class="category-def">Function: </span><span><strong class="def-name">completion-boundaries</strong> <var class="def-var-arguments">string collection predicate suffix</var><a class="copiable-link" href='#index-completion_002dboundaries'> &para;</a></span></dt>
+<dd><p>This function returns the boundaries of the field on which <var class="var">collection</var>
+will operate, assuming that <var class="var">string</var> holds the text before point
+and <var class="var">suffix</var> holds the text after point.
+</p>
+<p>Normally completion operates on the whole string, so for all normal
+collections, this will always return <code class="code">(0 . (length
+<var class="var">suffix</var>))</code>.  But more complex completion, such as completion on
+files, is done one field at a time.  For example, completion of
+<code class="code">&quot;/usr/sh&quot;</code> will include <code class="code">&quot;/usr/share/&quot;</code> but not
+<code class="code">&quot;/usr/share/doc&quot;</code> even if <code class="code">&quot;/usr/share/doc&quot;</code> exists.
+Also <code class="code">all-completions</code> on <code class="code">&quot;/usr/sh&quot;</code> will not include
+<code class="code">&quot;/usr/share/&quot;</code> but only <code class="code">&quot;share/&quot;</code>.  So if <var class="var">string</var> is
+<code class="code">&quot;/usr/sh&quot;</code> and <var class="var">suffix</var> is <code class="code">&quot;e/doc&quot;</code>,
+<code class="code">completion-boundaries</code> will return <code class="code">(5&nbsp;.&nbsp;1)</code><!-- /@w --> which tells us
+that the <var class="var">collection</var> will only return completion information that
+pertains to the area after <code class="code">&quot;/usr/&quot;</code> and before <code class="code">&quot;/doc&quot;</code>.
+<code class="code">try-completion</code> is not affected by nontrivial boundaries; e.g.,
+<code class="code">try-completion</code> on <code class="code">&quot;/usr/sh&quot;</code> might still return
+<code class="code">&quot;/usr/share/&quot;</code>, not <code class="code">&quot;share/&quot;</code>.
+</p></dd></dl>
+
+<p>If you store a completion alist in a variable, you should mark the
+variable as risky by giving it a non-<code class="code">nil</code>
+<code class="code">risky-local-variable</code> property.  See <a class="xref" href="File-Local-Variables.html">File Local Variables</a>.
+</p>
+<dl class="first-defvr first-defvar-alias-first-defvr">
+<dt class="defvr defvar-alias-defvr" id="index-completion_002dignore_002dcase"><span class="category-def">Variable: </span><span><strong class="def-name">completion-ignore-case</strong><a class="copiable-link" href='#index-completion_002dignore_002dcase'> &para;</a></span></dt>
+<dd><p>If the value of this variable is non-<code class="code">nil</code>, case is not
+considered significant in completion.  Within <code class="code">read-file-name</code>,
+this variable is overridden by
+<code class="code">read-file-name-completion-ignore-case</code> (see <a class="pxref" href="Reading-File-Names.html">Reading File Names</a>); within <code class="code">read-buffer</code>, it is overridden by
+<code class="code">read-buffer-completion-ignore-case</code> (see <a class="pxref" href="High_002dLevel-Completion.html">High-Level Completion Functions</a>).
+</p></dd></dl>
+
+<dl class="first-defvr first-defvar-alias-first-defvr">
+<dt class="defvr defvar-alias-defvr" id="index-completion_002dregexp_002dlist"><span class="category-def">Variable: </span><span><strong class="def-name">completion-regexp-list</strong><a class="copiable-link" href='#index-completion_002dregexp_002dlist'> &para;</a></span></dt>
+<dd><p>This is a list of regular expressions.  The completion functions only
+consider a completion acceptable if it matches all regular expressions
+in this list, with <code class="code">case-fold-search</code> (see <a class="pxref" href="Searching-and-Case.html">Searching and Case</a>)
+bound to the value of <code class="code">completion-ignore-case</code>.
+</p>
+<p>Do not set this variable to a non-<code class="code">nil</code> value globally, as that
+is not safe and will probably cause errors in completion commands.
+This variable should be only let-bound to non-<code class="code">nil</code> values around
+calls to basic completion functions: <code class="code">try-completion</code>,
+<code class="code">test-completion</code>, and <code class="code">all-completions</code>.
+</p></dd></dl>
+
+<dl class="first-deffn first-defmac-alias-first-deffn">
+<dt class="deffn defmac-alias-deffn" id="index-lazy_002dcompletion_002dtable"><span class="category-def">Macro: </span><span><strong class="def-name">lazy-completion-table</strong> <var class="def-var-arguments">var fun</var><a class="copiable-link" href='#index-lazy_002dcompletion_002dtable'> &para;</a></span></dt>
+<dd><p>This macro provides a way to initialize the variable <var class="var">var</var> as a
+collection for completion in a lazy way, not computing its actual
+contents until they are first needed.  You use this macro to produce a
+value that you store in <var class="var">var</var>.  The actual computation of the
+proper value is done the first time you do completion using <var class="var">var</var>.
+It is done by calling <var class="var">fun</var> with no arguments.  The
+value <var class="var">fun</var> returns becomes the permanent value of <var class="var">var</var>.
+</p>
+<p>Here is an example:
+</p>
+<div class="example smallexample">
+<pre class="example-preformatted">(defvar foo (lazy-completion-table foo make-my-alist))
+</pre></div>
+</dd></dl>
+
+<a class="index-entry-id" id="index-completion_002dtable_002dcase_002dfold"></a>
+<a class="index-entry-id" id="index-completion_002dtable_002din_002dturn"></a>
+<a class="index-entry-id" id="index-completion_002dtable_002dmerge"></a>
+<a class="index-entry-id" id="index-completion_002dtable_002dsubvert"></a>
+<a class="index-entry-id" id="index-completion_002dtable_002dwith_002dquoting"></a>
+<a class="index-entry-id" id="index-completion_002dtable_002dwith_002dpredicate"></a>
+<a class="index-entry-id" id="index-completion_002dtable_002dwith_002dterminator"></a>
+<a class="index-entry-id" id="index-completion-table_002c-modifying"></a>
+<a class="index-entry-id" id="index-completion-tables_002c-combining"></a>
+<p>There are several functions that take an existing completion table and
+return a modified version.  <code class="code">completion-table-case-fold</code> returns
+a case-insensitive table.  <code class="code">completion-table-in-turn</code> and
+<code class="code">completion-table-merge</code> combine multiple input tables in
+different ways.  <code class="code">completion-table-subvert</code> alters a table to use
+a different initial prefix.  <code class="code">completion-table-with-quoting</code>
+returns a table suitable for operating on quoted text.
+<code class="code">completion-table-with-predicate</code> filters a table with a
+predicate function.  <code class="code">completion-table-with-terminator</code> adds a
+terminating string.
+</p>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="Minibuffer-Completion.html">Completion and the Minibuffer</a>, Up: <a href="Completion.html">Completion</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

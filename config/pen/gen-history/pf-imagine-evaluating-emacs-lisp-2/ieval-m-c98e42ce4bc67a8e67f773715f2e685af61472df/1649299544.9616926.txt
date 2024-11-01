@@ -1,0 +1,9 @@
+;; Run function sqrt
+(message (eval '(sqrt 3969)))
+--> "13"
+
+
+
+;; Run function sqrt
+(message (eval '(sqrt 3969)))
+--> 

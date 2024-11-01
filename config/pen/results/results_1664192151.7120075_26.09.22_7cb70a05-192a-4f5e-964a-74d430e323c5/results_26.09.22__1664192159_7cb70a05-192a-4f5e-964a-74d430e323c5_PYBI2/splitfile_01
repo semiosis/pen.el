@@ -1,0 +1,23 @@
+";" is a command that executes a series of commands in a single keystroke.
+
+For example, the following snippet:
+
+;:e ~/Documents/bubbles
+
+will open the bubbles repository in the default editor.
+
+;:q
+
+will exit the editor.
+
+;:q!
+
+will force quit the editor.
+
+;:w
+
+will save the current file.
+
+;:wq
+
+will save the current file and then quit

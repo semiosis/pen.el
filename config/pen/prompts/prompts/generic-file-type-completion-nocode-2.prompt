@@ -1,0 +1,47 @@
+title: Generic file type completion nocode
+prompt-version: 2
+tags: project filesystem
+doc: |-
+  This is a generic file-type completer for emacs. It's also good for long-complete.
+  The issue with the other file completion is that it ends with EOD.
+# This prompt is for LMs that have not been trained on code
+utilises-code: no
+prompt: |
+  File type: <1>
+  File contents:
+  <preceding text>
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1
+# Complete one line only by default
+stop-sequences:
+- "\n"
+vars:
+- file type
+- preceding text
+# Do not remove whitespace from the beginning of the response string
+# This is default for completions prompts
+no-trim-start: on
+n-collate: 1
+n-completions: 20
+completion: true
+cache: false
+examples:
+- python
+- |-
+  # Let's say a triple (a, b, c) is a zigzag if
+  # either a < b > c or a > b < c.
+
+  # Given an array of integers numbers, your task
+  # is to check all the triples of its consecutive
+  # elements for being a zigzag.
+
+  # More formally, your task is to construct an
+  # array of length numbers.length - 2, where the
+  # ith element of the output array equals 1 if
+  # the triple (numbers[i], numbers[i + 1], numbers[i + 2]) is a zigzag, and 0 otherwise.
+  def
+var-defaults:
+- "(pen-detect-language)"
+- "(pen-preceding-text)"

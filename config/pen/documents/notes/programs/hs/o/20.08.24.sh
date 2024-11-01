@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://youtu.be/OQh3mpyjlts?t=149" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://youtu.be/OQh3mpyjlts?t=246" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://youtu.be/OQh3mpyjlts?t=354" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://youtu.be/1Un1t13CVj0?t=383" "#" "<==" "o"

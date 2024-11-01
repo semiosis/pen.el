@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: add new property to object
+# key: np
+# --
+map(. + { "draft": true })

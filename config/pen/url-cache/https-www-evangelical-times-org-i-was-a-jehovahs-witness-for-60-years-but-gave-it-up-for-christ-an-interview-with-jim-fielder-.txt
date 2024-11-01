@@ -1,0 +1,1218 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 11573
+cache-control: public, max-age=0
+status: 200 OK
+content-type: text/html; charset=utf-8
+ghost-cache: MISS
+server: openresty
+via: 1.1 varnish, 1.1 varnish, 1.1 varnish
+ghost-age: 0
+etag: W/"a8a7-ak7kaFXx7MzjMsa1VbmuyZ9FgLY"
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 21:09:05 GMT
+Age: 356912
+X-Served-By: cache-ams2100131-AMS, cache-ams2100131-AMS, cache-akl10333-AKL
+X-Cache: MISS, HIT, HIT
+X-Cache-Hits: 0, 22, 1
+X-Timer: S1724620145.448540,VS0,VE2
+Vary: Cookie, Accept-Encoding
+x-request-id: b83a2b46-5587-4694-989a-f1abee78c2c0
+Ghost-Fastly: true
+Alt-Svc: clear
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>I was a Jehovah’s Witness for 60 years, but gave it up for Christ’ An interview with Jim Fielder</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="https://www.evangelical-times.org/assets/dist/app.min.js?v=505754233b" as="script">
+    <link rel="preload" href="https://www.evangelical-times.org/assets/dist/app.min.css?v=505754233b" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <link rel="preload stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+          as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
+
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </noscript>
+
+    <script async defer src="https://www.evangelical-times.org/assets/dist/app.min.js?v=505754233b"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://www.evangelical-times.org/assets/dist/app.min.css?v=505754233b" />
+
+    <!--cssential--><style></style><!--/cssential-->
+
+    <script>  // Basic Config
+  let CONFIG = {
+    GHOST_URL: `https://www.evangelical-times.org`, 
+    GHOST_KEY: `f3b966159aaabef2b89cbcb4ad`,
+    GHOST_SEARCH_IN_CONTENT: false,
+    GHOST_VERSION: 'v4',
+    GHOST_SEARCH_LIMIT: 100,
+    DEFAULT_COLOR_SCHEME: `light`,
+    ENABLE_FLOATING_HEADER: false,
+    ENABLE_IMAGE_LIGHTBOX: true,
+    OPEN_LINKS_IN_NEW_TAB: false}
+</script>
+
+<style>
+  :root {
+    --global-theme-notifications: flex; /* flex/none */
+    --global-intro-bg: var(--color-primary); /* you can add your own color */
+    --global-theme-toggle: flex; /* flex/none */
+    --global-search: flex; /* flex/none */
+    --global-search-by-tag: flex; /* flex/none */
+    --global-max-width: 1180px; /* site max width */
+    --global-content-width: 40rem; /* post-content-width */
+    --global-content-width-wide: 60rem; /* post-content-width */
+    --global-radius: 2px; /* default radius */
+    --global-gallery-gap: 0.5em; /* Image gallery distance between images */
+    --global-hyphens: none; /* none/auto */
+    --global-header-position: sticky; /* relative/sticky */
+    --global-header-height: 92px;
+    --global-progress-bar: visible; /* visible/hidden */
+    --global-scroll-top: hidden; /* visible/hidden */
+    --global-content-preview-fading: 0%; /* 80%-100% for fading effect */
+    --global-announcement-height: 60px;
+    --et-explore-bg: #333739;
+    --et-menu-bg: #464545;
+    --et-subscribe-bg: #FAE9EA;
+    --et-footer-bg: #32414B;
+    --et-next-post-bg: #F5F1F0;
+    --et-author-card-count-bg: #ccc;
+    --et-search-bg: #E4E5E5;
+    --et-search-highlight: #eee8aa;
+    --et-events-bg: #FAE9EA;
+    --et-author-posts-bg: var(--color-primary);
+    --et-tag-posts-bg: var(--color-primary);
+  }
+</style>
+
+    <script>
+  // Dark/Light Theme Handling
+  /*let preferredTheme; 
+  if (CONFIG.DEFAULT_COLOR_SCHEME === 'preference') {
+    const preferredColorScheme = 
+    ( window.matchMedia 
+      && window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) 
+    ? 'dark' 
+    : 'light'
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || preferredColorScheme;
+  } else {
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || CONFIG.DEFAULT_COLOR_SCHEME;
+  }
+  document.documentElement.setAttribute('data-color-scheme', preferredTheme);
+  */
+  
+  // Global values needed
+  let GLOBAL = {
+    CURRENT_PAGE: parseInt(''),
+    NEXT_PAGE: parseInt(''),
+    NEXT_PAGE_LINK: '',
+    MAX_PAGES: parseInt(''), 
+    LAST_PAGE: `` === `` ? true : false,
+    POSTS_PER_PAGE: parseInt('12'),
+    SCROLL_POS: 0,
+    FUSE: ''
+  }
+</script>
+    <meta name="description" content="My parents embraced Jehovah’s Witnesses’ beliefs, leading me to adopt their strict lifestyle.">
+    <link rel="icon" href="https://www.evangelical-times.org/content/images/size/w256h256/2024/03/ET-round-logo-1000.png" type="image/png">
+    <link rel="canonical" href="https://www.evangelical-times.org/i-was-a-jehovahs-witness-for-60-years-but-gave-it-up-for-christ-an-interview-with-jim-fielder/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Evangelical Times">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="I was a Jehovah’s Witness for 60 years, but gave it up for Christ’ An interview with Jim Fielder">
+    <meta property="og:description" content="My parents embraced Jehovah’s Witnesses’ beliefs, leading me to adopt their strict lifestyle. I dedicated my life to following the principles and practices of this faith.">
+    <meta property="og:url" content="https://www.evangelical-times.org/i-was-a-jehovahs-witness-for-60-years-but-gave-it-up-for-christ-an-interview-with-jim-fielder/">
+    <meta property="og:image" content="https://www.evangelical-times.org/content/images/2023/12/Jim-Fielder-1.jpg">
+    <meta property="article:published_time" content="2023-12-29T11:12:41.000Z">
+    <meta property="article:modified_time" content="2024-01-12T10:18:34.000Z">
+    <meta property="article:tag" content="Interviews">
+    <meta property="article:tag" content="Articles">
+    <meta property="article:tag" content="January 2024">
+    <meta property="article:tag" content="2024">
+    <meta property="article:tag" content="Jehovah’s Witnesses">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/evangelicaltimes">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I was a Jehovah’s Witness for 60 years, but gave it up for Christ’ An interview with Jim Fielder">
+    <meta name="twitter:description" content="My parents embraced Jehovah’s Witnesses’ beliefs, leading me to adopt their strict lifestyle. I dedicated my life to following the principles and practices of this faith.">
+    <meta name="twitter:url" content="https://www.evangelical-times.org/i-was-a-jehovahs-witness-for-60-years-but-gave-it-up-for-christ-an-interview-with-jim-fielder/">
+    <meta name="twitter:image" content="https://www.evangelical-times.org/content/images/2023/12/Jim-Fielder-1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="John Tredgett">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Interviews, Articles, January 2024, 2024, Jehovah’s Witnesses">
+    <meta name="twitter:site" content="@EvangelicalTime">
+    <meta property="og:image:width" content="703">
+    <meta property="og:image:height" content="845">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Evangelical Times",
+        "url": "https://www.evangelical-times.org/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.evangelical-times.org/content/images/2022/03/ETlogo-new.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "John Tredgett",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.evangelical-times.org/content/images/2022/03/me-1.jpg",
+            "width": 322,
+            "height": 336
+        },
+        "url": "https://www.evangelical-times.org/author/john-tredgett/",
+        "sameAs": []
+    },
+    "headline": "I was a Jehovah’s Witness for 60 years, but gave it up for Christ’ An interview with Jim Fielder",
+    "url": "https://www.evangelical-times.org/i-was-a-jehovahs-witness-for-60-years-but-gave-it-up-for-christ-an-interview-with-jim-fielder/",
+    "datePublished": "2023-12-29T11:12:41.000Z",
+    "dateModified": "2024-01-12T10:18:34.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.evangelical-times.org/content/images/2023/12/Jim-Fielder-1.jpg",
+        "width": 703,
+        "height": 845
+    },
+    "keywords": "Interviews, Articles, January 2024, 2024, Jehovah’s Witnesses",
+    "description": "My parents embraced Jehovah’s Witnesses’ beliefs, leading me to adopt their strict lifestyle. I dedicated my life to following the principles and practices of this faith.",
+    "mainEntityOfPage": "https://www.evangelical-times.org/i-was-a-jehovahs-witness-for-60-years-but-gave-it-up-for-christ-an-interview-with-jim-fielder/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.89">
+    <link rel="alternate" type="application/rss+xml" title="Evangelical Times" href="https://www.evangelical-times.org/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.39/umd/portal.min.js" data-i18n="false" data-ghost="https://www.evangelical-times.org/" data-key="0a53b9b3fac4413c9d68426168" data-api="https://evangelical-times.ghost.io/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async src="https://js.stripe.com/v3/"></script>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="0a53b9b3fac4413c9d68426168" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://evangelical-times.ghost.io/" crossorigin="anonymous"></script>
+    
+    <link href="https://www.evangelical-times.org/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=505754233b"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=505754233b">
+    <script defer src="/public/comment-counts.min.js?v=505754233b" data-ghost-comments-counts-api="https://www.evangelical-times.org/members/api/comments/counts/"></script>
+    <script defer src="/public/member-attribution.min.js?v=505754233b"></script><style>:root {--ghost-accent-color: #d12027;}</style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJT89P0V4G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JJT89P0V4G');
+</script>
+
+<meta name="facebook-domain-verification" content="zltc9ukzz6dqznil79x3mbf3w7lw8r" />
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "69c8742bb62742e9b74884cf1730478a"}'>
+</script>
+<!-- End Cloudflare Web Analytics -->
+
+<!-- Help scout beacon -->
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '74039287-949c-422f-85a6-8c1e6c759f43')</script>
+<!-- End Help scout beacon -->
+
+<!-- contextly -->
+<script>
+
+!function(w,d,id,ns,s){var c=w[ns]=w[ns]||{};if(c.ready||(c.q=[],c.ready=function(){c.q.push(arguments)}),!d.getElementById(id)){var e=d.createElement(s);e.id=id,e.src="https://assets.context.ly/kit/6.latest/loader.js";var h=d.getElementsByTagName(s)[0];h.parentNode.insertBefore(e,h)}}(window,document,"ctx-loader","Contextly","script");
+
+</script>
+
+<script>
+
+    Contextly.ready('widgets');
+
+</script>
+
+<!-- end contextly -->
+
+
+<!-- custom styles -->
+
+<style>
+    
+.gh-announcement-bar.light {
+    background-color:yellow !important;
+    }
+    
+.header.js-header {
+
+    }
+
+.extra-ad-large {
+display:flex;
+justify-content:center; 
+margin:0 auto;
+} 
+     
+    .extra-ad-large img {
+    width:700px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    }
+    
+      @media only screen and (max-width: 700px)  {
+        .extra-ad-large {
+         display:block;
+         }
+        .extra-ad-large img {
+         width:100%;
+         max-width:unset!important;
+                   
+        }
+    }
+ 
+
+    .mobile-ads {
+        display:none!important;
+    }
+            
+   @media only screen and (max-width: 700px)  {
+              .mobile-ads {
+                 display:unset!important;
+                 padding-top:4em;
+    }
+    }
+    
+
+        
+    
+    
+    
+    
+.gh-banner {
+  display: block;
+  height:100px;
+  line-height: 1.2;
+  padding: 0 var(--gap);
+  background-color: yellow; /* Banner background color */
+  background-repeat: no-repeat;
+  background-position: center 0px;    
+}
+
+.gh-banner-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  max-height: 80px;
+  margin: 0px auto;
+}
+
+.gh-banner-right {
+  flex-shrink: 0;
+}
+
+.gh-banner-headline {
+  color:yellow;
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+  font-weight: 600;
+  padding-top:20px;
+  line-height: 1.2;
+  text-shadow: 1px 2px 9px black;
+}
+
+.gh-banner-cta {
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  margin-bottom:10px;
+  text-shadow: 1px 2px 9px black;
+}
+    
+.gh-banner-button {
+  padding: 0.35em 0.65em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.gh-banner:hover .gh-banner-button {
+  background-color: var(--ghost-accent-color);
+}
+
+@media (max-width: 500px) {
+  .gh-banner {
+    font-size: 1.2rem;
+  }
+
+  .gh-banner-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .gh-banner {
+    position: relative;
+    color: yellow;
+    font-weight:600;
+    padding:15px;
+    font-family: 'roboto', sans-serif;
+  }
+
+  .gh-banner::after {
+    position: absolute;
+    padding:15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "Click to Support independent Christian publishing and attract visitors to your church this summer!";
+    background: rgba(0 0 0 / 30%);
+  }
+
+  .gh-banner-inner {
+    position: relative;
+        z-index:-1;
+  }
+}
+    
+.is-head-open .gh-banner {
+    display: none;
+    
+    }
+
+/* Override Headline theme defaults */
+.gh-banner:hover {
+  opacity: 1 !important;
+}
+
+.gh-head-menu::before {
+  top: 170px !important;
+}
+
+.gh-head-menu::after {
+  top: 226px !important;
+}
+    
+    
+    
+    
+    
+    
+    .ad-mobile {
+        display: none;
+    }
+    
+    .ad-bloc {
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 62%;
+        margin-bottom:30px;
+    }
+    
+     .ad-bloc img {
+
+    }
+    
+    .gh-search-icon {
+        color:#ffffff !important;
+        height: 35 !important;
+        width: 35 !important;
+       viewBox:0 0 40 40 !important;
+    }
+    
+    .btn-mobile.btn.btn--primary.btn--bordered.btn--lg.p-l-lg.p-r-lg {
+        margin-bottom:24px;
+        border-radius:6px;
+        border: 3px;
+        background: #d12027;
+        font-size:1.5em;
+        color:#fff;
+    }
+    
+    .subscribe-section {
+        background-color:#000;
+        background-position: bottom;
+    }
+    
+    @media only screen and (max-width: 700px) {
+        .subscribe-section {
+        background-image: url("https://rxnpsj.stripocdn.email/content/guids/CABINET_627cfb702c80ace3d61a717c2751fe50/images/et_evangelistic_suppmob_1200_600px_1200_400px_1200_300px_instagram_post_square.jpg");
+        background-size: cover; 
+        background-color:transparent;
+        background-position: top;
+    }
+       .subscribe-form {
+           display:none;
+        }   
+         .ad-bloc {
+         display: none;
+        }
+      
+        
+       .subscribe-section-content h3 {
+    font-size: 1.2em; 
+    }
+    }
+    
+    .subscribe-section-content h3 {
+    color:#fff;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2.5em;
+    padding-bottom: 18px;
+            text-shadow: 2px 2px 5px black;
+    }
+    
+    
+    
+        .extra-ad-index {
+    }
+
+         
+        .extra-ad-index div {
+        width:70vw;
+    }
+    
+    .extra-ad-index img {
+    }
+    
+      .extra-ad {
+       margin: auto 20%;
+       padding-bottom: 20px;
+    
+    }
+    
+    .extra-ad div {
+        width:900px;
+    
+    }
+    
+    .extra-ad img {
+        min-width:700px;
+        filter: drop-shadow(3px 3px 3px #e5e5e5);
+    }
+
+    
+    .advertise img {
+        filter: drop-shadow(3px 3px 3px #e5e5e5);
+        min-width:700px;
+    }
+    
+    @media only screen and (max-width: 1100px), only screen and (max-device-width: 1100px) {
+.sticky-container {
+display: none;
+}
+         .extra-ad-index {
+             display: none;
+        }
+        
+             .extra-ad {
+             display: none;
+        }
+        
+    }
+    
+    .sticky-box {
+    }
+    
+    .sticky-container{
+    position:absolute;
+    z-index: -2;
+    top: 400px;
+    right:50px;
+    max-width:230px
+}
+.sticky li{
+    list-style-type:none;
+    background-color:transparent;
+    color:#fff
+}
+.sticky li img{
+    width:300px;
+   
+}
+.sticky li p{
+    font-family: 'Georgia', serif;
+    font-weight:300;
+    text-align: center;
+    padding-top: 3px;
+    color:#888;
+    border-top: solid #888 1px;
+}
+body { 
+  --et-author-posts-bg: #ccc;
+
+}  
+    .figcaption {
+        display:flex
+    }
+    
+    .churches-content {
+    width:100vw
+    }
+    .churches-content__title { 
+     color: #fff;
+     font-size:3em;
+     line-height:1em;
+    }
+    .churches-content__exc
+    { 
+     color: #F8D1D1;
+     font-size:2em;
+    }  
+    .events-content {
+    padding-top: 0;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right:0;
+    }
+    .events-content h2 {
+    padding:0 20px 0 20px;
+    font-size:1.6em;
+    }
+    .events-content p {
+    padding:0 20px 0 20px;
+    }
+    .events-section-title {
+    font-size:2.8em;
+    background-color: #eee;
+    margin-bottom:0;
+    padding-bottom:34px;
+    padding-left: 10px;
+    font-weight:500;
+    padding-top: 12px;
+    border-top: solid #d12027 1px;
+    border-left: solid #d12027 1px;
+    border-right: solid #d12027 1px;
+    }  
+    .kg-callout-card {
+    border: solid #d12027 1px;
+    }
+    .kg-file-card {
+    border: solid #d12027 1px;
+    }
+    .post-card-simple {
+    border: solid #ccc 1px;
+    }
+    .tag-header__descr {
+    font-size:1.2em;
+    font-weight: 600;
+    }
+    .kg-header-card {
+    z-index:0;
+    }
+    .footer-desktop a {
+    color: #E8c0b9;
+    }
+    .footer-quote {
+    padding:20px;
+    font-family: 'Georgia', 'Times', serif;
+    }
+    .kg-bookmark-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding-top: 0;
+    }  
+    .kg-bookmark-metadata{
+    flex-wrap: nowrap;
+    }
+    .kg-bookmark-publisher {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    margin-left: 0;
+    }  
+    .kg-bookmark-publisher::before{
+     visibility: hidden;
+     position: absolute;
+    }
+    .kg-bookmark-author::after {
+     margin-right:0;
+     padding-right:6px;
+    }
+    .kg-bookmark-author { 
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    font-weight: bold;
+    }
+    .kg-bookmark-thumbnail {
+     object-fit:none;
+    }
+    
+</style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '264157859195005');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=264157859195005&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  </head>
+  <body class="post-template tag-interviews tag-articles tag-january-2024 tag-2024 tag-jehovahs-witnesses tag-hash-trending">
+    
+    <header class="header js-header">
+  <div class="container wrapper w-100">
+    <div class="row">
+      <div class="col-xs col-lg-8 header__left flex items-center">
+<a class="header__brand" href="https://www.evangelical-times.org">            <img class="header__logo"
+              src="/content/images/size/w300/2022/03/ETlogo-new.png"
+              alt="Evangelical Times"/>
+</a>      </div>
+
+      <div class="col-xs col-lg-4 header__right items-center content-end">
+        
+        <button class="gh-search-icon" aria-label="search" data-ghost-search style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; padding: 0; border: 0; color: inherit; background-color: transparent; cursor: pointer; outline: none;"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M14.949 14.949a1 1 0 0 1 1.414 0l6.344 6.344a1 1 0 0 1-1.414 1.414l-6.344-6.344a1 1 0 0 1 0-1.414Z" fill="currentColor"/><path d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" fill="currentColor"/></svg></button>
+
+        <button class="header__menu--toggle flex-cc js-menu-open"
+          type="button" title="Open Menu" aria-label="Open Menu">
+          <i class="icon icon-menu">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#menu"></use>
+  </svg>
+</i>        </button>
+        
+          <a class="signup-link header-cta" href="/signup/" data-portal="signup">Subscribe</a>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+    <nav class="menu js-menu">
+  <button class="menu__close js-menu-close" type="button" 
+    title="Close Menu" aria-label="Close Menu">
+    <i class="icon icon-x">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#x"></use>
+  </svg>
+</i>  </button>
+
+  <ul class="nav">
+      <li class="nav-articles">
+        <a href="https://www.evangelical-times.org/tag/articles/">
+          <span>Articles</span>
+        </a>
+      </li>
+      <li class="nav-news">
+        <a href="https://www.evangelical-times.org/tag/news/">
+          <span>News</span>
+        </a>
+      </li>
+      <li class="nav-church-news">
+        <a href="https://www.evangelical-times.org/tag/church-news/">
+          <span>Church news</span>
+        </a>
+      </li>
+      <li class="nav-reviews">
+        <a href="https://www.evangelical-times.org/tag/books/">
+          <span>Reviews</span>
+        </a>
+      </li>
+      <li class="nav-podcast">
+        <a href="https://www.evangelical-times.org/podcast/">
+          <span>Podcast</span>
+        </a>
+      </li>
+      <li class="nav-explore-current-issue">
+        <a href="https://www.evangelical-times.org/tag/august-2024/">
+          <span>Explore current issue →</span>
+        </a>
+      </li>
+      <li class="nav-editors-column">
+        <a href="https://www.evangelical-times.org/tag/comment/">
+          <span>Editor&#x27;s column</span>
+        </a>
+      </li>
+      <li class="nav-advertise-with-et">
+        <a href="https://www.evangelical-times.org/advertise-in-et/">
+          <span>Advertise with ET</span>
+        </a>
+      </li>
+      <li class="nav-donate">
+        <a href="https://www.evangelical-times.org/donate/">
+          <span>Donate</span>
+        </a>
+      </li>
+      <li class="nav-find-a-church">
+        <a href="https://www.evangelical-times.org/churches/">
+          <span>Find a church</span>
+        </a>
+      </li>
+      <li class="nav-events">
+        <a href="https://www.evangelical-times.org/events/">
+          <span>Events</span>
+        </a>
+      </li>
+      <li class="nav-jobs">
+        <a href="https://www.evangelical-times.org/jobs/">
+          <span>Jobs</span>
+        </a>
+      </li>
+      <li class="nav-et-authors">
+        <a href="https://www.evangelical-times.org/authors/">
+          <span>ET Authors</span>
+        </a>
+      </li>
+      <li class="nav-member-sign-in">
+        <a href="https://www.evangelical-times.org/#/portal/signin">
+          <span>Member sign in</span>
+        </a>
+      </li>
+      <li class="nav-become-an-et-church-agent">
+        <a href="https://www.evangelical-times.org/agents/">
+          <span>Become an ET Church Agent!</span>
+        </a>
+      </li>
+      <li class="nav-current-and-past-issues-of-et">
+        <a href="https://www.evangelical-times.org/past-issues/">
+          <span>Current and past issues of ET</span>
+        </a>
+      </li>
+      <li class="nav-et-in-print">
+        <a href="https://www.evangelical-times.org/hard-copy-subscription/">
+          <span>ET in print</span>
+            <p>Get Evangelical Times delivered to your door</p>
+              <img class="lazyload"
+                src="/content/images/size/w30/2022/03/call-paper-long.png"
+                data-src="/content/images/size/w300/2022/03/call-paper-long.png"
+                data-sizes="auto"
+                alt="ET in print"
+              />
+        </a>
+      </li>
+</ul>
+
+
+  
+</nav>
+
+    <main class="main">
+      
+
+  <div class="container content-wrap">
+    <div class="post-hero"
+  >
+
+<a href="/tag/interviews/">        <span class="post-hero__tag">Interviews</span>
+</a>
+  <h1 class="post-hero__title">&#x27;I was a Jehovah&#x27;s Witness for 60 years, but gave it up for Christ&#x27; - an interview with Jim Fielder</h1>
+
+    <figure class="post-hero__figure">
+      <img
+        class="post-hero__img lazyload"
+        data-srcset="/content/images/size/w300/2023/12/Jim-Fielder-1.jpg 300w,
+                /content/images/size/w600/2023/12/Jim-Fielder-1.jpg 600w,
+                /content/images/size/w1000/2023/12/Jim-Fielder-1.jpg 1000w,
+                /content/images/size/w2000/2023/12/Jim-Fielder-1.jpg 2000w"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-sizes="auto"
+        data-src="/content/images/size/w300/2023/12/Jim-Fielder-1.jpg"
+        src="/content/images/size/w100/2023/12/Jim-Fielder-1.jpg"
+        alt="&#x27;I was a Jehovah&#x27;s Witness for 60 years, but gave it up for Christ&#x27; - an interview with Jim Fielder"
+      />
+    </figure>
+
+      <div class="post-hero-author">
+<a class="post-hero-author__media" href="/author/john-tredgett/">            <figure class="post-hero-author__figure">
+              <img
+                class="lazyload"
+                data-sizes="auto"
+                data-src="/content/images/size/w100/2022/03/me-1.jpg"
+                src="/content/images/size/w30/2022/03/me-1.jpg"
+                alt="John Tredgett"
+              />
+            </figure>
+</a>
+        <div class="post-hero-author__data">
+          <a class="post-hero-author__name" href="/author/john-tredgett/">John Tredgett</a>
+          <span class="post-hero-author__bio">Elder at Grace Evangelical Church, Carlisle and Production Editor for Evangelical Times.</span>
+
+            <div class="post-hero-author__date">
+              <span>29 December, 2023</span>
+              <span class="m-l-sm m-r-sm separator-dot">&bull;</span>
+              <span class="read-time">10 min read</span>
+            </div>
+         
+        </div>
+      </div>
+</div>
+
+    <article class="post tag-interviews tag-articles tag-january-2024 tag-2024 tag-jehovahs-witnesses tag-hash-trending content-wrap post-access-members">
+      <div class="content">
+        <p><strong>JT: Jim, tell us about your background and how you became a JW?</strong></p><p>JF: Hull has been my home since my birth 72 years ago. When I was five, my parents embraced Jehovah’s Witnesses’ beliefs, leading me to adopt their strict lifestyle. I dedicated my life to following the principles and practices of this faith – every twist and turn. I became part of a bunch of lovely albeit misled sheep.</p><p>My school years were affected by a sense of being different. I couldn’t participate in birthday celebrations; I couldn’t make Father’s or Mother’s Day cards; I couldn’t stand up or sing when the national anthem was played.</p><p>I was often exercised thinking up plausible-sounding excuses for not attending any parties, after-school clubs, and so on – especially on meeting nights. JWs view these activities as ‘worldly’ or ‘unnecessary association with the world’.</p><h3 id="how-else-was-your-life-characterised-as-a-jw"><strong>How else was your life characterised as a JW?</strong></h3><p>In my mid-teens (during the 1960s), I was baptised as a JW. Back then it was the norm for all JW school-leavers to start ‘pioneering’ – that is, qualifying to become an unpaid preacher, devoting some 1,200 hours per year (23 hours per week) to house-to-house proselytising.</p><p>I adhered to a hyper-busy pioneer schedule for the next 30 years, woven around my low-income, part-time, self-employed work. I married a wonderful JW girl, and shortly thereafter in 1974 (aged 23), I was appointed as an elder. I served in this role for the next 42 years.</p><p>I held various responsibilities during that time. I supervised local preaching work; organised ship-visiting at the Port of Hull for two decades; led a Chinese group and congregation; spoke at some large conventions; and served on several three-man judicial committees (convened when JWs violate the rules).</p><p>Given this busy ‘theocratic routine’, I had limited personal time to thoroughly explore the Scriptures within their proper context.</p><h3 id="what-led-you-to-leave-the-religion"><strong>What led you to leave the religion?</strong></h3><p>Certain issues nagged at me over the years, not least the draconian policy of extreme shunning. This involves friends and family completely ignoring, as if dead, anyone who has been disfellowshipped (expelled) from a JW congregation.</p>
+<aside class="gh-post-upgrade-cta">
+    <div class="gh-post-upgrade-cta-content" style="background-color: #d12027">
+            <h2>Sign up for free membership to read this content</h2>
+            <a class="gh-btn" data-portal="signup" style="color:#d12027">Subscribe now</a>
+            <p><small>Already have an account? <a data-portal="signin">Sign in</a></small></p>
+    </div>
+</aside>
+
+     <span class="ctx-article-root"><!-- --></span>
+     <div class="ctx-module-container ctx-clearfix"></div>
+      </div>
+    </article>
+
+  </div>
+  
+     <div class="container wrapper">
+</div>
+
+  
+  
+<div class="subscribe-section-post">
+    <img class="lazyload"
+      src="/content/images/size/w30/2024/02/ET-podcast--Blog-Banner---1920-x-300-px---2-.png"
+      data-src="/content/images/size/w600/2024/02/ET-podcast--Blog-Banner---1920-x-300-px---2-.png"
+      alt="New: the ET podcast!"/>
+
+  <h3 class="subscribe-section-post__headline">New: the ET podcast!</h3>
+
+<div class="subscribe-section-post__content">
+<a class="btn-mobile btn btn--primary btn--bordered btn--lg p-l-lg p-r-lg" href="https://www.evangelical-times.org/podcast/">      Watch now
+</a>
+    <p class="m-t m-0 text-center">
+      <small>Already have an account? 
+        <a href="" data-portal="signin">Sign in</a>
+      </small>
+    </p>
+  </div>
+</div>
+
+<div class="container wrapper">   
+  <div class="advertise ad-large ad-wide">
+  <span>ADVERTISE</span>
+      <a href="https://bit.ly/evangelicaltimes" target="_blank">
+        <img class="lazyload"
+          data-srcset="/content/images/size/w300/2024/07/ET-ad-Autumn--600---300px---1-.png 300w,
+                  /content/images/size/w600/2024/07/ET-ad-Autumn--600---300px---1-.png 600w,
+                  /content/images/size/w1000/2024/07/ET-ad-Autumn--600---300px---1-.png 1000w"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-sizes="auto"
+          src="/content/images/size/w30/2024/07/ET-ad-Autumn--600---300px---1-.png"
+          data-src="/content/images/size/w300/2024/07/ET-ad-Autumn--600---300px---1-.png"
+          alt="Evangelical Times"/>
+      </a>
+
+      <a href="https://www.ligonier.org/posts/download-the-free-ligonier-app" target="_blank">
+        <img class="lazyload"
+          data-srcset="/content/images/size/w300/2024/08/580x1160_Digital_AD_Evangelical_Times_Ligonier_App--2-.jpg 300w,
+                  /content/images/size/w600/2024/08/580x1160_Digital_AD_Evangelical_Times_Ligonier_App--2-.jpg 600w,
+                  /content/images/size/w1000/2024/08/580x1160_Digital_AD_Evangelical_Times_Ligonier_App--2-.jpg 1000w"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-sizes="auto"
+          src="/content/images/size/w30/2024/08/580x1160_Digital_AD_Evangelical_Times_Ligonier_App--2-.jpg"
+          data-src="/content/images/size/w300/2024/08/580x1160_Digital_AD_Evangelical_Times_Ligonier_App--2-.jpg"
+          alt="Evangelical Times"/>
+      </a>
+</div>
+      <div>
+<div class="extra-ad-large">
+        <a href="https://www.maf-uk.org/get-involved/campaigns/malaria-kits/?utm_campaign=MALARIA+2024&utm_medium=banner+ad&utm_source=evangelical+times+-+210624&utm_content=donate+now+button+link"><img src="https://www.evangelical-times.org/content/images/2024/07/24-049-600x90-Malaria-1.jpg"></img></a>
+      </div><br>
+<div class="extra-ad-large">
+        <a href="https://banneroftruth.org/uk/store/product-tag/new-ebook-titles/"><img src="https://rxnpsj.stripocdn.email/content/guids/CABINET_9496f608605412b1a6d6c53f715c218bd8fa6e7bea70b3811007e4a38f3d19cd/images/new_ebooks.png"></img></a>
+      </div><br>
+</div>
+  </div>
+  
+
+    </main>
+       <div>
+<div class="extra-ad-large">
+          <a href="https://www.bcm.org.uk/vacancies.html"><img src="https://www.evangelical-times.org/content/images/size/w1000/2024/08/UK-Job-Adverts-Revised.jpg"></img></a>
+      </div><br>
+  <div class="extra-ad-large">
+          <a href="https://www.tbsbibles.org/"><img src="https://www.evangelical-times.org/content/images/size/w1000/2024/08/TBSAGMwebandemailad--1-.png"></img></a>
+      </div><br>
+<div class="extra-ad-large">
+        <a href="https://www.printing-evangelism.com/team-4"><img src="https://www.evangelical-times.org/content/images/2024/07/600pxwide--1-.png"></img></a>
+      </div><br>
+<div class="extra-ad-large">
+        <a href="https://banneroftruth.org/uk/"><img src="https://www.evangelical-times.org/content/images/2024/08/Screenshot-2024-08-12-at-16.08.05.png"></img></a>
+      </div><br>
+</div>
+    
+
+    <footer class="footer">
+  <div class="container wrapper">
+    <div class="footer-mobile">
+        <img class="lazyload m-t"
+          src="/content/images/size/w30/2022/03/ET-logo.jpg"
+          data-src="/content/images/size/w300/2022/03/ET-logo.jpg"
+          data-sizes="auto"
+          alt="Evangelical Times"
+        />
+
+      <p class="footer-message">“Teaching those things which concern the Lord Jesus Christ with all confidence.”</p>
+
+      <div class="footer-follow">
+        <span class="m-r">Follow us:</span>
+        <div class="social flex">
+  <a class="social__item facebook"
+    href="https://www.facebook.com/evangelicaltimes" target="_blank" title="Facebook"
+    aria-label="Facebook" rel="noreferrer">
+    <i class="icon icon-facebook icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#facebook"></use>
+  </svg>
+</i>  </a>
+
+  <a class="social__item twitter"
+    href="https://twitter.com/EvangelicalTime" target="_blank" title="Twitter"
+    aria-label="Twitter" rel="noreferrer">
+    <i class="icon icon-twitter icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#twitter"></use>
+  </svg>
+</i>  </a>
+
+  <a class="social__item instagram"
+     href="https://www.instagram.com/evangelicaltimes/" target="_blank" title="Instagram"
+     aria-label="Instagram" rel="noreferrer">
+    <i class="icon icon-instagram icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#instagram"></use>
+  </svg>
+</i>  </a>
+
+  <a class="social__item linkedin"
+     href="https://www.linkedin.com/company/evangelical-times-limited-the-/" target="_blank" title="Linkedin"
+     aria-label="Linkedin" rel="noreferrer">
+    <i class="icon icon-linkedin icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#linkedin"></use>
+  </svg>
+</i>  </a>
+
+</div>
+      </div>
+
+    </div>
+
+    <div class="footer-desktop">
+      <div class="row">
+        <div class="col-xs-12 col-md-2">
+          <h4>CONTACT US</h4>
+          <div class="footer-address">
+            <span>+44 (01325) 380232</span>
+            <span class="m-b"><a href="mailto:communications@evangelical-times.org">send email</a></span>
+            <span>Evangelical Times</span>
+            <span>PO Box 104</span>
+            <span>Gunnislake</span>
+            <span>PL17 0BE</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-2">
+          <h4>QUICK LINKS</h4>
+          <ul class="nav">
+      <li class="nav-contact">
+        <a href="https://www.evangelical-times.org/contact/">Contact</a>
+      </li>
+      <li class="nav-add-job-listing">
+        <a href="https://www.evangelical-times.org/place-job-advert/">Add job listing</a>
+      </li>
+      <li class="nav-add-church-listing">
+        <a href="https://www.evangelical-times.org/add-your-church/">Add church listing</a>
+      </li>
+      <li class="nav-submit-article">
+        <a href="https://www.evangelical-times.org/submit-a-new-article/">Submit article</a>
+      </li>
+      <li class="nav-about">
+        <a href="https://www.evangelical-times.org/about/">About</a>
+      </li>
+      <li class="nav-statement-of-faith">
+        <a href="https://www.evangelical-times.org/statement-of-faith/">Statement of faith</a>
+      </li>
+      <li class="nav-mission-statement">
+        <a href="https://www.evangelical-times.org/mission-statement/">Mission statement</a>
+      </li>
+      <li class="nav-advertising-terms">
+        <a href="https://www.evangelical-times.org/terms-and-conditions/">Advertising terms</a>
+      </li>
+      <li class="nav-code-of-conduct">
+        <a href="https://www.evangelical-times.org/code-of-conduct/">Code of conduct</a>
+      </li>
+      <li class="nav-privacy-policy">
+        <a href="https://www.evangelical-times.org/privacy/">Privacy policy</a>
+      </li>
+</ul>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <h4>FOLLOW US</h4>
+          <div class="social flex">
+  <a class="social__item facebook"
+    href="https://www.facebook.com/evangelicaltimes" target="_blank" title="Facebook"
+    aria-label="Facebook" rel="noreferrer">
+    <i class="icon icon-facebook icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#facebook"></use>
+  </svg>
+</i>  </a>
+
+  <a class="social__item twitter"
+    href="https://twitter.com/EvangelicalTime" target="_blank" title="Twitter"
+    aria-label="Twitter" rel="noreferrer">
+    <i class="icon icon-twitter icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#twitter"></use>
+  </svg>
+</i>  </a>
+
+  <a class="social__item instagram"
+     href="https://www.instagram.com/evangelicaltimes/" target="_blank" title="Instagram"
+     aria-label="Instagram" rel="noreferrer">
+    <i class="icon icon-instagram icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#instagram"></use>
+  </svg>
+</i>  </a>
+
+  <a class="social__item linkedin"
+     href="https://www.linkedin.com/company/evangelical-times-limited-the-/" target="_blank" title="Linkedin"
+     aria-label="Linkedin" rel="noreferrer">
+    <i class="icon icon-linkedin icon--xs">
+  <svg class="icon__svg">
+    <use xlink:href="https://www.evangelical-times.org/assets/icons/icon-sprite.svg?v=505754233b#linkedin"></use>
+  </svg>
+</i>  </a>
+
+</div>
+        </div>
+
+        <div class="col-xs-12 col-md-5">
+          <h4>Sign up for ET newsletter</h4>
+          <form class="subscribe-form" 
+  data-members-form="subscribe">
+  <div class="subscribe-box w-100">
+    <input data-members-email class="" 
+      type="email" autocomplete="off" placeholder="Your email address" 
+      aria-labelledby="form-input-label" required/> 
+    <button class="btn w-100 p btn--primary" type="submit">
+      Subscribe
+    </button>
+  </div>
+  <div class="notify notify-success">
+    <div class="notify__msg flex-1">Great! Check your inbox and click the link.</div> 
+    <button class="notify__close js-notify-close" type="button" aria-label="Close"></button>
+  </div>
+  <div class="notify notify-error">
+    <div class="notify__msg flex-1">Sorry, something went wrong. Please try again.</div> 
+    <button class="notify__close js-notify-close" type="button" aria-label="Close"></button>
+  </div>
+</form>
+            <p class="footer-quote">&quot;Teaching those things which concern the Lord Jesus Christ with all confidence.&quot;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    <span>&copy;&nbsp;2024&nbsp;<a href="https://www.evangelical-times.org">Evangelical Times</a>.</span>
+  </div>
+</footer>
+  
+    
+
+    
+
+    <script>
+
+    Contextly.ready('widgets');
+
+</script>
+  </body>
+</html>

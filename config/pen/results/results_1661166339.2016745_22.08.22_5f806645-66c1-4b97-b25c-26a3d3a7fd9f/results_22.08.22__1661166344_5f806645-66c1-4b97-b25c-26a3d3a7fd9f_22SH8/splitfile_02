@@ -1,0 +1,8 @@
+
+import Data.List (maximumBy)
+
+main :: IO ()
+
+main = do
+when (length x > 10 ) (putStrLn "MORE!" )
+When executed, "MORE!" is output if the input is

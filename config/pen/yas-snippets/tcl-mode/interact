@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: interact
+# group: 
+# key: i
+# --
+wait${1:$$(b sps ewwlinks +/"set CTRLZ \\\\032" "https://wiki.tcl-lang.org/page/interact")}

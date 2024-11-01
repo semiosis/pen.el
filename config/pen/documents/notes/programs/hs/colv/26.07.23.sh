@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "colv" "/tmp/dJWC5uOyn_" "#" "<==" "vipe"
+cd /root/.pen/documents;  "colv" "/tmp/LkGETFp9qm" "#" "<==" "vipe"
+cd /root/notes;  "colv" "/tmp/Nak_Ikzt8b" "#" "<==" "vipe"
+cd /root/notes;  "colv" "/tmp/tOQ3ok1iOv" "#" "<==" "vipe"
+cd /root/.emacs.d/host/pen.el/src;  "colv" "/tmp/5ewOVYmPnw" "#" "<==" "vipe"
+cd /root/.pen/documents;  "colv" "/tmp/CUudCzpYvd" "#" "<==" "vipe"

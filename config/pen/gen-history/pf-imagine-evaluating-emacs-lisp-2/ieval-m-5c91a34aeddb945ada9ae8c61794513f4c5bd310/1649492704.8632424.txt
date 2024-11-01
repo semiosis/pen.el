@@ -1,0 +1,3 @@
+;; Run function typical-number-of
+(message (eval '(typical-number-of "cars in garage")))
+--> 

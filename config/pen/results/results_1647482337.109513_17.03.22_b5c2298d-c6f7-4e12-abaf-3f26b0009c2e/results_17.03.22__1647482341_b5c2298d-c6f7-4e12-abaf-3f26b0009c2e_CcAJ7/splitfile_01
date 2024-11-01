@@ -1,0 +1,8 @@
+pf-quick-fix-code/1 (arg)
+  (string-trim
+   (string-trim
+    (replace-regexp-in-string
+     "\\`[\n\t ]*" ""
+     (if (string- ()
+  (interactive)
+  (let ((pf (fz pen-common-prompt-functions nil nil "Common prompt function: ")))

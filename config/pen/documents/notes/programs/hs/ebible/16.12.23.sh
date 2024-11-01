@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ebible" "-m" "NASB" "John 3:16-17" "#" "<==" "John"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ebible" "-m" "NASB" "Leviticus 19:18" "#" "<==" "Leviticus"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ebible" "-m" "NASB" "Matthew 18:35" "#" "<==" "Matthew"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ebible" "-m" "NASB" "Matthew 18:21-35" "#" "<==" "Matthew"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Ecclesiastes 4:12" "#" "<==" "Ecclesiastes"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Ephesians 4:2" "#" "<==" "Ephesians"
+cd /root/.emacs.d/host/pen.el/src;  "ebible" "-c" "-m" "NASB" "Genesis 4:1" "#" "<==" "withopts"
+cd /root/.emacs.d/host/pen.el/src;  "ebible" "-c" "-m" "NASB" "Genesis 4:7" "#" "<==" "withopts"

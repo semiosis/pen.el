@@ -1,0 +1,10 @@
+
+The type system in Haskell is built in such a way that it helps the programmer to avoid certain types of errors. Even though in this program, there are in runtime errors, in production, the type system in Haskell helps to avoid the error. The type system in Haskell is built in such a way that, it can be used to specify the data type for a function. It helps a programmer to avoid a runtime error. There are two different types of type system in Haskell:
+
+1) Type inference
+
+2) Explicit type annotation
+
+In Type inference, the type of a function is inferred by the compiler based on what it can determine from the code. In explicit type annotation, the type of a function is annotated by the programmer directly. In Type inference, there is a process called type inference. In Type inference, the type is inferred from the context of the function. In this process, the compiler uses type inference rules from the type system to infer from the context.
+
+

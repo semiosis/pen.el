@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: read all stdin
+# key: cat
+# --
+import "os"
+import "log"
+import "io/ioutil"
+
+func main() {
+bytes, err := ioutil.ReadAll(os.Stdin)
+
+log.Println(err, string(bytes))
+}

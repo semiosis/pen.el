@@ -1,0 +1,8 @@
+
+- posttext: |
+    <delim>
+    <passage>
+    <delim>
+    This is an interview with <interviewee> about the specific passage.
+- prompt: |
+    <

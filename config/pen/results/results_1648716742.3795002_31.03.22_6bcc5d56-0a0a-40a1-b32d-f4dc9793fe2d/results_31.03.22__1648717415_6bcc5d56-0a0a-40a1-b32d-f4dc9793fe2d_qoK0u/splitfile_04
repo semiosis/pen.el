@@ -1,0 +1,11 @@
+
+In "haskell", "braces" are used to define data.
+Such as,
+    data Sample =
+        Integer Integer
+        Float Float
+It defines two "new" types: "Sample".
+These types are defined by two constructors:
+    Integer Integer
+    Float Float
+So, "braces" are used to define data.

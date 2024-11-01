@@ -1,0 +1,5 @@
+"inhibit-startup-message"
+"Set to t to inhibit the startup message."
+
+(setq inhibit-startup-message t)
+

@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Galatians" "5:23" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Galatians" "5:22-23" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Galatians" "6:2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Galatians" "3:25-26" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Galatians" "3:25-27" "#" "<==" "zsh"

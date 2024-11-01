@@ -1,0 +1,7 @@
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:00000000000042d0" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:00000000000042c9" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=3" "--decrypt=true" "id:663adb3e98da2_5d7c1389fa7860852e7@mindy.mail" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"

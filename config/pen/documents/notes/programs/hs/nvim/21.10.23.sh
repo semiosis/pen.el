@@ -1,0 +1,1 @@
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" cat '/tmp/tf_temp_5691103349.txt' | 'pen-fzf' > '/tmp/tf_templCPup17.txt'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

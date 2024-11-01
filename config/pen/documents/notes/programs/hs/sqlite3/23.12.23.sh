@@ -1,0 +1,2 @@
+cd /root/.emacs.d/host/pen.el/src;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Gen.1.1\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"
+cd /root/.pen/documents/notes/ws/peniel;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Gen.3.1\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"

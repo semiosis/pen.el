@@ -1,0 +1,7 @@
+
+(defn cmd
+  ""
+  [& args]
+  ;; map a vector with a shell command
+  (map #(sh "q" :in %) (join args " ")))
+

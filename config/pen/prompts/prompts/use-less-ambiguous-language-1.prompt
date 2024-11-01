@@ -1,0 +1,30 @@
+title: Use less ambiguous language
+tags: prose nlp-task
+prompt-version: 2
+doc: Given a sentence which may be ambiguous, make it use less ambiguous words.
+prompt: |
+  <delim>
+  Ambiguous sentence:
+  Ranch meals are always big and hearty.
+  Unambiguous English:
+  Ranch meals are invariably big and hearty.
+  <delim>
+  Ambiguous sentence:
+  <ambiguous sentence>
+  Unambiguous English:
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 300
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- ambiguous sentence
+examples:
+- Ranch meals are always big and hearty
+preprocessors:
+- pen-str join ' '
+postprocessor: pen-pretty-paragraph
+external: 
+filter: true
+n-test-runs: 2

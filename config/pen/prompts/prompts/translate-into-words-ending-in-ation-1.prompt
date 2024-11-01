@@ -1,0 +1,28 @@
+task: "Translate into words ending in ation"
+tags: nlp-task fun
+doc: "Translate using words that end in 'ation'"
+prompt-version: 1
+issues:
+- Doesn't work too well
+prompt: |+
+  Use words that end in the letters 'ation':
+  <delim>
+  Input: misunderstanding of bewilderment in inactivity with anomalousness.
+  Output: misinterpretation of frustration in stagnation with abberation.
+  <delim>
+  Input: <passage>
+  Output: 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "passage"
+examples:
+- "I plan on going to see the game."
+filter: on
+completion: off
+insertion: off

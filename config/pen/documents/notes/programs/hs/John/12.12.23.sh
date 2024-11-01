@@ -1,0 +1,7 @@
+cd /root/.pen/org-brain/people;  "John" "17" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "John" "17:15" "#" "<==" "bash"
+cd /root/.pen/org-brain/people;  "John" "17:11" "#" "<==" "bash"
+cd /root/.pen/org-brain/people;  "John" "10:26-30" "#" "<==" "bash"
+cd /root/.pen/org-brain/people;  "John" "10:27-30" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "#" "<==" "zsh"

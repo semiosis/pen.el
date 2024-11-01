@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: safedivision
+# key: safedivision
+# --
+data DivisionResult = DivisionByZero | Success Double
+deriving (Show)
+
+safeDivide :: Double -> Double -> DivisionResult
+safeDivide x y =
+if y == 0
+then DivisionByZero
+else Success (x / y)
+
+-- Try dividing by zero
+main = print (safeDivide 4 2)

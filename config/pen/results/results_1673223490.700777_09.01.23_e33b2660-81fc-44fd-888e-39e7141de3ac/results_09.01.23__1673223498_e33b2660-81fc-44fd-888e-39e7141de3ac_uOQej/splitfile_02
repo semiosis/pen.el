@@ -1,0 +1,15 @@
+"sable" is a tool for creating HTML documents from Python source code.
+
+It is a simple, single-file package that can be downloaded from PyPI and installed with pip.
+
+The package contains the following files:
+
+sable.py
+
+sable.py is the main file. It contains the main class Sable and the following functions:
+
+__init__
+
+__init__ is the constructor for Sable. It takes the following arguments:
+
+title: the

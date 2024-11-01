@@ -1,0 +1,4 @@
+;; The author gives their opinion. This function returns a string.
+;; arguments: (topic author)
+(message (eval '(personal-views "Freedom" "Isaac Asimov")))
+--> 

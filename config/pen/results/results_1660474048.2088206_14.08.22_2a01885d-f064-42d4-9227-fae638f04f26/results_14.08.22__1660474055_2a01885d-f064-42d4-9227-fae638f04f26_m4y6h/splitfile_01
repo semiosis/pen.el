@@ -1,0 +1,15 @@
+
+KelvinHelmholtzInstability.mp4
+The white hole is located in a galaxy called Messier 87, or M87 for short. The galaxy is about 2.5 million light-years away and has a diameter of about 50,000 light-years.
+
+The red regions in the image are material that was ejected from the black hole and moving outward, away from the center of the galaxy. The green regions are material that is falling into the black hole from places near and far away from the black hole center. As material falls into a black hole, it heats up and glows with infrared light.
+
+For comparison, this is what the same black hole looks like in X-ray data captured by the Chandra space telescope:
+
+                                                                X-ray Image of Black Hole
+
+  """
+
+
+def test_imgs_extractor():
+    s = """<img src="http://nasa.gov"><img src

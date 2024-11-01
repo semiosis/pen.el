@@ -1,0 +1,5 @@
+cd /root/notes/ws/sermons/ALC;  "Ephesians" "1:4" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ephesians" "2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "2:1-2" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ephesians" "2:8-10" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ephesians" "4:26-27" "#" "<==" "bash"

@@ -1,0 +1,7 @@
+"Neural Radiance Fields" (NeRF) are a family of neural network models for 3D reconstruction from
+images. NeRFs are trained to produce a radiance field, which is a vector field that assigns a radiance
+value to each point in space. The radiance field is parameterized by a set of parameters, which are
+learned by minimizing a loss function that penalizes the difference between the radiance field and
+the ground truth. 
+
+NeRFs are trained on the Shepard

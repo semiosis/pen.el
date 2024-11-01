@@ -1,0 +1,27 @@
+
+    },
+    {
+      "title": "Article 2",
+      "body": "This is the second article in the series, I hope you enjoyed the first article."
+    },
+    {
+      "title": "Article 3",
+      "body": "This is the third article in the series, I hope you enjoyed the first two articles."
+    }
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          IntroductionSection(),
+          DescriptionSection(),
+          ArticlesSection(articles: articles),
+          BlogSection(),
+          AboutSection()
+        ],
+      ),
+    );
+  }
+}

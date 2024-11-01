@@ -1,0 +1,12 @@
+"Data.Text" is a library for working with text as a sequence of Unicode characters.
+
+The following example shows how to parse a JSON string into a Data.Text value:
+
+import Data.Text (Text)
+
+parseJSON :: Text -> Maybe a
+parseJSON (Text str) = parseJSON' str []
+  where
+    parseJSON' :: Text -> [Text] -> Maybe a
+    parseJSON' (Text str) stack = case str of
+      "" -> case reverse

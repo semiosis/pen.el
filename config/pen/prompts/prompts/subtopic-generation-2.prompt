@@ -1,0 +1,46 @@
+title: subtopic generation
+prompt-version: 2
+tags: paracosm nlp-task
+doc: Given a topic, generate a list of subtopics
+prompt: |-
+    <delim>
+    6 subtopics of "music theory":
+    - composition
+    - performance
+    - orchestration
+    - ornamentation
+    - improvisation
+    - electronic sound production
+    <delim>
+    3 subtopics of "language modelling" in NLP:
+    - casual language modelling
+    - masked language modelling
+    - text generation
+    <delim>
+    40 subtopics of <q:topic>:
+    <::existing subtopics><:pp>-
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 100
+frequency-penalty: 0.3
+top-p: 1
+stop-sequences:
+- "<delim>"
+- "\n\n"
+cache: true
+vars:
+- topic
+- existing subtopics
+examples:
+- Advanced Type Systems in Haskell
+- |
+  - Dependent Types
+  - Impredicative Types
+preprocessors:
+- 
+- awk 1
+postprocessor: sed '$d' | head -n 30 | sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9
+  _-]\+$/p' | uniqnosort
+n-collate: 1
+external-related:
+- "https://www.generateideas.ai/"

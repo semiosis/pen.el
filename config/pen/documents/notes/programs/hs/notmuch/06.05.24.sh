@@ -1,0 +1,5 @@
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:0000000000004299" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=4" "--decrypt=true" "id:50d50d20465410319fc90cff05efe86d@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=5" "--decrypt=true" "id:50d50d20465410319fc90cff05efe86d@mail.gmail.com" "#" "<==" "emacs"

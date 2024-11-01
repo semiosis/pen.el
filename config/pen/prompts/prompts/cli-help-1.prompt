@@ -1,0 +1,28 @@
+task: "CLI Help"
+doc: "Given a program name, provide CLI help"
+tags: computing hci
+prompt-version: 1
+prompt: |+
+    
+    https://github.com/<sl:program name>/<sl:program name>/blob/master/doc/<sl:program name>.md#command-line-interface
+
+    cat doc-<sl:program name>.md <<EOD
+    <:pp>
+    Command line interface
+    ======================
+    
+    The command line interface is the most common way to interact with <sl:program name>.
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- "program name"
+examples:
+- "asciinema"
+info: on
+completion: off
+insertion: off

@@ -1,0 +1,8 @@
+cd /root/dump/root/.pen/documents/notes;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/document-highlights;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/document-highlights;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/document-highlights;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/document-highlights;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/document-highlights;  "ranger" "#" "<==" "zsh"

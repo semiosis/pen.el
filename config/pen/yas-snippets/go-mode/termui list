@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: termui list
+# key: tulist
+# --
+list := ui.NewList()
+list.Items = strs
+list.ItemFgColor = ui.ColorYellow
+list.BorderLabel = "List"
+list.Height = 7
+list.Width = 25
+list.Y = 4

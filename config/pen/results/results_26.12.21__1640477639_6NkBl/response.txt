@@ -1,0 +1,2 @@
+declare -f _b_crack_password_
+root

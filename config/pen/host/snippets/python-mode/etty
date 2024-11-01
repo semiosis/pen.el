@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: etty
+# group: file-descriptors
+# key: etty
+# --
+sys.stdin = open('/dev/tty') # not idempotent

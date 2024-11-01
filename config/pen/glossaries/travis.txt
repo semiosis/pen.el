@@ -1,0 +1,5 @@
+Travis CI
+    [CI service]
+    
+    Used for automated testing of an Emacs
+    Lisp library hosted on GitHub.

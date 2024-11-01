@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "bible-search-phrase" "lust" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "bible-search-phrase" "lust" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "bible-search-phrase" "lust" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-search-phrase" "lust" "#" "<==" "zsh"
+cd /root/notes;  "bible-search-phrase" "lust" "#" "<==" "bash"
+cd /root/notes;  "bible-search-phrase" "lust" "#" "<==" "bash"

@@ -1,0 +1,25 @@
+
+
+  -- Parse each record into a list of fields.
+  -- We use the T.Text type to avoid having to convert from UTF-8 ourselves.
+  fields <- map (T.words . T.unpack) records
+
+  -- Print the number of records.
+  print (length records)
+
+  -- Print the number of fields in each record.
+  print $ map length fields
+
+  -- Print the first field in each record.
+  print $ map head fields
+
+  -- Print the last field in each record.
+  print $ map last fields
+
+  -- Print the first and last field in each record.
+EOD
+
+cat draft.haskell <<EOD
+-- This program reads a CSV from stdin and stores inside a datastructure.
+-- It uses a monadic approach, which is more idiomatic than a for loop, and also more concise.
+-- It is also easier to test, since we

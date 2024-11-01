@@ -1,0 +1,15 @@
+, actually
+- this is the best s""",
+            "tutorials/tutorial_2": ''
+        }
+
+        self.assert_cli(
+            ["tutorials/tutorial_1"],
+            "This is a generic completer.\n<1>",
+            args=args,
+            status=0,
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()

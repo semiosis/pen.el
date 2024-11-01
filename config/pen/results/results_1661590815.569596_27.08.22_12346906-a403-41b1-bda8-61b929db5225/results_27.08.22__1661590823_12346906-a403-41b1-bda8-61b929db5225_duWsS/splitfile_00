@@ -1,0 +1,32 @@
+ to the graveyard and searched all
+night but they could find no one.
+
+"Our son has been stolen by vampires!" the
+father cried out to the village people.
+
+Many tried to go into the graveyard, but none
+ever returned from there.
+
+The next day, when the father went to the
+graveyard, he brought twelve silver bullets with him.
+He took his twelve silver bullets and shot the two vampires in their hearts. 
+
+
+After that, no villager went into the graveyard ever again, for everyone had been warned about the vampires. """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SENTENCE_TOKENS = nltk.sent_tokenize(BELOVED_READING_TIME)

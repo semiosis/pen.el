@@ -1,0 +1,44 @@
+task: "Given a claim, determine if it is true or false"
+tags: epistemology alethiology
+title: "Fact checker"
+aliases:
+- fact check
+- alethiometer
+prompt-version: 1
+todo:
+- Consider making another alethiometer prompt which uses counterfactual parsing
+prompt: |+
+  These claims have been fact-checked and determined to be True or False:
+  <delim>
+  Claim 1: 2 + 2 = 4
+  This is objectively 'True', because it is a mathematical truth.
+  <delim>
+  Claim 2: "In 2018, Donald Trump was the President of the United States."
+  This is objectively 'True', because we have record of it.
+  <delim>
+  Claim 3: "The following statement is untrue: In 2018, Donald Trump was the President of the United States."
+  This is objectively 'False', because the true statement was negated.
+  <delim>
+  Claim 4: <q:claim>
+  This is objectively <:pp>'
+engine: "OpenAI Codex"
+temperature: 0.1
+max-generated-tokens: 20
+top-p: 1.0
+stop-sequences:
+- "\n"
+n-completions: 10
+cache: on
+vars:
+- "claim"
+examples:
+- "The year is 2021"
+validator: grep -qP "('True'|'False)"
+info: on
+filter: off
+no-uniq-results: on
+completion: off
+results-analyser: pen-analyse-true-or-false
+insertion: off
+preprocessors:
+- pen-str join ' '

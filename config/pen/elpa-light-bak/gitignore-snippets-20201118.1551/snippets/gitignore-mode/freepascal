@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: FreePascal
+# contributor: Toptal & contributors
+# key: freepascal
+# --
+
+### FreePascal ###
+
+*.lps
+*.compiled
+*.[oa]
+*.ppu
+*.rst
+*.cgi
+*.exe
+*.log
+*.bak*
+fp.ini
+fp.cfg
+fp.dsk

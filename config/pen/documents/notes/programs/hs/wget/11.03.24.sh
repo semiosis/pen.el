@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://medium.com/koinonia/in-john-3-16-believe-means-more-than-believe-b62d350818bc" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=_eek1ezwp_A&t=14s" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=g-rD6-C4fXw" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=K6WPp_pHFYw" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=K6WPp_pHFYw" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=mb3Dc3NL8og" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=15Hxn__1zak" "#" "<==" "pen-ci"

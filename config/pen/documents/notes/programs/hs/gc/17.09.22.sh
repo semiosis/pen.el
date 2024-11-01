@@ -1,0 +1,1 @@
+cd /root/.pen/documents;  "gc" "https://github.com/frottage/dall-e-2-generations/raw/master/under-a-blossom-tree/DALL·E 2022-09-17 17.27.20 - studying under a blossom tree; digital art.jpg" "#" "<==" "gc"

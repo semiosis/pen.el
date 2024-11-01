@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: interact-ici
+# group: interactive
+# key: ici
+# --
+from shanepy import *
+myembed(globals(), locals())

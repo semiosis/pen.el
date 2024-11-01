@@ -1,0 +1,27 @@
+
+    Facts are things that are inferred from
+    the remote system's current state or
+    nature.
+
+    They are not declared things, but rather
+    are inferred from the system's current
+    state.
+
+    For example, if you want to check if a
+    file exists on a remote system, you would
+    use the file module with the path to the
+    file you want to check.  The module will
+    return a "stat" structure that contains
+    information about the file.  This is a fact.
+
+    If you want to check if a user exists on a
+    remote system, you would use the user module.
+
+    If you want to check if a database exists on
+    a remote system, you would use the postgresql_db module.
+
+    Facts are inferred from remote systems' states, not declared.
+
+
+Playbook
+Playbooks are files that contain lists of roles and/or

@@ -1,0 +1,9 @@
+
+      (if (pen-complete-line-p preceding-text)
+          (pen-complete-line preceding-text tv)
+        (let ((fun (key-binding (kbd "M-3"))))
+          (call-interactively fun))))))
+
+(defun pen-complete-line-p (preceding-text)
+  "Is this line a complete line?"
+  (interactive (list (pen-preced

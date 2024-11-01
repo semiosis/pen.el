@@ -1,0 +1,423 @@
+HTTP/1.1 200 OK
+Date: Thu, 08 Aug 2024 07:20:02 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Pragma: cache
+Cache-Control: max-age=0, s-maxage=172800, stale-while-revalidate=60, stale-if-error=900, public
+Expires: Sat, 10 Aug 2024 07:20:02 GMT
+X-Matrix-Permissions: ["42213","322053","logged_in","public_user"]
+X-upgrade-enabled: off
+
+
+<!DOCTYPE HTML>
+<html lang="en-nz">
+<head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2083840-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-2083840-8');
+    </script>
+
+<meta charset="utf-8">
+<title>Training opportunities | Dunedin Botanic Garden Official Website</title>
+
+<!-- Meta tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />-->
+<meta name="format-detection" content="telephone=no">
+<meta name='pagename' content='Training opportunities'/>
+<link rel="canonical" href="https://dunedinbotanicgarden.co.nz/learning/training-opportunities"/>
+<meta name="author" content="Dunedin Botanic Garden">
+<meta http-equiv="content-language" content="en-nz" />
+
+
+<meta name="description" content="Dunedin Botanic Garden is internationally recognised for its extensive plant collections, native bush, city vistas and beautiful walks."/>
+
+
+<!-- Open graph meta-tags -->
+<meta property="og:title" content="Training opportunities| Dunedin Botanic Garden Official Website" />
+  
+
+<meta name="og:description" content="Dunedin Botanic Garden is internationally recognised for its extensive plant collections, native bush, city vistas and beautiful walks."/>
+
+
+<meta property="og:type" content="Article" />
+<meta property="og:url" content="https://dunedinbotanicgarden.co.nz/learning/training-opportunities" />
+<meta property="og:site_name" content="Dunedin Botanic Garden Official Website" />
+<meta property="og:image" content="https://dunedinbotanicgarden.co.nz/__data/assets/image/0003/347610/Rhododendrons-bg-congress.jpg" />
+<!-- Meta tags finish-->
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type='text/css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" media="screen" href="/__data/assets/file/0007/289762/normalize.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/__data/assets/file/0009/289764/1140.css">
+<link rel="stylesheet" href="/__data/assets/file/0003/303771/botanic-garden-css.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/_designs/javascript/fancybox/jquery.fancybox.css?v=2.1.4" type="text/css">
+<link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<script type="text/javascript" charset="utf-8" src="/__data/assets/js_file/0004/305617/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/__data/assets/js_file/0010/295057/css3-mediaqueries.js"></script>
+<script type="text/javascript" charset="utf-8" src="/__data/assets/js_file/0005/305609/jquery.fancybox.pack.js?v=2.1.4"></script>
+<link rel="stylesheet" href="/_designs/javascript/fancybox/jquery.fancybox-1.3.4.css" type="text/css">
+<script type="text/javascript" charset="utf-8" src="/__data/assets/js_file/0004/305608/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" charset="utf-8" src="/__data/assets/js_file/0004/304195/jquery.fitvids.min.js"></script>
+
+<!--[if lt IE 9]> <script type="text/javascript" charset="utf-8" src="/__data/assets/js_file/0004/305617/jquery-1.9.0.min.js"></script><script src="/__data/assets/js_file/0003/317244/jquery.backgroundSize.js"></script> <style>.slide303890 { background-repeat: no-repeat;}#footer ul li {display: inline;}</style><![endif]-->
+
+<!--[if lt IE 8]><style>.eventdescription {width: 80%;float: left;}#contentwrapper {margin-bottom:200px; padding-bottom:200px;}#footer .insidepage {margin-top: 0px;}</style><![endif]-->
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        $("#mini-nav a").click(function(){
+             $("#mobile-search").slideUp("fast");
+           $('.active').removeClass('active');
+        $("#mobilenav").slideToggle("slow");
+        $(this).toggleClass("active");
+        return false;
+    });
+
+$("#mobile-search-submit").click(function(){
+        $("#mobilenav").slideUp("fast");
+        $('.active').removeClass('active');
+        $("#mobile-search").slideToggle("slow");
+        $(this).toggleClass("active");
+        return false;
+    });
+
+$(".scrollTop").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+    });
+});
+</script>
+
+<!--[if lt IE 9]><script type="text/javascript" charset="utf-8" src="/__data/assets/js_file/0005/296609/html5.js"></script><![endif]-->
+
+
+<!--
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 08 August 2024 19:20:02
+-->
+
+
+</head>
+
+  <!-- // Lineage path for body class to enable section stylings -->
+    
+
+
+<body id="asset300707" class="A304457A A300707A  botanicgarden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W77NMSB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<!--noindex-->
+<a id="top" name="top"></a>
+<span class="hide">
+<a href="https://dunedinbotanicgarden.co.nz/accessibility" accesskey="a">Accessibility</a>
+<a href="#navigation" accesskey="]">Skip to Navigation</a>
+<a href="#content" accesskey="[">Skip to Content</a>
+<a href="#searchform" accesskey="2">Skip to Search</a>
+</span>
+
+
+
+<div class="container" id="header">
+<div class="inner">
+
+<div class="twelvecol header">
+<form action="https://search.dunedin.govt.nz/s/search.html" id="searchform">
+<fieldset>
+<label for="searchinput" class="hide" role="search">Search by keyword or page name</label>
+<input type="hidden" name="collection" value="dunedin-council-2018" />
+<input type="hidden" name="gscope1" value="10" />
+<input type="hidden" name="form" value="botanic-gardens" />
+<input type="text" id="headsearchinput" class="searchfield" name="query" size="15" title="Search for" value="" placeholder="Search...">
+<button id="head-search-submit" name="global-submit" title="Search the Dunedin Botanic Garden Official Website" ><span>Search</span></button>
+</fieldset>
+</form>
+
+
+<form><fieldset><button id="mobile-search-submit"><span>Search</span></button></fieldset></form>
+
+
+
+
+
+
+<a href="https://www.dunedinbotanicgarden.co.nz" class="homelink" accesskey="1"><img src="/__data/assets/image/0011/303977/bg-logo.jpg" width="163" height="179" alt="Dunedin Botanic Garden"><span>Dunedin Botanic Garden</span></a>
+
+<div id="mini-nav"><a href="#" class="inactive menu"><img src="/__data/assets/image/0004/289795/nav.png" alt="Click to navigate"></a></div>
+
+<ul class="topnav" id="navigation">
+  <!-- <li><a href="./?a=761558" target="_blank" rel="external" title="DCC website - Opens in a new window.">Covid-19 information</li>-->
+   <li><a href="https://dunedinbotanicgarden.co.nz/about" accesskey="2">About</a></li>
+   <li><a href="https://dunedinbotanicgarden.co.nz/collections" accesskey="3">Collections</a></li>
+   <li><a href="https://dunedinbotanicgarden.co.nz/learning" accesskey="4">Learning</a></li>
+   <!--li><a href="https://dunedinbotanicgarden.co.nz/conservation" accesskey="5">Conservation</a></li-->
+   <li><a href="https://dunedinbotanicgarden.co.nz/whats-on" accesskey="6">What's on</a></li>
+      
+</ul>
+
+</div> <!-- ends twelvecol -->
+</div><!-- ends inner -->
+</div> <!-- ends container -->
+
+
+<div id="mobilenav">
+   <ul class="" id="navigation">
+       <li><a href="./?a=761558" target="_blank" rel="external" title="DCC website - Opens in a new window.">Covid-19 information</li>
+       <li><a href="https://dunedinbotanicgarden.co.nz/about" accesskey="2">About</a></li>
+       <li><a href="https://dunedinbotanicgarden.co.nz/collections" accesskey="3">Collections</a></li>
+       <li><a href="https://dunedinbotanicgarden.co.nz/learning" accesskey="4">Learning</a></li>
+       <!--li><a href="https://dunedinbotanicgarden.co.nz/conservation" accesskey="5">Conservation</a></li-->
+       <li><a href="https://dunedinbotanicgarden.co.nz/whats-on" accesskey="6">What's on</a></li>
+          
+   </ul>
+</div>
+
+<div id="mobile-search" class="shut">
+<form action="https://search.dunedin.govt.nz/s/search.html" id="searchform">
+<fieldset>
+<label for="searchinput" class="hide">Search by keyword or page name</label>
+<input type="hidden" name="collection" value="dunedin-council-2018" /><input type="hidden" name="gscope1" value="10" /><input type="hidden" name="form" value="botanic-gardens" /><input type="text" id="searchinput" class="searchfield" name="query" size="15" title="Search for" value="" placeholder="Search..."><button id="search-submit" name="global-submit" ><span>Search</span></button>
+</fieldset>
+</form>
+
+</div> <!-- ends mobile-search --> 
+
+
+<div id="bigimage"><!--<img src="" width="2600" alt=""--></div>
+
+
+
+
+<div class="container" id="contentwrapper">
+<div class="inner">
+  <div class="content" id="content">
+
+<!--endnoindex-->
+
+<!--BREADCRUMB FUNCTIONALITY -->
+
+
+   
+
+<h1>Training opportunities</h1>
+
+<div class="readspeaker-wrapper">
+<div  id="readspeaker_button1" class="rs_skip rsbtn rs_preserve readspeaker-right">
+<a rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="https://app-oc.readspeaker.com/cgi-bin/rsent?customerid=7517&amp;lang=en_au&amp;voice=Lee&amp;speed=120&amp;readid=content&amp;url=https://dunedinbotanicgarden.co.nz/learning/training-opportunities">    
+<span id="article-listen"class="rsbtn_text"><span>Listen</span></span></a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <h2>Training at the Botanic Garden</h2><p>We have an international reputation for quality training and education programmes. We enjoy teaching and have the experience and resources to provide you with practical learning experiences to assist you in furthering your knowledge and skills.</p><h2>Current opportunities</h2><h3>Apprentice training</h3><p>This is a three-year contract of work and study, which, if completed successfully, will result in qualifying with the NZ Certificate in Amenity Horticulture (Level 4). This qualification is highly respected within the horticulture industry in NZ and overseas.</p><p>It involves working five days a week in the Botanic Garden and your own time theoretical study, supported by the Horticultural Training Organisation. You will be asked to keep a daily work diary, sit monthly plant identification tests and attend annual block courses.</p><p>For more details, please contact 4Trades Apprenticeships, Business South, Apprentice Facilitator - Botanic Garden, phone 479 0181.</p><h3>Project Green jobs</h3><p>We provide work opportunities to qualifying students of Southern Youth Development. This small team works in the Botanic Garden learning important workplace skills while gaining practical experience in grounds maintenance. Contact Southern Youth Development on 477 4175 or visit their website at <a href="https://syd.org.nz/programmes/gardens-at-syd/" title="Southern Youth Development" target="_blank">www.syd.org.nz/</a>.</p><h3>Otago Polytechnic Horticulture</h3><p>We have a long standing relationship with the Otago Polytechnic where we provide the opportunity for horticultural students to complete the practical component of their NZ National Certificate in Horticulture here at the Botanic Garden.</p><p>For more information, or to enrol for one of their courses, contact the Otago Polytechnic Natural Resources Department.</p><h3>International student volunteers</h3><p>Horticultural/botanical work experience placements are from one to 12 months long, giving students an opportunity to expand and challenge their knowledge and skills.</p><h3>International academic training placements</h3><p>Available for overseas students studying at horticultural institutions and colleges who are required to train offshore to meet course objectives.</p><h3>Work placement</h3><p>Available for those who have completed training in a related field of horticulture or botany who wish to further their experience and training.</p><h3>Work experience</h3><p>We offer work experience to tertiary school students who are seriously thinking about horticulture as a career.</p><!--
+<h3>International student volunteers</h3>
+<p><strong>Applications in this area are not being accepted for now.</strong></p>
+<p>This is usually in a voluntary placement of 1 to 12 months but we will consider less than 1 month. To find out more contact Barbara Wheeler, Collections Supervisor, Dunedin Botanic Garden 477 4000 or <a href="mailto:botanic@dcc.govt.nz">botanic@dcc.govt.nz</a></p>
+<h3>Training Placement</h3>
+<p><strong>Applications in this area are not being accepted for now.</strong></p>
+<p>We can accommodate students who are currently studying at an overseas horticultural college and have to train overseas to meet course objectives. To find out more contact Barbara Wheeler, Collections Supervisor, Dunedin Botanic Garden 477 4000 or <a href="mailto:botanic@dcc.govt.nz">botanic@dcc.govt.nz</a></p>
+<h3>Work Placement</h3>
+<p><strong>Applications in this area are not being accepted for now.</strong></p>
+<p>For people no longer in horticultural training who need to further their experience and training. To find out more contact Barbara Wheeler, Collections Supervisor, Dunedin Botanic Garden 477 4000 or <a href="mailto:botanic@dcc.govt.nz">botanic@dcc.govt.nz</a></p>
+<h3>Apprentices</h3>
+<p>After a 3-year contract of work and study, this apprenticeship will result in the NZ Certificate in Amenity Horticulture (Level 4). The qualification is highly respected by the horticulture industry both in NZ and overseas.</p>
+<p>You will work a 5-day week in the Botanic Garden plus carry out theoretical study with Otago Polytechnic. You need to keep a daily work diary, sit monthly plant identification tests and attend annual block courses of 2 weeks with Otago Polytechnic.</p>
+<p>Apprentices are paid industry rates and have normal work entitlements such as leave. Every 6 months you will be rotated to a new plant collection to develop an understanding of all aspects of plant collection management, development and maintenance.</p>
+<p>4Trades Apprenticeships, Otago Chamber of Commerce, Apprentice Facilitator - Botanic Garden, phone 479 0181.</p>
+<h3>Work Experience</h3>
+<p><strong>Applications in this area are not being accepted for now.</strong></p>
+<p>We offer work experience to school students who are serious about horticulture and want to see if it is a career option for them. Ask your school to arrange a week or two's work experience with us.</p>
+<p>To find out more contact Barbara Wheeler, Collections Supervisor, Dunedin Botanic Garden 477 4000 or <a href="mailto:botanic@dcc.govt.nz">botanic@dcc.govt.nz</a></p>
+<h3>Project Green Jobs</h3>
+<p>We provide 6 month practical experience/work for the full time Malcam Trust Project Green Jobs programme.</p>
+<p>This small team works in the Botanic Garden learning workplace requirements and vital practical experience in Grounds Maintenance. Contact the Malcam Trust on 477 4175 or visit their website at <a href="https://malcam.org.nz/" _blank="" title="Malcam">www.malcam.org.nz</a>.</p>
+<h2>Otago Polytechnic Horticulture Courses</h2>
+<p>We provide the practical component for the New Zealand National Certificate in Horticulture course, in partnership with the Otago Polytechnic.</p>
+<p>For more information or to enrol, contact the Otago Polytechnic Natural Resources Department.</p>--> 
+
+
+
+
+
+<!-- AddThis Button BEGIN -->
+
+<!--
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_pinterest_pinit"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>-->
+<!-- AddThis Button END -->
+
+
+
+
+
+
+
+
+
+
+  </div> <!-- ends content -->
+
+<div class="right last">
+
+
+
+<!--noindex-->
+
+<form id="search_page_304641" method="get" action="https://www.dunedinbotanicgarden.co.nz/collections/plant-life-article/search">
+<fieldset>
+<legend>Search <em>Plant Life</em> Articles</legend>
+<label for="queries_content_query" class="hide">Search</label>
+<input type="text" name="queries_content_query" value="" size="25"  class="sq-form-field" id="queries_content_query" />
+<input type="text" name="search_page_304641_extra_field" id="search_page_304641_extra_field" disabled="disabled" style="display:none" />
+<button type="submit" name="search_page_304641_submit_button" />Search</button></p>
+</fieldset>
+
+<div>
+<input type="hidden" name="current_result_page" value="1" />
+<input type="hidden" name="results_per_page" value="0" />
+<input type="hidden" name="submitted_search_category" value="" />
+<input type="hidden" name="mode" value="" />
+</div>
+</form>
+
+
+</div> <!-- // right -->
+
+
+
+
+<div class="clearall"></div> 
+
+</div><!-- ends inner -->
+</div> <!-- ends container -->
+
+
+
+
+
+<div class="clearall"></div>
+
+<div class="container" id="footer">
+
+<div class="inner footer insidepage">
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+<div class="threecol dcc"><a href="https://www.dunedin.govt.nz/"  title="Dunedin City Council" accesskey="0" aria-label=" Dunedin City Council – Kaunihera-a-rohe o Otepoti">
+    <img src="/__data/assets/image/0011/290198/dcc-footer-logo.png" alt="Dunedin City Council" width="198" height="79"></a></div>
+
+<div class="sevencol address">
+   <p>PO Box 5045, Moray Place, Dunedin 9058, New Zealand.<br>
+   Phone 03 477 4000. Fax 03 474 3366. Email <a href="mailto:botanic@dcc.govt.nz">botanic@dcc.govt.nz</a></p>
+<!--<p><strong><a href="https://www.dunedin.govt.nz/news-and-events/public-notices/alerts/online-services-unavailable" target="_blank" >Email services unavailable</a></strong></p>-->
+   <p><a href="https://www.facebook.com/dnbotanicgarden">Connect with us on 
+   <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> Facebook</a></p>
+</div> <!-- ends address -->
+
+
+
+
+
+
+
+
+
+<div class="twocol dunedin last"><a href="https://www.dunedinnz.com/" rel="external" title="Dunedin NZ website - Opens in a new window." aria-label="Dunedin NZ" accesskey="d"><img src="https://dunedinnz.com/__data/assets/image/0012/483996/logo.png" alt="DunedinNZ logo" width="177" height="46"></a></div>
+
+<div id="backtotop" class="inner">
+  <div class="threecol">&nbsp;</div>
+  <div class="ninecol last">
+        <ul>
+          <li><a href="https://www.dunedin.govt.nz/about-this-site/site-map" accesskey="m">Site Map</a></li>
+          <li><a href="https://www.dunedin.govt.nz/about-this-site/terms-and-conditions" accesskey="t">Terms &amp; Conditions </a></li>
+          <li><a href="https://www.dunedin.govt.nz/about-this-site/copyright" accesskey="r">Copyright</a></li>
+          <li><a href="https://www.dunedin.govt.nz/contact-us" accesskey="f">Feedback</a></li>
+          <li><a href="https://www.dunedin.govt.nz/about-this-site/privacy" accesskey="p">Privacy</a></li>
+          <li><a href="https://dunedinbotanicgarden.co.nz/accessibility">Accessibility</a></li>                    
+          <li class="backtotop"><a href="#top" class="scrollTop"><span>Back to top</span></a></li>
+        </ul>
+   </div> <!-- // twelvecol -->
+</div>
+
+</div> <!-- .footer -->
+
+</div> <!-- //footer -->
+
+<!--endnoindex-->
+
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=undefined"></script>
+<!-- AddThis Button END -->
+
+<!-- ReadSpeaker -->
+
+<script type="text/javascript" charset="utf-8" src="https://www.dunedin.govt.nz/readspeaker-org/ReadSpeaker.js?pids=embhl"></script>
+
+<!-- <script type="text/javascript"> 
+//   var _gaq = _gaq || [];
+//   _gaq.push(['_setAccount', 'UA-2083840-8']);
+//   _gaq.push(['_trackPageview']);
+ 
+//   (function() {
+//     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//   })();
+ 
+</script>-->
+<div style="display:none;">https</div>
+
+
+</body>
+</html>

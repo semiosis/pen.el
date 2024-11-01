@@ -1,0 +1,75 @@
+Apache Kafka
+Kafka
+    An open-source distributed event streaming
+    platform used by thousands of companies
+    for high-performance data pipelines,
+    streaming analytics...
+
+stream processing
+
+kafka connectorss
+    Brings messages from other communities
+    into the Kafka river.
+
+highly available
+high availability
+    If a system gets too busy, its work is
+    assigned to another system is the group.
+
+    Since a system is always around, the group
+    is highly available.
+
+fault tolerant
+    Since a group can handle unexpected
+    situations, the group is fault tolerant.
+
+system
+    An agent that takes part in consuming or
+    producing messages.
+
+    An 'otter' in the following metaphor:
+    https://www.gentlydownthe.stream/#/23
+
+tightly coupled
+    Direct communication between systems.
+
+group
+consumer group
+    A group of systems.
+
+    A 'family' in the following metaphor:
+    https://www.gentlydownthe.stream/#/23
+
+group leader
+    Assigns a subset of the partitions to each
+    member of the group ('family' member).
+
+scalability
+    The problem arising from only tightly
+    coupled systems.
+
+record
+message
+    A record/observation of an event.
+
+    Has a timestamp.
+
+topic
+    [stream]
+
+    Makes organising messages easy.
+
+persistence
+    Messages may be made to be persistent.
+
+producer
+    Systems that put messages in the river.
+
+consumer
+    Systems that read events in the stream.
+
+partition
+    [sub-stream]
+
+    Topics are split into 'n' number of
+    partitions.

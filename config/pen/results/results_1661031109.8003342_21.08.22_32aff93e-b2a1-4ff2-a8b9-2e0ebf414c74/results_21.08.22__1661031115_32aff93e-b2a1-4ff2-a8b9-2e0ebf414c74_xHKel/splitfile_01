@@ -1,0 +1,13 @@
+
+
+EOD
+
+cat draft.text <<EOD
+## Using OpenAI Playground ##
+
+$$write section content$$
+
+EOD
+
+cat draft.text <<EOD
+## Using OpenAI Python module

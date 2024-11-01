@@ -1,0 +1,13 @@
+
+
+main =
+
+do { _ <- rtsOn
+
+; f <- forkFinally
+
+( cleanUp :: IO ())
+
+( do putStrLn "Clean up"
+
+putStrLn "Clean up done

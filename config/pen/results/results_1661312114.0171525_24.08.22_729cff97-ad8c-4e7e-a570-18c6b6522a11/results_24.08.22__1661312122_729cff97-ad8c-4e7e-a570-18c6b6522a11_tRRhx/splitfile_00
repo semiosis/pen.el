@@ -1,0 +1,16 @@
+
+               system. You would use them to, for example:
+    - define a set of hosts in a given role,
+    - group some hosts based on Facts,
+    - apply some variable values from Facts to templates,
+    - use the fact values in playbooks to decide what those
+      specific hosts should do.
+- you: Ok. And what about variables? What do they do?
+- ansible guru: Variables are intended to be set in
+               playbooks or vars files, and are then used to
+               influence how the playbooks (or other tasks)
+               run. This means that the Values they are set to
+               can be dynamic, based on the value of another variable,
+               a result of task execution, or any other imaginable form.
+
+    And because Ansible variables can be anything from a simple string to a complex hash or list of values, Ansible uses Jinja2™ templating

@@ -1,0 +1,9 @@
+
+
+:- use_module(library(curses))
+
+Output:
+
+$ ./a.out Enter a character: a The Ascii value 97 is a
+
+See Curses/Sample/ascii_demo

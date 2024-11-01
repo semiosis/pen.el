@@ -1,0 +1,5 @@
+cd /root/notes;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Rom.8.8\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"
+cd /root/notes;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Rom.8.2\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"
+cd /root/notes;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Rom.8.2\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"
+cd /root/notes;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Rom.8.2\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"
+cd /root/notes;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Rom.8.1\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"

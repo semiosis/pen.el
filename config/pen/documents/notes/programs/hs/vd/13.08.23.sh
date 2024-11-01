@@ -1,0 +1,2 @@
+cd /root/.pen/documents/notes;  "vd" "#" "<==" "vd"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles;  "vd" "/root/dump/tmp/scratchVD6l9T.html" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index0ad0.html" "#" "<==" "vd"

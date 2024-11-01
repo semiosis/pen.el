@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes/ws/peniel;  "lolcat" "-f" "#" "<==" "pen-banner.sh"
+cd /root/repos/figlet-fonts;  "lolcat" "-f" "#" "<==" "penelfonts"
+cd /root/.pen/documents/notes/ws/peniel;  "lolcat" "-f" "#" "<==" "pen-banner.sh"
+cd /volumes/home/shane/dump/downloads;  "lolcat" "-f" "#" "<==" "pen-banner.sh"
+cd /root/repos/figlet-fonts;  "lolcat" "-f" "#" "<==" "penelfonts"
+cd /volumes/home/shane/dump/downloads;  "lolcat" "-f" "#" "<==" "pen-banner.sh"

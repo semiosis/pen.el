@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: disjunction
+# group: vimsnippet
+# key: vs-d
+# --
+${2:alarm} :- ${3:burglary}, ${4:earthquake}.

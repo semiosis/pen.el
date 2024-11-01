@@ -1,0 +1,14 @@
+"eprintln" is a macro that prints to stderr.
+
+It is useful for printing errors and warnings.
+
+It is equivalent to "println!()", but with "eprintln!" instead.
+
+```
+use std::io::{self, Write};
+
+fn main() -> io::Result<()> {
+    eprintln!("Error: Could not complete task");
+    Ok(())
+}
+```

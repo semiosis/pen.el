@@ -1,0 +1,4 @@
+The above code is a data declaration. It is not a function declaration. It is a data declaration.
+It is a data declaration that is a record (or struct). It is a record that has two fields.
+The first field is named numberToGuess and is of type Integer. The second field is named numTries
+and is of type Integer.

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: name
+# group: org
+# key: n
+# --
+#+NAME: ${1:tab_constants}$0

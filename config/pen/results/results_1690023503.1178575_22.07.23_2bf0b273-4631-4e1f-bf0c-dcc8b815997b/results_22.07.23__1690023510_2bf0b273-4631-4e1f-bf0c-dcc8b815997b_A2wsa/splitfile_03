@@ -1,0 +1,15 @@
+"substitute" is a built-in function in Vim.
+
+"substitute" takes three arguments:
+
+"/pattern/flags"
+
+"/pattern/replacement"
+
+"/pattern/modifiers"
+
+The "pattern" is what you want to replace. The "replacement" is what you want to replace it with. The "flags" are optional modifiers.
+
+The "pattern" can be a literal string or a regular expression.
+
+The "repl

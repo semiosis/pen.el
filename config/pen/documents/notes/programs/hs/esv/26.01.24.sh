@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "esv" "Matthew" "5:7-8" "#" "<==" "bash"
+cd /;  "esv" "Matthew" "5:7-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "esv" "Genesis" "27-28" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "esv" "Genesis" "27-28" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "esv" "Matthew" "5:7-8" "#" "<==" "withopts"

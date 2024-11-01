@@ -1,0 +1,7 @@
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=UDF-ltUPgaE" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=NP8ixeAN7XQ&t=3s" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=7jCQ-TGSkEY" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://elijahhouse.org/pages/free-videos" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://m.youtube.com/watch?v=7jCQ-TGSkEY&pp=ygUYRGVsYWZlIGNhZmUgdGVzdGltb25pZXMg" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://m.youtube.com/watch?v=NP8ixeAN7XQ" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.raptureforums.com/category/cults-false-religions/" "#" "<==" "pen-ci"

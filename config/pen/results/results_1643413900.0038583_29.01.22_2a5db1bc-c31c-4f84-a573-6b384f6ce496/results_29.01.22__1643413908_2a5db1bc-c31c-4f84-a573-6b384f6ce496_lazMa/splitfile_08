@@ -1,0 +1,10 @@
+
+          (funcall fun)
+          (funcall fun)))))
+
+(defun pen-complete-line-maybe-no-mark (preceding-text &optional tv)
+  (interactive (list (pen-preceding-text) nil))
+  (if mark-active
+      ;; Disabled pen-mode temporarily
+      (let* ((pen nil)
+             (fun (key-binding (kbd "M-3"

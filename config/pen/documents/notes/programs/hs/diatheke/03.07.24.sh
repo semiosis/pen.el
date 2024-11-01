@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Genesis 2:18" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Galatians 3:29" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Galatians 3:18" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Romans 4:13" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Galatians 4:6-7" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Romans 9:6-8" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Proverbs 12:22" "#" "<==" "in-pen"

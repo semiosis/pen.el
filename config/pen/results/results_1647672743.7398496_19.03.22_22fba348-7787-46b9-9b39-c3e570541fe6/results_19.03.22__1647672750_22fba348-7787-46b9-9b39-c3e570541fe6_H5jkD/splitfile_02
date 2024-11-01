@@ -1,0 +1,6 @@
+"re-match-p" is a function that takes two arguments. The first argument is a regular expression, and the second argument is a string. The function returns a non-nil value if the regular expression matches the string, and nil if it does not.
+
+(re-match-p "^[a-zA-Z_]" "abc")
+;; => nil
+(re-match-p "^[a-zA-Z_]" "abc_def")
+;; => t

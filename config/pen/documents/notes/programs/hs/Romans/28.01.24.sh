@@ -1,0 +1,6 @@
+cd /;  "Romans" "7:22" "#" "<==" "zsh"
+cd /;  "Romans" "8:6-7" "#" "<==" "zsh"
+cd /;  "Romans" "8:8" "#" "<==" "zsh"
+cd /;  "Romans" "7:25" "#" "<==" "zsh"
+cd /;  "Romans" "9:30-33" "#" "<==" "zsh"
+cd /;  "Romans" "9:30-33" "#" "<==" "zsh"

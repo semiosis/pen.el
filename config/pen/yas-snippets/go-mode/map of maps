@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: map of maps
+# key: mm
+# --
+${1:$$(xc "https://github.com/StefanSchroeder/Golang-NestedDatastructures-Tutorial/blob/master/chapter04.markdown" :notify)}

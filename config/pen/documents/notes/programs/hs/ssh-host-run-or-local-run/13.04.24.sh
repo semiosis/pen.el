@@ -1,0 +1,3 @@
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "[[https://www.youtube.com/watch?v=c3M_izN2-Bo][Spiritual Warfare Prayer Before Sleep - Protection Against Demonic Attacks During the Night - YouTube]]" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "[[https://www.youtube.com/watch?v=c3M_izN2-Bo][Spiritual Warfare Prayer Before Sleep - Protection Against Demonic Attacks During the Night - YouTube]]" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "https://www.youtube.com/watch?v=c3M_izN2-Bo" "#" "<==" "tclsh8.6"

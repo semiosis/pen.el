@@ -1,0 +1,12 @@
+"go-loop"
+(fn [n]
+  (if (zero? n)
+    (println "Done!")
+    (recur (dec n)))))
+
+(go-loop 10)
+
+; The above is a code snippet.
+; Here is the documentation for the symbol go-loop:
+(defonce main-chan (async/chan 1 
+

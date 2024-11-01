@@ -1,0 +1,1030 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Cookie, Accept-Language
+X-PJAX-URL: https://www.truthforlife.org/resources/sermon/authentic-jesus-the/
+Content-Language: en
+Set-Cookie: csrftoken=BSKLb758WJGQypGGVXOjhxNn6587EYWey5fyWfi8XlKvR1Edz21bp4vml4ZovFZQ; expires=Tue, 29-Oct-2024 06:07:56 GMT; Max-Age=31449600; Path=/; secure
+Server: nothanks
+Content-Security-Policy: frame-ancestors 'self' https://twitter.com;
+X-Content-Security-Policy: frame-ancestors 'self' https://twitter.com;
+X-Content-Type-Options: nosniff
+Date: Tue, 31 Oct 2023 06:07:56 GMT
+Cache-Control: max-age=0, no-cache
+X-Page-Speed: 1.15.0.0-8917
+
+
+<!doctype html>
+<!--[if lt IE 8]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<head>
+<script>window.dataLayer=window.dataLayer||[];</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K5325PL');</script>
+<meta property=fb:app_id content=1707364299500000 />
+<meta name=facebook-domain-verification content=zv960wlypt3vowa96qvljf40xbrajk />
+<meta property=og:url content="https://www.truthforlife.org/resources/sermon/authentic-jesus-the/"/>
+<meta class=swiftype name=type data-type=enum content="/resources/sermon/"/>
+<meta class=swiftype name=type data-type=enum content=hasTranscript />
+<meta class=swiftype name=priority data-type=integer content=6>
+<meta class=swiftype name=url data-type=enum content="https://www.truthforlife.org/resources/sermon/authentic-jesus-the/">
+<meta class=swiftype name=audio_duration data-type=string content=46:13>
+<meta class=swiftype name=resource_title data-type=string content="The Authentic Jesus">
+<meta class=swiftype name=resource_date data-type=date content=1988-10-23>
+<meta class=swiftype name=resource_id data-type=integer content=1326>
+<meta class=swiftype name=resource_image data-type=enum content="https://www.truthforlife.org/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png">
+<meta class=swiftype name=resource_audio_url data-type=enum content="https://tflmedia-new.s3.amazonaws.com/free_downloads/1361-theauthenticjesus.mp3">
+<meta class=swiftype name=resource_id_number data-type=integer content=1361>
+<meta class=swiftype name=series_title data-type=string content="The Basics of the Christian Faith">
+<meta class=swiftype name=scripture_title data-type=enum content="Matthew 16:13-20">
+<meta charset=utf-8>
+<meta content='IE=edge' http-equiv=X-UA-Compatible>
+<meta content='width=device-width, initial-scale=1.0' name=viewport>
+<meta name=google-play-app content="app-id=org.truthforlife.app"/>
+<link rel=canonical href="https://www.truthforlife.org/resources/sermon/authentic-jesus-the/"/>
+<meta content='Who is Jesus? Since His incarnation, people have confused and disparaged the Son of God’s identity. Alistair Begg teaches who Jesus is according to the Bible, emphasizing His true nature...' name=description>
+<meta content='emphasizing, people, Begg, Since, confused, authority, Alistair, Bible, exist, Son, Scripture, truth, true, looking, only, God, disparaged, misguided, conflict, division' name=keywords>
+<link type="text/css" href="/static/django/dist/site.less.371d5a3862bfb02952d2.css" rel=stylesheet />
+<link type="text/css" href="/static/django/dist/print.less.e3c4d540fc817139c6c0.css" rel=stylesheet media=print />
+<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon"/>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-57x57.png' sizes=57x57>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-72x72.png' sizes=72x72>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-114x114.png' sizes=114x114>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-144x144.png' sizes=144x144>
+<link rel=apple-touch-icon-precomposed href='/static/images/favicon.png' rel=icon type='image/png'>
+<!--[if lte IE 10]>
+    <script src="/static/js/responsive/lib/modernizr.custom.97061.js" type="text/javascript"></script>
+    <![endif]-->
+<!--[if lt IE 9]>
+    <script>
+    document.createElement('video');
+    </script>
+    <![endif]-->
+<title>The Authentic Jesus - Archive - Truth For Life
+</title>
+<meta property=og:title content="The Authentic Jesus - Truth For Life"/>
+<meta property=og:image content="https://www.truthforlife.org/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png"/>
+<meta property=og:description content="Who is Jesus? Since His incarnation, people have confused and disparaged the Son of God’s identity. Alistair Begg teaches who Jesus is according to the Bible, emphasizing His true nature as fully human and fully God. These two qualities exist without conflict or division and affirm His authority over life and death. In a world full of misguided notions about Jesus’ identity, only by looking to Scripture can we understand the truth about Him."/>
+<meta name=twitter:card content=player>
+<meta name=twitter:site content="@TruthForLife">
+<meta name=twitter:title content="The Authentic Jesus">
+<meta name=twitter:description content="Who is Jesus? Since His incarnation, people have confused and disparaged the Son of God’s identity. Alistair Begg teaches who Jesus is according to the Bible, emphasizing His true nature as fully human and fully God. These two qualities exist without conflict or division and affirm His authority over life and death. In a world full of misguided notions about Jesus’ identity, only by looking to Scripture can we understand the truth about Him.">
+<meta name=twitter:image content="https://www.truthforlife.org/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png">
+<meta name=twitter:player content="https://www.truthforlife.org/misc_pages/twitter_player?video_src=https://tflmedia-new.s3.amazonaws.com/free_downloads/1361-theauthenticjesus.mp3">
+<meta name=twitter:player:width content=480>
+<meta name=twitter:player:height content=300>
+<meta name=twitter:player:stream content="https://tflmedia-new.s3.amazonaws.com/free_downloads/1361-theauthenticjesus.mp3">
+<meta name=twitter:player:stream:content_type content="audio/mp3">
+<link rel=canonical href="https://www.truthforlife.org/resources/sermon/authentic-jesus-the/"/>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','829404677080559');fbq('track','PageView');fbq('track','ViewContent');</script>
+<noscript><img height=1 width=1 style=display:none src="https://www.facebook.com/tr?id=829404677080559&ev=PageView&noscript=1"/></noscript>
+<script>(function(w){"use strict";var loadCSS=function(href,before,media){var doc=w.document;var ss=doc.createElement("link");var ref;if(before){ref=before;}else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1];}var sheets=doc.styleSheets;ss.rel="stylesheet";ss.href=href;ss.media="only x";function ready(cb){if(doc.body){return cb();}setTimeout(function(){ready(cb);});}ready(function(){ref.parentNode.insertBefore(ss,(before?ref:ref.nextSibling));});var onloadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb();}}setTimeout(function(){onloadcssdefined(cb);});};function loadCB(){if(ss.addEventListener){ss.removeEventListener("load",loadCB);}ss.media=media||"all";}if(ss.addEventListener){ss.addEventListener("load",loadCB);}ss.onloadcssdefined=onloadcssdefined;onloadcssdefined(loadCB);return ss;};if(typeof exports!=="undefined"){exports.loadCSS=loadCSS;}else{w.loadCSS=loadCSS;}}(typeof global!=="undefined"?global:this));;(function(w){if(!w.loadCSS){return;}var rp=loadCSS.relpreload={};rp.support=function(){try{return w.document.createElement("link").relList.supports("preload");}catch(e){return false;}};rp.poly=function(){var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"){w.loadCSS(link.href,link);link.rel=null;}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,300);if(w.addEventListener){w.addEventListener("load",function(){w.clearInterval(run);});}if(w.attachEvent){w.attachEvent("onload",function(){w.clearInterval(run);})}}}(this));;</script>
+<style>@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+      { @media {
+            h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{ letter-spacing: 0.5px !important; }
+            .brand-outer-wrapper .nav-pills li + li { letter-spacing: -.5px;}
+      }}</style>
+<script>window.tfl_validate=[];</script>
+</head>
+<body id=body class="">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5325PL" height=0 width=0 style="display:none;visibility:hidden"></iframe></noscript>
+<script>window.fbAsyncInit=function(){FB.init({appId:'1707364299500000',xfbml:true,version:'v2.5'});};(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/sdk.js";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>
+<a href="" id=scroll-player-origin style=display:none></a>
+<div class="scroll-player-wrapper hidden-print show-me remove" style=display:none id=scroll-player>
+<div class=app-miniplayer-content>
+</div>
+<div class=scroll-player-header>
+<div class="app-miniplayer-title scroll-player-title"></div>
+<div class=scroll-player-content-toggle-arrow></div>
+</div>
+</div>
+<div class="modal fade container-fluid" id=queueModal tabIndex=-1 role=dialog aria-labelledby=queueModal aria-hidden=true>
+<div class=modal-dialog role=document>
+<div class=modal-content>
+<div class="queue-row queue-header">
+<div class=queue-left-gutter>
+<button type=button data-dismiss=modal aria-label=Close class=close-listening-queue>
+<img src="/static/images/responsive/icons8-chevron-down-white.svg"/>
+</button>
+</div>
+<div class=queue-details-wrapper>
+<h5>Listen Queue</h5>
+</div>
+<div class=queue-right-gutter>
+<a tabindex=0 class="app-add-queue-popover add-queue-popover" role=button data-toggle=popover data-html=true data-placement=left data-trigger=focus data-content='<div style="color:#000;" class="app-queue-popover-menu"><div class="js-clear-queue queue-button-wrapper">Clear Queue and History</div><div class="js-close-popover queue-button-wrapper">Cancel</div></div>' title="" aria-label=Options>
+<img src="/static/images/responsive/icon-ellipsis-vertical.svg"/>
+</a>
+</div>
+</div>
+<div class="queue-list-wrapper js-up-next-section">
+<div class="queue-list up-next js-queue-list js-up-next">
+<div class="empty-queue-wrapper js-empty-queue-wrapper">
+<span>There is nothing in your queue.</span>
+<p>You can add media by tapping the “add to queue” icon located near the media player.</p>
+<div class=queue-add-example-wrapper>
+<img class="queue-screenshot horizontal" src="/static/images/responsive/how-to-add-to-queue-horizontal.svg"/>
+<img class="queue-screenshot vertical" src="/static/images/responsive/how-to-add-to-queue-vertical.svg"/>
+</div>
+</div>
+</div>
+</div>
+<div class="js-queue-player queue-row queue-footer hidden">
+<div class=queue-left-gutter>
+</div>
+<div class="queue-media-player queue-details-wrapper">
+<div class=queue-player-title>
+<h4 class='queue-title js-queue-player-title'></h4>
+</div>
+<div class=queue-player-controls>
+<div class="js-skip-to-prev js-queue-player-previous queue-player-controls_previous"><img src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-previous.svg"/></div>
+<div class=queue-player-controls_playpause>
+<img class="js-queue-player-play queue-play-btn" src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-play.svg"/>
+<img class="js-queue-player-pause hidden queue-pause-btn" src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-pause.svg"/>
+</div>
+<div class="js-skip-to-next js-queue-player-next queue-player-controls_next"><img src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-next.svg"/></div>
+</div>
+<div class=queue-player-progress-bar-wrapper>
+<div class="js-queue-player-progress-bar queue-player-progress-bar">
+<div class="js-queue-player-progress-current queue-player-progress-bar-current"></div>
+<div class="js-queue-player-progress-time-handle queue-player-time-handle"></div>
+<div class="js-queue-player-progress-time-seek queue-player-time-seek"></div>
+</div>
+<div class=queue-player-time-wrapper>
+<div class="js-queue-player-time-current queue-player-current-time">0:00</div>
+<div class="js-queue-player-time-total queue-player-total-time">0:00</div>
+</div>
+</div>
+</div>
+<div class=queue-right-gutter>
+<a tabindex=0 class="js-add-queue-popover add-queue-popover" role=button data-toggle=popover data-html=true data-placement=left data-trigger=focus data-content='' title="" aria-label=Options>
+<img src="/static/images/responsive/icon-ellipsis-vertical.svg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id=blank-queue-item-wrapper class=hidden style=display:none>
+<div class="queue-row queue-support js-queue-support">
+<div class=queue-left-gutter>
+<div class="sort-arrow-wrapper js-sort-arrow-wrapper">
+<button class="js-move-queue-item-up move-queue-item-up">
+<img src="/static/images/responsive/sort-arrow-up.svg" class=sort-arrow />
+</button>
+<img src="/static/images/responsive/drag-drop.svg" class=drag-drop-icon />
+<button class="js-move-queue-item-down move-queue-item-down">
+<img src="/static/images/responsive/sort-arrow-down.svg" class=sort-arrow />
+</button>
+</div>
+</div>
+<div class=queue-details-wrapper>
+<div class="queue-photo-wrapper queue">
+<div class="js-queue-playnow queue-photo-overlay"></div>
+<img src="/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png" class="img-responsive audio-banner js-audio-banner"/>
+<span class="list-player-progress js-player-progress"><span class="list-player-progress-current js-player-progress-current"></span></span>
+</div>
+<div class=queue-description-wrapper>
+<div class="queue-date js-queue-date"></div>
+<h4 class='queue-title js-queue-title'><span></span></h4>
+<div class='small bright queue-scripture-reference'>
+<span class=js-scripture-reference-link></span>
+</div>
+<div class='queue-series js-series'>
+Series: <span class=js-series-link></span>
+</div>
+<div class="queue-sku js-sku">
+<span class="js-sku-id small bright"></span>
+<span class="resource-type js-resource-type small bright"></span>
+<span class="js-video-disclaimer video-disclaimer small bright" style=display:none>Videos cannot be added to the listen queue at this time.</span>
+<span class="js-expiration expiration small bright"></span>
+</div>
+</div>
+<div class=queue-duration-wrapper>
+<div class="js-duration small queue-duration"></div>
+</div>
+</div>
+<div class=expired_notification style=display:none>
+<div>This item is no longer available.</div>
+<button class="js-remove-expired btn btn-sm btn-primary">Remove this item</button>
+</div>
+<div class=queue-right-gutter>
+<a tabindex=0 class="js-add-queue-popover add-queue-popover" role=button title="" aria-label=Options>
+<img src="/static/images/responsive/icon-ellipsis-vertical.svg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class=hidden style=display:none id=queue_player_media_item_wrapper></div>
+<div id=top></div>
+<div id=site_notification class=site_notification>
+<div class=notification_icon></div>
+<div class=notification_message><span class=notification_text></span></div>
+<div class=notification_indicator></div>
+</div>
+<div id=site-wrapper>
+<input id=page_classes type=hidden value='resources sermons sermons resources_sermons media-intro resources_sermons_single-player'>
+<script>(function(){var body=document.getElementById('body');var pageClasses=document.getElementById('page_classes');body.className=body.className+' '+pageClasses.value;})();</script>
+<div id=site-canvas>
+<nav class=nav-outer-wrapper role=navigation>
+<div class=nav-utility-outer-wrapper>
+<div class=container>
+<div class=nav-utility-support>
+<div class=nav-utility-wrapper>
+<ul class='nav nav-pills'>
+<li class=utility-findstation><a href='/stationfinder/'>TFL Finder</a></li>
+<li class=utility-events><a href='/events/'>Events</a></li>
+<li class="utility-contact hidden-sm"><a href='/about/contact-us/'>Contact</a></li>
+<li class='utility-about dropdown'>
+<a data-toggle=dropdown href='/about' id=about-dropdown>About</a>
+<ul aria-labelledby=about-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/about/'>About Truth For Life</a></li>
+<li><a href='/about/our-mission/'>Our Mission</a></li>
+<li><a href='/about/what-we-believe/'>What We Believe</a></li>
+<li><a href='/thestory' data-pjax=false target=_blank>Follow Christ</a></li>
+<li><a href='/thestory#wherestart' data-pjax=false target=_blank>Where Do I Start?</a></li>
+<li><a href='/about/about-alistair-begg/'>About Alistair</a></li>
+<li><a href='/about/our-team/'>Our Team</a></li>
+<li><a href='/about/frequently-asked-questions/'>FAQs</a></li>
+<li><a href='/about/policies/'>Policies</a></li>
+<li class=visible-sm><a href='/about/contact-us/'>Contact</a></li>
+</ul>
+</li>
+<li class='utility-donate dropdown hidden-lg'>
+<a data-toggle=dropdown href='#' id=donate-dropdown>Donate</a>
+<ul aria-labelledby=donate-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/donate' class=noplayer>Donate Online</a></li>
+<li><a href='/donate/stewardship/'>Stewardship</a></li>
+<li><a href='/donate/ways-give/'>Ways to Give</a></li>
+<li class=section-title><span>Truthpartner Info</span></li>
+<li><a href='/become-a-truthpartner/' class=noplayer>Become a Truthpartner</a></li>
+</ul>
+</li>
+<li class='utilty-cart  cart-options hidden-xs dropdown'>
+<a title=cart class=btn-cart data-toggle=dropdown href='#'>
+<img class=nav-icon src="/static/images/responsive/icon-nav-cart.svg"/>
+<span class='cart-total cart-contents'>0</span>
+</a>
+<div aria-labelledby=cart class='dropdown-menu dropdown-cart' role=menu>
+<div class=cart-contents>
+<h4 class=' '>Your Cart</h4>
+<p>
+You have
+<a href='/store/cart/' class=cart-total-link>0 items</a>
+in your cart.
+</p>
+<p>
+Subtotal:
+<a href='/store/cart/' class=cart-subtotal-link>$0.00</a>
+</p>
+<p class=cart-actions>
+<a class=btn-view-cart href='/store/cart/'>View cart</a>
+<a class='btn btn-checkout  ' href='/store/checkout/'>
+<i class=ti-shopping-cart></i>
+Checkout
+</a>
+</p>
+</div>
+<div class=cart-empty>
+<h4 class=empty-cart-title>Your cart is empty.</h4>
+<p><a href="/store/">Start shopping now...</a></p>
+</div>
+<div class=clearfix></div>
+</div>
+</li>
+<li class='utility-account sign-in-options'>
+<a href="#account" data-toggle=dropdown>
+<span class=account-badge>
+<small>Sign<br>In</small>
+</span>
+</a>
+<div aria-labelledby=sign-in class='dropdown-menu dropdown-signup' role=menu id=login_form_wrapper>
+<form action="/accounts/login" method=GET class=form-sign-in data-pjax>
+<button class="btn btn-login btn-block btn-lg  ">Sign in</button>
+</form>
+<form action="/account/register/" method=GET data-pjax>
+<p class='help-block sign-up-block'>
+<span>Don't have an account yet?</span>
+<button class='btn btn-default btn-sm btn-block btn-sign-up' type=submit>Sign up</button>
+</p>
+</form>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=brand-outer-wrapper>
+<div class=container>
+<div class=brand-nav-primary-support>
+<div class=brand-wrapper>
+<a class=brand-link href='/'>Truth For Life</a>
+<img class="brand-img print-only" width=300 height=44 src="/static/images/responsive/logo-tag-k.svg" alt="Truth For Life " role=logo />
+</div>
+<div class=nav-primary-wrapper>
+<ul class='nav nav-pills pull-right nav-top-level' id=site-menu>
+<li class='primary primary-today'>
+<a href='/daily/'>Today</a>
+</li>
+<li class='primary dropdown primary-broadcasts'>
+<a data-toggle=dropdown href='#' id=broadcasts-dropdown>Programs</a>
+<ul aria-labelledby=broadcasts-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/broadcasts/latest-aired/'>Latest Program</a></li>
+<li><a href='/broadcasts/archive/'>Archived Programs</a></li>
+<li><a href='/broadcasts/upcoming-broadcasts/'>Program Schedule</a></li>
+<li><a href='/subscribe/'><i class=ti-podcast></i> Subscribe and Connect</a></li>
+<li class=divider></li>
+<li><a href='/stationfinder/' class=noplayer><i class=ti-map-marker></i> TFL Station Finder <span class=ticon-station></span></a></li>
+<li><a href='/radio-info/'>Info for Broadcasters</a></li>
+</ul>
+</li>
+<li class='primary dropdown primary-sermons'>
+<a data-toggle=dropdown href='#' id=sermons-dropdown>Sermons</a>
+<ul aria-labelledby=sermons-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/resources/most-recent-sermons/'>Latest Sermons</a></li>
+<li class=section-title><span>Browse</span></li>
+<li><a href='/resources/topics/'>by Topic</a></li>
+<li><a href='/resources/?type=series&per_page=25'>by Series</a></li>
+<li><a href='/resources/scripture/'>by Scripture</a></li>
+<li><a href='/resources/?type=sermon'>by Date</a></li>
+<li><a href='/resources/?format=transcript'>by Transcripts</a></li>
+</ul>
+</li>
+<li class='primary primary-blog'>
+<a href='https://blog.truthforlife.org/' target=_blank>Blog</a>
+</li>
+<li class='primary dropdown primary-more'>
+<a data-toggle=dropdown href='#' id=more-dropdown>More</a>
+<ul aria-labelledby=more-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href="/subscribe">Subscribe &amp; Connect</a></li>
+<li><a href='/topics/'>Explore Topics</a></li>
+<li><a href="/apps" data-pjax=false target=_blank>Get the App</a></li>
+<li class=divider></li>
+<li><a href='/devotionals/alistair-begg/archive/'>Alistair Begg Devotional</a></li>
+<li><a href='/devotionals/spurgeon/archive/'>C. H. Spurgeon Devotional</a></li>
+<li><a href='https://info.truthforlife.org/reading-plans' target=_blank>Reading Plans</a></li>
+<li><a href='/bible'>Online Bible (ESV)</a></li>
+<li class=divider></li>
+<li><a href='/thestory#wherestart' data-pjax=false target=_blank>Where Do I Start?</a></li>
+<li><a href='/thestory' data-pjax=false target=_blank>Follow Christ</a></li>
+</ul>
+</li>
+<li class='primary visible-xs alt-mobile-nav primary-signin'>
+<a href="/account/login/?next=/resources/sermon/authentic-jesus-the/">Sign In</a>
+</li>
+<li class='primary visible-xs alt-mobile-nav primary-donate'>
+<a class='xs-secondary noplayer' href='/donate/'>Donate</a>
+</li>
+<li class='primary visible-xs alt-mobile-nav '><a class='xs-secondary noplayer' href='/become-a-truthpartner/'>Truthpartner</a></li>
+<li class='primary visible-xs alt-mobile-nav primary-store'>
+<a href='/store/' id=store-dropdown>Store</a>
+</li>
+<li class='primary visible-xs alt-mobile-nav primary-cart '>
+<a class=xs-secondary href='/store/cart/'>
+Cart
+<i class=ti-shopping-cart></i>
+</a>
+</li>
+<li class="visible-xs divider"></li>
+<li class='primary visible-xs xs-secondary primary-faqs'><a href='/about/frequently-asked-questions/'>FAQs</a></li>
+<li class='primary visible-xs xs-secondary primary-stationfinder'><a href='/stationfinder/'>Find a Station <i class=ticon-station></i></a></li>
+<li class='primary visible-xs xs-secondary primary-about'><a href='/about/'>About</a></li>
+<li class='primary visible-xs xs-secondary primary-events'><a href='/events/'>Events</a></li>
+<li class='primary visible-xs xs-secondary primary-contact'><a href='/about/contact-us/'>Contact</a></li>
+<li class='primary visible-xs xs-secondary primary-subscribe'><a href='/subscribe/'>Subscribe <i class=ti-rss></i></a></li>
+<li class='primary hidden-xs dropdown primary-store'>
+<a data-toggle=dropdown href='/store/' id=store-dropdown data-pjax=false target=_blank>Store</a>
+<ul aria-labelledby=store-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/store/'>Storefront</a></li>
+<li><a href='/store/category/books-and-booklets/'>Books and Booklets</a></li>
+<li><a href='/store/category/books-alistair-begg/'>Books by Alistair Begg</a></li>
+<li><a href='/store/category/bundles/'>Bundles</a></li>
+<li><a href='/store/category/dvds/'>DVDs</a></li>
+<li><a href='/store/category/study-guides/'>Study Guides</a></li>
+<li><a href='/store/category/usb/'>USB</a></li>
+</ul>
+</li>
+<li class='primary dropdown btn-donate primary-donate visible-lg hidden-xs'>
+<a data-toggle=dropdown href='/donate/' id=donate-dropdown data-pjax=false target=_blank>Donate</a>
+<ul aria-labelledby=donate-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a class=noplayer href='/donate/'>Donate Online</a></li>
+<li><a href='/donate/stewardship/'>Stewardship</a></li>
+<li><a href='/donate/ways-give/'>Ways to Give</a></li>
+<li class=section-title><span>Truthpartner Info</span></li>
+<li><a href='/become-a-truthpartner/' class=noplayer>Become a Truthpartner</a></li>
+</ul>
+</li>
+<li class=search role=search>
+<a class='btn hidden-xs' data-toggle=dropdown href='#' id=dropdown-search>
+<img class=nav-icon src="/static/images/responsive/icon-nav-search.svg"/>
+</a>
+<div aria-labelledby=dropdown-search class='dropdown-menu dropdown-menu-right dropdown-search' role=menu>
+<form action='/search/' class=form-inline role=form method=GET data-pjax>
+<div class=form-group>
+<label class=sr-only for=searchCriteria>Search</label>
+<input name=q class=form-control id=searchCriteria placeholder=Search type=text>
+<input type=hidden name=inurl value="">
+</div>
+</form>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class='mobile-sign-in sign-in-options'>
+<a class=btn href="/store/cart">
+<img class=nav-icon src="/static/images/responsive/icon-nav-cart.svg"/>
+</a>
+<a class='btn sign-in-register' data-target='#sign-in-modal' data-toggle=modal href='#'>
+<span class=account-badge>
+<small>Sign<br>In</small>
+</span>
+</a>
+<div aria-labelledby=sign-in class='modal fade' id=sign-in-modal role=menu>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<button aria-hidden=true class=close data-dismiss=modal type=button>&times;</button>
+<h4 class=modal-title>Welcome! Sign in.</h4>
+</div>
+<div class=modal-body id=modal_login_body>
+<form action="/accounts/login" method=GET class=form-sign-in data-pjax>
+<input type=hidden name=csrfmiddlewaretoken value=UnpVQUrIe4Sv8i4Ef297ertLSxYA97teRAUIB2EIfGWarU2bT7mZmYbK7wPR0OwQ />
+<button class="btn btn-login btn-block btn-lg  ">Sign in</button>
+</form>
+<form action="/account/register/" method=GET data-pjax>
+<input type=hidden name=csrfmiddlewaretoken value=UnpVQUrIe4Sv8i4Ef297ertLSxYA97teRAUIB2EIfGWarU2bT7mZmYbK7wPR0OwQ />
+<p class='help-block sign-up-block'>
+<span>Don't have an account yet?</span>
+<button class='btn btn-default btn-sm btn-block btn-sign-up' type=submit>Sign up</button>
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<a class='btn toggle-nav'>
+<img class="nav-icon nav-icon--show" src="/static/images/responsive/icon-nav-menu.svg"/>
+<img class="nav-icon nav-icon--hide" src="/static/images/responsive/icon-nav-close.svg"/>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<section class=post-wrapper>
+<div id=post-header-follow class="sticky-header hide-me hidden-print">
+<div class=post-header-title>
+<div class=title>The Authentic Jesus</div>
+</div>
+<div class=post-header-share-options>
+<a target=_blank id=twitter_share href="">
+<div class=share-icon><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#6B6161"><path d="M15,3.297c-0.525,0.226-1.05,0.395-1.633,0.451c0.583-0.338,1.05-0.903,1.283-1.523c-0.583,0.338-1.167,0.564-1.808,0.677 C12.258,2.338,11.5,2,10.683,2C9.108,2,7.825,3.241,7.825,4.764c0,0.226,0,0.451,0.058,0.621c-3.008,0-5.07-1.692-6.47-3.385 C1.121,2.395,1.005,2.903,1.005,3.41c0,0.959,0.525,1.805,1.283,2.313C1.821,5.667,1.355,5.554,1.005,5.385c0,0,0,0,0,0.056 c0,1.354,0.992,2.482,2.275,2.708C3.046,8.205,2.813,8.262,2.521,8.262c-0.175,0-0.35,0-0.525-0.056 c0.35,1.128,1.979,2.426,3.262,2.426C4.267,11.364,3.344,12,1.5,12c-0.233,0-0.047,0-0.5,0c1.283,0.79,2.8,1,4.375,1 c5.308,0,8.167-4.231,8.167-7.897c0-0.113,0-0.226,0-0.338C14.125,4.369,14.592,3.862,15,3.297"/></svg></div>
+</a>
+<a target=_blank id=facebook_share href="">
+<div class=share-icon><svg xmlns="http://www.w3.org/2000/svg" x=0px y=0px viewBox="0 0 16 16" fill="#6B6161"><path d="M 3.5 1 C 2.1250151 1 1 2.1250151 1 3.5 L 1 11.5 C 1 12.874985 2.1250151 14 3.5 14 L 11.5 14 C 12.874985 14 14 12.874985 14 11.5 L 14 3.5 C 14 2.1250151 12.874985 1 11.5 1 L 3.5 1 z M 3.5 2 L 11.5 2 C 12.335015 2 13 2.6649849 13 3.5 L 13 11.5 C 13 12.335015 12.335015 13 11.5 13 L 9.9042969 13 L 9.9042969 8.9667969 L 11.300781 8.9667969 L 11.509766 7.3574219 L 9.9042969 7.3574219 L 9.9042969 6.3320312 C 9.9042969 5.8660312 10.034031 5.5488281 10.707031 5.5488281 L 11.566406 5.5488281 L 11.566406 4.109375 C 11.417406 4.089375 10.907453 4.046875 10.314453 4.046875 C 9.0764531 4.046875 8.2304688 4.795875 8.2304688 6.171875 L 8.2304688 7.3574219 L 7 7.3535156 L 7 8.9628906 L 8.2304688 8.9667969 L 8.2304688 13 L 3.5 13 C 2.6649849 13 2 12.335015 2 11.5 L 2 3.5 C 2 2.6649849 2.6649849 2 3.5 2 z" font-weight=400 font-family=sans-serif white-space=normal overflow=visible></path></svg></div>
+</a>
+<a target=_blank id=email_share href="">
+<div class=share-icon><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#6B6161"><path d="M 2.5 2 C 1.6774686 2 1 2.6774686 1 3.5 L 1 11.5 C 1 12.322531 1.6774686 13 2.5 13 L 13.5 13 C 14.322531 13 15 12.322531 15 11.5 L 15 3.5 C 15 2.6774686 14.322531 2 13.5 2 L 2.5 2 z M 2.5 3 L 13.5 3 C 13.533508 3 13.562289 3.0135998 13.59375 3.0195312 L 8 6.8925781 L 2.40625 3.0195312 C 2.4377112 3.0135998 2.4664925 3 2.5 3 z M 2 3.953125 L 8 8.1074219 L 14 3.9550781 L 14 11.5 C 14 11.781469 13.781469 12 13.5 12 L 2.5 12 C 2.2185314 12 2 11.781469 2 11.5 L 2 3.953125 z"/></svg></div>
+</a>
+</div>
+</div>
+<div class="container hidden-print">
+<div class=app-media-container>
+<div class="app-media-player-wrapper col-sm-10 col-sm-offset-1">
+<div class=media-player-container>
+<div class='app-media-player media-player audio-player' data-image='/static/images/responsive/player-bg-1.jpg' data-src="https://tflmedia-new.s3.amazonaws.com/free_downloads/1361-theauthenticjesus.mp3" data-title='The Authentic Jesus' data-poster='/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png'>
+<div class="app-media-content audio-container">
+<img class=app-media-audio-static-poster src="/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png" width="100%" height="100%" style="width: 100%; height: 100%;"/>
+<div class="app-media-audio-poster mejs-overlay mejs-layer mejs-overlay-play" style="width: 100%; height: 100%; opacity: 0;">
+<div class=mejs-overlay-button role=button tabindex=0 aria-label=Play aria-pressed=false></div>
+</div>
+<div class=mejs-poster style="display:none; height: 100%; width: 100%">
+<img src="/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png" width="100%" height="100%" style="width: 100%; height: 100%;"/>
+</div>
+<audio data-resource_id=1326 data-resource_type=message data-resource_format=audio class=mejs-player style="width: 100%; height: 100%;" src="https://tflmedia-new.s3.amazonaws.com/free_downloads/1361-theauthenticjesus.mp3" width="100%" height="100%">
+<source type="audio/mp3" src="https://tflmedia-new.s3.amazonaws.com/free_downloads/1361-theauthenticjesus.mp3"/>
+</audio>
+</div>
+<div class="app-media-overlay app-main-player hide">
+<img src="/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png" style="width:100%;height:100%;margin-bottom:40px;" alt="return to the main player" title="Return to the Main Player"/>
+<div class=media-player-overlay>
+<div class=action-box>
+<span>Return to the Main Player</span>
+<div class=overlay-icon-wrapper></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="app-media-tools media-tools col-sm-1">
+<div class="post-aquire library-binding">
+<div class=icon-post-aquire>
+<div class="dropdown favorite-info-box">
+<div class="icon-post-aquire dropdown-toggle requires-tooltip" data-toggle=dropdown title="Add to My Library">
+<a class="library-binding_icon favorites-toggle faded" href="#">
+<span class="svg-icon__wrapper favorite-heart" title="Add to My Library"><svg xmlns="http://www.w3.org/2000/svg" width=24 height=24><path class=svg-icon--default fill="#2b2727" d="M11 4v7H4v2h7v7h2v-7h7v-2h-7V4z"/></svg>
+</span>
+</a>
+</div>
+<div class="dropdown-menu dropdown-menu-favorite">
+<div class=dropdown-box>
+<p>Adding to My Library is a great way to keep a list of sermons, programs, and ministry resources in your account. It works everywhere you sign in, even with the mobile app!</p>
+<p class="big center"><a href="/account/">Sign In</a></p>
+<p class="big center">Don't have an account? <br/><a href="/account/register/">Register!</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="icon-post-aquire queue-toggle btn-group">
+<a tabindex=0 class="app-add-queue-popover add-queue-popover library-binding_icon" role=button data-toggle=popover data-html=true data-placement=top data-resource_id=1326 data-trigger=focus data-content='<div class="app-queue-popover-menu"><div class="queue-button-wrapper"><button type="submit" class=" app-play-next" data-resource_type="sermon" data-resource_id="1326">Play Next</button><hr /><button type="submit" class=" app-play-later" data-resource_type="sermon" data-resource_id="1326">Play Last</button></div></div>' data-resource_type=sermon title="Listen Queue">
+<span data-toggle=tooltip title="Add to Listen Queue" class="svg-icon__wrapper add-queue-icon-img in-queue-icon"><svg xmlns="http://www.w3.org/2000/svg" width=24 height=24><path class=svg-icon--default fill="#2b2727" d="M17.52 17.98v1.44H6v-1.44h11.52zm0-3.39v1.44H6v-1.44h11.52zm0-3.39v1.44H6V11.2h11.52zM6 4l4.32 2.52L6 9.04V4zm11.52 3.6v1.44H8.858l2.469-1.44h6.193zm0-3.6v1.44h-6.193l-.281-.165L8.858 4h8.663z"/></svg>
+</span>
+</a>
+</div>
+<div class=icon-post-aquire>
+<a class='app-download-link download requires-tooltip' data-resource_id=1326 data-resource_type=sermon href='https://downloads.truthforlife.org/free_downloads/1361-theauthenticjesus.mp3' title='Download Free'>
+<span class=svg-icon__wrapper><svg xmlns="http://www.w3.org/2000/svg" width=24 height=24><path class=svg-icon--default fill="#2b2727" d="M11 3v12.422l-3.961-3.961-1.078 1.078 5.25 5.25.539.516.539-.516 5.25-5.25-1.078-1.078-3.961 3.961V3H11zM5 19.5V21h13.5v-1.5H5z"/></svg></span>
+</a>
+</div>
+<div class=icon-post-aquire>
+<a class='requires-tooltip dropdown-toggle' data-toggle=dropdown title='More Options'>
+<span class=svg-icon__wrapper><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg"><path d="M14.5 5c0-1.3733-1.1267-2.5-2.5-2.5S9.5 3.6267 9.5 5s1.1267 2.5 2.5 2.5 2.5-1.1267 2.5-2.5Zm0 7.5c0-1.3733-1.1267-2.5-2.5-2.5s-2.5 1.1267-2.5 2.5S10.6267 15 12 15s2.5-1.1267 2.5-2.5Zm0 7.5c0-1.3733-1.1267-2.5-2.5-2.5S9.5 18.6267 9.5 20s1.1267 2.5 2.5 2.5 2.5-1.1267 2.5-2.5Z" class=svg-icon--default fill="#2b2727" fill-rule=nonzero /></svg></span>
+</a>
+<ul class="dropdown-menu shadow-longer dropdown-menu--right" role=menu>
+<li class=sharable><a href="http://twitter.com/intent/tweet?text=The%20Authentic%20Jesus+https://www.truthforlife.org/resources/sermon/authentic-jesus-the/"><i class=ti-twitter></i> Share</a></li>
+<li class=sharable><a href="http://www.facebook.com/sharer/sharer.php?title=The%20Authentic%20Jesus&u=https://www.truthforlife.org/resources/sermon/authentic-jesus-the/"><i class=ti-facebook></i> Share</a></li>
+<li class=sharable><a href="https://api.whatsapp.com/send?text=The%20Authentic%20Jesus%20%7C%20https://www.truthforlife.org/resources/sermon/authentic-jesus-the/"><i class=ti-whatsapp></i>Share</a></li>
+<li class=sharable><a href="mailto:username@example.com?subject=The%20Authentic%20Jesus&body=https://www.truthforlife.org/resources/sermon/authentic-jesus-the/"><i class=ti-envelope></i> Share</a></li>
+<li class=divider></li>
+<li><a href="/broadcasts/podcast/">Podcast</a></li>
+<li><a href="/lists/">Daily Email</a></li>
+<li><a href="/apps/">Apps</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=container-fluid>
+<div class=row>
+<div class="col-lg-10 col-lg-offset-1">
+<div class=post-header>
+<p class=post-date>October 23, 1988</p>
+<h1 class=h1>The Authentic Jesus</h1>
+<p class=post-author>by Alistair Begg</p>
+</div>
+</div>
+</div>
+</div>
+<div class=container>
+<div class=row>
+<div class=" col-md-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+<div class=scripture-reference-lead>
+<div class=icon-reference>
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#4d4f4f"><path d="M 3 6 L 3 25 L 13 25 C 14.103 25 15 25.897 15 27 L 17 27 C 17 25.897 17.897 25 19 25 L 29 25 L 29 6 L 19 6 C 17.807 6 16.733 6.5254219 16 7.3574219 C 15.267 6.5254219 14.193 6 13 6 L 3 6 z M 5 8 L 13 8 C 14.103 8 15 8.897 15 10 L 17 10 C 17 8.897 17.897 8 19 8 L 27 8 L 27 23 L 19 23 C 17.807 23 16.733 23.525422 16 24.357422 C 15.267 23.525422 14.193 23 13 23 L 5 23 L 5 8 z M 15 12 L 15 14 L 17 14 L 17 12 L 15 12 z M 15 16 L 15 18 L 17 18 L 17 16 L 15 16 z M 15 20 L 15 22 L 17 22 L 17 20 L 15 20 z" fill="#4d4f4f"/></svg>
+</div>
+<a href='/bible/Matthew+16:13-20' class=reference>Matthew 16:13-20</a>
+<span class="post-id muted"> &nbsp;(ID: 1361)</span>
+</div>
+<p>Who is Jesus? Since His incarnation, people have confused and disparaged the Son of God’s identity. Alistair Begg teaches who Jesus is according to the Bible, emphasizing His true nature as fully human and fully God. These two qualities exist without conflict or division and affirm His authority over life and death. In a world full of misguided notions about Jesus’ identity, only by looking to Scripture can we understand the truth about Him.</p>
+<div class=topics-wrapper>
+<strong>Topics: </strong>
+<ul class=post-topics>
+<li><a href="/topics/theology/deity-of-christ/">Deity of Christ</a></li>
+<li><a href="/topics/theology/humanity-of-christ/">Humanity of Christ</a></li>
+<li><a href="/topics/theology/jesus-christ/">Jesus Christ</a></li>
+</ul>
+</div>
+<div class="sermon-list-section__container sermon-series">
+<div class=sermon-list-section__title>Series Containing This Sermon</div>
+</div>
+<div class=archive-support>
+<div class=archive-photo-wrapper>
+<div class=series-progress_overlay-container>
+<a href="/resources/series/basics-christian-faith/">
+<img class=img-responsive src="/static/cache/90/23/9023d5283bc2bf2e0d1ffab0ae20c690.jpg" width=400 height=225 alt="The Basics of the Christian Faith"/>
+</a>
+</div>
+</div>
+<div class='archive-description-wrapper '>
+<small class='article-date archive-date'>
+May 11, 2023
+</small>
+<h4 class=archive-title>
+<a href='/resources/series/basics-christian-faith/'>The Basics of the Christian Faith</a>
+</h4>
+<strong class=archive-subtitle>A 13-Lesson Survey</strong>
+<small class=sku>
+<span class=resource_type>Series</span>
+<span class=sku-dot>•</span> ID: 28701
+</small>
+<div class=library-binding>
+<div class=library-binding_feature>
+<div class="dropdown favorite-info-box">
+<div class="icon-post-aquire dropdown-toggle requires-tooltip" data-toggle=dropdown title="Add to My Library">
+<a class="library-binding_icon favorites-toggle faded" href="#">
+<span class="svg-icon__wrapper favorite-heart" title="Add to My Library"><svg xmlns="http://www.w3.org/2000/svg" width=24 height=24><path class=svg-icon--default fill="#2b2727" d="M11 4v7H4v2h7v7h2v-7h7v-2h-7V4z"/></svg>
+</span>
+</a>
+</div>
+<div class="dropdown-menu dropdown-menu-favorite">
+<div class=dropdown-box>
+<p>Adding to My Library is a great way to keep a list of sermons, programs, and ministry resources in your account. It works everywhere you sign in, even with the mobile app!</p>
+<p class="big center"><a href="/account/">Sign In</a></p>
+<p class="big center">Don't have an account? <br/><a href="/account/register/">Register!</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class=library-binding_feature>
+<div class="icon-post-aquire queue-toggle btn-group">
+<a tabindex=0 class="app-add-queue-popover add-queue-popover library-binding_icon" role=button data-toggle=popover data-html=true data-placement=top data-resource_id=4080 data-trigger=focus data-content='<div class="app-queue-popover-menu"><div class="queue-button-wrapper"><button type="submit" class="app-show-player app-play-next" data-resource_type="series" data-resource_id="4080">Play  Full Series Next</button><hr /><button type="submit" class="app-show-player app-play-later" data-resource_type="series" data-resource_id="4080">Play  Full Series Last</button></div></div>' data-resource_type=series title="Listen Queue">
+<span data-toggle=tooltip title="Add to Listen Queue" class="svg-icon__wrapper add-queue-icon-img in-queue-icon"><svg xmlns="http://www.w3.org/2000/svg" width=24 height=24><path class=svg-icon--default fill="#2b2727" d="M17.52 17.98v1.44H6v-1.44h11.52zm0-3.39v1.44H6v-1.44h11.52zm0-3.39v1.44H6V11.2h11.52zM6 4l4.32 2.52L6 9.04V4zm11.52 3.6v1.44H8.858l2.469-1.44h6.193zm0-3.6v1.44h-6.193l-.281-.165L8.858 4h8.663z"/></svg>
+</span>
+</a>
+</div>
+</div>
+<div class=library-binding_feature>
+<div class=icon-post-aquire>
+<a class='app-download-link download requires-tooltip' data-resource_id=4080 data-resource_type=series href='https://downloads.truthforlife.org/free_downloads/28701-thebasicsofthechristianfaith.zip' title='Download Free'>
+<span class=svg-icon__wrapper><svg xmlns="http://www.w3.org/2000/svg" width=24 height=24><path class=svg-icon--default fill="#2b2727" d="M11 3v12.422l-3.961-3.961-1.078 1.078 5.25 5.25.539.516.539-.516 5.25-5.25-1.078-1.078-3.961 3.961V3H11zM5 19.5V21h13.5v-1.5H5z"/></svg></span>
+</a>
+</div>
+</div>
+</div>
+<hr/>
+</div>
+</div>
+<hr>
+<div id=transcript>
+<p class=toggle>
+<i class="ti-file-o Transcript"></i>
+Sermon Transcript:
+<a href="javascript:void(0);" onclick="window.print()" class="hidden-print pull-right"><i class="ti-file-o Transcript"> Print</i></a>
+</p>
+<div class=copy>
+<p>I invite you to take your Bibles. You may want to open them again to Matthew 16, which Tom read for us earlier, but we&#8217;ll be moving around tonight, as on all these evenings. One of the things about studying topically is that you tend to move all over the place. It&#8217;s one of the reasons I don&#8217;t particularly favor that approach to study, but nevertheless, it&#8217;s good for us to do and important.</p>
+<p>And with our Bibles open, let&#8217;s pause for a moment of prayer together. Just where you&#8217;re seated tonight, ask God to speak to you, no matter what age you are or where you&#8217;re from or background, that you might know that God is real and speaks to us through his Word. Ask for strength of mind where we&#8217;re tired, for a real seeking heart where we may suffer from disinterest. Let&#8217;s ask God together that we might know that it&#8217;s the power of his Word which takes root in our lives and changes us. And those who have the privilege of proclaiming it are merely the mouthpieces that one day will be set aside, but the message never changes.</p>
+<p>Lord, speak to us tonight, we pray, and may we be zealous in seeking after you, and may we lay hold upon the truth of your Word, live it out in the days of our lives that yet await us. For Jesus&#8217; sake. Amen.</p>
+<p>Every now and then, I come across an advertisement in a newspaper or a magazine&#8212;and I&#8217;m sure you do also&#8212;which reads something like this: &#8220;Born in poverty, lived only thirty-three years, spent most of his life in obscurity, never wrote a book, never had any position in public life, was crucified with two thieves, and yet two thousand years later, millions still follow him.&#8221; It&#8217;s not the whole story in the advert, but it is a significant part of it. And there is no getting away from the fact&#8212;whether we come tonight as convinced in our faith or questioning in our agnosticism&#8212;no getting away from the fact that this carpenter from an obscure province in a remote country in the Middle East has left an indelible mark on human history. And the question of his identity needs to be considered thoughtfully and certainly humbly. God has not pledged himself to respond to our intellectual arrogance, but he is committed to responding to our intellectual quest for truth, providing we would seek with a genuine and a humble heart.</p>
+<p>You would know it from Matthew 16, as it was read earlier, that there was great confusion surrounding the identity of Jesus in the region of Caesarea Philippi when he asked the question, &#8220;Who do people say [that] the Son of Man is?&#8221; And the variety of responses received then can be more than matched today. Men and women are further confused, as is the whole area of seeking to understand the authenticity of Christ, by the fact that individuals choose to use correct or orthodox language in an incorrect or unorthodox way, so that people will say things about Christ that is actually untrue but using terminology which is factual, thereby confusing themselves and all their listeners. They may seek to identify themselves within the mainstream of historic Christianity, they may seek to portray themselves as those who are orthodox within the confines of biblical theology, while at the same time choosing to believe that Jesus is just one of a number of routes up the mountainside of man&#8217;s search for God. And whether man seeks along the route of the person of Christ or should seek to make the ascent by another journey, nevertheless, they will all meet in the one place in the end. And so people will say, &#8220;Well, I am orthodox in my faith,&#8221; while seeking to hold to such an unbiblical position.</p>
+<h6>God has not pledged himself to respond to our intellectual arrogance, but he is committed to responding to our intellectual quest for truth, providing we would seek with a genuine and a humble heart.</h6>
+<p>And so part of my purpose this evening is to show us that such an approach is untenable. It really enshrines the views of those who sought to piggyback on the teaching of Christ while denying great portions of it. For example, Gandhi&#8217;s view was that &#8220;the soul of religions is one, but it is encased in a multitude of forms.&#8221;<a href="#[1]">[1]</a> &#8220;The soul of religions is one &#8230; encased in a multitude of forms.&#8221; Now, is that acceptable for the Christian? Well, the answer to my rhetorical question is no, it is not. And yet as I move around, I find many who are seeking to portray themselves as Christians who would be ambivalent in responding to that statement by Gandhi and may even, at the same time as professing faith, embrace his statement, thereby engendering the kind of confusion I&#8217;m referring to.</p>
+<p>Now, our study this evening is largely devoid of poems, anecdotes, and illustrations. I say that just to increase your sense of anticipation. I don&#8217;t have hardly anything here save the bare bones of biblical truth. Good! For that is what we need. I was struck, as the portion was read tonight, by the statement of Jesus in a way that I haven&#8217;t been struck by it before, when Jesus replies to Simon Peter, who makes his great statement of faith in Christ, saying, &#8220;You are the Christ, the Son of the living God.&#8221; And remember Jesus&#8217; reply? He said, &#8220;Blessed are you, Simon son of Jonah, for this was not revealed to you by man.&#8221; &#8220;For this was not revealed to you by man.&#8221; I underlined it in my Bible and wrote this: &#8220;Proclamation is my part; revelation is God&#8217;s part.&#8221; So my responsibility this evening is to proclaim to you these truths; your responsibility is to pin back your ears and listen; and God&#8217;s part is to unstop our ears, unblind our eyes, and reveal to us the verity of what is proclaimed. That removes any sense of burden and responsibility from the one who speaks and places it where God says it should be: with him alone.</p>
+<p>There are four factors that I&#8217;d like for us to consider tonight. They&#8217;re straightforward. I&#8217;ll give them to you, and we&#8217;ll work through them. Concerning the authentic Jesus, we look first at his <i>humanity</i>, secondly at his <i>deity</i>, thirdly at his <i>unity</i>, and finally at his <i>authority</i>.</p>
+<h2>The Humanity of Jesus</h2>
+<p>The authentic Jesus, first of all, is a human Jesus. Irrespective of the supernatural nature of his conception, to which we&#8217;ll come under his deity, the birth of Jesus Christ was normal. He came down a normal birth canal. He was born in the natural way in which any other human being was born. He entered life as a baby who needed to be changed of his nappies, or oblique diapers, as you would say. He needed to be taught how to make the stages from crawling to walking, to be taught how to speak, to be trained in the details of his daily routine; and such was the responsibility given to Joseph and Mary. Kierkegaard, that great philosopher, said of Jesus, &#8220;His life ran, like ours, &#8216;from womb to tomb.&#8217;&#8221;<a href="#[2]">[2]</a> &#8220;From womb to tomb.&#8221; And the Jesus that we find given to us in Scripture is a human Jesus.</p>
+<p>And let me give to you one or two references. You can read in Luke 2:40 and following of Jesus growing up. As you go through the Gospel records, you piece together a very human Christ, a Jesus who knew what it was to be tired&#8212;not a fake tired, a real tired. You remember in John chapter 4, he was there with the woman at the well. And why did he stay by the well and bid his disciples go on for food? Because he was tired.<a href="#[3]">[3]</a> We read of him in Matthew chapter 21 as being hungry. And I want to turn just to one or two of these to reinforce them in the reading of them. Matthew 21:18: &#8220;Early in the morning, as [Jesus] was on his way back to the city, he was hungry.&#8221; Just a little detail recorded by Mathew: &#8220;He was hungry.&#8221; If he&#8217;d lived in the twentieth century, he would have been looking for a Burger King or for a McDonald&#8217;s. He would have looked around for something to eat, because in his humanity, he was just plain hungry. He knew what it was to be thirsty. That&#8217;s why the Pharisees were so annoyed with him: because in his thirst, he used to go and eat with publicans and sinners,<a href="#[4]">[4]</a> and he used to eat and drink there. And Jesus was glad to do so. Not only did he know these things, but he knew human pain. He knew the actuality of agony. In Mark chapter 14, recording the scene in the garden of Gethsemane where Jesus takes Peter, James, and John along with him, we&#8217;re told &#8220;he began to be deeply distressed and troubled,&#8221; and his soul was &#8220;overwhelmed with sorrow to the point of death.&#8221;<a href="#[5]">[5]</a> And in the agony of that human experience, he displays his humanity.</p>
+<p>Now, this is important to underscore, because we do not show Jesus to be God by seeking to display him as any less a man. Any attempt to show that Jesus is God by diminishing his humanity is to introduce us to an unauthentic Jesus. So we need not do that. He has revealed himself plainly in that way.</p>
+<p>He experienced the gamut of human emotions. He knew what it was to be joyful. A great verse&#8212;you&#8217;ll find it in Luke 10:21. If you want to turn to it, you&#8217;ll find it there. &#8220;The seventy-two,&#8221; you&#8217;ll read in verse 17 as the context&#8212;&#8220;the seventy-two [had] returned,&#8221; we&#8217;re told, &#8220;with joy.&#8221; And they come, and they tell Jesus, &#8220;Lord, even the demons submit to us in your name.&#8221; And he replied, &#8220;I saw Satan fall like lightning from heaven. [And] I[&#8217;ve] given you authority to trample on snakes and scorpions and to overcome all the power of the enemy; nothing will harm you.&#8221; And then he said, &#8220;However, do not rejoice that the spirits submit to you, but rejoice that your names are written in heaven.&#8221; Says, &#8220;You want something to get really excited about? You want to have something to take into this week that will be the source of your joy? Rejoice in this: that in the logbooks of heaven, your name is there in Christ.&#8221; And then the very next verse, it says, &#8220;At that time Jesus, full of joy through the Holy Spirit, said, &#8216;I praise you, [Lord and Father].&#8217;&#8221; So within his humanity there rose up within him on that day the experience of a very natural and yet supernatural joy.</p>
+<p>He knew what it was to be sorrowful&#8212;Matthew 26. He knew what it was to love&#8212;John chapter 11. The reference in a verse: in Matthew 26, it&#8217;s verse 37; John 11:5. It says, &#8220;Jesus loved Martha and her sister and Lazarus.&#8221; He was, if you like, that kind of man. He was capable of that kind of empathy. He was not some creature&#8212;an alien from another place. He cannot be thought of in those terms. He was able to sit and empathize with men and women in their thirst, in their hunger, in their joy, in their sorrow, in their love, in their pain. And he knew what it was to experience that great depth of human conviction in his soul concerning compassion. Matthew 9:36: &#8220;[And] when he saw the crowds, he had compassion on them, because they were harassed and helpless, like sheep without a shepherd.&#8221;</p>
+<p>He was a natural man who went to worship on the Sabbath&#8212;Luke 4:16. It says there that he went &#8220;as was his custom&#8221; on the Sabbath. In other words, in his humanity, he prioritized his life. And he said, &#8220;On this day I will worship.&#8221; And no matter, come what may, he fulfilled that holy obligation. &#8220;This is a priority for me,&#8221; says Jesus. &#8220;I will be present in worship.&#8221; He was, in his humanity, one who meditated upon the Scriptures, and he was, in the reality of his manhood, one who faced temptation. Hebrews 4:15 speaks of Christ suffering temptation, and Luke records for us the details of his forty days and forty nights.</p>
+<h6>We do not show Jesus to be God by seeking to display him as any less a man. Any attempt to show that Jesus is God by diminishing his humanity is to introduce us to an unauthentic Jesus.</h6>
+<p>Now, when you begin to put all those pieces of the puzzle together, they are clear and obvious references to the fact that Jesus lived and breathed within a context of natural human history. So straightforward is it that we might assume that there has never been a question concerning the humanity of Jesus Christ&#8212;and there we would be wrong. For in the early centuries, there arose a teaching which went under the name of Docetism: D-o-c-e-t-i-s-m. It comes from the Greek word <i>doke&#333;</i>, the verb &#8220;to appear.&#8221; And the teaching went like this: Since, in the minds of these people&#8212;and it was part of the Gnostic heresy&#8212;since matter, body, is evil and spirit is good, there is no possibility that a good God could have clothed himself in human matter, which is, of course, evil. Therefore, God could not have taken on himself a real human body. And therefore, whatever the incarnation was or is, it is merely appearances. So he wasn&#8217;t a <i>real</i> human being. He looked like one, he sounded like one, but according to the Docetists, he was not one.</p>
+<p>And when John, answering that in the context of the first century, wrote his first letter, I&#8217;m sure he had it in mind, where he makes this great and straightforward statement, 1 John 1:</p>
+<blockquote>
+<p>That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked at and [which] our hands have touched&#8212;this we proclaim concerning the Word of life. The life appeared; we have seen it and testify to it, and we proclaim to you the eternal life, which was with the Father and has appeared to us. We proclaim to you what we have seen and heard, so that you [may] also &#8230; have fellowship with us. And our fellowship is with the Father and with his Son, Jesus Christ. We write this to make our joy complete.<a href="#[6]">[6]</a></p>
+</blockquote>
+<p>First thing, then, concerning the authentic Jesus is his humanity: a <i>real</i> human being.</p>
+<h2>The Deity of Jesus</h2>
+<p>Secondly, his deity. Having faced the fact that he was a real man who said and did certain things within the context of history, we must immediately go on to affirm that it is only in light of the fact of his divinity that we can understand his humanity. In other words, it is impossible to explain Christ simply in terms of the fact that he was a human being.</p>
+<p>C. S. Lewis, in probably one of the most-quoted apologetic statements concerning this, arrived at this conviction himself along the line of agnosticism. He said, &#8220;A man who was merely a man and said the things that Jesus said would either be on the level with someone claiming to be a poached egg, or else he would be a demon or something worse. And so,&#8221; he says, &#8220;you can write him off as a lunatic, you can spit at him as a demon, or you can fall at his feet and call him Lord and God, but do not come to him with any patronizing nonsense about his having been a great moral teacher. He did not leave the option open to us. He never intended to.&#8221;<a href="#[7]">[7]</a></p>
+<p>And so all that nonsense, again, in the <i>Plain Dealer</i>, which has got up the back of my neck this weekend, about &#8220;Wow! We&#8217;ve got a little piece of Jesus over here,&#8221; and &#8220;This is our Jesus&#8212;a kind of demystified Jesus, a kind of nonbiblical Jesus,&#8221; is not Jesus! It&#8217;s an unauthentic Jesus! I covet his name! I deny it to those people! They do not know my Jesus! Their name should not be in the church notices. They&#8217;re not a church. For Christ&#8212;the authentic Christ&#8212;is the head of the church. And if I had the time and the patience, I would mount a crusade to get all of that other garbage taken out of those church notices so as to make it clear what is the church, who is the Christ. It is not a matter of triviality; it is a matter of <i>reality</i>. It is vital in our syncretistic days.</p>
+<p>And this same Jesus whom we discovered here is not merely human and real, but he is divine and true. This is <i>the</i> great, staggering truth of Christianity: that Christ became a human fetus; that Christ, the God-man, was nurtured in a womb; that he who had always existed became a part of this scheme of things in God&#8217;s economy. And in the biblical teaching, we discover again and again that Jesus, while true man, is also true God.</p>
+<p>Now, how would you respond to the statement &#8220;The New Testament nowhere states that Jesus is God&#8221;? Okay? You&#8217;re talking with somebody, and they say to you sometime this week, &#8220;Well, you know, I read the New Testament, and I never found a place where it says that Jesus is God.&#8221; What&#8217;s your answer to that? If this was a class, I&#8217;d put you through it. You should be fortunate that I&#8217;m four feet away from you here. You should be glad.</p>
+<p>All right, there&#8217;s one: John 5. Good.</p>
+<p>All the &#8220;I ams.&#8221; Okay. Any more?</p>
+<p>Philippians 2:5&#8211;11. Good!</p>
+<p>All right! &#8220;In many and various ways, God spoke of old by the prophets, but in these last days, he has spoken to us in his Son&#8230;&#8221;<a href="#[8]">[8]</a></p>
+<p>That&#8217;s what we would do. We would first of all say, &#8220;You know something? You&#8217;re right to one degree. You&#8217;re right in this extent: that there&#8217;s nowhere in the New Testament that you will find a statement made by Jesus with these three words: &#8216;I am God.&#8217; You&#8217;re right. He never said it. But he said it in other ways.&#8221; And then we would turn to those portions of Scripture. We would turn also to Romans 9:5, where Paul says, &#8220;Christ, who is God over all, [is] forever praised.&#8221; No distinction: &#8220;Christ, who is God over all.&#8221; Hebrews chapter 1, as has been mentioned. The prologue of John&#8217;s Gospel. Titus 2:13, where it refers to &#8220;the glorious appearing of our great God and Savior, Jesus Christ.&#8221; Jesus Christ appeared as &#8220;God and Savior.&#8221; We would turn to John&#8217;s statement in the twentieth chapter,<a href="#[9]">[9]</a> to Peter&#8217;s introduction to his second letter.<a href="#[10]">[10]</a></p>
+<p>And in doing this, we would drive home to our hearers a number of facts to consider.</p>
+<p>Fact one: the Bible&#8217;s statement concerning the virgin birth. Turn for a moment to Matthew chapter 1, and let&#8217;s just reinforce this in our memories. Matthew 1:18: &#8220;This is how the birth of Jesus &#8230; came about: His mother Mary was pledged to be married to Joseph, but <i>before they came together</i>, she was found to be with child <i>through the Holy Spirit</i>.&#8221;<a href="#[11]">[11]</a> Luke&#8217;s record of it&#8212;Dr. Luke. We would expect him to be clear concerning these things, and he records for us the encounter between the angel and Mary. The angel comes and says, &#8220;You know, you&#8217;re going to have a son&#8221;:<a href="#[12]">[12]</a> &#8220;He[&#8217;ll] &#8230; be called the Son of the Most High. The Lord God will give him the throne of his father David, and he will reign over the house of Jacob forever; [and] his kingdom will never end.&#8221; Now, the response of Mary is intriguing, is it not? It&#8217;s a far-out thought to her that she is going to have a son who is the King of Kings and Lord of Lords, but what is equally far out is that she&#8217;s going to have a son at all! Because, she said, &#8220;How will this be &#8230; since I am [still] a virgin?&#8221; Answer: &#8220;The Holy Spirit will come upon you, and the power of the Most High will overshadow you.&#8221;<a href="#[13]">[13]</a> And then, as it were, the veil of mystery is pulled across this tremendous truth with which Scripture is perfectly clear.</p>
+<p>And while we uphold this truth, we must at the same time learn to dethrone an untruth, which is the wholly unbiblical assertion of the immaculate conception of Mary. To believe in the virgin birth is not synonymous with believing what has been taught latterly in Catholicism. For God to produce a sinless Son, he did not need a sinless mother, for there was only one without sin. Even Christ and his sinlessness conveyed the fact of his deity. Now, you need to listen to this, you need to understand it, and you need to lay hold of it: God intervened in time to place a new beginning in the moral history of the human race, just as he intended. There&#8217;s no way to sidestep it, loved ones. The authentic Jesus as presented in the Bible is the Jesus of the virgin birth.</p>
+<p>Secondly, he&#8217;s the Jesus of the miracles. The Jesus of the miracles. And this is where all these people who think that they&#8217;re going to make Christianity more palatable to people jump off the boat: &#8220;Well, we&#8217;re here to tell you tonight about a Jesus who wasn&#8217;t born of a virgin. We&#8217;re sure you don&#8217;t want to swallow that anyway. And secondly, we have good news for you: we have a Jesus for you who never did any miracles. And thirdly, we have a Jesus who was not raised from the dead.&#8221; And anybody who&#8217;s smart enough, sitting out there, turns and walks right up the aisle and out into the night, saying what? &#8220;Who needs a Jesus like that? What in the world good is that to anybody?&#8221;</p>
+<p>What could be more human than Jesus lying asleep in the back of a boat with a bunch of guys who were known for their ability on the sea? In his humanity, he looked to them&#8212;looked them in the eye&#8212;and said, &#8220;These are the boys to look after this this afternoon. I&#8217;ll get a pillow, I&#8217;ll go up the back, and I&#8217;ll have a good snooze.&#8221; Because we&#8217;ve already said that Christ knew what it was to be tired. So up the back he goes and has a snooze. What could be more human than that? But yet what could be more divine than that in the midst of the storm, the disciples come and waken him and say, &#8220;Don&#8217;t you know that we&#8217;re all drowning? Don&#8217;t you care that we&#8217;re perishing?&#8221; And Jesus stands up, and he goes, &#8220;I&#8217;ll take care of this.&#8221; And he looks out over the boat, and he said, &#8220;Shh! Whisht!&#8221; It&#8217;s a Scottish word. &#8220;Whisht!&#8221; And the sea became calm.<a href="#[14]">[14]</a> And the disciples&#8212;remember what they said? &#8220;What manner of alien is this&#8221;? No. &#8220;What manner of <i>man</i> is this!&#8221;<a href="#[15]">[15]</a></p>
+<p>What man that falls asleep in the stern of the boat could stand to still the storm? The God-man! The authentic Jesus. What could be more human than Jesus&#8217; death by crucifixion? What could be more human than the cry of dereliction from the cross, &#8220;My God, My God, why have you forsaken me?&#8221;<a href="#[16]">[16]</a> And what could be more divine than that that same Christ should rise from the tomb on the third day and reveal himself to hundreds at one time and to individuals throughout the journey?</p>
+<p>Well, that brings us to the third fact we need to consider: that this divine Jesus is the Jesus of the virgin birth, he&#8217;s the Jesus of the miracles, and he&#8217;s the Jesus of the resurrection. I was speaking with somebody this morning, and he was saying, &#8220;You know, as a postgraduate student in the realm of science, I find myself dealing with so many people who are not merely agnostic, but actually, they are vitriolic in their approach to my faith. What should I do?&#8221; And we talked about a number of things, but at the center of it all, this was my advice to him: &#8220;Immerse yourself in an understanding of the biblical revelation concerning the resurrection. Eat it, sleep it, drink it, walk it, know it. Get all of it down.&#8221; For upon this event hinges the whole quest concerning the authentic Christ, doesn&#8217;t it? For that&#8217;s what Paul says in 1 Corinthians. He says, &#8220;You see, if Jesus Christ is not risen, then those who died are dead in their sins, and those of us who proclaim faith have no faith to proclaim.&#8221; But he says, &#8220;Christ is also raised from the dead.&#8221;<a href="#[17]">[17]</a></p>
+<p>And what we discover as we read our Bibles is this tremendous fact of the resurrection&#8212;the empty tomb, Jesus seen alive, the disciples transformed. And I put it to you tonight that any skeptical explanation is much harder to sustain than the New Testament explanation that Jesus was raised from the dead as he promised. Without the resurrection of the dead, there would have been no Christian community to uphold and proclaim the gospel for the last two thousand years. Do you ever think about that? Do you ever think just about the fact of the church&#8212;when you realize that the disciples all quit him and fled? And within a matter of weeks, they were turning Jerusalem upside down. Oh yes, the New Testament explanation is far easier to sustain than the explanations of a deviant agnosticism.</p>
+<p>And finally under his deity, we have the fact of his self-consciousness and his claims. Luke chapter 2&#8212;I mentioned it earlier, and this time we&#8217;ll turn to it&#8212;concerning, remember I said, the growing up of Jesus and his humanity: this fantastic story, one of my favorite stories as a child. I loved it. I just <i>loved</i> this story&#8212;and I still do&#8212;about Jesus, about his mum and dad losing him in Jerusalem. It always seemed so good to me that they lost him, you know? Because I figured, &#8220;I got lost a few times, and this is cool, you know? Jesus got&#8230;&#8221; Well, he didn&#8217;t get lost, but they lost him. And I love to read the story. I love to wait for the punch line&#8212;you know, working through.</p>
+<p>Now, you could never say this to your mum and dad. You try this stunt, you&#8217;re in deep trouble. I mean, you mess them up, and they retrace their journey, they come back and found you, and they say, &#8220;What in the world do you think you&#8217;re doing here?&#8221;&#8212;no other person could ever say what he said! Right? What did he say? &#8220;Wist ye not that I must be about my Father&#8217;s business?&#8221;<a href="#[18]">[18]</a> &#8220;Don&#8217;t you know,&#8221; he said, &#8220;who I am?&#8221; A twelve-year-old boy. What a profound arrogance&#8212;unless true! What a megalomaniac in the making&#8212;unless true! What a potential poached egg at the age of twelve&#8212;unless true! What a dreadful liar&#8212;unless true! Mary and Joseph looked him in the eye, looked one another in the eye, and Luke says, verse 50, &#8220;But they did not understand what he was saying to them.&#8221; And &#8220;then he went down to Nazareth with them and was obedient to them.&#8221; There&#8217;s his humanity! &#8220;But his mother treasured all these things in her heart,&#8221; for she knew this boy was different.</p>
+<p>And you find his claims again in John 3, in Matthew 12, in Mark 1.</p>
+<p>Our time is going. Let me move on.</p>
+<h2>The Unity of Jesus</h2>
+<p>The authentic Jesus will be discovered by considering first his humanity, secondly his deity, and thirdly his unity. Now, I want you to know as we come to this third point that this third point is for the honors students amongst you. Okay? Those of you who have decided that in this course you are not taking honors have approximately a five-minute break. Don&#8217;t leave; stay. But I&#8217;ll tell you when we start onto the fourth and final point, which will go by with great speed. All right? Here we go.</p>
+<p>We&#8217;ve been singing on these Sunday evenings,</p>
+<blockquote>
+<p>Meekness and majesty,<br/> Manhood and Deity,<br/> In perfect harmony,<br/> The man who is God.<a href="#[19]">[19]</a></p>
+</blockquote>
+<p>We&#8217;ve been wrestling with the profound truth of this authentic Jesus&#8212;that which Wesley says: &#8220;Our God contracted to a span, incomprehensibly made man.&#8221;<a href="#[20]">[20]</a> And at issue in the person of Christ are these two facts which have been our first two points: namely, that Jesus was and is God and was man. So how in the world do his humanity and his deity coexist within this one person? For the Scriptures teach that they certainly do.</p>
+<p>And what we deal with here, and seek to wrestle with it, comes up with at best a formulation of truth rather than an explanation of truth. And it is this area which dominated the debates of the early centuries, as those of you who&#8217;ve been in Tom&#8217;s class in early church history I&#8217;m sure will have already dealt with. But it was this concern more than any other which wrestled in the minds of the learned. Of all the weird and wonderful notions, none had greater impact than that which we refer to as Arianism. Arianism.</p>
+<p>Arianism emerged from Arius&#8212;Mr. Arius, if you like&#8212;who lived 256&#8211;336: a wee while ago, I&#8217;m sure you&#8217;ll agree. He had the privilege of being the presbyter of Alexandria. That&#8217;s what he did, and that&#8217;s where he lived. He was a pupil of another pretty learned guy called Origen, or &#8220;Orijen.&#8221; I noticed Americans say &#8220;Orijen,&#8221; presumably to distinguish it from Oregon. But it&#8217;s Origen&#8212;O-r-i-g-e-n&#8212;or &#8220;Orijen.&#8221; Whatever. That was his buddy. And Arius, this is what he did: in trying to wrestle with the fact of Christ&#8217;s humanity and deity, he said, &#8220;The Son, Jesus, was created.&#8221; Okay? He said, &#8220;Jesus was created. And furthermore, there was a time when he was not.&#8221; I.e., there was a time when Jesus did not exist. He taught that Christ was the most exalted of all creatures, but ultimately, that was all he was: an exalted creature.</p>
+<p>In the fourth century, the debate ebbed and flowed. Constantine professed faith, remember, in the fourth century&#8212;AD 312. That complicated matters a little bit. The Council of Nicaea, 325, met to consider these issues. And finally, the Council of Constantinople in 381 resolved the problem. And in the midst of it all, there was a hero, and the hero&#8217;s name was Athanasius. He was there from 296 to 373. And Athanasius opposed this man Arius. You remember, Arius is over here saying, &#8220;Jesus didn&#8217;t always exist. Jesus is merely a created being.&#8221; Athanasius is saying, &#8220;You can&#8217;t get away with that, Arius. That is not true.&#8221; Athanasius said, &#8220;Listen: we&#8217;ve got to read what the Scriptures have said. Let&#8217;s take what the apostles have said concerning Christ, let&#8217;s take the prophecies of the Old Testament, and let&#8217;s ground our convictions here.&#8221;</p>
+<p>So Arius is in the realm of innovation, and Athanasius is in the realm of proclamation. Arius is saying, &#8220;Jesus was not truly divine.&#8221; Athanasius is saying, &#8220;He certainly was.&#8221; Because Athanasius was smart enough to realize that anything less than a fully divine Savior would be insufficient to meet man&#8217;s need. And so he tenaciously affirmed that Christ was &#8220;of one substance with the Father.&#8221;<a href="#[21]">[21]</a> That&#8217;s where you have the debate of the <i>homoousios</i> and the <i>homoiousios</i>, which you can read about later on, as those of you go on for honors in this course. But at issue was a fundamental truth, which I will come to in a moment. And Athanasius didn&#8217;t receive good press concerning this. Indeed, somebody came to him on one occasion and said, &#8220;Athanasius, the whole world is against you.&#8221; And you know what he said? &#8220;Then I am against the whole world.&#8221; And he was unprepared to move from these biblical foundations.</p>
+<p>And out of that grew the next consideration, which was concluded at the Council of Chalcedon in 451, focusing upon this whole nature of the human and divine elements in Jesus Christ. And by Chalcedon they said this: in Christ, two natures exist &#8220;without confusion, without change, without division,&#8221; and &#8220;without separation.&#8221;<a href="#[22]">[22]</a> And what they did was not explain it but formulate it and lay down a fixed point from which biblical truth then went on throughout the centuries.</p>
+<p>Well, you say to me, &#8220;Is it relevant?&#8221; Well, yes, it is. And I think it&#8217;s important for us to realize that, as Paul says to Timothy in 1 Timothy 3:16, great is the mystery of our godliness. Great is the mystery that God was in Christ. And the only way I know to approach these truths is like the Bethlehem shepherds: in humble faith and in adoring worship. You and I will never, this side of eternity, unscramble these great imponderables, but we may live to proclaim them when we have the hearts of the Bethlehem shepherds: humble faith, adoring worship. They couldn&#8217;t explain what was happening on the hillside that night. They could not quite get it out of their system. They couldn&#8217;t fully, adequately absorb it all. But they went, and they knelt down before the Christ, and they worshipped him.</p>
+<h6>Without the revelation which we have in Jesus Christ, we are left to grope in the darkness of our unenlightened reason.</h6>
+<p>The other thing to say is this: that Arianism is alive and flourishing. It was Arianism&#8212;you know what I&#8217;m going to mention now, don&#8217;t you?&#8212;in the article in the <i>Plain Dealer</i> yesterday. That was Arianism! That was what it was. Unitarianism is merely twentieth-century Arianism. Unitarians are saying there was a time when Jesus did not exist; Jesus is merely a created being&#8212;the greatest of all, but that&#8217;s all he is. That&#8217;s what Jehovah&#8217;s Witnesses say. That&#8217;s what the Mormons say. That&#8217;s what Christadelphians say. And that is the point of division. That&#8217;s the distinction between cult and church.</p>
+<h2>The Authority of Christ</h2>
+<p>And so the authentic Christ needs to be considered in his unity&#8212;and, finally, needs to be considered as per his authority. The deity of Jesus Christ is the essential presupposition of these two truths, with which we finish tonight.</p>
+<p>First of all, the finality of Christian revelation. The finality of Christian revelation. Somebody mentioned Hebrews 1: &#8220;In the past God spoke [of old by] the prophets &#8230;, but in these last days he has spoken to us [in] his Son.&#8221;<a href="#[23]">[23]</a> And what the Scriptures affirm of Jesus is that you cannot go beyond Christ at the apex of revelation. And without the revelation which we have in Jesus Christ, we are left to grope in the darkness of our unenlightened reason. That&#8217;s why any quest after Christianity which subsumes the position of Christ, which makes him less than the authentic Christ of the Scriptures, is destined to total failure.</p>
+<p>Jesus expresses the finality of revelation and, finally, the validity of Christian redemption. You ought to write these phrases down and understand what they mean, because they&#8217;re very important. It is the authentic Jesus who gives us the finality of Christian revelation, and it is in the authentic Jesus that we have the validity of Christian redemption. If Jesus Christ is not God, then the redemption which he offers is powerless to forgive and to save. Anselm&#8217;s great book <i>Cur Deus Homo </i>deals with this tremendous truth. Get it and read it if you&#8217;re interested. It is God that we have wronged, and it is only God who can redeem. Therefore, unless God should purchase our redemption, we cannot be redeemed. Therefore, God must become man to effect redemption. But that man must at the same time be God. And in that authenticity rests the validity of that&#8212;all our claims, all our singing tonight.</p>
+<p>Let me conclude by summarizing an implication in a simple way&#8212;and in this I&#8217;m debtor to the late David Watson. Because Jesus was and is the Son of God, what we&#8217;re saying is this: that he alone has the authority to speak on the issues of life and death. And what we&#8217;re dealing with here is, I acknowledge, in the arena of faith. The arena of faith. And tonight, all of us live in the arena of faith. We might sit believing ourselves to be rationalists&#8212;even scientific rationalists&#8212;but I want you to know you live your life in the arena of faith. And tonight, in this group, we could be divided in a number of ways; but ultimately, we&#8217;ll be divided by those whose faith rests either in the authentic Jesus or in our personal opinion that this authentic Jesus is not authentic after all. Do you get that? Our faith tonight either rests in the authentic Christ or in our overrated opinion that this Jesus isn&#8217;t authentic after all.</p>
+<p>And for a man or a woman tonight to profess faith in Jesus Christ is to remove our faith from the realm of our personal opinion and to place it in the sure conviction that Jesus is the person that he claimed to be. For our personal opinion is shaky, and the claim of Christ is rocklike. All the evidence that we&#8217;ve considered&#8212;and we&#8217;ve only poked in it, as it were&#8212;endorses the fact that Christ has the credentials to speak with authority on the matters that were considered.</p>
+<p>Imagine for a moment that I suddenly have a pain in my chest. I just go to one of my friends. I say to him, &#8220;Hey, I&#8217;ve got a pain in my chest.&#8221; And he says to me, &#8220;Don&#8217;t worry about it. A lot of people have pains in their chest. Take an aspirin, and get plenty of rest.&#8221; Not quite content with that, I go to another friend who&#8217;s a physician. I tell him&#8212;I say, &#8220;I&#8217;ve got a pain in my chest&#8221;&#8212;and he begins to probe and to analyze and to ask and to discover, and he says, &#8220;You have a serious problem. You need surgery.&#8221; Now, in both situations, I exercise faith. I go to one, and he says, &#8220;Take a rest.&#8221; I go to another, and he says, &#8220;Take a table.&#8221; There isn&#8217;t a person here tonight who&#8217;s going to suggest that the credentials of the latter are irrelevant in relation to that question. And any sensible person would place their faith in the one whose credentials are there to behold.</p>
+<p>Well, my dear friends, tonight, I suggest to you that Christ&#8217;s credentials are there for us clearly to behold. Are you going to continue to rest your faith on your personal, overrated opinion that none of this is true? Or will you become like a little child and trust in the credentials of the authentic Jesus? I commend you tonight, those who believe and those who question, to the only one who holds the answer to the deep searchings of our human existence. He is the Christ, the Son of the living God.</p>
+<hr size=1 />
+<p><a name="[1]">[1]</a> Mahatma Gandhi, &#8220;God Is One,&#8221; <i>Young India</i> 6, no. 39 (September 25, 1924): 318.</p>
+<p><a name="[2]">[2]</a> Bruce Milne, <i>Know the Truth: A Handbook of Christian Belief</i> (Leicester: Inter-Varsity, 1982), 125. Milne credits the phrase &#8220;womb to tomb&#8221; to S&#248;ren Kierkegaard.</p>
+<p><a name="[3]">[3]</a> See John 4:6.</p>
+<p><a name="[4]">[4]</a> See Matthew 9:10&#8211;11; Mark 2:15&#8211;16; Luke 5:29&#8211;30.</p>
+<p><a name="[5]">[5]</a> Mark 14:33&#8211;34 (NIV 1984).</p>
+<p><a name="[6]">[6]</a> 1 John 1:1&#8211;4 (NIV 1984).</p>
+<p><a name="[7]">[7]</a> C. S. Lewis, <i>Mere Christianity</i> (1952), bk. 2, chap. 3. Paraphrased.</p>
+<p><a name="[8]">[8]</a> Hebrews 1:1&#8211;2 (paraphrased).</p>
+<p><a name="[9]">[9]</a> See John 20:28.</p>
+<p><a name="[10]">[10]</a> See 2 Peter 1:1.</p>
+<p><a name="[11]">[11]</a> Matthew 1:18 (NIV 1984). Emphasis added.</p>
+<p><a name="[12]">[12]</a> Luke 1:31 (paraphrased).</p>
+<p><a name="[13]">[13]</a> Luke 1:32&#8211;35 (NIV 1984).</p>
+<p><a name="[14]">[14]</a> See Matthew 8:23&#8211;26; Mark 4:35&#8211;39; Luke 8:22&#8211;24.</p>
+<p><a name="[15]">[15]</a> Luke 8:25 (KJV). Emphasis added. See also Matthew 8:27; Mark 4:41.</p>
+<p><a name="[16]">[16]</a> Matthew 27:46; Mark 15:34 (NIV 1984).</p>
+<p><a name="[17]">[17]</a> 1 Corinthians 15:14, 17&#8211;18, 20 (paraphrased).</p>
+<p><a name="[18]">[18]</a> Luke 2:49 (KJV).</p>
+<p><a name="[19]">[19]</a> Graham Kendrick, &#8220;Meekness and Majesty&#8221; (2002).</p>
+<p><a name="[20]">[20]</a> Charles Wesley, &#8220;They Shall Call His Name Immanuel&#8221; (1745).</p>
+<p><a name="[21]">[21]</a> The Nicene Creed.</p>
+<p><a name="[22]">[22]</a> The Chalcedonian Definition.</p>
+<p><a name="[23]">[23]</a> Hebrews 1:1&#8211;2 (NIV 1984).</p>
+</div>
+</div>
+<script>var aUpper,aLower;var prefix,zLimit;var i,a1,a2;prefix="back-";zLimit=50;aUpper=document.querySelectorAll("#transcript a[href^='#']");aLower=document.querySelectorAll("#transcript a[name^='[']");if(aUpper.length==aLower.length){for(i=0;i<aUpper.length;i++){a1=aUpper[i];a1.setAttribute("name",prefix+a1.getAttribute("href").substring(1));a1.setAttribute("class","Super Upper");a1.style.zIndex=zLimit-i;a2=aLower[i];a2.setAttribute("href","#"+prefix+a2.getAttribute("name"));a2.setAttribute("class","Super Lower");a2.style.zIndex=zLimit-i;a1.setAttribute("title",a2.parentNode.innerText);}}</script>
+<div class=scripture-notice>
+<p>
+<strong>Copyright © 2023, Alistair Begg</strong>. Used by permission. All rights reserved.
+</p>
+<p>
+Unless otherwise indicated, all Scripture quotations for sermons preached <strong>on or after
+November 6, 2011</strong> are taken from The ESV® Bible (The Holy Bible, English Standard Version®),
+copyright © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission.
+All rights reserved.
+</p>
+<p>
+For sermons preached <strong>before
+November 6, 2011</strong>, unless otherwise indicated, all Scripture quotations
+are taken from The Holy Bible, New International
+Version® (NIV®), copyright © 1973 1978 1984 by Biblica, Inc.<sup>TM</sup> Used by
+permission. All rights reserved worldwide.
+</p>
+</div>
+<div class=author-profile>
+<div class=author-photo-wrapper>
+<img src="/static/images/responsive/alistair.jpg" alt="Alistair Begg" height=54 width=54 class=author-photo>
+</div>
+<div class=author-profile-text>
+Alistair Begg is Senior Pastor at Parkside Church in Cleveland, Ohio, and the Bible teacher on Truth For Life, which is heard on the radio and online around the world.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid hidden-print footer-promos">
+<div class=row>
+<div class="col-sm-4 banner-wrapper">
+<a href='https://www.truthforlife.org/store/products/usb/a-study-in-nehemiah-three-volume-set/?src=23WAJS4' target=_blank id="A Study in Nehemiah USB - October 2023 - 10/31/2023" class=ad-banner-link data-pjax=false>
+<img alt='Promo 1' class='img-responsive None' height=300 width=400 src='/static/uploads/banners/astudyinnehemiahusb_ipadwebsiteapp.jpg'/>
+</a>
+</div>
+<div class="col-sm-4 banner-wrapper">
+<a href='https://www.truthforlife.org/donate/?src=23WAJD1' target=_blank id="October 2023 - Resource B - 10/16/2023" class=ad-banner-link data-pjax=false>
+<img alt='Promo 1' class='img-responsive None' height=300 width=400 src='/static/uploads/banners/bookb_thebeautyofdivinegrace_ipadwebsiteapp.jpg'/>
+</a>
+</div>
+<div class="col-sm-4 banner-wrapper">
+<a href='https://blog.truthforlife.org/truth-for-life-is-on-streaming-tv' target=_blank id="Apple TV, Roku, Amazon Fire - 10/30/2023" class=ad-banner-link data-pjax=false>
+<img alt='Promo 1' class='img-responsive None' height=300 width=400 src='/static/uploads/banners/AmazonFire_Roku_iPadWebAd_768x432.jpg'/>
+</a>
+</div>
+</div>
+</div>
+<a href="#top" id=jump-top class="hidden-print hide-me"><div class=icon-jump-top><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#6B6161"><path d="M 7.5 2.9257812 L 1.0253906 9.2675781 L 1.7246094 9.9824219 L 7.5 4.3242188 L 13.275391 9.9824219 L 13.974609 9.2675781 L 7.5 2.9257812 z"/></svg></div></a>
+</section>
+<div class=base-utility-outer-wrapper role=navigation>
+<div class=container>
+<div class=base-utility-support>
+<div class=back-to-top-wrapper>
+<a class='back-to-top smooth' href='#top'>
+<span class=hidden-xs>Back to top</span>
+<i class="ti-angle-up visible-xs"></i>
+</a>
+</div>
+<div class=link-trail-wrapper>
+<ul class='list-inline link-trail'>
+<li>
+<a href='/'>Home</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer role=contentInfo>
+<div class=container>
+<div class=footer-nav-subscribe-outer-wrapper>
+<div class=footer-nav-subscribe-control-support>
+<div class=footer-nav-wrapper>
+<div class=footer-nav-subscribe-support id=footer-nav-subscribe>
+<div class=connect-with-us-wrapper>
+<h5 class='footer-title  '>Connect with&nbsp;us</h5>
+<div itemscope itemtype='http://schema.org/Organization'>
+<address itemprop=address itemscope itemtype='http://schema.org/PostalAddress'>
+<span itemprop=streetAddress>PO Box 398000</span>
+<br>
+<span itemprop=addressLocality>Cleveland</span>
+,
+<span itemprop=addressRegion>OH</span>
+<span itemprop=postalCode>44139</span>
+</address>
+<p>
+<span class=contact-method-label>By Phone <i class=ti-phone></i></span>
+<span class=contact-method itemprop=telephone><span class=no-break>888-588-7884</span></span>
+</p>
+</div>
+<ul class=list-unstyled>
+<li>
+<a class=contact-method href='/about/contact-us/'>Get in Touch <i class=ti-edit></i></i> </a>
+</li>
+<li class=support-form-link>
+<a class=contact-method href='https://tflhelp.freshdesk.com/support/home'>Need Help? <i class=ti-lifebuoy></i></a>
+</li>
+<li>
+<a class=contact-method href='/stationfinder/' data-pjax=false target=_blank>Radio Station Finder <i class=ti-map-marker></i></a>
+</li>
+</ul>
+</div>
+<div class=welcome-wrapper>
+<h5 class='footer-title   collapsed' data-target='#welcome-list' data-toggle=collapse>
+Welcome
+<span class=caret></span>
+</h5>
+<ul class='list-unstyled collapse' id=welcome-list>
+<li>
+<a href='/about/our-mission/'>Our Mission</a>
+</li>
+<li>
+<a href='/about/frequently-asked-questions/'>FAQs</a>
+</li>
+<li>
+<a href='/about/about-alistair-begg/'>Alistair Begg</a>
+</li>
+<li><a href='/thestory' data-pjax=false target=_blank>Follow Christ</a></li>
+<li><a href='/thestory#wherestart' data-pjax=false target=_blank>Where Do I Start?</a></li>
+</ul>
+</div>
+<div class='clearfix visible-xs visible-sm'></div>
+<div class=our-resources-wrapper>
+<h5 class='footer-title   collapsed' data-target='#our-resources-list' data-toggle=collapse>
+Our Resources
+<span class=caret></span>
+</h5>
+<ul class='list-unstyled collapse' id=our-resources-list>
+<li><a href='http://blog.truthforlife.org/'>Blog</a></li>
+<li><a href='/resources/sermon/'>Sermon Archive</a></li>
+<li><a href='/resources/series/'>Series Archive</a></li>
+<li><a href="/topics/">Topics</a></li>
+<li><a href='/devotionals/alistair-begg/archive/'>Alistair Begg Devotionals</a></li>
+<li><a href='/devotionals/spurgeon/'>C. H. Spurgeon Devotionals</a></li>
+<li><a href='/syndicate/request/' data-pjax=false target=_blank>Add Devotional to Your Website</a></li>
+<li><a href='/bible'>Bible</a></li>
+<li><a href="/subscribe">Connect with TFL</a></li>
+<li><a href="http://blog.truthforlife.org/books-by-alistair-begg">Books by Alistair Begg</a></li>
+</ul>
+</div>
+<div class=donate-wrapper>
+<h5 class='footer-title   collapsed' data-target='#donate-list' data-toggle=collapse>
+Donate
+<span class=caret></span>
+</h5>
+<ul class='list-unstyled collapse' id=donate-list>
+<li>
+<a class=noplayer href='/donate/'>Donate Online</a>
+</li>
+<li>
+<a href='/donate/stewardship/'>Stewardship</a>
+</li>
+<li>
+<a href='/donate/ways-give/'>Ways to Give</a>
+</li>
+<li>
+<li><a class=noplayer href='/become-a-truthpartner/'>Become a Truthpartner</a></li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=subscription-form-wrapper id=email_subscription_wrapper>
+<h5 class=footer-title>Insights Delivered to Your&nbsp;Inbox</h5>
+<div id=HSFooter></div>
+<div class=create-account-message>
+<p>Thank you for subscribing.</p>
+<p>
+Create a free account to manage your subscriptions, track your listening progress, and build a listening library of your favorite messages.
+</p>
+<div class=create-account-btn-wrapper>
+<a href="/account/register">
+<button class=create-account-btn>Create Account</button>
+</a>
+<a href="/account/login">
+<button class=sign-in-btn>Sign In</button>
+</a>
+</div>
+</div>
+<script charset=utf-8 type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>hbspt.forms.create({portalId:'331596',formId:'bd7e5f48-f0b4-4b7d-bda7-95342fdb356a',css:'',target:"#HSFooter",onFormSubmitted:function($form){var footer=$('footer');footer.find('.create-account-message').addClass('footer');footer.find('.submitted-message p').replaceWith($('.create-account-message.footer'));$('.create-account-message.footer').show();}});</script>
+</div>
+</div>
+</div>
+<div class=legal-social-outer-wrapper>
+<div class=legal-social-support>
+<div class=legal-wrapper>
+<p>Truth For Life is the teaching ministry of Alistair Begg and is committed to teaching the Bible with clarity and relevance so that unbelievers will be converted, believers will be established, and local churches will be strengthened.</p>
+<p>
+Truth For Life is a qualified 501(c)(3) tax-exempt organization.
+</p>
+</div>
+<div class=social-wrapper>
+<ul class='list-inline social-media-icons'>
+<li class=twitter>
+<a href='http://www.twitter.com/truthforlife' title=Twitter>
+<i class=ti-twitter></i>
+</a>
+</li>
+<li class=facebook>
+<a href='http://www.facebook.com/truthforlife' title=Facebook>
+<i class=ti-facebook></i>
+</a>
+</li>
+<li class=youtube>
+<a href='https://www.youtube.com/user/truthforlife1/' title=YouTube>
+<i class=ti-youtube></i>
+</a>
+</li>
+<li class=instagram>
+<a href='http://instagram.com/alistair_begg_truthforlife' title=Instagram>
+<i class=ti-instagram></i>
+</a>
+</li>
+<li class=tiktok>
+<a href='https://www.tiktok.com/@truthforlife' title=TikTok>
+<img src="/static/images/responsive/icon-social-tiktok.svg"/>
+</a>
+</li>
+<li class=rss>
+<a href='/subscribe/#mobile' title="More channels&hellip;">
+<i class=ti-rss></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='wrapper copyright-support'>
+<div class=copyright-wrapper>
+<p>
+&copy; 1994 - 2023 Truth For Life. All Rights Reserved.
+<a href='/about/policies/'>Policies</a>
+<span class=pipe>|</span>
+<a href='/sitemap/'>Site Map</a>
+</p>
+</div>
+<div class=footer-logo-wrapper>
+<a class=footer-logo href='/'>
+Truth For Life
+</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
+<script src="/static/js/responsive/lib/mediaelement/mediaelement-and-player.max.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/django/dist/app.js.faef00d0eb34c7dbba75.js" async defer></script>
+<script type='text/javascript'>window.tfl=window.tfl||{};</script>
+<script>function starttfl(){if(typeof modalmessage=='function'){modalmessage();}if(typeof notificationmessage=='function'){notificationmessage();}}window.onload=starttfl;$(":checkbox").on('click',function(){$(this).parent().toggleClass("checked");});$('#tp_premium input[type=radio]').filter(':checked').each(function(index){$(this).parent().addClass("checked11");});$('input[type=radio]').filter(':checked').each(function(index){$(this).click();$(this).parent().addClass("checked11");});var $radioButtons=$('input[type="radio"]');$radioButtons.click(function(){$radioButtons.each(function(){$(this).parent().toggleClass('checked11',this.checked);});});</script>
+<script>$("a[href*='blog.truthforlife.org']").attr('target','_blank');</script>
+<script>$('body').ready(function(){});</script>
+<script>var urlPage,urlSharable;urlPage=encodeURIComponent(document.location.href.split("&_pjax=%23site-wrapper").join(""));urlSharable='http://twitter.com/intent/tweet?text='+document.title.replace('|','')+'+'+urlPage;document.getElementById('twitter_share').setAttribute('href',urlSharable);urlSharable="http://www.facebook.com/sharer/sharer.php?title="+document.title+'&u='+urlPage;document.getElementById('facebook_share').setAttribute('href',urlSharable);urlSharable="mailto:username@example.com?subject="+document.title+"&body="+urlPage;document.getElementById('email_share').setAttribute('href',urlSharable);var jumpTop=document.getElementById("jump-top");var myJumpTop=function(){var y=window.scrollY;if(y>=300){jumpTop.className="hidden-print show-me";}else{jumpTop.className="hidden-print hide-me";}};window.addEventListener("scroll",myJumpTop);var postHeader=document.getElementById("post-header-follow");var myScrollFunc=function(){var y=window.scrollY;if(y>=800){postHeader.className="sticky-header show-me"}else{postHeader.className="sticky-header hide-me"}};window.addEventListener("scroll",myScrollFunc);</script>
+<script>$(document).ready(function($){});</script>
+<script></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+<script type="text/javascript">FreshWidget.init("",{"queryString":"&widgetType=popup&searchArea=no","utf8":"✓","widgetType":"popup","buttonType":"text","buttonText":"Support","buttonColor":"white","buttonBg":"#7F7168","alignment":"2","offset":"235px","formHeight":"500px","url":"https://tflhelp.freshdesk.com"});</script>
+</div>
+</body>
+</html>

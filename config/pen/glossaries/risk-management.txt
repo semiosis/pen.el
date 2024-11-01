@@ -1,0 +1,14 @@
+Failure Modes & Effects Analysis
+FMEA
+    Risk management tool that identifies and
+    quantifies the influence of potential
+    failures in a process. FMEA analyzes
+    potential failures using three criteria:
+    1   Occurrence (failure cause and frequency)
+    2   Severity (impact of the failure)
+    3   Detection (likelihood of failure detection)
+
+    Once assessed, prioritized failures are
+    addressed with mistake-proofing for
+    preventable failures and contingency plans
+    for unpreventable risks.

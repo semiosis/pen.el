@@ -1,0 +1,5 @@
+What is a type system? What is a type class?
+
+A type system is a set of rules governing the types of data that can be processed in a particular programming language. A type class is a set of functions that can manipulate types.
+
+In Haskell, a type system consists of a large number of rules that govern type manipulation, including booleans, integers, textual data, and even types of data that are more complicated than the standard types, such as the type of finite maps, which is a type class.

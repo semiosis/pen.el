@@ -1,0 +1,7 @@
+/git/
+
+git clone git://github.com/rking/sed-script.git
+is the same as
+
+$ git clone git://github.com/rking/sed-script.git
+This script runs on

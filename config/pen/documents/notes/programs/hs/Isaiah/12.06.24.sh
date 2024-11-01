@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Isaiah" "1:19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Isaiah" "11:3-6" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Isaiah" "11:3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Isaiah" "11:3-6" "#" "<==" "zsh"
+cd /root/notes;  "Isaiah" "40:31" "#" "<==" "zsh"

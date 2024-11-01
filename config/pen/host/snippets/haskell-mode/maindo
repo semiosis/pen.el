@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: maindo
+# group: main
+# key: maindo
+# --
+main :: IO ()
+main = do
+{- handle <- openFile "/home/shane/notes2018/ws/nlp-natural-language-processing/data/enable1.txt" ReadMode -}
+handle <- openFile "/home/shane/notes2018/ws/haskell/scratch/count-words.hs" ReadMode
+contents <- hGetContents handle
+putStrLn ("There are " ++ show (length (lines contents)) ++ " lines.")
+putStrLn ("There are " ++ show (length (words contents)) ++ " words.")
+hClose handle

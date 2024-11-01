@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "1" "Samuel" "15:22-23" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Samuel" "15:22-23" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Peter" "4:19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Peter" "3:17-22" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Peter" "2:20" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Peter" "3:17-19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Peter" "3:17-18" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Peter" "2:22" "#" "<==" "zsh"

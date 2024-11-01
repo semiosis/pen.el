@@ -1,0 +1,165 @@
+# When debug is on, try is disabled, and all errors throw an exception
+debug: on
+
+# Setting sh-update to on would disable caching/memoization
+sh-update: off
+
+# In future, this would disable the use of non-libre models
+libre-only: off
+
+# Always load imaginary websites instead of real ones
+lg-always: off
+
+# TabNine on/off (it's dodgy sending 3000/1000 chars context)
+tabnine: off
+
+truecolor: on
+
+# Default 0
+helm_async_delay: 0
+
+# This proxy points to itself
+# proxy: "localhost:9707"
+
+# These variables are used by pen.el to
+# automatically tailor the experience towards
+# you.
+fav-world-language: English
+fav-programming-language: Emacs Lisp
+
+use-human-engine-if-disconnected: on
+
+# Automatically jack into cider when editing clojure
+cider: on
+
+## This overrides the language model / engine used for prompting functions
+## However, if a .prompt file specifies
+## force-engine, then this override will not
+## override.
+force-engine: Human
+#force-engine: OpenAI Codex
+# force-engine: OpenAI GPT-4
+# force-engine: OpenAI Davinci
+# force-engine: Offline
+
+# Default engine is used as a last resort when selecting an engine
+default-engine: Human
+# default-engine: OpenAI Davinci
+# default-engine: OpenAI Codex
+
+# This 
+force-few-completions: off
+
+# This prevents multiple requests.
+# Under normal circumstances, pen.el might
+# perform multiple requests/generations to
+# get to the desired quota for a prompt
+# function. Under the hood, engines may have
+# a max number of generations they can provide
+# for a single request. force-single-
+# collation ensures that only one request
+# happens.
+force-single-collation: off
+
+# Force one is more extreme. It also sets
+# the number of completions. So you get only
+# one generation/completion per request, and only one request.
+force-one: off
+
+# This allows you to set the number of collations.
+force-n-collate: ~
+force-n-completions: ~
+# force-temperature: ~
+
+# Ink.el adds text properties to the emacs buffer when text has been generated.
+disable-ink: off
+
+# To limit stdin for prompt functions
+# This is fairly important.
+max-input-char-length: 1000
+
+# Disable prompt force-engine
+# This can be used to truly force an engine, because individual .prompts may
+# override the global force-engine custom variable with its own force-engine.
+prompt-force-engine-disabled: off
+
+# This is a heuristic used within Pen.el to make select cost-effiient options.
+cost-efficient: on
+
+# This generates alttext for the LookingGlass web browser
+describe-images: on
+
+enable-logprobs: on
+# force-logprobs: 10
+default-logprobs: 10
+
+# This is a pool of emacs workers used for prompting
+# n-workers: 20
+n-workers: 10
+# The minimum number of workers for apostrophe to work correctly is 2
+n-workers: 1
+
+# This may also be set with `pen -nto`
+# no-timeout: on
+
+timeout: 15
+
+# lm-complete-generic is parallelised for increased prompting throughput
+n-simultaneous-requests: 2
+
+# Default engines are used when the engine resolver (all fallbacks) fail
+default-engines:
+- text-to-text: OpenAI Codex
+- image-to-text: AlephAlpha EUTranMM
+# - text-to-image: OpenAI Dall-E
+- text-to-image: ruDALL-E Malevich (XL)
+
+# Here's a way to disable engines. This
+# might be useful if you have a bad API key
+# for example, and just want to disable the
+# engine.
+# Pattern match on the names
+# Disabled prompts happens immediately
+
+disabled-prompts:
+- "Given an image.*"
+
+# Disabled engines happens a little bit later because it waits for the final engine
+# It may fall back to others.
+disabled-engines:
+- "AlephAlpha.*"
+disabled-models:
+
+lsp: on
+lsp_lens: on
+# ethereum: on
+notify: on
+
+# text_high_contrast: on
+text_high_contrast: on
+
+# This sets up an ssh master to the host and gives permission for scripts such as git
+# to use the host
+# host-ssh-master: on
+host-ssh-master: off
+
+volumes:
+- /home/shane/source/git
+- /home/shane
+
+ask_arbitrate_lsp: off
+ask_log_lsp: on
+ask_view_lsp: on
+
+# node_version: "v12.14.1"
+# node_version: "v15.12.0"
+node_version: "v16.17.0"
+
+lichess_token: "lip_lpcQRjjFZKMSBkUkZlkH"
+
+black_and_white: on
+
+# default_bible_module: "NASB"
+# default_bible_version: "nasb"
+default_bible_module: "ESV"
+default_bible_version: "esv"

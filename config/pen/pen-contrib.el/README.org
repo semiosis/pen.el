@@ -1,0 +1,34 @@
+* Pen.el contrib library
+
+Integration of =pen.el= with other emacs packages.
+
+I have kept this separated to help distinguish
+what is core from what is less important a
+part of =pen.el=.
+
+[[./wizard7.png]]
+
+** =pen-org-brain=
+I combine GPT-3 with org-brain to expand on topics, suggesting subtopics and providing an interactive tutor for any topic.
+
+- Subtopic generation
+- explore arbitrary topics with =pen.el=
+- automatically generating subtopics
+- invoke the GPT-3 tutor to answer questions within that context
+
+[[https://mullikine.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/][GPT-3 mind maps with an AI tutor for any topic // Bodacious Blog]]
+
+** =pen-org-roam=
+Aim to be a loom-like library for emacs.
+See "https://github.com/socketteer/loom".
+
+** =pen-handle=
+Make GPT-3 handlers common functions such as showing documentation.
+
+https://gitlab.com/jjzmajic/handle
+
+** =pen-nlsh=
+See "https://mullikine.github.io/posts/nlsh-natural-language-shell/"
+
+** =pen-nano=
+Simplify the editing experience so emacs novices can use =pen.el=.

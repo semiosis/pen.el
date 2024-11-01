@@ -1,0 +1,392 @@
+binary log
+log(2)
+
+reality
+Θ
+
+estimate
+ω
+
+entropy
+entropy of a random variable
+    The average level of "information",
+    "surprise", or "uncertainty" inherent in
+    the variable's possible outcomes.
+
+    The uncertainty associated with a
+    probability distribution.
+
+Data
+    Raw, unorganized facts that need to be
+    processed.
+    
+    Data can be something simple and seemingly
+    random and useless until it is organized.
+    
+Information
+    When data is processed, organized,
+    structured or presented in a given context
+    so as to make it useful, it is called
+    information.
+
+bit
+shannon
+Sh
+    A unit of information and of entropy
+    defined by IEC 80000-13.
+
+    One shannon is the information content of
+    an event occurring when its probability is
+    1⁄2.
+
+    It is also the entropy of a system with
+    two equally probable states.
+
+    If a message is made of a sequence of a
+    given number of bits, with all possible
+    bit strings being equally likely, the
+    message's information content expressed in
+    shannons is equal to the number of bits in
+    the sequence.
+
+feature selection
+variable selection
+attribute selection
+variable subset selection
+    [machine learning]
+
+    The process of selecting a subset of
+    relevant features (variables, predictors)
+    for use in model construction.
+
+    egr variable selection machine learning
+
+information gain
+mutual information
+MI
+    ...of two random variables.
+    
+    [dimensionless quantity]
+
+    One of many quantities that measures how
+    much one random variable tells us about
+    another.
+
+    Calculates the statistical dependence
+    between two variables.
+
+    Measures the amount of information one can
+    obtain from one random variable given
+    another.
+
+    The name given to IG when applied to
+    variable/feature selection.
+    
+    It is a dimensionless quantity with
+    (generally) units of bits, and can be
+    thought of as the reduction in uncertainty
+    about one random variable given knowledge
+    of another.
+
+    A measure of the mutual dependence between
+    the two variables.
+    
+    More specifically, it quantifies the
+    "amount of information" (in units such as
+    shannons, commonly called bits) obtained
+    about one random variable through
+    observing the other random variable.
+    
+    The concept of mutual information is
+    intricately linked to that of entropy of a
+    random variable, a fundamental notion in
+    information theory that quantifies the
+    expected "amount of information" held in a
+    random variable.
+
+information content
+self-information
+surprisal
+    [of a random variable or signal]
+
+    The amount of information gained when it
+    is sampled.
+
+Kullback-Leibler Divergence
+KL Divergence
+KL-Divergence
+relative entropy
+    This is a great intro:
+    https://www.youtube.com/watch?v=pH9xkCK4ATc
+
+    A more thorough explanation:
+    https://youtu.be/ErfnhcEV1O8?t=479
+
+    For a perfect model emulating reality, the
+    KL divergence would give precisely 0.
+
+    A diff of probability distributions (or
+    neural networks).
+
+    The amount by which the cross-entropy
+    exceeds the entropy.
+
+    cross-entropy is equal to the entropy plus
+    the KL divergence.
+
+    KL divergence = D_KL(p||q) = H(p,q) - H(p)
+        Equal to the cross-entropy H(p,q)
+        minus the entropy H(p).
+
+    Example:
+            cross-entropy = 4.58 bits,
+        -   entropy = 2.23 bits,
+        ------------------------------
+        =   KL Divergence = 2.35 bits.
+
+    A measure of how one probability
+    distribution is different from a second,
+    reference probability distribution.
+    
+    Applications include characterizing the
+    relative (Shannon) entropy in information
+    systems, randomness in continuous time-
+    series, and information gain when
+    comparing statistical models of inference.
+
+    Code
+        If our predictions are perfect, that
+        is the predicted distribution is equal
+        to the true distribution, then the
+        cross-entropy is simply equal to the
+        entropy.
+        
+        But if the distributions differ, then
+        the cross-entropy will be greater than
+        the entropy by some number of bits.
+        
+        This amount by which the cross-entropy
+        exceeds the entropy is called the
+        relative entropy, or more commonly the
+        KL Divergence.
+
+cross entropy
+cross-entropy
+    [#information theory]
+
+    [[https://www.youtube.com/watch?v=tRsSi_sqXjI][Cross Entropy - YouTube]]
+    [[https://www.youtube.com/watch?v=ErfnhcEV1O8][A Short Introduction to Entropy, Cross-Entropy and KL-Divergence - YouTube]]
+
+    readsubs "https://www.youtube.com/watch?v=ErfnhcEV1O8" | v +/"average message length"
+
+    The average message length.
+
+    For example, if the weather station
+    encodes each of the 8 possible options
+    using a 3-bit code like this then every
+    message will have 3 bits, so the average
+    message length will of course be 3 bits,
+    and that’s the cross-entropy.
+
+    [#probability]
+    [#deep learning]
+
+    This is the same thing as the information
+    theory definition above, but from the
+    perspective of probability.
+
+    [[https://www.youtube.com/watch?v=tRsSi_sqXjI][Cross Entropy - YouTube]]
+
+    Takes in as input the softmax vector and a
+    'target' probability distribution.
+
+    Compare 2 vectors
+    - one that comes out of your classifiers
+      and contains the probabilities of your
+      classes, and
+    - the one-hot encoded vector that
+      corresponds to your labels
+
+    Measure distance between 2 probability vectors.
+
+    D(S,L) = - Σ_i . L_i . log(S_i)
+    - distance (D)
+    - labels (L)
+      One-hot encoded labels.
+      A probability vector.
+    - distributions / softmax (S) (S(y))
+      A probability vector.
+    - logit (y)
+
+    Not symmetric.
+    D(S,L) ≠ D(L,S)
+
+    The operation of cross entropy is not a
+    symmetric operation because there is a
+    logarithm operation.
+
+cross entropy loss
+    (between two probability distributions)
+    (and over the same underlying set of events)
+
+    Higher loss is bad.
+
+    Measures the performance of a
+    classification model whose output is a
+    probability value between 0 and 1.
+
+    Measures the average number of bits needed
+    to identify an event from the set.
+
+Shannon coding
+    A lossless data compression technique for
+    constructing a prefix code based on a set
+    of symbols and their probabilities
+    (estimated or measured).
+
+    It is suboptimal in the sense that it does
+    not achieve the lowest possible expected
+    code word length like Huffman coding does,
+    and never better but sometimes equal to
+    the Shannon-Fano coding.
+
+Information
+(me) Answers
+    I(x) = -log_2(P(x))
+
+    A difference that makes a diffence.
+
+Information entropy
+(me) Questions
+    [concept]
+
+    The information (or uncertainty, depending
+    on perspective) of a model.
+
+    (me) It's radiation from a source of data.
+
+    The average rate at which information is
+    produced by a stochastic source of data.
+
+    The amount of uncertainty involved in the
+    value of a random variable or the outcome
+    of a random process.
+
+    Example
+    - Identifying the outcome of a fair coin
+      flip (with two equally likely outcomes)
+      provides less information (lower
+      entropy) than specifying the outcome
+      from a roll of a die (with six equally
+      likely outcomes).
+
+    Tells how much information there is in
+    an event.
+
+    In general, the more uncertain or random
+    the event is, the more information it will
+    contain.
+
+    Information is a decrease in uncertainty
+    or entropy.
+
+    As questions increase, entropy increases
+    and information decreases.
+
+    As answers increase, entropy decreases and
+    information increases.
+
+Information entropy
+    The average rate at which information is
+    produced by a stochastic source of data.
+
+high signal-to-noise ratio
+    The shortened formats cut out the fluff
+    and get right to the big ideas.
+
+Shannon entropy
+Shannon entropy equation
+    An estimation of the average minimum
+    number of bits needed to encode a string
+    of symbols, based on the frequency of the
+    symbols.
+
+    Equation:
+        π is the probability of a given
+        symbol.
+
+    If a random process occurs and produces M
+    outcomes with probabilities p1,...,pM,
+    respectively and if X is a variable
+    associated with the process then the
+    shannon entropy is:
+               M                M
+        H(X) = Σ  p(x).I(x) =  -Σ  p(x)log_2(p(x))
+              x=1              x=1
+
+Stochastic
+Random
+    Originally came from Greek στόχος
+    (stokhos), meaning 'aim, guess'.
+
+log probability
+    Negative log base 2 of the probability.
+
+    This is an important concept. It's used
+    all the time.
+
+    https://en.wikipedia.org/wiki/Log_probability
+
+Joint surprisal
+    Equal to the sum of the surprisals.
+
+Damerau–Levenshtein distance
+    A string metric for measuring the edit
+    distance between two sequences.
+    
+    Informally, the Damerau–Levenshtein
+    distance between two words is the minimum
+    number of operations (consisting of
+    insertions, deletions or substitutions of
+    a single character, or transposition of
+    two adjacent characters) required to
+    change one word into the other.
+    
+    The Damerau–Levenshtein distance differs
+    from the classical Levenshtein distance by
+    including transpositions among its
+    allowable operations in addition to the
+    three classical single-character edit
+    operations (insertions, deletions and
+    substitutions).
+
+Levenshtein distance
+    In information theory, linguistics, and
+    CS, the Levenshtein distance is a string
+    metric for measuring the difference
+    between two sequences.
+    
+    Informally, the Levenshtein distance
+    between two words is the minimum number of
+    single- character edits (insertions,
+    deletions or substitutions) required to
+    change one word into the other.
+    
+    It is named after the Soviet mathematician
+    Vladimir Levenshtein, who considered this
+    distance in 1965.Levenshtein distance may
+    also be referred to as edit distance,
+    although that term may also denote a
+    larger family of distance metrics known
+    collectively as edit distance.
+    
+    It is closely related to pairwise string
+    alignments.
+
+Kolmogorov complexity
+    [#algorithmic information theory]
+
+    The Kolmogorov complexity of an object,
+    such as a piece of text, is the length of
+    a shortest computer program that produces
+    the object as output.

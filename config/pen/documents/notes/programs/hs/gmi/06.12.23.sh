@@ -1,0 +1,8 @@
+cd /root/.pen/Mail;  "gmi" "init" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "init" "mullikine@gmail.com" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "set" "--ignore-tags-remote" "" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "pull" "#" "<==" "zsh"
+cd /root;  "gmi" "sync" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "sync" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "sync" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "sync" "#" "<==" "zsh"

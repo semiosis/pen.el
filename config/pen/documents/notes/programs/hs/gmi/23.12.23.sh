@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.emacs.d/host/pen.el/src;  "gmi" "pull" "#" "<==" "spin"

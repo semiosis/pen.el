@@ -1,0 +1,5 @@
+cd /;  "host-script" "-sn" "acpi" "-b" "#" "<==" "withopts"
+cd /;  "host-script" "-sn" "acpi" "-b" "#" "<==" "withopts"
+cd /;  "host-script" "-sn" "acpi" "-b" "#" "<==" "withopts"
+cd /;  "host-script" "-srcp" "-sn" "nmtui" "#" "<==" "withopts"
+cd /;  "host-script" "-sn" "i" "gw" "#" "<==" "withopts"

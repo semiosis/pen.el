@@ -1,0 +1,6 @@
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=8XY2yiVjAKQ" "#" "<==" "pen-ci"
+cd /tmp/lsp-java-installMNJLgo;  "wget" "https://repo.maven.apache.org/maven2/io/takari/maven-wrapper/0.4.0/maven-wrapper-0.4.0.jar" "-O" "/tmp/lsp-java-installMNJLgo/.mvn/wrapper/maven-wrapper.jar" "#" "<==" "sh"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=7pnc9pTgwyQ" "#" "<==" "pen-ci"
+cd /root/dump/programs;  "wget" "https://cran.r-project.org/src/base/R-4/R-4.3.1.tar.gz" "#" "<==" "zsh"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=aUPSZBm1OjY" "#" "<==" "pen-ci"
+cd ;  "wget" "https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb" "#" "<==" "zsh"

@@ -1,0 +1,31 @@
+
+The code snippet below is an example of a package that provides a very useful
+feature, and it is very simple to use.
+
+import "package_name"
+###
+AI: Maybe you want to know about some other packages?
+###
+Human: Yes please.
+###
+AI: Here is another code snippet that demonstrates how to use another package.
+We will refer to this as the "head" package.
+
+import "head_package_name"
+head(
+  [1, 2, 3, 4, 5],
+  square
+)
+###
+AI: Maybe you want to learn about another package?
+###
+Human: Sure.
+###
+AI: This is another code snippet that demonstrates another package.
+We will refer to this as the "tail" package.
+
+import "tail_package_name"
+tail(
+  [1, 2, 3, 4, 5]
+)
+###

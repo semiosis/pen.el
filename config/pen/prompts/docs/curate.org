@@ -1,0 +1,14 @@
+* Curate frm the following original sources
+- *Generate* prompt definition files?
+  - What type of workflow can result in this?
+
+- https://github.com/wgryc/gpt3-prompts/blob/master/analogies.md
+- https://www.notion.so/OpenAI-API-Community-Examples-ce088785e541498698c1895798e67664
+- https://github.com/maraoz/gpt-scrolls/tree/master/scrolls/scrolls
+- http://gptprompts.wikidot.com/
+- https://beta.openai.com/examples/default-keywords
+- https://prompts.ai/
+  - Only a few in this playground
+- https://gptprompts.org/
+  - A rich collection here
+  - collaboration potential

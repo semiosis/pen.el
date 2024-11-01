@@ -1,0 +1,5 @@
+cd /tmp;  "ead" "-j" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "-f" "\"H-" "#" "<==" "zsh"
+cd /usr/local/share/emacs/site-lisp;  "ead" "-f" "\\bnotmuch-tag-face\\b" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "NO_AUTO_START" "#" "<==" "ead"
+cd /root/.pen/documents/notes/ws;  "ead" "-i" "zandiel" "#" "<==" "ead"

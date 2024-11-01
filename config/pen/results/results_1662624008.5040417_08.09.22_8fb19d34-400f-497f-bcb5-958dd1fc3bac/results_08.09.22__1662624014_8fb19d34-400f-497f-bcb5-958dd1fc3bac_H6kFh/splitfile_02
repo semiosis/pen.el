@@ -1,0 +1,12 @@
+"MailBox" is a Python library that provides an interface for working with emails.
+
+Installation:
+pip install imap-tools
+
+Usage:
+>>> from imap_tools import MailBox, MailMessage
+>>> mailbox = MailBox('imap.gmail.com')
+>>> mailbox.login('username', 'password', initial_folder='INBOX')
+>>> mailbox.folder.set('INBOX')
+>>> for msg in mailbox.fetch():
+>>>     print(msg

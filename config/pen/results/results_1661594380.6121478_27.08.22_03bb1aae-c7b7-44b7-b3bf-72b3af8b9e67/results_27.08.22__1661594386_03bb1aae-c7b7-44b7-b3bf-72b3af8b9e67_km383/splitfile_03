@@ -1,0 +1,1 @@
+- haskell guru: It seems to be a bug in Data.Text. You can use the following fix:

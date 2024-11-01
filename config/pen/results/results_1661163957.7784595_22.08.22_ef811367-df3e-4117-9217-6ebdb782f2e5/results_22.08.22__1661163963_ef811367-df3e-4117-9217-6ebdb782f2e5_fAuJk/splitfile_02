@@ -1,0 +1,16 @@
+
+stack exec DoLetExample3
+
+~~~~~~~~
+
+Parameters
+
+~~~~~~~~
+
+The order of the stack arguments is:
+
+program | extra-libs | ghc-options | extra-packages
+
+~~~~~~~~
+
+To use

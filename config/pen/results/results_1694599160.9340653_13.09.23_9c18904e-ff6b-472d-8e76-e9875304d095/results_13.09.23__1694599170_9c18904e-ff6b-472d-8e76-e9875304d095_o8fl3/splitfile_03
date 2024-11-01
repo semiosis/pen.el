@@ -1,0 +1,15 @@
+"undef" is a special Perl variable that is used to indicate a null value.
+
+It is used in the following way:
+
+my $undef = undef;
+
+This is a variable that has not been assigned a value.
+
+In the following example, the undef variable is used to indicate a null value:
+
+my $undef = undef;
+
+This is a variable that has not been assigned a value.
+
+In the following example, the undef variable

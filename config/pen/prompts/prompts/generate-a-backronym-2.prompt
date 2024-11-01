@@ -1,0 +1,47 @@
+task: "Generate a backronym"
+tags: prose nlp-task fun
+aliases:
+- backronym
+doc: "Given a word, generate an backronym for it"
+notes:
+- This prompt is a bit big for my liking. Too many tuning shots.
+prompt-version: 1
+prompt: |+
+    The AI is super helpful and funny, and will invent acronyms which match each letter.
+    It is important to avoid generating alternate meanings which are sexual, drug-related, profane, abusive, or sad in nature. 
+    It is important that the first letter of each output word matches the individual letters in the input acronym.
+    It is important that the output sentence is intelligible and the words are real words.
+    It is very important that the output sentence considers the context provided.
+    <delim>
+    Input: [P][O][O][P]
+    Context: A system or application that just barely works, and is a pain to maintain and extend.
+    Output: [P]ainfully [O]utlandish [O]verpriced [P]roject
+    <delim>
+    Input: [T][A][R][D][I][S]
+    Context: A system for compressing text documents, where tokens are turned into images before compression.
+    Output: [T]ext [A]ctually [R]andomly [D]istorted [I]mage [S]equences
+    <delim>
+    Input: [Y][A][D][A][D][A]
+    Context: Language learning app used for basics or mixed practice by artificial intelligent systems.
+    Output: [Y]ou [A]dvanced [D]ifficulty [A]udio [D]ownload [A]udio 
+    <delim>
+    Input: <bx:acronym>
+    Context: <context>
+    Output: <:pp>
+engine: "OpenAI Davinci"
+temperature: 0.2
+max-generated-tokens: 100
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "acronym"
+- "context"
+examples:
+- "boysenberries"
+info: on
+completion: off
+insertion: off
+external-related:
+- "https://docs.google.com/spreadsheets/d/1EuciDyKqFg2CIoQS89tF238oGtJq8a4mRx8kV9eA1Lc/edit#gid=2011839893"

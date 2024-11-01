@@ -1,0 +1,6 @@
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-45-generic linux-headers-4.15.0-46-generic
+  linux

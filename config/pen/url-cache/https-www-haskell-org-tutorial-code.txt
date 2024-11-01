@@ -1,0 +1,44 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:07:46 GMT
+Content-Type: text/html
+Content-Length: 1380
+Last-Modified: Sun, 17 Feb 2019 03:57:23 GMT
+Connection: keep-alive
+ETag: "5c68dba3-564"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+<title> Haskell code for the Gentle Intro 98 </title>
+<body bgcolor="#ffffff">
+<h3> Haskell code for the Gentle Intro 98 </h3>
+
+<ul>
+<li> <a href="part1.lhs">Section 2</a>
+<li> <a href="part2.lhs">Section 2.1</a>
+<li> <a href="part3.lhs">Section 2.1</a>
+<li> <a href="part4.lhs">Section 2.3</a>
+<li> <a href="part5.lhs">Sections 2.4, 2.5, 2.6</a>
+<li> <a href="part6.lhs">Sections 2.5.1, 2.5.2</a>
+<li> <a href="part7.lhs">Sections 3, 3.1</a>
+<li> <a href="part8.lhs">Sections 3.2, 3.2.1, 3.2.2</a>
+<li> <a href="part9.lhs">Sections 3.3, 3.4, 3.5</a>
+<li> <a href="part10.lhs">Sections 4, 4.1, 4.2</a>
+<li> <a href="part11.lhs">Sections 4.3, 4.4, 4.5, 4.6</a>
+<li> <a href="part12.lhs">Section 5</a>
+<li> <a href="part13.lhs">Section 6.1, 6.2, 6.3</a>
+<li> <a href="part14.lhs">Section 7, 7.1, 7.2</a>
+<li> <a href="part15.lhs">Section 7.3, 7.3, 7.5 </a>
+<li> <a href="part16.lhs">Section 8, 8.1, 8.2, 8.3</a>
+<li> <a href="part17.lhs">Section 8.4</a>
+<li> <a href="part18.lhs">Sections 9, 9.1, 9.2, 9.3</a>
+<li> <a href="part19.lhs">Sections 10.1, 10.2, 10.3 </a>
+<li> <a href="part20.lhs">Section 10.4</a>
+<li> <a href="part21.lhs">Section 11</a>
+<li> <a href="part22.lhs">Section 11.1</a>
+<li> <a href="part23.lhs">Sections 11.2, 11.3</a>
+<li> <a href="part24.lhs">Sections 12, 12.1, 12.2, 12.3</a>
+<li> <a href="part25.lhs">Sections 13, 13.1, 13.2, 13.3, 13.4, 13.5</a>
+</ul>

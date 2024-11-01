@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: curry
+# group: fp
+# key: fp_c
+# --
+// this is a higher-order-function that returns a function
+func add(x int) func(y int) int {
+    // A function is returned here as closure
+    // variable x is obtained from the outer scope of this method and memorized in the closure
+    return func(y int) int {
+        return x + y
+    }
+}

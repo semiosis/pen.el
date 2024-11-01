@@ -1,0 +1,9 @@
+
+putStrLn "Enter a line of text for test 2:"
+getLine
+
+
+Output:
+Enter a line of text for test 1: HELLO
+Enter a line of text for test 2: HELLO
+HELLO

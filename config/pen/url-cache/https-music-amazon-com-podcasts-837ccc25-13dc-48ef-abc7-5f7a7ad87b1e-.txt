@@ -1,0 +1,181 @@
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Server
+Date: Fri, 05 Jan 2024 23:33:27 GMT
+x-amz-rid: 74MAAJNE4CANGW0TGTVH
+Set-Cookie: session-id=140-4115206-2680637; Domain=.amazon.com; Expires=Tue, 01 Jan 2036 08:00:01 GMT; Path=/; Secure
+Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01 Jan 2036 08:00:01 GMT; Path=/; Secure
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy-Report-Only: default-src https://*.amazon.com https://*.amazon.ca https://*.amazon.com.mx https://*.amazon.com.br https://*.amazon.de https://*.amazon.co.uk https://*.amazon.fr https://*.amazon.it https://*.amazon.es https://*.amazon.in https://*.amazon.co.jp https://*.amazon.com.au https://*.amazon.ae https://*.amazon.sa https://*.amazon.eg https://a1n4jjwgy1bvgg-ats.iot.eu-west-1.amazonaws.com https://cognito-identity.eu-west-1.amazonaws.com https://d1894xhml4amkr.cloudfront.net https://d1l04yptno92u8.cloudfront.net/ https://*.media-amazon.com https://*.ssl-images-amazon.com https://*.amazon-adsystem.com https://d5fx445wy2wpk.cloudfront.net https://dfqzuzzcqflbd.cloudfront.net https://album-art-storage-us.s3.amazonaws.com https://album-art-storage-eu.s3.amazonaws.com https://album-art-storage-fe.s3.amazonaws.com https://html5-tv-app.s3.amazonaws.com https://now-playing-screen.s3.amazonaws.com https://*.xp-assets.aiv-cdn.net; script-src https://*.amazon.com https://*.amazon.ca https://*.amazon.com.mx https://*.amazon.com.br https://*.amazon.de https://*.amazon.co.uk https://*.amazon.fr https://*.amazon.it https://*.amazon.es https://*.amazon.in https://*.amazon.co.jp https://*.amazon.com.au https://*.amazon.ae https://*.amazon.sa https://*.amazon.eg https://a1n4jjwgy1bvgg-ats.iot.eu-west-1.amazonaws.com https://cognito-identity.eu-west-1.amazonaws.com https://d1894xhml4amkr.cloudfront.net https://d1l04yptno92u8.cloudfront.net/ https://*.media-amazon.com https://*.ssl-images-amazon.com https://*.amazon-adsystem.com https://d5fx445wy2wpk.cloudfront.net https://dfqzuzzcqflbd.cloudfront.net https://album-art-storage-us.s3.amazonaws.com https://album-art-storage-eu.s3.amazonaws.com https://album-art-storage-fe.s3.amazonaws.com https://html5-tv-app.s3.amazonaws.com https://now-playing-screen.s3.amazonaws.com https://*.xp-assets.aiv-cdn.net 'unsafe-inline' 'unsafe-eval'; style-src https://*.amazon.com https://*.amazon.ca https://*.amazon.com.mx https://*.amazon.com.br https://*.amazon.de https://*.amazon.co.uk https://*.amazon.fr https://*.amazon.it https://*.amazon.es https://*.amazon.in https://*.amazon.co.jp https://*.amazon.com.au https://*.amazon.ae https://*.amazon.sa https://*.amazon.eg https://a1n4jjwgy1bvgg-ats.iot.eu-west-1.amazonaws.com https://cognito-identity.eu-west-1.amazonaws.com https://d1894xhml4amkr.cloudfront.net https://d1l04yptno92u8.cloudfront.net/ https://*.media-amazon.com https://*.ssl-images-amazon.com https://*.amazon-adsystem.com https://d5fx445wy2wpk.cloudfront.net https://dfqzuzzcqflbd.cloudfront.net https://album-art-storage-us.s3.amazonaws.com https://album-art-storage-eu.s3.amazonaws.com https://album-art-storage-fe.s3.amazonaws.com https://html5-tv-app.s3.amazonaws.com https://now-playing-screen.s3.amazonaws.com https://*.xp-assets.aiv-cdn.net 'unsafe-inline'; connect-src 'self' https://na.web.skill.music.a2z.com https://eu.web.skill.music.a2z.com  https://fe.web.skill.music.a2z.com https://qa-na.mesk.skill.music.a2z.com https://qa-eu.mesk.skill.music.a2z.com https://qa-fe.mesk.skill.music.a2z.com https://dev-na.mesk.skill.music.a2z.com https://dev-eu.mesk.skill.music.a2z.com https://dev-fe.mesk.skill.music.a2z.com https://d5fx445wy2wpk.cloudfront.net https://dfqzuzzcqflbd.cloudfront.net yplbec8hd1.execute-api.us-east-1.amazonaws.com m42pv1bdze.execute-api.us-east-1.amazonaws.com digprjsurvey.amazon.com digprjsurvey.amazon.eu digprjsurvey.amazon.co.jp; report-uri /1/batch/2/OE/mid=ATVPDKIKX0DER:sid=140-4115206-2680637:rid=74MAAJNE4CANGW0TGTVH:sn=music.amazon.com; media-src 'self' dfqzuzzcqflbd.cloudfront.net d4s1nbwjhj7ub.cloudfront.net d1sxtrhjut2dkc.cloudfront.net d11he2cfcxosio.cloudfront.net dawax2ualjfe6.cloudfront.net d27fhhmfpo9xye.cloudfront.net blob:
+X-UA-Compatible: IE=edge,chrome=1
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0
+Pragma: no-cache
+Expires: -1
+Strict-Transport-Security: max-age=47474747; includeSubDomains; preload
+Content-Language: en-US
+Vary: accept-encoding,Content-Type,Accept-Encoding,User-Agent
+X-Cache: Miss from cloudfront
+Via: 1.1 244671fab5d63fef93855221c4f22a38.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: AKL50-C1
+X-Amz-Cf-Id: EKMHOcQJl4DOcr0VaVj5aYEtnWIu1uJYsDrlj_43kFjApW8MydEBxg==
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+/>
+<meta name="theme-color" content="#0f1111" />
+<meta name="branch:deeplink:$deeplink_path" content="/podcasts/837ccc25-13dc-48ef-abc7-5f7a7ad87b1e/" />
+<link rel="icon" href="https://d5fx445wy2wpk.cloudfront.net/icons/amznMusic_favicon.png" type="image/ico">
+<link rel="shortcut icon" href="https://d5fx445wy2wpk.cloudfront.net/icons/amznMusic_favicon.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="https://d5fx445wy2wpk.cloudfront.net/icons/amznMusic_favicon.png" type="image/ico">
+
+
+
+<script>(function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})('cwr','c73f1fce-efce-4c7b-b19f-ead6f680d030','1.0.0','us-east-1','https://client.rum.us-east-1.amazonaws.com/1.14.0/cwr.js',{sessionSampleRate:0.1,guestRoleArn:'arn:aws:iam::214684643708:role/RUM-Monitor-us-east-1-214684643708-5263035285461-Unauth',identityPoolId:'us-east-1:018a4c59-8d92-488a-b147-cfc780123aa7',endpoint:'https://dataplane.rum.us-east-1.amazonaws.com',telemetries:["performance","errors","http"],allowCookies:true,enableXRay:false,disableAutoPageView:true});</script>
+
+
+<script type="text/javascript">
+    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking qrCode".split(" "), 0);
+    branch.init('key_live_pdcUWxIfdUCm8kSKTgqIjkhjFtp8Ogqf', { enableExtendedJourneysAssist: true }, function(err, data) {});
+    branch.disableTracking();
+</script>
+<script>
+    window.amznMusic = {
+        appConfig: {
+    "accessToken": "",
+    "accessTokenExpiresIn": "",
+    "customerId": "",
+    "deviceType": "A16ZV8BU3SN1N3",
+    "deviceId": "",
+    "displayLanguage": "en_US",
+    "faviconUrl": "https://d5fx445wy2wpk.cloudfront.net/icons/amznMusic_favicon.png",
+    "features": {
+        "isDogmatixIntegrationEnabled": true,
+        "isRnEdpWebEnabled": true,
+        "isRnAtcWebEnabled": false,
+        "isRnLiveHubWebEnabled": false,
+        "isRnAdpWebEnabled": false,
+        "isRnFlpWebEnabled": false
+    },
+    "marketplaceId": "ATVPDKIKX0DER",
+    "musicTerritory": "US",
+    "siteRegion": "NA",
+    "version": "1.0.13882.0",
+    "sessionId": "140-4115206-2680637",
+    "ipAddress": "125.236.160.146",
+    "csrf": {
+        "token": "VmykHxsVQABNcwJJTDTDJU3fX+bcpEWDZb4e05lecZA=",
+        "ts": "1704497607511",
+        "rnd": "612608598"
+    },
+    "metricsContext": {
+        "encodedAffiliateTags": "",
+        "referer": "",
+        "refMarker": ""
+    },
+    "isStarlightEnabled": true,
+    "weblabV2Enabled": false,
+    "isRetailLOPEnabled": true,
+    "isRetailCOPEnabled": true,
+    "isClientMetricsLambdaEnabled": false,
+    "isCloudWatchRumEnabled": true,
+    "isStarlightBauhausUIEnabled": true,
+    "isRedhoodPlusEnabled": true,
+    "isRedhoodPlusMetricsEnabled": true,
+    "isRedhoodSonicRushEnabled": true,
+    "isAnonymousFreeTierDialogEnabled": true,
+    "isAccentOutlineUpsellBadgeEnabled": true,
+    "isUhdEnabled": true,
+    "isRedhoodLocalStorageEnabled": true,
+    "isAndroidMShopBottomTabsAutoHideEnabled": false
+},
+        ssr: false,
+        isInContainerApp: true,
+    };
+</script>
+<link rel="preconnect" href="https://na.mesk.skill.music.a2z.com" />
+<link rel="preconnect" href="https://na.mesk.skill.music.a2z.com" crossorigin />
+<link rel="dns-prefetch" href="https://na.mesk.skill.music.a2z.com" />
+<link rel="preconnect" href="https://m.media-amazon.com" />
+<link rel="preconnect" href="https://d5fx445wy2wpk.cloudfront.net" />
+
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        background: #000;
+        background: linear-gradient(to bottom, black, rgb(31, 34, 34));
+    }
+    body,
+    #container {
+        position: relative;
+    }
+</style>
+<link type="application/opensearchdescription+xml" rel="search" title="Amazon Music" href="/opensearch.xml"/>
+
+
+    </head>
+    <body>
+      <div id="container"></div>
+
+<script type="module" src="https://d5fx445wy2wpk.cloudfront.net/release/web-platform/main.75a5348adf1c8a03b44b.js" crossorigin="anonymous"></script>
+<script nomodule src="https://d5fx445wy2wpk.cloudfront.net/release/web-platform/main.75a5348adf1c8a03b44b.js" crossorigin="anonymous"></script>
+<link
+    rel="preload"
+    href="https://d5fx445wy2wpk.cloudfront.net/static/logo_stacked.svg"
+    type="image/svg+xml"
+    as="image"
+    crossorigin
+/>
+<link
+    rel="preload"
+    href="https://d5fx445wy2wpk.cloudfront.net/static/logo.svg"
+    type="image/svg+xml"
+    as="image"
+    crossorigin
+/>
+<link
+    rel="preload"
+    href="https://d5fx445wy2wpk.cloudfront.net/fonts/Ember/AmazonEmber_Rg.woff2"
+    type="font/woff2"
+    as="font"
+    crossorigin
+/>
+<link
+    rel="preload"
+    href="https://d5fx445wy2wpk.cloudfront.net/fonts/Ember/AmazonEmber_Bd.woff2"
+    type="font/woff2"
+    as="font"
+    crossorigin
+/>
+<link
+    rel="preload"
+    href="https://d5fx445wy2wpk.cloudfront.net/fonts/SharpGroteskBold20/SharpGroteskPanEuroBold-20.woff2"
+    type="font/woff2"
+    as="font"
+    crossorigin
+/>
+<link
+    rel="preload"
+    href="https://d5fx445wy2wpk.cloudfront.net/fonts/SharpGroteskSemiBold20/SharpGroteskPanEuroSmBld-20.woff2"
+    type="font/woff2"
+    as="font"
+    crossorigin
+/>
+
+
+
+    </body>
+</html>

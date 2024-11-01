@@ -1,0 +1,14 @@
+parser
+    [monad]
+
+    Can be expressed in a modular way in terms
+    of two simpler monads.
+
+monadic sequencing combinator
+    Using this in parsers avoids the messy
+    manipulation of nested tuples of results
+    present in earlier work.
+
+monad comprehension notation
+    Using this makes parsers more compact and
+    easier to read.

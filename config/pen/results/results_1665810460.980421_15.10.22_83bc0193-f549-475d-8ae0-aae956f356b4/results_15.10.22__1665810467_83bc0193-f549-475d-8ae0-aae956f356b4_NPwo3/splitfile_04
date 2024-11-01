@@ -1,0 +1,1 @@
+Once upon a time, I published an existing extension to the Mozilla Add-on Gallery via the Signing API, rather than using a to-be-created custom extension wizard. This allowed me to package and deploy my extension to the gallery quickly. Additionally, the Mozilla

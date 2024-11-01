@@ -1,0 +1,57 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-elpa.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-keybindings.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-themes.el
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# emacs lisp files that are not in init.d or init-* directories
+# (these are specific to my own configuration)
+# (i don't want to put these in git)
+# (they are not part of the default emacs configuration)
+# (they are not part of the emacs distribution)

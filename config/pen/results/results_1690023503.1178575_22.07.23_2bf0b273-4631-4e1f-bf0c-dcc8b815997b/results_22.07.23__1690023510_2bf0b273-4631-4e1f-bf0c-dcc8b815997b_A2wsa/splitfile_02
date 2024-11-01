@@ -1,0 +1,13 @@
+"substitute" is a Vim function.
+
+The following is the documentation for the substitute() function:
+
+The following is an example of using substitute():
+
+The following is an example of using substitute() with a pattern:
+
+The following is an example of using substitute() with a pattern and a replacement:
+
+The following is an example of using substitute() with a pattern and a replacement and flags:
+
+The following is an example of using substitute() with a pattern and a replacement and flags and

@@ -1,0 +1,5 @@
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "search" "--output=tags" "*" "#" "<==" "emacs"
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "D44" "#" "<==" "emacs"
+cd /root;  "notmuch" "search" "--output=tags" "*" "#" "<==" "emacs"
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "D81" "#" "<==" "emacs"

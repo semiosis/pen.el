@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fact
+# group: fact
+# key: f
+# --
+${1:0.7}::${2:burglary}.$0

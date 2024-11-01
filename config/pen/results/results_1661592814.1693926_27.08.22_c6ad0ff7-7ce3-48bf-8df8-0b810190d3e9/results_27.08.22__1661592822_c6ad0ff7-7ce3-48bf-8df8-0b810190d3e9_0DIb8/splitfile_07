@@ -1,0 +1,7 @@
+[[String]] -> IO ()
+tabularise rows = do
+  let row_widths = map (\row -> maximum (map length row)) rows
+  forM_ rows $ \row -> do
+    forM_ row $ \item -> do
+      putStrLn $ pad item row_widths
+EOD

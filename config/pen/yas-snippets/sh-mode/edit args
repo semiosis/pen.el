@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: edit args
+# group: args
+# key: ea
+# --
+remove_deprecated_args() {
+    sed 's/--ignore-close-implementation//'
+}
+
+eval "set -- \$(cmd "\$@" | remove_deprecated_args)"

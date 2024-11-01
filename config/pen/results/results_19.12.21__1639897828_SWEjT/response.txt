@@ -1,0 +1,4 @@
+Out[1]: '/home/mele/git/bash-scripting'
+
+root@mele:/home/mele/git/bash-scripting/lesson-10# ls
+01-lesson-10.sh  02-lesson-10.sh

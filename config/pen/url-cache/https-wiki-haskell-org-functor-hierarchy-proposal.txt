@@ -1,0 +1,327 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Server: nginx/1.20.2
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Last-Modified: Mon, 02 May 2022 14:07:35 GMT
+Accept-Ranges: bytes
+Date: Sun, 14 Aug 2022 10:51:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-akl10324-AKL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1660474303.517585,VS0,VE239
+Vary: Accept-Encoding, Cookie
+transfer-encoding: chunked
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Functor-Applicative-Monad Proposal - HaskellWiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Functor-Applicative-Monad_Proposal","wgTitle":"Functor-Applicative-Monad Proposal","wgCurRevisionId":60290,"wgRevisionId":60290,"wgArticleId":6660,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Proposals","Functor","Applicative Functor","Monad"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Functor-Applicative-Monad_Proposal","wgRelevantArticleId":6660,"wgRequestId":"d2f4ce086d6b13d6d66587a6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Functor_hierarchy_proposal","wgWikiEditorEnabledModules":[],"wgCollapsibleVectorEnabledModules":{"collapsiblenav":true,"experiments":true},"wgInternalRedirectTargetUrl":"/Functor-Applicative-Monad_Proposal"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.hawiki.styles":"ready"});mw.loader.implement("user.tokens@03tqtch",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.hawiki.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.hawiki.styles&amp;only=styles&amp;skin=hawiki"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hawiki"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=hawiki"/>
+<meta name="generator" content="MediaWiki 1.31.7"/>
+<link rel="shortcut icon" href="/wikistatic/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="HaskellWiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.haskell.org/api.php?action=rsd"/>
+<link rel="license" href="/HaskellWiki:Copyrights"/>
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://wiki.haskell.org/Functor-Applicative-Monad_Proposal"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=hawiki&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Functor-Applicative-Monad_Proposal rootpage-Functor-Applicative-Monad_Proposal skin-hawiki action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Functor-Applicative-Monad Proposal</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From HaskellWiki</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="/index.php?title=Functor_hierarchy_proposal&amp;redirect=no" class="mw-redirect" title="Functor hierarchy proposal">Functor hierarchy proposal</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Haskell calls a couple of historical accidents its own. While some of them, such as the "number classes" hierarchy, can be justified by pragmatism or lack of a strictly better suggestion, there is one thing that stood out as, well, not that: Applicative not being a superclass of Monad.
+</p><p>The topic has been discussed multiple times in the past (cf. link section at the very end). <b>This article describes the Haskell 2014 Applicative =&gt; Monad proposal (AMP)</b>, which was then implemented in GHC 7.10.
+</p><p>Some relevant links:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://github.com/quchen/articles/blob/master/applicative_monad.md">Initial text of the Haskell 2014 AMP</a></li>
+<li><a rel="nofollow" class="external text" href="http://thread.gmane.org/gmane.comp.lang.haskell.libraries/19482">AMP mailing list discussion</a></li>
+<li>Phase one: ticket <a rel="nofollow" class="external text" href="http://hackage.haskell.org/trac/ghc/ticket/8004">#8004</a></li></ul>
+<p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Proposal_contents"><span class="tocnumber">1</span> <span class="toctext">Proposal contents</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Future-proofing_current_code"><span class="tocnumber">2</span> <span class="toctext">Future-proofing current code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Missing_superclasses"><span class="tocnumber">2.1</span> <span class="toctext">Missing superclasses</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Future_Prelude_names"><span class="tocnumber">2.2</span> <span class="toctext">Future Prelude names</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Discussion_and_consequences"><span class="tocnumber">3</span> <span class="toctext">Discussion and consequences</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#It.27s_the_right_thing_to_do.E2.84.A2"><span class="tocnumber">3.1</span> <span class="toctext">It's the right thing to do™</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Redundant_functions"><span class="tocnumber">3.2</span> <span class="toctext">Redundant functions</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Using_Functor.2FApplicative_functions_in_monadic_code"><span class="tocnumber">3.3</span> <span class="toctext">Using Functor/Applicative functions in monadic code</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Compatibility_issues"><span class="tocnumber">3.4</span> <span class="toctext">Compatibility issues</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Beginner_friendliness"><span class="tocnumber">3.5</span> <span class="toctext">Beginner friendliness</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Applying_the_AMP_to_GHC_and_then_Haskell_in_practice"><span class="tocnumber">4</span> <span class="toctext">Applying the AMP to GHC and then Haskell in practice</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Prepare_GHC"><span class="tocnumber">4.1</span> <span class="toctext">Prepare GHC</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Prepare_Hackage"><span class="tocnumber">4.2</span> <span class="toctext">Prepare Hackage</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Apply_the_proposal"><span class="tocnumber">4.3</span> <span class="toctext">Apply the proposal</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Previous_proposals"><span class="tocnumber">5</span> <span class="toctext">Previous proposals</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Proposal_contents">Proposal contents</span></h2>
+<p>The list of changes is as follows:
+</p>
+<ol><li>Applicative becomes a superclass of Monad, and is added to the Prelude.</li>
+<li>Alternative becomes a superclass of MonadPlus (in addition to Monad, of course).</li>
+<li><s><span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">join</span></code></span> is promoted into the Monad typeclass.</s> - Left out due to <a rel="nofollow" class="external text" href="https://ghc.haskell.org/trac/ghc/wiki/Roles2#join">nontrivial breaking interaction</a> with <a href="/Roles" title="Roles">Roles</a>. Will "probably be fixed in the future", but for now it's off the table.</li></ol>
+<p>The general rationale behind these changes:
+</p>
+<ol><li><i>Break as little code as possible.</i> For example, do not move <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">return</span></code></span> to Applicative and remove <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span></code></span>. Instead, leave <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">return</span></code></span> in Monad, and give it <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span></code></span> as default implementation.</li>
+<li><i>Change only things that are closely related to the proposal.</i> For example, using <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">join</span></code></span> in a monad definition requires it to be a functor, so it goes hand in hand with the AMP. On the other hand, removing <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">fail</span></code></span> has nothing to do with what we're trying to accomplish.</li></ol>
+<h2><span class="mw-headline" id="Future-proofing_current_code">Future-proofing current code</span></h2>
+<p>GHC 7.8 will issue two types of warnings in order to encourage wide-scale code fixing. The following describes how to get rid of them, and as a result ensures your code builds both now and after the AMP is finished. For a more extensive and up-to-date guide, see also the <a rel="nofollow" class="external text" href="https://ghc.haskell.org/trac/ghc/wiki/Migration/7.10#base-4.8.0.0">GHC 7.10 migration guide</a>.
+</p>
+<h3><span class="mw-headline" id="Missing_superclasses">Missing superclasses</span></h3>
+<p>(Warnings of the type "Warning: X is an instance of C, but not D")
+</p>
+<ul><li>Add Applicative/Functor instances for all your Monads. You can simply derive these instances from the Monad by adding the following code:</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">import</span> <span class="nn">Control.Applicative</span> <span class="p">(</span><span class="kt">Applicative</span><span class="p">(</span><span class="o">..</span><span class="p">))</span>
+<span class="kr">import</span> <span class="nn">Control.Monad</span>       <span class="p">(</span><span class="nf">liftM</span><span class="p">,</span> <span class="nf">ap</span><span class="p">)</span>
+
+<span class="c1">-- Monad m</span>
+
+<span class="kr">instance</span> <span class="kt">Functor</span> <span class="n">m</span> <span class="kr">where</span>
+    <span class="n">fmap</span> <span class="ow">=</span> <span class="n">liftM</span>
+
+<span class="kr">instance</span> <span class="kt">Applicative</span> <span class="n">m</span> <span class="kr">where</span>
+    <span class="n">pure</span>  <span class="ow">=</span> <span class="cm">{- move the definition of `return` from the `Monad` instance here -}</span>
+    <span class="p">(</span><span class="o">&lt;*&gt;</span><span class="p">)</span> <span class="ow">=</span> <span class="n">ap</span>
+
+<span class="kr">instance</span> <span class="kt">Monad</span> <span class="n">m</span> <span class="kr">where</span>
+    <span class="n">return</span> <span class="ow">=</span> <span class="n">pure</span> <span class="c1">-- redundant since GHC 7.10 due to default impl</span>
+</pre></div>
+<p>Moreover, there are some subtle issues regarding the <code>(&gt;&gt;)</code> operator, see <a rel="nofollow" class="external autonumber" href="https://ghc.haskell.org/trac/ghc/wiki/Migration/7.10#base-4.8.0.0">[1]</a> for more details.
+</p>
+<ul><li>Add an Alternative instance for all instances of MonadPlus. This can again be done easily using</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">import</span> <span class="nn">Control.Applicative</span> <span class="p">(</span><span class="kt">Alternative</span><span class="p">(</span><span class="o">..</span><span class="p">))</span>
+<span class="kr">import</span> <span class="nn">Control.Monad</span>       <span class="p">(</span><span class="nf">mzero</span><span class="p">,</span> <span class="nf">mplus</span><span class="p">)</span>
+
+<span class="c1">-- MonadPlus m</span>
+
+<span class="kr">instance</span> <span class="kt">Alternative</span> <span class="n">m</span> <span class="kr">where</span>
+    <span class="p">(</span><span class="o">&lt;|&gt;</span><span class="p">)</span> <span class="ow">=</span> <span class="n">mplus</span>
+    <span class="n">empty</span> <span class="ow">=</span> <span class="n">mzero</span>
+</pre></div>
+<h3><span class="mw-headline" id="Future_Prelude_names">Future Prelude names</span></h3>
+<p>"The name X clashes with a future Prelude name" - Prelude will export functions called <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">&lt;*&gt;</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">join</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span></code></span>, so if a module defines its own versions of them, there will be name clashes. There are multiple ways of getting rid of this type of warning (in a future-proof way).
+</p>
+<ol><li>Change your code to not define functions named <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">&lt;*&gt;</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">join</span></code></span> or <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span></code></span>.</li>
+<li>Import Prelude definitions you need explicitly. For example, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kr">import</span> <span class="nn">Prelude</span> <span class="p">(</span><span class="nf">map</span><span class="p">,</span> <span class="p">(</span><span class="o">+</span><span class="p">))</span></code></span> would not import <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">join</span></code></span>, so no warning is issued as the module is compatible with the Prelude exporting <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">join</span></code></span>. <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">hiding</span></code></span>.</li>
+<li>Due to GHC internals, you cannot use <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">hiding</span> <span class="p">(</span><span class="n">join</span><span class="p">,</span> <span class="p">(</span><span class="o">&lt;*&gt;</span><span class="p">),</span> <span class="n">pure</span><span class="p">)</span></code></span> to silence the warnings, although this method would be future-proof. If you want to use <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">hiding</span></code></span>, you will have to silence the warnings using a sledgehammer <code>-fno-warn-amp</code> compiler flag. (If you do so make sure you know what you're doing, otherwise your module <i>will</i> break in 7.10.) To make 7.10 not complain about the then unrecognized flag, it's best to specify it in a CPP block,</li></ol>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cm">{-# LANGUAGE CPP #-}</span>
+<span class="o">#</span><span class="kr">if</span> <span class="n">__GLASGOW_HASKELL__</span> <span class="o">&gt;=</span> <span class="mi">707</span> <span class="o">&amp;&amp;</span> <span class="n">__GLASGOW_HASKELL__</span> <span class="o">&lt;</span> <span class="mi">710</span>
+<span class="cm">{-# OPTIONS_GHC -fno-warn-amp #-}</span>
+<span class="o">#</span><span class="n">endif</span>
+</pre></div>
+<h2><span class="mw-headline" id="Discussion_and_consequences">Discussion and consequences</span></h2>
+<h3><span id="It's_the_right_thing_to_do™"></span><span class="mw-headline" id="It.27s_the_right_thing_to_do.E2.84.A2">It's the right thing to do™</span></h3>
+<p>Math. You've all heard this one, it's good and compelling so I don't need to spell it out.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Redundant_functions">Redundant functions</span></h3>
+<ul><li><span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">return</span></code></span> do the same thing.</li>
+<li><span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">&gt;&gt;</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">*&gt;</span></code></span> are identical.</li>
+<li><span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">liftM</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">liftA</span></code></span> are <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">fmap</span></code></span>. The <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">liftM</span><span class="o">*</span></code></span> are <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">liftA</span><span class="o">*</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">&lt;*&gt;</span></code></span> is <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">ap</span></code></span>.</li>
+<li>Prelude's <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">sequence</span></code></span> requires <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Monad</span></code></span> right now, while <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Applicative</span></code></span> is sufficient to implement it. The more general version of this issue is captured by <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Data</span><span class="o">.</span><span class="kt">Traversable</span></code></span>, whose main typeclass implements the *same* functionality twice, namely <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">traverse</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">mapM</span></code></span>, and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">sequenceA</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">sequence</span></code></span>.</li>
+<li>The <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">WrappedMonad</span></code></span> type from <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Control</span><span class="o">.</span><span class="kt">Applicative</span></code></span> provides a semi-automatic way to using Functor/Applicative/Alternative functions for Monad/MonadPlus instances as a makeshift patch.</li></ul>
+<p>That very much violates the "don't repeat yourself" principle, and even more so it <i>forces</i> the programmer to repeat himself to achieve maximal generality. It may be too late to take all redundancies out, but at least we can prevent new ones from being created.
+</p><p>(Note that it is not proposed to remove any functions for compatibility reasons. Maybe some of them can be phased out in the long run, but that's beyond scope here.)
+</p><p><br />
+</p>
+<h3><span id="Using_Functor/Applicative_functions_in_monadic_code"></span><span class="mw-headline" id="Using_Functor.2FApplicative_functions_in_monadic_code">Using Functor/Applicative functions in monadic code</span></h3>
+<p>Whenever there's Monad code, you can use Functor/Applicative functions, without introducing an additional constraint. Keep in mind that "Functor/Applicative functions" does not only include what their typeclasses define but many more, for example <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">void</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">(</span><span class="o">&lt;$&gt;</span><span class="p">)</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">(</span><span class="o">&lt;**&gt;</span><span class="p">)</span></code></span>.
+</p><p>Even if you think you have monadic code, strictly using the least restrictive functions may result in something that requires only Applicative. This is similar to writing a function that needs <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Int</span></code></span>, but it turns out any <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Integral</span></code></span> will do - more polymorphism for free.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Compatibility_issues">Compatibility issues</span></h3>
+<p>These are the kinds of issues to be expected:
+</p>
+<ol><li>Monads lacking Functor or Applicative instances. This is easily fixable by either setting <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">fmap</span> <span class="ow">=</span> <span class="n">liftM</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span> <span class="ow">=</span> <span class="n">return</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">(</span><span class="o">&lt;*&gt;</span><span class="p">)</span> <span class="ow">=</span> <span class="n">ap</span></code></span>, although more efficient implementations may exist, or by moving an already existing definition from <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Control</span><span class="o">.</span><span class="kt">Applicative</span></code></span> to the appropriate module.</li>
+<li>This one is specific to building GHC: importing <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">Control</span><span class="o">.</span><span class="kt">Monad</span><span class="o">/</span><span class="kt">Applicative</span></code></span> introduces a circular module dependency. In this case, one can rely on handwritten implementations of the desired function, e.g. <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">ap</span> <span class="n">f</span> <span class="n">x</span> <span class="ow">=</span> <span class="n">f</span> <span class="o">&gt;&gt;=</span> <span class="o">...</span></code></span>.</li>
+<li>Libraries using their own <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">(</span><span class="o">&lt;*&gt;</span><span class="p">)</span></code></span>. This one is potentially the most laborious consequence. For building GHC though, this only concerns Hoopl, and a handful of renames.</li></ol>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Beginner_friendliness">Beginner friendliness</span></h3>
+<p>How often did you say ...
+</p>
+<ul><li>"A Monad is always an Applicative but due to historical reasons it's not but you can easily verify it by setting <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span> <span class="ow">=</span> <span class="n">return</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">(</span><span class="o">&lt;*&gt;</span><span class="p">)</span> <span class="ow">=</span> <span class="n">ap</span></code></span>"</li>
+<li>"<span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">liftM</span></code></span> is <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">fmap</span></code></span> but not really." - "So when should I use <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">fmap</span></code></span> and when <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">liftM</span></code></span>?" - <i>sigh</i></li></ul>
+<p>With the new hierarchy, the answer would <i>always</i> be "use the least restrictive one".
+</p>
+<h2><span class="mw-headline" id="Applying_the_AMP_to_GHC_and_then_Haskell_in_practice">Applying the AMP to GHC and then Haskell in practice</span></h2>
+<p>Proposed is a gradual introduction of the AMP in three phases:
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Prepare_GHC">Prepare GHC</span></h3>
+<p>Using a GHC fork with the full patch applied, find and fix all compilation errors introduced by the change by adding Functor/Applicative instances for all Monads.
+</p><p>According to SPJ, adding an ad-hoc warning of sorts "Monad without Applicative detected" is not a problem, which will be crucial for the next phase. More specifically, issue a warning if:
+</p>
+<ul><li>Monad without Applicative</li>
+<li>MonadPlus without Alternative</li>
+<li>One of <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">&lt;*&gt;</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">pure</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">join</span></code></span> is defined in a different context to avoid naming conflicts, as these functions will go into the Prelude</li></ul>
+<h3><span class="mw-headline" id="Prepare_Hackage">Prepare Hackage</span></h3>
+<p>The warning just mentioned will hint to all authors that they should fix (or help others fix) the non-complying packages. This will ideally lead to libraries eventually adding Applicative instances, and changing their APIs if they redefine operators like <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">&lt;*&gt;</span></code></span>.
+</p><p>After enough time has passed by so libraries adapted to the circumstances, move on to the next phase.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Apply_the_proposal">Apply the proposal</span></h3>
+<p>Once Hackage is prepared, applying the changes to the Base package is painless. However, this is not primarily a GHC, but a Haskell change. The previous steps were basically preparing the landscape, and when we've (hopefully) found out that it is a good idea to go through with it, it can be proposed to go into the Report. If we make it this far, the AMP should pass quite easily.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Previous_proposals">Previous proposals</span></h2>
+<ul><li>Early 2011: <a rel="nofollow" class="external text" href="http://hackage.haskell.org/trac/ghc/ticket/4834">GHC ticket</a> &#8211; changes similar to this proposal, but closed as "not GHC, but Haskell". See <a rel="nofollow" class="external text" href="http://thread.gmane.org/gmane.comp.lang.haskell.libraries/14883/focus=14905">here</a> for the associated discussion.</li>
+<li><a href="/The_Other_Prelude" title="The Other Prelude">The Other Prelude</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20220814103615
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.022 seconds
+Real time usage: 0.099 seconds
+Preprocessor visited node count: 371/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 11002/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+
+-->
+</div>
+<!-- Saved in parser cache with key wikidb_haskell:pcache:idhash:6660-0!canonical and timestamp 20220814103615 and revision id 60290
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.haskell.org/index.php?title=Functor-Applicative-Monad_Proposal&amp;oldid=60290">https://wiki.haskell.org/index.php?title=Functor-Applicative-Monad_Proposal&amp;oldid=60290</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Category:Proposals" title="Category:Proposals">Proposals</a></li><li><a href="/Category:Functor" title="Category:Functor">Functor</a></li><li><a href="/Category:Applicative_Functor" title="Category:Applicative Functor">Applicative Functor</a></li><li><a href="/Category:Monad" title="Category:Monad">Monad</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Functor-Applicative-Monad+Proposal" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="hawikiTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Functor-Applicative-Monad_Proposal"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Functor-Applicative-Monad_Proposal"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="hawikiTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Functor-Applicative-Monad_Proposal" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Functor-Applicative-Monad_Proposal&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Functor-Applicative-Monad_Proposal&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search HaskellWiki" title="Search HaskellWiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Haskell"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/Haskell" title="Visit the main page [z]" accesskey="z">Haskell</a></li><li id="n-portal"><a href="/HaskellWiki:Community" title="About the project, what you can do, where to find things">Wiki community</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Functor-Applicative-Monad_Proposal" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Functor-Applicative-Monad_Proposal" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Functor-Applicative-Monad_Proposal&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Functor-Applicative-Monad_Proposal&amp;oldid=60290" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Functor-Applicative-Monad_Proposal&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/index.php?title=Special:CiteThisPage&amp;page=Functor-Applicative-Monad_Proposal&amp;id=60290" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 24 October 2015, at 11:46.</li>
+											<li id="footer-info-copyright">Recent content is available under <a href="/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">simple permissive license</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+									<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.022","walltime":"0.099","ppvisitednodes":{"value":371,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":11002,"limit":5000000},"timingprofile":[]},"cachereport":{"timestamp":"20220814103615","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":83});});</script>
+	</body>
+</html>

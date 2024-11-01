@@ -1,0 +1,7 @@
+cd ; pb /root/.emacs.d/host/pen.el/src/pen-alarm.el # "<==" zsh
+http://ix.io/4GZq/el
+(require 'alarm-clock)
+
+(defcustom alarm-hour ""
+  "Hour of alarm clock"
+  :type 'string

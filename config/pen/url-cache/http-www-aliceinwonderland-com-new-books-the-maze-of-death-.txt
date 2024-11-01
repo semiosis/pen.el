@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Server: openresty
+Date: Sun, 06 Feb 2022 22:17:33 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: parking_session=07d1d94f-f1f6-26ba-e1a8-fe3c727a68f5; expires=Sun, 06-Feb-2022 22:32:33 GMT; Max-Age=900; path=/; HttpOnly
+X-Adblock-Key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_uy5+yjc8RnHhnTFYxb3nTdDyTVA232VSLeZm9wp3Z+7ueJADUAtLnF9l4QraCQ2K1piyVyWJpk4r9DGXc/W9PQ==
+Cache-Control: no-cache
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Cache-Control: no-store, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+
+<!doctype html><html lang="en" data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_uy5+yjc8RnHhnTFYxb3nTdDyTVA232VSLeZm9wp3Z+7ueJADUAtLnF9l4QraCQ2K1piyVyWJpk4r9DGXc/W9PQ=="><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/><link rel="preconnect" href="https://www.google.com" crossorigin><link rel="dns-prefetch" href="https://parking.bodiscdn.com" crossorigin><link rel="dns-prefetch" href="https://fonts.googleapis.com" crossorigin></head><body><div id="target" style='opacity: 0'></div><script>window.park = "eyJ1dWlkIjoiMDdkMWQ5NGYtZjFmNi0yNmJhLWUxYTgtZmUzYzcyN2E2OGY1IiwicGFnZV90aW1lIjoxNjQ0MTg1ODUzLCJwYWdlX3VybCI6Imh0dHA6XC9cL3d3dy5hbGljZWlud29uZGVybGFuZC5jb21cL25ldy1ib29rc1wvdGhlLW1hemUtb2YtZGVhdGhcLyIsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV9yZXF1ZXN0IjpbXSwicGFnZV9oZWFkZXJzIjp7InVzZXItYWdlbnQiOlsiVVJMXC9FbWFjcyBFbWFjc1wvMjguMC41MCAoVFRZOyB4ODZfNjQtcGMtbGludXgtZ251KSJdLCJhY2NlcHQiOlsiKlwvKiJdLCJhY2NlcHQtZW5jb2RpbmciOlsiZ3ppcCJdLCJob3N0IjpbInd3dy5hbGljZWlud29uZGVybGFuZC5jb20iXSwiZXh0ZW5zaW9uIjpbIlNlY3VyaXR5XC9EaWdlc3QgU2VjdXJpdHlcL1NTTCJdLCJjb25uZWN0aW9uIjpbImtlZXAtYWxpdmUiXSwibWltZS12ZXJzaW9uIjpbIjEuMCJdfSwiaG9zdCI6Ind3dy5hbGljZWlud29uZGVybGFuZC5jb20iLCJpcCI6IjExOC45Mi43Mi4yMjkifQ==";</script><script src="/js/parking.2.79.0.js"></script></body></html>

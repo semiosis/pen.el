@@ -1,0 +1,12 @@
+"provide" is a macro that defines a global variable and a function that
+initializes the variable.
+
+"provide" has the following syntax:
+
+(provide <global-var> [<global-var> ...])
+
+The global variable(s) are defined by the macro, and the function(s) are
+defined by the macro.
+
+The global variable(s) are defined in the current namespace, and the
+function(s) are defined in the current

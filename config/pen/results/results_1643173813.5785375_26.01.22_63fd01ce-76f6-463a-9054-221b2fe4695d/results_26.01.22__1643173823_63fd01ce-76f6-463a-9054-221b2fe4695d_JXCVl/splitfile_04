@@ -1,0 +1,7 @@
+Original language: English
+English translation:
+Perhaps I should change the hostname for the docker container. Good idea
+"""
+for sentence in sentences.split('\n'):
+    if sentence:
+        print('

@@ -1,0 +1,8 @@
+cd /root/notes;  "ebible" "-m" "ESV" "2 Cor 5:18-19" "#" "<==" "2"
+cd /root/notes;  "ebible" "-m" "ESV" "2 Cor 5:18-19" "#" "<==" "2"
+cd /root/notes;  "ebible" "-m" "ESV" "2 Corinthians 5:18-19" "#" "<==" "2"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "ebible" "-m" "ESV" "Philippians 3:18-21" "#" "<==" "Philippians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "John 15:20" "#" "<==" "John"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "John 10:27-28" "#" "<==" "John"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "John 18:37" "#" "<==" "John"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "1 John 4:6" "#" "<==" "1"

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: dmz
+# group: nwdiag
+# key: dmz
+# --
+network dmz {
+address = "210.x.x.x/24"
+
+`yas-selected-text`$0web01 [address = "210.x.x.1"];
+web02 [address = "210.x.x.2"];
+}

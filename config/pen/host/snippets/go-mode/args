@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: args
+# key: args
+# --
+argsWithProg := os.Args
+argsWithoutProg := os.Args[1:]
+arg := os.Args[3]

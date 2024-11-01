@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "John" "3:24" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "John" "4:16" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Corinthians" "13:13" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Timothy" "1:17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Chronicles" "29:11" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Timothy" "6:15-16" "#" "<==" "zsh"

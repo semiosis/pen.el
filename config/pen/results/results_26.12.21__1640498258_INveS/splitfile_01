@@ -1,0 +1,5 @@
+
+  (interactive)
+  (let ((nuke-buffer (get-buffer-create "*nuke*")))
+    (switch-to-buffer nuke-buffer)
+    (insert "Nuking

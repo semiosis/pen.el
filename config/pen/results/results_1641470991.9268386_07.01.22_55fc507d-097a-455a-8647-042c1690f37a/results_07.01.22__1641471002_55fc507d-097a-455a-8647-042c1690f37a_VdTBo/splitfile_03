@@ -1,0 +1,30 @@
+
+1. 10
+2. 7
+3. 6
+4. 8""")
+
+def q2():
+    # Question: given a team of N athletes, where individual A and B
+    # are better than each other at a given event. What is the maximum
+    # number of pair of replicating the inconsistency exhibited by the
+    # SAME team of N athletes, provided that replicates are only
+    # switfly switchable between original athlete and the other.
+    #                                   
+    #                  ...                  ...                  ...
+    #                 |-----------|-----------|-----------|          
+    #  Athlete A     Athlete A     Athlete A     Athlete A
+    #  Athlete B   [][]=[][]=[][]=[][]=[][]=[][]=[][]=[][]=[][]=[][]=[][]=[][]
+    #  Athlete B     Athlete B     Athlete B     Athlete B
+    #
+    # ------------------------------------------------------------
+    #
+    #    5   4   3   2   1
+    #    -   -   -   -   -
+    #  A--*--*--*--*--*--*--*--
+    #  -   -   -   -   -   -   -
+    #  -   -   -   -   -   -   -
+    #  -   -   -   -   -   -   -
+    #  -   -   -   -   -   -   -
+    #  ---------------------------------------------------
+    #

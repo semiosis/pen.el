@@ -1,0 +1,54 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: interpreter
+language: bash
+# 0.5 is needed, rather than 0.2 to do things like change directory with cd ~
+temperature: 0.5
+subprompts:
+- banner: |+
+    GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+- kickstarter: |+
+    Copyright (C) 2019 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+    
+    This is free software; you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+    <user>@<hostname>:<cwd>$ 
+prompt: |+
+    <banner>
+    <history><expression>
+    <:pp>
+user-prompt: "^[^@ ]+@[^$: ]+\\(:\\$[A-Z]+[^$]+\\$\\|:[^$]+\\$\\|\\$\\) "
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
+
+# TODO Generate the stop sequence from the history
+stop-sequences:
+- "<bash-stop-sequence>"
+# Create a user prompt with the number incremented.
+# This is like postprocessor but happens even later.
+# It is used in special circumstances when the prompt history is also required.
+
+# TODO Send to the postpostprocessor some environment variables such as final-prompt
+# Use this from the shell script
+postpostprocessor: pen-str bash-gen-next-user-prompt
+defs:
+- user: "(pen-snc \"whoami\")"
+- hostname: "(pen-snc \"hostname\")"
+- cwd: "(pen-pwd)"
+vars:
+- history
+- expression
+var-defaults:
+- kickstarter
+examples:
+- "shane@mele:~$ "
+- "echo hi"
+# Expressions are used by stop-sequence and potentially other parameters, late in the pipeline
+expressions:
+  - bash-stop-sequence: "(pen-snc \"awk 1 | tail -n 1\" (scrape \"@[^$: ]+\" (scrape \"^[^@ ]+@[^$ ]+[:$]\" (pen-unonelineify-safe final-prompt))))"
+postprocessor: <repl-pp>
+pipelines:
+- repl-pp: "sed 's/^\\(root@[a-zA-Z0-9_-]\\+:[^#$]*\\)#/\\1$/'"

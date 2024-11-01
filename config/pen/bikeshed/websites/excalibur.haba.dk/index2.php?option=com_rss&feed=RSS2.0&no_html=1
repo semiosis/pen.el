@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rss version="2.0">
+	<channel>
+		<title>Excalibur Clan</title>
+		<description>Age of Empires II CLan</description>
+		<link>http://excalibur.haba.dk</link>
+		<lastBuildDate>Wed, 15 Sep 2010 00:24:00 +0100</lastBuildDate>
+		<generator>FeedCreator 1.7.2</generator>
+		<image>
+			<url>http://excalibur.haba.dk/images/M_images/joomla_rss.png</url>
+			<title>Excalibur</title>
+			<link>http://excalibur.haba.dk</link>
+			<description>Age of Empires II CLan</description>
+		</image>
+		<item>
+			<title>Warm welcome to our site!</title>
+			<link>http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=1&amp;Itemid=9</link>
+			<description>We are a community of Age of empires 2 online Players. You can...</description>
+			<category>News - Latest</category>
+			<pubDate>Fri, 29 Sep 2006 02:00:00 +0100</pubDate>
+		</item>
+		<item>
+			<title>Aoe2 Update 1.0.6.</title>
+			<link>http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=40&amp;Itemid=9</link>
+			<description>Age of Empires II 1.0.6 Update addresses several problems in the game including improved networking and improved OS X...</description>
+			<category>News - Latest</category>
+			<pubDate>Wed, 09 Jul 2008 01:36:09 +0100</pubDate>
+		</item>
+		<item>
+			<title>MAC AOE2 LADDER</title>
+			<link>http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9</link>
+			<description>http://aoe.ath.cx/aoc/ (http://aoe.ath.cx/aoc/)  Newaye</description>
+			<category>News - Latest</category>
+			<pubDate>Sat, 30 Jan 2010 01:00:00 +0100</pubDate>
+		</item>
+	</channel>
+</rss>

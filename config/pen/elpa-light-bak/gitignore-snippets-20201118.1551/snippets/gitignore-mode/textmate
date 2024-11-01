@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: TextMate
+# contributor: Toptal & contributors
+# key: textmate
+# --
+
+### TextMate ###
+
+*.tmproj
+*.tmproject
+tmtags

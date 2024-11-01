@@ -1,0 +1,3 @@
+\n', '\n').replace('\r', '\n')
+sys.stdout.write(data)
+

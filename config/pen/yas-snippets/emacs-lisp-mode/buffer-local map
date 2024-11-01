@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: buffer-local map
+# group: map
+# key: lmap
+# --
+(use-local-map 
+(let ((map (make-sparse-keymap)))
+(suppress-keymap map)
+(prog1 map
+(define-key map "g" 'forecast-refresh)
+(define-key map "q" 'forecast-quit))))

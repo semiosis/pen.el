@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: linkid
+# group: mine
+# key: lid
+# --
+:PROPERTIES:
+:CUSTOM_ID: server-config-yaml
+:END:

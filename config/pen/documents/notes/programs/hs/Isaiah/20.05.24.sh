@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Isaiah" "64:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Isaiah" "55:8-9" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Isaiah" "43:25" "#" "<==" "zsh"
+cd /root/notes;  "Isaiah" "44:22" "#" "<==" "zsh"
+cd /root/notes;  "Isaiah" "8:12" "#" "<==" "zsh"

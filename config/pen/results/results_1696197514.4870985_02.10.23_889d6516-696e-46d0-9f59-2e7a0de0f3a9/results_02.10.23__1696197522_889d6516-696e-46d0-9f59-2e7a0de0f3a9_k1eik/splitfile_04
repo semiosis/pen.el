@@ -1,0 +1,4 @@
+
+. vimproc_setup.sh
+
+The main script opens a shell, exports a bunch of environment variables to setup the python virtual environment and starts the command-line python shell, which I use to interact with the OpenAI gym.

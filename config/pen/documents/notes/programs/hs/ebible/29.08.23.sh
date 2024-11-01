@@ -1,0 +1,7 @@
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Colossians 2:8-10 1" "#" "<==" "tmux: server"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Colossians 2:8-10 1" "#" "<==" "tmux: server"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Colossians 2:8-10 1" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Colossians 2:8-10 1" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Colossians 2:8-10 1" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Colossians 2:8-10 1" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Colossians 2:8-10 1" "#" "<==" "tmux: server"

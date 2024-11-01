@@ -1,0 +1,1 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Ephesians \"1:13,14\"" "#" "<==" "sbcl-ql"

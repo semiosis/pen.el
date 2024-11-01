@@ -1,0 +1,11 @@
+
+          (funcall fun)
+          (funcall fun)))
+    (pen-complete-line preceding-text tv)))
+
+(defun pen-complete-line-maybe-etv (preceding-text &optional tv)
+  (interactive (list (pen-preceding-text) nil))
+  (if mark-active
+      ;; Disabled pen-mode temporarily
+      (let* ((pen nil)
+             (fun (

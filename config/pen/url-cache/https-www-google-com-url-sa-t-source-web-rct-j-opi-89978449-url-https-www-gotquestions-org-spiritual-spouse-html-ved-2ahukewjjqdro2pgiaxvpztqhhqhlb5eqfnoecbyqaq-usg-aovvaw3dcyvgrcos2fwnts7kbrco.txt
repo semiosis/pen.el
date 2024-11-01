@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Date: Mon, 26 Aug 2024 03:25:40 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Content-Type: text/html; charset=ISO-8859-1
+Content-Security-Policy: object-src 'none';base-uri 'self';script-src 'nonce-qTgV725rIggfM0aRCZVMSA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: gws
+X-XSS-Protection: 0
+Set-Cookie: NID=516=nqo9nhV_B9Z1RyxjwiHzZAOZTJf0LpQDRh8O6HdoXqpqJHvU0BwpjrG6gCksYX5N1iZz2u0hHZykSer6xxTNLhD1gev_U8_sD5sflAJof0TBzaY9tCqh3JBw9J9tAxtHlG4hAfXs3TB7Jgs8ciUoYs3tOsp4hHhuUThULpvUg5kvlLhzad-3dQ; expires=Tue, 25-Feb-2025 03:25:40 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+<html lang="en-NZ"> <head>   <script nonce="qTgV725rIggfM0aRCZVMSA">window.google = {};(function(){
+var d=/^\s*(?!javascript:)(?:[\w+.-]+:|[^:/?#]*(?:[/?#]|$))/i;
+(this||self).google.navigateTo=function(a,c,b){!/\/.*?[&?]gsc=1/.test(c.location.href)&&a!==c&&a.google?a.google.r&&(a.google.r=0,a=a.location,b=d.test(b)?b:void 0,b!==void 0&&(a.href=b),c.location.replace("about:blank")):c.location.replace(b)};}).call(this);(function(){var redirectUrl='https://www.gotquestions.org/spiritual-spouse.html';google.navigateTo(parent,window,redirectUrl);})();</script> <noscript> <meta content="0;url=https://www.gotquestions.org/spiritual-spouse.html" http-equiv="refresh"> </noscript> </head>  </html>

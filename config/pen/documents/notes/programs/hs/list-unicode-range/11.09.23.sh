@@ -1,0 +1,5 @@
+cd /root/notes;  "list-unicode-range" "2000" "206F" "#" "<==" "pen-odn"
+cd /root/notes;  "list-unicode-range" "2070" "209F" "#" "<==" "pen-odn"
+cd /root/notes;  "list-unicode-range" "20A0" "20CF" "#" "<==" "pen-odn"
+cd /root/notes;  "list-unicode-range" "2100" "214F" "#" "<==" "pen-odn"
+cd /root/notes;  "list-unicode-range" "0391" "03C9" "#" "<==" "pen-odn"

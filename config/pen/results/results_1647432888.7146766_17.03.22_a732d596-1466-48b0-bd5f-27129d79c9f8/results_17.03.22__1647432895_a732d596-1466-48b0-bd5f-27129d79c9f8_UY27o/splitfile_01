@@ -1,0 +1,14 @@
+tell me which version of Wordpress the
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+$('.menu').slicknav();
+
+});
+
+</script>
+
+is compatible with? I am using WP 3.
+ if at all possible? Thank you.

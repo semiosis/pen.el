@@ -1,0 +1,70 @@
+
+1.1  alignment 
+1.2  alignment 
+1.3  alignment 
+1.4  alignment 
+1.5  alignment 
+1.6  alignment 
+1.7  alignment 
+1.8  alignment 
+1.9  alignment 
+2.0  alignment 
+2.1  alignment 
+2.2  alignment 
+2.3  alignment  
+EOD
+
+
+cat draft.term <<EOD
+shane@mele:~/var/smulliga/source/git/mullikine/glossaries$ cat bibliography.txt  
+Bibliography  
+-----------------  
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cat draft.term <<EOD
+shane@mele:~/var/smulliga/source/git/m

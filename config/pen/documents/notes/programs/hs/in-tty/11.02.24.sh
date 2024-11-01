@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"
+cd /root/.emacs.d/host/pen.el/docs;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"
+cd /root/.emacs.d/host/pen.el/docs;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"
+cd /root/.emacs.d/host/pen.el/docs;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"
+cd /root/.emacs.d/host/pen.el/docs;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"
+cd /root/.emacs.d/host/pen.el/docs;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"
+cd /root/.emacs.d/host/pen.el/docs;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"
+cd /root/.pen/documents/notes;  "in-tty" "-upo" "pen-pavs" "#" "<==" "bible-show-vers"

@@ -1,0 +1,8 @@
+
+@ is a meta-function on the atom.
+But it should be called "deref" or something.
+It is really just a function with the first arg of '@'.
+The first arg is the reference to the atom or the reference to an object
+that can be derefed, such as a ref.
+Other than that it's just a function.
+

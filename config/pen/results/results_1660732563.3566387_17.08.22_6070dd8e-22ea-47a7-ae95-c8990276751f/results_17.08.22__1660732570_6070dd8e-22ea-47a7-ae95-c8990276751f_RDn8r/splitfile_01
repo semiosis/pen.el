@@ -1,0 +1,1 @@
+"Functor" is a type class that defines a single function: fmap.

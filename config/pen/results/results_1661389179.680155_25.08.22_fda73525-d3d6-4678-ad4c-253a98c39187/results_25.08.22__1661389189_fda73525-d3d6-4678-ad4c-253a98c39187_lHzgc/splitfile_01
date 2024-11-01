@@ -1,0 +1,2 @@
+
+putStrLn $ "As upper case:\t" ++ (map toUpper s)

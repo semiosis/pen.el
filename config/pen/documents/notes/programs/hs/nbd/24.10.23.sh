@@ -1,0 +1,8 @@
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "upd"
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "nbd" "Romans" "3:21-26" "#" "<==" "zsh"

@@ -1,0 +1,4 @@
+,
+        'TESTS_REQUIRE': ['six', 'mock'],
+        'EXTRAS_REQUIRE': {'pf-generic-completion': ['pickledb']}
+    },

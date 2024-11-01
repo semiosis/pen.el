@@ -1,0 +1,9 @@
+
+  let row_length = length rows
+  let col_length = maximum (map length rows)
+
+  forM_ [0..row_length] $ \row -> do
+    forM_ [0..col_length] $ \col -> do
+      let cell = if col < length (rows !! row) then (rows !! row) !! col else ""
+      putStrLn cell
+EOD

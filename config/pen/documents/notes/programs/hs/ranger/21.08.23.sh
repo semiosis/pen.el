@@ -1,0 +1,8 @@
+cd /root/.pen/ebooks;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/ebooks;  "ranger" "#" "<==" "zsh"
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "ranger" "#" "<==" "zsh"
+cd /dev;  "ranger" "#" "<==" "zsh"
+cd /dev;  "ranger" "#" "<==" "zsh"
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epubdVnPsz;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV;  "ranger" "#" "<==" "zsh"

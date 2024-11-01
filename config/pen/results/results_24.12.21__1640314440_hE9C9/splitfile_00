@@ -1,0 +1,10 @@
+"visit" is a basic editor command.
+It is also the "help" symbol.
+
+C-h f visit RET
+  Display the full documentation of visit.
+
+Type <return> to continue, or q <return> to quit.
+
+Documentation for "visit-tags-table":
+

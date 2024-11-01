@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pl
+# key: pl
+# --
+printf("ASCII value = %d, Character = %c\n", ch , ch );

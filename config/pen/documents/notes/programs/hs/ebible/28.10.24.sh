@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"
+cd /root/repos/khinsen/monads-in-clojure;  "ebible" "-m" "ESV" "Genesis 32:30" "#" "<==" "Genesis"

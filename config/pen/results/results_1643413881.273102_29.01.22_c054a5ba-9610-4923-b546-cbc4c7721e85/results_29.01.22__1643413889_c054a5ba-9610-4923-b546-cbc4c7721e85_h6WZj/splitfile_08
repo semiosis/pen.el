@@ -1,0 +1,10 @@
+
+      (if (pen-complete-line-p preceding-text)
+          (pen-complete-line preceding-text tv)
+        (call-interactively (key-binding (kbd "M-3")))))))
+
+(defun pen-complete-line-p ()
+  "Checks if the line is complete"
+  (interactive)
+  (let ((bol (point))
+        (eol (save-excursion

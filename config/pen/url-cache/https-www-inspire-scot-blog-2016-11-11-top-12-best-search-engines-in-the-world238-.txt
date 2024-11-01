@@ -1,0 +1,2315 @@
+HTTP/1.1 200 OK
+Date: Thu, 15 Sep 2022 10:51:48 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: IITSReqUri=%2Fblog%2F2016%2F11%2F11%2Ftop-12-best-search-engines-in-the-world238; path=/; domain=www.inspire.scot; secure; HttpOnly
+Set-Cookie: PHPSESSID=f3d77115d3a6a2e708169b42676bf1c7; path=/; secure; HttpOnly
+Set-Cookie: _csrf=72f8aace9798ba9f0a204c5b9f4fd6f8b776d4baef5624e13bf83831c0cc3678a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22I34RMoMGD0UMzrBXtgx3P1SFSgGlziw7%22%3B%7D; path=/; secure; HttpOnly
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Security-Policy: img-src https://* 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.sharethis.com https://snap.licdn.com https://*.hotjar.com *.jquery.com https://cdn.syndication.twimg.com *.googletagmanager.com *.facebook.net https://js.hsadspixel.net *.linkedin.com *.gstatic.com *.google-analytics.com https://js.usemessages.com *.hsforms.net *.hsforms.com *.ampproject.org *.hs-analytics.net *.googleadservices.com *.hubspot.com https://googleads.g.doubleclick.net https://js.hs-banner.com *.google.com *.facebook.com *.twitter.com *.hs-scripts.com; child-src https://www.inspire.scot https://inspire.scot *.hubspot.com https://ws.sharethis.com *.hsforms.net *.hsforms.com *.sharethis.com *.google.com *.youtube.com *.facebook.com *.twitter.com https://syndication.twitter.com *.ampproject.org https://bid.g.doubleclick.net; frame-src 'self' *.hsforms.net https://*.hotjar.com *.hsforms.com https://inspire.scot *.sharethis.com *.inspire.scot *.youtube.com *.vimeo.com *.twitter.com *.facebook.com *.google.com; object-src 'self';
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Length: 25719
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Top 12 Best Search Engines in The World | Insights</title>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="description" content="Top 12 Best Search Engines in The World"> 
+        <meta name="keywords" content="Top 12 Best Search Engines in The World">    
+    <meta charset="UTF-8">
+        <meta name="google-site-verification" content="rWkCp3Fsq6MpisHTZm3SidAibgPoNSfI2gzNyZfa9Oo" />
+    <link rel="icon" href="/themes/frontend/iits/images/favicon.ico" type="image/x-icon" />
+    <script src="/themes/frontend/iits/js/uisearch.js" async></script>    
+    <script src="/themes/frontend/iits/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="/themes/frontend/iits/js/owl.carousel.min.js" type="text/javascript"></script>
+    <link rel="publisher" href="https://plus.google.com/116616036201099998670/" /><meta name="news_keywords" content="">
+				<meta name="standout" content="/blog/2016/11/11/top-12-best-search-engines-in-the-world238/"/>
+				   
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="JWEvKSH4VXJ44lBwX1D6s6Ev5G38GqU9yBFVYtFN3StsUht7bJcYNTzSBT0lIrjr1UicXqwr9nubdhIOqySqHA==">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9BHRPN');</script>
+<!-- End Google Tag Manager -->    <link href="/themes/frontend/iits/css/owl.carousel.min.css" rel="stylesheet">
+<link href="/themes/frontend/iits/css/owl.theme.default.min.css" rel="stylesheet">
+<link href="/themes/frontend/iits/css/style.min.css?v=1658925701" rel="stylesheet">
+<link href="/css/site.css" rel="stylesheet">    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '225915527846167'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img alt="pixel code" height="1" width="1" 
+src="https://www.facebook.com/tr?id=225915527846167&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code --><script type="application/ld+json">
+							{
+							  "@context" : "http://schema.org",
+							  "@type" : "BlogPosting",
+							  "mainEntityOfPage": {
+     							"@type": "WebPage",
+     							"@id": "https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238"
+  								},
+							  "name" : "Top 12 Best Search Engines in The World | Insights",
+							  "url" : "https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238",
+							  "headline":"Top 12 Best Search Engines in The World | Insights",	
+							  "image":{
+                                   "@type":"ImageObject",
+                                  "url":"https://www.inspire.scot/datafiles/uploaded/cms_banner/main/main_117_logo-web-design.jpg",
+                                  "width":"162",
+                                  "height":"112"
+                              },
+							  "publisher":{ 
+								  "@type":"Organization",
+								  "name":"Inspire IT Services",
+								  "logo":{
+	                                     "@type":"ImageObject", 
+	                                     "url":"https://www.inspire.scot/datafiles/uploaded/cms_banner/main/main_117_logo-web-design.jpg",
+	                                     "width":"162"
+	                                  
+                                 }									  
+							},							   
+							  "author" : {
+							    "@type" : "Person",
+							    "name" : "David Dwyer"
+							  },
+							  "datePublished" : "2016-11-11 00:00:00",
+							  "dateModified" : "2016-11-11 12:44:48",
+							  "articleBody" : "<p>Search Engines are now part of our daily life, whether it be carrying out research for Xmas presents or where is the nearest coffee shop open before 7am or looking for best Steak House in town. People are now becoming more and more dependent on search engines to get the answer for their everyday queries.<br />
+<br />
+At Inspire we monitor our search traffic using a variety of analytics. Most of our queries returned are related to what we do and some are simply bizarre. Those we&rsquo;re interested in relate to the services of what we do e.g improving search ranking, web design, web development, and many more.&nbsp;<br />
+<br />
+Much as we utilise &ldquo;all routes to market&rdquo; we are still heavily dependent on the search engines for our bread &amp; butter traffic.<br />
+<br />
+Recently we did a piece of work for a client looking to reach into the Russian market, they&rsquo;d spoken to other firms who all shared about what they&rsquo;d do on Google and how such experts they are. This completely missed the point as Google are not the dominant search engine in Russia, Yandex is!!!<br />
+<br />
+This brought it home to me that perhaps people have assumed that because Google is a dominant Global player that they are also the dominant player in every market.&nbsp;<br />
+<br />
+For that reason we thought it would be worthwhile having a run down on the rest of the World, so let&rsquo;s look at top 12&nbsp;search engines in the world.</p>
+
+<h2>List of Top 12&nbsp;Best Search Engines in The World</h2>
+
+<p><strong>1. <a href=\"http://www.google.com\" target=\"_blank\">Google</a>&nbsp;<a href=\"http://www.google.co.uk\" target=\"_blank\"><img alt=\"search engine optimisation - Perth - Scotland\" src=\"/desktop/web/ckfinder/userfiles/images/googles-new-logo.gif\" style=\"float:right; height:91px; width:200px\" /></a></strong><br />
+Google Search Engine is the best search engine in the world and it is also one of most popular products from Google. Almost 70 percent of the Search Engine market has been acquired by Google. The tech giant is always evolving and looking to improve the search engine algorithm to provide best results to the end-user. Although Google appears to be the biggest search engine, as of 2015 YouTube is now more popular than Google (on desktop computers).<br />
+<strong>GIVE IT&nbsp;A GO:&nbsp;&nbsp;</strong><a href=\"https://www.amazon.com/search-google-com-Google-Search/dp/B00SZDLGSO/ref=sr_1_1?keywords=google+search&amp;qid=1646667395&amp;sprefix=google+sear%2Caps%2C419&amp;sr=8-1\" rel=\"sponsored\" target=\"_blank\">Google Search App</a><br />
+<br />
+<strong>2. <a href=\"http://bing.com\" target=\"_blank\" title=\"SEO | Web Design | Perth\">Bing</a> &nbsp;<a href=\"http://www.bing.com\" target=\"_blank\"><img alt=\"SEO | Perth | Web Design | Bing | PPC \" src=\"/desktop/web/ckfinder/userfiles/images/inspire%20it%20services%20-%20SEO.png\" style=\"float:right; height:91px; width:200px\" title=\"SEO | Perth | Web Design | Bing | PPC \" /></a></strong><br />
+Bing is Microsoft&rsquo;s answer to Google and it was launched in 2009. Bing is the default search engine in Microsoft&rsquo;s web browser. At Bing, they are always striving to make it a better search engine but it&rsquo;s got a long way to go to give Google competition. Microsoft&rsquo;s search engine provides different services including image, web and video search along with maps. Bing introduced Places (Google&rsquo;s equivalent is Google My Business), this is a great platform for business to submit their details to optimise their search results.<br />
+<strong>GIVE IT&nbsp;A GO:&nbsp;&nbsp;</strong><a href=\"https://www.amazon.com/gp/product/B004T54Y2M/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004T54Y2M&amp;linkCode=as2&amp;tag=afftim0d-20&amp;linkId=427c60280a7aee14d1e62549c555bb83\" rel=\"sponsored\" target=\"_blank\">Bing Search App</a><br />
+<br />
+<strong>3. <a href=\"http://yahoo.co.uk\" target=\"_blank\">Yahoo</a>&nbsp;<a href=\"http://yahoo.co.uk\" target=\"_blank\"><img alt=\"yahoo | SEO | Perth | Scotland \" src=\"/desktop/web/ckfinder/userfiles/images/yahoo.png\" style=\"float:right; height:91px; width:200px\" title=\"yahoo | SEO | Perth | Scotland \" /></a></strong><br />
+Yahoo &amp; Bing compete more with each other than with Google. A recent report on netmarketshare.com tells us that Yahoo have a market share of 7.68 percent. Although a leader as a free email provider, this is declining significantly though with their recent acknowledgement that User Details &amp; Passwords where hacked last year.<br />
+<strong>GIVE IT A GO:&nbsp;&nbsp;</strong><a href=\"https://www.amazon.com/gp/product/B014X5UGPQ/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B014X5UGPQ&amp;linkCode=as2&amp;tag=afftim0d-20&amp;linkId=afc38fc0f331625179d81a7b859afea0\" rel=\"sponsored\" target=\"_blank\">Yahoo Search App</a><br />
+<br />
+<strong>4. &nbsp;<a href=\"http://baidu.com\">Baidu</a> &nbsp;<a href=\"http://www.baidu.com\" target=\"_blank\"><img alt=\"Baidu - SEO - Perth - PPC\" src=\"/desktop/web/ckfinder/userfiles/images/Baidu%20-%20SEO%20-%20Perth%20-%20PPC.jpg\" style=\"float:right; height:91px; width:200px\" title=\"Baidu - SEO - Perth - PPC\" /></a></strong><br />
+Baidu is the most used search engine in China and was founded in Jan, 2000 by Chinese Entrepreneur, Eric Xu. This web search is made to deliver results for website, audio files and images. It provides some other services including maps, news, cloud storage and much more.<br />
+<strong>WATCH THEIR STORY:</strong>&nbsp;<a href=\"https://www.amazon.com/gp/product/B077ZCJNM5/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B077ZCJNM5&amp;linkCode=as2&amp;tag=afftim0d-20&amp;linkId=2469a742390848f218724a13d3b4a4f6\" rel=\"sponsored\" target=\"_blank\">Baidu: The Chinese Google</a><br />
+<br />
+<strong>5. <a href=\"http://aol.co.uk\">AOL</a>&nbsp;&nbsp;<img alt=\"\" src=\"/desktop/web/ckfinder/userfiles/images/aol.jpg\" style=\"float:right; height:91px; width:200px\" /></strong><br />
+Aol.com is also among the top search engines. These are the guys that used to send out CD&rsquo;s which you&rsquo;d load onto your PC to install their browser and modem software. Once the pre-eminent player they now have a market share of 0.59 percent. Verizon Communication bought AOL for $4.4 billion. It was started back in 1983 as Control Video Corporation. It was named America Online in 1991 and in 2009 as AOL Inc. AOL is a global mass media company which is based in New York. The company also provides advertising services as AOL Advertising, AOL mail and AOL Platform.<br />
+<br />
+<strong>6. <a href=\"http://ask.com\">Ask.com</a>&nbsp;<img alt=\"ask | inspire | web design | perth\" src=\"/desktop/web/ckfinder/userfiles/images/ask-logo.jpg\" style=\"float:right; height:128px; width:200px\" title=\"ask | inspire | web design | perth\" /></strong><br />
+Founded in 1995, Ask.com, previously known as Ask Jeeves. Their key concept was to have search results based on a simple question + answer web format. It is a question &amp; answer community where you can get the answers for your question and it integrates a large amount of archive data to answer your question. Because of this dependency on archived and active user contributions the results will not be as current as those you get in Google, Bing and Yahoo. They&rsquo;ve tried to counter where their resources don&rsquo;t have the answer they take help from a third-party search engine. Interestingly they don&rsquo;t name who this is.<br />
+<br />
+&nbsp;</p>
+
+<p><img alt=\"\" src=\"/desktop/web/ckfinder/userfiles/images/excite%20-%20logo.png\" style=\"float:right; height:104px; width:200px\" /></p>
+
+<p><strong>7. <a href=\"http://www.excite.com/\">Excite</a>&nbsp;</strong></p>
+
+<p>Excite is not widely known but is one that still gets into the top 10. Excite is an online service portal that provides internet services like email, search engine, news, instant messaging and weather updates. This also provides us with the latest trends, topics and search for phrases such as: <a href=\"http://www.bbc.co.uk/newsbeat/article/37942662/what-will-president-trump-really-be-able-to-do\" target=\"_blank\">What can President Trump actually do?</a>&nbsp;<br />
+<br />
+<a href=\"http://www.duckduckgo.com\" target=\"_blank\"><img alt=\"duck duck go - Inspire IT Services | Perth \" src=\"/desktop/web/ckfinder/userfiles/images/duck%20duck%20go.png\" style=\"float:right; height:100px; width:100px\" /></a></p>
+
+<p><a href=\"https://www.duckduckgo.com\" target=\"_blank\"><strong>8. DuckDuckGo</strong></a><br />
+DuckDuckGo is a popular search engine known for protecting the privacy of the users. Unlike Ask.com they are quite open about who they use to generate search results;&nbsp;they&rsquo;ve partnered with Yahoo, Bing and Yummly. It was founded back in 2008 by Gabriel Weinberg in California and its revenue come from Yahoo-Bing search alliance network and Affiliates.</p>
+
+<p><br />
+&nbsp;</p>
+
+<p><a href=\"https://www.wolframalpha.com/\" target=\"_blank\"><img alt=\"wolfram alpha | Web Design | SEO | Perth\" src=\"/desktop/web/ckfinder/userfiles/images/wolf%20alpha.png\" style=\"float:right; height:76px; width:400px\" title=\"wolfram alpha | Web Design | SEO | Perth\" /></a><a href=\"https://www.wolframalpha.com/\" target=\"_blank\"><strong>9. Wolfram Alpha</strong></a><br />
+Wolfram Alpha is a computational knowledge search engine which does not give list of documents or web pages as search results. Results are based on facts &amp; data about that query. Their mission statement is&nbsp;to make all systematic knowledge computable and broadly accessible. Launched in 2009, they now have a Pro solution designed with pricing for Students and Educators. Much as it&rsquo;s targeted, it&rsquo;s an awesome tool for the right market.<br />
+<a href=\"http://www.yandex.com\"><img alt=\"yandex - perth - seo - web design\" src=\"/desktop/web/ckfinder/userfiles/images/yandex%20-%20perth%20-%20seo%20-%20web%20design.png\" style=\"float:right; height:112px; width:200px\" title=\"yandex - perth - seo - web design\" /></a><br />
+<strong><a href=\"https://www.yandex.com\" target=\"_blank\">10. Yandex</a>&nbsp;</strong><br />
+Launched in 1997, Yandex is most used search engine in Russia. Yandex also has a great presence in Ukraine, Kazakhstan, Belarus and Turkey. It provides services like Yandex Maps, Yandex Music, online translator, Yandex Money and many other services.&nbsp;</p>
+
+<p><img alt=\"lycos | perth | SEO | Web design \" src=\"/desktop/web/ckfinder/userfiles/images/lycos%20logo.png\" style=\"float:right; height:80px; width:200px\" /><br />
+<a href=\"http://lycos.com\" target=\"_blank\"><strong>11. Lycos</strong></a><br />
+Lycos has a good reputation in search engine industry. Its key areas served are email, web hosting, social networking, and entertainment websites.<br />
+<br />
+<a href=\"http://www.chacha.com/\" target=\"_blank\"><strong><img alt=\"\" src=\"/desktop/web/ckfinder/userfiles/images/logo-chacha-lg-teal.jpg\" style=\"float:right; height:123px; width:320px\" /></strong></a></p>
+
+<p><strong><a href=\"http://www.chacha.com/\" target=\"_blank\">12. Chacha.com</a>&nbsp;- <em>December 2016 UPDATE: ChaCha ceased trading due to declining advertising revenues</em></strong><br />
+Chacha.com is a human-guided search engine and was founded in 2006. You can ask anything in its search box and you will be answered in real-time. It also provides mobile search and marketing services. You can also install its mobile apps on iPhone, iPad and Android.<br />
+<br />
+&nbsp;</p>
+
+<p><strong>Conclusion</strong><br />
+Now that you know a bit more about the best and most popular web search engines in the world, is it time for you time to capitalise on these online opportunities? &nbsp;Among them Google, Bing and Yahoo are dominating the search engine market (<em>on an aggregated search traffic basis</em>) and are used daily by most people in the world.&nbsp;</p>
+
+<p>The key question though which is the right fit for your business given the location, device being used and type of target audience you want to reach?<br />
+During the collation of this list, we&rsquo;ve taken data from Wikipedia, Netmarketshare.com and Alexa.com.<br />
+<br />
+At Inspire, we are always looking for the latest trends and the future of SEO. If you are interested in improving your own ranking with a Search Engine Optimisation Campaign, then contact the Inspire team on 01738 700006 or submit your details below.</p>
+"
+						  }
+						 </script>    <div id='divFrmUserCookieConfirm' class='cookie' style='display:none;'>
+            <div id='divCookieConfirm' style='display:none;'>
+            <form id="frmUserCookieConfirm" class="contact" action="/site/cookieconfirm" method="post">
+<input type="hidden" name="_csrf" value="JWEvKSH4VXJ44lBwX1D6s6Ev5G38GqU9yBFVYtFN3StsUht7bJcYNTzSBT0lIrjr1UicXqwr9nubdhIOqySqHA==">  
+                    <div class="ckTop">
+                        <div class="ctTxt">
+                        This site uses cookies. For more information, please see our <a href="/privacy-policy">Privacy & Data Policy and Cookie Notice</a>.
+                        If you don't agree to our use of cookies, please navigate away from this site now.              
+                        </div>
+                        <input type="submit" name="submit" value="Accept" class="ckSubmitBtn">
+                    </div>
+                    <div class="ckBtm">
+                        <ul>
+                            <li><a href="https://www.protect.scot/" target="_blank"><a href="https://www.protect.scot/" target="_blank">Download the Protect Scotland app from NHS Scotland.</a></a></li>
+                            <li class="nhs"><a href="https://www.protect.scot/" target="_blank"><img src="/themes/frontend/iits/images/nhs_tp_btn.png" alt="NHS"></a></li>
+                            <li><a href="https://apps.apple.com/gb/app/id1526637715" target="_blank"><img src="/themes/frontend/iits/images/asBtn.png" alt="Apple Store"></a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=gov.scot.covidtracker" target="_blank"><img src="/themes/frontend/iits/images/gpBtn.png" alt="Google Play"></a></li>
+                        </ul>
+                    </div>
+                </form>            </div>
+        </div>
+            <script type="text/javascript">
+    function loadIframe() {
+    var tagName = document.getElementsByTagName('iframe');
+    for (var i=0; i<tagName.length; i++){
+    if(tagName[i].getAttribute('data-src')) {
+    tagName[i].setAttribute('src',tagName[i].getAttribute('data-src'));
+    } } }
+    setTimeout(loadIframe, 500);function loadIframe() {
+    var tagName = document.getElementsByTagName('iframe');
+    for (var i=0; i<tagName.length; i++){
+    if(tagName[i].getAttribute('data-src')) {
+    tagName[i].setAttribute('src',tagName[i].getAttribute('data-src'));
+    } } }
+    setTimeout(loadIframe, 500);    
+    function setBlogListHeight()
+    {       
+        equalHeight = function(container) {
+            maxHeight = 0;
+            jQuery(container).each(function() {
+                if (jQuery(this).height() > maxHeight) {
+                    maxHeight = jQuery(this).height();
+                }
+            });
+            jQuery(container).height(maxHeight);
+        }
+        $(window).on('load', function() {
+            equalHeight('.listBlogsRow > a');
+        });
+        $(window).on('load', function() {
+            equalHeight('.listBlogsRow > .shortDesc');
+        });
+        $(window).on('load', function() {
+            equalHeight('.listBlogsRow .categoryClass');
+        });
+    }
+    </script>
+        <!-- Global site tag (gtag.js) - Google Ads: 349459588 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-349459588"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-349459588');
+</script><!-- Hotjar Tracking Code for https://www.inspire.scot/ --> <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:3147303,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9BHRPN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!--Start WhatsApp section-->
+    <div class="whatsLinkBx">
+        <a id="whatsLink" href="https://wa.me/447776410777?text=Hi, I'm messaging you via the inspire.scot website..." class="btn whatsLink" role="button" aria-pressed="true"><img src="/themes/frontend/iits/images/whatsappIcon.png" alt="whatsApp"> Chat with us on WhatsApp</a>
+    </div>
+<!--End WhatsApp section-->
+<!-- <div class="side_icons" style="width:300px"> 
+    <div class="square" onclick = "slideRight();"><img src="/images/icon_call.png" alt="call icon"></div>
+    <div class="bar" onclick = "slideLeft();" style="left:35px"><span class="txt">Sales &amp; support</span>&nbsp;&nbsp;<span class="phone">01738 700 006</span></div>
+</div> -->
+<div id="mainContainer">
+    <div id="page">
+        <div id="header">           
+            <div class="headerTop"><div class="nav">
+	<ul>
+		<li ><a href="/">Home</a></li><li ><a href="/why-inspire">Why Use Us</a></li><li class='menu'><a href="javascript:void(0);">About</a><ul class='ddMenu'><li id='subMenu'><a href="/our-team">Team</a></li><li id='subMenu'><a href="/careers">Careers</a></li></ul></li><li ><a href="/portfolio">Our Work</a></li><li ><a href="/our-process">Our Process</a></li><li><a href="/blog" class='active'>Insights</a></li><li ><a href="/testimonials">Testimonials</a></li><li ><a href="/contact-us">Contact Us</a></li>				<li class='projectsDelivered'>
+		<img src="/images/slim.png" alt="call icon">
+		</li>
+		<li style="float:none;">
+			<div id="sbSearch" class="sb-search">
+				<form action="/search" method="get" name="frmSearch">								
+					<input name="search" type="text" id="searchBox" placeholder="Search" autocomplete="off" class="sb-search-input" />	
+					<input type="SUBMIT" value="" class="searchButton sb-search-submit">									
+				</form>
+			</div>									
+		</li>		
+	</ul>	
+</div>
+<script>new UISearch( document.getElementById( 'sbSearch' ) );</script></div>
+            <div class="headerMiddle">
+                <div>
+                    <div class="logo">
+                        	
+<style type='text/css'>
+.logoSliderDiv #wrapper{width:162px;}
+.logoSliderDiv .rslides{position: relative;list-style: none;overflow: hidden;width: 168px;padding: 0;margin: 0;}
+.logoSliderDiv .rslides li{position: absolute;display: none;width: 100%;left: 0;top: 0;}
+.logoSliderDiv .rslides li:first-child{position: relative;display: block;float: left;}
+.logoSliderDiv .rslides img {display: block;height: auto;float: left;width:auto;max-height:100px;padding:12px 0;border: 0;}
+</style>
+<div class="logoSliderDiv">
+	<div id="wrapper"> 
+		<ul class="rslides" id="slider1" name="slider1">		
+						<li><a href='/' target='_top'><img src='/datafiles/uploaded/cms_banner/main/main_210_iits_logo.png' border='0' alt='Inspire Agency' border='0'/></a></li>		
+				
+		</ul>
+	</div>	
+</div>	
+                    </div>
+                    <div class="support">                       
+                                                    <div class='clear'></div>
+                        <div class="bottomSection">
+                            <div class="nav">
+	<ul>
+		<li><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/web-design">Web Design</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/e-marketing">e-Marketing</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/search-engine-optimisation-packages">Search Engine Optimisation</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/graphic-design">Graphic Design</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/outsourcing-development">Outsourcing Development</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/advanced-mobile">Advanced Mobile</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/developer-sos">Developer SOS</a>	</ul>
+</div>	                        </div>
+                    </div>
+                </div>
+                <div class="boxShadow"><img src="/themes/frontend/iits/images/spacer.gif" alt=""></div>
+            </div>
+            <div class="headerSticky" style="display:none;">
+                <div class="headerTop">
+                    <div class="nav">
+	<ul>
+		<li ><a href="/">Home</a></li><li ><a href="/why-inspire">Why Use Us</a></li><li class='menu'><a href="javascript:void(0);">About</a><ul class='ddMenu'><li id='subMenu'><a href="/our-team">Team</a></li><li id='subMenu'><a href="/careers">Careers</a></li></ul></li><li ><a href="/portfolio">Our Work</a></li><li ><a href="/our-process">Our Process</a></li><li><a href="/blog" class='active'>Insights</a></li><li ><a href="/testimonials">Testimonials</a></li><li ><a href="/contact-us">Contact Us</a></li>				<li class='projectsDelivered'>
+		<img src="/images/slim.png" alt="call icon">
+		</li>
+		<li style="float:none;">
+			<div id="sbSearchSticky" class="sb-search">
+				<form action="/search" method="get" name="frmSearch">								
+					<input name="search" type="text" id="searchBox" placeholder="Search" autocomplete="off" class="sb-search-input" />	
+					<input type="SUBMIT" value="" class="searchButton sb-search-submit">									
+				</form>
+			</div>									
+		</li>		
+	</ul>	
+</div>
+<script>new UISearch( document.getElementById( 'sbSearchSticky' ) );</script>                </div>
+                <div class="headerMiddle">
+                    <div>
+                        <div class="logo">
+                            	
+<style type='text/css'>
+.headerSticky .logoSliderDiv #wrapper{width:115px;}
+.headerSticky .logoSliderDiv #wrapper ul{list-style: none outside none;PADDING:0;margin:0 0 0 10px;}
+.headerSticky .logoSliderDiv .rslides{position: relative;list-style: none;overflow: hidden;width: 115px;padding: 0;margin: 0;}
+.headerSticky .logoSliderDiv .rslides li {position: absolute;display: none;width: 100%;left: 0;top: 0;}
+.headerSticky .logoSliderDiv .rslides li:first-child {position: relative;display: block;float: left;}
+.headerSticky .logoSliderDiv .rslides img {display: block;height: auto;float: left;width:auto;max-height:80px;padding:6px 0;border: 0;}
+</style>
+<div class="logoSliderDiv">
+	<div id="wrapper"> 
+		<ul class="rslides" id="slider2" name="slider2">		
+						<li><a href='/' target='_top'><img src='/datafiles/uploaded/cms_banner/main/main_210_iits_logo.png' border='0' alt='Inspire Agency' border='0'/></a></li>		
+				
+		</ul>
+	</div>	
+</div>	
+                        </div>
+                        <div class="support">
+                            <div class="topSection">
+                                <a href="/blog/2017/10/02/google-mobile-certification272" target="" title="Google Mobile Sites">
+														<img src="/datafiles/uploaded/cms_banner/main/main_119_google-mobile-certified.png" alt="Google Mobile Sites" alt="Google Mobile Sites" border='0'>
+													</a>                              
+                            </div>
+                            <div class='clear'></div>
+                            <div class="bottomSection">
+                                <div class="nav">
+	<ul>
+		<li><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/web-design">Web Design</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/e-marketing">e-Marketing</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/search-engine-optimisation-packages">Search Engine Optimisation</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/graphic-design">Graphic Design</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/outsourcing-development">Outsourcing Development</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/advanced-mobile">Advanced Mobile</a></li><li class="sep"><img src="/themes/frontend/iits/images/spacer.gif" alt="InspireITServices-App"></li><li><a href="/our-services/developer-sos">Developer SOS</a>	</ul>
+</div>	                            </div>
+                        </div>
+                    </div>
+                    <div class="boxShadow"><img src="/themes/frontend/iits/images/spacer.gif" alt=""></div>
+                </div>
+            </div>
+            <div class="headerBottom"><a name="content"></a><div class='slider'>								
+					<ul class='rslides'>
+						<li>
+							<img src='/images/service.jpg' alt='Inspire IT Services'>
+							<div class='sliderContentContainer'>				
+								<div class='headerSliderContent'><h1>Top 12 Best Search Engines in The World</h1></div>				
+							</div>													
+						</li>	
+					</ul>
+				</div>
+<script>
+$('.owl-carousel').owlCarousel({
+	items: 1,
+	margin: 5,
+	animationLoop: true,
+	autoplay:true,
+	autoplaySpeed: 1500,
+	smartSpeed: 1500,
+	loop:true,
+	slideshow: true,
+	dots: true,
+	nav: false,
+	autoHeight: false
+});
+</script>
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+<div class='breadCrumbs'><div class='links'><a href="/">Home</a> &nbsp;&nbsp;/&nbsp;&nbsp; <a href="/blog">Insights</a> &nbsp;&nbsp;/&nbsp;&nbsp; Top 12 Best Search Engines in The World </div></div></div>  
+        </div>      
+        <!--search_content_start--><div id="siteContainer"><!-- site container start -->
+	<div class="siteContent" id="siteContent">
+		<div class='mainColFullWidth' id='mainColFullWidth'>
+									
+			<table width="100%" cellspacing="0" cellpadding="0" border="0" class='blogPost'>
+	<tr>
+		<td align="left" valign="top"><div class='heading'>Top 12 Best Search Engines in The World</div></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<p class="blogInfoText"><span class="italicsText">by&nbsp;</span> <a href="/blog/author/dd" class="blogAuthor">David Dwyer</a> <span class="italicsText">on&nbsp;</span> 11/11/2016</p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<div class="socialButtons">			
+				<div class="buttons">
+					<span class='st_twitter_large' st_url="https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238" st_title="Top 12 Best Search Engines in The World" displayText='Tweet'></span>
+					<span class='st_facebook_large' st_url="https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238" st_title="Top 12 Best Search Engines in The World" displayText='Facebook'></span>
+					<span class='st_stumbleupon_large' st_url="https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238" st_title="Top 12 Best Search Engines in The World" displayText='StumbleUpon'></span>
+					<span class='st_googleplus_large' st_url="https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238" st_title="Top 12 Best Search Engines in The World" displayText='Google +'></span>
+					<span class='st_pinterest_large' st_url="https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238" st_title="Top 12 Best Search Engines in The World" displayText='Pinterest'></span>
+					<span class='st_sharethis_large' st_url="https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238" st_title="Top 12 Best Search Engines in The World" displayText='ShareThis'></span>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+						<div class="commonText"><p>Search Engines are now part of our daily life, whether it be carrying out research for Xmas presents or where is the nearest coffee shop open before 7am or looking for best Steak House in town. People are now becoming more and more dependent on search engines to get the answer for their everyday queries.<br />
+<br />
+At Inspire we monitor our search traffic using a variety of analytics. Most of our queries returned are related to what we do and some are simply bizarre. Those we&rsquo;re interested in relate to the services of what we do e.g improving search ranking, web design, web development, and many more.&nbsp;<br />
+<br />
+Much as we utilise &ldquo;all routes to market&rdquo; we are still heavily dependent on the search engines for our bread &amp; butter traffic.<br />
+<br />
+Recently we did a piece of work for a client looking to reach into the Russian market, they&rsquo;d spoken to other firms who all shared about what they&rsquo;d do on Google and how such experts they are. This completely missed the point as Google are not the dominant search engine in Russia, Yandex is!!!<br />
+<br />
+This brought it home to me that perhaps people have assumed that because Google is a dominant Global player that they are also the dominant player in every market.&nbsp;<br />
+<br />
+For that reason we thought it would be worthwhile having a run down on the rest of the World, so let&rsquo;s look at top 12&nbsp;search engines in the world.</p>
+
+<h2>List of Top 12&nbsp;Best Search Engines in The World</h2>
+
+<p><strong>1. <a href="http://www.google.com" target="_blank">Google</a>&nbsp;<a href="http://www.google.co.uk" target="_blank"><img alt="search engine optimisation - Perth - Scotland" src="/desktop/web/ckfinder/userfiles/images/googles-new-logo.gif" style="float:right; height:91px; width:200px" /></a></strong><br />
+Google Search Engine is the best search engine in the world and it is also one of most popular products from Google. Almost 70 percent of the Search Engine market has been acquired by Google. The tech giant is always evolving and looking to improve the search engine algorithm to provide best results to the end-user. Although Google appears to be the biggest search engine, as of 2015 YouTube is now more popular than Google (on desktop computers).<br />
+<strong>GIVE IT&nbsp;A GO:&nbsp;&nbsp;</strong><a href="https://www.amazon.com/search-google-com-Google-Search/dp/B00SZDLGSO/ref=sr_1_1?keywords=google+search&amp;qid=1646667395&amp;sprefix=google+sear%2Caps%2C419&amp;sr=8-1" rel="sponsored" target="_blank">Google Search App</a><br />
+<br />
+<strong>2. <a href="http://bing.com" target="_blank" title="SEO | Web Design | Perth">Bing</a> &nbsp;<a href="http://www.bing.com" target="_blank"><img alt="SEO | Perth | Web Design | Bing | PPC " src="/desktop/web/ckfinder/userfiles/images/inspire%20it%20services%20-%20SEO.png" style="float:right; height:91px; width:200px" title="SEO | Perth | Web Design | Bing | PPC " /></a></strong><br />
+Bing is Microsoft&rsquo;s answer to Google and it was launched in 2009. Bing is the default search engine in Microsoft&rsquo;s web browser. At Bing, they are always striving to make it a better search engine but it&rsquo;s got a long way to go to give Google competition. Microsoft&rsquo;s search engine provides different services including image, web and video search along with maps. Bing introduced Places (Google&rsquo;s equivalent is Google My Business), this is a great platform for business to submit their details to optimise their search results.<br />
+<strong>GIVE IT&nbsp;A GO:&nbsp;&nbsp;</strong><a href="https://www.amazon.com/gp/product/B004T54Y2M/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004T54Y2M&amp;linkCode=as2&amp;tag=afftim0d-20&amp;linkId=427c60280a7aee14d1e62549c555bb83" rel="sponsored" target="_blank">Bing Search App</a><br />
+<br />
+<strong>3. <a href="http://yahoo.co.uk" target="_blank">Yahoo</a>&nbsp;<a href="http://yahoo.co.uk" target="_blank"><img alt="yahoo | SEO | Perth | Scotland " src="/desktop/web/ckfinder/userfiles/images/yahoo.png" style="float:right; height:91px; width:200px" title="yahoo | SEO | Perth | Scotland " /></a></strong><br />
+Yahoo &amp; Bing compete more with each other than with Google. A recent report on netmarketshare.com tells us that Yahoo have a market share of 7.68 percent. Although a leader as a free email provider, this is declining significantly though with their recent acknowledgement that User Details &amp; Passwords where hacked last year.<br />
+<strong>GIVE IT A GO:&nbsp;&nbsp;</strong><a href="https://www.amazon.com/gp/product/B014X5UGPQ/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B014X5UGPQ&amp;linkCode=as2&amp;tag=afftim0d-20&amp;linkId=afc38fc0f331625179d81a7b859afea0" rel="sponsored" target="_blank">Yahoo Search App</a><br />
+<br />
+<strong>4. &nbsp;<a href="http://baidu.com">Baidu</a> &nbsp;<a href="http://www.baidu.com" target="_blank"><img alt="Baidu - SEO - Perth - PPC" src="/desktop/web/ckfinder/userfiles/images/Baidu%20-%20SEO%20-%20Perth%20-%20PPC.jpg" style="float:right; height:91px; width:200px" title="Baidu - SEO - Perth - PPC" /></a></strong><br />
+Baidu is the most used search engine in China and was founded in Jan, 2000 by Chinese Entrepreneur, Eric Xu. This web search is made to deliver results for website, audio files and images. It provides some other services including maps, news, cloud storage and much more.<br />
+<strong>WATCH THEIR STORY:</strong>&nbsp;<a href="https://www.amazon.com/gp/product/B077ZCJNM5/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B077ZCJNM5&amp;linkCode=as2&amp;tag=afftim0d-20&amp;linkId=2469a742390848f218724a13d3b4a4f6" rel="sponsored" target="_blank">Baidu: The Chinese Google</a><br />
+<br />
+<strong>5. <a href="http://aol.co.uk">AOL</a>&nbsp;&nbsp;<img alt="" src="/desktop/web/ckfinder/userfiles/images/aol.jpg" style="float:right; height:91px; width:200px" /></strong><br />
+Aol.com is also among the top search engines. These are the guys that used to send out CD&rsquo;s which you&rsquo;d load onto your PC to install their browser and modem software. Once the pre-eminent player they now have a market share of 0.59 percent. Verizon Communication bought AOL for $4.4 billion. It was started back in 1983 as Control Video Corporation. It was named America Online in 1991 and in 2009 as AOL Inc. AOL is a global mass media company which is based in New York. The company also provides advertising services as AOL Advertising, AOL mail and AOL Platform.<br />
+<br />
+<strong>6. <a href="http://ask.com">Ask.com</a>&nbsp;<img alt="ask | inspire | web design | perth" src="/desktop/web/ckfinder/userfiles/images/ask-logo.jpg" style="float:right; height:128px; width:200px" title="ask | inspire | web design | perth" /></strong><br />
+Founded in 1995, Ask.com, previously known as Ask Jeeves. Their key concept was to have search results based on a simple question + answer web format. It is a question &amp; answer community where you can get the answers for your question and it integrates a large amount of archive data to answer your question. Because of this dependency on archived and active user contributions the results will not be as current as those you get in Google, Bing and Yahoo. They&rsquo;ve tried to counter where their resources don&rsquo;t have the answer they take help from a third-party search engine. Interestingly they don&rsquo;t name who this is.<br />
+<br />
+&nbsp;</p>
+
+<p><img alt="" src="/desktop/web/ckfinder/userfiles/images/excite%20-%20logo.png" style="float:right; height:104px; width:200px" /></p>
+
+<p><strong>7. <a href="http://www.excite.com/">Excite</a>&nbsp;</strong></p>
+
+<p>Excite is not widely known but is one that still gets into the top 10. Excite is an online service portal that provides internet services like email, search engine, news, instant messaging and weather updates. This also provides us with the latest trends, topics and search for phrases such as: <a href="http://www.bbc.co.uk/newsbeat/article/37942662/what-will-president-trump-really-be-able-to-do" target="_blank">What can President Trump actually do?</a>&nbsp;<br />
+<br />
+<a href="http://www.duckduckgo.com" target="_blank"><img alt="duck duck go - Inspire IT Services | Perth " src="/desktop/web/ckfinder/userfiles/images/duck%20duck%20go.png" style="float:right; height:100px; width:100px" /></a></p>
+
+<p><a href="https://www.duckduckgo.com" target="_blank"><strong>8. DuckDuckGo</strong></a><br />
+DuckDuckGo is a popular search engine known for protecting the privacy of the users. Unlike Ask.com they are quite open about who they use to generate search results;&nbsp;they&rsquo;ve partnered with Yahoo, Bing and Yummly. It was founded back in 2008 by Gabriel Weinberg in California and its revenue come from Yahoo-Bing search alliance network and Affiliates.</p>
+
+<p><br />
+&nbsp;</p>
+
+<p><a href="https://www.wolframalpha.com/" target="_blank"><img alt="wolfram alpha | Web Design | SEO | Perth" src="/desktop/web/ckfinder/userfiles/images/wolf%20alpha.png" style="float:right; height:76px; width:400px" title="wolfram alpha | Web Design | SEO | Perth" /></a><a href="https://www.wolframalpha.com/" target="_blank"><strong>9. Wolfram Alpha</strong></a><br />
+Wolfram Alpha is a computational knowledge search engine which does not give list of documents or web pages as search results. Results are based on facts &amp; data about that query. Their mission statement is&nbsp;to make all systematic knowledge computable and broadly accessible. Launched in 2009, they now have a Pro solution designed with pricing for Students and Educators. Much as it&rsquo;s targeted, it&rsquo;s an awesome tool for the right market.<br />
+<a href="http://www.yandex.com"><img alt="yandex - perth - seo - web design" src="/desktop/web/ckfinder/userfiles/images/yandex%20-%20perth%20-%20seo%20-%20web%20design.png" style="float:right; height:112px; width:200px" title="yandex - perth - seo - web design" /></a><br />
+<strong><a href="https://www.yandex.com" target="_blank">10. Yandex</a>&nbsp;</strong><br />
+Launched in 1997, Yandex is most used search engine in Russia. Yandex also has a great presence in Ukraine, Kazakhstan, Belarus and Turkey. It provides services like Yandex Maps, Yandex Music, online translator, Yandex Money and many other services.&nbsp;</p>
+
+<p><img alt="lycos | perth | SEO | Web design " src="/desktop/web/ckfinder/userfiles/images/lycos%20logo.png" style="float:right; height:80px; width:200px" /><br />
+<a href="http://lycos.com" target="_blank"><strong>11. Lycos</strong></a><br />
+Lycos has a good reputation in search engine industry. Its key areas served are email, web hosting, social networking, and entertainment websites.<br />
+<br />
+<a href="http://www.chacha.com/" target="_blank"><strong><img alt="" src="/desktop/web/ckfinder/userfiles/images/logo-chacha-lg-teal.jpg" style="float:right; height:123px; width:320px" /></strong></a></p>
+
+<p><strong><a href="http://www.chacha.com/" target="_blank">12. Chacha.com</a>&nbsp;- <em>December 2016 UPDATE: ChaCha ceased trading due to declining advertising revenues</em></strong><br />
+Chacha.com is a human-guided search engine and was founded in 2006. You can ask anything in its search box and you will be answered in real-time. It also provides mobile search and marketing services. You can also install its mobile apps on iPhone, iPad and Android.<br />
+<br />
+&nbsp;</p>
+
+<p><strong>Conclusion</strong><br />
+Now that you know a bit more about the best and most popular web search engines in the world, is it time for you time to capitalise on these online opportunities? &nbsp;Among them Google, Bing and Yahoo are dominating the search engine market (<em>on an aggregated search traffic basis</em>) and are used daily by most people in the world.&nbsp;</p>
+
+<p>The key question though which is the right fit for your business given the location, device being used and type of target audience you want to reach?<br />
+During the collation of this list, we&rsquo;ve taken data from Wikipedia, Netmarketshare.com and Alexa.com.<br />
+<br />
+At Inspire, we are always looking for the latest trends and the future of SEO. If you are interested in improving your own ranking with a Search Engine Optimisation Campaign, then contact the Inspire team on 01738 700006 or submit your details below.</p>
+</div>	
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<div class="categoryClass"><i>Customer Relationship Management,</i> <i>e-Marketing,</i> <i>Frequently Asked Question's,</i> <i>Inspire Web Services,</i> <i>Search Engine Optimisation,</i> <i>The Evolving Web,</i> <i>Web Consultancy,</i> <i>Website Copywriting</i></div>
+		</td>
+	</tr>
+    
+        
+					
+	<tr>
+		<td align="left" valign="top" style="padding-top:25px;">						
+			<div class='floatLeft tdBlogCountComment'>35&nbsp;COMMENTS</div>
+				   <div class='floatLeft'>&nbsp;</div>
+				   <div class='floatLeft addYourComment'></div>		</td>
+	</tr>
+		<tr><td align="left" valign="top"><a name="comments"></a></td></tr>
+	<tr>
+		<td align="left" valign="top" id="actVwBlogPostDetailsMsg" class="hlt"></td>
+	</tr>
+		<tr>
+		<td align="left" valign="top">
+			<table width='100%' cellpadding='0' cellspacing='0' class='blogOuterBorder'>
+								<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Search</strong>&nbsp;<span class="italicsText">on</span>&nbsp;16 July 2018 11:02 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('39', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Try All-in-one Internet Search
+https://allinoneinternetsearch.com</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>deepapriya</strong>&nbsp;<span class="italicsText">on</span>&nbsp;4 August 2018 08:15 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('40', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Let's put it simple: if you want to be successful online,
+
+you need targeted traffic, and the best way to drive targeted
+
+traffic to your pages is with good search engine rankings.
+
+ 
+
+However, if you want to generate traffic from the search
+
+engines, your pages must appear on the first results page
+
+for the keywords and phrases you target... (http://www.socialmonkee.com/ujs876)</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Rohit Krishnawade Dhanwade</strong>&nbsp;<span class="italicsText">on</span>&nbsp;7 August 2018 05:04 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('41', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Most important information  
+Thanks</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Rohit Krishnawade Dhanwade</strong>&nbsp;<span class="italicsText">on</span>&nbsp;7 August 2018 05:05 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('42', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Most important information  
+Thanks</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Bud Fritz</strong>&nbsp;<span class="italicsText">on</span>&nbsp;6 September 2018 09:39 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('45', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">When I first started using WebCrawler 30 years ago, most search engines could reduce the list of hits by;
+required words,
+required character strings, and
+words which must not be there.
+Now only Google has that functionality, and it usually doesn't work.
+Are there any other search engines that still do what I need ?
+  </td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Asam</strong>&nbsp;<span class="italicsText">on</span>&nbsp;25 September 2018 06:52 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('47', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">So you have to be careful with every detail... because they open give to others your privacy and life. Not
+rightly. Can youfix it.. yes  we can 
+.si se puede!</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Vadym</strong>&nbsp;<span class="italicsText">on</span>&nbsp;16 October 2018 03:46 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('48', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">This is a new search engine for CJDNS network http://www.hyperborian.org . It indexes within CJDNS network.</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>G</strong>&nbsp;<span class="italicsText">on</span>&nbsp;2 November 2018 02:36 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('56', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">I  agree that google is probably the best search engine. However, I am sick and tired of getting little pop
+ups from them ever time I use internet explorer to search the net.  "use chrome".  For that reason I no longer
+use google as a search engine.  They can shove it up their
+a**.</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>mefta</strong>&nbsp;<span class="italicsText">on</span>&nbsp;14 November 2018 04:43 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('57', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Ok</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>lusifer</strong>&nbsp;<span class="italicsText">on</span>&nbsp;14 November 2018 04:45 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('58', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Fine</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Krishna Form Pune</strong>&nbsp;<span class="italicsText">on</span>&nbsp;18 November 2018 02:28 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('60', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Iam coming goiing.com
+
+The fist india  search engine
+Next generation plns</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Jeffree G.</strong>&nbsp;<span class="italicsText">on</span>&nbsp;22 December 2018 11:34 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('65', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">I've always liked Bing, a perfectly relevant search engine without the social controversy generated by Google.</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Monu nigam</strong>&nbsp;<span class="italicsText">on</span>&nbsp;4 January 2019 11:22 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('69', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Good</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Arunesh Verma </strong>&nbsp;<span class="italicsText">on</span>&nbsp;6 February 2019 02:46 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('75', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Nice</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Arunesh Verma </strong>&nbsp;<span class="italicsText">on</span>&nbsp;6 February 2019 02:46 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('76', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Nice</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Irum sultan </strong>&nbsp;<span class="italicsText">on</span>&nbsp;22 March 2019 08:35 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('83', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Thank you sir give me a important information</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Irum sultan </strong>&nbsp;<span class="italicsText">on</span>&nbsp;22 March 2019 08:37 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('84', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Thank you sir for give me important information </td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Manoj kumar das </strong>&nbsp;<span class="italicsText">on</span>&nbsp;26 March 2019 02:23 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('85', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Good ???? </td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Chibuike</strong>&nbsp;<span class="italicsText">on</span>&nbsp;26 March 2019 03:16 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('86', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Such an informative post.Thanks for sharing</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Danny Witney</strong>&nbsp;<span class="italicsText">on</span>&nbsp;7 April 2019 06:28 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('89', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Wow nice post ,</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Mahendra</strong>&nbsp;<span class="italicsText">on</span>&nbsp;12 May 2019 03:26 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('96', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Very nice
+Good 
+Lol ????????????????????????</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>EDU_Guide</strong>&nbsp;<span class="italicsText">on</span>&nbsp;13 May 2019 11:04 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('97', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">you missed upcoming search engines here .. and all of these global search engines listed mix ads and other
+sponsored content (that seeps into their results via bing or google). You missed engines built on a business
+model like Cuil. or blekko. that showed no ads. e.g. MeekD. . </td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Minajul fahim</strong>&nbsp;<span class="italicsText">on</span>&nbsp;24 August 2019 05:06 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('106', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Ha ha like China and Russia we indian also will make one search engine and operating system ...I am telling
+you all Americans bye bye</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>boris pevzner</strong>&nbsp;<span class="italicsText">on</span>&nbsp;13 October 2019 08:09 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('117', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">The application model that orders the search engine results according to categories. (project)
+Ph.D. Boris Pevzner  mtpl.boris@gmail.com
+Phone 972-545-983-919
+(‘Google’ is used as an example only)
+1. It is known that the quality of a search according to key words is significantly affected by the algorithms
+of ordering output websites. As rule, an user takes account (opens links) only the sites located on first page
+of output search result. Those systems that use categorization allow the user to navigate the possible choices
+more accurately. But modern search engines have no categories. The main function of the application is to
+assign  category codes to output sites (Flws).  The algorithm is based on the principles of learning machine
+and data mining. Our application is autonomous independent object. It is connected with Google (or other
+search engine) through two standard points-enter (key words) and output (results-links) The developers of the
+application will not work with Google codes.
+ It should note, that the categories are not search parameters and they are used  to make   easier  the
+selection of   the required Web site. The technology is based on the algorithm may be used for marketing , for
+filtering of  data from textual news flow and for the evaluation of Internet user’s interests.
+2. Creating learning set of each category.
+We selected some generic categories (computer, medicine, agriculture, technology, linguistics, science,
+education and so on). 
+By means of google searches we got the set of websites  of each category ( two first pages- 40 websites). Then
+text zone of  a website is extracted by ‘BeautifulSoap’( BeautifulSoup is a Python library for pulling
+data out of HTML and XML files )  and then repeated words and stop words are removed from this ‘clear’
+website (Flws)
+                   After that all ‘clear’ sites are merged into unit file Flunit.   It is the file 
+                   corresponding to one of category. Flunit is transformed into a category vector Vcat,
+                    It is the learning set of the category. 
+ 
+3. Algorithm of categorization 
+The algorithm is based on the principles of learning machine and data mining.
+                3.1. Main objects are the category vectors (Vcat ) and the site vectors to which a 
+                       code will be assigned  (Vws ) . 
+                   Vcat consists of all different words of Flunit. The dimension of Vcat is the number of  
+                  different words  of Flunit. It is the number of coordinates. Dimensionality of the 
+                 coordinate is frequency of a word into Flunit. A website of output result (Flws)   is 
+                 transformed into  a website vector Vws.
+                 Vws   consists of all different words of Flunit (Vcat). To each word of Vws is assigned 
+                 its site frequency, rest words (relatively Vcat ) have frequency = 0.
+                The dimension of Vcat is equal the dimension of Vws. If a word wasn’t  in a website
+                   3.2. Our software calculates cosine of an angle ?  between Vcat., in one hand, and 
+                Vws, in other hand, for all categories and all output web sites. 
+                Cosine between two angles is calculated in this way
+ ,
+               where xi,yi,zi are vector coordinates. 
+               We have the following sequence of pairs for each category Vcat. 
+-	V1ws …cos ?1
+-	V2ws …  cos ?2
+-	   *
+-	   *
+-	V40ws … cos ?40
+              3.4. The software orders these pairs for reducing cos ?.
+              3.5. If cos ? is within 1-0.8, then this web site is assigned  the code of category. 
+                         For checking of cosine as a proximity measure we made a small test. We had Vcat . We
+
+                        googled according to query ‘data processing’ and got first two pages of output 
+                        result. We selected the Website (website1) of first page and the Website of second 
+                        (website2). Our program created two vectors Vwb1 and Vwb2.  Cosine(A1) between Vcat 
+                                    and Vwb1 =0.80206, cosine(A2)=0.41. The program is assigned to Vwb1 at the
+code of 
+                       category ‘computer’ and it doesn’t do the same to Vwb2
+       Number	Words of category
+vector	Frequency in Vcat	Frequency in Vws	Frequency in Vws
+		Category vector	Website1 vector	 Website2 vector
+          1	      W1	            7	           2	           1
+          2	      W2 	            5	           2	           0
+          3	      W3	            3	           1	           1
+          4	      W4	            3	           0	           2
+          5	      W5 	            2	           1	           1
+          6	      W6	            2	           1	           0
+          7	      W7	            1	           1	           3
+          8		            1	           1	           4
+       cosine            			0.80206	            0.41
+          3.6. The result of output search can have the following form on the screen of 
+                 display:                                                     
+                                        Categories      number of output sites, belonged to the category
+                                        computer         N1
+                                        medicine          N2
+                                       agriculture        N3
+              3.7. User selects need category (ies) and open links corresponded the 
+                     selected category. 
+               4. Conclusion
+-	Developed technology makes ease a user contact with Google.
+The user can more targeted to open the need website and
+can access output far sites ( from second page) quite easily. 
+-	The technology may be used for marketing, for filtering of  data from textual news flow and for the
+evaluation of Internet user interests. 
+-	The technology may be used in library  catalogues. 
+-	Main requirement of technological software is high speed of data processing. 
+
+
+
+</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Thomas</strong>&nbsp;<span class="italicsText">on</span>&nbsp;25 October 2019 12:22 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('119', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Thank you for the guidance.. It does work.</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Larry</strong>&nbsp;<span class="italicsText">on</span>&nbsp;4 November 2019 05:39 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('120', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Most popular does not equal "Best".   I was expecting some sort of comparison of the search results along the
+lines of actual relevancy, cleanliness (filtering of the regurgitation sites), number of results, and timing.
+
+Seldom do humans choose the "best" they always seem to choose the most convenient.  </td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Rimsha</strong>&nbsp;<span class="italicsText">on</span>&nbsp;29 November 2019 01:48 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('123', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Ohhhh nice I love it it is so imfortative ????????</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Rimsha</strong>&nbsp;<span class="italicsText">on</span>&nbsp;29 November 2019 01:50 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('124', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Ohhhh nice I love it it is so imfortative ????????</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Muhammad Asif</strong>&nbsp;<span class="italicsText">on</span>&nbsp;18 December 2019 08:02 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('125', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">It was really informative and I learned a lot from your blog, it’s awesome Blog.
+
+Top 10 Companies in Dubai(UAE) to Work - is a job search engine designed to make it easier to find your dream
+Jobs in Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, and the UAE.</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>anonymus</strong>&nbsp;<span class="italicsText">on</span>&nbsp;13 January 2020 08:08 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('129', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">THERES NO REDDIT IN THE TOP 12 SEARCH ENGINES!!!! IT ANGERS ME!!!!!</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Rosemary</strong>&nbsp;<span class="italicsText">on</span>&nbsp;25 January 2020 07:06 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('131', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Can I please get information on the main types search engine in computing?</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Mickael</strong>&nbsp;<span class="italicsText">on</span>&nbsp;11 February 2020 06:21 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('132', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">I mostly use misterincognito.com when I want my searches to be private. Duckduckgo as desribed in your aticle
+also does the job!</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Dr. Elaine Steiner </strong>&nbsp;<span class="italicsText">on</span>&nbsp;7 March 2020 06:49 AM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('135', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Excellent information on the top 12 search engines. Will be in touch soon.  Best regards </td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Angie Key</strong>&nbsp;<span class="italicsText">on</span>&nbsp;20 April 2020 07:16 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('139', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">Ok</td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:25px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+								<tr>
+					<td align="left" valign="top" style="height:1px;"><hr style="background:#e6e6e6;height:1px;"></td>
+				</tr>
+										<tr>
+					<td align="left" valign="top" class='tdBlogCommentx'>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle" style='height:30px;' class="tdBlogCommentInfoText">
+									<span class="italicsText">by</span>&nbsp;<strong>Molly Lewis</strong>&nbsp;<span class="italicsText">on</span>&nbsp;19 May 2020 04:59 PM&nbsp;
+								</td>
+								<td align="right" valign="top" style="padding:10px 10px 0 0;">
+									<a href="javascript:void(0);" onclick="showCommentReplyForm('143', '138')"><img src='/images//btn_reply.png' alt='' border='0'/></a>								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="2" class="blogCommentText">I read your article about the best search engines.
+It was very good... however you left out a great search engine that I use. All the Internet.
+https://www.alltheinternet.com
+
+Molly </td>
+							</tr>
+														<tr>
+								<td align="left" valign="top" style="height:10px">&nbsp;</td>
+							</tr>
+						</table>
+					 </td>
+				</tr>
+									
+			</table>
+		</td>
+	</tr>
+		<tr>
+		<td align="top" valign="top">
+			<ul class="tabs" data-persist="true">
+	            <li class='leftBtn'><a href="#view1">Interested in working with us?</a></li>
+				<li class='rightBtn'><a href="#view2">Leave a comment</a></li>
+	        </ul>
+	        <div class="tabcontents">        
+				<div id="view1">
+					<div class="viewFromLeft"><form id="workingWithUsForm" action="/site/workingwithus" method="post" autocomplete="off">
+<input type="hidden" name="_csrf" value="JWEvKSH4VXJ44lBwX1D6s6Ev5G38GqU9yBFVYtFN3StsUht7bJcYNTzSBT0lIrjr1UicXqwr9nubdhIOqySqHA==">				<div id="actWorkingWithUsMsg" style="display:;"></div>
+		<div class="workingWithUsErrorSummary websiteReviewErrorSummary" id="workingwithUsErrorSummary" style="display:none;margin-right: 15px;"></div>	
+		
+		<div class="formElement">
+			<div class="fieldTitle">First Name</div>
+			<div class="fieldInput"><input type="text" id="workingwithusform-fname" class="bgInputTextBlog" name="WorkingWithUsForm[fname]"></div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">Last Name</div>
+			<div class="fieldInput"><input type="text" id="workingwithusform-lname" class="bgInputTextBlog" name="WorkingWithUsForm[lname]"></div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">Email</div>
+			<div class="fieldInput"><input type="text" id="workingwithusform-email" class="bgInputTextBlog" name="WorkingWithUsForm[email]"></div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">Website</div>
+			<div class="fieldInput">
+				<input type="text" name="WorkingWithUsForm[website]" id="workingwithusform-website" placeholder="Website">
+			</div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">Phone</div>
+			<div class="fieldInput"><input type="text" id="workingwithusform-phone" class="bgInputTextBlog" name="WorkingWithUsForm[phone]"></div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">How can we help?</div>
+			<div class="fieldInput"><textarea id="workingwithusform-message" class="bgInputTextareaBlog" name="WorkingWithUsForm[message]"></textarea></div>
+		</div>
+		<div class="formElement">
+			<div class="gdprLabel">To comply with data protection regulations (2018), we are unable to store and use your information unless you give us your permission. Please select Yes to allow this. <a href="/privacy-policy" target="_blank">View our data protection policy for details.</a></div>
+			<div class="gdprDropdownDiv"><select id="workingwithusform-gdprconsent" class="gdprDropdown" name="WorkingWithUsForm[gdprConsent]">
+<option value="">Select</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">&nbsp;</div>
+			<input type="hidden" name="g-recaptcha-response">
+			<div class="fieldInput"><input type="submit" class="btnSubmit" value="Submit">	</div>
+			<div class="form-group field-workingwithusform-postid">
+<div class="formElement"><input type="hidden" id="workingwithusform-postid" class="form-control" name="WorkingWithUsForm[postID]" value="138"></div>
+</div>			<div class="form-group field-workingwithusform-parentid">
+<div class="formElement"><input type="hidden" id="workingwithusform-parentid" class="form-control" name="WorkingWithUsForm[parentID]" value="0"></div>
+</div>		</div>
+		
+	</form>	
+</div>
+					<div class="viewFromRight" > 
+											<div class="viewTopRight">  
+							<div class="viewTopRightHeading">NEXT ARTICLE</div> 
+							<div class="viewTopRightTitle"><a title="Micro Moments and Digital Marketing Strategies" rel="bookmark" href="https://www.inspire.scot/blog/2016/11/23/micro-moments-and-digital-marketing-strategies239">Micro Moments and Digital Marketing Strategies</a></div> 
+						</div>
+											<div class="viewTopLeft"> 
+							<div class="viewTopLeftHeading"> PREVIOUS ARTICLE</div> 
+							<div class="viewTopLeftTitle"><a title="Secure your Magento store with the Supee 8788 patch " rel="bookmark" href="https://www.inspire.scot/blog/2019/10/21/secure-your-magento-store-with-the-supee-8788-patch-347">Secure your Magento store with the Supee 8788 patch </a></div> 
+						</div>
+									
+					</div>
+				</div>
+				<div id="view2">
+               		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+												<tr>
+							<td align="left" valign="top"><a name="form"></a></td>
+						</tr>								
+						<tr>
+							<td align="left" valign="top" class="tdBlogComment" style="padding-left:0px;">										
+								<div class="viewFromLeft" > <form id="blogPostComment" action="/site/blogpostcomment" method="post" autocomplete="off">
+<input type="hidden" name="_csrf" value="JWEvKSH4VXJ44lBwX1D6s6Ev5G38GqU9yBFVYtFN3StsUht7bJcYNTzSBT0lIrjr1UicXqwr9nubdhIOqySqHA==">				<div id="actBlogPostCommentMsg" style="display:;"></div>
+		<div class="websiteReviewErrorSummary" id="websiteReviewErrorSummary" style="display:none;margin-right: 15px;"></div>	
+		<div class="formElement">
+			<div class="fieldTitle">Name</div>
+			<div class="fieldInput"><input type="text" id="blogpostcommentform-name" class="bgInputTextBlog" name="BlogPostCommentForm[name]"></div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">Website</div>
+			<div class="fieldInput">
+				<input type="text" name="BlogPostCommentForm[website]" id="blogpostcommentform-website" placeholder="Website">
+			</div>
+		</div>
+		<div class="formElement">
+			<div class="fieldTitle">Email</div>
+			<div class="fieldInput"><input type="text" id="blogpostcommentform-email" class="bgInputTextBlog" name="BlogPostCommentForm[email]"></div>
+		</div>	
+		<div class="formElement">
+			<div class="fieldTitle">Comment</div>
+			<div class="fieldInput"><textarea id="blogpostcommentform-comment" class="bgInputTextareaBlog" name="BlogPostCommentForm[comment]"></textarea></div>
+		</div>	
+		<div class="formElement">
+			<div class="gdprLabel">To comply with data protection regulations (2018), we are unable to store and use your information unless you give us your permission. Please select Yes to allow this. <a href="/privacy-policy" target="_blank">View our data protection policy for details.</a></div>
+			<div class="gdprDropdownDiv"><select id="blogpostcommentform-gdprconsent" class="gdprDropdown" name="BlogPostCommentForm[gdprConsent]">
+<option value="">Select</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></div>
+		</div>
+
+		<div class="formElement">
+			<div class="fieldTitle">&nbsp;</div>
+			<input type="hidden" name="g-recaptcha-response">
+			<div class="fieldInput"><input type="submit" class="btnSubmit" value="Submit"></div>
+			<div class="form-group field-blogpostcommentform-postid">
+<div class="formElement"><input type="hidden" id="blogpostcommentform-postid" class="form-control" name="BlogPostCommentForm[postID]" value="138"></div>
+</div>			<div class="form-group field-blogpostcommentform-parentid">
+<div class="formElement"><input type="hidden" id="blogpostcommentform-parentid" class="form-control" name="BlogPostCommentForm[parentID]" value="0"></div>
+</div>		</div>
+			
+		
+		
+	</form>	
+
+ </div>
+								<div class="viewFromRight" > 
+																	<div class="viewTopRight">  
+										<div class="viewTopRightHeading"> NEXT ARTICLE</div> 
+										<div class="viewTopRightTitle"><a title="Micro Moments and Digital Marketing Strategies" rel="bookmark" href="https://www.inspire.scot/blog/2016/11/23/micro-moments-and-digital-marketing-strategies239">Micro Moments and Digital Marketing Strategies</a></div> 
+									</div>
+																	<div class="viewTopLeft"> 
+										<div class="viewTopLeftHeading"> PREVIOUS ARTICLE</div> 
+										<div class="viewTopLeftTitle"><a title="Secure your Magento store with the Supee 8788 patch " rel="bookmark" href="https://www.inspire.scot/blog/2019/10/21/secure-your-magento-store-with-the-supee-8788-patch-347">Secure your Magento store with the Supee 8788 patch </a></div> 
+									</div>
+																
+								</div>	
+							</td>								
+						</tr>								
+											</table>  							
+					<div style="margin-top:45px;">	
+						<div class="fb-comments" data-href="https://www.inspire.scot/blog/2016/11/11/top-12-best-search-engines-in-the-world238" data-numposts="10" data-width="580"></div>		
+					</div>         
+            	</div>            
+        	</div>
+        	<div class='clear'></div>
+        	<div class="viewFull">		
+							<div class="left">
+					<div class="paging"><a class="prev" title="Secure your Magento store with the Supee 8788 patch " href="https://www.inspire.scot/blog/2019/10/21/secure-your-magento-store-with-the-supee-8788-patch-347">PREVIOUS</a></div>
+				</div>
+							<div class="right">  
+					<div class="paging"><a class="next" title="Micro Moments and Digital Marketing Strategies" href="https://www.inspire.scot/blog/2016/11/23/micro-moments-and-digital-marketing-strategies239">NEXT</a></div>
+				</div>
+					
+			</div>
+		</td>
+	</tr>	
+</table>
+<div id="divFrmBlogPostCommentReply" style="display: none;left: 28%;position: fixed;top:5%;z-index:999999">	
+	<table class="blogCommentReply" border="0" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td class="commentReply">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tbody><tr>
+							<td class="pageHeader">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<td id="pageHeader" align="left" class="pageHeader">
+																		</td>
+										<td align="right" style="padding-right:10px;">
+											<img src="/images/icon_close.png" border="0" alt="[close]" title="Close" onclick="hidePopupForm();" class="cursorHand">
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>				
+									
+						<tr>
+							<td>
+								<div id="formContent">
+								<div style="padding-left: 10px;padding-right: 10px;"> 
+<form id="blogPostCommentReply" action="/blog/default/blogpostcommentreply" method="post" autocomplete="off">
+<input type="hidden" name="_csrf" value="JWEvKSH4VXJ44lBwX1D6s6Ev5G38GqU9yBFVYtFN3StsUht7bJcYNTzSBT0lIrjr1UicXqwr9nubdhIOqySqHA==">				<div id="actBlogPostCommentReplyMsg" class="success" style="display:none;"></div>
+		<div class="websiteReviewErrorSummary" id="websiteReviewErrorSummaryReply" style="display:none;margin:6px 0 0 0"></div>	
+		
+		<table border="0"  cellpadding="3" cellspacing="0" width="100%">
+			<tr>
+				<td id="actBlogPostCommentReplyEditMsg" colspan="3" align="left" valign='top'  class='hlt'>&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="left" valign="middle" width="25%">Name<label style="color:Red">*</label></td>
+				<td align="left" width="3%">:</td>
+				<td align="left" valign="top">
+					<input type="text" id="blogpostcommentform-name" class="bgInputTextBlog" name="BlogPostCommentForm[name]">				</td>	
+			</tr>
+			<tr>
+				<td align="left" valign="middle">Email<label style="color:Red">*</label></td>
+				<td align="left">:</td>
+				<td align="left" valign="top">
+					<input type="text" id="blogpostcommentform-email" class="bgInputTextBlog" name="BlogPostCommentForm[email]">				</td>	
+			</tr>
+			<tr>
+				<td align="left" valign="top">Comment<label style="color:Red">*</label></td>
+				<td align="left" valign="top">:</td>
+				<td align="left" valign="top">
+					<textarea id="blogpostcommentform-comment" class="bgInputTextareaBlog" name="BlogPostCommentForm[comment]"></textarea>				</td>	
+			</tr>
+			<tr>
+				<td align="left" valign="top" colspan="3" style="width:75%">
+					<div class="gdprLabel">To comply with data protection regulations (2018), we are unable to store and use your information unless you give us your permission. Please select Yes to allow this. <a href="/privacy-policy" target="_blank">View our data protection policy for details.</a><label style="color:Red">*</label></div>
+					<div class="gdprDropdownDiv"><select id="blogpostcommentform-gdprconsent" class="gdprDropdown" name="BlogPostCommentForm[gdprConsent]">
+<option value="">Select</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></div>
+				</td>	
+			</tr>
+			<tr>
+				<td align="left" colspan='2'>&nbsp;</td>
+				<td align="left" valign="top">																
+					<div class="blogPostCommentReplyRecaptcha" id="divRecaptchaBlogPostCommentReply" style="transform: scale(0.8);transform-origin: 0 0 0;"></div>		
+				</td>
+			</tr>
+			<tr>
+				<td align="left" valign="top" colspan="2"></td>
+				<td align="left" valign="top">
+					<input type="submit" class="btnSubmit" value="Submit"></div>
+					<input type="hidden" id="replyPostID" name="BlogPostCommentForm[postID]" value="">					<input type="hidden" id="replyCommentID" name="BlogPostCommentForm[parentID]" value="">				</td>
+			</tr>
+			<tr>
+				<td align="left" colspan="3" class="hlt">
+				* Fields are mandatory
+				<br><br>
+				</td>
+			</tr>
+		</table>		
+		
+	</form>	
+</div>
+								</div>
+							</td>
+						</tr>	
+					</tbody></table>			
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>	
+<script>
+function showCommentReplyForm(commentID, postID)
+{
+	$('#divFrmBlogPostCommentReply').show();
+	$('#replyPostID').val(postID);
+	$('#replyCommentID').val(commentID);
+}
+function hidePopupForm()
+{
+	$('#divFrmBlogPostCommentReply').hide();
+}
+</script>
+  
+		</div>
+	</div>
+</div><!-- site container end -->        <!--search_content_end-->
+        <div id="footer">
+                      
+            <div class="footerBottom">
+                                <div class="topSection">
+                    <a name="websiteReview"></a>
+                    <div class="form">
+    <div class="heading">We regularly send out tips and guidance notes. Join our Mailing List and get our <span>"Better Site Playbook"</span></div>         
+    <div id="mc_embed_signup">
+        <form action="https://scot.us1.list-manage.com/subscribe/post?u=c28afc29b4335d40cf5360175&amp;id=210ea165f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">  
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter Your Email Address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_c28afc29b4335d40cf5360175_332272cf10" tabindex="-1" value="">
+                </div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>  
+</div>                    
+                </div>
+                <div class="middleSection">
+                    <div class="websiteReview">
+                        <div class="rightBlock">
+<form id="websiteReviewForm" action="/site/websitereview" method="post" autocomplete="off">
+<input type="hidden" name="_csrf" value="JWEvKSH4VXJ44lBwX1D6s6Ev5G38GqU9yBFVYtFN3StsUht7bJcYNTzSBT0lIrjr1UicXqwr9nubdhIOqySqHA==">				<div id="actWebsiteReviewMsg" style="display:;"></div>
+		<div class="websiteReviewErrorSummary" id="websiteReviewErrorSummary" style="display:none;"></div>		
+		<div class="formElement"><input type="text" id="websitereviewform-fname" name="WebsiteReviewForm[fname]" placeholder="Enter Your First Name"></div>
+		<div class="formElement"><input type="text" id="websitereviewform-lname" name="WebsiteReviewForm[lname]" placeholder="Enter Your Last Name"></div>
+		<div class="formElement"><input type="text" id="websitereviewform-email" name="WebsiteReviewForm[email]" placeholder="Enter Your Email"></div>
+		<div class="formElement"><input type="text" id="websitereviewform-website" name="WebsiteReviewForm[website]" placeholder="Enter Your Website"></div>
+		<div class="formElement">
+			<input type="text" id="websitereviewform-howdidyouhear" name="WebsiteReviewForm[howdidyouhear]" placeholder="How did you hear about us"></div>
+		<div class="formElement">
+			<div class="gdprLabel">To comply with data protection regulations (2018), we are unable to store and use your information unless you give us your permission. Please select Yes to allow this. <a href="/privacy-policy" target="_blank">View our data protection policy for details.</a></div>
+			<div class="gdprDropdownDiv"><select id="websitereviewform-gdprconsent" class="gdprDropdown" name="WebsiteReviewForm[gdprConsent]">
+<option value="">Select</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></div>
+		</div>
+		<div class="formElement" style="padding-bottom:0;">
+			<div class="antiSpam"><input type="hidden" name="g-recaptcha-response"></div>
+			<div class="button">
+				<input type="submit" class="btnSubmit" value="Submit">				
+			</div>
+		</div>
+		
+	</form>	
+</div>
+<div class="leftBlock">
+	<div class="heading">FREE 20 MINUTE WEBSITE CONSULT</div>
+
+<p>Unlike many web design or marketing agencies, we do not run automated software and send you out a long technical Website Review Report on what you or indeed your last developer have missed.</p>
+
+<p>We recognise that the web is evolving at a tremendous pace, one real month is equal to one web year, so what was delivered just a few years ago, may very well be looking tired and dated.</p>
+
+<p>At the four BNI Groups we are members of, we are fully signed up to Givers Gain and offer referral clients 20 minutes of our consultancy time (at no charge).</p>
+
+<p>We cover a range of areas such as &quot;What is the objective of your website?&quot;; &quot;What is your business model?&quot;; &quot;Who is your audience?&quot;; then we can cover User eXperience; Usability; Site Analytics; Search Engine Optimisation (On-Site).</p>
+
+<p>We know the value of both your and our time but we also know that we&#39;re keen to build relationships and this approach is the first building block in establishing that mutual trust and respect.</p>
+</div>	
+                        
+                    </div>
+                </div>
+                                    <div class="bottomSection"> 
+                    <div class="quickLinks">
+                        <ul><li><a href="/our-services/web-design" title="Web Design" class='heading'>Web Design</a><ul><li><a href="/our-services/web-design/custom-build-website-package" title="Custom Build">Custom Build</a></li><li><a href="/our-services/web-design/mobile-website-package" title="Mobile">Mobile</a></li><li><a href="/our-services/web-design/google-for-jobs" title="Google for Jobs">Google for Jobs</a></li><li><a href="/our-services/web-design/developer-s-o-s" title="Developer SOS">Developer SOS</a></li><li><a href="/our-services/web-design/responsive-service" title="Responsive Mobile Web Design">Responsive Mobile Web Design</a></li><li><a href="/our-services/web-design/ecommerce-wordpress-developers" title="Ecommerce WordPress">Ecommerce WordPress</a></li><li><a href="/our-services/web-design/e-commerce-website-package" title="Ecommerce">Ecommerce</a></li><li><a href="/our-services/web-design/magento" title="Magento">Magento</a></li><li><a href="/our-services/web-design/small-business-website-package" title="Business Website Package">Business Website Package</a></li></ul></li><li><a href="/our-services/e-marketing" title="e-Marketing" class='heading'>e-Marketing</a><ul><li><a href="/our-services/e-marketing/email-campaign" title="Email Campaign">Email Campaign</a></li><li><a href="/our-services/e-marketing/adsense" title="AdSense">AdSense</a></li><li><a href="/our-services/e-marketing/affiliate-programme" title="Affiliate Programme">Affiliate Programme</a></li><li><a href="/our-services/e-marketing/social-media" title="Social Media">Social Media</a></li></ul></li><li><a href="/our-services/search-engine-optimisation-packages" title="Search Engine Optimisation" class='heading'>Search Engine Optimisation</a><ul><li><a href="/our-services/search-engine-optimisation-packages/kgpo-knowledge-graph-panel-optimisation" title="Knowledge Graph Panel Optimisation">Knowledge Graph Panel Optimisation</a></li><li><a href="/our-services/search-engine-optimisation-packages/seo-packages" title="SEO Packages">SEO Packages</a></li><li><a href="/our-services/search-engine-optimisation-packages/technical-seo" title="Technical SEO">Technical SEO</a></li><li><a href="/our-services/search-engine-optimisation-packages/pay-per-click" title="PPC         (Pay per Click)">PPC         (Pay per Click)</a></li><li><a href="/our-services/search-engine-optimisation-packages/webcopywriting" title="Web Copywriting">Web Copywriting</a></li><li><a href="/our-services/search-engine-optimisation-packages/local-seo" title="Local SEO">Local SEO</a></li><li><a href="/our-services/search-engine-optimisation-packages/gm-boost" title="GM Boost ">GM Boost </a></li><li><a href="/our-services/search-engine-optimisation-packages/gmb-starter-pack" title="GMB Starter Pack">GMB Starter Pack</a></li><li><a href="/our-services/search-engine-optimisation-packages/seo-backlinks" title="SEO Backlinks">SEO Backlinks</a></li></ul></li><li><a href="/our-services/graphic-design" title="Graphic Design" class='heading'>Graphic Design</a><ul><li><a href="/our-services/graphic-design/logo-design-and-animation" title="Logo Design & Animation">Logo Design & Animation</a></li><li><a href="/our-services/graphic-design/business-stationery" title="Business Stationery">Business Stationery</a></li><li><a href="/our-services/graphic-design/flyer-advert" title="Flyer/Advert">Flyer/Advert</a></li><li><a href="/our-services/graphic-design/psd-to-html" title="PSD to HTML">PSD to HTML</a></li><li><a href="/our-services/graphic-design/3dAnimation" title="3D Animation">3D Animation</a></li><li><a href="/our-services/graphic-design/multimediadocuments" title="Multimedia Documents">Multimedia Documents</a></li><li><a href="/our-services/graphic-design/info-graphics" title="Infographics">Infographics</a></li></ul></li><li><a href="/our-services/outsourcing-development" title="Outsourcing Development" class='heading'>Outsourcing Development</a><ul><li><a href="/our-services/outsourcing-development/stock-control-system" title="Stock Control System">Stock Control System</a></li><li><a href="/our-services/outsourcing-development/document-repository" title="Document Repository">Document Repository</a></li><li><a href="/our-services/outsourcing-development/database-design" title="Database Design">Database Design</a></li></ul></li><li><a href="/our-services/advanced-mobile" title="Advanced Mobile" class='heading'>Advanced Mobile</a><ul><li><a href="/our-services/advanced-mobile/mobile-responsive-service" title="Mobile Responsive Web Design">Mobile Responsive Web Design</a></li><li><a href="/our-services/advanced-mobile/advanced-mobile-development" title="Advanced Mobile Development">Advanced Mobile Development</a></li></ul></li><li><a href="/our-services/developer-sos" title="Developer SOS" class='heading'>Developer SOS</a></li><li><a href="/our-process" title="Our Process" class='heading'>Our Process</a></li></ul>                    </div>
+                </div>
+                                <div class="bottommostSection">
+                    <div>
+                                                <div class="middleBlock">
+                            <div class="leftBlock">
+                                <div class="quickLinks">
+                                    <div class="heading">QUICK LINKS</div>
+<ul><li><ul><li><a href="" title="Home">Home</a></li><li><a href="/why-inspire" title="Why Inspire">Why Inspire</a></li><li><a href="/our-services" title="Our Services">Our Services</a></li><li id='menuAbout' class='close'><div>About</div><ul><li><a href='/our-team' title="Our Team">Team</a></li><li><a href='/careers' title="Careers">Careers</a></li></ul></li><li><a href="/portfolio" title="Portfolio">Portfolio</a></li><li><a href="/blog" title="Insights">Insights</a></li><li><a href="/terms-and-conditions" title="Terms and Conditions">Terms and Conditions</a></li><li><a href="/privacy-policy" title="Privacy & Data Policy">Privacy & Data Policy</a></li><li><a href="/vulnerability-reporting" title="Vulnerability Disclosure Policy">Vulnerability Disclosure Policy</a></li><li><a href="/sitemap" title="Sitemap">Sitemap</a></li><li><a href="/business-gateway-digital-scotland-voucher-scheme-digital-marketing-grant" title="The Digital Scotland Voucher Scheme">The Digital Scotland Voucher Scheme</a></li><li><a href="/contact-us" title="Contact Us">Contact Us</a></li></ul><li style='margin-right:0;'><ul><li><a href="/our-process" title="Our Process">Our Process</a></li><li><a href="/accreditations-and-membership" title="Accreditations, Partnerships, Alliances & Memberships">Accreditations, Partnerships, Alliances & Memberships</a></li><li><a href="/developer-sos" title="Developer SOS">Developer SOS</a></li><li><a href="/visit-us" title="Visit Us">Visit Us</a></li><li id='menuLocation' class='close'><div>Locations</div><ul><li><a href="/perth" title="Perth">Perth</a></li><li><a href="/glasgow" title="Glasgow">Glasgow</a></li><li><a href="/edinburgh" title="Edinburgh">Edinburgh</a></li><li><a href="/livingston" title="Livingston">Livingston</a></li><li><a href="/fife" title="Fife">Fife</a></li><li><a href="/dundee" title="Dundee">Dundee</a></li><li><a href="/stirling" title="Stirling">Stirling</a></li><li><a href="/kilmarnock" title="Kilmarnock">Kilmarnock</a></li><li><a href="/aberdeen" title="Aberdeen">Aberdeen</a></li><li><a href="/paisley" title="Paisley">Paisley</a></li></ul></li><li><a href="/testimonials" title="Testimonials">Testimonials</a></li><li><a href="/gdpr" title="GDPR">GDPR</a></li><li><a href="/ipw-landing-page" title="IPW Landing Page">IPW Landing Page</a></li><li><a href="/dental-websites" title="Dental Websites">Dental Websites</a></li><li><a href="/scottish-government-digital-development-loan-scheme" title="Scottish Enterprise - Digital Development Loan Scheme">Scottish Enterprise - Digital Development Loan Scheme</a></li><li><a href="/start-digital" title="Start Digital">Start Digital</a></li><li><a href="/digital-boost-2022" title="Digital Boost 2022">Digital Boost 2022</a></li></ul></li>                                </div>
+                                <div class="socialButtons">
+                                    <div class="clear">
+                                        <div class="heading">CALL US</div>
+                                        <div class="left">
+                                            <a class="phone" href="tel:01738700006">01738 700 006</a>
+                                        </div>
+                                    </div>
+                                    <div class="clear">
+                                        <div class="heading">CONNECT WITH US</div>
+                                        <div class="left">
+                                            <ul><li>
+                                                                <a href="https://www.google.com/search?q=inspire+web+development&oq=inspire+web+develop&aqs=chrome.0.0j69i60j69i57.4036j0j7&sourceid=chrome&ie=UTF-8#lrd=0x48863b166f3759dd:0x125f88f29794fc2a,1,,," target="_blank" title="Google My Business">
+                                                                    <img src="/datafiles/uploaded/cms_banner/main/main_120_gmb2.png" alt="Google My Business" border='0'>
+                                                                </a>
+                                                            </li><li>
+                                                                <a href="https://www.facebook.com/inspirewebdevelopment" target="_blank" title="Facebook">
+                                                                    <img src="/datafiles/uploaded/cms_banner/main/main_40_footer_social_networks_Facebook_3.png" alt="Facebook" border='0'>
+                                                                </a>
+                                                            </li><li>
+                                                                <a href="https://www.linkedin.com/company/inspire-it-services" target="_blank" title="Linked in">
+                                                                    <img src="/datafiles/uploaded/cms_banner/main/main_78_footer_social_networks_Linkedin_6.png" alt="Linked in" border='0'>
+                                                                </a>
+                                                            </li><li>
+                                                                <a href="https://twitter.com/inspireltd" target="_blank" title="Twitter">
+                                                                    <img src="/datafiles/uploaded/cms_banner/main/main_77_footer_social_networks_Twitter_4.png" alt="Twitter" border='0'>
+                                                                </a>
+                                                            </li><li>
+                                                                <a href="https://www.instagram.com/inspire.digital.agency" target="_blank" title="Instagram">
+                                                                    <img src="/datafiles/uploaded/cms_banner/main/main_76_footer_social_networks_Instagram_8.png" alt="Instagram" border='0'>
+                                                                </a>
+                                                            </li><li>
+                                                                <a href="https://www.youtube.com/user/DavidDwyer71" target="_blank" title="Youtube">
+                                                                    <img src="/datafiles/uploaded/cms_banner/main/main_151_youtube.png" alt="Youtube" border='0'>
+                                                                </a>
+                                                            </li></ul>  
+                                        </div>
+                                    </div>
+                                    <div class="clear">
+                                        <div class="text">Connect with Inspire for all our latest news and events</div>
+                                    </div>
+                                </div>
+                                <div class="googleImage">
+                                      
+                                </div>
+                            </div>
+                            <div class="rightBlock">
+                                <div class="formHeading">We are here to help you, so if you'd like an informal no<br />obligation chat, then please let us know</div>
+<a name="callBackFooter"></a>
+<form id="footerContactForm" class="callBackFooter" action="/site/footercontact" method="post" autocomplete="off">
+<input type="hidden" name="_csrf" value="JWEvKSH4VXJ44lBwX1D6s6Ev5G38GqU9yBFVYtFN3StsUht7bJcYNTzSBT0lIrjr1UicXqwr9nubdhIOqySqHA==">				<div id="actRequestCallbackFooterMsg" style="display:;"></div>
+		<div class="contactFooterErrorSummary" id="contactFooterErrorSummary" style="display:none;"></div>
+		<div class="leftPart">
+			<div class="formElement"><input type="text" id="footercontactform-fname" name="FooterContactForm[fname]" placeholder="First Name"></div>
+			<div class="formElement"><input type="text" id="footercontactform-lname" name="FooterContactForm[lname]" placeholder="Last Name"></div>
+			<div class="formElement"><input type="text" id="footercontactform-phone" name="FooterContactForm[phone]" placeholder="Phone"></div>
+			<div class="formElement"><input type="text" id="footercontactform-email" name="FooterContactForm[email]" placeholder="Email"></div>	
+			<div class="formElement">
+				<input type="text" name="FooterContactForm[website]" id="footercontactform-website" placeholder="Website">
+			</div>		
+			<div class="formElement">
+				<div class="day"><select id="footercontactform-day" name="FooterContactForm[day]">
+<option value="">Select Day</option>
+<option value="Monday">Monday</option>
+<option value="Tuesday">Tuesday</option>
+<option value="Wednesday">Wednesday</option>
+<option value="Thursday">Thursday</option>
+<option value="Friday">Friday</option>
+<option value="Saturday">Saturday</option>
+<option value="Sunday">Sunday</option>
+</select></div>
+				<div class="time"><select id="footercontactform-time" name="FooterContactForm[time]">
+<option value="">Select Time</option>
+<option value="Morning">Morning</option>
+<option value="Afternoon">Afternoon</option>
+<option value="Evening">Evening</option>
+</select></div>
+			</div>	
+		</div>
+		<div class="rightPart">
+			<div class="formElement"><textarea id="footercontactform-message" name="FooterContactForm[message]" placeholder="Message"></textarea></div>
+			<div class="formElement">
+				<div class="gdprLabel">To comply with data protection regulations (2018), we are unable to store and use your information unless you give us your permission. Please select Yes to allow this. <a href="/privacy-policy" target="_blank">View our data protection policy for details.</a></div>
+				<div class="gdprDropdownDiv"><select id="footercontactform-gdprconsent" class="gdprDropdown" name="FooterContactForm[gdprConsent]">
+<option value="">Select</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></div>
+			</div>		
+			<div class="formElement">
+				<div class="antiSpam"><input name="g-recaptcha-response" type="hidden"></div>
+				<div class="button">
+					<!--<input type="button" class="btnSubmit" value="Submit">-->
+					<button id="submit" class="btnSubmit" type="submit">Send</button>
+				</div>	
+			</div>	
+		</div>
+	</form>	
+
+                                
+                            </div>
+                        </div>
+                        <div class="bottomBlock">
+                            <ul><li>
+												<a href="https://www.dundeeandanguschamber.co.uk/" target="_blank" title="Dundee & Angus Chamber of Commerce">
+													<img src="/datafiles/uploaded/cms_banner/main/main_125_footer_bottom_Dundee-Angus-Chamber-of-Commerce_719.png" alt="Dundee & Angus Chamber of Commerce" border='0'>
+												</a>
+											</li><li>
+												<a href="http://www.pkc.gov.uk/bbp" target="_blank" title="Better Business Partnership">
+													<img src="/datafiles/uploaded/cms_banner/main/main_64_footer_bottom_Better-Business-Partnership_48.png" alt="Better Business Partnership" border='0'>
+												</a>
+											</li><li>
+												<a href="http://www.bniscotlandnorth.com/scotland-north-(dundee,-fife-&-perth)-the-fair-city-(perth)/" target="_blank" title="BNI">
+													<img src="/datafiles/uploaded/cms_banner/main/main_65_footer_bottom_BNI-Fair-City_49.png" alt="BNI" border='0'>
+												</a>
+											</li><li>
+												<a href="https://threebestrated.co.uk/website-designers-in-perth" target="_blank" title="3 Best Rated">
+													<img src="/datafiles/uploaded/cms_banner/main/main_121_main_121_footerNewLogo1_2.png" alt="3 Best Rated" border='0'>
+												</a>
+											</li><li>
+												<a href="https://www.prince2.com/uk" target="_blank" title="PRINCE2">
+													<img src="/datafiles/uploaded/cms_banner/main/main_122_footer_bottom_PRINCE2_51.png" alt="PRINCE2" border='0'>
+												</a>
+											</li><li>
+												<a href="https://www.bcs.org/" target="_blank" title="British Computer Society">
+													<img src="/datafiles/uploaded/cms_banner/main/main_123_main_123_footer_bottom_BCS_52.png" alt="British Computer Society" border='0'>
+												</a>
+											</li><li>
+												<a href="https://www.entrepreneurialscotland.com/" target="_blank" title="Entrepreneurial Exchange">
+													<img src="/datafiles/uploaded/cms_banner/main/main_124_footer_bottom_The-Entrepreneurial-Exchange_406.jpg" alt="Entrepreneurial Exchange" border='0'>
+												</a>
+											</li><li><img src="/datafiles/uploaded/cms_banner/main/main_246_cyber_security_plus.png" alt="Cyber Essential" border='0'></li><li>
+												<a href="https://www.fifechamber.co.uk/about-us/premier-partners" target="_blank" title="Fife Chamber of Commerce Premier Partner">
+													<img src="/datafiles/uploaded/cms_banner/main/main_240_fife_premier_partner_logo-new.png" alt="Fife Chamber of Commerce Premier Partner" border='0'>
+												</a>
+											</li></ul>  
+                            <div class="creditTxt">
+                                <div class="left">
+                                    <p>
+                                    &copy; Inspire Digital 2022                                   
+                                    <br>A Scottish Web Services Company
+                                    </p>
+                                </div>
+                                <div class="right">
+                                    <p>Web Design by <a href="https://www.inspire.scot" target="_blank">Inspire Digital</a></p>
+                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Start WhatsApp section-->
+<!-- <div class="whatsLinkBx">
+    <a id="whatsLink" href="https://wa.me/447776410777?text=Hi, I'm messaging you via the inspire.scot website..." target="_blank" class="btn whatsLink" role="button" aria-pressed="true">WhatsApp Us<img src="/themes/frontend/iits/images/whatsappIcon.png" alt="whatsApp"></a>
+</div> -->
+<!--End WhatsApp section-->
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LduNyMaAAAAAJjzNDwdQFYhMt3DmMUw1wXUxKMd"></script>
+<script type="text/javascript">
+    var sitekey = '6LduNyMaAAAAAJjzNDwdQFYhMt3DmMUw1wXUxKMd'
+</script>
+<script src="/assets/1f03e392/jquery.js"></script>
+<script src="/assets/10c34497/yii.js"></script>
+<script src="/assets/10c34497/yii.activeForm.js"></script>
+<script src="/themes/frontend/iits/js/responsiveslides.min.js"></script>
+<script>jQuery(function ($) {
+jQuery('#workingWithUsForm').yiiActiveForm([], []);
+
+	document.getElementById('workingwithusform-website').parentElement.parentElement.style.display = 'none';
+    $('body').on('beforeSubmit', 'form#workingWithUsForm', function () {
+        var form = this;
+        grecaptcha.ready(function() {
+			grecaptcha.execute(sitekey, {action: 'workingwithus'}).then(function(token) {
+				$(form).find('[name=g-recaptcha-response]').val(token);      
+		        $.ajax({
+		            url    : $(form).attr('action'),
+		            type   : 'post',
+		            data   : $(form).serialize(),
+		            dataType :'json',
+		            success: function (response) 
+		            {	 
+			            var responseMsg = response.message;
+						 var redirectUrl = location.href;
+						 var dt = new Date();
+						 var timestamp = dt.getTime();
+						 redirectUrl = redirectUrl.split('?')[0].split('#')[0];
+						if(response.status == 'success')
+						{
+							responseMsg = responseMsg.replace('<div class="success">', '');
+			            	responseMsg = encodeURIComponent(responseMsg.replace('</div>', ''));
+							window.location.href = redirectUrl+'?actWorkingWithUsMsg='+responseMsg+'&timestamp='+timestamp+'#workingWithUsForm';
+						}
+						else{
+							$('#workingwithUsErrorSummary').css('display', 'block');
+							$('#workingwithUsErrorSummary').html(response.message);
+							$('#success').css('display','none');
+						}
+		            },
+		            error  : function () 
+		            {	           
+		                $('#workingwithUsErrorSummary').html('internal server error');
+		            }
+		        });
+		    });
+		});
+        return false;
+     });
+
+jQuery('#blogPostComment').yiiActiveForm([], []);
+
+	document.getElementById('blogpostcommentform-website').parentElement.parentElement.style.display = 'none';
+    $('body').on('beforeSubmit', 'form#blogPostComment', function () {
+        var form = this;
+        grecaptcha.ready(function() {
+			grecaptcha.execute(sitekey, {action: 'blogpostcomment'}).then(function(token) {
+				$(form).find('[name=g-recaptcha-response]').val(token);  
+		        $.ajax({
+		            url    : $(form).attr('action'),
+		            type   : 'post',
+		            data   : $(form).serialize(),
+		            dataType :'json',
+		            success: function (response) 
+		            {
+						 var responseMsg = response.message;
+						 var redirectUrl = location.href;
+						 var dt = new Date();
+						 var timestamp = dt.getTime();
+						 redirectUrl = redirectUrl.split('?')[0].split('#')[0];
+		            	if(response.status == 'success')
+						  {
+							responseMsg = responseMsg.replace('<div class="success">', '');
+			            	responseMsg = encodeURIComponent(responseMsg.replace('</div>', ''));
+							window.location.href = redirectUrl+'?actBlogPostCommentMsg='+responseMsg+'&timestamp='+timestamp+'#blogPostComment';
+						  }
+						else{
+							$('#websiteReviewErrorSummary').css('display', 'block');
+							$('#websiteReviewErrorSummary').html(response.message);
+							$('#success').css('display','none');
+						}
+
+		            },
+		            error  : function () 
+		            {	           
+		                $('#websiteReviewErrorSummary').html('internal server error');
+		            }
+		        });
+		    });
+		});
+        return false;
+     });
+
+jQuery('#blogPostCommentReply').yiiActiveForm([], []);
+
+    $('body').on('beforeSubmit', 'form#blogPostCommentReply', function () {
+        var form = $(this);          
+        $.ajax({
+            url    : form.attr('action'),
+            type   : 'post',
+            data   : form.serialize(),
+            dataType :'json',
+            success: function (response) 
+            {
+				 var responseMsg = response.message;
+				 var redirectUrl = location.href;
+				 redirectUrl = redirectUrl.split('?')[0].split('#')[0];
+            	if(response.status == 'success')
+				  {
+					$('#actBlogPostCommentReplyMsg').html(response.message);
+					$('#actBlogPostCommentReplyMsg').show();
+					setTimeout(function(){ $('#divFrmBlogPostCommentReply').hide(); }, 6000);
+				  }
+				else{
+					$('#websiteReviewErrorSummaryReply').css('display', 'block');
+					$('#websiteReviewErrorSummaryReply').html(response.message);
+					$('#success').css('display','none');
+					grecaptcha.reset(blogPostCommentReply); 
+				}
+
+            },
+            error  : function () 
+            {	           
+                $('#websiteReviewErrorSummaryReply').html('internal server error');
+            }
+        });
+        return false;
+     });
+
+jQuery('#frmUserCookieConfirm').yiiActiveForm([], []);
+    
+        $('body').on('beforeSubmit', 'form#frmUserCookieConfirm', function () {
+            var form = $(this);        
+            $.ajax({
+                url    : form.attr('action'),
+                type   : 'post',
+                data   : form.serialize(),
+                dataType :'json',
+                success: function (response) 
+                {
+                	if(response.status == 'success'){
+    					 $('#divFrmUserCookieConfirm').css('display','none');
+    				}
+                }
+            });
+            return false;
+         });
+         $('.headerSticky').hide();
+		   var stickyNav = function(){
+			var scrollTop = $(window).scrollTop() + 30;
+			if (scrollTop > 216){
+				$('.headerSticky').addClass('sticky');
+				$('.headerSticky').show();					
+			} else {
+				 $('.headerSticky').removeClass('sticky');
+				 $('.headerSticky').hide();				
+			}
+		   };
+		   stickyNav();
+		   $(window).scroll(function() {
+			stickyNav();
+		   });	
+    
+
+	$('.iframe-full-height').on('load', function(){		
+	    this.style.height=this.contentDocument.body.scrollHeight +'px';
+	});
+
+jQuery('#websiteReviewForm').yiiActiveForm([], []);
+
+	
+	document.getElementById('websitereviewform-howdidyouhear').parentElement.style.display = 'none';
+	
+    $('body').on('beforeSubmit', 'form#websiteReviewForm', function () {
+        var form = $(this);
+        grecaptcha.ready(function() {
+			grecaptcha.execute(sitekey, {action: 'websiteReview'}).then(function(token) {
+				$('form#websiteReviewForm').find('[name=g-recaptcha-response]').val(token);    
+				$.ajax({
+				    url    : form.attr('action'),
+				    type   : 'post',
+				    data   : form.serialize(),
+				    dataType :'json',
+				    success: function (response) 
+				    {
+						 var responseMsg = response.message;
+						 var redirectUrl = '/success';
+						 var dt = new Date();
+						 var timestamp = dt.getTime();
+						 redirectUrl = redirectUrl.split('?')[0].split('#')[0];
+				    	if(response.status == 'success')
+						  {
+							responseMsg = responseMsg.replace('<div class="success">', '');
+				        	responseMsg = encodeURIComponent(responseMsg.replace('</div>', ''));
+							window.location.href = redirectUrl+'?actSuccessMsg='+responseMsg+'&timestamp='+timestamp;
+						  }
+						else{
+							$('#websiteReviewErrorSummary').css('display', 'block');
+							$('#websiteReviewErrorSummary').html(response.message);
+							$('#success').css('display','none');
+						}
+
+				    },
+				    error  : function () 
+				    {	           
+				        $('#websiteReviewErrorSummary').html('internal server error');
+				    }
+				});
+			});
+        });
+        return false;
+     });
+
+jQuery('#footerContactForm').yiiActiveForm([], []);
+
+	document.getElementById('footercontactform-website').parentElement.style.display = 'none';
+
+    $('body').on('beforeSubmit', 'form#footerContactForm', function () {
+        var form = $(this);
+        grecaptcha.ready(function() {
+			grecaptcha.execute(sitekey, {action: 'contactFooter'}).then(function(token) {
+				$('form#footerContactForm').find('[name=g-recaptcha-response]').val(token);       
+		        $.ajax({
+		            url    : form.attr('action'),
+		            type   : 'post',
+		            data   : form.serialize(),
+		            dataType :'json',
+		            success: function (response) 
+		            {
+						 var responseMsg = response.message;
+						 var redirectUrl = '/success';
+						 var dt = new Date();
+						 var timestamp = dt.getTime();
+						 redirectUrl = redirectUrl.split('?')[0].split('#')[0];
+		            	if(response.status == 'success')
+						  {
+							responseMsg = responseMsg.replace('<div class="success">', '');
+			            	responseMsg = encodeURIComponent(responseMsg.replace('</div>', ''));
+							window.location.href = redirectUrl+'?actSuccessMsg='+responseMsg+'&timestamp='+timestamp;
+						  }
+						else{
+							$('#contactFooterErrorSummary').css('display', 'block');
+							$('#contactFooterErrorSummary').html(response.message);
+							$('#success').css('display','none');
+						}
+
+		            },
+		            error  : function () 
+		            {	           
+		                $('#contactFooterErrorSummary').html('internal server error');
+		            }
+		        });
+		    });
+		});
+        return false;
+     });
+
+
+	$(document).ready(function() {
+		$('#formWebsite').addClass('webAddress');
+        equalHeight = function(container) {
+            maxHeight = 0;
+            $(container).each(function() {
+                if ($(this).height() > maxHeight) {
+                    maxHeight = $(this).height();
+                }
+            });
+            $(container).height(maxHeight);
+        }
+        $(window).on('load', function() {
+            equalHeight('.servicesFooter > ul > li .title');
+        });
+        $(window).on('load', function() {
+            equalHeight('.servicesFooter > ul > li .description');
+        });
+        $(window).on('load', function() {
+            equalHeight('.servicesFooter > ul > li > a');
+        });
+        $(window).on('load', function() {
+            equalHeight('.services .item');
+        });
+        $(window).on('load', function() {
+            equalHeight('.accreditations > li > div');
+        });
+        $(window).on('load', function() {
+            equalHeight('.featuredBlock .ourteam li');
+        });
+        $(window).on('load', function() {
+            equalHeight('.descriptionFooter > div > div');
+        });
+        /*
+        $(window).on('load', function() {
+            equalHeight('.listBlogsRow > a');
+        });
+        $(window).on('load', function() {
+            equalHeight('.listBlogsRow > .shortDesc');
+        });
+        $(window).on('load', function() {
+            equalHeight('.listBlogsRow .categoryClass');
+        });
+        */
+        $(window).on('load', function() {
+            equalHeight('.sitemap li.block');
+        });
+        $('#menuLocation div').click(function(){
+        	if($('#menuLocation ul').css('display') == 'block')
+        	{
+        		$('#menuLocation ul').slideUp();
+        		$('#menuLocation').removeClass('open');
+        		$('#menuLocation').addClass('close');
+        	}
+        	else
+        	{
+				$('#menuLocation ul').slideDown();
+				$('#menuLocation').removeClass('close');
+        		$('#menuLocation').addClass('open');
+        	} 
+        });
+        $('#menuAbout div').click(function(){
+        	if($('#menuAbout ul').css('display') == 'block')
+        	{
+        		$('#menuAbout ul').slideUp();
+        		$('#menuAbout').removeClass('open');
+        		$('#menuAbout').addClass('close');
+        	}
+        	else
+        	{
+				$('#menuAbout ul').slideDown();
+				$('#menuAbout').removeClass('close');
+        		$('#menuAbout').addClass('open');
+        	} 
+        });
+    });
+
+});</script><script type="text/javascript">var switchTo5x=false;</script>
+<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">window.load = function(){stLight.options({publisher: "48ab3a44-6891-4768-9dfb-a644e770507e", doNotHash: true, doNotCopy: false, hashAddressBar: false});}</script>
+    <script type="text/javascript" src="/themes/frontend/iits/js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="/themes/frontend/iits/js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="/themes/frontend/iits/js/tabcontent.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    jQuery('.bxTestimonials').bxSlider({nav:true,pager:false});
+    jQuery("#slider0").responsiveSlides({auto:true,nav:false,pager:true,namespace:"callbacks",speed: 3900});
+    jQuery("#slider1").responsiveSlides({maxwidth: 162,speed: 1500});
+    jQuery("#slider2").responsiveSlides({maxwidth: 115,speed: 1500});
+}); 
+$(window).on('load', function() {
+    var url = window.location.href;     
+    var idName = window.location.hash.substr(1);
+    if(url.match('timestamp') && !idName){      
+        //jQuery('html, body').animate({'scrollTop': jQuery('#'+idName).offset().top - 250}, 'slow');   
+        jQuery('html, body').animate({'scrollTop': jQuery('#blogs').offset().top - 150}, 'slow');
+    }
+    else{
+        if(idName)
+        {
+            jQuery('html, body').animate({'scrollTop': jQuery('#'+idName).offset().top - 250}, 'slow'); 
+        }
+    }
+});
+
+$('.acodinbdy').hide(); //Hide/close all containers
+     $('.acodinmnu:first').addClass('active').next().show(); 
+    //On Click
+    $('.acodinmnu').click(function(){
+        if( $(this).next().is(':hidden') ) { //If immediate next container is closed...
+            $('.acodinmnu').removeClass('active').next().slideUp(); //Remove all .acc_trigger classes and slide up the immediate next container
+            $(this).toggleClass('active').next().slideDown(); //Add .acc_trigger class to clicked trigger and slide down the immediate next container
+        }
+        else{
+           $('.acodinmnu').removeClass('active').next().slideUp();
+        }
+        return false; //Prevent the browser jump to the link anchor
+});
+$(window).on('load', function() {
+        if(document.getElementById('divFrmUserCookieConfirm')){
+            document.getElementById('divFrmUserCookieConfirm').style.display = 'block';
+            document.getElementById('divCookieConfirm').style.display = 'block';
+        }
+    });
+
+$('.blogFaqTitle').click(function() {
+    $('.blogFaqBody').fadeToggle('fast');
+    $(this).toggleClass('active');
+});
+</script>
+</body>
+</html>

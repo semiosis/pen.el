@@ -1,0 +1,20 @@
+vendor: AI21
+engine-title: AI21
+lm-command: "ai21-complete.sh"
+model: j1-jumbo
+engine-delimiter: "###"
+# TODO Check this value. It may be 0
+# engine-min-tokens: 64
+default-tokens: 256
+approximate-token-char-length: 2.5
+engine-max-n-completions: 16
+engine-max-tokens: 2048
+engine-max-generated-tokens: 256
+engine-whitespace-support: yes
+foundation: true
+libre-dataset: no
+libre-model: no
+local: no
+defer:
+- code: OpenAI Codex
+- speed: OpenAI Curie

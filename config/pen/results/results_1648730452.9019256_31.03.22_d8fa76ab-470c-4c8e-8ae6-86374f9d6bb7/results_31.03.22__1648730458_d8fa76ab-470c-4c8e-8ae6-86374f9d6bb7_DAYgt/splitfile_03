@@ -1,0 +1,1 @@
+- Simon Peyton Jones (1946-): Sure. It's a type class definition. It means that >>= is the second operator defined in the class, and it has the precedence of 1.

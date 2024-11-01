@@ -1,0 +1,3 @@
+(setq org-brain-pins
+      '(
+        ))

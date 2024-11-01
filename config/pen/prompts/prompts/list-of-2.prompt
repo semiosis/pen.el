@@ -1,0 +1,32 @@
+title: List of
+doc: List a bunch of a type of thing
+tags: ilambda fun
+prompt-version: 4
+prompt: |
+  Here are some lists of things:
+  <delim>
+  A list of 8 countries in random order:
+  "Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador"
+  <delim>
+  A unordered, random selection of <n> <type>:
+  "
+engine: OpenAI Davinci
+# It's best with Davinci, rather than Codex
+temperature: 0.7
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\""
+- "<delim>"
+- "A list of"
+# - "\n\n"
+end-split-patterns:
+- "\n"
+vars:
+- n
+- type
+examples:
+- '5'
+- island countries
+postprocessor: sed 's/,/\n/g' | sed 's/^ *//'
+continuation-function: list-of <n> <g>

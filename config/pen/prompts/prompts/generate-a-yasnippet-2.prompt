@@ -1,0 +1,29 @@
+task: "Generate a YASnippet"
+tags: code emacs
+aliases:
+- yasnippet
+doc: "Given a language and a feature, generate a snippet"
+prompt-version: 1
+prompt: |+
+  # This is a snippet template example of a <q:name> in <mode>:
+  cd ~/.emacs.d/yasnippet/snippets/<sl:mode>
+  cat <sl:mode>_<sl:name> <<EOD
+  <:pp># -*- mode: snippet -*-
+  # name: <sl:name>
+  # --
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1.0
+stop-sequences:
+- EOD
+cache: on
+vars:
+- mode
+- name
+examples:
+- "haskell"
+- "catamorphism"
+filter: off
+completion: off
+insertion: on

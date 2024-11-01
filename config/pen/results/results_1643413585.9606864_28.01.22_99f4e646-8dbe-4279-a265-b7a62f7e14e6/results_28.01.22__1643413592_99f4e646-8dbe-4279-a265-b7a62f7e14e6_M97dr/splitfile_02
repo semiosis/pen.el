@@ -1,0 +1,10 @@
+git diff --cached
+diff --git a/core b/core
+index 4d9e0b7..e1a8f5e 100644
+--- a/core
++++ b/core
+@@ -1,3 +1,4 @@
+-#!/bin/bash
++#!/usr/bin/env bash
+ # Copyright (c) 2018-2019, AT&T Intellectual Property. All rights reserved.
+ # Copyright (c) 2014-

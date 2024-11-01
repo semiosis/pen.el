@@ -1,0 +1,3 @@
+':"/usr/share/vim/vim80"'
+Explore score, features & negative examples
+gy compare -f env.json -e env-negative.json -n 1 -g --self-play-mode --max-len

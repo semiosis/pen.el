@@ -1,0 +1,1 @@
+(quicklisp-slime-helper:quickload 'closer-mop)

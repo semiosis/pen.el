@@ -1,0 +1,496 @@
+lie
+    An 'intentional' falsehood.
+
+falsity
+    The fact of being untrue, incorrect, or
+    insincere.
+    "he exposed the falsity of the claim"
+
+personal spiritual truth
+base personal truth
+    Personal conception of personal truth.
+
+self-evident
+    [#epistemology]
+
+    A self-evident proposition is a
+    proposition that is known to be true by
+    understanding its meaning without
+    proof, and/or by ordinary human reason.
+
+dialectic
+    See "dialectic#argumentation".
+
+aletheia
+    [#philosophy]
+
+    Truth or disclosure.
+    
+    It was used in Ancient Greek philosophy
+    and revived in the 20th century by the
+    philosopher Martin Heidegger.
+    
+    Aletheia is variously translated:
+    - unconcealedness,
+    - disclosure,
+    - revealing, or
+    - unclosedness.
+
+truth value
+logical value
+    [#logic]
+    [#mathematics]
+
+    Value indicating the relation of a
+    proposition to truth.
+
+verisimilitude
+truthlikeness
+    [#philosophy]
+
+    The notion that some propositions are
+    closer to being true than other
+    propositions.
+    
+    The problem of verisimilitude is the
+    problem of articulating what it takes for
+    one false theory to be closer to the truth
+    than another false theory.
+    
+    This problem was central to the philosophy
+    of Karl Popper, largely because Popper was
+    among the first to affirm that truth is
+    the aim of scientific inquiry while
+    acknowledging that most of the greatest
+    scientific theories in the history of
+    science are, strictly speaking, false.
+    
+    If this long string of purportedly false
+    theories is to constitute progress with
+    respect to the goal of truth, then it must
+    be at least possible for one false theory
+    to be closer to the truth than others.
+
+    https://en.wikipedia.org/wiki/Verisimilitude
+
+proposition
+    A statement or assertion that expresses a
+    judgement or opinion.
+    "the proposition that high taxation is
+    undesirable"
+
+    [#logic]
+    [#linguistics]
+
+    A proposition is the meaning of a
+    declarative sentence.
+    
+    In philosophy, "meaning" is understood to
+    be a non-linguistic entity which is shared
+    by all sentences with the same meaning.
+
+T-schema
+truth-schema
+    Used to give an inductive definition of
+    truth which lies at the heart of any
+    realisation of Alfred Tarski's semantic
+    theory of truth.
+    
+    Some authors refer to it as the
+    "Equivalence Schema", a synonym introduced
+    by Michael Dummett.
+    
+    The T-schema is often expressed in NL, but
+    it can be formalized in many-sorted
+    predicate logic or modal logic; such a
+    formalisation is called a
+    "T-theory."[citation needed] T-theories
+    form the basis of much fundamental work in
+    philosophical logic, where they are
+    applied in several important controversies
+    in analytic philosophy.
+    
+    As expressed in semi-NL (where 'S' is the
+    name of the sentence abbreviated to S):
+    'S' is true if and only if S.
+
+    Example:
+    - 'snow is white' is true if and only if
+      snow is white.
+
+    https://en.wikipedia.org/wiki/T-schema
+
+Tarksian semantics
+    [semantic theory of truth]
+
+    To formulate linguistic theories without
+    semantic paradoxes such as the liar
+    paradox, it is generally necessary to
+    distinguish the language that one is
+    talking about (the object language) from
+    the language that one is using to do the
+    talking (the metalanguage).
+    
+    In the following, quoted text is use of
+    the object language, while unquoted text
+    is use of the metalanguage; a quoted
+    sentence (such as "P") is always the
+    metalanguage's name for a sentence, such
+    that this name is simply the sentence P
+    rendered in the object language.
+    
+    In this way, the metalanguage can be used
+    to talk about the object language;
+    Tarski's theory of truth (Alfred Tarski
+    1935) demanded that the object language be
+    contained in the metalanguage.
+
+semantic theory of truth
+    A theory of truth in the philosophy of
+    language which holds that truth is a
+    property of sentences.
+
+    The semantic conception of truth, which is
+    related in different ways to both the
+    correspondence and deflationary
+    conceptions, is due to work by Polish
+    logician Alfred Tarski.
+    
+    Tarski, in "On the Concept of Truth in
+    Formal Languages" (1935), attempted to
+    formulate a new theory of truth in order
+    to resolve the liar paradox.
+    
+    In the course of this he made several
+    metamathematical discoveries, most notably
+    Tarski's undefinability theorem using the
+    same formal technique Kurt Gödel used in
+    his incompleteness theorems.
+    
+    Roughly, this states that a truth-
+    predicate satisfying Convention T for the
+    sentences of a given language cannot be
+    defined within that language.
+
+Kripke's theory of truth
+    Based on partial logic (a logic of
+    partially defined truth predicates instead
+    of Tarski's logic of totally defined truth
+    predicates) with the strong Kleene
+    evaluation scheme.
+
+truth-value semantics
+    [#formal semantics]
+
+    An alternative to Tarskian semantics.
+    
+    It has been primarily championed by Ruth
+    Barcan Marcus, H. Leblanc, and M. Dunn and
+    N. Belnap.
+    
+    It is also called the substitution
+    interpretation (of the quantifiers) or
+    substitutional quantification.
+    
+    The idea of these semantics is that
+    universal (existential) quantifier may be
+    read as a conjunction (disjunction) of
+    formulas in which constants replace the
+    variables in the scope of the quantifier.
+    
+    For example, ∀xPx may be read (Pa & Pb &
+    Pc &...) where a,b,c are individual
+    constants replacing all occurrences of x
+    in Px.
+    
+    The main difference between truth-value
+    semantics and the standard semantics for
+    predicate logic is that there are no
+    domains for truth-value semantics.
+    
+    Only the truth clauses for atomic and for
+    quantificational formulas differ from
+    those of the standard semantics.
+
+Liar paradox
+    [#philosophy]
+    [#logic]
+
+    The classical liar paradox or liar's
+    paradox or antinomy of the liar is the
+    statement of a liar that they are lying:
+    for instance, declaring that "I am lying".
+    
+    If the liar is indeed lying, then the liar
+    is telling the truth, which means the liar
+    just lied.
+    
+    In "this sentence is a lie" the paradox is
+    strengthened in order to make it amenable
+    to more rigorous logical analysis.
+    
+    It is still generally called the "liar
+    paradox" although abstraction is made
+    precisely from the liar making the
+    statement.
+    
+    Trying to assign to this statement, the
+    strengthened liar, a classical binary
+    truth value leads to a contradiction.
+    
+    If "this sentence is false" is true, then
+    it is false, but the sentence states that
+    it is false, and if it is false, then it
+    must be true, and so on.
+
+    https://en.wikipedia.org/wiki/Liar_paradox
+
+supervaluationism
+    [#philosophical logic]
+
+    A semantics for dealing with irreferential
+    singular terms and vagueness.
+    
+    It allows one to apply the tautologies of
+    propositional logic in cases where truth
+    values are undefined.
+    
+    According to supervaluationism, a
+    proposition can have a definite truth
+    value even when its components do not.
+    
+    The proposition "Pegasus likes licorice",
+    for example, is often interpreted as
+    having no truth-value given the assumption
+    that the name "Pegasus" fails to refer.
+    
+    If indeed reference fails for "Pegasus",
+    then it seems as though there is nothing
+    that can justify an assignment of a truth-
+    value to any apparent assertion in which
+    the term "Pegasus" occurs.
+    
+    The statement "Pegasus likes licorice or
+    Pegasus doesn't like licorice", however,
+    is an instance of the valid schema
+    {\displaystyle p\vee \neg p}p\vee \neg p
+    ("{\displaystyle p}p or not-{\displaystyle
+    p}p"), so, according to supervaluationism,
+    it should be true regardless of whether or
+    not its disjuncts have a truth value; that
+    is, it should be true in all
+    interpretations.
+    
+    If, in general, something is true in all
+    precisifications, supervaluationism
+    describes it as "supertrue", while
+    something false in all precisifications is
+    described as "superfalse".
+
+alethiology
+    Means the study of truth, but can more
+    accurately be translated as the study of
+    the nature of truth.
+
+major theories of truth
+    - substantive
+      - consensus
+
+epistemic theories of truth
+    [#philosophy]
+    [#epistemology]
+    [#alethiology]
+
+    Attempts to analyze the notion of truth in
+    terms of epistemic notions such as
+    knowledge, belief, acceptance,
+    verification, justification, and
+    perspective.
+
+deflationary theory of truth
+    [#theories of truth]
+
+    A deflationary theory of truth is one of a
+    family of theories that all have in common
+    the claim that assertions of predicate
+    truth of a statement do not attribute a
+    property called "truth" to such a
+    statement.
+
+propositional truth
+    If a proposition is true, then we say it
+    has a truth value of "true"; if a
+    proposition is false, its truth value is
+    "false".
+    
+    For example, "Grass is green", and "2 + 5
+    = 5" are propositions.
+    
+    The first proposition has the truth value
+    of "true" and the second "false".
+
+truthmaker theory
+    The branch of metaphysics that explores
+    the relationships between what is true and
+    what exists.
+    
+    The basic intuition behind truthmaker
+    theory is that truth depends on being.
+    
+    For example, a perceptual experience of a
+    green tree may be said to be true because
+    there actually is a green tree.
+
+    This is meant to be a modern alternative
+    to the "correspondence theory".
+
+    https://plato.stanford.edu/entries/truth-correspondence/
+
+substantive
+    Having a firm basis in reality and so
+    important, meaningful, or considerable.
+    "there is no substantive evidence for the
+    efficacy of these drugs"
+
+    Having a separate and independent
+    existence.
+
+correspondence
+correspondence theories of truth
+    Emphasize that true beliefs and true
+    statements correspond to the actual state
+    of affairs.
+    
+    This type of theory stresses a
+    relationship between thoughts or
+    statements on one hand, and things or
+    objects on the other.
+    
+    It is a traditional model tracing its
+    origins to ancient Greek philosophers such
+    as Socrates, Plato, and Aristotle.
+    
+    This class of theories holds that the
+    truth or the falsity of a representation
+    is determined in principle entirely by how
+    it relates to "things" by whether it
+    accurately describes those "things".
+
+coherence
+coherence theory of truth
+    For coherence theories in general, truth
+    requires a proper fit of elements within a
+    whole system.
+    
+    Very often, though, coherence is taken to
+    imply something more than simple logical
+    consistency; often there is a demand that
+    the propositions in a coherent system lend
+    mutual inferential support to each other.
+    
+    So, for example, the completeness and
+    comprehensiveness of the underlying set of
+    concepts is a critical factor in judging
+    the validity and usefulness of a coherent
+    system.
+    
+    A pervasive tenet of coherence theories is
+    the idea that truth is primarily a
+    property of whole systems of propositions,
+    and can be ascribed to individual
+    propositions only according to their
+    coherence with the whole.
+    
+    Among the assortment of perspectives
+    commonly regarded as coherence theory,
+    theorists differ on the question of
+    whether coherence entails many possible
+    true systems of thought or only a single
+    absolute system.
+    
+    Some variants of coherence theory are
+    claimed to describe the essential and
+    intrinsic properties of formal systems in
+    logic and mathematics.
+
+pragmatic
+pragmatic theory of truth
+    The three most influential forms of the
+    pragmatic theory of truth were introduced
+    around the turn of the 20th century by
+    Charles Sanders Peirce, William James, and
+    John Dewey.
+    
+    Although there are wide differences in
+    viewpoint among these and other proponents
+    of pragmatic theory, they hold in common
+    that truth is verified and confirmed by
+    the results of putting one's concepts into
+    practice.
+    
+    Peirce defines truth as follows:
+        Truth is that concordance of an
+        abstract statement with the ideal
+        limit towards which endless
+        investigation would tend to bring
+        scientific belief, which concordance
+        the abstract statement may possess by
+        virtue of the confession of its
+        inaccuracy and one-sidedness, and this
+        confession is an essential ingredient
+        of truth.
+
+constructivist
+social constructivism
+    Holds that truth is constructed by social
+    processes, is historically and culturally
+    specific, and that it is in part shaped
+    through the power struggles within a
+    community.
+    
+    Constructivism views all of our knowledge
+    as "constructed," because it does not
+    reflect any external "transcendent"
+    realities (as a pure correspondence theory
+    might hold).
+    
+    Rather, perceptions of truth are viewed as
+    contingent on convention, human
+    perception, and social experience.
+    
+    It is believed by constructivists that
+    representations of physical and biological
+    reality, including race, sexuality, and
+    gender, are socially constructed.
+
+consensus
+consensus theory of truth
+    Consensus theory holds that truth is
+    whatever is agreed upon, or in some
+    versions, might come to be agreed upon, by
+    some specified group.
+    
+    Such a group might include all human
+    beings, or a subset thereof consisting of
+    more than one person.
+    
+    Among the current advocates of consensus
+    theory as a useful accounting of the
+    concept of "truth" is the philosopher
+    Jürgen Habermas.
+    
+    Habermas maintains that truth is what
+    would be agreed upon in an ideal speech
+    situation.
+    
+    Among the current strong critics of
+    consensus theory is the philosopher
+    Nicholas Rescher.
+
+verity
+    A true principle or belief, especially one
+    of fundamental importance.
+    "the eternal verities"
+
+    Truth.
+    "irrefutable, objective verity"

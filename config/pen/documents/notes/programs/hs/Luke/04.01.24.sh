@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Luke" "10:39" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "Luke" "1-5" "#" "<==" "withopts"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "Luke" "1-5" "#" "<==" "withopts"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Luke" "1:13" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Luke" "1:17" "#" "<==" "bash"

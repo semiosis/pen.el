@@ -1,0 +1,11 @@
+
+description: Mad TeaParty
+author: John Doe
+version: 0.1
+EOD
+
+cat draft.metaverse-description <<EOD
+name: Mad TeaParty
+description: Mad TeaParty
+author: John Doe
+

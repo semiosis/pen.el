@@ -1,0 +1,470 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: text/html; charset=utf-8
+Cross-Origin-Window-Policy: deny
+Date: Sat, 13 Aug 2022 08:55:46 GMT
+Server: nginx
+Strict-Transport-Security: max-age=15768000
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: FwrbrI4-AxbFXkAA11WS
+X-Xss-Protection: 1; mode=block
+Transfer-Encoding: chunked
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>untitled - asciinema</title>
+    <link rel="stylesheet" href="/css/app-1e435408314208c5d1bea35855a33e04.css?vsn=d">
+    <link rel="shortcut icon" href="/images/favicon-2d62dafa447cf018340b7121007568e3.png?vsn=d">
+<!-- oEmbed -->
+<link rel="alternate" type="application/json+oembed" href="https://asciinema.org/oembed?url=https%3A%2F%2Fasciinema.org%2Fa%2FNKW3wFHer2zHitu1cUl4S6nR1&amp;format=json" />
+<link rel="alternate" type="text/xml+oembed" href="https://asciinema.org/oembed?url=https%3A%2F%2Fasciinema.org%2Fa%2FNKW3wFHer2zHitu1cUl4S6nR1&amp;format=xml" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="untitled" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1" />
+<meta property="og:image" content="https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.png" />
+<meta property="og:description" content="Recorded by mullikine" />
+<meta property="og:site_name" content="asciinema.org" />
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@asciinema" />
+<meta name="twitter:title" content="untitled" />
+<meta name="twitter:url" content="https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1" />
+<meta name="twitter:description" content="Recorded by mullikine" />
+<meta name="twitter:image" content="https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.png" />
+
+<!-- application/x-asciicast -->
+<link rel="alternate" type="application/x-asciicast" href="https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.cast">
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="origin">
+
+  </head>
+
+  <body class="l-app c-asciicast a-show">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo-red-949d10005bb389d1ae900a13b5ac53d7.svg?vsn=d">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/explore">Explore</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/docs/getting-started">Record</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/docs/how-it-works">Docs</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="http://blog.asciinema.org">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-right session-info">
+
+            <li class="nav-item">
+              <a class="nav-link" href="/login/new" id="log-in">
+                Log in
+ / Sign up
+              </a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+    <main role="main" class="">
+<section class="cinema" id="cinema" style="height: 69vw; max-height: 75vh">
+<script>  window.players = window.players || new Map();
+  window.players.set('cinema', {"author":"mullikine","author-img-url":"//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&d=retro","author-url":"https://asciinema.org/~mullikine","cols":158,"fit":"both","idleTimeLimit":null,"poster":"data:text/plain,\u001B[7mFile Edit Options Buffers Tools Text Help                                       \u001B[0m \u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n\u001B[31m---\u001B[0m                                                                              \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;37m;;;###\u001B[0m\u001B[48;5;236;1;38;5;172mautoload\u001B[0m\u001B[48;5;233;1;38;5;37m \u001B[0m\u001B[48;5;233;1;38;5;238m                                                             \u001B[0m\r\n\u001B[33mtitle\u001B[0m: Correct English spelling and grammar                                      \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(define-globalized-minor-mode\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;134mglobal-pen-acolyte-minor-mode\u001B[0m\u001B[48;5;233;1;38;5;238m pen-acolyte-mino\u001B[0m\r\n\u001B[33mprompt-version\u001B[0m: 4                                                                \u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n\u001B[33mdoc\u001B[0m: Given a sentence which may have incorrect spelling or grammar, correct it.  \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;37m;; Please use H-. to toggle acolyte mode \u001B[0m\u001B[48;5;233;1;38;5;238m                                   \u001B[0m\r\n\u001B[33mprompt\u001B[0m: |+                                                                       \u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n  \u001B[31m### \u001B[0m                                                                           \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;37m;; \u001B[0m\u001B[48;5;233;1;38;5;172mTODO\u001B[0m\u001B[48;5;233;1;38;5;37m Create a hydra instead of using acolyte-mode \u001B[0m\u001B[48;5;233;1;38;5;238m                       \u001B[0m\r\n\u001B[32m  Poor English: \u001B[0m\u001B[44;37mPlease provide me with a short brief\\nof the design you’re look\u001B[0m\\ \u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n\u001B[44;37ming for and that’d be nice if you could share some examples or project you did \u001B[0m\\ \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(defalias\u001B[0m\u001B[48;5;233;1;38;5;238m '\u001B[0m\u001B[48;5;233;1;38;5;134myn\u001B[0m\u001B[48;5;233;1;38;5;238m 'yes-or-no-p\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                 \u001B[0m\r\n\u001B[44;37mbefore.\u001B[0m\u001B[32;7m \u001B[0m                                                                         \u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n\u001B[32m  Corre\u001B[0m\u001B[47;30mCancel                \u001B[0m\u001B[32mrovide me with a short brief \u001B[0m                       \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;203m(\u001B[0m\u001B[48;5;233;1;38;5;68mdefun\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;134mpen-delete-frame\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;134m()\u001B[0m\u001B[48;5;233;1;38;5;238m                                                  \u001B[0m\r\n\u001B[32m  of th\u001B[0m\u001B[47;30mtranslate             \u001B[0m\u001B[32mg for and some examples or previous projects you’v\u001B[0m\\ \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;68minteractive\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                             \u001B[0m\r\n\u001B[32me done \u001B[0m\u001B[47;30mtranspile             \u001B[0m\u001B[32m \u001B[0m                                                   \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;233;1;38;5;41m(\u001B[0m\u001B[48;5;233;1;38;5;68mcond\u001B[0m\u001B[48;5;233;1;38;5;238m                                                                     \u001B[0m\r\n  \u001B[31m###  \u001B[0m\u001B[47;30mexplain error         \u001B[0m\u001B[31m \u001B[0m                                                   \u001B[48;5;233;1;38;5;164m=\u001B[0m\u001B[48;5;233;1;38;5;238m  \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;30m(\u001B[0m\u001B[48;5;233;1;38;5;70m(\u001B[0m\u001B[48;5;233;1;38;5;238m>= \u001B[0m\u001B[48;5;233;1;38;5;136m(\u001B[0m\u001B[48;5;233;1;38;5;238mprefix-numeric-value current-prefix-arg\u001B[0m\u001B[48;5;233;1;38;5;136m)\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;133m4\u001B[0m\u001B[48;5;233;1;38;5;70m)\u001B[0m\u001B[48;5;233;1;38;5;238m                        \u001B[0m\r\n\u001B[32m  Poor \u001B[0m\u001B[46;37mprose                >\u001B[0m\u001B[47;30mCancel                                    \u001B[0m\u001B[32moblem to\u001B[0m\\ \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;70m(\u001B[0m\u001B[48;5;233;1;38;5;238mpen-kill-emacs\u001B[0m\u001B[48;5;233;1;38;5;70m)\u001B[0m\u001B[48;5;233;1;38;5;30m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                       \u001B[0m\r\n\u001B[32m fall a\u001B[0m\u001B[47;30mcode                 >pick up line                              \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;30m(\u001B[0m\u001B[48;5;233;1;38;5;238mt \u001B[0m\u001B[48;5;233;1;38;5;70m(\u001B[0m\u001B[48;5;233;1;38;5;68mif\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;136m(\u001B[0m\u001B[48;5;233;1;38;5;238myn \u001B[0m\u001B[48;5;233;1;38;5;30m\"Close Pen frame?\"\u001B[0m\u001B[48;5;233;1;38;5;136m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                           \u001B[0m\r\n\u001B[32m  Corre\u001B[0m\u001B[47;30mkeywords/classify     translate                                 \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;238m       \u001B[0m\u001B[48;5;233;1;38;5;136m(\u001B[0m\u001B[48;5;233;1;38;5;238mdelete-frame\u001B[0m\u001B[48;5;233;1;38;5;136m)\u001B[0m\u001B[48;5;233;1;38;5;70m)\u001B[0m\u001B[48;5;233;1;38;5;30m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                  \u001B[0m\r\n\u001B[32m  I tend to have a problem fa\u001B[0m\u001B[47;30mparaphrase                                \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;234;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;37m;; I need a better way of \u001B[0m\u001B[48;5;22;1;38;5;34mchecking\u001B[0m\u001B[48;5;234;1;38;5;37m for the main frame \u001B[0m\u001B[48;5;234;1;38;5;238m                   \u001B[0m\r\n  \u001B[31m###                        \u001B[0m\u001B[47;30mtldr                                      \u001B[0m\u001B[31m \u001B[0m         \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;37m;; ((= (length (frame-list)) 1) \u001B[0m\u001B[48;5;233;1;38;5;238m                                         \u001B[0m\r\n\u001B[32m  Poor English: There is plen\u001B[0m\u001B[47;30meli5                                      \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;37m;;  (if (yn \"Quit Pen?\") \u001B[0m\u001B[48;5;233;1;38;5;238m                                                \u001B[0m\r\n\u001B[32m  when your able to go outsid\u001B[0m\u001B[47;30mcorrect grammar                           \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;37m;;      (delete-frame))) \u001B[0m\u001B[48;5;233;1;38;5;238m                                                \u001B[0m\r\n\u001B[32m  Corrected English: There ar\u001B[0m\u001B[47;30mcorrect grammar 2                         \u001B[0m\u001B[32m when yo\u001B[0m\\ \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;37m;; (t (delete-frame)) \u001B[0m\u001B[48;5;233;1;38;5;238m                                                   \u001B[0m\r\n\u001B[32mu are able to go outside.    \u001B[0m\u001B[47;30mvexate                                    \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;41m)\u001B[0m\u001B[48;5;233;1;38;5;203m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                                       \u001B[0m\r\n  \u001B[31m###                        \u001B[0m\u001B[46;37mcorrect English spelling and grammar      \u001B[0m\u001B[31m \u001B[0m         \u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n\u001B[32m  Poor English: She no went t\u001B[0m\u001B[47;30mdefine term                               \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(defun\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;134mpen-kill-emacs\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;134m()\u001B[0m\u001B[48;5;233;1;38;5;238m                                                    \u001B[0m\r\n\u001B[32m  Corrected English: She didn\u001B[0m\u001B[47;30mbullet points -> first-hand account       \u001B[0m\u001B[32m \u001B[0m         \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;68minteractive\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                             \u001B[0m\r\n  \u001B[31m### \u001B[0m                                                                           \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;68mcond\u001B[0m\u001B[48;5;233;1;38;5;238m                                                                     \u001B[0m\r\n\u001B[32m  Poor English: \u003c1> \u001B[0m                                                             \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;30m(\u001B[0m\u001B[48;5;233;1;38;5;238mt \u001B[0m\u001B[48;5;233;1;38;5;70m(\u001B[0m\u001B[48;5;233;1;38;5;68mif\u001B[0m\u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;136m(\u001B[0m\u001B[48;5;233;1;38;5;238myn \u001B[0m\u001B[48;5;233;1;38;5;30m\"Quit emacs?\"\u001B[0m\u001B[48;5;233;1;38;5;136m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                \u001B[0m\r\n\u001B[32m  Corrected English: \u001B[0m                                                            \u001B[48;5;233;1;38;5;238m   \u001B[0m\u001B[48;5;234;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;238m       \u001B[0m\u001B[48;5;233;1;38;5;136m(\u001B[0m\u001B[48;5;233;1;38;5;238mkill-emacs\u001B[0m\u001B[48;5;233;1;38;5;136m)\u001B[0m\u001B[48;5;233;1;38;5;70m)\u001B[0m\u001B[48;5;233;1;38;5;30m)\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\u001B[48;5;233;1;38;5;238m                                                  \u001B[0m\r\n\u001B[33mengine\u001B[0m: davinci                                                                  \u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n\u001B[33mtemperature\u001B[0m: 0.3                                                                 \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-q\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m 'pen-delete-frame\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\u001B[48;5;233;1;38;5;238m       \u001B[0m\r\n\u001B[33mmax-tokens\u001B[0m: 1000                                                                 \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-Q\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m 'pen-kill-emacs\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\u001B[48;5;233;1;38;5;238m         \u001B[0m\r\n\u001B[33mtop-p\u001B[0m: 1                                                                         \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-p\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m 'pen-acolyte-dired-prompt\u001B[0m\r\n\u001B[33mstop-sequences\u001B[0m:                                                                  \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-t\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m 'pen-acolyte-scratch\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\u001B[48;5;233;1;38;5;238m    \u001B[0m\r\n- \u001B[32m\"###\"\u001B[0m                                                                          \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-s\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m 'save-buffer\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\u001B[48;5;233;1;38;5;238m            \u001B[0m\r\n\u001B[33mvars\u001B[0m:                                                                            \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-L\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m 'pen-show-last-prompt\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\u001B[48;5;233;1;38;5;238m   \u001B[0m\r\n- poor english                                                                   \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-r\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m 'pen-run-prompt-function\u001B[0m\u001B[48;5;233;1;38;5;68m)\u001B[0m\r\n\u001B[33mexamples\u001B[0m:                                                                        \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-1\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m #'pen-company-filetype-wo\u001B[0m\r\n- The rain in Spain falls mainly on the plain.                                   \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-2\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m #'pen-company-filetype-wo\u001B[0m\r\n\u001B[7m-UUU:@----F2  \u001B[0m\u001B[1;7mcorrect-english-spelling-and-grammar.prompt\u001B[0m\u001B[7m   Top L7    Git-master\u001B[0m \u001B[48;5;233;1;38;5;238m \u001B[0m\u001B[48;5;233;1;38;5;68m(\u001B[0m\u001B[48;5;233;1;38;5;238mdefine-key pen-acolyte-minor-mode-map \u001B[0m\u001B[48;5;233;1;38;5;134m(\u001B[0m\u001B[48;5;233;1;38;5;238mkbd \u001B[0m\u001B[48;5;233;1;38;5;30m\"M-3\"\u001B[0m\u001B[48;5;233;1;38;5;134m)\u001B[0m\u001B[48;5;233;1;38;5;238m #'pen-company-filetype-li\u001B[0m\r\npf-correct-english-spelling-and-grammar query 1...                              \u001B[40;38;5;240mg\u001B[0m\u001B[48;5;233;1;38;5;238m                                                                             \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m \u001B[0m \u001B[40;38;5;134m                                                                                                                                                            \u001B[0m\u001B[?25l","preload":true,"rows":42,"src":"https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.cast","theme":"asciinema","title":"untitled"});
+</script>
+</section>
+
+<section class="even info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+        <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+        </span>
+
+        <h2>
+untitled
+        </h2>
+
+        <small>
+          by <a href="/~mullikine">mullikine</a>
+<time datetime="2021-08-04T02:01:34.721647Z" title="Wed, 04 Aug 2021 02:01:34 Z">1 year ago</time>
+
+<span class="special-label" title="Private asciicasts are not listed on the site and are hidden from search engines. However they're visible to anyone you give the URL.">private</span>
+
+
+
+        </small>
+      </div>
+
+      <div class="col-md-4 col-xs-12 text-right actions">
+        <div class="dropdown actions-dropdown pull-right">
+<a class="btn btn-sm btn-secondary" data-target="#share-modal" data-toggle="modal" href="#" id="share-link">Share</a>
+
+<a class="btn btn-sm btn-secondary" data-target="#download-modal" data-toggle="modal" href="#" id="download-link">Download</a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="odd meta">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDUuOTk5IDQ1Ljk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuOTk5IDQ1Ljk5OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zOS4yNjQsNi43MzZjLTguOTgyLTguOTgxLTIzLjU0NS04Ljk4Mi0zMi41MjgsMGMtOC45ODIsOC45ODItOC45ODEsMjMuNTQ1LDAsMzIuNTI4YzguOTgyLDguOTgsMjMuNTQ1LDguOTgxLDMyLjUyOCwwICAgIEM0OC4yNDUsMzAuMjgxLDQ4LjI0NCwxNS43MTksMzkuMjY0LDYuNzM2eiBNMjUuOTk5LDMzYzAsMS42NTctMS4zNDMsMy0zLDNzLTMtMS4zNDMtMy0zVjIxYzAtMS42NTcsMS4zNDMtMywzLTNzMywxLjM0MywzLDNWMzN6ICAgICBNMjIuOTQ2LDE1Ljg3MmMtMS43MjgsMC0yLjg4LTEuMjI0LTIuODQ0LTIuNzM1Yy0wLjAzNi0xLjU4NCwxLjExNi0yLjc3MSwyLjg3OS0yLjc3MWMxLjc2NCwwLDIuODgsMS4xODgsMi45MTcsMi43NzEgICAgQzI1Ljg5NywxNC42NDgsMjQuNzQ2LDE1Ljg3MiwyMi45NDYsMTUuODcyeiIgZmlsbD0iIzZjNzU3ZCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+
+          <code>OS=Linux</code>
+
+
+          <code>SHELL=zsh</code>
+
+
+          <code>TERM=screen-256color</code>
+
+        <code>VIEWS=27</code>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="even">
+      <div class="container">
+        <div class="row other-asciicasts">
+          <div class="col-md-12">
+            <h2>More by <a href="/~mullikine">mullikine</a></h2>
+
+            <div class="asciicast-list">
+              <div class="row">
+
+                  <div class="col-md-4">
+<div class="asciicast-card">
+  <a href="/a/336965" class="thumbnail-link">
+    <div class="play-button">
+      <span class="arrow">
+        <svg version="1.1" viewBox="0 0 12 12">
+          <path d="M1,0 L11,6 L1,12 Z" />
+        </svg>
+      </span>
+    </div>
+<div class="thumbnail asciinema-theme-asciinema">
+  <pre class="asciinema-terminal font-small"><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-61" style="">-m-</span><span class="bg-233 bright fg-97" style="">     </span><span class="bg-233 bright fg-102" style="">mountall.service                                                      </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-61" style="">-m-</span><span class="bg-233 bright fg-97" style="">     </span><span class="bg-233 bright fg-102" style="">mountdevsubfs.service                                                 </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-61" style="">-m-</span><span class="bg-233 bright fg-97" style="">  =  </span><span class="bg-233 bright fg-102" style="">mountkernfs.service                                                   </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-61" style="">-m-</span><span class="bg-233 bright fg-97" style="">     </span><span class="bg-233 bright fg-102" style="">mountnfs-bootclean.service                                            </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-61" style="">-m-</span><span class="bg-233 bright fg-97" style="">     </span><span class="bg-233 bright fg-102" style="">mountnfs.service                                                      </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-65" style="">[x]</span><span class="bg-233 bright fg-61" style="">  &gt;  </span><span class="bg-233 bright fg-102" style="">mysql.service                                                         </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-65" style="">[x]</span><span class="bg-233 bright fg-97" style="">     </span><span class="bg-233 bright fg-102" style="">NetworkManager-dispatcher.service                                     </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-65" style="">[x]</span><span class="bg-233 bright fg-97" style="">  =  </span><span class="bg-233 bright fg-102" style="">NetworkManager-wait-online.service                                    </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-65" style="">[x]</span><span class="bg-233 bright fg-61" style="">  &gt;  </span><span class="bg-233 bright fg-102" style="">NetworkManager.service                                                </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-97" style="">[ ]     </span><span class="bg-233 bright fg-102" style="">nethack-common.service                                                </span></span><span class="line"><span class="bg-233 bright fg-102" style="">  </span><span class="bg-233 bright fg-65" style="">[x]</span><span class="bg-233 bright fg-97" style="">     </span><span class="bg-233 bright fg-102" style="">network-manager.service                                               </span></span><span class="line"><span class="bg-233 bright fg-102" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-97" style="">                                                                   81/624       </span></span><span class="line"><span class="bg-233 bright fg-238" style="">                                                                                </span></span><span class="line"><span class="bg-0 fg-124" style="">[ Megn ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-0 fg-244" style=""> </span><span class="bg-235 fg-26" style="">perspective.org_archive</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">47 </span><span class="bg-235 fg-26" style="">perspective.org.bak</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">48 </span><span class="bg-235 fg-26" style="">plan.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">49 </span><span class="bg-235 fg-26" style="">read.o</span></span></pre>
+</div>
+<!-- The above <pre> has to be in one line, without extra spacing around for loops
+     in order to render terminal properly. -->
+  </a>
+
+  <div class="info">
+    <h3>
+<a href="/a/336965">chkservice in emacs</a>
+
+
+      <span class="duration">00:26</span>
+    </h3>
+
+    <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+    </span>
+
+    <small>by <a href="/~mullikine">mullikine</a> <time datetime="2020-06-06T00:17:03.762506Z" title="Sat, 06 Jun 2020 00:17:03 Z">2 years ago</time></small>
+  </div>
+</div>
+
+                  </div>
+
+                  <div class="col-md-4">
+<div class="asciicast-card">
+  <a href="/a/459590" class="thumbnail-link">
+    <div class="play-button">
+      <span class="arrow">
+        <svg version="1.1" viewBox="0 0 12 12">
+          <path d="M1,0 L11,6 L1,12 Z" />
+        </svg>
+      </span>
+    </div>
+<div class="thumbnail asciinema-theme-asciinema">
+  <pre class="asciinema-terminal font-small"><span class="line"><span class="bg-235 fg-249" style="">nil                                                                             </span></span><span class="line"><span class="bg-235 fg-249" style="">my-app.core=&gt; (defn my-fn [a b] (+ a b))                                        </span></span><span class="line"><span class="bg-235 fg-249" style="">#&#39;my-app.core/my-fn                                                             </span></span><span class="line"><span class="bg-235 fg-249" style="">my-app.core=&gt; (my-</span><span class="bg-249 fg-235 " style=""> </span><span class="bg-235 fg-249" style="">                                                             </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-233 fg-249" style="">-UUU:@%*--F10  </span><span class="bg-233 bright fg-170" style="">term-pen-cterm-ssh-ssh-to-host</span><span class="bg-233 fg-249" style="">   Bot L16    (Term: char run pen-m</span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                               </span><span class="" style=""> </span></span><span class="line"><span class="bg-25 fg-12" style="">[ 1641178197 ]  </span><span class="bg-25 fg-81" style="">1 </span><span class="bg-25 fg-87" style="">emacsclient-s-root-e</span><span class="bg-25 fg-0" style="">                                          </span></span><span class="line"><span class="bg-0 fg-124" style="">[ Mele ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-233 fg-24" style="">listen.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">22 </span><span class="bg-233 fg-24" style="">need.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">23 </span><span class="bg-235 fg-26" style="">personal</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">24 </span><span class="bg-233 fg-24" style="">perspective.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">25 </span><span class="bg-233 fg-24" style="">plan.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">26 </span></span><span class="line"><span class="bg-0 fg-124" style="">[ Mele ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-233 fg-24" style="">listen.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">22 </span><span class="bg-233 fg-24" style="">need.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">23 </span><span class="bg-235 fg-26" style="">personal</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">24 </span><span class="bg-233 fg-24" style="">perspective.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">25 </span><span class="bg-233 fg-24" style="">plan.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">26 </span></span></pre>
+</div>
+<!-- The above <pre> has to be in one line, without extra spacing around for loops
+     in order to render terminal properly. -->
+  </a>
+
+  <div class="info">
+    <h3>
+<a href="/a/459590">Explaining what&#39;s on your terminal, using OpenAI&#39;s Codex</a>
+
+
+      <span class="duration">00:54</span>
+    </h3>
+
+    <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+    </span>
+
+    <small>by <a href="/~mullikine">mullikine</a> <time datetime="2022-01-03T05:24:18.079865Z" title="Mon, 03 Jan 2022 05:24:18 Z">7 months ago</time></small>
+  </div>
+</div>
+
+                  </div>
+
+                  <div class="col-md-4">
+<div class="asciicast-card">
+  <a href="/a/467210" class="thumbnail-link">
+    <div class="play-button">
+      <span class="arrow">
+        <svg version="1.1" viewBox="0 0 12 12">
+          <path d="M1,0 L11,6 L1,12 Z" />
+        </svg>
+      </span>
+    </div>
+<div class="thumbnail asciinema-theme-asciinema">
+  <pre class="asciinema-terminal font-small"><span class="line"><span class="bg-235 fg-249" style="">20:29 &lt;@libertyprime&gt; First, shoot a ghoul.                                     </span></span><span class="line"><span class="bg-235 fg-249" style="">20:29 &lt;@libertyprime&gt; Then, if you have some arrow left over speak the word &#39;arr</span></span><span class="line"><span class="bg-235 fg-249" style="">20:29 &lt;@libertyprime&gt; Then, after you have exhausted your arrows, speak the word</span></span><span class="line"><span class="bg-235 fg-249" style="">20:31 &lt; ksu&gt; i will have to try that                                            </span></span><span class="line"><span class="bg-235 fg-249" style="">20:31  libertyprime  18:libera/#mad-teaparty  Act: 1,3,8,9,10,11,12,13,14,15,16 </span></span><span class="line"><span class="bg-235 fg-249" style="">!#mad-teaparty:                                                                 </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-233 fg-249" style=""> 🖊  </span><span class="bg-233 bright fg-170" style="">cterm-tmux-attach-window-161</span><span class="bg-233 fg-249" style="">     (🖵 🖊 ◎)                                    </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-25 fg-12" style="">[ 1644213304 ]  </span><span class="bg-25 fg-81" style="">1 </span><span class="bg-25 fg-87" style="">pen-emacsclient-s-ro</span><span class="bg-25 fg-0" style="">                                          </span></span><span class="line"><span class="bg-0 fg-124" style="">[ 995e4e79a436 ]  </span><span class="bg-0 fg-240" style="">1 protected</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-254" style="">2 </span><span class="bg-0 fg-134" style="">cterm</span><span class="bg-0 fg-0" style="">                                           </span></span><span class="line"><span class="bg-0 fg-124" style="">[ f92835267a60 ]  </span><span class="bg-0 fg-254" style="">1 </span><span class="bg-0 fg-134" style="">[broke]</span><span class="bg-0 fg-0" style=""> </span><span class="bg-240 fg-0 " style="">2 nv</span><span class="bg-0 fg-0" style="">                                                </span></span><span class="line"><span class="bg-0 fg-124" style="">[ im ]  </span><span class="bg-0 fg-240" style="">1 zsh</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">2 </span><span class="bg-235 fg-40" style="">commands.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">3 </span><span class="bg-235 fg-40" style="">irc-commands.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">4 </span><span class="bg-235 fg-40" style="">perspective.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">5 finch</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">6 ctfi</span></span><span class="line"><span class="bg-0 fg-124" style="">[ Mele ]  </span><span class="bg-0 fg-240" style="">1 new-window</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">2 current</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">3 remote</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-254" style="">4 </span><span class="bg-0 fg-134" style="">im</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">5 </span><span class="bg-233 fg-24" style="">abstracts.txt</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">6 </span><span class="bg-233 fg-24" style="">agenda.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">7 </span><span class="bg-233 fg-24" style="">ar</span></span><span class="line"><span class="bg-0 fg-124" style="">[ Mele ]  </span><span class="bg-0 fg-240" style="">1 new-window</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">2 current</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">3 remote</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-254" style="">4 </span><span class="bg-0 fg-134" style="">im</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">5 </span><span class="bg-233 fg-24" style="">abstracts.txt</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">6 </span><span class="bg-233 fg-24" style="">agenda.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">7 </span><span class="bg-233 fg-24" style="">ar</span></span></pre>
+</div>
+<!-- The above <pre> has to be in one line, without extra spacing around for loops
+     in order to render terminal properly. -->
+  </a>
+
+  <div class="info">
+    <h3>
+<a href="/a/467210">Pen.el IRC bot on libera chat server</a>
+
+
+      <span class="duration">16:50</span>
+    </h3>
+
+    <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+    </span>
+
+    <small>by <a href="/~mullikine">mullikine</a> <time datetime="2022-02-07T07:40:01.626347Z" title="Mon, 07 Feb 2022 07:40:01 Z">6 months ago</time></small>
+  </div>
+</div>
+
+                  </div>
+
+              </div>
+            </div>
+
+            <p>
+<a class="btn btn-info" href="/~mullikine">See all</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="modal fade" id="share-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Share this recording</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h2>Link</h2>
+
+        <p>
+          <input data-behavior="auto-select" readonly="" value="https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1" type="text">
+        </p>
+
+        <p>
+          <span>Append <code>?t=30 </code>to start the playback at 30s, <code>?t=3:20 </code>to start the playback at 3m 20s. </span>
+        </p>
+
+        <h2>Embed image link</h2>
+
+        <p>Use snippets below to display a screenshot linking to this recording.<br>
+          Useful in places where scripts are not allowed (e.g. in a project's README file).</p>
+
+        <p>
+          <span>HTML:</span>
+          <br>
+          <input data-behavior="auto-select" readonly="" value="<a href=&quot;https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1&quot; target=&quot;_blank&quot;><img src=&quot;https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.svg&quot; /></a>" type="text">
+        </p>
+
+        <p>
+          <span>Markdown:</span>
+          <br>
+          <input data-behavior="auto-select" readonly="" value="[![asciicast](https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.svg)](https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1)" type="text">
+        </p>
+
+        <h2>Embed the player</h2>
+
+        <p>If you're embedding on your own page or on a site which permits script tags,
+          you can use the full player widget:</p>
+
+        <p>
+          <input data-behavior="auto-select" readonly="" value="&lt;script id=&quot;asciicast-NKW3wFHer2zHitu1cUl4S6nR1&quot; src=&quot;https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.js&quot; async&gt;&lt;/script&gt;" type="text">
+        </p>
+
+        <p>Paste the above script tag where you want the player to be displayed on your page.</p>
+
+        <hr>
+
+        <p>See <a href="/docs/embedding">Sharing &amp; embedding</a> for additional options.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Download this recording</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+
+              You can download this recording in <a href="https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md">asciicast v2 format</a>, as a .cast file.
+
+        </p>
+
+        <a href="https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1.cast?dl=1" class="btn btn-primary" download="428784.cast" rel="nofollow">Download</a>
+
+        <h2>Replay in terminal</h2>
+
+        <p>
+          You can replay this recording in your terminal with <code>asciinema play</code> command:
+        </p>
+
+        <pre><code>asciinema play 428784.cast</code></pre>
+
+        <p>
+          If you don't have asciinema cli installed then <a href="/docs/installation">see installation instructions</a>.
+        </p>
+
+        <h2>Use with stand-alone player on your website</h2>
+
+        <p>
+          Download asciinema player from <a href="https://github.com/asciinema/asciinema-player/releases">player's releases page</a>
+          (you only need <code>.js</code> and <code>.css</code> file), then use it like this:
+        </p>
+
+        <pre><code>&lt;html>
+&lt;head>
+  &lt;link rel="stylesheet" type="text/css" href="asciinema-player.css" />
+&lt;/head>
+&lt;body>
+  &lt;div id="player">&lt;/div>
+  &lt;script src="asciinema-player.min.js">&lt;/script>
+  &lt;script>
+    AsciinemaPlayer.create(
+      '428784.cast',
+      document.getElementById('player'),
+      { cols: 158, rows: 42 }
+    );
+  &lt;/script>
+&lt;/body>
+&lt;/html></code></pre>
+
+        <p>See <a href="https://github.com/asciinema/asciinema-player">asciinema player README</a> for full usage instructions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <ul class="links">
+          <li><a href="/contributing">Contributing</a></li>
+          <li><a href="/tos">Terms of Service</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 col-xs-12 text-center">
+        <span>
+          Sponsored by
+          <br/>
+          <a class="brightbox-logo" href="http://brightbox.com/" rel="nofollow">
+            <img src="/images/brightbox-78fa1dc42e5065bdbcc77f48e38b6dd3.png?vsn=d" />
+          </a>
+        </span>
+      </div>
+
+      <div class="col-md-4 col-xs-12">
+        <ul class="links float-right">
+          <li>
+            <b>forum:</b> <a href="https://discourse.asciinema.org">discourse.asciinema.org</a>
+          </li>
+          <li>
+            <b>irc:</b> <a href="https://web.libera.chat/gamja/#asciinema">#asciinema on Libera.Chat</a>
+          </li>
+          <li>
+              <b>matrix:</b> <a href="https://matrix.to/#/#asciinema:matrix.org">#asciinema:matrix.org</a>
+          </li>
+
+          <li>
+            <b>twitter:</b> <a href="https://twitter.com/asciinema" title="Follow @asciinema on Twitter">@asciinema</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/js/app-17a26351cd42dadad7a104097fa975ee.js?vsn=d"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+
+Atoms are like the numbers you are used to in math, except they are immutable.
+They are like numbers in that they have numeric operations such as +, - and *.
+But they are different in that they have no type, and can't be used in function
+arguments.
+The @ is a programmatic convenience for working with atoms.
+It is used as a prefix to a variable that refers to an atom.
+

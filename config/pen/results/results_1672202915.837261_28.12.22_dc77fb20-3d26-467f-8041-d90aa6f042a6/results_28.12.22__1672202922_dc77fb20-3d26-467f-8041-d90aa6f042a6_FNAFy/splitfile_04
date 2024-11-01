@@ -1,0 +1,8 @@
+
+endfun
+
+fun! ReselectVisual() 
+" Find start of non-whitespace text
+let b:firstline = line('.')
+fun! MatchCase() 
+fun! MatchInVisualMode()

@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "ebible" "%qRevelation of John" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "ebible" "Romans" "10:10" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "ebible" "Revelation" "of" "John" "#" "<==" "zsh"
+cd /root/notes;  "ebible" "Jude" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "ebible" "Jude" "#" "<==" "bash"

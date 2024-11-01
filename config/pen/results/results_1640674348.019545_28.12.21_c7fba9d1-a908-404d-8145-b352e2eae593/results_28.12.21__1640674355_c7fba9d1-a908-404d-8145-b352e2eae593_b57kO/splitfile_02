@@ -1,0 +1,17 @@
+covered that multimodal neurons can be used to learn a sparse
+    representation of input data.
+    https://arxiv.org/abs/1802.08727
+
+sparse attention
+    v +/"Sparse Attention" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+
+sparse transformer
+    https://openai.com/blog/sparse-transformer/
+
+    v +/"Sparse Transformer" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+
+    v +/"Sparse Transformer" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+
+    v +/"Sparse Transformer" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+
+

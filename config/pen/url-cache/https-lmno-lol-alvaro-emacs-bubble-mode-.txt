@@ -1,0 +1,294 @@
+HTTP/1.1 200 OK
+Date: Fri, 20 Sep 2024 21:22:19 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 8c64dec6fcf6d99e-AKL
+CF-Cache-Status: HIT
+Age: 5570
+Cache-Control: max-age=14400
+Last-Modified: Fri, 20 Sep 2024 19:49:29 GMT
+Cf-Placement: remote-LHR
+Content-Security-Policy: default-src 'self'; img-src *; script-src 'none'; style-src 'self' 'nonce-VePF6JAzs5Sj61GquQpBHA==';
+Speculation-Rules: "/cdn-cgi/speculation"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=B9NqGEqaKsWjsy4fIBEl2f6iQ%2BDwPnod%2B9IpdvbtcdoWEIL4KSRzCHvYx62%2FIXM6xEDlluyknxgQX8%2BeFFKppRvGWHzZ4FRX6kLhIAqYaOvvovcWymij0V7eDqHSLlhkhRiDjglJkA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emacs bubble mode</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" nonce="VePF6JAzs5Sj61GquQpBHA=="/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon-64.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="/favicon-180.png" sizes="180x180">
+  </head>
+  <body>
+  
+
+<style nonce="VePF6JAzs5Sj61GquQpBHA==">
+
+  #blog-header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #blog-header-editable-banner-text {
+    font-size: 72%;
+    color:inherit;
+  }
+
+  #blog-header-editable-banner-link {
+    color:inherit;
+   text-decoration: underline;
+  }
+
+  #blog-header-buy-banner-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  #blog-header-in-container-rhs {
+    white-space: nowrap;
+  }
+
+  #blog-header-buy-banner-link {
+    border: 1.1px dotted;
+    border-radius: 8px;
+    background-color: transparent;
+    color: inherit;
+    padding: 3px 10px;
+    font-size: 72%;
+    cursor: pointer;
+    font-weight: lighter;
+  }
+
+  #blog-header-blog-link {
+    color:inherit;
+  }
+
+  #blog-header-host-link {
+    color:inherit;
+  }
+
+  #blog-header-js-warning {
+    color: coral;
+  }
+
+  .blog-header-effect-shine {
+    mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 20%, #000 50%, rgba(0,0,0,.6) 70%);
+    mask-size: 200%;
+    animation: blog-header-shine 0.8s ease 3 forwards;
+  }
+
+  @keyframes blog-header-shine {
+    from {
+      mask-position: 150%;
+    }
+    100% {
+      mask-image: none;
+    }
+    to {
+      mask-position: 0%;
+    }
+  }
+
+  .blog-header-sparkles {
+    color: #fec30a
+  }
+
+
+  .portable-tooltip {
+    position: relative; /* Tooltip container */
+    display: inline; /* Fit content width */
+    text-decoration: none;
+  }
+
+  .portable-tooltip .portable-tooltiptext {
+    visibility: hidden;
+    font-style: italic;
+    color: inherit;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%; /* Display below the element */
+    right: 30px; /* Align to the left of the element */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 72%;
+  }
+
+  .portable-tooltip:hover .portable-tooltiptext,
+  .portable-tooltip:active .portable-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+</style>
+
+
+
+
+
+<div id="blog-header-container">
+  <div>
+    <a id="blog-header-blog-link" href="/alvaro">@alvaro</a> 
+  </div>
+  <div id="blog-header-in-container-rhs">
+    <a href="/signin?goto=/alvaro/emacs-bubble-mode">sign in</a> · <a id="blog-header-host-link" href="/">lmno.lol</a>
+
+
+
+  </div>
+</div>
+
+<style nonce="VePF6JAzs5Sj61GquQpBHA==">
+
+  .bannerdiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bannerpre {
+    white-space: pre;
+    margin: 0;
+    background-color: transparent !important;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: visible;
+    overflow-wrap: normal;
+    font-size: calc(100% * 0.6);
+    line-height: 1;
+    display: block;
+  }
+
+  @media (max-width: 550px) {
+    .bannerpre {
+      font-size: calc(100% * 0.4);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .bannerpre {
+      font-size: calc(100% * 0.3);
+    }
+  }
+
+</style>
+
+<div class="bannerdiv">
+  <pre class="bannerpre" aria-hidden="true">
+
+
+ █████  ██     ██    ██  █████  ██████   ██████
+██   ██ ██     ██    ██ ██   ██ ██   ██ ██    ██
+███████ ██     ██    ██ ███████ ██████  ██    ██
+██   ██ ██      ██  ██  ██   ██ ██   ██ ██    ██
+██   ██ ███████  ████   ██   ██ ██   ██  ██████
+</pre>
+</div>
+
+
+
+<div class="margin-bottom-20"></div>
+<time class="postDate" datetime="2024-09-19T00:00:00.000Z">September 19, 2024</time>
+<h1>
+  <a href="/alvaro/emacs-bubble-mode">Emacs bubble mode</a>
+</h1>
+<p>From time to time, I want to grab a source code viewport of sorts and feed to an LLM for questioning. From Emacs, I normally use <a href="https://github.com/xenodium/chatgpt-shell">chatgpt-shell</a>'s <code>chatgpt-shell-prompt-compose</code>, which automatically grabs the active region. This led me to explore a few options to select a region, or maybe even roll my own. I should also mention, these regions don't typically require compilable/complete structures.</p>
+<p>In most of these instances, I just reach out to one of my region favourites like <a href="https://github.com/magnars/expand-region.el">expand-region</a>, <code>mark-defun</code>, or <code>mark-whole-buffer</code>. Alternatively, I navigate to different points using sexp commands like <code>backward-sexp</code> and <code>forward-sexp</code> (or maybe something like <code>sp-backward-up-sexp</code> from <a href="https://github.com/Fuco1/smartparens">smartparens</a>), using <code>set-mark-command</code> in-between to activate the region.</p>
+<p>While these commands typically yield balanced expressions, it's often unnecessary for my LLM queries. This led me to <a href="https://indieweb.social/@xenodium/113158018599745252">ask folks</a> for different ways of selecting regions, which highlighted great package suggestions like <a href="https://github.com/abo-abo/avy">avy</a>, <a href="https://github.com/meow-edit">meow</a>, and <a href="https://github.com/leoliu/easy-kill">easy-kill</a>.</p>
+<p>While I've been intrigued by <code>meow</code>'s modal editing for some time, I'm not ready for that fair trial jump. Will have to postpone it for a little longer.</p>
+<p><code>Easy-kill</code> offers <code>easy-mark</code>, in some ways similar to the built-in <code>mark-sexp</code>, but with additional marking heuristics and possibly other goodies I missed. At present, I get similar benefits from the likes of <code>expand-region</code> and the other sexp helpers.</p>
+<p><code>Avy</code>'s <code>avy-kill-ring-save-region</code> could work for my purpose, though I wish it left the region active. Maybe that's already possible? I could look into extending <code>avy</code>, though <a href="https://mastodon.social/@ctietze/113154167264208507">Christian's suggestions</a> led me to lean more on visual feedback in my own region-expanding experiments.</p>
+<p>The goal was to enable extending regions in both vertical directions by simultaneously adding lines at both ends. Sure, this doesn't guarantee structural completeness, but it may just be enough for my LLM-feeding purpose. Maybe this already exists in the Emacs universe, but hey, it's an excuse to throw some elisp lines together…</p>
+<p>Assuming there's an existing active region, expanding in both directions is pretty straightforward.</p>
+<pre><code class="language-{.commonlisp">(defun bubble-expand()
+  &quot;Expand region.&quot;
+  (interactive)
+  (when (&gt; (point) (mark))
+    (exchange-point-and-mark))
+  (forward-line -1)
+  (exchange-point-and-mark)
+  (forward-line 1)
+  (exchange-point-and-mark))
+
+(defun bubble-shrink ()
+  &quot;Shrink region.&quot;
+  (interactive)
+  (when (&lt; (point) (mark))
+    (exchange-point-and-mark))
+  (forward-line -1)
+  (exchange-point-and-mark)
+  (forward-line 1))
+</code></pre>
+<p>While I've yet to use this region-expanding approach long enough to validate its usefulness, it sure is fun to play with it.</p>
+<p><img src="https://xenodium.com/images/emacs-bubble-mode/bubble-expand-shrink.gif" alt=""></p>
+<p>This got me thinking, what other funky things I could do with the region? Could I shift the region selection like a viewport of sorts? As you now expect, the answer in Emacs is almost always of course we can…</p>
+<pre><code class="language-{.commonlisp">(defun bubble-shift-up ()
+  &quot;Shift the region up by one line.&quot;
+  (interactive)
+  (when (&gt; (point) (mark))
+    (exchange-point-and-mark))
+  (forward-line -1)
+  (forward-line 0)
+  (exchange-point-and-mark)
+  (forward-line -1)
+  (end-of-line)
+  (activate-mark)
+  (exchange-point-and-mark))
+
+(defun bubble-shift-down ()
+  &quot;Shift the region down by one line.&quot;
+  (interactive)
+  (when (&gt; (point) (mark))
+    (exchange-point-and-mark))
+  (forward-line)
+  (forward-line 0)
+  (exchange-point-and-mark)
+  (forward-line)
+  (end-of-line)
+  (activate-mark)
+  (exchange-point-and-mark))
+</code></pre>
+<p><img src="https://xenodium.com/images/emacs-bubble-mode/bubble-shift.gif" alt=""></p>
+<p>My friend Vaarnan also suggested looking into UX around providing line count, which is possible by providing a prefix into <code>bubble-expand-region</code>.</p>
+<pre><code class="language-{.commonlisp">C-5 M-x bubble-expand-region
+</code></pre>
+<p><img src="https://xenodium.com/images/emacs-bubble-mode/bubble-number.gif" alt=""></p>
+<p>These commands alone aren't as effective unless we have some key-bindings around them. I've tied things up into a minor mode, called… you guessed it: <code>bubble-mode</code>. Oooh, a mode, you may say it's now official ;) Well, no. It's still an experiment of sorts and currently lives in <a href="https://github.com/xenodium/dotsies/blob/main/emacs/ar/bubble.el">my Emacs config repo</a>.</p>
+<p>The key bindings I've chosen are:</p>
+<ul>
+<li><code>C-c C-w</code>: Enter bubble-mode.</li>
+<li><code>C-p</code>: bubble-expand.</li>
+<li><code>C-n</code>: bubble-shrink.</li>
+<li><code>S-C-p</code>: bubble-move-up.</li>
+<li><code>S-C-n</code>: bubble-move-down.</li>
+<li><code>Numbers 1-0</code>: Expand 1 to 10 lines.</li>
+<li><code>RET</code>: Exit bubble-mode.</li>
+</ul>
+<p>Note: Inspired by expand-region, any other key binding/command automatically exits <code>bubble-mode</code>.</p>
+<p><code>C-c C-w</code> kinda works for me as <code>C-c w</code> is already bound to <code>expand-region</code>. Let's see if that sticks, though I may have to give up the <code>org-refile</code> binding.</p>
+<p>So does it work for my original LLM intent? We shall see, but it seems to so far. You can play with it if you'd like (it's on <a href="https://github.com/xenodium/dotsies/blob/main/emacs/ar/bubble.el">github</a>). Here's what that flow now looks like:</p>
+<p><img src="https://xenodium.com/images/emacs-bubble-mode/bubble-whats-wrong.gif" alt=""></p>
+<h2 id="enjoying-this-content%3F-using-one-of-my-emacs-packages%3F" tabindex="-1">Enjoying this content? Using one of my Emacs packages?</h2>
+<p>Help make the work sustainable. Consider <a href="https://github.com/sponsors/xenodium">sponsoring</a>. I'm also building <a href="https://lmno.lol/">lmno.lol</a>. A platform to <a href="https://indieweb.social/@xenodium/112265481282475542">drag and drop</a> your blog to the web.</p>
+
+
+  </body>
+</html>

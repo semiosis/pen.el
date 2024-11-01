@@ -1,0 +1,9 @@
+"JSONParserCommon" is a module that provides a common interface to the JSON parser.
+The main functions are:
+
+- run_parser_print: run the parser and print the result to the terminal
+- run_parser_print_file: run the parser and print the result to a file
+- run_parser_print_file_replace: run the parser and print the result to a file,
+  replacing the contents of the file with the result
+
+The other functions are:

@@ -1,0 +1,804 @@
+HTTP/1.1 200 OK
+Server: nginx/1.17.9
+Date: Wed, 02 Aug 2023 03:08:33 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 31854
+Connection: keep-alive
+accept-ranges: bytes
+last-modified: Wed, 02 Aug 2023 03:08:13 GMT
+x-robots-tag: noindex, nofollow, noarchive, nosnippet, nositelinksearchbox, noimageindex
+localtunnel-agent-ips: ["203.96.203.44"]
+
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Bodacious Blog</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.102.0-DEV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Shane Mulligan" />
+    <meta name="description" content="My journey into biosemiotics 🌻, xenolingustics 👽 and emacs 🐄" />
+
+    
+
+    <link rel="stylesheet" href="http://localhost:1313/css/main.min.356e1145c84d91d8160af06bc2771f5e3a1f893460d58909319ed6ffa24bf8b3.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bodacious Blog"/>
+<meta name="twitter:description" content="My journey into biosemiotics 🌻, xenolingustics 👽 and emacs 🐄"/>
+
+    <meta property="og:title" content="Bodacious Blog" />
+<meta property="og:description" content="My journey into biosemiotics 🌻, xenolingustics 👽 and emacs 🐄" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/" /><meta property="og:site_name" content="Bodacious Blog" />
+
+
+
+    
+
+    <script>
+        
+        const regex = /New Zealand/g;
+
+        
+        fetch('https://whatismycountry.com/')
+            .then(function (response) { return response.text(); })
+            .then(function (payload) {
+                if (payload.match(regex)) {
+                    window.location.replace("https://github.com/404");
+                } else {
+                    
+                }
+        });
+    </script>
+
+  </head>
+  <body>
+
+    <header class="app-header">
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Bodacious Blog" />
+<a href="http://localhost:1313/"><img class="app-header-avatar" src="http://localhost:1313/fievel.png" alt="Shane Mulligan" /></a>
+      <h1>Bodacious Blog</h1>
+      
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://linkedin.com/in/shane-mulligan-811b942b/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+          <a target="_blank" href="https://gitlab.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gitlab">
+  <title>gitlab</title>
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+        <a href="http://localhost:1313/cv/">CV</a>
+      </div>
+<div class="highlights">
+<a href="https://semiosis.github.io/">Semiosis</a>
+
+<br />
+<a href="http://localhost:1313/posts/parables-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Papables of Jesus</a>
+<br />
+<a href="http://localhost:1313/posts/gospel-of-luke/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Luke</a>
+<br />
+<a href="http://localhost:1313/posts/gospel-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Glorious Gospel</a>
+<br />
+<a href="http://localhost:1313/posts/the-tapestry-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Tapestry of Truth</a>
+<br />
+<a href="http://localhost:1313/posts/gospel-of-thomas/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Thomas</a>
+<br />
+<a href="http://localhost:1313/posts/gospel-of-matthew/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Matthew</a>
+<br />
+<a href="http://localhost:1313/posts/dialogue-of-the-savior/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Dialogue of the Savior</a>
+<br />
+<a href="http://localhost:1313/posts/gospel-of-philip/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Philip</a>
+<br />
+<a href="http://localhost:1313/posts/the-gospel-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Truth</a>
+<br />
+<a href="http://localhost:1313/posts/gospel-of-john/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of John</a>
+<br />
+<a href="http://localhost:1313/posts/acts-of-the-apostles/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Acts of the Apostles</a>
+<br />
+<a href="http://localhost:1313/posts/living-water/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Living Water of Truth</a>
+<br />
+<a href="http://localhost:1313/posts/the-pathway-to-gnosis/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Pathway to Gnosis</a>
+<br />
+<a href="http://localhost:1313/posts/revelation-of-redemption/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Revelation of Redemption</a>
+<br />
+<a href="http://localhost:1313/posts/seek-first-the-kingdom-of-god//" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Holy Gospel of Jesus Christ</a>
+<br />
+<a href="http://localhost:1313/posts/generating-hyperlinks-for-glossaries-and-other-parsers-in-emacs/">Hyperlink generation in emacs</a>
+<br />
+<a href="http://localhost:1313/posts/github-search-with-bigquery/">Searching GitHub with BigQuery</a>
+
+<br />
+<a href="http://localhost:1313/posts/review-of-the-case-for-learned-index-structures/">Case for Learned Index Structures</a>
+<br />
+<a href="http://localhost:1313/posts/arbitrary-interpreters-for-babel/">Arbitrary Interpreters for Babel</a>
+<br />
+<a href="http://localhost:1313/glossary.html">Glossary A-Z (502 topics)</a> <a href="https://github.com/mullikine/glossaries-gh">code</a>
+<br />
+<a href="http://localhost:1313/posts/pen/">Prompt Engineering in Emacs</a>
+<br />
+<a href="http://localhost:1313/posts/dwarf-fortress-macros-with-emacs-and-tmux/">Automating Dwarf Fortress</a>
+<br />
+<a href="http://localhost:1313/posts/review-of-the-illustrated-transformer/">The Illustrated Transformer</a>
+<br />
+<a href="http://localhost:1313/posts/practical-macros-in-racket-and-how-to-work-with-them/">Practical macros in Racket</a>
+<br />
+<a href="http://localhost:1313/posts/imaginary-programming-with-gpt-3/">Imaginary Programming</a>
+<br />
+<a href="http://localhost:1313/codelingo-vs-linters/summary/">CodeLingo vs Linters</a>
+<br />
+
+<div class="taglist">
+  
+<a class="tag big" href="http://localhost:1313/tags/astral/">astral</a>
+<a class="tag big" href="http://localhost:1313/tags/ethereum/">Ethereum</a>
+<a class="tag big" href="http://localhost:1313/tags/imaginary/">Imaginary</a>
+<a class="tag big" href="http://localhost:1313/tags/אα/">אα</a>
+<a class="tag big" href="http://localhost:1313/tags/alethiology/">alethiology</a>
+<a class="tag big" href="http://localhost:1313/tags/epistemology/">epistemology</a>
+<a class="tag big" href="http://localhost:1313/tags/janus/">𔒯</a>
+<a class="tag big" href="http://localhost:1313/tags/reversible/">⇌</a>
+<a class="tag big" href="http://localhost:1313/tags/𝑖λ/">𝑖λ</a>
+<a class="tag big" href="http://localhost:1313/tags/𝑖web/">𝑖web</a>
+<a class="tag big" href="http://localhost:1313/tags/semiosis/">࿋ Semiosis</a>
+<a class="tag big" href="http://localhost:1313/tags/𝑖i/">𝑖i</a>
+<a class="tag big" href="http://localhost:1313/tags/pen/">Pen.el</a>
+<a class="tag" href="http://localhost:1313/tags/gpt/">GPT (Generative Pre-trained Transformer)</a>
+<a class="tag" href="http://localhost:1313/tags/biosemiotics/">biosemiotics</a>
+<a class="tag" href="http://localhost:1313/tags/xenolinguistics/">xenolinguistics</a>
+<a class="tag big" href="http://localhost:1313/tags/emacs/">emacs</a>
+<a class="tag" href="http://localhost:1313/tags/elisp/">elisp</a>
+<a class="tag" href="http://localhost:1313/tags/racket/">racket</a>
+<a class="tag" href="http://localhost:1313/tags/haskell/">haskell</a>
+<a class="tag" href="http://localhost:1313/tags/nlp/">NLP</a>
+<a class="tag" href="http://localhost:1313/tags/docker/">docker</a>
+
+<a class="tag big" href="http://localhost:1313/tags/ir/">IR</a>
+<a class="tag" href="http://localhost:1313/tags/dalle/">dalle</a>
+<a class="tag" href="http://localhost:1313/tags/games/">games</a>
+<a class="tag" href="http://localhost:1313/tags/data/">data</a>
+<a class="tag" href="http://localhost:1313/tags/info/">info theory</a>
+<a class="tag" href="http://localhost:1313/tags/probability/">probability</a>
+<a class="tag" href="http://localhost:1313/tags/problog/">problog</a>
+<a class="tag big" href="http://localhost:1313/tags/shell/">shell</a>
+
+<a class="tag" href="http://localhost:1313/tags/tooling/">tooling</a>
+<a class="tag" href="http://localhost:1313/tags/iac/">IaC</a>
+
+
+
+<a class="tag" href="http://localhost:1313/tags/babel/">babel</a>
+<a class="tag" href="http://localhost:1313/tags/journal/">journal</a>
+
+
+<a class="tag" href="http://localhost:1313/tags/parsers/">parsers</a>
+
+
+<a class="tag" href="http://localhost:1313/tags/review/">review</a>
+<a class="tag" href="http://localhost:1313/tags/dl/">deep learning</a>
+<a class="tag" href="http://localhost:1313/tags/dsl/">DSL</a>
+<a class="tag" href="http://localhost:1313/tags/music/">music</a>
+<a class="tag big" href="http://localhost:1313/tags/surreal/">surreal</a>
+<a class="tag" href="http://localhost:1313/tags/df/">dwarf fortress</a>
+<a class="tag" href="http://localhost:1313/tags/spacy/">spacy</a>
+<a class="tag" href="http://localhost:1313/tags/latex/">latex</a>
+<a class="tag" href="http://localhost:1313/tags/nix/">Nix</a>
+<a class="tag" href="http://localhost:1313/tags/diagrams/">diagrams</a>
+<a class="tag big" href="http://localhost:1313/tags/faith/">faith</a>
+<a class="tag" href="http://localhost:1313/tags/valentinianism/">valentinianism</a>
+<a class="tag" href="http://localhost:1313/tags/gnostic/">gnostic</a>
+<a class="tag" href="http://localhost:1313/tags/python/">python</a>
+<a class="tag" href="http://localhost:1313/tags/vim/">vim</a>
+<a class="tag big" href="http://localhost:1313/tags/journal/">journal</a>
+<a class="tag" href="http://localhost:1313/tags/neural-engineering/">neural-engineering</a>
+<a class="tag" href="http://localhost:1313/tags/golang/">golang</a>
+<a class="tag" href="http://localhost:1313/tags/perl/">perl</a>
+<a class="tag" href="http://localhost:1313/tags/telco/">telco</a>
+<a class="tag" href="http://localhost:1313/tags/automation/">automation</a>
+<a class="tag" href="http://localhost:1313/tags/elasticsearch/">ELK</a>
+<a class="tag" href="http://localhost:1313/tags/optimisation/">optimisation</a>
+<a class="tag" href="http://localhost:1313/tags/release/">release</a>
+<a class="tag" href="http://localhost:1313/tags/dotnet/">.NET</a>
+<a class="tag" href="http://localhost:1313/tags/csharp/">csharp</a>
+<a class="tag" href="http://localhost:1313/tags/math/">math</a>
+<a class="tag" href="http://localhost:1313/tags/terminals/">term</a>
+<a class="tag big" href="http://localhost:1313/tags/terminals/">poetry</a>
+<a class="tag big" href="http://localhost:1313/tags/codegen/">code-gen</a>
+<a class="tag" href="http://localhost:1313/tags/rosie/">rosie</a>
+<a class="tag" href="http://localhost:1313/tags/terraform/">Terraform</a>
+<a class="tag" href="http://localhost:1313/tags/semmle/">Semmle</a>
+<a class="tag" href="http://localhost:1313/tags/expect/">tcl/expect</a>
+<a class="tag" href="http://localhost:1313/tags/solr/">solr</a>
+<a class="tag" href="http://localhost:1313/tags/transformer/">transformer</a>
+
+<a class="tag" href="http://localhost:1313/tags/microsoft/">Microsoft</a>
+<a class="tag" href="http://localhost:1313/tags/neuralink/">Neuralink</a>
+<a class="tag" href="http://localhost:1313/tags/openai/">OpenAI</a>
+<a class="tag" href="http://localhost:1313/tags/uber/">Uber</a>
+<a class="tag" href="http://localhost:1313/tags/aws/">Amazon</a>
+<a class="tag" href="http://localhost:1313/tags/github/">GitHub</a>
+<a class="tag" href="http://localhost:1313/tags/facebook/">Facebook</a>
+<a class="tag" href="http://localhost:1313/tags/kaggle/">Kaggle</a>
+<a class="tag" href="http://localhost:1313/tags/kaggle/">EleutherAI</a>
+
+</div>
+
+
+
+</div>
+<div>
+    </header>
+    <main class="app-container">
+      
+  <article>
+    <h1>Bodacious Blog</h1>
+    
+    <p>My journey into <a href="https://mullikine.github.io/tags/biosemiotics/">biosemiotics</a> 🌻, <a href="https://mullikine.github.io/tags/xenolinguistics/">xenolinguistics</a> 👽 and <a href="https://mullikine.github.io/tags/emacs/">emacs</a> 🐄</p>
+    
+    
+
+    <center>
+    
+
+    
+    <a href="http://localhost:1313/tagpics/Bodacious%20Blog.gif"><img class="titleimage" src="http://localhost:1313/tagpics/Bodacious%20Blog.gif" /></a>
+    </center>
+
+    <ul class="posts-list Bodacious Blog">
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/the-lord-says-no-idols/">The LORD demands no idols</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 1 min read -
+            Jan 18, 2023
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/the-narrow-gate/">The narrow gate</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 1 min read -
+            Jan 16, 2023
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/the-wide-road/">The wide road</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 4 min read -
+            Jan 16, 2023
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/the-damage-of-adultery/">Dream: The Damage Done Due to Adultery</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 2 min read -
+            Jan 5, 2023
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/the-servant-king/">Dream: The Servant King</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 7 min read -
+            Jan 4, 2023
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/defending-a-house-with-bible-verses/">Dream: Defending a House with Bible Verses</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 2 min read -
+            Jan 2, 2023
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/the-word-of-god-is-a-sword/">Dream: The word of God is a sword</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 3 min read -
+            Jan 1, 2023
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/pray-dream-and-respond/">Pray, Dream and Respond</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 4 min read -
+            Dec 31, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/dream-a-nomad-in-the-kingdom-of-heaven/">Dream: A nomad in the Kingdom of Heaven</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 2 min read -
+            Dec 30, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/genesis-2-22/">Genesis 2:22 - Perfect love</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 2 min read -
+            Dec 22, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/dream-hover-donut/">Dream: Hover donut</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 2 min read -
+            Dec 14, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/message-to-my-beloved-krsna-friends/">Message to my beloved Krsna friends</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 11 min read -
+            Dec 14, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/dream-reborn-every-day/">Dream: Reborn every day</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 2 min read -
+            Dec 10, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/dream-figure-skating/">Dreams: Selfless, truthful, unconditional and faithful love. Figure-Skating</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 2 min read -
+            Dec 10, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/dream-space-comedy-the-most-amazing-miracle-in-the-universe/">Dream: Space Comedy, the most amazing miracle in the universe</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 5 min read -
+            Dec 8, 2022
+          </span>
+        </li>
+      
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="http://localhost:1313/posts/dream-two-geese/">Dream: Two geese / ducks</a>
+          <span class="posts-list-item-description">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg> 1 min read -
+            Dec 6, 2022
+          </span>
+        </li>
+      
+    </ul>
+    
+
+<ul class="pagination">
+  
+  
+  <li class="page-item active">
+    <a class="page-link" href="http://localhost:1313/">
+      1
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/2/">
+      2
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/3/">
+      3
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/4/">
+      4
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/5/">
+      5
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/6/">
+      6
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/7/">
+      7
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/8/">
+      8
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/9/">
+      9
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/10/">
+      10
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/11/">
+      11
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/12/">
+      12
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/13/">
+      13
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/14/">
+      14
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/15/">
+      15
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/16/">
+      16
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/17/">
+      17
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/18/">
+      18
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/19/">
+      19
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/20/">
+      20
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/21/">
+      21
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/22/">
+      22
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/23/">
+      23
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/24/">
+      24
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/25/">
+      25
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/26/">
+      26
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/27/">
+      27
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/28/">
+      28
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/29/">
+      29
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/30/">
+      30
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/31/">
+      31
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/32/">
+      32
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/33/">
+      33
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/34/">
+      34
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/35/">
+      35
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/36/">
+      36
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/37/">
+      37
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/38/">
+      38
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/39/">
+      39
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/40/">
+      40
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/41/">
+      41
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/42/">
+      42
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/43/">
+      43
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/44/">
+      44
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/45/">
+      45
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/46/">
+      46
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/47/">
+      47
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/48/">
+      48
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/49/">
+      49
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/50/">
+      50
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/51/">
+      51
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/52/">
+      52
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/53/">
+      53
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/54/">
+      54
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/55/">
+      55
+    </a>
+  </li>
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/56/">
+      56
+    </a>
+  </li>
+  
+  
+  <li class="page-item">
+    <a class="page-link" href="http://localhost:1313/page/2/">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-arrow-right">
+  <title>arrow-right</title>
+  <line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+    </a>
+  </li>
+  
+</ul>
+
+
+
+  </article>
+
+    </main>
+
+    
+
+  </body>
+</html>

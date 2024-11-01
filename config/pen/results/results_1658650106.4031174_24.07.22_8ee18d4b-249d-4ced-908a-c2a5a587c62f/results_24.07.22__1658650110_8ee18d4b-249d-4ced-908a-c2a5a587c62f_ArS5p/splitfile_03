@@ -1,0 +1,2 @@
+This means that `import Options.Applicative` is not valid.
+You need to import `import Options.Applicative (Applicative)` instead.

@@ -1,0 +1,36 @@
+title: mood to colour scheme
+doc: "Generate a 4 colour scheme from a description"
+tags: ilambda
+todo:
+- Improve the quality of outputs
+prompt: |
+  /* Color scheme A: Shades of blue and green */
+  .a-primary {
+  background-color: #1FBFB8;
+  }
+  .a-secondary {
+  background-color: #05716C;
+  }
+  .a-ternary {
+  background-color: #1978A5;
+  }
+  .a-quaternary {
+  background-color: #031163;
+  }
+
+  <:pp>/* Color scheme B: <mood> */
+  /* This combination captures the colours of <mood> with its high contrast. */
+  .b-primary {
+  background-color:
+engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 73
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- mood
+examples:
+- a blue sky at dusk
+n-test-runs: 2
+postprocessor: pen-scrape "#[a-zA-Z0-9]{6}"

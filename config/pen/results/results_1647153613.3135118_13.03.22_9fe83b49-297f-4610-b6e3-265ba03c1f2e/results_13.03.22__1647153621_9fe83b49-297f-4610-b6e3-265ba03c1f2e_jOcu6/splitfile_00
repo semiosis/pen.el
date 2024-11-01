@@ -1,0 +1,10 @@
+"transpose" is a built-in predicate of SWI-Prolog.
+
+transpose([], []).
+transpose([F|Fs], Ts) :-
+        transpose(F, [F|Fs], Ts).
+
+transpose([], _, []).
+transpose([_|Rs], Ms, [Ts|Tss]) :-
+        lists_firsts_rests(Ms, Ts, Ms1),
+        transpose(Rs, Ms1

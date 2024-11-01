@@ -1,0 +1,8 @@
+cd /root/notes;  "Matthew" "10:36-39" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "8:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "23:26" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "23" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "23:11-33" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "23:4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness;  "Matthew" "6:24" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "6:33" "#" "<==" "zsh"

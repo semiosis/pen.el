@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes;  "ew3m" "/volumes/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/various/12_pingpong.html" "#" "<==" "ff"

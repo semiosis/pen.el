@@ -1,0 +1,10 @@
+
+  end
+
+  def ask_for_business_idea
+    puts "Please enter a business idea:"
+    gets.chomp
+  end
+
+  def save(business_idea)
+    existing_idea = find_by_name(business_idea

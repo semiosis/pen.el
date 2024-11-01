@@ -1,0 +1,5 @@
+cd /root/notes;  "spinner" "#" "<==" "bash"
+cd /root/notes;  "spinner" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "spinner" "#" "<==" "bash"
+cd /root/notes;  "spinner" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "spinner" "#" "<==" "bash"

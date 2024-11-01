@@ -1,0 +1,3 @@
+root@mele:/var/log$ ls
+apache2  cron  dmesg  faillog  kern.log  lastlog  messages  secure  syslog  wtmp
+root@mele:/var/log$ cd /var/log/apache

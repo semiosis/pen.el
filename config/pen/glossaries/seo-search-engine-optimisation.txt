@@ -1,0 +1,120 @@
+ranking signal
+ranking factor
+    Characteristics of a website that
+    determine the position in the search
+    engines.
+    
+    All ranking signals combined form the
+    algorithm of a search engine.
+    
+    How this algorithm works is a secret.
+    
+    Nobody knows exactly which factors decide
+    the order of the search results.
+
+anchor text matching
+    [ranking signal]
+
+    A clear differentiating factor early on.
+    As stated by the founders themselves in
+    Google's seminal 1998 paper.
+
+association
+    <query, url>
+
+    See "query log".
+
+crawler
+Web Crawler
+    https://en.wikipedia.org/wiki/Web_crawler
+
+spamdexing
+    https://en.wikipedia.org/wiki/Spamdexing
+
+Granne
+    https://github.com/granne/granne
+
+Keyvi
+    https://github.com/KeyviDev/keyvi
+
+qpick
+    https://github.com/dncc/qpick
+
+popularity signal
+    [ranking factor]
+    
+    The more unique queries we can gather for
+    a page, the better our model for the page
+    will be.
+    
+    Our use of Human Web also enables us to
+    collect anonymous statistics on the page,
+    a part of which is shown below.
+    
+    This structure shows the popularity of the
+    page in different countries at this moment
+    in time, which is used as a popularity
+    signal.
+    
+    We can see that it is very popular in the
+    UK, less so is Australia, etc.
+
+page model
+    We can use these query logs to build a
+    model of the page outside of its content,
+    which we refer to as page models.
+    
+    https://0x65.dev/blog/2019-12-06/building-a-search-engine-from-scratch.html
+
+    A truncated page model:
+
+        {
+          "queries": [
+            [
+              "tesla cybertruck",
+              0.5111737168808949
+            ],
+            [
+              "tesla truck",
+              0.4108341455983614
+            ],
+            [
+              "new tesla car",
+              0.022784473090294764
+            ],
+            ...
+            ...
+            ...
+            [
+              "pick up tesla",
+              0.020538972510725183
+            ],
+            [
+              "new tesla truck",
+              0.019462471432017632
+            ],
+            [
+              "cyber truck tesla price",
+              0.006587470155023614
+            ],
+            [
+              "how much is the cybertruck",
+              0.003764268660013494
+            ],
+            ...
+            ...
+            ...
+            [
+              "cybertruck unveiling",
+              0.0016181605575564585
+            ],
+            [
+              "new tesla cybertruck",
+              0.0016181605575564585
+            ],
+            [
+              "cyber truck unveiling",
+              0.0016181605575564585
+            ]
+          ]
+        }

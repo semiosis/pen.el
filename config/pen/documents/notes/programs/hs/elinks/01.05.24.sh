@@ -1,0 +1,7 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-fab1-co-nz-/www.fab1.co.nz;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "contents.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-fab1-co-nz-/www.fab1.co.nz;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "index.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-fab1-co-nz-/www.fab1.co.nz;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "opening.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-fab1-co-nz-/www.fab1.co.nz;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "thunderbirds.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-fab1-co-nz-/www.fab1.co.nz;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "welcome.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-fab1-co-nz-/www.fab1.co.nz/episodes;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "episodes1.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-fab1-co-nz-/www.fab1.co.nz/episodes;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "episodes2.html" "#" "<==" "pen-ci"

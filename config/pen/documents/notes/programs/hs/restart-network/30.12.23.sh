@@ -1,0 +1,1 @@
+cd /;  "restart-network" "#" "<==" "zsh"

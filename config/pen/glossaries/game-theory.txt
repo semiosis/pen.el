@@ -1,0 +1,21 @@
+backward induction
+    https://www.youtube.com/watch?v=pyLKkN5HpDY&ab_channel=WilliamSpaniel
+
+Nash equilibrium
+    A Nash equilibrium is a set of strategies,
+    one for each player, such that no player
+    has incentive to change his or her
+    strategy given what the other players are
+    doing.
+
+Combinatorial Game Theory
+    Studies strategies and mathematics of two-
+    player games of perfect knowledge such as
+    chess or go (but often either
+    concentrating instead on simpler games
+    such as nim, or solving endgames and other
+    special cases).
+
+    A branch of mathematics and theoretical CS
+    that typically studies sequential games
+    with perfect information.

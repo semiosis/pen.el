@@ -1,0 +1,34 @@
+title: "Explain code"
+doc: "Select some code and ask for an explanation"
+info: on
+prompt-version: 2
+prompt: |+
+    `(pen-guess-major-mode-set)`<code>
+    Summary of the above code:`(comment-line 1)`
+xlr-n-generate: 5
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+best-of: 1
+no-trim-start: off
+no-trim-end: off
+stop-sequences:
+- "##"
+yas: on
+vars:
+- code
+examples:
+- |
+    var myDraw = Draw(200, 200, true);
+    var x1 = randomInteger(200);
+    var y1 = randomInteger(200);
+    var x2 = randomInteger(200);
+    var y2 = randomInteger(200);
+    myDraw.line(x1, y1, x2, y2);
+n-test-runs: 5
+n-collate: 1
+n-completions: 5
+filter: no
+completion: off
+insertion: off

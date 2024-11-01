@@ -1,0 +1,14 @@
+>> def insertion_sort(arr):
+>>>     for i in range(1, len(arr)):
+>>>         key = arr[i]
+>>>         j = i - 1
+>>>         while j >= 0 and key < arr[j]:
+>>>             arr[j + 1] = arr[j]
+>>>             j -= 1
+>>>         arr[j + 1] = key
+>>>     return arr
+
+# Time: O(n^2)
+# Space: O(1)
+# Notes:
+# 1. The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending

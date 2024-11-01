@@ -1,0 +1,14 @@
+hi
+root@mele:/root$ echo hello
+hello
+root@mele:/root$ exit
+exit
+exit
+
+root@mele:/root$
+root@mele:/root$ exit
+exit
+
+root@mele:/root$ exit
+exit
+

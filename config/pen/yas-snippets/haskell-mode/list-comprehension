@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: list comprehension
+# group: list
+# key: lc
+# --
+-- Take a list of numbers and we filtered them by the predicate
+boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x] 
+boomBangs [7..13]

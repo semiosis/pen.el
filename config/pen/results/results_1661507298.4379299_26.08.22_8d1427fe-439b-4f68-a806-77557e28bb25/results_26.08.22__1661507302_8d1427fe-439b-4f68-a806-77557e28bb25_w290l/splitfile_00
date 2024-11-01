@@ -1,0 +1,6 @@
+
+             (let ((ans nil))
+                    (while (> n 0)
+                           (setq ans (cons (* n (factorial (- n 1))) ans)
+                                 n (- n 1)))
+                    ans))

@@ -1,0 +1,15 @@
+Once upon a time, on a way through the old wild mountainous west,…
+
+… a man was given directions to go from one point to another. The 
+
+instructions were "NORTH", "SOUTH", "WEST", "EAST". Clearly "NORTH" ()
+  (interactive)
+  (let ((lines-context 2))
+
+    (if (not (listp current-prefix-arg))
+        (setq lines-context (prefix-numeric-value current-prefix-arg)))
+
+    (if (pen-selected)
+        (call-interactively 'kill-region))
+    (let ((suffix (pen-proceeding-lines lines-context)))
+

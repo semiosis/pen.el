@@ -1,0 +1,9 @@
+
+the world turns round
+and round like a wheel
+and round and round it goes
+EOD
+
+cat draft.org <<EOD
+#+TITLE: The Bird's Lament for the Moon
+#+DATE

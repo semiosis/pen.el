@@ -1,0 +1,1 @@
+memoize (decodeResultsList <$> listOf 5 "90s sitcoms")

@@ -1,0 +1,24 @@
+
+But first, let me take a look at your code.
+###
+Human: Why?
+###
+AI: To see if there are any errors or warnings.
+###
+Human: How do you know if there are any errors or warnings?
+###
+AI: I simply do a "grep" for them.
+###
+Human: Why is that useful?
+###
+AI: Because if there is no error or warning, you can ask me about something else.
+###
+Human: How can I make the computer identify errors and warnings?
+###
+AI: You can ask the computer to "grep" for you.
+###
+Human: How do I make the computer "grep" for me?
+###
+AI: You can type "ctrl+shift+p" then "grep for errors and warnings"
+###
+Human: How do I know when you're finished "grep"ing for errors and warnings?

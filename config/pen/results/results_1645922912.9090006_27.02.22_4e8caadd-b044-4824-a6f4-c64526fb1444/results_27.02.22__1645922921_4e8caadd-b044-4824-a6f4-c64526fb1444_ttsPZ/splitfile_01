@@ -1,0 +1,5 @@
+John Dee \n"))
+  prompt))
+
+(defun pf-generate-wiki-blurb/1 (name)
+  "Generate a blurb for NAME on the English Wikipedia

@@ -1,0 +1,1212 @@
+awesome-open https://github.com/SwapneelM/awesome-particle-physics-for-non-physicists
+
+soliton
+    In mathematics and physics, a soliton or
+    solitary wave is a self-reinforcing wave
+    packet that maintains its shape while it
+    propagates at a constant velocity.
+    
+    Solitons are caused by a cancellation of
+    nonlinear and dispersive effects in the
+    medium.
+
+Grand Unified Theory
+    [model in particle physics]
+
+    At high energy, the three gauge
+    interactions of the Standard Model that
+    define the electromagnetic, weak, and
+    strong interactions, or forces, are merged
+    into a single force.
+
+Grand Unified Representation
+
+Pauli exclusion principle
+    An atom’s electrons are arranged in energy
+    shells.
+    
+    Like concertgoers in an arena, each
+    electron occupies a single chair and
+    cannot drop to a lower tier if all its
+    chairs are occupied.
+    
+    This fundamental property of atomic
+    physics is known as the Pauli exclusion
+    principle, and it explains the shell
+    structure of atoms, the diversity of the
+    periodic table of elements, and the
+    stability of the material universe.
+    
+    Now, MIT physicists have observed the
+    Pauli exclusion principle, or Pauli
+    blocking, in a completely new way: They’ve
+    found that the effect can suppress how a
+    cloud of atoms scatters light.
+
+    https://news.mit.edu/2021/atoms-ultracold-scatter-light-1118
+
+entropy
+    The disorder of a system.
+
+chaos
+    Means that the behaviour of system (no
+    randomness) is not predictable.
+    
+    This is the common feature with random
+    system (a nose), but the rest of body is
+    different.
+    
+    Deterministic chaos is a mathematical
+    concept while randomness is essentially a
+    philosophical one.
+
+randomness
+
+
+photon sieve
+    A device for focusing light using
+    diffraction and interference.
+    
+    It consists of a flat sheet of material
+    full of pinholes that are arranged in a
+    pattern which is similar to the rings in a
+    Fresnel zone plate, but a sieve brings
+    light to much sharper focus than a zone
+    plate.
+    
+    The sieve concept, first developed in
+    2001, is versatile because the
+    characteristics of the focusing behaviour
+    can be altered to suit the application by
+    manufacturing a sieve containing holes of
+    several different sizes and different
+    arrangement of the pattern of holes.
+
+    https://en.wikipedia.org/wiki/Photon_sieve
+
+decoherence
+environmental entanglement
+    Branches the state into separate
+    components.
+
+phasor
+phase vector
+    [#physics and engineering]
+    [complex number]
+    [portmanteau of phase vector]
+
+    A complex number representing a sinusoidal
+    function whose amplitude, angular
+    frequency, and initial phase are
+    time-invariant.
+
+spinor
+    [#geometry]
+    [#physics]
+    
+    Elements of a complex vector space that
+    can be associated with Euclidean space.
+    
+    Like geometric vectors and more general
+    tensors, spinors transform linearly when
+    the Euclidean space is subjected to a
+    slight rotation.
+
+    https://youtu.be/pWlk1gLkF2Y?t=535
+
+tesla turbine
+    https://www.youtube.com/watch?v=AfCyzIbpLN4
+
+Boundary layer region
+    https://www.youtube.com/watch?v=AfCyzIbpLN4
+
+    Boundary layer, in fluid mechanics, thin
+    layer of a flowing gas or liquid in
+    contact with a surface such as that of an
+    airplane wing or of the inside of a pipe.
+
+    The flow in such boundary layers is
+    generally laminar at the leading or
+    upstream portion and turbulent in the
+    trailing or downstream portion.
+
+uno
+    https://en.wikipedia.org/wiki/Parts-per_notation#Uno
+
+    The “unit” for dimensionless quantities.
+
+sonoluminescence
+    The emission of short bursts of light from
+    imploding bubbles in a liquid when excited
+    by sound.
+
+thermodynamic system
+    A body of matter and/or radiation,
+    confined in space by walls, with defined
+    permeabilities, which separate it from its
+    surroundings.
+    
+    The surroundings may include other
+    thermodynamic systems, or physical systems
+    that are not thermodynamic systems.
+    
+    A wall of a thermodynamic system may be
+    purely notional, when it is described as
+    being 'permeable' to all matter, all
+    radiation, and all forces.
+    
+    A thermodynamic system can be fully
+    described by a definite set of
+    thermodynamic state variables, which
+    always covers both intensive and extensive
+    properties.
+
+catadioptric
+    A catadioptric optical system is one where
+    refraction and reflection are combined in
+    an optical system, usually via lenses and
+    curved mirrors.
+
+dioptric
+    Purely refractive.
+
+Fresnel lens
+    A type of composite compact lens developed
+    by the French physicist Augustin-Jean
+    Fresnel (1788–1827) for use in
+    lighthouses.
+    
+    It has been called "the invention that
+    saved a million ships."
+
+    The design allows the construction of
+    lenses of large aperture and short focal
+    length without the mass and volume of
+    material that would be required by a lens
+    of conventional design.
+    
+    A Fresnel lens can be made much thinner
+    than a comparable conventional lens, in
+    some cases taking the form of a flat
+    sheet.
+    
+    The simpler dioptric form of the lens was
+    first proposed by Count Buffon, and
+    independently reinvented by Fresnel.
+    
+    The catadioptric form of the lens,
+    entirely invented by Fresnel, has outer
+    elements that use total internal
+    reflection as well as refraction; it can
+    capture more oblique light from a light
+    source and add it to the beam of a
+    lighthouse, making the light visible from
+    greater distances.
+
+Maxwell's equations
+    4 equations.
+
+    A set of coupled partial differential
+    equations.
+
+    Together with the Lorentz
+    force law, form the foundation of:
+    - classical electromagnetism,
+    - classical optics, and
+    - electric circuits.
+
+    Describe how electric and magnetic fields
+    respond to charges, currents, and each
+    other.
+
+    Provide a mathematical model for:
+    - electric,
+    - optical, and
+    - radio technologies, such as
+    - power generation,
+    - electric motors,
+    - wireless communication,
+    - lenses,
+    - radar etc.
+
+    Describe how electric and magnetic fields
+    are generated by:
+    - charges,
+    - currents, and
+    - changes
+    of the fields.
+
+    He also first used the equations to
+    propose that light is an electromagnetic
+    phenomenon.
+
+Archimedes' principle
+    Archimedes' principle states that the
+    upward buoyant force that is exerted on a
+    body immersed in a fluid, whether fully or
+    partially submerged, is equal to the
+    weight of the fluid that the body
+    displaces.
+    
+    Archimedes' principle is a law of physics
+    fundamental to fluid mechanics.
+
+Centripetal force
+    Force pushing towads the center.
+
+Centrifugal force
+    Force pushing outwards
+
+Spallation
+    The break-up of a bombarded nucleus into
+    several parts.
+
+    e.g. cosmic ray spallation.
+
+r-Process
+    An easier way to make heavier elements.
+
+    Rapid.
+
+    Add a neutron and rely on beta-decay.
+
+    The neutron changes into a proton.
+
+    Without having to overcome these coulomb
+    repulsions.
+
+    Doesn't always work.
+
+s-Process
+    Slow.
+
+    [[https://www.youtube.com/watch?v=KlBG_A4Djp4][The s-Process - Sixty Symbols - YouTube]]
+
+    This guys didn't explain it very well.
+
+    I think it's adding neutrons and waiting
+    over a long period of time -- 10,000s
+    years.
+
+Electron chirality / spin
+    When he talked about the pauli-exclusion
+    principle, I thought he was suggesting that
+    the electron's chirality was the quantum
+    spin.
+
+    When he talked about the graphene atom
+    orientations, it sounded like it wasn't
+    quantum spin but something that comes from
+    the electron travelling between atoms of
+    different orientations.
+
+    So I'm still unsure.
+
+    [[https://youtu.be/46h44d3yrZQ?t=800][Left-handed Electrons - Sixty Symbols - YouTube]]
+
+    An electron has a spin. With the
+    Pauli-exclusion principle, the two
+    electrons must have opposing spins.
+    Remarkably, if an electron tunnels to a
+    new location, via quantum tunnelling, it
+    retains the same spin, paired with a
+    different electron.
+
+Pauli-exclusion principle
+    No two electrons can have the same four
+    electronic quantum numbers.  As an orbital
+    can contain a maximum of only two
+    electrons, the two electrons must have
+    opposing spins.
+
+Quantum Electrodynamics
+QED
+    The relativistic quantum field theory of
+    electrodynamics.
+    
+    In essence, it describes how light and
+    matter interact and is the first theory
+    where full agreement between quantum
+    mechanics and special relativity is
+    achieved. QED mathematically describes all
+    phenomena involving electrically charged
+    particles interacting by means of exchange
+    of photons and represents the quantum
+    counterpart of classical electromagnetism
+    giving a complete account of matter and
+    light interaction.
+
+    Feynman diagrams are used to describe the
+    interactions of particles as they come
+    together.
+
+Feynman diagrams
+    One of the dimensions of the 2D diagram is
+    time.
+
+The Inverse Leidenfrost Effect
+    https://www.youtube.com/watch?v=M2CMH57hXmY
+
+    Can continue indefinitely because the
+    vapour comes from the substrate.
+
+fermions
+    Comprise matter.
+
+bosons
+    Communicate the fundamental forces.
+
+hierarchy problem
+    [discrepancy]
+
+    The standard model can't explain the
+    minuscule weakness of gravity compared to
+    the other three forces
+
+electroweak energy
+    The energy at which the electromagnetic
+    and weak nuclear forces merge into the
+    same force.
+
+Supersymmetry
+SUSY
+    [proposed extension to the standard model]
+
+        readsubs "[[https://www.youtube.com/watch?v=5ESFGYkkbEI][Supersymmetric Particle Found? - YouTube]]"
+
+    Provides a very natural explanation for
+    the "hierarchy problem" by introducing a
+    new symmetry between the fermions and the
+    bosons.
+    
+    It's a key feature in some grand unified
+    theories as well as modern string theory,
+    leveling it up to superstring theory.
+
+    Predicts:
+        A one to one property.
+
+        Every single standard model of
+        particle has a supersymmetric partner
+        particle of the opposite type:
+
+        - The partners of fermions are bosons.
+        - The partners of bosons are fermions.
+
+    These supersymmetric particles are all
+    expected to be way more massive than their
+    known partners in the standard model.
+    
+LHC
+    Supersymmetry:
+        Hope:
+            By smashing particles together
+            hard enough in the Large Hadron
+            Collider, there'd be enough energy
+            in those collisions to produce a
+            supersymmetric particle.
+            
+        The LHC has seen nothing.
+        
+        It may just be that these new
+        particles are way more massive than
+        expected.
+
+    To detect more massive supersymmetric
+    particles, you need higher energy particle
+    collisions.
+
+    Alternatives:
+    - Cosmic rays
+      Can have energies around a billion times
+      that of the LHC.
+
+String theory
+    May be wrong, but it's not testable due to
+    the limits of current facilities.
+
+M-theory
+    Modern string theory.
+
+    Not particularly well-defined.
+
+not even wrong
+    Wolfgang Pauli
+
+gravitational waves
+    Appears to refute the idea of extra
+    dimensions.
+
+weakness of the gravitational force
+    unusal.
+
+    One explanation
+        There is an extra special dimension that
+        has the same scale as the familiar three,
+        so a 4d space in which we live on an
+        embedded 3D manifold called a brain.
+
+    Gravity then leaks into the extra fourth
+    dimension, causing it to weaken.
+
+world sheet
+    [string theory]
+    
+    2D manifold which describes the embedding
+    of a string in spacetime.
+    
+    The term was coined by Leonard Susskind
+    around 1967 as a direct generalization of
+    the world line concept for a point
+    particle in special and general
+    relativity.
+    
+    The type of string, the geometry of the
+    spacetime in which it propagates, and the
+    presence of long-range background fields
+    (such as gauge fields) are encoded in a
+    two-dimensional conformal field theory
+    defined on the worldsheet.
+    
+    For example, the bosonic string in
+    26-dimensional Minkowski space has a
+    worldsheet conformal field theory
+    consisting of 26 free scalar fields.
+    
+    Meanwhile, a superstring worldsheet theory
+    in 10 dimensions consists of 10 free
+    scalar fields and their fermionic
+    superpartners.
+
+Casimir effect
+    [#quantum field theory]
+
+    Can't get meaningful energy from this?
+    
+    And the Casimir–Polder force are physical
+    forces arising from a quantized field.
+    
+    Can be understood by the idea that the
+    presence of conducting metals and
+    dielectrics alters the vacuum expectation
+    value of the energy of the second
+    quantized electromagnetic field.
+    
+    Since the value of this energy depends on
+    the shapes and positions of the conductors
+    and dielectrics, the Casimir effect
+    manifests itself as a force between such
+    objects.
+    
+    Any medium supporting oscillations has an
+    analogue of the Casimir effect.
+    
+    For example, beads on a string as well as
+    plates submerged in noisy water or gas
+    illustrate the Casimir force.
+    
+    Plays an important role in the chiral bag
+    model of the nucleon; in applied physics
+    it is significant in some aspects of
+    emerging microtechnologies and
+    nanotechnologies.
+
+Cosmic rays
+    Sources:
+    - Supernova explosions,
+    - gamma ray bursts,
+    - black hole magnetic fields
+    
+    Examples:
+    - electrons
+    - atomic nuclei
+
+    Supersymmetry:
+        Not surprising that we haven't seen
+        supersymmetric particles in our cosmic
+        ray observations yet, or have we?
+
+    Lose energy to the CMB.
+    In those interactions, cosmic rays can
+    create extremely high energy neutrinos.
+
+    Detecting the highest energy neutrinos
+    allows us to learn about the cosmic rays
+    that produced them.
+
+    Red herrings:
+    - boring or muon neutrinos
+
+neutrinos
+    Ignore the CMB.
+
+    Pass through solid matter.
+    
+    Lower energy neutrinos can flow right
+    through the Earth as though it isn't
+    there.
+
+    Very, very rarely one will interact with
+    an atomic nucleus and produce a shower of
+    particles.
+
+Antarctic impulsive transient antenna
+ANITA
+    A cluster of radio antennae that hovers 37 kilometers above
+    Antarctica.
+
+    Designed to detect neutrinos that are coming from below, passing
+    through the earth into the ice sheet.
+
+    Cosmic ray detector disguised as a
+    neutrino detector disguised as a radio
+    antenna disguised as a hot air balloon.
+
+    Similar to "IceCube Observatory".
+
+    But focused on catching the very highest
+    energy neutrinos, the ones that are
+    produced by cosmic ray interactions with
+    the CMB.
+
+IceCube Observatory
+    A 1km cube of the Antarctic glacier laced with photon detectors.
+
+    Spots "Cherenkov radiation".
+
+superstring theory
+    Supersymmetry + string theory.
+
+cosmic microwave background
+    The leftover heat glow of the very early
+    universe
+
+Cherenkov radiation
+    Neutrinos when they're decayed or electrons, muons, or tau
+    particles, which in turn produce visible light as they streak
+    through the ice.
+
+Pilot wave theory
+Bohmian mechanics
+The causal interpretation
+    An interpretation of quantum mechanics.
+
+    In addition to a wavefunction on the space
+    of all possible configurationss it also
+    postulates an actual configuration that
+    exists even when unobserved.
+
+    https://youtu.be/RlXdsyctD50?t=80
+
+    Real waves that push around real
+    particles.
+
+    Doesn't have a relativity analog like
+    quantum mechanics has with quantum field
+    theory.
+
+Quantum field theory
+    The theory that allows relativity to
+    coexist with quantum mechanics.
+
+    All possible particle trajectories should
+    be considered equally real.
+
+    This does not help pilot wave theory
+    because pilot-wave theory suggests that a
+    particle takes a single actual trajectory,
+    the bohm trajectory.
+
+quark
+    Said one of two ways:
+        Like arks
+        Like orcs.
+
+First generation of matter
+    Up quark
+    Down quark
+    [electron] neutrino
+        These are hard to detect.
+    electron
+
+Second generation of matter
+    For some reason we don't understand,
+    nature provided us with another copy of
+    the first generation of matter.
+
+    In the second generation, all the
+    particles are exactly the same except they
+    are more massive and they're unstable.
+
+    Properties:
+    - MORE MASSIVE
+    - UNSTABLE
+
+    charm quark
+        heavier than up quark
+    strange quark
+        heavier than down quark
+    muon neutrino
+        heavier thatn electron neutrino
+    muon
+        200x more massive than electron
+
+        If you make a muon, it will quickly
+        decay into an electron and some
+        neutrinos.
+
+        https://youtu.be/0roQUZvU-As?t=135
+
+Third generation of matter
+    Even heavier than second generation.
+
+    Top quark
+    Bottom quark
+    Tau neutrino
+    Tau
+
+tau
+    Cool because it's so short lived.
+
+lepton
+    [elementary particle]
+    
+    half-integer spin.
+    
+    Does not undergo strong interactions.
+    
+    Two main classes of leptons exist:
+    - charged leptons, and
+    - neutral leptons
+
+tau lepton
+    The heavier cousin to the electron.
+
+tau neutrino
+ν_τ
+    [subatomic elementary particle]
+
+    No net electric charge.
+
+    Travels through the entire Earth interacts
+    with the ice on the other side and
+    transforms into a tau lepton.
+
+    Together with the tau, it forms the third
+    generation of leptons.
+
+neutrinos
+neutral leptons
+    [class of leptons]
+
+    Not an electron-like lepton.
+
+half-integer spin
+spin 1⁄2
+
+stau
+    [particle]
+    [SUSY particle]
+
+    Supersymmetric partner of the tau lepton.
+
+SUSY particle
+    Examples:
+    - Selectron,
+    - squark,
+    - stau.
+
+charged leptons
+electron-like leptons
+    [class of leptons]
+
+    Not a neutrino.
+
+Matter particles
+    12 particles.
+
+    First generation of matter
+    Second generation of matter
+    Third generation of matter
+
+original imperfection
+
+Fermilab
+    [particle accelerator]
+
+active neutrinos
+    [Standard Model]
+
+    Charged under the weak interaction.
+
+    This term usually refers to neutrinos with
+    right-handed chirality (see right-handed
+    neutrino), which may be added to the
+    Standard Model.
+
+neutral heavy lepton
+NHL
+
+heavy neutral lepton
+HNL
+    
+sterile neutrino
+inert neutrinos
+    [hypothetical particle]
+    [neutral lepton]
+
+    'Sterile' is the hypothetical property.
+    
+    Interact only via gravity.
+
+    Do not interact with any of the
+    fundamental interactions of the Standard
+    Model.
+    
+    Distinguished from active neutrinos.
+    
+    Occasionally it is used in a general sense
+    for any neutral fermion, instead of the
+    more cautiously vague name NHL or HNL.
+
+electron
+    Center of charge is not the same as the
+    center of mass.
+
+    Properties:
+    - EDM
+
+    An EDM (eEDM) is hypothesised but not yet
+    detected.
+
+dipole moment
+    No dispute on this.
+
+    Magnetic dipole moment:
+        Even point-partical if it spins generates
+        a magnetic field.
+
+Electric Dipole Moment
+EDM
+    Measuring:
+        It's hard to provide an electric field to
+        an electron.
+
+        Can't provide too high of an electric
+        field before you get sparks.
+
+electron EDM
+eEDM
+    We are interested in this.
+
+    We haven't yet measured this for an
+    electron.
+
+    It's a point particle.
+
+vacuum
+    Can be polarised.
+
+NaCl
+    Has an even number of elections.
+
+HfF+
+Hafnium Fluoride plus
+    Strong electric field between the ions.
+    
+Electron gun
+    [device]
+    
+    Emits high-speed electrons.
+    
+    Used in CRTs.
+    
+    Can use an ion trap to prevent degradation
+    of the cathode by positive ions.
+
+ion trap
+    Made of long cylinders of metal.
+
+    Electrons can be trapped between these metal.s
+
+    Coated with gold -- usually coated with Al
+    or Cu.
+
+    Combination of electric or magnetic fields
+    used to capture charged particles, often
+    in a system isolated from an external
+    environment.
+    
+    Have a number of scientific uses such as
+    mass spectrometry, basic physics research,
+    and controlling quantum states.
+    
+    The two most common types of ion trap are
+    the Penning trap, which forms a potential
+    via a combination of electric and magnetic
+    fields, and the Paul trap which forms a
+    potential via a combination of static and
+    oscillating electric fields.
+    
+    Penning traps can be used for precise
+    magnetic measurements in spectroscopy.
+    
+    Studies of quantum state manipulation most
+    often use the Paul trap.
+    
+    This may lead to a trapped ion quantum
+    computer and has already been used to
+    create the world's most accurate atomic
+    clocks.
+
+spin precession
+Larmor precession
+    The precession of the magnetic moment of
+    an object about an external magnetic
+    field.
+    
+    Objects with a magnetic moment also have
+    angular momentum and effective internal
+    electric current proportional to their
+    angular momentum; these include electrons,
+    protons, other fermions, many atomic and
+    nuclear systems, as well as classical
+    macroscopic systems.
+    
+    The external magnetic field exerts a
+    torque on the magnetic moment,
+
+randomized controlled trial
+RCT
+
+blinding
+blinding the data
+    The concealment of group allocation from
+    one or more individuals involved in a
+    clinical research study, most commonly a
+    RCT.
+    
+    Although randomization minimizes
+    differences between treatment groups at
+    the outset of the trial, it does nothing
+    to prevent differential treatment of the
+    groups later in the trial or the
+    differential assessment of outcomes,
+    either of which may result in biased
+    estimates of treatment effects.
+    
+    Optimal strategy totinimize the likelihood
+    of differential treatment or assessments
+    of outcomes by
+
+    Blind as many individuals as possible in a
+    trial.
+
+Union Fire Company
+Benjamin Franklin's Bucket Brigade
+    A volunteer fire department formed in
+    Philadelphia in 1736 with the assistance
+    of Benjamin Franklin.
+    
+    It was the first firefighting organization
+    in Philadelphia, although it was followed
+    within the year by establishment of the
+    Fellowship Fire Company.
+
+bucket brigade
+human chain
+    Nearnly 100 versions of the expriment.
+    Doing 100 experiments all at once -- more .
+
+    Method for transporting items where items
+    are passed from one (relatively
+    stationary) person to the next.
+
+    The method was important in firefighting
+    before the advent of hand pumped fire
+    engines, whereby firefighters would pass
+    buckets to each other to extinguish a
+    blaze.
+    
+    A famous example of this is the Union Fire
+    Company.
+    
+    This technique is still common where using
+    machines to move water, supplies, or other
+    items would be impractical.
+    
+    This method needs a number of participants
+    sufficient for covering the distance.
+
+galaxies with antimatter
+    The mater floating between mater and
+    antimatter galaxies would turn into gamma
+    rays and we'd be able to spot those.
+
+CPT invariance
+    Circumstances:
+    - Run time backwards.
+    - Look in the mirror
+    - Look at the antiparticle.
+
+    If you have these 3 things together, you
+    get the same physics.
+
+    At least one of these things are violated
+    and at least another one must be violated.
+    You must violate at least 2.
+
+    Charge, parity, and time reversal symmetry
+    is a fundamental symmetry of physical laws
+    under the simultaneous transformations of
+    charge conjugation (C), parity
+    transformation (P), and time reversal (T).
+    
+    CPT is the only combination of C, P, and T
+    that is observed to be an exact symmetry
+    of nature at the fundamental level.
+    
+    The CPT theorem says that CPT symmetry
+    holds for all physical phenomena, or more
+    precisely, that any Lorentz invariant
+    local quantum field theory with a
+    Hermitian Hamiltonian must have CPT
+    symmetry.
+
+time reversal symmetry
+T-symmetry
+    The heoretical symmetry of physical laws
+    under the transformation of time reversal:
+
+Hfcl
+hafnium cloride
+
+precision metrology
+
+resonance line
+
+plutonium
+    Can be manufactured from uranium.
+
+inertial observer
+    No acceleration.
+    No gravitational field.
+    Laws of physics apply.
+
+photographic emulsion
+    A light-sensitive colloid used in film-
+    based photography.
+    
+    Most commonly, in silver-gelatin
+    photography, it consists of silver halide
+    crystals dispersed in gelatin.
+    
+    The emulsion is usually coated onto a
+    substrate of glass, films, paper, or
+    fabric.
+
+Seebeck Effect
+    Ellows us to generate an electric current
+    through a heat differential, as charge
+    carriers will move from hot to cold.
+
+    So if we have a heat source and a way of
+    cooling we can generate a sustained
+    electric current.
+    
+    Thankfully radioactive substances generate
+    heat as they decay.
+
+bond albedo
+    The fraction of power in the total
+    electromagnetic radiation incident on an
+    astronomical body that is scattered back
+    out into space.
+    
+    This takes into account all wavelengths.
+    
+    It is an important quantity for
+    characterising a planetary body's energy
+    balance.
+
+Viscosity
+    Resistance to flow.
+
+    The thickness of a liquid.
+
+    Oil is 100x more viscous than water.
+    Honey is 100x more viscous than oil.
+
+    Part (not more than) of what makes
+    something sticky is it's viscousity.
+
+Wave function
+    [ for an electron in an atom ]
+
+    Ψ -- psi
+
+    Wave of probability.
+
+    The wave function for an electron in an
+    atom does not describe a smeared out
+    electron with a smooth charge density.
+    ...
+    The electron is either here, or there, or
+    somewhere else, but wherever it is, it is
+    a point charge.
+        Richard Feynman
+
+    Even though a particle is not a wave, its
+    properties are.
+        Where it is, what it's doing, how much
+        energy it has -- these are wave
+        shaped, but they're only waves of
+        probability.
+
+    The act of measuring it does not
+    completely collapse the wave function.
+    There's still a little wiggle room.
+        That's what the uncertainty principle
+        is all about.
+
+        The wave is collapsed to a simpler shape.
+
+    Some of the properties can be measured
+    together.
+        Energy, magnitude of Angular Momentum
+        and orientation of Angular Momentum,
+        for example.
+
+        These can all be measured at the same
+        time but there is still a little
+        spread / wiggle room, which is what
+        gives emission lines their thickness.
+
+Emission spectrum
+    [...of a chemical element or compound]
+
+    The spectrum of frequencies of
+    electromagnetic radiation emitted due to
+    an atom or molecule making a transition
+    from a high energy state to a lower energy
+    state.
+
+    The photon energy of the emitted photon is
+    equal to the energy difference between the
+    two states.
+
+Torr
+atm
+    1 atm = 760 Torr
+
+radio
+    The transmission and reception of
+    electromagnetic waves of radio frequency,
+    especially those carrying sound messages.
+
+Huygens–Fresnel principle
+    A method of analysis applied to problems
+    of wave propagation both in the far-field
+    limit and in near-field diffraction and
+    also reflection.
+
+Zone plate
+    [#laria]
+
+    A zone plate is a device used to focus
+    light or other things exhibiting wave
+    character.
+    
+    Unlike lenses or curved mirrors, zone
+    plates use diffraction instead of
+    refraction or reflection.
+    
+    Based on analysis by French physicist
+    Augustin-Jean Fresnel, they are sometimes
+    called Fresnel zone plates in his honor.
+
+Faraday cage
+Faraday shield
+    An enclosure used to block electromagnetic
+    fields.
+    
+    A Faraday shield may be formed by a
+    continuous covering of conductive
+    material, or in the case of a Faraday
+    cage, by a mesh of such materials.
+    
+    Faraday cages are named after scientist
+    Michael Faraday, who invented them in
+    1836.
+    
+    Video of a Faraday cage shielding a man
+    from electricity
+    
+    A Faraday cage operates because an
+    external electrical field causes the
+    electric charges within the cage's
+    conducting material to be distributed so
+    that they cancel the field's effect in the
+    cage's interior.
+    
+    This phenomenon is used to protect
+    sensitive electronic equipment (for
+    example RF receivers) from external radio
+    frequency interference (RFI) often during
+    testing or alignment of the device.
+    
+    They are also used to protect people and
+    equipment against actual electric currents
+    such as lightning strikes and
+    electrostatic discharges, since the
+    enclosing cage conducts current around the
+    outside of the enclosed space and none
+    passes through the interior.
+    
+    Faraday cages cannot block stable or
+    slowly varying magnetic fields, such as
+    the Earth's magnetic field (a compass will
+    still work inside).
+
+Foucault pendulum
+Foucault's pendulum
+    A simple device named after French
+    physicist Léon Foucault and conceived as
+    an experiment to demonstrate the Earth's
+    rotation.
+    
+    The pendulum was introduced in 1851 and
+    was the first experiment to give simple,
+    direct evidence of the Earth's rotation
+
+time crystal
+    [#condensed matter physics]
+
+    A quantum system of particles whose
+    lowest-energy state is one in which the
+    particles are in repetitive motion.
+    
+    The system cannot lose energy to the
+    environment and come to rest because it is
+    already in its quantum ground state.
+    
+    Because of this, the motion of the
+    particles does not really represent
+    kinetic energy like other motion; it has
+    "motion without energy".
+    
+    Time crystals were first proposed
+    theoretically by Frank Wilczek in 2012 as
+    a time-based analogue to common crystals —
+    whereas the atoms in crystals are arranged
+    periodically in space, the atoms in a time
+    crystal are arranged periodically in both
+    space and time.
+    
+    Several different groups have demonstrated
+    matter with stable periodic evolution in
+    systems that are periodically driven.
+    
+    In terms of practical use, time crystals
+    may one day be used as quantum computer
+    memory.

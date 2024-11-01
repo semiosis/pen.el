@@ -1,0 +1,18 @@
+ial_state(state(left,left,left,left)).
+final_state(state(right,right,right,right)).
+EOD
+
+# actions
+
+cat draft.prolog <<EOD
+action(move(X,Y)) :- 
+	legal_move(X,Y), 
+	\+ illegal_move(X,Y).
+EOD
+
+# legal moves
+cat draft.prolog <<EOD
+legal_move([H1|T1],[H2|T2]) :- 
+	legal_move([H1|T1],T2), 
+	legal_move(T1,[H2|T2]).
+legal_move([],[]) :- !. % no more moves left to make.  we're done!  stop recursing.  note the cut.  this is an optimization.  it cuts the search tree in half and prevents

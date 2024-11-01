@@ -1,0 +1,2075 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 10:17:06 GMT
+Content-Type: text/html
+Content-Length: 97692
+Last-Modified: Sun, 17 Feb 2019 05:21:02 GMT
+Connection: keep-alive
+ETag: "5c68ef3e-17d9c"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>The Haskell 98 Report: Declarations</title>
+<body bgcolor="#ffffff"> <i>The Haskell 98 Report</i><br> <a href="index.html">top</a> | <a href="exps.html">back</a> | <a href="modules.html">next</a> | <a href="index98.html">contents</a> | <a href="prelude-index.html">function index</a> <br><hr>
+<a name="declarations"></a><a name="sect4"></a>
+<h2>4<tt>&nbsp;&nbsp;</tt>Declarations and Bindings</h2>
+
+
+<p>
+In this chapter, we describe the syntax and informal semantics of Haskell 
+<I>declarations</I>.<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td>
+module </td><td>  <tt>-&gt;</tt> </td><td> <tt>module</tt> modid [exports] <tt>where</tt> body 
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  body
+</td></tr><tr><td>
+body </td><td>  <tt>-&gt;</tt> </td><td> <tt>{</tt> impdecls <tt>;</tt> topdecls <tt>}
+</tt></td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> <tt>{</tt> impdecls  <tt>}
+</tt></td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> <tt>{</tt> topdecls  <tt>}
+</tt></td></tr><tr><td>
+topdecls </td><td>  <tt>-&gt;</tt> </td><td> topdecl<sub>1</sub> <tt>;</tt> ... <tt>;</tt> topdecl<sub>n</sub> 	</td><td> (n&gt;=1)
+</td></tr><tr><td>
+topdecl </td><td>  <tt>-&gt;</tt> </td><td> <tt>type</tt> simpletype <tt>=</tt> type
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>data</tt> [context <tt>=&gt;</tt>] simpletype <tt>=</tt> constrs [deriving]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>newtype</tt> [context <tt>=&gt;</tt>] simpletype <tt>=</tt> newconstr [deriving]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>class</tt> [scontext <tt>=&gt;</tt>] tycls tyvar [<tt>where</tt> cdecls]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>instance</tt> [scontext <tt>=&gt;</tt>] qtycls inst [<tt>where</tt> idecls]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>default</tt> <tt>(</tt>type<sub>1</sub> <tt>,</tt> ... <tt>,</tt> type<sub>n</sub><tt>)</tt> </td><td> <tt>&nbsp;&nbsp;</tt>(n&gt;=0)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  decl
+</td></tr><tr><td>
+decls </td><td>  <tt>-&gt;</tt> </td><td> <tt>{</tt> decl<sub>1</sub> <tt>;</tt> ... <tt>;</tt> decl<sub>n</sub> <tt>}</tt>		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+decl </td><td>  <tt>-&gt;</tt> </td><td> gendecl
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  (funlhs | pat<sup>0</sup>) rhs
+</td></tr><tr><td>
+cdecls </td><td>  <tt>-&gt;</tt> </td><td> <tt>{</tt> cdecl<sub>1</sub> <tt>;</tt> ... <tt>;</tt> cdecl<sub>n</sub> <tt>}</tt>		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+cdecl </td><td>  <tt>-&gt;</tt> </td><td> gendecl
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  (funlhs | var) rhs
+</td></tr><tr><td>
+idecls </td><td>  <tt>-&gt;</tt> </td><td> <tt>{</tt> idecl<sub>1</sub> <tt>;</tt> ... <tt>;</tt> idecl<sub>n</sub> <tt>}</tt>		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+idecl </td><td>  <tt>-&gt;</tt> </td><td> (funlhs | var) rhs
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>						</td><td> (empty)
+</td></tr><tr><td>
+gendecl </td><td>  <tt>-&gt;</tt> </td><td> vars <tt>::</tt> [context <tt>=&gt;</tt>] type	</td><td> (type signature)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  fixity [integer] ops			</td><td> (fixity declaration)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>					</td><td> (empty declaration)
+</td></tr><tr><td>
+ops </td><td>  <tt>-&gt;</tt> </td><td> op<sub>1</sub> <tt>,</tt> ... <tt>,</tt> op<sub>n</sub>		</td><td> (n&gt;=1)
+</td></tr><tr><td>
+vars </td><td>  <tt>-&gt;</tt> </td><td> var<sub>1</sub> <tt>,</tt> ... <tt>,</tt> var<sub>n</sub>		</td><td> (n&gt;=1)
+</td></tr><tr><td>
+fixity </td><td>  <tt>-&gt;</tt> </td><td> <tt>infixl</tt> | <tt>infixr</tt> | <tt>infix
+</tt></td></tr></table>
+<p>
+The declarations in the syntactic category <I>topdecls</I> are only allowed
+at the top level of a Haskell  module (see
+Chapter <a href="modules.html#modules">5</a>), whereas <I>decls</I> may be used either at the top level or
+in nested scopes (i.e. those within a <tt>let</tt> or <tt>where</tt> construct).<p>
+For exposition, we divide the declarations into
+three groups: user-defined datatypes, consisting of <tt>type</tt>, <tt>newtype</tt>,
+and <tt>data</tt> 
+declarations (Section <a href="decls.html#user-defined-datatypes">4.2</a>); type classes and
+overloading, consisting of <tt>class</tt>, <tt>instance</tt>, and <tt>default
+</tt>declarations (Section <a href="decls.html#overloading">4.3</a>); and nested declarations,
+consisting of value bindings, type signatures, and fixity declarations
+(Section <a href="decls.html#nested">4.4</a>).<p>
+Haskell  has several primitive datatypes that are "hard-wired"
+(such as integers and floating-point numbers), but most "built-in"
+datatypes are defined with normal Haskell  code, using normal <tt>type
+</tt>and <tt>data</tt> declarations. These "built-in" datatypes are described in detail in
+Section <a href="basic.html#basic-types">6.1</a>.<a name="types-overview"></a><p>
+<a name="sect4.1"></a>
+<h3>4.1<tt>&nbsp;&nbsp;</tt>Overview of Types and Classes</h3>
+<p>
+Haskell  uses a traditional
+Hindley-Milner
+polymorphic type system to provide a static type semantics
+[<a href="haskell.html#$damas-milner82">3</a>, <a href="haskell.html#$hindley69">5</a>], but the type system has been extended with
+<I>type classes</I> (or just 
+<I>classes</I>) that provide 
+a structured way to introduce <I>overloaded</I> functions.  <p>
+A <tt>class</tt> declaration (Section <a href="decls.html#class-decls">4.3.1</a>) introduces a new
+<I>type class</I> and the overloaded operations that must be
+supported by any type that is an instance of that class.  An
+<tt>instance</tt> declaration (Section <a href="decls.html#instance-decls">4.3.2</a>) declares that a
+type is an <I>instance</I> of a class and includes
+the definitions of the overloaded operations---called 
+<I>class methods</I>---instantiated on the named type.<p>
+For example, suppose we wish to overload the operations <tt>(+)</tt> and
+<tt>negate</tt> on types <tt>Int</tt> and <tt>Float</tt>.  We introduce a new
+type class called <tt>Num</tt>:
+
+
+<tt><br>
+
+<br>
+&nbsp;&nbsp;class&nbsp;Num&nbsp;a&nbsp;&nbsp;where&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;simplified&nbsp;class&nbsp;declaration&nbsp;for&nbsp;Num<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(+)&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;(Num&nbsp;is&nbsp;defined&nbsp;in&nbsp;the&nbsp;Prelude)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;negate&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+
+
+</tt>This declaration may be read "a type <tt>a</tt> is an instance of the class
+<tt>Num</tt> if there are class methods <tt>(+)</tt> and <tt>negate</tt>, of the
+given types, defined on it."<p>
+We may then declare <tt>Int</tt> and <tt>Float</tt> to be instances of this class:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;instance&nbsp;Num&nbsp;Int&nbsp;&nbsp;where&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;simplified&nbsp;instance&nbsp;of&nbsp;Num&nbsp;Int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;+&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;addInt&nbsp;x&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;negate&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;negateInt&nbsp;x<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;instance&nbsp;Num&nbsp;Float&nbsp;&nbsp;where&nbsp;&nbsp;&nbsp;--&nbsp;simplified&nbsp;instance&nbsp;of&nbsp;Num&nbsp;Float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;+&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;addFloat&nbsp;x&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;negate&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;negateFloat&nbsp;x<br>
+
+<br>
+
+</tt>where <tt>addInt</tt>, <tt>negateInt</tt>, <tt>addFloat</tt>, and <tt>negateFloat</tt> are assumed
+in this case to be primitive functions, but in general could be any
+user-defined function.  The first declaration above may be read
+"<tt>Int</tt> is an instance of the class <tt>Num</tt> as witnessed by these
+definitions (i.e. class methods) for <tt>(+)</tt> and <tt>negate</tt>."<p>
+More examples of type classes can be found in
+the papers by Jones [<a href="haskell.html#$jones:cclasses">7</a>] or Wadler and Blott
+[<a href="haskell.html#$wadler:classes">12</a>]. 
+The term `type class' was used to describe the original Haskell  1.0
+type system; `constructor class' was used to describe an extension to
+the original type classes.  There is no longer any reason to use two
+different terms: in this report, `type class' includes both the
+original Haskell  type classes and the constructor classes
+introduced by Jones.<p>
+<a name="sect4.1.1"></a>
+<h4>4.1.1<tt>&nbsp;&nbsp;</tt>Kinds</h4><p>
+To ensure that they are valid, type expressions are classified
+into different <I>kinds</I>,  which take one of two possible
+forms:
+<UL><LI>The symbol * represents the kind of all nullary type
+constructors.<p>
+<LI>If <font face="symbol">k</font><sub>1</sub> and <font face="symbol">k</font><sub>2</sub> are kinds, then <font face="symbol">k</font><sub>1</sub>-&gt;<font face="symbol">k</font><sub>2</sub>
+is the kind of types that take a type of kind <font face="symbol">k</font><sub>1</sub> and return
+a type of kind <font face="symbol">k</font><sub>2</sub>.
+</UL>
+Kind inference checks the validity of type expressions 
+in a similar way that type inference checks the validity of value expressions.  
+However, unlike types, kinds are entirely
+implicit and are not a visible part of the language.  Kind inference is discussed
+in Section <a href="decls.html#kindinference">4.6</a>.<a name="type-syntax"></a><p>
+<a name="sect4.1.2"></a>
+<h4>4.1.2<tt>&nbsp;&nbsp;</tt>Syntax of Types</h4>
+<a name="types"></a>
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr></tr><tr></tr><tr><td>
+type </td><td>  <tt>-&gt;</tt> </td><td> btype [<tt>-&gt;</tt> type]                    </td><td> (function type)
+</td></tr><tr><td>
+btype </td><td>  <tt>-&gt;</tt> </td><td>  [btype] atype                        </td><td> (type application)
+</td></tr><tr><td>
+atype </td><td>  <tt>-&gt;</tt> </td><td>  gtycon
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  tyvar
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(</tt> type<sub>1</sub> <tt>,</tt> ... <tt>,</tt> type<sub>k</sub> <tt>)</tt> </td><td> (tuple type, k&gt;=2)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>[</tt> type <tt>]</tt>                      </td><td> (list type)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(</tt> type <tt>)</tt>                      </td><td> (parenthesised constructor)
+</td></tr><tr><td>
+gtycon </td><td>  <tt>-&gt;</tt> </td><td> qtycon
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>()</tt>                              </td><td> (unit type)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>[]</tt>                              </td><td> (list constructor)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(-&gt;)</tt>                            </td><td> (function constructor)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(,</tt>{<tt>,</tt>}<tt>)</tt>                    </td><td> (tupling constructors)
+</td></tr></table>
+<p>
+
+The syntax for Haskell  type expressions
+
+
+is given above.  Just as data values are built using data
+constructors, type values are built from <I>type constructors</I>.  As with
+data constructors, the names of type constructors start with uppercase
+letters.
+Unlike data constructors, infix type constructors are not allowed (other than <tt>(-&gt;)</tt>).<p>
+The main forms of type expression are as follows:
+<OL><LI>Type variables, written as identifiers beginning with
+      a lowercase letter.  The kind of a variable is determined implicitly
+      by the context in which it appears.<p>
+<LI>Type constructors.  Most type constructors are written as an identifier
+      beginning with an uppercase letter.  For example:
+      <UL><LI><tt>Char</tt>, <tt>Int</tt>, <tt>Integer</tt>, <tt>Float</tt>, <tt>Double</tt> and <tt>Bool</tt> are
+            type constants with kind *.
+      <LI><tt>Maybe</tt> and <tt>IO</tt> are unary type
+            constructors, and treated as types with
+            kind *-&gt;*.
+      <LI>The declarations <tt>data&nbsp;T&nbsp;...</tt> or <tt>newtype&nbsp;T&nbsp;...</tt> add the type
+            constructor <tt>T</tt> to
+            the type vocabulary.  The kind of <tt>T</tt> is determined by
+            kind inference.
+      </UL>
+      Special syntax is provided for certain built-in type constructors:
+      <UL><LI>The <I>trivial type</I> is written as <tt>()</tt> and
+            has kind *.
+            It denotes the "nullary tuple" type, and has exactly one value,
+            also written <tt>()</tt> (see Sections <a href="exps.html#unit-expression">3.9</a>
+            and <a href="basic.html#basic-trivial">6.1.5</a>).
+      <LI>The <I>function type</I> is written as <tt>(-&gt;)</tt> and has
+            kind *-&gt;*-&gt;*.
+      <LI>The <I>list type</I>  is written as <tt>[]</tt> and has kind
+            *-&gt;*.
+      <LI>The <I>tuple types</I> are written as <tt>(,)</tt>,
+            <tt>(,,)</tt>, and so on.  Their kinds are
+            *-&gt;*-&gt;*,
+            *-&gt;*-&gt;*-&gt;*,  and
+            so on.
+      </UL>
+      Use of the <tt>(-&gt;)</tt> and <tt>[]</tt> constants is described in more detail below.<p>
+<LI>Type application.  If t<sub>1</sub> is a type of kind
+      <font face="symbol">k</font><sub>1</sub>-&gt;<font face="symbol">k</font><sub>2</sub> and t<sub>2</sub> is a type of kind <font face="symbol">k</font><sub>1</sub>,
+      then t<sub>1</sub> t<sub>2</sub> is a type expression of kind <font face="symbol">k</font><sub>2</sub>.<p>
+<LI>A <I>parenthesized type</I>, having form <tt>(</tt><I>t</I><tt>)</tt>, is identical
+      to the type <I>t</I>.<p>
+</OL>
+For example, the type expression <tt>IO&nbsp;a</tt> can be understood as the application
+of a constant, <tt>IO</tt>, to the variable <tt>a</tt>.  Since the <tt>IO</tt> type
+constructor has kind 
+*-&gt;*, it follows that both the variable <tt>a</tt> and the whole
+expression, <tt>IO&nbsp;a</tt>, must have kind *.
+In general, a process of <I>kind inference
+</I>(see Section <a href="decls.html#kindinference">4.6</a>)
+is needed to determine appropriate kinds for user-defined datatypes, type
+synonyms, and classes.<p>
+Special syntax is provided to allow certain type expressions to be written
+in a more traditional style:
+<OL><LI>A <I>function type</I> has the form
+<I>t</I><sub><I>1</I></sub><I> </I><tt>-&gt;</tt><I> t</I><sub><I>2</I></sub>, which is equivalent to the type
+<tt>(-&gt;)</tt><I> t</I><sub><I>1</I></sub><I> t</I><sub><I>2</I></sub>.  Function arrows associate to the right.
+For example, <tt>Int&nbsp;-&gt;&nbsp;Int&nbsp;-&gt;&nbsp;Float</tt> means <tt>Int&nbsp;-&gt;&nbsp;(Int&nbsp;-&gt;&nbsp;Float)</tt>.<p>
+<LI>A <I>tuple type</I> has the form 
+<tt>(</tt><I>t</I><sub><I>1</I></sub><tt>,</tt><I> ... </I><tt>,</tt><I> t</I><sub><I>k</I></sub><tt>)</tt> where <I>k&gt;=2</I>, which is equivalent to
+the type <tt>(,</tt><I>...</I><tt>,)</tt><I> t</I><sub><I>1</I></sub><I> ... t</I><sub><I>k</I></sub> where there are
+k-1 commas between the parenthesis.  It denotes the
+type of <I>k</I>-tuples with the first component of type <I>t</I><sub><I>1</I></sub>, the second
+component of type <I>t</I><sub><I>2</I></sub>, and so on (see Sections <a href="exps.html#tuples">3.8</a>
+and <a href="basic.html#basic-tuples">6.1.4</a>).<p>
+<LI>A <I>list type</I> has the form <tt>[</tt><I>t</I><tt>]</tt>,
+which is equivalent to the type <tt>[]</tt><I> t</I>.
+It denotes the type of lists with elements of type <I>t</I> (see
+Sections <a href="exps.html#lists">3.7</a> and <a href="basic.html#basic-lists">6.1.3</a>).<p>
+</OL>
+These special syntactic forms always denote the built-in type constructors
+for functions, tuples, and lists, regardless of what is in scope.
+In a similar way, the prefix type constructors <tt>(-&gt;)</tt>, <tt>[]</tt>, <tt>()</tt>, <tt>(,)</tt>, 
+and so on, always denote the built-in type constructors; they 
+cannot be qualified, nor mentioned in import or export lists (Chapter <a href="modules.html#modules">5</a>).
+(Hence the special production, "gtycon", above.)<p>
+Although the list and tuple types have special syntax, their semantics 
+is the same as the equivalent user-defined algebraic data types.<p>
+Notice that expressions and types have a consistent syntax.
+If <I>t</I><sub><I>i</I></sub> is the type of
+expression or pattern <I>e</I><sub><I>i</I></sub>, then the expressions <tt>(\</tt><I> e</I><sub><I>1</I></sub><I> </I><tt>-&gt;</tt><I> e</I><sub><I>2</I></sub><tt>)</tt>,
+<tt>[</tt><I>e</I><sub><I>1</I></sub><tt>]</tt>, and <tt>(</tt><I>e</I><sub><I>1</I></sub><I>,e</I><sub><I>2</I></sub><tt>)</tt> have the types <tt>(</tt><I>t</I><sub><I>1</I></sub><I> </I><tt>-&gt;</tt><I> t</I><sub><I>2</I></sub><tt>)</tt>,
+<tt>[</tt><I>t</I><sub><I>1</I></sub><tt>]</tt>, and <tt>(</tt><I>t</I><sub><I>1</I></sub><I>,t</I><sub><I>2</I></sub><tt>)</tt>, respectively.<p>
+
+With one exception (that of the distinguished type variable
+in a class declaration (Section <a href="decls.html#class-decls">4.3.1</a>)), the
+type variables in a Haskell  type expression
+are all assumed to be universally quantified; there is no explicit
+syntax for universal quantification [<a href="haskell.html#$damas-milner82">3</a>].
+For example, the type expression
+<tt>a&nbsp;-&gt;&nbsp;a</tt> denotes the type <I>forall a. a -&gt;a</I>.
+For clarity, however, we often write quantification explicitly
+when discussing the types of Haskell  programs.  When we write an
+explicitly quantified type, the scope of the <I>forall </I> extends as far
+to the right as possible; for example, <I>forall a. a -&gt;a</I> means
+<I>forall a. (a -&gt;a)</I>.<a name="classes&contexts"></a><p>
+<a name="sect4.1.3"></a>
+<h4>4.1.3<tt>&nbsp;&nbsp;</tt>Syntax of Class Assertions and Contexts</h4>
+
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+context </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> class
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(</tt> class<sub>1</sub> <tt>,</tt> ... <tt>,</tt> class<sub>n</sub> <tt>)</tt>		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+class </td><td>  <tt>-&gt;</tt> </td><td> qtycls tyvar
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  qtycls <tt>(</tt> tyvar atype<sub>1</sub> ...  atype<sub>n</sub> <tt>)</tt> </td><td> (n&gt;=1)
+</td></tr><tr><td>
+qtycls </td><td>  <tt>-&gt;</tt> </td><td> [ modid <tt>.</tt> ] tycls
+</td></tr><tr><td>
+tycls </td><td>  <tt>-&gt;</tt> </td><td> conid
+</td></tr><tr><td>
+tyvar </td><td>  <tt>-&gt;</tt> </td><td> varid
+</td></tr></table>
+<p>
+A <I>class assertion</I> has form <I>qtycls tyvar</I>, and
+indicates the membership of the type <I>tyvar</I> in the class
+<I>qtycls</I>.  A class identifier begins with an uppercase
+letter.
+A <I>context</I> consists of zero or more class assertions,
+and has the general form
+<p>
+
+<tt>(</tt><I> C</I><sub><I>1</I></sub><I> u</I><sub><I>1</I></sub><I>, ..., C</I><sub><I>n</I></sub><I> u</I><sub><I>n</I></sub><I> </I><tt>)
+<p>
+
+</tt>where <I>C</I><sub><I>1</I></sub><I>, ..., C</I><sub><I>n</I></sub> are class identifiers, and each of the <I>u</I><sub><I>1</I></sub><I>, ..., u</I><sub><I>n</I></sub> is
+either a type variable, or the application of type variable to one or more types.
+The outer parentheses may be omitted when <I>n=1</I>.  In
+general, we use <I>cx</I> to denote a context and we write <I>cx </I><tt>=&gt;</tt><I> t</I> to
+indicate the type <I>t</I> restricted by the context <I>cx</I>.
+The context <I>cx</I> must only contain type variables referenced in <I>t</I>.
+For convenience,
+we write <I>cx </I><tt>=&gt;</tt><I> t</I> even if the context <I>cx</I> is empty, although in this
+case the concrete syntax contains no <tt>=&gt;</tt>.<a name="type-semantics"></a><p>
+<a name="sect4.1.4"></a>
+<h4>4.1.4<tt>&nbsp;&nbsp;</tt>Semantics of Types and Classes</h4>
+<p>
+In this section, we provide informal details of the type system.
+(Wadler and Blott [<a href="haskell.html#$wadler:classes">12</a>] and Jones
+[<a href="haskell.html#$jones:cclasses">7</a>] discuss type
+and constructor classes, respectively, in more detail.)<p>
+The Haskell  type system attributes a <I>type</I> to each
+
+expression in the program.  In general, a type is of the form
+<I>forall </I><u>u</u><I>. cx =&gt;t</I>,
+where <u>u</u> is a set of type variables <I>u</I><sub><I>1</I></sub><I>, ..., u</I><sub><I>n</I></sub>.
+In any such type, any of the universally-quantified type variables <I>u</I><sub><I>i</I></sub>
+that are free in <I>cx</I> must also be free in <I>t</I>.
+Furthermore, the context <I>cx</I> must be of the form given above in
+Section <a href="decls.html#classes&contexts">4.1.3</a>.  For example, here are some
+valid types:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;Eq&nbsp;a&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+&nbsp;&nbsp;(Eq&nbsp;a,&nbsp;Show&nbsp;a,&nbsp;Eq&nbsp;b)&nbsp;=&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;[b]&nbsp;-&gt;&nbsp;String<br>
+&nbsp;&nbsp;(Eq&nbsp;(f&nbsp;a),&nbsp;Functor&nbsp;f)&nbsp;=&gt;&nbsp;(a&nbsp;-&gt;&nbsp;b)&nbsp;-&gt;&nbsp;f&nbsp;a&nbsp;-&gt;&nbsp;f&nbsp;b&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>In the third type, the constraint <tt>Eq&nbsp;(f&nbsp;a)</tt> cannot be made
+simpler because <tt>f</tt> is universally quantified.<p>
+The type of an expression <I>e</I> depends 
+on a <I>type environment</I> that gives types 
+for the free variables in <I>e</I>, and a
+<I>class environment</I> that 
+declares which types are instances of which classes (a type becomes
+an instance of a class only via the presence of an
+<tt>instance</tt> declaration or a <tt>deriving</tt> clause).<p>
+Types are related by a generalization preorder
+
+(specified below);
+the most general type, up to the equivalence induced by the generalization preorder,
+that can be assigned to a particular
+expression (in a given environment) is called its 
+<I>principal type</I>.
+
+Haskell 's extended Hindley-Milner type system can infer the principal
+type of all expressions, including the proper use of overloaded
+class methods (although certain ambiguous overloadings could arise, as
+described in Section <a href="decls.html#default-decls">4.3.4</a>).  Therefore, explicit typings (called
+<I>type signatures</I>)
+
+are usually optional (see
+Sections <a href="exps.html#expression-type-sigs">3.16</a> and <a href="decls.html#type-signatures">4.4.1</a>).<p>
+The type <I>forall </I><u>u</u><I>. cx</I><sub><I>1</I></sub><I> =&gt;t</I><sub><I>1</I></sub> is
+<I>more general than</I> the 
+type <I>forall </I><u>w</u><I>. cx</I><sub><I>2</I></sub><I> =&gt;t</I><sub><I>2</I></sub> if and only if there is 
+a substitution <I>S</I> whose domain is <u>u</u> such that:
+<UL><LI><I>t</I><sub><I>2</I></sub> is identical to <I>S(t</I><sub><I>1</I></sub><I>)</I>.
+<LI>Whenever <I>cx</I><sub><I>2</I></sub> holds in the class environment, <I>S(cx</I><sub><I>1</I></sub><I>)</I> also holds.
+</UL><p>
+A value of type
+<I>forall </I><u>u</u><I>. cx =&gt;t</I>,
+may be instantiated at types <u>s</u> if and only if
+the context <I>cx[</I><u>s</u><I>/</I><u>u</u><I>]</I> holds.
+For example, consider the function <tt>double</tt>:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;double&nbsp;x&nbsp;=&nbsp;x&nbsp;+&nbsp;x<br>
+
+<br>
+
+</tt>The most general type of <tt>double</tt> is
+<I>forall a. </I><tt>Num</tt><I> a =&gt;a -&gt;a</I>.
+<tt>double</tt> may be applied to values of type <tt>Int</tt> (instantiating <I>a</I> to
+<tt>Int</tt>), since <tt>Num&nbsp;Int</tt> holds, because <tt>Int</tt> is an instance of the class <tt>Num</tt>.
+However, <tt>double</tt> may not normally be applied to values
+of type <tt>Char</tt>, because <tt>Char</tt> is not normally an instance of class <tt>Num</tt>.  The
+user may choose to declare such an instance, in which case <tt>double</tt> may
+indeed be applied to a <tt>Char</tt>.<a name="user-defined-datatypes"></a><p>
+<a name="sect4.2"></a>
+<h3>4.2<tt>&nbsp;&nbsp;</tt>User-Defined Datatypes</h3>
+
+<p>
+In this section, we describe algebraic datatypes (<tt>data
+</tt>declarations), renamed datatypes (<tt>newtype</tt> declarations), and type
+synonyms (<tt>type</tt> declarations).  These declarations may only appear at
+the top level of a module.<a name="datatype-decls"></a><p>
+<a name="sect4.2.1"></a>
+<h4>4.2.1<tt>&nbsp;&nbsp;</tt>Algebraic Datatype Declarations</h4>
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr></tr><tr></tr><tr><td>
+topdecl </td><td>  <tt>-&gt;</tt> </td><td> <tt>data</tt> [context <tt>=&gt;</tt>] simpletype <tt>=</tt> constrs [deriving]
+</td></tr><tr><td>
+simpletype </td><td>  <tt>-&gt;</tt> </td><td> tycon tyvar<sub>1</sub> ... tyvar<sub>k</sub>	 </td><td> (k&gt;=0) 
+</td></tr><tr><td>
+constrs </td><td>  <tt>-&gt;</tt> </td><td> constr<sub>1</sub> <tt>|</tt> ... <tt>|</tt> constr<sub>n</sub>	</td><td> (n&gt;=1)
+</td></tr><tr><td>
+constr </td><td>  <tt>-&gt;</tt> </td><td> con [<tt>!</tt>] atype<sub>1</sub> ... [<tt>!</tt>] atype<sub>k</sub>	</td><td> (arity con = k, k&gt;=0)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  (btype | <tt>!</tt> atype) conop (btype | <tt>!</tt> atype) </td><td> (infix conop)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  con <tt>{</tt> fielddecl<sub>1</sub> <tt>,</tt> ... <tt>,</tt> fielddecl<sub>n</sub> <tt>}</tt> </td><td> (n&gt;=0)
+</td></tr><tr><td>
+fielddecl </td><td>  <tt>-&gt;</tt> </td><td> vars <tt>::</tt> (type | <tt>!</tt> atype)
+</td></tr><tr><td>
+deriving </td><td>  <tt>-&gt;</tt> </td><td> <tt>deriving</tt> (dclass | <tt>(</tt>dclass<sub>1</sub><tt>,</tt> ... <tt>,</tt> dclass<sub>n</sub><tt>)</tt>)</td><td> (n&gt;=0)
+</td></tr><tr><td>
+dclass </td><td>  <tt>-&gt;</tt> </td><td> qtycls
+</td></tr></table>
+
+The precedence for <I>constr</I> is the same as that for
+expressions---normal constructor application has higher precedence
+than infix constructor application (thus <tt>a&nbsp;:&nbsp;Foo&nbsp;a</tt> parses as 
+<tt>a&nbsp;:&nbsp;(Foo&nbsp;a)</tt>).<p>
+An algebraic datatype declaration has the form:
+<p>
+
+<tt>data</tt><I> cx </I><tt>=&gt;</tt><I> T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I> </I><tt>=</tt><I> K</I><sub><I>1</I></sub><I> t</I><sub><I>11</I></sub><I> ... t</I><sub><I>1k</I><sub><I>1</I></sub></sub><I> </I><tt>|</tt><I> ...</I><tt>|</tt><I> 
+                                K</I><sub><I>n</I></sub><I> t</I><sub><I>n1</I></sub><I> ... t</I><sub><I>nk</I><sub><I>n</I></sub></sub>
+<p>
+
+where <I>cx</I> is a context.
+This declaration
+introduces a new <I>type constructor</I> <I>T</I> with one or more constituent <I>data
+constructors</I> <I>K</I><sub><I>1</I></sub><I>, ..., K</I><sub><I>n</I></sub>.
+
+In this Report, the unqualified term "constructor" always means "data constructor".<p>
+The types of the data constructors are given by:
+<p>
+
+<I>K</I><sub><I>i</I></sub><I> :: forall u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I>.  cx</I><sub><I>i</I></sub><I> =&gt;t</I><sub><I>i1</I></sub><I> -&gt;...-&gt;t</I><sub><I>ik</I><sub><I>i</I></sub></sub><I> -&gt;(T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I>)
+<p>
+
+</I>where <I>cx</I><sub><I>i</I></sub> is the largest subset of <I>cx</I> that constrains only those type
+variables free in the types <I>t</I><sub><I>i1</I></sub><I>, ..., t</I><sub><I>ik</I><sub><I>i</I></sub></sub>.
+The type variables <I>u</I><sub><I>1</I></sub> through <I>u</I><sub><I>k</I></sub> must be distinct and may appear
+in <I>cx</I> and the <I>t</I><sub><I>ij</I></sub>; it is a static error
+for any other type variable to appear in <I>cx</I> or on the right-hand-side.
+The new type constant <I>T</I> has a kind of the form
+<font face="symbol">k</font><sub>1</sub>-&gt;...-&gt;<font face="symbol">k</font><sub>k</sub>-&gt;*
+where the kinds <font face="symbol">k</font><sub><I>i</I></sub> of the argument variables <I>u</I><sub><I>i</I></sub> are
+determined by kind inference
+as described in Section <a href="decls.html#kindinference">4.6</a>.
+This means that <I>T</I> may be used in type expressions with anywhere
+between <I>0</I> and <I>k</I> arguments.<p>
+For example, the declaration
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;Eq&nbsp;a&nbsp;=&gt;&nbsp;Set&nbsp;a&nbsp;=&nbsp;NilSet&nbsp;|&nbsp;ConsSet&nbsp;a&nbsp;(Set&nbsp;a)<br>
+
+<br>
+
+</tt>introduces a type constructor <tt>Set</tt> of kind *-&gt;*, and constructors <tt>NilSet</tt> and
+<tt>ConsSet</tt> with types
+<p>
+<table >
+<tr><td>
+<tt>NilSet</tt>  </td><td> <I>:: forall a.  </I><tt>Set</tt><I>  a</I> </td></tr><tr><td><tt>ConsSet</tt> </td><td> <I>:: forall a.  </I><tt>Eq</tt><I>  a =&gt;a -&gt;</I><tt>Set</tt><I>  a -&gt;</I><tt>Set</tt><I>  a
+</I></td></tr></table>
+<p>
+
+In the example given, the overloaded
+type for <tt>ConsSet</tt> ensures that <tt>ConsSet</tt> can only be applied to values whose
+type is an instance of the class <tt>Eq</tt>.  
+Pattern matching against <tt>ConsSet</tt> also gives rise to an <tt>Eq&nbsp;a</tt> constraint. 
+For example: 
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;(ConsSet&nbsp;a&nbsp;s)&nbsp;=&nbsp;a<br>
+
+<br>
+
+</tt>the function <tt>f</tt> has inferred type <tt>Eq&nbsp;a&nbsp;=&gt;&nbsp;Set&nbsp;a&nbsp;-&gt;&nbsp;a</tt>.
+The context in the <tt>data</tt> declaration has no other effect whatsoever.<p>
+The visibility of a datatype's constructors (i.e. the "abstractness"
+
+of the datatype) outside of the module in which the datatype is
+defined is controlled by the form of the datatype's name in the export
+list as described in Section <a href="modules.html#abstract-types">5.8</a>.<p>
+The optional <tt>deriving</tt> part of a <tt>data</tt> declaration has to do
+with <I>derived instances</I>, and is described in
+Section <a href="decls.html#derived-decls">4.3.3</a>.<a name="field-labels"></a><p>
+<h3>Labelled Fields</h3>
+
+
+A data constructor of arity <I>k</I> creates an object with <I>k</I> components.
+These components are normally accessed positionally as arguments to the
+constructor in expressions or patterns.  For large datatypes it is
+useful to assign <I>field labels</I> to the components of a data object.
+This allows a specific field to be referenced independently of its
+location within the constructor.<p>
+A constructor definition in a <tt>data</tt> declaration may assign labels to the
+fields of the constructor, using the record syntax (<tt>C&nbsp;{&nbsp;...&nbsp;}</tt>).
+Constructors using field labels may be freely mixed with constructors
+without them. 
+A constructor with associated field labels may still be used as an
+ordinary constructor; features using labels are
+simply a shorthand for operations using an underlying positional
+constructor.  The arguments to the positional constructor occur in the
+same order as the labeled fields.  For example, the declaration
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;C&nbsp;=&nbsp;F&nbsp;{&nbsp;f1,f2&nbsp;::&nbsp;Int,&nbsp;f3&nbsp;::&nbsp;Bool&nbsp;}<br>
+
+<br>
+
+</tt>defines a type and constructor identical to the one produced by
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;C&nbsp;=&nbsp;F&nbsp;Int&nbsp;Int&nbsp;Bool<br>
+
+<br>
+
+</tt>Operations using field labels are described in Section <a href="exps.html#field-ops">3.15</a>.
+A <tt>data</tt> declaration may use the same field label in multiple
+constructors as long as the typing of the field is the same in all
+cases after type synonym expansion.  A label cannot be shared by
+more than one type in scope.  Field names share the top level namespace
+with ordinary variables and class methods and must not conflict with
+other top level names in scope.<p>
+The pattern <tt>F&nbsp;{}</tt> matches any value built with constructor <tt>F</tt>, 
+<I>whether or not </I><tt>F</tt><I> was declared with record syntax</I>. <a name="strictness-flags"></a><p>
+<h3>Strictness Flags</h3>
+
+
+Whenever a data constructor is applied, each argument to the
+constructor is evaluated if and only if the corresponding type in the
+algebraic datatype declaration has a strictness flag, denoted by
+an exclamation point, "<tt>!</tt>".
+
+Lexically, "<tt>!</tt>" is an ordinary varsym not a <I>reservedop</I>; 
+it has special significance only in the context of the argument types of 
+a data declaration.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+A declaration of the form
+<p>
+
+<tt>data</tt><I> cx </I><tt>=&gt;</tt><I> T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I> </I><tt>=</tt><I> ... </I><tt>|</tt><I> K s</I><sub><I>1</I></sub><I> ... s</I><sub><I>n</I></sub><I> </I><tt>|</tt><I> ... 
+<p>
+
+</I>where each <I>s</I><sub><I>i</I></sub> is either of the form <tt>!</tt><I> t</I><sub><I>i</I></sub> or <I>t</I><sub><I>i</I></sub>, replaces
+every occurrence of <I>K</I> in an expression by 
+<p>
+
+<tt>(\&nbsp;</tt><I>x</I><sub><I>1</I></sub><I> ... x</I><sub><I>n</I></sub><I> </I><tt>-&gt;</tt><I> ( ((K op</I><sub><I>1</I></sub><I> x</I><sub><I>1</I></sub><I>) op</I><sub><I>2</I></sub><I> x</I><sub><I>2</I></sub><I>) ... ) op</I><sub><I>n</I></sub><I> x</I><sub><I>n</I></sub><I>)
+<p>
+
+</I>where <I>op</I><sub><I>i</I></sub> is the non-strict apply function <tt>$</tt> if <I>s</I><sub><I>i</I></sub> is of the form <I>t</I><sub><I>i</I></sub>,
+and <I>op</I><sub><I>i</I></sub> is the strict apply function <tt>$!</tt> (see
+Section <a href="basic.html#strict-eval">6.2</a>) if <I>s</I><sub><I>i</I></sub> is of the form <tt>!</tt><I> t</I><sub><I>i</I></sub>.  Pattern
+matching on <I>K</I> is not affected by strictness flags.
+</td></tr></table>
+<a name="type-synonym-decls"></a><p>
+<a name="sect4.2.2"></a>
+<h4>4.2.2<tt>&nbsp;&nbsp;</tt>Type Synonym Declarations</h4>
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+topdecl </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> <tt>type</tt> simpletype <tt>=</tt> type
+</td></tr><tr><td>
+simpletype </td><td>  <tt>-&gt;</tt> </td><td>  tycon tyvar<sub>1</sub> ... tyvar<sub>k</sub> </td><td> (k&gt;=0) 
+</td></tr></table>
+A type synonym declaration introduces a new type that
+is equivalent to an old type.  It has the form
+<p>
+
+<tt>type</tt><I> T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I> </I><tt>=</tt><I> t
+<p>
+
+</I>which introduces a new type constructor, <I>T</I>.  The type <I>(T t</I><sub><I>1</I></sub><I> ...
+t</I><sub><I>k</I></sub><I>)</I> is equivalent to the type <I>t[t</I><sub><I>1</I></sub><I>/u</I><sub><I>1</I></sub><I>, ..., t</I><sub><I>k</I></sub><I>/u</I><sub><I>k</I></sub><I>]</I>.  The type
+variables <I>u</I><sub><I>1</I></sub> through <I>u</I><sub><I>k</I></sub> must be distinct and are scoped only
+over <I>t</I>; it is a static error for any other type variable to appear
+in <I>t</I>.  The kind of the new type constructor <I>T</I> is of the form
+<font face="symbol">k</font><sub>1</sub>-&gt;...-&gt;<font face="symbol">k</font><sub>k</sub>-&gt;<font face="symbol">k</font> where
+the kinds <font face="symbol">k</font><sub><I>i</I></sub> of the arguments <I>u</I><sub><I>i</I></sub> and <font face="symbol">k</font> of the right hand
+side <I>t</I> are determined by kind inference as described in
+Section <a href="decls.html#kindinference">4.6</a>.
+For example, the following definition can be used to provide an alternative
+way of writing the list type constructor: 
+<tt><br>
+
+<br>
+&nbsp;&nbsp;type&nbsp;List&nbsp;=&nbsp;[]<br>
+
+<br>
+
+</tt>Type constructor symbols <I>T</I> introduced by type synonym declarations cannot
+be partially applied; it is a static error to use <I>T</I> without the full number
+of arguments.<p>
+Although recursive and mutually recursive datatypes are allowed,
+
+
+this is not so for type synonyms, <I>unless an algebraic datatype
+intervenes</I>.  For example,
+<tt><br>
+
+<br>
+&nbsp;&nbsp;type&nbsp;Rec&nbsp;a&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[Circ&nbsp;a]<br>
+&nbsp;&nbsp;data&nbsp;Circ&nbsp;a&nbsp;&nbsp;=&nbsp;&nbsp;Tag&nbsp;[Rec&nbsp;a]<br>
+
+<br>
+
+</tt>is allowed, whereas
+<tt><br>
+
+<br>
+&nbsp;&nbsp;type&nbsp;Rec&nbsp;a&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[Circ&nbsp;a]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;invalid<br>
+&nbsp;&nbsp;type&nbsp;Circ&nbsp;a&nbsp;&nbsp;=&nbsp;&nbsp;[Rec&nbsp;a]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;invalid<br>
+
+<br>
+
+</tt>is not. Similarly, <tt>type&nbsp;Rec&nbsp;a&nbsp;=&nbsp;[Rec&nbsp;a]</tt> is not allowed.<p>
+Type synonyms are a convenient, but strictly syntactic, mechanism to make type
+signatures more readable.  A synonym and its definition are completely
+interchangeable, except in the instance type of an <tt>instance</tt> declaration (Section <a href="decls.html#instance-decls">4.3.2</a>).<a name="datatype-renaming"></a><p>
+<a name="sect4.2.3"></a>
+<h4>4.2.3<tt>&nbsp;&nbsp;</tt>Datatype Renamings</h4>
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+topdecl </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> <tt>newtype</tt> [context <tt>=&gt;</tt>] simpletype <tt>=</tt> newconstr [deriving]
+</td></tr><tr><td>
+newconstr </td><td>  <tt>-&gt;</tt> </td><td> con atype
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  con <tt>{</tt> var <tt>::</tt> type <tt>}</tt> 
+</td></tr><tr><td>
+simpletype </td><td>  <tt>-&gt;</tt> </td><td>  tycon tyvar<sub>1</sub> ... tyvar<sub>k</sub>		</td><td> (k&gt;=0)
+</td></tr></table>
+<p>
+A declaration of the form
+<p>
+
+<tt>newtype</tt><I> cx </I><tt>=&gt;</tt><I> T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I> </I><tt>=</tt><I> N t
+<p>
+
+</I>introduces a new type whose
+representation is the same as an existing type.  The type <tt>(</tt><I>T u</I><sub><I>1</I></sub>
+<I>... u</I><sub><I>k</I></sub><tt>)</tt> renames the datatype <I>t</I>.
+It differs from a type synonym in
+that it creates a distinct type that must be explicitly coerced to or
+from the original type.  Also, unlike type synonyms, <tt>newtype</tt> may be
+used to define recursive types.
+The constructor <I>N</I> in an expression 
+coerces a value from type <I>t</I> to type <tt>(</tt><I>T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><tt>)</tt>.
+Using <I>N</I> in a pattern coerces a value from type <tt>(</tt><I>T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><tt>)
+</tt>to type <I>t</I>.  These coercions may be implemented without
+execution time overhead; <tt>newtype</tt> does not change the underlying
+representation of an object.<p>
+New instances (see Section <a href="decls.html#instance-decls">4.3.2</a>) can be defined for a
+type defined by <tt>newtype</tt> but may not be defined for a type synonym.  A type
+created by <tt>newtype</tt> differs from an algebraic datatype in that the
+representation of an
+algebraic datatype has an extra level of indirection.  This difference
+may make access to the representation less efficient.  The difference is
+reflected in different rules for pattern matching (see
+Section <a href="exps.html#pattern-matching">3.17</a>).  Unlike algebraic datatypes, the
+newtype constructor <I>N</I> is <I>unlifted</I>, so that <I>N _|_
+</I>is the same as <I>_|_</I>.<p>
+The following examples clarify the differences between <tt>data</tt> (algebraic
+datatypes), <tt>type</tt> (type synonyms), and <tt>newtype</tt> (renaming types.)
+Given the declarations 
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;D1&nbsp;=&nbsp;D1&nbsp;Int<br>
+&nbsp;&nbsp;data&nbsp;D2&nbsp;=&nbsp;D2&nbsp;!Int<br>
+&nbsp;&nbsp;type&nbsp;S&nbsp;=&nbsp;Int<br>
+&nbsp;&nbsp;newtype&nbsp;N&nbsp;=&nbsp;N&nbsp;Int<br>
+&nbsp;&nbsp;d1&nbsp;(D1&nbsp;i)&nbsp;=&nbsp;42<br>
+&nbsp;&nbsp;d2&nbsp;(D2&nbsp;i)&nbsp;=&nbsp;42<br>
+&nbsp;&nbsp;s&nbsp;i&nbsp;=&nbsp;42<br>
+&nbsp;&nbsp;n&nbsp;(N&nbsp;i)&nbsp;=&nbsp;42<br>
+
+<br>
+
+</tt>the expressions <tt>(</tt><I> </I><tt>d1</tt><I> _|_</I><tt>)</tt>, <tt>(</tt><I> </I><tt>d2</tt><I> _|_</I><tt>)</tt> and 
+<tt>(d2&nbsp;(D2</tt><I> _|_</I><tt>)&nbsp;)</tt> are all
+equivalent to <I>_|_</I>, whereas <tt>(</tt><I> </I><tt>n</tt><I> _|_</I><tt>)</tt>, <tt>(</tt><I> </I><tt>n</tt><I> </I><tt>(</tt><I> </I><tt>N&nbsp;
+</tt><I>_|_</I><tt>)&nbsp;)</tt>, <tt>(</tt><I> </I><tt>d1</tt><I> </I><tt>(</tt><I> </I><tt>D1</tt><I> _|_</I><tt>)&nbsp;)</tt> and <tt>(</tt><I> </I><tt>s</tt><I> _|_</I><tt>)
+</tt>are all equivalent to <tt>42</tt>.  In particular, <tt>(</tt><I> </I><tt>N</tt><I> _|_</I><tt>)</tt> is equivalent to
+<I>_|_</I> while <tt>(</tt><I> </I><tt>D1</tt><I> _|_</I><tt>)</tt> is not equivalent to <I>_|_</I>.<p>
+The optional deriving part of a <tt>newtype</tt> declaration is treated in
+the same way as the deriving component of a <tt>data</tt> declaration; see
+Section <a href="decls.html#derived-decls">4.3.3</a>.<p>
+A <tt>newtype</tt> declaration may use field-naming syntax, though of course
+there may only be one field.  Thus:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;newtype&nbsp;Age&nbsp;=&nbsp;Age&nbsp;{&nbsp;unAge&nbsp;::&nbsp;Int&nbsp;}<br>
+
+<br>
+
+</tt>brings into scope both a constructor and a de-constructor:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;Age&nbsp;&nbsp;&nbsp;::&nbsp;Int&nbsp;-&gt;&nbsp;Age<br>
+&nbsp;&nbsp;unAge&nbsp;::&nbsp;Age&nbsp;-&gt;&nbsp;Int<br>
+
+<br>
+<a name="overloading"></a><p>
+</tt><a name="sect4.3"></a>
+<h3>4.3<tt>&nbsp;&nbsp;</tt>Type Classes and Overloading</h3>
+
+
+<a name="classes"></a>
+<a name="class-decls"></a><p>
+<a name="sect4.3.1"></a>
+<h4>4.3.1<tt>&nbsp;&nbsp;</tt>Class Declarations</h4>
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+topdecl </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> <tt>class</tt> [scontext <tt>=&gt;</tt>] tycls tyvar [<tt>where</tt> cdecls]
+</td></tr><tr><td>
+scontext </td><td>  <tt>-&gt;</tt> </td><td> simpleclass
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(</tt> simpleclass<sub>1</sub> <tt>,</tt> ... <tt>,</tt> simpleclass<sub>n</sub> <tt>)</tt>		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+simpleclass </td><td>  <tt>-&gt;</tt> </td><td> qtycls tyvar			
+</td></tr><tr><td>
+cdecls </td><td>  <tt>-&gt;</tt> </td><td> <tt>{</tt> cdecl<sub>1</sub> <tt>;</tt> ... <tt>;</tt> cdecl<sub>n</sub> <tt>}</tt>		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+cdecl </td><td>  <tt>-&gt;</tt> </td><td> gendecl
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  (funlhs | var) rhs
+</td></tr></table>
+<p>
+
+A <I>class declaration</I> introduces a new class and the operations
+(<I>class methods</I>) on it.
+A class declaration has the general form:
+<p>
+<table >
+<tr><td align=right>
+<tt>class</tt><I> cx </I><tt>=&gt;</tt><I> C u </I><tt>where</tt><I> cdecls
+</I></td></tr></table>
+<p>
+
+This introduces a new class name <I>C</I>; the type variable <I>u</I> is
+scoped only over the class method signatures in the class body.
+The context <I>cx</I> specifies the superclasses of <I>C</I>, as
+described below; the only type variable that may be referred to in <I>cx
+</I>is <I>u</I>.<p>
+The superclass relation must not be cyclic; i.e. it must form a
+directed acyclic graph.<p>
+The <I>cdecls</I> part of a <tt>class</tt> declaration contains three kinds
+of declarations:
+<UL><LI>
+The class declaration introduces new <I>class methods
+
+v</I><sub><I>i</I></sub>, whose scope extends outside the <tt>class</tt> declaration.
+The class methods of a class declaration are precisely the <I>v</I><sub><I>i</I></sub> for
+which there is an explicit type signature
+<p>
+
+<I>v</I><sub><I>i</I></sub><I> </I><tt>::</tt><I> cx</I><sub><I>i</I></sub><I> </I><tt>=&gt;</tt><I> t</I><sub><I>i</I></sub>
+<p>
+
+in <I>cdecls</I>.  
+Class methods share the top level namespace with variable
+bindings and field names; they must not conflict with other top level
+bindings in scope. 
+That is, a class method can 
+not have the same name as a top level definition, a field name, or
+another class method.<p>
+The type of the top-level class method <I>v</I><sub><I>i</I></sub> is:
+<p>
+
+v<sub>i</sub> :: forall u,<u>w</u>. (C u, cx<sub>i</sub>) =&gt;t<sub>i</sub>
+<p>
+
+The <I>t</I><sub><I>i</I></sub> must mention <I>u</I>; it may mention type variables
+<u>w</u> other than <I>u</I>, in which case the type of <I>v</I><sub><I>i</I></sub> is
+polymorphic in both <I>u</I> and <u>w</u>.
+The <I>cx</I><sub><I>i</I></sub> may constrain only <u>w</u>; in particular,
+the <I>cx</I><sub><I>i</I></sub> may not constrain <I>u</I>.
+For example:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;class&nbsp;Foo&nbsp;a&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;op&nbsp;::&nbsp;Num&nbsp;b&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;b&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+
+</tt>Here the type of <tt>op</tt> is
+<I>forall a, b. (</I><tt>Foo</tt><I> a, </I><tt>Num</tt><I> b)  =&gt;a -&gt;b -&gt;a</I>.<p>
+<LI>
+The <I>cdecls</I> may also contain a <I>fixity declaration</I> for any of the class methods 
+(but for no other values).
+
+However, since class methods declare top-level values, the fixity declaration for a class
+method may alternatively appear at top level, outside the class declaration.<p>
+<LI>
+Lastly, the <I>cdecls</I> may contain a
+<I>default class method
+
+</I>for any of the <I>v</I><sub><I>i</I></sub>.  The default class method for <I>v</I><sub><I>i</I></sub> is used if no binding for it
+is given in a particular <tt>instance</tt> declaration (see
+Section <a href="decls.html#instance-decls">4.3.2</a>).
+The default method declaration is a normal value definition, except that the
+left hand side may only be a variable or function definition.  For example:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;class&nbsp;Foo&nbsp;a&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;op1,&nbsp;op2&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(op1,&nbsp;op2)&nbsp;=&nbsp;...<br>
+
+<br>
+
+</tt>is not permitted, because the left hand side of the default declaration is a
+pattern.
+</UL>
+Other than these cases, no other declarations are permitted in <I>cdecls</I>.<p>
+A <tt>class
+</tt>declaration with no <tt>where</tt> part
+
+may be useful for combining a
+collection of classes into a larger one that inherits all of the
+class methods in the original ones.  For example:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;class&nbsp;&nbsp;(Read&nbsp;a,&nbsp;Show&nbsp;a)&nbsp;=&gt;&nbsp;Textual&nbsp;a<br>
+
+<br>
+
+</tt>In such a case, if a type is an instance of all
+superclasses, it is 
+not <I>automatically</I> an instance of the subclass, even though the
+subclass has no immediate class methods.  The <tt>instance</tt> declaration must be
+given explicitly with no <tt>where</tt> part.<a name="instance-decls"></a><p>
+<a name="sect4.3.2"></a>
+<h4>4.3.2<tt>&nbsp;&nbsp;</tt>Instance Declarations</h4>
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+topdecl </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> <tt>instance</tt> [scontext <tt>=&gt;</tt>] qtycls inst [<tt>where</tt> idecls]
+</td></tr><tr><td>
+inst </td><td>  <tt>-&gt;</tt> </td><td> gtycon
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(</tt> gtycon tyvar<sub>1</sub> ... tyvar<sub>k</sub> <tt>)</tt>	</td><td> (k&gt;=0, tyvars distinct)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(</tt> tyvar<sub>1</sub> <tt>,</tt> ... <tt>,</tt> tyvar<sub>k</sub> <tt>)</tt>	</td><td> (k&gt;=2, tyvars distinct)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>[</tt> tyvar <tt>]
+</tt></td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>  <tt>(</tt> tyvar<sub>1</sub> <tt>-&gt;</tt> tyvar<sub>2</sub> <tt>)</tt>		</td><td> (tyvar<sub>1</sub> and tyvar<sub>2</sub> distinct)
+</td></tr><tr><td>
+idecls </td><td>  <tt>-&gt;</tt> </td><td> <tt>{</tt> idecl<sub>1</sub> <tt>;</tt> ... <tt>;</tt> idecl<sub>n</sub> <tt>}</tt>		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+idecl </td><td>  <tt>-&gt;</tt> </td><td> (funlhs | var) rhs
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>						</td><td> (empty)
+</td></tr></table>
+
+
+An <I>instance declaration</I> introduces an instance of a class.  Let
+<p>
+<tt>class</tt><I> cx </I><tt>=&gt;</tt><I> C u </I><tt>where</tt><I> </I><tt>{</tt><I> cbody </I><tt>}</tt> <p>
+
+be a <tt>class</tt> declaration.  The general form of the corresponding
+instance declaration is:
+<p>
+<tt>instance</tt><I> cx' </I><tt>=&gt;</tt><I> C (T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I>) </I><tt>where</tt><I> </I><tt>{</tt><I> d </I><tt>}</tt> <p>
+
+where <I>k&gt;=0</I>.
+The type <I>(T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I>)</I> must take the form of
+a type constructor <I>T</I> applied to simple type variables <I>u</I><sub><I>1</I></sub><I>, ... u</I><sub><I>k</I></sub>;
+furthermore, <I>T</I> must not be a type synonym, 
+and the <I>u</I><sub><I>i</I></sub> must all be distinct.<p>
+This prohibits instance declarations
+such as:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;instance&nbsp;C&nbsp;(a,a)&nbsp;where&nbsp;...<br>
+&nbsp;&nbsp;instance&nbsp;C&nbsp;(Int,a)&nbsp;where&nbsp;...<br>
+&nbsp;&nbsp;instance&nbsp;C&nbsp;[[a]]&nbsp;where&nbsp;...<br>
+
+<br>
+
+</tt>The declarations <I>d</I> may contain bindings only for the class
+methods of <I>C</I>.  It is illegal to give a 
+binding for a class method that is not in scope, but the name under
+which it is in scope is immaterial; in particular, it may be a qualified
+name.  (This rule is identical to that used for subordinate names in
+export lists --- Section <a href="modules.html#export">5.2</a>.)
+For example, this is legal, even though <tt>range</tt> is in scope only
+with the qualified name <tt>Ix.range</tt>.
+<tt><br>
+
+<br>
+&nbsp;&nbsp;module&nbsp;A&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;qualified&nbsp;Ix<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;instance&nbsp;Ix.Ix&nbsp;T&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;range&nbsp;=&nbsp;...<br>
+
+<br>
+
+</tt>The declarations may not contain any type
+signatures or fixity declarations,
+since these have already been given in the <tt>class
+</tt>declaration.  As in the case of default class methods
+(Section <a href="decls.html#class-decls">4.3.1</a>), the method declarations must take the form of
+a variable or function definition.<p>
+If no binding is given for some class method then the
+corresponding default class method
+
+in the <tt>class</tt> declaration is used (if
+present); if such a default does
+not exist then the class method of this instance
+is bound to <tt>undefined</tt> 
+and no compile-time error results.<p>
+An <tt>instance</tt> declaration that makes the type <I>T</I> to be an instance
+of class <I>C</I> is called a <I>C-T instance declaration
+</I> and is
+subject to these static restrictions:
+<UL><LI>A type may not be declared as an instance of a
+particular class more than once in the program.<p>
+<LI>The class and type must have the same kind; 
+this can be determined using kind inference as described
+in Section <a href="decls.html#kindinference">4.6</a>.<p>
+<LI>
+Assume that the type variables in the instance type <I>(T u</I><sub><I>1</I></sub><I> ... u</I><sub><I>k</I></sub><I>)
+</I>satisfy the constraints in the instance context <I>cx'</I>.  Under this
+assumption, the following two conditions must also be satisfied:
+<OL><LI>
+The constraints expressed by the superclass context <I>cx[(T u1 ... uk)/u]
+</I>	of <I>C</I> must be satisfied.  In other words, <I>T</I> must be an instance
+	of each of <I>C</I>'s superclasses and the contexts of all
+        superclass instances must be implied by <I>cx'</I>.
+<LI>
+Any constraints on the type variables in the instance type
+      that are required for the class method declarations in <I>d</I> to be
+      well-typed must also be satisfied.
+</OL><p>
+In fact, except in pathological cases 
+it is possible to infer from the instance declaration the
+most general instance context <I>cx'</I> satisfying the above two constraints, 
+but it is nevertheless mandatory
+to write an explicit instance context.
+</UL>
+The following example illustrates the restrictions imposed by superclass instances:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;class&nbsp;Foo&nbsp;a&nbsp;=&gt;&nbsp;Bar&nbsp;a&nbsp;where&nbsp;...<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;instance&nbsp;(Eq&nbsp;a,&nbsp;Show&nbsp;a)&nbsp;=&gt;&nbsp;Foo&nbsp;[a]&nbsp;where&nbsp;...<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;instance&nbsp;Num&nbsp;a&nbsp;=&gt;&nbsp;Bar&nbsp;[a]&nbsp;where&nbsp;...<br>
+
+<br>
+
+</tt>This example is valid Haskell.  Since <tt>Foo</tt> is a superclass of <tt>Bar</tt>,
+the second instance declaration is only valid if <tt>[a]</tt> is an
+instance of <tt>Foo</tt> under the assumption <tt>Num&nbsp;a</tt>.  
+The first instance declaration does indeed say that <tt>[a]</tt> is an instance
+of <tt>Foo</tt> under this assumption, because <tt>Eq</tt> and <tt>Show</tt> are superclasses
+of <tt>Num</tt>.<p>
+If the two instance declarations instead read like this:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;instance&nbsp;Num&nbsp;a&nbsp;=&gt;&nbsp;Foo&nbsp;[a]&nbsp;where&nbsp;...<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;instance&nbsp;(Eq&nbsp;a,&nbsp;Show&nbsp;a)&nbsp;=&gt;&nbsp;Bar&nbsp;[a]&nbsp;where&nbsp;...<br>
+
+<br>
+
+</tt>then the program would be invalid.  The second instance declaration is
+valid only if <tt>[a]</tt> is an instance of <tt>Foo</tt> under the assumptions
+<tt>(Eq&nbsp;a,&nbsp;Show&nbsp;a)</tt>.  But this does not hold, since <tt>[a]</tt> is only an
+instance of <tt>Foo</tt> under the stronger assumption <tt>Num&nbsp;a</tt>.<p>
+Further examples of 
+<tt>instance</tt> declarations may be found in Chapter <a href="standard-prelude.html#stdprelude">8</a>.<a name="derived-decls"></a><p>
+<a name="sect4.3.3"></a>
+<h4>4.3.3<tt>&nbsp;&nbsp;</tt>Derived Instances</h4>
+
+<p>
+As mentioned in Section <a href="decls.html#datatype-decls">4.2.1</a>, <tt>data</tt> and <tt>newtype
+</tt>declarations 
+contain an optional <tt>deriving</tt> form.  If the form is included, then
+<I>derived instance declarations</I> are automatically generated for
+the datatype in each of the named classes.
+These instances are subject to the same restrictions as user-defined
+instances.  When deriving a class <I>C</I> for a type <I>T</I>, instances for
+all superclasses of <I>C</I> must exist for <I>T</I>, either via an explicit
+<tt>instance</tt> declaration or by including the superclass in the
+<tt>deriving</tt> clause.<p>
+Derived instances provide convenient commonly-used operations for
+user-defined datatypes.  For example, derived instances for datatypes
+in the class <tt>Eq</tt> define the operations <tt>==</tt> and <tt>/=</tt>, freeing the
+programmer from the need to define them.<p>
+The only classes in the Prelude for
+which derived instances are allowed are
+<tt>Eq</tt>,
+<tt>Ord</tt>,
+<tt>Enum</tt>,
+<tt>Bounded</tt>,
+<tt>Show</tt>,
+and <tt>Read</tt>,
+all mentioned in Figure <a href="basic.html#standard-classes">6.1</a>, page .
+The
+precise details of how the derived instances are generated for each of
+these classes are provided in Chapter <a href="derived.html#derived-appendix">10</a>, including
+a specification of when such derived instances are possible. 
+Classes defined by the standard libraries may also be derivable.<p>
+A static error results if it is not possible to derive an <tt>instance
+</tt>declaration over a class named in a <tt>deriving</tt> form.  For example,
+not all datatypes can properly support class methods in
+<tt>Enum</tt>.  It is 
+also a static error to give an explicit <tt>instance</tt> declaration for
+a class that is also derived.<p>
+If the <tt>deriving</tt> form is omitted from a <tt>data</tt> or <tt>newtype
+</tt>declaration, then <I>no</I> instance declarations
+are derived for 
+that datatype; that is, omitting a <tt>deriving</tt> form is equivalent to
+including an empty deriving form: <tt>deriving&nbsp;()</tt>.<a name="default-decls"></a><p>
+<a name="sect4.3.4"></a>
+<h4>4.3.4<tt>&nbsp;&nbsp;</tt>Ambiguous Types, and Defaults for Overloaded Numeric Operations</h4>
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+topdecl </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> <tt>default</tt> <tt>(</tt>type<sub>1</sub> <tt>,</tt> ... <tt>,</tt> type<sub>n</sub><tt>)</tt> </td><td> (n&gt;=0)
+</td></tr></table>
+<p>
+
+A problem inherent with Haskell -style overloading is the
+possibility of an <I>ambiguous type</I>.
+
+For example, using the
+<tt>read</tt> and <tt>show</tt> functions defined in Chapter <a href="derived.html#derived-appendix">10</a>,
+and supposing that just <tt>Int</tt> and <tt>Bool</tt> are members of <tt>Read</tt> and
+<tt>Show</tt>, then the expression
+<tt><br>
+
+<br>
+&nbsp;&nbsp;let&nbsp;x&nbsp;=&nbsp;read&nbsp;"..."&nbsp;in&nbsp;show&nbsp;x	--&nbsp;invalid<br>
+
+<br>
+
+</tt>is ambiguous, because the types for <tt>show</tt> and <tt>read</tt>,
+<p>
+<table >
+<tr><td>
+<tt>show</tt> </td><td> <I>:: forall a. </I><tt>Show</tt><I>  a =&gt;a -&gt;</I><tt>String</tt> </td></tr><tr><td><tt>read</tt> </td><td> <I>:: forall a. </I><tt>Read</tt><I>  a =&gt;</I><tt>String</tt><I> -&gt;a
+</I></td></tr></table>
+<p>
+
+could be satisfied by instantiating <tt>a</tt> as either <tt>Int
+</tt>in both cases, or <tt>Bool</tt>.  Such expressions
+are considered ill-typed, a static error.<p>
+We say that an expression <tt>e</tt> has an <I>ambiguous type
+</I>if, in its type <I>forall </I><u>u</u><I>. cx =&gt;t</I>, 
+there is a type variable <I>u</I> in <u>u</u> that occurs in <I>cx</I> 
+but not in <I>t</I>.  Such types are invalid.<p>
+For example, the earlier expression involving <tt>show</tt> and <tt>read</tt> has
+an ambiguous type since its type is 
+<I>forall a.  </I><tt>Show</tt><I>  a, </I><tt>Read</tt><I>  a =&gt;</I><tt>String</tt>.<p>
+Ambiguous types can only be circumvented by
+input from the user.  One way is through the use of <I>expression
+type-signatures
+
+</I>as described in Section <a href="exps.html#expression-type-sigs">3.16</a>.
+For example, for the ambiguous expression given earlier, one could
+write:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;let&nbsp;x&nbsp;=&nbsp;read&nbsp;"..."&nbsp;in&nbsp;show&nbsp;(x::Bool)<br>
+
+<br>
+
+</tt>which disambiguates the type.<p>
+Occasionally, an otherwise ambiguous expression needs to be made
+the same type as some variable, rather than being given a fixed
+type with an expression type-signature.  This is the purpose
+of the function <tt>asTypeOf</tt> (Chapter <a href="standard-prelude.html#stdprelude">8</a>):
+<I>x</I> <tt>`asTypeOf`</tt> <I>y</I> has the value of <I>x</I>, but <I>x</I> and <I>y</I> are
+forced to have the same type.  For example,
+<tt><br>
+
+<br>
+&nbsp;&nbsp;approxSqrt&nbsp;x&nbsp;=&nbsp;encodeFloat&nbsp;1&nbsp;(exponent&nbsp;x&nbsp;`div`&nbsp;2)&nbsp;`asTypeOf`&nbsp;x<br>
+
+<br>
+
+</tt>(See Section <a href="basic.html#coercion">6.4.6</a> for a description of <tt>encodeFloat</tt> and <tt>exponent</tt>.)<p>
+Ambiguities in the class <tt>Num
+</tt>are most common, so Haskell 
+provides another way to resolve them---with a 
+<I>default declaration</I>:
+<p>
+
+<tt>default&nbsp;(</tt><I>t</I><sub><I>1</I></sub><I> </I><tt>,</tt><I> ... </I><tt>,</tt><I> t</I><sub><I>n</I></sub><tt>)
+<p>
+
+</tt>where <I>n&gt;=0</I>, and each
+<I>t</I><sub><I>i</I></sub> must be a type for which <tt>Num&nbsp;</tt><I>t</I><sub><I>i</I></sub> holds.
+In situations where an ambiguous type is discovered, an ambiguous type variable, <I>v</I>, 
+is defaultable if:
+<UL><LI><I>v</I> appears only in constraints of the form <I>C v</I>, where <I>C</I> is a class, and
+<LI>at least one of these classes is a numeric class,
+	(that is, <tt>Num</tt> or a subclass of <tt>Num</tt>), and 
+<LI>all of these classes are defined in the Prelude or a standard library
+(Figures <a href="basic.html#basic-numeric-1">6.2</a>--<a href="basic.html#basic-numeric-2">6.3</a>,
+pages --
+show the numeric classes, and
+Figure <a href="basic.html#standard-classes">6.1</a>, page ,
+shows the classes defined in the Prelude.)
+</UL>
+Each defaultable variable is replaced by the first type in the
+default list that is an instance of all the ambiguous variable's classes.
+It is a static error if no such type is found.<p>
+Only one default declaration is permitted per module, and its effect
+is limited to that module.  If no default declaration is given in a
+module then it assumed to be:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;default&nbsp;(Integer,&nbsp;Double)<br>
+
+<br>
+
+</tt>The empty default declaration, <tt>default&nbsp;()</tt>, turns off all defaults in a module.<a name="nested"></a><p>
+<a name="sect4.4"></a>
+<h3>4.4<tt>&nbsp;&nbsp;</tt>Nested Declarations</h3>
+<p>
+The following declarations may be used in any declaration list,
+including the top level of a module.<a name="type-signatures"></a><p>
+<a name="sect4.4.1"></a>
+<h4>4.4.1<tt>&nbsp;&nbsp;</tt>Type Signatures</h4>
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+gendecl </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> vars <tt>::</tt> [context <tt>=&gt;</tt>] type
+</td></tr><tr><td>
+vars </td><td>  <tt>-&gt;</tt> </td><td> var<sub>1</sub> <tt>,</tt> ...<tt>,</tt> var<sub>n</sub>		</td><td> (n&gt;=1)
+</td></tr></table>
+A type signature specifies types for variables, possibly with respect
+to a context.  A type signature has the form:
+<p>
+
+<I>v</I><sub><I>1</I></sub><I>, ..., v</I><sub><I>n</I></sub><I> </I><tt>::</tt><I> cx </I><tt>=&gt;</tt><I> t
+<p>
+
+</I>which is equivalent to asserting
+<I>v</I><sub><I>i</I></sub><I> </I><tt>::</tt><I> cx </I><tt>=&gt;</tt><I> t
+</I>for each <I>i</I> from <I>1</I> to <I>n</I>.  Each <I>v</I><sub><I>i</I></sub> must have a value binding in
+the same declaration list that contains the type signature; i.e. it is
+invalid to give a type signature for a variable bound in an
+outer scope.
+Moreover, it is invalid to give more than one type signature for one
+variable, even if the signatures are identical.<p>
+As mentioned in Section <a href="decls.html#type-syntax">4.1.2</a>,
+every type variable appearing in a signature
+is universally quantified over that signature, and hence
+the scope of a type variable is limited to the type
+signature that contains it.  For example, in the following
+declarations
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;x&nbsp;::&nbsp;a			--&nbsp;invalid<br>
+
+<br>
+
+</tt>the <tt>a</tt>'s in the two type signatures are quite distinct.  Indeed,
+these declarations contain a static error, since <tt>x</tt> does not have
+type <I>forall a. a</I>.  (The type of <tt>x</tt> is dependent on the type of
+<tt>f</tt>; there is currently no way in Haskell  to specify a signature
+for a variable with a dependent type; this is explained in Section
+<a href="decls.html#monomorphism">4.5.4</a>.)<p>
+If a given program includes a signature
+for a variable <I>f</I>, then each use of <I>f</I> is treated as having the
+declared type.  It is a static error if the same type cannot also be
+inferred for the defining occurrence of <I>f</I>.<p>
+If a variable <I>f</I> is defined without providing a corresponding type
+signature declaration, then each use of <I>f</I> outside its own declaration
+group (see Section <a href="decls.html#dependencyanalysis">4.5</a>) is treated as having the
+corresponding inferred, or <I>principal</I> type .
+However, to ensure that type inference is still possible, the defining
+occurrence, and all uses of <I>f</I> within its declaration group must have
+the same monomorphic type (from which the principal type is obtained
+by generalization, as described in Section <a href="decls.html#generalization">4.5.2</a>).<p>
+For example, if we define
+<tt><br>
+
+<br>
+&nbsp;&nbsp;sqr&nbsp;x&nbsp;&nbsp;=&nbsp;&nbsp;x*x<br>
+
+<br>
+
+</tt>then the principal type is 
+<tt>sqr</tt><I> :: forall a.  </I><tt>Num</tt><I>  a =&gt;a -&gt;a</I>, 
+which allows
+applications such as <tt>sqr&nbsp;5</tt> or <tt>sqr&nbsp;0.1</tt>.  It is also valid to declare
+a more specific type, such as
+<tt><br>
+
+<br>
+&nbsp;&nbsp;sqr&nbsp;::&nbsp;Int&nbsp;-&gt;&nbsp;Int<br>
+
+<br>
+
+</tt>but now applications such as <tt>sqr&nbsp;0.1</tt> are invalid.  Type signatures such as
+<tt><br>
+
+<br>
+&nbsp;&nbsp;sqr&nbsp;::&nbsp;(Num&nbsp;a,&nbsp;Num&nbsp;b)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;invalid<br>
+&nbsp;&nbsp;sqr&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;invalid<br>
+
+<br>
+
+</tt>are invalid, as they are more general than the principal type of <tt>sqr</tt>.<p>
+Type signatures can also be used to support
+<I>polymorphic recursion</I>.
+The following definition is pathological, but illustrates how a type
+signature can be used to specify a type more general than the one that
+would be inferred:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;T&nbsp;a&nbsp;&nbsp;=&nbsp;&nbsp;K&nbsp;(T&nbsp;Int)&nbsp;(T&nbsp;a)<br>
+&nbsp;&nbsp;f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;T&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+&nbsp;&nbsp;f&nbsp;(K&nbsp;x&nbsp;y)&nbsp;=&nbsp;&nbsp;if&nbsp;f&nbsp;x&nbsp;==&nbsp;1&nbsp;then&nbsp;f&nbsp;y&nbsp;else&nbsp;undefined<br>
+
+<br>
+
+</tt>If we remove the signature declaration, the type of <tt>f</tt> will be
+inferred as <tt>T&nbsp;Int&nbsp;-&gt;&nbsp;Int</tt> due to the first recursive call for which
+the argument to <tt>f</tt> is <tt>T&nbsp;Int</tt>.  Polymorphic recursion allows the user
+to supply the more general type signature, <tt>T&nbsp;a&nbsp;-&gt;&nbsp;a</tt>.<a name="fixity"></a><p>
+<a name="sect4.4.2"></a>
+<h4>4.4.2<tt>&nbsp;&nbsp;</tt>Fixity Declarations</h4>
+
+<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+gendecl </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> fixity [integer] ops
+</td></tr><tr><td>
+fixity </td><td>  <tt>-&gt;</tt> </td><td> <tt>infixl</tt> | <tt>infixr</tt> | <tt>infix
+</tt></td></tr><tr><td>
+ops </td><td>  <tt>-&gt;</tt> </td><td> op<sub>1</sub> <tt>,</tt> ... <tt>,</tt> op<sub>n</sub>		</td><td>  (n&gt;=1)
+</td></tr><tr><td>
+op </td><td>  <tt>-&gt;</tt> </td><td> varop | conop 
+</td></tr></table>
+A fixity declaration gives the fixity and binding
+precedence of one or more operators.  The <I>integer</I> in a fixity declaration
+must be in the range <I>0</I> to <I>9</I>.
+A fixity declaration may appear anywhere that 
+a type signature appears and, like a type signature, declares a property of
+a particular operator.  Also like a type signature,
+a fixity declaration can only occur in the same sequence of declarations as
+the declaration of the operator itself, and at most one fixity declaration
+may be given for any operator.  (Class methods are a minor exception;
+their fixity declarations can occur either in the class declaration itself
+or at top level.)<p>
+There are three kinds of fixity, non-, left- and right-associativity
+(<tt>infix</tt>, <tt>infixl</tt>, and <tt>infixr</tt>, respectively), and ten precedence
+levels, 0 to 9 inclusive (level 0 binds least tightly, and level 9
+binds most tightly).  If the <I>digit</I> is omitted, level 9 is assumed.
+Any operator lacking a fixity declaration
+is assumed to be <tt>infixl&nbsp;9</tt> (See Section <a href="exps.html#expressions">3</a> for more on
+the use of fixities).
+Table <a href="decls.html#prelude-fixities">4.1</a> lists the fixities and precedences of
+the operators defined in the Prelude.<p>
+<div align=center>
+<p>
+
+
+<table border=2>
+<tr><td align=right>
+
+Prec-  </td><td> Left associative 	</td><td> Non-associative	</td><td> Right associative </td></tr><tr><td align=right>edence </td><td> operators		</td><td> operators     	</td><td> operators </td></tr><tr><td align=right>
+9  </td><td> <tt>!!</tt>         	</td><td>				</td><td> <tt>.</tt>		  </td></tr><tr><td align=right>
+8  </td><td>			</td><td>				</td><td> <tt>^</tt>, <tt>^^</tt>, <tt>**</tt> </td></tr><tr><td align=right>
+7  </td><td> <tt>*</tt>, <tt>/</tt>, <tt>`div`</tt>, 		</td><td>		</td><td>  </td></tr><tr><td align=right></td><td> <tt>`mod`</tt>, <tt>`rem`</tt>, <tt>`quot`</tt>  	</td><td>		</td><td>  </td></tr><tr><td align=right>
+6  </td><td> <tt>+</tt>, <tt>-</tt>		</td><td> 				</td><td>		  </td></tr><tr><td align=right>
+5  </td><td>			</td><td> 				</td><td> <tt>:</tt>, <tt>++</tt>	  </td></tr><tr><td align=right>
+4  </td><td> 			</td><td> <tt>==</tt>, <tt>/=</tt>, <tt>&lt;</tt>, <tt>&lt;=</tt>, <tt>&gt;</tt>, <tt>&gt;=</tt>, </td><td>		  </td></tr><tr><td align=right></td><td> 			</td><td> <tt>`elem`</tt>, <tt>`notElem`</tt> 	</td><td>		  </td></tr><tr><td align=right>
+3  </td><td>			</td><td>				</td><td> <tt>&amp;&amp;</tt>		  </td></tr><tr><td align=right>
+2  </td><td>			</td><td>				</td><td> <tt>||</tt>		  </td></tr><tr><td align=right>
+1  </td><td>	<tt>&gt;&gt;</tt>, <tt>&gt;&gt;=</tt>	</td><td>				</td><td> 	  	</td></tr><tr><td align=right>
+0  </td><td>			</td><td>				</td><td> <tt>$</tt>, <tt>$!</tt>, <tt>`seq`</tt>    </td></tr><tr><td align=right>
+</td></tr></table>
+
+<p>
+
+<div align=center> <h4>Table 2</h4> </div>
+<div align=center><h3>Precedences and fixities of prelude operators</h3></div><a name="prelude-fixities"></a>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><p>
+Fixity is a property of a particular entity (constructor or variable), just like
+its type; fixity is not a property of that entity's <I>name</I>.
+For example: 
+<tt><br>
+
+<br>
+&nbsp;&nbsp;module&nbsp;Bar(&nbsp;op&nbsp;)&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;infixr&nbsp;7&nbsp;`op`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;op&nbsp;=&nbsp;...<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;module&nbsp;Foo&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;qualified&nbsp;Bar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;infix&nbsp;3&nbsp;`op`<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;`op`&nbsp;b&nbsp;=&nbsp;(a&nbsp;`Bar.op`&nbsp;b)&nbsp;+&nbsp;1<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;let<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;`op`&nbsp;q&nbsp;=&nbsp;(p&nbsp;`Foo.op`&nbsp;q)&nbsp;*&nbsp;2<br>
+	&nbsp;&nbsp;in&nbsp;...<br>
+
+<br>
+
+</tt>Here, <tt>`Bar.op`</tt> is <tt>infixr&nbsp;7</tt>, <tt>`Foo.op`</tt> is <tt>infix&nbsp;3</tt>, and
+the nested definition of <tt>op</tt> in <tt>f</tt>'s right-hand side has the
+default fixity of <tt>infixl&nbsp;9</tt>.  (It would also be possible
+to give a fixity to the nested definition of <tt>`op`</tt> with a nested
+fixity declaration.)<p>
+<a name="sect4.4.3"></a>
+<h4>4.4.3<tt>&nbsp;&nbsp;</tt>Function and Pattern Bindings</h4>
+ <a name="function-bindings"></a><a name="pattern-bindings"></a><p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr></tr><tr></tr><tr></tr><tr><td>
+decl </td><td>  <tt>-&gt;</tt> </td><td>  (funlhs | pat<sup>0</sup>) rhs
+</td></tr><tr><td>
+funlhs </td><td>  <tt>-&gt;</tt> </td><td>  var apat {apat }
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   pat<sup>i+1</sup> varop<sup>(a,i)</sup> pat<sup>i+1</sup>
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   lpat<sup>i</sup> varop<sup>(l,i)</sup> pat<sup>i+1</sup>
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   pat<sup>i+1</sup> varop<sup>(r,i)</sup> rpat<sup>i</sup>
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> funlhs <tt>)</tt>  apat {apat }
+</td></tr><tr><td>
+rhs </td><td>  <tt>-&gt;</tt> </td><td>  <tt>=</tt> exp [<tt>where</tt> decls]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   gdrhs [<tt>where</tt> decls]
+</td></tr><tr><td>
+gdrhs </td><td>  <tt>-&gt;</tt> </td><td>  gd <tt>=</tt> exp [gdrhs]
+</td></tr><tr><td>
+gd </td><td>  <tt>-&gt;</tt> </td><td>  <tt>|</tt> exp<sup>0</sup> 
+</td></tr></table>
+We distinguish two cases within this syntax: a <I>pattern binding
+</I>occurs when the left hand side is a <I>pat</I><sup><I>0</I></sup>; 
+otherwise, the binding is called a <I>function
+binding</I>.  Either binding may appear at the top-level of a module or
+within a <tt>where</tt> or <tt>let</tt> construct.  <p>
+<a name="sect4.4.3.1"></a>
+<h5>4.4.3.1<tt>&nbsp;&nbsp;</tt>Function bindings</h5>
+
+A function binding binds a variable to a function value.  The general
+form of a function binding for variable <I>x</I> is:
+<p>
+<table >
+<tr><td>
+<I>x</I> </td><td> <I>p</I><sub><I>11</I></sub><I> ... p</I><sub><I>1k</I></sub> </td><td> <I>match</I><sub><I>1</I></sub></td></tr><tr><td><I>...</I> </td></tr><tr><td><I>x</I> </td><td> <I>p</I><sub><I>n1</I></sub><I> ... p</I><sub><I>nk</I></sub> </td><td> <I>match</I><sub><I>n</I></sub>
+</td></tr></table>
+<p>
+
+where each <I>p</I><sub><I>ij</I></sub> is a pattern, and where each <I>match</I><sub><I>i</I></sub> is of the
+general form:
+<p>
+<table >
+<tr><td>
+<tt>=</tt><I> e</I><sub><I>i</I></sub><I> </I><tt>where&nbsp;{</tt><I> decls</I><sub><I>i</I></sub><I> </I><tt>}
+</tt></td></tr></table>
+<p>
+
+or
+<p>
+<table >
+<tr><td>
+<tt>|</tt><I> g</I><sub><I>i1</I></sub>   </td><td> <tt>=</tt><I> e</I><sub><I>i1</I></sub><I> </I> </td></tr><tr><td><I>...</I> </td></tr><tr><td><tt>|</tt><I> g</I><sub><I>im</I><sub><I>i</I></sub></sub> </td><td> <tt>=</tt><I> e</I><sub><I>im</I><sub><I>i</I></sub></sub> </td></tr><tr><td></td><td> <tt>where&nbsp;{</tt><I> decls</I><sub><I>i</I></sub><I> </I><tt>}
+</tt></td></tr></table>
+<p>
+
+and where <I>n&gt;=1</I>, <I>1&lt;=i&lt;=n</I>, <I>m</I><sub><I>i</I></sub><I>&gt;=1</I>.  The former is treated
+as shorthand for a particular case of the latter, namely:
+<p>
+<table >
+<tr><td>
+<tt>|&nbsp;True&nbsp;=</tt><I> e</I><sub><I>i</I></sub><I> </I><tt>where&nbsp;{</tt><I> decls</I><sub><I>i</I></sub><I> </I><tt>}
+</tt></td></tr></table>
+<p>
+<p>
+Note that all clauses defining a function must be contiguous, and the
+number of patterns in each clause must be the same.  The set of
+patterns corresponding to each match must be 
+<I>linear</I>---no variable is
+allowed to appear more than once in the entire set.<p>
+Alternative syntax is provided for binding functional values to infix
+operators.  For example, these three function
+definitions are all equivalent:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;plus&nbsp;x&nbsp;y&nbsp;z&nbsp;=&nbsp;x+y+z<br>
+&nbsp;&nbsp;x&nbsp;</tt>`<tt>plus</tt>`<tt>&nbsp;y&nbsp;=&nbsp;\&nbsp;z&nbsp;-&gt;&nbsp;x+y+z<br>
+&nbsp;&nbsp;(x&nbsp;</tt>`<tt>plus</tt>`<tt>&nbsp;y)&nbsp;z&nbsp;=&nbsp;x+y+z<br>
+<p>
+</tt><table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+The general binding form for functions is semantically
+equivalent to the equation (i.e. simple pattern binding):
+<p>
+
+<I>x </I><tt>=&nbsp;\</tt><I> x</I><sub><I>1</I></sub><I> ... x</I><sub><I>k</I></sub><I> </I><tt>-&gt;&nbsp;case&nbsp;(</tt><I>x</I><sub><I>1</I></sub><tt>,&nbsp;</tt><I>...</I><tt>,&nbsp;</tt><I>x</I><sub><I>k</I></sub><tt>)&nbsp;of
+</tt><table >
+<tr><td>
+<tt>(</tt><I>p</I><sub><I>11</I></sub><I>, ..., p</I><sub><I>1k</I></sub><tt>)</tt><I> match</I><sub><I>1</I></sub>  </td></tr><tr><td><I>...</I> </td></tr><tr><td><tt>(</tt><I>p</I><sub><I>n1</I></sub><I>, ..., p</I><sub><I>nk</I></sub><tt>)</tt><I> match</I><sub><I>n</I></sub>
+</td></tr></table>
+<p>
+
+where the <I>x</I><sub><I>i</I></sub> are new identifiers.
+</td></tr></table>
+<a name="patbind"></a><p>
+<a name="sect4.4.3.2"></a>
+<h5>4.4.3.2<tt>&nbsp;&nbsp;</tt>Pattern bindings</h5>
+<p>
+A pattern binding binds variables to values.  A <I>simple</I> pattern
+binding has form <I>p = e</I>.
+
+The pattern <I>p</I> is
+matched "lazily" as an irrefutable pattern, as if there were an implicit <tt>~</tt> in front 
+of it.  See the translation in
+Section <a href="exps.html#let-expressions">3.12</a>.<p>
+The <I>general</I> form of a pattern binding is <I>p match</I>, where a
+<I>match</I> is the same structure as for function bindings above; in other
+words, a pattern binding is:
+<p>
+<table >
+<tr><td align=right>
+<I>p</I> </td><td align=center> <tt>|</tt><I> g</I><sub><I>1</I></sub>   </td><td> <tt>=</tt><I> e</I><sub><I>1</I></sub> </td></tr><tr><td align=right></td><td align=center> <tt>|</tt><I> g</I><sub><I>2</I></sub>   </td><td> <tt>=</tt><I> e</I><sub><I>2</I></sub> </td></tr><tr><td align=right></td><td align=center> <I>...</I> </td></tr><tr><td align=right></td><td align=center> <tt>|</tt><I> g</I><sub><I>m</I></sub>   </td><td> <tt>=</tt><I> e</I><sub><I>m</I></sub> </td></tr><tr><td align=right></td><td align=center> <tt>where&nbsp;{</tt><I> decls </I><tt>}
+</tt></td></tr></table>
+<p>
+<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+The pattern binding above is semantically equivalent to this
+simple pattern binding:
+<p>
+<table >
+<tr><td>
+<I>p</I> </td><td align=center><tt>=</tt></td><td> <tt>let</tt><I> decls </I><tt>in</tt> </td></tr><tr><td></td><td align=center>   </td><td> <tt>if&nbsp;</tt><I>g</I><sub><I>1</I></sub><tt>&nbsp;then&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>&nbsp;else</tt> </td></tr><tr><td></td><td align=center>   </td><td> <tt>if&nbsp;</tt><I>g</I><sub><I>2</I></sub><tt>&nbsp;then&nbsp;</tt><I>e</I><sub><I>2</I></sub><tt>&nbsp;else</tt> </td></tr><tr><td></td><td align=center>   </td><td> ...                          </td></tr><tr><td></td><td align=center>   </td><td> <tt>if&nbsp;</tt><I>g</I><sub><I>m</I></sub><tt>&nbsp;then&nbsp;</tt><I>e</I><sub><I>m</I></sub><tt>&nbsp;else&nbsp;error&nbsp;"Unmatched&nbsp;pattern"
+</tt></td></tr></table>
+<p>
+
+</td></tr></table>
+<p>
+<h3>A note about syntax.</h3>  It is usually straightforward
+to tell whether a binding is a pattern binding or a function binding,
+but the existence of <tt>n+k</tt> patterns
+sometimes confuses the issue.
+Here are four examples:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;x&nbsp;+&nbsp;1&nbsp;=&nbsp;...		--&nbsp;Function&nbsp;binding,&nbsp;defines&nbsp;(+)<br>
+			--&nbsp;Equivalent&nbsp;to&nbsp;&nbsp;&nbsp;(+)&nbsp;x&nbsp;1&nbsp;=&nbsp;...<br>
+<br>
+&nbsp;&nbsp;(x&nbsp;+&nbsp;1)&nbsp;=&nbsp;...		--&nbsp;Pattern&nbsp;binding,&nbsp;defines&nbsp;x<br>
+<br>
+&nbsp;&nbsp;(x&nbsp;+&nbsp;1)&nbsp;*&nbsp;y&nbsp;=&nbsp;...	--&nbsp;Function&nbsp;binding,&nbsp;defines&nbsp;(*)<br>
+			--&nbsp;Equivalent&nbsp;to&nbsp;&nbsp;&nbsp;(*)&nbsp;(x+1)&nbsp;y&nbsp;=&nbsp;...<br>
+<br>
+&nbsp;&nbsp;(x&nbsp;+&nbsp;1)&nbsp;y&nbsp;=&nbsp;...	--&nbsp;Function&nbsp;binding,&nbsp;defines&nbsp;(+)<br>
+			--&nbsp;Equivalent&nbsp;to&nbsp;&nbsp;&nbsp;(+)&nbsp;x&nbsp;1&nbsp;y&nbsp;=&nbsp;...<br>
+
+<br>
+
+</tt>The first two can be distinguished because a pattern binding
+has a <I>pat</I><sup><I>0</I></sup> on the left hand side, not a <I>pat</I>  --- the former cannot
+be an unparenthesised <tt>n+k</tt> pattern.<a name="dependencyanalysis"></a><p>
+<a name="sect4.5"></a>
+<h3>4.5<tt>&nbsp;&nbsp;</tt>Static Semantics of Function and Pattern Bindings</h3>
+<p>
+The static semantics of the function and pattern bindings of
+a <tt>let</tt> expression or <tt>where</tt> clause
+are discussed in this section.<a name="depend-anal"></a><p>
+<a name="sect4.5.1"></a>
+<h4>4.5.1<tt>&nbsp;&nbsp;</tt>Dependency Analysis</h4>
+<p>
+In general the static semantics are given by the
+normal Hindley-Milner inference rules.
+A <I>dependency
+analysis transformation</I> is first performed
+to increase polymorphism.
+Two variables bound by value declarations are in the
+same <I>declaration group</I> if either
+
+<OL><LI>
+they are bound by the same pattern binding, or
+<LI>
+their bindings are mutually recursive (perhaps via some
+other declarations that are also part of the group).
+</OL>
+Application of the following 
+rules causes each <tt>let</tt> or <tt>where</tt> construct (including the <tt>where
+</tt>defining the top level bindings in a module) to bind only the
+variables of a single declaration group, thus capturing the required
+dependency analysis: (A similar transformation is described in 
+Peyton Jones' book [<a href="haskell.html#$peyton-jones:book">10</a>].)
+<OL><LI>The order of declarations in <tt>where</tt>/<tt>let</tt> constructs is irrelevant.
+<LI><tt>let&nbsp;{</tt><I>d</I><sub><I>1</I></sub><tt>;&nbsp;</tt><I>d</I><sub><I>2</I></sub><tt>}&nbsp;in&nbsp;</tt><I>e</I> = <tt>let&nbsp;{</tt><I>d</I><sub><I>1</I></sub><tt>}&nbsp;in&nbsp;(let&nbsp;{</tt><I>d</I><sub><I>2</I></sub><tt>}&nbsp;in&nbsp;</tt><I>e</I><tt>)</tt> <br>
+    (when no identifier bound in <I>d</I><sub><I>2</I></sub> appears free in <I>d</I><sub><I>1</I></sub>)
+</OL><a name="generalization"></a><p>
+<a name="sect4.5.2"></a>
+<h4>4.5.2<tt>&nbsp;&nbsp;</tt>Generalization</h4>
+<p>
+The Hindley-Milner type system assigns types to a <tt>let</tt>-expression
+in two stages.
+First, the right-hand side of the declaration is typed, giving a type with
+no universal quantification.  Second, all type variables that occur in this
+type are universally quantified unless they are associated with
+bound variables in the type environment;
+this is called <I>generalization</I>.
+Finally, the body of the <tt>let</tt>-expression is typed.<p>
+For example, consider the declaration
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;let&nbsp;g&nbsp;y&nbsp;=&nbsp;(y,y)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;...<br>
+<br>
+
+<br>
+
+</tt>The type of <tt>g</tt>'s definition is 
+<I>a -&gt;(a,a)</I>.  The generalization step
+attributes to <tt>g</tt> the polymorphic type 
+<I>forall a.  a -&gt;(a,a)</I>,
+after which the typing of the "<tt>...</tt>" part can proceed.<p>
+When typing overloaded definitions, all the overloading 
+constraints from a single declaration group are collected together, 
+to form the context for the type of each variable declared in the group.
+For example, in the definition:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;let&nbsp;g1&nbsp;x&nbsp;y&nbsp;=&nbsp;if&nbsp;x&gt;y&nbsp;then&nbsp;show&nbsp;x&nbsp;else&nbsp;g2&nbsp;y&nbsp;x<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g2&nbsp;p&nbsp;q&nbsp;=&nbsp;g1&nbsp;q&nbsp;p<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;...<br>
+
+<br>
+
+</tt>The types of the definitions of <tt>g1</tt> and <tt>g2</tt> are both
+<I>a -&gt;a -&gt;</I><tt>String</tt>, and the accumulated constraints are
+<tt>Ord</tt><I> a</I> (arising from the use of <tt>&gt;</tt>), and <tt>Show</tt><I> a</I> (arising from the
+use of <tt>show</tt>).
+The type variables appearing in this collection of constraints are
+called the <I>constrained type variables</I>.<p>
+The generalization step attributes to both <tt>g1</tt> and <tt>g2</tt> the type
+<p>
+
+<I>forall a. (</I><tt>Ord</tt><I> a, </I><tt>Show</tt><I> a) =&gt;a -&gt;a -&gt;</I><tt>String
+<p>
+
+</tt>Notice that <tt>g2</tt> is overloaded in the same way as <tt>g1</tt> even though the
+occurrences of <tt>&gt;</tt> and <tt>show</tt> are in the definition of <tt>g1</tt>.<p>
+If the programmer supplies explicit type signatures for more than one variable
+in a declaration group, the contexts of these signatures must be 
+identical up to renaming of the type variables.<a name="context-reduction"></a><p>
+<a name="sect4.5.3"></a>
+<h4>4.5.3<tt>&nbsp;&nbsp;</tt>Context Reduction Errors</h4>
+
+
+As mentioned in Section <a href="decls.html#type-semantics">4.1.4</a>, the context of a type
+may constrain only a type variable, or the application of a type variable
+to one or more types.  Hence, types produced by
+generalization must be expressed in a form in which all context
+constraints have be reduced to this "head normal form".
+Consider, for example, the
+definition:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;xs&nbsp;y&nbsp;&nbsp;=&nbsp;&nbsp;xs&nbsp;==&nbsp;[y]<br>
+
+<br>
+
+</tt>Its type is given by
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;::&nbsp;Eq&nbsp;a&nbsp;=&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>and not
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;::&nbsp;Eq&nbsp;[a]&nbsp;=&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>Even though the equality is taken at the list type, the context must
+be simplified, using the instance declaration for <tt>Eq</tt> on lists,
+before generalization.  If no such instance is in scope, a static
+error occurs.<p>
+Here is an example that shows the need for a
+constraint of the form <I>C (m t)</I> where m is one of the type
+variables being generalized; that is, where the class <I>C</I> applies to a type
+expression that is not a type variable or a type constructor.
+Consider:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;::&nbsp;(Monad&nbsp;m,&nbsp;Eq&nbsp;(m&nbsp;a))&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;m&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+&nbsp;&nbsp;f&nbsp;x&nbsp;y&nbsp;=&nbsp;return&nbsp;x&nbsp;==&nbsp;y<br>
+
+<br>
+
+</tt>The type of <tt>return</tt> is <tt>Monad&nbsp;m&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;m&nbsp;a</tt>; the type of <tt>(==)</tt> is
+<tt>Eq&nbsp;a&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool</tt>.  The type of <tt>f</tt> should be
+therefore <tt>(Monad&nbsp;m,&nbsp;Eq&nbsp;(m&nbsp;a))&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;m&nbsp;a&nbsp;-&gt;&nbsp;Bool</tt>, and the context
+cannot be simplified further.<p>
+The instance declaration derived from a data type <tt>deriving</tt> clause
+(see Section <a href="decls.html#derived-decls">4.3.3</a>)
+must, like any instance declaration, have a <I>simple</I> context; that is,
+all the constraints must be of the form <I>C a</I>, where <I>a</I> is a type variable.
+For example, in the type
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;Apply&nbsp;a&nbsp;b&nbsp;=&nbsp;App&nbsp;(a&nbsp;b)&nbsp;&nbsp;deriving&nbsp;Show<br>
+
+<br>
+
+</tt>the derived Show instance will produce a context <tt>Show&nbsp;(a&nbsp;b)</tt>, which
+cannot be reduced and is not simple; thus a static error results.<a name="monomorphism"></a><p>
+<a name="sect4.5.4"></a>
+<h4>4.5.4<tt>&nbsp;&nbsp;</tt>Monomorphism</h4>
+
+Sometimes it is not possible to generalize over all the type variables
+used in the type of the definition.
+For example, consider the declaration
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;let&nbsp;g&nbsp;y&nbsp;z&nbsp;=&nbsp;([x,y],&nbsp;z)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;...<br>
+
+<br>
+
+</tt>In an environment where <tt>x</tt> has type <I>a</I>,
+the type of <tt>g</tt>'s definition is 
+<I>a -&gt;b -&gt;</I><tt>([</tt><I>a</I><tt>]</tt><I>,b</I><tt>)</tt>.
+The generalization step attributes to <tt>g</tt> the type 
+<I>forall b.  a -&gt;b -&gt;</I><tt>([</tt><I>a</I><tt>]</tt><I>,b</I><tt>)</tt>;
+only <I>b</I> can be universally quantified because <I>a</I> occurs in the
+type environment.
+We say that the type of <tt>g</tt> is <I>monomorphic in the type variable a</I>.<p>
+The effect of such monomorphism is that the first argument of all 
+applications of <tt>g</tt> must be of a single type.  
+For example, it would be valid for
+the "<tt>...</tt>" to be
+<tt><br>
+
+<br>
+&nbsp;&nbsp;(g&nbsp;True,&nbsp;g&nbsp;False)<br>
+
+<br>
+
+</tt>(which would, incidentally, force <tt>x</tt> to have type <tt>Bool</tt>) but invalid
+for it to be 
+<tt><br>
+
+<br>
+&nbsp;&nbsp;(g&nbsp;True,&nbsp;g&nbsp;'c')<br>
+
+<br>
+
+</tt>In general, a type <I>forall </I><u>u</u><I>. cx =&gt;t
+</I>is said to be <I>monomorphic
+
+</I>in the type variable <I>a</I> if <I>a</I> is free in
+<I>forall </I><u>u</u><I>. cx =&gt;t</I>.<p>
+It is worth noting that the explicit type signatures provided by Haskell 
+are not powerful enough to express types that include monomorphic type
+variables.  For example, we cannot write
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;let&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;b&nbsp;-&gt;&nbsp;([a],b)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g&nbsp;y&nbsp;z&nbsp;=&nbsp;([x,y],&nbsp;z)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;...<br>
+
+<br>
+
+</tt>because that would claim that <tt>g</tt> was polymorphic in both <tt>a</tt> and <tt>b
+</tt>(Section <a href="decls.html#type-signatures">4.4.1</a>).  In this program, <tt>g</tt> can only be given
+a type signature if its first argument is restricted to a type not involving
+type variables; for example
+<tt><br>
+
+<br>
+&nbsp;&nbsp;g&nbsp;::&nbsp;Int&nbsp;-&gt;&nbsp;b&nbsp;-&gt;&nbsp;([Int],b)<br>
+
+<br>
+
+</tt>This signature would also cause <tt>x</tt> to have type <tt>Int</tt>.<a name="sect:monomorphism-restriction"></a><p>
+<a name="sect4.5.5"></a>
+<h4>4.5.5<tt>&nbsp;&nbsp;</tt>The Monomorphism Restriction</h4>
+
+<p>
+Haskell  places certain extra restrictions on the generalization
+step, beyond the standard Hindley-Milner restriction described above,
+which further reduces polymorphism in particular cases.<p>
+The monomorphism restriction depends on the binding syntax of a
+variable.  Recall that a variable is bound by either a <I>function
+binding</I> or a <I>pattern binding</I>, and that a <I>simple</I> pattern
+binding is a pattern binding in which the pattern consists of only a
+single variable (Section <a href="decls.html#pattern-bindings">4.4.3</a>).<p>
+The following two rules define the monomorphism restriction:
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>The monomorphism restriction</h3><p>
+<DL><DT>
+Rule 1.
+</DT>
+
+We say that a given declaration group is <I>unrestricted</I> if and only if:
+<DL><DT>
+(a):
+</DT>
+
+every variable in the group is bound by a function binding or a simple
+pattern binding (Section <a href="decls.html#patbind">4.4.3.2</a>), <I>and
+</I><DT>
+(b):
+</DT>
+
+an explicit type signature is given for every variable in the group
+that is bound by simple pattern binding.
+</DL>
+The usual Hindley-Milner restriction on polymorphism is that
+only type variables that do not occur free in the environment may be generalized.
+In addition, <I>the constrained type variables of
+a restricted declaration group may not be generalized
+</I>in the generalization step for that group.
+(Recall that a type variable is constrained if it must belong
+to some type class; see Section <a href="decls.html#generalization">4.5.2</a>.)<p>
+<DT>
+Rule 2.
+</DT>
+
+Any monomorphic type variables that remain when type inference for
+an entire module is complete, are considered <I>ambiguous</I>,
+and are resolved to particular types using the defaulting 
+rules (Section <a href="decls.html#default-decls">4.3.4</a>).
+</DL>
+</td></tr></table>
+<p>
+<h3>Motivation</h3><p>
+Rule 1 is required for two reasons, both of which are fairly subtle.
+<UL><LI>
+<I>Rule 1 prevents computations from being unexpectedly repeated.
+</I>For example, <tt>genericLength</tt> is a standard function (in library <tt>List</tt>) whose
+type is given by
+<tt><br>
+
+<br>
+&nbsp;&nbsp;genericLength&nbsp;::&nbsp;Num&nbsp;a&nbsp;=&gt;&nbsp;[b]&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+
+</tt>Now consider the following expression:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;let&nbsp;{&nbsp;len&nbsp;=&nbsp;genericLength&nbsp;xs&nbsp;}&nbsp;in&nbsp;(len,&nbsp;len)<br>
+
+<br>
+
+</tt>It looks as if <tt>len</tt> should be computed only once, but without Rule 1 it might
+be computed twice, once at each of two different overloadings.  If the 
+programmer does actually wish the computation to be repeated, an explicit
+type signature may be added:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;let&nbsp;{&nbsp;len&nbsp;::&nbsp;Num&nbsp;a&nbsp;=&gt;&nbsp;a;&nbsp;len&nbsp;=&nbsp;genericLength&nbsp;xs&nbsp;}&nbsp;in&nbsp;(len,&nbsp;len)<br>
+
+<br>
+<p>
+</tt><LI><I>Rule 1 prevents ambiguity.</I>  For example, consider the declaration
+group
+<tt><br>
+
+<br>
+&nbsp;&nbsp;[(n,s)]&nbsp;=&nbsp;reads&nbsp;t<br>
+
+<br>
+
+</tt>Recall that <tt>reads</tt> is a standard function whose type is given by the
+signature
+<tt><br>
+
+<br>
+&nbsp;&nbsp;reads&nbsp;::&nbsp;(Read&nbsp;a)&nbsp;=&gt;&nbsp;String&nbsp;-&gt;&nbsp;[(a,String)]<br>
+
+<br>
+
+</tt>Without Rule 1, <tt>n</tt> would be assigned the 
+type <I>forall a. </I><tt>Read</tt><I> a =&gt;a</I> 
+and <tt>s</tt> the type <I>forall a.</I> <tt>Read</tt><I> a</I> <I>=&gt;</I><tt>String</tt>.
+The latter is an invalid type, because it is inherently ambiguous.
+It is not possible to determine at what overloading to use <tt>s</tt>, nor
+can this be solved by adding a type signature for <tt>s</tt>.
+Hence, when <I>non-simple</I> pattern bindings
+are used (Section <a href="decls.html#patbind">4.4.3.2</a>), the types inferred are 
+always monomorphic in their constrained type variables, irrespective of whether
+a type signature is provided.
+In this case, both <tt>n</tt> and <tt>s</tt> are monomorphic in <I>a</I>.<p>
+The same constraint applies to pattern-bound functions.  For example, in
+<tt><br>
+
+<br>
+&nbsp;&nbsp;(f,g)&nbsp;=&nbsp;((+),(-))<br>
+
+<br>
+
+</tt>both <tt>f</tt> and <tt>g</tt> are monomorphic regardless of any type
+signatures supplied for <tt>f</tt> or <tt>g</tt>.
+</UL><p>
+Rule 2 is required because there is no way to enforce monomorphic use
+of an <I>exported</I> binding, except by performing type inference on modules
+outside the current module.  Rule 2 states that the exact types of all
+the variables bound in a module must be determined by that module alone, and not
+by any modules that import it.
+<tt><br>
+
+<br>
+&nbsp;&nbsp;module&nbsp;M1(len1)&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;default(&nbsp;Int,&nbsp;Double&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;len1&nbsp;=&nbsp;genericLength&nbsp;"Hello"<br>
+<br>
+&nbsp;&nbsp;module&nbsp;M2&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;M1(len1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;len2&nbsp;=&nbsp;(2*len1)&nbsp;::&nbsp;Rational<br>
+
+<br>
+
+</tt>When type inference on module <tt>M1</tt> is complete, <tt>len1</tt> has the 
+monomorphic type <tt>Num&nbsp;a&nbsp;=&gt;&nbsp;a</tt> (by Rule 1).  Rule 2 now states that
+the monomorphic type variable <tt>a</tt> is ambiguous, and must be resolved using
+the defaulting rules of Section <a href="decls.html#default-decls">4.3.4</a>.
+Hence, <tt>len1</tt> gets type <tt>Int</tt>, and its use in <tt>len2</tt> is type-incorrect.
+(If the above code is actually what is wanted, a type signature on
+<tt>len1</tt> would solve the problem.)<p>
+This issue does not arise for nested bindings, because their entire scope is 
+visible to the compiler.<p>
+<h3>Consequences</h3><p>
+The monomorphism rule has a number of consequences for the programmer.
+Anything defined with function syntax usually
+generalizes as a function is expected to.  Thus in
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;x&nbsp;y&nbsp;=&nbsp;x+y<br>
+
+<br>
+
+</tt>the function <tt>f</tt> may be used at any overloading in class <tt>Num</tt>.
+There is no danger of recomputation here.  However, the same function
+defined with pattern syntax:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;f&nbsp;=&nbsp;\x&nbsp;-&gt;&nbsp;\y&nbsp;-&gt;&nbsp;x+y<br>
+
+<br>
+
+</tt>requires a type signature if <tt>f</tt> is to be fully overloaded.
+Many functions are most naturally defined using simple pattern
+bindings; the user must be careful to affix these with type signatures
+to retain full overloading.  The standard prelude contains many
+examples of this:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;sum&nbsp;&nbsp;::&nbsp;(Num&nbsp;a)&nbsp;=&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;a<br>
+&nbsp;&nbsp;sum&nbsp;&nbsp;=&nbsp;&nbsp;foldl&nbsp;(+)&nbsp;0&nbsp;&nbsp;<br>
+
+<br>
+<p>
+</tt>Rule 1 applies to both top-level and nested definitions.  Consider
+<tt><br>
+
+<br>
+&nbsp;&nbsp;module&nbsp;M&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;len1&nbsp;=&nbsp;genericLength&nbsp;"Hello"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;len2&nbsp;=&nbsp;(2*len1)&nbsp;::&nbsp;Rational<br>
+
+<br>
+
+</tt>Here, type inference finds that <tt>len1</tt> has the monomorphic type (<tt>Num&nbsp;a&nbsp;=&gt;&nbsp;a</tt>);
+and the type variable <tt>a</tt> is resolved to <tt>Rational</tt> when performing type
+inference on <tt>len2</tt>.<a name="kindinference"></a><p>
+<a name="sect4.6"></a>
+<h3>4.6<tt>&nbsp;&nbsp;</tt>Kind Inference</h3>
+
+
+<p>
+This section describes the rules that are used to perform <I>kind
+inference</I>, i.e. to calculate a suitable kind for each type
+constructor and class appearing in a given
+program.<p>
+The first step in the kind inference process is to arrange the set of
+datatype, synonym, and class definitions into dependency groups.  This can
+be achieved in much the same way as the dependency analysis for value
+declarations that was described in Section <a href="decls.html#dependencyanalysis">4.5</a>.
+For example, the following program fragment includes the definition
+of a datatype constructor <tt>D</tt>, a synonym <tt>S</tt> and a class <tt>C</tt>, all of
+which would be included in the same dependency group:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;C&nbsp;a&nbsp;=&gt;&nbsp;D&nbsp;a&nbsp;=&nbsp;Foo&nbsp;(S&nbsp;a)<br>
+&nbsp;&nbsp;type&nbsp;S&nbsp;a&nbsp;=&nbsp;[D&nbsp;a]<br>
+&nbsp;&nbsp;class&nbsp;C&nbsp;a&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bar&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;D&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>The kinds of variables, constructors, and classes within each group
+are determined using standard techniques of type inference and
+kind-preserving unification [<a href="haskell.html#$jones:cclasses">7</a>].  For example, in the
+definitions above, the parameter <tt>a</tt> appears as an argument of the
+function constructor <tt>(-&gt;)</tt> in the type of <tt>bar</tt> and hence must
+have kind *.  It follows that both <tt>D</tt> and <tt>S</tt> must have
+kind *-&gt;* and that every instance of class <tt>C</tt> must
+have kind *.<p>
+It is possible that some parts of an inferred kind may not be fully
+determined by the corresponding definitions; in such cases, a default
+of * is assumed.  For example, we could assume an arbitrary kind
+<font face="symbol">k</font> for the <tt>a</tt> parameter in each of the following examples:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;data&nbsp;App&nbsp;f&nbsp;a&nbsp;=&nbsp;A&nbsp;(f&nbsp;a)<br>
+&nbsp;&nbsp;data&nbsp;Tree&nbsp;a&nbsp;&nbsp;=&nbsp;Leaf&nbsp;|&nbsp;Fork&nbsp;(Tree&nbsp;a)&nbsp;(Tree&nbsp;a)<br>
+
+<br>
+
+</tt>This would give kinds
+(<font face="symbol">k</font>-&gt;*)-&gt;<font face="symbol">k</font>-&gt;* and
+<font face="symbol">k</font>-&gt;* for <tt>App</tt> and <tt>Tree</tt>, respectively, for any
+kind <font face="symbol">k</font>, and would require an extension to allow polymorphic
+kinds.  Instead, using the default binding <font face="symbol">k</font>=*, the
+actual kinds for these two constructors are
+(*-&gt;*)-&gt;*-&gt;* and
+*-&gt;*, respectively.<p>
+Defaults are applied to each dependency group without consideration of
+the ways in which particular type constructor constants or classes are
+used in later dependency groups or elsewhere in the program.  For example,
+adding the following definition to those above does not influence the
+kind inferred for <tt>Tree</tt> (by changing it to
+(*-&gt;*)-&gt;*, for instance), and instead
+generates a static error because the kind of <tt>[]</tt>, *-&gt;*,
+does not match the kind * that is expected for an argument of <tt>Tree</tt>:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;type&nbsp;FunnyTree&nbsp;=&nbsp;Tree&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;invalid<br>
+
+<br>
+
+</tt>This is important because it ensures that each constructor and class are
+used consistently with the same kind whenever they are in scope.<p>
+<hr><i>The Haskell 98 Report</i><br><a href="index.html">top</a> | <a href="exps.html">back</a> | <a href="modules.html">next</a> | <a href="index98.html">contents</a> | <a href="prelude-index.html">function index</a> <br><font size=2>December 2002</font>
+<p>

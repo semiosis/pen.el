@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: multiple assignment
+# group: syntax
+# key: ma
+# --
+x, y = 10, 20

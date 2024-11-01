@@ -1,0 +1,13 @@
+ read(c), members(char(c)).
+
+
+
+member :-
+
+group(c, [], [], [], [], []),
+
+char_info(c, [], char_info).
+
+
+
+group

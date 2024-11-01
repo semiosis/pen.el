@@ -1,0 +1,30 @@
+title: HF summarize
+prompt-version: 1
+engine: FB Bart Large CNN
+tags: prose summarise
+mode: summarize
+temperature: 0.6
+max-generated-tokens: 500
+top-p: 1
+prompt: "<1>"
+stop-sequences:
+- "<delim>long complete<delim>"
+vars:
+- passage
+examples:
+- |-
+  Men at Work are an Australian rock band formed
+  in Melbourne in 1978 and best known for
+  breakthrough hits such as "Who Can It Be Now?"
+  or "Down Under". Its founding member and
+  frontman is Colin Hay, who performs on lead
+  vocals and guitar. After playing as an
+  acoustic duo with Ron Strykert during 1978–79,
+  Hay formed the group with Strykert playing
+  bass guitar and Jerry Speiser on drums. They
+  were soon joined by Greg Ham on flute,
+  saxophone, and keyboards and John Rees on bass
+  guitar, with Strykert then switching to lead
+  guitar.
+filter: true
+postprocessor: pen-pretty-paragraph

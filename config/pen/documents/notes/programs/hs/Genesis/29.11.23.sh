@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "upd"
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "upd"
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "upd"
+cd /root/.pen/documents/notes;  "Genesis" "3:1" "#" "<==" "bash"

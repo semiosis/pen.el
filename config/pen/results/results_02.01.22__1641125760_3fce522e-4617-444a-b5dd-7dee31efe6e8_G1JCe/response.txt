@@ -1,0 +1,6 @@
+/usr/bin/ideviceinfo
+/usr/bin/ideviceinfo.real
+/usr/bin/idevicename
+/usr/bin/idevicename.real
+/usr/bin/idevicescreenshot
+/usr/bin/idevices

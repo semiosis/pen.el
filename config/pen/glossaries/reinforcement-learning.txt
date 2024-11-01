@@ -1,0 +1,440 @@
+likelihood function
+likelihood
+    The joint probability distribution of
+    observed data considered as a function of
+    statistical parameters.
+
+    It describes the relative probability or
+    odds of obtaining the observed data for
+    all permissible values of the parameters,
+    and is used to identify the particular
+    parameter values that are most plausible
+    given the observed data.
+
+return
+cumulative reward
+    An agent's cumulative reward.
+
+reward
+reward signal
+    A number that tells it how good or bad the
+    current world state is.
+
+    https://venturebeat.com/2021/06/26/deepmind-agi-paper-adds-urgency-to-ethical-ai/
+    [[calibre:Reward is enough]]
+
+Deep reinforcement learning
+DRL
+    Uses DL and RL principles in order to
+    create efficient algorithms that can be
+    applied on areas like robotics, video
+    games, finance and healthcare.
+    
+    Implementing DL architecture (deep neural
+    networks or etc.) with RL algorithms
+    (Q-learning, actor critic or etc.), a
+    powerful model (DRL) can be created that
+    is capable to scale to previously
+    unsolvable problems.
+
+Policy Gradient
+    The key idea underlying policy gradients
+    is to push up the probabilities of actions
+    that lead to higher return, and push down
+    the probabilities of actions that lead to
+    lower return, until you arrive at the
+    optimal policy.
+
+Vanilla Policy Gradient
+VPG
+    [on-policy algorithm]
+
+    Can be used for environments with either
+    discrete or continuous action spaces.
+
+    The Spinning Up implementation of VPG
+    supports parallelization with MPI.
+
+RL
+Reinforcement Learning
+    More general than supervised learning or
+    unsupervised learning.
+
+    It learns from interaction with the
+    environment to achieve a goal or simply
+    learns from reward and punishments.
+
+    In other words, algorithms learn to react
+    to the environment.
+
+    TD-learning seems to be closest to how
+    humans learn in this type of situation,
+    but Q-learning and others also have their
+    own advantages.
+
+    At each time step, the agent performs an
+    action which leads to two things:
+    - changing the environment state and
+    - the agent (possibly) receiving a reward
+      (or penalty) from the environment.
+
+    The goal of the agent is to discover an
+    optimal policy (i.e. what actions to do in
+    each state) such that it maximizes the
+    total value of rewards received from the
+    environment in response to its actions.
+    MDPis used to describe the agent/
+    environment interaction settings in a
+    formal way.
+
+Deep Reinforcement Learning
+    Combination of:
+    - Deep Learning
+    - Reinforcement Learning
+
+    Enabled:
+    - OpenAI Dota bot
+      To beat the world's best Dota players
+    - Alpha Zero
+      To beat the world's best go player
+    - Uber's bot
+      To beat Montezuma's revenge
+
+    vim +/"Important Concepts in Deep Reinforcement Learning" ""
+
+    Uses neural networks.
+
+    Example
+    https://www.youtube.com/watch?v=6DL5M9b2j6I
+
+meta-RL
+meta-reinforcement learning
+    meta-learning applied to RL
+
+Q-learning
+    [model-free RL algorithm]
+
+    The goal of Q-learning is to learn a
+    policy, which tells an agent what action
+    to take under what circumstances.
+
+    model-free
+        Does not require a model of the
+        environment
+
+    Can handle problems with stochastic
+    transitions and rewards, without requiring
+    adaptations.
+
+    For any FMDP, Q-learning finds a policy
+    that is optimal in the sense that it
+    maximizes the expected value of the total
+    reward over any and all successive steps,
+    starting from the current state.
+
+    Q-learning can identify an optimal action-
+    selection policy for any given FMDP, given
+    infinite exploration time and a partly-
+    random policy.
+
+    "Q" names the function that returns the
+    reward used to provide the reinforcement
+    and can be said to stand for the "quality"
+    of an action taken in a given state.
+
+off-policy
+off-policy learner
+    Learns the value of the optimal policy
+    independently of the agent's actions.
+
+    Q-learning is an off-policy learner.
+
+on-policy
+on-policy learner
+    Learns the value of the policy being
+    carried out by the agent including the
+    exploration steps.
+
+    Example:
+    - policy gradient
+
+policy gradient methods
+    [type of RL technique/algorithm]
+
+policy gradient
+PG
+    A human takes actions based on observations.
+
+    http://www.scholarpedia.org/article/Policy_gradient_methods
+
+    https://medium.com/@jonathan_hui/rl-policy-gradients-explained-9b13b688b146
+
+    vimlinks +/"RL — Policy Gradient Explained" "https://medium.com/@jonathan_hui/rl-policy-gradients-explained-9b13b688b146"
+
+    [#reinforcement learning]
+
+    https://medium.com/@jonathan_hui/rl-policy-gradients-explained-9b13b688b146
+
+    ewwlinks +/"^Introduction" "http://www.scholarpedia.org/article/Policy_gradient_methods"
+
+    A way of treating RL as an optimization
+    problem.
+
+    Most traditional RL methods have no
+    convergence guarantees and there exist
+    even divergence examples.
+
+    Solves:
+        Continuous states and actions in high
+        dimensional spaces cannot be treated
+        by most off-the-shelf RL approaches.
+
+    Policy gradient methods do not suffer from
+    these problems in the same way.
+
+    For example:
+        Uncertainty in the state might degrade
+        the performance of the policy
+
+        (if no additional state estimator is
+        being used)
+
+        ...but the optimization techniques for
+        the policy do not need to be changed.
+
+    deals with in the same way
+    - continuous [states and actions]
+    - discrete
+
+    The learning performance is often
+    increased.
+
+    Convergence at least to a local optimum is
+    guaranteed.
+
+    The advantages of policy gradient methods
+    for real world applications are numerous.
+    - policy representations can be chosen so
+      that it is meaningful for the task and
+      can incorporate domain knowledge
+    - often fewer parameters are needed in the
+      learning process than in value-function
+      based approaches
+    - there is a variety of different
+      algorithms for policy gradient
+      estimation in the literature which have
+      a rather strong theoretical
+      underpinning.
+
+    Additionally, policy gradient methods can
+    be used either model-free or model-based
+    as they are a generic formulation.
+
+    Of course, policy gradients are not the
+    salvation to all problems but also have
+    significant problems.
+
+    They are by definition on-policy (note
+    that tricks like importance sampling can
+    slightly alleviate this problem) and need
+    to forget data very fast in order to avoid
+    the introduction of a bias to the gradient
+    estimator.
+
+    Hence, the use of sampled data is not very
+    efficient.
+
+    In tabular representations, value function
+    methods are guaranteed to converge to a
+    global maximum while policy gradients only
+    converge to a local maximum and there may
+    be many maxima in discrete problems.
+
+    Policy gradient methods are often quite
+    demanding to apply, mainly because one has
+    to have considerable knowledge about the
+    system one wants to control to make
+    reasonable policy definitions.
+
+    Finally, policy gradient methods always
+    have an open parameter, the learning rate,
+    which may decide over the order of
+    magnitude of the speed of convergence,
+    these have led to new approaches inspired
+    by EM.
+
+gradient descent
+GD
+    [first-order optimization process]
+
+    Calculates the gradients of the loss
+    function (the partial derivatives of loss
+    by each weight) and moves the weights in
+    the direction of lowering the loss
+    function.
+
+    ewwlinks +/"Weaknesses in Gradient Descent" "https://smist08.wordpress.com/2016/10/04/the-road-to-tensorflow-part-10-more-on-optimization/"
+
+    Weaknesses:
+    - Finding the minimums of a complicated
+      nonlinear function is a non-trivial
+      exercise, compounded by the fact that a
+      lot of the data we are feeding in during
+      training is very noisy.
+
+Gradient estimation
+    vimlinks +/"Gradient estimation" http://gradientscience.org/policy_gradients_pt2
+
+    Policy gradient algorithms work by
+    plugging gradient estimates into a
+    first-order optimization process (like
+    GD).
+
+    These gradient estimates thus play a
+    critical role in shaping agent
+    performance.
+
+Gradient variance
+    vimlinks +/"Gradient variance" http://gradientscience.org/policy_gradients_pt2
+
+deep policy gradient
+    http://gradientscience.org/policy_gradients_pt2
+
+noisy gradient
+
+Actor-critic
+Actor-critic methods
+    [#reinforcement learning]
+
+    vimlinks "https://towardsdatascience.com/understanding-actor-critic-methods-931b97b6df3f"
+
+    The “Critic”
+    - estimates the value
+      function.
+      This could be the action-value (the Q
+      value) or state-value (the V value).
+
+    The “Actor”
+    - updates the policy distribution in the
+      direction suggested by the Critic (such
+      as with policy gradients).
+
+REINFORCE
+Monte Carlo policy gradients
+    [algorithm]
+
+Temporal Credit Assignment Problem
+    https://www.reddit.com/r/learnmachinelearning/comments/8jom12/what_is_temporal_credit_assignment_problemrl/
+
+    Here is a sequence of actions. how can i
+    work out which one whas good or bad?.
+
+    It's the problem of figuring out which
+    action in the history of actions is
+    responsible for a particular reward.
+
+    Sutton's "Learning To Predict By The
+    Methods of Temporal Differences" is a
+    great resource for this problem.
+
+    https://pdfs.semanticscholar.org/9c06/865e912788a6a51470724e087853d7269195.pdf
+
+Structural Credit Assignment Problem
+    http://pages.cs.wisc.edu/~finton/what-rl.html
+
+    In RL problems the feedback is simply a
+    scalar value which may be delayed in time.
+
+    This reinforcement signal reflects the
+    success or failure of the entire system
+    after it has performed some sequence of
+    actions.
+
+    Hence the reinforcement signal does not
+    assign credit or blame to any one action
+    (the temporal credit assignment problem),
+    or to any particular node or system
+    element (the structural credit assignment
+    problem).
+
+Maximum a-posteriori Policy Optimisation
+MAP Policy Optimisation
+    A new algorithm for reinforcement
+    learning.
+    
+value function
+    [#RL]
+
+    Estimates "how good" it is to be in a
+    given state.
+
+Temporal difference learning
+TD learning
+    [class of model-free RL methods]
+
+    Learn by bootstrapping from the current
+    estimate of the value function.
+
+    These methods sample from the environment,
+    like Monte Carlo methods, and perform
+    updates based on current estimates, like
+    dynamic programming methods.
+
+    While Monte Carlo methods only adjust
+    their estimates once the final outcome is
+    known, TD methods adjust predictions to
+    match later, more accurate, predictions
+    about the future before the final outcome
+    is known.
+
+    This is a form of bootstrapping, as
+    illustrated with the following example:
+
+        "Suppose you wish to predict the
+        weather for Saturday, and you have
+        some model that predicts Saturday's
+        weather, given the weather of each day
+        in the week. In the standard case, you
+        would wait until Saturday and then
+        adjust all your models. However, when
+        it is, for example, Friday, you should
+        have a pretty good idea of what the
+        weather would be on Saturday – and
+        thus be able to change, say,
+        Saturday's model before Saturday
+        arrives."Temporal difference methods
+        are related to the temporal difference
+        model of animal learning.
+
+conditioning
+    [#physiology]
+
+    A behavioral process whereby a response
+    becomes more frequent or more predictable
+    in a given environment as a result of
+    reinforcement, with reinforcement
+    typically being a stimulus or reward for a
+    desired response.
+
+offline
+offline RL
+     There is an agent and (instead of
+     interactive environment) a limited, fixed
+     dataset.
+     
+     The dataset contains experience
+     (trajectory rollouts of arbitrary
+     policies) from other scenarios where
+     agents were learning a policy to gain a
+     good reward.
+     
+     In contrast to online RL, such setup is
+     more challenging as there is no dynamic
+     environment to test hypothesis, and all
+     is left is to have a set of trajectories
+     without live feedback.
+     
+     By observing historical episodes of
+     interaction from other agents, an offline
+     agent needs to learn a good policy to
+     achieve a high reward.

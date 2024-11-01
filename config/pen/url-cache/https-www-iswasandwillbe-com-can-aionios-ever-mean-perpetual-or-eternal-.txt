@@ -1,0 +1,856 @@
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+x-powered-by: PHP/7.4.33
+set-cookie: __wpdm_client=b5d583b992ccc4be451bcb32c4d397e9; path=/; secure; HttpOnly
+set-cookie: wp_wpfileupload_d53bbf52ea5e28dbbaf5d6c95d0c6214=rYCW2AhHTL8HPkxwBqOe6x9MjtRg7Yre; expires=Mon, 05-Feb-2024 02:56:12 GMT; Max-Age=172800; path=/; secure
+content-type: text/html; charset=UTF-8
+link: <https://www.iswasandwillbe.com/wp-json/>; rel="https://api.w.org/"
+link: <https://www.iswasandwillbe.com/wp-json/wp/v2/posts/2024>; rel="alternate"; type="application/json"
+link: <https://www.iswasandwillbe.com/?p=2024>; rel=shortlink
+cache-control: public, max-age=300
+expires: Sat, 03 Feb 2024 03:01:12 GMT
+transfer-encoding: chunked
+vary: Accept-Encoding,User-Agent
+date: Sat, 03 Feb 2024 02:56:12 GMT
+server: LiteSpeed
+strict-transport-security: max-age=63072000; includeSubDomains
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-endurance-cache-level: 2
+x-nginx-cache: WordPress
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"  ><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots"  content="index, follow" />
+    
+        
+
+    
+    <title>Is, Was and Will Be &#8211; The Unknown Character of Christ and His Word &raquo; Revelation 1:8 &quot;I am the Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty &raquo; Can Aionios Ever Mean Perpetual or Eternal?</title>
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+                    <link rel="shortcut icon" href="https://www.iswasandwillbe.com/wp-content/uploads/2013/02/favicon1.ico" />
+    
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+    <!-- ststylesheet -->
+    <link rel="stylesheet" href="https://www.iswasandwillbe.com/wp-content/themes/belief-child/style.css" type="text/css" media="all" />
+        
+    
+    <link rel="pingback" href="https://www.iswasandwillbe.com/xmlrpc.php" />
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/ie.css">
+    <![endif]-->
+
+        <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->  
+    
+		
+    
+                <style type="text/css">
+                div.row{width:1170px;}
+                div.login-box-container{width:1170px;}
+            </style>
+    <meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//ssl.p.jwpcdn.com' />
+<link rel="alternate" type="application/rss+xml" title="Is, Was and Will Be - The Unknown Character of Christ and His Word &raquo; Feed" href="https://www.iswasandwillbe.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Is, Was and Will Be - The Unknown Character of Christ and His Word &raquo; Comments Feed" href="https://www.iswasandwillbe.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by ExactMetrics plugin v7.22.0 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+		<!-- Note: ExactMetrics is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the ExactMetrics settings panel. -->
+					<!-- No tracking code set -->
+				<!-- / Google Analytics by ExactMetrics -->
+		<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.iswasandwillbe.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='scap.flashblock-css' href='https://www.iswasandwillbe.com/wp-content/plugins/compact-wp-audio-player/css/flashblock.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='scap.player-css' href='https://www.iswasandwillbe.com/wp-content/plugins/compact-wp-audio-player/css/player.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/block-library/style.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-components-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/components/style.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/block-editor/style.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-reusable-blocks-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/reusable-blocks/style.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-patterns-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/patterns/style.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/editor/style.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='common-css' href='https://www.iswasandwillbe.com/wp-admin/css/common.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='forms-css' href='https://www.iswasandwillbe.com/wp-admin/css/forms.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-reset-editor-styles-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/block-library/reset.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-content-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/block-editor/content.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-classic-layout-styles-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/edit-post/classic.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-edit-blocks-css' href='https://www.iswasandwillbe.com/wp-includes/css/dist/block-library/editor.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='dropr-block-style-css-css' href='https://www.iswasandwillbe.com/wp-content/plugins/dropr-for-dropbox/blocks/dropr/style/style.css?ver=1.2.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='download-attachments-frontend-css' href='https://www.iswasandwillbe.com/wp-content/plugins/download-attachments/css/frontend.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-font-awesome-css' href='https://www.iswasandwillbe.com/wp-content/plugins/download-manager/assets/fontawesome/css/all.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-frontend-css-css' href='https://www.iswasandwillbe.com/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css' href='https://www.iswasandwillbe.com/wp-content/plugins/download-manager/assets/css/front.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-file-upload-style-css' href='https://www.iswasandwillbe.com/wp-content/plugins/wp-file-upload/css/wordpress_file_upload_style.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-file-upload-style-safe-css' href='https://www.iswasandwillbe.com/wp-content/plugins/wp-file-upload/css/wordpress_file_upload_style_safe.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-file-upload-adminbar-style-css' href='https://www.iswasandwillbe.com/wp-content/plugins/wp-file-upload/css/wordpress_file_upload_adminbarstyle.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-css-css' href='https://www.iswasandwillbe.com/wp-content/plugins/wp-file-upload/vendor/jquery/jquery-ui.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-timepicker-addon-css-css' href='https://www.iswasandwillbe.com/wp-content/plugins/wp-file-upload/vendor/jquery/jquery-ui-timepicker-addon.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/style.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief-child/style.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='carousel.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/carousel.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='cosmo-typography.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/cosmo-typography.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='cosmo-widgets.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/cosmo-widgets.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='fontello.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/fontello.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='foundation.min.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/foundation.min.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='frontend.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/frontend.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='ie.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/ie.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='landscape.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/landscape.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='portrait.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/portrait.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/prettyPhoto.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='shortcode.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/shortcode.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='style.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/style.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='zsmall.css-style-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/autoinclude/zsmall.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css' href='https://www.iswasandwillbe.com/wp-content/themes/belief/css/prettyPhoto.css?ver=0a7e0f425eafe7b37b84f662fbc28ff1' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/plugins/compact-wp-audio-player/js/soundmanager2-nodebug-jsmin.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="scap.soundmanager2-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/plugins/download-manager/assets/bootstrap/js/popper.min.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="wpdm-poper-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/plugins/download-manager/assets/bootstrap/js/bootstrap.min.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="wpdm-frontend-js-js"></script>
+<script type="text/javascript" id="wpdm-frontjs-js-extra">
+/* <![CDATA[ */
+var wpdm_url = {"home":"https:\/\/www.iswasandwillbe.com\/","site":"https:\/\/www.iswasandwillbe.com\/","ajax":"https:\/\/www.iswasandwillbe.com\/wp-admin\/admin-ajax.php"};
+var wpdm_js = {"spinner":"<i class=\"fas fa-sun fa-spin\"><\/i>","client_id":"b5d583b992ccc4be451bcb32c4d397e9"};
+var wpdm_strings = {"pass_var":"Password Verified!","pass_var_q":"Please click following button to start download.","start_dl":"Start Download"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/plugins/download-manager/assets/js/front.js?ver=3.2.83" id="wpdm-frontjs-js"></script>
+<script type="text/javascript" src="https://ssl.p.jwpcdn.com/6/12/jwplayer.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="jwplayer-js"></script>
+<!--[if lt IE 8]>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/json2.min.js?ver=2015-05-03" id="json2-js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/plugins/wp-file-upload/js/wordpress_file_upload_functions.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="wordpress_file_upload_script-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2" id="jquery-ui-datepicker-js"></script>
+<script type="text/javascript" id="jquery-ui-datepicker-js-after">
+/* <![CDATA[ */
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/plugins/wp-file-upload/vendor/jquery/jquery-ui-timepicker-addon.min.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="jquery-ui-timepicker-addon-js-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.isotope.min.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="newmasonry-js"></script>
+<link rel="https://api.w.org/" href="https://www.iswasandwillbe.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.iswasandwillbe.com/wp-json/wp/v2/posts/2024" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.iswasandwillbe.com/xmlrpc.php?rsd" />
+
+<link rel="canonical" href="https://www.iswasandwillbe.com/can-aionios-ever-mean-perpetual-or-eternal/" />
+<link rel='shortlink' href='https://www.iswasandwillbe.com/?p=2024' />
+<link rel="alternate" type="application/json+oembed" href="https://www.iswasandwillbe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.iswasandwillbe.com%2Fcan-aionios-ever-mean-perpetual-or-eternal%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.iswasandwillbe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.iswasandwillbe.com%2Fcan-aionios-ever-mean-perpetual-or-eternal%2F&#038;format=xml" />
+<style type="text/css">
+            a.wpdropbox-button { 
+              background: #2b92c2!important;
+              color: #ffffff!important;
+              padding: 8px 17px!important;
+              font-size: 16px!important;
+              border: 2px solid  #007aa6!important;
+              -webkit-border-radius: 5px!important;
+              border-radius: 5px!important;
+              display: inline-block;
+              text-decoration: none;
+              line-height:1!important;
+            }
+            a.wpdropbox-button:hover{
+              opacity:0.8;
+            }  
+       </style><script type="text/javascript">jwplayer.defaults = { "ph": 2 };</script><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.iswasandwillbe.com/?wordfence_lh=1&hid=BE260E6400F6E9E06EE8E5B0DE1F6E51');
+</script><script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/lib/php/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("https://www.iswasandwillbe.com/wp-content/themes/belief/lib/php/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"no",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+
+		<link href="https://www.iswasandwillbe.com/wp-content/themes/belief/videojs/videojs/video-js.min.css" rel="stylesheet" />
+		<script src="https://www.iswasandwillbe.com/wp-content/themes/belief/videojs/videojs/video.min.js"></script>		            <!--Custom CSS-->
+        <style type="text/css">
+                        /*            */
+            
+            h1, h2, h3, h4, h5, h6, .grid-view article.grid-elem > .entry-content > ul > li.entry-content-title h4,
+                    .team-view article.team-elem > .entry-content > ul > li.entry-content-title h4,
+                    .list-view .entry-content > ul > li.entry-content-title h4,
+                    .box-view article.box .entry-content ul > li.entry-content-title h4,
+                    .thumb-view div.entry-content ul > li.entry-content-title h4,
+                    .list-view .entry-content > ul > li.entry-content-title h4 {color:#3e7e92;}.content-title:after, .widget .widget-delimiter, #reply-title:after, #comments-title:after { border-left: 30px solid #3e7e92; }.post ul.entry-content-tag-list > li.entry-content-tag-elem a:before, .tabs-container > ul.entry-content-tag-list > li.entry-content-tag-elem a:before
+                    { border-right: 10px solid #3e7e92;}.post ul.entry-content-tag-list > li.entry-content-tag-elem a, .tabs-container > ul.entry-content-tag-list > li.entry-content-tag-elem a { background-color: #3e7e92;}article.post a{color:#0000FF;}.load-more-wrapper .load-more, 
+                    .pag ul li .page-numbers,
+                    .splitter li a.selected, .thumbs-splitter li a.selected,
+                    .tabment ul.tabment-tabs li a.active, 
+                    .header-slideshow-elem-content .slide-button, 
+                    .thumb-view div.entry-content ul>li.entry-content-category>ul.category-list>li a, 
+                    .list-view .entry-content>ul>li.entry-content-category>ul>li a, 
+                    .testimonials-view ul.testimonials-carousel-nav > li, 
+                    .widget ul.testimonials-carousel-nav > li, 
+                    .grid-view article.grid-elem > .entry-content > ul > li.entry-content-category > ul > li a, 
+                    .timeline-view .timeline-elem article.list-medium-image ul.timeline-elem-meta > li, 
+                    .team-view article .featimg .entry-content-category, 
+                    .team-view article.team-elem > .entry-content > ul > li.entry-content-category > ul > li a, 
+                    .post>.meta>ul.meta-list>li.meta-category>ul.meta-category-list>li>a,
+                    .single_carousel > .es-nav > li:hover,
+                    ul.related-tabs li, .carousel-wrapper ul.carousel-nav > li, .event-date-label
+                    { background-color: #3e7e92; color: #ffffff; }.timeline-view .timeline-elem article.list-medium-image{
+                        border-left: 3px solid #3e7e92;
+                    }.post .featimg .post-caption{
+                        border-left: 5px solid #3e7e92;
+                    }.splitter, .thumbs-splitter, ul.related-tabs {
+                        border-bottom: 1px solid #3e7e92;
+                    }.splitter li a, .thumbs-splitter li a, .tabment ul.tabment-tabs li a, .carousel-wrapper ul.carousel-nav > li:hover
+                    {
+                        background-color: #3e7e92;
+                        background-color: rgba(62,126,146, x0.7);
+                    }.fountainG{background-color: #3e7e92 !important;}input[type="submit"], button, input[type="button"], input[type="submit"]:hover, button:hover, input[type="button"]:hover{background-color: #3e7e92; color: #ffffff !important;}            
+
+h2.cosmo-acc-trigger { font-family: Arial!important;padding: 0;  margin: 2px 0 0 0; background: #fafafa; height: 39px ; line-height: 39px !important; font-size: 14px !important; border: 1px solid #efefef; text-shadow: 0 1px 0 #fff; -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;}
+h2.cosmo-acc-trigger a { color: #3e7e92; text-decoration: none; display: block; padding: 0 0 0 20px; margin: 0 0 0 20px; outline: none; background: url(../../lib/images/shortcodes/accordion.arrows.png) left 15px no-repeat; height: 30px;}
+
+.single-post p{
+font-size: 18px;
+}
+.post p{
+font-size: 18px;}
+
+.tabs-container, .tabs-container, .cosmo-toggle-container, .cosmo-acc-container{ color: #3e7e92; }
+
+.email {
+  border-left: 2px solid rgb(0, 0, 0);
+ margin:0 4em 1.6em 4em;
+padding-left:1.4em;
+padding-right:1.4em;
+  background-color: rgb(220,255,220);}
+
+blockquote { color: #0029a2; margin:0 4em 1.6em 4em; padding-left:1.4em; padding-right:1.4em; border-left:3px dashed #71a1b2; border-right:3px dashed #71a1b2; background-color:#f9f9f9;}
+
+.bibleverse {
+  color: #0029a2;
+margin:0 4em 1.6em 4em;
+padding-left:1.4em;
+padding-right:1.4em;
+  border-left:3px dashed #71a1b2;
+ border-right:3px dashed #71a1b2;
+  background-color:#f9f9f9;}
+.bibleverse6 p {
+  background-color:#f9f9f9;}
+
+.bibleverse2 {
+color:#0029a2;
+font-style: none;
+margin:0 4em 1.6em 4em;
+padding-left:1.4em;
+padding-right:1.4em;
+border-left:4px double #000;
+border-right:4px double #000;
+}
+
+.bibleverse3 {
+  color: navy;
+margin:0 4em 1.6em 4em;
+padding-left:1.4em;
+padding-right:1.4em;
+  border-left:3px dashed #d5bc8c;
+  background-color: rgb(220,255,220);}
+.bibleverse3 p {
+  background-color: rgb(220,255,220);}  
+
+.bibleverse4 {
+  color:#ffffff;
+margin:0 4em 1.6em 4em;
+padding-left:1.4em;
+padding-right:1.4em;
+ border:1px solid #111;
+background-color:#71a1b2;}
+.bibleverse4 p {    
+   background-color:#71a1b2;}
+
+.bibleverse5 {
+color:#144c5f;
+margin:0 4em 1.6em 4em;
+padding:1.4em 1.4em;
+border:1px solid #111;
+}
+.bibleverse6 {
+  color: navy;
+margin:0 4em 1.6em 4em;
+padding-left:1.4em;
+padding-right:1.4em;
+  border-left:3px dashed #71a1b2;
+ border-right:3px dashed #71a1b2;
+box-shadow: 1px 1px 1px #71a1b2;
+  background-color:#f9f9f9;}
+.bibleverse6 p {
+  background-color:#f9f9f9;
+}
+
+.or-spacer {
+    margin-top:100px;
+    margin-left:100px;
+    width:400px;
+    position:relative;
+}
+.or-spacer .mask {
+    overflow:hidden;
+    height:20px;
+}
+.or-spacer .mask:after {
+    content:'';
+    display:block;
+    margin:-25px auto 0;
+    width:100%;
+    height:25px;
+    border-radius:125px / 12px;
+    box-shadow:0 0 8px black;
+}
+.or-spacer span {
+    width:50px;
+    height:50px;
+    position:absolute;
+    bottom:100%;
+    margin-bottom:-25px;
+    left:50%;
+    margin-left:-25px;
+    border-radius:100%;
+    box-shadow:0 2px 4px #999;
+    background:white;
+}
+.or-spacer span i {
+    position:absolute;
+    top:4px;
+    bottom:4px;
+    left:4px;
+    right:4px;
+    border-radius:100%;
+    border:1px dashed #aaa;
+    text-align:center;
+    line-height:40px;
+    font-style:normal;
+    color:#999;
+}    
+
+            
+            /*set background color and text for header*/
+            header#header-container .header-container-wrapper{ 
+                background-color: rgba(62,126,146,  0.66) !important;                 color:#ffffff            }
+
+            .post-event .time-left, .time-left, .event-date-label { background-color: #3e7e92;  color:#ffffff; }
+
+            ul.header-slideshow-navigation > li.header-slideshow-navigation-elem.active {  background-color: #3e7e92; }
+
+            /*set background color and text for footer*/
+            footer#colophon .footer-styles { 
+                background-color: #2d2f34;
+                color: #ffffff;
+            }
+            .popular-tags ul.entry-content-tag-list > li.entry-content-tag-elem a:before { border-right: 10px solid ; }
+            .popular-tags ul.entry-content-tag-list > li.entry-content-tag-elem a { background-color: ; }
+
+        </style>
+
+        <style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://www.iswasandwillbe.com/wp-content/uploads/2013/07/clouds.png"); background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+</style>
+	<meta name="generator" content="WordPress Download Manager 3.2.83" />
+                <style>
+        /* WPDM Link Template Styles */        </style>
+                <style>
+
+            :root {
+                --color-primary: #4a8eff;
+                --color-primary-rgb: 74, 142, 255;
+                --color-primary-hover: #5998ff;
+                --color-primary-active: #3281ff;
+                --color-secondary: #6c757d;
+                --color-secondary-rgb: 108, 117, 125;
+                --color-secondary-hover: #6c757d;
+                --color-secondary-active: #6c757d;
+                --color-success: #018e11;
+                --color-success-rgb: 1, 142, 17;
+                --color-success-hover: #0aad01;
+                --color-success-active: #0c8c01;
+                --color-info: #2CA8FF;
+                --color-info-rgb: 44, 168, 255;
+                --color-info-hover: #2CA8FF;
+                --color-info-active: #2CA8FF;
+                --color-warning: #FFB236;
+                --color-warning-rgb: 255, 178, 54;
+                --color-warning-hover: #FFB236;
+                --color-warning-active: #FFB236;
+                --color-danger: #ff5062;
+                --color-danger-rgb: 255, 80, 98;
+                --color-danger-hover: #ff5062;
+                --color-danger-active: #ff5062;
+                --color-green: #30b570;
+                --color-blue: #0073ff;
+                --color-purple: #8557D3;
+                --color-red: #ff5062;
+                --color-muted: rgba(69, 89, 122, 0.6);
+                --wpdm-font: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+
+            .wpdm-download-link.btn.btn-primary {
+                border-radius: 4px;
+            }
+
+
+        </style>
+        </head>
+
+<body class="post-template-default single single-post postid-2024 single-format-standard custom-background" style="     ">
+   
+
+    
+    <div id="page" class="container ">
+        <div id="fb-root"></div>
+        <div class="relative row">
+                    </div>
+         
+        
+        
+        <header id="header-container">
+            <div class="row"><div class="twelve columns header-container-wrapper"><div class="row  "><div class="delimiter  twelve columns"><div style="" class="delimiter-type white_space margin_15px "></div></div></div><div class="row element"><div class="logo align-center nine columns">            <div class="align-top">
+                <a href="https://www.iswasandwillbe.com">
+                    <img src="https://www.iswasandwillbe.com/wp-content/uploads/2021/06/Logo_WhiteLetters_Trans.png" alt="" />
+                </a>
+            </div>
+            </div><div class="searchbar align-right three columns">            <div class="align-bottom">
+                <form id="searchform" method="get" action="https://www.iswasandwillbe.com/">
+                    <fieldset>
+                        <input type="text" onblur="if (this.value == '') {this.value = 'type something and click enter'}" onfocus="if (this.value == 'type something and click enter'){this.value = '';}" value="type something and click enter" id="keywords" name="s" class="input" />
+                        <input type="submit" value="Search" class="button" />
+                    </fieldset>
+                </form>
+            </div>
+        </div></div><div class="row element"><div class="menu align-center twelve columns"><nav class="main-menu cosmo-menu align-top"><ul id="menu-home" class="sf-menu"><li id="menu-item-892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-892  first"><a title="WELCOME" href="http://www.iswasandwillbe.com">HOME <span class="menu-description"> WELCOME</span></a></li>
+<li id="menu-item-721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-721 "><a title="START HERE" href="https://www.iswasandwillbe.com/essential-reading/">ESSENTIAL READING <span class="menu-description"> START HERE</span></a></li>
+<li id="menu-item-720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720 "><a title="BIBLE SERIES" href="https://www.iswasandwillbe.com/studies/">STUDIES <span class="menu-description"> BIBLE SERIES</span></a></li>
+<li id="menu-item-8692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8692 "><a title=" POSTS" href="https://www.iswasandwillbe.com/latest-posts/">LATEST <span class="menu-description">  POSTS</span></a></li>
+<li id="menu-item-1651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1651 "><a title="HAVE ?s" href="https://www.iswasandwillbe.com/frequently-asked-questions/">FAQs <span class="menu-description"> HAVE ?s</span></a>
+<ul class="children">
+	<li id="menu-item-7262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7262  no_description"><a href="https://www.iswasandwillbe.com/frequently-asked-questions/key-words-in-scripture/">KEY WORDS IN SCRIPTURE</a></li>
+</ul><div class="clear"></div>
+</li>
+<li id="menu-item-718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-718 "><a title="KEEP IN TOUCH" href="https://www.iswasandwillbe.com/fellowship/">FELLOWSHIP <span class="menu-description"> KEEP IN TOUCH</span></a>
+<ul class="children">
+	<li id="menu-item-6260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6260 "><a title="EMAIL FELLOWSHIP" href="https://www.iswasandwillbe.com/fellowship/iwwb-mailing-list/">IWWB MAILING LIST <span class="menu-description"> EMAIL FELLOWSHIP</span></a></li>
+	<li id="menu-item-1567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1567  no_description"><a href="http://www.iswasandwillbe.com/testimonial/">TESTIMONIALS</a></li>
+	<li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-725  no_description"><a href="https://www.iswasandwillbe.com/prayer-requests/">PRAYER REQUESTS</a></li>
+	<li id="menu-item-716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716 "><a title="TALENTS GIVEN" href="https://www.iswasandwillbe.com/the-gifts/">THE GIFTS – Music and Poetry <span class="menu-description"> TALENTS GIVEN</span></a></li>
+</ul><div class="clear"></div>
+</li>
+<li id="menu-item-1630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1630  no_description"><a href="https://www.iswasandwillbe.com/links/">LINKS</a>
+<ul class="children">
+	<li id="menu-item-1625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1625  no_description"><a href="http://4windkoinonia.wordpress.com/">IWWB in Afrikaans</a></li>
+	<li id="menu-item-1626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1626  no_description"><a href="https://www.youtube.com/user/MrGeorgelarry">Studies with Larry in Afrikaans</a></li>
+	<li id="menu-item-1627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1627  no_description"><a href="http://anthocul.wordpress.com/">Studies with Tony</a></li>
+	<li id="menu-item-1623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1623  no_description"><a href="http://www.iswasandwillbe.com/TOAInstall.msi">Download E-Sword &#8220;TOA&#8221;</a></li>
+	<li id="menu-item-1631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1631  no_description"><a href="http://www.e-sword.net/">Download E-Sword Bible Software</a></li>
+</ul><div class="clear"></div>
+</li>
+<li id="menu-item-1114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1114 "><a title="GET IN TOUCH" href="mailto:vinsmike@gmail.com;swcrook@gmail.com">CONTACT US <span class="menu-description"> GET IN TOUCH</span></a></li>
+</ul><div class="clear"></div></nav></div></div><div class="row element"><div class="breadcrumbs  twelve columns"><ul><li><a href="https://www.iswasandwillbe.com">Home</a> </li> <li class="icon-next"><a href="https://www.iswasandwillbe.com/category/faqs/">FAQs</a> </li><li class="icon-next">Can Aionios Ever Mean Perpetual or Eternal?</li></ul></div></div></div></div>        </header>
+
+<section id="main">
+
+    <div class="main-container">  
+        <div class="row">
+            <div class="twelve columns main-container-wrapper">      
+                                <div class="row element"><div class="  twelve columns"><article class="post  ">
+
+        <h3 class="post-title">
+        Can Aionios Ever Mean Perpetual or Eternal?    </h3>
+            <div class="meta">
+        
+                <ul class="meta-list">
+            <li class="meta-category">
+                <ul class="meta-category-list">
+                     <li><a href="https://www.iswasandwillbe.com/category/faqs/" class="">FAQs</a></li>                  </ul>
+            </li>
+        </ul>
+         
+
+                    <ul class="entry-content-meta-list">
+                                <li class="meta-details-author"><a href="https://www.iswasandwillbe.com/author/mvinson/"><span class="count"><i class="icon-author"></i>Mike Vinson</span></a></li>    
+                <li class="meta-details-date"><span class="meta_det"><i class="icon-date"></i>14 years ago  </span> </li>
+
+            </ul>
+         
+
+    </div> 
+    
+                        <div class="excerpt">
+                                
+                
+        <div class="pf-content"><div class="printfriendly pf-button pf-button-content pf-alignright"><a href="#" rel="nofollow" onClick="window.print(); return false;" title="Printer Friendly, PDF & Email"><img decoding="async" class="pf-button-img" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-button-nobg.png" alt="Print Friendly, PDF & Email" style="width: 112px;height: 24px;"  /></a></div><h3 align="center">Can Aionios Ever Mean Perpetual or Eternal?</h3>
+<h5 align="center">Updated October 2, 2023</h5>
+<p>Hey, Mike,</p>
+<p>Your site has really been a great tool for me in learning the nature and purpose for God and Life. Thanks so much. I was reading up on a bit of Greek words, and I came upon this website and saw this commentary on the words aion and the adjective form aionios.</p>
+<p>This does conflict a bit with your paper on &#8220;<em>What is Life Aionios</em>?&#8221;, but I would really like to hear what you think. I&#8217;ve copied the text below. God bless you Mike!</p>
+<p>M____</p></blockquote>
+<p>Hi M____,</p>
+<p>I am pleased to know you have benefited from the site.</p>
+<p style="text-align: justify;">Thank you for your question. You have sent me a link that disagrees with the letter entitled What Is Life Aonios? and you ask what I think of what he says. What I think is that this person is more of an historian than he is a student of the bible, the name of his website notwithstanding.</p>
+<p style="text-align: justify;">I could not help but notice that I was over three-quarters of the way down the page before I encountered the first and the last scripture which was:</p>
+<blockquote class="bibleverse"><p>Mat 25:46 Then they will go away to eternal punishment, but the righteous to eternal life.</p></blockquote>
+<p>The story of the laws of Sparta was very interesting, but it all amounted to human reasoning as opposed to allowing the scriptures to interpret themselves.</p>
+<p style="font-weight: 400;">Here are all the various English translations for the Greek <u>noun</u> G165, ‘<em>aion</em>’ in the King James Version of the New Testament:</p>
+<blockquote class="email"><p><strong>Total KJV Occurrences:</strong> 101<br />
+ages, 2<br />
+<u>Eph_2:7</u>; <u>Col_1:26</u></p>
+<p>began, 3<br />
+<u>Luk_1:70</u>; <u>Joh_9:32</u>; <u>Act_3:21</u></p>
+<p>course, 1<br />
+<u>Eph_2:2</u></p>
+<p>end, 2<br />
+<u>Eph_3:21</u>(2)</p>
+<p>eternal, 2<br />
+<u>Eph_3:11</u>; <u>1Ti_1:17</u></p>
+<p>ever, 44<br />
+<u>Gal_1:5</u>(2); <u>Php_4:20</u>(2); <u>1Ti_1:17</u>(2); <u>2Ti_4:18</u>(2); <u>Heb_1:8</u>(2); <u>Heb_7:24</u>; <u>Heb_13:21</u>(2); <u>1Pe_4:11</u>(2); <u>1Pe_5:11</u>(2); <u>Jud_1:25</u>; <u>Rev_1:6</u>(2); <u>Rev_4:9</u>(2); <u>Rev_4:10</u>(2); <u>Rev_5:13</u>(2); <u>Rev_5:14</u>(2); <u>Rev_7:12</u>(2); <u>Rev_10:6</u>(2); <u>Rev_11:15</u>(2); <u>Rev_14:11</u>(2); <u>Rev_15:7</u>(2); <u>Rev_19:3</u>(2); <u>Rev_20:10</u>(2); <u>Rev_22:5</u>(2)</p>
+<p>forever, 20<br />
+<u>Luk_1:33</u>; <u>Luk_1:55</u>; <u>Joh_12:34</u>; <u>Rom_1:25</u>; <u>Rom_9:5</u>; <u>Rom_11:36</u>; <u>Rom_16:27</u>; <u>2Co_9:9</u>; <u>Heb_5:6</u>; <u>Heb_6:20</u>; <u>Heb_7:17</u>; <u>Heb_7:21</u>; <u>Heb_13:8</u>; <u>1Pe_1:23</u>; <u>1Pe_1:25</u>; <u>2Pe_2:17</u>; <u>2Pe_3:18</u>; <u>1Jn_2:17</u>; <u>2Jn_1:2</u>; <u>Jud_1:13</u></p>
+<p>forevermore, 2<br />
+<u>2Co_11:31</u>; <u>Heb_7:28</u></p>
+<p>never, 2<br />
+<u>Joh_8:52</u>; <u>Joh_13:8</u></p>
+<p>standeth, 1<br />
+<u>1Co_8:13</u></p>
+<p>world, 20</p>
+<p><u>Mat_24:3</u>; <u>Act_15:18</u>; <u>Rom_12:2</u>; <u>1Co_1:20</u>; <u>1Co_2:6</u>(2); <u>1Co_2:7</u>; <u>1Co_2:8</u>; <u>1Co_3:18</u>; <u>1Co_10:11</u>; <u>2Co_4:4</u>; <u>Gal_1:4</u>; <u>Eph_1:21</u>; <u>Eph_3:9</u>; <u>Eph_6:12</u>; <u>1Ti_6:17</u>; <u>2Ti_4:10</u>; <u>Tit_2:12</u>; <u>Heb_6:5</u>; <u>Heb_9:26</u></p>
+<p>worlds, 2<br />
+<u>Heb_1:2</u>; <u>Heb_11:3</u></p></blockquote>
+<p style="font-weight: 400;">Here are all the various English translations for the Greek adjective, G166, ‘aionios’ in the King James Version of the New Testament:</p>
+<blockquote class="email"><p><strong>Total KJV Occurrences:</strong> 47</p>
+<p>began, 3<br />
+<u>Rom_16:25</u>; <u>2Ti_1:9</u>; <u>Tit_1:2</u></p>
+<p>eternal, 31<br />
+<u>Mat_19:16</u>; <u>Mar_10:17</u>; <u>Luk_10:25</u>; <u>Luk_18:18</u>; <u>Joh_6:68</u>; <u>Act_13:48</u>; <u>Rom_2:7</u>; <u>Rom_5:21</u>; <u>Rom_6:23</u>; <u>2Co_4:17</u>; <u>2Co_4:18</u>; <u>2Co_5:1</u>; <u>1Ti_6:12</u>; <u>1Ti_6:19</u>; <u>2Ti_2:10</u>; <u>Tit_1:2</u>; <u>Tit_3:7</u>; <u>Heb_5:9</u>; <u>Heb_6:2</u>; <u>Heb_9:12</u>; <u>Heb_9:14</u>; <u>Heb_9:15</u>; <u>1Pe_5:10</u>; <u>1Jn_1:2</u>; <u>1Jn_2:25</u>; <u>1Jn_3:15</u>; <u>1Jn_5:11</u>; <u>1Jn_5:13</u>; <u>1Jn_5:20</u>; <u>Jud_1:7</u>; <u>Jud_1:21</u></p>
+<p>everlasting, 12<br />
+<u>Joh_3:36</u>; <u>Act_13:46</u>; <u>Rom_6:22</u>; <u>Rom_16:26</u>; <u>Gal_6:8</u>; <u>2Th_1:9</u>; <u>2Th_2:16</u>; <u>1Ti_1:16</u>; <u>1Ti_6:16</u>; <u>Heb_13:20</u>; <u>2Pe_1:11</u>; <u>Rev_14:6</u></p>
+<p>forever, 1<br />
+<u>Phm_1:15</u></p></blockquote>
+<p style="font-weight: 400;">I will demonstrate with the scriptures below that this Greek noun, ‘aion’ and its Greek adjective, ‘aionios’ have both a beginning and an end… “What will be the sign of they coming and the END of the world” [Greek: G165, ‘aion’ (Mat 24:3) ‘Eternity’ has no “end”.] “We were called in Christ before the world [aion] began” [G165: ‘aion’ &#8211; ‘Eternity’ has no beginning]</p>
+<p>This man doesn&#8217;t take the time to discuss the fact that Christ refers to this life as &#8220;the dead.&#8221;</p>
+<blockquote class="bibleverse"><p>Mat 8:22  But Jesus said unto him, Follow me; and <strong>let the dead bury their dead.</strong></p></blockquote>
+<p style="text-align: justify;">Nor does he even consider that life aionios refers to being sealed with the spirit of life while in this aion, as opposed to receiving life in the lake of fire through aionios punishment. There are only two resurrections mentioned in scripture and Christ never revealed this while He was yet in the flesh. In fact just before His crucifixion He made it very clear that He had many things to reveal to His disciples but they were not yet capable of receiving those truths.</p>
+<blockquote class="bibleverse"><p>Joh 16:12  I have yet <span style="text-decoration: underline;"> <strong>many things</strong></span> to say unto you, <strong>but ye cannot bear them now.</strong></p></blockquote>
+<p style="text-align: justify;">It wasn&#8217;t just one or two things, it was &#8220;many things&#8221; which he later reveals through the epistles of Paul, Peter, James, John and Jude.</p>
+<p>This man is totally unaware of &#8220;the sum of thy word is truth” (Psa 119: 160 ASV).&#8221; He seems to think that history and human reasoning is where truth is to be found.</p>
+<p style="text-align: justify;">He does point out that an adjective is a word that describes a noun, but what he fails to point out is that his definition of the adjective &#8216;aionios&#8217; defies the laws of grammar which state that <span style="text-decoration: underline;">no</span> adjective can have a meaning greater than its derivative noun. Hourly refers to something that is concerned with an hour, daily with a day, weekly with a week, monthly with a month, yearly with a year, and aionios with and aion. You would never use the word hourly to describe a day, daily to describe a week, weekly to describe a month, etc., and you would never use the word aionios to talk about immortality.</p>
+<p style="text-align: justify;">In other words, it would make no sense at all to ever use an adjective to describe anything that is greater than it derivative noun, all the human reasoning to the contrary. It has no basis in scripture. That is the very reason you see so many scriptures used in that letter entitled <em>What Is Life Aionios</em>?&#8221; and so few scriptures used in his paper.</p>
+<p style="text-align: justify;">I hope this helps you to see the dire need to &#8220;let God be true and every man a liar.&#8221; God is His Word, and it is always &#8220;the sum of His word&#8221; that constitutes Truth. This paragraph is not based in scripture but it is based in unBiblical, fallacious and faulty human reasoning, which is full of self-contradictions.</p>
+<blockquote class="email"><p>Together, AIONIOS ZOE is Eternal Life, an unknown and unquantifiable duration of an immeasurable vast quality of life. Life perpetual. AIONIOS KOLASIS is Eternal Punishment, an unknown and unquantifiable duration of reformation and repentance. Since correction will end in Christ, and life begins in Christ, the duration of punishment will end, but the duration of life is perpetual.&#8221;</p></blockquote>
+<p style="text-align: justify;">It is not history or human reasoning that make up Truth. It is only <strong>the sum of the Word of God</strong>,</p>
+<blockquote class="bibleverse"><p>Joh 17:17  Sanctify them through thy truth: <strong>thy word is truth.</strong></p>
+<p>Psa 119:160 <span style="text-decoration: underline;"><strong>The sum of thy word is truth;</strong></span> And every one of thy righteous ordinances endureth for ever. (ESV)</p></blockquote>
+<p style="text-align: justify;">It is &#8220;Thy Word&#8221; which demonstrates for us that this word &#8216;<em>aion</em>&#8216; has both a beginning and and end. It is this writer who is guilty of the very thing he is condemning, and that is reinventing the definition of this word &#8216;aion.&#8217;</p>
+<blockquote class="bibleverse"><p>Mat 24:3  And as he sat upon the mount of Olives, the disciples came unto him privately, saying, Tell us, when shall these things be? and what shall be the sign of thy coming, and of <strong> <span style="text-decoration: underline;">the end</span> of the world [Greek: <em>aion</em>]?</strong></p>
+<p>2Ti 1:9  Who hath saved us, and called us with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in Christ Jesus <strong> <span style="text-decoration: underline;">before</span> the world began,</strong> [Greek, <strong> <span style="text-decoration: underline;">before</span></strong> &#8211; chronos aionios]</p></blockquote>
+<p style="text-align: justify;">Whatever this word means it has both a beginning and an end. Life aionios never means anything greater than its derivative noun. Life <em>aionios</em> has to do with receiving life (in downpayment form) while yet in this eon. <em>Aionios</em> life is only in downpayment form in this <em>aion</em>/eon, and while many may think they are partakers of life <em>aionios</em>, the truth is that it is very few who receive life aionios in downpayment form while yet in these vessels of clay in this eon.</p>
+<blockquote class="bibleverse"><p>Mat 22:14  For <strong>many are called, <span style="text-decoration: underline;">but</span></strong><strong> <span style="text-decoration: underline;">few</span> chosen.</strong></p>
+<p>Eph 1:13  In whom ye also trusted, after that ye heard the word of truth, the gospel of your salvation: in whom also after that ye believed, ye were sealed with that holy Spirit of promise,<br />
+Eph 1:14  <strong>Which is the earnest [ Greek, downpayment]</strong> of our inheritance <strong> <span style="text-decoration: underline;">until</span> the redemption of the purchased possession, unto the praise of his glory.</strong></p></blockquote>
+<p style="text-align: justify;">&#8220;The redemption of the purchased possession&#8221; is immortality at a resurrection from among the dead. This particular resurrection is that of those who received life in downpayment form while in this aion, &#8220;<strong> <span style="text-decoration: underline;">Until</span></strong> the redemption of the purchased possession.&#8221;</p>
+<p>Here is how the apostle John expresses this same message:</p>
+<blockquote class="bibleverse"><p>1Jn 3:2  Beloved, <strong> <span style="text-decoration: underline;">now</span> are we the sons of God</strong>, <strong>and <span style="text-decoration: underline;">it doth not yet appear what we shall be</span>: but we know that, when he shall appear, we shall be like him; for we shall see him as he is.</strong></p></blockquote>
+<p style="text-align: justify;">We are &#8220;now sons of God&#8221; because we have received life in downpayment form of receiving the spirit of God while yet in these aionian vessels of clay. &#8220;But it does not yet appear what we will be&#8230; until the redemption of the purchased possession.&#8221;</p>
+<p>I hope this helps to Biblically clarify the meaning of this word for you.</p>
+<p>God bless you as you seek to know His mind and His thoughts.</p>
+<blockquote class="bibleverse"><p>Joh 17:3  And <strong> <span style="text-decoration: underline;">this is life eternal</span></strong> [Greek: <em>zoe aionios</em>], <strong> <span style="text-decoration: underline;">that they might know thee</span> the only true God, and Jesus Christ, whom thou hast sent.</strong></p></blockquote>
+<p>&#8220;Zoe aionios&#8221; is &#8220;that they may know you&#8221; now. &#8220;<strong> <span style="text-decoration: underline;">Now</span></strong> are we the sons of God.&#8221; This word &#8216;<em>aionios</em>&#8216; biblically has <span style="text-decoration: underline;">nothing</span> to do with eternal or perpetual, as his paper purports.</p>
+<p>Your brother in Christ,</p>
+<p>Mike</p>
+</div><h3>Other related posts</h3><ul class="egs-posts">
+<li class="egs-posts-item"><a  class="egs-posts-item-title" href="https://www.iswasandwillbe.com/can-aionios-ever-mean-perpetual-or-eternal/" title="Can Aionios Ever Mean Perpetual or Eternal?">Can Aionios Ever Mean Perpetual or Eternal?</a><span class="egs-posts-item-date"> (November 18, 2009)</span></li>
+<li class="egs-posts-item"><a  class="egs-posts-item-title" href="https://www.iswasandwillbe.com/biblical-words/" title="Biblical Words">Biblical Words</a><span class="egs-posts-item-date"> (June 16, 2009)</span></li>
+</ul>
+
+
+
+
+
+        
+                        
+    </div>
+         
+
+    <div class="row"> 
+            <div class="twelve columns">
+            <ul class="entry-content-tag-list">
+                    <li class="entry-content-tag-elem"><a href="https://www.iswasandwillbe.com/tag/biblical/" rel="tag">Biblical</a></li> <li class="entry-content-tag-elem"><a href="https://www.iswasandwillbe.com/tag/eternal-lifeeternity/" rel="tag">Eternal Life/Eternity</a></li> <li class="entry-content-tag-elem"><a href="https://www.iswasandwillbe.com/tag/liar/" rel="tag">Liar</a></li> <li class="entry-content-tag-elem"><a href="https://www.iswasandwillbe.com/tag/life/" rel="tag">Life</a></li> <li class="entry-content-tag-elem"><a href="https://www.iswasandwillbe.com/tag/sum/" rel="tag">Sum</a></li>                     
+            </ul>
+        </div>
+               
+     
+    </div>
+</article>
+
+</div></div>            </div>
+        </div>
+    </div>
+</section>    
+ 
+        <!-- footer -->
+        <footer id="colophon" role="contentinfo" data-role="footer" data-position="fixed" data-fullscreen="true">
+            <div class="row">
+                <div class="footer-styles">
+                    <div class="row  "><div class="delimiter  twelve columns"><div style="" class="delimiter-type white_space margin_30px "></div></div></div><div class="row element"><div class="widget_zone  three columns"></div><div class="widget_zone  three columns"></div><div class="widget_zone  three columns"></div><div class="widget_zone  three columns"></div></div><div class="row  "><div class="delimiter  twelve columns"><div style="border-top: 1px solid #272a32;" class="delimiter-type line margin_30px "></div></div></div><div class="row element"><div class="copyright align-left six columns">            <p class="copyright"></p>
+        </div><div class="socialicons align-right six columns"><ul class="cosmo-social">                    <li><a href="https://www.iswasandwillbe.com/feed/" class="rss hover-menu"><i class="icon-rss"></i></a></li>
+            </ul></div></div>                </div>
+            </div>
+        </footer>
+        <!-- eof footer-->
+
+    </div>
+    
+    
+    <div class="overlay">&nbsp;</div>
+            <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        <script type="text/javascript">
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+    
+    <script type="text/javascript">
+
+        var cookies_prefix = "belief";  
+        var themeurl = "https://www.iswasandwillbe.com/wp-content/themes/belief";
+        jQuery( function(){
+            jQuery( '.demo-tooltip' ).tour();
+        });
+
+    </script>
+        
+<!-- WP Audio player plugin v1.9.9 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = 'https://www.iswasandwillbe.com/wp-content/plugins/compact-wp-audio-player/swf/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+    stop_all_tracks();                soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+                <script>
+                jQuery(function($){
+
+                    
+                });
+            </script>
+            <div id="fb-root"></div>
+                 <script type="text/javascript" id="pf_script">
+                      var pfHeaderImgUrl = '';
+          var pfHeaderTagline = '';
+          var pfdisableClickToDel = '0';
+          var pfImagesSize = 'remove-images';
+          var pfImageDisplayStyle = 'right';
+          var pfEncodeImages = '0';
+          var pfShowHiddenContent  = '0';
+          var pfDisableEmail = '0';
+          var pfDisablePDF = '0';
+          var pfDisablePrint = '0';
+
+            
+          var pfPlatform = 'WordPress';
+
+        (function($){
+            $(document).ready(function(){
+                if($('.pf-button-content').length === 0){
+                    $('style#pf-excerpt-styles').remove();
+                }
+            });
+        })(jQuery);
+        </script>
+      <script defer src='https://cdn.printfriendly.com/printfriendly.js'></script>
+            
+            <script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/jquery/jquery.form.min.js?ver=4.3.0" id="jquery-form-js"></script>
+<script type="text/javascript" id="page-scroll-to-id-plugin-script-js-extra">
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[rel='m_PageScroll2id']","autoSelectorMenuLinks":"false","excludeSelector":"a[href^='#tab-'], a[href^='#tabs-'], a[data-toggle]:not([data-toggle='tooltip']), a[data-slide], a[data-vc-tabs], a[data-vc-accordion]","scrollSpeed":1300,"autoScrollSpeed":"true","scrollEasing":"easeInOutExpo","scrollingEasing":"easeInOutCirc","forceScrollEasing":"false","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","autoCorrectScrollExtend":"false","layout":"vertical","offset":0,"dummyOffset":"false","highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"false","scrollToHashForAll":"false","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","unbindUnrelatedClickEventsSelector":"","normalizeAnchorPointTargets":"false","encodeLinks":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js?ver=1.7.8" id="page-scroll-to-id-plugin-script-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.2" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.2" id="jquery-ui-slider-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.superfish.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="superfish-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.supersubs.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="supersubs-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/tour.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="tour-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.tabs.pack.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="tabs-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.scrollTo-1.4.2-min.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="scrollto-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.elastislide.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="elastislide-js"></script>
+<script type="text/javascript" id="functions-js-extra">
+/* <![CDATA[ */
+var prettyPhoto_enb = {"enb_lightbox":"1"};
+var login_localize = {"check_email":"Please check your email"};
+var mobile_menu_title = {"mobile_menu_title":"Navigate to..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/functions.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="functions-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.cookie.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="jquery-cookie-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.prettyPhoto.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="prettyPhoto-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.easing.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="easing-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.jscroll.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="jscroll-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/js/jquery.waitforimages.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="waitforimages-js"></script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-includes/js/comment-reply.min.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="actions-js-extra">
+/* <![CDATA[ */
+var MyAjax = {"ajaxurl":"https:\/\/www.iswasandwillbe.com\/wp-admin\/admin-ajax.php","wpargs":{"wpargs":{"page":"","name":"can-aionios-ever-mean-perpetual-or-eternal"}},"getMoreNonce":"2f103bb03d"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.iswasandwillbe.com/wp-content/themes/belief/lib/js/actions.js?ver=0a7e0f425eafe7b37b84f662fbc28ff1" id="actions-js"></script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+           document.querySelectorAll("ul.nav-menu").forEach(
+               ulist => { 
+                    if (ulist.querySelectorAll("li").length == 0) {
+                        ulist.style.display = "none";
+
+                                            } 
+                }
+           );
+            /* ]]> */
+        </script>
+            </body> 
+</html>
+<!--Generated by Endurance Page Cache-->

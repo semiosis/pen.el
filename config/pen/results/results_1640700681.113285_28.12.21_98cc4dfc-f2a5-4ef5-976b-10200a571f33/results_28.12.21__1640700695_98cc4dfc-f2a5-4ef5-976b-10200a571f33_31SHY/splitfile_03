@@ -1,0 +1,19 @@
+- 1. Spinoza (1632-1677)
+- 2. Rand (1900-1982)
+- 3. Wittgenstein (1889-1951)
+- 4. James (1842-1910)
+"""
+
+
+def test_streamer():
+    streamer = Streamer(text)
+
+    for doc in streamer.documents:
+        assert doc is not None
+
+    assert 4 == len(list(streamer.documents))
+
+    for topic in streamer.topics:
+        assert topic is not None
+
+    assert 5 == len(list(streamer.topics))

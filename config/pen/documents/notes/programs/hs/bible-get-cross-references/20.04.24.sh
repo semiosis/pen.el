@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "bible-get-cross-references" "-olol" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/src;  "bible-get-cross-references" "-olol" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs;  "bible-get-cross-references" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs;  "bible-get-cross-references" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "bible-get-cross-references" "#" "<==" "in-pen"

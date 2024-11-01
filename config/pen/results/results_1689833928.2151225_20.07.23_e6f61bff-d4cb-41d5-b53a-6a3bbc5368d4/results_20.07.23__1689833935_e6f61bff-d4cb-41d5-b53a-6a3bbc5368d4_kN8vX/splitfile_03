@@ -1,0 +1,17 @@
+"sort" is a standard library function.
+
+The "sort" function sorts the elements of a list.
+
+The first argument is a list of things to sort.
+
+The second argument is the sorting function.
+
+The third argument is the comparison function.
+
+The fourth argument is the list to sort.
+
+The fifth argument is the number of elements to sort.
+
+The sixth argument is the list to sort.
+
+The seventh argument is the number of elements to sort.

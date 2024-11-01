@@ -1,0 +1,23 @@
+ (T.pack . T.unpack) columns
+
+  -- Print the sum of all the numbers in the CSV file.
+  print $ sum numbers
+EOD
+
+# haskell file with a main function
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.IO as TIO
+import Data.Text.Encoding (decodeUtf8)
+import Control.Monad (forM_)
+import Control.Monad.State (get, put)
+import Control.Monad.State.Strict (getStrict, putStrict)
+
+  -- Read the CSV from stdin and decode it into a list of lines.
+  -- We use the Lazy version of ByteString

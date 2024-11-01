@@ -1,0 +1,5 @@
+(mapcat (fn [x] (list (first x) (second x)))
+        (group-by (fn [x] (first x))
+                  (mapcat (fn [x] (list (first x) (second x)))
+                          (group-by (fn [x] (first x))
+                                    (mapcat (fn [x

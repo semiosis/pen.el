@@ -1,0 +1,45 @@
+Bloom Filter
+    Test whether an element is a member of a
+    set.
+    
+    False positive matches are possible, but
+    false negatives are not – in other words,
+    a query returns either "possibly in set"
+    or "definitely not in set".
+    
+    Elements can be added to the set, but not
+    removed (though this can be addressed with
+    a "counting" filter); the more elements
+    that are added to the set, the larger the
+    probability of false positives.
+
+Cuckoo Filter
+    As opposed to a bloom filter gives us the
+    possibility to not only store items but
+    also delete them from the filter without
+    sacrificing the performance for set
+    membership tests that we get from a
+    traditional Bloom Filter.
+    
+    In addition, a cuckoo filter that stores
+    many items and targets a low false-
+    positive rate will have a lower space
+    overhead than space-optimized bloom
+    filters.
+
+    Why would you want to choose a cuckoo
+    filter over a bloom filter?
+    - They support adding / removing items
+      dynamically.
+    - Higher lookup performance, even when 95%
+      space is utilized.
+    - Easier to implement than alternatives.
+    - Less space used than bloom filters in
+      *most* cases.
+
+    Similarly as with the bloom filter, you
+    can not retrieve what data was inserted.
+    
+    A cuckoo filter will only store a hash
+    (fingerprint) of the item that is being
+    inserted rather than the item itself.

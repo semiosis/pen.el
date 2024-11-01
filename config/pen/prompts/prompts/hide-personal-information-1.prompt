@@ -1,0 +1,40 @@
+task: "Hide personal information"
+doc: "Given a document with personal information, replace with random info instead"
+tags: security web prose
+prompt-version: 1
+prompt: |+
+    # A file with sensitive information
+    cat data.txt <<EOD
+    Here is my name and email: Liza Honyeza-Fresser, liza-honyeza-fresser@gmail.com.
+    EOD
+
+    # The exact same data file but with different private details
+    # Randomly generated name: Nicole Hodge
+    cat data-fake.txt <<EOD
+    Here is my name and email: Nicole Hodge, loxaj24209@mom2kid.com.
+    EOD
+
+    # A file with sensitive information
+    cat data.txt <<EOD
+    <data>
+    EOD
+
+    # The exact same data file but with different and fake private details
+    cat fake-data.txt <<EOD
+engine: "OpenAI Codex"
+temperature: 0.5
+max-generated-tokens: "prompt-length"
+stop-sequences:
+- "EOD"
+top-p: 1.0
+cache: on
+vars:
+- "data"
+examples:
+- "Liza Honyeza-Fresser, liza-honyeza-fresser@gmail.com"
+external-related:
+- "https://www.name-generator.org.uk/"
+- "https://temp-mail.org/en/"
+filter: yes
+completion: no
+insertion: no

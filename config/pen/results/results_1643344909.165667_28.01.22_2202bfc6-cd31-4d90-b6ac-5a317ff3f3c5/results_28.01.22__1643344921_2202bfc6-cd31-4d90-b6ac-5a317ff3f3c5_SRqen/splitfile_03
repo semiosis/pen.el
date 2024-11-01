@@ -1,0 +1,9 @@
+"async/alt!"
+async/alt!
+  "async/alt! takes a collection of channels and an async task. 
+  It will perform the task on each channel in order, and put the result
+  on the channel that follows.
+  The result of the final channel will be returned."
+  [channels task]
+  (let [result (async/alt! channels (fn [c]
+                                       (async/put! c (task

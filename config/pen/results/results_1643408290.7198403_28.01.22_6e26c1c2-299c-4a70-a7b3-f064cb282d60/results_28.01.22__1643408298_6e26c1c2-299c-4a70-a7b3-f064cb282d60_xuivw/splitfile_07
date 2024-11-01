@@ -1,0 +1,13 @@
+cd stop-reason.txt
+» ls
+ stop-reason.txt
+» cd ..
+» cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt~  harry2.txt  harry3.txt  harry4.txt
+» cd ..
+» cd core
+» ls
+ core.sh  core.sh~  core2.sh  core3.sh  core4.sh
+» cd ..
+

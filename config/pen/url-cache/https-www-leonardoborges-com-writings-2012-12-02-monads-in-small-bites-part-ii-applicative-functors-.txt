@@ -1,0 +1,585 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 9961
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 21 Feb 2021 00:01:02 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"6031a2be-acd2"
+expires: Mon, 28 Oct 2024 10:31:59 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: FDFC:243DF1:9EFC04:A709AD:671F65C6
+Accept-Ranges: bytes
+Date: Mon, 28 Oct 2024 10:22:02 GMT
+Via: 1.1 varnish
+Age: 3
+X-Served-By: cache-akl10334-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1730110923.698063,VS0,VE2
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 45b30a4a1d45951b6341b2ee08a87474802287e1
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leonardo Borges  | Monads in small bites - Part II - Applicative Functors</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.67.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    
+
+    
+    
+    <meta property="og:title" content="Monads in small bites - Part II - Applicative Functors" />
+<meta property="og:description" content="This is Part II of my Monads tutorial. Make sure you read the previous parts:
+  Part I - Functors
+  Part II - Applicative Functors (this post)
+  Part III - Monoids
+  Part IV - Monads
+  Applicative Functors In Part I I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are wrapped inside a Functor - we used fmap for that." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/" />
+<meta property="article:published_time" content="2012-12-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2012-12-02T00:00:00+00:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
+<meta itemprop="name" content="Monads in small bites - Part II - Applicative Functors">
+<meta itemprop="description" content="This is Part II of my Monads tutorial. Make sure you read the previous parts:
+  Part I - Functors
+  Part II - Applicative Functors (this post)
+  Part III - Monoids
+  Part IV - Monads
+  Applicative Functors In Part I I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are wrapped inside a Functor - we used fmap for that.">
+<meta itemprop="datePublished" content="2012-12-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2012-12-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1440">
+
+
+
+<meta itemprop="keywords" content="clojure,functional-programming,haskell," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Monads in small bites - Part II - Applicative Functors"/>
+<meta name="twitter:description" content="This is Part II of my Monads tutorial. Make sure you read the previous parts:
+  Part I - Functors
+  Part II - Applicative Functors (this post)
+  Part III - Monoids
+  Part IV - Monads
+  Applicative Functors In Part I I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are wrapped inside a Functor - we used fmap for that."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+<header>
+    <div class="bg-black">
+        <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://leonardoborges.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Leonardo Borges
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/books/" title="Books page">
+              Books
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/writings/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/talks/" title="Projects &amp; Talks page">
+              Projects &amp; Talks
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/tags/" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+<a href="https://stackoverflow.com/users/910811/leonardoborges" target="_blank" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Stack Overflow link" rel="noopener" aria-label="follow on Stack Overflow——Opens in a new window">
+  <svg height="32px" 
+    style="enable-background:new 0 0 67 67;"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="32px"
+>
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.869 5.903l3.114 4.567-.975.665-3.115-4.567.976-.665zm-2.812 2.585l4.84 2.838-.6 1.017-4.842-2.838.602-1.017zm-1.276 2.724l5.413 1.521-.291 1.077-5.428-1.458.306-1.14zm-.588 2.461l5.687.569-.103 1.12-5.691-.513.107-1.176zm-.169 2.16h5.835v1.167h-5.835v-1.167zm7.976 3.167h-10v-6h1v5h8v-5h1v6zm.195-8.602l-.945-5.446 1.162-.202.947 5.446-1.164.202z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://twitter.com/theleoborges" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/theleoborges/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/theleoborges" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-2811271-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        WRITINGS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&amp;text=Monads%20in%20small%20bites%20-%20Part%20II%20-%20Applicative%20Functors" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&amp;title=Monads%20in%20small%20bites%20-%20Part%20II%20-%20Applicative%20Functors" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Monads in small bites - Part II - Applicative Functors</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2012-12-02T00:00:00Z">December 2, 2012</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This is Part II of my Monads tutorial. Make sure you read the previous parts:</p>
+<ul>
+<li>
+<p><a href="/2012/11/30/monads-in-small-bites-part-i-functors/">Part I   - Functors</a></p>
+</li>
+<li>
+<p>Part II  - Applicative Functors (this post)</p>
+</li>
+<li>
+<p><a href="/2012/12/05/monads-in-small-bites-part-iii-monoids/">Part III - Monoids</a></p>
+</li>
+<li>
+<p><a href="/2012/12/08/monads-in-small-bites-part-iv-monads/">Part IV  - Monads</a></p>
+</li>
+</ul>
+<h3 id="applicative-functors">Applicative Functors</h3>
+<p>In <a href="/2012/11/30/monads-in-small-bites-part-i-functors/">Part I</a> I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are <em>wrapped</em> inside a Functor - we used <code>fmap</code> for that. You might want to <a href="/2012/11/30/monads-in-small-bites-part-i-functors/">skim through it</a> again as a refresher.</p>
+<p>Now suppose you have Functors that <em>wrap</em> functions and that you want to apply those <em>wrapped</em> functions to other Functors, maybe even composing new functions on the way!</p>
+<p>What then?</p>
+<p>Well you&rsquo;re in luck! Applicative Functors do just that! They&rsquo;re <strong>Functors on steroids</strong>.</p>
+<p>Here&rsquo;s how Haskell defines the Applicative data type:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">class</span> (<span style="color:#66d9ef">Functor</span> f) <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">Applicative</span> f <span style="color:#66d9ef">where</span>
+    pure <span style="color:#f92672">::</span> a <span style="color:#f92672">-&gt;</span> f a
+    (<span style="color:#f92672">&lt;*&gt;</span>) <span style="color:#f92672">::</span> f (a <span style="color:#f92672">-&gt;</span> b) <span style="color:#f92672">-&gt;</span> f a <span style="color:#f92672">-&gt;</span> f b
+</code></pre></div><p>Based on our previous knowledge of Haskell&rsquo;s type signatures, we can infer from this definition that in order for it to be an Applicative Functor, <code>f</code> <em>must</em> already be a Functor.</p>
+<p>Let&rsquo;s break this down and have a closer look at the two new functions this type introduces:</p>
+<blockquote>
+<p><strong>pure</strong> is a function that takes a value <code>a</code> and <em>wraps</em> it into a minimal Functor <code>f</code>.</p>
+</blockquote>
+<blockquote>
+<p><strong>&lt;*&gt;</strong> is a function that takes two arguments: the first is a Functor <code>f</code> that wraps a function of type <code>a -&gt; b</code>. The second argument is a Functor <code>f</code> that wraps a value - which could be a function! - of type <code>a</code>. The final result is a Functor <code>f</code> that wraps some value of type <code>b</code> - which was obtained by somehow applying the function <code>(a -&gt; b)</code> to the Functor <code>f a</code>.</p>
+</blockquote>
+<p><code>pure</code> has a straightforward explanation whereas <code>&lt;*&gt;</code> is a bit more involved.</p>
+<p>To clear things up, I&rsquo;ll show the type signatures again but this time as if they only worked with the List Functor that we&rsquo;ve been working on:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">pure</span> <span style="color:#f92672">::</span> a <span style="color:#f92672">-&gt;</span> [a]
+(<span style="color:#f92672">&lt;*&gt;</span>) <span style="color:#f92672">::</span> [(a <span style="color:#f92672">-&gt;</span> b)] <span style="color:#f92672">-&gt;</span> [a] <span style="color:#f92672">-&gt;</span> [b]
+</code></pre></div><p>Let&rsquo;s revisit those definitions:</p>
+<blockquote>
+<p><strong>pure</strong> is a function that takes a value <code>a</code> and <em>puts</em> it into an empty list, returning the resulting single element list.</p>
+</blockquote>
+<blockquote>
+<p><strong>&lt;*&gt;</strong> is a function that takes two arguments: the first is a list containing one or more functions of type <code>a -&gt; b</code>. The second argument is a list of one or more values - or functions! - of type <code>a</code>. The final result is a list of one or more values of type <code>b</code> - which was obtained by somehow applying the function <code>(a -&gt; b)</code> to the Functor <code>f a</code>.</p>
+</blockquote>
+<p>Enough definitions though! Let&rsquo;s extend our List Functor and make it an Applicative as well.</p>
+<p>While we&rsquo;ll still be using the List Functor we implemented in <a href="/2012/11/30/monads-in-small-bites-part-i-functors/">Part I</a>, this time I&rsquo;ll implement its Applicative version using <a href="http://clojure.org/multimethods">multimethods</a> for a change.  Here&rsquo;s the code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#75715e">;; it dispatches on the record type since we could have implementations of pure for List, Maybe, Either etc...</span>
+(<span style="color:#66d9ef">defmulti </span>pure (<span style="color:#66d9ef">fn </span>[f _] f)) 
+(<span style="color:#66d9ef">defmethod </span>pure List [_ v] 
+    <span style="color:#e6db74">&#34;Wraps value v in a list&#34;</span>
+    (<span style="color:#a6e22e">List.</span> [v]))
+
+<span style="color:#75715e">;; it dispatches on the class of the Functor instance passed in the 1st argument</span>
+(<span style="color:#66d9ef">defmulti </span>&lt;*&gt; (<span style="color:#66d9ef">fn </span>[fs _] (class fs))) 
+(<span style="color:#66d9ef">defmethod </span>&lt;*&gt; List [fs xs] 
+    <span style="color:#e6db74">&#34;Unwraps the functions in fs, applies them to the Functors in xs, wrapping the result at the end&#34;</span>
+    (<span style="color:#a6e22e">List.</span> (for [f (<span style="color:#e6db74">:wrapped</span> fs)
+                 x (<span style="color:#e6db74">:wrapped</span> xs)]
+                (<span style="color:#a6e22e">f</span> x))))
+</code></pre></div><p>By focusing on the List as an Applicative Functor we can more easily understand what these functions do. From the code above, <code>pure</code>'s job is a simple one: all it does is <em>wrap</em> it&rsquo;s argument <code>v</code> into a minimal List functor which in our case means a Functor wrapping a one element list.</p>
+<p><code>&lt;*&gt;</code> on the other hand is responsible for somehow unwrapping the functions brought in by the Applicatives in <code>fs</code> and applying them to the [Applicative] Functors in <code>xs</code>. It does that by using <a href="http://clojuredocs.org/clojure_core/clojure.core/for">list comprehensions</a> and <em>wraps</em> the result into a new List Functor.</p>
+<p>Study this code carefully. It <em>can</em> be tricky.</p>
+<blockquote>
+<p><strong>Note</strong>: When I first encountered <strong>&lt;*&gt;</strong> I had no idea what this function was called. I asked the twittersphere and it seems it&rsquo;s called <code>apply</code>. In the process of figuring this out I was enlightened <a href="https://twitter.com/leonardo_borges/status/267777875367841792">by this conversation</a>. It turns out <code>&lt;*&gt;</code> has several names. Can you guess which one is my favorite? :)</p>
+</blockquote>
+<p>With the Applicative functions defined for our List, let&rsquo;s take it for a spin:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>fs (<span style="color:#a6e22e">List.</span> [<span style="color:#f92672">#</span>(* <span style="color:#ae81ff">2</span> %) <span style="color:#f92672">#</span>(+ <span style="color:#ae81ff">10</span> %)]))
+(<span style="color:#66d9ef">def </span>xs (<span style="color:#a6e22e">List.</span> [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>]))
+
+(<span style="color:#a6e22e">&lt;*&gt;</span> fs xs) <span style="color:#75715e">;; List{:wrapped (2 4 6 11 12 13)}</span>
+
+
+(<span style="color:#66d9ef">def </span>g (<span style="color:#a6e22e">pure</span> List <span style="color:#f92672">#</span>(* <span style="color:#ae81ff">50</span> %)))
+(<span style="color:#a6e22e">&lt;*&gt;</span> g xs) <span style="color:#75715e">;; List{:wrapped (50 100 150)}</span>
+</code></pre></div><p>There should have been no surprises here. Read the code again and make sure it&rsquo;s all fresh before moving along.</p>
+<h3 id="dont-break-the-law">Don&rsquo;t break the law</h3>
+<p>Just as Functors, Applicative Functors also need to obey some laws:</p>
+<h4 id="identity">Identity</h4>
+<blockquote>
+<p>Feeding a function <code>f</code> to <code>pure</code> and applying the resulting Applicative to the Functor <code>v</code> should be the same as directly mapping <code>f</code> over the Functor <code>v</code></p>
+</blockquote>
+<p>In Haskell speak:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">pure</span> f <span style="color:#f92672">&lt;*&gt;</span> v <span style="color:#f92672">=</span> fmap f v
+</code></pre></div><p>And this is the proof, in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>f <span style="color:#f92672">#</span>(+ <span style="color:#ae81ff">2</span> %))
+(<span style="color:#66d9ef">def </span>v (<span style="color:#a6e22e">List.</span> [<span style="color:#ae81ff">10</span>]))
+
+<span style="color:#75715e">;; given the above, this...</span>
+(<span style="color:#a6e22e">&lt;*&gt;</span> (<span style="color:#a6e22e">pure</span> List f) v) <span style="color:#75715e">;; List{:wrapped (12)}</span>
+
+
+<span style="color:#75715e">;; ...is the same as:</span>
+(<span style="color:#a6e22e">fmap</span> v f) <span style="color:#75715e">;; List{:wrapped (12)}</span>
+
+</code></pre></div><h4 id="composition">Composition</h4>
+<blockquote>
+<p>The result of <em>applying</em> an Applicative Functor that yields the <strong>function composition</strong> operator to the Applicative <code>u</code>, then apply the resulting Functor to <code>v</code> and finally applying that result to the final Applicative <code>w</code> should be the same as <em>applying</em> <code>v</code> to <code>w</code> and then <em>applying</em> <code>u</code> to the resulting <em>Applicative</em>.</p>
+</blockquote>
+<p>That was a mouthful! Let&rsquo;s see how Haskell tells this story:</p>
+<p>In Haskell:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">pure</span> (<span style="color:#f92672">.</span>) <span style="color:#f92672">&lt;*&gt;</span> u <span style="color:#f92672">&lt;*&gt;</span> v <span style="color:#f92672">&lt;*&gt;</span> w <span style="color:#f92672">=</span> u <span style="color:#f92672">&lt;*&gt;</span> (v <span style="color:#f92672">&lt;*&gt;</span> w)
+</code></pre></div><p>I needed to cheat a bit in Clojure to prove this law since functions are not <a href="http://www.haskell.org/haskellwiki/Currying">curried by default like they are in Haskell</a>. But this code should still clearly show how this law holds:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>u (<span style="color:#a6e22e">List.</span> [<span style="color:#f92672">#</span>(* <span style="color:#ae81ff">2</span> %)]))
+(<span style="color:#66d9ef">def </span>v (<span style="color:#a6e22e">List.</span> [<span style="color:#f92672">#</span>(+ <span style="color:#ae81ff">10</span> %)]))
+(<span style="color:#66d9ef">def </span>w (<span style="color:#a6e22e">List.</span> [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>]))
+
+<span style="color:#75715e">;; Given the above, this...</span>
+(-&gt; (<span style="color:#a6e22e">pure</span> List (<span style="color:#66d9ef">fn </span>[x] (partial comp x))) 
+  (<span style="color:#a6e22e">&lt;*&gt;</span> u)
+  (<span style="color:#a6e22e">&lt;*&gt;</span> v)
+  (<span style="color:#a6e22e">&lt;*&gt;</span> w)) <span style="color:#75715e">;; List{:wrapped (22 24 26)}</span>
+
+<span style="color:#75715e">;; ...is the same as:</span>
+(<span style="color:#a6e22e">&lt;*&gt;</span> u (<span style="color:#a6e22e">&lt;*&gt;</span> v w)) <span style="color:#75715e">;; List{:wrapped (22 24 26)}</span>
+</code></pre></div><h4 id="homomorphism">Homomorphism</h4>
+<blockquote>
+<p>The result of applying the <code>pure</code> value of <code>f</code> to the <code>pure</code> value of <code>x</code> should be the same as applying <code>f</code> directly to <code>x</code> and then feeding that into <code>pure</code>.</p>
+</blockquote>
+<p>In Haskell:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">pure</span> f <span style="color:#f92672">&lt;*&gt;</span> pure x <span style="color:#f92672">=</span> pure (f x)
+</code></pre></div><p>And in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>f <span style="color:#f92672">#</span>(* <span style="color:#ae81ff">2</span> %))
+(<span style="color:#66d9ef">def </span>x <span style="color:#ae81ff">10</span>)
+
+<span style="color:#75715e">;; given the above, this...</span>
+(-&gt; (<span style="color:#a6e22e">pure</span> List f) 
+  (<span style="color:#a6e22e">&lt;*&gt;</span> (<span style="color:#a6e22e">pure</span> List x))) <span style="color:#75715e">;; List{:wrapped (20)}</span>
+
+<span style="color:#75715e">;; ...is the same as:</span>
+(<span style="color:#a6e22e">pure</span> List (<span style="color:#a6e22e">f</span> x)) <span style="color:#75715e">;; List{:wrapped (20)}</span>
+</code></pre></div><h4 id="interchange">Interchange</h4>
+<blockquote>
+<p>The result of applying an Applicative Functor <code>u</code> to the <code>pure</code> value of <code>y</code> should be the same as taking the Applicative obtained by calling <code>pure</code> with a function that applies its argument to <code>y</code> and then applying that to <code>u</code></p>
+</blockquote>
+<p>In Haskell:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">u</span> <span style="color:#f92672">&lt;*&gt;</span> pure y <span style="color:#f92672">=</span> pure (<span style="color:#f92672">$</span> y) <span style="color:#f92672">&lt;*&gt;</span> u
+</code></pre></div><p>This type signature presents new syntax so before proving the law in Clojure, I want to explain what <code>($ y)</code> means.</p>
+<p>In Haskell, <code>$</code> is the function application operator. So if we give <code>y</code> a value of <em>10</em>, I can show you that in this law <code>$</code> essentially translates to a single argument function that applies its argument to <em>10</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">let</span> double a <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span> <span style="color:#75715e">-- helper function. it doubles its argument</span>
+
+<span style="color:#75715e">-- given the above, this...</span>
+((<span style="color:#f92672">$</span> <span style="color:#ae81ff">10</span>) double) <span style="color:#75715e">-- 20</span>
+
+<span style="color:#75715e">-- ...is the same as:</span>
+<span style="color:#66d9ef">let</span> dollarTen <span style="color:#f92672">=</span> (<span style="color:#a6e22e">\</span>a <span style="color:#f92672">-&gt;</span> (a <span style="color:#ae81ff">10</span>))  <span style="color:#75715e">-- this is Haskell&#39;s lambda syntax. It&#39;s equivalent to ($ 10)</span>
+((dollarTen) double) <span style="color:#75715e">-- 20</span>
+</code></pre></div><p>Now, to the proof in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>u (<span style="color:#a6e22e">pure</span> List <span style="color:#f92672">#</span>(+ <span style="color:#ae81ff">10</span> %)))
+(<span style="color:#66d9ef">def </span>y <span style="color:#ae81ff">50</span>)
+
+<span style="color:#75715e">;; given the above, this...</span>
+(<span style="color:#a6e22e">&lt;*&gt;</span> u (<span style="color:#a6e22e">pure</span> List y)) <span style="color:#75715e">;; List{:wrapped (60)}</span>
+
+<span style="color:#75715e">;; ...is the same as:</span>
+(<span style="color:#66d9ef">def </span>dollar-y <span style="color:#f92672">#</span>(<span style="color:#a6e22e">%</span> y)) <span style="color:#75715e">;; it&#39;s called dollar-y to show the correlation with the explanation above</span>
+(<span style="color:#a6e22e">&lt;*&gt;</span> (<span style="color:#a6e22e">pure</span> List dollar-y) u) <span style="color:#75715e">;; List{:wrapped (60)}</span>
+</code></pre></div><p>This brings us to the end or Part II. Two down and two to go.</p>
+<p>I hope you&rsquo;re still with me but go home now.</p>
+<p>Or better yet go to the gym lift some weights and think about these Functors on steroids. When you&rsquo;re back, look out for <a href="/2012/12/05/monads-in-small-bites-part-iii-monoids/">Part III</a>.</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/clojure" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">clojure</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/functional-programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">functional-programming</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/haskell" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">haskell</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "leonardoborges" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/writings/2012/11/30/monads-in-small-bites-part-i-functors/">Monads in small bites - Part I - Functors</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/09/10/clojure-leiningen-heroku-aot-compilation-gotchas/">Clojure, leiningen 2 and Heroku: AOT compilation gotchas</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/08/23/sean-corfield-clojure-and-cfml-sitting-in-a-tree/">Sean Corfield: Clojure and CFML sitting in a tree</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/02/22/clj-syd-report-number-0/">clj syd report number 0</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/02/05/project-euler-problem-4-in-clojure/">project euler problem 4 in clojure</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/01/22/backlog-ola-bini-on-clojure-conj/">backlog ola bini on clojure conj</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/01/20/announcing-the-sydney-clojure-user-group/">announcing the sydney clojure user group</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2011/10/12/report-clojure-meetup-1/">Report: Clojure Meetup - 1</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
+    &copy;  Leonardo Borges 2021 
+  </a>
+    <div>
+
+
+<a href="https://stackoverflow.com/users/910811/leonardoborges" target="_blank" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Stack Overflow link" rel="noopener" aria-label="follow on Stack Overflow——Opens in a new window">
+  <svg height="32px" 
+    style="enable-background:new 0 0 67 67;"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="32px"
+>
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.869 5.903l3.114 4.567-.975.665-3.115-4.567.976-.665zm-2.812 2.585l4.84 2.838-.6 1.017-4.842-2.838.602-1.017zm-1.276 2.724l5.413 1.521-.291 1.077-5.428-1.458.306-1.14zm-.588 2.461l5.687.569-.103 1.12-5.691-.513.107-1.176zm-.169 2.16h5.835v1.167h-5.835v-1.167zm7.976 3.167h-10v-6h1v5h8v-5h1v6zm.195-8.602l-.945-5.446 1.162-.202.947 5.446-1.164.202z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://twitter.com/theleoborges" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/theleoborges/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/theleoborges" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

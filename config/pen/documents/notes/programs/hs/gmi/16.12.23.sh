@@ -1,0 +1,6 @@
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.emacs.d/host/pen.el/docs;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.emacs.d/host/pen.el/docs;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.emacs.d/host/pen.el/docs;  "gmi" "pull" "#" "<==" "spin"

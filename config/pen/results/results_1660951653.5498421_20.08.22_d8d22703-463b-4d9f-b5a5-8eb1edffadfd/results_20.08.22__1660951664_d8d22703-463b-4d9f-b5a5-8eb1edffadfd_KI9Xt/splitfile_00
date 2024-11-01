@@ -1,0 +1,19 @@
+
+#
+# This playbook is intended to be run on a Library server. It will
+# synchronize the Library with a source of content.
+#
+# The source of content is configured by the "sync_source" variable.
+# The list of collections to sync is configured by the "collections"
+# variable. Both of these variables can be overridden by including them
+# in the "run" variable.
+- hosts: library
+  vars:
+    collections: all
+    sync_source: https://repository.library.brown.edu/api/collections/
+
+  tasks:
+
+    # Sync all collections from the configured source. This task will fail if any collections fail to sync.
+    - name: Sync Collections from Source
+      synchronize: src={{ item }} dest=/mnt/content/{{ item }} force=yes rsync_opts="--recursive --times --omit

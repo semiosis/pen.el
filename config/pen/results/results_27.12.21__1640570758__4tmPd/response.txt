@@ -1,0 +1,2 @@
+[Fri Dec 24 17:14:04.810065 2021] [core:notice] [pid 1406:tid 140099727252544] AH00094: Command line: '/usr/sbin/apache2'
+[Fri Dec 24 17:00:

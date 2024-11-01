@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: open-file
+# group: file
+# key: o
+# --
+with open("${1:exercises/countries.json}") as f:
+    ${2:COUNTRIES = json.loads(f.read())}
+    $0

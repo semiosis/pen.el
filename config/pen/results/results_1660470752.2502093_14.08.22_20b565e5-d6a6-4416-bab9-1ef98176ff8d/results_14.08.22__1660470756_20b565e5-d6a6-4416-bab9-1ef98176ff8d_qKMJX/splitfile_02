@@ -1,0 +1,1 @@
+fmap (\x -> map length x) $ (decodeResultsList <$> listOf 5 "90s sitcoms")

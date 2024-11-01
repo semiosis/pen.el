@@ -1,0 +1,1 @@
+(define (main) (cpyimport "gopass" "run_flow"))

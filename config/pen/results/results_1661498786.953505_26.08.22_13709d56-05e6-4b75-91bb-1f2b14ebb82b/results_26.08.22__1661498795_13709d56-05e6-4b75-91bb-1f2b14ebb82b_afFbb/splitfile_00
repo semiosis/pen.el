@@ -1,0 +1,13 @@
+
+
+(fn KEYMAP NAME DOC &key DESCRIPTION KEYBINDING PREDICATE (SUFFIX-MAP t) NODE SUFFIX-PROPERTY REQUIRES (EXPANDER (quote function)))
+
+- transient emacs guru: those are the arguments. i have found this one very useful in my
+  life. it is just a proof of concept. but there is a lot more to come!
+  this is the only place where i will give you a hint. it is what it should delegate to:
+
+(fn KEYMAP NAME DOC &key DESCRIPTION KEYBINDING PREDICATE (SUFFIX-MAP t) NODE SUFFIX-PROPERTY REQUIRES (EXPANDER (quote function)))
+"""
+    )
+
+    s.setWikiHelpAsRoot()

@@ -1,0 +1,12 @@
+"table.iloc" is a function that allows us to access data in a table by its position in the table.
+
+In the above example, we are accessing the first row of the table.
+
+In [38]: table.iloc[0, 0]
+Out[38]: 'Aggressive Humor'
+
+In [39]: table.iloc[0, 1]
+Out[39]: 1
+
+In [40]: table.iloc[0, 2]
+Out[

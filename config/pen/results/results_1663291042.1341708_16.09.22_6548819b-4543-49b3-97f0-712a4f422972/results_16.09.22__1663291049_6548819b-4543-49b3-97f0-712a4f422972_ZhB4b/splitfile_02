@@ -1,0 +1,3 @@
+ (defmodes m xt-mode "Major mode for entering text. \\{xt-mode-map}"
+(define-key mxt-mode-map "\M-i" 'newline-and-indent)
+(define-key mxt-mode-map

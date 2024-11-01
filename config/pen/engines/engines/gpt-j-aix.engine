@@ -1,0 +1,18 @@
+engine-title: AIx GPT-J-6B
+lm-command: "aix-complete.sh"
+model: GPT-J-6B
+default-tokens: 512
+engine-delimiter: "###"
+approximate-token-char-length: 2.5
+engine-min-tokens: 1
+engine-min-generated-tokens: 1
+engine-max-tokens: 2048
+engine-whitespace-support: no
+# This is actually bad behaviour on the SAAS's part
+engine-strips-gen-starting-whitespace: yes
+foundation: true
+default-temperature: 0.8
+libre-dataset: yes
+libre-model: yes
+local: no
+top-k: 10

@@ -1,0 +1,128 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 35
+
+* D-Group weekly session notes
+Started working on it: <2024-08-30 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=S0j3BzPEy3w][youtube.com: 24/7 HYMNS: Thank God Its A New Day Hymns - soft piano hymns + loop]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage  |
+|---------------------+---------------+------------------------+---------------------+----------------|
+| [[sh:bible-read-passage nasb Matthew 6:27-28 ][Matthew 6:27-28]]     | [[sh:bible-study-passage nasb Titus 1-3 ][Titus 1-3]]     | [[sh:bible-study-passage nasb John 11 ][John 11]]                | [[sh:bible-read-passage nasb Proverbs 14:7 ][Proverbs 14:7]]       | [[sh:bible-study-passage nasb II Kings 6 ][II Kings 6]]     |
+|                     | [[sh:bible-study-passage nasb I Peter 1-2 ][I Peter 1-2]]   | [[sh:bible-study-passage nasb Matthew 21:1-13 ][Matthew 21:1-13]]        |                     | [[sh:bible-study-passage nasb Jonah 1-4 ][Jonah 1-4]]      |
+|                     |               | [[sh:bible-study-passage nasb John 13-14 ][John 13-14]]             |                     | [[sh:bible-study-passage nasb Proverbs 14-18 ][Proverbs 14-18]] |
+|                     |               | [[sh:bible-study-passage nasb John 15-16 ][John 15-16]]             |                     |                |
+|                     |               | [[sh:bible-study-passage nasb Matthew 24:1-31 ][Matthew 24:1-31]]        |                     |                |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 6:27-28
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 6:27
+‾‾‾‾‾‾‾‾‾‾‾‾
+And who of you by being worried can add a single
+hour to his life?
+
+Matthew 6:28
+‾‾‾‾‾‾‾‾‾‾‾‾
+And why are you worried about clothing? Observe
+how the lilies of the field grow; they do not
+toil nor do they spin,
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Proverbs 14:7
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Proverbs 14:7
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Leave the presence of a fool, Or you will not
+discern words of knowledge.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+*** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb I Peter 1-2 ][I Peter 1-2]]
+**** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb I Peter 1-2
+#+END_SRC
+
+**** E (explain)
+
+**** A (apply)
+
+**** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+*** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Titus 1-3 ][Titus 1-3]]
+**** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Titus 1-3
+#+END_SRC
+
+What does Paul mean by this?
+
+#+BEGIN_QUOTE
+  *Titus 1:15* - To the pure, all things are pure, but to the defiled and unbelieving, nothing is pure; but both their minds and their consciences are defiled. (ESV)
+#+END_QUOTE
+
+Paul doesn't mean 'sin' is pure:
+
+#+BEGIN_QUOTE
+  *Titus 1:10* - For there are many who are insubordinate, empty talkers and deceivers, especially those of the circumcision party. (ESV)
+#+END_QUOTE
+
+Paul was simply rebuking being of the flesh:
+
+#+BEGIN_QUOTE
+  *Titus 1:13-14* - This testimony is true. Therefore rebuke them sharply, that they may be sound in the faith, not devoting themselves to Jewish myths and the commands of people who turn away from the truth. (ESV)
+#+END_QUOTE
+
+But in the same passage Paul encourages people to be holy:
+
+#+BEGIN_QUOTE
+  *Titus 1:7-9* - For an overseer, as God's steward, must be above reproach. He must not be arrogant or quick-tempered or a drunkard or violent or greedy for gain, but hospitable, a lover of good, self-controlled, upright, holy, and disciplined. He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it. (ESV)
+#+END_QUOTE
+
+**** E (explain)
+
+**** A (apply)
+
+**** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+

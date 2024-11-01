@@ -1,0 +1,1 @@
+ pd.read_csv(StringIO(data), sep='\t')

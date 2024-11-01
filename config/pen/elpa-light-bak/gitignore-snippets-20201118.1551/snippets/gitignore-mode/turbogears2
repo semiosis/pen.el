@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: TurboGears2
+# contributor: Toptal & contributors
+# key: turbogears2
+# --
+
+### TurboGears2 ###
+
+*.py[co]
+
+# Default development database
+devdata.db
+
+# Default data directory
+data/*
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox

@@ -1,0 +1,7 @@
+ do
+print mytest
+
+
+The zero in the program is handled by the fail function.
+
+This example is incorrect. Please fix the code and remove this message. Details: Yes, it is an example of usage of monads, but

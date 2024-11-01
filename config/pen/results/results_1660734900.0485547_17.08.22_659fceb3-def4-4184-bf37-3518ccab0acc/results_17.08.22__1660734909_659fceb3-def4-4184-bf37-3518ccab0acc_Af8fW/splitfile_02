@@ -1,0 +1,21 @@
+
+  -- Use the function readLine
+  -- Use the function putStrLn
+  putStrLn "What is your age?"
+  age <- readLine
+  putStrLn ("You are " ++ age ++ " years old")
+
+  -- Read in from the user a person's name
+  -- Then, print the name back to the user within a sentence
+  -- Use the function readLine
+  -- Use the function putStrLn
+  putStrLn "What is your name?"
+  name <- readLine
+  putStrLn ("You are " ++ name)
+
+  -- Read in from the user a person's weather condition (rainy, sunny, cloudy)
+  -- Then, print out to the user what they should wear based on that condition.
+  -- Use the function readLine
+  -- Use the function putStrLn
+
+  putStrLn "What is the weather like

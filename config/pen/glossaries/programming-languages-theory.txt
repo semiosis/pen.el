@@ -1,0 +1,116 @@
+nullary
+    Arity of 0.
+
+arity
+    The number of arguments or operands taken
+    by a function or operation.
+
+gradually-typed language
+    It’s possible to mix statically-and
+    dynamically-typed code.
+
+    https://lexi-lambda.github.io/blog/2020/08/13/types-as-axioms-or-playing-god-with-static-types/
+
+tail call optimization
+    If this is available, then you can offer
+    recursive calles as a method of doing
+    loops.
+
+    https://youtu.be/dGVqrGmwOAw?t=863
+
+PEG choice operator
+    A type of analytic formal grammar.
+
+    Describes a formal language in terms of a
+    set of rules for recognizing strings in
+    the language.
+
+    Closely related to the family of top-down
+    parsing languages introduced in the early
+    1970s.
+
+    Syntactically, PEGs also look similar to
+    CFGs, but they have a different
+    interpretation: the choice operator
+    selects the first match in PEG, while it
+    is ambiguous in CFG. This is closer to how
+    string recognition tends to be done in
+    practice, e.g. by a recursive descent
+    parser.
+
+    Unlike CFGs, PEGs cannot be ambiguous; if
+    a string parses, it has exactly one valid
+    parse tree.
+
+value semantics
+    Having value semantics means for an object
+    that only its value counts, not its
+    identity.
+    
+    If the concept is fully applied, value
+    semantics implies immutability of the
+    object.
+
+Copy-on-write
+COW
+    Sometimes referred to as implicit sharing
+    or shadowing, is a resource-management
+    technique used in computer programming to
+    efficiently implement a "duplicate" or
+    "copy" operation on modifiable resources.
+    
+    If a resource is duplicated but not
+    modified, it is not necessary to create a
+    new resource; the resource can be shared
+    between the copy and the original.
+    
+    Modifications must still create a copy,
+    hence the technique: the copy operation is
+    deferred until the first write.
+    
+    By sharing resources in this way, it is
+    possible to significantly reduce the
+    resource consumption of unmodified copies,
+    while adding a small overhead to resource-
+    modifying operations.
+
+context-free grammar
+CFG
+
+domain semantics
+    The second kind of semantics is governed
+    by your domain.
+    
+    If you're writing an accounting system,
+    you have to follow the rules of
+    accounting.
+    
+    Your job as a programmer is to understand
+    those rules and implement them in the
+    language.
+    
+    Once you understand the thing you're
+    trying to implement, it's all about
+    finding the right language semantics to
+    implement it.
+
+    My thoughts:
+    - Possibly when writing too. For example,
+      I can't use reams of X in a fantasy novel
+      because reams are out of context.
+
+language semantics
+    The programming language has its own
+    semantics, which is how everything the
+    language gives you works.
+    
+    The collections come with built-in
+    semantics--rules governing how they work
+    and how you can use them.
+    
+    These are fixed by the language itself,
+    and you have very little control over
+    these semantics.
+    
+    They form the building material out of
+    which you build your program.

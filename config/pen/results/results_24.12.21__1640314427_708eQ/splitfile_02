@@ -1,0 +1,23 @@
+";; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffe"
+
+# This is the contents of the file.
+# 
+# It has lines and paragraphs.
+# 
+# - It has
+# - bullet points.
+# 
+# Code is indented:
+# 
+# def foo():
+# return 'foo'
+# 
+# And it has syntax highlighting:
+# 
+# ```python
+# def foo():
+# return 'foo'
+# ```
+# 
+#

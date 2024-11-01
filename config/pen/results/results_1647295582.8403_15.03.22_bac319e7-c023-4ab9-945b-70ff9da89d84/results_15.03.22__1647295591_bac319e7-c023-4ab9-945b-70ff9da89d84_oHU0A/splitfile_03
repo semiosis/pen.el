@@ -1,0 +1,3 @@
+"use Data::Dumper;" is a perl module that allows one to dump
+the contents of a perl data structure to a string.
+

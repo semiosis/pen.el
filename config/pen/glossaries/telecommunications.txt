@@ -1,0 +1,216 @@
+Dynamic Host Configuration Protocol
+    A network management protocol used on
+    Internet Protocol networks whereby a DHCP
+    server dynamically assigns an IP address
+    and other network configuration parameters
+    to each device on a network so they can
+    communicate with other IP networks.
+
+NetFlow
+    NetFlow is a feature that was introduced
+    on Cisco routers around 1996 that provides
+    the ability to collect IP network traffic
+    as it enters or exits an interface.
+
+bastion host
+bastion host
+    A special-purpose computer on a network
+    specifically designed and configured to
+    withstand attacks.
+    
+    The computer generally hosts a single
+    application, for example a proxy server,
+    and all other services are removed or
+    limited to reduce the threat to the
+    computer.
+
+    ewwlinks +/"bastion server" "https://docs.gitlab.com/runner/executors/docker_machine.html"
+
+Linux cluster
+    A connected array of Linux computers or
+    nodes that work together and can be viewed
+    and managed as a single system.
+    
+    Nodes are usually connected by fast local
+    area networks, with each node running its
+    own instance of Linux.
+    
+    Nodes may be physical or VMs, and they may
+    be separated geographically.
+    
+    Each node includes storage capacity,
+    processing power and I/O (input/output)
+    Multiple redundant nodes of Linux servers
+    may be connected as a cluster for high
+    availability (HA) in a network or data
+    center, where each node is capable of
+    failure detection and recovery.
+
+edge router
+    An edge router is a specialized router
+    located at a network boundary that enables
+    an internal network to connect to external
+    networks. They are primarily used at two
+    demarcation points: the wide area network
+    (WAN) and the internet.
+
+Bullet™M
+    Pair with any antenna for airMAX®
+    deployment in Point-to-Point (PtP)
+    bridging or Point-to-MultiPoint (PtMP)
+    applications.
+
+OSI
+Open System Interconnection
+    [model]
+
+    Defines a networking framework to implement protocols in seven layers.
+
+    The 7 Layers of the OSI:
+    Layer 7 - Application.
+    Layer 6 - Presentation.
+    Layer 5 - Session.
+    Layer 4 - Transport.
+    Layer 3 - Network.
+    Layer 2 - Data Link.
+    Layer 1 - Physical.
+
+out-of-band
+    Activity outside a defined
+    telecommunications frequency band, or,
+    metaphorically, outside some other kind of
+    activity.
+    
+    Protection from falsing is among its
+    purposes.
+
+code signing
+    The method of using a certificate-based
+    digital signature to sign executables and
+    scripts in order to verify the author’s
+    identity and ensure that the code has not
+    been changed or corrupted since it was
+    signed by the author.
+    
+    This helps users and other software to
+    determine whether the software can be
+    trusted.
+
+certificate authority
+CA
+
+signing certificate
+    Acts as a digital signature.
+
+    When you sign data, you include your
+    digital signature with the data.
+    
+    A certificate contains information that
+    fully identifies an entity, and is issued
+    by a CA after that authority has verified
+    the entity's identity.
+
+Authentication
+    [#code signing]
+
+    Verifying who the author of the software
+    is.
+
+Integrity
+    [#code signing]
+
+    Verifying that the software hasn’t been
+    tampered with since it was signed.
+
+Classless inter-domain routing
+CIDR
+    A set of Internet protocol (IP) standards
+    that is used to create unique identifiers
+    for networks and individual devices.
+    
+    The IP addresses allow particular
+    information packets to be sent to specific
+    computers.
+
+firm
+    Commercial partnership of two or more
+    people.
+
+conglomerate
+large corporation
+conglomerate firms
+    A thing consisting of a number of
+    different and distinct parts or items that
+    are grouped together.
+
+Cisco
+    [conglomerate]
+
+    Develops, manufactures and sells
+    networking hardware, telecommunications
+    equipment and other high-technology
+    services and products.
+
+net-tools
+    The collection of base networking
+    utilities for Linux.
+
+    This contains the 'ifconfig' and 'route'
+    commands.
+
+iproute
+iproute2
+    A collection of userspace utilities for
+    controlling and monitoring various aspects
+    of networking in the Linux kernel,
+    including routing, network interfaces,
+    tunnels, traffic control, and network-
+    related device drivers.
+
+    This contains the 'ip' and 'ss' commands.
+
+ss
+    [iproute command]
+
+    Used to dump socket statistics.
+    
+    It allows showing information similar to
+    netstat.
+    
+    It can display more TCP and state
+    informations than other tools.
+
+
+Address Resolution Protocol
+ARP
+
+arp
+    Displays and modifies entries in the ARP
+    cache, which contains one or more tables
+    that are used to store IP addresses and
+    their resolved Ethernet or Token Ring
+    physical addresses.
+    
+    There is a separate table for each
+    Ethernet or Token Ring network adapter
+    installed on your computer.
+    
+    Sep 10, 2010
+
+crossover cable
+
+multiplexing
+muxing
+
+PoE
+Power Over Ethernet
+
+PoE Injectors
+    Plugs into an electric outlet and adds
+    power through a single network cable,
+    transferring both power and data to a
+    device.
+    
+    The injector is the device that inserts
+    the power into the wires within the
+    Ethernet cable.

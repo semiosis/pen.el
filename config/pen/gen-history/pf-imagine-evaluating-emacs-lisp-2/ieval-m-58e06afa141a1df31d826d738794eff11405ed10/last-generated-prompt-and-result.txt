@@ -1,0 +1,3 @@
+;; Run function second-work-of
+(message (eval '(second-work-of "lewis caroll")))
+--> "lewis caroll"

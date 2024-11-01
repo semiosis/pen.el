@@ -1,0 +1,1130 @@
+HTTP/1.1 200 OK
+Connection: close
+content-type: text/html; charset=utf-8
+expires: Wed, 17 Aug 2005 00:00:00 GMT
+last-modified: Thu, 27 Oct 2022 23:19:42 GMT
+cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0,no-transform
+pragma: no-cache
+etag: "11645-1666912782;gz"
+x-litespeed-cache: hit
+transfer-encoding: chunked
+vary: Accept-Encoding
+date: Thu, 27 Oct 2022 23:19:50 GMT
+server: LiteSpeed
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+timing-allow-origin: *
+referrer-policy: unsafe-url
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+    <head>
+<script class="4SEO_analytics_rule_1858">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-57VXZ7F');
+</script>
+
+<script class="4SEO_analytics_rule_1859" async src="https://www.googletagmanager.com/gtag/js?id=G-X5TVST8Q49"></script>
+<script class="4SEO_analytics_rule_1859">
+    window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X5TVST8Q49');</script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="//glorianorg-rochen.netdna-ssl.com/images/favicon-96x96.png" sizes="any">
+                <link rel="apple-touch-icon" href="//glorianorg-rochen.netdna-ssl.com/images/apple-icon-180x180.png">
+        <meta charset="utf-8">
+	<base href="https://glorian.org/learn/knowledge-is-power/">
+	<meta name="og:title" content="Knowledge is Power">
+	<meta name="og:type" content="article">
+	<meta name="og:image" content="https://glorian.org/images/stories/greek/apollo-christ.jpg">
+	<meta name="og:url" content="https://glorian.org/learn/knowledge-is-power/">
+	<meta name="og:site_name" content="Glorian">
+	<meta name="og:description" content="Books and Teachings of Practical Spirituality">
+	<meta name="description" content="There is a root from which all knowledge has emerged. Humanity has many names for it; we call it Gnosis. gnosis (-g·no·sis): From Greek γνῶσις. Knowledge. The h...">
+	<meta name="generator" content="sunyata">
+	<title>Glorian: Knowledge, Gnosis, is Power</title>
+	<link href="/learn/knowledge-is-power?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+	<link href="/learn/knowledge-is-power?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+	<link href="https://glorian.org/search?format=opensearch" rel="search" title="Glorian" type="application/opensearchdescription+xml">
+	<link href="https://glorian.org/learn/knowledge-is-power" rel="canonical" class="4SEO_auto_canonical">
+<link href="//glorianorg-rochen.netdna-ssl.com/media/vendor/awesomplete/css/awesomplete.css?1.1.5" rel="stylesheet" />
+	<link href="//glorianorg-rochen.netdna-ssl.com/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet" />
+	<link href="//glorianorg-rochen.netdna-ssl.com/media/system/css/joomla-fontawesome.min.css?3.0.5" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+	<link href="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/css/theme.52.css?1665491592" rel="stylesheet" />
+<script src="//glorianorg-rochen.netdna-ssl.com/media/vendor/awesomplete/js/awesomplete.min.js?1.1.5" defer></script>
+	<script type="application/json" class="joomla-script-options new">{"finder-search":{"url":"\/component\/finder\/?task=suggestions.suggest&amp;format=json&amp;tmpl=component&amp;Itemid=13787"},"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/glorian.org\/","base":"","baseFull":"https:\/\/glorian.org\/"},"csrf.token":"bef9f5da42c87b4a855427644ce09292"}</script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/system/js/core.min.js?bea7b244e267b04087cedcf531f6fe827a8e101f"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/com_finder/js/finder-es5.min.js?bad573eb3c559a3e1070529bf0ccb8d8745ba5f3" nomodule defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/system/js/messages-es5.min.js?70b6651d6deab46dc8a25f03338f66f540cc62e2" nomodule defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/com_finder/js/finder.min.js?29fe670bb180ec95c613a0e6aa6df738d9de97d4" type="module"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/system/js/messages.min.js?7425e8d1cb9e4f061d5e30271d6d99b085344117" type="module"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/com_widgetkit/js/maps.js" defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/vendor/yootheme/theme-cookie/app/cookie.min.js?3.0.5" defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?3.0.5"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-trek.min.js?3.0.5"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/js/theme.js?3.0.5"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/plugins/system/yooessentials/modules/element/elements/social_sharing_item/assets/asset.js?1.8.1" defer></script>
+	<script>document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });</script>
+	<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=JCzaTM"></script>
+	<meta name="generator" content="SEO optimization by 4SEO" class="4SEO_generator_tag">
+	<script>(window.$load = window.$load || []).push(function(c,n) {try {consentGranted();
+} catch (e) {console.error(e)} n()});
+</script>
+	<script>var $theme = {"cookie":{"mode":"notification","template":"<div class=\"tm-cookie-banner uk-section uk-section-xsmall uk-section-primary uk-position-bottom uk-position-fixed\">\n        <div class=\"uk-container uk-container-expand uk-text-center\">\n\n            This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.\n                            <button type=\"button\" class=\"js-accept uk-button uk-button-secondary uk-margin-small-left\" data-uk-toggle=\"target: !.uk-section; animation: true\">I understand<\/button>\n            \n            \n        <\/div>\n    <\/div>","position":"bottom"}};</script>
+
+    
+<style type="text/css">input[name='your_name_here'] {display: none !important;}</style>
+
+<style type="text/css">input[name='my_address'] {display: none !important;}</style>
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" class="4SEO_robots_tag">
+	<script type="application/ld+json" class="4SEO_structured_data_breadcrumb">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "listItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://glorian.org/"
+        },
+        {
+            "@type": "listItem",
+            "position": 2,
+            "name": "Knowledge is power",
+            "item": "https://glorian.org/learn/knowledge-is-power"
+        }
+    ]
+}</script>
+<script type="application/ld+json" class="4SEO_structured_data_page">{
+    "@context": "http://schema.org",
+    "@graph": []
+}</script></head>
+    <body class="">
+<noscript class="4SEO_analytics_rule_1858"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57VXZ7F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<div class="tm-header-mobile uk-hidden@m" uk-header>
+
+
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://glorian.org/" aria-label="Back to the homepage" class="uk-logo uk-navbar-item">
+    <img alt="Glorian" width="200" height="31" src="//glorianorg-rochen.netdna-ssl.com/images/svg/glorian-logo-tr-h.svg"></a>
+                        
+                                                    <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle uk-navbar-toggle-animate">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+                <span class="uk-margin-small-left uk-text-middle">Menu</span>
+        
+    </a>
+                        
+                    </div>
+                    
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+    
+    
+        <div id="tm-dialog-mobile" class="uk-dropbar uk-dropbar-top" uk-drop="{&quot;clsDrop&quot;:&quot;uk-dropbar&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header-mobile&quot;,&quot;target-y&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;target-x&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;stretch&quot;:true,&quot;bgScroll&quot;:&quot;false&quot;,&quot;animation&quot;:&quot;reveal-top&quot;,&quot;animateOut&quot;:true,&quot;duration&quot;:300,&quot;toggle&quot;:&quot;false&quot;}">
+
+        <div class="tm-height-min-1-1 uk-flex uk-flex-column">
+
+                        <div class="uk-margin-auto-bottom">
+                
+<div class="uk-grid uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-menu-dialog-mobile">
+
+    
+    
+<ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+    
+	<li class="item-13827"><a href="/books"> Books</a></li>
+	<li class="item-13829 uk-active js-accordion uk-parent"><a href> Learn <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-13830"><a href="/learn/courses-and-lectures"> Courses and Lectures</a></li>
+		<li class="item-13841"><a href="/learn/glossary"> Glossary</a></li>
+		<li class="item-13845"><a href="/learn/podcast-and-radio"> Podcast and Radio</a></li>
+		<li class="item-13842"><a href="/learn/scriptures"> Scriptures</a></li>
+		<li class="item-13900"><a href="/learn/topics"> Topics</a></li>
+		<li class="item-13834"><a href="/learn/video"> Video</a></li></ul></li>
+	<li class="item-13838 js-accordion uk-parent"><a href> Connect <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-13855"><a href="/connect/ask-instructor/forums/1-questions"> Ask Instructor</a></li>
+		<li class="item-13903"><a href="/connect/blog"> Blog</a></li>
+		<li class="item-13887"><a href="/connect/event-calendar"> Event Calendar</a></li></ul></li>
+	<li class="item-13839"><a href="https://shop.glorian.org" target="_blank"> Shop</a></li>
+	<li class="item-13938"><a href="/give/donate" class="button"> Donate</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-932">
+
+    
+    
+
+    <form id="search-932" action="/search" method="get" role="search" class="uk-search js-finder-searchform uk-search-default uk-width-1-1"><span uk-search-icon class="uk-position-z-index"></span><input name="q" class="js-finder-search-query uk-search-input" placeholder="Search" required type="search"><input type="hidden" name="2e0e53d529bbaa545bf7a1f2b9958d6b" value="1666912782"/></form>
+
+
+
+
+
+
+</div>
+</div></div>
+            </div>
+            
+            
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://glorian.org/" aria-label="Back to the homepage" class="uk-logo uk-navbar-item">
+    <img alt="Glorian" width="200" height="31" src="//glorianorg-rochen.netdna-ssl.com/images/svg/glorian-logo-tr-h.svg"></a>
+                        
+                        
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                        
+                                                    
+<ul class="uk-navbar-nav">
+    
+	<li class="item-13827"><a href="/books"> Books</a></li>
+	<li class="item-13829 uk-active uk-parent"><a role="button"> Learn</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-13830"><a href="/learn/courses-and-lectures"> Courses and Lectures</a></li>
+		<li class="item-13841"><a href="/learn/glossary"> Glossary</a></li>
+		<li class="item-13845"><a href="/learn/podcast-and-radio"> Podcast and Radio</a></li>
+		<li class="item-13842"><a href="/learn/scriptures"> Scriptures</a></li>
+		<li class="item-13900"><a href="/learn/topics"> Topics</a></li>
+		<li class="item-13834"><a href="/learn/video"> Video</a></li></ul></div></div></div></li>
+	<li class="item-13838 uk-parent"><a role="button"> Connect</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-13855"><a href="/connect/ask-instructor/forums/1-questions"> Ask Instructor</a></li>
+		<li class="item-13903"><a href="/connect/blog"> Blog</a></li>
+		<li class="item-13887"><a href="/connect/event-calendar"> Event Calendar</a></li></ul></div></div></div></li>
+	<li class="item-13839"><a href="https://shop.glorian.org" target="_blank"> Shop</a></li>
+	<li class="item-13938"><a href="/give/donate" class="button"> Donate</a></li></ul>
+
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-right">
+
+                        
+                                                    
+
+    <a class="uk-navbar-toggle" id="module-931" href="#search-931-modal" uk-search-icon uk-toggle></a>
+
+    <div id="search-931-modal" class="uk-modal-full" uk-modal="container: true">
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s"></button>
+            <div class="uk-search uk-search-large">
+                <form id="search-931" action="/search" method="get" role="search" class="uk-search js-finder-searchform uk-search-large"><input name="q" class="js-finder-search-query uk-search-input uk-text-center" placeholder="Search" required type="search" autofocus><input type="hidden" name="2e0e53d529bbaa545bf7a1f2b9958d6b" value="1666912782"/></form>            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</div>
+
+            
+            
+<div id="module-874" class="builder"><!-- Builder #module-874 -->
+<div class="uk-section-muted uk-section uk-section-xsmall">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+
+    <div>
+        <ul class="uk-breadcrumb uk-margin-remove-bottom">
+        
+                            <li><a href="/">Home</a></li>
+            
+        
+                            <li class="uk-disabled"><a>Learn</a></li>
+            
+        
+                            <li><span>Knowledge is power</span></li>
+            
+        
+        </ul>
+    </div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+</div>
+
+            
+            <div id="system-message-container" aria-live="polite"></div>
+
+            <!-- Builder #template-Cl275u2n -->
+<div class="uk-section-muted">
+        <div data-src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/96/buddha-lives-900-96ee0532.jpeg" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/ad\/buddha-lives-900-ad57007d.webp 768w, \/templates\/yootheme\/cache\/16\/buddha-lives-900-165688bb.webp 900w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 900\/622) 145vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large" uk-height-viewport="expand: true;">    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-grid-margin uk-container uk-container-xsmall"><div class="tm-grid-expand uk-grid-column-medium uk-child-width-1-1" uk-grid>
+<div class="uk-grid-item-match uk-width-1-1">
+        <div class="uk-tile-default uk-tile">    
+        
+            
+            
+            
+                
+                    
+<h1 class="uk-heading-large">        <div style="text-align: center;">Knowledge is Power</div>    </h1><div class="uk-panel uk-margin"><p style="text-align: center;">Get Started with Introductory Articles</p></div>
+                
+            
+        
+        </div>
+    
+</div>
+</div></div>
+                                </div>
+                
+            
+        
+        </div>
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+            
+                
+                    
+<div>        <h5>From the Editor's Introduction to&nbsp;<a href="/books/introduction-to-gnosis">Introduction to Gnosis</a>.</h5>    </div><hr><div class="uk-panel uk-margin"><p>In his book&nbsp;<a href="/books/fundamentals-of-gnostic-education">Fundamentals of Gnostic Education</a>,&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="(Hebrew סםאל און ואור) Pronounced sam-ayel on vay-ohr. The first two letters of Samael are samech (ס) and mem (מ), which mean 'bitter beverage' or 'poison'; the last two letters (אל aleph-lamed) mean 'God'.  Aun (און) is Hebrew for 'sexual strength.' Weor or ve-Aur (ואור) means 'and light.' &lt;br /&gt;&lt;br /&gt;Thus, his full name reads 'The bitter beverage of God, sexual strength, and light.' &lt;br /&gt;&lt;br /&gt;The bitterness of Samael is similar to the bitterness of medicine, which is poison for the ego.&lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/s/samael-aun-weor&quot;&gt;Samael Aun Weor&lt;/a&gt;" title="" data-original-title="Meaning">Samael Aun Weor</span>&nbsp;reminds us of a fundamental experience in life:</p>
+<blockquote>
+<p>“This Via Crucis that is our miserable existence begins in infancy and youth with mental disorders due to intimate family tragedies, difficulties at home and at school, etc.</p>
+<p>“It is clear that during childhood and youth all these problems do not manage to really affect us—with few exceptions—in much of a profound manner; however, when we become adults we start questioning: “Who am I? Where do I come from? Why do I have to suffer? What is the purpose of our existence?” etc.&nbsp;</p>
+<p>“On the path of life we all have asked ourselves these questions. We all have wanted at sometime to investigate, inquire, find out the “why” of so many sorrows, troubles, struggles, and sufferings, yet unfortunately, we always seem to end up caged within some theory, or within some opinion, or within some belief, or within what the neighbor stated, or within what some decrepit old fogie told us, etc.&nbsp;</p>
+<p>“Thus, since we have lost our true innocence and the peace of a tranquil heart, we are incapable of experiencing the truth directly, in all of its harshness, given that we depend on what others might say; so, because of this, we are obviously on the wrong path.”</p>
+</blockquote>
+<p>The <strong>truth</strong> is that which answers our most fundamental questions about life, about ourselves, and all the “whys” that remain enigmas to us in spite of our theories and beliefs. But “truth” cannot be known through mere theory or belief. Truth is something that cannot be caged or conceptualized: it must be known through <strong>experience</strong>. In this sense, we can say that truth is true for the one who has experienced it, and for the one who has not, truth is <em>unknown</em>. This can be likened to the first moment we tasted honey, or saw the radiance of our own child’s smile, or even felt the dagger of betrayal in our heart. Until experienced, these moments cannot be explained, understood, or known. Yet, amongst those who have shared the same experience, there is shared knowledge that may be unspoken but is nonetheless understood by all.&nbsp;</p>
+<p>Experience provides a special kind of knowledge that is alive and profound. It does not depend upon books or outside authority of any kind. When one has experienced, one <em>knows</em>.&nbsp;</p>
+<p>The Greek word&nbsp;<strong>gnosis</strong>&nbsp;refers to this special, experiential knowledge, especially in regards to the fundamental truths of existence. Real&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="(Greek γνώσις) knowledge.&lt;br /&gt;&lt;br /&gt;The higher meaning of Gnosis is knowledge from experience, especially experience of divinity or that which is beyond the five senses. &lt;br /&gt;&lt;br /&gt;Gnosis can also refer to the tradition that embodies the core wisdom or knowledge of humanity, which has adopted many names and appearances according to culture, time, and place.&lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/g/gnosis&quot;&gt;Gnosis&lt;/a&gt;" title="" data-original-title="Meaning">Gnosis</span>&nbsp;comes from the conscious experience of the truth of life, death, and all the mysteries that surround us. By “conscious experience” a form of active, awakened perception is meant, one that penetrates far more than what is physical. The&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Consciousness is the foundation of perception and understanding. Consciousness is the basis upon which we evolve or devolve. Our improvement or degeneration is marked by the state or level of our consciousness.  &lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/c/consciousness&quot;&gt;Consciousness&lt;/a&gt;" title="" data-original-title="Meaning">consciousness</span>— when awakened—can perceive other dimensions. It is here that real&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="(Greek γνώσις) knowledge.&lt;br /&gt;&lt;br /&gt;The higher meaning of Gnosis is knowledge from experience, especially experience of divinity or that which is beyond the five senses. &lt;br /&gt;&lt;br /&gt;Gnosis can also refer to the tradition that embodies the core wisdom or knowledge of humanity, which has adopted many names and appearances according to culture, time, and place.&lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/g/gnosis&quot;&gt;Gnosis&lt;/a&gt;" title="" data-original-title="Meaning">Gnosis</span>&nbsp;begins to bloom in the mind and heart, revealing the truth to the&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="Generally speaking, the emotional and spiritual aspect of a person. The common person does not have a 'soul' yet; they have the Essence or seed of the soul, which must be grown through the 'second birth.' &lt;br /&gt; &lt;br /&gt; Glossary: &lt;a href=&quot;/learn/glossary/s/soul&quot;&gt;Soul&lt;/a&gt; &lt;br /&gt; Lecture: &lt;a href=&quot;/learn/courses/beginning-here-and-now/what-is-the-soul&quot;&gt;What is the Soul?&lt;/a&gt;" title="" data-original-title="Meaning">soul</span>.</p>
+<p>This kind of experience is possible for anyone. It does not matter what one believes, or where one comes from. You can be devoutly religious or deeply independent, yet acquire the personal experience of that which exists beyond the physical senses. Furthermore, it is not necessary to belong to any group or promise anything to anyone. And, even more scandalous, you do not have to pay anyone any money. Despite the outrageous demands of thousands of “spiritual” groups and teachers, you can experience and know the truth even if financially poor. Real&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="(Greek γνώσις) knowledge.&lt;br /&gt;&lt;br /&gt;The higher meaning of Gnosis is knowledge from experience, especially experience of divinity or that which is beyond the five senses. &lt;br /&gt;&lt;br /&gt;Gnosis can also refer to the tradition that embodies the core wisdom or knowledge of humanity, which has adopted many names and appearances according to culture, time, and place.&lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/g/gnosis&quot;&gt;Gnosis&lt;/a&gt;" title="" data-original-title="Meaning">Gnosis</span>&nbsp;is for anyone who is willing to make the effort in themselves; truth does not depend on who you know.</p>
+<p>In order to arrive at the experience of the truth, there are required steps. Everything in nature works according to laws, and not according to our convenience. This is where most people become diverted from the truth: the truth does not comfort our illusions or accommodate our attachments. Therefore, due to fear and the desire for security, most people avoid the truth, preferring instead to remain comforted by their personal beliefs, even if they are illusions. Yet, for the one who is brave enough to face their own self-deception, the reality of&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="(Greek γνώσις) knowledge.&lt;br /&gt;&lt;br /&gt;The higher meaning of Gnosis is knowledge from experience, especially experience of divinity or that which is beyond the five senses. &lt;br /&gt;&lt;br /&gt;Gnosis can also refer to the tradition that embodies the core wisdom or knowledge of humanity, which has adopted many names and appearances according to culture, time, and place.&lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/g/gnosis&quot;&gt;Gnosis&lt;/a&gt;" title="" data-original-title="Meaning">Gnosis</span>&nbsp;is quick to be seen. And, for the one who is brave enough to confront and change their own inner contradictions and mistakes,&nbsp;<span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="(Greek γνώσις) knowledge.&lt;br /&gt;&lt;br /&gt;The higher meaning of Gnosis is knowledge from experience, especially experience of divinity or that which is beyond the five senses. &lt;br /&gt;&lt;br /&gt;Gnosis can also refer to the tradition that embodies the core wisdom or knowledge of humanity, which has adopted many names and appearances according to culture, time, and place.&lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/g/gnosis&quot;&gt;Gnosis&lt;/a&gt;" title="" data-original-title="Meaning">Gnosis</span>— the knowledge that emerges from that inner investigation—becomes an illuminating light and a nourishing medicine.</p>
+<p>Practical spirituality begins by guiding the sincere person towards the establishment of a strong foundation in life, from which they can work towards experiencing the truth for themselves. This foundation is material, psychological, and spiritual. By establishing a degree of stability in our mind, our life also stabilizes. Then, we are in a position to prepare ourselves to know the facts of existence: facts that are sometimes disturbing, sometimes painful, and almost always what we least expected. Yet, facts are facts, and once known, they become steps towards greater knowledge.</p>
+<p>Very simply, if we are unhappy, only we know that and experience that kind of suffering; it is self-produced and self-experienced. If unhappiness is an internal experience, then happiness must also be internal. Therefore, first we have to face the fact of our unhappiness. Then we need to find the cause of unhappiness and exchange it for a cause of happiness. The only way to do this is by knowing ourselves in depth. We need <strong>self-knowledge</strong>.&nbsp;</p>
+<blockquote>
+<p>“Even if one is the most sinful of all sinners, one shall yet cross over the ocean of sin by the raft of Self-knowledge alone. As the blazing fire reduces wood to ashes; similarly, the fire of Self-knowledge reduces all bonds of karma to ashes...” — Krishna, Bhagavad-gita 4:36-37</p>
+</blockquote>
+<p>Knowledge is power, and there is no power greater than knowledge of oneself. The power to change resides entirely in self-knowledge. Where we are lacking self-knowledge, we are lacking power to change. Thus, if we feel powerless in some area of our life, we need to acquire knowledge of that area.</p>
+<p>The Oracle of Delphi stated:</p>
+<blockquote>
+<p>“Know thyself, and thou shalt know the universe and it’s gods!”</p>
+</blockquote>
+<p><strong>Self-knowledge</strong> is the key to the knowledge of everything that exists, for by understanding who we truly are inside, we can then understand the experience of others, where we have all come from, and where we are going. We can only acquire this kind of knowledge on our own, by our own efforts, and in our own experience. In this way, there is no need to believe or theorize, for having experienced the truth, we know. That is&nbsp;<em><span class="rl_tooltips-link nn_tooltips-link sticky top" data-toggle="popover" data-html="true" data-template="&lt;div class=&quot;popover rl_tooltips nn_tooltips has_title&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-inner&quot;&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" data-placement="top" data-content="(Greek γνώσις) knowledge.&lt;br /&gt;&lt;br /&gt;The higher meaning of Gnosis is knowledge from experience, especially experience of divinity or that which is beyond the five senses. &lt;br /&gt;&lt;br /&gt;Gnosis can also refer to the tradition that embodies the core wisdom or knowledge of humanity, which has adopted many names and appearances according to culture, time, and place.&lt;br /&gt;&lt;br /&gt;See Glossary: &lt;a href=&quot;/learn/glossary/g/gnosis&quot;&gt;Gnosis&lt;/a&gt;" title="" data-original-title="Meaning">gnosis</span></em>.</p></div>
+<h2>        Introductory Articles    </h2>
+<ul class="uk-list">
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/what-is-gnosis" aria-label="What is Gnosis?"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/what-is-gnosis" class="el-link uk-link-reset uk-margin-remove-last-child">What is Gnosis?</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/the-purpose-of-gnosis" aria-label="The Purpose of Gnosis"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/the-purpose-of-gnosis" class="el-link uk-link-reset uk-margin-remove-last-child">The Purpose of Gnosis</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/kabbalah-the-universal-tree-of-life" aria-label="Tree of Life: Numerology, Physics, Kabbalah, Tarot"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/kabbalah-the-universal-tree-of-life" class="el-link uk-link-reset uk-margin-remove-last-child">Tree of Life: Numerology, Physics, Kabbalah, Tarot</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/alchemy-and-tantra-sacred-sexuality" aria-label="Tree of Knowledge: Alchemy, Tantra, Sacred Sexuality"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/alchemy-and-tantra-sacred-sexuality" class="el-link uk-link-reset uk-margin-remove-last-child">Tree of Knowledge: Alchemy, Tantra, Sacred Sexuality</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/meditation-the-science-of-awakening" aria-label="Meditation: The Science of Awakening"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/meditation-the-science-of-awakening" class="el-link uk-link-reset uk-margin-remove-last-child">Meditation: The Science of Awakening</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/spiritual-psychology" aria-label="Spiritual Psychology"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/spiritual-psychology" class="el-link uk-link-reset uk-margin-remove-last-child">Spiritual Psychology</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/gnosis-and-the-path" aria-label="Gnosis and the Path"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/gnosis-and-the-path" class="el-link uk-link-reset uk-margin-remove-last-child">Gnosis and the Path</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/gnosis-the-science-of-mysticism" aria-label="Gnosis: The Science of Mysticism"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/gnosis-the-science-of-mysticism" class="el-link uk-link-reset uk-margin-remove-last-child">Gnosis: The Science of Mysticism</a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="/learn/knowledge-is-power/why-study-kabbalah" aria-label="Why Study Kabbalah?"><span class="el-image uk-text-primary" uk-icon="icon: file-text;"></span></a></div>        <div>
+            <div class="el-content uk-panel uk-h4"><a href="/learn/knowledge-is-power/why-study-kabbalah" class="el-link uk-link-reset uk-margin-remove-last-child">Why Study Kabbalah?</a></div>        </div>
+    </div>
+            </li>
+</ul>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h2>        Go Deeper    </h2>
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid="parallax: 0;">        <div>
+
+<div class="el-item uk-inline-clip uk-transition-toggle">
+    
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/0f/IMG_0503-0f8396d5.webp 500w" sizes="(min-width: 500px) 500px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/a6/IMG_0503-a63b671b.jpeg" width="500" height="500" alt="Read books online" loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-transition-fade uk-tile-default"><div class="uk-overlay uk-width-medium uk-margin-remove-first-child">
+
+<h3 class="el-title uk-margin-top uk-margin-remove-bottom">        Books    </h3>
+
+<div class="el-content uk-panel uk-margin-top"><p>Forty-five books to read in print, as ebooks, or online.</p></div>
+
+<div class="uk-margin-top"><a href="/books" class="el-link uk-button uk-button-primary">read more</a></div></div></div>        
+    
+</div>
+</div>        <div>
+
+<div class="el-item uk-inline-clip uk-transition-toggle">
+    
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/a0/courses-500c-a01485fe.webp 500w" sizes="(min-width: 500px) 500px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/fa/courses-500c-facc9b1e.jpeg" width="500" height="500" alt="online course" loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-transition-fade uk-tile-default"><div class="uk-overlay uk-width-medium uk-margin-remove-first-child">
+
+<h3 class="el-title uk-margin-top uk-margin-remove-bottom">        Courses    </h3>
+
+<div class="el-content uk-panel uk-margin-top"><p>Almost fifty free courses as audio and text</p></div>
+
+<div class="uk-margin-top"><a href="/learn/courses-and-lectures" class="el-link uk-button uk-button-primary">read more</a></div></div></div>        
+    
+</div>
+</div>        <div>
+
+<div class="el-item uk-inline-clip uk-transition-toggle">
+    
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/8a/courses-500-8a2bb27b.webp 500w" sizes="(min-width: 500px) 500px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/c4/courses-500-c4890567.jpeg" width="500" height="500" alt loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-transition-fade uk-tile-default"><div class="uk-overlay uk-width-medium uk-margin-remove-first-child">
+
+<h3 class="el-title uk-margin-top uk-margin-remove-bottom">        Listen    </h3>
+
+<div class="el-content uk-panel uk-margin-top"><p>Enjoy our free podcast and streaming radio.</p></div>
+
+<div class="uk-margin-top"><a href="https://glorian.org/learn/podcast-and-radio" class="el-link uk-button uk-button-primary">read more</a></div></div></div>        
+    
+</div>
+</div>        </div>
+
+</div>
+
+<div uk-slider="center: 1; autoplay: 1;" class="uk-margin uk-text-center">
+    <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+        
+            <ul class="uk-slider-items uk-grid uk-grid-divider">                                <li class="el-item uk-width-4-5 uk-width-1-3@m">
+
+<a class="uk-cover-container uk-display-block uk-link-toggle" href="https://glorian.org/books/the-perfect-matrimony">
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c7/pm-c7899404.webp 768w, /templates/yootheme/cache/e2/pm-e2c4463b.webp 1024w" sizes="(min-width: 1024px) 1024px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/98/pm-98767006.jpeg" width="1024" height="1024" alt="The Perfect Matrimony" loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+        
+</a>
+</li>                                <li class="el-item uk-width-4-5 uk-width-1-3@m">
+
+<a class="uk-cover-container uk-display-block uk-link-toggle" href="https://glorian.org/books/hell-the-devil-and-karma">
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/04/hdk-front-049ad831.webp 768w, /templates/yootheme/cache/46/hdk-front-464d804e.webp 1024w" sizes="(min-width: 1024px) 1024px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/a6/hdk-front-a62fdb4a.jpeg" width="1024" height="1024" alt loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+        
+</a>
+</li>                                <li class="el-item uk-width-4-5 uk-width-1-3@m">
+
+<a class="uk-cover-container uk-display-block uk-link-toggle" href="https://glorian.org/books/tarot-and-kabbalah">
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/a7/tk-a7e79272.webp 768w, /templates/yootheme/cache/34/tk-342575a0.webp 1024w" sizes="(min-width: 1024px) 1024px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/87/tk-874d4ab9.jpeg" width="1024" height="1024" alt="Tarot and Kabbalah" loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+        
+</a>
+</li>                                <li class="el-item uk-width-4-5 uk-width-1-3@m">
+
+<a class="uk-cover-container uk-display-block uk-link-toggle" href="https://glorian.org/books/dream-yoga">
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/81/dy-811d57d2.webp 768w, /templates/yootheme/cache/a9/dy-a9984ef9.webp 1024w" sizes="(min-width: 1024px) 1024px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/25/dy-25c115d0.jpeg" width="1024" height="1024" alt loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+        
+</a>
+</li>                                <li class="el-item uk-width-4-5 uk-width-1-3@m">
+
+<a class="uk-cover-container uk-display-block uk-link-toggle" href="https://glorian.org/books/gazing-at-the-mystery">
+        
+
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/d5/gm-d53e5538.webp 768w, /templates/yootheme/cache/e7/gm-e76915f1.webp 1024w" sizes="(min-width: 1024px) 1024px">
+<img src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/cache/7d/gm-7dba062e.jpeg" width="1024" height="1024" alt loading="lazy" class="el-image uk-transition-opaque">
+</picture>
+
+        
+        
+        
+</a>
+</li>                            </ul>
+
+        
+                
+<div class="uk-visible@s uk-hidden-hover uk-hidden-touch">    <a class="el-slidenav uk-position-medium uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous" aria-label="Previous slide"></a>    <a class="el-slidenav uk-position-medium uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next" aria-label="Next slide"></a></div>
+        
+    </div>
+
+        <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s" uk-margin><li uk-slider-item="0"><a href aria-label="Go to slide 1"></a></li><li uk-slider-item="1"><a href aria-label="Go to slide 2"></a></li><li uk-slider-item="2"><a href aria-label="Go to slide 3"></a></li><li uk-slider-item="3"><a href aria-label="Go to slide 4"></a></li><li uk-slider-item="4"><a href aria-label="Go to slide 5"></a></li></ul>    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+            
+            
+<div id="module-894" class="builder"><!-- Builder #module-894 -->
+<div class="uk-section-default uk-section uk-padding-remove-top">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    <div class="uk-panel socialsharing uk-margin uk-text-right">Share This Page:</div>
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">    <div class="uk-child-width-auto uk-grid-small" uk-grid>
+        <div>
+<a rel="noreferrer" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fglorian.org%2Flearn%2Fknowledge-is-power%2F" class="el-link uk-icon-button" uk-icon="icon: twitter;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fglorian.org%2Flearn%2Fknowledge-is-power%2F" class="el-link uk-icon-button" uk-icon="icon: facebook;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fglorian.org%2Flearn%2Fknowledge-is-power%2F" class="el-link uk-icon-button" uk-icon="icon: whatsapp;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fglorian.org%2Flearn%2Fknowledge-is-power%2F" class="el-link uk-icon-button" uk-icon="icon: linkedin;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fglorian.org%2Flearn%2Fknowledge-is-power%2F" class="el-link uk-icon-button" uk-icon="icon: pinterest;" target="_blank"></a></div>
+    
+    </div>
+</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+</div>
+
+            <!-- Builder #footer --><style class="uk-margin-remove-adjacent">#footer\#2-0-0 .uk-tile-xsmall {padding:15px;} </style>
+<div class="uk-section-muted uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div><div class="klaviyo-form-NMLwtA"></div></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-secondary uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-panel uk-margin-medium">
+    
+    
+
+    <div id="wk-grida53" class="uk-child-width-1-1 uk-grid-match uk-text-center " uk-height-match="target: &gt; div &gt; .uk-panel, &gt; div &gt; .uk-card; row: true" uk-grid >
+
+    
+        <div >
+            <div class="uk-panel">
+
+                
+                
+                
+                
+                    
+                        
+                        
+                                                <p class="uk-article-meta">Written on <time datetime="14-10-2022 19:05:10 +0000">2022-10-14</time></p>
+                        
+                        
+                                                <div class="uk-margin">“When one discovers the real cause of so much misery and bitterness, it becomes obvious that something can be done... ” —Samael Aun Weor, Great Rebellion <a href="http://ow.ly/xMwb50L6iaT">ow.ly/xMwb50L6iaT</a> </div>
+                        
+                        
+                        
+                    
+                
+            </div>
+        </div>
+
+    
+    </div>
+
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="footerlinks" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@s uk-width-1-4@m" id="footer#2-0-0">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <img src="//glorianorg-rochen.netdna-ssl.com/images/svg/glorian-logo-trajan.svg" width="300" height="234" class="el-image" alt="Glorian Publishing logo" loading="lazy">    
+    
+</div>
+<div class="uk-panel uk-text-small uk-margin"><p style="text-align: center;">A Non-profit Organization</p></div>
+<div class="uk-margin uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary" title="Contact Glorian" href="https://shop.glorian.org/pages/contact-us">
+    
+        Contact    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+<div class="uk-margin uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary uk-flex-inline uk-flex-center uk-flex-middle" title="Donate" href="https://glorian.org/give/donate">
+        <span class="uk-margin-small-right" uk-icon="heart"></span>    
+        Donate    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-remove-vertical">        Books    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/books" class="el-link uk-margin-remove-last-child"><p>Books</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><p>Books for Prisons</p></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/about/about-glorian/purchasing-for-education" class="el-link uk-margin-remove-last-child"><p>Books for Schools</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/about/about-glorian/wholesale" class="el-link uk-margin-remove-last-child"><p>Wholesale</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/gnostics" class="el-link uk-margin-remove-last-child"><p>Authors</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin uk-margin-remove-bottom">        Learn    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/learn/knowledge-is-power" class="el-link uk-margin-remove-last-child"><p>Knowledge is Power</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/courses-and-lectures" class="el-link uk-margin-remove-last-child"><p>Courses and Lectures</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/glossary" class="el-link uk-margin-remove-last-child">Glossary</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/podcast-and-radio" class="el-link uk-margin-remove-last-child"><p>Podcast and Radio</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/scriptures" class="el-link uk-margin-remove-last-child"><p>Scriptures</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/learn/topics" class="el-link uk-margin-remove-last-child">Topics</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/video" class="el-link uk-margin-remove-last-child"><p>Videos</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-small">        Connect    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/connect/ask-instructor" class="el-link uk-margin-remove-last-child"><p>Ask an Instructor</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/connect/blog" class="el-link uk-margin-remove-last-child"><p>Blog</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/give/donate" class="el-link uk-margin-remove-last-child"><p>Donate</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/connect/event-calendar" class="el-link uk-margin-remove-last-child"><p>Event Calendar</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/pages/newsletter-signup" class="el-link uk-margin-remove-last-child"><p>Newsletter</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/give/volunteer" class="el-link uk-margin-remove-last-child"><p>Volunteer</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin uk-margin-remove-bottom">        About    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/about-glorian" class="el-link uk-margin-remove-last-child"><p>Glorian</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/gnostics" class="el-link uk-margin-remove-last-child"><p>Gnostics</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/gnostics/samael-aun-weor" class="el-link uk-margin-remove-last-child"><p>Samael Aun Weor</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-remove-bottom">        Shop    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/collections/books" class="el-link uk-margin-remove-last-child">Books</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/collections/incense" class="el-link uk-margin-remove-last-child"><p>Incense</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/collections/posters" class="el-link uk-margin-remove-last-child"><p>Posters</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin-remove-bottom">        Account    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/connect/login" class="el-link uk-margin-remove-last-child">Login: Ask an Instructor </a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/account" class="el-link uk-margin-remove-last-child">Login: Store </a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/account" class="el-link uk-margin-remove-last-child"><p>Order Status</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="copyright" class="uk-section-secondary uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">    <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+            <div>
+<a class="el-link uk-icon-button" href="https://shop.glorian.org/pages/newsletter-signup" rel="noreferrer"><span uk-icon="icon: mail;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://www.facebook.com/GlorianPublishing" rel="noreferrer"><span uk-icon="icon: facebook;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="http://instagram.com/GlorianPublishing" rel="noreferrer"><span uk-icon="icon: instagram;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://twitter.com/GlorianPublishi" rel="noreferrer"><span uk-icon="icon: twitter;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://vimeo.com/glorianpublishing" rel="noreferrer"><span uk-icon="icon: vimeo;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://www.youtube.com/c/Glorian" rel="noreferrer"><span uk-icon="icon: youtube;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://glorian.org/learn/podcast-and-radio" rel="noreferrer"><span uk-icon="icon: play-circle;"></span></a></div>
+    
+    </div></div>
+<div class="uk-text-center">
+    <ul class="uk-margin-remove-bottom uk-subnav  uk-subnav-divider uk-flex-center" uk-margin>        <li class="el-item uk-active">
+    <a class="el-link" href="/about/about-glorian/about-copyrights">© 2022 Glorian Publishing. All Rights Reserved.</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="/about/about-glorian/about-copyrights">Copyrights</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="https://store.gnosticteachings.org/policies/privacy-policy">Privacy Policy</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="#" uk-scroll>Refund Policy</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="/more/sitemap">Sitemap</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="https://store.gnosticteachings.org/policies/terms-of-service">Terms of Service</a></li>
+        </ul>
+
+</div>
+<div><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57VXZ7F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+        </div>
+
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,3 @@
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--pin-tmux-attach-t-localhost-.sh" "#" "<==" "pen-xt"
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--pin-tmux-attach-t-localhost-.sh" "#" "<==" "pen-xt"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers; /root/.pen/tmp/nsfa--tm-init-pin-volumes-home-shane-var-smul.sh" "#" "<==" "pen-xt"

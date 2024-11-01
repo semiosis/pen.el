@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "tmux-list-sockets" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "tmux-list-sockets" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "tmux-list-sockets" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "tmux-list-sockets" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "tmux-list-sockets" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "tmux-list-sockets" "#" "<==" "zsh"

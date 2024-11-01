@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: multiple assignment
+# group: 
+# key: ma
+# --
+(define-values $0)

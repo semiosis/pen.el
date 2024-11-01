@@ -1,0 +1,1 @@
+System.Console.GetOpt [TextOption "Hello", IntOption "1", BoolOption "True"]

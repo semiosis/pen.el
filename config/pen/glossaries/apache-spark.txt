@@ -1,0 +1,4 @@
+Pickle protocol
+    spaCy v2 now fully supports the Pickle
+    protocol, making it easy to use spaCy with
+    Apache Spark. 

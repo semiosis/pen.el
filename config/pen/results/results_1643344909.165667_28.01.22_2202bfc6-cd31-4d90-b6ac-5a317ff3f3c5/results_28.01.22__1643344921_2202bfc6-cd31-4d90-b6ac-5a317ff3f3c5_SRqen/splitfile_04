@@ -1,0 +1,12 @@
+"async/alt!"
+"async/alt!!"
+"async/alt!"))
+
+(defonce main-chan-out (async/chan 1))
+
+(defn main-transducer [in chan]
+  (into [] (comp (map #(conj % (random-uuid))) chan) in))
+
+(defn main-handler [req]
+  (let [body (-> req resp.body)
+        ch

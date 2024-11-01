@@ -1,0 +1,22 @@
+#
+# This is a template for a prompt description file.
+#
+# Each line of the file is a "prompt".  The first word on each line is the
+# name of the prompt.  The other words are the prompt's attributes.
+#
+# The attributes are:
+#
+#   name:  the name of the prompt.
+#
+#   type:  the type of the prompt.  This can be one of the following:
+#
+#       string:  a string prompt
+#       int:     an integer prompt
+#       bool:    a boolean prompt
+#       select:  a select prompt
+#
+#   default:  the default value for the prompt.  This is only used if the
+#             type is "string" or "int".
+#
+#   select-options:  a list of possible values for a select prompt.  This is
+#                    only used

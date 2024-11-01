@@ -1,0 +1,9 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "hex-color-of" "strawberry")))
+--> "ff3399"
+
+
+
+;; Run function -loop
+(message (eval '(-loop "-u" "square-root" "20")))
+--> 

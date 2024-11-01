@@ -1,0 +1,18 @@
+Output:
+
+root@mele:~#
+
+"""
+
+#!/usr/bin/env python
+
+import os
+import sys
+import time
+import re
+import subprocess
+import argparse
+import textwrap
+import getpass
+import datetime
+import platform

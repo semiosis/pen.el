@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "2" "Corinthians" "1:21" "#" "<==" "zsh"
+cd /root/notes;  "2" "Timothy" "4:10" "#" "<==" "zsh"
+cd /root/notes;  "2" "Timothy" "1:15" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "2" "Cronicles" "7:14" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "2" "Chronicles" "7:14" "#" "<==" "zsh"

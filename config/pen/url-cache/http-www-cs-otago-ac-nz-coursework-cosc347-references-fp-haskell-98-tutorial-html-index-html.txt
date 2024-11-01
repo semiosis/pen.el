@@ -1,0 +1,71 @@
+HTTP/1.1 200 OK
+Date: Sun, 03 Apr 2022 08:35:55 GMT
+Server: Apache
+Last-Modified: Wed, 28 Feb 2001 20:43:34 GMT
+ETag: "981-37e6407462980"
+Accept-Ranges: bytes
+Content-Length: 2433
+Content-Type: text/html; charset=UTF-8
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+
+<title>A Gentle Introduction to Haskell, Version 98</title>
+<body bgcolor="#ffffff">
+<hr>
+<div align=center>
+<img src="title.gif" alt="Annoying Graphic Logo">
+<hr>
+<a href="http://www.cs.yale.edu/homes/hudak-paul.html">
+Paul Hudak</a>, Yale University <br>
+<a href="http://www.cs.yale.edu/homes/peterson-john.html">
+John Peterson</a>, Yale University <br>
+<a href="http://coyote.lanl.gov/HOMES/jfasel.html">
+Joseph Fasel</a>, Los Alamos National Laboratory <br>
+<hr>
+September 28, 1999<br>
+</div>
+<hr>
+This is the HTML version of the Gentle Introduction To Haskell, version 98.
+<p>
+Brief Table of Contents.
+<ul>
+<LI><a href="intro.html">Introduction</a>
+<LI><a href="goodies.html">Values, Types, and Other Goodies</a>
+<LI><a href="functions.html">Functions</a>
+<LI><a href="patterns.html">Case Expressions and Pattern Matching</a>
+<LI><a href="classes.html">Type Classes and Overloading</a>
+<LI><a href="moretypes.html">Types, Again</a>
+<LI><a href="io.html">Input/Output</a>
+<LI><a href="stdclasses.html">Standard Haskell Classes</a>
+<LI><a href="monads.html">Monads</a>
+<LI><a href="numbers.html">Numbers</a>
+<LI><a href="modules.html">Modules</a>
+<LI><a href="pitfalls.html">Typing Pitfalls</a>
+<LI><a href="arrays.html">Arrays</a>
+<LI><a href="end.html">The Next Stage</a>
+<LI><a href="haskell-tutorial.html">Bibliography</a>
+<LI><a href="indextutorial.html">Complete Table of Contents</a>
+</UL>
+<p>
+
+The master version of the Haskell Tutorial is at <a
+href="http://haskell.org/tutorial"> haskell.org</a>.  Any corrections or
+changes in the report are found there.
+<p>
+All code in this tutorial, with additional commentary, is found in the
+<a href="code/">code</a> directory packaged with this tutorial.
+We suggest that you inspect, run, and modify  this code as you read
+the tutorial.   This code has been tested on Hugs 98.
+<p>
+ Copyright (C) 1999 Paul Hudak, John Peterson and Joseph Fasel
+<p>
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of "A Gentle Introduction to Haskell" (the Text), to deal
+in the Text without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Text, and to permit persons to whom the
+Text is furnished to do so, subject to the following condition:
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Text.
+</body>
+

@@ -1,0 +1,6 @@
+Output: hi
+root@mele:/root/notes$ echo hi > hi.txt
+root@mele:/root/notes$ cat hi.txt
+Output: hi
+root@mele:/root/notes$ echo hello > hi.txt
+root@mele:/root

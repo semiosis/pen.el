@@ -1,0 +1,95 @@
+epistemology
+    The branch of philosophy concerned with
+    knowledge.
+    
+    Epistemologists study the nature, origin,
+    and scope of knowledge, epistemic
+    justification, the rationality of belief,
+    and various related issues.
+    
+    Epistemology is considered a major
+    subfield of philosophy, along with other
+    major subfields such as ethics, logic, and
+    metaphysics.
+
+    The theory of knowledge, especially with
+    regard to its methods, validity, and
+    scope, and the distinction between
+    justified belief and opinion.
+
+apperception
+    [epistemology]
+
+    The introspective or reflective
+    apprehension by the mind of its own inner
+    states"
+
+reflexivity
+    [#epistemology]
+    [#sociology of knowledge]
+    [social theory]
+
+    Refers to circular relationships between
+    cause and effect, especially as embedded
+    in human belief structures.
+
+skepticism
+scepticism
+    Generally a questioning attitude or doubt
+    towards one or more putative instances of
+    knowledge which are asserted to be mere
+    belief or dogma.
+
+reflexivity
+    [#epistemology]
+    [#sociology of knowledge]
+
+    Refers to circular relationships between
+    cause and effect, especially as embedded
+    in human belief structures.
+
+    Generally refers to the examination of
+    one's own beliefs, judgments and practices
+    during the research process and how these
+    may have influenced the research.
+
+    If positionality refers to what we know
+    and believe then reflexivity is about what
+    we do with this knowledge.
+
+Commonsense Reasoning
+
+Knowledge Representation and Model Checking technique
+    Provides the machinery to perform
+    "Commonsense Reasoning".
+
+Timed Automata
+    [Knowledge Representation and Model Checking technique]
+
+Event Calculus
+    [Knowledge Representation and Model Checking technique]
+
+    [[calibre:An Event Calculus Formalization of Timed Automata]]
+
+    A logic framework that allows the concept
+    of time to explicitly appear inside
+    formulas, while at the same time avoiding
+    to step outside First Order Logic.
+
+fluent
+    A time-dependent property
+
+event
+    [#Commonsense Reasoning]
+
+timepoints
+    [#Commonsense Reasoning]
+
+sensualism
+    [#epistemology]
+
+    A doctrine whereby sensations and
+    perception are the basic and most
+    important form of true cognition.
+
+    It may oppose abstract ideas.

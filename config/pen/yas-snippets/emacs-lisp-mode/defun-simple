@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: defun-simple
+# group: define
+# key: d
+# --
+(defun ${1:funcname} ()
+$0
+)

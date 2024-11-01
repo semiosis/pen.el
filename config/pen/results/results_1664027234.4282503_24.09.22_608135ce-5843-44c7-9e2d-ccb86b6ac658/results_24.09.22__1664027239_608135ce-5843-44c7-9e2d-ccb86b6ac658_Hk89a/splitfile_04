@@ -1,0 +1,1 @@
+name \*.term | sed 's/.term//' | xargs -n1 term

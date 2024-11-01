@@ -1,0 +1,15 @@
+
+
+main :: IO ()
+
+main = do
+
+kids' <- getSchoolKids weather
+
+result <- getInput
+
+case result of
+
+"Travel to school" -> travelToSchool weather
+
+"Do something else"

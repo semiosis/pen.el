@@ -1,0 +1,7 @@
+cd /root/.pen;  "gmi" "init" "#" "<==" "zsh"
+cd /root/.pen;  "gmi" "init" "#" "<==" "zsh"
+cd /root/.pen;  "gmi" "init" "#" "<==" "zsh"
+cd /root/.pen;  "gmi" "init" "mullikine@gmail.com" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "init" "mullikine@gmail.com" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "init" "mullikine@gmail.com" "#" "<==" "zsh"
+cd /root/.pen/Mail;  "gmi" "init" "mullikine@gmail.com" "#" "<==" "zsh"

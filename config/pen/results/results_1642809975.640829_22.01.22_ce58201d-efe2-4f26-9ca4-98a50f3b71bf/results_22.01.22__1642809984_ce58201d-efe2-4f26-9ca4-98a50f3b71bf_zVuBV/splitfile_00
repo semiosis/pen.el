@@ -1,0 +1,20 @@
+
+In vscode, there are many package managers.
+They include "npm", "typescript", "vscode" and "yarn".
+It is also possible to configure the "extensions" manager.
+###
+Human: Are there any packages similar to npm?
+###
+AI: It's possible to install more software with vscode.
+For example, they can be installed with "vscode" or "yarn".
+###
+Human: What's the best way to install packages?
+###
+AI: The best way to install packages is to use "vscode".
+###
+Human: What is the difference between the "vscode" and the "yarn" package managers?
+###
+AI: They are installed with different package managers.
+"vscode" allows you to install packages by using a GUI,
+it is easier to install packages, but requires a GUI.
+"

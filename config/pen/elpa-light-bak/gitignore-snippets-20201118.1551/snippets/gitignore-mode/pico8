@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: pico8
+# contributor: Toptal & contributors
+# key: pico8
+# --
+
+### pico8 ###
+
+# exported file types
+*.p8.png
+*.png
+*.wav
+*.js
+*.html
+*.bin
+
+# demos folder
+demos/

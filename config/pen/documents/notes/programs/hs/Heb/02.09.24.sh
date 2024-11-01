@@ -1,0 +1,6 @@
+cd //;  "Heb" "5:7-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Heb" "5:4-5" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Heb" "3:6" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Heb" "2:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Heb" "2:11-12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Heb" "9:14" "#" "<==" "zsh"

@@ -1,0 +1,1 @@
+aws ec2 describe-security-groups --group-ids $(aws ec2 describe-instances --query "Reservations[*].Instances[*].SecurityGroups[*].GroupId" --output text | tr '\n' ' ') --query "SecurityGroups[*].GroupName" --output text

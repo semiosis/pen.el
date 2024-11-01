@@ -1,0 +1,60 @@
+https://github.com/eclipse/lsp4j/blob/master/documentation/jsonrpc.md
+
+diagnostics
+    This is the linter/flycheck.
+
+    Parser:
+        j:lsp-ui-flycheck-list--update
+
+    (etv (pps (lsp-diagnostics)))
+
+features:
+    https://microsoft.github.io/language-server-protocol/specification.html#initialize
+
+    - semantic token
+    - call hierarchy
+    - linked editing
+    - moniker
+    - file operations events
+    - change annotation
+
+semantic token
+    [feature]
+
+call hierarchy
+    [feature]
+
+linked editing
+    [feature]
+
+moniker
+    [feature]
+
+file operations events
+    [feature]
+
+change annotation
+    [feature]
+
+    Affects:
+    - text edits, and
+    - file operations
+
+endpoint
+    [#lsp4j]
+    [interface]
+
+    Takes care of the connecting a request
+    messages with responses.
+
+    Defines two methods:
+    - request
+    - notify
+
+snippet
+tabstop
+placeholder
+choice
+variable
+variable transfrom
+    v +/"# Snippet Syntax" "$MYGIT/Microsoft/language-server-protocol/snippetSyntax.md"

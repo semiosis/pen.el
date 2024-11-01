@@ -1,0 +1,4 @@
+;; thing to hex color
+;; arguments: (thing)
+(message (eval '(thing-to-hex-color "surreptitious strawberry")))
+--> [38;5;171mWaiting for output from promptee...[m

@@ -1,0 +1,9 @@
+;; Run function hex-color-of
+(message (eval '(hex-color-of "pyramid")))
+--> "ffb5b5"
+
+
+
+;; Run function hex-color-of
+(message (eval '(hex-color-of "water")))
+--> 

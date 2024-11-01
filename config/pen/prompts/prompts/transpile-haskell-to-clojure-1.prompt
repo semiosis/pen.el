@@ -1,0 +1,42 @@
+# The task may be used as a metaprompt and as part of the name of a prompt function.
+# An engine is required to understand what the task does.
+# This is encoded into the text properties in the Ink.el format
+task: '#("Transpile Haskell to Clojure" 0 27 (engine "OpenAI Davinci" language "English" topic "programming"))'
+tags: code haskell clojure
+prompt: |+
+    Haskell:
+    zip (map show [1,5,9]) ["a","b","c"]
+    Clojure:
+    (println (map vector '(1 2 3) '(4 5 6)))
+
+    Haskell:
+    map toUpper "MiXeD cAsE"
+    Clojure:
+    (clojure.string/upper-case "MiXeD cAsE")
+
+    Haskell:
+    putStrLn "Hello World"
+    Clojure:
+    (println "Hello World")
+
+    Haskell:
+    import Data.Time.Clock
+    import Data.Time.Calendar
+    date :: IO (Integer, Int, Int) -- :: (year, month, day)
+    date = getCurrentTime >>= return . toGregorian . utctDay
+    Clojure:
+    (defn date [] (.toString (java.util.Date.)))
+
+    Haskell:
+    <1>
+    Clojure:
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- haskell code
+examples:
+- min 1 2

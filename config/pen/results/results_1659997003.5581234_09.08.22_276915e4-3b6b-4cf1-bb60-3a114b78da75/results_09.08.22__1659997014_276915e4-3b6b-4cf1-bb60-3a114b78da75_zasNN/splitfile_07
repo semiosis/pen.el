@@ -1,0 +1,16 @@
+
+
+I love you.
+EOD
+
+cat draft.org <<EOD
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Marry Me Melee 2
+#+DATE: <2022-08-10>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: melee, love, marriage, wedding, proposal, proposal2, proposal3, proposal4, proposal5, proposal6, proposal7, proposal8, proposal9, proposal10, proposal11, proposal12, proposal13, proposal14, proposal15, proposal16, proposal17

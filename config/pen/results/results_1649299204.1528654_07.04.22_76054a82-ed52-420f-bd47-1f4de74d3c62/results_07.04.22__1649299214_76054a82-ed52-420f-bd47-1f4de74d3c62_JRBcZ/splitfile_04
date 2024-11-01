@@ -1,0 +1,7 @@
+ v6.15.0
+
+npm install -g @angular/cli
+
+ng new my-app
+
+cd my-app

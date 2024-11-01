@@ -1,0 +1,24 @@
+
+vscode extensions (VSCode Extensions): https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin
+
+This is just one example of a useful vscode package.
+###
+Human: Thank you.
+I will use these packages right away.
+###
+AI: My pleasure.
+I am here to help.
+"""))
+
+vscode_thank_you = Template(dedent("""\
+This is a conversation between a human and a brilliant AI.
+The topic is "packages" in the context of "vscode".
+
+Human: Thanks for all your help, my tutor.
+###
+AI: It's my pleasure.
+"""))
+
+# Provide some context
+print("This is a conversation between a human and a brilliant AI.")
+print("The topic is \"packages\" in

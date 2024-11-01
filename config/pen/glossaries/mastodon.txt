@@ -1,0 +1,29 @@
+Home
+    Posts from people you follow will appear
+    in your home feed.
+    
+    You can follow anyone on any server!
+
+Local
+    Public posts from people on the same
+    server as you will appear in the local
+    timeline.
+
+Federated
+    Public posts from other servers of the
+    fediverse will appear in the federated
+    timeline.
+
+Reply
+    You can reply to other people's and your
+    own toots, which will chain them together
+    in a conversation.
+
+Boost
+    You can share other people's toots with
+    your followers by boosting them.
+
+Favourite
+    You can save a toot for later, and let the
+    author know that you liked it, by
+    favouriting it.

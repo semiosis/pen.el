@@ -1,0 +1,22 @@
+- 1. Chomsky (1927-)
+- 2. Russell (1872-1970)
+- 3. Chomsky (1927-)
+- 4. Russell (1872-1970)
+"""
+from nltk import word_tokenize, pos_tag, ne_chunk
+from nltk.tree import Tree
+from nltk.corpus import wordnet as wn
+from collections import Counter, defaultdict as dd
+from random import randint
+import re
+
+
+def read_corpus(path):
+    with open(path, 'r') as f:
+        corpus = f.read()
+
+    return corpus
+
+
+def tokenize(doc):
+    "Returns a list

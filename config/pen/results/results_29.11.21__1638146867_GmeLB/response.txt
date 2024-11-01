@@ -1,0 +1,8 @@
+Generate a defstruct definition for the given list of data members."
+  (interactive "sList of data members: ")
+  (let ((struct-name (read-string "Name of the struct: ")))
+    (insert (format "(defstruct %s\n" struct-name))
+    (mapcar (lambda (member)
+	      (insert (format "  %s\n" member)))
+	    (split-string list-of-data-members))
+    (insert ")")))

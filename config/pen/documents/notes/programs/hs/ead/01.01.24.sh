@@ -1,0 +1,5 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-;  "ead" "-i" "burglary" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "StartAppend" "#" "<==" "ead"
+cd /;  "ead" "windo" "silent" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "windo" "silent" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "StartAppend" "#" "<==" "ead"

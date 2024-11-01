@@ -1,0 +1,2 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" '/bin/nano' '-m' '/root/.pen/tmp/zT3ZbdSswy'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"
+cd /root/.emacs.d/host/pen.el/scripts;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" '/bin/nano' '-m' '/root/.pen/tmp/klm9JrQMvE'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

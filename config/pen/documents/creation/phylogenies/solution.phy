@@ -1,0 +1,15 @@
+# A solution is a git project that fulfils a need
+
+name: "Solution"
+
+proto:
+- ext: need
+- repo: needs
+
+meta:
+- ext: design
+- repo: designs
+
+actual:
+- ext: soln
+- repo: solutions

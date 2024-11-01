@@ -1,0 +1,3 @@
+#!/bin/sh
+cd "$PENCONF/Mail"
+gmi sync

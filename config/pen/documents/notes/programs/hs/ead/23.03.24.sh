@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "grepfilter-transform.els" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "canonicalise-bible-book-title" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "canonicalise-bible-book-title" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "canonicalise-bible-book-title" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "canonicalise-bible-book-title.cl" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "canonicalise-bible-book-title.cl" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "canonicalise-bible-book-title" "#" "<==" "ead"

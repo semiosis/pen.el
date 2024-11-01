@@ -1,0 +1,9 @@
+;; Run function list-n-programming-languages
+(message (eval '(list-n-programming-languages 5 "Functional")))
+--> (("Functional" "Haskell" "Lisp" "Scheme" "Clojure")
+
+
+
+;; Run function list-n-programming-languages
+(message (eval '(list-n-programming-languages 4 "Functional")))
+--> 

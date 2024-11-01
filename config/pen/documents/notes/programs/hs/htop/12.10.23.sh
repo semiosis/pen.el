@@ -1,0 +1,6 @@
+cd /root/notes;  "htop" "#" "<==" "tmux: server"
+cd /root/notes;  "htop" "#" "<==" "tmux: server"
+cd /root/.emacs.d/host/pen.el/src;  "htop" "#" "<==" "tmux: server"
+cd /root/notes;  "htop" "#" "<==" "tmux: server"
+cd /root/notes;  "htop" "#" "<==" "tmux: server"
+cd /root/notes;  "htop" "#" "<==" "tmux: server"

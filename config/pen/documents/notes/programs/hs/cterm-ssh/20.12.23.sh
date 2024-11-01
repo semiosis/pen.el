@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes/ws/peniel;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "which" "chrome" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes/ws/peniel;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "chrome" "https://www.youtube.com/watch?v=MHu3cH34-0g" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "acpi" "-b" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/agenda;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/All_Who_Believe_And_Are_Baptized-Es_ist_das_Heil_uns_Kommen_her.mp3" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/agenda;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "nmtui" "#" "<==" "pen-ssh-host"

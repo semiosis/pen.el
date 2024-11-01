@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pry
+# key: pry
+# --
+import "github.com/d4l3k/go-pry/pry"
+
+pry.Pry()

@@ -1,0 +1,25 @@
+ (T.words <$>) columns
+
+  -- Turn each number into a number and store it in a list of numbers, one for each column in the record.
+  numbers <- map (map read) numbers
+
+  -- Print the sum of all the numbers.
+  print $ sum numbers
+EOD
+
+# haskell files
+cat draft.haskell <<EOD
+module Main where
+
+import Data.List (foldl')
+import Data.Maybe (fromJust)
+import Data.Text (unpack)
+import qualified Data.ByteString as B
+import qualified Data.ByteString.Lazy as BL
+import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
+import qualified Data.Vector as V
+import qualified Data.Vector.Storable as VS
+
+  -- Read the CSV from stdin and decode it into a list of lines.
+  -- We use the Lazy version of Byte

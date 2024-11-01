@@ -1,0 +1,4 @@
+
+    input <- getLine
+    let output = input ++ "s"
+    putStrLn output

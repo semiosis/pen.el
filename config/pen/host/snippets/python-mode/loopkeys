@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: loopkeys
+# key: loopkeys
+# --
+d = {'matthew': 'blue', 'rachel': 'green', 'raymond': 'red'}
+
+for k in d:
+print k
+
+# `d.keys()` makes a copy of all the keys and stores them in a list. Then you can modify the dictionary.
+for k in d.keys():
+if k.startswith('r'):
+del d[k]

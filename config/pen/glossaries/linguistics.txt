@@ -1,0 +1,1730 @@
+periphrasis
+    [#linguistics]
+
+    The use of one or more function words to
+    express meaning that otherwise may be
+    expressed by attaching an affix or clitic
+    to a word.
+    
+    The resulting phrase includes two or more
+    collocated words instead of one inflected
+    word.
+
+cognate
+lexical cognate
+    [#historical linguistics]
+
+    Cognates are sets of words in different
+    languages that have been inherited in
+    direct descent from an etymological
+    ancestor in a common parent language.
+
+creole
+    A creole language arises if a pidgin,
+    developed by adults for use as a second
+    language, becomes the native and primary
+    language of their children.
+
+    https://aclanthology.org/2021.conll-1.5.pdf
+
+preposition
+    Literally, "pre-position" -- it's a word
+    that expects another word to follow.
+
+    A word such as after, in, to, on, and
+    with.
+
+    Prepositions are usually used in front of
+    nouns or pronouns and they show the
+    relationship between the noun or pronoun
+    and other words in a sentence
+
+adverb
+    Like a decorator for a phrase.
+
+    An adverb is a word that modifies a verb,
+    adjective, determiner, clause,
+    preposition, or sentence.
+
+    Typically express manner, place, time,
+    frequency, degree, level of certainty,
+    etc., answering questions such as how?, in
+    what way?, when?, where?, and to what
+    extent?
+
+Anaphoric
+    An expression who's interpretation depends
+    on its antecedent or postcedent.
+
+    Anaphoric form of ‘-map’.
+
+text world theory
+    The basic premise is that human beings
+    process and understand all discourse by
+    constructing mental representations of it
+    in their minds.
+    
+    Aims to provide the analytical tools
+    necessary for the systematic examination
+    and discussion of these mental
+    representations, or text-worlds.
+
+    https://textworldtheory.org/about/
+
+foregrounding
+    A concept in literary studies concerning
+    making a linguistic utterance stand out
+    from the surrounding linguistic context,
+    from given literary traditions or from
+    more general world knowledge.
+
+deixis
+    [#linguistics]
+
+    The use of general words and phrases to
+    refer to a specific time, place, or person
+    in context, e.g., the words tomorrow,
+    there, and they.
+    
+    Words are deictic if their semantic
+    meaning is fixed but their denoted meaning
+    varies depending on time and/or place.
+
+major levels of linguistic structure
+    - phoenetics
+      - speech sounds
+    - phonology
+      - phonemes
+    - morphology
+      - words
+    - syntax
+      - phrases and sentences
+    - semantics
+      - literal meaning of phrases and
+        sentences
+    - pragmatics
+      - meaning in context of discourse
+
+    https://link.springer.com/article/10.3758/s13423-016-1061-2/figures/1
+
+constituent
+syntactic analysis
+    [#linguistics]
+
+    A word or a group of words that function
+    as a single unit within a hierarchical
+    structure.
+    
+    The constituent structure of sentences is
+    identified using tests for constituents.
+
+clause
+    [#language]
+
+    A constituent that comprises a semantic
+    predicand and a semantic predicate.
+    
+    A typical clause consists of a subject and
+    a syntactic predicate, the latter
+    typically a verb phrase composed of a verb
+    with any objects and other modifiers.
+
+    A unit of grammatical organization next
+    below the sentence in rank and in
+    traditional grammar said to consist of a
+    subject and predicate.
+
+    A particular and separate article,
+    stipulation, or proviso in a treaty, bill,
+    or contract.
+
+subordinate clause
+dependent clause
+embedded clause
+    A clause that is embedded within a complex
+    sentence.
+    
+    For instance, in the English sentence "I
+    know that Bette is a dolphin", the clause
+    "that Bette is a dolphin" occurs as the
+    complement of the verb "know" rather than
+    as a freestanding sentence.
+
+predicand
+    [#semantics]
+
+    An argument in an utterance, specifically
+    that of which something is predicated.
+    
+    By extension, in syntax, it is the
+    constituent in a clause typically
+    functioning as the subject.
+
+presupposition
+    A thing tacitly assumed beforehand at the
+    beginning of a line of argument or course
+    of action.
+    "both men shared certain ethical
+    presuppositions about the universe"
+
+    [#pragmatics]
+
+    An implicit assumption about the world or
+    background belief relating to an utterance
+    whose truth is taken for granted in
+    discourse.
+    
+    Example:
+    - Jane no longer writes fiction.
+
+semantic domain
+    Some words have a 'narrow semantic
+    domain', a very technical thing - such as
+    a USB port.
+    
+    But some words have a 'broad semantic
+    domain'.
+
+interjection
+    A word, phrase, or sentence that expresses
+    emotion, meaning, or feeling.
+    
+    These emotion words proceed punctuation
+    marks, which are most often but not always
+    exclamation points.
+    
+    For example: Rats! My research paper is
+    late!
+
+disjunct
+    [#linguistics]
+
+    A type of adverbial adjunct that expresses
+    information that is not considered
+    essential to the sentence it appears in,
+    but which is considered to be the
+    speaker's or writer's attitude towards, or
+    descriptive statement of, the
+    propositional content of the sentence,
+    "expressing, for example, the speaker's
+    degree of truthfulness or his manner of
+    speaking." A specific type of disjunct is
+    the sentence adverb (or sentence
+    adverbial), which modifies a sentence, or
+    a clause within a sentence, to convey the
+    mood, attitude or sentiments of the
+    speaker, rather than an adverb modifying a
+    verb, an adjective or another adverb
+    within a sentence.
+    
+    More generally, the term disjunct can be
+    used to refer to any sentence element that
+    is not fully integrated into the clausal
+    structure of the sentence.
+    
+    Such elements usually appear peripherally
+    (at the beginning or end of the sentence)
+    and are set off from the rest of the
+    sentence by a comma (in writing) and a
+    pause (in speech).
+
+lexeme
+    A unit of lexical meaning that underlies a
+    set of words that are related through
+    inflection. It is a basic abstract unit of
+    meaning, a unit of morphological analysis
+    in linguistics that roughly corresponds to
+    a set of forms taken by a single root
+    word.
+
+synset
+    A set of synonyms that represent a single
+    sense of a word.
+
+wordform
+    The full inflected surface form.
+
+    Example:
+    "cat" and "cats" are different wordforms.
+
+lemma
+    The same stem, part of speech, rough word sense
+
+    Example:
+    "cat" and "cats" are the same lemma.
+
+    One lemma can have many meanings.
+
+    Example:
+    a bank can hold investments...
+    agriculture on the east bank...
+
+sense
+    A discrete representation of an aspect of
+    a word's meaning.
+
+    The usages of bank in the previous example
+    have a different sense.
+
+homonyms
+    Words that share form but have unrelated,
+    distinct meanings (such as "bank").
+
+    - Homographs: bank/bank, bat/bat
+    - Homophones: write/right, piece/peace
+
+polysemy
+    A polysemous word has related meanings,
+    for example:
+
+    - "the bank was built in 1875 ("bank" = a
+      building belonging to a financial
+      institution)"
+    - "I withdrew money from the bank ("bank"
+      = a financial institution)"
+
+    - Systematic polysemy, or metonymy, is
+      when the meanings have a systematic
+      relationship.
+    - For example, "school", "university",
+      "hospital" - all can mean the
+      institution or the building, so the
+      systematic relationship here is building
+      <=> organization.
+    - Another example is author <=> works of
+      author, e.g. "Jane Austen wrote Emma"
+      and "I love Jane Austen".
+
+synonyms
+    Different words that have the same
+    propositional meaning in some or all
+    contexts.
+
+    However, there may be no examples of
+    perfect synonymy since even if
+    propositional meaning is identical, they
+    may vary in notions of politeness or other
+    usages and so on.
+
+    Examples:
+    - "water" and "H2O" - each are more
+      appropriate in different contexts.
+    - "big" and "large" - sometimes they can
+      be swapped, sometimes they cannot:
+      - That's a big plane. How large is that
+        plane? (Acceptable)
+      - Miss Nelson became kind of a big
+        sister to Benjamin. Miss Nelson became
+        kind of a large sister to Benjamin
+        (Not as acceptable)
+
+      The latter works less because "big" has
+      multiple senses, one of which does not
+      correspond to "large".
+
+antonyms
+    Senses which are opposite with respect to
+    one feature of meaning, but otherwise are
+    similar, such as dark/light, short/fast,
+    etc.
+
+hyponym
+    One sense is a hyponym of another if the
+    first sense is more specific (i.e. denotes
+    a subclass of the other).
+
+    Examples:
+    - car is a hyponym of vehicle
+    - mango is a hyponym of fruit
+
+Infinitive
+    A linguistics term for certain verb forms
+    existing in many languages, most often
+    used as non-finite verbs.
+    
+    As with many linguistic concepts, there is
+    not a single definition applicable to all
+    languages.
+
+    A verbal consisting of the word to plus a
+    verb (in its simplest "stem" form) and
+    functioning as a noun, adjective, or
+    adverb.
+    
+    The term verbal indicates that an
+    infinitive, like the other two kinds of
+    verbals, is based on a verb and therefore
+    expresses action or a state of being.
+
+apostrophe
+    An exclamatory passage in a speech or poem
+    addressed to a person (typically one who
+    is dead or absent) or thing (typically one
+    that is personified).
+
+    It's a little bit like a soliloquy.
+
+polysemy
+    Lexical ambiguity.
+
+    The ambiguity of an individual word or
+    phrase that can be used (in different
+    contexts) to express two or more different
+    meanings.
+
+    Characterized as the phenomenon whereby a
+    single word form is associated with two or
+    several related senses.
+    
+    It is distinguished from monosemy.
+
+monosemy
+    Where one word form is associated with a
+    single meaning, and homonymy, where a
+    single word form is associated with two or
+    several unrelated meanings.       
+
+homosemy
+    The state of having identical or exactly
+    the same meaning.
+
+troponym
+    A verb that indicates more precisely the
+    manner of doing something by replacing a
+    verb of a more generalized meaning.
+    'Stroll' is a troponym of 'walk', since it
+    involves a slow and relaxed sort of
+    walking.
+
+troponymy
+    The presence of a 'manner' relation
+    between two lexemes. The concept was
+    originally proposed by Christiane Fellbaum
+    and George Miller. Some examples they gave
+    are "to nibble is to eat in a certain
+    manner, and to gorge is to eat in a
+    different manner.
+
+meronyms
+    A term which denotes part of something but
+    which is used to refer to the whole of it,
+    e.g. faces when used to mean people in I
+    see several familiar faces present.
+
+Coordinate Terms (sisters)
+    A term which shares a hypernym with
+    another.
+
+hypernym
+superordinate
+superordinate word
+    A word that is more generic than a given
+    word.
+
+    Examples:
+    - vehicle is a hypernym of car
+    - fruit is a hypernym of mango
+
+collocation
+    [corpus linguistics]
+
+    The habitual juxtaposition of a particular
+    word with another word or words with a
+    frequency greater than chance.
+
+    Examples:
+    - strong tea
+    - heavy drinker
+
+bigram
+    A pair of consecutive written units such
+    as letters, syllables, or words.
+
+interlocutor
+    [#linguistics]
+    [#discourse analysis]
+
+    A person involved in a conversation or
+    dialogue.
+    
+    Two or more people speaking to one another
+    are each other's interlocutors.
+    
+    The terms conversation partner, hearer, or
+    addressee are oftentimes used
+    interchangeably with interlocutor.
+
+metapragmatics
+    The study of how the effects and
+    conditions of language use themselves
+    become objects of discourse.
+    
+    The term is commonly associated with the
+    semiotically-informed linguistic
+    anthropology of Michael Silverstein.
+
+agglutinative language
+    The noun is followed by a particle, and
+    the stem of the verb or adjective is
+    followed by endings, expressing various
+    grammatical properties.
+
+portmanteau
+portmanteau word
+    A blend of words in which parts of
+    multiple words are combined into a new
+    word, as in smog, coined by blending smoke
+    and fog, or motel, from motor and hotel.
+    
+    In linguistics, a portmanteau is a single
+    morph that is analyzed as representing two
+    underlying morphemes.
+
+penult
+    A linguistics term for the second to last
+    syllable of a word.
+    
+    It is an abbreviation of penultimate,
+    which describes the next-to-last item in a
+    series.
+    
+    The penult follows the antepenult and
+    precedes the ultima.
+
+diachrony
+synchrony
+    Synchrony and diachrony are two different
+    and complementary viewpoints in linguistic
+    analysis.
+    
+    A synchronic approach considers a language
+    at a moment in time without taking its
+    history into account.
+    
+    Synchronic linguistics aims at describing
+    a language at a specific point of time,
+    usually the present.
+
+circumlocution
+    A phrase that circles around a specific
+    idea with multiple words rather than
+    directly evoking it with fewer and apter
+    words.
+    
+    It is sometimes necessary in
+    communication, but it can also be
+    undesirable.
+
+epithet
+    A byname, or a descriptive term,
+    accompanying or occurring in place of a
+    name and having entered common usage.
+    
+    It has various shades of meaning when
+    applied to seemingly real or fictitious
+    people, divinities, objects, and binomial
+    nomenclature.
+
+pleonasm
+    The use of more words than are necessary
+    to convey meaning (e.g. see with one's
+    eyes ), either as a fault of style or for
+    emphasis.
+
+    Redundancy in linguistic expression, such
+    as "black darkness" or "burning fire".
+    
+    It is a manifestation of tautology by
+    traditional rhetorical criteria, and might
+    be considered a fault of style.
+    
+    Pleonasm may also be used for emphasis, or
+    because the phrase has become established
+    in a certain form.
+
+types of force
+    [#Speech Act Theory]
+
+    - locutionary act
+    - illocutionary act
+    - perlocutionary act
+
+locution
+    What was said.
+
+    i.e. someone tries to say X in French.
+
+    The words of X is what the locutionary act
+    was -- the utterance itself.
+
+    It would still be locution if there were
+    no hearer.
+
+illocution
+    The aim of a speaker in making an
+    utterance as opposed to the meaning of the
+    terms used.
+
+    i.e. The recipient was Italian so the
+    words meant Y to them, not X.
+
+    Illocution was still X, although it may
+    have come across as Y.
+
+    There must be a hearer or the hope of a
+    hearer for there to be illocutionary
+    force, as the aim is to evoke something
+    from someone somewhere.
+
+perlocution
+    What happened as a result.
+
+    i.e. Y sounded like a command of sorts
+    when interpreted in Italian, and so the
+    recipient responded as if the speaker said
+    Y instead of X.
+
+    Even just the interpretation could be
+    considered the Y.
+
+locutionary act
+    [#linguistics]
+    [#philosophy of language]
+    [#speech-act theory]
+
+    [type of force]
+
+    The performance of an utterance, and is
+    one of the types of force, in addition to
+    illocutionary act and perlocutionary act,
+    typically cited in Speech Act Theory.
+
+illocutionary act
+    [#linguistics]
+    [#philosophy of language]
+    [#speech-act theory]
+
+    [type of force]
+
+    In speech-act theory, the term
+    illocutionary act refers to the use of a
+    sentence to express an attitude with a
+    certain function or "force," called an
+    illocutionary force, which differs from
+    locutionary acts in that they carry a
+    certain urgency and appeal to the meaning
+    and direction of the speaker.
+
+    The concept of illocutionary acts was
+    introduced into linguistics by the
+    philosopher J. L. Austin in his
+    investigation of the various aspects of
+    speech acts.
+    
+    In his framework, locution is what was
+    said and meant, illocution is what was
+    done, and perlocution is what happened as
+    a result.
+
+perlocutionary act
+    [#linguistics]
+    [#philosophy of language]
+    [#speech-act theory]
+
+    [type of force]
+
+    The effect of an utterance on an
+    interlocutor.
+    
+    Examples of perlocutionary acts include
+    persuading, convincing, scaring,
+    enlightening, inspiring, or otherwise
+    affecting the interlocutor.
+
+transitive verb
+    A verb that accepts one or more objects.
+    
+    This contrasts with intransitive verbs,
+    which do not have objects.
+    
+    Transitivity is traditionally thought a
+    global property of a clause, by which
+    activity is transferred from an agent to a
+    patient.
+
+neologism
+    A newly coined word or expression.
+
+    A neologism is a relatively recent or
+    isolated term, word, or phrase that may be
+    in the process of entering common use, but
+    that has not yet been fully accepted into
+    mainstream language.
+    
+    Neologisms are often driven by changes in
+    culture and technology.
+
+thematic
+    Having or relating to subjects or a
+    particular subject.
+    "the book is organized into nine thematic
+    chapters"
+
+    Relating to or denoting the theme of a
+    sentence.
+    "some languages use special affixes to
+    mark thematic and non-thematic elements"
+
+Sapir-Whorf hypothesis
+    Holds that our thoughts are shaped by our
+    native language, and that speakers of
+    different languages therefore think
+    differently.
+
+    The way you use a language shapes your
+    world but in 70 years there is almost zero
+    evidence that a language shapes your
+    interpretation of the world.
+
+generativity
+    The use of finite resources to produce an
+    infinite variety of sentences
+
+    Language has the property of generativity.
+
+language universal
+    A feature common to all languages.
+
+absolute linguistic universal
+    A feature common to all languages.
+
+    Rare, unless one takes an over-broad view
+    of the word 'universal'.
+    
+    Even when apparently found, they differ in
+    details from language to language.
+
+psycholinguistics
+    The field of study in which researchers
+    investigate the psychological processes
+    involved in the use of language, including
+    language comprehension, language
+    production, and first and second language
+    acquisition.
+
+polysemy
+polysemic
+    The capacity for a word or phrase to have
+    multiple related meanings.
+    
+    Polysemy is thus distinct from homonymy—or
+    homophony—which is an accidental
+    similarity between two or more words;
+    while homonymy is a mere linguistic
+    coincidence, polysemy is not.
+
+biolinguistics
+    The study of biology and the evolution of
+    language.
+    
+    It is highly interdisciplinary as it is
+    related to various fields such as biology,
+    linguistics, psychology, anthropology,
+    mathematics, and neurolinguistics to
+    explain the formation of language.
+
+phatic expression
+phatic communication
+    [#linguistics]
+
+    A phatic expression is communication which
+    serves a social function, such as social
+    pleasantries that don't seek or offer
+    information of intrinsic value but can
+    signal willingness to observe conventional
+    local expectations for politeness.
+
+hapax legomenon
+hapax
+hapaxes
+    A word or an expression that occurs only
+    once within a context: either in the
+    written record of an entire language, in
+    the works of an author, or in a single
+    text.
+
+    Literally, it means "being said once".
+
+dis legomenon
+    [hapax legomenon]
+
+    Triple occurrences.
+
+tris legomenon
+    [hapax legomenon]
+
+    Triple occurrences.
+
+tetrakis legomenon
+    [hapax legomenon]
+
+    Quadruple occurrences.
+
+synchronic
+    Concerned with something, especially a
+    language, as it exists at one point in
+    time.
+    "synchronic linguistics"
+
+modality
+    [#natural language]
+    [#linguistics]
+    [#philosophy]
+
+    The phenomenon whereby language is used to
+    discuss possible situations.
+    
+    For instance, a modal expression may
+    convey that something is likely,
+    desirable, or permissible.
+
+coreference
+co-reference
+    Sometimes written co-reference, occurs
+    when two or more expressions in a text
+    refer to the same person or thing; they
+    have the same referent, e.g. Bill said he
+    would come; the proper noun Bill and the
+    pronoun he refer to the same person,
+    namely to Bill.
+
+Affix
+    [#linguistics]
+    [morpheme]
+
+    A morpheme that is attached to a word stem
+    to form a new word or word form.
+
+    Affixes may be derivational, like English
+    -ness and pre-, or inflectional, like
+    English plural -s and past tense -ed.
+
+    They are bound morphemes by definition;
+    prefixes and suffixes may be separable
+    affixes.
+
+semiosis
+    It is important to understand what I mean
+    by semiosis.
+    
+    All dynamical action, or action of brute
+    force, physical or psychical, either takes
+    place between two subjects (whether they
+    react equally upon each other, or one is
+    agent and the other patient, entirely or
+    partially) or at any rate is a resultant
+    of such actions between pairs.
+    
+    But by “semiosis” I mean, on the contrary,
+    an action, or influence, which is, or
+    involves, a coöperation of three subjects,
+    such as a sign, its object, and its
+    interpretant, this tri-relative influence
+    not being in any way resolvable into
+    actions between pairs.
+
+constructive vs selective grammar
+    We will distinguish between selective
+    grammars and constructive grammars
+    following the spirit of the classical
+    terminological distinction that Massimo
+    Piattelli-Palmarini (1989) originally
+    introduced into linguistics from biology.
+
+    In textbooks, you will never find the
+    rules that eliminate the impossible
+    combinations of words (selective
+    grammars).
+
+    You only find the rules that describe the
+    possible combinations (constructive
+    grammars), and among these rules, you are
+    likely to find just those that lead to
+    ‘‘proper’’ language rather than actual
+    spoken language.
+    
+    The Boundaries of Babel_ The Brain and the Enigma of Impossible Languages (2008, The MIT Press) - libgen.lc.pdf
+
+neurobiological correlates
+    https://mitpress.mit.edu/books/boundaries-babel
+
+universal grammar
+    Arguments for:
+    - Convergence
+
+components of universal grammar
+
+displaced reference
+
+discrete infinity
+
+nativism
+generativism
+
+X-bar theory
+X` theory
+    A theory of syntactic category formation.
+
+    It embodies two independent claims: one,
+    that phrases may contain intermediate
+    constituents projected from a head X; and
+    two, that this system of projected
+    constituency may be common to more than
+    one category.
+
+    Noam Chomsky said something about it.
+
+    https://www.youtube.com/watch?v=n8TYuq173N0&ab_channel=TheTrevTutor
+    - phrase
+    - specificer
+    - adjunct
+    - complement
+    - head
+
+specifier
+    [#x-bar]
+
+    Daughters to XPs and sisters to X`s
+
+merge function
+    https://www.youtube.com/watch?v=9JScy7ulDpE
+
+    Language is designed as a system of
+    thought and not of a system of
+    externalisation.
+
+phonology
+    A branch of linguistics that studies how
+    languages or dialects systematically
+    organize their sounds.
+
+    The term also refers to the sound system
+    of any particular language variety.
+
+    At one time, the study of phonology only
+    related to the study of the systems of
+    phonemes in spoken languages.
+
+Reflexive pronoun
+    In general linguistics, a reflexive
+    pronoun, sometimes simply called a
+    reflexive, is an anaphoric pronoun that
+    must be coreferential with another nominal
+    within the same clause.
+
+    In the English language specifically, a
+    reflexive pronoun will end in ‑self or
+    ‑selves, and refer to a previously named
+    noun or pronoun.
+
+indelible
+    Making marks that cannot be removed.
+
+    "indelible fingerprint"
+
+impossible language
+     The human mind, despite its almost
+     infinite ingenuity, can't invent a
+     language that doesn't share the
+     fundamental properties of language
+     itself.
+
+    - the conditions of possibility of language.
+    - the mystery of human communication
+    - studies of syntax with neurology   
+
+    https://mitpress.mit.edu/books/impossible-languages
+
+phrasal verb
+    An idiomatic phrase consisting of a verb
+    and another element, typically either an
+    adverb, as in break down, or a
+    preposition, for example see to, or a
+    combination of both, such as look down on.
+
+    Examples:
+    - going into
+
+Linguistic typology
+    Morphological
+        Analytic (https://en.wikipedia.org/wiki/Analytic_language)
+        Isolating
+        Synthetic
+            Fusional
+            Agglutinative
+            Polysynthetic
+            Oligosynthetic
+    Morphosyntactic
+        Alignment
+        Accusative
+        Ergative
+        Split ergative
+        Austronesian
+        Active–stative
+        Tripartite alignment
+        Marked nominative
+        Ditransitive/Monotransitive
+            Secundative
+            Indirective
+        Zero-marking
+        Dependent-marking
+        Double-marking
+        Inverse marking
+        Head-marking
+        Null-subject
+        Syntactic pivot
+        Theta role
+    Word order
+        VO languages
+            Subject–verb–object
+            Verb–subject–object
+            Verb–object–subject
+        OV languages
+            Subject–object–verb
+            Object–subject–verb
+            Object–verb–subject
+        V2 word order
+        Free word order
+        Time–manner–place
+        Place–manner–time
+    Lexicon
+        Color terms
+        Numerals
+
+tripartite alignment
+    A type of morphosyntactic alignment in
+    which the main argument ('subject') of an
+    intransitive verb, the agent argument
+    ('subject') of a transitive verb, and the
+    patient argument ('direct object') of a
+    transitive verb are each treated
+    distinctly in the grammatical system of a
+    language.
+    
+    This is in contrast with nominative-
+    accusative and ergative-absolutive
+    alignment languages, in which the argument
+    of an intransitive verb patterns with
+    either the agent argument of the
+    transitive (in accusative languages) or
+    with the patient argument of the
+    transitive (in ergative languages).
+    
+    Thus, whereas in English, "she" in "she
+    runs" patterns with "she" in "she finds
+    it", and an ergative language would
+    pattern "she" in "she runs" with "her" in
+    "he likes her", a tripartite language
+    would treat the "she" in "she runs" as
+    morphologically and/or syntactically
+    distinct from either argument in "he likes
+    her".
+
+morphological typology
+    A way of classifying the languages of the
+    world (see linguistic typology) that
+    groups languages according to their common
+    morphological structures.
+    
+    The field organizes languages on the basis
+    of how those languages form words by
+    combining morphemes.
+    
+    Analytic languages contain very little
+    inflection, instead relying on features
+    like word order and auxiliary words to
+    convey meaning.
+    
+    Synthetic languages, ones that are not
+    analytic, are divided into two categories:
+    agglutinative and fusional languages
+
+linguistic typology
+language typology
+    [field of linguistics]
+    
+    Studies and classifies languages according
+    to their structural and functional
+    features.
+    
+    Its aim is to describe and explain the
+    common properties and the structural
+    diversity of the world's languages.
+
+    https://en.wikipedia.org/wiki/Linguistic_typology
+
+agglutination
+    Words may contain different morphemes to
+    determine their meanings, but all of these
+    morphemes (including stems and affixes)
+    remain, in every aspect, unchanged after
+    their unions.
+
+agglutinative language
+    [synthetic language]
+    
+    Its morphology primarily uses
+    agglutination.
+
+    This results in generally more easily
+    deducible word meanings if compared to
+    fusional languages, which allow
+    modifications in either or both the
+    phonetics or spelling of one or more
+    morphemes within a word, usually
+    shortening the word or providing easier
+    pronunciation.
+    
+    Agglutinative languages have generally one
+    grammatical category per affix while
+    fusional languages have multiple.
+    
+    The term was introduced by Wilhelm von
+    Humboldt to classify languages from a
+    morphological point of view.
+    
+    It is derived from the Latin verb
+    agglutinare, which means "to glue
+    together".
+
+fusional languages
+    Non-agglutinative synthetic languages are
+    fusional languages; morphologically, they
+    combine affixes by "squeezing" them
+    together, drastically changing them in the
+    process, and joining several meanings in a
+    single affix (for example, in the Spanish
+    word comí "I ate", the suffix -í carries
+    the meanings of first person, singular
+    number, past tense, perfective aspect,
+    indicative mood, active voice.)
+    
+    The term agglutinative is sometimes
+    incorrectly used as a synonym for
+    synthetic.
+    
+    Used in this way, the term embraces both
+    fusional languages and inflected
+    languages.[clarification needed]
+    
+    The agglutinative and fusional languages
+    are two ends of a continuum, with various
+    languages falling more toward one or the
+    other end.
+    
+    For example, Japanese is generally
+    agglutinative, but displays fusion in
+    otōto (弟 younger brother), from oto+hito
+    (originally woto+pito), and in its non-
+    affixing verb conjugations.
+    
+    A synthetic language may use morphological
+    agglutination combined with partial usage
+    of fusional features, for example in its
+    case system (e.g., German, Dutch, and
+    Persian).
+    
+    Agglutinative languages tend to have a
+    high rate of affixes or morphemes per
+    word, and to be very regular, in
+    particular with very few irregular verbs.
+    
+    For example, Japanese has very few
+    irregular verbs –
+    
+    only two are significantly irregular, and
+    there are only about a dozen others with
+    only minor irregularity; Ganda has only
+    one (or two, depending on how "irregular"
+    is defined); while in the Quechua
+    languages, all the ordinary verbs are
+    regular.
+    
+    In Turkish, there is only one irregular
+    noun (su, meaning water), no irregular
+    verbs other than the copular verbs, and
+    two existential particles.
+    
+    Korean has only ten irregular forms of
+    conjugation except for the passive and
+    causative conjugations.
+    
+    Georgian is an exception; it is highly
+    agglutinative (with up to eight morphemes
+    per word), but it has a significant number
+    of irregular verbs with varying degrees of
+    irregularity.
+
+anaphora
+anaphoric
+    An expression, or the use of an
+    expression, whose interpretation depends
+    upon another expression in context.
+
+    Example,
+        Anaphoric if
+
+subject-verb-object
+SVO
+
+Cohesion
+    The grammatical and lexical linking within
+    a text or sentence that holds a text
+    together and gives it meaning.
+    
+    It is related to the broader concept of
+    coherence.
+
+lexicon
+word-hoard
+wordbook
+word-stock
+    The vocabulary of a person, language, or
+    branch of knowledge.
+    
+    In linguistics, a lexicon is a language's
+    inventory of lexemes.
+
+rewrite rule
+rewriting rule
+    [#linguistics]
+    [phrase-structure rule]
+    
+    Phrase-structure rule in a generative
+    grammar, shown as an instruction to
+    replace or rewrite a single symbol,
+    representing a syntactic structure, on the
+    left with one or more symbols,
+    representing the constituents of the
+    structure, on the right, as in S → NP +
+    VP, where S (sentence) is to be replaced
+    with its constituents NP (noun phrase) and
+    VP (verb phrase).
+
+Distributional hypothesis
+    [#linguistics]
+
+    Linguistic items with similar
+    distributions have similar meanings.
+
+distributed semantics
+    [#linguistics]
+    [research area]
+    
+    Develops and studies theories and methods
+    for quantifying and categorizing semantic
+    similarities between linguistic items
+    based on their distributional properties
+    in large samples of language data.
+    
+    The basic idea of distributional semantics
+    can be summed up in the so-called
+    Distributional hypothesis.
+
+morphology
+    The study of words, how they are formed,
+    and their relationship to other words in
+    the same language.
+    
+    It analyzes the structure of words and
+    parts of words, such as stems, root words,
+    prefixes, and suffixes.
+    
+    Morphology also looks at parts of speech,
+    intonation and stress, and the ways
+    context can change a word's pronunciation
+    and meaning.
+    
+    Morphology differs from morphological
+    typology, which is the classification of
+    languages based on their use of words, and
+    lexicology, which is the study of words
+    and how they make up a language's
+    vocabulary.
+
+inflectional morphology
+
+realization
+    [#linguistics]
+    
+    The process by which some kind of surface
+    representation is derived from its
+    underlying representation; that is, the
+    way in which some abstract object of
+    linguistic analysis comes to be produced
+    in actual language.
+    
+    Phonemes are often said to be realized by
+    speech sounds.
+
+linguistic categories
+    Examples:
+    - noun
+    - verb
+    - adjective
+
+    https://link.springer.com/chapter/10.1007/978-1-4020-8825-4_1
+
+fuzzy linguistic categories
+    [#corpus linguistics]
+
+universal category
+    Many linguists see NOUN and VERB as
+    universal categories.
+
+    But how universal are they really?
+    https://link.springer.com/chapter/10.1007/978-1-4020-8825-4_1
+
+inter-annotator aggreement
+    A measure of how well two (or more)
+    annotators can make the same annotation
+    decision for a certain category.
+
+    https://corpuslinguisticmethods.wordpress.com/2014/01/15/what-is-inter-annotator-agreement/
+
+    Even basic categories such as parts of
+    speech are not entirely clearly defined.
+    
+    As a corpus linguist, you make some
+    decision for the annotation, but you
+    actually want to provide the user of your
+    dataset with some kind of a metric about
+    how certain you are about the annotation
+    of that category.
+    
+    Well, that is where inter-annotator
+    agreement comes into play.
+
+literary consonance
+    https://en.wikipedia.org/wiki/Literary_consonance
+    
+    A stylistic literary device identified by
+    the repetition of identical or similar
+    consonants in neighbouring words whose
+    vowel sounds are different (e.g. coming
+    home, hot foot).
+    
+    Consonance may be regarded as the
+    counterpart to the vowel-sound repetition
+    known as assonance.
+    
+    Alliteration is a special case of
+    consonance where the repeated consonant
+    sound is at the stressed syllable, as in
+    "few flocked to the fight" or "around the
+    rugged rock the ragged rascal ran".
+    
+    Alliteration is usually distinguished from
+    other types of consonance in poetic
+    analysis, and has different uses and
+    effects.
+    
+    Another special case of consonance is
+    sibilance, the use of several sibilant
+    sounds such as /s/ and /sh/.
+    
+    An example is the verse from Edgar Allan
+    Poe's "The Raven": "And the silken sad
+    uncertain rustling of each purple
+    curtain."
+    
+    (This example also contains assonance
+    around the "ur" sound.)
+    
+    Another example of consonance is the word
+    "sibilance" itself.
+
+semantics
+    The branch of linguistics and logic
+    concerned with meaning.
+    
+    There are a number of branches and
+    subbranches of semantics, including formal
+    semantics, which studies the logical
+    aspects of meaning, such as sense,
+    reference, implication, and logical form,
+    lexical semantics, which studies word
+    meanings and word relations, and
+    conceptual semantics, which studies the
+    cognitive structure of meaning.
+
+pragmatics
+    The study of how context contributes to
+    meaning.
+    
+    The field of study evaluates how human
+    language is utilized in social
+    interactions, as well as the relationship
+    between the interpreter and the
+    interpreted.
+
+semantics vs pragmatics
+    Semantics is the study of meaning, or more
+    precisely, the study of the relation
+    between linguistic expressions and their
+    meanings.
+
+    Pragmatics is the study of context, or
+    more precisely, a study of the way context
+    can influence our understanding of
+    linguistic utterances.
+
+rhetorical device
+    [linguistic tool]
+
+    Employs a particular type of sentence
+    structure, sound, or pattern of meaning in
+    order to evoke a particular reaction from
+    an audience.
+    
+    Each rhetorical device is a distinct tool
+    that can be used to construct an argument
+    or make an existing argument more
+    compelling.
+
+morphosyntactic
+    Involving both morphology and syntax.
+
+morphosyntactic alignment
+    Morphosyntactic alignment is the
+    grammatical relationship between
+    arguments—specifically, between the two
+    arguments of transitive verbs like the dog
+    chased the cat, and the single argument of
+    intransitive verbs like the cat ran away.
+
+polysemy
+    The ability of words to have multiple
+    meanings.
+
+function words
+functioning words
+functors
+    Words that have little lexical meaning or
+    have ambiguous meaning and express
+    grammatical relationships among other
+    words within a sentence, or specify the
+    attitude or mood of the speaker.
+    
+    They signal the structural relationships
+    that words have to one another and are the
+    glue that holds sentences together.
+    
+    Thus they form important elements in the
+    structures of sentences.
+
+bearing
+content bearing
+    Said to be provided by a document's
+    content words.
+
+content words
+open class words
+lexical words
+autosemantic words
+    Words that are considered to carry a
+    meaning related to the text are described
+    as the "content bearing".
+
+    Words that are not function words.
+
+    Include:
+    - nouns,
+    - verbs,
+    - adjectives, and
+    - most adverbs, although some adverbs are
+      function words (e.g., then and why).
+
+    Dictionaries define the specific meanings
+    of content words, but can only describe
+    the general usages of function words.
+    
+    By contrast, grammars describe the use of
+    function words in detail, but treat
+    lexical words in general terms only.
+
+imperative mood
+    A form of a verb that expresses an order
+    or a request or an advice or encouragement
+    or instruction or suggestion to do a
+    thing.
+    
+    Examples of The Imperative Mood:
+    - Work sincerely.
+    - Try to keep quiet.
+    - Please have your food on time.
+
+indicative form
+indicative mood
+    A verb form that makes a statement or asks
+    a question. For example: 
+
+    - Jack sings every Friday.
+      (This is a verb in the indicative mood.
+      It's a statement.) 
+    - Is Jack the lead vocalist?
+      (This is a verb in the indicative mood.
+      It's a question.) 
+    
+    Compare the examples above with this: 
+    
+    - Sing us a song, Jack.
+      (This verb is not in the indicative
+      mood. It is in the imperative mood. It's
+      an order. It's not a statement or a
+      question.)
+
+agglutinative language
+    A type of synthetic language with
+    morphology that primarily uses
+    agglutination.
+    
+    Words may contain different morphemes to
+    determine their meanings, but all of these
+    morphemes remain, in every aspect,
+    unchanged after their unions.
+
+agglutination
+    The clumping of particles.
+    
+    The word agglutination comes from the
+    Latin agglutinare (glueing to).
+    
+    Agglutination is the process that occurs
+    if an antigen is mixed with its
+    corresponding antibody called
+    isoagglutinin.
+    
+    This term is commonly used in blood
+    grouping.
+
+agglutinative
+agglutinative morphology
+    (of a language) forming words
+    predominantly by agglutination, rather
+    than by inflection or by using isolated
+    elements.
+    
+    Examples include Hungarian, Turkish,
+    Korean, and Swahili.
+
+Auxiliary verb
+    A verb that adds functional or grammatical
+    meaning to the clause in which it occurs,
+    so as to express tense, aspect, modality,
+    voice, emphasis, etc.
+    
+    Auxiliary verbs usually accompany an
+    infinitive verb or a participle, which
+    respectively provide the main semantic
+    content of the clause.
+
+diphthong (diff-thong)
+gliding vowel
+    Literally, double sound.
+
+    Combination of two adjacent vowel sounds
+    within the same syllable.
+
+    It's a vowel sound.
+
+connotation
+    A commonly understood cultural or
+    emotional association that some word or
+    phrase carries, in addition to its
+    explicit or literal meaning, which is its
+    denotation.
+    
+    A connotation is frequently described as
+    either positive or negative, with regard
+    to its pleasing or displeasing emotional
+    connection.
+
+    Related to "sentiment".
+
+An ergative language maintains a syntactic
+    or morphological equivalence (such as the
+    same word order or grammatical case) for
+    the object of a transitive verb and the
+    single core argument of an intransitive
+    verb, while treating the agent of a
+    transitive verb differently.
+
+    vs "accusative languages".
+
+accusative languages
+nominative-accusative languages
+    [[https://en.wikipedia.org/wiki/Ergative%E2%80%93absolutive_alignment][en.wikipedia.org/wiki/Ergative%E2%80%93absolutive_alignment]]
+
+    This contrasts with nominative-accusative
+    languages such as English, where the
+    single argument of an intransitive verb
+    and the agent of a transitive verb (both
+    called the subject) are treated alike and
+    kept distinct from the object of a
+    transitive verb.
+
+nominal
+    [linguistics]
+
+    Refers to a category used to group
+    together nouns and adjectives based on
+    shared properties.
+    
+    The motivation for nominal grouping is
+    that in many languages nouns and
+    adjectives share a number of morphological
+    and syntactic properties
+
+inflected
+inflection
+    [linguistic morphology]
+
+    A process of word formation, in which a
+    word is modified to express different
+    grammatical categories such as tense,
+    case, voice, aspect, person, number,
+    gender, mood, animacy, and definiteness. 
+
+inflectional morphology
+    The study of processes, including
+    affixation and vowel change, that
+    distinguish word forms in certain
+    grammatical categories.
+
+    NLG: The study of how words change their
+    form to express different meanings.
+
+Two-dimensionalism
+    An approach to semantics in analytic
+    philosophy.
+    
+    It is a theory of how to determine the
+    sense and reference of a word and the
+    truth-value of a sentence.
+    
+    It is intended to resolve the puzzle: How
+    is it possible to discover empirically
+    that a necessary truth is true? Two-
+    dimensionalism provides an analysis of the
+    semantics of words and sentences that
+    makes sense of this possibility.
+    
+    The theory was first developed by Robert
+    Stalnaker, but it has been advocated by
+    numerous philosophers since, including
+    David Chalmers.
+
+finite verb
+    The form "to which number and person
+    appertain", in other words, those
+    inflected for number and person.
+
+    Verbs were originally said to be finite if
+    their form limited the possible person and
+    number of the subject.
+
+nonfinite verb
+    A derivative form of a verb unlike finite
+    verbs.
+    
+    Accordingly, nonfinite verb forms are
+    inflected for neither number nor person,
+    and they cannot perform action as the root
+    of an independent clause.
+    
+    In English, nonfinite verbs include
+    infinitives, participles and gerunds.
+
+participle
+    [#linguistics]
+
+    A nonfinite verb form that has some of the
+    characteristics and functions of both
+    verbs and adjectives.
+    
+    More narrowly, participle has been defined
+    as "a word derived from a verb and used as
+    an adjective, as in a laughing face".
+
+past participle
+    For regular verbs, adding -ed to the base
+    form creates the past participle.
+
+    For example, the past participle of cook
+    is cooked.
+
+    Past participles formed from irregular
+    verbs may have endings like -en, -t, -d,
+    and -n.
+
+    Examples:
+    - swollen,
+    - burnt,
+    - fazed
+    - hoped, and
+    - broken.
+
+    Three forms:
+    - regular,
+    - irregular, and
+    - adjective.
+
+    The regular form of the past participle
+    ends in -ed, demonstrating a past action.
+    
+    The irregular form of the past participle
+    includes the word has' and puts the verb
+    into its past tense form, also
+    demonstrating a past action.
+
+cloze
+    Pertaining to or being a procedure used to
+    measure comprehension or text difficulty,
+    in which a person is called upon to supply
+    elements that have been systematically
+    deleted from a text.
+
+phonetics
+    The study of speech sounds in their
+    physical aspects.
+
+phonology
+    The study of speech sounds in their
+    cognitive aspects.
+
+morphology
+    The study of the formation of words.
+
+syntax
+    The study of the formation of sentences.
+
+semantics
+    The study of meaning.
+
+pragmatics
+    The study of language use.
+
+monosyllable
+    A word or utterance of only one syllable.
+    
+    It is most commonly studied in the fields
+    of phonology and morphology and it has no
+    semantic content.
+    
+    The word has originated from the Greek
+    language.
+    
+    "Yes", "no", "jump", "buy", "heat",
+    "sure", and "and" are examples of
+    monosyllables.

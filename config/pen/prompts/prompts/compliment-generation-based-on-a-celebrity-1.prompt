@@ -1,0 +1,33 @@
+title: Compliment generation based on a celebrity
+doc: Generate a nice compliment based on a celebrity
+tags: fun prose social-media
+prompt-version: 2
+prompt: |
+  The following are nice compliments:
+  <delim>
+  TOPIC: Jason Momoa
+  - He has fame, but he doesn't want it. He has advantage but he doesn't take it. And he definitely has all our hearts!!!!!
+  <delim>
+  TOPIC: <1>
+  -
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+best-of: 2
+stop-sequences:
+- "<delim>"
+- "\n"
+cache: true
+vars:
+- person
+examples:
+- Amber Heard
+# preprocessors:
+# - tr '[:lower:]' '[:upper:]'
+n-test-runs: 10
+# This will generate 20 up lines
+n-collate: 4
+n-completions: 10
+postprocessor: sed 's/^\s*//' | awk 1 | sed '/^[^a-zA-Z]/d'
+collation-separator: ''

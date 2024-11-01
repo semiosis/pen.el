@@ -1,0 +1,133 @@
+Multi-agent system
+MAS
+Self-organized system
+    Agents and their environment.
+
+    Artificial Intelligence -- A Modern Approach.
+
+    Agents
+    - Passive agents or "agent without goals"
+      Obstacle, apple or key in any simple simulation.
+
+    - Active agents with simple goals
+      Like birds in flocking, or wolf–sheep in
+      prey-predator model.
+
+    - Cognitive agents
+      Complex calculations.
+
+    Types:
+    - methodic
+    - functional
+    - procedural approaches
+    - algorithmic search
+    - reinforcement learning
+
+early stopping
+    Stopping the training once your loss
+    starts to increase (or in other words
+    validation accuracy starts to decrease).
+
+GRU
+Gated Recurrent Unit
+
+RNN with GRU
+Gated Recurrent Neural Networks
+
+Weight Quantization
+    Post Training
+
+    A general technique to reduce model size
+    while also providing up to 3x lower
+    latency with little degradation in model
+    accuracy.
+
+    Post-training quantization quantizes
+    weights from floating point to 8-bits of
+    precision.
+
+Recursive Neural Networks
+    The main assumption for Recursive Neural
+    Net development is such that recursion is
+    a natural way for describing language.
+
+    Perfect for settings that have a nested
+    hierarchy and an intrinsic recursive
+    structure
+
+Contrastive Loss Function
+    Employed to learn the parameters W of a
+    parameterized function GW, in such a way
+    that neighbors are pulled together and
+    non-neighbors are pushed apart.
+    
+    Prior knowledge can be used to identify
+    the neighbors for each training data
+    point.
+
+Siamese Network
+    Consists of two identical neural networks,
+    each taking one of the two input images.
+    
+    The last layers of the two networks are
+    then fed to a contrastive loss function,
+    which calculates the similarity between
+    the two images.
+
+Density estimation
+    The construction of an estimate, based on
+    observed data, of an unobservable
+    underlying probability density function.
+
+Wake-sleep algorithm
+    Layers of the NN. R, G are weights used by
+    the wake-sleep algorithm to modify data
+    inside the layers.
+    
+    The wake-sleep algorithm is an
+    unsupervised learning algorithm for a
+    stochastic multilayer NN.
+    
+    The algorithm adjusts the parameters so as
+    to produce a good density estimator.
+    
+    There are two learning phases, the “wake”
+    phase and the “sleep” phase, which are
+    performed alternately.
+    
+    It was first designed as a model for brain
+    functioning using variational Bayesian
+    learning.
+    
+    After that, the algorithm was adapted to
+    ML.
+    
+    It can be viewed as a way to train a
+    Helmholtz Machine.
+    
+    It can also be used in Deep Belief
+    Networks (DBN).
+
+    https://en.wikipedia.org/wiki/Wake-sleep_algorithm
+
+Tensor2Tensor
+T2T
+
+beam search
+    [heuristic search algorithm]
+    [best-first search algorithm]
+
+    egr andrew ng beam
+
+    - greedy
+
+    Only a predetermined number of best
+    partial solutions are kept as candidates.
+
+End Of Sentence
+E.O.S.
+
+Google Dialogflow
+    - intents,
+    - entities, and
+    - context

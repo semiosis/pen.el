@@ -1,0 +1,3 @@
+index [] []
+  ;; When it mounts, the REPL becomes locked.
+  ;; I have to find a way to run it asynchronously

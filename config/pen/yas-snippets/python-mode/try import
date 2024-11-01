@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: try import
+# group: 
+# key: tryimport
+# --
+# https://stackoverflow.com/questions/20226347/importing-python-libraries-and-gracefully-handling-if-they-are-not-availalble
+# GOOD
+import pkg_resources
+
+try:
+pkg_resources.get_distribution('plone.dexterity')
+except pkg_resources.DistributionNotFound:
+HAS_DEXTERITY = False
+else:
+HAS_DEXTERITY = True

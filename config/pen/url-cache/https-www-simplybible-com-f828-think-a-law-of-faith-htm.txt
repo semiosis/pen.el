@@ -1,0 +1,214 @@
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+content-type: text/html
+last-modified: Tue, 09 Jan 2024 11:04:21 GMT
+accept-ranges: bytes
+vary: Accept-Encoding,User-Agent
+content-length: 4867
+date: Mon, 15 Jan 2024 06:42:30 GMT
+server: LiteSpeed
+cache-control: max-age=691200, public, must-revalidate
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>A Law of Faith - A Study in Romans</title>
+
+<meta name="author" content="Ron Graham 2006">
+<meta name="description" content="This lesson helps to understand Paul's doctrine in Romans about being justified by faith rather than by law.">
+<meta name="keywords" content="Paul,Romans,faith,law,grace,under,absolute,relative">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.simplybible.com/f828-think-a-law-of-faith.htm"> 
+<link rel="preload" href="ControlThink.js" as="script">
+<link rel="preload" href="style-sb.css" as="style">
+<link rel="stylesheet" href="style-sb.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVJ7H6VD7X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FVJ7H6VD7X');
+</script>
+</head>
+<body>
+
+<!--[CONTAINERS]-->
+<div id="content1">Banner</div>
+<div id="tabsdisplay">Nav Menu</div>
+<div id="sidebar2" class="pagedata boxshadow">Sidebar</div>
+<div id="content2">
+<!--[BYLINE]-->
+<p class="tiny"><a href="dauthor.htm">Author: Ron Graham</a></p><noscript><p class="italic">simplybible.com</p></noscript>
+ 
+<!--[PIC]-->
+<div class="twoup floatright"><img src="ip/ip-letter-of-paul-to-the-romans.jpg" class="ipic" alt="Romans"></div> 
+
+<!--[RIGHT MARGIN]-->
+<div class="content3">
+
+<!--[HEADING]-->
+<h1>A Law of Faith<br><span class="subhead">&mdash;A study in Romans</span></h1>
+
+<!--[INITIAL PAR]-->
+<p class="ib">This lesson asks you to focus on Paul's teaching about being justified by faith rather than by law.  Perhaps you will judge this lesson to correctly represent and explain Paul&rsquo;s principle doctrine <span class="nb">on this subject.</span></p>
+
+<!--[ 1 ]-->
+<h2 class="btpi"><span class="numsq purple yellowbg">1</span> Three Alternatives</h2>
+
+<p>There are three alternative paths by which a man might seek to be justified...</p> 
+
+<h3>(1) By faith without law.</h3>
+
+<p>Paul argues against this: <span class="scrip"> "Do we nullify law through faith?  No! On  the  contrary,  we uphold law"</span> <span class="nb">(Romans 3:31)</span>  Paul certainly claims that the law of Moses was <span class="scrip">"weak"</span> <span class="nb">(Romans 8:3).</span>  However the alternative is not to be lawless, but to be under <span class="scrip">"the law of the Spirit of life in Christ Jesus"</span> <span class="nb">(Romans 8:1-2).</span></p> 
+
+<h3>(2) By law without faith.</h3>
+
+<p>Paul argues against this: <span class="scrip">"We maintain that a man is justified by faith apart from works of law"</span> <span class="nb">(Romans 3:28).</span> One of Paul's main points in Romans is that we cannot be justified by law alone.  There has to be something else besides law, namely faith in Christ Jesus.  In Paul's mind, law without that faith is fatal <span class="nb">(Romans 7:9-10).</span></p>
+
+<h3>(3) By a law of faith.</h3>
+
+<p>Paul argues in favour of this: He believes in <span class="scrip">"a law of faith"</span> <span class="nb">(Romans 3:27).</span> Paul solves the problem that <span class="scrip">"I died"</span> <span class="nb">(Romans 7:9-10)</span> with the solution that <span class="scrip">"Christ died"</span> <span class="nb">(Romans 5:8).</span>  This solution is made available in the gospel, the new law of&nbsp;Christ, for whoever believes it and obeys <span class="nb">(Romans 1:4-5, 15-16).</span></p>  
+
+<p>In his letter to the Romans, Paul is not arguing for justification by faith alone without obedience to law. Rather, he is arguing that you cannot have justification by obedience to law alone without faith in Christ.</p>
+
+<p>Paul argues for <span class="scrip">"the obedience of faith"</span> <span class="nb">(Romans 1:5, 16:26).</span>  We have to obey the law, but it must be a law of faith, and that's what the gospel is.  The gospel is not only to be believed <span class="nb">(Romans 1:16)</span> but also to be obeyed <span class="nb">(Romans 6:16).</span></p>
+
+<!--[ 2 ]-->
+<h2 class="btpi"><span class="numsq purple yellowbg">2</span> The Law of Faith</h2>
+
+<p>Some translators have weakened <span class="nb">Romans 3:27</span> by using the word &ldquo;principle&rdquo; instead of the word &ldquo;law&rdquo;. Since Paul, in Romans, has in mind <span class="scrip">"the law of the Spirit of life in Christ Jesus"</span> <span class="nb">(Romans 8:2),</span> it seems to me that he is thinking, in <span class="nb">Romans 3:27,</span> of an actual law of faith.</p>
+
+<p>Paul has in mind not only the &ldquo;principle&rdquo; of justification by faith, but also the enacted <i>law</i> (the gospel or new covenant) which had the power to save <span class="nb">(Romans 1:16).</span></p>
+
+<p>Of course, any law of&nbsp;God can be a <span class="nb">&ldquo;law of faith&rdquo;</span>. However, not all of&nbsp;God's laws served equally well in this regard.  As a law of faith the  Mosaical law was especially disabled and weak <span class="nb">(Romans 8:3)</span>, whilst by contrast God's law for the Christian age is called <span class="scrip">"the power of&nbsp;God for salvation"</span> <span class="nb">(Romans 1:16).</span></p>
+
+<p>The gospel serves better as a <span class="nb">&ldquo;law of faith&rdquo;</span> than did previous law systems.  In other words the just can live by faith better under Christ's new covenant than under previous ones, which bore testimony to faith but were not the ultimate <span class="nb">&ldquo;law of faith&rdquo;</span> as is the gospel.</p>
+
+<p>That is why Paul was anxious to preach the gospel to the church of&nbsp;Christ in Rome <span class="nb">(Romans 1:15).</span></p>
+
+<!--[ 3 ]-->
+<h2 class="btpi"><span class="numsq purple yellowbg">3</span> Not Under Law</h2>
+
+<p>To those who have been justified by faith (like Abraham was),  Paul says, <span class="scrip">"Sin shall not be master over you,for  you are not under law, but under grace"</span> <span class="nb">(Romans 6:14).</span></p>
+
+<p>Then Paul says,  <span class="scrip">"What then?  Shall we sin because we are not under law but under grace?   May it never be!"</span> <span class="nb">(6:15)</span>  Think about that carefully: Paul  obviously believes that you could sin, even though you are not under&nbsp;law.</p>  
+
+<p>But if you are not under law, how can you sin?  After all, Paul also holds that where there is no law, there can be no imputation of transgression <span class="nb">(Romans 4:15, 5:13).</span></p>
+
+<p>If someone under grace can sin, then someone under grace has law, because sin is breaking God's law.  So how can Paul conceive of people who <span class="scrip">"have  sinned  without law"</span> <span class="nb">(Romans 2:12)?</span></p>
+
+<p>Paul in one case is speaking in the absolute.  In the other case he is <span class="nb">speaking relatively...</span></p>
+
+<h3>Absolute:</h3>
+
+<p>When Paul says, <span class="scrip">"No sin is imputed where there is no law"</span> he is speaking in the absolute.  He means that where there is absolutely no word of&nbsp;God's law, there can be absolutely no sin.  Paul never suggests, however, that anyone out of infancy may be regarded as abolutely without law.  This absolute state <span class="nb">is hypothetical.</span></p>
+
+<h3>Relative:</h3>
+
+<p>When Paul speaks of people being &ldquo;without law&rdquo; or &ldquo;not under law&rdquo; he is speaking relative to the law of&nbsp;Christ, <span class="scrip">"the law of the Spirit of life in Christ Jesus"</span> <span class="nb">(Romans 8:2),</span>  Other laws brought condemnation without a solution.</p>
+
+<p>The gospel is the law that grants the solution and sets you free.  It gets you out from under law that provides sin with an open opportunity to kill&nbsp;you <span class="nb">(Romans 8:1-2).</span></p>
+
+<p>Saying that we are <span class="scrip">"not under law but under grace"</span> is a bit like saying someone is &ldquo;not in the sun but in the shade.&rdquo;  When you are in the shade, you are not out of the sun absolutely.   Otherwise it would be pitch dark, wouldn't it? In the shade, you are only out of the sun relatively speaking.  It is much the same when Paul says you are not under law <span class="nb">but under grace.</span></p>
+
+<h3>Slaves of&nbsp;God</h3>
+
+<p>What Paul says in <span class="nb">Romans 6</span> about enslavement helps us to understand that <span class="scrip">"not under law but under grace"</span> <span class="nb">(Romans 6:14)</span> is a relative statement.  Paul says, <span class="scrip">"Though you were slaves of sin, you became obedient... and having been freed from sin you became slaves of righteousness"</span> <span class="nb">(Romans 6:15-23).</span></p>
+
+<p>It's easy to see that being <span class="scrip">"enslaved to God"</span> is far better than being enslaved to sin, and though we are still slaves, we are free from the enslavement that led to death.  We are now under enslavement whereby we receive an inheritance as sons of&nbsp;God, for God treats his slaves as sons.</p>
+
+<p>Whether slaves to sin or slaves of&nbsp;God, we are slaves.  Relatively speaking, however, as slaves of&nbsp;God we enjoy glorious liberty and&nbsp;grace.</p>
+
+<p>These two contrasting states of enslavement are in view when Paul speaks of being <span class="scrip">"not under law but under grace"</span>  Obviously a slave of&nbsp;God must be under the law of&nbsp;God.  However anyone who faithfully follows God's law, the law of the Spirit of life in Christ Jesus, is forgiven and under grace, free from the law that&nbsp;condemned.</p>
+
+
+<!--[DONATE]-->
+<hr>
+<p class="center noprint">
+<a href="dpaypaldonate.htm">
+<span class="button boxshadow xlarge"> 
+<span class="black">&#10148;</span>
+<span class="xlarge"> DONATE </span>
+</span></a>
+</p>
+<p class="center noprint">
+<small>
+to simplybible.com<br>
+<i>Webservant Ron&nbsp;Graham</i>
+</small>
+</p>
+<hr>
+
+<!--[SCRIPTS]-->
+<script>FName="f828-think-a-law-of-faith.htm";  Ppdf="pdf/f828-think-a-law-of-faith.pdf"; KeyWord="law"; Tabs="hlr";</script>
+<script src="ControlThink.js"></script>
+
+<!--[NAVIGATION]-->
+<nav class="noprint">
+
+<!--[BACKLINK AUTO]-->
+<div id="backlink">&nbsp;</div>
+<script>new LinkBack(location.href)</script>
+
+<!--[LINK]-->
+<hr>
+<p class="endlinkhead boxshadow">Useful Links...</p>
+<div class="bluegrad bottomspace noprint">
+<p><a href="f207-galat-challenge-to-churches.htm?f828-think-a-law-of-faith.htm"><span class="black">&#10148;</span> Challenge to the Churches</a></p>
+<p>&mdash;Main Section 2, <span class="nb">(Galatians 3:6 to 4:9)</span> where Paul presents three powerful contrasts or choices between the gospel and the God&rsquo;sto show how superior the gospel is, and how foolish it would be to go back to the law. Paul issues strong challenges the churches to choose the superior way. <span class="bold italic">Tap the title above, next to the arrow, to go to that&nbsp;lesson with a link back to this&nbsp;page.</span></p>
+</div>
+
+<!--[LINK]-->
+<hr>
+<div class="graygrad bottomspace noprint">
+<p><a href="f009-uplaw-law-and-faith.htm?f828-think-a-law-of-faith.htm"><span class="black">&#10148;</span> Law and Faith</a></p>
+<p>&mdash;Examining the relationship between faith in Jesus Christ and obedience to his&nbsp;law. <span class="bold italic">Tap the title above, next to the arrow, to go to that&nbsp;lesson with a link back to this&nbsp;page.</span></p>
+</div>
+
+<!--[CROSS REFERENCES]-->
+<div class="noprint">
+<hr>
+<h2><span class="white italic blackbg padded">Cross references</span></h2>
+<p class="bold italic">Tap a Lookup below to generate a list of&nbsp;lessons.</p>
+
+<hr><p class="noprint"><a href="dsrchres.htm?query=Paul"><span class="black">&#10148;</span> <small><i>Index for</i></small>&nbsp;<b>Paul</b></a></p>
+
+<hr><p class="noprint"><a href="dsrchres.htm?query=Romans"><span class="black">&#10148;</span> <small><i>Index for</i></small>&nbsp;<b>Romans</b></a></p>
+
+<hr><p class="noprint"><a href="dsrchres.htm?query=law"><span class="black">&#10148;</span> <small><i>Index for</i></small>&nbsp;<b>Law</b></a></p>
+
+<hr><p class="noprint"><a href="dsrchres.htm?query=faith"><span class="black">&#10148;</span> <small><i>Index for</i></small>&nbsp;<b>Faith</b></a></p>
+
+<hr><p class="noprint"><a href="dsrchres.htm?query=slave"><span class="black">&#10148;</span> <small><i>Index for</i></small>&nbsp;<b>Slaves</b></a></p>
+
+</div>
+
+<!--[PDF LINK]-->
+<hr><div class="mauvegrad bottomspace noprint"><p id="pdflink">pdf link</p></div>
+
+</nav>
+
+<!--[PAGE END]-->
+<div id="copyrtprint" class="paper">Copyright on print</div>
+<div id="footer2" class="center noprint">Footer</div>
+<script>CopyrightYears="2007"; new PageEnd();</script>
+<noscript><p class="center"><a href="dhome.htm">Home</a>
+ | <a href="dtopics.htm">Bible Topics</a>
+ | <a href="dhub.htm">The Hub</a>
+ | <a href="dindexThink.htm">List</a>
+ | <a href="f836-think-gods-law-in-your-heart.htm">Next</a>
+<br>www.simplybible.com Copyright &copy; Ron Graham 2007</p></noscript>
+
+</div>
+</div>
+
+
+</body>
+</html>

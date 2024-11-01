@@ -1,0 +1,1 @@
+ have a question about the Emacs Lisp manual. I have a function that takes a list of strings and returns a list of strings. I want to use this function with a map function, but I don't know how to pass the list of strings to the function. I tried to use (mapcar 'my-function (split-string (buffer-string) "\n")) but it doesn't work.

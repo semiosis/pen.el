@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Jude" "1:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jude" "1:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jude" "1:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jude" "1:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jude" "1:17-25" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Jude" "1:17-25" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jude" "1:21-23" "#" "<==" "zsh"

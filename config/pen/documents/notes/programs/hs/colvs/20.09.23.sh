@@ -1,0 +1,3 @@
+cd /root/.emacs.d/host/pen.el/src;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/.emacs.d/host/pen.el/src;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/.emacs.d/host/pen.el/src;  "colvs" "-nls" "#" "<==" "pen-pa"

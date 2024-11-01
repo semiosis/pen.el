@@ -1,0 +1,7 @@
+
+fib :: Int -> Integer
+fib 0 = 0
+fib 1 = 1
+fib n = n + fib ( n - 1 ) + fib ( n - 2 )
+fibSequence :: Integer -> [ Integer ]
+fibSequence = filter ( odd .

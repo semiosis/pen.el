@@ -1,0 +1,26 @@
+ "start repl"
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: "start repl"
+    command: "cider repl :headless"
+    register: result
+    ignore_errors: true
+    delegate_to: localhost
+    when: result.rc != 0
+    ignore_errors: true
+    delegate_to: localhost
+    when: result.rc != 0
+    ignore_errors: true
+    delegate_to: localhost
+    when: result.rc != 0
+    ignore_errors: true
+    delegate_to: localhost
+    when: result.rc != 0
+    ignore_errors: true
+    delegate_to: localhost
+    when: result.rc != 0
+    ignore_errors: true
+    delegate_to: localhost
+    when: result.rc != 0
+    ignore_errors: true

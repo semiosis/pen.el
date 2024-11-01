@@ -1,0 +1,24 @@
+ run clojure
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: run clojure
+    command: |
+      if [ -f /tmp/clojure.jar ]; then
+        java -jar /tmp/clojure.jar
+      else
+        java -cp /usr/share/java/clojure.jar clojure.main
+      fi
+    become: true
+    become_user: root
+    become_method: sudo
+    environment:
+      JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+      PATH: /usr/lib/jvm/java-8-openjdk-amd64/bin:$PATH
+---
+- name: install clojure
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: install clojure
+    command: |

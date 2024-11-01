@@ -1,0 +1,1 @@
+pen-cmd 11 'sh -c "test -x $1 && echo 1 || echo 0"'

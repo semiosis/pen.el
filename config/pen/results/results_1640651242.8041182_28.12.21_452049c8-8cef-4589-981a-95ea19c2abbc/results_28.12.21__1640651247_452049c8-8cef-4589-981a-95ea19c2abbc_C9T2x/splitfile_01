@@ -1,0 +1,8 @@
+
+    if confirm(a:000)
+        echom "quit wasc"
+        qall!
+    endif
+endfun
+map q :q[uit]<CR>
+map Q :q[uit] abort

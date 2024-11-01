@@ -1,0 +1,12 @@
+ord)
+
+main :: IO ()
+main = do
+main = do
+
+main :: IO ()
+main = do
+
+This program works.
+
+The thread in which the main program was started is called the "main thread",

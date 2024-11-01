@@ -1,0 +1,35 @@
+# -*- mode: snippet -*-
+# name: sh
+# key: sh
+# --
+import {
+"bytes"
+"os/exec"
+)
+
+func runShellCommand(d []byte, cmdParas ...string) ([]byte, error) {
+var sout bytes.Buffer
+var serr bytes.Buffer
+commandString := strings.Join(cmdParas, " ")
+fmt.Fprintln(os.Stderr, commandString)
+
+paras := append([]string{"-c", "eval \"$@\"", "--"}, cmdParas...)
+
+cmd := exec.Command("bash", paras...)
+
+if d != nil {
+cmd.Stdin = bytes.NewBuffer(d)
+}
+cmd.Stdout = &sout
+cmd.Stderr = &serr
+err := cmd.Run()
+if err != nil {
+return nil, err
+}
+return sout.Bytes(), nil
+}
+
+func q(s string) string {
+result, _ := runShellCommand([]byte(s), "ssh pipeline 'bash -l -c \"q\"'")
+return string(result)
+}

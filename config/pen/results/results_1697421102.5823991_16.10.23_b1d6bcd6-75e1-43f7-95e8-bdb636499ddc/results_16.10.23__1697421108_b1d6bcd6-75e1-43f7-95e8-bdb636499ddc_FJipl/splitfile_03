@@ -1,0 +1,2 @@
+nsfa " "$@" ")) t $(cmd-nice-jq "$modename") $(cmd-nice-jq "$bufname") nil $extra_elisp))"
+if ! (@$elisp | jq);

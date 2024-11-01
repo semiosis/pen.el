@@ -1,0 +1,7 @@
+
+let @a = searchpos('.')
+let @a = substitute(@a, '\\', '\\\\', "")
+if @a > 0
+call SetSelection(@a)
+endif
+endf

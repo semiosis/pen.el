@@ -1,0 +1,11 @@
+
+
+EOD
+
+cat draft.text | sed -e 's/\(.*\)/\U\1/' > titlecase.txt
+cat draft.text | sed -e 's/\(.*\)/\L\1/' > lowercase.txt
+cat draft.text | sed -e 's/\(.*\)/\U\1/' | tr '[:lower:]' '[:upper:]' > uppercase.txt
+cat draft.text | tr '[:lower:]' '[:upper:]' > uppercase2.txt
+cat draft.text | sed -e 's/.*/\U&/' > uppercase3.txt
+cat draft.text | sed -e 's/.*/\L&/' > lowercase3.txt
+cat draft.text | tr '[:lower:]' '[:upper:]' > uppercase4.txt

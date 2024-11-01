@@ -1,0 +1,12 @@
+/* Color scheme B: Star spangled banner */
+.b-primary {
+background-color: #F7F7F7;
+}
+.b-secondary {
+background-color: #D9D9D9;
+}
+.b-ternary {
+background-color: #C3C3C3;
+}
+.b-quaternary {
+background-color: #A6A6A

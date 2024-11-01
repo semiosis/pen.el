@@ -1,0 +1,17 @@
+Generate baby name from api"
+  (interactive "ssex: \nscountry: ")
+  (let ((url-request-method "GET")
+        (url-request-extra-headers
+         '(("Content-Type" . "application/json")))
+        (url-request-data
+         (json-encode `((sex . ,sex)
+                        (country . ,country))))
+        (url (format "http://api.babynames.ch/%s/%s" sex country)))
+    (url-retrieve url
+                  (lambda (status)
+                    (switch-to-buffer (current-buffer))
+                    (goto-char (point-min))
+                    (search-forward-regexp "^$")
+                    (delete-region (point) (point-min))
+                    (json-read-from-string (buffer-string))
+                    (kill-buffer (current-buffer))))))

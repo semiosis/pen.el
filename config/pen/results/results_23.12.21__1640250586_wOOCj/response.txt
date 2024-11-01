@@ -1,0 +1,13 @@
+/* Color scheme B: Mars */
+.b-primary {
+background-color: #FF8C00;
+}
+.b-secondary {
+background-color: #FFA500;
+}
+.b-ternary {
+background-color: #FFD700;
+}
+.b-quaternary {
+background-color: #FFF8DC;
+}

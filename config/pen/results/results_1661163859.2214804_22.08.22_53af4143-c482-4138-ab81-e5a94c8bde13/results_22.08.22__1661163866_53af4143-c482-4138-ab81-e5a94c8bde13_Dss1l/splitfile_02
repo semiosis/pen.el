@@ -1,0 +1,5 @@
+ -- this takes a while to run because it generates a big word list
+
+~~~~~~~~
+
+The use of the build tool is beyond the scope of this tutorial, see [Stack's build guide](https://docs.haskellstack.org/

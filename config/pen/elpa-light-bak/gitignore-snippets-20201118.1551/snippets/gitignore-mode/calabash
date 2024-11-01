@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: Calabash
+# contributor: Toptal & contributors
+# key: calabash
+# --
+
+### Calabash ###
+
+# Calabash / Cucumber
+rerun/
+reports/
+screenshots/
+screenshot*.png
+test-servers/
+
+# bundler
+.bundle
+vendor

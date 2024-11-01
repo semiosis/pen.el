@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Colossians" "1:16-17" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-17" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-18" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-19" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-20" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Colossians" "1:14-20" "#" "<==" "bash"

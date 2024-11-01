@@ -1,0 +1,273 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 3546
+Server: nginx
+Content-Type: text/html
+Last-Modified: Fri, 15 Feb 2019 14:57:22 GMT
+ETag: "5c66d352-dda"
+Expires: Wed, 30 Mar 2022 08:26:10 GMT
+Cache-Control: no-cache, public
+Via: 1.1 varnish, 1.1 varnish
+Fastly-Original-Body-Size: 0
+Accept-Ranges: bytes
+Date: Wed, 30 Mar 2022 08:26:11 GMT
+Age: 0
+X-Served-By: cache-dfw18681-DFW, cache-akl10320-AKL
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1648628771.183326,VS0,VE162
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>base-4.2.0.1: Basic libraries (Index)</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+>base-4.2.0.1: Basic libraries</TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD
+><TABLE CELLPADDING="0" CELLSPACING="5"
+><TR CLASS="indexrow"
+><TD
+><A HREF="doc-index-A.html"
+>A</A
+></TD
+><TD
+><A HREF="doc-index-B.html"
+>B</A
+></TD
+><TD
+><A HREF="doc-index-C.html"
+>C</A
+></TD
+><TD
+><A HREF="doc-index-D.html"
+>D</A
+></TD
+><TD
+><A HREF="doc-index-E.html"
+>E</A
+></TD
+><TD
+><A HREF="doc-index-F.html"
+>F</A
+></TD
+><TD
+><A HREF="doc-index-G.html"
+>G</A
+></TD
+><TD
+><A HREF="doc-index-H.html"
+>H</A
+></TD
+><TD
+><A HREF="doc-index-I.html"
+>I</A
+></TD
+><TD
+><A HREF="doc-index-J.html"
+>J</A
+></TD
+><TD
+><A HREF="doc-index-K.html"
+>K</A
+></TD
+><TD
+><A HREF="doc-index-L.html"
+>L</A
+></TD
+><TD
+><A HREF="doc-index-M.html"
+>M</A
+></TD
+><TD
+><A HREF="doc-index-N.html"
+>N</A
+></TD
+><TD
+><A HREF="doc-index-O.html"
+>O</A
+></TD
+><TD
+><A HREF="doc-index-P.html"
+>P</A
+></TD
+><TD
+><A HREF="doc-index-Q.html"
+>Q</A
+></TD
+><TD
+><A HREF="doc-index-R.html"
+>R</A
+></TD
+><TD
+><A HREF="doc-index-S.html"
+>S</A
+></TD
+><TD
+><A HREF="doc-index-T.html"
+>T</A
+></TD
+><TD
+><A HREF="doc-index-U.html"
+>U</A
+></TD
+><TD
+><A HREF="doc-index-V.html"
+>V</A
+></TD
+><TD
+><A HREF="doc-index-W.html"
+>W</A
+></TD
+><TD
+><A HREF="doc-index-X.html"
+>X</A
+></TD
+><TD
+><A HREF="doc-index-Y.html"
+>Y</A
+></TD
+><TD
+><A HREF="doc-index-Z.html"
+>Z</A
+></TD
+><TD
+><A HREF="doc-index-58.html"
+>:</A
+></TD
+><TD
+><A HREF="doc-index-33.html"
+>!</A
+></TD
+><TD
+><A HREF="doc-index-36.html"
+>$</A
+></TD
+><TD
+><A HREF="doc-index-37.html"
+>%</A
+></TD
+><TD
+><A HREF="doc-index-38.html"
+>&amp;</A
+></TD
+><TD
+><A HREF="doc-index-42.html"
+>*</A
+></TD
+><TD
+><A HREF="doc-index-43.html"
+>+</A
+></TD
+><TD
+><A HREF="doc-index-46.html"
+>.</A
+></TD
+><TD
+><A HREF="doc-index-47.html"
+>/</A
+></TD
+><TD
+><A HREF="doc-index-60.html"
+>&lt;</A
+></TD
+><TD
+><A HREF="doc-index-61.html"
+>=</A
+></TD
+><TD
+><A HREF="doc-index-62.html"
+>&gt;</A
+></TD
+><TD
+><A HREF="doc-index-92.html"
+>\</A
+></TD
+><TD
+><A HREF="doc-index-94.html"
+>^</A
+></TD
+><TD
+><A HREF="doc-index-124.html"
+>|</A
+></TD
+><TD
+><A HREF="doc-index-45.html"
+>-</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Index (^)</TD
+></TR
+><TR
+><TD
+><TABLE ID="indexlist" CELLPADDING="0" CELLSPACING="5"
+><TR CLASS="indexrow"
+><TD CLASS="indexentry"
+>^</TD
+><TD CLASS="indexlinks"
+><A HREF="Prelude.html#v%3A%5E"
+>Prelude</A
+></TD
+></TR
+><TR CLASS="indexrow"
+><TD CLASS="indexentry"
+>^&lt;&lt;</TD
+><TD CLASS="indexlinks"
+><A HREF="Control-Arrow.html#v%3A%5E%3C%3C"
+>Control.Arrow</A
+></TD
+></TR
+><TR CLASS="indexrow"
+><TD CLASS="indexentry"
+>^&gt;&gt;</TD
+><TD CLASS="indexlinks"
+><A HREF="Control-Arrow.html#v%3A%5E%3E%3E"
+>Control.Arrow</A
+></TD
+></TR
+><TR CLASS="indexrow"
+><TD CLASS="indexentry"
+>^^</TD
+><TD CLASS="indexlinks"
+><A HREF="Prelude.html#v%3A%5E%5E"
+>Prelude</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

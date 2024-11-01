@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "14:4" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "14:4" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "14:4-18" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Romans" "1:18" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Romans" "8:14-21" "#" "<==" "zsh"

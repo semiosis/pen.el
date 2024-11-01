@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ifgr string match
+# group: re
+# key: ifgr
+# --
+import re
+if re.match(r"hello[0-9]+", 'hello1'):
+    print('Yes')

@@ -1,0 +1,9 @@
+keybinds: t
+
+use-global-engine-keybinds: t
+
+use-vi-keybinds: t
+
+use-insert-char: t
+
+use-delete-selection-keybinds:

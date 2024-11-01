@@ -1,0 +1,52 @@
+data scrubbing
+    [error correction technique]
+    
+    Uses a background task to periodically
+    inspect main memory or storage for errors,
+    then correct detected errors using
+    redundant data in the form of different
+    checksums or copies of data.
+
+sparsity
+    [#text mining]
+    
+    Huge matrices are created based on word
+    frequencies with many cells having zero
+    values.
+    
+    This problem is called sparsity and is
+    minimized using various techniques.
+
+m4
+    [template engine]
+
+    m4 copies its input (from files or
+    standard input) to standard output.
+    
+    It checks each token (a name, a quoted
+    string, or any single character that's not
+    a part of either a name or a string) to
+    see if it's the name of a macro.
+    
+    If so, the token is replaced by the
+    macro's value, and then that text is
+    pushed back onto the input to be
+    rescanned.
+    
+    (If you're new to m4, this repeated
+    scanning may surprise you, but it's one
+    key to m4 s power.)
+    
+    Quoting text, like ` text', prevents
+    expansion.
+    
+    m4 comes with a number of predefined
+    macros, or you can write your own macros
+    by calling the define() function.
+    
+    A macro can have multiple arguments-- up
+    to 9 in original m4, and an unlimited
+    number in GNU m4.
+    
+    Macro arguments are substituted before the
+    resulting text is rescanned.

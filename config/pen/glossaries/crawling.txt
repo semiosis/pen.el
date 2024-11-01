@@ -1,0 +1,38 @@
+Anansi
+    [web crawler]
+    [RDF web crawler]
+    [LOD crawler]
+
+    It uses a relational database to track
+    URLs that will be fetched, their status,
+    and cache IDs.
+
+    Anansi can operate in resizeable clusters
+    of up to 256 nodes
+
+    https://github.com/bbcarchdev/acropolis
+
+polite
+    Crawler needs to be polite (some form of
+    domain level rate-limiting.
+
+fame
+famous
+    A significant portion of the web is cut
+    off from you if your crawler is not
+    famous.
+
+    Google has a huge competitive advantage in
+    this regard, a lot of site owners allow
+    just GoogleBot (and maybe BingBot), making
+    it an extremely tedious process for an
+    unknown crawler to get whitelisted on
+    these sites.
+
+attention
+    Handle sites where we are not whitelisted
+    on a case-by-case basis knowing that
+    getting the attention of the sites is not
+    guaranteed.
+
+    See "fame".

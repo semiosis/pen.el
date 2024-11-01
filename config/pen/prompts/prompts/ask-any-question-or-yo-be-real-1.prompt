@@ -1,0 +1,41 @@
+title: Ask any question or Yo Be Real
+tags: fun epistemology alethiology
+prompt-version: 1
+doc: The user asks a question. If a question is "normal" the AI answers it. If the
+  question is "nonsense" the AI says "yo be real"
+prompt: |
+  This is a conversation between a human and a brilliant AI. If a question is "normal" the AI answers it. If the question is "nonsense" the AI says "yo be real"
+
+  Q: What is human life expectancy in the United States?
+  A: Human life expectancy in the United States is 78 years.
+
+  Q: How do you sporkle a morgle?
+  A: yo be real
+
+  Q: Who was president of the United States before George W. Bush?
+  A: Bill Clinton was president of the United States before George W. Bush.
+
+  Q: How many rainbows does it take to jump from Hawaii to seventeen?
+  A: yo be real
+
+  Q: How does an umbrella work
+  A: An umbrella works by using a series of spokes to keep the rain from falling on you.
+
+  Q: How many bonks are in a quoit?
+  A: yo be real
+
+  Q: Which colorless green ideas speak furiously
+  A: yo be real
+
+  Q: <question>
+  A:
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- question
+examples:
+- What is a boysenberry?

@@ -1,0 +1,40 @@
+ There was a table set out under a tree in front of the house, and the Dormouse was sitting between the Hatter and the March Hare and having tea at it.
+"""
+
+from cs50 import get_string
+from string import ascii_lowercase as letters
+
+
+# function to reverse shifted message
+def chain(shifted_string, chain_index):
+    """
+       Takes a sub string and reverses the symbols using a linear chaining algorithm
+    """
+    # if its not a letter, skip it and move on
+    if not shifted_string[chain_index].isalpha():
+        chain_index += 1
+        
+    # if the current index isn't alpha, or if the end of shifted string is seen, break the loop
+    if not shifted_string[chain_index].isalpha() or chain_index == len(shifted_string) - 1:
+        return chain_index
+    # as long as it sees letters, swap the case: lower becomes upper and vise versa
+    else:
+        char = shifted_string[chain_index]
+        if char.isupper():
+            shifted_string[chain_index] = char.lower()
+        else:
+            shifted_string[chain_index] = char.upper()
+
+        # recursively run the function while shifter index is less than length of shifted string
+        return chain(shifted_string, chain_index + 1)
+
+
+# get string
+plain_txt = get_string("What message would you like to decrypt?\n")
+
+# make numbers into their alphabetic equivalents for encoding purposes
+plain_txt = plain_txt.replace('1', '!')
+plain_txt = plain_txt.replace('2', '@')
+plain_txt = plain_txt.replace('3', '#')
+plain_txt = plain_txt.replace('4', '$')
+plain_txt = plain_txt.replace('5', '%')

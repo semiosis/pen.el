@@ -1,0 +1,3 @@
+;; Run function temperature-of-c-
+(message (eval '(temperature-of-c- "surface of the sun")))
+--> "surface of the sun"

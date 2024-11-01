@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempGjZvOLv.html" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempf5VbV7D.html" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempfF64G3m.html" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempHNM3Ad5.html" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "https://vision.org.au/the-word-for-today-reading/" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "https://news.ycombinator.com/item?id=28025491" "#" "<==" "pen-ci"

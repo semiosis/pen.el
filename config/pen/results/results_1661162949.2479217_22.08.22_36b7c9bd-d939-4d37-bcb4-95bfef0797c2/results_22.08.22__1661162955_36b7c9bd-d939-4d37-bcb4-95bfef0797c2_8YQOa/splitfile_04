@@ -1,0 +1,15 @@
+
+
+-- ok
+
+example1 
+
+example2 = do  -- ok
+
+let number = (read s :: Int) + 2
+
+example2 
+
+example3 = do  -- ok
+
+let number =

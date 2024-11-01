@@ -1,0 +1,3 @@
+;; Run function mineral-data
+(message (eval '(mineral-data "mars surface")))
+--> 

@@ -1,0 +1,16 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry-notes.txt  harry-sketch.txt  harry-story.txt
+» cd ..
+» cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» cd ..
+» pwd
+/root/notes
+» cd ..
+» pwd
+/root/notes
+» cd ..
+» pwd
+

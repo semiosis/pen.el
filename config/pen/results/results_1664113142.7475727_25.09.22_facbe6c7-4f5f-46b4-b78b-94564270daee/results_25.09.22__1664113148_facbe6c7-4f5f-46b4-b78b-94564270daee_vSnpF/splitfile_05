@@ -1,0 +1,1 @@
+(as-> 1 (inc) (as-> 2 (inc) (as-> 3 (inc) (as-> 4 (inc) (as-> 5 (inc) (as-> 6 (inc) (as-> 7 (inc) (as-> 8 (inc) (as-> 9 (inc) (as-> 10 (inc) 0))))))))))

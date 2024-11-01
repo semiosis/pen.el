@@ -1,0 +1,16 @@
+cd core
+» pwd
+/root/notes/core
+» cd ..
+» pwd
+/root/notes
+» cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» cd ..
+» pwd
+/root/notes
+» cd 'harrys adventures'
+cd: no such file or directory: 'harrys adventures'
+» ls -l harrys adventures
+ls: cannot access '

@@ -1,0 +1,7 @@
+ sh-compile and sh-update
+sh-update: off
+
+# Setting sh-compile to on would disable sh-update, and disables sh-test.
+sh-compile: off
+
+# Setting sh-

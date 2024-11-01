@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: import-tf
+# group: import
+# key: tf
+# --
+import tensorflow
+import tensorflow as tf
+import keras
+import keras as ks
+from keras import backend as K
+import tensorflow_ranking
+import tensorflow_ranking as tfr
+import tensorflow_text
+import tensorflow_text as tft

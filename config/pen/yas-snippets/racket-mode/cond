@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cond
+# group: control structures
+# key: c
+# --
+(cond
+[(= 0 n) (display "")]
+[else (displayln "Hello World") (hello-world-n (- n 1))])

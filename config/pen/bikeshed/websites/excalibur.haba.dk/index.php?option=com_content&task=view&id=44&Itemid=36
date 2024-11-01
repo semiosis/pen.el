@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="http://excalibur.haba.dk/templates/jw_technozine/css/template_css.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+<title>Excalibur Clan - How to set up computer to host</title>
+<meta name="title" content="How to set up computer to host" />
+<meta name="author" content="Leonidas" />
+<meta name="description" content="Age of Empires II Clan – Apple Macintosh" />
+<meta name="keywords" content="aoe, age of empires, mac, osx, age of conquerors, age of kings, apple" />
+<meta name="Generator" content="Joomla! - Copyright (C) 2005 - 2006 Open Source Matters. All rights reserved." />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/comment_style.css"/>
+      <script type='text/javascript'>      /*<![CDATA[*/      var jc_option           = "com_content";      var jc_autoUpdate       = "0";      var jc_update_period    = 300*1000;      var jc_orderBy          = "1";      var jc_commentForm;      var jc_livesite_busyImg = "http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif";      /*]]>*/      </script>
+<script src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/script_1_6.js?f" type="text/javascript"></script>
+<script type="text/javascript">
+var xajaxRequestUri="http://excalibur.haba.dk/index2.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=true;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_jcxLoadUserInfo(){return xajax.call("jcxLoadUserInfo", arguments, 1);}
+function xajax_jcxAddComment(){return xajax.call("jcxAddComment", arguments, 1);}
+function xajax_jcxShowSubscribeForm(){return xajax.call("jcxShowSubscribeForm", arguments, 1);}
+function xajax_jcxShowAddForm(){return xajax.call("jcxShowAddForm", arguments, 1);}
+function xajax_jcxSubscribe(){return xajax.call("jcxSubscribe", arguments, 1);}
+function xajax_jcxMoreComment(){return xajax.call("jcxMoreComment", arguments, 1);}
+function xajax_jcxUpdateComment(){return xajax.call("jcxUpdateComment", arguments, 1);}
+function xajax_jcxUnpublish(){return xajax.call("jcxUnpublish", arguments, 1);}
+function xajax_jcxEdit(){return xajax.call("jcxEdit", arguments, 1);}
+function xajax_jcxSave(){return xajax.call("jcxSave", arguments, 1);}
+	</script>
+	<script type="text/javascript" src="http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js'); } }, 6000);
+	</script>
+			<link rel="alternate" type="application/rss+xml" title="Excalibur Clan" href="http://excalibur.haba.dk/index2.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1" />
+				<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+	
+<script type="text/javascript">
+function imageHeader(selector,phpfile,wordwrap){
+	this.selector = selector;
+	this.phpfile = phpfile;
+	this.wordwrap = wordwrap;
+}
+
+var testURL = "templates/jw_technozine/images/test.png" ;
+var hideFlicker = true;
+var hideFlickerCSS = "templates/jw_technozine/css/hidden_css.css";
+var hideFlickerTimeout = 1000;
+var imageHeaders = [
+						new imageHeader("h2","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=853400&upper=true",false),
+						new imageHeader("h3","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=111&upper=true",false),
+						new imageHeader("div.componentheading","templates/jw_technozine/heading.php?font_size=12&font_color=D15546&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.active_menu","templates/jw_technozine/heading.php?font_size=12&font_color=fff&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.normal","templates/jw_technozine/heading.php?font_size=12&font_color=888&background_color=111&upper=true",false)
+						]
+</script>
+<script
+   type="text/JavaScript"
+   src="templates/jw_technozine/replacement.js">
+</script>
+
+
+</head>
+<body>
+	<a name="up" id="up"></a>
+	<div class="frame">
+		<div class="padding_outside">
+			<div class="greybox">
+				<div class="greybox_bottom_padding">
+					<div class="topnav">
+						<div class="toppath">
+							<span class="pathway"><a href="http://excalibur.haba.dk/index.php" class="pathway">Home</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" /> <a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=section&amp;id=4&amp;Itemid=36" class="pathway">Tutorials</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" /> <a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=category&amp;sectionid=4&amp;id=25&amp;Itemid=36" class="pathway">Other Tutorials</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" />   How to set up computer to host </span>						</div>
+						<div class="topright">
+													</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="greybox_bottom_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_bottom">
+					<div id="logobox">
+						<div id="logoarea">
+							<div id="searcharea">
+								
+<form action="index.php?option=com_search" method="get">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="search" class="inputbox" type="text" size="20" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />	</div>
+
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="" />	
+</form>							</div>
+						</div>
+					</div>
+					<div class="padding">
+						<div class="main_header"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="greybox_bottom_padding">
+					<div class="middlenav">
+						<div class="datearea">
+							Wednesday, September 15 2010						</div>
+						<div id="horizmenu">
+							<ul class="mainlevel"><li><a href="http://excalibur.haba.dk/index.php?option=com_frontpage&amp;Itemid=1" class="normal">Home</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=blogsection&amp;id=0&amp;Itemid=9" class="normal">Blog</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28" class="normal">Forum</a></li></ul>						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="mainbody">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr valign="top">
+														<td class="leftcol">
+								<div class="leftdiv">
+									<div class="firediv">
+																													</div>
+									<div class="leftmodules">
+												<div class="moduletable">
+							<h3>
+					Other Menu				</h3>
+				
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=section&amp;id=4&amp;Itemid=36" class="mainlevel" id="active_menu">Tutorials</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_docman&amp;Itemid=35" class="mainlevel" >Rec. Games</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=12&amp;Itemid=38" class="mainlevel" >EX Members</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_newsfeeds&amp;catid=26&amp;Itemid=37" class="mainlevel" >Mac Newsfeeds</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=category&amp;sectionid=3&amp;id=7&amp;Itemid=39" class="mainlevel" >FAQs</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_weblinks&amp;Itemid=30" class="mainlevel" >Links</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=40" class="mainlevel" >How to register</a></td></tr>
+</table>		</div>
+				<div class="moduletable">
+							<h3>
+					Recent Topics				</h3>
+				<ul class="latestnews"> <li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=368.msg4169#new">New Members</a> (6) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=139" title="View the profile of Ka$h">Ka$h</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=373.msg4168#new">Playing...</a> (3) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=183" title="View the profile of niels">niels</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=372.msg4164#new">hi everyone</a> (2) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=152" title="View the profile of Citin">Citin</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=367.msg4161#new">Funniest Story 2010</a> (27) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=149" title="View the profile of Mantis">Mantis</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=369.msg4141#new">Killing/ Stealing sheep</a> (17) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=371.msg4138#new">Your &quot;go to&quot; rush</a> (5) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=370.msg4132#new">Mouse Accuracy Trainer</a> (2) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=139" title="View the profile of Ka$h">Ka$h</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=356.msg4124#new">How To Use Civs In DM</a> (3) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=180" title="View the profile of Sinister_ROA">Sinister_ROA</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=363.msg4093#new">Pocket Strat</a> (6) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=180" title="View the profile of Sinister_ROA">Sinister_ROA</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=352.msg4090#new">NEW 1V1 LADDER http://tourney.ath.cx/</a> (27) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=88" title="View the profile of OcToPuS">OcToPuS</a></li></ul>		</div>
+				<div class="moduletable">
+							<h3>
+					Login Form				</h3>
+					<form action="http://excalibur.haba.dk/index.php" method="post" name="login" >
+		
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td>
+			<label for="mod_login_username">
+				Username			</label>
+			<br />
+			<input name="username" id="mod_login_username" type="text" class="inputbox" alt="username" size="10" />
+			<br />
+			<label for="mod_login_password">
+				Password			</label>
+			<br />
+			<input type="password" id="mod_login_password" name="passwd" class="inputbox" size="10" alt="password" />
+			<br />
+			<input type="checkbox" name="remember" id="mod_login_remember" class="inputbox" value="yes" alt="Remember Me" />
+			<label for="mod_login_remember">
+				Remember me			</label>
+			<br />
+			<input type="submit" name="Submit" class="button" value="Login" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://excalibur.haba.dk/index.php?option=com_registration&amp;task=lostPassword">
+				Lost Password?</a>
+		</td>
+	</tr>
+		</table>
+	
+	<input type="hidden" name="option" value="login" />
+	<input type="hidden" name="op2" value="login" />
+	<input type="hidden" name="lang" value="english" />
+	<input type="hidden" name="return" value="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=44&amp;Itemid=36" />
+	<input type="hidden" name="message" value="0" />
+	<input type="hidden" name="j46b54a2ed683f56b00cf551fd593993a" value="1" />
+	</form>
+			</div>
+				<div class="moduletable">
+							<h3>
+					Who's Online				</h3>
+				We have 3 guests online		</div>
+											</div>
+								</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+														<td class="middlecol">
+								<div class="middlediv">
+																					<table class="contentpaneopen">
+			<tr>
+								<td class="contentheading" width="100%">
+					How to set up computer to host									</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=44" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=44','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="PDF">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/pdf_button.png"  alt="PDF" name="PDF" align="middle" border="0" /></a>
+			</td>
+							<td align="right" width="100%" class="buttonheading">
+					<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=44&amp;pop=1&amp;page=0&amp;Itemid=36" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=44&amp;pop=1&amp;page=0&amp;Itemid=36','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="Print">
+						<img src="http://excalibur.haba.dk/templates/jw_technozine/images/printButton.png"  alt="Print" name="Print" align="middle" border="0" /></a>
+				</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=44&amp;itemid=36" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=44&amp;itemid=36','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="E-mail">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/emailButton.png"  alt="E-mail" name="E-mail" align="middle" border="0" /></a>
+			</td>
+						</tr>
+			</table>
+			
+		<table class="contentpaneopen">
+					<tr>
+				<td width="70%" align="left" valign="top" colspan="2">
+					<span class="small">
+						 Written by Leonidas					</span>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+						<tr>
+				<td valign="top" colspan="2" class="createdate">
+					Sunday, 20 December 2009				</td>
+			</tr>
+					<tr>
+			<td valign="top" colspan="2">
+				How to configure your computer to host <p>There are many people who want to host but no one can join their rooms.&nbsp; This is because the computers of the people in your room, do not know how to find yours!&nbsp; It is very easy to help them find their way.</p><p>&nbsp;If you only have one modem and one computer, connected to one modem, with no separate router and no extra devices,&nbsp; it is very easy! Everyone will be able to join your games!&nbsp; if they cant join your games, you must have a port blocked.&nbsp; what is a port? that is the entrance they get to your computer.&nbsp; you have to go to your modem (your isp, verizon, at&amp;t, etc, will have to tell you how to do this*) and open these ports: 16000, 23978, and 15000 for a good measure.&nbsp; Then you are set.</p><p>&nbsp;</p><p>If you have more than one device on your network, the other computer will have a problem.&nbsp; When the signal from the other computer goes to your modem looking for the game, it will get lost! it will see all the various devices (printers, other computers, iphones, etc) attached to your network, and not know which one to connect to for the game!! ARRG.&nbsp; How do you fix this problem?</p><p>&nbsp;very easy.&nbsp; You go to the control page of your router (if that is also your modem, see the asterisked line above) and set port forwarding.&nbsp; This means, you tell the router: ALL TRAFFIC ENTERRING PORTS 16000 23978 AND 15000 MUST GO TO MY COMPUTER NOT TO THE OTHER DEVICES.&nbsp; unfortunately, your router doesnt know english.&nbsp; so you have to put the info in like this.&nbsp; I will explain how to do it if your router is an airport like i have.&nbsp; </p><p>&nbsp;Go to the utilities folder in your applications folder.&nbsp; Open the program called &quot;airport utility&quot; select the airport that is your router or base station.&nbsp; click manual setup (if you have leopard).&nbsp; In any event, click into the control page and if you are on Tiger os you should have a pref pane for port forwarding.&nbsp; Enter the ports above, and enter the IP adress: 10.0.1.9 &nbsp; &nbsp;If you have Snow Leopard (and i think leopard too), then u have to click the button up top that says &quot;internet&quot; in teh airport utility window.&nbsp; click so the DHCP lease is 200 days.&nbsp; you can do this with tiger but its in another window or something.&nbsp; then click the advanced wheel, then &quot;port mapping&quot; tab.&nbsp; click the plus button and type in 16000 in both publick and private port areas, and type in 10.01.9 for private IP adress.&nbsp; click ok.&nbsp; Repeat this for 15000 and 23978.&nbsp; then click update for the airport, and you are SET!!!</p><p>&nbsp;</p><p>ONLY ONE PROBLEM!! muahaha.&nbsp; you just forwarded all aoe games to 10.0.1.9.&nbsp; What if your computer is not called 10.0.1.9 on your own Local Area Network (LAN, what your little network of devices in your house is called).&nbsp; Well easy, we&#39;ll just change it to that.</p><p>&nbsp;</p><p>open your system preferences, and click network.&nbsp; This is a little different depending on your OS, but not too different.&nbsp; In Snow Leopard, you click advanced at the bottom then click &quot;tcp/ip&quot;, but in Tiger it is a bit different.&nbsp; Nonetheless you have to find the tab that says &quot;tcp/ip&quot;.&nbsp; write the following settings to look like this:<br /></p><p>&nbsp;Configure IPv4: Manualy</p><p>IPv4 Adress:&nbsp;  10.0.1.9</p><p>Subnet Mask: 255.255.255.0</p><p>Router:&nbsp; 10.0.1.1</p><p>Configure IPv6:&nbsp; Automatically</p><p>&nbsp;</p><p>now click ok.&nbsp; you are done! you did it!!</p><p>&nbsp;</p><p>*for my router, on Verizon, a westell i think, i type in 192.168.1.1 into my browser and it takes me to control page.&nbsp; I then go to &#39;FIREWALLSETTINGS&quot;&nbsp; I set it to minimum security and i was fine.</p><p>&nbsp;</p><p>ALSO in system preferenses, if you have your Mac firewall on, you want to go to the Security Pane in system prefernces, clikc &quot;firewall&quot;.&nbsp; In older os&#39;s, you can enter the ports above, as exceptions.&nbsp; In Snow Leopard, you click advanced and specifically add aoe and gameranger as allowed traffic</p><p>&nbsp;</p><p>PM me in GR with questions! <br /></p><p>&nbsp;</p><p>&nbsp;leonidas</p><p>&nbsp;</p><!--JOM COMMENT START-->
+<div style="display:block;clear:both;">
+    
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="80%" class="contentheading"><a name="jc_allComments" id="jc_allComments"></a>Comments (<span id="jc_numComment">4</span>)<a href="/index.php?option=com_content&amp;task=view&amp;id=44&amp;Itemid=36#jc_writeComment"><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/images/comment_add.gif" alt="add" width="16" height="16" border="0" align="absmiddle" /></a></td>
+                <td width="2%" align="right"><a href="http://excalibur.haba.dk/index2.php?option=com_jomcomment&amp;no_html=1&amp;jc_task=rss&amp;contentid=44"><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/images/feed.gif" alt="feed" width="16" height="16" border="0" /></a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><div id="jc_commentsDiv"> 
+
+
+<div class="jomentry2"  id="pc_153" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=c4ddc09543e168238e6f76ca9d627820&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>zfdfsd5 : wow gold  
+		: <a rel="nofollow" href="http://www.wotlkgold.net">http://www.wotlkgold.net</a>
+	</div>
+	<div class="bCommentText"> <br />I think <a rel="nofollow" href='http://www.wotlkgold.org'>wow gold</a> and  <a rel="nofollow" href='http://www.levelvip.com'>wow power leveling</a> or <a rel="nofollow" href='http://www.eing.com'>wow gold</a> and and <a rel="nofollow" href='http://www.vipowerleveling.com'>wow power leveling</a><br/></div>
+	<div class="bCommentSmallPrint">April 24, 2010</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_185" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=92d7678286e1691e15f670dbe54bd718&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>air max 2009 : air max 2009  
+		: <a rel="nofollow" href="http://www.basketballshoesdiscount.com">http://www.basketballshoesdiscount.com</a>
+	</div>
+	<div class="bCommentText">it is safety and easy to get the nike air max shoes online shop ,we offer the good air max shoes with high quality ,we sale the nike shoes for women and men .such as the the <a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-air-max-shoes-c-70.html'>nike air max 2009</a>,<a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-free-shoes-c-90.html'>nike free shoes</a>,<a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-lebron-james-shoes-c-71.html'>nike lebron james shoes</a>,etc.If you want to buy the  <a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-air-max-shoes-c-70.html'>cheap nike air max basketballshoes  </a>, you can just open  the <a rel="nofollow" href='http://www.basketballshoesdiscount.com'>www.basketballshoesdiscount.com</a> .here we had the  <a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-air-max-shoes-mens-nike-air-max-2009-shoes-c-70_83.html'>mens nike air max 2009 shoes</a> , <a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-air-max-shoes-womens-nike-air-max-2010-shoes-c-70_89.html'>womens nike air max 2010 shoes</a>, <br /><a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-free-shoes-mens-nike-free-50-shoes-c-90_94.html'>mens nike free 5.0 shoes</a>,<a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-air-max-shoes-mens-nike-air-max-95-shoes-c-70_85.html'>mens nike air max 95 shoes</a>,<a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-free-shoes-womens-nike-free-50-shoes-c-90_93.html'>womens nike free 5.0 shoes</a>, <a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-lebron-james-shoes-nike-lebron-james-vii-shoes-c-71_100.html'>nike lebron james VII shoes</a>,<a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-free-shoes-mens-nike-free-30-shoes-c-90_96.html'>mens nike free 3.0 shoes</a>,<a rel="nofollow" href='http://www.basketballshoesdiscount.com/nike-air-max-shoes-mens-nike-air-max-90-shoes-c-70_82.html'>mens nike air max 90 shoes</a> and so on . <br /> <br /><a rel="nofollow" href='http://www.basketballshoesdiscount.com/index.php'>nike air max shoes</a> make your life and you body become more and more beautiful.<br/></div>
+	<div class="bCommentSmallPrint">June 04, 2010</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_233" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=089be617e3dca354b28df780cd211f83&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : tabiz  
+		
+	</div>
+	<div class="bCommentText">thanks a lot man<br/></div>
+	<div class="bCommentSmallPrint">August 17, 2010</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_246" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=c48318907444ec64ad2b0a90cdfdf06a&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : Genghis Khan  
+		
+	</div>
+	<div class="bCommentText">man, my host use to work fine but I did some changes some people come and i can host no more, so i just came to this tutorial and the problem appear when i am openning "Airport Utility". It doesnt find my router data base, it says "Airport utility can't find any devices&#8230; bla bla bla, have been searching and lot of people have the problem but no solution do you know what to do??<br/></div>
+	<div class="bCommentSmallPrint">September 04, 2010</div>
+</div>
+
+</div>
+		  
+	</td>
+        </tr>
+      </table>
+      <div id="jc_commentsDivContainer">
+        <table width="100%"  border="0" cellspacing="2" cellpadding="2">
+          <tr>
+            <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="contentheading"><a name="jc_writeComment" id="jc_writeComment"></a>Write comment</td>
+              </tr>
+            </table>
+              
+			  </td>
+          </tr>
+        </table>
+		<div id="jc_busyDiv"></div>
+			<div id="jc_commentFormDiv" >
+			<div class="jomentry2">
+			<form method="post" onsubmit="return false;" action="" id="jc_commentForm">
+			        
+                    <div> 
+                        <label for="jc_name">Name</label> 
+                        <input name="jc_name" type="text" id="jc_name" value=""/> 
+                    </div> 
+                    
+                    
+                    <div> 
+                        <label for="jc_email">Email</label> 
+                        <input name="jc_email" type="text" id="jc_email"/> 
+                    </div> 
+                     
+					
+					<div>
+						<label for="jc_website">Website</label>
+						<input name="jc_website" type="text" id="jc_website" />
+					</div>
+					
+					
+					<div>
+						<label for="jc_title">Title</label>
+						<input name="jc_title" type="text" id="jc_title" />
+					</div>
+					
+					<div>
+						<label for="jc_comment">Comment</label>
+						
+							<div><div id="bb_container"><div id="bb_main"><div class="bb_item bb_itemImg" style="width:13px;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bbcode_front.gif" alt="quote" border="0"/></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[b]', '[/b]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bold.gif" alt="bold" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[i]', '[/i]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/italicize.gif" alt="italicize" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[u]', '[/u]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/underline.gif" alt="underline" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[s]', '[/s]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/strike.gif" alt="strike" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[url]', '[/url]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/url.gif" alt="url" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[img]', '[/img]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/img.gif" alt="image" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[quote]', '[/quote]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/quote.gif" alt="quote" border="0"/></a></div><div class="bb_item bb_itemImg" style="width:13px;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bbcode_front.gif" alt="quote" border="0"/></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/smiley-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' ;)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/wink-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :D', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cheesy-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' ;D', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/grin-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' >:(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/angry-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/sad-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :o', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/shocked-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' 8)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cool-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :P', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/tongue-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :-\\', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/undecided-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :-*', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/kiss-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :\'(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cry-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div></div></div></div>
+						
+						<textarea name="jc_comment" rows="6" id="jc_comment" ></textarea>
+					</div>
+					
+                    
+					<div><p><img src="http://excalibur.haba.dk/index2.php?option=com_jomcomment&amp;jc_task=img&amp;jc_sid=P6fNvPVrmSw3bcivJ8HWRhdsDCuLDZd24joPYjfja2Bb5JxmqdiglmyOOI01GCSj" id="jc_captchaImg" name="jc_captchaImg" border="1" style="vertical-align:middle" /><br />Write the displayed characters</p></div> 
+					<div><input name="jc_password" type="text" id="jc_password" size="8" maxlength="8"   class="inputting"/></div>
+					
+					
+					<div><button id="jc_submit" onclick="addComments()" >Add Comment</button></div>
+					
+					<input name="jc_contentid" type="hidden" id="jc_contentid" value="44"/>
+                    <input name="jc_sid" type="hidden" id="jc_sid" value="P6fNvPVrmSw3bcivJ8HWRhdsDCuLDZd24joPYjfja2Bb5JxmqdiglmyOOI01GCSj" />
+                    <input name="jc_task" type="hidden" id="jc_task" value="add" />
+                    <input name="jc_isajax" type="hidden" id="jc_isajax" value="0" />
+                    <input name="jc_option" type="hidden" id="jc_option" value="com_content"/>
+			</form>
+            </div>
+			</div>
+		</div>
+    
+  
+  </div>
+<br/><div style="text-align:center;"><a target="_blank" href="http://www.azrul.com">Powered by Azrul&#39;s Jom Comment</a></div><script type='text/javascript'> if(xajaxLoaded) {xajax_jcxLoadUserInfo(readCookie('jc_name'),readCookie('jc_email'),readCookie('jc_website'));}</script><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif" alt="busy" style="visibility:hidden;display:none;"/><!--JOM COMMENT END-->			</td>
+		</tr>
+					<tr>
+				<td colspan="2" align="left" class="modifydate">
+					Last Updated ( Wednesday, 03 February 2010 )
+				</td>
+			</tr>
+					</table>
+		
+		<span class="article_seperator">&nbsp;</span>
+		
+					<table align="center" style="margin-top: 25px;">
+			<tr>
+									<th class="pagenav_next">
+						<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=30&amp;Itemid=36">
+							Next &gt;</a>
+					</th>
+								</tr>
+			</table>
+						<div class="back_button">
+				<a href='javascript:history.go(-1)'>
+					[ Back ]</a>
+			</div>
+											</div>
+							</td>
+														<td class="rightcol">
+								<div class="rightdiv">
+																													<div class="moduletable">
+							<h3>
+					Latest News				</h3>
+				<ul class="latestnews">
+	<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=46&amp;Itemid=36" class="latestnews">
+			 DM attacking guide</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=45&amp;Itemid=36" class="latestnews">
+			DM, the first few minutes</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9" class="latestnews">
+			MAC AOE2 LADDER</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=44&amp;Itemid=36" class="latestnews">
+			How to set up computer to host</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=43&amp;Itemid=36" class="latestnews">
+			Pocket Mayans: Plumed Archers</a>
+	</li>
+	</ul>		</div>
+										</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+													</tr>
+					</table>	
+				</div>
+				<div class="greybox_top_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_top_padding">
+					<div class="topnav" id="footer">
+						<div class="syndicate">
+			<div align="center">
+			<a href="http://excalibur.haba.dk/index.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1">
+				<img src="http://excalibur.haba.dk/images/M_images/rss20.gif"  alt="RSS 2.0" name="RSS20" align="middle" border="0" /></a>
+		</div>
+		</div></div>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- 1284506260 -->

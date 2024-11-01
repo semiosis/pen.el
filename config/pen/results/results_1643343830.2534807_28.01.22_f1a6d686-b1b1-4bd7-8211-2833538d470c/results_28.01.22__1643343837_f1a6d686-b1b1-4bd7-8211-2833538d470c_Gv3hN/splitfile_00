@@ -1,0 +1,11 @@
+"async/close!" [ws-ch]
+  (async/close! ws-ch))
+
+"Documentation for "async/go-loop":
+"
+"async/go-loop" [[] chan]
+  (async/go-loop [] (async/alt! chan ([msg] (recur msg)))))
+
+"Documentation for "async/alt!":
+"
+"async/alt!" [chan

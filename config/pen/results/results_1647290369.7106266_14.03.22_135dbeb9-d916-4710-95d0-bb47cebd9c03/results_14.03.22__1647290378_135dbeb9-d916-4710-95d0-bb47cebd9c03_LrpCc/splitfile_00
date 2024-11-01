@@ -1,0 +1,3 @@
+The above code is used to create two hashes, one for the keys of the original hash, and one for the values of the original hash.
+The values are made lowercase, and the keys are made lowercase.
+

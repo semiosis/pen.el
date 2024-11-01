@@ -1,0 +1,21 @@
+
+  (char-to-string (+ ?a (mod char 26))))
+
+(defun pen-modeline-name-ascii ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (s-replace-regexp
+            "pen-emacsd-" ""
+            dn))
+          (t
+           "emacs"))))
+
+
+(defun pen-modeline ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (format "%s:%s" dn (pen-modeline-name)))

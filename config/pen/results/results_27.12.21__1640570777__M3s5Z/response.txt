@@ -1,0 +1,2 @@
+apache2  bin  boot  lib  lib64  media  mnt  opt  root  run  sbin  srv  sys  usr  var
+shane

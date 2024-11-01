@@ -1,0 +1,170 @@
+HTTP/1.1 200 OK
+Server: nginx/1.2.1
+Date: Tue, 01 Aug 2023 00:23:34 GMT
+Content-Type: text/html
+Content-Length: 3079
+Connection: keep-alive
+X-Powered-By: PHP/5.4.4-14+deb7u12
+Vary: Accept-Encoding
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="LQqoUGj9UMJOWHDCkReMJv0paitHxwRAtKAZu597NKs" />
+<link rel="icon" type="image/png" href="/icon.png"/>
+<title>GoldenDict | Download</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1	><a href="/">GoldenDict</a></h1>
+			<p>dictionary lookup program</p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+		<ul><li><a href="/">About</a></li><li><a href="news.php">News</a></li><li><a href="screenshots.php">Screenshots</a></li><li class ="first"><a href="download.php">Download</a></li><li><a href="changelog.php">Changelog</a></li><li><a href="dictionaries.php">Dictionaries</a></li><li><a href="wiki/">Wiki</a></li><li><a href="forum/">Forum</a></li><li><a href="contact.php">Contact</a></li>		</ul>
+	</div>
+<div id="wrapper">
+<div class="btm">
+	<div id="page">
+<div id="topb">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4531618624297387";
+/* Top */
+google_ad_slot = "0814101047";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+		<div id="content">
+                        
+			<div class="post" id="release101">
+				<h2 class="title">Latest release: GoldenDict 1.0.1</h2>
+				<div class="entry">
+					<p>New release. See <a href="changelog.php#release101">changelog</a> for details.<p />
+          <ul>
+          <li><a href="http://downloads.sourceforge.net/goldendict/GoldenDict-1.0.1-1-Install.exe">32-bit Windows installer</a>, 16MB - just run it to install the program. It doesn't include any local dictionaries, which are to be downloaded
+          elsewhere. Wikipedia and websites would still work, though.</li>
+          <li><a href="http://downloads.sourceforge.net/goldendict/GoldenDict-1.0.1-1-EnRuEn-Install.exe">32-bit Windows En-Ru-En installer</a>, 78MB -
+	  this one in addition to the program itself has two dictionaries (Apresyan En-Ru and Smirnitskiy Ru-En) and English word pronunciations. It allows
+	  trying out the program instantly without searching for any dictionary content. If you are upgrading from the previous version, do a
+	  complete uninstall first, otherwise the program won't automatically use the content.</li>
+          <li><a href="http://downloads.sourceforge.net/goldendict/GoldenDict-1.0.1-Portable.zip">32-bit Windows portable version</a>, 20MB -
+	  just unzip it anywhere you want (e.g. pen drive) and put your dictionaries to the content/ directory.</li>
+          <li><a href="http://downloads.sourceforge.net/goldendict/goldendict-1.0.1-src.tar.bz2">Source code</a>, 2.7MB - for Linux users and those who want to build the program themselves.
+	  Consult <a href="buildfromgit.php">Building latest version from source</a><br> instructions for building hints. Linux users should better just use the means of their distribution to install the program.</li>
+          <li><a href="http://downloads.sourceforge.net/goldendict/enruen-content-1.1.tar.bz2">En-Ru-En content</a>, 62MB - En-Ru-En content for Linux people, see description above.
+	  Untar it to /usr/local/share/apps/goldendict. Remove any previous program configuration if you want the content to be hooked up automatically: do <span style="font-family: monospace;">rm -rf ~/.goldendict</span>.
+	  </li>
+   <li>Linux users: Linux versions usually come without morphology files. You can use system myspell/hunspell files,
+   but there are better versions with more stems available specially for GoldenDict. Download them <a href="http://sourceforge.net/projects/goldendict/files/better%20morphologies/1.0/">here</a>.
+   Unzip them to a separate directory and change morphology path in the program to point to it. Do not replace your system myspell dictionaries with those files - they don't add any new words, just more stems.
+   </li>
+   <li>If you need a good English dictionary with a clear and free license, get <a href="http://downloads.sourceforge.net/goldendict/WordNet3.0_1.0.zip">this one</a>, a full version of WordNet 3.0 specially formatted for GoldenDict.
+
+          </ul>
+				</div>
+				<p class="meta">Posted on Dec 3, 2010</p>
+			</div>
+
+<div class="post">
+                        <h2 class="title">Bleeding-edge versions</h2>
+<div class="entry">If you experience problems with the released version, use the latest GIT snapshot <a href="http://github.com/goldendict/goldendict/">here</a>. Building instructions are <a href="buildfromgit.php">here</a>. Windows users: the latest build is available <a href="http://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Windows">here</a>.</div>
+</div>			
+			
+         <div class="post">
+				<h2 class="title">See Also</h2>
+				<div class="entry">
+              <a href="buildfromgit.php">Building latest version from source</a><br>
+              <a href="dlarchive.php">Previous releases</a>
+           </div>
+         </div>			
+			
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="x_help" style="display: none;"><div class="x_help_space"></div><div class="x_help_inner"></div></div>
+
+<div style="height: 32px;">&nbsp;</div>
+
+<div class="post" id="our_xframe" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4531618624297387";
+/* Bottom Placement */
+google_ad_slot = "3050725811";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2008-2013 Konstantin Isakov. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
+	
+	
+	</p>
+ 	</div>
+	<!-- end #footer -->
+ 
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=4444680; 
+var sc_invisible=1; 
+var sc_partition=55; 
+var sc_click_stat=1; 
+var sc_security="177b4314"; 
+</script>
+<script type="text/javascript"
+ src="http://www.statcounter.com/counter/counter.js"></script><noscript>
+<div class="statcounter"><a title="myspace views counter"
+ href="http://www.statcounter.com/myspace/" target="_blank"><img
+ class="statcounter"
+ src="http://c.statcounter.com/4444680/0/177b4314/1/"
+ alt="myspace views counter"></a></div>
+</noscript><!-- End of StatCounter Code -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19913106-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+$(document).ready( function() {
+
+if ($('#our_xframe').height() == 0)
+{
+  $('#x_help .x_help_inner').html(
+"We've put a lot of effort to produce this software. \
+It comes for free, complete with the source code! \
+If you are sympathetic to the project and would like to help it, please \
+disable your <b>AdBlock</b> on this site. Just click on the <b>AdBlock</b> \
+icon and choose <b>'Disable on goldendict.org'</b>. Thank you!" );
+  $('#x_help').show();
+}
+});
+</script></body>
+</html>

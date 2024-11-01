@@ -1,0 +1,17 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\t -> t {0 = "foo"})) tuples
+
+  -- Map the rows into a list of columns, one for each field.
+  columns <- map (transpose . map (\r -> r {0 = "foo"})) rows
+
+  -- Map the columns into a list of records, one for each field.
+  records' <- map (map (\c -> c {0 = "foo"})) columns
+
+  -- Map the records into a list of lines, one for each record.
+  lines' <- map (map (\r -> T.pack $ T.intercalate "," r)) records'
+
+  -- Write the lines to stdout
+  putStrLn <$> lines'
+EOD

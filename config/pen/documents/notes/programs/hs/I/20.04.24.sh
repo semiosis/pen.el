@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "I" "Peter" "2:9" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "I" "John" "1:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "I" "John" "1:1-2" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "I" "John" "1:1-3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "I" "John" "1:1-3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "John" "1:5-7" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "I" "Corinthians" "14-16" "#" "<==" "bash"

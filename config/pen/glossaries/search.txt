@@ -1,0 +1,7 @@
+beam search
+    A heuristic search algorithm that explores
+    a graph by expanding the most promising
+    node in a limited set.
+    
+    An optimization of best-first search that
+    reduces its memory requirements.

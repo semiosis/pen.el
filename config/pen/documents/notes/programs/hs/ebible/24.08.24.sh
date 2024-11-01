@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Is \"7:10]]\"" "#" "<==" "Is"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Is 7:10-20" "#" "<==" "Is"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Mt 1:21-23" "#" "<==" "Mt"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Mt 1:24-25" "#" "<==" "Mt"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Isaiah 43:18-19" "#" "<==" "Isaiah"
+cd /root/notes;  "ebible" "-m" "ESV" "Revelation of John 13:10" "#" "<==" "Revelation"
+cd /root/notes;  "ebible" "-m" "ESV" "Revelation of John 14:7" "#" "<==" "Revelation"

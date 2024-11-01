@@ -1,0 +1,880 @@
+HTTP/1.1 200 OK
+Date: Sun, 18 Feb 2024 20:17:51 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Tue, 17 Nov 2015 21:20:19 GMT
+Accept-Ranges: bytes
+Content-Length: 46467
+Keep-Alive: timeout=3, max=100
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Didache. The Teaching of the Twelve Apostles (translation Roberts-Donaldson).</TITLE>
+<meta name="keywords" content="didache,the didache,didache text,teaching of the twelve apostles,the teaching of the twelve apostles">
+<meta name="description" content="Didache. The Teaching of the Twelve Apostles (translation Roberts-Donaldson). On Early Christian Writings.">
+<link rel="stylesheet" media="all" href="../finaldemo/layers.css" type="text/css">
+<style type="text/css">
+body {
+	behavior: url("csshover.txt");
+}
+
+body {
+  margin: 0px;
+	padding: 0px;
+}
+
+#menu ul, li, div {
+	margin: 0px;
+	padding: 0px;
+}
+LI:hover {
+	Z-INDEX: 15;
+}
+UL UL {
+  position: absolute;
+	display: none;
+}
+LI:hover UL UL {
+	DISPLAY: none;
+}
+LI:hover UL {
+	DISPLAY: block;
+}
+LI:hover LI:hover UL {
+	DISPLAY: block
+}
+li ul {
+	position: absolute;
+	display: none;
+}
+#menu ul, #menu li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul li {
+	position: relative;
+}
+#menu {
+  line-height: 1px;
+	font-size: 1px;
+}
+
+/* Styles for Menu Items */
+
+li.topli ul a {
+  display: block;
+	padding-top: 3px; padding-left: 3px; padding-bottom: 3px; padding-right: 0px;
+	margin: 0px;
+	text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+	line-height: 10px;
+  font-size: 10px;
+	color: rgb(246, 223, 190);
+}
+li.submenu a {
+  background-image: url("pic/arrow.gif"); background-position: right; background-repeat: no-repeat; z-index: 20;
+}
+li.submenu ul a {
+  background-image: url("pic/spacer.gif"); z-index: 25;
+}
+li.topli li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+li.topli li:hover ul li a {
+  color: rgb(246, 223, 190);
+	background-color: rgb(73, 63, 40);
+}
+#menu li.submenu ul li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+#menu li {
+  height: 16px;
+	margin: 0px; padding: 0px;
+  width: inherit;
+}
+
+/* Specific classes */
+
+ul.topul {
+  position: absolute;
+	left: 0px;
+	top: 20px;
+	background-color: black;
+}
+
+li.topli {
+  position: absolute;
+	top: 0px;
+}
+
+div.topdiv1 {
+  position: absolute;
+	top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.topdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(73, 63, 40);
+}
+
+ul.subul {
+  position: absolute;
+  top: -1px;
+  background-color: black;
+}
+
+div.subdiv1 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.subdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+	background-color: rgb(73, 63, 40);
+}
+
+/* Fix some stuff with lists in the body of the page. */
+#infolayer ul {
+  position: relative;
+  display: block;
+  list-style-type: disc;
+	list-style-position: outside;
+}
+#infolayer li {
+  position: relative;
+  display: list-item;
+}
+#infolayer ul li {
+	margin-left: -16px;
+}
+#infolayer ol li {
+  margin-left: -8px;
+}
+#infolayer a {
+  color: #990033;
+}
+#infolayer a:visited {
+  color: black;
+}
+#infolayer a:hover {
+  color: red;
+}
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4053514-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+
+<div id="whitetoplayer">
+  <div id="buythecd"><a href="https://earlywritings.com/buy/"><img src="../pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div id="breadcrumbs" style="position: absolute; top: 11px; left: 15px;"><a href="../">Home</a> <b>&gt;</b> <a href="../apocrypha.html">Apocrypha</a> <b>&gt;</b> <a href="../didache.html">Didache</a> <b>&gt;</b> <b>Text</b></div>
+  <form action="http://www.google.com/cse" id="cse-search-box" target="_blank" style="position: absolute; top: 0px; right: 118px; height: 39px; font-family: Arial, Helvetica, sans-serif; margin: 5px;">
+    <div style="background-color: rgb( 174, 134, 64 ); text-align: right; -moz-border-radius: 5px;"><div style="padding: 3px;">
+    <input type="hidden" name="cx" value="partner-pub-2665675471425577:4654561773" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" width="40" />
+    <input type="submit" name="sa" value="Search" />
+	</div></div>
+  </form>
+</div>
+
+<style>
+#ataglance div.info {
+  margin-top: 6px;
+	margin-bottom: 6px;
+}
+</style>
+
+<div id="infolayer">
+  <div id="textboundingbox">
+
+  <h1 id="textname">Didache</h1>
+
+	<div id="toprightad" style="float: right;">
+	<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-2665675471425577";
+		/* Top Right Article */
+		google_ad_slot = "8302713982";
+		google_ad_width = 336;
+		google_ad_height = 280;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+</div>
+
+<div style="float: right; clear: both; margin-top:200px; margin-left: 10px; margin-bottom: 20px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Large Skyscraper -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-2665675471425577"
+     data-ad-slot="6140797149"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<p style="position: relative; display: inline; padding-top: 0px; margin-top: 5px;"></p>
+
+<P>
+<H3>The Didache</H3><B>The Lord's Teaching Through the Twelve Apostles to the 
+Nations.</B> 
+<P><B>Chapter 1. The Two Ways and the First Commandment.</B> There are two ways, 
+one of life and one of death, but a great difference between the two ways. The 
+way of life, then, is this: First, you shall love God who made you; second, 
+love your neighbor as yourself, and do not do to another what you would not want 
+done to you. And of these sayings the teaching is this: Bless those who curse 
+you, and pray for your enemies, and fast for those who persecute you. For what 
+reward is there for loving those who love you? Do not the Gentiles do the same? 
+But love those who hate you, and you shall not have an enemy. Abstain from 
+fleshly and worldly lusts. If someone strikes your right cheek, turn to him the 
+other also, and you shall be perfect. If someone impresses you for one mile, go 
+with him two. If someone takes your cloak, give him also your coat. If someone 
+takes from you what is yours, ask it not back, for indeed you are not able. Give 
+to every one who asks you, and ask it not back; for the Father wills that to all 
+should be given of our own blessings (free gifts). Happy is he who gives 
+according to the commandment, for he is guiltless. Woe to him who receives; for 
+if one receives who has need, he is guiltless; but he who receives not having 
+need shall pay the penalty, why he received and for what. And coming into 
+confinement, he shall be examined concerning the things which he has done, and 
+he shall not escape from there until he pays back the last penny. And also 
+concerning this, it has been said, Let your alms sweat in your hands, until you 
+know to whom you should give. 
+<P><B>Chapter 2. The Second Commandment: Grave Sin Forbidden.</B> And the second 
+commandment of the Teaching; You shall not commit murder, you shall not commit 
+adultery, you shall not 
+commit pederasty, you shall not commit fornication, you shall not steal, you 
+shall not practice magic, you shall not practice witchcraft, you shall not 
+murder a child by abortion nor kill that which is born. 
+You shall not covet the things of your neighbor, you shall not swear, you shall 
+not bear false witness, 
+you shall not speak evil, you shall bear no grudge. You shall not be 
+double-minded nor double-tongued, for to be double-tongued is a snare of death. 
+Your speech shall not be false, nor empty, but fulfilled by deed. You shall not 
+be covetous, nor rapacious, nor a hypocrite, nor evil disposed, nor haughty. You 
+shall not take evil counsel against your neighbor. You shall not hate any man; 
+but some you shall reprove, and concerning some you shall pray, and some you 
+shall love more than your own life. 
+<P><B>Chapter 3. Other Sins Forbidden.</B> My child, flee from every evil thing, 
+and from every likeness of it. Be not prone to anger, for anger leads to 
+murder. Be neither jealous, nor quarrelsome, nor of hot temper, for out of all 
+these murders are engendered. My child, be not a lustful one. for lust leads to fornication. 
+Be neither a filthy talker, nor of lofty eye, for out of all these adulteries 
+are engendered. My child, be not an observer of omens, since it leads to 
+idolatry. Be neither an enchanter, nor an astrologer, nor a purifier, nor be 
+willing to took at these things, for out of all these idolatry is engendered. My 
+child, be not a liar, since a lie leads to theft. Be neither money-loving, nor 
+vainglorious, for out of all these thefts are engendered. My child, be not a 
+murmurer, since it leads the way to blasphemy. Be neither self-willed nor 
+evil-minded, for out of all these blasphemies are engendered. 
+<P>Rather, be meek, since the meek shall inherit the earth. Be long-suffering 
+and pitiful and guileless and gentle and good and always trembling at the words 
+which you have heard. You shall not exalt yourself, nor give over-confidence to 
+your soul. Your soul shall not be joined with lofty ones, but with just and 
+lowly ones shall it have its intercourse. Accept whatever happens to you as 
+good, knowing that apart from God nothing comes to pass. 
+<P><B>Chapter 4. Various Precepts.</B> My child, remember night and day him who 
+speaks the word of God to you, and honor him as you do the Lord. For wherever 
+the lordly rule is uttered, there is the Lord. And seek out day by day the faces 
+of the saints, in order that you may rest upon their words. Do not long for 
+division, but rather bring those who contend to peace. Judge righteously, and do 
+not respect persons in reproving for transgressions. You shall not be undecided 
+whether or not it shall be. Be not a stretcher forth of the hands to receive and 
+a drawer of them back to give. If you have anything, through your hands you 
+shall give ransom for your sins. Do not hesitate to give, nor complain when you 
+give; for you shall know who is the good repayer of the hire. Do not turn away 
+from him who is in want; rather, share all things with your brother, and do not 
+say that they are your own. For if you are partakers in that which is immortal, 
+how much more in things which are mortal? Do not remove your hand from your son 
+or daughter; rather, teach them the fear of God from their youth. Do not enjoin 
+anything in your bitterness upon your bondman or maidservant, who hope in the 
+same God, lest ever they shall fear not God who is over both; for he comes not 
+to call according to the outward appearance, but to them whom the Spirit has 
+prepared. And you bondmen shall be subject to your masters as to a type of God, 
+in modesty and fear. You shall hate all hypocrisy and everything which is not 
+pleasing to the Lord. Do not in any way forsake the commandments of the Lord; 
+but keep what you have received, neither adding thereto nor taking away 
+therefrom. In the church you shall acknowledge your transgressions, and you 
+shall not come near for your prayer with an evil conscience. This is the way of 
+life. 
+<P><B>Chapter 5. The Way of Death.</B> And the way of death is this: First of 
+all it is evil and accursed: murders, adultery, lust, fornication, thefts, 
+idolatries, magic arts, witchcrafts, rape, false witness, hypocrisy, 
+double-heartedness, deceit, haughtiness, depravity, self-will, greediness, 
+filthy talking, jealousy, over-confidence, loftiness, boastfulness; persecutors 
+of the good, hating truth, loving a lie, not knowing a reward for righteousness, 
+not cleaving to good nor to righteous judgment, watching not for that which is 
+good, but for that which is evil; from whom meekness and endurance are far, 
+loving vanities, pursuing revenge, not pitying a poor man, not laboring for the 
+afflicted, not knowing Him Who made them, murderers of children, destroyers of 
+the handiwork of God, turning away from him who is in want, afflicting him who 
+is distressed, advocates of the rich, lawless judges of the poor, utter sinners. 
+Be delivered, children, from all these. 
+<P><B>Chapter 6. Against False Teachers, and Food Offered to Idols.</B> See that 
+no one causes you to err from this way of the Teaching, since apart from God it 
+teaches you. For if you are able to bear the entire yoke of the Lord, you will 
+be perfect; but if you are not able to do this, do what you are able. And 
+concerning food, bear what you are able; but against that which is sacrificed to 
+idols be exceedingly careful; for it is the service of dead gods. 
+<P><B>Chapter 7. Concerning Baptism.</B> And concerning baptism, baptize this way: 
+Having first said all these things, baptize into the name of the Father, and of 
+the Son, and of the Holy Spirit, in living water. But if you have no living 
+water, baptize into other water; and if you cannot do so in cold water, do so in 
+warm. But if you have neither, pour out water three times upon the head into the 
+name of Father and Son and Holy Spirit. But before the baptism let the baptizer 
+fast, and the baptized, and whoever else can; but you shall order the baptized 
+to fast one or two days before. 
+<P><B>Chapter 8. Fasting and Prayer (the Lord's Prayer).</B> But let not your 
+fasts be with the hypocrites, for they fast on the second and fifth day of the 
+week. Rather, fast on the fourth day and the Preparation (Friday). Do not pray 
+like the hypocrites, but rather as the Lord commanded in 
+His Gospel, like this: 
+<BLOCKQUOTE>
+  <P>Our Father who art in heaven, hallowed be Thy name. Thy kingdom come. Thy 
+  will be done on earth, as it is in heaven. Give us today our daily (needful) 
+  bread, and forgive us our debt as we also forgive our debtors. And bring us 
+  not into temptation, but deliver us from the evil one (or, evil); for Thine is 
+  the power and the glory for ever..</P></BLOCKQUOTE>
+<P>Pray this three times each day. 
+<P><B>Chapter 9. The Eucharist.</B> Now concerning the Eucharist, give thanks 
+this way. First, concerning the cup: 
+<BLOCKQUOTE>
+  <P>We thank thee, our Father, for the holy vine of David Thy servant, which 
+  You madest known to us through Jesus Thy Servant; to Thee be the glory for 
+  ever..</P></BLOCKQUOTE>And concerning the broken bread: 
+<BLOCKQUOTE>
+  <P>We thank Thee, our Father, for the life and knowledge which You madest 
+  known to us through Jesus Thy Servant; to Thee be the glory for ever. Even as 
+  this broken bread was scattered over the hills, and was gathered together and 
+  became one, so let Thy Church be gathered together from the ends of the earth 
+  into Thy kingdom; for Thine is the glory and the power through Jesus Christ 
+  for ever..</P></BLOCKQUOTE>
+<P>But let no one eat or drink of your Eucharist, unless they have been baptized 
+into the name of the Lord; for concerning this also the Lord has said, "Give not 
+that which is holy to the dogs." 
+<P><B>Chapter 10. Prayer after Communion.</B> But after you are filled, give 
+thanks this way: 
+<BLOCKQUOTE>
+  <P>We thank Thee, holy Father, for Thy holy name which You didst cause to 
+  tabernacle in our hearts, and for the knowledge and faith and immortality, 
+  which You modest known to us through Jesus Thy Servant; to Thee be the glory 
+  for ever. Thou, Master almighty, didst create all things for Thy name's sake; 
+  You gavest food and drink to men for enjoyment, that they might give thanks to 
+  Thee; but to us You didst freely give spiritual food and drink and life 
+  eternal through Thy Servant. Before all things we thank Thee that You are 
+  mighty; to Thee be the glory for ever. Remember, Lord, Thy Church, to deliver 
+  it from all evil and to make it perfect in Thy love, and gather it from the 
+  four winds, sanctified for Thy kingdom which Thou have prepared for it; for 
+  Thine is the power and the glory for ever. Let grace come, and let this world 
+  pass away. Hosanna to the God (Son) of David! If any one is holy, let him 
+  come; if any one is not so, let him repent. Maranatha. Amen.</P></BLOCKQUOTE>
+<P>But permit the prophets to make Thanksgiving as much as they desire. 
+<P><B>Chapter 11. Concerning Teachers, Apostles, and Prophets.</B> Whosoever, 
+therefore, comes and teaches you all these things that have been said before, 
+receive him. But if the teacher himself turns and teaches another doctrine to 
+the destruction of this, hear him not. But if he teaches so as to increase 
+righteousness and the knowledge of the Lord, receive him as the Lord. But 
+concerning the apostles and prophets, act according to the decree of the Gospel. 
+Let every apostle who comes to you be received as the Lord. But he shall not 
+remain more than one day; or two days, if there's a need. But if he remains 
+three days, he is a false prophet. And when the apostle goes away, let him take 
+nothing but bread until he lodges. If he asks for money, he is a false prophet. 
+And every prophet who speaks in the Spirit you shall neither try nor judge; for 
+every sin shall be forgiven, but this sin shall not be forgiven. But not every 
+one who speaks in the Spirit is a prophet; but only if he holds the ways of the 
+Lord. Therefore from their ways shall the false prophet and the prophet be 
+known. And every prophet who orders a meal in the Spirit does not eat it, unless 
+he is indeed a false prophet. And every prophet who teaches the truth, but does 
+not do what he teaches, is a false prophet. And every prophet, proved true, 
+working unto the mystery of the Church in the world, yet not teaching others to 
+do what he himself does, shall not be judged among you, for with God he has his 
+judgment; for so did also the ancient prophets. But whoever says in the Spirit, 
+Give me money, or something else, you shall not listen to him. But if he tells 
+you to give for others' sake who are in need, let no one judge him. 
+<P><B>Chapter 12. Reception of Christians.</B> But receive everyone who comes in 
+the name of the Lord, and prove and know him afterward; for you shall have 
+understanding right and left. If he who comes is a wayfarer, assist him as far 
+as you are able; but he shall not remain with you more than two or three days, 
+if need be. But if he wants to stay with you, and is an artisan, let him work 
+and eat. But if he has no trade, according to your understanding, see to it 
+that, as a Christian, he shall not live with you idle. But if he wills not to 
+do, he is a Christ-monger. Watch that you keep away from such. 
+<P><B>Chapter 13. Support of Prophets.</B> But every true prophet who wants to 
+live among you is worthy of his support. So also a true teacher is himself 
+worthy, as the workman, of his support. Every first-fruit, therefore, of the 
+products of wine-press and threshing-floor, of oxen and of sheep, you shall take 
+and give to the prophets, for they are your high priests. But if you have no 
+prophet, give it to the poor. If you make a batch of dough, take the first-fruit 
+and give according to the commandment. So also when you open a jar of wine or of 
+oil, take the first-fruit and give it to the prophets; and of money (silver) and 
+clothing and every possession, take the first-fruit, as it may seem good to you, 
+and give according to the commandment. 
+<P><B>Chapter 14. Christian Assembly on the Lord's Day.</B> But every Lord's day gather 
+yourselves together, and break bread, and give thanksgiving after having 
+confessed your transgressions, that your sacrifice may be pure. But 
+let no one who is at odds with his fellow come together with you, until they be 
+reconciled, that your sacrifice may not be profaned. For this is that which was 
+spoken by the Lord: "In every place and time offer to me a pure sacrifice; for I 
+am a great King, says the Lord, and my name is wonderful among the nations." 
+<P><B>Chapter 15. Bishops and Deacons; Christian Reproof.</B> Appoint, 
+therefore, for yourselves, bishops and deacons worthy of the 
+Lord, men meek, and not lovers of money, and truthful and proved; for they also 
+render to you the service of prophets and teachers. Therefore do not despise 
+them, for they are your honored ones, together with the prophets and teachers. 
+And reprove one another, not in anger, but in peace, as you have it in the 
+Gospel. But to anyone that acts amiss against another, let no one speak, nor let 
+him hear anything from you until he repents. But your prayers and alms and all 
+your deeds so do, as you have it in the Gospel of our Lord. 
+<P><B>Chapter 16. Watchfulness; the Coming of the Lord.</B> Watch for your 
+life's sake. Let not your lamps be quenched, nor your loins unloosed; but be 
+ready, for you know not the hour in which our Lord will come. But come together 
+often, seeking the things which are befitting to your souls: for the whole time 
+of your faith will not profit you, if you are not made perfect in the last time. 
+For in the last days false prophets and corrupters shall be multiplied, and the 
+sheep shall be turned into wolves, and love shall be turned into hate; for when 
+lawlessness increases, they shall hate and persecute and betray one another, and 
+then shall appear the world-deceiver as Son of 
+God, and shall do signs and wonders, and the earth shall be delivered into his 
+hands, and he shall do iniquitous things which have never yet come to pass since 
+the beginning. Then shall the creation of men come into the fire of trial, and 
+many shall be made to stumble and shall perish; but those who endure in their 
+faith shall be saved from under the curse itself. And then shall appear the 
+signs of the truth: first, the sign of an outspreading in heaven, then the sign 
+of the sound of the trumpet. And third, the resurrection of the dead 
+-- yet not of all, but as it is said: "The Lord shall come and all His saints 
+with Him." Then shall the world see the Lord coming upon the clouds of heaven. 
+<P>
+
+</div>
+
+<hr width="50%">
+
+<p style="text-align: center">Go to the <a href="../index.html">Chronological List</a> of all Early Christian Writings</p>
+
+<p style="text-align: center;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2665675471425577";
+/* Leaderboard-bot */
+google_ad_slot = "4364046558";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+
+<p style="text-align: center; font-size:135%;">Please <a href="https://earlywritings.com/buy/">buy the CD</a> to support the site, view it without ads, and get bonus stuff!</p>
+
+
+  <div id="infoleft"></div>
+  <div id="inforight"></div>
+  <div id="footer">
+    <div id="footleft"></div>
+    <div id="footright"></div>
+  </div>
+
+  	<div id="whitebottomlayer">
+	<p id="copyrightnotice"><a href="index.html">Early Christian Writings</a> is copyright &copy; 
+  <script language="JavaScript">
+  <!--
+  var months=new Array(13);
+  months[1]="Jan.";
+  months[2]="Feb.";
+  months[3]="Mar.";
+  months[4]="Apr.";
+  months[5]="May";
+  months[6]="June";
+  months[7]="July";
+  months[8]="Aug.";
+  months[9]="Sept.";
+  months[10]="Oct.";
+  months[11]="Nov.";
+  months[12]="Dec.";
+  var time=new Date();
+  var lmonth=months[time.getMonth() + 1];
+  var date=time.getDate();
+  var year=time.getYear();
+  if (year < 2000)
+    year = year + 1900;
+  document.write("2001-" + year);
+  // -->
+  </script>
+Peter Kirby <code>&lt;<a href="http://www.peterkirby.com/">E-Mail</a>&gt</code>.</p>
+	  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fearlychristianwritingscom%2F121187514627340&amp;send=false&amp;layout=box_count&amp;width=55&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:65px; float: left; margin-left: 15px;" allowTransparency="true"></iframe>
+	  <div style="float: left; margin-right: 10px;">
+	<!-- Place this tag where you want the +1 button to render. -->
+	<div class="g-plusone"></div>
+	<!-- Place this tag after the last +1 button tag. -->
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	  <div><a href="https://twitter.com/mrpeterkirby" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @mrpeterkirby</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+	  </div>
+	<div id="buythecd"><a href="https://earlywritings.com/buy/"><img src="../pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div style="width: 500px; font-size: 12px; margin-top: 8px; margin-left: auto; margin-right: auto; padding-left: 50px;"><div style="position: absolute; width: 40px; height: 40px;"><b>MLA<br>Style</b></div><div style="position: relative; left: 40px;"><p>Kirby, Peter. "Historical Jesus Theories." <i>Early Christian Writings</i>.  
+  <script language="JavaScript">
+  <!--
+  document.write(year + ". " + date + " " + lmonth + " " + year);
+  // -->
+  </script>
+ &lt;http://www.earlychristianwritings.com/text/1clement-hoole.html&gt;.</p></div></div>
+  </div></div><div id="headlayer">
+  <div id="headleft"></div>
+  <div id="headright"></div>
+
+<ul id="menu" style="position: absolute; margin-left: -149px; left: 50%; top: 83px; width: 0px; height: 0px;">
+<li class="topli" style="left: 0px; width: 87px; height: 29px;"><a href="../newtestament.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 87px; height: 29px; border: 0px;" alt="New Testament"></a>
+	<ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px"><div class="topdiv2" style="width: 130px; height: 96px;">
+		<li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 51px; height: 67px;">
+  		<div class="subdiv1" style="width: 49px; height: 65px;"><div class="subdiv2" style="width: 48px; height: 64px;">
+				<li><a href="../matthew.html">Matthew</a></li> 
+				<li><a href="../mark.html">Mark</a></li> 
+				<li><a href="../luke.html">Luke</a></li> 
+				<li><a href="../john.html">John</a></li>
+  		</div></div>
+			</ul>
+		</li>
+		<li><a href="../acts.html"><span>Acts</span></a></li>
+		<li class="submenu"><a><span>Letters of Paul</span></a>
+			<ul class="subul" style="left: 129px; width: 88px; height: 211px;">
+			<div class="subdiv1" style="width: 86px; height: 209px;"><div class="subdiv2" style="width: 85px; height: 208px;">
+				<li><a href="../romans.html">Romans</a></li> 
+				<li><a href="../1corinthians.html">1 Corinthians</a></li> 
+				<li><a href="../2corinthians.html">2 Corinthians</a></li> 
+				<li><a href="../galatians.html">Galatians</a></li> 
+				<li><a href="../ephesians.html">Ephesians</a></li> 
+				<li><a href="../philippians.html">Philippians</a></li> 
+				<li><a href="../colossians.html">Colossians</a></li> 
+				<li><a href="../1thessalonians.html">1 Thessalonians</a></li> 
+				<li><a href="../2thessalonians.html">2 Thessalonians</a></li> 
+				<li><a href="../1timothy.html">1 Timothy</a></li> 
+				<li><a href="../2timothy.html">2  Timothy</a></li> 
+				<li><a href="../titus.html">Titus</a></li> 
+				<li><a href="../philemon.html">Philemon</a></li> 
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../hebrews.html"><span>Letter to the Hebrews</span></a></li>
+		<li class="submenu"><a><span>General Letters</span></a>
+			<ul class="subul" style="left: 129px; width: 51px; height: 115px;">
+			<div class="subdiv1" style="width: 49px; height: 113px;"><div class="subdiv2" style="width: 48px; height: 112px;"> 
+				<li><a href="../james.html">James</a></li> 
+				<li><a href="../1peter.html">1 Peter</a></li> 
+				<li><a href="../2peter.html">2 Peter</a></li> 
+				<li><a href="../1john.html">1 John</a></li> 
+				<li><a href="../2john.html">2 John</a></li> 
+				<li><a href="../3john.html">3 John</a></li> 
+				<li><a href="../jude.html">Jude</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../revelation.html"><span>Revelation</span></a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 87px; width: 62px; height: 29px;"><a href="../apocrypha.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 29px; border: 0px;" alt="Apocrypha"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 131px; height: 163px;">
+			<div class="subdiv1" style="width: 129px; height: 161px;"><div class="subdiv2" style="width: 128px; height: 160px;">
+			  <li><a href="../thomas.html">Gospel of Thomas</a></li>
+				<li><a href="../egerton.html">Egerton Gospel</a></li>
+				<li><a href="../gospelpeter.html">Gospel of Peter</a></li>
+				<li><a href="../oxyrhychus840.html">Oxyrhychus 840</a></li>
+				<li><a href="../gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="../apostolorum.html">Epistula Apostolorum</a></li>
+				<li><a href="../infancyjames.html">Infancy Gospel of James</a></li>
+				<li><a href="../infancythomas.html">Infancy Gospel of Thomas</a></li>
+				<li><a href="../actspilate.html">Acts of Pilate</a></li>
+				<li><a href="../diatessaron.html">Diatessaron</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Gospel Fragments</a>
+		   <ul class="subul" style="left: 129px; width: 156px; height: 131px;">
+			 <div class="subdiv1" style="width: 154px; height: 129px;"><div class="subdiv2" style="width: 153px; height: 128px;">
+			   <li><a href="../oxyrhynchus1224.html">Oxyrhynchus 1224</a></li>
+				 <li><a href="../secretmark.html">Fayyum Fragment</a></li>
+				 <li><a href="../gospelegyptians.html">Gospel of the Egyptians</a></li>
+				 <li><a href="../gospelhebrews.html">Gospel of the Hebrews</a></li>
+				 <li><a href="../gospelebionites.html">Gospel of the Ebionites</a></li>
+				 <li><a href="../gospelnazoreans.html">Gospel of the Nazoreans</a></li>
+				 <li><a href="../traditionsmatthias.html">Traditions of Matthias</a></li>
+				 <li><a href="../dura.html">Dura-Europos Gospel Harmony</a></li>
+			 </div></div>
+			 </ul>
+		</li>
+		<li class="submenu"><a>Apostolic Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 131px;">
+			<div class="subdiv1" style="width: 156px; height: 129px;"><div class="subdiv2" style="width: 155px; height: 128px;">
+			  <li><a href="../preachingpeter.html">Preaching of Peter</a></li>
+				<li><a href="../actspeter.html">Acts of Peter</a></li>
+				<li><a href="../actsjohn.html">Acts of John</a></li>
+				<li><a href="../actspaul.html">Acts of Paul</a></li>
+				<li><a href="../actsandrew.html">Acts of Andrew</a></li>
+				<li><a href="../actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="../contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="../actsthomas.html">Acts of Thomas</a></li>
+			</div></div>
+			</ul>
+		</li>
+    <li class="submenu"><a>Martyrologies</a>
+		  <ul class="subul" style="left: 129px; width: 203px; height: 115px;">
+			<div class="subdiv1" style="width: 201px; height: 113px;"><div class="subdiv2" style="width: 200px; height: 112px;">
+			  <li><a href="../martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+				<li><a href="../esra.html">Fifth and Sixth Books of Esra</a></li>
+				<li><a href="../carpus.html">Acts of Carpus, Papylus, and Agathonice</a></li>
+				<li><a href="../viennalyons.html">Letter from Vienna and Lyons</a></li>
+				<li><a href="../scillitan.html">Passion of the Scillitan Martyrs</a></li>
+				<li><a href="../actsapollonius-2.html">Acts of Apollonius</a></li>
+				<li><a href="../actsperpetua.html">Acts of Perpetua and Felicitas</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../didache.html">Didache</a></li>
+	  <li><a href="../apocalypsepeter.html">Apocalypse of Peter</a></li>
+		<li><a href="../didascalia.html">Didascalia</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 149px; width: 52px; height: 29px;"><a href="../gnostics.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 52px; height: 29px; border: 0px;" alt="Gnostics"></a>
+  <ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px;"><div class="topdiv2" style="width: 130px; height: 96px;">
+	  <li class="submenu"><a>Dialogues with Jesus</a>
+		  <ul class="subul" style="left: 129px; width: 116px; height: 115px;">
+			<div class="subdiv1" style="width: 114px; height: 113px;"><div class="subdiv2" style="width: 113px; height: 112px;">
+			  <li><a href="../sophia.html">Sophia of Jesus Christ</a></li>
+				<li><a href="../secretjames.html">Secret James</a></li>
+				<li><a href="../gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="../dialoguesavior.html">Dialogue of the Savior</a></li>
+				<li><a href="../gospelsavior.html">Gospel of the Savior</a></li>
+				<li><a href="../jeu.html">Books of Jeu</a></li>
+				<li><a href="../pistis.html">Pistis Sophia</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Apocalypses</a>
+		  <ul class="subul" style="left: 129px; width: 138px; height: 67px;">
+			<div class="subdiv1" style="width: 136px; height: 65px;"><div class="subdiv2" style="width: 135px; height: 64px;">
+			  <li><a href="../apocalypsejames2.html">2nd Apocalypse of James</a></li>
+				<li><a href="../nhlapocalypsepaul.html">Coptic Apocalypse of Paul</a></li>
+				<li><a href="../apocalypsejames1.html">1st Apocalypse of James</a></li>
+				<li><a href="../nhlapocalypsepeter.html">Coptic Apocalypse of Peter</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 51px;">
+			<div class="subdiv1" style="width: 156px; height: 49px;"><div class="subdiv2" style="width: 155px; height: 48px;">
+			  <li><a href="../actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="../contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="../petertophilip.html">Letter of Peter to Philip</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>More Nag Hammadi</a>
+		  <ul class="subul" style="left: 129px; width: 189px; height: 131px;">
+			<div class="subdiv1" style="width: 187px; height: 129px;"><div class="subdiv2" style="width: 186px; height: 128px;">
+			  <li><a href="../apocryphonjohn.html">Apocryphon of John</a></li>
+				<li><a href="../gospeltruth.html">Gospel of Truth</a></li>
+				<li><a href="../treatiseres.html">Treatise on the Resurrection</a></li>
+				<li><a href="../gospelphilip.html">Gospel of Philip</a></li>
+			  <li><a href="../trimorphic.html">Trimorphic Protennoia</a></li>
+				<li><a href="../authoritative.html">Authoritative Teaching</a></li>
+				<li><a href="../eighthninth.html">Discourse on the Eighth and the Ninth</a></li>
+				<li><a href="../melchizedek.html">Melchizedek</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 115px;">
+			<div class="subdiv1" style="width: 109px; height: 113px;"><div class="subdiv2" style="width: 108px; height: 112px;">
+			  <li><a href="../basilides.html">Basilides</a></li>
+				<li><a href="../naassene.html">Naassene Fragments</a></li>
+				<li><a href="../valentinus.html">Valentinus</a></li>
+				<li><a href="../marcion.html">Marcion</a></li>
+				<li><a href="../epiphanes.html">Epiphanes</a></li>
+				<li><a href="../ophite.html">Ophite Diagrams</a></li>
+				<li><a href="../gospeljudas.html">Gospel of Judas</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 99px;">
+			<div class="subdiv1" style="width: 109px; height: 97px;"><div class="subdiv2" style="width: 108px; height: 96px;">
+				<li><a href="../ptolemy.html">Ptolemy</a></li>
+				<li><a href="../isidore.html">Isidore</a></li>
+				<li><a href="../theodotus.html">Theodotus</a></li>
+				<li><a href="../heracleon.html">Heracleon</a></li>
+				<li><a href="../apelles.html">Apelles</a></li>
+				<li><a href="../cassianus.html">Julius Cassianus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 201px; width: 85px; height: 29px;"><a href="../churchfathers.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Church Fathers"></a>
+  <ul class="topul" style="width: 133px; height: 147px;">
+	<div class="topdiv1" style="width: 131px; height: 145px;"><div class="topdiv2" style="width: 130px; height: 144px;">
+	  <li class="submenu"><a>Apostolic Fathers</a>
+		  <ul class="subul" style="left: 129px; width: 163px; height: 147px;">
+			<div class="subdiv1" style="width: 161px; height: 145px;"><div class="subdiv2" style="width: 160px; height: 144px;">
+			  <li><a href="../didache.html">Didache</a></li>
+			  <li><a href="../barnabas.html">Epistle of Barnabas</a></li>
+			  <li><a href="../1clement.html">First Clement</a></li>
+			  <li><a href="../shepherd.html">Shepherd of Hermas</a></li>
+			  <li><a href="../ignatius.html">Ignatius of Antioch</a></li>
+			  <li><a href="../polycarp.html">Polycarp to the Philippians</a></li>
+			  <li><a href="../2clement.html">Second Clement</a></li>
+			  <li><a href="../diognetus.html">Epistle of Mathetes to Diognetus</a></li>
+			  <li><a href="../martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Apologists</a>
+		  <ul class="subul" style="left: 129px; width: 120px; height: 99px;">
+			<div class="subdiv1" style="width: 118px; height: 97px;"><div class="subdiv2" style="width: 117px; height: 96px;">
+			  <li><a href="../aristides.html">Aristides</a></li>
+			  <li><a href="../justin.html">Justin Martyr</a></li>
+			  <li><a href="../tatian.html">Tatian</a></li>
+			  <li><a href="../octavius.html">Minucius Felix</a></li>
+			  <li><a href="../athenagoras.html">Athenagoras of Athens</a></li>
+			  <li><a href="../theophilus.html">Theophilus of Antioch</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 123px; height: 147px;">
+			<div class="subdiv1" style="width: 121px; height: 145px;"><div class="subdiv2" style="width: 120px; height: 144px;">
+			  <li><a href="../papias.html">Papias</a></li>
+			  <li><a href="../quadratus.html">Quadratus</a></li>
+			  <li><a href="../aristo.html">Aristo of Pella</a></li>
+			  <li><a href="../apollinaris.html">Claudius Apollinaris</a></li>
+			  <li><a href="../melito.html">Melito of Sardis</a></li>
+			  <li><a href="../hegesippus.html">Hegesippus</a></li>
+			  <li><a href="../dionysius.html">Dionysius of Corinth</a></li>
+			  <li><a href="../rhodon.html">Rhodon</a></li>
+			  <li><a href="../theophiluscaesarea.html">Theophilus of Caesarea</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 136px; height: 147px;">
+			<div class="subdiv1" style="width: 134px; height: 145px;"><div class="subdiv2" style="width: 133px; height: 144px;">
+			  <li><a href="../bardesanes.html">Bardesanes</a></li>
+			  <li><a href="../maximus.html">Maximus of Jerusalem</a></li>
+			  <li><a href="../polycrates.html">Polycrates of Ephesus</a></li>
+			  <li><a href="../victor.html">Victor I</a></li>
+			  <li><a href="../pantaenus.html">Pantaenus</a></li>
+			  <li><a href="../antimontanist.html">Anonymous Anti-Montanist</a></li>
+			  <li><a href="../serapion.html">Serapion of Antioch</a></li>
+			  <li><a href="../apollonius.html">Apollonius</a></li>
+			  <li><a href="../caius.html">Caius</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../irenaeus.html">Irenaeus of Lyons</a></li>
+		<li><a href="../hippolytus.html">Hippolytus of Rome</a></li>
+		<li><a href="../clement.html">Clement of Alexandria</a></li>
+		<li><a href="../tertullian.html">Tertullian</a></li>
+		<li><a href="../origen.html">Origen</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 286px; width: 41px; height: 29px;"><a href="../other.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Other"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Pagan and Jewish</a>
+		  <ul class="subul" style="left: 129px; width: 105px; height: 195px;">
+			<div class="subdiv1" style="width: 103px; height: 193px;"><div class="subdiv2" style="width: 102px; height: 192px;">
+			  <li><a href="../mara.html">Mara bar Serapion</a></li>
+			  <li><a href="../josephus.html">Josephus</a></li>
+			  <li><a href="../pliny.html">Pliny the Younger</a></li>
+			  <li><a href="../suetonius.html">Suetonius</a></li>
+			  <li><a href="../tacitus.html">Tacitus</a></li>
+			  <li><a href="../fronto.html">Fronto</a></li>
+			  <li><a href="../lucian.html">Lucian of Samosata</a></li>
+			  <li><a href="../aurelius.html">Marcus Aurelius</a></li>
+			  <li><a href="../galen.html">Galen</a></li>
+			  <li><a href="../celsus.html">Celsus</a></li>
+			  <li><a href="../talmud.html">Talmud</a></li>
+			  <li><a href="../philostratus.html">Philostratus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Jewish/Christian</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 83px;">
+			<div class="subdiv1" style="width: 115px; height: 81px;"><div class="subdiv2" style="width: 114px; height: 80px;">
+			  <li><a href="../patriarchs.html">The Twelve Patriarchs</a></li>
+			  <li><a href="../sibylline.html">Non-Pagan Sibyllines</a></li>
+			  <li><a href="../odes.html">Odes of Solomon</a></li>
+			  <li><a href="../elchasai.html">Book of Elchasai</a></li>
+			  <li><a href="../ascension.html">Ascension of Isaiah</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Hypothesized Sources</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 51px;">
+			<div class="subdiv1" style="width: 115px; height: 49px;"><div class="subdiv2" style="width: 114px; height: 48px;">
+			  <li><a href="../passion.html">Passion Narrative</a></li>
+			  <li><a href="../q.html">Sayings Gospel Q</a></li>
+			  <li><a href="../signs.html">Signs Gospel</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../antimarcion.html">Anti-Marcionite Prologues</a></li>
+		<li><a href="../muratorian.html">Muratorian Canon</a></li>
+		<li><a href="../kerygmatapetrou.html">Kerygmata Petrou</a></li>
+		<li><a href="../abercius.html">Inscription of Abercius</a></li>
+	</div></div>
+	</ul>
+</li>
+</ul>	
+</div><![if !IE]><script language="JavaScript">  <!-- var view = document.defaultView; var symboltab = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8704,0,8707,0,0, 8715,0,0,8727,0,0,8722,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,8773,913,914,935,8710,917,934,915,919,921, 977,922,923,924,925,927,928,920,929,931,932,933,962, 8486,926,936,918,0,8756,0,8869,0,8254,945,946,967, 948,949,966,947,951,953,981,954,955,956,957,959,960, 952,961,963,964,965,982,969,958,968,950,0,0,0,8764,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,978,8242,8804,8725,8734,402,9827,9830, 9829,9824,8596,8592,8593,8594,8595,176,177,8243, 8805,215,8733,8706,8226,247,8800,8801,8776,8230,0, 0,8629,8501,8465,8476,8472,8855,8853,8709,8745,8746, 8835,8839,8836,8834,8838,8712,8713,8736,8711,174,169, 8482,8719,8730,8901,172,8743,8744,8660,8656,8657, 8658,8659,9674,9001,174,169,8482,8721,0,0,0,0,0,0,0, 0,0,0,0,9002,8747,8992,0,8993,0,0,0,0,0,0,0,0,0, 0]; function convNode(n) { var n1; if (n == null) return; if (n.nodeType == 3) { elem = n.parentNode; var st = view.getComputedStyle(elem, null); var val = st.getPropertyValue('font-family'); if (val.toLowerCase() == 'symbol') { var s0 = n.data, s1 = '', len = s0.length, ch; for (i = 0; i < len; i++) { ch = s0.charCodeAt(i); if (ch < 256 && symboltab[ch] != 0) ch = symboltab[ch]; s1 += String.fromCharCode(ch); } n.data = s1; } } n1 = n.firstChild; while (n1 != null) { convNode(n1); n1 = n1.nextSibling; } } convNode(document); // <![endif]--> </script><!--[if IE]> <script language="JavaScript">var sURL = unescape(window.location.pathname); function refresh() {window.location.href = sURL;}</script> <script language="JavaScript1.1">function refresh() {window.location.replace( sURL );}</script> <script language="JavaScript1.2">function refresh() {window.location.reload( false );}</script> <script language="JavaScript">window.onresize = refresh;</script> <![endif]-->
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="305"; var zflag_cid="39404/39401/1"; var zflag_sid="4519"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="15"; var zflag_click="[INSERT_CLICK_TRACKER_MACRO]";
+</script>
+<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/fo.js"></script>
+<!-- end ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+</body>  </html>

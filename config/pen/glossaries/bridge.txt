@@ -1,0 +1,449 @@
+https://en.wikipedia.org/wiki/Glossary_of_contract_bridge_terms
+
+hand
+    13 cards.
+
+stage
+phase
+    - the Auction,
+    - the Play,
+    - the Scoring
+
+bid
+call
+    2 types:
+    - natural
+    - artifical
+
+natural bid
+natural call
+    Based on a holding of the suit bid, or a
+    balanced distribution in the case of a
+    notrump bid
+
+artificial bid
+artificial call
+    Show a feature unrelated to the named
+    denomination.
+
+Bridge convention
+    An agreement about an artificial call or a
+    set of related artificial calls.
+
+two card play signalling
+
+bidding system
+    - French 5-card major system,
+    - English ACOL system,
+    - Polish Club,
+    - SAYC,
+    - Nordic system, and
+    - NBB standard.
+
+Bridge opening convention
+    https://www.bridgehands.com/Indexes/conventions.htm
+
+    Examples:
+    - Benjamin Twos
+
+    See "bridge convention".
+
+auction phase
+bidding
+    https://youtu.be/hBCRRwuhHRQ?t=119
+
+    The auction concludes when there have been
+    3 passes in a row.
+
+    When you make a bid you are always
+    suggesting to your partner that you can
+    make more than 1 half of the available 13
+    tricks (7 tricks at least).
+
+    If you open the bidding 1H you'll be
+    saying I can make 6 tricks + 1.
+
+Opening the bidding
+    Which hand can open the bidding?
+    https://youtu.be/67c2QkVEX3U?t=294
+
+    Not to be confused with "opening lead".
+
+Opening 1-suit
+Opening the bidding 1-suit
+1-level suit opening
+    Opening the bidding with 1 of a suit.
+
+    These are the basic rules.
+
+    Rules:
+    - You need at least 12 HCP.
+      - That means 12-19 HCP for a suit bid.
+      - That means 12-14 HCP for a NT bid.
+
+    Count the high card points.
+    If you don't have 12, you can't bid for 1.
+
+    Is this a strict rule or rule of thumb?
+
+    By opening the bidding you are telling
+    your partner you have between 12 and 19
+    HCP.
+
+    When you bid a suit you are also telling
+    your partner you have at least 4 of that
+    suit.
+
+    An exception to the above:
+    - When you bid 1NT, you are telling your
+      partner you have between 12 and (only)
+      14 HCP and that your hand is balanced.
+
+    Rules of thumb:
+    - Bid your longest suit first
+    - bottoms-up
+    - tops-down
+
+    See "bottoms-up".
+    See "tops-down".
+
+equal lengths rule of thumb
+    [#1-level suit opening]
+
+    Sometimes you have 2 suits of equal
+    length.
+
+    Examples:
+    - bottoms-up
+    - tops-down
+
+    These rules of thumb should be
+    followed even if the suit you do not pick
+    has 'nicer' cards, i.e. AKQJ...
+
+bottoms-up
+    [#1-level suit opening]
+
+    [rule of thumb]
+    [equal lengths rule of thumb]
+
+    If those suits are 4 cards in length then
+    you should bid your lowest ranked suit
+    first.
+
+    If you have 4 spades and 4 diamonds, you
+    bid 1 diamond.
+
+tops-down
+    [#1-level suit opening]
+
+    [rule of thumb]
+    [equal lengths rule of thumb]
+
+    If those suits are 5 cards in length then
+    you should bid your highest ranked suit
+    first.
+
+    If you have 5 spades and 5 diamonds, you
+    bid 1 spade.
+
+1-level contract
+    Example:
+    - 1H
+    - 1NT
+
+    There is a presumption you can make 6+1
+    tricks.
+
+2-level contract
+    Example:
+    - 2H
+    - 2NT
+
+    There is a presumption you can make 6+2
+    tricks.
+
+4-level contract
+    Example:
+    - 4H
+    - 4NT
+
+    There is a presumption you can make 6+4
+    tricks.
+
+contract
+    The last bid made.
+
+Declarer
+    The player who first mentions the suit or
+    notrump that becomes the final contract.
+
+Opening Leader
+    The player to the left of the declarer who
+    starts the play by making the opening
+    lead, playing a card face-up on the table.
+    The Dummy is declarer's partner.
+
+opening lead
+    The first play made by the Opening Leader
+    (the person on the declarer's left).
+
+dummy
+    May refer to the player holding the dummy,
+    or the hand.
+
+    Lays their cards out on the table with the
+    trump suit on their right.
+
+    Whether the suit trump is placed on the
+    left or right of the dummy appears to be a
+    convention.
+
+    - The Partner who is Dummy must:
+      - only play as directed.
+      - not touch or suggest a card is played.
+
+bidding notation
+    2NT -- 2 NoTrumps
+    2H  -- 2 hearts
+    \   -- pass
+
+suits
+    S - highest
+    H
+    D
+    C - lowest
+
+Declarer with Dummy
+
+major suits
+    spades
+    hearts
+
+minor suits
+    diamonds
+    clubs
+
+High Card Points
+HCP
+
+partnership
+    Steps:
+    1. Find a fit
+    2. Decide what level to play your
+       contract at.
+
+level
+contract level
+    From 1 to 7.
+    Represents the number of tricks above 6.
+
+    - partscore
+    - game
+    - slam
+
+contract
+    Has levels.
+
+major contract
+    Does this include a NT contract or do you
+    call that a NoTrumps contract?
+
+minor contract
+    Less popular because you need to get more
+    tricks to 'make game' (reach game level
+    and get the bonus).
+
+partscore
+partscore contract
+partscore level contract
+    [contract]
+
+    When you have less than 25 points between
+    you, you are looking for what's called a
+    partscore contract.
+
+game level
+    This is a significant level of bidding in
+    bridge.
+
+    3NT
+    4S
+    4H
+    5D
+    5C
+
+    At the game level you get bonus points for
+    making your contract.
+
+game
+game contract
+game level contract
+    [contract]
+
+    Once you reach 25 points between you then
+    you are looking for a game level contract.
+
+    If you make this contract you get a bonus.
+
+make game
+    Successfully completing a game contract.
+
+    The number of trick you need to make game
+    depends on the contract you're in.
+
+slam
+slam contract
+slam level contract
+    [contract]
+
+    You need around 33+ points between you and
+    your partner to bidding a contract up at
+    the slam level.
+
+honor cards
+    A, K, Q, J
+
+    They are assigned a point count.
+
+    A = 4 HCP
+    K = 3 HCP
+    Q = 2 HCP
+    J = 1 HCP
+
+    There are 40 total HCP available to all
+    players.
+
+fit
+    When you and your partner have between you
+    8 or more cards in one of the suits.
+
+    If there is a fit then this will be the
+    trump suit.
+
+    If there is no fit then you should choose
+    NoTrumps.
+
+    If there is a fit in a minor then you can
+    choose whether to play in the minor or No
+    Trumps.
+
+    It's not the quality of the cards that
+    counts but the quantity.
+
+trick
+    Each player keeps their own cards in front
+    of them.
+
+    If you win the trick you place the cards
+    vertically in front of you.
+
+    If you lose the trick you place them
+    horizontally.
+
+forcing bid
+    Not a limit bid.
+
+    A bid that you make that your partner must
+    now repond to.
+
+limit bid
+    Not a forcing bid.
+
+    Your partner now has a choice of either
+    bidding again or to pass.
+
+responder's limit bid
+    How to respond to your partner's opening
+    bid.
+
+    These are the basic rules.
+
+    If you have 6 or more HCP then you should
+    respond with a bid. Also, consider 6 a
+    minimum in order to repond.
+
+    A more accurate rule of thumb is that you
+    need 1/2 the amount of points your partner
+    suggests they have. If they suggested they
+    have 12 HCP, then you need at least 6 and
+    if you have at least 6, you should repond.
+
+    You have 3 choices:
+    - support your partner's suit
+    - bid a new suit
+    - bid NoTrumps
+      - A last resort
+
+    See "1-level suit opening".
+
+Bridge etiquette
+    https://www.bridgewebs.com/lees/Bridge%20etiquette%20and%20protocol.pdf
+
+Benjamin Twos
+Benji ACOL
+Benjamin ACOL
+    [Bridge opening convention]
+
+    A system of Two Level Opening Bids
+    developed by Albert Benjamin, a Scottish
+    bridge teacher.
+
+    Essentially,
+    - An Opening bid of 2♣ or 2♢ shows a
+      STRONG hand
+    - While an Opening bid of 2♡ or 2♠ shows a
+      WEAK hand.
+
+    https://www.bridgewebs.com/frome/2018%20Benji%20Acol%20Weak%20Twos%20Jan%202018%20Lesson%201.pdf
+
+Bridge deal
+    The specific arrangement of the 52 cards
+    into the four hands.
+
+Rubber Bridge
+    A form of contract bridge played by two
+    competing pairs using a particular method
+    of scoring.
+    
+    A rubber is completed when one pair
+    becomes first to win two games, each game
+    presenting a score of 100 or more contract
+    points; a new game ensues until one pair
+    has won two games to conclude the rubber.
+    
+    Owing to the availability of various
+    additional bonus and penalty points in the
+    scoring, it is possible, though less
+    common, to win the rubber by amassing more
+    total points despite losing two games out
+    of three.
+    
+    Rubber bridge involves a high degree of
+    skill but there is also a fair amount of
+    luck involved in who gets the best cards.
+
+Duplicate Bridge
+    The most widely used variation of Contract
+    Bridge in club and tournament play.
+    
+    It is called duplicate because the same
+    Bridge deal is played at each table and
+    scoring is based on relative performance.
+    
+    In this way, every hand, whether strong or
+    weak, is played in competition with others
+    playing identical cards, and the element
+    of skill is heightened while that of
+    chance is reduced.
+    
+    Duplicate Bridge stands in contrast to
+    Rubber Bridge where each hand is freshly
+    dealt and where scores may be more
+    affected by chance in the short run.
+
+Argine
+    https://www.funbridge.com/bridge-artificial-intelligence
+
+    An AI that can play bridge and adapt to
+    players' bidding conventions.

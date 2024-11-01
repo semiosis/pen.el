@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "gdu" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "gdu" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-;  "gdu" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-;  "gdu" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-truthforlife-org;  "gdu" "#" "<==" "zsh"

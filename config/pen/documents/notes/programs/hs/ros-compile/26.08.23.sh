@@ -1,0 +1,6 @@
+cd /root/notes;  "ros-compile" "/root/.emacs.d/host/pen.el/scripts/get-bible-book-chapter.cl" "#" "<==" "zsh"
+cd /root/notes;  "ros-compile" "/root/.emacs.d/host/pen.el/scripts/get-bible-book-chapter.cl" "#" "<==" "zsh"
+cd /root/notes;  "ros-compile" "/root/.emacs.d/host/pen.el/scripts/get-bible-book-chapter.cl" "#" "<==" "zsh"
+cd /root/notes;  "ros-compile" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "#" "<==" "zsh"
+cd /root/notes;  "ros-compile" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "#" "<==" "zsh"
+cd /root/notes;  "ros-compile" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "#" "<==" "zsh"

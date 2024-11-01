@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "sht" "pin" "/root/repos/rangerconfig/rifle.conf" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "sht" "pin" "/root/repos/rangerconfig/rifle.conf" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "sht" "pin" "/root/repos/rangerconfig/rifle.conf" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "sht" "vim" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "sht" "pin" "/root/repos/rangerconfig/rifle.conf" "#" "<==" "zsh"

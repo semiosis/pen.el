@@ -1,0 +1,10 @@
+
+
+]
+configure_requires = requires(build-system)
+
+pip install < my-package >
+To run tests:
+python tests.py
+To run coverage:
+python -m coverage run < test-file

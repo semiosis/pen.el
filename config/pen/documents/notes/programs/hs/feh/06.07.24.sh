@@ -1,0 +1,1 @@
+cd /volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets;  "feh" "-B" "black" "/volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets/KestrelLogoRepoHeader.png" "#" "<==" "run.sh"

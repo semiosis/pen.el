@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/hiimsergey/mastermind-rs;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/hiimsergey/mastermind-rs;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/bible-notes/verse;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/bible-notes/verse;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"

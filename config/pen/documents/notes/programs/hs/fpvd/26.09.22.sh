@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"

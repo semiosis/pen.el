@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Job" "10:-4-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Job" "10:4-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Job" "10:4-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Job" "10:4-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Job" "10:14" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Job" "14:16-17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Job" "10:4-8" "#" "<==" "zsh"

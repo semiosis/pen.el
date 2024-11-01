@@ -1,0 +1,1 @@
+cd /;  "blueman-manager" "#" "<==" "zsh"

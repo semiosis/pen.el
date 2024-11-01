@@ -1,0 +1,7 @@
+cd /root/notes;  "fpvd" "/tmp/babel-5jA1y1/org-tableOJSHtX.tsv" "#" "<==" "fpvd"
+cd /root/notes;  "fpvd" "/tmp/babel-5jA1y1/org-tableMEuoiN.tsv" "#" "<==" "fpvd"
+cd /root/notes;  "fpvd" "/tmp/babel-5jA1y1/org-tabletyXN9T.tsv" "#" "<==" "fpvd"
+cd /root/notes;  "fpvd" "/tmp/babel-5jA1y1/org-tablefmPfKL.tsv" "#" "<==" "fpvd"
+cd /root/notes;  "fpvd" "/tmp/babel-5jA1y1/org-tableCUMTeM.tsv" "#" "<==" "fpvd"
+cd /root/notes;  "fpvd" "/tmp/babel-5jA1y1/org-tableVMJMYu.tsv" "#" "<==" "fpvd"
+cd /root/notes;  "fpvd" "/tmp/babel-5jA1y1/org-tableP23Olo.tsv" "#" "<==" "fpvd"

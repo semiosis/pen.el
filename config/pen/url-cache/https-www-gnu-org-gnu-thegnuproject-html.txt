@@ -1,0 +1,1385 @@
+HTTP/1.1 200 OK
+Date: Mon, 18 Sep 2023 02:16:39 GMT
+Server: Apache/2.4.29
+Content-Location: thegnuproject.html
+Vary: negotiate,accept-language,Accept-Encoding
+TCN: choice
+Strict-Transport-Security: max-age=63072000
+X-Frame-Options: sameorigin
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: (null)
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+Expires: Mon, 18 Sep 2023 02:16:39 GMT
+Content-Length: 24001
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Language: en
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="author" href="mailto:webmasters@gnu.org" />
+<link rel="icon" type="image/png" href="/graphics/gnu-head-mini.png" />
+<meta name="ICBM" content="42.355469,-71.058627" />
+<link rel="stylesheet" type="text/css" href="/layout.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/print.min.css" media="print" />
+
+
+
+<!-- Parent-Version: 1.96 -->
+<!-- This page is derived from /server/standards/boilerplate.html -->
+
+
+<title>About the GNU Project
+- GNU Project - Free Software Foundation</title>
+<style type="text/css" media="print,screen"><!--
+a[href*='#ft'] { font-size: .94em; }
+--></style>
+<meta http-equiv="Keywords" content="GNU, GNU Project, FSF, Free Software, Free Software Foundation, History" />
+<!-- begin translist file -->
+
+<link rel="alternate" type="text/html" href="/gnu/thegnuproject.html" hreflang="x-default" />
+<link rel="alternate" type="text/html" lang="en" hreflang="en" href="/gnu/thegnuproject.en.html" title="English" />
+<link rel="alternate" type="text/html" lang="ca" hreflang="ca" href="/gnu/thegnuproject.ca.html" title="català" />
+<link rel="alternate" type="text/html" lang="cs" hreflang="cs" href="/gnu/thegnuproject.cs.html" title="čeština" />
+<link rel="alternate" type="text/html" lang="de" hreflang="de" href="/gnu/thegnuproject.de.html" title="Deutsch" />
+<link rel="alternate" type="text/html" lang="el" hreflang="el" href="/gnu/thegnuproject.el.html" title="ελληνικά" />
+<link rel="alternate" type="text/html" lang="es" hreflang="es" href="/gnu/thegnuproject.es.html" title="español" />
+<link rel="alternate" type="text/html" lang="fi" hreflang="fi" href="/gnu/thegnuproject.fi.html" title="suomi" />
+<link rel="alternate" type="text/html" lang="fr" hreflang="fr" href="/gnu/thegnuproject.fr.html" title="français" />
+<link rel="alternate" type="text/html" lang="hr" hreflang="hr" href="/gnu/thegnuproject.hr.html" title="hrvatski" />
+<link rel="alternate" type="text/html" lang="id" hreflang="id" href="/gnu/thegnuproject.id.html" title="Indonesia" />
+<link rel="alternate" type="text/html" lang="it" hreflang="it" href="/gnu/thegnuproject.it.html" title="italiano" />
+<link rel="alternate" type="text/html" lang="ja" hreflang="ja" href="/gnu/thegnuproject.ja.html" title="日本語" />
+<link rel="alternate" type="text/html" lang="ko" hreflang="ko" href="/gnu/thegnuproject.ko.html" title="한국어" />
+<link rel="alternate" type="text/html" lang="lt" hreflang="lt" href="/gnu/thegnuproject.lt.html" title="lietuvių" />
+<link rel="alternate" type="text/html" lang="ml" hreflang="ml" href="/gnu/thegnuproject.ml.html" title="മലയാളം" />
+<link rel="alternate" type="text/html" lang="nl" hreflang="nl" href="/gnu/thegnuproject.nl.html" title="Nederlands" />
+<link rel="alternate" type="text/html" lang="pl" hreflang="pl" href="/gnu/thegnuproject.pl.html" title="polski" />
+<link rel="alternate" type="text/html" lang="pt-br" hreflang="pt-br" href="/gnu/thegnuproject.pt-br.html" title="português" />
+<link rel="alternate" type="text/html" lang="ru" hreflang="ru" href="/gnu/thegnuproject.ru.html" title="русский" />
+<link rel="alternate" type="text/html" lang="sq" hreflang="sq" href="/gnu/thegnuproject.sq.html" title="Shqip" />
+<link rel="alternate" type="text/html" lang="tr" hreflang="tr" href="/gnu/thegnuproject.tr.html" title="Türkçe" />
+<link rel="alternate" type="text/html" lang="uk" hreflang="uk" href="/gnu/thegnuproject.uk.html" title="українська" />
+<link rel="alternate" type="text/html" lang="zh-cn" hreflang="zh-cn" href="/gnu/thegnuproject.zh-cn.html" title="简体中文" />
+<link rel="alternate" type="text/html" lang="zh-tw" hreflang="zh-tw" href="/gnu/thegnuproject.zh-tw.html" title="繁體中文" />
+<!-- end translist file -->
+
+<!-- start of server/banner.html -->
+<!-- start of head-include-2.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- end of head-include-2.html -->
+
+</head>
+<body>
+<div class="inner">
+<!-- start of server/body-include-1.html -->
+<div id="top">
+<a class="skip" href="#content"><b>Skip to main text</b></a>
+</div>
+
+<div id="fsf-frame" role="complementary">
+<form id="fssbox" action="https://my.fsf.org/civicrm/profile/create?reset=1&amp;gid=31"
+      method="post">
+ <div>
+  <input name="postURL" type="hidden" value="" />
+  <input type="hidden" name="group[25]" value="1" />
+  <input name="cancelURL" type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" />
+  <input name="_qf_default" type="hidden" value="Edit:cancel" />
+  <label for="frmEmail">
+   <a href="//www.fsf.org/fss">Free Software Supporter</a>:
+  </label>
+  <input type="text" id="frmEmail" name="email-Primary" size="18" maxlength="80"
+         value="email address" onfocus="this.value=''"/>
+  <input type="submit" name="_qf_Edit_next" value="Sign up" />
+ </div>
+</form>
+
+<div id="join-fsf" class="button"><a
+href="https://www.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF</a>
+</div>
+</div>
+
+<div id="header" role="banner">
+<p id="gnu-banner">
+ <a href="/">
+ <img src="/graphics/heckert_gnu.transp.small.png" height="48" width="49"
+      alt="&nbsp;[A GNU head]&nbsp;" /><strong>GNU</strong> <span
+ class="hide">Operating System</span></a><br />
+ <small id="fsf-support">Supported by the
+ <a href="#mission-statement">Free Software Foundation</a></small>
+</p>
+
+<div id="switches">
+ <div  id="search-button" class="switch">
+  <a href="//www.gnu.org/cgi-bin/estseek.cgi">
+  <img id="search-icon" height="30" width="30"
+       src="/graphics/icons/search.png"
+       alt="&nbsp;[Search www.gnu.org]&nbsp;" /></a>
+ </div>
+
+ <div id="language-button" class="switch">
+  <a href="#language-container">
+  <img id="language-icon" height="30" width="37"
+       src="/graphics/icons/translations.png"
+       alt="&nbsp;[Other languages]&nbsp;" /></a>
+ </div>
+
+</div>
+</div>
+<!-- end of server/body-include-1.html -->
+
+<!-- start of server/body-include-2 -->
+
+
+<div style="clear: both"></div>
+
+<div id="navigation" role="navigation">
+ <a id="more-links" href="#navigation" title="More...">
+   <span>Site navigation</span></a>
+ <a id="less-links" href="#content"><b>Skip</b></a>
+ <ul>
+
+  <li id="tabAboutGNU" class="active">
+     <span class='no-display'>=</span> 
+    <a href="/gnu/gnu.html">ABOUT&nbsp;GNU</a>
+    <span class="gnun-split"></span>
+     <span class='no-display'>=</span> 
+  </li>
+
+
+  <li id="tabPhilosophy"><a href="/philosophy/philosophy.html">PHILOSOPHY</a></li>
+
+
+  <li id="tabLicenses"><a href="/licenses/licenses.html">LICENSES</a></li>
+
+
+  <li id="tabEducation"><a href="/education/education.html">EDUCATION</a></li>
+
+
+  <li id="tabSoftware"><a href="/software/software.html">SOFTWARE</a></li>
+
+
+  <li id="tabDistros"><a href="/distros/distros.html">DISTROS</a></li>
+
+
+  <li id="tabDoc"><a href="/doc/doc.html">DOCS</a></li>
+
+
+  <li id="tabMalware"><a href="/proprietary/proprietary.html">MALWARE</a></li>
+
+
+  <li id="tabHelp"><a href="/help/help.html">HELP&nbsp;GNU</a></li>
+
+
+  <li id="tabAV"><a href="/audio-video/audio-video.html">AUDIO&nbsp;&amp;&nbsp;VIDEO</a></li>
+
+
+  <li id="tabArt"><a href="/graphics/graphics.html">GNU&nbsp;ART</a></li>
+
+
+  <li id="tabFun"><a href="/fun/humor.html">FUN</a></li>
+
+
+  <li id="tabPeople"><a href="/people/people.html">GNU'S&nbsp;WHO?</a></li>
+
+  <li><a href="//directory.fsf.org">SOFTWARE&nbsp;DIRECTORY</a></li>
+  <li><a href="https://h-node.org/">HARDWARE</a></li>
+  <li><a href="/server/sitemap.html">SITEMAP</a></li>
+ </ul>
+ <div style="clear: both"></div>
+</div><!-- /"navigation -->
+<!-- end of server/body-include-2 -->
+
+<div id="content" role="main">
+<!-- end of server/banner.html -->
+
+<div class="breadcrumb" role="navigation">
+<a href="/"><img src="/graphics/icons/home.png" height="26" width="26"
+   alt="GNU Home" title="GNU Home" /><span
+ class="gnun-split"></span></a>&nbsp;/<span class="gnun-split"></span>
+<a href="/gnu/gnu.html#content">About&nbsp;GNU<span
+ class="gnun-split"></span></a>&nbsp;/<span class="gnun-split"></span>
+<a href="/gnu/gnu.html#gnu-history">GNU&nbsp;history<span
+ class="gnun-split"></span></a>&nbsp;/<span class="gnun-split"></span>
+</div>
+
+<!--GNUN: OUT-OF-DATE NOTICE-->
+
+
+
+<div class="article reduced-width">
+<h2>The GNU Project</h2>
+
+<address class="byline">by <a href="https://www.stallman.org/">Richard
+Stallman</a></address>
+
+<h3>The first software-sharing community</h3>
+<p>
+When I started working at the 
+<abbr title="Massachusetts Institute of Technology">MIT</abbr>
+Artificial Intelligence Lab in 1971, I became part of a
+software-sharing community that had existed for many years.  Sharing
+of software was not limited to our particular community; it is as old
+as computers, just as sharing of recipes is as old as cooking.  But we
+did it more than most.</p>
+<p>
+The AI Lab used a timesharing operating system called
+<abbr title="Incompatible Timesharing System">ITS</abbr> (the
+Incompatible Timesharing System) that the lab's staff hackers&#8239;<a href="#ft1">[1]</a> had
+designed and written in assembler language for the Digital
+<abbr title="Programmed Data Processor">PDP</abbr>-10, one of
+the large computers of the era.  As a member of this community, an AI
+Lab staff system hacker, my job was to improve this system.</p>
+<p>
+We did not call our software &ldquo;free software,&rdquo; because that
+term did not yet exist; but that is what it was.  Whenever people from
+another university or a company wanted to port and use a program, we
+gladly let them.  If you saw someone using an unfamiliar and
+interesting program, you could always ask to see the source code, so
+that you could read it, change it, or cannibalize parts of it to make
+a new program.</p>
+
+<div class="announcement comment" role="complementary">
+<hr class="no-display" />
+<p>
+Why it is even more important than ever
+<a href="/philosophy/free-software-even-more-important.html">to insist
+that the software we use be free</a>.
+</p>
+<hr class="no-display" />
+</div>
+
+<h3>The collapse of the community</h3>
+<p>
+The situation changed drastically in the early 1980s when Digital
+discontinued the PDP-10 series.  Its architecture, elegant and
+powerful in the 60s, could not extend naturally to the larger address
+spaces that were becoming feasible in the 80s.  This meant that nearly
+all of the programs composing ITS were obsolete.</p>
+<p>
+The AI Lab hacker community had already collapsed, not long before.
+In 1981, the spin-off company Symbolics had hired away nearly all of
+the hackers from the AI Lab, and the depopulated community was unable
+to maintain itself.  (The book <cite>Hackers</cite>, by Steve Levy, describes these
+events, as well as giving a clear picture of this community in its
+prime.)  When the AI Lab bought a new PDP-10 in 1982, its
+administrators decided to use Digital's nonfree timesharing system
+instead of ITS.</p>
+<p>
+The modern computers of the era, such as the VAX or the 68020, had
+their own operating systems, but none of them were free software: you
+had to sign a nondisclosure agreement even to get an executable copy.</p>
+<p>
+This meant that the first step in using a computer was to promise not
+to help your neighbor.  A cooperating community was forbidden.  The
+rule made by the owners of proprietary software was, &ldquo;If you
+share with your neighbor, you are a pirate.  If you want any changes,
+beg us to make them.&rdquo;</p>
+<p>
+The idea that the proprietary software social system&mdash;the system
+that says you are not allowed to share or change software&mdash;is
+antisocial, that it is unethical, that it is simply wrong, may come as
+a surprise to some readers.  But what else could we say about a system
+based on dividing the public and keeping users helpless?  Readers who
+find the idea surprising may have taken the proprietary software
+social system as a given, or judged it on the terms suggested by
+proprietary software businesses.  Software publishers have worked long
+and hard to convince people that there is only one way to look at the
+issue.</p>
+<p>
+When software publishers talk about &ldquo;enforcing&rdquo; their
+&ldquo;rights&rdquo; or &ldquo;stopping <a
+href="/philosophy/words-to-avoid.html#Piracy">piracy</a>,&rdquo; what they
+actually <em>say</em> is secondary.  The real message of these statements is
+in the unstated assumptions they take for granted, which the public is
+asked to accept without examination.  Let's therefore examine them.</p>
+<p>
+One assumption is that software companies have an unquestionable natural
+right to own software and thus have power over all its users.  (If
+this were a natural right, then no matter how much harm it does to the
+public, we could not object.)  Interestingly, the US Constitution and
+legal tradition reject this view; copyright is not a natural right,
+but an artificial government-imposed monopoly that limits the users'
+natural right to copy.</p>
+<p>
+Another unstated assumption is that the only important thing about
+software is what jobs it allows you to do&mdash;that we computer users
+should not care what kind of society we are allowed to have.</p>
+<p>
+A third assumption is that we would have no usable software (or would
+never have a program to do this or that particular job) if we did not
+offer a company power over the users of the program.  This assumption
+may have seemed plausible, before the free software movement
+demonstrated that we can make plenty of useful software without
+putting chains on it.</p>
+<p>
+If we decline to accept these assumptions, and judge these issues
+based on ordinary commonsense morality while placing the users first,
+we arrive at very different conclusions.  Computer users should be
+free to modify programs to fit their needs, and free to share
+software, because helping other people is the basis of society.</p>
+<p>
+There is no room here for an extensive statement of the reasoning
+behind this conclusion, so I refer the reader to &ldquo;<a
+href="/philosophy/why-free.html">Why Software Should Not Have
+Owners</a>,&rdquo; and &ldquo;<a
+href="/philosophy/free-software-even-more-important.html">Free
+Software Is Even More Important Now</a>.&rdquo;
+</p>
+
+<h3>A stark moral choice</h3>
+<p>
+With my community gone, to continue as before was impossible.
+Instead, I faced a stark moral choice.</p>
+<p>
+The easy choice was to join the proprietary software world, signing
+nondisclosure agreements and promising not to help my fellow hacker.
+Most likely I would also be developing software that was released
+under nondisclosure agreements, thus adding to the pressure on other
+people to betray their fellows too.</p>
+<p>
+I could have made money this way, and perhaps amused myself writing
+code.  But I knew that at the end of my career, I would look back on
+years of building walls to divide people, and feel I had spent my life
+making the world a worse place.</p>
+<p>
+I had already experienced being on the receiving end of a
+nondisclosure agreement, when someone refused to give me and the MIT
+AI Lab the source code for the control program for our printer.  (The
+lack of certain features in this program made use of the printer
+extremely frustrating.)  So I could not tell myself that nondisclosure
+agreements were innocent.  I was very angry when he refused to share
+with us; I could not turn around and do the same thing to everyone
+else.</p>
+<p>
+Another choice, straightforward but unpleasant, was to leave the
+computer field.  That way my skills would not be misused, but they
+would still be wasted.  I would not be culpable for dividing and
+restricting computer users, but it would happen nonetheless.</p>
+<p>
+So I looked for a way that a programmer could do something for the
+good.  I asked myself, was there a program or programs that I could
+write, so as to make a community possible once again?</p>
+<p>
+The answer was clear: what was needed first was an operating system.
+That is the crucial software for starting to use a computer.  With an
+operating system, you can do many things; without one, you cannot run
+the computer at all.  With a free operating system, we could again
+have a community of cooperating hackers&mdash;and invite anyone to join.
+And anyone would be able to use a computer without starting out by
+conspiring to deprive his or her friends.</p>
+<p>
+As an operating system developer, I had the right skills for this job.
+So even though I could not take success for granted, I realized that I
+was elected to do the job.  I chose to make the system compatible with
+Unix so that it would be portable, and so that Unix users could easily
+switch to it.  The name GNU was chosen, following a hacker tradition, as
+a recursive acronym for &ldquo;GNU's Not Unix.&rdquo; It is pronounced
+as <a href="/gnu/pronunciation.html">one syllable with a hard&nbsp;<i>g</i></a>.</p>
+<p>
+An operating system does not mean just a kernel, barely enough to run
+other programs.  In the 1970s, every operating system worthy of the
+name included command processors, assemblers, compilers, interpreters,
+debuggers, text editors, mailers, and much more.  ITS had them,
+Multics had them, VMS had them, and Unix had them.  The GNU operating
+system would include them too.</p>
+<p>
+Later I heard these words, attributed to Hillel&#8239;<a href="#ft2">[2]</a>:</p>
+
+<blockquote><p>
+     If I am not for myself, who will be for me?<br />
+     If I am only for myself, what am I?<br />
+     If not now, when?
+</p></blockquote>
+<p>
+The decision to start the GNU Project was based on a similar spirit.</p>
+
+<h3>Free as in freedom</h3>
+<p>
+The term &ldquo;free software&rdquo; is sometimes misunderstood&mdash;it
+has nothing to do with price.  It is about freedom.  Here, therefore,
+is the definition of free software.</p>
+
+<p>A program is free software, for you, a particular user, if:</p>
+
+<ul>
+  <li>You have the freedom to run the program as you wish, for any purpose.</li>
+
+  <li>You have the freedom to modify the program to suit your needs.
+     (To make this freedom effective in practice, you must have access
+     to the source code, since making changes in a program without
+     having the source code is exceedingly difficult.)</li>
+
+  <li>You have the freedom to redistribute copies, either gratis
+     or for a fee.</li>
+
+  <li>You have the freedom to distribute modified versions of the program,
+     so that the community can benefit from your improvements.</li>
+</ul>
+<p>
+Since &ldquo;free&rdquo; refers to freedom, not to price, there is no
+contradiction between selling copies and free software.  In fact, the
+freedom to sell copies is crucial: collections of free software sold
+on CD-ROMs are important for the community, and selling them is an
+important way to raise funds for free software development.
+Therefore, a program which people are not free to include on these
+collections is not free software.</p>
+<p>
+Because of the ambiguity of &ldquo;free,&rdquo; people have long
+looked for alternatives, but no one has found a better term.
+The English language has more words and nuances than any other, but it
+lacks a simple, unambiguous, word that means &ldquo;free,&rdquo; as in
+freedom&mdash;&ldquo;unfettered&rdquo; being the word that comes closest in
+meaning.  Such alternatives as &ldquo;liberated,&rdquo;
+&ldquo;freedom,&rdquo; and &ldquo;open&rdquo; have either the wrong
+meaning or some other disadvantage.</p>
+
+<h3>GNU software and the GNU system</h3>
+<p>
+Developing a whole system is a very large project.  To bring it into
+reach, I decided to adapt and use existing pieces of free software
+wherever that was possible.  For example, I decided at the very
+beginning to use TeX as the principal text formatter; a few years
+later, I decided to use the X Window System rather than writing
+another window system for GNU.</p>
+<p>
+Because of these decisions, and others like them,
+the GNU system is not the same as the collection of all
+GNU software.  The GNU system includes programs that are not GNU
+software, programs that were developed by other people and projects
+for their own purposes, but which we can use because they are free
+software.</p>
+
+<h3>Commencing the project</h3>
+<p>
+In January 1984 I quit my job at MIT and began writing GNU software.
+Leaving MIT was necessary so that MIT would not be able to interfere
+with distributing GNU as free software.  If I had remained on the
+staff, MIT could have claimed to own the work, and could have imposed
+their own distribution terms, or even turned the work into a
+proprietary software package.  I had no intention of doing a large
+amount of work only to see it become useless for its intended purpose:
+creating a new software-sharing community.</p>
+<p>
+However, Professor Winston, then the head of the MIT AI Lab, kindly
+invited me to keep using the lab's facilities.</p>
+
+<h3>The first steps</h3>
+<p>
+Shortly before beginning the GNU Project, I heard about the Free
+University Compiler Kit, also known as VUCK.  (The Dutch word for
+&ldquo;free&rdquo; is written with a <i>v</i>.)  This was a compiler
+designed to handle multiple languages, including C and Pascal, and to
+support multiple target machines.  I wrote to its author asking if GNU
+could use it.</p>
+<p>
+He responded derisively, stating that the university was free but the
+compiler was not.  I therefore decided that my first program for the
+GNU Project would be a multilanguage, multiplatform compiler.</p>
+<p>
+Hoping to avoid the need to write the whole compiler myself, I
+obtained the source code for the Pastel compiler, which was a
+multiplatform compiler developed at Lawrence Livermore Lab.  It
+supported, and was written in, an extended version of Pascal, designed
+to be a system-programming language.  I added a C front end, and began
+porting it to the Motorola 68000 computer.  But I had to give that
+up when I discovered that the compiler needed many megabytes of stack
+space, and the available 68000 Unix system would only allow 64k.</p>
+<p>
+I then realized that the Pastel compiler functioned by parsing the
+entire input file into a syntax tree, converting the whole syntax tree
+into a chain of &ldquo;instructions,&rdquo; and then generating the
+whole output file, without ever freeing any storage.  At this point, I
+concluded I would have to write a new compiler from scratch.  That new
+compiler is now known as <abbr title="GNU Compiler Collection">GCC</abbr>;
+none of the Pastel compiler is used in it, but I managed to adapt and
+use the C front end that I had written.  But that was some years
+later; first, I worked on GNU Emacs.</p>
+
+<h3>GNU Emacs</h3>
+<p>
+I began work on GNU Emacs in September 1984, and in early 1985 it was
+beginning to be usable.  This enabled me to begin using Unix systems
+to do editing; having no interest in learning to use vi or ed, I had
+done my editing on other kinds of machines until then.</p>
+<p>
+At this point, people began wanting to use GNU Emacs, which raised the
+question of how to distribute it.  Of course, I put it on the
+anonymous ftp server on the MIT computer that I used.  (This computer,
+prep.ai.mit.edu, thus became the principal GNU ftp distribution site;
+when it was decommissioned a few years later, we transferred the name
+to our new ftp server.)  But at that time, many of the interested
+people were not on the Internet and could not get a copy by ftp.  So
+the question was, what would I say to them?</p>
+<p>
+I could have said, &ldquo;Find a friend who is on the net and who will make
+a copy for you.&rdquo;  Or I could have done what I did with the original
+PDP-10 Emacs: tell them, &ldquo;Mail me a tape and a
+<abbr title="Self-addressed Stamped Envelope">SASE</abbr>, and I
+will mail it back with Emacs on it.&rdquo; But I had no job, and I was
+looking for ways to make money from free software.  So I announced
+that I would mail a tape to whoever wanted one, for a fee of $150.  In
+this way, I started a free software distribution business, the
+precursor of the companies that today distribute entire GNU/Linux
+system distributions.</p>
+
+<h3>Is a program free for every user?</h3>
+<p>
+If a program is free software when it leaves the hands of its author,
+this does not necessarily mean it will be free software for everyone
+who has a copy of it.  For example,
+<a href="/philosophy/categories.html#PublicDomainSoftware"> public domain
+software</a> (software that is not copyrighted) is free software; but
+anyone can make a proprietary modified version of it.  Likewise, many
+free programs are copyrighted but distributed under simple permissive
+licenses which allow proprietary modified versions.</p>
+<p>
+The paradigmatic example of this problem is the X Window System.
+Developed at MIT, and released as free software with a permissive
+license, it was soon adopted by various computer companies.  They
+added X to their proprietary Unix systems, in binary form only, and
+covered by the same nondisclosure agreement.  These copies of X were
+no more free software than Unix was.</p>
+<p>
+The developers of the X Window System did not consider this a
+problem&mdash;they expected and intended this to happen.  Their goal was
+not freedom, just &ldquo;success,&rdquo; defined as &ldquo;having many
+users.&rdquo; They did not care whether these users had freedom, only
+that they should be numerous.</p>
+<p>
+This led to a paradoxical situation where two different ways of
+counting the amount of freedom gave different answers to the question,
+&ldquo;Is this program free?&rdquo; If you judged based on the freedom
+provided by the distribution terms of the MIT release, you would say
+that X was free software.  But if you measured the freedom of the
+average user of X, you would have to say it was proprietary software.
+Most X users were running the proprietary versions that came with Unix
+systems, not the free version.</p>
+
+<h3>Copyleft and the GNU GPL</h3>
+<p>
+The goal of GNU was to give users freedom, not just to be popular.  So
+we needed to use distribution terms that would prevent GNU software
+from being turned into proprietary software.  The method we use is
+called &ldquo;copyleft&rdquo;&#8239;<a href="#ft3">[3]</a>.</p>
+<p>
+Copyleft uses copyright law, but flips it over to serve the opposite
+of its usual purpose: instead of a means for restricting a program, it
+becomes a means for keeping the program free.</p>
+<p>
+The central idea of copyleft is that we give everyone permission to
+run the program, copy the program, modify the program, and distribute
+modified versions&mdash;but not permission to add restrictions of their
+own.  Thus, the crucial freedoms that define &ldquo;free
+software&rdquo; are guaranteed to everyone who has a copy; they become
+inalienable rights.</p>
+<p>
+For an effective copyleft, modified versions must also be free.  This
+ensures that work based on ours becomes available to our community if
+it is published.  When programmers who have jobs as programmers
+volunteer to improve GNU software, it is copyleft that prevents their
+employers from saying, &ldquo;You can't share those changes, because
+we are going to use them to make our proprietary version of the
+program.&rdquo;</p>
+<p>
+The requirement that changes must be free is essential if we want to
+ensure freedom for every user of the program.  The companies that
+privatized the X Window System usually made some changes to port it to
+their systems and hardware.  These changes were small compared with
+the great extent of X, but they were not trivial.  If making changes
+were an excuse to deny the users freedom, it would be easy for anyone
+to take advantage of the excuse.</p>
+<p>
+A related issue concerns combining a free program with nonfree code.
+Such a combination would inevitably be nonfree; whichever freedoms
+are lacking for the nonfree part would be lacking for the whole as
+well.  To permit such combinations would open a hole big enough to
+sink a ship.  Therefore, a crucial requirement for copyleft is to plug
+this hole: anything added to or combined with a copylefted program
+must be such that the larger combined version is also free and
+copylefted.</p>
+<p>
+The specific implementation of copyleft that we use for most GNU
+software is the GNU General Public License, or GNU GPL for short.  We
+have other kinds of copyleft that are used in specific circumstances.
+GNU manuals are copylefted also, but use a much simpler kind of
+copyleft, because the complexity of the GNU GPL is not necessary
+for manuals&#8239;<a href="#ft4">[4]</a>.</p>
+
+<h3>The Free Software Foundation</h3>
+
+<p>As interest in using Emacs was growing, other people became
+involved in the GNU project, and we decided that it was time to seek
+funding once again to support the development of the GNU operating
+system.  So in 1985 I brought in friends who cared about the goal, and
+created the <a href="https://www.fsf.org/">Free Software
+Foundation</a> (FSF), a tax-exempt charity for free software
+development.  The FSF also took over the Emacs tape distribution
+business; later it extended this by adding other free software (both
+GNU and non-GNU) to the tape, and by selling free
+(freedom-respecting) manuals as well.</p>
+
+<p>Most of the FSF's income used to come from sales of copies of free
+software and of other related services (CD-ROMs of source code,
+CD-ROMs with binaries, nicely printed manuals, all with the freedom to
+redistribute and modify), and Deluxe Distributions (distributions for
+which we built the whole collection of software for the customer's
+choice of platform).  Today the FSF
+still <a href="https://shop.fsf.org/"> sells manuals and other
+gear</a>, but it gets the bulk of its funding from members' dues.  You
+can join the FSF at <a href="https://my.fsf.org/join">fsf.org</a>.</p>
+
+<p>Free Software Foundation employees have written and maintained a
+number of GNU software packages.  Two notable ones are the C library
+and the shell.  The GNU C library is what every program running on a
+GNU/Linux system uses to communicate with Linux.  It was developed by
+a member of the Free Software Foundation staff, Roland McGrath.  The
+shell used on most GNU/Linux systems is
+BASH, the Bourne Again
+SHell&#8239;<a href="#ft5">[5]</a>, which was developed by FSF employee Brian Fox.</p>
+
+<p>We funded development of these programs because the GNU Project was
+not just about tools or a development environment.  Our goal was a
+complete operating system, and these programs were needed for that
+goal.</p>
+
+<h3>Free software support</h3>
+
+<p>The free software philosophy rejects a specific widespread business
+practice, but it is not against business.  When businesses respect the
+users' freedom, we wish them success.</p>
+
+<p>Selling copies of Emacs demonstrates one kind of free software
+business.  When the FSF took over that business, I needed another way
+to make a living.  I found it in selling services relating to the free
+software I had developed.  This included teaching, for subjects such
+as how to program GNU Emacs and how to customize GCC, and software
+development, mostly porting GCC to new platforms.</p>
+
+<p>Today each of these kinds of free software business is practiced by a
+number of corporations.  Some distribute free software collections on
+CD-ROM; others sell support at levels ranging from answering user
+questions, to fixing bugs, to adding major new features.  We are even
+beginning to see free software companies based on launching new free
+software products.</p>
+
+<p>Watch out, though&mdash;a number of companies that associate themselves
+with the term &ldquo;open source&rdquo; actually base their business
+on nonfree software that works with free software.  These are not
+free software companies, they are proprietary software companies whose
+products tempt users away from freedom.  They call these programs
+&ldquo;value-added packages,&rdquo; which shows the values they
+would like us to adopt: convenience above freedom.  If we value freedom
+more, we should call them &ldquo;freedom-subtracted&rdquo; packages.</p>
+
+<h3>Technical goals</h3>
+
+<p>The principal goal of GNU is to be free software.  Even if GNU had no
+technical advantage over Unix, it would have a social advantage,
+allowing users to cooperate, and an ethical advantage, respecting the
+user's freedom.</p>
+
+<p>But it was natural to apply the known standards of good practice to
+the work&mdash;for example, dynamically allocating data structures to avoid
+arbitrary fixed size limits, and handling all the possible 8-bit codes
+wherever that made sense.</p>
+
+<p>In addition, we rejected the Unix focus on small memory size, by
+deciding not to support 16-bit machines (it was clear that 32-bit
+machines would be the norm by the time the GNU system was finished),
+and to make no effort to reduce memory usage unless it exceeded a
+megabyte.  In programs for which handling very large files was not
+crucial, we encouraged programmers to read an entire input file into
+core, then scan its contents without having to worry about I/O.</p>
+
+<p>These decisions enabled many GNU programs to surpass their Unix
+counterparts in reliability and speed.</p>
+
+<h3>Donated computers</h3>
+
+<p>As the GNU Project's reputation grew, people began offering to donate
+machines running Unix to the project.  These were very useful, because
+the easiest way to develop components of GNU was to do it on a Unix
+system, and replace the components of that system one by one.  But
+they raised an ethical issue: whether it was right for us to have a
+copy of Unix at all.</p>
+
+<p>Unix was (and is) proprietary software, and the GNU Project's
+philosophy said that we should not use proprietary software.  But,
+applying the same reasoning that leads to the conclusion that violence
+in self defense is justified, I concluded that it was legitimate to
+use a proprietary package when that was crucial for developing a free
+replacement that would help others stop using the proprietary package.</p>
+
+<p>But, even if this was a justifiable evil, it was still an evil.  Today
+we no longer have any copies of Unix, because we have replaced them
+with free operating systems.  If we could not replace a machine's
+operating system with a free one, we replaced the machine instead.</p>
+
+<h3>The GNU Task List</h3>
+
+<p>As the GNU Project proceeded, and increasing numbers of system
+components were found or developed, eventually it became useful to
+make a list of the remaining gaps.  We used it to recruit developers
+to write the missing pieces.  This list became known as the GNU Task
+List.  In addition to missing Unix components, we listed various
+other useful software and documentation projects that, we thought, a
+truly complete system ought to have.</p>
+
+<p>Today&#8239;<a href="#ft6">[6]</a>, hardly any Unix components are left in the GNU Task
+List&mdash;those jobs had been done, aside from a few inessential
+ones.  But the list is full of projects that some might call
+&ldquo;applications.&rdquo;  Any program that appeals to more than a
+narrow class of users would be a useful thing to add to an operating
+system.</p>
+
+<p>Even games are included in the task list&mdash;and have been since the
+beginning.  Unix included games, so naturally GNU should too.  But
+compatibility was not an issue for games, so we did not follow the
+list of games that Unix had.  Instead, we listed a spectrum of
+different kinds of games that users might like.</p>
+
+<h3>The GNU Lesser GPL</h3>
+
+<p>The GNU C library uses a special kind of copyleft called the GNU
+Lesser General Public License&#8239;<a href="#ft7">[7]</a>, which gives permission to link
+proprietary software with the library.  Why make this exception?</p>
+
+<p>It is not a matter of principle; there is no principle that says
+proprietary software products are entitled to include our code.  (Why
+contribute to a project predicated on refusing to share with us?)
+Using the LGPL for the C library, or for any library, is a matter of
+strategy.</p>
+
+<p>The C library does a generic job; every proprietary system or compiler
+comes with a C library.  Therefore, to make our C library available
+only to free software would not have given free software any
+advantage&mdash;it would only have discouraged use of our library.</p>
+
+<p>One system is an exception to this: on the GNU system (and this
+includes GNU/Linux), the GNU C library is the only C library.  So the
+distribution terms of the GNU C library determine whether it is
+possible to compile a proprietary program for the GNU system.  There
+is no ethical reason to allow proprietary applications on the GNU
+system, but strategically it seems that disallowing them would do more
+to discourage use of the GNU system than to encourage development of
+free applications.  That is why using the Lesser GPL is a good
+strategy for the C library.</p>
+
+<p>For other libraries, the strategic decision needs to be
+considered on a case-by-case basis.  When a library does a special job
+that can help write certain kinds of programs, then releasing it under
+the GPL, limiting it to free programs only, is a way of helping other
+free software developers, giving them an advantage against proprietary
+software.</p>
+
+<p>Consider GNU Readline, a library that was developed to provide
+command-line editing for BASH.  Readline is released under the
+ordinary GNU GPL, not the Lesser GPL.  This probably does reduce the
+amount Readline is used, but that is no loss for us.  Meanwhile, at
+least one useful application has been made free software specifically
+so it could use Readline, and that is a real gain for the
+community.</p>
+
+<p>Proprietary software developers have the advantages money provides;
+free software developers need to make advantages for each other.  I
+hope some day we will have a large collection of GPL-covered libraries
+that have no parallel available to proprietary software, providing
+useful modules to serve as building blocks in new free software, and
+adding up to a major advantage for further free software development.</p>
+
+<h3>Scratching an itch?</h3>
+<p>
+Eric Raymond says that &ldquo;Every good work of software starts by
+scratching a developer's personal itch.&rdquo;  Maybe that happens
+sometimes, but many essential pieces of GNU software were developed in
+order to have a complete free operating system.  They come from a
+vision and a plan, not from impulse.</p>
+<p>
+For example, we developed the GNU C library because a Unix-like system
+needs a C library, BASH because a Unix-like
+system needs a shell, and GNU tar because a Unix-like system needs a
+tar program.  The same is true for my own programs&mdash;the GNU C
+compiler, GNU Emacs, GDB and GNU Make.</p>
+<p>
+Some GNU programs were developed to cope with specific threats to our
+freedom.  Thus, we developed gzip to replace the Compress program,
+which had been lost to the community because of
+the <abbr title="Lempel-Ziv-Welch">LZW</abbr> patents.  We found
+people to develop LessTif, and more recently started
+<abbr title="GNU Network Object Model Environment">GNOME</abbr>
+and Harmony, to address the problems caused by certain proprietary
+libraries (see below).  We are developing the GNU Privacy Guard to
+replace popular nonfree encryption software, because users should not
+have to choose between privacy and freedom.</p>
+<p>
+Of course, the people writing these programs became interested in the
+work, and many features were added to them by various people for the
+sake of their own needs and interests.  But that is not why the
+programs exist.</p>
+
+<h3>Unexpected developments</h3>
+<p>
+At the beginning of the GNU Project, I imagined that we would develop
+the whole GNU system, then release it as a whole.  That is not how it
+happened.</p>
+<p>
+Since each component of the GNU system was implemented on a Unix
+system, each component could run on Unix systems long before a
+complete GNU system existed.  Some of these programs became popular,
+and users began extending them and porting them&mdash;to the various
+incompatible versions of Unix, and sometimes to other systems as well.</p>
+<p>
+The process made these programs much more powerful, and attracted both
+funds and contributors to the GNU Project.  But it probably also
+delayed completion of a minimal working system by several years, as
+GNU developers' time was put into maintaining these ports and adding
+features to the existing components, rather than moving on to write
+one missing component after another.</p>
+
+<h3>The GNU Hurd</h3>
+<p>
+By 1990, the GNU system was almost complete; the only major missing
+component was the kernel.  We had decided to implement our kernel as a
+collection of server processes running on top of Mach.  Mach is a
+microkernel developed at Carnegie Mellon University and then at the
+University of Utah; the GNU Hurd is a collection of servers (i.e., a
+herd of GNUs) that run on top of Mach, and do the
+various jobs of the Unix kernel.  The start of development was delayed
+as we waited for Mach to be released as free software, as had been
+promised.</p>
+<p>
+One reason for choosing this design was to avoid what seemed to be the
+hardest part of the job: debugging a kernel program without a
+source-level debugger to do it with.  This part of the job had been
+done already, in Mach, and we expected to debug the Hurd servers as
+user programs, with GDB.  But it took a long time to make that possible,
+and the multithreaded servers that send messages to each other have
+turned out to be very hard to debug.  Making the Hurd work solidly has
+stretched on for many years.</p>
+
+<h3>Alix</h3>
+<p>
+The GNU kernel was not originally supposed to be called the Hurd.  Its
+original name was Alix&mdash;named after the woman who was my sweetheart at
+the time.  She, a Unix system administrator, had pointed out how her
+name would fit a common naming pattern for Unix system versions; as a
+joke, she told her friends, &ldquo;Someone should name a kernel after
+me.&rdquo; I said nothing, but decided to surprise her with a kernel
+named Alix.</p>
+<p>
+It did not stay that way.  Michael (now Thomas) Bushnell, the main
+developer of the kernel, preferred the name Hurd, and redefined Alix
+to refer to a certain part of the kernel&mdash;the part that would trap
+system calls and handle them by sending messages to Hurd servers.</p>
+<p>
+Later, Alix and I broke up, and she changed her name;
+independently, the Hurd design was changed so that the C library would
+send messages directly to servers, and this made the Alix component
+disappear from the design.</p>
+<p>
+But before these things happened, a friend of hers came across the
+name Alix in the Hurd source code, and mentioned it to her.  So
+she did have the chance to find a kernel named after her.</p>
+
+<h3>Linux and GNU/Linux</h3>
+<p>
+The GNU Hurd is not suitable for production use, and we don't know
+if it ever will be.  The capability-based design has problems that
+result directly from the flexibility of the design, and it is not
+clear whether solutions exist.</p>
+
+<p>
+Fortunately, another kernel is available.  In 1991, Linus Torvalds
+developed a Unix-compatible kernel and called it Linux.  It was
+proprietary at first, but in 1992, he made it free software; combining
+Linux with the not-quite-complete GNU system resulted in a complete
+free operating system.  (Combining them was a substantial job in
+itself, of course.)  It is due to Linux that we can actually run a
+version of the GNU system today.</p>
+<p>
+We call this system version <a href="/gnu/linux-and-gnu.html">
+GNU/Linux</a>, to express its composition as a combination of the GNU
+system with Linux as the kernel.  Please don't fall into the practice
+of calling the whole system &ldquo;Linux,&rdquo; since that means
+attributing our work to someone else.
+Please <a href="/gnu/gnu-linux-faq.html"> give us equal
+mention</a>.</p>
+
+<h3>Challenges in our future</h3>
+<p>
+We have proved our ability to develop a broad spectrum of free
+software.  This does not mean we are invincible and unstoppable.
+Several challenges make the future of free software uncertain; meeting
+them will require steadfast effort and endurance, sometimes lasting
+for years.  It will require the kind of determination that people
+display when they value their freedom and will not let anyone take it
+away.</p>
+<p>
+The following four sections discuss these challenges.</p>
+
+<h4>Secret hardware</h4>
+<p>
+Hardware manufacturers increasingly tend to keep hardware
+specifications secret.  This makes it difficult to write free drivers
+so that Linux and XFree86 can support new hardware.  We have complete
+free systems today, but we will not have them tomorrow if we cannot
+support tomorrow's computers.</p>
+<p>
+There are two ways to cope with this problem.  Programmers can do
+reverse engineering to figure out how to support the hardware.  The
+rest of us can choose the hardware that is supported by free software;
+as our numbers increase, secrecy of specifications will become a
+self-defeating policy.</p>
+<p>
+Reverse engineering is a big job; will we have programmers with
+sufficient determination to undertake it?  Yes&mdash;if we have built up a
+strong feeling that free software is a matter of principle, and
+nonfree drivers are intolerable.  And will large numbers of us spend
+extra money, or even a little extra time, so we can use free drivers?
+Yes, if the determination to have freedom is widespread&#8239;<a href="#ft8">[8]</a>.</p>
+
+<h4>Nonfree libraries</h4>
+<p>
+A nonfree library that runs on free operating systems acts as a trap
+for free software developers.  The library's attractive features are
+the bait; if you use the library, you fall into the trap, because your
+program cannot usefully be part of a free operating system.  (Strictly
+speaking, we could include your program, but it
+won't <em>run</em> with the library missing.)  Even worse, if
+a program that uses the proprietary library becomes popular, it can
+lure other unsuspecting programmers into the trap.</p>
+<p>
+The first instance of this problem was the Motif toolkit, back in the
+80s.  Although there were as yet no free operating systems, it was
+clear what problem Motif would cause for them later on.  The GNU
+Project responded in two ways: by asking individual free software
+projects to support the free X Toolkit widgets as well as Motif, and
+by asking for someone to write a free replacement for Motif.  The job
+took many years; LessTif, developed by the Hungry Programmers, became
+powerful enough to support most Motif applications only in 1997.</p>
+<p>
+Between 1996 and 1998, another nonfree 
+<abbr title="Graphical User Interface">GUI</abbr> toolkit
+library, called Qt, was used in a substantial collection of free
+software, the desktop
+<abbr title="K Desktop Environment">KDE</abbr>.</p>
+<p>
+Free GNU/Linux systems were unable to use KDE, because we could not
+use the library.  However, some commercial distributors of GNU/Linux
+systems who were not strict about sticking with free software added
+KDE to their systems&mdash;producing a system with more capabilities,
+but less freedom.  The KDE group was actively encouraging more
+programmers to use Qt, and millions of new &ldquo;Linux users&rdquo;
+had never been exposed to the idea that there was a problem in this.
+The situation appeared grim.</p>
+<p>
+The free software community responded to the problem in two ways:
+GNOME and Harmony.</p>
+<p>
+GNOME, the GNU Network Object Model Environment, is GNU's desktop
+project.  Started in 1997 by Miguel de Icaza, and developed with the
+support of Red Hat Software, GNOME set out to provide similar desktop
+facilities, but using free software exclusively.  It has technical
+advantages as well, such as supporting a variety of languages, not
+just C++.  But its main purpose was freedom: not to require the use of
+any nonfree software.</p>
+<p>
+Harmony is a compatible replacement library, designed to make it
+possible to run KDE software without using Qt.</p>
+<p>
+In November 1998, the developers of Qt announced a change of license
+which, when carried out, should make Qt free software.  There is no
+way to be sure, but I think that this was partly due to the
+community's firm response to the problem that Qt posed when it was
+nonfree.  (The new license is inconvenient and inequitable, so it
+remains desirable to avoid using Qt&#8239;<a href="#ft9">[9]</a>.)</p>
+<p>
+How will we respond to the next tempting nonfree library?  Will the
+whole community understand the need to stay out of the trap?  Or will
+many of us give up freedom for convenience, and produce a major
+problem?  Our future depends on our philosophy.</p>
+
+<h4>Software patents</h4>
+<p>
+The worst threat we face comes from software patents, which can put
+algorithms and features off limits to free software for up to twenty
+years.  The LZW compression algorithm patents were applied for in
+1983, and we still cannot release free software to produce proper
+compressed <abbr title="Graphics Interchange Format">GIF</abbr>&#8239;<a href="#ft10">[10]</a>.
+In 1998, a free program to produce
+<abbr title="MPEG-1 Audio Layer 3">MP3</abbr> compressed audio
+was removed from distribution under threat of a patent suit&#8239;<a href="#ft11">[11]</a>.
+</p>
+<p>
+There are ways to cope with patents: we can search for evidence that a
+patent is invalid, and we can look for alternative ways to do a job.
+But each of these methods works only sometimes; when both fail, a
+patent may force all free software to lack some feature that users
+want.  After a long wait, the patents expire, but what will we do
+until then?</p>
+<p>
+Those of us who value free software for freedom's sake will stay with
+free software anyway.  We will manage to get work done without the
+patented features.  But those who value free software because they
+expect it to be technically superior are likely to call it a failure
+when a patent holds it back.  Thus, while it is useful to talk about
+the practical effectiveness of the &ldquo;bazaar&rdquo; model of
+development, and the reliability and power of some free software,
+we must not stop there.  We must talk about freedom and principle.</p>
+
+<h4>Free documentation</h4>
+<p>
+The biggest deficiency in our free operating systems is not in the
+software&mdash;it is the lack of good free manuals that we can include in
+our systems.  Documentation is an essential part of any software
+package; when an important free software package does not come with a
+good free manual, that is a major gap.  We have many such gaps today.</p>
+<p>
+Free documentation, like free software, is a matter of freedom, not
+price.  The criterion for a free manual is pretty much the same as for
+free software: it is a matter of giving all users certain freedoms.
+Redistribution (including commercial sale) must be permitted, online
+and on paper, so that the manual can accompany every copy of the
+program.</p>
+<p>
+Permission for modification is crucial too.  As a general rule, I
+don't believe that it is essential for people to have permission to
+modify all sorts of articles and books.  For example, I don't think
+you or I are obliged to give permission to modify articles like this
+one, which describe our actions and our views.</p>
+<p>
+But there is a particular reason why the freedom to modify is crucial
+for documentation for free software.  When people exercise their right
+to modify the software, and add or change its features, if they are
+conscientious they will change the manual, too&mdash;so they can
+provide accurate and usable documentation with the modified program.
+A nonfree manual, which does not allow programmers to be conscientious
+and finish the job, does not fill our community's needs.</p>
+<p>
+Some kinds of limits on how modifications are done pose no problem.
+For example, requirements to preserve the original author's copyright
+notice, the distribution terms, or the list of authors, are OK.  It is
+also no problem to require modified versions to include notice that
+they were modified, even to have entire sections that may not be
+deleted or changed, as long as these sections deal with nontechnical
+topics.  These kinds of restrictions are not a problem because they
+don't stop the conscientious programmer from adapting the manual to
+fit the modified program.  In other words, they don't block the free
+software community from making full use of the manual.</p>
+<p>
+However, it must be possible to modify all the <em>technical</em> content of
+the manual, and then distribute the result in all the usual media,
+through all the usual channels; otherwise, the restrictions do
+obstruct the community, the manual is not free, and we need another
+manual.</p>
+<p>
+Will free software developers have the awareness and determination to
+produce a full spectrum of free manuals?  Once again, our future
+depends on philosophy.</p>
+
+<h3>We must talk about freedom</h3>
+<p>
+Estimates today are that there are ten million users of GNU/Linux
+systems such as Debian GNU/Linux and Red Hat &ldquo;Linux.&rdquo;
+Free software has developed such practical advantages that users are
+flocking to it for purely practical reasons.</p>
+<p>
+The good consequences of this are evident: more interest in developing
+free software, more customers for free software businesses, and more
+ability to encourage companies to develop commercial free software
+instead of proprietary software products.</p>
+<p>
+But interest in the software is growing faster than awareness of the
+philosophy it is based on, and this leads to trouble.  Our ability to
+meet the challenges and threats described above depends on the will to
+stand firm for freedom.  To make sure our community has this will, we
+need to spread the idea to the new users as they come into the
+community.</p>
+<p>
+But we are failing to do so: the efforts to attract new users into our
+community are far outstripping the efforts to teach them the civics of
+our community.  We need to do both, and we need to keep the two
+efforts in balance.</p>
+
+<h3>&ldquo;Open Source&rdquo;</h3>
+<p>
+Teaching new users about freedom became more difficult in 1998, when a
+part of the community decided to stop using the term &ldquo;free
+software&rdquo; and say &ldquo;open source software&rdquo;
+instead.</p>
+<p>
+Some who favored this term aimed to avoid the confusion of
+&ldquo;free&rdquo; with &ldquo;gratis&rdquo;&mdash;a valid goal.  Others,
+however, aimed to set aside the spirit of principle that had motivated
+the free software movement and the GNU Project, and to appeal instead
+to executives and business users, many of whom hold an ideology that
+places profit above freedom, above community, above principle.  Thus,
+the rhetoric of &ldquo;open source&rdquo; focuses on the potential to
+make high-quality, powerful software, but shuns the ideas of freedom,
+community, and principle.</p>
+<p>
+The &ldquo;Linux&rdquo; magazines are a clear example of this&mdash;they
+are filled with advertisements for proprietary software that works
+with GNU/Linux.  When the next Motif or Qt appears, will these
+magazines warn programmers to stay away from it, or will they run ads
+for it?</p>
+<p>
+The support of business can contribute to the community in many ways;
+all else being equal, it is useful.  But winning their support by
+speaking even less about freedom and principle can be disastrous; it
+makes the previous imbalance between outreach and civics education
+even worse.</p>
+<p>
+&ldquo;Free software&rdquo; and &ldquo;open source&rdquo; describe the
+same category of software, more or less, but say different things
+about the software, and about values.  The GNU Project continues to
+use the term &ldquo;free software,&rdquo; to express the idea that
+freedom, not just technology, is important.</p>
+
+<h3>Try!</h3>
+<p>
+Yoda's aphorism (&ldquo;There is no &lsquo;try&rsquo;&rdquo;) sounds
+neat, but it doesn't work for me.  I have done most of my work while
+anxious about whether I could do the job, and unsure that it would be
+enough to achieve the goal if I did.  But I tried anyway, because
+there was no one but me between the enemy and my city.  Surprising
+myself, I have sometimes succeeded.</p>
+<p>
+Sometimes I failed; some of my cities have fallen.  Then I found
+another threatened city, and got ready for another battle.  Over time,
+I've learned to look for threats and put myself between them and my
+city, calling on other hackers to come and join me.</p>
+<p>
+Nowadays, often I'm not the only one.  It is a relief and a joy when I
+see a regiment of hackers digging in to hold the line, and I realize,
+this city may survive&mdash;for now.  But the dangers are greater each
+year, and now Microsoft has explicitly targeted our community.  We
+can't take the future of freedom for granted.  Don't take it for
+granted!  If you want to keep your freedom, you must be prepared to
+defend it.</p>
+<div class="column-limit"></div>
+
+<h3 class="footnote">Footnotes</h3>
+<ol>
+<li id="ft1">The use of &ldquo;hacker&rdquo; to mean &ldquo;security
+breaker&rdquo; is a confusion on the part of the mass media.  We
+hackers refuse to recognize that meaning, and continue using the word
+to mean someone who loves to program, someone who enjoys playful
+cleverness, or the combination of the two.  See my
+article, &ldquo;<a href="https://stallman.org/articles/on-hacking.html">On
+Hacking</a>.&rdquo;</li>
+
+<li id="ft2">As an Atheist, I don't follow any religious leaders, but I
+sometimes find I admire something one of them has said.</li>
+
+<li id="ft3">In 1984 or 1985, Don Hopkins (a very imaginative fellow) mailed me
+a letter.  <a href="/graphics/copyleft-sticker.html">On the envelope</a> he
+had written several amusing sayings,
+including this one: &ldquo;Copyleft&mdash;all rights reversed.&rdquo; I
+used the word &ldquo;copyleft&rdquo; to name the distribution concept
+I was developing at the time.</li>
+
+<li id="ft4">We now use the <a href="/licenses/fdl.html">GNU Free
+Documentation License</a> for documentation.</li>
+
+<li id="ft5">&ldquo;Bourne Again Shell&rdquo; is a play on the name
+&ldquo;Bourne Shell,&rdquo; which was the usual shell on Unix.</li>
+
+<li id="ft6">That was written in 1998.  In 2009 we no longer maintain a long
+task list.  The community develops free software so fast that we can't
+even keep track of it all.  Instead, we have a list of High Priority
+Projects, a much shorter list of projects we really want to encourage
+people to write.</li>
+
+<li id="ft7">This license was initially called the GNU Library General
+Public License, we renamed it to avoid giving the idea that all
+libraries ought to use it. 
+See <a href="/philosophy/why-not-lgpl.html">Why you shouldn't use the
+Lesser GPL for your next library</a> for more information.</li>
+
+<li id="ft8">2008 note: this issue extends to the BIOS as well.  There is a free
+BIOS, <a href="https://libreboot.at/">LibreBoot</a> (a distribution of
+coreboot); the problem is getting specs for machines so that
+LibreBoot can support them without nonfree &ldquo;blobs.&rdquo;</li>
+
+<li id="ft9">In September 2000, Qt was rereleased under the GNU GPL,
+which essentially solved this problem.</li>
+
+<li id="ft10">As of 2009, the GIF patents have expired.</li>
+
+<li id="ft11">As of 2017, the MP3 patents have expired.  Look how
+long we had to wait.</li>
+</ol>
+
+<div class="infobox extra" role="complementary">
+<hr />
+<p>
+Originally published in the book <cite>Open Sources</cite>.  Richard
+Stallman was <a href="/philosophy/open-source-misses-the-point.html">
+never a supporter of &ldquo;open source&rdquo;</a>, but contributed
+this article so that the ideas of the free software movement would not
+be entirely absent from that book.
+</p>
+</div>
+</div>
+
+</div><!-- for id="content", starts in the include above -->
+
+              <!-- begin server/footer-text.html -->
+
+
+
+
+
+<div style="clear:both"></div>
+
+
+<div id="language-container">
+ <div class="backtotop">
+  <hr class="no-display" />
+  <a href="#top"><b>&#9650;</b></a>
+ </div>
+ <div id="languages" class="rounded-corners">
+  <div class="button">
+   <a href="#top" class="close"><span>BACK TO TOP</span></a>
+  </div>
+  <div id="set-language" class="button">
+   <span class="gnun-split"></span>
+   <a href="/server/select-language.html?callback=/gnu/thegnuproject.html" rel="nofollow">
+   Set language
+   <span class="gnun-split"></span>
+   </a>
+  </div>
+  <p>Available for this page:</p>
+  <div id="translations">
+<p>
+<span dir="ltr" class="original">[en]&nbsp;<a lang="en" hreflang="en" href="/gnu/thegnuproject.en.html">English</a> &nbsp;</span>
+<span dir="ltr">[ca]&nbsp;<a lang="ca" hreflang="ca" href="/gnu/thegnuproject.ca.html">català</a> &nbsp;</span>
+<span dir="ltr">[cs]&nbsp;<a lang="cs" hreflang="cs" href="/gnu/thegnuproject.cs.html">čeština</a> &nbsp;</span>
+<span dir="ltr">[de]&nbsp;<a lang="de" hreflang="de" href="/gnu/thegnuproject.de.html">Deutsch</a> &nbsp;</span>
+<span dir="ltr">[el]&nbsp;<a lang="el" hreflang="el" href="/gnu/thegnuproject.el.html">ελληνικά</a> &nbsp;</span>
+<span dir="ltr">[es]&nbsp;<a lang="es" hreflang="es" href="/gnu/thegnuproject.es.html">español</a> &nbsp;</span>
+<span dir="ltr">[fi]&nbsp;<a lang="fi" hreflang="fi" href="/gnu/thegnuproject.fi.html">suomi</a> &nbsp;</span>
+<span dir="ltr">[fr]&nbsp;<a lang="fr" hreflang="fr" href="/gnu/thegnuproject.fr.html">français</a> &nbsp;</span>
+<span dir="ltr">[hr]&nbsp;<a lang="hr" hreflang="hr" href="/gnu/thegnuproject.hr.html">hrvatski</a> &nbsp;</span>
+<span dir="ltr">[id]&nbsp;<a lang="id" hreflang="id" href="/gnu/thegnuproject.id.html">Indonesia</a> &nbsp;</span>
+<span dir="ltr">[it]&nbsp;<a lang="it" hreflang="it" href="/gnu/thegnuproject.it.html">italiano</a> &nbsp;</span>
+<span dir="ltr">[ja]&nbsp;<a lang="ja" hreflang="ja" href="/gnu/thegnuproject.ja.html">日本語</a> &nbsp;</span>
+<span dir="ltr">[ko]&nbsp;<a lang="ko" hreflang="ko" href="/gnu/thegnuproject.ko.html">한국어</a> &nbsp;</span>
+<span dir="ltr">[lt]&nbsp;<a lang="lt" hreflang="lt" href="/gnu/thegnuproject.lt.html">lietuvių</a> &nbsp;</span>
+<span dir="ltr">[ml]&nbsp;<a lang="ml" hreflang="ml" href="/gnu/thegnuproject.ml.html">മലയാളം</a> &nbsp;</span>
+<span dir="ltr">[nl]&nbsp;<a lang="nl" hreflang="nl" href="/gnu/thegnuproject.nl.html">Nederlands</a> &nbsp;</span>
+<span dir="ltr">[pl]&nbsp;<a lang="pl" hreflang="pl" href="/gnu/thegnuproject.pl.html">polski</a> &nbsp;</span>
+<span dir="ltr">[pt-br]&nbsp;<a lang="pt-br" hreflang="pt-br" href="/gnu/thegnuproject.pt-br.html">português</a> &nbsp;</span>
+<span dir="ltr">[ru]&nbsp;<a lang="ru" hreflang="ru" href="/gnu/thegnuproject.ru.html">русский</a> &nbsp;</span>
+<span dir="ltr">[sq]&nbsp;<a lang="sq" hreflang="sq" href="/gnu/thegnuproject.sq.html">Shqip</a> &nbsp;</span>
+<span dir="ltr">[tr]&nbsp;<a lang="tr" hreflang="tr" href="/gnu/thegnuproject.tr.html">Türkçe</a> &nbsp;</span>
+<span dir="ltr">[uk]&nbsp;<a lang="uk" hreflang="uk" href="/gnu/thegnuproject.uk.html">українська</a> &nbsp;</span>
+<span dir="ltr">[zh-cn]&nbsp;<a lang="zh-cn" hreflang="zh-cn" href="/gnu/thegnuproject.zh-cn.html">简体中文</a> &nbsp;</span>
+<span dir="ltr">[zh-tw]&nbsp;<a lang="zh-tw" hreflang="zh-tw" href="/gnu/thegnuproject.zh-tw.html">繁體中文</a> &nbsp;</span>
+</p>
+</div>
+ </div>
+</div>
+
+<div id="mission-statement" role="complementary">
+ <div class="backtotop">
+  <hr class="no-display" />
+  <a href="#header"><span>BACK TO TOP </span>&#9650;</a>
+ </div>
+<div style="clear: both"></div>
+<blockquote>
+<p style="direction:ltr; text-align:left"><a href="//www.fsf.org"><img id="fsfbanner"
+src="/graphics/fsf-logo-notext-small.png" alt="&nbsp;[FSF logo]&nbsp;"
+width="75" height="25" /></a><strong>
+&ldquo;The Free Software Foundation (FSF) is a nonprofit with a worldwide
+mission to promote computer user freedom. We defend the rights of all
+software users.&rdquo;</strong></p>
+</blockquote>
+
+<div id="support-the-fsf" class="button">
+ <a class="join" href="//www.fsf.org/associate/support_freedom?referrer=4052">JOIN</a>
+ <a class="donate" href="//donate.fsf.org/">DONATE</a>
+ <a class="shop" href="//shop.fsf.org/">SHOP</a>
+</div>
+</div>
+<!-- end server/footer-text.html -->
+
+
+<div id="footer" role="contentinfo">
+<div class="unprintable">
+
+<p>Please send general FSF &amp; GNU inquiries to
+<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
+There are also <a href="/contact/">other ways to contact</a>
+the FSF.  Broken links and other corrections or suggestions can be sent
+to <a href="mailto:webmasters@gnu.org">&lt;webmasters@gnu.org&gt;</a>.</p>
+
+<p><!-- TRANSLATORS: Ignore the original text in this paragraph,
+        replace it with the translation of these two:
+
+        We work hard and do our best to provide accurate, good quality
+        translations.  However, we are not exempt from imperfection.
+        Please send your comments and general suggestions in this regard
+        to <a href="mailto:web-translators@gnu.org">
+        &lt;web-translators@gnu.org&gt;</a>.</p>
+
+        <p>For information on coordinating and contributing translations of
+        our web pages, see <a
+        href="/server/standards/README.translations.html">Translations
+        README</a>. -->
+Please see the <a
+href="/server/standards/README.translations.html">Translations
+README</a> for information on coordinating and contributing translations
+of this article.</p>
+</div>
+
+<!-- Regarding copyright, in general, standalone pages (as opposed to
+     files generated as part of manuals) on the GNU web server should
+     be under CC BY-ND 4.0.  Please do NOT change or remove this
+     without talking with the webmasters or licensing team first.
+     Please make sure the copyright date is consistent with the
+     document.  For web pages, it is ok to list just the latest year the
+     document was modified, or published.
+     
+     If you wish to list earlier years, that is ok too.
+     Either "2001, 2002, 2003" or "2001-2003" are ok for specifying
+     years, as long as each year in the range is in fact a copyrightable
+     year, i.e., a year in which the document was published (including
+     being publicly visible on the web or in a revision control system).
+     
+     There is more detail about copyright years in the GNU Maintainers
+     Information document, www.gnu.org/prep/maintain. -->
+
+<p>Copyright &copy; 1998, 2005, 2008, 2010, 2012, 2015, 2017, 2018, 2021, 2023
+Richard Stallman</p>
+
+<p>This page is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
+Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
+
+<!-- start of server/bottom-notes.html -->
+<div id="bottom-notes" class="unprintable">
+<p><a href="//www.fsf.org/about/dmca-notice">Copyright Infringement Notification</a></p>
+<div id="generic">
+
+
+</div>
+</div>
+<!-- end of server/bottom-notes.html -->
+
+
+<p class="unprintable">Updated:
+<!-- timestamp start -->
+$Date: 2023/07/23 23:32:45 $
+<!-- timestamp end -->
+</p>
+</div>
+</div><!-- for class="inner", starts in the banner include -->
+</body>
+</html>

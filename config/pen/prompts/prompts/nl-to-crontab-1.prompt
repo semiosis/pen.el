@@ -1,0 +1,30 @@
+title: nl to crontab
+prompt-version: 5
+task: linux hci
+engine: OpenAI Codex
+prompt: |
+  cat /etc/crontab
+  # At 06:52 on day-of-month 1.
+  52 6	1 * *
+
+  # At 10:05 on day-of-month 31 and on Sunday in May.
+  5 10	31 5 0
+
+  # <1>
+inject-gen-start: "\n"
+temperature: 0.5
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\n"
+vars:
+- tab
+examples:
+- At 06:47 on Saturday.
+preprocessors:
+- sed 's/\s\+/ /g'
+external: unstdinify interpret-crontab
+external-related:
+- https://crontab.guru/
+postprocessor: awk 1
+example-formatter: ''

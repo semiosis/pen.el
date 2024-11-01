@@ -1,0 +1,8 @@
+
+  (loop with iter =
+        (if (empty? list)
+          {:next nil}
+          (iterate (fn [x]
+                      {:next x :current x})
+                   list))
+        as result

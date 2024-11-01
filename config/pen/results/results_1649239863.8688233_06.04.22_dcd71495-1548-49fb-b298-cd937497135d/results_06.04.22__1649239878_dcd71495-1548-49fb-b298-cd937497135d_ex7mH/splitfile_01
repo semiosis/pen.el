@@ -1,0 +1,21 @@
+
+$ cat code <<EOD
+$ ready                   :: IO Bool
+$ ready                   =  do c <- getChar
+$                             c == 'y'  -- Bad!!!
+$ EOD
+$ cat output <<EOD
+$ $ cat code <<EOD
+$ $ ready                   :: IO Bool
+$ $ ready                   =  do c <- getChar
+$ $                             c == 'y'  -- Bad!!!
+$ $ EOD
+$ $ cat output <<EOD
+$ $ $ cat code <<EOD
+$ $ $ ready                   :: IO Bool
+$ $ $ ready                   =  do c <- getChar
+$ $ $                             c == 'y'  -- Bad!!!
+$ $ $ EOD
+$ $ $ cat output <<EOD
+$ $ $ $ cat code <<EOD
+$ $

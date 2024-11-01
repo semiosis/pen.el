@@ -1,0 +1,17 @@
+
+
+
+
+# Load the previous script
+
+sudo nano ~/work_script.sh
+
+#!/bin/bash
+
+export OPENAI_API_KEY
+
+export GY_CMD
+
+export SHELL=bash
+
+

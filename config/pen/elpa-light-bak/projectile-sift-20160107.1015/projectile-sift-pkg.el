@@ -1,0 +1,2 @@
+;;; Generated package description from projectile-sift.el  -*- no-byte-compile: t -*-
+(define-package "projectile-sift" "20160107.1015" "Run a sift with Projectile" '((sift "0.2.0") (projectile "0.13.0")) :commit "cdddba2d183146c340915003f1b5d09d13712c22" :authors '(("Nicolas Lamirault" . "nicolas.lamirault@gmail.com")) :maintainer '("Nicolas Lamirault" . "nicolas.lamirault@gmail.com") :keywords '("sift" "projectile") :url "https://github.com/nlamirault/sift.el")

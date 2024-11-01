@@ -1,0 +1,7 @@
+# key: math
+# group: mine
+# name: math
+# --
+$dy/d(y) = 1 = dy/d[(x1 + x2)*x3]$
+$D = (d_1)^2 + (d_2)^2 ... (d_n)^2$
+1. tansig :: $n = 2/(1+exp(-2*n))-1$

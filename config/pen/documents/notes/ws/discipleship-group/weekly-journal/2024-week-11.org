@@ -1,0 +1,107 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 11
+
+* D-Group weekly session notes
+Started working on it: <2024-03-15 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=atM1QICvvtI][Praise - Elevation worship | Instrumental Worship | Soaking Music | Deep Prayer - YouTube]]
+
+| Scripture Memory | NT260 Passage       | Foundations260 Readings |
+|------------------+---------------------+-------------------------|
+| [[sh:bible-read-passage nasb Matthew 5:21-22 ][Matthew 5:21-22]]  | [[sh:bible-study-passage nasb Galatians 6 ][Galatians 6]]         | [[sh:bible-study-passage nasb Numbers 20 ][Numbers 20]]              |
+|                  | [[sh:bible-study-passage nasb Acts 17-18 ][Acts 17-18]]          | [[sh:bible-study-passage nasb Numbers 27 ][Numbers 27]]              |
+|                  | [[sh:bible-study-passage nasb I Thessalonians 1-2 ][I Thessalonians 1-2]] | [[sh:bible-study-passage nasb Numbers 34-35 ][Numbers 34-35]]           |
+|                  |                     | [[sh:bible-study-passage nasb Deuteronomy 1-7 ][Deuteronomy 1-7]]         |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Thoughts
+*** Jesus helps us to stop sinning
+- [[https://youtu.be/S8rmiZRzqfg?t=2670][Holiness Demanded - Charles Spurgeon Sermon - YouTube]]
+
+*** We have to be obedient and repent from sin
+#+BEGIN_QUOTE
+  *Matthew 5:21-22* - You have heard that it was said to those of old, You shall not murder; and whoever murders will be liable to judgment. But I say to you that everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, You fool! will be liable to the hell of fire. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Ephesians 5:5-7* - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *John 3:36* - Whoever believes (G4100 *pisteuo*) in the Son has eternal life; whoever does not *obey* the Son shall not see life, but the wrath of God remains on him. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Colossians 3:5-10* - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. _On account of these the wrath of God is coming._ In these you too once walked, when you were living in them. But now you *must* put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Colossians 3:23-25* - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For *the wrongdoer will be paid back for the wrong he has done, and there is no partiality.*
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Acts 10:34-36* - So Peter opened his mouth and said: Truly I understand that God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him. As for the word that he sent to Israel, preaching good news of peace through Jesus Christ (he is Lord of all), (ESV)
+#+END_QUOTE
+
+Faith works through love; we must be like Jesus - exercising sacrificial, merciful love. The term 'new creature' is used in Galatians 6 after saying we must 'put sin to death and do good', sowing to the spirit and not to the flesh:
+
+#+BEGIN_QUOTE
+  *Galatians 6:7-8* - Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Galatians 5:6* - For in Christ Jesus neither circumcision nor uncircumcision counts for anything, but only _faith working through love._ (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Galatians 6:15* - For neither circumcision counts for anything, nor uncircumcision, but _a new creation._ (ESV)
+#+END_QUOTE
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:21-22
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:21
+‾‾‾‾‾‾‾‾‾‾‾‾
+“You have heard that the ancients were told,
+‘You shall not commit murder’ and ‘Whoever
+commits murder shall be liable to the court.’
+
+Matthew 5:22
+‾‾‾‾‾‾‾‾‾‾‾‾
+But I say to you that everyone who is angry with
+his brother shall be guilty before the court; and
+whoever says to his brother, ‘You
+good-for-nothing,’ shall be guilty before the
+supreme court; and whoever says, ‘You fool,’
+shall be guilty enough to go into the fiery hell.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

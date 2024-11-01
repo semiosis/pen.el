@@ -1,0 +1,59 @@
+task: "meld two passages"
+tags: nlp-task prose
+doc: "Given two consecutive passages, meld them"
+notes: |-
+  Don't ask me how Codex works better than Davinci, it just does.
+  But <delim> is required instead of \#\#\#.
+prompt-version: 1
+prompt: |+
+  <delim>
+  Broken passage:
+  <delim>
+  According to the BBC, they are unique in
+  that their content, they are unique in that
+  their content isn't directly tethered to the
+  problems of a real individual or identity.
+  <delim>
+  Correctly flowing passage:
+  <delim>
+  According to the BBC, they are unique in
+  that their content isn't directly tethered
+  to the problems of a real individual or
+  identity.
+  <delim>
+  Broken passage:
+  <delim>
+  <first passage>
+  <second passage>
+  <delim>
+  Correctly flowing passage:
+  <delim>
+  <first passage>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+cache: on
+stop-sequences:
+- "<delim>"
+vars:
+- "first passage"
+- "second passage"
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- |-
+    Virtual YouTubers, or VTubers, are online entertainers, who are typically
+    Japanese-speaking YouTubers or live streamers. They use avatars created with
+    programs such as Live2D, portraying characters designed by online artists.[3]
+    VTubers are considered to have great appeal
+- |-
+    VTubers are considered to have great appeal in that they are not bound by
+    physical limitations and many of them engage in activities that are
+    unconstrained by real-world sex and gender.[4] VTubers are associated with
+    Japanese popular culture and aesthetics, such as anime and manga,[4] and moe
+    anthropomorphism with human or non-human traits.[4] Some VTubers are
+    anthropomorphic, non-human characters such as animals.[5]
+filter: on
+completion: off
+insertion: off

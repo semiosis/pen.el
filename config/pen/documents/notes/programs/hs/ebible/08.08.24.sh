@@ -1,0 +1,7 @@
+cd /root/notes;  "ebible" "-m" "ESV" "Deuteronomy 7:9" "#" "<==" "Deuteronomy"
+cd /root/notes;  "ebible" "-m" "ESV" "Eph 2:8" "#" "<==" "Eph"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Ephesians 1:18-20" "#" "<==" "Ephesians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Ephesians 1:17-20" "#" "<==" "Ephesians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Ephesians 1:16-20" "#" "<==" "Ephesians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Ephesians 1:16-21" "#" "<==" "Ephesians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Ephesians 1:16-21" "#" "<==" "Ephesians"

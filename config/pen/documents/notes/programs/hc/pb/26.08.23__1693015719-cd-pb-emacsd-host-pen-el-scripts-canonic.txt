@@ -1,0 +1,7 @@
+cd ; pb /root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl # "<==" zsh
+http://ix.io/4EwX/cl
+#!/usr/bin/env -S sbcl-ql --script
+;; #!sbcl --script
+
+(ql:quickload "external-program" :silent t)
+(ql:quickload "cl-ppcre" :silent t)

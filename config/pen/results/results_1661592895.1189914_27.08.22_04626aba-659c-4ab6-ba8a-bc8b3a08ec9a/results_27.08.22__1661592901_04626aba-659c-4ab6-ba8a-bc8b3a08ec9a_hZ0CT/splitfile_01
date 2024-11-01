@@ -1,0 +1,11 @@
+
+  -- Get the maximum width of each column.
+  let colWidths = maximumBy (compare `on` length) $ map (map (length . fst)) rows
+
+  -- Print the header.
+  print $ concat ["Column", replicate (length colWidths) " "]
+  print $ concatMap (\n -> replicate (colWidths !! n) "-" ++ "-") [0..]
+
+  -- Print each row.
+  mapM_ print . zipWith (" " ++) colWidths $ map fst rows
+EOD

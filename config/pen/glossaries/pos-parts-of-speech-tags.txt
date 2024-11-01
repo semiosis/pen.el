@@ -1,0 +1,344 @@
+https://www.ling.upenn.edu/hist-corpora/annotation/labels.htm
+
+POS
+part of speech
+    https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
+
+PRO
+personal pronoun
+
+PRO
+possessive pronoun
+
+CC
+Coordinating conjunction
+    [POS tag]
+
+DT
+Determiner
+    [POS tag]
+
+ART
+Article
+    https://grammar.yourdictionary.com/parts-of-speech/nouns/what/what-is-a-determiner.html
+
+EX
+Existential there
+    [POS tag]
+
+FW
+Foreign word
+    [POS tag]
+
+IN
+preposition
+subordinating conjunction
+    [POS tag]
+
+JJ
+Adjective
+    [POS tag]
+
+VP
+Verb Phrase
+    [POS tag]
+
+JJR
+Adjective, comparative
+    [POS tag]
+
+JJS
+Adjective, superlative
+    [POS tag]
+
+LS
+List item marker
+    [POS tag]
+
+MD
+Modal
+    [POS tag]
+
+NN
+Noun, singular or mass
+    [POS tag]
+
+NNS
+Noun, plural
+    [POS tag]
+
+PP
+Preposition Phrase
+
+NNP
+Proper noun, singular Phrase
+    [POS tag]
+
+NNPS
+Proper noun, plural
+
+PDT
+Pre determiner
+    [POS tag]
+
+POS
+Possessive ending
+    [POS tag]
+
+PRP
+Personal pronoun Phrase
+    [POS tag]
+
+PRP
+Possessive pronoun Phrase
+    [POS tag]
+
+RB
+Adverb
+    [POS tag]
+
+RBR
+Adverb, comparative
+    [POS tag]
+
+RBS
+Adverb, superlative
+    [POS tag]
+
+RP
+Particle
+    [POS tag]
+
+S
+Simple declarative clause
+    [POS tag]
+
+SBAR
+Clause introduced by a (possibly empty) subordinating conjunction
+    [POS tag]
+
+SBARQ
+Direct question introduced by a wh-word or a wh-phrase.
+    [POS tag]
+
+SINV
+Inverted declarative sentence
+    [POS tag]
+    i.e. one in which the subject follows the
+    tensed verb or modal.
+
+SQ
+Inverted yes/no question
+    [POS tag]
+    Or main clause of a wh-question, following
+    the wh-phrase in SBARQ.
+
+SYM
+Symbol
+    [POS tag]
+
+VBD
+Verb, past tense
+    [POS tag]
+
+VBG
+Verb, gerund or present participle
+    [POS tag]
+
+VBN
+Verb, past participle
+    [POS tag]
+
+VBP
+Verb, non-3rd person singular present
+    [POS tag]
+
+VBZ
+Verb, 3rd person singular present
+    [POS tag]
+
+WDT
+Wh-determiner
+    [POS tag]
+
+WP
+Wh-pronoun
+    [POS tag]
+
+WP
+Possessive wh-pronoun
+    [POS tag]
+
+WRB
+Wh-adverb
+    [POS tag]
+
+CD
+Cardinal number
+    [POS tag]
+
+DT
+Determiner
+    [POS tag]
+
+EX
+Existential there
+    [POS tag]
+
+FW
+Foreign word
+    [POS tag]
+
+JJ
+Adjective
+    [POS tag]
+
+JJR
+    [POS tag]
+    Adjective, comparative
+
+JJS
+    [POS tag]
+    Adjective, superlative
+
+LS
+    [POS tag]
+    List item marker
+
+MD
+    [POS tag]
+    Modal
+
+NN
+    [POS tag]
+    Noun, singular or mass
+
+NNS
+    [POS tag]
+    Noun, plural
+
+NNP
+    [POS tag]
+    Proper noun, singular
+
+NNPS
+    [POS tag]
+    Proper noun, plural
+
+PDT
+    [POS tag]
+Predeterminer
+
+POS
+    [POS tag]
+Possessive ending
+
+PRP
+    [POS tag]
+Personal pronoun
+
+PRP$
+    [POS tag]
+Possessive pronoun
+
+RB
+    [POS tag]
+
+    Adverb
+
+RBR
+    [POS tag]
+    Adverb, comparative
+
+RBS
+    [POS tag]
+    Adverb, superlative
+
+RP
+    [POS tag]
+    Particle
+
+SYM
+    [POS tag]
+    Symbol
+
+TO
+    [POS tag]
+
+    to
+
+UH
+    [POS tag]
+
+    Interjection
+
+VB
+    [POS tag]
+
+    Verb, base form
+
+VBD
+    [POS tag]
+
+    Verb, past tense
+
+VBG
+    [POS tag]
+
+    Verb, gerund or present participle
+
+VBN
+    [POS tag]
+
+    Verb, past participle
+
+VBP
+    [POS tag]
+
+    Verb, non-3rd person singular present
+
+VBZ
+    [POS tag]
+
+    Verb, 3rd person singular present
+
+WDT
+Wh-determiner
+    [POS tag]
+
+
+WP
+Wh-pronoun
+    [POS tag]
+
+
+WP$
+    [POS tag]
+
+    Possessive wh-pronoun
+
+WRB
+    [POS tag]
+
+    Wh-adverb
+
+ADV
+    [#spacy]
+    [POS tag]
+
+PART
+    [#spacy]
+    [POS tag]
+
+VERB
+    [#spacy]
+    [POS tag]
+
+DET
+    [#spacy]
+    [POS tag]
+
+NOUN
+    [#spacy]
+    [POS tag]
+

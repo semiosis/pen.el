@@ -1,0 +1,9 @@
+! CopyWord()
+    if ! search('^[c-w]$', 'c') 
+"delete t
+endif
+"delete t
+
+function! IncrementSearchString()
+
+" Increment numeric part

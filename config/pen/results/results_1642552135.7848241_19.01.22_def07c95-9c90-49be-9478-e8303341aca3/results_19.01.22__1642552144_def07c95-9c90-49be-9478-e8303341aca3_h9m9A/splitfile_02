@@ -1,0 +1,7 @@
+The above code snippet is a namespace declaration.
+
+The first line declares a namespace named 'ruse.util'.
+The second line imports the clojure.repl namespace.
+The third line imports the java.io and java.nio.file packages.
+The fourth line declares that all symbols in the clojure.repl namespace should be imported into the namespace 'ruse.util'.
+The fifth line declares that all symbols in the java.io and java.nio.file packages should

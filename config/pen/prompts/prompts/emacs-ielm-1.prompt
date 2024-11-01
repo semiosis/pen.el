@@ -1,0 +1,13 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+title: emacs ielm
+tags: interpreter
+language: emacs lisp
+prompt: |+
+    *** Welcome to IELM ***  Type (describe-mode) for help.
+    ELISP> <expression>
+user-prompt: "^ELISP> "
+vars:
+- "expression"
+examples:
+- "( + 5 5)"

@@ -1,0 +1,8 @@
+
+EOD
+
+cat draft.text <<EOD
+index.html:
+```
+<h1>Artisanal GPT-3 Prompts by Riley Goodside</h1>
+<p>Do you

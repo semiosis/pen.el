@@ -1,0 +1,57 @@
+* =random(9)=
+#+BEGIN_SRC prolog -n :i babel-prolog :async :results verbatim code
+  A is random(10).
+#+END_SRC
+
+#+RESULTS:
+#+begin_src prolog
+A is random(10).
+1 ?- A = 4.
+#+end_src
+
+* ==:==
+True if expression Expr1 evaluates to a number
+equal to Expr2.
+
+#+BEGIN_SRC prolog -n :i babel-prolog :async :results verbatim code
+  X=4.0, 2*2 =:= X.
+#+END_SRC
+
+#+RESULTS:
+#+begin_src prolog
+X=4.0, 2*2 =:= X.
+1 ?- X = 4.0.
+#+end_src
+
+* =is=
+True when Number is the value to which Expr
+evaluates. Typically, is/2 should be used with
+unbound left operand. If equality is to be
+tested, =:=/2 should be used. For example:
+
+#+BEGIN_SRC prolog -n :i babel-prolog :async :results verbatim code
+  1 is sin(pi/2).
+#+END_SRC
+
+#+RESULTS:
+#+begin_src prolog
+1 is sin(pi/2).
+1 ?- false.
+#+end_src
+
+Fails! sin(pi/2) evaluates to the float 1.0,
+which does not unify with the integer 1.
+
+#+BEGIN_SRC prolog -n :i babel-prolog :async :results verbatim code
+  1 =:= sin(pi/2).
+#+END_SRC
+
+#+RESULTS:
+#+begin_src prolog
+1 =:= sin(pi/2).
+1 ?- true.
+#+end_src
+
+Succeeds as expected.
+
+* =findall=

@@ -1,0 +1,2 @@
+
+- When you run `Pen.el` on a prompt function, it sends the prompt function to the AI and collects its response, and then returns the response to you.

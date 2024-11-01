@@ -1,0 +1,4 @@
+
+
+if number < 0  then putStrLn "number must not be negative" -- relevant message
+else putStrLn (show number)

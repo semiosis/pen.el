@@ -1,0 +1,20 @@
+title: generate an essay outline
+tags: writing prose
+doc: ''
+prompt: |
+  Create an outline for an essay about <1>:
+
+  I: Introduction
+engine: OpenAI Davinci
+temperature: 0.7
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- |2+
+
+
+
+vars:
+- topic
+examples:
+- Walt Disney and his contributions to animation

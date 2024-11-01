@@ -1,0 +1,1664 @@
+HTTP/1.1 200 OK
+Date: Tue, 27 Feb 2024 22:42:52 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache
+access-control-allow-origin: *
+x-pita: 0000
+vary: Accept-Encoding, x-pita
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HuorsrtFLB7E%2BGSBf9yjoNitdlnO07Tyvfp3ShiD8inkQ8D5VasHIokgpkEqV3bC2HVyDNABAbHKkmSNzI1m5DRDAY2mNmTx63OlxcYZGDzeXLm7YpK6xf9cPvq0HFpLbVqcWnFJLceABu6gDyCQ"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 85c3f17f7c3b5f25-SYD
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://experience.tinypass.com" crossorigin>
+    <link rel="preconnect" href="https://media.swncdn.com" crossorigin>
+    <link rel="preconnect" href="https://i.swncdn.com" crossorigin>
+    <link rel="preconnect" href="https://www.lightboxcdn.com" crossorigin>
+        <link rel="preconnect" href="https://ad.doubleclick.net" crossorigin>
+        <link rel="preconnect" href="https://pixel.rubiconproject.com" crossorigin>
+
+    <title>Where Is the “Run the Race” Verse in the Bible?</title>
+    <meta name="description" content="You probably didn&#39;t know there are multiple Bible verses that talk about racing. What does the most famous verse, &quot;run the race set before us,&quot; tell us about following Jesus?" />
+    <meta name="keywords" content="run the race verse" />
+    <meta name="apple-itunes-app" content="app-id=449591910" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="fb:admins" content="696121494" />
+    <meta property="fb:app_id" content="173653495996113" />
+    <meta property="fb:pages" content="55355636529" />
+    
+    
+     
+    <link rel="shortcut icon" type="image/x-icon" href="/areas/crosswalk/resources/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/areas/crosswalk/resources/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/areas/crosswalk/resources/images/favicon-16x16.png">
+     
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/areas/crosswalk/resources/images/android-chrome-192x192.png" sizes="192x192">
+     
+    <link rel="apple-touch-icon" sizes="180x180" href="/areas/crosswalk/resources/images/apple-touch-icon.png">
+    <link rel="mask-icon" href="/areas/crosswalk/resources/images/safari-pinned-tab.svg" color="#ffc40d">
+    
+        <meta name="medium" content="mult" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+
+    <meta property="og:title" content="Where Is the “Run the Race” Verse in the Bible?" />
+    <meta property="og:description" content="You probably didn&#39;t know there are multiple Bible verses that talk about racing. What does the most famous verse, &quot;run the race set before us,&quot; tell us about following Jesus?" />
+    <meta property="og:image" content="https://media.swncdn.com/via/images/2022/09/08/27269-gettyimages-150370213_source_file.jpg" />
+    <meta property="og:url" content="https://www.crosswalk.com/faith/bible-study/where-run-the-race-verse-in-the-bible.html" />
+    <meta property="og:site_name" content="Crosswalk.com" />
+
+    <link rel="image_src" href="https://media.swncdn.com/via/images/2022/09/08/27269-gettyimages-150370213_source_file.jpg" />
+
+
+    
+        
+        <link rel="preload" as="image" type="image/webp" href="https://i.swncdn.com/media/400w/via/images/2022/09/08/27269-gettyimages-150370213_source_file.webp" media="(max-width: 767px)">
+        <link rel="preload" as="image" type="image/webp" href="https://i.swncdn.com/media/800w/via/images/2022/09/08/27269-gettyimages-150370213_source_file.webp" media="(min-width: 768px)">
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Article",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://www.crosswalk.com/faith/bible-study/where-run-the-race-verse-in-the-bible.html"
+},
+"headline": "Where Is the “Run the Race” Verse in the Bible?",
+"articleSection": "Bible Study",
+"image": {
+"@type": "ImageObject",
+"url": "https://media.swncdn.com/via/images/2022/09/08/27269-gettyimages-150370213_source_file.jpg"
+},
+"dateCreated": "2022-09-08T10:29:06.9930000-04:00",
+"datePublished": "2022-09-08T10:45:00.0000000-04:00",
+"dateModified": "2022-09-08T11:35:35.8830000-04:00",
+"author": {
+"@type": "Person",
+"name": "Sylvia Schroeder",
+"url": "https://www.crosswalk.com/author/sylvia-schroeder/"
+,"description": "Sylvia Schroeder loves connecting God’s Word with real life and writing about it. She is a contributing writer for a variety of magazines and online sites. Sylvia is co-author of a devotional book and her writing is included in several book compilations. Mom to four, grandma to 14, and wife to her one and only love, Sylvia enjoys writing about all of them.&nbsp;Her love for pasta and all things Italian stems from years of ministry abroad. She’d love to tell you about it over a steaming cup of cappuccino. Connect with Sylvia on her blog, When the House is Quiet, her Facebook page, or&nbsp;Twitter."
+},
+"publisher": {
+"@type": "Organization",
+"name": "Salem Web Network",
+"url": "https://www.salemwebnetwork.com/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://salemnet.vo.llnwd.net/media/crosswalk/resource/areas/crosswalk/resources/images/logos/SWN_logo_blue_text.png",
+"width": 167,
+"height": 60
+}
+},
+"description": "You probably didn't know there are multiple Bible verses that talk about racing. What does the most famous verse, \"run the race set before us,\" tell us about following Jesus?",
+"articleBody": "Lined up in our courses, we prepared to run the relay. Tension mounted. Nerves tightened. While grasping the baton from the runner behind me, I took my eyes off my course, turned to look behind, and stepped into another’s lane. Disqualified from a race long ago, its lesson remains with me even today.&nbsp;Scripture teaches us about running another kind of race. “Run the race” verses inspire us to compare life’s hurdles and difficulties to an athlete competing for victory. Even those who’ve never physically participated in a race understand its intensity. “Run the race” verses put us like runners on the track. Its images bring the reality of life’s intense run toward a victorious finish. &nbsp;What Bible Verse Says “Run the Race”?One of the best-known “run the race” verses is found in Hebrews 12:1-2.&nbsp;“Therefore we also, since we are surrounded by so great a cloud of witnesses, let us lay aside every weight, and the sin which so easily ensnares us, and let us run with endurance the race that is set before us,&nbsp;looking unto Jesus, the author and finisher of our faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God” (Hebrews 12:1-2 NKJV).However, Hebrews 12:1 isn’t the only “run the race” verse in Scripture. Although the author of Hebrews is uncertain, Paul seems to love the analogy. In 1 Corinthians 9:24, Paul refers to only one runner in a race getting the prize. In Philippians 3:13-14, Paul presses on toward the prize. In Galatians 5:7, Paul chastises believers who once ran well but no longer follow the truth. In 2 Timothy 4:7, an older Paul, nearing his personal race’s end, talks about finishing it.Our English word “agony” derives from the Greek agon, translated in Hebrews 12 as “race.” A race, in its full sense, embodies conflict, fight, and contention. The same root word describes various struggles throughout many of Paul’s books.The author of Hebrews makes “run the race” personal when he uses it. He reaches out to each of us in a particular way, compelling us to view ourselves as runners. While for each of us, life’s course unwinds with its difficulties, distractions, joys, and sorrows. Despite our individual complex stories, this Biblical metaphor proves to be one to which we all relate. “Run the race” verses encourage us to recognize there is still more ahead, and we must not stop. &nbsp;How Does the Cloud of Witnesses Help Us Run the Race?Hebrews 12 gets our attention with “Therefore, since we are surrounded by so great a cloud of witnesses….” The introductory word, “therefore,” begs us to go back and see what it is therefore. What is this “great cloud of witnesses” to which the author refers?The previous chapter, Hebrews 11, often referred to as the “faith chapter,” recounts the names of those who had already run the race and finished well. We read lists of Biblical characters who held to their trust in God and His promises despite difficulties. These faithful souls did not give up nor quit, regardless of whatever agony came their way. They completed their race—for some, at the cost of martyrdom.The author likens those godly examples and testimonies to a faithful cloud of witnesses. We find ourselves surrounded by their stories. The knowledge of others faithful in their race, trusting God and His promises to the finish, encourages us.What Kind of Race Was the Author of Hebrews Thinking Of?The sports metaphor shows the prominent place athletic meets had in ancient culture.Greek and Roman cultures enjoyed spectator games. Large amphitheaters with their graduated stone-hewn benches allowed spectators a clear view of the exhibition below. “Run the race” verses bring to our senses the sights and sounds of a deafening throng circling the participants. Large Olympic-style arenas drew vast crowds.Hebrews’ description brings those images to mind. Faithful runners of Hebrews 11 are our examples to follow. Through the Word of God, we are privileged to watch and observe their lives, so we also run well.Hebrews’ race urges endurance. We run a spiritual marathon, not a sprint. We need perseverance. Called out from the Levitical system of heavy rules and regulations, the Hebrew believer is asked to shed weights, leave sin and run in the freedom of Christ. He bought and paid for the forgiveness of sin and accomplished our salvation.&nbsp;Impediments which Hebrews 12 refers to need not deter nor slow us down.How Do We Run the Race?Hebrews 11 and Hebrews 12 refer to the runners as people of faith, those whose lives are heading toward their Master, Jesus. “Run the race” verses teach us how to run. They instruct us to reach a faithful end.&nbsp;1. The race begins with salvation.&nbsp;“For by grace you have been saved through faith, and that not of yourselves; it is the gift of God,&nbsp;not of&nbsp;works, lest anyone should&nbsp;boast” (Eph 2:8-9).As depicted in the “run the race” verses, we run by God’s grace alone. This gift of salvation lifts the burden of personal merit. We are saved through Christ alone, the perfect sacrifice for our sins. His work through death and resurrection accomplished what our own struggle to gain eternal life cannot.2. We must run without encumbrances.“Let us lay aside every weight, and the sin which so easily ensnares us…”&nbsp;(Hebrews 12:1, emphasis added).Scripture describes sin as missing the mark. Sins, needless burdens, and distractions weigh down a runner and make us stumble. They make endurance difficult. “Lay aside” means to put away. Don’t get tangled up in it. Whatever hinders us in our spiritual walk should be shed so we can run light.Colossians 3:8-9 lists what we should put to death. The list includes sexual immorality, impurity, idolatry, lies, filthy language, anger, wrath, malice, and slander. All these will veer us off track and cause us to take our eyes off the goal.3. Run with endurance.Endurance, translated from the original Greek word, hypomone, means patience, steadfastness, and constancy. Used in the New Testament, it characterizes a person who will not swerve from deliberate purpose and remains loyal to faith even through great trials and suffering.“Run in such a way as to obtain the prize,” 1 Corinthians 9:24-25 instructs. Paul encourages self-control and steady forward progress.Weariness, comparison, testing, and even lethargy tempt us to give up, quit, and end the agony. God’s Word tells us to plod forward with endurance despite whatever comes our way.4. Look to Jesus.Hebrews 12:2 finishes the race analogy with focus.“… looking unto Jesus, the author and finisher of our faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God.”God’s Sovereignty lays out each course. Jesus ran His race on earth without sin. He completed the race as our perfect example, and now He sits at the right hand of the throne of God.If we want to finish well, we must keep our eyes on Jesus.As runners in a race, we sometimes accumulate burdens we shouldn’t carry. They eat away at endurance, and our focus shifts.&nbsp;Sometimes trials bring uncertainty and doubt.&nbsp;Our attention fixes on circumstances rather than the One Person able to get us through adversity. Sometimes, we even step over the line of His will. We miss the mark. We sin.The great list of faith runners also failed at times. Jesus is a forgiving and loving Friend.Like runners in a race, we are caught up in a contest that, at times, is pure agony. The “run the race” verses remind us that Jesus waits at the finish. We run with our focus on Him.Like the painful race I ran long ago, God has put me on another course designed especially by His Sovereignty. As I learn to keep my eyes on the forward goal, my vision clears.Spiritual growth continues as we learn to disengage from temptations and detangle ourselves from things that hinder our race and take us off track.May we run with endurance. May we stay the course and remember the witness of the faithful who have finished well, “looking unto Jesus, the author and finisher of our faith.”Photo Credit:&nbsp;Getty Images/AdrianHillmanSylvia Schroeder loves connecting God’s Word with real life and writing about it. She is a contributing writer for a variety of magazines and online sites. Sylvia is co-author of a devotional book and her writing is included in several book compilations. Mom to four, grandma to 14, and wife to her one and only love, Sylvia enjoys writing about all of them.&nbsp;Her love for pasta and all things Italian stems from years of ministry abroad. She’d love to tell you about it over a steaming cup of cappuccino. Connect with Sylvia on her blog, When the House is Quiet, her Facebook page, or&nbsp;Twitter.This article is part of our larger resource library of popular Bible verse phrases and quotes. We want to provide easy to read articles that answer your questions about the meaning, origin, and history of specific verses within Scripture's context. It is our hope that these will help you better understand the meaning and purpose of God's Word in relation to your life today.\\\"Be Still and Know that I Am God\\\" \\\"Pray Without Ceasing\\\" \\\"Fearfully and Wonderfully Made\\\"\\\"All Things Work Together for Good\\\" \\\"Do Not Fear\\\" "
+}
+</script>
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@crosswalk_com">
+    <meta name="twitter:title" content="Where Is the “Run the Race” Verse in the Bible?">
+    <meta name="twitter:description" content="&lt;p&gt;You probably didn&#39;t know there are multiple Bible verses that talk about racing. What does the most famous verse, &quot;run the race set before us,&quot; tell us about following Jesus?&lt;/p&gt;">
+    <meta name="twitter:image" content="https://media.swncdn.com/via/images/2022/09/08/27269-gettyimages-150370213_source_file.jpg">
+
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": 
+        [{ "@type": "ListItem", "position": 1, "name": "Faith", "item": "https://www.crosswalk.com/faith/" }, 
+{ "@type": "ListItem", "position": 2, "name": "Bible Study", "item": "https://www.crosswalk.com/faith/bible-study/" }, 
+{ "@type": "ListItem", "position": 3, "name": "Where Is the “Run the Race” Verse in the Bible?" }]        
+    }
+    </script>
+
+
+    <meta name="robots" content="max-image-preview:large">
+
+                <link rel="canonical" href="https://www.crosswalk.com/faith/bible-study/where-run-the-race-verse-in-the-bible.html" />
+    <link href="/bundles/bootstrap-css/" rel="preload" as="style" />
+    <link href="/bundles/bootstrap-css/" rel="stylesheet">
+
+    <link href="/bundles/crosswalk-css/?v=f9RAnMkmHlIx8X-36t-29HSF5YkmBNAj_DsCW4vosGc1" rel="preload" as="style" >
+
+    <link href="/bundles/crosswalk-css/?v=f9RAnMkmHlIx8X-36t-29HSF5YkmBNAj_DsCW4vosGc1" rel="stylesheet" media="all">
+
+
+    
+
+    
+    <script> window.swn_pgi = { af: false, sl: 'none' } </script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        var showAbout = false;
+
+        window.q = [];
+        window.$ = function (f) {
+            q.push(f)
+        }
+
+        var allpass_containerRequests = [], allpass_publicationId = 33072, allpass_parentPublicationId = 32964;
+        allpass_domain = "www.crosswalk.com";
+        var domain = "www.crosswalk.com";
+    </script>
+
+    
+    <script async type="text/javascript">
+        function zync_call() {
+            var z = document.createElement("script");
+            var zmpID = "salemwebnetwork";
+            var custom1 = "CW-11865846";
+            var custom2 = "crosswalk";
+            var custom3 = "article";
+
+            var z_src = "https://live.rezync.com/sync?c=16b6410431b6374e780104abb0443ca8&p=61ddc6aac2811775cc68dc2227e8a213&k=salemwebnetwork-pixel-7570&zmpID=" + zmpID + "&custom1=" + custom1 + "&custom2=" + custom2 + "&custom3=" + custom3;
+            z.setAttribute("src", z_src);
+            document.body.appendChild(z);
+        }
+
+        if (['complete', 'interactive'].indexOf(document.readyState) >= 0) {
+            zync_call();
+        } else {
+            window.addEventListener("DOMContentLoaded", function () {
+                zync_call();
+            });
+        }
+    </script>
+
+    <div id="MasterPageHeader"><h2 class="slogan">Bible Study Resources - Tips, Online Bible Search, Devotions</h2></div>
+
+    <!-- Emergency Alert Bar -->    
+    <style>
+        .alert-bar2 {            
+            background-color: #991a00;
+            background-repeat: no-repeat;
+            background-position: center;
+            /*height: 60px;*/
+        }
+
+        .no-webp .alert-bar2 {
+            background-image: url(https://media.swncdn.com/ads/banners/2017/hurricane-alert-bar-background.jpg);
+        }
+
+        .webp .alert-bar2 {
+            background-image: url(https://media.swncdn.com/ads/banners/2017/hurricane-alert-bar-background.webp);
+        }
+
+        .alert-bar2 a {
+            display: block;
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        .alert-bar2 span {
+            color: #fff;
+            font-weight: 400;
+        }
+
+            .alert-bar2 span.urgent {
+                font-weight: 800;
+                color: #fccb03;
+            }
+
+        @media (max-width:767px) {            
+            .alert-bar2 a {
+                padding: 10px 0;
+            }
+        }
+    </style>
+            <style>
+                .alert-bar2 a {
+                    padding: 20px 0;
+                }
+
+                @media (max-width:767px) {
+                    .alert-bar2 {
+                        margin-top: 50px;
+                    }
+                    .alert-bar2 a {
+                        padding: 10px 0;
+                        font-size: 16px;
+                    }
+                }
+            </style>
+    <div class="alert-bar2 text-center">
+        <a target="_blank" rel="noopener" href="https://www.samaritanspurse.org/our-ministry/ukraine-doc/?utm_source=Salem&amp;utm_medium=Display&amp;utm_campaign=m_YSUD-D24V&amp;utm_content=Ukraine-Alert-Bar" title="Samaritan&#39;s Purse Shares Films from the Frontlines of Ukraine" data-google-interstitial="false">
+            <span>Samaritan&#39;s Purse Shares Films from the Frontlines of Ukraine</span>
+        </a>
+    </div>
+    <!-- End: Emergency Alert Bar -->
+
+
+    
+<div id="ArticleTitle" class="top-bar-container hidden-xs" style="display: none;">
+    <div class="headerDiv container-fluid">
+        <div class="col-md-12">
+            <div class="row">
+
+                <div id="BackToTop">
+                    <a href="javascript: void(0)" title="Back to Top">
+
+
+        <svg class="angle-double-right" style="width:40px;fill:#e6e6e6;" viewBox="0 0 2048 2048"><path d="M1284 641q0 27 -18 45l-362 362l-91 91q-18 18 -45 18t-45 -18l-91 -91l-362 -362q-18 -18 -18 -45t18 -45l91 -91q18 -18 45 -18t45 18l189 189v-502q0 -26 19 -45t45 -19h128q26 0 45 19t19 45v502l189 -189q19 -19 45 -19t45 19l91 91q18 18 18 45zM1536 640 q0 -209 -103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103t385.5 -103t279.5 -279.5t103 -385.5z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+                    </a>
+                </div>
+
+                <div class="articleOption">
+                    <a id="headerShowMenu" class="menu" href="#">
+                        <div class="articleBars">
+
+
+        <svg class="bars" style="width:35px;fill:#ccc;" viewBox="0 0 2048 2048"><path d="M1536 192v-128q0 -26 -19 -45t-45 -19h-1408q-26 0 -45 19t-19 45v128q0 26 19 45t45 19h1408q26 0 45 -19t19 -45zM1536 704v-128q0 -26 -19 -45t-45 -19h-1408q-26 0 -45 19t-19 45v128q0 26 19 45t45 19h1408q26 0 45 -19t19 -45zM1536 1216v-128q0 -26 -19 -45 t-45 -19h-1408q-26 0 -45 19t-19 45v128q0 26 19 45t45 19h1408q26 0 45 -19t19 -45z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+                        </div>
+                        <div class="articleTimes" style="display:none;">
+
+
+        <svg class="times" style="width:30px;fill:#ccc;" viewBox="0 0 1664 2048"><path d="M1298 214q0 -40 -28 -68l-136 -136q-28 -28 -68 -28t-68 28l-294 294l-294 -294q-28 -28 -68 -28t-68 28l-136 136q-28 28 -28 68t28 68l294 294l-294 294q-28 28 -28 68t28 68l136 136q28 28 68 28t68 -28l294 -294l294 294q28 28 68 28t68 -28l136 -136q28 -28 28 -68 t-28 -68l-294 -294l294 -294q28 -28 28 -68z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+                        </div>
+                    </a>
+                    <a href="/">
+                        <img class="logoHeader" alt="Crosswalk.com" src="https://media.swncdn.com/crosswalk/resource/areas/crosswalk/resources/images/logos/CW-Icon.gif" width="30" height="30" />
+                    </a>
+                </div>
+
+                <div class="articleMenu hide">
+
+
+<ul class="navbar-nav nav nav-article clear">
+    <li class="nav-item visible-xs"><a class="main gray nav-link" data-toggle="collapse" id="browseTopics" role="button" aria-expanded="false" aria-controls="navbarNavDropdown" href="#navbarNavDropdown">BROWSE TOPICS<span class="visible-xs">X</span></a></li>
+
+        <li class="nav-item visible-xs clear">
+<div class="social-container">
+    <ul class="inline social-buttons plus-buttons">
+        <li class="join-plus col-xs-6">
+            <a class="btn-join" href="/subscribe" title="Join Plus" data-google-interstitial="false">Join <span>Plus</span></a>
+        </li>
+        <li class="plus-login col-xs-6">
+            <a class="btn-login" title="Plus Login" data-google-interstitial="false">Plus <span>Login</span></a>
+        </li>
+    </ul>
+</div>
+        </li>
+    <li class="nav-item visible-xs clear">
+        <a class="main nav-link plus" id="plusOption" href="/plus/">Plus</a>
+    </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/devotionals/">Devotionals</a>
+            </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/faith/">Faith</a>
+            </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/family/">Family</a>
+            </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/church/">Church</a>
+            </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/culture/">News &amp; Culture</a>
+            </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/more/">More</a>
+            </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/newsletters/">Newsletters</a>
+            </li>
+            <li class="nav-item hidden-xs">
+                <a class="main nav-link plus" href="https://www.crosswalk.com/plus/">Plus</a>
+            </li>
+    </ul>
+                </div>
+
+                <div class="articleInfo">
+                    <span class="title">Where Is the “Run the Race” Verse in the Bible?</span>
+
+
+<div style="margin-top: -5px;" class="shareAndPrintBar group clear">
+    <ul class="shares group">
+            <li>
+                
+                <a class="resp-sharing-button__link popup" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Facebook" onclick="trackShare()">
+                    <div data-share-url="https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" /></svg>
+                        </div>Share
+                    </div>
+                </a>
+            </li>
+                    <li>
+                
+                <a class="resp-sharing-button__link popup" href="https://twitter.com/intent/tweet/?text=%26lt%3bp%26gt%3bYou+probably+didn%26%2339%3bt+know+there+are+multiple+Bible+verses+that+talk+about+racing.+What+does+the+most+famous+verse%2c+%26quot%3brun+the+race+set+before+us%2c%26quot%3b+tell+us+about+following+Jesus%3f%26lt%3b%2fp%26gt%3b.&amp;url=https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Twitter" onclick="trackShare()">
+                    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" /></svg>
+                        </div><span class="hidden-xs">Tweet</span>
+                    </div>
+                </a>
+            </li>
+
+                    <li>
+                
+                <a class="resp-sharing-button__link" href="mailto:?subject=Where%20Is%20the%20%e2%80%9cRun%20the%20Race%e2%80%9d%20Verse%20in%20the%20Bible?&amp;body=https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" target="_self" aria-label="Share by E-Mail">
+                    <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--large">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" /></svg>
+                        </div><span class="hidden-xs">E-Mail</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="hidden-xs resp-sharing-button__link">
+                <a class="printLink" target="_blank" rel="noopener" href="https://www.crosswalk.com/print/11865846/">
+
+
+        <svg class="print" style="width:24px;fill:#999;" viewBox="0 0 1920 2048"><path d="M384 0h896v256h-896v-256zM384 640h896v384h-160q-40 0 -68 28t-28 68v160h-640v-640zM1536 576q0 26 -19 45t-45 19t-45 -19t-19 -45t19 -45t45 -19t45 19t19 45zM1664 576v-416q0 -13 -9.5 -22.5t-22.5 -9.5h-224v-160q0 -40 -28 -68t-68 -28h-960q-40 0 -68 28t-28 68 v160h-224q-13 0 -22.5 9.5t-9.5 22.5v416q0 79 56.5 135.5t135.5 56.5h64v544q0 40 28 68t68 28h672q40 0 88 -20t76 -48l152 -152q28 -28 48 -76t20 -88v-256h64q79 0 135.5 -56.5t56.5 -135.5z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+                </a>
+            </li>
+
+    </ul>
+</div>
+
+<script>
+    function trackShare() {
+        salem.zeta.trackShare('CW-11865846', 'article', 'https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html'); 
+    }
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="contentWrapper">
+        <header class="stickyMobile">
+            <div class="container-fluid">
+                <div class="logo-container hidden-xs col-sm-5 col-md-5 pull-left">
+                    <a href="/">
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/380w/crosswalk/resource/areas/crosswalk/resources/images/logo_icon.webp>
+                        <img  class="img-responsive lazyload thumbnail" data-src="https://i.swncdn.com/media/380w/crosswalk/resource/areas/crosswalk/resources/images/logo_icon.png" alt="Crosswalk.com"  width=380 height=52 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+                    </a>
+                </div>
+
+
+<div class="hidden-xs col-sm-7 col-md-7 pull-right">
+    <div class="row">
+        <div class="col-sm-7 col-md-8 swn-plus-top-banner"></div>
+        <div class="col-sm-5 col-md-4">
+<div class="social-container">
+    <ul class="inline social-buttons plus-buttons">
+        <li class="join-plus ">
+            <a class="btn-join" href="/subscribe" title="Join Plus" data-google-interstitial="false">Join <span>Plus</span></a>
+        </li>
+        <li class="plus-login ">
+            <a class="btn-login" title="Plus Login" data-google-interstitial="false">Plus <span>Login</span></a>
+        </li>
+                    <li class="btn-search ">
+                <a class="search searchLink sharer" href="javascript:void(0);" title="Search">&nbsp;</a>
+            </li>
+    </ul>
+
+        <div class="searchPopover">
+            <div class="popover fade left in" style="display: none;">
+                <div class="arrow"></div>
+                <div class="popover-content">
+                    <form id="searchPopoverForm" class="searchPopoverForm" method="get" action="/search/">
+                        <input type="text" name="q" id="q" placeholder="Search" />
+                        <a id="searchSubmit" onclick="if($('#q').val() != ''){ $('#searchPopoverForm').submit(); return; } return false;" href="#">&nbsp;</a>
+                    </form>
+                </div>
+            </div>
+        </div>        
+</div>
+        </div>
+    </div>
+</div>
+
+<div class="clear">
+    <nav class="navbar">
+        
+        <div class="visible-xs navbar-header">
+            <div class="col-xs-11 container-fluid noPadding">
+                <a class="navbar-brand col-xs-6 noPadding" href="/">
+
+            <picture>
+                <source type="image/webp" srcset=https://i.swncdn.com/media/200w/crosswalk/resource/areas/crosswalk/resources/images/logo_icon.webp>
+                        <img  class="img-responsive " src="https://i.swncdn.com/media/200w/crosswalk/resource/areas/crosswalk/resources/images/logo_icon.png" alt="Crosswalk.com"  width=200 height=27 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+                    
+                </a>
+                <a class="btn-plus nav-plus col-xs-5 text-right" title="Plus" href="/subscribe">
+
+            <picture>
+                        <img  class="img-responsive " src="https://media.swncdn.com/crosswalk/resource/areas/crosswalk/resources/images/plus/plus-mobile.gif" alt="Plus"    onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+                </a>                
+            </div>
+            <div class="col-xs-1 noPadding">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>            
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+<ul class="navbar-nav nav nav-tabs clear">
+    <li class="nav-item visible-xs"><a class="main gray nav-link" data-toggle="collapse" id="browseTopics" role="button" aria-expanded="false" aria-controls="navbarNavDropdown" href="#navbarNavDropdown">BROWSE TOPICS<span class="visible-xs">X</span></a></li>
+
+        <li class="nav-item visible-xs clear">
+<div class="social-container">
+    <ul class="inline social-buttons plus-buttons">
+        <li class="join-plus col-xs-6">
+            <a class="btn-join" href="/subscribe" title="Join Plus" data-google-interstitial="false">Join <span>Plus</span></a>
+        </li>
+        <li class="plus-login col-xs-6">
+            <a class="btn-login" title="Plus Login" data-google-interstitial="false">Plus <span>Login</span></a>
+        </li>
+    </ul>
+</div>
+        </li>
+    <li class="nav-item visible-xs clear">
+        <a class="main nav-link plus" id="plusOption" href="/plus/">Plus</a>
+    </li>
+            <li class="nav-item dropdown">
+                <a class="main hidden-xs" href="https://www.crosswalk.com/devotionals/">Devotionals</a>
+                <a class="main visible-xs nav-link dropdown-toggle" href="https://www.crosswalk.com/devotionals/" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Devotionals<span>></span>
+                </a>
+                <ul class="devotionals dropdown-menu " aria-labelledby="navbarDropdownMenuLink1">
+                    <li class="visible-xs"><a class="dropdown-item" id="mainMenu" href="#" role="button"><span class="left"><<</span>&nbsp;MAIN MENU<span>X</span></a></li>
+                    <li class="visible-xs"><a class="dropdown-item gray" href="https://www.crosswalk.com/devotionals/">Devotionals</a></li>
+                                                <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/easter-devotionals/">Lent/Easter Devotional</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/cw-plus-video-devo/">CW Video Devo (for PLUS members)</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/your-daily-prayer/">Your Daily Prayer</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/crosswalk-devo/">The Crosswalk Devotional</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/your-daily-bible-verse/">Your Daily Bible Verse</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/ibelieve-truth-a-devotional-for-women/">iBelieve Truth Women&#39;s Devotional</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/crosswalk-couples-devotional/">Crosswalk Couples</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/encouragement/">Encouragement for Today</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/first15-devotional/">First15</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/devotionals/">See All Devotionals</span>
+                            </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="main hidden-xs" href="https://www.crosswalk.com/faith/">Faith</a>
+                <a class="main visible-xs nav-link dropdown-toggle" href="https://www.crosswalk.com/faith/" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Faith<span>></span>
+                </a>
+                <ul class="faith dropdown-menu " aria-labelledby="navbarDropdownMenuLink2">
+                    <li class="visible-xs"><a class="dropdown-item" id="mainMenu" href="#" role="button"><span class="left"><<</span>&nbsp;MAIN MENU<span>X</span></a></li>
+                    <li class="visible-xs"><a class="dropdown-item gray" href="https://www.crosswalk.com/faith/">Faith</a></li>
+                                                <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/faith/spiritual-life/">Spiritual Life</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/faith/bible-study/">Bible Study</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/faith/prayer/">Prayer</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/faith/women/">Women</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/faith/men/">Men</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/faith/seniors/">Seniors</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/faith/spiritual-life/inspiring-quotes/">Quotes</span>
+                            </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="main hidden-xs" href="https://www.crosswalk.com/family/">Family</a>
+                <a class="main visible-xs nav-link dropdown-toggle" href="https://www.crosswalk.com/family/" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Family<span>></span>
+                </a>
+                <ul class="family dropdown-menu " aria-labelledby="navbarDropdownMenuLink3">
+                    <li class="visible-xs"><a class="dropdown-item" id="mainMenu" href="#" role="button"><span class="left"><<</span>&nbsp;MAIN MENU<span>X</span></a></li>
+                    <li class="visible-xs"><a class="dropdown-item gray" href="https://www.crosswalk.com/family/">Family</a></li>
+                                                <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/marriage/">Marriage</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/marriage/divorce-and-remarriage/">Divorce and Remarriage</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/singles/">Singles</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/parenting/">Parenting</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/parenting/grandparenting/">Grandparenting</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/homeschool/">Homeschool</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/career/">Career</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/family/finances/">Finances</span>
+                            </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="main hidden-xs" href="https://www.crosswalk.com/church/">Church</a>
+                <a class="main visible-xs nav-link dropdown-toggle" href="https://www.crosswalk.com/church/" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Church<span>></span>
+                </a>
+                <ul class="church dropdown-menu " aria-labelledby="navbarDropdownMenuLink4">
+                    <li class="visible-xs"><a class="dropdown-item" id="mainMenu" href="#" role="button"><span class="left"><<</span>&nbsp;MAIN MENU<span>X</span></a></li>
+                    <li class="visible-xs"><a class="dropdown-item gray" href="https://www.crosswalk.com/church/">Church</a></li>
+                                                <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/church/pastors-or-leadership/">Pastors / Leadership</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/church/pastors-or-leadership/ask-roger/">Ask Roger</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/church/worship/">Worship</span>
+                            </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="main hidden-xs" href="https://www.crosswalk.com/culture/">News &amp; Culture</a>
+                <a class="main visible-xs nav-link dropdown-toggle" href="https://www.crosswalk.com/culture/" id="navbarDropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    News &amp; Culture<span>></span>
+                </a>
+                <ul class="news &amp; culture dropdown-menu " aria-labelledby="navbarDropdownMenuLink5">
+                    <li class="visible-xs"><a class="dropdown-item" id="mainMenu" href="#" role="button"><span class="left"><<</span>&nbsp;MAIN MENU<span>X</span></a></li>
+                    <li class="visible-xs"><a class="dropdown-item gray" href="https://www.crosswalk.com/culture/">News &amp; Culture</a></li>
+                                                <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/headlines/">Headlines</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/culture/features/">Movies</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/culture/music-video/">Music Videos</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/podcasts/">Podcasts</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/culture/television/">Television</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/culture/books/">Books</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/culture/music/">Christian Music</span>
+                            </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="main hidden-xs" href="https://www.crosswalk.com/more/">More</a>
+                <a class="main visible-xs nav-link dropdown-toggle" href="https://www.crosswalk.com/more/" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More<span>></span>
+                </a>
+                <ul class="more dropdown-menu " aria-labelledby="navbarDropdownMenuLink6">
+                    <li class="visible-xs"><a class="dropdown-item" id="mainMenu" href="#" role="button"><span class="left"><<</span>&nbsp;MAIN MENU<span>X</span></a></li>
+                    <li class="visible-xs"><a class="dropdown-item gray" href="https://www.crosswalk.com/more/">More</a></li>
+                                                <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/special-coverage/">Holidays &amp; Special Coverage</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/video/">Video</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/blogs/">Blogs</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/inspirations/">Inspirations</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/ecards/">eCards</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/special-coverage/college-higher-education/">Christian Colleges</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/write-for-us.html">Write for Us</span>
+                            </li>
+                            <li>
+                                <span class="navRelLink" rel="https://www.crosswalk.com/home-page/about-us.html">About Us</span>
+                            </li>
+                </ul>
+            </li>
+            <li class="nav-item ">
+                <a class="main nav-link " href="https://www.crosswalk.com/newsletters/">Newsletters</a>
+            </li>
+            <li class="nav-item hidden-xs">
+                <a class="main nav-link plus" href="https://www.crosswalk.com/plus/">Plus</a>
+            </li>
+    </ul>
+        </div>
+    </nav>
+</div>
+            </div>
+        </header>
+
+        <div class="">
+                <div class="hidden-xs container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="hidden-sm col-md-2">
+    <div class="main-ad">
+        <a href="https://www.lifeaudio.com/thinking-christian-clear-theology-for-a-confusing-world/how-can-the-christian-life-be-enriched-by-lament-a-conversation-with-dr-bryan-babcock-pt-1">
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/200w/crossbridge/crosswalk/links/Lament.webp>
+                        <img  class=" lazyload " data-src="https://i.swncdn.com/media/200w/crossbridge/crosswalk/links/Lament.png" alt="Lament"  width=200 height=90 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+            
+        </a>        
+    </div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-md-10 text-right ad advertisement-728x90">
+                                <div id="desktop_header_728x90-1"></div>
+                                <div id="tablet_header_728x90-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs container-fluid"></div>
+
+                <div class="visible-xs marginBottom">
+                    <div class="col-md-12 text-center ad">
+                        <div id="mobile_header_320x50-1" class="gpt-ad-small"></div>
+                    </div>
+                </div>
+
+
+            <div style="margin-top: 5px;" class="container-fluid">
+                <div class="row">
+
+
+                    <div class="mainContent col-xs-12 col-sm-8 col-md-8">
+                        
+
+
+
+
+<div id="articlePage" class="container-fluid">
+
+    <article class="row">
+        <div id="content" class="col-md-12 group articleContent">
+            <h1 class="normal-case Oswald marginBottom">Where Is the “Run the Race” Verse in the Bible?</h1>
+
+            <ul class="articleDescription marginBottom">
+                <li class="column col-xs-9 col-md-9">
+                                            <span class="name"><a class="author-anchor" href="https://www.crosswalk.com/author/sylvia-schroeder/">Sylvia Schroeder</a></span>
+                    <span class="description">Contributing Writer</span>
+                </li>
+                <li class="column col-xs-3 col-md-3">
+                    <span class="year">Updated</span>
+                    <span class="name">Sep 08, 2022</span>
+                </li>
+            </ul>
+
+            <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset=https://i.swncdn.com/media/400w/via/images/2022/09/08/27269-gettyimages-150370213_source_file.webp>
+                    <source type="image/jpeg" media="(max-width: 767px)" srcset=https://i.swncdn.com/media/400w/via/images/2022/09/08/27269-gettyimages-150370213_source_file.jpg>
+                <source type="image/webp" srcset=https://i.swncdn.com/media/800w/via/images/2022/09/08/27269-gettyimages-150370213_source_file.webp>
+                        <img  class="img-responsive " src="https://i.swncdn.com/media/800w/via/images/2022/09/08/27269-gettyimages-150370213_source_file.jpg" alt="Where Is the “Run the Race” Verse in the Bible?"  width=800 height=418 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+                <div class="clear marginBottom"></div>
+
+
+            <div class="row">
+                <div class="articleContentBody col-xs-12 col-sm-12 col-md-12">
+
+
+                    <p>Lined up in our courses, we prepared to run the relay. Tension mounted. Nerves tightened. While grasping the baton from the runner behind me, I took my eyes off my course, turned to look behind, and stepped into another’s lane. Disqualified from a race long ago, its lesson remains with me even today.&nbsp;</p><p>Scripture teaches us about running another kind of race. “Run the race” verses inspire us to compare life’s hurdles and difficulties to an athlete competing for victory. Even those who’ve never physically participated in a race understand its intensity. “Run the race” verses put us like runners on the track. Its images bring the reality of life’s intense run toward a victorious finish. &nbsp;</p><h2>What Bible Verse Says “Run the Race”?</h2><p>One of the best-known “run the race” verses is found in <a href="https://www.biblestudytools.com/hebrews/passage/?q=hebrews+12:1-2" rel="noopener noreferrer" target="_blank">Hebrews 12:1-2</a>.&nbsp;</p><blockquote><p>“Therefore we also, since we are surrounded by so great a cloud of witnesses, let us lay aside every weight, and the sin which so easily ensnares <em>us,</em> and let us run with endurance the race that is set before us,<strong><sup>&nbsp;</sup></strong>looking unto Jesus, the author and finisher of <em>our</em> faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God” (<a href="https://www.biblestudytools.com/hebrews/passage/?q=hebrews+12:1-2" rel="noopener noreferrer" target="_blank">Hebrews 12:1-2</a> NKJV).</p></blockquote><p>However, <a href="https://www.biblestudytools.com/hebrews/12-1.html" rel="noopener noreferrer" target="_blank">Hebrews 12:1</a> isn’t the only <a href="https://www.biblestudytools.com/topical-verses/bible-verses-about-running/" rel="noopener noreferrer" target="_blank">“run the race” verse</a> in Scripture. Although the author of Hebrews is uncertain, Paul seems to love the analogy. In <a href="https://www.biblestudytools.com/1-corinthians/9-24.html" rel="noopener noreferrer" target="_blank">1 Corinthians 9:24</a>, Paul refers to only one runner in a race getting the prize. In <a href="https://www.biblestudytools.com/philippians/passage/?q=philippians+3:13-14" rel="noopener noreferrer" target="_blank">Philippians 3:13-14</a>, Paul presses on toward the prize<a href="https://www.biblestudytools.com/philippians/passage/?q=philippians+3:13-14"></a>. In <a href="https://www.biblestudytools.com/galatians/5-7.html">Galatians 5:7</a>, Paul chastises believers who once ran well but no longer follow the truth. In <a href="https://www.biblestudytools.com/2-timothy/4-7.html" rel="noopener noreferrer" target="_blank">2 Timothy 4:7</a>, an older Paul, nearing his personal race’s end, talks about finishing it.<div class="mobile-ad-container advertisement advertisement-300x250 text-center ad ad-250 clear" style="margin:5px auto 15px; width: 300px; min-height: 250px;"><div class="300x250_dynamic"></div><div class="tablet_300x250_dynamic"></div><div class="mobile_300x250_dynamic"></div></div><p>Our English word “agony” derives from the Greek <em>agon</em>, translated in <a href="https://www.biblestudytools.com/hebrews/12.html" rel="noopener noreferrer" target="_blank">Hebrews 12</a> as “race.” A race, in its full sense, embodies conflict, fight, and contention. The same root word describes various struggles throughout many of Paul’s books.</p><p>The author of Hebrews makes “run the race” personal when he uses it. He reaches out to each of us in a particular way, compelling us to view ourselves as <a href="https://www.biblestudytools.com/bible-study/topical-studies/3-proven-ways-to-run-the-race-that-is-set-before-us.html">runners</a>. While for each of us, life’s course unwinds with its difficulties, distractions, joys, and sorrows. Despite our individual complex stories, this Biblical metaphor proves to be one to which we all relate. “Run the race” verses encourage us to recognize there is still more ahead, and we must not stop. &nbsp;<div class="swn-mop-premium-promo"></div><div class="clear" style="width:100%; overflow:hidden;">            <div id='lightbox-inline-form-5a03fc7a-2278-49a9-9ad7-af9f35c37fd4'></div>
+            <div id='lightbox-inline-form-a7d7ccc2-90ef-4978-9e09-d538c7d7b971'></div>
+            <div id='lightbox-inline-form-cfcb0431-e536-4dcb-8506-00379fd7e745'></div>
+            <div id='lightbox-inline-form-3096e16d-e14c-4943-a1e8-b703aefcb5ae'></div>
+            <div id='lightbox-inline-form-0f3198ac-bd01-469a-99d4-fd8abc8259f1'></div>
+            <div id='lightbox-inline-form-96a0fe50-11a7-4991-98d3-2b753905e9b3'></div>
+</div><h2>How Does the Cloud of Witnesses Help Us Run the Race?</h2><p><a href="https://www.biblestudytools.com/hebrews/12.html" rel="noopener noreferrer" target="_blank">Hebrews 12</a> gets our attention with “Therefore, since we are surrounded by so great a cloud of witnesses….” The introductory word, “therefore,” begs us to go back and see what it is therefore. What is this “great cloud of witnesses” to which the author refers?</p><p>The previous chapter, <a href="https://www.biblestudytools.com/hebrews/11.html" rel="noopener noreferrer" target="_blank">Hebrews 11</a>, often referred to as the “faith chapter,” recounts the names of those who had already run the race and finished well. We read lists of Biblical characters who held to their trust in God and His promises despite difficulties. These faithful souls did not give up nor quit, regardless of whatever agony came their way. They completed their race—for some, at the cost of martyrdom.</p><p>The author likens those godly examples and testimonies to a faithful cloud of witnesses. We find ourselves surrounded by their stories. The knowledge of others faithful in their race, trusting God and His promises to the finish, encourages us.</p><h2>What Kind of Race Was the Author of Hebrews Thinking Of?</h2><p>The sports metaphor shows the prominent place athletic meets had in ancient culture.</p><p>Greek and Roman cultures enjoyed spectator games. Large amphitheaters with their graduated stone-hewn benches allowed spectators a clear view of the exhibition below. “Run the race” verses bring to our senses the sights and sounds of a deafening throng circling the participants. Large Olympic-style arenas drew vast crowds.</p><p>Hebrews’ description brings those images to mind. Faithful runners of <a href="https://www.biblestudytools.com/hebrews/11.html" rel="noopener noreferrer" target="_blank">Hebrews 11</a> are our examples to follow. Through the Word of God, we are privileged to watch and observe their lives, so we also run well.</p><p>Hebrews’ race urges endurance. We run a spiritual marathon, not a sprint. We need perseverance. Called out from the Levitical system of heavy rules and regulations, the Hebrew believer is asked to shed weights, leave sin and run in the freedom of Christ. He bought and paid for the forgiveness of sin and accomplished our <a href="https://www.crosswalk.com/faith/spiritual-life/what-is-salvation-also-why-it-s-needed-and-how-to-get-it.html">salvation</a>.&nbsp;Impediments which <a href="https://www.biblestudytools.com/hebrews/12.html" rel="noopener noreferrer" target="_blank">Hebrews 12</a> refers to need not deter nor slow us down.<div class="mobile-ad-container advertisement advertisement-300x250 text-center ad ad-250 clear" style="margin:5px auto 15px; width: 300px; min-height: 250px;"><div class="300x250_dynamic"></div><div class="tablet_300x250_dynamic"></div><div class="mobile_300x250_dynamic"></div></div><h2>How Do We Run the Race?</h2><p><a href="https://www.biblestudytools.com/hebrews/11.html" rel="noopener noreferrer" target="_blank">Hebrews 11</a> and <a href="https://www.biblestudytools.com/hebrews/12.html">Hebrews 12</a> refer to the runners as people of faith, those whose lives are heading toward their Master, Jesus. “Run the race” verses teach us how to run. They instruct us to reach a faithful end.&nbsp;</p><p><strong>1. The race begins with salvation.&nbsp;</strong></p><blockquote><p>“For by grace you have been saved through faith, and that not of yourselves; <em>it is</em> the gift of God,<strong><sup>&nbsp;</sup></strong>not of&nbsp;works, lest anyone should&nbsp;boast” (<a href="https://www.biblestudytools.com/ephesians/passage/?q=ephesians+2:8-9" rel="noopener noreferrer" target="_blank">Eph 2:8-9</a>).</p></blockquote><p>As depicted in the “run the race” verses, we run by God’s grace alone. This gift of salvation lifts the burden of personal merit. We are saved through Christ alone, the perfect sacrifice for our sins. His work through death and <a href="https://www.crosswalk.com/faith/bible-study/what-does-the-bible-say-about-the-resurrection.html">resurrection</a> accomplished what our own struggle to gain eternal life cannot.</p><p><strong>2. We must run <a href="https://www.crosswalk.com/devotionals/your-daily-bible-verse/your-daily-bible-verse-july-25.html" rel="noopener noreferrer" target="_blank">without encumbrances</a>.</strong></p><p>“Let us lay aside every weight, and the sin which so easily ensnares <em>us…”&nbsp;</em>(<a href="https://www.biblestudytools.com/hebrews/12-1.html" rel="noopener noreferrer" target="_blank">Hebrews 12:1</a>, emphasis added).</p><p>Scripture describes sin as missing the mark. Sins, needless burdens, and distractions weigh down a runner and make us stumble. They make endurance difficult. “Lay aside” means to put away. Don’t get tangled up in it. Whatever hinders us in our spiritual walk should be shed so we can run light.</p><p><a href="https://www.biblestudytools.com/colossians/passage/?q=colossians+3:8-9" rel="noopener noreferrer" target="_blank">Colossians 3:8-9</a> lists what we should put to death. The list includes sexual immorality, impurity, idolatry, lies, filthy language, anger, wrath, malice, and slander. All these will veer us off track and cause us to take our eyes off the goal.</p><p><strong>3. Run with endurance.</strong></p><p>Endurance, translated from the original Greek word, <em>hypomone</em>, means patience, steadfastness, and constancy. Used in the New Testament, it characterizes a person who will not swerve from deliberate purpose and remains loyal to faith even through great trials and suffering.</p><p>“Run in such a way as to obtain the prize,” <a href="https://www.biblestudytools.com/1-corinthians/passage/?q=1 corinthians+9:24-25" rel="noopener noreferrer" target="_blank">1 Corinthians 9:24-25</a> instructs. Paul encourages self-control and steady forward progress.</p><p>Weariness, comparison, testing, and even lethargy tempt us to give up, quit, and end the agony. God’s Word tells us to plod forward with endurance despite whatever comes our way.</p><p><strong>4. Look to Jesus.</strong></p><p><a href="https://www.biblestudytools.com/hebrews/12-2.html" rel="noopener noreferrer" target="_blank">Hebrews 12:2</a> finishes the race analogy with focus.</p><blockquote><p>“… looking unto Jesus, the author and finisher of <em>our</em> faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God.”</p></blockquote><p>God’s Sovereignty lays out each course. Jesus ran His race on earth without sin. He completed the race as our perfect example, and now He sits at the right hand of the throne of God.<div class="mobile-ad-container advertisement advertisement-300x250 text-center ad ad-250 clear" style="margin:5px auto 15px; width: 300px; min-height: 250px;"><div class="300x250_dynamic"></div><div class="tablet_300x250_dynamic"></div><div class="mobile_300x250_dynamic"></div></div><p>If we want to finish well, we must keep our eyes on Jesus.</p><p>As runners in a race, we sometimes accumulate burdens we shouldn’t carry. They eat away at endurance, and our focus shifts.&nbsp;Sometimes trials bring uncertainty and doubt.&nbsp;Our attention fixes on circumstances rather than the One Person able to get us through adversity. Sometimes, we even step over the line of His will. We miss the mark. We sin.</p><p>The great list of faith runners also failed at times. Jesus is a forgiving and loving Friend.</p><p>Like runners in a race, we are caught up in a contest that, at times, is pure agony. The “run the race” verses remind us that Jesus waits at the finish. We run with our focus on Him.</p><p>Like the painful race I ran long ago, God has put me on another course designed especially by His Sovereignty. As I learn to keep my eyes on the forward goal, my vision clears.</p><p>Spiritual growth continues as we learn to disengage from temptations and <a href="https://www.christianity.com/wiki/sin/how-does-sin-so-easily-entangle-us.html" rel="noopener noreferrer" target="_blank">detangle</a> ourselves from things that hinder our race and take us off track.</p><p>May we run with endurance. May we stay the course and remember the witness of the faithful who have finished well, “looking unto Jesus, the author and finisher of <em>our</em> faith.”</p><p><span style="font-size: 12px;">Photo Credit:&nbsp;</span><a href="https://www.gettyimages.com/detail/illustration/shouters-of-a-person-crossing-a-finish-line-royalty-free-illustration/150370213" rel="noopener noreferrer" target="_blank"><span style="font-size: 12px;">Getty Images/AdrianHillman</span></a></p><p><strong><picture>
+<source type="image/webp" data-srcset="https://i.swncdn.com/media/233w/via/20332-sylviaschroederheadshot.webp"><img class="fr-fic fr-dii fr-fil img-responsive lazyload" data-src="https://i.swncdn.com/media/233w/via/20332-sylviaschroederheadshot.jpg" alt="Sylvia S" style="width: 233px;"></picture>Sylvia Schroeder</strong> loves connecting God’s Word with real life and writing about it. She is a contributing writer for a variety of magazines and online sites. Sylvia is co-author of a devotional book and her writing is included in several book compilations. Mom to four, grandma to 14, and wife to her one and only love, Sylvia enjoys writing about all of them.&nbsp;</p><p>Her love for pasta and all things Italian stems from years of ministry abroad. She’d love to tell you about it over a steaming cup of cappuccino. Connect with Sylvia on her blog, <a data-saferedirecturl="https://www.google.com/url?q=http://sylviaschroeder.com/&source=gmail&ust=1621508478129000&usg=AFQjCNHewsrmK2XsU4puvTlskdoi0PL-ig" href="http://sylviaschroeder.com/" target="_blank">When the House is Quiet</a>, her <a data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/SylSchroeder/&source=gmail&ust=1621508478129000&usg=AFQjCNGFM9XLiglqxPtxJsJ2TfsODO6fgQ" href="https://www.facebook.com/SylSchroeder/" target="_blank">Facebook page</a>, or<a data-saferedirecturl="https://www.google.com/url?q=https://twitter.com/SylSchroeder&source=gmail&ust=1621508478129000&usg=AFQjCNFDjkZdjaEubvU-joMpyclT-4vnzw" href="https://twitter.com/SylSchroeder" target="_blank">&nbsp;Twitter</a>.</p><hr><p><em><strong>This article is part of our larger resource library of popular Bible verse phrases and quotes. We want to provide easy to read articles that answer your questions about the meaning, origin, and history of specific verses within Scripture's context. It is our hope that these will help you better understand the meaning and purpose of God's Word in relation to your life today.</strong></em></p><p><a href="https://www.crosswalk.com/faith/bible-study/what-is-the-meaning-of-the-verse-be-still-and-know-that-i-am-god.html">"Be Still and Know that I Am God"</a> <a href="https://www.crosswalk.com/faith/prayer/how-to-pray-without-ceasing.html"></a><br><a href="https://www.crosswalk.com/faith/prayer/how-to-pray-without-ceasing.html">"Pray Without Ceasing"</a> <a href="https://www.crosswalk.com/faith/spiritual-life/what-does-it-mean-to-be-fearfully-and-wonderfully-made.html"></a><br><a href="https://www.crosswalk.com/faith/spiritual-life/what-does-it-mean-to-be-fearfully-and-wonderfully-made.html">"Fearfully and Wonderfully Made"</a><br><a href="https://www.crosswalk.com/faith/bible-study/3-things-you-never-noticed-in-romans-8-28.html">"All Things Work Together for Good"</a> <a href="https://www.crosswalk.com/blogs/debbie-mcdaniel/33-verses-to-remind-us--we-do-not-have-to-fear.html"></a><br><a href="https://www.crosswalk.com/blogs/debbie-mcdaniel/33-verses-to-remind-us--we-do-not-have-to-fear.html">"Do Not Fear"</a> <a href="https://www.biblestudytools.com/bible-study/explore-the-bible/3-surprising-ways-i-can-do-all-things-through-christ-who-strengthens-me.html"></a></p>
+
+
+
+                        <div class="swn-editor-premium-promo"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+
+
+<div class="shareAndPrintBar  group clear">
+    <ul class="shares group">
+            <li>
+                
+                <a class="resp-sharing-button__link popup" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Facebook" onclick="trackShare()">
+                    <div data-share-url="https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" /></svg>
+                        </div>Share
+                    </div>
+                </a>
+            </li>
+                    <li>
+                
+                <a class="resp-sharing-button__link popup" href="https://twitter.com/intent/tweet/?text=%26lt%3bp%26gt%3bYou+probably+didn%26%2339%3bt+know+there+are+multiple+Bible+verses+that+talk+about+racing.+What+does+the+most+famous+verse%2c+%26quot%3brun+the+race+set+before+us%2c%26quot%3b+tell+us+about+following+Jesus%3f%26lt%3b%2fp%26gt%3b.&amp;url=https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Twitter" onclick="trackShare()">
+                    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" /></svg>
+                        </div><span class="hidden-xs">Tweet</span>
+                    </div>
+                </a>
+            </li>
+
+                    <li>
+                
+                <a class="resp-sharing-button__link" href="mailto:?subject=Where%20Is%20the%20%e2%80%9cRun%20the%20Race%e2%80%9d%20Verse%20in%20the%20Bible?&amp;body=https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html" target="_self" aria-label="Share by E-Mail">
+                    <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--large">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" /></svg>
+                        </div><span class="hidden-xs">E-Mail</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="hidden-xs resp-sharing-button__link">
+                <a class="printLink" target="_blank" rel="noopener" href="https://www.crosswalk.com/print/11865846/">
+
+
+        <svg class="print" style="width:24px;fill:#999;" viewBox="0 0 1920 2048"><path d="M384 0h896v256h-896v-256zM384 640h896v384h-160q-40 0 -68 28t-28 68v160h-640v-640zM1536 576q0 26 -19 45t-45 19t-45 -19t-19 -45t19 -45t45 -19t45 19t19 45zM1664 576v-416q0 -13 -9.5 -22.5t-22.5 -9.5h-224v-160q0 -40 -28 -68t-68 -28h-960q-40 0 -68 28t-28 68 v160h-224q-13 0 -22.5 9.5t-9.5 22.5v416q0 79 56.5 135.5t135.5 56.5h64v544q0 40 28 68t68 28h672q40 0 88 -20t76 -48l152 -152q28 -28 48 -76t20 -88v-256h64q79 0 135.5 -56.5t56.5 -135.5z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+                </a>
+            </li>
+
+    </ul>
+</div>
+
+<script>
+    function trackShare() {
+        salem.zeta.trackShare('CW-11865846', 'article', 'https%3a%2f%2fwww.crosswalk.com%2ffaith%2fbible-study%2fwhere-run-the-race-verse-in-the-bible.html'); 
+    }
+</script>        </div>
+
+    </article>
+
+        <hr />
+<!-- MGID Start -->
+<div id="M914696ScriptRootC1569075"></div> 
+<!-- MGID End -->
+    <hr />
+
+    
+        <div id="recentlyOn" class="relatedArticles visible-xs">
+            <h2 class="OpenSans">Recently On Bible Study</h2>
+            <ul class="group row">
+
+                    <li class=" col-xs-6 col-sm-4 col-md-4">
+                        <a href="https://www.crosswalk.com/faith/bible-study/bible-canon-books.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/200w/via/21937-bible-trivia-cwjpeg.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/200w/via/21937-bible-trivia-cwjpeg.jpg" alt="The Biblical Canon: How was the Bible Canon Chosen?"  width=200 height=105 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                            <span>The Biblical Canon: How was the Bible Canon Chosen?</span>
+                        </a>
+                    </li>
+                    <li class=" col-xs-6 col-sm-4 col-md-4">
+                        <a href="https://www.crosswalk.com/faith/bible-study/meaning-inri-jesus-cross.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/200w/via/images/2024/02/05/34432/34432-gettyimages-1820930601_source_file.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/200w/via/images/2024/02/05/34432/34432-gettyimages-1820930601_source_file.jpg" alt="What Is the Meaning of INRI on Jesus&#39; Cross?"  width=200 height=105 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                            <span>What Is the Meaning of INRI on Jesus' Cross?</span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    <div class="visible-xs">
+<div id="editorsPicks" class="relatedArticles">
+    <h2 class="OpenSans">Editor's Picks</h2>
+    <ul class="group row flex-container">
+
+            <li class=" col-xs-6 col-sm-4 col-md-4">
+                <a href="https://www.crosswalk.com/slideshows/unnoticed-ways-god-is-blessing-your-life.html" title="8 Unnoticed Ways God Is Blessing Your Life" >
+
+            <picture>
+                    <source type="image/webp" media="(max-width: 767px)" data-srcset=https://i.swncdn.com/media/200w/via/images/2023/04/21/30321/30321-joy_source_file.webp>
+                    <source type="image/jpeg" media="(max-width: 767px)" data-srcset=https://i.swncdn.com/media/200w/via/images/2023/04/21/30321/30321-joy_source_file.jpg>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/images/2023/04/21/30321/30321-joy_source_file.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/images/2023/04/21/30321/30321-joy_source_file.jpg" alt="8 Unnoticed Ways God Is Blessing Your Life"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                    <span>8 Unnoticed Ways God Is Blessing Your Life</span>
+                </a>
+            </li>
+            <li class=" col-xs-6 col-sm-4 col-md-4">
+                <a href="https://www.crosswalk.com/family/marriage/how-my-husband-and-i-restored-emotional-trust-in-our-marriage.html" title="How My Husband and I Restored Emotional Trust in Our Marriage" data-google-interstitial=false>
+
+            <picture>
+                    <source type="image/webp" media="(max-width: 767px)" data-srcset=https://i.swncdn.com/media/200w/via/24207-gettyimages-143071052-2.webp>
+                    <source type="image/jpeg" media="(max-width: 767px)" data-srcset=https://i.swncdn.com/media/200w/via/24207-gettyimages-143071052-2.jpg>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/24207-gettyimages-143071052-2.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/24207-gettyimages-143071052-2.jpg" alt="How My Husband and I Restored Emotional Trust in Our Marriage"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                    <span>How My Husband and I Restored Emotional Trust in Our Marriage</span>
+                        <span class="inline-premium">
+<picture>
+    <source type="image/webp" data-srcset="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.webp">
+    <img class="premium lazyload" data-src="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.png" width="64" height="28" />
+</picture>
+                        </span>
+                </a>
+            </li>
+    </ul>
+</div>
+    </div>
+
+
+
+</div>
+
+
+<div class="clear">
+    <div id="rc-widget-35ab26" data-rc-widget data-widget-host="habitat" data-endpoint="//trends.revcontent.com" data-widget-id="114168"></div>
+</div>
+                    </div>
+
+                        <div class="rightContent homePage col-xs-12 col-sm-4 col-md-4">
+                            <div class="">
+
+
+
+
+<div class="hidden-xs">
+<style>
+    .searchBibleForm a,
+    .searchForm a {
+        background: transparent url(https://media.swncdn.com/crosswalk/theme/default/buttons/orange-button-large-right.png) no-repeat right;
+    }
+
+        .searchBibleForm a:hover,
+        .searchForm a:hover {
+            background-image: url(https://media.swncdn.com/crosswalk/theme/default/buttons/orange-button-large-right-hover.png);
+        }
+
+        .searchBibleForm a > span,
+        .searchForm a > span {
+            background: transparent url(https://media.swncdn.com/crosswalk/theme/default/buttons/orange-button-large-left.png) no-repeat left center;
+        }
+
+        .searchBibleForm a:hover > span,
+        .searchForm a:hover > span {
+            background-image: url(https://media.swncdn.com/crosswalk/theme/default/buttons/orange-button-large-left-hover.png);
+        }
+</style>
+
+<form class="searchBibleForm " id="searchBibleForm" action="https://www.biblestudytools.com/search/" method="get">
+    <input class="col-sm-9 col-md-10" id="q" type="text" placeholder="Bible Search" name="q">
+    <a class="col-sm-3 col-md-2" id="searchBibleSubmit" href="#" onclick="$('#searchBibleForm').submit();return false;">
+        <span>GO</span>
+    </a>
+</form>
+<div class="poweredBy text-center">
+    <a href="https://www.biblestudytools.com">Powered by BibleStudyTools.com</a>
+</div>
+</div>
+
+
+    <div class="text-center hidden-xs marginBottom ad">
+        <div id="breakTopStick"></div>
+        <div class="visible-md visible-lg advertisement-min250">
+            <div id="desktop_right_300x250-1"></div>
+        </div>
+        <div class="visible-sm advertisement-min600">
+            <div id="tablet_right_160x600-1"></div>
+        </div>
+    </div>
+
+    <div class="marginBottom clear">
+         
+        <div id='lightbox-inline-form-e923c27d-17cf-4c20-89d4-e076dcd5ca3c'></div>
+         
+        <div id='lightbox-inline-form-ad6c1326-1efd-402f-b9be-2a5e0ae8cc38'></div>
+         
+        <div id='lightbox-inline-form-be62a000-2fb2-41f3-8b7f-8cc5e8b056b3'></div>
+    </div>
+
+    <div class="advertisement advertisement-300x250 marginBottom ad visible-md visible-lg">
+        <div id="desktop_right_300x250-2"></div>
+    </div>
+
+
+
+
+    <div class="popularToday hidden-xs">
+        <h2 class="OpenSans">Popular Today</h2>
+
+        <ul>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/10-things-your-husband-wishes-you-would-say-to-him.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/25059-gettyimages-939548784.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/25059-gettyimages-939548784.jpg" alt="10 Things Your Husband Wishes You Would Say to Him"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            10 Things Your Husband Wishes You Would Say to Him
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/sneaky-ways-satan-stops-you-from-praying.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/9556-gettyimages-1132235048-tommaso79.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/9556-gettyimages-1132235048-tommaso79.jpg" alt="7 Sneaky Ways Satan Stops You from Praying"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            7 Sneaky Ways Satan Stops You from Praying
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/faith/spiritual-life/ways-to-come-back-from-a-crisis-of-faith.html" data-google-interstitial=false>
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/9688-man-praising-at-sunrise-sunburst-nature-faith.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/9688-man-praising-at-sunrise-sunburst-nature-faith.jpg" alt="3 Ways to Come Back from a Crisis of Faith"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            3 Ways to Come Back from a Crisis of Faith
+                                <span class="inline-premium">
+<picture>
+    <source type="image/webp" data-srcset="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.webp">
+    <img class="premium lazyload" data-src="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.png" width="64" height="28" />
+</picture>
+                                </span>
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/10-biblical-warnings-you-need-to-stop-ignoring.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/cms/CW/faith/47764-man-holding-bible1200u.400w.tn.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/cms/CW/faith/47764-man-holding-bible1200u.400w.tn.jpg" alt="10 Biblical Warnings You Need to Stop Ignoring"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            10 Biblical Warnings You Need to Stop Ignoring
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/devotionals/your-daily-prayer/a-morning-prayer-to-count-your-blessings.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/18865-unsplash-hannah-olinger.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/18865-unsplash-hannah-olinger.jpg" alt="A Morning Prayer to Count Your Blessings - Your Daily Prayer - February 25"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            A Morning Prayer to Count Your Blessings - Your Daily Prayer - February 25
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/things-every-christian-needs-to-stop-doing-right-now.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/14411-gettyimagesdeagreez.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/14411-gettyimagesdeagreez.jpg" alt="8 Things Every Christian Needs to Stop Doing Right Now"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            8 Things Every Christian Needs to Stop Doing Right Now
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/family/marriage/how-my-husband-and-i-restored-emotional-trust-in-our-marriage.html" data-google-interstitial=false>
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/24207-gettyimages-143071052-2.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/24207-gettyimages-143071052-2.jpg" alt="How My Husband and I Restored Emotional Trust in Our Marriage"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            How My Husband and I Restored Emotional Trust in Our Marriage
+                                <span class="inline-premium">
+<picture>
+    <source type="image/webp" data-srcset="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.webp">
+    <img class="premium lazyload" data-src="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.png" width="64" height="28" />
+</picture>
+                                </span>
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/5-subtle-ways-the-demons-from-your-past-are-controlling-you.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/cms/CW/Couples/singles/47847-tattooed-man-1200.400w.tn.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/cms/CW/Couples/singles/47847-tattooed-man-1200.400w.tn.jpg" alt="5 Subtle Ways the Demons from Our Past Are Controlling Us"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            5 Subtle Ways the Demons from Our Past Are Controlling Us
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/devotionals/your-daily-prayer/a-prayer-to-live-free-from-discouragement.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/images/2023/10/03/32772/32772-istockgetty-images-plusdelmaine-donson-3_source_file.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/images/2023/10/03/32772/32772-istockgetty-images-plusdelmaine-donson-3_source_file.jpg" alt="A Prayer to Live Free from Discouragement - Your Daily Prayer - February 26"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            A Prayer to Live Free from Discouragement - Your Daily Prayer - February 26
+                        </div>                        
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/unnoticed-ways-god-is-blessing-your-life.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/images/2023/04/21/30321/30321-joy_source_file.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/images/2023/04/21/30321/30321-joy_source_file.png" alt="8 Unnoticed Ways God Is Blessing Your Life"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            8 Unnoticed Ways God Is Blessing Your Life
+                        </div>                        
+                    </a>
+                </li>
+        </ul>        
+    </div>    
+
+        <div class="advertisement marginBottom ad advertisement-300x250 visible-md visible-lg">
+            <div id="desktop_right_300x250-3"></div>
+        </div>
+    <div class="popularToday hidden-xs">
+        <h2 class="OpenSans">Editor's Picks</h2>
+
+        <ul>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/unnoticed-ways-god-is-blessing-your-life.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/images/2023/04/21/30321/30321-joy_source_file.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/images/2023/04/21/30321/30321-joy_source_file.jpg" alt="8 Unnoticed Ways God Is Blessing Your Life"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            8 Unnoticed Ways God Is Blessing Your Life
+                        </div>
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/family/marriage/how-my-husband-and-i-restored-emotional-trust-in-our-marriage.html" data-google-interstitial=false>
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/24207-gettyimages-143071052-2.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/24207-gettyimages-143071052-2.jpg" alt="How My Husband and I Restored Emotional Trust in Our Marriage"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            How My Husband and I Restored Emotional Trust in Our Marriage
+                                <span class="inline-premium">
+<picture>
+    <source type="image/webp" data-srcset="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.webp">
+    <img class="premium lazyload" data-src="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.png" width="64" height="28" />
+</picture>
+                                </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/church/pastors-or-leadership/how-to-keep-your-church-youthful-and-growing.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/23044-sparrowstockchurchdoors.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/23044-sparrowstockchurchdoors.jpg" alt="How to Keep Your Church Youthful and Growing"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            How to Keep Your Church Youthful and Growing
+                        </div>
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/goodnight-prayers-for-when-youre-desperate-for-sleep.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/6041-woman-staring-at-clock-cant-sleep-gettyimages.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/6041-woman-staring-at-clock-cant-sleep-gettyimages.jpg" alt="7 Goodnight Prayers for When You&#39;re Desperate for Sleep"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            7 Goodnight Prayers for When You're Desperate for Sleep
+                        </div>
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/faith/women/4-keys-ways-to-take-care-of-your-body-through-stewardship-and-self-care.html" data-google-interstitial=false>
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/images/2023/07/03/31465/31465-summer-relaxation_source_file.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/images/2023/07/03/31465/31465-summer-relaxation_source_file.jpg" alt="4 Keys Ways to Take Care of Your Body through Stewardship and Self Care"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            4 Keys Ways to Take Care of Your Body through Stewardship and Self Care
+                                <span class="inline-premium">
+<picture>
+    <source type="image/webp" data-srcset="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.webp">
+    <img class="premium lazyload" data-src="https://i.swncdn.com/media/64w/crosswalk/resource/areas/crosswalk/resources/images/plus/Plus-Badge-CW.png" width="64" height="28" />
+</picture>
+                                </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="padding">
+                    <a href="https://www.crosswalk.com/slideshows/faithful-ways-to-wrestle-with-disappointment.html" >
+
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/400w/via/23213-sad-millennial-gettyimages-fizkes.webp>
+                        <img  class="img-responsive lazyload " data-src="https://i.swncdn.com/media/400w/via/23213-sad-millennial-gettyimages-fizkes.jpg" alt="7 Faithful Ways to Wrestle with Disappointment"  width=400 height=209 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+
+
+                        <div>
+                            7 Faithful Ways to Wrestle with Disappointment
+                        </div>
+                    </a>
+                </li>
+        </ul>
+    </div>
+        <div class="advertisement ad visible-md visible-lg">
+            <div id="desktop_right_sticky-1"></div>
+        </div>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+                <div class="hidden-xs">
+    <div class="footerLinks col-md-12">
+        
+
+        <ul>
+                <li>
+                    <a  href="https://www.crosswalk.com/about-crosswalk.html">About Us</a>
+                </li>
+                <li>
+                    <a  href="https://www.crosswalk.com/contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a  href="https://salemmedia.com/salem-web-network-privacy-policy/">Privacy Policy</a>
+                </li>
+                <li>
+                    <a  href="http://www.salemwebnetwork.com/our-brands/terms-of-use/">Terms of Use</a>
+                </li>
+                <li>
+                    <a  href="https://www.crosswalk.com/mobile-app/">Crosswalk App</a>
+                </li>
+                <li>
+                    <a  href="https://salemmedia.com/ccpa-sale-opt-out/">California - Do Not Sell My Personal Information</a>
+                </li>
+                <li>
+                    <a  href="https://salemmedia.com/salem-web-network-ccpa-privacy-notice-for-california-residents/">California - CCPA Notice</a>
+                </li>
+        </ul>
+    </div>
+<div class="col-sm-12 col-md-12 social-container">
+    <ul class="inline social-buttons text-center">        
+        <li>
+            <a class="facebook sharer" title="Facebook" href="https://www.facebook.com/crosswalkcom">&nbsp;</a>
+        </li>
+        <li>
+            <a class="twitter sharer" href="https://twitter.com/#!/crosswalk_com" title="Twitter">&nbsp;</a>
+        </li>
+        <li>
+            <a class="podcast sharer" href="https://www.lifeaudio.com/" title="LifeAudio">&nbsp;</a>
+        </li>
+        <li>
+            <a class="pinterest sharer" href="https://www.pinterest.com/crosswalkcom/" title="Pinterest">&nbsp;</a>
+        </li>
+        <li>
+            <a class="youtube sharer" href="https://www.youtube.com/channel/UCTo_yaPfVtb9v4YuCyjbQaA" title="YouTube">&nbsp;</a>
+        </li>        
+    </ul>    
+</div>
+                </div>
+
+<footer class="container-fluid">
+    <div class="col-md-12 hidden-xs">
+
+        <div class="footerDiv">
+            <div class="Footer_Main_Container row">
+                <div class="col-sm-3 col-md-3">
+                    <a href="https://www.salemwebnetwork.com/" rel="nofollow">
+
+            <picture>
+                <source type="image/webp" data-srcset=https://i.swncdn.com/media/223w/logo/swn/swn-black.webp>
+                        <img  class="img-responsive lazyload Footer_Brand_IMG_Black_Brand" data-src="https://i.swncdn.com/media/223w/logo/swn/swn-black.png" alt="Salem Web Network"  width=223 height=64 onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" />
+
+            </picture>
+
+                        
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-9">
+                    <div class="content-fluid">
+                        <div class="col-md-12 Description">
+                            This site is a proud member of the Salem Web Network, a subsidiary of <a href="https://salemmedia.com/" target="_blank" rel="noopener">Salem Media Group</a>. <br> Other Salem Web Network sites include:
+                        </div>
+                    </div>
+                    <div class="content-fluid">
+                        <div class="col-md-12 Sites">
+                            <ul>
+                                <li><a href="https://www.biblestudytools.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Bible Study Tools</a></li>
+                                <li><a href="https://www.jesus.org/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Jesus.org</a></li>
+                                <li><a href="https://www.christianity.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Christianity.com</a></li>
+                                <li><a href="https://www.godtube.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Christian Videos</a></li>
+                                <li><a href="https://www.christianjobs.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Christian Jobs</a></li>
+                                <li><a href="https://www.crosscards.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Free Online ecards</a></li>
+                                <li><a href="https://www.lightsource.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Christian Ministry Video</a></li>
+                                <li><a href="https://www.oneplace.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Christian Ministry Radio</a></li>
+                                <li><a href="https://www.crosswalk.com/culture/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow" class="Default_Footer_Link">Christian Entertainment Reviews</a></li>
+                                <li><a href="https://www.salemwebnetwork.com/advertise-with-us/" rel="nofollow" class="default_footer_link">Advertise with Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-fluid">
+                        <div class="col-md-12 Copyright">Copyright &copy; 2024, Crosswalk.com. All rights reserved. Article Images Copyright &copy; <span class="CurrentYear"></span> Getty Images unless otherwise indicated.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 visible-xs footerMobile text-center">
+    <div class="footerLinks col-md-12">
+        
+
+        <ul>
+                <li>
+                    <a  href="https://www.crosswalk.com/about-crosswalk.html">About Us</a>
+                </li>
+                <li>
+                    <a  href="https://www.crosswalk.com/contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a  href="https://salemmedia.com/salem-web-network-privacy-policy/">Privacy Policy</a>
+                </li>
+                <li>
+                    <a  href="http://www.salemwebnetwork.com/our-brands/terms-of-use/">Terms of Use</a>
+                </li>
+                <li>
+                    <a  href="https://www.crosswalk.com/mobile-app/">Crosswalk App</a>
+                </li>
+                <li>
+                    <a  href="https://salemmedia.com/ccpa-sale-opt-out/">California - Do Not Sell My Personal Information</a>
+                </li>
+                <li>
+                    <a  href="https://salemmedia.com/salem-web-network-ccpa-privacy-notice-for-california-residents/">California - CCPA Notice</a>
+                </li>
+        </ul>
+    </div>
+        
+    </div>
+</footer>
+        </div>
+    </div>
+
+    
+    <div class="swn-mop-sticky-bottom"></div>
+    <div id="interstitial"></div>
+
+    
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script async src="https://media.swncdn.com/js/prebid/script.js"></script>
+<script async src="https://media.swncdn.com/salemads/crosswalk/advscript.js"></script>
+    <!-- Chartbeat -->
+    <script>
+        (function () {
+            var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+            _sf_async_config.uid = 66097;
+            _sf_async_config.domain = 'crosswalk.com';
+            _sf_async_config.flickerControl = false;
+            _sf_async_config.path = 'crosswalk.com/faith/bible-study/where-run-the-race-verse-in-the-bible.html';
+            _sf_async_config.sections = 'Bible Study';
+            _sf_async_config.authors = 'Sylvia Schroeder';
+
+            function loadChartbeat() {
+                var e = document.createElement('script');
+                var n = document.getElementsByTagName('script')[0];
+                e.type = 'text/javascript';
+                e.async = true;
+                e.src = '//static.chartbeat.com/js/chartbeat.js';;
+                n.parentNode.insertBefore(e, n);
+            }
+            loadChartbeat();
+        })();
+    </script>
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2396832-1"></script>
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        //Call 'set' before config to define mapping
+        gtag('set', {
+            'custom_map': {
+                'dimension2': 'PageType',
+                '1': 'AdsBlocked',
+                'dimension3': 'SubscriberType'
+            }
+        });
+
+        gtag('set', { 'dimension2': 'free', 'dimension3': 'free' })
+        gtag('config', 'UA-2396832-1');
+        gtag('config', 'AW-11021558786'); // Salem Surround
+
+        let isAdBlockEnabled = false;
+
+        function DoGEvent() {
+            gtag('event', 'page_additional_info', {
+                'send_to': 'G-Y5LM08S1JS',
+                'AdsBlocked': isAdBlockEnabled || false,
+                'PageType': 'free',
+                'SubscriberType': 'free',
+                'non_interaction': true
+            });
+        }
+
+        (function AdBlockEnabled() {
+            document.cookie = "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+            
+            
+            window.setAdBlockCookie = function (adblocker) {
+                let d = new Date();
+                d.setTime(d.getTime() + 60 * 5 * 1000);
+                document.cookie = "__adblocker=" + (adblocker ? "true" : "false") + "; expires=" + d.toUTCString() + "; path=/";
+            };
+
+            var script = document.createElement("script");
+            script.setAttribute("async", true);
+            script.setAttribute("src", "https://media.salemwebnetwork.com/adverts/advertisements.js");
+            script.setAttribute("onload", "DoGEvent();");
+            script.setAttribute("onerror", "window.setAdBlockCookie(true); isAdBlockEnabled = true; DoGEvent();");
+            document.getElementsByTagName("head")[0].appendChild(script);
+            
+        })() 
+    </script>
+
+
+    <script>
+        //To check for jquery, so we load all the jquery functions
+        var ExecuteFunctions;
+        function runJquery() {
+            if (window.$.each) { // Checks if JQuery is loaded
+                clearInterval(ExecuteFunctions); // Stops the interval
+                $.each(q, function (index, f) { // Loops stored functions
+                    $(f); // Execute function
+                });
+            }
+        }
+        ExecuteFunctions = setInterval(runJquery, 200);
+    </script>
+
+ 
+<script>
+!function(e){if(!window.pintrk){window.pintrk = function () {
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+  n=window.pintrk;n.queue=[],n.version="3.0";var
+  t=document.createElement("script");t.async=!0,t.src=e;var
+  r=document.getElementsByTagName("script")[0];
+  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+pintrk('load', '2614207633914', {em: '<user_email_address>'});pintrk('page');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+         src="https://ct.pinterest.com/v3/?event=init&tid=2614207633914&pd[em]=<hashed_email_address>&noscript=1" />
+</noscript>
+
+ 
+<script>
+    setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+        fbq('dataProcessingOptions', ['LDU'], 0, 0);
+        fbq('init', '228399734010278');
+        fbq('track', "PageView");
+        fbq('track', 'ViewContent');
+    }, 3000);
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=228399734010278&ev=PageView&noscript=1&dpo=LDU&dpoco=0&dpost=0" /></noscript>
+
+    
+    <link href="/bundles/jquery/" rel="preload" as="script" />
+    <script src="/bundles/jquery/"></script>
+    <script defer src="/bundles/bootstrap-js/"></script>
+    <script defer src="/bundles/crosswalk-js/?v=nkwjFPnD4NKy_ik6EYTo06BO8JbiIfeHSB-9gS2cQ4U1"></script>
+
+    <script defer src="/bundles/zeta/"></script>
+
+    
+
+
+<div id="login-form"></div>
+<script>
+    $(function () {
+        salem.piano.init(false, 'UA-2396832-1', 'G-Y5LM08S1JS', 'CW');
+    });
+</script>
+
+<!-- Piano -->
+<script async src="https://experience.tinypass.com/xbuilder/experience/load?aid=IKC2tj9wpu"></script>
+
+    <script>
+        window.tp = window["tp"] || [];
+        window.tp.push(["setTags", ["swn:article"]]);
+    </script>
+
+
+    
+        <script defer src="/bundles/waypoints/"></script>
+        <script defer src="/bundles/mgid-js/"></script>
+    <div id='allpass_container947' style='clear:both;'></div>
+<script type='text/javascript'>
+if (typeof(allpass_containerRequests) !== 'undefined') { allpass_containerRequests.push([document.getElementById('allpass_container947'), 'SlideOut', null, null]); }
+</script>    <script async src="https://www.lightboxcdn.com/vendor/9971b307-599e-4bf5-8672-ff888aadc643/lightbox_speed.js"></script>
+
+        <script defer src='https://allpass.salemwebnetwork.com/newsletters/init'></script>
+    <!-- Pushnami Script -->
+    <script async src="https://api.pushnami.com/scripts/v1/pushnami-adv/60c27484f4bff44e8cb0eca7" onload="Pushnami.update().prompt();"></script>
+
+    
+    <script async src="/bundles/lazysizes/"></script>
+
+
+    <script async src='https://services.brid.tv/player/build/brid.min.js'></script>
+    <!-- LiveConnectTag for advertisers -->
+    <script defer src="//b-code.liadm.com/a-064b.min.js" charset="utf-8"></script>
+
+    
+
+    
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"85c3f17f7c3b5f25","version":"2024.2.1","token":"8ffc698fa53844da97f03e83604128f0"}' crossorigin="anonymous"></script>
+</body>
+</html>

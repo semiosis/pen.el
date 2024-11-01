@@ -1,0 +1,1 @@
+- Simon Peyton Jones (1957-): It's a trick to construct the type GameState with two parameters and also to give instances of Show that allow to display it nicely.

@@ -1,0 +1,5 @@
+cd /volumes/home/shane/notes/ws/jobs;  "z" "/volumes/home/shane/notes/ws/jobs/cv-16.08.24-pact.pdf"
+cd /volumes/home/shane/notes/ws/jobs;  "z" "/volumes/home/shane/notes/ws/jobs/cv-16.08.24-jaycar.pdf"
+cd /volumes/home/shane/notes/ws/jobs;  "z" "/volumes/home/shane/notes/ws/jobs/cv-16.08.24-jaycar.pdf"
+cd /volumes/home/shane/notes/ws/jobs;  "z" "/volumes/home/shane/notes/ws/jobs/cv-16.08.24-jaycar.pdf"
+cd /volumes/home/shane/notes/ws/jobs;  "z" "cv-16.08.24-jaycar.pdf"

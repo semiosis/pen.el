@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Python</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body style='background-color: #f2f2f2'>
+<div class='container'>
+  <h1><a href='https://www.'><img src='../python-logo-master-v3-TM_200x80_blue_bg_small (1).png' alt='Python logo'></a></h1>
+
+  <div class='row'>
+
+    <div class='col'>
+
+      <ul class='list-group'>
+
+        <li class='list-group-item'><a href="#">Python</a></li>
+
+        <li class='list-group-item'><a href="#">About</a></li>
+
+        <li class='list-group-item'><a href="#">Getting Started</a></li>
+
+        <li class='list-group-item'><a href="#">Help</a></li>
+
+      </ul>
+
+    </div> <!-- end of col -->
+
+    <div class='col'>
+
+      <ul class='list-group'>
+
+        <li class='list-group-item'><a href="#">Download</a></li>
+
+        <li class='list-group-item'><a href="#">Docs &amp; Tutorials</a></li>
+
+        <li class='list-group-item'><a href="#">Community &amp; Support</a></li>
+
+      </ul> <!-- end of col -->  <!-- end of col -->

@@ -1,0 +1,26 @@
+hierarchical analysis
+hierarchical clustering
+hierarchical cluster analysis
+HCA
+    A method of cluster analysis which seeks
+    to build a hierarchy of clusters.
+
+Frequent Pattern Mining
+    Mining frequent items, itemsets,
+    subsequences, or other substructures is
+    usually among the first steps to analyze a
+    large-scale dataset, which has been an
+    active research topic in data mining for
+    years.
+    
+    We refer users to Wikipedia’s association
+    rule learning for more information.
+
+    ewwlinks +/"Frequent Pattern Mining" "https://spark.apache.org/docs/2.3.0/ml-frequent-pattern-mining.html"
+
+FP-Growth
+    [#Frequent Pattern Mining]
+
+    [algorithm]
+
+    ewwlinks +/"FP-Growth" "https://spark.apache.org/docs/2.3.0/ml-frequent-pattern-mining.html"

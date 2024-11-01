@@ -1,0 +1,5 @@
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"

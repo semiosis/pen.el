@@ -1,0 +1,20 @@
+#
+# This file describes the prompt for the $PROMPT_NAME prompt.
+#
+# It is a collection of settings that make up the actual prompt.
+#
+# The prompt settings are delimited by a line containing only a
+# single '.'.  The settings are:
+#
+#   1.  The prompt name.  This is a short string that identifies
+#       the prompt.  It is used to name the prompt file.
+#
+#   2.  The prompt type.  This is a string that identifies the
+#       prompt type.  It is used to determine which prompt
+#       generator to use to generate the actual prompt.
+#
+#   3.  The prompt description.  This is a short string that
+#       describes the prompt.  It is used to generate the
+#       prompt description file.
+#
+#   4.  The prompt directory.  This is

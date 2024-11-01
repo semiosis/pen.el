@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "nbd" "fast" "ebible" "-ca" "-m" "NASB" "Genesis 1:13" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "nbd" "fast" "ebible" "-ca" "-m" "NASB" "Genesis 1:14" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "I" "Corinthians" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "I" "Corinthians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "I Corinthians 1:2" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "I Corinthians 1:4" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "I Corinthians 1:5" "#" "<==" "pen-ci"

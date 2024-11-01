@@ -1,0 +1,93 @@
+Chemistry diagrams
+
+Shane Mulligan
+
+<2024-04-15 Mon>
+
+1
+2
+3
+4
+5
+6
+7
+
+:O :
+|
+:O =:S :-O :
+
+Chemistry equations:
+
+o Arrhenius equation
+
+o Butler-Volmer equation
+
+o Eyring equation
+
+o Henderson-Hasselbalch equation
+
+o Michaelis-Menten equation
+
+o Nernst equation
+
+o Schrodinger equation
+
+o Urey-Bigeleisen-Mayer equation
+
+1 Arrhenius equation
+
+https://en.wikipedia.org/wiki/Arrhenius_equation
+
+k = Ae
+
+-Ea
+RT ,
+
+2 Butler-Volmer equation
+
+https://en.wikipedia.org/wiki/Butler%E2%80%93Volmer_equation
+
+{
+
+[
+
+j = j0 .
+
+exp
+
+]
+(E - Eeq)
+
+- exp
+
+[
+- ?czF
+RT
+
+?azF
+RT
+
+]}
+
+(E - Eeq)
+
+(1)
+
+(2)
+
+o Eyring equation
+
+o Henderson-Hasselbalch equation
+
+o Michaelis-Menten equation
+
+o Nernst equation
+
+1
+
+o Schrodinger equation
+
+o Urey-Bigeleisen-Mayer equation
+
+2
+

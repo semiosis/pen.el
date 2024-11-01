@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/notes/ws/peniel;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/notes;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.emacs.d/host/pen.el/scripts;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.emacs.d/host/pen.el/scripts;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.emacs.d/host/pen.el/scripts;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.emacs.d/host/pen.el/scripts;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"

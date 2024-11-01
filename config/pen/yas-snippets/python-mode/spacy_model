@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: spacy_model
+# group: shanepy
+# key: symod
+# --
+spacy_model = shanepy.myrc_get("spacy_model") or "en_core_web_md"

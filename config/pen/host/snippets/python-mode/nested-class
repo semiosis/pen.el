@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: nested-class
+# group: oo
+# key: ncl
+# --
+class AboutAttributeAccess(Koan):
+
+    class TypicalObject:
+        pass
+
+    def some_method(self):
+        typical = self.TypicalObject()

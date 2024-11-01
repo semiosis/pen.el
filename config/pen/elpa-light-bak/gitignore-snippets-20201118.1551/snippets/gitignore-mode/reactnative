@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: ReactNative
+# contributor: Toptal & contributors
+# key: reactnative
+# --
+
+### ReactNative ###
+
+# React Native Stack Base
+
+.expo
+__generated__

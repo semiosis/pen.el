@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: local variables
+# group: org
+# key: lv
+# --
+* Local variables
+#+OPTIONS: toc:nil
+#+STARTUP: showblocks
+#+STARTUP: showeverything
+# local variables:
+# org-id-method: uuid
+# eval: (org+-show-drawers)
+# end:

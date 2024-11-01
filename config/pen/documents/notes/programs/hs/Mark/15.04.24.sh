@@ -1,0 +1,6 @@
+cd /;  "Mark" "8:35" "#" "<==" "zsh"
+cd /;  "Mark" "10:29" "#" "<==" "zsh"
+cd /;  "Mark" "10:19-30" "#" "<==" "zsh"
+cd /;  "Mark" "13:9-10" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Mark" "12:30-31" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Mark" "3" "#" "<==" "zsh"

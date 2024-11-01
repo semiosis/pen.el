@@ -1,0 +1,321 @@
+HTTP/1.1 200 OK
+Date: Wed, 06 Dec 2023 20:56:09 GMT
+Server: Apache/2.4.57 (Debian)
+Last-Modified: Fri, 29 Sep 2023 19:17:37 GMT
+ETag: "2cf0-60684470bced5-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 4267
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>notmuch</title>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<link rel="stylesheet" href="local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/ikiwiki.cgi?do=edit&amp;page=index" />
+
+
+
+
+</head>
+<body>
+
+<div class="pageheader">
+<div class="header">
+<span>
+<span class="parentlinks">
+
+</span>
+<!--
+<span class="title">
+notmuch
+
+</span>
+-->
+</span><!--.header-->
+
+</div>
+
+<!--
+
+<div class="actions">
+<ul>
+
+<li><a href="/ikiwiki.cgi?do=edit&amp;page=index" rel="nofollow">Edit</a></li>
+
+
+<li><a href="./recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+<li><span class="createlink"><a href="/ikiwiki.cgi?do=create&amp;from=index&amp;page=Discussion" rel="nofollow">?</a>Discussion</span><br /></li>
+
+
+</ul>
+</div>
+
+-->
+
+
+
+</div> <!-- .pageheader -->
+
+
+
+<div id="content">
+<p><a href="./notmuch-logo.png"><img src="./notmuch-logo.png" width="58" height="50" alt="Notmuch logo" class="left" /></a></p>
+
+<h1><a name="index1h1"></a>Notmuch -- Just an email system</h1>
+
+<p>If you've been looking for a fast, global-search and tag-based email
+system to use within your text editor or in a terminal...</p>
+
+<p>If you're the kind of person that gets excited about being able to
+write shell scripts for exploring and manipulating your email...</p>
+
+<p>If you're a developer of an existing email program and would love a
+good library interface for fast, global search with support for
+arbitrary tags...</p>
+
+<p>If you want the convenience of fast, reliable search of all your
+email, but don't want to give a 3rd-party access to your email...</p>
+
+<p>Then notmuch may be exactly what you've been looking for.</p>
+
+<div class="toc">
+<ol>
+	<li class="L1"><a href="#index1h1">Notmuch -- Just an email system</a>
+	<ol>
+		<li class="L2"><a href="#index1h2">Why is it named Notmuch?</a>
+		</li>
+		<li class="L2"><a href="#index2h2">News</a>
+		</li>
+		<li class="L2"><a href="#index3h2">Getting Started</a>
+		</li>
+		<li class="L2"><a href="#index4h2">Email Clients and Front Ends</a>
+		</li>
+		<li class="L2"><a href="#index5h2">Documentation</a>
+		</li>
+		<li class="L2"><a href="#index6h2">Screenshots</a>
+		</li>
+		<li class="L2"><a href="#index7h2">Obtaining Notmuch</a>
+		</li>
+		<li class="L2"><a href="#index8h2">Contact: Email & IRC</a>
+		</li>
+		<li class="L2"><a href="#index9h2">Troubleshooting, Reporting Bugs and Feature Requests</a>
+		</li>
+		<li class="L2"><a href="#index10h2">Development and Contributing</a>
+		</li>
+		<li class="L2"><a href="#index11h2">Website</a>
+		</li>
+	</ol>
+	</li>
+</ol>
+</div>
+
+
+<h2><a name="index1h2"></a>Why is it named Notmuch?</h2>
+
+<ul>
+<li><p>"Not much mail" is what Notmuch thinks about your email
+collection. Even if you receive 12000 messages per month or have on
+the order of millions of messages that you've been saving for
+decades. Regardless, Notmuch will be able to quickly search all of
+it. It's just plain not much mail.</p></li>
+<li><p>"Not much mail" is also what you should have in your inbox at any
+time. Notmuch gives you what you need, (tags and fast search), so
+that you can keep your inbox tamed and focus on what really matters
+in your life, (which is surely not email).</p></li>
+<li><p>Notmuch is an answer to <a href="http://sup-heliotrope.github.io/">Sup</a>.
+Sup is a very good email program written by William Morgan (and
+others) and is the direct inspiration for Notmuch. Notmuch began as
+an effort to rewrite performance-critical pieces of Sup in C rather
+than Ruby. From there, it grew into a separate project. One
+significant contribution Notmuch makes compared to Sup is the
+separation of the indexer/searcher from the user interface. (Notmuch
+provides a library interface so that its indexing/searching/tagging
+features can be integrated into any email program.)</p></li>
+<li><p>Notmuch is not much of an email program. It doesn't receive messages
+(no POP or IMAP support). It doesn't send messages (no mail composer,
+no network code at all). And for what it does do (email search) that
+work is provided by an external library,
+<a href="http://xapian.org">Xapian</a>.  So if Notmuch provides no user
+interface and Xapian does all the heavy lifting, then what's left
+here? Not much.</p></li>
+</ul>
+
+
+<h2><a name="index2h2"></a>News</h2>
+
+<p><a href="./news/">Notmuch news</a> (mostly release notes and changes).</p>
+
+<h2><a name="index3h2"></a>Getting Started</h2>
+
+<p>To get started with Notmuch, just run "notmuch" at the command line.
+This command will walk you through initial setup, including specifying
+the location of your mail store and how to start the initial indexing.</p>
+
+<p>For a little more detailed guide, see <a href="./getting-started/">Getting Started with
+Notmuch</a>.</p>
+
+<h2><a name="index4h2"></a>Email Clients and Front Ends</h2>
+
+<p>Notmuch ships with a powerful set of <a href="https://notmuchmail.org/doc/latest/man1/notmuch.html">command-line
+tools</a>, an
+<a href="./notmuch-emacs/">email client for Emacs</a>, another <a href="https://git.notmuchmail.org/git/notmuch/blob/HEAD:/vim/README">client for
+vim</a>,
+and a <a href="./notmuch-mutt/">Mutt integration script</a>.</p>
+
+<p>There are also many other <a href="./frontends/">email clients, frontends and tools</a> based
+on Notmuch.</p>
+
+<h2><a name="index5h2"></a>Documentation</h2>
+
+<ul>
+<li><a href="https://notmuchmail.org/doc/latest/">Notmuch official documentation (manual pages)</a></li>
+<li><a href="./frontends/">Email clients and frontends</a></li>
+<li><a href="./howto/">General how-tos</a></li>
+<li><a href="./faq/">Frequently Asked Questions</a></li>
+<li><a href="./searching/">Searching</a></li>
+<li><a href="./excluding/">Excluding and deleting messages</a></li>
+<li><a href="./initial_tagging/">Initial tagging</a></li>
+<li>Tips for using Notmuch with <a href="./emacstips/">Emacs</a>, <a href="./vimtips/">Vim</a>, <a href="./postfixdovecottips/">Postfix &amp; Dovecot</a> and <a href="./mutttips/">Mutt</a></li>
+<li><a href="./remoteusage/">Emacs remote usage</a></li>
+<li><a href="./performance/">Performance</a></li>
+<li><a href="./references/">References</a></li>
+<li><a href="./bindings/">Notmuch Library Language Bindings</a></li>
+</ul>
+
+
+<p>Apart from the wiki, help is available via email and on IRC (see
+below).  Join the mailing list.  Read the archives.  Ask questions.</p>
+
+<h2><a name="index6h2"></a>Screenshots</h2>
+
+<ul>
+<li><a href="./screenshots/">Emacs UI screenshots</a></li>
+</ul>
+
+
+<h2><a name="index7h2"></a>Obtaining Notmuch</h2>
+
+<p><a href="https://notmuchmail.org/releases/">Notmuch source releases</a> are available as
+source tar balls.</p>
+
+<p>Notmuch is packaged for at least the following operating systems and
+distributions:</p>
+
+<ul>
+<li><a href="https://www.archlinux.org/packages/?q=notmuch">Arch Linux</a></li>
+<li><a href="http://packages.debian.org/search?keywords=notmuch">Debian</a></li>
+<li><a href="https://src.fedoraproject.org/rpms/notmuch">Fedora</a></li>
+<li><a href="http://www.freshports.org/mail/notmuch">FreeBSD</a></li>
+<li><a href="http://packages.gentoo.org/package/net-mail/notmuch">Gentoo</a></li>
+<li><a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/mail/notmuch/README.html">NetBSD</a></li>
+<li><a href="https://build.opensuse.org/search?search_text=notmuch">openSUSE</a></li>
+<li>macOS <a href="https://github.com/Homebrew/homebrew-core/blob/09baa1c3f5a30f8450d2145d4fd988e4b4d48070/Formula/notmuch.rb">Homebrew</a>, <a href="https://ports.macports.org/port/notmuch">MacPorts</a>, or <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/mail/notmuch/README.html">pkgsrc</a>.</li>
+<li><a href="http://slackbuilds.org/repository/13.37/office/notmuch/">Slackware</a></li>
+<li><a href="http://packages.ubuntu.com/search?keywords=notmuch">Ubuntu</a></li>
+</ul>
+
+
+<h2><a name="index8h2"></a>Contact: Email & IRC</h2>
+
+<p>Comments? Please feel free to email the notmuch mailing list:
+<a href="mailto:notmuch@notmuchmail.org">&#110;&#111;&#116;&#109;&#117;&#99;&#104;&#64;&#110;&#111;&#116;&#109;&#117;&#99;&#104;&#109;&#97;&#105;&#108;&#46;&#111;&#114;&#103;</a> (subscription is not required, but you can
+also subscribe to the
+<a href="https://nmbug.notmuchmail.org/list/">notmuch mailing list</a>). You
+can also browse the
+<a href="https://nmbug.notmuchmail.org/nmweb/">online list archives</a> or
+download an <a href="https://nmbug.notmuchmail.org/archive/notmuch-list.tar.xz">archive</a>
+of the entire mailing-list.</p>
+
+<p>The archive unpacks to maildir format which is convenient for reading
+the archives within notmuch itself.</p>
+
+<p>If you prefer real-time chat, there is often someone on the
+<a href="irc://irc.libera.chat/#notmuch">#notmuch</a>@irc.libera.chat IRC channel. Don't
+ask if you can ask a question, just ask, and please wait for an answer, we might
+not be in your timezone.</p>
+
+<h2><a name="index9h2"></a>Troubleshooting, Reporting Bugs and Feature Requests</h2>
+
+<p>Please send bug reports and feature requests to the <a href="https://nmbug.notmuchmail.org/list/">Notmuch mailing
+list</a>
+<a href="mailto:notmuch@notmuchmail.org">&#110;&#111;&#116;&#109;&#117;&#99;&#104;&#64;&#110;&#111;&#116;&#109;&#117;&#99;&#104;&#109;&#97;&#105;&#108;&#46;&#111;&#114;&#103;</a>.</p>
+
+<p>For hints about troubleshooting and bug reporting see <a href="./bugs/">bugs</a>.</p>
+
+<p>Please see the <a href="https://nmbug.notmuchmail.org/status/">nmbug status page</a> for
+lists of <a href="https://nmbug.notmuchmail.org/status/#Bugs">known bugs</a> and <a href="https://nmbug.notmuchmail.org/status/#Wish-list">feature
+requests</a>.</p>
+
+<h2><a name="index10h2"></a>Development and Contributing</h2>
+
+<p>All of the code for Notmuch is available as <a href="https://www.fsf.org/licensing/essays/free-sw.html">free
+software</a> released
+under the GNU <a href="https://www.fsf.org/licensing/licenses/gpl.html">GPL version
+3</a>. The latest
+versions can be checked out via git with this command:</p>
+
+<pre><code>    git clone https://git.notmuchmail.org/git/notmuch
+</code></pre>
+
+<p>You can browse the <a href="https://git.notmuchmail.org/git/notmuch">Notmuch code history
+online</a>. <a href="https://www.openhub.net/p/notmuch">The Notmuch OpenHub project
+page</a> has a nice summary of the codebase and
+activity.</p>
+
+<p>Continuous integration build and test suite status: <a href="https://travis-ci.org/notmuch/notmuch"><img src="https://travis-ci.org/notmuch/notmuch.svg?branch=master" alt="Build Status" /></a></p>
+
+<p>Contributions, such as patches, to Notmuch are most welcome. Please refer to the
+<a href="./contributing/">guide to contributing</a>.</p>
+
+<h2><a name="index11h2"></a>Website</h2>
+
+<p>This website is a wiki, maintained using <a href="http://ikiwiki.info">ikiwiki</a>. Here
+are <a href="./wikiwriteaccess/">instructions on how to edit the wiki</a>. The wiki contents
+are mostly <a href="./COPYING/">dual licensed under CC-BY-SA-3.0 and GPLv3+</a>.</p>
+
+</div>
+
+
+
+<div id="footer" class="pagefooter">
+<div id="pageinfo">
+
+
+
+
+
+
+
+
+
+<div class="pagedate">
+Last edited <span class="date">Fri Sep 29 12:17:37 2023</span>
+<!-- Created <span class="date">Tue Dec  1 13:07:46 2009</span> -->
+</div>
+
+</div><!-- #pageinfo -->
+
+<!-- from notmuch -->
+</div><!-- .pagefooter #footer -->
+
+</body>
+</html>

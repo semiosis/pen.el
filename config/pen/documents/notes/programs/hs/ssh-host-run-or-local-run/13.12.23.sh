@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "https://vision.org.au/the-word-for-today-reading/" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "https://www.youtube.com/watch?v=kJcAbgoQWIk" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "https://www.youtube.com/watch?v=kJcAbgoQWIk" "#" "<==" "tclsh8.6"
+cd /root/.pen/documents/notes;  "ssh-host-run-or-local-run" "chrome" "bipjeffers.bandcamp.com" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "https://www.youtube.com/watch?v=MHu3cH34-0g" "#" "<==" "tclsh8.6"

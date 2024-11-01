@@ -1,0 +1,8 @@
+limpet mine
+    A type of naval mine attached to a target
+    by magnets.
+    
+    It is so named because of its superficial
+    similarity to the shape of the limpet, a
+    type of sea snail that clings tightly to
+    rocks or other hard surfaces.

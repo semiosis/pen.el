@@ -1,0 +1,11 @@
+|
+    #!/bin/bash
+    awk '{print $1}'
+#+END_SRC
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Imagine a shell linter"
+  code: |
+    #!/bin/bash
+    cat /dev/stdin | grep -v '^$' | wc -l | sed 's/

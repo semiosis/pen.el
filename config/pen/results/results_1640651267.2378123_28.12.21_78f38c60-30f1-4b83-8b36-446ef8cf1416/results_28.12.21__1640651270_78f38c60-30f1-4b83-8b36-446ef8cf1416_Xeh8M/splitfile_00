@@ -1,0 +1,1 @@
+ statusline=c%<%f\ %m%r\ %{&ff}%{strlen(&fenc)?&fenc:'ascii'}\ [%=%-Lw]%Creset

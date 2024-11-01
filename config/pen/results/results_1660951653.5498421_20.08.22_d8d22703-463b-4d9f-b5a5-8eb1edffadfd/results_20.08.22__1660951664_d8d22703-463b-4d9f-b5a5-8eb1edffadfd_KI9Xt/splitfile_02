@@ -1,0 +1,14 @@
+
+#
+# This is a playbook for the Library.yaml file.  It is intended to be used
+# with the sync_library role.  See the Library.yaml file for more information.
+#
+# The Library is populated from a sync source, which is defined in the
+# Library.yaml file.  The sync source defines a set of content that should be
+# included in the Library.  The sync source also defines a set of filters that
+# can be used to control which content is included in the Library.  If a filter
+# does not match, then the content is not included in the Library.  If no
+# filters match, then all content is included in the Library.  Filters are applied
+# in order and once a filter matches, subsequent filters are not evaluated.  If you
+# want to include all content except for one type, then you should use an exclude
+# filter instead of

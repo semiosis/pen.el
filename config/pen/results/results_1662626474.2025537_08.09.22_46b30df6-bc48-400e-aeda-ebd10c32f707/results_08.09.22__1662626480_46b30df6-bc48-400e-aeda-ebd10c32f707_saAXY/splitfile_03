@@ -1,0 +1,1 @@
+ import System.Time main :: IO () main = do now <- getClockTime sn <- getSystemName s <- getProgName putStrLn $ "The time is " ++ show (formatTime defaultTimeLocale "%c" (

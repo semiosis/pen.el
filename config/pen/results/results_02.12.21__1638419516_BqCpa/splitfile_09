@@ -1,0 +1,1 @@
+there lived a lizard named " + user_input + ". " + user_input + " liked to eat bugs and mice.\nOne day, as " + user_input + " was sleeping, a bird came and ate half of " + user_input + "'s meal. "

@@ -1,0 +1,5 @@
+cd /root/notes;  "Psalms" "115:16" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "115:16-18" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "115:16" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "115:11-18" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "115:1-3" "#" "<==" "zsh"

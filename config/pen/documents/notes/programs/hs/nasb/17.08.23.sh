@@ -1,0 +1,7 @@
+cd /;  "nasb" "Judges" "15:19" "#" "<==" "sh"
+cd /;  "nasb" "Revelation" "21:27" "#" "<==" "sh"
+cd /;  "nasb" "Revelation" "21:26-27" "#" "<==" "sh"
+cd /;  "nasb" "Revelation" "21:25-27" "#" "<==" "sh"
+cd /;  "nasb" "Philippians" "4:19" "#" "<==" "sh"
+cd /;  "nasb" "Isaiah" "26:3" "#" "<==" "sh"
+cd /;  "nasb" "1" "Samuel" "2:30" "#" "<==" "sh"

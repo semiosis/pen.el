@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "nem" "nbd" "fast" "ebible" "-c" "-m" "KJV" "Deuteronomy 6:13" "#" "<==" "pen-ci"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "KJV" "Isaiah 30:1" "#" "<==" "pen-ci"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "KJV" "Psalms 2:7" "#" "<==" "pen-ci"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "KJV" "Isaiah 7:14" "#" "<==" "pen-ci"

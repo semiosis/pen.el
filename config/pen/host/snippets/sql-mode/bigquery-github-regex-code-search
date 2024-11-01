@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: bigquery-github-regex-code-search
+# key: bq-cs
+# --
+#standardSQL
+SELECT
+sample_repo_name,
+sample_path,
+(SELECT STRING_AGG(snip) FROM snippets.snip) AS snippets
+FROM (
+SELECT
+sample_repo_name, sample_path, REGEXP_EXTRACT_ALL(content, r'.*irc-send-command.*') AS snip
+FROM (
+SELECT sample_repo_name, content, sample_path FROM `bigquery-public-data.github_repos.sample_contents`
+WHERE TRUE
+AND REGEXP_CONTAINS(content, r'irc-send-command')
+AND REGEXP_CONTAINS(sample_path, r'.*rkt')
+)
+) snippets LIMIT 100

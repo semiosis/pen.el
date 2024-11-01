@@ -1,0 +1,5 @@
+ read(C), char_info(C), nl.
+
+char_info(C) :- member(char_info_letter(C), alphabets), nl.
+
+char_info(C) :

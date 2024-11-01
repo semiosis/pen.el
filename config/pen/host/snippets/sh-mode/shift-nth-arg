@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fn
+# group: 
+# key: fn
+# --
+bn="\$(basename "\$fp")"

@@ -1,0 +1,236 @@
+HTTP/1.1 200 OK
+Date: Fri, 26 Jan 2024 23:17:09 GMT
+Server: Apache/2.4.29
+Strict-Transport-Security: max-age=63072000
+X-Frame-Options: sameorigin
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: (null)
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+Expires: Fri, 26 Jan 2024 23:17:09 GMT
+Vary: Accept-Encoding
+Content-Length: 3548
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Language: en
+
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.0.3, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Programmed Completion (GNU Emacs Lisp Reference Manual)</title>
+
+<meta name="description" content="Programmed Completion (GNU Emacs Lisp Reference Manual)">
+<meta name="keywords" content="Programmed Completion (GNU Emacs Lisp Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rev="made" href="mailto:bug-gnu-emacs@gnu.org">
+<link rel="icon" type="image/png" href="/graphics/gnu-head-mini.png">
+<meta name="ICBM" content="42.256233,-71.006581">
+<meta name="DC.title" content="gnu.org">
+<style type="text/css">
+@import url('/software/emacs/manual.css');
+</style>
+</head>
+
+<body lang="en">
+<div class="subsection-level-extent" id="Programmed-Completion">
+<div class="nav-panel">
+<p>
+Next: <a href="Completion-in-Buffers.html" accesskey="n" rel="next">Completion in Ordinary Buffers</a>, Previous: <a href="Completion-Variables.html" accesskey="p" rel="prev">Completion Variables</a>, Up: <a href="Completion.html" accesskey="u" rel="up">Completion</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h4 class="subsection" id="Programmed-Completion-1">21.6.7 Programmed Completion</h4>
+<a class="index-entry-id" id="index-programmed-completion"></a>
+
+<p>Sometimes it is not possible or convenient to create an alist or
+an obarray containing all the intended possible completions ahead
+of time.  In such a case, you can supply your own function to compute
+the completion of a given string.  This is called <em class="dfn">programmed
+completion</em>.  Emacs uses programmed completion when completing file
+names (see <a class="pxref" href="File-Name-Completion.html">File Name Completion</a>), among many other cases.
+</p>
+<p>To use this feature, pass a function as the <var class="var">collection</var>
+argument to <code class="code">completing-read</code>.  The function
+<code class="code">completing-read</code> arranges to pass your completion function along
+to <code class="code">try-completion</code>, <code class="code">all-completions</code>, and other basic
+completion functions, which will then let your function do all
+the work.
+</p>
+<p>The completion function should accept three arguments:
+</p>
+<ul class="itemize mark-bullet">
+<li>The string to be completed.
+
+</li><li>A predicate function with which to filter possible matches, or
+<code class="code">nil</code> if none.  The function should call the predicate for each
+possible match, and ignore the match if the predicate returns
+<code class="code">nil</code>.
+
+</li><li>A flag specifying the type of completion operation to perform; see
+<a class="ref" href="Basic-Completion.html">Basic Completion Functions</a>, for the details of those operations.  This
+flag may be one of the following values.
+
+<dl class="table">
+<dt><code class="code">nil</code></dt>
+<dd><p>This specifies a <code class="code">try-completion</code> operation.  The function should
+return <code class="code">nil</code> if there are no matches; it should return <code class="code">t</code>
+if the specified string is a unique and exact match; and it should
+return the longest common prefix substring of all matches otherwise.
+</p>
+</dd>
+<dt><code class="code">t</code></dt>
+<dd><p>This specifies an <code class="code">all-completions</code> operation.  The function
+should return a list of all possible completions of the specified
+string.
+</p>
+</dd>
+<dt><code class="code">lambda</code></dt>
+<dd><p>This specifies a <code class="code">test-completion</code> operation.  The function
+should return <code class="code">t</code> if the specified string is an exact match for
+some completion alternative; <code class="code">nil</code> otherwise.
+</p>
+</dd>
+<dt><code class="code">(boundaries . <var class="var">suffix</var>)</code></dt>
+<dd><p>This specifies a <code class="code">completion-boundaries</code> operation.  The function
+should return <code class="code">(boundaries <var class="var">start</var> . <var class="var">end</var>)</code>, where
+<var class="var">start</var> is the position of the beginning boundary in the specified
+string, and <var class="var">end</var> is the position of the end boundary in
+<var class="var">suffix</var>.
+</p>
+<p>If a Lisp program returns nontrivial boundaries, it should make sure that the
+<code class="code">all-completions</code> operation is consistent with them.  The
+completions returned by <code class="code">all-completions</code> should only pertain to
+the piece of the prefix and suffix covered by the completion
+boundaries.  See <a class="xref" href="Basic-Completion.html">Basic Completion Functions</a>, for the precise expected semantics
+of completion boundaries.
+</p>
+<a class="index-entry-id" id="index-completion-metadata"></a>
+</dd>
+<dt><code class="code">metadata</code></dt>
+<dd><p>This specifies a request for information about the state of the
+current completion.  The return value should have the form
+<code class="code">(metadata . <var class="var">alist</var>)</code>, where <var class="var">alist</var> is an alist whose
+elements are described below.
+</p></dd>
+</dl>
+
+<p>If the flag has any other value, the completion function should return
+<code class="code">nil</code>.
+</p></li></ul>
+
+<p>The following is a list of metadata entries that a completion function
+may return in response to a <code class="code">metadata</code> flag argument:
+</p>
+<dl class="table">
+<dd><a class="index-entry-id" id="index-category_002c-in-completion"></a>
+<a class="index-entry-id" id="index-completion-category"></a>
+</dd>
+<dt><code class="code">category</code></dt>
+<dd><p>The value should be a symbol describing what kind of text the
+completion function is trying to complete.  If the symbol matches one
+of the keys in <code class="code">completion-category-overrides</code>, the usual
+completion behavior is overridden.  See <a class="xref" href="Completion-Variables.html">Completion Variables</a>.
+</p>
+<a class="index-entry-id" id="index-annotation_002dfunction_002c-in-completion"></a>
+</dd>
+<dt><code class="code">annotation-function</code></dt>
+<dd><p>The value should be a function for <em class="dfn">annotating</em> completions.  The
+function should take one argument, <var class="var">string</var>, which is a possible
+completion.  It should return a string, which is displayed after the
+completion <var class="var">string</var> in the <samp class="file">*Completions*</samp> buffer.
+Unless this function puts own face on the annotation suffix string,
+the <code class="code">completions-annotations</code> face is added by default to
+that string.
+</p>
+<a class="index-entry-id" id="index-affixation_002dfunction_002c-in-completion"></a>
+</dd>
+<dt><code class="code">affixation-function</code></dt>
+<dd><p>The value should be a function for adding prefixes and suffixes to
+completions.  The function should take one argument,
+<var class="var">completions</var>, which is a list of possible completions.  It should
+return such a list of <var class="var">completions</var> where each element contains a list
+of three elements: a completion, a prefix which is displayed before
+the completion string in the <samp class="file">*Completions*</samp> buffer, and
+a suffix displayed after the completion string.  This function
+takes priority over <code class="code">annotation-function</code>.
+</p>
+<a class="index-entry-id" id="index-group_002dfunction_002c-in-completion"></a>
+</dd>
+<dt><code class="code">group-function</code></dt>
+<dd><p>The value should be a function for grouping the completion candidates.
+The function must take two arguments, <var class="var">completion</var>, which is a
+completion candidate and <var class="var">transform</var>, which is a boolean flag.  If
+<var class="var">transform</var> is <code class="code">nil</code>, the function must return the group
+title of the group to which the candidate belongs.  The returned title
+can also be <code class="code">nil</code>.  Otherwise the function must return the
+transformed candidate.  The transformation can for example remove a
+redundant prefix, which is displayed in the group title.
+</p>
+<a class="index-entry-id" id="index-display_002dsort_002dfunction_002c-in-completion"></a>
+</dd>
+<dt><code class="code">display-sort-function</code></dt>
+<dd><p>The value should be a function for sorting completions.  The function
+should take one argument, a list of completion strings, and return a
+sorted list of completion strings.  It is allowed to alter the input
+list destructively.
+</p>
+<a class="index-entry-id" id="index-cycle_002dsort_002dfunction_002c-in-completion"></a>
+</dd>
+<dt><code class="code">cycle-sort-function</code></dt>
+<dd><p>The value should be a function for sorting completions, when
+<code class="code">completion-cycle-threshold</code> is non-<code class="code">nil</code> and the user is
+cycling through completion alternatives.  See <a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Completion-Options.html#Completion-Options">Completion Options</a> in <cite class="cite">The GNU Emacs Manual</cite>.  Its argument list and return value are
+the same as for <code class="code">display-sort-function</code>.
+</p></dd>
+</dl>
+
+<dl class="first-deffn first-defun-alias-first-deffn">
+<dt class="deffn defun-alias-deffn" id="index-completion_002dtable_002ddynamic"><span class="category-def">Function: </span><span><strong class="def-name">completion-table-dynamic</strong> <var class="def-var-arguments">function &amp;optional switch-buffer</var><a class="copiable-link" href='#index-completion_002dtable_002ddynamic'> &para;</a></span></dt>
+<dd><p>This function is a convenient way to write a function that can act as
+a programmed completion function.  The argument <var class="var">function</var> should
+be a function that takes one argument, a string, and returns a
+completion table (see <a class="pxref" href="Basic-Completion.html">Basic Completion Functions</a>) containing all the
+possible completions.  The table returned by <var class="var">function</var> can also
+include elements that don&rsquo;t match the string argument; they are
+automatically filtered out by <code class="code">completion-table-dynamic</code>.  In
+particular, <var class="var">function</var> can ignore its argument and return a full
+list of all possible completions.  You can think of
+<code class="code">completion-table-dynamic</code> as a transducer between <var class="var">function</var>
+and the interface for programmed completion functions.
+</p>
+<p>If the optional argument <var class="var">switch-buffer</var> is non-<code class="code">nil</code>, and
+completion is performed in the minibuffer, <var class="var">function</var> will be
+called with current buffer set to the buffer from which the minibuffer
+was entered.
+</p>
+<p>The return value of <code class="code">completion-table-dynamic</code> is a function that
+can be used as the 2nd argument to <code class="code">try-completion</code> and
+<code class="code">all-completions</code>.  Note that this function will always return
+empty metadata and trivial boundaries.
+</p></dd></dl>
+
+<dl class="first-deffn first-defun-alias-first-deffn">
+<dt class="deffn defun-alias-deffn" id="index-completion_002dtable_002dwith_002dcache"><span class="category-def">Function: </span><span><strong class="def-name">completion-table-with-cache</strong> <var class="def-var-arguments">function &amp;optional ignore-case</var><a class="copiable-link" href='#index-completion_002dtable_002dwith_002dcache'> &para;</a></span></dt>
+<dd><p>This is a wrapper for <code class="code">completion-table-dynamic</code> that saves the
+last argument-result pair.  This means that multiple lookups with the
+same argument only need to call <var class="var">function</var> once.  This can be useful
+when a slow operation is involved, such as calling an external process.
+</p></dd></dl>
+
+</div>
+<hr>
+<div class="nav-panel">
+<p>
+Next: <a href="Completion-in-Buffers.html">Completion in Ordinary Buffers</a>, Previous: <a href="Completion-Variables.html">Completion Variables</a>, Up: <a href="Completion.html">Completion</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

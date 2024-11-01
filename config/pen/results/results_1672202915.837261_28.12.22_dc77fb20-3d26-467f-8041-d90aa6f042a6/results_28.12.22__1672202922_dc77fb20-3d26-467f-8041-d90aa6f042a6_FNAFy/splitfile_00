@@ -1,0 +1,7 @@
+
+
+fun! ReselectVisual()
+    let @v = @s 
+    " Delete back to beginning of visual selection
+
+fun! SetChar()    let @char = @char + 1

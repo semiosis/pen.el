@@ -1,0 +1,42 @@
+title: Navigate NYC subway
+doc: ''
+tags: life
+prompt: "Welcome to Underground Assistant.\n\nintput: how to get from Franklin St
+  to South Ferry\noutput: Line 1 from Franklin St to South Ferry\n<delim>\nintput: how
+  to get from Bleeker St to Chambers St\noutput: Line 6 from Bleeker St to Chambers
+  St\n<delim>\ninput: how to get from Bowery to Chambers St\noutput: Line J from Bowery
+  to Chambers St\n<delim>\ninput: how to get from Bowery to Chambers St\noutput: Line
+  Z from Bowery to Chambers St\n<delim>\ninput: how to get from Prince St to Rector St\noutput:
+  Line R from Prince St to Rector St \n<delim>\ninput: how to get from Penn Station to
+  14 St\noutput: Line F from Penn Station to 14 St\n<delim>\ninput: how to get from Penn
+  Station to 18 St\noutput: Line 1 from Penn Station to 18 St\n<delim>\ninput: how to
+  get from Grand Central to Bowling Green\noutput: Line 4 from Grand Central to Bowling
+  Green \n<delim>\ninput: how to get from 168 St to Canal St\noutput: Line A from 168
+  St to Canal St\n<delim>\ninput: how to get from Penn Station to 168 St\noutput: Line
+  A from Penn Station to 168 St\n<delim>\ninput: how to get from 8 Av to 1 Av\noutput:
+  Line L from 8 Av to 1 Av\n<delim>\ninput: how to get from Fulton St to City Hall\noutput:
+  Line 4 to Canal St, Line R from Canal St to City Hall\n<delim>\ninput: how to get from
+  28 St to Prince St\noutput: Line R from 28 St to Prince St\n<delim>\ninput: how to get
+  from Grand Central to Times Sq\noutput: Line S from Grand Central to Times Sq\n<delim>\ninput:
+  how to get from Times Sq to Grand Central\noutput: Line S from Times Sq to Grand
+  Central\n<delim>\ninput: how to get from Grand Street to Times Sq\noutput: Line D from
+  Grand Street to Times Sq\n<delim>\ninput: how to get from Penn Station to Fulton St\noutput:
+  Line F from Penn Station to Fulton St\n<delim>\ninput: how to get from 49 St to 5 Av\noutput:
+  Line N from 49 St to 5 Av\n<delim>\ninput: how to get from Times Sq to Roosevelt Island\noutput:
+  Line E from Times Sq to Roosevelt Island\n<delim>\ninput: how to get from Rector St
+  to Franklin St\noutput: Line 1 from Rector St to Franklin St\n<delim>\ninput: how to
+  get from Canal St to Fulton St\noutput: Line C from Canal St to Fulton St\n<delim>\ninput:
+  how to get from Penn Station to Grand Central\noutput: Line 1 from Penn Station
+  to Times Sq, Line S from Times Sq to Grand Central\n<delim>\ninput: how to get from
+  Grand Central to Penn Station\noutput: Line S from Grand Central to Times Sq, Line
+  1 from Times Sq to Penn Station\n<delim>\ninput: <1>\noutput:\n"
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- question
+examples:
+- how to get from Grand Central to Penn Station

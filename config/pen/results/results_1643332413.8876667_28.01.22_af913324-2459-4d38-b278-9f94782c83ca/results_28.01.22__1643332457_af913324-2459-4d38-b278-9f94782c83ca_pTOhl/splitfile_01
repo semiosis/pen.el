@@ -1,0 +1,12 @@
+t = 0
+miss = 0
+
+def get(key):
+    global miss
+    miss = miss + 1
+    return "null"
+
+print get("test")
+
+def put(key, value):
+    global

@@ -1,0 +1,5 @@
+peano:plus(0, s(0), s(s(s(0)))).
+true.
+
+?- peano:plus(s(s(0)), s(s(0)), X).
+X = s

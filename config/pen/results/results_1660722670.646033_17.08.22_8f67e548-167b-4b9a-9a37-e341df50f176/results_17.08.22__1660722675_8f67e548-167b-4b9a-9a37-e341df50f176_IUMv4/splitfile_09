@@ -1,0 +1,1 @@
+find . -name "*.el" | grep -v pen- | grep -v asoc | grep -v in-development | grep -v init-setup | grep -v helm-fzf

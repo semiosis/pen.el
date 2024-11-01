@@ -1,0 +1,811 @@
+HTTP/1.1 200 OK
+Date: Wed, 30 Mar 2022 12:30:13 GMT
+Server: Apache
+Strict-Transport-Security: max-age=63072000
+Last-Modified: Sat, 10 Apr 2021 18:02:38 GMT
+ETag: "9d85-5bfa2160144bd-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+X-XSS-Protection: 1; mode=block
+Content-Length: 12228
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<html><head><title>GNU bug report logs - #47215</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="nofollow">
+</head><BODY><h1>GNU bug report logs -  #47215<br>
+28.0.50; Let M-x switch between M-x and M-X</h1><strong><font size="+1" color="red">Please note:</font></strong> This is a static page, with minimal formatting, updated once a day.<br>Click <a href="../../cgi/bugreport.cgi?bug=47215">here</a> to see this page with the latest information and nicer formatting.<br><hr>Package: <A href="../pa/lemacs.html"><strong>emacs</strong></A>;
+Severity: <em>wishlist</em>;
+Reported by: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt;; dated Wed, 17 Mar 2021 17:57:01 UTC;
+Maintainer for emacs is
+<A href="../ma/lbug-2d_gnu-2d_emacs-40_gnu.org.html">bug-gnu-emacs@HIDDEN</A>.
+
+<hr>
+<h2>Message received at 47215 &lt;at&gt; debbugs.gnu.org:</h2><br>
+<pre>
+Received: (at 47215) by debbugs.gnu.org; 10 Apr 2021 17:57:00 +0000
+From debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org Sat Apr 10 13:57:00 2021
+Received: from localhost ([127.0.0.1]:53243 helo=debbugs.gnu.org)
+	by debbugs.gnu.org with esmtp (Exim 4.84_2)
+	(envelope-from &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;)
+	id 1lVHqt-0006rq-RE
+	for submit &lt;at&gt; debbugs.gnu.org; Sat, 10 Apr 2021 13:57:00 -0400
+Received: from mail-ed1-f47.google.com ([209.85.208.47]:36409)
+ by debbugs.gnu.org with esmtp (Exim 4.84_2)
+ (envelope-from &lt;felician.nemeth@HIDDEN&gt;) id 1lVHqr-0006rb-8q
+ for 47215 &lt;at&gt; debbugs.gnu.org; Sat, 10 Apr 2021 13:56:58 -0400
+Received: by mail-ed1-f47.google.com with SMTP id 18so10206764edx.3
+ for &lt;47215 &lt;at&gt; debbugs.gnu.org&gt;; Sat, 10 Apr 2021 10:56:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+ h=from:to:cc:subject:references:date:in-reply-to:message-id
+ :user-agent:face:mime-version;
+ bh=gWyYRXYKwaq9XsbHaIs4FJ8uxmsiZfOQ8aIQOuX6qXI=;
+ b=rxRGibH6VKqnCscclbXJJGWBN1yTRxTKgrpAmbVpUYYgcgTiZk1G9pkXD2Kza30pjB
+ HaSAeSg5j2ZTa3X2lKH2jvuVTcjFRxUPTOG2RF6X5zGG5XK/fbpyBJIkyUbATIKLMB4w
+ E44HHKI+VmZpGMaZYSdRO48ubV4CapseBnJ9zPNbco0ivdQpeNdOJwPJiM1BF7yfzBFI
+ 6iE1Hmc9woMylaW3CJob+9dvU5vXwetzO4naqSPmeSkMdOtQaQKehb8rm7/uY1sV5zYD
+ K8IO163LmhhfY7MrJZEfXLPBg8zM+2F0I1VDEaPLifQX/6UgXTLCTEHnK40ARw1jZZmG
+ J+0Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:from:to:cc:subject:references:date:in-reply-to
+ :message-id:user-agent:face:mime-version;
+ bh=gWyYRXYKwaq9XsbHaIs4FJ8uxmsiZfOQ8aIQOuX6qXI=;
+ b=rVI1hsdtXyjIOD4uSvqYwjrC+XzCo/lSxDs1uxX1awUfxq6Vn9vr2LqNi2ort5852C
+ cpwle9WU+BVwapzII0qOIX4PBJD287SEHopsSKLfA59WxOYxaAxDZjYswjSSq95e6wku
+ A757qE6h/wqkvZEkLlc8ES9t8LROlzZjmF/K1g/MV29e/yLuuNUV00QHxslZAZM8uT7y
+ yEqubpeQ/CyKgH6Y63FOyG+BYyX1tkdtYgALl5Rc7BRAT418hvsuTfykXTcfBWTmohRX
+ ZT1egREwa+5A4VBn2b8S5UAPnE7cAgKmsOiDANeENdOTfognx288fro3OPFgwRKN0/ob
+ ZESw==
+X-Gm-Message-State: AOAM530KkmCtk4011tUNgirDoMeKCmTQjJudlr9FdWeOg9hhC9LV3r9E
+ 2ucJjCZhAv8yuRc5XKMa5/Qi0S3sUmA=
+X-Google-Smtp-Source: ABdhPJxSZbQew2BLL19kf5W34HsWkj85YogFp/Gv/cU6Hd+QR0jK+ODdGiY67aRbTKnafv4sE2wx+Q==
+X-Received: by 2002:a05:6402:27d4:: with SMTP id
+ c20mr22761816ede.271.1618077411080; 
+ Sat, 10 Apr 2021 10:56:51 -0700 (PDT)
+Received: from betli.gmail.com (catv-89-135-146-28.catv.broadband.hu.
+ [89.135.146.28])
+ by smtp.gmail.com with ESMTPSA id gb22sm2902780ejc.78.2021.04.10.10.56.49
+ (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+ Sat, 10 Apr 2021 10:56:50 -0700 (PDT)
+From: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt;
+To: Lars Ingebrigtsen &lt;larsi@HIDDEN&gt;
+Subject: Re: bug#47215: 28.0.50; Let M-x switch between M-x and M-X
+References: &lt;87tup91x6b.fsf@HIDDEN&gt; &lt;87tup9t5f6.fsf@HIDDEN&gt;
+ &lt;87k0pi546i.fsf@HIDDEN&gt; &lt;87czv9g74a.fsf@HIDDEN&gt;
+Date: Sat, 10 Apr 2021 19:56:49 +0200
+In-Reply-To: &lt;87czv9g74a.fsf@HIDDEN&gt; (Lars Ingebrigtsen's message of &quot;Sun,
+ 04 Apr 2021 21:52:21 +0200&quot;)
+Message-ID: &lt;87r1ji3twe.fsf@HIDDEN&gt;
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/26.3 (gnu/linux)
+Face: iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAFVBMVEUMBwgHAgMFAAGPjY7/
+ //80MDHq6eqJt3pKAAABr0lEQVQ4jX2UzZKDIAzHqR177q7TPbtx2HMr6guQcrbY9txZ0fd/hA0f
+ onXazcEJ/CD8E4Js8/HS9mwjXtqeMRxHXJkakTEm4b4GPVQW8PU8ov4fQCqeThlF60MBWdo1IXzd
+ 2nEEZE7CEAZLwI0N/gJAhTj7ESQAX4gPgO8lyI+cvgViSVPlNomAj2M9gW40eg7VWY3cATjUcyiO
+ Z+i03cFruGLYoUR7VyU3HihdmCEVhoDN65FXkpbSxkomOzsTQN/gySaodGb9Gdi1oSRXP46gdBWh
+ LcUKJNdeGCWac74GKakmne0aHCFvyqJPYLsCFAVlhRTvGdzMdLHqtgRyUulyXIAH7CYQ3AB0Nody
+ JQhAkq/qtOnbjhxdzYDkXPxlH5y4WdUAeUcX1NVJ6GR7UQEYPGWoAnA36OQNn5lRRp38vHTAp9Br
+ LoTmvlPPDoRCKzpjG1SXT89AaT5l456BamJuMcs+NIOMzJ/s5dI6yUVcrARlruwOebfdv6gunTn4
+ ww3+QjGBEn5suVyLHoSGvAqREuDLN+iqZ+VcFg+HBbsJUU9+FZthbez9T+bdb+kPv2Ls6ct3hTkA
+ AAAASUVORK5CYII=
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=&quot;=-=-=&quot;
+X-Spam-Score: 0.0 (/)
+X-Debbugs-Envelope-To: 47215
+Cc: 47215 &lt;at&gt; debbugs.gnu.org
+X-BeenThere: debbugs-submit &lt;at&gt; debbugs.gnu.org
+X-Mailman-Version: 2.1.18
+Precedence: list
+List-Id: &lt;debbugs-submit.debbugs.gnu.org&gt;
+List-Unsubscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/options/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=unsubscribe&gt;
+List-Archive: &lt;https://debbugs.gnu.org/cgi-bin/mailman/private/debbugs-submit/&gt;
+List-Post: &lt;mailto:debbugs-submit &lt;at&gt; debbugs.gnu.org&gt;
+List-Help: &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=help&gt;
+List-Subscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/listinfo/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=subscribe&gt;
+Errors-To: debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org
+Sender: &quot;Debbugs-submit&quot; &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;
+X-Spam-Score: -1.0 (-)
+
+--=-=-=
+Content-Type: text/plain
+
+Lars Ingebrigtsen &lt;larsi@HIDDEN&gt; writes:
+
+&gt; Felician Nemeth &lt;felician.nemeth@HIDDEN&gt; writes:
+&gt;
+&gt;&gt;&gt; I'm not quite sure how to implement this, though -- we basically end up
+&gt;&gt;&gt; in `completing-read', and `execute-extended-command-for-buffer' would
+&gt;&gt;&gt; have to define an `M-x' binding there, I guess...  and then somehow call
+&gt;&gt;&gt; `read-extended-command' with the text already in the minibuffer.
+&gt;&gt;&gt;
+&gt;&gt;&gt; Anybody got an idea as to how to implement this without rewriting
+&gt;&gt;&gt; `read-extended-command' completely?
+&gt;&gt;
+&gt;&gt; The execute-extended-commands have two undocumented optional arguments
+&gt;&gt; (command-name and typed).  What are they used for?
+&gt;&gt;
+&gt;&gt; Anyway, following the fallback logic of `ido-find-file', I was able to
+&gt;&gt; rebind `M-x' and save the content of the minibuffer with a non-standard
+&gt;&gt; exit from `execute-extended-command'.  Maybe the ugly code below can
+&gt;&gt; give ideas to someone more knowledgeable.
+&gt;
+&gt; Thanks -- I was wondering more about the situation where you've typed
+&gt;
+&gt; M-X foo|bar
+&gt;
+&gt; (| for point)
+&gt;
+&gt; and then hit `M-x' because you want to switch to the other mode.
+&gt; Ideally, `M-x' should do that, and also preserve the text the user has
+&gt; typed, and the cursor position.  I don't see an obvious simple way to do
+&gt; that... 
+
+I've discovered that the initial-input argument of `completing-read` can
+be written as (STRING . POSITION).  The attached patch makes use of it
+and shows a simple implementation of my original wish.
+
+However, the patch creates code duplication.  Also, I don't know how it
+copes with recursive editing: maybe it's not a good idea to rebind M-x
+when `enable-recursive-minibuffers' is t.  Finally, the docstring says
+initial-input is deprecated.
+
+I'm happy to work on the patch if you guide me to the right direction,
+but this time I'd rather receive a fish instead of being taught how to
+fish :)
+
+
+--=-=-=
+Content-Type: #(&quot;text/x-diff&quot; 0 11 (face iswitchb-current-match))
+Content-Disposition: attachment; filename=m-x.patch
+Content-Transfer-Encoding: quoted-printable
+
+diff --git a/lisp/simple.el b/lisp/simple.el
+index c48e644345..1bd8ba5993 100644
+--- a/lisp/simple.el
++++ b/lisp/simple.el
+@@ -1949,7 +1949,46 @@ read-extended-command-predicate
+                         command-completion-default-include-p)
+                  (function :tag &quot;Other function&quot;)))
+=20
+-(defun read-extended-command ()
++(defun execute-extended-command--cycle ()
++  (interactive)
++  (throw 'cycle
++         (cons 'cycle (cons (minibuffer-contents)
++                            (- (point) (minibuffer-prompt-end))))))
++
++(defun read-extended-command (&amp;optional prompt)
++  (let ((minibuffer-local-must-match-map minibuffer-local-must-match-map)
++        (read-extended-command-predicate read-extended-command-predicate)
++        initial-input ret)
++    (define-key minibuffer-local-must-match-map
++      (kbd &quot;M-x&quot;) #'execute-extended-command--cycle)
++    (while (not ret)
++      (setq ret (catch 'cycle
++                  (read-extended-command-1 prompt initial-input)))
++      (when (and (consp ret) (eq 'cycle (car ret)))
++        ;; Cycle to the next setting.  There's only two, so it's easy to d=
+o.
++        (if read-extended-command-predicate
++            (setq prompt &quot;M-x &quot;
++                  read-extended-command-predicate nil)
++          (let ((keymaps
++                  ;; The major mode's keymap and any active minor modes.
++                  (cons
++                   (current-local-map)
++                   (mapcar
++                    #'cdr
++                    (seq-filter
++                     (lambda (elem)
++                       (symbol-value (car elem)))
++                     minor-mode-map-alist)))))
++            (setq prompt &quot;M-X &quot;)
++            (setq read-extended-command-predicate
++                  (lambda (symbol buffer)
++                    (or (command-completion-using-modes-p symbol buffer)
++                        (where-is-internal symbol keymaps))))))
++        (setq initial-input (cdr ret))
++        (setq ret nil)))
++    ret))
++
++(defun read-extended-command-1 (prompt initial-input)
+   &quot;Read command name to invoke in `execute-extended-command'.
+ This function uses the `read-extended-command-predicate' user option.&quot;
+   (let ((buffer (current-buffer)))
+@@ -1976,8 +2015,8 @@ read-extended-command
+ 		              (cons def (delete def all))
+ 		            all)))))
+       ;; Read a string, completing from and restricting to the set of
+-      ;; all defined commands.  Don't provide any initial input.
+-      ;; Save the command read on the extended-command history list.
++      ;; all defined commands.  Save the command read on the
++      ;; extended-command history list.
+       (completing-read
+        (concat (cond
+ 	        ((eq current-prefix-arg '-) &quot;- &quot;)
+@@ -1994,9 +2033,7 @@ read-extended-command
+ 	       ;; but actually a prompt other than &quot;M-x&quot; would be confusing,
+ 	       ;; because &quot;M-x&quot; is a well-known prompt to read a command
+ 	       ;; and it serves as a shorthand for &quot;Extended command: &quot;.
+-               (if (memq 'shift (event-modifiers last-command-event))
+-	           &quot;M-X &quot;
+-	         &quot;M-x &quot;))
++               (or prompt &quot;M-x &quot;))
+        (lambda (string pred action)
+          (if (and suggest-key-bindings (eq action 'metadata))
+ 	     '(metadata
+@@ -2013,7 +2050,7 @@ read-extended-command
+                          (funcall read-extended-command-predicate sym buff=
+er)
+                        (error (message &quot;read-extended-command-predicate: %=
+s: %s&quot;
+                                        sym (error-message-string err))))))=
+))
+-       t nil 'extended-command-history))))
++       t initial-input 'extended-command-history))))
+=20
+ (defun command-completion-using-modes-p (symbol buffer)
+   &quot;Say whether SYMBOL has been marked as a mode-specific command in BUFFER=
+.&quot;
+@@ -2241,7 +2278,7 @@ execute-extended-command-for-buffer
+              (or (command-completion-using-modes-p symbol buffer)
+                  (where-is-internal symbol keymaps)))))
+      (list current-prefix-arg
+-           (read-extended-command)
++           (read-extended-command &quot;M-X &quot;)
+            execute-extended-command--last-typed)))
+   (with-suppressed-warnings ((interactive-only execute-extended-command))
+     (execute-extended-command prefixarg command-name typed)))
+
+--=-=-=--
+
+
+
+</pre>
+<hr>
+<!-- request_addr: bug-gnu-emacs@HIDDEN -->
+<!-- time:1618077422 -->
+<strong>Information forwarded</strong>
+to <code>bug-gnu-emacs@HIDDEN</code>:<br>
+<code>bug#47215</code>; Package <code>emacs</code>.
+  <em><A href="../47/47215-b.html#m6">Full text</A> available.</em><hr>
+<h2>Message received at 47215 &lt;at&gt; debbugs.gnu.org:</h2><br>
+<pre>
+Received: (at 47215) by debbugs.gnu.org; 4 Apr 2021 19:52:32 +0000
+From debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org Sun Apr 04 15:52:32 2021
+Received: from localhost ([127.0.0.1]:36503 helo=debbugs.gnu.org)
+	by debbugs.gnu.org with esmtp (Exim 4.84_2)
+	(envelope-from &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;)
+	id 1lT8nQ-000151-Ja
+	for submit &lt;at&gt; debbugs.gnu.org; Sun, 04 Apr 2021 15:52:32 -0400
+Received: from quimby.gnus.org ([95.216.78.240]:50412)
+ by debbugs.gnu.org with esmtp (Exim 4.84_2)
+ (envelope-from &lt;larsi@HIDDEN&gt;) id 1lT8nO-00014o-UR
+ for 47215 &lt;at&gt; debbugs.gnu.org; Sun, 04 Apr 2021 15:52:31 -0400
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=gnus.org;
+ s=20200322; h=Content-Type:MIME-Version:Message-ID:In-Reply-To:Date:
+ References:Subject:Cc:To:From:Sender:Reply-To:Content-Transfer-Encoding:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=OdzlhP/cvmU4GMKoFevgXTaYZJBKhJecQvSEgSn9vBg=; b=UbL+WsR+67vQbSlCXqv7qmSFiE
+ LLWqAZXO5usbWmyxQ+zPsCzHpmsktvguIECgd6OIthB5h3q2H1cV6wpOPxC7Qa6lv1LhtJPVU00pS
+ MaTK7zMOqTuftBZVV9AFdmfWxpii+cRl9Eowwf7JGC5NQwJW7jOhN+QYXAEJLv+UVpwI=;
+Received: from cm-84.212.220.105.getinternet.no ([84.212.220.105] helo=xo)
+ by quimby.gnus.org with esmtpsa (TLS1.3:ECDHE_RSA_AES_256_GCM_SHA384:256)
+ (Exim 4.92) (envelope-from &lt;larsi@HIDDEN&gt;)
+ id 1lT8nG-00028V-Dr; Sun, 04 Apr 2021 21:52:25 +0200
+From: Lars Ingebrigtsen &lt;larsi@HIDDEN&gt;
+To: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt;
+Subject: Re: bug#47215: 28.0.50; Let M-x switch between M-x and M-X
+References: &lt;87tup91x6b.fsf@HIDDEN&gt; &lt;87tup9t5f6.fsf@HIDDEN&gt;
+ &lt;87k0pi546i.fsf@HIDDEN&gt;
+Face: iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAgMAAAAqbBEUAAAAAXNSR0IArs4c6QAAAAlQTFRF
+ PEZFqbOn////C9F+/gAAAAFiS0dEAmYLfGQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfl
+ BAQTERSn3PtCAAAAtklEQVQoz53SsQ7EIAgAUEhkd9D/0eS6awL//ysn2iJtbzqHhhdUUAvwz8js
+ hS6uot+0IAMobYOkJ4OMMfeJAdsIF6gha0bgWvZCWVU98gKrwgktfE5a81AOse2wuwzYNO2BfkKe
+ gBuyB3rQDYf1tlPXGWKzoyJH6HxeHY2gH1ox6JoWV/kkZdxuljqgp8Fr5663KZwY2u6yvFreqB9D
+ 6sUyHUYXE4F4v0Ai9xz2J7hnmuAHwoy/b/Bi7ODUWv0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjEt
+ MDQtMDRUMTk6MTc6MTkrMDA6MDBGFyk9AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTA0LTA0VDE5
+ OjE3OjE5KzAwOjAwN0qRgQAAADh0RVh0aWNjOmNvcHlyaWdodABDb3B5cmlnaHQgKGMpIDE5OTgg
+ SGV3bGV0dC1QYWNrYXJkIENvbXBhbnn5V3k3AAAAIXRFWHRpY2M6ZGVzY3JpcHRpb24Ac1JHQiBJ
+ RUM2MTk2Ni0yLjFXrdpHAAAAJnRFWHRpY2M6bWFudWZhY3R1cmVyAElFQyBodHRwOi8vd3d3Lmll
+ Yy5jaBx/AEwAAAA3dEVYdGljYzptb2RlbABJRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91
+ ciBzcGFjZSAtIHNSR0JEU0ipAAAAAElFTkSuQmCC
+X-Now-Playing: The Notwist's _Vertigo Days_: &quot;Ghost&quot;
+Date: Sun, 04 Apr 2021 21:52:21 +0200
+In-Reply-To: &lt;87k0pi546i.fsf@HIDDEN&gt; (Felician Nemeth's message of
+ &quot;Sun, 04 Apr 2021 19:51:17 +0200&quot;)
+Message-ID: &lt;87czv9g74a.fsf@HIDDEN&gt;
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/28.0.50 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Spam-Report: Spam detection software, running on the system &quot;quimby.gnus.org&quot;,
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ @@CONTACT_ADDRESS@@ for details.
+ Content preview:  Felician Nemeth &lt;felician.nemeth@HIDDEN&gt; writes: &gt;&gt; I'm
+ not quite sure how to implement this, though -- we basically end up &gt;&gt; in
+ `completing-read', and `execute-extended-command-for-buffer' would &gt;&gt; have
+ to define an `M-x' binding there, I guess... [...] 
+ Content analysis details:   (-2.9 points, 5.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -1.0 ALL_TRUSTED            Passed through trusted hosts only via SMTP
+ -1.9 BAYES_00               BODY: Bayes spam probability is 0 to 1%
+ [score: 0.0000]
+X-Spam-Score: 0.0 (/)
+X-Debbugs-Envelope-To: 47215
+Cc: 47215 &lt;at&gt; debbugs.gnu.org
+X-BeenThere: debbugs-submit &lt;at&gt; debbugs.gnu.org
+X-Mailman-Version: 2.1.18
+Precedence: list
+List-Id: &lt;debbugs-submit.debbugs.gnu.org&gt;
+List-Unsubscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/options/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=unsubscribe&gt;
+List-Archive: &lt;https://debbugs.gnu.org/cgi-bin/mailman/private/debbugs-submit/&gt;
+List-Post: &lt;mailto:debbugs-submit &lt;at&gt; debbugs.gnu.org&gt;
+List-Help: &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=help&gt;
+List-Subscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/listinfo/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=subscribe&gt;
+Errors-To: debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org
+Sender: &quot;Debbugs-submit&quot; &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;
+X-Spam-Score: -1.0 (-)
+
+Felician Nemeth &lt;felician.nemeth@HIDDEN&gt; writes:
+
+&gt;&gt; I'm not quite sure how to implement this, though -- we basically end up
+&gt;&gt; in `completing-read', and `execute-extended-command-for-buffer' would
+&gt;&gt; have to define an `M-x' binding there, I guess...  and then somehow call
+&gt;&gt; `read-extended-command' with the text already in the minibuffer.
+&gt;&gt;
+&gt;&gt; Anybody got an idea as to how to implement this without rewriting
+&gt;&gt; `read-extended-command' completely?
+&gt;
+&gt; The execute-extended-commands have two undocumented optional arguments
+&gt; (command-name and typed).  What are they used for?
+&gt;
+&gt; Anyway, following the fallback logic of `ido-find-file', I was able to
+&gt; rebind `M-x' and save the content of the minibuffer with a non-standard
+&gt; exit from `execute-extended-command'.  Maybe the ugly code below can
+&gt; give ideas to someone more knowledgeable.
+
+Thanks -- I was wondering more about the situation where you've typed
+
+M-X foo|bar
+
+(| for point)
+
+and then hit `M-x' because you want to switch to the other mode.
+Ideally, `M-x' should do that, and also preserve the text the user has
+typed, and the cursor position.  I don't see an obvious simple way to do
+that... 
+
+-- 
+(domestic pets only, the antidote for overdose, milk.)
+   bloggy blog: http://lars.ingebrigtsen.no
+
+
+
+</pre>
+<hr>
+<!-- request_addr: bug-gnu-emacs@HIDDEN -->
+<!-- time:1617565982 -->
+<strong>Information forwarded</strong>
+to <code>bug-gnu-emacs@HIDDEN</code>:<br>
+<code>bug#47215</code>; Package <code>emacs</code>.
+  <em><A href="../47/47215-b.html#m5">Full text</A> available.</em><hr>
+<h2>Message received at 47215 &lt;at&gt; debbugs.gnu.org:</h2><br>
+<pre>
+Received: (at 47215) by debbugs.gnu.org; 4 Apr 2021 17:51:29 +0000
+From debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org Sun Apr 04 13:51:29 2021
+Received: from localhost ([127.0.0.1]:36404 helo=debbugs.gnu.org)
+	by debbugs.gnu.org with esmtp (Exim 4.84_2)
+	(envelope-from &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;)
+	id 1lT6uH-0002Mr-1n
+	for submit &lt;at&gt; debbugs.gnu.org; Sun, 04 Apr 2021 13:51:29 -0400
+Received: from mail-ed1-f46.google.com ([209.85.208.46]:42683)
+ by debbugs.gnu.org with esmtp (Exim 4.84_2)
+ (envelope-from &lt;felician.nemeth@HIDDEN&gt;) id 1lT6uD-0002Mc-91
+ for 47215 &lt;at&gt; debbugs.gnu.org; Sun, 04 Apr 2021 13:51:27 -0400
+Received: by mail-ed1-f46.google.com with SMTP id l18so10421849edc.9
+ for &lt;47215 &lt;at&gt; debbugs.gnu.org&gt;; Sun, 04 Apr 2021 10:51:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+ h=from:to:cc:subject:references:date:in-reply-to:message-id
+ :user-agent:face:mime-version;
+ bh=u4mvo6a6IRZKTDou/5/5LP9MBYKE/QSLS5LPp0OVqOA=;
+ b=D/gp8n3YfxU/twJ+xOvjCRCXTboipfcdn9u6R4kx0zORgkdHsuFpW+vN15fGXrEr+w
+ cNuDKNH5yj+VeDnrtsLx42VXZPcdDCtpCil0o6r2It6xruApCnABW+YN/a6qOrDF3EQu
+ M29nQi+OQwBsMEbB/kWzp4pHQw3FCeGWgWJigoFjr8NBh7ZRa1Vg4ku2MICDXQNw7qZj
+ Tzd/jWzD+Fi8/QAOGRs/X4nbnvBJ5qBymbwNIy0nNmTp8hoSX7J0vtcqT0JUdaYfGphu
+ baA7gjIzdpRZv3WL5t4kgxWxKOXzSGLrPUT/Xk/MX3WHPA/3IH8n7ldu8HxZ7gRAGGLA
+ 5Diw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:from:to:cc:subject:references:date:in-reply-to
+ :message-id:user-agent:face:mime-version;
+ bh=u4mvo6a6IRZKTDou/5/5LP9MBYKE/QSLS5LPp0OVqOA=;
+ b=JUo9FUAu6QX8yM8xJ9o/bUxJEfaGJEXF90PJMEmEnfWGkT+tPWUhTPjrRFWcjv9irZ
+ uBxw/17/0VFAJ4rhQm6zkUnlLBeFZEzlW+5yEmBbRfpr0KMDcX8nNWM+yiBzWCCxmt08
+ PNzxL5Eb+l0u2VwtJ2WbmmF4KhhKluHK1tkQ15xwzURoSgUb2hm9Z4rFu2qnwbTsZCvo
+ gTdxp6ebFqdAmp9xPnXeePRV0+cjH5zDiInXMPpIoljX7zMHhKgebM6sqg9D4tPPdOmt
+ +S/JW9pGUS/TwVaGAPKZmXH0nkFAeD8HLplD1UBy1LWrUszdzfl10kgcWRnNES+yHWXp
+ G2eg==
+X-Gm-Message-State: AOAM531rSlF2xDsy7SAxX1xYPSCeud7IGoH38BhbHFpXbUTXpSAmVkJP
+ 9AVJ6iaWjkqblNIHBaur4bc=
+X-Google-Smtp-Source: ABdhPJxhNj6KkVNvpbnyXJG7/saH74q/aGpvAO6EgUKQimuHB8mz8cUzlIDxR10ckgmJP0w9fTT1Ew==
+X-Received: by 2002:aa7:c7c5:: with SMTP id o5mr26973065eds.31.1617558679398; 
+ Sun, 04 Apr 2021 10:51:19 -0700 (PDT)
+Received: from betli.gmail.com (catv-89-135-146-28.catv.broadband.hu.
+ [89.135.146.28])
+ by smtp.gmail.com with ESMTPSA id z9sm9335445edr.75.2021.04.04.10.51.18
+ (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+ Sun, 04 Apr 2021 10:51:19 -0700 (PDT)
+From: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt;
+To: 47215 &lt;at&gt; debbugs.gnu.org
+Subject: Re: bug#47215: 28.0.50; Let M-x switch between M-x and M-X
+References: &lt;87tup91x6b.fsf@HIDDEN&gt; &lt;87tup9t5f6.fsf@HIDDEN&gt;
+Date: Sun, 04 Apr 2021 19:51:17 +0200
+In-Reply-To: &lt;87tup9t5f6.fsf@HIDDEN&gt; (Lars Ingebrigtsen's message of &quot;Thu,
+ 18 Mar 2021 06:08:29 +0100&quot;)
+Message-ID: &lt;87k0pi546i.fsf@HIDDEN&gt;
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/26.3 (gnu/linux)
+Face: iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAFVBMVEUMBwgHAgMFAAGPjY7/
+ //80MDHq6eqJt3pKAAABr0lEQVQ4jX2UzZKDIAzHqR177q7TPbtx2HMr6guQcrbY9txZ0fd/hA0f
+ onXazcEJ/CD8E4Js8/HS9mwjXtqeMRxHXJkakTEm4b4GPVQW8PU8ov4fQCqeThlF60MBWdo1IXzd
+ 2nEEZE7CEAZLwI0N/gJAhTj7ESQAX4gPgO8lyI+cvgViSVPlNomAj2M9gW40eg7VWY3cATjUcyiO
+ Z+i03cFruGLYoUR7VyU3HihdmCEVhoDN65FXkpbSxkomOzsTQN/gySaodGb9Gdi1oSRXP46gdBWh
+ LcUKJNdeGCWac74GKakmne0aHCFvyqJPYLsCFAVlhRTvGdzMdLHqtgRyUulyXIAH7CYQ3AB0Nody
+ JQhAkq/qtOnbjhxdzYDkXPxlH5y4WdUAeUcX1NVJ6GR7UQEYPGWoAnA36OQNn5lRRp38vHTAp9Br
+ LoTmvlPPDoRCKzpjG1SXT89AaT5l456BamJuMcs+NIOMzJ/s5dI6yUVcrARlruwOebfdv6gunTn4
+ ww3+QjGBEn5suVyLHoSGvAqREuDLN+iqZ+VcFg+HBbsJUU9+FZthbez9T+bdb+kPv2Ls6ct3hTkA
+ AAAASUVORK5CYII=
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Spam-Score: 0.0 (/)
+X-Debbugs-Envelope-To: 47215
+Cc: Lars Ingebrigtsen &lt;larsi@HIDDEN&gt;
+X-BeenThere: debbugs-submit &lt;at&gt; debbugs.gnu.org
+X-Mailman-Version: 2.1.18
+Precedence: list
+List-Id: &lt;debbugs-submit.debbugs.gnu.org&gt;
+List-Unsubscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/options/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=unsubscribe&gt;
+List-Archive: &lt;https://debbugs.gnu.org/cgi-bin/mailman/private/debbugs-submit/&gt;
+List-Post: &lt;mailto:debbugs-submit &lt;at&gt; debbugs.gnu.org&gt;
+List-Help: &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=help&gt;
+List-Subscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/listinfo/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=subscribe&gt;
+Errors-To: debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org
+Sender: &quot;Debbugs-submit&quot; &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;
+X-Spam-Score: -1.0 (-)
+
+&gt;&gt; I wish there was a convenient way to switch back and forth between
+&gt;&gt; execute-extended-command and execute-extended-command-for-buffer.  I
+&gt;&gt; think M-x would be an ideal binding for this as it is easy to press and
+&gt;&gt; more useful than the current &quot;Command attempted to use minibuffer while
+&gt;&gt; in minibuffer&quot;.
+&gt;&gt;
+&gt;&gt; I'd imagine this feature being somewhat analogous to how ido-find-file
+&gt;&gt; falls back to find-file after C-f.
+&gt;
+&gt; Yes, being able to move from `execute-extended-command-for-buffer' to
+&gt; `execute-extended-command' makes sense, but I'm not sure the other
+&gt; direction is as useful.  And while there's only two of these commands
+&gt; today, I think it's likely that (in the future) that we'll grow more of
+&gt; these.
+
+I think cycling makes even more sense when there are more than two of
+these execute-extended-commands.  Currently, going from
+`execute-extended-command' to `execute-extended-command-for-buffer'
+would be useful for me because I can type M-x M-x more easily than type
+M-X.
+
+&gt; I'm not quite sure how to implement this, though -- we basically end up
+&gt; in `completing-read', and `execute-extended-command-for-buffer' would
+&gt; have to define an `M-x' binding there, I guess...  and then somehow call
+&gt; `read-extended-command' with the text already in the minibuffer.
+&gt;
+&gt; Anybody got an idea as to how to implement this without rewriting
+&gt; `read-extended-command' completely?
+
+The execute-extended-commands have two undocumented optional arguments
+(command-name and typed).  What are they used for?
+
+Anyway, following the fallback logic of `ido-find-file', I was able to
+rebind `M-x' and save the content of the minibuffer with a non-standard
+exit from `execute-extended-command'.  Maybe the ugly code below can
+give ideas to someone more knowledgeable.
+
+
+(defun my-exit ()
+  (interactive)
+  (throw 'cycle (cons 'cycle (minibuffer-contents))))
+
+(let ((minibuffer-local-completion-map minibuffer-local-completion-map)
+      ret)
+  (define-key minibuffer-local-completion-map (kbd &quot;M-x&quot;) 'my-exit)
+  (setq ret (catch 'cycle
+	      (execute-extended-command nil)))
+  (if (eq 'cycle (car ret))
+      (message &quot;Should switch to M-X with %s&quot; (cdr ret))
+    ret))
+
+
+Thanks.
+
+
+
+</pre>
+<hr>
+<!-- request_addr: bug-gnu-emacs@HIDDEN -->
+<!-- time:1617558721 -->
+<strong>Information forwarded</strong>
+to <code>bug-gnu-emacs@HIDDEN</code>:<br>
+<code>bug#47215</code>; Package <code>emacs</code>.
+  <em><A href="../47/47215-b.html#m4">Full text</A> available.</em><hr>
+<h2>Message received at 47215 &lt;at&gt; debbugs.gnu.org:</h2><br>
+<pre>
+Received: (at 47215) by debbugs.gnu.org; 18 Mar 2021 05:08:55 +0000
+From debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org Thu Mar 18 01:08:55 2021
+Received: from localhost ([127.0.0.1]:44593 helo=debbugs.gnu.org)
+	by debbugs.gnu.org with esmtp (Exim 4.84_2)
+	(envelope-from &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;)
+	id 1lMktz-0005WG-1D
+	for submit &lt;at&gt; debbugs.gnu.org; Thu, 18 Mar 2021 01:08:55 -0400
+Received: from quimby.gnus.org ([95.216.78.240]:38604)
+ by debbugs.gnu.org with esmtp (Exim 4.84_2)
+ (envelope-from &lt;larsi@HIDDEN&gt;) id 1lMktl-0005Vn-8N
+ for 47215 &lt;at&gt; debbugs.gnu.org; Thu, 18 Mar 2021 01:08:53 -0400
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=gnus.org;
+ s=20200322; h=Content-Type:MIME-Version:Message-ID:In-Reply-To:Date:
+ References:Subject:Cc:To:From:Sender:Reply-To:Content-Transfer-Encoding:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=MO+GxKHgXwx1RwQH5BWrm9+9krKrPQHtg9VbftQo4dI=; b=CESUB1YEtH2vq5vMqHOVokWwXU
+ 74gld+qKJA9Cu81AZEypdeehCOzsxN1IRQC4sAsZqeqaDS7ZqeinE4+lZk4teyoXsnLEu+TBEvesG
+ 1f1jycDOhzzLlJlalZ79KaJNcb2IFMPje8GyanDzWNH0L7Y8ppKExQCKHUWhaIVt2dLs=;
+Received: from cm-84.212.220.105.getinternet.no ([84.212.220.105] helo=xo)
+ by quimby.gnus.org with esmtpsa (TLS1.3:ECDHE_RSA_AES_256_GCM_SHA384:256)
+ (Exim 4.92) (envelope-from &lt;larsi@HIDDEN&gt;)
+ id 1lMktb-0008FP-3B; Thu, 18 Mar 2021 06:08:34 +0100
+From: Lars Ingebrigtsen &lt;larsi@HIDDEN&gt;
+To: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt;
+Subject: Re: bug#47215: 28.0.50; Let M-x switch between M-x and M-X
+References: &lt;87tup91x6b.fsf@HIDDEN&gt;
+X-Now-Playing: Themselves's _CrownsDown_: &quot;backIIburn&quot;
+Date: Thu, 18 Mar 2021 06:08:29 +0100
+In-Reply-To: &lt;87tup91x6b.fsf@HIDDEN&gt; (Felician Nemeth's message of
+ &quot;Wed, 17 Mar 2021 18:56:28 +0100&quot;)
+Message-ID: &lt;87tup9t5f6.fsf@HIDDEN&gt;
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/28.0.50 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Spam-Report: Spam detection software, running on the system &quot;quimby.gnus.org&quot;,
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ @@CONTACT_ADDRESS@@ for details.
+ Content preview: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt; writes: &gt; I wish
+ there was a convenient way to switch back and forth between &gt;
+ execute-extended-command
+ and execute-extended-command-for-buffer. I &gt; think M-x would be an ideal
+ binding for this as it is easy [...] 
+ Content analysis details:   (-2.9 points, 5.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -1.0 ALL_TRUSTED            Passed through trusted hosts only via SMTP
+ -1.9 BAYES_00               BODY: Bayes spam probability is 0 to 1%
+ [score: 0.0000]
+X-Spam-Score: 0.0 (/)
+X-Debbugs-Envelope-To: 47215
+Cc: 47215 &lt;at&gt; debbugs.gnu.org
+X-BeenThere: debbugs-submit &lt;at&gt; debbugs.gnu.org
+X-Mailman-Version: 2.1.18
+Precedence: list
+List-Id: &lt;debbugs-submit.debbugs.gnu.org&gt;
+List-Unsubscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/options/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=unsubscribe&gt;
+List-Archive: &lt;https://debbugs.gnu.org/cgi-bin/mailman/private/debbugs-submit/&gt;
+List-Post: &lt;mailto:debbugs-submit &lt;at&gt; debbugs.gnu.org&gt;
+List-Help: &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=help&gt;
+List-Subscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/listinfo/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=subscribe&gt;
+Errors-To: debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org
+Sender: &quot;Debbugs-submit&quot; &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;
+X-Spam-Score: -1.0 (-)
+
+Felician Nemeth &lt;felician.nemeth@HIDDEN&gt; writes:
+
+&gt; I wish there was a convenient way to switch back and forth between
+&gt; execute-extended-command and execute-extended-command-for-buffer.  I
+&gt; think M-x would be an ideal binding for this as it is easy to press and
+&gt; more useful than the current &quot;Command attempted to use minibuffer while
+&gt; in minibuffer&quot;.
+&gt;
+&gt; I'd imagine this feature being somewhat analogous to how ido-find-file
+&gt; falls back to find-file after C-f.
+
+Yes, being able to move from `execute-extended-command-for-buffer' to
+`execute-extended-command' makes sense, but I'm not sure the other
+direction is as useful.  And while there's only two of these commands
+today, I think it's likely that (in the future) that we'll grow more of
+these.
+
+I'm not quite sure how to implement this, though -- we basically end up
+in `completing-read', and `execute-extended-command-for-buffer' would
+have to define an `M-x' binding there, I guess...  and then somehow call
+`read-extended-command' with the text already in the minibuffer.
+
+Anybody got an idea as to how to implement this without rewriting
+`read-extended-command' completely?
+
+-- 
+(domestic pets only, the antidote for overdose, milk.)
+   bloggy blog: http://lars.ingebrigtsen.no
+
+
+
+</pre>
+<hr>
+<!-- request_addr: bug-gnu-emacs@HIDDEN -->
+<!-- time:1616044141 -->
+<strong>Information forwarded</strong>
+to <code>bug-gnu-emacs@HIDDEN</code>:<br>
+<code>bug#47215</code>; Package <code>emacs</code>.
+  <em><A href="../47/47215-b.html#m3">Full text</A> available.</em><hr>
+<h2>Message received at submit &lt;at&gt; debbugs.gnu.org:</h2><br>
+<pre>
+Received: (at submit) by debbugs.gnu.org; 17 Mar 2021 17:56:36 +0000
+From debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org Wed Mar 17 13:56:36 2021
+Received: from localhost ([127.0.0.1]:43944 helo=debbugs.gnu.org)
+	by debbugs.gnu.org with esmtp (Exim 4.84_2)
+	(envelope-from &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;)
+	id 1lMaPL-0005Z5-Q8
+	for submit &lt;at&gt; debbugs.gnu.org; Wed, 17 Mar 2021 13:56:36 -0400
+Received: from lists.gnu.org ([209.51.188.17]:58610)
+ by debbugs.gnu.org with esmtp (Exim 4.84_2)
+ (envelope-from &lt;felician.nemeth@HIDDEN&gt;) id 1lMaPK-0005Yx-No
+ for submit &lt;at&gt; debbugs.gnu.org; Wed, 17 Mar 2021 13:56:35 -0400
+Received: from eggs.gnu.org ([2001:470:142:3::10]:56290)
+ by lists.gnu.org with esmtps (TLS1.2:ECDHE_RSA_AES_256_GCM_SHA384:256)
+ (Exim 4.90_1) (envelope-from &lt;felician.nemeth@HIDDEN&gt;)
+ id 1lMaPK-00065O-CG
+ for bug-gnu-emacs@HIDDEN; Wed, 17 Mar 2021 13:56:34 -0400
+Received: from mail-ed1-x52d.google.com ([2a00:1450:4864:20::52d]:35721)
+ by eggs.gnu.org with esmtps (TLS1.2:ECDHE_RSA_AES_128_GCM_SHA256:128)
+ (Exim 4.90_1) (envelope-from &lt;felician.nemeth@HIDDEN&gt;)
+ id 1lMaPI-0003nM-Vq
+ for bug-gnu-emacs@HIDDEN; Wed, 17 Mar 2021 13:56:34 -0400
+Received: by mail-ed1-x52d.google.com with SMTP id dm8so3396014edb.2
+ for &lt;bug-gnu-emacs@HIDDEN&gt;; Wed, 17 Mar 2021 10:56:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+ h=from:to:subject:date:message-id:user-agent:face:mime-version;
+ bh=oyzLQjgfQUPl+4oJaaWczBtO9GtuR9IPyAvjoKkOPNc=;
+ b=uQtnWN/pPZDf3+fN9ND5PaFm3mldXe5SM0kIvjduYXWrUhxc6KrKxepCtitwygMadU
+ gPaim2KxZgtsgCz8rYK05KzqlW8poZ/ogNNpGqiDmj1KsudceMh676rz4dK/61hFok8K
+ A9FlhoPLmx8RYlHDVvfTMljvX5SUC9AXKxc5lmlC+pP9pj9VYyNQMjXmRaEavDq0AZyR
+ LYsQSdhXzw3ACW66k+KDdSJq6YGd9zusdiWdUc3vZoPRm8EpB2GJial8Aajgcvo1fxyL
+ o8UKJwsjaeKyhTZas6W4971yYdJQYdTOnRxma55sYoMdOHXoTSUJLXd43maNggc8A5b7
+ Oyvw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:from:to:subject:date:message-id:user-agent:face
+ :mime-version;
+ bh=oyzLQjgfQUPl+4oJaaWczBtO9GtuR9IPyAvjoKkOPNc=;
+ b=sEf1emjo/J1IO1x6V63j0K5WFti6wR1esexvSNdeR4w0W3nBRREfBGd+LuDAE9W4sX
+ t3bTHHG0NG+LJHwAN3qD8f2PRrNlGv1nMNllU+ynRWQZXHKvXH1yEhg/hs+gFLj4+2IO
+ EEgljM19PoDmbMcgeWMxwk2ZX3RCQkCCSG0IPOAGAJagHt4kUCb3E5IP2005MfG9p6GP
+ jlB0iPdfOjElHfDzZT9OzKaWXq5btnvk2/J7U5DJ3H/EYQzuf0a6J7BO/uL6z3qPiHI5
+ fTv3w3kOrA3rFJ8sxD3qOJKwJGReMuAmHYGAXifyoN3VbzqPbmosHyJhIpBvcolisIk5
+ hiIQ==
+X-Gm-Message-State: AOAM533iA/jdfR284j7gkHeBc/zHZ3/Km0bEy7HGY3TIA4lEsZxriCFO
+ OoNt1d7wZplAbM+90r0niQnjaBN8zHg=
+X-Google-Smtp-Source: ABdhPJzMdEX9CI1K9+cX9GSMhgOlMqMqIQ45rr1hDl0hWXrsLjXqdAwu6vwlh4dBNLKQlctLL6xHbw==
+X-Received: by 2002:a05:6402:447:: with SMTP id
+ p7mr43574905edw.89.1616003790525; 
+ Wed, 17 Mar 2021 10:56:30 -0700 (PDT)
+Received: from betli.gmail.com (catv-89-135-146-28.catv.broadband.hu.
+ [89.135.146.28])
+ by smtp.gmail.com with ESMTPSA id c15sm6310827ejm.52.2021.03.17.10.56.29
+ for &lt;bug-gnu-emacs@HIDDEN&gt;
+ (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+ Wed, 17 Mar 2021 10:56:29 -0700 (PDT)
+From: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt;
+To: bug-gnu-emacs@HIDDEN
+Subject: 28.0.50; Let M-x switch between M-x and M-X
+Date: Wed, 17 Mar 2021 18:56:28 +0100
+Message-ID: &lt;87tup91x6b.fsf@HIDDEN&gt;
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/26.3 (gnu/linux)
+Face: iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEWOdXElERN7LDLZs6/l
+ 0dDQq6TepMcqAAACW0lEQVQ4jWWSzY7bMAyEaSm6mypylxjkroTRvUW8d9lavf+r7NDOZotWQHzg
+ lyGHP0Sn5ed9qKrLWWIWos9/QJWIeCSywPNTd/AE0LtwFj7A+3WT5PwfeBrQKcsBnkfwVcNySWQr
+ 3i34XN6gRNgis/v4uwSKHCD9lPitB0Aq9BHfHX4cgsI7cJJfLdZg/4bbCzoRmkD9MsagQSBDedZi
+ CgNxkVSJmSOStTBUBKkywEnEoZzbwWj+ACiVJkF6pOpak2PMCqkMYDpaw+gatLR8atMOrB3JGzmm
+ 3rSQo+tkxU+UAbhQSgtslULhsXKk6+IyQ1QTzeQB0MzjlpkCEUCeUdviWrwBcxVqpZjP+v0MYPA0
+ aq2rvIEZe4GRM0v+9QIB03rsABVSk5y+Mz3LSzExtJLlCCO6dV1uzDQFTBad+gO0TqqL9XE8x4ek
+ +orvYiMJgzC8e+r6TqaPaK6QyqVNvoHtsRrooQ6tTi4vgaSkd8wIikodB3B0iIk58avsDdYNajpS
+ bSKJ+mQnipGszB6zW4lGgsOkKHE2RWVcBpwhaIv3BYIAu3WsnC7YYKLRchp6w8fRGZIWiZuFsVai
+ 7gbcUcJEhiDZ3K1+uzZvBlfaEO8oH4MLu6/hrKVM7QpQcIXJFuC1XjfbfKRxNslk94l9cYcEihV2
+ HWyNDQAXaLsvnrSyp7HaQhrAn13V6/XW11nh0XINBOEAV+tHK4EvAGNGvEwc0eZw8Vyr56imYEsV
+ sOW9jxm/yb9AH1ufqGMviIK7A0Tc/723oM3tJ4HTOu9gDr3ftbdkxfdjsUv5AqWKwyfCYo5WAAAA
+ AElFTkSuQmCC
+MIME-Version: 1.0
+Content-Type: text/plain
+Received-SPF: pass client-ip=2a00:1450:4864:20::52d;
+ envelope-from=felician.nemeth@HIDDEN; helo=mail-ed1-x52d.google.com
+X-Spam_score_int: -20
+X-Spam_score: -2.1
+X-Spam_bar: --
+X-Spam_report: (-2.1 / 5.0 requ) BAYES_00=-1.9, DKIM_SIGNED=0.1,
+ DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, FREEMAIL_FROM=0.001,
+ RCVD_IN_DNSWL_NONE=-0.0001, SPF_HELO_NONE=0.001,
+ SPF_PASS=-0.001 autolearn=ham autolearn_force=no
+X-Spam_action: no action
+X-Spam-Score: -1.3 (-)
+X-Debbugs-Envelope-To: submit
+X-BeenThere: debbugs-submit &lt;at&gt; debbugs.gnu.org
+X-Mailman-Version: 2.1.18
+Precedence: list
+List-Id: &lt;debbugs-submit.debbugs.gnu.org&gt;
+List-Unsubscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/options/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=unsubscribe&gt;
+List-Archive: &lt;https://debbugs.gnu.org/cgi-bin/mailman/private/debbugs-submit/&gt;
+List-Post: &lt;mailto:debbugs-submit &lt;at&gt; debbugs.gnu.org&gt;
+List-Help: &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=help&gt;
+List-Subscribe: &lt;https://debbugs.gnu.org/cgi-bin/mailman/listinfo/debbugs-submit&gt;, 
+ &lt;mailto:debbugs-submit-request &lt;at&gt; debbugs.gnu.org?subject=subscribe&gt;
+Errors-To: debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org
+Sender: &quot;Debbugs-submit&quot; &lt;debbugs-submit-bounces &lt;at&gt; debbugs.gnu.org&gt;
+X-Spam-Score: -2.3 (--)
+
+
+I wish there was a convenient way to switch back and forth between
+execute-extended-command and execute-extended-command-for-buffer.  I
+think M-x would be an ideal binding for this as it is easy to press and
+more useful than the current &quot;Command attempted to use minibuffer while
+in minibuffer&quot;.
+
+I'd imagine this feature being somewhat analogous to how ido-find-file
+falls back to find-file after C-f.
+
+Thank you.
+
+
+
+</pre>
+<hr>
+<!-- request_addr: Felician Nemeth &lt;felician.nemeth@HIDDEN&gt; -->
+<!-- time:1616003821 -->
+<strong>Acknowledgement sent</strong>
+to <code>Felician Nemeth &lt;felician.nemeth@HIDDEN&gt;</code>:<br>
+New bug report received and forwarded.  Copy sent to <code>bug-gnu-emacs@HIDDEN</code>.
+  <em><A href="../47/47215-b.html#m2">Full text</A> available.</em><hr>
+<!-- request_addr: bug-gnu-emacs@HIDDEN -->
+<!-- time:1616003821 -->
+<strong>Report forwarded</strong>
+to <code>bug-gnu-emacs@HIDDEN</code>:<br>
+<code>bug#47215</code>; Package <code>emacs</code>.
+  <em><A href="../47/47215-b.html#m1">Full text</A> available.</em><hr>
+<strong><font size="+1" color="red">Please note:</font></strong> This is a static page, with minimal formatting, updated once a day.<br>Click <a href="../../cgi/bugreport.cgi?bug=47215">here</a> to see this page with the latest information and nicer formatting.<HR>
+ <ADDRESS>
+ Last modified:
+ <!--timestamp-->
+ Sat, 10 Apr 2021 18:00:02 UTC
+ <!--timestamp-->
+	  
+ <P>
+ <A HREF="http://debbugs.gnu.org/">GNU bug tracking system</A><BR>
+ Copyright (C) 1999 Darren O. Benham,
+ 1997 nCipher Corporation Ltd,
+ 1994-97 Ian Jackson.
+ </ADDRESS>
+</body></html>

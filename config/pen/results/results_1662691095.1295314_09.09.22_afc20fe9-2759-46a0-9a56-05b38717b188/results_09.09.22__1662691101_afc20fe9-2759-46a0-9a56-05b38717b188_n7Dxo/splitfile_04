@@ -1,0 +1,17 @@
+"definterface" is a macro that defines an interface.
+
+The interface is defined by a name and a list of methods.
+
+The name is a symbol.
+
+The list of methods is a list of symbols.
+
+The interface is defined by a name and a list of methods.
+
+The name is a symbol.
+
+The list of methods is a list of symbols.
+
+The interface is defined by a name and a list of methods.
+
+The name is a symbol.

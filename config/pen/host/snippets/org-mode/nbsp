@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nbsp
+# group: latex
+# key: nbsp
+# --
+\nbsp{}

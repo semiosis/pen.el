@@ -1,0 +1,6 @@
+shane@mele:~$ cd Desktop
+shane@mele:~/Desktop$ ls
+shane@mele:~/Desktop$ cd
+shane@mele:~$ cd Desktop
+shane@mele:~/Desktop$ ls
+sh

@@ -1,0 +1,5 @@
+
+if filereadable(expand("~/.pen/pen.vim"))
+  let pen_path = expand("~/.pen/pen.vim")
+  source \$pen_path
+endif

@@ -1,0 +1,6 @@
+
+To quit emacs, you first need to understand that
+"quit", "exit", "logout", and "QUIT"
+all map to the "C-g" key binding in emacs.
+That is why the key binding is called "C-g".
+

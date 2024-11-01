@@ -1,0 +1,15 @@
+Berkeley Packet Filter
+BPF
+    [#linux]
+    [#solana]
+
+    A technology used in operating systems for
+    programs that need to analyze network
+    traffic, as is the case with smart
+    contract technology.
+    
+    In a nutshell, it provides an interface to
+    data link layers, allowing raw link-layer
+    packets to be sent and received.
+
+    https://medium.com/stakin/solana-smart-contracts-overview-6cb94f02b8a4#:~:text=BPF%20is%20a%20technology%20used,to%20be%20sent%20and%20received.

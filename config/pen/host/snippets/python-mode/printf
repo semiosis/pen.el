@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: printf
+# group: print
+# key: pf
+# --
+print("{}".format(s.twoSum([5,6,10,13], 16)))

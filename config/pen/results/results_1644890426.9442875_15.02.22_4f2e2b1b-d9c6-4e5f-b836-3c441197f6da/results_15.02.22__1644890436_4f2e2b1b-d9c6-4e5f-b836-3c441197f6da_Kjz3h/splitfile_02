@@ -1,0 +1,22 @@
+ What appear to be static and static
+figures can be a dynamic process. The self becomes Other, and the Other
+becomes the self. In these circumstances, objects take on a ghostly
+existence, and material objects become vacant with potential. The human
+body itself, and its cultural forms (such as painting), become incongruous
+with the real world. When this dimension of the surreal experience is coupled
+with a fundamental alteration of the person's consciousness, and one's sense
+of time and space, it results in a compelling, yet potentially disturbing or
+scary experience.
+"""
+
+    def _get_tags(self):
+        return ["1930-1950", "art"]
+
+    def _get_creators(self):
+        return [{
+            "name": "Man Ray",
+            "url": "/artist/man-ray"
+        }]
+
+    def _get_images(self):
+       

@@ -1,0 +1,15 @@
+
+stack exec StateExample
+~~~~~~~~
+
+but all the examples have been tested through the automated
+
+test suite, which you can run using
+
+~~~~~~~~
+stack test
+~~~~~~~~
+
+# What Now?
+
+To learn more about using

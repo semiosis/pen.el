@@ -1,0 +1,5 @@
+"coerce" is a function in the Data.Coerce module.
+
+The "coerce" function takes a type constructor and a type to coerce, and returns a new type that has the same type arguments as the first type, but the type constructor applied to the second type.
+
+For example, "Int" is a type constructor, and "Bool" is a type. The "coerce" function can be used to create a new type "MyInt" that has the

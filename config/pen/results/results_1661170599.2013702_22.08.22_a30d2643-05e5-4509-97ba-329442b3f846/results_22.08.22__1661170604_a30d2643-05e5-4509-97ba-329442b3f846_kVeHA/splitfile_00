@@ -1,0 +1,7 @@
+ ( toUpper )
+import Graphics.Cairo
+import Control.Monad
+
+--For measuring time
+import Control.Monad.Trans.Class
+import Graphics.UI.Gtk hiding ( (|||) )

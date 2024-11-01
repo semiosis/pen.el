@@ -1,0 +1,10 @@
+
+def pen_list_inserters
+  funs = Pen.prompt_functions_meta.select { |y| y.test("insertion") }
+  if interactive_p
+    pps(funs.map { |y| [y.name, y.description] }.to_h)
+  else
+    funs
+  end
+end
+

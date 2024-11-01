@@ -1,0 +1,1 @@
+- Simon Peyton Jones: It runs a state monad and returns the value without returning the final state.

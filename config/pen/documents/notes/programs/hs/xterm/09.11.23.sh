@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "xterm" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "xterm" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "xterm" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "xterm" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "xterm" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "xterm" "#" "<==" "zsh"

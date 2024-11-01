@@ -1,0 +1,5 @@
+
+
+If you are using GNU Emacs 24 or up, then you have the option to enable a prompt in the minibuffer when you are interacting with Emacs. To do this, simply add the following to your init file:
+
+```

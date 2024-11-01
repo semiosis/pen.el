@@ -1,0 +1,13 @@
+NuGet
+    NuGet is a free and open-source package
+    manager designed for the Microsoft
+    development platform.
+    
+    Since its introduction in 2010, NuGet has
+    evolved into a larger ecosystem of tools
+    and services.
+
+Razor
+    An ASP.NET programming syntax used to
+    create dynamic web pages with the C# or
+    VB.NET programming languages

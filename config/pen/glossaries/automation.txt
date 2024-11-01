@@ -1,0 +1,23 @@
+ansible
+    - configuration management,
+    - application deployment,
+    - task automation
+    - IT orchestration
+
+IT orchestration
+    Where you have to run tasks in sequence
+    and create a chain of events which must
+    happen on several different servers or
+    devices.
+
+Puppet
+    An open source software configuration
+    management and deployment tool.
+    
+    It's most commonly used on Linux and
+    Windows to pull the strings on multiple
+    application servers at once.
+    
+    But you can also use Puppet on several
+    platforms, including IBM mainframes, Cisco
+    switches, and Mac OS servers.

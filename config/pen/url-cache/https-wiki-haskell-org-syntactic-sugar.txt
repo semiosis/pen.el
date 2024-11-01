@@ -1,0 +1,186 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Server: nginx/1.20.2
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Last-Modified: Mon, 02 May 2022 14:07:35 GMT
+Accept-Ranges: bytes
+Date: Sun, 14 Aug 2022 10:48:54 GMT
+Via: 1.1 varnish
+X-Served-By: cache-akl10324-AKL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1660474134.865137,VS0,VE704
+Vary: Accept-Encoding, Cookie
+transfer-encoding: chunked
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Syntactic sugar - HaskellWiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Syntactic_sugar","wgTitle":"Syntactic sugar","wgCurRevisionId":62185,"wgRevisionId":62185,"wgArticleId":2138,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Syntax","Style"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Syntactic_sugar","wgRelevantArticleId":2138,"wgRequestId":"8f7d8e1df9d56d2ee9ee3ddc","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[],"wgCollapsibleVectorEnabledModules":{"collapsiblenav":true,"experiments":true}});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.hawiki.styles":"ready"});mw.loader.implement("user.tokens@03tqtch",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.hawiki.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.hawiki.styles&amp;only=styles&amp;skin=hawiki"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hawiki"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=hawiki"/>
+<meta name="generator" content="MediaWiki 1.31.7"/>
+<link rel="shortcut icon" href="/wikistatic/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="HaskellWiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.haskell.org/api.php?action=rsd"/>
+<link rel="license" href="/HaskellWiki:Copyrights"/>
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=hawiki&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Syntactic_sugar rootpage-Syntactic_sugar skin-hawiki action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Syntactic sugar</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From HaskellWiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Syntactic Sugar</b> is the name for special notations for special applications. They don't add functionality to a language, they are plain textual replacements for expressions that could also be written in a more analytic way.
+</p><p>Haskell employs a lot of syntactic sugar. For example <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">x</span> <span class="p">`</span><span class="n">elem</span><span class="p">`</span> <span class="n">xs</span></code></span> is sugar for <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">elem</span> <span class="n">x</span> <span class="n">xs</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">`</span><span class="n">elem</span><span class="p">`</span> <span class="n">xs</span></code></span> is sugar for <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">flip</span> <span class="n">elem</span> <span class="n">xs</span></code></span>, <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span></code></span> is sugar for <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="p">(</span><span class="mi">1</span><span class="kt">:</span><span class="mi">2</span><span class="kt">:</span><span class="mi">3</span><span class="kt">:[]</span><span class="p">)</span></code></span> and <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kr">do</span> <span class="n">x</span> <span class="ow">&lt;-</span> <span class="n">f</span><span class="p">;</span> <span class="n">g</span> <span class="n">x</span></code></span> is sugar for <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">f</span> <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">g</span> <span class="n">x</span><span class="p">)</span></code></span>.
+</p><p>There are lots of <a href="/Syntactic_sugar/Pros" title="Syntactic sugar/Pros">/Pros</a> and <a href="/Syntactic_sugar/Cons" title="Syntactic sugar/Cons">/Cons</a> to syntactic sugar. The goal generally being to balance the amount of it available in a language so as to maximise readability -- giving enough freedom to allow the author to emphasize what is important, while being restrictive enough that readers will know what to expect.
+</p><p>A lot of discussion about the extent to which syntatic sugar should be used has been going on at <a href="/ThingsToAvoid/Discussion" class="mw-redirect" title="ThingsToAvoid/Discussion">ThingsToAvoid/Discussion</a>, which seems to be rather a matter of taste. Thus the discussion at <a href="/ThingsToAvoid/Discussion" class="mw-redirect" title="ThingsToAvoid/Discussion">ThingsToAvoid/Discussion</a> is being cut into two pages which state the pros and cons of syntactic sugar without intermediate discussion so as to make them easier to read. The reader may examine both positions and decide which points from each they like.
+</p>
+<hr />
+<p>As a piece of meta-discussion, I don't think that the issue of syntactic sugar is as cut-and-dried as some people appear to be making it.
+</p><p>Too much syntactic sugar can make the underlying semantics unclear, but too little can obscure what is being expressed. The author of a piece of code chooses from the available syntax in order to emphasize the important aspects of what it does, and push the minor ones aside. Too much freedom in doing this can make code unreadable because there are many special cases in the syntax for expressing peculiar things which the reader must be familiar with. Too little freedom can also result in unreadability because the author has no way to emphasize any particular way of thinking about the code, even though there may be many ways to look at it when someone new to the code starts reading. It can also make it harder to write code, because there are fewer ways to express any given idea, so it can be more difficult to find one which suits you. One can argue that this is a task for comments to perform, but when it comes time to read the code, it is really the code itself that is readable or not.
+</p><p>As for my own opinion on the matter, I think that Haskell has so far done a very good job in balancing the amount of syntactic sugar so as to be flexible enough allow the author to be clear and concise, but firm enough to be comprehensible to new eyes.
+</p>
+<pre>- CaleGibbard
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20220814092450
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.009 seconds
+Real time usage: 0.010 seconds
+Preprocessor visited node count: 25/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1792/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+
+-->
+</div>
+<!-- Saved in parser cache with key wikidb_haskell:pcache:idhash:2138-0!canonical and timestamp 20220814092450 and revision id 62185
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.haskell.org/index.php?title=Syntactic_sugar&amp;oldid=62185">https://wiki.haskell.org/index.php?title=Syntactic_sugar&amp;oldid=62185</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Category:Syntax" title="Category:Syntax">Syntax</a></li><li><a href="/Category:Style" title="Category:Style">Style</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Syntactic+sugar" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="hawikiTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Syntactic_sugar"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Syntactic_sugar&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="hawikiTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Syntactic_sugar" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Syntactic_sugar&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Syntactic_sugar&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search HaskellWiki" title="Search HaskellWiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Haskell"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/Haskell" title="Visit the main page [z]" accesskey="z">Haskell</a></li><li id="n-portal"><a href="/HaskellWiki:Community" title="About the project, what you can do, where to find things">Wiki community</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Syntactic_sugar" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Syntactic_sugar" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Syntactic_sugar&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Syntactic_sugar&amp;oldid=62185" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Syntactic_sugar&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/index.php?title=Special:CiteThisPage&amp;page=Syntactic_sugar&amp;id=62185" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 27 October 2017, at 01:44.</li>
+											<li id="footer-info-copyright">Recent content is available under <a href="/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">simple permissive license</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+									<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.009","walltime":"0.010","ppvisitednodes":{"value":25,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1792,"limit":5000000},"timingprofile":[]},"cachereport":{"timestamp":"20220814092450","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":83});});</script>
+	</body>
+</html>

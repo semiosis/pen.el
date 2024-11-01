@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs;  "Phil" "3:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Phil" "2:15-16" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Phil" "2:15-16" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Phil" "1:26-27" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Phil" "1:26-28" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Phil" "1:25-28" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Phil" "1:25-28" "#" "<==" "zsh"

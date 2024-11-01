@@ -1,0 +1,9 @@
+
+  (interactive)
+  (shell-command "sh ~/var/smulliga/source/git/semiosis/pen.el/src/nuke.sh"))
+
+;; Launch the nukes
+(defun pen-nuke-all ()
+  (interactive)
+  (shell-command "sh ~/var/smulliga/source/git/semiosis/pen.el/src/nuke-all.sh"))
+

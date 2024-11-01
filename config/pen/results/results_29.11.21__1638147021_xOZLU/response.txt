@@ -1,0 +1,10 @@
+Create a transient command with name NAME, and methods METHODS, and
+bindings BINDINGS."
+  (let ((cmd (intern (concat "transient-" name))))
+    (fset cmd
+          `(lambda ()
+             (interactive)
+             (transient-setup ',cmd)))
+    (put cmd 'transient--suffix
+         (transient--parse-suffix name methods bindings))
+    cmd))

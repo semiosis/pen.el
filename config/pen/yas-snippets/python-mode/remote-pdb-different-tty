@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: remote-pdb-different-tty
+# group: pdb
+# key: rpdb
+# --
+from remote_pdb import RemotePdb
+RemotePdb('127.0.0.1', 4444).set_trace()
+# telnet 127.0.0.1 4444

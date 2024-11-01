@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes/ws/peniel;  "bible-tpop-lookup" "-c" "-m" "NASB" "John 1:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 4:4" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 4:18" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:1" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 4:16" "#" "<==" "bash"

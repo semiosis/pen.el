@@ -1,0 +1,1 @@
+emacsclient -a false -e t -s /root/.emacs.d/server/pen-emacsd-2

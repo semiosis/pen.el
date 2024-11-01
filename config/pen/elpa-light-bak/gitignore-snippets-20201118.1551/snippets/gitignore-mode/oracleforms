@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: OracleForms
+# contributor: Toptal & contributors
+# key: oracleforms
+# --
+
+### OracleForms ###
+
+# Compiled Form Modules
+*.fmx
+
+# Compiled Menu Modules
+*.mmx
+
+# Compiled Pre-Linked Libraries
+*.plx

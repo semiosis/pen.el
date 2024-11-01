@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/By_Grace_Im_Saved-O_Dass_Ich_Tansend_Zungen.mp3" "#" "<==" "rpt"

@@ -1,0 +1,28 @@
+
+
+  -- Convert the list of records into a list of key value pairs.
+  pairs <- records >>= map (\r -> r ^<*> ",")
+
+  -- Convert the list of key value pairs into a map.
+  map <- fmap (\(k,v) -> (k, [v])) pairs
+
+  -- Print the map.
+  print (map :: Map String [String])
+EOD
+
+# haskell files
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+import Data.Map.Strict (Map)
+import Data.Map.Strict ((!))
+
+  main = do
+
+    -- Read

@@ -1,0 +1,4 @@
+""realized?" refers to the completion of a computation. It is the value of the last expression in the body of a "def" form. It is the result of the "def" form."
+#:words [ "realized?" ]
+#:topics [ "clojure" ]
+#:definitions [ " ""realized?" refers to the completion of a computation. It is the value of

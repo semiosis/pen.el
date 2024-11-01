@@ -1,0 +1,1 @@
+"infixl 1" is an operator, which is a fancy way of saying that it has a lower precedence than the other operators.

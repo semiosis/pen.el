@@ -1,0 +1,5 @@
+
+class (Fractional a, Real a) => Num a where
+
+fromInteger      :: Integer -> a
+fromInteger x | x < 0     = error "Can't create negative fractions!"

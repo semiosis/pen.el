@@ -1,0 +1,48 @@
+computability theory
+recursion theory
+    A branch of mathematical logic, of
+    computer science, and of the theory of
+    computation that originated in the 1930s
+    with the study of computable functions and
+    Turing degrees.
+    
+    The field has since expanded to include
+    the study of generalized computability and
+    definability.
+    
+    In these areas, recursion theory overlaps
+    with proof theory and effective
+    descriptive set theory.
+
+    Basic questions addressed by recursion
+    theory include:
+    - What does it mean for a function on the
+      natural numbers to be computable?
+    
+    - How can noncomputable functions be
+      classified into a hierarchy based on
+      their level of noncomputability?
+    
+    Although there is considerable overlap in
+    terms of knowledge and methods,
+    mathematical recursion theorists study the
+    theory of relative computability,
+    reducibility notions, and degree
+    structures; those in the computer science
+    field focus on the theory of subrecursive
+    hierarchies, formal methods, and formal
+    languages.
+
+Recursive functions of Symbolic Expressions
+and Their Computation by Machine, Part I 
+    [book]
+
+    With just three initial functions:
+    - successor,
+    - constant, and
+    - projection,
+    closed under composition and primitive
+    recursion, one can produce most computable
+    functions studied in number theory
+    (addition, division, factorial,
+    exponential, etc.).

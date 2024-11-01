@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: hear-journal-entry
+# group: bible
+# key: hear
+# expand-env: ((yas-indent-line 'fixed))
+# --
+
+${2:`(org-current-level-bullets)`}* H.E.A.R journal entry for verse ${1:$(d-group-linkify-bible-verse-ref yas/text)}
+$2** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb ${1:`(fz (d-group-get-weekly-reading) nil nil "Verse ref:")`$0}
+#+END_SRC
+
+$2** E (explain)
+
+$2** A (apply)
+
+$2** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,

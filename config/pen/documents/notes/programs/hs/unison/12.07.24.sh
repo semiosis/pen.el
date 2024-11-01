@@ -1,0 +1,8 @@
+cd /;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"
+cd /root/.pen/documents/notes;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"
+cd /;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"
+cd /root/.pen/documents/notes;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"
+cd /;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"
+cd /;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"
+cd /;  "unison" "-batch=true" "/root/.emacs.d/elpa-light" "/root/.pen/elpa-light" "#" "<==" "sync-elpa-with-"

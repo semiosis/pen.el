@@ -1,0 +1,5 @@
+cd /;  "from-digraphs" "#" "<==" "zsh"
+cd /;  "from-digraphs" "#" "<==" "zsh"
+cd /;  "from-digraphs" "#" "<==" "zsh"
+cd /;  "from-digraphs" "#" "<==" "zsh"
+cd /;  "from-digraphs" "#" "<==" "zsh"

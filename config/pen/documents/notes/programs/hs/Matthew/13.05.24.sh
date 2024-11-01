@@ -1,0 +1,8 @@
+cd /root/notes;  "Matthew" "22:37-39" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "10:37" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "13:45-46" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "6:21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Matthew" "5:40-42" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Matthew" "19:26" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "17:20" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "15:32" "#" "<==" "zsh"

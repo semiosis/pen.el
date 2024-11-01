@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "xdg-open" "/root/.pen/documents/notes/programs/hs/new-project/13.08.22.sh" "#" "<==" "broot"
+cd /root/.pen/documents/notes;  "xdg-open" "/root/.pen/documents/notes/programs/hs/eww-ne/07.04.22.sh" "#" "<==" "broot"
+cd /root/.pen/documents/notes;  "xdg-open" "/root/.pen/documents/notes/programs/hs/ff/07.04.22.sh" "#" "<==" "broot"
+cd /root/.pen/documents/notes;  "xdg-open" "/root/.pen/documents/notes/todo.org" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el;  "xdg-open" "/root/.emacs.d/host/pen.el/src/pen-melee.el" "#" "<==" "broot"

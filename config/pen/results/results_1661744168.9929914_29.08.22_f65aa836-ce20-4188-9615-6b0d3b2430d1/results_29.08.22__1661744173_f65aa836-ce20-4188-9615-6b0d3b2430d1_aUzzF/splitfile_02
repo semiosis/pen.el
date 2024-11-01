@@ -1,0 +1,4 @@
+"multifile" is a directive that allows you to define a predicate in several
+different files.  The predicate can be called in all of the files in which it
+is defined.  The predicate can also be called in other files, as long as at least
+one of the files in which it is defined was loaded into the database.

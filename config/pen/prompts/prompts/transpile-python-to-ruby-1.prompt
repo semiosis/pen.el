@@ -1,0 +1,40 @@
+title: Transpile Python to Ruby
+tags: python transpilation
+prompt: |+
+    Python:
+    list[::-1] 
+    Ruby:
+    list.reverse 
+    
+    Python:
+    list[1:4] 
+    Ruby:
+    list[1..4]
+    
+    Python:
+    print("Hello World")
+    Ruby:
+    puts "Hello World"
+    
+    Python: 
+    fruits = ["apple","banana","cherry"] 
+    for x in fruits:
+    print(x)
+    Ruby: 
+    fruit = ["apple", "banana", "cherry"]
+    each {|x| print x } 
+    
+    Python: 
+    <1>
+    Ruby:
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- python code
+examples:
+- "fruits = [\"apple\",\"banana\",\"cherry\"] \na = list(fruits) \nprint(a) \na.reverse()
+  \nprint(a)"

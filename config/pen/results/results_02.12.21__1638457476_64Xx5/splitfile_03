@@ -1,0 +1,1 @@
+I'm not sure if this is the right place to ask, but I have a question about the gdb/radare2 interface. I have a binary that is a simple loop that prints out a string. I want to use gdb to find the address of the string, and then use radare to find the address of the loop. Is there a way to do this?

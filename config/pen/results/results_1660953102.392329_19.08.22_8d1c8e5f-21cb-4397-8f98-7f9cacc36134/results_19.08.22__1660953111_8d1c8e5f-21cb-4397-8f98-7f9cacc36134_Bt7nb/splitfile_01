@@ -1,0 +1,22 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: Populate Library
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Create a Library
+      zabbix_mediatype:
+        server_url: "http://{{ zabbix_host }}/zabbix/api_jsonrpc.php"
+        login_user: "{{ zabbix_user }}"
+        login_password: "{{ zabbix_pass }}"
+        name: "{{ item.name }}"
+        mediatype: "{{ item.mediatype }}"
+        state: present
+      with_items:
+        - name: "{{ item.name }}"
+          mediatype: "{{ item.mediatype }}"
+      when: item.state == 'present'
+    - name: Create a Media
+      zabbix_user:
+        server_url:

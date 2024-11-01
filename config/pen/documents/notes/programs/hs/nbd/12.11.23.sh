@@ -1,0 +1,7 @@
+cd /root/.pen/documents/agenda;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "Genesis 1:13" "#" "<==" "nem"
+cd /root/.pen/documents/agenda;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "Genesis 1:4" "#" "<==" "nem"
+cd /root/.pen/documents/agenda;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "Genesis 1:5" "#" "<==" "nem"
+cd /root/.pen/documents/agenda;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "Genesis 1:6" "#" "<==" "nem"
+cd /root/.pen/documents/agenda;  "nbd" "fast" "ebible" "-ca" "-m" "NASB" "Matthew 9:16" "#" "<==" "nem"
+cd /root/.pen/documents/agenda;  "nbd" "fast" "ebible" "-ca" "-m" "NASB" "Matthew 9:1" "#" "<==" "nem"
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "Luke 10:1" "#" "<==" "nem"

@@ -1,0 +1,8 @@
+cd /;  "ebible" "-nbd" "-m" "NASB" "Matt 11:13" "#" "<==" "sh"
+cd /;  "ebible" "-nbd" "-m" "NASB" "Matthew 11:10-13" "#" "<==" "sh"
+cd /volumes/home/shane/notes/ws/bible-studies;  "ebible" "-m" "NASB" "Matt 3:7-9" "#" "<==" "Matt"
+cd /volumes/home/shane/notes/ws/bible-studies;  "ebible" "-m" "NASB" "Matthew 3" "#" "<==" "Matthew"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Proverbs 29:18" "#" "<==" "Proverbs"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Ephesians 2" "#" "<==" "Ephesians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Ephesians 2" "#" "<==" "Ephesians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "John 17" "#" "<==" "John"

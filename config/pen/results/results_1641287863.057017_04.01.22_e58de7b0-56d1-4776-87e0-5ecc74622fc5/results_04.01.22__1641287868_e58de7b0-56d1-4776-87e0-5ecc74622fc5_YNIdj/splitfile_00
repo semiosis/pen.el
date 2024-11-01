@@ -1,0 +1,6 @@
+1. This function takes a command as an argument
+2. It then creates a new command
+3. It then creates a new array of arguments
+4. It then sets the output to the command and arguments
+5. It then returns the output
+

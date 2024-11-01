@@ -1,0 +1,5 @@
+* prompt engineering
+** Types of prompts
+- A prompt may be a transformation
+- Or it may be a continuation (listing more of the same type)
+- A prompt may be a classification (with relation to a base-truth model)

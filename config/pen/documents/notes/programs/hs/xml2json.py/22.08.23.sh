@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS;  "xml2json.py" "/root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS/content.opf" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS;  "xml2json.py" "/root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS/content.opf" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS;  "xml2json.py" "/root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS/content.opf" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "xml2json.py" "/root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS/content.opf" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS;  "xml2json.py" "/root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS/content.opf" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/programs/tf/td_book_they-shall-expel-demons-derek-prince-epub19jrhV/OEBPS;  "xml2json.py" "#" "<==" "zsh"

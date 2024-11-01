@@ -1,0 +1,9 @@
+unit
+    Any resource that the system knows how to
+    operate on and manage.
+    
+    This is the primary object that the
+    systemd tools know how to deal with.
+    
+    These resources are defined using
+    configuration files called unit files.

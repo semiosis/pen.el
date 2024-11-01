@@ -1,0 +1,1 @@
+- Simon Peyton Jones: Sure. The State monad is a very useful way to deal with mutable state. Performing side effects.

@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-P" "/root/.pen/documents/Crosswords" "http://herbach.dnsalias.com/uc/uc230914.puz" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-P" "/root/.pen/documents/Crosswords" "http://herbach.dnsalias.com/uc/uc230914.puz" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-P" "/root/.pen/documents/Crosswords" "http://herbach.dnsalias.com/uc/uc230913.puz" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-P" "/root/.pen/documents/Crosswords/" "http://herbach.dnsalias.com/uc/uc230912.puz" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-P" "/root/.pen/documents/Crosswords/" "http://herbach.dnsalias.com/wsj/wsj230914.puz" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-P" "/root/.pen/documents/Crosswords/" "http://herbach.dnsalias.com/wsj/wsj230630.puz" "#" "<==" "emacs"

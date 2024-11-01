@@ -1,0 +1,13 @@
+
+=====================
+
+
+TODO: Links to examples.
+'''
+    :type links: string_types
+    :type content: string_types
+
+    """
+    logger.debug('creating page: %s', filename)
+    file = output_folder / filename
+    create_file(file, links=links, content=content)

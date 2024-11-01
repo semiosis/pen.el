@@ -1,0 +1,29 @@
+ (read <$>) columns
+
+  -- Print the sum of the numbers.
+  print $ sum numbers
+EOD
+
+# python files
+
+cat draft.py <<EOD
+import csv, sys
+from itertools import islice
+from operator import itemgetter
+from collections import Counter, defaultdict, OrderedDict, namedtuple
+import re, math, random, datetime, os, subprocess, shutil, itertools
+import functools as ft
+import numpy as np
+import scipy as sp
+import pandas as pd
+import IPython as ip
+
+
+def main():
+
+    # Read the CSV from stdin and decode it into a list of lines.
+    # We use the Lazy version of ByteString to avoid reading the whole file into memory.
+
+    lines = sys.stdin.buffer.readlines()
+
+    # Parse the CSV into

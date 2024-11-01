@@ -1,0 +1,1 @@
+ np.add_newdoc_ufunc(1,2)

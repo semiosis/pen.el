@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: list
+# group: idioms
+# key: ol
+# --
++ ${1:list of things}
+  - ${0:first item}

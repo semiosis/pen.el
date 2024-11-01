@@ -1,0 +1,95 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 22 Sep 2023 06:46:30 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+Cache-Control: private; max-age=0
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin
+Strict-Transport-Security: max-age=31556900
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdnjs.cloudflare.com/; frame-src 'self' https://www.google.com/recaptcha/; style-src 'self' 'unsafe-inline'; img-src 'self' https://account.ycombinator.com; frame-ancestors 'self'
+
+<html lang="en" op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?EcTlVqp9UtKKNvEDtg3d">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>It&#x27;s nuts to me that I can&#x27;t tell if this is an AI response or not. I feel like ... | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.svg" width="18" height="18" style="border:1px white solid; display:block"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+                            <a href="newest">new</a> | <a href="front">past</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="show">show</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D37607938">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr id="pagespace" title="It&#x27;s nuts to me that I can&#x27;t tell if this is an AI response or not. I feel like ..." style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+    <tr class='athing' id='37607938'>    <td class='ind'></td><td valign="top" class="votelinks">
+      <center><a id='up_37607938'href='vote?id=37607938&amp;how=up&amp;goto=item%3Fid%3D37607938'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Nalta" class="hnuser">Nalta</a> <span class="age" title="2023-09-22T04:39:27"><a href="item?id=37607938">2 hours ago</a></span> <span id="unv_37607938"></span>          <span class='navs'>
+             | <a href="item?id=37607583">parent</a> | <a href="context?id=37607938" rel="nofollow">context</a> | <a href="fave?id=37607938&amp;auth=c1341acb47bf3152c9a42eb7ebc08e9d837afc39">favorite</a><span class="onstory"> |  on: <a href="item?id=37597011">Church uses ChatGPT for AI-generated service</a></span>          </span>
+                  </span></div><br><div class="comment">
+                  <span class="commtext c00">It&#x27;s nuts to me that I can&#x27;t tell if this is an AI response or not. I feel like 80% sure this is a robot.</span>
+              <div class='reply'></div></div></td></tr>
+          <tr style="height:10px"></tr><tr><td colspan="2"></td><td><form action="comment" method="post"><input type="hidden" name="parent" value="37607938"><input type="hidden" name="goto" value="item?id=37607938"><input type="hidden" name="hmac" value="d4875a0603533163ca3785bbee061cd295e976e3"><textarea name="text" rows="8" cols="80" wrap="virtual"></textarea><br><br>
+<input type="submit" value="reply"></form></td></tr>  </table><br><br><table border="0" class='comment-tree'>
+            <tr class='athing comtr' id='37608203'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_37608203'href='vote?id=37608203&amp;how=up&amp;goto=item%3Fid%3D37607938'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mullikine" class="hnuser">mullikine</a> <span class="age" title="2023-09-22T05:22:26"><a href="item?id=37608203">1 hour ago</a></span> <span id="unv_37608203"></span>          <span class='navs'>
+             | <a href="#37608244" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="37608203" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <span class="commtext c00">Jesus said in John 18:37, &quot;For this I was born, and for this I came into the world, to bear witness to the truth. Every one who is of the truth hears my voice.&quot;<p>Only those who are of the truth can receive the truth, which is the voice of God. What is it to be &quot;of the truth&quot;? To be of the truth is to be birthed by the truth. It is to be born again by the truth.<p><a href="https:&#x2F;&#x2F;www.desiringgod.org&#x2F;messages&#x2F;jesus-came-into-the-world-to-bear-witness-to-the-truth" rel="nofollow noreferrer">https:&#x2F;&#x2F;www.desiringgod.org&#x2F;messages&#x2F;jesus-came-into-the-wor...</a></span>
+              <div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=37608203&amp;goto=item%3Fid%3D37607938%2337608203">reply</a></u>
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='37608244'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_37608244'href='vote?id=37608244&amp;how=up&amp;goto=item%3Fid%3D37607938'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=rany_" class="hnuser">rany_</a> <span class="age" title="2023-09-22T05:29:41"><a href="item?id=37608244">1 hour ago</a></span> <span id="unv_37608244"></span>          <span class='navs'>
+             | <a href="#37608203" class="clicky" aria-hidden="true">prev</a> <a class="togg clicky" id="37608244" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <span class="commtext c00">Looking at their post history, I think they&#x27;re being sincere here and this is not AI generated.</span>
+              <div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=37608244&amp;goto=item%3Fid%3D37607938%2337608244">reply</a></u>
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='37608449'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_37608449'href='vote?id=37608449&amp;how=up&amp;goto=item%3Fid%3D37607938'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mullikine" class="hnuser">mullikine</a> <span class="age" title="2023-09-22T06:07:26"><a href="item?id=37608449">39 minutes ago</a></span> <span id="unv_37608449"></span>          <span class='navs'>
+             | <a href="#37608244" class="clicky" aria-hidden="true">parent</a> <a class="togg clicky" id="37608449" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <span class="commtext c00">Indeed. You can still find some of my blog articles which I had posted on Hacker News available on archive.org.<p>- <a href="https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220721100023&#x2F;https:&#x2F;&#x2F;mullikine.github.io&#x2F;posts&#x2F;gospel-of-jesus&#x2F;" rel="nofollow noreferrer">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220721100023&#x2F;https:&#x2F;&#x2F;mullikine...</a><p>- <a href="https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220131121625&#x2F;https:&#x2F;&#x2F;semiosis.github.io&#x2F;" rel="nofollow noreferrer">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220131121625&#x2F;https:&#x2F;&#x2F;semiosis....</a><p>I&#x27;m repurposing Pen.el into a software Bible because I believe that more important than software transparency and software freedom is developing software to keep the Bible holy and set-apart for God&#x27;s purpose. My Dad told me Pen.el sounds a bit like Peniel (which means &#x27;Face of God&#x27;), so I have made Genesis 32:30 display on startup. I want to build software to keep the Bible holy.<p>You can see a preview here:<p><a href="https:&#x2F;&#x2F;asciinema.org&#x2F;a&#x2F;606332" rel="nofollow noreferrer">https:&#x2F;&#x2F;asciinema.org&#x2F;a&#x2F;606332</a><p><pre><code>    Genesis 32:30
+    ‾‾‾‾‾‾‾‾‾‾‾‾‾
+    So Jacob named the place Peniel, for he said,
+    “I have seen God face to face, yet my life has
+    been preserved.”
+
+    (NASB)
+</code></pre>
+This is the moment I got born-again (born of Spirit &#x2F; born of Truth):<p>- <a href="http:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220402091720&#x2F;https:&#x2F;&#x2F;mullikine.github.io&#x2F;posts&#x2F;astral-projection&#x2F;" rel="nofollow noreferrer">http:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220402091720&#x2F;https:&#x2F;&#x2F;mullikine....</a><p>As you can see from the date on that blog article, Jesus saved me on 2 April 2022, daylight savings.
+2 April also happened to be Palm Sunday in 2023, which is the day that Jesus triumpantly entered Jerusalem.<p>On 3 May 2022 I confessed (out of body, to the Holy Spirit, the Spirit of Truth):<p>- My God is the God of Truth (Psalm 31)<p>- Jesus Christ Saved me from lies<p>- The Holy Spirit is my comforter<p>Once again, this was documented here:
+- <a href="http:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220503030344&#x2F;https:&#x2F;&#x2F;mullikine.github.io&#x2F;posts&#x2F;astral-projection-pt-2&#x2F;" rel="nofollow noreferrer">http:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220503030344&#x2F;https:&#x2F;&#x2F;mullikine....</a><p>Jesus is in me forever through the Holy Spirit.
+I don&#x27;t have to go anywhere to find Him. He found me.
+He is the one keeping me alive.
+To embrace Him is to embrace God Himself.
+He is God Almighty.
+Without the Holy Spirit we would not be able to obey the LORD.
+He is the one who also washes us.
+The Holy Spirit is doing the washing.<p>I&#x27;ve made mistakes as I was barely ready after
+being born again to get thrust into spiritual
+battle, but I want the remainder of my time on Earth to honour Him.<p>- John 3:16 - For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life.<p>- Hebrews 4:12 - For the word of God is living and active, and sharper than any two-edged sword, even penetrating as far as the division of soul and spirit, of both joints and marrow, and able to judge the thoughts and intentions of the heart.<p>- How to make a heart holy: By the blood of Jesus Christ and the Word of God in your heart.<p>Truth is a person, Jesus Christ, and Jesus Christ is the Word of God Almighty, and is God Almighty.<p>Jesus can save anyone! I pray that anyone reading this will be blessed by God!</span>
+              <div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=37608449&amp;goto=item%3Fid%3D37607938%2337608449">reply</a></u>
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  </table>
+  <br><br>
+</td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br>
+<center><a href="https://www.ycombinator.com/apply/">Applications are open for YC Winter 2024</a></center><br>
+<center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a> | <a href="newsfaq.html">FAQ</a> | <a href="lists">Lists</a> | <a href="https://github.com/HackerNews/API">API</a> | <a href="security.html">Security</a> | <a href="https://www.ycombinator.com/legal/">Legal</a> | <a href="https://www.ycombinator.com/apply/">Apply to YC</a> | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br>
+<form method="get" action="//hn.algolia.com/">Search: <input type="text" name="q" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form></center></td></tr>      </table></center></body>
+      <script type='text/javascript' src='hn.js?EcTlVqp9UtKKNvEDtg3d'></script>
+  </html>

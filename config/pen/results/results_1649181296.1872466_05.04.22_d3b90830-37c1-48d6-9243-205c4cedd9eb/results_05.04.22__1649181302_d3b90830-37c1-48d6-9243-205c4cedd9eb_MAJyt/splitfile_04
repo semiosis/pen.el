@@ -1,0 +1,11 @@
+
+
+instance Num Natural where
+
+fromInteger = fromNatural
+
+x + y = fromNatural (toNatural x + toNatural y)
+
+x * y = fromNatural (toNatural x * toNatural y)
+
+from

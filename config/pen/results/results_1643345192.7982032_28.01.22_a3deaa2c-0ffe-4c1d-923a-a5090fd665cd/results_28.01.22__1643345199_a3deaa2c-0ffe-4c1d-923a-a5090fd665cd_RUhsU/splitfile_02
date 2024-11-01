@@ -1,0 +1,4 @@
+"defroutes" is a macro that takes a list of routes, each of which is a
+  sequence of path-pattern, handler-fn, and additional middlewares.
+  Middlewares are applied in the order that they appear.
+

@@ -1,0 +1,3 @@
+cd /root/.pen/documents/agenda;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/agenda;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/agenda;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"

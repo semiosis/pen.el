@@ -1,0 +1,10 @@
+
+
+incrementState = state $ \x -> do
+x' <- x
+x' <- x
+return x'
+
+-- and equivalent to the previous example with the state monad:
+
+incrementState x = do

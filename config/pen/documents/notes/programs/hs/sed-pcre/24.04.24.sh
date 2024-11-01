@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/notes;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/notes/ws/problog/scratch;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"

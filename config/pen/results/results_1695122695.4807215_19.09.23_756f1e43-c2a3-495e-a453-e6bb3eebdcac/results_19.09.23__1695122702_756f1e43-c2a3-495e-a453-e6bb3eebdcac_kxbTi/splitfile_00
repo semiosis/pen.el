@@ -1,0 +1,5 @@
+ GY_REGION
+export GY_WORKER_ID
+export GY_GLOBAL_ENV
+
+env | grep GY_CMD > /dev/null && GY_CMD=`env |

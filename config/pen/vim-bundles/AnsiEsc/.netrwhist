@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/root/repos/manateelazycat/cloel'
+let g:netrw_dirhist_5='/volumes/home/shane/var/smulliga/source/git/mullikine/prayers'
+let g:netrw_dirhist_4='/root/.emacs.d/host/pen.el/docs/journal'
+let g:netrw_dirhist_3='/volumes/home/shane/notes/ws/apartment'
+let g:netrw_dirhist_2='/volumes/home/shane/notes/ws'
+let g:netrw_dirhist_1='/volumes/home/shane/var/smulliga/source/git/mullikine/prayers'
+let g:netrw_dirhist_0='/root/.emacs.d/host/pen.el/scripts'
+let g:netrw_dirhist_9='/volumes/home/shane/var/smulliga/source/git/mullikine/prayers'
+let g:netrw_dirhist_8='/root/.emacs.d/host/pen.el/scripts/prolog'
+let g:netrw_dirhist_7='/volumes/home/shane/var/smulliga/source/git/mullikine/prayers'

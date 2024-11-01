@@ -1,0 +1,6 @@
+cd /root/notes;  "gc" "https://github.com/hackerb9/lsix" "#" "<==" "gc"
+cd /root;  "gc" "https://github.com/horriblename/lfimg-sixel" "#" "<==" "gc"
+cd /root;  "gc" "https://github.com/marianosimone/epub-thumbnailer" "#" "<==" "gc"
+cd /root/.emacs.d/host/pen.el/scripts;  "gc" "https://github.com/hpjansson/chafa" "#" "<==" "gc"
+cd /root/.emacs.d/host/pen.el/scripts;  "gc" "https://github.com/horriblename/lfimg-sixel" "#" "<==" "gc"
+cd /root/.emacs.d/host/pen.el/scripts;  "gc" "https://github.com/horriblename/lfimg-sixel" "#" "<==" "gc"

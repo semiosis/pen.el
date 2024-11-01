@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "kjv" "#" "<==" "zsh"
+cd /root/notes;  "kjv" "Romans" "10:15" "#" "<==" "zsh"
+cd /root/notes;  "kjv" "Romans" "10:15" "#" "<==" "zsh"
+cd /root/notes;  "kjv" "Romans" "10:15" "#" "<==" "zsh"
+cd /root/notes;  "kjv" "John" "3:16" "#" "<==" "zsh"

@@ -1,0 +1,1028 @@
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+x-powered-by: PHP/8.1.22
+content-type: text/html; charset=UTF-8
+link: <https://clans.org.nz/wp-json/>; rel="https://api.w.org/"
+link: <https://clans.org.nz/wp-json/wp/v2/pages/1453>; rel="alternate"; type="application/json"
+link: <https://clans.org.nz/?p=1453>; rel=shortlink
+x-tec-api-version: v1
+x-tec-api-root: https://clans.org.nz/wp-json/tribe/events/v1/
+x-tec-api-origin: https://clans.org.nz
+etag: "1390-1704465350;gz"
+x-litespeed-cache: hit
+transfer-encoding: chunked
+vary: Accept-Encoding
+date: Mon, 08 Jan 2024 04:33:38 GMT
+server: LiteSpeed
+platform: hostinger
+content-security-policy: upgrade-insecure-requests
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js scheme_default">
+
+<head>
+	
+			<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="profile" href="//gmpg.org/xfn/11">
+		<title>Contact Us &#8211; Christ Loves All Nations</title>
+    <style>
+        .pro-wccp:before {
+            content: "\f160";
+            top: 3px;
+        }
+        .pro-wccp:before{
+            color:#02CA03 !important
+        }
+        .pro-wccp {
+            transform: rotate(45deg);
+        }
+    </style>
+    <meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//js.stripe.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Christ Loves All Nations &raquo; Feed" href="https://clans.org.nz/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Christ Loves All Nations &raquo; Comments Feed" href="https://clans.org.nz/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Christ Loves All Nations &raquo; iCal Feed" href="https://clans.org.nz/events/?ical=1" />
+			<meta property="og:type" content="article" />
+			<meta property="og:url" content="https://clans.org.nz/contact-us/" />
+			<meta property="og:title" content="Contact Us" />
+			<meta property="og:description" content="Sunday ServiceSunday Service - 10 am to 12 pmKid&#039;s ministry on Sundays 10 am to 10.30 amMaori Hill Community Centre607 HighgateMaori Hill, Dunedin 9010+64 20 4037 3747admin@clans.org.nzMid Week ServiceEquipping leaders&#039; prayer  for effective evangelism  Intercession  43 Princes Street, Dunedin CentralSecond floor, Kowhai RoomWednesday from 7.00pm to 8.00pmadmin@clans.org.nzOffice LocationChrist Loves All Nations218" />  
+			<link property="stylesheet" rel='stylesheet' id='trx_addons-icons-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/css/font-icons/css/trx_addons_icons.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-font-google_fonts-css' href='https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&#038;family=Kumbh+Sans:wght@300;400;500;600;700&#038;subset=latin,latin-ext&#038;display=swap' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-fontello-css' href='https://clans.org.nz/wp-content/themes/mission/skins/default/css/font-icons/css/fontello.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='tribe-events-pro-mini-calendar-block-styles-css' href='https://clans.org.nz/wp-content/plugins/events-calendar-pro/src/resources/css/tribe-events-pro-mini-calendar-block.min.css?ver=6.2.1' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='wp-block-library-css' href='https://clans.org.nz/wp-includes/css/dist/block-library/style.min.css?ver=6.4.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--bg-color: #F7F2F0;--wp--preset--color--bd-color: #E3D6D3;--wp--preset--color--text-dark: #240C00;--wp--preset--color--text-light: #988F8A;--wp--preset--color--text-link: #3F292B;--wp--preset--color--text-hover: #4E383A;--wp--preset--color--text-link-2: #D1AB42;--wp--preset--color--text-hover-2: #CCA331;--wp--preset--color--text-link-3: #A37B73;--wp--preset--color--text-hover-3: #9D746C;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link property="stylesheet" rel='stylesheet' id='contact-form-7-css' href='https://clans.org.nz/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.4' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='magnific-popup-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/js/magnific/magnific-popup.min.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='give-styles-css' href='https://clans.org.nz/wp-content/plugins/give/assets/dist/css/give.css?ver=3.2.0' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='give-donation-summary-style-frontend-css' href='https://clans.org.nz/wp-content/plugins/give/assets/dist/css/give-donation-summary.css?ver=3.2.0' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='elementor-icons-css' href='https://clans.org.nz/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.23.0' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='elementor-frontend-css' href='https://clans.org.nz/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.17.2' type='text/css' media='all' />
+<style id='elementor-frontend-inline-css' type='text/css'>
+.elementor-kit-15{--e-global-color-primary:#6EC1E4;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#61CE70;--e-global-color-61c01e98:#4054B2;--e-global-color-69bf31ed:#23A455;--e-global-color-7a1ccbe5:#000;--e-global-color-13ed1179:#FFF;--e-global-typography-primary-font-family:"Roboto";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Roboto Slab";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Roboto";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto";--e-global-typography-accent-font-weight:500;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1320px;}.e-con{--container-max-width:1320px;}.elementor-widget:not(:last-child){margin-block-end:0px;}.elementor-element{--widgets-spacing:0px 0px;}{}.sc_layouts_title_caption{display:var(--page-title-display);}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}
+.elementor-1453 .elementor-element.elementor-element-c9f77d9:not(.elementor-motion-effects-element-type-background), .elementor-1453 .elementor-element.elementor-element-c9f77d9 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FFFFFF;}.elementor-1453 .elementor-element.elementor-element-c9f77d9{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:40px 0px 40px 0px;}.elementor-1453 .elementor-element.elementor-element-c9f77d9 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1453 .elementor-element.elementor-element-5d6a487d .sc_item_title_text{-webkit-text-stroke-width:0px;}.elementor-1453 .elementor-element.elementor-element-5d6a487d .sc_item_title_text2{-webkit-text-stroke-width:0px;}.elementor-1453 .elementor-element.elementor-element-2956a8c:not(.elementor-motion-effects-element-type-background), .elementor-1453 .elementor-element.elementor-element-2956a8c > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#0B529B;}.elementor-1453 .elementor-element.elementor-element-2956a8c{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:20px 0px 20px 0px;}.elementor-1453 .elementor-element.elementor-element-2956a8c > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1453 .elementor-element.elementor-element-73a2fbd{text-align:center;color:#FFFFFF;font-family:"Roboto Condensed", Sans-serif;font-size:25px;font-weight:800;line-height:37px;}.elementor-1453 .elementor-element.elementor-element-2efbd6e3{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:30px 0px 30px 0px;}.elementor-1453 .elementor-element.elementor-element-2efbd6e3 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1453 .elementor-element.elementor-element-67a4b569 .sc_item_title_text{-webkit-text-stroke-width:0px;}.elementor-1453 .elementor-element.elementor-element-67a4b569 .sc_item_title_text2{-webkit-text-stroke-width:0px;}.elementor-1453 .elementor-element.elementor-element-527c1067{--spacer-size:50px;}.elementor-1453 .elementor-element.elementor-element-9071531{--spacer-size:27px;}.elementor-1453 .elementor-element.elementor-element-22e72be .sc_googlemap{width:100%;height:635px;}.elementor-1453 .elementor-element.elementor-element-22e72be .sc_item_title_text{-webkit-text-stroke-width:0px;}.elementor-1453 .elementor-element.elementor-element-22e72be .sc_item_title_text2{-webkit-text-stroke-width:0px;}.elementor-1453 .elementor-element.elementor-element-3b232d81 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-1453 .elementor-element.elementor-element-3b232d81 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1453 .elementor-element.elementor-element-6a5d9055{--spacer-size:48px;}.elementor-1453 .elementor-element.elementor-element-57d45ddc > .elementor-widget-container{margin:0px 0px 0px -105px;padding:70px 70px 80px 70px;background-color:#FFFFFF;}@media(max-width:1024px){.elementor-1453 .elementor-element.elementor-element-57d45ddc > .elementor-widget-container{margin:0px 0px 0px -50px;padding:40px 40px 40px 40px;}}@media(min-width:768px){.elementor-1453 .elementor-element.elementor-element-6107455{width:58.258%;}.elementor-1453 .elementor-element.elementor-element-3b232d81{width:41.704%;}}@media(max-width:767px){.elementor-1453 .elementor-element.elementor-element-67a4b569 > .elementor-widget-container{padding:0% 24% 0% 0%;}.elementor-1453 .elementor-element.elementor-element-6a5d9055{--spacer-size:25px;}.elementor-1453 .elementor-element.elementor-element-57d45ddc > .elementor-widget-container{margin:0px 0px 0px 0px;padding:35px 25px 35px 25px;}}
+</style>
+<link property="stylesheet" rel='stylesheet' id='swiper-css' href='https://clans.org.nz/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/css/__styles.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-sc_googlemap-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/shortcodes/googlemap/googlemap.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-sc_googlemap-responsive-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/shortcodes/googlemap/googlemap.responsive.css' type='text/css' media='(max-width:1023px)' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-give-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/api/give/give.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-sc_content-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/shortcodes/content/content.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-sc_content-responsive-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/shortcodes/content/content.responsive.css' type='text/css' media='(max-width:1439px)' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-animations-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/css/trx_addons.animations.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-cf7-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/api/contact-form-7/contact-form-7.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-mouse-helper-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/addons/mouse-helper/mouse-helper.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-sc_icons-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/shortcodes/icons/icons.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-style-css' href='https://clans.org.nz/wp-content/themes/mission/style.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mediaelement-css' href='https://clans.org.nz/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='wp-mediaelement-css' href='https://clans.org.nz/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.4.2' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-skin-default-css' href='https://clans.org.nz/wp-content/themes/mission/skins/default/css/style.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-plugins-css' href='https://clans.org.nz/wp-content/themes/mission/skins/default/css/__plugins.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-contact-form-7-css' href='https://clans.org.nz/wp-content/themes/mission/skins/default/plugins/contact-form-7/contact-form-7.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-trx-addons-extra-styles-css' href='https://clans.org.nz/wp-content/themes/mission/skins/default/extra-styles.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='mission-custom-css' href='https://clans.org.nz/wp-content/themes/mission/skins/default/css/__custom.css' type='text/css' media='all' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-responsive-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/css/__responsive.css' type='text/css' media='(max-width:1439px)' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-mouse-helper-responsive-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/addons/mouse-helper/mouse-helper.responsive.css' type='text/css' media='(max-width:1279px)' />
+<link property="stylesheet" rel='stylesheet' id='trx_addons-sc_icons-responsive-css' href='https://clans.org.nz/wp-content/plugins/trx_addons/components/shortcodes/icons/icons.responsive.css' type='text/css' media='(max-width:1279px)' />
+<link property="stylesheet" rel='stylesheet' id='mission-responsive-css' href='https://clans.org.nz/wp-content/themes/mission/skins/default/css/__responsive.css' type='text/css' media='(max-width:1679px)' />
+<link property="stylesheet" rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Condensed%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.4.2' type='text/css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="text/javascript" src="https://clans.org.nz/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://clans.org.nz/wp-json/" /><link rel="alternate" type="application/json" href="https://clans.org.nz/wp-json/wp/v2/pages/1453" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://clans.org.nz/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.2" />
+<link rel="canonical" href="https://clans.org.nz/contact-us/" />
+<link rel='shortlink' href='https://clans.org.nz/?p=1453' />
+<link rel="alternate" type="application/json+oembed" href="https://clans.org.nz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclans.org.nz%2Fcontact-us%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://clans.org.nz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclans.org.nz%2Fcontact-us%2F&#038;format=xml" />
+<meta name="generator" content="Give v3.2.0" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://clans.org.nz"><link rel="alternate" href="https://clans.org.nz/wp-json/tribe/events/v1/" /><meta name="generator" content="Elementor 3.17.2; features: e_dom_optimization, e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-internal, google_font-enabled, font_display-swap">
+<script id="wccp_pro_class_exclusion" type="text/javascript">
+function copyToClipboard(elem) {
+	  // create hidden text element, if it doesn't already exist
+    var targetId = "_wccp_pro_hiddenCopyText_";
+    {
+        // must use a temporary form element for the selection and copy
+        target = document.getElementById(targetId);
+        if (!target) {
+            var target = document.createElement("textarea");
+            target.style.position = "absolute";
+            target.style.left = "-9999px";
+            target.style.top = "0";
+            target.id = targetId;
+            document.body.appendChild(target);
+        }
+        target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+    
+    // copy the selection
+    var succeed;
+    try {
+    	  succeed = document.execCommand("copy");
+    } catch(e) {
+        succeed = false;
+    }
+
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+        currentFocus.focus();
+    }
+    
+    
+	// clear temporary content
+	target.textContent = "";
+	document.getElementsByTagName('span')[0].innerHTML = " ";
+    return succeed;
+}
+/**************************************************/
+function wccp_pro_log_to_console_if_allowed(title = "title", data = "")
+{
+	var myName = "";
+	
+	if(wccp_pro_log_to_console_if_allowed.caller != null) myName = wccp_pro_log_to_console_if_allowed.caller.toString();
+	
+	myName = myName.substr('function '.length);
+	
+	myName = myName.substr(0, myName.indexOf('('));
+
+	//console.log("function_name: " + myName);
+	
+	}
+/**************************************************/
+function fallbackCopyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand("copy");
+    var msg = successful ? "successful" : "unsuccessful";
+    console.log("Fallback: Copying text command was " + msg);
+  } catch (err) {
+    console.error("Fallback: Oops, unable to copy", err);
+  }
+
+  document.body.removeChild(textArea);
+}
+/*****************************************/
+function copyTextToClipboard(text) {
+  if (!navigator.clipboard) {
+    fallbackCopyTextToClipboard(text);
+    return;
+  }
+  navigator.clipboard.writeText(text).then(
+    function() {
+      console.log("Async: Copying to clipboard was successful!");
+    },
+    function(err) {
+      console.error("Async: Could not copy text: ", err);
+    }
+  );
+}
+/*****************************************/
+/*getSelectionTextAndContainerElement*/
+function getSelectionTextAndContainerElement()
+{
+    var text = "", containerElement = null;
+    if (typeof window.getSelection != "undefined") {
+        var sel = window.getSelection();
+        if (sel.rangeCount) {
+            var node = sel.getRangeAt(0).commonAncestorContainer;
+            containerElement = node.nodeType == 1 ? node : node.parentNode;
+			if (typeof(containerElement.parentElement) != 'undefined') current_clicked_object = containerElement.parentElement;
+            text = sel.toString();
+        }
+    } else if (typeof document.selection != "undefined" && document.selection.type != "Control")
+	{
+        var textRange = document.selection.createRange();
+        containerElement = textRange.parentElement();
+        text = textRange.text;
+    }
+    
+	return {
+        text: text,
+        containerElement: containerElement
+    };
+}
+
+function getSelectionParentElement() {
+    var parentEl = null, sel;
+	
+    if (window.getSelection) {
+        sel = window.getSelection();
+        if (sel.rangeCount) {
+            parentEl = sel.getRangeAt(0).commonAncestorContainer;
+			//sel.getRangeAt(0).startContainer.parentNode;
+            if (parentEl.nodeType != 1) {
+                parentEl = parentEl.parentNode;
+            }
+        }
+    } else if ( (sel = document.selection) && sel.type != "Control") {
+        parentEl = sel.createRange().parentElement();
+    }
+	
+	let arr = new Array();
+	
+	arr["nodeName"] = "cant_find_parent_element";
+	
+	if(parentEl != null)
+		return parentEl;
+	else
+		return arr;
+}
+/*****************************************/
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+/*****************************************/
+</script>
+
+<script id="wccp_pro_class_exclusion" type="text/javascript">
+function apply_class_exclusion(e)
+{
+	wccp_pro_log_to_console_if_allowed("function", "apply_class_exclusion" + e);
+	
+	var my_return = 'No';
+	
+	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+  	
+	var target = e.target || e.srcElement || 'nothing';
+	
+	//if(target.parentElement != null) console.log (target.parentElement.className);
+	
+	var excluded_classes = '' + '';
+	
+	var class_to_exclude = "";
+	
+	if(target.parentElement != null)
+	{
+		class_to_exclude = target.className + ' ' + target.parentElement.className || '';
+	}else{
+		class_to_exclude = target.className;
+	}
+	
+	var class_to_exclude_array = Array();
+	
+	//console.log(class_to_exclude);
+	
+	if (typeof(class_to_exclude) != 'undefined') class_to_exclude_array = class_to_exclude.split(" ");
+	
+	//console.log (class_to_exclude_array);
+	
+	class_to_exclude_array.forEach(function(item)
+	{
+		if(item != '' && excluded_classes.indexOf(item)>=0)
+		{
+			target.style.cursor = "text";
+			
+			console.log ('Yes');
+			
+			my_return = 'Yes';
+		}
+	});
+
+	try {
+		class_to_exclude = target.parentElement.getAttribute('class') || target.parentElement.className || '';
+		}
+	catch(err) 
+		{
+		class_to_exclude = '';
+		}
+	
+	if(class_to_exclude != '' && excluded_classes.indexOf(class_to_exclude)>=0)
+	{
+		target.style.cursor = "text";
+		my_return = 'Yes';
+	}
+
+	return my_return;
+}
+</script>
+<meta name="generator" content="Powered by Slider Revolution 6.5.31 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://clans.org.nz/wp-content/uploads/2023/10/cropped-site-icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://clans.org.nz/wp-content/uploads/2023/10/cropped-site-icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://clans.org.nz/wp-content/uploads/2023/10/cropped-site-icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://clans.org.nz/wp-content/uploads/2023/10/cropped-site-icon-270x270.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+		<style type="text/css" id="wp-custom-css">
+			.sc_layouts_title .breadcrumbs {    
+    display: none;
+}
+.sc_events_alter .sc_events_item_price {
+    display: none !important;
+}
+.sc_testimonials [class*="column"] .sc_testimonials_item_author {
+    display: none;   
+}
+.sc_testimonials_accent .sc_testimonials_item {
+    min-height: 400px;
+}
+.post_header_wrap_style_style-1 .post_header .post_meta_other .post_meta_item {
+    display: none;
+}		</style>
+		
+<style id="elementor-post-16941">.elementor-16941 .elementor-element.elementor-element-7c80dfe4 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-16941 .elementor-element.elementor-element-7c80dfe4:not(.elementor-motion-effects-element-type-background), .elementor-16941 .elementor-element.elementor-element-7c80dfe4 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FFFFFF;}.elementor-16941 .elementor-element.elementor-element-7c80dfe4{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:20px 50px 20px 50px;}.elementor-16941 .elementor-element.elementor-element-7c80dfe4 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-16941 .elementor-element.elementor-element-302034d9 .logo_image{max-height:65px;}.elementor-16941 .elementor-element.elementor-element-88923ed > .elementor-widget-container{margin:0px 15px 0px 0px;}.elementor-16941 .elementor-element.elementor-element-9dfc450 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-16941 .elementor-element.elementor-element-9dfc450:not(.elementor-motion-effects-element-type-background), .elementor-16941 .elementor-element.elementor-element-9dfc450 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FFFFFF;}.elementor-16941 .elementor-element.elementor-element-9dfc450{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-16941 .elementor-element.elementor-element-9dfc450 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-16941 .elementor-element.elementor-element-777351d .logo_image{max-height:65px;}.elementor-16941 .elementor-element.elementor-element-760d891 > .elementor-widget-container{margin:-1px 0px 0px 0px;}.elementor-16941 .elementor-element.elementor-element-4c8550d{--spacer-size:120px;}.elementor-16941 .elementor-element.elementor-element-6c6e80d .sc_layouts_title{min-height:0px;}.elementor-16941 .elementor-element.elementor-element-7bc4ab9{--spacer-size:120px;}@media(max-width:1024px){.elementor-16941 .elementor-element.elementor-element-7c80dfe4{padding:10px 20px 10px 20px;}.elementor-16941 .elementor-element.elementor-element-25dc9c59 > .elementor-widget-container{margin:4px 0px 0px 0px;}.elementor-16941 .elementor-element.elementor-element-348ecc3 > .elementor-widget-container{margin:-1px 0px 0px 0px;}.elementor-16941 .elementor-element.elementor-element-760d891 > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-16941 .elementor-element.elementor-element-4c8550d{--spacer-size:80px;}.elementor-16941 .elementor-element.elementor-element-7bc4ab9{--spacer-size:80px;}}@media(max-width:767px){.elementor-16941 .elementor-element.elementor-element-8b8c98f{width:50%;}.elementor-16941 .elementor-element.elementor-element-2c40a91{width:50%;}.elementor-16941 .elementor-element.elementor-element-760d891 > .elementor-widget-container{margin:-4px 0px 0px 0px;}.elementor-16941 .elementor-element.elementor-element-4c8550d{--spacer-size:50px;}.elementor-16941 .elementor-element.elementor-element-7bc4ab9{--spacer-size:50px;}}@media(max-width:1024px) and (min-width:768px){.elementor-16941 .elementor-element.elementor-element-4fd21f3{width:20%;}.elementor-16941 .elementor-element.elementor-element-5cdac143{width:58%;}.elementor-16941 .elementor-element.elementor-element-7e408719{width:22%;}}</style>
+<style id="elementor-post-18319">.elementor-18319 .elementor-element.elementor-element-2797ba02 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-18319 .elementor-element.elementor-element-2797ba02:not(.elementor-motion-effects-element-type-background), .elementor-18319 .elementor-element.elementor-element-2797ba02 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#1C110B;}.elementor-18319 .elementor-element.elementor-element-2797ba02{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:56px 0px 56px 0px;}.elementor-18319 .elementor-element.elementor-element-2797ba02 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-18319 .elementor-element.elementor-element-514bd6c4{color:#D2D3D5;font-size:16px;}.elementor-18319 .elementor-element.elementor-element-50aa674 .logo_image{max-height:100px;}.elementor-18319 .elementor-element.elementor-element-3929a270 .sc_item_title_text{-webkit-text-stroke-width:0px;}.elementor-18319 .elementor-element.elementor-element-3929a270 .sc_item_title_text2{-webkit-text-stroke-width:0px;}@media(max-width:767px){.elementor-18319 .elementor-element.elementor-element-15eb2584 > .elementor-element-populated{margin:4px 0px 3px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;}}@media(min-width:768px){.elementor-18319 .elementor-element.elementor-element-4d8239d7{width:40%;}.elementor-18319 .elementor-element.elementor-element-63fbe2c4{width:19.332%;}.elementor-18319 .elementor-element.elementor-element-15eb2584{width:40%;}}</style>
+<style id="wccp_pro_style2" type="text/css" data-asas-style="">
+
+	
+	*[contenteditable] , [contenteditable] *,*[contenteditable="true"] , [contenteditable="true"] * { /* for contenteditable tags*/ , /* for tags inside contenteditable tags*/
+	  -webkit-user-select: auto !important;
+	  cursor: text !important;
+	  user-select: text !important;
+	  pointer-events: auto !important;
+	}
+	
+	/*
+	*[contenteditable]::selection, [contenteditable] *::selection, [contenteditable="true"]::selection, [contenteditable="true"] *::selection { background: Highlight !important; color: HighlightText !important;}
+	*[contenteditable]::-moz-selection, [contenteditable="true"] *::-moz-selection { background: Highlight !important; color: HighlightText !important;}
+	input::selection,textarea::selection, code::selection, code > *::selection { background: Highlight !important; color: HighlightText !important;}
+	input::-moz-selection,textarea::-moz-selection, code::-moz-selection, code > *::-moz-selection { background: Highlight !important; color: HighlightText !important;}
+	*/
+	a{ cursor: pointer ; pointer-events: auto !important;}
+
+	</style>
+<style>TEXT,TEXTAREA,input[type="text"] {cursor: text !important; user-select: text !important;}</style>
+<style type="text/css">
+	#wccp_pro_mask
+	{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		background-color: #000;
+		pointer-events: none;
+		display: none;
+		z-index: 10000;
+		animation: 0.5s ease 0s normal none 1 running ngdialog-fadein;
+		background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+	}
+	#wpcp-error-message {
+	    direction: ltr;
+	    text-align: center;
+	    transition: opacity 900ms ease 0s;
+		pointer-events: none;
+	    z-index: 99999999;
+	}
+	.hideme {
+    	opacity:0;
+    	visibility: hidden;
+	}
+	.showme {
+    	opacity:1;
+    	visibility: visible;
+	}
+	.msgmsg-box-wpcp {
+		border-radius: 10px;
+		color: #555555;
+		font-family: Tahoma;
+		font-size: 12px;
+		margin: 10px;
+		padding: 10px 36px;
+		position: fixed;
+		width: 255px;
+		top: 50%;
+  		left: 50%;
+  		margin-top: -10px;
+  		margin-left: -130px;
+	}
+	.msgmsg-box-wpcp b {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+		.warning-wpcp {
+		background:#ffecec url('https://clans.org.nz/wp-content/plugins/wccp-pro/images/warning.png') no-repeat 10px 50%;
+		border:1px solid #f2bfbf;
+		-webkit-box-shadow: 0px 0px 34px 2px #f2bfbf;
+		-moz-box-shadow: 0px 0px 34px 2px #f2bfbf;
+		box-shadow: 0px 0px 34px 2px #f2bfbf;
+	}
+	.success-wpcp {
+		background: #fafafa url('https://clans.org.nz/wp-content/plugins/wccp-pro/images/success.png') no-repeat 10px 50%;
+		border: 1px solid #00b38f;
+		box-shadow: 0px 0px 34px 2px #adc;
+	}
+    </style>
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<style type="text/css" id="trx_addons-inline-styles-inline-css">.trx_addons_inline_1548997215 img.logo_image{max-height:65px;}.trx_addons_inline_478754838 img.logo_image{max-height:65px;}.trx_addons_inline_990465782{width:100%;height:635px;}.trx_addons_inline_826055004 img.logo_image{max-height:100px;}.custom-logo-link,.sc_layouts_logo{font-size:1.4em}</style>
+
+</head>
+
+<body class="page-template-default page page-id-1453 wp-custom-logo hide_fixed_rows_enabled tribe-no-js skin_default scheme_default blog_mode_page body_style_fullscreen is_single sidebar_hide expand_content remove_margins trx_addons_present header_type_custom header_style_header-custom-16941 header_position_default menu_side_none no_layout fixed_blocks_sticky elementor-default elementor-kit-15 elementor-page elementor-page-1453">
+
+	
+	<div class="body_wrap" >
+
+		
+		<div class="page_wrap" >
+
+			
+							<a class="mission_skip_link skip_to_content_link" href="#content_skip_link_anchor" tabindex="1">Skip to content</a>
+								<a class="mission_skip_link skip_to_footer_link" href="#footer_skip_link_anchor" tabindex="1">Skip to footer</a>
+
+				<header class="top_panel top_panel_custom top_panel_custom_16941 top_panel_custom_main-header				 without_bg_image scheme_dark">
+			<div data-elementor-type="cpt_layouts" data-elementor-id="16941" class="elementor elementor-16941">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-7c80dfe4 elementor-section-full_width elementor-section-content-middle sc_layouts_row sc_layouts_row_type_compact scheme_default sc_layouts_hide_on_mobile sc_layouts_hide_on_tablet elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="7c80dfe4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4fd21f3 sc_layouts_column_align_left sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="4fd21f3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-302034d9 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_logo" data-id="302034d9" data-element_type="widget" data-widget_type="trx_sc_layouts_logo.default">
+				<div class="elementor-widget-container">
+			<a href="https://clans.org.nz/"
+		class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_1548997215" ><img class="logo_image"
+					src="//clans.org.nz/wp-content/uploads/2023/10/logo-main.png"
+											srcset="//clans.org.nz/wp-content/uploads/2023/10/logo-main-retina.png 2x"
+											alt="Christ Loves All Nations" width="269" height="94"></a>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5cdac143 sc_layouts_column_align_center sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="5cdac143" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-25dc9c59 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_menu" data-id="25dc9c59" data-element_type="widget" data-widget_type="trx_sc_layouts_menu.default">
+				<div class="elementor-widget-container">
+			<nav class="sc_layouts_menu sc_layouts_menu_default sc_layouts_menu_dir_horizontal menu_hover_zoom_line" data-animation-in="fadeIn" data-animation-out="fadeOut" ><ul id="menu_main" class="sc_layouts_menu_nav menu_main_nav"><li id="menu-item-22808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22808"><a href="https://clans.org.nz/"><span>Home</span></a></li><li id="menu-item-22993" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22993"><a href="#"><span>About Us</span></a>
+<ul class="sub-menu"><li id="menu-item-22994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22994"><a href="https://clans.org.nz/mission-and-vision/"><span>Mission and vision</span></a></li><li id="menu-item-23059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23059"><a href="https://clans.org.nz/our-values/"><span>Our values</span></a></li><li id="menu-item-23028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23028"><a href="https://clans.org.nz/statement-of-faith/"><span>Statement of Faith</span></a></li><li id="menu-item-23621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23621"><a href="https://clans.org.nz/prayer-requests/"><span>Prayer Requests</span></a></li><li id="menu-item-23957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23957"><a href="https://clans.org.nz/our-team/"><span>Our Team</span></a></li></ul>
+</li><li id="menu-item-22998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22998"><a href="#"><span>Ministries</span></a>
+<ul class="sub-menu"><li id="menu-item-23001" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-23001"><a href="https://clans.org.nz/ministry/church-minsitry/"><span>Church Minsitry</span></a></li><li id="menu-item-22999" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-22999"><a href="https://clans.org.nz/ministry/kids-ministry/"><span>Kids Ministry</span></a></li><li id="menu-item-23000" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-23000"><a href="https://clans.org.nz/ministry/womens-ministry/"><span>Women’s Ministry</span></a></li><li id="menu-item-23400" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-23400"><a href="https://clans.org.nz/ministry/evangelism/"><span>Evangelism</span></a></li><li id="menu-item-23481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23481"><a href="https://clans.org.nz/radio-ministry/"><span>Radio Ministry</span></a></li></ul>
+</li><li id="menu-item-23324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23324"><a href="#"><span>Events</span></a></li><li id="menu-item-23594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23594"><a href="https://clans.org.nz/photo-gallery/"><span>Gallery</span></a></li><li id="menu-item-22995" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-22995"><a href="https://clans.org.nz/blog/"><span>Blog</span></a></li><li id="menu-item-21288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21288"><a href="https://clans.org.nz/contact-us/"><span>Contact Us</span></a></li></ul></nav>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7e408719 sc_layouts_column_align_right sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="7e408719" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-88923ed sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_search" data-id="88923ed" data-element_type="widget" data-widget_type="trx_sc_layouts_search.default">
+				<div class="elementor-widget-container">
+			<div class="sc_layouts_search">
+    <div class="search_modern">
+        <span class="search_submit"></span>
+        <div class="search_wrap">
+            <div class="search_header_wrap"><img class="logo_image"
+                            src="//clans.org.nz/wp-content/uploads/2023/10/christ-love-logo.png"
+                                                            srcset="//clans.org.nz/wp-content/uploads/2023/10/christ-love-logo-retina.png 2x"                            alt="Christ Loves All Nations" width="160" height="191">                <a class="search_close"></a>
+            </div>
+            <div class="search_form_wrap">
+                <form role="search" method="get" class="search_form" action="https://clans.org.nz/">
+                    <input type="hidden" value="" name="post_types">
+                    <input type="text" class="search_field" placeholder="Type words and hit enter" value="" name="s">
+                    <button type="submit" class="search_submit"></button>
+                                    </form>
+            </div>
+        </div>
+        <div class="search_overlay"></div>
+    </div>
+
+
+</div><!-- /.sc_layouts_search -->		</div>
+				</div>
+				<div class="sc_layouts_item elementor-element elementor-element-e3b59c7 sc_layouts_hide_on_wide sc_layouts_hide_on_desktop sc_layouts_hide_on_notebook sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-trx_sc_button" data-id="e3b59c7" data-element_type="widget" data-widget_type="trx_sc_button.default">
+				<div class="elementor-widget-container">
+			<div	class="sc_item_button sc_button_wrap" ><a href="https://clans.org.nz/donation-form/" class="sc_button hide_on_mobile hide_on_tablet hide_on_notebook hide_on_desktop hide_on_wide sc_button_default sc_button_size_small sc_button_icon_left color_style_link2" ><span class="sc_button_text"><span class="sc_button_title">Donate</span></span></a></div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9dfc450 elementor-section-content-middle sc_layouts_row sc_layouts_row_type_compact scheme_default sc_layouts_hide_on_wide sc_layouts_hide_on_desktop sc_layouts_hide_on_notebook elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="9dfc450" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8b8c98f sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="8b8c98f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-777351d sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_logo" data-id="777351d" data-element_type="widget" data-widget_type="trx_sc_layouts_logo.default">
+				<div class="elementor-widget-container">
+			<a href="https://clans.org.nz/"
+		class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_478754838" ><img class="logo_image"
+					src="//clans.org.nz/wp-content/uploads/2023/10/logo-main.png"
+											srcset="//clans.org.nz/wp-content/uploads/2023/10/logo-main-retina.png 2x"
+											alt="Christ Loves All Nations" width="269" height="94"></a>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c40a91 sc_layouts_column_align_right sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="2c40a91" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-348ecc3 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_menu" data-id="348ecc3" data-element_type="widget" data-widget_type="trx_sc_layouts_menu.default">
+				<div class="elementor-widget-container">
+			<div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button_burger sc_layouts_menu_mobile_button without_menu">
+		<a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
+			<span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
+		</a>
+		</div>		</div>
+				</div>
+				<div class="sc_layouts_item elementor-element elementor-element-760d891 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_search" data-id="760d891" data-element_type="widget" data-widget_type="trx_sc_layouts_search.default">
+				<div class="elementor-widget-container">
+			<div class="sc_layouts_search">
+    <div class="search_modern">
+        <span class="search_submit"></span>
+        <div class="search_wrap">
+            <div class="search_header_wrap"><img class="logo_image"
+                           src="//clans.org.nz/wp-content/uploads/2023/10/logo-main.png"
+                                            srcset="//clans.org.nz/wp-content/uploads/2023/10/logo-main-retina.png 2x"                        alt="Christ Loves All Nations" width="269" height="94">                <a class="search_close"></a>
+            </div>
+            <div class="search_form_wrap">
+                <form role="search" method="get" class="search_form" action="https://clans.org.nz/">
+                    <input type="hidden" value="" name="post_types">
+                    <input type="text" class="search_field" placeholder="Type words and hit enter" value="" name="s">
+                    <button type="submit" class="search_submit"></button>
+                                    </form>
+            </div>
+        </div>
+        <div class="search_overlay"></div>
+    </div>
+
+
+</div><!-- /.sc_layouts_search -->		</div>
+				</div>
+				<div class="sc_layouts_item elementor-element elementor-element-b044660 sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-trx_sc_button" data-id="b044660" data-element_type="widget" data-widget_type="trx_sc_button.default">
+				<div class="elementor-widget-container">
+			<div	class="sc_item_button sc_button_wrap" ><a href="https://clans.org.nz/donations/" class="sc_button hide_on_mobile sc_button_default sc_button_size_small sc_button_icon_left color_style_link2" ><span class="sc_button_text"><span class="sc_button_title">Donate</span></span></a></div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4324bcf elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="4324bcf" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-88dc89e sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="88dc89e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-4c8550d sc_fly_static elementor-widget elementor-widget-spacer" data-id="4c8550d" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="sc_layouts_item elementor-element elementor-element-6c6e80d sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_title" data-id="6c6e80d" data-element_type="widget" data-widget_type="trx_sc_layouts_title.default">
+				<div class="elementor-widget-container">
+			<div class="sc_layouts_title sc_align_center with_content without_image without_tint" ><div class="sc_layouts_title_content"><div class="sc_layouts_title_title"><h1 class="sc_layouts_title_caption">Contact Us</h1></div><div class="sc_layouts_title_breadcrumbs"><div class="breadcrumbs"><a class="breadcrumbs_item home" href="https://clans.org.nz/">Home</a><span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Contact Us</span></div></div></div></div>		</div>
+				</div>
+				<div class="sc_layouts_item elementor-element elementor-element-7bc4ab9 sc_fly_static elementor-widget elementor-widget-spacer" data-id="7bc4ab9" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		</header>
+<div class="menu_mobile_overlay scheme_dark"></div>
+<div class="menu_mobile menu_mobile_fullscreen scheme_dark">
+	<div class="menu_mobile_inner">
+        <div class="menu_mobile_header_wrap">
+            <a class="sc_layouts_logo" href="https://clans.org.nz/">
+		<img src="//clans.org.nz/wp-content/uploads/2023/10/christ-love-logo.png" srcset="//clans.org.nz/wp-content/uploads/2023/10/christ-love-logo-retina-251x300.png 2x" alt="" width="160" height="191">	</a>
+	
+            <a class="menu_mobile_close menu_button_close" tabindex="0"><span class="menu_button_close_text">Close</span><span class="menu_button_close_icon"></span></a>
+        </div>
+        <div class="menu_mobile_content_wrap content_wrap">
+            <div class="menu_mobile_content_wrap_inner"><nav class="menu_mobile_nav_area" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu_mobile" class=" menu_mobile_nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22808"><a href="https://clans.org.nz/"><span>Home</span></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22993"><a href="#"><span>About Us</span></a>
+<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22994"><a href="https://clans.org.nz/mission-and-vision/"><span>Mission and vision</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23059"><a href="https://clans.org.nz/our-values/"><span>Our values</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23028"><a href="https://clans.org.nz/statement-of-faith/"><span>Statement of Faith</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23621"><a href="https://clans.org.nz/prayer-requests/"><span>Prayer Requests</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23957"><a href="https://clans.org.nz/our-team/"><span>Our Team</span></a></li></ul>
+</li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22998"><a href="#"><span>Ministries</span></a>
+<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-23001"><a href="https://clans.org.nz/ministry/church-minsitry/"><span>Church Minsitry</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-22999"><a href="https://clans.org.nz/ministry/kids-ministry/"><span>Kids Ministry</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-23000"><a href="https://clans.org.nz/ministry/womens-ministry/"><span>Women’s Ministry</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-23400"><a href="https://clans.org.nz/ministry/evangelism/"><span>Evangelism</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23481"><a href="https://clans.org.nz/radio-ministry/"><span>Radio Ministry</span></a></li></ul>
+</li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23324"><a href="#"><span>Events</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23594"><a href="https://clans.org.nz/photo-gallery/"><span>Gallery</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-22995"><a href="https://clans.org.nz/blog/"><span>Blog</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21288"><a href="https://clans.org.nz/contact-us/"><span>Contact Us</span></a></li></ul></nav><div class="socials_mobile"><a target="_blank" href="#" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="#" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_twitter-new" style=""><span class="icon-twitter-new"></span></span></a><a target="_blank" href="https://www.instagram.com/christlovesallnations/?igshid" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="#" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube" style=""><span class="icon-youtube"></span></span></a></div>            </div>
+		</div>
+    </div>
+</div>
+
+			
+			<div class="page_content_wrap">
+								<div class="content_wrap_fullscreen">
+
+					
+					<div class="content">
+												<a id="content_skip_link_anchor" class="mission_skip_link_anchor" href="#"></a>
+						
+<article id="post-1453"
+	class="post_item_single post_type_page post-1453 page type-page status-publish hentry">
+
+	
+	<div class="post_content entry-content">
+				<div data-elementor-type="wp-page" data-elementor-id="1453" class="elementor elementor-1453">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-c9f77d9 scheme_default elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="c9f77d9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-487875bf sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="487875bf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-2d6a3220 elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="2d6a3220" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d0d593e sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="d0d593e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5d6a487d sc_fly_static elementor-widget elementor-widget-trx_sc_icons" data-id="5d6a487d" data-element_type="widget" data-widget_type="trx_sc_icons.default">
+				<div class="elementor-widget-container">
+			<div 	class="sc_icons sc_icons_extra sc_icons_size_large sc_align_center" ><div class="sc_icons_columns_wrap sc_item_columns trx_addons_columns_wrap columns_padding_bottom columns_in_single_row" ><div class="trx_addons_column-1_3"><div class="sc_icons_item"><div class="sc_icons_icon sc_icon_type_ icon-church-2" style="color: #F2E8E6" ><span class="sc_icon_type_ icon-church-2" style="color: #F2E8E6"></span></div><div class="sc_icons_item_details"><h4 class="sc_icons_item_title"><span>Sunday Service</span></h4><div class="sc_icons_item_description"><span><strong>Sunday Service - 10 am to 12 pm</span><span>Kid's ministry on Sundays 10 am to 10.30 am</strong></span><span>Maori Hill Community Centre</span><span>607 Highgate</span><span>Maori Hill, Dunedin 9010</span><span>+64 20 4037 3747</span><span>admin@clans.org.nz</span></div></div></div></div><div class="trx_addons_column-1_3"><div class="sc_icons_item"><div class="sc_icons_icon sc_icon_type_ icon-church-2" style="color: #F2E8E6" ><span class="sc_icon_type_ icon-church-2" style="color: #F2E8E6"></span></div><div class="sc_icons_item_details"><h4 class="sc_icons_item_title"><span>Mid Week Service</span></h4><div class="sc_icons_item_description"><span><strong>Equipping leaders' prayer  for effective evangelism  Intercession  </strong></span><span>43 Princes Street, Dunedin Central</span><span>Second floor, Kowhai Room</span><span>Wednesday from 7.00pm to 8.00pm</span><span>admin@clans.org.nz</span></div></div></div></div><div class="trx_addons_column-1_3"><div class="sc_icons_item"><div class="sc_icons_icon sc_icon_type_ icon-church-1" style="color: #F2E8E6" ><span class="sc_icon_type_ icon-church-1" style="color: #F2E8E6"></span></div><div class="sc_icons_item_details"><h4 class="sc_icons_item_title"><span>Office Location</span></h4><div class="sc_icons_item_description"><span><strong>Christ Loves All Nations</strong></span><span>218 George Street</span><span>Central Dunedin, Dunedin 9016</span><span>+64 20 4037 3747</span><span>admin@clans.org.nz</span></div></div></div></div></div></div><!-- /.sc_icons -->		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2956a8c elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="2956a8c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0e5e5dc sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="0e5e5dc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-73a2fbd sc_fly_static elementor-widget elementor-widget-text-editor" data-id="73a2fbd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Sunday Service Timings: 10:00 am to 12:30 pm<br/>
+Kids Ministry : 10:00 to 10:30						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2efbd6e3 scheme_default elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="2efbd6e3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6107455 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="6107455" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-67a4b569 sc_fly_static elementor-widget elementor-widget-trx_sc_title" data-id="67a4b569" data-element_type="widget" data-widget_type="trx_sc_title.default">
+				<div class="elementor-widget-container">
+			<div		class="sc_title sc_title_default" ><span class="sc_item_subtitle sc_title_subtitle sc_item_subtitle_above sc_item_title_style_default">Contact Us</span><h2 class="sc_item_title sc_title_title sc_item_title_style_default"
+			><span class="sc_item_title_text">Get in Touch With Us..!</span></h2></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-527c1067 sc_height_small sc_fly_static elementor-widget elementor-widget-spacer" data-id="527c1067" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9071531 sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-spacer" data-id="9071531" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-22e72be sc_fly_static elementor-widget elementor-widget-trx_sc_googlemap" data-id="22e72be" data-element_type="widget" data-widget_type="trx_sc_googlemap.default">
+				<div class="elementor-widget-container">
+			<div id="sc_googlemap_2131204757_wrap" class="sc_googlemap_wrap"><div id="sc_googlemap_2131204757"			class="sc_item_content sc_map sc_googlemap sc_googlemap_default trx_addons_inline_990465782"
+			 			data-zoom="12"
+			data-center=""
+			data-style="extra"
+			data-cluster-icon=""
+			><iframe
+						src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=607+Highgate+Maori+Hill%2C+Dunedin+9010"
+						aria-label=""></iframe></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3b232d81 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="3b232d81" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6a5d9055 sc_fly_static elementor-widget elementor-widget-spacer" data-id="6a5d9055" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-57d45ddc sc_fly_static elementor-widget elementor-widget-trx_sc_contact_form_7" data-id="57d45ddc" data-element_type="widget" data-widget_type="trx_sc_contact_form_7.default">
+				<div class="elementor-widget-container">
+			
+<div class="wpcf7 no-js" id="wpcf7-f18643-p1453-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/contact-us/#wpcf7-f18643-p1453-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="18643" />
+<input type="hidden" name="_wpcf7_version" value="5.8.4" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f18643-p1453-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="1453" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<div class="form-style-7">
+	<div class="columns_wrap">
+		<div class="column-1_1">
+			<p><span class="style-line icon-name"><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*" value="" type="text" name="your-name" /></span></span>
+			</p>
+		</div>
+		<div class="column-1_1">
+			<p><span class="style-line icon-phone"><span class="wpcf7-form-control-wrap" data-name="phone"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone*" value="" type="tel" name="phone" /></span></span>
+			</p>
+		</div>
+		<div class="column-1_1">
+			<p><span class="style-line icon-email"><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address*" value="" type="email" name="your-email" /></span></span>
+			</p>
+		</div>
+		<div class="column-1_1">
+			<p><span class="style-line icon-subject"><span class="wpcf7-form-control-wrap" data-name="subject"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Subject*" value="" type="text" name="subject" /></span></span>
+			</p>
+		</div>
+	</div>
+	<div class="columns_wrap margin-bottom">
+		<div class="column-1_1">
+			<p><span class="style-line icon-textarea"><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="How can we help you? Feel free to get in touch!" name="your-message"></textarea></span></span>
+			</p>
+		</div>
+	</div>
+	<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Get In Touch" />
+	</p>
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+			</div><!-- .entry-content -->
+
+	
+</article>
+						</div>
+											</div>
+								</div>
+							<a id="footer_skip_link_anchor" class="mission_skip_link_anchor" href="#"></a>
+				<footer class="footer_wrap footer_custom footer_custom_18319 footer_custom_footer-home-1												">
+			<div data-elementor-type="cpt_layouts" data-elementor-id="18319" class="elementor elementor-18319">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-2797ba02 scheme_dark elementor-section-content-middle sc_layouts_row sc_layouts_row_type_compact elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="2797ba02" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4d8239d7 sc-mobile_layouts_column_align_center sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="4d8239d7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-514bd6c4 sc_fly_static elementor-widget elementor-widget-text-editor" data-id="514bd6c4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<a href="https://clans.org.nz/" target="_blank" rel="noopener">Christ Loves All Nations</a> © 2024. All Rights Reserved.						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-63fbe2c4 sc_layouts_column_align_center sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="63fbe2c4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-50aa674 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_logo" data-id="50aa674" data-element_type="widget" data-widget_type="trx_sc_layouts_logo.default">
+				<div class="elementor-widget-container">
+			<a href="https://clans.org.nz/"
+		class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_826055004" ><img class="logo_image"
+					src="//clans.org.nz/wp-content/uploads/2023/10/christ-love-logo.png"
+											srcset="//clans.org.nz/wp-content/uploads/2023/10/christ-love-logo-retina.png 2x"
+											alt="Christ Loves All Nations" width="160" height="191"></a>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-15eb2584 sc_layouts_column_align_right sc_layouts_column sc-mobile_layouts_column_align_center sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="15eb2584" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="sc_layouts_item elementor-element elementor-element-3929a270 sc_fly_static elementor-widget elementor-widget-trx_sc_socials" data-id="3929a270" data-element_type="widget" data-widget_type="trx_sc_socials.default">
+				<div class="elementor-widget-container">
+			<div  
+		class="sc_socials sc_socials_default sc_align_none" ><div class="socials_wrap sc_item_content"><a target="_blank" href="#" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="#" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_twitter-new" style=""><span class="icon-twitter-new"></span></span></a><a target="_blank" href="https://www.instagram.com/christlovesallnations/?igshid" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="#" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube" style=""><span class="icon-youtube"></span></span></a></div></div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		</footer><!-- /.footer_wrap -->
+
+			
+		</div>
+
+		
+	</div>
+
+	
+	
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up scroll_to_top_style_default" title="Scroll to top"></a>		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<div class="trx_addons_mouse_helper"
+				></div>	<div oncontextmenu="return false;" id='wccp_pro_mask'></div>
+	<div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span><b>Alert:</b> Content is protected !!</div>
+	<script id="wccp_pro_alert_message" type="text/javascript">
+	var timeout_result;
+	function show_wccp_pro_message(smessage="", style="")
+	{
+		wccp_pro_log_to_console_if_allowed("function", "show_wccp_pro_message" + smessage);
+				
+		timeout = 3000;
+		
+		if(style == "") style = "warning-wpcp";
+		
+		if (smessage !== "" && timeout!=0)
+		{
+			var smessage_text = smessage;
+			jquery_fadeTo();
+			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp showme " + style;
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, timeout);
+		}
+		else
+		{
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, timeout);
+		}
+	}
+	function hide_message()
+	{
+		jquery_fadeOut();
+		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+	}
+	function jquery_fadeTo()
+	{
+		try {
+			jQuery("#wccp_pro_mask").fadeTo("slow", 0.3);
+		}
+		catch(err) {
+			//alert(err.message);
+			}
+	}
+	function jquery_fadeOut()
+	{
+		try {
+			jQuery("#wccp_pro_mask").fadeOut( "slow" );
+		}
+		catch(err) {}
+	}
+	</script>
+	
+<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script>
+
+
+
+
+
+
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.4" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/clans.org.nz\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.4" id="contact-form-7-js"></script>
+
+
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/trx_addons/js/magnific/jquery.magnific-popup.min.js" id="magnific-popup-js"></script>
+<script type="text/javascript" id="give-stripe-js-js-extra">
+/* <![CDATA[ */
+var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["JPY","KRW","CLP","ISK","BIF","DJF","GNF","KHR","KPW","LAK","LKR","MGA","MZN","VUV"],"sitename":"Christ Loves All Nations","checkoutBtnTitle":"Donate","publishable_key":"pk_live_51O52IDEwyhSmR351rymxsSdTTI3SgoI8uJ4d19DT9RUgxhX0aDjfxg9yuOmGlu4v9v2c9lAXAfGrqA97P2whewVn00tN0dqSNc","checkout_image":"","checkout_address":"on","checkout_processing_text":"Donation Processing...","give_version":"3.2.0","cc_fields_format":"multi","card_number_placeholder_text":"Card Number","card_cvc_placeholder_text":"CVC","donate_button_text":"Donate Now","element_font_styles":{"cssSrc":false},"element_base_styles":{"color":"#32325D","fontWeight":500,"fontSize":"16px","fontSmoothing":"antialiased","::placeholder":{"color":"#222222"},":-webkit-autofill":{"color":"#e39f48"}},"element_complete_styles":{},"element_empty_styles":{},"element_invalid_styles":{},"float_labels":"","base_country":"NZ","preferred_locale":"en"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://js.stripe.com/v3/?ver=3.2.0" id="give-stripe-js-js"></script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/give/assets/dist/js/give-stripe.js?ver=3.2.0" id="give-stripe-onpage-js-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" id="give-js-extra">
+/* <![CDATA[ */
+var give_global_vars = {"ajaxurl":"https:\/\/clans.org.nz\/wp-admin\/admin-ajax.php","checkout_nonce":"990ae430a4","currency":"NZD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Please select a payment method.","bad_minimum":"The minimum custom donation amount for this form is","bad_maximum":"The maximum custom donation amount for this form is","general_loading":"Loading...","purchase_loading":"Please Wait...","textForOverlayScreen":"<h3>Processing...<\/h3><p>This will only take a second!<\/p>","number_decimals":"2","is_test_mode":"","give_version":"3.2.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Please select payment mode.","give_first":"Please enter your first name.","give_last":"Please enter your last name.","give_email":"Please enter a valid email address.","give_user_login":"Invalid email address or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agree_to_terms":"You must agree to the terms and conditions."},"confirm_email_sent_message":"Please check your email and click on the link to access your complete donation history.","ajax_vars":{"ajaxurl":"https:\/\/clans.org.nz\/wp-admin\/admin-ajax.php","ajaxNonce":"cc0cdc9fab","loading":"Loading","select_option":"Please select an option","default_gateway":"stripe_checkout","permalinks":"1","number_decimals":2},"cookie_hash":"12a7d6d8da909bfbd46fd90e5723e323","session_nonce_cookie_name":"wp-give_session_reset_nonce_12a7d6d8da909bfbd46fd90e5723e323","session_cookie_name":"wp-give_session_12a7d6d8da909bfbd46fd90e5723e323","delete_session_nonce_cookie":"0"};
+var giveApiSettings = {"root":"https:\/\/clans.org.nz\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/give/assets/dist/js/give.js?ver=1f58f4922fc61e82" id="give-js"></script>
+<script type="text/javascript" id="give-donation-summary-script-frontend-js-extra">
+/* <![CDATA[ */
+var GiveDonationSummaryData = {"currencyPrecisionLookup":{"USD":2,"EUR":2,"GBP":2,"AUD":2,"BRL":2,"CAD":2,"CZK":2,"DKK":2,"HKD":2,"HUF":2,"ILS":2,"JPY":0,"MYR":2,"MXN":2,"MAD":2,"NZD":2,"NOK":2,"PHP":2,"PLN":2,"SGD":2,"KRW":0,"ZAR":2,"SEK":2,"CHF":2,"TWD":2,"THB":2,"INR":2,"TRY":2,"IRR":2,"RUB":2,"AED":2,"AMD":2,"ANG":2,"ARS":2,"AWG":2,"BAM":2,"BDT":2,"BHD":3,"BMD":2,"BND":2,"BOB":2,"BSD":2,"BWP":2,"BZD":2,"CLP":0,"CNY":2,"COP":2,"CRC":2,"CUC":2,"CUP":2,"DOP":2,"EGP":2,"GIP":2,"GTQ":2,"HNL":2,"HRK":2,"IDR":2,"ISK":0,"JMD":2,"JOD":2,"KES":2,"KWD":2,"KYD":2,"MKD":2,"NPR":2,"OMR":3,"PEN":2,"PKR":2,"RON":2,"SAR":2,"SZL":2,"TOP":2,"TZS":2,"UAH":2,"UYU":2,"VEF":2,"XCD":2,"AFN":2,"ALL":2,"AOA":2,"AZN":2,"BBD":2,"BGN":2,"BIF":0,"XBT":8,"BTN":1,"BYR":2,"BYN":2,"CDF":2,"CVE":2,"DJF":0,"DZD":2,"ERN":2,"ETB":2,"FJD":2,"FKP":2,"GEL":2,"GGP":2,"GHS":2,"GMD":2,"GNF":0,"GYD":2,"HTG":2,"IMP":2,"IQD":2,"IRT":2,"JEP":2,"KGS":2,"KHR":0,"KMF":2,"KPW":0,"KZT":2,"LAK":0,"LBP":2,"LKR":0,"LRD":2,"LSL":2,"LYD":3,"MDL":2,"MGA":0,"MMK":2,"MNT":2,"MOP":2,"MRO":2,"MUR":2,"MVR":1,"MWK":2,"MZN":0,"NAD":2,"NGN":2,"NIO":2,"PAB":2,"PGK":2,"PRB":2,"PYG":2,"QAR":2,"RSD":2,"RWF":2,"SBD":2,"SCR":2,"SDG":2,"SHP":2,"SLL":2,"SOS":2,"SRD":2,"SSP":2,"STD":2,"SYP":2,"TJS":2,"TMT":2,"TND":3,"TTD":2,"UGX":2,"UZS":2,"VND":1,"VUV":0,"WST":2,"XAF":2,"XOF":2,"XPF":2,"YER":2,"ZMW":2},"recurringLabelLookup":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/give/assets/dist/js/give-donation-summary.js?ver=3.2.0" id="give-donation-summary-script-frontend-js"></script>
+<script type="text/javascript" id="wccp_pro_admin_bar_ajax-js-extra">
+/* <![CDATA[ */
+var ajax_object = {"ajaxurl":"https:\/\/clans.org.nz\/wp-admin\/admin-ajax.php","link":"https:\/\/clans.org.nz\/contact-us\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/wccp-pro/js/admin_bar_ajax.js?ver=6.4.2" id="wccp_pro_admin_bar_ajax-js"></script>
+<script type="text/javascript" id="trx_addons-js-extra">
+/* <![CDATA[ */
+var TRX_ADDONS_STORAGE = {"ajax_url":"https:\/\/clans.org.nz\/wp-admin\/admin-ajax.php","ajax_nonce":"6191d7dc3b","site_url":"https:\/\/clans.org.nz","post_id":"1453","vc_edit_mode":"","is_preview":"","is_preview_gb":"","is_preview_elm":"","popup_engine":"magnific","scroll_progress":"hide","hide_fixed_rows":"1","smooth_scroll":"","animate_inner_links":"1","disable_animation_on_mobile":"","add_target_blank":"0","menu_collapse":"1","menu_collapse_icon":"trx_addons_icon-ellipsis-vert","menu_stretch":"1","resize_tag_video":"","resize_tag_iframe":"1","user_logged_in":"","theme_slug":"mission","theme_bg_color":"#F7F2F0","theme_accent_color":"#3F292B","page_wrap_class":".page_wrap","email_mask":"^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-zA-Z0-9_\\-]+(\\.[a-zA-Z0-9_\\-]+)*\\.[a-zA-Z0-9]{2,6}$","mobile_breakpoint_fixedrows_off":"768","mobile_breakpoint_fixedcolumns_off":"768","mobile_breakpoint_stacksections_off":"768","mobile_breakpoint_fullheight_off":"1025","mobile_breakpoint_mousehelper_off":"1025","msg_caption_yes":"Yes","msg_caption_no":"No","msg_caption_ok":"OK","msg_caption_apply":"Apply","msg_caption_cancel":"Cancel","msg_caption_attention":"Attention!","msg_caption_warning":"Warning!","msg_ajax_error":"Invalid server answer!","msg_magnific_loading":"Loading image","msg_magnific_error":"Error loading image","msg_magnific_close":"Close (Esc)","msg_error_like":"Error saving your like! Please, try again later.","msg_field_name_empty":"The name can't be empty","msg_field_email_empty":"Too short (or empty) email address","msg_field_email_not_valid":"Invalid email address","msg_field_text_empty":"The message text can't be empty","msg_search_error":"Search error! Try again later.","msg_send_complete":"Send message complete!","msg_send_error":"Transmit failed!","msg_validation_error":"Error data validation!","msg_name_empty":"The name can't be empty","msg_name_long":"Too long name","msg_email_empty":"Too short (or empty) email address","msg_email_long":"E-mail address is too long","msg_email_not_valid":"E-mail address is invalid","msg_text_empty":"The message text can't be empty","msg_copied":"Copied!","ajax_views":"","menu_cache":["#menu_main","#menu_mobile","#menu_mobile",".menu_mobile_inner nav > ul"],"login_via_ajax":"1","double_opt_in_registration":"1","msg_login_empty":"The Login field can't be empty","msg_login_long":"The Login field is too long","msg_password_empty":"The password can't be empty and shorter then 4 characters","msg_password_long":"The password is too long","msg_login_success":"Login success! The page should be reloaded in 3 sec.","msg_login_error":"Login failed!","msg_not_agree":"Please, read and check 'Terms and Conditions'","msg_password_not_equal":"The passwords in both fields are not equal","msg_registration_success":"Thank you for registering. Please confirm registration by clicking on the link in the letter sent to the specified email.","msg_registration_error":"Registration failed!","shapes_url":"https:\/\/clans.org.nz\/wp-content\/themes\/mission\/skins\/default\/trx_addons\/css\/shapes\/","elementor_stretched_section_container":".page_wrap","pagebuilder_preview_mode":"","elementor_animate_items":".elementor-heading-title,.sc_item_subtitle,.sc_item_title,.sc_item_descr,.sc_item_posts_container + .sc_item_button,.sc_item_button.sc_title_button,.social_item,nav > ul > li","msg_change_layout":"After changing the layout, the page will be reloaded! Continue?","msg_change_layout_caption":"Change layout","add_to_links_url":[{"mask":"elementor.com\/","link":"https:\/\/trk.elementor.com\/2496"}],"msg_no_products_found":"No products found! Please, change query parameters and try again.","audio_effects_allowed":"0","mouse_helper":"1","mouse_helper_delay":"8","mouse_helper_centered":"0","msg_mouse_helper_anchor":"Scroll to","portfolio_use_gallery":"","scroll_to_anchor":"0","update_location_from_anchor":"0","msg_sc_googlemap_not_avail":"Googlemap service is not available","msg_sc_googlemap_geocoder_error":"Error while geocode address","sc_icons_animation_speed":"50","msg_sc_osmap_not_avail":"OpenStreetMap service is not available","msg_sc_osmap_geocoder_error":"Error while geocoding address","osmap_tiler":"vector","osmap_tiler_styles":{"basic":{"title":"Basic","slug":"basic","url":"https:\/\/api.maptiler.com\/maps\/{style}\/style.json?key=C1rALu26mR1iTxEBrqQj","maxzoom":"18","token":""}},"osmap_attribution":"Map data \u00a9 <a href=\"https:\/\/www.openstreetmap.org\/\">OpenStreetMap<\/a> contributors","slider_round_lengths":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/trx_addons/js/__scripts.js" id="trx_addons-js"></script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/trx_addons/components/api/contact-form-7/contact-form-7.js" id="trx_addons-cf7-js"></script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/trx_addons/addons/mouse-helper/mouse-helper.js" id="trx_addons-mouse-helper-js"></script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/trx_addons/components/cpt/layouts/shortcodes/menu/superfish.min.js" id="superfish-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-content/plugins/trx_addons/js/tweenmax/tweenmax.min.js" id="tweenmax-js"></script>
+<script type="text/javascript" defer="defer" src="https://www.google.com/recaptcha/api.js?render=6LcwQNUoAAAAAMdQ5IypPEJh36iJoXbOtlZcI36c&amp;ver=3.0" id="google-recaptcha-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LcwQNUoAAAAAMdQ5IypPEJh36iJoXbOtlZcI36c","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.8.4" id="wpcf7-recaptcha-js"></script>
+<script type="text/javascript" id="mission-init-js-extra">
+/* <![CDATA[ */
+var MISSION_STORAGE = {"ajax_url":"https:\/\/clans.org.nz\/wp-admin\/admin-ajax.php","ajax_nonce":"6191d7dc3b","site_url":"https:\/\/clans.org.nz","theme_url":"https:\/\/clans.org.nz\/wp-content\/themes\/mission\/","site_scheme":"scheme_default","user_logged_in":"","mobile_layout_width":"768","mobile_device":"","mobile_breakpoint_underpanels_off":"768","mobile_breakpoint_fullheight_off":"1025","menu_side_stretch":"","menu_side_icons":"1","background_video":"","use_mediaelements":"1","resize_tag_video":"","resize_tag_iframe":"1","open_full_post":"","which_block_load":"article","admin_mode":"","msg_ajax_error":"Invalid server answer!","msg_i_agree_error":"Please accept the terms of our Privacy Policy.","toggle_title":"Filter by ","msg_copied":"Copied!","alter_link_color":"#3F292B","mc4wp_msg_email_min":"Email address is too short (or empty)","mc4wp_msg_email_max":"Too long email address","button_hover":"default"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/themes/mission/js/__scripts.js" id="mission-init-js"></script>
+<script type="text/javascript" id="mediaelement-core-js-before">
+/* <![CDATA[ */
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17" id="mediaelement-core-js"></script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.4.2" id="mediaelement-migrate-js"></script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.4.2" id="wp-mediaelement-js"></script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/themes/mission/skins/default/skin.js" id="mission-skin-default-js"></script>
+<script type="text/javascript" defer="defer" src="https://clans.org.nz/wp-content/themes/mission/plugins/contact-form-7/contact-form-7.js" id="mission-contact-form-7-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.17.2" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.17.2" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="https://clans.org.nz/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.17.2","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"landing-pages":true},"urls":{"assets":"https:\/\/clans.org.nz\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"stretched_section_container":".page_wrap","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1453,"title":"Contact%20Us%20%E2%80%93%20Christ%20Loves%20All%20Nations","excerpt":"","featuredImage":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://clans.org.nz/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.17.2" id="elementor-frontend-js"></script>
+
+</body>
+</html>
+
+<!-- Page cached by LiteSpeed Cache 6.0 on 2024-01-06 03:35:50 -->

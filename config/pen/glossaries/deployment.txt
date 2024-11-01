@@ -1,0 +1,41 @@
+OTA deployment
+over-the-air deployment
+Over-the-Air programming
+OTA
+    Refers to various methods of distributing
+    new software, configuration settings, and
+    even updating encryption keys to devices
+    like mobile phones, set-top boxes or
+    secure voice communication equipment
+    (encrypted 2-way radios).
+
+codeship
+    A fast and secure hosted CI service that
+    scales with your needs.
+    
+    It supports GitHub, Bitbucket, and Gitlab
+    projects.
+
+Blue-green deployment
+    A technique that reduces downtime and risk
+    by running two identical production
+    environments called Blue and Green.
+    
+    At any time, only one of the environments
+    is live, with the live environment serving
+    all production traffic.
+    
+    For this example, Blue is currently live
+    and Green is idle.
+
+canary release
+canarying
+    [#deployment]
+    [experimentation-first approach]
+
+    Just like canaries that were once used in
+    coal mining to alert miners when toxic
+    gases reached dangerous levels, a small
+    set of end users selected for testing act
+    as the canaries and are used to provide an
+    early warning.

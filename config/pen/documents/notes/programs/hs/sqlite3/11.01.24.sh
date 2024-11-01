@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Luke.2.35\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"

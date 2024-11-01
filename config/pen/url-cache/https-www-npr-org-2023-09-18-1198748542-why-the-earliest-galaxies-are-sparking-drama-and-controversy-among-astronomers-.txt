@@ -1,0 +1,1034 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+X-Cache-NPR: HIT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+X-NPR-Trace-ID: renosVUqZHL
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Served-By: pod-www-render-nginx-6859c8947d-mlc2f
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,1
+Vary: Accept-Encoding
+Cache-Control: no-cache
+Expires: Thu, 21 Sep 2023 00:38:31 GMT
+Date: Thu, 21 Sep 2023 00:38:31 GMT
+Content-Length: 26310
+Connection: close
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=1
+Set-Cookie: ak_bmsc=267116C1DB0846D46045CAF85372B7AC~000000000000000000000000000000~YAAQhv9tyympOYqKAQAAL5EstRWnUEs0j9T6P+Ba/8y1YZGe166Pc5IyHxmTRok+9XG/ItRE0gdTsJbE9VeFEKSL98pfkHxWFixJHfd1cHupw94YTbfNEZDmlWd9Prh3y/vmRpU/n9M76ujKyVmc0OsmVq1oy114yC3X0D6Vs4q465VZBPNUiR+hHyLb7SJtxxgebCFIT6pacJv7LhJvx1zVnc82YrctReafkxyv+2b5haLZaiHXfJ78EveOrf4+EoIzNevoe0YBYnPvCTdoIe41X+AHb8wESQO1tuaIx1EWXX9m0wHTDwTxs+kZwuCi5GRqSUOrhiIKiVCbOvUTt84nSXoAjCHmCItQEiCP0boQvLA4GRlvBw+lgdzLCnKRxAob9EDPI77hSWORnV48GleeRg==; Domain=.npr.org; Path=/; Expires=Thu, 21 Sep 2023 02:38:31 GMT; Max-Age=7200; HttpOnly
+Server-Timing: ak_p; desc="1695256711372_3412983686_692352015_468_11967_29_24_-";dur=1
+
+<!doctype html><html class="no-js" lang="en"><head><!-- OneTrust Cookies Consent Notice start for npr.org -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/82089dfe-410c-4e1b-a7f9-698174b62a86/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="82089dfe-410c-4e1b-a7f9-698174b62a86" ></script>
+
+<script type="text/javascript">
+function OptanonWrapper() {
+    NPR_OptanonWrapper = true;
+    document.dispatchEvent(new CustomEvent('npr:DataConsentAvailable'));
+    
+    OneTrust.OnConsentChanged(function() {
+        document.dispatchEvent(new CustomEvent('npr:DataConsentChanged'));
+    });
+ }
+</script>
+<!-- OneTrust Cookies Consent Notice end for npr.org -->
+<script src="https://cdn.cookielaw.org/opt-out/otCCPAiab.js" type="text/javascript" charset="UTF-8" ccpa-opt-out-ids="C0004" ccpa-opt-out-geo="us" ccpa-opt-out-lspa="false"></script><script type="text/plain" class="optanon-category-C0004">
+    document.cookie = "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+    var setNptTechAdblockerCookie = function(adblocker) {
+        var d = new Date();
+        d.setTime(d.getTime() + 60 * 5 * 1000);
+        document.cookie = "__adblocker=" + (adblocker ? "true" : "false") + "; expires=" + d.toUTCString() + "; path=/";
+    };
+    var script = document.createElement("script");
+    script.setAttribute("async", true);
+    script.setAttribute("src", "//www.npttech.com/advertising.js");
+    script.setAttribute("onerror", "setNptTechAdblockerCookie(true);");
+    document.getElementsByTagName("head")[0].appendChild(script);
+</script><script type='text/javascript'>
+  !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+</script><script>
+(function (e, o, n, i) {
+    if (!e) {
+        e = e || {}, window.permutive = e, e.q = [];
+        var t = function () {
+            return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, function (e) {
+                return (e ^ (window.crypto || window.msCrypto).getRandomValues(new Uint8Array(1))[0] & 15 >> e / 4).toString(16)
+            })
+        };
+        e.config = i || {}, e.config.apiKey = o, e.config.workspaceId = n, e.config.environment = e.config.environment || "production", (window.crypto || window.msCrypto) && (e.config.viewId = t());
+        for (var g = ["addon", "identify", "track", "trigger", "query", "segment", "segments", "ready", "on", "once", "user", "consent"], r = 0; r < g.length; r++) {
+            var w = g[r];
+            e[w] = function (o) {
+                return function () {
+                    var n = Array.prototype.slice.call(arguments, 0);
+                    e.q.push({functionName: o, arguments: n})
+                };
+            }(w);
+        }
+    }
+})(window.permutive, "12730e07-f09d-4a69-93da-99b43983b663", "e1cef1f0-495f-4973-ba1c-880786e73a66", {"consentRequired": true});
+</script>
+
+
+<!--
+
+nnnnnnnnnnnnnnnnnn ppppppppppppppppppp rrrrrrrrrrrrrrrrrr
+nnnnnnnnnnnnnnnnnn ppppppppppppppppppp rrrrrrrrrrrrrrrrrr
+nnn         nnnnnn ppp          pppppp rrr           rrrr
+nnn   nnnn    nnnn ppp   pppppp   pppp rrr   rrrrrr   rrr
+nnn   nnnnnn   nnn ppp   ppppppp   ppp rrr   rrrrrrrrrrrr
+nnn   nnnnnn   nnn ppp   ppppp    pppp rrr   rrrrrrrrrrrr
+nnn   nnnnnn   nnn ppp           ppppp rrr   rrrrrrrrrrrr
+nnn   nnnnnn   nnn ppp   ppppppppppppp rrr   rrrrrrrrrrrr
+nnnnnnnnnnnnnnnnnn ppp   ppppppppppppp rrrrrrrrrrrrrrrrrr
+nnnnnnnnnnnnnnnnnn ppppppppppppppppppp rrrrrrrrrrrrrrrrrr
+
+We are hiring!
+
+https://n.pr/tech-jobs
+
+-->
+
+
+<script>dataLayer = [];</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer', 'GTM-MVD397M');</script>
+<!-- End Google Tag Manager -->
+<script>
+   try {var _sf_startpt=(new Date()).getTime();} catch(e){}
+</script>
+<meta itemscope itemtype="https://schema.org/SpeakableSpecification" itemref="speakable" /><title>Early galaxies from soon after the Big Bang cause drama : Short Wave : NPR</title><meta id="speakable" itemprop="cssSelector" content="[data-is-speakable]" /><meta id="google-site-verification" name="google-site-verification" content="1VqzbDm4ukeFVHOoq5LjIKA2fVKZD-EYv8cXZhKXSfU" /><meta charset="utf-8" /><meta name="robots" content="noarchive,index,follow,max-image-preview:large" /><meta name="apple-itunes-app" content="app-id=324906251, app-argument=https://www.npr.org/2023/09/18/1198748542/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers" /><meta name="Rating" content="General" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="npr-pjax" /><meta name="date" content="2023-09-18" /><link rel="canonical" href="https://www.npr.org/2023/09/18/1198748542/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers" /><meta name="description" content="We&#039;re entering a new era of astrophysics. The James Webb Space Telescope is helping scientists test existing ideas and models of how the universe was created—on a whole new level. This telescope is sending back images of galaxies forming under a billion years after the Big Bang—way earlier than astronomers had previously expected. Not only that, scientists had anticipated that later—but still very early—galaxies would be small, barely formed blobs; instead, the galaxies in these images have spiral arms. So, today&#039;s show is all about GALACTIC CONTROVERSY! Computational astrophysicist Jorge Moreno talks with fellow astronomer and Short Wave&#039;s Scientist in Residence Regina G. Barber about how these new findings are stirring up controversy in the scientific community and the lessons we can learn from galaxies. Questions or controversies? Email us at shortwave@npr.org. " /><link rel="alternate" type="application/rss+xml" title="Science" href="https://feeds.npr.org/1007/rss.xml" /><link rel="alternate" type="application/json" title="Science" href="https://feeds.npr.org/feeds/1007/feed.json" /><meta name="cXenseParse:pageclass" content="article" /><meta name="cXenseParse:publishtime" content="2023-09-18T00:10:00-04:00" /><meta name="cXenseParse:author" content="Regina G. Barber|Rachel Carlson|Berly McCoy|Rebecca Ramirez" data-separator="|" /><link rel="apple-touch-icon" sizes="180x180" href="https://static-assets.npr.org/static/images/favicon/favicon-180x180.png" /><link rel="shortcut icon" href="https://static-assets.npr.org/static/images/favicon/favicon.ico" /><link rel="icon" sizes="96x96" href="https://static-assets.npr.org/static/images/favicon/favicon-96x96.png" /><link rel="icon" sizes="48x48" href="https://static-assets.npr.org/static/images/favicon/favicon-48x48.png" /><link rel="icon" sizes="32x32" href="https://static-assets.npr.org/static/images/favicon/favicon-32x32.png" /><link rel="icon" sizes="16x16" href="https://static-assets.npr.org/static/images/favicon/favicon-16x16.png" /><meta property="og:title" content="Why the earliest galaxies are sparking drama and controversy among astronomers : Short Wave" /><meta property="og:url" content="https://www.npr.org/2023/09/18/1198748542/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers" /><meta property="og:type" content="article" /><meta property="og:description" content="We&#039;re entering a new era of astrophysics. The James Webb Space Telescope is helping scientists test existing ideas and models of how the universe was created—on a whole new level. This telescope is sending back images of galaxies forming under a billion years after the Big Bang—way earlier than astronomers had previously expected. Not only that, scientists had anticipated that later—but still very early—galaxies would be small, barely formed blobs; instead, the galaxies in these images have spiral arms. So, today&#039;s show is all about GALACTIC CONTROVERSY! Computational astrophysicist Jorge Moreno talks with fellow astronomer and Short Wave&#039;s Scientist in Residence Regina G. Barber about how these new findings are stirring up controversy in the scientific community and the lessons we can learn from galaxies. Questions or controversies? Email us at shortwave@npr.org. " /><meta property="og:image" content="https://media.npr.org/assets/img/2023/09/15/image-for-jwst_wide-19cd15c80bb0f7a96d8bc4049d05f17de0e8ad0f-s1400-c100.jpg" /><meta property="og:image" content="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_wide-6b0d395d6b48abade014e7406dbe55330baa24de-s1400-c100.png" /><meta property="og:site_name" content="NPR" /><meta property="fb:app_id" content="138837436154588" /><meta property="fb:pages" content="10643211755" /><meta property="article:content_tier" content="free" /><meta property="article:opinion" content="false" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Why the earliest galaxies are sparking drama and controversy among astronomers : Short Wave" /><meta name="twitter:site" content="@NPR" /><meta name="twitter:domain" content="npr.org" /><meta name="twitter:image:src" content="https://media.npr.org/assets/img/2023/09/15/image-for-jwst_wide-19cd15c80bb0f7a96d8bc4049d05f17de0e8ad0f-s1400-c100.jpg" /><script id="npr-vars">
+   window.NPR = window.NPR || {};
+NPR.ServerConstants = {"cbHost":"npr.org","webHost":"https:\/\/www.npr.org","legacyWebHost":"https:\/\/legacy.npr.org","stripeServiceHost":"https:\/\/stripe.npr.org","recaptchaV3SiteKey":"6LcdN9IZAAAAAOHT985BJjbzjkBjKSxdxK3GeKSt","placesApiKey":"AIzaSyB_wzlXPVwS4kHRAZsM6scMzUAIsJ6aMZ4","embedHost":"https:\/\/www.npr.org","webHostSecure":"https:\/\/secure.npr.org","identityHost":"https:\/\/identity.api.npr.org","apiHost":"https:\/\/api.npr.org","environment":"prod","serverMediaCache":"https:\/\/media.npr.org","googleAnalyticsAccount":"UA-5828686-4","gtmKey":"GTM-MVD397M","nielsenSFCode":"dcr","nielsenAPN":"NPR-dcr","shouldShowHPLocalContent":true,"cookieDomain":".npr.org","organizationV4Host":"https:\/\/organization.api.npr.org"};
+NPR.serverVars = {"storyId":"1198748542","storyCategory":"Life Sciences","isHiring":true,"facebookAppId":"138837436154588","webpackPublicPath":"https:\/\/bundles.npr.org\/dist\/bundles\/","persistenceVersion":"48793d5710cd9c7ec9de4a307d934951","isBuildOut":true,"topicIds":["P1007","1001","1002","1024","1026"],"primaryTopic":"Science","topics":["Science","Space","Research News","Science","Home Page Top Stories","News"],"theme":"510351","aggIds":["1001","1002","1007","1024","1026","510351","145045968","152336857","162218646","191676894","243475997","529876670","578862380","1037126227","1126052605"],"tagIds":["Edwin Hubble","Fritz Zwicky","James Webb Space Telescope","cosmic evolution","cosmic expansion","galaxies"],"byline":["Regina G. Barber","Rachel Carlson","Berly McCoy","Rebecca Ramirez"],"contentPartnerOrgFullName":"1 | NPR","pubDate":"2023091800","fullPubDate":"Mon, 18 Sep 2023 00:10:00 -0400","pageTypeId":"15","title":"Why the earliest galaxies are sparking drama and controversy among astronomers","publisherOrgId":"1"};
+</script>
+<script type="text/javascript" src="https://cdn.optimizely.com/js/11107397707.js">
+   </script>
+<script type="text/javascript" src="https://static-assets.npr.org/static/javascript/lib/modernizr/modernizr.custom.js">
+   </script>
+<script type="text/javascript" src="https://static-assets.npr.org/static/javascript/lib/svg-loader.min.js">
+   </script>
+<script type="text/javascript" async src="https://js.stripe.com/v3/">
+   </script>
+<script>
+   !function(e){function a(a){for(var t,c,o=a[0],d=a[1],u=a[2],i=0,l=[];i<o.length;i++)c=o[i],Object.prototype.hasOwnProperty.call(n,c)&&n[c]&&l.push(n[c][0]),n[c]=0;for(t in d)Object.prototype.hasOwnProperty.call(d,t)&&(e[t]=d[t]);for(b&&b(a);l.length;)l.shift()();return f.push.apply(f,u||[]),r()}function r(){for(var e,a=0;a<f.length;a++){for(var r=f[a],t=!0,o=1;o<r.length;o++){var d=r[o];0!==n[d]&&(t=!1)}t&&(f.splice(a--,1),e=c(c.s=r[0]))}return e}var t={},n={0:0},f=[];function c(a){if(t[a])return t[a].exports;var r=t[a]={i:a,l:!1,exports:{}};return e[a].call(r.exports,r,r.exports,c),r.l=!0,r.exports}c.e=function(e){var a=[],r=n[e];if(0!==r)if(r)a.push(r[2]);else{var t=new Promise((function(a,t){r=n[e]=[a,t]}));a.push(r[2]=t);var f,o=document.createElement("script");o.charset="utf-8",o.timeout=120,c.nc&&o.setAttribute("nonce",c.nc),o.src=function(e){return c.p+""+e+"."+{1:"47819f3f10e5dbfa6930",2:"fa7b2debbb65ab6fdb6c",3:"ac9a646afcce46df093d",4:"57757ec385187a32ce74",5:"fd8f69ae5b62b608e2fd",6:"2fff50c80c6aefad3902",7:"148bee347d7df39d741e",8:"c4971a75b02ac0a99425",74:"3e99166bdf3d0e4b5052",75:"7278e740a3bcc24db635",76:"ed4759e9c8f4f6e5fa50",77:"7c9ecf02b09ca3adac8b",78:"71f8588ed4005b56133b",79:"22fcd03f211f18a1dacd",80:"d252fb366ccf70bd0c4a",81:"5da526d8d5a9a5735c74",82:"877cc2c4e7b48452a424",83:"4b42885958c541b382f5",84:"bd2ad4def6e2379305a8",85:"4690a9f6710503b59779",86:"f3c029ad7366ebd1f4b2",87:"5c7f00fbae0968efa00a",88:"48a970c8ea0b1e11a2d4",89:"0d7e4712a73c1a451507",90:"ea871665237a0831d4cf",91:"d8b778b6e446a82ad4c1",92:"7b779f4f35d2a8d2984a",93:"44e99d1ed0742992a5c9",94:"16ba45bcceef56ab3130",95:"36e164ef295ffbc51db1",96:"39f6eed73aea1a7cd28e",97:"e66519864f4ac4cd6faa",98:"f25b3579ae50973dcf35",99:"a822cbb1d42d548f325e",100:"930200a13472afe75217",101:"d7b8dc80ae5f35a43ff7",102:"31d0fa3ab788c61d6e44",103:"7c6571d923824476eee7"}[e]+".chunk.js"}(e);var d=new Error;f=function(a){o.onerror=o.onload=null,clearTimeout(u);var r=n[e];if(0!==r){if(r){var t=a&&("load"===a.type?"missing":a.type),f=a&&a.target&&a.target.src;d.message="Loading chunk "+e+" failed.\n("+t+": "+f+")",d.name="ChunkLoadError",d.type=t,d.request=f,r[1](d)}n[e]=void 0}};var u=setTimeout((function(){f({type:"timeout",target:o})}),12e4);o.onerror=o.onload=f,document.head.appendChild(o)}return Promise.all(a)},c.m=e,c.c=t,c.d=function(e,a,r){c.o(e,a)||Object.defineProperty(e,a,{enumerable:!0,get:r})},c.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},c.t=function(e,a){if(1&a&&(e=c(e)),8&a)return e;if(4&a&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(c.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&a&&"string"!=typeof e)for(var t in e)c.d(r,t,function(a){return e[a]}.bind(null,t));return r},c.n=function(e){var a=e&&e.__esModule?function(){return e.default}:function(){return e};return c.d(a,"a",a),a},c.o=function(e,a){return Object.prototype.hasOwnProperty.call(e,a)},c.p="/dist/bundles/",c.oe=function(e){throw console.error(e),e};var o=window.webpackJsonp=window.webpackJsonp||[],d=o.push.bind(o);o.push=a,o=o.slice();for(var u=0;u<o.length;u++)a(o[u]);var b=d;r()}([]);
+</script>
+<script type="text/javascript" src="https://bundles.npr.org/dist/bundles/32.1fd19a3ed557d32bbc48.chunk.js">
+   </script>
+<link rel="stylesheet" data-persist="true" media="screen, print" href="https://bundles.npr.org/dist/bundles/persistent-css-a099985bbdba682171bd.css" /><link rel="stylesheet" data-persist="true" media="screen and (min-width: 768px)" href="https://bundles.npr.org/dist/bundles/persistent_medium-css-a099985bbdba682171bd.css" /><link rel="stylesheet" data-persist="true" media="screen and (min-width: 1025px)" href="https://bundles.npr.org/dist/bundles/persistent_large-css-a099985bbdba682171bd.css" /><link rel="preload" data-persist="true" media="screen, print" href="https://bundles.npr.org/dist/bundles/fonts-css-a099985bbdba682171bd.css" as="style" onload="this.onload=null;this.rel='stylesheet'"  /><link rel="stylesheet" media="screen, print" href="https://bundles.npr.org/dist/bundles/newsStory-css-a099985bbdba682171bd.css" /><script type="application/ld+json">
+   {"@type":"NewsArticle","publisher":{"@type":"Organization","name":"NPR","logo":{"@type":"ImageObject","url":"https:\/\/media.npr.org\/chrome\/npr-logo.jpg"}},"headline":"Why the earliest galaxies are sparking drama and controversy among astronomers","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.npr.org\/2023\/09\/18\/1198748542\/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers"},"datePublished":"2023-09-18T00:10:00-04:00","dateModified":"2023-09-18T00:10:00-04:00","author":{"@type":"Person","name":["Regina G. Barber","Rachel Carlson","Berly McCoy","Rebecca Ramirez"]},"description":"We're entering a new era of astrophysics. The James Webb Space Telescope is helping scientists test existing ideas and models of how the universe was created\u2014on a whole new level. This telescope is sending back images of galaxies forming under a billion years after the Big Bang\u2014way earlier than astronomers had previously expected. Not only that, scientists had anticipated that later\u2014but still very early\u2014galaxies would be small, barely formed blobs; instead, the galaxies in these images have spiral arms. So, today's show is all about GALACTIC CONTROVERSY! Computational astrophysicist <a href=\"https:\/\/www.pomona.edu\/directory\/people\/jorge-moreno\">Jorge Moreno<\/a> talks with fellow astronomer and Short Wave's Scientist in Residence <a href=\"https:\/\/www.npr.org\/people\/1082526815\/regina-g-barber\">Regina G. Barber<\/a> about how these new findings are stirring up controversy in the scientific community and the lessons we can learn from galaxies. <br\/><br\/>Questions or controversies? Email us at shortwave@npr.org. <br\/>","image":[{"@type":"ImageObject","url":"https:\/\/media.npr.org\/assets\/img\/2023\/09\/15\/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca.jpg"},{"@type":"ImageObject","url":"https:\/\/media.npr.org\/assets\/img\/2023\/09\/15\/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf.png"}],"@context":"http:\/\/schema.org"}
+</script>
+<script type="text/javascript">
+   document.domain="www.npr.org";
+</script>
+<script id="piano-aid" type="text/javascript" data-piano-aid="9ENxKQ58pu">
+    (function(src) {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = true;
+        a.src = src;
+        var b = document.getElementsByTagName("script")[0];
+        b.parentNode.insertBefore(a, b)
+    })("//cdn.piano.io/api/tinypass.min.js");
+    
+    window.pdl = window.pdl || {};
+    window.pdl.requireConsent = true;
+    
+    tp = window.tp || [];
+    
+    tp.push(["init", function() {
+        tp.enableGACrossDomainLinking();
+    }]);
+</script>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MBVDT-3L9KY-36ZMJ-SPSAR-JR833",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MBVDT-3L9KY-36ZMJ-SPSAR-JR833";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eqdxaaeck5maajahoaam3tisqbsqxeeh-f-ec61e2e45-clienttons-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"55818","ak.ai":parseInt("290690",10),"ak.ol":"0","ak.cr":29,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"2944740f","ak.r":30489,"ak.a2":n,"ak.m":"dscf","ak.n":"essl","ak.bpcip":"2407:7000:8257:5800::","ak.cport":58739,"ak.gh":"203.109.255.134","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1695256711","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==ctMRsT5lIpr9+Qcgd0WncxPeGyFIqm3/fanESTDyVLA2WOTjK058twaZ4Ll2eoy/wRbFjVlToulaPGjyecolXq9k08R8tjO8E3RZF7tj+tk88LZLkgyMAjusjCY+dz5+uZ2+mmxcwu48MB+86+RiMCPHYrr8VNrIYNpVaHOtMBELX4q3kXAcgFYCZfDYi5y+lO0m5Omc91DV8cmqdype58vAvQVqE4QE2FDuK3c/2bBnExp67NvTk6v78c6LQ9h2A+rQaq6V2Z//xd+b/pZzToQcHJUEuTJ8lTdbyhb9mxZbY7ne52p5PGMe3+s2l5ELpmttzc9jDphKjL3j9y/8K9VbzKG/06VsIkSa89mYFz1eyb9/oMg2G7MIicp+4q7DONSpxPdNJGAoet+smfyLxGkPOzpk03+B4xCddMmBPp4=","ak.pv":"81","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head><body id="news" class="news tmplShowEpisode  story-layout is-buildout no-transcript has-no-branding  has-podcast-tools id1198748542  " data-pjax-modules="util/env images/lazy-load data-consent data-management-platform header-bidding metrics nielsen nielsenDCR copyright auto-refresh navigation/global-navigation fitvids googletag dfp globalfooter persistent-audio player/more-options player/audio-module-clickable what-input metrics/doubleclickFloodlight callout/on-page-callouts global-alerts we-are-hiring piano ecommerce recommendations/end-of-story-recommendations-callout jw social/share slideshow images/enlargement contentfooter story/date-tooltip social/sharepop podcast-cards search/faceting-param local/newsletter/callout social/recaptcha">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVD397M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="skip-links">
+      <span>Accessibility links</span>   <ul>
+            <li><a href="#mainContent" class="skiplink">Skip to main content</a></li>
+      <li><a href="https://help.npr.org/contact/s/article?name=what-are-the-keyboard-shortcuts-for-using-the-npr-org-audio-player" class="skiplink">Keyboard shortcuts for audio player</a></li>
+   </ul>
+</div>
+<header class="npr-header" id="globalheader" aria-label="NPR header">
+<nav class="navigation">
+    <div class="navigation__top-level-wrap" data-metrics-all data-metrics-category="global navigation" data-metrics-category-ga4="recirculation">
+        <ul class="navigation__top-level">
+            <li class="navigation__toggle-wrap">
+                <button id="navigation__toggle--open" class="navigation__toggle navigation__toggle--open" aria-haspopup="true" aria-expanded="false" data-metrics-action="open navigation menu" data-metrics-ga4='{"action":"global_navigation_click","clickName":"open navigation menu","clickType":"global navigation"}'>
+                    Open Navigation Menu
+                </button>
+            </li>
+
+            <li class="navigation__home">
+                <a href="/" data-metrics-action="click npr logo" data-metrics-ga4='{"action":"global_navigation_click","clickName":"npr logo","clickType":"global navigation","clickUrl":"\/"}'>
+                    <img src="https://media.npr.org/chrome_svg/npr-logo.svg" alt="NPR logo"/>
+                </a>
+            </li>
+
+            <li id="navigation__station-mount"></li>
+
+            <li class="navigation__newsletters">
+                <div class="navigation__newsletters-inner">
+                    <a href="/newsletters/" data-metrics-action="click newsletters" data-metrics-ga4='{"action":"global_navigation_click","clickName":"newsletters","clickType":"global navigation","clickUrl":"/newsletters/"}' target='_blank'>Newsletters</a>
+                </div>
+            </li>
+
+            <li id="user-account-dropdown-mount" class="navigation__account"></li>
+
+            <li class="navigation__shop">
+                <a href="https://shopnpr.org" data-metrics-action="click npr shop" data-metrics-ga4='{"action":"global_navigation_click","clickName":"npr shop","clickType":"global navigation","clickUrl":"https://shopnpr.org"}'>NPR Shop</a>
+            </li>
+
+            <li id="navigation__station-donate-mount"></li>
+        </ul>
+    </div>
+    <section id="main-menu" class="menu menu--main" data-metrics-all data-metrics-category="global navigation" data-metrics-category-ga4="recirculation">
+        <div class="menu__inner">
+            <header class="menu__header">
+                <button id="navigation__toggle--close" class="navigation__toggle navigation__toggle--close" aria-haspopup="true" aria-expanded="true" data-metrics-action="close navigation menu" data-metrics-ga4='{"action":"global_navigation_click","clickName":"close navigation menu","clickType":"global navigation"}'>
+                    Close <span>Navigation Menu</span>
+                </button>
+            </header>
+            <ul class="menu__list">
+                <li class="menu__item menu__item--home">
+                    <div class="menu__item-inner"><a href="/" data-metrics-action="click npr logo" data-metrics-ga4='{"action":"global_navigation_click","clickName":"npr logo","clickType":"global navigation","clickUrl":"\/"}'>Home</a></div>
+                </li>
+                <li class="menu__item menu__item--news menu__item--has-submenu">
+                    <div class="menu__item-inner">
+                        <a href="/sections/news/" data-metrics-action="click news" data-metrics-ga4='{"action":"global_navigation_click","clickName":"news","clickType":"global navigation","clickUrl":"/sections/news/"}'>News</a>
+                        <button class="menu__toggle-submenu" data-metrics-action="toggle news drawer" data-metrics-ga4='{"action":"global_navigation_click","clickName":"toggle news drawer","clickType":"global navigation"}'>Expand/collapse submenu for News</button>
+                    </div>
+
+                    <ul class="submenu submenu--news">
+                        <li class="submenu__item"><a href="/sections/national/" data-metrics-action="click national" data-metrics-ga4='{"action":"global_navigation_click","clickName":"national","clickType":"global navigation","clickUrl":"/sections/national/"}'>National</a></li>
+                        <li class="submenu__item"><a href="/sections/world/" data-metrics-action="click world" data-metrics-ga4='{"action":"global_navigation_click","clickName":"world","clickType":"global navigation","clickUrl":"/sections/world/"}'>World</a></li>
+                        <li class="submenu__item"><a href="/sections/politics/" data-metrics-action="click politics" data-metrics-ga4='{"action":"global_navigation_click","clickName":"politics","clickType":"global navigation","clickUrl":"/sections/politics/"}'>Politics</a></li>
+                        <li class="submenu__item"><a href="/sections/business/" data-metrics-action="click business" data-metrics-ga4='{"action":"global_navigation_click","clickName":"business","clickType":"global navigation","clickUrl":"/sections/business/"}'>Business</a></li>
+                        <li class="submenu__item"><a href="/sections/health/" data-metrics-action="click health" data-metrics-ga4='{"action":"global_navigation_click","clickName":"health","clickType":"global navigation","clickUrl":"/sections/health/"}'>Health</a></li>
+                        <li class="submenu__item"><a href="/sections/science/" data-metrics-action="click science" data-metrics-ga4='{"action":"global_navigation_click","clickName":"science","clickType":"global navigation","clickUrl":"/sections/science/"}'>Science</a></li>
+                        <li class="submenu__item"><a href="/sections/climate/" data-metrics-action="click climate" data-metrics-ga4='{"action":"global_navigation_click","clickName":"climate","clickType":"global navigation","clickUrl":"/sections/climate/"}'>Climate</a></li>
+                        <li class="submenu__item"><a href="/sections/codeswitch/" data-metrics-action="click race" data-metrics-ga4='{"action":"global_navigation_click","clickName":"race","clickType":"global navigation","clickUrl":"/sections/codeswitch/"}'>Race</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--culture menu__item--has-submenu">
+                    <div class="menu__item-inner">
+                        <a href="/sections/culture/" data-metrics-action="click culture" data-metrics-ga4='{"action":"global_navigation_click","clickName":"culture","clickType":"global navigation","clickUrl":"/sections/culture/"}'>Culture</a>
+                        <button class="menu__toggle-submenu" data-metrics-action="toggle culture drawer" data-metrics-ga4='{"action":"global_navigation_click","clickName":"toggle culture drawer","clickType":"global navigation"}'>Expand/collapse submenu for Culture</button>
+                    </div>
+
+                    <ul class="submenu submenu--culture">
+                        <li class="submenu__item"><a href="/books/" data-metrics-action="click books" data-metrics-ga4='{"action":"global_navigation_click","clickName":"books","clickType":"global navigation","clickUrl":"/books/"}'>Books</a></li>
+                        <li class="submenu__item"><a href="/sections/movies/" data-metrics-action="click movies" data-metrics-ga4='{"action":"global_navigation_click","clickName":"movies","clickType":"global navigation","clickUrl":"/sections/movies/"}'>Movies</a></li>
+                        <li class="submenu__item"><a href="/sections/television/" data-metrics-action="click television" data-metrics-ga4='{"action":"global_navigation_click","clickName":"television","clickType":"global navigation","clickUrl":"/sections/television/"}'>Television</a></li>
+                        <li class="submenu__item"><a href="/sections/pop-culture/" data-metrics-action="click pop culture" data-metrics-ga4='{"action":"global_navigation_click","clickName":"pop culture","clickType":"global navigation","clickUrl":"/sections/pop-culture/"}'>Pop Culture</a></li>
+                        <li class="submenu__item"><a href="/sections/food/" data-metrics-action="click food" data-metrics-ga4='{"action":"global_navigation_click","clickName":"food","clickType":"global navigation","clickUrl":"/sections/food/"}'>Food</a></li>
+                        <li class="submenu__item"><a href="/sections/art-design/" data-metrics-action="click art & design" data-metrics-ga4='{"action":"global_navigation_click","clickName":"art & design","clickType":"global navigation","clickUrl":"/sections/art-design/"}'>Art &amp; Design</a> </li>
+                        <li class="submenu__item"><a href="/sections/performing-arts/" data-metrics-action="click performing arts" data-metrics-ga4='{"action":"global_navigation_click","clickName":"performing arts","clickType":"global navigation","clickUrl":"/sections/performing-arts/"}'>Performing Arts</a></li>
+                        <li class="submenu__item"><a href="/lifekit/" data-metrics-action="click life kit" data-metrics-ga4='{"action":"global_navigation_click","clickName":"life kit","clickType":"global navigation","clickUrl":"/lifekit/"}'>Life Kit</a></li>
+                        <li class="submenu__item"><a href="/sections/gaming/" data-metrics-action="click gaming" data-metrics-ga4='{"action":"global_navigation_click","clickName":"gaming","clickType":"global navigation","clickUrl":"/sections/gaming/"}'>Gaming</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--music menu__item--has-submenu">
+                    <div class="menu__item-inner">
+                        <a href="/music/" data-metrics-action="click music" data-metrics-ga4='{"action":"global_navigation_click","clickName":"music","clickType":"global navigation","clickUrl":"/music/"}'>Music</a>
+                        <button class="menu__toggle-submenu" data-metrics-action="toggle music drawer" data-metrics-ga4='{"action":"global_navigation_click","clickName":"toggle music drawer","clickType":"global navigation"}'>Expand/collapse submenu for Music</button>
+                    </div>
+
+                    <ul class="submenu submenu--music"><li class="submenu__item">
+    <a href="https://www.npr.org/series/1191556125/hip-hop-50" data-metrics-action="click hip-hop 50"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"hip-hop 50","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/series\/1191556125\/hip-hop-50"}' >
+        Hip-Hop 50
+    </a>
+</li><li class="submenu__item">
+    <a href="https://www.npr.org/series/tiny-desk-concerts/" data-metrics-action="click tiny desk"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"tiny desk","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/series\/tiny-desk-concerts\/"}' >
+        Tiny Desk
+    </a>
+</li><li class="submenu__item">
+    <a href="https://www.npr.org/sections/allsongs/" data-metrics-action="click all songs considered"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"all songs considered","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/sections\/allsongs\/"}' >
+        All Songs Considered
+    </a>
+</li><li class="submenu__item">
+    <a href="https://www.npr.org/sections/music-features" data-metrics-action="click music features"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"music features","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/sections\/music-features"}' >
+        Music Features
+    </a>
+</li><li class="submenu__item">
+    <a href="https://www.npr.org/series/770565791/npr-music-live-sessions" data-metrics-action="click live sessions"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"live sessions","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/series\/770565791\/npr-music-live-sessions"}' >
+        Live Sessions
+    </a>
+</li></ul>
+
+                </li>
+                <li class="menu__item menu__item--shows-podcasts menu__item--has-submenu">
+                    <div class="menu__item-inner">
+                        <a href="/podcasts-and-shows/" data-metrics-action="click podcasts & shows" data-metrics-ga4='{"action":"global_navigation_click","clickName":"podcasts & shows","clickType":"global navigation","clickUrl":"/podcasts-and-shows/"}'>Podcasts &amp; Shows</a>
+                        <button class="menu__toggle-submenu" data-metrics-action="toggle podcasts &amp; shows drawer" data-metrics-ga4='{"action":"global_navigation_click","clickName":"toggle podcasts &amp; shows drawer","clickType":"global navigation"}'>Expand/collapse submenu for Podcasts &amp; Shows</button>
+                    </div>
+
+                    <div class="submenu submenu--shows-podcasts">
+                        <span class="submenu__category submenu__category--daily">Daily</span>
+                        <ul class="submenu__list submenu__list--daily">
+                            <li class="submenu__item submenu__item--timed submenu__item--weekday hidden">
+                                <a href="/programs/morning-edition/" data-metrics-action="click morning edition" data-metrics-ga4='{"action":"global_navigation_click","clickName":"morning edition","clickType":"global navigation","clickUrl":"/programs/morning-edition/"}'>
+                                    <img src="https://media.npr.org/chrome/programs/logos/morning-edition.jpg" loading="lazy" alt="" />
+                                    Morning Edition
+                                </a>
+                            </li>
+                            <li class="submenu__item submenu__item--timed submenu__item--saturday hidden" >
+                                <a href="/programs/weekend-edition-saturday/" data-metrics-action="click weekend edition saturday" data-metrics-ga4='{"action":"global_navigation_click","clickName":"weekend edition saturday","clickType":"global navigation","clickUrl":"/programs/weekend-edition-saturday/"}'>
+                                    <img src="https://media.npr.org/assets/img/2019/02/26/we_otherentitiestemplatesat_sq-cbde87a2fa31b01047441e6f34d2769b0287bcd4-s100-c85.png" loading="lazy" alt="" />
+                                    Weekend Edition Saturday
+                                </a>
+                            </li>
+                            <li class="submenu__item submenu__item--timed submenu__item--sunday hidden">
+                                <a href="/programs/weekend-edition-sunday/" data-metrics-action="click weekend edition sunday" data-metrics-ga4='{"action":"global_navigation_click","clickName":"weekend edition sunday","clickType":"global navigation","clickUrl":"/programs/weekend-edition-sunday/"}'>
+                                    <img src="https://media.npr.org/assets/img/2019/02/26/we_otherentitiestemplatesun_sq-4a03b35e7e5adfa446aec374523a578d54dc9bf5-s100-c85.png" loading="lazy" alt="" />
+                                    Weekend Edition Sunday
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="/programs/all-things-considered/" data-metrics-action="click all things considered" data-metrics-ga4='{"action":"global_navigation_click","clickName":"all things considered","clickType":"global navigation","clickUrl":"/programs/all-things-considered/"}'>
+                                    <img src="https://media.npr.org/chrome/programs/logos/all-things-considered.png" loading="lazy" alt="" />
+                                    All Things Considered
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="/programs/fresh-air/" data-metrics-action="click fresh air" data-metrics-ga4='{"action":"global_navigation_click","clickName":"fresh air","clickType":"global navigation","clickUrl":"/programs/fresh-air/"}'>
+                                    <img src="https://media.npr.org/chrome/programs/logos/fresh-air.png" loading="lazy" alt="" />
+                                    Fresh Air
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="/podcasts/510318/up-first/" data-metrics-action="click up first" data-metrics-ga4='{"action":"global_navigation_click","clickName":"up first","clickType":"global navigation","clickUrl":"/podcasts/510318/up-first/"}'>
+                                    <img src="https://media.npr.org/chrome/programs/logos/up-first.jpg?version=2" loading="lazy" alt="" />
+                                    Up First
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="submenu__category submenu__category--featured">Featured</span>
+
+                        <ul class="submenu__list submenu__list--featured"><li class="submenu__item">
+    <a href="https://www.npr.org/podcasts/510324/rough-translation" data-metrics-action="click rough translation"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"rough translation","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/podcasts\/510324\/rough-translation"}' >
+        <img src="https://media.npr.org/assets/img/2023/07/21/rough-translation-round3_d_sq-dd413640f7e686f00b526c35e3791becf1b5cc5a-s100-c100.jpg" data-original="https://media.npr.org/assets/img/2023/07/21/rough-translation-round3_d_sq-dd413640f7e686f00b526c35e3791becf1b5cc5a-s100.jpg"   class=" lazy" alt="" loading="lazy" />
+        Rough Translation
+    </a>
+</li><li class="submenu__item">
+    <a href="https://www.npr.org/podcasts/510357/louder-than-a-riot" data-metrics-action="click louder than a riot"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"louder than a riot","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/podcasts\/510357\/louder-than-a-riot"}' >
+        <img src="https://media.npr.org/assets/img/2023/03/08/ltar_s2_tile_01_sq-19a778e240e99c795205cab72b2d6823001eb4af-s100-c100.png" data-original="https://media.npr.org/assets/img/2023/03/08/ltar_s2_tile_01_sq-19a778e240e99c795205cab72b2d6823001eb4af-s100.png"   class=" lazy" alt="" loading="lazy" />
+        Louder Than A Riot
+    </a>
+</li><li class="submenu__item">
+    <a href="https://www.npr.org/podcasts/510317/its-been-a-minute" data-metrics-action="click it's been a minute"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"it&#39;s been a minute","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/podcasts\/510317\/its-been-a-minute"}' >
+        <img src="https://media.npr.org/assets/img/2023/02/27/ibam_tile-2023_sq-8be9968a8deb580001ff44c27f77dcc028095187-s100-c100.jpg" data-original="https://media.npr.org/assets/img/2023/02/27/ibam_tile-2023_sq-8be9968a8deb580001ff44c27f77dcc028095187-s100.jpg"   class=" lazy" alt="" loading="lazy" />
+        It's Been a Minute
+    </a>
+</li><li class="submenu__item">
+    <a href="https://www.npr.org/podcasts/510338/all-guides" data-metrics-action="click life kit"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"life kit","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/podcasts\/510338\/all-guides"}' >
+        <img src="https://media.npr.org/assets/img/2022/09/23/life-kit_tile_npr-network-01_sq-200388bae100cab944ffa3655e7f3119e026d305-s100-c100.jpg" data-original="https://media.npr.org/assets/img/2022/09/23/life-kit_tile_npr-network-01_sq-200388bae100cab944ffa3655e7f3119e026d305-s100.jpg"   class=" lazy" alt="" loading="lazy" />
+        Life Kit
+    </a>
+</li></ul>
+
+                        <ul class="submenu__list submenu__list--directories">
+                            <li class="submenu__item"><a href="/podcasts-and-shows/" data-metrics-action="click podcasts & shows" data-metrics-ga4='{"action":"global_navigation_click","clickName":"podcasts & shows","clickType":"global navigation","clickUrl":"/podcasts-and-shows/"}'>More Podcasts &amp; Shows</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu__item menu__item--search">
+                    <div class="menu__item-inner">
+                        <a href="/search/" id="navigation_dropdown-search" data-metrics-action="click search" data-metrics-ga4='{"action":"global_navigation_click","clickName":"search","clickType":"global navigation","clickUrl":"/search/"}'>Search</a>
+                    </div>
+                </li>
+                <li class="menu__item menu__item--newsletters">
+                    <div class="menu__item-inner">
+                        <a href="/newsletters/" data-metrics-action="click newsletters" data-metrics-ga4='{"action":"global_navigation_click","clickName":"newsletters","clickType":"global navigation","clickUrl":"/newsletters/"}' target='_blank'>Newsletters</a>
+                    </div>
+                </li>
+                <li id="user-account-dropdown-mount-two" class="menu__item menu__item--account"></li>
+                <li class="menu__item menu__item--shop">
+                    <div class="menu__item-inner">
+                        <a href="https://shopnpr.org" data-metrics-action="click npr shop" data-metrics-ga4='{"action":"global_navigation_click","clickName":"npr shop","clickType":"global navigation","clickUrl":"https://shopnpr.org"}'>NPR Shop</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="menu menu--music" data-metrics-all data-metrics-category="music ecosystem navigation" data-metrics-category-ga4="recirculation">
+        <div class="menu__list-wrap">
+            <ul class="menu__list menu__list--ecosystem menu__list--music">
+                <li class="menu__item menu__item--music-home">
+                    <a href="/music/" data-metrics-action="click npr music logo" data-metrics-ga4='{"action":"global_navigation_click","clickName":"npr music logo","clickType":"global navigation","clickUrl":"/music/"}'>
+                        <img src="https://media.npr.org/chrome_svg/music-logo-dark.svg" class="music-logo" alt="NPR Music" />
+                        <img src="https://media.npr.org/chrome_svg/music-logo-light.svg" class="music-logo-alt" alt="NPR Music" />
+                    </a>
+                </li>
+
+                <li class="menu__item">
+    <a href="https://www.npr.org/series/1191556125/hip-hop-50" data-metrics-action="click hip-hop 50"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"hip-hop 50","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/series\/1191556125\/hip-hop-50"}' >
+        Hip-Hop 50
+    </a>
+</li><li class="menu__item">
+    <a href="https://www.npr.org/series/tiny-desk-concerts/" data-metrics-action="click tiny desk"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"tiny desk","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/series\/tiny-desk-concerts\/"}' >
+        Tiny Desk
+    </a>
+</li><li class="menu__item">
+    <a href="https://www.npr.org/sections/allsongs/" data-metrics-action="click all songs considered"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"all songs considered","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/sections\/allsongs\/"}' >
+        All Songs Considered
+    </a>
+</li><li class="menu__item">
+    <a href="https://www.npr.org/sections/music-features" data-metrics-action="click music features"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"music features","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/sections\/music-features"}' >
+        Music Features
+    </a>
+</li><li class="menu__item">
+    <a href="https://www.npr.org/series/770565791/npr-music-live-sessions" data-metrics-action="click live sessions"  data-metrics-ga4='{"category":"recirculation","action":"global_navigation_click","clickName":"live sessions","clickType":"music ecosystem navigation","clickUrl":"https:\/\/www.npr.org\/series\/770565791\/npr-music-live-sessions"}' >
+        Live Sessions
+    </a>
+</li>
+            </ul>
+        </div>
+    </section>
+    <section class="menu menu--about" data-metrics-all data-metrics-category="about ecosystem navigation" data-metrics-category-ga4="recirculation">
+        <div class="menu__list-wrap">
+            <ul class="menu__list menu__list--ecosystem menu__list--about">
+                <li class="menu__item menu__item--about-home"><a href="/about/" data-metrics-action="click about npr" data-metrics-ga4='{"action":"global_navigation_click","clickName":"about npr","clickType":"about ecosystem navigation","clickUrl":"/about/"}'>About NPR</a></li>
+                <li class="menu__item menu__item--about-diversity"><a href="/diversity/" data-metrics-action="click diversity" data-metrics-ga4='{"action":"global_navigation_click","clickName":"diversity","clickType":"about ecosystem navigation","clickUrl":"/diversity/"}'>Diversity</a></li>
+                <li class="menu__item menu__item--about-organization"><a href="/organization/" data-metrics-action="click organization" data-metrics-ga4='{"action":"global_navigation_click","clickName":"organization","clickType":"about ecosystem navigation","clickUrl":"/organization/"}'>Organization</a></li>
+                <li class="menu__item menu__item--about-network"><a href="/network/" data-metrics-action="click network" data-metrics-ga4='{"action":"global_navigation_click","clickName":"organization","clickType":"about ecosystem navigation","clickUrl":"/network/"}' target='_blank'>NPR Network</a></li>
+                <li class="menu__item menu__item--about-support"><a href="/support/" data-metrics-action="click support" data-metrics-ga4='{"action":"global_navigation_click","clickName":"support","clickType":"about ecosystem navigation","clickUrl":"/support/"}'>Support</a></li>
+                <li class="menu__item menu__item--about-careers"><a href="/careers/" data-metrics-action="click careers" data-metrics-ga4='{"action":"global_navigation_click","clickName":"careers","clickType":"about ecosystem navigation","clickUrl":"/careers/"}'>Careers</a></li>
+                <li class="menu__item menu__item--about-connect"><a href="/connect/" data-metrics-action="click connect" data-metrics-ga4='{"action":"global_navigation_click","clickName":"connect","clickType":"about ecosystem navigation","clickUrl":"/connect/"}'>Connect</a></li>
+                <li class="menu__item menu__item--about-press"><a href="/press/" data-metrics-action="click press" data-metrics-ga4='{"action":"global_navigation_click","clickName":"press","clickType":"about ecosystem navigation","clickUrl":"/press/"}'>Press</a></li>
+                <li class="menu__item menu__item--about-ethics"><a href="/ethics/" data-metrics-action="click ethics" data-metrics-ga4='{"action":"global_navigation_click","clickName":"ethics","clickType":"about ecosystem navigation","clickUrl":"/ethics/"}'>Ethics</a></li>
+            </ul>
+        </div>
+    </section>
+</nav>
+</header><main aria-label="main content"><div class="speakable">
+      <b data-is-speakable>Early galaxies from soon after the Big Bang cause drama : Short Wave</b>   <b data-is-speakable>We're entering a new era of astrophysics. The James Webb Space Telescope is helping scientists test existing ideas and models of how the universe was created—on a whole new level. This telescope is sending back images of galaxies forming under a billion years after the Big Bang—way earlier than astronomers had previously expected. Not only that, scientists had anticipated that later—but still very early—galaxies would be small, barely formed blobs; instead, the galaxies in these images have spiral arms. So, today's show is all about GALACTIC CONTROVERSY! Computational astrophysicist <a href="https://www.pomona.edu/directory/people/jorge-moreno">Jorge Moreno</a> talks with fellow astronomer and Short Wave's Scientist in Residence <a href="https://www.npr.org/people/1082526815/regina-g-barber">Regina G. Barber</a> about how these new findings are stirring up controversy in the scientific community and the lessons we can learn from galaxies. <br/><br/>Questions or controversies? Email us at shortwave@npr.org. <br/></b>
+</div>
+<div id="wrapper">
+      <header class="contentheader contentheader--one" data-metrics='{"category":"Why the earliest galaxies are sparking drama and controversy among astronomers"}' ></header>   <section id="main-section"><article class="story"><a id="mainContent"></a><div class="slug-wrap">
+
+    <h3 class="slug">
+        <a href="https://www.npr.org/podcasts/510351/short-wave">Short Wave</a>
+    </h3>
+</div>
+<ul class="podcast-tools podcast-tools--510351">
+    <div
+    class="imagewrap has-source-dimensions"
+    data-crop-type=""
+    style="
+        --source-width: 3000;
+        --source-height: 3000;
+    "
+>
+        <picture>
+            <source srcset="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s=1100&c=15&f=webp" data-original="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s=1100&c=100&f=webp" data-template="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s={width}&c={quality}&f={format}" data-format="webp" class="img lazyOnLoad" type="image/webp" />
+            <source srcset="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s=1100&c=15&f=jpeg" data-original="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s=1100&c=100&f=jpeg" data-template="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" class="img lazyOnLoad" type="image/jpeg" />
+            <img src="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s=1100&c=15&f=jpeg" data-original="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s=1100&c=100&f=jpeg" data-template="https://media.npr.org/assets/img/2022/09/23/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" class="img lazyOnLoad" alt="Short Wave" loading="lazy" />
+        </picture>
+</div>
+<div class="credit-caption">
+    <div class="caption-wrap">
+        <div class="caption" aria-label="Image caption">
+        </div>
+
+
+    </div>
+
+    <span class="credit" aria-label="Image credit">
+        
+        NPR
+        
+    </span>
+</div>
+
+    <div class="podcast-tools__slugandmodal">
+      <li><div class="slug-wrap">
+
+    <h3 class="slug">
+        <a href="https://www.npr.org/podcasts/510351/short-wave">Short Wave</a>
+    </h3>
+</div>
+</li>
+      <div class="podcast-tools__modal">
+        <li class="subscribe" data-sharepop data-selector=".sharepop.subscribe">
+          <button  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;toggle subscribe menu&quot;}' >LISTEN & FOLLOW
+            <svg data-src="https://media.npr.org/chrome_svg/podcasts/apple-podcasts.svg" 
+              class="subscribe-logo" id="applepods-icon" alt="Apple Podcasts Logo"
+            ></svg>
+            <svg data-src="https://media.npr.org/chrome_svg/podcasts/spotify.svg" class="subscribe-logo" alt="Spotify Logo"
+            ></svg>
+            <svg data-src="https://media.npr.org/chrome_svg/podcasts/google-podcasts.svg" class="subscribe-logo" alt="Google Pods Logo"
+            ></svg>
+            <svg data-src="https://media.npr.org/chrome_svg/social-icons/story-pages/icon-email-333.svg" 
+              class="subscribe-logo email-icon" alt="Email icon"
+            ></svg>
+          </button>
+        </li>
+
+        <li class="podcast-tools__subscribe-links">
+          <div class="sharepop-four">
+              <div class="sharepop">
+                  <ul>
+                      <li>
+                        <a href="https://rpb3r.app.goo.gl/shortwave" data-analytics-allow-facebook="data-analytics-allow-facebook"  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;click npr one universal&quot;,&quot;label&quot;:&quot;short wave&quot;}'   data-metrics-ga4='{&quot;category&quot;:&quot;podcast&quot;,&quot;action&quot;:&quot;podcast_follow_click&quot;,&quot;clickName&quot;:&quot;npr one universal&quot;,&quot;clickType&quot;:&quot;podcast follow button&quot;}' >
+                          <span class="subscribe__imagecontainer subscribe__imagecontainer--NPR-One">
+                          </span>
+                          NPR App</a></li>
+                      <li>
+                        <a href="https://podcasts.apple.com/podcast/1482575855?mt=2&amp;at=11l79Y&amp;ct=nprdirectory" data-analytics-allow-facebook="data-analytics-allow-facebook"  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;click itunes&quot;,&quot;label&quot;:&quot;short wave&quot;}'   data-metrics-ga4='{&quot;category&quot;:&quot;podcast&quot;,&quot;action&quot;:&quot;podcast_follow_click&quot;,&quot;clickName&quot;:&quot;itunes&quot;,&quot;clickType&quot;:&quot;podcast follow button&quot;}' >
+                          <span class="subscribe__imagecontainer subscribe__imagecontainer--apple-podcasts">
+                          </span>
+                          Apple Podcasts</a></li>
+                      <li>
+                          <a href="https://open.spotify.com/show/2rTT1klKUoQNuaW2Ah19Pa" data-analytics-allow-facebook="data-analytics-allow-facebook"  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;click Spotify&quot;,&quot;label&quot;:&quot;short wave&quot;}'   data-metrics-ga4='{&quot;category&quot;:&quot;podcast&quot;,&quot;action&quot;:&quot;podcast_follow_click&quot;,&quot;clickName&quot;:&quot;Spotify&quot;,&quot;clickType&quot;:&quot;podcast follow button&quot;}' >
+                          <span class="subscribe__imagecontainer subscribe__imagecontainer--spotify">
+                          </span>
+                          Spotify</a></li>
+                      <li>
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubnByLm9yZy9yc3MvcG9kY2FzdC5waHA_aWQ9NTEwMzUx" data-analytics-allow-facebook="data-analytics-allow-facebook"  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;click google podcasts&quot;,&quot;label&quot;:&quot;short wave&quot;}'   data-metrics-ga4='{&quot;category&quot;:&quot;podcast&quot;,&quot;action&quot;:&quot;podcast_follow_click&quot;,&quot;clickName&quot;:&quot;google podcasts&quot;,&quot;clickType&quot;:&quot;podcast follow button&quot;}' >
+                          <span class="subscribe__imagecontainer subscribe__imagecontainer--google-podcasts">
+                          </span>
+                          Google Podcasts</a></li>
+                      <li>
+                        <a href="https://music.amazon.com/podcasts/8995e9f5-d285-4fcb-877b-965a304baef1" data-analytics-allow-facebook="data-analytics-allow-facebook"  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;click amazon music&quot;,&quot;label&quot;:&quot;short wave&quot;}'   data-metrics-ga4='{&quot;category&quot;:&quot;podcast&quot;,&quot;action&quot;:&quot;podcast_follow_click&quot;,&quot;clickName&quot;:&quot;amazon music&quot;,&quot;clickType&quot;:&quot;podcast follow button&quot;}' >
+                          <span class="subscribe__imagecontainer subscribe__imagecontainer--amazon-music">
+                          </span>
+                        Amazon Music</a></li>
+                      <li>
+                        <a href="https://www.amazon.com/dp/B07YVN9QYD/" data-analytics-allow-facebook="data-analytics-allow-facebook"  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;click amazon alexa&quot;,&quot;label&quot;:&quot;short wave&quot;}'   data-metrics-ga4='{&quot;category&quot;:&quot;podcast&quot;,&quot;action&quot;:&quot;podcast_follow_click&quot;,&quot;clickName&quot;:&quot;amazon alexa&quot;,&quot;clickType&quot;:&quot;podcast follow button&quot;}' >
+                          <span class="subscribe__imagecontainer subscribe__imagecontainer--amazon-alexa">
+                          </span>
+                          Amazon Alexa</a></li>
+                      
+                      <li>
+                        <a target="_blank" href="https://feeds.npr.org/510351/podcast.xml" data-analytics-allow-facebook="data-analytics-allow-facebook"  data-metrics='{&quot;category&quot;:&quot;podcast directory&quot;,&quot;action&quot;:&quot;click rss&quot;,&quot;label&quot;:&quot;short wave&quot;}'   data-metrics-ga4='{&quot;category&quot;:&quot;podcast&quot;,&quot;action&quot;:&quot;podcast_follow_click&quot;,&quot;clickName&quot;:&quot;rss&quot;,&quot;clickType&quot;:&quot;podcast follow button&quot;}' >
+                          <span class="subscribe__imagecontainer subscribe__imagecontainer--rss">
+                          </span>
+                          RSS link</a></li>
+                  </ul>
+              </div>
+
+              <!--
+              <div class="newsletter-placeholder">
+                Sign up for the [TITLE] Newsletter
+                <input type="text" id="emailfield" name="emailfield" value="my@email.com">
+              </div>
+
+              <div class="plusoffering-placeholder">
+                Get perks with [Podcast Title]+
+                <p>Your support helps make our show possible and unlocks access to our sponsor-free feed.</p>
+                <button>LEARN MORE</button>
+              </div>
+              -->
+          </div>
+        </li>
+      </div>
+    </div>
+</ul>
+<div class="storytitle">
+      <h1>Why the earliest galaxies are sparking drama and controversy among astronomers</h1>
+   <input type="hidden" id="title1198748542" value="Why the earliest galaxies are sparking drama and controversy among astronomers" />
+   <input type="hidden" id="shortTitle1198748542" value="Why the earliest galaxies are sparking drama and controversy among astronomers" />
+   <input type="hidden" id="modelFullUrl1198748542" value="https://www.npr.org/2023/09/18/1198748542/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers" />
+</div>
+
+<!-- END CLASS="STORYTITLE" -->
+<div id="story-meta" class="story-meta has-byline">
+      <div class="story-meta__one">
+            <div class="story-meta__one-inner">
+                  <div class="dateblock">
+    <time datetime="2023-09-18T00:10:00-04:00">
+            <span class="date">September 18, 2023</span><span class="time">12:10 AM ET</span>
+    </time>
+</div>
+      </div>
+      
+<!-- END CLASS="STORY-META__ONE-INNER" -->
+   </div>
+   
+<!-- END CLASS="STORY-META__ONE" -->
+   <div class="story-meta__two">
+            <div id="storybyline" class="storybyline-wrap linkLocation">
+                  <div class="bucketwrap byline">
+                        <div class="byline-container--block byline-container--block-nophoto">
+                              <p class="byline__name--block">By&nbsp;</p>               <div class="byline byline--block byline--has-link" aria-label="Byline">
+    <div class="byline__photo">
+      <a href="https://www.npr.org/people/1082526815/regina-g-barber" rel="author"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' >
+        <picture><source srcset="https://media.npr.org/assets/img/2022/07/12/regina-barber_sq-a5411af86754b08f83b1579f4f231610572d2dd3.jpg?s=100&c=85&f=webp" class="img" type="image/webp" data-template="https://media.npr.org/assets/img/2022/07/12/regina-barber_sq-a5411af86754b08f83b1579f4f231610572d2dd3.jpg?s={width}&c={quality}&f={format}" data-format="webp" /><source srcset="https://media.npr.org/assets/img/2022/07/12/regina-barber_sq-a5411af86754b08f83b1579f4f231610572d2dd3.jpg?s=100&c=85&f=jpeg" class="img" type="image/jpeg" data-template="https://media.npr.org/assets/img/2022/07/12/regina-barber_sq-a5411af86754b08f83b1579f4f231610572d2dd3.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" /><img src="https://media.npr.org/assets/img/2022/07/12/regina-barber_sq-a5411af86754b08f83b1579f4f231610572d2dd3.jpg?s=100&c=85&f=jpeg" class="img" alt="Regina Barber, photographed for NPR, 6 June 2022, in Washington DC. Photo by Farrah Skeiky for NPR." data-template="https://media.npr.org/assets/img/2022/07/12/regina-barber_sq-a5411af86754b08f83b1579f4f231610572d2dd3.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" /></picture>
+      </a>
+    </div>
+  <p class="byline__name byline__name--block">
+      <a href="https://www.npr.org/people/1082526815/regina-g-barber" rel="author"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' >
+      Regina G. Barber
+    </a>
+  </p>
+</div>               <p class="byline__name--block byline__comma">,&nbsp;</p>               <div class="byline byline--block byline--has-link" aria-label="Byline">
+  <p class="byline__name byline__name--block">
+      <a href="https://www.npr.org/people/1112796909/rachel-carlson" rel="author"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' >
+      Rachel Carlson
+    </a>
+  </p>
+</div>               <p class="byline__name--block byline__comma">,&nbsp;</p>               <div class="byline byline--block byline--has-link" aria-label="Byline">
+    <div class="byline__photo">
+      <a href="https://www.npr.org/people/985775371/berly-mccoy" rel="author"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' >
+        <picture><source srcset="https://media.npr.org/assets/img/2022/11/11/berly_sq-fe910c19265b6e96abd9d64ca30d8bce15203faa.jpg?s=100&c=85&f=webp" class="img" type="image/webp" data-template="https://media.npr.org/assets/img/2022/11/11/berly_sq-fe910c19265b6e96abd9d64ca30d8bce15203faa.jpg?s={width}&c={quality}&f={format}" data-format="webp" /><source srcset="https://media.npr.org/assets/img/2022/11/11/berly_sq-fe910c19265b6e96abd9d64ca30d8bce15203faa.jpg?s=100&c=85&f=jpeg" class="img" type="image/jpeg" data-template="https://media.npr.org/assets/img/2022/11/11/berly_sq-fe910c19265b6e96abd9d64ca30d8bce15203faa.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" /><img src="https://media.npr.org/assets/img/2022/11/11/berly_sq-fe910c19265b6e96abd9d64ca30d8bce15203faa.jpg?s=100&c=85&f=jpeg" class="img" alt="Headshot of Berly McCoy" data-template="https://media.npr.org/assets/img/2022/11/11/berly_sq-fe910c19265b6e96abd9d64ca30d8bce15203faa.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" /></picture>
+      </a>
+    </div>
+  <p class="byline__name byline__name--block">
+      <a href="https://www.npr.org/people/985775371/berly-mccoy" rel="author"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' >
+      Berly McCoy
+    </a>
+  </p>
+</div>               <p class="byline__name--block byline__comma">,&nbsp;</p>               <div class="byline byline--block byline--has-link" aria-label="Byline">
+    <div class="byline__photo">
+      <a href="https://www.npr.org/people/785481294/rebecca-ramirez" rel="author"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' >
+        <picture><source srcset="https://media.npr.org/assets/img/2022/10/05/rebecca-ramirez_sq-79eae1c35c9bba3c1d6de38c02d2cf0c9abeacfc.jpg?s=100&c=85&f=webp" class="img" type="image/webp" data-template="https://media.npr.org/assets/img/2022/10/05/rebecca-ramirez_sq-79eae1c35c9bba3c1d6de38c02d2cf0c9abeacfc.jpg?s={width}&c={quality}&f={format}" data-format="webp" /><source srcset="https://media.npr.org/assets/img/2022/10/05/rebecca-ramirez_sq-79eae1c35c9bba3c1d6de38c02d2cf0c9abeacfc.jpg?s=100&c=85&f=jpeg" class="img" type="image/jpeg" data-template="https://media.npr.org/assets/img/2022/10/05/rebecca-ramirez_sq-79eae1c35c9bba3c1d6de38c02d2cf0c9abeacfc.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" /><img src="https://media.npr.org/assets/img/2022/10/05/rebecca-ramirez_sq-79eae1c35c9bba3c1d6de38c02d2cf0c9abeacfc.jpg?s=100&c=85&f=jpeg" class="img" alt="Rebecca Ramirez, photographed for NPR, 6 June 2022, in Washington DC. Photo by Farrah Skeiky for NPR." data-template="https://media.npr.org/assets/img/2022/10/05/rebecca-ramirez_sq-79eae1c35c9bba3c1d6de38c02d2cf0c9abeacfc.jpg?s={width}&c={quality}&f={format}" data-format="jpeg" /></picture>
+      </a>
+    </div>
+  <p class="byline__name byline__name--block">
+      <a href="https://www.npr.org/people/785481294/rebecca-ramirez" rel="author"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' >
+      Rebecca Ramirez
+    </a>
+  </p>
+</div>
+            </div>
+         </div>
+         
+<!-- END CLASS="BUCKETWRAP BYLINE" -->
+      </div>
+   </div>
+   
+<!-- END CLASS="STORY-META__TWO" -->
+</div>
+
+<!-- END ID="STORY-META" CLASS="STORY-META HAS-BYLINE" -->
+<div id="primaryaudio" class="storylocation linkLocation">
+      <article id="res1199916183" class="bucketwrap resaudio primaryaudio" aria-label="audio-module"><div class="audio-module">
+      <h4 class="audio-module-title">Why the earliest galaxies are sparking drama and controversy among astronomers</h4>
+   <div class="audio-module-controls-wrap" data-audio='{"uid":"1198748542:1199916183","available":true,"duration":784,"title":"Why the earliest galaxies are sparking drama and controversy among astronomers","audioUrl":"https:\/\/play.podtrac.com\/npr-510351\/traffic.megaphone.fm\/NPR5466489036.mp3?d=784&size=12547597&e=1198748542&t=podcast&p=510351&sc=siteplayer&aw_0_1st.playerid=siteplayer","storyUrl":"https:\/\/www.npr.org\/2023\/09\/18\/1198748542\/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers","slug":"","program":"Short Wave","affiliation":"","song":"","artist":"","album":"","track":0,"type":"segment","subtype":"other","skipSponsorship":true,"hasAdsWizz":true}' data-audio-metrics='[]'>
+        <div class="audio-module-controls">
+            <a class="audio-module-listen" href="https://play.podtrac.com/npr-510351/traffic.megaphone.fm/NPR5466489036.mp3?d=784&amp;size=12547597&amp;e=1198748542&amp;t=podcast&amp;p=510351&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer">
+                <b class="audio-module-listen-inner">
+                    <b class="audio-module-listen-icon icn-play"></b>
+                    <b class="audio-module-listen-text">
+                        <b class="audio-module-cta">
+                            
+                            Listen
+                        </b>
+                        <b class="audio-module-listen-duration">
+                            <span>&middot; </span>
+                            <span>13:04</span>
+                        </b>
+                    </b>
+                </b>
+            </a>
+
+                <time class="audio-module-duration" datetime="P13M,4S">
+                  <span class="audio-module-duration__initial-value">13:04</span>
+                </time>
+        </div>
+
+
+</div>
+
+   
+    <div class="audio-module-tools">
+        <button class="audio-module-tools-toggle"  data-metrics='{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;open more options&quot;,&quot;label&quot;:null,&quot;noninteraction&quot;:true}'   data-metrics-ga4='{&quot;category&quot;:&quot;audio&quot;,&quot;action&quot;:&quot;audio_open_more_options&quot;,&quot;storyId&quot;:&quot;1198748542&quot;,&quot;mediaId&quot;:&quot;1199916183&quot;,&quot;title&quot;:&quot;Why the earliest galaxies are sparking drama and controversy among astronomers&quot;,&quot;type&quot;:&quot;ondemand&quot;}' >
+            <b class="icn-toggle"></b>
+            <b class="label">Toggle more options</b>
+        </button>
+        <ul class="audio-module-more-tools">
+                <li class="audio-tool audio-tool-download"><a href="https://play.podtrac.com/npr-510351/traffic.megaphone.fm/NPR5466489036.mp3?d=784&amp;size=12547597&amp;e=1198748542&amp;t=podcast&amp;p=510351&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer"  data-metrics='{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;download audio&quot;,&quot;label&quot;:&quot;1198748542&quot;,&quot;noninteraction&quot;:true}'   data-metrics-ga4='{&quot;category&quot;:&quot;audio&quot;,&quot;action&quot;:&quot;audio_download&quot;,&quot;storyId&quot;:&quot;1198748542&quot;,&quot;mediaId&quot;:&quot;1199916183&quot;,&quot;title&quot;:&quot;Why the earliest galaxies are sparking drama and controversy among astronomers&quot;,&quot;type&quot;:&quot;ondemand&quot;}' ><b class="icn-download"></b><b class="audio-tool-label">Download</b></a>
+                </li>
+
+                <li class="audio-tool audio-tool-embed" >
+                    <button data-embed-url="https://www.npr.org/player/embed/1198748542/1199916183"  data-metrics='{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;embed audio&quot;,&quot;label&quot;:&quot;1198748542&quot;,&quot;noninteraction&quot;:true}'   data-metrics-ga4='{&quot;category&quot;:&quot;audio&quot;,&quot;action&quot;:&quot;audio_embed&quot;,&quot;storyId&quot;:&quot;1198748542&quot;,&quot;mediaId&quot;:&quot;1199916183&quot;,&quot;title&quot;:&quot;Why the earliest galaxies are sparking drama and controversy among astronomers&quot;,&quot;type&quot;:&quot;ondemand&quot;}' ><b class="button-inner"><b class="icn-embed"></b><b
+                            class="audio-tool-label">Embed</b></b></button>
+
+                    <div class="audio-embed-overlay">
+                        <button class="btn-close"></button>
+                        <label class="embed-label">
+                            <b class="audio-embed-overlay__icon"></b>
+                            <b class="label">Embed</b>
+                            <input class="embed-url embed-url-no-touch" readonly
+                                   value="<iframe src=&quot;https://www.npr.org/player/embed/1198748542/1199916183&quot; width=&quot;100%&quot; height=&quot;290&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; title=&quot;NPR embedded audio player&quot;></iframe>">
+                        </label>
+
+                        <b class="embed-url embed-url-touch">
+                            <code><b class="punctuation">&lt;</b>iframe src="https://www.npr.org/player/embed/1198748542/1199916183" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"&gt;</code>
+                        </b>
+
+                    </div>
+                </li>
+
+                <li class="audio-tool audio-tool-transcript">
+                  <a href="https://www.npr.org/transcripts/1198748542"  data-metrics='{&quot;category&quot;:&quot;audio actions&quot;,&quot;action&quot;:&quot;click transcript&quot;,&quot;label&quot;:&quot;1198748542&quot;,&quot;noninteraction&quot;:true}'   data-metrics-ga4='{&quot;category&quot;:&quot;audio&quot;,&quot;action&quot;:&quot;audio_click_transcript&quot;,&quot;storyId&quot;:&quot;1198748542&quot;,&quot;mediaId&quot;:&quot;1199916183&quot;,&quot;title&quot;:&quot;Why the earliest galaxies are sparking drama and controversy among astronomers&quot;,&quot;type&quot;:&quot;ondemand&quot;}' >
+                    <b class="icn-transcript"></b>
+                    <b class="audio-tool-label">Transcript</b>
+                  </a>
+                </li>
+        </ul>
+    </div>
+</div>
+</article>
+</div>
+<div id="storytext" class="storytext storylocation linkLocation">
+      <div id="res1199889082" class="bucketwrap image large">
+            <div
+    class="imagewrap has-source-dimensions"
+    data-crop-type=""
+    style="
+        --source-width: 820;
+        --source-height: 615;
+    "
+>
+        <picture>
+            <source srcset="https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s400-c85.webp 400w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s600-c85.webp 600w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s800-c85.webp 800w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s900-c85.webp 900w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1200-c85.webp 1200w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1600-c85.webp 1600w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1800-c85.webp 1800w"  sizes="(min-width: 1300px) 763px, (min-width: 1025px) calc(100vw - 496px), (min-width: 768px) calc(100vw - 171px), calc(100vw - 30px)" class="img" type="image/webp" />
+            <source srcset="https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s400-c85.jpg 400w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s600-c85.jpg 600w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s800-c85.jpg 800w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s900-c85.jpg 900w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1200-c85.jpg 1200w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1600-c85.jpg 1600w,
+https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1800-c85.jpg 1800w"  sizes="(min-width: 1300px) 763px, (min-width: 1025px) calc(100vw - 496px), (min-width: 768px) calc(100vw - 171px), calc(100vw - 30px)" class="img" type="image/jpeg" />
+            <img src="https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1100-c50.jpg"  class="img" alt="" loading="lazy" />
+        </picture>
+        <div class="enlarge-options">
+            <a class="enlargelink" href="https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1200.jpg">Enlarge this image</a>
+        </div>
+</div>
+<div class="credit-caption">
+    <div class="caption-wrap">
+        <div class="caption" aria-label="Image caption">
+            <p>
+                Since its launch, the James Webb Space Telescope has sent back detailed images and <a href="https://webbtelescope.org/glossary.html#h3-CK-b6199c5e-9065-4803-891c-6f17deada9a6">spectra</a> of galaxies from when the universe was just 900 million years old.
+                <b class="credit" aria-label="Image credit">
+                    
+                    NASA, ESA, CSA, Simon Lilly (ETH Zurich), Daichi Kashino (Nagoya University), Jorryt Matthee (ETH Zurich), Christina Eilers (MIT), Rongmon Bordoloi (NCSU), Ruari Mackenzie (ETH Zurich)
+                    
+                </b>
+                <b class="hide-caption"><b>hide caption</b></b>
+            </p>
+        </div>
+
+
+            <b class="toggle-caption"><b>toggle caption</b></b>
+    </div>
+
+    <span class="credit" aria-label="Image credit">
+        
+        NASA, ESA, CSA, Simon Lilly (ETH Zurich), Daichi Kashino (Nagoya University), Jorryt Matthee (ETH Zurich), Christina Eilers (MIT), Rongmon Bordoloi (NCSU), Ruari Mackenzie (ETH Zurich)
+        
+    </span>
+</div>
+<div class="enlarge_measure">
+    <div class="img_wrap">
+        <picture>
+            <source data-original="https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1200.webp" type="image/webp">
+            <source data-original="https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1200.jpg" type="image/jpeg">
+            <img data-original="https://media.npr.org/assets/img/2023/09/15/image-for-jwst-814aa027c4fe71ab21b5e461612901c3cb5375ca-s1200.jpg" alt="" />
+        </picture>
+    </div>
+</div>
+<div class="enlarge_html">
+    <div class="image_data">
+        <p class="caption">Since its launch, the James Webb Space Telescope has sent back detailed images and <a href="https://webbtelescope.org/glossary.html#h3-CK-b6199c5e-9065-4803-891c-6f17deada9a6">spectra</a> of galaxies from when the universe was just 900 million years old.</p>
+        <span class="credit" aria-label="Image credit">
+            
+            NASA, ESA, CSA, Simon Lilly (ETH Zurich), Daichi Kashino (Nagoya University), Jorryt Matthee (ETH Zurich), Christina Eilers (MIT), Rongmon Bordoloi (NCSU), Ruari Mackenzie (ETH Zurich)
+            
+        </span>
+    </div>
+</div>
+   </div>
+   <p>The James Webb Space Telescope is the most powerful telescope ever put into space. As such, its helping usher in a new era of astrophysics. Astronomers can now study farther, earlier galaxies than ever before. </p>   <p>"If you were a paleontologist, you would dig deeper and deeper to find the oldest bones. In astronomy, what we do is look at our history," says <a href="https://www.pomona.edu/directory/people/jorge-moreno">Jorge Moreno</a>, an associate professor of astronomy at Pomona College. "We have to look back in time, but we don't have a time machine. So what we do is we look at really faraway distances."</p>   <aside id="ad-backstage-wrap" aria-label="advertisement">
+    
+
+    <div id="ad-backstage-podcasts_Short_Wave" class="ad-config ad-backstage has-refresh-enabled" data-ad-config='{"network":"\/6735\/","site":{"desktop":"n6735.NPR","mobile":"n6735.NPRMOBILE"},"zone":"podcasts_Short_Wave","targets":{"testserver":"false","isPodcastEpisode":"true","storyId":"1198748542","agg":["1126052605","1037126227","191676894"],"orgId":"1"},"location":"backstage","deferred":false,"isBetweenContent":true,"borderClass":"","overflowCount":null,"hasRefreshEnabled":true,"isOutstreamVideoEnabled":true}'></div>
+
+</aside>
+   <p>As they peer into the deep, distant history of the universe, scientists are shocked to find galaxies showed in our cosmic history much sooner than scientists ever expected. </p>   <div id="res1199788371" class="bucketwrap internallink insettwocolumn inset2col ">
+            <div class="bucket img">
+                  <a id="featuredStackSquareImage1178008447" href="https://www.npr.org/2023/05/24/1178008447/what-galaxies-forming-earlier-than-scientists-thought-possible-means-for-physics"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"https:\/\/www.npr.org\/2023\/05\/24\/1178008447\/what-galaxies-forming-earlier-than-scientists-thought-possible-means-for-physics"}'   data-metrics-ga4='{"category":"recirculation","action":"story_recirculation_click","clickType":"inset box","clickUrl":"https:\/\/www.npr.org\/2023\/05\/24\/1178008447\/what-galaxies-forming-earlier-than-scientists-thought-possible-means-for-physics"}' ><picture><source srcset="https://media.npr.org/assets/img/2023/05/25/jwstbars_sq-d9eeea9b0509a2f3919f59fa2c2bff98008fd559-s100-c15.webp" data-original="https://media.npr.org/assets/img/2023/05/25/jwstbars_sq-d9eeea9b0509a2f3919f59fa2c2bff98008fd559-s100.webp"  data-format="webp" class="img lazyOnLoad" type="image/webp" /><source srcset="https://media.npr.org/assets/img/2023/05/25/jwstbars_sq-d9eeea9b0509a2f3919f59fa2c2bff98008fd559-s100-c15.jpg" data-original="https://media.npr.org/assets/img/2023/05/25/jwstbars_sq-d9eeea9b0509a2f3919f59fa2c2bff98008fd559-s100.jpg"  data-format="jpg" class="img lazyOnLoad" type="image/jpeg" /><img src="https://media.npr.org/assets/img/2023/05/25/jwstbars_sq-d9eeea9b0509a2f3919f59fa2c2bff98008fd559-s100-c15.jpg" data-original="https://media.npr.org/assets/img/2023/05/25/jwstbars_sq-d9eeea9b0509a2f3919f59fa2c2bff98008fd559-s100.jpg"  data-format="jpg" class="img lazyOnLoad" alt="What galaxies forming earlier than scientists thought possible means for physics" loading="lazy" /></picture></a>         <div class="bucketblock">
+                        <h3 class="slug"><a href="https://www.npr.org/podcasts/510351/short-wave">Short Wave </a></h3>
+            <h3><a href="https://www.npr.org/2023/05/24/1178008447/what-galaxies-forming-earlier-than-scientists-thought-possible-means-for-physics"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"https:\/\/www.npr.org\/2023\/05\/24\/1178008447\/what-galaxies-forming-earlier-than-scientists-thought-possible-means-for-physics"}'   data-metrics-ga4='{"category":"recirculation","action":"story_recirculation_click","clickType":"inset box","clickUrl":"https:\/\/www.npr.org\/2023\/05\/24\/1178008447\/what-galaxies-forming-earlier-than-scientists-thought-possible-means-for-physics"}' >What galaxies forming earlier than scientists thought possible means for physics</a></h3>
+         </div>
+         
+<!-- END CLASS="BUCKETBLOCK" -->
+      </div>
+      
+<!-- END CLASS="BUCKET IMG" -->
+   </div>
+   
+<!-- END ID="RES1199788371" CLASS="BUCKETWRAP INTERNALLINK INSETTWOCOLUMN INSET2COL " -->
+   <p>It's a galactic controversy that has astronomers around the world excited—and puzzled.</p>   <p>So what is it about these galaxies that is getting astronomers worked up? Not only is JWST finding galaxies forming <a href="https://www.nature.com/articles/s41550-023-01918-w?utm_medium=affiliate&utm_source=commission_junction&utm_campaign=CONR_PF018_ECOM_GL_PHSS_ALWYS_DEEPLINK&utm_content=textlink&utm_term=PID100052172&CJEVENT=b2747ab453f411ee81f200100a82b82d">200-500 million years</a> after the Big Bang, but also that they are <em>bigger </em>and <em>brighter </em>than astronomers expected. </p>   <h3 class="edTag">Using light to peer into the past</h3>   <p>The farthest galaxies seen by the telescope are also some of the earliest galaxies in our universe. The James Webb Space Telescope can see them because it is picking up the faint light emitted by them. </p>   <p>By the time light from these far reaches of the universe approaches the telescope, it is in the infrared range of light, and no longer viewable to the naked eye. The light visible to humans is just a fraction of the total range of light on the <a href="https://webbtelescope.org/webb-science/the-observatory/infrared-astronomy">electromagnetic spectrum</a>. </p>   <div id="res1199907813" class="bucketwrap image large">
+            <div
+    class="imagewrap has-source-dimensions"
+    data-crop-type=""
+    style="
+        --source-width: 2152;
+        --source-height: 1077;
+    "
+>
+        <picture>
+            <source srcset="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s400-c85.webp 400w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s600-c85.webp 600w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s800-c85.webp 800w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s900-c85.webp 900w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1200-c85.webp 1200w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1600-c85.webp 1600w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1800-c85.webp 1800w"  sizes="(min-width: 1300px) 763px, (min-width: 1025px) calc(100vw - 496px), (min-width: 768px) calc(100vw - 171px), calc(100vw - 30px)" class="img" type="image/webp" />
+            <source srcset="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s400-c85.png 400w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s600-c85.png 600w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s800-c85.png 800w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s900-c85.png 900w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1200-c85.png 1200w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1600-c85.png 1600w,
+https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1800-c85.png 1800w"  sizes="(min-width: 1300px) 763px, (min-width: 1025px) calc(100vw - 496px), (min-width: 768px) calc(100vw - 171px), calc(100vw - 30px)" class="img" type="image/png" />
+            <img src="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1100-c50.png"  class="img" alt="" loading="lazy" />
+        </picture>
+        <div class="enlarge-options">
+            <a class="enlargelink" href="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1200.png">Enlarge this image</a>
+        </div>
+</div>
+<div class="credit-caption">
+    <div class="caption-wrap">
+        <div class="caption" aria-label="Image caption">
+            <p>
+                Cosmological redshift is the process by which wavelengths of light elongate as they travel through the expanding universe.
+                <b class="credit" aria-label="Image credit">
+                    
+                    NASA and A. Feild (STScI)
+                    
+                </b>
+                <b class="hide-caption"><b>hide caption</b></b>
+            </p>
+        </div>
+
+
+            <b class="toggle-caption"><b>toggle caption</b></b>
+    </div>
+
+    <span class="credit" aria-label="Image credit">
+        
+        NASA and A. Feild (STScI)
+        
+    </span>
+</div>
+<div class="enlarge_measure">
+    <div class="img_wrap">
+        <picture>
+            <source data-original="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1200.webp" type="image/webp">
+            <source data-original="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1200.png" type="image/png">
+            <img data-original="https://media.npr.org/assets/img/2023/09/15/nasa-redshifted-light_custom-f2dc0c02b61f46ad75a3e64f43b0d766c2ea2acf-s1200.png" alt="" />
+        </picture>
+    </div>
+</div>
+<div class="enlarge_html">
+    <div class="image_data">
+        <p class="caption">Cosmological redshift is the process by which wavelengths of light elongate as they travel through the expanding universe.</p>
+        <span class="credit" aria-label="Image credit">
+            
+            NASA and A. Feild (STScI)
+            
+        </span>
+    </div>
+</div>
+   </div>
+   <p>This light has been traveling a long time by the time it reaches the telescope. For reference, it takes around eight minutes for light to travel from the sun to your eye. Light from Proxima Centauri, the nearest stellar neighbor of the sun, takes a little over four years to reach us here on earth. </p>   <div id="res1199775662" class="bucketwrap internallink insettwocolumn inset2col ">
+            <div class="bucket img">
+                  <a id="featuredStackSquareImage1064183308" href="https://www.npr.org/2021/12/21/1064183308/james-webb-space-telescope-sunshield-launch"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"https:\/\/www.npr.org\/2021\/12\/21\/1064183308\/james-webb-space-telescope-sunshield-launch"}'   data-metrics-ga4='{"category":"recirculation","action":"story_recirculation_click","clickType":"inset box","clickUrl":"https:\/\/www.npr.org\/2021\/12\/21\/1064183308\/james-webb-space-telescope-sunshield-launch"}' ><picture><source srcset="https://media.npr.org/assets/img/2021/12/20/51412207042_751ae819e7_k_sq-b0983d2923a4cc77fbc5b27977aff0dca0efa0b9-s100-c15.webp" data-original="https://media.npr.org/assets/img/2021/12/20/51412207042_751ae819e7_k_sq-b0983d2923a4cc77fbc5b27977aff0dca0efa0b9-s100.webp"  data-format="webp" class="img lazyOnLoad" type="image/webp" /><source srcset="https://media.npr.org/assets/img/2021/12/20/51412207042_751ae819e7_k_sq-b0983d2923a4cc77fbc5b27977aff0dca0efa0b9-s100-c15.jpg" data-original="https://media.npr.org/assets/img/2021/12/20/51412207042_751ae819e7_k_sq-b0983d2923a4cc77fbc5b27977aff0dca0efa0b9-s100.jpg"  data-format="jpg" class="img lazyOnLoad" type="image/jpeg" /><img src="https://media.npr.org/assets/img/2021/12/20/51412207042_751ae819e7_k_sq-b0983d2923a4cc77fbc5b27977aff0dca0efa0b9-s100-c15.jpg" data-original="https://media.npr.org/assets/img/2021/12/20/51412207042_751ae819e7_k_sq-b0983d2923a4cc77fbc5b27977aff0dca0efa0b9-s100.jpg"  data-format="jpg" class="img lazyOnLoad" alt="Why the most powerful space telescope ever needs to be kept really, really cold" loading="lazy" /></picture></a>         <div class="bucketblock">
+                        <h3 class="slug"><a href="https://www.npr.org/sections/science/">Science </a></h3>
+            <h3><a href="https://www.npr.org/2021/12/21/1064183308/james-webb-space-telescope-sunshield-launch"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"https:\/\/www.npr.org\/2021\/12\/21\/1064183308\/james-webb-space-telescope-sunshield-launch"}'   data-metrics-ga4='{"category":"recirculation","action":"story_recirculation_click","clickType":"inset box","clickUrl":"https:\/\/www.npr.org\/2021\/12\/21\/1064183308\/james-webb-space-telescope-sunshield-launch"}' >Why the most powerful space telescope ever needs to be kept really, really cold</a></h3>
+         </div>
+         
+<!-- END CLASS="BUCKETBLOCK" -->
+      </div>
+      
+<!-- END CLASS="BUCKET IMG" -->
+   </div>
+   
+<!-- END ID="RES1199775662" CLASS="BUCKETWRAP INTERNALLINK INSETTWOCOLUMN INSET2COL " -->
+   <h3 class="edTag">Seeing a teenager when you expect a kindergartener</h3>   <p>Light is a double-edged sword in the context of these galaxies. Its what lets us study the galaxies. But there's so much more of it than astronomers would have expected. </p>   <p>The brightness of a galaxy can be related to its mass, because a galaxy's light comes from stars. If you assume a certain average brightness and mass of a star, you can roughly estimate the mass of a galaxy.</p>   <p>But much of the modeling astronomers have done up to this point has led them to believe that there wasn't enough time for galaxies to get this massive in so little time.</p>   <div id="res1199912566" class="bucketwrap internallink insettwocolumn inset2col ">
+            <div class="bucket img">
+                  <a id="featuredStackSquareImage1174900390" href="https://www.npr.org/2023/05/10/1174900390/the-james-webb-space-telescope-reveals-a-mysterious-planet-to-be-weirdly-shiny"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"https:\/\/www.npr.org\/2023\/05\/10\/1174900390\/the-james-webb-space-telescope-reveals-a-mysterious-planet-to-be-weirdly-shiny"}'   data-metrics-ga4='{"category":"recirculation","action":"story_recirculation_click","clickType":"inset box","clickUrl":"https:\/\/www.npr.org\/2023\/05\/10\/1174900390\/the-james-webb-space-telescope-reveals-a-mysterious-planet-to-be-weirdly-shiny"}' ><picture><source srcset="https://media.npr.org/assets/img/2023/05/08/hazyminineptune_sq-643936f2f4af4abd9aaf152a92020ae033ed293d-s100-c15.webp" data-original="https://media.npr.org/assets/img/2023/05/08/hazyminineptune_sq-643936f2f4af4abd9aaf152a92020ae033ed293d-s100.webp"  data-format="webp" class="img lazyOnLoad" type="image/webp" /><source srcset="https://media.npr.org/assets/img/2023/05/08/hazyminineptune_sq-643936f2f4af4abd9aaf152a92020ae033ed293d-s100-c15.jpg" data-original="https://media.npr.org/assets/img/2023/05/08/hazyminineptune_sq-643936f2f4af4abd9aaf152a92020ae033ed293d-s100.jpg"  data-format="jpg" class="img lazyOnLoad" type="image/jpeg" /><img src="https://media.npr.org/assets/img/2023/05/08/hazyminineptune_sq-643936f2f4af4abd9aaf152a92020ae033ed293d-s100-c15.jpg" data-original="https://media.npr.org/assets/img/2023/05/08/hazyminineptune_sq-643936f2f4af4abd9aaf152a92020ae033ed293d-s100.jpg"  data-format="jpg" class="img lazyOnLoad" alt="The James Webb Space Telescope reveals a mysterious planet to be weirdly shiny" loading="lazy" /></picture></a>         <div class="bucketblock">
+                        <h3 class="slug"><a href="https://www.npr.org/sections/space/">Space </a></h3>
+            <h3><a href="https://www.npr.org/2023/05/10/1174900390/the-james-webb-space-telescope-reveals-a-mysterious-planet-to-be-weirdly-shiny"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"https:\/\/www.npr.org\/2023\/05\/10\/1174900390\/the-james-webb-space-telescope-reveals-a-mysterious-planet-to-be-weirdly-shiny"}'   data-metrics-ga4='{"category":"recirculation","action":"story_recirculation_click","clickType":"inset box","clickUrl":"https:\/\/www.npr.org\/2023\/05\/10\/1174900390\/the-james-webb-space-telescope-reveals-a-mysterious-planet-to-be-weirdly-shiny"}' >The James Webb Space Telescope reveals a mysterious planet to be weirdly shiny</a></h3>
+         </div>
+         
+<!-- END CLASS="BUCKETBLOCK" -->
+      </div>
+      
+<!-- END CLASS="BUCKET IMG" -->
+   </div>
+   
+<!-- END ID="RES1199912566" CLASS="BUCKETWRAP INTERNALLINK INSETTWOCOLUMN INSET2COL " -->
+   <p>"It's like if you went to a kindergarten and you saw a teenager," says Moreno.</p>   <p>However, Moreno says this assumption that brightness equates to mass may not always be accurate. For example, there could be an active supermassive black hole at the center of these early galaxies with <a href="https://svs.gsfc.nasa.gov/13326">bright accretion disks</a> or high energy jets that would make the galaxies seem artificially massive. Or, if there's hot dust in the galaxies—which looks very bright in the infrared wavelengths picked up by the James Webb Space Telescope—that too would make the galaxies seem more massive than they are.</p>   <aside id="ad-secondary-wrap" aria-label="advertisement">
+    
+
+    <div id="ad-secondary-podcasts_Short_Wave" class="ad-config ad-secondary has-refresh-enabled" data-ad-config='{"network":"\/6735\/","site":{"desktop":"NPRSecondary","mobile":"NPRMobileSecondary"},"zone":"podcasts_Short_Wave","targets":{"testserver":"false","isPodcastEpisode":"true","storyId":"1198748542","agg":["1126052605","1037126227","191676894"],"orgId":"1"},"location":"secondary","deferred":false,"isBetweenContent":true,"borderClass":"","overflowCount":null,"hasRefreshEnabled":true,"isOutstreamVideoEnabled":false}'></div>
+
+</aside>
+   <h3 class="edTag">When young galaxies are advanced for their age</h3>   <p>Most galaxies are separated into two types: spirals, which are disk-like with arms of dust and gas; and ellipticals, which are more like spheres of smooth light. </p>   <p>Until now, scientists thought that any galaxies from this relatively early period in the history of the universe would have been too young to have been forced into that binary yet. Instead, astronomers thought the galaxies would be ... blobs. But Moreno and other astronomers like him are excited to now be studying what look like pretty highly structured galaxies. </p>   <p>"Some of them look a lot like galaxies in the local universe," he says. "They seem to have added structure and maybe even spiral arms. That wasn't something we really expected."</p>   <p>The high level of structure and brightness in these galaxies is leading some astrophysicists to question the age of the universe.</p>   <h3 class="edTag">The universe doesn't look a day over 13.8 billion years old</h3>   <p>Roughly. </p>   <p>In an attempt to explain the shockingly bright, highly structured—and possibly quite massive—galaxies existing so early in the timeline of the universe, a researcher has posited that the universe is roughly twice as old as previously believed. They push the age of the universe from a spry 13.8 billion years old to roughly 26.7 billion years old. </p>   <p>An article published earlier this year in the journal <a href="https://academic.oup.com/mnras/article/524/3/3385/7221343?login=false"><em>Monthly Notices of the Royal Astronomical Societ</em>y</a> came to this conclusion after combining two models of the universe. One is the commonly accepted model for the expansion of the universe. This model explains that as the universe expands, the light from galaxies must travel further and therefore shifts from a bluer to a redder spectrum of light. The other model it is combined with has been debunked. It's called the tired light model, and it alleges that as light travels across the universe, it gets redder because it gets "tired," or loses energy. </p>   <aside id="ad-third-wrap" aria-label="advertisement">
+    
+
+    <div id="ad-third-podcasts_Short_Wave" class="ad-config ad-third has-refresh-enabled" data-ad-config='{"network":"\/6735\/","site":{"desktop":"NPRThird","mobile":"NPRMobileThird"},"zone":"podcasts_Short_Wave","targets":{"testserver":"false","isPodcastEpisode":"true","storyId":"1198748542","agg":["1126052605","1037126227","191676894"],"orgId":"1"},"location":"third","deferred":false,"isBetweenContent":true,"borderClass":"","overflowCount":null,"hasRefreshEnabled":true,"isOutstreamVideoEnabled":false}'></div>
+
+</aside>
+   <p>Moreno says that while he thinks that combining the models is clever, it is not supported by scientific evidence. </p>   <p>"I think in science, if you already have a model that's simpler than that, you should stick to it—unless you have extraordinary evidence to do otherwise." </p>   <p>Moreno also cautions people against quickly jumping on this supposition that the universe is twice as old as previously thought. If it were true, scientists would be able to prove it through the direct observation of stars and galaxies that are older than 13.8 billion years old—the current accepted age of the universe. </p>   <p>No such evidence has been found. </p>   <h3 class="edTag">Pausing to take in ancient, galactic wisdom</h3>   <p>NASA receives more data from the James Webb Space Telescope everyday—and with additional data comes possibilities for new solutions. </p>   <p>But for Moreno, pausing for reflective moments about the conclusions we make based on observations are also important. </p>   <p>So too, are lessons from these galaxies, which Moreno notes alternately go through periods of brightening and dimming. "I think that's something we need to learn from them—that it's important to just have times where we're really excited to discover things. But there are times where we need to quiet down, take a break and really think through things clearly and slowly."</p>   <p><em>This episode was produced by Rachel Carlson. It was edited by Rebecca Ramirez and Berly McCoy. Anil Oza checked the facts. Josh Newell was the audio engineer. Special thanks to James Davenport.<br/><br/>Questions or controversies? Email us at shortwave@npr.org.  </em></p>
+</div>
+<div class="tags">
+      <ul>
+            <li><a class="tag tag--story" data-metrics='{"category":"story actions","action":"click tag"}' href="https://www.npr.org/tags/578862380/cosmic-evolution">cosmic evolution</a></li>
+      <li><a class="tag tag--story" data-metrics='{"category":"story actions","action":"click tag"}' href="https://www.npr.org/tags/529876670/cosmic-expansion">cosmic expansion</a></li>
+      <li><a class="tag tag--story" data-metrics='{"category":"story actions","action":"click tag"}' href="https://www.npr.org/tags/243475997/fritz-zwicky">Fritz Zwicky</a></li>
+      <li><a class="tag tag--story" data-metrics='{"category":"story actions","action":"click tag"}' href="https://www.npr.org/tags/162218646/edwin-hubble">Edwin Hubble</a></li>
+      <li><a class="tag tag--story" data-metrics='{"category":"story actions","action":"click tag"}' href="https://www.npr.org/tags/152336857/james-webb-space-telescope">James Webb Space Telescope</a></li>
+      <li><a class="tag tag--story" data-metrics='{"category":"story actions","action":"click tag"}' href="https://www.npr.org/tags/145045968/galaxies">galaxies</a></li>
+   </ul>
+</div>
+
+<!-- END CLASS="TAGS" -->
+<div class="share-tools share-tools--secondary" aria-label="Share tools">
+      <ul>
+            <li class="share-tools__service share-tools__service--facebook"><button class="fbStory1198748542" data-share-facebook='{"storyId": 1198748542 }'  data-metrics='{"action":"Click Facebook","category":"Share Tools","label":"https:\/\/www.npr.org\/2023\/09\/18\/1198748542\/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers"}'   data-metrics-ga4='{"category":"share","action":"share","clickName":"facebook"}' ><b class="share-tools__service-name">Facebook</b></button></li>
+      <li class="share-tools__service share-tools__service--flipboard"><button class="story1198748542" data-share-flipboard='{"storyId": 1198748542 }'  data-metrics='{"action":"Click Flipboard","category":"Share Tools","label":"https:\/\/www.npr.org\/2023\/09\/18\/1198748542\/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers"}'   data-metrics-ga4='{"category":"share","action":"share","clickName":"flipboard"}' ><b class="share-tools__service-name">Flipboard</b></button></li>
+      <li class="share-tools__service share-tools__service--email"><button class='share-tools__email-link' data-story-id='1198748542'  data-metrics='{"action":"Click Email a Friend","category":"Share Tools","label":"https:\/\/www.npr.org\/2023\/09\/18\/1198748542\/why-the-earliest-galaxies-are-sparking-drama-and-controversy-among-astronomers"}'   data-metrics-ga4='{"category":"share","action":"share","clickName":"email"}' ><b class="share-tools__service-name">Email</b></button></li>
+   </ul>
+</div>
+
+<!-- END CLASS="SHARE-TOOLS SHARE-TOOLS--SECONDARY" ARIA-LABEL="SHARE TOOLS" -->
+<div id="newsletter-acquisition-callout-data" data-newsletter="{&quot;newsletterId&quot;:&quot;best-of-npr&quot;,&quot;title&quot;:&quot;Best of NPR&quot;,&quot;marketingHeader&quot;:&quot;Sign Up For The Best of NPR Newsletter&quot;,&quot;frequency&quot;:&quot;every week&quot;,&quot;shortDescription&quot;:&quot;Don&#039;t miss NPR&#039;s best stories, investigations and discoveries, sent weekly.&quot;,&quot;stickyDescription&quot;:&quot;Sign up for the weekly Best of NPR newsletter for the best stories, investigations and discoveries.&quot;,&quot;contentImage&quot;:&quot;https:\/\/media.npr.org\/assets\/img\/2021\/02\/09\/best-of-npr.png&quot;,&quot;staticMarkupDir&quot;:&quot; &quot;,&quot;brandingDir&quot;:&quot; &quot;,&quot;brandingLink&quot;:&quot; &quot;,&quot;organizationId&quot;:1,&quot;recaptchaSiteKey&quot;:&quot;6LfD6CYUAAAAAIBeUekwZ9KCjF4UyLFtu7NWNaEK&quot;}">
+   </div>
+
+<!-- END ID="NEWSLETTER-ACQUISITION-CALLOUT-DATA" DATA-NEWSLETTER="{&QUOT;NEWSLETTERID&QUOT;:&QUOT;BEST-OF-NPR&QUOT;,&QUOT;TITLE&QUOT;:&QUOT;BEST OF NPR&QUOT;,&QUOT;MARKETINGHEADER&QUOT;:&QUOT;SIGN UP FOR THE BEST OF NPR NEWSLETTER&QUOT;,&QUOT;FREQUENCY&QUOT;:&QUOT;EVERY WEEK&QUOT;,&QUOT;SHORTDESCRIPTION&QUOT;:&QUOT;DON&#039;T MISS NPR&#039;S BEST STORIES, INVESTIGATIONS AND DISCOVERIES, SENT WEEKLY.&QUOT;,&QUOT;STICKYDESCRIPTION&QUOT;:&QUOT;SIGN UP FOR THE WEEKLY BEST OF NPR NEWSLETTER FOR THE BEST STORIES, INVESTIGATIONS AND DISCOVERIES.&QUOT;,&QUOT;CONTENTIMAGE&QUOT;:&QUOT;HTTPS:\/\/MEDIA.NPR.ORG\/ASSETS\/IMG\/2021\/02\/09\/BEST-OF-NPR.PNG&QUOT;,&QUOT;STATICMARKUPDIR&QUOT;:&QUOT; &QUOT;,&QUOT;BRANDINGDIR&QUOT;:&QUOT; &QUOT;,&QUOT;BRANDINGLINK&QUOT;:&QUOT; &QUOT;,&QUOT;ORGANIZATIONID&QUOT;:1,&QUOT;RECAPTCHASITEKEY&QUOT;:&QUOT;6LFD6CYUAAAAAIBEUEKWZ9KCJF4UYLFTU7NWNAEK&QUOT;}" -->
+<div id="podcast-callout-data" data-podcast="{&quot;name&quot;:&quot;Short Wave&quot;,&quot;itunesUrl&quot;:&quot;https:\/\/podcasts.apple.com\/podcast\/1482575855?mt=2&amp;at=11l79Y&amp;ct=nprdirectory&quot;,&quot;googlePodcastsUrl&quot;:&quot;https:\/\/podcasts.google.com\/feed\/aHR0cHM6Ly93d3cubnByLm9yZy9yc3MvcG9kY2FzdC5waHA_aWQ9NTEwMzUx&quot;,&quot;rssUrl&quot;:&quot;https:\/\/feeds.npr.org\/510351\/podcast.xml&quot;,&quot;jsonFeedUrl&quot;:&quot;https:\/\/feeds.npr.org\/feeds\/1198748542\/feed.json&quot;,&quot;nprOneUniversalUrl&quot;:&quot;https:\/\/rpb3r.app.goo.gl\/shortwave&quot;,&quot;amazonAlexaUrl&quot;:&quot;https:\/\/www.amazon.com\/dp\/B07YVN9QYD\/&quot;,&quot;spotifyUrl&quot;:&quot;https:\/\/open.spotify.com\/show\/2rTT1klKUoQNuaW2Ah19Pa&quot;,&quot;brandingUrl&quot;:&quot;https:\/\/media.npr.org\/assets\/img\/2022\/09\/23\/short-wave_tile_npr-network-01_sq-517382b4b8fd0ab48ea9c781253f9992eab733dc-s300-c85.jpg&quot;}">
+   </div>
+
+<!-- END ID="PODCAST-CALLOUT-DATA" DATA-PODCAST="{&QUOT;NAME&QUOT;:&QUOT;SHORT WAVE&QUOT;,&QUOT;ITUNESURL&QUOT;:&QUOT;HTTPS:\/\/PODCASTS.APPLE.COM\/PODCAST\/1482575855?MT=2&AMP;AT=11L79Y&AMP;CT=NPRDIRECTORY&QUOT;,&QUOT;GOOGLEPODCASTSURL&QUOT;:&QUOT;HTTPS:\/\/PODCASTS.GOOGLE.COM\/FEED\/AHR0CHM6LY93D3CUBNBYLM9YZY9YC3MVCG9KY2FZDC5WAHA_AWQ9NTEWMZUX&QUOT;,&QUOT;RSSURL&QUOT;:&QUOT;HTTPS:\/\/FEEDS.NPR.ORG\/510351\/PODCAST.XML&QUOT;,&QUOT;JSONFEEDURL&QUOT;:&QUOT;HTTPS:\/\/FEEDS.NPR.ORG\/FEEDS\/1198748542\/FEED.JSON&QUOT;,&QUOT;NPRONEUNIVERSALURL&QUOT;:&QUOT;HTTPS:\/\/RPB3R.APP.GOO.GL\/SHORTWAVE&QUOT;,&QUOT;AMAZONALEXAURL&QUOT;:&QUOT;HTTPS:\/\/WWW.AMAZON.COM\/DP\/B07YVN9QYD\/&QUOT;,&QUOT;SPOTIFYURL&QUOT;:&QUOT;HTTPS:\/\/OPEN.SPOTIFY.COM\/SHOW\/2RTT1KLKUOQNUAW2AH19PA&QUOT;,&QUOT;BRANDINGURL&QUOT;:&QUOT;HTTPS:\/\/MEDIA.NPR.ORG\/ASSETS\/IMG\/2022\/09\/23\/SHORT-WAVE_TILE_NPR-NETWORK-01_SQ-517382B4B8FD0AB48EA9C781253F9992EAB733DC-S300-C85.JPG&QUOT;}" -->
+<div id="callout-end-of-story-mount">
+   </div>
+
+<!-- END ID="CALLOUT-END-OF-STORY-MOUNT" -->
+<div id="callout-end-of-story-mount-piano-wrap" class="callout-end-of-story-mount-piano-wrap">
+      <div id="callout-end-of-story-mount-piano" class="callout-end-of-story-mount-piano">
+         </div>
+   
+<!-- END ID="CALLOUT-END-OF-STORY-MOUNT-PIANO" CLASS="CALLOUT-END-OF-STORY-MOUNT-PIANO" -->
+</div>
+
+<!-- END ID="CALLOUT-END-OF-STORY-MOUNT-PIANO-WRAP" CLASS="CALLOUT-END-OF-STORY-MOUNT-PIANO-WRAP" -->
+<aside id="end-of-story-recommendations-mount" class="recommended-stories" aria-label="recommended stories"></aside>
+<!-- END ID="END-OF-STORY-RECOMMENDATIONS-MOUNT" CLASS="RECOMMENDED-STORIES" ARIA-LABEL="RECOMMENDED STORIES" -->
+</article><header class="contentheader contentheader--two" data-metrics='{"category":"Why the earliest galaxies are sparking drama and controversy among astronomers"}' ></header><footer id="npr-footer" class="npr-footer" role="contentinfo" aria-label="NPR footer"><div class="npr-footer__content" data-metrics-category="Global Footer" data-metrics-label="Footer">
+    <div class="npr-footer__module-group">
+        <div class="npr-footer__module">
+            <h6 class="npr-footer__header">Read &amp; Listen</h6>
+
+            <ul>
+                <li class="npr-footer__item"><a href="/" data-metrics-action="Click Homepage">Home</a></li>
+                <li class="npr-footer__item"><a href="/sections/news/" data-metrics-action="Click News">News</a></li>
+                <li class="npr-footer__item"><a href="/sections/culture/" data-metrics-action="Click Culture">Culture</a></li>
+                <li class="npr-footer__item"><a href="/music/" data-metrics-action="Click Music">Music</a></li>
+                <li class="npr-footer__item"><a href="/podcasts-and-shows" data-metrics-action="click podcasts & shows">Podcasts &amp; Shows</a></li>
+            </ul>
+        </div>
+
+        <div class="npr-footer__module">
+            <h6 class="npr-footer__header">Connect</h6>
+
+            <ul>
+                <li class="npr-footer__item"><a href="/newsletters/" data-metrics-action="Click Newsletters" target='_blank'>Newsletters</a></li>
+                <li class="npr-footer__item"><a href="https://www.facebook.com/NPR/" data-metrics-action="Click Facebook">Facebook</a></li>
+                <li class="npr-footer__item"><a href="https://www.instagram.com/npr/" data-metrics-action="Click Instagram">Instagram</a></li>
+                <li class="npr-footer__item"><a href="/press/" data-metrics-action="Click Press">Press</a></li>
+                <li class="npr-footer__item"><a href="/sections/publiceditor/" data-metrics-action="Click Public Editor">Public Editor</a></li>
+                <li class="npr-footer__item"><a href="/corrections/" data-metrics-action="Click Corrections">Corrections</a></li>
+                <li class="npr-footer__item"><a href="https://help.npr.org/contact/s/" data-metrics-action="Click Contact & Help">Contact & Help</a></li>
+            </ul>
+        </div>
+
+        <div class="npr-footer__module">
+            <h6 class="npr-footer__header">About NPR</h6>
+
+            <ul>
+                <li class="npr-footer__item"><a href="/about/" data-metrics-action="Click Overview">Overview</a></li>
+                <li class="npr-footer__item"><a href="/diversity/" data-metrics-action="Click Diversity">Diversity</a></li>
+                <li class="npr-footer__item"><a href="/network/" data-metrics-action="Click Network" target="_blank">NPR Network</a></li>
+                <li class="npr-footer__item"><a href="/about-npr/1136563345/accessibility" data-metrics-action="Click Accessibility">Accessibility</a></li>
+                <li class="npr-footer__item"><a href="/ethics/" data-metrics-action="Click Ethics">Ethics</a></li>
+                <li class="npr-footer__item"><a href="/about-npr/178660742/public-radio-finances" data-metrics-action="Click Finances">Finances</a></li>
+            </ul>
+        </div>
+
+        <div class="npr-footer__module">
+            <h6 class="npr-footer__header">Get Involved</h6>
+
+            <ul>
+                <li class="npr-footer__item"><a href="/support/" data-metrics-action="Click Support Public Radio">Support Public Radio</a></li>
+                <li class="npr-footer__item"><a href="/about-npr/186948703/corporate-sponsorship" data-metrics-action="Click Sponsor NPR">Sponsor NPR</a></li>
+                <li class="npr-footer__item"><a href="/careers/" data-metrics-action="Click NPR Careers">NPR Careers</a></li>
+                <li class="npr-footer__item"><a href="https://shopnpr.org/" data-metrics-action="Click NPR Shop">NPR Shop</a></li>
+                <li class="npr-footer__item"><a href="https://www.nprpresents.org" data-metrics-action="Click NPR Events">NPR Events</a></li>
+                <li class="npr-footer__item"><a href="/sections/npr-extra/" data-metrics-action="Click NPR Extra">NPR Extra</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="npr-footer__module npr-footer__module--secondary">
+        <ul>
+            <li class="npr-footer__item"><a href="/about-npr/179876898/terms-of-use" data-metrics-action="Click Terms of Use">Terms of Use</a></li>
+            <li class="npr-footer__item"><a href="/about-npr/179878450/privacy-policy" data-metrics-action="Click Privacy">Privacy</a></li>
+            <li class="npr-footer__item"><a href="/about-npr/179878450/privacy-policy#yourchoices" data-metrics-action="Click Your Privacy Choices">Your Privacy Choices</a></li>
+            <li class="npr-footer__item"><a href="https://text.npr.org/" data-metrics-action="Click Text Only">Text Only</a></li>
+            <li class="npr-footer__item"><span class="copy-year"></span></li>
+        </ul>
+    </div>
+</div>
+</footer><div id="global-stickybar-mount" class="global-stickybar-mount">
+   </div>
+<div id="global-stickybar-mount-piano-wrap" class="global-stickybar">
+      <div id="global-stickybar-mount-piano" class="global-stickybar-mount-piano">
+         </div>
+</div>
+</section>   <div id="main-sidebar">
+            <aside id="ad-standard-wrap" aria-label="advertisement">
+    
+
+    <div id="ad-standard-podcasts_Short_Wave" class="ad-config ad-standard has-refresh-enabled" data-ad-config='{"network":"\/6735\/","site":{"desktop":"n6735.NPR","mobile":"n6735.NPRMOBILE"},"zone":"podcasts_Short_Wave","targets":{"testserver":"false","isPodcastEpisode":"true","storyId":"1198748542","agg":["1126052605","1037126227","191676894"],"orgId":"1"},"location":"standard","deferred":false,"isBetweenContent":false,"borderClass":"","overflowCount":null,"hasRefreshEnabled":true,"isOutstreamVideoEnabled":false}'></div>
+    <p class="left">Sponsor Message</p><p class="right"><a href="/about-npr/186948703/corporate-sponsorship">Become an NPR sponsor</a></p>
+
+</aside>
+   </div>
+   
+<!-- END ID="MAIN-SIDEBAR" -->
+</div>
+
+<!-- END ID="WRAPPER" -->
+<section id="global-modal-mount"></section>
+<!-- END ID="GLOBAL-MODAL-MOUNT" -->
+<script type="text/javascript">
+   (function () {
+    var loadPageJs = function () { (window.webpackJsonp=window.webpackJsonp||[]).push([[19],{1106:function(e,n,c){e.exports=c(305)},305:function(e,n,c){"use strict";c.p=NPR.serverVars.webpackPublicPath,Promise.all([c.e(1),c.e(2),c.e(3),c.e(96),c.e(74)]).then(function(e){c(3),c(1078),c(46),c(79),c(30),c(169),c(125),c(64),c(66),c(1079),c(88),c(1080),c(298),c(1081),c(78)}.bind(null,c)).catch(c.oe)}},[[1106,0]]]); };
+    if (document.readyState === 'complete') {
+        loadPageJs();
+    } else {
+        window.addEventListener('load', function load() {
+            window.removeEventListener('load', load, false);
+            loadPageJs();
+        });
+    }
+})();
+</script>
+</main></body></html><!-- CACHED 1695255510 -->

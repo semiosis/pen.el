@@ -1,0 +1,16 @@
+
+  -- Finally, print out the person's age in 10 years
+  -- age <- read "What is your age?" :: Int
+  -- putStrLn $ "Your age is " ++ show age
+  -- putStrLn $ "In 10 years, you will be " ++ show (age + 10)
+
+  -- Read in from the user a person's name
+  -- Then, print a greeting to the user using their name
+  -- name <- read "What is your name?" :: String
+  -- putStrLn $ "Hello, " ++ name ++ ", nice to meet you!"
+
+  -- Read in from the user a person's name and age
+  -- Then, print a sentence describing the person using their name and age
+  -- name <- read "What is your name?" :: String
+  -- age <- read "What is your age?" :: Int
+  -- putStrLn $ "Hello, "

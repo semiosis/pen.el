@@ -1,0 +1,13 @@
+"random-uuid" [random-uuid]
+  (random-uuid))
+
+"/ws" ws-handler
+  (println "ws-handler"))
+
+(defn main
+  []
+  (println "Starting server...")
+  (let [host "localhost"
+        port 8080]
+    (println "Listening on port " port "...")
+    (go (go-loop [req (async/http-server host port

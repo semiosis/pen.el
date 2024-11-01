@@ -1,0 +1,7 @@
+cd /volumes/home/shane/notes/ws/jobs;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/notes/ws/jobs;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/notes/ws/jobs;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/notes/ws/jobs;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/notes;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/notes;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /root/.pen/documents/notes;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"

@@ -1,0 +1,5 @@
+newtype MyNewType = MyNewType
+
+data MyData = MyData
+
+data MyData = MyData { myField :: MyNewType }

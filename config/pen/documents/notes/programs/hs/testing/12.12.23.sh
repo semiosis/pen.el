@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "testing" "hi" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "testing" "hi" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "testing" "hi" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "testing" "hi" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "testing" "hi" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "testing" "hi" "#" "<==" "run.sh"

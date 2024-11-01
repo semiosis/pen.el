@@ -1,0 +1,7 @@
+<List name>": <List of business ideas>
+"""
+
+    def parse_ideas(cls, line):
+        idea_list = []
+        if line.startswith("-"):
+            name, ideas_string = line.split(":", 1)

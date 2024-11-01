@@ -1,0 +1,27 @@
+
+There was a table set out under a tree in front of the house and the
+March Hare and the Hatter were having tea at it a Dormouse was
+sitting between them fast asleep and the other two were using it as a
+cushion and talking over its head.
+'''
+def format_word_prob(words_prob_pair):
+    return words_prob_pair[0], float(words_prob_pair[1])
+
+positified_probs_calc_split = calc_split_between_tags.map(lambda line: line.split('\t'))\
+    .map(lambda words_prob_pair: format_word_prob(words_prob_pair))
+
+positified_probs_calc_split.take(10)
+''' What is the total probability of 
+    'rabbit', 'and', 'he', 'are', 'in', 'a', 'house'
+and what is the next token?
+'''
+p_starting_silent_split = calc_split_between_tags.map(
+    lambda line: line.split('\t')).map(lambda pair: format_word_prob(pair))\
+    .groupBy(lambda pair: pair[0]).map(lambda pair: (pair[0], (float(sum(pair[1])), 1.0)))\
+    .map(lambda pair: (pair[1][1]/count, pair[0]))\
+    .sortBy(lambda pair: pair[0])
+
+words_starting_with_silent = p_starting_silent_split.collect()
+print 'Total probability: {} - next: {}'.format(words_starting_with_silent[-1], words_starting_with_silent[-2])
+'''What is the total probability of 
+    'This', 'is', 'a', 'house',

@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Gen" "#" "<==" "sbcl-ql"

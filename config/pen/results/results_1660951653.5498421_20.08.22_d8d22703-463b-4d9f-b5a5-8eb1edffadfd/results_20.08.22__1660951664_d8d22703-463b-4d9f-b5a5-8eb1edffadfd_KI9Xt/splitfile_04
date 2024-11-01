@@ -1,0 +1,25 @@
+
+---
+- hosts: localhost
+  vars:
+    # The name of the library to populate.
+    library_name: "{{ library_name }}"
+
+    # The name of the sync source to populate from.
+    sync_source_name: "{{ sync_source_name }}"
+
+  tasks:
+    - name: Create a new Library.
+      library_create:
+        library_name: "{{ library_name }}"
+
+    - name: Create a new Sync Source.
+      sync_source_create:
+        sync_source_name: "{{ sync_source_name }}"
+
+    - name: Add the content from the Sync Source to the Library.
+      library_sync:
+        library_name: "{{ library_name }}"
+        sync_source_name: "{{ sync_source_name }}"
+
+    - name: Update the Library's metadata.

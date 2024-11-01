@@ -1,0 +1,3 @@
+"io.replikativ/datahike" is a Clojure library for reading and writing
+data in various formats. It is based on the Java library "javax.mail".
+

@@ -1,0 +1,20 @@
+.
+
+import Data.Map (Map)
+import Data.List (groupBy, sortBy)
+import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
+import qualified Data.Text.Lazy as TL
+import qualified Data.Text.Lazy.Builder as TLB
+import qualified Data.ByteString as B
+import qualified Data.ByteString.Lazy as BL
+import qualified Data.ByteString.Lazy.Builder as BLB
+import Control.Monad (forM_, unless, when)
+import Control.Monad.IO (liftIO)
+import System.Environment (getArgs)
+import System.Exit (exitSuccess)
+-- import System.FilePath (FilePath, isFileName) -- TODO: use this to read the file name from the command line arguments instead of stdin?
+
+
+main :: IO ()
+main = do  -- TODO: use get

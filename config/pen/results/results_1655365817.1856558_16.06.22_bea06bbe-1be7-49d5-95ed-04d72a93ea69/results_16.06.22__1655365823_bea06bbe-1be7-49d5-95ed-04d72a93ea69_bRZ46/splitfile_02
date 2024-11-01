@@ -1,0 +1,1 @@
+(cpyimport "gopasspw/gopass" "run_flow")

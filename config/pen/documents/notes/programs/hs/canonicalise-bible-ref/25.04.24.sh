@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "canonicalise-bible-ref" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "canonicalise-bible-ref" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "canonicalise-bible-ref" "#" "<==" "bash"

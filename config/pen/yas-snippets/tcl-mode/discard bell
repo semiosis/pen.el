@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: discard bell
+# group: discard
+# key: discardbell
+# --
+set bell "\007"
+
+expect {
+    -re "^$bell+" exp_continue
+    -re "again\\? " {send y}
+    -re ".+"
+}

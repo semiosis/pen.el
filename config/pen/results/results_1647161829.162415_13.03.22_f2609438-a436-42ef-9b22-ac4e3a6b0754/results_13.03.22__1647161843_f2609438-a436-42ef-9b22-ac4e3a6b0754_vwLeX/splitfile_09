@@ -1,0 +1,13 @@
+ialization(main).
+
+:- use_module(library(prolog_sys)).
+:- use_module(library(write)).
+:- use_module(library(dynamic)).
+:- use_module(library(lists)).
+
+main :- 
+	statistics(runtime, _),
+	$program,
+	statistics(runtime, [_, Y]),
+	write('execution time is '), write(Y), write(' milliseconds'), nl.
+EOD

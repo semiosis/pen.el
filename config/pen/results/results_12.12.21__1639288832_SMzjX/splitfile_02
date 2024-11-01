@@ -1,0 +1,7 @@
+""large-file-warning-threshold" refers to the size of a file above which the user is asked to confirm the action."""
+
+
+def test_main():
+    assert main(["--list-words"]) == 0
+    assert main(["--list-words", "--list-topics"]) == 0
+    assert main(["--list-words", "--list-topics", "--

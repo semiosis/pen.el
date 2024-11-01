@@ -1,0 +1,59 @@
+
+#
+# This playbook is intended to be run against a fresh install of Pulp 2.8.
+# It will:
+#   - create a user for the sync process
+#   - create a feed and sync it
+#   - create a content view and publish it
+#   - create an ISO library, and a 'published' repo from that library
+#   - create a docker registry and sync it
+#   - create a puppet repo and sync it
+#   - create an RPM repository and sync it
+#   - create a file repository and sync it
+#   - create a yum repository and sync it (this one will be *huge*)
+#   - publish the content view, add the published repo to it, and promote to Library
+#     (this last step might take awhile)
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cat draft

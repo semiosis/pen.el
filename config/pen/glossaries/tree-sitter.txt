@@ -1,0 +1,582 @@
+todo add these
+    \s
+        sp +/"extras:" "$MYGIT/Wilfred/tree-sitter-elisp/grammar.js"
+    
+    \f
+
+Multi-language Documents
+
+prepare_grammar
+    Once a grammar has been parsed, it must be
+    transformed in several ways before it can
+    be used to generate a parser.
+    
+    Each transformation is implemented by a
+    separate file in the prepare_grammar
+    directory, and the transformations are
+    ultimately composed together in
+    prepare_grammar/mod.rs.
+
+languages
+TSLanguage
+
+
+parsers
+TSParser
+
+
+syntax trees
+TSTree
+
+
+syntax nodes
+TSNode
+    Tree-sitter provides a DOM-style interface
+    for inspecting syntax trees.  A syntax
+    node’s type is a string that indicates
+    which grammar rule the node represents.
+
+    Syntax nodes store their position in the
+    source code both in terms of raw bytes and
+    row/column coordinates:
+
+        uint32_t ts_node_start_byte(TSNode);
+        uint32_t ts_node_end_byte(TSNode);
+
+        typedef struct {
+          uint32_t row;
+          uint32_t column;
+        } TSPoint;
+
+        TSPoint ts_node_start_point(TSNode);
+        TSPoint ts_node_end_point(TSNode);
+
+TSInput
+    [struct]
+
+    The TSInput structure lets you to provide
+    your own function for reading a chunk of
+    text at a given byte offset and row/column
+    position. The function can return text
+    encoded in either UTF8 or UTF16.  This
+    interface allows you to efficiently parse
+    text that is stored in your own data
+    structure.
+
+TSInputEdit
+    See "ts_tree_edit".
+
+        typedef struct {
+          uint32_t start_byte;
+          uint32_t old_end_byte;
+          uint32_t new_end_byte;
+          TSPoint start_point;
+          TSPoint old_end_point;
+          TSPoint new_end_point;
+        } TSInputEdit;
+
+        void ts_tree_edit(TSTree *, const TSInputEdit *);
+
+TSInputEncoding
+    typedef struct {
+      void *payload;
+      const char *(*read)(
+        void *payload,
+        uint32_t byte_offset,
+        TSPoint position,
+        uint32_t *bytes_read
+      );
+      TSInputEncoding encoding;
+    } TSInput;
+
+TSPoint
+    typedef struct {
+      uint32_t row;
+      uint32_t column;
+    } TSPoint;
+
+    TSPoint ts_node_start_point(TSNode);
+    TSPoint ts_node_end_point(TSNode);
+
+concrete syntax trees
+    Tree-sitter produces concrete syntax trees
+    - trees that contain nodes for every
+    individual token in the source code,
+    including things like commas and
+    parentheses.
+    
+    This is important for use-cases that deal
+    with individual tokens, like syntax
+    highlighting.
+
+abstract syntax tree
+    But some types of code analysis are easier
+    to perform using an abstract syntax tree -
+    a tree in which the less important details
+    have been removed.
+    
+    Tree-sitter’s trees support these use
+    cases by making a distinction between
+    named and anonymous nodes.
+
+named node
+
+anonymous node
+
+field
+
+Field Name
+Node Field Name
+    To make syntax nodes easier to analyze,
+    many grammars assign unique field names to
+    particular child nodes. The next page
+    explains how to do this on your own
+    grammars. If a syntax node has fields, you
+    can access its children using their field
+    name.
+
+Field ID
+TSFieldId
+    Fields also have numeric ids that you can
+    use, if you want to avoid repeated string
+    comparisons. You can convert between
+    strings and ids using the TSLanguage.
+
+grammar rule
+    Consider a grammar rule like this:
+
+        if_statement: ($) => seq("if", "(", $._expression, ")", $._statement);
+
+named node
+    Consider a grammar rule like this:
+
+        if_statement: ($) => seq("if", "(", $._expression, ")", $._statement);
+
+    A syntax node representing an if_statement
+    in this language would have 5 children:
+    the condition expression, the body
+    statement, as well as the if, (, and )
+    tokens. The expression and the statement
+    would be marked as named nodes, because
+    they have been given explicit names in the
+    grammar.  But the if, (, and ) nodes would
+    not be named nodes, because they are
+    represented in the grammar as simple
+    strings.
+
+named variant
+    [node]
+
+        bool ts_node_is_named(TSNode);
+
+    When traversing the tree, you can also choose to skip over anonymous
+    nodes by using the _named_ variants of all of the methods described
+    above:
+
+        TSNode ts_node_named_child(TSNode, uint32_t);
+        uint32_t ts_node_named_child_count(TSNode);
+        TSNode ts_node_next_named_sibling(TSNode);
+        TSNode ts_node_prev_named_sibling(TSNode);
+
+    If you use this group of methods, the
+    syntax tree functions much like an
+    abstract syntax tree.
+
+binding.gyp
+    This file tells Node.js how to compile
+    your language.
+
+bindings/node/index.js
+    This is the file that Node.js initially
+    loads when using your language.
+
+bindings
+    The directory with bindings of your
+    language for different languages.
+
+bindings/node/binding.cc
+binding.cc
+    This file wraps your language in a
+    JavaScript object when used in Node.js.
+
+bindings/rust/lib.rs
+lib.rs
+    This file wraps your language in a Rust
+    crate when used in Rust.
+
+bindings/rust/build.rs
+build.rs
+    This file wraps the building process for
+    the Rust crate.
+
+src/tree_sitter/parser.h
+    This file provides some basic C
+    definitions that are used in your
+    generated parser.c file.
+
+local ambiguity
+    If there is an ambiguity or local
+    ambiguity in your grammar, Tree-sitter
+    will detect it during parser generation,
+    and it will exit with a Unresolved
+    conflict error message. See below for more
+    information on these errors.
+
+tests
+    For each rule that you add to the grammar,
+    you should first create a test that
+    describes how the syntax trees should look
+    when parsing that rule.  These tests are
+    written using specially-formatted text
+    files in the corpus/ or test/corpus/
+    directories within your parser’s root
+    folder.
+
+    $MYGIT/Wilfred/tree-sitter-elisp/test/corpus
+
+    Examples:
+
+        (source_file
+          (function_definition
+            name: (identifier)
+            parameters: (parameter_list)
+            result: (primitive_type)
+            body: (block
+              (return_statement (number)))))
+
+a node's range
+    In the generated [abstract or concrete]
+    syntax tree, the range is, for example,
+    [0, 0] - [3, 0]
+
+        (source_file [0, 0] - [3, 0]
+          (function_declaration [0, 0] - [2, 1]
+            name: (identifier [0, 5] - [0, 9])
+            parameters: (parameter_list [0, 9] - [0, 11])
+            result: (type_identifier [0, 12] - [0, 15])
+            body: (block [0, 16] - [2, 1]
+              (return_statement [1, 2] - [1, 10]
+                (expression_list [1, 9] - [1, 10]
+                  (int_literal [1, 9] - [1, 10]))))))
+
+Symbols (the $ object)
+$
+    [#grammar dsl]
+    [function to define a rule]
+
+    Every grammar rule is written as a
+    JavaScript function that takes a parameter
+    conventionally called $. The syntax
+    $.identifier is how you refer to another
+    grammar symbol within a rule.
+
+        sp +/"\$.special_form," "$HOME/source/git/Wilfred/tree-sitter-elisp/grammar.js"
+
+String and Regex literals
+    [#grammar dsl]
+    [function to define a rule]
+
+    The terminal symbols in a grammar are
+    described using JavaScript strings and
+    regular expressions. Of course during
+    parsing, Tree-sitter does not actually use
+    JavaScript’s regex engine to evaluate
+    these regexes; it generates its own
+    regex-matching logic as part of each
+    parser. Regex literals are just used as a
+    convenient way of writing regular
+    expressions in your grammar.
+
+Sequences : seq(rule1, rule2, ...)
+seq
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function creates a rule that matches
+    any number of other rules, one after
+    another. It is analogous to simply writing
+    multiple symbols next to each other in
+    EBNF notation.
+
+Alternatives : choice(rule1, rule2, ...)
+choice
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function creates a rule that matches
+    one of a set of possible rules. The order
+    of the arguments does not matter. This is
+    analogous to the | (pipe) operator in EBNF
+    notation.
+
+Repetitions : repeat(rule)
+repeat
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function creates a rule that matches
+    zero-or-more occurrences of a given rule.
+    It is analogous to the {x} (curly brace)
+    syntax in EBNF notation.
+
+Repetitions : repeat1(rule)
+repeat1
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function creates a rule that matches
+    one-or-more occurrences of a given rule.
+    The previous repeat rule is implemented in
+    terms of repeat1 but is included because
+    it is very commonly used.
+
+Options : optional(rule)
+optional
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function creates a rule that matches
+    zero or one occurrence of a given rule. It
+    is analogous to the [x] (square bracket)
+    syntax in EBNF notation.
+
+Precedence : prec(number, rule)
+prec
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function marks the given rule with a
+    numerical precedence which will be used to
+    resolve LR(1) Conflicts at
+    parser-generation time. When two rules
+    overlap in a way that represents either a
+    true ambiguity or a local ambiguity given
+    one token of lookahead, Tree-sitter will
+    try to resolve the conflict by matching
+    the rule with the higher precedence. The
+    default precedence of all rules is zero.
+    This works similarly to the precedence
+    directives in Yacc grammars.
+
+Left Associativity : prec.left([number], rule)
+prec.left
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function marks the given rule as
+    left-associative (and optionally applies a
+    numerical precedence). When an LR(1)
+    conflict arises in which all of the rules
+    have the same numerical precedence,
+    Tree-sitter will consult the rules’
+    associativity. If there is a
+    left-associative rule, Tree-sitter will
+    prefer matching a rule that ends earlier.
+    This works similarly to associativity
+    directives in Yacc grammars.
+
+Right Associativity : prec.right([number], rule)
+prec.right
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function is like prec.left, but it
+    instructs Tree-sitter to prefer matching a
+    rule that ends later.
+
+Dynamic Precedence : prec.dynamic(number, rule)
+prec.dynamic
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function is similar to prec, but the
+    given numerical precedence is applied at
+    runtime instead of at parser generation
+    time. This is only necessary when handling
+    a conflict dynamically using the conflicts
+    field in the grammar, and when there is a
+    genuine ambiguity: multiple rules
+    correctly match a given piece of code. In
+    that event, Tree-sitter compares the total
+    dynamic precedence associated with each
+    rule, and selects the one with the highest
+    total. This is similar to dynamic
+    precedence directives in Bison grammars.
+
+Tokens : token(rule)
+token
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function marks the given rule as
+    producing only a single token.
+    Tree-sitter’s default is to treat each
+    String or RegExp literal in the grammar as
+    a separate token. Each token is matched
+    separately by the lexer and returned as
+    its own leaf node in the tree. The token
+    function allows you to express a complex
+    rule using the functions described above
+    (rather than as a single regular
+    expression) but still have Tree-sitter
+    treat it as a single token.
+
+Immediate Tokens : token.immediate(rule)
+token.immediate
+    [#grammar dsl]
+    [function to define a rule]
+
+    Usually, whitespace (and any other extras,
+    such as comments) is optional before each
+    token. This function means that the token
+    will only match if there is no whitespace.
+
+Aliases : alias(rule, name)
+alias
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function causes the given rule to
+    appear with an alternative name in the
+    syntax tree. If name is a symbol, as in
+    alias($.foo, $.bar), then the aliased rule
+    will appear as a named node called bar.
+    And if name is a string literal, as in
+    alias ($.foo, 'bar'), then the aliased
+    rule will appear as an anonymous node, as
+    if the rule had been written as the simple
+    string.
+
+Field Names : field(name, rule)
+field(
+    [#grammar dsl]
+    [function to define a rule]
+
+    This function assigns a field name to the
+    child node(s) matched by the given rule.
+    In the resulting syntax tree, you can then
+    use that field name to access specific
+    children.
+
+extras
+    An array of tokens that may appear
+    anywhere in the language.  This is often
+    used for whitespace and comments. The
+    default value of extras is to accept
+    whitespace. To control whitespace
+    explicitly, specify extras: $ => [] in
+    your grammar.
+
+inline
+    An array of rule names that should be
+    automatically removed from the grammar by
+    replacing all of their usages with a copy
+    of their definition. This is useful for
+    rules that are used in multiple places but
+    for which you don’t want to create syntax
+    tree nodes at runtime.
+
+conflicts
+    An array of arrays of rule names. Each
+    inner array represents a set of rules
+    that’s involved in an LR(1) conflict that
+    is intended to exist in the grammar. When
+    these conflicts occur at runtime,
+    Tree-sitter will use the GLR algorithm to
+    explore all of the possible
+    interpretations. If multiple parses end up
+    succeeding, Tree-sitter will pick the
+    subtree whose corresponding rule has the
+    highest total dynamic precedence.
+
+externals
+    An array of token names which can be
+    returned by an external scanner. External
+    scanners allow you to write custom C code
+    which runs during the lexing process in
+    order to handle lexical rules (e.g.
+    Python’s indentation tokens) that cannot
+    be described by regular expressions.
+
+word
+    The name of a token that will match
+    keywords for the purpose of the keyword
+    extraction optimization.
+
+supertypes
+    An array of hidden rule names which should
+    be considered to be ‘supertypes’ in the
+    generated node types file.
+
+ts_parser_new
+    ewwlinks +/"ts_parser_new" "https://tree-sitter.github.io/tree-sitter/using-parsers"
+
+ts_node_type
+
+ts_node_child_count
+
+ts_tree_delete
+
+ts_parser_delete
+
+ts_parser_parse_string
+
+ts_parser_parse
+
+ts_node_start_byte
+
+ts_node_end_byte
+
+ts_node_start_point
+
+ts_node_end_point
+
+ts_tree_root_node
+
+ts_language_field_count
+
+ts_language_field_name_for_id
+
+ts_language_field_id_for_name
+
+ts_node_child_by_field_id
+
+ts_node_child_by_field_name
+
+ts_node_named_child
+
+ts_node_named_child_count
+
+ts_node_next_named_sibling
+
+ts_node_prev_named_sibling
+
+ts_node_is_named
+
+ts_node_next_sibling
+
+ts_node_prev_sibling
+
+ts_node_parent
+
+ts_node_child
+
+ts_tree_edit
+    In applications like text editors, you
+    often need to re-parse a file after its
+    source code has changed. Tree-sitter is
+    designed to support this use case
+    efficiently. There are two steps required.
+    First, you must edit the syntax tree,
+    which adjusts the ranges of its nodes so
+    that they stay in sync with the code.
+
+ts_node_edit
+    When you edit a syntax tree, the positions
+    of its nodes will change. If you have
+    stored any TSNode instances outside of the
+    TSTree, you must update their positions
+    separately, using the same TSInput value,
+    in order to update their cached positions.
+
+        void ts_node_edit(TSNode *, const TSInputEdit *);

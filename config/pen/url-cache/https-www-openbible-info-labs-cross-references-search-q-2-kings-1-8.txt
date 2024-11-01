@@ -1,0 +1,143 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 4697
+Connection: keep-alive
+Date: Sat, 26 Aug 2023 01:21:26 GMT
+Server: Apache
+Content-Location: search.php
+TCN: choice
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 fee2204e836082f271d6cc60790053cc.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD1-C2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: 3xSX8Sp4xHq2SaqWz2q4hxWR9qYPFPHnLwNYieHXcKdYE3P7vt5Rvw==
+Age: 3
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>2 Kgs 1:8 Cross References (7 Verses)</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/labs/cross-references/search?q=2+Kings+1%3A8" />
+<style type="text/css">
+	.votes-1 { background: #fee; }
+	.votes-2 { background: #fdd; }
+	.votes-3 { background: #fcc; }
+	.votes-4 { background: #fbb; }
+	.votes-5 { background: #faa; }
+	div.crossrefs { clear: right; }
+	div.crossrefs div { width:300px; height:200px; float:left; margin:auto 10px 10px auto; padding:5px; overflow:auto; }
+	div.crossrefs div h3 {color:#000; margin-top:0; margin-bottom:1em; }
+	div.crossrefs div h3 a {color:#000; }
+	div.crossrefs p {margin-bottom:0;}
+	div.crossrefs div.crossref-verse { background: #f77; border: 2px solid #000; width: 296px; height: 196px;}
+	span.vote { font-size:80%; float:right; font-weight:normal; padding-top:2px;}
+	span.vote a {background: #fee; border:1px solid #000; padding:2px; color:#000; text-decoration:none;}
+	@media print {
+		div.crossrefs div, div.crossrefs div.crossref-verse { width:auto; height:auto; float:none; margin:auto; padding:auto; }
+		form, span.vote, span.links, #head { display:none; }
+		h1 { font-size: 100%; }
+	}
+</style>
+</head>
+<body class="labs inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<h1>2 Kings 1:8 Cross References</h1>
+<form action="/labs/cross-references/search">
+<p><input type="text" name="q" size="20" value="2 Kings 1:8" /> <input type="submit" value="Go to Bible verse" />
+		<br />
+						<a href="/labs/cross-references/search?q=2+Kings+1%3A7">&laquo; 2 Kings 1:7</a>
+			 |							<a href="/labs/cross-references/search?q=2+Kings+1%3A9">2 Kings 1:9 &raquo;</a>
+				| Compare: <a href="https://www.biblegateway.com/passage/?search=2+Kgs+1%3A8%2CMatt+3%3A4%2CZech+13%3A4%2CMark+1%3A6%2CRev+11%3A3%2CLuke+1%3A17%2CMatt+11%3A8%2CIsa+20%3A2&amp;version=NIV">NIV</a>, <a href="https://www.biblegateway.com/passage/?search=2+Kgs+1%3A8%2CMatt+3%3A4%2CZech+13%3A4%2CMark+1%3A6%2CRev+11%3A3%2CLuke+1%3A17%2CMatt+11%3A8%2CIsa+20%3A2&amp;version=KJV">KJV</a>, <a href="https://www.biblegateway.com/passage/?search=2+Kgs+1%3A8%2CMatt+3%3A4%2CZech+13%3A4%2CMark+1%3A6%2CRev+11%3A3%2CLuke+1%3A17%2CMatt+11%3A8%2CIsa+20%3A2&amp;version=NLT">NLT</a>, <a href="https://www.biblegateway.com/passage/?search=2+Kgs+1%3A8%2CMatt+3%3A4%2CZech+13%3A4%2CMark+1%3A6%2CRev+11%3A3%2CLuke+1%3A17%2CMatt+11%3A8%2CIsa+20%3A2&amp;version=NKJV">NKJV</a>, <a href="https://www.biblegateway.com/passage/?search=2+Kgs+1%3A8%2CMatt+3%3A4%2CZech+13%3A4%2CMark+1%3A6%2CRev+11%3A3%2CLuke+1%3A17%2CMatt+11%3A8%2CIsa+20%3A2&amp;version=NRSVUE">NRSVue</a>, <a href="https://www.biblegateway.com/passage/?search=2+Kgs+1%3A8%2CMatt+3%3A4%2CZech+13%3A4%2CMark+1%3A6%2CRev+11%3A3%2CLuke+1%3A17%2CMatt+11%3A8%2CIsa+20%3A2&amp;version=ESV">ESV</a>
+		|
+		<a href="/labs/cross-references/">Cross references home</a>
+</p>
+</form>
+	<div class="crossrefs">
+		<div class="crossref-verse">
+		<h3>2 Kings 1:8</h3>
+		<p>They answered him, &#8220;He wore a garment of hair, with a belt of leather about his waist.&#8221; And he said, &#8220;It is Elijah the Tishbite.&#8221;</p>
+		</div>
+									<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Matthew+3%3A4">Matthew 3:4</a> <span id="c12001008.40003004-40003004" class="vote"></span></h3>
+				<p>Now John wore a garment of camel's hair and a leather belt around his waist, and his food was locusts and wild honey.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Zechariah+13%3A4">Zechariah 13:4</a> <span id="c12001008.38013004-38013004" class="vote"></span></h3>
+				<p>&#8220;On that day every prophet will be ashamed of his vision when he prophesies. He will not put on a hairy cloak in order to deceive,</p>
+				</div>
+							<div class="votes-3"><h3><a href="/labs/cross-references/search?q=Mark+1%3A6">Mark 1:6</a> <span id="c12001008.41001006-41001006" class="vote"></span></h3>
+				<p>Now John was clothed with camel's hair and wore a leather belt around his waist and ate locusts and wild honey.</p>
+				</div>
+							<div class="votes-2"><h3><a href="/labs/cross-references/search?q=Revelation+11%3A3">Revelation 11:3</a> <span id="c12001008.66011003-66011003" class="vote"></span></h3>
+				<p>And I will grant authority to my two witnesses, and they will prophesy for 1,260 days, clothed in sackcloth.&#8221;</p>
+				</div>
+							<div class="votes-2"><h3><a href="/labs/cross-references/search?q=Luke+1%3A17">Luke 1:17</a> <span id="c12001008.42001017-42001017" class="vote"></span></h3>
+				<p>and he will go before him in the spirit and power of Elijah, to turn the hearts of the fathers to the children, and the disobedient to the wisdom of the just, to make ready for the Lord a people prepared.&#8221;</p>
+				</div>
+							<div class="votes-2"><h3><a href="/labs/cross-references/search?q=Matthew+11%3A8">Matthew 11:8</a> <span id="c12001008.40011008-40011008" class="vote"></span></h3>
+				<p>What then did you go out to see? A man dressed in soft clothing? Behold, those who wear soft clothing are in kings' houses.</p>
+				</div>
+							<div class="votes-2"><h3><a href="/labs/cross-references/search?q=Isaiah+20%3A2">Isaiah 20:2</a> <span id="c12001008.23020002-23020002" class="vote"></span></h3>
+				<p>at that time the <span class="sc">Lord</span> spoke by Isaiah the son of Amoz, saying, &#8220;Go, and loose the sackcloth from your waist and take off your sandals from your feet,&#8221; and he did so, walking naked and barefoot.</p>
+				</div>
+					</div>
+<script type="text/javascript">
+var votes = document.querySelectorAll("span.vote");
+for (var i = 0, j = votes.length; i < j; i++) {
+	var node = votes[i];
+	var id = node.id.substr(1)
+	node.innerHTML = 'Helpful? <a id="u' + id + '" href="#u">Yes</a> <a id="d' + id + '" href="#d">No</a>';
+};
+var voteLinks = document.querySelectorAll("span.vote a");
+for (var i = 0, j = voteLinks.length; i < j; i++) {
+	voteLinks[i].addEventListener("click", voteCallback, false);
+}
+
+function voteCallback(e) {
+	e.preventDefault();
+	var node = e.target;
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "/labs/cross-references/vote");
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send("vote=" + node.id);
+	node.parentNode.innerHTML = "Thanks for voting";
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

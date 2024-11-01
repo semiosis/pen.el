@@ -1,0 +1,176 @@
+say
+    Just like print, but implicitly appends a
+    newline. say LIST is simply an
+    abbreviation for { local $\ = "\n"; print LIST } .
+
+list
+array
+    my @animals = ("camel", "llama", "owl");
+
+hash
+    my %fruit_color = ("apple", "red", "banana", "yellow");
+
+    #  You can use whitespace and the "=>" operator to lay them out more
+    #  nicely:
+
+    my %fruit_color = (
+      apple  => "red",
+      banana => "yellow",
+    );
+
+    my $color = $fruit_color{apple};
+
+conditional expression
+    2 types:
+    - (?(condition)yes-regexp), and
+    - (?(condition)yes-regexp|no-regexp)
+
+    This can be used along with code expressions.
+
+perl my
+    my declares the listed variables to be
+    local (lexically) to the enclosing block,
+    file, or eval. If more than one variable
+    is listed, the list must be placed in
+    parentheses.
+
+/x
+    [modifier]
+    
+    Ignore most whitespace that isn't escaped in the regex.
+
+    print "matched\n" if $text =~ /(?
+                                     (?{ $lang eq 'EN' }) the |
+                                     (der|die|das)
+                                   )
+                                  /xi;
+
+Code expressions
+    [zero-width assertion]
+
+    This is THE example.
+        # The ____ provide a pattern that will not match. This is required
+        print "1TRUE\n" if $x =~ /(..)(?(?{"$1" eq "ab";})(.)|____)/;
+
+    vimlinks +/"A bit of magic: executing Perl code in a regular expression" "https://perldoc.perl.org/perlretut.html"
+
+    Essentially:
+    - perlre code in matcher
+    - custom predicates
+
+    zero-width assertions
+    
+    The value they return depends on their environment.
+
+    Example 1
+        $x = "abcdef";
+        $x =~ /abc(?{print "Hi Mom!";})def/;
+
+    Syntax 1
+        (?(?{...})yes-regexp|no-regexp)
+
+        In the case of a code expression, we don't need the extra
+        parentheses around the conditional.
+        
+        Example
+            # MOST Whitespace is ignored with /x
+            # (?(? can't have a space sike (? (?
+            print "matched\n" if $text =~ /(?(?{ $lang eq 'EN' }) the |
+                                             (der|die|das)
+                                           )
+                                          /xi;
+                
+    2 Types:
+    - conditional expression:
+      (?(condition)...)
+
+      The result of the last statement is used as the predicate.
+
+    - Not a conditional
+      Assertion/predicate is always evaluates true.
+      The result is put into the special variable $^R which can then be
+      used in code expressions later in the regexp.
+
+    (?{...})
+
+        Inside a (?{...}) block
+        - $_
+          The string the regular expression is
+          matching against.
+
+        - pos()
+          The current position of matching within
+          this string.
+
+    (??{ code })
+        Return value is treated as a pattern
+        rather than assigned to $^R.
+
+    
+
+(?PARNO) (?-PARNO) (?+PARNO) (?R) (?0)
+Recursive subpattern
+
+qr//
+    One of the quote-like operators that apply to pattern matching and
+    related activities.
+
+        my $hat = qr/hat/;
+        say 'Found a hat!' if $name =~ /$hat/;
+
+    You can construct regex out of smaller regex
+    But why not use strings instead of regex objects?
+
+        print "D";
+        my $qr = qr/(?{ BEGIN { print "A" } })/;
+        my $foo = "foo";
+
+    This constructs a composite regex
+
+        /$foo$qr(?{ BEGIN { print "B" } })/;
+
+        BEGIN { print "C" }
+
+$_
+topic
+default variable
+    [perl syntax]
+
+
+    Manually set it
+        $_ = "test something"
+        print $_
+
+    This does NOT set it
+        "test something"
+        print $_
+
+false
+    - 0
+    - "0" (string)
+    - "" (empty string)
+    - () (empty list)
+    - undef
+
+true
+    Anything that's not false.
+
+undef EXPR
+    Undefines the value of EXPR.
+
+    Returns false.
+
+ifse
+    $lang eq 'EN'
+
+\1
+    In the usual double-quoted string means a control-A.
+
+    But there is some compatibility with sed in the RHS fo a substitute.
+    Use $1 instead.
+
+/(?: (\w) (?...Here be a palindrome...) \g{-1} | \w? )/x
+    Palindrome
+
+Non-capturing regex
+    (?:regexp)

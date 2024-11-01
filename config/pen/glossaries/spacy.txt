@@ -1,0 +1,353 @@
+https://github.com/explosion/spaCy/blob/master/spacy/glossary.py
+
+spaCy
+
+spacy-pretrain
+    Do your own language model pretraining.
+
+    Instead of using spacy-transfromers.
+
+pipeline
+processing pipeline
+    When you call nlp on a text, spaCy first
+    tokenizes the text to produce a Doc
+    object.
+    
+    The Doc is then processed in several
+    different steps – this is also referred to
+    as the processing pipeline.
+    
+    The pipeline used by the default models
+    consists of a tagger, a parser and an
+    entity recognizer.
+    
+    Each pipeline component returns the
+    processed Doc, which is then passed on to
+    the next component.
+
+pipeline extension
+    https://spacy.io/universe/category/pipeline
+
+    Examples:
+    - https://spacy.io/universe/project/spacy-pytextrank
+
+Attributes
+    [#lexeme]
+
+    These are like predicates.
+
+    vim +/"IS_TITLE" "$MYGIT/ines/spacy-course/exercises/solution_02_13.py"
+
+    e:$NOTES/ws/spacy/attributes.org
+
+match-rule
+    Consists of:
+    - an ID key
+    - an on_match callback
+    - one or more patterns
+
+    Add many of these to the matcher.
+
+    key (unicode)       : The match ID.
+    on_match (callable) : Callback executed on match.
+    *docs (Doc)         : `Doc` objects representing match patterns.
+
+    Examples:
+        patterns = list(nlp.pipe(COUNTRIES))
+
+        #             ID key      callback  paterns
+        matcher.add(  "COUNTRY",  None,     *patterns)
+
+spacy.matcher.phrasematcher
+    Efficiently match large terminology lists.
+    While the `Matcher` matches sequences
+    based on lists of token descriptions, the
+    `PhraseMatcher` accepts match patterns in
+    the form of `Doc` objects.
+
+    DOCS: https://spacy.io/api/phrasematcher
+    USAGE: https://spacy.io/usage/rule-based-matching#phrasematcher
+
+    vim +/"from spacy.matcher import PhraseMatcher" "$MYGIT/ines/spacy-course/exercises/solution_02_14.py"
+
+.add
+    [#spacy.matcher.phrasematcher]
+
+    Add a match-rule to the phrase-matcher.
+
+    DOCS: https://spacy.io/api/phrasematcher#add
+
+token.pos_
+    [string]
+
+    Part of speech.
+
+doc
+spacy.tokens.doc
+    A sequence of Token objects. Access
+    sentences and named entities, export
+    annotations to numpy arrays, losslessly
+    serialize to compressed binary strings.
+    The `Doc` object holds an array of
+    `TokenC` structs. The Python-level `Token`
+    and `Span` objects are views of this
+    array, i.e.  they don't own the data
+    themselves.
+
+    You can construct them:
+        vim +/"doc = Doc(nlp.vocab, words=words, spaces=spaces)" "$MYGIT/ines/spacy-course/exercises/solution_02_06.py"
+
+spacy.tokens.doc.text
+    A unicode representation of the document text.
+
+    RETURNS (unicode): The original verbatim
+    text of the document.
+
+pattern
+    [#match-rule]
+
+    Consists of one or more `token_specs`,
+    where a `token_spec` is a dictionary
+    mapping attribute IDs to values, and
+    optionally a quantifier operator under the
+    key "op".
+
+    Available quantifiers:
+    - !
+    - ?
+    - +
+    - *
+
+Vocab
+    [#spacy]
+    [class]
+
+    https://spacy.io/api/vocab
+
+    A storage class for vocabulary and other
+    data shared across a language.
+
+    The Vocab object provides a lookup table
+    that allows you to access Lexeme objects,
+    as well as the StringStore.
+    
+    It also owns underlying C-data that is
+    shared between Doc objects.
+
+wordpiece pre-processing
+    ewwlinks +/"wordpiece pre-processing" "https://explosion.ai/blog/spacy-pytorch-transformers"
+
+knowledge acquisition bottleneck
+    A problem NLP systems face.
+
+Knowledge acquisition
+    The process used to define the rules and
+    ontologies required for a knowledge-based
+    system.
+    
+    The phrase was first used in conjunction
+    with expert systems to describe the
+    initial tasks associated with developing
+    an expert system, namely finding and
+    interviewing domain experts and capturing
+    their knowledge via rules, objects, and
+    frame-based ontologies.
+
+py -35 i spacy-pytorch-transformers
+linguistic tokenization
+    you can relate the transformer features back to actual words, instead of just wordpieces
+
+    ewwlinks +/"linguistic tokenization" "https://explosion.ai/blog/spacy-pytorch-transformers?fbclid=IwAR13zyTaC0JRtrizwmIWrIAobpMnhqoUET6ChUy6eAENWUau8pAHZmyeJ5g"
+
+nlp.update
+    Standard training API.
+
+    ewwlinks +/"nlp.update" "https://explosion.ai/blog/spacy-pytorch-transformers?fbclid=IwAR13zyTaC0JRtrizwmIWrIAobpMnhqoUET6ChUy6eAENWUau8pAHZmyeJ5g"
+
+StringStore
+    [data type]
+
+    from spacy.strings import StringStore
+    stringstore = StringStore([u"apple", u"orange"])
+    apple_hash = stringstore[u"apple"]
+    assert apple_hash == 8566208034543834098
+    assert stringstore[apple_hash] == u"apple"
+
+Matcher
+    Kinda like regex.
+
+    vim +/"pattern = \[{\"TEXT\": \"iOS\"}, {\"IS_DIGIT\": True}\]" "$MYGIT/ines/spacy-course/exercises/solution_01_12_01.py"
+
+pipe()
+    [Matcher function]
+
+        for doc in matcher.pipe(docs, batch_size=50):
+            pass
+
+    Match a stream of documents, yielding them
+    in turn.
+
+lexeme
+    [#linguistics]
+
+    A basic lexical unit of a language,
+    consisting of one word or several words,
+    considered as an abstract unit, and
+    applied to a family of words related by
+    form or meaning.
+
+    A minimal unit (as a word or stem) in the
+    lexicon of a language.
+    
+    Example:
+    Members of the English lexeme 'go':
+    - go
+    - went
+    - gone
+    - going
+
+Lexeme
+    [#spacy]
+    [class]
+
+    has no string context
+    
+    – it’s a word type, as opposed to a word
+    token.
+    
+    Therefore:
+    - has no:
+      - part-of-speech tag,
+      - dependency parse, or
+      - lemma
+       (if lemmatization depends on the
+       part-of- speech tag).
+
+default pipeline
+    Used by the default models.
+    
+    Consists of
+    - tagger
+    - parser
+    - entity recognizer
+
+entity recognizer
+    $MYGIT/ines/spacy-course/exercises/solution_04_06.py
+
+displaCy
+    [#spaCy]
+    [dependency visualizer]
+
+    ewwlinks +/"displaCy Dependency Visualizer" "https://explosion.ai/demos/displacy"
+
+models
+    ewwlinks +/"Installation" "https://spacy.io/models/en/"
+
+    Each model may contain:
+    - coreVocabulary
+    - syntax
+    - entities
+    - vectors  
+
+similarity
+    vim +/"# Get the similarity of the spans" "$MYGIT/ines/spacy-course/exercises/solution_02_10_03.py"
+
+arc label
+dependency label
+dep
+dep_
+    https://spacy.io/usage/linguistic-features#navigating
+
+    spaCy uses the terms head and child to
+    describe the words connected by a single
+    arc in the dependency tree.
+    
+    The term dep is used for the arc label,
+    which describes the type of syntactic
+    relation that connects the child to the
+    head.
+    
+    As with other attributes, the value of
+    .dep is a hash value.
+    
+    You can get the string value with .dep_.
+
+        echo "displaCy uses JavaScript, SVG and CSS." | $HOME/scripts/displacy
+
+acceptor functions
+    - deprecated
+
+    This logic can now be handled in the
+    callback functions.
+
+hashembed
+    https://support.prodi.gy/t/can-you-explain-how-exactly-hashembed-works/564/2
+
+Entity Linking
+EL
+    Disambiguating textual entities to unique
+    identifiers in a knowledge base.
+
+Dependency Parsing
+    Assigning syntactic dependency labels,
+    describing the relations between
+    individual tokens, like subject or object.
+
+Lemmatization
+    Assigning the base forms of words.
+
+    For example, the lemma of was is be, and
+    the lemma of rats is rat.    
+
+GoldParse
+spacy.gold
+    It's outdated.
+
+    https://spacy.io/api/top-level
+    https://spacy.io/api/corpus
+
+morpheme
+    The smallest meaningful unit in a
+    language.
+    
+    A morpheme is not necessarily the same as
+    a word.
+    
+    The main difference between a morpheme and
+    a word is that a morpheme sometimes does
+    not stand alone, but a word, by
+    definition, always stands alone.
+
+    Content vs. function
+    See "content morpheme".
+    See "function morpheme".
+
+content morpheme
+    Includes the free morphemes that are
+    nouns, adverbs, adjectives, and verbs, and
+    include bound morphemes that are bound
+    roots and derivational affixes.
+
+function morpheme
+    May be of the free morphemes that are
+    prepositions, pronouns, determiners, and
+    conjunctions.
+
+Morphology
+    [CLASS]
+
+    Store the possible morphological analyses
+    for a language, and index them by hash.
+    
+    To save space on each token, tokens only
+    know the hash of their morphological
+    analysis, so queries of morphological
+    attributes are delegated to this class.
+    
+    See MorphAnalysis for the container
+    storing a single morphological analysis.
+
+entity recognizer 
+    [#spacy]
+
+    Performs NER.

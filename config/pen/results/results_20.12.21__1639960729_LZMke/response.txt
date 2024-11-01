@@ -1,0 +1,4 @@
+Last login: Thu Jan  1 00:00:00 1970 from 127.0.0.1
+shane@mele:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+shane@mele:~$ cd Desktop

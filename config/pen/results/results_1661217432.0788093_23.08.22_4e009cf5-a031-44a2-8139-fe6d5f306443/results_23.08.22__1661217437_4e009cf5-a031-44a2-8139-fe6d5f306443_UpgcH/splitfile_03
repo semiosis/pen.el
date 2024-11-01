@@ -1,0 +1,9 @@
+
+
+# ansible-playbook -i /path/to/hosts app.yml
+
+sudo(8)
+
+ssh-keygen -t rsa
+
+cat ~/.ssh/id_rsa.pub

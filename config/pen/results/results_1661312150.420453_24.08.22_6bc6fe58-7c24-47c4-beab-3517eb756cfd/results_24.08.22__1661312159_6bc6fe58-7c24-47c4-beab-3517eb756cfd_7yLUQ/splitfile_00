@@ -1,0 +1,24 @@
+
+    Facts are values that are inferred from
+    the remote system's current state or nature.
+
+    They are not declared things, but instead
+    are things that are inferred from the
+    remote system's current state or nature.
+
+Playbook
+    A playbook is a collection of tasks that
+    define a set of operations for a particular
+    purpose.
+
+    Playbooks can be as simple as a single task
+    that copies a file to a remote server, or
+    as complex as multiple tasks that perform
+    different operations on multiple systems.
+
+    Playbooks are written in YAML, and can be
+    used to specify tasks for either Ansible or
+    Ansible Tower.
+
+    A playbook is simply a list of tasks to be run,
+EOD

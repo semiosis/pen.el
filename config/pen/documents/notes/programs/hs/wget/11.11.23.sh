@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "wget" "https://raw.githubusercontent.com/vim-scripts/vimcat/master/vimcat" "#" "<==" "zsh"
+cd /root/programs;  "wget" "https://github.com/muammar/mkchromecast/releases/download/0.3.8.1/mkchromecast-alsa_0.3.8.1-1_all.deb" "#" "<==" "zsh"
+cd /root/programs;  "wget" "https://github.com/muammar/mkchromecast/releases/download/0.3.8.1/mkchromecast_0.3.8.1-1_all.deb" "#" "<==" "zsh"
+cd /root/programs;  "wget" "https://github.com/muammar/mkchromecast/releases/download/0.3.8.1/mkchromecast_0.3.8.1-1_all.deb" "#" "<==" "zsh"
+cd /root/programs;  "wget" "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6.2/task-2.6.2.tar.gz" "#" "<==" "zsh"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=lQHPHiewG2U" "#" "<==" "pen-ci"

@@ -1,0 +1,8 @@
+
+
+A transient involves a prefix command (more precisely, a
+prefix command that can repeat) and a suffix command.
+
+The prefix command can be called any way to invoke the transient:
+
+with a prefix key like C-c

@@ -1,0 +1,223 @@
+OpenCyc ontology
+OWL
+    OWL Files.
+
+    A very useful formalization of
+    foundational aspects of knowledge
+    representation.
+    
+    Concepts from the OpenCyc ontology have
+    found their way into other KRR systems,
+    for example, the SUMO upper ontology was
+    inspired by Cyc.
+    
+    An understanding of this ontology is
+    useful for anyone who wants to understand
+    knowledge representation more deeply, and
+    because systems based on it are out in the
+    field, it is relatively easy to experiment
+    with.
+    
+    Northwestern's NextKB, for example, which
+    is used in the CogSketch sketch
+    understanding system and the Case Mapper
+    analogy tool, incorporates the OpenCyc
+    ontology
+
+onology
+    There are three basic concepts you need to
+    understand to get started:
+    - Collections
+    - Predicates
+    - Microtheories
+
+    $DUMP$NOTES/ws/opencyc/IntroOpenCycOnt.txt
+
+collections
+    https://www.qrg.northwestern.edu/nextkb/IntroOpenCycOnt.pdf
+
+    Provide an engineering approximation to
+    concepts.
+    
+    There are structural relationships that
+    provide inheritance relationships between
+    concepts, and a rich vocabulary of them to
+    begin with
+
+    Roughly, a collection can be viewed as an
+    intentionally specified set.
+    
+    That is, the collection Cat includes all
+    cats that ever have been, every will be,
+    and ever could be.
+    
+    Almost no human concepts admit to a
+    precise, analytic definition (e.g.
+    
+    “A triangle is a 2D polygon that has
+    exactly three straight sides.”).
+    
+    Like words in human language, meanings are
+    constrained by the set of statements that
+    are made with them.
+    
+    This can include references to percepts,
+    e.g.
+    
+    an object ID in a vision system appearing
+    in statements is a means of perceptual
+    grounding that is available for many kinds
+    of everyday objects in today’s AI systems.
+
+    To specify that something is an instance
+    of a collection, the predicate isa is
+    used, e.g.:
+
+        (isa NeroTheCat Cat)
+
+predicates
+    Provide relations and functions to make
+    statements with.
+    
+    There are structural relationships that
+    specify inheritance and type information
+    that supports quick constraint checking,
+    and a rich vocabulary to draw upon
+
+    There are two kinds of predicates:
+    - Relations
+      Used to make statements.
+      
+      likes-Generic and isa are both examples
+      of relations.
+      
+      Statements can be true or false or
+      unknown, and have various other
+      epistemic properties
+
+    - Functions
+      Used to denote entities, e.g.  ArmyFn is
+      a function that can be used to refer to
+      specific entities, e.g.
+      
+      (ArmyFn NewZealand) refers to the New
+      Zealand Army.
+      
+      Non-atomic terms (aka NATs) are not
+      statements, but indirect ways of
+      referring to entities, perhaps very
+      abstract entities.
+
+microtheories
+    Provide a notion of context, enabling a KB
+    to embody multiple mutually incompatible
+    perspectives, alternate hypotheses, and
+    fictional worlds, as well as support fine-
+    grained control over reasoning.
+    
+    All of the knowledge in the OpenCyc
+    ontology is so contextualized.
+
+    The world is a complicated place.
+    
+    It is useful to factor knowledge when
+    reasoning.
+    
+    When playing a strategy game with a type
+    of unit called an explorer, when someone
+    says “explorer”, they are more likely to
+    be referring to that than to a Ford
+    Explorer automobile, for example.
+    
+    Being able to store knowledge in
+    partitions which can be flexibly assembled
+    as needed can help speed up reasoning by
+    eliminating the need to search through
+    irrelevant knowledge.
+    
+    Moreover, we often have to consider
+    hypothetical worlds, as when we read a
+    story, or compare and contrast conflicting
+    models, as when we generate and compare
+    alternatives during diagnosis and/or
+    design.
+    
+    The OpenCyc ontology uses microtheories
+    provide an elegant mechanism for handling
+    contexts
+
+    Not all concepts need to be consistent! A
+    microtheory is an internally consistent
+    collection of facts about a particular
+    domain.
+
+    "I believe in God."
+
+    Cyc solves contradictory beliefs and
+    assertions by using microtheories.
+
+    You have internally consistent bubbles.
+
+    Then your beliefs database as a whole may
+    contain contradictions.
+
+CycL
+CycL query language
+    CycL, the language in which Cyc (and hence
+    OpenCyc) is written.
+
+    $HOME/source/git/asanchez75/opencyc/KB+inference_engine
+
+    https://youtu.be/gD2CNI_xLNQ?t=124
+
+    Examples:
+    - "A frightened person" in CycL:
+
+        (#$and
+        (#$isa ?x #$Person)
+        
+        (#$feelsEmotion ?x #$Fear #$High))
+
+    More complex relations:
+    - Wearing the red shirt rather than a
+      green one caused the bull to charge
+      rather than ignore him.
+
+        (#$causes-Contrastive WearingARedShirt
+        WearingAGreenShirt BullCharges BullDoesNotCharge)
+
+    More examples of things Cyc knows about / can express:
+    - isa
+
+        (#$isa #$BillClinton #$UnitedStatesPresident)
+
+    - genls - Taxonomic relationship between families
+      The genus of trees is plants. This is
+      saying that All trees are plants
+
+        (#$genls #$Tree-ThePlant #$Plant) (=All trees are plants)
+
+    - capitalCity - geography
+      The capital city of france is paris.
+
+        (#$capitalCity #$France #$Paris) (=Paris is the capital of France)
+
+    - relationAllExists - relation between biologicalMother and FemaleAnimal
+      For every instance of ChordataPhylum
+      there exists a FemaleAnimal which is its
+      mother.
+
+        (#$relationAllExists #$biologicalMother #$ChordataPhylum #$FemaleAnimal)
+
+#$causes-Contrastive
+    [predicate]
+
+    a rather than b caused, otherwise
+
+    If in the first case X, if in the second
+    case Y.
+
+knowledge retrieval
+    Cyc can do this.
+
+    https://youtu.be/gD2CNI_xLNQ?t=1852

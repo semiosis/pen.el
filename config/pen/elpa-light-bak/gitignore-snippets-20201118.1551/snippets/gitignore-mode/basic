@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: Basic
+# contributor: Toptal & contributors
+# key: basic
+# --
+
+### Basic ###
+
+# Apples Build
+*.build
+*.apples
+
+# Initialized files
+*.exe
+*.ini
+*.basic

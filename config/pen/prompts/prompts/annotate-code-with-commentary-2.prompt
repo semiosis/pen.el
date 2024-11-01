@@ -1,0 +1,81 @@
+task: Annotate code with commentary
+issues:
+- It appears to not have a large effective window
+design-patterns:
+- multi-language-block
+tags: code
+doc: Given code with comments lacking, add comments to it
+prompt-version: 5
+prompt: |+
+  Annotate the following code with comments.
+
+  Code:
+  ```awk
+  BEGIN {
+      window = 4
+      slide = 2
+  }
+
+  {
+      if(NR == 1)
+          print "coord",$6,$7
+  }
+
+  (NR % slide) == 0 {
+      print NR,sum/count,sum2/count
+  }
+  ```
+  Annotated code:
+  ```awk
+  # When the program starts
+  BEGIN {
+      # Set window and slide
+      window = 4
+      slide = 2
+  }
+
+  # For each record in the file
+  {
+      # If first record, print the 6th and 7th columns
+      if(NR == 1)
+          print "coord",$6,$7
+  }
+
+  # For every slidth line
+  (NR % slide) == 0 {
+      # print the record number and averages
+      print NR,sum/count,sum2/count
+  }
+  ```
+  <delim>
+  Code:
+  ```<2>
+  <1>
+  ```
+  Annotated code:
+  ```<2>
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 2000
+top-p: 1
+stop-sequences:
+- "```"
+cache: true
+vars:
+- code
+- language
+examples:
+- 'fibs = 0 : 1 : zipWith (+) fibs (tail fibs)'
+- haskell
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+# preprocessors:
+# - pen-str onelineify
+# - cat
+# postprocessor: pen-str unonelineify
+prefer-external: true
+filter: on
+n-test-runs: 5
+related-prompts:
+- explainshell.prompt

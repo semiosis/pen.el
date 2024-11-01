@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "I" "Peter" "1-2" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "I" "Peter" "1:3-5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "I" "Peter" "1-2" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "I" "Peter" "1:3-5" "#" "<==" "zsh"
+cd /root/notes;  "I" "Peter" "1:3" "#" "<==" "zsh"
+cd /root/notes;  "I" "Peter" "1:3-5" "#" "<==" "zsh"
+cd /root/notes;  "I" "Peter" "1-2" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "I" "Timothy" "1:8-11" "#" "<==" "zsh"

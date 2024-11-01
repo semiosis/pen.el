@@ -1,0 +1,8 @@
+
+So, let's assume you have a function call "foo",
+and you've given it a keyboard shortcut,
+e.g., CTRL+X CTRL+C or META+X META+C.
+Now if you type that key binding,
+the computer will call "foo" for you.
+So, how do you quit?
+

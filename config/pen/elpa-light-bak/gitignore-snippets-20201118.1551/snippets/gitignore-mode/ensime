@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Ensime
+# contributor: Toptal & contributors
+# key: ensime
+# --
+
+### Ensime ###
+
+# Ensime specific
+.ensime
+.ensime_cache/
+.ensime_lucene/

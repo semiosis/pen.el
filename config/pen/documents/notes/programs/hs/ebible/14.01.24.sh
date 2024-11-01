@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "ebible" "-m" "NASB" "-nem" "Luke 11-15" "#" "<==" "bash"
+cd /;  "ebible" "-nbd" "-m" "NASB" "2 Timothy 1:9" "#" "<==" "sh"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "I John 3:10" "#" "<==" "I"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Acts 13:10" "#" "<==" "Acts"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Acts 13:5-12" "#" "<==" "Acts"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "John 8:44" "#" "<==" "John"

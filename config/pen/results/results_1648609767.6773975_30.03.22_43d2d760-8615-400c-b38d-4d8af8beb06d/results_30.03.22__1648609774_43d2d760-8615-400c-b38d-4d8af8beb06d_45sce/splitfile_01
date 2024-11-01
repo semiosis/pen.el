@@ -1,0 +1,3 @@
+"newtype" is a keyword to define a new type.
+"deriving" is a keyword to define how to convert a value to a string.
+"Data.Text" is a module to define a string type.

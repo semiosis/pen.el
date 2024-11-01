@@ -1,0 +1,29 @@
+Batch testing
+    A laboratory testing procedure in which
+    one test is done simultaneously on
+    multiple specimens.
+
+scientific method
+    systematic:
+    - observation
+    - measurement
+    - experiment
+
+    the
+    - formulation,
+    - testing, and
+    - modification
+    of hypotheses
+
+Nondimensionalization
+    The partial or full removal of physical
+    dimensions from an equation involving
+    physical quantities by a suitable
+    substitution of variables.
+    
+    This technique can simplify and
+    parameterize problems where measured units
+    are involved.
+    
+    It is closely related to dimensional
+    analysis.

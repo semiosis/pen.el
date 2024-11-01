@@ -1,0 +1,388 @@
+HTTP/1.1 200 OK
+Date: Wed, 26 Jun 2024 01:39:12 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-Ceression: d8b462b01585013decc272aca435eec2:
+ETag: W/"590704bc28c18c10e27fc6d895099aeb"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: csid2=6711b839bcaa02d69d65ac49d5b82822; path=/; expires=Fri, 26 Jul 2024 01:39:12 GMT; HttpOnly; secure
+Set-Cookie: _iknow_session=dSaNWIgBviRQx6RBPzdwjp4%2BPEOaYwBcoVnprk1lOr8esf300hKT4N4SDcJFaRRiDTjAzxRIxyKEtb%2FWoDB%2B%2BEghf3CkFqHq4LoIHzSKJXnWlb8LOPzz2sjpiyHYCEOEKai9tV%2BSd1yl6aPLLfuuhx3lX38kdoo6zAEi8L%2B4Tsi9Qozt4SRnzFeJzeimRSWbNoakPKCBKLUr9x88zDAvY46DJY0Qj%2Fsxn4DCyUpJlQnuqSWEli98KUJtXQJfr4q6hZ2WJakdqD8WxNzzgxdJ%2Bbv21TabqqTj58kFip8%2BQX97ReroX3yDRet8kFu6iOdn2gxYiBFu4va19l5i8TK9ZuQzWWWTHtxuwMnFUIg%2Bp4X%2FbkDeoKk7IG7RtRAnvRdZMA%3D%3D--vSl3w6AHRGbRUxQa--zBZMzIo4PqFzjUKJdLT1WA%3D%3D; path=/; expires=Wed, 10 Jul 2024 01:39:12 GMT; secure; HttpOnly
+X-Request-Id: 8d62c7787eafef8362f7d3ccb5cd915c
+X-Runtime: 0.031758
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+
+
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+
+  
+  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+  <meta charset="utf-8" />
+  <title>Guide to Japanese - iKnow!</title>
+  
+  
+  <meta name="author" content="合同会社DMM.com - https://dmm-corp.com/company/" />
+  <meta name="copyright" content="(C) 2015 DMM" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://assets2.iknow.jp/_assets/common/favicon_production-8a10a921edbc547f5c00d318eafb5e871df49e32cb3058e8e7ae6945c4622b56.ico" />
+  <link rel="alternate" hreflang="en" href="https://en.iknow.jp/guides/ja" /><link rel="alternate" hreflang="ja" href="https://ja.iknow.jp/guides/ja" />
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="nM0Rd5ukB8DmibEOprAxrcfvShFuxWpByEBgW5qpNb2K3UyqZJlfCLuQ0PdPlxvks5avqW3uMvZxcm/KH1hnwQ==" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" media="all" href="https://assets2.iknow.jp/_assets/application-24a87a967929c45ba131a0553e97110a453ce6077d4110aa83a64c715e1ec2a6.css" />
+  
+  <link rel="stylesheet" media="all" href="https://assets1.iknow.jp/_assets/admin-e427aa9c8ca7057e5764c860584fc0725b83f96154856415af56b41e3497fbfd.css" />
+
+
+  
+<script type="text/javascript">
+  (function setupEnvironment() {
+    window.App = window.App || {};
+
+    // Load initial data from server.
+    var e = {"controller":"static","namespace":"static","layout":"marketing","action":"guides","session":"logged-out","role":"user","language":"ja"};
+
+    e.isDevelopment = false;
+    e.isTest        = false;
+    e.isTesting     = false;
+    e.isStable      = false;
+    e.isProduction  = true;
+    e.assetHost     = 'assets%d.iknow.jp';
+    e.assetPath     = '/_assets';
+    e.assetCdns     = 4;
+    e.transcoderHost = 'transcode-v2.app.engoo.com';
+
+
+    e.API = e.API || {};
+
+    e.API.version = 2;
+    e.API.token   = "";
+    e.API.server  = "//api.iknow.jp/";
+    e.API.key     = "2ce3f515a02e816b2240e4f1";
+
+
+    App.Environment = e;
+  }());
+</script>
+
+
+  <script src="https://assets0.iknow.jp/_assets/jquery-migrate-ui-0590d18c976f9273027131bce660ae06ffab6be66a859ad1562ea790b2aee3b5.js"></script>
+
+    <meta content="{&quot;about a minute ago&quot;:&quot;1分前&quot;,&quot;about an hour ago&quot;:&quot;約1時間前&quot;,&quot;add at least {count} items needed to study \u0026 publish&quot;:&quot;学習を開始するには、アイテムを %{count} 個以上追加する必要があります。&quot;,&quot;add items&quot;:&quot;コレクションに入れる&quot;,&quot;add items to course&quot;:&quot;アイテムを追加する&quot;,&quot;add to courses&quot;:&quot;このコースから始める&quot;,&quot;add to focus&quot;:&quot;学習中コースに追加&quot;,&quot;advanced&quot;:&quot;上級&quot;,&quot;almost&quot;:&quot;おしい！&quot;,&quot;am&quot;:&quot;am&quot;,&quot;app-branding.sentence-trainer&quot;:&quot;Sentence Trainer&quot;,&quot;apply&quot;:&quot;実行&quot;,&quot;badge-repeat&quot;:&quot;再出題&quot;,&quot;beginner&quot;:&quot;初級&quot;,&quot;choose a course&quot;:&quot;アイテムを追加するコースを選んでください。\u003cbr /\u003e※言語が一致しないコースには追加できません。&quot;,&quot;choose-item-difficulty&quot;:&quot;学習頻度を変更できます&quot;,&quot;course-tabs.custom-courses-no-courses&quot;:&quot;カスタムコースがありません。\u003cbr/\u003e【新規作成】からカスタムコースを作成しましょう。&quot;,&quot;course-tabs.items-zone-1&quot;:&quot;あと一歩&quot;,&quot;course-tabs.items-zone-2&quot;:&quot;マスター&quot;,&quot;course-tabs.no-results&quot;:&quot;該当するコースが見つかりません。&quot;,&quot;course-tabs.now-studying-no-courses&quot;:&quot;学習したいコースを学習中コースに設定しましょう。\u003cbr/\u003e最適な学習タイミングにあるコースが\u003cbr/\u003eページ上部にある「おすすめ学習」に表示されます。&quot;,&quot;course-tabs.saved-courses-no-courses&quot;:&quot;将来的に学習したいコースの保管庫です。\u003cbr/\u003e学習中コースに入り切らなかったコースもあとで学習に入ります。&quot;,&quot;course-tabs.started&quot;:&quot;開始&quot;,&quot;course-tabs.time-studied&quot;:&quot;学習時間&quot;,&quot;create a new course&quot;:&quot;新規作成&quot;,&quot;create custom course&quot;:&quot;カスタムコースを作成する&quot;,&quot;dashboard.recommended-next&quot;:&quot;おすすめ学習&quot;,&quot;dashboard.study-progress&quot;:&quot;プログレス&quot;,&quot;dashboard_tab.custom-courses&quot;:&quot;カスタムコース&quot;,&quot;dashboard_tab.saved-courses&quot;:&quot;あとで学習&quot;,&quot;default&quot;:&quot;デフォルト&quot;,&quot;defer items&quot;:&quot;一時的に復習対象から外す&quot;,&quot;dmm-refresh.error&quot;:&quot;アカウントチェック中にエラーが起きました。しばらくたってからもう一度お試し下さい。&quot;,&quot;dmm-refresh.not-premium&quot;:&quot;DMM英会話の有料会員ではないため、iKnow! を無料でお使いいただくことが出来ません。&quot;,&quot;dmm-refresh.unexpected-error&quot;:&quot;アカウントチェック中にエラーが起きました。サポートまでお問い合わせ下さい。&quot;,&quot;do you know this word?&quot;:&quot;このアイテムを知っていますか？&quot;,&quot;don&#39;t know&quot;:&quot;わからない&quot;,&quot;dont-know&quot;:&quot;知らない&quot;,&quot;dont-know-review&quot;:&quot;忘れた&quot;,&quot;easy&quot;:&quot;減らす&quot;,&quot;enter&quot;:&quot;決定&quot;,&quot;filter items&quot;:&quot;アイテムを検索&quot;,&quot;focused-courses&quot;:&quot;学習中コース&quot;,&quot;growl-message.all-series-courses-focused&quot;:&quot;このシリーズは全てのコースが学習中コースに追加されました&quot;,&quot;growl-message.all-series-courses-focused-error&quot;:&quot;コース追加中にエラーが起きました。もう一度お試しください。&quot;,&quot;growl-message.goal-enroll-error&quot;:&quot;コースの保存に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.goal-focus-error&quot;:&quot;コースの追加に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.goal-unenroll-error&quot;:&quot;コースの削除に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.goal-unfocus-error&quot;:&quot;コースの削除に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.unexpected-error&quot;:&quot;エラーが発生しました。もう一度やり直してください。&quot;,&quot;hard&quot;:&quot;増やす&quot;,&quot;hours ago&quot;:&quot;%{hours}時間前&quot;,&quot;iknow.label&quot;:&quot;iKnow!&quot;,&quot;intermediate&quot;:&quot;中級&quot;,&quot;items added to goal&quot;:&quot;アイテムを追加しています&quot;,&quot;items-label&quot;:&quot;アイテム：&quot;,&quot;items-mastered&quot;:&quot;マスター&quot;,&quot;items-started&quot;:&quot;開始&quot;,&quot;items-zone-1&quot;:&quot;あと一歩&quot;,&quot;js_iknow.annotations&quot;:&quot;注釈&quot;,&quot;js_iknow.new item&quot;:&quot;新規&quot;,&quot;js_iknow.next&quot;:&quot;次へ&quot;,&quot;js_iknow.no&quot;:&quot;いいえ&quot;,&quot;js_iknow.remove&quot;:&quot;学習から外す&quot;,&quot;js_iknow.review&quot;:&quot;復習&quot;,&quot;js_iknow.well done!&quot;:&quot;正解！&quot;,&quot;js_iknow.yes&quot;:&quot;はい&quot;,&quot;language-display-aa&quot;:&quot;アファル語&quot;,&quot;language-display-ab&quot;:&quot;アブハズ語&quot;,&quot;language-display-ae&quot;:&quot;アヴェスター語&quot;,&quot;language-display-af&quot;:&quot;アフリカーンス語&quot;,&quot;language-display-ain&quot;:&quot;アイヌ語&quot;,&quot;language-display-ak&quot;:&quot;アカン語&quot;,&quot;language-display-am&quot;:&quot;アムハラ語&quot;,&quot;language-display-an&quot;:&quot;アラゴン語&quot;,&quot;language-display-ang&quot;:&quot;古英語&quot;,&quot;language-display-ar&quot;:&quot;アラビア語&quot;,&quot;language-display-arc&quot;:&quot;アラム語&quot;,&quot;language-display-as&quot;:&quot;アッサム語&quot;,&quot;language-display-ast&quot;:&quot;アストゥリア語&quot;,&quot;language-display-av&quot;:&quot;アヴァール語&quot;,&quot;language-display-ay&quot;:&quot;アイマラ語&quot;,&quot;language-display-az&quot;:&quot;アゼルバイジャン語&quot;,&quot;language-display-ba&quot;:&quot;バシキール語&quot;,&quot;language-display-be&quot;:&quot;ベラルーシ語&quot;,&quot;language-display-bg&quot;:&quot;ブルガリア語&quot;,&quot;language-display-bi&quot;:&quot;ビスラマ語&quot;,&quot;language-display-bm&quot;:&quot;バンバラ語&quot;,&quot;language-display-bn&quot;:&quot;ベンガル語&quot;,&quot;language-display-bo&quot;:&quot;チベット語&quot;,&quot;language-display-br&quot;:&quot;ブルトン語&quot;,&quot;language-display-bs&quot;:&quot;ボスニア語&quot;,&quot;language-display-ca&quot;:&quot;カタルーニャ語&quot;,&quot;language-display-ce&quot;:&quot;チェチェン語&quot;,&quot;language-display-ch&quot;:&quot;チャモロ語&quot;,&quot;language-display-co&quot;:&quot;コルシカ語&quot;,&quot;language-display-cr&quot;:&quot;クリー語&quot;,&quot;language-display-cs&quot;:&quot;チェコ語&quot;,&quot;language-display-cu&quot;:&quot;古代教会スラヴ語&quot;,&quot;language-display-cv&quot;:&quot;チュヴァシ語&quot;,&quot;language-display-cy&quot;:&quot;ウェルシュ語&quot;,&quot;language-display-da&quot;:&quot;デンマーク語&quot;,&quot;language-display-de&quot;:&quot;ドイツ語&quot;,&quot;language-display-dv&quot;:&quot;ディベヒ語&quot;,&quot;language-display-dz&quot;:&quot;ゾンカ語&quot;,&quot;language-display-ee&quot;:&quot;エウェ語&quot;,&quot;language-display-egy&quot;:&quot;エジプト語&quot;,&quot;language-display-el&quot;:&quot;ギリシャ語&quot;,&quot;language-display-en&quot;:&quot;英語&quot;,&quot;language-display-enm&quot;:&quot;中英語&quot;,&quot;language-display-eo&quot;:&quot;エスペラント&quot;,&quot;language-display-es&quot;:&quot;スペイン語&quot;,&quot;language-display-et&quot;:&quot;エストニア語&quot;,&quot;language-display-eu&quot;:&quot;バスク語&quot;,&quot;language-display-fa&quot;:&quot;ペルシャ語&quot;,&quot;language-display-ff&quot;:&quot;フラ語&quot;,&quot;language-display-fi&quot;:&quot;フィンランド語&quot;,&quot;language-display-fj&quot;:&quot;フィジー語&quot;,&quot;language-display-fo&quot;:&quot;フェロー語&quot;,&quot;language-display-fr&quot;:&quot;フランス語&quot;,&quot;language-display-fy&quot;:&quot;フリジア語&quot;,&quot;language-display-ga&quot;:&quot;アイルランド語&quot;,&quot;language-display-gd&quot;:&quot;スコットランド・ゲール語&quot;,&quot;language-display-gl&quot;:&quot;ガリシア語&quot;,&quot;language-display-gn&quot;:&quot;グアラニー語&quot;,&quot;language-display-grc&quot;:&quot;古典ギリシア語&quot;,&quot;language-display-gu&quot;:&quot;グジャラート語&quot;,&quot;language-display-gv&quot;:&quot;マン島語&quot;,&quot;language-display-ha&quot;:&quot;ハウサ語&quot;,&quot;language-display-haw&quot;:&quot;ハワイ語&quot;,&quot;language-display-he&quot;:&quot;ヘブライ語&quot;,&quot;language-display-hi&quot;:&quot;ヒンディー語&quot;,&quot;language-display-hit&quot;:&quot;ヒッタイト語&quot;,&quot;language-display-ho&quot;:&quot;ヒリモトゥ語&quot;,&quot;language-display-hr&quot;:&quot;クロアチア語&quot;,&quot;language-display-ht&quot;:&quot;ハイチクレオール語&quot;,&quot;language-display-hu&quot;:&quot;ハンガリー語&quot;,&quot;language-display-hy&quot;:&quot;アルメニア語&quot;,&quot;language-display-hz&quot;:&quot;ヘレロ語&quot;,&quot;language-display-ia&quot;:&quot;インターリングア&quot;,&quot;language-display-id&quot;:&quot;インドネシア語&quot;,&quot;language-display-ig&quot;:&quot;イボ語&quot;,&quot;language-display-ii&quot;:&quot;ロロ語&quot;,&quot;language-display-ik&quot;:&quot;イヌピア語&quot;,&quot;language-display-io&quot;:&quot;イド語&quot;,&quot;language-display-is&quot;:&quot;アイスランド語&quot;,&quot;language-display-it&quot;:&quot;イタリア語&quot;,&quot;language-display-iu&quot;:&quot;イヌイット語&quot;,&quot;language-display-ja&quot;:&quot;日本語&quot;,&quot;language-display-jbo&quot;:&quot;ロジバン&quot;,&quot;language-display-jv&quot;:&quot;ジャワ語&quot;,&quot;language-display-ka&quot;:&quot;グルジア語&quot;,&quot;language-display-kg&quot;:&quot;コンゴ語&quot;,&quot;language-display-ki&quot;:&quot;キクユ語&quot;,&quot;language-display-kj&quot;:&quot;クワンヤマ語&quot;,&quot;language-display-kk&quot;:&quot;カザフ語&quot;,&quot;language-display-kl&quot;:&quot;グリーンランド語&quot;,&quot;language-display-km&quot;:&quot;クメール語&quot;,&quot;language-display-kn&quot;:&quot;カンナダ語&quot;,&quot;language-display-ko&quot;:&quot;韓国語&quot;,&quot;language-display-kr&quot;:&quot;カヌリ語&quot;,&quot;language-display-ks&quot;:&quot;カシミール語&quot;,&quot;language-display-ku&quot;:&quot;クルド語&quot;,&quot;language-display-kv&quot;:&quot;コミ語&quot;,&quot;language-display-kw&quot;:&quot;コーンウォール語&quot;,&quot;language-display-ky&quot;:&quot;キルギス語&quot;,&quot;language-display-la&quot;:&quot;ラテン語&quot;,&quot;language-display-lb&quot;:&quot;ルクセンブルク語&quot;,&quot;language-display-lg&quot;:&quot;ガンダ語&quot;,&quot;language-display-li&quot;:&quot;リンブルフ語&quot;,&quot;language-display-ln&quot;:&quot;リンガラ語&quot;,&quot;language-display-lo&quot;:&quot;ラーオ語&quot;,&quot;language-display-lt&quot;:&quot;リトアニア語&quot;,&quot;language-display-lu&quot;:&quot;ルバ語&quot;,&quot;language-display-lv&quot;:&quot;ラトビア語&quot;,&quot;language-display-mg&quot;:&quot;マダガスカル語&quot;,&quot;language-display-mh&quot;:&quot;マーシャル語&quot;,&quot;language-display-mi&quot;:&quot;マオリ語&quot;,&quot;language-display-mk&quot;:&quot;マケドニア語&quot;,&quot;language-display-ml&quot;:&quot;マラヤーラム語&quot;,&quot;language-display-mn&quot;:&quot;モンゴル語&quot;,&quot;language-display-mo&quot;:&quot;モルダビア語&quot;,&quot;language-display-mr&quot;:&quot;マラッタ語&quot;,&quot;language-display-ms&quot;:&quot;マレー語&quot;,&quot;language-display-mt&quot;:&quot;マルタ語&quot;,&quot;language-display-my&quot;:&quot;ビルマ語&quot;,&quot;language-display-na&quot;:&quot;ナウル語&quot;,&quot;language-display-nd&quot;:&quot;北ンデベレ語&quot;,&quot;language-display-ne&quot;:&quot;ネパール語&quot;,&quot;language-display-ng&quot;:&quot;ンドンガ語&quot;,&quot;language-display-nl&quot;:&quot;オランダ語&quot;,&quot;language-display-no&quot;:&quot;ノルウェー語&quot;,&quot;language-display-nr&quot;:&quot;南ンデベレ語&quot;,&quot;language-display-nv&quot;:&quot;ナヴァホ語&quot;,&quot;language-display-ny&quot;:&quot;チェワ語&quot;,&quot;language-display-oc&quot;:&quot;オック語&quot;,&quot;language-display-och&quot;:&quot;古文 (中国語）&quot;,&quot;language-display-oj&quot;:&quot;オジブワ語&quot;,&quot;language-display-ojp&quot;:&quot;古文 (日本語）&quot;,&quot;language-display-om&quot;:&quot;オロモ語&quot;,&quot;language-display-or&quot;:&quot;オリヤー語&quot;,&quot;language-display-os&quot;:&quot;オセット語&quot;,&quot;language-display-pa&quot;:&quot;パンジャーブ語&quot;,&quot;language-display-pl&quot;:&quot;ポーランド語&quot;,&quot;language-display-ps&quot;:&quot;パシュトー語&quot;,&quot;language-display-pt&quot;:&quot;ポルトガル語&quot;,&quot;language-display-qu&quot;:&quot;ケチュア語&quot;,&quot;language-display-qya&quot;:&quot;クウェンヤ&quot;,&quot;language-display-rm&quot;:&quot;レト・ロマン語&quot;,&quot;language-display-rn&quot;:&quot;ルンディ語&quot;,&quot;language-display-ro&quot;:&quot;ルーマニア語&quot;,&quot;language-display-ru&quot;:&quot;ロシア語&quot;,&quot;language-display-rw&quot;:&quot;キンヤルワンダ語&quot;,&quot;language-display-sa&quot;:&quot;サンスクリット&quot;,&quot;language-display-sc&quot;:&quot;サルデーニャ語&quot;,&quot;language-display-sd&quot;:&quot;シンディー語&quot;,&quot;language-display-se&quot;:&quot;サモス語&quot;,&quot;language-display-sg&quot;:&quot;サンゴ語&quot;,&quot;language-display-si&quot;:&quot;シンハラ語&quot;,&quot;language-display-sjn&quot;:&quot;シンダール語&quot;,&quot;language-display-sk&quot;:&quot;スロバキア語&quot;,&quot;language-display-sl&quot;:&quot;スロベニア語&quot;,&quot;language-display-sm&quot;:&quot;サモア語&quot;,&quot;language-display-sn&quot;:&quot;ショナ語&quot;,&quot;language-display-so&quot;:&quot;ソマリ語&quot;,&quot;language-display-sq&quot;:&quot;アルバニア語&quot;,&quot;language-display-sr&quot;:&quot;セルビア語&quot;,&quot;language-display-ss&quot;:&quot;スワージ語&quot;,&quot;language-display-st&quot;:&quot;南ソト語&quot;,&quot;language-display-su&quot;:&quot;スンダ語&quot;,&quot;language-display-sv&quot;:&quot;スウェーデン語&quot;,&quot;language-display-sw&quot;:&quot;スワヒリ語&quot;,&quot;language-display-ta&quot;:&quot;タミル語&quot;,&quot;language-display-te&quot;:&quot;テルグ語&quot;,&quot;language-display-tg&quot;:&quot;タジク語&quot;,&quot;language-display-th&quot;:&quot;タイ語&quot;,&quot;language-display-ti&quot;:&quot;タジク語&quot;,&quot;language-display-tk&quot;:&quot;トルクメン語&quot;,&quot;language-display-tl&quot;:&quot;タガログ語&quot;,&quot;language-display-tlh&quot;:&quot;クリンゴン語&quot;,&quot;language-display-tn&quot;:&quot;ツワナ語&quot;,&quot;language-display-to&quot;:&quot;トンガ語&quot;,&quot;language-display-tr&quot;:&quot;トルコ語&quot;,&quot;language-display-ts&quot;:&quot;ツォンガ語&quot;,&quot;language-display-tt&quot;:&quot;タタール語&quot;,&quot;language-display-tw&quot;:&quot;トウィ語&quot;,&quot;language-display-txb&quot;:&quot;トカラ語 (西)&quot;,&quot;language-display-ty&quot;:&quot;タヒチ語&quot;,&quot;language-display-ug&quot;:&quot;ウイグル語&quot;,&quot;language-display-uk&quot;:&quot;ウクライナ語&quot;,&quot;language-display-ur&quot;:&quot;ウルドゥー語&quot;,&quot;language-display-uz&quot;:&quot;ウズベク語&quot;,&quot;language-display-ve&quot;:&quot;ベンダ語&quot;,&quot;language-display-vec&quot;:&quot;ヴェネツィア語&quot;,&quot;language-display-vi&quot;:&quot;ベトナム語&quot;,&quot;language-display-vo&quot;:&quot;ヴォラピュク&quot;,&quot;language-display-wa&quot;:&quot;ワロン語&quot;,&quot;language-display-wo&quot;:&quot;ウォロフ語&quot;,&quot;language-display-xh&quot;:&quot;コサ語&quot;,&quot;language-display-xto&quot;:&quot;トカラ語 (東)&quot;,&quot;language-display-yi&quot;:&quot;イディッシュ語&quot;,&quot;language-display-za&quot;:&quot;チワン語&quot;,&quot;language-display-zh-hans&quot;:&quot;中国語（簡）&quot;,&quot;language-display-zh-hant&quot;:&quot;中国語（繁）&quot;,&quot;language-display-zh-hk&quot;:&quot;広東語&quot;,&quot;language-display-zh-tw&quot;:&quot;台湾語&quot;,&quot;language-display-zu&quot;:&quot;ズールー語&quot;,&quot;language-label&quot;:&quot;言語：&quot;,&quot;launch&quot;:&quot;start&quot;,&quot;less than a minute ago&quot;:&quot;1分以内&quot;,&quot;level-label&quot;:&quot;レベル：&quot;,&quot;lower intermediate&quot;:&quot;初中級&quot;,&quot;mark-as-incorrect&quot;:&quot;不正解にする&quot;,&quot;master items&quot;:&quot;マスターアイテムにする&quot;,&quot;minutes ago&quot;:&quot;%{minutes}分前&quot;,&quot;mistakes&quot;:&quot;不正解&quot;,&quot;move-to-now-studying&quot;:&quot;学習中コースに追加&quot;,&quot;move-to-saved&quot;:&quot;あとで学習に追加&quot;,&quot;next-study-time&quot;:&quot;次回の学習&quot;,&quot;not-started&quot;:&quot;開始前&quot;,&quot;not-well&quot;:&quot;よく知らない&quot;,&quot;not-well-review&quot;:&quot;あまり覚えてない&quot;,&quot;note&quot;:&quot;注釈&quot;,&quot;now&quot;:&quot;今がオススメ&quot;,&quot;now you say it&quot;:&quot;音声に合わせて発音しましょう&quot;,&quot;ok&quot;:&quot;決定&quot;,&quot;on this date at&quot;:&quot;%{month}%{date}日 %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;on this date with year at&quot;:&quot;%{year}年%{month}%{date}日 %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;over a year from now&quot;:&quot;1年後&quot;,&quot;play audio&quot;:&quot;音声再生&quot;,&quot;pm&quot;:&quot;pm&quot;,&quot;pos.adjectival noun&quot;:&quot;形容動詞&quot;,&quot;pos.adjective&quot;:&quot;形容詞&quot;,&quot;pos.adverb&quot;:&quot;副詞&quot;,&quot;pos.auxiliary verb&quot;:&quot;助動詞&quot;,&quot;pos.conjunction&quot;:&quot;接続詞&quot;,&quot;pos.determiner&quot;:&quot;限定詞&quot;,&quot;pos.interjection&quot;:&quot;感動詞&quot;,&quot;pos.interrogative&quot;:&quot;疑問詞&quot;,&quot;pos.kana&quot;:&quot;かな&quot;,&quot;pos.none&quot;:&quot;--&quot;,&quot;pos.noun&quot;:&quot;名詞&quot;,&quot;pos.noun abbreviation&quot;:&quot;略語&quot;,&quot;pos.particle&quot;:&quot;その他（冠詞、助詞など）&quot;,&quot;pos.phrasal verb&quot;:&quot;句動詞&quot;,&quot;pos.phrase&quot;:&quot;熟語&quot;,&quot;pos.prefix&quot;:&quot;接頭辞&quot;,&quot;pos.preposition&quot;:&quot;前置詞&quot;,&quot;pos.pronoun&quot;:&quot;代名詞&quot;,&quot;pos.proper noun&quot;:&quot;固有名詞&quot;,&quot;pos.suffix&quot;:&quot;接尾辞&quot;,&quot;pos.verb&quot;:&quot;動詞&quot;,&quot;pos.verbal noun&quot;:&quot;サ変接続&quot;,&quot;prompt-new&quot;:&quot;このアイテムを知っていますか？&quot;,&quot;prompt-repeat&quot;:&quot;再出題です。覚えていますか？&quot;,&quot;prompt-review&quot;:&quot;このアイテムを覚えていますか？&quot;,&quot;radial-progress.level&quot;:&quot;レベル&quot;,&quot;ready-label&quot;:&quot;要復習：&quot;,&quot;remove-from-saved&quot;:&quot;あとで学習から削除&quot;,&quot;remove-from-studying&quot;:&quot;学習中コースから削除&quot;,&quot;reset items&quot;:&quot;プログレスをリセットする&quot;,&quot;response&quot;:&quot;レスポンス（アイテムの訳）&quot;,&quot;save-for-later&quot;:&quot;あとで学習に追加&quot;,&quot;search-courses-by-title&quot;:&quot;コース名で検索&quot;,&quot;self-assessment.check&quot;:&quot;診断する&quot;,&quot;sentence-builder-quiz-instructions&quot;:&quot;単語を正しい順番にクリック、もしくはドラッグして、文章を完成させましょう。&quot;,&quot;sentence-builder-recall-listening-instructions&quot;:&quot;英文を聞いて、次の画面で文章を組み立てる準備をしましょう。&quot;,&quot;sentence-builder-recall-reading-instructions&quot;:&quot;文章を読んで、英語ではどのように言うか、考えましょう。&quot;,&quot;sentences&quot;:&quot;センテンス&quot;,&quot;sentences-label&quot;:&quot;センテンス：&quot;,&quot;series-label&quot;:&quot;シリーズ：&quot;,&quot;settings.label&quot;:&quot;設定&quot;,&quot;show-hint&quot;:&quot;ヒントを表示&quot;,&quot;skip items&quot;:&quot;学習対象から外す&quot;,&quot;sort by&quot;:&quot;並び替え&quot;,&quot;sort-by&quot;:&quot;並び替え&quot;,&quot;sort.cue&quot;:&quot;アイテム&quot;,&quot;sort.part of speech&quot;:&quot;品詞&quot;,&quot;sort.recommended&quot;:&quot;おすすめ順&quot;,&quot;spelling&quot;:&quot;スペル練習&quot;,&quot;start&quot;:&quot;スタート&quot;,&quot;stroke order&quot;:&quot;書き順&quot;,&quot;study progress&quot;:&quot;プログレス順&quot;,&quot;study-all.label&quot;:&quot;まとめて学習&quot;,&quot;study-more-less-dialogue-description&quot;:&quot;「増やす」「減らす」のボタンで、アイテムの学習頻度を調整できます。「増やす」を選ぶと復習のタイミングが早まり、「減らす」を選ぶと次回出題されるまでのインターバルが長くなります。\u003cbr\u003e\u003cbr\u003eあなたの学習効率を高めるための機能ですので、必ず毎回クリックする必要はありません。&quot;,&quot;study-more-less-dialogue-header&quot;:&quot;学習頻度&quot;,&quot;study-progress.items-started&quot;:&quot;合計&quot;,&quot;study-progress.items-zone-0&quot;:&quot;まだまだ&quot;,&quot;study-progress.items-zone-1&quot;:&quot;あと一歩&quot;,&quot;study-progress.items-zone-2&quot;:&quot;マスター&quot;,&quot;study-progress.label&quot;:&quot;プログレス&quot;,&quot;study-time.header&quot;:&quot;学習時間&quot;,&quot;study-time.items&quot;:&quot;iKnow!&quot;,&quot;study-time.sentences&quot;:&quot;Sentence Trainer&quot;,&quot;study-time.total&quot;:&quot;合計&quot;,&quot;this week at&quot;:&quot;%{weekday} %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;too bad!&quot;:&quot;不正解！&quot;,&quot;unskip&quot;:&quot;学習対象に戻す&quot;,&quot;upper intermediate&quot;:&quot;中上級&quot;,&quot;users-label&quot;:&quot;ユーザー数：&quot;,&quot;very-well&quot;:&quot;よく知っている&quot;,&quot;very-well-review&quot;:&quot;よく覚えている&quot;,&quot;weak-items&quot;:&quot;要復習：&quot;,&quot;well&quot;:&quot;知っている&quot;,&quot;well-review&quot;:&quot;覚えている&quot;,&quot;yesterday at&quot;:&quot;昨日 %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;you have no custom courses to add items&quot;:&quot;アイテムを追加するコースがないか、言語が一致するコースがありません。\u003cbr/\u003e追加するにはカスタムコースを作成してください。&quot;,&quot;{time} days from now&quot;:&quot;%{time}日後&quot;,&quot;{time} hours from now&quot;:&quot;%{time}時間後&quot;,&quot;{time} minutes from now&quot;:&quot;%{time} 分後&quot;,&quot;{time} months from now&quot;:&quot;%{time}ヶ月後&quot;,&quot;{time} weeks from now&quot;:&quot;%{time}週間後&quot;,&quot;january [month]&quot;:&quot;1月&quot;,&quot;february [month]&quot;:&quot;2月&quot;,&quot;march [month]&quot;:&quot;3月&quot;,&quot;april [month]&quot;:&quot;4月&quot;,&quot;may [month]&quot;:&quot;5月&quot;,&quot;june [month]&quot;:&quot;6月&quot;,&quot;july [month]&quot;:&quot;7月&quot;,&quot;august [month]&quot;:&quot;8月&quot;,&quot;september [month]&quot;:&quot;9月&quot;,&quot;october [month]&quot;:&quot;10月&quot;,&quot;november [month]&quot;:&quot;11月&quot;,&quot;december [month]&quot;:&quot;12月&quot;,&quot;sunday [weekday]&quot;:&quot;日曜日&quot;,&quot;monday [weekday]&quot;:&quot;月曜日&quot;,&quot;tuesday [weekday]&quot;:&quot;火曜日&quot;,&quot;wednesday [weekday]&quot;:&quot;水曜日&quot;,&quot;thursday [weekday]&quot;:&quot;木曜日&quot;,&quot;friday [weekday]&quot;:&quot;金曜日&quot;,&quot;saturday [weekday]&quot;:&quot;土曜日&quot;,&quot;achievements.study-time&quot;:&quot;達成率&quot;,&quot;achievements.items-completed&quot;:&quot;達成率&quot;,&quot;achievements.weekly-target&quot;:&quot;達成率&quot;,&quot;achievements.share-items-completed-{count}&quot;:&quot;アチーブメント獲得！%{count}アイテムをマスターしました - iKnow!&quot;,&quot;achievements.share-weekly-target-{count}&quot;:&quot;アチーブメント獲得！週間ターゲットを%{count}回クリアしました - iKnow!&quot;,&quot;achievements.share-study-time-{count}&quot;:&quot;アチーブメント獲得！%{count}時間学習しました - iKnow!&quot;,&quot;items added.&quot;:&quot;アイテムを追加しました。&quot;,&quot;added items to collected set.&quot;:&quot;アイテムをマイコレクションに入れました。&quot;,&quot;unskipped items.&quot;:&quot;学習対象に戻しました&quot;,&quot;skipped items.&quot;:&quot;学習対象から外しました&quot;,&quot;do you really want to remove all progress on the selected items?&quot;:&quot;選択したアイテムの学習データがリセットされますが、よろしいですか？&quot;,&quot;do you really want to mark selected items as mastered?&quot;:&quot;プログレスを100％に設定し、完了アイテムに入れますか？&quot;,&quot;items marked as completed.&quot;:&quot;完了アイテムとして設定されました&quot;,&quot;items progress deleted.&quot;:&quot;アイテムの学習データがリセットされました&quot;,&quot;you must be logged in to do that.&quot;:&quot;ログインが必要です。&quot;,&quot;register to see more&quot;:&quot;新規登録はこちら&quot;,&quot;js_templates.sentences&quot;:&quot;センテンス&quot;,&quot;js_templates.delete&quot;:&quot;削除&quot;,&quot;edit&quot;:&quot;編集&quot;,&quot;add sentence&quot;:&quot;センテンス追加&quot;,&quot;error.label&quot;:&quot;エラー&quot;,&quot;review items&quot;:&quot;復習アイテム&quot;,&quot;started items&quot;:&quot;開始アイテム&quot;,&quot;completed items&quot;:&quot;マスターアイテム&quot;,&quot;study time&quot;:&quot;学習時間&quot;,&quot;listening&quot;:&quot;センテンス&quot;,&quot;speaking&quot;:&quot;スピーキング&quot;,&quot;browser-close-unsaveable&quot;:&quot;このウィンドウを閉じると、学習データは保存されません。&quot;,&quot;{month} {day}{suffix}, {year}&quot;:&quot;translation missing: ja.{month} {day}{suffix}, {year}&quot;,&quot;{sec}s&quot;:&quot;%{sec}秒&quot;,&quot;{min}m {sec}s&quot;:&quot;%{min}\u003cspan\u003em\u003c/span\u003e %{sec}\u003cspan\u003es\u003c/span\u003e&quot;,&quot;{min}m&quot;:&quot;%{min}\u003cspan\u003em\u003c/span\u003e&quot;,&quot;{hour}h {min}m&quot;:&quot;%{hour}\u003cspan\u003eh\u003c/span\u003e%{min}\u003cspan\u003em\u003c/span\u003e&quot;,&quot;{hour}h&quot;:&quot;%{hour}h&quot;,&quot;{sec} sec&quot;:&quot;%{sec} s&quot;,&quot;{min} min&quot;:&quot;%{min} \u003cspan\u003emin\u003c/span\u003e&quot;,&quot;{hour} hour&quot;:&quot;%{hour} \u003cspan\u003ehour\u003c/span\u003e&quot;,&quot;{sec} second&quot;:&quot;%{sec}\u003cspan\u003esecond\u003c/span\u003e&quot;,&quot;{sec} seconds&quot;:&quot;%{sec}\u003cspan\u003eseconds\u003c/span\u003e&quot;,&quot;{min} min {sec} sec&quot;:&quot;%{min} min %{sec} sec&quot;,&quot;{min} minute&quot;:&quot;%{min} \u003cspan\u003eminute\u003c/span\u003e&quot;,&quot;{min} minutes&quot;:&quot;%{min} \u003cspan\u003eminutes\u003c/span\u003e&quot;,&quot;{hour} hour {min} min&quot;:&quot;%{hour} \u003cspan\u003ehour\u003c/span\u003e %{min} \u003cspan\u003emin\u003c/span\u003e&quot;,&quot;{hour} hours {min} min&quot;:&quot;%{hour} \u003cspan\u003e時間\u003c/span\u003e %{min} \u003cspan\u003e分\u003c/span\u003e&quot;,&quot;add&quot;:&quot;追加する&quot;,&quot;remove&quot;:&quot;削除&quot;,&quot;update&quot;:&quot;更新&quot;,&quot;cancel&quot;:&quot;キャンセル&quot;,&quot;cue&quot;:&quot;アイテム（単語またはフレーズ）&quot;,&quot;transliteration&quot;:&quot;音訳&quot;,&quot;part of speech&quot;:&quot;品詞&quot;,&quot;you can confirm/edit auto-generated sound after added this item&quot;:&quot;※音声の確認・編集は「追加する」をクリックしてから行えます。&quot;,&quot;exceeded recommended length&quot;:&quot;文字数制限を超えています&quot;,&quot;file upload failed&quot;:&quot;アップロードに失敗しました。\nファイルサイズとファイル形式を確認してください。&quot;}" id="iknow-strings">
+
+
+  
+      <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments) ;}
+    gtag('set', {
+      'i3_p_page_type': 'other',
+      'i3_p_env': 'production',
+    });
+    </script>
+
+      <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PLC9LTZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PLC9LTZ');</script>
+    <!-- End Google Tag Manager -->
+
+  
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      try {
+      var pageTracker = _gat._getTracker('UA-20259286-1');
+      pageTracker._setDomainName("none");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+      } catch(err) {}
+      //--><!]]>
+      </script>
+
+
+
+
+      <script type="text/javascript">
+      $(function() {
+        var time_stamp = Math.round(+new Date()/1000);
+      $.cookie('nru_tracking', time_stamp+";"+"ja"+";"+"/guides/ja",{ expires: 730, path: '/' });
+      });
+    </script>
+
+
+</head>
+
+
+  <body data-controller="static" data-namespace="static" data-layout="marketing" data-action="guides" data-session="logged-out" data-role="user" data-language="ja" class="static guides ja  marketing_layout logged_out">
+    
+    
+    <div id="site_notice"></div>
+
+    <nav class="marketing_navi">
+  <section class='fixed-container'>
+    <div id="header-bg" class="hidden"></div>
+    <div class="container_12">
+      <h1 class="logo icon">
+        <a href="/">iKnow!</a>
+      </h1>
+      <div class="top_links">
+          <li><a class="locale inside menu-item item-language" rel="nofollow" data-method="put" href="/locale?language_code=en">English</a></li>
+
+        <a class="signup_link" href="/signup">フリートライアル！</a>
+        <a class="business" href="/business">ビジネスパートナー</a>
+        <a class="facebook" href="https://facebook.com/iKnowJP">
+          <img src="https://assets0.iknow.jp/_assets/id_providers/new/facebook-a626f4f5389dece34d02ead0afa93af16a4a391cdd9ccebdf46db615523d1089.png" />
+</a>        <a class="twitter" href="http://twitter.com/iKnowJP">
+          <img src="https://assets1.iknow.jp/_assets/id_providers/new/twitter-c2003dfab3e9c70d2b52839c8f36fef20e9f5db2c9c22f7eb9109a9d5faa9467.png" />
+</a>      </div>
+      <ul class="top_inner_links">
+            <li><a href="https://iknow.jp/">iKnow! について</a></li>
+            <li><a href="/login">ログイン</a></li>
+      </ul>
+    </div>
+  </section>
+</nav>
+
+    
+    <div class="container_12">
+      <div class="content">
+        <div class="wrapper clearfix ">
+          <link rel="stylesheet" media="screen" href="https://assets0.iknow.jp/_assets/guides-3cbfb9f0174c3bfeefbe1fe33ceb9e8a342bf0451c897f3c3d01a1e1782b5a31.css" />
+<div class="grid_12">
+  <div class="inner guide">
+
+    <article class="policy_wrap"><h2>Guide to Japanese</h2>
+  <p>The following guide is designed to help you input Japanese in the iKnow! app.</p>
+  <h3>Romaji, hiragana, and katakana</h3>
+  <p>The Japanese written language uses two phonetic systems, hiragana and katakana, and one character-based system, kanji.</p>
+  <p>Hiragana is used primarily to write words native to Japanese, while katakana is used to represent words borrowed from Western languages. Romaji is the system that is used to represent both hiragana and katakana in the roman alphabet, but you usually will only see romaji in Japanese textbooks.</p>
+  <p>The first step to learn Japanese is to learn hiragana and katakana. Fortunately you can learn these easily with the iKnow! <a href="/content/japanese/series/3322">Hiragana and Katakana courses</a>.</p>
+  <h3>Japanese input</h3>
+  <p>In iKnow!, we follow the same conventions that Japanese word processing systems use when it comes to typing Japanese. Inputting Japanese on a word processor has a few quirks. The reason for these is that some letters, such as "o", have two distinct symbols in hiragana (を and お) and certain sounds aren't represented by any one key on a standard English keyboard.</p>
+  <p>The following is a guide to the most troublesome aspects of inputting Japanese with a computer. </p>
+  <h3>Long vowels</h3>
+  <p>To lengthen an o or u sound, type &lsquo;u&rsquo;:<br />
+    <br />
+    くう (kū ) → kuu <br />
+    じゅう (jū) → juu<br />
+    きょう (kyō) → kyou<br />
+    <br />
+    To lengthen other vowels, just repeat the vowel: <br />
+    <br />
+    きい (kii) → kii<br />
+    おばあさん (obaasan) → obaasan</p>
+  <p>The exception is え which takes an &lsquo;i&rsquo; to lengthen: <br />
+    <br />
+    えい→ ei<br />
+    <br />
+    In katakana, always use a dash to lengthen any vowel:</p>
+  <p>テーブル→ te-buru<br />
+    <h3>Typing ん</h3>
+    Type &lsquo;nn' if the んis at the end of the word, or the next character is a vowel:<br />
+    <br />
+    じかん → jikann　<br />
+    でんあつ→ dennatsu &nbsp;<br />
+    (Typing denatsu would convert to でなつ.) <br />
+    <h3>Typingづ</h3>
+    Type &lsquo;du&rsquo; to produce the づ in つづく.<br />
+    <h3>Typing を</h3>
+    Type &lsquo;wo&rsquo; to produce the &quot;o&quot; which indicates an object of a verb:</p>
+  <p>ごはん を たべる (gohan o taberu) → gohan wo taberu<br />
+    <h3>Double consonants and typing っ</h3>
+    Type a consonant twice to produce the small っ:<br />
+    <br />
+    きって→ kitte<br />
+    がっこう→ gakkou　<br />
+    <h3>Typing small vowels</h3>
+    Type &lsquo;x&rsquo; before a small vowel:</p>
+  <p>ウェールズ (Wales) → uxe-ruzu　 <br />
+    ハロウィーン (Halloween) → halouxi-n<br />
+    <br />
+    This is only usually used to write katakana (loan words from other languages). <br />
+    <br />
+    For ティ, you can type &lsquo;thi&rsquo; or &lsquo;xi&rsquo;:<br />
+    &nbsp;<br />
+    ミーティング (meeting) → mi-thingu　<br />
+    パーティ (party) → pa-texi</p>
+  <h3>Typing small characters</h3>
+  <p>Typing an 'x' before ya, yu, yo will allow you type these small characters. This is especially useful if you make a mistake like: <br />
+    <br />
+    Question: 電車 <br />
+    User types: densho = で　ん　し　ょ <br />
+    System recognizes: で　ん　し　＿ <br />
+    User types: xya = ゃ <br />
+    System recognizes: で　ん　し　ゃ <br />
+    <br />
+    [っ] → &lsquo;xtu&rsquo;<br />
+    [ぁ] → &lsquo;xa&rsquo; <br />
+    [ぃ] → &lsquo;xi&rsquo;<br />
+    [ぅ] → &lsquo;xu&rsquo; <br />
+    [ぇ] → &lsquo;xe&rsquo;<br />
+    [ぉ] → &lsquo;xo&rsquo;</p>
+  <p>Please note that the conversion process is built into the application itself, so you only need to use English input. Japanese character input via IME is not accepted.</p>
+
+</article>
+
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+		    <div class="container_12">
+  <footer class="page_footer">
+    <section class="clearfix big_footer">
+      <dl>
+        <dt>製品・サービス</dt>
+        <dd><a href="/">iKnow!</a></dd>
+        <dd><a href="/business">法人のお客様</a></dd>
+        <dd><a href="/school">教育機関のお客様</a></dd>
+          <dd><a href="/mobile_app">スマホ・タブレット</a></dd>
+          <dd><a href="http://iknow.jp/popup_dictionary_extension">ポップアップ辞書</a></dd>
+      </dl>
+      <dl>
+        <dt>コミュニティー</dt>
+            <dd>
+              <a href="/user_courses">みんなのコース</a>
+            </dd>
+          <dd>
+            <a target="_blank" href="http://blog.iknow.jp/posts">iKnow! ブログ</a>
+          </dd>
+        <dd>
+        <a target="_blank" href="http://twitter.com/#!/iKnowJP"><img alt="Link to Twitter." src="https://assets2.iknow.jp/_assets/common/twitter_icon-bcc121f5f33ac6ee504e1df343a60190d2445aabad2926614d8d57d9884509c8.png" /></a>
+          <a target="_blank" href="http://twitter.com/#!/iKnowJP">Twitter</a>
+        </dd>
+        <dd>
+          <a target="_blank" href="https://facebook.com/iKnowJP"><img alt="Link to Facebook." src="https://assets0.iknow.jp/_assets/common/facebook_icon-046bc6ed18dd9eceb112c95e3e494c5548876c675a4c1ea293d364ca25547743.png" /></a>
+
+          <a target="_blank" href="https://facebook.com/iKnowJP">Facebook</a>
+        </dd>
+          <dd><a href="/account/beta_signup">iKnow! ベータ</a></dd>
+      </dl>
+      <dl>
+        <dt>ご利用方法について</dt>
+        <dd><a href="/tour">iKnow! ガイド</a></dd>
+          <dd><a href="/custom">カスタムコースガイド</a></dd>
+        <dd><a href="/guides/cn">中国語入力ガイド</a></dd>
+      </dl>
+      <dl class="last">
+        <dt>サポート</dt>
+        <dd><a target="_blank" href="https://support.iknow.jp/hc/ja">サポートとFAQ</a></dd>
+        <dd><a href="/env_check">ご利用環境チェック</a></dd>
+        <dd><a href="/discount_code/new">クーポンの利用</a></dd>
+      </dl>
+    </section>
+    <div class="copyright">
+  <small>Copyright &copy; <a target="_blank" href="https://dmm-corp.com/company/">DMM</a> All Rights Reserved</small>
+
+  <ul>
+    <li><a href="https://dmm-corp.com/company/">運営会社</a></li>
+    <li><a href="https://app.engoo.com/jobs">採用情報</a></li>
+      <li><a href="/policy">利用規約</a></li>
+      <li><a href="/privacy">プライバシーポリシー</a></li>
+      <li class="last"><a href="/policy/commercial">特定商取引法に基づく表記</a></li>
+  </ul>
+
+</div>
+
+  </footer>
+</div>
+
+    <script src="https://assets3.iknow.jp/_assets/application-6bc0e3955854b999bcd14840764f8d50849ae80e0093800a8ec9a44c4565805d.js"></script>
+<script src="https://assets2.iknow.jp/_assets/js/bundle-8fb886f4dd4b80b9de63.js"></script>
+
+
+
+
+
+    
+    
+  <script type="text/javascript">
+    var google_conversion_id = 1003066537;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "YeFyCJfI-AIQqamm3gM";
+    var google_conversion_value = 0;
+  </script>
+  <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/1003066537/?value=0&amp;label=YeFyCJfI-AIQqamm3gM&amp;guid=ON&amp;script=0"/>
+    </div>
+  </noscript>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $.notification.setup([])
+    });
+  </script>
+
+<script>
+// Fix header position when #site_notice contains something.
+$(function() {
+  var $window = $(window);
+  var $header = $('.marketing_navi .fixed-container');
+  var headerOffset;
+
+  // do nothing when there is no fixed header.
+  if ( $header.length === 0 ) {
+    return;
+  }
+
+  checkHeaderOffset();
+  return;
+
+
+  function checkHeaderOffset() {
+    var offsetTop = $header.offset().top;
+    var scrollTop = $window.scrollTop();
+
+    headerOffset = Math.floor(offsetTop - scrollTop);
+
+    if ( headerOffset === 0 ) {
+      // we need to check again because #site_notice may be updated later.
+      setTimeout(checkHeaderOffset, 1000);
+      return;
+    }
+
+    headerOffset = Math.floor(offsetTop - scrollTop);
+    $window.on('scroll', onScroll);
+    onScroll();
+  }
+
+
+  function onScroll() {
+    var scrollTop = Math.max($window.scrollTop(), 0);
+    var headerTop = Math.max(headerOffset - scrollTop, 0);
+
+    $header.css({
+      top: headerTop
+    });
+  }
+});
+</script>
+
+<iframe id="app_frame" style="display:none" frameborder="0"></iframe>
+
+</body></html>

@@ -1,0 +1,8 @@
+"re-match-p" is a function that matches a regexp against the text at point.
+It returns t if there's a match, nil otherwise.
+
+"re-match-p" is a function that matches a regexp against the text at point.
+It returns t if there's a match, nil otherwise.
+
+"re-match-p" is a function that matches a regexp against the text at point.
+It returns t if there's a match, nil otherwise.

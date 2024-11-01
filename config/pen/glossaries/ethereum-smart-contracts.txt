@@ -1,0 +1,114 @@
+balanceOf
+    [function]
+
+    Returns the balance of an account.
+
+    Ethereum accounts are identified in
+    Solidity using the address type, which
+    holds 160 bits.
+
+    It is also external and view.
+
+transfer
+    [function]
+
+    Transfers a tokens from the caller to a
+    different address. This involves a change
+    of state, so it isn't a view. When a user
+    calls this function it creates a
+    transaction and costs gas. It also emits
+    an event, Transfer, to inform everybody on
+    the blockchain of the event.
+
+    The function has two types of output for
+    two different types of callers:
+
+    - Users that call the function directly
+      from a user interface. Typically the
+      user submits a transaction and does not
+      wait for a response, which could take an
+      indefinite amount of time. The user can
+      see what happened by looking for the
+      transaction receipt (which is identified
+      by the transaction hash) or by looking
+      for the Transfer event.
+    - Other contracts, which call the function
+      as part of an overall transaction. Those
+      contracts get the result immediately,
+      because they run in the same
+      transaction, so they can use the
+      function return value.
+
+    The same type of output is created by the
+    other functions that change the contract's
+    state.
+
+    Allowances permit an account to spend some
+    tokens that belong to a different owner.
+    This is useful, for example, for contracts
+    that act as sellers. Contracts cannot
+    monitor for events, so if a buyer were to
+    transfer tokens to the seller contract
+    directly that contract wouldn't know it
+    was paid. Instead, the buyer permits the
+    seller contract to spend a certain amount,
+    and the seller transfers that amount. This
+    is done through a function the seller
+    contract calls, so the seller contract can
+    know if it was successful.
+
+smart contract
+    Can be read by visiting a project's
+    Etherscan (if based on Ethereum) and
+    GitHub page.
+
+    For the sake of this lesson, we will use
+    Yearn Finance as an example.
+
+    We found the Etherscan page for Yearn
+    Finance by typing its ticker (YFI) into
+    the search bar.
+
+account
+    There are two kinds of accounts in
+    Ethereum which share the same address
+    space:
+    - External accounts that are controlled by
+      public-private key pairs (i.e. humans),
+      and
+    - contract accounts which are controlled
+      by the code stored together with the
+      account.
+
+    The address of an external account is
+    determined from the public key while the
+    address of a contract is determined at the
+    time the contract is created (it is
+    derived from the creator address and the
+    number of transactions sent from that
+    address, the so-called “nonce”).
+    
+    Regardless of whether or not the account
+    stores code, the two types are treated
+    equally by the EVM.
+    
+    Every account has a persistent key-value
+    store mapping 256-bit words to 256-bit
+    words called storage.
+    
+    Furthermore, every account has a balance
+    in Ether (in “Wei” to be exact, 1 ether is
+    10**18 wei) which can be modified by
+    sending transactions that include Ether.
+
+external account
+    Controlled by public-private key pairs
+    (i.e. humans).
+
+    See: "account".
+
+contract account
+    An account controlled by the code stored
+    together with the account.
+
+    See: "account".

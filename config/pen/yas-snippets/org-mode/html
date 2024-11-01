@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: html
+# group: mine
+# key: html
+# --
+#+BEGIN_EXPORT html
+<div class="org-src-container">
+    <pre>
+<span class="magit-diff-removed">-(define-syntax-parser </span><span class="magit-diff-removed"><span class="diff-refine-removed">name</span></span><span class="magit-diff-removed">
+-  [(_ a b ...+)
+-   #'(+ a (- b ...))])
+</span><span class="magit-diff-added">+(define-syntax </span><span class="magit-diff-added"><span class="diff-refine-added">name
++  (syntax</span></span><span class="magit-diff-added">-parser
++    [(_ a b ...+)
++     #'(+ a (- b ...))]</span><span class="magit-diff-added"><span class="diff-refine-added">)</span></span><span class="magit-diff-added">)
+</span>
+</pre>
+</div>
+#+END_EXPORT

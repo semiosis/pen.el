@@ -1,0 +1,1 @@
+Dec  2 00:00:00 mele kernel: [111217.839156] audit: type=1130 audit(1575221165.776:4): pid=1 uid=0 auid=4294967295 ses=4294967

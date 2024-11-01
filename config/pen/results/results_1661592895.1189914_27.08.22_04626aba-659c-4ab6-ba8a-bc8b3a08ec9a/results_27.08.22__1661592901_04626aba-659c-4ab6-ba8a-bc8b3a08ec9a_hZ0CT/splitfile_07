@@ -1,0 +1,7 @@
+
+  let maxWidths = maximumBy (compare `on` length) $ map length rows
+  mapM_ (\row -> do
+    let cells = map (\i -> take maxWidths i <$> row) rows
+    putStrLn $ intercalate " | " cells) rows
+
+EOD

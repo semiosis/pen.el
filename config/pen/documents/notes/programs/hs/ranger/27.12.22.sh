@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ranger" ".." "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ranger" ".." "#" "<==" "zsh"
+cd /root/repos/mitsuhiko/teetty;  "ranger" "#" "<==" "o"
+cd /root/repos/mitsuhiko/teetty/src;  "ranger" "#" "<==" "zsh"

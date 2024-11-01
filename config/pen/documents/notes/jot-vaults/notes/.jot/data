@@ -1,0 +1,4 @@
+name = 'notes'
+location = '/root/.pen/documents/notes/jot-vaults'
+folder = ''
+history = []

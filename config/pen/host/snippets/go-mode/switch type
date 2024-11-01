@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: switch type
+# key: swtype
+# --
+// Type switch
+// With a type switch you can switch on the type of an interface value (only):
+func typeName(v interface{}) string {
+switch v.(type) {
+case int:
+return "int"
+case string:
+return "string"
+default:
+return "unknown"
+}
+}

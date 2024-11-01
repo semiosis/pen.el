@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: string array
+# key: s[
+# --
+vsf := make([]string, 0)
+
+var sWords = []string{
+"",
+"make",
+}

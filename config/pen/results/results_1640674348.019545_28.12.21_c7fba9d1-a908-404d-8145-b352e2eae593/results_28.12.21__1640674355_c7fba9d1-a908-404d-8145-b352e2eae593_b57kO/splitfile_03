@@ -1,0 +1,4 @@
+covered a new type of neuron that can be used to encode information in both directions, similar to bidirectional RNNs.
+    https://arxiv.org/abs/1906.01563
+
+

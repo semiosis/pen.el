@@ -1,0 +1,22 @@
+rectenna
+    A rectifying antenna.
+
+    A special type of receiving antenna that
+    is used for converting electromagnetic
+    energy into direct current (DC)
+    electricity.
+
+    They are used in wireless power
+    transmission systems that transmit power
+    by radio waves.
+
+voltage
+    The difference in charge between two
+    points.
+
+current
+    The rate at which charge is flowing.
+
+resistance
+    A material's tendency to resist the flow
+    of charge (current).

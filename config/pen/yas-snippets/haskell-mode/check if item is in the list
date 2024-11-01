@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: check if item is in the list
+# group: list
+# key: in
+# --
+4 `elem` [3,4,5,6]

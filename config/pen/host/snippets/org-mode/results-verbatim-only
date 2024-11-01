@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tiny
+# group: latex
+# key: tiny
+# expand-env: ((yas-indent-line 'fixed))
+# --
+#+latex: {\\tiny
+`yas-selected-text`$0
+#+latex: }

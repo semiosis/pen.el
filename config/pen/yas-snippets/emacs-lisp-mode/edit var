@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: edit var
+# group: ev
+# key: ev
+# --
+(setq ${1:var} (cl-sn "${2:sed 's//'}" :stdin $1 :chomp t))

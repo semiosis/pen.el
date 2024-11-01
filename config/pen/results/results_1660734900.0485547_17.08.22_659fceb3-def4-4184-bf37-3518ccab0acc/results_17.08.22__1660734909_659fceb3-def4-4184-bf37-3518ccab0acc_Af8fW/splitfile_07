@@ -1,0 +1,16 @@
+
+  -- that tells the user whether the person is an adult or a child
+  -- (You can make up your own sentence)
+  -- If the age is less than 18, print "You are a child"
+  -- If the age is greater than or equal to 18, print "You are an adult"
+  -- If the age is greater than 100, print "You are a super-human"
+
+  putStrLn "What is your age?"
+  let age = readLine
+  if length (age) > 0 then do
+    let ageNum = read age :: Int
+    if ageNum < 18 then putStrLn "You are a child"
+    else if ageNum >= 18 && ageNum < 100 then putStrLn "You are an adult"
+    else putStrLn "You are a super-human"
+
+  -- Read in from the user a person's name and their favorite

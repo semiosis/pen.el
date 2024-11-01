@@ -1,0 +1,12 @@
+"sort" is a standard library function available in Haskell.
+
+It is used to sort a list of elements, which are assumed to be
+all of the same type.
+
+The type of the elements must be an instance of the typeclass
+"Ord", which defines a total ordering on all values of that type.
+
+The "sort" function takes a list of elements and returns a list
+in the same order, with the same elements.
+
+The elements are compared using the "Ord"

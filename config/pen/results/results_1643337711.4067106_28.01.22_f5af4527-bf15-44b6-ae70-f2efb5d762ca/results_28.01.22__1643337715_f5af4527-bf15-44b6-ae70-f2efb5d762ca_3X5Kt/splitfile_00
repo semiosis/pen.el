@@ -1,0 +1,1 @@
+ aws logs put-metric-filter --log-group-name /aws/ec2/instance-state-change --filter-name ec2-state-change-metric --filter-pattern '{ ($.eventName = StopInstances) || ($.eventName

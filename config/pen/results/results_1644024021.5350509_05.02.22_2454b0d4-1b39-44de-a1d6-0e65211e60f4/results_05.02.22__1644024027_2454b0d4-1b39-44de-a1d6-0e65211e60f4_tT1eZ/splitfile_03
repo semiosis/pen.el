@@ -1,0 +1,8 @@
+
+
+"""
+Prompt the user for an image name and store it in a variable.
+Types:
+- The type of prompt to show:
+- "set" -> Show the set image prompt
+- "a" -> Show the

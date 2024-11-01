@@ -1,0 +1,19 @@
+
+  -- For example, if the user enters "18", then the program should print "You are 18 years old."
+  -- If the user enters "0", then the program should print "You are not born yet!"
+  -- If the user enters a negative number, then the program should print "You are not born yet!"
+
+  putStrLn "What is your age?"
+  ageString <- getLine
+  age <- read ageString
+
+  if age < 0
+  then putStrLn "You are not born yet!"
+  else putStrLn ("You are " ++ show age ++ " years old.")
+
+  -- Read in from the user a person's name
+  -- Then, print the name back to the user within a sentence
+  -- For example, if the user enters "John", then the program should print "Hello John!"
+
+  putStrLn "What is your name?"
+  name

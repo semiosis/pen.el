@@ -1,0 +1,68 @@
+CNC-MACHINE-CLI(1)                     User Commands                    CNC-MACHINE-CLI(1)
+
+NAME
+       cnc-machine-cli - Command line interface for CNC-Machine
+
+SYNOPSIS
+       cnc-machine-cli [OPTION]... [COMMAND]
+
+DESCRIPTION
+       CNC-Machine is a command line interface for CNC-Machine.
+
+COMMANDS
+       help, h
+              Prints this manual page.
+
+       version, v
+              Prints the version of CNC-Machine CLI.
+
+       start, s
+              Starts CNC-Machine.
+
+       stop, t
+              Stops CNC-Machine.
+
+       restart, r
+              Restarts CNC-Machine.
+
+       status, u
+              Prints the status of CNC-Machine.
+
+       log, l
+              Prints the log of CNC-Machine.
+
+OPTIONS
+       --help, -h
+              Prints this manual page.
+
+       --version, -v
+              Prints the version of CNC-Machine CLI.
+
+       --verbose, -V
+              Prints more detailed status.
+
+       --debug, -D
+              Prints debug messages.
+
+SEE ALSO
+       cnc-machine(1)
+
+AUTHOR
+       Written by Hugo Valle.
+
+CNC-MACHINE-CLI(1)                                                           CNC-MACHINE-CLI(1)
+
+"#; /* @MANEND */
+
+#[derive(RustcDecodable)]
+struct Args {
+    arg_command: String,
+    flag_version: bool,
+    flag_verbose: bool,
+    flag_debug: bool,
+    flag_help: bool,
+}
+
+fn main() {
+    let args: Args = Docopt::new(USAGE)
+                

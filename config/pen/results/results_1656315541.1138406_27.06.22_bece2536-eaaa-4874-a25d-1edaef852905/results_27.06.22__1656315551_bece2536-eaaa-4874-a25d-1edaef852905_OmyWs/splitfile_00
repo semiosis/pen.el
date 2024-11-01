@@ -1,0 +1,11 @@
+
+
+papyrus
+    A flat, thin, rectangular piece of writing
+    material made from the papyrus plant. It is
+    used in making an ancient book or scroll.
+EOD
+
+# text files with line numbers
+
+cat draft.text | nl > draft.text.nl

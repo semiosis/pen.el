@@ -1,0 +1,7 @@
+ a list of JSON values, one for each record.
+  jsons <- map (toJSON . fmap (\m -> m {-caret-})) maps
+
+  -- Convert the list of JSON values into a JSON array.
+  json <- toJSON (fromList jsons)
+
+EOD

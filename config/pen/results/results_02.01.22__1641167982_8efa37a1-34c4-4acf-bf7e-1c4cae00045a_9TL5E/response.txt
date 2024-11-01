@@ -1,0 +1,10 @@
+n)
+  "Return a list of the first N Fibonacci numbers."
+  (let ((fib-list '())
+        (a 0)
+        (b 1))
+    (dotimes (i n)
+      (setq fib-list (cons a fib-list))
+      (setq a b)
+      (setq b (+ a b)))
+    fib-list))

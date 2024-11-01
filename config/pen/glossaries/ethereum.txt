@@ -1,0 +1,1398 @@
+zero address
+    A special Ethereum address, composed
+    entirely of zeros, that is specified as
+    the destination address of a contract
+    creation transaction.
+
+contract
+smart contract
+    A program that executes on the Ethereum
+    computing infrastructure.
+
+    It's a collection of code (its functions)
+    and data (its state) that resides at a
+    specific address on the Ethereum
+    blockchain.
+    
+    Smart contracts can define rules, like a
+    regular contract, and automatically
+    enforce them via the code.
+
+optimism
+optimistic ethereum
+    https://www.optimism.io/
+    
+    The Ethereum you know and love, at lower
+    cost and lightning speed.
+
+arbitrum
+    Building Arbitrum for Secure Ethereum
+    Dapps.
+
+    Experience economical efficiency of the
+    blockchain without limits.
+
+nonce
+    NLG: A nonce is a number that is used only
+    once in a cryptographic communication.
+
+    Or generally:
+    NLG: A word or phrase used only once in a
+    text.
+
+geth
+    [cli tool]
+
+    https://github.com/ethereum/go-ethereum
+
+    https://geth.ethereum.org/docs/interface/command-line-options
+
+    Our main Ethereum CLI client.
+    
+    It is the entry point into the Ethereum
+    network (main-, test- or private net),
+    capable of running as a full node
+    (default), archive node (retaining all
+    historical state) or a light node
+    (retrieving data live).
+    
+    It can be used by other processes as a
+    gateway into the Ethereum network via JSON
+    RPC endpoints exposed on top of HTTP,
+    WebSocket and/or IPC transports.
+
+    geth --help
+
+abigen
+    [cli tool]
+
+    https://github.com/ethereum/go-ethereum
+
+    Source code generator to convert Ethereum
+    contract definitions into easy to use,
+    compile-time type-safe Go packages.
+    
+    It operates on plain Ethereum contract
+    ABIs with expanded functionality if the
+    contract bytecode is also available.
+    
+    However, it also accepts Solidity source
+    files, making development much more
+    streamlined.
+
+    https://geth.ethereum.org/docs/dapp/native-bindings
+
+ABI
+Ethereum contract ABI
+    https://docs.soliditylang.org/en/develop/abi-spec.html
+
+bootnode
+    [cli tool]
+
+    https://github.com/ethereum/go-ethereum
+
+    Stripped down version of our Ethereum
+    client implementation that only takes part
+    in the network node discovery protocol,
+    but does not run any of the higher level
+    application protocols.
+    
+    It can be used as a lightweight bootstrap
+    node to aid in finding peers in private
+    networks.
+
+evm
+    [cli tool]
+
+    https://github.com/ethereum/go-ethereum
+
+    Developer utility version of the EVM
+    (Ethereum VM) that is capable of running
+    bytecode snippets within a configurable
+    environment and execution mode.
+    
+    Its purpose is to allow isolated, fine-
+    grained debugging of EVM opcodes
+
+        evm --code 60ff60ff --debug run
+
+EVM
+Ethereum VM
+Ethereum Virtual Machine
+    In the Ethereum universe, there is a
+    single, canonical computer (called the
+    Ethereum VM, or EVM) whose state everyone
+    on the Ethereum network agrees on.
+    
+    Everyone who participates in the Ethereum
+    network (every Ethereum node) keeps a copy
+    of the state of this computer.
+    
+    Additionally, any participant can
+    broadcast a request for this computer to
+    perform arbitrary computation.
+    
+    Whenever such a request is broadcast,
+    other participants on the network verify,
+    validate, and carry out (“execute”) the
+    computation.
+    
+    This causes a state change in the EVM,
+    which is committed and propagated
+    throughout the entire network.
+
+gethrpctest
+    [cli tool]
+
+    https://github.com/ethereum/go-ethereum
+
+    Developer utility tool to support our
+    ethereum/rpc-test test suite which
+    validates baseline conformity to the
+    Ethereum JSON RPC specs.
+
+    https://eth.wiki/json-rpc/API
+    https://github.com/ethereum/rpc-tests
+
+    https://github.com/ethereum/rpc-tests/blob/master/README.md
+
+rlpdump
+    [cli tool]
+
+    https://github.com/ethereum/go-ethereum
+
+    Developer utility tool to convert binary
+    RLP dumps (data encoding used by the
+    Ethereum protocol both network as well as
+    consensus wise) to user-friendlier
+    hierarchical representation
+
+        rlpdump --hex CE0183FFFFFFC4C304050583616263
+
+puppeth
+    [cli tool]
+
+    https://github.com/ethereum/go-ethereum
+
+    A CLI wizard that aids in creating a new
+    Ethereum network.
+
+RLP
+Recursive Length Prefix
+    https://eth.wiki/en/fundamentals/rlp
+
+DLT (distributed ledger)
+    NLG: A distributed ledger is a database,
+    digitally recording transaction
+    information using cryptography, making it
+    secure from tampering and revision.
+
+ens
+ens.domains
+    NFT on ethereum that gives you a name.
+
+uniswap
+    A decentralized finance protocol that is
+    used to exchange cryptocurrencies.
+    
+    Uniswap is also the name of the company
+    that initially built the Uniswap protocol.
+    
+    The protocol facilitates automated
+    transactions between cryptocurrency tokens
+    on the Ethereum blockchain through the use
+    of smart contracts.
+
+    https://app.uniswap.org/#/swap
+    Select token to swap between.
+
+Layer 2 Rollup
+    https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/
+
+    https://youtu.be/XW0QZmtbjvs?t=4270
+
+    Instead of just publishing transactions
+    directly on chain
+
+Amazon Managed Blockchain
+    https://aws.amazon.com/about-aws/whats-new/2021/03/announcing-general-availability-of-ethereum-on-amazon-managed-blockchain/
+
+    Provision Ethereum nodes.
+
+Decentralized finance
+DeFi
+    The nickname of financial smart contracts,
+    decentralized applications (DApps), and
+    protocols built on Ethereum.
+    
+    Financial DApps are the hottest use case
+    of Ethereum at the given moment.
+
+block height
+    The block height of a particular block is
+    defined as the number of blocks preceding
+    it in the blockchain.
+
+    A blockchain contains a series of blocks,
+    hence the name blockchain.
+
+    The total height of the blockchain is
+    taken to be the height of the most recent
+    block, or the highest block, in the chain.
+
+Ethereum
+    [cryptocurrency]
+    [blockchain system]
+
+    Based on the use of tokens, which can be
+    bought, sold, or traded.
+    
+token
+    Represent a diverse range of digital
+    assets, such as vouchers, IOUs, or even
+    real-world, tangible objects.
+    
+    Essentially, Ethereum tokens are smart
+    contracts that make use of the Ethereum
+    blockchain.
+
+    A token can be created as a smart contract
+    in Ethereum.
+
+web3
+    https://ethereum.org/en/developers/docs/web2-vs-web3/
+
+    Many Web3 developers have chosen to build
+    dapps because of Ethereum's inherent
+    decentralisation:
+
+    - Anyone who is on the network has
+      permission to use the service – or in
+      other words, permission isn't required.
+    - No one can block you or deny you access
+      to the service.
+    - Payments are built in via the native
+      token, ether (ETH).
+    - Ethereum is turing-complete, meaning you
+      can pretty much program anything.
+
+ERC-20
+ERC20
+    https://ethereum.org/en/developers/docs/standards/tokens/erc-20/
+
+    One of the most significant tokens is
+    called ERC-20, which has emerged as the
+    technical standard used for all smart
+    contracts on the Ethereum blockchain for
+    token implementation.
+
+    Plenty of well-known digital currencies
+    use the ERC-20 standard, including Maker
+    (MKR), Basic Attention Token (BAT), Augur
+    (REP), and OmiseGO (OMG).
+
+    ERC-20 is similar, in some respects, to
+    bitcoin, Litecoin, and any other
+    cryptocurrency; ERC-20 tokens are
+    blockchain-based assets that have value
+    and can be sent and received.
+    
+    The primary difference is that instead of
+    running on their own blockchain, ERC-20
+    tokens are issued on the Ethereum network.
+
+    A standard for Fungible Tokens.
+
+    Have a property that makes each Token be
+    exactly the same (in type and value) of
+    another Token.
+    
+    For example, an ERC-20 Token acts just
+    like the ETH, meaning that 1 Token is and
+    will always be equal to all the other
+    Tokens.
+
+    If a Smart Contract implements the
+    following methods and events it can be
+    called an ERC-20 Token Contract and, once
+    deployed, it will be responsible to keep
+    track of the created tokens on Ethereum.
+
+        function name() public view returns (string)
+        function symbol() public view returns (string)
+        function decimals() public view returns (uint8)
+        function totalSupply() public view returns (uint256)
+        function balanceOf(address _owner) public view returns (uint256 balance)
+        function transfer(address _to, uint256 _value) public returns (bool success)
+        function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
+        function approve(address _spender, uint256 _value) public returns (bool success)
+        function allowance(address _owner, address _spender) public view returns (uint256 remaining)
+        event Transfer(address indexed _from, address indexed _to, uint256 _value)
+        event Approval(address indexed _owner, address indexed _spender, uint256 _value)
+
+Non-fungible tokens
+NFT
+    Digital assets that represent a wide range
+    of unique tangible and intangible items,
+    from collectible sports cards to virtual
+    real estate and even digital sneakers.
+
+51% attack
+    A type of attack on a decentralized
+    network where a group gains control of the
+    majority of nodes.
+    
+    This would allow them to defraud the
+    blockchain by reversing transactions and
+    double spending ether and other tokens.
+
+account
+    An object containing an address, balance,
+    nonce, and optional storage and code. An
+    account can be a contract account or an
+    EOA.
+
+EOA
+externally owned account
+
+address
+    Most generally, this represents an EOA or
+    contract that can receive (destination
+    address) or send (source address)
+    transactions on the blockchain. More
+    specifically, it is the rightmost 160 bits
+    of a Keccak hash of an ECDSA public key.
+
+assert
+    In Solidity, assert(false) compiles to
+    0xfe, an invalid opcode, which uses up all
+    remaining gas and reverts all changes.
+    When an assert() statement fails,
+    something very wrong and unexpected is
+    happening, and you will need to fix your
+    code. You should use assert() to avoid
+    conditions that should never, ever occur.
+
+attestation
+    A validator vote for a Beacon Chain or
+    shard block. Validators must attest to
+    blocks, signaling that they agree with the
+    state proposed by the block.
+
+Beacon Chain
+    An Eth2 upgrade that will become the
+    coordinator for the Ethereum network. It
+    introduces proof-of-stake and validators
+    to Ethereum. It will eventually be merged
+    with mainnet.
+
+big-endian
+    A positional number representation where
+    the most significant digit is first in
+    memory. The opposite of little-endian,
+    where the least significant digit is
+    first.
+
+block
+    A collection of required information (a
+    block header) about the comprised
+    transactions, and a set of other block
+    headers known as ommers. Blocks are added
+    to the Ethereum network by miners.
+
+blockchain
+    In Ethereum, a sequence of blocks
+    validated by the proof-of-work system,
+    each linking to its predecessor all the
+    way to the genesis block. There is no
+    block size limit; it instead uses varying
+    gas limits.
+
+bytecode
+    An abstract instruction set designed for
+    efficient execution by a software
+    interpreter or a virtual machine. Unlike
+    human-readable source code, bytecode is
+    expressed in numeric format.
+
+Byzantium fork
+    The first of two hard forks for the
+    Metropolis development stage. It included
+    EIP-649 Metropolis Difficulty Bomb Delay
+    and Block Reward Reduction, where the Ice
+    Age was delayed by 1 year and the block
+    reward was reduced from 5 to 3 ether.
+
+compiling
+    Converting code written in a high-level
+    programming language (e.g., Solidity) into
+    a lower-level language (e.g., EVM
+    bytecode).
+
+committee
+    A group of at least 128 validators
+    assigned to beacon and shard blocks at
+    random by the Beacon Chain.
+
+consensus
+    When numerous nodes (usually most nodes on
+    the network) all have the same blocks in
+    their locally validated best blockchain.
+    Not to be confused with consensus rules.
+
+consensus rules
+    The block validation rules that full nodes
+    follow to stay in consensus with other
+    nodes. Not to be confused with consensus.
+
+Constantinople fork
+    The second part of the Metropolis stage,
+    originally planned for mid-2018. Expected
+    to include a switch to a hybrid
+    proof-of-work/proof-of-stake consensus
+    algorithm, among other changes.
+
+contract account
+    An account containing code that executes
+    whenever it receives a transaction from
+    another account (EOA or contract).
+
+contract creation transaction
+    A special transaction, with the zero
+    address as the recipient, that is used to
+    register a contract and record it on the
+    Ethereum blockchain.
+
+crosslink
+    A crosslink provides a summary of a
+    shard's state. It's how shard chains will
+    communicate with one another via the
+    Beacon Chainin the sharded proof-of-stake
+    system.
+
+Decentralized Autonomous Organization
+DAO
+    A company or other organization that
+    operates without hierarchical management.
+    DAO may also refer to a contract named
+    "The DAO" launched on April 30, 2016,
+    which was then hacked in June 2016; this
+    ultimately motivated a hard fork
+    (codenamed DAO) at block 1,192,000, which
+    reversed the hacked DAO contract and
+    caused Ethereum and Ethereum Classic to
+    split into two competing systems.
+
+Dapp
+Decentralized application
+    At a minimum, it is a smart contract and a
+    web user interface. More broadly, a Dapp
+    is a web application that is built on top
+    of open, decentralized, peer-to-peer
+    infrastructure services. In addition, many
+    Dapps include decentralized storage and/or
+    a message protocol and platform.
+
+decentralized exchange
+DEX
+    A type of dapp that lets you swap tokens
+    with peers on the network. You need ether
+    to use one (to pay transactions fees) but
+    they are not subject to geographical
+    restrictions like centralized exchanges –
+    anyone can participate.
+
+deed
+    See non-fungible token (NFT)
+
+defi
+    Short for "decentralized finance," a broad
+    category of Dapps aiming to provide
+    financial services backed by the
+    blockchain, without any intermediaries, so
+    anyone with an internet connection can
+    participate.
+
+difficulty
+    A network-wide setting that controls how
+    much computation is required to produce a
+    proof-of-work.
+
+difficulty bomb
+    Planned exponential increase in
+    proof-of-work difficulty setting designed
+    to motivate the transition to
+    proof-of-stake, reducing the changes of a
+    fork
+
+digital signature
+    A short string of data a user produces for
+    a document using a private key such that
+    anyone with the corresponding public key,
+    the signature, and the document can verify
+    that (1) the document was "signed" by the
+    owner of that particular private key, and
+    (2) the document was not changed after it
+    was signed.
+
+elliptic curve digital signature algorithm
+ECDSA
+    A cryptographic algorithm used by Ethereum
+    to ensure that funds can only be spent by
+    their owners.
+
+epoch
+    A period of 32 slots (6.4 minutes) in the
+    Beacon Chain-coordinated system. Validator
+    committees are shuffled every epoch for
+    security reasons. There's an opportunity
+    at each epoch for the chain to be
+    finalized.
+
+Ethereum Improvement Proposal
+EIP
+    A design document providing information to
+    the Ethereum community, describing a
+    proposed new feature or its processes or
+    environment (see ERC).
+
+Ethereum Name Service (ENS)
+    The ENS registry is a single central
+    contract that provides a mapping from
+    domain names to owners and resolvers, as
+    described in EIP 137.
+
+entropy
+    In the context of cryptography, lack of
+    predictability or level of randomness.
+    When generating secret information, such
+    as private keys, algorithms usually rely
+    on a source of high entropy to ensure the
+    output is unpredictable.
+
+externally owned account (EOA)
+    An account created by or for human users
+    of the Ethereum network.
+
+Ethereum Request for Comments (ERC)
+    A label given to some EIPs that attempt to
+    define a specific standard of Ethereum
+    usage.
+
+Ethash
+    A proof-of-work algorithm for Ethereum
+    1.0.
+
+Ether
+ETH
+Ξ
+    The native cryptocurrency used by the
+    Ethereum ecosystem, which covers gas costs
+    when executing transactions.
+
+    Ξ is the Greek uppercase Xi character.
+
+events
+    Allows the use of EVM logging facilities.
+    Dapps can listen for events and use them
+    to trigger JavaScript callbacks in the
+    user interface.
+
+Ethereum Virtual Machine
+EVM
+    A stack-based virtual machine that
+    executes bytecode. In Ethereum, the
+    execution model specifies how the system
+    state is altered given a series of
+    bytecode instructions and a small tuple of
+    environmental data. This is specified
+    through a formal model of a virtual state
+    machine.
+
+EVM assembly language
+    A human-readable form of EVM bytecode.
+
+fallback function
+    A default function called in the absence
+    of data or a declared function name.
+
+faucet
+    A service carried out via smart contract
+    that dispenses funds in the form of free
+    test ether that can be used on a testnet.
+
+finality
+    Finality is the guarantee that a set of
+    transactions before a given time will not
+    change and can't be reverted.
+
+finney
+    A denomination of ether. 1 finney = 1015
+    wei. 103 finney = 1 ether.
+
+fork
+    A change in protocol causing the creation
+    of an alternative chain, or a temporal
+    divergence in two potential block paths
+    during mining.
+
+fraud proof
+    A security model for certain layer 2
+    solutions where, to increase speed,
+    transactions are rolled up into batches
+    and submitted to Ethereum in a single
+    transaction. They are assumed valid but
+    can be challenged if fraud is suspected. A
+    fraud proof will then run the transaction
+    to see if fraud took place. This method
+    increases the amount of transactions
+    possible while maintaining security. Some
+    rollups use validity proofs.
+
+frontier
+    The initial test development stage of
+    Ethereum, which lasted from July 2015 to
+    March 2016.
+
+gas
+    A virtual fuel used in Ethereum to execute
+    smart contracts. The EVM uses an
+    accounting mechanism to measure the
+    consumption of gas and limit the
+    consumption of computing resources (see
+    Turing complete).
+
+gas limit
+    The maximum amount of gas a transaction or
+    block may consume.
+
+genesis block
+    The first block in a blockchain, used to
+    initialize a particular network and its
+    cryptocurrency.
+
+geth
+    Go Ethereum. One of the most prominent
+    implementations of the Ethereum protocol,
+    written in Go.
+
+gwei
+    Short for gigawei, a denomination of
+    ether, commonly utilized to price gas. 1
+    gwei = 109 wei. 109 gwei = 1 ether.
+
+hard fork
+    A permanent divergence in the blockchain;
+    also known as a hard-forking change. One
+    commonly occurs when nonupgraded nodes
+    can't validate blocks created by upgraded
+    nodes that follow newer consensus rules.
+    Not to be confused with a fork, soft fork,
+    software fork, or Git fork.
+
+hash
+    A fixed-length fingerprint of
+    variable-size input, produced by a hash
+    function. (See keccak-256)
+
+HD wallet
+    A wallet using the hierarchical
+    deterministic (HD) key creation and
+    transfer protocol.
+
+HD wallet seed
+    A value used to generate the master
+    private key and master chain code for an
+    HD wallet. The wallet seed can be
+    represented by mnemonic words, making it
+    easier for humans to copy, back up, and
+    restore private keys.
+
+homestead
+    The second development stage of Ethereum,
+    launched in March 2016 at block 1,150,000.
+
+Inter-exchange Client Address Protocol (ICAP)
+    An Ethereum address encoding that is
+    partly compatible with the International
+    Bank Account Number (IBAN) encoding,
+    offering a versatile, checksummed, and
+    interoperable encoding for Ethereum
+    addresses. ICAP addresses use a new IBAN
+    pseudo-country code- XE, standing for
+    "eXtended Ethereum," as used in
+    nonjurisdictional currencies (e.g., XBT,
+    XRP, XCP).
+
+Ice Age
+    A hard fork of Ethereum at block 200,000
+    to introduce an exponential difficulty
+    increase (aka difficulty bomb), motivating
+    a transition to proof-of-stake.
+
+integrated development environment
+IDE
+    A user interface that typically combines a
+    code editor, compiler, runtime, and
+    debugger.
+
+immutable deployed code problem
+    Once a contract's (or library's) code is
+    deployed, it becomes immutable. Standard
+    software development practices rely on
+    being able to fix possible bugs and add
+    new features, so this represents a
+    challenge for smart contract development.
+
+internal transaction
+    A transaction sent from a contract account
+    to another contract account or an EOA (see
+    message).
+
+key derivation function (KDF)
+    Also known as a "password stretching
+    algorithm," it is used by keystore formats
+    to protect against brute-force,
+    dictionary, and rainbow table attacks on
+    passphrase encryption, by repeatedly
+    hashing the passphrase.
+
+keccak-256
+    Cryptographic hash function used in
+    Ethereum. Keccak-256 was standardized as
+    SHA-3.
+
+keystore file
+    A JSON-encoded file that contains a single
+    (randomly generated) private key,
+    encrypted by a passphrase for extra
+    security.
+
+blockchain scaling paradigms
+    Two major paradigms:
+    - layer 1
+    - layer 2
+
+layer 1
+    [blockchain scaling paradigm]
+
+    https://youtu.be/XW0QZmtbjvs?t=2827
+
+    Make the blockchain itself capable of
+    processing more transactions by having
+    some mechanism for doing that despite
+    there being a limit to capacity for each
+    participant in the blockchain.
+
+    The most popular paradigm for Layer 1:
+    - Sharding
+
+layer 2
+    [blockchain scaling paradigm]
+
+    Keep the blockchain as is but create
+    clever protocols on top of the blockchain
+    that still use the blockchain and inherit
+    things like the security guarantees of the
+    blockchain but at the same time a lot of
+    things are off-chain.
+
+    An area of development focussed on
+    layering improvements on top of the
+    Ethereum protocol. These improvements are
+    related to transaction speeds, cheaper
+    transaction fees, and transaction privacy.
+
+    The most popular paradigm for Layer 2:
+    - Rollups
+
+LevelDB
+    An open source on-disk key-value store,
+    implemented as a lightweight,
+    single-purpose library, with bindings to
+    many platforms.
+
+library
+    A special type of contract that has no
+    payable functions, no fallback function,
+    and no data storage. Therefore, it cannot
+    receive or hold ether, or store data. A
+    library serves as previously deployed code
+    that other contracts can call for
+    read-only computation.
+
+lightweight client
+    An Ethereum client that does not store a
+    local copy of the blockchain, or validate
+    blocks and transactions. It offers the
+    functions of a wallet and can create and
+    broadcast transactions.
+
+mainnet
+    Short for "main network," this is the main
+    public Ethereum blockchain. Real ETH, real
+    value, and real consequences. Also known
+    as layer 1 when discussing layer 2 scaling
+    solutions. (Also, see testnet)
+
+Merkle Patricia tree
+    A data structure used in Ethereum to
+    efficiently store key-value pairs.
+
+message
+    An internal transaction that is never
+    serialized and only sent within the EVM.
+
+message call
+    The act of passing a message from one
+    account to another. If the destination
+    account is associated with EVM code, then
+    the VM will be started with the state of
+    that object and the message acted upon.
+
+Metropolis
+    The third development stage of Ethereum,
+    launched in October 2017.
+
+miner
+    A network node that finds valid
+    proof-of-work for new blocks, by repeated
+    pass hashing (see Ethash).
+
+network
+    Referring to the Ethereum network, a
+    peer-to-peer network that propagates
+    transactions and blocks to every Ethereum
+    node (network participant).
+
+non-fungible token
+NFT
+    Also known as a "deed," this is a token
+    standard introduced by the ERC-721
+    proposal. NFTs can be tracked and traded,
+    but each token is unique and distinct;
+    they are not interchangeable like ERC-20
+    tokens. NFTs can represent ownership of
+    digital or physical assets.
+
+node
+    A software client that participates in the
+    network.
+
+nonce
+    In cryptography, a value that can only be
+    used once.
+
+    There are two types of nonce used in
+    Ethereum:
+    - an account nonce is a transaction
+      counter in each account, which is used
+      to prevent replay attacks;
+    - a proof-of-work nonce is the random
+      value in a block that was used to
+      satisfy the proof-of-work.
+
+ommer (uncle) block
+    When a miner finds a valid block, another
+    miner may have published a competing block
+    which is added to the tip of the
+    blockchain first. This valid, but stale,
+    block can be included by newer blocks as
+    ommers and receive a partial block reward.
+    The term "ommer" is the preferred
+    gender-neutral term for the sibling of a
+    parent block, but this is also sometimes
+    referred to as an "uncle".
+
+Optimistic rollup
+    A rollup of transactions that use fraud
+    proofs to offer increased layer 2
+    transaction throughput while using the
+    security provided by mainnet (layer 1).
+    Unlike Plasma, a similar layer 2 solution,
+    Optimistic rollups can handle more complex
+    transaction types – anything possible in
+    the EVM. They do have latency issues
+    compared to Zero-knowledge rollups because
+    a transaction can be challenged via the
+    fraud proof.
+
+parity
+    One of the most prominent interoperable
+    implementations of the Ethereum client
+    software.
+
+Plasma
+    A layer 2 scaling solution that uses fraud
+    proofs, like Optimistic rollups. Plasma is
+    limited to simple transactions like basic
+    token transfers and swaps.
+
+private key
+secret key
+    A secret number that allows Ethereum users
+    to prove ownership of an account or
+    contracts, by producing a digital
+    signature (see public key, address,
+    ECDSA).
+
+proof of stake
+proof-of-stake
+PoS
+    A method by which a cryptocurrency
+    blockchain protocol aims to achieve
+    distributed consensus.
+    
+    PoS asks users to prove ownership of a
+    certain amount of cryptocurrency (their
+    "stake" in the network) in order to be
+    able to participate in the validation of
+    transactions.
+
+proof of work
+PoW
+    A piece of data (the proof) that requires
+    significant computation to find. In
+    Ethereum, miners must find a numeric
+    solution to the Ethash algorithm that
+    meets a network-wide difficulty target.
+
+public key
+    A number, derived via a one-way function
+    from a private key, which can be shared
+    publicly and used by anyone to verify a
+    digital signature made with the
+    corresponding private key.
+
+receipt
+    Data returned by an Ethereum client to
+    represent the result of a particular
+    transaction, including a hash of the
+    transaction, its block number, the amount
+    of gas used, and, in case of deployment of
+    a smart contract, the address of the
+    contract.
+
+re-entrancy attack
+    An attack that consists of an attacker
+    contract calling a victim contract
+    function in such a way that during
+    execution the victim calls the attacker
+    contract again, recursively. This can
+    result, for example, in the theft of funds
+    by skipping parts of the victim contract
+    that update balances or count withdrawal
+    amounts.
+
+reward
+    An amount of ether included in each new
+    block as a reward by the network to the
+    miner who found the proof-of-work
+    solution.
+
+Recursive Length Prefix (RLP)
+    An encoding standard designed by the
+    Ethereum developers to encode and
+    serialize objects (data structures) of
+    arbitrary complexity and length.
+
+rollups
+    A type of layer 2 scaling solution that
+    batches multiple transactions and submits
+    them to the Ethereum main chain in a
+    single transaction. This allows for
+    reductions in gas costs and increases in
+    transaction throughput. There are
+    Optimistic and Zero-knowledge rollups
+    which use different security methods to
+    offer these scalability gains.
+
+Serenity
+    The fourth and final development stage of
+    Ethereum.
+
+Secure Hash Algorithm
+SHA
+    A family of cryptographic hash functions
+    published by the National Institute of
+    Standards and Technology (NIST).
+
+shard
+shard chain
+    A proof-of-stake chain that is coordinated
+    by the Beacon Chain and secured by
+    validators. There will be 64 added to the
+    network as part of the Eth2 shard chain
+    upgrade. Shard chains will offer increased
+    transaction throughput for Ethereum by
+    providing additional data to layer 2
+    solutions like optimistic rollups and ZK
+    rollups.
+
+sidechain
+    A scaling solution that uses a separate
+    chain with different, often faster,
+    consensus rules. A bridge is needed to
+    connect these sidechains to mainnet.
+    Rollups also use sidechains, but they
+    operate in collaboration with mainnet
+    instead.
+
+singleton
+    A computer programming term that describes
+    an object of which only a single instance
+    can exist.
+
+slot
+    A period of time (12 seconds) in which a
+    new Beacon Chain and shard chain block can
+    be proposed by a validator in the
+    proof-of-stake system. A slot may be
+    empty. 32 slots make up an epoch.
+
+Solidity
+    A procedural (imperative) programming
+    language with syntax that is similar to
+    JavaScript, C++, or Java. The most popular
+    and most frequently used language for
+    Ethereum smart contracts. Created by Dr.
+    Gavin Wood.
+
+Solidity inline assembly
+    EVM assembly language in a Solidity
+    program. Solidity's support for inline
+    assembly makes it easier to write certain
+    operations.
+
+Spurious Dragon
+    A hard fork of the Ethereum blockchain,
+    which occurred at block 2,675,000 to
+    address more denial-of-service attack
+    vectors and clear state (see Tangerine
+    Whistle). Also, a replay attack protection
+    mechanism (see nonce).
+
+stablecoin
+    An ERC-20 token with a value pegged to
+    another asset's value.
+    
+    There are stablecoins backed by fiat
+    currency like dollars, precious metals
+    like gold, and other cryptocurrencies like
+    Bitcoin.
+
+staking
+    Depositing a quantity of ether (your
+    stake) to become a validator and secure
+    the network.
+    
+    A validator checks transactions and
+    proposes blocks under a proof-of-stake
+    consensus model.
+    
+    Staking gives you an economic incentive to
+    act in the best interests of the network.
+    
+    You'll get rewards for carrying out your
+    validator duties, but lose varying amounts
+    of ETH if you don't.
+
+state channels
+    A layer 2 solution where a channel is set
+    up between participants, where they can
+    transact freely and cheaply.
+    
+    Only a transaction to set up the channel
+    and close the channel is sent to mainnet.
+    
+    This allows for very high transaction
+    throughput, but does rely on knowing
+    number of participants up front and
+    locking up of funds.
+
+payment channel
+    [state channel]
+
+    In fact, state channels are just a more
+    general application of the same underlying
+    technique.
+    
+    In a payment channel, we track the state
+    of payments between parties.
+    
+    In a state channel, we track the state of
+    any arbitrary program between parties —
+    which could include payments.
+
+
+    https://medium.com/celer-network/statechannel-c6fad40780fa#:~:text=In%20fact%2C%20state%20channels%20are,parties%20%E2%80%94%20which%20could%20include%20payments.
+
+szabo
+    A denomination of ether. 1 szabo = 1012
+    wei, 106 szabo = 1 ether.
+
+Tangerine Whistle
+    A hard fork of the Ethereum blockchain,
+    which occurred at block 2,463,000 to
+    change the gas calculation for certain
+    I/O-intensive operations and to clear the
+    accumulated state from a denial-of-service
+    attack, which exploited the low gas cost
+    of those operations.
+
+testnet
+    Short for "test network," a network used
+    to simulate the behavior of the main
+    Ethereum network (see mainnet).
+
+token standard
+    Introduced by ERC-20 proposal, this
+    provides a standardized smart contract
+    structure for fungible tokens. Tokens from
+    the same contract can be tracked, traded,
+    and are interchangable, unlike NFTs.
+
+transaction
+    Data committed to the Ethereum Blockchain
+    signed by an originating account,
+    targeting a specific address. The
+    transaction contains metadata such as the
+    gas limit for that transaction.
+
+transaction fee
+    A fee you need to pay whenever you use the
+    Ethereum network.
+    
+    Examples include sending funds from your
+    wallet or a dapp interaction, like
+    swapping tokens or buying a collectible.
+    
+    You can think of this like a service
+    charge.
+    
+    This fee will change based on how busy the
+    network is.
+    
+    This is because miners, the people
+    responsible for processing your
+    transaction, are likely to prioritise
+    transactions with higher fees – so
+    congestion forces the price up.
+    
+    At a technical level, your transaction fee
+    relates to how much gas your transaction
+    requires.
+    
+    Reducing transaction fees is a subject of
+    intense interest right now.
+    
+    See Layer 2
+
+Turing complete
+    A concept named after English
+    mathematician and computer scientist Alan
+    Turing- a system of data-manipulation
+    rules (such as a computer's instruction
+    set, a programming language, or a cellular
+    automaton) is said to be "Turing complete"
+    or "computationally universal" if it can
+    be used to simulate any Turing machine.
+
+validator
+    A node in a proof-of-stake system
+    responsible for storing data, processing
+    transactions, and adding new blocks to the
+    blockchain. To active validator software,
+    you need to be able to stake 32 ETH.
+
+Validity proof
+    A security model for certain layer 2
+    solutions where, to increase speed,
+    transactions are rolled up into batches
+    and submitted to Ethereum in a single
+    transaction. The transaction computation
+    is done off-chain and then supplied to the
+    main chain with a proof of their validity.
+    This method increases the amount of
+    transactions possible while maintaining
+    security. Some rollups use fraud proofs.
+
+Validium
+    A layer 2 solution that uses validity
+    proofs to improve transaction throughput.
+    Unlike Zero-knowlege rollups, Validium
+    data isn't stored on layer 1 mainnet.
+
+Vyper
+    A high-level programming language with
+    Python-like syntax. Intended to get closer
+    to a pure functional language. Created by
+    Vitalik Buterin.
+
+wallet
+    Software that holds private keys. Used to
+    access and control Ethereum accounts and
+    interact with smart contracts. Keys need
+    not be stored in a wallet, and can instead
+    be retrieved from offline storage (i.e. a
+    memory card or paper) for improved
+    security. Despite the name, wallets never
+    store the actual coins or tokens.
+
+Web3
+    The third version of the web. First
+    proposed by Dr. Gavin Wood, Web3
+    represents a new vision and focus for web
+    applications- from centrally owned and
+    managed applications, to applications
+    built on decentralized protocols (see
+    Dapp).
+
+wei
+    The smallest denomination of ether. 1018
+    wei = 1 ether.
+
+Zero-knowledge rollup
+ZK-Rollup
+ZK Rollup
+    https://youtu.be/XW0QZmtbjvs?t=4669
+
+    A rollup of transactions that use validity
+    proofs to offer increased layer 2
+    transaction throughput while using the
+    security provided by mainnet (layer 1).
+
+    Although they can't handle complex
+    transaction types, like Optimistic
+    rollups, they don't have latency issues
+    because transactions are provably valid
+    when submitted.
+
+optimistic rollups
+    https://youtu.be/XW0QZmtbjvs?t=4656
+
+    Sit in parallel to the main Ethereum chain
+    on layer 2.
+    
+    They can offer improvements in scalability
+    because they don't do any computation by
+    default.
+    
+    With Optimistic rollups, transactions are
+    written to the main Ethereum chain as
+    calldata , optimising them further by
+    reducing the gas cost.
+
+yield farming
+    Yield farming, also referred to as
+    liquidity mining, is a way to generate
+    rewards with cryptocurrency holdings.
+    
+    In simple terms, it means locking up
+    cryptocurrencies and getting rewards.
+    
+    In some sense, yield farming can be
+    paralleled with staking.
+
+yearn
+yearn finance
+    A suite of products in Decentralized
+    Finance (DeFi) that provides lending
+    aggregation, yield generation, and
+    insurance on the Ethereum blockchain.
+
+    The protocol is maintained by various
+    independent developers and is governed by
+    YFI holders.
+
+web3.py
+    A Python library for interacting with
+    Ethereum, inspired by
+    web3.js.
+
+    https://github.com/ethereum/web3.py
+
+web3.js
+    A JavaScript library for interacting with
+    Ethereum
+
+    https://github.com/ethereum/web3.js
+
+GHOST
+GHOST protocol
+Greedy Heaviest Observed Subtree
+    http://www.cs.huji.ac.il/~avivz/pubs/13/btcscalabilityfull.pdf
+
+    The Ethereum client P2P protocol is a
+    fairly standard cryptocurrency protocol,
+    and can just as easily be used for any
+    other cryptocurrency; the only
+    modification is the introduction of the
+    GHOST protocol first introduced by Yonatan
+    Sompolinsky and Aviv Zohar.
+
+    The motivation for and implementation of
+    GHOST will be described in more detail
+    below.
+    
+    The Ethereum client will be entirely
+    reactive; it will not do anything by
+    itself (except for the networking daemon
+    maintaining connections) unless provoked.
+    
+    However, the client will also be more
+    powerful; unlike bitcoind, which only
+    stores a limited amount of data about the
+    blockchain, the Ethereum client will also
+    act as a fully functional backend for a
+    block explorer.
+
+Mist
+    https://github.com/ethereum/mist/releases
+
+    A browser to browse dApps hosted in cloud.
+    
+    It can be used as a wallet manage as well.
+
+Ganache
+    Alocal in-memory blockchain.
+
+truffle
+    Project template generator for ethereum.
+
+    https://www.trufflesuite.com/tutorial
+
+pet-shop
+    A truffle box.
+
+    https://www.trufflesuite.com/boxes/pet-shop
+
+migration
+    Whenever we deploy smart contracts to the
+    blockchain, we are updating the
+    blockchain's state, and therefore need a
+    migration.
+
+    ewwlinks +/"migrations directory" "https://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial/"
+
+    $MYGIT/mullikine/semiosis-dapp/migrations
+
+OpenZeppelin
+    https://github.com/OpenZeppelin/openzeppelin-contracts
+
+totalSupply
+    [view]
+
+    Returns the amount of tokens in existence.
+
+    Returns the total supply of tokens in the
+    contract.
+
+        function totalSupply() external view returns (uint256);
+    
+    This value is returned using the most
+    common type in Ethereum, unsigned 256 bits
+    (256 bits is the native word size of the
+    EVM).
+    
+    This function is also a view.

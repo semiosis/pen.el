@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Romans" "2:2-4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "13:14" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "8:6" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "8:6-7" "#" "<==" "zsh"
+cd /;  "Romans" "8:6-9" "#" "<==" "zsh"
+cd /;  "Romans" "8:6-9" "#" "<==" "zsh"

@@ -1,0 +1,47 @@
+contentful
+    More than a headless CMS, Contentful is
+    the API-first content management platform
+    to create, manage and publish content on
+    any digital channel.
+
+cloudcannon
+    [git CMS]
+
+    sync, build, edit host.
+
+headless CMS
+    NLG: A type of CMS (Content Management
+    System) where the administrator/owner of
+    the site does not need to know any code.
+
+git CMS
+
+JAMStack
+    [#static site generation]
+
+    Jamstack is a new way of building websites
+    and applications that delivers improved
+    performance, higher security, lower cost
+    of scaling, and a better developer
+    experience.
+    
+    Jamstack allows for delivery of sites by
+    pre-rendering files and serving them
+    directly from a CDN, removing the
+    requirement to manage or run web servers.
+    
+    In this tech talk, learn about how
+    JAMstack application works to benefit the
+    framework.
+    
+    We cover some of the best practices of
+    using JAMstack and the ideal workflow for
+    deploying JAMStack applications.
+    
+    We also walk-through a complete
+    deployment, showing how to configure and
+    deploy a JAMstack application.
+    
+    Lastly we will show how a JAMstack
+    application can be enhanced by using
+    functions.

@@ -1,0 +1,531 @@
+HTTP/1.1 200 OK
+Date: Tue, 19 Sep 2023 02:55:17 GMT
+Server: Apache
+Vary: Accept-Encoding
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/Main-Barebones.dwt" codeOutsideHTMLIsLocked="true" -->
+<head>
+
+<!-- InstanceBeginEditable name="metacharset" -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SwordSearcher Bible Software: For Believing Study of God's Word.</title>
+<!-- InstanceEndEditable -->
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+<link rel="dns-prefetch" href="https://static.getclicky.com/">
+
+<link href="theme2018/dist/ss.min.css?cachebust=3" rel="stylesheet">
+
+<link href="favicon.ico" rel="shortcut icon">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FR40B7RQ77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FR40B7RQ77');
+</script>
+
+
+<!-- InstanceBeginEditable name="head" -->
+<meta property="og:title" content="SwordSearcher Bible Software">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://www.swordsearcher.com">
+<meta property="og:description" content="Software for Believing Bible Study. Fast, easy to use, and comprehensive.">
+<meta property="og:image" content="https://www.swordsearcher.com/img/og-image1.png">
+<meta property="og:site_name" content="SwordSearcher Bible Software">
+<meta property="fb:admins" content="831568083">
+<meta name="Description" content="SwordSearcher Bible Software Official Site: Fast, easy to use, and comprehensive, with the tools and library you need for effective and rewarding study of God's word.">
+<meta name="verify-v1" content="0/TGX7Xy5wOf8tVeQ6ypOtZTGdIw+QT2dKc3HTubsRw=">
+<link rel="canonical" href="https://www.swordsearcher.com/">
+<style>
+.pull-quote a:hover {
+	text-decoration:none;
+}
+.semi-bold {
+	font-weight:600;
+}
+h1, h2, h3, h4, h5 {
+	line-height:1.3;
+	font-weight:300;
+}
+.block-hero {
+	margin-top:1px;
+	background-color:#0f0408;
+	padding:0;
+}
+.hero-container {
+	height:250px;
+	background-image:url(img18/hero-bg-400y.jpg);
+	background-position: 100% center;
+	background-size:auto 100%;
+	background-repeat:no-repeat;
+}
+.block-hero .tagline {
+	font-weight:500;
+	text-transform: uppercase;
+	color:#ddd;
+	text-shadow:0px 0px 2px #000, 0px 1px 1px #000;
+}
+.block-hero .tagline {
+	font-size:16px;
+	line-height:2;
+	letter-spacing:4px;
+}
+.hero-shade {
+}
+.hero-inner {
+	height:100%;
+	padding:65px 10px 0 10px;
+}
+ @media (max-width: 767px) {
+.hero-shade {
+	background-color:rgba(0,0,0,.45);
+	height:100%;
+	margin:0 -10px;
+}
+.hero-inner {
+	padding-top:60px;
+	margin:0 auto;
+	max-width:90%;
+}
+}
+ @media (min-width:1024px) {
+.block-hero {
+	background-position: center center;
+}
+.hero-container {
+	height:300px;
+}
+.hero-inner {
+	padding-top:95px;
+}
+}
+ @media (min-width:1200px) {
+.hero-container {
+	height:350px;
+}
+.hero-inner {
+	padding-top:120px;
+}
+}
+.screenshot {
+	margin:30px;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,.2), 0 0 30px 0 rgba(0,0,0,.22);
+	border-radius:2px;
+	min-height:100%;
+	width:auto;
+}
+.screenbox {
+	height:400px;
+	width:2000px;
+	overflow:hidden;
+}
+.screenboxfade {
+	position:absolute;
+	width:2000px;
+	height:70%;
+	bottom:0px;
+	background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+	pointer-events:none;
+}
+@media (min-width: 768px) {
+.sm-padding-top {
+	padding-top:20px;
+}
+.screenbox-left {
+	position:absolute;
+	right:0;
+}
+.screenbox-left img {
+	position:absolute;
+	right:0;
+}
+.row-screen {
+	min-height:400px;
+	margin-top:2em;
+}
+}
+@media (max-width: 767px) {
+.screenbox {
+	width:inherit;
+	height:auto;
+	margin:auto -10px;
+	/*disable highslide on xs*/
+	pointer-events:none;
+}
+.screenbox img {
+	max-width:100%;
+	margin:auto;
+}
+.screenboxfade {
+	visibility:hidden;
+}
+.screenbox-outer {
+	box-shadow: 0 0 15px 0 rgba(0,0,0,.2), 0 0 30px 0 rgba(0,0,0,.22);
+	margin:40px auto;
+}
+}
+</style>
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="VideoJS" type="boolean" value="false" -->
+<!-- InstanceParam name="DefaultJS" type="boolean" value="true" -->
+</head>
+<body>
+<!--ZOOMSTOP-->
+<div class="stage-shelf stage-shelf-right hidden" id="shelfsidebar">
+  <nav>
+    <ul class="nav nav-bordered nav-stacked small">
+      <li><a href="/">SwordSearcher Bible Software</a></li>
+      <li><a href="video/index.html">Videos</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="resources.html">Library</a></li>
+      <li><a href="pr/newest.html">New Version 9</a></li>
+      <li class="nav-divider"></li>
+      <li><a href="order.html">Buy Full Version</a></li>
+      <li><a href="download.html">Free Evaluation Download</a></li>
+      <li><a href="upgrade.html">Upgrade Info</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="faq.html">Frequently Asked Questions</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="nav-divider"></li>
+      <li><a href="contact.html">Contact &amp; Support</a></li>
+      <li><a href="requirements.html">System Requirements</a></li>
+      <li><a href="manual.html">User Manual</a></li>
+      <li><a href="https://forums.swordsearcher.com/">Forum</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="stage" id="stage">
+  <div class="container-fluid" style="background:linear-gradient(#323f46,#111e25)">
+    <nav class="navbar navbar-transparent">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+              data-target="#stage" data-toggle="stage" data-distance="-250"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a href="/"><img src="theme2018/swordsearcher-vector.svg" class="ss-main-title" alt="SwordSearcher Home"></a></div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="pr/newest.html" class="text-gold">New Version 9</a></li>
+            <li><a href="video/index.html">Videos</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="resources.html">Library</a></li>
+            <li><a href="download.html"><span class="icon icon-download"></span><span class="hidden-sm"> Download</span></a></li>
+            <li><a href="order.html"><span class="icon icon-shopping-cart"></span><span class="hidden-sm"> Buy</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <!--main--> 
+  <!--ZOOMRESTART--> 
+  <!-- InstanceBeginEditable name="MainContent" -->
+  <div class="block block-inverse block-hero">
+    <div class="container hero-container">
+      <div class="hero-shade">
+        <div class="hero-inner">
+          <div class="row">
+            <div class="col-sm-6">
+              <div data-transition="entrance" style="transform: scale(0.90)"> <img src="theme2018/swordsearcher-title.svg" alt="SwordSearcher" style="width:100%">
+                <h1 class="tagline text-center">Software&nbsp;for <span style="color:#f1d693">Believing</span> Bible&nbsp;Study</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="overflow-x:hidden;overflow-y:hidden">
+    <div class="container"> 
+      <!--image on right-->
+      <div class="row row-screen">
+        <div class="col-sm-6 sm-padding-top">
+          <h2>Find out why so many people study the Bible with SwordSearcher.</h2>
+          <div class="row p-x-0 m-t">
+            <div class="col-xs-9 col-xs-offset-3">
+              <p class="text-center"><a href="download.html" class="btn btn-default btn-sm w-full" ><span class="icon icon-download"></span> Download Evaluation Version</a></p>
+            </div>
+            <div class="col-xs-3"><a href="img18/swordsearcher-dvd-box-big.jpg" class="highslide center-block clicky_ignore" onclick="return hs.expand(this)"><img src="img18/swordsearcher-dvd-box-big.jpg" class="center-block img-responsive" alt="SwordSearcher DVD box"></a></div>
+            <div class="col-xs-9">
+              <p class="text-center"><a href="order.html" class="btn btn-default btn-sm w-full"><span class="icon icon-shopping-cart"></span> Buy the Full Version ($69.95)<br>
+                <span class="small">100% Satisfaction Guarantee<br>
+                DVD or Download</span></a></p>
+              <p class="text-center"><a href="video/iframes/3reasons.html" class="highslide btn btn-default btn-sm w-full" onclick="return hs.htmlExpand(this, GetVideoParamsForHighslide(640, 480))"><span class="icon icon-video"></span> Watch quick intro video</a></p>
+              <p class="small text-muted text-center m-b-0"><span class="icon icon-windows-store"></span> For Microsoft Windows.</p>
+            </div>
+          </div>
+          <h6 class="m-y-0 text-xs-center text-sm-right text-primary">Read about it <span class="icon icon-chevron-down" style="font-size:3em;vertical-align:middle"></span></h6>
+        </div>
+        <div class="col-sm-6" data-transition="entrance" style="transform: translate(20px,20px)">
+          <div class="screenbox-outer">
+            <div class="screenbox"><a href="img18/mainscreen-huge.png" class="highslide center-block clicky_ignore" onclick="return hs.expand(this)"><img src="img18/mainscreen-huge.png" alt="SwordSearcher hero screen" class="screenshot"></a>
+              <div class="screenboxfade"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--image on left-->
+      <div class="row row-screen">
+        <div class="col-sm-6 col-sm-push-6">
+          <h2>Unrivaled searching power.</h2>
+          <p>Find verses <span class="semi-bold">instantly</span> by words, phrase, and more. Sometimes you just need help &quot;finding that verse,&quot; but often you need a lot more. Search all word forms automatically. Find words even when you don't know how they are spelled. Find words &quot;near each other&quot; even when separated by verses. Locate &quot;related verses&quot; with word selection in a passage you are studying. Bible search results can be viewed in full-verse mode or in a classic concordance mode. <a href="bible-search.html">Read more about Bible search</a>.</p>
+          <p>And, you can also search through your entire reference library&mdash;or just parts of it you want&mdash;in seconds.</p>
+        </div>
+        <div class="col-sm-6 col-sm-pull-6" data-transition="entrance" style="transform: translate(-20px,20px)">
+          <div class="screenbox-outer">
+            <div class="screenbox screenbox-left"><a href="img18/searchscreens.png" class="highslide center-block clicky_ignore" onclick="return hs.expand(this)"><img src="img18/searchscreens.png" alt="SwordSearcher search screens" class="screenshot"></a>
+              <div class="screenboxfade"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--image on right-->
+      <div class="row row-screen">
+        <div class="col-sm-6">
+          <h2>A huge study library.</h2>
+          <p>Hundreds of volumes are just a click away. SwordSearcher's innovative <span class="semi-bold">Verse Guide</span> and <span class="semi-bold">Topic Guide</span> technology make looking up information super-fast with relevant results. An entire lifetime library of books, dictionaries, and commentaries can be searched in seconds and indexed by verse reference, <span class="mark">and it's all included</span>. You won't be nickel-and-dimed just to build your library.</p>
+          <p><a href="resources.html" class="btn btn-default">See what you get</a> <a href="video/iframes/HowSwordSearcherWorksWithBooks.html" onclick="return hs.htmlExpand(this, GetVideoParamsForHighslide(1024, 720))" class="highslide btn btn-default"><span class="icon icon-video"></span> Watch this demo</a></p>
+        </div>
+        <div class="col-sm-6" data-transition="entrance" style="transform: translate(20px,20px)">
+          <div class="screenbox-outer">
+            <div class="screenbox">
+              <div class="center-block"><img src="img18/study-library.jpg" alt="Bookshelf with lots of old books" class="screenshot"></div>
+              <div class="screenboxfade"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--image on left-->
+      <div class="row row-screen">
+        <div class="col-sm-6 col-sm-push-6">
+          <h2>Discovery.</h2>
+          <p>God's word is amazing. We believe that modern Bible software should be more about the scriptures than the reference material. To that end, SwordSearcher is replete with <span class="mark">scripture discovery features</span> like a <span class="semi-bold">Word Cloud Generator</span>, a <span class="semi-bold">Word Tree Explorer</span>, and the most useful collection of <span class="semi-bold">cross-references</span> ever published, integrated right into the King James Bible. And of course, all of this is quickly out-of-the-way when all you want to see is the text of the Bible.</p>
+          <p style="line-height:2.75"><a href="video/iframes/word-trees.html" class="highslide btn btn-default" onclick="return hs.htmlExpand(this, GetVideoParamsForHighslide(1920, 1080))"><span class="icon icon-video"></span> Word Trees</a> <a href="video/iframes/kjv-tsk.html" class="highslide btn btn-default" onclick="return hs.htmlExpand(this, GetVideoParamsForHighslide(1024, 720))"><span class="icon icon-video"></span> Cross-References</a> <a href="video/iframes/BibleWordCloudGenerator.html" class="highslide btn btn-default" onclick="return hs.htmlExpand(this, GetVideoParamsForHighslide(1024, 720))"><span class="icon icon-video"></span> Word Clouds</a></p>
+        </div>
+        <div class="col-sm-6 col-sm-pull-6" data-transition="entrance" style="transform: translate(-20px,20px)">
+          <div class="screenbox-outer">
+            <div class="screenbox screenbox-left"><a href="img18/word-tree.png" class="highslide center-block clicky_ignore" onclick="return hs.expand(this)"><img src="img18/word-tree.png" alt="Word Tree in Psalm 119" class="screenshot"></a>
+              <div class="screenboxfade"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--image on right-->
+      <div class="row row-screen">
+        <div class="col-sm-6">
+          <h2>Your writings, too.</h2>
+          <p>Record your own studies in SwordSearcher's full-featured editor.</p>
+          <p>And here's the thing: <span class="semi-bold">Your own text works just like the other books and commentaries in the library.</span> <span class="mark">When you type a verse reference in your document, it is automatically linked as you type,</span> and your content is immediately accessible like the other library material in the program. This means it is instantly searchable and indexed by verse reference in the Verse Guide. You can create as many personal books or commentaries as you need to organize your material. Thousands use SwordSearcher to save everything from small notes to prepared sermons.</p>
+          <p><a href="video/iframes/usermodules82.html" class="highslide btn btn-default" onclick="return hs.htmlExpand(this, GetVideoParamsForHighslide(1920, 1080))"><span class="icon icon-video"></span> Creating your own content</a></p>
+        </div>
+        <div class="col-sm-6" data-transition="entrance" style="transform: translate(20px,20px)">
+          <div class="screenbox-outer">
+            <div class="screenbox"><a href="img18/user-editor.png" class="highslide center-block clicky_ignore" onclick="return hs.expand(this)"><img src="img18/user-editor.png" alt="SwordSearcher hero screen" class="screenshot"></a>
+              <div class="screenboxfade"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block p-x-0 z-depth-2 m-y-md" style="background-color:#f0f3f4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-primary" style="font-size:2em; transform:scale(0.5)" data-transition="entrance"><span class="icon icon-flow-cascade"></span></div>
+              <h3 class="m-t-0">Verse Guide</h3>
+            </div>
+            <p>When you are studying a passage, the Verse Guide is there to give you an index to everything in your entire study library that references a verse in the passage. You don't have too guess what  headings in a dictionary might be relevant to your study, nor is it necessary to try to search though books for verse links.</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-primary" style="font-size:2em; transform:scale(0.5)" data-transition="entrance"><span class="icon icon-mouse-pointer"></span></div>
+              <h3 class="m-t-0">StudyClick&trade;</h3>
+            </div>
+            <p>Turn virtually any word into a link. You decide what the link does&mdash;show the first-and-last use in a pop-up, do a Bible search, a dictionary lookup, and more. StudyClick is a breakthrough in application design that leverages the power of your mouse to save you time.</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-primary" style="font-size:2em; transform:scale(0.5)" data-transition="entrance"><span class="icon icon-open-book"></span></div>
+              <h3 class="m-t-0">Bible Margin</h3>
+            </div>
+            <p>How can you tell when one of your favorite books or commentaries has information on a verse? It's easy with the Bible Margin. Right next to each verse, you will see links to relevant information in your study library. You choose what is included in the margin, and when you don't want to see it, one click hides it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block p-x-0 p-y">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="text-center">
+              <div class="text-primary" style="font-size:2em; transform:scale(0.5)" data-transition="entrance"><span class="icon icon-publish"></span></div>
+              <h3 class="m-t-0">Deliberate design.</h3>
+            </div>
+            <p>SwordSearcher began in 1994 and has been regularly developed and improved since then. We take very seriously the honor to create tools that you use in your study of the Holy Bible. Great care is taken to make software that works well and is not difficult to learn and use. SwordSearcher is a serious  PC application and leverages the power of the platform to make your computer truly work for you in your study, whether it is a small laptop or a desktop rig with multiple monitors. </p>
+            <p class="text-center"><a href="about.html" class="btn btn-default">Read more about us</a></p>
+          </div>
+          <div class="col-sm-6">
+            <div class="text-center">
+              <div class="text-primary" style="font-size:2em; transform:scale(0.5)" data-transition="entrance"><span class="icon icon-chevron-thin-down"></span></div>
+            </div>
+            <blockquote class="pull-quote"> <cite style="color:#6d5b3e">2 Timothy 2:15, KJV</cite>
+              <div>&ldquo;Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.&rdquo;</div>
+            </blockquote>
+            <blockquote class="pull-quote"> <cite style="color:#6d5b3e">Ephesians 6:17, KJV</cite>
+              <div>&ldquo;Take the helmet of Salvation, and the sword of the Spirit, which is the word of God&rdquo;</div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-y-md p-x-0 p-y-0 ss-bg-old z-depth-2" style="font-size:16px">
+      <div class="container">
+        <div class="col-sm-4 p-x-0 p-y-md">
+          <blockquote class="pull-quote">
+            <div>&ldquo;I use SwordSearcher not only in my own Personal Bible Study, but at my church where I teach on different aspects of the Bible. I really like the speed and efficient manner I can quickly find Bible verses. I have found it to be one of the easiest and fastest reference guides that I have ever used.&rdquo;</div>
+            <cite><a href="testimonials/user-comments-01.html">Carson Wilson</a></cite> </blockquote>
+        </div>
+        <div class="col-sm-4 p-x-0 p-y-md">
+          <blockquote class="pull-quote">
+            <div>&ldquo;SwordSearcher is to the Bible what Firefox is to the web. I've never seen such attention to detail as it pertains to the user experience.&rdquo;</div>
+            <cite><a href="testimonials/user-comments-02.html">Nathan Smith</a></cite> </blockquote>
+        </div>
+        <div class="col-sm-4 p-x-0 p-y-md">
+          <blockquote class="pull-quote">
+            <div>&ldquo;The most versatile Bible program I have ever seen... It tells me which works refer to the verse or word in question, so I don't have to go poring through each resource... Thank you for putting together such a genuinely beneficial product.&rdquo;</div>
+            <cite><a href="testimonials/user-comments-03.html">David W. Daniels</a></cite> </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="block p-x-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center">
+              <p><a href="bible-study-software-design.html" class="btn btn-default">SwordSearcher's design</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <p><a href="features.html" class="btn btn-default">More features</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <p><a href="video/index.html" class="btn btn-default">More videos</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- InstanceEndEditable --> 
+  <!--/main--> 
+  <!--ZOOMSTOP--> 
+  
+  <!--Footer-->
+  <div class="block block-bordered ss-footer" id="ssfooter">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="ss-eph">...the sword of the Spirit, which is the word of God. &mdash;Eph&nbsp;6:17&nbsp;(KJV)</p>
+          </div>
+        </div>
+        <div class="row">
+          <nav>
+            <div class="col-sm-4 col-lg-3">
+              <ul class="list-unstyled">
+                <li><a href="/">SwordSearcher Bible Software</a></li>
+                <li><a href="download.html">Free Evaluation Download</a></li>
+                <li><a href="order.html">Buy Full Version</a></li>
+                <li><a href="upgrade.html">Upgrade Info</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-2 col-lg-3">
+              <ul class="list-unstyled">
+                <li><a href="video/index.html">Videos</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="resources.html">Library</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <ul class="list-unstyled">
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="faq.html">Frequently Asked Questions</a></li>
+                <li><a href="articles.html">Articles &amp; How-to</a></li>
+                <li><a href="linking.html">Link to SwordSearcher</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <ul class="list-unstyled">
+                <li><a href="contact.html">Contact &amp; Support</a></li>
+                <li><a href="requirements.html">System Requirements</a></li>
+                <li><a href="manual.html">User Manual</a></li>
+                <li><a href="nl/subscribe.html">Get our Newsletter</a></li>
+                <li><a href="https://forums.swordsearcher.com/">Forum</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <form action="search/index.php" method="get" name="sitesearch" id="siteSearchForm">
+              <div class="input-group input-group-sm">
+                <label class="input-group-addon ss-xs" for="searchinput" id="inputlabel"><span class="icon icon-magnifying-glass"></span><span class="sr-only">Site Search</span></label>
+                <input name="zoom_query" type="text" class="form-control ss-xs" placeholder="Site Search" id="searchinput" required>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 m-t-md">
+            <p>&copy;2023 <a href="https://www.studylamp.com">StudyLamp Software LLC</a>. All rights reserved. SwordSearcher&reg; is a registered trademark.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--/Footer--> 
+</div>
+<!--/stage--> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="theme2018/dist/toolkit.min.js"></script>
+ 
+ 
+<!-- InstanceBeginEditable name="BodyEnd" --> <!-- InstanceEndEditable --> 
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(201562);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/201562ns.gif" /></p></noscript>
+<!--ZOOMRESTART-->
+</body>
+<!-- InstanceEnd --></html>

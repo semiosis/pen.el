@@ -1,0 +1,25 @@
+task: "on this day"
+tags: fun
+# Semiotic, the company was created
+doc: "State the significance of this day with regard to history"
+prompt-version: 1
+prompt: |+
+  Date: <date>
+  <:pp>On this day in history,
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "date"
+var-defaults:
+- "(pen-ask (pen-snc \"date\"))"
+examples:
+- "Fri 31 Dec 2021"
+info: on
+filter: off
+completion: off
+insertion: off

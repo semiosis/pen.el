@@ -1,0 +1,10 @@
+The above code is a simple game that asks the user to guess a number between 1 and 4.
+The game will run until the user guesses the correct number.
+
+The gameState is a tuple of the current time and the number of guesses.
+
+The gameLoop function takes the gameState and returns a new gameState.
+The new gameState is the old gameState plus one guess.
+The new gameState is also the old gameState modulo 5.
+
+The print statement prints

@@ -1,0 +1,20 @@
+transparent proxy
+inline proxy
+intercepting proxy
+forced proxy
+    A server that intercepts the connection
+    between an end-user or device and the
+    internet.
+
+    It is called “transparent” because it does
+    so without modifying requests and
+    responses.
+
+    Squid Transparent Proxy Server is a
+    popular open source transparent proxy
+    tool.
+
+SSL Bumping
+    Squid service that is used for
+    intercepting the content of encrypted
+    HTTPS sessions.

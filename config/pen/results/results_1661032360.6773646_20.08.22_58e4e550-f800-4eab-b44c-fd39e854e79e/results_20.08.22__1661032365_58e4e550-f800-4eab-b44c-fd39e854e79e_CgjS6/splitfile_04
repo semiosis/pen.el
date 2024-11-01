@@ -1,0 +1,16 @@
+
+
+--
+
+weatherForecast :: [String]
+weatherForecast = [ "sunny" , "yucky" ]
+
+
+main :: IO ()
+main = do
+
+--
+
+main :: IO ()
+
+main

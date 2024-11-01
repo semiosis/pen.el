@@ -1,0 +1,7 @@
+beat
+celery beat
+    [scheduler]
+    
+    It kicks off tasks at regular intervals,
+    that are then executed by available worker
+    nodes in the cluster.

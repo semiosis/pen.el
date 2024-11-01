@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=bqSsrJl9Jok" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=COTBu3fBtRs" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.gotquestions.org/Jesus-sinless.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "wget" "-qO-" "https://www.youtube.com/watch?v=xXp3oFSoL1Y" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=8O7LmJFy4Y0" "#" "<==" "pen-ci"

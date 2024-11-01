@@ -1,0 +1,233 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 9159
+Connection: keep-alive
+Date: Fri, 25 Aug 2023 10:58:49 GMT
+Server: Apache
+Content-Location: search.php
+TCN: choice
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 f1d7bef7d2e148025cea4670117d1f4a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD1-C2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: CzRexuqK-AplYbt1Aw1NAYt1g71o3n0eqq7Ht2wB_RLnZraFxpl6Lw==
+Age: 3
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>John 1:18 Cross References (37 Verses)</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/labs/cross-references/search?q=John+1%3A18" />
+<style type="text/css">
+	.votes-1 { background: #fee; }
+	.votes-2 { background: #fdd; }
+	.votes-3 { background: #fcc; }
+	.votes-4 { background: #fbb; }
+	.votes-5 { background: #faa; }
+	div.crossrefs { clear: right; }
+	div.crossrefs div { width:300px; height:200px; float:left; margin:auto 10px 10px auto; padding:5px; overflow:auto; }
+	div.crossrefs div h3 {color:#000; margin-top:0; margin-bottom:1em; }
+	div.crossrefs div h3 a {color:#000; }
+	div.crossrefs p {margin-bottom:0;}
+	div.crossrefs div.crossref-verse { background: #f77; border: 2px solid #000; width: 296px; height: 196px;}
+	span.vote { font-size:80%; float:right; font-weight:normal; padding-top:2px;}
+	span.vote a {background: #fee; border:1px solid #000; padding:2px; color:#000; text-decoration:none;}
+	@media print {
+		div.crossrefs div, div.crossrefs div.crossref-verse { width:auto; height:auto; float:none; margin:auto; padding:auto; }
+		form, span.vote, span.links, #head { display:none; }
+		h1 { font-size: 100%; }
+	}
+</style>
+</head>
+<body class="labs inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<h1>John 1:18 Cross References</h1>
+<form action="/labs/cross-references/search">
+<p><input type="text" name="q" size="20" value="John 1:18" /> <input type="submit" value="Go to Bible verse" />
+		<br />
+						<a href="/labs/cross-references/search?q=John+1%3A17">&laquo; John 1:17</a>
+			 |							<a href="/labs/cross-references/search?q=John+1%3A19">John 1:19 &raquo;</a>
+				| Compare: <a href="https://www.biblegateway.com/passage/?search=John+1%3A18%2CCol+1%3A15%2CJohn+6%3A46%2CMatt+11%3A27%2C1+Jn+4%3A12%2CLuke+10%3A22%2C1+Tim+6%3A16%2C1+Jn+4%3A9%2CEx+33%3A18-23%2C1+Jn+4%3A20%2C1+Jn+5%3A20%2CJohn+17%3A26%2CJohn+17%3A6%2CJohn+14%3A9%2CJohn+1%3A14%2CNum+12%3A8%2CDeut+4%3A12%2CJohn+12%3A41%2CIsa+6%3A1-3%2CEx+34%3A5-7%2CEx+23%3A21%2C1+Tim+1%3A17%2CEzek+1%3A26-28%2CGen+32%3A28-30%2CGen+16%3A13%2CLam+2%3A12%2CIsa+40%3A11%2CProv+8%3A30%2CJudg+6%3A12-26%2CJosh+5%3A13-6%3A2%2CEx+3%3A4-6%2CLuke+16%3A22-23%2CJudg+13%3A20-23%2CGen+48%3A15-16%2CGen+18%3A33%2CJohn+13%3A23%2CJohn+3%3A16-18%2CHos+12%3A3-5&amp;version=NIV">NIV</a>, <a href="https://www.biblegateway.com/passage/?search=John+1%3A18%2CCol+1%3A15%2CJohn+6%3A46%2CMatt+11%3A27%2C1+Jn+4%3A12%2CLuke+10%3A22%2C1+Tim+6%3A16%2C1+Jn+4%3A9%2CEx+33%3A18-23%2C1+Jn+4%3A20%2C1+Jn+5%3A20%2CJohn+17%3A26%2CJohn+17%3A6%2CJohn+14%3A9%2CJohn+1%3A14%2CNum+12%3A8%2CDeut+4%3A12%2CJohn+12%3A41%2CIsa+6%3A1-3%2CEx+34%3A5-7%2CEx+23%3A21%2C1+Tim+1%3A17%2CEzek+1%3A26-28%2CGen+32%3A28-30%2CGen+16%3A13%2CLam+2%3A12%2CIsa+40%3A11%2CProv+8%3A30%2CJudg+6%3A12-26%2CJosh+5%3A13-6%3A2%2CEx+3%3A4-6%2CLuke+16%3A22-23%2CJudg+13%3A20-23%2CGen+48%3A15-16%2CGen+18%3A33%2CJohn+13%3A23%2CJohn+3%3A16-18%2CHos+12%3A3-5&amp;version=KJV">KJV</a>, <a href="https://www.biblegateway.com/passage/?search=John+1%3A18%2CCol+1%3A15%2CJohn+6%3A46%2CMatt+11%3A27%2C1+Jn+4%3A12%2CLuke+10%3A22%2C1+Tim+6%3A16%2C1+Jn+4%3A9%2CEx+33%3A18-23%2C1+Jn+4%3A20%2C1+Jn+5%3A20%2CJohn+17%3A26%2CJohn+17%3A6%2CJohn+14%3A9%2CJohn+1%3A14%2CNum+12%3A8%2CDeut+4%3A12%2CJohn+12%3A41%2CIsa+6%3A1-3%2CEx+34%3A5-7%2CEx+23%3A21%2C1+Tim+1%3A17%2CEzek+1%3A26-28%2CGen+32%3A28-30%2CGen+16%3A13%2CLam+2%3A12%2CIsa+40%3A11%2CProv+8%3A30%2CJudg+6%3A12-26%2CJosh+5%3A13-6%3A2%2CEx+3%3A4-6%2CLuke+16%3A22-23%2CJudg+13%3A20-23%2CGen+48%3A15-16%2CGen+18%3A33%2CJohn+13%3A23%2CJohn+3%3A16-18%2CHos+12%3A3-5&amp;version=NLT">NLT</a>, <a href="https://www.biblegateway.com/passage/?search=John+1%3A18%2CCol+1%3A15%2CJohn+6%3A46%2CMatt+11%3A27%2C1+Jn+4%3A12%2CLuke+10%3A22%2C1+Tim+6%3A16%2C1+Jn+4%3A9%2CEx+33%3A18-23%2C1+Jn+4%3A20%2C1+Jn+5%3A20%2CJohn+17%3A26%2CJohn+17%3A6%2CJohn+14%3A9%2CJohn+1%3A14%2CNum+12%3A8%2CDeut+4%3A12%2CJohn+12%3A41%2CIsa+6%3A1-3%2CEx+34%3A5-7%2CEx+23%3A21%2C1+Tim+1%3A17%2CEzek+1%3A26-28%2CGen+32%3A28-30%2CGen+16%3A13%2CLam+2%3A12%2CIsa+40%3A11%2CProv+8%3A30%2CJudg+6%3A12-26%2CJosh+5%3A13-6%3A2%2CEx+3%3A4-6%2CLuke+16%3A22-23%2CJudg+13%3A20-23%2CGen+48%3A15-16%2CGen+18%3A33%2CJohn+13%3A23%2CJohn+3%3A16-18%2CHos+12%3A3-5&amp;version=NKJV">NKJV</a>, <a href="https://www.biblegateway.com/passage/?search=John+1%3A18%2CCol+1%3A15%2CJohn+6%3A46%2CMatt+11%3A27%2C1+Jn+4%3A12%2CLuke+10%3A22%2C1+Tim+6%3A16%2C1+Jn+4%3A9%2CEx+33%3A18-23%2C1+Jn+4%3A20%2C1+Jn+5%3A20%2CJohn+17%3A26%2CJohn+17%3A6%2CJohn+14%3A9%2CJohn+1%3A14%2CNum+12%3A8%2CDeut+4%3A12%2CJohn+12%3A41%2CIsa+6%3A1-3%2CEx+34%3A5-7%2CEx+23%3A21%2C1+Tim+1%3A17%2CEzek+1%3A26-28%2CGen+32%3A28-30%2CGen+16%3A13%2CLam+2%3A12%2CIsa+40%3A11%2CProv+8%3A30%2CJudg+6%3A12-26%2CJosh+5%3A13-6%3A2%2CEx+3%3A4-6%2CLuke+16%3A22-23%2CJudg+13%3A20-23%2CGen+48%3A15-16%2CGen+18%3A33%2CJohn+13%3A23%2CJohn+3%3A16-18%2CHos+12%3A3-5&amp;version=NRSVUE">NRSVue</a>, <a href="https://www.biblegateway.com/passage/?search=John+1%3A18%2CCol+1%3A15%2CJohn+6%3A46%2CMatt+11%3A27%2C1+Jn+4%3A12%2CLuke+10%3A22%2C1+Tim+6%3A16%2C1+Jn+4%3A9%2CEx+33%3A18-23%2C1+Jn+4%3A20%2C1+Jn+5%3A20%2CJohn+17%3A26%2CJohn+17%3A6%2CJohn+14%3A9%2CJohn+1%3A14%2CNum+12%3A8%2CDeut+4%3A12%2CJohn+12%3A41%2CIsa+6%3A1-3%2CEx+34%3A5-7%2CEx+23%3A21%2C1+Tim+1%3A17%2CEzek+1%3A26-28%2CGen+32%3A28-30%2CGen+16%3A13%2CLam+2%3A12%2CIsa+40%3A11%2CProv+8%3A30%2CJudg+6%3A12-26%2CJosh+5%3A13-6%3A2%2CEx+3%3A4-6%2CLuke+16%3A22-23%2CJudg+13%3A20-23%2CGen+48%3A15-16%2CGen+18%3A33%2CJohn+13%3A23%2CJohn+3%3A16-18%2CHos+12%3A3-5&amp;version=ESV">ESV</a>
+		|
+		<a href="/labs/cross-references/">Cross references home</a>
+</p>
+</form>
+	<div class="crossrefs">
+		<div class="crossref-verse">
+		<h3>John 1:18</h3>
+		<p>No one has ever seen God; the only God, who is at the Father's side, he has made him known.</p>
+		</div>
+									<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Colossians+1%3A15">Colossians 1:15</a> <span id="c43001018.51001015-51001015" class="vote"></span></h3>
+				<p>He is the image of the invisible God, the firstborn of all creation.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+6%3A46">John 6:46</a> <span id="c43001018.43006046-43006046" class="vote"></span></h3>
+				<p>not that anyone has seen the Father except he who is from God; he has seen the Father.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Matthew+11%3A27">Matthew 11:27</a> <span id="c43001018.40011027-40011027" class="vote"></span></h3>
+				<p>All things have been handed over to me by my Father, and no one knows the Son except the Father, and no one knows the Father except the Son and anyone to whom the Son chooses to reveal him.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+John+4%3A12">1 John 4:12</a> <span id="c43001018.62004012-62004012" class="vote"></span></h3>
+				<p>No one has ever seen God; if we love one another, God abides in us and his love is perfected in us.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Luke+10%3A22">Luke 10:22</a> <span id="c43001018.42010022-42010022" class="vote"></span></h3>
+				<p>All things have been handed over to me by my Father, and no one knows who the Son is except the Father, or who the Father is except the Son and anyone to whom the Son chooses to reveal him.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+Timothy+6%3A16">1 Timothy 6:16</a> <span id="c43001018.54006016-54006016" class="vote"></span></h3>
+				<p>who alone has immortality, who dwells in unapproachable light, whom no one has ever seen or can see. To him be honor and eternal dominion. Amen.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+John+4%3A9">1 John 4:9</a> <span id="c43001018.62004009-62004009" class="vote"></span></h3>
+				<p>In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Exodus+33%3A18-23">Exodus 33:18-23</a> <span id="c43001018.02033018-02033023" class="vote"></span></h3>
+				<p>Moses said, &#8220;Please show me your glory.&#8221; And he said, &#8220;I will make all my goodness pass before you and will proclaim before you my name &#8216;The <span class="sc">Lord</span>.&#8217; And I will be gracious to whom I will be gracious, and will show mercy on whom I will show mercy. <span class="votes-5">But,&#8221; he said, &#8220;you cannot see my face, for man shall not see me and live.&#8221;</span> And the <span class="sc">Lord</span> said, &#8220;Behold, there is a place by me where you shall stand on the rock, and while my glory passes by I will put you in a cleft of the rock, and I will cover you with my hand until I have passed by.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+John+4%3A20">1 John 4:20</a> <span id="c43001018.62004020-62004020" class="vote"></span></h3>
+				<p>If anyone says, &#8220;I love God,&#8221; and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+John+5%3A20">1 John 5:20</a> <span id="c43001018.62005020-62005020" class="vote"></span></h3>
+				<p>And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+17%3A26">John 17:26</a> <span id="c43001018.43017026-43017026" class="vote"></span></h3>
+				<p>I made known to them your name, and I will continue to make it known, that the love with which you have loved me may be in them, and I in them.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+17%3A6">John 17:6</a> <span id="c43001018.43017006-43017006" class="vote"></span></h3>
+				<p>&#8220;I have manifested your name to the people whom you gave me out of the world. Yours they were, and you gave them to me, and they have kept your word.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+14%3A9">John 14:9</a> <span id="c43001018.43014009-43014009" class="vote"></span></h3>
+				<p>Jesus said to him, &#8220;Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, &#8216;Show us the Father&#8217;?</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+1%3A14">John 1:14</a> <span id="c43001018.43001014-43001014" class="vote"></span></h3>
+				<p>And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Numbers+12%3A8">Numbers 12:8</a> <span id="c43001018.04012008-04012008" class="vote"></span></h3>
+				<p>With him I speak mouth to mouth, clearly, and not in riddles, and he beholds the form of the <span class="sc">Lord</span>. Why then were you not afraid to speak against my servant Moses?&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Deuteronomy+4%3A12">Deuteronomy 4:12</a> <span id="c43001018.05004012-05004012" class="vote"></span></h3>
+				<p>Then the <span class="sc">Lord</span> spoke to you out of the midst of the fire. You heard the sound of words, but saw no form; there was only a voice.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+12%3A41">John 12:41</a> <span id="c43001018.43012041-43012041" class="vote"></span></h3>
+				<p>Isaiah said these things because he saw his glory and spoke of him.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+6%3A1-3">Isaiah 6:1-3</a> <span id="c43001018.23006001-23006003" class="vote"></span></h3>
+				<p><span class="votes-3">In the year that King Uzziah died I saw the Lord sitting upon a throne, high and lifted up; and the train of his robe filled the temple.</span> Above him stood the seraphim. Each had six wings: with two he covered his face, and with two he covered his feet, and with two he flew. And one called to another and said: &#8220;Holy, holy, holy is the <span class="sc">Lord</span> of hosts; the whole earth is full of his glory!&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Exodus+34%3A5-7">Exodus 34:5-7</a> <span id="c43001018.02034005-02034007" class="vote"></span></h3>
+				<p>The <span class="sc">Lord</span> descended in the cloud and stood with him there, and proclaimed the name of the <span class="sc">Lord</span>. <span class="votes-3">The <span class="sc">Lord</span> passed before him and proclaimed, &#8220;The <span class="sc">Lord</span>, the <span class="sc">Lord</span>, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness,</span> <span class="votes-3">keeping steadfast love for thousands, forgiving iniquity and transgression and sin, but who will by no means clear the guilty, visiting the iniquity of the fathers on the children and the children's children, to the third and the fourth generation.&#8221;</span></p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Exodus+23%3A21">Exodus 23:21</a> <span id="c43001018.02023021-02023021" class="vote"></span></h3>
+				<p>Pay careful attention to him and obey his voice; do not rebel against him, for he will not pardon your transgression, for my name is in him.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+Timothy+1%3A17">1 Timothy 1:17</a> <span id="c43001018.54001017-54001017" class="vote"></span></h3>
+				<p>To the King of the ages, immortal, invisible, the only God, be honor and glory forever and ever. Amen.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Ezekiel+1%3A26-28">Ezekiel 1:26-28</a> <span id="c43001018.26001026-26001028" class="vote"></span></h3>
+				<p>And above the expanse over their heads there was the likeness of a throne, in appearance like sapphire; and seated above the likeness of a throne was a likeness with a human appearance. And upward from what had the appearance of his waist I saw as it were gleaming metal, like the appearance of fire enclosed all around. And downward from what had the appearance of his waist I saw as it were the appearance of fire, and there was brightness around him. Like the appearance of the bow that is in the cloud on the day of rain, so was the appearance of the brightness all around. Such was the appearance of the likeness of the glory of the <span class="sc">Lord</span>. And when I saw it, I fell on my face, and I heard the voice of one speaking.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Genesis+32%3A28-30">Genesis 32:28-30</a> <span id="c43001018.01032028-01032030" class="vote"></span></h3>
+				<p>Then he said, &#8220;Your name shall no longer be called Jacob, but Israel, for you have striven with God and with men, and have prevailed.&#8221; Then Jacob asked him, &#8220;Please tell me your name.&#8221; But he said, &#8220;Why is it that you ask my name?&#8221; And there he blessed him. <span class="votes-3">So Jacob called the name of the place Peniel, saying, &#8220;For I have seen God face to face, and yet my life has been delivered.&#8221;</span></p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Genesis+16%3A13">Genesis 16:13</a> <span id="c43001018.01016013-01016013" class="vote"></span></h3>
+				<p>So she called the name of the <span class="sc">Lord</span> who spoke to her, &#8220;You are a God of seeing,&#8221; for she said, &#8220;Truly here I have seen him who looks after me.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Lamentations+2%3A12">Lamentations 2:12</a> <span id="c43001018.25002012-25002012" class="vote"></span></h3>
+				<p>They cry to their mothers, &#8220;Where is bread and wine?&#8221; as they faint like a wounded man in the streets of the city, as their life is poured out on their mothers' bosom.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+40%3A11">Isaiah 40:11</a> <span id="c43001018.23040011-23040011" class="vote"></span></h3>
+				<p>He will tend his flock like a shepherd; he will gather the lambs in his arms; he will carry them in his bosom, and gently lead those that are with young.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Proverbs+8%3A30">Proverbs 8:30</a> <span id="c43001018.20008030-20008030" class="vote"></span></h3>
+				<p>then I was beside him, like a master workman, and I was daily his delight, rejoicing before him always,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Judges+6%3A12-26">Judges 6:12-26</a> <span id="c43001018.07006012-07006026" class="vote"></span></h3>
+				<p>And the angel of the <span class="sc">Lord</span> appeared to him and said to him, &#8220;The <span class="sc">Lord</span> is with you, O mighty man of valor.&#8221; And Gideon said to him, &#8220;Please, my lord, if the <span class="sc">Lord</span> is with us, why then has all this happened to us? And where are all his wonderful deeds that our fathers recounted to us, saying, &#8216;Did not the <span class="sc">Lord</span> bring us up from Egypt?&#8217; But now the <span class="sc">Lord</span> has forsaken us and given us into the hand of Midian.&#8221; And the <span class="sc">Lord</span> turned to him and said, &#8220;Go in this might of yours and save Israel from the hand of Midian; do not I send you?&#8221; And he said to him, &#8220;Please, Lord, how can I save Israel? Behold, my clan is the weakest in Manasseh, and I am the least in my father's house.&#8221; And the <span class="sc">Lord</span> said to him, &#8220;But I will be with you, and you shall strike the Midianites as one man.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Joshua+5%3A13-6%3A2">Joshua 5:13-6:2</a> <span id="c43001018.06005013-06006002" class="vote"></span></h3>
+				<p>When Joshua was by Jericho, he lifted up his eyes and looked, and behold, a man was standing before him with his drawn sword in his hand. And Joshua went to him and said to him, &#8220;Are you for us, or for our adversaries?&#8221; And he said, &#8220;No; but I am the commander of the army of the <span class="sc">Lord</span>. Now I have come.&#8221; And Joshua fell on his face to the earth and worshiped and said to him, &#8220;What does my lord say to his servant?&#8221; And the commander of the <span class="sc">Lord</span>'s army said to Joshua, &#8220;Take off your sandals from your feet, for the place where you are standing is holy.&#8221; And Joshua did so. Now Jericho was shut up inside and outside because of the people of Israel. None went out, and none came in. And the <span class="sc">Lord</span> said to Joshua, &#8220;See, I have given Jericho into your hand, with its king and mighty men of valor.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Exodus+3%3A4-6">Exodus 3:4-6</a> <span id="c43001018.02003004-02003006" class="vote"></span></h3>
+				<p>When the <span class="sc">Lord</span> saw that he turned aside to see, God called to him out of the bush, &#8220;Moses, Moses!&#8221; And he said, &#8220;Here I am.&#8221; Then he said, &#8220;Do not come near; take your sandals off your feet, for the place on which you are standing is holy ground.&#8221; And he said, &#8220;I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob.&#8221; And Moses hid his face, for he was afraid to look at God.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Luke+16%3A22-23">Luke 16:22-23</a> <span id="c43001018.42016022-42016023" class="vote"></span></h3>
+				<p><span class="votes-3">The poor man died and was carried by the angels to Abraham's side. The rich man also died and was buried,</span> and in Hades, being in torment, he lifted up his eyes and saw Abraham far off and Lazarus at his side.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Judges+13%3A20-23">Judges 13:20-23</a> <span id="c43001018.07013020-07013023" class="vote"></span></h3>
+				<p>And when the flame went up toward heaven from the altar, the angel of the <span class="sc">Lord</span> went up in the flame of the altar. Now Manoah and his wife were watching, and they fell on their faces to the ground. The angel of the <span class="sc">Lord</span> appeared no more to Manoah and to his wife. Then Manoah knew that he was the angel of the <span class="sc">Lord</span>. And Manoah said to his wife, &#8220;We shall surely die, for we have seen God.&#8221; But his wife said to him, &#8220;If the <span class="sc">Lord</span> had meant to kill us, he would not have accepted a burnt offering and a grain offering at our hands, or shown us all these things, or now announced to us such things as these.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Genesis+48%3A15-16">Genesis 48:15-16</a> <span id="c43001018.01048015-01048016" class="vote"></span></h3>
+				<p>And he blessed Joseph and said, &#8220;The God before whom my fathers Abraham and Isaac walked, the God who has been my shepherd all my life long to this day, the angel who has redeemed me from all evil, bless the boys; and in them let my name be carried on, and the name of my fathers Abraham and Isaac; and let them grow into a multitude in the midst of the earth.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Genesis+18%3A33">Genesis 18:33</a> <span id="c43001018.01018033-01018033" class="vote"></span></h3>
+				<p>And the <span class="sc">Lord</span> went his way, when he had finished speaking to Abraham, and Abraham returned to his place.</p>
+				</div>
+							<div class="votes-4"><h3><a href="/labs/cross-references/search?q=John+13%3A23">John 13:23</a> <span id="c43001018.43013023-43013023" class="vote"></span></h3>
+				<p>One of his disciples, whom Jesus loved, was reclining at table at Jesus' side,</p>
+				</div>
+							<div class="votes-4"><h3><a href="/labs/cross-references/search?q=John+3%3A16-18">John 3:16-18</a> <span id="c43001018.43003016-43003018" class="vote"></span></h3>
+				<p><span class="votes-5">&#8220;For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.</span> For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. <span class="votes-5">Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God.</span></p>
+				</div>
+							<div class="votes-4"><h3><a href="/labs/cross-references/search?q=Hosea+12%3A3-5">Hosea 12:3-5</a> <span id="c43001018.28012003-28012005" class="vote"></span></h3>
+				<p>In the womb he took his brother by the heel, and in his manhood he strove with God. He strove with the angel and prevailed; he wept and sought his favor. He met God at Bethel, and there God spoke with us&#8212; the <span class="sc">Lord</span>, the God of hosts, the <span class="sc">Lord</span> is his memorial name:</p>
+				</div>
+					</div>
+<script type="text/javascript">
+var votes = document.querySelectorAll("span.vote");
+for (var i = 0, j = votes.length; i < j; i++) {
+	var node = votes[i];
+	var id = node.id.substr(1)
+	node.innerHTML = 'Helpful? <a id="u' + id + '" href="#u">Yes</a> <a id="d' + id + '" href="#d">No</a>';
+};
+var voteLinks = document.querySelectorAll("span.vote a");
+for (var i = 0, j = voteLinks.length; i < j; i++) {
+	voteLinks[i].addEventListener("click", voteCallback, false);
+}
+
+function voteCallback(e) {
+	e.preventDefault();
+	var node = e.target;
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "/labs/cross-references/vote");
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send("vote=" + node.id);
+	node.parentNode.innerHTML = "Thanks for voting";
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

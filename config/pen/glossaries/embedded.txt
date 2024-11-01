@@ -1,0 +1,56 @@
+OpenOCD
+Open On-Chip Debugger
+    Open-source software that interfaces with
+    a hardware debugger's JTAG port.
+
+    OpenOCD provides debugging and in-system
+    programming for embedded target devices.
+
+    OpenOCD provides the ability to flash NAND
+    and NOR FLASH memory devices that are
+    attached to the processor on the target
+    system.
+
+RTT
+Real Time Transfer
+    https://www.segger.com/products/debug-probes/j-link/technology/about-real-time-transfer/
+
+    With RTT it is possible to output
+    information from the target
+    microcontroller as well as sending input
+    to the application at a very high speed
+    without affecting the target's real time
+    behavior.
+
+    SEGGER RTT can be used with any J-Link
+    model and any supported target processor
+    which allows background memory access,
+    which are Cortex-M and RX targets.
+
+    RTT supports multiple channels in both
+    directions, up to the host and down to the
+    target, which can be used for different
+    purposes and provide the most possible
+    freedom to the user.
+
+JTAG
+    (named after the Joint Test Action Group
+    which codified it) is an industry standard
+    for verifying designs and testing printed
+    circuit boards after manufacture.
+
+    JTAG implements standards for on-chip
+    instrumentation in electronic design
+    automation (EDA) as a complementary tool
+    to digital simulation.
+
+defmt
+de format
+    Short for "deferred formatting".
+
+    A highly efficient logging framework that
+    targets resource-constrained devices, like
+    microcontrollers.
+
+    Efficient, deferred formatting for logging
+    on embedded systems

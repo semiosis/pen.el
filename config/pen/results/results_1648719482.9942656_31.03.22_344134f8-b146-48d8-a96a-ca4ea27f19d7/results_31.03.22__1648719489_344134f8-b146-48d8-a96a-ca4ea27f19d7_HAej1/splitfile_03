@@ -1,0 +1,17 @@
+
+
+
+
+data Foo = Foo
+
+{ fooInt :: Int
+
+, fooBool :: Bool
+
+, fooString :: String
+
+} deriving (Show)
+
+
+
+-- | this is a data constructor

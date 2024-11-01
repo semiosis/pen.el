@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: interact-ipy
+# group: interactive
+# key: ipy
+# --
+import shanepy
+import shanepy as spy
+from shanepy import *
+# sys.stdin = open('/dev/tty') # not idempotent. only works for import code
+globals().update(locals())
+os.environ["EDITOR"] = "sp"; from IPython import embed; embed()

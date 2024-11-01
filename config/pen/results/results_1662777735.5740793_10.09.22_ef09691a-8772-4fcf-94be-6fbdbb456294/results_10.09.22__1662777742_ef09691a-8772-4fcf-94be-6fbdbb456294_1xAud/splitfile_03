@@ -1,0 +1,1 @@
+""realized?" refers to the value of a lazy sequence. It's either the value of the sequence, or it's the value of the first function that it calls to get the value.

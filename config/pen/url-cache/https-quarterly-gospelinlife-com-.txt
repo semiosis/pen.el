@@ -1,0 +1,2232 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 05 Jan 2024 23:32:53 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=20
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Link: <https://quarterly.gospelinlife.com/wp-json/>; rel="https://api.w.org/"
+Link: <https://quarterly.gospelinlife.com/wp-json/wp/v2/pages/36>; rel="alternate"; type="application/json"
+Link: <https://quarterly.gospelinlife.com/>; rel=shortlink
+X-Powered-By: WP Engine
+X-Cacheable: SHORT
+Vary: Accept-Encoding,Cookie
+Cache-Control: max-age=600, must-revalidate
+X-Cache: HIT: 2
+X-Cache-Group: normal
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<meta name='robots' content='max-image-preview:large' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v14.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Life in the Gospel - A quarterly publication from Gospel in Life &amp; Redeemer</title>
+	<meta name="description" content="We believe God is growing a gospel movement in New York City and other cities all over the world. Life in the Gospel, a new quarterly publication from Gospel in Life and Redeemer, seeks to help grow this movement by providing resources that bring about gospel transformation and that encourage Christians everywhere to live more missionally." />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://quarterly.gospelinlife.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Life in the Gospel - A quarterly publication from Gospel in Life &amp; Redeemer" />
+	<meta property="og:description" content="We believe God is growing a gospel movement in New York City and other cities all over the world. Life in the Gospel, a new quarterly publication from Gospel in Life and Redeemer, seeks to help grow this movement by providing resources that bring about gospel transformation and that encourage Christians everywhere to live more missionally." />
+	<meta property="og:url" content="https://quarterly.gospelinlife.com/" />
+	<meta property="og:site_name" content="Life in the Gospel" />
+	<meta property="article:modified_time" content="2023-10-26T18:26:22+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://quarterly.gospelinlife.com/#website","url":"https://quarterly.gospelinlife.com/","name":"Life in the Gospel","description":"A quarterly publication from Gospel in Life","potentialAction":[{"@type":"SearchAction","target":"https://quarterly.gospelinlife.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://quarterly.gospelinlife.com/#webpage","url":"https://quarterly.gospelinlife.com/","name":"Life in the Gospel - A quarterly publication from Gospel in Life & Redeemer","isPartOf":{"@id":"https://quarterly.gospelinlife.com/#website"},"datePublished":"2020-03-10T18:59:09+00:00","dateModified":"2023-10-26T18:26:22+00:00","description":"We believe God is growing a gospel movement in New York City and other cities all over the world. Life in the Gospel, a new quarterly publication from Gospel in Life and Redeemer, seeks to help grow this movement by providing resources that bring about gospel transformation and that encourage Christians everywhere to live more missionally.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://quarterly.gospelinlife.com/"]}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Life in the Gospel &raquo; Feed" href="https://quarterly.gospelinlife.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Life in the Gospel &raquo; Comments Feed" href="https://quarterly.gospelinlife.com/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/quarterly.gospelinlife.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='atomic-blocks-fontawesome-css' href='https://quarterly.gospelinlife.com/wp-content/plugins/atomic-blocks/dist/assets/fontawesome/css/all.min.css?ver=1600401481' media='all' />
+<link rel='stylesheet' id='astra-theme-css-css' href='https://quarterly.gospelinlife.com/wp-content/themes/astra/assets/css/minified/style.min.css?ver=2.5.5' media='all' />
+<style id='astra-theme-css-inline-css'>
+html{font-size:100%;}a,.page-title{color:#00aaf2;}a:hover,a:focus{color:#777777;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Montserrat',sans-serif;font-weight:400;font-size:16px;font-size:1rem;line-height:2;}blockquote{color:#000000;}.site-title{font-size:35px;font-size:2.1875rem;}header .site-logo-img .custom-logo-link img{max-width:225px;}.astra-logo-svg{width:225px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.5rem;}.site-header .site-description{font-size:15px;font-size:0.9375rem;}.entry-title{font-size:40px;font-size:2.5rem;}.comment-reply-title{font-size:26px;font-size:1.625rem;}.ast-comment-list #cancel-comment-reply-link{font-size:16px;font-size:1rem;}h1,.entry-content h1{font-size:40px;font-size:2.5rem;}h2,.entry-content h2{font-size:30px;font-size:1.875rem;}h3,.entry-content h3{font-size:25px;font-size:1.5625rem;}h4,.entry-content h4{font-size:20px;font-size:1.25rem;}h5,.entry-content h5{font-size:18px;font-size:1.125rem;}h6,.entry-content h6{font-size:15px;font-size:0.9375rem;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:1.875rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:16px;font-size:1rem;}::selection{background-color:#00aaf2;color:#ffffff;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6,.wc-block-grid__product-title{color:#444444;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#00aaf2;background-color:#00aaf2;}.main-header-menu .menu-link,.ast-header-custom-item a{color:#444444;}.main-header-menu .menu-item:hover > .menu-link,.main-header-menu .menu-item:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu .menu-item.focus > .menu-link,.main-header-menu .menu-item.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > .menu-link,.main-header-menu .current-menu-ancestor > .menu-link,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle{color:#00aaf2;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#00aaf2;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#00aaf2;background-color:#00aaf2;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#00aaf2;border-color:#00aaf2;}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.ast-comment-meta{line-height:1.666666667;font-size:13px;font-size:0.8125rem;}.single .nav-links .nav-previous,.single .nav-links .nav-next,.single .ast-author-details .author-title,.ast-comment-meta{color:#00aaf2;}.entry-meta,.entry-meta *{line-height:1.45;color:#00aaf2;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *{color:#777777;}.ast-404-layout-1 .ast-404-text{font-size:200px;font-size:12.5rem;}.widget-title{font-size:22px;font-size:1.375rem;color:#444444;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#00aaf2;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#00aaf2;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#00aaf2;border-color:#00aaf2;}.calendar_wrap #today > a{color:#ffffff;}.ast-pagination a,.page-links .page-link,.single .post-navigation a{color:#00aaf2;}.ast-pagination a:hover,.ast-pagination a:focus,.ast-pagination > span:hover:not(.dots),.ast-pagination > span.current,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#777777;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#00aaf2;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #00aaf2;color:#00aaf2;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#00aaf2;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}@media (max-width:768px){#secondary.secondary{padding-top:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary{margin-top:1.5em;}.ast-page-builder-template #secondary{margin-top:1.5em;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}.ast-pagination{padding-top:1.5em;text-align:center;}.ast-pagination .next.page-numbers{display:inherit;float:none;}}@media (max-width:768px){.ast-page-builder-template.ast-left-sidebar #secondary{padding-right:20px;}.ast-page-builder-template.ast-right-sidebar #secondary{padding-left:20px;}.ast-right-sidebar #primary{padding-right:0;}.ast-right-sidebar #secondary{padding-left:0;}.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}.ast-pagination .prev.page-numbers{padding-left:.5em;}.ast-pagination .next.page-numbers{padding-right:.5em;}}@media (min-width:769px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}.ast-separate-container .ast-comment-list li .comment-respond{padding-left:2.66666em;padding-right:2.66666em;}.ast-author-box{-js-display:flex;display:flex;}.ast-author-bio{flex:1;}.error404.ast-separate-container #primary,.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:769px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-right-sidebar #secondary{border-left:1px solid #eee;margin-left:-1px;}.ast-left-sidebar #primary{border-left:1px solid #eee;}.ast-left-sidebar #secondary{border-right:1px solid #eee;margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}}.elementor-button-wrapper .elementor-button{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;}.elementor-button-wrapper .elementor-button{border-color:#00aaf2;background-color:#00aaf2;}.elementor-button-wrapper .elementor-button:hover,.elementor-button-wrapper .elementor-button:focus{color:#ffffff;background-color:#777777;border-color:#777777;}.wp-block-button .wp-block-button__link,.elementor-button-wrapper .elementor-button,.elementor-button-wrapper .elementor-button:visited{color:#ffffff;}.elementor-button-wrapper .elementor-button{font-family:inherit;font-weight:inherit;line-height:1;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;border-color:#00aaf2;background-color:#00aaf2;color:#ffffff;font-family:inherit;font-weight:inherit;line-height:1;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#ffffff;background-color:#777777;border-color:#777777;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;color:#ffffff;border-color:#00aaf2;background-color:#00aaf2;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;font-family:inherit;font-weight:inherit;line-height:1;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.button:hover,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#777777;border-color:#777777;}@media (min-width:768px){.ast-container{max-width:100%;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.ast-separate-container .comments-count-wrapper{padding:1.5em 1em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}.ast-separate-container .comment-respond{padding:1.5em 1em;}}@media (max-width:544px){.ast-comment-list .children{margin-left:0.66666em;}.ast-separate-container .ast-comment-list .bypostauthor li{padding:0 0 0 .5em;}}@media (max-width:768px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-separate-container .comments-count-wrapper{padding:2em 2.14em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (max-width:768px){.ast-header-break-point .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:0;}.ast-header-break-point .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:-1em;}.ast-comment-avatar-wrap{margin-right:0.5em;}}@media (min-width:545px){.ast-page-builder-template .comments-area,.single.ast-page-builder-template .entry-header,.single.ast-page-builder-template .post-navigation{max-width:1240px;margin-left:auto;margin-right:auto;}}@media (max-width:768px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:544px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:768px){html{font-size:91.2%;}}@media (max-width:544px){html{font-size:91.2%;}}@media (min-width:769px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(https://quarterly.gospelinlife.com/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://quarterly.gospelinlife.com/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://quarterly.gospelinlife.com/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:921px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#00aaf2;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu{border-top-width:2px;border-right-width:0px;border-left-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu{top:-2px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link,.ast-desktop .main-header-menu.submenu-with-border .children .menu-link{border-bottom-width:0px;border-style:solid;border-color:#eaeaea;}@media (min-width:769px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.ast-small-footer{border-top-style:solid;border-top-width:1px;border-top-color:#7a7a7a;}.ast-small-footer-wrap{text-align:center;}@media (max-width:920px){.ast-404-layout-1 .ast-404-text{font-size:100px;font-size:6.25rem;}}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#ff6600;}.ast-header-break-point .main-header-bar{border-bottom-width:1px;}@media (min-width:769px){.main-header-bar{border-bottom-width:1px;}}.ast-safari-browser-less-than-11 .main-header-menu .menu-item, .ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items{display:block;}.main-header-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items{flex:unset;}
+</style>
+<link rel='stylesheet' id='astra-google-fonts-css' href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C&#038;display=fallback&#038;ver=2.5.5' media='all' />
+<link rel='stylesheet' id='astra-menu-animation-css' href='https://quarterly.gospelinlife.com/wp-content/themes/astra/assets/css/minified/menu-animation.min.css?ver=2.5.5' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://quarterly.gospelinlife.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' media='all' />
+<link rel='stylesheet' id='atomic-blocks-style-css-css' href='https://quarterly.gospelinlife.com/wp-content/plugins/atomic-blocks/dist/blocks.style.build.css?ver=1600401481' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='font-awesome-5-css' href='https://quarterly.gospelinlife.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.14.0/css/all.min.css?ver=2.4.0.4' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-36-css' href='https://quarterly.gospelinlife.com/wp-content/uploads/bb-plugin/cache/36-layout.css?ver=438174186e3b17b9d195f4af58fce62b' media='all' />
+<link rel='stylesheet' id='footnotes.styles-css' href='https://quarterly.gospelinlife.com/wp-content/plugins/wp-footnotes-master/assets/wp-footnotes.css?ver=1.0.1' media='all' />
+<link rel='stylesheet' id='ultimate-icons-css' href='https://quarterly.gospelinlife.com/wp-content/uploads/bb-plugin/icons/ultimate-icons/style.css?ver=2.4.0.4' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-bundle-74f8210faee130bb183a2228438c24ad-css' href='https://quarterly.gospelinlife.com/wp-content/uploads/bb-plugin/cache/74f8210faee130bb183a2228438c24ad-layout-bundle.css?ver=2.4.0.4-1.3.2.3' media='all' />
+<!--[if IE]>
+<script src='https://quarterly.gospelinlife.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.5.5' id='astra-flexibility-js'></script>
+<script id="astra-flexibility-js-after">
+flexibility(document.documentElement);
+</script>
+<![endif]-->
+<script id='jquery-core-js-extra'>
+var uabb = {"ajax_url":"https:\/\/quarterly.gospelinlife.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script src='https://quarterly.gospelinlife.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-includes/js/imagesloaded.min.js?ver=6.3.2' id='imagesloaded-js'></script>
+<link rel="https://api.w.org/" href="https://quarterly.gospelinlife.com/wp-json/" /><link rel="alternate" type="application/json" href="https://quarterly.gospelinlife.com/wp-json/wp/v2/pages/36" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://quarterly.gospelinlife.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://quarterly.gospelinlife.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://quarterly.gospelinlife.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquarterly.gospelinlife.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://quarterly.gospelinlife.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquarterly.gospelinlife.com%2F&#038;format=xml" />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-1805206-52', 'auto');
+			ga('set', 'forceSSL', true);
+			ga('send', 'pageview');
+		</script>
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TSN88N');</script>
+<!-- End Google Tag Manager -->
+
+<!-- This site uses the Open External Links in a New Window plugin v1.4 by WebFactory Ltd. Download it for free at https://wordpress.org/extend/plugins/open-external-links-in-a-new-window/ -->
+<script type="text/javascript">//<![CDATA[
+  function external_links_in_new_windows_loop() {
+    if (!document.links) {
+      document.links = document.getElementsByTagName('a');
+    }
+    var change_link = false;
+    var force = '';
+    var ignore = '';
+
+    for (var t=0; t<document.links.length; t++) {
+      var all_links = document.links[t];
+      change_link = false;
+      
+      if(document.links[t].hasAttribute('onClick') == false) {
+        // forced if the address starts with http (or also https), but does not link to the current domain
+        if(all_links.href.search(/^http/) != -1 && all_links.href.search('quarterly.gospelinlife.com') == -1 && all_links.href.search(/^#/) == -1) {
+          // console.log('Changed ' + all_links.href);
+          change_link = true;
+        }
+          
+        if(force != '' && all_links.href.search(force) != -1) {
+          // forced
+          // console.log('force ' + all_links.href);
+          change_link = true;
+        }
+        
+        if(ignore != '' && all_links.href.search(ignore) != -1) {
+          // console.log('ignore ' + all_links.href);
+          // ignored
+          change_link = false;
+        }
+
+        if(change_link == true) {
+          // console.log('Changed ' + all_links.href);
+          document.links[t].setAttribute('onClick', 'javascript:window.open(\''+all_links.href+'\'); return false;');
+          document.links[t].removeAttribute('target');
+        }
+      }
+    }
+  }
+  
+  // Load
+  function external_links_in_new_windows_load(func)
+  {  
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function'){
+      window.onload = func;
+    } else {
+      window.onload = function(){
+        oldonload();
+        func();
+      }
+    }
+  }
+
+  external_links_in_new_windows_load(external_links_in_new_windows_loop);
+  //]]></script>
+
+<link rel="icon" href="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-GinL-Logo-Small-Discard-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-GinL-Logo-Small-Discard-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-GinL-Logo-Small-Discard-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-GinL-Logo-Small-Discard-270x270.jpg" />
+</head>
+
+<body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="home page-template-default page page-id-36 wp-custom-logo fl-builder fl-theme-builder-header fl-theme-builder-footer ast-desktop ast-page-builder-template ast-no-sidebar astra-2.5.5 ast-header-custom-item-inside group-blog ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSN88N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div 
+	class="hfeed site" id="page">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+	<header class="fl-builder-content fl-builder-content-77 fl-builder-global-templates-locked" data-post-id="77" data-type="header" data-sticky="0" data-sticky-breakpoint="medium" data-shrink="0" data-overlay="0" data-overlay-bg="default" data-shrink-image-height="50px" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5e6f9d98effbd" data-node="5e6f9d98effbd">
+	<div class="fl-row-content-wrap">
+								<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e6f9d98effb6 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="5e6f9d98effb6">
+			<div class="fl-col fl-node-5e6f9d98effb9 fl-col-small fl-visible-desktop-medium" data-node="5e6f9d98effb9">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5e6f9d98effbb fl-visible-desktop-medium" data-node="5e6f9d98effbb">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="/" target="_self" itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-66 size-full" src="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal.png" alt="GIL Logo Horizontal" itemprop="image" height="92" width="501" title="GIL Logo Horizontal"  data-no-lazy="1" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal.png 501w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal-300x55.png 300w" sizes="(max-width: 501px) 100vw, 501px" />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5e6f9d98effba fl-col-small" data-node="5e6f9d98effba">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-separator fl-node-5e6f9e3bda00f fl-visible-desktop-medium" data-node="5e6f9e3bda00f">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-separator"></div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-5e6f9deac968a fl-visible-desktop-medium" data-node="5e6f9deac968a">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>A Quarterly Newsletter</strong></p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5e6fc37df1d3b" data-node="5e6fc37df1d3b">
+			<div class="fl-col fl-node-5e6fc37df1e74" data-node="5e6fc37df1e74">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5e6fc2f4cba04 fl-visible-mobile" data-node="5e6fc2f4cba04">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="/" target="_self" itemprop="url">
+				<img decoding="async" loading="lazy" width="501" height="92" class="fl-photo-img wp-image-66" src="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal.png" alt="GIL Logo Horizontal" itemprop="image" title="GIL Logo Horizontal"  data-no-lazy="1" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal.png 501w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal-300x55.png 300w" sizes="(max-width: 501px) 100vw, 501px" />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-separator fl-node-5e6fc401685c8 fl-visible-mobile" data-node="5e6fc401685c8">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-separator"></div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-5e6fc2f92ec46 fl-visible-mobile" data-node="5e6fc2f92ec46">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>A Quarterly Newsletter</strong></p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</header><div class="uabb-js-breakpoint" style="display: none;"></div>
+	
+	
+	<div id="content" class="site-content">
+
+		<div class="ast-container">
+
+		
+
+	<div id="primary" class="content-area primary">
+
+		
+					<main id="main" class="site-main">
+
+				
+					
+					
+
+<article 
+	class="post-36 page type-page status-publish ast-article-single" id="post-36" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+
+	
+	<header class="entry-header ast-header-without-markup">
+
+		
+			</header><!-- .entry-header -->
+
+	<div class="entry-content clear" 
+		itemprop="text"	>
+
+		
+		<div class="fl-builder-content fl-builder-content-36 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="36"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5e7b8d13acb87 fl-row-full-height fl-row-align-top fl-row-overlap-top" data-node="5e7b8d13acb87">
+	<div class="fl-row-content-wrap">
+								<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e7b8d13b5f54" data-node="5e7b8d13b5f54">
+			<div class="fl-col fl-node-5e7b8d13b611f" data-node="5e7b8d13b611f">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5e6f98f3d53ff" data-node="5e6f98f3d53ff">
+	<div class="fl-row-content-wrap">
+								<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e6f98f3d55f5" data-node="5e6f98f3d55f5">
+			<div class="fl-col fl-node-5e6f98f3d55f7 fl-col-has-cols" data-node="5e6f98f3d55f7">
+	<div class="fl-col-content fl-node-content">
+	<article id="posts" class="fl-module fl-module-post-grid fl-node-5f2c3cb0eb683 fl-visible-desktop-medium fl-animation fl-fade-in" data-node="5f2c3cb0eb683" data-animation-delay=".25" data-animation-duration="1.5">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-feed" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<article class="fl-post-feed-post fl-post-feed-image-beside fl-post-align-left post-1102 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" content="How Gospel Community Can Overcome Loneliness" /><meta itemprop="datePublished" content="2023-10-20" /><meta itemprop="dateModified" content="2023-11-08" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorrebeccamclaughlin2/" /><meta itemprop="name" content="Dr. Rebecca McLaughlin" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized.jpg" /><meta itemprop="width" content="2500" /><meta itemprop="height" content="1875" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" rel="bookmark" title="How Gospel Community Can Overcome Loneliness">
+		<img fetchpriority="high" width="1024" height="768" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1024x768.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1024x768.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-300x225.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-768x576.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1536x1152.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-2048x1536.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" rel="bookmark" title="How Gospel Community Can Overcome Loneliness">How Gospel Community Can Overcome Loneliness</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorrebeccamclaughlin2/"><span>Dr. Rebecca McLaughlin</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+				<div class="fl-post-feed-content" itemprop="text">
+			<p>In light of scripture, and with the night of painful isolation all around, I want to argue that we need to reimagine three things: First, how we operate at church; second, how we conceive of family; and third, how we relate to singleness. The loneliness pandemic is severe. We Christians know the cure. And we are disobeying Jesus if we fail to administer it.</p>
+					</div>
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-beside fl-post-align-left post-1108 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/our-story-within-gods-story/" content="Our Story Within God’s Story" /><meta itemprop="datePublished" content="2023-10-20" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorjudycha/" /><meta itemprop="name" content="Dr. Judy Cha, LMFT" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead.jpg" /><meta itemprop="width" content="1709" /><meta itemprop="height" content="2560" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" rel="bookmark" title="Our Story Within God’s Story">
+		<img width="684" height="1024" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-684x1024.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-684x1024.jpg 684w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-200x300.jpg 200w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-768x1150.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-1025x1536.jpg 1025w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-1367x2048.jpg 1367w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead.jpg 1709w" sizes="(max-width: 684px) 100vw, 684px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" rel="bookmark" title="Our Story Within God’s Story">Our Story Within God’s Story</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorjudycha/"><span>Dr. Judy Cha, LMFT</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+				<div class="fl-post-feed-content" itemprop="text">
+			<p>Because we are beings created to derive our identity from God, the most important aspect in the practice of self-reflection is understanding our stories within the context of God’s story.</p>
+					</div>
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-beside fl-post-align-left post-1111 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-community quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" content="An Actor Brings His Faith Into His Work" /><meta itemprop="datePublished" content="2023-10-23" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorchristinastanton/" /><meta itemprop="name" content="Christina Stanton" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized.jpg" /><meta itemprop="width" content="2500" /><meta itemprop="height" content="1666" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" rel="bookmark" title="An Actor Brings His Faith Into His Work">
+		<img width="1024" height="682" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1024x682.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1024x682.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-768x512.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1536x1024.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-2048x1365.jpg 2048w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-600x400.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" rel="bookmark" title="An Actor Brings His Faith Into His Work">An Actor Brings His Faith Into His Work</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorchristinastanton/"><span>Christina Stanton</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+				<div class="fl-post-feed-content" itemprop="text">
+			<p>Christians in the arts—theater, dance, music, etc.—face suspicion from both their colleagues and from their fellow Christians. Max McLean&#8217;s story is one of immersing himself in theater and finding a better way with the gospel, of both pursuing his calling and honoring his Lord.</p>
+					</div>
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-beside fl-post-align-left post-1114 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/story-of-a-changed-life/" content="A Story of a Changed Life" /><meta itemprop="datePublished" content="2023-10-23" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorellieellsworth/" /><meta itemprop="name" content="Ellie Ellsworth" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1335" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" rel="bookmark" title="A Story of a Changed Life">
+		<img loading="lazy" width="1024" height="684" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1024x684.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1024x684.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-768x513.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1536x1025.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-600x400.jpg 600w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" rel="bookmark" title="A Story of a Changed Life">A Story of a Changed Life</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorellieellsworth/"><span>Ellie Ellsworth</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+				<div class="fl-post-feed-content" itemprop="text">
+			<p>I cried for two whole years, going to Redeemer. I kept going. I began to hear the word, and I think that the turning point for me was, &#8220;This thing you&#8217;re feeling down inside of you, that you can&#8217;t get to, has a name, and that name is sin.&#8221;</p>
+					</div>
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-beside fl-post-align-left post-1135 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/timothy-keller-memorial-service/" content="Timothy J. Keller Memorial Service" /><meta itemprop="datePublished" content="2023-10-24" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/ginlquarterly/" /><meta itemprop="name" content="Gospel in Life" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1500" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/timothy-keller-memorial-service/" rel="bookmark" title="Timothy J. Keller Memorial Service">
+		<img loading="lazy" width="1024" height="768" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-1024x768.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-1024x768.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-300x225.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-768x576.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-1536x1152.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/timothy-keller-memorial-service/" rel="bookmark" title="Timothy J. Keller Memorial Service">Timothy J. Keller Memorial Service</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/ginlquarterly/"><span>Gospel in Life</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+				<div class="fl-post-feed-content" itemprop="text">
+			<p>A worship service of praise to God for Tim Keller’s life and ministry was held on Tuesday, August 15, 2023. If you were not able to see the service and would like to, you can watch it here.</p>
+					</div>
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-beside fl-post-align-left post-1142 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" content="Discovering the Gospel in Every Book of the Bible – Job" /><meta itemprop="datePublished" content="2023-10-25" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1391" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" rel="bookmark" title="Discovering the Gospel in Every Book of the Bible – Job">
+		<img loading="lazy" width="1024" height="712" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1024x712.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1024x712.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-300x209.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-768x534.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1536x1068.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" rel="bookmark" title="Discovering the Gospel in Every Book of the Bible – Job">Discovering the Gospel in Every Book of the Bible – Job</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+				<div class="fl-post-feed-content" itemprop="text">
+			<p>The book of Job is the last episode filmed by Tim Keller for the “Discovering the Gospel in Every Book of the Bible” video series. </p>
+					</div>
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+<article id="posts_mobile" class="fl-module fl-module-post-grid fl-node-5e6fc484dfc52 fl-visible-mobile" data-node="5e6fc484dfc52">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-feed" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<article class="fl-post-feed-post fl-post-feed-image-above-title fl-post-align-left post-1102 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" content="How Gospel Community Can Overcome Loneliness" /><meta itemprop="datePublished" content="2023-10-20" /><meta itemprop="dateModified" content="2023-11-08" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorrebeccamclaughlin2/" /><meta itemprop="name" content="Dr. Rebecca McLaughlin" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized.jpg" /><meta itemprop="width" content="2500" /><meta itemprop="height" content="1875" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" rel="bookmark" title="How Gospel Community Can Overcome Loneliness">
+		<img fetchpriority="high" width="1024" height="768" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1024x768.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1024x768.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-300x225.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-768x576.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1536x1152.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-2048x1536.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" rel="bookmark" title="How Gospel Community Can Overcome Loneliness">How Gospel Community Can Overcome Loneliness</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorrebeccamclaughlin2/"><span>Dr. Rebecca McLaughlin</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-above-title fl-post-align-left post-1108 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/our-story-within-gods-story/" content="Our Story Within God’s Story" /><meta itemprop="datePublished" content="2023-10-20" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorjudycha/" /><meta itemprop="name" content="Dr. Judy Cha, LMFT" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead.jpg" /><meta itemprop="width" content="1709" /><meta itemprop="height" content="2560" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" rel="bookmark" title="Our Story Within God’s Story">
+		<img width="684" height="1024" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-684x1024.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-684x1024.jpg 684w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-200x300.jpg 200w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-768x1150.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-1025x1536.jpg 1025w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-1367x2048.jpg 1367w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead.jpg 1709w" sizes="(max-width: 684px) 100vw, 684px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" rel="bookmark" title="Our Story Within God’s Story">Our Story Within God’s Story</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorjudycha/"><span>Dr. Judy Cha, LMFT</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-above-title fl-post-align-left post-1111 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-community quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" content="An Actor Brings His Faith Into His Work" /><meta itemprop="datePublished" content="2023-10-23" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorchristinastanton/" /><meta itemprop="name" content="Christina Stanton" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized.jpg" /><meta itemprop="width" content="2500" /><meta itemprop="height" content="1666" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" rel="bookmark" title="An Actor Brings His Faith Into His Work">
+		<img width="1024" height="682" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1024x682.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1024x682.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-768x512.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1536x1024.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-2048x1365.jpg 2048w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-600x400.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" rel="bookmark" title="An Actor Brings His Faith Into His Work">An Actor Brings His Faith Into His Work</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorchristinastanton/"><span>Christina Stanton</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-above-title fl-post-align-left post-1114 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/story-of-a-changed-life/" content="A Story of a Changed Life" /><meta itemprop="datePublished" content="2023-10-23" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorellieellsworth/" /><meta itemprop="name" content="Ellie Ellsworth" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1335" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" rel="bookmark" title="A Story of a Changed Life">
+		<img loading="lazy" width="1024" height="684" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1024x684.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1024x684.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-768x513.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1536x1025.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-600x400.jpg 600w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" rel="bookmark" title="A Story of a Changed Life">A Story of a Changed Life</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authorellieellsworth/"><span>Ellie Ellsworth</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-above-title fl-post-align-left post-1135 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/timothy-keller-memorial-service/" content="Timothy J. Keller Memorial Service" /><meta itemprop="datePublished" content="2023-10-24" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/ginlquarterly/" /><meta itemprop="name" content="Gospel in Life" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1500" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/timothy-keller-memorial-service/" rel="bookmark" title="Timothy J. Keller Memorial Service">
+		<img loading="lazy" width="1024" height="768" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-1024x768.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-1024x768.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-300x225.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-768x576.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized-1536x1152.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/TimKellerMemorial-54resized.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/timothy-keller-memorial-service/" rel="bookmark" title="Timothy J. Keller Memorial Service">Timothy J. Keller Memorial Service</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/ginlquarterly/"><span>Gospel in Life</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+<article class="fl-post-feed-post fl-post-feed-image-above-title fl-post-align-left post-1142 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" content="Discovering the Gospel in Every Book of the Bible – Job" /><meta itemprop="datePublished" content="2023-10-25" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1391" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-feed-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" rel="bookmark" title="Discovering the Gospel in Every Book of the Bible – Job">
+		<img loading="lazy" width="1024" height="712" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1024x712.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1024x712.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-300x209.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-768x534.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1536x1068.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />	</a>
+
+	
+</div>
+
+		<div class="fl-post-feed-text">
+	
+		<div class="fl-post-feed-header">
+
+			<h2 class="fl-post-feed-title" itemprop="headline">
+				<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" rel="bookmark" title="Discovering the Gospel in Every Book of the Bible – Job">Discovering the Gospel in Every Book of the Bible – Job</a>
+			</h2>
+
+			
+						<div class="fl-post-feed-meta">
+									<span class="fl-post-feed-author">
+						By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>					</span>
+															</div>
+			
+			
+			
+		</div>
+
+	
+	
+	
+		
+		
+		
+	</div>
+
+	<div class="fl-clear"></div>
+</article>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+
+<div class="fl-col-group fl-node-5f6d972fcec80 fl-col-group-nested" data-node="5f6d972fcec80">
+			<div class="fl-col fl-node-5f6d972fcef02" data-node="5f6d972fcef02">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-5f6d4a7bc1264 fl-animation fl-fade-up" data-node="5f6d4a7bc1264" data-animation-delay="0" data-animation-duration="0.5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-separator-parent">
+
+			<div class="uabb-separator-wrap uabb-separator-center uabb-responsive-medsmall">
+			<div class="uabb-separator-line uabb-side-left">
+				<span></span>
+			</div>
+
+			<div class="uabb-divider-content uabbi-divider">
+								<h3 class="uabb-divider-text">Tim Keller's Race & Justice Series</h3>			</div>
+
+			<div class="uabb-separator-line uabb-side-right">
+				<span></span>
+			</div> 
+		</div>
+	
+	</div>
+	</div>
+</div>
+<article class="fl-module fl-module-post-grid fl-node-5f6d4b774baa1 fl-animation fl-fade-up posts_thumbnail" data-node="5f6d4b774baa1" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-10 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-spring-2020" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/the-bible-and-race/" content="The Bible and Race" /><meta itemprop="datePublished" content="2020-03-05" /><meta itemprop="dateModified" content="2020-09-30" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/people-standing-in-front-of-the-building-1353978-1.jpg" /><meta itemprop="width" content="1800" /><meta itemprop="height" content="868" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/the-bible-and-race/" rel="bookmark" title="The Bible and Race">
+		<img loading="lazy" width="300" height="145" src="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/people-standing-in-front-of-the-building-1353978-1-300x145.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/people-standing-in-front-of-the-building-1353978-1-300x145.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/people-standing-in-front-of-the-building-1353978-1-1024x494.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/people-standing-in-front-of-the-building-1353978-1-768x370.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/people-standing-in-front-of-the-building-1353978-1-1536x741.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/people-standing-in-front-of-the-building-1353978-1.jpg 1800w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/the-bible-and-race/" title="The Bible and Race">The Bible and Race</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-102 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-summer-2020" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/the-sin-of-racism/" content="The Sin of Racism" /><meta itemprop="datePublished" content="2020-06-18" /><meta itemprop="dateModified" content="2020-09-30" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/06/Hands-2.jpg" /><meta itemprop="width" content="1600" /><meta itemprop="height" content="1676" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/the-sin-of-racism/" rel="bookmark" title="The Sin of Racism">
+		<img loading="lazy" width="286" height="300" src="https://quarterly.gospelinlife.com/wp-content/uploads/2020/06/Hands-2-286x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2020/06/Hands-2-286x300.jpg 286w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/06/Hands-2-978x1024.jpg 978w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/06/Hands-2-768x804.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/06/Hands-2-1466x1536.jpg 1466w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/06/Hands-2.jpg 1600w" sizes="(max-width: 286px) 100vw, 286px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/the-sin-of-racism/" title="The Sin of Racism">The Sin of Racism</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-160 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-special-edition" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/a-biblical-critique-of-secular-justice-and-critical-theory/" content="A Biblical Critique of Secular Justice and Critical Theory" /><meta itemprop="datePublished" content="2020-07-31" /><meta itemprop="dateModified" content="2020-09-30" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/07/renee-fisher-N7oCVnnhgCA-unsplash.jpg" /><meta itemprop="width" content="1800" /><meta itemprop="height" content="841" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/a-biblical-critique-of-secular-justice-and-critical-theory/" rel="bookmark" title="A Biblical Critique of Secular Justice and Critical Theory">
+		<img loading="lazy" width="300" height="140" src="https://quarterly.gospelinlife.com/wp-content/uploads/2020/07/renee-fisher-N7oCVnnhgCA-unsplash-300x140.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2020/07/renee-fisher-N7oCVnnhgCA-unsplash-300x140.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/07/renee-fisher-N7oCVnnhgCA-unsplash-1024x478.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/07/renee-fisher-N7oCVnnhgCA-unsplash-768x359.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/07/renee-fisher-N7oCVnnhgCA-unsplash-1536x718.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/07/renee-fisher-N7oCVnnhgCA-unsplash.jpg 1800w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/a-biblical-critique-of-secular-justice-and-critical-theory/" title="A Biblical Critique of Secular Justice and Critical Theory">A Biblical Critique of Secular Justice and Critical Theory</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-198 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2020" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/justice-in-the-bible/" content="Justice in the Bible" /><meta itemprop="datePublished" content="2020-09-18" /><meta itemprop="dateModified" content="2022-01-21" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/09/pexels-wendy-van-zyl-1112048.jpg" /><meta itemprop="width" content="1800" /><meta itemprop="height" content="1091" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/justice-in-the-bible/" rel="bookmark" title="Justice in the Bible">
+		<img loading="lazy" width="300" height="182" src="https://quarterly.gospelinlife.com/wp-content/uploads/2020/09/pexels-wendy-van-zyl-1112048-300x182.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2020/09/pexels-wendy-van-zyl-1112048-300x182.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/09/pexels-wendy-van-zyl-1112048-1024x621.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/09/pexels-wendy-van-zyl-1112048-768x465.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/09/pexels-wendy-van-zyl-1112048-1536x931.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/09/pexels-wendy-van-zyl-1112048.jpg 1800w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/justice-in-the-bible/" title="Justice in the Bible">Justice in the Bible</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-62d031be71971 fl-col-group-nested" data-node="62d031be71971">
+			<div class="fl-col fl-node-62d031be71acf" data-node="62d031be71acf">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-62d030fc3991a fl-animation fl-fade-up" data-node="62d030fc3991a" data-animation-delay="0" data-animation-duration="0.5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-separator-parent">
+
+			<div class="uabb-separator-wrap uabb-separator-center uabb-responsive-medsmall">
+			<div class="uabb-separator-line uabb-side-left">
+				<span></span>
+			</div>
+
+			<div class="uabb-divider-content uabbi-divider">
+								<h3 class="uabb-divider-text">Tim Keller's Series: The Decline and Renewal of the American Church</h3>			</div>
+
+			<div class="uabb-separator-line uabb-side-right">
+				<span></span>
+			</div> 
+		</div>
+	
+	</div>
+	</div>
+</div>
+<article class="fl-module fl-module-post-grid fl-node-62d030f88b2d0 fl-animation fl-fade-up posts_thumbnail" data-node="62d030f88b2d0" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-481 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2021" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/decline-and-renewal-american-church-the-decline-of-the-mainline/" content="The Decline and Renewal of the American Church: Part 1 – The Decline of the Mainline" /><meta itemprop="datePublished" content="2021-09-10" /><meta itemprop="dateModified" content="2022-11-10" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1.jpg" /><meta itemprop="width" content="1800" /><meta itemprop="height" content="1200" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/decline-and-renewal-american-church-the-decline-of-the-mainline/" rel="bookmark" title="The Decline and Renewal of the American Church: Part 1 – The Decline of the Mainline">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1-1024x683.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1-768x512.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1-1536x1024.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1-600x400.jpg 600w, https://quarterly.gospelinlife.com/wp-content/uploads/2021/09/1renewingchurchpt1.jpg 1800w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/decline-and-renewal-american-church-the-decline-of-the-mainline/" title="The Decline and Renewal of the American Church: Part 1 – The Decline of the Mainline">The Decline and Renewal of the American Church: Part 1 – The Decline of the Mainline</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-598 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-winter-2022" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/the-decline-of-evangelicalism/" content="The Decline and Renewal of the American Church: Part 2 – The Decline of Evangelicalism" /><meta itemprop="datePublished" content="2022-01-25" /><meta itemprop="dateModified" content="2022-11-10" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-scaled.jpg" /><meta itemprop="width" content="2560" /><meta itemprop="height" content="1707" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/the-decline-of-evangelicalism/" rel="bookmark" title="The Decline and Renewal of the American Church: Part 2 – The Decline of Evangelicalism">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-1024x683.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-768x512.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-1536x1024.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-2048x1365.jpg 2048w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/01/1.0_pexels-pixabay-257030-600x400.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/the-decline-of-evangelicalism/" title="The Decline and Renewal of the American Church: Part 2 – The Decline of Evangelicalism">The Decline and Renewal of the American Church: Part 2 – The Decline of Evangelicalism</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-665 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-spring-2022" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/american-church-the-path-to-renewal/" content="The Decline and Renewal of the American Church: Part 3 – The Path to Renewal" /><meta itemprop="datePublished" content="2022-04-20" /><meta itemprop="dateModified" content="2022-11-10" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2022/04/TK-1a_AdobeStock_138547397.jpeg" /><meta itemprop="width" content="2200" /><meta itemprop="height" content="1161" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/american-church-the-path-to-renewal/" rel="bookmark" title="The Decline and Renewal of the American Church: Part 3 – The Path to Renewal">
+		<img loading="lazy" width="300" height="158" src="https://quarterly.gospelinlife.com/wp-content/uploads/2022/04/TK-1a_AdobeStock_138547397-300x158.jpeg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2022/04/TK-1a_AdobeStock_138547397-300x158.jpeg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/04/TK-1a_AdobeStock_138547397-1024x540.jpeg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/04/TK-1a_AdobeStock_138547397-768x405.jpeg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/04/TK-1a_AdobeStock_138547397-1536x811.jpeg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/04/TK-1a_AdobeStock_138547397-2048x1081.jpeg 2048w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/american-church-the-path-to-renewal/" title="The Decline and Renewal of the American Church: Part 3 – The Path to Renewal">The Decline and Renewal of the American Church: Part 3 – The Path to Renewal</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-755 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-summer-2022" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/american-church-the-strategy-for-renewal/" content="The Decline and Renewal of the American Church: Part 4 – The Strategy for Renewal" /><meta itemprop="datePublished" content="2022-07-12" /><meta itemprop="dateModified" content="2022-11-10" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2022/07/1.1_AdobeStock_295160073-scaled.jpg" /><meta itemprop="width" content="2560" /><meta itemprop="height" content="1456" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/american-church-the-strategy-for-renewal/" rel="bookmark" title="The Decline and Renewal of the American Church: Part 4 – The Strategy for Renewal">
+		<img loading="lazy" width="300" height="171" src="https://quarterly.gospelinlife.com/wp-content/uploads/2022/07/1.1_AdobeStock_295160073-300x171.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2022/07/1.1_AdobeStock_295160073-300x171.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/07/1.1_AdobeStock_295160073-1024x583.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/07/1.1_AdobeStock_295160073-768x437.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/07/1.1_AdobeStock_295160073-1536x874.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2022/07/1.1_AdobeStock_295160073-2048x1165.jpg 2048w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/american-church-the-strategy-for-renewal/" title="The Decline and Renewal of the American Church: Part 4 – The Strategy for Renewal">The Decline and Renewal of the American Church: Part 4 – The Strategy for Renewal</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+<div class="fl-module fl-module-rich-text fl-node-636d5ec92eb77" data-node="636d5ec92eb77">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="text-align: left;"><em>For an extended version of this series, you can download the PDF <a href="https://quarterly.gospelinlife.com/decline-and-renewal-of-the-american-church-extended/">here</a>.</em></p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5f6d87d857447 fl-col-group-nested" data-node="5f6d87d857447">
+			<div class="fl-col fl-node-5f6d87d857a8b fl-col-small" data-node="5f6d87d857a8b">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-5f6d4ad3e4835 fl-animation fl-fade-up" data-node="5f6d4ad3e4835" data-animation-delay="0" data-animation-duration="0.5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-separator-parent">
+
+			<div class="uabb-separator-wrap uabb-separator-center uabb-responsive-medsmall">
+			<div class="uabb-separator-line uabb-side-left">
+				<span></span>
+			</div>
+
+			<div class="uabb-divider-content uabbi-divider">
+								<h3 class="uabb-divider-text">Gospel-Changed Community</h3>			</div>
+
+			<div class="uabb-separator-line uabb-side-right">
+				<span></span>
+			</div> 
+		</div>
+	
+	</div>
+	</div>
+</div>
+<article class="fl-module fl-module-post-grid fl-node-5f6d4a7e02298 fl-animation fl-fade-up posts_thumbnail" data-node="5f6d4a7e02298" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1111 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-community quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" content="An Actor Brings His Faith Into His Work" /><meta itemprop="datePublished" content="2023-10-23" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorchristinastanton/" /><meta itemprop="name" content="Christina Stanton" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized.jpg" /><meta itemprop="width" content="2500" /><meta itemprop="height" content="1666" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" rel="bookmark" title="An Actor Brings His Faith Into His Work">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1024x682.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-768x512.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-1536x1024.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-2048x1365.jpg 2048w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/MM_CS-3a-leadresized-600x400.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/an-actor-brings-faith-into-his-work/" title="An Actor Brings His Faith Into His Work">An Actor Brings His Faith Into His Work</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorchristinastanton/"><span>Christina Stanton</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1060 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-community quarter-summer-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/a-polish-church-and-ukrainian-war-refugees/" content="A Polish Church Comes to the Aid of Ukrainian War Refugees" /><meta itemprop="datePublished" content="2023-07-20" /><meta itemprop="dateModified" content="2023-07-20" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorchristinastanton/" /><meta itemprop="name" content="Christina Stanton" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/3.Poland_church_pexels-jade-971515-scaled.jpg" /><meta itemprop="width" content="2560" /><meta itemprop="height" content="1811" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/a-polish-church-and-ukrainian-war-refugees/" rel="bookmark" title="A Polish Church Comes to the Aid of Ukrainian War Refugees">
+		<img loading="lazy" width="300" height="212" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/3.Poland_church_pexels-jade-971515-300x212.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/3.Poland_church_pexels-jade-971515-300x212.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/3.Poland_church_pexels-jade-971515-1024x724.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/3.Poland_church_pexels-jade-971515-768x543.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/3.Poland_church_pexels-jade-971515-1536x1087.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/3.Poland_church_pexels-jade-971515-2048x1449.jpg 2048w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/a-polish-church-and-ukrainian-war-refugees/" title="A Polish Church Comes to the Aid of Ukrainian War Refugees">A Polish Church Comes to the Aid of Ukrainian War Refugees</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorchristinastanton/"><span>Christina Stanton</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-959 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-community quarter-spring-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/tim-and-kathy-keller-easter-conversation/" content="The Resurrection Is Historically Verifiable or Our Faith Is Nothing" /><meta itemprop="datePublished" content="2023-04-03" /><meta itemprop="dateModified" content="2023-04-04" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/03/6.1-Tim-and-Kathy-Easter-Message-scaled.jpg" /><meta itemprop="width" content="2560" /><meta itemprop="height" content="1306" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/tim-and-kathy-keller-easter-conversation/" rel="bookmark" title="The Resurrection Is Historically Verifiable or Our Faith Is Nothing">
+		<img loading="lazy" width="300" height="153" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/03/6.1-Tim-and-Kathy-Easter-Message-300x153.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/03/6.1-Tim-and-Kathy-Easter-Message-300x153.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/03/6.1-Tim-and-Kathy-Easter-Message-1024x522.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/03/6.1-Tim-and-Kathy-Easter-Message-768x392.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/03/6.1-Tim-and-Kathy-Easter-Message-1536x783.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/03/6.1-Tim-and-Kathy-Easter-Message-2048x1044.jpg 2048w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/tim-and-kathy-keller-easter-conversation/" title="The Resurrection Is Historically Verifiable or Our Faith Is Nothing">The Resurrection Is Historically Verifiable or Our Faith Is Nothing</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-923 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-community quarter-winter-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/the-scars-of-racism-can-only-be-healed-by-jesus/" content="The Scars of Racism Can Only Be Healed by Jesus Christ" /><meta itemprop="datePublished" content="2023-01-24" /><meta itemprop="dateModified" content="2023-01-25" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorchristinastanton/" /><meta itemprop="name" content="Christina Stanton" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash.jpg" /><meta itemprop="width" content="1800" /><meta itemprop="height" content="1200" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/the-scars-of-racism-can-only-be-healed-by-jesus/" rel="bookmark" title="The Scars of Racism Can Only Be Healed by Jesus Christ">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash-1024x683.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash-768x512.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash-1536x1024.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash-600x400.jpg 600w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/4.3tobias-reich-1GgWbP74phY-unsplash.jpg 1800w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/the-scars-of-racism-can-only-be-healed-by-jesus/" title="The Scars of Racism Can Only Be Healed by Jesus Christ">The Scars of Racism Can Only Be Healed by Jesus Christ</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorchristinastanton/"><span>Christina Stanton</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+	</div>
+</div>
+			<div class="fl-col fl-node-5f6d87d857a93 fl-col-small" data-node="5f6d87d857a93">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-5f6d4ad5831de fl-animation fl-fade-up" data-node="5f6d4ad5831de" data-animation-delay="0" data-animation-duration="0.5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-separator-parent">
+
+			<div class="uabb-separator-wrap uabb-separator-center uabb-responsive-medsmall">
+			<div class="uabb-separator-line uabb-side-left">
+				<span></span>
+			</div>
+
+			<div class="uabb-divider-content uabbi-divider">
+								<h3 class="uabb-divider-text">Gospel-Changed Hearts</h3>			</div>
+
+			<div class="uabb-separator-line uabb-side-right">
+				<span></span>
+			</div> 
+		</div>
+	
+	</div>
+	</div>
+</div>
+<article class="fl-module fl-module-post-grid fl-node-5f6d85709147e fl-animation fl-fade-up posts_thumbnail" data-node="5f6d85709147e" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1064 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-hearts quarter-summer-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/why-i-hated-god-copy/" content="Testimony of a Changed Heart" /><meta itemprop="datePublished" content="2023-07-20" /><meta itemprop="dateModified" content="2023-07-20" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorbrettdoran/" /><meta itemprop="name" content="Brett Doran" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/4.Testimony_San_Fran_rezaul-karim-102abqkKhbY-unsplash.jpg" /><meta itemprop="width" content="1200" /><meta itemprop="height" content="1800" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/why-i-hated-god-copy/" rel="bookmark" title="Testimony of a Changed Heart">
+		<img loading="lazy" width="200" height="300" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/4.Testimony_San_Fran_rezaul-karim-102abqkKhbY-unsplash-200x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/4.Testimony_San_Fran_rezaul-karim-102abqkKhbY-unsplash-200x300.jpg 200w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/4.Testimony_San_Fran_rezaul-karim-102abqkKhbY-unsplash-683x1024.jpg 683w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/4.Testimony_San_Fran_rezaul-karim-102abqkKhbY-unsplash-768x1152.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/4.Testimony_San_Fran_rezaul-karim-102abqkKhbY-unsplash-1024x1536.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/4.Testimony_San_Fran_rezaul-karim-102abqkKhbY-unsplash.jpg 1200w" sizes="(max-width: 200px) 100vw, 200px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/why-i-hated-god-copy/" title="Testimony of a Changed Heart">Testimony of a Changed Heart</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorbrettdoran/"><span>Brett Doran</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-957 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-hearts quarter-spring-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/how-i-discovered-the-true-need-meeter-of-my-soul/" content="How I Discovered the True “Need Meeter” of My Soul" /><meta itemprop="datePublished" content="2023-04-03" /><meta itemprop="dateModified" content="2023-04-04" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorlauriekrieg/" /><meta itemprop="name" content="Laurie Krieg" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-scaled.jpeg" /><meta itemprop="width" content="2560" /><meta itemprop="height" content="1707" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/how-i-discovered-the-true-need-meeter-of-my-soul/" rel="bookmark" title="How I Discovered the True “Need Meeter” of My Soul">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-300x200.jpeg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-300x200.jpeg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-1024x683.jpeg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-768x512.jpeg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-1536x1024.jpeg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-2048x1365.jpeg 2048w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/4.2-600x400.jpeg 600w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/how-i-discovered-the-true-need-meeter-of-my-soul/" title="How I Discovered the True “Need Meeter” of My Soul">How I Discovered the True “Need Meeter” of My Soul</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorlauriekrieg/"><span>Laurie Krieg</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-955 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-hearts quarter-spring-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/my-life-is-in-his-hands/" content="My Life is in His Hands" /><meta itemprop="datePublished" content="2023-04-03" /><meta itemprop="dateModified" content="2023-04-04" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorbensalvatore/" /><meta itemprop="name" content="Ben Salvatore" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-scaled.jpg" /><meta itemprop="width" content="2560" /><meta itemprop="height" content="1704" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/my-life-is-in-his-hands/" rel="bookmark" title="My Life is in His Hands">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-1024x681.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-768x511.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-1536x1022.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-2048x1363.jpg 2048w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/04/3.1-Burkina-600x400.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/my-life-is-in-his-hands/" title="My Life is in His Hands">My Life is in His Hands</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorbensalvatore/"><span>Ben Salvatore</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-920 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-hearts quarter-winter-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/what-was-once-dead-is-now-filled-with-life/" content="What Was Once Dead Is Now Filled with Life" /><meta itemprop="datePublished" content="2023-01-24" /><meta itemprop="dateModified" content="2023-01-25" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/ginlquarterly/" /><meta itemprop="name" content="Gospel in Life" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash.jpeg" /><meta itemprop="width" content="1920" /><meta itemprop="height" content="1280" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/what-was-once-dead-is-now-filled-with-life/" rel="bookmark" title="What Was Once Dead Is Now Filled with Life">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash-300x200.jpeg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash-300x200.jpeg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash-1024x683.jpeg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash-768x512.jpeg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash-1536x1024.jpeg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash-600x400.jpeg 600w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/01/cristofer-maximilian-UpX9AkR0P3A-unsplash.jpeg 1920w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/what-was-once-dead-is-now-filled-with-life/" title="What Was Once Dead Is Now Filled with Life">What Was Once Dead Is Now Filled with Life</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/ginlquarterly/"><span>Gospel in Life</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5f6d8886f3fa5 fl-col-group-nested" data-node="5f6d8886f3fa5">
+			<div class="fl-col fl-node-5f6d888700263 fl-col-small" data-node="5f6d888700263">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-5f6d4ad6d52ef fl-animation fl-fade-up" data-node="5f6d4ad6d52ef" data-animation-delay="0" data-animation-duration="0.5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-separator-parent">
+
+			<div class="uabb-separator-wrap uabb-separator-center uabb-responsive-medsmall">
+			<div class="uabb-separator-line uabb-side-left">
+				<span></span>
+			</div>
+
+			<div class="uabb-divider-content uabbi-divider">
+								<h3 class="uabb-divider-text">Gospel-Changed Minds</h3>			</div>
+
+			<div class="uabb-separator-line uabb-side-right">
+				<span></span>
+			</div> 
+		</div>
+	
+	</div>
+	</div>
+</div>
+<article class="fl-module fl-module-post-grid fl-node-5f6d85a0de0c2 fl-animation fl-fade-up posts_thumbnail" data-node="5f6d85a0de0c2" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1142 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" content="Discovering the Gospel in Every Book of the Bible – Job" /><meta itemprop="datePublished" content="2023-10-25" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1391" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" rel="bookmark" title="Discovering the Gospel in Every Book of the Bible – Job">
+		<img loading="lazy" width="300" height="209" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-300x209.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-300x209.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1024x712.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-768x534.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob-1536x1068.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/Timphotojob.jpg 2000w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-job/" title="Discovering the Gospel in Every Book of the Bible – Job">Discovering the Gospel in Every Book of the Bible – Job</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1102 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" content="How Gospel Community Can Overcome Loneliness" /><meta itemprop="datePublished" content="2023-10-20" /><meta itemprop="dateModified" content="2023-11-08" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorrebeccamclaughlin2/" /><meta itemprop="name" content="Dr. Rebecca McLaughlin" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized.jpg" /><meta itemprop="width" content="2500" /><meta itemprop="height" content="1875" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" rel="bookmark" title="How Gospel Community Can Overcome Loneliness">
+		<img loading="lazy" width="300" height="225" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-300x225.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1024x768.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-768x576.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-1536x1152.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/RM-1A-leadResized-2048x1536.jpg 2048w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" title="How Gospel Community Can Overcome Loneliness">How Gospel Community Can Overcome Loneliness</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorrebeccamclaughlin2/"><span>Dr. Rebecca McLaughlin</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1074 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-summer-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/discovering-the-gospel-in-1-and-2-kings/" content="New Episode: Discovering the Gospel in 1 &#038; 2 Kings" /><meta itemprop="datePublished" content="2023-07-20" /><meta itemprop="dateModified" content="2023-07-21" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authortimkeller/" /><meta itemprop="name" content="Dr. Timothy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/6.maxresdefault.jpg" /><meta itemprop="width" content="1280" /><meta itemprop="height" content="720" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-1-and-2-kings/" rel="bookmark" title="New Episode: Discovering the Gospel in 1 &#038; 2 Kings">
+		<img loading="lazy" width="300" height="169" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/6.maxresdefault-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/6.maxresdefault-300x169.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/6.maxresdefault-1024x576.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/6.maxresdefault-768x432.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/6.maxresdefault.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/discovering-the-gospel-in-1-and-2-kings/" title="New Episode: Discovering the Gospel in 1 &#038; 2 Kings">New Episode: Discovering the Gospel in 1 &#038; 2 Kings</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authortimkeller/"><span>Dr. Timothy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1049 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-minds quarter-summer-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/lemonade-on-the-porch-part-2/" content="Lemonade on the Porch (Part 2) – Why and How to Build Porches: The Gospel in a Post-Christendom Society" /><meta itemprop="datePublished" content="2023-07-20" /><meta itemprop="dateModified" content="2023-07-24" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authordrjameseglinton/" /><meta itemprop="name" content="Dr. James Eglinton" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Lemonade-on-the-porch-2.jpg" /><meta itemprop="width" content="1456" /><meta itemprop="height" content="816" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/lemonade-on-the-porch-part-2/" rel="bookmark" title="Lemonade on the Porch (Part 2) – Why and How to Build Porches: The Gospel in a Post-Christendom Society">
+		<img loading="lazy" width="300" height="168" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Lemonade-on-the-porch-2-300x168.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Lemonade-on-the-porch-2-300x168.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Lemonade-on-the-porch-2-1024x574.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Lemonade-on-the-porch-2-768x430.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Lemonade-on-the-porch-2.jpg 1456w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/lemonade-on-the-porch-part-2/" title="Lemonade on the Porch (Part 2) – Why and How to Build Porches: The Gospel in a Post-Christendom Society">Lemonade on the Porch (Part 2) – Why and How to Build Porches: The Gospel in a Post-Christendom Society</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authordrjameseglinton/"><span>Dr. James Eglinton</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+	</div>
+</div>
+			<div class="fl-col fl-node-5f6d88870026a fl-col-small" data-node="5f6d88870026a">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-5f6d4ad8effd0 fl-animation fl-fade-up" data-node="5f6d4ad8effd0" data-animation-delay="0" data-animation-duration="0.5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-separator-parent">
+
+			<div class="uabb-separator-wrap uabb-separator-center uabb-responsive-medsmall">
+			<div class="uabb-separator-line uabb-side-left">
+				<span></span>
+			</div>
+
+			<div class="uabb-divider-content uabbi-divider">
+								<h3 class="uabb-divider-text">Gospel-Changed Lives</h3>			</div>
+
+			<div class="uabb-separator-line uabb-side-right">
+				<span></span>
+			</div> 
+		</div>
+	
+	</div>
+	</div>
+</div>
+<article class="fl-module fl-module-post-grid fl-node-5f6d85d53ea3b fl-animation fl-fade-up posts_thumbnail" data-node="5f6d85d53ea3b" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Blog">
+	<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1114 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/story-of-a-changed-life/" content="A Story of a Changed Life" /><meta itemprop="datePublished" content="2023-10-23" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorellieellsworth/" /><meta itemprop="name" content="Ellie Ellsworth" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead.jpg" /><meta itemprop="width" content="2000" /><meta itemprop="height" content="1335" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" rel="bookmark" title="A Story of a Changed Life">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1024x684.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-768x513.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-1536x1025.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead-600x400.jpg 600w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/EE-4a-lead.jpg 2000w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" title="A Story of a Changed Life">A Story of a Changed Life</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorellieellsworth/"><span>Ellie Ellsworth</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1108 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-fall-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/our-story-within-gods-story/" content="Our Story Within God’s Story" /><meta itemprop="datePublished" content="2023-10-20" /><meta itemprop="dateModified" content="2023-10-26" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorjudycha/" /><meta itemprop="name" content="Dr. Judy Cha, LMFT" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead.jpg" /><meta itemprop="width" content="1709" /><meta itemprop="height" content="2560" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" rel="bookmark" title="Our Story Within God’s Story">
+		<img loading="lazy" width="200" height="300" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-200x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-200x300.jpg 200w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-684x1024.jpg 684w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-768x1150.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-1025x1536.jpg 1025w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead-1367x2048.jpg 1367w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/10/JC-2a-lead.jpg 1709w" sizes="(max-width: 200px) 100vw, 200px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" title="Our Story Within God’s Story">Our Story Within God’s Story</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorjudycha/"><span>Dr. Judy Cha, LMFT</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1069 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-summer-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/a-special-announcement-gospel-in-life-has-moved-to-redeemer-city-to-city/" content="Special Announcement: Gospel in Life has moved to Redeemer City to City" /><meta itemprop="datePublished" content="2023-07-20" /><meta itemprop="dateModified" content="2023-07-21" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authorkathykeller/" /><meta itemprop="name" content="Kathy Keller" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Look-Up-Skyscraper2.jpeg" /><meta itemprop="width" content="1800" /><meta itemprop="height" content="1013" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/a-special-announcement-gospel-in-life-has-moved-to-redeemer-city-to-city/" rel="bookmark" title="Special Announcement: Gospel in Life has moved to Redeemer City to City">
+		<img loading="lazy" width="300" height="169" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Look-Up-Skyscraper2-300x169.jpeg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Look-Up-Skyscraper2-300x169.jpeg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Look-Up-Skyscraper2-1024x576.jpeg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Look-Up-Skyscraper2-768x432.jpeg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Look-Up-Skyscraper2-1536x864.jpeg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/Look-Up-Skyscraper2.jpeg 1800w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/a-special-announcement-gospel-in-life-has-moved-to-redeemer-city-to-city/" title="Special Announcement: Gospel in Life has moved to Redeemer City to City">Special Announcement: Gospel in Life has moved to Redeemer City to City</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authorkathykeller/"><span>Kathy Keller</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-left post-1054 post type-post status-publish format-standard has-post-thumbnail hentry category-gospel-changed-lives quarter-summer-2023" itemscope itemtype="https://schema.org/BlogPosting">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://quarterly.gospelinlife.com/why-i-hated-god/" content="Why I Hated God and How I Came To Love Jesus Christ" /><meta itemprop="datePublished" content="2023-07-20" /><meta itemprop="dateModified" content="2023-07-21" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Life in the Gospel"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/cropped-Life_in_the_Gospel-white.png"></div></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://quarterly.gospelinlife.com/author/authoranonymous/" /><meta itemprop="name" content="Anonymous" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-scaled.jpg" /><meta itemprop="width" content="2560" /><meta itemprop="height" content="1706" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://quarterly.gospelinlife.com/why-i-hated-god/" rel="bookmark" title="Why I Hated God and How I Came To Love Jesus Christ">
+		<img loading="lazy" width="300" height="200" src="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-300x200.jpg 300w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-1024x683.jpg 1024w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-768x512.jpg 768w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-1536x1024.jpg 1536w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-2048x1365.jpg 2048w, https://quarterly.gospelinlife.com/wp-content/uploads/2023/07/2.LASS_diego-san-HrbtNUMswCs-unsplash-600x400.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://quarterly.gospelinlife.com/why-i-hated-god/" title="Why I Hated God and How I Came To Love Jesus Christ">Why I Hated God and How I Came To Love Jesus Christ</a>
+		</h2>
+
+		
+				<div class="fl-post-grid-meta">
+							<span class="fl-post-grid-author">
+				By <a href="https://quarterly.gospelinlife.com/author/authoranonymous/"><span>Anonymous</span></a>				</span>
+											</div>
+		
+		
+		
+	
+	
+	
+		
+		
+		
+	</div>
+</div>
+
+</div>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</article>
+	</div>
+</div>
+	</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-60d267ed49a4b fl-animation fl-fade-up" data-node="60d267ed49a4b" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-row-content-wrap">
+								<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60d268012170b" data-node="60d268012170b">
+			<div class="fl-col fl-node-60d2656debc7d fl-col-has-cols" data-node="60d2656debc7d">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-60d2656debd60 fl-animation fl-fade-up" data-node="60d2656debd60" data-animation-delay="0" data-animation-duration="0.5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-separator-parent">
+
+			<div class="uabb-separator-wrap uabb-separator-center uabb-responsive-medsmall">
+			<div class="uabb-separator-line uabb-side-left">
+				<span></span>
+			</div>
+
+			<div class="uabb-divider-content uabbi-divider">
+								<h3 class="uabb-divider-text">Browse All Quarterly Editions</h3>			</div>
+
+			<div class="uabb-separator-line uabb-side-right">
+				<span></span>
+			</div> 
+		</div>
+	
+	</div>
+	</div>
+</div>
+
+<div class="fl-col-group fl-node-60d26814a0785 fl-col-group-nested" data-node="60d26814a0785">
+			<div class="fl-col fl-node-63d11f06ccf84 fl-col-small" data-node="63d11f06ccf84">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-heading fl-node-63d11f022d530" data-node="63d11f022d530">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-heading-wrapper uabb-heading-align-center ">
+
+	
+	<h3 class="uabb-heading">
+				<span class="uabb-heading-text">2023</span>
+			</h3>
+
+	
+		<div class="uabb-subheading uabb-text-editor">
+		<p><a href="https://quarterly.gospelinlife.com/quarter/winter-2023/">Winter</a></p><p><a href="https://quarterly.gospelinlife.com/quarter/spring-2023/">Spring</a></p><p><a href="https://quarterly.gospelinlife.com/quarter/summer-2023/">Summer</a></p><p><a href="https://quarterly.gospelinlife.com/quarter/fall-2023/">Fall</a></p>	</div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-61f17db86eb36 fl-col-small" data-node="61f17db86eb36">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-heading fl-node-61f17db318ded" data-node="61f17db318ded">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-heading-wrapper uabb-heading-align-center ">
+
+	
+	<h3 class="uabb-heading">
+				<span class="uabb-heading-text">2022</span>
+			</h3>
+
+	
+		<div class="uabb-subheading uabb-text-editor">
+		<p><a href="https://quarterly.gospelinlife.com/quarter/winter-2022/">Winter</a><br /><a href="https://quarterly.gospelinlife.com/quarter/spring-2022/">Spring</a><br /><a href="https://quarterly.gospelinlife.com/quarter/summer-2022/">Summer</a><br /><a href="https://quarterly.gospelinlife.com/quarter/fall-2022/">Fall</a></p>	</div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-60d26814a08a2 fl-col-small" data-node="60d26814a08a2">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-heading fl-node-60d266895cccb" data-node="60d266895cccb">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-heading-wrapper uabb-heading-align-center ">
+
+	
+	<h3 class="uabb-heading">
+				<span class="uabb-heading-text">2021</span>
+			</h3>
+
+	
+		<div class="uabb-subheading uabb-text-editor">
+		<p><a href="https://quarterly.gospelinlife.com/quarter/winter-2021/">Winter</a><br /><a href="https://quarterly.gospelinlife.com/quarter/spring-2021/">Spring</a><br /><a href="https://quarterly.gospelinlife.com/quarter/summer-2021/">Summer</a><br /><a href="https://quarterly.gospelinlife.com/quarter/fall-2021/">Fall</a></p>	</div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-60d26814a08a8 fl-col-small" data-node="60d26814a08a8">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-heading fl-node-60d26749e0db5" data-node="60d26749e0db5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-heading-wrapper uabb-heading-align-center ">
+
+	
+	<h3 class="uabb-heading">
+				<span class="uabb-heading-text">2020</span>
+			</h3>
+
+	
+		<div class="uabb-subheading uabb-text-editor">
+		<p><a href="https://quarterly.gospelinlife.com/quarter/spring-2020/">Spring</a><br /><a href="https://quarterly.gospelinlife.com/quarter/summer-2020/">Summer</a><br /><a href="https://quarterly.gospelinlife.com/quarter/fall-2020/">Fall</a></p>	</div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div><div class="uabb-js-breakpoint" style="display: none;"></div>
+		
+		
+	</div><!-- .entry-content .clear -->
+
+	
+	
+</article><!-- #post-## -->
+
+
+					
+					
+				
+			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+			
+			</div> <!-- ast-container -->
+
+		</div><!-- #content -->
+
+		
+		
+		<footer class="fl-builder-content fl-builder-content-65 fl-builder-global-templates-locked" data-post-id="65" data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><div class="fl-row fl-row-full-width fl-row-bg-parallax fl-node-5e6a67f57fc2c fl-row-custom-height fl-row-align-center fl-row-bg-overlay" data-node="5e6a67f57fc2c" data-parallax-speed="2" data-parallax-image="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/flatiron-small.jpg">
+	<div class="fl-row-content-wrap">
+								<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e6fa9d87eb5a" data-node="5e6fa9d87eb5a">
+			<div class="fl-col fl-node-5e6fa9d87ec67" data-node="5e6fa9d87ec67">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-mailchimp-subscribe-form fl-node-5e6fad4232c44 fl-animation fl-fade-up" data-node="5e6fad4232c44" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+				<div class="uabb-module-content uabb-subscribe-form uabb-subscribe-form-inline uabb-sf-style-style1 uabb-form fl-clearfix" 
+																							>
+
+			<div class="uabb-head-wrap">
+
+				<h3 class="uabb-sf-heading">Want free resources from Tim Keller and Redeemer?</h3>
+
+				<h6 class="uabb-sf-subheading">Subscribe to the Gospel in Life newsletter and receive free articles, sermons, devotionals and other resources.</h6>
+
+			</div>
+
+			<div class="uabb-form-wrap fl-clearfix" data-nonce=230ce4fe7a>
+
+									<div class="uabb-form-field">
+					<input type="text" name="uabb-subscribe-form-fname" id="uabb-subscribe-form-fname" placeholder="First Name" />
+										<div class="uabb-form-error-message">!</div>
+				</div><!-- Inline Block Space Fix 
+
+				-->
+									<div class="uabb-form-field">
+					<input type="text" name="uabb-subscribe-form-lname" id="uabb-subscribe-form-lname" placeholder="Last Name" />
+										<div class="uabb-form-error-message">!</div>
+				</div><!-- Inline Block Space Fix
+
+				--><div class="uabb-form-field">
+					<input type="email" name="uabb-subscribe-form-email" placeholder="Your Email" />
+										<div class="uabb-form-error-message">!</div>
+				</div><!-- Inline Block Space Fix	
+				--><!-- Inline Block Space Fix	
+				--><div class="uabb-form-button" data-wait-text="Please Wait...">
+				
+<div class="uabb-module-content uabb-button-wrap uabb-creative-button-wrap uabb-button-width-auto uabb-creative-button-width-auto uabb-button-left uabb-creative-button-left uabb-button-reponsive-left uabb-creative-button-reponsive-left">
+			<a href="#" target="_self"  class="uabb-button ast-button uabb-creative-button uabb-creative-default-btn   "  role="button">
+							<span class="uabb-button-text uabb-creative-button-text">Subscribe</span>
+							
+						
+		</a>
+	</div>
+
+
+
+
+				</div>
+
+			</div>
+										
+						<div class="uabb-form-error-message">Something went wrong. Please check your entries and try again.</div>
+		</div>
+			</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5e6fad99602e8" data-node="5e6fad99602e8">
+	<div class="fl-row-content-wrap">
+								<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e6fad9960547" data-node="5e6fad9960547">
+			<div class="fl-col fl-node-5e6fad9960548 fl-col-small" data-node="5e6fad9960548">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5e6fad9960549 fl-animation fl-fade-up" data-node="5e6fad9960549" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img decoding="async" loading="lazy" width="501" height="92" class="fl-photo-img wp-image-66" src="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal.png" alt="GIL Logo Horizontal" itemprop="image" title="GIL Logo Horizontal" srcset="https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal.png 501w, https://quarterly.gospelinlife.com/wp-content/uploads/2020/03/GIL-Logo-Horizontal-300x55.png 300w" sizes="(max-width: 501px) 100vw, 501px" />
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5e6fad996054a" data-node="5e6fad996054a">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5e6fad996054b fl-animation fl-fade-up" data-node="5e6fad996054b" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>We believe God is growing a gospel movement in New York City and other cities all over the world. Life in the Gospel, a publication of Gospel in Life, seeks to help grow this movement by providing resources that bring about gospel transformation and that encourage Christians everywhere to live more missionally.</p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5e6a67f57fc1b" data-node="5e6a67f57fc1b">
+	<div class="fl-row-content-wrap">
+								<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e6fac225be33 fl-col-group-responsive-reversed" data-node="5e6fac225be33">
+			<div class="fl-col fl-node-5e6fac225bf6b fl-col-small" data-node="5e6fac225bf6b">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-icon-group fl-node-5e6faae1431a2 fl-animation fl-fade-up" data-node="5e6faae1431a2" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-icon-group">
+	<span class="fl-icon">
+								<a href="https://facebook.com/gospelinlife" target="_blank" rel="noopener" >
+							<i class="ua-icon ua-icon-facebook2" aria-hidden="true"></i>
+						</a>
+			</span>
+		<span class="fl-icon">
+								<a href="https://instagram.com/gospelinlife" target="_blank" rel="noopener" >
+							<i class="ua-icon ua-icon-instagram" aria-hidden="true"></i>
+						</a>
+			</span>
+		<span class="fl-icon">
+								<a href="https://twitter.com/gospelinlife" target="_blank" rel="noopener" >
+							<i class="ua-icon ua-icon-twitter2" aria-hidden="true"></i>
+						</a>
+			</span>
+		<span class="fl-icon">
+								<a href="https://www.youtube.com/gospelinlife?sub_confirmation=1" target="_blank" rel="noopener" >
+							<i class="ua-icon ua-icon-youtube" aria-hidden="true"></i>
+						</a>
+			</span>
+		<span class="fl-icon">
+								<a href="https://link.chtbl.com/TimKellerPodcast" target="_blank" rel="noopener" >
+							<i class="fas fa-podcast" aria-hidden="true"></i>
+						</a>
+			</span>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5e6fac225bf6f fl-col-small" data-node="5e6fac225bf6f">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-menu fl-node-5e6faa0b02125 fl-animation fl-fade-up" data-node="5e6faa0b02125" data-animation-delay="0.0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-menu">
+		<div class="fl-clear"></div>
+	<nav aria-label="Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu-main" class="menu fl-menu-horizontal fl-toggle-arrows"><li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-36 current_page_item"><a href="https://quarterly.gospelinlife.com/">Articles</a></li><li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://quarterly.gospelinlife.com/index/">Past Issues</a></li><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="http://bit.ly/QuarterlyToDonate">Donate</a></li><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="http://bit.ly/QuarterlyToPodcast">Podcast</a></li><li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="http://bit.ly/QuarterlyToStore">Sermons</a></li></ul></nav></div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</footer><div class="uabb-js-breakpoint" style="display: none;"></div>
+		
+	</div><!-- #page -->
+
+	
+		<script type="text/javascript">
+		function atomicBlocksShare( url, title, w, h ){
+			var left = ( window.innerWidth / 2 )-( w / 2 );
+			var top  = ( window.innerHeight / 2 )-( h / 2 );
+			return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
+		}
+	</script>
+	<script id='astra-theme-js-js-extra'>
+var astra = {"break_point":"921","isRtl":""};
+</script>
+<script src='https://quarterly.gospelinlife.com/wp-content/themes/astra/assets/js/minified/style.min.js?ver=2.5.5' id='astra-theme-js-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.4.0.4' id='jquery-waypoints-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-content/uploads/bb-plugin/cache/36-layout.js?ver=438174186e3b17b9d195f4af58fce62b' id='fl-builder-layout-36-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-content/plugins/wp-footnotes-master/assets/wp-footnotes.js?ver=1.0.1' id='footnotes.javascript-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-content/plugins/atomic-blocks/dist/assets/js/dismiss.js?ver=1600401481' id='atomic-blocks-dismiss-js-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.4.0.4' id='jquery-throttle-js'></script>
+<script src='https://quarterly.gospelinlife.com/wp-content/uploads/bb-plugin/cache/14f97c345965a9ce9585d82e2aee6c60-layout-bundle.js?ver=2.4.0.4-1.3.2.3' id='fl-builder-layout-bundle-14f97c345965a9ce9585d82e2aee6c60-js'></script>
+			<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+			
+	</body>
+</html>

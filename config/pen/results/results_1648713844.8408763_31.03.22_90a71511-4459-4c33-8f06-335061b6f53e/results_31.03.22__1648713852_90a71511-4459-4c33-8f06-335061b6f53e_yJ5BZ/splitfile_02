@@ -1,0 +1,4 @@
+The above code creates a data type called GameState.
+The data type has two fields: numberToGuess and numTries.
+The type of numberToGuess is Integer and the type of numTries is Integer.
+The data type is parameterized by the type constructor Maybe Integer.

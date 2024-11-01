@@ -1,0 +1,161 @@
+HTTP/1.1 200 OK
+Date: Sat, 17 Feb 2024 03:39:39 GMT
+Server: Apache/2.4.58 (Unix)
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Fri, 19 May 2023 17:43:55 GMT
+Accept-Ranges: none
+Vary: Accept-Encoding,User-Agent
+Content-Length: 2405
+Keep-Alive: timeout=3, max=100
+Content-Type: text/html
+
+<html>
+<head>
+<title>dettus.net- Now with dMagnetic, a Magnetic Scrolls Interpreter.</title>
+</head>
+<body bgcolor='#000000' text='#d5d6d5' link='#44ffff' vlink='#44ffff' alink='#44ffff'>
+<table>
+<td valign="top" align="right" width='5%'>
+<a href="/index.html"><img src="/dettus.png" height=43 width=88></a><br>
+<a href="/logix">:LOGIX</a><br>
+<a href="/photos">:photos</a><br>
+<a href="/papers">:papers</a><br>
+<a href="/tutorials">:tutorials</a><br>
+<a href="/drm">:drm</a><br>
+<a href="/n2048">:n2048</a><br>
+<a href="/nmicrocoder">:nmicrocoder</a><br>
+<a href="/daes">:daes</a><br>
+<a href="/dhex">:dhex</a><br>
+<a href="/deadline">:deadline</a><br>
+<a href="/dettuxx">:dettuxx</a><br>
+<a href="/detLFS">:detLFS</a><br>
+<a href="/dMagnetic">:dMagnetic</a><br>
+<a href="/circdraw">:circdraw</a><br>
+<a href="/systemc.html">:systemc</a><br>
+<a href="/xf86config.html">:xf86config</a><br>
+<a href="/qdslconfig.html">:qdslconfig</a><br>
+<a href="/bootfloppy">:bootfloppy</a><br>
+<a href="/6502">:6502</a><br>
+<a href="/alienware">:alienware</a><br>
+<a href="/inhouse/inhouse.html">:inhouse</a><br>
+<br>
+<a href="/math">:math</a><br>
+<br>
+<a href="/winscp368setup.exe">winscp.exe</a><br>
+<a href="/putty.exe">putty.exe</a><br>
+<br>
+<a href="/impressum.html">:impressum</a><br>
+</td><td valign="top" width='1%'></td><td valign="top" width='96%'>
+<hr>
+<h1>dMagnetic</h1>
+<h2>"You wake up on a sunny August morning with birds singing, and the air
+fresh and clear. However, your joints are stiff and you have not woken
+up in your bedroom as you would have expected. Trying to recall what
+happened the night before, you manage to piece together a few brief
+glimpses to give the following account:"</h2>
+<br>
+dMagnetic is an Interpreter for Magnetic Scrolls. With it, it is possible to play the classic text adventures (or interactive fiction) "The Pawn", "The Guild of Thieves", "Jinxter", "Myth", "Fish!", "Corruption" and "Wonderland" on modern computers. It has been designed with portability in mind, and can be compiled on anything with a C-Compiler. Ubuntu, Debian, Gentoo, OpenBSD, FreeBSD, NetBSD, Solaris, IRIX, Mac OS X, Windows are among the operating systems being supported. It has been published under the BSD 2-clause license, so it does not have to stop there. 
+<hr>
+<h1>Download dMagnetic 0.37</h1>
+<h3>16-may-2023<br>
+This version saw a little bit action on the help screens. Plus, the WEIRD WEIRD graphics mode of the Apple II ate a lot of memory, which, if you do it properly, is no longer wasted. 
+<br>
+</h3>
+<table>
+<tr><td><a href="dMagnetic_0.37.tar.bz2">dMagnetic_0.37.tar.bz2</a></td><td>a8986fd4aee17fea818d218268c98d35</td><tr>
+<tr><td><a href="dMagnetic_0.37_documentation.tar.bz2">Documentation (as .tar.bz2)</a></td><td>MD5: 4fefa2b91a8cef89a23ab44310fea15f</td><tr>
+<tr><td><a href="dMagnetic_037.pdf">dMagnetic_037.pdf</a></td><td>MD5: ac9f6334e5ae448df3fb633dfb317d52</td><tr>
+</table>
+<br>
+<a href="old_releases.html">Click here to download previous releases...</a><br>
+<a href="dMagnetic_datastructures.pdf">dMagnetic_datastructures.pdf</a> My personal take on the data structures.<br>
+<hr>
+<h1>Screenshots</h1>
+<table>
+<tr><td bgcolor="#000060" colspan="7">dMagnetic 0.30, .mag input, sixel mode</td></tr>
+<tr>
+<td><a href="sixel_mag_pawn.png"><img src="t_sixel_mag_pawn.png"></a></td>
+<td><a href="sixel_mag_guild.png"><img src="t_sixel_mag_guild.png"></a></td>
+<td><a href="sixel_mag_jinxter.png"><img src="t_sixel_mag_jinxter.png"></a></td>
+<td><a href="sixel_mag_ccorrupt.png"><img src="t_sixel_mag_ccorrupt.png"></a></td>
+<td><a href="sixel_mag_fish.png"><img src="t_sixel_mag_fish.png"></a></td>
+<td><a href="sixel_mag_myth.png"><img src="t_sixel_mag_myth.png"></a></td>
+<td><a href="sixel_mag_wonder.png"><img src="t_sixel_mag_wonder.png"></a></td></tr>
+<tr>
+<td>The Pawn</td>
+<td>The Guild of Thieves</td>
+<td>Jinxter</td>
+<td>Corruption</td>
+<td>Fish!</td>
+<td>Myth</td>
+<td>Wonderland</td>
+</table>
+<br>
+<a href="screenshots.html">More screenshots can be found here</a>
+<hr>
+<h1>Videos</h1>
+<script id="asciicast-281636" src="https://asciinema.org/a/281636.js" async></script>
+<hr>
+<h1>Input formats</h1>
+dMagnetic is not a game itself. It requires the original binaries to run. Those can be found, for example, at <a href="https://msmemorial.if-legends.org/magnetic.php">the magnetic scrolls memorial</a> in the .mag/.gfx format.<br>.
+It is also possible to use one of the following
+<table>
+<tr>
+<td>
+<a href="montage_inputs.png"><img src="t_montage_inputs.png"></a>
+</td>
+<td valign=top><ul>
+<li>MS-DOS binaries
+<li>Magnetic Windows Resource Files (.RSC)
+<li>Commodore 64 binaries as .d64 disk images
+<li>Amstrad CPC disk images in the .DSK format
+<li>Archimedes disk images (.adf/.adl)
+<li>Spectrum +3 diskimages (.dsk format)
+<li>Atari XL diskimages (.atr format)
+<li>Apple II diskimages (.nib and .2mg format)
+</ul>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<h1>Rendering modes</h1>
+Since the games are being played in a Terminal Window, a TTY console, the beautiful graphics that Magnetic Scrolls was known for are being rendered in one of the following formats:
+<table>
+<tr>
+<td>
+<a href="montage_modes.png"><img src="t_montage_modes.png"></a>
+</td>
+<td valign=top><ul>
+<li>None - No graphics
+<li>Monochrome - ASCII Art
+<li>Low Ansi - ANSI Art
+<li>High Ansi - More colours
+<li>UTF - UTF8 characters are being used as pixels
+<li>Sixel - Where available (for example in mlterm, or in xterm -ti vt340)
+</ul>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<h1>How to install</h1>
+<table>
+<tr><td><b>OpenBSD</b></td><td></td><td>pkg_add dmagnetic</td></tr>
+<tr><td><b>FreeBSD</b></td><td></td><td>pkg install dMagnetic</td></tr>
+<tr><td><b>NetBSD</b></td><td></td><td>pkgin in dMagnetic</td></tr>
+<tr><td><b>Debian</b></td><td></td><td>sudo apt-get install dmagnetic</td></tr>
+<tr><td><b>Ubuntu</b></td><td></td><td>sudo apt-get install dmagnetic</td></tr>
+<tr><td><b>Homebrew</b></td><td></td><td>brew install dMagnetic</td></tr>
+<tr><td><b>Termux</b></td><td></td><td>pkg install dMagnetic</td></tr>
+<tr><td valign=top><b>General</b></td><td></td><td><pre>
+wget https://www.dettus.net/dMagnetic/dMagnetic_0.37.tar.bz2
+tar xvfj dMagnetic_0.37.tar.bz2
+cd dMagnetic_0.37
+make
+sudo make install
+<pre>
+</td></tr>
+</body>
+</html>

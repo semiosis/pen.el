@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.pen/documents/agenda;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.pen/documents/agenda;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"
+cd /root/.pen/documents/agenda;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputIz1LiY" "--verify" "--" "/tmp/epg-signatureeCOeXl" "-" "#" "<==" "emacs"
+cd /root/.pen/documents/agenda;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputohhPeD" "--verify" "--" "/tmp/epg-signatureY46hdT" "-" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"

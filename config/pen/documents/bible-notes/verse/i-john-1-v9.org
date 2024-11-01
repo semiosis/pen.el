@@ -1,0 +1,34 @@
+https://www.youtube.com/watch?v=u_zebNKPdNw&ab_channel=BeTransformedMinistries
+
+* 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  I John 1:9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+1 John 1:9
+‾‾‾‾‾‾‾‾‾‾
+If we confess our sins, he is faithful and
+just to forgive us our sins and to cleanse us
+from all unrighteousness.
+
+(ESV)
+#+end_src
+
+
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Proverbs 28:13
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Proverbs 28:13
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Whoever conceals his transgressions will not
+prosper, but he who confesses and forsakes
+them will obtain mercy.
+
+(ESV)
+#+end_src

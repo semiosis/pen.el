@@ -1,0 +1,1 @@
+ aws pricing get-products --service-code AmazonEC2 --filters Name=region,Values=us-east-1 Name=product-type,Values=Compute InstanceType=t2.micro

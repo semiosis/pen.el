@@ -1,0 +1,9 @@
+https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/13-the-list-monad
+
+  The List Monad
+
+  The List monad is a monad that, unlike the Maybe monad, is eager and
+  eager to use. It takes a list of values and constructs a value from
+  them.
+
+  The

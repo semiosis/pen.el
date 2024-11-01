@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "ff" "https://worishipgod.medium.com/being-saved-entering-the-kingdom-of-heaven-3d416c8bac07"
+cd /root/.pen/documents/notes;  "ff" "https://worishipgod.medium.com/being-saved-entering-the-kingdom-of-heaven-3d416c8bac07"
+cd /root/.pen/documents/notes;  "ff" "https://worishipgod.medium.com/being-saved-entering-the-kingdom-of-heaven-3d416c8bac07"
+cd /root/.pen/documents/notes;  "ff" "https://worishipgod.medium.com/being-saved-entering-the-kingdom-of-heaven-3d416c8bac07"
+cd /root/.pen/documents/notes;  "ff" "https://worishipgod.medium.com/being-saved-entering-the-kingdom-of-heaven-3d416c8bac07"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons;  "ff" "https://www.youtube.com/watch?v=CTaeOKhiI1k"

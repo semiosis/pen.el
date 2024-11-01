@@ -1,0 +1,7 @@
+cd 'harrys adventures'
+» ls
+ harry.txt   harry.txt.bak  harry.txt.old  harry.txt.tmp
+» cat harry.txt
+Harry Potter and the Sorcerer's Stone
+
+Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his

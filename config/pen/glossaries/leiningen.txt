@@ -1,0 +1,24 @@
+run
+lein run
+    Executes the -main function of the
+    targeted or default namespace. Lein runs
+    through out the full execution of that
+    main methods so if your main function
+    creates a web servers, then the leiningen
+    process also stays up the whole time.
+
+trampoline
+lein trampoline
+    Executes the -main function as a separate
+    process, so that the main leiningen
+    process can exit and therefore you only
+    have one process running
+
+uberjar
+lein uberjar
+    Creates a standalone jar file, so that any
+    other user does not need to have lein
+    installed to run your code. (or any of the
+    source files). To run the jar, you execute
+    java -jar myjarname.jar which contains all
+    the source and all the dependencies.

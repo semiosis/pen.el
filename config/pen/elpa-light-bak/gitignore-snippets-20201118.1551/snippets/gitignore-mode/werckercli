@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: WerckerCLI
+# contributor: Toptal & contributors
+# key: werckercli
+# --
+
+### WerckerCLI ###
+
+_steps
+_builds
+_cache
+_projects

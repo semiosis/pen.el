@@ -1,0 +1,10 @@
+The above code is equivalent to the following:
+
+(defn member [s col]
+  (some (fn [e] (= s e)) col))
+
+The first argument of the function `member` is a symbol, `s`. This symbol is bound to the second argument of the function `member`, `col`.
+
+The function `member` is a higher order function that takes a symbol and a collection as arguments.
+
+The function `member` returns a function that takes

@@ -1,0 +1,7 @@
+
+[ -z "$header" ] && exit 3
+
+body=$(${DIR}/body.sh $fp)
+[ -z "$body" ] && exit 4
+
+$DIR/speak.sh $header "$body

@@ -1,0 +1,2 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://answersingenesis.org/education/spurgeon-sermons/2292-abraham-pattern-for-believers/" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.thegospelcoalition.org/blogs/justin-taylor/the-11-beliefs-you-should-know-about-jehovahs-witnesses-when-they-knock-at-the-door/" "#" "<==" "pen-ci"

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: return
+# group: cl
+# key: return
+# --
+# https://emacs.stackexchange.com/questions/7823/how-do-you-return-from-a-function-at-an-arbitrary-point
+(require 'cl-macs)
+
+(cl-defun my-func ()
+  "cl-defun implicit block"
+  (when t
+    (return-from my-func)) ; my-func is an implicit block.
+  (+ 42 1)))

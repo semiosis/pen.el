@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "hsqf" "notmuch" "#" "<==" "hsqf"
+cd /root/.pen/documents/notes;  "hsqf" "diatheke" "#" "<==" "hsqf"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "hsqf" "diatheke-regex-search-multi" "#" "<==" "hsqf"
+cd /root/.emacs.d/host/pen.el/src;  "hsqf" "diatheke-regex-search-multi" "#" "<==" "hsqf"
+cd /root/.pen/documents/notes;  "hsqf" "acs" "#" "<==" "hsqf"
+cd /root/.pen/documents/notes;  "hsqf" "agi" "#" "<==" "hsqf"

@@ -1,0 +1,95 @@
+===== Completion 0 =====
+###
+# English: Hello
+# Russian: Zdravstvuyte
+# Italian: Salve
+# Japanese: Konnichiwa
+# German: Guten Tag
+# French: Bonjour
+# Spanish: Hola
+###
+# English: Happy birthday!
+# French: Bon anniversaire !
+# German: Alles Gute zum Geburtstag!
+# Italian: Buon compleanno!
+# Indonesian: Selamat ulang tahun!
+###
+# en: Finish the Haskell tutorial
+# french: Terminée le tutoriel Haskell
+#
+===== Completion 1 =====
+###
+# English: Hello
+# Russian: Zdravstvuyte
+# Italian: Salve
+# Japanese: Konnichiwa
+# German: Guten Tag
+# French: Bonjour
+# Spanish: Hola
+###
+# English: Happy birthday!
+# French: Bon anniversaire !
+# German: Alles Gute zum Geburtstag!
+# Italian: Buon compleanno!
+# Indonesian: Selamat ulang tahun!
+###
+# en: Finish the Haskell tutorial
+# french: Terminale du cours de Haskell
+#
+===== Completion 2 =====
+###
+# English: Hello
+# Russian: Zdravstvuyte
+# Italian: Salve
+# Japanese: Konnichiwa
+# German: Guten Tag
+# French: Bonjour
+# Spanish: Hola
+###
+# English: Happy birthday!
+# French: Bon anniversaire !
+# German: Alles Gute zum Geburtstag!
+# Italian: Buon compleanno!
+# Indonesian: Selamat ulang tahun!
+###
+# en: Finish the Haskell tutorial
+# french: Finis le cours de Haskell
+#
+===== Completion 3 =====
+###
+# English: Hello
+# Russian: Zdravstvuyte
+# Italian: Salve
+# Japanese: Konnichiwa
+# German: Guten Tag
+# French: Bonjour
+# Spanish: Hola
+###
+# English: Happy birthday!
+# French: Bon anniversaire !
+# German: Alles Gute zum Geburtstag!
+# Italian: Buon compleanno!
+# Indonesian: Selamat ulang tahun!
+###
+# en: Finish the Haskell tutorial
+# french: Finis l’apprentissage du Haskell
+#
+===== Completion 4 =====
+###
+# English: Hello
+# Russian: Zdravstvuyte
+# Italian: Salve
+# Japanese: Konnichiwa
+# German: Guten Tag
+# French: Bonjour
+# Spanish: Hola
+###
+# English: Happy birthday!
+# French: Bon anniversaire !
+# German: Alles Gute zum Geburtstag!
+# Italian: Buon compleanno!
+# Indonesian: Selamat ulang tahun!
+###
+# en: Finish the Haskell tutorial
+# french: Finis le tutoriel Haskell
+#

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: list-comprehension
+# group: syntax
+# key: lc
+# --
+[doc[start:end] for match_id, start, end in matches]

@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/mirror/sed;  "wget" "--mirror" "--level=1" "-nd" "-nv" "-A.po" "-P" "po/.reference" "https://translationproject.org/latest/sed/" "#" "<==" "bootstrap"
+cd /volumes/home/shane/var/smulliga/source/git/mirror/sed;  "wget" "--mirror" "--level=1" "-nd" "-nv" "-A.po" "-P" "po/.reference" "https://translationproject.org/latest/sed/" "#" "<==" "sh"
+cd /volumes/home/shane/var/smulliga/source/git/mirror/sed;  "wget" "--mirror" "--level=1" "-nd" "-nv" "-A.po" "-P" "po/.reference" "https://translationproject.org/latest/sed/" "#" "<==" "sh"
+cd /volumes/home/shane/var/smulliga/source/git/mirror/sed;  "wget" "--mirror" "--level=1" "-nd" "-nv" "-A.po" "-P" "po/.reference" "https://translationproject.org/latest/sed/" "#" "<==" "sh"
+cd /volumes/home/shane/var/smulliga/source/git/mirror/sed;  "wget" "--mirror" "--level=1" "-nd" "-nv" "-A.po" "-P" "po/.reference" "https://translationproject.org/latest/sed/" "#" "<==" "bootstrap"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=Pw3yGocWDj8" "#" "<==" "pen-ci"

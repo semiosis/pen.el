@@ -1,0 +1,9 @@
+(defn cmd
+  ""
+  [& args]
+  (clojure.string/join
+   " "
+   (map (fn [s] (->
+                 (sh "q" :in s)
+                 :out)) args)))
+

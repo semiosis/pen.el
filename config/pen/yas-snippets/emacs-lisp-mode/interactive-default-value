@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: interactive-default
+# group: interactive
+# key: dv
+# --
+(interactive (list (read-string "${1:argname}:")))
+(if (not $1) (setq $1 "${2:defaultvalue}"))
+(if (string-empty-p $1) (setq $1 "$2"))
+(when (called-interactively-p 'any)
+(message "Interactive!")
+'foo-called-interactively))
+$0

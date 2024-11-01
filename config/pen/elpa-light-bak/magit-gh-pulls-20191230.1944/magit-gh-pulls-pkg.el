@@ -1,0 +1,2 @@
+;;; Generated package description from magit-gh-pulls.el  -*- no-byte-compile: t -*-
+(define-package "magit-gh-pulls" "20191230.1944" "GitHub pull requests extension for Magit" '((emacs "24.4") (gh "0.9.1") (magit "2.12.0") (pcache "0.2.3") (s "1.6.1")) :commit "57f3a5158bbc7bfd169ee136fde351cce999e0ca" :authors '(("Yann Hodique" . "yann.hodique@gmail.com")) :maintainer '("Yann Hodique" . "yann.hodique@gmail.com") :keywords '("git" "tools") :url "https://github.com/sigma/magit-gh-pulls")

@@ -1,0 +1,25 @@
+ Start the Clojure REPL
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Start the Clojure REPL
+      clojure:
+        command: "lein repl"
+        environment:
+          JAVA_OPTS: "-Dfile.encoding=UTF-8"
+      register: clojure_repl
+      become: true
+      become_user: root
+    - name: Wait for the REPL to start
+      clojure:
+        command: "lein wait"
+        environment:
+          JAVA_OPTS: "-Dfile.encoding=UTF-8"
+      register: clojure_wait
+      become: true
+      become_user: root
+    - name: Load the Clojure REPL
+      clojure:
+        command: "lein repl :headless"
+        environment:
+          JAVA_OPTS: "-Dfile.encoding=

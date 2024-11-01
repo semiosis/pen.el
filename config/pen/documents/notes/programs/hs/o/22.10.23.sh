@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "o" "/root/.pen/gematria-interlinear.db" "#" "<==" "zsh"
+cd /root/notes;  "o" "/volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer/Complete.db" "#" "<==" "zsh"
+cd /root/notes;  "o" "/root/.pen/gematria-interlinear.db" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer;  "o" "/root/.pen/gematria-interlinear.db" "#" "<==" "zsh"
+cd /root/notes;  "o" "/root/.pen/gematria-interlinear.db" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "/root/.pen/gematria-interlinear.db" "#" "<==" "zsh"

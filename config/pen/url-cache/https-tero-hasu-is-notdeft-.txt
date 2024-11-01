@@ -1,0 +1,1714 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 26 Nov 2023 20:55:14 GMT
+Content-Type: text/html
+Last-Modified: Sat, 15 May 2021 17:23:15 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"60a00383-1529d"
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel="stylesheet" href="/style.css">
+    
+    
+    <title>NotDeft | Tero Hasu</title>
+    
+    
+    
+  </head>
+  <body>
+    <nav id="site-nav">
+  <p class="menu">
+    
+    
+      
+        <a class="internal home" href="/">Tero Hasu</a>
+      
+    
+      
+        <a class="internal" href="/contact.html">contact</a>
+      
+    
+      
+        <a class="internal" href="/software.html">software</a>
+      
+    
+      
+        <a class="internal" href="/publications.html">publications</a>
+      
+    
+      
+        <a class="internal" href="/interests/">interests</a>
+      
+    
+      
+        <a class="internal" href="/blog/">blog</a>
+      
+    
+      
+        <a class="internal" href="/tags/">tags</a>
+      
+    
+  </p>
+</nav>
+
+    
+<main>
+  <header>
+    <h1>NotDeft</h1>
+  </header>
+  <p>
+<i>NotDeft</i> is an <a href="https://www.gnu.org/software/emacs/">Emacs</a>-based manager and local search engine for directories of plain text notes. NotDeft features a <a href="https://xapian.org/">Xapian</a> backend for efficient free-text search over potentially very large numbers of note files; in that respect it is like the <a href="https://notmuchmail.org/">Notmuch</a> Emacs mode for managing email. NotDeft is a spin-off of the <a href="https://jblevins.org/projects/deft/">Deft</a> note manager, and retains similar functionality for browsing, filtering, and managing note collections. While NotDeft inherits its user interface from Deft, that interface is used for managing search result sets of notes, rather than directory contents. When used together with <a href="https://orgmode.org/">Org mode</a> and its support for document linking, NotDeft can also function as a “desktop wiki,” such that documents can also be found by following links, and not just by searching and filtering.
+</p>
+
+<p>
+The NotDeft source code repository can be found at<br />
+<a href="https://github.com/hasu/notdeft">https://github.com/hasu/notdeft</a>
+</p>
+
+<p class="text-align-center">
+<img src="/notdeft/notdeft-query-filter.gif" />
+</p>
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#quick-start">1. Quick Start</a></li>
+<li><a href="#org5774e9b">2. NotDeft's Deft Origins</a></li>
+<li><a href="#org4945bc6">3. NotDeft Installation</a>
+<ul>
+<li><a href="#org13442f3">3.1. Manual Installation from Source</a></li>
+<li><a href="#org13e2d7b">3.2. Installation as a Package with straight.el</a></li>
+<li><a href="#org7eec3f1">3.3. Installation from a Package File</a></li>
+<li><a href="#orgb7c9bf5">3.4. Building the Xapian Backend</a></li>
+</ul>
+</li>
+<li><a href="#org82e0831">4. NotDeft Configuration</a>
+<ul>
+<li><a href="#org09eb223">4.1. Specifying Note File Locations</a></li>
+<li><a href="#orgacd41f2">4.2. Choosing the Note File Format</a></li>
+<li><a href="#org359f32b">4.3. Configuring the File Naming Convention</a></li>
+<li><a href="#orge5e4c53">4.4. Configuring the Xapian Backend</a></li>
+</ul>
+</li>
+<li><a href="#orgb84886a">5. NotDeft Mode</a>
+<ul>
+<li><a href="#org5803974">5.1. Displaying Individual Filter String Matches</a></li>
+<li><a href="#org2a23bde">5.2. Using Multiple NotDeft Mode Buffers</a></li>
+<li><a href="#org7cba813">5.3. Displaying File Path Information</a></li>
+</ul>
+</li>
+<li><a href="#notdeft-note-mode">6. NotDeft Note Mode</a>
+<ul>
+<li><a href="#org5524fe8">6.1. Enabling NotDeft Note Mode based on Major Mode</a></li>
+<li><a href="#orgdaff9d7">6.2. Enabling NotDeft Note Mode Locally to a Directory</a></li>
+<li><a href="#org00357f5">6.3. Enabling NotDeft Note Mode based on a Directory-Local Variable</a></li>
+</ul>
+</li>
+<li><a href="#outside-notdeft-commands">7. Using NotDeft from Non-NotDeft Modes</a>
+<ul>
+<li><a href="#org3b8738e">7.1. Access from NotDeft Note Buffers</a></li>
+<li><a href="#orgbee5753">7.2. Programmatic NotDeft Access</a></li>
+</ul>
+</li>
+<li><a href="#org09144fb">8. NotDeft Note Syntax</a>
+<ul>
+<li><a href="#org8d88cd8">8.1. Example Notes</a></li>
+</ul>
+</li>
+<li><a href="#orgad90990">9. Search Query Syntax</a>
+<ul>
+<li><a href="#org91dc52a">9.1. Prefixes</a></li>
+<li><a href="#orgd9c1014">9.2. Query Modifiers</a></li>
+<li><a href="#orgef8fb7f">9.3. Example Search Queries</a></li>
+</ul>
+</li>
+<li><a href="#org2894a7a">10. Command Popup Buffers</a></li>
+<li><a href="#org5725545">11. Org Mode Integration</a>
+<ul>
+<li><a href="#orgd5f8688">11.1. Using NotDeft and Org Mode as a Desktop Wiki Engine</a></li>
+</ul>
+</li>
+<li><a href="#orgef69561">12. Quick Note Capture</a></li>
+<li><a href="#orge403d3f">13. Adding Attachments to Notes</a></li>
+<li><a href="#org82e9b2d">14. Note Archival</a></li>
+<li><a href="#org0635159">15. Capturing Data from External Applications</a>
+<ul>
+<li><a href="#org26b2c44">15.1. <code>org-protocol</code> Content Type in Firefox</a></li>
+<li><a href="#org9163f5b">15.2. <code>store-link</code> from Firefox</a></li>
+<li><a href="#capture-protocol">15.3. <code>capture</code> from Firefox</a></li>
+</ul>
+</li>
+<li><a href="#orgf9b537c">16. Troubleshooting</a>
+<ul>
+<li><a href="#org6f8190a">16.1. When Search Queries Are Not Yielding Expected Results</a></li>
+</ul>
+</li>
+<li><a href="#org2c6ac55">17. See Also</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-quick-start" class="outline-2">
+<h2 id="quick-start"><span class="section-number-2">1</span> Quick Start</h2>
+<div class="outline-text-2" id="text-quick-start">
+<p>
+For the impatient, this section outlines one way of downloading, installing and setting up NotDeft.
+</p>
+
+<p>
+Open a terminal, and <code>cd</code> into your home directory. Download the source code into some directory with
+</p>
+<pre class="example">
+git clone https://github.com/hasu/notdeft.git
+</pre>
+
+
+<p>
+Then prepare and byte-compile Emacs Lisp files with the commands
+</p>
+<pre class="example">
+cd notdeft
+make
+</pre>
+
+<p>
+where <code>make</code> is assumed to invoke GNU Make.
+</p>
+
+<p>
+Then build the Xapian backend by doing
+</p>
+<pre class="example">
+cd xapian
+make
+</pre>
+
+<p>
+If the <code>make</code> command fails, then you will need to ensure that you have the required libraries installed, and find the right C++ compiler incantation for building the <code>notdeft-xapian</code> program on your system. A notable library requirement for compiling the program is <a href="http://tclap.sourceforge.net/">TCLAP</a>.
+</p>
+
+<p>
+To make NotDeft loadable in Emacs, add the following code to your Emacs startup file (e.g., “~/.emacs”):
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>add-to-list 'load-path <span style="color: #8b2252;">"~/notdeft"</span><span style="color: #7f7f7f;">)</span>
+<span style="color: #7f7f7f;">(</span>add-to-list 'load-path <span style="color: #8b2252;">"~/notdeft/extras"</span><span style="color: #7f7f7f;">)</span>
+<span style="color: #7f7f7f;">(</span>load <span style="color: #8b2252;">"notdeft-example"</span><span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+<p>
+The “notdeft-example.el” file is a sample configuration for NotDeft, which sets up NotDeft for use with Org mode based note files, also enabling some optional components of NotDeft, and setting up some keybindings. It may be a useful starting point for a personal configuration.
+</p>
+
+<p>
+Create a “~/.deft” directory, and copy some “.org” files there.
+</p>
+
+<p>
+Launch Emacs with
+</p>
+<pre class="example">
+emacs -f notdeft
+</pre>
+
+
+<p>
+<b>Press <code>TAB</code> to enter a search query</b>, and type characters to do further filtering of the results. Press <code>RET</code> to select a file to open. Use <code>C-c f1</code> to see other available commands.
+</p>
+
+<p>
+To configure <code>notdeft-note-mode</code> minor mode for use automatically in note buffers, add the required directory local variable to “~/.deft” by entering the command <code>f6 a d l v</code>, and by saving the resulting file.
+</p>
+
+<p>
+For other ways to install, configure, and use NotDeft, see the rest of this page.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5774e9b" class="outline-2">
+<h2 id="org5774e9b"><span class="section-number-2">2</span> NotDeft's Deft Origins</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+NotDeft is derived from Deft version 0.3, but differs in several notable ways:
+</p>
+<ol class="org-ol">
+<li>Rather than supporting a single, customizable <code>deft-directory</code> (tree) of note files, NotDeft supports a customizable <code>notdeft-directories</code> search path of directory trees.
+<ul class="org-ul">
+<li>If the search path includes multiple directories, then many file creation and management operations involve choosing a directory, making NotDeft not so deft.</li>
+</ul></li>
+<li>NotDeft supports (optional) invocation of a <code>notdeft-xapian-program</code>, which uses the Xapian library to implement free-text search across note files, with convenient query syntax. The search is performed across all <code>notdeft-directories</code>, and further narrowing down of the result set can then be done incrementally by typing in a search string for purposes of filtering (as in Deft).
+<ul class="org-ul">
+<li>That is, when <code>notdeft-xapian-program</code> is set, the file browser of NotDeft lists Xapian search results instead of listing directory contents.</li>
+</ul></li>
+<li>NotDeft includes multiple functions and commands intended to be usable from outside <code>notdeft-mode</code>, leading to more complex modalities of use than with Deft's list view centric operation.</li>
+<li>NotDeft supports the existence of multiple <code>notdeft-mode</code> buffers within a single Emacs instance, so that one can view and operate on multiple search result sets of notes simultaneously.</li>
+</ol>
+
+<p>
+NotDeft is not Deft&#x2014;it aims for wide utility rather than the user experience of a Notational Velocity type application. The added complication of having two stages (query, then filter) to the process of looking for interesting files makes NotDeft less simple and intuitive than Deft, as does having multiple directories, modalities, and buffers.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4945bc6" class="outline-2">
+<h2 id="org4945bc6"><span class="section-number-2">3</span> NotDeft Installation</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+NotDeft can be installed either manually, or as a package.
+</p>
+</div>
+
+<div id="outline-container-org13442f3" class="outline-3">
+<h3 id="org13442f3"><span class="section-number-3">3.1</span> Manual Installation from Source</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+First download the source code with the command
+</p>
+<pre class="example">
+git clone https://github.com/hasu/notdeft.git
+</pre>
+
+
+<p>
+Go to the “notdeft” directory, and prepare the Emacs Lisp code for use with the command
+</p>
+<pre class="example">
+make
+</pre>
+
+
+<p>
+Add the directory containing those files to the Emacs search path by adding
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>add-to-list 'load-path <span style="color: #8b2252;">"/path/to/repo/of/notdeft"</span><span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+<p>
+to your Emacs startup file (e.g., “~/.emacs”). Also add
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">require</span> '<span style="color: #008b8b;">notdeft-autoloads</span><span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+<p>
+to the Emacs startup file, to make NotDeft available for on-demand loading.
+</p>
+
+<p>
+With the above setup work done, NotDeft is available for launching from within Emacs with the command
+</p>
+<pre class="example">
+M-x notdeft
+</pre>
+
+
+<p>
+While the above commands acquire, build, and set up NotDeft's Emacs Lisp code, they do not build and configure the C++-based Xapian backend; see <a href="#orgb7c9bf5">Building the Xapian Backend</a> and <a href="#orge5e4c53">Configuring the Xapian Backend</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org13e2d7b" class="outline-3">
+<h3 id="org13e2d7b"><span class="section-number-3">3.2</span> Installation as a Package with straight.el</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+The <a href="https://github.com/raxod502/straight.el">straight.el</a> package manager is able to install NotDeft as a package directly from its source repository. If you have that manager correctly installed, then you can install NotDeft with the command
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>straight-use-package
+ '<span style="color: #7f7f7f;">(</span>notdeft
+   <span style="color: #483d8b;">:type</span> git <span style="color: #483d8b;">:host</span> github <span style="color: #483d8b;">:repo</span> <span style="color: #8b2252;">"hasu/notdeft"</span>
+   <span style="color: #483d8b;">:files</span> <span style="color: #7f7f7f;">(</span><span style="color: #8b2252;">"*.el"</span> <span style="color: #8b2252;">"xapian"</span><span style="color: #7f7f7f;">)))</span>
+</pre>
+</div>
+<p>
+which should download NotDeft, generate its autoloads, and handle Emacs Lisp file byte-compilation.
+</p>
+
+<p>
+While that command downloads and unpacks the Xapian backend source code, it does not build it or configure it; see <a href="#orgb7c9bf5">Building the Xapian Backend</a> and <a href="#orge5e4c53">Configuring the Xapian Backend</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7eec3f1" class="outline-3">
+<h3 id="org7eec3f1"><span class="section-number-3">3.3</span> Installation from a Package File</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Installing from Git is recommended where you wish to be sure that you are installing the most recent available version. Still, installation from a downloadable package file is also an option.
+</p>
+
+<p>
+To install NotDeft as a package, first <a href="./download/">download</a> the (chosen version's) package, and then install the downloaded TAR file with
+</p>
+<pre class="example">
+M-x package-install-file
+</pre>
+
+
+<p>
+You can check whether the package has been installed by evaluating
+</p>
+<pre class="example">
+(package-installed-p 'notdeft)
+</pre>
+
+<p>
+If so, information about the installation can be shown with
+</p>
+<pre class="example">
+(describe-package 'notdeft)
+</pre>
+
+<p>
+No documentation is shown by that command, but it does show the location of the package's files, allowing navigation to the documentation.
+</p>
+
+<p>
+One might also implement a command for opening something in the package. For example, the readme file can be opened with
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">defun</span> <span style="color: #000000;">notdeft-open-readme</span> <span style="color: #7f7f7f;">()</span>
+  <span style="color: #7f7f7f;">(</span>interactive<span style="color: #7f7f7f;">)</span>
+  <span style="color: #7f7f7f;">(</span>find-file
+   <span style="color: #7f7f7f;">(</span>expand-file-name
+    <span style="color: #8b2252;">"README.org"</span>
+    <span style="color: #7f7f7f;">(</span>package-desc-dir
+     <span style="color: #7f7f7f;">(</span>cadr <span style="color: #7f7f7f;">(</span>assq 'notdeft package-alist<span style="color: #7f7f7f;">))))))</span>
+</pre>
+</div>
+
+<p>
+While installing the package does unpack the Xapian backend source code, it does not build it or configure it; see <a href="#orgb7c9bf5">Building the Xapian Backend</a> and <a href="#orge5e4c53">Configuring the Xapian Backend</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb7c9bf5" class="outline-3">
+<h3 id="orgb7c9bf5"><span class="section-number-3">3.4</span> Building the Xapian Backend</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+To enable Xapian search queries, you should build the <code>notdeft-xapian</code> C++ program in the “xapian” directory. On some systems simply going into that directory and typing
+</p>
+<pre class="example">
+make
+</pre>
+
+<p>
+should do the trick, provided that the required tools and libraries have already been installed. Other systems may require more work not only on satisfying the dependencies, but also in finding the right C++ compiler incantation for building the program. (On some systems building it may not be feasible at all, and NotDeft's functionality will be more limited.)
+</p>
+
+<p>
+Once a working compiler invocation command has been found, and the necessary C++ libraries have been installed, it is also possible to build the C++ program from within Emacs by using the included <code>notdeft-xapian-make</code> Emacs Lisp feature. To use it, set the variable <code>notdeft-xapian-program-compile-command-format</code> with the appropriate format string for the compilation command. In that format string the path of the executable comes first, and the path of the source file comes second. For example:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq notdeft-xapian-program-compile-command-format <span style="color: #8b2252;">"g++ -o %s %s -std=c++11 -Wall `pkg-config --cflags --libs tclap` `xapian-config --cxxflags --libs`"</span><span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+
+<p>
+With the feature appropriately configured you can then try issuing the command
+</p>
+<pre class="example">
+M-x notdeft-xapian-compile-program
+</pre>
+
+<p>
+which should display any build errors if the executable cannot be built.
+</p>
+</div>
+
+<div id="outline-container-org6e04a76" class="outline-4">
+<h4 id="org6e04a76"><span class="section-number-4">3.4.1</span> Building the Backend Automatically</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<p>
+The <code>notdeft-xapian-make</code> Emacs Lisp feature also includes a mechanism for building the Xapian backend program whenever it is out of date with respect to its sources, or does not exist at all. This can be particularly useful if you <code>git pull</code> a new version of “notdeft-xapian.cc”, and do not wish to worry about manually rebuilding the latest version.
+</p>
+
+<p>
+For example, we might try to build <code>notdeft-xapian</code> on NotDeft startup as necessary:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>add-hook 'notdeft-load-hook 'notdeft-xapian-make-program-when-uncurrent<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+
+<p>
+The <code>notdeft-xapian-make-program-when-uncurrent</code> function automatically sets the <code>notdeft-xapian-program</code> to the path of a successfully built program, so that it no longer needs to be specified otherwise.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org82e0831" class="outline-2">
+<h2 id="org82e0831"><span class="section-number-2">4</span> NotDeft Configuration</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Once the <code>notdeft</code> feature has been loaded, you can see and edit all of its configuration options and their documentation with
+</p>
+<pre class="example">
+(customize-group "notdeft")
+</pre>
+
+<p>
+That command is also callable interactively as
+</p>
+<pre class="example">
+M-x customize-group RET notdeft RET
+</pre>
+
+
+<p>
+The most essential settings are
+</p>
+<dl class="org-dl">
+<dt><code>notdeft-directories</code></dt><dd>to specify the location(s) of your notes</dd>
+<dt><code>notdeft-xapian-program</code></dt><dd>to specify the path of the Xapian search tool</dd>
+</dl>
+</div>
+
+<div id="outline-container-org09eb223" class="outline-3">
+<h3 id="org09eb223"><span class="section-number-3">4.1</span> Specifying Note File Locations</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+In a simple case you would have a single directory (tree) of note file, specified by the <code>notdeft-directories</code> configuration variable, which you can configure with the command
+</p>
+<pre class="example">
+M-x customize-variable RET notdeft-directories RET
+</pre>
+
+<p>
+For example:
+</p>
+<pre class="example">
+(setq notdeft-directories '("~/all-my-notes"))
+</pre>
+
+
+<p>
+You can have multiple directories, which makes NotDeft use a bit harder, as you may at times get asked for a target directory for some file operations.
+</p>
+<pre class="example">
+(setq notdeft-directories '("~/some-notes" "~/some-more"))
+</pre>
+
+
+<p>
+If your notes are not in a fixed directory, but you'd rather discover the directories programmatically, it may be convenient to set <code>notdeft-directories</code> in your startup file. For example:
+</p>
+<pre class="example">
+(setq notdeft-directories (cons "~/notes" (file-expand-wildcards "~/*/notes")))
+</pre>
+</div>
+
+<div id="outline-container-orga4778d9" class="outline-4">
+<h4 id="orga4778d9"><span class="section-number-4">4.1.1</span> Sparse Directories</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+If you wish to include some additional text files into your searches, you may also explicitly specify files that reside outside any of the <code>notdeft-directories</code>. You must still specify a directory for a search index covering those files. In effect, you specify a <i>sparse directory</i>, since it is not scanned, but rather only explicitly specified files are considered to be NotDeft notes, if they exist.
+</p>
+
+<p>
+To specify the index directories and any files within them, use the <code>notdeft-sparse-directories</code> configuration variable to specify directories and their file lists. For example:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq notdeft-sparse-directories
+      '<span style="color: #7f7f7f;">((</span><span style="color: #8b2252;">"~"</span> .
+         <span style="color: #7f7f7f;">(</span><span style="color: #8b2252;">"projects/magnolisp/web/magnolisp-homepage.org"</span>
+          <span style="color: #8b2252;">"projects/notdeft/web/notdeft-homepage.org"</span><span style="color: #7f7f7f;">))))</span>
+</pre>
+</div>
+<p>
+where all note file paths are specified relative to the search index containing directory, which should be a parent directory of all the specified notes.
+</p>
+
+<p>
+The usual note manipulation operations (renaming, deleting, etc.) are not available for notes in sparse directories, which are not managed by NotDeft as such. The facility exists merely to support cases where you have important note files spread around project-specific directories, ones that you want to make accessible from within NotDeft. If you have a standard naming convention for such files, you can certainly resolve the list value programmatically:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq notdeft-sparse-directories
+      `<span style="color: #7f7f7f;">((</span><span style="color: #8b2252;">"~"</span> . ,<span style="color: #7f7f7f;">(</span>mapcar
+                 <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">lambda</span> <span style="color: #7f7f7f;">(</span>file<span style="color: #7f7f7f;">)</span> <span style="color: #7f7f7f;">(</span>file-relative-name file <span style="color: #8b2252;">"~"</span><span style="color: #7f7f7f;">))</span>
+                 <span style="color: #7f7f7f;">(</span>file-expand-wildcards <span style="color: #8b2252;">"~/projects/*/web/*-homepage.org"</span><span style="color: #7f7f7f;">)))))</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgacd41f2" class="outline-3">
+<h3 id="orgacd41f2"><span class="section-number-3">4.2</span> Choosing the Note File Format</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+The default is to have the note filename <code>notdeft-extension</code> set to "org" to indicate the Org format. If you prefer some other note format, you should change that setting, which can be done with
+</p>
+<pre class="example">
+M-x customize-variable RET notdeft-extension RET
+</pre>
+
+
+<p>
+The configured <code>notdeft-extension</code> is used by default when creating new notes, but a note collection can also use other extensions. There are none by default, but you can define such secondary extensions with
+</p>
+<pre class="example">
+M-x customize-variable RET notdeft-secondary-extensions RET
+</pre>
+
+
+<p>
+For example, one might set these as
+</p>
+<pre class="example">
+(setq notdeft-extension "txt")
+(setq notdeft-secondary-extensions '("md" "org" "scrbl"))
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org359f32b" class="outline-3">
+<h3 id="org359f32b"><span class="section-number-3">4.3</span> Configuring the File Naming Convention</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+When creating a note file with the <code>notdeft-new-file-named</code> command, NotDeft automatically derives a name for the file based on the title that is provided for the note. The configuration option <code>notdeft-notename-function</code> determines how the name is derived.
+</p>
+
+<p>
+The default setting is to use the <code>notdeft-default-title-to-notename</code> function to translate the title to a file basename. For example, the title “Rust (programming language)” translates into
+</p>
+<pre class="example">
+rust-programming-language
+</pre>
+
+
+<p>
+The default implementation is suitable for titles with ASCII letters, and you probably want to pick a different implementation if your titles do not tend to use the English alphabet.
+</p>
+
+<p>
+Where necessary, the configuration option <code>notdeft-new-file-data-function</code> provides even more control over the naming (and content) of new notes. Such a function could, for example, add some metadata to every new note's file name and/or content.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge5e4c53" class="outline-3">
+<h3 id="orge5e4c53"><span class="section-number-3">4.4</span> Configuring the Xapian Backend</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+To have NotDeft use the <code>notdeft-xapian</code> program you've built, you will have to specify its full path in the <code>notdeft-xapian-program</code> variable. You could use <code>M-x customize-variable</code> to set it, or simply
+</p>
+<pre class="example">
+(setq notdeft-xapian-program "/path/to/notdeft-xapian")
+</pre>
+
+
+<p>
+Set the variable to the program's full absolute path, without any shorthands, as no shell expansion is performed on the path name&#x2014;you may explicitly expand it using Emacs' <code>expand-file-name</code> function instead.
+</p>
+
+<p>
+If you installed as a package, and built the <code>notdeft-xapian</code> executable in that location, then the appropriate setting may be
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq notdeft-xapian-program
+      <span style="color: #7f7f7f;">(</span>expand-file-name
+       <span style="color: #8b2252;">"xapian/notdeft-xapian"</span>
+       <span style="color: #7f7f7f;">(</span>package-desc-dir
+        <span style="color: #7f7f7f;">(</span>cadr <span style="color: #7f7f7f;">(</span>assq 'notdeft package-alist<span style="color: #7f7f7f;">)))))</span>
+</pre>
+</div>
+<p>
+Such code must appear after
+</p>
+<pre class="example">
+(package-initialize)
+</pre>
+
+
+<p>
+See the other <code>notdeft-xapian-*</code> customization variables for configuring the Xapian indexing and searching behavior. Most notably:
+</p>
+<ul class="org-ul">
+<li>The configuration variable <code>notdeft-xapian-max-results</code> controls the maximum number of files to list in a <code>notdeft-mode</code> buffer. You may set it to 0 to always have all results displayed.</li>
+<li>The default is to order the results so that most recently edited files are listed first, but you may change this behavior by setting <code>notdeft-xapian-order-by-time</code> to <code>nil</code>, in which case Xapian's ranking mechanism is used instead.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb84886a" class="outline-2">
+<h2 id="orgb84886a"><span class="section-number-2">5</span> NotDeft Mode</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Running the <code>notdeft</code> command switches to a <code>*NotDeft*</code> buffer, creating one as necessary. Such a buffer's major mode is <code>notdeft-mode</code>. Buffers with that mode are read only, and cannot be edited directly, although most keys without modifiers do cause editing of the filter string.
+</p>
+
+<p>
+Roughly, there are three kinds of things one can do in a <code>*NotDeft*</code> buffer:
+</p>
+<ol class="org-ol">
+<li>set a query string to define a result set of notes</li>
+<li>filter the result set by interactively editing a filter string</li>
+<li>manipulate note files though NotDeft's commands</li>
+</ol>
+
+<p>
+That is, finding an interesting set of notes is a two-step process: (1) enter a query to define a “topic area” of interest, using the <i>Xapian query syntax</i>; and then (2) narrow down that set interactively by typing in a <i>list of substrings</i> (in any order) that should match. It is possible to edit the query without modifying the filter string, and vice versa.
+</p>
+
+
+<div id="orgd244928" class="figure">
+<p><img src="./notdeft-screenshot-query-and-filter.png" alt="notdeft-screenshot-query-and-filter.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Querying and filtering in a <code>*NotDeft*</code> buffer.</p>
+</div>
+
+<p>
+The NotDeft Mode interface is optimized for editing the filter string. You can append characters to the filter by pressing regular symbol keys without modifiers. Other available commands include <code>DEL</code>, <code>M-DEL</code>, <code>C-y</code>, with familiar Emacs style behavior.
+</p>
+
+<p>
+To enter a query, press <code>TAB</code> (or <code>C-c C-o</code>) to open a prompt for typing in the query. The query is then executed when you press <code>RET</code>.
+</p>
+
+<p>
+To clear a query, you can
+</p>
+<ol class="org-ol">
+<li>press <code>TAB</code> and enter the empty string, or</li>
+<li>press <code>S-TAB</code>, or</li>
+<li><code>C-u C-c C-c</code> also works for clearing the query in addition to any filter string.</li>
+</ol>
+
+<p>
+To manage the notes that are listed in the NotDeft Mode buffer, you can use mode-specific command, which are bound to the mode's <code>C-c</code> keymap. There are commands for renaming, deleting, and moving notes, for example. Press <code>C-c f1</code> to see a full list of the commands bound to <code>C-c</code>.
+</p>
+
+<p>
+To open a <code>*NotDeft*</code> buffer directly with a particular search query, use the command <code>notdeft-open-query</code> from any buffer.
+</p>
+</div>
+
+<div id="outline-container-org5803974" class="outline-3">
+<h3 id="org5803974"><span class="section-number-3">5.1</span> Displaying Individual Filter String Matches</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+The filter string “emacs org mode” narrows a <code>*NotDeft*</code> buffer file list down only to the files that contain all of the substrings “emacs”, “org”, and “mode”. To see each of the matching positions within those files, consider entering the command <code>C-c g</code> (or <code>M-x notdeft-grep-for-filter</code>) to display the matching strings with highlighting. That command invokes the shell command <code>grep</code> (through the Emacs command <code>grep</code>), and displays the results in a separate buffer. This may fail to work if you system does not have a compatible <code>grep</code> executable on the search path.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2a23bde" class="outline-3">
+<h3 id="org2a23bde"><span class="section-number-3">5.2</span> Using Multiple NotDeft Mode Buffers</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+NotDeft allows multiple <code>notdeft-mode</code> buffers to exist at once, which may be useful if one wants to explore multiple sets of search results at once. Each NotDeft buffer has its own state, including a search query, filter string, default directory for creating new notes, etc.
+</p>
+
+<p>
+Normally, executing the <code>notdeft</code> command only creates a new <code>*NotDeft*</code> buffer if one does not already exist&#x2014;otherwise the command merely switches to an existing <code>*NotDeft*</code> buffer. It is possible to have the command always create a new <code>notdeft-mode</code> buffer by invoking it with a prefix argument, i.e., <code>C-u M-x notdeft</code>.
+</p>
+
+<p>
+The <code>notdeft-open-query</code> command also accepts a prefix argument, to arrange for the search results to be listed in a new buffer. This behavior can also be made the default for that command by setting the configuration parameter <code>notdeft-open-query-in-new-buffer</code> to <code>t</code>. With that parameter set, the prefix argument's meaning is inverted, so that <code>C-u M-x notdeft-open-query</code> does <i>not</i> create an additional buffer.
+</p>
+
+<p>
+The question of whether to create a new buffer does not apply to other search commands. Within a NotDeft buffer, the commands <code>notdeft-query-edit</code> and <code>notdeft-query-clear</code> merely replace the buffer's search result set, whereas the commands <code>notdeft-lucky-find-file</code> and <code>notdeft-query-select-find-file</code> do not use a NotDeft buffer for displaying their results.
+</p>
+
+<p>
+For dealing with existing <code>notdeft-mode</code> buffers, there is a <code>notdeft-switch-to-buffer</code> command for interactively selecting a buffer and switching to it. It presents a choice list of buffer names in the minibuffer, and shows any query and filter strings associated with those buffers for better informed selection.
+</p>
+
+<p>
+As for closing NotDeft buffers, the <code>notdeft-quit</code> command is bound to <code>C-c C-q</code>, and it can be invoked in three ways:
+</p>
+<ol class="org-ol">
+<li>Without a prefix argument, it buries the current buffer.</li>
+<li>With one prefix argument, it kills the current buffer.</li>
+<li>With two prefix arguments, it kills <i>all</i> <code>notdeft-mode</code> buffers.</li>
+</ol>
+
+
+<div id="orgc9eee99" class="figure">
+<p><img src="./multiple-buffers.png" alt="multiple-buffers.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Four Emacs “windows” with different NotDeft buffers.</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7cba813" class="outline-3">
+<h3 id="org7cba813"><span class="section-number-3">5.3</span> Displaying File Path Information</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+By default, NotDeft does not show any note directory or file names in its list view, but this behavior can be controlled by specifying a <code>notdeft-file-display-function</code>.
+</p>
+
+<p>
+For example, we can display the name of each note's containing NotDeft (root) directory, with abbreviations for long directory names:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq notdeft-file-display-function
+        <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">lambda</span> <span style="color: #7f7f7f;">(</span>file w<span style="color: #7f7f7f;">)</span>
+          <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">when</span> <span style="color: #7f7f7f;">(</span>&gt; w 30<span style="color: #7f7f7f;">)</span>
+            <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">let*</span> <span style="color: #7f7f7f;">((</span>s <span style="color: #7f7f7f;">(</span>file-name-nondirectory
+                       <span style="color: #7f7f7f;">(</span>directory-file-name
+                        <span style="color: #7f7f7f;">(</span>notdeft-dir-of-file file<span style="color: #7f7f7f;">))))</span>
+                   <span style="color: #7f7f7f;">(</span>s <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">pcase</span> s
+                        <span style="color: #7f7f7f;">(</span><span style="color: #8b2252;">"bibliography-notes"</span> <span style="color: #8b2252;">"bib"</span><span style="color: #7f7f7f;">)</span>
+                        <span style="color: #7f7f7f;">(</span><span style="color: #8b2252;">"homepage-notes"</span> <span style="color: #8b2252;">"hp"</span><span style="color: #7f7f7f;">)</span>
+                        <span style="color: #7f7f7f;">(</span>_ s<span style="color: #7f7f7f;">)))</span>
+                   <span style="color: #7f7f7f;">(</span>s <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">if</span> <span style="color: #7f7f7f;">(</span>&gt; <span style="color: #7f7f7f;">(</span>string-width s<span style="color: #7f7f7f;">)</span> 12<span style="color: #7f7f7f;">)</span>
+                          <span style="color: #7f7f7f;">(</span>truncate-string-to-width s 12<span style="color: #7f7f7f;">)</span>
+                        s<span style="color: #7f7f7f;">)))</span>
+              <span style="color: #7f7f7f;">(</span>concat <span style="color: #8b2252;">" "</span> s<span style="color: #7f7f7f;">)))))</span>
+</pre>
+</div>
+<p>
+We refrain from displaying any directory information in cases where the Emacs window is very narrow (as indicated by the <code>w</code> argument), as otherwise there will be little space left for the note titles.
+</p>
+
+
+<div id="orgff5fe4e" class="figure">
+<p><img src="./directory-indicator.png" alt="directory-indicator.png" />
+</p>
+<p><span class="figure-number">Figure 3: </span>NotDeft mode with directory indicators.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-notdeft-note-mode" class="outline-2">
+<h2 id="notdeft-note-mode"><span class="section-number-2">6</span> NotDeft Note Mode</h2>
+<div class="outline-text-2" id="text-notdeft-note-mode">
+<p>
+Invoking the <code>notdeft</code> command opens an Emacs buffer whose major mode is <code>notdeft-mode</code>. That mode displays a list of notes, and if you want the list to be automatically updated when a note file gets saved, you may want to enable the <code>notdeft-note-mode</code> minor mode for those files' buffers.
+</p>
+
+<p>
+The sole purpose of <code>notdeft-note-mode</code> is to take care of keeping NotDeft's knowledge of the note collection up to date. Whenever a note file is saved, <code>notdeft-note-mode</code> sees to it that the search index is updated with the new file contents. NotDeft does not itself do anything to enable that mode, but rather the user should arrange for that to happen in some suitable way (see below for some suggestions). The benefit of this approach is that even if a note file then is open using a regular Emacs command (e.g., <code>find-file</code>), the editing buffer will notify NotDeft of any changes.
+</p>
+</div>
+
+<div id="outline-container-org5524fe8" class="outline-3">
+<h3 id="org5524fe8"><span class="section-number-3">6.1</span> Enabling NotDeft Note Mode based on Major Mode</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+The simple approach is to always enable <code>notdeft-note-mode</code> for the major mode(s) that you use for editing notes. For example:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>add-hook 'org-mode-hook 'notdeft-note-mode<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+<p>
+This approach should be safe in that changes to files not residing in <code>notdeft-directories</code> get ignored by NotDeft. Still, the approach has the disadvantage that the minor mode indicator “¬D” does not tell you whether a note is actually a NotDeft note.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdaff9d7" class="outline-3">
+<h3 id="orgdaff9d7"><span class="section-number-3">6.2</span> Enabling NotDeft Note Mode Locally to a Directory</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Another solution is to try enabling <code>notdeft-note-mode</code> for every NotDeft <i>directory</i> in terms of <a href="https://www.gnu.org/software/emacs/manual/html%255Fnode/emacs/Directory-Variables.html">per-directory local variables</a>. For example, have your “.dir-locals.el” file state
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">((</span>org-mode . <span style="color: #7f7f7f;">((</span>mode . org<span style="color: #7f7f7f;">)</span>
+              <span style="color: #7f7f7f;">(</span>mode . notdeft-note<span style="color: #7f7f7f;">))))</span>
+</pre>
+</div>
+<p>
+This way of declaring both a major and minor <code>mode</code> appears to work at least in some versions of Emacs, although it may rely on undefined behavior.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org00357f5" class="outline-3">
+<h3 id="org00357f5"><span class="section-number-3">6.3</span> Enabling NotDeft Note Mode based on a Directory-Local Variable</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+If enabling <code>notdeft-note-mode</code> directly in “.dir-locals.el” does not work or appeal to you, then it's possible to do the same thing indirectly, by using an actual per-directory local variable to indicate if the minor mode should be enabled. That is, you can have the “.dir-locals.el” file contain
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">((</span>nil . <span style="color: #7f7f7f;">((</span>notdeft-note-mode-auto-enable . t<span style="color: #7f7f7f;">))))</span>
+</pre>
+</div>
+
+<p>
+The variable can be declared as
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">defcustom</span> <span style="color: #000000;">notdeft-note-mode-auto-enable</span> nil
+  <span style="color: #8b2252;">"Whether to enable NotDeft note mode for a buffer."</span>
+  <span style="color: #483d8b;">:type</span> 'boolean
+  <span style="color: #483d8b;">:safe</span> 'booleanp<span style="color: #7f7f7f;">)</span>
+<span style="color: #7f7f7f;">(</span>make-variable-buffer-local 'notdeft-note-mode-auto-enable<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+
+<p>
+To set that variable for a note directory, we can use the Emacs command
+</p>
+<pre class="example">
+M-x add-dir-local-variable RET nil RET notdeft-note-mode-auto-enable RET t RET
+</pre>
+
+
+<p>
+Or, if we want to programmatically set the variable for all our <code>notdeft-directories</code>, we can use the code
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">dolist</span> <span style="color: #7f7f7f;">(</span>dir notdeft-directories<span style="color: #7f7f7f;">)</span>
+  <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">let</span> <span style="color: #7f7f7f;">((</span>default-directory dir<span style="color: #7f7f7f;">))</span>
+    <span style="color: #7f7f7f;">(</span>add-dir-local-variable nil 'notdeft-note-mode-auto-enable t<span style="color: #7f7f7f;">)))</span>
+</pre>
+</div>
+
+<p>
+Defining and setting the variable alone does not enable the mode, which we want to do only for specific file types, reflecting our <code>notdeft-extension</code> and <code>notdeft-secondary-extensions</code> configuration. If we only supported <code>org-mode</code> files, we would like to say something like
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>add-hook
+ 'org-mode-local-variables-hook
+ <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">lambda</span> <span style="color: #7f7f7f;">()</span>
+   <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">when</span> notdeft-note-mode-auto-enable
+     <span style="color: #7f7f7f;">(</span>notdeft-note-mode 1<span style="color: #7f7f7f;">))))</span>
+</pre>
+</div>
+<p>
+We cannot just use <code>org-mode-hook</code>, as directory locals are not yet set at the time when the mode is enabled. What is needed is a later hook, which in the above is called <code>org-mode-local-variables-hook</code>. 
+</p>
+
+<p>
+We also have to get such hooks to run. Borrowing code from “phils” at Stack Overflow, we can get our <code>org-mode-local-variables-hook</code> run by defining and registering a new kind of hook as
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">defun</span> <span style="color: #000000;">run-local-variables-mode-hooks</span> <span style="color: #7f7f7f;">()</span>
+  <span style="color: #8b2252;">"Run hooks for `</span><span style="color: #008b8b;">major-mode</span><span style="color: #8b2252;">' with locals set.</span>
+<span style="color: #8b2252;">Like `</span><span style="color: #008b8b;">run-mode-hooks</span><span style="color: #8b2252;">', but run later, with any buffer and</span>
+<span style="color: #8b2252;">directory local variables set."</span>
+  <span style="color: #7f7f7f;">(</span>run-hooks <span style="color: #7f7f7f;">(</span>intern <span style="color: #7f7f7f;">(</span>concat <span style="color: #7f7f7f;">(</span>symbol-name major-mode<span style="color: #7f7f7f;">)</span>
+                             <span style="color: #8b2252;">"-local-variables-hook"</span><span style="color: #7f7f7f;">))))</span>
+<span style="color: #7f7f7f;">(</span>add-hook 'hack-local-variables-hook 'run-local-variables-mode-hooks<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+
+<p>
+The above solution gives us a “proper” way to enable the NotDeft note minor mode, and to do it only within directories that have a persistent NotDeft “signature” (in a “.dir-locals.el” file), and only for our chosen note-editing major modes.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-outside-notdeft-commands" class="outline-2">
+<h2 id="outside-notdeft-commands"><span class="section-number-2">7</span> Using NotDeft from Non-NotDeft Modes</h2>
+<div class="outline-text-2" id="text-outside-notdeft-commands">
+<p>
+Several of NotDeft's commands are autoloadable, and may be invoked from outside a <code>*NotDeft*</code> buffer. For example, to quickly find relevant notes when in another buffer, you might use
+</p>
+<pre class="example">
+M-x notdeft-open-query
+</pre>
+
+<p>
+which then interactively asks for a search query for opening up in a NotDeft buffer. That command can of course be bound to a key.
+</p>
+
+<p>
+A command similar to <code>notdeft-open-query</code> is
+</p>
+<pre class="example">
+M-x notdeft-lucky-find-file
+</pre>
+
+<p>
+which also asks for a search query, but then proceeds to open up the most highly ranked result file directly, without going via a <code>*NotDeft*</code> buffer. This command is similar to <code>find-file</code> in Emacs, but avoids having to specify the path of the file you're interested in; instead, this approach to “file finding” relies on sufficiently unique titling or tagging of the notes involved.
+</p>
+
+<p>
+NotDeft commands that are usable from outside <code>notdeft-mode</code> might be bound to key combinations for convenient access. To facilitate this, NotDeft provides a <code>notdeft-global</code> feature, which exports a keymap for such commands. That keymap can be bound to a prefix key. For example:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">require</span> '<span style="color: #008b8b;">notdeft-global</span><span style="color: #7f7f7f;">)</span>
+<span style="color: #7f7f7f;">(</span>global-set-key [f6] 'notdeft-global-map<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+<p>
+after which the command <code>[f6] o</code> should invoke the <code>notdeft-open-query</code> command in any mode that does not override the binding for F6 with something else.
+</p>
+</div>
+
+<div id="outline-container-org3b8738e" class="outline-3">
+<h3 id="org3b8738e"><span class="section-number-3">7.1</span> Access from NotDeft Note Buffers</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+Some of NotDeft's commands have specific support for use from within NotDeft note buffers. For example, the <code>notdeft-rename-file</code> command can be useful for renaming a note file that was perhaps created without a proper name (e.g., by using <code>C-c C-n</code>). Having written a note in a current buffer, issue the command
+</p>
+<pre class="example">
+M-x notdeft-rename-file
+</pre>
+
+<p>
+to enter a new basename for the file of that buffer. Any <code>C-u</code> prefix causes the default value to be derived from the title of the note, as extracted from the buffer contents. (The same command also works in a <code>*NotDeft*</code> buffer, affecting the currently selected file.)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbee5753" class="outline-3">
+<h3 id="orgbee5753"><span class="section-number-3">7.2</span> Programmatic NotDeft Access</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+You might also implement additional commands in terms of the globally accessible commands and Emacs Lisp functions, for example for quickly listing documents tagged in a certain way:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">defun</span> <span style="color: #000000;">my-open-todo-notes</span> <span style="color: #7f7f7f;">()</span>
+  <span style="color: #7f7f7f;">(</span>interactive<span style="color: #7f7f7f;">)</span>
+  <span style="color: #7f7f7f;">(</span>notdeft-open-query <span style="color: #8b2252;">"tag:todo"</span><span style="color: #7f7f7f;">))</span>
+</pre>
+</div>
+
+<p>
+An intended use case for NotDeft is to support other applications that wish to locate files in terms of search queries instead of path names. For example, suppose we are using an <code>org-contacts</code> command to look for contacts by <code>name</code>, and that command expects the <code>org-contacts-files</code> list to be set. In that scenario we might set that variable for it based on a suitable NotDeft search query:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq org-contacts-files
+      <span style="color: #7f7f7f;">(</span>notdeft-list-files-by-query
+       <span style="color: #8b2252;">"!all ext:Org AND Email"</span><span style="color: #7f7f7f;">))</span>
+<span style="color: #7f7f7f;">(</span>org-contacts name<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+
+<p>
+Similarly, we might use <code>org-agenda</code>'s <code>org-todo-list</code> command to list to-do entries, but resolving the <code>org-agenda-files</code> list on demand by looking for the “TODO” and “DONE” keywords in any Org files in our collection:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq org-agenda-files
+      <span style="color: #7f7f7f;">(</span>notdeft-list-files-by-query
+       <span style="color: #8b2252;">"!all ext:Org AND (Todo OR Done)"</span><span style="color: #7f7f7f;">))</span>
+<span style="color: #7f7f7f;">(</span>org-todo-list<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org09144fb" class="outline-2">
+<h2 id="org09144fb"><span class="section-number-2">8</span> NotDeft Note Syntax</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+NotDeft does not have much of a note syntax, although a subset of Org's syntax is supported in the form of <a href="https://orgmode.org/manual/In_002dbuffer-settings.html">in-buffer settings</a>. The supported Org keywords are
+</p>
+<ul class="org-ul">
+<li><code>#+TITLE</code></li>
+<li><code>#+FILETAGS</code></li>
+</ul>
+
+<p>
+A NotDeft-specific keyword is
+</p>
+<ul class="org-ul">
+<li><code>#+KEYWORDS</code></li>
+</ul>
+<p>
+which is intended for tagging notes with keywords, in a way that does not set any tags for Org.
+</p>
+
+<p>
+As for Org, the keyword names are case insensitive, so that one can write <code>#+title</code> instead of <code>#+TITLE</code>.
+</p>
+
+<p>
+You can have in-buffer settings even if you do not use Org for your notes&#x2014;the syntax for in-buffer settings is the same regardless of the markup language used in notes. Even in a plain “.txt” file, you can still specify <code>#+KEYWORDS</code>, for example.
+</p>
+</div>
+
+<div id="outline-container-org8d88cd8" class="outline-3">
+<h3 id="org8d88cd8"><span class="section-number-3">8.1</span> Example Notes</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+No special markup is necessarily required:
+</p>
+<div class="org-src-container">
+<pre class="src src-org">this is a title
+
+This is body text.
+</pre>
+</div>
+
+<p>
+Comments can be included, and they are ignored when searching:
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #8b0000; font-style: italic;"># this is a comment</span>
+this is a title
+
+This is body text.
+</pre>
+</div>
+
+<p>
+Org mode's <code>#+TITLE</code> syntax is supported:
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #8b0000; font-style: italic;"># this is a comment</span>
+<span style="color: #7f7f7f;">#+TITLE:</span> <span style="color: #191970; font-weight: bold;">this is a title</span>
+<span style="color: #8b0000; font-style: italic;"># this is a comment</span>
+
+This is body text.
+</pre>
+</div>
+
+<p>
+A note can be tagged, e.g., with the tags “some” and “tags”:
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #7f7f7f;">#+TITLE:</span> <span style="color: #191970; font-weight: bold;">this is a title</span>
+<span style="color: #8b0000; font-style: italic;">#+KEYWORDS: some tags</span>
+
+This is body text.
+</pre>
+</div>
+<p>
+Instead of the <code>#+KEYWORDS</code> syntax, we can use the Org standard <code>#+FILETAGS</code> syntax:
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #8b0000; font-style: italic;">#+FILETAGS: :some:tags:</span>
+this is a title
+
+This is body text.
+</pre>
+</div>
+<p>
+Stemming is used also on tags, and so the query “tag:tag” will find these two notes (assuming English stemming&#x2014;see <code>notdeft-xapian-language</code>).
+</p>
+
+<p>
+Whitespace is considered as a separator for tags, as are the delimiters “:”, “;”, and “,”. This means that the keyword declaration
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #8b0000; font-style: italic;">#+KEYWORDS: helsinki-vantaa places</span>
+</pre>
+</div>
+<p>
+is not matched by the search phrase “tag:"vantaa places"”. However, a hyphen still separates words, so that “tag:helsinki” and “tag:vantaa” and “tag:helsinki-vantaa” all match the first tag, which is semantically appropriate at least in this case.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgad90990" class="outline-2">
+<h2 id="orgad90990"><span class="section-number-2">9</span> Search Query Syntax</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+The usual Xapian search <a href="https://xapian.org/docs/queryparser.html">query syntax</a> is available for NotDeft queries, with some additional <i>query modifiers</i> (see below). Operators such as <code>AND</code>, <code>OR</code>, and <code>XOR</code> are available, and they may also be written in lowercase (or mixed case) if <code>notdeft-xapian-boolean-any-case</code> is set to <code>t</code>. The <code>NOT</code> operator is also available if <code>notdeft-xapian-pure-not</code> is <code>t</code>. It is possible to query for a phrase by quoting the phrase (e.g., "Deft for Emacs"). To look for a search term without stemming, give it capitalized (e.g., "Abstract" will not match “abstraction”). Wildcards in search terms are not supported (trailing wildcards <i>are</i> supported by Xapian, but not enabled in NotDeft).
+</p>
+</div>
+
+<div id="outline-container-org91dc52a" class="outline-3">
+<h3 id="org91dc52a"><span class="section-number-3">9.1</span> Prefixes</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+The following prefixes are supported by NotDeft:
+</p>
+<dl class="org-dl">
+<dt><code>file:</code></dt><dd>Indicates that the search term must appear in the (non-directory, non-extension) filename.</dd>
+<dt><code>ext:</code></dt><dd>Indicates the string that must be the filename extension of the file (without the ".").</dd>
+<dt><code>path:</code></dt><dd>Indicates that the search term must appear in the non-directory part of the file pathname, where the pathname is relative to the user's home directory.</dd>
+<dt><code>title:</code></dt><dd>Indicates that the search term must appear in the title.
+<ul class="org-ul">
+<li>Title is specified either as the first non-empty non-comment line, or as the file property (or Org mode “in-buffer setting”) <code>#+TITLE</code>. (Multiple <code>#+TITLE</code> lines are not supported.)</li>
+</ul></dd>
+<dt><code>tag:</code></dt><dd>Indicates that the search term must appear among the tags given to the document.
+<ul class="org-ul">
+<li>The tags for a note are specified either with the standard Org file property <code>#+FILETAGS</code>, or the custom file property <code>#+KEYWORDS</code>. (Org headline tags do not qualify.)</li>
+</ul></dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orgd9c1014" class="outline-3">
+<h3 id="orgd9c1014"><span class="section-number-3">9.2</span> Query Modifiers</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+The following custom query syntax is supported:
+</p>
+<dl class="org-dl">
+<dt><code>!time</code></dt><dd>Prefix a query with <code>!time</code> to have the results sorted by decreasing file modification time, even if the <code>notdeft-xapian-order-by-time</code> configuration option is disabled.</dd>
+<dt><code>!rank</code></dt><dd>Prefix a query with <code>!rank</code> to have the results sorted by decreasing relevance, regardless of the <code>notdeft-xapian-order-by-time</code> setting.</dd>
+<dt><code>!file</code></dt><dd>Prefix a query with <code>!file</code> to have results sorted by (non-directory) file name, alphabetically, in decreasing order. Overrides all of the other sorting settings and modifiers.</dd>
+<dt><code>!all</code></dt><dd>Prefix a query with <code>!all</code> to show <i>all</i> matching results. Note that unless you specify this modifier, the contents of a query result list may differ depending on how the results are sorted, since less highly ranked notes may get excluded.</dd>
+</dl>
+
+<p>
+A space character must be used to separate the above keywords from the rest of the query string.
+</p>
+
+<p>
+The <code>!file</code> modifier might be useful for instance when you have file names such as “2017-01-01-0001.txt” and “2017-09-19-0123.txt”, and you would like to see them in chronological order by “creation time”, even if some of the files have been edited, and consequently have had their modification times changed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef8fb7f" class="outline-3">
+<h3 id="orgef8fb7f"><span class="section-number-3">9.3</span> Example Search Queries</h3>
+<div class="outline-text-3" id="text-9-3">
+<p>
+It is simple to find all notes containing both the words Emacs and Org:
+</p>
+<pre class="example">
+Emacs AND Org
+</pre>
+
+
+<p>
+If you have a lot of notes about Org mode, and few about other Emacs matters, it may be interesting to use
+</p>
+<pre class="example">
+Emacs AND NOT Org
+</pre>
+
+<p>
+which works if the <code>notdeft-xapian-pure-not</code> option is set.
+</p>
+
+<p>
+While you're often likely to be more interested in recent (or best maintained) notes, sorting by relevance can be useful particularly when there are multiple search terms: you may be more interested in seeing notes that contain <i>all</i> the terms instead of just <i>one</i> of them. You may use “!rank” to enable relevance-based ranking for a specific query:
+</p>
+<pre class="example">
+!rank Emacs Org Deft
+</pre>
+
+
+<p>
+If, on the other hand, you use a single, common search term, and have a lot of documents, you may run into your <code>notdeft-xapian-max-results</code> limit, and miss out on some documents. In this case, you might use
+</p>
+<pre class="example">
+!all Emacs
+</pre>
+
+<p>
+to list <i>all</i> documents mentioning Emacs.
+</p>
+
+<p>
+If, unlike in the above case, you just want to see all documents that are about Emacs specifically, you may get more useful results with the query
+</p>
+<pre class="example">
+title:Emacs
+</pre>
+
+<p>
+to only find documents whose title indicates that they concern Emacs. Or, to be more thorough, you might want to make sure you also find notes with the word Emacs in the filename:
+</p>
+<pre class="example">
+title:Emacs OR file:Emacs
+</pre>
+
+
+<p>
+You can combine prefixes and “bracketed subexpressions”:
+</p>
+<pre class="example">
+title:(Ayn AND Rand)
+</pre>
+
+<p>
+which will match both “Ayn Rand” and “Rand, Ayn” in a title.
+</p>
+
+<p>
+Phrase searches are allowed for tags, and
+</p>
+<pre class="example">
+tag:helsinki-vantaa
+tag:"helsinki vantaa"
+tag:(helsinki AND vantaa)
+</pre>
+
+<p>
+all match the tag “helsinki-vantaa”.
+</p>
+
+<p>
+Filename extensions can be capitalized to avoid any stemming. For example, to find all “.org” documents that may contain open to-do entries, we might query with
+</p>
+<pre class="example">
+!all ext:Org AND TODO
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2894a7a" class="outline-2">
+<h2 id="org2894a7a"><span class="section-number-2">10</span> Command Popup Buffers</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+If it seems hard to remember the various NotDeft commands, one may wish to have a command selection dialog, similar to the one in <a href="https://magit.vc/">Magit</a>. For implementing such “helpful key bindings,” one can use <a href="https://magit.vc/manual/magit-popup.html">Magit-Popup</a> or <a href="https://github.com/abo-abo/hydra">Hydra</a>, for instance. As an example, the “extras” directory of NotDeft's source repository contains a predefined hydra for NotDeft's mode-agnostic commands, provided by the <code>notdeft-global-hydra</code> feature. To bind <code>[f6]</code> to the hydra (instead of the <code>notdeft-global-map</code> keymap directly), one can use the configuration code 
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>autoload 'notdeft-global-hydra/body <span style="color: #8b2252;">"notdeft-global-hydra"</span> nil t<span style="color: #7f7f7f;">)</span>
+<span style="color: #7f7f7f;">(</span>global-set-key [f6] 'notdeft-global-hydra/body<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+
+<p>
+There is also an optional hydra for <code>notdeft-mode</code>, which can be made available with code such as
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>autoload 'notdeft-mode-hydra/body <span style="color: #8b2252;">"notdeft-mode-hydra"</span><span style="color: #7f7f7f;">)</span>
+<span style="color: #7f7f7f;">(</span>eval-after-load <span style="color: #8b2252;">"notdeft"</span>
+  '<span style="color: #7f7f7f;">(</span>define-key notdeft-mode-map <span style="color: #7f7f7f;">(</span>kbd <span style="color: #8b2252;">"C-c h"</span><span style="color: #7f7f7f;">)</span> 'notdeft-mode-hydra/body<span style="color: #7f7f7f;">))</span>
+</pre>
+</div>
+
+
+<div id="orgd9eb441" class="figure">
+<p><img src="./global-hydra.png" alt="global-hydra.png" />
+</p>
+<p><span class="figure-number">Figure 4: </span>A NotDeft command “hydra” invoked from Org mode.</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5725545" class="outline-2">
+<h2 id="org5725545"><span class="section-number-2">11</span> Org Mode Integration</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+NotDeft is somewhat specialized for managing notes in the Org format. If you do use Org mode for editing your notes, there are some Org-specific NotDeft commands available (for autoloading) in the <code>notdeft-org</code> feature.
+</p>
+
+<p>
+Additionally, depending on your Org version, you may want to
+</p>
+<pre class="example">
+(require 'notdeft-org8)
+</pre>
+
+<p>
+or
+</p>
+<pre class="example">
+(require 'notdeft-org9)
+</pre>
+
+<p>
+in your Org startup code, to set up support for “deft:” and “notdeft:” links in <code>org-mode</code>. A “deft:” link names a note by its non-directory filename, whereas a “notdeft:” link contains a NotDeft Xapian search expression.
+</p>
+
+<p>
+Org mode's <code>org-store-link</code> command may be used to capture any Xapian search in a NotDeft buffer, to be later inserted with <code>org-insert-link</code>. The <code>notdeft-org</code> feature also defines NotDeft-specific <code>notdeft-org-link-existing-note</code> and <code>notdeft-org-link-new-file</code> commands for inserting “deft:” links, either to an existing note or a new one.
+</p>
+
+<p>
+The <code>notdeft-org</code> feature also defines a <code>notdeft-org-store-deft-link</code> command, which functions similarly to <code>org-store-link</code>, but stores a "deft:" link to the current note. In a NotDeft buffer, it stores a link to any selected note; and in a NotDeft note buffer, it stores a link to that buffer's note.
+</p>
+
+<p>
+NotDeft allows a "deft:" link to also include a search option, which follows the filename, separated by <code>::</code>. Search options are specified in the same way as for "file:" links. For example:
+</p>
+<pre class="example">
+[[deft:notdeft-homepage.org::*Note Archival]]
+[[deft:notdeft-homepage.org::#capture-protocol]]
+</pre>
+
+
+<p>
+NotDeft has some optional support for the Org <a href="https://orgmode.org/manual/Property-Syntax.html">property syntax</a>, which can be enabled by setting the variable <code>notdeft-allow-org-property-drawers</code> to a non-nil value. Enabling that option makes it so that any top-level <code>PROPERTIES</code> <a href="https://orgmode.org/manual/Drawers.html">drawer</a> appearing at the beginning of a note is treated as a comment. The title of the note
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #0000ff;">:PROPERTIES:</span>
+<span style="color: #0000ff; font-weight: bold;">:CUSTOM_ID:</span> my-custom-id
+<span style="color: #0000ff;">:END:</span>
+Note title
+Note body.
+</pre>
+</div>
+<p>
+can be either ":PROPERTIES:" or "Note title", depending on whether NotDeft is configured to recognize <code>PROPERTIES</code> drawers.
+</p>
+</div>
+
+<div id="outline-container-orgd5f8688" class="outline-3">
+<h3 id="orgd5f8688"><span class="section-number-3">11.1</span> Using NotDeft and Org Mode as a Desktop Wiki Engine</h3>
+<div class="outline-text-3" id="text-11-1">
+<p>
+It is “deft:” links in particular that allow NotDeft to be used as a desktop wiki, linking documents by topic, where a topic is named by the non-directory name of a note file. For “deft:” links to consistently resolve to the same note, you should name your note files uniquely.
+</p>
+
+<p>
+For example, when following the link
+</p>
+<pre class="example">
+[[deft:notdeft.org]]
+</pre>
+
+<p>
+NotDeft will look for a “notdeft.org” file anywhere in the note collection, and open the first match.
+</p>
+
+<p>
+A benefit of that “deft:” link semantics is that using the command
+</p>
+<pre class="example">
+M-x notdeft-move-file
+</pre>
+
+<p>
+to move a note file into a different directory does not cause any “deft:” link to break, whereas regular “file:” links may break.
+</p>
+
+<p>
+To conveniently create a dedicated note for a given topic in an Org-mode buffer, and also link to that note at the same time, highlight the title (and link description) of that topic so that it becomes the active region, and then issue the command
+</p>
+<pre class="example">
+M-x notdeft-link-new-file
+</pre>
+
+<p>
+For example, if you've highlighted the text “desktop wikis”, the command will offer to create a note of the same title, derive a filename for it based on the title, and replace the region with a “deft:” link to it. (The command is defined by the <code>notdeft-org</code> feature.)
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgef69561" class="outline-2">
+<h2 id="orgef69561"><span class="section-number-2">12</span> Quick Note Capture</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+To quickly create a new note file from any buffer, you can use
+</p>
+<pre class="example">
+M-x notdeft-new-file
+</pre>
+
+<p>
+That command is also bound to <code>C-n</code> in <code>notdeft-global-map</code>, and if that keymap is bound to the prefix <code>[f6]</code>, for example, then you can create a new note with the key combination <code>[f6] C-n</code>.
+</p>
+
+<p>
+Org mode has its own “capture” mechanism, and you can certainly configure capturing into a file that resides in a NotDeft directory. For example:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span>setq org-directory <span style="color: #8b2252;">"~/notes"</span><span style="color: #7f7f7f;">)</span> <span style="color: #8b0000; font-style: italic;">;; </span><span style="color: #8b0000; font-style: italic;">default Org files location</span>
+<span style="color: #7f7f7f;">(</span>setq notdeft-directories <span style="color: #7f7f7f;">(</span>list org-directory<span style="color: #7f7f7f;">))</span> <span style="color: #8b0000; font-style: italic;">;; </span><span style="color: #8b0000; font-style: italic;">NotDeft search path</span>
+<span style="color: #7f7f7f;">(</span>setq org-default-notes-file <span style="color: #7f7f7f;">(</span>concat org-directory <span style="color: #8b2252;">"/notes.org"</span><span style="color: #7f7f7f;">))</span>
+<span style="color: #7f7f7f;">(</span>global-set-key [f7] 'org-capture<span style="color: #7f7f7f;">)</span>
+</pre>
+</div>
+<p>
+which defines "~/notes" as the sole NotDeft directory, and has the key F7 initiate an <code>org-capture</code>, by default into the file "~/notes/notes.org". After completing capture, you can go back to the previously captured item with
+</p>
+<pre class="example">
+C-u C-u M-x org-capture
+</pre>
+
+<p>
+The capture facility supports the definition and use of <code>org-capture-templates</code> for different purposes.
+</p>
+
+<p>
+A caveat with Org capturing is that unless you have already opened the capture file under NotDeft, any newly captured items may not immediately get noticed by NotDeft. To ensure that NotDeft is aware of any changes, one might arrange for the capture file to include file variables for enabling the <code>notdeft-note-mode</code> minor mode for any buffers opened for that file. Setting directory local variables are another option.
+</p>
+
+<p>
+A more involved option is to write custom commands which enable the minor mode for the capture file, for example with
+</p>
+<pre class="example">
+(notdeft-register-file org-default-notes-file)
+</pre>
+
+<p>
+Note that different <code>org-capture-templates</code> may define different capture locations. Consequently, it may be appropriate for the templates themselves to embed code for performing the registration (e.g., as shown in the <a href="#capture-protocol"><code>capture</code> from Firefox</a> section).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge403d3f" class="outline-2">
+<h2 id="orge403d3f"><span class="section-number-2">13</span> Adding Attachments to Notes</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+NotDeft has a simple mechanism to support “attaching” files to notes, one that is agnostic to the note file format. If you have a note file
+</p>
+<pre class="example">
+~/notes/deft-for-emacs.txt
+</pre>
+
+<p>
+you can use the command <code>C-c S</code> to move the file into a subdirectory of the same name, so that the file's pathname becomes
+</p>
+<pre class="example">
+~/notes/deft-for-emacs/deft-for-emacs.txt
+</pre>
+
+<p>
+Now you can copy/move/link any attachments for the note into that subdirectory, and it is convenient to move the note together with its attachments using a regular file manager.
+</p>
+
+<p>
+To move a note from within <code>*NotDeft*</code>, the command <code>C-u C-c m</code> can be used to move it under another NotDeft root directory, where the prefix <code>C-u</code> assures NotDeft that the file really is to be moved together with its subdirectory.
+</p>
+
+<p>
+When the attachments reside in the same directory as the note itself, in Org mode it is then easy to add a “file:” link to any attachment with the command <code>C-u C-c C-l</code>. For example, if the attachment directory contains a file named “2017-01-01-0001.JPG”, then a “file:” link to it would be simply
+</p>
+<pre class="example">
+[[file:2017-01-01-0001.JPG]]
+</pre>
+
+<p>
+and the command <code>C-c C-x C-v</code> can be used to toggle inline display of images.
+</p>
+
+<p>
+Org itself has its own attachment management mechanism, whose action menu is bound to <code>C-c C-a</code>. This mechanism allows an attachment directory to be associated with an Org heading (as identified by information stored within the heading's properties), and thus the NotDeft note file itself can reside directly within a NotDeft root directory. Org has no command for moving an Org file together with its attachments, however.
+</p>
+
+<p>
+To make the Org mechanism compatible with the NotDeft mechanism, one can store the attachments in the same (sub)directory as the note file itself, by specifying that directory with the <code>ATTACH_DIR</code> property. For example:
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="font-weight: bold;">* Bergen, Norway                              </span><span style="font-weight: bold;">:ATTACH:</span>
+  <span style="color: #0000ff;">:PROPERTIES:</span>
+  <span style="color: #0000ff; font-weight: bold;">:ATTACH_DIR:</span> ./
+  <span style="color: #0000ff; font-weight: bold;">:Attachments:</span> 2017-01-01-0001.JPG 2017-09-19-0123.JPG
+  <span style="color: #0000ff;">:END:</span>
+</pre>
+</div>
+<p>
+This way it is still convenient to move a note together with its attachments, and Org commands such as <code>C-c C-a o</code> (for opening the attachments) can still be used.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org82e9b2d" class="outline-2">
+<h2 id="org82e9b2d"><span class="section-number-2">14</span> Note Archival</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+To archive away a note so that its contents will no longer be included in a search, one can press <code>C-c C-a</code> from within <code>*NotDeft*</code>. This is a note format agnostic archival method, as the entire note file gets moved into a <code>notdeft-archive-directory</code>, with the default name of
+</p>
+<pre class="example">
+"_archive"
+</pre>
+
+<p>
+meaning that a note file whose original path is
+</p>
+<pre class="example">
+~/notes/deft-for-emacs.txt
+</pre>
+
+<p>
+would get moved to
+</p>
+<pre class="example">
+~/notes/_archive/deft-for-emacs.txt
+</pre>
+
+<p>
+Any directories whose names begin with an underscore will be excluded from Xapian searches, and thus such an archived note will no longer clutter search results.
+</p>
+
+<p>
+In Org mode one can use Org's own <a href="http://orgmode.org/manual/Archiving.html">archival mechanism</a> to archive just a part of a note document subtree, and the archival file will also be excluded from Xapian searches, provided that its filename extension is not <code>notdeft-extension</code> or one of the <code>notdeft-secondary-extensions</code>. Org's default extension is
+</p>
+<pre class="example">
+org_archive
+</pre>
+
+<p>
+which by default is not an extension recognized by NotDeft.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0635159" class="outline-2">
+<h2 id="org0635159"><span class="section-number-2">15</span> Capturing Data from External Applications</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+The <code>org-protocol</code> feature of Org mode provides a way for external applications to interface with Emacs and Org, and that mechanism can also be adopted for capturing data into NotDeft. For example, data can be sent from Firefox to NotDeft using the predefined <code>store-link</code> and <code>capture</code> protocols.
+</p>
+
+<p>
+The mechanism works by the external application invoking <code>emacsclient</code>, and for this to work you should have an Emacs server running in the Emacs instance you want to use to receive data into NotDeft. A server can be started by evaluating
+</p>
+<pre class="example">
+(server-start)
+</pre>
+</div>
+
+<div id="outline-container-org26b2c44" class="outline-3">
+<h3 id="org26b2c44"><span class="section-number-3">15.1</span> <code>org-protocol</code> Content Type in Firefox</h3>
+<div class="outline-text-3" id="text-15-1">
+<p>
+To configure Firefox to support the <code>org-protocol:</code> scheme, first open <code>about:config</code>, and add a <code>boolean</code> property
+</p>
+<pre class="example">
+network.protocol-handler.expose.org-protocol false
+</pre>
+
+
+<p>
+Then craft an HTML file such as
+</p>
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #000000;">html</span>&gt;
+  &lt;<span style="color: #000000;">body</span>&gt;
+    &lt;<span style="color: #000000;">a</span> <span style="color: #000000;">href</span>=<span style="color: #8b2252;">"org-protocol://store-link?url=URL&amp;title=TITLE"</span>&gt;link&lt;/<span style="color: #000000;">a</span>&gt;
+  &lt;/<span style="color: #000000;">body</span>&gt;
+&lt;/<span style="color: #000000;">html</span>&gt;
+</pre>
+</div>
+<p>
+and open that file in Firefox, and click the link, after which a “Launch Application” dialog is presented. “Choose other Application”, tick the box “Remember my choice for org-protocol links”, and specify <code>emacsclient</code> as the executable.
+</p>
+
+<p>
+That application selection can later be modified from Firefox “Preferences” / “Applications”. If required, the “Content Type” should be removable at least by editing the “mimeTypes.rdf” file in the Firefox profile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9163f5b" class="outline-3">
+<h3 id="org9163f5b"><span class="section-number-3">15.2</span> <code>store-link</code> from Firefox</h3>
+<div class="outline-text-3" id="text-15-2">
+<p>
+There is nothing NotDeft specific about the <code>store-link</code> Org protocol, as it merely stores a link to the Emacs <code>kill-ring</code> for yanking. To configure Firefox to support the protocol, just add a suitable bookmarklet (e.g., to the “Bookmarks Toolbar”). The bookmark “Location” can be specified as
+</p>
+<div class="org-src-container">
+<pre class="src src-javascript">javascript:location.href=<span style="color: #8b2252;">'org-protocol://store-link?url='</span>+encodeURIComponent(document.location)+<span style="color: #8b2252;">'&amp;title='</span>+encodeURIComponent(document.title);<span style="color: #0000ff; font-weight: bold;">void</span>(0);
+</pre>
+</div>
+
+<p>
+By selecting that bookmark a link to the current page can be sent to Emacs. Its URL can then be inserted in Emacs with <code>C-y</code>. A full Org link in turn can be inserted with
+</p>
+<pre class="example">
+M-x org-insert-link
+</pre>
+
+<p>
+which is bound to <code>C-c C-l</code> in Org.
+</p>
+</div>
+</div>
+
+<div id="outline-container-capture-protocol" class="outline-3">
+<h3 id="capture-protocol"><span class="section-number-3">15.3</span> <code>capture</code> from Firefox</h3>
+<div class="outline-text-3" id="text-capture-protocol">
+<p>
+The <code>capture</code> protocol, in turn, allows for web page content and metadata to be captured from Firefox into Emacs. Configuring the <code>capture</code> protocol for use with NotDeft is slightly more involved than in the case of <code>store-link</code>, as we must choose what page data to store, and where in our NotDeft note collection to store it.
+</p>
+
+<p>
+Suppose we wish to store any currently selected text, along with the URL of the containing page, and a capture timestamp. Suppose also that we wish to store it into a file whose name is derived from the page title, so that if we capture multiple times from the same page, then all of the captured text snippets will end up in the same note file.
+</p>
+
+<p>
+In that case the Firefox bookmarklet for sending over the required information can for example be
+</p>
+<div class="org-src-container">
+<pre class="src src-javascript">javascript:location.href=<span style="color: #8b2252;">'org-protocol://capture?template=w&amp;url='</span>+encodeURIComponent(document.location)+<span style="color: #8b2252;">'&amp;title='</span>+encodeURIComponent(document.title)+<span style="color: #8b2252;">'&amp;body='</span>+encodeURIComponent(window.getSelection());<span style="color: #0000ff; font-weight: bold;">void</span>(0);
+</pre>
+</div>
+<p>
+where we have given the name “w” for the Org capture template.
+</p>
+
+<p>
+We must also define that template as one of our <code>org-capture-templates</code>, and the definition can be
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">require</span> '<span style="color: #008b8b;">org-protocol</span><span style="color: #7f7f7f;">)</span>
+
+<span style="color: #7f7f7f;">(</span>setq org-capture-templates
+      '<span style="color: #7f7f7f;">((</span><span style="color: #8b2252;">"w"</span> <span style="color: #8b2252;">"capture selection into NotDeft"</span> plain
+         <span style="color: #7f7f7f;">(</span>file <span style="color: #7f7f7f;">(</span><span style="color: #0000ff; font-weight: bold;">lambda</span> <span style="color: #7f7f7f;">()</span>
+                 <span style="color: #7f7f7f;">(</span>notdeft-switch-to-file-named
+                   <span style="color: #7f7f7f;">(</span>plist-get org-store-link-plist <span style="color: #483d8b;">:description</span><span style="color: #7f7f7f;">))))</span>
+         <span style="color: #8b2252;">"%l\non %u\n\n%i"</span>
+         <span style="color: #483d8b;">:empty-lines-before</span> 1<span style="color: #7f7f7f;">)))</span>
+</pre>
+</div>
+<p>
+This definition assumes that the link <code>:description</code> is available from <code>org-store-link-plist</code>, and that it corresponds to the <code>document.title</code>; this may be undocumented functionality, but works in Org mode 9.1.1. The <code>notdeft-switch-to-file-named</code> derives a filename from the description, creates that file if it doesn't yet exist, and returns the complete <code>file</code> name.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf9b537c" class="outline-2">
+<h2 id="orgf9b537c"><span class="section-number-2">16</span> Troubleshooting</h2>
+<div class="outline-text-2" id="text-16">
+</div>
+<div id="outline-container-org6f8190a" class="outline-3">
+<h3 id="org6f8190a"><span class="section-number-3">16.1</span> When Search Queries Are Not Yielding Expected Results</h3>
+<div class="outline-text-3" id="text-16-1">
+<p>
+Try doing the following in a <code>*NotDeft*</code> buffer:
+</p>
+<ol class="org-ol">
+<li>Press <code>TAB</code> (or <code>M-x notdeft-query-edit</code>) to be prompted for a Xapian query.</li>
+<li>If nothing happens when you press <code>TAB</code>, then you have probably not configured a value for <code>notdeft-xapian-program</code>. Assign a value to that variable.</li>
+<li>Having pressed <code>TAB</code>, enter a query string at the prompt, one that should match some notes, and press <code>RET</code>.</li>
+<li>If that reports "Found no notes", or an unexpected set of notes, then your search index may not be up-to-date, perhaps due to filesystem changes outside of NotDeft. Invoke the command <code>M-x notdeft-refresh</code> (i.e., <code>C-c C-x g</code>) to refresh the search index.</li>
+<li>If you suspect that your search index may be corrupt or incompatible in some way, you may invoke the command <code>M-x notdeft-reindex</code> (i.e., <code>C-c C-x r</code>) to fully rebuild the search index, instead of just refreshing it.</li>
+<li><p>
+If you see unexpected behavior after setting a search query, ensure that the <code>notdeft-xapian-program</code> variable names the complete and fully expanded path of a working executable. It may be worth trying to run the program directly, and seeing what it says. For example:    
+</p>
+<pre class="example">
+/path/to/notdeft-xapian search -q 'Emacs OR Vi' ~/.deft
+</pre></li>
+<li>If your search query includes prefix terms such as “title:Emacs”, and you do not get all the expected matches, then make sure that any lines before any <code>#+TITLE</code> (or, <code>#+KEYWORDS</code>, etc.) are either whitespace only or begin with “#”. While the Org markup language allows in-buffer settings to appear anywhere in a file, NotDeft only scans the beginning of each file for such settings.</li>
+<li>If all else fails, a tool such as <code>xapian-delve</code> may be used to inspect the contents of the search index to see which terms it actually contains.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2c6ac55" class="outline-2">
+<h2 id="org2c6ac55"><span class="section-number-2">17</span> See Also</h2>
+<div class="outline-text-2" id="text-17">
+
+<ul>
+<li> <a href="/blog/fetching-web-pages-into-notdeft/" class="internal">Fetching Web Pages into NotDeft</a> </li>
+<li> <a href="/blog/transient-directories-in-notdeft/" class="internal">Transient Directories in NotDeft</a> </li>
+</ul>
+
+</div>
+</div>
+
+</main>
+
+    
+    <footer id="page-footer">
+<p> Written on <time>Tuesday, August 22, 2017</time> by <a href="/" class="internal">Tero Hasu</a>. </p>
+
+<p> Revised on <time>Sunday, May 9, 2021</time>. </p>
+
+<p> Tagged as <a href="/tags/emacs" class="internal">Emacs</a>, <a href="/tags/lisp" class="internal">Lisp</a>, <a href="/tags/notdeft" class="internal">NotDeft</a>, <a href="/tags/org" class="internal">Org</a>, <a href="/tags/software" class="internal">software</a>. </p>
+<p> Send comments by <a href="mailto:&#116;&#101;&#114;&#111;&#64;&#104;&#97;&#115;&#117;&#46;&#105;&#115;?subject=NotDeft&amp;body=https%3a%2f%2ftero.hasu.is%2fnotdeft%2f" class="internal">e-mail</a>. </p><p> Related pages: </p>
+<ul>
+  
+  <li><a href="/blog/2013-08-24-ractionary.html" class="internal">Dictionary-Enabled Racket Support for Emacs</a></li>
+  
+  <li><a href="/blog/2012-10-09-rascal-emacs-mode.html" class="internal">Rascal Mode for Emacs Released</a></li>
+  
+  <li><a href="/blog/2011-09-08-on-racket-support-in-emacs-org-mode.html" class="internal">On Racket Support in Emacs Org-Mode</a></li>
+  
+</ul></footer>
+
+    
+  </body>
+</html>

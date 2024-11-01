@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "Joshua" "1:8" "#" "<==" "zsh"

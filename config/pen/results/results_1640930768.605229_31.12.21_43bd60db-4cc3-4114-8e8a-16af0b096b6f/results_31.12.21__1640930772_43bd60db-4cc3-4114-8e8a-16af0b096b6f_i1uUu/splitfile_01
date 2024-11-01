@@ -1,0 +1,5 @@
+On this day in history, the first commercial jet airliner, the Junkers Ju 52, took to the air.
+
+$ zzdatafmt --en --int --num --bar --iso-8601 --br --br datafmt
+
+Date: Fri 31 Dec 2021 19:06:

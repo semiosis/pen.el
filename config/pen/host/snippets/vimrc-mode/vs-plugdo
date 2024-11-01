@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: vim-plug Plugin definition with { 'do': '' }
+# group: vimsnippet
+# key: vs-plugdo
+# --
+Plug '${1}', { 'do': '${0}' }

@@ -1,0 +1,13 @@
+
+stack exec ReadExample
+stack exec HakyllExample
+stack exec ReadExample2
+stack exec ReadExample3
+stack exec ReadExample4
+
+~~~~~~~~
+
+or create a Cabal package:
+
+~~~~~~~~
+stack --resolver

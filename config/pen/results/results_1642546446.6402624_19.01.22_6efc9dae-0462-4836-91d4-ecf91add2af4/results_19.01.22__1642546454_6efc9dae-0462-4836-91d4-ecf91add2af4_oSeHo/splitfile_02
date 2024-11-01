@@ -1,0 +1,4 @@
+
+The clojure symbol "@" is a macro that is executed when a new value is assigned to a reference.
+It is used to maintain thread-safe access to shared state.
+

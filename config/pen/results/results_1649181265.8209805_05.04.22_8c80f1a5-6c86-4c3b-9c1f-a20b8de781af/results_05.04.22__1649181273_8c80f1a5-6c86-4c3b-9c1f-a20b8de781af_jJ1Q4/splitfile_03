@@ -1,0 +1,4 @@
+
+
+After this declaration the Natural type and the Integer type are considered to be distinct. Furthermore the Natural type is
+considered a subset of the Integer type; any value of the Natural type is considered to also be a value of the Integer type

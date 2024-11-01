@@ -1,0 +1,8 @@
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:000000000000489c" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=1" "--decrypt=true" "id:0.0.2.260.1DAE9EC35D48997.0@les1.mx.csod.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:000000000000489e" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=1" "--decrypt=true" "id:0.0.1CA.FB0.1DAEA114F6D5C78.885B@vmta63.87.lstrk.net" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"

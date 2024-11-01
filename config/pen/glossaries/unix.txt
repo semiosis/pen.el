@@ -1,0 +1,25 @@
+Unix domain socket
+IPC socket
+inter-process communication socket
+    A data communications endpoint for
+    exchanging data between processes
+    executing on the same host operating
+    system. Valid socket types in the UNIX
+    domain are:
+    - SOCK_STREAM (compare to TCP)
+      For a stream-oriented socket
+    - SOCK_DGRAM (compare to UDP)
+      For a datagram-oriented socket that
+      preserves message boundaries (as on most
+      UNIX implementations, UNIX domain
+      datagram sockets are always reliable and
+      don't reorder datagrams)
+    - SOCK_SEQPACKET (compare to SCTP)
+      For a sequenced-packet socket that is
+      connection-oriented, preserves message
+      boundaries, and delivers messages in the
+      order that they were sent.
+
+      The Unix domain socket facility is a
+      standard component of POSIX operating
+      systems.

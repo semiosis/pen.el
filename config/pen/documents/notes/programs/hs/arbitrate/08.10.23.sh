@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "arbitrate" "/root/.cargo/bin/rust-analyzer" "#" "<==" "rust-analyzer"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "arbitrate" "/root/.cargo/bin/rust-analyzer" "#" "<==" "rust-analyzer"
+cd /root/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core;  "arbitrate" "/root/.cargo/bin/rust-analyzer" "#" "<==" "rust-analyzer"
+cd /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/structopt-0.3.26;  "arbitrate" "/root/.cargo/bin/rust-analyzer" "#" "<==" "rust-analyzer"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "arbitrate" "/root/.cargo/bin/rust-analyzer" "#" "<==" "rust-analyzer"
+cd /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/flate2-1.0.27;  "arbitrate" "/root/.cargo/bin/rust-analyzer" "#" "<==" "rust-analyzer"

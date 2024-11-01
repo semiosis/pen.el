@@ -1,0 +1,22 @@
+
+
+  -- Parse the records into a list of tuples, one for each column in the CSV file.
+  tuples <- map (parsedRecord . words) records
+
+  -- Convert the list of tuples into a list of lists, one for each column in the CSV file.
+  lists <- map (map (\x -> [x])) tuples
+
+  -- Zip the lists together to create a list of lists of columns.
+  columns <- transpose lists
+
+  -- Create a new datastructure to store the data from the CSV file.
+  data = []
+
+  -- Store each column in the datastructure.
+  forM_ columns $ \c -> do
+    data' = c : data
+    data = data'
+
+  -- Print out the datastructure.
+  print $ head data
+EOD

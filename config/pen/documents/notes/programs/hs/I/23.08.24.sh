@@ -1,0 +1,8 @@
+cd //;  "I" "Thessalonians" "4:3-8" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "8:3-7" "#" "<==" "zsh"
+cd /root/notes;  "I" "Thessalonians" "5:23" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "5:18" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "5:4" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "5:1" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "5:5" "#" "<==" "zsh"
+cd /;  "I" "Corinthians" "8:3-7" "#" "<==" "zsh"

@@ -1,0 +1,9 @@
+"ScopedTypeVariables" is a GHC extension that allows the programmer to declare the type of a variable in the same place as its usage.
+
+The following example shows how to use ScopedTypeVariables to avoid the use of type annotations in a function definition.
+
+The function below has a type signature that is not obvious from its definition.
+
+The "ScopedTypeVariables" extension allows the programmer to declare the type of the variable "a" in the same place as its usage.
+
+The following

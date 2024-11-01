@@ -1,0 +1,5 @@
+cd /root/.pen/glossaries;  "vimhelp" "digraph-table" "#" "<==" "zsh"
+cd /root/.pen/glossaries;  "vimhelp" "+/LOGICAL" "digraph-table" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "vimhelp" "digraph-table" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "vimhelp" "digraph-table" "#" "<==" "zsh"
+cd /root/.pen/glossaries;  "vimhelp" "digraph-table" "#" "<==" "zsh"

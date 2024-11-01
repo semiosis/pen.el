@@ -1,0 +1,1 @@
+newtype Person = Person { getPerson :: Int }

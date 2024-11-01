@@ -1,0 +1,13 @@
+ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» pwd
+/root/notes
+» git diff --cached
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+»
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» pwd
+/root/

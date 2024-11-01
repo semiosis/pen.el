@@ -1,0 +1,9 @@
+fruit basket
+    [food hamper]
+
+    A gift basket containing fruit.
+
+wine hamper
+    [food hamper]
+
+    A gift basket containing wine.

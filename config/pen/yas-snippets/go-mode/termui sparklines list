@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: termui sparklines list
+# key: tusparks
+# --
+sp := ui.NewSparklines(spark, spark1)
+sp.Width = 25
+sp.Height = 7
+sp.BorderLabel = "Sparkline"
+sp.Y = 4
+sp.X = 25

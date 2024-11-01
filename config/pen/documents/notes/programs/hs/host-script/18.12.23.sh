@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "host-script" "-sn" "nmtui" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "i" "gw" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "nmtui" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "restart-network" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "nmtui" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "i" "gw" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "i" "gw" "#" "<==" "withopts"

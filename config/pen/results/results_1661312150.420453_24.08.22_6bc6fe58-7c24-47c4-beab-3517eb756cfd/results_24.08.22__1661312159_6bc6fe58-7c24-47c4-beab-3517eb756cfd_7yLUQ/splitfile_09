@@ -1,0 +1,33 @@
+
+    Facts are things that are inferred from
+    the remote system's current state or
+    nature.
+
+    They are not declared things, but are
+    inferred from the current state of the
+    remote system.
+
+    Facts can be used to set variables,
+    used in templating, and used in playbooks.
+
+Playbook
+    A playbook is a set of tasks that define
+    what the managed system should do.
+
+    It is a sequence of plays.
+
+    A play is a set of tasks that define what
+    should happen on a single managed system.
+
+    It is a sequence of tasks that define what
+    should happen on a single managed system.
+
+    A task is a single atomic action that runs on
+    a managed system.
+
+    It can be part of a play or playbook.
+
+    It can include conditional statements, loops,
+    and other control structures.
+
+  Playbooks are written

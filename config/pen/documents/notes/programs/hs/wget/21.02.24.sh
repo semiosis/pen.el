@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=z6vR_FV7s7c" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=9oVSJUk9wDg" "#" "<==" "pen-ci"
+cd /root/.pen/downloads;  "wget" "https://www.ccel.org/ccel/b/bunyan/holy_war/cache/holy_war.pdf" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s" "#" "<==" "pen-ci"

@@ -1,0 +1,18 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-packages.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-ui.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-better-defaults.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-org.el
+EOD

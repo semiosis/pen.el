@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: alias
+# key: alias
+# --
+;; This is one way to alias a function
+(define-syntax 1+
+(syntax-rules ()
+((_ x)   (incf x))))

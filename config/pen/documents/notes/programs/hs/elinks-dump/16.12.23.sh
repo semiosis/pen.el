@@ -1,0 +1,6 @@
+cd /root/.pen/documents/agenda;  "elinks-dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "elinks-dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "elinks-dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "elinks-dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "elinks-dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "bash"
+cd /root/.pen/documents/agenda;  "elinks-dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "withopts"

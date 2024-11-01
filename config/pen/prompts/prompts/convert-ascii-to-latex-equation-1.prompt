@@ -1,0 +1,32 @@
+task: "Convert ascii to latex equation"
+doc: "Given some ascii text, convert to a latex equation"
+tags: math
+notes:
+- generate latex math mode from ascii representation
+prompt-version: 1
+prompt: |+
+  How to write latex math equations:
+  P(W) = P(w_1, w_2,...,w_N)
+  <delim>
+  Equation: sqrt(x^2 + 1)
+  Latex: \sqrt{x^2+1}
+  <delim>
+  Equation: quadratic formula
+  Latex: x = \frac{-b \pm \sqrt{b^2-4 ac}}{2 a}
+  <delim>
+  Equation: <equation>
+  Latex: 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "equation"
+examples:
+- "quadratic formula"
+filter: on
+completion: off
+insertion: off

@@ -1,0 +1,8 @@
+cd /volumes/home/shane/notes/ws/bible-studies;  "I" "Corinthians" "6:9" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "I" "John" "4:6" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "I" "John" "4:15" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "I" "John" "4:5-6" "#" "<==" "bash"
+cd /;  "I" "John" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "I" "John" "2:4-6" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "I" "John" "2:4-6" "#" "<==" "withopts"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "I" "John" "2:4-6" "#" "<==" "withopts"

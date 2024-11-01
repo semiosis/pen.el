@@ -1,0 +1,72 @@
+title: Compliment generation based on a quality
+tags: fun prose social-media
+aliases:
+- compliment
+doc: Generate a nice compliment based on a quality
+prompt-version: 7
+prompt: |
+  The following are nice compliments:
+  <delim>
+  TOPIC: intelligence
+  - You're a smart cookie.
+  <delim>
+  TOPIC: argumentative
+  - Your perspective is refreshing.
+  <delim>
+  TOPIC: memory
+  - Your ability to recall random factoids at just the right times is impressive.
+  <delim>
+  TOPIC: integrity
+  - When you say, "I meant to do that," I totally believe you.
+  <delim>
+  TOPIC: interesting
+  - You have the best ideas.
+  <delim>
+  TOPIC: self-improvement
+  - You're always learning new things and trying to better yourself. That's awesome.
+  <delim>
+  TOPIC: presentation
+  - If someone based an Internet meme on you, it would have impeccable grammar.
+  <delim>
+  TOPIC: toughness and endurance
+  - You could survive a zombie apocalypse.
+  <delim>
+  TOPIC: perseverance
+  - When you make a mistake, you fix it.
+  <delim>
+  TOPIC: inventiveness
+  - You're great at figuring stuff out.
+  <delim>
+  TOPIC: creativity
+  - Your creative potential seems limitless.
+  <delim>
+  TOPIC: endurance
+  - Everyone gets knocked down sometimes; only people like you get back up again and keep going.
+  <delim>
+  TOPIC: <1>
+  -
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+best-of: 2
+stop-sequences:
+- "<delim>"
+- "\n"
+cache: true
+vars:
+- topic
+examples:
+- fitness and beauty
+preprocessors:
+- tr '[:lower:]' '[:upper:]'
+prefer-external: true
+external-related:
+- "https://www.verywellmind.com/positivity-boosting-compliments-1717559"
+n-test-runs: 10
+# This will generate 20 up lines
+n-collate: 2
+n-completions: 15
+insertion: on
+postprocessor: sed 's/^\s*//' | awk 1 | sed '/^[^a-zA-Z]/d'
+collation-separator: ''

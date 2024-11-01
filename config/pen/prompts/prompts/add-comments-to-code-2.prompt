@@ -1,0 +1,26 @@
+task: "Add comments to code"
+doc: "Given some code and the language, add comments"
+tags: code
+prompt-version: 4
+engine: OpenAI Codex
+include: Transform code/3
+prompt: |+
+    <original-program>
+
+    # The exact same program but with comments and explanations for each line
+
+    cat edited_program <<EOD
+xlr-n-generate: 2
+temperature: 0.2
+cache: on
+vars:
+- code
+- "language"
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+examples:
+- "print(\"Hello world with empathy\")"
+- "Python"
+n-collate: 1
+n-completions: 2

@@ -1,0 +1,9 @@
+:
+    title: asktutor-meta
+    prompt-version: 6
+EOD
+
+cat draft.prompt-description <<EOD
+title: asktutor-meta
+aliases:
+- tutor-meta

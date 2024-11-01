@@ -1,0 +1,1 @@
+type f | grep -v '\.git'

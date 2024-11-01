@@ -1,0 +1,4 @@
+;; given the name of a number, add 5 to it. return a string
+;; arguments: (x)
+(message (eval '(add-five "twelve")))
+--> 

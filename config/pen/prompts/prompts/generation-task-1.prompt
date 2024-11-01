@@ -1,0 +1,34 @@
+title: "generation task"
+tags: task fundamental
+prompt-version: 1
+prompt: |+
+    <1>
+
+engine: OpenAI Davinci
+#lm-command: "openai-complete.sh"
+#model: "davinci-instruct-beta"
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1.0
+best-of: 1
+no-trim-start: off
+no-trim-end: off
+# For davinci-instruct-beta, it appears to begin with \n\n, so can't use that
+# as stop sequence.
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "generation task"
+examples:
+- "Write a 500 words blog post about the iPhone 12."
+n-test-runs: 5
+prettifier: pen-pretty-paragraph
+n-collate: 1
+n-completions: 3
+filter: no
+completion: off
+insertion: on
+doc: "Generate some text as described by the user as a task"
+external-related:
+- "https://gptprompts.org/p/blog-post-generation"

@@ -1,0 +1,12 @@
+cd harrys adventures
+» ls
+ 'harrys adventures'   harry.txt   harrys diary.txt  harrys secrets.txt
+» cd harrys secrets
+» ls
+ harrys secrets.txt
+» cd ../harrys diary
+» ls
+ harrys diary.txt
+» cd ../harrys adventures
+» ls
+ 'harrys adventures'   harry.txt   harrys diary.txt  harrys secrets.txt

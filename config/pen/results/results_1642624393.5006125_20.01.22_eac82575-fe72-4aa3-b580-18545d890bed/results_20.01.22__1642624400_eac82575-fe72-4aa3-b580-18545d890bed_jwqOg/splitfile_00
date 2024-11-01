@@ -1,0 +1,7 @@
+
+  (map #(shell-command %) args))
+
+(defn fuse-pensieve
+  "Fuse the pensieve"
+  []
+  (cmd ["fusermount", "-u", "~

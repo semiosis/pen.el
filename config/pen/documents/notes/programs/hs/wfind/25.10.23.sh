@@ -1,0 +1,5 @@
+cd /root/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/jstate-get" "#" "<==" "wfind"
+cd /root/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/jstate-set" "#" "<==" "wfind"
+cd /root/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"
+cd /root/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"
+cd /root/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"

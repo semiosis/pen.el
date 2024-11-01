@@ -1,0 +1,42 @@
+.
+--
+-- The CSV is a list of rows, where each row is a list of
+-- cells.
+--
+-- The program then outputs the list of rows to stdout.
+import Data.List (intersperse)
+import Data.Char (isSpace)
+import Data.Maybe (fromJust)
+import qualified Data.Map as Map
+import qualified Data.Set as Set
+import qualified Data.Vector as Vector
+
+
+data Cell = Cell String String deriving (Show, Eq, Ord)
+
+
+type Row = Vector Cell
+
+
+type Rows = Vector Row
+
+
+type Table = Map String Rows
+
+
+readLine :: String -> Maybe Row
+
+
+readLine input = case input of
+
+  "" -> Nothing
+
+  line -> Just $ map readCell $ words line
+
+  where readCell :: String -> Maybe Cell
+
+    readCell input = case input of
+
+      "" -> Nothing
+
+      cell -> Just $ Cell $

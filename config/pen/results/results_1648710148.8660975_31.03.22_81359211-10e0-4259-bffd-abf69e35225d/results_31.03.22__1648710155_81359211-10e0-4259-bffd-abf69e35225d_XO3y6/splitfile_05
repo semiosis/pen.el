@@ -1,0 +1,12 @@
+runTestTT addInt
+runTestTT divInt
+runTestTT divInt2
+runTestTT divInt3
+runTestTT divInt4
+runTestTT divInt5
+runTestTT divInt6
+runTestTT divInt7
+runTestTT divInt8
+runTestTT divInt9
+runTestTT divInt10
+runTestTT div

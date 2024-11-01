@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Titus" "1-3" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Titus" "1:15" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Titus" "1-3" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Titus" "1:10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Titus" "1:13-14" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Titus" "1:7-9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Titus" "1-3" "#" "<==" "bash"

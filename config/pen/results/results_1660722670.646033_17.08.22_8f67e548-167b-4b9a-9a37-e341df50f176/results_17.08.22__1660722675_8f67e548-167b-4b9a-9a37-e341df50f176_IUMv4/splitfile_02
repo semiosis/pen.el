@@ -1,0 +1,1 @@
+find . -name "*.el" | grep -v pen- | grep -v asoc

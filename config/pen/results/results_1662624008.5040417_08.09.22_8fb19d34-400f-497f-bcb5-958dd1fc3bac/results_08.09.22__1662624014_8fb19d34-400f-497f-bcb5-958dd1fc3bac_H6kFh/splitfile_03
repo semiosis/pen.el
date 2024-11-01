@@ -1,0 +1,10 @@
+"MailBox" is a class that provides a simple interface for
+interacting with an IMAP server.
+
+>>> mb = MailBox('imap.example.com')
+>>> mb.login('user@example.com', 'password')
+>>> mb.folder.set('INBOX')
+>>> mb.folder.current
+'INBOX'
+>>> mb.search()
+[<MailMessages count=0>, <MailMessages count=0>, ...

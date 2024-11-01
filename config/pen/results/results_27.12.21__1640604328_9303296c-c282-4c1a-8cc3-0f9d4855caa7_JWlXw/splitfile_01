@@ -1,0 +1,6 @@
+"Neural Radiance Fields" (NeRF) are a family of neural network models for 3D rendering. 
+
+NeRFs are a natural extension of the "Neural Picture" (NP) model, which is a family of neural network models
+for 2D image synthesis. In the NP model, each pixel in the output image is a function of a small number of
+input pixels. In the NeRF model, each pixel in the output image is a function of a small number of input
+p

@@ -1,0 +1,8 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt~  harry.txt.bak
+» cat harry.txt
+Harry Potter and the Sorcerer's Stone
+
+...the boy who lived
+

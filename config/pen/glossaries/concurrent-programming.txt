@@ -1,0 +1,41 @@
+https://slikts.github.io/concurrency-glossary/
+
+actor model
+    Removes the need for lock-based
+    synchronization
+
+    A mathematical model of concurrent
+    computation that treats actor as the
+    universal primitive of concurrent
+    computation.
+    
+    In response to a message it receives, an
+    actor can: make local decisions, create
+    more actors, send more messages, and
+    determine how to respond to the next
+    message received.
+    
+    Actors may modify their own private state,
+    but can only affect each other indirectly
+    through messaging (removing the need for
+    lock-based synchronization).
+    
+    The actor model originated in 1973.
+    
+    It has been used both as a framework for a
+    theoretical understanding of computation
+    and as the theoretical basis for several
+    practical implementations of concurrent
+    systems.
+    
+    The relationship of the model to other
+    work is discussed in actor model and
+    process calculi.
+
+deadlock
+stalemate
+standstill
+impasse
+    A situation, typically one involving
+    opposing parties, in which no progress can
+    be made. 

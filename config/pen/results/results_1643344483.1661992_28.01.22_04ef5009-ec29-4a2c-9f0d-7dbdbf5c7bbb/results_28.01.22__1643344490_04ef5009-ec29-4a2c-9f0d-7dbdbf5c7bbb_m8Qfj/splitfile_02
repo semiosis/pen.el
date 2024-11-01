@@ -1,0 +1,10 @@
+"async/go-loop" is a macro that takes a function that takes a channel and a
+transducer. It will run the transducer on the channel and call the function
+with the channel and the transducer's result. The function will be called
+repeatedly until the transducer's result is nil.
+
+Example:
+(defonce ch (async/chan))
+(async/go-loop []
+  (async/take! ch 10)
+

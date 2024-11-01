@@ -1,0 +1,17 @@
+
+  (string (+ ?a (- char 1))))
+
+(defun pen-modeline-buffer-name ()
+  (let ((bn (buffer-name)))
+    (cond ((s-matches? "^\\*scratch\\*" bn)
+           "📝")
+          ((s-matches? "^\\*Messages\\*" bn)
+           "💬")
+          ((s-matches? "^\\*Help\\*" bn)
+           "❓")
+          ((s-matches? "^\\*info\\*" bn)
+           "ℹ️")
+          ((s-matches? "^\\*Backtrace\\*" bn)
+           "🔙")
+          ((s-matches? "^\\*Compile-Log\\*" bn)
+           "📜

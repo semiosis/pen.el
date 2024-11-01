@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Batch
+# contributor: Toptal & contributors
+# key: batch
+# --
+
+### Batch ###
+
+# BatchFiles
+*.bat
+*.cmd
+*.btm

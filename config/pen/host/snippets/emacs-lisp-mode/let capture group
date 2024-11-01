@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: let capture group
+# group: re
+# key: cg
+# --
+(let ((match1 (s-replace-regexp "^(\\\\(.*\\\\))\$" "\\\\1" s))))

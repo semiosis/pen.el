@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "4:1-3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "4:1-4" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "17:20-21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "12:43–45" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "12:43-45" "#" "<==" "zsh"

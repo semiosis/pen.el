@@ -1,0 +1,1 @@
+ aws lambda list-functions --query 'Functions[?TracingConfig.Mode==`Active`].FunctionName' --output text | xargs -L1 aws lambda get-function-configuration --function-name | grep -A3 -B1 Unhandled

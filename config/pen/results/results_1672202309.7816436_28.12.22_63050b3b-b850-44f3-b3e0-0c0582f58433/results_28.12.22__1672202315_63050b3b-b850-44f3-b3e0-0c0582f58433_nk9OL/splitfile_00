@@ -1,0 +1,10 @@
+! CopyWord()
+let @w = getline('.')
+endfu
+
+" Copies a line into s register
+fun! CopyLine()
+let @l = getline('.')
+endfu
+
+" Copy

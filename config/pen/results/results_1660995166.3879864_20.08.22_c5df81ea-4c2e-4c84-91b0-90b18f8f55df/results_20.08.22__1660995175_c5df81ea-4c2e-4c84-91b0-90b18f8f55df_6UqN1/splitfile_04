@@ -1,0 +1,18 @@
+
+  (string (+ ?a (- char 1))))
+
+(defun pen-modeline-buffer-id ()
+  "Return the buffer name, possibly shortened to keep it short."
+  (let* ((name (format-mode-line "%b"))
+         (shortened-name (if (> (length name) 20)
+                             (concat (substring name 0 10) "...")
+                           name)))
+    (format "%s %s"
+            (number-to-letter (length name))
+            shortened-name)))
+
+(defun pen-modeline-modified ()
+  "Return a string describing the modified status of the buffer."
+  (cond ((not (buffer-modified-p)) "")
+        ((and buffer-file-name (= 0 (buffer-size))) "") ;empty file is not modified.
+        ((and buffer-file-name (= 0 (% (

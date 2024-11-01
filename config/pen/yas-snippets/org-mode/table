@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: table
+# group: mine
+# key: ta
+# --
+#+CAPTION: Constants
+#+NAME: tab_constants
+| Constant                  | Value |
+|---------------------------+-------|
+| A                         |     1 |
+| B                         |    90 |
+| C                         |    90 |
+| D                         |    12 |
+| *Total*                   |  240. |
+#+TBLFM: @6$2=@2 * @5 / ((@3 + @4) / 60 / 60)

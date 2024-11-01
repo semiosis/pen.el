@@ -1,0 +1,27 @@
+title: rephrase a phrase
+tags: nlp-task prose
+prompt: |
+  Rewrite each of the following phrases:
+
+  <delim>
+  Here are some different ways of saying "criticize unfairly":
+  - denigrate
+  - disparage
+  - belittle the value or importance of
+  <delim>
+  Here are some different ways of saying <q:phrase>:
+  -
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 100
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- phrase
+examples:
+- house rules
+postprocessor: sed 's/- //' | uniqnosort
+split-patterns:
+- "\n"
+filter: true

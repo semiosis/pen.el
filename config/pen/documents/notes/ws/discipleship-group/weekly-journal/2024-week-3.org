@@ -1,0 +1,159 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 3
+
+* D-Group weekly session notes
+Started working on it: <2024-01-17 Wed>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s&ab_channel=CHRISTIANPiano][Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene 🍁CHRISTIAN piano]]
+
+| Scripture Memory | NT260 Passage | Foundations260 Readings |
+|------------------+---------------+-------------------------|
+| [[sh:bible-read-passage nasb Matthew 5:5-6 ][Matthew 5:5-6]]    | [[sh:bible-study-passage nasb Luke 11-15 ][Luke 11-15]]    | [[sh:bible-study-passage nasb Genesis 18-26 ][Genesis 18-26]]           |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Prayer
+Dear Heavenly Father, Almighty Jehovah God,
+thank You for giving us the opportunity to study the words which
+You have spoken through Your prophets.
+Thank You for giving us the opportunity to come focus on the
+Truth which is Your Word which has been revealed in Christ Jesus our Lord.
+Thank You for giving us the opportunity to be a light to others.
+In Jesus Christ's name, I pray,
+AMEN!!
+
+** Readings bullet points
+TODO Also, consider getting chapter headings from the chapter headings list.
+
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:5-6
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:5
+‾‾‾‾‾‾‾‾‾‾‾
+“Blessed are the gentle, for they shall inherit
+the earth.
+
+Matthew 5:6
+‾‾‾‾‾‾‾‾‾‾‾
+“Blessed are those who hunger and thirst for
+righteousness, for they shall be satisfied.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+*** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Genesis 18:27 ][Genesis 18:27]]
+**** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Genesis 18:23-27
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Genesis 18:23-27
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Abraham came near and said, “Will You indeed
+sweep away the righteous with the wicked?
+
+Suppose there are fifty righteous within the
+city; will You indeed sweep it away and not
+spare the place for the sake of the fifty
+righteous who are in it?
+
+Far be it from You to do such a thing, to slay
+the righteous with the wicked, so that the
+righteous and the wicked are treated alike.
+
+Far be it from You! Shall not the Judge of all
+the earth deal justly?” So the LORD said, “If
+I find in Sodom fifty righteous within the
+city, then I will spare the whole place on
+their account.” And Abraham replied, “Now
+behold, I have ventured to speak to the Lord,
+although I am but dust and ashes.
+
+(NASB)
+#+end_src
+
+**** E (explain)
+Abraham was reasoning about what the LORD would do,
+and he legitimately asked God a question, and then found
+that God responded to him, and Abraham humbled himself.
+
+**** A (apply)
+Firstly, I am allowed to reason about what God may do,
+yet, I must have the humility which Abraham had before God, the LORD.
+
+**** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+I am but dust and ashes.
+Please, God, have mercy on me because I have ventured to
+speak to You, although I am but dust and ashes, though
+You have given to me a new spirit.
+Yet, have mercy on me, LORD, and forgive me for speaking
+presumtuously.
+Please deliver me from the evil spirits which harass me.
+Please deliver me so that I no longer pray frustratingly to
+You, Father God.
+In Jesus Christ's name I ask,
+AMEN!!
+
+*** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Genesis 18:15 ][Genesis 18:15]]
+**** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Genesis 18:15
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Genesis 18:15
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Sarah denied it however, saying, “I did not
+laugh”; for she was afraid.
+
+And He said, “No, but you did laugh.”
+
+(NASB)
+#+end_src
+
+**** E (explain)
+Sarah was afraid and lied, but the LORD asserts the truth and reality of what happened.
+
+**** A (apply)
+- Being afraid isn't really an excuse to lie.
+- 
+
+I believe that Amelia Dowle has felt confused and perhaps her lies started to snowball.
+If that is because she was afraid, well, the LORD is still just to rebuke that.
+Now, the same principle applies to me, and the LORD is just to correct any error.
+AMEN.
+
+**** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+

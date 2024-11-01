@@ -1,0 +1,50 @@
+geospatial filter
+    Search with spatial trees.
+
+    Part of the query syntax of ES and Kibana.
+
+    https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-queries.html
+
+query parser
+    The parser for the query string.
+
+query
+    syntax:
+        A series of clauses
+
+    A clause may be prefixed by:
+    -   a plus (+) or
+            clause required
+        a minus (-) sign
+            clause prohibited
+
+    -   "term:"
+    
+        the field to be searched.
+
+        Can use multiple.
+
+    A clause may be either:
+    -   a term, indicating all the documents
+        that contain this term; or
+
+    -   "(nested query)"
+    
+            enclosed in parentheses.
+            
+        Optional +/- prefix
+
+    BNF
+
+       Query  ::= ( Clause )*
+       Clause ::= ["+", "-"] [<TERM> ":"] ( <TERM> | "(" Query ")" )
+
+MGET
+    Use the get command to download individual
+    files.
+    
+    Use the Multiple Get ( mget ) command with
+    the wildcard character ( * ) to download
+    all available files in a mailslot. 
+
+    Related "GET".

@@ -1,0 +1,25 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: interpreter
+language: haskell
+subprompts:
+- kickstarter: |+
+    GHCi, version 8.10.4: https://www.haskell.org/ghc/  :? for help
+    Loaded GHCi configuration from /home/shane/.ghci
+    Prelude> :set prompt "λ> "
+    λ> 
+prompt: |+
+    <history><expression>
+inject-gen-start: "\n"
+stop-sequences:
+- "λ>"
+postpostprocessor: pen-str remove-trailing-whitespace | { awk 1; echo -n "λ> "; }
+user-prompt: "^λ> "
+# user-prompt: "^[A-Z][A-Za-z ]*> gg"
+vars:
+- history
+- expression
+var-defaults:
+- kickstarter
+examples:
+- "5 + 5"

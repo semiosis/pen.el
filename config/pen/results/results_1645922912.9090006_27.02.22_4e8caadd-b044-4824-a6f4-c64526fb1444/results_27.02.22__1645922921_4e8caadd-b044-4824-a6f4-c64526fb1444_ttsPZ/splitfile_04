@@ -1,0 +1,7 @@
+John Dee \n"))
+  prompt)))
+
+(defun pf-generate-wiki-blurb/1 (name)
+  (interactive "sName: ")
+  (let* ((topic (read-string "Topic: "))
+         (prompt (format "John Dee - Wikipedia\n<(identity name)>\n\nen

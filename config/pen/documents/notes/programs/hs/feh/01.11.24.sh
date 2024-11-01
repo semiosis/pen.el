@@ -1,0 +1,7 @@
+cd /root/.pen;  "feh" "melee-guy-stars.jpg" "#" "<==" "zsh"
+cd /root/.pen;  "feh" "melee-guy-stars.jpg" "#" "<==" "zsh"
+cd /root/.pen/documents;  "feh" "-B" "black" "/root/.pen/documents/rays-maze-fearless-frank.png" "#" "<==" "run.sh"
+cd /root/.pen/documents;  "feh" "-B" "black" "/root/.pen/documents/rays-maze-techtron-drawer.png" "#" "<==" "run.sh"
+cd /root/.pen/documents;  "feh" "-B" "black" "/root/.pen/documents/rays-maze-techtrons.png" "#" "<==" "run.sh"
+cd /root/.pen/documents;  "feh" "-B" "black" "/root/.pen/documents/rays-maze-techtrons.png" "#" "<==" "run.sh"
+cd /root/.pen/documents;  "feh" "-B" "black" "/root/.pen/documents/rays-maze-entrance.png" "#" "<==" "run.sh"

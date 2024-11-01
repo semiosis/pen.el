@@ -1,0 +1,6 @@
+cd /;  "Revelation" "21:27" "#" "<==" "zsh"
+cd /;  "Revelation" "21:26-27" "#" "<==" "zsh"
+cd /;  "Revelation" "21:25-27" "#" "<==" "zsh"
+cd /;  "Revelation" "21:24-27" "#" "<==" "zsh"
+cd /;  "Revelation" "21:22-27" "#" "<==" "zsh"
+cd /;  "Revelation" "21:22-27" "#" "<==" "zsh"

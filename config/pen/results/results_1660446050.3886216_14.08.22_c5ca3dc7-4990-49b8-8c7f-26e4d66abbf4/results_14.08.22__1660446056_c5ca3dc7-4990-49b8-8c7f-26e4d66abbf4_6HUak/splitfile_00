@@ -1,0 +1,9 @@
+The above code is a simple program that uses the getResults function to get the results of a search for the word "Weather" and then prints the results.
+getResults :: String -> IO [String]
+getResults query = do
+  let url = "http://duckduckgo.com/html/?q=" ++ query
+      response <- get url
+      return $ parseResults response
+
+The getResults function takes a query and returns a list of results.
+It does this

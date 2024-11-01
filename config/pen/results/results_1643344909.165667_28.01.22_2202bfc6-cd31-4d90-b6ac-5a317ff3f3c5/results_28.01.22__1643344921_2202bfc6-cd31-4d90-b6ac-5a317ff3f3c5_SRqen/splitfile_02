@@ -1,0 +1,7 @@
+"async/alt!"
+:desc "Alternates between two channels"
+:type (fn [alt-chan chan-1 chan-2]))
+
+; Use a transducer to append a unique id to each message
+(defonce main-chan (async/chan 1 
+

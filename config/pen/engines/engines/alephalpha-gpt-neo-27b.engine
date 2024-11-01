@@ -1,0 +1,27 @@
+engine-title: AlephAlpha gpt-neo-27b
+include: AlephAlpha
+model: EleutherAI/gpt-neo-2.7B
+foundation: true
+engine-delimiter: "\"\"\""
+# For the API
+default-temperature: 0.0
+# modes:
+# - search
+# - classification
+# 'layers' is like 'provides'. see glossary
+layers:
+- foundation
+- nl
+- code
+# Pick this engine when you need 'just' NL ∩ Code
+# e.g. may also put finetuning labels at the end
+# - python
+engine-min-tokens: 0
+engine-whitespace-support: yes
+engine-max-tokens: 2048
+libre-dataset: no
+libre-model: no
+local: no
+upstream-engine: OpenAI Davinci
+fallbacks:
+- OpenAI Davinci

@@ -1,0 +1,1 @@
+- haskel guru: we have a function travelToWork that takes a String and returns an IO () action.

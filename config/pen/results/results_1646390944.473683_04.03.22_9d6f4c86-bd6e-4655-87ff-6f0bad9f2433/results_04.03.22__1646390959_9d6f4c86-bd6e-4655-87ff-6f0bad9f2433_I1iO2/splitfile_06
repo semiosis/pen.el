@@ -1,0 +1,25 @@
+
+EOD
+
+cat draft.text | tr 'A-Z' 'a-z' | tr -d '[:punct:]' | tr ' ' '\n' | sort | uniq -c | sort -nr > draft.words
+
+cat draft.words <<EOD
+the     966
+of      672
+a       574
+and     564
+to      561
+in      547
+that    527
+is      496
+for     456
+it      451
+as      449
+on      437
+with    432
+be      428
+he      423
+was     420
+at      416
+by      413
+which   410

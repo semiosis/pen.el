@@ -1,0 +1,40 @@
+title: explain the syntax of code
+tags: code explain
+issues: 
+design-patterns: 
+doc: Explain syntax of code
+prompt-version: 2
+prompt: |
+    Code excerpt and explanation of symbols and syntax used.
+    <delim>
+    Excerpt:
+    <delim>
+    <code>
+    <delim>
+    Explanation of syntax sugar:
+    <delim>
+    <:pp>The above code 
+issues: 
+engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 100
+# max-generated-tokens: "prompt-length"
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- code
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- |+
+    (defn member [s col]
+      (some #(= s %) col))
+prefer-external: true
+n-test-runs: 5
+related-prompts:
+- annotate-with-commentary.prompt
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify

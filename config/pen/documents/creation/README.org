@@ -1,0 +1,10 @@
+* Creation
+This is a free and open-source (FOSS) curation of creation archaea.
+
+| License | Discord server invite         |
+|---------+-------------------------------|
+| =GPL-3= | https://discord.gg/JwKGbAdNHR |
+
+See the =creation= repo for detailed documentation.
+
+http://github.com/semiosis/creation

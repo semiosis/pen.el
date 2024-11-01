@@ -1,0 +1,88 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 31
+
+* D-Group weekly session notes
+Started working on it: <2024-07-29 Mon>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=0v-JiclgWKE][youtube.com: Here I Am to Worship - 3 Hour Instrumental Soaking Worship for Prayer & Healing]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage  |
+|---------------------+---------------+------------------------+---------------------+----------------|
+| [[sh:bible-read-passage nasb Matthew 6:16-18 ][Matthew 6:16-18]]     | [[sh:bible-study-passage nasb Hebrews 4-8 ][Hebrews 4-8]]   |                        | [[sh:bible-read-passage nasb Psalm 145:8-9 ][Psalm 145:8-9]]       | [[sh:bible-study-passage nasb II Samuel 6-12 ][II Samuel 6-12]] |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Psalm 144-148 ][Psalm 144-148]]  |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 6:16-18
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 6:16
+‾‾‾‾‾‾‾‾‾‾‾‾
+“Whenever you fast, do not put on a gloomy face
+as the hypocrites do, for they neglect their
+appearance so that they will be noticed by men
+when they are fasting. Truly I say to you, they
+have their reward in full.
+
+Matthew 6:17
+‾‾‾‾‾‾‾‾‾‾‾‾
+But you, when you fast, anoint your head and wash
+your face
+
+Matthew 6:18
+‾‾‾‾‾‾‾‾‾‾‾‾
+so that your fasting will not be noticed by men,
+but by your Father who is in secret; and your
+Father who sees what is done in secret will
+reward you.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Psalm 145:8-9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Psalms 145:8
+‾‾‾‾‾‾‾‾‾‾‾‾
+The LORD is gracious and merciful; Slow to anger
+and great in lovingkindness.
+
+Psalms 145:9
+‾‾‾‾‾‾‾‾‾‾‾‾
+The LORD is good to all, And His mercies are over
+all His works.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

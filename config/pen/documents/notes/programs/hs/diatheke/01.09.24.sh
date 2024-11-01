@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Acts 15:20" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Acts 15:19-20" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Hebrews 8:10" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1033" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-s" "phrase" "-o" "w" "-f" "plain" "-k" "cursed is everyone" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Galatians 3:13;" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1094" "#" "<==" "emacs"

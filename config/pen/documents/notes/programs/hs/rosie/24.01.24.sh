@@ -1,0 +1,5 @@
+cd /;  "rosie" "grep" "-o" "subs" "net.any" "#" "<==" "grepfilter"
+cd /;  "rosie" "grep" "-o" "subs" "net.any" "#" "<==" "grepfilter"
+cd /;  "rosie" "grep" "-o" "subs" "net.any" "#" "<==" "grepfilter"
+cd /root/.pen/documents/notes;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.pen/documents/notes;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"

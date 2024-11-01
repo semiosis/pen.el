@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "James" "1:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "James" "3-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "James" "3-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "James" "3-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "James" "3-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "James" "3-5" "#" "<==" "bash"

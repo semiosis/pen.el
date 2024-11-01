@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: all devnull
+# group: fd
+# key: adn
+# --
+&>/dev/null

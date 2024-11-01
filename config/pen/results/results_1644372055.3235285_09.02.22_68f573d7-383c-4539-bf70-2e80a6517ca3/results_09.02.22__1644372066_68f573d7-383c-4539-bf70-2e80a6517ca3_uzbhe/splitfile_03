@@ -1,0 +1,8 @@
+- 1. Niels Bohr (1885-1962)
+- 2. Isaac Newton (1642-1727)
+- 3. Marie Curie (1867-1934)
+- 4. Albert Einstein (1879-1955)
+"""
+
+    assert(process_stream(StringIO(text)) == [
+            ("

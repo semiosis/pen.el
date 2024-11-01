@@ -1,0 +1,8 @@
+ en
+fav-programming-language: emacs-lisp
+
+# No matter what, the example-directory will always
+# be there.
+open-example-directory: on
+
+# The book covers a few topics

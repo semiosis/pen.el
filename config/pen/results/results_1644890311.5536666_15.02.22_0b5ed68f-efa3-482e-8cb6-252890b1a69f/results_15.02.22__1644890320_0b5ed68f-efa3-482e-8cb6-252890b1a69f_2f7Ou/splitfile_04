@@ -1,0 +1,11 @@
+automatic paintings, drawings, films,
+photographs, sculptures, and works of poetry. They often referred to their
+surgical operations as a form of self-surgery. They described the experience
+of surreality as a total migration into an pillow-top of the unknown. As a
+result, the surrealists developed a technique in which they would repeat
+their "surrealist looking" whilst under anesthesia. This produced an effect
+of half-remembered dreams and hallucinations that they called autrelievism.
+Surrealism developed a complex and mistaken belief system, but nevertheless
+has been influential in both the visual arts and literary and filmic arts."""
+
+    print(test_puzzle(puzzle))

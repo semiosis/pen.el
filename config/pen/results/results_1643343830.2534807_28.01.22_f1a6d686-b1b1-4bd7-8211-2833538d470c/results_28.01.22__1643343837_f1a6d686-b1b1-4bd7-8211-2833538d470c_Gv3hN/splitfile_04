@@ -1,0 +1,6 @@
+"async/close!"
+  (fn [ch]
+    (async/close! ch)
+    {:status :ok}))
+
+

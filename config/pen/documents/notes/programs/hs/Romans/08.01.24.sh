@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Romans" "7" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "7:4" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Romans" "6:13" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "Romans" "8:29" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "4:4" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "4:4-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "3:23" "#" "<==" "bash"

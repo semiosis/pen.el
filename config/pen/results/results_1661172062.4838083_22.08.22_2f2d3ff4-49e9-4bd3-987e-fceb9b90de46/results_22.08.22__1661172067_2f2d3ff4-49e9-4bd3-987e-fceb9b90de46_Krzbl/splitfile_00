@@ -1,0 +1,7 @@
+
+fullLine <- getLine
+let upperLine = map toUpper fullLine
+putStrLn upperLine
+main2 = do 
+putStrLn "Enter another line of text for test 2:"
+sameLine <- get

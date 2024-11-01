@@ -1,0 +1,10 @@
+do
+  let cols = maximum (map length rows)
+  mapM_ (\row -> putStrLn $ intercalate "\t" (pad row cols)) rows
+
+pad :: [String] -> Int -> [String]
+pad row cols = let
+  n = minimum (length row)
+  pad' = replicate (cols - n) ""
+  in if n < cols then (row ++ pad') else row
+EOD

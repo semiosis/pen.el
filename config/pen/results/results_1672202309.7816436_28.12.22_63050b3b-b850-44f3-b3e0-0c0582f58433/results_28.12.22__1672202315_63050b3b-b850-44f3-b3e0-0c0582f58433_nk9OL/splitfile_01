@@ -1,0 +1,7 @@
+! WordAtCursor()
+" <C-r>=
+" <cword>
+" <C-r>=
+" <cword>
+function! Align()
+" <C-r>=

@@ -1,0 +1,6 @@
+
+stack exec DoLetExample3
+stack exec DoLetExample4
+stack exec DoLetExample5
+
+The last example seems to be broken, but that's because "Do" is an Infix operator, which isn't implemented.

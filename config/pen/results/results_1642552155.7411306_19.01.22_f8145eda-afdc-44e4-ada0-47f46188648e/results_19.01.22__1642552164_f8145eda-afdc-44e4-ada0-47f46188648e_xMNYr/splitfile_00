@@ -1,0 +1,13 @@
+The above code is equivalent to the following:
+
+(fn [sym] `(quote ,(keyword sym)))
+
+The `(keyword sym)` part is evaluated to a keyword, which is then passed to the `quote` function.
+
+The `quote` function is a special form that returns a value that cannot be changed.
+
+So, the above code returns a quoted keyword, which is equivalent to:
+
+'keyword
+
+The `'` before the

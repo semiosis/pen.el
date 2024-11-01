@@ -1,0 +1,3 @@
+"inhibit-startup-message"
+"Set to nil to enable the startup message in the *scratch* buffer."
+

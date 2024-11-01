@@ -1,0 +1,6 @@
+
+    input <- lines <$> readFile "input/day02.txt"
+    let output = unlines . ("Part 2:" :) . map (show . (99,) . uncurry (*)) $
+            [ (noun, verb)
+            | noun <-
+    putStrLn output

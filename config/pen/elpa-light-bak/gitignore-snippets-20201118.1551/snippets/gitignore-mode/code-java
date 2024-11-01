@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Code-Java
+# contributor: Toptal & contributors
+# key: code-java
+# --
+
+### Code-Java ###
+
+# Language Support for Java(TM) by Red Hat extension for Visual Studio Code - https://marketplace.visualstudio.com/items?itemName=redhat.java
+
+.project
+.classpath
+factoryConfiguration.json

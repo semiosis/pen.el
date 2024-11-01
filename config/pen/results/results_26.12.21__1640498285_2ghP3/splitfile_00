@@ -1,0 +1,6 @@
+
+  (interactive)
+  (mapcar 'funcall pen-nuke-functions))
+
+;;; pen.el ends here
+

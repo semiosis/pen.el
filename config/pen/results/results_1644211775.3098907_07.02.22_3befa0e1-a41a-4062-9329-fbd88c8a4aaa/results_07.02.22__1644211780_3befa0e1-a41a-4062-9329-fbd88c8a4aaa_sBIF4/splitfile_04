@@ -1,0 +1,17 @@
+
+
+:- pce_begin.
+
+
+
+%% main :-
+
+new_line,
+
+numlist(100, X),
+
+repeat
+
+percent(X, 10), X is X - 10,
+
+write

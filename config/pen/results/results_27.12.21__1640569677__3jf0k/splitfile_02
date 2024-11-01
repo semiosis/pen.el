@@ -1,0 +1,11 @@
+"kern.log" contains kernel messages, including errors, and is generally
+the first file to be checked when troubleshooting a problem.
+
+The "kern.log" file can be found in the "/var/log" directory.
+
+The "kern.log" file is a standard Unix log file.
+
+The "kern.log" file is a plain text file.
+
+The "kern.log" file is a log file that is written to by the
+

@@ -1,0 +1,3 @@
+
+
+This creates a new type Natural from the existing type Integer . Integers and natural numbers have the same representation and type-wise behave in the same way. The type Natural is, however, distinct from Integer . Natural does not have any construct

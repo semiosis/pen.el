@@ -1,0 +1,373 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 6077
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Wed, 20 Apr 2022 22:22:37 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"626087ad-ddf7"
+expires: Thu, 15 Sep 2022 05:31:42 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: F1AE:3AF5:62D06:6D9CB:6322B666
+Accept-Ranges: bytes
+Date: Thu, 15 Sep 2022 05:21:43 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10323-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1663219304.719057,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 817cd36462acb791d6a13b6e04f8985d7210d87c
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>VisiData In 60 Seconds &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Getting Out of Trouble" href="../../basics/getting-out-of-trouble/" />
+    <link rel="prev" title="Installation" href="../installation/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VisiData In 60 Seconds</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-use-vd-to-open-a-data-file">Step 1: Use <code class="docutils literal notranslate"><span class="pre">vd</span></code> to open a data file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-test-drive-a-frequency-table">Step 2: Test-drive a frequency table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-explore-the-menu">Step 3: Explore the menu</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>VisiData In 60 Seconds</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="visidata-in-60-seconds">
+<h1>VisiData In 60 Seconds<a class="headerlink" href="#visidata-in-60-seconds" title="Permalink to this headline">¶</a></h1>
+<p>TL;DR? Here’s a three-step introduction to VisiData.</p>
+<div class="section" id="step-1-use-vd-to-open-a-data-file">
+<h2>Step 1: Use <code class="docutils literal notranslate"><span class="pre">vd</span></code> to open a data file<a class="headerlink" href="#step-1-use-vd-to-open-a-data-file" title="Permalink to this headline">¶</a></h2>
+<p>Download <a class="reference download internal" download="" href="../../_downloads/83e70cf67e909f3ac177575439e5f3c5/faa-wildlife-strikes.csv"><code class="xref download docutils literal notranslate"><span class="pre">faa-wildlife-strikes.csv</span></code></a>, a dataset of all aircraft-wildlife collisions <a class="reference external" href="https://wildlife.faa.gov/database.aspx">reported to the Federal Aviation Administration</a> between 2010 and mid-2016.</p>
+<p>From your terminal, move into the directory where you downloaded the dataset. Then run the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>vd faa-wildlife-strikes.csv
+</pre></div>
+</div>
+<p>If it worked, you should see something like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem  </span><span class="ansi4 ansi30 ansi48-110">H</span><span class="ansi30"></span><span class="ansi30 ansi48-110">elp     Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv37 inv_foreground"></span><span class="ansi1 ansi4 inv37 inv40"> OPERATOR           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> ATYPE        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> INCIDENT_DATE     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> STATE </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> AIRPORT            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> PHASE_OF_FLT</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">&gt;</span><span class="ansi40"> 
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> BUSINESS           </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">| PA-28        | 05/22/15 00:00:00 | FL    | VERO BEACH MUNICIP…| APPROACH     ║
+</span><span class="ansi1"></span><span class="ansi1 ansi37"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> BE-1900</span><span class="ansi40">      </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 06/18/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> AK    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> KENAI MUNICIPAL AR…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> PA-46 MALIBU </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 09/20/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> DAVID WAYNE HOOKS …</span><span class="ansi38-246 ansi40">|</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> B-717-200    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 11/07/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> BE-90 KING   </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 12/17/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> POMPANO BEACH AIRP…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> B-757</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 07/17/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> VI    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> HENRY E ROHLSEN AR…</span><span class="ansi38-246 ansi40">|</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> B-717-200    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 08/02/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> SAN ANTONIO INTL   </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> C-414</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 08/03/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> LONE STAR EXECUTIV…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ALLEGIANT AIR      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> MD-80</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 09/02/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> TAMPA INTL</span><span class="ansi40">         </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> TRANS STATES AIRLI…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> EMB-145</span><span class="ansi40">      </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 09/07/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> C-172</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 11/28/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> OPA-LOCKA EXECUTIV…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> GOVERNMENT         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> EC120</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 12/08/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> NORMAN Y. MINETA S…</span><span class="ansi38-246 ansi40">|</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AMERICAN AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> A-321</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> FORT LAUDERDALE/HO…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> EXPRESSJET AIRLINES</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CRJ100/200   </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> FORT SMITH REGIONA…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CLIMB</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> MESA AIRLINES      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CRJ900</span><span class="ansi40">       </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/08/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> BILL AND  HILLARY …</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> HELICOPTER   </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi40">       </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> UNKNOWN</span><span class="ansi40">            </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> En Route     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> A-320</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/07/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> METRO OAKLAND INTL </span><span class="ansi38-246 ansi40">|</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> A-320</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/08/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> UT    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> SALT LAKE CITY INTL</span><span class="ansi38-246 ansi40">|</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> LUFTHANSA          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> A-380</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/10/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> GEORGE BUSH INTERC…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CLIMB</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> C-172</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/08/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ORLANDO SANFORD IN…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> SPIRIT AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> A-319</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 05/10/15 00:00:00 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> IL    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CHICAGO O'HARE INT…</span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> CLIMB</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110">1› faa-wildlife-strikes| saul.pw/VisiData v2.8 | opening datasets/faa-wildli         73448 rows  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+</div>
+<div class="section" id="step-2-test-drive-a-frequency-table">
+<h2>Step 2: Test-drive a frequency table<a class="headerlink" href="#step-2-test-drive-a-frequency-table" title="Permalink to this headline">¶</a></h2>
+<p>One of VisiData’s strengths is how quickly it lets you summarize your data. Frequency tables are a great example. To create one, press <kbd class="kbd docutils literal notranslate">Shift+F</kbd>.</p>
+<p>If it worked, you should see something like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem  </span><span class="ansi4 ansi30 ansi48-110">H</span><span class="ansi30"></span><span class="ansi30 ansi48-110">elp     Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv40"> OPERATOR           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">↓count♯</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> percent%</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> histogram                                         ~</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> UNKNOWN            </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║ 23076 |   31.42 | ************************************************** ║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> SOUTHWEST AIRLINES </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  7752 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">   10.55 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ****************</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  5868 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    7.99 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ************</span><span class="ansi40">                                       </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AMERICAN AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  4337 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    5.90 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *********</span><span class="ansi40">                                          </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2817 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    3.84 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ******</span><span class="ansi40">                                             </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> FEDEX EXPRESS      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2709 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    3.69 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *****    </span><span class="ansi40">                                          </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UNITED AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2194 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.99 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ****</span><span class="ansi40">                                               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> US AIRWAYS         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1885 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.57 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ****</span><span class="ansi40">                                               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UPS AIRLINES       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1773 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.41 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ***</span><span class="ansi40">                                                </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> SKYWEST AIRLINES   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1769 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.41 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ***</span><span class="ansi40">                                                </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> JETBLUE AIRWAYS    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1740 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.37 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ***</span><span class="ansi40">                                                </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> EXPRESSJET AIRLINES</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1347 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.83 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> **   </span><span class="ansi40">                                              </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AMERICAN EAGLE AIR…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1041 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.42 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> **</span><span class="ansi40">                                                 </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ENVOY AIR          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   883 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.20 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *   </span><span class="ansi40">                                               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ALASKA AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   835 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.14 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> * </span><span class="ansi40">                                                 </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> REPUBLIC AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   804 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.09 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> MESA AIRLINES      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   693 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.94 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AIR WISCONSIN AIRL…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   623 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.85 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PSA AIRLINES       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   577 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.79 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PRIVATELY OWNED    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   516 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.70 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PHI INC            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   491 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.67 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *     </span><span class="ansi40">                                             </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110">2› faa-wildlife-strikes_OPERATOR_freq|</span><span class="ansi48-110">               </span><span class="ansi1 ansi48-110"></span><span class="ansi1 ansi30 ansi48-110">                 Shift+F          282 bins  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+</div>
+<div class="section" id="step-3-explore-the-menu">
+<h2>Step 3: Explore the menu<a class="headerlink" href="#step-3-explore-the-menu" title="Permalink to this headline">¶</a></h2>
+<p>Pressing <kbd class="kbd docutils literal notranslate">Control-h</kbd> will open VisiData’s menu system, where you can explore the most common commands:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem </span><span class="ansi38-223 ansi48-110"></span><span class="ansi38-223 ansi40"> </span><span class="ansi4 ansi38-223 ansi40">H</span><span class="ansi38-223"></span><span class="ansi38-223 ansi40">elp </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">    Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv40"> OPERATOR           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">↓count♯</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> percent%</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> histogram   </span><span class="ansi30"></span><span class="ansi30 ansi48-110">│</span><span class="ansi38-223 ansi48-110"></span><span class="ansi38-223 ansi40"> Quick reference     gCtrl+H   </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">│</span><span class="ansi1 ansi4 ansi30 ansi48-110"></span><span class="ansi1 ansi4 ansi37 ansi48-110"></span><span class="ansi1 ansi4 ansi37 ansi40">     ~</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> UNKNOWN            </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║ 23076 |   31.42 | ************</span><span class="ansi30"></span><span class="ansi30 ansi48-110">│ Command list      </span><span class="ansi1 ansi30 ansi48-110"></span><span class="ansi1 ansi38-233 ansi48-110">  zCtrl+H  </span><span class="ansi30"></span><span class="ansi30 ansi48-110">⎘│</span><span class="inv30 inv48-110"></span><span class="inv37 inv48-110"></span><span class="inv37 inv40">***** ║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> SOUTHWEST AIRLINES </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  7752 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">   10.55 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ************</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">│ Version           </span><span class="ansi1 ansi30 ansi48-110"></span><span class="ansi1 ansi38-233 ansi48-110">  Ctrl+V   </span><span class="ansi30"></span><span class="ansi30 ansi48-110"> │</span><span class="ansi48-110"></span><span class="ansi40">      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  5868 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    7.99 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ************</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">│ VisiData tutorial </span><span class="ansi1 ansi30 ansi48-110"></span><span class="ansi1 ansi38-233 ansi48-110">           </span><span class="ansi30"></span><span class="ansi30 ansi48-110"> │</span><span class="ansi48-110"></span><span class="ansi40">      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AMERICAN AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  4337 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    5.90 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *********</span><span class="ansi40">   </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">│ Sheet commands    </span><span class="ansi1 ansi30 ansi48-110"></span><span class="ansi1 ansi38-233 ansi48-110">  zCtrl+H  </span><span class="ansi30"></span><span class="ansi30 ansi48-110">⎘│</span><span class="ansi48-110"></span><span class="ansi40">      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2817 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    3.84 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ******</span><span class="ansi40">      </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">│ All commands      </span><span class="ansi1 ansi30 ansi48-110"></span><span class="ansi1 ansi38-233 ansi48-110">  gzCtrl+H </span><span class="ansi30"></span><span class="ansi30 ansi48-110">⎘│</span><span class="ansi48-110"></span><span class="ansi40">      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> FEDEX EXPRESS      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2709 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    3.69 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *****    </span><span class="ansi40">   </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">└───────────────────────────────┘</span><span class="ansi48-110"></span><span class="ansi40">      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UNITED AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2194 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.99 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ****</span><span class="ansi40">                                               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> US AIRWAYS         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1885 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.57 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ****</span><span class="ansi40">                                               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UPS AIRLINES       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1773 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.41 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ***</span><span class="ansi40">                                                </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> SKYWEST AIRLINES   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1769 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.41 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ***</span><span class="ansi40">                                                </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> JETBLUE AIRWAYS    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1740 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    2.37 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> ***</span><span class="ansi40">                                                </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> EXPRESSJET AIRLINES</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1347 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.83 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> **   </span><span class="ansi40">                                              </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AMERICAN EAGLE AIR…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1041 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.42 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> **</span><span class="ansi40">                                                 </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ENVOY AIR          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   883 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1.20 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *   </span><span class="ansi40">                                               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ALASKA AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   835 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">┌─┤</span><span class="ansi38-223 ansi48-110"></span><span class="ansi38-223 ansi40"> gCtrl+H </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">├────── sysopen-help ────────────────────────────────┐</span><span class="ansi48-110"></span><span class="ansi40">    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> REPUBLIC AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   804 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">│ Show the UNIX man page for VisiData</span><span class="ansi48-110">                            </span><span class="ansi30 ansi48-110">│</span><span class="ansi48-110"></span><span class="ansi40">    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> MESA AIRLINES      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   693 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-110">└────────────────────────────────────────────────────────────────┘</span><span class="ansi48-110"></span><span class="ansi40">    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AIR WISCONSIN AIRL…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   623 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.85 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PSA AIRLINES       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   577 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.79 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PRIVATELY OWNED    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   516 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.70 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PHI INC            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   491 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    0.67 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> *     </span><span class="ansi40">                                             </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">        
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110">2› faa-wildlife-strikes_OPERATOR_freq|</span><span class="ansi48-110">               </span><span class="ansi1 ansi48-110"></span><span class="ansi1 ansi30 ansi48-110">           Bksp   menu-help       282 bins  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+<p>You can navigate the menu either with your arrow keys or by pointing and clicking with your mouse. To run a command from the menu, press <kbd class="kbd docutils literal notranslate">Enter</kbd> or click a second time on the selected item.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../basics/getting-out-of-trouble/" class="btn btn-neutral float-right" title="Getting Out of Trouble" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../installation/" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

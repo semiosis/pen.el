@@ -1,0 +1,7 @@
+e:/volumes/home/shane/var/smulliga/source/git/mullikine/prayers
+
+/volumes/home/shane/var/smulliga/source/git/mullikine/prayers
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  cd "/volumes/home/shane/var/smulliga/source/git/mullikine/prayers"; nem todayfile
+#+END_SRC

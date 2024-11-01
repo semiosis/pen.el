@@ -1,0 +1,9 @@
+proof by induction
+    Proving something for..., and then proving
+    that if it works for some value x, it also
+    works for....
+
+indirect proof
+    Works by assuming that what you want to
+    prove is wrong, and seeing that that leads
+    to an impossibility.

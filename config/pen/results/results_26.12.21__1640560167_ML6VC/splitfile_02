@@ -1,0 +1,11 @@
+"buffer" is a built-in function.
+
+Documentation:
+
+Return the current buffer.
+See `current-buffer'.
+
+The buffer name is the buffer's name as a string.
+The buffer's `major-mode' is a symbol.
+
+See Info node `(elisp)Buffer Conventions'.

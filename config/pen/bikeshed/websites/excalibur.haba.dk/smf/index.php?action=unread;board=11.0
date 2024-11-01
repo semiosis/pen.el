@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Login" />
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum" />
+	<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/script.js?rc2"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1";
+		var smf_images_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images";
+		var smf_scripturl = "http://excalibur.haba.dk/smf/index.php";
+	// ]]></script>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/style.css?rc2" />
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/default/print.css?rc2" media="print" />
+	<link rel="help" href="http://excalibur.haba.dk/smf/index.php?action=help" target="_blank" />
+	<link rel="search" href="http://excalibur.haba.dk/smf/index.php?action=search" />
+	<link rel="contents" href="http://excalibur.haba.dk/smf/index.php" />
+	<link rel="alternate" type="application/rss+xml" title=" - RSS" href="http://excalibur.haba.dk/smf/index.php?type=rss;action=.xml" />
+	<link rel="index" href="http://excalibur.haba.dk/smf/index.php?board=11.0" />
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+</head>
+<body>
+	<div id="headerarea" style="padding: 12px 30px 4px 30px;">
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="position: relative;">
+			<tr>
+				<td colspan="2" valign="bottom" style="padding: 5px; white-space: nowrap;">
+					<span style="font-family: Georgia, sans-serif; font-size: xx-large;"></span>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top">
+						<table width="99%" cellspacing="0" cellpadding="5" class="tborder"><tr>
+						<td class="titlebg" width="100%">User Info</td></tr><tr><td width="100%" valign="top" class="windowbg2" style="font-family: verdana, arial, sans-serif; font-size: x-small;">
+							Welcome, <b>Guest</b>. Please <a href="http://excalibur.haba.dk/smf/index.php?action=login">login</a> or <a href="http://excalibur.haba.dk/smf/index.php?action=register">register</a>.<br />
+							May 26, 2008, 03:45:05 PM<br />
+
+							<form action="http://excalibur.haba.dk/smf/index.php?action=login2" method="post" style="margin: 3px 1ex 1px 0; text-align:right;">
+								<input type="text" name="user" size="10" /> <input type="password" name="passwrd" size="10" />
+								<select name="cookielength">
+									<option value="60">1 Hour</option>
+									<option value="1440">1 Day</option>
+									<option value="10080">1 Week</option>
+									<option value="302400">1 Month</option>
+									<option value="-1" selected="selected">Forever</option>
+								</select>
+								<input type="submit" value="Login" /><br />
+								Login with username, password and session length
+							</form>
+						</td></tr></table>
+
+					<form action="http://excalibur.haba.dk/smf/index.php?action=search2" method="post" style="margin: 0; margin-top: 7px;">
+						<b>Search: </b><input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 8ex;" />&nbsp;
+						<a href="http://excalibur.haba.dk/smf/index.php?action=search;advanced">Advanced search</a>
+						<input type="hidden" name="advanced" value="0" />
+						<input type="hidden" name="brd[11]" value="11" />
+					</form>
+
+				</td>
+				<td width="262" style="padding-left: 5px;" valign="top">
+					<br /><table width="99%" cellspacing="0" cellpadding="5" class="tborder">
+					<tr>
+					<td class="titlebg" width="100%">Key Stats</td>
+					</tr>
+					<tr>
+					<td class="windowbg2" width="100%" style="font-size: x-small"><b>3016</b> Posts in <b>228</b> Topics by <b>110</b> Members<br />
+							Latest Member: <b> <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=123">Jack Sparrow</a></b>
+						</td></tr></table>
+				</td>
+			</tr>
+		</table>
+				<a href="http://excalibur.haba.dk/smf/index.php"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/home.gif" alt="Home" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=help"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/help.gif" alt="Help" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=search"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/search.gif" alt="Search" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=login"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/login.gif" alt="Login" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=register"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/register.gif" alt="Register" style="margin: 2px 0;" border="0" /></a>
+	</div>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td id="bodyarea" style="padding: 1ex 20px 2ex 20px;">
+		<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/sha1.js"></script>
+
+		<form action="http://excalibur.haba.dk/smf/index.php?action=login2" method="post" accept-charset="ISO-8859-1" name="frmLogin" id="frmLogin" onsubmit="hashLoginPassword(this, 'cafecedf142d1a0de470dbc00915e79f');">
+			<table border="0" cellspacing="0" cellpadding="3" class="tborder" align="center">
+				<tr class="catbg">
+					<td>Warning!</td>
+				</tr><tr>
+					<td class="windowbg" style="padding-top: 2ex; padding-bottom: 2ex;">
+						Only registered members are allowed to access this section.<br />
+						Please login below or <a href="http://excalibur.haba.dk/smf/index.php?action=register">register an account</a> with .
+					</td>
+				</tr><tr class="titlebg">
+					<td><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/login_sm.gif" alt="" align="top" /> Login</td>
+				</tr><tr>
+					<td class="windowbg">
+						<table border="0" cellpadding="3" cellspacing="0" align="center">
+							<tr>
+								<td align="right"><b>Username:</b></td>
+								<td><input type="text" name="user" size="20" /></td>
+							</tr><tr>
+								<td align="right"><b>Password:</b></td>
+								<td><input type="password" name="passwrd" size="20" /></td>
+							</tr><tr>
+								<td align="right"><b>Minutes to stay logged in:</b></td>
+								<td><input type="text" name="cookielength" size="4" maxlength="4" value="60" /></td>
+							</tr><tr>
+								<td align="right"><b>Always stay logged in:</b></td>
+								<td><input type="checkbox" name="cookieneverexp" class="check" onclick="this.form.cookielength.disabled = this.checked;" /></td>
+							</tr><tr>
+								<td align="center" colspan="2"><input type="submit" value="Login" style="margin-top: 2ex;" /></td>
+							</tr><tr>
+								<td align="center" colspan="2" class="smalltext"><a href="http://excalibur.haba.dk/smf/index.php?action=reminder">Forgot your password?</a><br /><br /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<input type="hidden" name="hash_passwrd" value="" />
+		</form>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			document.forms.frmLogin.user.focus();
+		// ]]></script></td>
+	</tr></table>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			function smfFooterHighlight(element, value)
+			{
+				element.src = smf_images_url + "/" + (value ? "h_" : "") + element.id + ".gif";
+			}
+		// ]]></script>
+		<table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1 RC3</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF &copy; 2001-2006, Lewis Media</a>
+		</span><br /><font size="1">Theme by Nesianstyles | Buttons by Andrea</font>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>

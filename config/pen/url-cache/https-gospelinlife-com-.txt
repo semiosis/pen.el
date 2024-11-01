@@ -1,0 +1,1283 @@
+HTTP/1.1 200 OK
+Date: Fri, 05 Jan 2024 23:32:39 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Vary: Accept-Encoding,Cookie
+Link: <https://gospelinlife.com/wp-json/>; rel="https://api.w.org/"
+Link: <https://gospelinlife.com/wp-json/wp/v2/pages/26>; rel="alternate"; type="application/json"
+Link: <https://gospelinlife.com/>; rel=shortlink
+X-Powered-By: WP Engine
+X-Cacheable: SHORT
+Cache-Control: max-age=600, must-revalidate
+X-Cache: HIT: 9
+X-Cache-Group: normal
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 840f8592eaed7262-AKL
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WBSJJHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '{2460680384231788}');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" 
+       src="https://www.facebook.com/tr?id={2460680384231788}&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<title>Gospel in Life &#8211; Sermons and Resources from Timothy Keller and Redeemer Churches and Ministries</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Gospel in Life &raquo; Feed" href="https://gospelinlife.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Gospel in Life &raquo; Comments Feed" href="https://gospelinlife.com/comments/feed/" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.woff" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://gospelinlife.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/gospelinlife.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://gospelinlife.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--wpbf-palette-color-1: #00aaf2;--wp--preset--color--wpbf-palette-color-2: #ff6600;--wp--preset--color--wpbf-palette-color-3: #444444;--wp--preset--color--wpbf-palette-color-4: #ffffff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 14px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 20px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--tiny: 12px;--wp--preset--font-size--regular: 16px;--wp--preset--font-size--larger: 32px;--wp--preset--font-size--extra: 44px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 1000px;--wp--style--global--wide-size: 1400px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: 24px; }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: 24px;margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: 24px;margin-block-end: 0;}:where(body .is-layout-flex) {gap: 24px;}:where(body .is-layout-grid) {gap: 24px;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-wpbf-palette-color-1-color{color: var(--wp--preset--color--wpbf-palette-color-1) !important;}.has-wpbf-palette-color-2-color{color: var(--wp--preset--color--wpbf-palette-color-2) !important;}.has-wpbf-palette-color-3-color{color: var(--wp--preset--color--wpbf-palette-color-3) !important;}.has-wpbf-palette-color-4-color{color: var(--wp--preset--color--wpbf-palette-color-4) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-wpbf-palette-color-1-background-color{background-color: var(--wp--preset--color--wpbf-palette-color-1) !important;}.has-wpbf-palette-color-2-background-color{background-color: var(--wp--preset--color--wpbf-palette-color-2) !important;}.has-wpbf-palette-color-3-background-color{background-color: var(--wp--preset--color--wpbf-palette-color-3) !important;}.has-wpbf-palette-color-4-background-color{background-color: var(--wp--preset--color--wpbf-palette-color-4) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-wpbf-palette-color-1-border-color{border-color: var(--wp--preset--color--wpbf-palette-color-1) !important;}.has-wpbf-palette-color-2-border-color{border-color: var(--wp--preset--color--wpbf-palette-color-2) !important;}.has-wpbf-palette-color-3-border-color{border-color: var(--wp--preset--color--wpbf-palette-color-3) !important;}.has-wpbf-palette-color-4-border-color{border-color: var(--wp--preset--color--wpbf-palette-color-4) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-regular-font-size{font-size: var(--wp--preset--font-size--regular) !important;}.has-larger-font-size{font-size: var(--wp--preset--font-size--larger) !important;}.has-extra-font-size{font-size: var(--wp--preset--font-size--extra) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='foundation-icons-css' href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.7.4.2' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-26-css' href='https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/26-layout.css?ver=efe37d053546b86bb1ee034c9325f755' media='all' />
+<link rel='stylesheet' id='font-awesome-5-css' href='https://gospelinlife.com/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/all.min.css?ver=2.7.4.2' media='all' />
+<link rel='stylesheet' id='jquery-magnificpopup-css' href='https://gospelinlife.com/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.7.4.2' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-bundle-f82bffa5dccff67f94171d56075f318e-css' href='https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/f82bffa5dccff67f94171d56075f318e-layout-bundle.css?ver=2.7.4.2-1.4.9' media='all' />
+<link rel='stylesheet' id='gil-styles-css' href='https://gospelinlife.com/wp-content/themes/gil-theme/build/styles.css?ver=0.1.8' media='all' />
+<link rel='stylesheet' id='wpbf-icon-font-css' href='https://gospelinlife.com/wp-content/themes/page-builder-framework/css/min/iconfont-min.css?ver=2.10.6' media='all' />
+<link rel='stylesheet' id='wpbf-style-css' href='https://gospelinlife.com/wp-content/themes/page-builder-framework/style.css?ver=2.10.6' media='all' />
+<link rel='stylesheet' id='wpbf-responsive-css' href='https://gospelinlife.com/wp-content/themes/page-builder-framework/css/min/responsive-min.css?ver=2.10.6' media='all' />
+<link rel='stylesheet' id='elasticpress-facets-css' href='https://gospelinlife.com/wp-content/plugins/elasticpress/dist/css/facets-styles.css?ver=7d568203f3965dc85d8a' media='all' />
+<link rel='stylesheet' id='wpbf-premium-css' href='https://gospelinlife.com/wp-content/plugins/wpbf-premium/css/wpbf-premium.css?ver=2.9.2' media='all' />
+<style id='wpbf-premium-inline-css'>
+.has-wpbf-palette-color-1-color{color:#00aaf2;}.has-wpbf-palette-color-1-background-color,.has-wpbf-palette-color-1-background-color.has-background-dim{background-color:#00aaf2;}.has-wpbf-palette-color-2-color{color:#ff6600;}.has-wpbf-palette-color-2-background-color,.has-wpbf-palette-color-2-background-color.has-background-dim{background-color:#ff6600;}.has-wpbf-palette-color-3-color{color:#444444;}.has-wpbf-palette-color-3-background-color,.has-wpbf-palette-color-3-background-color.has-background-dim{background-color:#444444;}.has-wpbf-palette-color-4-color{color:#ffffff;}.has-wpbf-palette-color-4-background-color,.has-wpbf-palette-color-4-background-color.has-background-dim{background-color:#ffffff;}@media screen and (max-width:768px){h1{font-size:28px;}}@media screen and (max-width:480px){h1{font-size:22px;}}body,button,input,optgroup,select,textarea,h1,h2,h3,h4,h5,h6{font-family:Archivo;}h1,h2,h3,h4,h5,h6{font-family:Merriweather;}#inner-content{padding-top:40px;padding-right:20px;padding-bottom:40px;padding-left:20px;}.wpbf-container{padding-right:20px;padding-left:20px;}.wpbf-archive-content .wpbf-post{text-align:left;}
+</style>
+<link rel='stylesheet' id='pp-animate-css' href='https://gospelinlife.com/wp-content/plugins/bbpowerpack/assets/css/animate.min.css?ver=3.5.1' media='all' />
+<link rel='stylesheet' id='fl-builder-google-fonts-3e20fb6ab630ff0d87899000b3fa8c58-css' href='//fonts.googleapis.com/css?family=Merriweather%3A700&#038;ver=6.3.2' media='all' />
+<script src='https://gospelinlife.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script src='https://www.googletagmanager.com/gtag/js?id=G-3HM1RY7KN4&#038;ver=6.3.2' id='gil-gtag-js' data-wp-strategy='async'></script>
+<script id="gil-gtag-js-after">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);console.log('pusning', arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-3HM1RY7KN4');
+		
+</script>
+<link rel="https://api.w.org/" href="https://gospelinlife.com/wp-json/" /><link rel="alternate" type="application/json" href="https://gospelinlife.com/wp-json/wp/v2/pages/26" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gospelinlife.com/xmlrpc.php?rsd" />
+<link rel="canonical" href="https://gospelinlife.com/" />
+<link rel='shortlink' href='https://gospelinlife.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://gospelinlife.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgospelinlife.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://gospelinlife.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgospelinlife.com%2F&#038;format=xml" />
+		<script>
+			var bb_powerpack = {
+				search_term: '',
+				version: '2.34.6',
+				getAjaxUrl: function() { return atob( 'aHR0cHM6Ly9nb3NwZWxpbmxpZmUuY29tL3dwLWFkbWluL2FkbWluLWFqYXgucGhw' ); },
+				callback: function() {}
+			};
+		</script>
+		<link rel="icon" href="https://gospelinlife.com/wp-content/uploads/2023/11/cropped-GIL-Logo-Icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://gospelinlife.com/wp-content/uploads/2023/11/cropped-GIL-Logo-Icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://gospelinlife.com/wp-content/uploads/2023/11/cropped-GIL-Logo-Icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://gospelinlife.com/wp-content/uploads/2023/11/cropped-GIL-Logo-Icon-270x270.png" />
+		<style id="wp-custom-css">
+			
+
+.gil-sermon-meta {
+	color: var(--gil-color-text);
+}
+
+.gil-sermon-meta ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gil-sermon-meta li a {
+	color: var(--gil-color-accent);
+	position: relative;
+}
+
+.gil-sermon-meta li a::after {
+	content: '';
+	left: 0;
+	bottom: -2px;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: currentcolor;
+}
+
+.gil-sermon-meta-value {
+	color: var(--gil-color-mid-gray);
+	font-weight: 400;
+}
+
+/* remove leading header from sermon outline */
+.fl-node-wr8s2gtky709 .fl-html > h1:first-child,
+.fl-node-wr8s2gtky709 .fl-html > h2:first-child, 
+.fl-node-wr8s2gtky709 .fl-html > h3:first-child, 
+.fl-node-wr8s2gtky709 .fl-html > h4:first-child {
+	display: none;
+}		</style>
+		<style id="wpbf-typography-styles">/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-BdvBU7iVORTGG4.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-RdvBU7iVORTGG4.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ9xdvBU7iVORT.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-cSZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-eCZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-cyZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-ciZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-fCZKdeX3rg.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-BdvBU7iVORTGG4.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-RdvBU7iVORTGG4.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ9xdvBU7iVORT.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-cSZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-eCZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-cyZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-ciZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-fCZKdeX3rg.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-BdvBU7iVORTGG4.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-RdvBU7iVORTGG4.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/archivo/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ9xdvBU7iVORT.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-cSZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-eCZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-cyZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-ciZKdeX3rsHo.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://gospelinlife.com/wp-content/fonts/merriweather/u-440qyriQwlOrhSvowK_l5-fCZKdeX3rg.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style></head>
+
+<body class="home page-template-default page page-id-26 fl-builder fl-theme-builder-footer fl-theme-builder-footer-main-footer-themer-flair fl-theme-builder-header fl-theme-builder-header-primary-menu-tan fl-theme-builder-part fl-theme-builder-part-premium-spot-updated wpbf wpbf-home wpbf-no-sidebar wpbf-full-width" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+
+	
+
+	
+	<div id="container" class="hfeed wpbf-page">
+
+		
+		<header class="fl-builder-content fl-builder-content-3483 fl-builder-global-templates-locked" data-post-id="3483" data-type="header" data-sticky="0" data-sticky-on="" data-sticky-breakpoint="medium" data-shrink="0" data-overlay="0" data-overlay-bg="default" data-shrink-image-height="50px" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-mhgtwdosnj69 fl-row-default-height fl-row-align-center fl-visible-desktop fl-visible-large gil-flex" data-node="mhgtwdosnj69">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-spd8qh4znke2 fl-col-group-equal-height fl-col-group-align-center" data-node="spd8qh4znke2">
+			<div class="fl-col fl-node-y3rx5phdsof8 fl-col-small" data-node="y3rx5phdsof8">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-yajkfz289do1" data-node="yajkfz289do1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="/" target="_self" itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-28 size-full" src="https://gospelinlife.com/wp-content/uploads/2023/04/GIL-Logo-Horizontal.png" alt="GIL Logo Horizontal" itemprop="image" height="92" width="501" title="GIL Logo Horizontal"  data-no-lazy="1" srcset="https://gospelinlife.com/wp-content/uploads/2023/04/GIL-Logo-Horizontal.png 501w, https://gospelinlife.com/wp-content/uploads/2023/04/GIL-Logo-Horizontal-300x55.png 300w" sizes="(max-width: 501px) 100vw, 501px" />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-gj02flyksqub fl-col-small" data-node="gj02flyksqub">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-pp-advanced-menu fl-node-1eunjys6w9lx" data-node="1eunjys6w9lx">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-advanced-menu pp-advanced-menu-accordion-collapse pp-menu-default pp-menu-align-left pp-menu-position-below">
+   				<div class="pp-advanced-menu-mobile">
+			<button class="pp-advanced-menu-mobile-toggle hamburger" tabindex="0" aria-label="Menu">
+				<div class="pp-hamburger"><div class="pp-hamburger-box"><div class="pp-hamburger-inner"></div></div></div>			</button>
+			</div>
+			   	<div class="pp-clear"></div>
+	<nav class="pp-menu-nav" aria-label="Main Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		
+		<ul id="menu-main-menu" class="menu pp-advanced-menu-horizontal pp-toggle-arrows"><li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/sermons/"><span class="menu-item-text">Sermons and Talks</span></a></li><li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="#"><span class="menu-item-text">Resources<span class="pp-menu-toggle" tabindex="0" aria-expanded="false" aria-label="Resources: submenu" role="button"></span></span></a></div><ul class="sub-menu">	<li id="menu-item-3559" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/all-resources/"><span class="menu-item-text">All Resources</span></a></li>	<li id="menu-item-3565" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/devotional/advent/"><span class="menu-item-text">Advent Devotional</span></a></li>	<li id="menu-item-3489" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/books"><span class="menu-item-text">Books</span></a></li>	<li id="menu-item-3557" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/studies"><span class="menu-item-text">Studies</span></a></li>	<li id="menu-item-3558" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/manuals-papers"><span class="menu-item-text">Manuals &#038; Papers</span></a></li>	<li id="menu-item-3612" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/timothy-keller-mp3-sermon-archive/"><span class="menu-item-text">Tim Keller Sermon USB</span></a></li></ul></li><li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="#"><span class="menu-item-text">About<span class="pp-menu-toggle" tabindex="0" aria-expanded="false" aria-label="About: submenu" role="button"></span></span></a></div><ul class="sub-menu">	<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/about"><span class="menu-item-text">About</span></a></li>	<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://redeemercitytocity.com"><span class="menu-item-text">Redeemer City to City</span></a></li>	<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://redeemer.com"><span class="menu-item-text">Redeemer Churches</span></a></li>	<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/ways-to-give"><span class="menu-item-text">Ways to Donate</span></a></li>	<li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/donate"><span class="menu-item-text">Donate Now</span></a></li></ul></li></ul>
+			</nav>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-xu59ybsv0jgt fl-col-small" data-node="xu59ybsv0jgt">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button-group fl-node-xecafsw6n2iu" data-node="xecafsw6n2iu">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-group fl-button-group-layout-horizontal fl-button-group-width-">
+	<div class="fl-button-group-buttons" role="group" aria-label="Main Menu Call To Actions">
+		<div id="fl-button-group-button-xecafsw6n2iu-0" class="fl-button-group-button fl-button-group-button-xecafsw6n2iu-0"><div class="fl-button-wrap fl-button-width-full fl-button-right fl-button-has-icon">
+			<a href="" target="_self" class="fl-button">
+					<i class="fl-button-icon fl-button-icon-before fi-play" aria-hidden="true"></i>
+						<span class="fl-button-text">Latest Podcast</span>
+					</a>
+</div>
+</div><div id="fl-button-group-button-xecafsw6n2iu-1" class="fl-button-group-button fl-button-group-button-xecafsw6n2iu-1"><div class="fl-button-wrap fl-button-width-full fl-button-right">
+			<a href="https://gospelinlife.com/donate" target="_blank" class="fl-button" rel="noopener" >
+							<span class="fl-button-text">Give</span>
+					</a>
+</div>
+</div><div id="fl-button-group-button-xecafsw6n2iu-2" class="fl-button-group-button fl-button-group-button-xecafsw6n2iu-2"><div class="fl-button-wrap fl-button-width-full fl-button-right fl-button-has-icon">
+			<a href="https://gospelinlife.com/all-resources/" target="_self" class="fl-button">
+					<i class="fl-button-icon fl-button-icon-before fas fa-search" aria-hidden="true"></i>
+							</a>
+</div>
+</div>	</div>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-61wfijvzcrky fl-row-default-height fl-row-align-center fl-visible-medium fl-visible-mobile" data-node="61wfijvzcrky">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-n43qwpoc2zey fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="n43qwpoc2zey">
+			<div class="fl-col fl-node-lia0h6s1948o fl-col-small fl-col-small-custom-width" data-node="lia0h6s1948o">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-pp-advanced-menu fl-node-r1mw7a9jxdyg" data-node="r1mw7a9jxdyg">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-advanced-menu pp-advanced-menu-accordion-collapse pp-menu-default pp-menu-align-left pp-menu-position-below">
+   	   	<div class="pp-clear"></div>
+	<nav class="pp-menu-nav" aria-label="Mobile Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		
+		<ul id="menu-mobile-menu" class="menu pp-advanced-menu-vertical pp-toggle-arrows"><li id="menu-item-3578" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/sermons/"><span class="menu-item-text">Sermons and Talks</span></a></li><li id="menu-item-3579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="#"><span class="menu-item-text">Resources<span class="pp-menu-toggle" tabindex="0" aria-expanded="false" aria-label="Resources: submenu" role="button"></span></span></a></div><ul class="sub-menu">	<li id="menu-item-3580" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/all-resources/"><span class="menu-item-text">All Resources</span></a></li>	<li id="menu-item-3581" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/devotional/advent/"><span class="menu-item-text">Advent Devotional</span></a></li>	<li id="menu-item-3582" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/books/"><span class="menu-item-text">Books</span></a></li>	<li id="menu-item-3583" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/studies/"><span class="menu-item-text">Studies</span></a></li>	<li id="menu-item-3584" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/manuals-papers/"><span class="menu-item-text">Manuals &#038; Papers</span></a></li>	<li id="menu-item-3611" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/timothy-keller-mp3-sermon-archive/"><span class="menu-item-text">Tim Keller Sermon USB</span></a></li></ul></li><li id="menu-item-3585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="#"><span class="menu-item-text">About<span class="pp-menu-toggle" tabindex="0" aria-expanded="false" aria-label="About: submenu" role="button"></span></span></a></div><ul class="sub-menu">	<li id="menu-item-3586" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/about/"><span class="menu-item-text">About</span></a></li>	<li id="menu-item-3587" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/ways-to-give/"><span class="menu-item-text">Ways to Donate</span></a></li>	<li id="menu-item-3588" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://redeemercitytocity.com"><span class="menu-item-text">Redeemer City to City</span></a></li>	<li id="menu-item-3589" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://redeemer.com"><span class="menu-item-text">Redeemer Churches</span></a></li></ul></li><li id="menu-item-3590" class="mobile-give-menu menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" rel="noopener noreferrer" href="/donate"><span class="menu-item-text">Give</span></a></li></ul>
+			</nav>
+</div>
+			<div class="pp-advanced-menu-mobile">
+			<button class="pp-advanced-menu-mobile-toggle hamburger" tabindex="0" aria-label="Menu">
+				<div class="pp-hamburger"><div class="pp-hamburger-box"><div class="pp-hamburger-inner"></div></div></div>			</button>
+			</div>
+			<div class="pp-advanced-menu pp-advanced-menu-accordion-collapse full-screen pp-menu-position-below">
+	<div class="pp-clear"></div>
+	<nav class="pp-menu-nav pp-menu-overlay pp-overlay-fade" aria-label="Mobile Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		<div class="pp-menu-close-btn"></div>
+
+		
+		<ul id="menu-mobile-menu-1" class="menu pp-advanced-menu-vertical pp-toggle-arrows"><li id="menu-item-3578" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/sermons/"><span class="menu-item-text">Sermons and Talks</span></a></li><li id="menu-item-3579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="#"><span class="menu-item-text">Resources<span class="pp-menu-toggle" tabindex="0" aria-expanded="false" aria-label="Resources: submenu" role="button"></span></span></a></div><ul class="sub-menu">	<li id="menu-item-3580" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/all-resources/"><span class="menu-item-text">All Resources</span></a></li>	<li id="menu-item-3581" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/devotional/advent/"><span class="menu-item-text">Advent Devotional</span></a></li>	<li id="menu-item-3582" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/books/"><span class="menu-item-text">Books</span></a></li>	<li id="menu-item-3583" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/studies/"><span class="menu-item-text">Studies</span></a></li>	<li id="menu-item-3584" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/manuals-papers/"><span class="menu-item-text">Manuals &#038; Papers</span></a></li>	<li id="menu-item-3611" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/timothy-keller-mp3-sermon-archive/"><span class="menu-item-text">Tim Keller Sermon USB</span></a></li></ul></li><li id="menu-item-3585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="#"><span class="menu-item-text">About<span class="pp-menu-toggle" tabindex="0" aria-expanded="false" aria-label="About: submenu" role="button"></span></span></a></div><ul class="sub-menu">	<li id="menu-item-3586" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/about/"><span class="menu-item-text">About</span></a></li>	<li id="menu-item-3587" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gospelinlife.com/ways-to-give/"><span class="menu-item-text">Ways to Donate</span></a></li>	<li id="menu-item-3588" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://redeemercitytocity.com"><span class="menu-item-text">Redeemer City to City</span></a></li>	<li id="menu-item-3589" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://redeemer.com"><span class="menu-item-text">Redeemer Churches</span></a></li></ul></li><li id="menu-item-3590" class="mobile-give-menu menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" rel="noopener noreferrer" href="/donate"><span class="menu-item-text">Give</span></a></li></ul>
+			</nav>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-8nvy4km1s0bd fl-col-small fl-col-small-custom-width" data-node="8nvy4km1s0bd">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-c4hvrbmw6qsf" data-node="c4hvrbmw6qsf">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="/" target="_self" itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-28 size-full" src="https://gospelinlife.com/wp-content/uploads/2023/04/GIL-Logo-Horizontal.png" alt="GIL Logo Horizontal" itemprop="image" height="92" width="501" title="GIL Logo Horizontal"  data-no-lazy="1" srcset="https://gospelinlife.com/wp-content/uploads/2023/04/GIL-Logo-Horizontal.png 501w, https://gospelinlife.com/wp-content/uploads/2023/04/GIL-Logo-Horizontal-300x55.png 300w" sizes="(max-width: 501px) 100vw, 501px" />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-vhszjlrgd9x7 fl-col-small fl-col-small-custom-width" data-node="vhszjlrgd9x7">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-icon fl-node-xtvjebmhl3z9" data-node="xtvjebmhl3z9">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-icon-wrap">
+	<span class="fl-icon">
+								<a href="https://gospelinlife.com/all-resources/" target="_self">
+							<i class="fas fa-search" aria-hidden="true"></i>
+						</a>
+			</span>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</header>
+		
+<div id="content">
+
+		
+	
+		
+		<div class="wpbf-grid wpbf-main-grid wpbf-grid-medium">
+
+			
+			<main id="main" class="wpbf-main wpbf-medium-2-3 wpbf-single-content wpbf-page-content">
+
+				
+				
+				
+				
+				<div class="entry-content" itemprop="text">
+
+					
+					<div class="fl-builder-content fl-builder-content-26 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="26"><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-ajg8ypsni2kr fl-row-default-height fl-row-align-center" data-node="ajg8ypsni2kr">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-yl0ercvj62wq fl-col-group-equal-height fl-col-group-align-center" data-node="yl0ercvj62wq">
+			<div class="fl-col fl-node-tembiyzcpad2 fl-col-small" data-node="tembiyzcpad2">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-rkq8gnbc1ofm" data-node="rkq8gnbc1ofm">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-crop-landscape fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="https://gospelinlife.com/thank-you-for-your-support/?utm_campaign=2401&utm_source=website&utm_medium=banner" target="_self" itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3664 size-full" src="https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/Kathy-Cregan-2023-Recap-landscape-adebcee453d330e2163454eb6cd70fc6-rkq8gnbc1ofm.jpg" alt="Kathy-Cregan-2023-Recap" itemprop="image" height="524" width="936" title="Kathy-Cregan-2023-Recap"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-wdlzkx789puj fl-col-small" data-node="wdlzkx789puj">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-iar2wfmzb5jo" data-node="iar2wfmzb5jo">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Video</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-tjr0agmx4kin home-featured-title" data-node="tjr0agmx4kin">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h1><a href="https://gospelinlife.com/thank-you-for-your-support/?utm_campaign=2401&amp;utm_source=website&amp;utm_medium=banner" rel="noopener">A special video message about 2023 and what's ahead in 2024</a></h1>
+<p>Kathy Keller and Cregan Cooke, Sr. Director of Gospel in Life, share their thanks for you and what God did through Gospel in Life in 2023.</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-4iwgjp7hy2ks fl-col-group-equal-height fl-col-group-align-top" data-node="4iwgjp7hy2ks">
+			<div class="fl-col fl-node-abj9lwu2fmtp fl-col-small" data-node="abj9lwu2fmtp">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-e8kpvina2tyg" data-node="e8kpvina2tyg">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-crop-panorama fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="https://www.youtube.com/watch?v=5vp9hV8bOjk" target="_blank" rel="noopener"  itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3487 size-large" src="https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/TK-Job-Video-1024x499-panorama-cb0e9814e79bb23fc62e8858dfaffa65-e8kpvina2tyg.jpg" alt="TK-Job-Video" itemprop="image" height="499" width="1024" title="TK-Job-Video"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-lqa2ykjwfsc5" data-node="lqa2ykjwfsc5">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Video</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-lh0f25i38zb6" data-node="lh0f25i38zb6">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4><a href="https://www.youtube.com/watch?v=5vp9hV8bOjk" target="_blank" rel="noopener">Discovering the Gospel in Job</a></h4>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-70ikx8q5cz3d" data-node="70ikx8q5cz3d">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>By Tim Keller</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-ecu2z8hpsjv0 fl-col-small" data-node="ecu2z8hpsjv0">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-7fat6uex9jyg" data-node="7fat6uex9jyg">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-crop-panorama fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="https://gospelinlife.com/series/stewardship/" target="_self" itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3662 size-full" src="https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/Stewardship-Series-AI-panorama-ad388e724bf5bb61ec0fac155a50b75a-7fat6uex9jyg.jpg" alt="Stewardship-Series-AI" itemprop="image" height="1024" width="1024" title="Stewardship-Series-AI"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-72jv0wp68bdn" data-node="72jv0wp68bdn">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Series</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-xlegmpw97y08" data-node="xlegmpw97y08">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4 class="fl-heading"><a href="https://gospelinlife.com/series/stewardship/">Stewardship</a></h4>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-5kpxiev6nwjg" data-node="5kpxiev6nwjg">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>By Tim Keller</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-4e02f5tbok3x fl-col-small" data-node="4e02f5tbok3x">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-nx4rt98hcm5j" data-node="nx4rt98hcm5j">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-crop-panorama fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="https://gospelinlife.com/series/proverbs-true-wisdom-for-living/" target="_self" itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-1800 size-full" src="https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/series_proverbs_true_wisdom_for_living_alt-1-panorama-a3c7bd0e8594761077e03f5a77d4910e-nx4rt98hcm5j.jpg" alt="" itemprop="image" height="500" width="500"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ce5x3kozgf8a" data-node="ce5x3kozgf8a">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Series</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-e9isx76n38ap" data-node="e9isx76n38ap">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4><a href="https://gospelinlife.com/series/proverbs-true-wisdom-for-living/">Proverbs: True Wisdom for Living</a></h4>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-3jo4qs86zeux" data-node="3jo4qs86zeux">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>By Tim Keller</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-lrjzhku476ba" data-node="lrjzhku476ba">
+			<div class="fl-col fl-node-yxp16iuc28e9" data-node="yxp16iuc28e9">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-teh8luwkc6o2 fl-visible-desktop fl-visible-large" data-node="teh8luwkc6o2">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><em>Resources by Timothy Keller and Redeemer Church and Ministries</em></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-color fl-node-3w5h8ijazst9 fl-row-default-height fl-row-align-center" data-node="3w5h8ijazst9">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-478f0nvzabih" data-node="478f0nvzabih">
+			<div class="fl-col fl-node-kfnazx6o10b8 fl-col-has-cols" data-node="kfnazx6o10b8">
+	<div class="fl-col-content fl-node-content">
+<div class="fl-col-group fl-node-4auqtm1rxvg2 fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center" data-node="4auqtm1rxvg2">
+			<div class="fl-col fl-node-fzr3c6smwju0 fl-col-small" data-node="fzr3c6smwju0">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-rv0bqua1scw9" data-node="rv0bqua1scw9">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3473 size-large" src="https://gospelinlife.com/wp-content/uploads/2023/11/Podcast_Image_Black_Background_1500x15009d817-1-1024x1024.jpg" alt="Podcast_Image_Black_Background_1500x15009d817 (1)" itemprop="image" height="1024" width="1024" title="Podcast_Image_Black_Background_1500x15009d817 (1)" srcset="https://gospelinlife.com/wp-content/uploads/2023/11/Podcast_Image_Black_Background_1500x15009d817-1-1024x1024.jpg 1024w, https://gospelinlife.com/wp-content/uploads/2023/11/Podcast_Image_Black_Background_1500x15009d817-1-300x300.jpg 300w, https://gospelinlife.com/wp-content/uploads/2023/11/Podcast_Image_Black_Background_1500x15009d817-1-150x150.jpg 150w, https://gospelinlife.com/wp-content/uploads/2023/11/Podcast_Image_Black_Background_1500x15009d817-1-768x768.jpg 768w, https://gospelinlife.com/wp-content/uploads/2023/11/Podcast_Image_Black_Background_1500x15009d817-1.jpg 1500w" sizes="(max-width: 1024px) 100vw, 1024px" />
+					</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-wfvjg36k48pb fl-col-small" data-node="wfvjg36k48pb">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-q72eyoz1sg30" data-node="q72eyoz1sg30">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Latest Podcast Episode</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-widget fl-node-0fscv76rzw2m" data-node="0fscv76rzw2m">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-widget">
+<div class="widget widget_rss"><h2 class="widgettitle"><a class="rsswidget rss-widget-feed" href="https://podcast.gospelinlife.com/feed.xml"><img decoding="async" class="rss-widget-icon" style="border:0" width="14" height="14" src="https://gospelinlife.com/wp-includes/images/rss.png" alt="RSS" loading="lazy" /></a> <a class="rsswidget rss-widget-title" href="https://gospelinlife.com/">Latest Podcast Episode</a></h2><ul><li><a class='rsswidget' href='http://podcast.gospelinlife.com/e/the-wellspring-of-wisdom-1703109760/'>The Wellspring of Wisdom</a> <span class="rss-date">January 5, 2024</span><div class="rssSummary">Most of the situations you face in life aren’t covered by moral rules: “Do I say something, or do I wait? Do I act, or should I be more passive?” The rules don’t cover those things. And yet, you will sink, and the people around you will sink, unless you get wisdom.  Wisdom is not [&hellip;]</div></li></ul></div></div>
+	</div>
+</div>
+<div class="fl-module fl-module-button fl-node-yxgb9qzv8mdu trigger-latest-podcast" data-node="yxgb9qzv8mdu">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+			<a href="" target="_self" class="fl-button">
+					<i class="fl-button-icon fl-button-icon-before fi-play" aria-hidden="true"></i>
+						<span class="fl-button-text">Listen Now</span>
+					</a>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-zr7hemt6jois fl-row-default-height fl-row-align-center" data-node="zr7hemt6jois">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-rjwbckfpqt9m fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="rjwbckfpqt9m">
+			<div class="fl-col fl-node-sogdvtm6ulyh fl-col-small-custom-width" data-node="sogdvtm6ulyh">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-3lsrmw054bhj" data-node="3lsrmw054bhj">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Quarterly Articles</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-h7samobx1384 fl-col-small fl-col-small-custom-width" data-node="h7samobx1384">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-x4hazfi6qnlb" data-node="x4hazfi6qnlb">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><a href="https://quarterly.gospelinlife.com" target="_blank" rel="noopener">See All ›</a></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-8f3vzwcnq0j9" data-node="8f3vzwcnq0j9">
+			<div class="fl-col fl-node-q7ah2b14ircy" data-node="q7ah2b14ircy">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-qt7aw1yefubs" data-node="qt7aw1yefubs">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-separator"></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-0mwq7tsrzl6p fl-col-group-equal-height fl-col-group-align-top" data-node="0mwq7tsrzl6p">
+			<div class="fl-col fl-node-ug8xwom2lvnj fl-col-small" data-node="ug8xwom2lvnj">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-fyzsh14ivpxj" data-node="fyzsh14ivpxj">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-crop-panorama fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" target="_blank" rel="noopener"  itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3477 size-large" src="https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/RM-1A-leadResized-2048x1536-1-1024x768-panorama-01d973e312aba18af9891c0e2e4f4b82-fyzsh14ivpxj.jpg" alt="RM-1A-leadResized-2048x1536" itemprop="image" height="768" width="1024" title="RM-1A-leadResized-2048x1536"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ks3jhm07tinz" data-node="ks3jhm07tinz">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Article</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-crgpfi6soyun" data-node="crgpfi6soyun">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4 class="fl-heading"><a href="https://quarterly.gospelinlife.com/how-gospel-community-can-overcome-loneliness/" target="_blank" rel="noopener"><span class="fl-heading-text">How Gospel Community Can Overcome Loneliness</span></a></h4>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-yf64jknv5xg2" data-node="yf64jknv5xg2">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>By Dr. Rebecca McLaughlin</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-5c42yiwdnq8h fl-col-small" data-node="5c42yiwdnq8h">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-h08ixkf9ltwv" data-node="h08ixkf9ltwv">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-crop-panorama fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" target="_blank" rel="noopener"  itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3476 size-large" src="https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/JC-2a-lead-1367x2048-1-684x1024-panorama-f30928b2d2eec118b1727291a51597f3-h08ixkf9ltwv.jpg" alt="JC-2a-lead-1367x2048" itemprop="image" height="1024" width="684" title="JC-2a-lead-1367x2048"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ud34wfv9yh05" data-node="ud34wfv9yh05">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Article</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-4i3mjg8ocw1e" data-node="4i3mjg8ocw1e">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4 class="fl-heading"><a href="https://quarterly.gospelinlife.com/our-story-within-gods-story/" target="_blank" rel="noopener"><span class="fl-heading-text">Our Story Within God’s Story</span></a></h4>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-yvpow28the0m" data-node="yvpow28the0m">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>By Dr. Judy Cha</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-b1e2q50oh9jt fl-col-small" data-node="b1e2q50oh9jt">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-53pn02k7rbfl" data-node="53pn02k7rbfl">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-crop-panorama fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" target="_blank" rel="noopener"  itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3475 size-large" src="https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/EE-4a-lead-1024x684-panorama-fff826aa75e95d96bd4e0dcb8a3ab972-53pn02k7rbfl.jpg" alt="EE-4a-lead" itemprop="image" height="684" width="1024" title="EE-4a-lead"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-gq270mo5ftn6" data-node="gq270mo5ftn6">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>Article</strong></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-axw67jtzf0cb" data-node="axw67jtzf0cb">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h4 class="fl-heading"><a href="https://quarterly.gospelinlife.com/story-of-a-changed-life/" target="_blank" rel="noopener"><span class="fl-heading-text">A Story of a Changed Life</span></a></h4>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-4wle9a0dtc6b" data-node="4wle9a0dtc6b">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>By Ellie Ellsworth</p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div>
+					
+					
+				</div>
+
+				
+				
+				
+			</main>
+
+			
+		</div>
+
+		
+	
+		
+</div>
+
+<div class="fl-builder-content fl-builder-content-3501 fl-builder-global-templates-locked" data-post-id="3501" data-type="part"><div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-uzoepj80ft1v fl-row-default-height fl-row-align-center" data-node="uzoepj80ft1v">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-nkotyhazj4q1" data-node="nkotyhazj4q1">
+			<div class="fl-col fl-node-1xgcjvfwel2k" data-node="1xgcjvfwel2k">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-4qvsangkzr0l" data-node="4qvsangkzr0l">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-separator"></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-color fl-node-msdu93ek0x2j fl-row-default-height fl-row-align-center fl-visible-mobile" data-node="msdu93ek0x2j">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-p7ovjfuqx41g" data-node="p7ovjfuqx41g">
+			<div class="fl-col fl-node-kb9ejfp276nc" data-node="kb9ejfp276nc">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-jebld4g6i7fc" data-node="jebld4g6i7fc">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="https://gospelinlife.com/give" target="_blank" rel="noopener"  itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3666 size-full" src="https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup2.png" alt="GodsWisdomforNavigatingLife-Mockup2" itemprop="image" height="1175" width="965" title="GodsWisdomforNavigatingLife-Mockup2" srcset="https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup2.png 965w, https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup2-246x300.png 246w, https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup2-841x1024.png 841w, https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup2-768x935.png 768w" sizes="(max-width: 965px) 100vw, 965px" />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-y9p1r6am3gn7" data-node="y9p1r6am3gn7">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>January Book Offer</strong></p>
+<h3>Unlock the Wisdom of Proverbs Each Day this Year!</h3>
+<p>In Tim and Kathy Keller’s 365-day devotional book God’s Wisdom for Navigating Life, you’ll find a fresh, inspiring lesson for every day of the year based on different passages within the book of Proverbs.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-button fl-node-eyxzkqrgic4n" data-node="eyxzkqrgic4n">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-auto fl-button-left">
+			<a href="https://gospelinlife.com/give" target="_blank" class="fl-button" rel="noopener" >
+							<span class="fl-button-text">Donate now and get the book</span>
+					</a>
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-color fl-node-qz0t7h92c68m fl-row-default-height fl-row-align-center fl-visible-desktop fl-visible-large fl-visible-medium" data-node="qz0t7h92c68m">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-dq8bsc59eut4" data-node="dq8bsc59eut4">
+			<div class="fl-col fl-node-a03z4619cvem" data-node="a03z4619cvem">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-uzegfbnmhpkq" data-node="uzegfbnmhpkq">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><strong>January Book Offer</strong></p>
+<h3>Unlock the Wisdom of Proverbs Each Day this Year!</h3>
+<p>In Tim and Kathy Keller’s 365-day devotional book God’s Wisdom for Navigating Life, you’ll find a fresh, inspiring lesson for every day of the year based on different passages within the book of Proverbs.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-button fl-node-dhacy3b6wjgu" data-node="dhacy3b6wjgu">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-auto fl-button-left">
+			<a href="https://gospelinlife.com/give" target="_blank" class="fl-button" rel="noopener" >
+							<span class="fl-button-text">Donate now and get the book</span>
+					</a>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-y8dl254g1fjz fl-col-small" data-node="y8dl254g1fjz">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-t7l9kqv0m35s" data-node="t7l9kqv0m35s">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="https://gospelinlife.com/give" target="_blank" rel="noopener"  itemprop="url">
+				<img decoding="async" loading="lazy" class="fl-photo-img wp-image-3668 size-full" src="https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup.png" alt="GodsWisdomforNavigatingLife-Mockup" itemprop="image" height="1440" width="1920" title="GodsWisdomforNavigatingLife-Mockup" srcset="https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup.png 1920w, https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup-300x225.png 300w, https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup-1024x768.png 1024w, https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup-768x576.png 768w, https://gospelinlife.com/wp-content/uploads/2023/11/GodsWisdomforNavigatingLife-Mockup-1536x1152.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-gxc5o46dzja1 fl-row-default-height fl-row-align-center" data-node="gxc5o46dzja1">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-6cxsayzuhw4b" data-node="6cxsayzuhw4b">
+			<div class="fl-col fl-node-r12hfu9xzdmj" data-node="r12hfu9xzdmj">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-hjoikgpnzf96" data-node="hjoikgpnzf96">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-separator"></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div><footer class="fl-builder-content fl-builder-content-47 fl-builder-global-templates-locked" data-post-id="47" data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-us5jcwbh6f8q fl-row-custom-height fl-row-align-top" data-node="us5jcwbh6f8q">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-subiw7zxy08c fl-col-group-equal-height fl-col-group-align-center" data-node="subiw7zxy08c">
+			<div class="fl-col fl-node-etgoalnsywfx" data-node="etgoalnsywfx">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-pra6nojvuxzc" data-node="pra6nojvuxzc">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3>Stay Informed.<br />
+And take the Gospel further.</h3>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-enju64rx0awm fl-col-small" data-node="enju64rx0awm">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-uo8aiymq2e1v" data-node="uo8aiymq2e1v">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Receive free articles, featured sermons, seasonal devotionals and other gospel-centered resources from Tim Keller and others.</p>
+</div>
+	</div>
+</div>
+<div id="gil-subscribe-form" class="fl-module fl-module-subscribe-form fl-node-b6189miohwn2 gil-subscribe-form" data-node="b6189miohwn2">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-subscribe-form fl-subscribe-form-inline fl-subscribe-form-name-show fl-form fl-clearfix" ><input type="hidden" id="fl-subscribe-form-nonce" name="fl-subscribe-form-nonce" value="8e4d893447" /><input type="hidden" name="_wp_http_referer" value="/" />		<div class="fl-form-field">
+		<label for="fl-subscribe-form-name" class="hidden">Name</label>
+		<input type="text" aria-describedby="name-error" name="fl-subscribe-form-name" placeholder="Name" id="fl-subscribe-form-name" class="fl-subscribe-form-name" />
+		<div class="fl-form-error-message" id="name-error">Please enter your name.</div>
+	</div>
+	
+	<div class="fl-form-field">
+		<label for="fl-subscribe-form-email" class="hidden">Email</label>
+		<input type="email" aria-describedby="email-error" name="fl-subscribe-form-email" placeholder="Email" id="fl-subscribe-form-email"  class="fl-subscribe-form-email"  />
+		<div class="fl-form-error-message" id="email-error">Please enter a valid email address.</div>
+	</div>
+
+	
+	<div class="fl-form-button" data-wait-text="Please Wait...">
+	<div class="fl-button-wrap fl-button-width-full fl-button-left">
+			<a href="#" target="_self" class="fl-button">
+							<span class="fl-button-text">Subscribe</span>
+					</a>
+</div>
+	</div>
+
+			
+			
+	<div class="fl-form-success-message"><p>Thanks for subscribing! You'll begin receiving free resources in the coming days.</p></div>
+
+	<div class="fl-form-error-message">Something went wrong. Please check your entries and try again.</div>
+
+</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-bdxwpkvoqjg3" data-node="bdxwpkvoqjg3">
+			<div class="fl-col fl-node-qnpbht5dcw97 fl-col-small" data-node="qnpbht5dcw97">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-kpvxd401ewjb" data-node="kpvxd401ewjb">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>The Gospel changes everything. Gospel in Life is the resource site for Timothy Keller and Redeemer Churches and Ministries.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-button fl-node-k2z7yuf1oi4h" data-node="k2z7yuf1oi4h">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-auto fl-button-left">
+			<a href="https://gospelinlife.com/donate" target="_blank" class="fl-button" rel="noopener" >
+							<span class="fl-button-text">Donate Now</span>
+					</a>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-k1nofd8u4xz2 fl-col-small" data-node="k1nofd8u4xz2">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-vzdq2ew3k6ha" data-node="vzdq2ew3k6ha">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><a href="/sermons">Sermons and Talks</a><br />
+<a href="https://quarterly.gospelinlife.com" target="_blank" rel="noopener">Quarterly Articles</a><br />
+<a href="/books">Books</a><br />
+<a href="https://podcast.gospelinlife.com" target="_blank" rel="noopener">Sermon Podcast</a><br />
+<a href="https://qcpodcast.gospelinlife.com" target="_blank" rel="noopener">QC Podcast</a><br />
+<a href="/devotional/advent/">Devotionals</a><br />
+<a href="/manuals-papers">Manuals and Papers</a><br />
+<a href="/studies">Studies</a></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-coes1r3z4fx6 fl-col-small" data-node="coes1r3z4fx6">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-hpflkm3wo9gd" data-node="hpflkm3wo9gd">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><a href="/about">About Us</a><br />
+<a href="/ways-to-give">Ways to Give</a><br />
+<a href="https://redeemercitytocity.com" target="_blank" rel="noopener">Redeemer City to City</a><br />
+<a href="https://redeemer.com" target="_blank" rel="noopener">Redeemer Churches</a></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-o1f8xwrgnbt5 fl-col-small" data-node="o1f8xwrgnbt5">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-h40sczwm8lu6" data-node="h40sczwm8lu6">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p><a href="https://gospel-in-life.helpscoutdocs.com/" target="_blank" rel="noopener">Help Center &amp; FAQ</a><br />
+<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=support@gospelinlife.com&amp;su=Gospel%20in%20Life%20Support" target="_blank" rel="noopener">Message Us</a><br />
+<a href="https://gospelinlife.com/privacy-policy/">Privacy Policy</a><br />
+<a href="/permissions">Copyright &amp; Permissions</a><br />
+<a href="https://account.raisedonors.com/gospelinlife/login" target="_blank" rel="noopener">Donor Account</a><br />
+<a href="https://archived.gospelinlife.com" target="_blank" rel="noopener">Previous Website (Temp)</a></p>
+</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="fl-col fl-node-unkypt8z2xrs fl-col-small" data-node="unkypt8z2xrs">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-c41it7o3wx2l" data-node="c41it7o3wx2l">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Ways to follow</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-social-icons fl-node-aq3c2x4plikh" data-node="aq3c2x4plikh">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-social-icons pp-social-icons-horizontal">
+	<span class="pp-social-icon" itemscope itemtype="https://schema.org/Organization">
+		<link itemprop="url" href="https://gospelinlife.com">
+		<a itemprop="sameAs" href="https://facebook.com/gospelinlife" target="_blank" title="Facebook" aria-label="Facebook" role="button" rel="noopener noreferrer external" >
+							<i class="fab fa-facebook"></i>
+					</a>
+	</span>
+		<span class="pp-social-icon" itemscope itemtype="https://schema.org/Organization">
+		<link itemprop="url" href="https://gospelinlife.com">
+		<a itemprop="sameAs" href="https://instagram.com/gospelinlife" target="_blank" title="Instagram" aria-label="Instagram" role="button" rel="noopener noreferrer external" >
+							<i class="fab fa-instagram"></i>
+					</a>
+	</span>
+		<span class="pp-social-icon" itemscope itemtype="https://schema.org/Organization">
+		<link itemprop="url" href="https://gospelinlife.com">
+		<a itemprop="sameAs" href="https://youtube.com/gospelinlife" target="_blank" title="YouTube" aria-label="YouTube" role="button" rel="noopener noreferrer external" >
+							<i class="fab fa-youtube"></i>
+					</a>
+	</span>
+		<span class="pp-social-icon" itemscope itemtype="https://schema.org/Organization">
+		<link itemprop="url" href="https://gospelinlife.com">
+		<a itemprop="sameAs" href="https://twitter.com/gospelinlife" target="_blank" title="Twitter" aria-label="Twitter" role="button" rel="noopener noreferrer external" >
+							<i class="fab pp-x-icon">𝕏</i>
+					</a>
+	</span>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</footer>
+	</div>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBSJJHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src='https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/26-layout.js?ver=33bc1f81a87f3d969cefc740b396157b' id='fl-builder-layout-26-js'></script>
+<script src='https://gospelinlife.com/wp-content/plugins/bb-plugin/js/jquery.imagesloaded.min.js?ver=2.7.4.2' id='imagesloaded-js'></script>
+<script src='https://gospelinlife.com/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.7.4.2' id='jquery-throttle-js'></script>
+<script src='https://gospelinlife.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.7.4.2' id='jquery-magnificpopup-js'></script>
+<script src='https://gospelinlife.com/wp-content/uploads/bb-plugin/cache/3d7ff20a6fe19521cfc224e988128fda-layout-bundle.js?ver=2.7.4.2-1.4.9' id='fl-builder-layout-bundle-3d7ff20a6fe19521cfc224e988128fda-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0' id='react-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0' id='react-dom-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/url.min.js?ver=8814d23f2d64864d280d' id='wp-url-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/api-fetch.min.js?ver=0fa4dabf8bf2c7adf21a' id='wp-api-fetch-js'></script>
+<script id="wp-api-fetch-js-after">
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://gospelinlife.com/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "2982eac950" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://gospelinlife.com/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/deprecated.min.js?ver=73ad3591e7bc95f4777a' id='wp-deprecated-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/dom.min.js?ver=845eabf47b55af03adfa' id='wp-dom-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6' id='wp-escape-html-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/element.min.js?ver=ed1c7604880e8b574b40' id='wp-element-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/is-shallow-equal.min.js?ver=20c2b06ecf04afb14fee' id='wp-is-shallow-equal-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/keycodes.min.js?ver=3460bd0fac9859d6886c' id='wp-keycodes-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/priority-queue.min.js?ver=422e19e9d48b269c5219' id='wp-priority-queue-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/dist/compose.min.js?ver=9424edf50a26435105c0' id='wp-compose-js'></script>
+<script id='gil-persistent-player-js-extra'>
+var gilVars = {"latestPodcast":{"title":"The Wellspring of Wisdom","id":0,"permalink":"","thumb":"","audio":"https:\/\/chtbl.com\/track\/92298\/mcdn.podbean.com\/mf\/web\/rhrtue\/240105_TheWellspringOfWisdom.mp3","video":{"type":"video","value":"","marker":0}}};
+</script>
+<script src='https://gospelinlife.com/wp-content/themes/gil-theme/build/persistent-player.js?ver=0.1.8' id='gil-persistent-player-js'></script>
+<script src='https://gospelinlife.com/wp-content/themes/gil-theme/build/filters.js?ver=0.1.8' id='gil-filters-js'></script>
+<script src='https://gospelinlife.com/wp-content/themes/gil-theme/build/main.js?ver=0.1.8' id='gil-main-js'></script>
+<script id="wpbf-site-js-before">
+var WpbfObj = {
+			ajaxurl: "https://gospelinlife.com/wp-admin/admin-ajax.php"
+		};
+</script>
+<script src='https://gospelinlife.com/wp-content/themes/page-builder-framework/js/min/site-min.js?ver=2.10.6' id='wpbf-site-js'></script>
+<script src='https://gospelinlife.com/wp-includes/js/comment-reply.min.js?ver=6.3.2' id='comment-reply-js'></script>
+<script src='https://gospelinlife.com/wp-content/plugins/wpbf-premium/js/site.js?ver=2.9.2' id='wpbf-premium-js'></script>
+
+</body>
+
+</html>

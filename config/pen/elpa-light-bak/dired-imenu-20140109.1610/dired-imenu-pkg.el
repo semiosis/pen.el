@@ -1,0 +1,2 @@
+;;; Generated package description from dired-imenu.el  -*- no-byte-compile: t -*-
+(define-package "dired-imenu" "20140109.1610" "imenu binding for dired mode" 'nil :commit "610e21fe0988c85931d34894d3eee2442c79ab0a" :authors '(("Damien Cassou" . "damien.cassou@gmail.com")) :maintainer '("Damien Cassou" . "damien.cassou@gmail.com") :keywords '("dired" "imenu") :url "https://github.com/DamienCassou/dired-imenu")

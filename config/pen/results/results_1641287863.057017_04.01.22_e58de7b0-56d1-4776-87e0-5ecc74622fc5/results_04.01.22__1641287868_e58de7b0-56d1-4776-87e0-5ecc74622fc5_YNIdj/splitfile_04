@@ -1,0 +1,8 @@
+1. This function takes one argument, command
+2. It then creates a new variable called cmd
+3. It then creates a new variable called args
+4. It then creates a new variable called output
+5. It then assigns the command to the cmd variable
+6. It then assigns the arguments to the args variable
+7. It then assigns the output to the output variable
+

@@ -1,0 +1,7 @@
+"define-expression" is a command that defines a new expression.
+
+Usage:
+  saws define-expression <name> <expression>
+
+Options:
+  -h --help     Show this screen.

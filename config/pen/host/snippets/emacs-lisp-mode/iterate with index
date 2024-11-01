@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: iterate with index
+# group: for
+# key: iwi
+# --
+
+(defset filter-cmd-2-tuples
+;; They have to be different
+
+;; I number them to differentiate them
+(let ((tps '(("scrape-bible-references" bible-mode-lookup)
+("scrape-bible-references" "sps ebible"))))
+(cl-loop for index from 0
+for e in tps
+collect (cons (concat (car e) " # " (str index)) (cdr e)))))

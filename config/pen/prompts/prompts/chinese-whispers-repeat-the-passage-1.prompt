@@ -1,0 +1,40 @@
+task: "Chinese whispers (Repeat the passage)"
+doc: "Repeat the passage, but imprecisely (using temperature)"
+tags: fun prose grammar
+issues:
+- Not very effective.
+prompt-version: 1
+prompt: |+
+  Try to repeat the following passage:
+  <delim>
+  This is a game of chinese whispers and I'm telling you something important.
+  <delim>
+  Attempt: This is a game of chinese whispers and what I'm telling you is important.
+  <delim>
+  Try to repeat the following passage:
+  <delim>
+  <passage>
+  <delim>
+  Attempt:
+force-engine: "OpenAI Davinci"
+temperature: 0.9
+# Can go over 1.0 but then bad results
+# temperature: 1.1
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "passage"
+examples:
+- |-
+    There was a table set out under a tree in
+    front of the house, and the March Hare and the
+    Hatter were having tea at it : a Dormouse was
+    sitting between them, fast asleep, and the
+    other two were using it as a cushion, resting
+    their elbows on it, and talking over its head.
+filter: on
+completion: off
+insertion: off

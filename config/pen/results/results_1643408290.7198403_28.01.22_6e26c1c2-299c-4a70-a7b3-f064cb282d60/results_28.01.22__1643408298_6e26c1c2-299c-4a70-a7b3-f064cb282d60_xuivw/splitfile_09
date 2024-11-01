@@ -1,0 +1,9 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt.bak  harry.txt.bak2  harry.txt.bak3
+» cd ../..
+» ls
+ notes  notes-old  notes-old2
+» cd notes-old2
+» ls
+ harry.txt  harry.txt.bak  harry.txt.bak2  harry.txt.b

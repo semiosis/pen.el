@@ -1,0 +1,1 @@
+ aws lambda list-functions | jq -r '.Functions[].FunctionName' | xargs -I{} aws lambda delete-function --function-name {}

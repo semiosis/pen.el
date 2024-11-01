@@ -1,0 +1,6 @@
+cd /;  "ebible" "-m" "ESV" "Joel 2:1-11" "#" "<==" "Joel"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "ebible" "-m" "NASB" "-nem" "Luke 21-24" "#" "<==" "bash"
+cd /;  "ebible" "-m" "ESV" "John 6:27-29" "#" "<==" "John"
+cd /;  "ebible" "-m" "ESV" "Deuteronomy 17:17" "#" "<==" "Deuteronomy"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Deuteronomy 17:17" "#" "<==" "Deuteronomy"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Deuteronomy 17" "#" "<==" "Deuteronomy"

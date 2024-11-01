@@ -1,0 +1,16 @@
+* cushman-codex
+We currently offer two Codex models, davinci-
+codex and cushman-codex.
+
+Davinci Codex is more capable, particularly
+for translating NL to code.
+
+Its per-request token limit is also double the
+usual limit (4,096 tokens instead of 2,048)
+which can improve results.
+
+Cushman Codex is almost as capable, but
+slightly faster.
+
+This speed advantage may be preferable for
+real-time applications

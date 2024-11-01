@@ -1,0 +1,6 @@
+cd /root/.emacs.d/manual-packages/bible-mode;  "words-to-avy-tuples" "-nbe" "/tmp/SH50avy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/manual-packages/bible-mode;  "words-to-avy-tuples" "-nbe" "/tmp/SH50avy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/manual-packages/bible-mode;  "words-to-avy-tuples" "-nbe" "/tmp/SH50avy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/manual-packages/bible-mode;  "words-to-avy-tuples" "-nbe" "/tmp/uazjavy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/manual-packages/bible-mode;  "words-to-avy-tuples" "-nbe" "/tmp/uazjavy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/manual-packages/bible-mode;  "words-to-avy-tuples" "-nbe" "/tmp/uazjavy-bible.txt" "#" "<==" "perl"

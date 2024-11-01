@@ -1,0 +1,93 @@
+neural ranking models
+    Their power lies in the ability to learn
+    from the raw text inputs for the ranking
+    problem to avoid many limitations of hand-
+    crafted features.
+
+    NNs have sufficient capacity to model
+    complicated tasks, which is needed to
+    handle the complexity of relevance
+    estimation in ranking.
+
+Learning to rank
+LTR
+machine-learned ranking
+MLR
+    The application of ML, typically
+    supervised, semi-supervised or RL, in the
+    construction of ranking models for IR
+    systems.
+
+    Training data consists of lists of items
+    with some partial order specified between
+    items in each list.
+
+    This order is typically induced by giving
+    a numerical or ordinal score or a binary
+    judgment (e.g. "relevant" or "not
+    relevant") for each item.
+
+    The ranking model purposes to rank, i.e.
+    producing a permutation of items in new,
+    unseen lists in a similar way to rankings
+    in the training data.
+
+    Ranking is a central part of many IR
+    problems, such as document retrieval,
+    collaborative filtering, sentiment
+    analysis, and online advertising.
+
+Neural Information Retrieval
+Neural IR
+    https://www.microsoft.com/en-us/research/publication/introduction-neural-information-retrieval/
+
+    Neural ranking models for IR use shallow
+    or deep NNs to rank search results in
+    response to a query.
+
+    Traditional learning to rank models employ
+    supervised ML techniques—including
+    NNs—over hand-crafted IR features.
+
+    By contrast, more recently proposed neural
+    models learn representations of language
+    from raw text that can bridge the gap
+    between query and document vocabulary.
+
+    Unlike classical learning to rank models
+    and non-neural approaches to IR, these new
+    ML techniques are data-hungry, requiring
+    large scale training data before they can
+    be deployed.
+
+    This tutorial introduces basic concepts
+    and intuitions behind neural IR models,
+    and places them in the context of
+    classical non-neural approaches to IR.
+
+    We begin by introducing fundamental
+    concepts of retrieval and different neural
+    and non-neural approaches to unsupervised
+    learning of vector representations of
+    text.
+
+    We then review IR methods that employ
+    these pre-trained neural vector
+    representations without learning the IR
+    task end-to-end.
+
+    We introduce the LTR framework next,
+    discussing standard loss functions for
+    ranking.
+
+    We follow that with an overview of deep
+    NNs (DNNs), including standard
+    architectures and implementations.
+
+    Finally, we review supervised neural
+    learning to rank models, including recent
+    DNN architectures trained end-to-end for
+    ranking tasks.
+
+    We conclude with a discussion on potential
+    future directions for neural IR.

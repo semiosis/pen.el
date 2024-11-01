@@ -1,0 +1,4 @@
+cd /root/.pen/documents/notes;  "host-script" "-sn" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/All_Creatures_Of_Our_God_And_King-Lasst_Uns_Erfreuen.mp3" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1524.mp3" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1524.mp3" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1524.mp3" "#" "<==" "withopts"

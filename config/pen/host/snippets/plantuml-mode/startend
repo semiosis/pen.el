@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: startuml
+# group: start
+# key: i
+# --
+@startuml
+
+`yas-selected-text`$0
+
+@enduml

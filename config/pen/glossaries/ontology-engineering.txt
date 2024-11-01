@@ -1,0 +1,33 @@
+ontology engineering
+ontology building
+    A set of tasks related to the development
+    of ontologies for a particular domain.
+    
+    It is a subfield of knowledge engineering
+    that studies the ontology development
+    process, the ontology life cycle, the
+    methods and methodologies for building
+    ontologies, and the tools and languages
+    that support them.
+    
+    Ontology engineering aims to make explicit
+    the knowledge contained in software
+    applications, and organizational
+    procedures for a particular domain.
+    
+    Ontology engineering offers a direction
+    for overcoming semantic obstacles, such as
+    those related to the definitions of
+    business terms and software classes.
+    
+    Known challenges with ontology engineering
+    include:
+
+    - Ensuring the ontology is current with
+      domain knowledge and term use
+    - Providing sufficient specificity and
+      concept coverage for the domain of
+      interest, thus minimizing the content
+      completeness problem
+    - Ensuring the ontology can support its
+      use cases

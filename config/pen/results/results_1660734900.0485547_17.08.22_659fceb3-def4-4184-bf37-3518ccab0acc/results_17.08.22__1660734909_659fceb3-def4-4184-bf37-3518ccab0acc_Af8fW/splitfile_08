@@ -1,0 +1,16 @@
+
+  -- For example, if the user enters "23", the program should print "You are 23 years old"
+  -- Hint: use read and putStrLn
+  -- age <- read <$> getLine
+  -- putStrLn $ "You are " ++ show age ++ " years old"
+  -- Hint: you can use read to convert a string to an integer
+
+  -- Read in from the user a person's name
+  -- Then, print the person's name within a sentence
+  -- For example, if the user enters "John", the program should print "Hello, John!"
+  -- name <- read <$> getLine
+  -- putStrLn $ "Hello, " ++ name ++ "!"
+
+  -- Read in from the user a person's age and their name
+  -- Then, print the person's age and name within a sentence
+  -- For example, if the user

@@ -1,0 +1,1 @@
+- Simon Peyton Jones: Sure! So it's a stateful computation. It takes two inputs, an initial value and a step value.

@@ -1,0 +1,1 @@
+cd /volumes/home/shane/var/smulliga/source/git/flonatel/pipexec;  "pipexec" "-l" "2" "--" "[A" "/bin/ls" "-l" "]" "[B" "/bin/grep" "LIC" "]" "{A:1>B:0}" "{PARENT:0=A:0}" "{PARENT:1=B:1}" "{PARENT:2=B:2}" "#" "<==" "zsh"

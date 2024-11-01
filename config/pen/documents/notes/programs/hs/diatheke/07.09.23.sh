@@ -1,0 +1,6 @@
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "John 8:31-32" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "I Corinthians 6:1-7" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Matthew 22:37-39" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Matthew 22:37-40" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Luke 9:26" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Isaiah 53" "#" "<==" "in-pen"

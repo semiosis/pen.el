@@ -1,0 +1,14 @@
+"inhibit-startup-message"
+"Non-nil means don't display any startup message.")
+
+;; (setq inhibit-startup-message t)
+
+;; (setq initial-scratch-message nil)
+
+;; (setq initial-major-mode 'org-mode)
+
+;; (setq initial-scratch-message nil)
+
+;; (setq initial-scratch-message nil)
+
+;; (setq initial-scratch-message nil)

@@ -1,0 +1,7 @@
+
+  (interactive)
+  (delete-file "/home/shane/var/smulliga/source/git/semiosis/pen.el/src/pen.el")
+  (delete-file "/home/shane/var/smulliga/source/git/semiosis/pen.el/.gitignore")
+  (delete-file "/home/shane/.emacs.d/.gitignore")
+  (delete-file "/home/shane/.emacs.d/.git"))
+

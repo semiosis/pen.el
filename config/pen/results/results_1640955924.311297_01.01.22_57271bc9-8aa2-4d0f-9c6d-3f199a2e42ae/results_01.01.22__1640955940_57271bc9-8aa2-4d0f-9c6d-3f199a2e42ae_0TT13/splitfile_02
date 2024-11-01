@@ -1,0 +1,10 @@
+
+function! ArgsToString(...)
+    let args = a:000
+    let s = ""
+    for arg in args
+        let s = s . "\"" . arg . "\"" . " "
+    endfor
+    return s
+endfunction
+

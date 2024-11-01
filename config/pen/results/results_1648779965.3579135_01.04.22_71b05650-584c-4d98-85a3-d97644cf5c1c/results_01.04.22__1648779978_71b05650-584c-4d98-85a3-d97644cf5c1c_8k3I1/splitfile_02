@@ -1,0 +1,30 @@
+VIM(1)                     User Commands                    VIM(1)
+
+NAME
+       vim - Vi IMproved, a programmers text editor
+
+SYNOPSIS
+       vim [option] [file ...]
+
+DESCRIPTION
+       Vim is a very powerful text editor. It is an improved version of the vi editor distributed with most UNIX systems.  Vim can
+       be used to edit both the command line and the first line of many types of files.
+
+       The text you enter is saved in a file called .viminfo by default. You can change the name of this file with the -i option.
+
+       Vim has a built-in help. Use the ":help" command to read it.
+
+       Vim differs from vi in several ways:
+
+       * It uses a GUI by default, though you can also use it without a GUI.
+       * It is multilingual. You can edit files containing characters from any supported national language.
+       * It allows multiple buffers. You can open a file in one buffer and still edit another one.
+       * It allows you to preview your changes in a separate buffer while you are editing.
+       * It allows you to view the help files right inside Vim.
+       * It allows you to run shell commands right from within Vim.
+       * It allows you to run any number of external programs to handle a file.
+       * It allows you to start a debugger right from within Vim.
+       * It allows you to change options on the fly.
+       * It allows you to write your own commands.
+       * It allows you to have any number of custom command files.
+       * It allows you to use any number of different undo mechanisms

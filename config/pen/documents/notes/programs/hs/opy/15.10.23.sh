@@ -1,0 +1,2 @@
+cd /volumes/home/shane/var/smulliga/source/git/PacktPublishing/R-Programming-By-Example/Chapter02;  "opy" "-show" "/volumes/home/shane/var/smulliga/source/git/PacktPublishing/R-Programming-By-Example/Chapter02/data_brexit_referendum.csv" "np" "#" "<==" "np"
+cd /volumes/home/shane/var/smulliga/source/git/PacktPublishing/R-Programming-By-Example/Chapter02;  "opy" "-show" "/volumes/home/shane/var/smulliga/source/git/PacktPublishing/R-Programming-By-Example/Chapter02/data_brexit_referendum.csv" "np" "#" "<==" "np"

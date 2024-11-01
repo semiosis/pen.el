@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "unicode" "dota" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unicode" "dots" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unicode" "horizontal" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unicode" "⠇" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unicode" "BRAILLE" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unicode" "BRAILLE" "#" "<==" "bash"
+cd /root/notes;  "unicode" "x" "#" "<==" "zsh"

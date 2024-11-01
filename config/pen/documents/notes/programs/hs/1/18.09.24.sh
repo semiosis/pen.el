@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Peter" "1:21" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Peter" "1:21-22" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Peter" "1:20-22" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Peter" "1:20-23" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Corinthians" "7:19" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Corinthians" "9:1-2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Corinthians" "9:3-6" "#" "<==" "zsh"

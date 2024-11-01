@@ -1,0 +1,106 @@
+Attitude Determination and Control Subsystem
+ADCS
+    Sensors and Estimators:
+        Sensors are instruments which measure
+        various quantities during the flight
+        of the satellite. These sensors are
+        like eyes and ears of the satellite.
+        In this section, we will only consider
+        sensors concerning attitude
+        determination and control.
+
+        As stated earlier, the purpose of ADCS
+        is to determine the orientation of
+        satellite with respect to some
+        reference frame. This requires
+        measurement of various vector
+        quantities in the body frame of the
+        satellite. This task is performed by
+        sensors. For example, sun-sensor
+        measures the unit vector in the
+        direction of sun from satellite. The
+        magnetometer measures local magnetic
+        field due to earth. The more detailed
+        information about different sensors
+        will be given in subsequent sections.
+
+        Although, we want to determine the
+        attitude, there is no direct sensor to
+        measure it. Thus we have to use
+        measurement from different sensors and
+        estimate attitude using them. There
+        are number of algorithms to achieve
+        this.
+
+    Actuators:
+        One of the goals of ADCS is to bring
+        the satellite in desired orientation
+        and maintain it. This requires some
+        component which will exert force or
+        torque on the satellite body. It is
+        called as actuation and is performed
+        by actuator. Magnetorquer, reaction
+        wheels are some of the actuators
+        commonly used in small satellites.
+        These will be discussed thoroughly in
+        subsequent sections.
+
+    Control Law:
+        Control law is a mathematical
+        framework which takes sensor inputs,
+        reference signal and decides required
+        actuation for controlling the plant
+        (which is the satellite in this case).
+        There are lots of control laws in
+        literature. In subsequent sections
+        some commonly used laws are described
+        (eg. PID). Propagator: The small
+        satellite faces very stringent power
+        and mass constraints. Thus, sensors
+        which consume lot of power for
+        operation can not be used
+        continuously. In such scenarios,
+        computational models are used to
+        simulate sensor measurement using
+        actual measurement as a initial
+        condition. These are called as
+        propagator models.
+
+    On Ground Simulations:
+        The control system comprising of above
+        parts is designed to achieve the
+        required control goal. Now, it is
+        essential to verify the performance of
+        this control system before launching
+        the satellite to ensure its success.
+        Thus ADCS has to undergo following
+        tests:
+
+    Software simulation
+        The designed control law is thoroughly
+        tested in softwares or programming
+        languages like Matlab/SImulink, Python
+        etc. The required environmental models
+        are generated in software as per need.
+        Some existing models can be used and
+        are mentioned later. This process is
+        iterative and occurs along with design
+        itself.
+
+    On-Board In Loop Simulation (OILS)
+        In this testing, control law is
+        implemented on actual microprocessor
+        unlike fully software testing.
+        Environmental models, sensor models
+        are still simulated in software. This
+        testing can be done with Simulink,
+        Labview etc.
+
+    Hardware In Loop Simulation (HILS)
+        In this testing, control law is coded
+        on microprocessor along with actual
+        sensor data. This means environment
+        experienced in space has to be
+        simulated physically, which will bring
+        actual sensor in the control loop
+        test.

@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: FontForge
+# contributor: Toptal & contributors
+# key: fontforge
+# --
+
+### FontForge ###
+
+*.sfd-*
+*.sfd~
+
+# No Binaries
+
+*.ttf
+*.ttc
+*.otf
+*.woff
+*.pfb
+*.pfa
+*.pt3
+*.suit

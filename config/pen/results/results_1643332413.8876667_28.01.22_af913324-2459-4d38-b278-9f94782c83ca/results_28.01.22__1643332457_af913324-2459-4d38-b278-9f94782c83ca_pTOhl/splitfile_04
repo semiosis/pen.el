@@ -1,0 +1,3 @@
+potenusa = float(input("Digite o valor da hipotenusa: "))
+cateto1 = float(input("Digite o valor do cateto 1: "))
+cateto2 = float(

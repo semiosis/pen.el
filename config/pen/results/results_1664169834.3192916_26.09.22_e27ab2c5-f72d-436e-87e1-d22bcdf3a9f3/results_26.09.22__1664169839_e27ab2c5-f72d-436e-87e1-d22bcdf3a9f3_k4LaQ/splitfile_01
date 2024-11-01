@@ -1,0 +1,1 @@
+(re-matches #"\d+" "my phone number is 12345")

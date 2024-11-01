@@ -1,0 +1,11 @@
+"RandomizedList" is a data structure that supports O(1) random access.
+
+RandomizedList is a list where you can get a random element in O(1) time.
+
+RandomizedList is implemented using a hash table and a linked list.
+
+RandomizedList is a list where you can get a random element in O(1) time.
+
+RandomizedList is implemented using a hash table and a linked list.
+
+RandomizedList is a list where you can get

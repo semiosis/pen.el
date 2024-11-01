@@ -1,0 +1,18 @@
+- 1. Durkheim (1858-1917)
+- 2. Weber (1864-1920)
+- 3. Chicago (1890-1995)
+- 4. Durkheim (1858-1917)
+- 5. Weber (1864-1920)
+"""
+
+from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+from nltk import pos_tag
+import numpy as np 
+
+
+class Corpus():
+
+    def __init__(self, file: str):
+
+        """  Initializing the Corpus object with the file above

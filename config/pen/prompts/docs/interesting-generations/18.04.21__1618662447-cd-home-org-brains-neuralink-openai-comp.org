@@ -1,0 +1,36 @@
+* Generation
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  cd "$HOME/org-brains/neuralink"; openai-complete-response $MYGIT/semiosis/prompts/prompts/tutor.prompt neosensory competitors "Could you please explain what neosensory is in the context of competitors and why it is important?" # "<==" zsh
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  This is a conversation between a human and a brilliant AI.
+  The topic is "neosensory".
+  
+  Human: Hello, are you my competitors tutor?
+  ###
+  AI: Hi there. Yes I am. How can I help you today?
+  ###
+  Human: What questions can I ask you about neosensory?
+  ###
+  AI: You may ask me anything relating to competitors.
+  ###
+  Human: OK then. Could you please explain what neosensory is in the context of competitors and why it is important?
+  ###
+  AI: I would be happy to answer your question. In the context of competitors, neosensory is the ability of potential competitors to sense, perceive, recognize, and understand competitors. You might wonder why this is important. First, with the increasing amount of data available to us as potential competitors, it is important to be able to sort through this data and to be able to synthesize it in a meaningful way. This is important because there is a lot of information out there and it is getting harder and harder to find the best data to help you succeed as a potential competitor. Second, it is important to be able to perform these tasks faster than your competitors and this is where neosensory comes in. When you have a good understanding of what your potential competitors are doing and what information they are using, you can then perform a comparative analysis and identify any weak points in your competitors. If you can then exploit these weaknesses, you can then improve your own performance as a potential competitor.
+#+END_SRC
+
+* Why it's interesting
+This shows that prompting GPT-3 in this way
+has resulted in what seems to be a fictional
+definition for the term =neosensory=.
+
+If =GPT-3= knew about the _neosensory
+corporation_ then this would impact the
+definition, but it does not appear to, so it
+has come up with an artificial definition.
+
+It would be interesting to create a prompt
+which not only comes up with a definition for
+a word but works also to create fictional
+definitions even for words which exist.

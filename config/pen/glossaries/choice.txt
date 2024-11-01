@@ -1,0 +1,11 @@
+affordances
+    Properties of objects which show users the
+    actions they can take.
+    
+    Users should be able to perceive
+    affordances without having to consider how
+    to use the items.
+    
+    For instance, a button can be designed to
+    look as if it needs to be turned or
+    pushed.

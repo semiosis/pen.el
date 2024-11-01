@@ -1,0 +1,4 @@
+Generate a random baby name"
+  (interactive "ssex: ")
+  (let ((name (concat "Baby" sex)))
+    (insert name)))

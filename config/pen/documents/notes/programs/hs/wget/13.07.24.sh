@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=xR6l87FiR_8" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://biblehub.com/interlinear/ezekiel/34-11.htm" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=wcX-FRUSm8M" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=A-MANcuJwVo" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=xe9eg2G3tCk&t=492" "#" "<==" "pen-ci"

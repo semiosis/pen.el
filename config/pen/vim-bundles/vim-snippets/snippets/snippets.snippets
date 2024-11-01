@@ -1,0 +1,37 @@
+# snippets for making snippets :)
+snippet i
+	extends ${0:c}
+snippet e
+	extends ${0:c}
+snippet f
+	snippet ${1:trigger}
+		${2:function}(${0})
+snippet s
+	snippet ${1:trigger}
+		${0}
+snippet snip
+	snippet ${1:trigger}
+		${0}
+snippet msnip
+	snippet ${1:trigger} ${2:description}
+		${0}
+snippet v
+	{VISUAL}
+snippet $
+	${${1:1}:${0:text}}
+snippet 1
+	\${1:${0}}
+snippet 2
+	\${2:${0}}
+snippet 3
+	\${3:${0}}
+snippet 4
+	\${4:${0}}
+snippet 0
+	\${0${0::last}}
+snippet v
+	"{${0}VISUAL}"
+#snippet xcp
+#	\`Xcp("{VISUAL}")\`
+snippet xcp
+	\`Xcp("${0:import glob}")\`

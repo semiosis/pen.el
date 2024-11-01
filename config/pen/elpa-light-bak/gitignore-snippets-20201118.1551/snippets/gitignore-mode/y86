@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Y86
+# contributor: Toptal & contributors
+# key: y86
+# --
+
+### Y86 ###
+
+# Object File
+*.yo

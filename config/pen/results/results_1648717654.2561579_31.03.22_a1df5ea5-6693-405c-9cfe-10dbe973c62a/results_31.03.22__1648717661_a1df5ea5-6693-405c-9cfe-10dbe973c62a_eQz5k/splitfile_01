@@ -1,0 +1,4 @@
+ "data" is a keyword in the context of "haskell".
+It is used to define a data constructor. It is also used to determine the data type of the constructor.
+"newtype" is also a keyword in the context of "haskell".
+It is used to create an identical data type with a different implementation.

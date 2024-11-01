@@ -1,0 +1,10 @@
+#if __GLASGOW_HASKELL__ >= 701
+
+module Main where
+import Data.List
+-- show --
+main = print $ sum [1..100]
+-- $$ is the "write-string" syntax for writing directly to the terminal.
+-- There's also $$("...") which behaves similarly but there's a slight
+-- difference in the handling of escape characters (e.g. \t, \r) \$$ --
+-- is the "print" syntax for printing to stdout \s -> -- may be used as a statement footnote. -- See http://www.haskell.org/ghc/docs/7.6.3/html/users_guide/syntax-extns.html#notation for details quotation = $$ "A quotation: " <> quotation -- Quotation brackets are used when quoting Haskell code, to avoid escaping quotations = ["A quotation: " <> quotation | quotation <-

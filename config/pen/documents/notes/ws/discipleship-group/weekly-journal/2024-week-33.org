@@ -1,0 +1,83 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 33
+
+* D-Group weekly session notes
+Started working on it: <2024-08-15 Thu>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=YIBNUIhqyFI][youtube.com: 24/7 HYMNS: A Peaceful Morning With JESUS  - soft piano hymns + loop]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage |
+|---------------------+---------------+------------------------+---------------------+---------------|
+| [[sh:bible-read-passage nasb Matthew 6:22-24 ][Matthew 6:22-24]]     | [[sh:bible-study-passage nasb I Timothy 1-5 ][I Timothy 1-5]] |                        | [[sh:bible-read-passage nasb Proverbs 4:23 ][Proverbs 4:23]]       | [[sh:bible-study-passage nasb I Kings 11-12 ][I Kings 11-12]] |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb I Kings 17-19 ][I Kings 17-19]] |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Proverbs 4-8 ][Proverbs 4-8]]  |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 6:22-24
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 6:22
+‾‾‾‾‾‾‾‾‾‾‾‾
+“The eye is the lamp of the body; so then if
+your eye is clear, your whole body will be full
+of light.
+
+Matthew 6:23
+‾‾‾‾‾‾‾‾‾‾‾‾
+But if your eye is bad, your whole body will be
+full of darkness. If then the light that is in
+you is darkness, how great is the darkness!
+
+Matthew 6:24
+‾‾‾‾‾‾‾‾‾‾‾‾
+“No one can serve two masters; for either he
+will hate the one and love the other, or he will
+be devoted to one and despise the other. You
+cannot serve God and wealth.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Proverbs 4:23
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Proverbs 4:23
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Watch over your heart with all diligence, For
+from it flow the springs of life.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

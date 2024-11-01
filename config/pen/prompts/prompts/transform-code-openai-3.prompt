@@ -1,0 +1,36 @@
+task: "Transform code OpenAI"
+tags: code
+doc: "Transform some code given the language and a transformation description"
+prompt-version: 5
+engine: OpenAI Davinci Code Edit
+# mode already specified in the engine
+# mode: edit
+prompt: "<original-program>"
+instruction: "<transformation>"
+xlr-n-generate: 5
+temperature: 0.0
+# On each collated generation, rotate the temperature upwards by 0.1
+collation-temperature-stepper: "(mod (+ <temperature> 0.1) 1)"
+top-p: 1.0
+best-of: 1
+# To short-circuit overly long generations
+max-generated-tokens: "prompt-length"
+cache: on
+stop-sequences:
+- "EOD"
+vars:
+- code: "(pen-selected-text)"
+- "language": "(pen-detect-language-ask)"
+- transformation: ~
+preprocessors:
+- cat
+- slugify
+examples:
+- "print(\"Hello world with empathy\")"
+- "Python"
+- "using numpy"
+n-test-runs: 5
+n-collate: 1
+n-completions: 5
+new-document: yes
+filter: on

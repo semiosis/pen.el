@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: read in words
+# group: 
+# key: readinwords
+# --
+words = open("pg84.txt").read().split()

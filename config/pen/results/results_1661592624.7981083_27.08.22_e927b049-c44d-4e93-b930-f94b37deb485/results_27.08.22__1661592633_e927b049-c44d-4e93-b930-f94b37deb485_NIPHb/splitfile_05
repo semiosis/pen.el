@@ -1,0 +1,12 @@
+ a list of objects, one for each record.
+  objects <- map (fromList . fmap (\m -> m {-caret-})) maps
+
+  -- Convert the list of objects into a list of JSON values.
+  jsonValues <- map (toJSON . toList) objects
+
+  -- Convert the list of JSON values into a single JSON array.
+  jsonArray <- concatMap (\v -> [v]) jsonValues
+
+  -- Print the JSON array as text.
+  putStrLn $ encodeUtf8 jsonArray
+EOD

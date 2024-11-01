@@ -1,0 +1,1 @@
+ine-key pen-map (kbd "C-c C-n") 'pen-nuke)

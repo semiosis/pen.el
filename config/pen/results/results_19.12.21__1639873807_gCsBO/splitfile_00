@@ -1,0 +1,26 @@
+
+
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+
+;; ---------------- Packages -----------------------;
+
+
+;; Elpy for python IDE features and virtualenv support.
+(use-package elpy
+  :ensure t   ;; I don't really need it installed lol. Just using it for now.
+
+  :config
+
+  (elpy-enable))
+
+
+;;company mode auto complete, company also provides vim & auto completion. Auto completion in prog modes is useless af. It only works in text mode & has a limited scope of comple

@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Ephesians 1:15-23" "#" "<==" "in-pen"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Ephesians 1:3" "#" "<==" "in-pen"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Ephesians 2:6" "#" "<==" "in-pen"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1147" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "I Cronicles 21" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/scripts/bible-books;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "I Chronicles 21" "#" "<==" "in-pen"

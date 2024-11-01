@@ -1,0 +1,16 @@
+ (T.pack . T.unpack) columns
+
+  -- Print the list of numbers.
+  putStrLn numbers
+EOD
+
+# python files
+
+cat draft.py <<EOD
+import sys
+import csv
+
+records = csv.reader(sys.stdin)
+numbers = map(lambda x: map(int, x), records)
+for row in numbers: print row
+EOD

@@ -1,0 +1,9 @@
+
+      (pen-complete-selection preceding-text tv)
+    (pen-complete-line preceding-text tv)))
+
+(defun pen-complete-line-maybe-with-space (preceding-text &optional tv)
+  (interactive (list (pen-preceding-text) nil))
+  (if mark-active
+      (pen-complete-selection preceding-text tv)
+    (pen-complete-line_

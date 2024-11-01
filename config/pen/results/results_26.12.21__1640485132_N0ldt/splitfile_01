@@ -1,0 +1,12 @@
+"dnf" is a command line tool for manipulating rpm-based packages.
+
+Usage:
+  dnf [options] COMMAND
+
+Options:
+  -h, --help            show command line options
+  -v, --verbose         be more verbose
+  -q, --quiet           be more quiet
+  --version             show dnf version and exit
+  --installroot=<path>  set install root
+  --releasever=<version

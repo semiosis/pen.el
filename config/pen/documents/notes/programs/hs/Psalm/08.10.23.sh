@@ -1,0 +1,1 @@
+cd /root/notes;  "Psalm" "42" "#" "<==" "zsh"

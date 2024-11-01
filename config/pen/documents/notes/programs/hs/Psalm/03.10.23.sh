@@ -1,0 +1,6 @@
+cd /tmp;  "Psalm" "147:3" "#" "<==" "bash"
+cd /tmp;  "Psalm" "51:17" "#" "<==" "bash"
+cd /tmp;  "Psalm" "51:17" "#" "<==" "zsh"
+cd /tmp;  "Psalm" "51:17" "#" "<==" "zsh"
+cd /tmp;  "Psalm" "51:17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Psalm" "69" "#" "<==" "zsh"

@@ -1,0 +1,11 @@
+
+
+EOD
+
+cat draft.text | fold -w 60 > draft.folded.text
+cat draft.folded.text | fold -w 60 > draft.folded.folded.text
+cat draft.folded.folded.text | fold -w 60 > draft.folded.folded.folded.text
+cat draft.folded.folded.folded.text | fold -w 60 > draft.folded.folded.folded.folded.text
+cat draft.folded.folded.folded.text | fold -w 60 > draft.folded2-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-2
+cat draft2 >> draft2
+cat draft2 >> draft3

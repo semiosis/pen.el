@@ -1,0 +1,9 @@
+cd 'harrys adventures'
+» ls
+ harry-potter-1.txt  harry-potter-2.txt  harry-potter-3.txt  harry-potter-4.txt
+» cd ..
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» mkdir 'more harry'
+» ls
+ clipboard.txt   core  'harrys adventures

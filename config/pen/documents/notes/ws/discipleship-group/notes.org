@@ -1,0 +1,39 @@
+* Every time we open our Bibles, we should pray the simple prayer that David prayed
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Psalm 119:18
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Psalms 119:18
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Open my eyes, that I may behold Wonderful
+things from Your law.
+
+(NASB)
+#+end_src
+
+* It is absolutely imperative that we seek God’s guidance in order to understand His Word
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  1 Corinthians 2:12-14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+1 Corinthians 2:12-14
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Now we have received, not the spirit of the
+world, but the Spirit who is from God, so that
+we may know the things freely given to us by
+God, which things we also speak, not in words
+taught by human wisdom, but in those taught by
+the Spirit, combining spiritual thoughts with
+spiritual words.
+
+But a natural man does not accept the things
+of the Spirit of God, for they are foolishness
+to him; and he cannot understand them, because
+they are spiritually appraised.
+
+(NASB)
+#+end_src

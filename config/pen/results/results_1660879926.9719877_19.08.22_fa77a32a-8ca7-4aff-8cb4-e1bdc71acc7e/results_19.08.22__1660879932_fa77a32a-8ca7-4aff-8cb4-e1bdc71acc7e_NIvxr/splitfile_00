@@ -1,0 +1,1 @@
+"hosts: all" is a special keyword that tells Ansible to run the task on all hosts.

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rm element index
+# key: rmi
+# --
+a = append(a[:i], a[i+1:]...)

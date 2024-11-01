@@ -1,0 +1,553 @@
+HTTP/1.1 200 OK
+date: Sat, 17 Sep 2022 08:48:36 GMT
+vary: Accept-Encoding,Cookie,Authorization
+server: ATS/8.0.8
+x-content-type-options: nosniff
+content-language: en
+last-modified: Mon, 12 Sep 2022 09:02:26 GMT
+content-type: text/html; charset=UTF-8
+age: 2
+x-cache: cp4036 hit, cp4032 hit/2
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp4032"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+accept-ch: Sec-CH-UA-Arch,Sec-CH-UA-Bitness,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-UA-Platform-Version
+permissions-policy: interest-cohort=(),ch-ua-arch=(self "intake-analytics.wikimedia.org"),ch-ua-bitness=(self "intake-analytics.wikimedia.org"),ch-ua-full-version-list=(self "intake-analytics.wikimedia.org"),ch-ua-model=(self "intake-analytics.wikimedia.org"),ch-ua-platform-version=(self "intake-analytics.wikimedia.org")
+x-client-ip: 2407:7000:8257:5800:2ed9:aea2:86a4:a865
+cache-control: private, s-maxage=0, max-age=0, must-revalidate
+accept-ranges: bytes
+content-length: 20518
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Ogdoad (Gnosticism) - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b07fa10c-db95-407a-a714-757409259b06","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Ogdoad_(Gnosticism)","wgTitle":"Ogdoad (Gnosticism)","wgCurRevisionId":1068349428,"wgRevisionId":1068349428,"wgArticleId":97094,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Source attribution","Creation myths","Gnosticism"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Ogdoad_(Gnosticism)","wgRelevantArticleId":97094,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgVector2022PreviewPages":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q25215440","GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading",
+"ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.40.0-wmf.1"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=1000"/>
+<meta property="og:title" content="Ogdoad (Gnosticism) - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Ogdoad_(Gnosticism)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Ogdoad_(Gnosticism)"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Ogdoad_Gnosticism rootpage-Ogdoad_Gnosticism skin-vector action-view skin-vector-legacy vector-toc-not-collapsed vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-enabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Ogdoad (Gnosticism)</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about the concept in Gnosticism. For the deities in Egyptian mythology, see <a href="/wiki/Ogdoad_(Egyptian)" title="Ogdoad (Egyptian)">Ogdoad (Egyptian)</a>.</div>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks collapsible"><tbody><tr><th class="sidebar-title" style="font-size:92%;"><span style="padding-left:2.25em;">&#160;</span> 
+<div style="font-size:120%;line-height:1.2em; padding-bottom:0.4em;"> <style data-mw-deduplicate="TemplateStyles:r886047488">.mw-parser-output .nobold{font-weight:normal}</style><span class="nobold">Part of <a href="/wiki/Category:Gnosticism" title="Category:Gnosticism">a series</a> on</span><br /><span style="font-size:150%;"><a href="/wiki/Gnosticism" title="Gnosticism">Gnosticism</a></span></div></th></tr><tr><td class="sidebar-image"><a href="/wiki/File:Abraxas_gem_scan.svg" class="image"><img alt="Abraxas gem scan.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Abraxas_gem_scan.svg/100px-Abraxas_gem_scan.svg.png" decoding="async" width="100" height="131" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Abraxas_gem_scan.svg/150px-Abraxas_gem_scan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Abraxas_gem_scan.svg/200px-Abraxas_gem_scan.svg.png 2x" data-file-width="280" data-file-height="366" /></a></td></tr><tr><td class="sidebar-content hlist">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Gnostic concepts</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Adam_kasia" class="mw-redirect" title="Adam kasia">Adam kasia</a></li>
+<li><a href="/wiki/Adam_pagria" class="mw-redirect" title="Adam pagria">Adam pagria</a></li>
+<li><a href="/wiki/Aeon_(Gnosticism)" title="Aeon (Gnosticism)">Aeon</a></li>
+<li><a href="/wiki/Anima_mundi" title="Anima mundi">Anima mundi</a></li>
+<li><a href="/wiki/Archon_(Gnosticism)" title="Archon (Gnosticism)">Archon</a></li>
+<li><a href="/wiki/Barbelo" title="Barbelo">Barbelo</a></li>
+<li><a href="/wiki/Demiurge" title="Demiurge">Demiurge</a></li>
+<li><a href="/wiki/Five_Seals" title="Five Seals">Five Seals</a></li>
+<li><a href="/wiki/Gnosis" title="Gnosis">Gnosis</a></li>
+<li><a href="/wiki/Luminary_(Gnosticism)" title="Luminary (Gnosticism)">Luminary</a></li>
+<li><a href="/wiki/Manda_(Mandaeism)" title="Manda (Mandaeism)">Manda</a></li>
+<li><a href="/wiki/Monad_(Gnosticism)" title="Monad (Gnosticism)">Monad</a></li>
+<li><a class="mw-selflink selflink">Ogdoad</a></li>
+<li><a href="/wiki/Pleroma" title="Pleroma">Pleroma</a></li>
+<li><a href="/wiki/Sophia_(Gnosticism)" title="Sophia (Gnosticism)">Sophia</a></li>
+<li><a href="/wiki/World_of_Light" title="World of Light">World of Light</a></li>
+<li><a href="/wiki/World_of_Darkness_(Mandaeism)" title="World of Darkness (Mandaeism)">World of Darkness</a></li>
+<li><a href="/wiki/Uthra" title="Uthra">Uthra</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content hlist">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title"><a href="/wiki/List_of_Gnostic_sects" title="List of Gnostic sects">Gnostic sects</a> and founders</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/List_of_Gnostic_sects" title="List of Gnostic sects">List of Gnostic sects</a></li></ul>
+<hr />
+<dl><dt><a href="/wiki/Proto-Gnosticism" title="Proto-Gnosticism">Proto-Gnosticism</a></dt></dl>
+<ul><li><a href="/wiki/Magh%C4%81riya" title="Maghāriya">Maghāriya</a></li>
+<li><a href="/wiki/Thomasines" title="Thomasines">Thomasines</a></li></ul>
+<dl><dt>Judean / Israelite</dt></dl>
+<ul><li><a href="/wiki/Adam" title="Adam">Adam</a>
+<ul><li><a href="/wiki/Mandaeism" title="Mandaeism">Mandaeism</a></li></ul></li>
+<li>Elksai
+<ul><li><a href="/wiki/Elkasaites" class="mw-redirect" title="Elkasaites">Elkasaites</a></li></ul></li>
+<li>Samaritan Baptist
+<ul><li><a href="/wiki/Dositheos_(Samaritan)" title="Dositheos (Samaritan)">Dositheos</a></li>
+<li><a href="/wiki/Simon_Magus" title="Simon Magus">Simon Magus</a> (<a href="/wiki/Simonians" title="Simonians">Simonians</a>)</li>
+<li><a href="/wiki/Menander_(gnostic)" class="mw-redirect" title="Menander (gnostic)">Menander</a></li>
+<li><a href="/wiki/Quqites" title="Quqites">Quqites</a></li></ul></li></ul>
+<dl><dt>Christian Gnosticism</dt></dl>
+<ul><li><a href="/wiki/Apelles_(gnostic)" class="mw-redirect" title="Apelles (gnostic)">Apelles</a></li>
+<li><a href="/wiki/Cerinthus" title="Cerinthus">Cerinthus</a></li>
+<li><a href="/wiki/Justin_(gnostic)" class="mw-redirect" title="Justin (gnostic)">Justin</a></li>
+<li><a href="/wiki/Marcion_of_Sinope" title="Marcion of Sinope">Marcion</a>
+<ul><li><a href="/wiki/Marcionism" title="Marcionism">Marcionism</a></li></ul></li>
+<li><a href="/wiki/Nicolaism" title="Nicolaism">Nicolaism</a></li>
+<li><a href="/wiki/Perates" title="Perates">Perates</a></li>
+<li><a href="/wiki/Saturninus_of_Antioch" title="Saturninus of Antioch">Saturninus</a></li></ul>
+<dl><dt>Syrian-Egyptian</dt></dl>
+<ul><li><a href="/wiki/Ophites" title="Ophites">Ophites</a></li>
+<li><a href="/wiki/Sethianism" title="Sethianism">Sethianism</a></li></ul>
+<dl><dt>Alexandrian</dt></dl>
+<ul><li><a href="/wiki/Basilides" title="Basilides">Basilides</a>
+<ul><li><a href="/wiki/Basilideans" title="Basilideans">Basilideans</a></li></ul></li></ul>
+<dl><dt>Roman</dt></dl>
+<ul><li><a href="/wiki/Valentinus_(Gnostic)" title="Valentinus (Gnostic)">Valentinus</a>
+<ul><li><a href="/wiki/Valentinianism" title="Valentinianism">Valentinianism</a></li></ul></li>
+<li><a href="/wiki/Marcus_(Marcosian)" title="Marcus (Marcosian)">Marcus</a>
+<ul><li><a href="/wiki/Marcosians" title="Marcosians">Marcosians</a></li></ul></li>
+<li><a href="/wiki/Florinus_(Gnostic)" title="Florinus (Gnostic)">Florinus</a></li></ul>
+<dl><dt>Persian Gnosticism</dt></dl>
+<ul><li><a href="/wiki/Mani_(prophet)" title="Mani (prophet)">Mani</a>
+<ul><li><a href="/wiki/Manichaeism" title="Manichaeism">Manichaeism</a></li></ul></li></ul>
+<dl><dt>Chinese Gnosticism</dt></dl>
+<ul><li><a href="/wiki/Chinese_Manichaeism" title="Chinese Manichaeism">Chinese Manichaeism</a></li></ul>
+<dl><dt>Islamic Gnosticism</dt></dl>
+<ul><li><a href="/wiki/Druze" title="Druze">Druze</a></li>
+<li><a href="/wiki/Nusayrism" class="mw-redirect" title="Nusayrism">Nusayrism</a></li></ul>
+<dl><dt>Modern</dt></dl>
+<ul><li><a href="/wiki/Gnosticism_in_modern_times" title="Gnosticism in modern times">Modern schools</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content hlist">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title"><a href="/wiki/List_of_Gnostic_texts" title="List of Gnostic texts">Scriptures</a></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/List_of_Gnostic_texts" title="List of Gnostic texts">List of Gnostic texts</a></li></ul>
+<hr />
+<dl><dt>Texts</dt></dl>
+<ul><li><a href="/wiki/Nag_Hammadi_library" title="Nag Hammadi library">Nag Hammadi library</a></li>
+<li><a href="/wiki/Pseudo-Abdias" title="Pseudo-Abdias">Pseudo-Abdias</a></li>
+<li><a href="/wiki/Clementine_literature" title="Clementine literature">Clementine literature</a></li>
+<li><a href="/wiki/Gnosticism_and_the_New_Testament" class="mw-redirect" title="Gnosticism and the New Testament">Gnosticism and the New Testament</a></li>
+<li><a href="/wiki/List_of_Mandaean_texts" title="List of Mandaean texts">Mandaean scriptures</a></li></ul>
+<dl><dt><a href="/wiki/Codex" title="Codex">Codices</a></dt></dl>
+<ul><li><a href="/wiki/Codex_Tchacos" title="Codex Tchacos">Codex Tchacos</a></li>
+<li><a href="/wiki/Cologne_Mani-Codex" title="Cologne Mani-Codex">Cologne Mani-Codex</a></li>
+<li><a href="/wiki/Askew_Codex" title="Askew Codex">Askew Codex</a></li>
+<li><a href="/wiki/Bruce_Codex" title="Bruce Codex">Bruce Codex</a></li>
+<li><a href="/wiki/Berlin_Codex" title="Berlin Codex">Berlin Codex</a></li>
+<li><a href="/wiki/Ginza_Rabba" title="Ginza Rabba">Codex Nasaraeus</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content hlist">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Influenced by</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Apocalyptic_literature" title="Apocalyptic literature">Apocalyptic literature</a></li>
+<li><a href="/wiki/Gnosticism#Relation_with_early_Christianity" title="Gnosticism">Early Christianity</a>
+<ul><li><a href="/wiki/Christology" title="Christology">Christology</a></li>
+<li><a href="/wiki/Docetism" title="Docetism">Docetism</a></li>
+<li><a href="/wiki/Gnosticism#Paul_and_Gnosticism" title="Gnosticism">Paul and Gnosticism</a></li></ul></li>
+<li><a href="/wiki/Merkabah_mysticism" title="Merkabah mysticism">Merkabah mysticism</a></li>
+<li><a href="/wiki/Middle_Platonism" title="Middle Platonism">Middle Platonism</a>
+<ul><li><a href="/wiki/Philo" title="Philo">Philo</a></li></ul></li>
+<li><a href="/wiki/Wisdom_(personification)" title="Wisdom (personification)">Wisdom (personification)</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content hlist">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title">Influence on</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Carl_Jung" title="Carl Jung">Carl Jung</a></li>
+<li><a href="/wiki/Esoteric_Christianity" title="Esoteric Christianity">Esoteric Christianity</a>
+<ul><li><a href="/wiki/Christian_theosophy" title="Christian theosophy">Christian theosophy</a></li></ul></li>
+<li><a href="/wiki/Gnosticism_in_modern_times" title="Gnosticism in modern times">Gnosticism in modern times</a></li>
+<li><a href="/wiki/Neoplatonism_and_Gnosticism" title="Neoplatonism and Gnosticism">Neoplatonism and Gnosticism</a></li>
+<li><a href="/wiki/Perennial_philosophy" title="Perennial philosophy">Perennial philosophy</a></li>
+<li><a href="/wiki/Thelema" title="Thelema">Thelema</a></li>
+<li><a href="/wiki/Theosophy" title="Theosophy">Theosophy (Blavatskian)</a></li>
+<li><a href="/wiki/Western_esotericism" title="Western esotericism">Western esotericism</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Gnosticism" title="Template:Gnosticism"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Gnosticism" title="Template talk:Gnosticism"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Gnosticism&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>The concept of an <b>Ogdoad</b> appears in <a href="/wiki/Gnosticism" title="Gnosticism">Gnostic</a> systems of the early Christian era, and was further developed by the theologian <a href="/wiki/Valentinus_(Gnostic)" title="Valentinus (Gnostic)">Valentinus</a> (<i>ca</i>. 160 AD).
+</p><p>The number eight plays an important part in Gnostic systems, and it is necessary to distinguish the different forms in which it appeared at different stages in the development of Gnosticism. The earliest Gnostic systems included a theory of <a href="/wiki/Seven_heavens" class="mw-redirect" title="Seven heavens">seven heavens</a> and a supercelestial region called the Ogdoad. Astronomical theories had introduced the concept of seven <a href="/wiki/Celestial_spheres" title="Celestial spheres">planetary spheres</a> with an eighth above them, the sphere of the fixed stars.
+</p><p>In the <a href="/wiki/Valentinianism" title="Valentinianism">system of Valentinus</a>, the <a href="/wiki/Seven_heavens" class="mw-redirect" title="Seven heavens">seven heavens</a>, and even the region above them, were regarded as but the lowest and last stage of the exercise of creative power. Above them was the <a href="/wiki/Pleroma" title="Pleroma">Pleroma</a>, where were exhibited the first manifestations of the evolution of subordinate existence from the great First Principle.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#7_+_1_System"><span class="tocnumber">1</span> <span class="toctext">7 + 1 System</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Seven_heavens"><span class="tocnumber">1.1</span> <span class="toctext">Seven heavens</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Eighth_sphere"><span class="tocnumber">1.2</span> <span class="toctext">Eighth sphere</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#6_+_2_System"><span class="tocnumber">2</span> <span class="toctext">6 + 2 System</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#First_Ogdoad"><span class="tocnumber">2.1</span> <span class="toctext">First Ogdoad</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#4_+_4_System"><span class="tocnumber">3</span> <span class="toctext">4 + 4 System</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Bibliography"><span class="tocnumber">5</span> <span class="toctext">Bibliography</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Attribution"><span class="tocnumber">5.1</span> <span class="toctext">Attribution</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span id="7_.2B_1_System"></span><span class="mw-headline" id="7_+_1_System">7 + 1 System</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=1" title="Edit section: 7 + 1 System">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Seven_heavens">Seven heavens</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=2" title="Edit section: Seven heavens">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Ptolemaicsystem-small.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ptolemaicsystem-small.png/300px-Ptolemaicsystem-small.png" decoding="async" width="300" height="308" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ptolemaicsystem-small.png/450px-Ptolemaicsystem-small.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ptolemaicsystem-small.png/600px-Ptolemaicsystem-small.png 2x" data-file-width="638" data-file-height="656" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Ptolemaicsystem-small.png" class="internal" title="Enlarge"></a></div>Geocentric <a href="/wiki/Celestial_spheres" title="Celestial spheres">celestial spheres</a>; Peter Apian's <i>Cosmographia</i> (Antwerp, 1539)</div></div></div>
+<p>All the early Gnostics of whose opinions <a href="/wiki/Irenaeus" title="Irenaeus">Irenaeus</a> gives an account, in a section (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_XXIII." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter XXIII.">i. 23 sqq.</a>) probably derived from an earlier writer, agree in the doctrine that the world was made by the instrumentality of <a href="/wiki/Archon_(Gnosticism)" title="Archon (Gnosticism)">archons</a> (angels). The brief account given of the teaching of the first two in the list, <a href="/wiki/Simon_Magus" title="Simon Magus">Simon</a> and Menander, does not state whether or not they defined the number of these archons; but it is expressly told of the third, <a href="/wiki/Saturninus_of_Antioch" title="Saturninus of Antioch">Saturninus</a> (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_XXIV." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter XXIV.">ch. 24</a>), that he counted them as seven. At the end of the first book of Irenaeus is a section to all appearance derived from a source different from that just referred to. He here (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_XXIX." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter XXIX.">c. 29</a>) relates the opinions of heretics to whom he himself gives no title, but whom his copyist <a href="/wiki/Theodoret" title="Theodoret">Theodoret</a> (<i>Haer. Fab.</i> i. 14) calls <a href="/wiki/Ophites" title="Ophites">Ophites</a>. The Ophite teaching may be used to illustrate that of Saturninus, his connexion with that school being closer than with any other. It would have been natural to think that the number of seven archons was suggested to Saturninus by astronomical considerations; and this supposition is verified by the statement in the later chapter (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_XXX." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter XXX.">c. 30</a>) that the holy Hebdomas are the seven stars called planets. In fact, the sphere of the seven stars, <a href="/wiki/Saturn" title="Saturn">Saturn</a>, <a href="/wiki/Jupiter" title="Jupiter">Jupiter</a>, <a href="/wiki/Mars" title="Mars">Mars</a>, the <a href="/wiki/Sun" title="Sun">Sun</a>, <a href="/wiki/Venus" title="Venus">Venus</a>, <a href="/wiki/Mercury_(planet)" title="Mercury (planet)">Mercury</a>, and the <a href="/wiki/Moon" title="Moon">Moon</a>, were supposed to be presided over, each by a different archon. Their names are differently given; Irenaeus (c. 30) giving them, <a href="/wiki/Demiurge" title="Demiurge">Ialdabaoth</a>, the chief, Iao, Sabaoth, Adonaeus, Eloaeus, Oreus, and Astaphaeus. With this closely agrees <a href="/wiki/Origen" title="Origen">Origen</a>, who, writing of the Ophites (<i><a href="/wiki/Contra_Celsum" title="Contra Celsum">Adv. Cels.</a></i> <a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_IV/Origen/Origen_Against_Celsus/Book_VI/Chapter_XXXI" class="extiw" title="s:Ante-Nicene Fathers/Volume IV/Origen/Origen Against Celsus/Book VI/Chapter XXXI">vi. 31</a>, <a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_IV/Origen/Origen_Against_Celsus/Book_VI/Chapter_XXXII" class="extiw" title="s:Ante-Nicene Fathers/Volume IV/Origen/Origen Against Celsus/Book VI/Chapter XXXII">32</a>), gives the names Ialdabaoth, Iao, Sabaoth, Adonaeus, Astaphaeus, Eloaeus, Horaeus. Epiphanius (<i><a href="/wiki/Panarion" title="Panarion">Haer.</a></i> 26, p.&#160;91), relating the opinions of what was clearly a branch of the same school, places in the highest heaven Ialdabaoth or, according to others, Sabaoth; in the next, Elilaeus according to one version, Ialdabaoth according to the other; in the next Adonaeus and Eloaeus; beneath these Dades, Seth, and Saclas; lowest of all Iao. It was thought that each of the Jewish prophets was sent by a different one of these seven archons, whose special glory that prophet was to declare. Thus (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_XXX." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter XXX.">Irenaeus, i. 30, p. 109</a>) the first archon sent <a href="/wiki/Moses" title="Moses">Moses</a>, <a href="/wiki/Joshua" title="Joshua">Joshua</a>, <a href="/wiki/Amos_(prophet)" title="Amos (prophet)">Amos</a>, and <a href="/wiki/Habakkuk" title="Habakkuk">Habakkuk</a>; the second <a href="/wiki/Samuel" title="Samuel">Samuel</a>, <a href="/wiki/Nathan_(prophet)" title="Nathan (prophet)">Nathan</a>, <a href="/wiki/Jonah" title="Jonah">Jonah</a>, and <a href="/wiki/Micah_(prophet)" title="Micah (prophet)">Micah</a>; the third <a href="/wiki/Elijah" title="Elijah">Elijah</a>, <a href="/wiki/Joel_(prophet)" title="Joel (prophet)">Joel</a>, and <a href="/wiki/Zechariah_(Hebrew_prophet)" title="Zechariah (Hebrew prophet)">Zechariah</a>; the fourth <a href="/wiki/Isaiah" title="Isaiah">Isaiah</a>, <a href="/wiki/Ezekiel" title="Ezekiel">Ezekiel</a>, <a href="/wiki/Jeremiah" title="Jeremiah">Jeremiah</a>, and <a href="/wiki/Daniel_(biblical_figure)" title="Daniel (biblical figure)">Daniel</a>; the fifth <a href="/wiki/Book_of_Tobit" title="Book of Tobit">Book of Tobit</a> and <a href="/wiki/Haggai" title="Haggai">Haggai</a>; the sixth <a href="/wiki/Micah" title="Micah">Micah</a> (<i>qu.</i> <a href="/wiki/Malachi" title="Malachi">Malachi</a>?) and <a href="/wiki/Nahum" title="Nahum">Nahum</a>; the seventh <a href="/wiki/Ezra" title="Ezra">Ezra</a> and <a href="/wiki/Zephaniah" title="Zephaniah">Zephaniah</a>.
+</p>
+<h3><span class="mw-headline" id="Eighth_sphere">Eighth sphere</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=3" title="Edit section: Eighth sphere">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:Oresme_Spheres_crop.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Oresme_Spheres_crop.jpg/300px-Oresme_Spheres_crop.jpg" decoding="async" width="300" height="247" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/4/4e/Oresme_Spheres_crop.jpg 1.5x" data-file-width="310" data-file-height="255" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Oresme_Spheres_crop.jpg" class="internal" title="Enlarge"></a></div>The planetary spheres were thought to be planes of existence in between the earth and the heavenly regions</div></div></div>
+<p>The ancient astronomy taught that above the seven planetary spheres was an eighth, the sphere of the fixed stars (<a href="/wiki/Clement_of_Alexandria" title="Clement of Alexandria">Clem. Alex.</a> <i>Strom</i>. <a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_II/CLEMENT_OF_ALEXANDRIA/The_Stromata,_or_Miscellanies/Book_IV./Chapter_XXIII." class="extiw" title="s:Ante-Nicene Fathers/Volume II/CLEMENT OF ALEXANDRIA/The Stromata, or Miscellanies/Book IV./Chapter XXIII.">iv. 25</a>, xxv. p.&#160;636: see also his quotation, <a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_II/CLEMENT_OF_ALEXANDRIA/The_Stromata,_or_Miscellanies/Book_V/Chapter_XI." class="extiw" title="s:Ante-Nicene Fathers/Volume II/CLEMENT OF ALEXANDRIA/The Stromata, or Miscellanies/Book V/Chapter XI.">v. 11</a>, p.&#160;692, of a mention of the fifth heaven in apocryphal writings ascribed to <a href="/wiki/Zephaniah" title="Zephaniah">Zephaniah</a>). In the eighth sphere, these Gnostics taught, dwelt the mother to whom all these archons owed their origin, <a href="/wiki/Wisdom_in_Gnosticism" class="mw-redirect" title="Wisdom in Gnosticism">Sophia</a> or Prunikos according to the version of Irenaeus, <a href="/wiki/Barbelo" title="Barbelo">Barbelo</a> according to that of Epiphanius. In the language of these sects the word hebdomad not only denotes the seven archons, but is also a name of place, denoting the heavenly regions over which the seven archons presided; while Ogdoad denotes the supercelestial regions which lay above their control.
+</p><p>Again, beside the higher hebdomad of the seven archons, the Ophite system told of a lower hebdomad. After the serpent in punishment for having taught <a href="/wiki/Adam_and_Eve" title="Adam and Eve">the first parents</a> to transgress the commands of Ialdabaoth was cast down into this lower world, he begat himself six sons, who with himself form a hebdomad, the counterpart of that of which his father Ialdabaoth is chief. These are the seven <a href="/wiki/Demons" class="mw-redirect" title="Demons">demons</a>, the scene of whose activity is this lower earth, not the heavens; and who delight in injuring the human race on whose account their father had been cast down. Origen (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_IV/Origen/Origen_Against_Celsus/Book_VI/Chapter_XXX" class="extiw" title="s:Ante-Nicene Fathers/Volume IV/Origen/Origen Against Celsus/Book VI/Chapter XXX"><i>Adv. Cels.</i> 30</a>) gives their names and forms from an <a href="/wiki/Ophite_Diagrams" title="Ophite Diagrams">Ophite diagram</a>; <a href="/wiki/Michael_(archangel)" title="Michael (archangel)">Michael</a> in form as a lion, <a href="/wiki/Suriel" class="mw-redirect" title="Suriel">Suriel</a> as an ox, <a href="/wiki/Raphael_(archangel)" title="Raphael (archangel)">Raphael</a> as a dragon, <a href="/wiki/Gabriel" title="Gabriel">Gabriel</a> as an eagle, Thauthabaoth as a bear, Erataoth as a dog, Onoel or Thartharaoth as an ass.
+</p><p>It does not appear that the Oriental philosophy, or the earliest Gnostic systems, recognised any place higher than the eighth sphere; and it is here that according to the account of Epiphanius (<i>Haer.</i> 26, p.&#160;91) dwelt Barbelo the mother of all. But Grecian philosophy came to teach that above the sensible world there lay a still higher, and Clem. Alex. (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_II/CLEMENT_OF_ALEXANDRIA/The_Stromata,_or_Miscellanies/Book_IV./Chapter_XXIII." class="extiw" title="s:Ante-Nicene Fathers/Volume II/CLEMENT OF ALEXANDRIA/The Stromata, or Miscellanies/Book IV./Chapter XXIII.">iv. 25</a>) speaks of the eighth sphere as lying nearest <i>to noeto kosmo</i>. Accordingly, those Gnostic systems which are tinctured by Grecian philosophy, while leaving untouched the doctrine of seven or eight material heavens, develop in various ways the theory of the region above them. In the system of <a href="/wiki/Basilides" title="Basilides">Basilides</a>, as reported by <a href="/wiki/Hippolytus_of_Rome" title="Hippolytus of Rome">Hippolytus</a> (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_V/Hippolytus/The_Refutation_of_All_Heresies/Book_VII/Part_21" class="extiw" title="s:Ante-Nicene Fathers/Volume V/Hippolytus/The Refutation of All Heresies/Book VII/Part 21">vii. 20 sqq.</a>), Ogdoad and Hebdomad are merely names of place. In that system the universe is divided into the Kosmos and the hypercosmical region. At the highest point of the Kosmos presides the great archon, ruling over the Ogdoad, or ethereal region, which is described as reaching down to the moon. Beneath the Ogdoad is the Hebdomad presided over by its own archon. In one place (p.&#160;238) the names Ogdoad and Hebdomad seem to be given to the archons themselves. In any case the names shew marks of having been derived from a previous system, for the system of Basilides itself gives no account of the numbers seven or eight; and the number of heavens is not limited to seven, as many as 365 being counted. In <i><a href="/wiki/Pistis_Sophia" title="Pistis Sophia">Pistis Sophia</a></i>, the doctrine of the higher regions receives such enormous development that the seven planetary spheres are thought of as contemptibly low; and Ialdabaoth, once their ruler, in this book sinks to a demon.
+</p><p>The word Hebdomad occurs also in the Clementine <i><a href="/wiki/Clementine_literature" title="Clementine literature">Homilies</a></i>, but its use there is quite unconnected with the teaching hitherto described. The mystery of the Hebdomad there unfolded (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_VIII/Pseudo-Clementine_Literature/The_Clementine_Homilies/Homily_XVII/Chapter_10" class="extiw" title="s:Ante-Nicene Fathers/Volume VIII/Pseudo-Clementine Literature/The Clementine Homilies/Homily XVII/Chapter 10"><i>Hom.</i> xvii. 10</a>) is an independent exposition of the six days' work of creation, and the seventh day's rest; illustrated by the six directions, into which infinite space extends, viz. up, down, right, left, backward, forward, together with the central point considered as making a seventh.
+</p><p>The mysteries of the number seven are treated of by Clem. Alex. (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_II/CLEMENT_OF_ALEXANDRIA/The_Stromata,_or_Miscellanies/Book_VI/Chapter_XVI." class="extiw" title="s:Ante-Nicene Fathers/Volume II/CLEMENT OF ALEXANDRIA/The Stromata, or Miscellanies/Book VI/Chapter XVI."><i>Strom.</i> vi. 16</a>), and in the source whence he borrowed (<a href="/wiki/Philo" title="Philo">Philo</a>, <i>de Op. Mund.</i> and <i>Leg. Allegor</i>., where the theme is enlarged on, <i>khairei he physis hebdomadi</i>).
+</p>
+<h2><span id="6_.2B_2_System"></span><span class="mw-headline" id="6_+_2_System">6 + 2 System</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=4" title="Edit section: 6 + 2 System">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:MS-Ogdoas-Aion-2.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/MS-Ogdoas-Aion-2.jpg/220px-MS-Ogdoas-Aion-2.jpg" decoding="async" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/MS-Ogdoas-Aion-2.jpg/330px-MS-Ogdoas-Aion-2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/c/c3/MS-Ogdoas-Aion-2.jpg 2x" data-file-width="400" data-file-height="400" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:MS-Ogdoas-Aion-2.jpg" class="internal" title="Enlarge"></a></div>The ogdoad described by Gnostic <a href="/wiki/Valentinus_(Gnostic)" title="Valentinus (Gnostic)">Valentinus</a> in the 2nd century AD (with the first two named Propator and Ennoia)</div></div></div>
+<p>In the system of Valentinus again the names Ogdoad and Hebdomad occur in the same signification. Above this lower world are the seven heavens, where dwells their maker the Demiurge himself also, on that account, called Hebdomas (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_V." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter V.">Iren. I. v. p. 24</a>). Of these seven heavens <a href="/wiki/Marcus_(Marcosian)" title="Marcus (Marcosian)">Marcus</a> taught in more detail (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_XIV." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter XIV.">Iren. I. xiv. 7, p.72</a>). Above these heavens is the Ogdoad, also called <i>he mesotes</i>, and Jerusalem above, the abode of <a href="/wiki/Sophia_(Gnosticism)" title="Sophia (Gnosticism)">Achamoth</a>, who herself also is called Ogdoad (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_I/Chapter_V." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book I/Chapter V.">Iren. I. v. 2, p. 24</a>; <a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_V/Hippolytus/The_Refutation_of_All_Heresies/Book_VI" class="extiw" title="s:Ante-Nicene Fathers/Volume V/Hippolytus/The Refutation of All Heresies/Book VI">Hippol. vi. p. 191</a>). Over the Ogdoad is the <a href="/wiki/Pleroma" title="Pleroma">Pleroma</a>, the abode of the Aeons. Thus (Hippol. p.&#160;195), we have the threefold division, <i>ta kata tous aionas, ta kata ten ogdoada, ta kata ten hebdomada</i>. This use of the words Hebdomad and Ogdoad also bears traces of derivation from a previous system, the word Ogdoad occurring in a different sense in the system of Valentinus himself, whose Ogdoad within the Pleroma was probably intended to answer to the Ogdoad outside. Irenaeus (<a href="https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_I/IRENAEUS/Against_Heresies:_Book_II/Chapter_XXX." class="extiw" title="s:Ante-Nicene Fathers/Volume I/IRENAEUS/Against Heresies: Book II/Chapter XXX.">ii. 107</a>) argues from what is told of Paul's ascent to the third heaven against the low place assigned to the heavens in the Valentinian scheme.
+</p>
+<h3><span class="mw-headline" id="First_Ogdoad">First Ogdoad</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=5" title="Edit section: First Ogdoad">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the earliest stages of that evolution we have (<a href="/wiki/Irenaeus" title="Irenaeus">Iren</a>. I. i.) eight primary Aeons constituting the first Ogdoad. The ultimate conception of God, named the Ineffable Father and who has existed since before the beginning, is described as Depth or Profundity (<a href="/wiki/Bythos" class="mw-redirect" title="Bythos">Bythos</a>). All around him exists a female power that has been named Silence (Sige). These two deities, Depth and Silence, become the cause, through a process of <a href="/wiki/Emanationism" title="Emanationism">emanation</a>, of the other <a href="/wiki/Archetype" title="Archetype">archetypal</a> beings or <a href="/wiki/Aeon_(Gnosticism)" title="Aeon (Gnosticism)">Aeons</a>. The Aeons are always born in male-female pairs (as <a href="/wiki/Aeon_(Gnosticism)#Valentinus" title="Aeon (Gnosticism)">syzygies</a>), each of which is in itself a divine principle but at the same time represents one aspect of the Ineffable Father, who otherwise could not be described nor comprehended as he is beyond all names. The emanation takes place in the following manner: Depth-and-Silence gives birth to Mind-and-Truth (<a href="/wiki/Nous" title="Nous">Nous</a> and <a href="/wiki/Aletheia" title="Aletheia">Aletheia</a>), who gives birth to Word-and-Life (<a href="/wiki/Logos" title="Logos">Logos</a> and <a href="https://en.wiktionary.org/wiki/%CE%B6%CF%89%CE%AE" class="extiw" title="wikt:ζωή">Zoe</a>), who gives birth to Man-and-Church (<a href="/wiki/Adam_Kadmon#Gnosticism" title="Adam Kadmon">Anthropos</a> and <a href="/wiki/Christian_Church" title="Christian Church">Ecclesia</a>). These Aeonic pairs comprise the Fullness of Godhead (<a href="/wiki/Pleroma" title="Pleroma">Pleroma</a>), and the first eight Aeons that have been expounded here are the Valentinian Ogdoad.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p>Though this Ogdoad is first in order of evolution, if the Valentinian theory be accepted as true, yet to us who trace the history of the development of that system the lower Ogdoad must clearly be pronounced the first, and the higher only as a subsequent extension of the previously accepted action of an Ogdoad. Possibly also the Egyptian doctrine of eight primary gods (see above) may have contributed to the formation of a theory of which Egypt was the birthplace. In any case an Ogdoad 7 + 1 would have been inconsistent with a theory an essential part of which was the coupling its characters in pairs, male and female. <a href="/wiki/Hippolytus_of_Rome" title="Hippolytus of Rome">Hippolytus of Rome</a> (<i><a href="/wiki/Philosophumena" class="mw-redirect" title="Philosophumena">Ref</a></i>. vi. 20, p.&#160;176) connects the system of Valentinus with that of <a href="/wiki/Simonians" title="Simonians">Simon</a>, in which the origin of things is traced to a central first principle, together with six "roots." If for the one first principle we substitute a male and female principle, the 6 + 1 of Simon becomes the 6 + 2 of Valentinus. This very question, however, whether the first principle were to be regarded as single or twofold was one on which the Valentinians themselves were not agreed; and their differences as to the manner of counting the numbers of the primary Ogdoad confirm what has been said as to the later origin of this doctrine.
+</p>
+<h2><span id="4_.2B_4_System"></span><span class="mw-headline" id="4_+_4_System">4 + 4 System</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=6" title="Edit section: 4 + 4 System">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The doctrine of an Ogdoad of the commencement of finite existence having been established by Valentinus, those of his followers who had been imbued with the <a href="/wiki/Pythagoreans" class="mw-redirect" title="Pythagoreans">Pythagorean philosophy</a> introduced a modification. In that philosophy the <a href="/wiki/Tetrad_(Greek_philosophy)" class="mw-redirect" title="Tetrad (Greek philosophy)">Tetrad</a> was regarded with peculiar veneration, and held to be the foundation of the sensible world. The Pythagorean oath by the Tetrad is well known.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>The Valentinian Secundus divided the Ogdoad into a right-hand and a left-hand Tetrad (Iren. I. xi.); and in the case of <a href="/wiki/Marcus_(Marcosian)" title="Marcus (Marcosian)">Marcus</a>, who largely uses Pythagorean speculations about numbers, the Tetrad holds the highest place in the <a href="/wiki/Marcosians" title="Marcosians">system</a>.
+</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFDavid1993" class="citation book cs1"><a href="/w/index.php?title=David_Fideler&amp;action=edit&amp;redlink=1" class="new" title="David Fideler (page does not exist)">David, Fideler</a> (1993). <i>Jesus Christ, Sun of God: Ancient Cosmology and Early Christian Symbolism</i>. Quest Books. p.&#160;128. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-8356-0696-7" title="Special:BookSources/978-0-8356-0696-7"><bdi>978-0-8356-0696-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Jesus+Christ%2C+Sun+of+God%3A+Ancient+Cosmology+and+Early+Christian+Symbolism&amp;rft.pages=128&amp;rft.pub=Quest+Books&amp;rft.date=1993&amp;rft.isbn=978-0-8356-0696-7&amp;rft.aulast=David&amp;rft.aufirst=Fideler&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Gnosticism%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a href="/wiki/Meursius" class="mw-redirect" title="Meursius">Meursius</a>, <i>Demiurg. Pythag</i>. ch. 7, <i>ap.</i> Gronov. <i>Thes. Gr. Ant.</i> col. 9; to which may be added Hippol. <i>Ref</i>. vi. 23, p. 179.</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Bibliography">Bibliography</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=8" title="Edit section: Bibliography">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1054258005">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin" style="">
+<ul><li><i>Encyclopedie van de Mythologie</i>. van Reeth, Dr. A. Tirion, Baarn: 1994 <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/90-5121-304-2" title="Special:BookSources/90-5121-304-2">90-5121-304-2</a></li>
+<li>Ewa Wasilewska <i>Creation Stories of the Middle East</i>, Jessica Kingsley Publishers 2000, pp.&#160;60ff.</li>
+<li>George Hart <i>The Routledge Dictionary Of Egyptian Gods And Goddesses</i>, Routledge 2005, p.&#160;113</li>
+<li><a href="/wiki/Fran%C3%A7oise_Dunand" title="Françoise Dunand">Françoise Dunand</a>, Christiane Zivie-Coche <i>Gods and Men in Egypt: 3.000 BCE to 395 CE</i>, Cornell University Press 2004</li>
+<li>John D. Baines, Byron Esely Shafer, <a href="/wiki/David_P._Silverman" title="David P. Silverman">David P. Silverman</a>, Leonard H. Lesko <i>Religion in Ancient Egypt: Gods, Myths, and Personal Practice</i>, Cornell University Press 1991</li></ul>
+</div>
+<h3><span class="mw-headline" id="Attribution">Attribution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit&amp;section=9" title="Edit section: Attribution">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1054258005"/><div class="refbegin" style="">
+<ul><li><img alt="Public Domain" src="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/12px-PD-icon.svg.png" decoding="async" width="12" height="12" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/18px-PD-icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/24px-PD-icon.svg.png 2x" data-file-width="196" data-file-height="196" /> <i>This article incorporates text from this source, which is in the <a href="/wiki/Public_domain" title="Public domain">public domain</a></i><i>:</i> <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSalmon1880" class="citation cs2"><a href="/wiki/George_Salmon" title="George Salmon">Salmon, George</a> (1880), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=6tQUAAAAQAAJ&amp;pg=PA849">"Hebdomas"</a>,  in <a href="/wiki/William_Smith_(lexicographer)" title="William Smith (lexicographer)">Smith, William</a>; <a href="/wiki/Henry_Wace_(Anglican_priest)" class="mw-redirect" title="Henry Wace (Anglican priest)">Wace, Henry</a> (eds.), <i>A Dictionary of Christian Biography, Literature, Sects and Doctrines</i>, vol.&#160;II, London: John Murray, pp.&#160;849–851</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Hebdomas&amp;rft.btitle=A+Dictionary+of+Christian+Biography%2C+Literature%2C+Sects+and+Doctrines&amp;rft.place=London&amp;rft.pages=849-851&amp;rft.pub=John+Murray&amp;rft.date=1880&amp;rft.aulast=Salmon&amp;rft.aufirst=George&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D6tQUAAAAQAAJ%26pg%3DPA849&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Gnosticism%29" class="Z3988"></span></li>
+<li><img alt="Public Domain" src="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/12px-PD-icon.svg.png" decoding="async" width="12" height="12" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/18px-PD-icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/24px-PD-icon.svg.png 2x" data-file-width="196" data-file-height="196" /> <i>This article incorporates text from this source, which is in the <a href="/wiki/Public_domain" title="Public domain">public domain</a></i><i>:</i> <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSalmon1887" class="citation cs2"><a href="/wiki/George_Salmon" title="George Salmon">Salmon, George</a> (1887), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=e3DYAAAAMAAJ&amp;pg=PA71">"Ogdoad"</a>,  in <a href="/wiki/William_Smith_(lexicographer)" title="William Smith (lexicographer)">Smith, William</a>; <a href="/wiki/Henry_Wace_(Anglican_priest)" class="mw-redirect" title="Henry Wace (Anglican priest)">Wace, Henry</a> (eds.), <i>A Dictionary of Christian Biography, Literature, Sects and Doctrines</i>, vol.&#160;IV, London: John Murray, pp.&#160;71–72</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Ogdoad&amp;rft.btitle=A+Dictionary+of+Christian+Biography%2C+Literature%2C+Sects+and+Doctrines&amp;rft.place=London&amp;rft.pages=71-72&amp;rft.pub=John+Murray&amp;rft.date=1887&amp;rft.aulast=Salmon&amp;rft.aufirst=George&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3De3DYAAAAMAAJ%26pg%3DPA71&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Gnosticism%29" class="Z3988"></span></li></ul>
+</div>
+<!-- 
+NewPP limit report
+Parsed by mw2336
+Cached time: 20220912091659
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.191 seconds
+Real time usage: 0.287 seconds
+Preprocessor visited node count: 840/1000000
+Post‐expand include size: 25646/2097152 bytes
+Template argument size: 4409/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 14724/5000000 bytes
+Lua time usage: 0.102/10.000 seconds
+Lua memory usage: 3353529/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  228.618      1 -total
+ 33.51%   76.619      1 Template:Reflist
+ 27.20%   62.175      1 Template:Cite_book
+ 24.80%   56.705      1 Template:Gnosticism
+ 23.79%   54.384      1 Template:Sidebar_with_collapsible_lists
+ 19.72%   45.076      1 Template:About
+ 11.42%   26.114      1 Template:ISBN
+  5.40%   12.341      2 Template:Source-attribution
+  4.44%   10.155      2 Template:Citation
+  4.25%    9.720      1 Template:Catalog_lookup_link
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:97094-0!canonical and timestamp 20220912091659 and revision id 1068349428.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Ogdoad_(Gnosticism)&amp;oldid=1068349428">https://en.wikipedia.org/w/index.php?title=Ogdoad_(Gnosticism)&amp;oldid=1068349428</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Creation_myths" title="Category:Creation myths">Creation myths</a></li><li><a href="/wiki/Category:Gnosticism" title="Category:Gnosticism">Gnosticism</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Source_attribution" title="Category:Source attribution">Source attribution</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span title="The user page for the IP address you are editing as">Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Ogdoad+%28Gnosticism%29" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Ogdoad+%28Gnosticism%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Ogdoad_(Gnosticism)" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Ogdoad_(Gnosticism)" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Ogdoad_(Gnosticism)"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation"  >
+	<h3
+		id="p-interaction-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Ogdoad_(Gnosticism)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Ogdoad_(Gnosticism)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;oldid=1068349428" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Ogdoad_%28Gnosticism%29&amp;id=1068349428&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q25215440" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation"  >
+	<h3
+		id="p-coll-print_export-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Ogdoad_%28Gnosticism%29&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Ogdoad_(Gnosticism)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-lang" class="vector-menu mw-portlet mw-portlet-lang vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation"  >
+	<h3
+		id="p-lang-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A7%DA%AF%D8%AF%D9%88%D8%AF_(%DA%AF%D9%86%D9%88%D8%B3%DB%8C%E2%80%8C%DA%AF%D8%B1%D8%A7%DB%8C%DB%8C)" title="اگدود (گنوسی‌گرایی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Gnostiska_ogdoaden" title="Gnostiska ogdoaden – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q25215440#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 27 January 2022, at 23:40<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Ogdoad_(Gnosticism)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.191","walltime":"0.287","ppvisitednodes":{"value":840,"limit":1000000},"postexpandincludesize":{"value":25646,"limit":2097152},"templateargumentsize":{"value":4409,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":14724,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  228.618      1 -total"," 33.51%   76.619      1 Template:Reflist"," 27.20%   62.175      1 Template:Cite_book"," 24.80%   56.705      1 Template:Gnosticism"," 23.79%   54.384      1 Template:Sidebar_with_collapsible_lists"," 19.72%   45.076      1 Template:About"," 11.42%   26.114      1 Template:ISBN","  5.40%   12.341      2 Template:Source-attribution","  4.44%   10.155      2 Template:Citation","  4.25%    9.720      1 Template:Catalog_lookup_link"]},"scribunto":{"limitreport-timeusage":{"value":"0.102","limit":"10.000"},"limitreport-memusage":{"value":3353529,"limit":52428800}},"cachereport":{"origin":"mw2336","timestamp":"20220912091659","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Ogdoad (Gnosticism)","url":"https:\/\/en.wikipedia.org\/wiki\/Ogdoad_(Gnosticism)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q25215440","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q25215440","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-09-30T21:56:49Z","dateModified":"2022-01-27T23:40:42Z","headline":"Gnostic cosmology of eight heavens"}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Ogdoad (Gnosticism)","url":"https:\/\/en.wikipedia.org\/wiki\/Ogdoad_(Gnosticism)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q25215440","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q25215440","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-09-30T21:56:49Z","dateModified":"2022-01-27T23:40:42Z","headline":"Gnostic cosmology of eight heavens"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":166,"wgHostname":"mw2310"});});</script>
+</body>
+</html>

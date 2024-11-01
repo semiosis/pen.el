@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Hebrews" "2:10-11" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Hebrews" "5:8-9" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "5:8-9" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "5:8" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "5:8-9" "#" "<==" "zsh"

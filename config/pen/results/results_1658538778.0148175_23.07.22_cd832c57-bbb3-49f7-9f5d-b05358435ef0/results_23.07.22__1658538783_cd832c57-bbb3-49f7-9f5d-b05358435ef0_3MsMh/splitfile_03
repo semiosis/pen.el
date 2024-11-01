@@ -1,0 +1,5 @@
+
+
+Here "main" is the entry point, and it can also declare variables and do some
+statements before calling the function "main" that prints out the result. "getLine"
+"gets input from stdin into a string

@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:2" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:2" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:3" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:4" "#" "<==" "zsh"
+cd /root/.pen/glossaries;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/.pen/glossaries;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:22" "#" "<==" "zsh"

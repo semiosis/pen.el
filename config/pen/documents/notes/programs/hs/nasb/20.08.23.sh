@@ -1,0 +1,5 @@
+cd /;  "nasb" "2" "Corinthians" "3:17" "#" "<==" "sh"
+cd /;  "nasb" "Jeremiah" "17:5" "#" "<==" "sh"
+cd /root/notes;  "nasb" "Matthew" "5:42" "#" "<==" "Matthew"
+cd /root/notes;  "nasb" "Zechariah" "2:5" "#" "<==" "Zechariah"
+cd /root/notes;  "nasb" "Psalm" "149:9" "#" "<==" "Psalm"

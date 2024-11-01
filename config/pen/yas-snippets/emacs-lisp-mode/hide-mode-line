@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: hide-mode-line
+# group: emacs
+# key: hml
+# --
+(setq mode-line-format '())
+;;(global-hide-mode-line-mode 1)

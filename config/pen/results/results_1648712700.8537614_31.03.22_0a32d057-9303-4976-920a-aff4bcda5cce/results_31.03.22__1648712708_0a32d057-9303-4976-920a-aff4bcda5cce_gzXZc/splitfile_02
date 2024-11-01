@@ -1,0 +1,8 @@
+The above code is the same as the following:
+
+sum2 x y = x + y
+
+main = do
+  putStrLn ("1 + 2 = " ++ show (sum2 1 2))
+
+The do block is the same as a for block. The do block is used for sequencing a series of monadic actions.

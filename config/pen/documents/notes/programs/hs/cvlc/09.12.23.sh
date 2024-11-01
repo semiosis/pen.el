@@ -1,0 +1,7 @@
+cd /root/.pen/documents/agenda;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Abide_With_Me-Eventide.mp3" "#" "<==" "rpt"
+cd /root/.pen/documents/notes;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Abide_With_Me-Eventide.mp3" "#" "<==" "rpt"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/A_Child_of_The_King-Binghamton.mp3" "#" "<==" "rpt"
+cd /root/.emacs.d/host/pen.el/src;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/A_Child_of_The_King-Binghamton.mp3" "#" "<==" "rpt"
+cd /root/.pen/documents/notes;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Ascribe_To_The_Lord_Honor-Iyin_Oluwa.mp3" "#" "<==" "rpt"
+cd /root/.pen/documents/agenda;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Abide_With_Me-Eventide.mp3" "#" "<==" "rpt"
+cd /root/.pen/documents/notes;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Be_Thou_My_Vision-Slane.mp3" "#" "<==" "rpt"

@@ -1,0 +1,5 @@
+
+You can configure emacs to ask you "yes" or "no" questions.
+To do so, start emacs and hit "M-x".
+Type "customize-variable" and then type "kill-ring-max".
+

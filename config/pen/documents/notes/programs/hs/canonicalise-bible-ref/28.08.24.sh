@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "biblegateway-ca"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "biblegateway-ca"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "canonicalise-bible-ref" "#" "<==" "pen-ci"

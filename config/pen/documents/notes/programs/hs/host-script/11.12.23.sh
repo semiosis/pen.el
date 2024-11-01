@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes/ws/peniel;  "host-script" "-sn" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/A_Lamb_Goes_Uncomplaining_Forth-An_Wasserfluessen_Babylon.mp3" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "nmtui" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "i" "scan" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "nmtui" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "i" "gw" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "acpi" "-b" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "i" "gw" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "host-script" "-sn" "acpi" "-b" "#" "<==" "withopts"

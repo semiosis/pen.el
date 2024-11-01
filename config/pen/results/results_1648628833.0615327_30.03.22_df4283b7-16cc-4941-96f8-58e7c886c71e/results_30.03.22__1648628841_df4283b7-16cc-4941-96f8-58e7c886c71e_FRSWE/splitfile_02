@@ -1,0 +1,8 @@
+The above code is a function that takes a project and returns a tree.
+
+The first line defines the function asTree.
+The second line is a case statement that takes a project and returns a tree.
+The third line is a pattern match that takes a Project and returns a Node.
+The fourth line is a pattern match that takes a ProjectGroup and returns a Node.
+The fifth line is a pattern match that takes a Project and returns a Node.
+The sixth line is a pattern match

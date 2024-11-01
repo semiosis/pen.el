@@ -1,0 +1,18 @@
+extends make
+
+snippet & "metarule [^./]+"
+	&:  &.c
+		\$CC \$stem.c
+
+		\$LD -o \$target \$stem.\$O
+snippet % "metarule .+"
+	%:  %.c
+		\$CC \$stem.c
+
+		\$LD -o \$target \$stem.\$O
+snippet r
+	(.+)\.\$O:R: \1.c
+
+		\$CC \$CFLAGS \$stem1.c
+snippet v
+	all:V:  \$ALL

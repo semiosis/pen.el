@@ -1,0 +1,3 @@
+declare -f _password_cracking_check_if_password_is_cracked
+declare -f _password_cracking_check_if_password_is_cracked_with_hashcat
+declare -f _password_cracking_get_

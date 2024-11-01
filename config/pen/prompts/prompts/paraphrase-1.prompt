@@ -1,0 +1,42 @@
+title: paraphrase
+task: Reword a phrase
+tags: prose nlp-task
+aliases:
+- paraphrase
+doc: In other words (reword)
+aims:
+- More abstractive rewording.
+prompt-version: 1
+prompt: |
+  Original text:
+  <delim>
+  Music hypothesis is the investigation of the practices and conceivable outcomes
+  of music. The Oxford Companion to Music depicts three interrelated employments
+  of the expression "music hypothesis".
+  <delim>
+  The above text has been reworded as follows:
+  <delim>
+  Music theory is the examination of the practices and possible results of music.
+  The Oxford Companion to Music portrays three interrelated livelihoods of the
+  articulation "music speculation".
+  <delim>
+  Original text:
+  <delim>
+  <1>
+  <delim>
+  The above text has been reworded as follows:
+  <delim>
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- text
+examples:
+- I just wanted to say that I love you.
+prefer-external: true
+external-related:
+- "https://paraphrasing-tool.com/"

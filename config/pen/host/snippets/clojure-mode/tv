@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: tv
+# group: mine
+# key: tv
+# --
+(defn tv [s]
+(sh "tv" :in (str s)))

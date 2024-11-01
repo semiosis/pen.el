@@ -1,0 +1,15 @@
+"")
+
+print("""
+
+First, I want to build a business idea:
+""")
+
+
+class BusinessIdeas:
+    def __init__(self, name, desc):
+        self.name = name
+        self.desc = desc
+
+
+business_

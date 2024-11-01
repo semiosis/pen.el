@@ -1,0 +1,1 @@
+ PEN MODEL DummyModel prompt Software License Agreement nSLA n nMIT n licence n n Good for commercial n 1 top k 1 top p 1 log probs 10 stop sequences delim delim maximum tokens 85 temperature 0 8 presence penalty 0 frequency penalty 0 

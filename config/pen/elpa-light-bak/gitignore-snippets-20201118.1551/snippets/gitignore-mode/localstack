@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: LocalStack
+# contributor: Toptal & contributors
+# key: localstack
+# --
+
+### LocalStack ###
+
+# https://github.com/localstack/localstack
+**/.localstack

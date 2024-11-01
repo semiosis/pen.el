@@ -1,0 +1,56 @@
+task: "generate html from ascii browser"
+tags: web lookingglass
+doc: "Given an ascii browser dump, generate some html"
+prompt-version: 4
+prompt: |-
+    # Render the website:
+    lynx --dump -nolist <q:url> <<EOD
+    <ascii>
+    EOD
+
+    # The following is the html for the above web page
+    curl -s <q:url> <<EOD
+    <!DOCTYPE html>
+    <!-- This page uses very simple html -->
+    <!-- Allowed tags: h1 p ul li a -->
+    <:pp><html>
+    <head>
+    <title>
+engine: "OpenAI Codex"
+temperature: 0.2
+# max-generated-tokens: "100"
+max-generated-tokens: "(* 1 prompt-length)"
+frequency-penalty: 0.5
+top-p: 1.0
+n-collate: 1
+n-completions: 5
+
+# TODO The closer must be able to call the same prompt as a continuation, if it wants to
+# Generate until this prompt indicates it has finished.
+# i.e. run this until it stops producing output.
+# closer: pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1
+# pf-continue-last is a special prompt function that represents the last, but continuing it from hist
+# pen-continue-from-hist
+closer: pf-continue-last
+autoclose: on
+
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- url
+- ascii
+postprocessor: "sed -z -e 's=\\(</html>\\).*=\\1=' -e 's= >=>=g' | pen-str max-double-spaced-no-trailing"
+examples:
+- |-
+     Apple
+
+     We look forward to welcoming you to our stores. Whether you shop in a
+     store or shop online, our Specialists can help you buy the products
+     you love. Shop with a Specialist, get credit with Apple Trade In,
+     choose free delivery or pickup, and more at the Apple Store Online.
+     Shop with a Specialist, get credit with Apple Trade In, choose free
+     delivery or pickup, and more at the Apple Store Online.
+info: on
+completion: off
+insertion: off

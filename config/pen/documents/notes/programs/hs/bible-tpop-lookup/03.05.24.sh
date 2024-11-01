@@ -1,0 +1,5 @@
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Acts 18:25" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Rev 3:15-16" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "1Pet 4:8" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Acts 18:25" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Prov 13:4" "#" "<==" "zsh"

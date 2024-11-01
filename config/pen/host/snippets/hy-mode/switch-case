@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: switch-case
+# group: 
+# key: case
+# --
+(setv switchDict {
+                  bool (fn [] (print "You have a boolean"))
+                  int (fn [] (print "You have an integer"))
+                  float (fn [] (print "You have a float"))
+                  str (fn [] (print "You have a string"))
+                  })
+((get switchDict (type True)))
+((get switchDict (type 5)))
+((get switchDict (type "hi")))
+((get switchDict (type 5.5)))

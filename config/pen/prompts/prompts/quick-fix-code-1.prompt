@@ -1,0 +1,32 @@
+task: "Fix the code snippet"
+tags: code
+aliases:
+- fix
+title: "quick fix code"
+prompt-version: 3
+prompt: |+
+  I'm trying to write some code in <language>.
+  This is my code:
+  <delim>
+  <code segment>
+  <delim>
+
+  Make these changes to fix your code:
+  <delim>
+  
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+delimiter: "```"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "code segment": "(pen-buffer-string-or-selection t)"
+defs:
+- language: "(pen-detect-language-lm)"
+filter: on
+info: off
+completion: off
+insertion: off

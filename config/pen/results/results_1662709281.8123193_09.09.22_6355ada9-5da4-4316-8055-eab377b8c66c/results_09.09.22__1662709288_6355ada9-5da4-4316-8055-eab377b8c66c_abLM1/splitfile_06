@@ -1,0 +1,6 @@
+aws lambda create-function \
+--function-name my-function \
+--zip-file fileb:///path/to/file.zip \
+--handler my-function.handler \
+--runtime nodejs6.10 \
+--role arn:aws:iam::123456789012:role/MyRole

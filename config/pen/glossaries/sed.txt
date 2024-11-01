@@ -1,0 +1,29 @@
+Hold space
+Hold buffer
+    Long-term storage.
+    
+    You can catch something, store it and
+    reuse it later when sed is processing
+    another line.
+
+    You do not directly operate on the hold
+    space. Instead, you copy it or append to
+    the pattern space if you want to do
+    something with it.
+
+Pattern space
+Pattern buffer
+    The line that has been currently read from
+    the file.
+
+    Analogy: The operations table.
+
+    The scratchpad where the current
+    information is stored.
+
+    'p' is used to print the pattern
+    space, but it cannot be used to print the
+    hold space.
+
+    Likewise, 's' can be used on the pattern
+    space only.

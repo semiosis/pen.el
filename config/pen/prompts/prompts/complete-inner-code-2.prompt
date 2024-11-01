@@ -1,0 +1,27 @@
+title: complete inner code
+todo: 
+tags: nlp-task code
+design-patterns: 
+doc: Given the start and end of code, predict the middle
+prompt-version: 2
+# <:pp> before :s (suffix) is implicit
+prompt: |
+  <1><:s><2>
+engine: OpenAI Davinci Code
+force-engine: OpenAI Davinci Code
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- prefix
+- suffix
+examples:
+- |+
+    main :: IO ()
+    main = do
+- "\n    putStrLn output"
+prefer-external: true
+n-test-runs: 5

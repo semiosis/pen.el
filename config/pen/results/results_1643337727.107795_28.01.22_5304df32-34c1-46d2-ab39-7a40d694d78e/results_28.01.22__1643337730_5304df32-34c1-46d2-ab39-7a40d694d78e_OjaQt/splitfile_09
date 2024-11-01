@@ -1,0 +1,1 @@
+CloudWatch metrics for data stored in s3. Using CloudWatch Logs and AWS Config rules, create a trigger for any file creations and additions to your S3 buckets and record the following met

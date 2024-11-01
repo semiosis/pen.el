@@ -1,0 +1,16 @@
+- 1. Jansen (1641-1716)
+- 2. Leibniz (1646-1716)
+- 3. Peirce (1839-1914)
+- 4. Peano (1858-1932)
+"""
+
+
+def test_all_topics() -> None:
+    """Tests that the alltopics command."""
+
+    def check_topic_hits(hit: str, expected: List[str]) -> None:
+        """Checks a specific topic hit."""
+        query = f'alltopics "{hit}"'
+        response = client.query(query)
+        assert response.status == falcon.HTTP_OK
+

@@ -1,0 +1,8 @@
+
+      (if (string-match "\\(^\\|[^a-zA-Z0-9_]\\)\\(?:[a-zA-Z0-9_]+\\)$"
+                        preceding-text)
+          (pen-complete-line preceding-text tv)
+        (pen-complete-desirable-line preceding-text tv)))))
+
+(defun pen-complete ()
+  "Complete the word

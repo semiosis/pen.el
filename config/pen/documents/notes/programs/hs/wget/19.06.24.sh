@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=Z32HiCoFzlU&list=RDwc4gWafIgeY&index=3" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=X-saQr3m4Vs&list=RDX-saQr3m4Vs&start_radio=1" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=yN1RZBxXX_I" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://biblehub.com/interlinear/matthew/3-11.htm" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=8xs_wiKWZuc" "#" "<==" "pen-ci"

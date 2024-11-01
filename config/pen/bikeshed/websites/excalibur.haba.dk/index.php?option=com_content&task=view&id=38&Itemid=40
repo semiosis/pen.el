@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="http://excalibur.haba.dk/templates/jw_technozine/css/template_css.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+<title>Excalibur Clan - How to register!</title>
+<meta name="title" content="How to register!" />
+<meta name="author" content="Administrator" />
+<meta name="description" content="Age of Empires II Clan – Apple Macintosh" />
+<meta name="keywords" content="aoe, age of empires, mac, osx, age of conquerors, age of kings, apple" />
+<meta name="Generator" content="Joomla! - Copyright (C) 2005 - 2006 Open Source Matters. All rights reserved." />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/comment_style.css"/>
+      <script type='text/javascript'>      /*<![CDATA[*/      var jc_option           = "com_content";      var jc_autoUpdate       = "0";      var jc_update_period    = 300*1000;      var jc_orderBy          = "1";      var jc_commentForm;      var jc_livesite_busyImg = "http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif";      /*]]>*/      </script>
+<script src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/script_1_6.js?f" type="text/javascript"></script>
+<script type="text/javascript">
+var xajaxRequestUri="http://excalibur.haba.dk/index2.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=true;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_jcxLoadUserInfo(){return xajax.call("jcxLoadUserInfo", arguments, 1);}
+function xajax_jcxAddComment(){return xajax.call("jcxAddComment", arguments, 1);}
+function xajax_jcxShowSubscribeForm(){return xajax.call("jcxShowSubscribeForm", arguments, 1);}
+function xajax_jcxShowAddForm(){return xajax.call("jcxShowAddForm", arguments, 1);}
+function xajax_jcxSubscribe(){return xajax.call("jcxSubscribe", arguments, 1);}
+function xajax_jcxMoreComment(){return xajax.call("jcxMoreComment", arguments, 1);}
+function xajax_jcxUpdateComment(){return xajax.call("jcxUpdateComment", arguments, 1);}
+function xajax_jcxUnpublish(){return xajax.call("jcxUnpublish", arguments, 1);}
+function xajax_jcxEdit(){return xajax.call("jcxEdit", arguments, 1);}
+function xajax_jcxSave(){return xajax.call("jcxSave", arguments, 1);}
+	</script>
+	<script type="text/javascript" src="http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js'); } }, 6000);
+	</script>
+			<link rel="alternate" type="application/rss+xml" title="Excalibur Clan" href="http://excalibur.haba.dk/index2.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1" />
+				<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+	
+<script type="text/javascript">
+function imageHeader(selector,phpfile,wordwrap){
+	this.selector = selector;
+	this.phpfile = phpfile;
+	this.wordwrap = wordwrap;
+}
+
+var testURL = "templates/jw_technozine/images/test.png" ;
+var hideFlicker = true;
+var hideFlickerCSS = "templates/jw_technozine/css/hidden_css.css";
+var hideFlickerTimeout = 1000;
+var imageHeaders = [
+						new imageHeader("h2","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=853400&upper=true",false),
+						new imageHeader("h3","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=111&upper=true",false),
+						new imageHeader("div.componentheading","templates/jw_technozine/heading.php?font_size=12&font_color=D15546&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.active_menu","templates/jw_technozine/heading.php?font_size=12&font_color=fff&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.normal","templates/jw_technozine/heading.php?font_size=12&font_color=888&background_color=111&upper=true",false)
+						]
+</script>
+<script
+   type="text/JavaScript"
+   src="templates/jw_technozine/replacement.js">
+</script>
+
+
+</head>
+<body>
+	<a name="up" id="up"></a>
+	<div class="frame">
+		<div class="padding_outside">
+			<div class="greybox">
+				<div class="greybox_bottom_padding">
+					<div class="topnav">
+						<div class="toppath">
+							<span class="pathway"><a href="http://excalibur.haba.dk/index.php" class="pathway">Home</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" />   How to register </span>						</div>
+						<div class="topright">
+													</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="greybox_bottom_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_bottom">
+					<div id="logobox">
+						<div id="logoarea">
+							<div id="searcharea">
+								
+<form action="index.php?option=com_search" method="get">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="search" class="inputbox" type="text" size="20" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />	</div>
+
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="" />	
+</form>							</div>
+						</div>
+					</div>
+					<div class="padding">
+						<div class="main_header"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="greybox_bottom_padding">
+					<div class="middlenav">
+						<div class="datearea">
+							Wednesday, September 15 2010						</div>
+						<div id="horizmenu">
+							<ul class="mainlevel"><li><a href="http://excalibur.haba.dk/index.php?option=com_frontpage&amp;Itemid=1" class="normal">Home</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=blogsection&amp;id=0&amp;Itemid=9" class="normal">Blog</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28" class="normal">Forum</a></li></ul>						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="mainbody">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr valign="top">
+														<td class="leftcol">
+								<div class="leftdiv">
+									<div class="firediv">
+																													</div>
+									<div class="leftmodules">
+												<div class="moduletable">
+							<h3>
+					Other Menu				</h3>
+				
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=section&amp;id=4&amp;Itemid=36" class="mainlevel" >Tutorials</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_docman&amp;Itemid=35" class="mainlevel" >Rec. Games</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=12&amp;Itemid=38" class="mainlevel" >EX Members</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_newsfeeds&amp;catid=26&amp;Itemid=37" class="mainlevel" >Mac Newsfeeds</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=category&amp;sectionid=3&amp;id=7&amp;Itemid=39" class="mainlevel" >FAQs</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_weblinks&amp;Itemid=30" class="mainlevel" >Links</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=40" class="mainlevel" id="active_menu">How to register</a></td></tr>
+</table>		</div>
+				<div class="moduletable">
+							<h3>
+					Login Form				</h3>
+					<form action="http://excalibur.haba.dk/index.php" method="post" name="login" >
+		
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td>
+			<label for="mod_login_username">
+				Username			</label>
+			<br />
+			<input name="username" id="mod_login_username" type="text" class="inputbox" alt="username" size="10" />
+			<br />
+			<label for="mod_login_password">
+				Password			</label>
+			<br />
+			<input type="password" id="mod_login_password" name="passwd" class="inputbox" size="10" alt="password" />
+			<br />
+			<input type="checkbox" name="remember" id="mod_login_remember" class="inputbox" value="yes" alt="Remember Me" />
+			<label for="mod_login_remember">
+				Remember me			</label>
+			<br />
+			<input type="submit" name="Submit" class="button" value="Login" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://excalibur.haba.dk/index.php?option=com_registration&amp;task=lostPassword">
+				Lost Password?</a>
+		</td>
+	</tr>
+		</table>
+	
+	<input type="hidden" name="option" value="login" />
+	<input type="hidden" name="op2" value="login" />
+	<input type="hidden" name="lang" value="english" />
+	<input type="hidden" name="return" value="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=40" />
+	<input type="hidden" name="message" value="0" />
+	<input type="hidden" name="j46b54a2ed683f56b00cf551fd593993a" value="1" />
+	</form>
+			</div>
+				<div class="moduletable">
+							<h3>
+					Who's Online				</h3>
+				We have 4 guests online		</div>
+											</div>
+								</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+														<td class="middlecol">
+								<div class="middlediv">
+																					<table class="contentpaneopen">
+			<tr>
+								<td class="contentheading" width="100%">
+					How to register!									</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=38" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=38','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="PDF">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/pdf_button.png"  alt="PDF" name="PDF" align="middle" border="0" /></a>
+			</td>
+							<td align="right" width="100%" class="buttonheading">
+					<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=38&amp;pop=1&amp;page=0&amp;Itemid=40" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=38&amp;pop=1&amp;page=0&amp;Itemid=40','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="Print">
+						<img src="http://excalibur.haba.dk/templates/jw_technozine/images/printButton.png"  alt="Print" name="Print" align="middle" border="0" /></a>
+				</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=38&amp;itemid=40" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=38&amp;itemid=40','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="E-mail">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/emailButton.png"  alt="E-mail" name="E-mail" align="middle" border="0" /></a>
+			</td>
+						</tr>
+			</table>
+			
+		<table class="contentpaneopen">
+					<tr>
+				<td width="70%" align="left" valign="top" colspan="2">
+					<span class="small">
+						 Written by Administrator					</span>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+						<tr>
+				<td valign="top" colspan="2" class="createdate">
+					Friday, 01 June 2007				</td>
+			</tr>
+					<tr>
+			<td valign="top" colspan="2">
+				<img src="http://excalibur.haba.dk/images/stories/spam.jpg" width="200" height="150" align="left" hspace="6" alt="spam" title="spam" border="1" /> Due to the inordinate amount of spam attacks this website has received, if you want to register as a member, you must log on to <a href="http://www.gameranger.com" target="_blank" title="gameranger">Gameranger</a>  and send a private message to Haba (account number 180779) or Leonidas (account number 179475). We are sorry that pc users cant login into Gameranger, but this server is for mac gamers only. if you are a pc user and desperate to register on this website, please leave a comment here. <!--JOM COMMENT START-->
+<div style="display:block;clear:both;">
+    
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="80%" class="contentheading"><a name="jc_allComments" id="jc_allComments"></a>Comments (<span id="jc_numComment">18</span>)<a href="/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=40#jc_writeComment"><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/images/comment_add.gif" alt="add" width="16" height="16" border="0" align="absmiddle" /></a></td>
+                <td width="2%" align="right"><a href="http://excalibur.haba.dk/index2.php?option=com_jomcomment&amp;no_html=1&amp;jc_task=rss&amp;contentid=38"><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/images/feed.gif" alt="feed" width="16" height="16" border="0" /></a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><div id="jc_commentsDiv"> 
+
+
+<div class="jomentry2"  id="pc_30" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=d4506a03ac125306636e6c492336a564&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>hi : RedCoat  
+		
+	</div>
+	<div class="bCommentText">Trying to register. i have a gr account redcoat. e-mail 
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy19050 = 'w&#101;st&#111;n&#101;r&#105;ks&#101;n' + '&#64;';
+ addy19050 = addy19050 + 'h&#111;tm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ var addy_text19050 = 'w&#101;st&#111;n&#101;r&#105;ks&#101;n' + '&#64;' + 'h&#111;tm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ document.write( '<a ' + path + '\'' + prefix + ':' + addy19050 + '\'>' );
+ document.write( addy_text19050 );
+ document.write( '<\/a>' );
+ //-->\n </script><script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '<span style=\'display: none;\'>' );
+ //-->
+ </script>This email address is being protected from spam bots, you need Javascript enabled to view it
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '</' );
+ document.write( 'span>' );
+ //-->
+ </script><br/></div>
+	<div class="bCommentSmallPrint">June 18, 2007</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_31" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=fb7a05142fc427fed0556de1fde9f5c3&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : herbaliser  
+		
+	</div>
+	<div class="bCommentText">also trying to register..enjoy reading all the bickering on petty matters<br/></div>
+	<div class="bCommentSmallPrint">June 27, 2007</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_35" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=a06e0466338f5574e4a9d59c7b9a4960&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>charan : charan  
+		
+	</div>
+	<div class="bCommentText"> <img style="valign:absolute-middle;"src='http://excalibur.haba.dk//mambots/content/pcajaxcomment/smilies/smiley.gif' border='0' alt='smilies/smiley.gif' />how can i get saved matches of pro. to improve my game<br/></div>
+	<div class="bCommentSmallPrint">July 21, 2007</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_36" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=7f8cdb36550fdd5ba6cd8a02fa427511&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Bonjour : Nightmare  
+		
+	</div>
+	<div class="bCommentText">Man it has been a long time, I'd like to registar(!) but due to being off gameranger for so long I forgot my password so had to make a new account and can't find anyone <img style="valign:absolute-middle;"src='http://excalibur.haba.dk//mambots/content/pcajaxcomment/smilies/sad.gif' border='0' alt='smilies/sad.gif' /> <br/></div>
+	<div class="bCommentSmallPrint">July 29, 2007</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_37" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=d08ec7838bd27c7e33f1c2b9812d2172&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Ouch! : Aberrant Mind  
+		
+	</div>
+	<div class="bCommentText">Bert, you rascal! You write a biography of AK and don't mention my name? Dam! If my mac didn't die i would come back and pwn your ass hard.<br/></div>
+	<div class="bCommentSmallPrint">September 15, 2007</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_38" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=7eab3a30cc2e9775872fe06a9e2d9fe9&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>DS? Corto &amp; Haba =) : dukeofdawn  
+		
+	</div>
+	<div class="bCommentText">I'd like to register to download some rec. games. <br /> <br />I had the chance to get Haba and Corto(DS) know. <br /> <br /> <br />And... I got a Mac <img style="valign:absolute-middle;"src='http://excalibur.haba.dk//mambots/content/pcajaxcomment/smilies/wink.gif' border='0' alt='smilies/wink.gif' /><br/></div>
+	<div class="bCommentSmallPrint">September 26, 2007</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_49" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=994c4e771f1f5af438f96fb21f55e6bb&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>saludos : MONT-ONE  
+		
+	</div>
+	<div class="bCommentText">GOOD SITE!!! <br/></div>
+	<div class="bCommentSmallPrint">October 20, 2008</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_51" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=78804852d2b9c3229c99bba1b193c4ea&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>hi:aoe2 : CrimsnDragn  
+		
+	</div>
+	<div class="bCommentText">Tring to register...been stalking the board for a while. ka$h's cousin <img style="valign:absolute-middle;"src='http://excalibur.haba.dk//mambots/content/pcajaxcomment/smilies/cheesy.gif' border='0' alt='smilies/cheesy.gif' /><br/></div>
+	<div class="bCommentSmallPrint">December 11, 2008</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_58" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=1fc699253ea5e9b81139006f8df7ff7a&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>RE : wow power leveling  
+		: <a rel="nofollow" href="http://www.wow-powerleveling.org">http://www.wow-powerleveling.org</a>
+	</div>
+	<div class="bCommentText"> <br />if <a rel="nofollow" href='http://www.wow-power-leveling.org'>wow power leveling</a> and <a rel="nofollow" href='http://www.wowgoldcc.com'>wow power leveling</a> wow gold<br/></div>
+	<div class="bCommentSmallPrint">May 29, 2009</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_62" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=0312cdacef281c0e93624cbf8018249b&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>hi : beeraka  
+		
+	</div>
+	<div class="bCommentText">give me an account! greetings E BEERAKA<br/></div>
+	<div class="bCommentSmallPrint">August 29, 2009</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_63" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=1c2db80ad798dd3c9b0e2841425fb83d&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>hi: HELP : JohnGR  
+		
+	</div>
+	<div class="bCommentText">i really need an account plz give me one...<img style="valign:absolute-middle;"src='http://excalibur.haba.dk//mambots/content/pcajaxcomment/smilies/cry.gif' border='0' alt='smilies/cry.gif' /><br/></div>
+	<div class="bCommentSmallPrint">September 01, 2009</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_64" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=c6c16f64d0e8d2f739c986bac552f8a3&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Hi : [TDK]Sandokan  
+		: <a rel="nofollow" href="http://tdk.hysteron.net/index.php">http://tdk.hysteron.net/index.php</a>
+	</div>
+	<div class="bCommentText">Hi guys wanna ask you if you are interested play CW in AOE2, we play by gameranger or hamachi?  <br /> <br />Cya  <br />[TDK]Sandokan  <br /> <br /><br/></div>
+	<div class="bCommentSmallPrint">September 05, 2009</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_68" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=61957c190639502a1c58493dfcbadb05&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>wow gold : wowgold  
+		
+	</div>
+	<div class="bCommentText"> <br />Unfortunately,Free WoW Gold is not easy to come by. The many wandering creatures of Azeroth do not drop a lot of <a rel="nofollow" href='http://www.raidgold.com'>wow gold</a> , and often the loot they produce for slaying them is worth but a few silvers to a merchant. Every now and again you may get lucky and loot a magical green, or even rarer, a blue item. These cases are rare. Many players struggle to come up with the necessary 90g to buy their first mount at level 40 - something that is essential to traveling the world. Others spend their hard-earned money frivolously on useless gadgets and trinkets, resulting in a waste of time and energy. Purchasing <a rel="nofollow" href='http://www.goldsoon.de'>wow gold kaufen</a> from Enwowgold.com will save you much hassle and trouble. With our highly competitive rates and guarantee legitimate gold collection, we can save you the necessity of spending hours mindlessly grinding down enemies for a few silvers at a time. Buy the items your character needs, be it potions, a faster mount, a new suit of  <br />armor or the resources to mastery a trade skill with gold purchased from us and you won't regret it. Your time is better spent enjoying the game's real content of quests, dungeons and raid bosses. Except <a rel="nofollow" href='http://www.vivogame.com'>wow gold</a> Guide you can find here,also can find as follow: <br /><br/></div>
+	<div class="bCommentSmallPrint">September 21, 2009</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_98" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=640889221c02ede29219b5adf0efa404&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : KillerAvatar  
+		
+	</div>
+	<div class="bCommentText">Is there anyway i can register i wanna dl some of the recorded games so i cna get better!! thanks!<br/></div>
+	<div class="bCommentSmallPrint">February 22, 2010</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_149" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=9c31038ce6a9971d2c0c036ef2307d8c&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>zfdfsd5 : wow gold  
+		: <a rel="nofollow" href="http://www.eing.com">http://www.eing.com</a>
+	</div>
+	<div class="bCommentText"> <br />A little boy <a rel="nofollow" href='http://www.lowxx.com'>wow power leveling</a> wearied with a long journey,<a rel="nofollow" href='http://www.wlkgold.net'>wow gold</a>lay down overcome <a rel="nofollow" href='http://www.rsgold-store.com'>RuneScape Gold</a> with fatigue <a rel="nofollow" href='http://www.dogsmartway.com'>dog apparel</a> on the very brink <a rel="nofollow" href='http://www.eing.com/wow-gold/'>world of warcraft gold</a> of a deep well.<a rel="nofollow" href='http://www.gamfay.com/wow-power-leveling.asp'>world of warcraft power leveling</a> Being within an inch of falling into the water,<a rel="nofollow" href='http://www.aiongoldweb.com'>aion kina</a> Dame Fortune,<a rel="nofollow" href='http://www.cheap-penya.com'>flyff gold</a> it is said,<a rel="nofollow" href='http://www.guy4mesos.com'>maple story mesos</a> appeared to him,<a rel="nofollow" href='http://www.cheapshaiyagold.com'>shaiya gold</a> and waking him from his slumber,<a rel="nofollow" href='http://www.aocgoldweb.com/the-age-of-conan-power-leveling-aoc.asp'>aoc power leveling</a> thus addressed him: <a rel="nofollow" href='http://www.wotlkgold.org/power-leveling.asp'>World of warcraft power leveling</a> Little boy,<a rel="nofollow" href='http://www.flyff-penya.com/buy-flyff-power-leveling.asp'>flyff power leveling</a> pray wake up:<a rel="nofollow" href='http://www.aionsite.com'>aion kina</a> for had you <a rel="nofollow" href='http://www.power-leveling-game.com'>wow Power Leveling</a> fallen into the well,<a rel="nofollow" href='http://www.dogsmartway.com'>dog collars</a> the blame will <a rel="nofollow" href='http://www.maxgamegold.com/Runescape-II-10.html'>rs gold</a> be thrown on me,<a rel="nofollow" href='http://www.cheap-penya.com/flyff-power-leveling.asp'>flyff power leveling</a> and I shall get <a rel="nofollow" href='http://www.bxgjd.com'>&#19981;&#38152;&#38050;&#26495;</a> an ill name <a rel="nofollow" href='http://www.wotlkgold.net'>wow gold</a> among mortals;<a rel="nofollow" href='http://www.wlkgame.com/wow-gold.html'>world of warcraft gold</a> for I find that men are sure <a rel="nofollow" href='http://www.ffxigil4u.com'>ffxi gil</a> to blame their calamities to me,<a rel="nofollow" href='http://www.maplestorymesosshop.com'>maple story mesos</a> however much by their own folly they have <a rel="nofollow" href='http://www.wlkgold.net/conditions.asp'>world of warcraft gold</a> really brought them on themselves<br/></div>
+	<div class="bCommentSmallPrint">April 24, 2010</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_157" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=138838f76f4a20871c605c456a93c890&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : jwx  
+		
+	</div>
+	<div class="bCommentText">Tibia Gold is the currency in Tibia(MMoRPG) .There are many items including Tibia weapons like  <br />Tibia Axe,Tibia Sword,Tibia Rod,Tibia Wand,Tibia Shield <br />And also Tibia euipment  <br />Tibia helmet,Tibia armor,Tibia legs, Tibia boots <br />These items let you always prevailed(Not only play a important role in the war, but also pawn the monster smoothly and level up easier) <br />You can buy all these items by using Tibia gold <br />And there still many sites u can buy tibia gold by real money like tibiaitem.com,tibiamoney.com,gamegoldcoin.com,gamezmoney.com,10minget.com,enjoygolds.com,tibiagoods.com gameotl.com etc <br />Good luck, have fun in Tibia <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia gold</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia money</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia item</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia items</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>buy tibia gold</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia weapon</a>  <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia leveling</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>armor tibia</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia level</a> <br /><a rel="nofollow" href='http://www.tibiaitem.com'>tibia account</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia gold</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia money</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia item</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia items</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>buy tibia gold</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia weapon</a>  <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia leveling</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>armor tibia</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia level</a> <br /><a rel="nofollow" href='http://www.tibiamoney.com'>tibia account</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia gold</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia money</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia item</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia items</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>buy tibia gold</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia weapon</a>  <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia leveling</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>armor tibia</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia level</a> <br /><a rel="nofollow" href='http://www.gamezmoney.com'>tibia account</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia gold</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia money</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia item</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia items</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>buy tibia gold</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia weapon</a>  <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia leveling</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>armor tibia</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia level</a> <br /><a rel="nofollow" href='http://www.gamegoldcoin.com'>tibia account</a> <br /><a rel="nofollow" href='http://www.10minget.com'>tibia gold</a> <br /><a rel="nofollow" href='http://www.10minget.com'>tibia money</a> <br /><a rel="nofollow" href='http://www.10minget.com'>tibia item</a> <br /><a rel="nofollow" href='http://www.10minget.com'>tibia items</a> <br /><a rel="nofollow" href='http://www.10minget.com'>buy tibia gold</a> <br /><a rel="nofollow" href='http://www.10minget.com'>tibia weapon</a>  <br /><a rel="nofollow" href='http://www.10minget.com'>tibia leveling</a> <br /><a rel="nofollow" href='http://www.10minget.com'>armor tibia</a> <br /><a rel="nofollow" href='http://www.10minget.com'>tibia level</a> <br /><a rel="nofollow" href='http://www.10minget.com'>tibia account</a> <br /><a rel="nofollow" href='http://www.gamexgolds.com'>tibia gold</a> <br /><a rel="nofollow" href='http://www.gamexgolds.com'>tibia money</a> <br /><a rel="nofollow" href='http://www.gamexgolds.com'>tibia item</a> <br /> <br /><a rel="nofollow" href='http://gilffxiv.com'>final fantasy XIV money</a> <br /><a rel="nofollow" href='http://www.10minget.com/ffxiv.html'>ffxiv gil</a> <br /><a rel="nofollow" href='http://www.10minget.com/ffxiv.html'>ffxiv money</a> <br /> <br />[] <br /><br/></div>
+	<div class="bCommentSmallPrint">April 27, 2010</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_225" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=2aff3c8d9ee78dcdbf389da8570678e0&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Skechers Shape UPS : Skechers Shape UPS  
+		: <a rel="nofollow" href="http://www.shapeupshoes-outlet.com/">http://www.shapeupshoes-outlet.com/</a>
+	</div>
+	<div class="bCommentText">Because of the specially designed sole, wearing <a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]Skechers[/b]</a> significantly improves your gait and posture and relieves pressure on your joints and back.In addition, <a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]Skechers Shape UPS[/b]</a> can have a firming effect on abdominal, leg and buttock muscles.The instability of the benefits of rolling movement beyond the <a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]Sketchers Shape UPS[/b]</a> sale create natural rebound.According to the site, "MBT help solve the problem, knee and back, neck and relieve pain pressure relief joint - more or less to help tone and how to move hips and thighs ". The company also said, you consume more calories than traditional shoes <a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>skechers shoes</a> only piaffe.<a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]Shape UPS[/b]</a> activate and strengthen the small supporting muscles which are the bodys "natural shock absorbers". The key to the <a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]Shape UPS Skechers[/b]</a> is the patented sole construction, at the heart of which is the soft Masai Sensor.<a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]Shape UPS Shoes[/b]</a> give you with health in usually.Whatever you wear, <a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]skechers shape ups sale[/b]</a> are very good collocations.There are lots clours you can choice.NOW, more and more <a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]skechers shape ups shoes[/b]</a> welcomed in the world.For health,you must have a pair of own MBT Habari Sandal shoes. With exquisite design,advanced quality , which is peculiar to you.Of course,<a rel="nofollow" href='http://www.shapeupshoes-outlet.com/'>[b]skechers shoes[/b]</a> belong to the faional and health area.While you wearing it,you will become very attractive.<br/></div>
+	<div class="bCommentSmallPrint">July 28, 2010</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_238" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=ea143c4ba137ca5b4b210f7ecbe8d223&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>WoW GOLD : wow power leveling  
+		: <a rel="nofollow" href="http://www.superpowerleveling.com">http://www.superpowerleveling.com</a>
+	</div>
+	<div class="bCommentText"> <br />if <a rel="nofollow" href='http://www.aionkina4u.com'>aion gold</a> or <a rel="nofollow" href='http://www.wotlkgolds.com/wow-gold.asp'>world of warcraft gold</a> or <a rel="nofollow" href='http://www.superpowerleveling.com'>wow power leveling</a> and <a rel="nofollow" href='http://www.uweddingdresses.net/faq.html'>wedding dresses</a> <br/></div>
+	<div class="bCommentSmallPrint">August 18, 2010</div>
+</div>
+
+</div>
+		  
+	</td>
+        </tr>
+      </table>
+      <div id="jc_commentsDivContainer">
+        <table width="100%"  border="0" cellspacing="2" cellpadding="2">
+          <tr>
+            <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="contentheading"><a name="jc_writeComment" id="jc_writeComment"></a>Write comment</td>
+              </tr>
+            </table>
+              
+			  </td>
+          </tr>
+        </table>
+		<div id="jc_busyDiv"></div>
+			<div id="jc_commentFormDiv" >
+			<div class="jomentry2">
+			<form method="post" onsubmit="return false;" action="" id="jc_commentForm">
+			        
+                    <div> 
+                        <label for="jc_name">Name</label> 
+                        <input name="jc_name" type="text" id="jc_name" value=""/> 
+                    </div> 
+                    
+                    
+                    <div> 
+                        <label for="jc_email">Email</label> 
+                        <input name="jc_email" type="text" id="jc_email"/> 
+                    </div> 
+                     
+					
+					<div>
+						<label for="jc_website">Website</label>
+						<input name="jc_website" type="text" id="jc_website" />
+					</div>
+					
+					
+					<div>
+						<label for="jc_title">Title</label>
+						<input name="jc_title" type="text" id="jc_title" />
+					</div>
+					
+					<div>
+						<label for="jc_comment">Comment</label>
+						
+							<div><div id="bb_container"><div id="bb_main"><div class="bb_item bb_itemImg" style="width:13px;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bbcode_front.gif" alt="quote" border="0"/></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[b]', '[/b]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bold.gif" alt="bold" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[i]', '[/i]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/italicize.gif" alt="italicize" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[u]', '[/u]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/underline.gif" alt="underline" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[s]', '[/s]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/strike.gif" alt="strike" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[url]', '[/url]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/url.gif" alt="url" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[img]', '[/img]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/img.gif" alt="image" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[quote]', '[/quote]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/quote.gif" alt="quote" border="0"/></a></div><div class="bb_item bb_itemImg" style="width:13px;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bbcode_front.gif" alt="quote" border="0"/></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/smiley-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' ;)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/wink-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :D', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cheesy-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' ;D', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/grin-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' >:(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/angry-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/sad-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :o', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/shocked-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' 8)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cool-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :P', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/tongue-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :-\\', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/undecided-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :-*', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/kiss-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :\'(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cry-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div></div></div></div>
+						
+						<textarea name="jc_comment" rows="6" id="jc_comment" ></textarea>
+					</div>
+					
+                    
+					<div><p><img src="http://excalibur.haba.dk/index2.php?option=com_jomcomment&amp;jc_task=img&amp;jc_sid=LFNdelSXzmyAhKAl203ehuSLb7i7ZmJRNNWZETxQqYY9i2hA6oUwWTh2Ru2Aknxg" id="jc_captchaImg" name="jc_captchaImg" border="1" style="vertical-align:middle" /><br />Write the displayed characters</p></div> 
+					<div><input name="jc_password" type="text" id="jc_password" size="8" maxlength="8"   class="inputting"/></div>
+					
+					
+					<div><button id="jc_submit" onclick="addComments()" >Add Comment</button></div>
+					
+					<input name="jc_contentid" type="hidden" id="jc_contentid" value="38"/>
+                    <input name="jc_sid" type="hidden" id="jc_sid" value="LFNdelSXzmyAhKAl203ehuSLb7i7ZmJRNNWZETxQqYY9i2hA6oUwWTh2Ru2Aknxg" />
+                    <input name="jc_task" type="hidden" id="jc_task" value="add" />
+                    <input name="jc_isajax" type="hidden" id="jc_isajax" value="0" />
+                    <input name="jc_option" type="hidden" id="jc_option" value="com_content"/>
+			</form>
+            </div>
+			</div>
+		</div>
+    
+  
+  </div>
+<br/><div style="text-align:center;"><a target="_blank" href="http://www.azrul.com">Powered by Azrul&#39;s Jom Comment</a></div><script type='text/javascript'> if(xajaxLoaded) {xajax_jcxLoadUserInfo(readCookie('jc_name'),readCookie('jc_email'),readCookie('jc_website'));}</script><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif" alt="busy" style="visibility:hidden;display:none;"/><!--JOM COMMENT END-->			</td>
+		</tr>
+					<tr>
+				<td colspan="2" align="left" class="modifydate">
+					Last Updated ( Friday, 01 June 2007 )
+				</td>
+			</tr>
+					</table>
+		
+		<span class="article_seperator">&nbsp;</span>
+		
+					<table align="center" style="margin-top: 25px;">
+			<tr>
+									<th class="pagenav_prev">
+						<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=40">
+							&lt; Prev</a>
+					</th>
+										<td width="50">&nbsp;
+
+					</td>
+										<th class="pagenav_next">
+						<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=37&amp;Itemid=40">
+							Next &gt;</a>
+					</th>
+								</tr>
+			</table>
+						<div class="back_button">
+				<a href='javascript:history.go(-1)'>
+					[ Back ]</a>
+			</div>
+											</div>
+							</td>
+													</tr>
+					</table>	
+				</div>
+				<div class="greybox_top_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_top_padding">
+					<div class="topnav" id="footer">
+						<div class="syndicate">
+			<div align="center">
+			<a href="http://excalibur.haba.dk/index.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1">
+				<img src="http://excalibur.haba.dk/images/M_images/rss20.gif"  alt="RSS 2.0" name="RSS20" align="middle" border="0" /></a>
+		</div>
+		</div></div>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- 1284506745 -->

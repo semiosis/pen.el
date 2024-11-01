@@ -1,0 +1,8 @@
+covered a new type of neuron that can learn to represent
+    arbitrary functions of its inputs. We call these neurons multimodal
+    neurons, because they can learn to represent multiple functions.
+    We’ve demonstrated their effectiveness on the MNIST dataset, where
+    we achieve state-of-the-art results with a small number of neurons.
+    This work is described in the paper “Multimodal Neurons for
+    Learning to Represent and Generalize Abstract Data” by Dauphin et al.
+

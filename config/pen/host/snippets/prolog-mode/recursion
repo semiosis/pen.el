@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: recursion
+# group: 
+# key: recur
+# --
+recurse([]).
+recurse([H|T]) :-
+writeln(H),
+recurse(T).

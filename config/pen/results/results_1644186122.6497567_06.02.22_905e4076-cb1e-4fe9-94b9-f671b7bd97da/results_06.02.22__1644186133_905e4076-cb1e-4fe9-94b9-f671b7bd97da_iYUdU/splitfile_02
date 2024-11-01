@@ -1,0 +1,35 @@
+    Name:
+    Nationality:
+    Birth date:
+    Death date:
+    Occupation:
+    Known for:
+    Education:
+    Website:
+    Spouse(s):
+    Children:
+    Parents:
+    Imdb page:
+    Awards:
+    Nickname:
+    Trivia:
+    Quotes:
+    Filmography:
+    Where Are They Now?:
+    See also:
+    External links:
+
+"""
+
+import re
+import urllib
+import urllib2
+import urlparse
+import json
+import logging
+import datetime
+import time
+from bs4 import BeautifulSoup
+
+from base_adapter import BaseSiteAdapter, makeDate
+from 

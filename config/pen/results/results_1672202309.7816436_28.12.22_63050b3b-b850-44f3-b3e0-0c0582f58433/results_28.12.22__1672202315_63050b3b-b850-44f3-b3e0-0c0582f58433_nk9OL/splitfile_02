@@ -1,0 +1,6 @@
+! CopyWord()
+let @s = matchstr(getline('.'), '\w\+\ze')
+
+function! s:idx_start_of_word()
+"color column 1
+return col('.'

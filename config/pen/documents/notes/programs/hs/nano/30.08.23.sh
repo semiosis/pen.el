@@ -1,0 +1,8 @@
+cd /root/notes;  "nano" "/tmp/KKbv6F0ofY" "#" "<==" "vipe"
+cd /root/.emacs.d/elpa/lsp-ui-20211009.1545;  "nano" "lsp-ui.el" "#" "<==" "zsh"
+cd /root/.emacs.d/elpa/lsp-ui-20211009.1545;  "nano" "lsp-ui.el" "#" "<==" "zsh"
+cd /root/.emacs.d/elpa/lsp-ui-20211009.1545;  "nano" "lsp-ui.el" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "nano" "pen-ink.el" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "nano" "pen-ink.el" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "nano" "pen-ink.el" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "nano" "pen-ink.el" "#" "<==" "zsh"

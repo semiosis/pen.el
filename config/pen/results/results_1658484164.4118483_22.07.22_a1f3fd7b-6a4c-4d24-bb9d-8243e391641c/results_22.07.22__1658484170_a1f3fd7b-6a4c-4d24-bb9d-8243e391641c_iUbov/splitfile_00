@@ -1,0 +1,6 @@
+/github/src
+export MYGITC=.git/
+export MYGITW=~/.pen/documents/github/work
+
+(
+local MYGITC_COMMIT=$MYGITC/HEAD

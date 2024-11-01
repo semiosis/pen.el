@@ -1,0 +1,1009 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 14 Jan 2024 08:15:20 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 20694
+Connection: keep-alive
+X-Drupal-Cache: MISS
+Etag: "1705199113-0"
+Access-Control-Allow-Origin: *
+Cache-Control: public, max-age=86400
+Content-Language: en
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Permissions-Policy: interest-cohort=()
+X-UA-Compatible: IE=Edge,chrome=1
+X-Generator: Drupal 7 (http://drupal.org)
+Link: <https://www.ucg.org/files/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg>; rel="image_src",<https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace>; rel="canonical",<https://www.ucg.org/node/698666>; rel="shortlink"
+Last-Modified: Sun, 14 Jan 2024 02:25:13 GMT
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Vary: Cookie,Accept-Encoding
+X-Request-ID: v-25fc9c10-b284-11ee-a73b-eb5079c109b0
+X-AH-Environment: prod
+Age: 21001
+Via: varnish
+X-Cache: HIT
+X-Cache-Hits: 14
+Accept-Ranges: bytes
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//use.typekit.com" />
+<link rel="preconnect" href="//use.typekit.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="preconnect" href="//ajax.googleapis.com" />
+<meta charset="utf-8" />
+<link rel="prev" href="https://www.ucg.org/bible-study-tools/booklets/what-does-the-bible-teach-about-grace/gods-law-reflects-his-mind-and-character" />
+<link rel="up" href="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace" />
+<link rel="next" href="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/faith-puts-the-law-on-firmer-footing" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-180x180.png" />
+<link rel="icon"  type="image/png" sizes="194x194" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-194x194.png" />
+<link rel="icon"  type="image/png" sizes="96x96" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-96x96.png" />
+<link rel="icon"  type="image/png" sizes="32x32" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-32x32.png" />
+<link rel="icon"  type="image/png" sizes="16x16" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-16x16.png" />
+<meta name="msapplication-TileColor" content="#1F65A6" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+<meta name="description" content="Many people point to Romans 6:14, which says, “You are not under law, but under grace,” to argue that Christians, being under grace, no longer need to obey God’s law." />
+<meta name="abstract" content="Many people point to Romans 6:14, which says, “You are not under law, but under grace,” to argue that Christians, being under grace, no longer need to obey God’s law." />
+<meta name="keywords" content="-Grace" />
+<meta name="robots" content="follow, index" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="https://www.ucg.org/files/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg" />
+<link rel="canonical" href="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace" />
+<link rel="shortlink" href="https://www.ucg.org/node/698666" />
+<meta property="fb:app_id" content="149720061726778" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="United Church of God" />
+<meta property="og:url" content="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace" />
+<meta property="og:title" content="“You Are Not Under Law, but Under Grace”" />
+<meta property="og:description" content="Many people point to Romans 6:14, which says, “You are not under law, but under grace,” to argue that Christians, being under grace, no longer need to obey God’s law." />
+<meta property="og:image" content="https://www.ucg.org/files/styles/full_grid9/public/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg" />
+<meta property="og:image" content="https://www.ucg.org/files/styles/full_grid6/public/image/collection/what-does-the-bible-teach-about-grace.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ucgia" />
+<meta name="twitter:creator" content="@ucgia" />
+<meta name="twitter:image" content="https://www.ucg.org/files/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg" />
+<meta name="dcterms.title" content="“You Are Not Under Law, but Under Grace”" />
+<meta name="dcterms.creator" content="United Church of God" />
+<meta name="dcterms.date" content="2019-09-03T05:15-04:00" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.identifier" content="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="thumbnail" content="https://www.ucg.org/files/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg" />
+<meta name="dcterms.language" content="en" />
+<meta name="audience" content="all" />
+<meta property="og:image" content="https://www.ucg.org/sites/all/themes/top_hat/beyond-today-social.jpg?d=2020826" />
+  <title>“You Are Not Under Law, but Under Grace” | United Church of God</title>  
+  <link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__8Ko8XL1kFPgk97tdwRBLpOAWRtC986n3BbrHrxPEFQM__cW-9aoYoFNLslwd2dwWVUxDw64jOBB40Y9EB4pvW4lk___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+
+<!--[if IE]>
+<link rel="stylesheet" href="https://www.ucg.org/sites/all/themes/top_hat/css/ie.css?s76p41" media="all" />
+<![endif]-->
+<link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__KeIKFqPmURnw_LFSutd2WlLQ6qATBJZl3-u_ith0WPk__dVtUp0jlKbP0nR4LHc50tJyNjbvVt3cpdGkULn39GLI___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__wavvO0Y5_Ym9BLhGVQnidmK0cu0RFn8V83UynCXhJ4A__3ItLgXqpyGzguB5c1t_cvPlJYsRyqxKgnnFXk9NyCOI___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__SwxtiaigvsvWKWQoc9hIJYvcKFWhj3394RPnI-J8sLM__sgQc1ELIfOc10OEeLphNqNLGTCx4Rok2FPkw1CD6l-U___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+<!--<![endif]-->
+  <script src="https://www.ucg.org/profiles/panopoly/modules/contrib/respondjs/lib/respond.min.js?s76p41"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+window.jQuery || document.write("<script src='/profiles/panopoly/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__ZyeOaiFuDejQQbhUV7yg7atYZnj4WLfH77o0scv4068__jeShjS1-sEwOx4dbB-NSBsCnxWfNslS1Nkgx4CZngGA___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script>
+window.jQuery.ui || document.write("<script src='/profiles/panopoly/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__7NQPn9HNJgH0_BaPejMu4vhYJ9vJU038h1UMTXzSUzA__6qTfBvZq_WmHFf_i1xSbXAvhNGKekreFs-m_JgJvdXE___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+window.google_analytics_domain_name = ".ucg.org";window.google_analytics_uacct = "UA-6857460-5";window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-6857460-5", {"groups":"default","cookie_domain":".ucg.org","anonymize_ip":true,"page_path":location.pathname + location.search + location.hash,"link_attribution":true});gtag("config", "G-VCS617110R", {"groups":"default","cookie_domain":".ucg.org","anonymize_ip":true,"page_path":location.pathname + location.search + location.hash,"link_attribution":true});
+</script>
+<script>
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"top_hat","theme_token":"CoiH0oispk2yM_Cwgmo6IN3Fq6Dsj-_CsCBDMQKZC2M","jquery_version":"1.7","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/bible\/bible.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin-navbar.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-dropbutton.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-magic.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-modal.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-accordian.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-layouts.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.css":1,"sites\/all\/modules\/picture\/picture_wysiwyg.css":1,"profiles\/panopoly\/modules\/contrib\/radix_layouts\/radix_layouts.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/custom\/ucg_starterkit\/ucg_footer.css":1,"modules\/user\/user.css":1,"profiles\/panopoly\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/custom\/ucg_starterkit\/top_hat_styles\/plugins\/styles\/slidedown\/slidedown.css":1,"sites\/all\/themes\/top_hat\/css\/eu_compliance.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/panopoly\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/panopoly\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/book_made_simple\/book_made_simple.css":1,"sites\/all\/modules\/jplayer\/theme\/jplayer.css":1,"sites\/all\/themes\/top_hat\/ds_layouts\/figure_one_column\/figure_one_column.css":1,"sites\/all\/modules\/radioactivity\/css\/radioactivity.css":1,"profiles\/panopoly\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"sites\/all\/modules\/lazy_pane\/css\/lazy-pane.css":1,"sites\/all\/modules\/eu_cookie_compliance\/css\/eu_cookie_compliance.bare.css":1,"sites\/all\/modules\/mobile_navigation\/mobile_navigation.css":1,"public:\/\/ctools\/css\/cedb26d71942be4f2781a06b4f224fad.css":1,"sites\/all\/themes\/top_hat\/css\/print.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.css":1,"sites\/all\/themes\/top_hat\/css\/jplayer.css":1,"sites\/all\/themes\/top_hat\/css\/ie.css":1,"sites\/all\/themes\/top_hat\/css\/global.css":1,"ie::normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default.css":1,"ie::normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"fluid::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/fluid\/alpha-default-fluid-12.css":1,"normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default.css":1,"normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1},"js":{"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"sites\/all\/modules\/bible\/bible.js":1,"sites\/all\/modules\/bible\/bible_bls.js":1,"sites\/all\/modules\/bible\/bible_webimport.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"sites\/all\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1,"misc\/progress.js":1,"sites\/all\/modules\/custom\/top_hat_theme\/top_hat_theme.js":1,"sites\/all\/modules\/lazy_pane\/js\/lazy-pane.js":1,"sites\/all\/modules\/mobile_navigation\/js\/mobile_menu.js":1,"sites\/all\/modules\/mobile_navigation\/mobile_navigation.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-6857460-5":1,"sites\/all\/modules\/radioactivity\/js\/radioactivity.js":1,"https:\/\/use.typekit.com\/gtu5vky.js":1,"sites\/all\/themes\/top_hat\/js\/vendor\/custom.modernizr.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.alerts.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.cookie.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.reveal.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.section.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.dropdown.js":1,"sites\/all\/themes\/top_hat\/js\/jquery.hoverIntent.minified.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1,"sites\/all\/modules\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/picture\/picture.min.js":1,"sites\/all\/modules\/jplayer\/theme\/jplayer.js":1,"sites\/all\/modules\/custom\/ucg_starterkit\/top_hat_styles\/plugins\/styles\/slidedown\/slidedown.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.js":1,"sites\/all\/themes\/top_hat\/js\/top_hat.js":1,"sites\/all\/themes\/top_hat\/js\/lunametrics-youtube-v7.gtm.min.js":1,"sites\/all\/themes\/top_hat\/js\/min\/ustream-embedapi-min.js":1,"sites\/all\/themes\/top_hat\/js\/ustream-analytics.js":1,"sites\/all\/themes\/top_hat\/js\/jquery.scrolldepth.min.js":1,"profiles\/panopoly\/modules\/contrib\/respondjs\/lib\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/libraries\/jplayer\/jquery.jplayer.js":1,"misc\/ajax.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1}},"baseurl":"https:\/\/www.ucg.org\/","bibleimgurl":"\/sites\/all\/modules\/bible\/images\/","CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"manual"},"radioactivity":{"emitters":{"emitDefault":[{"accuracy":"100","bundle":"article","energy":"20","entity_id":"698666","entity_type":"node","field_name":"field_radioactivity","language":"und","storage":"Memcached","type":"energy","checksum":"02449ec8806814e2e0734ba5c3b75ee6"},{"accuracy":"100","bundle":"article","energy":"10","entity_id":"698666","entity_type":"node","field_name":"field_radioactivity","language":"und","storage":"Memcached","type":"none","checksum":"56ba326b4cf381226918bac2dedff40a"}]},"config":{"emitPath":"\/sites\/all\/modules\/radioactivity\/emit.php","fpEnabled":0,"fpTimeout":"15"}},"lazy_pane":{"current_path":"node\/698666"},"jplayerInstances":{"jplayer-node-698666-field-audio-1705199113":{"files":[{"mp3":"https:\/\/www.ucg.org\/system\/storage\/serve\/1196511\/bible-study-tools-you-are-not-under-law-but-under-grace.mp3"}],"solution":"html, flash","supplied":"mp3","preload":"metadata","volume":1,"muted":false,"autoplay":false,"repeat":"none","backgroundColor":"000000","continuous":"0"}},"jPlayer":{"swfPath":"\/sites\/all\/libraries\/jplayer\/jquery.jplayer.swf","showHour":true,"showMin":true,"showSec":true,"padHour":false,"padMin":true,"padSec":true,"sepHour":":","sepMin":":","sepSec":""},"better_exposed_filters":{"views":{"book_by_nid":{"displays":{"panel_pane_1":{"filters":[]}}},"beyond_today_features":{"displays":{"panel_pane_6":{"filters":[]}}}}},"urlIsAjaxTrusted":{"\/bible-study-tools\/bible-study-aids\/what-does-the-bible-teach-about-grace\/you-are-not-under-law-but-under-grace":true},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EBy clicking any link on this page you are giving your consent for us to set cookies.\u003C\/p\u003E              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button button small white transparent\u0022\u003EOK, I agree\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button button small white transparent\u0022 \u003EDecline\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button button small white transparent\u0022\u003EOK, I agree\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button button small white transparent\u0022 \u003EDecline\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button button small white transparent\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you button small white transparent\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":1,"popup_height":"auto","popup_width":0,"popup_delay":1000,"popup_link":"https:\/\/www.ucg.org\/privacy-policy","popup_link_new_window":1,"popup_position":null,"fixed_top_position":1,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":1,"reload_page":0,"domain":"","domain_all_sites":null,"popup_eu_only_js":0,"cookie_lifetime":"100","cookie_session":false,"disagree_do_not_show_popup":0,"method":"opt_in","whitelisted_cookies":"_ga\r\n_gid\r\nhas_js","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies on this site to enhance your user experienceYou have given your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false,"withdraw_button_on_info_popup":0,"cookie_categories":[],"enable_save_preferences_button":1,"fix_first_cookie_category":1,"select_all_categories_by_default":0},"mobile_navigation":{"breakpoint":"all and (min-width: 1000px) and (min-device-width: 1000px), (max-device-width: 1000px) and (min-width: 1000px) and (orientation:landscape)","menuSelector":"#zone-menu","menuPlugin":"accordion","showEffect":"drawer_left","showItems":"active_trail","tabHandler":1,"menuWidth":"80","specialClasses":1,"mainPageSelector":"#page","useMask":1,"menuLabel":"\u003Cspan class=\u0022icon-menu\u0022\u003EMenu\u003C\/span\u003E","expandActive":1},"picture":{"mappings":[["Full Grid3","full_grid3"],["full_grid9","full_grid9"],["Full Grid4","full_grid4"],["16x9_grid3","16x9_grid3"],["16x9_grid4","16x9_grid4"],["16x9_grid12","16x9_grid12"],["Not Set","not_set"]],"label":"Image size (required)"},"googleanalytics":{"account":["UA-6857460-5","G-VCS617110R"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip|mobi|epub|mp4","trackDomainMode":1,"trackUrlFragments":1},"omega":{"layouts":{"primary":"normal","order":["fluid","normal"],"queries":{"fluid":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 1000px) and (min-device-width: 1000px), all and (max-device-width: 1000px) and (min-width: 1000px) and (orientation:landscape)"}}}});
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-698666 node-type-article bt edunie bt region-content i18n-en context-bible-study-tools">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <div class="grid-8 region region-user-first" id="region-user-first">
+  <div class="region-inner region-user-first-inner">
+    <div class="block block-menu block-menu-ucg-top-hat block-menu-menu-ucg-top-hat odd block-without-title" id="block-menu-menu-ucg-top-hat">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="inline"><li class="first leaf"><a href="https://www.ucg.org/">UCG.org</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/donate">DONATE</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 region region-user-second" id="region-user-second">
+  <div class="region-inner region-user-second-inner">
+    <div class="block block-panels-mini block-users-masthead block-panels-mini-users-masthead odd block-without-title" id="block-panels-mini-users-masthead">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <section  class="panel-display section-one-col" id="mini-panel-users_masthead-1">
+ <div class="panel-pane pane-block pane-search-form site-search-box pane-search site-search-box"   class="panel-pane pane-block pane-search-form site-search-box pane-search site-search-box">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <form action="/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace" method="post" id="search-block-form--2" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-searchfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--4">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search" x-webkit-speech="" type="search" id="edit-search-block-form--4" name="search_block_form" value="" size="15" maxlength="128" class="form-text form-search" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input class="button small form-submit" type="submit" id="edit-submit--2" name="op" value="Search" /></div><input type="hidden" name="form_build_id" value="form-Khjy5BhEdryZTfH0cg4SH-p5u1uJdyAfo_g6Use0KFQ" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-masthead-content"   class="panel-pane pane-masthead-content">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="masthead-content"><a href="https://www.ucg.org/user?destination=node/698666" class="user-account button small" rel="nofollow">Sign In | Sign Up</a></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-masthead-search"   class="panel-pane pane-masthead-search">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="masthead-content-search masthead-content"><a href="#" class="toggle-search icon-search button small">Search</a></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-shopping-cart-teaser-panel-pane-1"   class="panel-pane pane-views-panes pane-shopping-cart-teaser-panel-pane-1">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div  class="lazy-pane-placeholder" data-lazy-pane-id="lazy_pane:node/698666:views_panes:shopping_cart_teaser-panel_pane_1:17361:1036" data-lazy-pane-load-strategy="page-loaded"></div>  </div>
+
+  
+    </div>
+</div>
+</section><!-- /.section-one-col -->
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="block block-block block-logo-block bt-logo block-7 block-block-7 odd block-without-title" id="block-block-7">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div><a href="/beyond-today"><svg data-name="Layer 1" id="Layer_1" viewbox="0 0 557.54 162.31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<style type="text/css">.cls-1{fill:none;}.cls-3{clip-path:url(#clip-path);}
+</style>
+<clippath id="clip-path" transform="translate(-80.23 -119.76)"><path class="cls-1" d="M565.81,185.53C502.09,174.76,431.3,167,356.74,167c-78.22,0-145.31,7.92-209,18.69V118.6H565.81v66.93Z"></path></clippath></defs>
+<title></title>
+<polygon class="cls-2" points="104.21 71.14 0 71.14 0 87.98 42.49 87.98 42.49 160.15 61.48 160.15 61.48 87.98 104.21 87.98 104.21 71.14"></polygon><path class="cls-2" d="M241.72,188.15c-33.46,0-56.83,19.28-56.83,46.9a43.38,43.38,0,0,0,15.57,33.5c10.4,8.85,24.66,13.52,41.26,13.52s31-4.67,41.42-13.52A43.3,43.3,0,0,0,298.79,235C298.79,207.43,275.33,188.15,241.72,188.15Zm0,77.32c-25.56,0-37-15.28-37-30.42,0-18.12,14.87-30.3,37-30.3,11.47,0,21,3.08,27.68,8.91A27.62,27.62,0,0,1,278.85,235C278.85,253.24,263.93,265.47,241.72,265.47Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M407.23,204c-10.79-8.67-26.39-13.07-46.39-13.07h-48v89h48c19.37,0,35.32-4.58,46.12-13.25a39.45,39.45,0,0,0,15.15-31.25C422.1,222.67,417,211.8,407.23,204Zm-46.51,59.34H331.62V207.74h29.11c26.56,0,41.19,9.83,41.19,27.67S386.9,263.32,360.72,263.32Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M467.25,190.42l-48.67,89.49H439.7l12.57-23.46h51.83l12.45,23.46H538l-48.67-89.49H467.25Zm-7.07,50.63,17.94-33.94L496,241.05H460.18Z" transform="translate(-80.23 -119.76)"></path><polygon class="cls-2" points="531.21 71.14 495.34 105.03 459.71 71.14 432.42 71.14 485.54 120.92 485.54 160.15 504.41 160.15 504.41 120.92 557.54 71.14 531.21 71.14"></polygon><g class="cls-3"><path class="cls-2" d="M201,147.61v-0.18c5.21-1.33,12.29-4.88,12.29-13.22a12.18,12.18,0,0,0-4.95-10.11c-2.92-2-6.89-3-13.52-3H171.6v2.57c6.89,0.53,7.34,1.06,7.34,8.43V168.7c0,7-.65,8.09-7.94,9.74l-0.1,2.39L191,178.75c7,0,13.08-1.06,17.5-3.64,5.21-2.84,8.4-7.45,8.4-13.39C216.85,152.94,210,148.94,201,147.61Zm-13.88-18.36c0-2.66.26-3.73,1.06-4.26a10,10,0,0,1,4.86-1c7.69,0,11.31,5,11.31,11.35,0,7.36-4,11.18-13.52,11.18h-3.71v-17.3Zm7.16,46.31c-5.48.09-7.16-1.69-7.16-8.07V149.65h3.62c10.61,0,16.62,4,16.62,13C207.4,171.83,201.12,175.56,194.31,175.56Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M267.09,172.63c-1.94,2.22-4.6,2.93-11,2.93-4.15,0-7.25,0-8.93-1.06s-2.12-3-2.12-7.27V150.81h8c7.69,0,8.4.53,9.55,6.83h2.65V140.52h-2.65c-1.15,5.94-1.68,6.65-9.55,6.65h-8v-20c0-2.66.18-2.93,3-2.93h6.36c6.1,0,8.48.62,9.72,2.48a20.93,20.93,0,0,1,3,7.63l2.65-.44c-0.26-4.7-.71-10.82-0.8-12.86H229.26v2.57c6.81,0.62,7.51.89,7.51,8.87v35c0,7.36-.71,8-8.66,8.6v2.57h43c0.8-2.75,2.56-10,3.09-13.06l-2.65-.44A24.12,24.12,0,0,1,267.09,172.63Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M314.65,123.66c6.89,0.71,7.07,1.51,5.21,5.77-2.47,5.5-7.16,14.1-10.25,19.87-3.8-6.65-8-13.84-11.58-20.76-1.59-3-1.86-4.08,4.42-4.88v-2.57H280.62v2.57c5.21,0.53,6.28,1.51,9.72,7.54,4.95,8.43,8.13,14.19,11.14,19.6,1.33,2.48,1.68,3.37,1.68,5.23v11.44c0,7.54-.71,8.16-8.57,8.69v2.57h25.63v-2.57c-8-.53-8.75-1.15-8.75-8.69v-12a9.65,9.65,0,0,1,1.5-5.68c4.15-7.89,7.07-12.86,11-19.07,3.36-5.32,4.51-6.39,10.52-7.1v-2.57h-19.8v2.57Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M372.45,119.76c-18.91,0-30.05,14.81-30.05,30.69,0,17,12.64,29.63,29,29.63s29.7-11.71,29.7-30.87C401.08,131.47,387.56,119.76,372.45,119.76Zm0.8,57c-12.29,0-20.95-12.33-20.95-28.65,0-16.5,8.66-25.1,18.21-25.1,11.49,0,20.68,10,20.68,28.56C391.18,168.55,382.79,176.8,373.24,176.8Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M454.81,123.66c6.19,0.35,8.22,1.51,8.66,5.5a133.1,133.1,0,0,1,.62,14.73v20.67h-0.26L427.5,121.09H413.89v2.57c4.07,0.35,6,1.06,7.78,3.28,1.59,2,1.77,2.75,1.77,9v19.34a146.42,146.42,0,0,1-.62,15.08c-0.44,4.26-2.65,5.41-7.69,5.77v2.57h21.12v-2.57c-6.19-.35-8.13-1.51-8.57-5.94a148.42,148.42,0,0,1-.53-14.9V133.51h0.18l37.47,46.13h3V143.89c0-8.16.26-12.15,0.53-14.9,0.44-3.9,2.47-5.06,7.42-5.32v-2.57H454.81v2.57Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M540.14,128.63c-5.48-5.23-13.88-7.54-25.1-7.54H489.85v2.66c6.81,0.53,7.51.89,7.51,8.52v35.31c0,7.54-.8,8.07-8.22,8.6v2.57h21.21c10.87,0,19.8-2.31,26.43-7.36s10.87-13,10.87-23.69C547.66,139.36,544.47,132.89,540.14,128.63Zm-25.45,46.75c-6.36,0-9-1.77-9-8.43V130.31c0-3.28.26-4.35,1.15-5.06s3-1.06,6.63-1.06c5.92,0,11,1.24,14.94,4,6.54,4.08,9.81,11.8,9.81,20.85C538.2,163.49,530.42,175.38,514.69,175.38Z" transform="translate(-80.23 -119.76)"></path></g><path class="cls-2" d="M560.94,182.47c-60.62-14.5-130.2-22.75-204.2-22.75S213.2,168,152.59,182.45l0.53,2.51a1196.86,1196.86,0,0,1,203.62-17.81A1196.81,1196.81,0,0,1,560.41,185Z" transform="translate(-80.23 -119.76)"></path></svg></a></div>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
+  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+        <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/" class="tophat hide-for-large-up">United Church of God</a></li>
+<li class="leaf"><a href="http://donate.ucg.org" class="tophat hide-for-large-up">Donate</a></li>
+<li class="expanded"><a href="https://www.ucg.org/im-new">About</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/about-the-united-church-of-god">About the United Church of God</a></li>
+<li class="leaf"><a href="https://www.ucg.org/fundamental-beliefs-of-the-united-church-of-god">Fundamental Beliefs</a></li>
+<li class="leaf"><a href="https://www.ucg.org/im-new">I&#039;m New</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/booklets/this-is-the-united-church-of-god">This is the United Church of God</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/united-church-of-god-a-brief-history">A Brief History</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/beyond-today" class="tophat">Beyond Today</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/beyond-today/new">Newest Content</a></li>
+<li class="expanded"><a href="https://www.ucg.org/beyond-today/television">Television</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-television-program">Program Archive</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/station-listing">Station Listings</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine">Magazine</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine/beyond-today-magazine-subscription">Get Free Subscription</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine-confirmation">Confirm Subscription</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine-renewal">Renew Subscription</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/cancel-beyond-today-magazine">Cancel Subscription</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/change-address">Change Address</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/beyond-today/blogs">Blogs</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/beyond-today/blogs/breaking-free">Breaking Free</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today-daily">BT Daily</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/blogs/this-is-the-way">This Is The Way</a></li>
+</ul></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/apps">Apps</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-interviews">Interviews</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/ucg-films/ucg-short-film">UCG Short Films</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/bible-study-tools">Bible Tools</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/bible-study-tools/beyond-today-bible-commentary">Bible Commentary</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/bible-questions-and-answers">Bible Questions and Answers</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/bible-study-course">Bible Study Course</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/booklets">Bible Study Aids</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/family-study-guides">Family Study Guides</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/study-by-topic">Study by Topic</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/teen-bible-study-guides">Teen Bible Study Guides</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-bible-study">Video Bible Studies</a></li>
+</ul></li>
+<li class="leaf"><a href="https://www.ucg.org/congregations">Congregations</a></li>
+<li class="expanded"><a href="https://www.ucg.org/sermons">Sermons</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/sermons/search">Sermon Search</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/sermons/sermon-series">Sermon Series</a></li>
+</ul></li>
+<li class="leaf"><a href="https://www.ucg.org/webcast">Webcast</a></li>
+<li class="expanded"><a href="https://www.ucg.org/members">Members</a><ul class="menu"><li class="first expanded"><a href="https://www.ucg.org/members/news">United News</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/members/news">Newest Updates</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/members/united-news">Archived Issues</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/members/calendar">Calendars</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/members/calendar">Church Activity Calendar</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/holy-day-calendar">Holy Day Calendar</a></li>
+</ul></li>
+<li class="leaf"><a href="https://www.ucg.org/members/general-conference-of-elders/ucg-general-conference-of-elders-2023">General Conference of Elders</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/outreach/good-works">Good Works</a></li>
+<li class="expanded"><a href="https://www.ucg.org/members/feast">Feast of Tabernacles</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/members/feast/sites/2024">2024 Festival Locations</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/feast/updates">Feast Updates</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/feast/sites/cancel">Cancel My Registration</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/members/news/2023-feast-of-tabernacles-webcast-information">2023 Webcasts</a></li>
+</ul></li>
+<li class="leaf"><a href="https://www.ucg.org/members/winter-family-weekend">Winter Family Weekend</a></li>
+<li class="expanded"><a href="https://www.ucg.org/members/kids">Kids </a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/members/kids#jelly">Jelly</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/kids#jelly-books">Jelly Books</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/kids#poly-coly-toly">Poly Col y Toly</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/members/kids#family-study-guides">Family Study Guides</a></li>
+</ul></li>
+<li class="last leaf"><a href="https://www.ucg.org/inside-united-podcast">Podcast</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/members/member-resources">Resources</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/members/compass-check">Compass Check</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/family-study-guides">Family Study Guides</a></li>
+<li class="leaf"><a href="http://uyc.ucg.org/">United Youth Camps</a></li>
+<li class="leaf"><a href="http://abc.ucg.org">Ambassador Bible College</a></li>
+<li class="leaf"><a href="https://www.ucg.org/members/hymnal">UCG Hymnal</a></li>
+<li class="leaf"><a href="https://www.ucg.org/study-papers">Study Papers</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/planned-giving">Planned Giving</a></li>
+</ul></li>
+<li class="last expanded"><a href="https://www.ucg.org/contact-1?path=bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace">Contact</a><ul class="menu"><li class="first last leaf"><a href="https://www.ucg.org/help">Website Help</a></li>
+</ul></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-12 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                <h1 class="title" id="page-title">“You Are Not Under Law, but Under Grace”</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      
+<div class="panelizer-view-mode node node-full node-article node-698666 one-sidebar node-promoted node-promoted" class="panelizer-view-mode node node-full node-article node-698666 one-sidebar node-promoted node-promoted">
+        <article class="panel-display omega-grid top-hat-content top-hat-12-twocol-9-3-stacked-sidebars one-sidebar" >
+    <div class="grid-9 column-left">
+    <header class="panel-panel region-top">
+      <div class="panel-pane pane-page-breadcrumb"   class="panel-pane pane-page-breadcrumb">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><span class="inline odd first"><a href="https://www.ucg.org/">UCG.org</a></span> <span class="delimiter">/</span> <span class="inline even"><a href="https://www.ucg.org/bible-study-tools">Bible Study Tools</a></span> <span class="delimiter">/</span> <span class="inline odd"><a href="https://www.ucg.org/bible-study-tools/booklets">Bible Study Aids</a></span> <span class="delimiter">/</span> <span class="inline even"><a href="https://www.ucg.org/what-does-the-bible-teach-about-grace">What Does the Bible Teach About Grace?</a></span> <span class="delimiter">/</span> <span class="inline odd last">“You Are Not Under Law, but Under Grace”</span></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-node-hgroup"   class="panel-pane pane-node-hgroup">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <hgroup><h1>“You Are Not Under Law, but Under Grace”</h1>
+</hgroup>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-byline-pane"   class="panel-pane pane-byline-pane">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="byline field-name-submitted-by"><time class="no-break" datetime="1567502100" pubdate>Posted on <strong>Sep 3, 2019</strong></time> <span class="authors"> by <a href="https://www.ucg.org/user/united-church-of-god" title="View user profile." class="username">United Church of God</a></span> <span class="audio-link"><a href="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace" class="jp-player-play icon-headphones active">Listen</a></span> <span class="reading-time no-break"> Estimated reading time: 6 minutes</span> </div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-flag-study-list hide-for-large-up"   class="panel-pane pane-flag-study-list hide-for-large-up">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class='bookmark-flag flag'><div class='bookmark-flag flag'><span class='flag-wrapper flag-bookmarks'><a href="https://www.ucg.org/user" class="flag" data-reveal-id="modalStudyList">Add to my study list</a></span></div>
+    <div id="modalStudyList" class="reveal-modal medium">
+      <h2>Login or Create an Account</h2>
+      <div class="content-reveal-modal"><p class="lead">With a UCG.org account you will be able to save items to read and study later!</p>
+      <p><a href="https://www.ucg.org/user?destination=node/698666" class="study-list-registration button large expand">Sign In | Sign Up</a></p></div><a class="close-reveal-modal">&#215;</a>
+    </div></div>  </div>
+
+  
+    </div>
+</div>
+  <a href="#" class="pane-reveal-header" data-reveal-id="reveal-pane-65a3460e6abb2" data-css-top="0">
+    <span class="pane-title icon-download hide-for-large-up">Downloads</span></a>
+<!-- Screenreader download support -->
+<div class="element-invisible element-focusable">
+  
+<div class="panel-display boxton clearfix radix-boxton" id="mini-panel-node_downloads-1">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-content panel-panel">
+        <div class="panel-panel-inner">
+          <div class="panel-pane pane-entity-field pane-node-field-audio"   class="panel-pane pane-entity-field pane-node-field-audio">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+  <div class="field field-name-field-audio field-type-file field-label-hidden">
+    <span class="file"><img class="file-icon" alt="" title="audio/mpeg" src="/modules/file/icons/audio-x-generic.png" /> <a href="https://www.ucg.org/system/storage/serve/1196511/bible-study-tools-you-are-not-under-law-but-under-grace.mp3" type="audio/mpeg; length=8618401" download="bible-study-tools-you-are-not-under-law-but-under-grace.mp3">MP3 Audio</a> <span class="file-size">(8.22 MB)</span></span>  </div>
+  </div>
+
+  
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.boxton -->
+</div>
+<div id="reveal-pane-65a3460e6abb2"  class='reveal-pane reveal-modal medium ' >
+  <div class='pane-content '>
+    <header class="header-reveal-modal">
+            <h3 class="title-reveal-modal">Downloads</h3>
+            <h4 class="subheader title-reveal-modal">“You Are Not Under Law, but Under Grace”</h4>
+    </header>
+    <div class="content-reveal-modal">
+      
+<div class="panel-display boxton clearfix radix-boxton" id="mini-panel-node_downloads-1">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-content panel-panel">
+        <div class="panel-panel-inner">
+          <div class="panel-pane pane-entity-field pane-node-field-audio"   class="panel-pane pane-entity-field pane-node-field-audio">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+  <div class="field field-name-field-audio field-type-file field-label-hidden">
+    <span class="file"><img class="file-icon" alt="" title="audio/mpeg" src="/modules/file/icons/audio-x-generic.png" /> <a href="https://www.ucg.org/system/storage/serve/1196511/bible-study-tools-you-are-not-under-law-but-under-grace.mp3" type="audio/mpeg; length=8618401" download="bible-study-tools-you-are-not-under-law-but-under-grace.mp3">MP3 Audio</a> <span class="file-size">(8.22 MB)</span></span>  </div>
+  </div>
+
+  
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.boxton -->
+    </div>
+  </div>
+  <span class="close-reveal-modal">&#215;</span>
+</div>
+    </header>
+    <section class="panel-panel region-left">
+      <div id="article-audio" class="slidedown-theme-pane " >
+  <div class='pane-content slideToggle-target panel closed'>
+  
+  <div class="field field-name-field-audio field-type-file field-label-hidden">
+    
+<div class="jp-audio">
+  <div class="jp-type-playlist">
+    <div id="jplayer-node-698666-field-audio-1705199113" class="jp-jplayer"></div>
+    <div id="jplayer-node-698666-field-audio-1705199113_interface" class="jp-interface">
+            <ul class="jp-controls">
+        <li><a href="#" class="jp-play" tabindex="1" title="Play">
+          <svg class="svg-play-button" viewBox="0 0 80 80" alt="Play">
+            <polygon points="25,20 25,60 60,40" />
+          </svg>
+          </a></li>
+        <li><a href="#" class="jp-pause" tabindex="1" title="Pause">
+          <svg class="svg-pause-button" viewBox="0 0 80 80" alt="Pause">
+            <polygon points="25,60 25,20 35,20 35,60 " />
+            <polygon points="45,60 45,20 55,20 55,60 " />
+        </svg>
+      </a></li>
+      </ul>
+
+      <div class="jp-progress">
+        <div class="jp-seek-bar">
+          <span></span>
+          <div class="jp-play-bar"></div>
+        </div>
+      </div>
+      <div class="jp-current-time"></div>
+      <div class="jp-duration"></div>
+    </div>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+  <aside class="panel-pane pane-entity-field pane-node-field-drophead ribbon"   class="panel-pane pane-entity-field pane-node-field-drophead ribbon">
+
+    
+    
+    
+          <h3 class="pane-content">
+  <div class="field field-name-field-drophead field-type-text-long field-label-hidden">
+    Many people point to Romans 6:14, which says, “You are not under law, but under grace,” to argue that Christians, being under grace, no longer need to obey God’s law.   </div>
+</h3>    
+    
+    
+  </aside>
+<div class="panel-pane pane-entity-field pane-node-field-featured-image"   class="panel-pane pane-entity-field pane-node-field-featured-image">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+  <div class="field field-name-field-featured-image field-type-image field-label-hidden">
+    <figure   class="figure-one-column file file-image file-image-jpeg view-mode-picture_w_caption  clearfix">
+
+  
+  <div class="group-ds_content">
+    <picture  title="After the first few verses of Romans 6, Paul goes into a detailed discussion of two ways of life.">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://www.ucg.org/files/styles/full_grid9_breakpoints_theme_top_hat_wide_1x/public/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg?itok=RmULHCel&amp;timestamp=1603852615 1x" media="(min-width: 1220px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid9_breakpoints_theme_top_hat_normal_1x/public/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg?itok=NwvQlQbY&amp;timestamp=1603852615 1x" media="(min-width: 980px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid9_breakpoints_theme_top_hat_narrow_1x/public/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg?itok=N85PnILL&amp;timestamp=1603852615 1x" media="(min-width: 740px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid9_breakpoints_theme_top_hat_mobile_1x/public/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg?itok=VKCqxQP8&amp;timestamp=1603852615 1x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="https://www.ucg.org/files/styles/full_grid9_breakpoints_theme_top_hat_mobile_1x/public/image/article/2019/09/03/you-are-not-under-law-but-under-grace_0.jpg?timestamp=1603852615" alt="A Bible opened to the book of Romans" title="After the first few verses of Romans 6, Paul goes into a detailed discussion of two ways of life." />
+</picture><small rel="license" >Daniel Day Media/Unsplash</small>  </div>
+
+  <figcaption class="group-figcaption "><div class="field field-name-field-file-image-title-text">After the first few verses of Romans 6, Paul goes into a detailed discussion of two ways of life.</div></figcaption>
+
+</figure>
+
+  </div>
+  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-entity-field pane-node-body"   class="panel-pane pane-entity-field pane-node-body">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <p>But is that what the verse means? We need only to read the next two verses to see that the apostle Paul ridicules that idea! He writes: “What then? <em>Are we to sin because we are not under law but under grace? By no means! </em>Don’t you know that when you offer yourselves to someone as obedient slaves, you are slaves of the one you obey—whether you are slaves to sin, which leads to death, or to obedience, which leads to righteousness?” (Romans 6:15-16, NIV).</p>
+
+<p>Some people had assumed that grace meant they could continue in a sinful lifestyle. Paul scorns that idea, saying sin is a form of slavery that leads to death.</p>
+
+<p>But what does Paul mean by “under law” and “under grace”? When the meaning of a Bible passage is unclear, we should first read the context—the verses before and after. That will usually help clear up any confusion. At times we will need to read the entire chapter or even the entire book or how certain language is used elsewhere to see the context.</p>
+
+<p>Interestingly, the epistle to the Romans—the letter that misguided theologians cite the most in arguing that Paul dismissed the Old Testament as being valid for Christians—actually has the largest number of Old Testament quotes that Paul uses to support his teachings! Paul quotes or paraphrases the Old Testament <em>84 times</em> in this letter—an average of more than five times per chapter!</p>
+
+<p>So it’s nonsensical to argue that Paul in Romans is arguing against the validity or authority of the Old Testament or the laws of God written there. In all, Paul quotes or paraphrases 184 Old Testament passages in his writings (not counting another 83 in the book of Hebrews, which he likely also wrote), and this figure doesn’t include his additional dozens of references to people, places and events in the Old Testament. Who in his right mind quotes from a source as a primary support of his teachings while simultaneously arguing that this source is no longer valid or authoritative? Clearly that makes no sense. (This is addressed in detail in our free book <em><a href="https://www.ucg.org/bible-study-tools/booklets/the-new-covenant-does-it-abolish-gods-law">The New Covenant: Does It Abolish God’s Law?</a></em>)</p>
+
+<h3>What subject is Paul addressing?</h3>
+
+<p>But back to the context of Romans 6—what subject is Paul actually addressing? In Romans 6:1-2 Paul tells us: “What shall we say then? <em>Shall we continue in sin that grace may abound?</em> Certainly not! How shall we who died to sin live any longer in it?”</p>
+
+<p>The issue or question he is addressing is simple: Can a Christian who has “died to sin”—by recognizing that his or her sin deserves the death penalty, and has sincerely repented, been baptized as a symbol of burying the old person in a watery grave and been symbolically raised to a new life as an entirely new person now led by God’s Spirit—continue in a life of sin? Paul’s answer is blunt and simple: <em>“Certainly not!” </em></p>
+
+<p>In no way does grace nullify, invalidate or negate God’s law. As explained in this chapter, God’s law is actually another gift of God’s grace toward mankind—it reveals the thinking, character and mind of God and shows us the way He wants us to live! The longest chapter in the Bible, Psalm 119, is one long hymn of praise and thanks to God for the wisdom of God’s law and the blessings it brings to those who obey it. Grace and law don’t <em>contradict </em>one another, they greatly <em>complement </em>each other!</p>
+
+<p>After the first few verses of Romans 6, Paul goes into a detailed discussion of two ways of life. One is our old way of living that led to slavery to sin, suffering and death (sin being the breaking of God’s law, 1 John 3:4). The other, continuing in Romans 6, is to “die with Christ” (Romans 6:8), accepting His sacrifice to pay the death penalty we deserved, symbolically dying and being buried with Him in baptism, then rising from that watery grave “in newness of life” (Romans 6:4), now “alive to God in Christ Jesus our Lord” (Romans 6:11).</p>
+
+<p>Now living a new life led by God’s Holy Spirit, we are to “not let sin reign in your mortal body, that you should obey it in its lusts” (Romans 6:12), but to “present yourselves to God as being alive from the dead” (Romans 6:13).</p>
+
+<h3>The crux of the matter</h3>
+
+<p>Then we come to Paul’s pivotal statement in Romans 6:14: “For sin shall not have dominion over you, for you are not under law but under grace.”</p>
+
+<p>With the background leading up to this, Paul’s meaning is clear. For a Christian, <em>“sin shall not have dominion over you”—</em>because Christians are freed from slavery to sin (from being under sin’s “dominion”) by Christ having died for us and are now “dead indeed to sin, but alive to God in Christ Jesus our Lord” (Romans 6:11). Sin no longer has us enslaved. We have escaped its power and its penalty of death.</p>
+
+<p>“For you are not under law but under grace.” Throughout the chapter up to this point Paul has been comparing and contrasting a sinful way of life that leads to death and a way of receiving and accepting God’s gift of grace and mercy that leads to a new way of life that will ultimately be <em>eternal </em>life.</p>
+
+<p>Now he compares and contrasts two very different outcomes. “Under law,” in this context, is referring to being <em>under the penalty</em> of the law—which, as he has mentioned in nearly every verse up to this point, <em>is death. </em>The law required death as punishment for sin. <em>That never changed. </em>What changed is that through God’s grace, Jesus Christ emptied Himself of the glory, splendor, majesty and power that He shared with God the Father and came to earth as a physical human being to take that awful penalty on Himself in our place (Philippians 2:5-8; 1 Peter 1:18-19).</p>
+
+<p>Because of that supreme sacrifice on our behalf and His resurrection from the dead—also mentioned in nearly every verse in this chapter up to this point—we are no longer under the penalty of death, but “under grace.” In God’s grace He has called us to His truth, forgiven our sins by the sacrifice of His Son, and offers us resurrection to eternal life just as Jesus Christ has been resurrected to eternal life.</p>
+
+<p>Paul goes on to explain the only logical response in the lives of those who experience and recognize this great gift of God’s grace: “But God be thanked that though you were slaves of sin, yet you obeyed from the heart that form of doctrine to which you were delivered. And having been set free from sin, <em>you became slaves of righteousness” </em>(Romans 6:17-18).</p>
+
+<p>In deep gratitude our response to God is to become “slaves of righteousness”—totally committed and dedicated to our new Master and totally rejecting our old master of sin and death. Thus, being under grace does not mean out from under obligation to obey God’s law. Being under grace means out from under the penalty of the law for breaking it so that we may be empowered with new life to live in obedience to it in following Jesus Christ as Ruler of our lives!</p>
+
+<p>Paul summarizes the point of this discussion in the last verse of the chapter, Romans 6:23: “For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.” “Gift” here translates the Greek word <em>charisma, </em>closely related to the word <em>charis, </em>meaning “grace.” And <em>charisma </em>means “gift”—the gift in this case being “eternal life in Christ Jesus our Lord”—the ultimate gift of God’s grace!</p>  </div>
+  </div>
+
+  
+    </div>
+</div>
+
+    
+    
+    
+          <div class="pane-content tags">
+  <a href="https://www.ucg.org/tags/grace">Grace</a></div>    
+    
+    
+<div class="panel-pane pane-entity-field pane-node-field-ref-user author-footer"   class="panel-pane pane-entity-field pane-node-field-ref-user author-footer">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+<ul class="field field-name-field-ref-user field-type-entityreference field-label-hidden">
+
+      <li>
+      <section class="ds-1col user-profile view-mode-author_teaser  clearfix">
+
+  
+  <a href="https://www.ucg.org/user/united-church-of-god"><img class="user-profile-thumbnail" src="https://www.ucg.org/files/styles/user_profile_thumbnail/public/image/users/picture/ucgiaseal300dpionecolor.jpg" width="100" height="100" alt="" /></a><div class="field field-name-name"><h4><a href="https://www.ucg.org/user/united-church-of-god">United Church of God</a></h4></div><div class="field field-name-field-biography"></div></section>
+
+    </li>
+  
+</ul>
+  </div>
+
+  
+    </div>
+</div>
+    </section>
+  </div>
+  <aside class="panel-panel grid-3 region-right column-right">
+    <div class="panel-pane pane-flag-study-list show-for-large-up"   class="panel-pane pane-flag-study-list show-for-large-up">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class='bookmark-flag flag'><div class='bookmark-flag flag'><span class='flag-wrapper flag-bookmarks'><a href="https://www.ucg.org/user" class="flag" data-reveal-id="modalStudyList">Add to my study list</a></span></div>
+    <div id="modalStudyList" class="reveal-modal medium">
+      <h2>Login or Create an Account</h2>
+      <div class="content-reveal-modal"><p class="lead">With a UCG.org account you will be able to save items to read and study later!</p>
+      <p><a href="https://www.ucg.org/user?destination=node/698666" class="study-list-registration button large expand">Sign In | Sign Up</a></p></div><a class="close-reveal-modal">&#215;</a>
+    </div></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-article-print-pane show-for-large-up" >
+  
+      
+  <div class="pane-content">
+    <a class='print-page icon-print' href='javascript:print();' title='Print this Page'>Print this Page</a>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-listen-button show-for-large-up"   class="panel-pane pane-listen-button show-for-large-up">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <span class="audio-link"><a href="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace#article-audio" class="jp-player-play icon-headphones active">Listen</a></span>   </div>
+
+  
+    </div>
+</div>
+  <a href="#" class="pane-reveal-header" data-reveal-id="reveal-pane-65a3460e4e155" data-css-top="0">
+    <h3 class="pane-title icon-download">Downloads</h3></a>
+<!-- Screenreader download support -->
+<div class="element-invisible element-focusable">
+  
+<div class="panel-display boxton clearfix radix-boxton" id="mini-panel-node_downloads">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-content panel-panel">
+        <div class="panel-panel-inner">
+          <div class="panel-pane pane-entity-field pane-node-field-audio"   class="panel-pane pane-entity-field pane-node-field-audio">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+  <div class="field field-name-field-audio field-type-file field-label-hidden">
+    <span class="file"><img class="file-icon" alt="" title="audio/mpeg" src="/modules/file/icons/audio-x-generic.png" /> <a href="https://www.ucg.org/system/storage/serve/1196511/bible-study-tools-you-are-not-under-law-but-under-grace.mp3" type="audio/mpeg; length=8618401" download="bible-study-tools-you-are-not-under-law-but-under-grace.mp3">MP3 Audio</a> <span class="file-size">(8.22 MB)</span></span>  </div>
+  </div>
+
+  
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.boxton -->
+</div>
+<div id="reveal-pane-65a3460e4e155"  class='reveal-pane reveal-modal medium ' >
+  <div class='pane-content '>
+    <header class="header-reveal-modal">
+            <h3 class="title-reveal-modal">Downloads</h3>
+            <h4 class="subheader title-reveal-modal">“You Are Not Under Law, but Under Grace”</h4>
+    </header>
+    <div class="content-reveal-modal">
+      
+<div class="panel-display boxton clearfix radix-boxton" id="mini-panel-node_downloads">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-content panel-panel">
+        <div class="panel-panel-inner">
+          <div class="panel-pane pane-entity-field pane-node-field-audio"   class="panel-pane pane-entity-field pane-node-field-audio">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+  <div class="field field-name-field-audio field-type-file field-label-hidden">
+    <span class="file"><img class="file-icon" alt="" title="audio/mpeg" src="/modules/file/icons/audio-x-generic.png" /> <a href="https://www.ucg.org/system/storage/serve/1196511/bible-study-tools-you-are-not-under-law-but-under-grace.mp3" type="audio/mpeg; length=8618401" download="bible-study-tools-you-are-not-under-law-but-under-grace.mp3">MP3 Audio</a> <span class="file-size">(8.22 MB)</span></span>  </div>
+  </div>
+
+  
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.boxton -->
+    </div>
+  </div>
+  <span class="close-reveal-modal">&#215;</span>
+</div>
+      <div class="panel-pane pane-views-panes pane-book-by-nid-panel-pane-1 lit-offer no-border lit-offer"   class="panel-pane pane-views-panes pane-book-by-nid-panel-pane-1 lit-offer no-border lit-offer">
+
+    
+    
+    
+          <div class="view view-book-by-nid view-id-book_by_nid view-display-id-panel_pane_1 no-border view-dom-id-55037ceabbf49c3d7535b58d96251f1b">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+          <div class="field field-name-field-featured-image"><a href="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace"><picture  title="What Does the Bible Teach About Grace?">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_wide_1x/public/image/collection/what-does-the-bible-teach-about-grace.png?itok=L9XjcB_Z&amp;timestamp=1568827484 1x" media="(min-width: 1220px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_normal_1x/public/image/collection/what-does-the-bible-teach-about-grace.png?itok=ctYs549b&amp;timestamp=1568827484 1x" media="(min-width: 980px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_narrow_1x/public/image/collection/what-does-the-bible-teach-about-grace.png?itok=BK7_BRYj&amp;timestamp=1568827484 1x" media="(min-width: 740px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_mobile_1x/public/image/collection/what-does-the-bible-teach-about-grace.png?itok=rNz_DKyZ&amp;timestamp=1568827484 1x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_mobile_1x/public/image/collection/what-does-the-bible-teach-about-grace.png?timestamp=1568827484" alt="What Does the Bible Teach About Grace?" title="What Does the Bible Teach About Grace?" />
+</picture></a></div>    
+  <div>        <div class="field field-name-title-field"><h4><a href="https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace">What Does the Bible Teach About Grace?</a></h4>
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    
+    
+    
+  </div>
+                                      </aside>
+  <footer class="panel-panel grid-12 region-bottom">
+      <section class="panel-pane pane-views-panes pane-node-comments-panel-pane-1"   id="comments" class="panel-pane pane-views-panes pane-node-comments-panel-pane-1">
+
+    
+    
+    
+          <div  class="lazy-pane-placeholder" data-lazy-pane-id="lazy_pane:panelizer:node:698666:full:7513921:views_panes:node_comments-panel_pane_1:8001:70" data-lazy-pane-load-strategy="pane-visible"><span class="lazy-pane-spinner"></span></div>    
+    
+    
+  </section>
+  </footer>
+</article>
+</div>
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-primary-wrapper" class="zone-wrapper zone-footer-primary-wrapper clearfix">  
+  <div id="zone-footer-primary" class="zone zone-footer-primary clearfix container-12">
+    <div class="grid-6 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <section class="block block-panels-mini block-ucg-footer block-panels-mini-ucg-footer odd" id="block-panels-mini-ucg-footer">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">This week on Beyond Today TV</h2>
+            
+    <div class="content clearfix">
+      <div class="panel-flexible panels-flexible-781 clearfix" id="mini-panel-ucg_footer">
+<div class="panel-flexible-inside panels-flexible-781-inside">
+<div class="panels-flexible-region panels-flexible-region-781-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-781-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-views-panes pane-beyond-today-features-panel-pane-6"   class="panel-pane pane-views-panes pane-beyond-today-features-panel-pane-6">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="view view-beyond-today-features view-id-beyond_today_features view-display-id-panel_pane_6 view-dom-id-6a106b0d3b5037f8c9a3e709babc4d44">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+          
+  <div class="field field-name-field-featured-image field-type-image field-label-hidden">
+    <a href="https://www.ucg.org/beyond-today/beyond-today-television-program/hell-unleashed-the-spirit-behind-the-hamas-attack"><picture  title="Beyond Today -- Hell Unleashed: The Spirit Behind the Hamas Attack">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/hell-unleashed-the-spirit-behind-the-hamas-attack.jpg?itok=krqqhlZK&amp;timestamp=1704472981 1x" media="(min-width: 0px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/hell-unleashed-the-spirit-behind-the-hamas-attack.jpg?itok=krqqhlZK&amp;timestamp=1704472981 1x" media="(min-width: 740px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/hell-unleashed-the-spirit-behind-the-hamas-attack.jpg?itok=krqqhlZK&amp;timestamp=1704472981 1x" media="(min-width: 980px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/hell-unleashed-the-spirit-behind-the-hamas-attack.jpg?itok=krqqhlZK&amp;timestamp=1704472981 1x" media="(min-width: 1220px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/hell-unleashed-the-spirit-behind-the-hamas-attack.jpg?timestamp=1704472981" alt="Beyond Today -- Hell Unleashed: The Spirit Behind the Hamas Attack" title="Beyond Today -- Hell Unleashed: The Spirit Behind the Hamas Attack" />
+</picture></a>  </div>
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+    </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+    </div>
+  </div>
+</section>  </div>
+</div><div class="grid-6 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <section class="block block-block block-16 block-block-16 odd" id="block-block-16">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Connect with us</h2>
+            
+    <div class="content clearfix">
+      <div class="standard-margin"><a href="/email-subscribe"><img alt="Get email updates. Stay current with the latest from ucg.org" class="full-grid9 media-element file-image-only" data-delta="1" data-fid="325656" data-media-element="1" height="188" src="https://www.ucg.org/files/styles/full_grid9/public/footer_button-email_updates2023.png" title="Get email updates. Stay current with the latest from ucg.org" width="720" /></a></div>
+
+<div><a href="/donate"><img alt="Donate: Help spread the message to others" class="full-grid9 media-element file-image-only" data-delta="2" data-fid="325661" data-media-element="1" height="188" src="https://www.ucg.org/files/styles/full_grid9/public/footer_button-donate2023.png" title="Donate: Help spread the message to others" width="720" /></a></div>
+    </div>
+  </div>
+</section>  </div>
+</div>  </div>
+</div><div id="zone-footer-secondary-wrapper" class="zone-wrapper zone-footer-secondary-wrapper clearfix">  
+  <div id="zone-footer-secondary" class="zone zone-footer-secondary clearfix container-12">
+    <div class="grid-3 region region-footer-sixth" id="region-footer-sixth">
+  <div class="region-inner region-footer-sixth-inner">
+    <section class="block block-menu block-menu-ucg-event-sites block-menu-menu-ucg-event-sites odd" id="block-menu-menu-ucg-event-sites">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Languages</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/node/86641" target="_blank">لغة العربية</a></li>
+<li class="leaf"><a href="http://www.ucghk.org" target="_blank">中国</a></li>
+<li class="leaf"><a href="http://www.ucg.org.za/af" target="_blank">Afrikaans</a></li>
+<li class="leaf"><a href="http://www.gutenachrichten.org" target="_blank">Deutsch</a></li>
+<li class="leaf"><a href="http://www.ucg.org/node/218691" target="_blank">Eastern European</a></li>
+<li class="leaf"><a href="https://www.ucg.org">English</a></li>
+<li class="leaf"><a href="http://espanol.ucg.org" target="_blank">Español</a></li>
+<li class="leaf"><a href="https://francais.ucg.org" target="_blank">Français</a></li>
+<li class="leaf"><a href="https://www.ucgitaly.org" target="_blank">Italiano</a></li>
+<li class="leaf"><a href="http://www.ucgholland.nl" target="_blank">Nederlands</a></li>
+<li class="leaf"><a href="http://portugues.ucg.org" target="_blank">Português</a></li>
+<li class="leaf"><a href="http://ru.ucg.org" target="_blank">Русский</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/node/218696">Svenska</a></li>
+</ul>    </div>
+  </div>
+</section>  </div>
+</div><div class="grid-3 region region-footer-seventh" id="region-footer-seventh">
+  <div class="region-inner region-footer-seventh-inner">
+    <section class="block block-menu block-menu-ucg-affilate-sites block-menu-menu-ucg-affilate-sites odd" id="block-menu-menu-ucg-affilate-sites">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">International offices</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="http://www.ucg.org.au" target="_blank">Australia</a></li>
+<li class="leaf"><a href="http://www.ucg.org.uk" target="_blank">British Isles</a></li>
+<li class="leaf"><a href="http://www.ucg.ca" target="_blank">Canada</a></li>
+<li class="leaf"><a href="http://caribbean.ucg.org" target="_blank">Caribbean</a></li>
+<li class="leaf"><a href="https://francais.ucg.org/">France</a></li>
+<li class="leaf"><a href="http://www.gutenachrichten.org" target="_blank">Germany</a></li>
+<li class="leaf"><a href="https://www.ucgitaly.org/" target="_blank">Italy</a></li>
+<li class="leaf"><a href="http://espanol.ucg.org" target="_blank">Latin America</a></li>
+<li class="leaf"><a href="http://www.ucgholland.nl" target="_blank">Netherlands</a></li>
+<li class="leaf"><a href="http://www.ucg.org.nz" target="_blank">New Zealand</a></li>
+<li class="leaf"><a href="http://www.ucgnigeria.org" target="_blank">Nigeria</a></li>
+<li class="leaf"><a href="http://www.ucg.org.ph" target="_blank">Philippines</a></li>
+<li class="last leaf"><a href="https://www.ucg.org.za/" target="_blank">South Africa</a></li>
+</ul>    </div>
+  </div>
+</section>  </div>
+</div><div class="grid-6 region region-footer-nineth" id="region-footer-nineth">
+  <div class="region-inner region-footer-nineth-inner">
+    <section class="block block-menu block-menu-ucg-social-media block-menu-menu-ucg-social-media odd" id="block-menu-menu-ucg-social-media">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Find us on...</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="https://channelstore.roku.com/details/10061/beyond-today-television">Beyond Today on Roku</a></li>
+<li class="leaf"><a href="https://channelstore.roku.com/details/39789/united-church-of-god">United Church of God on Roku</a></li>
+<li class="leaf"><a href="http://www.facebook.com/UnitedChurchofGod" title="United Church of God, ia Facebook page" class="icon-facebook">Facebook</a></li>
+<li class="leaf"><a href="https://twitter.com/ucgia" title="United Church of God, ia Twitter account" class="icon-twitter">Twitter</a></li>
+<li class="leaf"><a href="https://plus.google.com/114293797634291324230/posts" title="United Church of God, ia Google+ account" class="icon-google-plus">Google+</a></li>
+<li class="last leaf"><a href="http://pinterest.com/source/ucg.org/" title="United Church of God, ia Pinterest account" class="icon-pinterest">Pinterest</a></li>
+</ul>    </div>
+  </div>
+</section>  </div>
+</div>  </div>
+</div><div id="zone-heel-wrapper" class="zone-wrapper zone-heel-wrapper clearfix">  
+  <div id="zone-heel" class="zone zone-heel clearfix container-12">
+    <div class="grid-12 region region-legal" id="region-legal">
+  <div class="region-inner region-legal-inner">
+    <div class="block block-block block-ucg-footer-legal block-41 block-block-41 odd block-without-title" id="block-block-41">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p><a href="https://ucg.org/">United Church of God</a> is a 501(c)3 organization.  <a href="https://www.ucg.org/privacy-policy">Privacy Policy</a>  <a href="https://www.ucg.org/legal">Terms of Use</a></p>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-12 region region-copyright" id="region-copyright">
+  <div class="region-inner region-copyright-inner">
+    <div class="block block-block block-ucg-footer-copyright block-46 block-block-46 odd block-without-title" id="block-block-46">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p>© 1995–2024 All correspondence and questions should be sent to <a href="mailto:info@ucg.org">info@ucg.org</a>. Send inquiries regarding the operation of this Web site to <a href="mailto:webmaster@ucg.org">webmaster@ucg.org</a>.</p>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script src="https://www.ucg.org/files/advagg_js/js__Q1m4dKFPr3IzILXOGvew6KEPOmJjuK21CPWKPf1jifs__4kdN6u4jv9kT-QTQ2P7WYahrE2eQLfzPrQwMN4mzhDE___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+document.createElement( "picture" );
+</script>
+<script>
+document.createElement( "picture" );
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__TDlnYTbcIjefKc_LkJng0CIo0X2eQOCUDDV73mdzwYE__hmmCp1VKG6DfsfouPaGaGH0P8r8_u_nNdj8f9flNzsY___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="https://www.ucg.org/sites/all/modules/mobile_navigation/js/mobile_menu.js?s76p41"></script>
+<script src="https://www.ucg.org/sites/all/modules/mobile_navigation/mobile_navigation.js?s76p41"></script>
+<script src="https://www.ucg.org/files/advagg_js/js__dTRSuW27RiJte-z_L4Px_rno5dZsdWKiU3HtuBiTSmc__j44bKHN4C4JIW6gndS4uB2CF5jqWwj9V7tqi9gPM5mg___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-6857460-5"></script>
+<script src="https://www.ucg.org/files/advagg_js/js__mW5GRP5lBzyUhTtRKXsm49A9dItFcNnIU5UxIR8Mj98__PGgyH5pjlLbz3NnjrC5wCvbOyLWnFaGl5ATL_46xX4Y___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="https://use.typekit.com/gtu5vky.js"></script>
+<script>
+try{Typekit.load();}catch(e){}
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__hlHYgmrMDwn7fmp6cpA5sdb1oglA8TUz7F7ipOeODHc__2IMRfElm0G-QP_Qr5bJbHG4R7Dpt85ubddLBJxmmP5Q___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="https://www.ucg.org/files/advagg_js/js__Dx87WVqe4v5JxdO5NQXWuqi4N2DXrrivAJ5F7KUcBCY__qAl84FcCv2jyN22yFGS5Oc85cjd9zKX6p_cFNLGhe-M___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js" async="async"></script>
+<script src="https://www.ucg.org/files/advagg_js/js__mFpcR52jJgYEdNZttkdKhK5_bMEyFwzlmzDnNjvHmP8__ePbRSpEu-7wN15WpjE7aB3xWx5n6F2VmSODWAPAy4pk___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+var eu_cookie_compliance_cookie_name = "";
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__RimaCCu_otJ1N_paVFqoKX3A3t5snmZ-ol1Q4vto1iY__eMDe9OB1wAfdjVByK6sayzoSIqC9HsnxJzEMyq83EbM___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+setTimeout(function(){var a=document.createElement("script"),b=document.getElementsByTagName('script')[0];a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0004/3204.js";a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)},1);
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__m7F0woTGQwrIxJC6tTLX89uIlIOrFQVl6PCZzJ8IA40__5QnaklK-KoWZe_6_KfYaGB4UifwwHTXj5UjiY6EaIJE___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+jQuery.scrollDepth({minHeight:2e3,percentage:false,userTiming:false,pixelDepth:false,elements:['#comments','#section-footer','#authors'],nonInteraction:false});
+</script>
+</body>
+</html>

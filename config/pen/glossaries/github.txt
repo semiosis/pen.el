@@ -1,0 +1,24 @@
+source [repository]
+    A repository that wasn't forked.
+
+    https://github.com/cloudbees?utf8=%E2%9C%93&q=&type=&language=go
+
+stack graphs
+    A new open source framework we've created
+    that lets you define the name binding
+    rules for a programming language using a
+    declarative, domain-specific language
+    (DSL).
+
+precise code navigation
+    Powered by stack graphs.
+
+    With stack graphs, we can generate code
+    navigation data for a repository without
+    requiring any configuration from the
+    repository owner, and without tapping into
+    a build process or other CI job.
+
+    In this post, I'll dig into how stack
+    graphs work, and how they achieve these
+    results.

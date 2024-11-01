@@ -1,0 +1,6 @@
+cd /root/.emacs.d/elpa/org-ql-20231106.2230;  "binfo" "(org-ql) Queries" "#" "<==" "zsh"
+cd /root/.emacs.d/elpa/org-ql-20231106.2230;  "binfo" "(org-ql) Queries" "#" "<==" "zsh"
+cd /root/.emacs.d/elpa/org-ql-20231106.2230;  "binfo" "(org-ql) Queries" "#" "<==" "zsh"
+cd /root/.emacs.d/elpa/org-ql-20231106.2230;  "binfo" "#" "<==" "zsh"
+cd /root/.emacs.d/elpa/org-ql-20231106.2230;  "binfo" "#" "<==" "nnv"
+cd /root/.emacs.d/elpa/org-ql-20231106.2230;  "binfo" "#" "<==" "zsh"

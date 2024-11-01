@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "nod" "Hosea" "6:3" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Jeremiah" "31:34" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Jeremiah" "31:33-34" "#" "<==" "zsh"
+cd /;  "nod" "Acts" "17" "#" "<==" "zsh"
+cd /;  "nod" "Acts" "17" "#" "<==" "zsh"

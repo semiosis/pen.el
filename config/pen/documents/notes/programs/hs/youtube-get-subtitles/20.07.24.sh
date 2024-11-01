@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=xvka6MCE2b0" "#" "<==" "readsubs"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=yqnHvlgqVEA" "#" "<==" "readsubs"
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=H8whTwDoiNA" "#" "<==" "readsubs"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=H8whTwDoiNA" "#" "<==" "readsubs"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=BQDRdC0h1mM" "#" "<==" "readsubs"
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=BQDRdC0h1mM" "#" "<==" "readsubs"

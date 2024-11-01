@@ -1,0 +1,9 @@
+"T.send sock" is a function that takes a socket and a byte string and sends the string to the socket.
+
+T.send sock "hello"
+
+T.send sock "hello" >>= print
+
+T.send sock "hello" >>= \s -> T.send sock "world" >>= \s' -> print s ++ " " ++ s'
+
+T.send sock "hello" >>= \s -> T.send sock "world" >>= \s'

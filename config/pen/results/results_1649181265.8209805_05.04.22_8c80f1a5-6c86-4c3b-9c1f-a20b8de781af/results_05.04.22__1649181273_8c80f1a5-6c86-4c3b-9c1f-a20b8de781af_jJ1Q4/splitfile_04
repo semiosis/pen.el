@@ -1,0 +1,5 @@
+
+
+This declaration states that a Natural is just an Integer — a Natural is an Integer.
+(The MakeNatural constructor function is just an ordinary function.) For example, Natural 's
+implementation of show is the same as Integer 's

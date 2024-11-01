@@ -1,0 +1,3 @@
+
+
+example2 = do s <- getLine putStrLn $ "You entered " ++ s

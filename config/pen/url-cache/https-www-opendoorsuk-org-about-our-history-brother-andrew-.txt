@@ -1,0 +1,443 @@
+HTTP/1.1 200 OK
+Content-Length: 11422
+Content-Type: text/html; charset=utf-8
+Date: Wed, 20 Dec 2023 09:25:57 GMT
+Server: Microsoft-IIS/10.0
+Cache-Control: no-cache
+Expires: -1
+Pragma: no-cache
+Set-Cookie: anonprofile=hP0UmpQbIqMLUgczZX1HCOcp-guhQg2E9h0Why4aBCkqPrNrdS6cJeR6n5F5drvmIf1qAyCRn7BmNe9Qw4Fy8W7gVDCf-jE2XMVpyamrlL_1BV8sh5cAPLzhKKxLD2GhA5BpsrdHO8rRE-ZDlvelprey7gIw9dbJkPwKcIRWCqFtSCnO0; expires=Fri, 19-Jan-2024 09:25:56 GMT; path=/; HttpOnly
+Set-Cookie: ASP.NET_SessionId=b2fgmrgcidjll4spdnfyoeb0; path=/; HttpOnly; SameSite=Lax
+Set-Cookie: ARRAffinity=722a7b7ecf7b68b9875341e7b1d7617057a0cb609da88f579eca40ed368ea8e4;Path=/;HttpOnly;Secure;Domain=www.opendoorsuk.org
+Set-Cookie: ARRAffinitySameSite=722a7b7ecf7b68b9875341e7b1d7617057a0cb609da88f579eca40ed368ea8e4;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.opendoorsuk.org
+Vary: Accept-Encoding
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta http-equiv="x-ua-compatible" content="ie=edge" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="manifest" href="/site.json" /><meta name="msapplication-TileColor" content="#da532c" /><meta name="theme-color" content="#ffffff" />
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106425691-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106425691-1');
+    </script>
+
+   <script type="text/javascript" src="https://secure.feed5baby.com/js/206465.js"></script>
+   <noscript><img src="https://secure.feed5baby.com/206465.png" style="display:none;" /></noscript>
+   
+  <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1652393711673467');
+        fbq('track', 'PageView');
+    </script>
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1652393711673467&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+
+    <script>  
+    
+        window.dataLayer = window.dataLayer || [{
+            'userId': 'anonsupporter'
+        }];  
+   
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function
+                () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1077208, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <title>
+	
+            Serving Persecuted Christians Worldwide - Brother Andrew - Open Doors UK & Ireland
+        
+</title>
+        
+        <meta name="description" content="Brother Andrew, Open Doors" />
+        
+        <meta property="og:title" content="Brother Andrew" />
+        <meta property="og:image" content="" />
+        <meta property="og:video" content="" />
+        <meta property="og:description" content="Brother Andrew, Open Doors" />
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="fb:admins" content="1194951573" />
+
+        
+        <meta name="twitter:site" content="@opendoorsuk">
+    
+        <!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NKBLVQ5J47"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());   gtag('config', 'G-NKBLVQ5J47');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+    
+
+    <script>
+        // Fix for incorrect viewport width setting in IE 10 on Windows Phone 8.
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
+
+    
+        
+        <link href="/css/default.bundle.css?v=Aj9eMrXqH83LtAfkRZPwQZoCNcHEpmC4CGiei6GP-0M1" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="https://use.typekit.net/ewb3bjs.css">
+        <link rel="canonical" href="https://www.opendoorsuk.org/about/our-history/brother-andrew/" type="text/html" />
+
+        
+        <!--[if lt IE 9]>
+				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+        
+        <!--[if lt IE 10]>
+				<script src="~/js/formdata.js"></script>
+			<![endif]-->
+
+        
+        
+        
+    </head>
+
+<body data-sitemap-state="/about/our-history/brother-andrew/:/about/our-history/:/about/:/"
+    data-dateformat="M/d/yyyy"
+    data-timeformat="h:mm tt"
+    data-datetimeformat="">
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLXK7S6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+      
+		
+
+<header class="banner">
+    <div class="top-navigation">
+        <div class="navbar">           
+            <ul class="nav ml-auto">
+
+                <li class="shopping-cart-status nav-item" data-href="/_services/commerce/4f1364c3-e863-4cdb-8540-ebc721b52c4e/shopping-cart/status">
+                    <a href="/basket/" class="nav-link">
+                        <i class="fa fa-shopping-cart"></i>
+                        Orders
+                        <span class="count">(<span class="value"></span>)</span>
+                    </a>
+                </li>       
+                
+               <!-- churches hub -->
+              
+         
+                <!-- show user -->
+                 
+            <ul class="nav ml-auto">
+                <li class="nav-item">
+                    <a href="/SignIn?returnUrl=%2Fabout%2Four-history%2Fbrother-andrew%2F" class="nav-link">
+                        <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+                        Sign In
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="/Account/Login/Register?returnUrl=%2Fabout%2Four-history%2Fbrother-andrew%2F" class="nav-link">
+                        <span class="fas fa-user-circle" aria-hidden="true"></span>
+                        Register
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-xl main-navigation">
+
+        <a class="navbar-brand" href="https://www.opendoorsuk.org">
+            <img src="/header-logo" alt="Open Doors UK &amp; Ireland" class="logo" />
+        </a>
+       
+        <a href="/act/donate/donate-now/?donationid=b0ee22df-287e-ea11-a82a-000d3a2cff99&campid=WB0001" class="btn btn-primary tablet-donate-search ml-auto">Donate</a>
+        <button type="submit" class="btn btn-outline-secondary toggle-search tablet-donate-search" data-toggle="collapse" data-target="#header-search-form-tablet" aria-expanded="false" aria-controls="header-search-form">
+            <i class="fas fa-search"></i>
+            <span class="sr-only">Search</span>
+        </button>
+
+        <button type="button" class="btn toggle-search d-none d-md-block d-lg-block d-xl-none signup">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <span class="sr-only">Subscription</span>
+        </button>
+       
+        <form class="form-inline header-search-form" method="GET" action="/search/" role="search">
+            <div class="collapse" id="header-search-form-tablet">
+                <input class="form-control search-field" id="qs" name="qs" value="" type="search" placeholder="Search" aria-label="Search">
+                
+                <button class="btn btn-primary btn-submit-search" type="submit">
+                    <i class="fas fa-search"></i>
+                    <span class="sr-only">Search</span>
+                </button>            
+
+            </div>
+        </form>
+
+        <!-- nav tog btn -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- // nav bar // move navigation and search to index.js and append to .navbar-collapse -->
+        <div class="collapse navbar-collapse"><ul class="weblinks-depth-1 navbar-nav ml-auto" data-weblinks-depth="1"><li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/persecution/" role="button" title="World Watch List">World Watch List <span aria-hidden="true" class="caret"></span></a><ul class="weblinks-depth-2 dropdown-menu" data-weblinks-depth="2" role="menu"><li><a href="/persecution/" title="World Watch List">World Watch List</a><div class="description"></div></li><li class="divider"></li><li><a href="/persecution/world-watch-list/" title="Explore the Top 50">Explore the Top 50</a></li><li><a href="/resources/world-watch-list/" title="Resources">Resources</a></li><li><a href="https://media.opendoorsuk.org/document/pdf/2023-Advocacy-Report.pdf" title="Advocacy Report">Advocacy Report</a></li></ul></li><li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/about/" role="button" title="About">About <span aria-hidden="true" class="caret"></span></a><ul class="weblinks-depth-2 dropdown-menu" data-weblinks-depth="2" role="menu"><li><a href="/about/" title="About">About</a><div class="description"></div></li><li class="divider"></li><li><a href="/about/how-we-help/" title="What We Do">What We Do</a></li><li><a href="/about/our-history/" title="Our Story">Our Story</a></li><li><a href="/about/our-history/brother-andrew/" title="Brother Andrew">Brother Andrew</a></li><li><a href="/about/statement-faith/" title="Our Values">Our Values</a></li><li><a href="/about/faqs/" title="Open Doors FAQs">Open Doors FAQs</a></li><li><a href="/about/financial-review-2017/" title="Annual Review">Annual Review</a></li><li><a href="/about/careers/" title="Jobs">Jobs</a></li></ul></li><li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/news/" role="button" title="Latest">Latest <span aria-hidden="true" class="caret"></span></a><ul class="weblinks-depth-2 dropdown-menu" data-weblinks-depth="2" role="menu"><li><a href="/news/" title="Latest">Latest</a><div class="description"></div></li><li class="divider"></li><li><a href="/news/latest-news/" title="Stories">Stories</a></li><li><a href="/resources/magazine/" title="Magazine">Magazine</a></li><li><a href="/news/standing-strong/" title="Standing Strong: Regional Events">Standing Strong: Regional Events</a></li><li><a href="/resources/standing-strong-live/" title="Open Doors Prayer Webinars">Open Doors Prayer Webinars</a></li><li><a href="/act/digital-persecution/" title="Campaigns">Campaigns</a></li><li><a href="/act/children-at-christmas/" title="- Children at Christmas">- Children at Christmas</a></li><li><a href="/act/digital-persecution/" title=" - Digital Persecution"> - Digital Persecution</a></li><li><a href="/act/hope-for-the-middle-east/" title=" - Make Hope Last"> - Make Hope Last</a></li></ul></li><li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/act/" role="button" title="Get Involved">Get Involved <span aria-hidden="true" class="caret"></span></a><ul class="weblinks-depth-2 dropdown-menu" data-weblinks-depth="2" role="menu"><li><a href="/act/" title="Get Involved">Get Involved</a><div class="description"></div></li><li class="divider"></li><li><a href="/resources/" title="Resources">Resources</a></li><li><a href="/act/donate/children/?donationid=7e0c0f09-3e02-eb11-a82d-000d3a2cff99&amp;campid=MCTCZZ/2306AP/WB4" title="Give a Gift">Give a Gift</a></li><li><a href="/act/fundraise/" title="Fundraise">Fundraise</a></li><li><a href="/act/volunteer/" title="Volunteer">Volunteer</a></li><li><a href="/act/letter/" title="Send A Letter">Send A Letter</a></li><li><a href="/resources/prayer/" title="Pray with us">Pray with us</a></li><li><a href="/about/how-we-help/advocacy/" title="Advocacy">Advocacy</a></li><li><a href="/churches/" title="Churches">Churches</a></li><li><a href="/news/young-adults/" title="Young Adults">Young Adults</a></li><li><a href="/partnerships/" title="Trusts and Large Donations">Trusts and Large Donations</a></li><li><a href="/act/donate/legacy/" title="Leave a Legacy">Leave a Legacy</a></li><li><a href="/act/donate/in-memory/" title="Give in Memory">Give in Memory</a></li></ul></li></ul></div>
+    </nav>
+</header>      
+  
+    <div id="antiforgerytoken" data-url="/_layout/tokenhtml"></div>   
+    <script src="/js/default.preform.bundle.js?v=4GTf5ql-w5YMQLu55pZZbJYMMqf2k3HjtgvVSFpAfpQ1"></script>
+
+     
+    
+	<!-- START standard content page --><section class="standard-page" role="document">  <div class="container">    <div class="row">      <div class="col-xl-8 ml-auto mr-auto">         <div class="xrm-editable-html xrm-attribute"><div class="xrm-attribute-value"><h1>The story of Brother Andrew (1928-2022) - God's Smuggler</h1>
+
+<div class="youtube_iframe"><iframe allowfullscreen="allowfullscreen" frameborder="0" height="399" mozallowfullscreen="mozallowfullscreen" src="https://player.vimeo.com/video/756343164" webkitallowfullscreen="webkitallowfullscreen" width="710"></iframe></div>
+<!--div class="responsive-wrapper">
+  <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/756343164?rel=0&amp;version=3&amp;autohide=1&amp;controls=2&amp;showinfo=0" width="560"></iframe>
+</div-->
+
+<p><br />
+In 1955, a young Dutch missionary went to a Communist&nbsp;youth congress in Poland, at that time a part of the Soviet bloc. But he wasn’t a communist: he was a Christian. His suitcase contained his Bible, a change of clothes and hundreds of tracts entitled <em>The Way of Salvation</em>, which he intended to give away.</p>
+
+<p>The trip was to change his life. Behind the Iron Curtain, he discovered churches desperately in need of Bibles, support and prayer. Above all, he found a group of Christians who felt isolated and alone and who thought the rest of the world had forgotten them.</p>
+
+<p>One evening during that first visit, he went to a Baptist church in Warsaw where he was invited to speak. He tells the story in <a href="/about/our-history/gods-smuggler/">his best-selling book God's Smuggler</a>:&nbsp;"At the end of my little talk the pastor said the most interesting thing of all, 'We want to thank you,' he said, 'for being here. Even if you had not said a word, just seeing you would have meant so much. We feel at times as if we are all alone in our struggle."</p>
+
+<p>That young man became known as Brother Andrew. And his trip changed the world.</p>
+
+<h2>Strengthen that which remains...</h2>
+
+<p>At the end of the trip, watching many thousands of delegates to the Youth Congress marching in a parade, Brother Andrew prayed about what God wanted him to do. He opened his Bible and found the passage which he came to see as a mission: "Wake Up! Strengthen what remains and is about to die." Revelation 3:2</p>
+
+<div class="float-right-wrapper"><img src="hist_gods_smuggler-1.jpg" /></div>
+
+<p>In subsequent years he was to travel many times behind the Iron Curtain, courageously putting his life on the line to smuggle Bibles at the height of the Cold War. His work went on to span many decades and geographic locations. In <a href="/about/our-history/gods-smuggler/">God's Smuggler</a>, Brother Andrew's autobiography chronicling those early years, he details dangerous border crossings in his blue VW Beetle – which became known as 'the miracle car', for its ability to miraculously keep going. He developed a trademark prayer to say as he snuck Bibles and Christian literature across the border:</p>
+
+<p><em>“Lord, in my luggage I have Scripture I want to take to Your children. When You were on earth, You made blind eyes see. Now, I pray, make seeing eyes blind. Do not let the guards see those things You do not want them to see.”</em></p>
+
+<h2>More than Bibles</h2>
+
+<p>As the work grew he was joined by others and began a work of smuggling Bibles to believers in Communist countries. And today, Brother Andrew's small Dutch mission has become an international ministry working in more than 60 nations to strengthen the Persecuted Church.</p>
+
+<p>Open Doors still distributes hundreds of thousands of Bibles and Christian books every year. But we also train and support persecuted Christians in other ways.</p>
+
+<p>"When I first discovered a persecuted church behind the Iron Curtain the need was for Bibles," says Brother Andrew. "But as our ministry expanded, other needs emerged. For example, in some countries pastors have little or no seminary training. We provide them with training so they can be more effective leaders of their congregations. In other regions Christians are discriminated against, denied education and quality job opportunities. So we may strengthen the church by providing small loans to help Christians start businesses. The needs and thus the strategies vary from country to country."</p>
+
+<h2>Breaking barriers</h2>
+
+<div class="float-right-wrapper"><img src="ba-leader-1.jpg" /></div>
+
+<p>Today, of course, Europe has changed. The main threat to Christians today comes not from Communism, but from radical Islam. Brother Andrew has travelled extensively in the Islamic world, talking to the leaders of Hamas, Islamic Jihad and Hezbollah. He is among the few Western leaders to regularly travel to the Middle East as an ambassador for Christ to these groups. He has also broken Christian religious barriers by preaching in Catholic and Coptic Orthodox churches.</p>
+
+<p>Brother Andrew has received many honours and awards. He was knighted by Queen Beatrix of The Netherlands and, in 1997, he received of the World Evangelical Fellowship’s Religious Liberty Award, in recognition of his lifetime service to the Persecuted Church. But perhaps the recognition that pleases him most is the copies of the KGB reports, which he obtained after the fall of the Iron Curtain. There were more than 150 pages about him, detailing his work in the Soviet Union and Eastern Europe. They knew a lot about 'Brother Andrew', and yet they were still not able to stop his work.</p>
+
+<p>He often has said, "Our very mission is called 'Open Doors' because we believe that any door is open, anytime and anywhere. I literally believe that. Every door is open to go in and proclaim Christ, as long as you are willing to go and are not worried about coming back."</p>
+
+<h2>Everyday obedience</h2>
+
+<div class="float-right-wrapper"><img alt="Brother Andrew today" src="netherlands_2018_0380105191-1.jpg" /></div>
+
+<p>Brother Andrew’s story is extraordinary. But he himself is always at pains to stress that it was simply because he followed God.</p>
+
+<p>“The real calling,” he has said, “is not a certain place or career but to everyday obedience. And that call is extended to every Christian, not just a select few.”</p>
+
+<p>He would tell us as he has told many others, “The Bible is full of ordinary people who went to impossible places and did wondrous things simply because they decided to follow Jesus.”</p>
+
+<p>Today, Open Doors has bases and staff all over the world. The next generation of ‘Brother Andrews’ still smuggle Bibles into regions that are hostile to the faith. They still go wherever needed to show the marginalised, isolated and persecuted Christians around the world that they are not forgotten and never alone.</p>
+
+<h2>The step of yes</h2>
+
+<p>In 1955, Brother Andrew risked it all. Today, will you commit to pray, give and speak out to support your persecuted family?</p>
+
+<p>We'll help you on your journey by sending you regular prayer resources. We'll also send you <a href="/about/our-history/gods-smuggler/">a free copy of God's Smuggler</a>, Brother Andrew's best-selling book, to inspire you as you say 'Yes' to God.</p>
+
+<p><a href="/about/our-history/gods-smuggler/">Say yes and get your free copy of God's Smuggler.</a></p>
+
+<blockquote>“The gifts you sent… are a fragrant offering, an acceptable sacrifice, pleasing to God.” <cite>Philippians 4:18</cite></blockquote>
+</div></div>      </div>    </div>  </div></section><!-- standard content page END -->
+   
+
+    
+			
+
+<!-- get involved --> 
+<section class="get-involved" id="get-involved">
+      <div class="xrm-editable-html xrm-attribute"><div class="xrm-attribute-value"><div class="container">
+<div class="row">
+<div class="col-md-10 ml-auto mr-auto section-intro">
+<h2 id="getinvolved">Get involved</h2>
+
+<p>Your support helps persecuted Christians continue to courageously follow Jesus.<br />
+Together, we can reach those where persecution hits hardest.</p>
+</div>
+</div>
+
+<div class="get-involved-slider">
+<div class="get-involved-slider__slides">
+<div class="get-involved-slider__slide"><img src="/news/latest-news/fasil-ezana-ethiopia/2023-nov-appeal-graphics-gi-campaigngi-donate.jpg" />
+<div class="title-wrapper"><a class="title" data-event-action="Click" data-event-category="Homepage Box" data-event-label="Box 1 (text)" href="/act/donate/children/?donationid=7e0c0f09-3e02-eb11-a82d-000d3a2cff99&amp;campid=MCTCZZ/2306MG/WB2">Support persecuted Christian children</a></div>
+</div>
+
+<div class="get-involved-slider__slide"><img src="/resources/webinars/2401-gi-452-webinar.jpg" />
+<div class="title-wrapper"><a class="title" data-event-action="Click" data-event-category="Homepage Box" data-event-label="Box 2 (text)" href="/resources/webinars/">World Watch List launch webinar: 17 January</a></div>
+</div>
+
+<div class="get-involved-slider__slide"><img src="/news/latest-news/children-christmas-video/2024-january-appeal-graphicsgi-childrenimpact-1.jpg" />
+<div class="title-wrapper"><a class="title" data-event-action="Click" data-event-category="Homepage Box" data-event-label="Box 3 (text)" href="/news/latest-news/children-christmas-video/" target="_blank">Video: children at Christmas</a></div>
+</div>
+
+<div class="get-involved-slider__slide"><img src="/news/latest-news/fasil-ezana-ethiopia/2024-january-appeal-graphicsg_-invitemptowwllaunch-1.jpg" />
+<div class="title-wrapper"><a class="title" data-event-action="Click" data-event-category="Homepage Box" data-event-label="Box 4 (text)" href="https://advocacy.opendoorsuk.org/page/137212/action/1?ea.tracking.id=bq9i6ev4" target="_blank">Invite your MP to World Watch List</a></div>
+</div>
+
+<div class="get-involved-slider__slide"><img src="/news/latest-news/fasil-ezana-ethiopia/2024-january-appeal-graphicsfasil-ezana-smiley-1.jpg" />
+<div class="title-wrapper"><a class="title" data-event-action="Click" data-event-category="Homepage Box" data-event-label="Box 5 (text)" href="/news/latest-news/fasil-ezana-ethiopia" target="_blank">How children can have brighter futures</a></div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+
+<footer class="content-info">
+     <div class="container">
+            <div class="row">
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5>Quick links</h5>                    
+                      <div><ul class="weblinks-depth-1 footer-menu" data-weblinks-depth="1"><li><a href="https://www.opendoorsuk.org/" title="Home">Home</a></li><li><a href="/about/how-we-help/advocacy/" title="Speak Out">Speak Out</a></li><li><a href="/about/careers/" title="Jobs">Jobs</a></li><li><a href="https://opendoorsyouth.org/?ref=footlnk" title="Youth">Youth</a></li><li><a href="/news/press/" title="Media">Media</a></li><li><a href="/resources/subscriptions/" title="Subscribe to Emails">Subscribe to Emails</a></li></ul></div>                    
+                </div>
+                                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5>Social media</h5>
+                    <div class="xrm-editable-html xrm-attribute"><div class="xrm-attribute-value"><ul class="footer-menu">
+  <li><a href="https://www.facebook.com/opendoorsuk?ref=footlink" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+  <li><a href="https://www.twitter.com/opendoorsuk?ref=footlnk" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+  <li><a href="https://www.instagram.com/opendoorsuk?ref=footlnk" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+  <li><a href="https://www.youtube.com/user/opendoorsuk" target="_blank" ><i class="fab fa-youtube"></i> Youtube</a></li>
+</ul></div></div>
+                </div>
+                
+                <div class="col-12 col-md-4 col-lg-5">
+                  <h5>Get involved</h5>
+                   <div><ul class="weblinks-depth-1 footer-menu" data-weblinks-depth="1"><li><a href="/act/fundraise/" title="Fundraise for your persecuted family">Fundraise for your persecuted family</a></li><li><a href="/resources/church-at-home/" title="Get resources for your online church">Get resources for your online church</a></li><li><a href="/resources/children-at-home/" title="Stuff to share with kids">Stuff to share with kids</a></li><li><a href="/act/" title="Support courageous Christians">Support courageous Christians</a></li><li><a href="https://media.opendoorsuk.org/document/pdf/Prayer%20Diary.pdf" title="Take a look at our Prayer Diary">Take a look at our Prayer Diary</a></li><li><a href="/act/donate/gift-aid-faqs/" title="Gift Aid FAQs">Gift Aid FAQs</a></li></ul></div>               
+                </div>                          
+               
+                <div class="col-lg-3 charity-details">                   
+                    <div class="xrm-editable-html xrm-attribute"><div class="xrm-attribute-value"><p><a href="#"><img alt="Open Doors Logo" class="footer-logo" src="~/footer-logo" /> </a></p>
+
+<p>Registered Charity in England and Wales No. 1125684, Scotland SC043710 and Republic of Ireland 20140984.</p>
+
+<p><a href="/about/contact-us/">Contact Details</a></p>
+</div></div>                   
+                </div>
+            </div>         
+            <div class="xrm-editable-html xrm-attribute"><div class="xrm-attribute-value"><div class="row">
+<div class="col-md-12">
+<hr /></div>
+</div>
+
+<div class="row copyright">
+<div class="col-6">© Copyright 2023&nbsp;Open Doors UK &amp; Ireland</div>
+
+<div class="col-6 text-right"><a href="/about/safeguarding-policy/">Safeguarding Policy</a>&nbsp;|&nbsp;<a href="https://www.opendoorsuk.org/about/privacy-policy/">Privacy Policy</a></div>
+</div>
+</div></div>    
+        </div>  
+</footer>     
+  
+    
+
+    <script src="/js/default.bundle.js?v=phNyFHs7ZxUOqo_arwkY1GBO2l_oxm0pRrZTjVG4aZ41"></script>
+
+
+    
+    
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLXK7S6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->  
+    
+  
+    <script>
+        // pca
+        (function (n, t, i, r) {
+            var u, f; n[i] = n[i] || {}, n[i].initial = {
+                accountCode: "OPEND11116", host: "OPEND11116.pcapredict.com"
+            }, n[i].on = n[i].on || function () { (n[i].onq = n[i].onq || []).push(arguments) },
+                u = t.createElement("script"), u.async = !0, u.src = r, f = t.getElementsByTagName("script")[0], f.parentNode.insertBefore(u, f)
+        })(window, document, "pca", "//OPEND11116.pcapredict.com/js/sensor.js")
+
+        // twitter
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <!-- Cookie EU END -->
+    
+</body>
+</html>

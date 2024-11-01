@@ -1,0 +1,8 @@
+cd /;  "lsof" "-p" "10440" "#" "<==" "pen-tm"
+cd /;  "lsof" "-p" "10592" "#" "<==" "pen-tm"
+cd /;  "lsof" "-p" "10854" "#" "<==" "pen-tm"
+cd /;  "lsof" "-p" "16091" "#" "<==" "pen-tm"
+cd /;  "lsof" "-p" "16092" "#" "<==" "pen-tm"
+cd /;  "lsof" "-p" "18116" "#" "<==" "pen-tm"
+cd /;  "lsof" "-p" "10858" "#" "<==" "pen-tm"
+cd /;  "lsof" "-p" "10859" "#" "<==" "pen-tm"

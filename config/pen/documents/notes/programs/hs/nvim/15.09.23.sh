@@ -1,0 +1,1 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-christianityworks-co-nz-fresh-/christianityworks.co.nz/fresh/a-cry-for-help-3;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" eval 'sh-source | pen-ds -s source-to-source'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

@@ -1,0 +1,938 @@
+HTTP/1.1 200 OK
+Date: Thu, 28 Mar 2024 23:18:39 GMT
+Server: Apache/2.4.57 (AlmaLinux) OpenSSL/3.0.7
+X-Powered-By: PHP/8.0.30
+Cache-Control: private, no-cache="set-cookie"
+Expires: Thu, 28 Mar 2024 23:18:40 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept-Encoding,User-Agent
+Set-Cookie: phpbbshmups_u=1; expires=Thu, 11-Apr-2024 23:18:39 GMT; path=/; secure; HttpOnly
+Set-Cookie: phpbbshmups_k=; expires=Thu, 11-Apr-2024 23:18:39 GMT; path=/; secure; HttpOnly
+Set-Cookie: phpbbshmups_sid=52edeff5e838e8b8a9930235dbfebc10; expires=Thu, 11-Apr-2024 23:18:39 GMT; path=/; secure; HttpOnly
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Permissions-Policy: geolocation=(); midi=();notifications=();push=();sync-xhr=();accelerometer=(); gyroscope=(); magnetometer=(); payment=(); camera=(); microphone=();usb=(); xr=();speaker=(self);vibrate=();fullscreen=(self);
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic... - shmups.system11.org</title>
+
+
+	<link rel="canonical" href="https://shmups.system11.org/viewtopic.php?t=72514">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=8" rel="stylesheet">
+<link href="./styles/shmups/theme/stylesheet.css?assets_version=8" rel="stylesheet">
+<link href="./styles/shmups/theme/en/stylesheet.css?assets_version=8" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/shmups/theme/tweaks.css?assets_version=8" rel="stylesheet">
+<![endif]-->
+
+		<meta name="MAS" content="Member Avatar & Status [MAS]=Dark❶ [dark1]" />
+
+<link href="./ext/alfredoramos/simplespoiler/styles/all/theme/css/common.min.css?assets_version=8" rel="stylesheet" media="screen">
+<link href="./ext/alfredoramos/simplespoiler/styles/shmups/theme/css/style.min.css?assets_version=8" rel="stylesheet" media="screen">
+<link href="./ext/alfredoramos/simplespoiler/styles/shmups/theme/css/colors.min.css?assets_version=8" rel="stylesheet" media="screen">
+<link href="./ext/dark1/memberavatarstatus/styles/all/theme/mas_header.css?assets_version=8" rel="stylesheet" media="screen">
+<link href="./ext/riccardobianconi/userfeedback/styles/prosilver/theme/userfeedback_common.css?assets_version=8" rel="stylesheet" media="screen">
+
+
+<style>
+	.mas-status-dot.mas-color {
+		background-color: #FF8000;
+	}
+	.mas-status-dot.mas-color:after {
+		background-color: #FF8000;
+	}
+	.mas-status-online .mas-status-dot.mas-color {
+		background-color: #00FF00;
+	}
+	.mas-status-online .mas-status-dot.mas-color:after {
+		background-color: #00FF00;
+	}
+</style>
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+			<div id="site-description" class="site-description">
+				<h1>shmups.system11.org</h1>
+				<p>Shmups Forum</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php?sid=52edeff5e838e8b8a9930235dbfebc10" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="./search.php?sid=52edeff5e838e8b8a9930235dbfebc10" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					<input type="hidden" name="sid" value="52edeff5e838e8b8a9930235dbfebc10" />
+
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="./search.php?search_id=unanswered&amp;sid=52edeff5e838e8b8a9930235dbfebc10" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics&amp;sid=52edeff5e838e8b8a9930235dbfebc10" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php?sid=52edeff5e838e8b8a9930235dbfebc10" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+		<li data-last-responsive="true"><a href="/app.php/userfeedback/?sid=52edeff5e838e8b8a9930235dbfebc10" title="View user feedback" role="menuitem"><i class="icon fa-thumbs-up fa-fw" aria-hidden="true"></i><span>Feedback</span></a></li>
+		<li data-skip-responsive="true">
+			<a href="/app.php/help/faq?sid=52edeff5e838e8b8a9930235dbfebc10" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside"  data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Ft%3D72514&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?mode=register&amp;sid=52edeff5e838e8b8a9930235dbfebc10" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php?sid=52edeff5e838e8b8a9930235dbfebc10" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="12"><a itemprop="item" href="./viewforum.php?f=12&amp;sid=52edeff5e838e8b8a9930235dbfebc10"><span itemprop="name">Shmups</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="1"><a itemprop="item" href="./viewforum.php?f=1&amp;sid=52edeff5e838e8b8a9930235dbfebc10"><span itemprop="name">Shmups Chat</span></a><meta itemprop="position" content="3" /></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=52edeff5e838e8b8a9930235dbfebc10" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="./viewtopic.php?t=72514&amp;sid=52edeff5e838e8b8a9930235dbfebc10">Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">This is the main shmups forum. Chat about shmups in here - keep it on-topic please!<br /></div>
+
+
+<div class="action-bar bar-top">
+	
+			<a href="./posting.php?mode=reply&amp;t=72514&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?t=72514&amp;sid=52edeff5e838e8b8a9930235dbfebc10&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php?sid=52edeff5e838e8b8a9930235dbfebc10">
+			<fieldset>
+				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="./search.php?sid=52edeff5e838e8b8a9930235dbfebc10" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="72514" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="52edeff5e838e8b8a9930235dbfebc10" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			7 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p1541214" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1541214">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=168&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">PC Engine Fan X!</a>					<div style="display: inline;">
+		<div class="mas-wrap-status">
+			<span class="mas-status-dot mas-color" style="margin-bottom: 3px;" title="Offline">
+			</span>
+		</div>
+	</div>
+			</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=168&amp;sr=posts&amp;sid=52edeff5e838e8b8a9930235dbfebc10">8417</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2005 10:32 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1541214">
+
+					<h3 class="first">
+						<a href="./viewtopic.php?p=1541214&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541214">Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=1541214&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1541214&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541214" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=168&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">PC Engine Fan X!</a></strong> &raquo; </span><time datetime="2023-11-30T20:27:03+00:00">Thu Nov 30, 2023 8:27 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">You might of have heard of the indie game developer, Minsoft, whom recently made a homebrew Vectrex stg game called Vyrzon (which took over two years to develop). It's a 32kb sized Vectrex game cartridge that has both high score &amp; high score initials saving funtionality with the top three scores being saved for posterity. Vyrzon has a 50hz (50 frames-per-second framerate) overall presentation and is super silky-smooth &amp; flicker-free (as how most modern-day Vectrex homebrew game titles are made/released nowadays -- anything less than that isn't acceptable/desirable anyways). How cool is that? <br>
+<br>
+When Minsoft offered his Vyrzon game for sale in small batches, I tried to order one but they'd always sell out rather quickly and thus missed out on getting a copy. Altogether, Minsoft sold a grand total of 372 copies of his Vyrzon game before deciding to call it quits (as of 11/26/2023). He said that he's allowed his Vyrzon game to enter the public domain and gave permission to indie Vectrex developer/publisher, Vector Republic (based out of the UK), to handle further sales &amp; distribution of Vyrzon games to Vectrex fans worldwide. I managed to snag a copy of Vyrzon through VR this time around -- in fact, I've never seen a new or used copy of Vyrzon listed for sale on eBay whatsoever. From what I've read about the stellar gameplay of Vyrzon and viewed the Youtube videos of it in action, it's quite the popular newfangled homebrew stg to be currently playing on the Vectrex nowadays.<br>
+<br>
+If you'd like to order a copy of Vyrzon to play on your beloved Vectrex console, order it through his website (it's custom-built to order &amp; may take up to two weeks to ship out, so keep that in mind): <a href="http://www.vectorrepublic.co.uk" class="postlink">www.vectorrepublic.co.uk</a> It's a mere 40£ per copy (which is quite a respectable &amp; reasonable price, indeed). VR ships worldwide through Royal Air Mail if you don't reside in the UK for a meager 19.95£ shipping fee (again, still a modest bargain when it comes to international shipping from the UK).<br>
+<br>
+PC Engine Fan X! ^_~</div>
+
+			
+			
+									
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p1541348" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1541348">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=25404&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">Vectrexer</a>					<div style="display: inline;">
+		<div class="mas-wrap-status">
+			<span class="mas-status-dot mas-color" style="margin-bottom: 3px;" title="Offline">
+			</span>
+		</div>
+	</div>
+			</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=25404&amp;sr=posts&amp;sid=52edeff5e838e8b8a9930235dbfebc10">2</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Mar 17, 2023 1:08 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1541348">
+
+					<h3 >
+						<a href="./viewtopic.php?p=1541348&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541348">Re: Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=1541348&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1541348&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541348" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=25404&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">Vectrexer</a></strong> &raquo; </span><time datetime="2023-12-02T17:22:05+00:00">Sat Dec 02, 2023 5:22 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">I have seen a several of the original run boxed of Vyrzon for sale on eBay.<br>
+Such as:<br>
+<br>
+Serial number 103: <a href="https://web.archive.org/web/0/https://www.ebay.com/itm/155566982259?orig_cvip=true&amp;nordt=true" class="postlink">https://web.archive.org/web/0/https://w ... nordt=true</a><br>
+Closed at $232.50.<br>
+<br>
+Serial number 104: <a href="https://web.archive.org/web/0/https://www.ebay.com/itm/155831215589?orig_cvip=true&amp;nordt=true" class="postlink">https://web.archive.org/web/0/https://w ... nordt=true</a><br>
+Closed at $342.00.<br>
+<br>
+Serial Number 105: <a href="https://web.archive.org/web/0/https://www.ebay.com/itm/Vectrex-game:-Vyrzon--105-in-black-aluminium-cartridge,-+-box,-manual---overlay-/155530325233?orig_cvip=true&amp;nordt=true" class="postlink">https://web.archive.org/web/0/https://w ... nordt=true</a><br>
+Closed at $1,313.00.<br>
+<br>
+Serial Number  Unknown : <a href="https://web.archive.org/web/0/https://www.ebay.com/itm/Vectrex-Vyrzon-Minsoft-New-In-Box-Game-Rare-Home-brew/225676704520" class="postlink">https://web.archive.org/web/0/https://w ... 5676704520</a><br>
+Listed at £199.99 ($261.62)<br>
+<br>
+Serial Number  Unknown : <a href="https://www.ebay.com/itm/Vectrex-Game-Vyrzon---Minsoft-/305275261071%20%28" class="postlink">https://www.ebay.com/itm/Vectrex-Game-V ... 75261071 (</a><a href="https://web.archive.org/web/0/https://www.ebay.com/itm/Vectrex-Game-Vyrzon---Minsoft-/305275261071" class="postlink">https://web.archive.org/web/0/https://w ... 5275261071</a>)<br>
+Currently open a  €299.00 ($323.98).<br>
+<br>
+And at least one other used copy of Vyrzon I did not take note of which closed and sold for around $173.</div>
+
+			
+			
+													<div class="notice">
+					Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=25404&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">Vectrexer</a> on Sat Dec 02, 2023 6:19 pm, edited 1 time in total.
+									</div>
+			
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p1541358" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1541358">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=168&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">PC Engine Fan X!</a>					<div style="display: inline;">
+		<div class="mas-wrap-status">
+			<span class="mas-status-dot mas-color" style="margin-bottom: 3px;" title="Offline">
+			</span>
+		</div>
+	</div>
+			</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=168&amp;sr=posts&amp;sid=52edeff5e838e8b8a9930235dbfebc10">8417</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2005 10:32 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1541358">
+
+					<h3 >
+						<a href="./viewtopic.php?p=1541358&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541358">Re: Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=1541358&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1541358&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541358" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=168&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">PC Engine Fan X!</a></strong> &raquo; </span><time datetime="2023-12-02T20:20:36+00:00">Sat Dec 02, 2023 8:20 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">That particular eBay auction for Vyrzon #105 was a custom-made CNC milled Vectrex aluminum game cartridge case as a "one-off" creation and all monetary proceeds went to benefit charity (hence the final high bidder's winning price) according to the seller based out of Sweden (as mentioned on the Atari Age forums).<br>
+<br>
+Of course, the "clam shell" plastic cartridge case version of Vyrzon that Vector Republic's currently selling won't command as high of a asking pricepoint on the secondary Vectrex collector's market indeed.<br>
+<br>
+PC Engine Fan X! ^_~</div>
+
+			
+			
+									
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p1541415" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1541415">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=25404&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">Vectrexer</a>					<div style="display: inline;">
+		<div class="mas-wrap-status">
+			<span class="mas-status-dot mas-color" style="margin-bottom: 3px;" title="Offline">
+			</span>
+		</div>
+	</div>
+			</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=25404&amp;sr=posts&amp;sid=52edeff5e838e8b8a9930235dbfebc10">2</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Mar 17, 2023 1:08 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1541415">
+
+					<h3 >
+						<a href="./viewtopic.php?p=1541415&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541415">Re: Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=1541415&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1541415&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541415" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=25404&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">Vectrexer</a></strong> &raquo; </span><time datetime="2023-12-03T16:45:44+00:00">Sun Dec 03, 2023 4:45 pm</time>
+			</p>
+			
+			
+			
+			<div class="content"><blockquote cite="./viewtopic.php?p=1541358&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541358"><div><cite><a href="./memberlist.php?mode=viewprofile&amp;u=168&amp;sid=52edeff5e838e8b8a9930235dbfebc10">PC Engine Fan X!</a> wrote: <a href="./viewtopic.php?p=1541358&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541358" data-post-id="1541358" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><span class="responsive-hide">Sat Dec 02, 2023 8:20 pm</span></cite>
+Of course, the "clam shell" plastic cartridge case version of Vyrzon that Vector Republic's currently selling won't command as high of a asking pricepoint on the secondary Vectrex collector's market indeed.<br>
+<br>
+PC Engine Fan X! ^_~
+</div></blockquote>
+
+Maybe. maybe not. <br>
+Certainly serial number 1 will. <br>
+Probably the serial numbers with special colored shell will fetch a larger price.<br>
+Inevitably someone will make a reproduction or custom production box for use in place of their clamshell case. Those custom production box might also raise the price on a secondary sale. We have already seen this happen for other games originally produced with clamshell box.</div>
+
+			
+			
+									
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p1541445" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1541445">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=6447&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="avatar"><img class="avatar" src="./download/file.php?avatar=6447_1260961569.png" width="80" height="74" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=6447&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">CMcK</a>					<div style="display: inline;">
+		<div class="mas-wrap-status">
+			<span class="mas-status-dot mas-color" style="margin-bottom: 3px;" title="Offline">
+			</span>
+		</div>
+	</div>
+			</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=6447&amp;sr=posts&amp;sid=52edeff5e838e8b8a9930235dbfebc10">102</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Dec 12, 2009 1:25 am</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Scotland</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1541445">
+
+					<h3 >
+						<a href="./viewtopic.php?p=1541445&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541445">Re: Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=1541445&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1541445&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541445" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=6447&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">CMcK</a></strong> &raquo; </span><time datetime="2023-12-03T22:29:21+00:00">Sun Dec 03, 2023 10:29 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Thanks to the OP for the info. I missed out on the original batch of this game but have now ordered a copy from Vector Republic. There’s just something about those smooth vectors that makes Vectrex games feel so good.</div>
+
+			
+			
+									
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p1541482" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1541482">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=9692&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="avatar"><img class="avatar" src="./download/file.php?avatar=9692_1608988836.jpg" width="80" height="80" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=9692&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">BareKnuckleRoo</a>					<div style="display: inline;">
+		<div class="mas-wrap-status">
+			<span class="mas-status-dot mas-color" style="margin-bottom: 3px;" title="Offline">
+			</span>
+		</div>
+	</div>
+			</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=9692&amp;sr=posts&amp;sid=52edeff5e838e8b8a9930235dbfebc10">6162</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Oct 03, 2011 4:01 am</dd>		
+		
+											<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Southern Ontario</dd>
+							
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1541482">
+
+					<h3 >
+						<a href="./viewtopic.php?p=1541482&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541482">Re: Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=1541482&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1541482&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541482" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=9692&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">BareKnuckleRoo</a></strong> &raquo; </span><time datetime="2023-12-04T15:00:59+00:00">Mon Dec 04, 2023 3:00 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">This looks pretty neat. Quartz's Quest linked there also looks pretty cute. For someone who's never owned a Vectrex, what's the best way to play these? Do you find a used one and hope it's in good condition?</div>
+
+			
+			
+									
+						
+							<div id="sig1541482" class="signature"><a href="https://www.youtube.com/user/BareKnuckleRoo" class="postlink">YouTube Videos</a> • <a href="http://shmups.system11.org/viewtopic.php?f=2&amp;t=1944&amp;p=844709#p844709" class="postlink">1CCs</a> • <a href="https://shmups.system11.org/viewtopic.php?f=5&amp;t=65435" class="postlink">SideLine game guide</a> • <a href="https://shmups.system11.org/viewtopic.php?f=5&amp;t=69440" class="postlink">Halley's Comet game guide</a></div>			
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p1541644" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1541644">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=168&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">PC Engine Fan X!</a>					<div style="display: inline;">
+		<div class="mas-wrap-status">
+			<span class="mas-status-dot mas-color" style="margin-bottom: 3px;" title="Offline">
+			</span>
+		</div>
+	</div>
+			</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=168&amp;sr=posts&amp;sid=52edeff5e838e8b8a9930235dbfebc10">8417</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2005 10:32 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1541644">
+
+					<h3 >
+						<a href="./viewtopic.php?p=1541644&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541644">Re: Minsoft's Vyrzon stg for the Vectrex is now being sold by Vector Republic...</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=1541644&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=1541644&amp;sid=52edeff5e838e8b8a9930235dbfebc10#p1541644" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=168&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="username">PC Engine Fan X!</a></strong> &raquo; </span><time datetime="2023-12-06T22:14:09+00:00">Wed Dec 06, 2023 10:14 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">For BareKnuckleRoo,<br>
+<br>
+Yes, buying a used Vectrex with a 100% working vector screen &amp; control panel would be your best bet + a copy of Sean Kelly's Multi Cart 3.0 cartridge = priceless! All the original 1st party Vectrex games + homebrew games + some cool killer apps as well are included on the Multi Cart 3.0. Another cool cart worth getting is a VecMulti flash cart and load up on the newest homebrew game titles via a micro sdhc memory card. Easy as pie.<br>
+<br>
+Then there are the three 3D Vectrex games of 3D Mine Storm, 3D Narrow Scape &amp; 3D Crazy Coaster that were released to the general public by Milton Bradley back in 1983 that require either the uber-rare official 3D Vectrex Imager Glasses or a 3rd-party produced one from madtronix (costs 125 euros nowadays). 3D Pole Position was slated as the 4th upcoming game title but Milton Bradley didn't release it for the 1983 timeline (therefore it's vaporware). All three 3D Vectrex games are included on the Multi Cart 3.0.<br>
+<br>
+There are 3rd-party Vectrex controllers available as well but your mileage may vary depending if it has an analog joystick or just a digital joystick setup instead (most Vectrex games are digital joystick controlled to begin with). The Vectrex game of Hyperchase does have analog joystick support from the get-go (is a fast-paced vector racing game).<br>
+<br>
+On youtube, there's a video on how to adjust/calibrate the vector screen itself with the Vectrex. A properly adjusted/calibrated screen is like "night &amp; day" compared to a stock unadjusted Vectrex screen (which is a bit dull &amp; lackluster to begin with). Your Vectrex games will definitely look at their best indeed &amp; super razor-sharp with the overall vector graphics presentation.<br>
+<br>
+It's best to have at least two Vectrex consoles on hand (as a primary one &amp; the other one as a backup just in case the first one decides to "bite the dust"/go kaput) considering their age circa 1982.<br>
+<br>
+PC Engine Fan X! ^_~</div>
+
+			
+			
+									
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="./posting.php?mode=reply&amp;t=72514&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?t=72514&amp;sid=52edeff5e838e8b8a9930235dbfebc10&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?t=72514&amp;sid=52edeff5e838e8b8a9930235dbfebc10">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="Go" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			7 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="./viewforum.php?f=1&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Shmups Chat”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=12&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-cat-link"> <span> Shmups</span></a></li>
+																<li><a href="./viewforum.php?f=1&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Shmups Chat</span></a></li>
+																<li><a href="./viewforum.php?f=2&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Hi Scores</span></a></li>
+																<li><a href="./viewforum.php?f=19&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Archives</span></a></li>
+																<li><a href="./viewforum.php?f=5&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Strategy</span></a></li>
+																<li><a href="./viewforum.php?f=10&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Reviews</span></a></li>
+																<li><a href="./viewforum.php?f=9&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Development</span></a></li>
+																<li><a href="./viewforum.php?f=8&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Shmupmeets</span></a></li>
+																<li><a href="./viewforum.php?f=22&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-cat-link"> <span> Technical</span></a></li>
+																<li><a href="./viewforum.php?f=6&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Hardware</span></a></li>
+																<li><a href="./viewforum.php?f=13&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-cat-link"> <span> General</span></a></li>
+																<li><a href="./viewforum.php?f=20&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Other Gaming</span></a></li>
+																<li><a href="./viewforum.php?f=3&amp;sid=52edeff5e838e8b8a9930235dbfebc10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Off Topic</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php?sid=52edeff5e838e8b8a9930235dbfebc10" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="./ucp.php?mode=delete_cookies&amp;sid=52edeff5e838e8b8a9930235dbfebc10" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+														</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms&amp;sid=52edeff5e838e8b8a9930235dbfebc10" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script src="./assets/javascript/jquery-3.6.0.min.js?assets_version=8"></script>
+<script src="./assets/javascript/core.js?assets_version=8"></script>
+
+
+
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=8"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=8"></script>
+<script src="./ext/alfredoramos/simplespoiler/styles/all/theme/js/details-element-polyfill.min.js?assets_version=8"></script>
+<script src="./ext/alfredoramos/simplespoiler/styles/all/theme/js/spoiler.min.js?assets_version=8"></script>
+
+
+
+</body>
+</html>

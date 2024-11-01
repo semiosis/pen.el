@@ -1,0 +1,13 @@
+
+(defn readdir-list-files-base
+  "FILES is a string col."
+  [{:keys [path buf filt offset fi]} dirs files]
+  (doto filt
+    (.apply buf "." nil 0)
+    (.apply buf ".." nil 0))
+  (doseq [dir dirs]
+    (.apply filt buf dir nil 0))
+  (doseq [file files]
+    (.apply filt buf file nil 0))
+  filt)
+

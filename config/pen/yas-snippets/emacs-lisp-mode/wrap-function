@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: wrap-function
+# group: macro
+# key: wrap
+# --
+(defmacro ${1:qtv} (&rest args)
+"$0Function wrapper"
+`(${2:tv} ,@body))

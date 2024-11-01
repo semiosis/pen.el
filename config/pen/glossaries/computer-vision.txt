@@ -1,0 +1,71 @@
+two view matching
+wide baseline stereo
+    A basic task needed for 3D reconstruction
+    and all things like it.
+    
+    You get two or more images and you should
+    answer if they are depicting the same
+    object.
+    
+    If yes — also output pixel or region
+    correspondences between images and
+    geometrical relations between them, see an
+    example here.
+
+Fréchet Inception Distance
+FID
+    May be used for filtering images.
+
+    FID is a metric of similarity between
+    images.
+
+Object detection
+    Bounding boxes.
+
+Semantic Segmentation
+    Each pixel is labeled in the image in categories.
+
+    For example, the image is divided into
+    human (red), tree (dark green), grass
+    (light green), sky (blue) for parts.
+
+Instance Segmentation
+    The combination annotation of target
+    detection and semantic segmentation. The
+    target detection comes first, and then
+    each pixel is labeled (semantic
+    segmentation). Compared to the image
+    above, we take the person as the target
+    objection for example:
+
+        Semantic segmentation does not
+        distinguish different instances in the
+        same category (all people are marked
+        red).
+
+        Instance segmentation distinguishes
+        different instances of the same
+        category (different people are
+        distinguished by different colors).
+
+Panoramic segmentation
+    Another combination annotation of semantic
+    segmentation and instance segmentation,
+    more complex.
+    
+    Panoramic segmentation means that all
+    targets should be detected and different
+    instances in the same category should be
+    distinguished.
+    
+    Instance segmentation only detects and
+    divides the objects in the image (such as
+    the people in the above figure) and
+    divides them by pixel, and distinguishes
+    them using different colors.
+
+    Panoramic segmentation is to detect and
+    segment all objects in the picture,
+    including the background, and distinguish
+    different instances (different colors are
+    used)

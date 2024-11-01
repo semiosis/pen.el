@@ -1,0 +1,3 @@
+: connection to host 192.168.1.1 port 22: No route to host root@pen-mele:/root$ exit logout [Process completed]
+
+admin@pen-mele:/home/admin/documents$ ls -l /home/admin/documents/nsa-files

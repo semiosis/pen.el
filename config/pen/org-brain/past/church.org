@@ -1,0 +1,9 @@
+#+BRAIN_PARENTS: index
+
+* Student Soul
+:PROPERTIES:
+:ID:       77ecdae3-25b1-4fc6-a836-f8d1cbb5f1ec
+:BRAIN_PARENTS: 2006-2007
+:END:
+
+[[notmuch-search:student.*soul][Notmuch search: student.*soul]]

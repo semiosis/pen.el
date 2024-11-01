@@ -1,0 +1,4 @@
+;; Display the average temperature for something in degrees celcius. Use the format n°C
+;; arguments: (thing)
+(message (eval '(average-temperature-of-thing "the surface of the Sun")))
+--> 

@@ -1,0 +1,60 @@
+
+A	B
+C	D
+E	F
+G	H
+I	J
+K	L
+M	N
+O	P
+Q	R
+S	T
+U	V
+W	X
+Y	Z
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash -xvf  # -xvf is the same as -x -v -f (verbose, execute, file)  # set -x is the same as set -vx (verbose, execute)  # set +x is the same as set +vx (verbose, execute)  # set +x is the same as set +vx (verbose, execute)

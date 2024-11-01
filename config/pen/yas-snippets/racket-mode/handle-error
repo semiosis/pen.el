@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: handle-error
+# key: err
+# --
+(unless (and (stx-list? x)
+(> (length l) 3))
+(raise-syntax-error
+#f
+"bad form"
+x))

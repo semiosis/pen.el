@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: reviewcomment
+# key: rc
+# --
+@review comment

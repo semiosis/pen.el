@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pipe variable through external script
+# group: spy
+# key: ev
+# --
+from shanepy import b
+mydir = shanepy.b("u dn", mydir)[0][:-1]

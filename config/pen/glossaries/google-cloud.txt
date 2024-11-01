@@ -1,0 +1,71 @@
+https://ai.google/tools/
+
+Document AI
+    https://youtu.be/F_jyoe1lQhg?t=145
+
+    It may take a photo of a document, and
+    read in all the data.
+
+Lighthouse
+    An open-source, automated tool for
+    improving the quality of web pages. You
+    can run it against any web page, public or
+    requiring authentication. It has audits
+    for performance, accessibility,
+    progressive web apps, SEO and more.
+
+    You can run Lighthouse in Chrome DevTools,
+    from the command line, or as a Node
+    module. You give Lighthouse a URL to
+    audit, it runs a series of audits against
+    the page, and then it generates a report
+    on how well the page did. From there, use
+    the failing audits as indicators on how to
+    improve the page. Each audit has a
+    reference doc explaining why the audit is
+    important, as well as how to fix it.
+
+Google App Engine
+    A Platform as a Service and cloud
+    computing platform for developing and
+    hosting web applications in Google-managed
+    data centers.
+    
+    Applications are sandboxed and run across
+    multiple servers.
+
+Automated Speech Recognition
+ASR
+
+Cloud Functions
+    Event-driven serverless compute platform.
+    
+    Simplest way to run your code in the
+    cloud.
+    
+    Automatically scales, highly available and
+    fault tolerant.
+    
+    No servers to provision, manage, patch or
+    update.
+    
+    Pay only while your code runs.
+    
+    Connects and extends cloud services.
+
+psq
+    sudo pip3.5 install psq
+
+    https://github.com/GoogleCloudPlatform/psq
+    
+    Cloud Pub/Sub Task Queue for Python.
+
+    Pub/sub guarantees your tasks will be
+    delivered to the workers, but psq doesn't
+    presently guarantee that a task completes
+    execution or exactly-once semantics,
+    though it does allow you to provide your
+    own mechanisms for this.
+    
+    This is similar to Celery's default
+    configuration.

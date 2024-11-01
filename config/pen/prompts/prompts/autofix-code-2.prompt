@@ -1,0 +1,55 @@
+task: "Given the current error and the code snippet, fix the code snippet"
+title: "autofix code"
+prompt-version: 3
+tags: code refactoring
+prompt: |+
+  https://stackoverflow.com/q/4579226
+
+  Tags:      [<language>]
+
+  My code is getting these errors:
+  <delim>
+  <compiler/linter output>
+  <delim>
+
+  This is my code:
+  <delim>
+  <code segment>
+  <delim>
+
+  Accepted Answer
+
+  Make these changes to fix your code:
+  <delim>
+  
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+delimiter: "```"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+# Leaving the string empty is actually more reliable
+# - "(sor (s-chompall (pen-list2str (pen-lsp-error-list))) \"No errors.\")"
+- "compiler/linter output": "(pen-list2str (pen-lsp-error-list))"
+- "code segment": "(pen-buffer-string-or-selection t)"
+defs:
+- language: "(pen-detect-language)"
+examples:
+- |+
+    2: compile: Pattern match(es) are non-exhaustive
+    2: typecheck: • Couldn't match expected type ‘[a]’ with actual type ‘[a] -> [a]’
+    4: typecheck: • Occurs check: cannot construct the infinite type: a ~ [a]
+- |+
+    mergesort :: Ord a => [a] -> [a]
+    mergesort [] ys = ys
+    mergesort xs [] = xs
+    mergesort (x:xs) (y:ys) | x <= y  = x : mergesort x
+filter: on
+info: off
+completion: off
+insertion: off
+external-related:
+- "https://stackoverflow.com/"

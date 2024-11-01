@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: invert / reverse prefix
+# group: advice
+# key: ivp
+# --
+;; (defun ${1:advised-function-name}-invert-prefix (proc &rest args)
+;;   (cond
+;;   ((equal current-prefix-arg (list 4)) (setq current-prefix-arg nil))
+;;   ((not current-prefix-arg) (setq current-prefix-arg (list 4))))
+;;   (let ((res (apply proc args)))
+;;     res))
+;; (advice-add '$1 :around #'$1-invert-prefix)
+(advice-add '$1 :around #invert-prefix-advice)

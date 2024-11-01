@@ -1,0 +1,9 @@
+:
+
+a <- io $ do putStr "Please enter a sequence of digits: "
+
+hFlush stdout
+
+getLine
+
+if null a then putStrLn "Goodbye" else return (head a)

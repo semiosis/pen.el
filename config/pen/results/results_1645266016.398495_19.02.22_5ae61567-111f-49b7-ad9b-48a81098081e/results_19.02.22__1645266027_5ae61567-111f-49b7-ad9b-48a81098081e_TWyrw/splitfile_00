@@ -1,0 +1,5 @@
+1. This is the main function of the program
+2. It takes in the port number from the OS or defaulting to 9837
+3. It creates a new server with the port number and the number of threads and the max body size
+4. It then runs the server and prints out the port number
+

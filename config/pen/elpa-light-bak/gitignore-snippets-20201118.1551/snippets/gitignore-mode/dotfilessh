@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: DotfilesSh
+# contributor: Toptal & contributors
+# key: dotfilessh
+# --
+
+### DotfilesSh ###
+
+local-patch
+patched-src

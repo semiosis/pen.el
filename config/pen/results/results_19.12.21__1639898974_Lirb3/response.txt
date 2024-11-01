@@ -1,0 +1,17 @@
+Output:
+
+root@mele:~# 
+
+"""
+
+#!/usr/bin/env python3
+import os
+import sys
+import time
+import random
+import string
+import argparse
+import threading
+import subprocess
+import socket
+import ipaddress

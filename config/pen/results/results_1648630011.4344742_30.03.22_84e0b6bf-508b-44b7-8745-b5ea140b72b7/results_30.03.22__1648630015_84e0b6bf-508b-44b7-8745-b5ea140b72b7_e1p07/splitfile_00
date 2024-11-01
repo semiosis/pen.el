@@ -1,0 +1,6 @@
+
+import qualified Data.Text.IO as TextIO
+import qualified Data.Text.Lazy as TL
+
+import Data.Maybe (fromJust)
+import Data.Char (isSpace, isDigit, isLetter, is

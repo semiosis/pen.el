@@ -1,0 +1,18 @@
+
+
+instance Num Natural where
+
+(+) = (+)
+
+(-) = (-)
+
+negate = negate
+
+fromInteger = fromInteger
+
+ abs = abs
+
+signum = signum
+
+
+instance Fraction

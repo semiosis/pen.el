@@ -1,0 +1,11 @@
+"visit" is an interactive compiled Lisp function in "simple.el".
+Simple commands to view or edit a file.
+
+See the full documentation for `visit-tags-table'.
+Type \\[help-command] at this prompt for help.
+
+(fn FILE &optional CONFIRM)" t nil)
+
+(autoload 'visit-tags-table "simple" "\
+Tell tags commands to use tags table file FILE.
+FILE should be the name

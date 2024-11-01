@@ -1,0 +1,2331 @@
+HTTP/1.1 200 OK
+Date: Sun, 19 May 2024 23:26:59 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: max-age=1800, public
+content-language: en
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+last-modified: Sun, 19 May 2024 00:20:05 GMT
+strict-transport-security: max-age=0
+traceresponse: 00-17d10789661646f5c83c126e5746668c-9b49443beb262c06-01
+vary: Cookie
+x-content-type-options: nosniff
+x-debug-info: eyJyZXRyaWVzIjowfQ==
+x-drupal-cache: HIT
+x-drupal-dynamic-cache: MISS
+x-frame-options: SAMEORIGIN
+x-generator: Drupal 10 (https://www.drupal.org)
+x-platform-cache: REVALIDATED
+x-platform-cluster: 2ozf5xcidtnki-master-7rqtwti
+x-platform-processor: rzfg33blhqtsugsj5fvhx6ze5u
+x-platform-router: avexxodgaqqm7l53tlx5e6iohm
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=oewKASXfyYlgB5uH1TmWIjMQHeJpvufnxM0jvLXUZieymsPDq88u03YE51LMRnksldl%2FSQKRC%2FzR6Uc0tJ08Qmthq9t0d%2F9EilW32A8h8RgayWfllfp7hesVV48IR04WkhsR5NaU1bWEUFo%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8867dae67871a86a-SYD
+
+
+
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="utf-8" />
+<style>/* @see https://github.com/aFarkas/lazysizes#broken-image-symbol */.js img.lazyload:not([src]) { visibility: hidden; }/* @see https://github.com/aFarkas/lazysizes#automatically-setting-the-sizes-attribute */.js img.lazyloaded[data-sizes=auto] { display: block; width: 100%; }</style>
+<link rel="canonical" href="https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism" />
+<meta property="og:site_name" content="Christian Reformed Church" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism" />
+<meta property="og:title" content="Heidelberg Catechism" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/crcna/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism" />
+<link rel="alternate" hreflang="ko" href="https://www.crcna.org/node/3943233/haidelbeleugeu-yolimundab-heidelberg-catechism" />
+<link rel="alternate" hreflang="es" href="https://www.crcna.org/node/3943233/catecismo-de-heidelberg-heidelberg-catechism" />
+<link rel="alternate" hreflang="zh-hans" href="https://www.crcna.org/node/3943233/haidebaoyaoliwenda-heidelberg-catechism" />
+<link rel="alternate" hreflang="fr" href="https://www.crcna.org/node/3943233/catechisme-de-heidelberg-heidelberg-catechism" />
+<link rel="alternate" hreflang="zh-hant" href="https://www.crcna.org/node/3943233/haidebaoyaoliwenda-heidelberg-catechism" />
+<title>Heidelberg Catechism | Christian Reformed Church</title>
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_XLzYmF94ggPztNVaoHvdTMAj-QzT7O8dG1PmdF6_6iA.css?delta=0&amp;language=en&amp;theme=crcna&amp;include=eJxdjktuwzAMRC-kmsfpUhjTqvyhRYGkgbqnr9E4KJLNfN5iMIKfk-SS5KdH2WmEl8TGDVRFR8gHu9_gT_ONV09VtUrJgUo19teK-t4HrPh-LOVp8S44ibUFOPIoylvmGZE6DNXQZ6fJjg4Z_slwtH6MsvhcphTKeXW67B71AuOZwnBtaSuZZeHteYO90CNe6RNRbIdtzz_aEIs2py-1_RfSPGth" />
+<link rel="stylesheet" media="all" href="https://use.typekit.net/flm0bdx.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_kUHwNHp3f-iz56mleozdv-r_NQFgSQUhpVVwVJrgSTg.css?delta=2&amp;language=en&amp;theme=crcna&amp;include=eJxdjktuwzAMRC-kmsfpUhjTqvyhRYGkgbqnr9E4KJLNfN5iMIKfk-SS5KdH2WmEl8TGDVRFR8gHu9_gT_ONV09VtUrJgUo19teK-t4HrPh-LOVp8S44ibUFOPIoylvmGZE6DNXQZ6fJjg4Z_slwtH6MsvhcphTKeXW67B71AuOZwnBtaSuZZeHteYO90CNe6RNRbIdtzz_aEIs2py-1_RfSPGth" />
+<script src="/sites/default/files/js/js_IxJO_NxVehL9ois-IpVGCTWXie6eGrzNBz_HdKgOIX4.js?scope=header&amp;delta=0&amp;language=en&amp;theme=crcna&amp;include=eJxdjktuwzAMRC-kmsfpUhjTqvyhRYGkgbqnr9E4KJLNfN5iMIKfk-SS5KdH2WmEl8TGDVRFR8gHu9_gT_ONV09VtUrJgUo19teK-t4HrPh-LOVp8S44ibUFOPIoylvmGZE6DNXQZ6fJjg4Z_slwtH6MsvhcphTKeXW67B71AuOZwnBtaSuZZeHteYO90CNe6RNRbIdtzz_aEIs2py-1_RfSPGth"></script>
+</head>
+<body class="has-sidebar node-language-direction--ltr logged-out page--page direction--ltr">
+<a href="#main-content" class="visually-hidden focusable" id="skip-to-main">
+Skip to main content
+</a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHZGPL6"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="dialog-off-canvas-main-canvas" dir="ltr" data-off-canvas-main-canvas>
+<div id="page" class="last-section-white last-section-default-space page has-banner contained page-is-node">
+<header role="banner" id="header" class="last-section-white last-section-default-space page has-banner contained page-is-node header">
+<div id="header">
+<div class="layout-container">
+<div class="header__branding">
+<a id="logo" name="Home" class="logo" href="https://www.crcna.org/"><span class="visually-hidden">Home</span></a>
+</div>
+<div class="header__menus">
+<div id="top-menu" class="top-menu">
+<div class="header-top-left-region">
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation" class="block secondarynavigation menu-block">
+<h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+<ul class="clearfix menu">
+<li class="menu-item">
+<a href="/churches">Find a Church</a>
+</li>
+<li class="menu-item">
+<a href="/other/find-ministry">Find a Ministry</a>
+</li>
+<li class="menu-item">
+<a href="/contact" data-drupal-link-system-path="node/3596">Contact</a>
+</li>
+<li class="menu-item">
+<a href="/donate" data-drupal-link-system-path="node/3595">Donate</a>
+</li>
+<li class="menu-item">
+<a href="/languages" data-drupal-link-system-path="node/3943389">한국어 Español More</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div id="mobile-menu" class="mobile-menu">
+<div class="main-menu">
+<div class="header-bottom-left-region">
+<nav role="navigation" aria-labelledby="block-primarynavigation-menu" id="block-primarynavigation" class="block primarynavigation menu-block">
+<h2 class="visually-hidden" id="block-primarynavigation-menu">Primary Navigation</h2>
+<ul class="clearfix menu">
+<li class="menu-item">
+<a href="/welcome">Welcome</a>
+</li>
+<li class="menu-item">
+<a href="/ministries">What We Do</a>
+</li>
+<li class="menu-item">
+<a href="/get-involved">Get Involved</a>
+</li>
+<li class="menu-item">
+<a href="/resources">Resources</a>
+</li>
+<li class="menu-item">
+<a href="/news-and-events">News &amp; Events</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="social-menu">
+<div class="header-top-right-region">
+<nav role="navigation" aria-labelledby="block-sociallinks-menu" id="block-sociallinks" class="block sociallinks menu-block">
+<h2 class="visually-hidden" id="block-sociallinks-menu">Social Links</h2>
+<ul class="clearfix menu">
+<li class="menu-item">
+<a href="https://www.facebook.com/crcna" class="fab fa-facebook">Facebook</a>
+</li>
+<li class="menu-item">
+<a href="https://twitter.com/crcna" class="fab fa-twitter">Twitter</a>
+</li>
+<li class="menu-item">
+<a href="https://www.instagram.com/crcna/" class="fab fa-instagram">Instagram</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id="search" class="search">
+<div class="header-bottom-right-region">
+<div class="search-block-form google-cse block searchform" data-drupal-selector="search-block-form" id="block-searchform" role="search">
+<form action="/crcna-search" method="get" id="search-block-form" accept-charset="UTF-8">
+<div class="js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+<label for="edit-keys" class="visually-hidden">Search</label>
+<input title="Enter the terms you wish to search for." placeholder="Search" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value size="15" maxlength="128" class="form-search" />
+</div>
+<fieldset data-drupal-selector="edit-target" id="edit-target--wrapper" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
+<legend>
+<span class="fieldset-legend">Target</span>
+</legend>
+<div class="fieldset-wrapper">
+<div id="edit-target"><div class="js-form-item form-item js-form-type-radio form-item-target js-form-item-target">
+<input data-drupal-selector="edit-target-everything" type="radio" id="edit-target-everything" name="target" value="everything" checked="checked" class="form-radio" />
+<label for="edit-target-everything" class="option">Everything</label>
+</div>
+<div class="js-form-item form-item js-form-type-radio form-item-target js-form-item-target">
+<input data-drupal-selector="edit-target-resources" type="radio" id="edit-target-resources" name="target" value="resources" class="form-radio" />
+<label for="edit-target-resources" class="option">Resources</label>
+</div>
+</div>
+</div>
+</fieldset>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit" />
+</div>
+</form>
+</div>
+</div>
+</div>
+<button id="toggle-menu" class="toggle toggle--menu" aria-controls="mobile-menu" aria-expanded="false" aria-haspopup="menu">
+<i class="icon far fa-bars" aria-hidden="true"></i>
+<div class="text">Menu</div>
+</button>
+<button id="toggle-search" class="toggle toggle--search" aria-controls="search" aria-expanded="false" aria-haspopup="menu">
+<i class="icon far fa-search" aria-hidden="true"></i>
+<div class="text">Search</div>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main role="main" class="content-main">
+<a id="main-content" tabindex="-1"></a>
+<div class="language-switcher-region">
+<div class="language-switcher-language-session block languageswitcher" id="block-languageswitcher" role="navigation">
+<ul class="links"><li data-drupal-link-system-path="node/3943247" class="is-active"><a href="/welcome/beliefs/confessions/heidelberg-catechism" class="language-link session-active is-active" title="English" data-drupal-link-system-path="node/3943247">English</a></li><li data-drupal-link-query="{&quot;language&quot;:&quot;ko&quot;}" data-drupal-link-system-path="node/3943247"><a href="/welcome/beliefs/confessions/heidelberg-catechism?language=ko" class="language-link" title="Korean" data-drupal-link-query="{&quot;language&quot;:&quot;ko&quot;}" data-drupal-link-system-path="node/3943247">한국어</a></li><li data-drupal-link-query="{&quot;language&quot;:&quot;es&quot;}" data-drupal-link-system-path="node/3943247"><a href="/welcome/beliefs/confessions/heidelberg-catechism?language=es" class="language-link" title="Spanish" data-drupal-link-query="{&quot;language&quot;:&quot;es&quot;}" data-drupal-link-system-path="node/3943247">Español</a></li><li data-drupal-link-query="{&quot;language&quot;:&quot;zh-hans&quot;}" data-drupal-link-system-path="node/3943247"><a href="/welcome/beliefs/confessions/heidelberg-catechism?language=zh-hans" class="language-link" title="Chinese, Simplified" data-drupal-link-query="{&quot;language&quot;:&quot;zh-hans&quot;}" data-drupal-link-system-path="node/3943247">中文（简体)</a></li><li data-drupal-link-query="{&quot;language&quot;:&quot;fr&quot;}" data-drupal-link-system-path="node/3943247"><a href="/welcome/beliefs/confessions/heidelberg-catechism?language=fr" class="language-link" title="French" data-drupal-link-query="{&quot;language&quot;:&quot;fr&quot;}" data-drupal-link-system-path="node/3943247">Français</a></li><li data-drupal-link-query="{&quot;language&quot;:&quot;zh-hant&quot;}" data-drupal-link-system-path="node/3943247"><a href="/welcome/beliefs/confessions/heidelberg-catechism?language=zh-hant" class="language-link" title="Chinese, Traditional" data-drupal-link-query="{&quot;language&quot;:&quot;zh-hant&quot;}" data-drupal-link-system-path="node/3943247">中文（繁體)</a></li></ul>
+</div>
+</div>
+<div class="highlighted">
+<div class="highlighted-region">
+<div id="block-crcna-breadcrumbs" class="block crcna-breadcrumbs">
+<nav role="navigation" aria-labelledby="system-breadcrumb" class="breadcrumb">
+<h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+<ol>
+<li>
+<a href="/">Home</a>
+</li>
+<li>
+<a href="/welcome">Welcome</a>
+</li>
+<li>
+<a href="/welcome/beliefs">Our Faith</a>
+</li>
+<li>
+<a href="/welcome/beliefs/confessions">Confessions</a>
+</li>
+<li>
+Heidelberg Catechism
+</li>
+</ol>
+</nav>
+</div>
+<div id="block-crcnabanner" class="block crcnabanner">
+<article class="banner--page has-image banner">
+<div class="banner__wrapper">
+<div class="banner__image">
+<div class="field field-page-banner">
+<article class="media media--image display--banner">
+<div class="field field-media-image"> <picture>
+<source srcset="/sites/default/files/styles/banner_desktop/public/header_beliefs_heidelberg.webp?h=019a985b&amp;itok=vzoq1-hl 1x, /sites/default/files/styles/banner_desktop_2x/public/header_beliefs_heidelberg.webp?h=019a985b&amp;itok=rskZbvgq 2x" media="(min-width: 768px)" type="image/webp" width="1440" height="300" />
+<source srcset="/sites/default/files/styles/banner_tablet/public/header_beliefs_heidelberg.webp?h=019a985b&amp;itok=_e48VOlK 1x, /sites/default/files/styles/banner_tablet_2x/public/header_beliefs_heidelberg.webp?h=019a985b&amp;itok=FLdXNknA 2x" media="(min-width: 480px) and (max-width: 767px)" type="image/webp" width="768" height="300" />
+<source srcset="/sites/default/files/styles/banner_mobile/public/header_beliefs_heidelberg.webp?h=019a985b&amp;itok=K0z6AacO 1x, /sites/default/files/styles/banner_mobile_2x/public/header_beliefs_heidelberg.webp?h=019a985b&amp;itok=FZeyrj12 2x" media="(max-width: 479px)" type="image/webp" width="480" height="300" />
+<source srcset="/sites/default/files/styles/banner_desktop/public/header_beliefs_heidelberg.jpg?h=019a985b&amp;itok=vzoq1-hl 1x, /sites/default/files/styles/banner_desktop_2x/public/header_beliefs_heidelberg.jpg?h=019a985b&amp;itok=rskZbvgq 2x" media="(min-width: 768px)" type="image/jpeg" width="1440" height="300" />
+<source srcset="/sites/default/files/styles/banner_tablet/public/header_beliefs_heidelberg.jpg?h=019a985b&amp;itok=_e48VOlK 1x, /sites/default/files/styles/banner_tablet_2x/public/header_beliefs_heidelberg.jpg?h=019a985b&amp;itok=FLdXNknA 2x" media="(min-width: 480px) and (max-width: 767px)" type="image/jpeg" width="768" height="300" />
+<source srcset="/sites/default/files/styles/banner_mobile/public/header_beliefs_heidelberg.jpg?h=019a985b&amp;itok=K0z6AacO 1x, /sites/default/files/styles/banner_mobile_2x/public/header_beliefs_heidelberg.jpg?h=019a985b&amp;itok=FZeyrj12 2x" media="(max-width: 479px)" type="image/jpeg" width="480" height="300" />
+<img alt loading="eager" src="/sites/default/files/styles/banner_mobile/public/header_beliefs_heidelberg.jpg?h=019a985b&amp;itok=K0z6AacO" width="480" height="300" />
+</picture>
+</div>
+</article>
+</div>
+</div>
+<div class="banner__text">
+<div class="layout-container">
+<div class="text">
+<h1><span>Heidelberg Catechism</span>
+</h1>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+<div class="messages-region">
+<div data-drupal-messages-fallback class="hidden"></div>
+</div>
+<div class="main-content">
+<div class="layout-content">
+<div class="content-region">
+<div id="block-crcna-content" class="block crcna-content">
+<article class="page display-full">
+<div>
+<section class="background--white top-space--default bottom-space--default columns--one header--basic section display-default">
+<div class="section__container">
+<div class="section__content">
+<div class="section__paragraphs">
+<div class="field field-section-content">
+<div class="paragraph">
+<div class="block display-default">
+<div class="paragraph__content">
+<div class="field field-block"><div id="block-tocjsblock--2" class="block tocjsblock--2">
+<div id="sticky-anchor"></div>
+<div class="toc-js" id="toc-js-block-toc-js-block" data-id="toc_js_block" data-label="Toc.js block" data-provider="toc_js" data-selectors="h2, h3" data-selectors-minimum="0" data-container="div.paragraph:nth-child(2)" data-prefix="toc" data-list-type="ul" data-back-to-top="1" data-back-to-top-label="Back to top" data-smooth-scrolling="1" data-scroll-to-offset="100" data-highlight-on-scroll="1" data-highlight-offset="100" data-sticky="0" data-sticky-offset="0" data-sticky-stop data-sticky-stop-padding="0">
+<div class="toc-title h3">Table of Contents</div>
+<nav role="navigation" aria-label="Table of Contents"></nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<div class="text display-default">
+<div class="paragraph__content">
+<div class="field field-text-body"><h2>Introduction</h2>
+<p>The Heidelberg Catechism (1563) was composed in the city of Heidelberg, Germany, at the request of Elector Frederick III, who ruled the province of the Palatinate from 1559 to 1576. The new catechism was intended as a tool for teaching young people, a guide for preaching in the provincial churches, and a form of confessional unity among the several Protestant factions in the Palatinate. An old tradition credits Zacharias Ursinus and Caspar Olevianus with being the coauthors of the catechism, but the project was actually the work of a team of ministers and university theologians under the watchful eye of Frederick himself. Ursinus probably served as the primary writer on the team, and Olevianus had a lesser role. The catechism was approved by a synod in Heidelberg in January 1563. A second and third German edition, each with small additions, as well as a Latin translation were published the same year in Heidelberg. The third edition was included in the Palatinate Church Order of November 15, 1563, at which time the catechism was divided into fifty-two sections or Lord's Days, so that one Lord's Day could be explained in an afternoon worship service each Sunday of the year.</p>
+<p>The Synod of Dort approved the Heidelberg Catechism in 1619, and it soon became the most ecumenical of the Reformed catechisms and confessions. It has been translated into many European, Asian, and African languages and is still the most widely used and warmly praised catechism of the Reformation period.</p>
+<p>Most of the footnoted biblical references in this translation of the catechism were included in the early German and Latin editions, but the precise selection was approved by Synod 1975 of the Christian Reformed Church.</p>
+<h4>Lord’s Day 1</h4>
+Q &amp; A 1
+<p>Q.&nbsp;What is your only comfort<br>
+in life and in death?</p>
+<p>A.&nbsp;That I am not my own,1<br>
+but belong—</p>
+<p>body and soul,<br>
+in life and in death—2</p>
+<p>to my faithful Savior, Jesus Christ.3</p>
+<p>He has fully paid for all my sins with his precious blood,4<br>
+and has set me free from the tyranny of the devil.5<br>
+He also watches over me in such a way6<br>
+that not a hair can fall from my head<br>
+without the will of my Father in heaven;7<br>
+in fact, all things must work together for my salvation.8</p>
+<p>Because I belong to him,<br>
+Christ, by his Holy Spirit,<br>
+assures me of eternal life9<br>
+and makes me wholeheartedly willing and ready<br>
+from now on to live for him.10</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:19-20&amp;version=nrsv">1 Cor. 6:19-20</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2014:7-9&amp;version=nrsv">Rom. 14:7-9</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%203:23&amp;version=nrsv">1 Cor. 3:23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Titus%202:14&amp;version=nrsv">Titus 2:14</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:18-19&amp;version=nrsv">1 Pet. 1:18-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:7-9&amp;version=nrsv">1 John 1:7-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:2&amp;version=nrsv">2:2</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%208:34-36&amp;version=nrsv">John 8:34-36</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:14-15&amp;version=nrsv">Heb. 2:14-15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:1-11&amp;version=nrsv">1 John 3:1-11</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%206:39-40&amp;version=nrsv">John 6:39-40</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2010:27-30&amp;version=nrsv">10:27-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Thess.%203:3&amp;version=nrsv">2 Thess. 3:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:5&amp;version=nrsv">1 Pet. 1:5</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2010:29-31&amp;version=nrsv">Matt. 10:29-31</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2021:16-18&amp;version=nrsv">Luke 21:16-18</a><br>
+8&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:28&amp;version=nrsv">Rom. 8:28</a><br>
+9&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:15-16&amp;version=nrsv">Rom. 8:15-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%201:21-22&amp;version=nrsv">2 Cor. 1:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:5&amp;version=nrsv">5:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%201:13-14&amp;version=nrsv">Eph. 1:13-14</a><br>
+10&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:1-17&amp;version=nrsv">Rom. 8:1-17</a></p>
+Q &amp; A 2
+<p>Q.&nbsp;What must you know to<br>
+live and die in the joy of this comfort?</p>
+<p>A.&nbsp;Three things:</p>
+<p>first, how great my sin and misery are;1<br>
+second, how I am set free from all my sins and misery;2<br>
+third, how I am to thank God for such deliverance.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:9-10&amp;version=nrsv">Rom. 3:9-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:10&amp;version=nrsv">1 John 1:10</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2017:3&amp;version=nrsv">John 17:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%204:12&amp;version=nrsv">Acts 4:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2010:43&amp;version=nrsv">10:43</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:16&amp;version=nrsv">Matt. 5:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:13&amp;version=nrsv">Rom. 6:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:8-10&amp;version=nrsv">Eph. 5:8-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Tim.%202:15&amp;version=nrsv">2 Tim. 2:15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%202:9-10&amp;version=nrsv">1 Pet. 2:9-10</a></p>
+<h2>Part I: Misery</h2>
+<h4>Lord’s Day 2</h4>
+Q &amp; A 3
+<p>Q.&nbsp;How do you come to know your misery?</p>
+<p>A.&nbsp;The law of God tells me.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:20&amp;version=nrsv">Rom. 3:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:7-25&amp;version=nrsv">7:7-25</a></p>
+Q &amp; A 4
+<p>Q.&nbsp;What does God’s law require of us?</p>
+<p>A.&nbsp;Christ teaches us this in summary in&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matthew%2022:37-40&amp;version=nrsv">Matthew 22:37-40</a>:</p>
+<p>“‘You shall love the Lord your God<br>
+with all your heart,<br>
+and with all your soul,<br>
+and with all your mind.’1<br>
+This is the greatest and first commandment.</p>
+<p>“And a second is like it:<br>
+‘You shall love your neighbor as yourself.’2</p>
+<p>“On these two commandments hang<br>
+all the law and the prophets.”</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%206:5&amp;version=nrsv">Deut. 6:5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2019:18&amp;version=nrsv">Lev. 19:18</a></p>
+Q &amp; A 5
+<p>Q.&nbsp;Can you live up to all this perfectly?</p>
+<p>A.&nbsp;No.1<br>
+I have a natural tendency<br>
+to hate God and my neighbor.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:9-20,%2023&amp;version=nrsv">Rom. 3:9-20, 23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:8,%2010&amp;version=nrsv">1 John 1:8, 10</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%206:5&amp;version=nrsv">Gen. 6:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2017:9&amp;version=nrsv">Jer. 17:9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:23-24&amp;version=nrsv">Rom. 7:23-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:7&amp;version=nrsv">8:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:1-3&amp;version=nrsv">Eph. 2:1-3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Titus%203:3&amp;version=nrsv">Titus 3:3</a></p>
+<h4>Lord’s Day 3</h4>
+Q &amp; A 6
+<p>Q.&nbsp;Did God create people<br>
+so wicked and perverse?</p>
+<p>A.&nbsp;No.<br>
+God created them good1&nbsp;and in his own image,2</p>
+<p>that is, in true righteousness and holiness,3</p>
+<p>so that they might</p>
+<p>truly know God their creator,4<br>
+love him with all their heart,<br>
+and live with God in eternal happiness,</p>
+<p>to praise and glorify him.5</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%201:31&amp;version=nrsv">Gen. 1:31</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%201:26-27&amp;version=nrsv">Gen. 1:26-27</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:24&amp;version=nrsv">Eph. 4:24</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:10&amp;vversion=nrsv">Col. 3:10</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%208&amp;version=nrsv">Ps. 8</a></p>
+Q &amp; A 7
+<p>Q.&nbsp;Then where does this corrupt human nature come from?</p>
+<p>A.&nbsp;The fall and disobedience of our first parents,</p>
+<p>Adam and Eve, in Paradise.1</p>
+<p>This fall has so poisoned our nature2</p>
+<p>that we are all conceived and born<br>
+in a sinful condition.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%203&amp;version=nrsv">Gen. 3</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:12,%2018-19&amp;version=nrsv">Rom. 5:12, 18-19</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2051:5&amp;version=nrsv">Ps. 51:5</a></p>
+Q &amp; A 8
+<p>Q.&nbsp;But are we so corrupt<br>
+that we are totally unable to do any good<br>
+and inclined toward all evil?</p>
+<p>A.&nbsp;Yes,1&nbsp;unless we are born again<br>
+by the Spirit of God.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%206:5&amp;version=nrsv">Gen. 6:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%208:21&amp;version=nrsv">8:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Job%2014:4&amp;version=nrsv">Job 14:4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053:6&amp;version=nrsv">Isa. 53:6</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:3-5&amp;version=nrsv">John 3:3-5</a></p>
+<h4>Lord’s Day 4</h4>
+Q &amp; A 9
+<p>Q.&nbsp;But doesn’t God do us an injustice<br>
+by requiring in his law<br>
+what we are unable to do?</p>
+<p>A.&nbsp;No, God created human beings with the ability to keep the law.1<br>
+They, however, provoked by the devil,2</p>
+<p>in willful disobedience,3<br>
+robbed themselves and all their descendants of these gifts.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%201:31&amp;version=nrsv">Gen. 1:31</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:24&amp;version=nrsv">Eph. 4:24</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%203:13&amp;version=nrsv">Gen. 3:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%208:44&amp;version=nrsv">John 8:44</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%203:6&amp;version=nrsv">Gen. 3:6</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:12,%2018,%2019&amp;version=nrsv">Rom. 5:12, 18, 19</a></p>
+Q &amp; A 10
+<p>Q.&nbsp;Does God permit<br>
+such disobedience and rebellion<br>
+to go unpunished?</p>
+<p>A.&nbsp;Certainly not.<br>
+God is terribly angry</p>
+<p>with the sin we are born with<br>
+as well as the sins we personally commit.</p>
+<p>As a just judge,<br>
+God will punish them both now and in eternity,1<br>
+having declared:</p>
+<p>“Cursed is everyone who does not observe and obey<br>
+all the things written in the book of the law.”2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2034:7&amp;version=nrsv">Ex. 34:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%205:4-6&amp;version=nrsv">Ps. 5:4-6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Nah.%201:2&amp;version=nrsv">Nah. 1:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:18&amp;version=nrsv">Rom. 1:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:6&amp;version=nrsv">Eph. 5:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%209:27&amp;version=nrsv">Heb. 9:27</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:10&amp;version=nrsv">Gal. 3:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%2027:26&amp;version=nrsv">Deut. 27:26</a></p>
+Q &amp; A 11
+<p>Q.&nbsp;But isn’t God also merciful?</p>
+<p>A.&nbsp;God is certainly merciful,1<br>
+but also just.2<br>
+God’s justice demands</p>
+<p>that sin, committed against his supreme majesty,<br>
+be punished with the supreme penalty—<br>
+eternal punishment of body and soul.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2034:6-7&amp;version=nrsv">Ex. 34:6-7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20103:8-9&amp;version=nrsv">Ps. 103:8-9</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2034:7&amp;version=nrsv">Ex. 34:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%207:9-11&amp;version=nrsv">Deut. 7:9-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%205:4-6&amp;version=nrsv">Ps. 5:4-6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:30-31&amp;version=nrsv">Heb. 10:30-31</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2025:35-46&amp;version=nrsv">Matt. 25:35-46</a></p>
+<h2>Part II: Deliverance</h2>
+<h4>Lord’s Day 5</h4>
+Q &amp; A 12
+<p>Q.&nbsp;According to God’s righteous judgment<br>
+we deserve punishment<br>
+both now and in eternity:<br>
+how then can we escape this punishment<br>
+and return to God’s favor?</p>
+<p>A.&nbsp;God requires that his justice be satisfied.1<br>
+Therefore the claims of this justice<br>
+must be paid in full,<br>
+either by ourselves or by another.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2023:7&amp;version=nrsv">Ex. 23:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%202:1-11&amp;version=nrsv">Rom. 2:1-11</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053:11&amp;version=nrsv">Isa. 53:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:3-4&amp;version=nrsv">Rom. 8:3-4</a></p>
+Q &amp; A 13
+<p>Q.&nbsp;Can we make this payment ourselves?</p>
+<p>A.&nbsp;Certainly not.<br>
+Actually, we increase our debt every day.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:12&amp;version=nrsv">Matt. 6:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%202:4-5&amp;version=nrsv">Rom. 2:4-5</a></p>
+Q &amp; A 14
+<p>Q.&nbsp;Can another creature—any at all—<br>
+pay this debt for us?</p>
+<p>A.&nbsp;No.<br>
+To begin with,</p>
+<p>God will not punish any other creature<br>
+for what a human is guilty of.1</p>
+<p>Furthermore,</p>
+<p>no mere creature can bear the weight<br>
+of God’s eternal wrath against sin<br>
+and deliver others from it.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ezek.%2018:4,%2020&amp;version=nrsv">Ezek. 18:4, 20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:14-18&amp;version=nrsv">Heb. 2:14-18</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2049:7-9&amp;version=nrsv">Ps. 49:7-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20130:3&amp;version=nrsv">130:3</a></p>
+Q &amp; A 15
+<p>Q.&nbsp;What kind of mediator and deliverer<br>
+should we look for then?</p>
+<p>A.&nbsp;One who is a true1&nbsp;and righteous2&nbsp;human,</p>
+<p>yet more powerful than all creatures,<br>
+that is, one who is also true God.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:3&amp;version=nrsv">Rom. 1:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:21&amp;version=nrsv">1 Cor. 15:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:17&amp;version=nrsv">Heb. 2:17</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053:9&amp;version=nrsv">Isa. 53:9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:21&amp;version=nrsv">2 Cor. 5:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%207:26&amp;version=nrsv">Heb. 7:26</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%207:14&amp;version=nrsv">Isa. 7:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%209:6&amp;version=nrsv">9:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2023:6&amp;version=nrsv">Jer. 23:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:1&amp;version=nrsv">John 1:1</a></p>
+<h4>Lord’s Day 6</h4>
+Q &amp; A 16
+<p>Q.&nbsp;Why must the mediator be a true and righteous human?</p>
+<p>A.&nbsp;God’s justice demands</p>
+<p>that human nature, which has sinned,<br>
+must pay for sin;1<br>
+but a sinful human could never pay for others.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:12,%2015&amp;version=nrsv">Rom. 5:12, 15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:21&amp;version=nrsv">1 Cor. 15:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:14-16&amp;version=nrsv">Heb. 2:14-16</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%207:26-27&amp;version=nrsv">Heb. 7:26-27</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%203:18&amp;version=nrsv">1 Pet. 3:18</a></p>
+Q &amp; A 17
+<p>Q.&nbsp;Why must the mediator also be true God?</p>
+<p>A.&nbsp;So that the mediator,</p>
+<p>by the power of his divinity,</p>
+<p>might bear the weight of God’s wrath in his humanity</p>
+<p>and earn for us<br>
+and restore to us</p>
+<p>righteousness and life.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053&amp;version=nrsv">Isa. 53</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:16&amp;version=nrsv">John 3:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:21&amp;version=nrsv">2 Cor. 5:21</a></p>
+Q &amp; A 18
+<p>Q.&nbsp;Then who is this mediator—<br>
+true God and at the same time<br>
+a true and righteous human?</p>
+<p>A.&nbsp;Our Lord Jesus Christ,1</p>
+<p>who was given to us<br>
+to completely deliver us<br>
+and make us right with God.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%201:21-23&amp;version=nrsv">Matt. 1:21-23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%202:11&amp;version=nrsv">Luke 2:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%202:5&amp;version=nrsv">1 Tim. 2:5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%201:30&amp;version=nrsv">1 Cor. 1:30</a></p>
+Q &amp; A 19
+<p>Q.&nbsp;How do you come to know this?</p>
+<p>A.&nbsp;The holy gospel tells me.</p>
+<p>God began to reveal the gospel already in Paradise;1<br>
+later God proclaimed it</p>
+<p>by the holy patriarchs2&nbsp;and prophets3</p>
+<p>and foreshadowed it</p>
+<p>by the sacrifices and other ceremonies of the law;4</p>
+<p>and finally God fulfilled it</p>
+<p>through his own beloved Son.5</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%203:15&amp;version=nrsv">Gen. 3:15</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2022:18&amp;version=nrsv">Gen. 22:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2049:10&amp;version=nrsv">49:10</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053&amp;version=nrsv">Isa. 53</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2023:5-6&amp;version=nrsv">Jer. 23:5-6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Mic.%207:18-20&amp;version=nrsv">Mic. 7:18-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2010:43&amp;version=nrsv">Acts 10:43</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%201:1-2&amp;version=nrsv">Heb. 1:1-2</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%201-7&amp;version=nrsv">Lev. 1-7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%205:46&amp;version=nrsv">John 5:46</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:1-10&amp;version=nrsv">Heb. 10:1-10</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:4&amp;version=nrsv">Rom. 10:4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%204:4-5&amp;version=nrsv">Gal. 4:4-5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%202:17&amp;version=nrsv">Col. 2:17</a></p>
+<h4>Lord’s Day 7</h4>
+Q &amp; A 20
+<p>Q.&nbsp;Are all people then saved through Christ<br>
+just as they were lost through Adam?</p>
+<p>A.&nbsp;No.<br>
+Only those are saved<br>
+who through true faith</p>
+<p>are grafted into Christ<br>
+and accept all his benefits.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:14&amp;version=nrsv">Matt. 7:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:16,%2018,%2036&amp;version=nrsv">John 3:16, 18, 36</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2011:16-21&amp;version=nrsv">Rom. 11:16-21</a></p>
+Q &amp; A 21
+<p>Q.&nbsp;What is true faith?</p>
+<p>A.&nbsp;True faith is<br>
+not only a sure knowledge by which I hold as true</p>
+<p>all that God has revealed to us in Scripture;1</p>
+<p>it is also a wholehearted trust,2</p>
+<p>which the Holy Spirit creates in me3&nbsp;by the gospel,4<br>
+that God has freely granted,</p>
+<p>not only to others but to me also,5</p>
+<p>forgiveness of sins,<br>
+eternal righteousness,<br>
+and salvation.6</p>
+<p>These are gifts of sheer grace,<br>
+granted solely by Christ’s merit.7</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2017:3,%2017&amp;version=nrsv">John 17:3, 17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2011:1-3&amp;version=nrsv">Heb. 11:1-3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%202:19&amp;version=nrsv">James 2:19</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%204:18-21&amp;version=nrsv">Rom. 4:18-21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:1&amp;version=nrsv">5:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:10&amp;version=nrsv">10:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%204:14-16&amp;version=nrsv">Heb. 4:14-16</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2016:15-17&amp;version=nrsv">Matt. 16:15-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:5&amp;version=nrsv">John 3:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2016:14&amp;version=nrsv">Acts 16:14</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:16&amp;version=nrsv">Rom. 1:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:17&amp;version=nrsv">10:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%201:21&amp;version=nrsv">1 Cor. 1:21</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%202:20&amp;version=nrsv">Gal. 2:20</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:17&amp;version=nrsv">Rom. 1:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:10&amp;version=nrsv">Heb. 10:10</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:21-26&amp;version=nrsv">Rom. 3:21-26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%202:16&amp;version=nrsv">Gal. 2:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:8-10&amp;version=nrsv">Eph. 2:8-10</a></p>
+Q &amp; A 22
+<p>Q.&nbsp;What then must a Christian believe?</p>
+<p>A.&nbsp;All that is promised us in the gospel,1</p>
+<p>a summary of which is taught us<br>
+in the articles of our universal<br>
+and undisputed Christian faith.</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:18-20&amp;version=nrsv">Matt. 28:18-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2020:30-31&amp;version=nrsv">John 20:30-31</a></p>
+Q &amp; A 23
+<p>Q.&nbsp;What are these articles?</p>
+<p>A.&nbsp;I believe in God, the Father almighty,</p>
+<p>creator of heaven and earth.</p>
+<p>I believe in Jesus Christ, his only begotten Son, our Lord,</p>
+<p>who was conceived by the Holy Spirit<br>
+and born of the virgin Mary.<br>
+He suffered under Pontius Pilate,<br>
+was crucified, died, and was buried;<br>
+he descended to hell.<br>
+The third day he rose again from the dead.<br>
+He ascended to heaven<br>
+and is seated at the right hand of God the Father almighty.<br>
+From there he will come to judge the living and the dead.</p>
+<p>I believe in the Holy Spirit,</p>
+<p>the holy catholic church,<br>
+the communion of saints,<br>
+the forgiveness of sins,<br>
+the resurrection of the body,<br>
+and the life everlasting. Amen.</p>
+<h4>Lord’s Day 8</h4>
+Q &amp; A 24
+<p>Q.&nbsp;How are these articles divided?</p>
+<p>A.&nbsp;Into three parts:</p>
+<p>God the Father and our creation;<br>
+God the Son and our deliverance;<br>
+and God the Holy Spirit and our sanctification.</p>
+Q &amp; A 25
+<p>Q.&nbsp;Since there is only one divine being,1<br>
+why do you speak of three:<br>
+Father, Son, and Holy Spirit?</p>
+<p>A.&nbsp;Because that is how</p>
+<p>God has revealed himself in his Word:2<br>
+these three distinct persons<br>
+are one, true, eternal God.</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%206:4&amp;version=nrsv">Deut. 6:4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%208:4,%206&amp;version=nrsv">1 Cor. 8:4, 6</a><br>
+2<a href="https://www.biblegateway.com/passage/?search=Matt.%203:16-17&amp;version=nrsv">Matt. 3:16-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:18-19&amp;version=nrsv">28:18-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%204:18&amp;version=nrsv">Luke 4:18</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Isa.%2061:1&amp;version=nrsv">Isa. 61:1</a>);&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2014:26&amp;version=nrsv">John 14:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:26&amp;version=nrsv">15:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2+Cor.+13%3A14&amp;version=NIV">2 Cor. 13:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%204:6&amp;version=nrsv">Gal. 4:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Tit.%203:5-6&amp;version=nrsv">Tit. 3:5-6</a></p>
+<h3>God the Father</h3>
+<h4>Lord’s Day 9</h4>
+Q &amp; A 26
+<p>Q.&nbsp;What do you believe when you say,<br>
+“I believe in God, the Father almighty,<br>
+creator of heaven and earth”?</p>
+<p>A.&nbsp;That the eternal Father of our Lord Jesus Christ,</p>
+<p>who out of nothing created heaven and earth</p>
+<p>and everything in them,1</p>
+<p>who still upholds and rules them</p>
+<p>by his eternal counsel and providence,2</p>
+<p>is my God and Father</p>
+<p>because of Christ the Son.3</p>
+<p>I trust God so much that I do not doubt</p>
+<p>he will provide</p>
+<p>whatever I need<br>
+for body and soul,4</p>
+<p>and will turn to my good</p>
+<p>whatever adversity he sends upon me<br>
+in this sad world.5</p>
+<p>God is able to do this because he is almighty God6<br>
+and desires to do this because he is a faithful Father.7</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%201-2&amp;version=nrsv">Gen. 1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2020:11&amp;version=nrsv">Ex. 20:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2033:6&amp;version=nrsv">Ps. 33:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2044:24&amp;version=nrsv">Isa. 44:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%204:24&amp;version=nrsv">Acts 4:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2014:15&amp;version=nrsv">14:15</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20104&amp;version=nrsv">Ps. 104</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:30&amp;version=nrsv">Matt. 6:30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2010:29&amp;version=nrsv">10:29</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%201:11&amp;version=nrsv">Eph. 1:11</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:12-13&amp;version=nrsv">John 1:12-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:15-16&amp;version=nrsv">Rom. 8:15-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%204:4-7&amp;version=nrsv">Gal. 4:4-7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%201:5&amp;version=nrsv">Eph. 1:5</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2055:22&amp;version=nrsv">Ps. 55:22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:25-26&amp;version=nrsv">Matt. 6:25-26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2012:22-31&amp;version=nrsv">Luke 12:22-31</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:28&amp;version=nrsv">Rom. 8:28</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2018:14&amp;version=nrsv">Gen. 18:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:31-39&amp;version=nrsv">Rom. 8:31-39</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:9-11&amp;version=nrsv">Matt. 7:9-11</a></p>
+<h4>Lord’s Day 10</h4>
+Q &amp; A 27
+<p>Q.&nbsp;What do you understand<br>
+by the providence of God?</p>
+<p>A.&nbsp;The almighty and ever present power of God1</p>
+<p>by which God upholds, as with his hand,</p>
+<p>heaven<br>
+and earth<br>
+and all creatures,2</p>
+<p>and so rules them that</p>
+<p>leaf and blade,<br>
+rain and drought,<br>
+fruitful and lean years,<br>
+food and drink,<br>
+health and sickness,<br>
+prosperity and poverty—3<br>
+all things, in fact,<br>
+come to us</p>
+<p>not by chance4<br>
+but by his fatherly hand.5</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2023:23-24&amp;version=nrsv">Jer. 23:23-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2017:24-28&amp;version=nrsv">Acts 17:24-28</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%201:3&amp;version=nrsv">Heb. 1:3</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%205:24&amp;version=nrsv">Jer. 5:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2014:15-17&amp;version=nrsv">Acts 14:15-17/a&gt;;&nbsp;</a><a href="https://www.biblegateway.com/passage/?search=John%209:3&amp;version=nrsv">John 9:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2022:2&amp;version=nrsv">Prov. 22:2</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2016:33&amp;version=nrsv">Prov. 16:33</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2010:29&amp;version=nrsv">Matt. 10:29</a></p>
+Q &amp; A 28
+<p>Q.&nbsp;How does the knowledge<br>
+of God’s creation and providence help us?</p>
+<p>A.&nbsp;We can be patient when things go against us,1</p>
+<p>thankful when things go well,2<br>
+and for the future we can have<br>
+good confidence in our faithful God and Father<br>
+that nothing in creation will separate us from his love.3<br>
+For all creatures are so completely in God’s hand</p>
+<p>that without his will<br>
+they can neither move nor be moved.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Job%201:21-22&amp;version=nrsv">Job 1:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%201:3&amp;version=nrsv">James 1:3</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%208:10&amp;version=nrsv">Deut. 8:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Thess.%205:18&amp;version=nrsv">1 Thess. 5:18</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2055:22&amp;version=nrsv">Ps. 55:22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:3-5&amp;version=nrsv">Rom. 5:3-5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:38-39&amp;version=nrsv">8:38-39</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Job%201:12&amp;version=nrsv">Job 1:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Job%202:6&amp;version=nrsv">2:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2021:1&amp;version=nrsv">Prov. 21:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2017:24-28&amp;version=nrsv">Acts 17:24-28</a></p>
+<h3>God the Son</h3>
+<h4>Lord’s Day 11</h4>
+Q &amp; A 29
+<p>Q.&nbsp;Why is the Son of God called “Jesus,”<br>
+meaning “savior”?</p>
+<p>A.&nbsp;Because he saves us from our sins,1</p>
+<p>and because salvation should not be sought<br>
+and cannot be found in anyone else.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%201:21&amp;version=nrsv">Matt. 1:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%207:25&amp;version=nrsv">Heb. 7:25</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2043:11&amp;version=nrsv">Isa. 43:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:5&amp;version=nrsv">John 15:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%204:11-12&amp;version=nrsv">Acts 4:11-12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%202:5&amp;version=nrsv">1 Tim. 2:5</a></p>
+Q &amp; A 30
+<p>Q.&nbsp;Do those who look for<br>
+their salvation in saints,<br>
+in themselves, or elsewhere<br>
+really believe in the only savior Jesus?</p>
+<p>A.&nbsp;No.<br>
+Although they boast of being his,<br>
+by their actions they deny<br>
+the only savior, Jesus.1</p>
+<p>Either Jesus is not a perfect savior,<br>
+or those who in true faith accept this savior<br>
+have in him all they need for their salvation.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%201:12-13&amp;version=nrsv">1 Cor. 1:12-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%205:4&amp;version=nrsv">Gal. 5:4</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%201:19-20&amp;version=nrsv">Col. 1:19-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%202:10&amp;version=nrsv">2:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:7&amp;version=nrsv">1 John 1:7</a></p>
+<h4>Lord’s Day 12</h4>
+Q &amp; A 31
+<p>Q.&nbsp;Why is he called “Christ,”<br>
+meaning “anointed”?</p>
+<p>A.&nbsp;Because he has been ordained by God the Father<br>
+and has been anointed with the Holy Spirit1</p>
+<p>to be<br>
+our chief prophet and teacher2</p>
+<p>who fully reveals to us<br>
+the secret counsel and will of God concerning our deliverance;3</p>
+<p>our only high priest4</p>
+<p>who has delivered us by the one sacrifice of his body,5<br>
+and who continually pleads our cause with the Father;6&nbsp;<br>
+and our eternal king7</p>
+<p>who governs us by his Word and Spirit,<br>
+and who guards us and keeps us<br>
+in the freedom he has won for us.8</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%203:21-22&amp;version=nrsv">Luke 3:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%204:14-19&amp;version=nrsv">4:14-19</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Isa.%2061:1&amp;version=nrsv">Isa. 61:1</a>);&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%201:9&amp;version=nrsv">Heb. 1:9</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Ps.%2045:7&amp;version=nrsv">Ps. 45:7</a>)<br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%203:22&amp;version=nrsv">Acts 3:22</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Deut.%2018:15&amp;version=nrsv">Deut. 18:15</a>)<br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:18&amp;version=nrsv">John 1:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:15&amp;version=nrsv">15:15</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%207:17&amp;version=nrsv">Heb. 7:17</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Ps.%20110:4&amp;version=nrsv">Ps. 110:4</a>)<br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%209:12&amp;version=nrsv">Heb. 9:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:11-14&amp;version=nrsv">10:11-14</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:34&amp;version=nrsv">Rom. 8:34</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%209:24&amp;version=nrsv">Heb. 9:24</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2021:5&amp;version=nrsv">Matt. 21:5</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Zech.%209:9&amp;version=nrsv">Zech. 9:9</a>)<br>
+8&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:18-20&amp;version=nrsv">Matt. 28:18-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2010:28&amp;version=nrsv">John 10:28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%2012:10-11&amp;version=nrsv">Rev. 12:10-11</a></p>
+Q &amp; A 32
+<p>Q.&nbsp;But why are you called a Christian?</p>
+<p>A.&nbsp;Because by faith I am a member of Christ1<br>
+and so I share in his anointing.2</p>
+<p>I am anointed<br>
+to confess his name,3<br>
+to present myself to him as a living sacrifice of thanks,4<br>
+to strive with a free conscience against sin and the devil</p>
+<p>in this life,5</p>
+<p>and afterward to reign with Christ</p>
+<p>over all creation<br>
+for eternity.6</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2012:12-27&amp;version=nrsv">1 Cor. 12:12-27</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:17&amp;version=nrsv">Acts 2:17</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Joel%202:28&amp;version=nrsv">Joel 2:28</a>);&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:27&amp;version=nrsv">1 John 2:27</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2010:32&amp;version=nrsv">Matt. 10:32</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:9-10&amp;version=nrsv">Rom. 10:9-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2013:15&amp;version=nrsv">Heb. 13:15</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:1&amp;version=nrsv">Rom. 12:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%202:5,%209&amp;version=nrsv">1 Pet. 2:5, 9</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%205:16-17&amp;version=nrsv">Gal. 5:16-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%206:11&amp;version=nrsv">Eph. 6:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%201:18-19&amp;version=nrsv">1 Tim. 1:18-19</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2025:34&amp;version=nrsv">Matt. 25:34</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Tim.%202:12&amp;version=nrsv">2 Tim. 2:12</a></p>
+<h4>Lord’s Day 13</h4>
+Q &amp; A 33
+<p>Q.&nbsp;Why is he called God’s “only begotten Son”<br>
+when we also are God’s children?</p>
+<p>A.&nbsp;Because Christ alone is the eternal, natural Son of God.1<br>
+We, however, are adopted children of God—</p>
+<p>adopted by grace through Christ.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:1-3,%2014,%2018&amp;version=nrsv">John 1:1-3, 14, 18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%201&amp;version=nrsv">Heb. 1</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:12&amp;version=nrsv">John 1:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:14-17&amp;version=nrsv">Rom. 8:14-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%201:5-6&amp;version=nrsv">Eph. 1:5-6</a></p>
+Q &amp; A 34
+<p>Q.&nbsp;Why do you call him “our Lord”?</p>
+<p>A.&nbsp;Because—</p>
+<p>not with gold or silver,<br>
+but with his precious blood—1</p>
+<p>he has set us free</p>
+<p>from sin and from the tyranny of the devil,2</p>
+<p>and has bought us,</p>
+<p>body and soul,</p>
+<p>to be his very own.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:18-19&amp;version=nrsv">1 Pet. 1:18-19</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%201:13-14&amp;version=nrsv">Col. 1:13-14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:14-15&amp;version=nrsv">Heb. 2:14-15</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:20&amp;version=nrsv">1 Cor. 6:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%202:5-6&amp;version=nrsv">1 Tim. 2:5-6</a></p>
+<h4>Lord’s Day 14</h4>
+Q &amp; A 35
+<p>Q.&nbsp;What does it mean that he<br>
+“was conceived by the Holy Spirit<br>
+and born of the virgin Mary”?</p>
+<p>A.&nbsp;That the eternal Son of God,</p>
+<p>who is and remains<br>
+true and eternal God,1</p>
+<p>took to himself,</p>
+<p>through the working of the Holy Spirit,2<br>
+from the flesh and blood of the virgin Mary,3</p>
+<p>a truly human nature</p>
+<p>so that he might also become David’s true descendant,4<br>
+like his brothers and sisters in every way5</p>
+<p>except for sin.6</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:1&amp;version=nrsv">John 1:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2010:30-36&amp;version=nrsv">10:30-36</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2013:33&amp;version=nrsv">Acts 13:33</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Ps.%202:7&amp;version=nrsv">Ps. 2:7</a>);&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%201:15-17&amp;version=nrsv">Col. 1:15-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%205:20&amp;version=nrsv">1 John 5:20</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%201:35&amp;version=nrsv">Luke 1:35</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%201:18-23&amp;version=nrsv">Matt. 1:18-23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:14&amp;version=nrsv">John 1:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%204:4&amp;version=nrsv">Gal. 4:4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:14&amp;version=nrsv">Heb. 2:14</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Sam.%207:12-16&amp;version=nrsv">2 Sam. 7:12-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20132:11&amp;version=nrsv">Ps. 132:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%201:1&amp;version=nrsv">Matt. 1:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:3&amp;version=nrsv">Rom. 1:3</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%202:7&amp;version=nrsv">Phil. 2:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:17&amp;version=nrsv">Heb. 2:17</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%204:15&amp;version=nrsv">Heb. 4:15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%207:26-27&amp;version=nrsv">7:26-27</a></p>
+Q &amp; A 36
+<p>Q.&nbsp;How does the holy conception and birth of Christ<br>
+benefit you?</p>
+<p>A.&nbsp;He is our mediator1<br>
+and, in God’s sight,<br>
+he covers with his innocence and perfect holiness<br>
+my sinfulness in which I was conceived.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%202:5-6&amp;version=nrsv">1 Tim. 2:5-6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%209:13-15&amp;version=nrsv">Heb. 9:13-15</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:3-4&amp;version=nrsv">Rom. 8:3-4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:21&amp;version=nrsv">2 Cor. 5:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%204:4-5&amp;version=nrsv">Gal. 4:4-5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:18-19&amp;version=nrsv">1 Pet. 1:18-19</a></p>
+<h4>Lord’s Day 15</h4>
+Q &amp; A 37
+<p>Q.&nbsp;What do you understand<br>
+by the word “suffered”?</p>
+<p>A.&nbsp;That during his whole life on earth,<br>
+but especially at the end,<br>
+Christ sustained</p>
+<p>in body and soul<br>
+the wrath of God against the sin of the whole human race.1</p>
+<p>This he did in order that,</p>
+<p>by his suffering as the only atoning sacrifice,2<br>
+he might deliver us, body and soul,</p>
+<p>from eternal condemnation,3</p>
+<p>and gain for us</p>
+<p>God’s grace,<br>
+righteousness,<br>
+and eternal life.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053&amp;version=nrsv">Isa. 53</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%202:24&amp;version=nrsv">1 Pet. 2:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%203:18&amp;version=nrsv">3:18</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:25&amp;version=nrsv">Rom. 3:25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:14&amp;version=nrsv">Heb. 10:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:2&amp;version=nrsv">1 John 2:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%204:10&amp;version=nrsv">4:10</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:1-4&amp;version=nrsv">Rom. 8:1-4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:13&amp;version=nrsv">Gal. 3:13</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:16&amp;version=nrsv">John 3:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:24-26&amp;version=nrsv">Rom. 3:24-26</a></p>
+Q &amp; A 38
+<p>Q.&nbsp;Why did he suffer<br>
+“under Pontius Pilate” as judge?</p>
+<p>A.&nbsp;So that he,</p>
+<p>though innocent,</p>
+<p>might be condemned by an earthly judge,1<br>
+and so free us from the severe judgment of God</p>
+<p>that was to fall on us.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2023:13-24&amp;version=nrsv">Luke 23:13-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2019:4,%2012-16&amp;version=nrsv">John 19:4, 12-16</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053:4-5&amp;version=nrsv">Isa. 53:4-5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:21&amp;version=nrsv">2 Cor. 5:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:13&amp;version=nrsv">Gal. 3:13</a></p>
+Q &amp; A 39
+<p>Q.&nbsp;Is it significant that he was “crucified”<br>
+instead of dying some other way?</p>
+<p>A.&nbsp;Yes.<br>
+By this I am convinced<br>
+that he shouldered the curse<br>
+which lay on me,<br>
+since death by crucifixion was cursed by God.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:10-13&amp;version=nrsv">Gal. 3:10-13</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Deut.%2021:23&amp;version=nrsv">Deut. 21:23</a>)</p>
+<h4>Lord’s Day 16</h4>
+Q &amp; A 40
+<p>Q.&nbsp;Why did Christ have to suffer death?</p>
+<p>A.&nbsp;Because God’s justice and truth require it:&nbsp;1<br>
+nothing else could pay for our sins<br>
+except the death of the Son of God.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%202:17&amp;version=nrsv">Gen. 2:17</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:3-4&amp;version=nrsv">Rom. 8:3-4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%202:8&amp;version=nrsv">Phil. 2:8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%202:9&amp;version=nrsv">Heb. 2:9</a></p>
+Q &amp; A 41
+<p>Q.&nbsp;Why was he “buried”?</p>
+<p>A.&nbsp;His burial testifies<br>
+that he really died.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053:9&amp;version=nrsv">Isa. 53:9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2019:38-42&amp;version=nrsv">John 19:38-42</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2013:29&amp;version=nrsv">Acts 13:29</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:3-4&amp;version=nrsv">1 Cor. 15:3-4</a></p>
+Q &amp; A 42
+<p>Q.&nbsp;Since Christ has died for us,<br>
+why do we still have to die?</p>
+<p>A.&nbsp;Our death does not pay the debt of our sins.1<br>
+Rather, it puts an end to our sinning<br>
+and is our entrance into eternal life.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2049:7&amp;version=nrsv">Ps. 49:7</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%205:24&amp;version=nrsv">John 5:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%201:21-23&amp;version=nrsv">Phil. 1:21-23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Thess.%205:9-10&amp;version=nrsv">1 Thess. 5:9-10</a></p>
+Q &amp; A 43
+<p>Q.&nbsp;What further benefit do we receive<br>
+from Christ’s sacrifice and death on the cross?</p>
+<p>A.&nbsp;By Christ’s power<br>
+our old selves are crucified, put to death, and buried with him,1<br>
+so that the evil desires of the flesh</p>
+<p>may no longer rule us,2</p>
+<p>but that instead we may offer ourselves</p>
+<p>as a sacrifice of gratitude to him.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:5-11&amp;version=nrsv">Rom. 6:5-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%202:11-12&amp;version=nrsv">Col. 2:11-12</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:12-14&amp;version=nrsv">Rom. 6:12-14</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:1&amp;version=nrsv">Rom. 12:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:1-2&amp;version=nrsv">Eph. 5:1-2</a></p>
+Q &amp; A 44
+<p>Q.&nbsp;Why does the creed add,<br>
+“He descended to hell”?</p>
+<p>A.&nbsp;To assure me during attacks of deepest dread and temptation<br>
+that Christ my Lord,</p>
+<p>by suffering unspeakable anguish, pain, and terror of soul,</p>
+<p>on the cross but also earlier,</p>
+<p>has delivered me from hellish anguish and torment.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2053&amp;version=nrsv">Isa. 53</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2026:36-46&amp;version=nrsv">Matt. 26:36-46</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2027:45-46&amp;version=nrsv">27:45-46</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2022:44&amp;version=nrsv">Luke 22:44</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%205:7-10&amp;version=nrsv">Heb. 5:7-10</a></p>
+<h4>Lord’s Day 17</h4>
+Q &amp; A 45
+<p>Q.&nbsp;How does Christ’s resurrection<br>
+benefit us?</p>
+<p>A.&nbsp;First, by his resurrection he has overcome death,</p>
+<p>so that he might make us share in the righteousness<br>
+he obtained for us by his death.1</p>
+<p>Second, by his power we too</p>
+<p>are already raised to a new life.2</p>
+<p>Third, Christ’s resurrection</p>
+<p>is a sure pledge to us of our blessed resurrection.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%204:25&amp;version=nrsv">Rom. 4:25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:16-20&amp;version=nrsv">1 Cor. 15:16-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:3-5&amp;version=nrsv">1 Pet. 1:3-5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:5-11&amp;version=nrsv">Rom. 6:5-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:4-6&amp;version=nrsv">Eph. 2:4-6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:1-4&amp;version=nrsv">Col. 3:1-4</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:11&amp;version=nrsv">Rom. 8:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:12-23&amp;version=nrsv">1 Cor. 15:12-23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%203:20-21&amp;version=nrsv">Phil. 3:20-21</a></p>
+<h4>Lord’s Day 18</h4>
+Q &amp; A 46
+<p>Q.&nbsp;What do you mean by saying,<br>
+“He ascended to heaven”?</p>
+<p>A.&nbsp;That Christ,</p>
+<p>while his disciples watched,</p>
+<p>was taken up from the earth into heaven1<br>
+and remains there on our behalf2<br>
+until he comes again</p>
+<p>to judge the living and the dead.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2024:50-51&amp;version=nrsv">Luke 24:50-51</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%201:9-11&amp;version=nrsv">Acts 1:9-11</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:34&amp;version=nrsv">Rom. 8:34</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:8-10&amp;version=nrsv">Eph. 4:8-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%207:23-25&amp;version=nrsv">Heb. 7:23-25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%209:24&amp;version=nrsv">9:24</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%201:11&amp;version=nrsv">Acts 1:11</a></p>
+Q &amp; A 47
+<p>Q.&nbsp;But isn’t Christ with us<br>
+until the end of the world<br>
+as he promised us?1</p>
+<p>A.&nbsp;Christ is true human and true God.</p>
+<p>In his human nature Christ is not now on earth;2<br>
+but in his divinity, majesty, grace, and Spirit<br>
+he is never absent from us.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:20&amp;version=nrsv">Matt. 28:20</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%201:9-11&amp;version=nrsv">Acts 1:9-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%203:19-21&amp;version=nrsv">3:19-21</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:18-20&amp;version=nrsv">Matt. 28:18-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2014:16-19&amp;version=nrsv">John 14:16-19</a></p>
+Q &amp; A 48
+<p>Q.&nbsp;If his humanity is not present<br>
+wherever his divinity is,<br>
+then aren’t the two natures of Christ<br>
+separated from each other?</p>
+<p>A.&nbsp;Certainly not.<br>
+Since divinity</p>
+<p>is not limited<br>
+and is present everywhere,1</p>
+<p>it is evident that</p>
+<p>Christ’s divinity is surely beyond the bounds of</p>
+<p>the humanity that has been taken on,</p>
+<p>but at the same time his divinity is in<br>
+and remains personally united to</p>
+<p>his humanity.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2023:23-24&amp;version=nrsv">Jer. 23:23-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%207:48-49&amp;version=nrsv">Acts 7:48-49</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Isa.%2066:1&amp;version=nrsv">Isa. 66:1</a>)<br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%201:14&amp;version=nrsv">John 1:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:13&amp;version=nrsv">3:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%202:9&amp;version=nrsv">Col. 2:9</a></p>
+Q &amp; A 49
+<p>Q.&nbsp;How does Christ’s ascension to heaven<br>
+benefit us?</p>
+<p>A.&nbsp;First, he is our advocate</p>
+<p>in heaven<br>
+in the presence of his Father.1</p>
+<p>Second, we have our own flesh in heaven</p>
+<p>as a sure pledge that Christ our head<br>
+will also take us, his members,<br>
+up to himself.2</p>
+<p>Third, he sends his Spirit to us on earth</p>
+<p>as a corresponding pledge.3<br>
+By the Spirit’s power</p>
+<p>we seek not earthly things<br>
+but the things above, where Christ is,</p>
+<p>sitting at God’s right hand.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:34&amp;version=nrsv">Rom. 8:34</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:1&amp;version=nrsv">1 John 2:1</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2014:2&amp;version=nrsv">John 14:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2017:24&amp;version=nrsv">17:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:4-6&amp;version=nrsv">Eph. 2:4-6</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2014:16&amp;version=nrsv">John 14:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%201:21-22&amp;version=nrsv">2 Cor. 1:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:5&amp;version=nrsv">5:5</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:1-4&amp;version=nrsv">Col. 3:1-4</a></p>
+<h4>Lord’s Day 19</h4>
+Q &amp; A 50
+<p>Q.&nbsp;Why the next words:<br>
+“and is seated at the right hand of God”?</p>
+<p>A.&nbsp;Because Christ ascended to heaven<br>
+to show there that he is head of his church,1</p>
+<p>the one through whom the Father rules all things.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%201:20-23&amp;version=nrsv">Eph. 1:20-23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%201:18&amp;version=nrsv">Col. 1:18</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:18&amp;version=nrsv">Matt. 28:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%205:22-23&amp;version=nrsv">John 5:22-23</a></p>
+Q &amp; A 51
+<p>Q.&nbsp;How does this glory of Christ our head<br>
+benefit us?</p>
+<p>A.&nbsp;First, through his Holy Spirit</p>
+<p>he pours out gifts from heaven</p>
+<p>upon us his members.1</p>
+<p>Second, by his power</p>
+<p>he defends us and keeps us safe</p>
+<p>from all enemies.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:33&amp;version=nrsv">Acts 2:33</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:7-12&amp;version=nrsv">Eph. 4:7-12</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20110:1-2&amp;version=nrsv">Ps. 110:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2010:27-30&amp;version=nrsv">John 10:27-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%2019:11-16&amp;version=nrsv">Rev. 19:11-16</a></p>
+Q &amp; A 52
+<p>Q.&nbsp;How does Christ’s return<br>
+“to judge the living and the dead”<br>
+comfort you?</p>
+<p>A.&nbsp;In all distress and persecution,<br>
+with uplifted head,<br>
+I confidently await the very judge</p>
+<p>who has already offered himself to the judgment of God<br>
+in my place and removed the whole curse from me.1</p>
+<p>Christ will cast all his enemies and mine</p>
+<p>into everlasting condemnation,</p>
+<p>but will take me and all his chosen ones</p>
+<p>to himself<br>
+into the joy and glory of heaven.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2021:28&amp;version=nrsv">Luke 21:28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:22-25&amp;version=nrsv">Rom. 8:22-25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%203:20-21&amp;version=nrsv">Phil. 3:20-21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Tit.%202:13-14&amp;version=nrsv">Tit. 2:13-14</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2025:31-46&amp;version=nrsv">Matt. 25:31-46</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Thess.%201:6-10&amp;version=nrsv">2 Thess. 1:6-10</a></p>
+<h3>God the Holy Spirit</h3>
+<h4>Lord’s Day 20</h4>
+Q &amp; A 53
+<p>Q.&nbsp;What do you believe<br>
+concerning “the Holy Spirit”?</p>
+<p>A.&nbsp;First, that the Spirit, with the Father and the Son,</p>
+<p>is eternal God.1</p>
+<p>Second, that the Spirit is given also to me,2</p>
+<p>so that, through true faith,<br>
+he makes me share in Christ and all his benefits,3<br>
+comforts me,4<br>
+and will remain with me forever.5</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%201:1-2&amp;version=nrsv">Gen. 1:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:19&amp;version=nrsv">Matt. 28:19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%205:3-4&amp;version=nrsv">Acts 5:3-4</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:19&amp;version=nrsv">1 Cor. 6:19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%201:21-22&amp;version=nrsv">2 Cor. 1:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%204:6&amp;version=nrsv">Gal. 4:6</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:14&amp;version=nrsv">Gal. 3:14</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:26&amp;version=nrsv">John 15:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%209:31&amp;version=nrsv">Acts 9:31</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2014:16-17&amp;version=nrsv">John 14:16-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%204:14&amp;version=nrsv">1 Pet. 4:14</a></p>
+<h4>Lord’s Day 21</h4>
+Q &amp; A 54
+<p>Q.&nbsp;What do you believe<br>
+concerning “the holy catholic church”?</p>
+<p>A.&nbsp;I believe that the Son of God</p>
+<p>through his Spirit and Word,1<br>
+out of the entire human race,2<br>
+from the beginning of the world to its end,3</p>
+<p>gathers, protects, and preserves for himself</p>
+<p>a community chosen for eternal life4</p>
+<p>and united in true faith.5</p>
+<p>And of this community I am6&nbsp;and always will be7</p>
+<p>a living member.</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2010:14-16&amp;version=nrsv">John 10:14-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2020:28&amp;version=nrsv">Acts 20:28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:14-17&amp;version=nrsv">Rom. 10:14-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%201:18&amp;version=nrsv">Col. 1:18</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2026:3b-4&amp;version=nrsv">Gen. 26:3b-4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%205:9&amp;version=nrsv">Rev. 5:9</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2059:21&amp;version=nrsv">Isa. 59:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:26&amp;version=nrsv">1 Cor. 11:26</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2016:18&amp;version=nrsv">Matt. 16:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2010:28-30&amp;version=nrsv">John 10:28-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:28-30&amp;version=nrsv">Rom. 8:28-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%201:3-14&amp;version=nrsv">Eph. 1:3-14</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:42-47&amp;version=nrsv">Acts 2:42-47</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:1-6&amp;version=nrsv">Eph. 4:1-6</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:14,%2019-21&amp;version=nrsv">1 John 3:14, 19-21</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2010:27-28&amp;version=nrsv">John 10:27-28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%201:4-9&amp;version=nrsv">1 Cor. 1:4-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:3-5&amp;version=nrsv">1 Pet. 1:3-5</a></p>
+Q &amp; A 55
+<p>Q.&nbsp;What do you understand by<br>
+“the communion of saints”?</p>
+<p>A.&nbsp;First, that believers one and all,<br>
+as members of this community,<br>
+share in Christ<br>
+and in all his treasures and gifts.1</p>
+<p>Second, that each member<br>
+should consider it a duty<br>
+to use these gifts</p>
+<p>&nbsp;</p>
+<p>readily and joyfully<br>
+for the service and enrichment</p>
+<p>of the other members.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:32&amp;version=nrsv">Rom. 8:32</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:17&amp;version=nrsv">1 Cor. 6:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2012:4-7,%2012-13&amp;version=nrsv">12:4-7, 12-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:3&amp;version=nrsv">1 John 1:3</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:4-8&amp;version=nrsv">Rom. 12:4-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2012:20-27&amp;version=nrsv">1 Cor. 12:20-27</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2013:1-7&amp;version=nrsv">13:1-7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%202:4-8&amp;version=nrsv">Phil. 2:4-8</a></p>
+Q &amp; A 56
+<p>Q.&nbsp;What do you believe<br>
+concerning “the forgiveness of sins”?</p>
+<p>A.&nbsp;I believe that God,</p>
+<p>because of Christ’s satisfaction,</p>
+<p>will no longer remember</p>
+<p>any of my sins1<br>
+or my sinful nature</p>
+<p>which I need to struggle against all my life.2</p>
+<p>Rather, by grace</p>
+<p>God grants me the righteousness of Christ<br>
+to free me forever from judgment.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20103:3-4,%2010,%2012&amp;version=nrsv">Ps. 103:3-4, 10, 12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Mic.%207:18-19&amp;version=nrsv">Mic. 7:18-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:18-21&amp;version=nrsv">2 Cor. 5:18-21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:7&amp;version=nrsv">1 John 1:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:2&amp;version=nrsv">2:2</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:21-25&amp;version=nrsv">Rom. 7:21-25</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:17-18&amp;version=nrsv">John 3:17-18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:1-2&amp;version=nrsv">Rom. 8:1-2</a></p>
+<h4>Lord’s Day 22</h4>
+Q &amp; A 57
+<p>Q.&nbsp;How does “the resurrection of the body”<br>
+comfort you?</p>
+<p>A.&nbsp;Not only will my soul</p>
+<p>be taken immediately after this life<br>
+to Christ its head,1</p>
+<p>but also my very flesh will be</p>
+<p>raised by the power of Christ,<br>
+reunited with my soul,<br>
+and made like Christ’s glorious body.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2023:43&amp;version=nrsv">Luke 23:43</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%201:21-23&amp;version=nrsv">Phil. 1:21-23</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:20,%2042-46,%2054&amp;version=nrsv">1 Cor. 15:20, 42-46, 54</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%203:21&amp;version=nrsv">Phil. 3:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:2&amp;version=nrsv">1 John 3:2</a></p>
+Q &amp; A 58
+<p>Q.&nbsp;How does the article<br>
+concerning “life everlasting”<br>
+comfort you?</p>
+<p>A.&nbsp;Even as I already now</p>
+<p>experience in my heart<br>
+the beginning of eternal joy,1</p>
+<p>so after this life I will have</p>
+<p>perfect blessedness such as</p>
+<p>no eye has seen,<br>
+no ear has heard,<br>
+no human heart has ever imagined:</p>
+<p>a blessedness in which to praise God forever.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2014:17&amp;version=nrsv">Rom. 14:17</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2017:3&amp;version=nrsv">John 17:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%202:9&amp;version=nrsv">1 Cor. 2:9</a></p>
+<h4>Lord’s Day 23</h4>
+Q &amp; A 59
+<p>Q.&nbsp;What good does it do you, however,<br>
+to believe all this?</p>
+<p>A.&nbsp;In Christ I am righteous before God<br>
+and heir to life everlasting.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:36&amp;version=nrsv">John 3:36</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:17&amp;version=nrsv">Rom. 1:17</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Hab.%202:4&amp;version=nrsv">Hab. 2:4</a>);&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:1-2&amp;version=nrsv">Rom. 5:1-2</a></p>
+Q &amp; A 60
+<p>Q.&nbsp;How are you righteous before God?</p>
+<p>A.&nbsp;Only by true faith in Jesus Christ.1</p>
+<p>Even though my conscience accuses me</p>
+<p>of having grievously sinned against all God’s commandments,<br>
+of never having kept any of them,2<br>
+and of still being inclined toward all evil,3</p>
+<p>nevertheless,</p>
+<p>without any merit of my own,4<br>
+out of sheer grace,5</p>
+<p>God grants and credits to me<br>
+the perfect satisfaction, righteousness, and holiness of Christ,6</p>
+<p>as if I had never sinned nor been a sinner,<br>
+and as if I had been as perfectly obedient</p>
+<p>as Christ was obedient for me.7</p>
+<p>All I need to do<br>
+is accept this gift with a believing heart.8</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:21-28&amp;version=nrsv">Rom. 3:21-28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%202:16&amp;version=nrsv">Gal. 2:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:8-9&amp;version=nrsv">Eph. 2:8-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil%203:8-11&amp;version=nrsv">Phil 3:8-11</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:9-10&amp;version=nrsv">Rom. 3:9-10</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:23&amp;version=nrsv">Rom. 7:23</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Tit.%203:4-5&amp;version=nrsv">Tit. 3:4-5</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:24&amp;version=nrsv">Rom. 3:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:8&amp;version=nrsv">Eph. 2:8</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%204:3-5&amp;version=nrsv">Rom. 4:3-5</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Gen.%2015:6&amp;version=nrsv">Gen. 15:6</a>);&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:17-19&amp;version=nrsv">2 Cor. 5:17-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:1-2&amp;version=nrsv">1 John 2:1-2</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%204:24-25&amp;version=nrsv">Rom. 4:24-25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:21&amp;version=nrsv">2 Cor. 5:21</a><br>
+8&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:18&amp;version=nrsv">John 3:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2016:30-31&amp;version=nrsv">Acts 16:30-31</a></p>
+Q &amp; A 61
+<p>Q.&nbsp;Why do you say that<br>
+through faith alone<br>
+you are righteous?</p>
+<p>A.&nbsp;Not because I please God</p>
+<p>by the worthiness of my faith.</p>
+<p>It is because only Christ’s satisfaction, righteousness, and holiness</p>
+<p>make me righteous before God,1</p>
+<p>and because I can accept this righteousness and make it mine</p>
+<p>in no other way<br>
+than through faith.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%201:30-31&amp;version=nrsv">1 Cor. 1:30-31</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:10&amp;version=nrsv">Rom. 10:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%205:10-12&amp;version=nrsv">1 John 5:10-12</a></p>
+<h4>Lord’s Day 24</h4>
+Q &amp; A 62
+<p>Q.&nbsp;Why can’t our good works<br>
+be our righteousness before God,<br>
+or at least a part of our righteousness?</p>
+<p>A.&nbsp;Because the righteousness<br>
+which can pass God’s judgment</p>
+<p>must be entirely perfect<br>
+and must in every way measure up to the divine law.1</p>
+<p>But even our best works in this life</p>
+<p>are imperfect<br>
+and stained with sin.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:20&amp;version=nrsv">Rom. 3:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:10&amp;version=nrsv">Gal. 3:10</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Deut.%2027:26&amp;version=nrsv">Deut. 27:26</a>)<br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2064:6&amp;version=nrsv">Isa. 64:6</a></p>
+Q &amp; A 63
+<p>Q.&nbsp;How can our good works<br>
+be said to merit nothing<br>
+when God promises to reward them<br>
+in this life and the next?1</p>
+<p>A.&nbsp;This reward is not earned;<br>
+it is a gift of grace.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:12&amp;version=nrsv">Matt. 5:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2011:6&amp;version=nrsv">Heb. 11:6</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2017:10&amp;version=nrsv">Luke 17:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Tim.%204:7-8&amp;version=nrsv">2 Tim. 4:7-8</a></p>
+Q &amp; A 64
+<p>Q.&nbsp;But doesn’t this teaching<br>
+make people indifferent and wicked?</p>
+<p>A.&nbsp;No.<br>
+It is impossible</p>
+<p>for those grafted into Christ through true faith</p>
+<p>not to produce fruits of gratitude.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%206:43-45&amp;version=nrsv">Luke 6:43-45</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:5&amp;version=nrsv">John 15:5</a></p>
+<h3>The Holy Sacraments</h3>
+<h4>Lord’s Day 25</h4>
+Q &amp; A 65
+<p>Q.&nbsp;It is through faith alone<br>
+that we share in Christ and all his benefits:<br>
+where then does that faith come from?</p>
+<p>A.&nbsp;The Holy Spirit produces it in our hearts1</p>
+<p>by the preaching of the holy gospel,2</p>
+<p>and confirms it</p>
+<p>by the use of the holy sacraments.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:5&amp;version=nrsv">John 3:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%202:10-14&amp;version=nrsv">1 Cor. 2:10-14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:8&amp;version=nrsv">Eph. 2:8</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:17&amp;version=nrsv">Rom. 10:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:23-25&amp;version=nrsv">1 Pet. 1:23-25</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:19-20&amp;version=nrsv">Matt. 28:19-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:16&amp;version=nrsv">1 Cor. 10:16</a></p>
+Q &amp; A 66
+<p>Q.&nbsp;What are sacraments?</p>
+<p>A.&nbsp;Sacraments are visible, holy signs and seals.<br>
+They were instituted by God so that</p>
+<p>by our use of them</p>
+<p>he might make us understand more clearly</p>
+<p>the promise of the gospel,</p>
+<p>and seal that promise.1</p>
+<p>And this is God’s gospel promise:</p>
+<p>to grant us forgiveness of sins and eternal life</p>
+<p>by grace<br>
+because of Christ’s one sacrifice<br>
+accomplished on the cross.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2017:11&amp;version=nrsv">Gen. 17:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%2030:6&amp;version=nrsv">Deut. 30:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%204:11&amp;version=nrsv">Rom. 4:11</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2026:27-28&amp;version=nrsv">Matt. 26:27-28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:38&amp;version=nrsv">Acts 2:38</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:10&amp;version=nrsv">Heb. 10:10</a></p>
+Q &amp; A 67
+<p>Q.&nbsp;Are both the word and the sacraments then<br>
+intended to focus our faith<br>
+on the sacrifice of Jesus Christ on the cross<br>
+as the only ground of our salvation?</p>
+<p>A.&nbsp;Yes!<br>
+In the gospel the Holy Spirit teaches us<br>
+and by the holy sacraments confirms</p>
+<p>that our entire salvation<br>
+rests on Christ’s one sacrifice for us on the cross.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:3&amp;version=nrsv">Rom. 6:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:26&amp;version=nrsv">1 Cor. 11:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:27&amp;version=nrsv">Gal. 3:27</a></p>
+Q &amp; A 68
+<p>Q.&nbsp;How many sacraments<br>
+did Christ institute in the New Testament?</p>
+<p>A.&nbsp;Two: holy baptism and the holy supper.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:19-20&amp;version=nrsv">Matt. 28:19-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:23-26&amp;version=nrsv">1 Cor. 11:23-26</a></p>
+<h3>Holy Baptism</h3>
+<h4>Lord’s Day 26</h4>
+Q &amp; A 69
+<p>Q.&nbsp;How does holy baptism<br>
+remind and assure you<br>
+that Christ’s one sacrifice on the cross<br>
+benefits you personally?</p>
+<p>A.&nbsp;In this way:<br>
+Christ instituted this outward washing1<br>
+and with it promised that,</p>
+<p>as surely as water washes away the dirt from the body,<br>
+so certainly his blood and his Spirit<br>
+wash away my soul’s impurity,</p>
+<p>that is, all my sins.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:38&amp;version=nrsv">Acts 2:38</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%203:11&amp;version=nrsv">Matt. 3:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:3-10&amp;version=nrsv">Rom. 6:3-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%203:21&amp;version=nrsv">1 Pet. 3:21</a></p>
+Q &amp; A 70
+<p>Q.&nbsp;What does it mean<br>
+to be washed with Christ’s blood and Spirit?</p>
+<p>A.&nbsp;To be washed with Christ’s blood means</p>
+<p>that God, by grace, has forgiven our sins</p>
+<p>because of Christ’s blood<br>
+poured out for us in his sacrifice on the cross.1</p>
+<p>To be washed with Christ’s Spirit means</p>
+<p>that the Holy Spirit has renewed<br>
+and sanctified us to be members of Christ,</p>
+<p>so that more and more</p>
+<p>we become dead to sin<br>
+and live holy and blameless lives.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Zech.%2013:1&amp;version=nrsv">Zech. 13:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%201:7-8&amp;version=nrsv">Eph. 1:7-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2012:24&amp;version=nrsv">Heb. 12:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:2&amp;version=nrsv">1 Pet. 1:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%201:5&amp;version=nrsv">Rev. 1:5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ezek.%2036:25-27&amp;version=nrsv">Ezek. 36:25-27</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:5-8&amp;version=nrsv">John 3:5-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:4&amp;version=nrsv">Rom. 6:4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:11&amp;version=nrsv">1 Cor. 6:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%202:11-12&amp;version=nrsv">Col. 2:11-12</a></p>
+Q &amp; A 71
+<p>Q.&nbsp;Where does Christ promise<br>
+that we are washed with his blood and Spirit<br>
+as surely as we are washed<br>
+with the water of baptism?</p>
+<p>A.&nbsp;In the institution of baptism, where he says:</p>
+<p>“Go therefore and make disciples of all nations,<br>
+baptizing them in the name of the Father<br>
+and of the Son<br>
+and of the Holy Spirit.”1</p>
+<p>“The one who believes and is baptized will be saved;<br>
+but the one who does not believe will be condemned.”2</p>
+<p>This promise is repeated when Scripture calls baptism</p>
+<p>“the water of rebirth”3&nbsp;and<br>
+the washing away of sins.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2028:19&amp;version=nrsv">Matt. 28:19</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Mark%2016:16&amp;version=nrsv">Mark 16:16</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Tit.%203:5&amp;version=nrsv">Tit. 3:5</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2022:16&amp;version=nrsv">Acts 22:16</a></p>
+<h4>Lord’s Day 27</h4>
+Q &amp; A 72
+<p>Q.&nbsp;Does this outward washing with water<br>
+itself wash away sins?</p>
+<p>A.&nbsp;No, only Jesus Christ’s blood and the Holy Spirit<br>
+cleanse us from all sins.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%203:11&amp;version=nrsv">Matt. 3:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%203:21&amp;version=nrsv">1 Pet. 3:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:7&amp;version=nrsv">1 John 1:7</a></p>
+Q &amp; A 73
+<p>Q.&nbsp;Why then does the Holy Spirit call baptism<br>
+the water of rebirth and<br>
+the washing away of sins?</p>
+<p>A.&nbsp;God has good reason for these words.<br>
+To begin with, God wants to teach us that</p>
+<p>the blood and Spirit of Christ take away our sins<br>
+just as water removes dirt from the body.1</p>
+<p>But more important,<br>
+God wants to assure us, by this divine pledge and sign,</p>
+<p>that we are as truly washed of our sins spiritually<br>
+as our bodies are washed with water physically.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:11&amp;version=nrsv">1 Cor. 6:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%201:5&amp;version=nrsv">Rev. 1:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%207:14&amp;version=nrsv">7:14</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:38&amp;version=nrsv">Acts 2:38</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:3-4&amp;version=nrsv">Rom. 6:3-4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%203:27&amp;version=nrsv">Gal. 3:27</a></p>
+Q &amp; A 74
+<p>Q.&nbsp;Should infants also be baptized?</p>
+<p>A.&nbsp;Yes.<br>
+Infants as well as adults</p>
+<p>are included in God’s covenant and people,1</p>
+<p>and they, no less than adults, are promised</p>
+<p>deliverance from sin through Christ’s blood<br>
+and the Holy Spirit who produces faith.2</p>
+<p>Therefore, by baptism, the sign of the covenant,</p>
+<p>they too should be incorporated into the Christian church<br>
+and distinguished from the children</p>
+<p>of unbelievers.3</p>
+<p>This was done in the Old Testament by circumcision,4</p>
+<p>which was replaced in the New Testament by baptism.5</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2017:7&amp;version=nrsv">Gen. 17:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2019:14&amp;version=nrsv">Matt. 19:14</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2044:1-3&amp;version=nrsv">Isa. 44:1-3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:38-39&amp;version=nrsv">Acts 2:38-39</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2016:31&amp;version=nrsv">16:31</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2010:47&amp;version=nrsv">Acts 10:47</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%207:14&amp;version=nrsv">1 Cor. 7:14</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2017:9-14&amp;version=nrsv">Gen. 17:9-14</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%202:11-13&amp;version=nrsv">Col. 2:11-13</a></p>
+<h3>The Holy Supper of Jesus Christ</h3>
+<h4>Lord’s Day 28</h4>
+Q &amp; A 75
+<p>Q.&nbsp;How does the holy supper<br>
+remind and assure you<br>
+that you share in<br>
+Christ’s one sacrifice on the cross<br>
+and in all his benefits?</p>
+<p>A.&nbsp;In this way:<br>
+Christ has commanded me and all believers<br>
+to eat this broken bread and to drink this cup<br>
+in remembrance of him.<br>
+With this command come these promises:1</p>
+<p>First,</p>
+<p>as surely as I see with my eyes</p>
+<p>the bread of the Lord broken for me<br>
+and the cup shared with me,</p>
+<p>so surely</p>
+<p>his body was offered and broken for me<br>
+and his blood poured out for me</p>
+<p>on the cross.</p>
+<p>Second,</p>
+<p>as surely as</p>
+<p>I receive from the hand of the one who serves,<br>
+and taste with my mouth</p>
+<p>the bread and cup of the Lord,<br>
+given me as sure signs of Christ’s body and blood,</p>
+<p>so surely</p>
+<p>he nourishes and refreshes my soul for eternal life<br>
+with his crucified body and poured-out blood.</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2026:26-28&amp;version=nrsv">Matt. 26:26-28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Mark%2014:22-24&amp;version=nrsv">Mark 14:22-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2022:19-20&amp;version=nrsv">Luke 22:19-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:23-25&amp;version=nrsv">1 Cor. 11:23-25</a></p>
+Q &amp; A 76
+<p>Q.&nbsp;What does it mean<br>
+to eat the crucified body of Christ<br>
+and to drink his poured-out blood?</p>
+<p>A.&nbsp;It means</p>
+<p>to accept with a believing heart</p>
+<p>the entire suffering and death of Christ</p>
+<p>and thereby</p>
+<p>to receive forgiveness of sins and eternal life.1</p>
+<p>But it means more.</p>
+<p>Through the Holy Spirit, who lives both in Christ and in us,<br>
+we are united more and more to Christ’s blessed body.2</p>
+<p>And so, although he is in heaven3&nbsp;and we are on earth,<br>
+we are flesh of his flesh and bone of his bone.4<br>
+And we forever live on and are governed by one Spirit,</p>
+<p>as the members of our body are by one soul.5</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%206:35,%2040,%2050-54&amp;version=nrsv">John 6:35, 40, 50-54</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%206:55-56&amp;version=nrsv">John 6:55-56</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2012:13&amp;version=nrsv">1 Cor. 12:13</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%201:9-11&amp;version=nrsv">Acts 1:9-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:26&amp;version=nrsv">1 Cor. 11:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:1&amp;version=nrsv">Col. 3:1</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:15-17&amp;version=nrsv">1 Cor. 6:15-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:29-30&amp;version=nrsv">Eph. 5:29-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%204:13&amp;version=nrsv">1 John 4:13</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%206:56-58&amp;version=nrsv">John 6:56-58</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:1-6&amp;version=nrsv">15:1-6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:15-16&amp;version=nrsv">Eph. 4:15-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:24&amp;version=nrsv">1 John 3:24</a></p>
+Q &amp; A 77
+<p>Q.&nbsp;Where does Christ promise<br>
+to nourish and refresh believers<br>
+with his body and blood<br>
+as surely as<br>
+they eat this broken bread<br>
+and drink this cup?</p>
+<p>A.&nbsp;In the institution of the Lord’s Supper:</p>
+<p>“The Lord Jesus on the night when he was betrayed<br>
+took a loaf of bread, and when he had given thanks,<br>
+he broke it and said,</p>
+<p>‘This is my body that is [broken]* for you.<br>
+Do this in remembrance of me.’</p>
+<p>In the same way he took the cup also, after supper, saying,</p>
+<p>‘This cup is the new covenant in my blood,<br>
+Do this, as often as you drink it,<br>
+in remembrance of me.’</p>
+<p>For as often as you eat this bread and drink the cup,<br>
+you proclaim the Lord’s death<br>
+until he comes.”1</p>
+<p>This promise is repeated by Paul in these words:</p>
+<p>“The cup of blessing that we bless,</p>
+<p>is it not a sharing in the blood of Christ?</p>
+<p>The bread that we break,</p>
+<p>is it not a sharing in the body of Christ?</p>
+<p>Because there is one bread, we who are many are one body,<br>
+for we all partake of the one bread.”2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:23-26&amp;version=nrsv">1 Cor. 11:23-26</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:16-17&amp;version=nrsv">1 Cor. 10:16-17</a><br>
+*The word “broken” does not appear in the NRSV text, but it was present in the original German of the Heidelberg Catechism.</p>
+<h4>Lord’s Day 29</h4>
+Q &amp; A 78
+<p>Q.&nbsp;Do the bread and wine become<br>
+the real body and blood of Christ?</p>
+<p>A.&nbsp;No.<br>
+Just as the water of baptism</p>
+<p>is not changed into Christ’s blood<br>
+and does not itself wash away sins<br>
+but is simply a divine sign and assurance1&nbsp;of these things,</p>
+<p>so too the holy bread of the Lord’s Supper</p>
+<p>does not become the actual body of Christ,2<br>
+even though it is called the body of Christ3</p>
+<p>in keeping with the nature and language of sacraments.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:26&amp;version=nrsv">Eph. 5:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Tit.%203:5&amp;version=nrsv">Tit. 3:5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2026:26-29&amp;version=nrsv">Matt. 26:26-29</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:16-17&amp;version=nrsv">1 Cor. 10:16-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:26-28&amp;version=nrsv">11:26-28</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2017:10-11&amp;version=nrsv">Gen. 17:10-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2012:11,%2013&amp;version=nrsv">Ex. 12:11, 13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:1-4&amp;version=nrsv">1 Cor. 10:1-4</a></p>
+Q &amp; A 79
+<p>Q.&nbsp;Why then does Christ call<br>
+the bread his body<br>
+and the cup his blood,<br>
+or the new covenant in his blood,<br>
+and Paul use the words,<br>
+a sharing in Christ’s body and blood?</p>
+<p>A.&nbsp;Christ has good reason for these words.<br>
+He wants to teach us that</p>
+<p>just as bread and wine nourish the temporal life,<br>
+so too his crucified body and poured-out blood<br>
+are the true food and drink of our souls for eternal life.1</p>
+<p>But more important,<br>
+he wants to assure us, by this visible sign and pledge,</p>
+<p>that we, through the Holy Spirit’s work,</p>
+<p>share in his true body and blood<br>
+as surely as our mouths<br>
+receive these holy signs in his remembrance,2</p>
+<p>and that all of his suffering and obedience</p>
+<p>are as definitely ours<br>
+as if we personally<br>
+had suffered and made satisfaction for our sins.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%206:51,%2055&amp;version=nrsv">John 6:51, 55</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:16-17&amp;version=nrsv">1 Cor. 10:16-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:26&amp;version=nrsv">11:26</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:5-11&amp;version=nrsv">Rom. 6:5-11</a></p>
+<h4>Lord’s Day 30</h4>
+Q &amp; A 80*
+<p>Q.&nbsp;How does the Lord’s Supper<br>
+differ from the Roman Catholic Mass?</p>
+<p>A.&nbsp;The Lord’s Supper declares to us</p>
+<p>that all our sins are completely forgiven<br>
+through the one sacrifice of Jesus Christ,<br>
+which he himself accomplished on the cross once for all.1</p>
+<p>It also declares to us</p>
+<p>that the Holy Spirit grafts us into Christ,2<br>
+who with his true body<br>
+is now in heaven at the right hand of the Father3<br>
+where he wants us to worship him.4</p>
+<p>[But the Mass teaches</p>
+<p>that the living and the dead<br>
+do not have their sins forgiven<br>
+through the suffering of Christ<br>
+unless Christ is still offered for them daily by the priests.</p>
+<p>It also teaches</p>
+<p>that Christ is bodily present<br>
+under the form of bread and wine<br>
+where Christ is therefore to be worshiped.</p>
+<p>Thus the Mass is basically</p>
+<p>nothing but a denial<br>
+of the one sacrifice and suffering of Jesus Christ<br>
+and a condemnable idolatry.]**</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2019:30&amp;version=nrsv">John 19:30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%207:27&amp;version=nrsv">Heb. 7:27</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%209:12,%2025-26&amp;version=nrsv">9:12, 25-26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:10-18&amp;version=nrsv">10:10-18</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:17&amp;version=nrsv">1 Cor. 6:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:16-17&amp;version=nrsv">10:16-17</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%207:55-56&amp;version=nrsv">Acts 7:55-56</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%201:3&amp;version=nrsv">Heb. 1:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%208:1&amp;version=nrsv">8:1</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:20-21&amp;version=nrsv">Matt. 6:20-21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%204:21-24&amp;version=nrsv">John 4:21-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%203:20&amp;version=nrsv">Phil. 3:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:1-3&amp;version=nrsv">Col. 3:1-3</a></p>
+<p>*Q&amp;A 80 was altogether absent from the first edition of the catechism but was present in a shorter form in the second edition. The translation here given is of the expanded text of the third edition.</p>
+<p>**In response to a mandate from Synod 1998, the Christian Reformed Church’s Interchurch Relations Committee conducted a study of Q&amp;A 80 and the Roman Catholic Mass. Based on this study, Synod 2004 declared that “Q&amp;A 80 can no longer be held in its current form as part of our confession.” Synod 2006 directed that Q&amp;A 80 remain in the CRC’s text of the Heidelberg Catechism but that the last three paragraphs be placed in brackets to indicate that they do not accurately reflect the official teaching and practice of today’s Roman Catholic Church and are no longer confessionally binding on members of the CRC.</p>
+<p>The Reformed Church in America retains the original full text, choosing to recognize that the catechism was written within a historical context which may not accurately describe the Roman Catholic Church’s current stance.</p>
+Q &amp; A 81
+<p>Q.&nbsp;Who should come<br>
+to the Lord’s table?</p>
+<p>A.&nbsp;Those who are displeased with themselves</p>
+<p>because of their sins,</p>
+<p>but who nevertheless trust</p>
+<p>that their sins are pardoned<br>
+and that their remaining weakness is covered</p>
+<p>by the suffering and death of Christ,</p>
+<p>and who also desire more and more</p>
+<p>to strengthen their faith<br>
+and to lead a better life.</p>
+<p>Hypocrites and those who are unrepentant, however,<br>
+eat and drink judgment on themselves.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:19-22&amp;version=nrsv">1 Cor. 10:19-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:26-32&amp;version=nrsv">11:26-32</a></p>
+Q &amp; A 82
+<p>Q.&nbsp;Should those be admitted<br>
+to the Lord’s Supper<br>
+who show by what they profess and how they live<br>
+that they are unbelieving and ungodly?</p>
+<p>A.&nbsp;No, that would dishonor God’s covenant<br>
+and bring down God’s wrath upon the entire congregation.1<br>
+Therefore, according to the instruction of Christ</p>
+<p>and his apostles,</p>
+<p>the Christian church is duty-bound to exclude such people,</p>
+<p>by the official use of the keys of the kingdom,</p>
+<p>until they reform their lives.</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:17-32&amp;version=nrsv">1 Cor. 11:17-32</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2050:14-16&amp;version=nrsv">Ps. 50:14-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%201:11-17&amp;version=nrsv">Isa. 1:11-17</a></p>
+<h4>Lord’s Day 31</h4>
+Q &amp; A 83
+<p>Q.&nbsp;What are the keys of the kingdom?</p>
+<p>A.&nbsp;The preaching of the holy gospel<br>
+and Christian discipline toward repentance.<br>
+Both of them</p>
+<p>open the kingdom of heaven to believers<br>
+and close it to unbelievers.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2016:19&amp;version=nrsv">Matt. 16:19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2020:22-23&amp;version=nrsv">John 20:22-23</a></p>
+Q &amp; A 84
+<p>Q.&nbsp;How does preaching the holy gospel<br>
+open and close the kingdom of heaven?</p>
+<p>A.&nbsp;According to the command of Christ:</p>
+<p>The kingdom of heaven is opened<br>
+by proclaiming and publicly declaring</p>
+<p>to all believers, each and every one, that,<br>
+as often as they accept the gospel promise in true faith,<br>
+God, because of Christ’s merit,<br>
+truly forgives all their sins.</p>
+<p>The kingdom of heaven is closed, however,<br>
+by proclaiming and publicly declaring</p>
+<p>to unbelievers and hypocrites that,<br>
+as long as they do not repent,<br>
+the wrath of God and eternal condemnation<br>
+rest on them.</p>
+<p>God’s judgment, both in this life and in the life to come,<br>
+is based on this gospel testimony.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2016:19&amp;version=nrsv">Matt. 16:19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%203:31-36&amp;version=nrsv">John 3:31-36</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2020:21-23&amp;version=nrsv">20:21-23</a></p>
+Q &amp; A 85
+<p>Q.&nbsp;How is the kingdom of heaven<br>
+closed and opened by Christian discipline?</p>
+<p>A.&nbsp;According to the command of Christ:</p>
+<p>Those who, though called Christians,</p>
+<p>profess unchristian teachings or live unchristian lives,</p>
+<p>and who after repeated personal and loving admonitions,</p>
+<p>refuse to abandon their errors and evil ways,</p>
+<p>and who after being reported to the church, that is,</p>
+<p>to those ordained by the church for that purpose,</p>
+<p>fail to respond also to the church’s admonitions—</p>
+<p>such persons the church excludes</p>
+<p>from the Christian community</p>
+<p>by withholding the sacraments from them,</p>
+<p>and God also excludes them from the kingdom of Christ.1</p>
+<p>Such persons,</p>
+<p>when promising and demonstrating genuine reform,</p>
+<p>are received again</p>
+<p>as members of Christ<br>
+and of his church.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2018:15-20&amp;version=nrsv">Matt. 18:15-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%205:3-5,%2011-13&amp;version=nrsv">1 Cor. 5:3-5, 11-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Thess.%203:14-15&amp;version=nrsv">2 Thess. 3:14-15</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2015:20-24&amp;version=nrsv">Luke 15:20-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%202:6-11&amp;version=nrsv">2 Cor. 2:6-11</a></p>
+<h2>Part III: Gratitude</h2>
+<h4>Lord’s Day 32</h4>
+Q &amp; A 86
+<p>Q.&nbsp;Since we have been delivered<br>
+from our misery<br>
+by grace through Christ<br>
+without any merit of our own,<br>
+why then should we do good works?</p>
+<p>A.&nbsp;Because Christ, having redeemed us by his blood,<br>
+is also restoring us by his Spirit into his image,</p>
+<p>so that with our whole lives</p>
+<p>we may show that we are thankful to God</p>
+<p>for his benefits,1</p>
+<p>so that he may be praised through us,2<br>
+so that we may be assured of our faith by its fruits,3<br>
+and so that by our godly living</p>
+<p>our neighbors may be won over to Christ.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:13&amp;version=nrsv">Rom. 6:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:1-2&amp;version=nrsv">12:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%202:5-10&amp;version=nrsv">1 Pet. 2:5-10</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:16&amp;version=nrsv">Matt. 5:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:19-20&amp;version=nrsv">1 Cor. 6:19-20</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:17-18&amp;version=nrsv">Matt. 7:17-18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%205:22-24&amp;version=nrsv">Gal. 5:22-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Pet.%201:10-11&amp;version=nrsv">2 Pet. 1:10-11</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:14-16&amp;version=nrsv">Matt. 5:14-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2014:17-19&amp;version=nrsv">Rom. 14:17-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%202:12&amp;version=nrsv">1 Pet. 2:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%203:1-2&amp;version=nrsv">3:1-2</a></p>
+Q &amp; A 87
+<p>Q.&nbsp;Can those be saved<br>
+who do not turn to God<br>
+from their ungrateful<br>
+and unrepentant ways?</p>
+<p>A.&nbsp;By no means.<br>
+Scripture tells us that</p>
+<p>no unchaste person,<br>
+no idolater, adulterer, thief,<br>
+no covetous person,<br>
+no drunkard, slanderer, robber,<br>
+or the like<br>
+will inherit the kingdom of God.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:9-10&amp;version=nrsv">1 Cor. 6:9-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%205:19-21&amp;version=nrsv">Gal. 5:19-21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:1-20&amp;version=nrsv">Eph. 5:1-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:14&amp;version=nrsv">1 John 3:14</a></p>
+<h4>Lord’s Day 33</h4>
+Q &amp; A 88
+<p>Q.&nbsp;What is involved<br>
+in genuine repentance or conversion?</p>
+<p>A.&nbsp;Two things:</p>
+<p>the dying-away of the old self,<br>
+and the rising-to-life of the new.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:1-11&amp;version=nrsv">Rom. 6:1-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%205:17&amp;version=nrsv">2 Cor. 5:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:22-24&amp;version=nrsv">Eph. 4:22-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:5-10&amp;version=nrsv">Col. 3:5-10</a></p>
+Q &amp; A 89
+<p>Q.&nbsp;What is the dying-away of the old self?</p>
+<p>A.&nbsp;To be genuinely sorry for sin<br>
+and more and more to hate<br>
+and run away from it.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2051:3-4,%2017&amp;version=nrsv">Ps. 51:3-4, 17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Joel%202:12-13&amp;version=nrsv">Joel 2:12-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:12-13&amp;version=nrsv">Rom. 8:12-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%207:10&amp;version=nrsv">2 Cor. 7:10</a></p>
+Q &amp; A 90
+<p>Q.&nbsp;What is the rising-to-life of the new self?</p>
+<p>A.&nbsp;Wholehearted joy in God through Christ1<br>
+and a love and delight to live</p>
+<p>according to the will of God<br>
+by doing every kind of good work.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2051:8,%2012&amp;version=nrsv">Ps. 51:8, 12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2057:15&amp;version=nrsv">Isa. 57:15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:1&amp;version=nrsv">Rom. 5:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2014:17&amp;version=nrsv">14:17</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%206:10-11&amp;version=nrsv">Rom. 6:10-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%202:20&amp;version=nrsv">Gal. 2:20</a></p>
+Q &amp; A 91
+<p>Q.&nbsp;What are good works?</p>
+<p>A.&nbsp;Only those which</p>
+<p>are done out of true faith,1<br>
+conform to God’s law,2<br>
+and are done for God’s glory;3</p>
+<p>and not those based</p>
+<p>on our own opinion<br>
+or human tradition.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:5&amp;version=nrsv">John 15:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2011:6&amp;version=nrsv">Heb. 11:6</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2018:4&amp;version=nrsv">Lev. 18:4</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Sam.%2015:22&amp;version=nrsv">1 Sam. 15:22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%202:10&amp;version=nrsv">Eph. 2:10</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:31&amp;version=nrsv">1 Cor. 10:31</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%2012:32&amp;version=nrsv">Deut. 12:32</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2029:13&amp;version=nrsv">Isa. 29:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ezek.%2020:18-19&amp;version=nrsv">Ezek. 20:18-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2015:7-9&amp;version=nrsv">Matt. 15:7-9</a></p>
+<h3>The Ten Commandments</h3>
+<h4>Lord’s Day 34</h4>
+Q &amp; A 92
+<p>Q.&nbsp;What is God’s law?</p>
+<p>A.&nbsp;God spoke all these words:</p>
+<p>THE FIRST COMMANDMENT</p>
+<p>“I am the LORD your God,</p>
+<p>who brought you out of the land of Egypt,<br>
+out of the house of slavery;</p>
+<p>you shall have no other gods before me.”</p>
+<p>THE SECOND COMMANDMENT</p>
+<p>“You shall not make for yourself an idol,</p>
+<p>whether in the form of anything that is in heaven above,<br>
+or that is on the earth beneath,<br>
+or that is in the water under the earth.</p>
+<p>You shall not bow down to them or worship them;</p>
+<p>for I the LORD your God am a jealous God,<br>
+punishing children for the iniquity of parents,</p>
+<p>to the third and the fourth generation<br>
+of those who reject me,</p>
+<p>but showing love to the thousandth generation of those</p>
+<p>who love me and keep my commandments.”</p>
+<p>THE THIRD COMMANDMENT</p>
+<p>“You shall not make wrongful use of the name of the LORD your God,</p>
+<p>for the LORD will not acquit anyone<br>
+who misuses his name.”</p>
+<p>THE FOURTH COMMANDMENT</p>
+<p>“Remember the sabbath day and keep it holy.<br>
+Six days you shall labor and do all your work.<br>
+But the seventh day is a sabbath to the LORD your God;<br>
+you shall not do any work—</p>
+<p>you, your son or your daughter,<br>
+your male or female slave,<br>
+your livestock,<br>
+or the alien resident in your towns.</p>
+<p>For in six days the LORD made</p>
+<p>heaven and earth, the sea,<br>
+and all that is in them,</p>
+<p>but rested the seventh day;<br>
+therefore the LORD blessed the sabbath day<br>
+and consecrated it.”</p>
+<p>THE FIFTH COMMANDMENT</p>
+<p>“Honor your father and your mother,</p>
+<p>so that your days may be long<br>
+in the land that the Lord your God is giving to you.”</p>
+<p>THE SIXTH COMMANDMENT</p>
+<p>“You shall not murder.”</p>
+<p>THE SEVENTH COMMANDMENT</p>
+<p>“You shall not commit adultery.”</p>
+<p>THE EIGHTH COMMANDMENT</p>
+<p>“You shall not steal.”</p>
+<p>THE NINTH COMMANDMENT</p>
+<p>“You shall not bear false witness</p>
+<p>against your neighbor.”</p>
+<p>THE TENTH COMMANDMENT</p>
+<p>“You shall not covet your neighbor’s house;<br>
+you shall not covet your neighbor’s wife,</p>
+<p>or male or female slave,<br>
+or ox, or donkey,<br>
+or anything that belongs to your neighbor.”1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2020:1-17&amp;version=nrsv">Ex. 20:1-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%205:6-21&amp;version=nrsv">Deut. 5:6-21</a></p>
+Q &amp; A 93
+<p>Q.&nbsp;How are these commandments divided?</p>
+<p>A.&nbsp;Into two tables.<br>
+The first has four commandments,</p>
+<p>teaching us how we ought to live in relation to God.</p>
+<p>The second has six commandments,</p>
+<p>teaching us what we owe our neighbor.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2022:37-39&amp;version=nrsv">Matt. 22:37-39</a></p>
+Q &amp; A 94
+<p>Q.&nbsp;What does the Lord require<br>
+in the first commandment?</p>
+<p>A.&nbsp;That I, not wanting to endanger my own salvation,<br>
+avoid and shun</p>
+<p>all idolatry,1&nbsp;sorcery, superstitious rites,2<br>
+and prayer to saints or to other creatures.3</p>
+<p>That I rightly know the only true God,4</p>
+<p>trust him alone,5<br>
+and look to God for every good thing6</p>
+<p>humbly7&nbsp;and patiently,8</p>
+<p>and love,9&nbsp;fear,10&nbsp;and honor11&nbsp;God</p>
+<p>with all my heart.</p>
+<p>In short,</p>
+<p>that I give up anything<br>
+rather than go against God’s will in any way.12</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:9-10&amp;version=nrsv">1 Cor. 6:9-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:5-14&amp;version=nrsv">10:5-14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%205:21&amp;version=nrsv">1 John 5:21</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2019:31&amp;version=nrsv">Lev. 19:31</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%2018:9-12&amp;version=nrsv">Deut. 18:9-12</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%204:10&amp;version=nrsv">Matt. 4:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%2019:10&amp;version=nrsv">Rev. 19:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%2022:8-9&amp;version=nrsv">22:8-9</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2017:3&amp;version=nrsv">John 17:3</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2017:5,%207&amp;version=nrsv">Jer. 17:5, 7</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20104:27-28&amp;version=nrsv">Ps. 104:27-28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%201:17&amp;version=nrsv">James 1:17</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%205:5-6&amp;version=nrsv">1 Pet. 5:5-6</a><br>
+8&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%201:11&amp;version=nrsv">Col. 1:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:36&amp;version=nrsv">Heb. 10:36</a><br>
+9&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2022:37&amp;version=nrsv">Matt. 22:37</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Deut.%206:5&amp;version=nrsv">Deut. 6:5</a>)<br>
+10&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%209:10&amp;version=nrsv">Prov. 9:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%201:17&amp;version=nrsv">1 Pet. 1:17</a><br>
+11&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%204:10&amp;version=nrsv">Matt. 4:10</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Deut.%206:13&amp;version=nrsv">Deut. 6:13</a>)<br>
+12&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:29-30&amp;version=nrsv">Matt. 5:29-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2010:37-39&amp;version=nrsv">10:37-39</a></p>
+Q &amp; A 95
+<p>Q.&nbsp;What is idolatry?</p>
+<p>A.&nbsp;Idolatry is</p>
+<p>having or inventing something in which one trusts<br>
+in place of or alongside of the only true God,</p>
+<p>who has revealed himself in the Word.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Chron.%2016:26&amp;version=nrsv">1 Chron. 16:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%204:8-9&amp;version=nrsv">Gal. 4:8-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:5&amp;version=nrsv">Eph. 5:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%203:19&amp;version=nrsv">Phil. 3:19</a></p>
+<h4>Lord’s Day 35</h4>
+Q &amp; A 96
+<p>Q.&nbsp;What is God’s will for us<br>
+in the second commandment?</p>
+<p>A.&nbsp;That we in no way make any image of God1<br>
+nor worship him in any other way</p>
+<p>than has been commanded in God’s Word.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%204:15-19&amp;version=nrsv">Deut. 4:15-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2040:18-25&amp;version=nrsv">Isa. 40:18-25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2017:29&amp;version=nrsv">Acts 17:29</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:22-23&amp;version=nrsv">Rom. 1:22-23</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2010:1-7&amp;version=nrsv">Lev. 10:1-7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Sam.%2015:22-23&amp;version=nrsv">1 Sam. 15:22-23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%204:23-24&amp;version=nrsv">John 4:23-24</a></p>
+Q &amp; A 97
+<p>Q.&nbsp;May we then not make<br>
+any image at all?</p>
+<p>A.&nbsp;God can not and may not<br>
+be visibly portrayed in any way.</p>
+<p>Although creatures may be portrayed,<br>
+yet God forbids making or having such images</p>
+<p>if one’s intention is to worship them<br>
+or to serve God through them.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2034:13-14,%2017&amp;version=nrsv">Ex. 34:13-14, 17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Kings%2018:4-5&amp;version=nrsv">2 Kings 18:4-5</a></p>
+Q &amp; A 98
+<p>Q.&nbsp;But may not images be permitted in churches<br>
+in place of books for the unlearned?</p>
+<p>A.&nbsp;No, we should not try to be wiser than God.<br>
+God wants the Christian community instructed</p>
+<p>by the living preaching of his Word—1<br>
+not by idols that cannot even talk.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:14-15,%2017&amp;version=nrsv">Rom. 10:14-15, 17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Tim.%203:16-17&amp;version=nrsv">2 Tim. 3:16-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Pet.%201:19&amp;version=nrsv">2 Pet. 1:19</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2010:8&amp;version=nrsv">Jer. 10:8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Hab.%202:18-20&amp;version=nrsv">Hab. 2:18-20</a></p>
+<h4>Lord’s Day 36</h4>
+Q &amp; A 99
+<p>Q.&nbsp;What is the aim of the third commandment?</p>
+<p>A.&nbsp;That we neither blaspheme nor misuse the name of God</p>
+<p>by cursing,1&nbsp;perjury,2&nbsp;or unnecessary oaths,3</p>
+<p>nor share in such horrible sins</p>
+<p>by being silent bystanders.4</p>
+<p>In summary,</p>
+<p>we should use the holy name of God</p>
+<p>only with reverence and awe,5</p>
+<p>so that we may properly</p>
+<p>confess God,6<br>
+pray to God,7<br>
+and glorify God in all our words and works.8</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2024:10-17&amp;version=nrsv">Lev. 24:10-17</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2019:12&amp;version=nrsv">Lev. 19:12</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:37&amp;version=nrsv">Matt. 5:37</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%205:12&amp;version=nrsv">James 5:12</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%205:1&amp;version=nrsv">Lev. 5:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2029:24&amp;version=nrsv">Prov. 29:24</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2099:1-5&amp;version=nrsv">Ps. 99:1-5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%204:2&amp;version=nrsv">Jer. 4:2</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2010:32-33&amp;version=nrsv">Matt. 10:32-33</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:9-10&amp;version=nrsv">Rom. 10:9-10</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2050:14-15&amp;version=nrsv">Ps. 50:14-15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%202:8&amp;version=nrsv">1 Tim. 2:8</a><br>
+8&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:17&amp;version=nrsv">Col. 3:17</a></p>
+Q &amp; A 100
+<p>Q.&nbsp;Is blasphemy of God’s name by swearing and cursing<br>
+really such serious sin<br>
+that God is angry also with those<br>
+who do not do all they can<br>
+to help prevent and forbid it?</p>
+<p>A.&nbsp;Yes, indeed.1</p>
+<p>No sin is greater<br>
+or provokes God’s wrath more<br>
+than blaspheming his name.</p>
+<p>That is why God commanded it to be punished with death.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%205:1&amp;version=nrsv">Lev. 5:1</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2024:10-17&amp;version=nrsv">Lev. 24:10-17</a></p>
+<h4>Lord’s Day 37</h4>
+Q &amp; A 101
+<p>Q.&nbsp;But may we swear an oath in God’s name<br>
+if we do it reverently?</p>
+<p>A.&nbsp;Yes, when the government demands it,<br>
+or when necessity requires it,</p>
+<p>in order to maintain and promote truth and trustworthiness<br>
+for God’s glory and our neighbor’s good.</p>
+<p>Such oaths are grounded in God’s Word1</p>
+<p>and were rightly used by the people of God</p>
+<p>in the Old and New Testaments.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%206:13&amp;version=nrsv">Deut. 6:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%2010:20&amp;version=nrsv">10:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%204:1-2&amp;version=nrsv">Jer. 4:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%206:16&amp;version=nrsv">Heb. 6:16</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%2021:24&amp;version=nrsv">Gen. 21:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Josh.%209:15&amp;version=nrsv">Josh. 9:15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Kings%201:29-30&amp;version=nrsv">1 Kings 1:29-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:9&amp;version=nrsv">Rom. 1:9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%201:23&amp;version=nrsv">2 Cor. 1:23</a></p>
+Q &amp; A 102
+<p>Q.&nbsp;May we also swear by saints or other creatures?</p>
+<p>A.&nbsp;No.<br>
+A legitimate oath means calling upon God<br>
+as the only one who knows my heart</p>
+<p>to witness to my truthfulness<br>
+and to punish me if I swear falsely.1</p>
+<p>No creature is worthy of such honor.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%209:1&amp;version=nrsv">Rom. 9:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%201:23&amp;version=nrsv">2 Cor. 1:23</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:34-37&amp;version=nrsv">Matt. 5:34-37</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2023:16-22&amp;version=nrsv">23:16-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%205:12&amp;version=nrsv">James 5:12</a></p>
+<h4>Lord’s Day 38</h4>
+Q &amp; A 103
+<p>Q.&nbsp;What is God’s will for you<br>
+in the fourth commandment?</p>
+<p>A.&nbsp;First,</p>
+<p>that the gospel ministry and education for it be maintained,1<br>
+and that, especially on the festive day of rest,<br>
+I diligently attend the assembly of God’s people2</p>
+<p>to learn what God’s Word teaches,3<br>
+to participate in the sacraments,4<br>
+to pray to God publicly,5<br>
+and to bring Christian offerings for the poor.6</p>
+<p>Second,</p>
+<p>that every day of my life</p>
+<p>I rest from my evil ways,<br>
+let the Lord work in me through his Spirit,</p>
+<p>and so begin in this life<br>
+the eternal Sabbath.7</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%206:4-9,%2020-25&amp;version=nrsv">Deut. 6:4-9, 20-25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%209:13-14&amp;version=nrsv">1 Cor. 9:13-14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Tim.%202:2&amp;version=nrsv">2 Tim. 2:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Tim.%203:13-17&amp;version=nrsv">3:13-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Tit.%201:5&amp;version=nrsv">Tit. 1:5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%2012:5-12&amp;version=nrsv">Deut. 12:5-12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2040:9-10&amp;version=nrsv">Ps. 40:9-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2068:26&amp;version=nrsv">68:26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:42-47&amp;version=nrsv">Acts 2:42-47</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2010:23-25&amp;version=nrsv">Heb. 10:23-25</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:14-17&amp;version=nrsv">Rom. 10:14-17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2014:31-32&amp;version=nrsv">1 Cor. 14:31-32</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%204:13&amp;version=nrsv">1 Tim. 4:13</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2011:23-25&amp;version=nrsv">1 Cor. 11:23-25</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:16&amp;version=nrsv">Col. 3:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Tim.%202:1&amp;version=nrsv">1 Tim. 2:1</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2050:14&amp;version=nrsv">Ps. 50:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2016:2&amp;version=nrsv">1 Cor. 16:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%208&amp;version=nrsv">2 Cor. 8</a>&nbsp;&amp;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%209&amp;version=nrsv">9</a><br>
+7&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2066:23&amp;version=nrsv">Isa. 66:23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%204:9-11&amp;version=nrsv">Heb. 4:9-11</a></p>
+<h4>Lord’s Day 39</h4>
+Q &amp; A 104
+<p>Q.&nbsp;What is God’s will for you<br>
+in the fifth commandment?</p>
+<p>A.&nbsp;That I honor, love, and be loyal</p>
+<p>to my father and mother<br>
+and all those in authority over me;</p>
+<p>that I submit myself with proper obedience</p>
+<p>to all their good teaching and discipline;1</p>
+<p>and also that I be patient with their failings—2<br>
+for through them God chooses to rule us.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2021:17&amp;version=nrsv">Ex. 21:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%201:8&amp;version=nrsv">Prov. 1:8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%204:1&amp;version=nrsv">4:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2013:1-2&amp;version=nrsv">Rom. 13:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:21-22&amp;version=nrsv">Eph. 5:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%206:1-9&amp;version=nrsv">6:1-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:18-4:1&amp;version=nrsv">Col. 3:18-4:1</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2020:20&amp;version=nrsv">Prov. 20:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2023:22&amp;version=nrsv">23:22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%202:18&amp;version=nrsv">1 Pet. 2:18</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2022:21&amp;version=nrsv">Matt. 22:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2013:1-8&amp;version=nrsv">Rom. 13:1-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%206:1-9&amp;version=nrsv">Eph. 6:1-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:18-21&amp;version=nrsv">Col. 3:18-21</a></p>
+<h4>Lord’s Day 40</h4>
+Q &amp; A 105
+<p>Q.&nbsp;What is God’s will for you<br>
+in the sixth commandment?</p>
+<p>A.&nbsp;I am not to belittle, hate, insult, or kill my neighbor—</p>
+<p>not by my thoughts, my words, my look or gesture,<br>
+and certainly not by actual deeds—</p>
+<p>and I am not to be party to this in others;1<br>
+rather, I am to put away all desire for revenge.2</p>
+<p>I am not to harm or recklessly endanger myself either.3<br>
+Prevention of murder is also why</p>
+<p>government is armed with the sword.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%209:6&amp;version=nrsv">Gen. 9:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2019:17-18&amp;version=nrsv">Lev. 19:17-18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:21-22&amp;version=nrsv">Matt. 5:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2026:52&amp;version=nrsv">26:52</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2025:21-22&amp;version=nrsv">Prov. 25:21-22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2018:35&amp;version=nrsv">Matt. 18:35</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:19&amp;version=nrsv">Rom. 12:19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:26&amp;version=nrsv">Eph. 4:26</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%204:7&amp;version=nrsv">Matt. 4:7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2026:52&amp;version=nrsv">26:52</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2013:11-14&amp;version=nrsv">Rom. 13:11-14</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gen.%209:6&amp;version=nrsv">Gen. 9:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2021:14&amp;version=nrsv">Ex. 21:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2013:4&amp;version=nrsv">Rom. 13:4</a></p>
+Q &amp; A 106
+<p>Q.&nbsp;Does this commandment refer only to murder?</p>
+<p>A.&nbsp;By forbidding murder God teaches us</p>
+<p>that he hates the root of murder:<br>
+envy, hatred, anger, vindictiveness.1</p>
+<p>In God’s sight all such are disguised forms of murder.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2014:30&amp;version=nrsv">Prov. 14:30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:29&amp;version=nrsv">Rom. 1:29</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:19&amp;version=nrsv">12:19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%205:19-21&amp;version=nrsv">Gal. 5:19-21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:9-11&amp;version=nrsv">1 John 2:9-11</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:15&amp;version=nrsv">1 John 3:15</a></p>
+Q &amp; A 107
+<p>Q.&nbsp;Is it enough then<br>
+that we do not murder our neighbor<br>
+in any such way?</p>
+<p>A.&nbsp;No.<br>
+By condemning envy, hatred, and anger<br>
+God wants us</p>
+<p>to love our neighbors as ourselves,1<br>
+to be patient, peace-loving, gentle,</p>
+<p>merciful, and friendly toward them,2</p>
+<p>to protect them from harm as much as we can,<br>
+and to do good even to our enemies.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:12&amp;version=nrsv">Matt. 7:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2022:39&amp;version=nrsv">22:39</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:10&amp;version=nrsv">Rom. 12:10</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:3-12&amp;version=nrsv">Matt. 5:3-12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%206:36&amp;version=nrsv">Luke 6:36</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:10,%2018&amp;version=nrsv">Rom. 12:10, 18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%206:1-2&amp;version=nrsv">Gal. 6:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:2&amp;version=nrsv">Eph. 4:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Col.%203:12&amp;version=nrsv">Col. 3:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%203:8&amp;version=nrsv">1 Pet. 3:8</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2023:4-5&amp;version=nrsv">Ex. 23:4-5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:44-45&amp;version=nrsv">Matt. 5:44-45</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:20-21&amp;version=nrsv">Rom. 12:20-21</a>&nbsp;(<a href="https://www.biblegateway.com/passage/?search=Prov.%2025:21-22&amp;version=nrsv">Prov. 25:21-22</a>)</p>
+<h4>Lord’s Day 41</h4>
+Q &amp; A 108
+<p>Q.&nbsp;What does the seventh commandment teach us?</p>
+<p>A.&nbsp;That God condemns all unchastity,1</p>
+<p>and that therefore we should thoroughly detest it2<br>
+and live decent and chaste lives,3<br>
+within or outside of the holy state of marriage.</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2018:30&amp;version=nrsv">Lev. 18:30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:3-5&amp;version=nrsv">Eph. 5:3-5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jude%2022-23&amp;version=nrsv">Jude 22-23</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%207:1-9&amp;version=nrsv">1 Cor. 7:1-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Thess.%204:3-8&amp;version=nrsv">1 Thess. 4:3-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2013:4&amp;version=nrsv">Heb. 13:4</a></p>
+Q &amp; A 109
+<p>Q.&nbsp;Does God, in this commandment,<br>
+forbid only such scandalous sins as adultery?</p>
+<p>A.&nbsp;We are temples of the Holy Spirit, body and soul,<br>
+and God wants both to be kept clean and holy.<br>
+That is why God forbids</p>
+<p>all unchaste actions, looks, talk, thoughts, or desires,1<br>
+and whatever may incite someone to them.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:27-29&amp;version=nrsv">Matt. 5:27-29</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:18-20&amp;version=nrsv">1 Cor. 6:18-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:3-4&amp;version=nrsv">Eph. 5:3-4</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:33&amp;version=nrsv">1 Cor. 15:33</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:18&amp;version=nrsv">Eph. 5:18</a></p>
+<h4>Lord’s Day 42</h4>
+Q &amp; A 110
+<p>Q.&nbsp;What does God forbid<br>
+in the eighth commandment?</p>
+<p>A.&nbsp;God forbids not only outright theft and robbery,</p>
+<p>punishable by law.1</p>
+<p>But in God’s sight theft also includes<br>
+all scheming and swindling<br>
+in order to get our neighbor’s goods for ourselves,</p>
+<p>whether by force or means that appear legitimate,2<br>
+such as</p>
+<p>inaccurate measurements of weight, size, or volume;<br>
+fraudulent merchandising;<br>
+counterfeit money;<br>
+excessive interest;<br>
+or any other means forbidden by God.3</p>
+<p>In addition God forbids all greed4<br>
+and pointless squandering of his gifts.5</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2022:1&amp;version=nrsv">Ex. 22:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%205:9-10&amp;version=nrsv">1 Cor. 5:9-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%206:9-10&amp;version=nrsv">6:9-10</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Mic.%206:9-11&amp;version=nrsv">Mic. 6:9-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%203:14&amp;version=nrsv">Luke 3:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%205:1-6&amp;version=nrsv">James 5:1-6</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%2025:13-16&amp;version=nrsv">Deut. 25:13-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2015:5&amp;version=nrsv">Ps. 15:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2011:1&amp;version=nrsv">Prov. 11:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2012:22&amp;version=nrsv">12:22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ezek.%2045:9-12&amp;version=nrsv">Ezek. 45:9-12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%206:35&amp;version=nrsv">Luke 6:35</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2012:15&amp;version=nrsv">Luke 12:15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%205:5&amp;version=nrsv">Eph. 5:5</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2021:20&amp;version=nrsv">Prov. 21:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2023:20-21&amp;version=nrsv">23:20-21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2016:10-13&amp;version=nrsv">Luke 16:10-13</a></p>
+Q &amp; A 111
+<p>Q.&nbsp;What does God require of you<br>
+in this commandment?</p>
+<p>A.&nbsp;That I do whatever I can</p>
+<p>for my neighbor’s good,</p>
+<p>that I treat others</p>
+<p>as I would like them to treat me,</p>
+<p>and that I work faithfully</p>
+<p>so that I may share with those in need.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2058:5-10&amp;version=nrsv">Isa. 58:5-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:12&amp;version=nrsv">Matt. 7:12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%206:9-10&amp;version=nrsv">Gal. 6:9-10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:28&amp;version=nrsv">Eph. 4:28</a></p>
+<h4>Lord’s Day 43</h4>
+Q &amp; A 112
+<p>Q.&nbsp;What is the aim of the ninth commandment?</p>
+<p>A.&nbsp;That I</p>
+<p>never give false testimony against anyone,<br>
+twist no one’s words,<br>
+not gossip or slander,<br>
+nor join in condemning anyone<br>
+rashly or without a hearing.1</p>
+<p>Rather, in court and everywhere else,<br>
+I should avoid lying and deceit of every kind;</p>
+<p>these are the very devices the devil uses,<br>
+and they would call down on me God’s intense wrath.2</p>
+<p>I should love the truth,</p>
+<p>speak it candidly,<br>
+and openly acknowledge it.3</p>
+<p>And I should do what I can</p>
+<p>to guard and advance my neighbor’s good name.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2015&amp;version=nrsv">Ps. 15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2019:5&amp;version=nrsv">Prov. 19:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:1&amp;version=nrsv">Matt. 7:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%206:37&amp;version=nrsv">Luke 6:37</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%201:28-32&amp;version=nrsv">Rom. 1:28-32</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Lev.%2019:11-12&amp;version=nrsv">Lev. 19:11-12</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2012:22&amp;version=nrsv">Prov. 12:22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Prov.%2013:5&amp;version=nrsv">13:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%208:44&amp;version=nrsv">John 8:44</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%2021:8&amp;version=nrsv">Rev. 21:8a&gt;<br>
+3&nbsp;</a><a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2013:6&amp;version=nrsv">1 Cor. 13:6</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%204:25&amp;version=nrsv">Eph. 4:25</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%203:8-9&amp;version=nrsv">1 Pet. 3:8-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%204:8&amp;version=nrsv">4:8</a></p>
+<h4>Lord’s Day 44</h4>
+Q &amp; A 113
+<p>Q.&nbsp;What is the aim of the tenth commandment?</p>
+<p>A.&nbsp;That not even the slightest desire or thought</p>
+<p>contrary to any one of God’s commandments<br>
+should ever arise in our hearts.</p>
+<p>Rather, with all our hearts</p>
+<p>we should always hate sin<br>
+and take pleasure in whatever is right.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2019:7-14&amp;version=nrsv">Ps. 19:7-14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20139:23-24&amp;version=nrsv">139:23-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:7-8&amp;version=nrsv">Rom. 7:7-8</a></p>
+Q &amp; A 114
+<p>Q.&nbsp;But can those converted to God<br>
+obey these commandments perfectly?</p>
+<p>A.&nbsp;No.<br>
+In this life even the holiest<br>
+have only a small beginning of this obedience.1</p>
+<p>Nevertheless, with all seriousness of purpose,<br>
+they do begin to live<br>
+according to all, not only some,<br>
+of God’s commandments.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eccles.%207:20&amp;version=nrsv">Eccles. 7:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:14-15&amp;version=nrsv">Rom. 7:14-15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2013:9&amp;version=nrsv">1 Cor. 13:9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:8-10&amp;version=nrsv">1 John 1:8-10</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%201:1-2&amp;version=nrsv">Ps. 1:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:22-25&amp;version=nrsv">Rom. 7:22-25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%203:12-16&amp;version=nrsv">Phil. 3:12-16</a></p>
+Q &amp; A 115
+<p>Q.&nbsp;Since no one in this life<br>
+can obey the Ten Commandments perfectly,<br>
+why does God want them<br>
+preached so pointedly?</p>
+<p>A.&nbsp;First, so that the longer we live</p>
+<p>the more we may come to know our sinfulness<br>
+and the more eagerly look to Christ</p>
+<p>for forgiveness of sins and righteousness.1</p>
+<p>Second, so that<br>
+we may never stop striving,<br>
+and never stop praying to God for the grace of the Holy Spirit,</p>
+<p>to be renewed more and more after God’s image,</p>
+<p>until after this life we reach our goal:</p>
+<p>perfection.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2032:5&amp;version=nrsv">Ps. 32:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%203:19-26&amp;version=nrsv">Rom. 3:19-26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:7,%2024-25&amp;version=nrsv">7:7, 24-25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%201:9&amp;version=nrsv">1 John 1:9</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%209:24&amp;version=nrsv">1 Cor. 9:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Phil.%203:12-14&amp;version=nrsv">Phil. 3:12-14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:1-3&amp;version=nrsv">1 John 3:1-3</a></p>
+<h3>The Lord’s Prayer</h3>
+<h4>Lord’s Day 45</h4>
+Q &amp; A 116
+<p>Q.&nbsp;Why do Christians need to pray?</p>
+<p>A.&nbsp;Because prayer is the most important part</p>
+<p>of the thankfulness God requires of us.1</p>
+<p>And also because God gives his grace and Holy Spirit<br>
+only to those who pray continually and groan inwardly,</p>
+<p>asking God for these gifts<br>
+and thanking God for them.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2050:14-15&amp;version=nrsv">Ps. 50:14-15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20116:12-19&amp;version=nrsv">116:12-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Thess.%205:16-18&amp;version=nrsv">1 Thess. 5:16-18</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:7-8&amp;version=nrsv">Matt. 7:7-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2011:9-13&amp;version=nrsv">Luke 11:9-13</a></p>
+Q &amp; A 117
+<p>Q.&nbsp;What is the kind of prayer<br>
+that pleases God and that he listens to?</p>
+<p>A.&nbsp;First, we must pray from the heart</p>
+<p>to no other than the one true God,</p>
+<p>revealed to us in his Word,</p>
+<p>asking for everything God has commanded us to ask for.1</p>
+<p>Second, we must fully recognize our need and misery,</p>
+<p>so that we humble ourselves in God’s majestic presence.2</p>
+<p>Third, we must rest on this unshakable foundation:</p>
+<p>even though we do not deserve it,<br>
+God will surely listen to our prayer</p>
+<p>because of Christ our Lord.</p>
+<p>That is what God promised us in his Word.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20145:18-20&amp;version=nrsv">Ps. 145:18-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%204:22-24&amp;version=nrsv">John 4:22-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:26-27&amp;version=nrsv">Rom. 8:26-27</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%201:5&amp;version=nrsv">James 1:5</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%205:14-15&amp;version=nrsv">1 John 5:14-15</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Chron.%207:14&amp;version=nrsv">2 Chron. 7:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%202:11&amp;version=nrsv">Ps. 2:11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2034:18&amp;version=nrsv">34:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2062:8&amp;version=nrsv">62:8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2066:2&amp;version=nrsv">Isa. 66:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%204&amp;version=nrsv">Rev. 4</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Dan.%209:17-19&amp;version=nrsv">Dan. 9:17-19</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:8&amp;version=nrsv">Matt. 7:8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2014:13-14&amp;version=nrsv">John 14:13-14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2016:23&amp;version=nrsv">16:23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:13&amp;version=nrsv">Rom. 10:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%201:6&amp;version=nrsv">James 1:6</a></p>
+Q &amp; A 118
+<p>Q.&nbsp;What did God command us to pray for?</p>
+<p>A.&nbsp;Everything we need, spiritually and physically,1<br>
+as embraced in the prayer<br>
+Christ our Lord himself taught us.</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%201:17&amp;version=nrsv">James 1:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:33&amp;version=nrsv">Matt. 6:33</a></p>
+Q &amp; A 119
+<p>Q.&nbsp;What is this prayer?</p>
+<p>A.&nbsp;Our Father in heaven,<br>
+hallowed be your name.<br>
+Your kingdom come.<br>
+Your will be done,</p>
+<p>on earth as it is in heaven.</p>
+<p>Give us this day our daily bread.<br>
+And forgive us our debts,</p>
+<p>as we also have forgiven our debtors.</p>
+<p>And do not bring us to the time of trial,</p>
+<p>but rescue us from the evil one.*</p>
+<p>For the kingdom</p>
+<p>and the power<br>
+and the glory are yours forever.</p>
+<p>Amen.1**</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:9-13&amp;version=nrsv">Matt. 6:9-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2011:2-4&amp;version=nrsv">Luke 11:2-4</a><br>
+*This text of the Lord's Prayer is from the New Revised Standard Version in keeping with the use of the NRSV throughout this edition of the catechism. Most biblical scholars will agree that it is an accurate translation of the Greek text and carries virtually the same meaning as the more traditional text of the Lord's Prayer<br>
+**Earlier and better manuscripts of Matthew 6 omit the words “For the kingdom and … Amen.”</p>
+<h4>Lord’s Day 46</h4>
+Q &amp; A 120
+<p>Q.&nbsp;Why did Christ command us<br>
+to call God “our Father”?</p>
+<p>A.&nbsp;To awaken in us<br>
+at the very beginning of our prayer<br>
+what should be basic to our prayer—</p>
+<p>a childlike reverence and trust<br>
+that through Christ God has become our Father,</p>
+<p>and that just as our parents do not refuse us</p>
+<p>the things of this life,</p>
+<p>even less will God our Father refuse to give us</p>
+<p>what we ask in faith.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:9-11&amp;version=nrsv">Matt. 7:9-11</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2011:11-13&amp;version=nrsv">Luke 11:11-13</a></p>
+Q &amp; A 121
+<p>Q.&nbsp;Why the words<br>
+“in heaven”?</p>
+<p>A.&nbsp;These words teach us</p>
+<p>not to think of God’s heavenly majesty</p>
+<p>as something earthly,1</p>
+<p>and to expect everything</p>
+<p>needed for body and soul<br>
+from God’s almighty power.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2023:23-24&amp;version=nrsv">Jer. 23:23-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2017:24-25&amp;version=nrsv">Acts 17:24-25</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:25-34&amp;version=nrsv">Matt. 6:25-34</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:31-32&amp;version=nrsv">Rom. 8:31-32</a></p>
+<h4>Lord’s Day 47</h4>
+Q &amp; A 122
+<p>Q.&nbsp;What does the first petition mean?</p>
+<p>A.&nbsp;“Hallowed be your name” means:</p>
+<p>Help us to truly know you,1<br>
+to honor, glorify, and praise you</p>
+<p>for all your works<br>
+and for all that shines forth from them:</p>
+<p>your almighty power, wisdom, kindness,<br>
+justice, mercy, and truth.2</p>
+<p>And it means,</p>
+<p>Help us to direct all our living—</p>
+<p>what we think, say, and do—</p>
+<p>so that your name will never be blasphemed because of us<br>
+but always honored and praised.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%209:23-24&amp;version=nrsv">Jer. 9:23-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2031:33-34&amp;version=nrsv">31:33-34</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2016:17&amp;version=nrsv">Matt. 16:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2017:3&amp;version=nrsv">John 17:3</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ex.%2034:5-8&amp;version=nrsv">Ex. 34:5-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20145&amp;version=nrsv">Ps. 145</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2032:16-20&amp;version=nrsv">Jer. 32:16-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%201:46-55,%2068-75&amp;version=nrsv">Luke 1:46-55, 68-75</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2011:33-36&amp;version=nrsv">Rom. 11:33-36</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20115:1&amp;version=nrsv">Ps. 115:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%205:16&amp;version=nrsv">Matt. 5:16</a></p>
+<h4>Lord’s Day 48</h4>
+Q &amp; A 123
+<p>Q.&nbsp;What does the second petition mean?</p>
+<p>A.&nbsp;“Your kingdom come” means:<br>
+Rule us by your Word and Spirit in such a way</p>
+<p>that more and more we submit to you.1</p>
+<p>Preserve your church and make it grow.2</p>
+<p>Destroy the devil’s work;<br>
+destroy every force which revolts against you<br>
+and every conspiracy against your holy Word.3</p>
+<p>Do this until your kingdom fully comes,</p>
+<p>when you will be</p>
+<p>all in all.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20119:5,%20105&amp;version=nrsv">Ps. 119:5, 105</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20143:10&amp;version=nrsv">143:10</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:33&amp;version=nrsv">Matt. 6:33</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20122:6-9&amp;version=nrsv">Ps. 122:6-9</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2016:18&amp;version=nrsv">Matt. 16:18</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%202:42-47&amp;version=nrsv">Acts 2:42-47</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2016:20&amp;version=nrsv">Rom. 16:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%203:8&amp;version=nrsv">1 John 3:8</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:22-23&amp;version=nrsv">Rom. 8:22-23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:28&amp;version=nrsv">1 Cor. 15:28</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rev.%2022:17,%2020&amp;version=nrsv">Rev. 22:17, 20</a></p>
+<h4>Lord’s Day 49</h4>
+Q &amp; A 124
+<p>Q.&nbsp;What does the third petition mean?</p>
+<p>A.&nbsp;“Your will be done, on earth as it is in heaven” means:</p>
+<p>Help us and all people</p>
+<p>to reject our own wills<br>
+and to obey your will without any back talk.<br>
+Your will alone is good.1</p>
+<p>Help us one and all to carry out the work we are called to,2</p>
+<p>as willingly and faithfully as the angels in heaven.3</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%207:21&amp;version=nrsv">Matt. 7:21</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2016:24-26&amp;version=nrsv">16:24-26</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Luke%2022:42&amp;version=nrsv">Luke 22:42</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2012:1-2&amp;version=nrsv">Rom. 12:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Tit.%202:11-12&amp;version=nrsv">Tit. 2:11-12</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%207:17-24&amp;version=nrsv">1 Cor. 7:17-24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%206:5-9&amp;version=nrsv">Eph. 6:5-9</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20103:20-21&amp;version=nrsv">Ps. 103:20-21</a></p>
+<h4>Lord’s Day 50</h4>
+Q &amp; A 125
+<p>Q.&nbsp;What does the fourth petition mean?</p>
+<p>A.&nbsp;“Give us this day our daily bread” means:</p>
+<p>Do take care of all our physical needs1<br>
+so that we come to know</p>
+<p>that you are the only source of everything good,2<br>
+and that neither our work and worry<br>
+nor your gifts<br>
+can do us any good without your blessing.3</p>
+<p>And so help us to give up our trust in creatures<br>
+and trust in you alone.4</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20104:27-30&amp;version=nrsv">Ps. 104:27-30</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20145:15-16&amp;version=nrsv">145:15-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:25-34&amp;version=nrsv">Matt. 6:25-34</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2014:17&amp;version=nrsv">Acts 14:17</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Acts%2017:25&amp;version=nrsv">17:25</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=James%201:17&amp;version=nrsv">James 1:17</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=Deut.%208:3&amp;version=nrsv">Deut. 8:3</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2037:16&amp;version=nrsv">Ps. 37:16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20127:1-2&amp;version=nrsv">127:1-2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2015:58&amp;version=nrsv">1 Cor. 15:58</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2055:22&amp;version=nrsv">Ps. 55:22</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2062&amp;version=nrsv">62</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20146&amp;version=nrsv">146</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Jer.%2017:5-8&amp;version=nrsv">Jer. 17:5-8</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Heb.%2013:5-6&amp;version=nrsv">Heb. 13:5-6</a></p>
+<h4>Lord’s Day 51</h4>
+Q &amp; A 126
+<p>Q.&nbsp;What does the fifth petition mean?</p>
+<p>A.&nbsp;“Forgive us our debts,<br>
+as we also have forgiven our debtors” means:</p>
+<p>Because of Christ’s blood,<br>
+do not hold against us, poor sinners that we are,</p>
+<p>any of the sins we do<br>
+or the evil that constantly clings to us.1</p>
+<p>Forgive us just as we are fully determined,</p>
+<p>as evidence of your grace in us,</p>
+<p>to forgive our neighbors.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%2051:1-7&amp;version=nrsv">Ps. 51:1-7</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20143:2&amp;version=nrsv">143:2</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%208:1&amp;version=nrsv">Rom. 8:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20John%202:1-2&amp;version=nrsv">1 John 2:1-2</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%206:14-15&amp;version=nrsv">Matt. 6:14-15</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2018:21-35&amp;version=nrsv">18:21-35</a></p>
+<h4>Lord’s Day 52</h4>
+Q &amp; A 127
+<p>Q.&nbsp;What does the sixth petition mean?</p>
+<p>A.&nbsp;“And do not bring us to the time of trial,<br>
+but rescue us from the evil one” means:</p>
+<p>By ourselves we are too weak<br>
+to hold our own even for a moment.1<br>
+And our sworn enemies—</p>
+<p>the devil,2&nbsp;the world,3&nbsp;and our own flesh—4</p>
+<p>never stop attacking us.</p>
+<p>And so, Lord,<br>
+uphold us and make us strong</p>
+<p>with the strength of your Holy Spirit,</p>
+<p>so that we may not go down to defeat</p>
+<p>in this spiritual struggle,5</p>
+<p>but may firmly resist our enemies</p>
+<p>until we finally win the complete victory.6</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20103:14-16&amp;version=nrsv">Ps. 103:14-16</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:1-5&amp;version=nrsv">John 15:1-5</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%2011:14&amp;version=nrsv">2 Cor. 11:14</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Eph.%206:10-13&amp;version=nrsv">Eph. 6:10-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Pet.%205:8&amp;version=nrsv">1 Pet. 5:8</a><br>
+3&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2015:18-21&amp;version=nrsv">John 15:18-21</a><br>
+4&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%207:23&amp;version=nrsv">Rom. 7:23</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Gal.%205:17&amp;version=nrsv">Gal. 5:17</a><br>
+5&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2010:19-20&amp;version=nrsv">Matt. 10:19-20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Matt.%2026:41&amp;version=nrsv">26:41</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Mark%2013:33&amp;version=nrsv">Mark 13:33</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%205:3-5&amp;version=nrsv">Rom. 5:3-5</a><br>
+6&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Cor.%2010:13&amp;version=nrsv">1 Cor. 10:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Thess.%203:13&amp;version=nrsv">1 Thess. 3:13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=1%20Thess.%205:23&amp;version=nrsv">5:23</a></p>
+Q &amp; A 128
+<p>Q.&nbsp;What does your conclusion to this prayer mean?</p>
+<p>A.&nbsp;For the kingdom<br>
+and the power<br>
+and the glory are yours forever” means:</p>
+<p>We have made all these petitions of you<br>
+because, as our all-powerful king,</p>
+<p>you are both willing and able<br>
+to give us all that is good;1</p>
+<p>and because your holy name,</p>
+<p>and not we ourselves,</p>
+<p>should receive all the praise, forever.2</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Rom.%2010:11-13&amp;version=nrsv">Rom. 10:11-13</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Pet.%202:9&amp;version=nrsv">2 Pet. 2:9</a><br>
+2&nbsp;<a href="https://www.biblegateway.com/passage/?search=Ps.%20115:1&amp;version=nrsv">Ps. 115:1</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=John%2014:13&amp;version=nrsv">John 14:13</a></p>
+Q &amp; A 129
+<p>Q.&nbsp;What does that little word “Amen” express?</p>
+<p>A.&nbsp;“Amen” means:</p>
+<p>This shall truly and surely be!</p>
+<p>It is even more sure</p>
+<p>that God listens to my prayer</p>
+<p>than that I really desire</p>
+<p>what I pray for.1</p>
+<p>1&nbsp;<a href="https://www.biblegateway.com/passage/?search=Isa.%2065:24&amp;version=nrsv">Isa. 65:24</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Cor.%201:20&amp;version=nrsv">2 Cor. 1:20</a>;&nbsp;<a href="https://www.biblegateway.com/passage/?search=2%20Tim.%202:13&amp;version=nrsv">2 Tim. 2:13</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</article>
+</div>
+</div>
+</div>
+<aside class="layout-sidebar" role="complementary">
+<div class="sidebar-region">
+<div id="block-nodesidebar" class="block nodesidebar">
+<article class="page display-sidebar">
+<div>
+<div class="field field-sidebar-content">
+<div class="field-content">
+<div class="paragraph">
+<div class="text display-default">
+<div class="paragraph__content">
+<div class="field field-text-body"><h3>Additional Translations</h3>
+<p>Use the language selector above or, for other languages, view PDFs at the links below:<br>
+<br>
+<a data-entity-substitution="media" data-entity-type="media" data-entity-uuid="d0265383-0b56-441a-b8bd-eb65cca06274" href="/sites/default/files/Heidelberg%20Catechism%20Khmer.pdf">Khmer (ខ្មែរ)</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="field-content">
+<div class="paragraph">
+<div class="text display-default">
+<div class="paragraph__content">
+<div class="field field-text-body"><h3>Background</h3>
+<p>The Heidelberg Catechism, written in 1563, originated in one of the few pockets of Calvinistic faith in the Lutheran and Catholic territories of Germany. Conceived originally as a teaching instrument to promote religious unity in the Palatinate, the catechism soon became a guide for preaching as well. It is a remarkably warm-hearted and personalized confession of faith, eminently deserving of its popularity among Reformed churches to the present day.</p>
+<p>This page contains the English version&nbsp;<a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="5b55222f-26e2-4beb-bc68-e9bca2fcc2ec" href="/welcome/beliefs/introduction-reformed-confessions-translation-2011">approved by Synod 2011</a>&nbsp;of the Christian Reformed Church. You may also&nbsp;<a data-entity-substitution="media" data-entity-type="media" data-entity-uuid="13956e4d-c772-4523-a1df-b43c7612808d" href="/sites/default/files/HeidelbergCatechism.pdf">view it as a PDF</a>. An earlier version (approved by Synod 1988)&nbsp;is also available as a&nbsp;<a data-entity-substitution="media" data-entity-type="media" data-entity-uuid="e4038d89-a9c0-4799-a232-e7a4fdc9587f" href="/sites/default/files/Heidelberg%20Catechism_old.pdf">PDF</a>.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="field-content">
+<div class="paragraph">
+<div class="text display-default">
+<div class="paragraph__content">
+<div class="field field-text-body"><h3>Related Resources</h3>
+<p><a href="https://www.faithaliveresources.org/AdvancedSearch/SearchResults.aspx?q=heidelberg+catechism">Faith Alive</a> publishes a&nbsp;variety of Heidelberg Catechism resources, including print copies, a commentary, devotionals, and youth study materials.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="field-content">
+<div class="paragraph">
+<div class="text display-default">
+<div class="paragraph__content">
+<div class="field field-text-body"><h3>Copyright and Permissions</h3>
+<p>Translation © 2011, Faith Alive Christian Resources. This English translation approved by Synod 2011 of the Christian Reformed Church in North America and by General Synod 2011 of the&nbsp;Reformed Church in America.</p>
+<p>All rights reserved. Except for study, education, review, or worship use up to 100 copies, no part of this resource may be reproduced in any manner whatsoever&nbsp;without written permission from the publisher. Material excerpted as described above must be distributed free of charge, and notice of copyright must appear with excerpted material as follows: “Translation © 2011, Faith Alive Christian Resources, Christian Reformed Church in North America.”</p>
+<p>For information about use of copyrighted material, email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d3d081f00041e1e0402031e2d0e1f0e030c43021f0a">[email&#160;protected]</a> or&nbsp;contact Permissions, Faith Alive Christian Resources, 1700 28th Street SE, Grand Rapids, MI 49508-1407.</p>
+<p>Unless otherwise noted, Scripture quotations in this resource are from the Holy Bible, New Revised Standard Version, © 1989, Division of Christian Education of the National Council of Churches of Christ in the United States of America. Used by permission. All rights reserved.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<footer role="contentinfo" id="footer" class="footer">
+<div class="layout-container">
+<div class="footer__left">
+<div class="footer-left-region">
+<div id="block-crcnacopyright" class="block crcnacopyright">
+Unless otherwise noted, all content &copy; 2024 Christian Reformed Church in North America (CRCNA). All rights reserved.
+</div>
+<nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer" class="block footer menu-block">
+<h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
+<ul class="clearfix menu">
+<li class="menu-item">
+<a href="https://www.crcna.org/sites/default/files/crcna_privacy_policy.pdf">Privacy Policy</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="footer__right">
+<div class="footer-right-region">
+<div id="block-crcnacontact" class="block crcnacontact">
+<div class="contact-container"><div class="contact-info"><a href="tel:800-272-5125" class="contact contact--phone">800-272-5125</a></div><div class="contact-info"><a href="/cdn-cgi/l/email-protection#137a7d757c537061707d723d7c6174" class="contact contact--email"><span class="__cf_email__" data-cfemail="1c75727a735c7f6e7f727d32736e7b">[email&#160;protected]</span></a></div><div class="contact-info"><a href="https://support.crcna.org/hc/en-us/requests/new" class="contact contact--chat">Live Chat</a></div></div><div class="contact-link"><a href="/contact">See All Contact Info</a></div>
+</div>
+</div>
+</div>
+<div class="footer__middle">
+<div class="footer-middle-region">
+<nav role="navigation" aria-labelledby="block-getconnected-menu" id="block-getconnected" class="block getconnected menu-block">
+<h2 id="block-getconnected-menu">Get Connected</h2>
+<ul class="clearfix menu">
+<li class="menu-item">
+<a href="/news-and-events/crc-news-weekly-email" data-drupal-link-system-path="node/3619">Weekly Email</a>
+</li>
+<li class="menu-item">
+<a href="https://network.crcna.org/">The Network</a>
+</li>
+<li class="menu-item">
+<a href="https://www.facebook.com/crcna">Facebook</a>
+</li>
+<li class="menu-item">
+<a href="https://twitter.com/crcna">Twitter</a>
+</li>
+<li class="menu-item">
+<a href="https://www.instagram.com/crcna/">Instagram</a>
+</li>
+</ul>
+</nav>
+<nav role="navigation" aria-labelledby="block-getinvolved-menu" id="block-getinvolved" class="block getinvolved menu-block">
+<h2 id="block-getinvolved-menu">Get Involved</h2>
+<ul class="clearfix menu">
+<li class="menu-item">
+<a href="/church-finder">Find a Church</a>
+</li>
+<li class="menu-item">
+<a href="/other/find-ministry">Find a Ministry</a>
+</li>
+<li class="menu-item">
+<a href="/donate" data-drupal-link-system-path="node/3595">Donate</a>
+</li>
+<li class="menu-item">
+<a href="/get-involved/volunteer" data-drupal-link-system-path="node/3606">Volunteer</a>
+</li>
+<li class="menu-item">
+<a href="/get-involved/careers" data-drupal-link-system-path="node/3607">Careers</a>
+</li>
+</ul>
+</nav>
+<nav role="navigation" aria-labelledby="block-quicklinks-menu" id="block-quicklinks" class="block quicklinks menu-block">
+<h2 id="block-quicklinks-menu">Quick Links</h2>
+<ul class="clearfix menu">
+<li class="menu-item">
+<a href="https://www.thebanner.org/">The Banner</a>
+</li>
+<li class="menu-item">
+<a href="https://crcna.wufoo.com/forms/qa6fexc1cq1rc8/">Address Change Form</a>
+</li>
+<li class="menu-item">
+<a href="/comment-guidelines" data-drupal-link-system-path="node/3943222">Comment Guidelines</a>
+</li>
+<li class="menu-item">
+<a href="/news-and-events/press-and-media-resources" data-drupal-link-system-path="node/3618">For the Media</a>
+</li>
+<li class="menu-item">
+<a href="/welcome/governance" data-drupal-link-system-path="node/3613">Governance</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/3943247","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NHZGPL6"]},"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJxdilFygzAMRC_kouP007MIx0CE5ZHMTOjp66Q0meRnte9p2biA-J4xi46Qr9XDg-lk9lPEafEqOIi1NHCLoyhfI89o_wMtaIsWp4vadkpPMJ6pGfpYS4osC19DVs3SwRP91d6-0ZJtsOe3IVPu8ckDVtze5RYEPwfdI1QYsqHOTpPtFTK8zLCXuo-y-Jym4Ie3tNEIT6Epx9Wpn18602th","theme":"crcna","theme_token":null},"ajaxTrustedUrl":{"\/crcna-search":true},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.80000000000000004,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading","unveilhooks":"unveilhooks\/ls.unveilhooks"}},"placeholderSrc":"","preferNative":false,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"googleCSE":{"cx":"003575743983523989641:ndai8qidvyg","language":"en","resultsWidth":0,"domain":"","isDefault":true},"crcna_donations":{"cron_last":1716077772},"user":{"uid":0,"permissionsHash":"7f5ddafed1c6431598bcecd7a36f58793017018346b12435676c6ad7affccf5c"}}</script>
+<script src="/sites/default/files/js/js_4lMt54Y9goEr3qnpfn64NcDXXfwtd9dboeZlyUhbmUU.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=crcna&amp;include=eJxdjktuwzAMRC-kmsfpUhjTqvyhRYGkgbqnr9E4KJLNfN5iMIKfk-SS5KdH2WmEl8TGDVRFR8gHu9_gT_ONV09VtUrJgUo19teK-t4HrPh-LOVp8S44ibUFOPIoylvmGZE6DNXQZ6fJjg4Z_slwtH6MsvhcphTKeXW67B71AuOZwnBtaSuZZeHteYO90CNe6RNRbIdtzz_aEIs2py-1_RfSPGth"></script>
+<script src="https://kit.fontawesome.com/7b18199a46.js" crossorigin="anonymous"></script>
+<script src="/sites/default/files/js/js_h0Fwcd8IW8ANxTRSAr_-1ep1xKdxLITWaIxWWweK__4.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=crcna&amp;include=eJxdjktuwzAMRC-kmsfpUhjTqvyhRYGkgbqnr9E4KJLNfN5iMIKfk-SS5KdH2WmEl8TGDVRFR8gHu9_gT_ONV09VtUrJgUo19teK-t4HrPh-LOVp8S44ibUFOPIoylvmGZE6DNXQZ6fJjg4Z_slwtH6MsvhcphTKeXW67B71AuOZwnBtaSuZZeHteYO90CNe6RNRbIdtzz_aEIs2py-1_RfSPGth"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?scels6"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?scels6"></script>
+<script src="/sites/default/files/js/js_BN-8SmdFxjJXzas8KDDkDCjxT_GybHxK6cr9h_4G68g.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=crcna&amp;include=eJxdjktuwzAMRC-kmsfpUhjTqvyhRYGkgbqnr9E4KJLNfN5iMIKfk-SS5KdH2WmEl8TGDVRFR8gHu9_gT_ONV09VtUrJgUo19teK-t4HrPh-LOVp8S44ibUFOPIoylvmGZE6DNXQZ6fJjg4Z_slwtH6MsvhcphTKeXW67B71AuOZwnBtaSuZZeHteYO90CNe6RNRbIdtzz_aEIs2py-1_RfSPGth"></script>
+</body>
+</html>

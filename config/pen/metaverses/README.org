@@ -1,0 +1,11 @@
+* Metaverses
+This is a free and open-source (FOSS) curation of metaverses that can be
+used for chatbots.
+
+| License | Discord server invite         |
+|---------+-------------------------------|
+| =GPL-3= | https://discord.gg/JwKGbAdNHR |
+
+See the =metaverses= repo for detailed documentation.
+
+http://github.com/semiosis/metaverses

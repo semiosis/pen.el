@@ -1,0 +1,4 @@
+ and read it back into a string
+   let s = readfile('/tmp/test.txt')\
+return s
+endfunction

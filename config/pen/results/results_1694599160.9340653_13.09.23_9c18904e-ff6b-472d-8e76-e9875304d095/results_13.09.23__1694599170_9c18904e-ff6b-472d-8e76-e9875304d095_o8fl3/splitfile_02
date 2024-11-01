@@ -1,0 +1,15 @@
+"undef" is a special scalar value that is returned when a function or method is called and the function or method has not been defined.
+
+The following is an example of using undef:
+
+sub edbi_prepare {
+
+return undef unless $dbh;
+
+$sth->finish() if $sth;
+
+my ($sql) = @_;
+
+our $sth = $dbh->prepare($sql) or return undef;
+
+return

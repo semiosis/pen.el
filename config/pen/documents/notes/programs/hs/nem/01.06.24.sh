@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts/bible-books;  "nem" "2" "Cor" "5:18-19" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "Matthew" "5:45-46" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"

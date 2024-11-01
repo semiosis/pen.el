@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer;  "litecli" "/volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer/Complete.db" "#" "<==" "o-db"
+cd /root/.emacs.d/host/pen.el/scripts;  "litecli" "/root/.pen/gematria-interlinear.db" "#" "<==" "o-db"
+cd /root/.emacs.d/host/pen.el/scripts;  "litecli" "/root/.pen/gematria-interlinear.db" "#" "<==" "o-db"
+cd /root/notes;  "litecli" "/volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer/Complete.db" "#" "<==" "o-db"
+cd /root/notes;  "litecli" "/root/.pen/gematria-interlinear.db" "#" "<==" "o-db"
+cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer;  "litecli" "/root/.pen/gematria-interlinear.db" "#" "<==" "o-db"
+cd /root/notes;  "litecli" "/root/.pen/gematria-interlinear.db" "#" "<==" "o-db"
+cd /root/.pen/documents/notes;  "litecli" "/root/.pen/gematria-interlinear.db" "#" "<==" "o-db"

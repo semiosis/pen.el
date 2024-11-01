@@ -1,0 +1,6 @@
+GROUP BY
+    [statement]
+
+    Groups rows that have the same values into
+    summary rows, like "find the number of
+    customers in each country".

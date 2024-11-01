@@ -1,0 +1,7 @@
+
+putStrLn "Enter a line of text for test 2:"
+putStrLn "What would you like to do?"
+
+line1, line2 :: String
+line1 = "Bobby Joe"
+line2 =

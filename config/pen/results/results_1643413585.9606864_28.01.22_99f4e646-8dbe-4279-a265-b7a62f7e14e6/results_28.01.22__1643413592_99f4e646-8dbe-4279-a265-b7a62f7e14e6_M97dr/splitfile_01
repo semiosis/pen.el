@@ -1,0 +1,10 @@
+git diff
+diff --git a/core b/core
+index e8d8c8e..b9c6e3b 100644
+--- a/core
++++ b/core
+@@ -1,5 +1,5 @@
+-harry potter and the prisoner of azkaban
++harry potter and the prisoner of azkaban (book)
+ harry potter and the goblet of fire
+ harry potter and the

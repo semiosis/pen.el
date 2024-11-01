@@ -1,0 +1,13 @@
+|
+    awk -f /path/to/script.awk
+#+END_SRC
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Imagine an linter for C"
+  code: |
+    clang -fsyntax-only /path/to/file.c
+#+END_SRC
+
+** Prompt
+#+BEGIN_S

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: PuTTY
+# contributor: Toptal & contributors
+# key: putty
+# --
+
+### PuTTY ###
+
+# Private key
+*.ppk

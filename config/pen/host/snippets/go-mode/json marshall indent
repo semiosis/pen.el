@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: json marshall indent
+# key: jsonpp
+# --
+data, err = json.MarshalIndent(issues, " ", " ")
+if err != nil {
+return "", errors.Trace(err)
+}

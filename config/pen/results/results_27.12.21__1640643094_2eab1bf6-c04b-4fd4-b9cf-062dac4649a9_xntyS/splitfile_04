@@ -1,0 +1,14 @@
+CRC-MACHINE-CLI(1)                     User Commands                    CRC-MACHINE-CLI(1)
+
+NAME
+       crc-machine-cli - a command line interface to the CRC-Machine
+
+SYNOPSIS
+       crc-machine-cli [OPTION]... [FILE]...
+
+DESCRIPTION
+       This is a command line interface to the CRC-Machine.
+       It is used to create, verify, and update CRC-Machine files.
+
+       The following commands are supported:
+      

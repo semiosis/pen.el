@@ -1,0 +1,11 @@
+https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/13-the-list-monad
+
+                                  The List Monad
+                                  Starting with Haskell
+
+   The List Monad
+
+   The List monad is a monad which represents lists.
+
+   It is important to know about the List monad because the
+   Haskell library

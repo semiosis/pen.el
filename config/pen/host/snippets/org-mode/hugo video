@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: hugo video
+# group: hugo
+# key: vid
+# --
+{{< video src="github.com/fantaysia/media/raw/master/Chemical-Hearts-2020-Take-Care.mp4" type="video/mp4" preload="auto" >}}

@@ -1,0 +1,18 @@
+* TODO Ensure I can create prompts that take text such as this, and render it as a web page
+#+BEGIN_SRC text -n :async :results verbatim code
+  http://www.pics-of-cats.com/
+  
+                              Cats
+  
+     Cats are really cute.
+     Here are some pictures of cats:
+  
+     <img src="cats1.png" />
+     <img src="cats2.png" />
+     <img src="cats3.png" />
+     <img src="cats4.png" />
+  '''
+#+END_SRC
+
+* example prompt:
+Soviet Gehenna lord, Bone Amputee, roses design, artstation

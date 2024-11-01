@@ -1,0 +1,15 @@
+ system(s)
+    you are working with - these are things that can change
+    over time and what-not.
+- you: Ok, so what are variables used for?
+- ansible guru: Variables are a declarative definition of what
+    your systems should be and/or can do.  Variables differ
+    from facts in that they can be useful in playbooks to perform
+    highly automated, sometimes dynamic or conditional tasks
+    against remote systems, apply templating to config files,
+    define things in playbooks that can change over time, the list
+    goes on and on...and on...
+- you: I get it.  But why do I need to know about any of this?
+- ansible guru: Ansible is all about automation and consistency - think
+    of all the duplicate work you could potentially save if you automated
+    your configuration generation, deployment and/or maintenance via ans

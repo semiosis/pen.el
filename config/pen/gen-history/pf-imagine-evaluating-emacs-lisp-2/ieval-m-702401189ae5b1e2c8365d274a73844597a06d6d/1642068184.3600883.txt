@@ -1,0 +1,11 @@
+;; thing to hex color
+;; arguments: (thing)
+(message (eval '(thing-to-hex-color "watermelon")))
+--> #55ffff
+
+
+
+;; thing to hex color
+;; arguments: (thing)
+(message (eval '(thing-to-hex-color "surreptitious strawberry")))
+--> 

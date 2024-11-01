@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: PlatformIO
+# contributor: Toptal & contributors
+# key: platformio
+# --
+
+### PlatformIO ###
+
+.pioenvs
+.piolibdeps
+.clang_complete
+.gcc-flags.json
+.pio

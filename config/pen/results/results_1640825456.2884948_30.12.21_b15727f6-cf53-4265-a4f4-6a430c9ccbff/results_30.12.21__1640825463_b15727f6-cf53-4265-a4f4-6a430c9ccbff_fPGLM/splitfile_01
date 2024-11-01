@@ -1,0 +1,26 @@
+ The key-binding to quit is "Ctrl-x".
+"""
+
+# count start and end tags
+START_TAG = "<START>"
+END_TAG = "<END>"
+
+
+def remove_Punctuation(text):
+    punct = string.punctuation
+    punct = punct.replace("?", "")
+    punct = punct.replace("!", "")
+
+    for c in punct:
+        text = text.replace(c, "")
+
+    return text
+
+
+def get_tag_counts(conversations):
+    total_tags = 0
+    start_tags = 0
+    end_tags = 0
+    for conv in conversations:
+        for sent in conv:
+            if sent.startswith("

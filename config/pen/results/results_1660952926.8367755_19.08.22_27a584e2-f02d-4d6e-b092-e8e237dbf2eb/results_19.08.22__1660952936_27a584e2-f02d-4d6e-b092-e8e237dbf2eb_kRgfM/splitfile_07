@@ -1,0 +1,33 @@
+ eval
+  hosts: all
+  gather_facts: false
+  vars:
+    clojure_version: "1.10.1"
+  tasks:
+    - name: install clojure
+      apt:
+        name: "{{ item }}"
+        state: installed
+        update_cache: yes
+      with_items:
+        - clojure
+        - clojure-contrib
+      become: yes
+
+    - name: install leiningen
+      apt:
+        name: "{{ item }}"
+        state: installed
+        update_cache: yes
+      with_items:
+        - leiningen
+      become: yes
+
+    - name: install lein-clojure
+      clomacs:
+        name: "lein-clojure"
+        version: "{{ clojure_version }}"
+        action: install
+      become: yes
+
+    - name: install

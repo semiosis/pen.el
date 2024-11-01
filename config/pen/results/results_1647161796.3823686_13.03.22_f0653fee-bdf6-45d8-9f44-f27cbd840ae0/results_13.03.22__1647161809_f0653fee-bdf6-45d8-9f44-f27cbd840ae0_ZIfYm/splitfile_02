@@ -1,0 +1,8 @@
+ialization(main).
+
+:- include('../../../../../src/clpqr-common/prolog/clpqr-common.pl').
+
+:- include('../../../../src/clpqr-eplex/prolog/clpqr-eplex.pl').
+
+:- include('../../../src/eplex_solver_state.pl').
+EOD

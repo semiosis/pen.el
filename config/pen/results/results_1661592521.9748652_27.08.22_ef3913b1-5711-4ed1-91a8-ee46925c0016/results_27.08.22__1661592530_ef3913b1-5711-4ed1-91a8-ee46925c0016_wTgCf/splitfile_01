@@ -1,0 +1,22 @@
+
+
+  -- Parse each record into a list of fields.
+  let fields = map (T.words . T.unpack) records
+
+  -- Count the number of fields in each record.
+  let fieldCounts = map (length . snd) fields
+
+  -- Print the number of fields in each record.
+  print fieldCounts
+EOD
+
+# ruby files
+cat draft.ruby <<EOD
+# This program reads a CSV from stdin and stores inside a datastructure.
+# It is not very memory efficient, but it is easy to write and understand.
+# It is also not very fast, but it is easy to understand and modify.
+# It uses Ruby's CSV library to parse the CSV file, and the standard library's Hash class to store the data.
+# This program is intended as a starting point for more efficient and faster programs.
+require 'csv'
+require 'json'
+require

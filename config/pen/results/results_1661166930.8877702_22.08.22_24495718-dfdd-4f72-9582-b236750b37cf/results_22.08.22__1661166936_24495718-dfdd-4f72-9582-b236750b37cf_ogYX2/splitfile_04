@@ -1,0 +1,7 @@
+
+    " let s = substitute(s, "
+", "", "g")
+    let s = substitute(s, "", "
+", "g")
+
+    " Return to where I was

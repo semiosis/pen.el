@@ -1,0 +1,7 @@
+
+To quit Emacs when running a GUI version, you can either press
+
+1. Control-x followed by Control-c,
+2. Escape followed by q, or
+3. Control-g.
+

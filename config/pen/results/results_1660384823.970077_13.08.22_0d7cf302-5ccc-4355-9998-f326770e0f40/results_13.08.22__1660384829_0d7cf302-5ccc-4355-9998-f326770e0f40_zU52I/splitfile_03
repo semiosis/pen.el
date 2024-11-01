@@ -1,0 +1,5 @@
+The above code is equivalent to the following:
+
+module Main where\n\nimport Options.Applicative\n
+
+main = do\n  opt <- getArgs\n  case opt of\n    "foo" -> foo\n    "bar" -> bar\n    _ -> usage

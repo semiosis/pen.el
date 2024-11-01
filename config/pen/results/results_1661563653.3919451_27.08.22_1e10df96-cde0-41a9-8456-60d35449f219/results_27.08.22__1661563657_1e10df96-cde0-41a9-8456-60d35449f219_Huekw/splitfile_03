@@ -1,0 +1,13 @@
+http://www.lispworks.com/reference/HyperSpec/Body/f_unionc.htm
+
+
+                  (union type-specifier type-specifier
+                  ...)
+
+
+              Type Specifiers
+
+
+      type-specifier:
+         type-specifier-head
+         type-specifier-head type-qualifier

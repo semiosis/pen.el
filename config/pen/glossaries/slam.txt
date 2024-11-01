@@ -1,0 +1,97 @@
+control theory
+
+estimator
+    Examples:
+    - Kalman filter
+
+linear-Gaussian model
+    A Bayes net where all the variables are
+    Gaussian, and each variable's mean is
+    linear in the values of its parents.
+    
+    They are widely used because they support
+    efficient inference.
+    
+    Linear dynamical systems are an important
+    special case.
+
+particle filter
+    [bayesian filter]
+
+    An extension of Bayesian filter.
+
+    See here for more info:
+        v +/"particle filter" "$NOTES/ws/glossaries/probability.txt"
+
+bayes filter
+bayesian filter
+    https://leimao.github.io/article/Introduction-to-Bayesian-Filter/
+
+    See here for more info:
+        v +/"bayesian filter" "$NOTES/ws/glossaries/probability.txt"
+
+state estimation
+    [problem]
+
+    - Estimate the map and robot's pose
+    - Bayes filter is one tool for state
+      estimation
+
+    Steps:
+    - Prediction
+    - Correlation
+
+Kalman Filter
+    [type/one implementation of the bayes filter]
+
+    Realises the steps for state estimation:
+    - Prediction
+    - Correlation
+
+Kalman Filter Distribution
+
+pose
+    The pose of a robot tells us location of
+    the robot in either two or three
+    dimensions and also its orientation.
+    
+    That is, in what direction is it facing.
+    
+    For mobile robots, the pose can be a
+    simple three element vector, but for arm-
+    based robots, we often use a matrix to
+    describe the pose.
+
+variability
+scatter
+spread
+dispersion
+Statistical dispersion
+    [statistics]
+
+    Dispersion is the extent to which a
+    distribution is stretched or squeezed.
+    
+    Measures of statistical dispersion:
+    - variance,
+    - standard deviation, and
+    - interquartile range.
+
+covariance
+    A measure of the joint variability of two
+    random variables.
+    
+    If the greater values of one variable
+    mainly correspond with the greater values
+    of the other variable, and the same holds
+    for the lesser values, the covariance is
+    positive.
+
+covariance matrix
+auto-covariance matrix
+dispersion matrix
+variance matrix
+variance–covariance matrix
+    A square matrix giving the covariance
+    between each pair of elements of a given
+    random vector.

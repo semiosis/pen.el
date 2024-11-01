@@ -1,0 +1,33 @@
+
+The popular packages are:
+- VscodeVim
+- Remote vscode
+- GitLens (for Git)
+- Todo Tree
+- Zzzzzzzzzzz
+- Add Package
+- Quick Docs
+- Inspire Me
+- Todo Switcher
+- Comment Search
+...
+###
+Human: Thanks.
+###
+AI: Happy to help.
+###
+Human: Bye.
+###
+AI: Goodbye!
+""")
+
+
+def create_text_file(file_name, content, is_a_question):
+    # create a new text file and the write content to it (overwrite if it exists)
+    with open(file_name, "w") as text_file:
+        text_file.write(content)
+
+    if is_a_question:
+        # write the file to google drive as well
+        gauth = GoogleAuth()
+        #

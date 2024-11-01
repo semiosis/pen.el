@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: map a lambda
+# group: 
+# key: mapl
+# --
+list(map(lambda x: x.label_, doc.ents))

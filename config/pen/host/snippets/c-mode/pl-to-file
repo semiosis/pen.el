@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: pl-to-file
+# group: 
+# key: fpl
+# --
+void pf(char* s) {
+FILE *fptr = fopen("/tmp/log.txt", "w");
+if (fptr == NULL)
+{
+printf("Could not open file");
+return;
+}
+
+fprintf(fptr,"%s\n", s);
+fclose(fptr);
+}

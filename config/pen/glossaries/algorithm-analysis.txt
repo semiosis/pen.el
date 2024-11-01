@@ -1,0 +1,136 @@
+algorithm complexity analysis
+
+ifl little theta vs big theta
+
+ewwlinks +/"Family of Bachmann–Landau notations" "https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation"
+
+Big-O
+Big O
+    [algorithmic complexity]
+
+    Only necessary that you find a particular
+    multiplier k for which the inequality
+    holds beyond some minimum x. 
+
+    vs +/"^import Data.Set (fromList, toList, intersection)" "$MYGIT/mark-watson/haskell_tutorial_cookbook_examples/ImPure/CommonWords.hs"
+    pin "$MYGIT/mark-watson/haskell_tutorial_cookbook_examples/ImPure/CommonWords.hs"
+
+    Tells us what an algorithm is guarantied
+    to run within, an upper bound.
+
+Big Omega
+    [algorithmic complexity]
+
+    Far less often discussed.
+
+    Tells us the minimum time an algorithm is
+    guarantied to run, a lower bound.
+
+Big Theta
+    [algorithmic complexity]
+
+    Tells us that both Big O annd Big Omega are in fact the same for a given analysis.
+
+time complexity
+    [algorithmic complexity]
+
+    An algorithm's input to the number of
+    steps it takes.
+
+space complexity
+    [algorithmic complexity]
+
+    An algorithm's input to the number of
+    storage locations it uses.
+
+Little-O
+Little O
+    It must be that there is a minimum x after
+    which the inequality holds no matter how
+    small you make k, as long as it is not
+    negative or zero.
+
+    These both describe upper bounds, although
+    somewhat counter-intuitively, Little-o is
+    the stronger statement.
+
+    There is a much larger gap between the
+    growth rates of f and g if f ∈ o(g) than
+    if f ∈ O(g).
+
+asymptotic behavior
+    ewwlinks +/"^Asymptotic behavior" "http://discrete.gr/complexity/"
+
+    Drop all factors and keep the largest growing term.
+
+    We are interested in the limit of function
+    f as n tends to infinity.
+
+    Example:
+        The asymptotic behavior of f(n) = 2n + 8
+        is described by the function f(n) = n.
+
+    ewwlinks +/"^Let us find the asymptotic behavior" "http://discrete.gr/complexity/"
+
+worst-case analysis
+    ewwlinks +/"^Worst-case analysis" "http://discrete.gr/complexity/"
+
+    Considering the case when we're the most unlucky.
+
+Worst-case
+    The maximum number of steps taken on any
+    instance of size a.
+
+Best-case
+    The minimum number of steps taken on any
+    instance of size a.
+
+Average case
+    An average number of steps taken on any
+    instance of size a.
+
+Amortized
+    A sequence of operations applied to the
+    input of size a averaged over time.
+
+Galactic algorithm
+    One that runs faster than any other
+    algorithm for problems that are
+    sufficiently large, but where
+    "sufficiently large" is so big that the
+    algorithm is never used in practice.
+    
+    Galactic algorithms were so named by
+    Richard Lipton and Ken Regan, as they will
+    never be used on any of the merely
+    terrestrial data sets we find here on
+    Earth.
+    
+    An example of a galactic algorithm is the
+    fastest known way to multiply two numbers,
+    which is based on a 1729-dimensional
+    Fourier transform.
+    
+    This means it will not reach its stated
+    efficiency until the numbers have at least
+    21729 digits, (vastly) more digits than
+    there are atoms in the universe.
+    
+    So this algorithm is never used in
+    practice.
+    
+    Despite the fact that they will never be
+    used, galactic algorithms may still
+    contribute to computer science:
+    - An algorithm, even if impractical, may
+      show new techniques that may eventually
+      be used to create practical algorithms.
+    
+    - Computer sizes may catch up to the
+      crossover point, so that a previously
+      impractical algorithm becomes practical.
+    
+    - An impractical algorithm can still
+      demonstrate that conjectured bounds can
+      be achieved, or alternatively show that
+      conjectured bounds are wrong.

@@ -1,0 +1,30 @@
+
+$ cat code <<EOD
+ready                   :: IO Bool
+ready                   =  do c <- getChar
+                              c == 'y'  -- Bad!!!
+EOD
+$ ghci
+GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
+λ head [1..5]
+1
+λ
+
+EOD
+
+I'm not sure how to fix this.
+
+Thanks for any help!
+
+-- 
+
+- Ben
+
+-- 
+
+Benjamin Pollack
+http://bitquabit.com
+
+EOD
+
+# vim: syntax=markdown

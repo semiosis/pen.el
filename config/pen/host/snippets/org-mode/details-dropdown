@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: details-dropdown
+# group: hugo
+# key: details
+# --
+#+begin_details
+#+begin_summary
+Dates
+#+end_summary
+- *started:* 2018
+- *ended:* 2019
+#+end_details

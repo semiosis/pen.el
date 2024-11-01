@@ -1,0 +1,5 @@
+cd /var/smulliga/source/gist/egmontkob/eb114294efbcd5adb1944c9f3cb5feda;  "ranger" "#" "<==" "zsh"
+cd /var/smulliga/source/gist/egmontkob/eb114294efbcd5adb1944c9f3cb5feda;  "ranger" "#" "<==" "zsh"
+cd /var/smulliga/source/gist/egmontkob/eb114294efbcd5adb1944c9f3cb5feda;  "ranger" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/messages" "#" "<==" "bash"

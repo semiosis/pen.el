@@ -1,0 +1,46 @@
+# in-development: yes
+title: "Negate Sentence"
+tags: prose nlp-task
+prompt-version: 2
+# for right-click menu
+paths:
+- prose:
+  - transform
+    - 
+prompt: |+
+    Negate the following sentence.
+
+    Input: interactive lambda with no arguments
+    Output: interactive lambda with arguments
+    Input: I want to go home.
+    Output: I don't want to go home.
+    Input: it's better to be feared than loved
+    Output: it's better to be loved than feared
+    Input: One plus one equals two.
+    Output: One plus one does not equal two.
+    Input: But you are wrong.
+    Output: And you are right.
+    Input: <statement>
+    Output: 
+engine: "OpenAI Davinci"
+# The command passed to lm-complete. This will use GPT-3.
+temperature: 0.4
+max-generated-tokens: 60
+top-p: 1.0
+best-of: 1
+stop-sequences:
+- "Input"
+vars:
+- "statement"
+examples:
+- "Mars is very far away."
+n-collate: 1
+n-completions: 1
+filter: on
+
+# --------
+# Doc keys
+# --------
+
+# Function documentation.
+doc: "This prompt negates a prose statement."

@@ -1,0 +1,5 @@
+engine-title: OpenAI Babbage
+include: OpenAI Davinci
+lm-command: "openai-complete.sh"
+model: babbage
+foundation: true

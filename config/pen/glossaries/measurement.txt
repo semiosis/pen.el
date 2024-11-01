@@ -1,0 +1,7 @@
+Accuracy
+    The closeness of the measurements to a
+    specific value
+
+precision
+    The closeness of the measurements to each
+    other.

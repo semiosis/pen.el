@@ -1,0 +1,9 @@
+# key: arrays
+# name: arraystring
+# --
+vsf := make([]string, 0)
+
+var sWords = []string{
+"",
+"make",
+}

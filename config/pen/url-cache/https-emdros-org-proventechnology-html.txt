@@ -1,0 +1,269 @@
+HTTP/1.1 200 OK
+Date: Thu, 13 Jun 2024 10:49:38 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Last-Modified: Fri, 10 May 2019 09:37:15 GMT
+ETag: "2370-588854fd5e8c0-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 3368
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" 
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>emdros: A Corpus Query System. A proven technology</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="emdros.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+</head>
+
+<body>
+<div class="page">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+
+  <tr align="left" valign="top"> 
+     <!-- menu -->
+     <td class="menu"> 
+
+        <!-- menu header -->
+        <div class="menu-head">
+	<P>Menu<P>
+        </div>
+
+        <!-- Help section -->
+        <div CLASS="menu-section">Help</div>
+
+        <div class="menu">
+           <div class="menu-item"><img SRC="dot.gif" ALT="Home">&nbsp;<a class="menu" href="./index.html">Home</a></div>
+           <div class="menu-item"><img SRC="dot.gif" ALT="What is Emdros?">&nbsp;<a class="menu" href="./whatis.html">What is Emdros?</a></div>
+         <div class="menu">
+           <div class="menu-item2"><img SRC="dot.gif" ALT="">&nbsp;<a class="menu2" href="./explaining.html">Explaining Emdros</a></div>
+         </div>
+         <div class="menu">
+           <div class="menu-item2"><img SRC="dot.gif" ALT="">&nbsp;<a class="menu2" href="./foundation.html">Foundations</a></div>
+         </div>
+         <div class="menu">
+           <div class="menu-item2"><img SRC="dot.gif" ALT="">&nbsp;<a class="menu2" href="./emdf.html">EMdF database model</a></div>
+         </div>
+         <div class="menu">
+           <div class="menu-item2"><img SRC="dot.gif" ALT="">&nbsp;<a class="menu2" href="./mql.html">MQL query language</a></div>
+         </div>
+         <div class="menu">
+           <div class="menu-item2"><img SRC="dot.gif" ALT="">&nbsp;<a class="menu2" href="./proventechnology.html">A proven technology</a></div>
+         </div>
+         <div class="menu">
+           <div class="menu-item2"><img SRC="dot.gif" ALT="">&nbsp;<a class="menu2" href="./thanks.html">Thanks</a></div>
+         </div>
+           <div class="menu-item"><img SRC="dot.gif" ALT="Download">&nbsp;<a class="menu" href="./download.html">Download</a></div>
+           <div class="menu-item"><img SRC="dot.gif" ALT="Documentation">&nbsp;<a class="menu" href="./docs.html">Documentation</a></div>
+           <div class="menu-item"><img SRC="dot.gif" ALT="Examples">&nbsp;<a class="menu" href="./examples.html">Examples</a></div>
+           <div class="menu-item"><img SRC="dot.gif" ALT="FAQ">&nbsp;<a class="menu" href="./faq.html">FAQ</a></div>
+           <div class="menu-item"><img SRC="dot.gif" ALT="Contact">&nbsp;<a class="menu" href="./contact.html">Contact</a></div>
+        </div> <!-- class="menu" -->
+
+  <br>
+
+  <!-- Community section -->
+  <div CLASS="menu-section">
+    Community
+  </div>
+
+  <div CLASS="menu">
+    <div CLASS="menu-item"><img SRC="dot.gif" ALT="Blog">&nbsp;<A CLASS="menu" HREF="http://www.grovescenter.org/blogs/emdros/">Emdros blog</A></div>
+  </div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=185724; 
+var sc_invisible=1; 
+var sc_partition=0; 
+var sc_security=""; 
+var sc_remove_link=1; 
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><img  src="http://c1.statcounter.com/counter.php?sc_project=185724&amp;java=0&amp;security=&amp;invisible=1" alt="free web page hit counter" border="0"> </noscript>
+<!-- End of StatCounter Code -->
+
+      <br>		  
+      <br>	
+	  <br>
+	</td>
+	<td class="main"> 
+
+
+  <!-- Page head -->
+  <table class="pagehead">
+  <tr>
+    <!-- Logo -->
+    <td class="logo-slogan">
+
+      <div class="logo"><A class="logo"
+      HREF="http://emdros.org/index.html"><IMG
+      style="border:0;width:340px;height:106px;padding-bottom:6px"
+      SRC="emdros-logo.png" ALT="Emdros - the database engine for
+      analyzed or annotated text"></A></div>
+
+      <div class="slogan">Emdros - the database engine for analyzed or
+      annotated text</div>
+
+    </td>
+
+    <!-- ******************************
+         **
+         ** Hosted by begins
+         **
+         ******************************
+    -->
+
+
+
+    <td class="hosted-by">
+      <!--
+	<div CLASS="search">
+	<form ACTION="search.php" METHOD="GET">
+	   <input TYPE="TEXT" NAME="terms" SIZE="22" ALT="Write search terms">
+	   <input TYPE="SUBMIT" VALUE="Search emdros.org">
+        </form>
+	</div>
+	-->
+    </td>
+
+
+
+    <!-- ******************************
+         **
+         ** Hosted by ends
+         **
+         ******************************
+    -->
+
+  </tr>
+  </table>
+
+
+  
+<h2>Emdros is a proven technology</h2>
+
+<h3>Commercial use</h3>
+
+<P>I have <strong>sold an Emdros license</strong> to <A
+HREF="http://www.logos.com">Logos Bible Software</A>.  Logos is the
+world's leading vendor of Bible Software, and Emdros powers the Syntax
+Search in their Libronix product, as well as a "grammatical sketch",
+similar to Adam Kilgariff's <A
+HREF="http://www.sketchengine.co.uk">Sketch Engine</A>, but for the
+Biblical original languages.</P>
+
+<P>I have <strong>sold an Emdros license</strong> to the <A
+HREF="http://www.dbg.de/">German Bible Society</A> for use in their <A
+HREF="http://www.logos.com/products/details/1981">SESB product</A>
+(Stuttgart Electronic Study Bible).  SESB will use Emdros as a basis
+for searching a Hebrew database.</P>
+
+<h3>Academic use</h3>
+
+<P>Emdros is being used with great success in a number of places,
+mostly academic settings with linguistic database needs.</P>
+
+<P>Among them is a large-scale Hebrew database project at the <A
+HREF="http://www.th.vu.nl/~wiweb/" target="_blank">Vrije Universiteit
+Amsterdam</A>.  We have imported a 420,000-word corpus of syntactic
+analyses with 1.4 million syntactic objects, and Emdros has proven to
+be fast and reliable.</P>
+
+<P>Linguists at one of the Universities in Toulouse are using Emdros
+in their research.  Emdros powers the "Keskya" concordancer, developed
+at <A HREF="http://www.irit.fr">IRIT</A>, Toulouse, France, which
+helps the linguists conduct their corpus-based research.</P>
+
+<P>The Thai Treebank used to have an online, searcheable interface
+powered by Emdros.  It appears to be offline for now, however.</P>
+
+<h3>Government use</h3>
+
+<P>The <A HREF="http://www.knaw.nl">Royal Netherlands Academy of Arts
+and Sciences</A> (KNAW) have a subdivision called "<A
+HREF="http://www.dans.knaw.nl/en">DANS</A>", which stands for "Data
+Archiving and Networked Services".  The DANS have selected Emdros to
+be the underlying database technology for at least two projects aimed
+at making the Dutch computational linguistic research legacy available
+and archivable online.  One of them can be seen <A
+HREF="http://wivu.dans.knaw.nl">here</A>.</P>
+
+
+<h2>What users say</h2>
+
+<P>"At long last, a query interface that one does not have to fight
+with!  Emdros allows the exegete to formulate queries the way he
+thinks about the text. It's natural and intuitive."</P>
+
+<P align="right">--Prof. Kirk Lowery, Director, Westminster Hebrew
+Institute</P>
+
+<P>
+<br>
+<br></P>
+
+<P>"We use Emdros for complex consistency checks on the data we
+produce. It allows us to translate involved linguistic constructions
+to clear and practical queries. The EMdF model makes it possible to
+address both the linguistic and the philological issues of classical
+corpora."</P>
+
+<P align="right">--Constantijn Sikkel, Werkgroep Informatica, Faculty
+of Theology, Vrije Universiteit Amsterdam</P>
+
+<P>
+<br>
+<br></P>
+
+<P>"Your level of support for Emdros is really outstanding, and an
+important reason for why I think that using and building on Emdros is
+a Good Idea."</P>
+
+<P align="right">--Michael Piotrowski, M.A., PhD candidate, University
+of Magdeburg</P>
+
+<P>
+<br>
+<br></P>
+
+<P>"I particularly like the ease with which I can write Emdros-based
+applications, thanks to the powerful API's, the support for various
+programming and scripting languages, and the excellent
+documentation. Try it, and you'll see what I mean."</P>
+
+<P align="right">--Hendrik Jan Bosman, PhD candidate, Faculty of
+Theology, Vrije Universiteit Amsterdam</P>
+
+
+
+
+	</td>
+<!--
+	<td class="rightboxes"> 
+	</td>
+-->
+  </tr>
+</table>
+   <div class="footer">&copy; Ulrik Sandborg-Petersen 2005-2017.  <A
+HREF="http://scripturesys.com/">Scripture Systems ApS</A> provides <A
+HREF="http://scripturesys.com/">commercial support for Emdros</A>.
+<div>
+</div>  <!-- class="page" -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7616455-2");
+pageTracker._trackPageview();
+} catch(err) {}</script></body>
+</html>

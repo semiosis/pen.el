@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: latex header
+# group: latex
+# key: latexheader
+# --
+#+LATEX_HEADER: \input{/home/shane/.latexrc}

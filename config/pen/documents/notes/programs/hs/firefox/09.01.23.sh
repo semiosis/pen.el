@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "firefox" "-no-remote" "-wait-for-browser" "-foreground" "-profile" "/tmp/playwright" "-juggler-pipe" "about:blank" "#" "<==" "node"
+cd /root/.emacs.d/host/pen.el/src;  "firefox" "-no-remote" "-headless" "-profile" "/tmp/playwright" "-juggler-pipe" "about:blank" "#" "<==" "node"
+cd /root/notes;  "firefox" "-no-remote" "-headless" "-profile" "/tmp/playwright" "-juggler-pipe" "about:blank" "#" "<==" "node"
+cd /root/notes;  "firefox" "-no-remote" "-headless" "-profile" "/tmp/playwright" "-juggler-pipe" "about:blank" "#" "<==" "node"
+cd /root/.emacs.d/host/pen.el/src;  "firefox" "-no-remote" "-headless" "-profile" "/tmp/playwright" "-juggler-pipe" "about:blank" "#" "<==" "node"

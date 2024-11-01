@@ -1,0 +1,288 @@
+A radiation-hardened quine
+    A quine that can have any single character
+    removed and still produces the original
+    program with no missing character.
+    
+    Of necessity, such quines are much more
+    convoluted than ordinary quines, as is
+    seen by the following example in Ruby:
+
+multiquine
+biquine
+    https://semiosis.github.io/posts/the-codex-quine/
+
+    A multiquine consisting of 2 languages (or
+    biquine) would be a program which:
+
+    - When run, is a quine in language X.
+    - When supplied with a user-defined
+      command line argument, would print a
+      second program in language Y.
+    - Given the second program in language Y,
+      when run normally, would also be a quine
+      in language Y.
+    - Given the second program in language Y,
+      and supplied with a user-defined command
+      line argument, would produce the
+      original program in language X.
+    - A biquine could then be seen as a set of
+      two programs, both of which are able to
+      print either of the two, depending on
+      the command line argument supplied.
+
+total programming language
+total functional programming
+strong functional programming
+    Contrasted with weak functional
+    programming is a programming paradigm that
+    restricts the range of programs to those
+    that are provably terminating.
+
+    Example:
+        https://dhall-lang.org/
+
+ordinary functional programming
+weak functional programming
+
+Standard ML
+SML
+Standard Meta Language
+    https://github.com/standardml
+
+    A general-purpose, modular, functional
+    programming language with compile-time
+    type checking and type inference.
+    
+    It is popular among compiler writers and
+    programming language researchers, as well
+    as in the development of theorem provers.
+    
+    SML is a modern dialect of ML, the
+    programming language used in the Logic for
+    Computable Functions theorem-proving
+    project.
+    
+    It is distinctive among widely used
+    languages in that it has a formal
+    specification.
+
+    https://github.com/topics/standard-ml?o=asc&s=stars
+
+    $MYGIT/standardml/parcom/examples/receipt.sml
+
+ML
+Meta Language
+    A general-purpose functional programming
+    language.
+    
+    ML is statically-scoped.
+    
+    It is known for its use of the polymorphic
+    Hindley–Milner type system, which
+    automatically assigns the types of most
+    expressions without requiring explicit
+    type annotations, and ensures type safety
+    – there is a formal proof that a
+    well-typed ML program does not cause
+    runtime type errors.
+    
+    ML provides pattern matching for function
+    arguments, garbage collection, imperative
+    programming, call-by-value and currying.
+    
+    It is used heavily in programming language
+    research and is one of the few languages
+    to be completely specified and verified
+    using formal semantics.
+    
+    Its types and pattern matching make it
+    well-suited and commonly used to operate
+    on other formal languages, such as in
+    compiler writing, automated theorem
+    proving, and formal verification.
+
+Duck typing
+    A concept related to dynamic typing, where
+    the type or the class of an object is less
+    important than the methods it defines.
+    
+    When you use duck typing, you do not check
+    types at all.
+    
+    Instead, you check for the presence of a
+    given method or attribute.
+
+tail call
+    A subroutine call performed as the final
+    action of a procedure.
+    
+    If a tail call might lead to the same
+    subroutine being called again later in the
+    call chain, the subroutine is said to be
+    tail-recursive, which is a special case of
+    recursion.
+
+tail recursion
+    The last statement in a function, is a
+    recursive call to the same function.
+    
+    You are correct that there is no point in
+    doing this in a language that doesn't
+    optimize away that recursion.
+
+weak typing
+
+    Use a value of one type as if it were a
+    value of another type.
+
+    This is sometimes described as "weak
+    typing".
+
+    symptoms:
+    - void pointers
+    - coercion
+
+coercion vs conversion
+    Occurs when you have a statically typed
+    language and you use the syntactic
+    features of the language to force the
+    usage of one type as if it were a
+    different type (consider the common use of
+    void* in C).
+    
+    Coercion is usually a symptom of weak
+    typing.
+    
+    Conversion, on the other hand, creates a
+    brand-new object of the appropriate type.
+
+strong typing
+strongly typed
+    The use of programming language types in
+    order to both capture invariants of the
+    code, and ensure its correctness, and
+    definitely exclude certain classes of
+    programming errors.
+
+    Not
+    dynamic typing
+
+dynamic typing
+dynamically typed
+    Checking happens at run time.
+
+static typing
+statically typed
+
+Probabilistic Programming Languages
+PPL
+PPLs
+
+scoping rules
+    The scope of a name (variable names, data
+    structure names, procedure names) is the
+    part of the program within which the name
+    can be used.
+
+syntax
+    The set of rules governing what the
+    allowed expressions of a programming
+    language can look like; these are the
+    rules governing allowed program structure.
+    
+    The most common way of specifying the
+    syntax of a language is through a grammar,
+    which is a formal description of how to
+    generate expressions by substitution.
+
+variadic arcguments
+    ... is syntax for variadic arguments in Go.
+
+    As it is in racket.
+
+verb-noun vs noun-verb
+    https://simblob.blogspot.com/2019/10/verb-noun-vs-noun-verb.html
+
+verb-noun
+    - unix shell
+    - vim's commands; d0
+    - functional programming -- haskell
+
+noun-verb
+    - windows
+      Windows typically specify a noun first
+      by clicking an icon, and then the verb
+      by choosing from the right click menu.
+
+strongly typed [language]
+    Has stricter typing rules at compile time,
+    which implies that errors and exceptions
+    are more likely to happen during
+    compilation.
+    
+    However, dynamically typed languages
+    (where type checking happens at run time)
+    can also be strongly typed.
+    
+    Most of these rules affect variable
+    assignment, return values and function
+    calling.
+    
+weakly typed [language]
+loosely typed
+    Has looser typing rules and may produce
+    unpredictable results or may perform
+    implicit type conversion at runtime.
+    
+    A different but related concept is latent
+    typing.
+
+latent typing
+    Refers to a type system where types are
+    associated with values and not variables.
+    
+    An example latently typed language is
+    Scheme.
+    
+    This typically requires run-time type
+    checking and so is commonly used
+    synonymously with dynamic typing.
+
+Dynamic type checking
+    The process of verifying the type safety
+    of a program at runtime.
+    
+    Implementations of dynamically type-
+    checked languages generally associate each
+    runtime object with a type tag (i.e., a
+    reference to a type) containing its type
+    information.
+    
+    This runtime type information (RTTI) can
+    also be used to implement dynamic
+    dispatch, late binding, downcasting,
+    reflection, and similar features.
+
+free-form language
+    A programming language in which the
+    positioning of characters on the page in
+    program text is insignificant.
+    
+    Program text does not need to be placed in
+    specific columns as on old punched card
+    systems, and frequently ends of lines are
+    insignificant.
+    
+    Whitespace characters are used only to
+    delimit tokens, and have no other
+    significance.
+
+    Example:
+    - m4 (templating language)
+
+Datalog
+    A declarative logic programming language
+    that syntactically is a subset of Prolog.
+
+    It is often used as a query language for
+    deductive databases.

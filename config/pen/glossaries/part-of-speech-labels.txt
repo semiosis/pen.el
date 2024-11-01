@@ -1,0 +1,29 @@
+$NOTES/ws/nlp-natural-language-processing/pos-parts-of-speech-labels.org
+https://universaldependencies.org/u/pos/
+https://universaldependencies.org/u/pos/PROPN.html
+
+conjunction
+CONJ
+CNJ
+    A part of speech that connects words,
+    phrases, or clauses that are called the
+    conjuncts of the conjunctions.
+
+subordinating conjunction
+Preposition
+IN
+    A conjunction that introduces a
+    subordinating clause, e.g. although,
+    because.
+
+Coordinating conjunction
+CC
+    A conjunction placed between words,
+    phrases, clauses, or sentences of equal
+    rank, e.g.  and, but, or.
+
+Predeterminer
+PDT
+    A word or phrase that occurs before a
+    determiner, typically quantifying the noun
+    phrase, for example both or a lot of.

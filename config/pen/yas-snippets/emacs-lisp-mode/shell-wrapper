@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: shell-wrapper
+# group: shell
+# key: sh
+# --
+(defmacro sh/seq (&rest body)
+`(b seq ,@body))
+
+(defmacro seq (&rest body)
+`(mapcar 'string-to-int (str2list (e/chomp (b seq ,@body)))))

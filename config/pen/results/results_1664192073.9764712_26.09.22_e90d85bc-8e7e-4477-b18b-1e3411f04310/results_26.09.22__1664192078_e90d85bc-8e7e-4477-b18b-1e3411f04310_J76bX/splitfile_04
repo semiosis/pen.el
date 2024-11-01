@@ -1,0 +1,1 @@
+- golang guru: "If err != nil { log.Fatal(err); }"

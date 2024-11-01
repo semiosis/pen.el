@@ -1,0 +1,7 @@
+Out[2]: 
+[{'name': 'Auckland International',
+  'city': 'Auckland',
+  'country': 'New Zealand',
+  'iata': 'AKL'},
+ {'name': 'Wellington',
+  'city': '

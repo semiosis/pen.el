@@ -1,0 +1,1069 @@
+$HOME/notes/ws/racket/scratch/scratch.rkt
+https://beautifulracket.com/appendix/glossary.html
+
+.
+    The . operator is just the classic lisp .
+    operator.
+
+    list is made out of pairs and one pair has
+    the literal form (car . cdr) and a list of
+    the elements 2, 3 is made up like:
+
+        (2 . (3 . ()))
+
+    Where the . is used in a function
+    definition, it works like elisps' &rest
+    due to pattern-matching.
+
+        (define (command->string command . args)
+          (let-values (((sub stdout stdin stderr)
+                        (apply subprocess #f
+                               (current-input-port)
+                               (current-error-port)
+                               (find-executable-path command)
+                               args)))
+            (let ((output (port->string stdout)))
+              (subprocess-wait sub)
+              (if (eqv? 0 (subprocess-status sub))
+                  output
+                  (error "Command failed:" (cons command args))))))
+
+#f
+    Literal False
+
+#t
+    Literal True
+
+syntactic form
+form
+    Examples:
+    - macro
+
+    A macro doesn’t evaluate the code it gets
+    as input.
+
+    Rather, it implements a template for
+    putting items into certain positions, like
+    filling in the blanks of a form.
+
+custodian
+    Manages a collection of threads, file-
+    stream ports, TCP ports, TCP listeners,
+    UDP sockets, byte converters, and places.
+    
+    Whenever a thread, etc., is created, it is
+    placed under the management of the current
+    custodian as determined by the current-
+    custodian parameter.
+
+regex
+    This is builtin.
+
+(require racket/match)
+    pattern matching
+
+    > (match "yes"
+    ["no" #f]
+    ["yes" #t])
+    #t
+
+(require racket/format)
+    library
+
+    Provides functions for converting Racket
+    values to strings. In addition to features
+    like padding and numeric formatting, the
+    functions have the virtue of being shorter
+    than format (with format string),
+    number->string, or string-append.
+    
+    (~a "north")
+    "north"
+
+    > (~a 'south)
+    "south"
+
+    > (~a #"east")
+    "east"
+
+    > (~a #\w "e" 'st)
+    "west"
+
+    > (~a (list "red" 'green #"blue"))
+    "(red green blue)"
+
+    > (~a 17)
+    "17"
+
+    > (~a #e1e20)
+    "100000000000000000000"
+
+    > (~a pi)
+    "3.141592653589793"
+
+    > (~a (expt 6.1 87))
+    "2.1071509386211452e+68"
+
+display
+    [procedure]
+
+    Displays datum to out, similar to write,
+    but usually in such a way that byte- and
+    character-based datatypes are written as
+    raw bytes or characters.
+
+printf
+    eww "http://racket/reference/Writing.html#(def._((quote._~23~25kernel)._fprintf))"
+
+    - ~n or ~%
+      prints a newline character (which is
+      equivalent to \n in a literal format
+      string)
+
+    - ~a or ~A
+      displays the next argument among the vs
+
+    - ~s or ~S
+      writes the next argument among the vs
+
+    - ~v or ~V
+      prints the next argument among the vs
+
+    - ~.‹c› where ‹c› is a, A, s, S, v, or V
+      truncates display, write, or print output
+      to (error-print-width) characters, using
+      ... as the last three characters if the
+      untruncated output would be longer
+
+    - ~e or ~E
+      outputs the next argument among the vs
+      using the current error value conversion
+      handler (see error-value->string-handler)
+      and current error printing width
+
+    - ~c or ~C
+      write-chars the next argument in vs; if
+      the next argument is not a character, the
+      exn:fail:contract exception is raised
+
+    - ~b or ~B
+      prints the next argument among the vs in
+      binary; if the next argument is not an
+      exact number, the exn:fail:contract
+      exception is raised
+
+    - ~o or ~O
+      prints the next argument among the vs in
+      octal; if the next argument is not an
+      exact number, the exn:fail:contract
+      exception is raised
+
+    - ~x or ~X
+      prints the next argument among the vs in
+      hexadecimal; if the next argument is not
+      an exact number, the exn:fail:contract
+      exception is raised
+
+    - ~~
+      prints a tilde.
+
+    - ~‹w›
+      where ‹w› is a whitespace character (see
+      char-whitespace?), skips characters in
+      form until a non-whitespace character is
+      encountered or until a second end-of-line
+      is encountered (whichever happens first).
+      
+      On all platforms, an end-of-line can be
+      #\return, #\newline, or #\return followed
+      immediately by #\newline.
+
+body ...+
+    [racket documentation]
+
+    This means at least one body.
+
+    rktdoc parameterize
+    https://docs.racket-lang.org/reference/parameters.html#%28form._%28%28lib._racket%2Fprivate%2Fmore-scheme..rkt%29._parameterize%29%29
+
+continuation
+    You can use this like a trace.
+
+(member)
+    http://racket/reference/pairs.html#(def._((lib._racket/private/base..rkt)._member))
+
+    Locates the first element of lst that is
+    equal? to v. If such an element exists,
+    the tail of lst starting with that element
+    is returned. Otherwise, the result is #f.
+
+lang notation
+    #lang name
+        shorthand 
+
+    #lang reader path notation
+        path is a local path to the source
+        file that contains our reader
+
+    Example:
+        #lang reader "stacker.rkt"  
+
+racket languages
+    Every language made with Racket has two
+    essential components:
+
+    - A reader, which converts the source code
+      of our language from a string of
+      characters into Racket-style
+      parenthesized forms, also known as
+      S-expressions.
+
+    - An expander, which determines how these
+      parenthesized forms correspond to real
+      Racket expressions (which are then
+      evaluated to produce a result).
+
+contract combinators
+    Functions such as -> and listof that take
+    contracts and produce other contracts.
+
+contract
+    May refer to reading documentation:
+    - http://mbutterick.github.io/racket-doc-redo/doc/reference/notation.html
+
+    Or the assertions themselves:
+    ewwlinks +/"Contracts in Racket are subdivided into three different categories: " "http://racket/reference/contracts.html#(tech._flat._contract)"
+
+    3 categories: 
+
+    - Flat contracts
+      Can be fully checked immediately for a
+      given value.
+      
+      These kinds of contracts are essentially
+      predicate functions. Using
+      flat-contract-predicate, you can extract the
+      predicate from an arbitrary flat contract;
+      some flat contracts can be applied like
+      functions, in which case they accept a
+      single argument and return #t or #f to
+      indicate if the given value would be
+      accepted by the contract. All of the flat
+      contracts returned by functions in this
+      library can be used directly as predicates,
+      but ordinary Racket values that double as
+      flat contracts (e.g., numbers or symbols)
+      cannot.
+
+      The function flat-contract? recognizes a
+      flat contract.
+
+    - Chaperone contracts
+      Not always immediately checkable, but
+      are guaranteed to not change any
+      properties of any values that they
+      check.
+      
+      They may wrap a value in such a way that
+      it signals contract violations later, as
+      the value is used (e.g., a function
+      contract checks the inputs and outputs
+      to the function only when the function
+      is called and returned), but any
+      properties that the value had before
+      being wrapped by the contract are
+      preserved by the contract wrapper.
+     
+      All flat contracts may be used where
+      chaperone contracts are expected (but
+      not vice-versa).
+
+    - Impersonator contracts
+      Do not provide any guarantees about
+      values they check.
+      
+      May hide properties of values, or even
+      make them completely opaque (e.g,
+      new-∀/c).
+     
+      All contracts may be used where
+      impersonator contracts are expected.
+
+accumulator
+    A value that is updated on every pass
+    through a recursive loop, for instance in
+    for/fold.
+
+pair
+    A data structure that stores two values.
+    
+    More complex structures, like lists, are
+    built from pairs.
+    
+    See also pairs.
+
+cons cell
+    The atomic unit of memory allocation,
+    equal to one pair.
+    
+    Used to create lists.
+
+filter
+    remove nils
+        (define lst '(NIL 1 NIL 2 NIL 3 NIL 4))
+
+        (filter (lambda (x) (not (equal? x 'NIL)))
+                lst)
+
+    regex filter
+        (define (filter/rx rx v*)
+          (filter (λ (v) (regexp-match? rx v)) v*))
+
+in-glob
+    Returns a stream of all paths matching the
+    glob pattern, instead of eagerly building
+    a list.
+
+    Can be used in a for loop.
+
+    (for ((d (in-glob "*/"))) ... )
+
+collection
+    A collection of libraries.
+
+    Typically, collections are added via
+    packages (see Package Management in
+    Racket); the package manager works outside
+    of the Racket core, but it configures the
+    core run-time system through collection
+    links files.
+
+library
+    A module declaration for use by multiple
+    programs.
+    
+    Libraries in collections are referenced
+    through lib paths (see require) or
+    symbolic shorthands. For example, the
+    following module uses the "getinfo.rkt"
+    library module from the "setup"
+    collection, and the "cards.rkt" library
+    module from the "games" collection’s
+    "cards" subcollection: 
+
+parser
+    A value that represents a method of
+    turning a syntax object or sequence of
+    syntax objects an arbitrary Racket value.
+    Parsers can be created using various
+    primitives, then sequenced together using
+    parser combinators to create larger
+    parsers.
+
+    are:
+    - functors,
+    - applicative functors, and
+    - monads
+
+    They can be mapped over and sequenced
+    together using the corresponding generic
+    interfaces.
+
+#lang info
+    In each collection, a special module file
+    "info.rkt" provides general information
+    about a collection for use by various
+    tools. For example, an "info.rkt" file
+    specifies how to build the documentation
+    for a collection, and it lists plug-in
+    tools for DrRacket or commands for raco
+    that the collection provides.
+
+    Controlling raco setup with "info.rkt"
+    Files.
+
+    Example:
+        https://github.com/lexi-lambda/megaparsack/blob/master/megaparsack/info.rkt
+
+#lang curly-fn
+    [meta-language]
+
+    Extends a language’s readtable to support
+    function literals as reader syntax.
+
+    Inspired by Clojure’s shorthand function
+    literals as well as Rackjure’s
+    implementation of them in Racket.
+
+    It's like a terse syntax for definining
+    lambdas.
+
+#lang curly-fn racket
+    This extends racket to support a syntax
+    for shorthand function literals.
+
+    # playground
+    pg curly-fn
+
+    Syntax
+    - prepend a # before {}, and the contents
+      will be read as a function literal.
+    - % ‹digit›+ is a positional argument.
+      That's "%‹digit›+" -- NO space.
+      example: %1
+      (#{list 1 %1 3} 2)
+    - % on its own is an alias for %1.
+    - %& is a rest argument.
+    - %: ‹id› is a keyword argument.
+
+glob
+    (require file/glob)
+    #| (glob "/*") |#
+    #| (glob "{foo,qux}-{bar,baz}.rkt") |#
+
+glob-quote
+    (glob-quote "[Ff]ile?{zip,tar.gz}")
+
+    Escape everything before going into glob.
+
+#lang reprovide
+    A #lang language for reproviding modules.
+
+    $MYGIT/BourgondAries/pgame/utils.rkt
+
+map
+    If you supply 1 list, the lamda needs to take 1 argument.
+    If you supply n lists, the lamda needs to take n arguments.
+
+    (map (lambda (number)
+             (+ 1 number))
+           '(1 2 3 4))
+
+andmap
+    http://racket/reference/pairs.html?q=andmap#%28def._%28%28lib._racket%2Fprivate%2Fmap..rkt%29._andmap%29%29
+
+    Like 'map'.
+
+error handling
+    (unless (and (stx-list? x)
+                       (> (length l) 3))
+            (raise-syntax-error
+             #f
+             "bad form"
+             x))
+
+incrementing
+    ;; This is one way to alias a function
+    (define-syntax 1+
+      (syntax-rules ()
+        ((_ x)   (add1 x))))
+
+set!
+    > (set! x 5)
+    ; set!: assignment disallowed;
+    ;  cannot set variable before its definition
+    ;   variable: x
+    ;   in module: top-level
+    ; [,bt for context]
+
+    If it's inside a let, it's OK.
+
+define-syntaxes
+    ;;; This defines 3 syntaxes named foo1, foo2 and foo3.
+    ;;; They correspond to the 3 values returned.
+    ;;; (values ...) returns 3 values
+
+    (define-syntaxes (foo1 foo2 foo3)
+        (let ([transformer1 (lambda (syntax-object)
+                              (syntax-case syntax-object ()
+                                [(_) #'1]))]
+              [transformer2 (lambda (syntax-object)
+                              (syntax-case syntax-object ()
+                                [(_) #'2]))]
+              [transformer3 (lambda (syntax-object)
+                              (syntax-case syntax-object ()
+                                [(_) #'3]))])
+          (values transformer1
+                  transformer2
+                  transformer3)))
+
+quasiquote
+backtick notation
+    racket
+    emacs-lisp
+    common-lisp
+        `(1 ,@(list 1 2) 4)
+
+    racket
+        `(0 ,(+ 1 2) 4)
+        (quasiquote (0 (unquote (+ 1 2)) 4))
+
+        `(1 ,@(list 1 2) 4)
+        (quasiquote (0 (unquote-splicing (list 1 2)) 4))
+
+        A quasiquote form within the original
+        datum increments the level of
+        quasiquotation: within the quasiquote
+        form, each unquote or unquote-splicing is
+        preserved, but a further nested unquote or
+        unquote-splicing escapes. Multiple
+        nestings of quasiquote require multiple
+        nestings of unquote or unquote-splicing to
+        escape.
+
+file-exists
+    (file-exists? path)
+        https://docs.racket-lang.org/reference/Filesystem.html#%28def._%28%28quote._~23~25kernel%29._file-exists~3f%29%29
+
+link-exists
+    (link-exists? path)
+
+delete-file
+    (delete-file path)
+
+define-syntax-rule
+
+    (define x ....)
+
+    (define-syntax-rule (premade-or x)
+      (or x 9))
+
+    (let ([x ....])
+    (premade-or (x)))
+
+    ;; ;; Expands into:
+    ;; (let ([x ....])
+    ;; (or x (x)))
+
+string join
+    (string-join (map str (glob "/*")) "\n")
+
+    (slist->string '(red yellow blue green))
+
+macro
+    The simplest way to create a macro is to use
+    define-syntax-rule.
+
+    3 golden rules of macros:
+    
+    1   At compile time, a macro takes one
+        code fragment as input, and converts
+        it to a new code fragment. The input &
+        output code fragments are each
+        packaged inside a syntax object.
+    
+    2   Because compile time happens before
+        run time, all macros operate before
+        any run-time functions.
+    
+    3   A macro can only treat its input code
+        as a literal syntactic entity. It
+        can’t evaluate arguments or
+        expressions within that code, because
+        those values are only available at run
+        time (which happens after compile
+        time).
+
+define-syntax-rule
+    The simplest way to create a macro.
+
+association list
+    https://beautifulracket.com/explainer/data-structures.html#association-lists
+
+    Not a distinct data structure, but rather
+    a list where every element is a pair that
+    holds a key and value (aka an
+    association):
+
+    (define assns (list (cons 'k1 "v1") (cons 'k2 "v2")))
+    assns ; '((k1 . "v1") (k2 . "v2"))
+
+class
+    naming convention:
+        Identifier ends with a percent
+
+Ports
+    ewwlinks +/"13.1 Ports" "https://docs.racket-lang.org/reference/ports.html"
+
+    Ports produce and/or consume bytes.
+    
+    An input port produces bytes, while an
+    output port consumes bytes (and some ports
+    are both input ports and output ports).
+    
+    When an input port is provided to a
+    character-based operation, the bytes are
+    decoded to a character, and character-
+    based output operations similarly encode
+    the character to bytes; see Encodings and
+    Locales.
+    
+    In addition to bytes and characters
+    encoded as bytes, some ports can produce
+    and/or consume arbitrary values as special
+    results.
+
+port->lines
+    (port->lines
+       (open-input-string "line 1\nline 2\n  line 3\nline 4"))
+       
+    '("line 1" "line 2" "  line 3" "line 4")
+
+sexp-diff
+    https://docs.racket-lang.org/sexp-diff/index.html
+
+    This package provides an
+    S-expression-aware diffing tool based on
+    Levenshtein-like tree edit distance.
+
+trace
+    (require racket/trace) ;; Nice tracing
+    (define sum (λ (x y) (+ x y)))
+    (trace sum) ;; Adds tracing to the sum function
+    (sum 4 4)
+
+asterisk at end of function name
+    A variant function that handles multiple
+    input arguments or multiple return values
+    uses the same name, but suffixed with *.
+
+    regexp-match vs. regexp-match*
+
+regex
+    > (regexp-match #rx"(c*)(a*)" "caat")
+    '("caa" "c" "aa")
+    > (list-ref (regexp-match #rx"(c*)(a*)" "caat") 1)
+    "c"
+    > (regexp-match #px"(c*)(a*)" "caat")
+    '("caa" "c" "aa")
+    > (regexp-match #px"(c*)(a*)" "caat")
+    '("caa" "c" "aa")
+    > (regexp-match #px"(c*)a*" "caat")
+    '("caa" "c")
+
+get element from list by index
+    ;; it's a builtin
+    (list-ref '(a b c d e f) 2)
+
+    ;; create it yourself
+    (define my-list-ref
+      (lambda (lst place)
+        (if (= place 0)
+            (car lst)
+            (my-list-ref (cdr lst) (- place 1)))))
+
+Reading regular expression
+#rx
+    vimlinks +/"1.3.16 Reading Regular Expressions" https://docs.racket-lang.org/reference/reader.html#%28part._parse-regexp%29
+
+Printing regular expression
+#px
+    vimlinks +/"1.4.13 Printing Regular Expressions" https://docs.racket-lang.org/reference/printing.html#%28part._print-regexp%29
+
+parser generator
+    A program that builds a parser from a
+    grammar.
+    
+    Programs written in the brag language are
+    parser generators.
+
+(symbol->string id)
+
+hash-ref
+    Returns the value for key in hash.
+    
+        (*hash-ref hash key [failure-result])
+
+    If no value is found for key, then
+    failure-result determines the result.
+
+phase level
+    [#racket]
+
+    Every binding has a phase level in which
+    it can be referenced, where a phase level
+    normally corresponds to an integer (but
+    the special label phase level does not
+    correspond to an integer).
+
+    Phase level 0
+        Corresponds to the run time of the
+        enclosing module (or the run time of
+        top-level expressions).
+
+        Bindings in phase level 0 constitute
+        the base environment.
+
+    Phase level 1
+        Corresponds to the time during which
+        the enclosing module (or top-level
+        expression) is expanded;
+
+        Bindings in phase level 1 constitute
+        the transformer environment.
+
+    Phase level -1
+        Corresponds to the run time of a
+        different module for which the
+        enclosing module is imported for use
+        at phase level 1 (relative to the
+        importing module);
+
+        Bindings in phase
+        level -1 constitute the template
+        environment.
+
+    'label phase level'
+        Does not correspond to any execution
+        time;
+
+        It is used to track bindings (e.g., to
+        identifiers within documentation)
+        without implying an execution
+        dependency.
+
+    An identifier can have different bindings
+    in different phase levels.
+
+    More precisely, the scope set associated
+    with a form can be different at different
+    phase levels;
+        a top-level or module context implies
+        a distinct scope at every phase level,
+        while scopes from macro expansion or
+        other syntactic forms are added to a
+        form’s scope sets at all phases.
+
+    The context of each binding and reference
+    determines the phase level whose scope set
+    is relevant.
+
+parameterize
+    https://docs.racket-lang.org/reference/parameters.html#%28form._%28%28lib._racket%2Fprivate%2Fmore-scheme..rkt%29._parameterize%29%29
+
+    The result of a parameterize expression is
+    the result of the last body.
+
+conditional data
+    They represent an “or”: a traffic light is
+    red or green or yellow; a social medium’s
+    page is for a person or location or
+   organization; and so on.
+
+contracts and types
+    In functions (not macros), these catch
+    usage mistakes and provide clear, useful
+    error messages.
+
+    With macros, syntax-parse is a new
+    enhancement that provides this kind of
+    help.
+
+syntax-parse
+    Catches macro usage mistakes and provides
+    clear, useful error messages for macro
+    usage mistakes.
+
+    A library for producing error reporting
+    macros.
+
+.plt
+    [file extension]
+
+    A platform-independent distribution
+    archive for software based on Racket.
+    
+    A typical ".plt" file can be installed as
+    a package using raco pkg (see Package
+    Management in Racket), in which case raco
+    pkg supplies facilities for uninstalling
+    the package and managing dependencies.
+
+PLT Scheme
+Racket
+
+PLT Redex
+Redex
+    PLT Redex consists of a domain-specific
+    language for specifying reduction
+    semantics, plus a suite of tools for
+    working with the semantics.
+
+X-expressions
+    An X-expression is a special native data
+    structure that Lisps use to represent HTML
+    and other XML-ish data.
+
+    Translating an X-expression to or from a
+    text representation using angle brackets
+    is trivial and fast.
+
+    #+BEGIN_SRC racket
+      (body
+        (h1 Hello world /h1)
+        (p class="first" Nice to (i see /i) you. /p)
+      /body)
+    #+END_SRC
+
+Scribble
+    Scribble is a dialect of Racket that
+    inverts the ordinary relationship of plain
+    text and code: rather than embedding text
+    strings within source, a Scribble document
+    consists of code expressions embedded
+    within plain text.
+
+Phase Level
+    Every binding has a phase level in which
+    it can be referenced, where a phase level
+    normally corresponds to an integer (but
+    the special label phase level does not
+    correspond to an integer). Phase level 0
+    corresponds to the run time of the
+    enclosing module (or the run time of
+    top-level expressions). Bindings in phase
+    level 0 constitute the base environment.
+    Phase level 1 corresponds to the time
+    during which the enclosing module (or
+    top-level expression) is expanded;
+    bindings in phase level 1 constitute the
+    transformer environment. Phase level -1
+    corresponds to the run time of a different
+    module for which the enclosing module is
+    imported for use at phase level 1
+    (relative to the importing module);
+    bindings in phase level -1 constitute the
+    template environment. The label phase
+    level does not correspond to any execution
+    time; it is used to track bindings (e.g.,
+    to identifiers within documentation)
+    without implying an execution dependency.
+
+    An identifier can have different bindings
+    in different phase levels. More precisely,
+    the scope set associated with a form can
+    be different at different phase levels; a
+    top-level or module context implies a
+    distinct scope at every phase level, while
+    scopes from macro expansion or other
+    syntactic forms are added to a form’s
+    scope sets at all phases. The context of
+    each binding and reference determines the
+    phase level whose scope set is relevant.
+
+Syntax Model
+Syntax of a Racket program
+    + Defined by:
+      - a read pass that processes a character
+        stream into a syntax object; and
+
+      - an expand pass that processes a syntax
+        object to produce one that is fully
+        parsed.
+
+Parsing
+expanding
+
+Identifier
+    A source-program entity.
+    
+    Parsing / expanding a Racket program reveals that
+    
+    + Some identifiers [correspond to]
+      - variables
+      - syntactic forms (such as lambda, which is the syntactic form for functions)
+      - transformers for macro expansion
+      - quoted to produce symbols or syntax objects.
+
+    Some identifiers are bindings.
+
+Binding
+    A relationship between 2 identifiers.
+
+    One identifer is [parsed as] a variable or
+    syntactic form.
+    
+    Another identifier is parsed as a
+    reference to the former;
+        the latter is "bound".
+
+    Example,
+        (let ([x 5]) x)
+
+        includes two identifiers:
+            let and x (which appears twice).
+        
+        When this source is parsed in a
+        context where let has its usual
+        meaning, the first x binds the second
+        x.
+        
+Syntax Object
+    https://beautifulracket.com/explainer/syntax-objects.html
+    
+    Macros are functions that take one syntax
+    object as input and return another syntax
+    object.
+    
+    These syntax objects contain literal code,
+    packaged with metadata like lexical
+    context and source location.
+    
+    + To get around the limited interface,
+    macros can read and write arbitrary syntax
+    properties to pass extra metadata or
+    arguments to other macros.
+    
+    Its internal components can be extracted.
+
+    Detailed information on the extracted
+    components is available.
+    
+    Two identifiers can be compared to
+    determine whether they refer to the same
+    binding (i.e., free-identifier=?), or
+    whether the identifiers have the same
+    scope set so that each identifier would
+    bind the other if one were in a binding
+    position and the other in an expression
+    position (i.e., bound-identifier=?).
+
+parameter
+    A setting that is both thread-specific and
+    continuation-specific.
+    
+    In the empty continuation, each parameter
+    corresponds to a preserved thread cell; a
+    corresponding parameter procedure accesses
+    and sets the thread cell’s value for the
+    current thread.
+
+#lang lazy
+    For lazy evaluation, not programmer
+    laziness.
+    
+#lang algebraic/racket/base
+    An extension of "#lang racket/base".
+
+    Adds:
+    - First class, lexically scoped, naturally
+      ordered data constructors, and
+    - A consistent destructuring syntax for
+      functions and macros.
+
+hasheq
+    Creates a table where keys are compared
+    with eq?
+
+hasheqv
+    Creates a table where keys are compared
+    with eqv?.
+    
+event
+synchronizable event
+    A synchronizable event works with the sync
+    procedure to coordinate synchronization
+    among threads.
+    
+    Certain kinds of objects double as events,
+    including ports and threads.
+    
+    Other kinds of objects exist only for
+    their use as events.
+    
+    At any point in time, an event is either
+    ready for synchronization, or it is not;
+    depending on the kind of event and how it
+    is used by other threads, an event can
+    switch from not ready to ready (or back),
+    at any time.
+    
+    If a thread synchronizes on an event when
+    it is ready, then the event produces a
+    particular synchronization result.
+
+binding
+    Types:
+    - transformer
+    - variable
+    ...
+
+variable binding
+    [type of binding]
+
+    Introduced by a module-level define or by
+    let.
+
+transformer
+transformer binding
+    [type of binding]
+
+    Introduced by define-syntax or let-syntax.
+
+define-values
+    Evaluates the expr, and binds the results
+    to the ids, in order.
+
+    Multiple-assignment.
+
+nullary
+    Arity of 0.
+
+arity
+    The number of arguments or operands taken
+    by a function or operation.
+
+subprocess-wait
+    Blocks until the process represented by
+    subproc terminates.
+    
+    The subproc value also can be used with
+    sync and sync/timeout.
+
+for/list
+    Iterates like for, but that the last
+    expression in the bodys must produce a
+    single value, and the result of the
+    for/list expression is a list of the
+    results in order.
+
+reader
+    Converts the source code of our language
+    from a string of characters into Racket-
+    style parenthesized forms, also known as
+    S-expressions.
+
+expander
+    Determines how these parenthesized forms
+    correspond to real Racket expressions
+    (which are then evaluated to produce a
+    result).
+
+#lang reader
+    Use the "stacker.rkt" module as the reader
+    for this language
+
+atom
+    A value that is not a list.
+
+bound
+    Describes an identifier that has a
+    binding.
+    
+Pollen
+    #lang pollen
+
+    Pollen is a publishing system that helps
+    authors make functional and beautiful
+    digital books.
+
+lozenge
+    [#Pollen]
+
+    Pollen uses a special character — the
+    lozenge, which looks like this: ◊ — to
+    mark commands within a Pollen source file.
+    So when you put a ◊ in your source,
+    whatever comes next will be treated as a
+    command. If you don’t, it will just be
+    interpreted as plain text.

@@ -1,0 +1,7 @@
+
+   Masters of Education from Penn State. Amelia's hobbies are
+   photography and archaeology. She is married to Douglas
+   Ireland, an actor and film editor."""
+
+
+def test_detect_file_extension():

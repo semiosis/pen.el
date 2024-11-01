@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: torch/entropy
+# group: pytorch
+# key: t_entropy
+# --
+def entropy(p):
+    """ Compute the entropy of a probability distribution """
+    plogp = p * torch.log(p)
+    plogp[p == 0] = 0
+    return -plogp.sum(dim=-1)

@@ -1,0 +1,5 @@
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=prEn7VtUJDA" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=TVsRM55_jsE&list=RDurnl_qYQ9l0&index=2" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.inspiredwalk.com/11273/why-is-friendship-with-the-world-enmity-with-god-james-44" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.desiringgod.org/messages/the-new-commandment-of-christ-love-one-another-as-i-have-loved-you" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=bFpB9F5JeLQ" "#" "<==" "pen-ci"

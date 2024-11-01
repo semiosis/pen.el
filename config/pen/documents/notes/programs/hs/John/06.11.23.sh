@@ -1,0 +1,5 @@
+cd /;  "John" "17" "#" "<==" "nem"
+cd /root/.pen/documents/notes;  "John" "17" "#" "<==" "nem"
+cd /root/.pen/documents/notes;  "John" "17" "#" "<==" "nem"
+cd /root/.pen/documents/notes;  "John" "17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "17" "#" "<==" "zsh"

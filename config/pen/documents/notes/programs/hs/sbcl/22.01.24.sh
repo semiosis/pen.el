@@ -1,0 +1,3 @@
+cd /root/.pen/documents/notes/ws/peniel;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Song of Solomon" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes/ws/peniel;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Obadiah." "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes/ws/peniel;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Philemon" "#" "<==" "sbcl-ql"

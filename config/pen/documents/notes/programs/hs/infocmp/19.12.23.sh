@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "infocmp" "-L1" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "infocmp" "-L1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "infocmp" "-L1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "infocmp" "-L1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "infocmp" "-L1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "infocmp" "-L1" "#" "<==" "zsh"

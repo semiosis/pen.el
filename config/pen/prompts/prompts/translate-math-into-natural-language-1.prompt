@@ -1,0 +1,43 @@
+task: "Translate math into natural language"
+tags: math
+doc: "Translate math into natural language"
+prompt-version: 1
+prompt: |+
+  Math equations below:
+  <delim>
+  Math: ∀x ∈ D, P(x)
+  Description: For all x in the domain, P(x) is true
+  Topic: Predicate calculus
+  <delim>
+  Math: sqrt(x^2 + 1)
+  Description: Take the square-root of (x to the power of 2 plus 1).
+  Topic: Algebra
+  <delim>
+  Math: ∃𝑥 ∈ D, P(x)
+  Description: There exists x in the domain, such that P(x) is true
+  Topic: Predicate calculus
+  <delim>
+  Math: <equation>
+  Description: 
+engine: "OpenAI Codex"
+temperature: 0.3
+top-p: 1.0
+cache: on
+n-collate: 1
+n-completions: 5
+stop-sequences:
+- "<delim>"
+vars:
+- "equation"
+preprocessors:
+- pen-str onelineify
+postprocessor: "sed -z 's/\\nTopic: \\(.*\\)\\n.*/ (\\1/' | sed 's/$/)/'"
+examples:
+  - |-
+    P: "Roofus is a mammal"
+    P(x): "x is amammal"
+    Q: ∀x ∈ D, P(x): "every dog is a mammal"
+info: on
+filter: no
+completion: on
+insertion: on

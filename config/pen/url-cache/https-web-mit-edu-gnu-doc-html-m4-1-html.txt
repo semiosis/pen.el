@@ -1,0 +1,369 @@
+HTTP/1.1 200 OK
+Server: Apache
+Last-Modified: Wed, 05 Oct 1994 13:42:22 GMT
+ETag: "664d02ca-4137-2e92ad3e"
+Accept-Ranges: bytes
+X-Cnection: close
+Content-Type: text/html
+Content-Length: 6105
+Date: Wed, 03 Jan 2024 10:45:13 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+Content-Security-Policy: frame-ancestors 'self' https://web.mit.edu https://www.mit.edu http://web.mit.edu http://www.mit.edu
+X-Frame-Options: SAMEORIGIN
+
+<!-- This HTML file has been created by texi2html 1.30
+     from /mit/gnu/src/m4-1.3/doc/m4.texinfo on 5 October 1994 -->
+
+<TITLE>GNU m4 - Introduction and preliminaries</TITLE>
+<P>Go to the <A HREF="m4_2.html">next</A> section.<P>
+<P>
+Copyright (C) 1989, 90, 91, 92, 93, 94 Free Software Foundation, Inc.
+<P>
+Permission is granted to make and distribute verbatim copies of
+this manual provided the copyright notice and this permission notice
+are preserved on all copies.
+<P>
+Permission is granted to copy and distribute modified versions of this
+manual under the conditions for verbatim copying, provided that the entire
+resulting derived work is distributed under the terms of a permission
+notice identical to this one.
+<P>
+Permission is granted to copy and distribute translations of this manual
+into another language, under the above conditions for modified versions,
+except that this permission notice may be stated in a translation approved
+by the Foundation.
+<P>
+Pinard and other volunteers on the Internet.  All
+names and email addresses can be found in the file <TT>`THANKS'</TT> from
+the GNU <CODE>m4</CODE> distribution.
+<P>
+This is release 1.3.  It is now to be considered stable,
+future releases are only meant to fix bugs, increase speed, or improve
+documentation.  However...
+<P>
+An experimental feature, which would improve <CODE>m4</CODE> usefulness,
+allows for changing the syntax for what is a <DFN>word</DFN> in <CODE>m4</CODE>.
+You should use:
+<PRE>
+./configure --enable-changeword
+</PRE>
+if you want this feature compiled in.  The current implementation
+slows down <CODE>m4</CODE> considerably and is hardly acceptable.  So, it
+might go away, do not count on it yet.
+<P>
+<H1><A NAME="SEC1" HREF="m4_toc.html#SEC1">Introduction and preliminaries</A></H1>
+<P>
+This first chapter explains what is GNU <CODE>m4</CODE>, where <CODE>m4</CODE>
+comes from, how to read and use this documentation, how to call the
+<CODE>m4</CODE> program and how to report bugs about it.  It concludes by
+giving tips for reading the remainder of the manual.
+<P>
+The following chapters then detail all the features of the <CODE>m4</CODE>
+language.
+<P>
+<H2><A NAME="SEC2" HREF="m4_toc.html#SEC2">Introduction to <CODE>m4</CODE></A></H2>
+<P>
+<CODE>m4</CODE> is a macro processor, in the sense that it copies its
+input to the output, expanding macros as it goes.  Macros are either
+builtin or user-defined, and can take any number of arguments.
+Besides just doing macro expansion, <CODE>m4</CODE> has builtin functions
+for including named files, running UNIX commands, doing integer
+arithmetic, manipulating text in various ways, recursion, etc...
+<CODE>m4</CODE> can be used either as a front-end to a compiler, or as a
+macro processor in its own right.
+<P>
+The <CODE>m4</CODE> macro-processor is widely available on all UNIXes.
+Usually, only a small percentage of users are aware of its existence.
+However, those who do often become commited users.  The growing
+popularity of GNU Autoconf, which prerequires GNU <CODE>m4</CODE> for
+<EM>generating</EM> the <TT>`configure'</TT> scripts, is an incentive
+for many to install it, while these people will not themselves
+program in <CODE>m4</CODE>.  GNU <CODE>m4</CODE> is mostly compatible with the
+System V, Release 3 version, except for some minor differences.
+See section <A HREF="m4_15.html#SEC70">Compatibility with other versions of <CODE>m4</CODE></A> for more details.
+<P>
+Some people found <CODE>m4</CODE> to be fairly addictive.  They first use
+<CODE>m4</CODE> for simple problems, then take bigger and bigger challenges,
+learning how to write complex <CODE>m4</CODE> sets of macros along the way.
+Once really addicted, users pursue writing of sophisticated <CODE>m4</CODE>
+applications even to solve simple problems, devoting more time
+debugging their <CODE>m4</CODE> scripts than doing real work.  Beware that
+<CODE>m4</CODE> may be dangerous for the health of compulsive programmers.
+<P>
+<H2><A NAME="SEC3" HREF="m4_toc.html#SEC3">Historical references</A></H2>
+<P>
+The historical notes included here are fairly incomplete, and not
+authoritative at all.  Please knowledgeable users help us to more
+properly write this section.
+<P>
+<CODE>GPM</CODE> has been an important ancestor of <CODE>m4</CODE>.  See
+C. Stratchey: "A General Purpose Macro generator", Computer Journal
+8,3 (1965), pp. 225 ff.  <CODE>GPM</CODE> is also succintly described into
+David Gries classic "Compiler Construction for Digital Computers".
+<P>
+While <CODE>GPM</CODE> was <EM>pure</EM>, <CODE>m4</CODE> was meant to deal more
+with the true intricacies of real life: macros could be recognized
+with being pre-announced, skipping whitespace or end-of-lines was
+made easier, more constructs were builtin instead of derived, etc.
+<P>
+Originally, <CODE>m4</CODE> was the engine for Rational FORTRAN preprocessor,
+that is, the <CODE>ratfor</CODE> equivalent of <CODE>cpp</CODE>.
+<P>
+<H2><A NAME="SEC4" HREF="m4_toc.html#SEC4">Invoking <CODE>m4</CODE></A></H2>
+<P>
+The format of the <CODE>m4</CODE> command is:
+<P>
+<PRE>
+<CODE>m4</CODE> [<VAR>option</VAR>...] [<VAR>macro-definitions</VAR>...] [<VAR>input-file</VAR>...]
+</PRE>
+<A NAME="IDX1"></A>
+<A NAME="IDX2"></A>
+<P>
+All options begin with <SAMP>`-'</SAMP>, or if long option names are used, with
+a <SAMP>`--'</SAMP>.  A long option name need not be written completely, and
+unambigous prefix is sufficient.  <CODE>m4</CODE> understands the following
+options:
+<P>
+<DL COMPACT>
+<DT><CODE>--version</CODE>
+<DD>Print the version number of the program on standard output, then
+immediately exit <CODE>m4</CODE> without reading any <VAR>input-files</VAR>.
+<P>
+<DT><CODE>--help</CODE>
+<DD>Print an help summary on standard output, then immediately exit
+<CODE>m4</CODE> without reading any <VAR>input-files</VAR>.
+<P>
+<DT><CODE>-G</CODE>
+<DD><DT><CODE>--traditional</CODE>
+<DD>Suppress all the extensions made in this implementation, compared to the
+System V version.  See section <A HREF="m4_15.html#SEC70">Compatibility with other versions of <CODE>m4</CODE></A>, for a list of these.
+<P>
+<DT><CODE>-E</CODE>
+<DD><DT><CODE>--fatal-warnings</CODE>
+<DD>Stop execution and exit <CODE>m4</CODE> once the first warning has been
+issued, considering all of them to be fatal.
+<P>
+<DT><CODE>-d<VAR>flags</VAR></CODE>
+<DD><DT><CODE>--debug=<VAR>flags</VAR></CODE>
+<DD>Set the debug-level according to the flags <VAR>flags</VAR>.  The debug-level
+controls the format and amount of information presented by the debugging
+functions.  See section <A HREF="m4_6.html#SEC34">Controlling debugging output</A> for more details on the format and
+meaning of <VAR>flags</VAR>.
+<P>
+<DT><CODE>-l<VAR>num</VAR></CODE>
+<DD><DT><CODE>--arglength=<VAR>num</VAR></CODE>
+<DD>Restrict the size of the output generated by macro tracing.  See section <A HREF="m4_6.html#SEC34">Controlling debugging output</A> for more details.
+<P>
+<DT><CODE>-o<VAR>file</VAR></CODE>
+<DD><DT><CODE>--error-output=<VAR>file</VAR></CODE>
+<DD>Redirect debug and trace output to the named file.  Error messages are
+still printed on the standard error output.  See section <A HREF="m4_6.html#SEC35">Saving debugging output</A> for
+more details.
+<P>
+<DT><CODE>-I<VAR>dir</VAR></CODE>
+<DD><DT><CODE>--include=<VAR>dir</VAR></CODE>
+<DD>Make <CODE>m4</CODE> search <VAR>dir</VAR> for included files that are not found in
+the current working directory.  See section <A HREF="m4_8.html#SEC44">Searching for include files</A> for more details.
+<P>
+<DT><CODE>-e</CODE>
+<DD><DT><CODE>--interactive</CODE>
+<DD>Makes this invocation of <CODE>m4</CODE> interactive.  This means that all
+output will be unbuffered, and interrupts will be ignored.
+<P>
+<DT><CODE>-s</CODE>
+<DD><DT><CODE>--synclines</CODE>
+<DD>Generate synchronisation lines, for use by the C preprocessor or other
+similar tools.  This is useful, for example, when <CODE>m4</CODE> is used as a
+front end to a compiler.  Source file name and line number information
+is conveyed by directives of the form <SAMP>`#line <VAR>linenum</VAR>
+"<VAR>filename</VAR>"'</SAMP>, which are inserted as needed into the middle of the
+input.  Such directives mean that the following line originated or was
+expanded from the contents of input file <VAR>filename</VAR> at line
+<VAR>linenum</VAR>.  The <SAMP>`"<VAR>filename</VAR>"'</SAMP> part is often omitted when
+the file name did not change from the previous directive.
+<P>
+Synchronisation directives are always given on complete lines per
+themselves.  When a synchronisation discrepancy occurs in the middle of
+an output line, the associated synchronisation directive is delayed
+until the beginning of the next generated line.
+<P>
+<DT><CODE>-P</CODE>
+<DD><DT><CODE>--prefix-builtins</CODE>
+<DD>Internally modify <EM>all</EM> builtin macro names so they all start with
+the prefix <SAMP>`m4_'</SAMP>.  For example, using this option, one should write
+<SAMP>`m4_define'</SAMP> instead of <SAMP>`define'</SAMP>, and <SAMP>`m4___file__'</SAMP>
+instead of <SAMP>`__file__'</SAMP>.
+<P>
+<DT><CODE>-W<VAR>REGEXP</VAR></CODE>
+<DD><DT><CODE>--word-regexp=<VAR>REGEXP</VAR></CODE>
+<DD>Use an alternative syntax for macro names.  This experimental
+option might not be present on all GNU <CODE>m4</CODE> implementations.
+(see section <A HREF="m4_7.html#SEC40">Changing the lexical structure of words</A>).
+<P>
+<DT><CODE>-H<VAR>n</VAR></CODE>
+<DD><DT><CODE>--hashsize=<VAR>n</VAR></CODE>
+<DD>Make the internal hash table for symbol lookup be <VAR>n</VAR> entries big.
+The number should be prime.  The default is 509 entries.  It should not
+be necessary to increase this value, unless you define an excessive
+number of macros.
+<P>
+<DT><CODE>-L<VAR>n</VAR></CODE>
+<DD><DT><CODE>--nesting-limit=<VAR>n</VAR></CODE>
+<DD>Artificially limit the nesting of macro calls to <VAR>n</VAR> levels,
+stopping program execution if this limit is ever exceeded.  When not
+specified, nesting is limited to 250 levels.
+<P>
+The precise effect of this option might be more correctly associated
+with textual nesting than dynamic recursion.  It has been useful
+when some complex <CODE>m4</CODE> input was generated by mechanical means.
+Most users would never need this option.  If shown to be obtrusive,
+this option (which is still experimental) might well disappear.
+<P>
+This option does <EM>not</EM> have the ability to break endless
+rescanning loops, while these do not necessarily consume much memory
+or stack space.  Through clever usage of rescanning loops, one can
+request complex, time-consuming computations to <CODE>m4</CODE> with useful
+results.  Putting limitations in this area would break <CODE>m4</CODE> power.
+There are many pathological cases: <SAMP>`define(`a', `a')a'</SAMP> is
+only the simplest example (but see section <A HREF="m4_15.html#SEC70">Compatibility with other versions of <CODE>m4</CODE></A>).  Expecting GNU
+<CODE>m4</CODE> to detect these would be a little like expecting a compiler
+system to detect and diagnose endless loops: it is a quite <EM>hard</EM>
+problem in general, if not undecidable!
+<P>
+<DT><CODE>-Q</CODE>
+<DD><DT><CODE>--quiet</CODE>
+<DD><DT><CODE>--silent</CODE>
+<DD>Suppress warnings about missing or superflous arguments in macro calls.
+<P>
+<DT><CODE>-B</CODE>
+<DD><DT><CODE>-S</CODE>
+<DD><DT><CODE>-T</CODE>
+<DD>These options are present for compatibility with System V <CODE>m4</CODE>, but
+do nothing in this implementation.
+<P>
+<DT><CODE>-N<VAR>n</VAR></CODE>
+<DD><DT><CODE>--diversions=<VAR>n</VAR></CODE>
+<DD>These options are present only for compatibility with previous
+versions of GNU <CODE>m4</CODE>, and were controlling the number of possible
+diversions which could be used at the same time.  They do nothing,
+because there is no fixed limit anymore.
+<P>
+</DL>
+<A NAME="IDX3"></A>
+<A NAME="IDX4"></A>
+<P>
+Macro definitions and deletions can be made on the command line, by
+using the <SAMP>`-D'</SAMP> and <SAMP>`-U'</SAMP> options.  They have the following
+format:
+<P>
+<DL COMPACT>
+<DT><CODE>-D<VAR>name</VAR></CODE>
+<DD><DT><CODE>-D<VAR>name</VAR>=<VAR>value</VAR></CODE>
+<DD><DT><CODE>--define=<VAR>name</VAR></CODE>
+<DD><DT><CODE>--define=<VAR>name</VAR>=<VAR>value</VAR></CODE>
+<DD>This enters <VAR>name</VAR> into the symbol table, before any input files are
+read.  If <SAMP>`=<VAR>value</VAR>'</SAMP> is missing, the value is taken to be the
+empty string.  The <VAR>value</VAR> can be any string, and the macro can be
+defined to take arguments, just as if it was defined from within the
+input.
+<P>
+<DT><CODE>-U<VAR>name</VAR></CODE>
+<DD><DT><CODE>--undefine=<VAR>name</VAR></CODE>
+<DD>This deletes any predefined meaning <VAR>name</VAR> might have.  Obviously,
+only predefined macros can be deleted in this way.
+<P>
+<DT><CODE>-t<VAR>name</VAR></CODE>
+<DD><DT><CODE>--trace=<VAR>name</VAR></CODE>
+<DD>This enters <VAR>name</VAR> into the symbol table, as undefined but traced.
+The macro will consequently be traced from the point it is defined.
+<P>
+<DT><CODE>-F<VAR>file</VAR></CODE>
+<DD><DT><CODE>--freeze-state <VAR>file</VAR></CODE>
+<DD>Once execution is finished, write out the frozen state on the specified
+<VAR>file</VAR> (see section <A HREF="m4_14.html#SEC69">Fast loading of frozen states</A>).
+<P>
+<DT><CODE>-R<VAR>file</VAR></CODE>
+<DD><DT><CODE>--reload-state <VAR>file</VAR></CODE>
+<DD>Before execution starts, recover the internal state from the specified
+frozen <VAR>file</VAR> (see section <A HREF="m4_14.html#SEC69">Fast loading of frozen states</A>).
+<P>
+</DL>
+<A NAME="IDX5"></A>
+<A NAME="IDX6"></A>
+<P>
+The remaining arguments on the command line are taken to be input file
+names.  If no names are present, the standard input is read.  A file
+name of <TT>`-'</TT> is taken to mean the standard input.
+<P>
+The input files are read in the sequence given.  The standard input can
+only be read once, so the filename <TT>`-'</TT> should only appear once on
+the command line.
+<P>
+<H2><A NAME="SEC5" HREF="m4_toc.html#SEC5">Problems and bugs</A></H2>
+<P>
+If you have problems with GNU <CODE>m4</CODE> or think you've found a bug,
+please report it.  Before reporting a bug, make sure you've actually
+found a real bug.  Carefully reread the documentation and see if it
+really says you can do what you're trying to do.  If it's not clear
+whether you should be able to do something or not, report that too; it's
+a bug in the documentation!
+<P>
+Before reporting a bug or trying to fix it yourself, try to isolate it
+to the smallest possible input file that reproduces the problem.  Then
+send us the input file and the exact results <CODE>m4</CODE> gave you.  Also
+say what you expected to occur; this will help us decide whether the
+problem was really in the documentation.
+<P>
+Once you've got a precise problem, send e-mail to (Internet)
+<TT>`bug-gnu-utils@prep.ai.mit.edu'</TT> or (UUCP)
+<TT>`mit-eddie!prep.ai.mit.edu!bug-gnu-utils'</TT>.  Please include the
+version number of <CODE>m4</CODE> you are using.  You can get this information
+with the command <SAMP>`m4 --version'</SAMP>.
+<P>
+Non-bug suggestions are always welcome as well.  If you have questions
+about things that are unclear in the documentation or are just obscure
+features, please report them too.
+<P>
+<H2><A NAME="SEC6" HREF="m4_toc.html#SEC6">Using this manual</A></H2>
+<P>
+This manual contains a number of examples of <CODE>m4</CODE> input and output,
+and a simple notation is used to distinguish input, output and error
+messages from <CODE>m4</CODE>.  Examples are set out from the normal text, and
+shown in a fixed width font, like this
+<P>
+<PRE>
+This is an example of an example!
+</PRE>
+<P>
+To distinguish input from output, all output from <CODE>m4</CODE> is prefixed
+by the string <SAMP>`=>'</SAMP>, and all error messages by the string
+<SAMP>`error-->'</SAMP>.  Thus
+<P>
+<PRE>
+Example of input line
+=>Output line from m4
+error-->and an error message
+</PRE>
+<P>
+As each of the predefined macros in <CODE>m4</CODE> is described, a prototype
+call of the macro will be shown, giving descriptive names to the
+arguments, e.g.,
+<P>
+<PRE>
+regexp(<VAR>string</VAR>, <VAR>regexp</VAR>, opt <VAR>replacement</VAR>)
+</PRE>
+<P>
+All macro arguments in <CODE>m4</CODE> are strings, but some are given special
+interpretation, e.g., as numbers, filenames, regular expressions, etc.
+<P>
+The <SAMP>`opt'</SAMP> before the third argument shows that this argument is
+optional--if it is left out, it is taken to be the empty string.  An
+ellipsis (<SAMP>`...'</SAMP>) last in the argument list indicates that any
+number of arguments may follow.
+<P>
+This document consistently writes and uses <DFN>builtin</DFN>, without an
+hyphen, as if it were an English word.  This is how the <CODE>builtin</CODE>
+primitive is spelled within <CODE>m4</CODE>.
+<P>
+<P>Go to the <A HREF="m4_2.html">next</A> section.<P>

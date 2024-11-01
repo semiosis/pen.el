@@ -1,0 +1,12 @@
+"defroutes" is a macro that takes a function that returns a list of routes.
+
+Each route is a vector of three items:
+1. A path regex
+2. A function that takes a request and returns a response
+3. A vector of query params
+
+Example:
+(defroutes
+  [
+   [GET "^/hello$" (fn [request] "Hello World!")]
+   [GET "^/hello/\\(?<name>[^

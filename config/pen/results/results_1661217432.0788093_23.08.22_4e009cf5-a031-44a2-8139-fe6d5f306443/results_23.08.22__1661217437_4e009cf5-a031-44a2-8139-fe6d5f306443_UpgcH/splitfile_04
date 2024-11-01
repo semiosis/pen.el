@@ -1,0 +1,6 @@
+ A playbook contains
+ 							commands that Ansible executes on the managed
+
+systems. 							Playbooks are written in YAML and are usually
+
+stored in

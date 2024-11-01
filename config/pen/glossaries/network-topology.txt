@@ -1,0 +1,37 @@
+service mesh
+    Example: the open source project Istio.
+
+    A way to control how different parts of an
+    application share data with one another.
+    
+    Unlike other systems for managing this
+    communication, a service mesh is a
+    dedicated infrastructure layer built right
+    into an app.
+
+mesh networking
+meshnet
+mesh network
+    A local network topology in which the
+    infrastructure nodes connect directly,
+    dynamically and non-hierarchically to as
+    many other nodes as possible and cooperate
+    with one another to efficiently route data
+    from/to clients.
+
+fully connected mesh network
+fully meshed
+partially connected mesh network
+partially meshed
+    A "fully meshed" network means that every
+    node has a direct connection to every
+    other node, which is an elaborate and
+    expensive architecture.
+    
+    Most mesh networks are partially meshed
+    and require traversing intermediate nodes
+    to go from each node to every other.
+
+    A fully connected mesh network is where
+    each node is connected to every other node
+    in the network.

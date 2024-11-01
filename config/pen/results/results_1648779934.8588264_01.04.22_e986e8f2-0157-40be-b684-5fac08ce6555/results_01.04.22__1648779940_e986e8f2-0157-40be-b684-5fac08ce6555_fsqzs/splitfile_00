@@ -1,0 +1,11 @@
+VIM(1)                     User Commands                    VIM(1)
+
+NAME
+       vim - Vi IMproved, a programmers text editor
+
+SYNOPSIS
+       vim [option] [file ...]
+
+DESCRIPTION
+       Vim is a very powerful text editor. It is an improved version of the vi editor distributed with most UNIX systems.  Vim can
+       be used to edit

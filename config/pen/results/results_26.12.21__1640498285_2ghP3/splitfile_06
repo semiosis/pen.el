@@ -1,0 +1,5 @@
+
+  (interactive)
+  (pen-nuke-buffer)
+  (pen-nuke-buffer))
+

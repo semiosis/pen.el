@@ -1,0 +1,44 @@
+title: "break up into sentences"
+prompt-version: 3
+tags: prose grammar english
+prompt: |+
+    <delim>
+    Break apart the text into separate sentences:
+    <delim>
+    Text: <text>
+    <delim>
+    Sentences in the text:
+    <:pp>1. 
+prompt-filter: "sed -z 's/\\s\\+$//'"
+engine: "OpenAI Davinci"
+force-engine: "OpenAI Davinci"
+temperature: 0.4
+utilises-code: no
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+best-of: 1
+no-trim-start: off
+no-trim-end: off
+vars:
+- text
+stop-sequences:
+- "<delim>"
+examples:
+- |
+    This anonymous gold coinage appears to have been initiated shortly before
+    Rajaraja Chola invaded Lanka in 990 AD. Like other Lankan coins from around the 11th
+    Century, no date is indicated. It is not certain whether the Kahavanu was
+    introduced at Ruhuna, the region in the south of the island to which the
+    Sinhala court had been obliged to move as a result of Rajaraja's conquests.
+preprocessors:
+- pen-str join ' '
+postprocessor: sed -e 's/^[0-9]*\. //' -e 's/^[0-9]*\.//'
+n-test-runs: 5
+n-collate: 1
+n-completions: 2
+issues:
+- Doesn't know when to stop. Probably need Codex to force and EOD.
+prefer-external: true
+external: pen-pretty-paragraph
+filter: on
+doc: "Given a block of text, break it up into sentences"

@@ -1,0 +1,4 @@
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "79" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempISmGmyW.html" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "79" "--no-numbering" "--dump" "https://vision.org.au/the-word-for-today-reading/" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "/volumes/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/learning/01_bayes.html" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "/volumes/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/various/12_pingpong.html" "#" "<==" "pen-ci"

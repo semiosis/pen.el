@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "John" "5:24" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "John" "10:27–28" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "John" "10:27-28" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "John" "5:14" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "15:4" "#" "<==" "zsh"

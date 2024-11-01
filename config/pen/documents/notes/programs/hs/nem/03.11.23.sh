@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "John 17:1" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Romans 8:2" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Romans 8:3" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Romans 8:4" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Romans 8:5" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Romans 8:6" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Romans 8:7" "#" "<==" "pen-ci"

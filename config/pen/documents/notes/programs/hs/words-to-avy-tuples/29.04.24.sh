@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/m1qbavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/eSIbavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/hAZoavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/ccdyavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/ZFX1avy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/dFIpavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/RVVUavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/notes;  "words-to-avy-tuples" "-nbe" "/tmp/m6bLavy-bible.txt" "#" "<==" "perl"

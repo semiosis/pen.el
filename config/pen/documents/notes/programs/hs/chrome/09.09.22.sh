@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "chrome" "http://github1s.com/semiosis/pen.el" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/scripts;  "chrome" "http://github.surf/semiosis/pen.el" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/scripts;  "chrome" "http://github1s.com/semiosis/pen.el" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "chrome" "google.com" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "google.com" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "http://github1s.com/semiosis/pen.el" "#" "<==" "bash"

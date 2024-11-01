@@ -1,0 +1,3 @@
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "watermelon")))
+--> "watermelon: n. A large melon with a green rind and sweet juicy flesh."

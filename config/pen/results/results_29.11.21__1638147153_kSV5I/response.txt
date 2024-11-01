@@ -1,0 +1,10 @@
+List all the repos for a github organisation."
+  (interactive "sOrganisation: ")
+  (let ((url (concat "https://api.github.com/orgs/" organisation "/repos")))
+    (with-current-buffer (url-retrieve-synchronously url)
+      (goto-char (point-min))
+      (re-search-forward "^$")
+      (let ((json-object-type 'plist)
+            (json-key-type 'symbol)
+            (json-array-type 'list))
+        (json-read)))))

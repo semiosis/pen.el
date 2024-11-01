@@ -1,0 +1,1 @@
+- Simon Peyton Jones: It just runs a state monad, but doesn't care about the return value.

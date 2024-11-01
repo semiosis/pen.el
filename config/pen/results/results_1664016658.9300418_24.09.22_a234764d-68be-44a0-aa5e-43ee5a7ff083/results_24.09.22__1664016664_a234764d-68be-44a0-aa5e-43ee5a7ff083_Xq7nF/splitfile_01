@@ -1,0 +1,5 @@
+lst]
+  (let [[prev cur] (take-last 1 lst)]
+    (if (empty? prev)       ; already have at least 1 element
+        lst
+        (cons [first lst]

@@ -1,0 +1,9 @@
+"async/go-loop"
+(fn [n]
+  (async/go-loop [x 0]
+    (if (< x n)
+      (async/put (async/chan) (async/chan))
+      x)))))
+
+(defonce main-chan (async/chan 1 
+

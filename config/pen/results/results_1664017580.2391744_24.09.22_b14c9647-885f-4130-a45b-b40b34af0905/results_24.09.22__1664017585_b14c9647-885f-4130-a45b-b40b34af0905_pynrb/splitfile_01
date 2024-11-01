@@ -1,0 +1,7 @@
+
+  (into []
+        (loop [a list]
+              (take 2 (rest a)))))
+
+(defn normalize-cond
+  "Normalizes a condition list to the format expected by khala"

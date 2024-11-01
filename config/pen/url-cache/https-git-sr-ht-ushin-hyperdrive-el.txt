@@ -1,0 +1,227 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 27 Dec 2023 02:16:28 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Cookie
+Set-Cookie: session=.eJwNx0sOAjEIANC79ARQWiheZkL5bCbRRI0b492dt3vfdvjrWcf7ceb9-PR2a-lDZXfaApSdGHFMUY7M8L1AA8Jz1lDfvYZbV7FwIotBtiYVwhTGQgtT3Dm01Hj5daA1YSQHp1VfQJU-WS8FKOq2SLD9_vtxKso.ZYuI_A.V9l8dSe6Trq-8eSUrzCjufMAqlk; HttpOnly; Path=/
+X-Clacks-Overhead: GNU Terry Pratchett
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Permissions-Policy: interest-cohort=()
+Content-Security-Policy: default-src 'none'; style-src 'self' 'unsafe-inline'; img-src * data:; script-src 'self' 'unsafe-inline'
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+~ushin/hyperdrive.el -
+
+P2P filesystem in Emacs -
+
+sourcehut git
+</title>
+<link href="/static/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="/static/logo.png" rel="icon" sizes="any" type="image/png"/>
+<link href="/static/main.min.df853ed0.css" rel="stylesheet"/>
+<meta content="git" name="vcs"/>
+<meta content="master" name="vcs:default-branch"/>
+<meta content="https://git.sr.ht/~ushin/hyperdrive.el" name="vcs:clone"/>
+<meta content="git@git.sr.ht:~ushin/hyperdrive.el" name="vcs:clone"/>
+<meta content="https://git.sr.ht/~ushin/hyperdrive.el" name="forge:summary"/>
+<meta content="https://git.sr.ht/~ushin/hyperdrive.el/tree/{ref}/{path}" name="forge:dir"/>
+<meta content="https://git.sr.ht/~ushin/hyperdrive.el/tree/{ref}/{path}" name="forge:file"/>
+<meta content="https://git.sr.ht/~ushin/hyperdrive.el/blob/{ref}/{path}" name="forge:rawfile"/>
+<meta content="https://git.sr.ht/~ushin/hyperdrive.el/tree/{ref}/{path}#L{line}" name="forge:line"/>
+<meta content="git.sr.ht/~ushin/hyperdrive.el git https://git.sr.ht/~ushin/hyperdrive.el" name="go-import"/>
+</head>
+<body>
+<nav class="container navbar navbar-light navbar-expand-sm">
+<span class="navbar-brand">
+<span aria-hidden="true" class="icon icon-circle"><svg height="22" viewbox="0 0 512 512" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"></path></svg>
+</span>
+<a href="https://sr.ht">
+    sourcehut
+  </a>
+</span>
+<ul class="navbar-nav">
+</ul>
+<div class="login">
+<span class="navbar-text">
+<a href="https://meta.sr.ht/oauth/authorize?client_id=25ff6e5ce60d7345&amp;scopes=profile,keys,b99a95de3e69c958/jobs:write&amp;state=%2F~ushin%2Fhyperdrive.el%3F" rel="nofollow">Log in</a>
+    —
+    <a href="https://meta.sr.ht">Register</a>
+</span>
+</div>
+</nav>
+<div class="header-tabbed">
+<div class="container">
+<h2>
+<a href="/~ushin/">~ushin</a>/<wbr/>hyperdrive.el
+    </h2>
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" href="/~ushin/hyperdrive.el">summary</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~ushin/hyperdrive.el/tree">tree</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~ushin/hyperdrive.el/log">log</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~ushin/hyperdrive.el/refs">refs</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-extension">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+        P2P filesystem in Emacs
+      </div>
+<div class="col-md-6 licenses">
+
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row" style="margin-bottom: 1rem">
+<div class="col-md-6">
+<div class="event-list" style="margin-bottom: 0.5rem">
+<div class="event">
+<div>
+<a href="/~ushin/hyperdrive.el/commit/33d8cef0507fbbe25839a019b5c42fda862ac4de" title="33d8cef0507fbbe25839a019b5c42fda862ac4de">33d8cef0</a>
+  
+  —
+  
+  
+  <a href="/~ushin/">Joseph Turner</a>
+<small class="pull-right">
+<a href="/~ushin/hyperdrive.el/log?from=33d8cef0507fbbe25839a019b5c42fda862ac4de#log-33d8cef0507fbbe25839a019b5c42fda862ac4de" id="log-33d8cef0507fbbe25839a019b5c42fda862ac4de"><span title="2023-12-24 04:27:21 UTC">2 days ago</span></a>
+</small>
+</div>
+<pre class="commit">Chore: Update makem.sh git submodule</pre>
+</div>
+<div class="event">
+<div>
+<a href="/~ushin/hyperdrive.el/commit/8411cd13cea7f4183eb6ae7352af4baba13740ca" title="8411cd13cea7f4183eb6ae7352af4baba13740ca">8411cd13</a>
+  
+  —
+  
+  
+  <a href="/~tarsius/">Jonas Bernoulli</a>
+<small class="pull-right">
+<a href="/~ushin/hyperdrive.el/log?from=8411cd13cea7f4183eb6ae7352af4baba13740ca#log-8411cd13cea7f4183eb6ae7352af4baba13740ca" id="log-8411cd13cea7f4183eb6ae7352af4baba13740ca"><span title="2023-12-17 15:23:58 UTC">9 days ago</span></a>
+</small>
+</div>
+<pre class="commit">Add/Fix: Add hyperdrive-mirror custom group</pre>
+</div>
+<div class="event">
+<div>
+<a href="/~ushin/hyperdrive.el/commit/c3aeec17b3dd247d35527c9bb277e4a903a73bb4" title="c3aeec17b3dd247d35527c9bb277e4a903a73bb4">c3aeec17</a>
+  
+  —
+  
+  
+  <a href="/~ushin/">Joseph Turner</a>
+<small class="pull-right">
+<a href="/~ushin/hyperdrive.el/log?from=c3aeec17b3dd247d35527c9bb277e4a903a73bb4#log-c3aeec17b3dd247d35527c9bb277e4a903a73bb4" id="log-c3aeec17b3dd247d35527c9bb277e4a903a73bb4"><span title="2023-12-13 06:33:31 UTC">13 days ago</span></a>
+</small>
+</div>
+<pre class="commit">Tidy: Docstring</pre>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-4">
+<h3>refs</h3>
+<dl>
+<dt>master</dt>
+<dd>
+<a href="/~ushin/hyperdrive.el/tree">browse <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+<a href="/~ushin/hyperdrive.el/log">log <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+</dd>
+<dt>v0.3.0</dt>
+<dd>
+<a href="/~ushin/hyperdrive.el/refs/v0.3.0">release notes <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+</dd>
+</dl>
+</div>
+<div class="col-md-8">
+<h3>clone</h3>
+<dl>
+<dt>read-only</dt>
+<dd><a href="https://git.sr.ht/~ushin/hyperdrive.el">https://git.sr.ht/~ushin/hyperdrive.el</a></dd>
+<dt>read/write</dt>
+<dd>git@git.sr.ht:~ushin/hyperdrive.el</dd>
+</dl>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8 offset-md-4">
+<form action="/clone" method="POST">
+<input dir="auto" name="_csrf_token" type="hidden" value="ec497b23b703e2361145796deedcb809d0dce5f49cb2f4ca297adc33ad43a853f105761f1ada91be49f9a68c1ad038504e6d6eaf2803fec569999f0179ca8371"/>
+<input dir="auto" name="cloneUrl" type="hidden" value="https://git.sr.ht/~ushin/hyperdrive.el"/>
+<input dir="auto" name="name" type="hidden" value="hyperdrive.el"/>
+<input dir="auto" name="description" type="hidden" value="Clone of https://git.sr.ht/~ushin/hyperdrive.el"/>
+<input dir="auto" name="visibility" type="hidden" value="UNLISTED"/>
+<button class="btn btn-primary btn-block" type="submit">
+              Clone repo to your account <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span>
+</button>
+<p class="text-muted text-centered">
+<small>
+                You can also use your local clone with
+                <a href="https://git-send-email.io">git send-email</a>.
+              </small>
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="readme">
+<div class="col-md-10">
+<style>.highlight { background: inherit; }</style><div class="markdown"><h2 id="hyperdriveel---p2p-filesystem-in-emacs"><a href="#hyperdriveel---p2p-filesystem-in-emacs" rel="nofollow noopener">#</a>hyperdrive.el - P2P filesystem in Emacs</h2>
+<p>28.2: <a href="https://builds.sr.ht/~ushin/hyperdrive.el/commits/master/emacs-28.2.yml?" rel="nofollow noopener"><img alt="builds.sr.ht status" src="https://builds.sr.ht/~ushin/hyperdrive.el/commits/master/emacs-28.2.yml.svg"/></a>
+29.1: <a href="https://builds.sr.ht/~ushin/hyperdrive.el/commits/master/emacs-29.1.yml?" rel="nofollow noopener"><img alt="builds.sr.ht status" src="https://builds.sr.ht/~ushin/hyperdrive.el/commits/master/emacs-29.1.yml.svg"/></a>
+snapshot: <a href="https://builds.sr.ht/~ushin/hyperdrive.el/commits/master/emacs-snapshot.yml?" rel="nofollow noopener"><img alt="builds.sr.ht status" src="https://builds.sr.ht/~ushin/hyperdrive.el/commits/master/emacs-snapshot.yml.svg"/></a></p>
+<p><a href="https://docs.holepunch.to/building-blocks/hyperdrive" rel="nofollow noopener">Hyperdrive</a> is a P2P, real-time, local-first, versioned
+filesystem designed for easy peer-to-peer file sharing.
+<code>hyperdrive.el</code> is an independent project built by <a href="https://ushin.org" rel="nofollow noopener">USHIN</a> which
+provides an Emacs interface for managing hyperdrives.</p>
+<h3 id="installation"><a href="#installation" rel="nofollow noopener">#</a>Installation</h3>
+<p>See <a href="https://ushin.org/hyperdrive/hyperdrive-manual.html#Installation" rel="nofollow noopener">the
+manual</a>
+for installation instructions.</p>
+<h3 id="manual"><a href="#manual" rel="nofollow noopener">#</a>Manual</h3>
+<p>For more information, please see the
+<a href="https://ushin.org/hyperdrive/hyperdrive-manual.html" rel="nofollow noopener">manual</a>. For recent
+changes, see the <a href="/~ushin/hyperdrive.el/tree/master/CHANGELOG.org" rel="nofollow noopener">changelog</a>.</p>
+<h3 id="bugs-and-patches"><a href="#bugs-and-patches" rel="nofollow noopener">#</a>Bugs and Patches</h3>
+<p>Bugs can be submitted to the <a href="https://todo.sr.ht/~ushin/ushin" rel="nofollow noopener">ushin issue tracker</a>. Patches, comments or
+questions can be submitted to the <a href="https://lists.sr.ht/~ushin/ushin" rel="nofollow noopener">ushin public inbox</a>.</p>
+<h3 id="chat-room"><a href="#chat-room" rel="nofollow noopener">#</a>Chat Room</h3>
+<p>You're welcome to join our public XMPP chat
+room!</p>
+<ul>
+<li><code>xmpp:discuss@conference.ushin.org</code> (<a href="https://anonymous.cheogram.com/discuss@conference.ushin.org" rel="nofollow noopener">Join anonymously from your browser</a>)</li>
+<li><code>#_bifrost_discuss_conference.ushin.org:aria-net.org</code> (Matrix bridge)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

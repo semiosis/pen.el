@@ -1,0 +1,2 @@
+;; Generated package description from org-translate.el  -*- no-byte-compile: t -*-
+(define-package "org-translate" "0.1.4" "Org-based translation environment" '((emacs "27.1") (org "9.1")) :commit "bdc5d169ef0c502f46aa673918ccf34fcc8415f2" :url "https://elpa.gnu.org/packages/org-translate.html" :authors '(("Eric Abrahamsen" . "eric@ericabrahamsen.net")) :maintainer '("Eric Abrahamsen" . "eric@ericabrahamsen.net"))

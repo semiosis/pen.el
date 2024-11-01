@@ -1,0 +1,5 @@
+Define a function with ignore-errors."
+  (let ((func-name (intern (concat "ignore-errors-" (symbol-name (car -body))))))
+    `(defun ,func-name ,(cdr -body)
+       ,(format "Ignore errors when executing `%s'." (symbol-name (car -body)))
+       (ignore-errors ,@(cdr -body)))))

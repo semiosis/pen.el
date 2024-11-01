@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "nvi" "iman" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "nvi" "iman" "#" "<==" "nvim"
+cd /root/.emacs.d/host/pen.el/scripts;  "nvi" "iman" "#" "<==" "nvim"
+cd /root/.emacs.d/host/pen.el/scripts;  "nvi" "iman" "#" "<==" "pen-nvc"
+cd /root/.emacs.d/host/pen.el/scripts;  "nvi" "iman" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "nvi" "pen-gc" "#" "<==" "zsh"

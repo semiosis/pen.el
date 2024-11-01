@@ -1,0 +1,115 @@
+directive
+pragma
+    A language construct that specifies how a
+    compiler should process its input.
+    
+    Directives are not part of the grammar of
+    a programming language, and may vary from
+    compiler to compiler.
+
+jison
+    Takes a JSON encoded grammar or Bison
+    style grammar and outputs a JavaScript
+    file capable of parsing the language
+    described by that grammar. You can then
+    use the generated script to parse inputs
+    and accept, reject, or perform actions
+    based on the input.
+
+compiler phases
+    Source
+    Parsing
+    Desugar
+    Type Checking
+    Transformation
+    Compilation
+    Code Generation
+
+Source
+    [phase]
+
+    The frontend textual source language.
+
+Parsing
+    [phase]
+
+    Source is parsed into an abstract syntax
+    tree.
+
+Desugar
+    [phase]
+
+    Redundant structure from the frontend
+    language is removed and canonicalized.
+
+Type Checking
+    [phase]
+
+    The program is type-checked and/or
+    type-inferred yielding an explicitly typed
+    form.
+
+Transformation
+    [phase]
+
+    The core language is transformed to
+    prepare for compilation.
+
+Compilation
+    [phase]
+
+    The core language is lowered into a form
+    to be compiled or interpreted.
+
+Code Generation
+    [phase]
+
+    Platform specific code is generated,
+    linked into a binary.
+
+compiler construction topics
+    A somewhat arbitrary list:
+    - SSA form
+    - register allocation
+    - classical optimizations
+
+intermediate representation
+IR
+
+SSA
+SSA form
+static single assignment form
+    [compiler design]
+
+    A property of an IR, which requires that
+    each variable is assigned exactly once,
+    and every variable is defined before it is
+    used.
+
+    Existing variables in the original IR are
+    split into versions, new variables
+    typically indicated by the original name
+    with a subscript in textbooks, so that
+    every definition gets its own version.
+    
+    In SSA form, use-def chains are explicit
+    and each contains a single element.
+    
+    One can expect to find SSA in a compiler
+    for Fortran or C, whereas in functional
+    language compilers, such as those for
+    Scheme, ML and Haskell, CPS is generally
+    used.
+    
+    SSA is formally equivalent to a
+    well-behaved subset of CPS excluding
+    non-local control flow, which does not
+    occur when CPS is used as intermediate
+    representation.
+    
+    So optimizations and transformations
+    formulated in terms of one immediately
+    apply to the other.
+
+A-normal form
+ANF

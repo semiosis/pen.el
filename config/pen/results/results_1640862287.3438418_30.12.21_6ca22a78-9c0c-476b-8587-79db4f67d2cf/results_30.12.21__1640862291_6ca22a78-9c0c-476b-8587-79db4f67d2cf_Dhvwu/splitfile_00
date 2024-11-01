@@ -1,0 +1,4 @@
+
+The key sequence quit is bound to the "keyboard-quit" command, 
+which quits Emacs, cancelling the current command in progress.
+

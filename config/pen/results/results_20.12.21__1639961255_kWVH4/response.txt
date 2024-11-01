@@ -1,0 +1,7 @@
+root@mele:/etc$ ls
+group-  passwd
+root@mele:/etc$ cd group-
+root@mele:/etc/group-$ ls
+group
+root@mele:/etc/group-$ cat group
+root:x:0:

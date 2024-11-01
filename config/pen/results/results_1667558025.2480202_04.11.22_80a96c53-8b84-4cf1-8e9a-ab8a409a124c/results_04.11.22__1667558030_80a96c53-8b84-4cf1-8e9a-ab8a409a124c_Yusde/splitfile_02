@@ -1,0 +1,2 @@
+- haskell guru: Control.Monad is the basis
+for dealing with monads, like IO, State and Reader Monad.

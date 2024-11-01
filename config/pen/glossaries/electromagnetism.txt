@@ -1,0 +1,48 @@
+electromagnetic
+EM
+
+near field
+far field
+    The near field and far field are regions
+    of the electromagnetic (EM) field around
+    an object, such as a transmitting antenna,
+    or the result of radiation scattering off
+    an object. Non-radiative near-field
+    behaviors dominate close to the antenna or
+    scattering object, while electromagnetic
+    radiation far-field behaviors dominate at
+    greater distances.
+
+    Far-field E (electric) and B (magnetic)
+    field strength decreases as the distance
+    from the source increases, resulting in an
+    inverse-square law for the radiated power
+    intensity of electromagnetic radiation. By
+    contrast, near-field E and B strength
+    decrease more rapidly with distance: the
+    radiative field decreases by the
+    inverse-distance squared, the reactive
+    field by an inverse-cube law, resulting in
+    a diminished power in the parts of the
+    electric field by an inverse fourth-power
+    and sixth-power, respectively. The rapid
+    drop in power contained in the near-field
+    ensures that effects due to the near-field
+    essentially vanish a few wavelengths away
+    from the radiating part of the antenna.
+
+Fresnel integral
+    The Fresnel integrals S(x) and C(x) are
+    two transcendental functions named after
+    Augustin-Jean Fresnel that are used in
+    optics and are closely related to the
+    error function (erf).
+
+    They arise in the description of
+    near-field Fresnel diffraction phenomena
+    and are defined through the following
+    integral representations:
+
+        {\displaystyle S(x)=\int _{0}^{x}\sin \left(t^{2}\right)\,dt,\quad C(x)=\int _{0}^{x}\cos \left(t^{2}\right)\,dt.}
+
+    https://en.wikipedia.org/wiki/Fresnel_integral

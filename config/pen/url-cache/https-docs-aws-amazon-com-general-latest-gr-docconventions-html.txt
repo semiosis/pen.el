@@ -1,0 +1,251 @@
+HTTP/1.1 200 OK
+Server: Server
+Date: Mon, 27 Dec 2021 11:56:25 GMT
+Content-Type: text/html
+Content-Length: 3092
+Connection: keep-alive
+x-amz-rid: HK81FKFC004A5W6WSTJC
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-store, no-cache, must-revalidate
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Last-Modified: Wed, 22 Dec 2021 14:41:05 GMT
+ETag: "407c-5d3bd1c8f8240-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding,User-Agent,Content-Type,Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
+Permissions-Policy: interest-cohort=()
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="AWSDocsDocPageApp">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Document conventions - AWS General Reference</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="assets_root" content="/assets" />
+      <meta name="target_state" content="docconventions" />
+      <meta name="default_state" content="docconventions" />
+      <link rel="icon" type="image/ico" href="/assets/images/favicon.ico" />
+      <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" />
+      <meta name="description" content="Lists the common typographical conventions for AWS technical publications." />
+      <meta name="deployment_region" content="IAD" />
+      <meta name="product" content="AWS General Reference" />
+      <meta name="guide" content="Reference guide" />
+      <meta name="abstract" content="Provides a unified and concise overview of the common reference information for Amazon Web Services products, including supported Regions and an overall glossary." />
+      <meta name="guide-locale" content="en_us" />
+      <meta name="tocs" content="toc-contents.json" />
+      <meta name="feedback-item" content="AWS General Reference Guide" />
+      <meta name="this_doc_product" content="AWS General Reference" />
+      <meta name="this_doc_guide" content="Reference guide" />
+      <link href="/assets/css/vendor4.css?version=2021.12.02" rel="stylesheet" />
+      <link href="/assets/css/awsdocs-common.css?version=2021.12.02" rel="stylesheet" /><script type="text/javascript" src="/assets/js/vendor3.js?version=2021.12.02" defer=""></script><script type="text/javascript" src="/assets/js/vendor4.js?version=2021.12.02" defer=""></script><script type="text/javascript" src="/assets/js/vendor1.js?version=2021.12.02" defer=""></script><script type="text/javascript" src="/assets/js/awsdocs-common.js?version=2021.12.02" defer=""></script><script type="text/javascript" src="/assets/js/awsdocs-doc-app.js?version=2021.12.02" defer=""></script></head>
+   <body ng-csp="no-unsafe-eval" class="awsdocs awsui">
+      <div class="awsdocs-container">
+         <awsdocs-header></awsdocs-header>
+         <awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)">
+            <div id="guide-toc" dom-region="navigation">
+               <awsdocs-toc></awsdocs-toc>
+            </div>
+            <div id="main-column" dom-region="content" tabindex="-1">
+               <awsdocs-view class="awsdocs-view">
+                  <div id="awsdocs-content">
+                     <head>
+                        <title>Document conventions - AWS General Reference</title>
+                        <meta name="pdf" content="aws-general.pdf#docconventions" />
+                        <meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWS%20General%20Reference%20Guide&amp;topic_url=http://docs.aws.amazon.com/en_us/general/latest/gr/docconventions.html" />
+                        <meta name="feedback-yes" content="feedbackyes.html?topic_url=http://docs.aws.amazon.com/en_us/general/latest/gr/docconventions.html" />
+                        <meta name="feedback-no" content="feedbackno.html?topic_url=http://docs.aws.amazon.com/en_us/general/latest/gr/docconventions.html" />
+                     </head>
+                     <body>
+                        <div id="main">
+                           <div style="display: none"><a href="aws-general.pdf#docconventions" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div>
+                           <div id="breadcrumbs" class="breadcrumb"><a href="http://aws.amazon.com">AWS</a><a href="/index.html">Documentation</a><a href="Welcome.html">Reference guide</a></div>
+                           <div id="main-content" class="awsui-util-container">
+                              <div id="main-col-body">
+                                 <awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner>
+                                 <h1 class="topictitle" id="docconventions">Document conventions</h1>
+                                 <div class="awsdocs-page-header-container">
+                                    <awsdocs-page-header></awsdocs-page-header>
+                                    <awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector>
+                                 </div>
+                                 <p>The following are the common typographical conventions for AWS technical publications.</p>
+                                 <div class="variablelist">
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                    
+                                    <dl>
+                                       
+                                       <dt><b><span class="term">Inline code (for example, commands, operations, parameters, constants, XML elements,
+                                                and
+                                                regular expressions)</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text in a monospace font</p>
+                                          
+                                          <p>Example: <code class="code">java -version</code></p>
+                                          
+                                       </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">Example blocks (for example, sample code and scripts)</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text in a monospace font inside a shaded block</p>
+                                          
+                                          <p>Example:</p>
+                                          <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"><awsui-icon name="copy"></awsui-icon></div></div><code class="nohighlight "># ls -l /var/www/html/index.html
+-rw-rw-r--  1 root root 1872 Jun 21 09:33 /var/www/html/index.html
+# date
+Wed Jun 21 09:33:42 EDT 2006</code></pre>
+                                          </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">Mutually exclusive options</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text separated by vertical bars</p>
+                                          
+                                          <p>Example: <code class="code">(start | stride | edge)</code></p>
+                                          
+                                       </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">Optional parameters</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text enclosed in square brackets</p>
+                                          
+                                          <p>Example: <code class="code">[-n, -quiet]</code></p>
+                                          
+                                       </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">Definitions</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text in italics</p>
+                                          
+                                          <p>Example: <em>Amazon Machine Image</em> (AMI)
+                                          </p>
+                                          
+                                       </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">Technical publications</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text in italics</p>
+                                          
+                                          <p>Example: <em>Amazon Simple Storage Service User Guide</em></p>
+                                          
+                                       </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">Elements in the user interface</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text in bold</p>
+                                          
+                                          <p>Example: Choose <b>File</b>, <b>Properties</b>.
+                                          </p>
+                                          
+                                       </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">User input (text that a user types)</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text in a monospace font</p>
+                                          
+                                          <p>Example: For the name, type <code class="userinput">my-new-resource</code>.
+                                          </p>
+                                          
+                                       </dd>
+                                       
+                                       
+                                       <dt><b><span class="term">Placeholder text for a required value</span></b></dt>
+                                       
+                                       <dd>
+                                          
+                                          <p>Formatting: Text in <code class="replaceable">italics</code></p>
+                                          
+                                          <p>Example:</p>
+                                          <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"><awsui-icon name="copy"></awsui-icon></div></div><code class="nohighlight">aws ec2 register-image --image-location <code class="replaceable">my-s3-bucket</code>/image.manifest.xml</code></pre>
+                                          </dd>
+                                       
+                                    </dl>
+                                 </div>
+                                 <awsdocs-copyright class="copyright-print"></awsdocs-copyright>
+                                 <awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback>
+                              </div>
+                              <noscript>
+                                 <div>
+                                    <div>
+                                       <div>
+                                          <div id="js_error_message">
+                                             <p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p>
+                                             <p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer
+                                                to your browser's Help pages for instructions.
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </noscript>
+                              <div id="main-col-footer" class="awsui-util-font-size-0">
+                                 <div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div>
+                                 <div class="prev-next">
+                                    <div id="previous" class="prev-link" accesskey="p" href="./aws_sdk_cryptography.html">AWS SDK support for Amazon S3 client-side encryption</div>
+                                 </div>
+                              </div>
+                              <awsdocs-page-utilities></awsdocs-page-utilities>
+                           </div>
+                           <div id="quick-feedback-yes" style="display: none;">
+                              <div class="title">Did this page help you? - Yes</div>
+                              <div class="content">
+                                 <p>Thanks for letting us know we're doing a good job!</p>
+                                 <p>If you've got a moment, please tell us what we did right so we can do more of it.</p>
+                                 <p>
+                                    <awsui-button id="fblink" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWS General Reference Guide&amp;topic_url=https://docs.aws.amazon.com/en_us/general/latest/gr/docconventions.html"></awsui-button>
+                                 </p>
+                              </div>
+                           </div>
+                           <div id="quick-feedback-no" style="display: none;">
+                              <div class="title">Did this page help you? - No</div>
+                              <div class="content">
+                                 <p>Thanks for letting us know this page needs work. We're sorry we let you down.</p>
+                                 <p>If you've got a moment, please tell us how we can make the documentation better.</p>
+                                 <p>
+                                    <awsui-button id="fblink" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=AWS General Reference Guide&amp;topic_url=https://docs.aws.amazon.com/en_us/general/latest/gr/docconventions.html"></awsui-button>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </body>
+                  </div>
+               </awsdocs-view>
+               <div class="page-loading-indicator" id="page-loading-indicator">
+                  <awsui-spinner size="large"></awsui-spinner>
+               </div>
+            </div>
+            <div id="tools-panel" dom-region="tools">
+               <awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel>
+            </div>
+         </awsui-app-layout>
+         <awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner>
+      </div>
+   </body>
+</html>

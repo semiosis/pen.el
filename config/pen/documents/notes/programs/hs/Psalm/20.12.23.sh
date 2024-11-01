@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Psalm" "16:11" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Psalm" "32:11" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Psalm" "37:4" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Psalm" "67:4" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Psalm" "100:1" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Psalm" "100:1-2" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Psalm" "4:8" "#" "<==" "bash"

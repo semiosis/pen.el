@@ -1,0 +1,11 @@
+"define-expression" is a function that takes a string and returns a function.
+
+For example:
+
+(define-expression "aws" '("aws" "--region" "us-east-1"))
+
+(define-expression "aws" '("aws" "--region" "us-east-1"))
+
+(define-expression "aws" '("aws" "--region" "us-east-1"))
+
+(define-expression "aws" '("aws

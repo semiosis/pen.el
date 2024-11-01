@@ -1,0 +1,9 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "most-famous-person-known-for" "swimming")))
+--> "Michael Phelps"
+
+
+
+;; Run function -loop
+(message (eval '(-loop "-u" "most-famous-person-known-for" "climbing")))
+--> 

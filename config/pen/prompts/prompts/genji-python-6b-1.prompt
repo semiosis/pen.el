@@ -1,0 +1,12 @@
+title: Genji Python 6B
+include: Generic completion 50 tokens/1
+tags: fundamental
+prompt-version: 1
+engine: HF NovelAI Genji Python 6B
+issues:
+- |
+  This is a large model and needs to be connected.
+  Large models do not get loaded automatically
+  to protect quality of service. Contact us at
+  api-inference@huggingface.co so we can
+  configure large models for your endpoints.

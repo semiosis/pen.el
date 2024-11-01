@@ -1,0 +1,14 @@
+"definterface" is a macro for defining a new interface.
+
+It takes two arguments.
+The first argument is the interface name.
+The second argument is a list of method names.
+
+The interface name should be a symbol.
+The method names should be symbols.
+
+The interface name is used for naming the interface class.
+The interface class is a subclass of "khala.core.Interface".
+The interface class is defined in the current namespace.
+
+For example:

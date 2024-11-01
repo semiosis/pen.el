@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-P" "open-colors" "#" "<==" "fpvd"
+cd /root/.emacs.d/host/pen.el/src;  "fpvd" "/tmp/tf_temp_e3b0c44298.csv" "#" "<==" "fpvd"
+cd /root/.emacs.d/host/pen.el/src;  "fpvd" "/tmp/tf_temp_e3b0c44298.csv" "#" "<==" "fpvd"
+cd /root/.emacs.d/host/pen.el/src;  "fpvd" "/tmp/tf_temp_e3b0c44298.csv" "#" "<==" "fpvd"

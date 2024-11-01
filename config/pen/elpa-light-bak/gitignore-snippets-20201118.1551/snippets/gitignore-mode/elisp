@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: Elisp
+# contributor: Toptal & contributors
+# key: elisp
+# --
+
+### Elisp ###
+
+# Compiled
+*.elc
+
+# Packaging
+.cask
+
+# Backup files
+*~
+
+# Undo-tree save-files
+*.~undo-tree

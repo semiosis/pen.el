@@ -1,0 +1,30 @@
+intent vs goal
+    Some chatbot tools use the word intent to
+    refer to the user goal.
+
+    This is confusing because only some
+    messages tell you what a user’s goal is.
+
+dialogue elements
+    - highest level:
+      user goals
+
+    - middle level:
+      dialogue elements
+
+    - lowest level:
+      intents, entities, actions, slots, and
+      templates.
+
+Rasa Core
+    Essentially generates the reply message
+    for the chatbot.
+    
+    It takes the output of Rasa NLU (intent
+    and entities) and applies ML models (which
+    you can select from) to generate a reply.
+
+action server
+    v +/"rasa run actions --actions actions.actions" "$MYGIT/RasaHQ/rasa-demo/README.md"
+
+    https://rasa.com/docs/rasa/api/action-server/

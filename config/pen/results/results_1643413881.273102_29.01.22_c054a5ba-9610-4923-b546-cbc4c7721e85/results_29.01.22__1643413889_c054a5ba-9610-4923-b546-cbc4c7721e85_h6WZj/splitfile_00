@@ -1,0 +1,12 @@
+
+      (if (pen-complete-line-p preceding-text)
+          (pen-complete-line preceding-text tv)
+        (if pen-mode
+            (progn
+              (pen-complete-insert preceding-text)
+              (message "Not a line completion")))
+        (call-interactively 'self-insert-command)))))
+
+(defun pen-complete ()
+  "Complete the current word"
+  (

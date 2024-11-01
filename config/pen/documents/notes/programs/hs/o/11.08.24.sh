@@ -1,0 +1,6 @@
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://bridemovement.com/" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=6dB9hygVhRc&ab_channel=DesiringGod" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://youtube.com/watch?v=6dB9hygVhRc&t=320" "#" "<==" "o"

@@ -1,0 +1,9 @@
+"async/go-loop" is a macro that takes a function that returns a channel and a
+transducer. The function will be called when the channel is ready to be
+processed. The transducer will be applied to each message on the channel.
+
+The function will be called with an empty channel. The transducer will be
+applied to each message on the channel.
+
+The function will be called with the channel containing the message. The
+transducer will be applied to

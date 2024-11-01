@@ -1,0 +1,51 @@
+title: invent a new word
+task: invent a new word from a definition
+task: prose fun language
+design-patterns: 
+doc: Given a description of a word that you are looking for, list some possible candidates
+prompt-version: 2
+prompt: |
+  These words are not real:
+
+  <delim>
+  1 word that means "serene, but noisy":
+  <delim>
+  - serenoisy
+  <delim>
+  2 words that means "beyond the ultimate":
+  <delim>
+  - transultimate
+  - postfinal
+  <delim>
+  1 word that means "surreal and surreptitious":
+  <delim>
+  - surreptitious
+  <delim>
+  <n> different words that mean <q:definition>:
+  <delim>
+  -
+force-engine: OpenAI Davinci
+force-temperature: 0.3
+max-generated-tokens: 100
+top-p: 1
+stop-sequences:
+- "<delim-1>"
+cache: true
+defs:
+- n: 3
+vars:
+- definition
+examples:
+- rich but poor
+test-output: flaunt
+# preprocessors:
+# - pf-correct-grammar/1
+prefer-external: true
+n-collate: 1
+n-completions: 10
+n-test-runs: 5
+continuation-function: list-of <1> <g>
+split-patterns:
+- "\n"
+postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
+# prettifier: pen-pretty-paragraph

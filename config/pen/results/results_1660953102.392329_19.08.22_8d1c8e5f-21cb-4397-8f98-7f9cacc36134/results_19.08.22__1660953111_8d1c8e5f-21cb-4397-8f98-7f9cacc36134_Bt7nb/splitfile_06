@@ -1,0 +1,28 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: Populate Library
+  hosts: library
+  remote_user: root
+  gather_facts: false
+  tasks:
+    - name: Install lsyncd
+      yum:
+        name: lsyncd
+        state: present
+    - name: Copy lsyncd configuration file
+      copy:
+        dest: /etc/lsyncd.conf
+        src: /tmp/lsyncd.conf
+    - name: Copy lsyncd service file
+      copy:
+        dest: /etc/systemd/system/lsyncd.service
+        src: /tmp/lsyncd.service
+    - name: Start lsyncd
+      service:
+        name: lsyncd
+        state: started
+        enabled: yes
+    - name: Copy rsync configuration file
+      copy:
+        dest: /etc/rsyncd.conf
+        src: /tmp/r

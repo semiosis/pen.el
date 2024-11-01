@@ -1,0 +1,52 @@
+TDD
+Test-Driven Development
+
+fake vs mock
+    [#TDD]
+
+    It is easy to confuse the term *fake
+    objects* with mock objects.
+    
+    Fakes and mocks actually mean very
+    different things in the TDD community.
+
+fake
+fake object
+    Have working implementations, but usually
+    take some shortcut (perhaps to make the
+    operations less expensive), which makes
+    them not suitable for production.
+    
+    An in-memory file system would be an
+    example of a fake.
+
+mock
+mock object
+    Pre-programmed with *expectations*, which
+    form a specification of the calls they are
+    expected to receive.
+
+dependency injection
+    [#software engineering]
+
+    A technique whereby one object supplies
+    the dependencies of another object.
+    
+    A "dependency" is an object that can be
+    used, for example as a service.
+    
+    Instead of a client specifying which
+    service it will use, something tells the
+    client what service to use.
+    
+    The "injection" refers to the passing of a
+    dependency (a service) into the object (a
+    client) that would use it.
+    
+    The service is made part of the client's
+    state.
+    
+    Passing the service to the client, rather
+    than allowing a client to build or find
+    the service, is the fundamental
+    requirement of the pattern.

@@ -1,0 +1,11 @@
+
+#!/usr/bin/env bash
+
+# This appears to be an extractive summarization tool
+
+# How to select which transformer model to use?
+
+summarization=$(python3 -c "from transformers import pipeline; print(pipeline('summarization')(\$(cat))[0]['summary_text'])")
+
+echo "\$summarization"
+

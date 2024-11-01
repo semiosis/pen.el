@@ -1,0 +1,6 @@
+
+            (mapcat (fn [[a b]] (conj b a))
+                    pairs))))
+
+(defn create-notebook-data [name]
+  (if-not (pensieve/notebook-

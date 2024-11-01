@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "bible-tpop-lookup" "-c" "-m" "KJV" "Rev 2:9" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "bible-tpop-lookup" "-c" "-m" "KJV" "Rev 2:9" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "bible-tpop-lookup" "-c" "-m" "KJV" "Isa 45:14" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "bible-tpop-lookup" "-c" "-m" "KJV" "Isa 43:4" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "bible-tpop-lookup" "-c" "-m" "KJV" "Zech 8:20-23" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "bible-tpop-lookup" "-c" "-m" "KJV" "Acts 16:37-39" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "bible-tpop-lookup" "-c" "-m" "KJV" "1Sam 2:36" "#" "<==" "bash"

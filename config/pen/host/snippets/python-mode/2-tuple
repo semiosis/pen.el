@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: 2-tuple
+# group: sot
+# key: 2
+# --
+($1,$2)$0

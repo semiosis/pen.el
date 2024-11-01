@@ -1,0 +1,1611 @@
+HTTP/1.1 200 OK
+Server: nginx/1.19.5
+Date: Thu, 27 Oct 2022 21:25:03 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+x-archive-orig-connection: Keep-Alive
+x-archive-orig-keep-alive: timeout=5, max=100
+x-archive-orig-expires: Wed, 17 Aug 2005 00:00:00 GMT
+x-archive-orig-last-modified: Tue, 02 Aug 2022 17:10:38 GMT
+x-archive-orig-cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0,no-transform
+x-archive-orig-pragma: no-cache
+x-archive-orig-etag: "68-1659460238;;;"
+x-archive-orig-x-litespeed-cache: hit
+x-archive-orig-transfer-encoding: chunked
+x-archive-orig-date: Wed, 03 Aug 2022 06:16:31 GMT
+x-archive-orig-server: LiteSpeed
+x-archive-orig-x-frame-options: SAMEORIGIN
+x-archive-orig-x-content-type-options: nosniff
+x-archive-orig-x-xss-protection: 1; mode=block
+x-archive-orig-referrer-policy: unsafe-url
+x-archive-orig-alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+memento-datetime: Wed, 03 Aug 2022 06:16:11 GMT
+link: <https://glorian.org/>; rel="original", <https://web.archive.org/web/timemap/link/https://glorian.org/>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://glorian.org/>; rel="timegate", <https://web.archive.org/web/20011130182344/http://www.glorian.org:80/>; rel="first memento"; datetime="Fri, 30 Nov 2001 18:23:44 GMT", <https://web.archive.org/web/20220723134659/https://www.glorian.org/>; rel="prev memento"; datetime="Sat, 23 Jul 2022 13:46:59 GMT", <https://web.archive.org/web/20220803061611/https://glorian.org/>; rel="memento"; datetime="Wed, 03 Aug 2022 06:16:11 GMT", <https://web.archive.org/web/20220820052655/https://glorian.org/>; rel="next memento"; datetime="Sat, 20 Aug 2022 05:26:55 GMT", <https://web.archive.org/web/20221022144428/http://glorian.org/>; rel="last memento"; datetime="Sat, 22 Oct 2022 14:44:28 GMT"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org analytics.archive.org pragma.archivelab.org
+x-archive-src: archiveteam_urls_20220803062729_b3ed1cc1/urls_20220803062729_b3ed1cc1.1650286618.megawarc.warc.zst
+server-timing: captures_list;dur=372.051140, exclusion.robots;dur=0.216020, exclusion.robots.policy;dur=0.208380, RedisCDXSource;dur=225.478048, esindex;dur=0.008730, LoadShardBlock;dur=127.140619, PetaboxLoader3.datanode;dur=169.785485, CDXLines.iter;dur=15.064083, load_resource;dur=146.225857, PetaboxLoader3.resolve;dur=49.831240, loaddict;dur=77.809865
+x-app-server: wwwb-app225
+x-ts: 200
+x-tr: 820
+X-location: All
+X-RL: 0
+X-NA: 0
+X-Page-Cache: HIT
+X-NID: -
+Referrer-Policy: no-referrer-when-downgrade
+Permissions-Policy: interest-cohort=()
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" vocab="https://schema.org/">
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=531;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=U25-Dms9" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://glorian.org/","20220803061611","https://web.archive.org/","web","/_static/",
+	      "1659507371");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=fantwOh2" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<script class="4SEO_analytics_rule_1858">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://web.archive.org/web/20220803061611/https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-57VXZ7F');
+</script>
+
+<script class="4SEO_analytics_rule_1859" async src="https://web.archive.org/web/20220803061611js_/https://www.googletagmanager.com/gtag/js?id=G-X5TVST8Q49"></script>
+<script class="4SEO_analytics_rule_1859">
+    window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X5TVST8Q49');</script>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/images/favicon-96x96.png">
+        <link rel="apple-touch-icon" href="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/images/apple-icon-180x180.png">
+        <meta charset="utf-8">
+	<base href="https://web.archive.org/web/20220803061611/https://glorian.org/">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="og:title" content="Homepage">
+	<meta name="twitter:title" content="Homepage">
+	<meta name="og:type" content="article">
+	<meta name="og:image" content="https://web.archive.org/web/20220803061611im_/https://glorian.org/images/headers/IMG_0503.jpg">
+	<meta name="twitter:image" content="https://web.archive.org/web/20220803061611im_/https://glorian.org/images/headers/IMG_0503.jpg">
+	<meta name="og:url" content="https://web.archive.org/web/20220803061611im_/https://glorian.org/">
+	<meta name="og:site_name" content="Glorian">
+	<meta name="og:description" content="Glorian is a non-profit book publisher featuring Samael Aun Weor, plus free online courses, streaming radio, an online store, help from spiritual teachers, and more.">
+	<meta name="twitter:description" content="Glorian is a non-profit book publisher featuring Samael Aun Weor, plus free online courses, streaming radio, an online store, help from spiritual teachers, and more.">
+	<meta name="description" content="Glorian is a non-profit book publisher featuring Samael Aun Weor, plus free online courses, streaming radio, an online store, help from spiritual teachers, and more.">
+	<meta name="generator" content="sunyata">
+	<title>Glorian: Books and Teachings of Practical Spirituality</title>
+	<link href="https://web.archive.org/web/20220803061611/https://glorian.org/search?format=opensearch" rel="search" title="Glorian" type="application/opensearchdescription+xml">
+	<link href="https://web.archive.org/web/20220803061611/https://glorian.org/" rel="canonical" class="4SEO_auto_canonical">
+<link href="//web.archive.org/web/20220803061611cs_/https://gnosticteachings-rochen.netdna-ssl.com/media/vendor/awesomplete/css/awesomplete.css?1.1.5" rel="stylesheet"/>
+	<link href="//web.archive.org/web/20220803061611cs_/https://gnosticteachings-rochen.netdna-ssl.com/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet"/>
+	<link href="//web.archive.org/web/20220803061611cs_/https://gnosticteachings-rochen.netdna-ssl.com/media/system/css/joomla-fontawesome.min.css?2.7.22" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+	<link href="//web.archive.org/web/20220803061611cs_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/css/theme.52.css?1654800130" rel="stylesheet"/>
+<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/media/vendor/awesomplete/js/awesomplete.min.js?1.1.5" defer></script>
+	<script type="application/json" class="joomla-script-options new">{"finder-search":{"url":"\/component\/finder\/?task=suggestions.suggest&amp;format=json&amp;tmpl=component&amp;Itemid=13787"},"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/web.archive.org\/web\/20220803061611\/https:\/\/glorian.org\/","base":"","baseFull":"https:\/\/web.archive.org\/web\/20220803061611\/https:\/\/glorian.org\/"},"csrf.token":"d982807695c5bc253f72ea0b8a5c2f25"}</script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/media/system/js/core.min.js?17121a112ecec3d656efe5c5f493429c9acf2179"></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/media/com_finder/js/finder-es5.min.js?bad573eb3c559a3e1070529bf0ccb8d8745ba5f3" nomodule defer></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/media/system/js/messages-es5.min.js?70b6651d6deab46dc8a25f03338f66f540cc62e2" nomodule defer></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/media/com_finder/js/finder.min.js?29fe670bb180ec95c613a0e6aa6df738d9de97d4" type="module"></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/media/system/js/messages.min.js?7425e8d1cb9e4f061d5e30271d6d99b085344117" type="module"></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/vendor/yootheme/theme-cookie/app/cookie.min.js?2.7.22" defer></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?2.7.22"></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-trek.min.js?2.7.22"></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/js/theme.js?2.7.22"></script>
+	<script src="//web.archive.org/web/20220803061611js_/https://gnosticteachings-rochen.netdna-ssl.com/plugins/system/yooessentials/modules/element/elements/social_sharing_item/assets/asset.js?1.7.2" defer></script>
+	<script>document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });</script>
+	<meta name="generator" content="SEO optimization by 4SEO" class="4SEO_generator_tag">
+	<script>(window.$load = window.$load || []).push(function(c,n) {try {consentGranted();
+} catch (e) {console.error(e)} n()});
+</script>
+	<script>var $theme = {"cookie":{"mode":"notification","template":"<div class=\"tm-cookie-banner uk-section uk-section-xsmall uk-section-primary uk-position-bottom uk-position-fixed\">\n        <div class=\"uk-container uk-container-expand uk-text-center\">\n\n            This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.\n                            <button type=\"button\" class=\"js-accept uk-button uk-button-secondary uk-margin-small-left\" data-uk-toggle=\"target: !.uk-section; animation: true\">I understand<\/button>\n            \n            \n        <\/div>\n    <\/div>","position":"bottom"}};</script>
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" class="4SEO_robots_tag">
+	<script type="application/ld+json" class="4SEO_structured_data_sitelinks">{
+    "@context": "https://web.archive.org/web/20220803061611/http://schema.org",
+    "@type": "WebSite",
+    "url": "https://web.archive.org/web/20220803061611/https://glorian.org/",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://web.archive.org/web/20220803061611/https://glorian.org/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}</script>
+<script type="application/ld+json" class="4SEO_structured_data_page">{
+    "@context": "https://web.archive.org/web/20220803061611/http://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "author": {
+                "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#simon_kloostra_5890d64187"
+            },
+            "dateModified": "2022-05-10T17:55:31Z",
+            "datePublished": "2019-12-13T15:19:28Z",
+            "description": "Glorian is a non-profit book publisher featuring Samael Aun Weor, plus free online courses, streaming radio, an online store, help from spiritual teachers, and more.",
+            "headline": "Homepage",
+            "image": {
+                "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultLogo"
+            },
+            "inLanguage": "en-GB",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "url": "https://web.archive.org/web/20220803061611/https://glorian.org/"
+            },
+            "publisher": {
+                "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultPublisher"
+            },
+            "url": "https://web.archive.org/web/20220803061611/https://glorian.org/"
+        },
+        {
+            "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultBusiness",
+            "@type": "LocalBusiness",
+            "name": "Glorian",
+            "url": "https://web.archive.org/web/20220803061611/https://glorian.org/",
+            "telephone": "",
+            "address": {
+                "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultAddress"
+            },
+            "geo": {
+                "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultGeo"
+            },
+            "image": {
+                "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultLogo"
+            }
+        },
+        {
+            "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultLogo",
+            "@type": "ImageObject",
+            "url": "",
+            "width": "",
+            "height": ""
+        },
+        {
+            "@type": "Person",
+            "name": "Simon Kloostra",
+            "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#simon_kloostra_5890d64187"
+        },
+        {
+            "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultPublisher",
+            "@type": "Organization",
+            "url": "https://web.archive.org/web/20220803061611/https://glorian.org/",
+            "logo": {
+                "@id": "https://web.archive.org/web/20220803061611/https://glorian.org/#defaultLogo"
+            },
+            "name": "Glorian"
+        }
+    ]
+}</script></head>
+    <body class=""><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20220803061611/https%3A//glorian.org/"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://glorian.org/" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20220803061611" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+		<div class="s" id="wm-nav-captures" style="flex:1;">
+	  	  <a class="t" href="/web/20220803061611*/https://glorian.org/" title="See a list of every capture for this URL">174 captures</a>
+	  <div class="r" title="Timespan for captures of this URL">30 Nov 2001 - 22 Oct 2022</div>
+	  </div>
+	<div class="k">
+	  <a href="" id="wm-graph-anchor">
+	    <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+	      <canvas id="wm-sparkline-canvas" width="675" height="27" border="0"></canvas>
+	    </div>
+	  </a>
+	</div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+	<tbody>
+	  <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+	  <tr class="m">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20220701123818/https://glorian.org/" title="01 Jul 2022"><strong>Jul</strong></a></td>
+	    <td class="c" id="displayMonthEl" title="You are here: 06:16:11 Aug 03, 2022">AUG</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20221002023546/https://glorian.org/" title="02 Oct 2022"><strong>Oct</strong></a></td>
+	  </tr>
+	  <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+	  <tr class="d">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20220723134659/https://www.glorian.org/" title="13:46:59 Jul 23, 2022"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+	    <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 06:16:11 Aug 03, 2022">03</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20220820052655/https://glorian.org/" title="05:26:55 Aug 20, 2022"><img src="/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a></td>
+	  </tr>
+	  <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+	  <tr class="y">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210728112011/https://glorian.org/" title="28 Jul 2021"><strong>2021</strong></a></td>
+	    <td class="c" id="displayYearEl" title="You are here: 06:16:11 Aug 03, 2022">2022</td>
+	    <td class="f" nowrap="nowrap">2023</td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+        	<span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+	</span>
+        	<a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20220803061611/http://web.archive.org/screenshot/https://glorian.org/"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+	<a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20220803061611/https://glorian.org/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20220803061611/https://glorian.org/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+	<a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archiveteam);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/archiveteam" target="_new"><span class="wm-title">Archive Team</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  <img align=right src="http://archiveteam.org/images/e/e6/Archiveteam.jpg" width=200> Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copies of rapidly dying or deleted websites for the sake of history and digital heritage. The group is 100% composed of volunteers and interested parties, and has expanded into a large amount of related projects for saving online and digital history.
+<p>
+History is littered with hundreds of conflicts over the future of a community, group, location or business that were "resolved" when one of the parties stepped ahead and destroyed what was there. With the original point of contention destroyed, the debates would fall to the wayside. Archive Team believes that by duplicated condemned data, the conversation and debate can continue, as well as the richness and insight gained by keeping the materials. Our projects have ranged in size from a single volunteer downloading the data to a small-but-critical site, to over 100 volunteers stepping forward to acquire terabytes of user-created data to save for future generations.
+<p>
+The main site for Archive Team is at <a href="http://www.archiveteam.org">archiveteam.org</a> and contains up to the date information on various projects, manifestos, plans and walkthroughs.
+<p>
+This collection contains the output of many Archive Team projects, both ongoing and completed. Thanks to the generous providing of disk space by the Internet Archive, multi-terabyte datasets can be made available, as well as in use by the <a href="http://archive.org/web/web.php">Wayback Machine</a>, providing a path back to lost websites and work. 
+<p>
+Our collection has grown to the point of having sub-collections for the type of data we acquire. If you are seeking to browse the contents of these collections, the Wayback Machine is the best first stop. Otherwise, you are free to dig into the stacks to see what you may find.
+<p>
+<b>The Archive Team Panic Downloads</b> are full pulldowns of currently extant websites, meant to serve as emergency backups for needed sites that are in danger of closing, or which will be missed dearly if suddenly lost due to hard drive crashes or server failures. 
+<p>
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archiveteam_urls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/archiveteam_urls" target="_new"><span class="wm-title">Archive Team: URLs</span></a></div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20220803061611/https://glorian.org/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(675,27,25,2,"web","https://glorian.org/","20220803061611",1996,"/_static/",["/_static/css/banner-styles.css?v=fantwOh2","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<noscript class="4SEO_analytics_rule_1858"><iframe src="https://web.archive.org/web/20220803061611if_/https://www.googletagmanager.com/ns.html?id=GTM-5P2B2TP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+        
+        
+        <div class="tm-page">
+
+                        
+<div class="tm-header-mobile uk-hidden@m">
+
+<div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+
+    <div class="uk-navbar-container">
+        <nav uk-navbar="container: .tm-header-mobile">
+
+                        <div class="uk-navbar-left">
+
+                                    
+<a href="https://web.archive.org/web/20220803061611/https://glorian.org/" class="uk-navbar-item uk-logo">
+    <img alt="Glorian" width="200" src="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/images/svg/glorian-logo-tr-h.svg"></a>
+                                    
+                                <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle="animation: true">
+                    <div uk-navbar-toggle-icon></div>
+                                            <span class="uk-margin-small-left">Menu</span>
+                                    </a>
+                
+                
+            </div>
+            
+            
+            
+        </nav>
+    </div>
+
+    
+                <div class="uk-position-relative tm-header-mobile-slide">
+        
+        <div id="tm-mobile" class="uk-position-top" hidden>
+            <div class="uk-background-default uk-padding">
+
+                
+<div class="uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-menu-mobile">
+
+    
+    
+<ul class="uk-nav uk-nav-default uk-nav-parent-icon uk-nav-accordion" uk-nav="targets: > .js-accordion">
+    
+	<li class="item-13827"><a href="/web/20220803061611/https://glorian.org/books"> Books</a></li>
+	<li class="item-13829 js-accordion uk-parent"><a href> Learn</a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-13830"><a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures"> Courses and Lectures</a></li>
+		<li class="item-13841"><a href="/web/20220803061611/https://glorian.org/learn/glossary"> Glossary</a></li>
+		<li class="item-13845"><a href="/web/20220803061611/https://glorian.org/learn/podcast-and-radio"> Podcast and Radio</a></li>
+		<li class="item-13842"><a href="/web/20220803061611/https://glorian.org/learn/scriptures"> Scriptures</a></li>
+		<li class="item-13900"><a href="/web/20220803061611/https://glorian.org/learn/topics"> Topics</a></li>
+		<li class="item-13834"><a href="/web/20220803061611/https://glorian.org/learn/video"> Video</a></li></ul></li>
+	<li class="item-13838 js-accordion uk-parent"><a href> Connect</a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-13855"><a href="/web/20220803061611/https://glorian.org/connect/ask-instructor/forums/1-questions"> Ask Instructor</a></li>
+		<li class="item-13903"><a href="/web/20220803061611/https://glorian.org/connect/blog"> Blog</a></li>
+		<li class="item-13887"><a href="/web/20220803061611/https://glorian.org/connect/event-calendar"> Event Calendar</a></li></ul></li>
+	<li class="item-13839"><a href="https://web.archive.org/web/20220803061611/https://shop.glorian.org/" target="_blank"> Shop</a></li>
+	<li class="item-13938"><a href="/web/20220803061611/https://glorian.org/give/donate" class="button"> Donate</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-932">
+
+    
+    
+
+    <form id="search-932" action="/web/20220803061611/https://glorian.org/search" method="get" role="search" class="uk-search js-finder-searchform uk-search-default uk-width-1-1"><span uk-search-icon></span><input name="q" class="js-finder-search-query uk-search-input" placeholder="Search" required type="search"><input type="hidden" name="option" value="com_finder"><input type="hidden" name="Itemid" value="13854"></form>
+
+
+
+
+
+
+</div>
+</div></div>
+
+            </div>
+        </div>
+
+                </div>
+        
+    
+</div>
+
+
+</div>
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;,&quot;container&quot;:&quot;.tm-header > [uk-sticky]&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    
+<a href="https://web.archive.org/web/20220803061611/https://glorian.org/" class="uk-navbar-item uk-logo">
+    <img alt="Glorian" width="200" src="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/images/svg/glorian-logo-tr-h.svg"></a>
+                                                    
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                        
+                                                    
+<ul class="uk-navbar-nav">
+    
+	<li class="item-13827"><a href="/web/20220803061611/https://glorian.org/books"> Books</a></li>
+	<li class="item-13829 uk-parent"><a> Learn</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;x&quot;,&quot;pos&quot;:&quot;bottom-left&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;container&quot;:&quot;.tm-header > [uk-sticky]&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-13830"><a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures"> Courses and Lectures</a></li>
+		<li class="item-13841"><a href="/web/20220803061611/https://glorian.org/learn/glossary"> Glossary</a></li>
+		<li class="item-13845"><a href="/web/20220803061611/https://glorian.org/learn/podcast-and-radio"> Podcast and Radio</a></li>
+		<li class="item-13842"><a href="/web/20220803061611/https://glorian.org/learn/scriptures"> Scriptures</a></li>
+		<li class="item-13900"><a href="/web/20220803061611/https://glorian.org/learn/topics"> Topics</a></li>
+		<li class="item-13834"><a href="/web/20220803061611/https://glorian.org/learn/video"> Video</a></li></ul></div></div></div></li>
+	<li class="item-13838 uk-parent"><a> Connect</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;x&quot;,&quot;pos&quot;:&quot;bottom-left&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;container&quot;:&quot;.tm-header > [uk-sticky]&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-13855"><a href="/web/20220803061611/https://glorian.org/connect/ask-instructor/forums/1-questions"> Ask Instructor</a></li>
+		<li class="item-13903"><a href="/web/20220803061611/https://glorian.org/connect/blog"> Blog</a></li>
+		<li class="item-13887"><a href="/web/20220803061611/https://glorian.org/connect/event-calendar"> Event Calendar</a></li></ul></div></div></div></li>
+	<li class="item-13839"><a href="https://web.archive.org/web/20220803061611/https://shop.glorian.org/" target="_blank"> Shop</a></li>
+	<li class="item-13938"><a href="/web/20220803061611/https://glorian.org/give/donate" class="button"> Donate</a></li></ul>
+
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-right">
+
+                        
+                        
+<div id="module-931">
+
+    
+    
+
+    <a class="uk-navbar-toggle" href="#search-931-modal" uk-search-icon uk-toggle></a>
+
+    <div id="search-931-modal" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-search uk-search-large">
+                <form id="search-931" action="/web/20220803061611/https://glorian.org/search" method="get" role="search" class="uk-search js-finder-searchform uk-search-large"><input name="q" class="js-finder-search-query uk-search-input uk-text-center" placeholder="Search" required type="search" autofocus><input type="hidden" name="option" value="com_finder"><input type="hidden" name="Itemid" value="13854"></form>            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+</div>
+            
+            
+
+            
+            <div id="system-message-container" aria-live="polite"></div>
+
+            <!-- Builder #page -->
+<div class="uk-section-default uk-light">
+        <div data-src="//web.archive.org/web/20220803061611oe_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/2016-04-06-1459960077-9351636-ReligionPearceHighsmithdetail1-405c5f12.jpeg" data-srcset="//gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/2016-04-06-1459960077-9351636-ReligionPearceHighsmithdetail1-2727ed94.jpeg 768w,//gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/2016-04-06-1459960077-9351636-ReligionPearceHighsmithdetail1-ce5def37.jpeg 1024w,//gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/2016-04-06-1459960077-9351636-ReligionPearceHighsmithdetail1-152c4ca7.jpeg 1366w,//gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/2016-04-06-1459960077-9351636-ReligionPearceHighsmithdetail1-c38064ce.jpeg 1600w,//gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/2016-04-06-1459960077-9351636-ReligionPearceHighsmithdetail1-5fea74d3.jpeg 1920w,//gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/2016-04-06-1459960077-9351636-ReligionPearceHighsmithdetail1-405c5f12.jpeg 4411w" data-sizes="(max-aspect-ratio: 4411/2613) 169vh" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-flex" uk-height-viewport="offset-top: true; offset-bottom: 20;">    
+        
+        
+                <div class="uk-position-relative uk-width-1-1 uk-flex uk-flex-middle">        
+                        <div class="uk-width-1-1">
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+                
+                    
+<h2 class="uk-heading-large uk-text-center">        Experience is better than belief.    </h2>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+                        </div>
+            
+                    <div class="tm-section-title uk-position-center-right uk-position-medium uk-text-nowrap">                <div class="tm-rotate-180">From the Religion mural, by Charles Sprague Pearce (1896)</div>
+            </div>
+        </div>
+        
+        </div>
+    
+</div>
+
+<div class="uk-section-muted uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-grid-margin uk-container"><div class="tm-grid-expand" uk-grid>
+<div class="uk-grid-item-match uk-width-1-3@m">
+        <div class="uk-tile-default uk-tile uk-flex uk-flex-middle">    
+        
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-heading-medium uk-heading-line">        <span>There is a root from which all knowledge has emerged. Humanity has many names for it; we call it&nbsp;<strong>Gnosis</strong>.</span>
+    </div>
+                
+                        </div>
+            
+        
+        </div>
+    
+</div>
+
+<div class="uk-width-2-3@m">
+    
+        
+            
+            
+                
+                    <div class="uk-panel uk-margin"><p><strong>Gnosis:</strong> (Greek γνώσις) knowledge.</p>
+<ol>
+<li>The higher meaning of Gnosis is&nbsp;<strong>knowledge from experience</strong>, especially experience of divinity or that which is beyond the five senses.&nbsp;</li>
+<li>
+<p>Gnosis can also refer to the tradition that embodies the core wisdom or knowledge of humanity, which has adopted many names and appearances according to culture, time, and place.</p>
+</li>
+</ol>
+<p class="intro2">The Greek word Gnosis (γνῶσις) implies genuine knowledge of the truth. To understand truth, one must experience it. This is why real spirituality is based on one's own effort to experience the truth. Experience is gained by expanding the capabilities of our <strong>consciousness</strong>.</p>
+<p>In order to understand what we experience, we must study the experiences of others. For this, we prefer to rely on those who have the qualities we wish to embody ourselves: compassion, profound love for all beings, insightful wisdom, brilliant intelligence, and radiant joy. So we study the greatest human beings and their legacies, in every field of understanding:&nbsp;philosophy, science, art, and religion.</p></div>
+<div class="uk-margin">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary" href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/knowledge-is-power">
+    
+        Read Introductory Articles    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div></div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div>
+    
+        
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-4@l uk-child-width-1-4@xl" uk-grid>        <div>
+<div>
+<div class="el-item uk-inline-clip uk-transition-toggle">
+    
+        
+
+<img alt="Read books online" class="el-image uk-transition-opaque" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/IMG_0503-30f9e989.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/IMG_0503-30f9e989.jpeg 500w" data-sizes="(min-width: 500px) 500px" data-width="500" data-height="500" uk-img>
+
+        
+                <div class="uk-tile-muted uk-transition-fade uk-position-cover"></div>        
+                <div class="uk-position-center uk-transition-fade"><div class="uk-overlay uk-width-medium uk-margin-remove-first-child">
+
+<h3 class="el-title uk-margin-top uk-margin-remove-bottom">        Books    </h3>
+
+
+
+<div class="uk-margin-top"><a href="/web/20220803061611/https://glorian.org/books" class="el-link uk-button uk-button-primary">Read</a></div></div></div>        
+    
+</div>
+</div></div>        <div>
+<div>
+<div class="el-item uk-inline-clip uk-transition-toggle">
+    
+        
+
+<img alt="online courses" class="el-image uk-transition-opaque" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/courses-500c-cf849166.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/courses-500c-cf849166.jpeg 500w" data-sizes="(min-width: 500px) 500px" data-width="500" data-height="500" uk-img>
+
+        
+                <div class="uk-tile-muted uk-transition-fade uk-position-cover"></div>        
+                <div class="uk-position-center uk-transition-fade"><div class="uk-overlay uk-width-medium uk-margin-remove-first-child">
+
+<h3 class="el-title uk-margin-top uk-margin-remove-bottom">        Courses    </h3>
+
+
+
+<div class="uk-margin-top"><a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures" class="el-link uk-button uk-button-primary">Study</a></div></div></div>        
+    
+</div>
+</div></div>        <div>
+<div>
+<div class="el-item uk-inline-clip uk-transition-toggle">
+    
+        
+
+<img alt class="el-image uk-transition-opaque" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/courses-500-ea747f36.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/courses-500-ea747f36.jpeg 500w" data-sizes="(min-width: 500px) 500px" data-width="500" data-height="500" uk-img>
+
+        
+                <div class="uk-tile-muted uk-transition-fade uk-position-cover"></div>        
+                <div class="uk-position-center uk-transition-fade"><div class="uk-overlay uk-width-medium uk-margin-remove-first-child">
+
+<h3 class="el-title uk-margin-top uk-margin-remove-bottom">        Audio    </h3>
+
+
+
+<div class="uk-margin-top"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/podcast-and-radio" class="el-link uk-button uk-button-primary">Listen</a></div></div></div>        
+    
+</div>
+</div></div>        <div>
+<div>
+<div class="el-item uk-inline-clip uk-transition-toggle">
+    
+        
+
+<img alt="watch videos" class="el-image uk-transition-opaque" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/videos-500-fa4d7370.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/videos-500-fa4d7370.jpeg 500w" data-sizes="(min-width: 500px) 500px" data-width="500" data-height="500" uk-img>
+
+        
+                <div class="uk-tile-muted uk-transition-fade uk-position-cover"></div>        
+                <div class="uk-position-center uk-transition-fade"><div class="uk-overlay uk-width-medium uk-margin-remove-first-child">
+
+<h3 class="el-title uk-margin-top uk-margin-remove-bottom">        Videos    </h3>
+
+
+
+<div class="uk-margin-top"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/video" class="el-link uk-button uk-button-primary">Watch</a></div></div></div>        
+    
+</div>
+</div></div>        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-muted uk-section uk-padding-remove-bottom">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-small">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+                
+                    
+<h3 class="uk-text-center">        What do you want to learn about?    </h3><div class="uk-panel uk-margin"><p><button class="uk-button uk-button-primary uk-button-large uk-align-center" type="button">Pick a topic</button></p>
+<div class="" uk-dropdown>
+    <div class="uk-dropdown-grid uk-grid-divider uk-child-width-1-3@m" uk-grid>
+        <div class="">
+        <ul class="uk-nav uk-dropdown-nav uk-padding">
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/anthropology">Anthropology</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/astrology">Astrology</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/consciousness">Consciousness</a></li>
+            <li><a href="/web/20220803061611/https://glorian.org/learn/topics/daily-life-on-the-path">Daily Life</a></li>
+            <li><a href="/web/20220803061611/https://glorian.org/learn/topics/astral-projection">Dreams and Astral projection</a></li>
+        
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/healing">Health</a></li>
+        
+        </ul>
+        </div>
+        
+        <div class="">
+        <ul class="uk-nav uk-dropdown-nav uk-padding">        
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/initiation">Initiation</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/kabbalah">Kabbalah</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/kundalini">Kundalini</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/love-and-sex">Love and Sex</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/magic">Magic</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/meditation">Meditation</a></li>
+        </ul>
+        </div>
+        
+        <div class="">
+        <ul class="uk-nav uk-dropdown-nav uk-padding">
+        
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/prayer-and-mantra">Prayer and Mantra</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/topics/psychology">Psychology</a></li>
+        <li><a href="/web/20220803061611/https://glorian.org/learn/scriptures">Scriptures</a></li>
+        
+            <li><a href="/web/20220803061611/https://glorian.org/learn/topics/social-issues">Social issues</a></li>
+            <li><a href="/web/20220803061611/https://glorian.org/learn/topics/tarot">Tarot</a></li>
+        </ul>
+        </div>
+    </div>
+</div></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div>
+    
+        
+            
+            
+                
+                    
+<a class="uk-panel uk-margin-remove-first-child uk-link-toggle uk-display-block uk-margin uk-text-center" href="/web/20220803061611/https://glorian.org/learn/video/why-does-the-world-feel-out-of-balance-because-of-the-law-of-the-pendulum-learn-to-rise-above-it">
+    
+                <img class="el-image" alt="pendulum video" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/videos-pendulum-fc57d687.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/videos-pendulum-a76aa97c.jpeg 768w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/videos-pendulum-fc57d687.jpeg 800w" data-sizes="(min-width: 800px) 800px" data-width="800" data-height="450" uk-img>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Why Does the World Feel Out of Balance? Because of the Law of the Pendulum. Learn to Rise Above it                     </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><div class="el-link uk-button uk-button-default">Watch the Video</div></div>        
+        
+        
+    
+</a>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+                
+                    
+<h2 class="uk-text-center">        What's New    </h2>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-grid-column-large uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div>
+    
+        
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-1 uk-child-width-1-4@m uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/the-true-origin-of-the-human-being-atlantis-lemuria-hyperborea-polaris-and-the-chaos"><img class="el-image" alt="Resurrection by William Blake" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/resurrection2-e996099f.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/resurrection2-e996099f.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/resurrection2-ff16d604.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/the-true-origin-of-the-human-being-atlantis-lemuria-hyperborea-polaris-and-the-chaos" class="uk-link-reset">The True Origin of the Human Being: Atlantis, Lemuria, Hyperborea, Polaris, and the Chaos</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/creation-of-the-real-human-being-the-approaching-catastrophe-and-the-future-race"><img class="el-image" alt="Whore of babylon blake 1809" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/Whore-of-babylon-blake-1809-b453c4a8.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/Whore-of-babylon-blake-1809-b453c4a8.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/Whore-of-babylon-blake-1809-694bf38f.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/creation-of-the-real-human-being-the-approaching-catastrophe-and-the-future-race" class="uk-link-reset">Creation of the Real Human Being, the Approaching Catastrophe, and the Future Race</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/the-wheel-of-life-and-death-that-all-beings-suffer-upon-and-how-to-escape-it"><img class="el-image" alt="Satan Before the Throne of God by William Blake" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/William_Blake_-_Satan_Before_the_Throne_of_God-1b-ea090864.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/William_Blake_-_Satan_Before_the_Throne_of_God-1b-ea090864.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/William_Blake_-_Satan_Before_the_Throne_of_God-1b-f2457aed.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/the-wheel-of-life-and-death-that-all-beings-suffer-upon-and-how-to-escape-it" class="uk-link-reset">The Wheel of Life and Death That All Beings Suffer Upon, and How to Escape It</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/secret-teachings-in-genesis-about-the-perfection-of-the-human-being"><img class="el-image" alt="Michelangelo Creation of Adam" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/Michelangelo_-_Creation_of_Adam-0f9ffdc8.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/Michelangelo_-_Creation_of_Adam-0f9ffdc8.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/Michelangelo_-_Creation_of_Adam-da27baef.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/secret-teachings-in-genesis-about-the-perfection-of-the-human-being" class="uk-link-reset">Secret Teachings in Genesis about the Perfection of the Human Being</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/how-to-develop-magical-powers-clairvoyance-clairaudience-astral-projection"><img class="el-image" alt="jesus walks on water" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/jesus-walks-on-water-31cb7b28.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/jesus-walks-on-water-31cb7b28.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/jesus-walks-on-water-aa05c9c7.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/how-to-develop-magical-powers-clairvoyance-clairaudience-astral-projection" class="uk-link-reset">How to Develop Magical Powers: Clairvoyance, Clairaudience, Astral Projection</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/find-love-and-happiness-by-cleaning-the-temple-of-the-mind"><img class="el-image" alt="driving of the representations from the mind" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/driving-of-the-representations-from-the-mind-ff3dcfe3.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/driving-of-the-representations-from-the-mind-ff3dcfe3.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/driving-of-the-representations-from-the-mind-9a4aee01.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/find-love-and-happiness-by-cleaning-the-temple-of-the-mind" class="uk-link-reset">Find Love and Happiness by Cleaning the Temple of the Mind</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/the-path-to-liberation-death-and-the-elimination-of-our-defects"><img class="el-image" alt="bhavachakra" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/bhavachakra-center-d1eeaddd.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/bhavachakra-center-d1eeaddd.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/bhavachakra-center-2d61ecfa.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/the-path-to-liberation-death-and-the-elimination-of-our-defects" class="uk-link-reset">The Path to Liberation, Death, and the Elimination of our Defects</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/secret-meanings-of-cain-and-abel-the-ark-of-noah-and-the-apocalypse"><img class="el-image" alt="Cain Killing Abel by Gaetano Gandolfi" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/_Cain_Killing_Abel_by_Gaetano_Gandolfi-75030f38.jpeg" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/_Cain_Killing_Abel_by_Gaetano_Gandolfi-75030f38.jpeg 300w, //web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com//templates/yootheme/cache/_Cain_Killing_Abel_by_Gaetano_Gandolfi-cddb87dc.jpeg 600w" data-sizes="(min-width: 300px) 300px" data-width="300" data-height="300" uk-img></a>        
+                    
+
+                <div class="el-meta uk-text-meta uk-margin-small-top">From: Lectures by Samael Aun Weor</div>        
+                <h4 class="el-title uk-margin-top uk-margin-remove-bottom">                        <a href="/web/20220803061611/https://glorian.org/learn/courses-and-lectures/lectures-by-samael-aun-weor/secret-meanings-of-cain-and-abel-the-ark-of-noah-and-the-apocalypse" class="uk-link-reset">Secret Meanings of Cain and Abel, the Ark of Noah, and the Apocalypse</a>                    </h4>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+            
+            
+<div id="module-894" class="builder"><!-- Builder #module-894 -->
+<div class="uk-section-default uk-section uk-padding-remove-top">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+    
+        
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    <div class="uk-panel socialsharing uk-margin uk-text-right">Share This Page:</div>
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+                
+                    
+<div class="uk-margin">    <div class="uk-child-width-auto uk-grid-small" uk-grid>
+        <div>
+<a rel="noreferrer" href="https://web.archive.org/web/20220803061611/https://twitter.com/intent/tweet?text=https%3A%2F%2Fglorian.org%2F" class="el-link uk-icon-button" uk-icon="icon: twitter;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://web.archive.org/web/20220803061611/https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fglorian.org%2F" class="el-link uk-icon-button" uk-icon="icon: facebook;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://web.archive.org/web/20220803061611/https://api.whatsapp.com/send?text=https%3A%2F%2Fglorian.org%2F" class="el-link uk-icon-button" uk-icon="icon: whatsapp;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://web.archive.org/web/20220803061611/https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fglorian.org%2F" class="el-link uk-icon-button" uk-icon="icon: linkedin;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://web.archive.org/web/20220803061611/http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fglorian.org%2F" class="el-link uk-icon-button" uk-icon="icon: pinterest;" target="_blank"></a></div>
+    
+    </div>
+</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+</div>
+
+
+            <!-- Builder #footer --><style>#footer\#1-0-0 .uk-tile-xsmall {padding:15px;} </style>
+<div class="uk-section-muted uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div>
+    
+        
+            
+            
+                
+                    
+<h2 class="uk-text-center">        Testimonials    </h2>
+<div uk-slider="center: 1; autoplay: 1;" class="uk-margin uk-text-center">
+    <div class="uk-position-relative">
+        
+            <ul class="uk-slider-items uk-grid uk-grid-small uk-grid-divider uk-grid-match">                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>I am so very grateful for you all and what you have done in my life to help me realize myself and what path it’s actually wise to tread and stay on. Thank you I honestly cannot thank you enough.</p></div>
+<div class="el-meta uk-text-meta uk-margin-top">S.C.</div>
+</div></div>        
+</div>
+</div></li>                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>I love your site and your knowledgeable instructors and just want to say thank you for all your hard work...  You give out your information for free and ask for donations which to me, tells me that you are more than legitimate and your information is top notch. </p></div>
+<div class="el-meta uk-text-meta uk-margin-top">S.J.</div>
+</div></div>        
+</div>
+</div></li>                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>You are a continued source of knowledge, and a continuous source for the personal development of my soul.  </p></div>
+<div class="el-meta uk-text-meta uk-margin-top">C.H.</div>
+</div></div>        
+</div>
+</div></li>                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>I cannot thank you enough for all that you are doing and providing to spread the opportunity of true Gnosis. I have greatly benefited from the information on the website...</p></div>
+<div class="el-meta uk-text-meta uk-margin-top">B.D.</div>
+</div></div>        
+</div>
+</div></li>                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>Your lectures, books, practices, etc. have radically changed my life in a profound manner. Especially putting into daily practice the teachings from the lectures...&nbsp;Your efforts making the lectures and everyone involved who makes it possible are a true blessing to humanity and beyond.</p></div>
+<div class="el-meta uk-text-meta uk-margin-top">AMST</div>
+</div></div>        
+</div>
+</div></li>                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>These books have helped me changed my whole reality,..... Tragic and beautiful that pendulum we swing,...</p></div>
+<div class="el-meta uk-text-meta uk-margin-top">F.L.</div>
+</div></div>        
+</div>
+</div></li>                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>Your books, lectures and courses have made the last years of my life complete. When that final hour comes, I know I will land in the right place.</p></div>
+<div class="el-meta uk-text-meta uk-margin-top">T.M.</div>
+</div></div>        
+</div>
+</div></li>                                <li class="el-item">
+<div class="uk-grid-item-match uk-dark">
+<div class="uk-cover-container">
+        
+<img alt uk-img="target: !.uk-slider-items" class="uk-invisible" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(min-width: 400px) 400px" data-width="400" data-height="300">
+<img alt uk-img="target: !.uk-slider-items" class="el-image uk-transition-opaque" uk-cover data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png" data-srcset="//web.archive.org/web/20220803061611im_/https://gnosticteachings-rochen.netdna-ssl.com/templates/yootheme/cache/400x300-75ca86e2.png 400w" data-sizes="(max-aspect-ratio: 400/300) 133vh" data-width="400" data-height="300">
+
+        
+        
+                <div class="uk-position-center"><div class="uk-panel uk-padding uk-margin-remove-first-child">
+
+
+
+<div class="el-content uk-panel uk-margin-top"><p>What you guys are doing is really wonderful.&nbsp;You have helped me understand in my spiritual practice.&nbsp;I am truly grateful that your works is changing lives. When the student is really ready, the teacher has finally arrive to guide.&nbsp;</p></div>
+<div class="el-meta uk-text-meta uk-margin-top">R.</div>
+</div></div>        
+</div>
+</div></li>                            </ul>
+
+        
+        
+    </div>
+
+        <div class="uk-margin-small-top uk-light"><ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center" uk-margin></ul></div>    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="footerlinks" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@s uk-width-1-4@m" id="footer#1-0-0">
+    
+        
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <img width="300" class="el-image" alt="Glorian Publishing logo" data-src="//web.archive.org/web/20220803061611/https://gnosticteachings-rochen.netdna-ssl.com/images/svg/glorian-logo-trajan.svg" uk-img>    
+    
+</div>
+<div class="uk-panel uk-text-small uk-margin"><p style="text-align: center;">A Non-profit Organization</p></div>
+<div class="uk-margin uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary" title="Contact Glorian" href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/pages/contact-us">
+    
+        Contact    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+<div class="uk-margin uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary uk-flex-inline uk-flex-center uk-flex-middle" title="Donate" href="https://web.archive.org/web/20220803061611/https://glorian.org/give/donate">
+        <span class="uk-margin-small-right" uk-icon="heart"></span>    
+        Donate    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-remove-vertical">        Books    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="/web/20220803061611/https://glorian.org/books" class="el-link uk-margin-remove-last-child"><p>Books</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><p>Books for Prisons</p></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="/web/20220803061611/https://glorian.org/about/about-glorian/purchasing-for-education" class="el-link uk-margin-remove-last-child"><p>Books for Schools</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="/web/20220803061611/https://glorian.org/about/about-glorian/wholesale" class="el-link uk-margin-remove-last-child"><p>Wholesale</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/about/gnostics" class="el-link uk-margin-remove-last-child"><p>Authors</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin uk-margin-remove-bottom">        Learn    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="/web/20220803061611/https://glorian.org/learn/knowledge-is-power" class="el-link uk-margin-remove-last-child"><p>Knowledge is Power</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/courses-and-lectures" class="el-link uk-margin-remove-last-child"><p>Courses and Lectures</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/glossary" class="el-link uk-margin-remove-last-child">Glossary</a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/podcast-and-radio" class="el-link uk-margin-remove-last-child"><p>Podcast and Radio</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/scriptures" class="el-link uk-margin-remove-last-child"><p>Scriptures</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="/web/20220803061611/https://glorian.org/learn/topics" class="el-link uk-margin-remove-last-child">Topics</a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/video" class="el-link uk-margin-remove-last-child"><p>Videos</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-small">        Connect    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/connect/ask-instructor" class="el-link uk-margin-remove-last-child"><p>Ask an Instructor</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/connect/blog" class="el-link uk-margin-remove-last-child"><p>Blog</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/give/donate" class="el-link uk-margin-remove-last-child"><p>Donate</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/connect/event-calendar" class="el-link uk-margin-remove-last-child"><p>Event Calendar</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/pages/newsletter-signup" class="el-link uk-margin-remove-last-child"><p>Newsletter</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="/web/20220803061611/https://glorian.org/give/volunteer" class="el-link uk-margin-remove-last-child"><p>Volunteer</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin uk-margin-remove-bottom">        About    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/about/about-glorian" class="el-link uk-margin-remove-last-child"><p>Glorian</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/about/gnostics" class="el-link uk-margin-remove-last-child"><p>Gnostics</p></a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://glorian.org/about/gnostics/samael-aun-weor" class="el-link uk-margin-remove-last-child"><p>Samael Aun Weor</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-remove-bottom">        Shop    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/collections/books" class="el-link uk-margin-remove-last-child">Books</a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin-remove-bottom">        Account    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="/web/20220803061611/https://glorian.org/connect/login" class="el-link uk-margin-remove-last-child">Login: Ask an Instructor </a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/account" class="el-link uk-margin-remove-last-child">Login: Store </a></div>            </li>
+
+    <li class="el-item">                
+    <div class="el-content uk-panel"><a href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/account" class="el-link uk-margin-remove-last-child"><p>Order Status</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="copyright" class="uk-section-muted uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">    <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+            <div>
+<a class="el-link uk-icon-button" href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/pages/newsletter-signup" rel="noreferrer"><span uk-icon="icon: mail;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://web.archive.org/web/20220803061611/https://www.facebook.com/GlorianPublishing" rel="noreferrer"><span uk-icon="icon: facebook;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://web.archive.org/web/20220803061611/http://instagram.com/GlorianPublishing" rel="noreferrer"><span uk-icon="icon: instagram;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://web.archive.org/web/20220803061611/https://twitter.com/GlorianPublishi" rel="noreferrer"><span uk-icon="icon: twitter;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://web.archive.org/web/20220803061611/https://vimeo.com/glorianpublishing" rel="noreferrer"><span uk-icon="icon: vimeo;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://web.archive.org/web/20220803061611/https://www.youtube.com/c/Glorian" rel="noreferrer"><span uk-icon="icon: youtube;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://web.archive.org/web/20220803061611/https://glorian.org/learn/podcast-and-radio" rel="noreferrer"><span uk-icon="icon: play-circle;"></span></a></div>
+    
+    </div></div>
+<div class="uk-text-center">
+    <ul class="uk-margin-remove-bottom uk-subnav  uk-subnav-divider uk-flex-center" uk-margin>        <li class="el-item ">
+    <a class="el-content uk-disabled">© 2022 Glorian Publishing. All Rights Reserved.</a>
+</li>
+        <li class="el-item ">
+    <a class="el-link" href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/policies/privacy-policy">Privacy Policy</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="#" uk-scroll>Refund Policy</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="/web/20220803061611/https://glorian.org/more/sitemap">Sitemap</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="https://web.archive.org/web/20220803061611/https://store.gnosticteachings.org/policies/terms-of-service">Terms of Service</a></li>
+        </ul>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div>
+    
+        
+            
+            
+                
+                    <div><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://web.archive.org/web/20220803061611if_/https://www.googletagmanager.com/ns.html?id=GTM-57VXZ7F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+        </div>
+
+        
+        
+
+    </body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:16:11 Aug 03, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:24:09 Oct 27, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 372.051
+  exclusion.robots: 0.216
+  exclusion.robots.policy: 0.208
+  RedisCDXSource: 225.478
+  esindex: 0.008
+  LoadShardBlock: 127.14 (3)
+  PetaboxLoader3.datanode: 169.785 (5)
+  CDXLines.iter: 15.064 (3)
+  load_resource: 146.225
+  PetaboxLoader3.resolve: 49.831
+  loaddict: 77.809
+-->

@@ -1,0 +1,4 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-output9pz9ZQ" "--verify" "--" "/tmp/epg-signatureCGxZdn" "-" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputPgyiuo" "--verify" "--" "/tmp/epg-signature6RWpdN" "-" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputpp2buq" "--verify" "--" "/tmp/epg-signatureJqRfkw" "-" "#" "<==" "emacs"

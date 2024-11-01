@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: purcell
+# group: daemon
+# key: ifpc
+# --
+(if (cl-search "PURCELL" my-daemon-name)
+`yas-selected-text`
+${0:(remove-hook 'haskell-mode-hook 'stack-exec-path-mode)})

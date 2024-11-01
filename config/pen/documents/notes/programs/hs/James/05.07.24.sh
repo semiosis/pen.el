@@ -1,0 +1,5 @@
+cd /root/notes;  "James" "2:14-26" "#" "<==" "zsh"
+cd /root/notes;  "James" "2:26" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "James" "4:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "James" "4:11-12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "James" "4:11-12" "#" "<==" "zsh"

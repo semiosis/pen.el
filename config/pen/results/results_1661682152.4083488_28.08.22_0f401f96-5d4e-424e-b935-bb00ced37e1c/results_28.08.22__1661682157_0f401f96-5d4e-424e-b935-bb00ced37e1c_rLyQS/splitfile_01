@@ -1,0 +1,1 @@
+--name key1 --description "My API Key" --enabled --stage-keys arn:aws:apigateway:us-east-1::/restapis/a2f6y7d9/stages/test

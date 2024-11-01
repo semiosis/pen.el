@@ -1,0 +1,3 @@
+testJsonToPerson :: Property
+testJsonToPerson =
+  check (map jsonToPerson ["{\"name\": \"foo\", \"age\": 10}"]) == Just Person{name="foo", age=10}

@@ -1,0 +1,9 @@
+"shift" is a bash builtin that shifts the positional parameters by the given number of positions.
+
+#!/bin/bash
+
+# shift the first two arguments
+shift 2
+
+# print the positional parameters
+echo $@

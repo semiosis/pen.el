@@ -1,0 +1,136 @@
+types of interpretation:
+    [#github semantic]
+
+     - concrete semantics
+     - abstract semantics
+     - type-checking semantics
+
+shortest edit script
+SES
+
+Myers' algorithm
+Myers' diff algorithm
+    http://blog.robertelder.org/diff-algorithm/
+
+    Finding the SES can be modelled as a graph
+    search.
+
+concrete semantics
+    [#github semantic]
+
+    Precise.
+
+    Only compute the result of code that is
+    called.
+
+    Then can see exactly what happens when we
+    run our program.
+
+    Example:
+        If we expect to return a boolean value
+        and our results differ, we'll throw an
+        error (which is sub-optimal because in
+        a language like Ruby, a lot of objects
+        that are not booleans could be used as
+        booleans).
+
+abstract semantics
+    [#github semantic]
+
+    Exhaustive.
+
+    Compute the result of all possible
+    permutations.
+
+    How we compute call graphs.
+
+    We don't know if something is going to be
+    `true` or `false`, so we take both
+    branches.
+
+    By taking both branches we
+    non-deterministically produce both using
+    the `<|>` operator which represents
+    choice, building a union of possibilities.
+
+type-checking semantics
+    [#github semantic]
+
+    Verify that the type of a syntactic
+    construct (e.g. an object of type `Int`)
+    matches what is expected when it is used.
+
+    This helps us check type errors, emulating
+    compile-time static type checking.
+
+github semantic
+    =semantic= is a Haskell library and
+    command line tool for parsing, analyzing,
+    and comparing source code.
+
+    - Reads blobs.
+    - Generates parse trees for those blobs
+      with tree-sitter.
+    - Assigns those trees into a generalized
+      representation of syntax.
+    - Performs analysis, computes diffs, or
+      just returns parse trees.
+    - Renders output in one of many supported
+      formats.
+
+    hsqc semantic
+    semantic parse --help
+    semantic diff --help
+    semantic graph --help
+
+semantic parse --help
+    Generate parse trees for path(s).
+
+semantic diff --help
+    Compute changes between paths.
+
+semantic graph --help
+    Compute a graph for a directory or from a
+    top-level entry point module.
+
+import graph
+    Graph representing all dependencies
+    (`import`s, `require`s, etc.)
+
+program analysis
+    [#github semantic]
+
+    Allows us to ask questions about and
+    analyze the behavior of computer programs.
+    
+    Analyzing this behavior allows us to
+    (eventually) answer subtle but powerful
+    questions such as, will this use more than
+    8 GB of RAM?
+    
+    Does this present a user interface?
+    
+    We perform program analysis
+    statically—that is, without executing the
+    program.
+
+    We're able to compute the following end
+    results using evaluation:
+    - import graph
+    - call graph
+    - control flow graph
+
+call graph
+    A control flow graph that represents
+    calling relationships (ie., how one
+    particular function calls other
+    functions).
+    
+    This information is often vital for
+    debugging purposes and determining where
+    code is failing.
+
+control flow graph
+    Representation of all paths that might be
+    traversed through a program during its
+    execution.

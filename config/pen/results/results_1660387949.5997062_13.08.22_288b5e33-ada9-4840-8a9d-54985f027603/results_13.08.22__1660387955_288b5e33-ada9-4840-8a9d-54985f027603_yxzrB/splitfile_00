@@ -1,0 +1,9 @@
+
+main :: IO ()
+main = do
+  -- The first line is the only one that is different from the original.
+  -- It is the same as the original, but with the "getResults" function
+  -- replaced with "getWeather".
+  output <- getWeather "Weather"
+  -- The next line is the same as the original.
+  print $ unlines $ fromMaybe [] output

@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/RayOfDaylon/Defcon/Platforms/HoloLens/Config;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/RayOfDaylon/Defcon/Platforms/HoloLens/Config;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/RayOfDaylon/Defcon/Platforms/HoloLens/Config;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/RayOfDaylon/Defcon/Platforms/HoloLens/Config;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/RayOfDaylon/Defcon/Platforms/HoloLens/Config;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"
+cd /volumes/home/shane/var/smulliga/source/git/RayOfDaylon/Defcon/Platforms/HoloLens/Config;  "sed-pcre" "s/(?<\!(m\\/url|earch|forum|watch|ylist))\\?.*//" "#" "<==" "pen-xurls"

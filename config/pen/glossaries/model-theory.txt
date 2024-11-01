@@ -1,0 +1,42 @@
+sentence
+statement
+    [#mathematical logic]
+
+    First-order logic is symbolized reasoning
+    in which each sentence, or statement, is
+    broken down into a subject and a
+    predicate.
+    
+    The predicate modifies or defines the
+    properties of the subject.
+    
+    In first-order logic, a predicate can only
+    refer to a single subject.
+    
+    First-order logic is also known as first-
+    order predicate calculus or first-order
+    functional calculus.
+    
+    A sentence in first-order logic is written
+    in the form Px or P(x), where P is the
+    predicate and x is the subject,
+    represented as a variable.
+    
+    Complete sentences are logically combined
+    and manipulated according to the same
+    rules as those used in Boolean algebra.
+
+compactness theorem
+    [#mathematical logic]
+    [#model theory]
+
+    A set of first-order sentences has a model
+    if and only if every finite subset of it
+    has a model.
+    
+    This theorem is an important tool in model
+    theory, as it provides a useful method for
+    constructing models of any set of
+    sentences that is finitely consistent.
+
+    https://youtu.be/BBp0bEczCNg?t=125

@@ -1,0 +1,452 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Thu, 21 Dec 2023 23:16:04 GMT
+Content-Type: text/html; charset=utf-8
+Last-Modified: Thu, 21 Dec 2023 23:15:06 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"6584c6fa-a357"
+
+<!DOCTYPE html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Content-Language" content="en-us">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title>Learn prolog in Y Minutes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/css/index.css">
+
+        <link rel="canonical" href="https://learnxinyminutes.com/docs/prolog/">
+        <script>
+            var THEME_KEY = "lxiym_theme";
+            function set_theme(theme) {
+                var el = document.getElementsByTagName("html")[0];
+                if (!el) {
+                  return;
+                }
+
+                if (theme === "dark" ) {
+                    el.className = "dark";
+                } else {
+                    el.className = "light";
+                }
+
+                localStorage.setItem(THEME_KEY, theme);
+            }
+
+            function load_theme() {
+              var theme = localStorage.getItem(THEME_KEY);
+              if (theme) {
+                set_theme(theme);
+              }
+            }
+
+            // Attempt immediate application of html style
+            load_theme();
+
+            // Backup: do it onload. Will flash, but better than nothing.
+            window.addEventListener("load", function(){
+              load_theme();
+            });
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="share">
+    <span class="sharemsg">
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flearnxinyminutes.com%2Fdocs%2Fprolog%2F&text=Learn+X+in+Y+minutes%2C+where+X%3Dprolog">
+        Share this page
+      </a></span>
+
+      <span class='st_facebook_large' displayText='Facebook'></span>
+      <span class='st_twitter_large' displayText='Tweet'></span>
+  </div>
+  <div class="theme-choice">
+    <label id="theme-label">Select theme:</label>
+    <button type="button" aria-labelledby="theme-label" onclick="set_theme('light');">light</button>
+    <button type="button" aria-labelledby="theme-label" onclick="set_theme('dark');">dark</button>
+  </div>
+  <h1><a href="/">Learn X in Y minutes</a></h2>
+  <h2>Where X=prolog</h2>
+    <p class="filelink">
+    Get the code:
+    <a href="/docs/files/learnprolog.pl">learnprolog.pl</a>
+    </p>
+  <div id="doc">
+    <p>Prolog is a logic programming language first specified in 1972, and refined into multiple modern implementations.</p>
+<div class="highlight"><pre><span></span><span class="c1">% This is a comment.</span>
+
+<span class="c1">% Prolog treats code entered in interactive mode differently</span>
+<span class="c1">% to code entered in a file and loaded (&quot;consulted&quot;).</span>
+<span class="c1">% This code must be loaded from a file to work as intended.</span>
+<span class="c1">% Lines that begin with ?- can be typed in interactive mode.</span>
+<span class="c1">% A bunch of errors and warnings will trigger when you load this file</span>
+<span class="c1">% due to the examples which are supposed to fail - they can be safely</span>
+<span class="c1">% ignored.</span>
+
+<span class="c1">% Output is based on SWI-prolog 7.2.3. Different Prologs may behave</span>
+<span class="c1">% differently.</span>
+
+<span class="c1">% Prolog is based on the ideal of logic programming.</span>
+<span class="c1">% A subprogram (called a predicate) represents a state of the world.</span>
+<span class="c1">% A command (called a goal) tells Prolog to make that state of the world</span>
+<span class="c1">%   come true, if possible.</span>
+
+<span class="c1">% As an example, here is a definition of the simplest kind of predicate:</span>
+<span class="c1">% a fact.</span>
+
+<span class="nf">magicNumber</span><span class="p">(</span><span class="mi">7</span><span class="p">).</span>
+<span class="nf">magicNumber</span><span class="p">(</span><span class="mi">9</span><span class="p">).</span>
+<span class="nf">magicNumber</span><span class="p">(</span><span class="mi">42</span><span class="p">).</span>
+
+<span class="c1">% This introduces magicNumber as a predicate and says that it is true</span>
+<span class="c1">% with parameter 7, 9, or 42, but no other parameter. Note that</span>
+<span class="c1">% predicate names must start with lower case letters. We can now use</span>
+<span class="c1">% interactive mode to ask if it is true for different values:</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="mi">7</span><span class="p">).</span>                   <span class="c1">% True</span>
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="mi">8</span><span class="p">).</span>                   <span class="c1">% False</span>
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="mi">9</span><span class="p">).</span>                   <span class="c1">% True</span>
+
+<span class="c1">% Some older Prologs may display &quot;Yes&quot; and &quot;No&quot; instead of True and</span>
+<span class="c1">% False.</span>
+
+<span class="c1">% What makes Prolog unusual is that we can also tell Prolog to _make_</span>
+<span class="c1">% magicNumber true, by passing it an undefined variable. Any name</span>
+<span class="c1">% starting with a capital letter is a variable in Prolog.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="nv">Presto</span><span class="p">).</span>              <span class="c1">% Presto = 7 ;</span>
+                                     <span class="c1">% Presto = 9 ;</span>
+                                     <span class="c1">% Presto = 42.</span>
+
+<span class="c1">% Prolog makes magicNumber true by assigning one of the valid numbers to</span>
+<span class="c1">% the undefined variable Presto. By default it assigns the first one, 7.</span>
+<span class="c1">% By pressing ; in interactive mode you can reject that solution and</span>
+<span class="c1">% force it to assign the next one, 9. Pressing ; again forces it to try</span>
+<span class="c1">% the last one, 42, after which it no longer accepts input because this</span>
+<span class="c1">% is the last solution. You can accept an earlier solution by pressing .</span>
+<span class="c1">% instead of ;.</span>
+
+<span class="c1">% This is Prolog&#39;s central operation: unification. Unification is</span>
+<span class="c1">% essentially a combination of assignment and equality! It works as</span>
+<span class="c1">% follows:</span>
+<span class="c1">%  If both sides are bound (ie, defined), check equality.</span>
+<span class="c1">%  If one side is free (ie, undefined), assign to match the other side.</span>
+<span class="c1">%  If both sides are free, the assignment is remembered. With some luck,</span>
+<span class="c1">%    one of the two sides will eventually be bound, but this isn&#39;t</span>
+<span class="c1">%    necessary.</span>
+<span class="c1">%</span>
+<span class="c1">% The = sign in Prolog represents unification, so:</span>
+
+<span class="s s-Atom">?-</span> <span class="mi">2</span> <span class="o">=</span> <span class="mf">3.</span>                            <span class="c1">% False - equality test</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">=</span> <span class="mf">3.</span>                            <span class="c1">% X = 3 - assignment</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">X</span> <span class="o">=</span> <span class="nv">Y</span><span class="p">.</span>                     <span class="c1">% X = Y = 2 - two assignments</span>
+                                     <span class="c1">% Note Y is assigned too, even though it is</span>
+                                     <span class="c1">% on the right hand side, because it is free</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">X</span> <span class="o">=</span> <span class="mf">2.</span>                     <span class="c1">% False</span>
+                                     <span class="c1">% First acts as assignment and binds X=3</span>
+                                     <span class="c1">% Second acts as equality because X is bound</span>
+                                     <span class="c1">% Since 3 does not equal 2, gives False</span>
+                                     <span class="c1">% Thus in Prolog variables are immutable</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">=</span> <span class="mi">3</span><span class="o">+</span><span class="mf">2.</span>                          <span class="c1">% X = 3+2 - unification can&#39;t do arithmetic</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">is</span> <span class="mi">3</span><span class="o">+</span><span class="mf">2.</span>                         <span class="c1">% X = 5 - &quot;is&quot; does arithmetic.</span>
+<span class="s s-Atom">?-</span> <span class="mi">5</span> <span class="o">=</span> <span class="nv">X</span><span class="o">+</span><span class="mf">2.</span>                          <span class="c1">% This is why = can&#39;t do arithmetic -</span>
+                                     <span class="c1">% because Prolog can&#39;t solve equations</span>
+<span class="s s-Atom">?-</span> <span class="mi">5</span> <span class="o">is</span> <span class="nv">X</span><span class="o">+</span><span class="mf">2.</span>                         <span class="c1">% Error. Unlike =, the right hand side of IS</span>
+                                     <span class="c1">% must always be bound, thus guaranteeing</span>
+                                     <span class="c1">% no attempt to solve an equation.</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">=</span> <span class="nv">Y</span><span class="p">,</span> <span class="nv">X</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">Z</span> <span class="o">is</span> <span class="nv">Y</span> <span class="o">+</span> <span class="mf">3.</span>         <span class="c1">% X = Y, Y = 2, Z = 5.</span>
+                                     <span class="c1">% X = Y are both free, so Prolog remembers</span>
+                                     <span class="c1">% it. Therefore assigning X will also</span>
+                                     <span class="c1">% assign Y.</span>
+
+<span class="c1">% Any unification, and thus any predicate in Prolog, can either:</span>
+<span class="c1">% Succeed (return True) without changing anything,</span>
+<span class="c1">%   because an equality-style unification was true</span>
+<span class="c1">% Succeed (return True) and bind one or more variables in the process,</span>
+<span class="c1">%   because an assignment-style unification was made true</span>
+<span class="c1">% or Fail (return False)</span>
+<span class="c1">%   because an equality-style unification was false</span>
+<span class="c1">% (Failure can never bind variables)</span>
+
+<span class="c1">% The ideal of being able to give any predicate as a goal and have it</span>
+<span class="c1">% made true is not always possible, but can be worked toward. For</span>
+<span class="c1">% example, Prolog has a built in predicate plus which represents</span>
+<span class="c1">% arithmetic addition but can reverse simple additions.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">plus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">).</span>                    <span class="c1">% True</span>
+<span class="s s-Atom">?-</span> <span class="nf">plus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">X</span><span class="p">).</span>                    <span class="c1">% X = 3 because 1+2 = X.</span>
+<span class="s s-Atom">?-</span> <span class="nf">plus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nv">X</span><span class="p">,</span> <span class="mi">3</span><span class="p">).</span>                    <span class="c1">% X = 2 because 1+X = 3.</span>
+<span class="s s-Atom">?-</span> <span class="nf">plus</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">).</span>                    <span class="c1">% X = 1 because X+2 = 3.</span>
+<span class="s s-Atom">?-</span> <span class="nf">plus</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">Y</span><span class="p">).</span>                    <span class="c1">% Error - although this could be solved,</span>
+                                     <span class="c1">% the number of solutions is infinite,</span>
+                                     <span class="c1">% which most predicates try to avoid.</span>
+
+<span class="c1">% When a predicate such as magicNumber can give several solutions, the</span>
+<span class="c1">% overall compound goal including it may have several solutions too.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">plus</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">,</span><span class="mi">100</span><span class="p">).</span>    <span class="c1">% X = 7, Y = 93 ;</span>
+                                     <span class="c1">% X = 9, Y = 91 ;</span>
+                                     <span class="c1">% X = 42, Y = 58 .</span>
+<span class="c1">% Note: on this occasion it works to pass two variables to plus because</span>
+<span class="c1">% only Y is free (X is bound by magicNumber).</span>
+
+<span class="c1">% However, if one of the goals is fully bound and thus acts as a test,</span>
+<span class="c1">% then solutions which fail the test are rejected.</span>
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">X</span> <span class="o">&gt;</span> <span class="mf">40.</span>           <span class="c1">% X = 42</span>
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">X</span> <span class="o">&gt;</span> <span class="mf">100.</span>          <span class="c1">% False</span>
+
+<span class="c1">% To see how Prolog actually handles this, let&#39;s introduce the print</span>
+<span class="c1">% predicate. Print always succeeds, never binds any variables, and</span>
+<span class="c1">% prints out its parameter as a side effect.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">).</span>                   <span class="c1">% &quot;Hello&quot; true.</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="nf">print</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>                  <span class="c1">% 2 true.</span>
+<span class="s s-Atom">?-</span> <span class="nv">X</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="nf">print</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">X</span> <span class="o">=</span> <span class="mf">3.</span>           <span class="c1">% 2 false - print happens immediately when</span>
+                                     <span class="c1">% it is encountered, even though the overall</span>
+                                     <span class="c1">% compound goal fails (because 2 != 3,</span>
+                                     <span class="c1">% see the example above).</span>
+
+<span class="c1">% By using Print we can see what actually happens when we give a</span>
+<span class="c1">% compound goal including a test that sometimes fails.</span>
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">print</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">X</span> <span class="o">&gt;</span> <span class="mf">40.</span> <span class="c1">% 7 9 42 X = 42 .</span>
+
+<span class="c1">% MagicNumber(X) unifies X with its first possibility, 7.</span>
+<span class="c1">% Print(X) prints out 7.</span>
+<span class="c1">% X &gt; 40 tests if 7 &gt; 40. It is not, so it fails.</span>
+<span class="c1">% However, Prolog remembers that magicNumber(X) offered multiple</span>
+<span class="c1">% solutions. So it _backtracks_ to that point in the code to try</span>
+<span class="c1">% the next solution, X = 9.</span>
+<span class="c1">% Having backtracked it must work through the compound goal</span>
+<span class="c1">% again from that point including the Print(X). So Print(X) prints out</span>
+<span class="c1">% 9.</span>
+<span class="c1">% X &gt; 40 tests if 9 &gt; 40 and fails again.</span>
+<span class="c1">% Prolog remembers that magicNumber(X) still has solutions and</span>
+<span class="c1">% backtracks. Now X = 42.</span>
+<span class="c1">% It works through the Print(X) again and prints 42.</span>
+<span class="c1">% X &gt; 40 tests if 42 &gt; 40 and succeeds so the result bound to X</span>
+<span class="c1">% The same backtracking process is used when you reject a result at</span>
+<span class="c1">% the interactive prompt by pressing ;, for example:</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">magicNumber</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">print</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">X</span> <span class="o">&gt;</span> <span class="mf">8.</span>  <span class="c1">% 7 9 X = 9 ;</span>
+                                     <span class="c1">% 42 X = 42.</span>
+
+<span class="c1">% As you saw above we can define our own simple predicates as facts.</span>
+<span class="c1">% More complex predicates are defined as rules, like this:</span>
+
+<span class="nf">nearby</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">X</span> <span class="o">=</span> <span class="nv">Y</span><span class="p">.</span>
+<span class="nf">nearby</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">Y</span> <span class="o">is</span> <span class="nv">X</span><span class="o">+</span><span class="mf">1.</span>
+<span class="nf">nearby</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">Y</span> <span class="o">is</span> <span class="nv">X</span><span class="o">-</span><span class="mf">1.</span>
+
+<span class="c1">% nearby(X,Y) is true if Y is X plus or minus 1.</span>
+<span class="c1">% However this predicate could be improved. Here&#39;s why:</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">nearby</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">).</span>                      <span class="c1">% True ; False.</span>
+<span class="c1">% Because we have three possible definitions, Prolog sees this as 3</span>
+<span class="c1">% possibilities. X = Y fails, so Y is X+1 is then tried and succeeds,</span>
+<span class="c1">% giving the True answer. But Prolog still remembers there are more</span>
+<span class="c1">% possibilities for nearby() (in Prolog terminology, &quot;it has a</span>
+<span class="c1">% choice point&quot;) even though &quot;Y is X-1&quot; is doomed to fail, and gives us</span>
+<span class="c1">% the option of rejecting the True answer, which doesn&#39;t make a whole</span>
+<span class="c1">% lot of sense.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">nearby</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nv">X</span><span class="p">).</span>                     <span class="c1">% X = 4 ;</span>
+                                     <span class="c1">% X = 5 ;</span>
+                                     <span class="c1">% X = 3. Great, this works</span>
+<span class="s s-Atom">?-</span> <span class="nf">nearby</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="mi">4</span><span class="p">).</span>                     <span class="c1">% X = 4 ;</span>
+                                     <span class="c1">% error</span>
+<span class="c1">% After rejecting X = 4 prolog backtracks and tries &quot;Y is X+1&quot; which is</span>
+<span class="c1">% &quot;4 is X+1&quot; after substitution of parameters. But as we know from above</span>
+<span class="c1">% &quot;is&quot; requires its argument to be fully instantiated and it is not, so</span>
+<span class="c1">% an error occurs.</span>
+
+<span class="c1">% One way to solve the first problem is to use a construct called the</span>
+<span class="c1">% cut, !, which does nothing but which cannot be backtracked past.</span>
+
+<span class="nf">nearbychk</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">X</span> <span class="o">=</span> <span class="nv">Y</span><span class="p">,</span> <span class="p">!.</span>
+<span class="nf">nearbychk</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">Y</span> <span class="o">is</span> <span class="nv">X</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="p">!.</span>
+<span class="nf">nearbychk</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">Y</span> <span class="o">is</span> <span class="nv">X</span><span class="o">-</span><span class="mf">1.</span>
+
+<span class="c1">% This solves the first problem:</span>
+<span class="s s-Atom">?-</span> <span class="nf">nearbychk</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">).</span>                   <span class="c1">% True.</span>
+
+<span class="c1">% But unfortunately it has consequences:</span>
+<span class="s s-Atom">?-</span> <span class="nf">nearbychk</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="nv">X</span><span class="p">).</span>                   <span class="c1">% X = 2.</span>
+<span class="c1">% Because Prolog cannot backtrack past the cut after X = Y, it cannot</span>
+<span class="c1">% try the possibilities &quot;Y is X+1&quot; and &quot;Y is X-1&quot;, so it only generates</span>
+<span class="c1">% one solution when there should be 3.</span>
+<span class="c1">% However if our only interest is in checking if numbers are nearby,</span>
+<span class="c1">% this may be all we need, thus the name nearbychk.</span>
+<span class="c1">% This structure is used in Prolog itself from time to time (for example</span>
+<span class="c1">% in list membership).</span>
+
+<span class="c1">% To solve the second problem we can use built-in predicates in Prolog</span>
+<span class="c1">% to verify if a parameter is bound or free and adjust our calculations</span>
+<span class="c1">% appropriately.</span>
+<span class="nf">nearby2</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">nonvar</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">X</span> <span class="o">=</span> <span class="nv">Y</span><span class="p">.</span>
+<span class="nf">nearby2</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">nonvar</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">Y</span> <span class="o">is</span> <span class="nv">X</span><span class="o">+</span><span class="mf">1.</span>
+<span class="nf">nearby2</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">nonvar</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nv">Y</span> <span class="o">is</span> <span class="nv">X</span><span class="o">-</span><span class="mf">1.</span>
+<span class="nf">nearby2</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">var</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">nonvar</span><span class="p">(</span><span class="nv">Y</span><span class="p">),</span> <span class="nf">nearby2</span><span class="p">(</span><span class="nv">Y</span><span class="p">,</span><span class="nv">X</span><span class="p">).</span>
+
+<span class="c1">% We can combine this with a cut in the case where both variables are</span>
+<span class="c1">% bound, to solve both problems.</span>
+<span class="nf">nearby3</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">nonvar</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">nonvar</span><span class="p">(</span><span class="nv">Y</span><span class="p">),</span> <span class="nf">nearby2</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">),</span> <span class="p">!.</span>
+<span class="nf">nearby3</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">nearby2</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">).</span>
+
+<span class="c1">% However when writing a predicate it is not normally necessary to go to</span>
+<span class="c1">% these lengths to perfectly support every possible parameter</span>
+<span class="c1">% combination. It suffices to support parameter combinations we need to</span>
+<span class="c1">% use in the program. It is a good idea to document which combinations</span>
+<span class="c1">% are supported. In regular Prolog this is informally in structured</span>
+<span class="c1">% comments, but in some Prolog variants like Visual Prolog and Mercury</span>
+<span class="c1">% this is mandatory and checked by the compiler.</span>
+
+<span class="c1">% Here is the structured comment declaration for nearby3:</span>
+
+<span class="c1">%!    nearby3(+X:Int, +Y:Int) is semideterministic.</span>
+<span class="c1">%!    nearby3(+X:Int, -Y:Int) is multi.</span>
+<span class="c1">%!    nearby3(-X:Int, +Y:Int) is multi.</span>
+
+<span class="c1">% For each variable we list a type. The + or - before the variable name</span>
+<span class="c1">% indicates if the parameter is bound (+) or free (-). The word after</span>
+<span class="c1">% &quot;is&quot; describes the behaviour of the predicate:</span>
+<span class="c1">%   semideterministic - can succeed once or fail</span>
+<span class="c1">%     ( Two specific numbers are either nearby or not )</span>
+<span class="c1">%   multi - can succeed multiple times but cannot fail</span>
+<span class="c1">%     ( One number surely has at least 3 nearby numbers )</span>
+<span class="c1">%  Other possibilities are:</span>
+<span class="c1">%    det - always succeeds exactly once (eg, print)</span>
+<span class="c1">%    nondet - can succeed multiple times or fail.</span>
+<span class="c1">% In Prolog these are just structured comments and strictly informal but</span>
+<span class="c1">% extremely useful.</span>
+
+<span class="c1">% An unusual feature of Prolog is its support for atoms. Atoms are</span>
+<span class="c1">% essentially members of an enumerated type that are created on demand</span>
+<span class="c1">% whenever an unquoted non variable value is used. For example:</span>
+<span class="nf">character</span><span class="p">(</span><span class="s s-Atom">batman</span><span class="p">).</span>            <span class="c1">% Creates atom value batman</span>
+<span class="nf">character</span><span class="p">(</span><span class="s s-Atom">robin</span><span class="p">).</span>             <span class="c1">% Creates atom value robin</span>
+<span class="nf">character</span><span class="p">(</span><span class="s s-Atom">joker</span><span class="p">).</span>             <span class="c1">% Creates atom value joker</span>
+<span class="nf">character</span><span class="p">(</span><span class="s s-Atom">darthVader</span><span class="p">).</span>        <span class="c1">% Creates atom value darthVader</span>
+<span class="s s-Atom">?-</span> <span class="s s-Atom">batman</span> <span class="o">=</span> <span class="s s-Atom">batman</span><span class="p">.</span>           <span class="c1">% True - Once created value is reused</span>
+<span class="s s-Atom">?-</span> <span class="s s-Atom">batman</span> <span class="o">=</span> <span class="s s-Atom">batMan</span><span class="p">.</span>           <span class="c1">% False - atoms are case sensitive</span>
+<span class="s s-Atom">?-</span> <span class="s s-Atom">batman</span> <span class="o">=</span> <span class="s s-Atom">darthVader</span><span class="p">.</span>       <span class="c1">% False - atoms are distinct</span>
+
+<span class="c1">% Atoms are popular in examples but were created on the assumption that</span>
+<span class="c1">% Prolog would be used interactively by end users - they are less</span>
+<span class="c1">% useful for modern applications and some Prolog variants abolish them</span>
+<span class="c1">% completely. However they can be very useful internally.</span>
+
+<span class="c1">% Loops in Prolog are classically written using recursion.</span>
+<span class="c1">% Note that below, writeln is used instead of print because print is</span>
+<span class="c1">% intended for debugging.</span>
+
+<span class="c1">%!    countTo(+X:Int) is deterministic.</span>
+<span class="c1">%!    countUpTo(+Value:Int, +Limit:Int) is deterministic.</span>
+<span class="nf">countTo</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">countUpTo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nv">X</span><span class="p">).</span>
+<span class="nf">countUpTo</span><span class="p">(</span><span class="nv">Value</span><span class="p">,</span> <span class="nv">Limit</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">Value</span> <span class="o">=</span> <span class="nv">Limit</span><span class="p">,</span> <span class="nf">writeln</span><span class="p">(</span><span class="nv">Value</span><span class="p">),</span> <span class="p">!.</span>
+<span class="nf">countUpTo</span><span class="p">(</span><span class="nv">Value</span><span class="p">,</span> <span class="nv">Limit</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">Value</span> <span class="s s-Atom">\=</span> <span class="nv">Limit</span><span class="p">,</span> <span class="nf">writeln</span><span class="p">(</span><span class="nv">Value</span><span class="p">),</span>
+    <span class="nv">NextValue</span> <span class="o">is</span> <span class="nv">Value</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+    <span class="nf">countUpTo</span><span class="p">(</span><span class="nv">NextValue</span><span class="p">,</span> <span class="nv">Limit</span><span class="p">).</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">countTo</span><span class="p">(</span><span class="mi">10</span><span class="p">).</span>                      <span class="c1">% Outputs 1 to 10</span>
+
+<span class="c1">% Note the use of multiple declarations in countUpTo to create an</span>
+<span class="c1">% IF test. If Value = Limit fails the second declaration is run.</span>
+<span class="c1">% There is also a more elegant syntax.</span>
+
+<span class="c1">%!    countUpTo2(+Value:Int, +Limit:Int) is deterministic.</span>
+<span class="nf">countUpTo2</span><span class="p">(</span><span class="nv">Value</span><span class="p">,</span> <span class="nv">Limit</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">writeln</span><span class="p">(</span><span class="nv">Value</span><span class="p">),</span>
+    <span class="nv">Value</span> <span class="o">=</span> <span class="nv">Limit</span> <span class="s s-Atom">-&gt;</span> <span class="s s-Atom">true</span> <span class="p">;</span> <span class="p">(</span>
+        <span class="nv">NextValue</span> <span class="o">is</span> <span class="nv">Value</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nf">countUpTo2</span><span class="p">(</span><span class="nv">NextValue</span><span class="p">,</span> <span class="nv">Limit</span><span class="p">)).</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">countUpTo2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">).</span>                 <span class="c1">% Outputs 1 to 10</span>
+
+<span class="c1">% If a predicate returns multiple times it is often useful to loop</span>
+<span class="c1">% through all the values it returns. Older Prologs used a hideous syntax</span>
+<span class="c1">% called a &quot;failure-driven loop&quot; to do this, but newer ones use a higher</span>
+<span class="c1">% order function.</span>
+
+<span class="c1">%!    countTo2(+X:Int) is deterministic.</span>
+<span class="nf">countTo2</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">forall</span><span class="p">(</span><span class="nf">between</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">),</span><span class="nf">writeln</span><span class="p">(</span><span class="nv">Y</span><span class="p">)).</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">countTo2</span><span class="p">(</span><span class="mi">10</span><span class="p">).</span>                     <span class="c1">% Outputs 1 to 10</span>
+
+<span class="c1">% Lists are given in square brackets. Use memberchk to check membership.</span>
+<span class="c1">% A group is safe if it doesn&#39;t include Joker or does include Batman.</span>
+
+<span class="c1">%!     safe(Group:list(atom)) is deterministic.</span>
+<span class="nf">safe</span><span class="p">(</span><span class="nv">Group</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">memberchk</span><span class="p">(</span><span class="s s-Atom">joker</span><span class="p">,</span> <span class="nv">Group</span><span class="p">)</span> <span class="s s-Atom">-&gt;</span> <span class="nf">memberchk</span><span class="p">(</span><span class="s s-Atom">batman</span><span class="p">,</span> <span class="nv">Group</span><span class="p">)</span> <span class="p">;</span> <span class="s s-Atom">true</span><span class="p">.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">safe</span><span class="p">([</span><span class="s s-Atom">robin</span><span class="p">]).</span>                    <span class="c1">% True</span>
+<span class="s s-Atom">?-</span> <span class="nf">safe</span><span class="p">([</span><span class="s s-Atom">joker</span><span class="p">]).</span>                    <span class="c1">% False</span>
+<span class="s s-Atom">?-</span> <span class="nf">safe</span><span class="p">([</span><span class="s s-Atom">joker</span><span class="p">,</span> <span class="s s-Atom">batman</span><span class="p">]).</span>            <span class="c1">% True</span>
+
+<span class="c1">% The member predicate works like memberchk if both arguments are bound,</span>
+<span class="c1">% but can accept free variables and thus can be used to loop through</span>
+<span class="c1">% lists.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">member</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]).</span>               <span class="c1">% X = 1 ; X = 2 ; X = 3 .</span>
+<span class="s s-Atom">?-</span> <span class="nf">forall</span><span class="p">(</span><span class="nf">member</span><span class="p">(</span><span class="nv">X</span><span class="p">,[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]),</span>
+       <span class="p">(</span><span class="nv">Y</span> <span class="o">is</span> <span class="nv">X</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nf">writeln</span><span class="p">(</span><span class="nv">Y</span><span class="p">))).</span>      <span class="c1">% 2 3 4</span>
+
+<span class="c1">% The maplist function can be used to generate lists based on other</span>
+<span class="c1">% lists. Note that the output list is a free variable, causing an</span>
+<span class="c1">% undefined value to be passed to plus, which is then bound by</span>
+<span class="c1">% unification. Also notice the use of currying on the plus predicate -</span>
+<span class="c1">% it&#39;s a 3 argument predicate, but we specify only the first, because</span>
+<span class="c1">% the second and third are filled in by maplist.</span>
+
+<span class="s s-Atom">?-</span> <span class="nf">maplist</span><span class="p">(</span><span class="nf">plus</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="nv">Output</span><span class="p">).</span>   <span class="c1">% Output = [3, 4, 5].</span>
+</pre></div>
+<h2>Ready For More?</h2>
+
+<ul>
+<li><a href="http://www.swi-prolog.org/">SWI-Prolog</a></li>
+</ul>
+
+    <hr>
+    <p>Got a suggestion? A correction, perhaps? <a href="https://github.com/adambard/learnxinyminutes-docs/issues/new">Open an Issue</a> on the Github Repo, or make a <a href="https://github.com/adambard/learnxinyminutes-docs/edit/master/prolog.html.markdown">pull request</a> yourself!
+    </p>
+    <p class="contributed">
+    Originally contributed by hyphz, and updated by <a href="https://github.com/adambard/learnxinyminutes-docs/blame/master/prolog.html.markdown">4 contributor(s)</a>.
+    </p>
+
+    <footer>
+    <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+    <p>
+    &copy; 2023
+        <a href="http://github.com/hyphz/">hyphz</a>
+    </p>
+
+    <p>
+
+    </footer>
+  </div>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="/js/script.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-3525624-21'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

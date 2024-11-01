@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "https://www.youtube.com/watch?v=sI6ZkTbUgW4\\n" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "https://www.youtube.com/watch?v=d4guuTdLIcI\\n" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "https://www.youtube.com/watch?v=f2oxGYpuLkw\\n" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "https://www.youtube.com/watch?v=xhyi3H7beEA\\n" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "https://www.youtube.com/watch?v=f2oxGYpuLkw\\n" "#" "<==" "tclsh8.6"
+cd /root/notes;  "chrome" "https://www.youtube.com/watch?v=f2oxGYpuLkw\\n" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "chrome" "https://www.youtube.com/watch?v=TBUfe8AzRao\\n" "#" "<==" "tclsh8.6"

@@ -1,0 +1,5 @@
+1. cmd is a variable that stores the command
+2. args is a variable that stores the arguments
+3. output is a variable that stores the output
+4. tv is a function that takes in a command and returns the output
+

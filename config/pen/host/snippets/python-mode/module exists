@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: module exists
+# group: 
+# key: imp
+# --
+import imp
+def module_exists(module):
+try:
+imp.find_module(module)
+return True
+except ImportError:
+return False
+
+print module_exists("os")

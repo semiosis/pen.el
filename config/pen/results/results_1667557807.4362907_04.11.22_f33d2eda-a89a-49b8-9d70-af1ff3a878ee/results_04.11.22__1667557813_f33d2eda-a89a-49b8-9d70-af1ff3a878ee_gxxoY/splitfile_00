@@ -1,0 +1,5 @@
+- haskell guru: Control.Monad is used for handling computations that may fail,
+                and also to combine computations.
+- you: Why is Control.Monad no more popular?
+- haskell guru: It's not as popular because it can be confusing at times.
+"""

@@ -1,0 +1,5 @@
+(with-open [out (io/writer (io/file "/tmp/atom-khala.txt"))
+               rdr (io/reader (io/file "resources/khala.txt"))]
+    (doseq [line (line-seq rdr)])
+
+(defonce mnt (atom nil))

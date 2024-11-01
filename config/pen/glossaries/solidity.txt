@@ -1,0 +1,73 @@
+contract
+    [#solidity]
+
+    A collection of code (its functions) and
+    data (its state) that resides at a
+    specific address on the Ethereum
+    blockchain.
+
+require
+
+pure
+
+event
+
+address
+
+abstract contract
+abstract
+
+mapping
+    ewwlinks +/"mapping (address => uint) public balances;" "https://docs.soliditylang.org/en/v0.7.0/introduction-to-smart-contracts.html"
+
+        mapping (address => uint) public balances
+
+    also creates a public state variable, but
+    it is a more complex datatype. The mapping
+    type maps addresses to unsigned integers.
+    
+    Mappings can be seen as hash tables which
+    are virtually initialised such that every
+    possible key exists from the start and is
+    mapped to a value whose byte-
+    representation is all zeros.
+    
+    However, it is neither possible to obtain
+    a list of all keys of a mapping, nor a
+    list of all values.
+    
+    Record what you added to the mapping, or
+    use it in a context where this is not
+    needed.
+    
+    Or even better, keep a list, or use a more
+    suitable data type.
+
+view
+    [function]
+
+    It does not change the state, so it can be
+    executed on a single node instead of
+    having every node in the blockchain run
+    it.
+
+    This kind of function does not generate a
+    transaction and does not cost gas.
+
+override
+
+msg
+
+emit
+
+public
+    [keyword]
+
+    Makes variables accessible from other
+    contracts.
+
+        address public minter;
+        mapping (address => uint) public balances;
+
+external
+    See: "external account".

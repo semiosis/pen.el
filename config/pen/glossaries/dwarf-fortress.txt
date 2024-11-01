@@ -1,0 +1,158 @@
+b-w-c
+    Click on build menu, then on the Workshop
+    submenu, and finally on the specific
+    workshop, you press b-w-c.
+ 
+map symbols
+map legend
+    http://dwarffortresswiki.org/index.php/DF2014:Map_legend
+
+    %!bash -c "export LC_ALL=C; sort | uniq -c"
+
+          1 0
+          1 Æ
+          1 π
+          1 ↨
+          3 ^
+          4 '
+          4 +
+          4 ,
+          5 ♣
+          7 µ
+          7 ┼
+         11 ├
+         12 º
+         13 ┬
+         13 ┴
+         17 .
+         17 =
+         17 ┤
+         18 ≡
+         18 ┐
+         22 ¶
+         25 ┌
+         25 ┘
+         26 ~
+         29 └
+         52 ─
+         53 ∩
+         59 n
+         62 │
+         76 Ω
+        106 ↑
+        109 ▲
+        125 î
+        151 ♠
+        152 τ
+        243 ⌠
+        368 ⌂
+        387 ⁿ
+        714 Γ
+        738 "
+       2118 ≈
+
+.ⁿ
+    Plains
+
+Γ
+    Tropical Forest
+
+♠
+    Broadleaf Forest
+
+↑
+    Conifer Forest
+
+⌠
+    Swamp
+
+~≈
+≈~
+    Sand desert.
+
+    - yellow/dgrey/white/red: normal
+    - white: snow/ice
+    - dteal: good
+    - purple/dpurple: evil
+    - grey: evil snow/ice
+
+^
+    Peak or volcano.
+
+    - grey: normal
+    - cyan: snow/ice
+    - yellow: good
+    - purple+dpurple: evil
+
+⌂
+    Low mountains.
+
+    - grey: normal
+    - white: snow/ice
+    - yellow: good
+    - purple+dpurple: evil
+
+n∩
+∩n
+    Hills
+
+    - green/yellow: normal
+    - white: snow/ice
+    - teal+dteal: good
+    - purple+dpurple: evil
+    - dgrey+dark red: evil
+    - grey: evil snow/ice
+
+τ
+"τ
+τ"
+    Shrubland.
+
+▲
+    Mountains.
+
+
+"
+    Used in combination with another symbol.
+s
+    One of:
+    - Savanna.
+    - Wetlands.
+    - Shrubland.
+    - Swamp.
+    - Marsh.
+
+'
++
+,
+.
+0
+=
+^
+µ
+¶
+º
+Æ
+î
+Γ
+Ω
+π
+ⁿ
+↑
+↨
+≡
+⌂
+⌠
+─
+│
+┌
+┐
+└
+┘
+├
+┤
+┬
+┴
+┼
+♠
+♣

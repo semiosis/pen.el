@@ -1,0 +1,28 @@
+
+
+# Blog post should look like this
+print(title)
+print("\n")
+print(date)
+print("\n")
+print(blog_post)
+print("\n")
+print(author)
+# End Code
+
+
+# You should have something like this after running the code
+# First argument
+# I will talk about the iPhone 12.
+#
+# Second argument
+# Today, I am going to talk about the iPhone 12.
+
+# Third argument
+# I will write a 200 words about the iPhone 12.
+
+# Fourth argument
+# I am Elon Musk.
+
+# Fifth argument
+# Ibsen

@@ -1,0 +1,3 @@
+":db/valueType" is a special attribute that is used to define the type of a value.
+In the example above, we have a :db/valueType of :db.type/string.
+

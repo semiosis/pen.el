@@ -1,0 +1,6 @@
+
+    (cond (= 0 (count list))
+          [[[[]]] list]
+          [[[head tail] tail] 
+           (pair [(conj head head) tail])])
+  "Return ((1 2)

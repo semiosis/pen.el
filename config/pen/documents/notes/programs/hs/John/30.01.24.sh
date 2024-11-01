@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el;  "John" "12:48" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "John" "12:47-48" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "John" "12" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "John" "12" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "John" "12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "9:39" "#" "<==" "bash"

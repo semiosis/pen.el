@@ -1,0 +1,496 @@
+HTTP/1.1 200 OK
+Date: Wed, 13 Dec 2023 04:52:54 GMT
+Server: Apache/2.4.57 (Debian)
+Last-Modified: Sun, 06 Feb 2022 21:51:11 GMT
+ETag: "4bd3-5d7607b77ab4d-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 5198
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>notmuch-config-1</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-config-1" />
+
+
+
+
+</head>
+<body>
+
+<div class="pageheader">
+<div class="header">
+<span>
+<span class="parentlinks">
+
+<a href="../../">notmuch</a>/ 
+
+<a href="../">manpages</a>/ 
+
+</span>
+<!--
+<span class="title">
+notmuch-config-1
+
+</span>
+-->
+</span><!--.header-->
+
+</div>
+
+<!--
+
+<div class="actions">
+<ul>
+
+<li><a href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-config-1" rel="nofollow">Edit</a></li>
+
+
+<li><a href="../../recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+<li><span class="createlink"><a href="/ikiwiki.cgi?do=create&amp;from=manpages%2Fnotmuch-config-1&amp;page=Discussion" rel="nofollow">?</a>Discussion</span><br /></li>
+
+
+</ul>
+</div>
+
+-->
+
+
+
+</div> <!-- .pageheader -->
+
+
+
+<div id="content">
+<h1>NOTMUCH-CONFIG(1)</h1>
+
+
+
+
+<h2>NAME</h2>
+
+
+<pre>
+       notmuch-config - access notmuch configuration file
+</pre>
+
+
+
+
+<h2>SYNOPSIS</h2>
+
+
+<pre>
+       <b>notmuch</b> <b>config</b> <b>get</b> &lt;<u>section</u>&gt;.&lt;<u>item</u>&gt;
+
+       <b>notmuch</b> <b>config</b> <b>set</b> [--database] &lt;<u>section</u>&gt;.&lt;<u>item</u>&gt; [<u>value</u> ...]
+
+       <b>notmuch</b> <b>config</b> <b>list</b>
+</pre>
+
+
+
+
+<h2>DESCRIPTION</h2>
+
+
+<pre>
+       The  <b>config</b>  command  can be used to get or set settings in the notmuch
+       configuration file and corresponding database.
+
+       <b>get</b>    The value of the specified configuration item is printed to std‐
+              out.  If the item has multiple values (it is a list), each value
+              is separated by a newline character.
+
+       <b>set</b>    The specified configuration item is set to the given  value.  To
+              specify  a multiple-value item (a list), provide each value as a
+              separate command-line argument.
+
+              If no values are provided, the specified configuration item will
+              be removed from the configuration file.
+
+              With  the  <u>--database</u>  option,  updates  configuration  metadata
+              stored in the database, rather than the default (text)  configu‐
+              ration file.
+
+       <b>list</b>   Every  configuration  item is printed to stdout, each on a sepa‐
+              rate line of the form:
+
+                 section.item=value
+
+              No additional whitespace surrounds the dot or equals sign  char‐
+              acters.  In a multiple-value item (a list), the values are sepa‐
+              rated by semicolon characters.
+
+       The available configuration items  are  described  below.  Non-absolute
+       paths are presumed relative to <u>$HOME</u> for items in section <b>database</b>.
+
+       <b>database.path</b>
+              Notmuch  will  store  its database here, (in sub-directory named
+              <b>.notmuch</b> if <b>database.mail</b>_<b>root</b> is unset).
+
+              Default: see <u>DATABASE</u> <u>LOCATION</u>
+
+       <b>database.mail</b>_<b>root</b>
+              The top-level directory where your mail currently exists and  to
+              where  mail will be delivered in the future. Files should be in‐
+              dividual email messages.
+
+              History: this configuration  value  was  introduced  in  notmuch
+              0.32.
+
+              Default:  For compatibility with older configurations, the value
+              of database.path is used if <b>database.mail</b>_<b>root</b> is unset.
+
+       <b>database.backup</b>_<b>dir</b>
+              Directory to store tag dumps when upgrading database.
+
+              History: this configuration  value  was  introduced  in  notmuch
+              0.32.
+
+              Default: A sibling directory of the Xapian database called <u>back‐</u>
+              <u>ups</u>.
+
+       <b>database.hook</b>_<b>dir</b>
+              Directory containing hooks run by  notmuch  commands.  See  <a href="../notmuch-hooks-5/">not‐</a>
+              <a href="../notmuch-hooks-5/">much-hooks</a>(5).
+
+              History:  this  configuration  value  was  introduced in notmuch
+              0.32.
+
+              Default: See HOOKS, below.
+
+       <b>database.autocommit</b>
+          How often to commit transactions to disk. <u>0</u> means wait until command
+          completes,  otherwise an integer <u>n</u> specifies to commit to disk after
+          every <u>n</u> completed transactions.
+
+          History: this configuration value was introduced in notmuch 0.33.
+
+       <b>user.name</b>
+              Your full name.
+
+              Default: <b>$NAME</b> variable if set, otherwise read from <b>/etc/passwd</b>.
+
+       <b>user.primary</b>_<b>email</b>
+              Your primary email address.
+
+              Default: <b>$EMAIL</b> variable if set, otherwise constructed from  the
+              username and hostname of the current machine.
+
+       <b>user.other</b>_<b>email</b>
+              A list of other email addresses at which you receive email.
+
+              Default: not set.
+
+       <b>new.tags</b>
+              A  list  of tags that will be added to all messages incorporated
+              by <b>notmuch</b> <b>new</b>.
+
+              Default: <b>unread;inbox</b>.
+
+       <b>new.ignore</b>
+              A list to  specify  files  and  directories  that  will  not  be
+              searched  for messages by <a href="../notmuch-new-1/">notmuch-new</a>(1). Each entry in the list
+              is either:
+
+              A file or a directory name, without path, that will be  ignored,
+              regardless  of  the location in the mail store directory hierar‐
+              chy.
+
+              Or:
+
+              A regular expression delimited with  //  that  will  be  matched
+              against  the path of the file or directory relative to the data‐
+              base path. Matching files and directories will be  ignored.  The
+              beginning and end of string must be explicitly anchored. For ex‐
+              ample, /.*/foo$/ would match &quot;bar/foo&quot;  and  &quot;bar/baz/foo&quot;,  but
+              not &quot;foo&quot; or &quot;bar/foobar&quot;.
+
+              Default: empty list.
+
+       <b>search.exclude</b>_<b>tags</b>
+              A  list of tags that will be excluded from search results by de‐
+              fault. Using an excluded tag in a query will override  that  ex‐
+              clusion.
+
+              Default:   empty   list.   Note   that   <b>notmuch-setup</b>(1)   puts
+              <b>deleted;spam</b> here when creating new configuration file.
+
+       <b>show.extra_headers</b>
+          By default <a href="../notmuch-show-1/">notmuch-show</a>(1) includes the following headers in  struc‐
+          tured  output if they are present in the message: <u>Subject</u>, <u>From</u>, <u>To</u>,
+          <u>Cc</u>, <u>Bcc</u>, <u>Reply-To</u>, <u>Date</u>. This option allows the specification  of  a
+          list of further headers to output.
+
+          History: This configuration value was introduced in notmuch 0.35.
+
+          Default: empty list.
+
+       <b>maildir.synchronize</b>_<b>flags</b>
+              If true, then the following maildir flags (in message filenames)
+              will be synchronized with the corresponding notmuch tags:
+
+                            ┌─────┬────────────────────────────┐
+                            │Flag │ Tag                        │
+                            ├─────┼────────────────────────────┤
+                            │D    │ draft                      │
+                            ├─────┼────────────────────────────┤
+                            │F    │ flagged                    │
+                            ├─────┼────────────────────────────┤
+                            │P    │ passed                     │
+                            ├─────┼────────────────────────────┤
+                            │R    │ replied                    │
+                            ├─────┼────────────────────────────┤
+                            │S    │ unread  (added  when   &apos;S&apos; │
+                            │     │ flag is not present)       │
+                            └─────┴────────────────────────────┘
+
+              The <a href="../notmuch-new-1/">notmuch-new</a>(1) command will notice flag changes in filenames
+              and update tags, while the <a href="../notmuch-tag-1/">notmuch-tag</a>(1) and <a href="../notmuch-restore-1/">notmuch-restore</a>(1)
+              commands will notice tag changes and update flags in filenames.
+
+              If  there  have  been  any  changes in the maildir (new messages
+              added, old ones  removed  or  renamed,  maildir  flags  changed,
+              etc.),  it  is  advisable  to  run  <a href="../notmuch-new-1/">notmuch-new</a>(1)  before  <a href="../notmuch-tag-1/">not‐</a>
+              <a href="../notmuch-tag-1/">much-tag</a>(1) or <a href="../notmuch-restore-1/">notmuch-restore</a>(1) commands  to  ensure  the  tag
+              changes  are  properly synchronized to the maildir flags, as the
+              commands expect the database and maildir to be in sync.
+
+              Default: <b>true</b>.
+
+       <b>index.decrypt</b>
+              Policy for decrypting encrypted messages during indexing.   Must
+              be one of: <b>false</b>, <b>auto</b>, <b>nostash</b>, or <b>true</b>.
+
+              When  indexing  an encrypted e-mail message, if this variable is
+              set to <b>true</b>, notmuch will try to decrypt the message  and  index
+              the  cleartext,  stashing  a copy of any discovered session keys
+              for the message.  If <b>auto</b>, it will try to index the cleartext if
+              a  stashed  session  key  is already known for the message (e.g.
+              from a previous copy), but will not try to  access  your  secret
+              keys.  Use <b>false</b> to avoid decrypting even when a stashed session
+              key is already present.
+
+              <b>nostash</b> is the same as  <b>true</b>  except  that  it  will  not  stash
+              newly-discovered session keys in the database.
+
+              From  the  command line (i.e. during <a href="../notmuch-new-1/">notmuch-new</a>(1), <a href="../notmuch-insert-1/">notmuch-in‐</a>
+              <a href="../notmuch-insert-1/">sert</a>(1), or <a href="../notmuch-reindex-1/">notmuch-reindex</a>(1)), the user can override the data‐
+              base&apos;s stored decryption policy with the <b>--decrypt=</b> option.
+
+              Here  is  a  table  that summarizes the functionality of each of
+              these policies:
+
+                      ┌──────────────┬───────┬──────┬─────────┬──────┐
+                      │              │ false │ auto │ nostash │ true │
+                      ├──────────────┼───────┼──────┼─────────┼──────┤
+                      │Index cleart‐ │       │ X    │ X       │ X    │
+                      │ext     using │       │      │         │      │
+                      │stashed  ses‐ │       │      │         │      │
+                      │sion keys     │       │      │         │      │
+                      ├──────────────┼───────┼──────┼─────────┼──────┤
+                      │Index cleart‐ │       │      │ X       │ X    │
+                      │ext using se‐ │       │      │         │      │
+                      │cret keys     │       │      │         │      │
+                      ├──────────────┼───────┼──────┼─────────┼──────┤
+                      │Stash session │       │      │         │ X    │
+                      │keys
+                      ├──────────────┼───────┼──────┼─────────┼──────┤
+                      │Delete
+                      │stashed  ses‐ │       │      │         │      │
+                      │sion keys  on │       │      │         │      │
+                      │reindex       │       │      │         │      │
+                      └──────────────┴───────┴──────┴─────────┴──────┘
+
+              Stashed  session keys are kept in the database as properties as‐
+              sociated with the message.  See <b>session-key</b>  in  <a href="../notmuch-properties-7/">notmuch-proper‐</a>
+              <a href="../notmuch-properties-7/">ties</a>(7) for more details about how they can be useful.
+
+              Be  aware  that  the  notmuch  index is likely sufficient (and a
+              stashed session key is certainly sufficient) to reconstruct  the
+              cleartext  of the message itself, so please ensure that the not‐
+              much message index is adequately  protected.   DO  NOT  USE  <b>in-</b>
+              <b>dex.decrypt=true</b>  or  <b>index.decrypt=nostash</b>  without considering
+              the security of your index.
+
+              Default: <b>auto</b>.
+
+       <b>index.header.&lt;prefix&gt;</b>
+              Define the query prefix &lt;prefix&gt;, based on a  mail  header.  For
+              example  <b>index.header.List=List-Id</b> will add a probabilistic pre‐
+              fix <b>List:</b> that searches the <b>List-Id</b> field.   User  defined  pre‐
+              fixes must not start with &apos;a&apos;...&apos;z&apos;; in particular adding a pre‐
+              fix with same name as a predefined prefix is not supported.  See
+              <a href="../notmuch-search-terms-7/">notmuch-search-terms</a>(7)  for a list of existing prefixes, and an
+              explanation of probabilistic prefixes.
+
+       <b>built</b>_<b>with.&lt;name&gt;</b>
+              Compile  time  feature  &lt;name&gt;.  Current  possibilities  include
+              &quot;retry_lock&quot;  (configure  option,  included by default).  (since
+              notmuch 0.30, &quot;compact&quot; and  &quot;field_processor&quot;  are  always  in‐
+              cluded.)
+
+       <b>query.&lt;name&gt;</b>
+              Expansion    for   named   query   called   &lt;name&gt;.   See   <a href="../notmuch-search-terms-7/">not‐</a>
+              <a href="../notmuch-search-terms-7/">much-search-terms</a>(7) for more information about named queries.
+
+       <b>squery.&lt;name&gt;</b>
+              Expansion for named query called &lt;name&gt;, using s-expression syn‐
+              tax.  See  <a href="../notmuch-sexp-queries-7/">notmuch-sexp-queries</a>(7)  for  more  information about
+              s-expression queries.
+</pre>
+
+
+
+
+<h2>FILES</h2>
+
+
+
+
+<h3> &nbsp; CONFIGURATION</h3>
+
+
+<pre>
+       Notmuch configuration file search order:
+
+       1. File specified by <b>notmuch</b> <b>--config</b> global option; see <a href="../notmuch-1/">notmuch</a>(1).
+
+       2. File specified by <b>NOTMUCH</b>_<b>CONFIG</b> environment variable.
+
+       3. <b>$XDG</b>_<b>CONFIG</b>_<b>HOME/notmuch/&lt;profile&gt;/config</b> where <b>&lt;profile&gt;</b> is defined
+          by   <b>NOTMUCH</b>_<b>PROFILE</b>   environment   variable   if   set,  <b>$XDG</b>_<b>CON-</b>
+          <b>FIG</b>_<b>HOME/notmuch/default/config</b> otherwise.
+
+       4. <b>$HOME/.notmuch-config.&lt;profile&gt;</b> where <b>&lt;profile&gt;</b> is defined  by  <b>NOT-</b>
+          <b>MUCH</b>_<b>PROFILE</b> environment variable if set, <b>$HOME/.notmuch-config</b> oth‐
+          erwise.
+</pre>
+
+
+
+
+<h3> &nbsp; DATABASE LOCATION</h3>
+
+
+<pre>
+       Notmuch database search order:
+
+       1. Directory specified by <b>NOTMUCH</b>_<b>DATABASE</b> environment variable.
+
+       2. Directory specified by config key <b>database.path</b>.
+
+       3. <b>$XDG</b>_<b>DATA</b>_<b>HOME/notmuch/&lt;profile&gt;</b> where <b>&lt;profile&gt;</b> is defined by  <b>NOT-</b>
+          <b>MUCH</b>_<b>PROFILE</b> environment variable if set, <b>$XDG</b>_<b>DATA</b>_<b>HOME/notmuch/de-</b>
+          <b>fault</b> otherwise.
+
+       4. Directory specified by <b>MAILDIR</b> environment variable.
+
+       5. <b>$HOME/mail</b>
+</pre>
+
+
+
+
+<h3> &nbsp; HOOKS</h3>
+
+
+<pre>
+       Notmuch hook directory search order:
+
+       1. Directory specified by <b>database.hook</b>_<b>dir</b> configuration option.
+
+       2. <b>$XDG</b>_<b>CONFIG</b>_<b>HOME/notmuch/&lt;profile&gt;/hooks</b> where <b>&lt;profile&gt;</b> is  defined
+          by   <b>NOTMUCH</b>_<b>PROFILE</b>   environment   variable   if   set,  <b>$XDG</b>_<b>CON-</b>
+          <b>FIG</b>_<b>HOME/notmuch/default/hooks</b> otherwise.
+
+       3. <b>&lt;database.path&gt;/.notmuch/hooks</b>
+</pre>
+
+
+
+
+<h2>SEE ALSO</h2>
+
+
+<pre>
+       <a href="../notmuch-1/">notmuch</a>(1), <a href="../notmuch-count-1/">notmuch-count</a>(1), <a href="../notmuch-dump-1/">notmuch-dump</a>(1),  <a href="../notmuch-hooks-5/">notmuch-hooks</a>(5),  <a href="../notmuch-insert-1/">not‐</a>
+       <a href="../notmuch-insert-1/">much-insert</a>(1),   <a href="../notmuch-new-1/">notmuch-new</a>(1),   <a href="../notmuch-properties-7/">notmuch-properties</a>(7),  <a href="../notmuch-reply-1/">notmuch-re‐</a>
+       <a href="../notmuch-reply-1/">ply</a>(1), <a href="../notmuch-restore-1/">notmuch-restore</a>(1), <a href="../notmuch-search-1/">notmuch-search</a>(1), <a href="../notmuch-search-terms-7/">notmuch-search-terms</a>(7),
+       <a href="../notmuch-show-1/">notmuch-show</a>(1), <a href="../notmuch-tag-1/">notmuch-tag</a>(1)
+</pre>
+
+
+
+
+<h2>AUTHOR</h2>
+
+
+<pre>
+       Carl Worth and many others
+</pre>
+
+
+
+
+<h2>COPYRIGHT</h2>
+
+
+<pre>
+       2009-2022, Carl Worth and many others
+</pre>
+
+
+
+
+<h2>0.35</h2>
+
+
+</div>
+
+
+
+<div id="footer" class="pagefooter">
+<div id="pageinfo">
+
+
+
+
+
+
+
+
+
+<div class="pagedate">
+Last edited <span class="date">Sun Feb  6 13:51:11 2022</span>
+<!-- Created <span class="date">Fri Jun 22 00:08:32 2012</span> -->
+</div>
+
+</div><!-- #pageinfo -->
+
+<!-- from notmuch -->
+</div><!-- .pagefooter #footer -->
+
+</body>
+</html>

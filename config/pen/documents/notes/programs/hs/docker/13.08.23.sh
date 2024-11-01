@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el/src;  "docker" "container" "ls" "--filter" "status=running" "--format=[{{ json .Names }},{{json .ID}},{{json .Image}},{{json .Command}},{{json .CreatedAt}},{{json .Status}},{{json .Ports}},{{json .Names}}]" "#" "<==" "sh"

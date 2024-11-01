@@ -1,0 +1,31 @@
+
+#
+# This playbook will:
+#
+# - Ensure the Library is present.
+# - Ensure the Library is enabled.
+# - Ensure the Library has a sync schedule.
+# - Ensure the Library's sync source is present.
+# - Sync the Library.
+# - Check for errors during the sync.
+EOD
+
+
+cat library_sync_source.yaml <<EOD
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+
+  - name: Create a Library if needed and enable it.
+    oneview_library:
+      config: "{{ config }}"
+
+  - name: Add a sync source to the Library if needed.
+    oneview_library_sync:
+      config: "{{ config }}"
+
+  - name: Sync the Library. Wait for completion if desired. Fail if errors are detected during sync.
+    oneview

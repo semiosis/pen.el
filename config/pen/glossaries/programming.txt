@@ -1,0 +1,175 @@
+$NOTES/ws/computing/glossary.txt
+
+code rot
+    NLG: A software bug that becomes worse
+    over time, especially when the system is
+    used for a long time.
+
+referentially transparent
+    An expression is called referentially
+    transparent if it can be replaced with its
+    corresponding value (and vice-versa)
+    without changing the program's behavior.
+
+reflection
+    Can be used for observing and modifying
+    program execution at runtime.
+
+    A reflection-oriented program component
+    can monitor the execution of an enclosure
+    of code and can modify itself according to
+    a desired goal related to that enclosure.
+
+WASI
+    An extension to WASM.
+
+    Lets you escape the browser.
+
+    https://www.youtube.com/watch?v=CMB6AlE1QuI&ab_channel=Codegram
+
+WASM
+WebAssembly
+
+destructuring
+    [emacs lisp]
+
+    Extraction of multiple values stored in an
+    object is known as destructuring.
+
+    j pcase-let
+    
+        Using pcase patterns allows to perform
+        destructuring binding, which is
+        similar to a local binding (see Local
+        Variables), but gives values to
+        multiple elements of a variable by
+        extracting those values from an object
+        of compatible structure.
+
+Flynn's taxonomy
+    A classification of computer
+    architectures, proposed by Michael J.
+    Flynn in 1966.
+    
+    The classification system has stuck, and
+    has been used as a tool in design of
+    modern processors and their
+    functionalities.
+
+SIMD
+Single instruction, multiple data
+    A class of parallel computers in Flynn's
+    taxonomy.
+    
+    It describes computers with multiple
+    processing elements that perform the same
+    operation on multiple data points
+    simultaneously.
+
+data processing
+    Programming used to be called data
+    processing.
+
+trampolining
+    https://en.wikipedia.org/wiki/Trampoline_(computing)
+
+static parameters
+    [I coined this]
+
+    Internal parameters that do not change due
+    to arguments.
+
+    (e.g. when making test scripts, I have to
+    go through combinations fo things.)
+
+Debug Adaptor Protocol
+DAP
+    The LSP of debugging.
+
+    https://code.visualstudio.com/blogs/2018/08/07/debug-adapter-protocol-website
+
+polling
+busy waiting
+busy-looping
+spinning
+    The synchronization is achieved by an
+    explicit periodic querying the state of
+    the activity.
+    
+    As the name suggests busy waiting consumes
+    system resources even when the external
+    activity does not change its state.
+
+    Can also be used to generate an arbitrary
+    time delay, a technique that was necessary
+    on systems that lacked a method of waiting
+    a specific length of time.
+
+    In most cases spinning is considered an
+    anti-pattern and should be avoided.
+
+event-driven
+    [architecture]
+
+    A design that deploy events in order to
+    synchronize tasks with the asynchronous
+    activities they must be aware of.
+    
+    The opposite approach is polling.
+
+    https://rosettacode.org/wiki/Events
+
+input validation
+    Check that values entered by the user,
+    such as text from the input() function,
+    are formatted correctly.
+
+Closure
+Lexical closure
+Function closure
+    (this is not a difficult concept)
+
+    A technique for implementing lexically
+    scoped name binding in a language with
+    first-class functions.
+
+    Operationally, a closure is a record
+    storing a function together with an
+    environment.
+
+    https://kisaragi-hiu.com/blog/2019-05-15-closure
+
+    In Lisp family languages, this means a
+    lambda wrapped inside a let: the local
+    binding of that let will become part of
+    the lambda’s environment.
+
+    A closure is the combination of a function
+    bundled together (enclosed) with
+    references to its surrounding state (the
+    lexical environment).
+    
+    In other words, a closure gives you access
+    to an outer function’s scope from an inner
+    function.
+    
+    In JavaScript, closures are created every
+    time a function is created, at function
+    creation time.
+    
+    To use a closure, define a function inside
+    another function and expose it.
+    
+    To expose a function, return it or pass it
+    to another function.
+    
+    The inner function will have access to the
+    variables in the outer function scope,
+    even after the outer function has
+    returned.
+
+Static typing
+    Static typed languages are those in which
+    type checking is done at compile-time,
+    whereas dynamic typed languages are those
+    in which type checking is done at

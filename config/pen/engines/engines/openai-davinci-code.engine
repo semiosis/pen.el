@@ -1,0 +1,30 @@
+engine-title: OpenAI Davinci Code
+include: OpenAI
+model: code-davinci-002
+foundation: true
+engine-delimiter: "\"\"\""
+# For the API
+default-temperature: 0.2
+modes:
+- search
+- classification
+# 'layers' is like 'provides'. see glossary
+layers:
+- foundation
+- nl
+- code
+# Pick this engine when you need 'just' NL ∩ Code
+specialities:
+- nl+code
+# e.g. may also put finetuning labels at the end
+# - python
+engine-min-tokens: 0
+engine-whitespace-support: yes
+engine-max-tokens: 4096
+rate-limit-requests-per-min: 20
+libre-dataset: no
+libre-model: no
+local: no
+upstream-engine: OpenAI Davinci
+fallbacks:
+- OpenAI Davinci

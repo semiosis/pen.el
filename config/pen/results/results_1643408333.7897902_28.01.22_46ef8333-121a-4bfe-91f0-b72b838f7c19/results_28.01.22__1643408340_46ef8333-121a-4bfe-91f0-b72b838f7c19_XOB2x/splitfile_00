@@ -1,0 +1,14 @@
+ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» pwd
+/root/notes
+» cd ../..
+» pwd
+/root/notes
+» cd ../..
+» pwd
+/

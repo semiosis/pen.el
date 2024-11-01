@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: vm
+# group: vimsnippet
+# key: vs-vm
+# --
+vmap ${1} ${2}

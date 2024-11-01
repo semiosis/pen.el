@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "sh" "-c" "/bin/bash || /bin/zsh || sh" "#" "<==" "ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "vim" "#" "<==" "ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "zsh" "#" "<==" "ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "zsh" "#" "<==" "ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "pen-ssh-host-run" "zsh" "#" "<==" "pen-ssh-host"

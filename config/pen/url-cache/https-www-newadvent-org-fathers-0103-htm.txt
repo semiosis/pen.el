@@ -1,0 +1,274 @@
+HTTP/1.1 200 OK
+Date: Fri, 01 Mar 2024 02:08:43 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Server: BunnyCDN-AUC1-1142
+CDN-PullZone: 1569362
+CDN-Uid: 49d7db18-1dfb-442a-ba45-885c787462bf
+CDN-RequestCountryCode: NZ
+Cache-Control: public, max-age=0
+X-Frame-Options: SAMEORIGIN
+X-Mod-Pagespeed: 1.13.35.2-0
+CDN-ProxyVer: 1.04
+CDN-RequestPullSuccess: True
+CDN-RequestPullCode: 200
+CDN-CachedAt: 03/01/2024 02:08:43
+CDN-EdgeStorageId: 1142
+CDN-Status: 200
+CDN-RequestId: 03589d37e439e173517c34bdbc372da5
+CDN-Cache: MISS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>CHURCH FATHERS: Against Heresies (St. Irenaeus)</title><script src="https://dtyry4ejybx0.cloudfront.net/js/cmp/cleanmediacmp.js?ver=0104" async="true"></script><script defer data-domain="newadvent.org" src="https://plausible.io/js/script.js"></script><link rel="canonical" href="https://www.newadvent.org/fathers/0103.htm">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Featuring the Church Fathers, Catholic Encyclopedia, Summa Theologica and more.">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.newadvent.org/bestoftheweb?format=xml"><link rel="icon" href="../images/icon1.ico" type="image/x-icon"><link rel="shortcut icon" href="../images/icon1.ico" type="image/x-icon"><meta name="robots" content="noodp"><link type="text/css" rel="stylesheet" href="../utility/screen6.css" media="screen"></head>
+
+<body class="fathers" id="0103.htm">
+
+<!-- spacer-->&nbsp;<br/>
+
+
+
+<div id="capitalcity"><table summary="Logo" cellpadding=0 cellspacing=0 width="100%"><tr valign="bottom"><td align="left"><a href="../"><img height=36 width=153 border="0" alt="New Advent" src="../images/logo.gif"></a></td><td align="right"> <form id="searchbox_000299817191393086628:ifmbhlr-8x0" action="../utility/search.htm">
+  <!-- Hidden Inputs -->
+  <input type="hidden" name="safe" value="active">
+  <input type="hidden" name="cx" value="000299817191393086628:ifmbhlr-8x0"/>
+  <input type="hidden" name="cof" value="FORID:9"/>
+ 
+  <!-- Search Box -->
+  <label for="searchQuery" id="searchQueryLabel">Search:</label>
+  <input id="searchQuery" name="q" type="text" size="25" aria-labelledby="searchQueryLabel"/>
+ 
+  <!-- Submit Button -->
+  <label for="submitButton" id="submitButtonLabel" class="visually-hidden">Submit Search</label>
+  <input id="submitButton" type="submit" name="sa" value="Search" aria-labelledby="submitButtonLabel"/>
+</form> <table summary="Spacer" cellpadding=0 cellspacing=0><tr><td height="2"></td></tr></table> <table summary="Tabs" cellpadding=0 cellspacing=0><tr> <td bgcolor="#ffffff"></td> <td class="tab"><a class="tab_color_on_beige" href="../">&nbsp;Home&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../cathen/index.html">&nbsp;Encyclopedia&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../summa/index.html">&nbsp;Summa&nbsp;</a></td> <td class="tab"><a class="tab_white_on_color" href="../fathers/index.html">&nbsp;Fathers&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../bible/gen001.htm">&nbsp;Bible&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../library/index.html">&nbsp;Library&nbsp;</a></td> </tr></table> </td> </tr></table><table summary="Alphabetical index" width="100%" cellpadding=0 cellspacing=0><tr><td class="bar_white_on_color"> <a href="../cathen/a.htm">&nbsp;A&nbsp;</a><a href="../cathen/b.htm">&nbsp;B&nbsp;</a><a href="../cathen/c.htm">&nbsp;C&nbsp;</a><a href="../cathen/d.htm">&nbsp;D&nbsp;</a><a href="../cathen/e.htm">&nbsp;E&nbsp;</a><a href="../cathen/f.htm">&nbsp;F&nbsp;</a><a href="../cathen/g.htm">&nbsp;G&nbsp;</a><a href="../cathen/h.htm">&nbsp;H&nbsp;</a><a href="../cathen/i.htm">&nbsp;I&nbsp;</a><a href="../cathen/j.htm">&nbsp;J&nbsp;</a><a href="../cathen/k.htm">&nbsp;K&nbsp;</a><a href="../cathen/l.htm">&nbsp;L&nbsp;</a><a href="../cathen/m.htm">&nbsp;M&nbsp;</a><a href="../cathen/n.htm">&nbsp;N&nbsp;</a><a href="../cathen/o.htm">&nbsp;O&nbsp;</a><a href="../cathen/p.htm">&nbsp;P&nbsp;</a><a href="../cathen/q.htm">&nbsp;Q&nbsp;</a><a href="../cathen/r.htm">&nbsp;R&nbsp;</a><a href="../cathen/s.htm">&nbsp;S&nbsp;</a><a href="../cathen/t.htm">&nbsp;T&nbsp;</a><a href="../cathen/u.htm">&nbsp;U&nbsp;</a><a href="../cathen/v.htm">&nbsp;V&nbsp;</a><a href="../cathen/w.htm">&nbsp;W&nbsp;</a><a href="../cathen/x.htm">&nbsp;X&nbsp;</a><a href="../cathen/y.htm">&nbsp;Y&nbsp;</a><a href="../cathen/z.htm">&nbsp;Z&nbsp;</a> </td></tr></table></div>
+ <div id="mobilecity" style="text-align: center; "><a href="../"><img height=24 width=102 border="0" alt="New Advent" src="../images/logo.gif"></a></div>
+ <!--<div class="scrollmenu"> <a href="../utility/search.htm">SEARCH</a> <a href="../cathen/">Encyclopedia</a> <a href="../summa/">Summa</a> <a href="../fathers/">Fathers</a> <a href="../bible/">Bible</a> <a href="../library/">Library</a> </div> <br />-->
+
+<div id="mi5"><span class="breadcrumbs"><a href="../">Home</a> > <a href="../fathers/index.html">Fathers of the Church</a> > Against Heresies</span></div>
+
+<div id="springfield2">
+
+<div class='catholicadnet-728x90' id='fathers-728x90-top' style='display: flex; height: 100px; align-items: center; justify-content: center; '></div>
+
+
+<h1>Against Heresies</h1>
+
+<p><em><a href="https://gumroad.com/l/na2"><strong>Please help support the mission of New Advent</strong> and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99...</a></em></p>
+
+
+
+<h2>Book I</h2>
+
+<p><a href="../fathers/0103100.htm"><strong>Preface</strong></a>
+<br><a href="../fathers/0103101.htm"><strong>Chapter 1</strong></a> Absurd ideas of the disciples of Valentinus as to the origin, name, order, and conjugal productions of their fancied aeons, with the passages of Scripture which they adapt to their opinions.
+<br><a href="../fathers/0103102.htm"><strong>Chapter 2</strong></a> The Propator was known to Monogenes alone. Ambition, disturbance, and danger into which Sophia fell; her shapeless offspring: she is restored by Horos. The production of Christ and of the Holy Spirit, in order to the completion of the aeons. Manner of the production of Jesus.
+<br><a href="../fathers/0103103.htm"><strong>Chapter 3</strong></a> Texts of Holy Scripture used by these heretics to support their opinions
+<br><a href="../fathers/0103104.htm"><strong>Chapter 4</strong></a> Account given by the heretics of the formation of Achamoth; origin of the visible world from her disturbances
+<br><a href="../fathers/0103105.htm"><strong>Chapter 5</strong></a> Formation of the Demiurge; description of him. He is the creator of everything outside of the Pleroma
+<br><a href="../fathers/0103106.htm"><strong>Chapter 6</strong></a> The threefold kind of man feigned by these heretics: good works needless for them, though necessary to others: their abandoned morals
+<br><a href="../fathers/0103107.htm"><strong>Chapter 7</strong></a> The mother Achamoth, when all her seed are perfected, shall pass into the Pleroma, accompanied by those men who are spiritual; the Demiurge, with animal men, shall pass into the intermediate habitation; but all material men shall go into corruption. their blasphemous opinions against the true Incarnation of Christ by the Virgin Mary. Their views as to the prophecies. Stupid ignorance of the Demiurge
+<br><a href="../fathers/0103108.htm"><strong>Chapter 8</strong></a> How the Valentinians pervert the Scriptures to support their own pious opinions
+<br><a href="../fathers/0103109.htm"><strong>Chapter 9</strong></a> Refutation of the impious interpretations of these heretics
+<br><a href="../fathers/0103110.htm"><strong>Chapter 10</strong></a> Unity of the faith of the Church throughout the whole world
+<br><a href="../fathers/0103111.htm"><strong>Chapter 11</strong></a> The opinions of Valentinus, with those of his disciples and others
+<br><a href="../fathers/0103112.htm"><strong>Chapter 12</strong></a> The doctrines of the followers of Ptolemy and Colorbasus
+<br><a href="../fathers/0103113.htm"><strong>Chapter 13</strong></a> The deceitful arts and nefarious practices of Marcus
+<br><a href="../fathers/0103114.htm"><strong>Chapter 14</strong></a> The various hypotheses of Marcus and others. Theories respecting letters and syllables
+<br><a href="../fathers/0103115.htm"><strong>Chapter 15</strong></a> Sige relates to Marcus the generation of the twenty-four elements and of Jesus. Exposure of these absurdities
+<br><a href="../fathers/0103116.htm"><strong>Chapter 16</strong></a> Absurd interpretations of the Marcosians
+<br><a href="../fathers/0103117.htm"><strong>Chapter 17</strong></a> The theory of the Marcosians, that created things were made after the image of things invisible
+<br><a href="../fathers/0103118.htm"><strong>Chapter 18</strong></a> Passages from Moses, which the heretics pervert to the support of their hypothesis
+<br><a href="../fathers/0103119.htm"><strong>Chapter 19</strong></a> Passages of Scripture by which they attempt to prove that the supreme Father was unknown before the coming of Christ
+<br><a href="../fathers/0103120.htm"><strong>Chapter 20</strong></a> The apocryphal and spurious scriptures of the Marcosians, with passages of the Gospels which they pervert
+<br><a href="../fathers/0103121.htm"><strong>Chapter 21</strong></a> The views of redemption entertained by these heretics
+<br><a href="../fathers/0103122.htm"><strong>Chapter 22</strong></a> Deviations of heretics from the truth
+<br><a href="../fathers/0103123.htm"><strong>Chapter 23</strong></a> Doctrines and practices of Simon Magus and Menander
+<br><a href="../fathers/0103124.htm"><strong>Chapter 24</strong></a> Doctrines of Saturninus and Basilides
+<br><a href="../fathers/0103125.htm"><strong>Chapter 25</strong></a> Doctrines of Carpocrates
+<br><a href="../fathers/0103126.htm"><strong>Chapter 26</strong></a> Doctrines of Cerinthus, the Ebionites, and Nicolaitanes
+<br><a href="../fathers/0103127.htm"><strong>Chapter 27</strong></a> Doctrines of Cerdo and Marcion
+<br><a href="../fathers/0103128.htm"><strong>Chapter 28</strong></a> Doctrines of Tatian, the Encratites, and others
+<br><a href="../fathers/0103129.htm"><strong>Chapter 29</strong></a> Doctrines of various other Gnostic sects, and especially of the Barbeliotes or Borborians
+<br><a href="../fathers/0103130.htm"><strong>Chapter 30</strong></a> Doctrines of the Ophites and Sethians
+<br><a href="../fathers/0103131.htm"><strong>Chapter 31</strong></a> Doctrines of the Cainites</p>
+
+<div class="CMtag_300x250" style="display: flex; height: 300px; align-items: center; justify-content: center; "></div>
+
+<h2>Book II</h2>
+
+<p><a href="../fathers/0103200.htm"><strong>Preface</strong></a>
+<br><a href="../fathers/0103201.htm"><strong>Chapter 1</strong></a> There is but one God: the impossibility of its being otherwise
+<br><a href="../fathers/0103202.htm"><strong>Chapter 2</strong></a> The world was not formed by angels, or by any other being, contrary to the will of the Most High God, but was made by the Father through the Word
+<br><a href="../fathers/0103203.htm"><strong>Chapter 3</strong></a> The Bythus and Pleroma of the Valentinians, as well as the God of Marcion, shown to be absurd; the world was actually created by the same Being Who had conceived the idea of it, and was not the fruit of defect or ignorance
+<br><a href="../fathers/0103204.htm"><strong>Chapter 4</strong></a> The absurdity of the supposed vacuum and defect of the heretics is demonstrated
+<br><a href="../fathers/0103205.htm"><strong>Chapter 5</strong></a> This world was not formed by any other beings within the territory which is contained by the Father
+<br><a href="../fathers/0103206.htm"><strong>Chapter 6</strong></a> The angels and the Creator of the world could not have been ignorant of the Supreme God
+<br><a href="../fathers/0103207.htm"><strong>Chapter 7</strong></a> Created things are not the images of those aeons who are within the Pleroma
+<br><a href="../fathers/0103208.htm"><strong>Chapter 8</strong></a> Created things are not a shadow of the Pleroma
+<br><a href="../fathers/0103209.htm"><strong>Chapter 9</strong></a> There is but one Creator of the world, God the Father: this the constant belief of the Church
+<br><a href="../fathers/0103210.htm"><strong>Chapter 10</strong></a> Perverse interpretations of Scripture by the heretics: God created all things out of nothing, and not from pre-existent matter
+<br><a href="../fathers/0103211.htm"><strong>Chapter 11</strong></a> The heretics, from their disbelief of the truth, have fallen into an abyss of error: reasons for investigating their systems
+<br><a href="../fathers/0103212.htm"><strong>Chapter 12</strong></a> The Triacontad of the heretics errs both by defect and excess: Sophia could never have produced anything apart from her consort; Logos and Sige could not have been contemporaries.
+<br><a href="../fathers/0103213.htm"><strong>Chapter 13</strong></a> The first order of production maintained by the heretics is altogether indefensible
+<br><a href="../fathers/0103214.htm"><strong>Chapter 14</strong></a> Valentinus and his followers derived the principles of their system from the heathen; the names only are changed
+<br><a href="../fathers/0103215.htm"><strong>Chapter 15</strong></a> No account can be given of these productions
+<br><a href="../fathers/0103216.htm"><strong>Chapter 16</strong></a> The Creator of the world either produced of Himself the images of things to be made, or the Pleroma was formed after the image of some previous system; and so on ad infinitum
+<br><a href="../fathers/0103217.htm"><strong>Chapter 17</strong></a> Inquiry into the production of the &AElig;ons: whatever its supposed nature, it is in every respect inconsistent; and on the hypothesis of the heretics, even Nous and the Father Himself would be stained with ignorance
+<br><a href="../fathers/0103218.htm"><strong>Chapter 18</strong></a> Sophia was never really in ignorance or passion; her enthymesis could not have been separated from herself, or exhibited special tendencies of its own
+<br><a href="../fathers/0103219.htm"><strong>Chapter 19</strong></a> Absurdities of the heretics as to their own origin: their opinions respecting the Demiurge shown to be equally untenable and ridiculous
+<br><a href="../fathers/0103220.htm"><strong>Chapter 20</strong></a> Futility of the arguments adduced to demonstrate the sufferings of the twelfth aeon, from the parables, the treachery of Judas, and the Passion of our Saviour
+<br><a href="../fathers/0103221.htm"><strong>Chapter 21</strong></a> The Twelve Apostles were not a type of the &AElig;ons
+<br><a href="../fathers/0103222.htm"><strong>Chapter 22</strong></a> The thirty aeons are not typified by the fact that Christ was baptized in his thirtieth year: he did not suffer in the twelfth month after his baptism, but was more than fifty years old when he died
+<br><a href="../fathers/0103223.htm"><strong>Chapter 23</strong></a> The woman who suffered from an issue of blood was no type of the suffering aeon
+<br><a href="../fathers/0103224.htm"><strong>Chapter 24</strong></a> Folly of the arguments derived by the heretics from numbers, letters, and syllables
+<br><a href="../fathers/0103225.htm"><strong>Chapter 25</strong></a> God is not to be sought after by means of letters, syllables, and numbers; necessity of humility in such investigations
+<br><a href="../fathers/0103226.htm"><strong>Chapter 26</strong></a> "Knowledge puffs up, but love edifies"
+<br><a href="../fathers/0103227.htm"><strong>Chapter 27</strong></a> Proper mode of interpreting parables and obscure passages of Scripture
+<br><a href="../fathers/0103228.htm"><strong>Chapter 28</strong></a> Perfect knowledge cannot be attained in the present life: many questions must be submissively left in the hands of God
+<br><a href="../fathers/0103229.htm"><strong>Chapter 29</strong></a> Refutation of the views of the heretics as to the future destiny of the soul and body
+<br><a href="../fathers/0103230.htm"><strong>Chapter 30</strong></a> Absurdity of their styling themselves spiritual, while the Demiurge is declared to be animal
+<br><a href="../fathers/0103231.htm"><strong>Chapter 31</strong></a> Recapitulation and application of the foregoing arguments
+<br><a href="../fathers/0103232.htm"><strong>Chapter 32</strong></a> Further exposure of the wicked and blasphemous doctrines of the heretics
+<br><a href="../fathers/0103233.htm"><strong>Chapter 33</strong></a> Absurdity of the doctrine of the transmigration of souls
+<br><a href="../fathers/0103234.htm"><strong>Chapter 34</strong></a> Souls can be recognised in the separate state, and are immortal although they once had a beginning
+<br><a href="../fathers/0103235.htm"><strong>Chapter 35</strong></a> Refutation of Basilides, and of the opinion that the prophets uttered their predictions under the inspiration of different gods</p>
+
+<h2>Book III</h2>
+
+<p><a href="../fathers/0103300.htm"><strong>Preface</strong></a>
+<br><a href="../fathers/0103301.htm"><strong>Chapter 1</strong></a> The apostles did not commence to preach the Gospel, or to place anything on record, until they were endowed with the gifts and power of the Holy Spirit. They preached one God alone, maker of heaven and earth.
+<br><a href="../fathers/0103302.htm"><strong>Chapter 2</strong></a> The heretics follow neither Scripture nor Tradition
+<br><a href="../fathers/0103303.htm"><strong>Chapter 3</strong></a> A refutation of the heretics, from the fact that, in the various churches, a perpetual succession of bishops was kept up
+<br><a href="../fathers/0103304.htm"><strong>Chapter 4</strong></a> The truth is to be found nowhere else but in the Catholic Church, the sole depository of apostolic doctrine. Heresies are of recent formation, and cannot trace their origin up to the apostles.
+<br><a href="../fathers/0103305.htm"><strong>Chapter 5</strong></a> Christ and his apostles, without any fraud, deception, or hypocrisy, preached that one God, the Father, was the Founder of all things. They did not accommodate their doctrine to the prepossessions of their hearers.
+<br><a href="../fathers/0103306.htm"><strong>Chapter 6</strong></a> The Holy Ghost, throughout the Old Testament Scriptures, made mention of no other God or Lord, save him who is the true God
+<br><a href="../fathers/0103307.htm"><strong>Chapter 7</strong></a> Reply to an objection founded on the words of St. Paul (2 Cor. 4:5). St. Paul occasionally uses words not in their grammatical sequence.
+<br><a href="../fathers/0103308.htm"><strong>Chapter 8</strong></a> Answer to an objection, arising from the words of Christ (Matthew 6:24). God alone is to be really called God and Lord, for He is without beginning and end
+<br><a href="../fathers/0103309.htm"><strong>Chapter 9</strong></a> One and the same God, the Creator of Heaven and Earth, is He Whom the prophets foretold, and who was declared by the Gospel. Proof of this, at the outset, from St. Matthew's Gospel
+<br><a href="../fathers/0103310.htm"><strong>Chapter 10</strong></a> Proofs of the foregoing, drawn from the Gospels of Mark and Luke
+<br><a href="../fathers/0103311.htm"><strong>Chapter 11</strong></a> Proofs in continuation, extracted from St. John's Gospel. The Gospels are four in number, neither more nor less. Mystic reasons for this
+<br><a href="../fathers/0103312.htm"><strong>Chapter 12</strong></a> Doctrine of the rest of the Apostles
+<br><a href="../fathers/0103313.htm"><strong>Chapter 13</strong></a> Refutation of the opinion, that Paul was the only Apostle who had knowledge of the truth
+<br><a href="../fathers/0103314.htm"><strong>Chapter 14</strong></a> If Paul had known any mysteries unrevealed to the other apostles, Luke, his constant companion and fellow traveller, could not have been ignorant of them; neither could the truth have possibly lain hid from him, through whom alone we learn many and most important particulars of the Gospel history
+<br><a href="../fathers/0103315.htm"><strong>Chapter 15</strong></a> Refutation of the Ebionites, who disparaged the authority of St. Paul, from the writings of St. Luke, which must be received as a whole. exposure of the hypocrisy, deceit, and pride of the Gnostics. The apostles and their disciples knew and preached one God, the Creator of the world.
+<br><a href="../fathers/0103316.htm"><strong>Chapter 16</strong></a> Proofs from the apostolic writings, that Jesus Christ was one and the same, the only begotten Son of God, perfect God and perfect man
+<br><a href="../fathers/0103317.htm"><strong>Chapter 17</strong></a> The apostles teach that it was neither Christ nor the Saviour, but the Holy Spirit, Who descended upon Jesus. The reason for this descent.
+<br><a href="../fathers/0103318.htm"><strong>Chapter 18</strong></a> Continuation of the foregoing argument. Proofs from the writings of St. Paul, and from the words of our Lord, that Christ and Jesus cannot be considered as distinct beings; neither can it be alleged that the Son of God became man merely in appearance, but that he did so truly and actually.
+<br><a href="../fathers/0103319.htm"><strong>Chapter 19</strong></a> Jesus Christ was not a mere man, begotten from Joseph in the ordinary course of nature, but was true God, begotten of the Father Most High, and true man, born of the Virgin
+<br><a href="../fathers/0103320.htm"><strong>Chapter 20</strong></a> God showed Himself, by the fall of man, as patient, benign, merciful, mighty to save. Man is therefore most ungrateful, if, unmindful of his own lot, and of the benefits held out to him, he does not acknowledge divine grace.
+<br><a href="../fathers/0103321.htm"><strong>Chapter 21</strong></a> A vindication of the prophecy in Isaiah (7:14) against the misinterpretations of Theodotion, Aquila, the Ebionites, and the Jews. Authority of the Septuagint version. Arguments in proof that Christ was born of a Virgin.
+<br><a href="../fathers/0103322.htm"><strong>Chapter 22</strong></a> Christ assumed actual flesh, conceived and born of the Virgin
+<br><a href="../fathers/0103323.htm"><strong>Chapter 23</strong></a> Arguments in opposition to Tatian, showing that it was consonant to Divine Justice and Mercy that the first Adam should first partake in that salvation offered to all by Christ
+<br><a href="../fathers/0103324.htm"><strong>Chapter 24</strong></a> Recapitulation of the various arguments adduced against Gnostic impiety under all its aspects. The heretics, tossed about by every blast of doctrine, are opposed by the uniform teaching of the Church, which remains so always, and is consistent with itself.
+<br><a href="../fathers/0103325.htm"><strong>Chapter 25</strong></a> This world is ruled providence of one God, Who is both endowed with infinite justice to punish the wicked, and with infinite goodness to bless the pious, and impart to them salvation</p>
+
+<div class="CMtag_300x250" style="display: flex; height: 300px; align-items: center; justify-content: center; "></div>
+
+<h2>Book IV</h2>
+
+<p><a href="../fathers/0103400.htm"><strong>Preface</strong></a>
+<br><a href="../fathers/0103401.htm"><strong>Chapter 1</strong></a> The Lord acknowledged but one God and Father.
+<br><a href="../fathers/0103402.htm"><strong>Chapter 2</strong></a> Proofs from the plain testimony of Moses, and of the other prophets, whose words are the words of Christ, that there is but one God, the Founder of the world, Whom our Lord preached, and whom he called His Father.
+<br><a href="../fathers/0103403.htm"><strong>Chapter 3</strong></a> Answer to the cavils of the Gnostics. We are not to suppose that the true God can be changed, or come to an end because the heavens, which are his throne and the earth, his footstool, shall pass away.
+<br><a href="../fathers/0103404.htm"><strong>Chapter 4</strong></a> Answer to another objection, showing that the destruction of Jerusalem, which was the city of the great king, diminished nothing from the supreme majesty and power of God, for that this destruction was put in execution by the most wise counsel of the same God.
+<br><a href="../fathers/0103405.htm"><strong>Chapter 5</strong></a> The author returns to his former argument, and shows that there was but one God announced by the law and prophets, Whom Christ confesses as His Father, and Who, through His Word, one living God with Him, made Himself known to men in both covenants.
+<br><a href="../fathers/0103406.htm"><strong>Chapter 6</strong></a> Explanation of the words of Christ, "No man knows the Father, but the Son," etc.; which words the heretics misinterpret. proof that, by the Father revealing the Son, and by the Son being revealed, the Father was never unknown.
+<br><a href="../fathers/0103407.htm"><strong>Chapter 7</strong></a> Recapitulation of the foregoing argument, showing that Abraham, through the revelation of the Word, knew the Father, and the coming of the Son of God. For this cause, he rejoiced to see the day of Christ, when the promises made to him should be fulfilled. The fruit of this rejoicing has flowed to posterity, that is, to those who are partakers in the faith of Abraham, but not to the Jews who reject the Word of God.
+<br><a href="../fathers/0103408.htm"><strong>Chapter 8</strong></a> Vain attempts of Marcion and his followers, who exclude Abraham from the salvation bestowed by Christ, who liberated not only Abraham, but the seed of Abraham, by fulfilling and not destroying the Law when he healed on the sabbath day.
+<br><a href="../fathers/0103409.htm"><strong>Chapter 9</strong></a> There is but one Author, and one end to both covenants.
+<br><a href="../fathers/0103410.htm"><strong>Chapter 10</strong></a> The Old Testament Scriptures, and those written by Moses in particular, do everywhere make mention of the Son of God, and foretell his Advent and Passion. From this fact it follows that they were inspired by one and the same God.
+<br><a href="../fathers/0103411.htm"><strong>Chapter 11</strong></a> The old prophets and righteous men knew beforehand of the Advent of Christ, and earnestly desired to see and hear him, he revealing himself in the Scriptures by the Holy Ghost, and without any change in himself, enriching men day by day with benefits, but conferring them in greater abundance on later than on former generations.
+<br><a href="../fathers/0103412.htm"><strong>Chapter 12</strong></a> It clearly appears that there was but one Author of both the Old and the New Law, from the fact that Christ condemned traditions and customs repugnant to the former, while he confirmed its most important precepts, and taught that he was himself the end of the Mosaic Law.
+<br><a href="../fathers/0103413.htm"><strong>Chapter 13</strong></a> Christ did not abrogate the natural precepts of the Law, but rather fulfilled and extended them. He removed the yoke and bondage of the Old Law, so that mankind, being now set free, might serve God with that trustful piety which becomes sons.
+<br><a href="../fathers/0103414.htm"><strong>Chapter 14</strong></a> If God demands obedience from man, if he formed man, called him and placed him under laws, it was merely for man's welfare; not that God stood in need of man, but that he graciously conferred upon man his favours in every possible manner.
+<br><a href="../fathers/0103415.htm"><strong>Chapter 15</strong></a> At first God deemed it sufficient to inscribe the natural law, or the Decalogue, upon the hearts of men; but afterwards he found it necessary to bridle, with the yoke of the Mosaic Law, the desires of the Jews, who were abusing their liberty; and even to add some special commands, because of the hardness of their hearts.
+<br><a href="../fathers/0103416.htm"><strong>Chapter 16</strong></a> Perfect righteousness was conferred neither by circumcision nor by any other legal ceremonies. The Decalogue, however, was not cancelled by Christ, but is always in force: men were never released from its commandments.
+<br><a href="../fathers/0103417.htm"><strong>Chapter 17</strong></a> Proof that God did not appoint the Levitical dispensation for his own sake, or as requiring such service; for he does, in fact, need nothing from men.
+<br><a href="../fathers/0103418.htm"><strong>Chapter 18</strong></a> Concerning sacrifices and oblations, and those who truly offer them.
+<br><a href="../fathers/0103419.htm"><strong>Chapter 19</strong></a> Earthly things may be the type of heavenly, but the latter cannot be the types of others still superior and unknown; nor can we, without absolute madness, maintain that God is known to us only as the type of a still unknown and superior being.
+<br><a href="../fathers/0103420.htm"><strong>Chapter 20</strong></a> That one God formed all things in the world, by means of the Word and the Holy Spirit: and that although he is to us in this life invisible and incomprehensible, nevertheless he is not unknown; inasmuch as his works do declare him, and his Word has shown that in many modes he may be seen and known.
+<br><a href="../fathers/0103421.htm"><strong>Chapter 21</strong></a> Abraham's faith was identical with ours; this faith was prefigured by the words and actions of the old patriarchs.
+<br><a href="../fathers/0103422.htm"><strong>Chapter 22</strong></a> Christ did not come for the sake of the men of one age only, but for all who, living righteously and piously, had believed upon Him; and for those, too, who shall believe.
+<br><a href="../fathers/0103423.htm"><strong>Chapter 23</strong></a> The Patriarchs and Prophets by pointing out the advent of Christ, fortified thereby, as it were, the way of posterity to the faith of Christ; and so the labours of the apostles were lessened inasmuch as they gathered in the fruits of the labours of others.
+<br><a href="../fathers/0103424.htm"><strong>Chapter 24</strong></a> The conversion of the Gentiles was more difficult than that of the Jews; the labours of those apostles, therefore who engaged in the former task, were greater than those who undertook the latter.
+<br><a href="../fathers/0103425.htm"><strong>Chapter 25</strong></a> Both covenants were prefigured in Abraham, and in the labour of Tamar; there was, however, but one and the same God to each covenant.
+<br><a href="../fathers/0103426.htm"><strong>Chapter 26</strong></a> The treasure hid in the Scriptures is Christ; the true exposition of the Scriptures is to be found in the Church alone.
+<br><a href="../fathers/0103427.htm"><strong>Chapter 27</strong></a> The sins of the men of old time, which incurred the displeasure of God, were, by His providence, committed to writing, that we might derive instruction thereby, and not be filled with pride. We must not, therefore, infer that there was another God than He Whom Christ preached; we should rather fear, lest the one and the same God Who inflicted punishment on the ancients, should bring down heavier upon us.
+<br><a href="../fathers/0103428.htm"><strong>Chapter 28</strong></a> Those persons prove themselves senseless who exaggerate the mercy of Christ, but are silent as to the judgment, and look only at the more abundant grace of the New Testament; but, forgetful of the greater degree of perfection which it demands from us, they endeavour to show that there is another god beyond Him who created the world.
+<br><a href="../fathers/0103429.htm"><strong>Chapter 29</strong></a> Refutation of the arguments of the Marcionites, who attempted to show that God was the Author of sin, because he blinded Pharaoh and his servants.
+<br><a href="../fathers/0103430.htm"><strong>Chapter 30</strong></a> Refutation of another argument adduced by the Marcionites, that God directed the Hebrews to spoil the Egyptians.
+<br><a href="../fathers/0103431.htm"><strong>Chapter 31</strong></a> We should not hastily impute as crimes to the men of old time those actions which the Scripture has not condemned, but should rather seek in them types of things to come: an example of this in the incest committed by Lot.
+<br><a href="../fathers/0103432.htm"><strong>Chapter 32</strong></a> That one God was the Author of both testaments, is confirmed by the authority of a presbyter who had been taught by the apostles.
+<br><a href="../fathers/0103433.htm"><strong>Chapter 33</strong></a> Whosoever confesses that one God is the Author of both testaments, and diligently reads the Scriptures in company with the presbyters of the Church, is a true spiritual disciple; and he will rightly understand and interpret all that the prophets have declared respecting Christ and the liberty of the New Testament.
+<br><a href="../fathers/0103434.htm"><strong>Chapter 34</strong></a> Proof against the Marcionites, that the prophets referred in all their predictions to our Christ.
+<br><a href="../fathers/0103435.htm"><strong>Chapter 35</strong></a> A refutation of those who allege that the prophets uttered some predictions under the inspiration of the Highest, others from the demiurge. Disagreements of the Valentinians among themselves with regard to these same predictions.
+<br><a href="../fathers/0103436.htm"><strong>Chapter 36</strong></a> The prophets were sent from one and the same Father from Whom the Son was sent.
+<br><a href="../fathers/0103437.htm"><strong>Chapter 37</strong></a> Men are possessed of free will, and endowed with the faculty of making a choice. It is not true, therefore, that some are by nature good, and others bad.
+<br><a href="../fathers/0103438.htm"><strong>Chapter 38</strong></a> Why man was not made perfect from the beginning.
+<br><a href="../fathers/0103439.htm"><strong>Chapter 39</strong></a> Man is endowed with the faculty of distinguishing good and evil; so that, without compulsion, he has the power, by his own will and choice, to perform God's commandments, by doing which he avoids the evils prepared for the rebellious.
+<br><a href="../fathers/0103440.htm"><strong>Chapter 40</strong></a> One and the same God the Father inflicts punishment on the reprobate, and bestows rewards on the elect.
+<br><a href="../fathers/0103441.htm"><strong>Chapter 41</strong></a> Those persons who do not believe in God, but who are disobedient, are angels and sons of the devil, not indeed by nature, but by imitation. Close of this book, and scope of the succeeding one.</p>
+
+<h2>Book V</h2>
+
+<p><a href="../fathers/0103500.htm"><strong>Preface</strong></a>
+<br><a href="../fathers/0103501.htm"><strong>Chapter 1</strong></a> Christ alone is able to teach Divine things, and to redeem us: He, the same, took flesh of the Virgin Mary, not merely in appearance, but actually, by the operation of the Holy Spirit, in order to renovate us. strictures on the conceits of Valentinus and Ebion.
+<br><a href="../fathers/0103502.htm"><strong>Chapter 2</strong></a> When Christ visited us in his grace, he did not come to what did not belong to him: also, by shedding his true blood for us, and exhibiting to us his true flesh in the Eucharist, he conferred upon our flesh the capacity of salvation.
+<br><a href="../fathers/0103503.htm"><strong>Chapter 3</strong></a> The power and glory of God shine forth in the weakness of human flesh, as he will render our body a participator of the resurrection and of immortality, although He has formed it from the dust of the earth; He will also bestow upon it the enjoyment of immortality, just as He grants it this short life in common with the soul.
+<br><a href="../fathers/0103504.htm"><strong>Chapter 4</strong></a> Those persons are deceived who feign another God the Father besides the Creator of the world; for He must have been feeble and useless, or else malignant and full of envy, if He be either unable or unwilling to extend eternal life to our bodies.
+<br><a href="../fathers/0103505.htm"><strong>Chapter 5</strong></a> The prolonged life of the ancients, the translation of Elijah and of Enoch in their own bodies, as well as the preservation of Jonah, of Shadrach, Meshach, and Abednego, in the midst of extreme peril, are clear demonstrations that God can raise up our bodies to life eternal.
+<br><a href="../fathers/0103506.htm"><strong>Chapter 6</strong></a> God will bestow salvation upon the whole nature of man, consisting of body and soul in close union, since the word took it upon him, and adorned with the gifts of the Holy Spirit, of Whom our bodies are, and are termed, the temples.
+<br><a href="../fathers/0103507.htm"><strong>Chapter 7</strong></a> Inasmuch as Christ did rise in our flesh, it follows that we shall be also raised in the same; since the resurrection promised to us should not be referred to spirits naturally immortal, but to bodies in themselves mortal.
+<br><a href="../fathers/0103508.htm"><strong>Chapter 8</strong></a> The gifts of the Holy Spirit which we receive prepare us for incorruption, render us spiritual, and separate us from carnal men. These two classes are signified by the clean and unclean animals in the legal dispensation.
+<br><a href="../fathers/0103509.htm"><strong>Chapter 9 </strong></a> Showing how that passage of the Apostle which the heretics pervert ("Flesh and blood shall not possess the Kingdom of God"), should be understood
+<br><a href="../fathers/0103510.htm"><strong>Chapter 10</strong></a> By a comparison drawn from the wild olive tree, whose quality but not whose nature is changed by grafting, he proves more important things; he points out also that man without the spirit is not capable of bringing forth fruit, or of inheriting the Kingdom of God.
+<br><a href="../fathers/0103511.htm"><strong>Chapter 11</strong></a> Treats upon the actions of carnal and of spiritual persons; also, that the spiritual cleansing does not refer to the substance of our bodies, but to the manner of our former life.
+<br><a href="../fathers/0103512.htm"><strong>Chapter 12</strong></a> The difference between life and death; the breath of life and the vivifying spirit: how the substance of flesh revives what once was dead.
+<br><a href="../fathers/0103513.htm"><strong>Chapter 13</strong></a> In the dead who were raised by Christ we possess the highest proof of the Resurrection; and our hearts are shown to be capable of life eternal, because they can now receive the Spirit of God.
+<br><a href="../fathers/0103514.htm"><strong>Chapter 14</strong></a> Unless the flesh were to be saved, the Word would not have taken upon him flesh of the same substance as ours: from this it would follow that neither should we have been reconciled by him.
+<br><a href="../fathers/0103515.htm"><strong>Chapter 15</strong></a> Proofs of the Resurrection from Isaiah and Ezekiel; the same God Who created us will also raise us up.
+<br><a href="../fathers/0103516.htm"><strong>Chapter 16</strong></a> Since our bodies return to the earth, it follows that they have their substance from it; also, by the advent of the Word, the image of God in us appeared in a clearer light.
+<br><a href="../fathers/0103517.htm"><strong>Chapter 17</strong></a> There is but one Lord and one God, the Father and Creator of all things, Who has loved us in Christ, given us commandments, and remitted our sins; Whose Son and Word Christ proved Himself to be, when He forgave our sins.
+<br><a href="../fathers/0103518.htm"><strong>Chapter 18</strong></a> God the Father and His Word have formed all created things (which They use) by Their own power and wisdom, not out of defect or ignorance. The Son of God, Who received all power from the Father, would otherwise never have taken flesh upon Him.
+<br><a href="../fathers/0103519.htm"><strong>Chapter 19</strong></a> A comparison is instituted between the disobedient and sinning Eve and the Virgin Mary, her patroness. Various and discordant heresies are mentioned.
+<br><a href="../fathers/0103520.htm"><strong>Chapter 20</strong></a> Those pastors are to be heard to whom the Apostles committed the Churches, possessing one and the same doctrine of salvation; the heretics, on the other hand, are to be avoided. We must think soberly with regard to the Mysteries of the Faith.
+<br><a href="../fathers/0103521.htm"><strong>Chapter 21</strong></a> Christ is the Head of all things already mentioned. It was fitting that He should be sent by the Father, the Creator of all things, to assume human nature, and should be tempted by Satan, that He might fulfil the promises, and carry off a glorious and perfect victory.
+<br><a href="../fathers/0103522.htm"><strong>Chapter 22</strong></a> The true Lord and the one God is declared by the Law, and
+<br><a href="../fathers/0103523.htm"><strong>Chapter 23</strong></a> The Devil is well practised in falsehood, by which Adam having been led astray, sinned on the sixth day of the creation, in which day also HE has been renewed by Christ.
+<br><a href="../fathers/0103524.htm"><strong>Chapter 24</strong></a> Of the constant falsehood of the Devil, and of the powers and governments of the world, which we ought to obey, inasmuch as they are appointed of God, not of the Devil.
+<br><a href="../fathers/0103525.htm"><strong>Chapter 25</strong></a> The fraud, pride, and tyrannical kingdom of Antichrist, as
+<br><a href="../fathers/0103526.htm"><strong>Chapter 26</strong></a> John and Daniel have predicted the dissolution and desolation of the Roman Empire, which shall precede the end of the world and the eternal Kingdom of Christ. The Gnostics are refuted, those tools of Satan, who invent another Father different from the Creator.
+<br><a href="../fathers/0103527.htm"><strong>Chapter 27</strong></a> The future judgment by Christ. Communion with and separation
+<br><a href="../fathers/0103528.htm"><strong>Chapter 28</strong></a> The distinction to be made between the righteous and the wicked. The future apostasy in the time of Antichrist, and the end of the world.
+<br><a href="../fathers/0103529.htm"><strong>Chapter 29</strong></a> All things have been created for the service of man. The deceits, wickedness, and apostate power of Antichrist. This was prefigured at the deluge, as afterwards by the persecution of Shadrach, Meshach, and Abednego.
+<br><a href="../fathers/0103530.htm"><strong>Chapter 30</strong></a> Although certain as to the number of the name of Antichrist, yet we should come to no rash conclusions as to the name itself, because this number is capable of being fitted to many names. Reasons for this point being reserved by the Holy Spirit. Antichrist's reign and death.
+<br><a href="../fathers/0103531.htm"><strong>Chapter 31</strong></a> The preservation of our bodies is confirmed by the Resurrection and Ascension of Christ: the souls of the saints during the intermediate period are in a state of expectation of that time when they shall receive their perfect and consummated glory.
+<br><a href="../fathers/0103532.htm"><strong>Chapter 32</strong></a> In that flesh in which the saints have suffered so many afflictions, they shall receive the fruits of their labours; especially since all creation waits for this, and God promises it to Abraham and his seed.
+<br><a href="../fathers/0103533.htm"><strong>Chapter 33</strong></a> Further proofs of the same proposition, drawn from the promises made by Christ, when He declared that He would drink of the fruit of the vine with his disciples in his Father's kingdom, while at the same time He promised to reward them an hundred-fold, and to make them partake of banquets. The blessing pronounced by Jacob had pointed out this already, as Papias and the elders have interpreted it.
+<br><a href="../fathers/0103534.htm"><strong>Chapter 34</strong></a> He fortifies his opinions with regard to the temporal and earthly kingdom of the saints after their resurrection, by the various testimonies of Isaiah, Ezekiel, Jeremiah, and Daniel; also by the Parable of the Servants Watching, to whom the Lord promised that He would minister.
+<br><a href="../fathers/0103535.htm"><strong>Chapter 35</strong></a> He contends that these testimonies already alleged cannot be understood allegorically of celestial blessings, but that they shall have their fulfilment after the coming of Antichrist, and the Resurrection, in the terrestrial Jerusalem. To the former prophecies he subjoins others drawn from Isaiah, Jeremiah, and the Apocalypse of John.
+<br><a href="../fathers/0103536.htm"><strong>Chapter 36</strong></a> Men shall be actually raised: the world shall not be annihilated; but there shall be various mansions for the saints, according to the rank allotted to each individual. All things shall be subject to God the Father, and so shall he be all in all.</p>
+
+<div class='catholicadnet-728x90' id='fathers-728x90-bottom' style='display: flex; height: 100px; align-items: center; justify-content: center; '></div>
+
+<div class="pub"> <h2>About this page</h2> <div class="CMtag_300x250" style="display: flex; height: 300px; align-items: center; justify-content: center; "></div>
+
+<p id="src"><strong>Source.</strong> <span id="srctrans">Translated by Alexander Roberts and William Rambaut.</span> From <span id="srcwork">Ante-Nicene Fathers</span>, <span id="srcvolume">Vol. 1.</span> <span id="srced">Edited by Alexander Roberts, James Donaldson, and A. Cleveland Coxe.</span> (<span id="srcpublisher">Buffalo, NY: Christian Literature Publishing Co.,</span> <span id="srcyear">1885.</span>) <span id="kk">Revised and edited for New Advent by Kevin Knight.</span> <span id="srcurl">&lt;http://www.newadvent.org/fathers/0103.htm&gt;.</span></p> <p id="contactus"><strong>Contact information.</strong> The editor of New Advent is Kevin Knight. My email address is feedback732 <em>at</em> newadvent.org. (To help fight spam, this address might change occasionally.) Regrettably, I can't reply to every letter, but I greatly appreciate your feedback &mdash; especially notifications about typographical errors and inappropriate ads.</p> </div>
+
+</div>
+
+<div id="ogdenville"><table summary="Bottom bar" width="100%" cellpadding=0 cellspacing=0><tr><td class="bar_white_on_color"><center><strong>Copyright &#169; 2023 by <a href="../utility/contactus.htm">New Advent LLC</a>. Dedicated to the Immaculate Heart of Mary.</strong></center></td></tr></table><p align="center"><a href="../utility/contactus.htm">CONTACT US</a>  | <a href="https://cleanmedia.net/p/?psid=491-308-20180429T2217479770">ADVERTISE WITH NEW ADVENT</a></p></div><!-- Sticky Footer --> <ins class="CANBMDDisplayAD" data-bmd-ad-unit="30849120210203T1734389107AB67D35C03D4A318731A4F337F60B3E" style="display:block"></ins> <script src="https://secureaddisplay.com/au/bmd/"></script> <!-- /Sticky Footer --> <!-- Hide Dynamic Ads --><ins class="CMAdExcludeArticles"></ins><!-- /Hide Dynamic Ads-->
+
+</body>
+</html>

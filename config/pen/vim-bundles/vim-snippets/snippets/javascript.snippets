@@ -1,0 +1,36 @@
+
+snippet join
+	var exps = [
+	  "\<.*\>",
+	  "_.*_",
+	]
+	var re = new RegExp(exps.join("|"), "i")
+snippet cl
+	console.log(${0})
+snippet ce
+	console.error(${0})
+snippet getopt
+	#!/usr/bin/nodejs
+	
+	process.argv.forEach(function (val, index, array) {
+	  console.log(index + ': ' + val);
+	});
+snippet cat
+	const fs = require("fs");
+	const data = fs.readFileSync("/dev/stdin", "utf-8");
+snippet cli
+	#!/usr/bin/nodejs
+	// npm install cssbeautify
+	
+	var cssb = require("cssbeautify")
+	
+	const fs = require("fs");
+	const data = fs.readFileSync("/dev/stdin", "utf-8");
+	
+	var beautified = cssb(data, {
+	    indent: '  ',
+	    openbrace: 'separate-line',
+	    autosemicolon: true
+	});
+	
+	process.stdout.write(beautified);

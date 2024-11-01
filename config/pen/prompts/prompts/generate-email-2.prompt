@@ -1,0 +1,27 @@
+title: Generate email
+tags: web writing
+prompt-version: 1
+prompt: |+
+    The following email explains two things:
+    1) <1>
+    2) <2>
+
+    From:
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 100
+top-p: 1
+best-of: 3
+stop-sequences:
+- "<delim>"
+vars:
+- point1
+- point2
+examples:
+- "The writer, Andy, is going to miss work."
+- "The receiver, Betty, is Andy's boss and can email if anything needs to be done."
+conversation: true
+conversation-pretext-generator: human-conversation
+postprocessor: pen-pretty-paragraph
+external-related:
+- "https://github.com/maraoz/gpt-scrolls"

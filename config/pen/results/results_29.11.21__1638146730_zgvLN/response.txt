@@ -1,0 +1,16 @@
+Generate a baby name from the API"
+  (interactive "sex: ")
+  (let* ((url-request-method "POST")
+         (url-request-extra-headers
+          '(("Content-Type" . "application/x-www-form-urlencoded")))
+         (url-request-data
+          (concat "sex=" sex))
+         (result (url-retrieve-synchronously
+                  "http://www.behindthename.com/api/random.php"))
+         (name (with-current-buffer result
+                 (goto-char (point-min))
+                 (search-forward "name")
+                 (search-forward-regexp "^[^;]*")
+                 (buffer-substring-no-properties (point) (point-at-eol)))))
+    (message name)
+    (kill-buffer result)))

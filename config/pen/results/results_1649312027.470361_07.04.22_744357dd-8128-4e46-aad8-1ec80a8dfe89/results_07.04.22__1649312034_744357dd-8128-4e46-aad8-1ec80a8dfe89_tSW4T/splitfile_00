@@ -1,0 +1,7 @@
+
+xmap <C-h> :call GetLast20LinesBeforeCursor()<CR>
+
+function! FilterText(text, chars)
+"Enter text to filter, followed by any number of characters.
+
+Return

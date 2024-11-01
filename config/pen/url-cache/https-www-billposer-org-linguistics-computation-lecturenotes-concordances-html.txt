@@ -1,0 +1,312 @@
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+content-type: text/html
+last-modified: Tue, 19 Jul 2016 12:40:58 GMT
+accept-ranges: bytes
+vary: Accept-Encoding
+content-length: 4705
+date: Mon, 03 Jun 2024 01:33:26 GMT
+server: LiteSpeed
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<HTML>
+<!--Time-stamp: <2005-12-31 15:57:41 poser> -->
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+   <META NAME="Author" CONTENT="Bill Poser">
+
+   <TITLE>Indices and Concordances</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFAA88" VLINK="#0000EE" LINK="#AA0066" ALINK="#FF0000">
+
+<CENTER><H1>Indices and Concordances</H1></CENTER>
+
+<H1>Introduction</H1>
+<P>
+Indices and concordances provide a means of finding words, or occasionally other units,
+in a text. In the case of traditional printed materials, An <em>index</em> provides the
+location information indirectly, by means of page numbers, line numbers, section
+numbers, verse numbers and so forth. The word <em>concordance</em> is sometimes
+used with the same meaning as <em>index</em>, but it is also used to mean
+a format that provides the information more directly, for example, printing the lines of
+text in the which a word occurs.
+A printed index is thus more time-consuming to use than a concordance, but has the
+virtue of requiring much less space.
+In electronic form, an index becomes less of a burden because the pointer can be
+a hyperlink to an appropriate location in the full text, which one can follow
+virtually instantaneously. 
+</P>
+<P>
+An electronic concordance is superior to a printed concordance in two major
+ways. First, it is effectively unlimited by considerations of size.
+It may include virtually any amount of text, and it may be indexed in numerous ways.
+Second, an electronic concordance may readily be changed, whereas a printed
+concordance is fixed. There are now few if any reasons to produce a printed concordance
+other than circumstances in which it is to be used for an extended
+period of time in a location in which electrical power is not available.
+</P>
+
+<P>
+In recent years, printed concordances have been replaced by electronic concordances,
+some intended for local use, some with web interfaces. The
+<a href=" http://www.dundee.ac.uk/english/wics/wics.htm">University of Dundee Web Concordancess</a>
+are typical examples of web-searchable concordances of literary texts.
+</P>
+
+<br>
+<H1>Creating Your Own Concordances</H1>
+<P>
+If you work on well-known literary texts, there is a reasonable chance
+that someone has already created a concordance for the text that you are interested in.
+Otherwise, you will need to create your own concordance. You can do this using
+commercial software or by rolling your own.
+</P>
+
+<H2>Commercial Software</H2>
+<P>
+There are several commercial programs for creating and viewing concordances.
+These include the following:
+</P>
+
+<UL>
+<LI><a href="http://www.sil.org/computing/conc/">Conc [Macintosh]</a></LI>
+<LI><a href="http://www.rjcw.freeserve.co.uk/">Concordance [MS Windows]<a></LI>
+<LI><a href="http://www.athel.com/mono.html">Monoconc [MS Windows]</a></LI>
+</UL>
+
+<P>
+For additional information, see
+<a href="http://www.vordingbg-gym.dk/km/Haandbog/konkord.htm">Hans Klarkov Mortensen's concordance page [in Danish]</a>.
+
+<H2>Rolling Your Own</H2>
+<P>
+It is easy to create indices and concordances using Unix tools.
+Here is a shell script that creates an index to a text in which each word
+is followed by a list of the line numbers on which it occurs.
+</P>
+
+<PRE>
+cat $1 |
+tr -dc '[A-Za-z][:blank:]\012' |
+gawk '
+  {for (i = 1; i <= NF; i++) words[$i] = words[$i]  sprintf(", %d",NR);}
+  END{for (i in words){
+	lines = words[i];
+	sub(/^,/,"",lines);
+	printf("%s\t%s\n",i,lines);
+  }
+}' | sort -f -k 1 > $1.index
+</PRE>
+
+<P>
+This script makes use of the utilities <a href="UnixTools.html#tr">tr</a> and
+<a href="UnixTools.html#sort">sort</a> along with a short program in
+<a href="UnixTools.html#awk">awk</a>. Typical output looks like this:
+</P>
+
+<PRE>
+ally	 2313
+almost	 440, 1051, 1117, 2247
+alone	 710, 927, 1084, 1394, 1395, 1850, 1950, 2221, 2390, 2594
+along	 504, 1389
+</PRE>
+
+<P>
+Click <a href="../Programs/IndexText">here</a> to download a version of this script with
+detailed annotation.
+</P>
+
+<P>
+A type of concordance with a long history on UNIX systems due to its use in indexing
+computer manuals is a <em>keyword in context</em> or <em>KWIC</em> index. 
+A KWIC index looks like this:
+</P>
+<PRE>
+                Principalities      are either hereditary, in whic
+     long established; or they      are new.
+itary, in which the family has      been
+            Principalities are      either hereditary, in which th
+                          long      established; or they are new.
+ither hereditary, in which the      family has been
+ereditary, in which the family      has been
+     Principalities are either      hereditary, in which the famil
+alities are either hereditary,      in which the family has been
+                                    long established; or they are 
+ long established; or they are      new.
+             long established;      or they are new.
+                                    Principalities are either here
+re either hereditary, in which      the family has been
+          long established; or      they are new.
+ties are either hereditary, in      which the family has been
+</PRE>
+<P>
+Each word in the input generates one line. It is preceded and followed
+by a chosen amount of context, in this case, 30 characters.
+The word indexed immediately follows the tab that splits the
+line into two parts. Here is the text from which this was generated:
+</P>
+<PRE>
+Principalities are either hereditary, in which the family has been
+long established; or they are new.
+</PRE>
+
+<P>
+Here is a shell script that generates a KWIC index, using two short
+<a href="UnixTools.html#awk">awk</a> programs along with
+<a href="UnixTools.html#sort">sort</a>.
+</P>
+
+<PRE>
+awk '{print $0
+for (i = length($0); i > 0; i--)
+  if (substr($0,i,1) == " ") print substr($0,i+1) "\t" substr($0,1,i-1)
+}' $1 | sort -f | awk '
+BEGIN {FS = "\t"; WID = 30}
+{printf("%" WID "s      %s\n",
+	substr($2,length($2)-WID+1),
+	substr($1,1,WID))
+}'
+</PRE>
+<P>
+The first AWK program generates as many copies of each line as there are words in it,
+splitting each line at a different word boundary, and putting the second half of the
+line before the first, separated by a tab. This has the effect of
+rotating the words so that the first copy is the same as the original, the second
+copy begins with the second word, and so forth. Here is the output of the
+first stage:
+</P>
+<PRE> 
+Principalities are either hereditary, in which the family has been
+been	Principalities are either hereditary, in which the family has
+has been	Principalities are either hereditary, in which the family
+family has been	Principalities are either hereditary, in which the
+the family has been	Principalities are either hereditary, in which
+which the family has been	Principalities are either hereditary, in
+in which the family has been	Principalities are either hereditary,
+hereditary, in which the family has been	Principalities are either
+either hereditary, in which the family has been	Principalities are
+are either hereditary, in which the family has been	Principalities
+long established; or they are new.
+new.	long established; or they are
+are new.	long established; or they
+they are new.	long established; or
+or they are new.	long established;
+established; or they are new.	long
+</PRE>
+<P>
+The call to <a href="UnixTools.html#sort">sort</a> sorts the lines so that lines
+containing the same word are grouped together:
+</P>
+<PRE>
+are either hereditary, in which the family has been	Principalities
+are new.	long established; or they
+been	Principalities are either hereditary, in which the family has
+either hereditary, in which the family has been	Principalities are
+established; or they are new.	long
+family has been	Principalities are either hereditary, in which the
+has been	Principalities are either hereditary, in which the family
+hereditary, in which the family has been	Principalities are either
+in which the family has been	Principalities are either hereditary,
+long established; or they are new.
+new.	long established; or they are
+or they are new.	long established;
+Principalities are either hereditary, in which the family has been
+the family has been	Principalities are either hereditary, in which
+they are new.	long established; or
+which the family has been	Principalities are either hereditary, in
+</PRE>
+<P>
+The second AWK program splits each line at the tab and puts the two pieces
+back in order. It also truncates the two pieces so that they each contain at most
+30 characters.
+</P>
+
+<br>
+<H1>Why Bother With a Concordance?</H1>
+<P>
+For many research purposes there is little reason to produce a pre-prepared
+electronic concordance. A good text editor can search the text interactively.
+<a href="http://www.gnu.org/software/emacs/emacs.html">emacs</a> is a particularly
+good choice for this purpose. <a href="http://www.gnu.org/software/emacs/emacs.html">emacs</a>
+provides incremental search, both forwards and backward, for fixed strings or for
+full regular expressions.
+Here is a screenshot of <em>emacs</em> performing an interactive regular expression search
+of a <a href="http://www.ydli.org/linginfo.htm">Carrier</a> text. The pink highlighted area shows the current match to the regular expression.
+The white highlighted area two lines above it shows the previous match.
+<br>
+<div align="center">
+<img src="Images/emacsres.jpg" width="50%" border="2">
+</div>
+<br clear="all">
+</P>
+<P>
+<a href="http://www.gnu.org/software/emacs/emacs.html">emacs</a> allows the screen
+to be divided, both horizontally and vertically, into multiple windows, which
+may show portions of the same file or different files. This allows <em>emacs</em>
+to be used to display parallel text in two or more languages. 
+Here is a screenshot of <em>emacs</em> displaying the Italian original of Machiavelli's
+<u>The Prince</u> in the left window and an English translation in the right window.
+(Click on the image to see a larger version.)
+<br>
+<div align="center">
+<a href="emacsptxtl.htm" target = "_new"><img src="Images/emacsptxt.jpg" width="50%" border="2"></a>
+</div>
+<br clear="all">
+</P>
+<P>
+Since
+<a href="http://www.gnu.org/software/emacs/emacs.html">emacs</a> is actually
+an interpreter for LISP, a full-fledged programming language, which has been provided
+with some special facilties for editing text, it is not difficult to define
+new functions for carrying out more specialized searches.
+</P>
+<P>
+There may be some purposes for which specialized concordance software is useful,
+but a very large part of the work previously done with concordances is easily
+done using <a href="http://www.gnu.org/software/emacs/emacs.html">emacs</a>.
+One reason for using specialized concordance software is if your corpus contains
+markup for aligning parallel text. Software that understands this markup may
+make it easier to keep parallel portions of the text in view. 
+Athelstan's <a href="http://www.athel.com/para.html">Paraconc</a>, for example,
+is designed expressly for parallel text. Another option to consider is
+<a href="http://emdros.org/">emdros</a>, a free database for analyzed or
+annotated text. <em>emdros</em> runs on Unix systems, including GNU/Linux, and
+on some versions of Microsoft Windows.
+</P>
+
+<H1>Sources of Electronic Text</H1>
+<P>
+It is often necessary to create one's own corpus, e.g. for a language in which
+there are few publications, but for many languages, especially those with
+a literary tradition in which there has been substantial interest, or in which
+there has been substantial work on computational linguistics, corpora
+of electronic text already exist.
+
+A major source of text in English (including translations from other languages)
+is <a href="http://gutenberg.net/">Project Gutenberg</a>,
+whose goal is make available famous and important texts in digital form.
+The Project Gutenberg collection now includes over 6,000 books.
+Abundant on-line text is available in quite a few languages. See, for example,
+<a href="http://deall.ohio-state.edu/chan.9/c-links1.htm#cl-lit">Marjorie Chan's List
+of Searchable and Archived Classical Chinese Texts</a> (part of her wonderful
+site <a href="http://deall.ohio-state.edu/chan.9/c-links.htm">Marjorie Chan's ChinaLinks</a>)
+and the University of Virginia Library <a href="http://etext.lib.virginia.edu/japanese/jti.texts.html">Japanese Text Initiative</a>.
+</P>
+<P>
+For other such resources see the extensive lists
+at the University of Pennsylvania Library <a href="http://digital.library.upenn.edu/books/">Online Books Page</a>,
+the Summer Institute of Linguistics web site
+<a href="http://www.sil.org/linguistics/etext.html#texts">Linguistic Data Resources on the Internet</a>
+and <a href="http://www.ruf.rice.edu/~barlow/corpus.html">Mike Barlow's Corpus Linguistics Page</a>.
+</P>
+
+<br>
+<br>
+<small>
+Revised 2003/12/02 19:00.
+</small>
+<br>
+
+</BODY>
+</HTML>

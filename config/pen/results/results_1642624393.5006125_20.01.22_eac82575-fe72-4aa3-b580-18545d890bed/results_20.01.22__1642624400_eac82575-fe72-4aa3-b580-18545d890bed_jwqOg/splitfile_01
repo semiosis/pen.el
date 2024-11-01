@@ -1,0 +1,7 @@
+
+  (map #(shell-command-to-string %) args))
+
+(defn fpensieve-cmd
+  ""
+  [cmd]
+  ;; run a command and return the result as a string

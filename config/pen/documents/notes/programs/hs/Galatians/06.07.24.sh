@@ -1,0 +1,5 @@
+cd /root/notes;  "Galatians" "4:25-26" "#" "<==" "zsh"
+cd /root/notes;  "Galatians" "4:28-31" "#" "<==" "zsh"
+cd /root/notes;  "Galatians" "4:27" "#" "<==" "zsh"
+cd /root/notes;  "Galatians" "4:28" "#" "<==" "zsh"
+cd /root/notes;  "Galatians" "4:29" "#" "<==" "zsh"

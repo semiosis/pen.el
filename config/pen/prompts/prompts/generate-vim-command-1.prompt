@@ -1,0 +1,36 @@
+title: Generate vim command
+tags: code
+prompt-version: 4
+prompt: |
+  Vim
+
+  Insert "Q: " at the start of the line
+  :%s/^/Q: /g.
+  <delim>
+  Remove whitespace from the start of each line
+  :%s/^\s*/\1/g
+  <delim>
+  Join each line with the next line
+  :1,$j
+  <delim>
+  Make all occurrences of Steve lowercase
+  :%s/Steve/steve/g
+  <delim>
+  <1>
+  :
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- description
+n-collate: 2
+postprocessor: sed "s/^://"
+split-patterns:
+- "\n"
+examples:
+- Make all occurrences of Steve lowercase
+external-related:
+- "https://prompts-ai-self-clean.surge.sh/"

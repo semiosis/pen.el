@@ -1,0 +1,8 @@
+# name: try
+# group: sot
+# key: t
+# --
+try:
+  ${0:pass}
+except${1: Exception}:
+  pass

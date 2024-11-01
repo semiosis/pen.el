@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nix
+# group: nix
+# key: nix
+# --
+test -z "$NIX_PATH" && . $HOME/sh-source/nix.sh

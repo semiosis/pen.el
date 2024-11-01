@@ -1,0 +1,36 @@
+title: "Dejaragonizer"
+doc: "Clarifies jargon. Select some text and run the dejargonizer"
+tags: prose language social-media
+prompt-version: 2
+prompt: |+
+    The following sentences contain business jargon. Rewrite them using simple words.
+    
+    Jargon: The fund managers hope to increase yields by taking on leverage.
+    Simple: The fund managers hope to get more return on their investments by borrowing money.
+    
+    Jargon: I need to finish due diligence on this company before I can decide.
+    Simple: I need to finish background research on this company before I can decide.
+    
+    Jargon: Can you please get this document over the wall?
+    Simple: Can you please send this document?
+    
+    Jargon: <jargon>
+    Simple:
+engine: "OpenAI Davinci"
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1.0
+best-of: 1
+cache: on
+stop-sequences:
+- "\n"
+vars:
+- "jargon"
+examples:
+- "Their legal team would like us to open our kimono regarding last year's deals."
+n-collate: 1
+n-completions: 10
+filter: yes
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify

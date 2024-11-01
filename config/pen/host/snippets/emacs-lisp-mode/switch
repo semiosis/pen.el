@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: switch
+# key: switch
+# --
+
+(cond ((numberp x) x)
+((stringp x) x)
+((bufferp x)
+(setq temporary-hack x) ; multiple body-forms
+(buffer-name x))        ; in one clause
+((symbolp x) (symbol-value x)))

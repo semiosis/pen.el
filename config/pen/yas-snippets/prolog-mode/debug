@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: debug
+# group: 
+# key: debug
+# --
+:- debug.

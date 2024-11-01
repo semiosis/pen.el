@@ -1,0 +1,15 @@
+"Functor" is a type class that defines a mapping operation over a type.
+The Functor type class is for types that can be mapped over.
+
+The Functor type class is used for many types in Haskell, including:
+    Maybe
+    Either
+    IO
+    (->) r
+    Tuple
+    Ordering
+    and more!
+
+The Functor type class is used to make sense of mapping.
+
+The Functor type class is also used to make sense

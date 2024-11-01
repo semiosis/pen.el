@@ -1,0 +1,9 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "height-of" "tree")))
+--> 8.0
+
+
+
+;; Run function -loop
+(message (eval '(-loop "-u" "most-famous-person-known-for" "swimming")))
+--> 

@@ -1,0 +1,22 @@
+BDD
+Behavior-driven development
+    [agile]
+
+    v +/"Behavior-driven development/ $NOTES/ws/software-engineering/glossary.txt
+
+Tuleap
+    [Application lifecycle management system]
+    - commercial
+
+    The only all-in-one integrated ALM
+    solution capable of orchestrating
+    everything from idea to release delivery.
+    
+    Tuleap enables teams to plan, track, code,
+    and collaborate on software products and
+    applications from a single tool for
+    increased productivity.
+
+    Facilitates agile software development,
+    design projects, V-model, Requirement
+    Management, and IT Services Management.

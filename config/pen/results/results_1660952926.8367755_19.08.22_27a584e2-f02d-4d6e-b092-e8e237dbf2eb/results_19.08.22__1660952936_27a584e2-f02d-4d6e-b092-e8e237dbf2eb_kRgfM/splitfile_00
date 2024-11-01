@@ -1,0 +1,23 @@
+ "Start a REPL"
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: "Start a REPL"
+      command: "cider repl :headless"
+      register: cider_repl
+      async: 10
+      poll: 10
+      become: true
+      become_user: "{{ ansible_user }}"
+      become_method: runas
+      ignore_errors: true
+      delegate_to: localhost
+    - name: "Wait for the REPL to be ready"
+      wait_for:
+        path: "{{ item.stdout_lines[0] }}"
+        delay: 10
+        timeout: 60
+      with_items: "{{ cider_repl.results }}"
+      when: cider_repl.results is defined
+    - name: "Load clojure.core"
+      command: "clojure.core.load_

@@ -1,0 +1,27 @@
+
+
+  -- Map the tuples into a list of lists, one for each field.
+  lists <- map (map (unzip)) tuples
+
+  -- Print the list of lists as a table, with each field on a separate line.
+  print (T.concat . T.pack . map T.pack . transpose) lists
+EOD
+
+# haskell files
+
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+-- It then tabularises and prints the output
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+import Data.List (intercalate)
+import Data.Maybe (fromJust)
+
+  main = do
+
+    -- Read the CSV from stdin and decode it

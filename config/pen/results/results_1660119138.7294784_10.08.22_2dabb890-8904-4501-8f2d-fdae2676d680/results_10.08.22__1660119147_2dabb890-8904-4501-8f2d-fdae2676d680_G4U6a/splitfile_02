@@ -1,0 +1,13 @@
+"""
+
+from sponge.core import book, poem
+
+
+def main():
+    b = book.Book('test/test_book', None, template='test/test_template')
+    b.create_new()
+
+    p = poem.Poem(b)
+    p.content = test_poem
+
+    print p.convert()

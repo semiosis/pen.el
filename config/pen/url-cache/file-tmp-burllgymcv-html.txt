@@ -1,0 +1,172 @@
+Content-type: text/html
+Content-length: 10316
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>*markdown-output*</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="vale-your-style-our-editor-build-status-go-report-card-github-all-releases-docker-pulls">Vale: Your style, our editor <a href="https://travis-ci.org/errata-ai/vale"><img src="https://img.shields.io/travis/errata-ai/vale/master.svg?logo=travis" alt="Build Status" /></a> <a href="https://goreportcard.com/report/github.com/errata-ai/vale"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20%20go%20report-A%2B-75C46B?color=00ACD7" alt="Go Report Card" /></a> <img src="https://img.shields.io/github/downloads/errata-ai/vale/total?logo=GitHub&amp;color=ff69b4" alt="GitHub All Releases" /> <img src="https://img.shields.io/docker/pulls/jdkato/vale?color=orange&amp;logo=docker&amp;logoColor=white" alt="Docker Pulls" /></h1>
+<blockquote>
+<p><strong>:sparkles: Tired of the command line?</strong> Vale now has a <a href="https://errata.ai/vale-server/">cross-platform desktop application</a> that introduces a number of new features.</p>
+</blockquote>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/8785025/96957750-5eab0d00-14b0-11eb-9f5f-52d862518ebf.png">
+</p>
+<p align="center">
+<b>Vale</b> is a command-line tool that brings code-like linting to prose. It’s <b><a href="#mag-at-a-glance-vale-vs-">fast</a></b>, <b><a href="https://docs.errata.ai/vale/install">cross-platform</a></b> (Windows, macOS, and Linux), and <b><a href="https://docs.errata.ai/vale/styles">highly customizable</a></b>.
+</p>
+<p align="center">
+<a href="https://docs.errata.ai/vale/about">Documentation</a> • <a href="https://github.com/errata-ai/styles">Officially-maintained styles</a> • <a href="https://errata.ai/vale-server/">Vale Server (desktop app)</a>
+</p>
+<h2 id="heart-sponsors">:heart: Sponsors</h2>
+<blockquote>
+<p>Hi there! I’m <span class="citation" data-cites="jdkato">[@jdkato]</span>(https://github.com/jdkato), the sole developer of Vale. If you’d like to help me dedicate more time to <em>developing</em>, <em>documenting</em>, and <em>supporting</em> Vale, feel free to donate through the <a href="https://opencollective.com/vale">Open Collective</a>. Any donation—big, small, one-time, or recurring—is greatly appreciated!</p>
+</blockquote>
+<p><a href="https://opencollective.com/vale/organization/0/website"><img src="https://opencollective.com/vale/organization/0/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/1/website"><img src="https://opencollective.com/vale/organization/1/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/2/website"><img src="https://opencollective.com/vale/organization/2/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/3/website"><img src="https://opencollective.com/vale/organization/3/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/4/website"><img src="https://opencollective.com/vale/organization/4/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/5/website"><img src="https://opencollective.com/vale/organization/5/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/6/website"><img src="https://opencollective.com/vale/organization/6/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/7/website"><img src="https://opencollective.com/vale/organization/7/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/8/website"><img src="https://opencollective.com/vale/organization/8/avatar.svg?avatarHeight=100"></a> <a href="https://opencollective.com/vale/organization/9/website"><img src="https://opencollective.com/vale/organization/9/avatar.svg?avatarHeight=100"></a></p>
+<h2 id="boom-key-features">:boom: Key Features</h2>
+<ul>
+<li><p>[x] <strong>Support for markup</strong>: Vale has a rich understanding of many <a href="https://docs.errata.ai/vale/scoping#formats">markup formats</a>, allowing it to avoid syntax-related false positives and intelligently exclude code snippets from prose-related rules.</p></li>
+<li><p>[x] A <strong>highly customizable</strong> <a href="https://docs.errata.ai/vale/styles">extension system</a>: Vale is capable of enforcing <em>your style</em>—be it a standard <a href="https://github.com/errata-ai/styles#available-styles">editorial style guide</a> or a custom in-house set of rules (such as those created by <a href="https://docs.gitlab.com/ee/development/documentation/#vale">GitLab</a>, <a href="https://github.com/Homebrew/brew/tree/master/docs/vale-styles/Homebrew">Homebrew</a>, <a href="https://www.linode.com/blog/linode/docs-as-code-at-linode/">Linode</a>, <a href="https://github.com/cockroachdb/docs/tree/master/ci/vale">CockroachDB</a>, and <a href="https://github.com/spotify/backstage">Spotify</a>).</p></li>
+<li><p>[x] <strong>Easy-to-install</strong>, stand-alone binaries: Unlike other tools, Vale doesn’t require you to install and configure a particular programming language and its related tooling (such as Python/pip or Node.js/npm).</p></li>
+</ul>
+<p>See the <a href="https://docs.errata.ai/vale/about">documentation</a> for more information.</p>
+<h2 id="mag-at-a-glance-vale-vs.-...">:mag: At a Glance: Vale vs. <code>&lt;...&gt;</code></h2>
+<blockquote>
+<p><strong>NOTE</strong>: While all of the options listed below are open-source (CLI-based) linters for prose, their implementations and features vary significantly. And so, the “best” option will depends on your specific needs and preferences.</p>
+</blockquote>
+<h3 id="functionality">Functionality</h3>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 11%" />
+<col style="width: 48%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Extensible</th>
+<th>Checks</th>
+<th>Supports Markup</th>
+<th>Built With</th>
+<th>License</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vale</td>
+<td>Yes (via YAML)</td>
+<td>spelling, style</td>
+<td>Yes (Markdown, AsciiDoc, reStructuredText, HTML, XML)</td>
+<td>Go</td>
+<td>MIT</td>
+</tr>
+<tr class="even">
+<td>textlint</td>
+<td>Yes (via JavaScript)</td>
+<td>spelling, style</td>
+<td>Yes (Markdown, AsciiDoc, reStructuredText, HTML, Re:VIEW)</td>
+<td>JavaScript</td>
+<td>MIT</td>
+</tr>
+<tr class="odd">
+<td>RedPen</td>
+<td>Yes (via Java)</td>
+<td>spelling, style</td>
+<td>Yes (Markdown, AsciiDoc, reStructuredText, Textile, Re:VIEW, and LaTeX)</td>
+<td>Java</td>
+<td>Apache-2.0</td>
+</tr>
+<tr class="even">
+<td>write-good</td>
+<td>Yes (via JavaScript)</td>
+<td>style</td>
+<td>No</td>
+<td>JavaScript</td>
+<td>MIT</td>
+</tr>
+<tr class="odd">
+<td>proselint</td>
+<td>No</td>
+<td>style</td>
+<td>No</td>
+<td>Python</td>
+<td>BSD 3-Clause</td>
+</tr>
+<tr class="even">
+<td>Joblint</td>
+<td>No</td>
+<td>style</td>
+<td>No</td>
+<td>JavaScript</td>
+<td>MIT</td>
+</tr>
+<tr class="odd">
+<td>alex</td>
+<td>No</td>
+<td>style</td>
+<td>Yes (Markdown)</td>
+<td>JavaScript</td>
+<td>MIT</td>
+</tr>
+</tbody>
+</table>
+<p>The exact definition of “Supports Markup” varies by tool but, in general, it means that the format is understood at a higher level than a regular plain-text file (for example, features like excluding code blocks from spell check).</p>
+<p>Extensibility means that there’s a built-in means of creating your own rules without modifying the original source code.</p>
+<h3 id="benchmarks">Benchmarks</h3>
+<table>
+<tr>
+<td width="50%">
+<a href="https://user-images.githubusercontent.com/8785025/97052257-809aa300-1535-11eb-83cd-65a52b29d6de.png"> <img src="https://user-images.githubusercontent.com/8785025/97052257-809aa300-1535-11eb-83cd-65a52b29d6de.png" width="100%"> </a>
+</td>
+<td width="50%">
+<a href="https://user-images.githubusercontent.com/8785025/97051175-91e2b000-1533-11eb-9a57-9d44d6def4c3.png"> <img src="https://user-images.githubusercontent.com/8785025/97051175-91e2b000-1533-11eb-9a57-9d44d6def4c3.png" width="100%"> </a>
+</td>
+</tr>
+<tr>
+<td width="50%">
+This benchmark has all three tools configured to use their implementations of the <code>write-good</code> rule set and Unix-style output.
+</td>
+<td width="50%">
+This benchmark runs Vale’s implementation of <code>proselint</code>’s rule set against the original. Both tools are configured to use JSON output.
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://user-images.githubusercontent.com/8785025/97053402-c5bfd480-1537-11eb-815b-a33ab13a59cf.png"> <img src="https://user-images.githubusercontent.com/8785025/97053402-c5bfd480-1537-11eb-815b-a33ab13a59cf.png" width="100%"> </a>
+</td>
+<td width="50%">
+<a href="https://user-images.githubusercontent.com/8785025/97055850-7b8d2200-153c-11eb-86fa-d882ce6babf8.png"> <img src="https://user-images.githubusercontent.com/8785025/97055850-7b8d2200-153c-11eb-86fa-d882ce6babf8.png" width="100%"> </a>
+</td>
+</tr>
+<tr>
+<td width="50%">
+This benchmark runs Vale’s implementation of Joblint’s rule set against the original. Both tools are configured to use JSON output.
+</td>
+<td width="50%">
+This benchmark has all three tools configured to perform only English spell checking using their default output styles.
+</td>
+</tr>
+</table>
+<p>All benchmarking was performed using the open-source <a href="https://github.com/sharkdp/hyperfine">hyperfine</a> tool on a MacBook Pro (2.9 GHz Intel Core i7):</p>
+<pre class="console"><code>$ hyperfine --warmup 3 &#39;&lt;command&gt;&#39;</code></pre>
+<p>The corpus IDs in the above plots—<code>gitlab</code> and <code>ydkjs</code>—correspond to the following files:</p>
+<ul>
+<li><p>A <a href="https://gitlab.com/gitlab-org/gitlab/-/tree/7d6a4025a0346f1f50d2825c85742e5a27b39a8b/doc">snapshot</a> of GitLab’s open-source documentation (1,500 Markdown files).</p></li>
+<li><p>A <a href="https://raw.githubusercontent.com/getify/You-Dont-Know-JS/1st-ed/es6%20%26%20beyond/ch2.md">chapter</a> from the open-soure book <em>You Don’t Know JS</em>.</p></li>
+</ul>
+
+</body>
+</html>

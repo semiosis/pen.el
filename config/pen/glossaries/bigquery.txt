@@ -1,0 +1,7 @@
+POSITION()
+    [legacy function]
+
+    I try to translate a legacy query into a standard SQL query in
+    bigquery, but I don't find the function position() in standard SQL.
+
+    vim +/"POSITION(alternate_bases) AS alt," "$MYGIT/googlegenomics/bigquery-examples/1000genomes/sql/allelic-frequency-by-ethnicity.sql"

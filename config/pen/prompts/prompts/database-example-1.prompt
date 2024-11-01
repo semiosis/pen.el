@@ -1,0 +1,44 @@
+title: database example
+prompt-version: 2
+tags: database knowledge
+doc: GPT-3 as a NL interface for semantically querying logic in prose
+prompt: |
+  The database begins knowing nothing.
+  The database knows everything that is added to it.
+  The database does not know anything else.
+  When asked a question, if the answer has been added to the database the database says the answer.
+  When asked a question, if the answer has not been added the database says it does not know.
+
+  Q: Does the database know “What is 2+2?”
+  A: The database does not know.
+
+  Q: Does the database know “What is the capital of France?”
+  A: The database does not know.
+
+  ""Tom is 20 years old"" is added to the database.
+  Nothing else about Tom is added to the database.
+
+  Q: Does the database know where Tom lives?
+  A: The database does not know.
+
+  Q: How does the database respond when Tom’s age?
+  A: The database says “Tom is 20 years old.”
+
+  Q: How does the database response when asked “What’s my age?”
+  A: The database says “You are not in the database.”
+
+  ""Shane is a cool guy"" is added to the database.
+  ""Shane is 33 years old"" is added to the database.
+
+  Q: <1>
+  A:
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- query or input
+examples:
+- How old is Shane?

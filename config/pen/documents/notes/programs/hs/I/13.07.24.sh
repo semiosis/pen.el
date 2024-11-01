@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "I" "Peter" "3:19-20" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "2:13" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "2:13-14" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "5:4-5" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "Corinthians" "15:50]]" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "Corinthians" "15:58" "#" "<==" "zsh"

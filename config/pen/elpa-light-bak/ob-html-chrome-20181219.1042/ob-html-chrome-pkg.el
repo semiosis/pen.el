@@ -1,0 +1,2 @@
+;;; Generated package description from ob-html-chrome.el  -*- no-byte-compile: t -*-
+(define-package "ob-html-chrome" "20181219.1042" "HTML code blocks converted to PNG using Chrome" '((emacs "24.4") (f "0.20.0") (s "1.7.0")) :commit "7af6e4a24ed0aaf67751bdf752c7ca0ba02bb8d4" :authors '((nil . "Nik Clayton nik@ngo.org.uk")) :maintainer '(nil . "Nik Clayton nik@ngo.org.uk") :keywords '("languages" "org" "org-babel" "chrome" "html") :url "http://github.com/nikclayton/ob-html-chrome")

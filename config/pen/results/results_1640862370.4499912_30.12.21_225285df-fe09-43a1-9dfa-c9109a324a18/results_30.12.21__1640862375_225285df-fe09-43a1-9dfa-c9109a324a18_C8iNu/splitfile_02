@@ -1,0 +1,5 @@
+
+The key "q" is the command to quit Emacs.
+To exit any Emacs mode, you first hit the key "q" to get out of that mode and into normal mode.
+Then you can type "q" again to quit. 
+

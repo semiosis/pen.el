@@ -1,0 +1,3 @@
+
+I add consistency to results for prompting functions by remembering the previous output of that function and prepending it into the next prompting function prompt.
+

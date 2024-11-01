@@ -1,0 +1,22 @@
+ — a few toy examples to get you started.
+
+=head2 A reader monad example
+
+    >>> r1 = ReaderT.ask; print(r1)
+    (ReaderT { base = () })
+
+    >>> r2 = ReaderT $ do
+    ...     x <- getState
+    ...     putState (x+100)
+
+    >>> print(r2)
+    (ReaderT { base = StateT { base = Identity { base = Just (200) } } })
+
+    >>> res1 = runIdentity $ r1.runIdentity; print(res1)
+    ()
+
+    >>> res2 = runIdentity $ r2.runIdentity; print(res2)
+    (200, ())
+
+    >>> print(runIdentity $ r1.runWriter $ [("foo", 3), ("bar", 4)]); print("")
+    (OverloadedString \"std:base

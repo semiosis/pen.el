@@ -1,0 +1,612 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 31 Mar 2022 12:37:33 GMT
+Content-Type: text/html
+Content-Length: 39505
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-9a51"
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: About Monads</title>
+<p>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="stdclasses.html">back</a> <a href="numbers.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-monads"></a><p>
+<a name="sect9"></a>
+<h2>9<tt>&nbsp;&nbsp;</tt>About Monads</h2>
+
+Many newcomers to Haskell are puzzled by the concept of <I>monads</I>.
+Monads are frequently encountered in Haskell: the IO system is constructed
+using a monad, a special syntax for monads has been provided (<tt>do
+</tt>expressions), and the standard libraries contain an entire module dedicated
+to monads.  In this section we explore monadic programming in more detail.<p>
+This section is perhaps less "gentle" than the others.  Here we
+address not only the language features that involve monads but also
+try to reveal the bigger picture: why monads are such an important
+tool and how they are used.  There is no
+single way of explaining monads that works for everyone; more
+explanations can be found at <tt>haskell.org</tt>.  Another good
+introduction to practical programming using monads is Wadler's 
+<I>Monads for Functional Programming</I> [<a href="haskell-tutorial.html#$wadler:mffp">10</a>].  <a name="tut-monadic-classes"></a><p>
+<a name="sect9.1"></a>
+<h3>9.1<tt>&nbsp;&nbsp;</tt>Monadic Classes</h3>
+
+The Prelude contains a number of classes defining monads are they
+are used in Haskell.  These classes are based on the monad construct
+in category theory; whilst the category theoretic terminology
+provides the names for the monadic classes and operations, it is not
+necessary to delve into abstract mathematics to get an intuitive
+understanding of how to use the monadic classes.<p>
+A monad is constructed on top of a polymorphic type such as <tt>IO</tt>.  The
+monad itself is defined by instance declarations 
+associating the type with the some or all of the
+monadic classes, <tt>Functor</tt>, <tt>Monad</tt>,
+and <tt>MonadPlus</tt>.  None of the monadic classes are derivable.  In addition
+to <tt>IO</tt>, two other types in the Prelude are members of the monadic
+classes: lists (<tt>[]</tt>) and <tt>Maybe</tt>.  <p>
+Mathematically, monads are governed by set of <I>laws</I> that should hold
+for the monadic operations.  This idea of laws is not unique to
+monads: Haskell includes other operations that are 
+governed, at least informally, by laws.  For example, <tt>x&nbsp;/=&nbsp;y</tt> and
+<tt>not&nbsp;(x&nbsp;==&nbsp;y)</tt> ought to be the same for any type of values being
+compared.  However, there is no guarantee of this: both <tt>==</tt> and <tt>/=</tt> are 
+separate methods in the <tt>Eq</tt> class and there is no way to assure that
+<tt>==</tt> and <tt>=/</tt> are related in this manner.
+In the same sense, the monadic laws presented here are not enforced by
+Haskell, but ought be obeyed by any instances of a monadic class.
+The monad laws give insight into the underlying structure of monads:
+by examining these laws, we hope to give a feel for how monads are
+used. <p>
+The <tt>Functor</tt> class, already discussed in section
+<a href="classes.html#tut-type-classes">5</a>,  defines a 
+single operation: <tt>fmap</tt>.  The map function applies an operation to the
+objects inside a container (polymorphic types can be thought of as
+containers for values  of another type), returning a container of the
+same shape. 
+These laws apply to <tt>fmap</tt> in the class <tt>Functor</tt>:
+<p>
+<table >
+<tr><td>
+<tt>fmap&nbsp;id</tt></td><td align=center>=</td><td><tt>id</tt></td></tr><tr><td><tt>fmap&nbsp;(f&nbsp;.&nbsp;g)</tt></td><td align=center>=</td><td><tt>fmap&nbsp;f&nbsp;.&nbsp;fmap&nbsp;g</tt></td></tr></table>
+<p>
+
+These laws ensure that the container shape is unchanged by
+<tt>fmap</tt> and that the contents of the container are not re-arranged by
+the mapping operation.   <p>
+The <tt>Monad</tt> class defines two basic operators: <tt>&gt;&gt;=</tt> (bind) and <tt>return</tt>.
+<tt><br>
+
+<br>
+infixl&nbsp;1&nbsp;&nbsp;&gt;&gt;,&nbsp;&gt;&gt;=<br>
+class&nbsp;&nbsp;Monad&nbsp;m&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(&gt;&gt;=)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;m&nbsp;a&nbsp;-&gt;&nbsp;(a&nbsp;-&gt;&nbsp;m&nbsp;b)&nbsp;-&gt;&nbsp;m&nbsp;b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(&gt;&gt;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;m&nbsp;a&nbsp;-&gt;&nbsp;m&nbsp;b&nbsp;-&gt;&nbsp;m&nbsp;b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;m&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;String&nbsp;-&gt;&nbsp;m&nbsp;a<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;m&nbsp;&gt;&gt;&nbsp;k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;m&nbsp;&gt;&gt;=&nbsp;\_&nbsp;-&gt;&nbsp;k<br>
+
+<br>
+
+</tt>The bind operations, <tt>&gt;&gt;</tt> and <tt>&gt;&gt;=</tt>, combine two monadic values while
+the <tt>return</tt> operation injects a value into the monad (container).
+The signature of <tt>&gt;&gt;=</tt>  helps
+us to understand this operation: <tt>ma&nbsp;&gt;&gt;=&nbsp;\v&nbsp;-&gt;&nbsp;mb</tt> 
+combines a monadic value <tt>ma</tt> containing values
+of type <tt>a</tt> and a function which operates
+on a value <tt>v</tt> of type <tt>a</tt>, returning the monadic value <tt>mb</tt>.  The
+result is to combine <tt>ma</tt> and <tt>mb</tt> into a 
+monadic value containing <tt>b</tt>.  The <tt>&gt;&gt;</tt> 
+function is used when the function does not need the value produced by
+the first monadic operator.<p>
+The precise meaning of binding depends, of course, on the monad.  For
+example, in the IO monad, <tt>x&nbsp;&gt;&gt;=&nbsp;y</tt> performs two actions sequentially,
+passing the result of the first into the second.  For the other
+built-in monads, lists and the <tt>Maybe</tt> type, these monadic operations
+can be understood in terms of passing zero or more values from one
+calculation to the next.  We will see examples of this shortly.<p>
+The <tt>do</tt> syntax provides a simple shorthand for chains of monadic
+operations.  The essential translation of <tt>do</tt> is captured in the
+following two rules:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;do&nbsp;e1&nbsp;;&nbsp;e2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e1&nbsp;&gt;&gt;&nbsp;e2<br>
+&nbsp;&nbsp;do&nbsp;p&nbsp;&lt;-&nbsp;e1;&nbsp;e2&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e1&nbsp;&gt;&gt;=&nbsp;\p&nbsp;-&gt;&nbsp;e2<br>
+
+<br>
+
+</tt>When the pattern in this second form of <tt>do</tt> is refutable, pattern
+match failure calls the <tt>fail</tt> operation.  This may raise an error (as
+in the <tt>IO</tt> monad) or return a "zero" (as in the list monad).  Thus
+the more complex translation is
+<tt><br>
+
+<br>
+&nbsp;&nbsp;&nbsp;do&nbsp;p&nbsp;&lt;-&nbsp;e1;&nbsp;e2&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;e1&nbsp;&gt;&gt;=&nbsp;(\v&nbsp;-&gt;&nbsp;case&nbsp;v&nbsp;of&nbsp;p&nbsp;-&gt;&nbsp;e2;&nbsp;_&nbsp;-&gt;&nbsp;fail&nbsp;"s")&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+<br>
+
+</tt>where <tt>"s"</tt> is a string identifying the location of the <tt>do</tt> statement
+for possible use in an error message.  For example, in the I/O monad,
+an action such as <tt>'a'&nbsp;&lt;-&nbsp;getChar</tt> will call <tt>fail</tt> if the character
+typed is not 'a'.  This, in turn, terminates the program since in the
+I/O monad <tt>fail</tt> calls <tt>error</tt>.  <p>
+The laws which govern <tt>&gt;&gt;=</tt> and <tt>return</tt> are:  
+<p>
+<table >
+<tr><td>
+<tt>return&nbsp;a&nbsp;&gt;&gt;=&nbsp;k</tt></td><td align=center>=</td><td><tt>k&nbsp;a</tt> </td></tr><tr><td><tt>m&nbsp;&gt;&gt;=&nbsp;return</tt></td><td align=center>=</td><td><tt>m</tt> </td></tr><tr><td><tt>xs&nbsp;&gt;&gt;=&nbsp;return&nbsp;.&nbsp;f</tt></td><td align=center>=</td><td><tt>fmap&nbsp;f&nbsp;xs</tt></td></tr><tr><td><tt>m&nbsp;&gt;&gt;=&nbsp;(\x&nbsp;-&gt;&nbsp;k&nbsp;x&nbsp;&gt;&gt;=&nbsp;h)</tt></td><td align=center>=</td><td><tt>(m&nbsp;&gt;&gt;=&nbsp;k)&nbsp;&gt;&gt;=&nbsp;h</tt></td></tr></table>
+<p>
+<p>
+The class <tt>MonadPlus</tt> is used for monads that have a <I>zero</I> element
+and a <I>plus</I> operation:
+<tt><br>
+
+<br>
+class&nbsp;&nbsp;(Monad&nbsp;m)&nbsp;=&gt;&nbsp;MonadPlus&nbsp;m&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mzero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;m&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mplus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;m&nbsp;a&nbsp;-&gt;&nbsp;m&nbsp;a&nbsp;-&gt;&nbsp;m&nbsp;a<br>
+
+<br>
+
+</tt>The zero element obeys the following laws: 
+<p>
+<table >
+<tr><td>
+<tt>m&nbsp;&gt;&gt;=&nbsp;\x&nbsp;-&gt;&nbsp;mzero</tt></td><td align=center>=</td><td><tt>mzero</tt></td></tr><tr><td><tt>mzero&nbsp;&gt;&gt;=&nbsp;m</tt></td><td align=center>=</td><td><tt>mzero</tt></td></tr></table>
+<p>
+
+For lists, the zero value is <tt>[]</tt>, the empty list.  The I/O monad has
+no zero element and is not a member of this class.  <p>
+The laws governing the <tt>mplus</tt> operator are as follows:
+<p>
+<table >
+<tr><td>
+<tt>m&nbsp;`mplus`&nbsp;mzero</tt></td><td align=center>=</td><td><tt>m</tt></td></tr><tr><td><tt>mzero&nbsp;`mplus`&nbsp;m</tt></td><td align=center>=</td><td><tt>m</tt></td></tr></table>
+<p>
+
+The <tt>mplus</tt> operator is ordinary list concatenation in the list monad.<p>
+<a name="sect9.2"></a>
+<h3>9.2<tt>&nbsp;&nbsp;</tt>Built-in Monads</h3>
+Given the monadic operations and the laws that govern them, what can
+we build?  We have already examined the I/O monad in detail so we
+start with the two other built-in monads.  <p>
+For lists, monadic binding involves joining together a set of
+calculations for each value in the list.  When used with lists, the
+signature of <tt>&gt;&gt;=</tt> becomes:
+<tt><br>
+
+<br>
+(&gt;&gt;=)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;[a]&nbsp;-&gt;&nbsp;(a&nbsp;-&gt;&nbsp;[b])&nbsp;-&gt;&nbsp;[b]&nbsp;<br>
+
+<br>
+
+</tt>That is, given a list of <tt>a</tt>'s and a function that maps an <tt>a</tt> onto a
+list of <tt>b</tt>'s, binding applies this function to each of the <tt>a</tt>'s in
+the input and returns all of the generated <tt>b</tt>'s concatenated into a
+list.  The <tt>return</tt> function creates a singleton list.  These
+operations should already be familiar: list comprehensions can easily
+be expressed using the monadic operations 
+defined for lists.  These following three
+expressions are all different syntax for the same thing:
+<tt><br>
+
+<br>
+[(x,y)&nbsp;|&nbsp;x&nbsp;&lt;-&nbsp;[1,2,3]&nbsp;,&nbsp;y&nbsp;&lt;-&nbsp;[1,2,3],&nbsp;x&nbsp;/=&nbsp;y]<br>
+<br>
+do&nbsp;x&nbsp;&lt;-&nbsp;[1,2,3]<br>
+&nbsp;&nbsp;&nbsp;y&nbsp;&lt;-&nbsp;[1,2,3]<br>
+&nbsp;&nbsp;&nbsp;True&nbsp;&lt;-&nbsp;return&nbsp;(x&nbsp;/=&nbsp;y)<br>
+&nbsp;&nbsp;&nbsp;return&nbsp;(x,y)<br>
+<br>
+[1,2,3]&nbsp;&gt;&gt;=&nbsp;(\&nbsp;x&nbsp;-&gt;&nbsp;[1,2,3]&nbsp;&gt;&gt;=&nbsp;(\y&nbsp;-&gt;&nbsp;return&nbsp;(x/=y)&nbsp;&gt;&gt;=<br>
+&nbsp;&nbsp;&nbsp;(\r&nbsp;-&gt;&nbsp;case&nbsp;r&nbsp;of&nbsp;True&nbsp;-&gt;&nbsp;return&nbsp;(x,y)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;fail&nbsp;"")))<br>
+
+<br>
+
+</tt>This definition depends on the definition of <tt>fail</tt> in this monad as
+the empty list.  Essentially, each <tt>&lt;-</tt> is generating a set of values
+which is passed on into the remainder of the monadic computation.
+Thus <tt>x&nbsp;&lt;-&nbsp;[1,2,3]</tt> invokes the remainder of the monadic computation
+three times, once for each element of the list.  The returned
+expression, <tt>(x,y)</tt>, will be
+evaluated for all possible combinations of bindings that surround it.
+In this sense, the list monad can be thought of as describing
+functions of multi-valued arguments.  For example, this function:
+<tt><br>
+
+<br>
+mvLift2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a&nbsp;-&gt;&nbsp;b&nbsp;-&gt;&nbsp;c)&nbsp;-&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;[b]&nbsp;-&gt;&nbsp;[c]<br>
+mvLift2&nbsp;f&nbsp;x&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;do&nbsp;x'&nbsp;&lt;-&nbsp;x<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y'&nbsp;&lt;-&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(f&nbsp;x'&nbsp;y')<br>
+
+<br>
+
+</tt>turns an ordinary function of two arguments (<tt>f</tt>) into a function over
+multiple values (lists of arguments), returning a value for each possible
+combination of the two input arguments.  For example, 
+<p>
+<table >
+<tr><td>
+<tt>mvLift2&nbsp;(+)&nbsp;[1,3]&nbsp;[10,20,30]</tt>     </td><td align=center>=&gt;</td><td>   <tt>[11,21,31,13,23,33]</tt></td></tr><tr><td><tt>mvLift2&nbsp;(\a&nbsp;b-&gt;[a,b])&nbsp;"ab"&nbsp;"cd"</tt>     </td><td align=center>=&gt;</td><td>   <tt>["ac","ad","bc","bd"]</tt></td></tr><tr><td><tt>mvLift2&nbsp;(*)&nbsp;[1,2,4]&nbsp;[]</tt>   </td><td align=center>=&gt;</td><td>   <tt>[]</tt></td></tr></table>
+<p>
+
+This function is a specialized version of the <tt>LiftM2</tt> function in the
+monad library.  You can think of it as transporting a function from
+outside the list monad, <tt>f</tt>, into the list monad in which computations
+take on multiple values.  <p>
+The monad defined for <tt>Maybe</tt> is similar to the list monad: the value
+<tt>Nothing</tt> serves as <tt>[]</tt> and <tt>Just&nbsp;x</tt> as <tt>[x]</tt>.  <p>
+<a name="sect9.3"></a>
+<h3>9.3<tt>&nbsp;&nbsp;</tt>Using Monads</h3>
+Explaining the monadic operators and their associated laws doesn't
+really show what monads are good for.  What they really provide is
+<I>modularity</I>.  That is, by defining an operation monadically, we can
+hide underlying machinery in a way that allows new features to be
+incorporated into the monad transparently.  Wadler's paper [<a href="haskell-tutorial.html#$wadler:mffp">10</a>]
+is an excellent example of how monads can be 
+used to construct modular programs.  We will start with a monad taken
+directly from this paper, the state monad, and then build a more
+complex monad with a similar definition. <p>
+Briefly, a state monad built around a state type <tt>S</tt> looks
+like this:
+<tt><br>
+
+<br>
+data&nbsp;SM&nbsp;a&nbsp;=&nbsp;SM&nbsp;(S&nbsp;-&gt;&nbsp;(a,S))&nbsp;&nbsp;--&nbsp;The&nbsp;monadic&nbsp;type<br>
+<br>
+instance&nbsp;Monad&nbsp;SM&nbsp;where<br>
+&nbsp;&nbsp;--&nbsp;defines&nbsp;state&nbsp;propagation<br>
+&nbsp;&nbsp;SM&nbsp;c1&nbsp;&gt;&gt;=&nbsp;fc2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;SM&nbsp;(\s0&nbsp;-&gt;&nbsp;let&nbsp;(r,s1)&nbsp;=&nbsp;c1&nbsp;s0&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SM&nbsp;c2&nbsp;=&nbsp;fc2&nbsp;r&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c2&nbsp;s1)<br>
+&nbsp;&nbsp;return&nbsp;k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;SM&nbsp;(\s&nbsp;-&gt;&nbsp;(k,s))<br>
+<br>
+&nbsp;--&nbsp;extracts&nbsp;the&nbsp;state&nbsp;from&nbsp;the&nbsp;monad<br>
+readSM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;SM&nbsp;S<br>
+readSM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;SM&nbsp;(\s&nbsp;-&gt;&nbsp;(s,s))<br>
+<br>
+&nbsp;--&nbsp;updates&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;monad<br>
+updateSM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(S&nbsp;-&gt;&nbsp;S)&nbsp;-&gt;&nbsp;SM&nbsp;()&nbsp;&nbsp;--&nbsp;alters&nbsp;the&nbsp;state<br>
+updateSM&nbsp;f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;SM&nbsp;(\s&nbsp;-&gt;&nbsp;((),&nbsp;f&nbsp;s))&nbsp;<br>
+<br>
+--&nbsp;run&nbsp;a&nbsp;computation&nbsp;in&nbsp;the&nbsp;SM&nbsp;monad<br>
+runSM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;S&nbsp;-&gt;&nbsp;SM&nbsp;a&nbsp;-&gt;&nbsp;(a,S)<br>
+runSM&nbsp;s0&nbsp;(SM&nbsp;c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;c&nbsp;s0<br>
+
+<br>
+
+</tt>This example defines a new type, <tt>SM</tt>, to be a computation that
+implicitly carries a type <tt>S</tt>.  That is, a computation of type <tt>SM&nbsp;t
+</tt>defines a value of type <tt>t</tt> 
+while also interacting with (reading and writing) the state of type
+<tt>S</tt>.  The definition of <tt>SM</tt> is simple: it consists of functions that take a
+state and produce two results: a returned value (of any type) and an
+updated state.  We can't use a type synonym here: we need a type name
+like <tt>SM</tt> that can be used in instance declarations.  The <tt>newtype
+</tt>declaration is often used here instead of <tt>data</tt>.<p>
+This instance declaration defines the `plumbing' of the monad: how to
+sequence two computations and the definition of an empty computation.
+Sequencing (the <tt>&gt;&gt;=</tt> operator) defines a computation (denoted by the
+constructor <tt>SM</tt>) that passes an initial 
+state, <tt>s0</tt>, into <tt>c1</tt>, then passes the value coming out of this
+computation, <tt>r</tt>, to the function that returns the second computation,
+<tt>c2</tt>.  Finally, the state coming out of <tt>c1</tt> is passed into <tt>c2</tt> and
+the overall result is the result of <tt>c2</tt>.  <p>
+The definition of <tt>return</tt> is easier: <tt>return</tt> doesn't change the
+state at all; it only serves to bring a value into the monad.  <p>
+While <tt>&gt;&gt;=</tt> and <tt>return</tt> are the basic monadic sequencing operations,
+we also need some <I>monadic primitives</I>.  A monadic primitive is
+simply an operation that uses the insides of the monad abstraction and
+taps into 
+the `wheels and gears' that make the monad work.  For example, in the
+<tt>IO</tt> monad, operators such as <tt>putChar</tt> are primitive since they deal
+with the inner workings of the <tt>IO</tt> monad.  Similarly, our state monad
+uses two primitives: <tt>readSM</tt> and <tt>updateSM</tt>.  Note that these depend
+on the inner structure of the monad - a change to the definition of
+the <tt>SM</tt> type would require a change to these primitives.<p>
+The definition of <tt>readSM</tt> and <tt>updateSM</tt> are simple: <tt>readSM</tt> brings
+the state out of the monad for observation while <tt>updateSM</tt> allows the
+user to alter the state in the monad.  (We could also have used
+<tt>writeSM</tt> as a primitive but update is often a more natural way of
+dealing with state).  <p>
+Finally, we need a function that runs computations in the monad,
+<tt>runSM</tt>.  This takes an initial state and a computation and yields
+both the returned value of the computation and the final state.<p>
+Looking at the bigger picture, what we are trying to do is define an
+overall computation as a series of steps (functions with type
+<tt>SM&nbsp;a</tt>), sequenced using <tt>&gt;&gt;=</tt> and <tt>return</tt>.  These steps may interact
+with the state (via <tt>readSM</tt> or <tt>updateSM</tt>) or may ignore the state.
+However, the use (or non-use) of the state is hidden: we don't invoke
+or sequence our computations differently depending on whether or not
+they use <tt>S</tt>.  <p>
+Rather than present any examples using this simple state monad, we
+proceed on to a more complex example that includes the state monad.
+We define a small <I>embedded language</I> of resource-using
+calculations. 
+That is, we build a special purpose language implemented as a set of Haskell
+types and functions.  Such languages use the basic tools of Haskell,
+functions and types, to build a library of operations
+and types specifically tailored to a domain of interest.<p>
+In this example, consider a computation that requires some sort of
+resource.  If the resource is available, computation proceeds; when the
+resource is unavailable, the computation suspends.  We use the type <tt>R
+</tt>to denote a computation using resources controlled by our monad.
+The definition of <tt>R</tt> is as follows:
+<tt><br>
+
+<br>
+data&nbsp;R&nbsp;a&nbsp;=&nbsp;R&nbsp;(Resource&nbsp;-&gt;&nbsp;(Resource,&nbsp;Either&nbsp;a&nbsp;(R&nbsp;a)))<br>
+
+<br>
+
+</tt>Each computation is a function from available resources to remaining
+resources, coupled with either a result, of type <tt>a</tt>, or a
+suspended computation, of type <tt>R&nbsp;a</tt>, capturing the work done up
+to the point where resources were exhausted.<p>
+The <tt>Monad</tt> instance for <tt>R</tt> is as follows:
+<tt><br>
+
+<br>
+instance&nbsp;Monad&nbsp;R&nbsp;where<br>
+&nbsp;&nbsp;R&nbsp;c1&nbsp;&gt;&gt;=&nbsp;fc2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;R&nbsp;(\r&nbsp;-&gt;&nbsp;case&nbsp;c1&nbsp;r&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(r',&nbsp;Left&nbsp;v)&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;let&nbsp;R&nbsp;c2&nbsp;=&nbsp;fc2&nbsp;v&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c2&nbsp;r'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(r',&nbsp;Right&nbsp;pc1)&nbsp;-&gt;&nbsp;(r',&nbsp;Right&nbsp;(pc1&nbsp;&gt;&gt;=&nbsp;fc2)))<br>
+&nbsp;&nbsp;return&nbsp;v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;R&nbsp;(\r&nbsp;-&gt;&nbsp;(r,&nbsp;(Left&nbsp;v)))<br>
+
+<br>
+
+</tt>The <tt>Resource</tt> type is used in the same manner as the state in
+the state monad.  This definition reads as follows: to combine two
+`resourceful' computations, <tt>c1</tt> and <tt>fc2</tt> (a function producing
+<tt>c2</tt>), pass the initial resources into <tt>c1</tt>.  The result will be
+either
+<UL><LI>a value, <tt>v</tt>, and remaining resources, which are used to determine
+the next computation (the call <tt>fc2&nbsp;v</tt>), or
+<LI>a suspended computation, <tt>pc1</tt>, and resources remaining at the
+point of suspension.  
+</UL>
+The suspension must take the second computation into consideration:
+<tt>pc1</tt> suspends only the first computation, <tt>c1</tt>, so we must bind <tt>c2
+</tt>to this to produce a suspension of the overall computation.
+The definition of <tt>return</tt> leaves the resources unchanged while moving
+<tt>v</tt> into the monad.<p>
+This instance declaration defines the basic structure of the monad but
+does not determine how resources are used.  This monad could be
+used to control many types of resource or implement many different
+types of resource usage policies.  We will demonstrate a very simple
+definition of resources as an example: we choose <tt>Resource</tt> to be an
+<tt>Integer</tt>, representing available computation steps:
+<tt><br>
+
+<br>
+type&nbsp;Resource&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;Integer<br>
+
+<br>
+
+</tt>This function takes a step unless no steps are available:
+<tt><br>
+
+<br>
+step&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;a<br>
+step&nbsp;v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;c&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;R&nbsp;(\r&nbsp;-&gt;&nbsp;if&nbsp;r&nbsp;/=&nbsp;0&nbsp;then&nbsp;(r-1,&nbsp;Left&nbsp;v)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;(r,&nbsp;Right&nbsp;c))<br>
+
+<br>
+
+</tt>The <tt>Left</tt> and <tt>Right</tt> constructors are part of the <tt>Either</tt> type.
+This function continues computation in <tt>R</tt> by returning <tt>v</tt> so long as
+there is at least one computational step resource available.
+If no steps are available, the <tt>step</tt> function suspends the current
+computation (this suspension is captured in <tt>c</tt>) and passes this
+suspended computation back into the monad.  <p>
+So far, we have the tools to define a sequence of "resourceful"
+computations (the monad) and we can express a form of resource usage
+using <tt>step</tt>.  Finally, we need to address how computations in this
+monad are expressed.  <p>
+Consider an increment function in our monad:
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;R&nbsp;Integer&nbsp;-&gt;&nbsp;R&nbsp;Integer<br>
+inc&nbsp;i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;do&nbsp;iValue&nbsp;&lt;-&nbsp;i<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step&nbsp;(iValue+1)<br>
+
+<br>
+
+</tt>This defines increment as a single step of computation.  The <tt>&lt;-</tt> is
+necessary to pull the argument value out of the monad; the type of
+<tt>iValue</tt> is <tt>Integer</tt> instead of <tt>R&nbsp;Integer</tt>.  <p>
+This definition isn't particularly satisfying, though, compared to the
+standard definition of the increment function.  Can we instead "dress
+up" existing operations like <tt>+</tt> so that they work in our monadic
+world?  We'll start with a set of <tt>lifting</tt> functions.  These 
+bring existing functionality into the monad.  Consider the definition
+of <tt>lift1</tt> (this is slightly different from the <tt>liftM1</tt> found in the
+<tt>Monad</tt> library):
+<tt><br>
+
+<br>
+lift1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a&nbsp;-&gt;&nbsp;b)&nbsp;-&gt;&nbsp;(R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;b)<br>
+lift1&nbsp;f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;\ra1&nbsp;-&gt;&nbsp;do&nbsp;a1&nbsp;&lt;-&nbsp;ra1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step&nbsp;(f&nbsp;a1)<br>
+
+<br>
+
+</tt>This takes a function of a single argument, <tt>f</tt>, and creates a
+function in <tt>R</tt> that executes the lifted function in a single step.
+Using <tt>lift1</tt>, <tt>inc</tt> becomes
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;R&nbsp;Integer&nbsp;-&gt;&nbsp;R&nbsp;Integer<br>
+inc&nbsp;i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;lift1&nbsp;(i+1)<br>
+
+<br>
+
+</tt>This is better but still not ideal.  First, we add <tt>lift2</tt>:
+<tt><br>
+
+<br>
+lift2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a&nbsp;-&gt;&nbsp;b&nbsp;-&gt;&nbsp;c)&nbsp;-&gt;&nbsp;(R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;b&nbsp;-&gt;&nbsp;R&nbsp;c)<br>
+lift2&nbsp;f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;\ra1&nbsp;ra2&nbsp;-&gt;&nbsp;do&nbsp;a1&nbsp;&lt;-&nbsp;ra1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a2&nbsp;&lt;-&nbsp;ra2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step&nbsp;(f&nbsp;a1&nbsp;a2)<br>
+
+<br>
+
+</tt>Notice that this function explicitly sets the order of evaluation in
+the lifted function: the computation yielding <tt>a1</tt> occurs before the
+computation for <tt>a2</tt>.<p>
+Using <tt>lift2</tt>, we can create a new version of <tt>==</tt> in the <tt>R</tt> monad:
+<tt><br>
+
+<br>
+(==*)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Ord&nbsp;a&nbsp;=&gt;&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;Bool<br>
+(==*)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;lift2&nbsp;(==)<br>
+
+<br>
+
+</tt>We had to use a slightly different name for this new function since
+<tt>==</tt> is already taken but in
+some cases we can use the same name for the lifted and unlifted
+function.  This instance declaration allows 
+all of the operators in <tt>Num</tt> to be used in <tt>R</tt>:
+<tt><br>
+
+<br>
+instance&nbsp;Num&nbsp;a&nbsp;=&gt;&nbsp;Num&nbsp;(R&nbsp;a)&nbsp;where<br>
+&nbsp;&nbsp;(+)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;lift2&nbsp;(+)<br>
+&nbsp;&nbsp;(-)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;lift2&nbsp;(-)<br>
+&nbsp;&nbsp;negate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;lift1&nbsp;negate<br>
+&nbsp;&nbsp;(*)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;lift2&nbsp;(*)<br>
+&nbsp;&nbsp;abs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;lift1&nbsp;abs<br>
+&nbsp;&nbsp;fromInteger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;return&nbsp;.&nbsp;fromInteger<br>
+
+<br>
+
+</tt>The <tt>fromInteger</tt> function is applied implicitly to all integer
+constants in a Haskell program (see Section <a href="numbers.html#tut-num-constants">10.3</a>);
+this definition allows integer constants to have the type <tt>R&nbsp;Integer</tt>.
+We can now, finally, write increment in a completely natural style:
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;R&nbsp;Integer&nbsp;-&gt;&nbsp;R&nbsp;Integer<br>
+inc&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;+&nbsp;1<br>
+
+<br>
+
+</tt>Note that we cannot lift the <tt>Eq</tt> class in the same manner as the
+<tt>Num</tt> class: the signature of <tt>==*</tt> is not compatible with allowable
+overloadings of <tt>==</tt> since the result of <tt>==*</tt> is <tt>R&nbsp;Bool</tt> instead of
+<tt>Bool</tt>.<p>
+To express interesting computations in <tt>R</tt> we will need a
+conditional.  Since we can't use <tt>if</tt> (it requires that the test be of
+type <tt>Bool</tt> instead of <tt>R&nbsp;Bool</tt>), we name the function <tt>ifR</tt>:
+<tt><br>
+
+<br>
+ifR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;R&nbsp;Bool&nbsp;-&gt;&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;a<br>
+ifR&nbsp;tst&nbsp;thn&nbsp;els&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;do&nbsp;t&nbsp;&lt;-&nbsp;tst<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;t&nbsp;then&nbsp;thn&nbsp;else&nbsp;els<br>
+
+<br>
+
+</tt>Now we're ready for a larger program in the <tt>R</tt> monad:
+<tt><br>
+
+<br>
+fact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;R&nbsp;Integer&nbsp;-&gt;&nbsp;R&nbsp;Integer<br>
+fact&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;ifR&nbsp;(x&nbsp;==*&nbsp;0)&nbsp;1&nbsp;(x&nbsp;*&nbsp;fact&nbsp;(x-1))<br>
+
+<br>
+
+</tt>Now this isn't quite the same as an ordinary factorial function but
+still quite readable.  The idea of providing new definitions for
+existing operations like <tt>+</tt> or <tt>if</tt> is an essential part of creating
+an embedded language in Haskell.  Monads are particularly useful for
+encapsulating the semantics of these embedded languages in a clean and
+modular way.<p>
+We're now ready to actually run some programs.  This function runs a
+program in <tt>M</tt> given a maximum number of computation steps:
+<tt><br>
+
+<br>
+run&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Resource&nbsp;-&gt;&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;Maybe&nbsp;a<br>
+run&nbsp;s&nbsp;(R&nbsp;p)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;case&nbsp;(p&nbsp;s)&nbsp;of&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(_,&nbsp;Left&nbsp;v)&nbsp;-&gt;&nbsp;Just&nbsp;v<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;Nothing<br>
+
+<br>
+
+</tt>We use the <tt>Maybe</tt> type to deal with the possibility of the
+computation not finishing in the allotted number of steps.  We can now
+compute 
+<p>
+<table >
+<tr><td>
+<tt>run&nbsp;10&nbsp;(fact&nbsp;2)</tt>     </td><td align=center>=&gt;</td><td>   <tt>Just&nbsp;2</tt></td></tr><tr><td><tt>run&nbsp;10&nbsp;(fact&nbsp;20)</tt>     </td><td align=center>=&gt;</td><td>   <tt>Nothing</tt></td></tr></table>
+<p>
+<p>
+Finally, we can add some more interesting functionality to this
+monad.  Consider the following function:
+<tt><br>
+
+<br>
+(|||)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;a<br>
+
+<br>
+
+</tt>This runs two computations in parallel, returning the value of the
+first one to complete.  One possible definition of this function is:
+<tt><br>
+
+<br>
+c1&nbsp;|||&nbsp;c2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;oneStep&nbsp;c1&nbsp;(\c1'&nbsp;-&gt;&nbsp;c2&nbsp;|||&nbsp;c1')<br>
+&nbsp;&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oneStep&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;R&nbsp;a&nbsp;-&gt;&nbsp;(R&nbsp;a&nbsp;-&gt;&nbsp;R&nbsp;a)&nbsp;-&gt;&nbsp;R&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oneStep&nbsp;(R&nbsp;c1)&nbsp;f&nbsp;=<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R&nbsp;(\r&nbsp;-&gt;&nbsp;case&nbsp;c1&nbsp;1&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(r',&nbsp;Left&nbsp;v)&nbsp;-&gt;&nbsp;(r+r'-1,&nbsp;Left&nbsp;v)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(r',&nbsp;Right&nbsp;c1')&nbsp;-&gt;&nbsp;&nbsp;--&nbsp;r'&nbsp;must&nbsp;be&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;R&nbsp;next&nbsp;=&nbsp;f&nbsp;c1'&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next&nbsp;(r+r'-1))<br>
+
+<br>
+
+</tt>This takes a step in <tt>c1</tt>, returning its value of <tt>c1</tt> complete or, if
+<tt>c1</tt> returns a suspended computation (<tt>c1'</tt>), it evaluates
+<tt>c2&nbsp;|||&nbsp;c1'</tt>.  The <tt>oneStep</tt> function takes a single step in its
+argument, either returning an evaluated value or passing the remainder
+of the computation into <tt>f</tt>.  The definition of <tt>oneStep</tt> is simple:
+it gives <tt>c1</tt> a 1 as its resource argument.  If a final value is
+reached, this is returned, adjusting the returned step count (it is
+possible that a computation might return after taking no steps so the
+returned resource count isn't necessarily 0).  If the computation
+suspends, a patched up resource count is passed to the final
+continuation. <p>
+We can now evaluate expressions like <tt>run&nbsp;100&nbsp;(fact&nbsp;(-1)&nbsp;|||&nbsp;(fact&nbsp;3))
+</tt>without looping since the two calculations are interleaved.  (Our
+definition of <tt>fact</tt> loops for <tt>-1</tt>).  
+Many variations are possible on this basic
+structure.  For example, we could extend the state to include a trace
+of the computation steps.  We could also embed this monad inside the
+standard <tt>IO</tt> monad, allowing computations in <tt>M</tt> to interact with the
+outside world.
+ 
+While this example is perhaps more advanced than others in this tutorial,
+it serves to illustrate the power of monads as a tool for defining the
+basic semantics of a system.  We also present this example as a model
+of a small <I>Domain Specific Language</I>, something Haskell is
+particularly good at defining.  Many other DSLs have been developed in
+Haskell; see <tt>haskell.org</tt> for many more examples.  Of particular
+interest are Fran, a language of reactive animations, and Haskore, a
+language of computer music.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="stdclasses.html">back</a> <a href="numbers.html">next</a> <a href="index.html">top</a>

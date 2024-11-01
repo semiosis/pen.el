@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: pid of subshell
+# group: pid
+# key: spid
+# --
+# This is like $$ but works inside ()
+echo "$$"
+# Both of these methods work
+( shopt -s lastpipe; sh -c 'echo "$PPID"' | read spid; echo "$spid" )
+( pid=$(sh -c 'echo $PPID'); echo "$pid" )

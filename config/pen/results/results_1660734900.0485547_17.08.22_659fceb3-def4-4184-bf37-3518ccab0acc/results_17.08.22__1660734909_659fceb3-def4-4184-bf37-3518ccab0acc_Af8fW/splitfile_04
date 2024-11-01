@@ -1,0 +1,18 @@
+
+  -- For example, if the user enters 42, the program should say:
+  -- "You are 42 years old"
+  putStrLn "How old are you?"
+  ageString <- getLine
+  putStrLn $ "You are " ++ ageString ++ " years old"
+
+  -- Read in from the user a person's name
+  -- Then, print the name back to the user within a sentence
+  -- For example, if the user enters "Bob", the program should say:
+  -- "Hello Bob!"
+  putStrLn "What is your name?"
+  nameString <- getLine
+  putStrLn $ "Hello " ++ nameString ++ "!"
+
+  -- Read in from the user a person's age and name and print out a sentence that says:
+  -- "You are 42 years old and your name is Bob"
+  putStrLn "How old are

@@ -1,0 +1,6 @@
+pen-use-minimal-prompt-function ()
+  (interactive)
+  (let ((lines-context 2))
+
+    (if (not (listp current-prefix-arg))
+        (setq lines-context (prefix-numeric-value current-prefix-arg)))

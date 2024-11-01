@@ -1,0 +1,4 @@
+
+  (GET "/prompt" [] (prompt req))
+  (GET "/lm-complete" [] (lm-complete req))
+

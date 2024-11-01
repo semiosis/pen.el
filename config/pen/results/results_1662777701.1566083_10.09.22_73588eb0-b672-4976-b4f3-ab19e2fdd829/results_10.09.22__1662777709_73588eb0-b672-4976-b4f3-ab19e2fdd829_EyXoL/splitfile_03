@@ -1,0 +1,1 @@
+""realized?" refers to the way some things in Clojure are implemented. For example, Clojure has a lazy sequence abstraction and a "realized?" function that tells you whether a given value is realized as a sequence.

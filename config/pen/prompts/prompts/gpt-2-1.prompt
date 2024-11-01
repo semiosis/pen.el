@@ -1,0 +1,5 @@
+title: GPT-2
+include: Generic completion 50 tokens/1
+tags: fundamental
+prompt-version: 1
+engine: HuggingFace GPT-2

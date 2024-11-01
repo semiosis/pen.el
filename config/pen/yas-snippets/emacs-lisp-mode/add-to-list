@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: add-to-list
+# group: list
+# key: atl
+# --
+(add-to-list ${1:'to-this-list} ${2:'add-this})

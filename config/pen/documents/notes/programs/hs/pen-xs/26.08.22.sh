@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "pen-xs" "quicklisp-install" "str" "#" "<==" "xs"
+cd /root/.pen/documents/notes;  "pen-xs" "quicklisp-install" "cl-expect" "#" "<==" "xs"
+cd /root/notes;  "pen-xs" "quicklisp-install" "listopia" "#" "<==" "xs"
+cd /root/notes;  "pen-xs" "quicklisp-install" "sycamore" "#" "<==" "xs"
+cd /root/notes;  "pen-xs" "quicklisp-install" "access" "#" "<==" "xs"
+cd /root/notes;  "pen-xs" "quicklisp-install" "sparser" "#" "<==" "xs"
+cd /root/.pen/documents/notes;  "pen-xs" "quicklisp-install" "closer-mop" "#" "<==" "xs"

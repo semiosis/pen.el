@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Matthew" "12:31-2" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Matthew" "12:31-32" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "18:33-35" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "5:22" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Matthew" "12:1-14" "#" "<==" "zsh"

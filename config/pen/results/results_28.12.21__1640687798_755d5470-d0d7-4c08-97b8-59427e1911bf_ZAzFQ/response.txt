@@ -1,0 +1,8 @@
+ world!')
+        assert_equal(len(x.cookies), 0)
+
+    def test_expires(self):
+        from datetime import datetime
+        from webob.util import epoch_to_dt
+
+

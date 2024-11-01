@@ -1,0 +1,10 @@
+
+  (interactive "nNumber of items: ")
+  (let ((i 1)
+        (a 0)
+        (b 1))
+    (while (< i n)
+      (setq a (+ a b))
+      (setq b (+ b a))
+      (setq i (+ i 1))
+      (insert (format "%d\n" a)))))

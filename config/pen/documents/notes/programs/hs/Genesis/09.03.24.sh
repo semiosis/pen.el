@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Genesis" "1:3" "#" "<==" "withopts"
+cd /root/notes;  "Genesis" "1:3" "#" "<==" "sh"
+cd /root/.pen/documents/notes;  "Genesis" "1:3" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "1:6" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "1:10" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "1:13" "#" "<==" "withopts"

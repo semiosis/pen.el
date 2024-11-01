@@ -1,0 +1,29 @@
+
+    Facts are the values that are inferred
+    from the remote system's current state or
+    nature.
+
+    Facts are used to determine if a change
+    needs to be made or not.
+
+Module
+    Modules are the things that perform some
+    action on the remote system.
+
+    They can be simple or complex, and can
+    be written in any language.
+
+    Ansible modules are written in Python, and
+    can be written in any other language by using
+    a :term:`Connection Plugin`.
+
+    Modules can be executed synchronously or
+    asynchronously.
+
+    When a module is executed synchronously, Ansible
+    will wait for the task to complete before moving
+    on to the next task in a play.
+
+    When a module is executed asynchronously, Ansible
+    will queue up the task and continue on to the next
+    task in a play without waiting for

@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/src;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.pen/documents/agenda;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-output0DVRfE" "--verify" "--" "/tmp/epg-signature4xra83" "-" "#" "<==" "emacs"

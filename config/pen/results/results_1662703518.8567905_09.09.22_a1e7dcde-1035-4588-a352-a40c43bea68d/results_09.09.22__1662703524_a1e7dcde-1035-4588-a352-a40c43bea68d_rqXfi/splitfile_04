@@ -1,0 +1,3 @@
+import Control.Exception
+try (1/0)
+catch e (print e)

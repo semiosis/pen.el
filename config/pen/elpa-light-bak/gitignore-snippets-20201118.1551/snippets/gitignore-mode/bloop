@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Bloop
+# contributor: Toptal & contributors
+# key: bloop
+# --
+
+### Bloop ###
+
+.bloop/

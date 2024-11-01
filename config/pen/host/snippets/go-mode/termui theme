@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: termui theme
+# key: tutheme
+# --
+/home/shane/go/src/github.com/gizak/termui/_example/theme.go

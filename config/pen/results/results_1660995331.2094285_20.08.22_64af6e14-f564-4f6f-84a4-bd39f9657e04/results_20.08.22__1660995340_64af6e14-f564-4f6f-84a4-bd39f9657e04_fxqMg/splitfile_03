@@ -1,0 +1,23 @@
+
+  (let ((n (- char 65)))
+    (if (< n 0)
+        nil
+      (s-concat (number-to-string n) " "))))
+
+(defun pen-modeline-icon ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (s-replace-regexp
+            "pen-emacsd-\\([0-9]*\\)"
+            "\\1"
+            dn))
+          (t
+           "emacs"))))
+
+  ;;(ascii-letter-from-int (+ 1 (string-to-number pen/daemon/name)))
+
+  ;;(pen/daemon/name)
+
+  ;;(pen/daemon/

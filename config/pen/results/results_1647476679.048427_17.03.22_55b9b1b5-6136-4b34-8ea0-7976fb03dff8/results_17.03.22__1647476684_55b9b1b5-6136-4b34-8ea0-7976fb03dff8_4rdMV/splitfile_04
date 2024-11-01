@@ -1,0 +1,9 @@
+programming as soon as possible
+
+** (setq *programs* '( ("libclang-devel" . "libclang-devel-3.2")
+
+** ("clang" . "clang-3.2")
+
+** ("clang-Pen.el
+** However, I may be eclipsed by better things in the future
+

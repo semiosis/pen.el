@@ -1,0 +1,42 @@
+# -*- mode: snippet -*-
+# name: named backref
+# group: regex
+# key: backref
+# --
+--------------------------------------------------------------------------------
+-- Backreferences
+--------------------------------------------------------------------------------
+
+-- Backreferences are new in Rosie v1.2.  They are similar to named
+-- backreferences in regular expressions.  In RPL, a backreference is created
+-- using the `backref` macro.  The macro takes one argument, which is a pattern.
+--
+-- The pattern `backref:foo` succeeds when (1) the pattern `foo` has already
+-- matched some input (zero or more characters), and (2) the same sequence of
+-- characters appears in the input when `backref:foo` appears in the pattern.
+
+word = [:^space:]+
+sameword = word backref:word
+
+-- test sameword accepts "foo foo", "bar bar", "a a", "/foobar/ /foobar/"
+-- test sameword rejects "foo", "foo f00", "foo bar"
+
+-- test sameword includes word "baz baz"--------------------------------------------------------------------------------
+-- Backreferences
+--------------------------------------------------------------------------------
+
+-- Backreferences are new in Rosie v1.2.  They are similar to named
+-- backreferences in regular expressions.  In RPL, a backreference is created
+-- using the `backref` macro.  The macro takes one argument, which is a pattern.
+--
+-- The pattern `backref:foo` succeeds when (1) the pattern `foo` has already
+-- matched some input (zero or more characters), and (2) the same sequence of
+-- characters appears in the input when `backref:foo` appears in the pattern.
+
+word = [:^space:]+
+sameword = word backref:word
+
+-- test sameword accepts "foo foo", "bar bar", "a a", "/foobar/ /foobar/"
+-- test sameword rejects "foo", "foo f00", "foo bar"
+
+-- test sameword includes word "baz baz"

@@ -1,0 +1,50 @@
+title: Generic file type completion
+prompt-version: 2
+tags: project code filesystem
+doc: This is a generic file-type completer for emacs.
+prompt: |
+    # <file type> files
+
+    cat draft.<sl:file type> <<EOD
+    <preceding text>
+engine: OpenAI Codex
+force-engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1
+force-stop-sequence: EOD
+# Complete one line only by default
+stop-sequences:
+- "EOD"
+vars:
+- file type
+- preceding text
+# Do not remove whitespace from the beginning of the response string
+# This is default for completions prompts
+no-trim-start: on
+n-collate: 1
+preprocessors:
+- cat
+# max one empty line
+- sed "s/^\\s\\+$//" | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
+n-completions: 20
+completion: true
+cache: false
+examples:
+- python
+- |-
+  # Let's say a triple (a, b, c) is a zigzag if
+  # either a < b > c or a > b < c.
+
+  # Given an array of integers numbers, your task
+  # is to check all the triples of its consecutive
+  # elements for being a zigzag.
+
+  # More formally, your task is to construct an
+  # array of length numbers.length - 2, where the
+  # ith element of the output array equals 1 if
+  # the triple (numbers[i], numbers[i + 1], numbers[i + 2]) is a zigzag, and 0 otherwise.
+  def
+var-defaults:
+- "(pen-detect-language)"
+- "(pen-preceding-text)"

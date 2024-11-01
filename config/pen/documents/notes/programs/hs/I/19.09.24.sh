@@ -1,0 +1,7 @@
+cd /root/notes;  "I" "Timothy" "6:3-4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Timothy" "6:3-4" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "6:1" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "6:-4" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "6:2-4" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "1:3-5" "#" "<==" "zsh"
+cd /root/notes;  "I" "Tim" "4:6-7" "#" "<==" "zsh"

@@ -1,0 +1,10 @@
+The above code is a simple program that gets the results of a search
+from the Google Custom Search API. The program takes a search query as
+a parameter and then prints the results of the search.
+
+The program uses the getResults function to get the results of the
+search. The getResults function takes a search query as a parameter
+and returns a list of results. The getResults function is defined as:
+
+getResults :: String -> IO [String]
+getResults query = do

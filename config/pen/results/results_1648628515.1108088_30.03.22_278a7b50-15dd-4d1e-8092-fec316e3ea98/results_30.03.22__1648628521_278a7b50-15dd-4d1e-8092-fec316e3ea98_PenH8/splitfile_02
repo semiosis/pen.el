@@ -1,0 +1,9 @@
+https://hackage.haskell.org/package/containers-0.4.0.0/docs/doc-index-Z.html&sa=U&ved=2ahUKEwiRh72rr-32AhVbJEQIHUB7CpEQFnoECAgQAg&usg=AOvVaw3vnFNDFH3L_qFdMQSRA_r_
+
+
+   The containers package defines a typeclass Container, which allows
+   you to make generic containers. The containers module defines
+   instances of this typeclass for a number of standard containers
+   from the Haskell base library.
+
+   The containers

@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ge" "3:15" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ge" "12:3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ge" "22:18" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ge" "17:19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ge" "21:12" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ge" "49:10" "#" "<==" "zsh"

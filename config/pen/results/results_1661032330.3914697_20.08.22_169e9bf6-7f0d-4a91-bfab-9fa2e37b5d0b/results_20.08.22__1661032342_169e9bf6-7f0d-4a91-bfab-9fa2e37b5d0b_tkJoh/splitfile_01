@@ -1,0 +1,9 @@
+
+
+travelToSchool schoolName = do
+
+-- First, find the path that our instance of Student takes to get to the school.
+
+-- We'll use the helpers created above.
+
+-- NOTE: If you'd like to

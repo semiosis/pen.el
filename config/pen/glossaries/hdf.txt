@@ -1,0 +1,13 @@
+hdfview
+    java visual tool for viewing HDF5 files with
+    some limited functionality of plotting data
+    and the option of exporting subsets in HDF5
+    (extension .h5).
+
+h5ls
+    For listing specified entries of the HDF5
+    file.
+
+h5dump
+    Examine the HDF5 file and export specified
+    groups or datasets in ASCII.

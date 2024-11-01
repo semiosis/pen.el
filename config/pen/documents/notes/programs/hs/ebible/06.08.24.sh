@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-c" "-m" "KJV" "Deuteronomy 6:13" "#" "<==" "withopts"
+cd /root/notes;  "ebible" "-m" "ESV" "John 15:9-17" "#" "<==" "John"
+cd /root/notes;  "ebible" "-m" "ESV" "Ephesians 4:22-28" "#" "<==" "Ephesians"
+cd /root/notes;  "ebible" "-c" "-m" "KJV" "Isaiah 30:1" "#" "<==" "withopts"
+cd /root/notes;  "ebible" "-c" "-m" "KJV" "Psalms 2:7" "#" "<==" "withopts"
+cd /root/notes;  "ebible" "-c" "-m" "KJV" "Isaiah 7:14" "#" "<==" "withopts"

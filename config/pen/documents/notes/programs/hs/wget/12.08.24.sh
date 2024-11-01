@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=gDZz0U6ytjo" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.gotquestions.org/Jesus-our-brother.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=6dB9hygVhRc&t=123" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=lr9zJYw9tlc&t=480" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=dekP5VO91hE&t=397" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=dekP5VO91hE" "#" "<==" "pen-ci"

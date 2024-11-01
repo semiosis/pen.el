@@ -1,0 +1,17 @@
+
+
+fi
+
+}
+
+    ;;
+
+    -*) {
+
+printf '%s: invalid flag: %s
+
+' "${BASH_SOURCE}" "$flag"
+
+exit 1
+
+}

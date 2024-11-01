@@ -1,0 +1,10 @@
+"async/go-loop" is a macro that takes a function and a collection of
+values. The function is called with the values in the collection,
+and the collection is repeatedly iterated over until the function
+returns a falsey value.
+
+The function is called in a go thread, and the results of the
+function are put into a channel. The collection is then repeatedly
+iterated over, and each value is put into the channel.
+
+The function is called with the current value,

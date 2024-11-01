@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Philippians" "2:12-13" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Philippians" "2:12-13" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Philippians" "3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Philippians" "3:9-13" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Philippians" "3:9-13" "#" "<==" "zsh"

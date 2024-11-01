@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "show-pic" "/root/.pen/documents/notes/countdown_logo_email.jpg" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "show-pic" "/root/.pen/documents/notes/feh_1433844_000001_image001.jpg" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "show-pic" "/root/.pen/documents/notes/feh_1433844_000001_image001.jpg" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "show-pic" "/root/.pen/documents/notes/image001.jpg" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "show-pic" "/root/.pen/documents/notes/countdown_logo_email.jpg" "#" "<==" "bash"

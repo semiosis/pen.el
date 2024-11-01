@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el;  "ranger" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-truthnetwork-com-/www.truthnetwork.com/show;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/devotionals/vision.org.au/the-word-for-today-reading/become-a-conduit-2;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/devotionals;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/devotionals/the-word-for-today-reading;  "ranger" "#" "<==" "zsh"

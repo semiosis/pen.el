@@ -1,0 +1,8 @@
+|
+    awk '{
+      if (match($0, /^#+/)) {
+        print "Comment: " $0
+      } else if (match($0, /^\s*$/)) {
+        print "Blank: " $0
+      } else if (match($0, /^\s*\w+\s*=\s*[^=]+$/)) {
+        print "Assignment:

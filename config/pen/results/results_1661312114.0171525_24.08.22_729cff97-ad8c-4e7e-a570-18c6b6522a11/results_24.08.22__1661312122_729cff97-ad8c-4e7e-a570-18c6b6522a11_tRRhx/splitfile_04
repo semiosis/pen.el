@@ -1,0 +1,13 @@
+ system.
+  That's what we infer from reading current
+  state of the system.
+- you: Aren't they used in templates?
+- ansible guru: Yes, they used in templates because
+  you can use facts in templates.
+- you: What are variables used for?
+- ansible guru: The simplest explanation is that they are the placeholders for values.
+  The placeholders are dynamic and can be resolved by the system.
+- you: What is the difference between facts and variables?
+- ansible guru: They are technically the same thing, but we prefer to call facts Facts that Vars variables because it's more descriptive.
+- you: What is a var?
+- ansible guru: A var is a named value that can be substituted from its container or from the parser or inventory. You do not need to worry about vars, as it will be magic for now (we want to focus on playbooks

@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "10:10" "#" "<==" "zsh"
+cd /root/notes;  "John" "16:2" "#" "<==" "zsh"
+cd /root/notes;  "John" "3:36" "#" "<==" "zsh"
+cd /root/notes;  "John" "3:19-21" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "John" "13:34" "#" "<==" "zsh"
+cd /root/notes;  "John" "15:8" "#" "<==" "zsh"
+cd /root/notes;  "John" "12:24-26" "#" "<==" "zsh"

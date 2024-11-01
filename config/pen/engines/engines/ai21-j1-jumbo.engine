@@ -1,0 +1,13 @@
+engine-title: AI21 J1-Jumbo
+include: AI21
+model: j1-jumbo
+# engine-min-tokens: 64 ?
+default-tokens: 256
+engine-max-n-completions: 16
+engine-max-tokens: 2048
+engine-max-generated-tokens: 256
+engine-whitespace-support: yes
+foundation: true
+libre-dataset: no
+libre-model: no
+local: no

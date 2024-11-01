@@ -1,0 +1,10 @@
+
+You have to be able to access that computer system without a password.
+
+"""
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()

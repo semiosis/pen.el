@@ -1,0 +1,514 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Mon, 28 Oct 2024 19:41:12 GMT
+Last-Modified: Sun, 27 Oct 2024 20:53:02 GMT
+ETag: W/"298a9d9b5f297ea9545b150fe9bd2103"
+x-amz-server-side-encryption: AES256
+Server: AmazonS3
+Vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 3aea472dcaab0d179b019b33b044a9be.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD62-P1
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: vkYNqJjGIAEzIVQDAlrOoKoXWzf79QTZiXcdErfjmXB0XdfKqjHBHA==
+
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Nov 13 2015 01:48:45 GMT+0000 (UTC) -->
+<html lang="en" data-wf-site="56414d6fc8c27cad0f4e12e7" data-wf-page="5643ac587b1f28dc58ed6b89">
+<head>
+  <meta charset="utf-8">
+  <title>Clojure - Transducers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <meta name="google-site-verification" content="a30CDuC9UBifM7EL575LK9a4TEE6mNfWbKqXIoSZChg" />
+  <meta name="google-site-verification" content="iXqpntr4CN3JRM1sVm5D_YzZw8bFRizBaTVycwqii2E" />
+  
+  
+  <meta name="keywords" content="clojure,programming" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=PT+Serif:ital@0;1&&family=Source+Code+Pro:wght@500&display=swap">
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/clojureorg.webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/asciidoctor-mod.css">
+  <link type="text/css" href="/css/default-en.css" rel="stylesheet">
+  <link type="text/css" href="/css/default.css" rel="stylesheet">
+  <link type="text/css" href="/css/search-result.css" rel="stylesheet">
+  <link rel="alternate" type="application/atom+xml" title="News" href="/feed.xml" />
+  <script type="text/javascript" src="/js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/images/clojure-logo-icon-32.png">
+  <link rel="apple-touch-icon" href="/images/clojure-logo-icon-256.png">
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://cognitect.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '9']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='//cdn.matomo.cloud/cognitect.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+<!-- End Matomo Code -->
+  <script type="text/javascript">
+    function searchClj(obj) {
+      let e = document.getElementById("searchType");
+      document.getElementById("hiddenSearch").value=e.value;
+    }
+  </script>
+</head>
+<body>
+  <div data-collapse="none" data-animation="default" data-duration="400" data-contain="1" class="w-nav clj-navbar">
+    <div class="w-container">
+      <a href="/index" class="w-nav-brand w-clearfix clj-logo-container"><img width="60" src="/images/clojure-logo-120b.png" class="clj-logo" alt="Clojure logo">
+        <div class="clj-logo-text">Clojure</div>
+      </a>
+      <nav role="navigation" class="w-nav-menu clj-nav-menu"><a href="/about/rationale" class="w-nav-link clj-nav-link">Overview</a><a href="/reference/documentation" class="w-nav-link clj-nav-link">Reference‍</a><a href="/api/api" class="w-nav-link clj-nav-link">API</a><a href="/releases/downloads" class="w-nav-link clj-nav-link">Releases</a><a href="/guides/guides" class="w-nav-link clj-nav-link">Guides</a><a href="/community/success_stories" class="w-nav-link clj-nav-link">Community</a><a href="/dev/dev" class="w-nav-link clj-nav-link">Dev</a><a href="/news/news" class="w-nav-link clj-nav-link">News</a><a href="#" data-ix="search-click-trigger" class="w-nav-link clj-nav-link clj-nav-search">&#xed11;</a>
+      </nav>
+      <div class="w-nav-button clj-menu-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div data-ix="hide-search" class="w-section clj-search-section">
+    <div class="w-container">
+      <div class="w-form clj-search-form-wrapper">
+        <form id="wf-form-Search-Form" name="wf-form-Search-Form" action="https://duckduckgo.com/" method="get" onSubmit="searchClj(this)">
+          <div class="w-row">
+            <div class="w-col w-col-6 w-col-small-6">
+              <input id="hiddenSearch" type="hidden" name="sites" value="www.clojure.org">
+              <input name="q" id="q" type="text" placeholder="Search clojure.org reference, guides, and API" title="Search text" autofocus="autofocus" class="w-input clj-search-input">
+            </div>
+            <div class="w-col w-col-3 w-col-small-3 clj-search-type">
+              <select name="searchType" id="searchType" class="w-select clj-search-type">
+                <option value="www.clojure.org">clojure.org</option>
+                <option value="ask.clojure.org">ask.clojure.org</option>
+              </select>
+            </div>
+            <div class="w-col w-col-3 w-col-small-3">
+              <input type="submit" value="Search" class="w-button clj-search-submit">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<div class="w-section clj-content-section">
+  <div class="w-container">
+    <div class="clj-section-nav-container">
+      <div data-collapse="small" data-animation="default" data-duration="200" data-contain="1" class="w-nav clj-section-navbar">
+        <div class="w-container">
+          <nav role="navigation" class="w-nav-menu clj-section-nav-menu">
+            <a href="reader" class="w-nav-link clj-section-nav-item-link">The Reader</a>
+            <a href="repl_and_main" class="w-nav-link clj-section-nav-item-link">The REPL and main</a>
+            <a href="evaluation" class="w-nav-link clj-section-nav-item-link">Evaluation</a>
+            <a href="special_forms" class="w-nav-link clj-section-nav-item-link">Special Forms</a>
+            <a href="macros" class="w-nav-link clj-section-nav-item-link">Macros</a>
+            <a href="other_functions" class="w-nav-link clj-section-nav-item-link">Other Functions</a>
+            <a href="data_structures" class="w-nav-link clj-section-nav-item-link">Data Structures</a>
+            <a href="datatypes" class="w-nav-link clj-section-nav-item-link">Datatypes</a>
+            <a href="sequences" class="w-nav-link clj-section-nav-item-link">Sequences</a>
+            <a href="transients" class="w-nav-link clj-section-nav-item-link">Transients</a>
+            <a href="transducers" class="w-nav-link clj-section-nav-item-link">Transducers</a>
+            <a href="multimethods" class="w-nav-link clj-section-nav-item-link">Multimethods and Hierarchies</a>
+            <a href="protocols" class="w-nav-link clj-section-nav-item-link">Protocols</a>
+            <a href="metadata" class="w-nav-link clj-section-nav-item-link">Metadata</a>
+            <a href="namespaces" class="w-nav-link clj-section-nav-item-link">Namespaces</a>
+            <a href="libs" class="w-nav-link clj-section-nav-item-link">Libs</a>
+            <a href="vars" class="w-nav-link clj-section-nav-item-link">Vars and Environments</a>
+            <a href="refs" class="w-nav-link clj-section-nav-item-link">Refs and Transactions</a>
+            <a href="agents" class="w-nav-link clj-section-nav-item-link">Agents</a>
+            <a href="atoms" class="w-nav-link clj-section-nav-item-link">Atoms</a>
+            <a href="reducers" class="w-nav-link clj-section-nav-item-link">Reducers</a>
+            <a href="java_interop" class="w-nav-link clj-section-nav-item-link">Java Interop</a>
+            <a href="compilation" class="w-nav-link clj-section-nav-item-link">Compilation and Class Generation</a>
+            <a href="other_libraries" class="w-nav-link clj-section-nav-item-link">Other Libraries</a>
+            <a href="lisps" class="w-nav-link clj-section-nav-item-link">Differences with Lisps</a>
+            <a href="clojure_cli" class="w-nav-link clj-section-nav-item-link">Clojure CLI</a>
+            <a href="deps_edn" class="w-nav-link clj-section-nav-item-link">deps.edn</a>
+          </nav>
+          <div data-ix="toggle-section-nav-icon" class="w-nav-button w-clearfix clj-section-nav-toggle">
+            <div class="clj-section-nav-text">Transducers</div>
+            <div class="clj-section-nav-icon-closed">&#xeab2;</div>
+            <div data-ix="init-hide-section-nav-icon-open" class="clj-section-nav-icon-open">&#xeab9;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clj-content-container">
+
+      <h1>Transducers</h1>
+
+      <div id="preamble">
+<div class="sectionbody">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_terminology">Terminology</a></li>
+<li><a href="#_defining_transformations_with_transducers">Defining Transformations With Transducers</a>
+<ul class="sectlevel2">
+<li><a href="#_using_transducers">Using Transducers</a></li>
+<li><a href="#_transduce">transduce</a></li>
+<li><a href="#_eduction">eduction</a></li>
+<li><a href="#_into">into</a></li>
+<li><a href="#_sequence">sequence</a></li>
+</ul>
+</li>
+<li><a href="#_creating_transducers">Creating Transducers</a>
+<ul class="sectlevel2">
+<li><a href="#_early_termination">Early termination</a></li>
+<li><a href="#_transducers_with_reduction_state">Transducers with reduction state</a></li>
+</ul>
+</li>
+<li><a href="#_creating_transducible_processes">Creating Transducible Processes</a></li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Transducers are composable algorithmic transformations. They are independent from the context of their input and output sources and specify only the essence of the transformation in terms of an individual element. Because transducers are decoupled from input or output sources, they can be used in many different processes - collections, streams, channels, observables, etc. Transducers compose directly, without awareness of input or creation of intermediate aggregates.</p>
+</div>
+<div class="paragraph">
+<p>Also see the introductory <a href="https://clojure.org/news/2014/08/06/transducers-are-coming">blog post</a>, this <a href="https://www.youtube.com/watch?v=6mTbuzafcII">video</a>, and this section of the FAQ <a href="https://clojure.org/guides/faq#transducers_vs_seqs">about good use cases for transducers</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminology"><a class="anchor" href="#_terminology"></a>Terminology</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <em>reducing function</em> is the kind of function you&#8217;d pass to <strong>reduce</strong> - it is a function that takes an accumulated result and a new input and returns a new accumulated result:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">;; reducing function signature
+whatever, input -&gt; whatever</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A <em>transducer</em> (sometimes referred to as xform or xf) is a transformation from one reducing function to another:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">;; transducer signature
+(whatever, input -&gt; whatever) -&gt; (whatever, input -&gt; whatever)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_defining_transformations_with_transducers"><a class="anchor" href="#_defining_transformations_with_transducers"></a>Defining Transformations With Transducers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most sequence functions included in Clojure have an arity that produces a transducer. This arity omits the input collection; the inputs will be supplied by the process applying the transducer. <em>Note: this reduced arity is not currying or partial application.</em></p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(filter odd?) ;; returns a transducer that filters odd
+(map inc)     ;; returns a mapping transducer for incrementing
+(take 5)      ;; returns a transducer that will take the first 5 values</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Transducers compose with ordinary function composition. A transducer performs its operation before deciding whether and how many times to call the transducer it wraps. The recommended way to compose transducers is with the existing <strong>comp</strong> function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(def xf
+  (comp
+    (filter odd?)
+    (map inc)
+    (take 5)))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The transducer xf is a transformation stack that will be applied by a process to a series of input elements. Each function in the stack is performed <em>before</em> the operation it wraps. Composition of the transformer runs right-to-left but builds a transformation stack that runs left-to-right (filtering happens before mapping in this example).</p>
+</div>
+<div class="paragraph">
+<p>As a mnemonic, remember that the ordering of transducer functions in <strong>comp</strong> is the same order as sequence transformations in <strong>->></strong>. The transformation above is equivalent to the sequence transformation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(-&gt;&gt; coll
+     (filter odd?)
+     (map inc)
+     (take 5))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following functions produce a transducer when the input collection is omitted:
+<a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/map">map</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/cat">cat</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/mapcat">mapcat</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/filter">filter</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/remove">remove</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/take">take</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/take-while">take-while</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/take-nth">take-nth</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/drop">drop</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/drop-while">drop-while</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/replace">replace</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/partition-by">partition-by</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/partition-all">partition-all</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/keep">keep</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/keep-indexed">keep-indexed</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/map-indexed">map-indexed</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/distinct">distinct</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/interpose">interpose</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/dedupe">dedupe</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/random-sample">random-sample</a></p>
+</div>
+<div class="sect2">
+<h3 id="_using_transducers"><a class="anchor" href="#_using_transducers"></a>Using Transducers</h3>
+<div class="paragraph">
+<p>Transducers can be used in many contexts (see below for how to create new ones).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transduce"><a class="anchor" href="#_transduce"></a>transduce</h3>
+<div class="paragraph">
+<p>One of the most common ways to apply transducers is with the <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/transduce">transduce</a> function, which is analogous to the standard reduce function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(transduce xform f coll)
+(transduce xform f init coll)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>transduce</strong> will immediately (not lazily) reduce over <strong>coll</strong> with the transducer <strong>xform</strong> applied to the reducing function <strong>f</strong>, using init as the initial value if supplied or (f) otherwise. f supplies the knowledge of how to accumulate the result, which occurs in the (potentially stateful) context of the reduce.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(def xf (comp (filter odd?) (map inc)))
+(transduce xf + (range 5))
+;; =&gt; 6
+(transduce xf + 100 (range 5))
+;; =&gt; 106</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The composed xf transducer will be invoked left-to-right with a final call to the reducing function f. In the last example, input values will be filtered, then incremented, and finally summed.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/content/reference/transducers/xf.png" alt="Nested transformations">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_eduction"><a class="anchor" href="#_eduction"></a>eduction</h3>
+<div class="paragraph">
+<p>To capture the process of applying a transducer to a coll, use the <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/eduction">eduction</a> function. It takes any number of xforms and a final coll and returns a reducible/iterable application of the transducer to the items in coll. These applications will be performed each time reduce/iterator is called.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(def iter (eduction xf (range 5)))
+(reduce + 0 iter)
+;; =&gt; 6</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_into"><a class="anchor" href="#_into"></a>into</h3>
+<div class="paragraph">
+<p>To apply a transducer to an input collection and construct a new output collection, use <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/into">into</a> (which efficiently uses reduce and transients if possible):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(into [] xf (range 1000))</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sequence"><a class="anchor" href="#_sequence"></a>sequence</h3>
+<div class="paragraph">
+<p>To create a sequence from the application of a transducer to an input collection, use <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/sequence">sequence</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(sequence xf (range 1000))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The resulting sequence elements are incrementally computed. These sequences will consume input incrementally as needed and fully realize intermediate operations. This behavior differs from the equivalent operations on lazy sequences.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_transducers"><a class="anchor" href="#_creating_transducers"></a>Creating Transducers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Transducers have the following shape (custom code in "&#8230;&#8203;"):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(fn [rf]
+  (fn ([] ...)
+      ([result] ...)
+      ([result input] ...)))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Many of the core sequence functions (like map, filter, etc) take operation-specific arguments (a predicate, function, count, etc) and return a transducer of this shape closing over those arguments. In some cases, like <strong>cat</strong>, the core function <em>is</em> a transducer function and does not take an <strong>rf</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The inner function is defined with 3 arities used for different purposes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Init</strong> (arity 0) - should call the init arity on the nested transform <strong>rf</strong>, which will eventually call out to the transducing process.</p>
+</li>
+<li>
+<p><strong>Step</strong> (arity 2) - this is a standard reduction function but it is expected to call the <strong>rf</strong> step arity 0 or more times as appropriate in the transducer. For example, filter will choose (based on the predicate) whether to call <strong>rf</strong> or not. map will always call it exactly once. cat may call it many times depending on the inputs.</p>
+</li>
+<li>
+<p><strong>Completion</strong> (arity 1) - some processes will not end, but for those that do (like <strong>transduce</strong>), the completion arity is used to produce a final value and/or flush state. This arity must call the <strong>rf</strong> completion arity exactly once.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>An example use of <strong>completion</strong> is <strong>partition-all</strong>, which must flush any remaining elements at the end of the input. The <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/completing">completing</a> function can be used to convert a reducing function to a transducing function by adding a default completion arity.</p>
+</div>
+<div class="sect2">
+<h3 id="_early_termination"><a class="anchor" href="#_early_termination"></a>Early termination</h3>
+<div class="paragraph">
+<p>Clojure has a mechanism for specifying early termination of a reduce:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/reduced">reduced</a> - takes a value and returns a <em>reduced</em> value indicating reduction should stop</p>
+</li>
+<li>
+<p><a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/reduced?">reduced?</a> - returns true if the value was created with <em>reduced</em></p>
+</li>
+<li>
+<p><a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/deref">deref</a> or @ can be used to retrieve the value inside a <em>reduced</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A process that uses transducers must check for and stop when the step function returns a reduced value (more on that in Creating Transducible Processes). Additionally, a transducer step function that uses a nested reduce must check for and convey reduced values when they are encountered. (See the implementation of cat for an example.)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transducers_with_reduction_state"><a class="anchor" href="#_transducers_with_reduction_state"></a>Transducers with reduction state</h3>
+<div class="paragraph">
+<p>Some transducers (such as <strong>take</strong>, <strong>partition-all</strong>, etc) require state during the reduction process. This state is created each time the transducible process applies the transducer. For example, consider the dedupe transducer that collapses a series of duplicate values into a single value. This transducer must remember the previous value to determine whether the current value should be passed on:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="clojure">(defn dedupe []
+  (fn [xf]
+    (let [prev (volatile! ::none)]
+      (fn
+        ([] (xf))
+        ([result] (xf result))
+        ([result input]
+          (let [prior @prev]
+            (vreset! prev input)
+              (if (= prior input)
+                result
+                (xf result input))))))))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In dedupe, <strong>prev</strong> is a stateful container that stores the previous value during the reduction. The prev value is a volatile for performance, but it could also be an atom. The prev value will not be initialized until the transducing process starts (in a call to <strong>transduce</strong> for example). The stateful interactions are therefore contained within the context of the transducible process.</p>
+</div>
+<div class="paragraph">
+<p>In the completion step, a transducer with reduction state should flush state prior to calling the nested transformer&#8217;s completion function, unless it has previously seen a reduced value from the nested step in which case pending state should be discarded.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_transducible_processes"><a class="anchor" href="#_creating_transducible_processes"></a>Creating Transducible Processes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Transducers are designed to be used in many kinds of processes. A transducible process is defined as a succession of steps where each step ingests an input. The source of the inputs is specific to each process (from a collection, an iterator, a stream, etc). Similarly, the process must choose what to do with the outputs produced by each step.</p>
+</div>
+<div class="paragraph">
+<p>If you have a new context for applying transducers, there are a few general rules to be aware of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If a step function returns a <em>reduced</em> value, the transducible process must not supply any more inputs to the step function. The reduced value must be unwrapped with deref before completion.</p>
+</li>
+<li>
+<p>A completing process must call the completion operation on the final accumulated value exactly once.</p>
+</li>
+<li>
+<p>A transducing process must encapsulate references to the function returned by invoking a transducer - these may be stateful and unsafe for use across threads.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="clj-prev-next-container">
+  <a href="transients" class="clj-prev-link"><span class="clj-prevnext-link-icon">&#xeab5;</span>&nbsp;Transients</a>
+  <a href="multimethods" class="clj-next-link">Multimethods and Hierarchies&nbsp;<span class="clj-prevnext-link-icon">&#xeab8;</span></a>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="w-section clj-footer">
+    <div class="w-container clj-footer-links-container">
+      <div class="w-row">
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Community</h6>
+            <a href="/community/resources" class="clj-footer-link">Resources</a>
+            <a href="/community/contributing" class="clj-footer-link">Contributing</a>
+            <a href="/community/companies" class="clj-footer-link">Companies</a>
+            <a href="/community/contributing_site" class="clj-footer-link">Site</a>
+          <h6 class="clj-footer-heading">Legal</h6>
+            <a href="/community/license" class="clj-footer-link">License</a>
+            <a href="/privacy" class="clj-footer-link">Privacy Policy</a>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Documentation</h6>
+            <a href="/about/rationale" class="clj-footer-link">Overview</a>
+            <a href="/reference/documentation" class="clj-footer-link">Reference</a>
+            <a href="/api/api" class="clj-footer-link">API</a>
+            <a href="/guides/guides" class="clj-footer-link">Guides</a>
+            <a href="/community/libraries" class="clj-footer-link">Libraries &amp; Tools</a>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Updates</h6>
+            <a href="/news/news" class="clj-footer-link">News</a>
+            <a href="/community/events" class="clj-footer-link">Events</a>
+          <h6 class="clj-footer-heading">ETC</h6>
+            <a href="https://www.youtube.com/user/ClojureTV" class="clj-footer-link">ClojureTV</a>
+            <a href="/community/books" class="clj-footer-link">Books</a>
+            <a href="/community/swag" class="clj-footer-link">Swag</a>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Code</h6>
+            <a href="/releases/downloads" class="clj-footer-link">Releases</a>
+            <a href="https://github.com/clojure/clojure/" class="clj-footer-link">Source</a>
+            <a href="http://clojurescript.org" class="clj-footer-link">ClojureScript</a>
+            <a href="/about/clojureclr" class="clj-footer-link">ClojureCLR</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-container clj-footer-legal-container">
+      <div class="w-clearfix clj-footer-legal">
+        <div class="clj-footer-logo">&nbsp;</div>
+        <div class="clj-footer-legal-links">
+          <div class="clj-footer-copyright">Copyright 2008-2022 Rich Hickey | <a class="clj-footer-sub-link" href="/privacy">Privacy Policy</a><br/>Logo &amp; site design by Tom Hickey
+          </div>
+          <div class="clj-footer-designed-by">Published 2024-10-27<br/>Update <a class="clj-footer-sub-link" href="https://github.com/clojure/clojure-site/blob/master/content/reference/transducers.adoc">this page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/webflow.js"></script>
+  <script type="text/javascript" src="/js/highlight.pack.js"></script>
+  <script>
+  $(document).ready( (event) => {
+    $('pre code').each((index, obj) => {
+      $(obj).addClass($(obj).attr("data-lang"));
+      hljs.highlightBlock(obj);
+    });
+  });
+  </script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

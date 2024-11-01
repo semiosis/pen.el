@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: header standard Vim script file header
+# group: vimsnippet
+# key: vs-snippet
+# --
+" File: ${1:`expand('%:t')`}
+" Author: ${2:`g:snips_author`}
+" Description: ${3}
+${0:" Last Modified: `strftime("%B %d, %Y")`}

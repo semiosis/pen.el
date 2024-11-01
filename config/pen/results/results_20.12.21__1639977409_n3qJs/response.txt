@@ -1,0 +1,5 @@
+Last login: Fri Jun 12 12:37:39 2020 from 192.168.0.100
+mele:~ #"""
+
+EXAMPLE_CTRL_C = "abort: Interrupted"
+EXAMPLE_CTRL_D = "^D"

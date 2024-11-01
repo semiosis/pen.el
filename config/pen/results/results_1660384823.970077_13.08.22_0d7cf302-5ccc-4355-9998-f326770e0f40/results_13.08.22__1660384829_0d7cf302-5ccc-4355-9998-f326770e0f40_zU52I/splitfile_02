@@ -1,0 +1,5 @@
+The above code is a module declaration. It is a module named Main.
+The module declaration is followed by import statements.
+The import statement imports the module Options.
+The module Options contains the type class Applicative.
+The type class Applicative is used in the import statement.

@@ -1,0 +1,6 @@
+cd /root/notes;  "fargs" "-nbd" "--" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "fargs" "-nbd" "--" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "fargs" "--" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "fargs" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "fargs" "-nbd" "--" "Romans" "3:21-26" "#" "<==" "zsh"
+cd /root/notes;  "fargs" "-nbd" "--" "Romans" "3:21-26" "#" "<==" "zsh"

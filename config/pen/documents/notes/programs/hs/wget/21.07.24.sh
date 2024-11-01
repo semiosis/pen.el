@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons;  "wget" "-qO-" "https://www.youtube.com/watch?v=N2aJ1q-SBr4&t=55s" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons;  "wget" "-qO-" "https://www.youtube.com/watch?v=ibqu0-Pz9xs" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=ibqu0-Pz9xs&t=52" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons;  "wget" "-qO-" "https://www.youtube.com/watch?v=XBoAuo4z6yg" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=yqnHvlgqVEA&t=383s" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.desiringgod.org/articles/how-to-win-the-war-for-your-mind" "#" "<==" "pen-ci"

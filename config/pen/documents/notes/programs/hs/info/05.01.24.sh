@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "info" "-q" "printf" "#" "<==" "man"
+cd /root/.emacs.d/host/pen.el;  "info" "-q" "pen" "#" "<==" "man"
+cd /root/.emacs.d/host/pen.el;  "info" "-q" "pen" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"

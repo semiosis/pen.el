@@ -1,0 +1,11 @@
+"defroutes" is a function that takes a function as its first argument.
+
+The function passed to "defroutes" is used as the handler for the routes
+defined within "defroutes".
+
+The function passed to "defroutes" should take a request as its argument and
+return a response.
+
+The function passed to "defroutes" is not evaluated until it is used.
+
+"defroutes" returns a function that can be used

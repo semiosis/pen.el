@@ -1,0 +1,23 @@
+
+  (interactive)
+  (let ((nuke-buffer (get-buffer-create "*nuke*")))
+    (set-buffer nuke-buffer)
+    (erase-buffer)
+    (insert "Nuking the site...")
+    (sit-for 1)
+    (insert "...done.\n")
+    (sit-for 1)
+    (insert "Nuking the site...")
+    (sit-for 1)
+    (insert "...done.\n")
+    (sit-for 1)
+    (insert "Nuking the site...")
+    (sit-for 1)
+    (insert "...done.\n")
+    )
+
+  ;; Now that the nukes are done, we can start up the site again.
+
+  ;; Start up the site again.
+
+  ;; Now that the nukes are done, we can start up

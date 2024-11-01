@@ -1,0 +1,6 @@
+nsfa " "$@")")))"
+
+# my default elisp is
+elisp="(progn (pen-term (concat "(nsfa " "$@")")))"
+
+# Add this to default elisp

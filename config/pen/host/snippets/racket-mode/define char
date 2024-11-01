@@ -1,0 +1,4 @@
+# key: dc
+# name: define char
+# --
+(define ${1:up-char} #${0:\\\(})

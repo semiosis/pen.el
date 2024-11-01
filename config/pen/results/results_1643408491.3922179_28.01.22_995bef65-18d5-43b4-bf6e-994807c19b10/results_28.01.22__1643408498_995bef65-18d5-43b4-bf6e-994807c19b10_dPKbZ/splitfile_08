@@ -1,0 +1,12 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt~  harry.txt.bak  harry.txt.bak~
+» cat harry.txt
+The boy who lived
+» cat harry.txt~
+The boy who lived
+» cat harry.txt.bak
+The boy who lived
+» cat harry.txt.bak~
+The boy who lived
+» cd ../..

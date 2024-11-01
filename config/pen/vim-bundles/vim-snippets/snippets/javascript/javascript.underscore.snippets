@@ -1,0 +1,4 @@
+snippet bind
+	var func = function(greeting){ return greeting + ': ' + this.name };
+	func = _.bind(func, {name: 'moe'}, 'hi');
+	func();

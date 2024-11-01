@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: concat
+# group: learning
+# key: cc
+# --
+(str "Hello " name)

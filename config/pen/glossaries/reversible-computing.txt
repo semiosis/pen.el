@@ -1,0 +1,29 @@
+unparser
+    In computing, an unparser is a system that
+    constructs a set of characters or image
+    components from a given parse tree.
+
+    An unparser is in effect the reverse of a
+    traditional parser that takes a set of
+    string of characters and produces a parse
+    tree.
+
+    Unparsing generally involves the
+    application of a specific set of rules to
+    the parse tree as a "tree walk" takes
+    place.
+
+    Given that the tree may involve both
+    textual and graphic elements, the unparser
+    may have two separate modules, each of
+    which handles the relevant components.
+
+    In such cases the "master unparser" looks
+    up the "master unparse table" to determine
+    if a given nested structure should be
+    handled by one module, or the other.
+
+    See also
+    - "Bidirectional transformation"
+    - "Formal grammar"
+    - "Natural language generation"

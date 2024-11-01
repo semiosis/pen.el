@@ -1,0 +1,62 @@
+task: "NLP unparser: Generate text using POS tags"
+doc: "Generate text given a list of POS tags"
+tags: nlp-task prose
+prompt-version: 1
+prompt: |+
+  Parse tree and matching passage:
+  <delim>
+  1) Parts of speech tagging:
+  <delim>
+  NP V Det N
+  <delim>
+  (NP)John (VB)hit (Det)the (N)ball
+  <delim>
+  (NP)Noun (V)Verb (Det)Determiner (N)Noun
+  <delim>  
+  2) Parts of speech tagging:
+  <delim>
+  NP V DT N IN PRO$ N
+  <delim>
+  (NP)I (V)drive (DT)a (N)car (IN)to (PRO$)my (N)college
+  <delim>
+  (NP)NounPhrase (V)Verb (DT)Determiner (N)Noun (IN)Preposition (PRO$)PossessivePronoun (N)Noun
+  <delim>
+  4) Parts of speech tagging:
+  <delim>
+  NAME V ART N
+  <delim>
+  (NAME)Shane (V)ate (ART)the (N)tiger
+  <delim>
+  (NAME)PersonalPronoun (V)Verb (ART)Article (N)Noun
+  <delim>
+  5) Parts of speech tagging:
+  <delim>
+  <POS tags>
+  <delim>
+  <:pp>(<first tag>)
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+# TODO I should also allow vars to access vars when evaluating
+vars:
+- "POS tags"
+# - "first tag"
+# var-defaults:
+# - ~
+# - "(car (s-split \" \" pos-tags))"
+examples:
+- "JJ NP DT JJ N"
+defs:
+- first tag: "(car (s-split \" \" pos-tags))"
+- validator-regex: "(mapcar (lambda (s) (concat \"\\\\(\" s \"\\\\)\" \"[^\\\\(]+\")) (s-split \" \" pos-tags))"
+validator: "grep -qP \"^<validator-regex>$\""
+filter: on
+completion: off
+insertion: off
+external-related:
+- "https://www.ling.upenn.edu/hist-corpora/annotation/labels.htm"
+postpostprocessor: sed 's/([^)]\+)//g'

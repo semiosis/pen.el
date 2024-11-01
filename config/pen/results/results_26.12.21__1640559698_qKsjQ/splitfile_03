@@ -1,0 +1,8 @@
+
+;;; This is a comment
+
+(defun print-again-but-with-empathy (x)
+  (print x))
+
+(print-again-but-with-empathy "Hello, World!")
+

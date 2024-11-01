@@ -1,0 +1,16 @@
+title: List rhyming words starting with letter - homophones
+tags: fun prose
+prompt: "A homophone is defined as a word that is pronounced the same as another word
+  but \ndiffers in meaning.\n\nHere is a list of homophones:\n1. Accept/Except\n2.
+  Affect/Effect\n3. Allude/Elude\n4. Alter/Altar\n5. A lot/Allot\n\nHere's a list
+  of homophones starting with the letter \"<1>\":\n"
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- letter
+examples:
+- M

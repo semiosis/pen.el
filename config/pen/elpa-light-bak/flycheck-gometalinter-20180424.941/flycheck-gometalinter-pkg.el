@@ -1,0 +1,2 @@
+;;; Generated package description from flycheck-gometalinter.el  -*- no-byte-compile: t -*-
+(define-package "flycheck-gometalinter" "20180424.941" "flycheck checker for gometalinter" '((emacs "24") (flycheck "0.22")) :commit "1e3eede14da405b914a7d8b00300846e4393cb83" :authors '(("Diep Pham" . "me@favadi.com")) :maintainer '("Diep Pham" . "me@favadi.com") :keywords '("convenience" "tools" "go") :url "https://github.com/favadi/flycheck-gometalinter")

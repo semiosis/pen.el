@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: algorithm
+# group: latext
+# key: alg
+# --
+#+BEGIN_SRC latex -n :f texalg2png latex-self-attention :async :results raw drawer
+  \\Function{Self-attention}{\${word}_i\$}
+  \\State \$X_i\\gets embed({word}_i)\$
+  \\State \$q_i\\gets X_i\\cdotp W^Q\$
+  \\State \$k_i\\gets X_i\\cdotp W^K\$
+  \\State \$v_i\\gets X_i\\cdotp W^V\$
+  \\For{\$\\textrm{every other word }j\$}
+  \\State \$\\mathit{score}_\\mathit{i,j}\\gets q_i \\cdot k_j\$
+  \\EndFor
+  \\EndFunction
+  \\newline
+  \\Function{Self-attention-layer}{\$sentence\$}
+  \\For{\$\\textrm{each } word_i \\textrm{ in } sentence\$}
+  \\State \$\\mathit{self\\char`_attention}_\\mathit{i}\\gets \\verb|Self-attention|({word}_i)\$
+  \\EndFor
+  \\EndFunction
+#+END_SRC

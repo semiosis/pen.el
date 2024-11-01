@@ -1,0 +1,3 @@
+
+root@pen-mele:~/.pen/documents/notes/sbcl# ls -a /
+.  ..  bin  boot  dev  etc  home  lib  lib64  media  mnt

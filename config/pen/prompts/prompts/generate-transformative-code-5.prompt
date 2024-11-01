@@ -1,0 +1,76 @@
+task: "Generate transformative code"
+doc: "Given input, output and a tool, generate transformative code"
+tags: code
+prompt-version: 1
+notes:
+- '"into the style of" is important here, because otherwise the output needs to be the exact output I already need.'
+- 'With "into the style of", the prompt generalises a bit more.'
+- inductive programming
+- reverse programming
+- imaginary programming
+prompt: |+
+    * Here is some <sl:input lang>
+    
+    Example 1:
+    
+    #+BEGIN_SRC <sl:input lang>
+    <input>
+    #+END_SRC
+    
+    * Here is what I want the <input lang> to look like
+    
+    Example 2:
+    
+    #+BEGIN_SRC <sl:output lang>
+    <output>
+    #+END_SRC
+    
+    * This is the <tool> to change example-1.<sl:input lang> into the style of example-2.<sl:output lang>
+    
+    #+BEGIN_SRC
+    cat example-1.<sl:input lang> | <:pp><tool>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: prompt-length
+top-p: 1.0
+stop-sequences:
+- "#+END_SRC"
+cache: on
+n-completions: 10
+vars:
+- "input"
+- "input lang"
+- "output"
+- "output lang"
+- "tool"
+examples:
+- |
+    [
+      "\n\nWhat went wrong?\n\nPossible Issue:\n\nThe sass executable has not been copied into the project. To get sass to work, run the following code:\n\nsudo gem install sass\n\n\n\nThen,",
+      "\n\nThe output should be:\n\n{ \"status\": \"success\", \"data\": { \"id\": \"1\", \"name\": \"Test Name 1\", \"content\": \"Hello World\", \"updated_at\": \"2014-08",
+      "",
+      "\n\nThe output should be formatted so it looks like the image below.\n\nWhat code should be used?\n\nThe code should be written in C++. The functions randint(a,b) and srand(x) should",
+      "\n\nWhat do you want to happen?\n\nCreate a feature branch with a failing test-case.\n\nPush the branch.\n\nOpen a pull request.\n\nA CI system will run the failing test-case and report that"
+    ]
+- "json"
+- |
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": [
+        {
+          "label": "directory-exists?"
+        },
+        {
+          "label": "nack-guard-evt"
+        },
+        {
+          "label": "procedure->method"
+        }
+      ]
+    }
+- "json"
+- "jq"
+info: on
+completion: off
+insertion: off

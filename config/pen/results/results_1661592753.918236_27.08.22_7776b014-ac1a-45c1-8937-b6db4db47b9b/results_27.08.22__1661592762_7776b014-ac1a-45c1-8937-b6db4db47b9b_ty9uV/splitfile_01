@@ -1,0 +1,22 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\t -> (t !! 0, t !! 1))) tuples
+
+  -- Tabularise the rows and print them to stdout
+  mapM_ print $ tabularise rows
+EOD
+
+# python files
+cat draft.py <<EOD
+import csv, sys, itertools
+from itertools import groupby
+
+
+def tabularise(rows):
+    """Convert a list of rows into a table."""
+
+    # Get the width of each column by finding the maximum length of any cell in that column.
+    widths = [max(len(row[i]) for row in rows) for i in range(len(rows[0]))]
+
+    # Create a format string for each column. This will be something like "%-<width>s".

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: read
+# group: bash
+# key: read
+# --
+read -p " [Yn]: " -n 1 -r
+[[ \$REPLY =~ ^[Yy]\$ ]]

@@ -1,0 +1,24 @@
+baseline
+master
+    [branch]
+
+Continuous Deployment
+    A Automated/semi-automated deployment of
+    baseline to production.
+
+drone
+    https://docs.drone.io/pipeline/overview/
+
+    a modern CICD platform that empowers busy
+    teams to automate their build, test and
+    release workflows.
+    
+    Teams that harness Drone release software
+    more frequently and with fewer bugs.
+
+    https://docs.drone.io/pipeline/docker/examples/languages/python/
+
+Buildkite
+    A platform for running fast, secure, and
+    scalable continuous integration pipelines
+    on your own infrastructure.

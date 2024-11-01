@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Isaiah" "27:1" "#" "<==" "zsh"
+cd /usr/local/share/emacs/29.1.50/lisp/progmodes;  "Isaiah" "54:17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Isaiah" "58:6" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Isaiah" "58:4-5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Isaiah" "58:4-6" "#" "<==" "zsh"

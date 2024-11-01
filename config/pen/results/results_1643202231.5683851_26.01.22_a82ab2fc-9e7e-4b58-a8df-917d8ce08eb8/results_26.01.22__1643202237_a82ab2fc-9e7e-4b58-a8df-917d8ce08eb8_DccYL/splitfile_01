@@ -1,0 +1,2 @@
+ J'ajoute la cohérence aux résultats pour les fonctions d'affichage en mémorisant la précédente sortie à cette fonction et en l'ajoutant dans la sortie suivante de la fonction prompte.
+

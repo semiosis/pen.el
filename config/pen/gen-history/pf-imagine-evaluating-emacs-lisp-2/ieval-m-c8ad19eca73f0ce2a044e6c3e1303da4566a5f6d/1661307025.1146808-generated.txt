@@ -1,0 +1,3 @@
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "apple")))
+--> 

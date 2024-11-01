@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Colossians" "1:16" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:16" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-16" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-120" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:15-20" "#" "<==" "zsh"

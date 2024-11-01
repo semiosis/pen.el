@@ -1,0 +1,6 @@
+
+" Select "
+fun! Copy()    let sel_reg = @"
+\gv"
+fun! Paste()    if char2nr(@", ") != -1
+" paste at care

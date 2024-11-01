@@ -1,0 +1,62 @@
+transfinite
+transfinite number
+    [#mathematics]
+
+    Numbers that are "infinite" in the sense
+    that they are larger than all finite
+    numbers, yet not necessarily absolutely
+    infinite.
+    
+    These include the transfinite cardinals,
+    and the transfinite ordinals.
+    
+    The term transfinite was coined by Georg
+    Cantor in 1895, who wished to avoid some
+    of the implications of the word infinite
+    in connection with these objects, which
+    were, nevertheless, not finite.[citation
+    needed] Few contemporary writers share
+    these qualms; it is now accepted usage to
+    refer to transfinite cardinals and
+    ordinals as "infinite".
+    
+    Nevertheless, the term "transfinite" also
+    remains in use.
+
+transfinite cardinal
+    [transfinite number]
+
+    Cardinal numbers used to quantify the size
+    of infinite sets
+
+    א₀ (Aleph-null)
+        The first transfinite cardinal number. 
+
+    א	A+	05D0	1488	HEBREW LETTER ALEF
+    ₀	0s	2080	8320	SUBSCRIPT ZERO
+
+transfinite ordinal
+    [transfinite number]
+
+    Ordinal numbers used to provide an
+    ordering of infinite sets.
+
+    ω (omega)
+        The lowest transfinite ordinal number.
+
+    ω	w*	03C9	0969	GREEK SMALL LETTER OMEGA
+
+cardinal
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+    14, 15, 16, 17, 18, 19, 20, 21, and so on.
+
+ordinal
+    Examples:
+    - First,
+    - Second,
+    - Third,
+    - ...
+    - 1st.
+    - 2nd,
+    - 3rd,
+    - ...

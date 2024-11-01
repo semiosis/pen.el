@@ -1,0 +1,91 @@
+Pen.el - OpenAI use-case review
+Inbox
+
+Steven Adler <steven@openai.com>
+9:04 AM (8 hours ago)
+to me, safety-specialists
+
+Hi Shane, how are you?
+
+I was directed by a team member to your recent Reddit post about Pen.el.
+
+If I am understanding correctly, it seems that you are running prompts by request from other people around the web via your GitHub repo. Can you clarify, are they able to run a prompt directly, or is this only with you human-in-the-loop? 
+
+Extending the API to others around the web without completing a Production Review is disallowed by our Terms of Use, and so I do need to ask you to please suspend this service until we can more thoroughly review. If you complete a Production Review, we will return to you early this upcoming week.
+
+Can you please confirm that you will halt running prompts for anybody else until said time that this is reviewed and approved? 
+
+In general, this seems to be in the category of making Playground functionality to users without API keys, which is a disallowed use-case. That said, it is possible I am misunderstanding the application here, and that we will learn more through a review.
+
+Thank you very much,
+Steven
+OpenAI Product Safety
+
+Shane Mulligan <mullikine@gmail.com>
+1:51 PM (3 hours ago)
+to Steven
+
+Hi Steve,
+
+Thanks for reaching out. I have suspended the automatic testing of my prompts repository, which so far has had no activity
+and I will not be handing out my key, even in privacy as your request. So far noone has used my key -- you'll be able to check that via my activity. In fact I will change my key immediately to ensure that doesn't happen. 
+I'm very sorry about this breach!
+Sincerely,
+
+Shane Mulligan
+
+How to contact me:
+    
+🇦🇺00 61 421 641 250
+🇳🇿00 64 21 1462 759
+mullikine@gmail.com
+
+
+Shane Mulligan <mullikine@gmail.com>
+1:55 PM (3 hours ago)
+to Steven
+
+Hey Steven,
+
+I'm just waking up for my coffee. Thanks for asking about my day. Have a great day! I planned this weekend to attempt to dockerize the emacs package to make Pen more accessible.
+
+Shane
+
+How to contact me:
+    
+🇦🇺00 61 421 641 250
+🇳🇿00 64 21 1462 759
+mullikine@gmail.com
+
+
+Shane Mulligan <mullikine@gmail.com>
+3:56 PM (1 hour ago)
+to Steven
+
+Hi Steven,
+
+I had not answered your question explicitly, I'm sorry.
+
+Yes, the automated tests are human-in-the-loop.
+
+Thanks,
+
+Shane Mulligan
+
+How to contact me:
+    
+🇦🇺00 61 421 641 250
+🇳🇿00 64 21 1462 759
+mullikine@gmail.com
+
+
+Steven Adler
+5:30 PM (7 minutes ago)
+to safety-specialists, me
+
+Thanks for the quick clarification, Shane - hope it's a productive weekend ahead!
+
+And not to worry, these things happen. If you do want to make a service available to others through the web, which goes through your API key, please do submit that production review first, and we can work together to make sure it's secure  🙂
+
+Best,
+Steven

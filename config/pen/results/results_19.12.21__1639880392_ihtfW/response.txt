@@ -1,0 +1,14 @@
+Output:
+Hello 1
+Hello 2
+Hello 3
+Hello 4
+Hello 5
+'''
+
+def print_recur(n):
+    if n > 0:
+        print_recur(n-1)
+        print(n)
+
+print_recur

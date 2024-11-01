@@ -1,0 +1,60 @@
+cyberpathy
+cyberpathic
+    A psychic ability to control electronic
+    machinery and/or read electronic signals,
+    especially software.
+
+mammalian neocortex
+    Neural decoding research generally centers
+    around this.
+
+Reconstruction
+    [#neural decoding]
+
+    Ability of the researcher to predict what
+    sensory stimuli the subject is receiving
+    based purely on neuron action potentials.
+
+neural decoding
+    [#neuroscience]
+    [field of study]
+
+    The hypothetical reconstruction of sensory
+    and other stimuli from information that
+    has already been encoded and represented
+    in the brain by networks of neurons.
+    
+    Main goal:
+        To characterize how the electrical
+        activity of neurons elicit activity
+        and responses in the brain.
+
+Crosstalk
+    Unintended brain activations that
+    interfere with bimanual actions and could
+    also occur during motor imagery.
+
+Bimanual coordination
+    Encompasses a large class of situations in
+    which the brain must simultaneously
+    control multiple movements, such as when
+    we use our two hands to manipulate an
+    object or perform a task.
+    
+    Bimanual coordination has been one of the
+    most widely studied problems in motor
+    control.
+
+Pairwise classification
+    A class binarization procedure that
+    converts a multi-class problem into a
+    series of two-class problems, one problem
+    for each pair of classes.
+
+Motor imagery
+    A dynamic state during which an individual
+    mentally simulates a physical action.
+
+    This type of phenomenal experience implies
+    that the subject feels themselves
+    performing the action.

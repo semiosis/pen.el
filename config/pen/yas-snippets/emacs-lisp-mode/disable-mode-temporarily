@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: disable-mode-temporarily
+# key: um
+# --
+;;(let ((my/lisp-mode nil))
+;;  (execute-kbd-macro (kbd "e")))
+# (let* ((pen nil)
+#   (fun (key-binding (kbd "M-3"))))
+#   (call-interactively fun))
+(if (major-mode-p 'cider-repl-mode)
+(let* ((lispy-mode nil)
+(fun (key-binding (kbd "M-h"))))
+(if fun
+(call-interactively fun)
+(message "Nothing bound")))
+(ekm "M-h"))

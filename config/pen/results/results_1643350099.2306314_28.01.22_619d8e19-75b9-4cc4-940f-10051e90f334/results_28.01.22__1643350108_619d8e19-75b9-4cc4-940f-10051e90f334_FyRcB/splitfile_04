@@ -1,0 +1,7 @@
+"async/alt!" is a macro that takes a function and a collection,
+and returns a channel that will yield the results of the function
+applied to each item in the collection.
+
+This is a simple example of using async/alt! to create a channel
+of random uuids.
+

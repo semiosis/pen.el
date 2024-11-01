@@ -1,0 +1,17 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+custom.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+keybindings.el
+EOD
+
+
+# emacs-lisp files (private)
+
+cat draft.emacs-lisp <<EOD
+private/init.el
+EOD

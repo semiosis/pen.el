@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: pti
+# group: interactive
+# key: pti
+# --
+import shanepy
+import shanepy as spy
+from shanepy import *
+# sys.stdin = open('/dev/tty') # not idempotent. only works for import code
+os.environ["EDITOR"] = "sp"; from ptpython.repl import embed; embed(globals(), locals())

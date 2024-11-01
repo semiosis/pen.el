@@ -1,0 +1,6 @@
+pen-re-search-forward-with-context ()
+  (interactive)
+  (let ((lines-context 2))
+
+    (if (not (listp current-prefix-arg))
+        (setq lines-context (prefix-numeric-value current-prefix-arg)))

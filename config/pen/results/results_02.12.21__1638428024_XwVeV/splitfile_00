@@ -1,0 +1,9 @@
+there lived a young " +
+            "woman who had an only son. As he grew up, he took to going out with " +
+            "a dog, andOGylfe went with him. This dog was put to many tricks."];
+
+            var result = await _httpClient.PostAsJsonAsync("/api/User", user);
+
+            Assert.Equal(HttpStatusCode.Created, result.StatusCode);
+
+            var userResult

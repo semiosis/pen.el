@@ -1,0 +1,3 @@
+
+    let (input, output) = part1
+    putStrLn output

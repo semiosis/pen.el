@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: class method
+# group: method
+# key: ds
+# --
+def setUp (self):
+  `yas-selected-text`$0"""set up a spaCy pipeline"""
+  self.nlp = spacy.load("en_core_web_sm")
+  self.tr = pytextrank.TextRank(logger=None)
+  self.nlp.add_pipe(self.tr.PipelineComponent, name="textrank", last=True)

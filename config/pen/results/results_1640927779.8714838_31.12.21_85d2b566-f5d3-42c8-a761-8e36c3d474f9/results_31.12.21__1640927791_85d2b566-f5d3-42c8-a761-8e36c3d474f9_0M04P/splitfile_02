@@ -1,0 +1,15 @@
+- 1. Richard Stallman (1953-)
+- 2. Paul Graham (1958-)
+- 3. Linus Torvalds (1969-)
+- 4. Donald Knuth (1938-)
+  TODO The keep calm and carry on in Emacs.
+"""
+
+    def test_num_documents(self):
+
+        self.assertEqual(5, sum([1 for _ in self.corpus]))
+
+    def test_document_1(self):
+
+        self.assertEqual(
+            [

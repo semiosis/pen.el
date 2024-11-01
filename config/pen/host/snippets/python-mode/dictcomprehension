@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: dictcomprehension
+# group: misc
+# key: dictc
+# --
+{k: [] for k in [1,2,3,4,5]}
+{k:v*2 for (k,v) in {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}.items()}

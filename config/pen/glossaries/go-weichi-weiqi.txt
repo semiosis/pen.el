@@ -1,0 +1,17 @@
+go
+weichi
+weiqi
+    An abstract strategy board game for two
+    players in which the aim is to surround
+    more territory than the opponent.
+
+    The game was invented in China more than
+    2,500 years ago and is believed to be the
+    oldest board game continuously played to
+    the present day.
+
+    Literal meaning:
+    - 'encirclement board game'
+
+wei-chi
+    Crisis.

@@ -1,0 +1,1 @@
+ sudo nix-env -iA nixos.some-package

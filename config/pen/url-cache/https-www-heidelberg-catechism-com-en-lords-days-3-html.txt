@@ -1,0 +1,385 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Mon, 27 May 2024 12:34:43 GMT
+Content-Length: 5978
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><title>
+	Did God, then, create man
+so wicked and perverse?
+ - Lord's Day 3 - Heidelberg Catechism
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta property="og:image" content="https://www.heidelberg-catechism.com/images/heidelberg-catechism.jpg" />
+        <meta property="og:site_name" content="Heidelberg-Catechism.com" />
+    
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="/css/heidelberg.css?v=4" rel="stylesheet" type="text/css" />
+    
+    <link href="/css/squeezebox/squeezebox.css" rel="stylesheet" type="text/css" />
+    <link href="/css/autocompleter.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/mootools.js"></script>
+    <script type="text/javascript" src="/js/squeezebox.js"></script>
+    <script type="text/javascript" src="/js/common.js?v=2"></script>
+    <script type="text/javascript" src="/js/observer.js"></script>
+    <script type="text/javascript" src="/js/autocompleter.js"></script>
+    <script type="text/javascript" src="/js/autocompleter.request.js"></script>
+    <script type="text/javascript">
+        window.addEvent('domready', function () {
+            new Asset.images(['/images/menu/brown-over.png', '/images/menu/red-over.png', '/images/menu/orange-over.png', '/images/menu/green-over.png', '/images/menu/blue-over.png']);
+            new Autocompleter.Request.JSON(document.id('q'), '/json/topics.aspx', {
+                'indicatorClass': 'autocompleter-loading',
+                'minLength': 2
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-84173a1-d88c-d44-eec2-7d74b207b8f9", hashAddressBar: false }); </script>
+</head>
+<body>
+    <div id="main-center">
+        <div id="mobile-logo" class="visible-mobile"><a id="ctl00_mobilelogo" href="../../en/"><img src="../../images/mobile_logo.png" alt="" border="0" /></a></div>
+        <div id="main-menu">
+            <div class="center">
+                <a href="/en/history/"><div class="menu-item brown left"><span>History</span></div></a>
+<a href="/en/lords-days/1.html"><div class="menu-item red mobile-two-line active"><span>Lord's Days</span></div></a>
+<a href="/en/topics/"><div class="menu-item orange"><span>Topics</span></div></a>
+<a href="/en/resources/"><div class="menu-item green"><span>Resources</span></div></a>
+<a href="/en/new/"><div class="menu-item blue right"><span>New To The Catechism?</span></div></a>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="title">
+            <a href="../../en/"><img id="ctl00_logo" class="site-logo" src="../../images/heidelberg-catechism.png" alt="Heidelberg Catechism" border="0" /></a>
+            <div id="search">
+                <form id="searchForm" method="get" action="/en/search/">
+                    <div id="bar"><input type="text" id="q" name="q" value="" /></div>
+                    <div id="button"><a onclick="document.id('searchForm').submit();">search</a></div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+        <table id="select-language" class="closed">
+            <tr>
+		        <td><img id="ctl00_imgLanguageHandle" src="../../images/select-language-handle-closed.jpg" border="0" /></td>
+                <td>
+        	        <div id="language-options">
+                        <div>ENTIRE WEBSITE:</div>
+                        <a id="ctl00_langEN" href="../../en/">ENGLISH</a>
+                        <a id="ctl00_langFR" href="../../fr/">FRENCH</a>
+                        <a id="ctl00_langIT" href="../../it/">ITALIAN</a>
+                        <a id="ctl00_langKO" href="../../ko/">KOREAN</a>
+                        <a id="ctl00_langPT" href="../../pt/">PORTUGUESE</a>
+                        
+                            <hr />
+                            <div>TEXT OF CATECHISM:</div>
+                            <a href="/en/history/?s=18">34 TRANSLATIONS</a>
+                        
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+    <div id="banner">
+        <div class="section red"><span>Lord's Days</span></div>
+        <img alt="" src="../../images/main/lords-days.jpg" />
+        <div class="clear"></div>
+    </div>
+    <div id="content">
+        <div id="main-right-column-no-pad">
+            <div class="share-links-right">
+                <span class="st_fblike" displayText=''></span>
+                <span class="st_plusone" displayText=''></span>
+                <span class="st_facebook" displayText=''></span>
+                <span class="st_twitter" displayText=''></span>
+                <span class="st_googleplus" displayText=''></span>
+                <span class="st_email" displayText=''></span>
+            </div>
+            <h1>Lord's Day 3</h1>
+            <p class="topic">Topics: <a href="../topics/image-of-god.html">Image of God</a>, <a href="../topics/creation.html">Creation</a>, <a href="../topics/love.html">Love</a>, <a href="../topics/original-sin.html">Original Sin</a>, <a href="../topics/total-depravity.html">Total Depravity</a>, <a href="../topics/regeneration.html">Regeneration</a>, <a href="../topics/adam.html">Adam</a>, <a href="../topics/eve.html">Eve</a></p>
+            <span id="ctl00_PageContent_lblError" class="error"></span>
+            <div id="lords-day-left">
+                
+                        <table class="question-and-answer">
+                            <tr>
+                                <td rowspan="3" class="number">6.</td>
+                                <td nowrap="nowrap">Q.</td>
+                                <td><h2><div class="line">Did God, then, create man</div>
+<div class="line">so wicked and perverse?</div>
+</h2></td>
+                            </tr>
+                            <tr>
+                                <td nowrap="nowrap">A.</td>
+                                <td><div class="line">No, on the contrary,</div>
+<div class="line">God created man good <sup><a rel="footnote" href="#fn-6-1">1</a></sup></div>
+<div class="line indented">and in his image, <sup><a rel="footnote" href="#fn-6-2">2</a></sup></div>
+<div class="line">that is, in true righteousness and holiness, <sup><a rel="footnote" href="#fn-6-3">3</a></sup></div>
+<div class="line">so that he might rightly know God his Creator, <sup><a rel="footnote" href="#fn-6-4">4</a></sup></div>
+<div class="line">heartily love him,</div>
+<div class="line">and live with him in eternal blessedness</div>
+<div class="line">to praise and glorify him. <sup><a rel="footnote" href="#fn-6-5">5</a></sup></div>
+</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="ld-footnotes"><ul class="footnotes">
+<li id="fn-6-1"><span class="number">1.</span> Gen 1:31.</li>
+<li id="fn-6-2"><span class="number">2.</span> Gen 1:26, 27.</li>
+<li id="fn-6-3"><span class="number">3.</span> Eph 4:24.</li>
+<li id="fn-6-4"><span class="number">4.</span> Col 3:10.</li>
+<li id="fn-6-5"><span class="number">5.</span> Ps 8.</li>
+</ul></td>
+                            </tr>
+                        </table>
+                    
+                        <table class="question-and-answer">
+                            <tr>
+                                <td rowspan="3" class="number">7.</td>
+                                <td nowrap="nowrap">Q.</td>
+                                <td><h2><div class="line">From where, then, did man's depraved nature come?</div>
+</h2></td>
+                            </tr>
+                            <tr>
+                                <td nowrap="nowrap">A.</td>
+                                <td><div class="line">From the fall and disobedience of our first parents,</div>
+<div class="line">Adam and Eve, in Paradise, <sup><a rel="footnote" href="#fn-7-1">1</a></sup></div>
+<div class="line">for there our nature became so corrupt <sup><a rel="footnote" href="#fn-7-2">2</a></sup></div>
+<div class="line">that we are all conceived and born in sin. <sup><a rel="footnote" href="#fn-7-3">3</a></sup></div>
+</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="ld-footnotes"><ul class="footnotes">
+<li id="fn-7-1"><span class="number">1.</span> Gen 3.</li>
+<li id="fn-7-2"><span class="number">2.</span> Rom 5:12, 18, 19.</li>
+<li id="fn-7-3"><span class="number">3.</span> Ps 51:5.</li>
+</ul></td>
+                            </tr>
+                        </table>
+                    
+                        <table class="question-and-answer">
+                            <tr>
+                                <td rowspan="3" class="number">8.</td>
+                                <td nowrap="nowrap">Q.</td>
+                                <td><h2><div class="line">But are we so corrupt</div>
+<div class="line">that we are totally unable to do any good</div>
+<div class="line">and inclined to all evil?</div>
+</h2></td>
+                            </tr>
+                            <tr>
+                                <td nowrap="nowrap">A.</td>
+                                <td><div class="line">Yes, <sup><a rel="footnote" href="#fn-8-1">1</a></sup></div>
+<div class="line indented">unless we are regenerated</div>
+<div class="line">by the Spirit of God. <sup><a rel="footnote" href="#fn-8-2">2</a></sup></div>
+</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="ld-footnotes"><ul class="footnotes">
+<li id="fn-8-1"><span class="number">1.</span> Gen 6:5; 8:21; Job 14:4; Is 53:6.</li>
+<li id="fn-8-2"><span class="number">2.</span> Jn 3:3-5.</li>
+</ul></td>
+                            </tr>
+                        </table>
+                    
+            </div>
+            <div id="lords-day-right">
+                <a class="orange resource-toggler">View Sermons<br/>on LD 3</a>
+<div class="resource-list">
+ <ul>
+  <li><a onclick="displayResource(2445, 'en');">Sermon on Lord&#39;s Day 3<br/><span class="author">Faber, Jelle</span></a></li>
+  <li><a onclick="displayResource(2289, 'en');">Sermon Outline - LD 3 - Second Series<br/><span class="author">Bouwman, Clarence</span></a></li>
+  <li><a onclick="displayResource(2239, 'en');">Sermon on Lord&#39;s Day 3 Q&amp;A 8<br/><span class="author">Van Oene, W.W.J.</span></a></li>
+  <li class="more"><a href="../resources/sermons.html?ld=3">VIEW MORE</a></li>
+ </ul>
+</div>
+<a class="green resource-toggler">View Articles /<br/>Speeches on LD 3</a>
+<div class="resource-list">
+ <ul>
+  <li><a onclick="displayResource(1768, 'en');">URC Psalmody&#39;s Heidelberg Catechism Series LD 3<br/><span class="author">Kearney, Michael</span></a></li>
+  <li><a onclick="displayResource(1556, 'en');">Some observations about the Three Forms of Unity and the doctrine of the covenant of works<br/><span class="author">Beach, J. Mark</span></a></li>
+  <li><a onclick="displayResource(1554, 'en');">The Holy Spirit in the Heidelberg Catechism<br/><span class="author">Hyde, Daniel</span></a></li>
+  <li class="more"><a href="../resources/articles.html?ld=3">VIEW MORE</a></li>
+ </ul>
+</div>
+<a class="blue resource-toggler last">View Teaching<br/>Outlines for LD 3</a>
+<div class="resource-list">
+ <ul>
+  <li><a onclick="displayResource(2495, 'en');">I Believe - Year 1 (complete series)<br/><span class="author">DeGelder, Jan</span></a></li>
+  <li><a onclick="displayResource(2469, 'en');">I Believe - Year 1 - Lesson 5<br/><span class="author">DeGelder, Jan</span></a></li>
+  <li><a onclick="displayResource(2142, 'en');">LD 3 - The True Faith, a Commentary on the Heidelberg Catechism<br/><span class="author">De Graaf, Simon Gerrit</span></a></li>
+  <li class="more"><a href="../resources/teaching-outlines.html?ld=3">VIEW MORE</a></li>
+ </ul>
+</div>
+
+            </div>
+            <div class="clear"></div>
+            <div class="footnote">Copyright 2010, Standing Committee for the Publication of the Book of Praise of the Canadian Reformed Churches.<br />Used by permission.</div>
+            <div class="page-links">
+                <div style="float:left;"><a id="ctl00_PageContent_hlnkPreviousLD" href="2.html">&lt; Lord's Day 2</a></div>
+                <div style="float:right;"><a id="ctl00_PageContent_hlnkNextLD" href="4.html">Lord's Day 4 &gt;</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="sub-left-column">
+            <div class="toggler red pt-toggler-two-line fr-toggler-two-line it-toggler-two-line">Part 1: Our Sin and Misery</div>
+<div class="list red">
+ <br />
+ <a href="1.html">Lord's Day 1</a>
+ <a href="2.html">Lord's Day 2</a>
+ <a class="active" href="3.html">Lord's Day 3</a>
+ <a href="4.html">Lord's Day 4</a>
+ <br />
+</div>
+<div class="toggler red it-toggler-two-line">Part 2: Our Deliverance</div>
+<div class="list red">
+ <br />
+ <a href="5.html">Lord's Day 5</a>
+ <a href="6.html">Lord's Day 6</a>
+ <a href="7.html">Lord's Day 7</a>
+ <a href="8.html">Lord's Day 8</a>
+ <a href="9.html">Lord's Day 9</a>
+ <a href="10.html">Lord's Day 10</a>
+ <a href="11.html">Lord's Day 11</a>
+ <a href="12.html">Lord's Day 12</a>
+ <a href="13.html">Lord's Day 13</a>
+ <a href="14.html">Lord's Day 14</a>
+ <a href="15.html">Lord's Day 15</a>
+ <a href="16.html">Lord's Day 16</a>
+ <a href="17.html">Lord's Day 17</a>
+ <a href="18.html">Lord's Day 18</a>
+ <a href="19.html">Lord's Day 19</a>
+ <a href="20.html">Lord's Day 20</a>
+ <a href="21.html">Lord's Day 21</a>
+ <a href="22.html">Lord's Day 22</a>
+ <a href="23.html">Lord's Day 23</a>
+ <a href="24.html">Lord's Day 24</a>
+ <a href="25.html">Lord's Day 25</a>
+ <a href="26.html">Lord's Day 26</a>
+ <a href="27.html">Lord's Day 27</a>
+ <a href="28.html">Lord's Day 28</a>
+ <a href="29.html">Lord's Day 29</a>
+ <a href="30.html">Lord's Day 30</a>
+ <a href="31.html">Lord's Day 31</a>
+ <br />
+</div>
+<div class="toggler red fr-toggler-two-line it-toggler-two-line">Part 3: Our Thankfulness</div>
+<div class="list red">
+ <br />
+ <a href="32.html">Lord's Day 32</a>
+ <a href="33.html">Lord's Day 33</a>
+ <a href="34.html">Lord's Day 34</a>
+ <a href="35.html">Lord's Day 35</a>
+ <a href="36.html">Lord's Day 36</a>
+ <a href="37.html">Lord's Day 37</a>
+ <a href="38.html">Lord's Day 38</a>
+ <a href="39.html">Lord's Day 39</a>
+ <a href="40.html">Lord's Day 40</a>
+ <a href="41.html">Lord's Day 41</a>
+ <a href="42.html">Lord's Day 42</a>
+ <a href="43.html">Lord's Day 43</a>
+ <a href="44.html">Lord's Day 44</a>
+ <a href="45.html">Lord's Day 45</a>
+ <a href="46.html">Lord's Day 46</a>
+ <a href="47.html">Lord's Day 47</a>
+ <a href="48.html">Lord's Day 48</a>
+ <a href="49.html">Lord's Day 49</a>
+ <a href="50.html">Lord's Day 50</a>
+ <a href="51.html">Lord's Day 51</a>
+ <a href="52.html">Lord's Day 52</a>
+ <br />
+</div>
+
+            <br />
+            <div class="buttons red">
+                <a id="ctl00_PageContent_hlnkFull" class="download-full" href="../../pdf/lords-days/Heidelberg-Catechism.pdf" target="_blank">Download Full Version of the<br />Heidelberg Catechism (PDF)</a>
+                <a id="ctl00_PageContent_hlnkDownload" class="download last" href="../../utils/ld-pdf.aspx?lang=en&amp;ld=3" target="_blank">Download<br />Lord's Day 3 (PDF)</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+        window.addEvent('domready', function () {
+            new Fx.Accordion($$('.toggler'), $$('.list'), {
+                display: 0,
+                alwaysHide: true,
+                opacity: 0,
+                onActive: function (toggler) { toggler.addClass('active'); },
+                onBackground: function (toggler) { toggler.removeClass('active'); }
+            });
+            new Fx.Accordion($$('.resource-toggler'), $$('.resource-list'), {
+                display: -1,
+                alwaysHide: true,
+                opacity: 0
+            });
+        });
+    </script>
+
+
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+        <div class="separator"></div>
+        <div class="crts"><a target="_blank" href="http://www.canadianreformedseminary.ca"><img alt="Canadian Reformed Theological Seminary" src="/images/crts.png" /></a></div>
+        <div class="sponsor">
+            Heidelberg-Catechism.com is sponsored by the<br />
+            <a id="ctl00_hlnkSeminary" href="http://www.canadianreformedseminary.ca" target="_blank">Canadian Reformed Theological Seminary</a><br />
+            &copy; 2024 all rights reserved.
+        </div>
+        <div class="links">
+            <a id="ctl00_linkContact" href="../../en/contact/">Contact</a> |
+            <a id="ctl00_linkContribute" href="../../en/contribute/">Contribute</a> |
+            <a id="ctl00_linkPrivacy" href="../../en/privacy/">Privacy</a>
+            <hr />
+            <p><a href="https://webility.ca">Web design and development by Webility Solutions.</a></p>
+        </div>
+        <div class="clear"></div>
+        <div id="bot-features">
+            <a id="ctl00_featureSubscribe" href="../../en/subscribe/"><img src="../../images/mobile-subscribe.png" alt="" border="0" /></a>
+            <a id="ctl00_featureFacebook" href="https://www.facebook.com/pages/Heidelberg-Catechism/475379909177092" target="_blank"><img src="../../images/mobile-facebook.png" alt="" border="0" /></a>
+        </div>
+        <div id="select-language-mobile">
+            This site is available in multiple languages:
+            <select onchange="selectLanguage(this.value);">
+                <option value="">Select Language</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="it">Italian</option>
+                <option value="pt">Portuguese</option>
+            </select>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33324116-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+        <script src="http://bible.logos.com/jsapi/referencetagging.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            Logos.ReferenceTagging.lbsBibleVersion = "ESV";
+            Logos.ReferenceTagging.lbsLinksOpenNewWindow = true;
+            Logos.ReferenceTagging.lbsLogosLinkIcon = "dark";
+            Logos.ReferenceTagging.lbsNoSearchTagNames = [ "h2", "h3", "h3" ];
+            Logos.ReferenceTagging.lbsTargetSite = "biblia";
+            Logos.ReferenceTagging.lbsCssOverride = true;
+            Logos.ReferenceTagging.tag();
+        </script>
+    
+</body>
+</html>

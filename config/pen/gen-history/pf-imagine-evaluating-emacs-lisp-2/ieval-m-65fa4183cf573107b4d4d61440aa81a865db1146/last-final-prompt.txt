@@ -1,0 +1,11 @@
+;; price of vehicle
+;; arguments: (name)
+(message (eval '(price-of-vehicle "Toyota Tarago")))
+--> "Toyota Tarago costs $3000"
+
+
+
+;; price of vehicle
+;; arguments: (name)
+(message (eval '(price-of-vehicle "Ferrari F50")))
+--> 

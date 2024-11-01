@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "z" "faith-and-judgement.pdf"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "z" "faith-and-judgement.pdf"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "z" "faith-and-judgement.pdf"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "z" "faith-and-judgement.pdf"
+cd "/volumes/home/shane/var/smulliga/source/git/itsmeuttu/chemistry-notes/Physical Chemistry";  "z" "Chemical_Equilibrium.md.pdf"
+cd "/volumes/home/shane/var/smulliga/source/git/itsmeuttu/chemistry-notes/Physical Chemistry";  "z" "Chemical_Equilibrium.md.pdf"
+cd "/volumes/home/shane/var/smulliga/source/git/itsmeuttu/chemistry-notes/Physical Chemistry";  "z" "Chemical_Equilibrium.md.pdf"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "z" "gospel.pdf"

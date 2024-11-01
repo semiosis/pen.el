@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: Nuxtjs
+# contributor: Toptal & contributors
+# key: nuxtjs
+# --
+
+### Nuxtjs ###
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist

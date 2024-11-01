@@ -1,0 +1,46 @@
+Standard Template Library
+STL
+    A software library for the C++ programming
+    language that influenced many parts of the
+    C++ Standard Library.
+
+rr
+    Recording and deterministic debugging.
+
+BullseyeCoverage
+    Code analyzer for C and C++ that evaluates
+    how much of your source code was tested.
+    
+    It’s used to improve the quality of
+    software in vital systems, such as those
+    in enterprise applications, medical,
+    industrial control, communications,
+    aerospace, and defense.
+    
+    It works with anything you can write in C
+    and C++, including system-level and kernel
+    mode.
+
+Conan
+    [package manager for c++]
+
+    - decentralized
+    - client-server architecture
+
+    Clients can fetch packages from, as well
+    as upload packages to, different servers
+    (“remotes”), similar to the “git” push-
+    pull model to/from git remotes.
+
+    On a high level, the servers are just
+    package storage.
+    
+    They do not build nor create the packages.
+    
+    The packages are created by the client,
+    and if binaries are built from sources,
+    that compilation is also done by the
+    client application.
+
+latches
+    http://modernescpp.com/index.php/latches-in-c-20

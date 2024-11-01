@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube_transcript_api" "--format" "text" "92JXBog4DtM" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube_transcript_api" "--format" "text" "6EBKeGC1LOo&t=488" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube_transcript_api" "--format" "text" "ZSVWNhh1bbE" "#" "<==" "pen-ci"
+cd /;  "youtube_transcript_api" "--format" "text" "TSDuiULbFf4" "#" "<==" "pen-ci"
+cd /;  "youtube_transcript_api" "--format" "text" "vLhykZY3v3U" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "youtube_transcript_api" "--format" "text" "iEkEihkqI9I" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "youtube_transcript_api" "--format" "text" "2StKxMKWfbU&t=434s" "#" "<==" "pen-ci"

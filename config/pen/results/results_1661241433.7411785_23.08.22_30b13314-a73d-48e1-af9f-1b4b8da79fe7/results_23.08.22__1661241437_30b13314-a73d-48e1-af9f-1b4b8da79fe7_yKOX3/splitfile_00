@@ -1,0 +1,3 @@
+
+incrementState :: State Int Int
+incrementState = get >>= \n -> put (n + 1) >>= \_ -> return n

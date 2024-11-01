@@ -1,0 +1,63 @@
+include: Generic Interpreter/3
+task: Imagine a conversation between two people
+tags: chatbot
+language: English
+subprompts:
+- kickstarter: |+
+    <info>This is a conversation between <Person A> and <Person B>.
+    
+    - <Person A>: 
+prompt: |+
+    <history><expression>
+user-prompt: "^-[^:]*: "
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
+stop-sequences:
+# - "\n-"
+- "\n"
+# Create a user prompt with the number incremented.
+# This is like postprocessor but happens even later.
+# It is used in special circumstances when the prompt history is also required.
+# postpostprocessor: pen-str python-gen-next-user-prompt
+postpostprocessor: cat
+temperature: 0.7
+vars:
+- history
+- expression
+- Person A
+- Person B
+- Info
+var-defaults:
+- kickstarter
+
+examples:
+- "<kickstarter>"
+- "Hi! May I talk to you?"
+- "you"
+- "John Dee"
+- |+
+    John Dee was an English mathematician,
+    astronomer, astrologer, teacher, occultist,
+    and alchemist. He was the court astronomer
+    for, and advisor to, Elizabeth I, and spent
+    much of his time on alchemy, divination and
+    Hermetic philosophy. As an antiquarian, he had
+    one of the largest libraries in England at the
+    time.
+
+preprocessors:
+- ~
+- ~
+- "awk 1 | sed -z \"s/$/<:pp>- <Person B>: /\""
+- ~
+- pen-str trailing-empty-line-if-not-empty
+
+postprocessor: "pen-str remove-starting-and-trailing-whitespace"
+
+frequency-penalty: 0.3
+
+# Examples are currently not preprocessed
+# examples:
+# - "<Person B>: "
+# - "Hi, I'm <Person B>. What would you like to talk about?"

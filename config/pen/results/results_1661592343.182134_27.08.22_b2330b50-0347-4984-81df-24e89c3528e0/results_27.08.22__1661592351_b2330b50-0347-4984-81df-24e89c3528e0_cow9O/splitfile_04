@@ -1,0 +1,15 @@
+ (T.unpack . T.words) columns
+
+  -- Turn each column into a number and store it in a list of numbers, one for each column in the record.
+  numbers <- map (T.unpack . T.words) columns
+
+  -- Turn each column into a number and store it in a list of numbers, one for each column in the record.
+  numbers <- map (T.unpack . T.words) columns
+
+  -- Turn each column into a number and store it in a list of numbers, one for each column in the record.
+  numbers <- map (T.unpack . T.words) columns
+
+  -- Turn each column into a number and store it in a list of numbers, one for each column in the record.
+  numbers <- map (T.unpack . T.words) columns
+
+  -- Turn each column into a number and store it in a list of numbers, one for

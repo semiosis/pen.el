@@ -1,0 +1,7 @@
+cd /root/.pen/documents/agenda;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Abide_With_Me-Eventide.pdf"
+cd /root/.pen/documents/notes;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Abide_With_Me-Eventide.pdf"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/A_Child_of_The_King-Binghamton.pdf"
+cd /root/.emacs.d/host/pen.el/src;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/A_Child_of_The_King-Binghamton.pdf"
+cd /root/.pen/documents/notes;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Ascribe_To_The_Lord_Honor-Iyin_Oluwa.pdf"
+cd /root/.pen/documents/agenda;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Abide_With_Me-Eventide.pdf"
+cd /root/.pen/documents/notes;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Be_Thou_My_Vision-Slane.pdf"

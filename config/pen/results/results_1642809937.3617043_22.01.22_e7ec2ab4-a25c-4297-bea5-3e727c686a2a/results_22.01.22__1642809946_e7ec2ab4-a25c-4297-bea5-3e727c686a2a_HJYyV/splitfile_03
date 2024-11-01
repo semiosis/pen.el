@@ -1,0 +1,27 @@
+
+
+There are many useful packages.
+The package "explorer-find-in-files" is useful.
+It enables usage of the built-in search function from vscode.
+On windows, the search function is "find" from "explorer".
+On Linux and Mac, it is "find" from the "finder"
+###
+Human: Thanks for the useful tip.
+###
+AI: You are welcome!
+Have a nice day!
+''')
+        else:
+            print('''
+This is a conversation between a human and a brilliant AI.
+The topic is "packages" in the context of "vscode".
+
+Human: Hello, are you my vscode tutor?
+###
+AI: Hi there.
+Yes I am.
+How can I help you today?
+###
+Human: What are some useful packages?
+###
+AI: I would be happy to answer your question

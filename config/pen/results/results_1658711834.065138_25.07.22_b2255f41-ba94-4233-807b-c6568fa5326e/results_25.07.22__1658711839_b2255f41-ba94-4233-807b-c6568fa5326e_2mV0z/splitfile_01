@@ -1,0 +1,4 @@
+ print $ mytest
+
+
+When we compile and run this program, it terminates immediately with an error message. The reason this program fails is because when the expression (x -> if (x == 0) then fail "zero" else Just (

@@ -1,0 +1,1 @@
+ import System.Console.Simple import System.Time.Clock main :: IO ( ) main = getArgs >>= processArgs processArgs :: [ String ] -> IO ( ) processArgs args = case ( fsVerbose , fSuffix

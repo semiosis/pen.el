@@ -1,0 +1,3 @@
+;; Run function temperature-of
+(message (eval '(temperature-of "surface of the sun")))
+--> 

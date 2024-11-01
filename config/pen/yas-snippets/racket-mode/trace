@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: trace
+# key: trace
+# --
+(require racket/trace) ;; Nice tracing
+(define sum (λ (x y) (+ x y)))
+(trace sum) ;; Adds tracing to the sum function
+(sum 4 4)

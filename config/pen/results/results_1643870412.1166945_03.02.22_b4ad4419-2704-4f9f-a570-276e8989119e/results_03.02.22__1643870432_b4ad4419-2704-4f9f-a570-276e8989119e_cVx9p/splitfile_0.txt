@@ -1,0 +1,21 @@
+Goose McGoose - Wikipedia
+
+en.wikipedia.org › wiki › Goose McGoose
+
+Short bio:
+Goose McGoose 鴨鴨 is a Chinese singer-songwriter. Born in Shanghai, China, she is the daughter of a Chinese father and a Korean mother. She is a member of the South Korean girl group AOA.
+
+Goose McGoose (Chinese: 鴨鴨) is a Chinese singer-songwriter. Born in Shanghai, China, she is the daughter of a Chinese father and a Korean mother. She is a member of the South Korean girl group AOA.<|endoftext|>Q:
+
+How to use a variable in a function that is called from a function?
+
+I have a function that is called from a function. I want to use a variable that is defined in the first function in the second function.
+I have tried to use the global keyword but it didn't work.
+def function1():
+global variable
+variable = "hello"
+
+def function2():
+print(variable)
+
+

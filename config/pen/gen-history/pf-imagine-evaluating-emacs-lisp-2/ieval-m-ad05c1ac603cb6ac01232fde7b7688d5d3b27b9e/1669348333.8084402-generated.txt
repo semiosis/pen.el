@@ -1,0 +1,3 @@
+;; Run function hexcolorof
+(message (eval '(hexcolorof "strawberryg")))
+--> 

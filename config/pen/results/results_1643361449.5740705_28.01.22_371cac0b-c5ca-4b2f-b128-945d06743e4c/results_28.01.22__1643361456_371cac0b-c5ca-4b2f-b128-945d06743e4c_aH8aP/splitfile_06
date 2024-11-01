@@ -1,0 +1,11 @@
+
+
+This is a short post about a project I've been working on called Codex.
+Codex is a tool for generating fake code, and then linting it. It's based
+on the work of [OpenAI](https://openai.com/blog/better-language-models/)
+and [GPT-2](https://openai.com/blog/better-language-models/).
+
+
+** Implementation
+
+Codex is implemented in Python,

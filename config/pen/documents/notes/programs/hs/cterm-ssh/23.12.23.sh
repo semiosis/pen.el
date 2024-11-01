@@ -1,0 +1,6 @@
+cd /;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "i" "gw" "#" "<==" "pen-ssh-host"
+cd /;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "nmtui" "#" "<==" "pen-ssh-host"
+cd /;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "nmtui" "#" "<==" "pen-ssh-host"
+cd /root/.pen/bigfiles/devotionals/alistair-begg-sermons/jesus-betrayed-and-arrested-john;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "which" "chrome" "#" "<==" "pen-ssh-host"
+cd /root/.pen/bigfiles/devotionals/alistair-begg-sermons/jesus-betrayed-and-arrested-john;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "chrome" "https://www.youtube.com/watch?v=MtH0vvSbqcI" "#" "<==" "pen-ssh-host"
+cd /root/.emacs.d/host/pen.el/scripts;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Isorhythmic.mp3" "#" "<==" "pen-ssh-host"

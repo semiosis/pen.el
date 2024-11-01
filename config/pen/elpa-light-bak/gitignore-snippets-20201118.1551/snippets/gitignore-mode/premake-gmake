@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: premake-gmake
+# contributor: Toptal & contributors
+# key: premake-gmake
+# --
+
+### premake-gmake ###
+
+Makefile
+*.make
+obj/

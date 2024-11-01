@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d
+# group: mine
+# key: d
+# --
+(defn ${1:$(identity (concat "[[replace:(pf-guess-function-name/1 " (q (str yas/text)) ")]]"))}
+  "$1"$>
+  [$3]$>
+  $0)$>

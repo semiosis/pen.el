@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: unpack-list-into-arguments
+# group: unpack
+# key: *
+# --
+foo(*values)

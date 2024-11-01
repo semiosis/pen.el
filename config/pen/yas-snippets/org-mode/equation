@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: equation
+# group: latex
+# key: eq
+# --
+\begin{equation}
+\label{eq:1}
+C = W\log_{2} (1+\mathrm{SNR})
+\end{equation}

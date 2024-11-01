@@ -1,0 +1,26 @@
+#
+# This file describes the prompt for the $MYNAME theme.
+#
+# The prompt is a list of segments separated by ';'.
+#
+# Each segment may be either a literal string or a variable.
+#
+# Literal strings are prefixed by '@' and may contain any number of
+# segments, and may contain any number of variables.
+#
+# Variables are prefixed by '$' and may contain any number of segments,
+# and may contain any number of variables.
+#
+# Variables may be used to reference segments.
+#
+# Segments may be used to construct a prompt.
+#
+# Segments may be used to construct a prompt.
+#
+# Segments may be used to construct a prompt.
+#
+# Segments may be used to construct a prompt.
+#
+# Segments may be used to construct a prompt.
+#
+# Segments

@@ -1,0 +1,11 @@
+
+
+export ENV=production
+
+export HOST=127.0.0.1
+
+export PORT=5001
+
+export DOMAIN=diyizu.net
+
+export SESSION_SECRET=diy

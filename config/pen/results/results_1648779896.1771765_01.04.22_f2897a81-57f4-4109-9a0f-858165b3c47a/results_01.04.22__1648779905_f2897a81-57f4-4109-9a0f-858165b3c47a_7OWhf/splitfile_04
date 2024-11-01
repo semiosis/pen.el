@@ -1,0 +1,20 @@
+
+Command line interface
+======================
+
+The command line interface is the most common way to interact with vim.
+
+The command line is entered by typing a ":" followed by text.  The text is
+interpreted as a command.  For example, to open a file you type ":e file.txt".
+
+Commands can be abbreviated.  For example, typing ":e" is equivalent to typing
+":edit".
+
+The command line supports tab-completion.  If you start typing the name of a
+file and then press the tab key, vim will complete the name for you.
+
+The command line has history.  Typing ":e file1" then ":e file2" then typing
+":e file1" again will use the same command line buffer.  Typing ":h" will
+display the history.
+
+The command line supports macros.  Macros can be defined with the ":macro

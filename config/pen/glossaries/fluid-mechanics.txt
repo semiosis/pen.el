@@ -1,0 +1,91 @@
+turbulence
+turbulent flow
+    [fluid dynamics]
+
+    Fluid motion characterized by chaotic
+    changes in pressure and flow velocity.
+    
+    It is in contrast to a laminar flow, which
+    occurs when a fluid flows in parallel
+    layers, with no disruption between those
+    layers.
+
+Navier-Stokes equations
+    [fluid mechanics]
+
+    A set of partial differential equations
+    that describes the flow of incompressible
+    fluids.
+    
+    The equation is a generalization of the
+    equation devised by Swiss mathematician
+    Leonhard Euler in the 18th century to
+    describe the flow of incompressible and
+    frictionless fluids.
+
+    Govern all fluid flow including turbulence
+    but they are notoriously difficult to
+    solve.
+
+Reynolds Number
+Re
+    [[https://www.youtube.com/watch?v=wtIhVwPruwY][Reynolds Number - Numberphile - YouTube]]
+
+    An important dimensionless quantity in
+    fluid mechanics used to help predict flow
+    patterns in different fluid flow
+    situations.
+    
+    At low Reynolds numbers, flows tend to be
+    dominated by laminar (sheet-like) flow,
+    while at high Reynolds numbers turbulence
+    results from differences in the fluid's
+    speed and direction, which may sometimes
+    intersect or even move counter to the
+    overall direction of the flow (eddy
+    currents).
+
+laminar flow
+    [#fluid dynamics]
+
+    A flow regime characterized by high
+    momentum diffusion and low momentum
+    convection.
+    
+    When a fluid is flowing through a closed
+    channel such as a pipe or between two flat
+    plates, either of two types of flow may
+    occur depending on the velocity and
+    viscosity of the fluid: laminar flow or
+    turbulent flow.
+
+    Characterized by fluid particles following
+    smooth paths in layers, with each layer
+    moving smoothly past the adjacent layers
+    with little or no mixing.
+    
+    At low velocities, the fluid tends to flow
+    without lateral mixing, and adjacent
+    layers slide past one another like playing
+    cards.
+
+vortex street
+Kármán vortex street
+    [fluid dynamics]
+
+    A repeating pattern of swirling vortices,
+    caused by a process known as vortex
+    shedding, which is responsible for the
+    unsteady separation of flow of a fluid
+    around blunt bodies.
+
+currents
+    General patterns of ocean flow are called
+    currents.
+
+eddy
+    Sometimes a current can pinch off sections
+    and create circular currents of water
+    called an eddy.
+
+    https://paveldogreat.github.io/WebGL-Fluid-Simulation/

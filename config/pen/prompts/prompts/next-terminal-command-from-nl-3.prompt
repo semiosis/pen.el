@@ -1,0 +1,53 @@
+task: next terminal command from nl
+doc: "generate next command from for an arbitrary terminal"
+tags: cterm hci
+prompt-version: 1
+purpose:
+- generate nl commands for an arbitrary terminal. this should be a one-liner
+docs:
+- take the current terminal, minus the last line (current prompt)
+- take the last line (current prompt)
+- place a comment between them.
+engine: OpenAI Codex
+prompt: |+
+    # <language> program:
+
+    <delim>
+    <terminal context>
+    <delim>
+
+    # Next command <q:nl command>:
+
+    <delim>
+    <current line/prompt>
+xlr-n-generate: 5
+temperature: 0.0
+# On each collated generation, rotate the temperature upwards by 0.1
+collation-temperature-stepper: "(mod (+ <temperature> 0.1) 1)"
+top-p: 1.0
+best-of: 1
+# To short-circuit overly long generations
+max-generated-tokens: "prompt-length"
+cache: on
+stop-sequences:
+- "<delim>"
+vars:
+# TODO Make a context-window widening mechanism
+- "terminal context":
+  - default: "(pen-snc \"awk 1 | sed '$d'\" (pen-selected-or-preceding-context 400))"
+  - example: "print(\"Hello world, I have no empathy\")"
+  - |-
+    In [1]: from datasets import load_dataset
+    In [2]: dataset = load_dataset("ag_news")
+    datasetsUsing custom data configuration default
+    Reusing dataset ag_news (/home/shane/.cache/huggingface/datasets/ag_news/default/0.0.0/bc2bcb40336ace1a0374767fc29bb0296cdaf8a6da7298436239c54d79180548)
+- "current line/prompt":
+  - default: "(pen-snc \"awk 1 | sed -n '$p'\" (pen-selected-or-preceding-context 400))"
+  - example: "In [3]: "
+- "nl command":
+  - example: "show contents of datasets module"
+n-test-runs: 5
+n-collate: 1
+n-completions: 5
+insertion: on
+filter: off

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/root/.pen/documents/notes/programs/ns'
+let g:netrw_dirhist_2='/'
+let g:netrw_dirhist_1='/root/.pen/rhizome.db'
+let g:netrw_dirhist_0='/'
+let g:netrw_dirhist_9='/root/.pen/documents/notes'
+let g:netrw_dirhist_8='/'
+let g:netrw_dirhist_7='/root/.emacs.d/elpa/session-20120511.0'
+let g:netrw_dirhist_6='/root/pen_python_modules/shanepy/__pycache__'
+let g:netrw_dirhist_5='/root/.pen/rhizome.db'
+let g:netrw_dirhist_4='/root/.pen/documents/haskell-test/app'

@@ -1,0 +1,9 @@
+http://www.lispworks.com/reference/HyperSpec/Body/s_flet_.htm
+
+
+3.1.5.1. The flet Macro
+
+(flet ((var1 form1)
+       (var2 form2)
+       (var3 form3))
+   body1 body2 body3 ...)

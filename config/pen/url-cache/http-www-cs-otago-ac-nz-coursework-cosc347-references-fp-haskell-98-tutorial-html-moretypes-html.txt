@@ -1,0 +1,265 @@
+HTTP/1.1 200 OK
+Date: Sun, 03 Apr 2022 08:36:35 GMT
+Server: Apache
+Last-Modified: Wed, 28 Feb 2001 20:43:35 GMT
+ETag: "35e6-37e6407556bc0"
+Accept-Ranges: bytes
+Content-Length: 13798
+Content-Type: text/html; charset=UTF-8
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+
+
+<title>A Gentle Introduction to Haskell: Types, Again</title>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="classes.html">back</a> <a href="io.html">next</a> <a href="index.html">top</a><hr>
+<a name="sect6"></a>
+<h2>6<tt>&nbsp;&nbsp;</tt>Types, Again</h2><p>
+Here we examine some of the more advanced aspects of type
+declarations.  <p>
+<a name="sect6.1"></a>
+<h3>6.1<tt>&nbsp;&nbsp;</tt>The Newtype Declaration</h3><p>
+A common programming practice is to define a type whose representation
+is identical to an existing one but which has a separate identity in
+the type system.  
+In Haskell, the <tt>newtype</tt> declaration creates a new type from an
+existing one.  For example, natural numbers can be represented by
+the type <tt>Integer</tt> using the following declaration:
+<tt><br>
+
+<br>
+newtype&nbsp;Natural&nbsp;=&nbsp;MakeNatural&nbsp;Integer<br>
+
+<br>
+
+</tt>This creates an entirely new type, <tt>Natural</tt>, whose only
+constructor contains a single <tt>Integer</tt>.  The constructor <tt>MakeNatural</tt> 
+converts between an <tt>Natural</tt> and an <tt>Integer</tt>:
+<tt><br>
+
+<br>
+toNatural&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Integer&nbsp;-&gt;&nbsp;Natural<br>
+toNatural&nbsp;x&nbsp;|&nbsp;x&nbsp;&lt;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;error&nbsp;"Can't&nbsp;create&nbsp;negative&nbsp;naturals!"&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;otherwise&nbsp;=&nbsp;MakeNatural&nbsp;x<br>
+<br>
+fromNatural&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Natural&nbsp;-&gt;&nbsp;Integer<br>
+fromNatural&nbsp;(MakeNatural&nbsp;i)&nbsp;=&nbsp;i<br>
+
+<br>
+
+</tt>The 
+following instance declaration admits <tt>Natural</tt> to the <tt>Num</tt> class:
+<tt><br>
+
+<br>
+instance&nbsp;Num&nbsp;Natural&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fromInteger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toNatural<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;+&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toNatural&nbsp;(fromNatural&nbsp;x&nbsp;+&nbsp;fromNatural&nbsp;y)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;-&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;let&nbsp;r&nbsp;=&nbsp;fromNatural&nbsp;x&nbsp;-&nbsp;fromNatural&nbsp;y&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;r&nbsp;&lt;&nbsp;0&nbsp;then&nbsp;error&nbsp;"Unnatural&nbsp;subtraction"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;toNatural&nbsp;r<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;*&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toNatural&nbsp;(fromNatural&nbsp;x&nbsp;*&nbsp;fromNatural&nbsp;y)<br>
+
+<br>
+
+</tt>Without this declaration, <tt>Natural</tt> would not be in <tt>Num</tt>.  Instances
+declared for the old type do not carry over to the new one.  Indeed,
+the whole purpose of this type is to introduce a different <tt>Num
+</tt>instance.  This would not be possible if <tt>Natural</tt> were
+defined as a type synonym of <tt>Integer</tt>.  <p>
+All of this works using a <tt>data</tt> declaration instead of a
+<tt>newtype</tt> declaration.  However, the <tt>data</tt> declaration 
+incurs extra overhead in the representation of <tt>Natural</tt> values.  The
+use of <tt>newtype</tt> avoids the extra level of indirection (caused by
+laziness) that the <tt>data</tt> declaration would introduce.  
+See section 
+<a href="decls.html#datatype-renaming">4.2.3</a> of the report for a more discussion of the
+relation between <tt>newtype</tt>, <tt>data</tt>, and <tt>type</tt> declarations.
+ 
+[Except for the keyword, the <tt>newtype</tt> declaration uses the same
+syntax as a <tt>data</tt> declaration with a single constructor containing a
+single field.  This is appropriate since types defined using <tt>newtype
+</tt>are nearly identical to those created by an ordinary <tt>data
+</tt>declaration.]<p>
+<a name="sect6.2"></a>
+<h3>6.2<tt>&nbsp;&nbsp;</tt>Field Labels</h3><p>
+The fields within a Haskell data type can be accessed either
+positionally or by name using <I>field labels</I>.
+Consider a data type for a two-dimensional point:
+<tt><br>
+
+<br>
+data&nbsp;Point&nbsp;=&nbsp;Pt&nbsp;Float&nbsp;Float<br>
+
+<br>
+
+</tt>The two components of a <tt>Point</tt> are the first and second arguments to the
+constructor <tt>Pt</tt>.  A function such as
+<tt><br>
+
+<br>
+pointx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Point&nbsp;-&gt;&nbsp;Float<br>
+pointx&nbsp;(Pt&nbsp;x&nbsp;_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x<br>
+
+<br>
+
+</tt>may be used to refer to the first component of a point in a more
+descriptive way, but, for large structures, it becomes tedious to
+create such functions by hand.<p>
+Constructors in a <tt>data</tt> declaration may be declared
+with associated <I>field names</I>, enclosed in braces.  These field names
+identify the components of constructor by name rather than by position.
+This is an alternative way to define <tt>Point</tt>:
+<tt><br>
+
+<br>
+data&nbsp;Point&nbsp;=&nbsp;Pt&nbsp;{pointx,&nbsp;pointy&nbsp;::&nbsp;Float}<br>
+
+<br>
+
+</tt>This data type is identical to the earlier definition
+of <tt>Point</tt>.  The constructor <tt>Pt</tt> is the same in both cases.  However,
+this declaration also defines two field names, <tt>pointx
+</tt>and <tt>pointy</tt>.  These field names can be used as <I>selector functions</I> to
+extract a component from a structure.  In this example, the selectors
+are:
+<tt><br>
+
+<br>
+pointx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;Point&nbsp;-&gt;&nbsp;Float&nbsp;<br>
+pointy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;Point&nbsp;-&gt;&nbsp;Float&nbsp;<br>
+
+<br>
+
+</tt>This is a function using these selectors: 
+<tt><br>
+
+<br>
+absPoint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Point&nbsp;-&gt;&nbsp;Float<br>
+absPoint&nbsp;p&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;sqrt&nbsp;(pointx&nbsp;p&nbsp;*&nbsp;pointx&nbsp;p&nbsp;+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointy&nbsp;p&nbsp;*&nbsp;pointy&nbsp;p)<br>
+
+<br>
+<p>
+</tt>Field labels can also be used to construct new values.  The expression
+<tt>Pt&nbsp;{pointx=1,&nbsp;pointy=2}</tt> is identical to <tt>Pt&nbsp;1&nbsp;2</tt>.  The use of field
+names in the declaration of a data constructor does not preclude the
+positional style of field access; both
+<tt>Pt&nbsp;{pointx=1,&nbsp;pointy=2}</tt> and <tt>Pt&nbsp;1&nbsp;2</tt> are allowed.  
+When constructing a value using field names, some fields may be
+omitted; these absent fields are undefined.   <p>
+Pattern matching using field names uses a similar syntax for the
+constructor <tt>Pt</tt>:
+<tt><br>
+
+<br>
+absPoint&nbsp;(Pt&nbsp;{pointx&nbsp;=&nbsp;x,&nbsp;pointy&nbsp;=&nbsp;y})&nbsp;=&nbsp;sqrt&nbsp;(x*x&nbsp;+&nbsp;y*y)&nbsp;<br>
+
+<br>
+<p>
+</tt>An update function uses field values in an existing structure to fill
+in components of a new structure.  If <tt>p</tt> is a <tt>Point</tt>, then 
+<tt>p&nbsp;{pointx=2}</tt> is a point with the same <tt>pointy</tt> as <tt>p</tt> but with
+<tt>pointx</tt> replaced by <tt>2</tt>.  This is not a destructive update:
+the update function merely creates a new copy of the object, filling
+in the specified fields with new values.<p>
+[The braces used in conjunction with field labels are somewhat
+special: Haskell syntax usually allows braces to be omitted using the
+<I>layout rule</I> (described in Section <a href="patterns.html#tut-layout">4.6</a>).  However, the
+braces associated with field names must be explicit.]<p>
+Field names are not restricted to types with a single constructor
+(commonly called `record' types).  In a type with multiple
+constructors, selection or update operations using field names may
+fail at runtime.  This is similar to the behavior of the <tt>head
+</tt>function when applied to an empty list.<p>
+Field labels share the top level namespace with ordinary variables and
+class methods.
+A field name cannot be used in more than one data type in scope.
+However, within a data type, the same field
+name can be used in more than one of the constructors so long as it
+has the same typing in all cases.  For example, in this data type
+<tt><br>
+
+<br>
+data&nbsp;T&nbsp;=&nbsp;C1&nbsp;{f&nbsp;::&nbsp;Int,&nbsp;g&nbsp;::&nbsp;Float}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;C2&nbsp;{f&nbsp;::&nbsp;Int,&nbsp;h&nbsp;::&nbsp;Bool}<br>
+
+<br>
+
+</tt>the field name <tt>f</tt> applies to both constructors in <tt>T</tt>.  Thus if
+<tt>x</tt> is of type <tt>T</tt>, then <tt>x&nbsp;{f=5}</tt> will work for values created by
+either of the constructors in <tt>T</tt>.<p>
+Field names does not change the basic nature of an algebraic
+data type; they are simply a convenient syntax for accessing the
+components of a data structure by name rather than by position.  They
+make constructors with many components 
+more manageable since fields can be added or removed without changing
+every reference to the constructor.  For full details of field labels
+and their semantics, see Section <a href="../onlinereport/decls.html#field-labels">&sect;4.2.1</a>.<a name="tut-strict-flag"></a><p>
+<a name="sect6.3"></a>
+<h3>6.3<tt>&nbsp;&nbsp;</tt>Strict Data Constructors</h3>
+
+Data structures in Haskell are generally <I>lazy</I>: the
+components are not evaluated until 
+needed.  This permits structures that contain elements which, if
+evaluated, would lead to an error or fail to terminate.  Lazy data
+structures enhance the expressiveness of Haskell and are an
+essential aspect of the Haskell programming style.<p>
+Internally, each field of a lazy data object is wrapped up in a structure
+commonly referred to as a <I>thunk</I> that encapsulates the computation
+defining the field value.  This thunk is not entered until
+the value is needed; thunks which contain errors (<I>_|_</I>) do not affect other
+elements of a data structure.   For 
+example, the tuple <tt>('a',</tt><I>_|_</I><tt>)</tt> is a perfectly legal Haskell
+value.  The
+<tt>'a'</tt> may be used without disturbing the other component of the tuple.
+Most programming languages are 
+<I>strict</I> instead of lazy: that is, all components of a data structure
+are reduced to values before being placed in the structure.<p>
+There are a number of overheads associated with thunks: they take time to
+construct and evaluate, they occupy space in the heap, and they cause
+the garbage collector to retain other structures needed for the
+evaluation of the thunk.  
+To avoid these overheads, <I>strictness flags</I> in <tt>data</tt> declarations
+allow specific fields of a constructor to be evaluated immediately,
+selectively suppressing laziness.  A field
+marked by <tt>!</tt> in a <tt>data</tt> declaration is evaluated when
+the structure is created instead of delayed in a thunk.
+ 
+There are a number of situations where it may be appropriate to use
+strictness flags:
+<UL><LI>Structure components that are sure to be evaluated at some
+point during program execution.  
+<LI>Structure components that are simple to evaluate and never
+cause errors. 
+<LI>Types in which partially undefined values are not meaningful.
+</UL>
+For example, the complex number library defines the <tt>Complex</tt> type as:
+<tt><br>
+
+<br>
+data&nbsp;RealFloat&nbsp;a&nbsp;=&gt;&nbsp;Complex&nbsp;a&nbsp;=&nbsp;!a&nbsp;:+&nbsp;!a<br>
+
+<br>
+
+</tt>[note the infix definition of the constructor <tt>:+</tt>.] This definition
+marks the two components, the real and imaginary parts, of the complex
+number as being strict.  This is a more compact representation of
+complex numbers but this comes at the expense of making a complex
+number with an undefined component, <tt>1&nbsp;:+&nbsp;</tt> <I>_|_</I>  for example,
+totally undefined (<I>_|_</I>).  As there is no real need for partially 
+defined complex numbers, it makes sense to use strictness flags to
+achieve a more efficient representation.<p>
+Strictness flags may be used to address memory leaks: structures
+retained by the garbage collector but no longer necessary for computation.<p>
+The strictness flag, <tt>!</tt>, can only appear in <tt>data</tt> declarations.
+It cannot be used in other type
+signatures or in any other type definitions.  There is no
+corresponding way to mark function arguments as being strict, although
+the same effect can be obtained using the <tt>seq</tt> or <tt>!$</tt> functions.  See
+ <a href="../onlinereport/decls.html#strictness-flags">&sect;4.2.1</a> for further details. <p>
+It is difficult to present exact guidelines for the use of strictness
+flags.  They should be used with caution: laziness is one of the
+fundamental properties of Haskell and adding strictness flags may lead
+to hard to find infinite loops or have other unexpected consequences.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="classes.html">back</a> <a href="io.html">next</a> <a href="index.html">top</a>
+<p>

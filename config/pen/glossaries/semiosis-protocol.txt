@@ -1,0 +1,228 @@
+Yggdrasil
+    [#Norse cosmology]
+
+    An immense and central sacred tree.
+    
+    Around it exists all else, including the
+    Nine Worlds.
+    
+    Yggdrasil is attested in the Poetic Edda
+    compiled in the 13th century from earlier
+    traditional sources, and in the Prose Edda
+    written in the 13th century by Snorri
+    Sturluson.
+
+semiotic function
+    [#human development]
+    [human ability]
+
+    The semiotic function is the ability to
+    create representations.
+
+    Thanks to the semiotic function, we’ve
+    been able to communicate in such a way
+    that we created a culture that facilitated
+    the survival and advancement of our
+    species.
+    
+    It’s based on the use of signs and symbols
+    that have distinct signifieds and
+    signifiers.
+    
+    But how does it actually work? A great
+    example of the semiotic function that can
+    help you understand it better is a
+    painting by the famous French painter,
+    Magritte.
+    
+    He painted a pipe and wrote the words
+    “Ceci n’est pas une pipe” (this is not a
+    pipe) below it.
+    
+    He wanted to make it clear that although
+    the painting certainly evoked a pipe, it
+    wasn’t actually a pipe.
+    
+    It is, in this case, a symbolic
+    representation of a pipe.
+    
+    In this example, Magritte used the
+    semiotic function to make art.
+    
+    However, human beings use symbolic
+    representations every day.
+
+object
+    [semiosis protocol]
+
+    The object is the generation that the user
+    desires, in their mind.
+
+promptee
+    The Pen.el peer address.
+
+signifier
+    [#semiosis protocol]
+    [sign]
+
+    An sNFT together with filled parameters.
+
+    Hard-coded parameters:
+    - prompt function name
+      - public
+    - promptee
+      - may be private (default)
+        - i.e. a Pen.el server url
+      - may be public
+        - i.e. OpenAI API endpoint
+    
+    User request / semiotic function
+    parameters:
+    - prompt function name and arguments
+      (combined into a single parameter)
+
+semiotic function
+sNFT
+Semiotic NFT
+    [#semiosis protocol]
+
+    A semiotic function is an abstraction over
+    a prompt function.
+
+    It happens between two interlocutors.
+
+    It is a sign which may be used to signify
+    what you want (the object).
+
+    The return value is the generation or
+    interpretant; A sign from the opposing
+
+    interlocutor that refers to the 
+
+    signified
+
+    It's a simplified prompt function which
+    only contains the parameters:
+    - signifier
+    - function name
+    - function argaments arguments
+
+    And what is returned is the:
+    - generation (interpretant)
+
+Perlocutionary Protocol
+PP
+
+Semiosis Protocol
+SP
+    You pay for semiosis.
+
+    A cryptocurrency for prompting stewardship
+    that rewards intelligibility, deglobalises
+    and slows the growth of large language
+    models by reusing outputs, and protects
+    local truth by anonymising inputs.
+
+    By slowing the growth of large LMs and
+    protecting input data to prompt functions,
+    local communities and individuals are
+    protected from coercion and from SAAS
+    vendor lock-in.
+
+    Communities are free to use their own
+    languages, whilst still being able to
+    communicate via the protocol and thus put
+    a price on illocutionary force in either
+    direction. Thus people may be fairly
+    persuaded instead of through force, and
+    also may have illocutionary influence but
+    at a price they are willing to pay. It
+    puts market forces to work to more fairly
+    distribute language power.
+
+AGI
+    Centralized language power.
+
+Semiotic NFT
+sNFT
+snft
+࿋
+    [iNFT]
+    [functor]
+
+    It's a functor because it's meant to be
+    called as a function, but has particular
+    side-effects.
+
+    Contains
+    - sign function
+    - price function
+    - reward function
+    - example/demo of utility?
+
+gas
+    Earn it by:
+    - hosting/caching payload media.
+    - hosting/caching output media.
+
+sign function
+s(࿋)
+    Parameters:
+    - prompt
+      - Soft prompts will not be rewarded
+        easily because they are
+        unintelligible and people will
+        naturally distrust them.
+    - payloads
+      - A list of payload (URL source, hash)
+        2-tuples
+        - SP must expend gas to obtain these
+          payloads. A prompt may fail if the
+          function does not have sufficient
+          funds to make the transaction,
+          including what has been allocated
+          for obtaining payloads.
+    - vendor
+    - p(࿋)
+    - id (worldcoin?)
+      - needed for the price function to
+        regulate users depending on their
+        type or role, perhaps.
+
+price function
+p(࿋)
+    Parameters:
+    - base price
+    - id (worldcoin?)
+
+    The base may scale with the user type.
+    - For example,
+      - Maybe best to be less expensive for
+        humans to run.
+      - Maybe best to be more expensive for
+        AIs to run.
+      - In some cases, AI is better suited to
+        run particular prompts.
+        - For example, sensitive statistics.
+    - Anyway, a user may be more or less
+      entitled to run a type of prompt.
+      - But everyone can see this function in
+        the iNFT and can decide if it's a good
+        idea, and to promote it / incorporate
+        it.
+
+reward function
+r(࿋)
+    Who gets paid (in percentages) when this
+    sNFT is run.
+
+    A list of (%, wallet / uid)
+     
+    Donate to:
+    - Use ID iNFTs to identify people by name.
+    - charities, for example.
+
+uid
+identity NFTs
+    Example,
+    - worldcoin

@@ -1,0 +1,3 @@
+root@mele:/bin$ ls
+[
+addgroup  adduser  ar  ash  awk  basename  bash  blkid  bunzip2  bzcat  bzip2  cal  cat  chgrp  chmod  chown  ch

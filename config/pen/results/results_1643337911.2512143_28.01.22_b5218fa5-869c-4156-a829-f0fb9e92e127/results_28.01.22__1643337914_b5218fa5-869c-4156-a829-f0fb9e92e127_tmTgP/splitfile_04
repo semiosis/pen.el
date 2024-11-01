@@ -1,0 +1,1 @@
+ eksctl get pods -o wide

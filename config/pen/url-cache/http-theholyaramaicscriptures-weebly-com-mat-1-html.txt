@@ -1,0 +1,641 @@
+HTTP/1.1 200 OK
+Date: Fri, 20 Oct 2023 21:54:54 GMT
+Server: Apache
+Vary: X-W-SSL,Accept-Encoding,User-Agent
+Set-Cookie: language=en; expires=Fri, 03-Nov-2023 21:54:54 GMT; Max-Age=1209600; path=/
+Cache-Control: private
+ETag: W/"8fcd844e4cd644039bb302f5522b0b08-gzip"
+X-Host: blu126.sf2p.intern.weebly.net
+X-UA-Compatible: IE=edge,chrome=1
+Content-Length: 9985
+Keep-Alive: timeout=10, max=63
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>Mat 1 - TheHolyAramaicScriptures.com</title><meta property="og:site_name" content="TheHolyAramaicScriptures.com" />
+<meta property="og:title" content="Mat 1" />
+<meta property="og:description" content="MATTHEW {Study}         {Audio} ​Chapter 1 ܟܬܒܐ ܕܝܠܝܕܘܬܗ ܕܝܫܘܥ ܡܫܝܚܐ ܒܪܗ ܕܕܘܝܕ ܒܪܗ ܕܐܒܪܗܡ 1  The Kathaba {The Scripture/Book} of the generation of Eshu..." />
+<meta property="og:image" content="https://theholyaramaicscriptures.weebly.com/uploads/1/9/8/4/19844215/gladiator-1771625-1920-300x300_6_orig.png" />
+<meta property="og:url" content="https://theholyaramaicscriptures.weebly.com/mat-1.html" />
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--[if lt IE 7]>
+<style>
+#content
+{
+    height:600px !important;
+}
+</style>
+<![endif]-->
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/sites.css?buildTime=1686930126" />
+<link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/old/fancybox.css?1686867911" />
+<link rel="stylesheet" type="text/css" href="/files/main_style.css?1686892734" title="wsite-theme-css" />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+<style type='text/css'>
+.wsite-header {
+	background-image: url(/uploads/1/9/8/4/19844215/published/6637483-orig_1.jpeg?1509784102) !important;
+	background-position: 0 0 !important;
+}
+</style>
+
+		<script src='/files/templateArtifacts.js?1686892734'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn2.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1686867911&"></script>
+<script src="//cdn2.editmysite.com/js/site/main.js?buildTime=1686930126"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='theholyaramaicscriptures.weebly.com'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "US";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "617047651812294025";
+			com_userID = "19844215";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1686930126&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"855721515502488869","title":"Matthew's Gospel","url":"matthews-gospel.html","target":"","nav_menu":false,"nonclickable":false},{"id":"257922713617026563","title":"Mark's Gospel","url":"marks-gospel.html","target":"","nav_menu":false,"nonclickable":false},{"id":"461236367131037570","title":"Luke's Gospel","url":"lukes-gospel.html","target":"","nav_menu":false,"nonclickable":false},{"id":"115409560929540447","title":"John's Gospel","url":"johns-gospel.html","target":"","nav_menu":false,"nonclickable":false},{"id":"987374819645913976","title":"Acts","url":"acts.html","target":"","nav_menu":false,"nonclickable":false},{"id":"392452111768821654","title":"James","url":"james.html","target":"","nav_menu":false,"nonclickable":false},{"id":"460717219968408028","title":"1st Peter","url":"1st-peter.html","target":"","nav_menu":false,"nonclickable":false},{"id":"291625841938170667","title":"1st John","url":"1st-john.html","target":"","nav_menu":false,"nonclickable":false},{"id":"773272592841994077","title":"Romans","url":"romans.html","target":"","nav_menu":false,"nonclickable":false},{"id":"713771380543040312","title":"1st Corinthians","url":"1st-corinthians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"920035521938999443","title":"2nd Corinthians","url":"2nd-corinthians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"369138602631594029","title":"Galatians","url":"galatians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"884838394851688677","title":"Ephesians","url":"ephesians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"176171829662325517","title":"Philippians","url":"philippians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"874872002995665986","title":"Colossians","url":"colossians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"310409135391061094","title":"1st Thessalonians","url":"1st-thessalonians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"125066143741573500","title":"2nd Thessalonians","url":"2nd-thessalonians.html","target":"","nav_menu":false,"nonclickable":false},{"id":"888364256394593973","title":"1st Timothy","url":"1st-timothy.html","target":"","nav_menu":false,"nonclickable":false},{"id":"616736890422062104","title":"2nd Timothy","url":"2nd-timothy.html","target":"","nav_menu":false,"nonclickable":false},{"id":"755412055144412227","title":"Titus","url":"titus.html","target":"","nav_menu":false,"nonclickable":false},{"id":"374110358579689064","title":"Philemon","url":"philemon.html","target":"","nav_menu":false,"nonclickable":false},{"id":"921093958333581368","title":"Hebrews","url":"hebrews.html","target":"","nav_menu":false,"nonclickable":false}],
+			"341542555701747163",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="wsite-theme-light  wsite-page-mat-1"><div id="wrapper">
+        <div id="container">
+            <div class="title"><span class="wsite-logo">
+
+	<a href="/">
+	
+	<span id="wsite-title">TheHolyAramaicScriptures.com</span>
+	
+	</a>
+
+</span></div>
+            <div id="header" class="wsite-header"></div>
+
+            
+            <div id="navigation">
+                <ul class="wsite-menu-default">
+                		<li id="pg855721515502488869" class="wsite-menu-item-wrap">
+                			<a
+                						href="/matthews-gospel.html"
+                				class="wsite-menu-item"
+                				>
+                				Matthew's Gospel
+                			</a>
+                			
+                		</li>
+                		<li id="pg257922713617026563" class="wsite-menu-item-wrap">
+                			<a
+                						href="/marks-gospel.html"
+                				class="wsite-menu-item"
+                				>
+                				Mark's Gospel
+                			</a>
+                			
+                		</li>
+                		<li id="pg461236367131037570" class="wsite-menu-item-wrap">
+                			<a
+                						href="/lukes-gospel.html"
+                				class="wsite-menu-item"
+                				>
+                				Luke's Gospel
+                			</a>
+                			
+                		</li>
+                		<li id="pg115409560929540447" class="wsite-menu-item-wrap">
+                			<a
+                						href="/johns-gospel.html"
+                				class="wsite-menu-item"
+                				>
+                				John's Gospel
+                			</a>
+                			
+                		</li>
+                		<li id="pg987374819645913976" class="wsite-menu-item-wrap">
+                			<a
+                						href="/acts.html"
+                				class="wsite-menu-item"
+                				>
+                				Acts
+                			</a>
+                			
+                		</li>
+                		<li id="pg392452111768821654" class="wsite-menu-item-wrap">
+                			<a
+                						href="/james.html"
+                				class="wsite-menu-item"
+                				>
+                				James
+                			</a>
+                			
+                		</li>
+                		<li id="pg460717219968408028" class="wsite-menu-item-wrap">
+                			<a
+                						href="/1st-peter.html"
+                				class="wsite-menu-item"
+                				>
+                				1st Peter
+                			</a>
+                			
+                		</li>
+                		<li id="pg291625841938170667" class="wsite-menu-item-wrap">
+                			<a
+                						href="/1st-john.html"
+                				class="wsite-menu-item"
+                				>
+                				1st John
+                			</a>
+                			
+                		</li>
+                		<li id="pg773272592841994077" class="wsite-menu-item-wrap">
+                			<a
+                						href="/romans.html"
+                				class="wsite-menu-item"
+                				>
+                				Romans
+                			</a>
+                			
+                		</li>
+                		<li id="pg713771380543040312" class="wsite-menu-item-wrap">
+                			<a
+                						href="/1st-corinthians.html"
+                				class="wsite-menu-item"
+                				>
+                				1st Corinthians
+                			</a>
+                			
+                		</li>
+                		<li id="pg920035521938999443" class="wsite-menu-item-wrap">
+                			<a
+                						href="/2nd-corinthians.html"
+                				class="wsite-menu-item"
+                				>
+                				2nd Corinthians
+                			</a>
+                			
+                		</li>
+                		<li id="pg369138602631594029" class="wsite-menu-item-wrap">
+                			<a
+                						href="/galatians.html"
+                				class="wsite-menu-item"
+                				>
+                				Galatians
+                			</a>
+                			
+                		</li>
+                		<li id="pg884838394851688677" class="wsite-menu-item-wrap">
+                			<a
+                						href="/ephesians.html"
+                				class="wsite-menu-item"
+                				>
+                				Ephesians
+                			</a>
+                			
+                		</li>
+                		<li id="pg176171829662325517" class="wsite-menu-item-wrap">
+                			<a
+                						href="/philippians.html"
+                				class="wsite-menu-item"
+                				>
+                				Philippians
+                			</a>
+                			
+                		</li>
+                		<li id="pg874872002995665986" class="wsite-menu-item-wrap">
+                			<a
+                						href="/colossians.html"
+                				class="wsite-menu-item"
+                				>
+                				Colossians
+                			</a>
+                			
+                		</li>
+                		<li id="pg310409135391061094" class="wsite-menu-item-wrap">
+                			<a
+                						href="/1st-thessalonians.html"
+                				class="wsite-menu-item"
+                				>
+                				1st Thessalonians
+                			</a>
+                			
+                		</li>
+                		<li id="pg125066143741573500" class="wsite-menu-item-wrap">
+                			<a
+                						href="/2nd-thessalonians.html"
+                				class="wsite-menu-item"
+                				>
+                				2nd Thessalonians
+                			</a>
+                			
+                		</li>
+                		<li id="pg888364256394593973" class="wsite-menu-item-wrap">
+                			<a
+                						href="/1st-timothy.html"
+                				class="wsite-menu-item"
+                				>
+                				1st Timothy
+                			</a>
+                			
+                		</li>
+                		<li id="pg616736890422062104" class="wsite-menu-item-wrap">
+                			<a
+                						href="/2nd-timothy.html"
+                				class="wsite-menu-item"
+                				>
+                				2nd Timothy
+                			</a>
+                			
+                		</li>
+                		<li id="pg755412055144412227" class="wsite-menu-item-wrap">
+                			<a
+                						href="/titus.html"
+                				class="wsite-menu-item"
+                				>
+                				Titus
+                			</a>
+                			
+                		</li>
+                		<li id="pg374110358579689064" class="wsite-menu-item-wrap">
+                			<a
+                						href="/philemon.html"
+                				class="wsite-menu-item"
+                				>
+                				Philemon
+                			</a>
+                			
+                		</li>
+                		<li id="pg921093958333581368" class="wsite-menu-item-wrap">
+                			<a
+                						href="/hebrews.html"
+                				class="wsite-menu-item"
+                				>
+                				Hebrews
+                			</a>
+                			
+                		</li>
+                </ul>
+            </div>
+
+            
+            <div id="contenttop">
+                <div id="contentbtm">
+                    <div id="content">
+                <div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="paragraph" style="text-align:center;"><strong><font size="6">MATTHEW</font></strong><br /><font size="3"><a href="http://dukhrana.com/peshitta/" target="_blank">{Study}&nbsp;</a><span style="color:rgb(34, 34, 34)">&nbsp;&nbsp; &nbsp; &nbsp;</span><a href="http://www.thearamaicscriptures.com/uploads/1/0/0/6/10065896/chapter_01_good_sound_-_vs_are_missing.mp3" target="_blank">{Audio}</a></font><br /><br /><font size="5">&#8203;Chapter 1<br /><span style="color:rgb(34, 34, 34)">&#1823;&#1836;&#1810;&#1808; &#1813;&#1821;&#1824;&#1821;&#1813;&#1816;&#1836;&#1815; &#1813;&#1821;&#1835;&#1816;&#1829; &#1825;&#1835;&#1821;&#1818;&#1808; &#1810;&#1834;&#1815; &#1813;&#1813;&#1816;&#1821;&#1813; &#1810;&#1834;&#1815; &#1813;&#1808;&#1810;&#1834;&#1815;&#1825;</span><br /><font color="#050505">1</font><span style="color:rgb(34, 34, 34)">&nbsp;The Kathaba {The Scripture/Book} of the generation of Eshu Meshikha {Yeshua, The Anointed One}, the son of David, the son of Abraham.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1808;&#1810;&#1834;&#1815;&#1825; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1821;&#1827;&#1818;&#1833; &#1808;&#1821;&#1827;&#1818;&#1833; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1829;&#1833;&#1816;&#1810; &#1821;&#1829;&#1833;&#1816;&#1810; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1815;&#1816;&#1813;&#1808; &#1816;&#1824;&#1808;&#1818;&#1816;&#1815;&#1821;</span><br /><span style="color:rgb(34, 34, 34)">2 Abraham begat Iskhaq {Isaac}, Iskhaq {Isaac} begat Yaqub {Jacob}, Yaqub {Jacob} begat Yehuda {Judah} and his brothers.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1821;&#1815;&#1816;&#1813;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1830;&#1834;&#1832; &#1816;&#1824;&#1817;&#1834;&#1818; &#1825;&#1826; &#1836;&#1825;&#1834; &#1830;&#1834;&#1832; &#1808;&#1816;&#1824;&#1813; &#1824;&#1818;&#1832;&#1834;&#1816;&#1826; &#1818;&#1832;&#1834;&#1816;&#1826; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1834;&#1825;</span><br /><span style="color:rgb(34, 34, 34)">3 Yehuda {Judah} begat Phares and Zarakh from Thamar. Phares begat Khesrun, Khesrun begat Aram.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1808;&#1834;&#1825; &#1808;&#1816;&#1824;&#1813; &#1824;&#1829;&#1825;&#1821;&#1826;&#1813;&#1810; &#1829;&#1825;&#1821;&#1826;&#1813;&#1810; &#1808;&#1816;&#1824;&#1813; &#1824;&#1826;&#1818;&#1835;&#1816;&#1826; &#1826;&#1818;&#1835;&#1816;&#1826; &#1808;&#1816;&#1824;&#1813; &#1824;&#1827;&#1824;&#1825;&#1816;&#1826;</span><br /><span style="color:rgb(34, 34, 34)">4 Aram begat Amiynadab, Amiynadab begat Nakhshun, Nakhshun begat Salmun.</span><br /><span style="color:rgb(34, 34, 34)">&nbsp;</span><br /><span style="color:rgb(34, 34, 34)">&#1827;&#1824;&#1825;&#1816;&#1826; &#1808;&#1816;&#1824;&#1813; &#1824;&#1810;&#1829;&#1817; &#1825;&#1826; &#1834;&#1818;&#1810; &#1810;&#1829;&#1817; &#1808;&#1816;&#1824;&#1813; &#1824;&#1829;&#1816;&#1810;&#1821;&#1813; &#1825;&#1826; &#1834;&#1829;&#1816;&#1836; &#1829;&#1816;&#1810;&#1821;&#1813; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1821;&#1835;&#1821;</span><br /><span style="color:rgb(34, 34, 34)">5 Salmun begat Baz from Rakhab, Baz begat Ubiyd {Obed} from Rauth {Ruth}, Ubiyd {Obed} begat Iyshay {Jesse}.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1808;&#1821;&#1835;&#1821; &#1808;&#1816;&#1824;&#1813; &#1824;&#1813;&#1816;&#1821;&#1813; &#1825;&#1824;&#1823;&#1808; &#1813;&#1816;&#1821;&#1813; &#1808;&#1816;&#1824;&#1813; &#1824;&#1835;&#1824;&#1821;&#1825;&#1816;&#1826; &#1825;&#1826; &#1808;&#1826;&#1836;&#1836;&#1815; &#1813;&#1808;&#1816;&#1834;&#1821;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">6 Iyshay {Jesse} begat David, the King, David begat Shliymun {Solomon} from the wife of UriYa.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1835;&#1824;&#1821;&#1825;&#1816;&#1826; &#1808;&#1816;&#1824;&#1813; &#1824;&#1834;&#1818;&#1810;&#1829;&#1825; &#1834;&#1818;&#1810;&#1829;&#1825; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1810;&#1821;&#1808; &#1808;&#1810;&#1821;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1827;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">7 Shliymun {Solomon} begat Rekhabam, Rekhabam begat AbiYa, AbiYa begat Asa.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1808;&#1827;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1815;&#1816;&#1835;&#1830;&#1819; &#1821;&#1815;&#1816;&#1835;&#1830;&#1819; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1816;&#1834;&#1825; &#1821;&#1816;&#1834;&#1825; &#1808;&#1816;&#1824;&#1813; &#1824;&#1829;&#1816;&#1817;&#1821;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">8 Asa begat Yahushaphat, Yahushaphat begat Yuram, Yuram begat UziYa.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1829;&#1816;&#1817;&#1821;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1816;&#1836;&#1825; &#1821;&#1816;&#1836;&#1825; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1818;&#1817; &#1808;&#1818;&#1817; &#1808;&#1816;&#1824;&#1813; &#1824;&#1818;&#1817;&#1833;&#1821;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">9 UziYa begat Yutham, Yutham begat Akhaz, Akhaz begat KhezaqiYa.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1818;&#1817;&#1833;&#1821;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1825;&#1826;&#1835;&#1808; &#1825;&#1826;&#1835;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1825;&#1816;&#1826; &#1808;&#1825;&#1816;&#1826; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1816;&#1835;&#1821;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">10 KhezaqiYa begat Manashe, Manashe begat Amun, Amun begat YushiYa.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1821;&#1816;&#1835;&#1821;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1816;&#1823;&#1826;&#1821;&#1808; &#1816;&#1824;&#1808;&#1818;&#1816;&#1815;&#1821; &#1810;&#1811;&#1824;&#1816;&#1836;&#1808; &#1813;&#1810;&#1810;&#1824;</span><br /><span style="color:rgb(34, 34, 34)">11 YushiYa begat IyukaniYa {Jeconiah} and his brothers during&nbsp;the captivity of Babel.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1825;&#1826; &#1810;&#1836;&#1834; &#1811;&#1824;&#1816;&#1836;&#1808; &#1813;&#1821;&#1826; &#1813;&#1810;&#1810;&#1824; &#1821;&#1816;&#1823;&#1826;&#1821;&#1808; &#1808;&#1816;&#1824;&#1813; &#1824;&#1835;&#1824;&#1836;&#1808;&#1821;&#1824; &#1835;&#1824;&#1836;&#1808;&#1821;&#1824; &#1808;&#1816;&#1824;&#1813; &#1824;&#1817;&#1816;&#1834;&#1810;&#1810;&#1824;</span><br /><span style="color:rgb(34, 34, 34)">12 Then, from after the captivity of Babel, IyukaniYa {Jeconiah} begat ShilathaIyl, ShilathaIyl begat Zurbabel.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1817;&#1816;&#1834;&#1810;&#1810;&#1824; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1810;&#1821;&#1816;&#1813; &#1808;&#1810;&#1821;&#1816;&#1813; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1824;&#1821;&#1833;&#1821;&#1825; &#1808;&#1824;&#1821;&#1833;&#1821;&#1825; &#1808;&#1816;&#1824;&#1813; &#1824;&#1829;&#1817;&#1816;&#1834;</span><br /><span style="color:rgb(34, 34, 34)">13 Zurbabel begat Abiyud, Abiyud begat Elyaqiym, Elyaqiym begat Azur.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1829;&#1817;&#1816;&#1834; &#1808;&#1816;&#1824;&#1813; &#1824;&#1817;&#1813;&#1816;&#1833; &#1817;&#1813;&#1816;&#1833; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1823;&#1821;&#1826; &#1808;&#1823;&#1821;&#1826; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1824;&#1821;&#1816;&#1813;</span><br /><span style="color:rgb(34, 34, 34)">14 Azur begat Zaduq, Zaduq begat Akhiyn, Akhiyn begat Eliyud.</span><br /><span style="color:rgb(34, 34, 34)">&nbsp;</span><br /><span style="color:rgb(34, 34, 34)">&#1808;&#1824;&#1821;&#1816;&#1813; &#1808;&#1816;&#1824;&#1813; &#1824;&#1808;&#1824;&#1821;&#1829;&#1817;&#1834; &#1808;&#1824;&#1821;&#1829;&#1817;&#1834; &#1808;&#1816;&#1824;&#1813; &#1824;&#1825;&#1836;&#1826; &#1825;&#1836;&#1826; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1829;&#1833;&#1816;&#1810;</span><br /><span style="color:rgb(34, 34, 34)">15 Eliyud begat Eliyazar, Eliyazar begat Mathan, Mathan begat Yaqub {Jacob}.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1821;&#1829;&#1833;&#1816;&#1810; &#1808;&#1816;&#1824;&#1813; &#1824;&#1821;&#1816;&#1827;&#1830; &#1811;&#1810;&#1834;&#1815; &#1813;&#1825;&#1834;&#1821;&#1825; &#1813;&#1825;&#1826;&#1815; &#1808;&#1836;&#1821;&#1824;&#1813; &#1821;&#1835;&#1816;&#1829; &#1813;&#1825;&#1836;&#1833;&#1834;&#1808; &#1825;&#1835;&#1821;&#1818;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">16 Yaqub {Jacob} begat Yuseph {Joseph}, the gabra {the man} of Maryam {Mary} from whom was born Eshu {Yeshua} who is called Meshikha {The Anointed One}.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1823;&#1824;&#1815;&#1821;&#1826; &#1815;&#1823;&#1821;&#1824; &#1835;&#1834;&#1810;&#1836;&#1808; &#1825;&#1826; &#1808;&#1810;&#1834;&#1815;&#1825; &#1829;&#1813;&#1825;&#1808; &#1824;&#1813;&#1816;&#1821;&#1813; &#1835;&#1834;&#1810;&#1836;&#1808; &#1808;&#1834;&#1810;&#1829;&#1827;&#1834;&#1808; &#1816;&#1825;&#1826; &#1813;&#1816;&#1821;&#1813; &#1829;&#1813;&#1825;&#1808; &#1824;&#1811;&#1824;&#1816;&#1836;&#1808; &#1813;&#1810;&#1810;&#1824; &#1835;&#1834;&#1810;&#1836;&#1808; &#1808;&#1834;&#1810;&#1829;&#1827;&#1834;&#1808; &#1816;&#1825;&#1826; &#1811;&#1824;&#1816;&#1836;&#1808; &#1813;&#1810;&#1810;&#1824; &#1829;&#1813;&#1825;&#1808; &#1824;&#1825;&#1835;&#1821;&#1818;&#1808; &#1835;&#1834;&#1810;&#1836;&#1808; &#1808;&#1834;&#1810;&#1829;&#1827;&#1834;&#1808;</span><br /><font color="#070707">17</font><span style="color:rgb(34, 34, 34)">&nbsp;Therefore all the generations from Abraham until David, were fourteen generations, and from David until the captivity of Babel, were fourteen generations, and from the captivity of Babel, until Meshikha {The Anointed One}, were fourteen generations.</span><br /><span style="color:rgb(34, 34, 34)">&nbsp;</span><br /><span style="color:rgb(34, 34, 34)">&#1821;&#1824;&#1813;&#1815; &#1813;&#1821;&#1826; &#1813;&#1821;&#1835;&#1816;&#1829; &#1825;&#1835;&#1821;&#1818;&#1808; &#1815;&#1823;&#1826;&#1808; &#1815;&#1816;&#1808; &#1823;&#1813; &#1825;&#1823;&#1821;&#1834;&#1808; &#1815;&#1816;&#1836; &#1825;&#1834;&#1821;&#1825; &#1808;&#1825;&#1815; &#1824;&#1821;&#1816;&#1827;&#1830; &#1829;&#1813; &#1824;&#1808; &#1826;&#1835;&#1836;&#1816;&#1836;&#1830;&#1816;&#1826; &#1808;&#1835;&#1836;&#1823;&#1818;&#1836; &#1810;&#1819;&#1826;&#1808; &#1825;&#1826; &#1834;&#1816;&#1818;&#1808; &#1813;&#1833;&#1816;&#1813;&#1835;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">18 Now, the birth of Eshu Meshikha {Yeshua, The Anointed One}, was like this. While Maryam {Mary}&nbsp;His mother was betrothed {i.e. engaged} unto Yuseph {Joseph}, before they were to be married, she was found batna {pregnant} by The Rukha d'Qudsha {The Spirit of Holiness}.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1821;&#1816;&#1827;&#1830; &#1813;&#1821;&#1826; &#1810;&#1829;&#1824;&#1815; &#1823;&#1808;&#1826;&#1808; &#1815;&#1816;&#1808; &#1816;&#1824;&#1808; &#1832;&#1810;&#1808; &#1813;&#1826;&#1830;&#1834;&#1827;&#1821;&#1815; &#1816;&#1808;&#1836;&#1834;&#1829;&#1821; &#1815;&#1816;&#1808; &#1813;&#1825;&#1819;&#1835;&#1821;&#1808;&#1821;&#1836; &#1826;&#1835;&#1834;&#1821;&#1815;</span><br /><span style="color:rgb(34, 34, 34)">19 But, Yuseph {Joseph}, balah {her husband/master/lord}, was just and didn&rsquo;t want to expose her, and he was wanting to release her {i.e. from the betrothal/engagement}, secretly.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1823;&#1813; &#1815;&#1824;&#1821;&#1826; &#1813;&#1821;&#1826; &#1808;&#1836;&#1834;&#1829;&#1821; &#1808;&#1836;&#1818;&#1817;&#1821; &#1824;&#1815; &#1825;&#1824;&#1808;&#1823;&#1808; &#1813;&#1825;&#1834;&#1821;&#1808; &#1810;&#1818;&#1824;&#1825;&#1808; &#1816;&#1808;&#1825;&#1834; &#1824;&#1815; &#1821;&#1816;&#1827;&#1830; &#1810;&#1834;&#1815; &#1813;&#1813;&#1816;&#1821;&#1813; &#1824;&#1808; &#1836;&#1813;&#1818;&#1824; &#1824;&#1825;&#1827;&#1810; &#1824;&#1825;&#1834;&#1821;&#1825; &#1808;&#1826;&#1836;&#1836;&#1823; &#1815;&#1816; &#1811;&#1821;&#1834; &#1813;&#1808;&#1836;&#1821;&#1824;&#1813; &#1810;&#1815; &#1825;&#1826; &#1834;&#1816;&#1818;&#1808; &#1815;&#1816; &#1813;&#1833;&#1816;&#1813;&#1835;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">20 Now, while he was thinking these things, The Malaka d&rsquo;MarYa {The&nbsp;</span><em style="color:rgb(34, 34, 34)">Heavenly</em><span style="color:rgb(34, 34, 34)">&nbsp;Messenger of The Lord-YHWH} appeared unto him in a dream, and said unto him, &ldquo;Yuseph {Joseph}, son of David, don&rsquo;t be afraid to take Maryam {Mary} as antthak {your wife}, for that One who is begotten in her is from The Rukha d&rsquo;Qudsha {The Spirit of Holiness}.</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1836;&#1808;&#1824;&#1813; &#1813;&#1821;&#1826; &#1810;&#1834;&#1808; &#1816;&#1836;&#1833;&#1834;&#1808; &#1835;&#1825;&#1815; &#1821;&#1835;&#1816;&#1829; &#1815;&#1816; &#1811;&#1821;&#1834; &#1826;&#1818;&#1821;&#1816;&#1815;&#1821; &#1824;&#1829;&#1825;&#1815; &#1825;&#1826; &#1818;&#1819;&#1815;&#1821;&#1815;&#1816;&#1826;</span><br /><span style="color:rgb(34, 34, 34)">21 Now, she will bear a son, and you will call His name Eshu {Yeshua}, for He will save Ameh {His People} from their sins.&rdquo;</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1815;&#1813;&#1808; &#1813;&#1821;&#1826; &#1823;&#1824;&#1815; &#1813;&#1815;&#1816;&#1836; &#1813;&#1826;&#1836;&#1825;&#1824;&#1808; &#1825;&#1813;&#1825; &#1813;&#1808;&#1836;&#1808;&#1825;&#1834; &#1825;&#1826; &#1825;&#1834;&#1821;&#1808; &#1810;&#1821;&#1813; &#1826;&#1810;&#1821;&#1808;</span><br /><span style="color:rgb(34, 34, 34)">22 Now, this all happened that the thing might be fulfilled which was spoken from MarYa {The Lord-YHWH} through the Nabiya {the Prophet},</span><br /><br /><span style="color:rgb(34, 34, 34)">&#1813;&#1815;&#1808; &#1810;&#1836;&#1816;&#1824;&#1836;&#1808; &#1836;&#1810;&#1819;&#1826; &#1816;&#1836;&#1808;&#1824;&#1813; &#1810;&#1834;&#1808; &#1816;&#1826;&#1833;&#1834;&#1816;&#1826; &#1835;&#1825;&#1815; &#1829;&#1825;&#1826;&#1816;&#1808;&#1821;&#1824; &#1813;&#1825;&#1836;&#1836;&#1834;&#1811;&#1825; &#1829;&#1825;&#1826; &#1808;&#1824;&#1815;&#1826;</span><br /><span style="color:rgb(34, 34, 34)">23 &ldquo;Behold, a bethultha {a virgin} will conceive and bear a son, and they will call His name EmanuIyl,</span></font><span style="color:rgb(34, 34, 34)"><font size="5">&rdquo;</font></span><font size="5" style="color:rgb(34, 34, 34)">&nbsp;which is interpreted; With us is Alahan {Our God}.</font><br /><br /><font size="5"><span style="color:rgb(34, 34, 34)">&#1823;&#1813; &#1833;&#1825; &#1813;&#1821;&#1826; &#1821;&#1816;&#1827;&#1830; &#1825;&#1826; &#1835;&#1826;&#1836;&#1815; &#1829;&#1810;&#1813; &#1808;&#1821;&#1823;&#1826;&#1808; &#1813;&#1830;&#1833;&#1813; &#1824;&#1815; &#1825;&#1824;&#1808;&#1823;&#1815; &#1813;&#1825;&#1834;&#1821;&#1808; &#1816;&#1813;&#1810;&#1834;&#1815; &#1824;&#1808;&#1826;&#1836;&#1836;&#1815;</span><br /><span style="color:rgb(34, 34, 34)">24 Now, when Yuseph rose up from his sleep, he did as The Malakeh d'MarYa {The&nbsp;</span><em style="color:rgb(34, 34, 34)">Heavenly</em><span style="color:rgb(34, 34, 34)">&nbsp;Messenger of The Lord-YHWH} commanded him, and he took anttheh {his wife}.</span><br /><span style="color:rgb(34, 34, 34)">&nbsp;</span><br /><span style="color:rgb(34, 34, 34)">&#1816;&#1824;&#1808; &#1818;&#1823;&#1825;&#1815; &#1829;&#1813;&#1825;&#1808; &#1813;&#1821;&#1824;&#1813;&#1836;&#1815; &#1824;&#1810;&#1834;&#1815; &#1810;&#1816;&#1823;&#1834;&#1808; &#1816;&#1833;&#1834;&#1836; &#1835;&#1825;&#1815; &#1821;&#1835;&#1816;&#1829;</span><br /><span style="color:rgb(34, 34, 34)">25 And he didn&rsquo;t know {i.e. have marital relations with} her until she gave birth unto her first-born Son, and she called His name Eshu {Yeshua}.<br /><br />&#8203;</span></font></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="/uploads/1/9/8/4/19844215/gladiator-1771625-1920-300x300_6_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">Ephesians 6:11-18</div>
+</div></div>
+
+<div class="paragraph" style="text-align:center;">&#8203;<font style="color:rgb(34, 34, 34)">&#8203;</font><span style="color:rgb(34, 34, 34)">Copyright &copy; 2010-2018 TheHolyAramaicScriptures.com<br />&#8203;~ The Holy Aramaic Scriptures: English Translation/Transliteration ~ &#8203;<br />Warning! The Aramaic and English Texts Shown In This Online Edition &#8203;Are Copyright Protected: All rights reserved</span></div>
+</div>
+
+                    <div class="clear"></div>
+                    </div>
+                </div>        
+            </div>
+                <div id="footer">
+                    
+
+<style type="text/css">
+	@font-face {
+		font-family: SQMarket-Medium;
+		font-style: normal;
+		font-weight: 500;
+		src:
+			url("//cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff2") format("woff2"),
+			url("//cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff") format("woff");
+	}
+</style>
+
+<div id="weebly-footer-signup-container-v3">
+	<a
+		href="https://www.weebly.com/signup?utm_source=internal&utm_medium=footer"
+		target="_blank"
+		class="signup-container-header"
+		id="signup-link-href"
+	>
+		<div class="powered-by">
+			<div class="footer-published-ab-powered-by">
+				Powered by <span class="link weebly-icon"></span>
+				<img class="footer-ab-published-toast-image" src="//cdn2.editmysite.com/images/site/footer/footer-toast-published-image-1.png">
+				<span class="footer-ab-published-toast-text">Create your own unique website with customizable templates.</span>
+				<span class="footer-ab-published-toast-button-wrapper">
+					<button class="footer-published-ab-button">Get Started</button>
+				</span>
+			</div>
+		</div>
+	</a>
+</div>
+
+<script type="text/javascript" src="//cdn2.editmysite.com/js/site/footerSignup.js?buildTime=1697837599"></script>
+<script type="text/javascript">
+	if (document.readystate === 'complete') {
+		Weebly.footer.setupContainer('cdn2.editmysite.com', '1697837599');
+	} else {
+		document.addEventListener('DOMContentLoaded', function() {
+			Weebly.footer.setupContainer('cdn2.editmysite.com', '1697837599');
+		});
+	}
+</script>
+
+<script type='text/javascript'>
+//<!--
+
+if (document.cookie.match(/(^|;)\s*is_mobile=1/)) {
+	var windowHref = window.location.href || '';
+	if (windowHref.indexOf('?') > -1) {
+		windowHref += '&';
+	} else {
+		windowHref += '?';
+	}
+	windowHref = windowHref.replace(/'/g, "%27");
+	document.write(
+		"&nbsp;&nbsp;&nbsp;&nbsp;" +
+		"<a class='wsite-view-link-mobile' href='" + windowHref + "view=mobile'>Mobile Site</a>"
+	);
+}
+
+//-->
+</script>
+                </div>
+        <div class="clear"></div>        
+        </div>            
+    </div> 
+    <div id="customer-accounts-app"></div>
+    <script src="//cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1686930126"></script>
+
+		Your Word is a Lamp for my feet and a Light for my path. Psalm 119:105<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-7870337-1']);
+	_gaq.push(['_setDomainName', 'none']);
+	_gaq.push(['_setAllowLinker', true]);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// NOTE: keep the [1] if you replace this code. Otherwise cookie banner scripts won't be first on the page
+		var s = document.getElementsByTagName('script')[1]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	_W.Analytics = _W.Analytics || {'trackers': {}};
+	_W.Analytics.trackers.wGA = '_gaq';
+</script>
+
+<script type="text/javascript" async=1>
+	// NOTE: keep the getElementsByTagName(o)**[1]** if you replace this code. Otherwise cookie banner scripts won't be first on the page
+	;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+			p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+			};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[1];n.async=1;
+			n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//cdn2.editmysite.com/js/wsnbn/snowday262.js','snowday'));
+
+	var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+	var snPlObR = function(arr) {
+		var s = '';
+		for (var i = 0 ; i < arr.length ; i++){
+			s = s + String.fromCharCode(arr[i]);
+		}
+		return s;
+	};
+	var s = snPlObR(r);
+
+	var regEx = new RegExp(s);
+
+	_W.Analytics = _W.Analytics || {'trackers': {}};
+	_W.Analytics.trackers.wSP = 'snowday';
+	_W.Analytics.user_id = '19844215';
+	_W.Analytics.site_id = '617047651812294025';
+
+	var drSegmentsTag = document.getElementById('drSegments');
+	if (drSegmentsTag) {
+		_W.Analytics.spContexts = _W.Analytics.spContexts || [];
+
+		var segmentData = JSON.parse(drSegmentsTag.innerText);
+		segmentData.forEach(function(test) {
+			_W.Analytics.spContexts.push({
+				schema: "iglu:com.weebly/context_ab_segment/jsonschema/1-0-0",
+				data: {
+					test_id: test.name,
+					segment: test.variant,
+				}
+			});
+		});
+	}
+
+
+	(function(app_id, ec_hostname, discover_root_domain) {
+		var track = window[_W.Analytics.trackers.wSP];
+		if (!track) return;
+		track('newTracker', app_id, ec_hostname, {
+			appId: app_id,
+			post: true,
+			platform: 'web',
+			discoverRootDomain: discover_root_domain,
+			cookieName: '_snow_',
+			contexts: {
+				webPage: true,
+				performanceTiming: true,
+				gaCookies: true
+			},
+			crossDomainLinker: function (linkElement) {
+				return regEx.test(linkElement.href);
+			},
+			respectDoNotTrack: true
+		});
+		track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id, _W.Analytics.spContexts);
+		track('crossDomainLinker', function (linkElement) {
+			return regEx.test(linkElement.href);
+		});
+	})(
+		'_wn',
+		'ec.editmysite.com',
+		false
+	);
+</script>
+
+
+
+
+
+<script>
+	(function(jQuery) {
+		try {
+			if (jQuery) {
+				jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
+				var $commentFrame = jQuery('#commentArea iframe');
+				if ($commentFrame.length > 0) {
+					var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
+					$commentFrame.css('min-height', frameHeight + 'px');
+				}
+				if (jQuery('.product-button').length > 0){
+					jQuery(document).ready(function(){
+						jQuery('.product-button').parent().each(function(index, product){
+							if(jQuery(product).attr('target') == 'paypal'){
+								if (!jQuery(product).find('> [name="bn"]').length){
+									jQuery('<input>').attr({
+										type: 'hidden',
+										name: 'bn',
+										value: 'DragAndDropBuil_SP_EC'
+									}).appendTo(product);
+								}
+							}
+						});
+					});
+				}
+			}
+			else {
+				// Prototype
+				$$('div.blog-social div.fb-like').each(function(div) {
+					div.className = 'blog-social-item blog-fb-like';
+				});
+				$$('#commentArea iframe').each(function(iframe) {
+					iframe.style.minHeight = '410px';
+				});
+			}
+		}
+		catch(ex) {}
+	})(window._W && _W.jQuery);
+</script>
+
+<script>
+	window._W.isEUUser = false;
+	window._W.showCookieToAll = "";
+</script>
+
+<script>
+	(function(jQuery) {
+		try {
+			function forceShowCcLinks() {
+				var ccLinks = document.querySelector('.cc_links');
+				if (!ccLinks) {
+					return;
+				}
+
+				var ccLinksVisible = jQuery(ccLinks).is(':visible');
+				if (ccLinksVisible) {
+					return;
+				}
+
+
+				ccLinks.style.display = 'block';
+
+				var ccParent = ccLinks.parentElement;
+
+				var ccParentVisible = jQuery(ccParent).is(':visible');
+				if (ccParentVisible) {
+					return;
+				}
+
+				ccParent.style.display = 'block';
+
+				var ccGrandparent = ccParent.parentElement;
+				var ccGrandparentVisible = jQuery(ccGrandparent).is(':visible');
+				if (ccGrandparentVisible) {
+					return;
+				}
+				ccGrandparent.style.display = 'block';
+
+			}
+
+			function forceShowCcLinksForever() {
+				var tenSeconds = 10000;
+				forceShowCcLinks();
+				setTimeout(forceShowCcLinksForever, tenSeconds);
+			}
+
+			jQuery(document).ready(forceShowCcLinksForever);
+		}
+		catch(ex) {}
+	})(window._W && _W.jQuery);
+</script>
+
+
+	</body>
+</html>

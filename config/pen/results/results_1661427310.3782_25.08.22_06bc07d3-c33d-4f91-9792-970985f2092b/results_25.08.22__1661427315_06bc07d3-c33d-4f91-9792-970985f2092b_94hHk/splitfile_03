@@ -1,0 +1,1 @@
+= map fib (take n [1..])

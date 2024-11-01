@@ -1,0 +1,36 @@
+Step 1/5:
+    Task:
+        - Create a business
+    Users:
+        - Create a user
+    Workflow:
+        - Create a workflow
+    Tasks:
+        - Create a task
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+# IMPORTS
+# ----------------------------------------------------------------------------------------------------------------------
+
+from django.test import TestCase
+from django.contrib.auth.models import User
+from django.utils import timezone
+
+from workflow.models import Workflow
+from task.models import Task
+from business.models import Business
+from user.models import Profile
+
+# ----------------------------------------------------------------------------------------------------------------------
+# TEST CASES
+# ----------------------------------------------------------------------------------------------------------------------
+
+
+class BusinessTestCase(TestCase):
+
+    def setUp(self):
+        """
+        Create a user, workflow, task and business.
+        """
+       

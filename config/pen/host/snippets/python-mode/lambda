@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: lambda
+# key: lam
+# --
+lambda ${1:x}: $0
+lambda x, y: (x+y, x-y)

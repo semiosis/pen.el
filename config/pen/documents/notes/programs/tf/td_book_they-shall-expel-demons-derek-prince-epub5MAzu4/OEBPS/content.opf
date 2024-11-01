@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:publisher>Derek Prince Minisitries</dc:publisher>
+    <dc:rights>THEY SHALL EXPEL DEMONS© 1998 Derek Prince Ministries-InternationalPublished by Derek Prince Ministries-UK 1998All rights reserved.No part of this book may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, or by means of any information storage and retrieval system, without permission in writing from the publisher.ISBN 978-1-901144-56-7Names of persons in this book have been changed to protect privacy.Unless otherwise noted, Scripture is from the New King James Version. Copyright © 1979, 1980, 1982 by Thomas Nelson, Inc. Used by permission. All rights reserved.Scripture marked nasb is taken from the NEW AMERICAN STANDARD BIBLE®, copyright © The Lockman Foundation 1960, 1962, 1963, 1968, 1971, 1972, 1973, 1975, 1977, 1995. Used by permission.Scripture marked niv is from the HOLY BIBLE, NEW INTERNATIONAL VERSION®. NIV®. Copyright 1973, 1978, 1984 by International Bible Society. Used by permission of Zondervan Publishing House. All rights reserved.Scripture marked Weymouth is from The New Testament in Modern Speech: An Idiomatic Translation into Everyday English from the Text of the Resultant Greek Testament, Third Edition, by Richard Francis Weymouth (London: James Clarke &amp; Co., 1910).Scripture marked kjv is from the King James Version of the Bible.Ebook Design by www.david-potter.co.uk4 5 6 7 8 9 10 / 07 06 05 04</dc:rights>
+    <dc:language>en</dc:language>
+    <dc:creator opf:file-as="Prince, Derek" opf:role="aut">Derek Prince</dc:creator>
+    <meta content="2011-12-06T14:30:54+00:00" name="calibre:timestamp" />
+    <dc:title>They Shall Expel Demons</dc:title>
+    <meta name="cover" content="cover" />
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <meta content="They Shall Expel Demons" name="calibre:title_sort" />
+    <dc:contributor opf:role="bkp">calibre (0.8.5) [http://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">1a236e9c-c0b2-4362-8665-822dffb672bc</dc:identifier>
+    <meta content="0.4.2" name="Sigil version" />
+  </metadata>
+  <manifest>
+    <item href="Images/cover.jpeg" id="cover" media-type="image/jpeg" />
+    <item href="Text/1%20-%20How%20Did%20Jesus%20Do%20It.xhtml" id="x1-how-did-jesus-do-it" media-type="application/xhtml+xml" />
+    <item href="Text/10%20-%20Ongoing%20Personal%20Conflicts.xhtml" id="x10-ongoing-personal-conflicts" media-type="application/xhtml+xml" />
+    <item href="Text/11%20-%20What%20Are%20Demons.xhtml" id="x11-what-are-demons" media-type="application/xhtml+xml" />
+    <item href="Text/12%20-%20Flesh%20or%20Demons.xhtml" id="x12-flesh-or-demons" media-type="application/xhtml+xml" />
+    <item href="Text/13%20-%20How%20Do%20Demons%20Come%20In.xhtml" id="x13-how-do-demons-come-in" media-type="application/xhtml+xml" />
+    <item href="Text/14%20-%20What%20is%20the%20Occult.xhtml" id="x14-what-is-the-occult" media-type="application/xhtml+xml" />
+    <item href="Text/15%20-%20Is%20Witchcraft%20Still%20At%20Work%20Today.xhtml" id="x15-is-witchcraft-still-at-work-today" media-type="application/xhtml+xml" />
+    <item href="Text/16%20-%20Do%20Christians%20Ever%20Need%20Deliverance%20From%20Demons.xhtml" id="x16-do-christians-ever-need-deliverance-from-demons" media-type="application/xhtml+xml" />
+    <item href="Text/17%20-%20Will%20the%20Holy%20Spirit%20Indwell%20an%20Unclean%20Vessel.xhtml" id="x17-will-the-holy-spirit-indwell-an-unclean-vessel" media-type="application/xhtml+xml" />
+    <item href="Text/18%20-%20Characteristic%20Activities%20of%20Demons.xhtml" id="x18-characteristic-activities-of-demons" media-type="application/xhtml+xml" />
+    <item href="Text/19%20-%20Areas%20of%20Personality%20Affected%20by%20Demons.xhtml" id="x19-areas-of-personality-affected-by-demons" media-type="application/xhtml+xml" />
+    <item href="Text/2%20-%20Terminology.xhtml" id="x2-terminology" media-type="application/xhtml+xml" />
+    <item href="Text/20%20-%20Demons%20of%20Sickness%20and%20Infirmity.xhtml" id="x20-demons-of-sickness-and-infirmity" media-type="application/xhtml+xml" />
+    <item href="Text/21%20-%20Preparing%20For%20Deliverance.xhtml" id="x21-preparing-for-deliverance" media-type="application/xhtml+xml" />
+    <item href="Text/22%20-%20A%20Prayer%20for%20Deliverance.xhtml" id="x22-a-prayer-for-deliverance" media-type="application/xhtml+xml" />
+    <item href="Text/23%20-%20How%20To%20Keep%20Your%20Deliverance.xhtml" id="x23-how-to-keep-your-deliverance" media-type="application/xhtml+xml" />
+    <item href="Text/24%20-%20Why%20Some%20Are%20Not%20Delivered.xhtml" id="x24-why-some-are-not-delivered" media-type="application/xhtml+xml" />
+    <item href="Text/25%20-%20Helping%20Others%20Be%20Set%20Free.xhtml" id="x25-helping-others-be-set-free" media-type="application/xhtml+xml" />
+    <item href="Text/26%20-%20After%20Deliverance.xhtml" id="x26-after-deliverance" media-type="application/xhtml+xml" />
+    <item href="Text/3%20-%20The%20Pattern%20and%20Mission%20of%20Jesus.xhtml" id="x3-the-pattern-and-mission-of-jesus" media-type="application/xhtml+xml" />
+    <item href="Text/4%20-%20My%20Struggle%20With%20Depression.xhtml" id="x4-my-struggle-with-depression" media-type="application/xhtml+xml" />
+    <item href="Text/5%20-%20People%20I%20failed%20to%20Help.xhtml" id="x5-people-i-failed-to-help" media-type="application/xhtml+xml" />
+    <item href="Text/6%20-%20Confrontation%20with%20Demons.xhtml" id="x6-confrontation-with-demons" media-type="application/xhtml+xml" />
+    <item href="Text/7%20-%20Challenged%20in%20My%20Own%20Pulpit.xhtml" id="x7-challenged-in-my-own-pulpit" media-type="application/xhtml+xml" />
+    <item href="Text/8%20-%20Beneath%20the%20Surface.xhtml" id="x8-beneath-the-surface" media-type="application/xhtml+xml" />
+    <item href="Text/9%20-%20Lessons%20From%20an%20Expanding%20Ministry.xhtml" id="x9-lessons-from-an-expanding-ministry" media-type="application/xhtml+xml" />
+    <item href="Text/Part%201%20-%20Fundamentals.xhtml" id="part-1-fundamentals" media-type="application/xhtml+xml" />
+    <item href="Text/Part%202%20-%20In%20the%20School%20of%20Experience.xhtml" id="part-2-in-the-school-of-experience" media-type="application/xhtml+xml" />
+    <item href="Text/Part%203%20-%20Seven%20Questions.xhtml" id="part-3-seven-questions" media-type="application/xhtml+xml" />
+    <item href="Text/Part%204%20-%20How%20to%20Recognise%20and%20Expel%20Demons.xhtml" id="part-4-how-to-recognise-and-expel-demons" media-type="application/xhtml+xml" />
+    <item href="Text/Preface.xhtml" id="preface" media-type="application/xhtml+xml" />
+    <item href="Text/copyright.xhtml" id="copyright" media-type="application/xhtml+xml" />
+    <item href="Styles/stylesheet.css" id="css1" media-type="text/css" />
+    <item href="Text/titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml" />
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage" />
+    <itemref idref="preface" />
+    <itemref idref="part-1-fundamentals" />
+    <itemref idref="x1-how-did-jesus-do-it" />
+    <itemref idref="x2-terminology" />
+    <itemref idref="x3-the-pattern-and-mission-of-jesus" />
+    <itemref idref="part-2-in-the-school-of-experience" />
+    <itemref idref="x4-my-struggle-with-depression" />
+    <itemref idref="x5-people-i-failed-to-help" />
+    <itemref idref="x6-confrontation-with-demons" />
+    <itemref idref="x7-challenged-in-my-own-pulpit" />
+    <itemref idref="x8-beneath-the-surface" />
+    <itemref idref="x9-lessons-from-an-expanding-ministry" />
+    <itemref idref="x10-ongoing-personal-conflicts" />
+    <itemref idref="part-3-seven-questions" />
+    <itemref idref="x11-what-are-demons" />
+    <itemref idref="x12-flesh-or-demons" />
+    <itemref idref="x13-how-do-demons-come-in" />
+    <itemref idref="x14-what-is-the-occult" />
+    <itemref idref="x15-is-witchcraft-still-at-work-today" />
+    <itemref idref="x16-do-christians-ever-need-deliverance-from-demons" />
+    <itemref idref="x17-will-the-holy-spirit-indwell-an-unclean-vessel" />
+    <itemref idref="part-4-how-to-recognise-and-expel-demons" />
+    <itemref idref="x18-characteristic-activities-of-demons" />
+    <itemref idref="x19-areas-of-personality-affected-by-demons" />
+    <itemref idref="x20-demons-of-sickness-and-infirmity" />
+    <itemref idref="x21-preparing-for-deliverance" />
+    <itemref idref="x22-a-prayer-for-deliverance" />
+    <itemref idref="x23-how-to-keep-your-deliverance" />
+    <itemref idref="x24-why-some-are-not-delivered" />
+    <itemref idref="x25-helping-others-be-set-free" />
+    <itemref idref="x26-after-deliverance" />
+    <itemref idref="copyright" />
+  </spine>
+  <guide>
+    <reference href="Text/titlepage.xhtml" title="Cover" type="cover" />
+  </guide>
+</package>

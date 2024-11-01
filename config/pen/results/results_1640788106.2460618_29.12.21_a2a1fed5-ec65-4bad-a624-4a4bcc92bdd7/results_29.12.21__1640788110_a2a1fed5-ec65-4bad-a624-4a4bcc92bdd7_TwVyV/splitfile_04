@@ -1,0 +1,18 @@
+""cohere" refers to the property of things to be in harmony or agreement with each other.
+'''
+
+import re
+
+def extract_words(text):
+    """
+    Extract the words from the text.
+
+    Input:
+    - text: string
+
+    Returns:
+    - words: list of strings
+    """
+    pass
+
+def extract_topics(text

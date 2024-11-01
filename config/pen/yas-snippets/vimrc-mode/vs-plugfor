@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: vim-plug Plugin definition with { 'for': '' }
+# group: vimsnippet
+# key: vs-plugfor
+# --
+Plug '${1}', { 'for': '${0}' }

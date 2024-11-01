@@ -1,0 +1,5 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-/www.sermonindex.net;  "gc" "https://github.com/Genivia/ugrep" "#" "<==" "gc"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-/www.sermonindex.net;  "gc" "https://github.com/Genivia/ugrep" "#" "<==" "gc"
+cd /root/repos/Genivia/ugrep;  "gc" "https://github.com/exiftool/exiftool" "#" "<==" "gc"
+cd /root/.emacs.d/host/pen.el/scripts;  "gc" "https://github.com/Genivia/ugrep" "#" "<==" "gc"
+cd /root/repos/Genivia/ugrep;  "gc" "https://github.com/exiftool/exiftool" "#" "<==" "gc"

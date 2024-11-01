@@ -1,0 +1,8 @@
+cd /root/.pen/documents/haskell-test/app;  "pen-hsqc" "new-project" "# <==" "hsqc"
+cd /root/.pen/documents/haskell-test/app;  "pen-hsqc" "new-project" "# <==" "hsqc"
+cd /root/.pen/documents/haskell-test/app;  "pen-hsqc" "new-project" "# <==" "hsqc"
+cd /root/.pen/documents/haskell-test/app;  "pen-hsqc" "new-project" "# <==" "hsqc"
+cd /root/.pen/documents;  "pen-hsqc" "new-project" "# <==" "hsqc"
+cd /root/.pen/documents/notes;  "pen-hsqc" "new-project" "# <==" "hsqc"
+cd /root/.pen/documents/notes;  "pen-hsqc" "v" "# <==" "hsqc"
+cd /root/.pen/documents/notes;  "pen-hsqc" "pin" "# <==" "hsqc"

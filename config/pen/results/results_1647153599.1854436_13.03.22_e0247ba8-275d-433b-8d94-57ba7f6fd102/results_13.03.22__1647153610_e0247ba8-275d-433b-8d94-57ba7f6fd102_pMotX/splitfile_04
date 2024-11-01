@@ -1,0 +1,7 @@
+"transpose" is a built-in function in SWI-Prolog.
+
+?- transpose([[a,b,c],[d,e,f],[g,h,i]],X).
+X = [[a, d, g], [b, e, h], [c, f, i]]
+
+?- transpose([[a,b,c],[d,e,f]],X).
+X = [[a, d], [b, e

@@ -1,0 +1,1 @@
+- Haskell guru: The program imports two modules. The first one is System.IO which provides some functions for interacting with the operating system. The second one is Data.Char which provides functions for working with characters and strings (toUpper).

@@ -1,0 +1,12 @@
+ system.
+- you: In what way are facts and variables different?
+- ansible guru: Vars are declared things.
+                Facts are things that are inferred from
+                the remote system's current state.
+- you: What is the default for a variable?
+- ansible guru: It's a string (which is different from a fact)
+- you: Explain the {{}} syntax. What does it do?
+- ansible guru: The {{}} syntax is used to output a variable.
+                If you say {{somevar}} in a template, then Ansible will output whatever value somevar has in that moment in time.
+
+    The real power of ansible comes when we get to loops and conditionals and Jinja2 templating language. We're going to talk in detail about this syntax tomorrow.

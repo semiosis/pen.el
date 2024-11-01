@@ -1,0 +1,1 @@
+errors to CloudWatch Logs and send notifications via SNS when there is a critical error.

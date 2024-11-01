@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: array2json
+# key: array2json
+# --
+use JSON;
+
+my @arr = ("this", "is", "my", "array");
+my $json_str = encode_json(\@arr);  # This will work now
+
+print "$json_str";

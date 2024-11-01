@@ -1,0 +1,8 @@
+ | K | R
+deriving ( Typeable , Data , Generic )
+
+data Celsius = C
+deriving ( Typeable , Data , Generic , Show )
+
+data Fahrenheit = F
+deriving ( Typeable , Data , Generic

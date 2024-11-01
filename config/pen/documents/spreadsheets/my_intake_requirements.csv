@@ -1,0 +1,66 @@
+"name","internal_id","fdc_id","unit","min","upper_limit"
+"Calories",1,,,,
+"Water",2,255,,,
+"Protein",3,203,"g",100,200
+"Carbs",4,205,"g",,
+"Dietary fiber",5,,,,
+"Soluble fiber",6,,,,
+"Insoluble fiber",7,,,,
+"Total sugars",8,,,,
+"Added sugars",9,,,,
+"Fat",10,204,"g",,
+"Saturated fat",11,606,,,
+"Trans fat",12,605,,,
+"Polyunsaturated fat",13,646,,,
+"Monounsaturated fat",14,645,,,
+"Cholesterol",15,601,,,
+"Vitamin A, IU",16,318,"ug",900,3000
+"Vitamin A, RAE",17,320,,,
+"Vitamin C",18,401,"mg",,2000
+"Vitamin D",19,324,"ug",15,100
+"Vitamin D2",20,325,,,
+"Vitamin D3",21,326,,,
+"Vitamin E",22,323,"mg",15,1000
+"Vitamin K",23,,"ug",120,
+"Vitamin K1 (phylloquinone)",24,430,,,
+"Vitamin K2, MK-4 (menaquinone-4)",25,428,,,
+"Niacin",26,406,"mg",16,35
+"Riboflavin",27,405,"mg",1.3,
+"Thiamin",28,404,"mg",1.2,
+"Vitamin B6",29,415,"mg",1.3,100
+"DFE, Dietary folate equivalents",30,435,,,
+"Folate",31,417,"ug",400,1000
+"Folic Acid",32,431,,,
+"Methylated folate",33,,,,
+"Vitamin B12",34,418,"ug",2.4,
+"Pantothenic acid",35,410,"mg",5,
+"Biotin",36,,"ug",30,
+"Choline",37,421,"mg",550,3500
+"Carotenoids",38,,,,
+"Calcium",39,301,"mg",1000,2500
+"Chromium",40,,"ug",35,
+"Copper",41,312,"ug",900,10000
+"Fluoride",42,313,"mg",4,10
+"Iodine",43,,"mg",8,1100
+"Iron",44,303,"mg",,45
+"Magnesium",45,304,"mg",420,
+"Magnesium (from pharmocological agents)",46,,"mg",,350
+"Manganese",47,315,"mg",2.3,11
+"Molybdenum",48,,"ug",45,2000
+"Nickel",49,,"mg",,1
+"Phosphorus",50,305,"mg",700,4000
+"Potassium",51,306,"mg",3400,
+"Selenium",52,317,"ug",55,400
+"Zinc",53,309,"mg",11,
+"Sodium",54,307,"mg",1500,
+"Chloride",55,,"g",2.3,3.6
+"Arsenic",56,,,,
+"Boron",57,,"mg",,20
+"Silicon",58,,,,
+"Sulfate",59,,,,
+"Vanadium",60,,"mg",,1.8
+"Mercury",61,,,,
+"Omega 3 fatty acids",62,,,,
+"Omega 6 fatty acids",63,,,,
+"Caffeine",64,262,,,
+"Alcohol",65,221,,,

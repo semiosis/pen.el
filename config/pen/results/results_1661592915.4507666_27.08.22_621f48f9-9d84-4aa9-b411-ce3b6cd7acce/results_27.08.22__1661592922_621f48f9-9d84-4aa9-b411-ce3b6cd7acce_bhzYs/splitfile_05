@@ -1,0 +1,9 @@
+do
+  let cols = maximum (map length rows)
+  mapM_ (\row -> putStrLn $ intercalate " | " (map (\col -> pad col cols) row)) rows
+
+pad :: String -> Int -> String
+pad s n = let
+  extra = n - length s
+  in replicate extra ' ' ++ s
+EOD

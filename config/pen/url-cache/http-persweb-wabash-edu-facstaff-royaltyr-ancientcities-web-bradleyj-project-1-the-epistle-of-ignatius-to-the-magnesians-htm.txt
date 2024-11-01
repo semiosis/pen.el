@@ -1,0 +1,424 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Last-Modified: Tue, 13 Mar 2001 02:36:30 GMT
+Accept-Ranges: bytes
+ETag: "04bd26866abc01:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Date: Fri, 01 Mar 2024 00:53:30 GMT
+Content-Length: 5755
+
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Win">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+  <META NAME="ProgId" CONTENT="Word.Document">
+  <META NAME="Originator" CONTENT="Microsoft Word 9">
+  <LINK REL="File-List" HREF="./The%20Epistle%20of%20Ignatius%20to%20the%20Magnesians_files/filelist.xml">
+  <TITLE>The Epistle of Ignatius to the Magnesians</TITLE>
+  <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Thomas Holmes</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Jacob Bradley</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>19</o:TotalTime>
+  <o:Created>2001-03-10T19:44:00Z</o:Created>
+  <o:LastSaved>2001-03-11T20:53:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1309</o:Words>
+  <o:Characters>7464</o:Characters>
+  <o:Company>Consultant</o:Company>
+  <o:Lines>62</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>9166</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+  <!--
+ /* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:16792199 0 0 0 65791 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.body, li.body, div.body
+	{mso-style-name:body;
+	margin-right:0in;
+	margin-top:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	text-indent:.4in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.unindented, li.unindented, div.unindented
+	{mso-style-name:unindented;
+	margin-right:0in;
+	margin-top:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.body2, li.body2, div.body2
+	{mso-style-name:body2;
+	margin-right:0in;
+	margin-top:12.0pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	text-indent:.4in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.unindented2, li.unindented2, div.unindented2
+	{mso-style-name:unindented2;
+	margin-right:0in;
+	margin-top:12.0pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.chaptersummary, li.chaptersummary, div.chaptersummary
+	{mso-style-name:chaptersummary;
+	margin-right:.4in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:.4in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.list1, li.list1, div.list1
+	{mso-style-name:list1;
+	margin-right:0in;
+	margin-top:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.list1a, li.list1a, div.list1a
+	{mso-style-name:list1a;
+	margin-right:0in;
+	margin-top:8.0pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.list2, li.list2, div.list2
+	{mso-style-name:list2;
+	margin-right:0in;
+	margin-top:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:1.0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.headerinfo, li.headerinfo, div.headerinfo
+	{mso-style-name:headerinfo;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:#FFEE77;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+  -->
+</style>
+  <!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026">
+  <o:colormru v:ext="edit" colors="#faf9c8"/>
+  <o:colormenu v:ext="edit" fillcolor="#faf9c8"/>
+ </o:shapedefaults></xml><![endif]-->
+  <!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</HEAD>
+<BODY BGCOLOR="#faf9c8" lang="EN-US" VLINK="#0000ff" style="tab-interval:
+.5in">
+
+<div class=Section1>
+
+<H2 style="text-align:center"><CENTER>The Epistle of Ignatius
+to the Magnesians</CENTER></H2>
+
+<P style="text-align:center"><CENTER>------------</CENTER></P>
+
+<P style="margin-left:.5in"><I>Ignatius, who is also called Theophorus,
+to the [Church] blessed in the grace of God the Father, in Jesus
+Christ our Saviour, in whom I salute the Church which is at Magnesia,
+near the Moeander, and wish it abundance of happiness in God the
+father, and in Jesus Christ.</I></P>
+
+<P style="margin-left:.5in">Chapter I.-Reason of Writing the Epistle.</P>
+
+<P>Having been informed of your godlylove, so well-ordered, I
+rejoiced greatly, and determined to commune with you in the faith
+of Jesus Christ. For as one who has been thought worthy of the
+most honourable of all names, in those bonds which I bear about,
+I commend the Churches, in which I pray for a union both of the
+flesh and spirit of Jesus Christ, the constant source of our life,
+and of faith and love, to which nothing is to be preferred, but
+especially of Jesus and the Father, in whom, if we endure all
+the assaults of the prince of this world, and escape them, we
+shall enjoy God.</P>
+
+<P style="text-indent:.5in">Chapter II.-I Rejoice in Your Messengers.</P>
+
+<P>Since, then, I have had the privilege of seeing you, through
+Damas your most worthy bishop, and through your worthy presbyters
+Bassus and Apollonius, and through my fellow-servant the deacon
+Sotio, whose friendship may I ever enjoy, inasmuch as he is subject
+to the bishop as to the grace of God, and to the presbytery as
+to the law of Jesus Christ, [I now write to you].</P>
+
+<P style="margin-left:.5in">Chapter III.-Honour Your Youthful
+Bishop.</P>
+
+<P>Now it becomes you also not to treat your bishop too familiarly
+on account of his youth, but to yield him all reverence, having
+respect tothe power of God the Father, as I have known even holy
+presbyters do, not judging rashly, from the manifest youthful
+appearance [of their bishop], but as being themselves prudent
+in God, submitting to him, or rather not to him, but to the Father
+of Jesus Christ, the bishop of us all. It is therefore fitting
+that you should, after no hypocritical fashion, obey [your bishop],
+in honour of Him who has wired us [so to do], since he that does
+not so deceives not [by such conduct] the bishop that is visible,
+but seeks to mock Him that is invisible. And all such conduct
+has reference not to man, but to God, who knows all secrets.</P>
+
+<P style="margin-left:.5in">Chapter IV.-Some Wickedly Act Independently
+of the Bishop.</P>
+
+<P>It is fitting, then, not only to be called Christians, but
+to be so in reality: as some indeed give one the title of bishop,
+but do all things without him. Now such persons seem to me to
+be not possessed of a good conscience, seeing they are not stedfastly
+gathered together according to the commandment.</P>
+
+<P style="margin-left:.5in">Chapter V.-Death is the Fate of All
+Such.</P>
+
+<P>Seeing, then, all things have an end, these two things are
+simultaneously set before us-death and life; and every one shall
+go unto his own place. For as there are two kinds of coins, the
+one of God, the other of the world, and each of these has its
+special character stamped upon it, [so is it also here.] The unbelieving
+are of this world; but the believing have, in love, the character
+of God the Father by Jesus Christ, by whom, if we are not in readiness
+to die into His passion, His life is not in us.</P>
+
+<P style="margin-left:.5in">Chapter VI.-Preserve Harmony.</P>
+
+<P>Since therefore I have, in the persons before mentioned, beheld
+the whole multitude of you in faith and love, I exhort you to
+study to do all things with a divine harmony, while your bishop
+presides in the place of God, and your presbyters in the place
+of the assembly of the apostles, along with your deacons, who
+are most dear to me, and are entrusted with the ministry of Jesus
+Christ, who was with the Father before the beginning of time,
+and in the end was revealed. Do ye all then, imitating the same
+divine conduct, pay respect to one another, and let no one look
+upon his neighbour after the flesh, but do ye continually love
+each other in Jesus Christ. Let nothing exist among you that may
+divide you ; but be ye united with your bishop, and those that
+preside over you, as a type and evidence of your immortality.</P>
+
+<P style="margin-left:.5in">Chapter VII.-Do Nothing Without the
+Bishop and Presbyters.</P>
+
+<P>As therefore the Lord did nothing without the Father, being
+united to Him, neither by Himself nor by the apostles, so neither
+do ye anything without the bishop and presbyters. Neither endeavour
+that anything appear reasonable and proper to yourselves apart;
+but being come together into the same place, let there be one
+prayer, one supplication, one mind, one hope, in love and in joy
+undefiled. There is one Jesus Christ, than whom nothing is more
+excellent. Do ye therefore all run together as into one temple
+of God, as to one altar, as to one Jesus Christ, who came forth
+from one Father, and is with and has gone to one.</P>
+
+<P style="margin-left:.5in">Chapter VIII.-Caution Against False
+Doctrines.</P>
+
+<P>Be not deceived with strange doctrines, nor with old fables,
+which are unprofitable. For if we still live according to the
+Jewish law, we acknowledge that we have not received grace. For
+the divinest prophets lived according to Christ Jesus. On this
+account also they were persecuted, being inspired by His grace
+to fully convince the unbelieving that there is one God, who has
+manifested Himself by Jesus Christ His Son, who is His eternal
+Word, not proceeding forth from silence, and who in all things
+pleased Him that sent Him.</P>
+
+<P style="margin-left:.5in">Chapter IX.-Let Us Live with Christ.</P>
+
+<P>If, therefore, those who were brought up in the ancient order
+of things have come to the possession of a newhope, no longer
+observing the Sabbath, but living in the observance of the Lord's
+Day, on which also our life has sprung up again by Him and by
+His death-whom some deny, by which mystery we have obtained faith,
+and therefore endure, that we may be found the disciples of Jesus
+Christ, our only Master-how shall we be able to live apart from
+Him, whose disciples the prophets themselves in the Spirit did
+wait for Him as their Teacher? And therefore He whom they rightly
+waited for, being come, raised them from the dead.</P>
+
+<P style="margin-left:.5in">Chapter X.-Beware of Judaizing.</P>
+
+<P>Let us not, therefore, be insensible to His kindness. For were
+He to reward us according to our works, we should cease to be.
+Therefore, having become His disciples, let us learn to live according
+to the principles of Christianity. For whosoever is called by
+any other name besides this, is not of God. Lay aside, therefore,
+the evil, the old, the sour leaven, and be ye changed into the
+new leaven, which is Jesus Christ. Be ye salted in Him, lest any
+one among you should be corrupted, since by your savour ye shall
+be convicted. It is absurd to profess Christ Jesus, and to Judaize.
+For Christianity did not embrace Judaism, but Judaism Christianity,
+that so every tongue which believeth might be gathered together
+to God.</P>
+
+<P style="margin-left:.5in">Chapter XI.-I Write These Things to
+Warn You.</P>
+
+<P>These things [I address to you], my beloved, not that I know
+any of you to be in such a state; but, as less than any of you,
+I desire to guard you beforehand, that ye fall not upon the hooks
+of vain doctrine, but that ye attain to full assurance in regard
+to the birth, and passion, and resurrection which took place in
+the time of the government of Pontius Pilate, being truly and
+certainly accomplished by Jesus Christ, who is our hope, from
+which may no one of you ever be turned aside.</P>
+
+<P style="margin-left:.5in">Chapter XII.-Ye are Superior to Me.</P>
+
+<P>May I enjoy you in all respects, if indeed I be worthy! For
+though I am bound, I am not worthy to be compared to any of you
+that are at liberty. I know that ye are not puffed up, for ye
+have Jesus Christ in yourselves. And all the more when I commend
+you, I know that ye cherish modesty of spirit; as it is written,
+&quot;The righteous man is his own accuser.&quot;</P>
+
+<P style="margin-left:.5in">Chapter XIII.-Be Established in Faith
+and Unity.</P>
+
+<P>Study, therefore, to be established in the doctrines of the
+Lord and the apostles, that so all things, whatsoever ye do, may
+prosper both in the flesh and spirit; in faith and love; in the
+Son, and in the Father, and in the Spirit; in the beginning and
+in the end; with your most admirable bishop, and the well-compacted
+spiritual crown of your presbytery, and the deacons who are according
+to God. Be ye subject to the bishop, and to one another, as Jesus
+Christ to the Father, according to the flesh, and the apostles
+to Christ, and to the Father, and to the Spirit; that so there
+may be a union both fleshly and spiritual.</P>
+
+<P style="margin-left:.5in">Chapter XIV.-Your Prayers Requested.</P>
+
+<P>Knowing as I do that ye are full of God, I have but briefly
+exhorted you. Be mindful of me in your prayers, that I may attain
+to God; and of the Church which is in Syria, whence I am not worthy
+to derive my name: for I stand in need of your united prayer in
+God, and your love, that the Church which is in Syria may be &quot;deemed
+worthy of being refreshed<sup> </sup>by your Church.</P>
+
+<P style="margin-left:.5in">Chapter XV.-Salutations.</P>
+
+<P>The Ephesians from Smyrna (whence I also write to you), who
+are here for the glory of God, as ye also are, who have in all
+things refreshed me, salute you, along with Polycarp, the bishop
+of the Smyrnaeans. The rest of the Churches, in honour of Jesus
+Christ, also salute you. Fare ye well in the harmony of God, ye
+who have obtained the inseparable Spirit, who is Jesus Christ.</P>
+
+<P><A HREF="The%20Letters%20of%20Ignatius.html">Back to the Letters</A></P>
+
+<P><A HREF="home.html"><IMG SRC="Pictures/home.gif" WIDTH="20"
+HEIGHT="20" ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3"></A></P>
+
+</div>
+
+</BODY>
+</HTML>

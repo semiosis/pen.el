@@ -1,0 +1,13 @@
+"toUpper" is a function from Data.Char.
+
+The documentation for "toUpper" is:
+
+> "toUpper" is a function from Data.Char.
+>
+> Convert a character to upper case.
+>
+> Note: this function is '''not''' available in the '''Unicode''' version.
+>
+> '''Law''':
+>
+>     toUpper x == toLower (toUpper x)

@@ -1,0 +1,210 @@
+abstraction
+    ~/Calibre Library/Unknown/HaskellBook (9)/HaskellBook - Unknown.pdf
+
+untyped lambda calculus
+    14:21 < bpalmer> the lambda calculus that
+    people usually pay attention to is the
+    untyped lambda calculus
+
+typed lambda calculus
+    A typed formalism that uses the lambda-
+    symbol (λ) to denote anonymous function
+    abstraction.
+    
+    In this context, types are usually objects
+    of a syntactic nature that are assigned to
+    lambda terms; the exact nature of a type
+    depends on the calculus considered (see
+    kinds below).
+
+Lambda Calculus
+    Consists of constructing lambda terms and
+    performing reduction operations on them.
+
+    It's a simple notation with 3 parts.
+
+    1. variables
+    2. way of building functions
+    3. way of applying functions
+
+    .  is like whitespace
+    λx means input x
+    x  means output x
+
+    λx.x+1
+
+        Put a lambda, then an x then a dot,
+        then the output in terms of x.
+
+        This expression contains 1 abstraction
+        and no applications.
+
+    λx.λy.x+y
+
+        Addition. Takes 2 inputs, x and y.
+
+        This expression / lambda term contains
+        2 abstractions and no applications.
+
+    (λx.x+1)5
+    λx.x+1 5
+
+        This expression contains 1 abstraction
+        and 1 application.
+
+        Either of these are ways to apply a
+        function.
+
+        Parentheses are used to disambiguate
+        function application.
+
+        This is purely anecdotal, but in my
+        experience it is common to treat
+        application as left-associative (that
+        is, "a b c" = "(a b) c") and to omit
+        parenthesis which don't change that,
+        since it makes it easier to read.
+
+        λb.b FALSE TRUE
+        (λb.b FALSE) TRUE
+
+        The above would be interpreted the
+        same.
+
+    (λx.λy.x+y) TRUE FALSE
+    λx.λy.x+y TRUE FALSE
+
+        Supply 2 inputs, TRUE and FALSE to
+        function (λx.λy.x+y).
+
+    lambda term
+        A valid lambda calculus expression.
+
+    x
+    Variable
+        A character or string representing a
+        parameter or mathematical/logical
+        value
+
+    λx.M
+    λx.x+1
+    Abstraction
+        Function definition.
+
+        It's abstract because it's incomplete
+        (it needs input).
+
+        M is a lambda term.
+
+        M must be relative to x, e.g. (x+1).
+
+        The variable x becomes bound in
+        the expression. Here, x is the only
+        unbound term and is the thing that
+        accepts the variable.
+
+    (λx.x)M
+    (λx.x) M
+    (N)M
+    (N) M
+    (N M)
+    Application
+        The identity function applied to M.
+
+        M is a lambda term.
+
+        I'm quite sure that application is
+        represented by a separation using
+        either parenthesis or space.
+
+    Precedence:
+    - Application has higher precedence than
+    - Abstraction.
+
+    Associativity
+    - Application is left-associative, and
+    - Abstraction is right-associative
+
+    The below examples use far more space than
+    they need.
+
+    Equivalent:
+    - λ x.x z λ y.x y
+    - λ x. ( (x z) (λ y. (x y)) )
+          ^ ^     ^     ^      ^
+          This whitespace is completely
+          redundant.
+
+    Equivalent:
+    - (λ x.x z) λ y.w λ w.w x y z
+    - (λ x. (x z)) (λ y. (w (λ w. (((w x) y) z))))
+
+    Any turing-complete program can be
+    rewritten in lambda calculas.
+
+    They are 2 ways of describing programs
+    that are equivalent.
+
+    Lambda calculus is as simple as that. If
+    you want to do things like have booleans
+    and recursion then you need to encode
+    them.
+
+    Use the idea of making a choice to encode
+    true and false.
+
+    TRUE = λx.λy.x
+        return the first thing
+
+    FALSE = λx.λy.y
+        return the second thing
+
+    Substitute into below equations using the
+    above definitions.
+
+    b = λb.b
+        This is the identity function.
+
+    NOT b = λb.b FALSE TRUE
+        This is the definition of NOT.
+        Proof:
+    |   (λb.b FALSE TRUE) TRUE,
+    |       TRUE is the RHS and the input.
+    |       The function consists of
+    |       everything within the parentheses.
+    |
+    |       Parentheses can be dropped if the
+    |       expression is unambiguous.
+    |
+    |       I'm failing to believe this proof
+    |       because of the order of
+    |       application. The person who wrote
+    |       this probably got confused or was
+    |       not following the associativity
+    |       rules I am trying to learn. I'm
+    |       following the logic, though.
+    |
+    |   TRUE FALSE TRUE,
+    |       substitute b for TRUE
+    |
+    |   (λx.λy.x) FALSE TRUE,
+    |       expand TRUE to TRUE's definition
+    |       apply it as a function
+    |
+    |   FALSE
+
+    NOT p   : (p)(FALSE)(TRUE)
+    AND     : (λx, λy). x y FALSE
+    a AND b : (a)(b)(FALSE)
+    OR      : (λx, λy). x TRUE y
+    a OR b  : (a)(TRUE)(b)
+    a XOR b : (a)((b)(FALSE)(TRUE))(b)
+
+    Y = λf.(λx.f(x x)) (λx.f(x x))
+        This is the key to doing recursion in
+        lambda calculus.
+
+        You have two copies of the same thing.
+        This is the key to doing recursion,
+        which is something quite related to
+        self-replication.

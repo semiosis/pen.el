@@ -1,0 +1,7 @@
+cd /;  "James" "2:25" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/bible-studies;  "James" "2:25" "#" "<==" "bash"
+cd /;  "James" "2" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/bible-studies;  "James" "2:22-25" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "James" "2:20-25" "#" "<==" "bash"
+cd /;  "James" "2:25" "#" "<==" "zsh"
+cd /root/notes;  "James" "4:10" "#" "<==" "bash"

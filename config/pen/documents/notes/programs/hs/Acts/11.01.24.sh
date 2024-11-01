@@ -1,0 +1,7 @@
+cd /root/notes;  "Acts" "5" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Acts" "5:34-39" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Acts" "5:32" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Acts" "5:27-32" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Acts" "16:16" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Acts" "16:16" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Acts" "16:16-18" "#" "<==" "bash"

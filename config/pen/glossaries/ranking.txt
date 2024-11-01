@@ -1,0 +1,50 @@
+ranking
+    Create a permutation of items in new,
+    unseen lists in a similar way to rankings
+    in the training data.
+
+Learning to rank
+LTR
+machine-learned ranking
+MLR
+    The application of ML, typically
+    supervised, semi-supervised or RL, in the
+    construction of ranking models for IR
+    systems.
+    
+    Training data consists of lists of items
+    with some partial order specified between
+    items in each list.
+    
+    This order is typically induced by giving
+    a numerical or ordinal score or a binary
+    judgment (e.g. "relevant" or "not
+    relevant") for each item.
+    
+    The ranking model purposes to rank, i.e.
+    producing a permutation of items in new,
+    unseen lists in a similar way to rankings
+    in the training data.
+    
+    Ranking is a central part of many IR
+    problems, such as document retrieval,
+    collaborative filtering, sentiment
+    analysis, and online advertising.
+
+tf-idf weighted sum
+TFIDF weighted sum
+TF*IDF weighted sum
+s(Q,D)
+    [#ranking]
+
+    [[https://www.youtube.com/watch?v=nHnML6fauDg][IR3.10 tf-idf weighted sum - YouTube]]
+
+    Out of the box, with no other information
+    provided, that will probably give you the
+    best ranking possible.
+
+    SOTA ranking formula for short queries.
+
+    Compute for all documents in your dataset
+    then rank documents in order of decreasing
+    TF*IDF weighted sum.

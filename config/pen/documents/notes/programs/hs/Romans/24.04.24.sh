@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Romans" "8:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "8:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "4:5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "4:5-6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "4:5-7" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "4:5-8" "#" "<==" "zsh"

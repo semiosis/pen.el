@@ -1,0 +1,7 @@
+
+
+main = mainWithOptions (options Main.defaultOptions) options
+
+mainWithOptions :: Options -> IO () -> IO ()
+
+mainWithOptions options things = withSqliteConn ":memory:" $ runSqlConn

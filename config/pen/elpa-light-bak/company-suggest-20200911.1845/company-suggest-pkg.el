@@ -1,0 +1,2 @@
+;;; Generated package description from company-suggest.el  -*- no-byte-compile: t -*-
+(define-package "company-suggest" "20200911.1845" "Company-mode back-end for search engine suggests" '((company "0.9.0") (emacs "25.1")) :commit "1c89c9de3852f07ce28b0bedf1fbf56fe6eedcdc" :authors '(("Jürgen Hötzel" . "juergen@archlinux.org")) :maintainer '("Jürgen Hötzel" . "juergen@archlinux.org") :keywords '("completion" "convenience") :url "https://github.com/juergenhoetzel/company-suggest")

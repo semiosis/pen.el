@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "hide-cursor" "tmux-choose-window" "-t" "1692582758" "#" "<==" "nvim"
+cd /root/.emacs.d/host/pen.el/scripts;  "hide-cursor" "tmux-choose-window" "-t" "1692582758" "#" "<==" "nvim"
+cd /root/.emacs.d/host/pen.el/scripts;  "hide-cursor" "tmux-choose-window" "-t" "1692582758" "#" "<==" "nvim"
+cd /root/.emacs.d/host/pen.el/scripts;  "hide-cursor" "tmux-choose-window" "-t" "1692582758" "#" "<==" "nvim"
+cd /root/notes;  "hide-cursor" "tmux-choose-window" "-t" "1692754854" "#" "<==" "nvim"

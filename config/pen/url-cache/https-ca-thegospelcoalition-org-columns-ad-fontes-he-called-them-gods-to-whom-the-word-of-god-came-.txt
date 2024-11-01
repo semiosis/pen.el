@@ -1,0 +1,1208 @@
+HTTP/1.1 200 OK
+Date: Wed, 26 Jul 2023 12:08:09 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept-Encoding
+vary: Accept-Encoding
+vary: Accept-Encoding
+vary: Accept-Encoding,Cookie
+x-powered-by: WP Engine
+link: <https://ca.thegospelcoalition.org/wp-json/>; rel="https://api.w.org/"
+link: <https://ca.thegospelcoalition.org/?p=70615>; rel=shortlink
+x-elasticpress-query: true
+x-cacheable: YES:180000.000
+Cache-Control: max-age=180000, must-revalidate
+x-cache: MISS
+x-cache-group: normal
+Last-Modified: Tue, 25 Jul 2023 11:59:41 GMT
+CF-Cache-Status: HIT
+Age: 6620
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GsaymjgcZx0nhnGZVYoUX%2Ff%2B56UfJvammhwSpyBz0xn8o7zg7EOM7SHwjf9eIDReOiaAHd8ponMcXCAnhQmQLxyn9aMlSHjDj%2BxVp27wscIuAV%2BGZ43SCNs8qoyKfHmxZup2ZNHvd7IIvvU%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7ecc86c3cefe1c4c-AKL
+
+<!doctype html>
+<html lang="en-US" class="ca">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7402176/6634992/css/fonts.css" />
+
+<script>
+			</script>
+<script type='text/javascript'>
+					var ga_post_id = '70615';
+					var ga_post_categories = 'bible-theology';
+					var ga_post_type = 'ad-fontes';
+					var ga_post_author = 'Paul Carter';
+					var ga_post_tags = '';
+					var ga_post_series = '';
+					var ga_is_single = true;
+					var ga_edition = 2;
+					var ga_publish_date = '05-17-2020';
+			  </script>
+<script type="text/javascript"></script>
+
+<script>
+		function gaPostDataString(ga_edition, ga_post_id, ga_post_type, ga_post_author, ga_post_categories, ga_post_tags, ga_post_series, ga_post_scroll, ga_publish_date) {
+			return ga_edition + "|" +
+				ga_post_id + "|" +
+				ga_post_type + "|" +
+				ga_post_author + "|" +
+				ga_post_categories + "|" +
+				ga_post_tags + "|" +
+				ga_post_series + "|" +
+				ga_post_scroll + "|" +
+				ga_publish_date + "|";
+		}
+		var ga_init_data_layer = {
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js'
+		};
+
+		window.ga_clientId = false;
+
+		try {
+			if (ga_is_single) {
+				ga_init_data_layer['post_data'] = gaPostDataString(
+					ga_edition,
+					ga_post_id,
+					ga_post_type,
+					ga_post_author,
+					ga_post_categories,
+					ga_post_tags,
+					ga_post_series,
+					'',
+					ga_publish_date
+				);
+				console.log(ga_init_data_layer);
+			}
+		} catch (e) {
+
+		}
+
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push(ga_init_data_layer);
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TS5MV7W');
+
+
+		window.addEventListener("load", function() {
+			if (window.ga && ga.create) {
+				ga('create', 'UA-10750690-1', 'auto');
+
+				ga(function(tracker) {
+					window.ga_clientId = tracker.get('clientId');
+					Cookies.set('ga_clientId', ga_clientId);
+					console.log("loaded");
+				});
+
+			} else {
+				// Booh, no Analytics detected...
+				console.log("GA not loaded");
+			}
+		}, false);
+	</script>
+
+<title>He Called Them Gods (to Whom the Word of God Came) - The Gospel Coalition | Canada</title>
+
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="He Called Them Gods (to Whom the Word of God Came) - The Gospel Coalition | Canada" />
+<meta property="og:description" content="If the Bible is clear about anything, it is clear about the fact that there is only one God. This was drilled into the heads of young Hebrew boys and girls in Old Testament times: “Hear, O Israel: The LORD our God, the LORD is one” (Deuteronomy 6:4 ESV). God is unique. He is alone in the category of “Godness” – even the demons in the Bible are acquainted with this foundational truth: “You believe that God is one; you do well. Even the demons believe—and shudder!” (James 2:19 ESV). Everyone in the Bible is on page here. God is One. He is..." />
+<meta property="og:url" content="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" />
+<meta property="og:site_name" content="The Gospel Coalition | Canada" />
+<meta property="article:publisher" content="https://www.facebook.com/TGCCanada" />
+<meta property="article:section" content="Bible &amp; Theology" />
+<meta property="og:image" content="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2020/05/17171632/sven-scheuermeier-VNseEaTt9w4-unsplash.jpg" />
+<meta property="og:image:secure_url" content="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2020/05/17171632/sven-scheuermeier-VNseEaTt9w4-unsplash.jpg" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:height" content="1280" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="If the Bible is clear about anything, it is clear about the fact that there is only one God. This was drilled into the heads of young Hebrew boys and girls in Old Testament times: “Hear, O Israel: The LORD our God, the LORD is one” (Deuteronomy 6:4 ESV). God is unique. He is alone in the category of “Godness” – even the demons in the Bible are acquainted with this foundational truth: “You believe that God is one; you do well. Even the demons believe—and shudder!” (James 2:19 ESV). Everyone in the Bible is on page here. God is One. He is..." />
+<meta name="twitter:title" content="He Called Them Gods (to Whom the Word of God Came) - The Gospel Coalition | Canada" />
+<meta name="twitter:site" content="@CanadaTGC" />
+<meta name="twitter:image" content="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2020/05/17171632/sven-scheuermeier-VNseEaTt9w4-unsplash.jpg" />
+<meta name="twitter:creator" content="@CanadaTGC" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ca.thegospelcoalition.org/#website","url":"https://ca.thegospelcoalition.org/","name":"The Gospel Coalition | Canada","inLanguage":"en-US","description":"Just another The Gospel Coalition Sites site","potentialAction":{"@type":"SearchAction","target":"https://ca.thegospelcoalition.org/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/#primaryimage","inLanguage":"en-US","url":"https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2020/05/17171632/sven-scheuermeier-VNseEaTt9w4-unsplash.jpg","width":1920,"height":1280},{"@type":"WebPage","@id":"https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/#webpage","url":"https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/","name":"He Called Them Gods (to Whom the Word of God Came) - The Gospel Coalition | Canada","isPartOf":{"@id":"https://ca.thegospelcoalition.org/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/#primaryimage"},"datePublished":"2020-05-17T21:37:26+00:00","dateModified":"2020-05-17T21:37:26+00:00"}]}</script>
+
+<link rel='dns-prefetch' href='//cdn.polyfill.io' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//static.esvmedia.org' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<script type="application/ld+json" id="tgc-article-schema">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/ca.thegospelcoalition.org\/columns\/ad-fontes\/he-called-them-gods-to-whom-the-word-of-god-came\/"},"publisher":{"@type":"Organization","name":"The Gospel Coalition | Canada","logo":{"@type":"ImageObject","url":"https:\/\/media.thegospelcoalition.org\/wp-content\/uploads\/sites\/2\/2018\/08\/09114540\/tgc_ca_amp_logo.png","height":60,"width":121}},"headline":"He Called Them Gods (to Whom the Word of God Came)","description":"If the Bible is clear about anything, it is clear about the fact that there is only one God. This was drilled into the heads of young Hebrew boys and girls in Old Testament times: “Hear, O Israel: The LORD our God, the LORD is one” (Deuteronomy 6:4 ESV). God is unique. He is alone in the category of “Godness” – even the demons in the Bible are acquainted with this foundational truth: “You believe that God is one; you do well. Even the demons believe—and shudder!” (James 2:19 ESV). Everyone in the Bible is on page here. God is One. He is...","image":["https:\/\/media.thegospelcoalition.org\/wp-content\/uploads\/sites\/2\/2020\/05\/17171632\/sven-scheuermeier-VNseEaTt9w4-unsplash.jpg"],"datePublished":"2020-05-17T17:37:26-04:00","dateModified":"2020-05-17T17:37:26-04:00","author":[{"@type":"Person","name":"Paul Carter","sameAs":"https:\/\/ca.thegospelcoalition.org\/profile\/paul-carter\/"}]}</script> <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ca.thegospelcoalition.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.13"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='plyr-css' href='https://ca.thegospelcoalition.org/wp-content/themes/luther/css/common/plyr.css?ver=5.4.13' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://ca.thegospelcoalition.org/wp-includes/css/dist/block-library/style.min.css?ver=5.4.13' type='text/css' media='all' />
+<link rel='stylesheet' id='elasticpress-related-posts-block-css' href='https://ca.thegospelcoalition.org/wp-content/plugins/elasticpress_3.4.3/dist/css/related-posts-block-styles.min.css?ver=3.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='https://ca.thegospelcoalition.org/wp-content/themes/sage/style.css?ver=5.4.13' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-styles-css' href='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/magnific-popup/magnific-popup.min.css?ver=5.4.13' type='text/css' media='all' />
+<link rel='stylesheet' id='select2-css' href='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/select2/select2.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-styles-css' href='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/swiper/css/swiper.min.css?ver=5.4.13' type='text/css' media='all' />
+<link rel='stylesheet' id='luther-styles-css' href='https://ca.thegospelcoalition.org/wp-content/themes/luther/css/theme.min.css?ver=1.0.0.1681409313' type='text/css' media='all' />
+<link rel='stylesheet' id='single-blog-css' href='https://ca.thegospelcoalition.org/wp-content/themes/luther/css/templates/single-blog.css?ver=1685644180' type='text/css' media='all' />
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LdvjuIUAAAAAEJrlUeMsNppRpsCOwCAeUy2xWvb&#038;ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/acf-google-map.js?ver=1'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key&#038;ver=1'></script>
+<script type='text/javascript' src='https://static.esvmedia.org/crossref/crossref.min.js?ver=1'></script>
+<link rel='https://api.w.org/' href='https://ca.thegospelcoalition.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ca.thegospelcoalition.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ca.thegospelcoalition.org/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='https://ca.thegospelcoalition.org/?p=70615' />
+<link rel="alternate" type="application/json+oembed" href="https://ca.thegospelcoalition.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fca.thegospelcoalition.org%2Fcolumns%2Fad-fontes%2Fhe-called-them-gods-to-whom-the-word-of-god-came%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://ca.thegospelcoalition.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fca.thegospelcoalition.org%2Fcolumns%2Fad-fontes%2Fhe-called-them-gods-to-whom-the-word-of-god-came%2F&#038;format=xml" />
+
+<link rel='apple-touch-icon' sizes='57x57' href='/apple-touch-icon-57x57.png'>
+<link rel='apple-touch-icon' sizes='60x60' href='/apple-touch-icon-60x60.png'>
+<link rel='apple-touch-icon' sizes='72x72' href='/apple-touch-icon-72x72.png'>
+<link rel='apple-touch-icon' sizes='76x76' href='/apple-touch-icon-76x76.png'>
+<link rel='apple-touch-icon' sizes='114x114' href='/apple-touch-icon-114x114.png'>
+<link rel='apple-touch-icon' sizes='120x120' href='/apple-touch-icon-120x120.png'>
+<link rel='apple-touch-icon' sizes='144x144' href='/apple-touch-icon-144x144.png'>
+<link rel='apple-touch-icon' sizes='152x152' href='/apple-touch-icon-152x152.png'>
+<link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon-180x180.png'>
+<link rel='icon' type='image/png' href='/favicon-32x32.png' sizes='32x32'>
+<link rel='icon' type='image/png' href='/favicon-194x194.png' sizes='194x194'>
+<link rel='icon' type='image/png' href='/favicon-96x96.png' sizes='96x96'>
+<link rel='icon' type='image/png' href='/android-chrome-192x192.png' sizes='192x192'>
+<link rel='icon' type='image/png' href='/favicon-16x16.png' sizes='16x16'>
+<link rel='manifest' href='/manifest.json'>
+<link rel='mask-icon' href='/safari-pinned-tab.svg' color='#66A343'>
+<meta name='msapplication-TileColor' content='#f5f5f5'>
+<meta name='msapplication-TileImage' content='/mstile-144x144.png'>
+<meta name='theme-color' content='#ffffff'>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="amphtml" href="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/?amp">
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+
+
+<script>
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+		</script>
+<script>
+			googletag.cmd.push(function() {
+				//googletag.defineSlot('/21645437283/TGC-Articles-728x90-ATF', [[320, 50], [970, 90], [300, 50], [300, 250], [728, 90]], 'div-gpt-ad-1509655114140-0').addService(googletag.pubads());
+				// Infinite scroll requires SRA
+				googletag.pubads().enableSingleRequest();
+				googletag.enableServices();
+			});
+		</script>
+
+<script>
+			(function() {
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//cdn.beaconads.com/ac/beaconads.js';
+				//(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+</head>
+<body id="main" class="ad-fontes-template-default single single-ad-fontes postid-70615 wp-embed-responsive  luther_body blogID_2 he-called-them-gods-to-whom-the-word-of-god-came">
+
+
+<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5MV7W" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+
+<div id="header-spacer"></div>
+<!--[if IE]>
+          <div class="alert alert-warning">
+            You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.          </div>
+        <![endif]-->
+<div id="article_drawer_cta" class="article_callout_drawer" style="background-color:#000000">
+<div class="article_callout_drawer_close"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<p style="color:#ffffff">
+Register now for our 2023 conference for women! </p>
+</div>
+<div class="col-md-12">
+<a href="https://ca.thegospelcoalition.org/tgcc-women-2023/" class="flat_btn full_width gtm_article_drawer_cta_btn" style="color:#ffffff;background-color:#77af44">
+Register </a>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	var $ = jQuery;
+</script>
+<div id="main_sidenav" class="main_sidenav">
+<div class="side_menu_wrapper">
+
+<div class="main_search_wrap d-flex align-items-center">
+<form method="get" id="header_searchform" class="header_searchform" action="https://ca.thegospelcoalition.org">
+<div class="header_searchform_fields">
+<div>
+<a href="#" onclick="document.getElementById('header_searchform').submit()">
+<i class="fal fa-search" aria-hidden="true"></i>
+<span>|</span>
+</a>
+<input type="text" name="s" id="s" class="search-query " placeholder="What can we help you find?" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" x-webkit-speech tabindex="1" />
+</div>
+</div>
+</form>
+</div>
+<a href="javascript:void(0)" class="closebtn">
+&times;
+</a>
+<div id="side_menu" class="side_menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<div class="side_menu_section_wrapper">
+<div class="side_menu_section">
+<h6 class="smenu_section_title">
+Browse </h6>
+<ul class="side_menu_items">
+<li class="side_menu_item">
+<a class="side_menu_item_link side_menu_parent" href="#">
+Columns </a>
+<ul class="side_menu_child_items_wrapper">
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/columns/ad-fontes/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/01/16101850/1825-x-1828-Paul-Carter.Headshot.HR_-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/01/16101850/1825-x-1828-Paul-Carter.Headshot.HR_-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/01/16101850/1825-x-1828-Paul-Carter.Headshot.HR_-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/01/16101850/1825-x-1828-Paul-Carter.Headshot.HR_-768x769.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/01/16101850/1825-x-1828-Paul-Carter.Headshot.HR_-1022x1024.jpg 1022w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/01/16101850/1825-x-1828-Paul-Carter.Headshot.HR_.jpg 1825w" sizes="(max-width: 150px) 100vw, 150px" /> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Ad Fontes </div>
+<div class="sm_child_blog_subtitle">
+</div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/columns/straight-paths/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/12123755/DASH_Darryl-234-1-e1562949566165-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/12123755/DASH_Darryl-234-1-e1562949566165-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/12123755/DASH_Darryl-234-1-e1562949566165-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/12123755/DASH_Darryl-234-1-e1562949566165-768x768.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/12123755/DASH_Darryl-234-1-e1562949566165.jpg 854w" sizes="(max-width: 150px) 100vw, 150px" /> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Straight Paths </div>
+<div class="sm_child_blog_subtitle">
+</div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/columns/bedes-wall/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134607/Michael_Haykin_black_colour-Copy-e1496070681331-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134607/Michael_Haykin_black_colour-Copy-e1496070681331-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134607/Michael_Haykin_black_colour-Copy-e1496070681331-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134607/Michael_Haykin_black_colour-Copy-e1496070681331.jpg 582w" sizes="(max-width: 150px) 100vw, 150px" /> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Bede's Wall </div>
+<div class="sm_child_blog_subtitle">
+</div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/columns/cowboyology/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134725/Clint-Humfrey-e1496076968387-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134725/Clint-Humfrey-e1496076968387-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134725/Clint-Humfrey-e1496076968387-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134725/Clint-Humfrey-e1496076968387.jpg 350w" sizes="(max-width: 150px) 100vw, 150px" /> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Cowboyology </div>
+<div class="sm_child_blog_subtitle">
+</div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/columns/detrinitate/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/11/17103435/Wyatt-Headshot-2-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" /> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Detrinitate </div>
+<div class="sm_child_blog_subtitle">
+</div>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/articles/">
+Articles </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/book-review/">
+Reviews </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/podcasts/">
+Podcasts </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/video/">
+Videos </a>
+</li>
+</ul>
+</div>
+<div class="side_menu_section">
+<h6 class="smenu_section_title">
+Filter by </h6>
+<ul class="side_menu_items">
+<li class="side_menu_item">
+<a class="side_menu_item_link side_menu_parent" href="">
+Topics </a>
+<ul class="side_menu_child_items_wrapper">
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+</h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="/topics/church-history/">
+Church History </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/topics/covid19/">
+COVID19 </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/topics/leadership/">
+Leadership </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/topics/marriage/">
+Marriage </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/topics/preaching/">
+Preaching </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link side_menu_parent" href="/sections/">
+Sections </a>
+<ul class="side_menu_child_items_wrapper">
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+</h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="/bible-and-theology/">
+Bible & Theology </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/christian-living/">
+Christian Living </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/ministry/">
+Ministry </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/arts-and-culture/">
+Arts & Culture </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/current-events/">
+Current Events </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/authors">
+Authors </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header id="header_wrapper" class="header_wrapper navbar fixed-top">
+<div class="header_contents d-flex align-items-center justify-content-between">
+<div class="header_left d-flex align-items-center">
+
+<div class="menu_btn_wrapper  ">
+<div class="header_searchicon_wrapper">
+<a href="javascript:void(0);" class="header_searchicon">
+<i class="fal fa-search" aria-hidden="true"></i>
+<span>
+&nbsp;Explore </span>
+</a>
+</div>
+</div>
+
+<a class="brand" href="https://ca.thegospelcoalition.org/">
+<img class="header_logo" id="header_logo" src="/wp-content/themes/luther/images/tgc_logo.png" alt="TGC Header Logo" />
+</a>
+<div class="header_editions_wrapper">
+<div class="editions_wrapper">
+<a href="javascript:void(0);" id="current_edition" class="current_edition">
+<h2>
+Canadian Edition <i class="fas fa-chevron-down"></i>
+</h2>
+</a>
+<div class="edition_list" style="display: none;">
+<div class="editions_list_header d-flex align-items-center justify-content-between d-md-none">
+<div class="editions_list_header_text">
+Editions </div>
+<a href="javascript:void(0)" class="editions_closebtn">
+&times;
+</a>
+</div>
+<div class="edition_country_wrapper d-flex flex-wrap flex-md-column">
+<a href="https://africa.thegospelcoalition.org" class="edition_country  ">
+Africa </a>
+<a href="https://ar.thegospelcoalition.org" class="edition_country  arabic">
+عربي </a>
+<a href="https://au.thegospelcoalition.org" class="edition_country  ">
+Australia </a>
+<a href="https://coalizaopeloevangelho.org" class="edition_country  ">
+Brasil </a>
+<a href="https://ca.thegospelcoalition.org" class="edition_country active ">
+Canada </a>
+<a href="https://tc.tgcchinese.org/" class="edition_country  ">
+正體中文 </a>
+<a href="https://www.tgcchinese.org" class="edition_country  ">
+简体中文 </a>
+<a href="https://www.coalicionporelevangelio.org" class="edition_country  ">
+Espa&ntilde;ol </a>
+<a href="https://kanoneenjil.com" class="edition_country  arabic">
+فارسی </a>
+<a href="https://evangile21.thegospelcoalition.org" class="edition_country  ">
+Fran&ccedil;ais </a>
+<a href="https://in.thegospelcoalition.org" class="edition_country  ">
+India </a>
+<a href="https://tgcitalia.org" class="edition_country  ">
+Italia </a>
+<a href="http://www.tgckorea.org/" class="edition_country  ">
+한국어 </a>
+<a href="https://www.tgcnederland.nl" class="edition_country  ">
+Nederlands </a>
+<a href="https://norden.thegospelcoalition.org" class="edition_country  ">
+Norden </a>
+<a href="https://koalicioniungjillit.org" class="edition_country  ">
+Shqip </a>
+<a href="https://ru.thegospelcoalition.org" class="edition_country  ">
+Русский </a>
+<a href="https://spolocenstvoevanjelia.sk/" class="edition_country  ">
+Slovenský </a>
+<a href="https://ukr.thegospelcoalition.org" class="edition_country  ">
+Українська </a>
+<a href="https://www.thegospelcoalition.org" class="edition_country  ">
+United States </a>
+</div>
+</div>
+</div> </div>
+</div>
+<div class="header_right d-flex align-items-center">
+
+
+<div class="mobile_ham">
+<div class="ham_menu"></div>
+</div>
+<div class="header_menu">
+<div class="top_menu">
+<div class="top_menu_mobile_header">
+Browse </div>
+<ul class="top_menu_list d-flex align-items-center">
+<li class="top_menu_header_item">
+<a href="#" class="top_menu_parent  ">
+Editorial </a>
+<ul class="top_menu_dropdown flex-row flex-wrap" style="display:none;">
+<li class="bold_item"><a href="/columns/" class="">Columns</a></li><li class="bold_item"><a href="/podcasts/" class="">Podcasts</a></li><li class="bold_item"><a href="/reviews/" class="">Reviews</a></li><li class="bold_item"><a href="/video/" class="">Videos</a></li><li class="line_separator"><a href="" class=""></a></li><li class=""><a href="/sections/bible-theology/" class="">Bible & Theology</a></li><li class=""><a href="/sections/christian-living/" class="">Christian Living</a></li><li class=""><a href="/sections/ministry/" class="">Ministry</a></li><li class=""><a href="/sections/arts-culture/" class="">Arts & Culture</a></li><li class=""><a href="/sections/current-events/" class="">Current Events</a></li><li class=""><a href="/history" class="">History</a></li> </ul>
+</li>
+<li class="top_menu_header_item">
+<a href="#" class="top_menu_parent  ">
+About Us </a>
+<ul class="top_menu_dropdown flex-row flex-wrap" style="display:none;">
+<li class="bold_item"><a href="/about/foundation-documents/" class="">Foundation Documents</a></li><li class="bold_item"><a href="/about/staff/" class="">Staff</a></li><li class="bold_item"><a href="/about/council/" class="">Council</a></li><li class="bold_item"><a href="/regions/" class="">Regional Chapters</a></li><li class="bold_item"><a href="/contact-us/" class="">Contact Us</a></li> </ul>
+</li>
+<li class="top_menu_header_item">
+<a href="#" class="top_menu_parent  ">
+Events </a>
+ <ul class="top_menu_dropdown flex-row flex-wrap" style="display:none;">
+<li class="bold_item"><a href="/video/" class="">Conference Media</a></li> </ul>
+</li>
+<li class="top_menu_header_item">
+<a href="/donate/" class="top_menu_parent btn btn-outline-dark ">
+GIVE </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div id="year-end-takeover" class="container">
+<div class="yet_backdrop" style="--yet_bg_color:#000000; --yet_bg_opacity:0;"></div>
+<div class="popup text-center" style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.95),
+	 rgba(255, 255, 255, 0.95)),
+	 url(), #fff;">
+<div class="content">
+<h2 class="mb-3 mb-md-5"></h2>
+<div class="close">&times;</div>
+<div class="vid_image order-md-1" style='pointer-events: none'>
+<div class="vid vid-play-inline">
+<span class="vid-cover">
+<span class="vid-code">
+</span>
+</span>
+</div>
+</div>
+<div class="button_group_label"></div>
+<div class="yet_button_group">
+</div>
+</div>
+</div>
+</div>
+
+<div id="site_wrapper" class="site_wrapper">
+<main>
+<div class="page-blog_wrapper page-article_wrapper">
+<div id="post-70615" class="article_single page_gradient post_url" data-post-url="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" data-post-title="He Called Them Gods (to Whom the Word of God Came) - The Gospel Coalition | Canada" data-post-excerpt="If the Bible is clear about anything, it is clear about the fact that there is only one God. This was drilled into the heads of young Hebrew boys and girls in Old Testament times: “Hear, O Israel: The LORD our God, the LORD is one” (Deuteronomy 6:4 ESV). God is unique. He is alone in the category of “Godness” – even the demons in the Bible are acquainted with this foundational truth: “You believe that God is one; you do well. Even the demons believe—and shudder!” (James 2:19 ESV). Everyone in the Bible is on page here. God is One. He is..." data-post-image-details='["https:\/\/media.thegospelcoalition.org\/wp-content\/uploads\/sites\/2\/2020\/05\/17171632\/sven-scheuermeier-VNseEaTt9w4-unsplash.jpg",1920,1280,false]' data-ga_post_id="70615" data-ga_post_categories="bible-theology" data-ga_post_type="ad-fontes" data-ga_post_author="Paul Carter" data-ga_post_tags="" data-ga_post_series="" data-ga_is_single="true" data-ga_edition="2">
+<article class="post-70615 ad-fontes type-ad-fontes status-publish has-post-thumbnail hentry category-bible-theology">
+<header>
+<div class="container">
+<div class="row">
+<div class="header_col col blog_header_col ">
+<div class="header_info">
+<div class="article-category">
+COLUMNS<span class="d-inline-block d-md-none">: Paul Carter</span> </div>
+<h1 class="entry-title">
+He Called Them Gods (to Whom the Word of God Came) </h1>
+<div class="article_meta_wrapper blog_meta_wrapper ">
+<span class="article_meta_author vcard author">
+<a href='https://ca.thegospelcoalition.org/profile/paul-carter/' class='fn'>Paul Carter </a></span> <span class="time_seppy">&nbsp;|&nbsp;</span>
+<time class="updated article_meta" datetime="2020-05-17T21:37:26+00:00">
+May 17, 2020 </time>
+</div>
+</div>
+</div>
+<div class="col-auto blog_profile_img_col align-self-center">
+<a class="author_img_wrap" href="https://ca.thegospelcoalition.org/profile/paul-carter/" style="background-image:url(https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134525/2017-Paul-Bio-Pic-e1496527848316.jpg);"></a>
+</div>
+<div class="col header_media_col">
+<div class="article-image-graphic-wrap">
+<div class="article-graphic">
+<div class="article-background" style="background-image: url('https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2020/05/17171632/sven-scheuermeier-VNseEaTt9w4-unsplash-1024x683.jpg');"></div>
+</div>
+</div>
+<div class="article-social ">
+<div class="s-options">
+<a onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/', 'Share on Facebook', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no');" href="javascript:void(0);">
+<i data-shared-url="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" data-share="facebook" class="fab fa-facebook-square social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Share </span>
+</a>
+<a href="http://www.facebook.com/sharer/sharer.php?u=https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/', 'Share on Facebook', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no" class="d-none subsplash_dark_mode_social">
+<i data-shared-url="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" data-share="facebook" class="fab fa-facebook-square social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Share </span>
+</a>
+<a onclick="window.open('http://twitter.com/share?text=&url=https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/', 'Share on Twitter', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no');" href="javascript:void(0);">
+<i data-shared-url="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" data-share="twitter" class="fab fa-twitter social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Tweet </span>
+</a>
+<a href="http://twitter.com/share?text=&url=https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/', 'Share on Twitter', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no" class="d-none subsplash_dark_mode_social">
+<i data-shared-url="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" data-share="twitter" class="fab fa-twitter social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Tweet </span>
+</a>
+<a href="/cdn-cgi/l/email-protection#4d723e382f27282e397005286d0e2c212128296d192528206d0a22293e6d6539226d1a2522206d3925286d1a223f296d222b6d0a22296d0e2c2028646b2f222934706d2539393d3e7762622e2c633925282a223e3d28212e222c21243924222363223f2a622e22213820233e622c29602b222339283e622528602e2c212128296039252820602a22293e603922603a25222060392528603a223f2960222b602a2229602e2c202862" title="" class="subsplash_dark_mode_social">
+<i data-shared-url="https://ca.thegospelcoalition.org/columns/ad-fontes/he-called-them-gods-to-whom-the-word-of-god-came/" data-share="mail" class="fa fa-envelope social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Email </span>
+</a>
+</div>
+</div> </div>
+<div class="col-auto more_by_column">
+<div class="more_by">
+<h4 class="more_by_title">
+More By Paul </h4>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://ca.thegospelcoalition.org/tgc-canada/canadian-pastors-forum-2-liturgy/">
+<div>Canadian Pastors’ Forum 2: Liturgy</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-150x150.png 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-75x75.png 75w" sizes="(max-width: 150px) 100vw, 150px" /></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://ca.thegospelcoalition.org/columns/ad-fontes/mothers-day-the-pastors-kobayashi-maru/">
+<div>Mother’s Day: The Pastor’s Kobayashi Maru</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://ca.thegospelcoalition.org/columns/ad-fontes/generations-by-jean-m-twenge-review-and-reflections/">
+<div>Generations by Jean M. Twenge—Review and Reflections</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://ca.thegospelcoalition.org/columns/ad-fontes/guidance-for-a-middle-aged-pastor/">
+<div>Guidance for a Middle aged Pastor</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://ca.thegospelcoalition.org/tgc-canada/canadian-pastors-forum-covid-19/">
+<div>Canadian Pastors’ Forum 1: COVID-19</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-150x150.png 150w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-75x75.png 75w" sizes="(max-width: 150px) 100vw, 150px" /></picture>
+</figure>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="entry-content">
+<div class="container">
+<div class="row">
+<div class="col content_left_column">
+<div class="content_container">
+<p>If the Bible is clear about anything, it is clear about the fact that there is only one God. This was drilled into the heads of young Hebrew boys and girls in Old Testament times: “Hear, O Israel: The LORD our God, the LORD is one” (Deuteronomy 6:4 ESV).</p>
+<p>God is unique. He is alone in the category of “Godness” – even the demons in the Bible are acquainted with this foundational truth: “You believe that God is one; you do well. Even the demons believe—and shudder!” (James 2:19 ESV).</p>
+<p>Everyone in the Bible is on page here. God is One. He is altogether other and he is gloriously alone in his otherness.</p>
+<p>Which is why John 10:30-38 is a such an explosive passage.</p>
+<p>Jesus is engaging in dialogue with a crowd of Jewish people who have gathered in Jerusalem for the Feast of Dedication. The conversation begins with a bang. Jesus says:</p>
+<p style="padding-left: 40px;"><strong><sup>“</sup></strong>I and the Father are one.” <strong><sup>31 </sup></strong>The Jews picked up stones again to stone him.<strong><sup> 32 </sup></strong>Jesus answered them, “I have shown you many good works from the Father; for which of them are you going to stone me?”<strong><sup> 33 </sup></strong>The Jews answered him, “It is not for a good work that we are going to stone you but for blasphemy, because you, being a man, make yourself God.”<strong><sup> 34 </sup></strong>Jesus answered them, “Is it not written in your Law, ‘I said, you are gods’?<strong><sup> 35 </sup></strong>If he called them gods to whom the word of God came—and Scripture cannot be broken—<strong><sup> 36 </sup></strong>do you say of him whom the Father consecrated and sent into the world, ‘You are blaspheming,’ because I said, ‘I am the Son of God’?<strong><sup> 37 </sup></strong>If I am not doing the works of my Father, then do not believe me;<strong><sup> 38 </sup></strong>but if I do them, even though you do not believe me, believe the works, that you may know and understand that the Father is in me and I am in the Father.” (John 10:30–38 ESV)</p>
+<p>Everything about this conversation is destabilizing – as much for the original audience as for those reading it or hearing about it today. Jesus is making a typical Jewish “how much more” argument. He begins by quoting from Psalm 82. In that Psalm – which is a prophetic poem – the Psalmist speaks about a scene from the future when God will sit in judgment on all earthly powers and authorities, and on powers and authorities from among the Jewish people in particular. In the picture that he paints, God sits in judgment on a gathering of little “gods”.</p>
+<p>That’s what Psalm 82 says:</p>
+<p>“God has taken his place in the divine council; in the midst of the gods he holds judgment” (Psalm 82:1 ESV)</p>
+<p>Jesus actually quotes verse 6 of Psalm 82 which says:</p>
+<p>“I said, &#8216;You are gods, sons of the Most High, all of you; nevertheless, like men you shall die, and fall like any prince.&#8217;” (Psalm 82:6–7 ESV)</p>
+<p>First time Bible readers often wonder whether this Psalm should even be in the Bible. Is Psalm 82 suggesting that there are other gods in the universe? Is it saying that God is the High God over a pantheon of smaller gods?</p>
+<p>Of course not.</p>
+<p>In Hebrew the word for God – <em>Elohim</em> – can also be used to refer to human judges. We see something similar in British Commonwealth nations wherein it is still somewhat common to refer to human judges as “Your Worship”. That tradition is derived from texts like these. W.S. Plumer for example says here, “Rulers of every rank are to be honoured. Jehovah himself calls them <em>gods.</em>”<a href="#_ftn1" name="_ftnref1">[1]</a>  <sup>⁠</sup></p>
+<p>To the English reader that may seem to be a bit of a stretch, but that is obviously how Jesus understood the text. In John 10:34-35 he says:</p>
+<p style="padding-left: 40px;">“Is it not written in your Law, ‘I said, you are gods’?<strong><sup> 35 </sup></strong>If he called them gods to whom the word of God came—and Scripture cannot be broken—<strong><sup> 36 </sup></strong>do you say of him whom the Father consecrated and sent into the world, ‘You are blaspheming,’ because I said, ‘I am the Son of God’? (John 10:34–36 ESV)</p>
+<p>Every step in this “how much more” argument is fascinating. Jesus argues that God says that you are gods because you have been given the Word of God. If he said that about you, and Scripture cannot be broken, then how much more is it appropriate for me to say that about myself? I am the Word of God in the flesh.</p>
+<p>D.A. Carson outlines the argument as follows:</p>
+<p style="padding-left: 40px;">“As Jesus uses the text, the general line of his argument is clear. This Scripture proves that the word ‘god’ is legitimately used to refer to others than God himself. If there are others whom God (the author of Scripture) can address as ‘god’ and ‘sons of the Most High’ (<em>i.e.</em> sons of God), on what biblical basis should anyone object when Jesus says, <em>I am God’s Son?”</em> <a href="#_ftn2" name="_ftnref2"><sup>[2]</sup></a></p>
+<p>Jesus will build on this concept, to be sure, but at the very least, he is saying that any human being who receives and gladly submits to the Word of God is in some sense a son or daughter of God. They are, in that sense only, ‘gods’. They are image and likeness of God. They are Genesis 1:27 human beings – and such people are marvellous and glorious creatures, to be sure.</p>
+<p>There is a tendency to miss the significance of this passage as we are blinded by its complexity and controversy. The hackles of good Christian men and women are raised whenever anyone dares to refer to themselves, in any sense, as “a god”. Objections are raised. Cults are referred to. Cautions are issued – and all rightly so. Except that one soon finds oneself giving counsel to Jesus. It was, after all, Jesus who said, “he called them gods to whom the word of God came—and Scripture cannot be broken” (John 10:35 ESV).</p>
+<p>Jesus said that.</p>
+<p>Not Peter, not Paul, not W.S. Plumer and not D.A. Carson.</p>
+<p>Jesus said that.</p>
+<p>So we must take that seriously, with all the necessary relations and limitations required by the remainder of Scripture.</p>
+<p>Clearly, Jesus does not mean that we are God in the sense that God is God. Jesus knows that God is in a category by himself.</p>
+<p>“Why do you call me good? No one is good except God alone. (Mark 10:18 ESV)</p>
+<p>In this and in many other ways, God is alone. He is one. He is unique.</p>
+<p>So what is Jesus saying?</p>
+<p>He is simply saying that in so much as human beings fell by rejecting the Word of God, they are restored, enlarged and ennobled by receiving the Word of God. When we come back under the Word of God, we begin to be elevated back toward our former height and glory. We see the Apostle Paul saying much the same thing in 2 Corinthians 3:18:</p>
+<p style="padding-left: 40px;">“And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit.” (2 Corinthians 3:18 ESV)</p>
+<p>Studying Christ, submitting to Christ and rejoicing in Christ as he is revealed in Scripture, we become like Christ by one degree of glory to the next. This comes from the Lord, who is the Spirit.</p>
+<p>According to the Apostle Paul, the job of the Holy Spirit is to slowly but surely, change men and women into the very image and likeness of Jesus Christ – who is the Son of God!</p>
+<p>If anything, the Apostle Peter was even more bold in the language that he used to describe this reality. He said:</p>
+<p style="padding-left: 40px;"><strong><sup>“</sup></strong>His divine power has granted to us all things that pertain to life and godliness, through the knowledge of him who called us to his own glory and excellence,<strong><sup> 4 </sup></strong>by which he has granted to us his precious and very great promises, so that through them you may become <strong><u>partakers of the divine nature</u></strong>, having escaped from the corruption that is in the world because of sinful desire.” (2 Peter 1:3–4 ESV)</p>
+<p>It was this passage that led the Eastern church to use the phrase “deification” to refer to much of what we mean when we use the word “sanctification”<a href="#_ftn3" name="_ftnref3">[3]</a>. There is a sense in which, if we are in God through faith in Christ and if we are filled with the Holy Spirit, and in glad submission to the Scriptures, then we are an entirely different order of creature from unregenerate man. We are not God of very God, but neither are we “man who is a maggot” (Job 25:6). We are gloriously and marvellously in between.</p>
+<p>It cannot be argued that the gift of God’s Word has affected and ennobled the race of man. The historian Edward Grant in his book “God and Reason In the Middle Ages” argued that the biblical worldview produced a certain sort of person over time. A person that had never existed before in human history. No earlier culture had produced a person with the “capacity for establishing the foundations of the nation state, parliaments, democracy, commerce, banking, higher education and various literary forms such as novels and history”.<a href="#_ftn4" name="_ftnref4">[4]</a></p>
+<p>That was the effect of the Bible on ancient man!</p>
+<p>“he called them gods to whom the word of God came—and Scripture cannot be broken” (John 10:35 ESV)</p>
+<p>Yes, the Bible is authoritative, yes the Bible is inerrant, yes the Bible is infallible – it is all those things.</p>
+<p>And it is transformative.</p>
+<p>Gloriously, marvellously, miraculously transformative.</p>
+<p>“The law of the LORD<em> is</em> perfect, converting the soul; The testimony of the LORD<em> is</em> sure, making wise the simple; the statutes of the LORD<em> are</em> right, rejoicing the heart; the commandment of the LORD<em> is</em> pure, enlightening the eyes; the fear of the LORD<em> is</em> clean, enduring forever; the judgments of the LORD<em> are</em> true<em> and</em> righteous altogether.” (Psalm 19:7–9 NKJV)</p>
+<p>Thanks be to God!</p>
+<p>Pastor Paul Carter</p>
+<p>&nbsp;</p>
+<p><em> </em></p>
+<p><em>To listen to the most recent episodes of Pastor Paul’s Into The Word devotional podcast on the TGC Canada website see <a href="http://canada.thegospelcoalition.org/into-the-word/">here</a></em><em>. You can also find it on iTunes. To access the entire library of available episodes see <a href="https://www.intotheword.ca/">here</a></em><em>.</em></p>
+<hr />
+<p><a href="#_ftnref1" name="_ftn1">[1]</a> W.S. Plumer, <em>Psalms</em> (Edinburgh: The Banner Of Truth Trust, 2016), 783.</p>
+<p><a href="#_ftnref2" name="_ftn2"><sup>[2]</sup></a>D. A. Carson, <em>The Gospel According to John</em>, Pillar New Testament Commentary. Accordance electronic ed. (Grand Rapids: Eerdmans, 1991), 397.</p>
+<p><a href="#_ftnref3" name="_ftn3">[3]</a> To be clear, I think the word “sanctification” is the better term as it avoids misunderstanding. Nevertheless, as these texts make clear, there is warrant for a “grander” understanding than is currently common in the western church with respect to our transformation in Christ.</p>
+<p><a href="#_ftnref4" name="_ftn4">[4]</a> Edward Grant, <em>God And Reason In The Middle Ages</em> as cited in Vishal Mangalwadi, <em>The Book That Made Your World </em>(Nashville: Thomas Nelson, 2011), 77.</p>
+</div>
+<div class="article_author_bio">
+<div class="row">
+<div class="col-12 col-md-2">
+<a class="author_img_wrap" href="https://ca.thegospelcoalition.org/profile/paul-carter/" style="background-image:url(https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134525/2017-Paul-Bio-Pic-e1496527848316-300x300.jpg);"></a>
+</div>
+<div class="col-md-10 col-12 align-self-center">
+<section><strong>Paul</strong> is the happy husband of Shauna Lee and the proud papa of 5 beautiful children, Madison, Max, Mikayla, Peyton and Noa. He attended Moody Bible Institute and is a graduate of York University (B.A.) and McMaster Divinity College (MDiv). He has been in pastoral ministry since 1994, serving in both Fellowship and Canadian Baptist churches in Oakville, Mississauga and Orillia, Ontario Canada. He presently serves as the Lead Pastor of Cornerstone Baptist Church, Orillia, a large multi-staff church with a passion for biblical preaching and local mission. He is the host and Bible teacher on the Into The Word podcast which you can find on our podcast page or on iTunes. Twitter: @pastrpaulcarter.</section>
+<section></section>
+</div>
+</div>
+</div>
+<div class="d-xl-none" style="max-width: 600px;margin:auto;">
+</div>
+</div>
+<div class="content_right_column col-auto"></div>
+</div>
+</div>
+</div>
+<footer>
+</footer>
+</article>
+</div><section class="flex_section article_single_footer blog_single_footer">
+<div class="desktop_spacer"></div>
+<div class="container">
+<div class="row">
+<div class="more_by_blogger col-12 d-md-none">
+<div class="more_by">
+<h4 class="more_by_title">
+More By Paul </h4>
+<article class="top_img_article_card d-flex flex-md-column post-81604 tgc-canada type-tgc-canada status-publish has-post-thumbnail hentry category-ministry tag-liturgy">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://ca.thegospelcoalition.org/tgc-canada/canadian-pastors-forum-2-liturgy/">
+Canadian Pastors’ Forum 2: Liturgy </a>
+</h2>
+<div class="article_author">
+Paul Carter </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://ca.thegospelcoalition.org/tgc-canada/canadian-pastors-forum-2-liturgy/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="432" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-768x432.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-768x432.png 768w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-300x169.png 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-1024x576.png 1024w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1.png 1920w" sizes="(max-width: 768px) 100vw, 768px" /> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-81554 ad-fontes type-ad-fontes status-publish has-post-thumbnail hentry category-current-events category-ministry tag-mothers-day">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://ca.thegospelcoalition.org/columns/ad-fontes/mothers-day-the-pastors-kobayashi-maru/">
+Mother’s Day: The Pastor’s Kobayashi Maru </a>
+</h2>
+<div class="article_author">
+Paul Carter </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://ca.thegospelcoalition.org/columns/ad-fontes/mothers-day-the-pastors-kobayashi-maru/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="576" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash-768x576.jpg" class="attachment-medium_large size-medium_large" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash-768x576.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash-300x225.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash-1024x768.jpg 1024w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/10141357/tim-wildsmith-vER57QZSjHc-unsplash.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-81530 ad-fontes type-ad-fontes status-publish has-post-thumbnail hentry category-ministry category-reviews tag-generations">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://ca.thegospelcoalition.org/columns/ad-fontes/generations-by-jean-m-twenge-review-and-reflections/">
+Generations by Jean M. Twenge—Review and Reflections </a>
+</h2>
+<div class="article_author">
+Paul Carter </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://ca.thegospelcoalition.org/columns/ad-fontes/generations-by-jean-m-twenge-review-and-reflections/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="511" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash-768x511.jpg" class="attachment-medium_large size-medium_large" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash-768x511.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash-300x200.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash-1024x682.jpg 1024w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/05/07215734/jacek-dylag-PMxT0XtQ-A-unsplash.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-81318 ad-fontes type-ad-fontes status-publish has-post-thumbnail hentry category-ministry tag-pastoral-ministry">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://ca.thegospelcoalition.org/columns/ad-fontes/guidance-for-a-middle-aged-pastor/">
+Guidance for a Middle aged Pastor </a>
+</h2>
+<div class="article_author">
+Paul Carter </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://ca.thegospelcoalition.org/columns/ad-fontes/guidance-for-a-middle-aged-pastor/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="432" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343-1024x576.jpg 1024w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/10200746/dahiana-waszaj-NmFPZI1Tzuo-unsplash-e1681171690343.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-81207 tgc-canada type-tgc-canada status-publish has-post-thumbnail hentry category-christian-living category-ministry tag-canadian-pastors-forum">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://ca.thegospelcoalition.org/tgc-canada/canadian-pastors-forum-covid-19/">
+Canadian Pastors’ Forum 1: COVID-19 </a>
+</h2>
+<div class="article_author">
+Paul Carter </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://ca.thegospelcoalition.org/tgc-canada/canadian-pastors-forum-covid-19/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="432" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-768x432.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-768x432.png 768w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-300x169.png 300w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1-1024x576.png 1024w, https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2023/04/03112338/Canadian-Pastors-Forum-Podcast-1.png 1920w" sizes="(max-width: 768px) 100vw, 768px" /> </picture>
+</a>
+</figure>
+</div>
+</article>
+</div>
+</div>
+<div class="other_voices_section col-12">
+<div class="section_head_bordered">
+<h2 class="section_heading">
+Other Blogs
+</h2>
+</div>
+<div class="row other_voices_collection">
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://ca.thegospelcoalition.org/profile/darryl-dash/">
+<div class="img_span" style="background-image:url(https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/16200439/darryldash-59.jpg);"></div>
+<span class="author_name">
+Darryl Dash </span>
+</a>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/straight-paths/take-a-break-this-summer/">
+Take a Break this Summer </a>
+</div>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/straight-paths/a-time-for-courage/">
+A Time for Courage </a>
+</div>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/straight-paths/the-power-of-a-pastor-who-loves-the-church/">
+The Power of a Pastor Who Loves the Church </a>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://ca.thegospelcoalition.org/profile/the-editor/">
+<div class="img_span" style="background-image:url();"></div>
+<span class="author_name">
+The Editor </span>
+</a>
+</div>
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://ca.thegospelcoalition.org/profile/wyatt-graham/">
+<div class="img_span" style="background-image:url(https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/11/17103435/Wyatt-Headshot-2.png);"></div>
+<span class="author_name">
+Wyatt Graham </span>
+</a>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/detrinitate/blandina-a-sister-in-christ-and-a-spiritual-mother/">
+Blandina: A Sister in Christ and a Spiritual Mother </a>
+</div>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/detrinitate/what-was-pauls-thorn-in-the-flesh/">
+What was Paul’s Thorn in the Flesh? </a>
+</div>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/detrinitate/how-do-we-use-biblical-law-lawfully/">
+How do we use Biblical law lawfully? </a>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://ca.thegospelcoalition.org/profile/clint-humfrey/">
+<div class="img_span" style="background-image:url(https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2017/12/12134725/Clint-Humfrey-e1496076968387.jpg);"></div>
+<span class="author_name">
+Clint Humfrey </span>
+</a>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/cowboyology/religious-foundations-of-bill-c-4/">
+Religious Foundations of Bill C-4 </a>
+</div>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/cowboyology/prayer-meeting-activism/">
+Prayer Meeting Activism </a>
+</div>
+<div class="other_voices_post">
+<a href="https://ca.thegospelcoalition.org/columns/cowboyology/the-hopeful-mistake-in-your-nativity-scene/">
+The Hopeful Mistake in Your Nativity Scene </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="desktop_spacer"></div>
+</section> <div id="ajax-content"></div>
+<span id='ajax-trigger'></span>
+<a href="javascript:void(0);" id='ajax-load-more' class="flat_btn">
+LOAD MORE	</a>
+<div id='ajax-loader'>
+<i class='fa fa-cog fa-spin'></i>Loading	</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+	jQuery(document).ready(function($) {
+
+		
+		//init fancy load
+		window.ajaxFancyLoad.push({
+			args: {
+				blog_post_type: "ad-fontes"			},
+			autoLoad: true,
+			showLoadMoreButton: false,
+			scrollLoad: true,
+			windowLoad: false,
+			container: "#ajax-content",
+			serverSideFunction: "blog_load_more",
+			pageCount: 3,
+			isAjaxing: false,
+			trigger: "#ajax-trigger",
+			loader: "#ajax-loader",
+			loadmore_btn: "#ajax-load-more",
+			page_before_loadmore_btn: 1,
+			should_update_page_meta: true
+		});
+
+
+
+
+	});
+</script> </main>
+<footer id="footer" class="content-info footer_bottom new">
+<div class="container-footer">
+<div class="d-none d-md-flex justify-content-between ">
+<span class="text-left">
+<a href="https://ca.thegospelcoalition.org/">
+<img id="footer-logo" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/11135751/tgc_logo_footer1-300x135.png" alt="TGC Footer Logo" />
+</a>
+</span>
+</div>
+<div class="row">
+<div class="col-md-6 footer-left">
+<div class="d-block d-md-none">
+<span class="text-left">
+<a href="https://ca.thegospelcoalition.org/">
+<img id="footer-logo" src="https://media.thegospelcoalition.org/wp-content/uploads/sites/2/2018/12/11135751/tgc_logo_footer1-300x135.png" alt="TGC Footer Logo" />
+</a>
+</span>
+</div>
+<div class="footer-about-text">
+The Gospel Coalition Canada helps people know God's Word with their mind, love God fully with their heart, and engage the world with grace and truth. </div>
+<a href="/about/foundation-documents/" class="btn btn-outline-dark">
+Learn More
+</a>
+</div>
+<div class="col-md-6 footer-right text-center text-md-right order-first order-md-last">
+<div class="text-right d-none d-md-block">
+<div class="footer_social">
+ <a href="https://www.facebook.com/TGCCanada" target="_blank">
+<i class="fab fa-facebook-square"></i>
+</a>
+<a href="https://twitter.com/CanadaTGC" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="https://www.youtube.com/channel/UCHvHAMfJErKDweQqBr8mHEQ" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+<a href="https://instagram.com/tgccanada/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="/feed" target="_blank">
+<i class="fas fa-rss"></i>
+</a>
+</div>
+</div>
+<div class="sub-footer-links d-none d-md-block">
+<a href="https://www.thegospelcoalition.org/permissions/" class="footer_link">
+permissions </a>
+<a href="/donate" class="footer_link">
+donate </a>
+</div>
+<div class="footer_copy d-none d-md-block">
+Copyright &copy; 2023 The Gospel Coalition, INC. All Rights Reserved </div>
+</div>
+<div class="col-12 d-none d-md-block order-last text-center amazon_disclaimer">
+</div>
+<div class="col-md-6 footer-right text-center text-md-right d-block d-md-none">
+<div class="text-center text-md-left">
+<div class="footer_social">
+<a href="https://www.facebook.com/TGCCanada" target="_blank">
+<i class="fab fa-facebook-square"></i>
+</a>
+<a href="https://twitter.com/CanadaTGC" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="https://www.youtube.com/channel/UCHvHAMfJErKDweQqBr8mHEQ" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+<a href="https://instagram.com/tgccanada/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="/feed" target="_blank">
+<i class="fas fa-rss"></i>
+</a>
+</div>
+</div>
+<div class="sub-footer-links text-center text-md-left">
+<a href="https://www.thegospelcoalition.org/permissions/" class="footer_link">
+permissions </a>
+<a href="/donate" class="footer_link">
+donate </a>
+</div>
+<div class="footer_copy">
+Copyright &copy; 2023 The Gospel Coalition, INC. All Rights Reserved </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script>
+	(function($) {
+		window.onfooterEmailSubmit = function onfooterEmailSubmit() {
+
+			if ($('.footer_email_update_form').length > 0) {
+
+				//for each newsletter add the recaptcha and callback if it hasn't been added yet
+				$(".footer_email_update_form .g-recaptcha:not(.reCaptcha_rendered)").each(function(index, el) {
+
+					//adding this class to pickup on if it already has reCaptcha enabled
+					$(this).addClass('reCaptcha_rendered');
+					var object = $(this);
+					var object_ID = object.attr("id");
+
+					//this adds the reCaptcha and sets the widget id on each form
+					var widgetId = grecaptcha.render(object.attr("id"), {
+						"sitekey": "6LecGD4UAAAAACClySulfNhGtPVGlQXGaY_X8gM9",
+						"isolated": true,
+						"callback": function(token) {
+							object.parents('form').find(".g-recaptcha-response").val(token);
+							var $form = object.parents('form');
+							var $form_wrapper = $($form).parent('.footer_email_update_form_wrapper');
+							$('.footer_email_update_success').collapse('hide');
+							$('.footer_email_update_unsuccess').collapse('hide');
+							footermailchimpAPI($form);
+
+							function footermailchimpAPI($form) {
+								$.fn.form = function() {
+									var formData = {};
+									$form.find('[name]').each(function() {
+										formData[this.name] = this.value;
+									})
+									return formData;
+								};
+
+								var email_value = $($form).find('input[name="EMAIL"]').val();
+
+								var formdata = $form.form();
+								var has_MCLISTID = formdata.MCLISTID;
+								//if fields are empty stop and show the error message - this is also happening serverside
+								if (email_value == '') {
+									$('.footer_email_update_unsuccess').collapse('show');
+								} else {
+									var $form_widget_id = $('.reCaptcha_rendered', $form_wrapper).attr('data-widget-id');
+									grecaptcha.execute($form_widget_id);
+									$.ajax({
+										url: $form.attr('action'),
+										type: 'POST',
+										dataType: 'json',
+										data: {
+											action: 'mailchimpsubscribe',
+											formData: $form.form()
+										},
+										success: function(result) {
+											if (!result.success) {
+												$('.footer_email_update_unsuccess').html(result.data);
+												$('.footer_email_update_success').collapse('hide');
+												$('.footer_email_update_unsuccess').collapse('show');
+
+											} else {
+												$('.footer_email_update_unsuccess').collapse('hide');
+												$('.footer_email_update_success').html(result.data);
+												$('.footer_email_update_success').collapse('show');
+											}
+											grecaptcha.reset($form_widget_id);
+
+										},
+										error: function(result) {
+											$('.footer_email_update_success').html(result.data);
+											$('.footer_email_update_success').collapse('show');
+
+											grecaptcha.reset($form_widget_id);
+
+										}
+									});
+								}
+							}
+						}
+					});
+					$(this).attr('data-widget-id', widgetId); //adding the widget id
+				});
+
+
+			}
+
+		};
+	})(jQuery);
+</script>
+<script type="text/javascript">
+            let cust_login = document.getElementById("loginform");
+            if(cust_login !== null) {
+                var recaptcha_script = document.createElement('script');
+                recaptcha_script.setAttribute('src','https://www.google.com/recaptcha/api.js');
+                document.head.appendChild(recaptcha_script);                
+            }
+        </script>
+<link rel='stylesheet' id='essay-custom-print-style-css' href='https://ca.thegospelcoalition.org/wp-content/themes/luther/css/templates/printPDF.css?ver=20130821' type='text/css' media='print' />
+<link rel='stylesheet' id='font-awesome-css' href='https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css?ver=5.4.13' type='text/css' media='all' />
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/theme.min.js?ver=1.0.0.1676309180'></script>
+<script type='text/javascript' src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6%2CArray.prototype.includes%2CCustomEvent%2CObject.entries%2CObject.values%2CURL&#038;ver=1'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/plyr.min.js?ver=1'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/jquery.matchHeight-min.js?ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/velocity.min.js?ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/velocity.ui.min.js?ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/magnific-popup/jquery.magnific-popup.min.js?ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/jquery.fitvids.min.js?ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/select2/select2.full.min.js?ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/swiper/js/swiper.min.js?ver=5.4.13'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/greensock/minified/TweenMax.min.js?ver=1676309178'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/greensock/minified/TimelineMax.min.js?ver=1676309178'></script>
+<script type="text/javascript" src="https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/call-to-action.js?ver=1676309178" defer></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/sage/assets/scripts/js.cookie.js?ver=1676309193'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var script_vars = {"postType":"ad-fontes","is_podcast":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/global.js?ver=1.0.0.1687378211'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/header.js?ver=1.0.0.1676658559'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/modules/cross-reference-tool.js?ver=1'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/luther/js/templates/single-blog.js?ver=1676309180'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajaxloadmore = {"url":"\/wp-content\/themes\/sage\/tgc-ajax.php","prev_post_id":"70555"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-content/themes/sage/assets/scripts/ajax-load-more.js?ver=1676309192'></script>
+<script type='text/javascript' src='https://ca.thegospelcoalition.org/wp-includes/js/wp-embed.min.js?ver=5.4.13'></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?ver=5.4.13" defer></script>
+</body>
+</html>

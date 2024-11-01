@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Hebrews" "12:16" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Hebrews" "12:15-17" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Hebrews" "4:15" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Hebrews" "13:5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Hebrews" "11:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Hebrews" "11:6" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Hebrews" "12:6" "#" "<==" "zsh"

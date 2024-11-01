@@ -1,0 +1,27 @@
+
+
+  -- Print the records.
+  print records
+EOD
+
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+import Data.Map (Map)
+import qualified Data.Map as Map
+import Data.Map.Strict (Map)
+
+  -- Read the CSV from stdin and decode it into a list of lines.
+  -- We use the Lazy version of ByteString to avoid reading the whole file into memory.
+  lines <- L.readFile "-"
+
+  -- Parse the CSV into a list of records, one for each line in the CSV file.
+  records <- decodeUtf8 <$> lines
+
+  -- Print the

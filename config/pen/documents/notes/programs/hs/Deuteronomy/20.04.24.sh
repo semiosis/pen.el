@@ -1,0 +1,6 @@
+cd /root/notes;  "Deuteronomy" "28:13-14" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "28:13-15" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "28:10-13" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "28:8-13" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "28:1-13" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "28:1" "#" "<==" "zsh"

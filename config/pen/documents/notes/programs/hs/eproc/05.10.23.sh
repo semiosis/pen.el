@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts/container;  "eproc" "find" "." "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/container;  "eproc" "find" "/" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/container;  "eproc" "find" "/" "#" "<==" "zsh"
+cd /root/notes;  "eproc" "cat" "#" "<==" "zsh"
+cd /root/notes;  "eproc" "cat" "#" "<==" "zsh"

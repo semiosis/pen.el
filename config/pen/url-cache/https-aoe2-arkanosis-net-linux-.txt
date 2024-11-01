@@ -1,0 +1,646 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 12039
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+x-origin-cache: HIT
+Last-Modified: Thu, 04 Jul 2024 20:54:46 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"66870c16-a974"
+expires: Sat, 13 Jul 2024 03:47:27 GMT
+Cache-Control: max-age=600
+x-hosts-log-append: pages_hosts_ips:
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 0DA3:23404A:410D3:4A9EF:6691F677
+Accept-Ranges: bytes
+Date: Sat, 13 Jul 2024 03:37:29 GMT
+Via: 1.1 varnish
+Age: 2
+X-Served-By: cache-akl10332-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1720841850.853480,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: e1678a0a0ef2e23676979bc2d6445cc557c93bc0
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AoE2 on Linux in 2024</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation about how to play Age of Empires II on Linux, up-to-date for 2024">
+    <link rev="made" href="mailto:jroquet@arkanosis.net" />
+    <link rel="canonical" href="https://aoe2.arkanosis.net/linux/" />
+    <style>
+      * {
+        color: #212529;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: #24478f;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      header, footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #eaecf0;
+      }
+      footer {
+        bottom:0;
+      }
+      main {
+        margin: 0 auto;
+        max-width: 100ex;
+        text-align: justify;
+        hyphens: auto;
+      }
+      form {
+        padding: 15px;
+      }
+      .info {
+        margin: 15px auto;
+        max-width: 100ex;
+        padding: 15px;
+        background-color: #d1ecf1;
+        border-color: #bee5eb;
+        border-radius: 4px;
+      }
+      .info, .info strong {
+        color: #3e656b;
+      }
+      .warning {
+        margin: 15px auto;
+        max-width: 100ex;
+        padding: 15px;
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+        border-radius: 4px;
+      }
+      .warning, .warning strong, .warning ul li {
+        color: #8a6d3b;
+      }
+      .error {
+        margin: 15px auto;
+        max-width: 100ex;
+        padding: 15px;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        border-radius: 4px;
+      }
+      .error, .error strong {
+        color: #721c24;
+      }
+      .details {
+        background-color: #eaecf0;
+        padding: 0 15px;
+        border-style: dashed;
+        border-color: gray;
+      }
+      .version {
+        margin-bottom: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align:right;
+      }
+      table {
+        text-align: left;
+        width: 100%;
+      }
+      th, td {
+        border-bottom: 1px solid #ddd;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      td span {
+        text-decoration: underline dotted #24478f;
+      }
+      img {
+        max-width: 95%;
+      }
+      pre {
+        white-space: pre-line;
+      }
+      code, pre, tt {
+        background-color: #eaecf0;
+      }
+      .details code, .details pre, .details tt {
+        background-color: white;
+      }
+      .anchor {
+        margin-left: -1em;
+        color: gray;
+        visibility: hidden;
+      }
+      h2:hover .anchor, h3:hover .anchor, h4:hover .anchor {
+        visibility: visible;
+      }
+      @media(min-width: 1600px) {
+        nav {
+          position: fixed;
+        }
+      }
+      nav {
+        margin: 0 auto;
+        max-width: 100ex;
+        line-height: 2em;
+      }
+      nav h2 {
+        padding-left: 15px;
+      }
+      nav ul {
+        list-style: none;
+        padding-left: 15px;
+      }
+      nav a:active {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--<img src="logo.svg" alt="AoE2 on Linux logo" width="120" height="120" style="padding: 10px;">-->
+      <div style="margin-left: 10px; padding: 10px;"><h1 style="font-size: 50px; margin:0;">AoE2 on Linux in 2024</h1></div>
+    </header>
+    <p class="info">
+      Since 2023-10-06 and the release of <a href="https://github.com/ValveSoftware/Proton/releases/tag/proton-8.0-4">Proton 8.0-4</a>, Age of Empires II : Definitive Edition can be played again with the stable version of Proton (it was previously broken since 2023-06-27 and the release of <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-87863/">AoE2:DE update 87863</a>).
+      If you've explicitely used a specific version of Proton before, you may want to switch back to the stable version.
+    </p>
+    <p class="warning">
+      Disclaimer: the length of the page may give the impression that this is going to be difficult. It really isn't. Keep on reading :)
+    </p>
+    <nav>
+      <h2>Table of content</h2>
+      <ul>
+        <li><a href="#which_version_of_aoe2_should_i_play">Which version of AoE2 should I play?</a></li>
+        <li><a href="#can_i_play_aoe2_on_a_steam_deck">Can I play AoE2 on a Steam Deck?</a></li>
+        <li><a href="#can_i_play_aoe2_on_a_smartphone_or_rpi">Can I play AoE2 on a Linux / Android smartphone or on a Raspberry Pi?</a></li>
+        <li>How do I play?<ul>
+          <li><a href="#how_do_i_play_aoe2_de_on_linux">The Definitive Edition</a><ul>
+            <li><a href="#how_do_i_play_aoe2_de_on_linux">Single player</a></li>
+            <li><a href="#aoe2_de_online_multiplayer">Online multiplayer</a></li>
+            <li><a href="#aoe2_de_spectating_games_or_joining_lobbies">Spectating games / joining lobbies</a></li>
+            <li><a href="#aoe2_de_troubleshooting">Troubleshooting</a></li>
+          </ul></li>
+          <li><a href="#how_do_i_play_aoe2_hd_on_linux">The HD Edition</a></li>
+          <li><a href="#how_do_i_play_aoe2_aok_tc_on_linux">The Age of Kings / The Conquerors</a></li>
+        </ul></li>
+        <li><a href="#how_do_i_play_aoe2_on_lan_on_linux">How do I play Age of Empires II on LAN?</a></li>
+        <li><a href="#how_do_i_use_capture_age_on_linux">How do I use CaptureAge?</a></li>
+        <li><a href="#should_i_play_on_linux">Should I play on Linux?</a></li>
+        <li><a href="#acknowledgements">Acknowledgements</a></li>
+      </ul>
+    </nav>
+    <main style="padding: 10px">
+      <section>
+        <h2 id="which_version_of_aoe2_should_i_play">
+          <a href="#which_version_of_aoe2_should_i_play" class="anchor" aria-hidden="true">§</a>
+          Which version of AoE2 should I play?
+        </h2>
+        <p>As of 2024, there are three mutually-incompatible versions of Age of Empires II:</p>
+        <ul>
+          <li><strong>Age of Empires II: Definitive Edition</strong>, released in 2019 for PC and 2023 for Xbox and available on Steam (Linux-friendly), on the Microsoft store (<em>not</em> Linux-friendly) and through the Xbox game pass (<em>not</em> Linux-friendly)</li>
+          <li><strong>Age of Empires II: HD Edition</strong>, released in 2013 and available on Steam (Linux-friendly)</li>
+          <li><strong>Age of Empires II: The Age of Kings / The Conquerors</strong>, released in 1999 and available on CD (Linux-friendly) through various resellers</li>
+        </ul>
+        <p>There's very little debate about which version is the best, and they all run on Linux equally well, so let's get straight to the answer: play the <strong>Definitive Edition</strong> and get it <strong>on Steam</strong>.</p>
+        <p>There are some fair points to be made about playing an older version, though:</p>
+        <ul>
+          <li>If your friends play an older version and you want to play with them, play their version.</li>
+          <li>If your hardware can't run the Definitive Edition, and you can't aford upgrading, try an older version (keep in mind that if you've poor network connectivity, the Definitive Edition is better for online multiplayer).</li>
+          <li>If you don't have Internet or want to make sure you'll be able to play forever, play The Age of Kings / The Conquerors, because latter versions require an Internet connection (and a server running somewhere at Microsoft).</li>
+        </ul>
+        <p>If none of these is particularly important to you, again: play the <strong>Definitive Edition</strong> and get it <strong>on Steam</strong> (NB: you'll be able to play with your friends who got it on the Microsoft Store or through the Xbox game pass, don't worry).</p>
+      </section>
+      <section>
+        <h2 id="can_i_play_aoe2_on_a_steam_deck">
+          <a href="#can_i_play_aoe2_on_a_steam_deck" class="anchor" aria-hidden="true">§</a>
+          Can I play AoE2 on a Steam Deck?
+        </h2>
+        <p>Yes: the Steam Deck is just a (small) PC running SteamOS, a Linux distribution based on ArchLinux. What follows is applicable to the Steam Deck as to any other PC running Linux. You'll probably want to plug a mouse and a keyboard to your Steam Deck to play, though.</p>
+      </section>
+      <section>
+        <h2 id="can_i_play_aoe2_on_a_smartphone_or_rpi">
+          <a href="#can_i_play_aoe2_on_a_smartphone_or_rpi" class="anchor" aria-hidden="true">§</a>
+          Can I play AoE2 on a Linux / Android smartphone or on a Raspberry Pi?
+        </h2>
+        <p>Maybe. Many modern Linux / Android smartphones and the best Raspberry Pis are powerful enough to run a game like Age of Empires II. Most of them, however, use an ARM <abbr title="central processing unit">CPU</abbr>, when Age of Empires II was designed for x86 CPUs only. Using an emulator is therefore mandatory.</p>
+        <p>I still have to write a section about emulation, but in the meantime, have a look at this <a href="https://www.youtube.com/watch?v=npH4M72gdvI">YouTube video showing the Definitive Edition running on an Android phone</a> or this <a href="https://www.reddit.com/r/aoe2/comments/11dfhmy/age_of_empires_ii_on_a_raspberry_pi_4_winebox86/">Reddit thread about playing The Age of Kings / The Conquerors on a Raspberry Pi 4</a>.</p>
+      </section>
+      <section>
+        <h2 id="how_do_i_play_aoe2_de_on_linux">
+          <a href="#how_do_i_play_aoe2_de_on_linux" class="anchor" aria-hidden="true">§</a>
+          How do I play <i>Age of Empires II: Definitive Edition</i> on Linux?
+        </h2>
+        <section>
+          <h3>
+            <a href="#how_do_i_play_aoe2_de_on_linux" class="anchor" aria-hidden="true">§</a>
+            Single player
+          </h3>
+          <ol>
+            <li>Install Steam (the Linux version).</li>
+            <li>Start Steam and log in.</li>
+            <li>Open the “Steam” menu (1), then “Settings” (2).</li>
+            <a href="./1.png"><img src="./1.png" alt="Screenshot of the Steam client with the “Steam” menu open, and the “Settings” entry highlighted"></a>
+            <li>Go to the “Compatibility” section (1) and check the “Enable Steam Play for all other titles” box (2). You can leave the “Run other titles with” dropdown list (3) to its default value but <strong>make sure it is at least Proton 8.0-4</strong> (earlier versions up to 8.0-3c won't work — even though they used to work in the past).</li>
+            <a href="./2.png"><img src="./2.png" alt="Screenshot of the Steam client “Settings” window, on the “Compatibility” tab, with the “Enable Steam Play for all other titles” box checked"></a>
+            <div class="warning">
+              If you have an old GPU which doesn't support Vulkan 1.3, you'll instead need to either:<ul>
+                <li>try <a href="https://github.com/ArkanosisNet/aoe2.arkanosis.net/releases/tag/proton-7.0-6e-aoe2-wa1">this custom build of the older Proton 7.0-6</a> (it may crash at first launch — just launch the game again), or</li>
+                <li>switch to the WineD3D OpenGL backend instead of the default DXVK Vulkan backend (see <a href="#aoe2_de_troubleshooting_old_gpu">this section</a> for details).</li>
+              </ul>
+            </div>
+            <li>Now, AoE2:DE should be available in your Steam library as it would be if you were on Windows. Install the game.</li>
+            <li>If you don't want the introduction video, go to your “Library” (1), right click “Age of Empires II: Definitive Edition” (2), click “Properties” (3), then “General“ (4) and type <tt>SKIPINTRO</tt> in the “Launch options” (5).</li>
+            <a href="./3.png"><img src="./3.png" alt="Screenshot of the Steam client “Properties” window for “Age of Empires II: Definitive Edition”, on the “General” tab, with the “SKIPINTRO” launch option"></a>
+            <li>Start the game.</li>
+          </ol>
+          <p>At this point, the game should work fine <em>in single player mode</em>. If you want to play <em><u>online multiplayer</u></em>, however, keep on reading.</p>
+        </section>
+        <section>
+          <h3 id="aoe2_de_online_multiplayer">
+            <a href="#aoe2_de_online_multiplayer" class="anchor" aria-hidden="true">§</a>
+            Online multiplayer
+          </h3>
+          <p>Ignoring what follows won't prevent you from enjoying single player mode, but you'll encounter synchronization issues after a few seconds of playing online.</p>
+          <ol>
+            <li>Quit the game (it is important that you have started it at least once before the next step).</li>
+            <li>Open a terminal.</li>
+            <li>Execute the following commands (every single character is important, including the quotes):<ul>
+                <li><code>cd "$(mktemp -d)"</code></li>
+                <li><code>wget "https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe"</code></li>
+                <li><code>cabextract vc_redist.x64.exe</code></li>
+                <li><code>cabextract a10</code></li>
+                <li>If you're using Steam from your distribution's package manager (<code>apt</code>, <code>pacman</code>…) or SteamOS (eg. on the Steam Deck), run these commands:</li><ul>
+                    <li><code>chmod u+w ~/.steam/steam/steamapps/compatdata/813780/pfx/drive_c/windows/system32/ucrtbase.dll</code></li>
+                    <li><code>yes | cp ucrtbase.dll ~/.steam/steam/steamapps/compatdata/813780/pfx/drive_c/windows/system32</code></li>
+                </ul></li>
+                <li>If you're using Steam from Flathub / Flatpak, run this command instead:</li><ul>
+                    <li><code>cp ucrtbase.dll ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/compatdata/813780/pfx/drive_c/windows/system32/</code></li>
+                </ul></li>
+            <li>Start the game again.</li>
+          </ol>
+          <p>At this point, the game should work fine in online multiplayer as well. Once in the game, you shouldn't see any difference compared to when playing on Windows.</p>
+          <aside class="details">
+            <p>The above commands will only work if you have <tt>wget</tt> and <tt>cabextract</tt> installed. Fortunately, most Linux distributions make it very straightforward to install them.</p>
+            <p>For example, on ArchLinux and Manjaro, you'd install them as follow:</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute the following command:<ul>
+                  <li><code>sudo pacman -S wget cabextract</code></li>
+              </ul></li>
+            </ol>
+            <p>On Debian, Ubuntu, Mint and Pop!_OS, you'd install them as follow:</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute the following command:<ul>
+                  <li><code>sudo apt install wget cabextract</code></li>
+              </ul></li>
+            </ol>
+            <p>It is a bit more complex on a Steam Deck with SteamOS, because the filesystem is read-only by default, so you'd install them as follow:</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute the following commands:<ul>
+                  <li><code>sudo steamos-readonly disable</code></li>
+                  <li><code>sudo pacman-key --init</code></li>
+                  <li><code>sudo pacman-key --populate holo</code></li>
+                  <li><code>sudo pacman -S wget cabextract</code></li>
+                  <li><code>sudo steamos-readonly enable</code></li>
+              </ul></li>
+            </ol>
+          </aside>
+          <aside class="details">
+            <h4>Why is replacing <code>ucrtbase.dll</code> needed, and why isn't that fixed after all those years? (technical)</h4>
+            <p>Proton and Wine reimplement functions available on Windows based on their <em>observed</em> behaviors (doing otherwise — eg. by dissassembling the actual Windows libraries — would be illegal in many places of the world). It's usually not a very hard task, but sometimes it is… and the behavior of most of the functions in <code>ucrtbase.dll</code> is difficult to reproduce exactly.</p>
+            <p>I won't get into more details as to <em>why</em>, because Rémi Bernon of CodeWeavers has already covered the topic in <a href="https://www.codeweavers.com/blog/rbernon/2022/9/12/ucrtcringedll-reverse-engineering-ucrtbasedll-for-pain-and-non-profit">a very thorough article</a>. If you want to know more about why replacing <code>ucrtbase.dll</code> is still needed today, you should really read that article.</p>
+          </aside>
+        </section>
+        <section>
+          <h3 id="aoe2_de_spectating_games_or_joining_lobbies">
+            <a href="#aoe2_de_spectating_games_or_joining_lobbies" class="anchor" aria-hidden="true">§</a>
+            Spectating games or joining lobbies by clicking <code>aoe2de://</code> links.
+          </h3>
+          <p>The most interoperable way to have <code>aoe2de://</code> links opened in the game is probably to configure an XDG scheme handler for that.</p>
+          <ol>
+            <li>Create a file called <code>~/.local/share/applications/aoe2de.desktop</code> with the following content:
+            <pre>
+              [Desktop Entry]
+              Type=Application
+              Name=Age of Empires II: Definitive Edition
+              Exec=steam -applaunch 813780 %u
+              MimeType=x-scheme-handler/aoe2de;
+            </pre></li>
+            <li>Execute the following command:<ul>
+                <li><code>xdg-settings set default-url-scheme-handler aoe2de aoe2de.desktop</code></li>
+            </ul></li>
+            <li>Make sure the program in which you click links (web browser, chat client…) uses <code>xdg-open</code> to handle unknown schemes (or at least the <code>aoe2de</code> scheme). That should be the case for most modern programs.</li>
+          </ol>
+          <p>At this point, clicking an <code>aoe2de://</code> link should start Age of Empires II: Definitive Edition (if not already started) and automatically spectate the game or join the lobby.</p>
+        </section>
+        <section>
+          <h3 id="aoe2_de_troubleshooting">
+            <a href="#aoe2_de_troubleshooting" class="anchor" aria-hidden="true">§</a>
+            Troubleshooting
+          </h3>
+          <section>
+            <h4 id="aoe2_de_troubleshooting_nvidia_optimus">
+              <a href="#aoe2_de_troubleshooting_nvidia_optimus" class="anchor" aria-hidden="true">§</a><!-- TODO try DXVK_FILTER_DEVICE_NAME="NVIDIA" %command% NOSTARTUP SKIPINTRO -->
+              The game disappears after the splash screen on a Nvidia Optimus laptop
+            </h4>
+            <p style="font-style: italic;">Sometimes, it disappears silently, sometimes with an error message about graphics display resolution, minimum requirements and “<code>CreateSwapChain() failed!</code>”.</p>
+            <p>Nvidia Optimus laptops have two <abbr title="graphical processing units">GPUs</abbr>: one Intel <abbr title="integrated graphical processing unit">iGPU</abbr> within the <abbr title="central processing unit">CPU</abbr> and one Nvidia <abbr title="discrete graphical processing unit">dGPU</abbr> in a graphics card. The iGPU is power-efficient and preferred for light tasks (like web browsing) whereas the dGPU is powerful and prefered for heavy tasks (like gaming).</p>
+            <p>With some combinations of AoE2:DE and Proton, there's a known bug which causes Proton to use an Intel Vulkan <abbr title="installable client driver">ICD</abbr> on the Nvidia dGPU, which obviously can't work.</p>
+            <p>The only reliable workaround I'm aware of unfortunately prevents you from using the Intel Vulkan ICD. But, well… it works.</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute the following command:<ul>
+                  <li><code>sudo mv /usr/share/vulkan/icd.d/intel_icd.x86_64.json /usr/share/vulkan/icd.d/intel_icd.x86_64.json.disabled</code></li>
+              </ul></li>
+              <li>Start the game again.</li>
+            </ol>
+            <p>At this point, the game should work fine… until a driver update restores the Intel Vulkan ICD (at which point you just have to run the same command again).</p>
+            <aside class="details">
+              <p>The above workaround is a “I want to play NOW”-level workaround: it makes the Intel Vulkan ICD temporarily unusable, but doesn't remove it completely from the system. If you think you don't need the Intel Vulkan ICD at all, a cleaner approach would be to uninstall it. Unfortunately, some Linux distributions put all Vulkan ICDs in a single package, making it impossible to uninstall only one of them (for example, Debian, Ubuntu, Mint, Pop!_OS and Fedora ship the Intel, the Radeon and the Lavapipe ICDs together in the same <code>mesa-vulkan-drivers</code> package).</p>
+              <p>On a Linux distribution which ships Vulkan ICDs in separate packages, uninstalling the unused ICDs would work around the problem with the advantage of not having the unused ICDs restored every time there's a driver update.</p>
+              <p>For example, on ArchLinux and Manjaro, the cleaner workaround would be:</p>
+              <ol>
+                <li>Open a terminal.</li>
+                <li>Execute the following command:<ul>
+                    <li><code>sudo pacman -R vulkan-intel</code></li>
+                </ul></li>
+                <li>Start the game again.</li>
+              </ol>
+            </aside>
+          </section>
+          <section>
+            <h4 id="aoe2_de_troubleshooting_changing_graphics_card">
+              <a href="#aoe2_de_troubleshooting_changing_graphics_card" class="anchor" aria-hidden="true">§</a>
+              The game disappears after the splash screen after changing my graphics card
+            </h4>
+            <p style="font-style: italic;">Sometimes, it disappears silently, sometimes with an error message about graphics display resolution, minimum requirements and “<code>CreateSwapChain() failed!</code>”.</p>
+            <p>When you change your graphics card, you may switch to another <abbr title="graphical processing units">GPU</abbr> vendor in the process (eg. you had a Nvidia GPU-based graphics card and switch to an AMD GPU-based graphics card).</p>
+            <p>With some combinations of AoE2:DE and Proton, there's a known bug which causes Proton to use the Vulkan <abbr title="installable client driver">ICD</abbr> for the old GPU (eg. Nvidia) instead of the one for the new GPU (eg. AMD), which obviously can't work.</p>
+            <p>The only reliable workaround I'm aware of unfortunately prevents you from using two Vulkan ICDs at the same time. But, well… it works.</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute one of the following commands (depending on your graphics cards):<ul>
+                  <li><code>sudo mv /usr/share/vulkan/icd.d/nvidia_icd.x86_64.json /usr/share/vulkan/icd.d/nvidia_icd.x86_64.json.disabled</code> (if you switch from Nvidia to AMD)</li>
+                  <li><code>sudo mv /usr/share/vulkan/icd.d/radeon_icd.x86_64.json /usr/share/vulkan/icd.d/radeon_icd.x86_64.json.disabled</code> (if you switch from AMD to Nvidia)</li>
+              </ul></li>
+              <li>Start the game again.</li>
+            </ol>
+            <p>Note: depending on what GPU you were using before, and also on previous upgrades of your operating system, you may have more useless ICDs than just the ones mentionned above. Make sure only the useful ICD is present in <tt>/usr/share/vulkan/icd.d/</tt> and you should be fine.</p>
+            <p>At this point, the game should work fine… but you should make sure you've uninstalled the drivers for the old GPU, otherwise a driver update will restore the old Vulkan ICD (at which point you just have to run the same command again).</p>
+            <aside class="details">
+              <p>The above workaround is a “I want to play NOW”-level workaround: it makes the unused Vulkan ICD temporarily unusable, but doesn't remove it completely from the system. Unless you keep both GPUs in your system, you certainly want to uninstall the drivers for the old GPU. Unfortunately, some Linux distributions put all Vulkan ICDs in a single package, making it impossible to uninstall only one of them (for example, Debian, Ubuntu, Mint, Pop!_OS and Fedora ship the Intel, the Radeon and the Lavapipe ICDs together in the same <code>mesa-vulkan-drivers</code> package).</p>
+              <p>On a Linux distribution which ships Vulkan ICDs in separate packages, uninstalling the unused ICDs will prevent them from being restored every time there's a driver update.</p>
+              <p>For example, on ArchLinux and Manjaro, the cleaner workaround would be:</p>
+              <ol>
+                <li>Open a terminal.</li>
+                <li>Execute one of the following commands:<ul>
+                    <li><code>sudo pacman -R nvidia-utils</code> (if you switch from Nvidia to AMD)</li>
+                    <li><code>sudo pacman -R vulkan-radeon</code> (if you switch from AMD to Nvidia)</li>
+                </ul></li>
+                <li>Start the game again.</li>
+              </ol>
+            </aside>
+          </section>
+          <section>
+            <h4 id="aoe2_de_troubleshooting_old_gpu">
+              <a href="#aoe2_de_troubleshooting_old_gpu" class="anchor" aria-hidden="true">§</a>
+              The game disappears after the splash screen on an old GPU
+            </h4>
+            <p style="font-style: italic;">Sometimes, it disappears silently, sometimes with an error message about graphics accelerator with DirectX 11 support, graphics display resolution, minimum requirements and “<code>CreateSwapChain() failed!</code>”.</p>
+            <p>To implement the Direct3D <abbr title="application programming interface">API</abbr> on Linux, Proton uses two tools called DXVK et Vkd3d, which rely on the Vulkan API available on recent GPUs. Proton 8.0 and onwards even require a GPU that supports Vulkan 1.3.</p>
+            <p>On older GPUs, it is possible to use another tool called WineD3D instead, which rely on the older and more widely supported OpenGL API. Expect lower performance, but better compatibility with older GPUs when using WineD3D.</p>
+            <p>To use WineD3D and OpenGL:</p>
+            <ol>
+              <li>Go to your “Library” (1), right click “Age of Empires II: Definitive Edition” (2), click “Properties” (3), then “General“ (4) and type <tt>PROTON_USE_WINED3D=1 %command%</tt> in the “Launch options” (5).</li>
+              <a href="./4.png"><img src="./4.png" alt="Screenshot of the Steam client “Properties” window for “Age of Empires II: Definitive Edition”, on the “General” tab, with the “PROTON_USE_WINED3D=1 %command%” launch option"></a>
+              <li>Start the game.</li>
+            </ol>
+            <aside class="details">
+              <p>To know if your GPU supports Vulkan 1.3, you can use the <code>vulkaninfo</code> command, which on most distributions is available in the <code>vulkan-tools</code> package.</p>
+              <p>For example, on ArchLinux and Manjaro, you'd install the package as follow:</p>
+              <ol>
+                <li>Open a terminal.</li>
+                <li>Execute the following command:<ul>
+                    <li><code>sudo pacman -S vulkan-tools</code></li>
+                </ul></li>
+              </ol>
+              <p>On Debian, Ubuntu, Mint and Pop!_OS, you'd install the package as follow:</p>
+              <ol>
+                <li>Open a terminal.</li>
+                <li>Execute the following command:<ul>
+                    <li><code>sudo apt install vulkan-tools</code></li>
+                </ul></li>
+              </ol>
+              <p>Then, on all distributions:</p>
+              <ol>
+                <li>Execute the following command:<ul>
+                    <li><code>vulkaninfo | grep apiVersion</code></li>
+                </ul></li>
+              </ol>
+              <p>The output should contain the version of Vulkan your GPU supports: <code>1.2.*</code>, <code>1.3.*</code>.</p>
+            </aside>
+          </section>
+          <section>
+            <h4 id="aoe2_de_troubleshooting_low_fps">
+              <a href="#aoe2_de_troubleshooting_low_fps" class="anchor" aria-hidden="true">§</a>
+              The framerate (number of FPS) is very low.
+            </h4>
+            <p>On similar hardware, the framerate is expected to be more or less the same on Linux as on Windows.</p>
+            <p>If it isn't for you, try the following, just in case:</p>
+            <ul>
+              <li>Update your GPU drivers to the latest version. Always start with this!</li>
+              <li>Enable V-sync in the game. Suprisingly, this has resulted in much higher FPS with previous versions of the game (on Windows too); maybe it will for you too.</li>
+              <li>Disconnect any additional monitor you have. This has been shown to have a negative impact on FPS with some display servers / window managers for some people.</li>
+              <li>If your hardware supports it, make sure you're using Vulkan emulation (DXVK) of Direct3D and not OpenGL emulation (WineD3D). While compatible with older hardware, the latter usually isn't as good with regards to performance. Vulkan emulation is the default, but if you have <tt>PROTON_USE_WINED3D=1 %command%</tt> in the “Launch options” of the game, you'll use OpenGL emulation instead. Try removing the launch option.</li>
+            </ul>
+          </section>
+        </section>
+        <aside>
+          <h3>Other places to find more information about the Definitive Edition on Linux</h3>
+          <ul>
+            <li><a href="https://github.com/ValveSoftware/Proton/issues/3189">Definitive Edition on Proton's GitHub</a></li>
+            <li><a href="https://www.protondb.com/app/813780">Definitive Edition on ProtonDB</a></li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2 id="how_do_i_play_aoe2_hd_on_linux">
+          <a href="#how_do_i_play_aoe2_hd_on_linux" class="anchor" aria-hidden="true">§</a>
+          How do I play <i>Age of Empires II: HD Edition</i> on Linux?
+        </h2>
+        <p>Follow the instructions for Age of Empires II: Definitive Edition, and it <em>should</em> work pretty much the same, I think.</p>
+        <aside>
+          <h3>Other places to find more information about the HD Edition on Linux</h3>
+          <ul>
+            <li><a href="https://github.com/ValveSoftware/Proton/issues/72">HD Edition on Proton's GitHub</a></li>
+            <li><a href="https://www.protondb.com/app/221380">HD Edition on ProtonDB</a></li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2 id="how_do_i_play_aoe2_aok_tc_on_linux">
+          <a href="#how_do_i_play_aoe2_aok_tc_on_linux" class="anchor" aria-hidden="true">§</a>
+          How do I play <i>Age of Empires II: The Age of Kings / The Conquerors</i> on Linux?
+        </h2>
+        <!-- TODO -->
+        <p>Sorry, I haven't written this section yet. It works, though.</p>
+        <p>A few pointers:</p>
+        <ul>
+          <li>You can use Wine directly; there's no need for Steam Play or Proton.</li>
+          <li>You'll need to start the game from its installation directory. Running it from anywhere else will cause it to crash right from the start.</li>
+        </ul>
+        <!-- 32 bits? -->
+        <!-- XP compatibility? -->
+        <aside>
+          <h3>Other places to find more information about the The Age of Kings / The Conquerors on Linux</h3>
+          <ul>
+            <li><a href="https://appdb.winehq.org/appview.php?iVersionId=4184">The Conquerors on Wine's AppDB</a></li>
+            <li><a href="https://appdb.winehq.org/appview.php?iVersionId=147">The Age of Kings on Wine's AppDB</a></li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2 id="how_do_i_play_aoe2_on_lan_on_linux">
+          <a href="#how_do_i_play_aoe2_on_lan_on_linux" class="anchor" aria-hidden="true">§</a>
+          How do I play <i>Age of Empires II</i> on LAN on Linux?
+        </h2>
+        <!-- TODO -->
+        <p>Playing on <abbr title="local area network">LAN</abbr> is a way to use the computer of one of the players as the server, when most people use a server provided by Microsoft instead.</p>
+        <p>This is a feature which is available in all versions of the game, but while it's reachable right from the menu in The Age of Kings / The Conquerors, it's a bit hidden in the UI in later versions.</p>
+        <p>With Age of Empires II: Definitive Edition, LAN mode is available when you create a lobby and select “local LAN” as server. This uses a program called <tt>BattleServer.exe</tt> on the lobby creator's computer. Unfortunately, as far as I know, nobody has been able to use <tt>BattleServer.exe</tt> on Linux (the “local LAN” option is not even available in the list of servers).</p>
+        <p>Keep in mind that the player running the server has to make sure some ports are open on his computer (and not blocked by a firewall, or hidden behind a <abbr title="network address translation">NAT</abbr> device, like a router). Also be sure to use TCP/IP and UDP/IP as protocol, as some of the other protocols available in The Age of Kings / The Conquerors (like IPX) are probably not supported anymore by most operating systems, routers…</p>
+        <aside class="details">
+          <h3>Why <tt>BattleServer.exe</tt> doesn't work on Linux (technical)</h3>
+          <p>
+            As far as I'm aware, the reason why <tt>BattleServer.exe</tt> doesn't work on Linux remains unknown.
+          </p>
+          <p>
+            My own hypothesis (as of August 2022, with Proton 6.3-8) is that it tries communicate with the game over <abbr title="user datagram protocol">UDP</abbr> on port <tt>9999</tt> by using the broadcast IP address <tt>255.255.255.255</tt>, but does so by using a <abbr title="transmission control protocol">TCP</abbr> socket, which may be legal on Windows (I don't know) but isn't on Linux.
+            One can see the following warning message in the console which briefly opens when <tt>BattleServer.exe</tt> starts:
+            <pre>
+              2022/08/06 23:20:33 #288 [Warning] Socks::Connect: failed; errno=10013 errstr='ATLAS_NOTINTABLE: Undefined error.'
+            </pre>
+            And at the same time, one can see the following output using <code>strace</code>:
+            <pre>
+              [pid 125190] bind(10, {sa_family=AF_INET, sin_port=htons(8888), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+              [pid 125190] close(10)                  = 0
+              [pid 125190] listen(10, 1000)           = 0
+              …
+              [pid 125190] dup(10)                    = 11
+              [pid 125190] connect(11, {sa_family=AF_INET, sin_port=htons(9999), sin_addr=inet_addr("255.255.255.255")}, 16) = -1 EACCES (Permission denied)
+              [pid 125190] close(11)                  = 0
+            </pre>
+            <tt>TCP:8888</tt> and <tt>UDP:9999</tt> are two ports which are documented to be used to play the game on LAN, and indeed, we can see that the latter is being used, in the output of <code>lsof -nP -i :9999</code>:
+            <pre>
+              COMMAND   PID             USER    FD  TYPE  DEVICE SIZE/OFF NODE NAM
+              wineserve 131455 nonfreegaming  310u  IPv4 2197508      0t0  UDP *:9999
+              AoE2DE_s. 131519 nonfreegaming   55u  IPv4 2197508      0t0  UDP *:9999
+            </pre>
+            I therefore assume that <tt>BattleServer.exe</tt> is supposed to let the game connect to itself on port <tt>8888</tt> and to broadcast its presence to all running games on the LAN on port <tt>9999</tt>, but can't do the latter because instead of creating a new socket of type <code>SOCK_DGRAM</code> for UDP, it uses a copy of a <code>SOCK_STREAM</code> socket designed for TCP.
+          </p>
+          <p>
+            If you've been able to dig further into the issue, please let me know.
+          </p>
+        </aside>
+        <aside>
+          <h3>Other places to find more information about playing on LAN on Linux</h3>
+          <ul>
+            <li><a href="https://support.ageofempires.com/hc/en-us/articles/360048249391-I-m-having-trouble-connecting-to-a-LAN-match-with-my-friends-">Age of Empires II: Definitive Edition support entry about which ports have to be open on the server</a></li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2 id="how_do_i_use_capture_age_on_linux">
+          <a href="#how_do_i_use_capture_age_on_linux" class="anchor" aria-hidden="true">§</a>
+          How do I use <i>CaptureAge</i> on Linux?
+        </h2>
+        <!-- TODO -->
+        <p><a href="https://captureage.com/">CaptureAge</a> is a very powerful tool to watch saved gamed with an overlay of information.</p>
+        <p>Unfortunately, as far as I know, nobody has been able to use it on Linux. With little effort, one can start it, connect to the game and start replaying a saved game, but it won't show in the custom overlay.</p>
+        <p>To increase the chances of getting CaptureAge on Linux, you can <a href="https://captureage.nolt.io/top">vote for it</a> (as of 2024, Linux support is the second most voted suggestion for CaptureAge).</p>
+        <aside class="details">
+          <h3>Why CaptureAge doesn't work on Linux (technical)</h3>
+          <p>
+            As far as I'm aware, the reason why CaptureAge doesn't work on Linux remains unknown.
+          </p>
+          <p>
+            My own hypothesis (as of August 2021) is that the problem is related to the encryption of <abbr title="inter-process communications">IPCs</abbr> between CaptureAge and the game.
+            Indeed, by looking at the logs, one can see that the initial IPCs are using Windows named pipes (and everything works fine), but then switch to SSL when replaying a saved game (and it breaks here):
+            <pre>
+              Pipe \\.\pipe\captureage_prod_ipc_REDACTED_domApp instance 0 state: connecting
+              Connecting to pipe \\.\pipe\captureage_prod_ipc_REDACTED_domApp
+              App event: application heartbeat outOfGame
+              Pipe \\.\pipe\captureage_prod_ipc_REDACTED_domApp instance 0 state: reading
+              App event: gameIntegration loadRec fromCadeExpanded
+              telling game to load replay C:\users\steamuser\Games\Age of Empires 2 DE\REDACTED\savegame.aoe2record
+              E0807 15:03:47.671000000   740 ssl_transport_security.cc:507] Corruption detected.
+              E0807 15:03:47.671000000   740 ssl_transport_security.cc:483] error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac
+              E0807 15:03:47.672000000   740 secure_endpoint.cc:208] Decryption error: TSI_DATA_CORRUPTED
+              E0807 15:03:47.672000000   740 ssl_transport_security.cc:534] SSL_write failed with error SSL_ERROR_SYSCALL.
+            </pre>
+          </p>
+          <p>
+            If you've been able to dig further into the issue, please let me know.
+          </p>
+        </aside>
+        <aside>
+          <h3>Other places to find more information about CaptureAge on Linux</h3>
+          <ul>
+            <li><a href="https://www.reddit.com/r/aoe2/comments/ot88yg/any_linux_users_here_lets_make_captureage_through/">Reddit thread with attempts at getting CaptureAge to work on Linux</a></li>
+            <li><a href="https://appdb.winehq.org/appview.php?iVersionId=40156">CaptureAge on Wine's AppDB</a></li>
+            <li><a href="https://discord.gg/WPKakH8">CaptureAge on Discord</a> (note: it's <em>not</em> a Linux support channel; but attempts at getting CaptureAge to work on Linux have been met with amiability)</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2 id="should_i_play_on_linux">
+          <a href="#should_i_play_on_linux" class="anchor" aria-hidden="true">§</a>
+          Should I play on Linux?
+        </h2>
+        <p>That's an interesting question. I assumed you already had an opinion on this, but if you don't, here are some thoughts:</p>
+        <ul>
+          <li>AoE2 won't work better on Linux than on Windows. If you observe slightly better performance than on Windows, that's because the operating system itself, or other programs running on it (antivirus, bloatware, malware…) were interfering with the game.</li>
+          <li>AoE2 won't work worse on Linux than on Windows. That being said, as the game is developed for Windows and not for Linux, you may have to apply some tweaks (discussed above) and possibly apply them again every time there's an update.</li>
+          <li>Linux-based operating systems and Windows are, well, different operating systems. Don't expect them to work exactly the same. If you already use Linux or want to switch to it, then you have the possibility to play AoE2 just fine on it — you don't need to use Windows. If you don't want to switch to Linux, then AoE2 alone is not a good reason to change your mind (there are, however, many valid reasons to want to switch to a Linux-based operating system, but that's off-topic).</li>
+        </ul>
+        <p>All in all, I'd say: play on your operating system of choice; don't let anybody else chose your operating system for you.</p>
+      </section>
+      <section>
+        <h2 id="acknowledgements">
+          <a href="#acknowledgements" class="anchor" aria-hidden="true">§</a>
+          Acknowledgements
+        </h2>
+        <p>There's a very long list of people to thank for being able to play AoE2 on Linux. Of course, this would not have been possible without the efforts behind the Wine project since 1993 and behind the DXVK and Proton projects since 2017. But individuals from the AoE2 on Linux community have been helping a lot as well, through Wine's AppDB, ProtonDB, GitHub, Reddit, Discord…</p>
+        <p>Everything described on this page is the result of many people tireless attempts at making the game work on Linux and their willingness to share their discoveries with everybody.</p>
+        <p>Thanks everyone, GL HF!</p>
+      </section>
+      <p class="version">
+        Last update (<a href="https://github.com/ArkanosisNet/aoe2.arkanosis.net/commits/master">changelog</a>) on 2024-07-04 (<a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-117204/">VAV 117204</a>)
+      </p>
+    </main>
+    <footer>
+      <p style="width: 100%; text-align: center;">
+        Made by <a href="https://arkanosis.net">Arkanosis</a>.
+        Text available <a href="https://github.com/ArkanosisNet/aoe2.arkanosis.net">on GitHub</a> under the <a href="https://creativecommons.org/licenses/by/4.0/deed">the CC-BY 4.0 license</a>.
+      </p>
+    </footer>
+  </body>
+</html>

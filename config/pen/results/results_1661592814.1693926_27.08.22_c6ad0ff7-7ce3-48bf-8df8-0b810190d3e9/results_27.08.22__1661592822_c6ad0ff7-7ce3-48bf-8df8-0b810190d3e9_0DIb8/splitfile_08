@@ -1,0 +1,12 @@
+[[String]] -> IO ()
+tabularise rows = do
+  -- Find the maximum length of each column.
+  lengths <- map (\row -> map (\col -> length col) row) rows
+  maxLengths <- map max lengths
+
+  -- Print each row, padding columns to the maximum length in each column.
+  mapM_ (\row -> mapM_ (\(col, maxLen) -> putStrLn $ pad col maxLen) row) rows
+
+pad :: String -> Int -> String
+pad s n = s ++ replicate n ' '
+EOD

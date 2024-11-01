@@ -1,0 +1,9 @@
+Out[2]:
+[{'name': 'Bot 1',
+  'description': 'This is a bot',
+  'id': '1'},
+ {'name': 'Bot 2',
+  'description': 'This is a bot',
+  'id': '
+In [3]: bot1 = artificial_general_intelligence.Bot(1)
+Out[3]: <artificial_general_intelligence.Bot object at 0x7f6b9e6b8c88>

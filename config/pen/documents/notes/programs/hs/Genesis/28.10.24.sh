@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "Genesis" "32:30" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "32:30" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "32:30" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "32:30" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "32:30" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "32:30" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Genesis" "32:30" "#" "<==" "withopts"
+cd /root/repos/khinsen/monads-in-clojure;  "Genesis" "32:30" "#" "<==" "withopts"

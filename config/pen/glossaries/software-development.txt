@@ -1,0 +1,69 @@
+feature flags
+feature toggles
+feature switches
+    A software development technique that
+    turns certain functionality on and off
+    during runtime, without deploying new
+    code.
+    
+    This allows for better control and more
+    experimentation over the full lifecycle of
+    features.
+
+chaos engineering
+    The discipline of experimenting on a
+    software system in production in order to
+    build confidence in the system's
+    capability to withstand turbulent and
+    unexpected conditions.
+
+Postman
+    Design and test APIs.
+
+    https://www.postman.com/
+
+CircleCI
+    Build, Test, Deploy.
+
+    https://www.circleci.com/
+
+    Build for Linux, Windows, macOS, Docker,
+    and Arm, all in the same pipeline. Build
+    with any toolchain, framework, and
+    language you want. 
+
+Loggly
+    A SaaS solution for log data management.
+    
+    With Loggly's log management software,
+    you're able to bring logs from the depths
+    of your entire infrastructure to one place
+    where you can track activity and analyze
+    trends.
+
+Crashlytics
+    An integral part of the Google Firebase
+    platforms.
+    
+    It monitors and reports errors and crashes
+    in real time for iOS and Android
+    applications.
+    
+    It gives you detailed and insightful
+    reports so you can zero in on the root
+    cause of crashes and allow you to create
+    events leading to the crash.
+
+BrowserStack
+    An Indian cloud web and mobile testing
+    platform that provides developers with the
+    ability to test their websites and mobile
+    applications across on-demand browsers,
+    operating systems and real mobile devices.
+
+TestCafe
+    Does not require WebDriver or other
+    testing software.
+    
+    It runs on Node.js and uses the browsers
+    you already have.

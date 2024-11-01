@@ -1,0 +1,199 @@
+HTTP/1.1 200 OK
+Date: Mon, 25 Mar 2024 19:37:18 GMT
+Server: Apache
+Last-Modified: Wed, 07 Sep 2022 04:50:47 GMT
+Accept-Ranges: bytes
+Content-Length: 35517
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE html><html lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="stylesheet" media="print" onload="this.onload=null;this.media='all';" id="ao_optimized_gfonts" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CPT+Serif:regular,italic,700,700italic%7CPoppins:500%2C700%7CRoboto:400%7CPT+Serif:400&amp;display=swap" /><link rel="pingback" href="https://bereanbibles.com/xmlrpc.php" /> <script type="text/javascript">document.documentElement.className = 'js';</script> <script>var et_site_url='index.html';var et_post_id='7';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /> <!-- This site is optimized with the Yoast SEO plugin v16.2 - https://yoast.com/wordpress/plugins/seo/ --><link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_af3d88c1321cafcdb9f4783a5561331e.css" rel="stylesheet" /><link media="only screen and (max-width: 768px)" href="/wp-content/cache/autoptimize/css/autoptimize_541e2ced151704f4ff1844c6de47ec02.css" rel="stylesheet" />
+
+
+
+
+<link media="all" href="/
+et-divi-customizer-global-162092927237.min.css" rel="stylesheet" /><link media="all" href="/
+et-divi-customizer-cpt-global-16209336427.min.css" rel="stylesheet" /><title>Interlinear Bible - Free in many formats</title>
+
+
+
+<meta content="Divi v.4.9.3" name="generator"/><link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' /> <script type='text/javascript' src='/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script> <link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/7.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bereanbibles.com/xmlrpc0db0.php?rsd" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /><link rel='shortlink' href='index.html' /><link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed2c21.json?url=https%3A%2F%2Fbereanbibles.com%2F" /><link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed6166?url=https%3A%2F%2Fbereanbibles.com%2F&amp;format=xml" /><link rel="preload" href="/wp-content/plugins/bloom/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript><meta name="generator" content="Powered by Slider Revolution 6.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." /><script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script> </head><body class="home page-template-default page page-id-7 theme-Divi et-tb-has-template et-tb-has-footer woocommerce-no-js wcz-woocommerce wcz-btns wcz-btn-style-default et_bloom et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css"><div id="page-container"><div id="et-boc" class="et-boc"><header id="main-header" data-height-onload="89"><div class="container clearfix et_menu_container"><div class="logo_container"> <span class="logo_helper"></span> <a href="index.html" data-wpel-link="internal"> <noscript><img src="/BIB-Logo.png" alt="Berean Standard Bible" data-height-percentage="54" /></noscript><img class="lazyload" src="/BIB-Logo.png" alt="Berean Standard Bible" id="logo" data-height-percentage="54" /> </a></div><div id="et-top-navigation" data-height="89" data-fixed-height="40"><nav id="top-menu-nav"><ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22053"><a href="https://bereanbibles.com/about-berean-study-bible/" data-wpel-link="internal">About the BIB</a><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22058"><a href="https://bereanbibles.com/about-berean-study-bible/translation-tiers/" data-wpel-link="internal">Translation Tiers</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22057"><a href="https://bereanbibles.com/about-berean-study-bible/translation-process/" data-wpel-link="internal">Translation Process</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22056"><a href="https://bereanbibles.com/about-berean-study-bible/greek-and-hebrew-sources/" data-wpel-link="internal">Greek and Hebrew Sources</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22221"><a href="https://bereanbibles.com/about-berean-study-bible/compare-translations/" data-wpel-link="internal">Compare Translations</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22054"><a href="https://bereanbibles.com/about-berean-study-bible/endorsements/" data-wpel-link="internal">Endorsements</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22055"><a href="https://bereanbibles.com/about-berean-study-bible/faqs/" data-wpel-link="internal">FAQs</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22060"><a href="https://bereanbibles.com/ministry-resources/" data-wpel-link="internal">Ministry Resources</a><ul class="sub-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22425"><a href="https://berean.bible/licensing.htm" data-wpel-link="external" target="_self" rel="external noopener noreferrer">Free Licensing</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22426"><a href="https://berean.bible/downloads.htm" data-wpel-link="external" target="_self" rel="external noopener noreferrer">Free Downloads</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22168"><a target="_self" rel="noopener external noreferrer" href="https://audiobible.org/" data-wpel-link="external">Audio Bible</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22168"><a target="_self" rel="noopener external noreferrer" href="https://readersbible.com/" data-wpel-link="external">Reader's Bible</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22168"><a target="_self" rel="noopener external noreferrer" href="https://berean.bible/links.htm" data-wpel-link="external">Web, Software, and Blockchain</a></li></ul></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22165"><a>Berean Translations</a><ul class="sub-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22429"><a href="https://bereanbible.com" data-wpel-link="external" target="_self" rel="external noopener noreferrer">Berean Standard Bible</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22155"><a target="_self" rel="noopener external noreferrer" href="https://literalbible.com/" data-wpel-link="external">Berean Literal Bible</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22156"><a target="_self" rel="noopener external noreferrer" href="https://interlinearbible.com/" data-wpel-link="external">Berean Interlinear Bible</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22158"><a target="_self" rel="noopener external noreferrer" href="https://annotatedbible.com/" data-wpel-link="external">Berean Annotated Bible</a></li></ul></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22061"><a href="https://bereanbibles.com/shop/" data-wpel-link="internal">Store</a><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22064"><a href="https://bereanbibles.com/shop/" data-wpel-link="internal">Shop</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22064"><a href="https://bereanbibles.com/shop/my-account/" data-wpel-link="internal">My Account</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22063"><a href="https://bereanbibles.com/shop/cart/" data-wpel-link="internal">Cart</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22065"><a href="https://bereanbibles.com/shop/returns-exchanges-and-refunds/" data-wpel-link="internal">Returns, Exchanges, and Refunds</a></li></ul></li><li class="menu-item"><a href="https://bereanbibles.com/shop/cart/" class="menu-cart-info" data-wpel-link="internal"> <span>&#57466</span><small id="divi_menu_cart_count">0</small><small id="divi_menu_cart_label"></small> </a></li></ul></nav><div id="et_mobile_nav_menu"><div class="mobile_nav closed"> <span class="select_page">Select Page</span> <span class="mobile_menu_bar mobile_menu_bar_toggle"></span></div></div></div> <!-- #et-top-navigation --></div> <!-- .container --><div class="et_search_outer"><div class="container et_search_form_container"><form role="search" method="get" class="et-search-form" action="https://bereanbibles.com/"> <input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" /></form> <span class="et_close_search_field"></span></div></div></header> <!-- #main-header --><div id="et-main-area"><div id="main-content">
+		  
+		  
+
+	
+	
+	
+	
+<a href="/"><img alt="Home" src="/top.jpg" width="100%" border="0">
+
+
+
+<!-- .et_pb_section --><div class="et_pb_row et_pb_row_1">
+
+<br>
+
+
+
+
+		    <span style="color:#2c3943; font-weight:700"><strong>Berean Interlinear Bible</strong></span><br><br>
+	
+<a href="//berean.bible/downloads.htm">Free Downloads</a><br>
+<a href="//berean.bible/licensing.htm">Free Licensing</a><br>
+<a href="//biblehub.com/bib/matthew/1.htm">Read Online</a><br><br>
+
+
+
+			     <p style="color:#2c3943"><strong>Berean Interlinear Bible</strong></p>
+			    <p style="color:#2c3943">The interlinear gloss is a word for word, Greek / Hebrew word order rendering   based on the most reliable sources. This text also contains   complete parsing tags, as well as Strong&rsquo;s numbers to for easy reference   to Greek lexicons. The basis for the interlinear text is the Biblos   Interlinear, developed over several years and now refined by the   translation committee.</p>
+			    <p style="color:#2c3943">The following are elements for each word of the interlinear:</p>
+			    <p style="color:#2c3943">1. Greek text (See below for sources)<br>
+			      2. Transliteration<br>
+			      3. Morphology: Part of Speech – Person, Tense, Mood, Voice – Case, Number, Gender, Comparison<br>
+			      4. English Gloss<br>
+			      5. Strong&rsquo;s Number<br>
+			      6. Lexical definition<br>
+			      7. Punctuation: Both the Greek text source and, separately, the English   gloss are punctuated to assist in reading and understanding.</p>
+			    <p style="color:#2c3943"><strong>Greek Sources</strong></p>
+			    <p style="color:#2c3943">The Greek source is documented for all renderings, with the following   major sources being considered: Nestle, SBL, and Nestle Aland 28th   Edition, Textus Receptus, Byzantine, Greek Orthodox, Tischendorf,   Westcott and Hort, as well as a variety of manuscripts on which these   critical texts are based.</p>
+			    <p style="color:#2c3943">In producing the translation, weight was given to the more reliable /   earlier manuscripts and more recent critical texts. Significant   variants are documented and footnoted.</p>
+			    <p style="color:#2c3943">In choosing a base text for the Berean Greek Bible, it was important   to start with a source that we can share and make available for free   digital use. The Nestle 1904 was chosen, as we believe it is the most   accurate critical text currently in the public domain. Paragraph and   poetry formatting for the Greek Text has been adapted from Westcott and   Hort, 1881.</p>
+			    <p style="color:#2c3943">Significant variants between modern critical texts have been   documented and taken into consideration for translation, along with   additional manuscript evidence. The following are the major texts   included for consideration and documented or footnoted in the Berean   Bible:</p>
+			    <p style="color:#2c3943"><strong>NA28 [NA]</strong><br>
+			      Novum Testamentum Graece, 28th revised edition, Edited by Barbara Aland   and others, © 2012 Deutsche Bibelgesellschaft, Stuttgart.</p>
+			    <p style="color:#2c3943"><strong>SBLGNT ‹SBL›</strong><br>
+			      Michael W. Holmes, Greek New Testament: SBL Edition. (Society of Biblical Literature, 2010).</p>
+			    <p style="color:#2c3943"><strong>Nestle 1904 〈NE〉</strong><br>
+			      Eberhard Nestle, Η ΚΑΙΝΗ ΔΙΑΘΗΚΗ. Text with Critical Apparatus. (British and Foreign Bible Society, 1904).</p>
+			    <p style="color:#2c3943"><strong>Westcott and Hort (WH)</strong><br>
+			      Brooke Foss Westcott and Fenton John Anthony Hort, The New Testament in   the Original Greek, vol. 1: Text; vol. 2: Introduction [and] Appendix   (Cambridge: Macmillan, 1881).</p>
+			    <p style="color:#2c3943"><strong>Byzantine Majority Text ⧼RP⧽</strong><br>
+			      Maurice A. Robinson and William G. Pierpont, The New Testament in the   Original Greek: Byzantine Textform, 2005. (Chilton Book Publishing,   2005).</p>
+			    <p style="color:#2c3943"><strong>Schrivener&rsquo;s Textus Receptus 1896 {TR}</strong><br>
+			      F. H. A. Scrivener , The New Testament in the Original Greek according   to the Text followed in the Authorised Version (Cambridge: University   Press, 1894).</p>
+			    <p style="color:#2c3943"><strong>Greek Orthodox Church (GOC)</strong><br>
+			      The New Testament as is taught by the Greek Fathers, Greek Orthodox Church, 1904</p>
+			    <p style="color:#2c3943"><strong>Tischendorf 8th edition (Tischendorf)</strong><br>
+			      Tischendorf&rsquo;s 8th edition Greek New Testament, Constantin von Tischendorf, 1869-1872</p>
+			    <p style="color:#2c3943"><strong>Stephanus Textus Receptus 1550 (TR1550)</strong><br>
+			      Stephanus Novum Testamentum Graece, Robertus Stephanus, 1550.</p>
+
+<p style="color:#2c3943">The full version of the Berean Interlinear Bible is under construction, to include both the New and Old Testaments.</p>
+
+<p style="color:#2c3943">The release date is uncertain as of now. The initial release will be in digital format. There are no current plans for a print version, but this possibility will be revisited at a later date.</p>
+ 
+
+
+
+</div>
+
+<br><br><br>
+</div></div> <!-- .et_pb_text --></div> <!-- .et_pb_column --></div> <!-- .et_pb_column --></div>
+
+
+
+
+
+ 
+<!-- .et_pb_section --><div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular" ><div class="et_pb_row et_pb_row_1_tb_footer et_pb_equal_columns et_pb_gutters2"><div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image et_pb_image_0_tb_footer"> <a href="#"><span class="et_pb_image_wrap "><noscript><img src="/BIB-Logo.png" alt="" title="BIB-Logo" height="auto" width="auto" srcset="/BIB-Logo.png 1000w, /imguploads/2021/04/BIB-Logo-980x227.png 980w, /imguploads/2021/04/BIB-Logo-480x111.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" class="wp-image-23" /></noscript><img src="/BIB-Logo.png" alt="" title="BIB-Logo" height="auto" width="auto" data-srcset="/BIB-Logo.png 1000w, /imguploads/2021/04/BIB-Logo-980x227.png 980w, /imguploads/2021/04/BIB-Logo-480x111.png 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" class="lazyload wp-image-23" /></span></a></div><div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner"><p style="color:#2c3943"><em> οὗτοι <a title="DPro-NMP 3778: houtoi -- This; he, she, it." href="//biblehub.com/greek/3778.htm">(These)</a> δὲ <a title="Conj 1161: de -- A weak adversative particle, generally placed second in its clause; but, on the other hand, and." href="//biblehub.com/greek/1161.htm">(then)</a> ἦσαν <a title="V-IIA-3P 1510: ēsan -- To be, exist." href="//biblehub.com/greek/1510.htm">(were)</a> εὐγενέστεροι <a title="Adj-NMP-C 2104: eugenesteroi -- (a) of noble birth, of high birth, (b) noble in nature." href="//biblehub.com/greek/2104.htm">(more noble)</a> τῶν <a title="Art-GMP 3588: tōn -- The, the definite article." href="//biblehub.com/greek/3588.htm">(than those)</a> ἐν <a title="Prep 1722: en -- In, on, among." href="//biblehub.com/greek/1722.htm">(in)</a> Θεσσαλονίκῃ <a title="N-DFS 2332: Thessalonikē -- Thessalonica (modern Saloniki), an important city of the Roman province Macedonia." href="//biblehub.com/greek/2332.htm">(Thessalonica)</a>, οἵτινες <a title="RelPro-NMP 3748: hoitines -- Whosoever, whatsoever." href="//biblehub.com/greek/3748.htm">(who)</a> ἐδέξαντο <a title="V-AIM-3P 1209: edexanto -- To take, receive, accept, welcome." href="//biblehub.com/greek/1209.htm">(received)</a> τὸν <a title="Art-AMS 3588: ton -- The, the definite article." href="//biblehub.com/greek/3588.htm">(the)</a> λόγον <a title="N-AMS 3056: logon -- A word, speech, divine utterance, analogy." href="//biblehub.com/greek/3056.htm">(word)</a> μετὰ <a title="Prep 3326: meta -- (a) genitive: with, in company with, (b) accusative: (1) behind, beyond, after, of place, (2) after, of time, with nouns, neut. of adjectives." href="//biblehub.com/greek/3326.htm">(with)</a> πάσης <a title="Adj-GFS 3956: pasēs -- All, the whole, every kind of." href="//biblehub.com/greek/3956.htm">(all)</a> προθυμίας <a title="N-GFS 4288: prothymias -- Inclination, readiness, eagerness, willingness, promptness." href="//biblehub.com/greek/4288.htm">(readiness)</a>, τὸ <a title="Art-NNS 3588: to -- The, the definite article." href="//biblehub.com/greek/3588.htm">(on the)</a> καθ&rsquo; <a title="Prep 2596: kath’ -- Genitive: against, down from, throughout, by; accusative: over against, among, daily, day-by-day, each day, according to, by way of." href="//biblehub.com/greek/2596.htm">(every)</a> ἡμέραν <a title="N-AFS 2250: hēmeran -- A day, the period from sunrise to sunset." href="//biblehub.com/greek/2250.htm">(day)</a>, ἀνακρίνοντες <a title="V-PPA-NMP 350: anakrinontes -- To examine, inquire into, investigate, question." href="//biblehub.com/greek/350.htm">(examining)</a> τὰς <a title="Art-AFP 3588: tas -- The, the definite article." href="//biblehub.com/greek/3588.htm">(the)</a> γραφὰς <a title="N-AFP 1124: graphas -- (a) a writing, (b) a passage of scripture; plural: the scriptures." href="//biblehub.com/greek/1124.htm">(Scriptures)</a> εἰ <a title="Conj 1487: ei -- If." href="//biblehub.com/greek/1487.htm">(if)</a> ἔχοι <a title="V-POA-3S 2192: echoi -- To have, hold, possess." href="//biblehub.com/greek/2192.htm">(were)</a> ταῦτα <a title="DPro-NNP 3778: tauta -- This; he, she, it." href="//biblehub.com/greek/3778.htm">(these things)</a> οὕτως <a title="Adv 3779: houtōs -- Thus, so, in this manner." href="//biblehub.com/greek/3779.htm">(so)</a>.</em> – Acts 17:11</p></div></div> <!-- .et_pb_text --><ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_bg_layout_light"><li
+ class='et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook et_pb_social_media_follow_network_0_tb_footer'><a href="https://www.facebook.com/bereanstudybible" class="icon et_pb_with_border" title="Follow on Facebook" target="_self" data-wpel-link="external" rel="external noopener noreferrer"><span
+ class='et_pb_social_media_follow_network_name'
+ aria-hidden='true'
+ >Follow</span></a></li><li
+ class='et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter et_pb_social_media_follow_network_1_tb_footer'><a href="https://twitter.com/bereanbibles" class="icon et_pb_with_border" title="Follow on Twitter" target="_self" data-wpel-link="external" rel="external noopener noreferrer"><span
+ class='et_pb_social_media_follow_network_name'
+ aria-hidden='true'
+ >Follow</span></a></li></ul> <!-- .et_pb_counters --></div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_6 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner"><p>About the BIB</p></div></div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_1_tb_footer et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner"><a href="https://bereanbibles.com/about-berean-study-bible/translation-tiers/" data-wpel-link="internal">Translation Tiers</a></p><p><a href="https://bereanbibles.com/about-berean-study-bible/translation-process/" data-wpel-link="internal">Translation Process</a></p><p><a href="https://bereanbibles.com/about-berean-study-bible/greek-and-hebrew-sources/" data-wpel-link="internal">Greek and Hebrew Sources</a></p><p><a href="https://bereanbibles.com/about-berean-study-bible/endorsements/" data-wpel-link="internal">Endorsements</a></p><p><a href="https://bereanbibles.com/about-berean-study-bible/faqs/" data-wpel-link="internal">FAQs</a></div></div> <!-- .et_pb_text --></div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_6 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner"><p>Resources</p></div></div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_2_tb_footer et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_4_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner"><p><a href="https://berean.bible/licensing.htm" data-wpel-link="external" target="_self" rel="external noopener noreferrer">Free Licensing</a></p><p><a href="https://berean.bible/downloads.htm" data-wpel-link="external" target="_self" rel="external noopener noreferrer">Free Downloads</a></p><p><a href="https://audiobible.org/" rel="noopener external noreferrer" data-wpel-link="external" target="_self">Audio Bible</a></p><p><a href="https://readersbible.com/" rel="noopener external noreferrer" data-wpel-link="external" target="_self">Reader's Bible</a></p><p><a href="https://berean.bible/links.htm" rel="noopener external noreferrer" data-wpel-link="external" target="_self">Web, Software, and Blockchain</a></p></div></div> <!-- .et_pb_text --></div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_6 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_text et_pb_text_5_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner"><p>Shop</p></div></div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_3_tb_footer et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_6_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner"><p><a href="https://bereanbibles.com/shop/my-account/" data-wpel-link="internal">My Account</a></p><p><a href="https://bereanbibles.com/shop/cart/" data-wpel-link="internal">Shopping Cart</a></p><p><a href="https://bereanbibles.com/shop/returns-exchanges-and-refunds/" data-wpel-link="internal">Shipping and Returns</a></p></div></div> <!-- .et_pb_text --></div> <!-- .et_pb_column --></div> <!-- .et_pb_row --></div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_2_tb_footer et_pb_with_background et_section_regular" ><div class="et_pb_row et_pb_row_2_tb_footer et_pb_equal_columns et_pb_gutters2"><div class="et_pb_column et_pb_column_4_4 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_text et_pb_text_7_tb_footer  et_pb_text_align_left et_pb_bg_layout_light"><div class="et_pb_text_inner" align="center">Copyright © 2021 Berean Standard Bible. All rights reserved.<br><br><span style="color: #ffffff;"><a href="https://berean.bible/terms.htm" target="_self" rel="noopener" style="color: #ffffff;" data-wpel-link="internal">Terms and Conditions</a></span> | <span style="color: #ffffff;"><a href="https://berean.bible/privacy.htm" target="_self" rel="noopener" style="color: #ffffff;" data-wpel-link="internal">Privacy Policy</a></span> | <span style="color: #ffffff;"><a href="https://berean.bible/contact.htm" target="_self" rel="noopener" style="color: #ffffff;" data-wpel-link="internal">Contact us</a><br><br></span></div></div> <!-- .et_pb_text --></div> <!-- .et_pb_column --></div> <!-- .et_pb_row --></div> <!-- .et_pb_section --></div><!-- .et_builder_inner_content --></footer><!-- .et-l --></div> <!-- #et-main-area --></div><!-- #et-boc --></div> <!-- #page-container --> <script type="text/javascript">var et_animation_data = [{"class":"et_pb_section_1","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_text_1","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_button_4","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_button_5","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];</script> <noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src='/wp-content/plugins/autoptimize/classes/external/js/lazysizes.minb433.js?ao_version=2.8.4'></script> <script type="text/javascript">(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();</script>  <script type="text/javascript">if(typeof revslider_showDoubleJqueryError === "undefined") {
+			function revslider_showDoubleJqueryError(sliderID) {
+				var err = "<div class='rs_error_message_box'>";
+				err += "<div class='rs_error_message_oops'>Oops...</div>";
+				err += "<div class='rs_error_message_content'>";
+				err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+				err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+				err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+				err += "</div>";
+			err += "</div>";
+				var slider = document.getElementById(sliderID); slider.innerHTML = err; slider.style.display = "block";
+			}
+		}</script> <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1YR5KBFFE"></script> <script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W1YR5KBFFE');</script> <script type='text/javascript' id='wc-add-to-cart-js-extra'>/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/bereanbibles.com\/shop\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */</script> <script type='text/javascript' id='woocommerce-js-extra'>/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */</script> <script type='text/javascript' id='wc-cart-fragments-js-extra'>/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_9c99cf1c9903ae0ed3a316c272aeb9a8","fragment_name":"wc_fragments_9c99cf1c9903ae0ed3a316c272aeb9a8","request_timeout":"5000"};
+/* ]]> */</script> <script type='text/javascript' id='divi-custom-script-js-extra'>/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/bereanbibles.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/bereanbibles.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/bereanbibles.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"aa686f39a0","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"54879cccb5","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"7","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */</script> <script type='text/javascript' id='sv-wc-payment-gateway-payment-form-v5_10_4-js-extra'>/* <![CDATA[ */
+var sv_wc_payment_gateway_payment_form_params = {"card_number_missing":"Card number is missing","card_number_invalid":"Card number is invalid","card_number_digits_invalid":"Card number is invalid (only digits allowed)","card_number_length_invalid":"Card number is invalid (wrong length)","cvv_missing":"Card security code is missing","cvv_digits_invalid":"Card security code is invalid (only digits are allowed)","cvv_length_invalid":"Card security code is invalid (must be 3 or 4 digits)","card_exp_date_invalid":"Card expiration date is invalid","check_number_digits_invalid":"Check Number is invalid (only digits are allowed)","check_number_missing":"Check Number is missing","drivers_license_state_missing":"Drivers license state is missing","drivers_license_number_missing":"Drivers license number is missing","drivers_license_number_invalid":"Drivers license number is invalid","account_number_missing":"Account Number is missing","account_number_invalid":"Account Number is invalid (only digits are allowed)","account_number_length_invalid":"Account number is invalid (must be between 5 and 17 digits)","routing_number_missing":"Routing Number is missing","routing_number_digits_invalid":"Routing Number is invalid (only digits are allowed)","routing_number_length_invalid":"Routing number is invalid (must be 9 digits)"};
+/* ]]> */</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_3ccb4139b8632f25e7f612eab908867e.js"></script></body>
+<!-- Mirrored from bereanbibles.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 May 2021 02:17:11 GMT -->
+</html><!-- Cache Enabler by KeyCDN @ Sat, 08 May 2021 01:16:50 GMT (https-index.html) -->
+
+
+
+
+
+
+
+

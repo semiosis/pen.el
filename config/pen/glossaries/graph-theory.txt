@@ -1,0 +1,138 @@
+hypergraph
+    [#mathematics]
+
+    A generalization of a graph in which an
+    edge can join any number of vertices.
+
+    In contrast, in an ordinary graph, an edge
+    connects exactly two vertices.
+
+multigraph
+    [#mathematics]
+    [#graph theory]
+
+    A graph which is permitted to have
+    multiple edges (also called parallel
+    edges), that is, edges that have the same
+    end nodes.
+    
+    Thus two vertices may be connected by more
+    than one edge.
+    
+    When multiple edges connect two nodes,
+    these are different edges.
+
+factor graph
+    A bipartite graph representing the
+    factorization of a function.
+    
+    In probability theory and its
+    applications, factor graphs are used to
+    represent factorization of a probability
+    distribution function, enabling efficient
+    computations, such as the computation of
+    marginal distributions through the sum-
+    product algorithm.
+    
+    One of the important success stories of
+    factor graphs and the sum-product
+    algorithm is the decoding of capacity-
+    approaching error-correcting codes, such
+    as LDPC and turbo codes.
+    
+    Factor graphs generalize constraint
+    graphs.
+    
+    A factor whose value is either 0 or 1 is
+    called a constraint.
+    
+    A constraint graph is a factor graph where
+    all factors are constraints.
+    
+    The max-product algorithm for factor
+    graphs can be viewed as a generalization
+    of the arc-consistency algorithm for
+    constraint processing.
+
+constraint graph
+    [#constraint satisfaction research]
+    [#artificial intelligence]
+    [#operations research]
+
+    Constraint graphs and hypergraphs are used
+    to represent relations among constraints
+    in a constraint satisfaction problem.
+    
+    A constraint graph is a special case of a
+    factor graph, which allows for the
+    existence of free variables.
+
+tree
+    An undirected graph in which any two
+    vertices are connected by exactly one
+    path, or equivalently a connected acyclic
+    undirected graph.
+    
+forest
+    An undirected graph in which any two
+    vertices are connected by at most one
+    path, or equivalently an acyclic
+    undirected graph, or equivalently a
+    disjoint union of trees.
+
+directed acyclic graph
+DAG
+
+polytree
+directed tree
+oriented tree
+singly connected network
+    [DAG]
+    
+    Underlying undirected graph is a tree.
+
+polyforest
+directed forest
+oriented forest
+    [DAG]
+
+    Underlying undirected graph is a forest.
+
+adjacency matrix
+    A square matrix used to represent a finite
+    graph.
+    
+    The elements of the matrix indicate
+    whether pairs of vertices are adjacent or
+    not in the graph.
+
+    If a pair of points i,j are adjacent then
+    that cell is 1.
+
+    rows & columns represent vertices.
+
+    row sum = degree of the vertex that the
+    row represents.
+    
+    In the special case of a finite simple
+    graph, the adjacency matrix is a
+    (0,1)-matrix with zeros on its diagonal.
+
+incidence matrix
+    One key different from an adjacency
+    matrix.
+
+    A matrix that shows the relationship
+    between two classes of objects.
+
+    https://youtu.be/LUDNz2bIjWI?t=332
+    
+    If the first class is X and the second is
+    Y, the matrix has one row for each element
+    of X and one column for each element of Y.
+    
+    The entry in row x and column y is 1 if x
+    and y are related (called incident in this
+    context) and 0 if they are not.
+    
+    There are variations.

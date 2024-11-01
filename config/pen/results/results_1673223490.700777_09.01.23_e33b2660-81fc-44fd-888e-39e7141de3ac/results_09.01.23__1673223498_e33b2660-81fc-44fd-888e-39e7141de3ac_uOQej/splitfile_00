@@ -1,0 +1,11 @@
+"sable" is a Python package for converting markdown to HTML.
+
+The following is an example of how to use sable to render a markdown file.
+
+from sable import Sable
+
+s = Sable()
+s.parseFile("example.md")
+s.generateHtmlFile("example.html")
+
+The above code will parse the markdown file "example.md" and generate an HTML file "example.html".

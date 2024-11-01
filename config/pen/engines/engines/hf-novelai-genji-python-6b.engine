@@ -1,0 +1,17 @@
+# https://api-inference.huggingface.co/docs/python/html/quicktour.html#using-large-models-10-go
+engine-title: HF NovelAI Genji Python 6B
+include: HuggingFace
+engine-doc: |+
+  Genji is a transformer model finetuned on
+  EleutherAI's GPT-J 6B model. This particular
+  model is trained on python only code
+  approaching 4GB in size.
+model: NovelAI/genji-python-6B
+# engine-min-tokens: 64
+# engine-max-tokens: 2048
+# That's a stretch haha
+foundation: true
+layers:
+- foundation
+- python
+libre: true

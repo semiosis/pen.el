@@ -1,0 +1,10 @@
+
+    A fact is a piece of information that
+    Ansible can determine about a system.
+
+    Facts are used to infer the current state
+    of a system.
+
+    Facts are things that are inferred from
+    the remote system's current state or nature.
+EOD

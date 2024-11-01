@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-01-12 Fri 12:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>D-Group journal weekly entry for 2024, week 2</title>
+<meta name="author" content="root" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">D-Group journal weekly entry for 2024, week 2</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4c11650">1. D-Group weekly session notes</a>
+<ul>
+<li><a href="#orgb00a1c5">1.1. H.E.A.R journal entry for verse Luke 6:9</a>
+<ul>
+<li><a href="#org3564282">1.1.1. H ([h]ighlight a verse that stood out in the reading)</a></li>
+<li><a href="#org062f356">1.1.2. E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</a></li>
+<li><a href="#org3647b4d">1.1.3. A (write down how I can [a]pply this Bible verse in my own life)</a></li>
+<li><a href="#org33e3ac2">1.1.4. R ([r]espond to the LORD in prayer)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0627060">2. </a></li>
+<li><a href="#orgddf488b">3. </a>
+<ul>
+<li><a href="#org762a4ca">3.1. H.E.A.R journal entry for verse Luke 6:26</a>
+<ul>
+<li><a href="#orgde154e6">3.1.1. H ([h]ighlight a verse that stood out in the reading)</a></li>
+<li><a href="#org3690432">3.1.2. E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</a></li>
+<li><a href="#org8da02c1">3.1.3. A (write down how I can [a]pply this Bible verse in my own life)</a></li>
+<li><a href="#orge6ad2f6">3.1.4. R ([r]espond to the LORD in prayer)</a></li>
+</ul>
+</li>
+<li><a href="#org02a7c56">3.2. H.E.A.R journal entry for verse Luke 6:31</a>
+<ul>
+<li><a href="#orgde57718">3.2.1. H ([h]ighlight a verse that stood out in the reading)</a></li>
+<li><a href="#orgd87cd2d">3.2.2. E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</a></li>
+<li><a href="#org72cdccb">3.2.3. A (write down how I can [a]pply this Bible verse in my own life)</a></li>
+<li><a href="#org1d6f2f7">3.2.4. R ([r]espond to the LORD in prayer)</a></li>
+</ul>
+</li>
+<li><a href="#org20923e0">3.3. H.E.A.R journal entry for verse Luke 6:37</a>
+<ul>
+<li><a href="#orgb3a8d4e">3.3.1. H ([h]ighlight a verse that stood out in the reading)</a></li>
+<li><a href="#orgec96aec">3.3.2. E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</a></li>
+<li><a href="#org85ff3a2">3.3.3. A (write down how I can [a]pply this Bible verse in my own life)</a></li>
+<li><a href="#orgf6e05b3">3.3.4. R ([r]espond to the LORD in prayer)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4c11650" class="outline-2">
+<h2 id="org4c11650"><span class="section-number-2">1.</span> D-Group weekly session notes</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Started working on it: <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-01-11 Thu&gt;</span></span>
+</p>
+
+<p>
+Listen to instrumental worship music:
+<a href="https://www.youtube.com/watch?v=YiZdqotstAk">Lead Me Lord : Piano Instrumental Music With Scriptures &amp; Autumn Scene d???CHRISTIAN piano - YouTube</a>
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Scripture Memory</th>
+<th scope="col" class="org-left">HEAR Journals Passage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><a href="sps bible-read-passage nasb Matthew 5:3-4 ">Matthew 5:3-4</a></td>
+<td class="org-left"><a href="sps nasb Luke 6-10 ">Luke 6-10</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+</p>
+
+<p>
+Story bullet points (over entire reading):
+</p>
+<ul class="org-ul">
+<li>On two separate Sabbaths
+<ul class="org-ul">
+<li>Jesus was passing through some grainfields on a Sabbath and his disciples were eating from the grainfields. Jesus brought up how David and his followers ate from the consecrated bread</li>
+<li>Jesus healed a man with a withered right hand</li>
+</ul></li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Luke 6:9
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Luke 6:9
+&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;
+And Jesus said to them, &#8220;I ask you, is it
+lawful to do good or to do harm on the
+Sabbath, to save a life or to destroy it?&#8221;
+
+(NASB)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Matthew 5:3-4
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Matthew 5:3
+&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;
+&#8220;Blessed are the poor in spirit, for theirs is
+the kingdom of heaven.
+
+Matthew 5:4
+&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;
+&#8220;Blessed are those who mourn, for they shall be
+comforted.
+
+(NASB)
+</pre>
+</div>
+
+<p>
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+</p>
+</div>
+
+<div id="outline-container-orgb00a1c5" class="outline-3">
+<h3 id="orgb00a1c5"><span class="section-number-3">1.1.</span> H.E.A.R journal entry for verse <a href="sps nasb Luke 6:9 ">Luke 6:9</a></h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org3564282" class="outline-4">
+<h4 id="org3564282"><span class="section-number-4">1.1.1.</span> H ([h]ighlight a verse that stood out in the reading)</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>nasb Luke 6:9
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Luke 6:9
+&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;
+And Jesus said to them, &#8220;I ask you, is it
+lawful to do good or to do harm on the
+Sabbath, to save a life or to destroy it?&#8221;
+
+(NASB)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org062f356" class="outline-4">
+<h4 id="org062f356"><span class="section-number-4">1.1.2.</span> E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</h4>
+</div>
+
+<div id="outline-container-org3647b4d" class="outline-4">
+<h4 id="org3647b4d"><span class="section-number-4">1.1.3.</span> A (write down how I can [a]pply this Bible verse in my own life)</h4>
+</div>
+
+<div id="outline-container-org33e3ac2" class="outline-4">
+<h4 id="org33e3ac2"><span class="section-number-4">1.1.4.</span> R ([r]espond to the LORD in prayer)</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<p>
+Dear Heavenly Father, Almighty Jehovah God,
+please help me to follow the law the way Jesus Christ did, in the spirit of the law; doing good and loving You and loving other people.
+Thank You God for justifying us through the righteousness of faith in Jesus.
+I believe You, Father God, that You sent Jesus Christ to die for my sins.
+I believe You, Father God, that Jesus Christ was raised the dead.
+Father God, I believe Jesus that I too may be raised from the dead, as Jesus was.
+Thank You that Jesus Christ, Your Son fulfilled the law at the prophets.
+In Jesus Christ's name I pray and thank You, God,
+AMEN!!
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0627060" class="outline-2">
+<h2 id="org0627060"><span class="section-number-2">2.</span> </h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<a href="/volumes/home/shane/notes/ws/bible-studies/my-testimony.org">/volumes/home/shane/notes/ws/bible-studies/my-testimony.org</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgddf488b" class="outline-2">
+<h2 id="orgddf488b"><span class="section-number-2">3.</span> </h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<a href="agenda/Rudy::Review book for Rudy: And He Will">agenda/Rudy::Review book for Rudy: And He Will</a>
+</p>
+</div>
+
+<div id="outline-container-org762a4ca" class="outline-3">
+<h3 id="org762a4ca"><span class="section-number-3">3.1.</span> H.E.A.R journal entry for verse <a href="sps nasb Luke 6:26 ">Luke 6:26</a></h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgde154e6" class="outline-4">
+<h4 id="orgde154e6"><span class="section-number-4">3.1.1.</span> H ([h]ighlight a verse that stood out in the reading)</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>nasb Luke 6:26
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Luke 6:26
+&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;
+Woe to you when all men speak well of you, for
+their fathers used to treat the false prophets
+in the same way.
+
+(NASB)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3690432" class="outline-4">
+<h4 id="org3690432"><span class="section-number-4">3.1.2.</span> E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</h4>
+</div>
+
+<div id="outline-container-org8da02c1" class="outline-4">
+<h4 id="org8da02c1"><span class="section-number-4">3.1.3.</span> A (write down how I can [a]pply this Bible verse in my own life)</h4>
+</div>
+
+<div id="outline-container-orge6ad2f6" class="outline-4">
+<h4 id="orge6ad2f6"><span class="section-number-4">3.1.4.</span> R ([r]espond to the LORD in prayer)</h4>
+<div class="outline-text-4" id="text-3-1-4">
+<p>
+Dear Heavenly Father, Almighty Jehovah God,
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org02a7c56" class="outline-3">
+<h3 id="org02a7c56"><span class="section-number-3">3.2.</span> H.E.A.R journal entry for verse <a href="sps nasb Luke 6:31 ">Luke 6:31</a></h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orgde57718" class="outline-4">
+<h4 id="orgde57718"><span class="section-number-4">3.2.1.</span> H ([h]ighlight a verse that stood out in the reading)</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>nasb Luke 6:31
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Luke 6:31
+&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;
+Treat others the same way you want them to
+treat you.
+
+(NASB)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd87cd2d" class="outline-4">
+<h4 id="orgd87cd2d"><span class="section-number-4">3.2.2.</span> E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</h4>
+</div>
+
+<div id="outline-container-org72cdccb" class="outline-4">
+<h4 id="org72cdccb"><span class="section-number-4">3.2.3.</span> A (write down how I can [a]pply this Bible verse in my own life)</h4>
+</div>
+
+<div id="outline-container-org1d6f2f7" class="outline-4">
+<h4 id="org1d6f2f7"><span class="section-number-4">3.2.4.</span> R ([r]espond to the LORD in prayer)</h4>
+<div class="outline-text-4" id="text-3-2-4">
+<p>
+Dear Heavenly Father, Almighty Jehovah God,
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org20923e0" class="outline-3">
+<h3 id="org20923e0"><span class="section-number-3">3.3.</span> H.E.A.R journal entry for verse <a href="sps nasb Luke 6:37 ">Luke 6:37</a></h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-orgb3a8d4e" class="outline-4">
+<h4 id="orgb3a8d4e"><span class="section-number-4">3.3.1.</span> H ([h]ighlight a verse that stood out in the reading)</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>nasb Luke 6:37
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Luke 6:37
+&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;&#8254;
+&#8220;Do not judge, and you will not be judged; and
+do not condemn, and you will not be condemned;
+pardon, and you will be pardoned.
+
+(NASB)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgec96aec" class="outline-4">
+<h4 id="orgec96aec"><span class="section-number-4">3.3.2.</span> E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)</h4>
+</div>
+
+<div id="outline-container-org85ff3a2" class="outline-4">
+<h4 id="org85ff3a2"><span class="section-number-4">3.3.3.</span> A (write down how I can [a]pply this Bible verse in my own life)</h4>
+</div>
+
+<div id="outline-container-orgf6e05b3" class="outline-4">
+<h4 id="orgf6e05b3"><span class="section-number-4">3.3.4.</span> R ([r]espond to the LORD in prayer)</h4>
+<div class="outline-text-4" id="text-3-3-4">
+<p>
+Dear Heavenly Father, Almighty Jehovah God,
+Please forgive me for judging and condemning people.
+I do not judge, nor condemn.
+I'm thinking particularly of the situation this week with Cornerstone.
+Please, God, forgive me for getting angry.
+I do not condemn them, LORD.
+Please, God, they may simply have some error there.
+But I do not condemn them.
+You are the only just and righteous Judge, LORD God.
+In Jesus Christ's name I ask, pray and declare,
+AMEN!!
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: root</p>
+<p class="date">Created: 2024-01-12 Fri 12:07</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

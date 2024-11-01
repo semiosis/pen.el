@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: certificates
+# contributor: Toptal & contributors
+# key: certificates
+# --
+
+### certificates ###
+
+*.pem
+*.key
+*.crt
+*.cer
+*.priv

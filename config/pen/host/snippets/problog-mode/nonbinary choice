@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Annotated disjunction (nonbinary choice). At most one of these choices is true.
+# group: annotated disjunction
+# key: nb
+# --
+% annotated disjunction. at most one of these choices is true.
+1/6::die(D, 1); 1/6::die(D, 2); 1/6::die(D, 3);
+1/6::die(D, 4); 1/6::die(D, 5); 1/6::die(D, 6).

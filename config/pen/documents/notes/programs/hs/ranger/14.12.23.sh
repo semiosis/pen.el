@@ -1,0 +1,5 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/elpa-light;  "ranger" "#" "<==" "zsh"

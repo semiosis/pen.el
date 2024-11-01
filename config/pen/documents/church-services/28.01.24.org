@@ -1,0 +1,64 @@
+* ALC
+Pastor: John Watson
+
+** Sermon: Jesus' Kingdom
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matt 16:17-19
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 16:17-19
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+And Jesus answered him, Blessed are you, Simon
+Bar-Jonah! For flesh and blood has not
+revealed this to you, but my Father who is in
+heaven.
+
+And I tell you, you are Peter, and on this
+rock I will build my church, and the gates of
+hell shall not prevail against it.
+
+I will give you the keys of the kingdom of
+heaven, and whatever you bind on earth shall
+be bound in heaven, and whatever you loose on
+earth shall be loosed in heaven.
+
+(ESV)
+#+end_src
+
+*** Are these keys the same?
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Isaiah 22:22
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Isaiah 22:22
+‾‾‾‾‾‾‾‾‾‾‾‾
+And I will place on his shoulder the key of
+the house of David.
+
+He shall open, and none shall shut; and he
+shall shut, and none shall open.
+
+(ESV)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matt 16:19
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 16:19
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+I will give you the keys of the kingdom of
+heaven, and whatever you bind on earth shall
+be bound in heaven, and whatever you loose on
+earth shall be loosed in heaven.
+
+(ESV)
+#+end_src
+

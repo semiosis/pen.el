@@ -1,0 +1,3 @@
+;; Run function distance-to
+(message (eval '(distance-to "the moon from earth")))
+--> 

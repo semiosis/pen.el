@@ -1,0 +1,6 @@
+cd /root/notes;  "1Tim" "1:10" "#" "<==" "zsh"
+cd /root/notes;  "1Tim" "1:9-10" "#" "<==" "zsh"
+cd /root/notes;  "1Tim" "1:10" "#" "<==" "zsh"
+cd /root/notes;  "1Tim" "1:8-0" "#" "<==" "zsh"
+cd /root/notes;  "1Tim" "1:8-10" "#" "<==" "zsh"
+cd /root/notes;  "1Tim" "1:8-11" "#" "<==" "zsh"

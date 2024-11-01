@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: try ... catch statement
+# group: vimsnippet
+# key: vs-t
+# --
+try
+	${1:${VISUAL}}
+catch ${2}
+	${0}
+endtry

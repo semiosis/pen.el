@@ -1,0 +1,6 @@
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "C-M-j" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "to" "end" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "-z" "to" "end" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "pypi" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "word-for-today" "#" "<==" "ead"
+cd /root/notes/programs/hs;  "ead" "word-for-today" "#" "<==" "ead"

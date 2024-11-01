@@ -1,0 +1,33 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\t -> (t, "foo"))) tuples
+
+  -- Tabularise the rows and print them to stdout.
+  printRows rows
+EOD
+
+# haskell files
+
+cat draft.haskell <<EOD
+module Main where
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+import Data.List (intercalate)
+
+
+main = do
+
+  lines <- L.readFile "-"
+
+  records <- decodeUtf8 <$> lines
+
+  records' <- records !! 1
+
+  fields <- map (T.words . T.unpack) records'
+
+  values <- map (map (read)) fields
+
+  tuples <- map (zip [

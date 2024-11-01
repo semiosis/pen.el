@@ -1,0 +1,14 @@
+- 1. Simon Peyton Jones (1946-present)
+- 2. Erik Meijer (1943–present)
+- 3. Philip Wadler (1948 – present)
+- 4. Heinz O. Kuttler (1912–1998)
+"""
+
+    def download_data(self):
+        self.url = "https://swcarpentry.github.io/data-201-resources/workshop/data.zip"
+        # Download file
+        with urllib.request.urlopen(self.url) as src:
+            with open(self.zip_file, "wb") as output:
+                output.write(src.read())
+
+    def unzip

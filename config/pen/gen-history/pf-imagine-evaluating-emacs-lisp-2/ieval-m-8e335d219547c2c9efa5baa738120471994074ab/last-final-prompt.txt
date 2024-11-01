@@ -1,0 +1,3 @@
+;; Run function nicknameof
+(message (eval '(nicknameof "Amelia")))
+--> 

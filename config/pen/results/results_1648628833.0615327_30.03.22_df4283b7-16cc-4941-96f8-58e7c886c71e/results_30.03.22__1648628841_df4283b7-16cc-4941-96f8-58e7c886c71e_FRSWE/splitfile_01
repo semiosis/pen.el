@@ -1,0 +1,9 @@
+The above code is a bit of a mess. It's a monoid because it's a tree, but it's not very pretty to look at.
+
+If you're not familiar with Haskell, the asTree function is a function that takes a Project and turns it into a Tree String.
+
+The Tree data structure is a tree where each node has a value and a list of child nodes.
+
+The asTree function is a fold over the project, using the following functions:
+
+case

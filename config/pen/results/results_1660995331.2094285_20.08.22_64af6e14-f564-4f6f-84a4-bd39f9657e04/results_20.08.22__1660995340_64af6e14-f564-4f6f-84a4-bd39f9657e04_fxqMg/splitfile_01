@@ -1,0 +1,25 @@
+
+  (let ((n (- char ?a)))
+    (if (>= n 0)
+        (string (+ n ?a))
+      "?")))
+
+(defun pen-modeline-name-ascii ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (s-replace-regexp
+            "pen-emacsd-\\([0-9]*\\)"
+            (concat "\\1" (ascii-letter-from-int \\1))
+            dn))
+          (t
+           "emacs"))))
+
+ ;; end of file header
+
+ ;; pen daemon mode line format
+
+ ;; pen daemon mode line format
+
+ ;; pen daemon mode line format

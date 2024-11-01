@@ -1,0 +1,11 @@
+
+      (= "run" type) (run-command dir)
+      (throw (Exception. "Unknown command: " type)))))
+
+(defn run-command
+  "Run a system command"
+  [command]
+  (let [command (first args)]
+    (println (str "Running: " command))
+    (shell-command command)))
+

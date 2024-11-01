@@ -1,0 +1,2 @@
+declare -F: declare -F: function declare_F():
+root

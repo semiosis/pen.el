@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=wR1V3IebL0w" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=uSjiHHzQgks&t=157" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=uSjiHHzQgks&t=172" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=t0QyVW4i52s&t=23" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://gospel-of-grace-faq.josephprince.org/article/872-is-philippians-2-12-telling-us-we-need-to-work-for-our-salvation" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=SdZ0x8_NCX4" "#" "<==" "pen-ci"

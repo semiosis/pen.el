@@ -1,0 +1,38 @@
+task: "NL to SQL"
+doc: "Given a NL query, write some SQL"
+tags: code sql
+prompt-version: 1
+notes:
+- I doubt that being specific about where to place the result is important, but it might help
+prompt: |+
+    Take the human query in the [Query] section, convert it to a SQL query, and put the result in the [SQL] section.
+    
+    [Query]: Fetch the companies that have less than five people in it.
+    [SQL]: SELECT COMPANY, COUNT(EMPLOYEE_ID) FROM Employee GROUP BY COMPANY HAVING COUNT(EMPLOYEE_ID) < 5;
+    <delim>
+    [Query]: Show all companies along with the number of employees in each department
+    [SQL]: SELECT COMPANY, COUNT(COMPANY) FROM Employee GROUP BY COMPANY;
+    <delim>
+    [Query]: Show the last record of the Employee table
+    [SQL]: SELECT * FROM Employee ORDER BY LAST_NAME DESC LIMIT 1;
+    <delim>
+    [Query]: <nl query>
+    [SQL]: 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 100
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "nl query"
+examples:
+- "Fetch the three max employees from the Employee table"
+n-collate: 1
+# The results don't vary much. 3 completions is enough. But 1 would probably be enough too.
+n-completions: 3
+info: on
+completion: off
+insertion: off
+external-related: https://nlpcloud.io/home/playground/code-generation

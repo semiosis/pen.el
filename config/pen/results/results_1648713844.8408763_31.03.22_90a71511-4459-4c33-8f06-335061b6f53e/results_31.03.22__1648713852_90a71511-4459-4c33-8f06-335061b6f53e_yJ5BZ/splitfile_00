@@ -1,0 +1,5 @@
+The above code defines a data type for a game state. The data type is a record type, which is defined by a list of
+fields. Each field has a name and a type. The name is used to refer to the field and the type is used to specify
+what kind of data is stored in the field.
+
+In this case, the data type has two fields: a number to guess and the number of tries the player has left.

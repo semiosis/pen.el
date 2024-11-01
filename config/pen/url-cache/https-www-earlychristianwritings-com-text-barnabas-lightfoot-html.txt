@@ -1,0 +1,1902 @@
+HTTP/1.1 200 OK
+Date: Wed, 01 May 2024 21:42:01 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Tue, 17 Nov 2015 21:16:40 GMT
+Accept-Ranges: bytes
+Content-Length: 88929
+Keep-Alive: timeout=3, max=100
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>The Epistle of Barnabas (translation J.B. Lightfoot)</TITLE>
+<meta name="keywords" content="barnabas,epistle of barnabas,the epistle of barnabas,st barnabas,saint barnabas">
+<meta name="description" content="The Epistle of Barnabas (translation J.B. Lightfoot). On Early Christian Writings.">
+<link rel="stylesheet" media="all" href="../finaldemo/layers.css" type="text/css">
+<style type="text/css">
+body {
+	behavior: url("csshover.txt");
+}
+
+body {
+  margin: 0px;
+	padding: 0px;
+}
+
+#menu ul, li, div {
+	margin: 0px;
+	padding: 0px;
+}
+LI:hover {
+	Z-INDEX: 15;
+}
+UL UL {
+  position: absolute;
+	display: none;
+}
+LI:hover UL UL {
+	DISPLAY: none;
+}
+LI:hover UL {
+	DISPLAY: block;
+}
+LI:hover LI:hover UL {
+	DISPLAY: block
+}
+li ul {
+	position: absolute;
+	display: none;
+}
+#menu ul, #menu li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul li {
+	position: relative;
+}
+#menu {
+  line-height: 1px;
+	font-size: 1px;
+}
+
+/* Styles for Menu Items */
+
+li.topli ul a {
+  display: block;
+	padding-top: 3px; padding-left: 3px; padding-bottom: 3px; padding-right: 0px;
+	margin: 0px;
+	text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+	line-height: 10px;
+  font-size: 10px;
+	color: rgb(246, 223, 190);
+}
+li.submenu a {
+  background-image: url("pic/arrow.gif"); background-position: right; background-repeat: no-repeat; z-index: 20;
+}
+li.submenu ul a {
+  background-image: url("pic/spacer.gif"); z-index: 25;
+}
+li.topli li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+li.topli li:hover ul li a {
+  color: rgb(246, 223, 190);
+	background-color: rgb(73, 63, 40);
+}
+#menu li.submenu ul li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+#menu li {
+  height: 16px;
+	margin: 0px; padding: 0px;
+  width: inherit;
+}
+
+/* Specific classes */
+
+ul.topul {
+  position: absolute;
+	left: 0px;
+	top: 20px;
+	background-color: black;
+}
+
+li.topli {
+  position: absolute;
+	top: 0px;
+}
+
+div.topdiv1 {
+  position: absolute;
+	top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.topdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(73, 63, 40);
+}
+
+ul.subul {
+  position: absolute;
+  top: -1px;
+  background-color: black;
+}
+
+div.subdiv1 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.subdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+	background-color: rgb(73, 63, 40);
+}
+
+/* Fix some stuff with lists in the body of the page. */
+#infolayer ul {
+  position: relative;
+  display: block;
+  list-style-type: disc;
+	list-style-position: outside;
+}
+#infolayer li {
+  position: relative;
+  display: list-item;
+}
+#infolayer ul li {
+	margin-left: -16px;
+}
+#infolayer ol li {
+  margin-left: -8px;
+}
+#infolayer a {
+  color: #990033;
+}
+#infolayer a:visited {
+  color: black;
+}
+#infolayer a:hover {
+  color: red;
+}
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4053514-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+
+<div id="whitetoplayer">
+  <div id="buythecd"><a href="https://earlywritings.com/buy/"><img src="../pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div id="breadcrumbs" style="position: absolute; top: 11px; left: 15px;"><a href="../">Home</a> <b>&gt;</b> <a href="../churchfathers.html">Church Fathers</a> <b>&gt;</b> <a href="../barnabas.html">The Epistle of Barnabas</a> <b>&gt;</b> <b>Text</b></div>
+  <form action="http://www.google.com/cse" id="cse-search-box" target="_blank" style="position: absolute; top: 0px; right: 118px; height: 39px; font-family: Arial, Helvetica, sans-serif; margin: 5px;">
+    <div style="background-color: rgb( 174, 134, 64 ); text-align: right; -moz-border-radius: 5px;"><div style="padding: 3px;">
+    <input type="hidden" name="cx" value="partner-pub-2665675471425577:4654561773" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" width="40" />
+    <input type="submit" name="sa" value="Search" />
+	</div></div>
+  </form>
+</div>
+
+<style>
+#ataglance div.info {
+  margin-top: 6px;
+	margin-bottom: 6px;
+}
+</style>
+
+<div id="infolayer">
+  <div id="textboundingbox">
+
+  <h1 id="textname">The Epistle of Barnabas</h1>
+
+	<div id="toprightad" style="float: right;">
+	<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-2665675471425577";
+		/* Top Right Article */
+		google_ad_slot = "8302713982";
+		google_ad_width = 336;
+		google_ad_height = 280;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+</div>
+
+<div style="float: right; clear: both; margin-top:200px; margin-left: 10px; margin-bottom: 20px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Large Skyscraper -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-2665675471425577"
+     data-ad-slot="6140797149"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<p style="position: relative; display: inline; padding-top: 0px; margin-top: 5px;"></p>
+
+<P>
+<p>THE EPISTLE OF BARNABAS<br>
+Translated by J.B. Lightfoot. </p>
+
+<p>Barnabas 1:1<br>
+I Bid you greeting, sons and daughters, in the name of the Lord that<br>
+loved us, in peace.</p>
+
+<p>Barnabas 1:2<br>
+ Seeing that the ordinances of God are great and rich unto you, I<br>
+rejoice with an exceeding great and overflowing joy at your blessed<br>
+and glorious spirits; so innate is the grace of the spiritual gift<br>
+that ye have received.</p>
+
+<p>Barnabas 1:3<br>
+Wherefore also I the more congratulate myself hoping to be saved, for<br>
+that I truly see the Spirit poured out among you from the riches of<br>
+the fount of the Lord. So greatly did the much-desired sight of you<br>
+astonish me respecting you.</p>
+
+<p>Barnabas 1:4<br>
+Being therefore persuaded of this, and being conscious with myself<br>
+that having said much among you I know that the Lord journeyed with<br>
+me on the way of righteousness, and am wholly constrained also myself<br>
+to this, to love you more than my own soul (for great faith and love<br>
+dwelleth in you through the hope of the life which is<br>
+His)--considering this therefore, that,</p>
+
+<p>Barnabas 1:5<br>
+if it shall be my care to communicate to you some portion of that<br>
+which I received, it shall turn to my reward for having ministered to<br>
+such spirits, I was eager to send you a trifle, that along with your<br>
+faith ye might have your knowledge also perfect.</p>
+
+<p>Barnabas 1:6<br>
+Well then, there are three ordinances of the Lord; *the hope of life,<br>
+which is the beginning and end of our faith; and righteousness, which<br>
+is the beginning and end of judgment; love shown in gladness and<br>
+exultation, the testimony of works of righteousness.*</p>
+
+<p>Barnabas 1:7<br>
+For the Lord made known to us by His prophets things past and<br>
+present, giving us likewise the firstfruits of the taste of things<br>
+future. And seeing each of these things severally coming to pass,<br>
+according as He spake, we ought to offer a richer and higher offering<br>
+to the fear of Him. But I, not as though I were a teacher, but as<br>
+one of yourselves, will show forth a few things, whereby ye shall be<br>
+gladdened in the present circumstances.</p>
+
+<p>Barnabas 2:1<br>
+ Seeing then that the days are evil, and that the Active One himself<br>
+has the authority, we ought to give heed to ourselves and to seek out<br>
+the ordinances of the Lord.</p>
+
+<p>Barnabas 2:2<br>
+The aids of our faith then are fear and patience, and our allies are<br>
+long-suffering and self-restraint.</p>
+
+<p>Barnabas 2:3<br>
+While these abide in a pure spirit in matters relating to the Lord,<br>
+wisdom, understanding, science, knowledge rejoice with them.</p>
+
+<p>Barnabas 2:4<br>
+For He hath made manifest to us by all the prophets that He wanteth<br>
+neither sacrifices nor whole burnt offerings nor oblations, saying at<br>
+one time;</p>
+
+<p>Barnabas 2:5<br>
+<I>What to Me is the multitude of your sacrifices, saith the Lord I am<br>
+full of whole burnt-offerings, and the fat of lambs and the blood<br>
+of bulls and of goats desire not, not though ye should come to be<br>
+seen of Me. or who required these things at your hands? Ye shall<br>
+continue no more to tread My court. If ye bring fine flour, it is<br>
+in vain; incense is an abomination to Me; your new moons and your<br>
+Sabbaths I cannot away with.</I></p>
+
+<p>Barnabas 2:6<br>
+These things therefore He annulled, that the new law of our Lord<br>
+Jesus Christ, being free from the yoke of constraint, might have its<br>
+oblation not made by human hands.</p>
+
+<p>Barnabas 2:7<br>
+And He saith again unto them; <I>Did command your fathers when they<br>
+went forth from the land of Egypt to bring Me whole burnt offerings<br>
+and sacrifices?</I></p>
+
+<p>Barnabas 2:8<br>
+<I>Nay, this was My command unto them, Let none of you bear a grudge<br>
+of evil against his neighbor in his heart, and love you not a false<br>
+oath.</I></p>
+
+<p>Barnabas 2:9<br>
+So we ought to perceive, unless we are without understanding, the<br>
+mind of the goodness of our Father; for He speaketh to us, desiring<br>
+us not to go astray like them but to seek how we may approach Him.</p>
+
+<p>Barnabas 2:10<br>
+Thus then speaketh He to us; <I>The sacrifice unto God is a broken<br>
+heart, the smell of a sweet savor unto the Lord is a heart that<br>
+glorifies its Maker.</I> We ought therefore, brethren, to learn<br>
+accurately concerning our salvation, lest the Evil One having<br>
+effected an entrance of error in us should fling us away from our<br>
+life.</p>
+
+<p>Barnabas 3:1<br>
+ He speaketh again therefore to them concerning these things;<br>
+<I>Wherefore fast ye for Me, saith the Lord, so that your voice is<br>
+heard this day crying aloud? This is not the fast which have chosen,<br>
+saith the Lord; not a man abasing his soul;</I></p>
+
+<p>Barnabas 3:2<br>
+<I>not though ye should bend your neck as a hoop, and put on sackcloth<br>
+and make your bed of ashes, not even so shall ye call a fast that is<br>
+acceptable.</I></p>
+
+<p>Barnabas 3:3<br>
+But unto us He saith; <I>Behold, this is the fast which I have chosen,<br>
+saith the Lord; loosen every band of wickedness, untie the<br>
+tightened cords of forcible contracts, send away the broken ones<br>
+released and tear in pieces every unjust bond. Break thy bread to<br>
+the hungry, and if thou seest one naked clothe him; bring the<br>
+shelterless into thy house, and if thou seest a humble man, thou<br>
+shalt not despise him, neither shall any one of thy household and<br>
+of thine own seed.</I></p>
+
+<p>Barnabas 3:4<br>
+<I>Then shall thy light break forth in the morning, and thy healing<br>
+shall arise quickly, and righteousness shall go forth before thy<br>
+face, and the glory of God shall environ thee.<br>
+</I><br>
+Barnabas 3:5<br>
+<I>Then shalt thou cry out and God shall hear thee; while thou art<br>
+still speaking, He shall say 'Lo, I am here'; if thou shalt take<br>
+away from thee the yoke and the stretching forth of the finger and<br>
+the word of murmuring, and shalt give thy bread to the hungry<br>
+heartily, and shalt pity the abased soul.</I></p>
+
+<p>Barnabas 3:6<br>
+To this end therefore, my brethren, He that is long-suffering,<br>
+foreseeing that the people whom He had prepared in His well-beloved<br>
+would believe in simplicity, manifested to us beforehand concerning<br>
+all things, that we might not as novices shipwreck ourselves upon<br>
+their law.</p>
+
+<p>Barnabas 4:1<br>
+ It behooves us therefore to investigate deeply concerning the<br>
+present, and to search out the things which have power to save us.<br>
+Let us therefore flee altogether from all the works of lawlessness,<br>
+lest the works of lawlessness overpower us; and let us loathe the<br>
+error of the present time, that we may be loved for that which is to<br>
+come.</p>
+
+<p>Barnabas 4:2<br>
+Let us give no relaxation to our soul that it should have liberty to<br>
+consort with sinners and wicked men, lest haply we be made like unto<br>
+them.</p>
+
+<p>Barnabas 4:3<br>
+The last offence is at hand, concerning which the scripture speaketh,<br>
+as Enoch saith. <I>For to this end the Master hath cut the seasons and<br>
+the days short, that His beloved might hasten and come to His<br>
+inheritance.</I></p>
+
+<p>Barnabas 4:4<br>
+And the prophet also speaketh on this wise; <I>Ten reigns shall reign<br>
+upon the earth, and after them shall arise another king, who shall<br>
+bring low three of the kings under one.</I></p>
+
+<p>Barnabas 4:5<br>
+In like manner Daniel speaketh concerning the same; <I>And I saw the<br>
+forth beast to be wicked and strong and more intractable than all<br>
+the beasts of the earth, and how there arose from him ten horns,<br>
+and from these a little horn and excrescence, and how that it<br>
+abased under one three of the great horns.</I></p>
+
+<p>Barnabas 4:6<br>
+Ye ought therefore to understand. Moreover I ask you this one thing<br>
+besides, as being one of yourselves and loving you all in particular<br>
+more than my own soul, to give heed to yourselves now, and not to<br>
+liken yourselves to certain persons who pile up sin upon sin, saying<br>
+that our covenant remains to them also.</p>
+
+<p>Barnabas 4:7<br>
+Ours it is; but they lost it in this way for ever, when Moses had<br>
+just received it. For the scripture saith; <I>And Moses was in the<br>
+mountain fasting forty days and forty nights, and he received the<br>
+covenant from the Lord, even tablets of stone written with the<br>
+finger of the hand of the Lord.</I></p>
+
+<p>Barnabas 4:8<br>
+But they lost it by turning unto idols. For thus saith the Lord;<br>
+<I>Moses, Moses, come down quickly; for thy people whom thou<br>
+broughtest out of the land of Egypt hath done unlawfully.</I> And<br>
+Moses understood, and threw the two tables from his hands; and their<br>
+covenant was broken in pieces, that the covenant of the beloved Jesus<br>
+might be sealed unto our hearts in the hope which springeth from<br>
+faith in Him.</p>
+
+<p>Barnabas 4:9<br>
+But though I would fain write many things, not as a teacher, but as<br>
+becometh one who loveth you not to fall short of that which we<br>
+possess, I was anxious to write to you, being your devoted slave.<br>
+Wherefore let us take heed in these last days. For the whole time of<br>
+our faith shall profit us nothing, unless we now, in the season of<br>
+lawlessness and in the offenses that shall be, as becometh sons of<br>
+God, offer resistance, that the Black One may not effect an entrance.</p>
+
+<p>Barnabas 4:10<br>
+Let us flee from all vanity, let us entirely hate the works of the<br>
+evil way. Do not entering in privily stand apart by yourselves, as<br>
+if ye were already justified, but assemble yourselves together and<br>
+consult concerning the common welfare.</p>
+
+<p>Barnabas 4:11<br>
+For the scripture saith; <I>Woe unto them that are wise for<br>
+themselves, and understanding in their own sight.</I> Let us become<br>
+spiritual, let us become a temple perfect unto God. As far as in us<br>
+lies, let us exercise ourselves in the fear of God, [and] let us<br>
+strive to keep His commandments, that we may rejoice in His<br>
+ordinances.</p>
+
+<p>Barnabas 4:12<br>
+The Lord judgeth the world without respect of persons; each man shall<br>
+receive according to his deeds. If he be good, his righteousness<br>
+shall go before him in the way; if he be evil, the recompense of his<br>
+evil-doing is before him; lest perchance,</p>
+
+<p>Barnabas 4:13<br>
+if we relax as men that are called, we should slumber over our sins,<br>
+and the prince of evil receive power against us and thrust us out<br>
+from the kingdom of the Lord.</p>
+
+<p>Barnabas 4:14<br>
+Moreover understand this also, my brothers. When ye see that after<br>
+so many signs and wonders wrought in Israel, even then they were<br>
+abandoned, let us give heed, lest haply we be found, as the scripture<br>
+saith, <I>many are called but few are chosen.</I></p>
+
+<p>Barnabas 5:1<br>
+ For to this end the Lord endured to deliver His flesh unto<br>
+corruption, that by the remission of sins we might be cleansed, which<br>
+cleansing is through the blood of His sprinkling.</p>
+
+<p>Barnabas 5:2<br>
+For the scripture concerning Him containeth some things relating to<br>
+Israel, and some things relating to us. And it speaketh thus; <I>He<br>
+was wounded for your transgressions, and He hath been bruised for<br>
+our sins; by His stripes we were healed. As a sheep He was led to<br>
+slaughter, as a lamb is dumb before his shearer.</I></p>
+
+<p>Barnabas 5:3<br>
+We ought therefore to be very thankful unto the Lord, for that He<br>
+both revealed unto us the past, and made us wise in the present, and<br>
+as regards the future we are not without understanding.</p>
+
+<p>Barnabas 5:4<br>
+Now the scripture saith; <I>Not unjustly is the net spread for the<br>
+birds.</I> He meaneth this that a man shall justly perish, who having<br>
+the knowledge of the way of righteousness forceth himself into the<br>
+way of darkness.</p>
+
+<p>Barnabas 5:5<br>
+There is yet this also, my brethren; if the Lord endured to suffer<br>
+for our souls, though He was Lord of the whole world, unto whom God<br>
+said from the foundation of the world, <I>Let us make man after our<br>
+image and likeness</I>, how then did He endure to suffer at the hand<br>
+of men?</p>
+
+<p>Barnabas 5:6<br>
+Understand ye. The prophets, receiving grace from Him, prophesied<br>
+concerning Him. But He Himself endured that He might destroy death<br>
+and show forth the resurrection of the dead, for that He must needs<br>
+be manifested in the flesh;</p>
+
+<p>Barnabas 5:7<br>
+that at the same time He might redeem the promise made to the<br>
+fathers, and by preparing the new people for Himself might show,<br>
+while He was on earth, that having brought about the resurrection He<br>
+will Himself exercise judgment.</p>
+
+<p>Barnabas 5:8<br>
+Yea and further, He preached teaching Israel and performing so many<br>
+wonders and miracles, and He loved him exceedingly.</p>
+
+<p>Barnabas 5:9<br>
+And when He chose His own apostles who were to proclaim His Gospel,<br>
+who that He might show that <I>He came not to call the righteous but<br>
+sinners</I> were sinners above every sin, then He manifested Himself<br>
+to be the Son of God.</p>
+
+<p>Barnabas 5:10<br>
+For if He had not come in the flesh neither would men have looked<br>
+upon Him and been saved, forasmuch as when they look upon the sun<br>
+that shall cease to be, which is the work of His own hands, they<br>
+cannot face its rays.</p>
+
+<p>Barnabas 5:11<br>
+Therefore the Son of God came in the flesh to this end, that He might<br>
+sum up the complete tale of their sins against those who persecuted<br>
+and slew His prophets.</p>
+
+<p>Barnabas 5:12<br>
+To this end therefore He endured. For God saith of the wounds of His<br>
+flesh that they came from them; <I>When they shall smite their own<br>
+shepherd, then shall the sheep of the flock be lost.</I></p>
+
+<p>Barnabas 5:13<br>
+But He Himself desired so to suffer; for it was necessary for Him to<br>
+suffer on a tree. For he that prophesied said concerning Him, <I>Spare<br>
+My soul form the sword;</I> and, <I>Pierce My flesh with nails, for the<br>
+congregations of evil-doers have risen up against Me.</I></p>
+
+<p>Barnabas 5:14<br>
+And again He saith; <I>Behold I have given My back to stripes, and My<br>
+cheeks to smitings, and My face did I set as a hard rock.</I></p>
+
+<p>Barnabas 6:1<br>
+ When then He gave the commandment, what saith He? <I>Who is he that<br>
+disputeth with Me? Let him oppose Me. Or who is he that goeth to<br>
+law with Me? Let him draw nigh unto the servant of the Lord,</I></p>
+
+<p>Barnabas 6:2<br>
+<I>Woe unto you, for ye all shall wax old as a garment, and the moth<br>
+shall consume you.</I> And again the prophet saith, seeing that as a<br>
+hard stone He was ordained for crushing; <I>Behold I will put into the<br>
+fountains of Zion a stone very precious, elect, a chief<br>
+corner-stone, honorable.</I></p>
+
+<p>Barnabas 6:3<br>
+Then again what saith He; <I>And whosoever shall set his hope on Him,<br>
+shall live forever.</I> Is our hope then set upon a stone? Far be it.<br>
+But it is because the Lord hath set His flesh in strength. For He<br>
+saith; <I>And He set Me as a hard rock.</I></p>
+
+<p>Barnabas 6:4<br>
+And the prophet saith again; <I>The stone which the builders rejected,<br>
+this became the head and the corner.</I> And again He saith; <I>This is<br>
+the great and wonderful day, which the Lord made.</I></p>
+
+<p>Barnabas 6:5<br>
+I write to you the more simply, that ye may understand, I who am the<br>
+offscouring of your love.</p>
+
+<p>Barnabas 6:6<br>
+What then saith the prophet again? <I>The assembly of evildoers<br>
+gathered around Me, they surrounded Me as bees surround a comb</I>;<br>
+and; <I>For My garment they cast a lot.</I></p>
+
+<p>Barnabas 6:7<br>
+Forasmuch then as He was about to be manifested in the flesh and to<br>
+suffer, His suffering was manifested beforehand. For the prophet<br>
+saith concerning Israel; <I>Woe unto their soul, for they have<br>
+counseled evil counsel against themselves saying, Let us bind the<br>
+righteous one, for he is unprofitable for us.</I></p>
+
+<p>Barnabas 6:8<br>
+What sayeth the other prophet Moses unto them? <I>Behold, these things<br>
+saith the Lord God; enter into the good land which the Lord swear<br>
+unto Abraham, Isaac, and Jacob, and inherit it, a land flowing with<br>
+milk and honey.</I></p>
+
+<p>Barnabas 6:9<br>
+But what saith knowledge? Understand ye. Set your hope on Him who<br>
+is about to be manifested to you in the flesh, even Jesus. For man<br>
+is earth suffering; for from the face of the earth came the creation<br>
+of Adam.</p>
+
+<p>Barnabas 6:10<br>
+What then saith He? <I>Into the good land, a land flowing with milk<br>
+and honey.</I> Blessed is our Lord, brethren, who established among us<br>
+wisdom and understanding of His secret things. For the prophet<br>
+speaketh a parable concerning the Lord. Who shall comprehend, save<br>
+he that is wise and prudent and that loveth his Lord?</p>
+
+<p>Barnabas 6:11<br>
+Forasmuch then as He renewed us in the remission of sins, He made us<br>
+to be a new type, so that we should have the soul of children, as if<br>
+He were recreating us.</p>
+
+<p>Barnabas 6:12<br>
+For the scripture saith concerning us, how He saith to the Son; <I>Let<br>
+us make man after our image and after our likeness, and let them<br>
+rule over the beasts of the earth and the fowls of the heaven and<br>
+the fishes of the sea.</I> And the Lord said when He saw the fair<br>
+creation of us men; <I>Increase and multiply and fill the earth.</I><br>
+These words refer to the Son.</p>
+
+<p>Barnabas 6:13<br>
+Again I will shew thee how the Lord speaketh concerning us. He made<br>
+a second creation at the last; and the Lord saith; <I>Behold I make<br>
+the last things as the first.</I> In reference to this then the<br>
+prophet preached; <I>Enter into a land flowing with milk and honey,<br>
+and be lords over it.</I></p>
+
+<p>Barnabas 6:14<br>
+Behold then we have been created anew, as He saith again in another<br>
+prophet; <I>Behold, saith the Lord, I will take out from these</I>, that<br>
+is to say, from those whom the Spirit of the Lord foresaw, <I>their<br>
+stony hearts, and will put into them hearts of flesh;</I> for He<br>
+Himself was to be manifested in the flesh and to dwell in us.</p>
+
+<p>Barnabas 6:15<br>
+For a holy temple unto the Lord, my brethren, is the abode of our<br>
+heart.</p>
+
+<p>Barnabas 6:16<br>
+For the Lord saith again; <I>For wherein shall I appear unto the Lord<br>
+my God and be glorified? I will make confession unto Thee in the<br>
+assembly of my brethren, and I will sing unto Thee in the midst of<br>
+the assembly of the saints.</I> We therefore are they whom He brought<br>
+into the good land.</p>
+
+<p>Barnabas 6:17<br>
+What then is the milk and the honey Because the child is first kept<br>
+alive by honey, and then by milk. So in like manner we also, being<br>
+kept alive by our faith in the promise and by the word, shall live<br>
+and be lords of the earth.</p>
+
+<p>Barnabas 6:18<br>
+Now we have already said above; <I>And let them increase and multiply<br>
+and rule over the fishes.</I> But who is he that is able [now] to rule<br>
+over beasts and fishes and fowls of the heaven; for we ought to<br>
+perceive that to rule implieth power, so that one should give orders<br>
+and have dominion.</p>
+
+<p>Barnabas 6:19<br>
+If then this cometh not to pass now, assuredly He spake to us for the<br>
+hereafter, when we ourselves shall be made perfect so that we may<br>
+become heirs of the covenant of the Lord.</p>
+
+<p>Barnabas 7:1<br>
+ Understand therefore, children of gladness, that the good Lord<br>
+manifested all things to us beforehand, that we might know to whom we<br>
+ought in all things to render thanksgiving and praise.</p>
+
+<p>Barnabas 7:2<br>
+If then the Son of God, being Lord and future Judge of quick and<br>
+dead, suffered that His wound might give us life, let us believe that<br>
+the Son of God could not suffer except for our sakes.</p>
+
+<p>Barnabas 7:3<br>
+But moreover when crucified He had vinegar and gall given Him to<br>
+drink. Hear how on this matter the priests of the temple have<br>
+revealed. Seeing that there is a commandment in scripture,<br>
+<I>Whatsoever shall not observe the fast shall surely die,</I> the Lord<br>
+commanded, because He was in His own person about to offer the vessel<br>
+of His Spirit a sacrifice for our sins, that the type also which was<br>
+given in Isaac who was offered upon the alter should be fulfilled.</p>
+
+<p>Barnabas 7:4<br>
+What then saith He in the prophet? <I>And let them eat of the goat<br>
+that is offered at the fast for all their sins.</I> Attend carefully;<br>
+<I>And let all the priests alone eat the entrails unwashed with<br>
+vinegar.</I></p>
+
+<p>Barnabas 7:5<br>
+Wherefore? Since ye are to give Me, who am to offer My flesh for the<br>
+sins of My new people, gall with vinegar to drink, eat ye alone,<br>
+while the people fasteth and waileth in sackcloth and ashes; that He<br>
+might shew that He must suffer at their hands.</I></p>
+
+<p>Barnabas 7:6<br>
+Attend ye to the commandments which He gave. <I>Take two goats, fair<br>
+and alike, and offer them, and let the priest take the one for a<br>
+whole burnt offering for sins.</I></p>
+
+<p>Barnabas 7:7<br>
+But the other one--what must they do with it? <I>Accursed,</I> saith He,<br>
+<I>is the one.</I> Give heed how the type of Jesus is revealed.</p>
+
+<p>Barnabas 7:8<br>
+<I>And do ye all spit upon it and goad it, and place scarlet wool<br>
+about its head, and so let it be cast into the wilderness.</I> And<br>
+when it is so done, he that taketh the goat into the wilderness<br>
+leadeth it, and taketh off the wool, and putteth it upon the branch<br>
+which is called Rachia, the same whereof we are wont to eat the<br>
+shoots when we find them in the country. Of this briar alone is the<br>
+fruit thus sweet.</p>
+
+<p>Barnabas 7:9<br>
+What then meaneth this? Give heed. <I>The one at the alter, and the<br>
+other accursed.</I> And moreover the accursed one crowned. For they<br>
+shall see Him in that day wearing the long scarlet robe about His<br>
+flesh, and shall say, Is not this He, Whom once we crucified and set<br>
+at nought and spat upon; verily this was He, Who then said that He<br>
+was the Son of God.</p>
+
+<p>Barnabas 7:10<br>
+For how is He like the goat? For this reason it says <I>the goats<br>
+shall be fair and alike,</I> that, when they shall see Him coming<br>
+then, they may be astonished at the likeness of the goat. Therefore<br>
+behold the type of Jesus that was to suffer.</p>
+
+<p>Barnabas 7:11<br>
+But what meaneth it, that they place the wool in the midst of the<br>
+thorns? It is a type of Jesus set forth for the Church, since<br>
+whosoever should desire to take away the scarlet wool it behoved him<br>
+to suffer many things owing to the terrible nature of the thorn, and<br>
+through affliction to win the mastery over it. Thus, He saith, they<br>
+that desire to see Me, and to attain unto My kingdom, must lay hold<br>
+on Me through tribulation and affliction.</p>
+
+<p>Barnabas 8:1<br>
+ But what think ye meaneth the type, where the commandment is given<br>
+to Israel that those men, whose sins are full grown, offer an heifer<br>
+and slaughter and burn it, and then that the children take up the<br>
+ashes, and cast them into vessels, and twist the scarlet wool on a<br>
+tree (see here again is the type of the cross and the scarlet wool),<br>
+and the hyssop, and that this done the children should sprinkle the<br>
+people one by one, that they may be purified from their sins?</p>
+
+<p>Barnabas 8:2<br>
+Understand ye how in all plainness it is spoken unto you; the calf is<br>
+Jesus, the men that offer it, being sinners, are they that offered<br>
+Him for the slaughter. After this it is no more men (who offer); the<br>
+glory is no more for sinners.</p>
+
+<p>Barnabas 8:3<br>
+The children who sprinkle are they that preached unto us the<br>
+forgiveness of sins and the purification of our heart, they to whom,<br>
+being twelve in number for a testimony unto the tribes (for there are<br>
+twelve tribes of Israel), He gave authority over the Gospel, that<br>
+they should preach it.</p>
+
+<p>Barnabas 8:4<br>
+But wherefore are the children that sprinkle three in number? For a<br>
+testimony unto Abraham, Isaac and Jacob, because these are mighty<br>
+before God.</p>
+
+<p>Barnabas 8:5<br>
+Then there is the placing the wool on the tree. This means that the<br>
+kingdom of Jesus is on the cross, and that they who set their hope on<br>
+Him shall live for ever.</p>
+
+<p>Barnabas 8:6<br>
+And why is there the wool and the hyssop at the same time? Because<br>
+in His kingdom there shall be evil and foul days, in which we shall<br>
+be saved; for he who suffers pain in the flesh is healed through the<br>
+foulness of the hyssop.</p>
+
+<p>Barnabas 8:7<br>
+Now to us indeed it is manifest that these things so befell for this<br>
+reason, but to them they were dark, because they heard not the voice<br>
+of the Lord.</p>
+
+<p>Barnabas 9:1<br>
+ Furthermore He saith concerning the ears, how that it is our heart<br>
+which He circumcised. The Lord saith in the prophet; <I>With the<br>
+hearing of the ears they listened to Me.</I> And again He saith;<br>
+They that are afar off shall hear with their ears, and shall<br>
+perceive what I have done.</I> And; <I>Be ye circumcised in your<br>
+hearts,</I> saith the Lord.</p>
+
+<p>Barnabas 9:2<br>
+And again He saith; <I>Hear, O Israel, for thus saith the Lord thy<br>
+God. Who is he that desireth to live forever, let him hear with his<br>
+ears the voice of My servant.</I><br>
+ ~y<br>
+And again He saith; <I>Hear, O heaven, and give ear, O earth, for the <br>
+Lord hath spoken these things for a testimony.</I> And again He saith;<br>
+Hear the words of the Lord, ye rulers of this people.</I> And again He<br>
+saith; <I>Hear, O my children, the voice of one crying in the<br>
+wilderness.</I> Therefore He circumcised our ears, that hearing the<br>
+word we might believe.</p>
+
+<p>Barnabas 9:3<br>
+But moreover the circumcision, in which they have confidence, is<br>
+abolished; for He hath said that a circumcision not of the flesh<br>
+should be practiced. But they transgressed, for an evil angel taught<br>
+them cleverness.</p>
+
+<p>Barnabas 9:4<br>
+He saith unto them; <I>Thus saith the Lord your God</I> (so I find the<br>
+commandment); <I>sow not upon thorns, be ye circumcised in to your<br>
+Lord.</I> And what saith He? <I>Be ye circumcised in the hardness of<br>
+your heart; and then ye will not harden your neck.</I> Take this<br>
+again; <I>Behold, sayith the Lord, all the Gentiles are uncircumcised<br>
+in their foreskin, but this people is uncircumcised in their <br>
+hearts.</I></p>
+
+<p>Barnabas 9:5<br>
+But thou wilt say; In truth the people hath been circumcised for a<br>
+seal. Nay, but so likewise is every Syrian and Arabian and all the<br>
+priests of the idols. Do all those then too belong to their<br>
+covenant? Moreover the Egyptians also are included among the<br>
+circumcised.</p>
+
+<p>Barnabas 9:6<br>
+Learn therefore, children of love, concerning all things abundantly,<br>
+that Abraham, who first appointed circumcision, looked forward in the<br>
+spirit unto Jesus, when he circumcised having received the ordinances<br>
+of three letters.</p>
+
+<p>Barnabas 9:7<br>
+For the scripture saith; <I>And Abraham circumcised of his household<br>
+eighteen males and three hundred.</I> What then was the knowledge<br>
+given unto him? Understand ye that He saith <I>the eighteen</I> first,<br>
+and then after an interval <I>three hundred</I> In the eighteen 'I'<br>
+stands for ten, 'H' for eight. Here thou hast JESUS (IHSOYS). And<br>
+because the cross in the 'T' was to have grace, He saith also <I>three<br>
+hundred</I>. So He revealeth Jesus in the two letters, and in the<br>
+remaining one the cross.</p>
+
+<p>Barnabas 9:8<br>
+He who placed within us the innate gift of His covenant knoweth; no<br>
+man hath ever learnt from me a more genuine word; but I know that ye<br>
+are worthy.</p>
+
+<p>Barnabas 10:1<br>
+ But forasmuch as Moses said; <I>Ye shall not eat seine nor eagle nor<br>
+falcon nor crow nor any fish which hath no scale upon it</I>, he<br>
+received in his understanding three ordinances.</p>
+
+<p>Barnabas 10:2<br>
+Yea and further He saith unto them in Deuteronomy; <I>And I will lay<br>
+as a covenant upon this people My ordinances.</I> So then it is not a<br>
+commandment of God that they should not bite with their teeth, but<br>
+Moses spake it in spirit.</p>
+
+<p>Barnabas 10:3<br>
+Accordingly he mentioned the swine with this intent. Thou shalt not<br>
+cleave, saith he, to such men who are like unto swine; that is, when<br>
+they are in luxury they forget the Lord, but when they are in want<br>
+they recognize the Lord, just as the swine when it eateth knoweth not<br>
+his lord, but when it is hungry it crieth out, and when it has<br>
+received food again it is silent.</p>
+
+<p>Barnabas 10:4<br>
+<I>Neither shalt thou eat eagle nor falcon nor kite nor crow. Thou<br>
+shalt not, He saith, cleave unto, or be likened to, such men who now<br>
+not how to provide food for themselves by toil and sweat, but in<br>
+their lawlessness seize what belongeth to others, and as if they were<br>
+walking in guilelessness watch and search about for some one to rob<br>
+in their rapacity, just as these birds alone do not provide food for<br>
+themselves, but sit idle and seek how they may eat the meat that<br>
+belongeth to others, being pestilent in their evil-doings.</I></p>
+
+<p>Barnabas 10:5<br>
+<I>And thou shalt not eat,</I> saith He, <I>lamprey nor polypus nor cuttle<br>
+fish</I> . Thou shalt not, He meaneth, become like unto such men, who<br>
+are desperately wicked, and are already condemned to death, just as<br>
+these fishes alone are accursed and swim in the depths, not swimming<br>
+on the surface like the rest, but dwell on the ground beneath the<br>
+deep sea.</p>
+
+<p>Barnabas 10:6<br>
+<I>Moreover thou shalt not eat the hare.</I> Why so? Thou shalt not be<br>
+found a corrupter of boys, nor shalt thou become like such persons;<br>
+for the hare gaineth one passage in the body every year; for<br>
+according to the number of years it lives it has just so many<br>
+orifices.</p>
+
+<p>Barnabas 10:7<br>
+Again, <I>neither shalt thou eat the hyena;</I> thou shalt not, saith He,<br>
+become an adulterer or a fornicator, neither shalt thou resemble such<br>
+persons. Why so? Because this animal changeth its nature year by<br>
+year, and becometh at one time male and at another female.</p>
+
+<p>Barnabas 10:8<br>
+Moreover He hath hated the weasel also and with good reason. Thou<br>
+shalt not, saith He, become such as those men of whom we hear as<br>
+working iniquity with their mouth for uncleanness, neither shalt thou<br>
+cleave unto impure women who work iniquity with their mouth. For<br>
+this animal conceiveth with its mouth.</p>
+
+<p>Barnabas 10:9<br>
+Concerning meats then Moses received three decrees to this effect and<br>
+uttered them in a spiritual sense; but they accepted them according<br>
+to the lust of the flesh, as though they referred to eating.</p>
+
+<p>Barnabas 10:10<br>
+And David also receiveth knowledge of the same three decrees, and<br>
+saith; <I>Blessed is the man who hath not gone in the council of the<br>
+ungodly</I>--even as the fishes go in darkness into the depths; <I>and<br>
+hath not stood in the path of sinners</I>--just as they who pretend to<br>
+fear the Lord sin like swine; <I>and hath not sat on the seat of the<br>
+destroyers</I>--as the birds that are seated for prey. Ye have now the<br>
+complete lesson concerning eating.</p>
+
+<p>Barnabas 10:11<br>
+Again Moses saith; <I>Ye shall everything that divideth the hoof and<br>
+cheweth the cud.</I> What meaneth he? He that receiveth the food<br>
+knoweth Him that giveth him the food, and being refreshed appeareth<br>
+to rejoice in him. Well said he, having regard to the commandment.<br>
+What then meaneth he? Cleave unto those that fear the Lord, with<br>
+those who meditate in their heart on the distinction of the word<br>
+which they have received, with those who tell of the ordinances of<br>
+the Lord and keep them, with those who know that meditation is a work<br>
+of gladness and who chew the cud of the word of the Lord. But why<br>
+that which divideth the hoof? Because the righteous man both walketh<br>
+in this world, and at the same time looketh for the holy world to<br>
+come. Ye see how wise a lawgiver Moses was.</p>
+
+<p>Barnabas 10:12<br>
+But whence should they perceive or understand these things? Howbeit<br>
+we having justly perceived the commandments tell them as the Lord<br>
+willed. To this end He circumcised our ears and hearts, that we<br>
+might understand these things.</p>
+
+<p>Barnabas 11:1<br>
+ But let us enquire whether the Lord took care to signify before hand<br>
+concerning the water and the cross. Now concerning the water it is<br>
+written in reference to Israel, how that they would not receive the<br>
+baptism which bringeth remission of sins, but would build for<br>
+themselves.</p>
+
+<p>Barnabas 11:2<br>
+For the prophet saith; <I>Be astonished, O heaven, and let the earth<br>
+shudder the more at this, for this people hath done two evil<br>
+things; they abandoned Me the fountain of life, and they digged for<br>
+themselves a pit of death.</I></p>
+
+<p>Barnabas 11:3<br>
+<I>Is My holy mountain of Sinai a desert rock? for ye shall be as the<br>
+fledglings of a bird, which flutter aloft when deprived of their<br>
+nest.</I></p>
+
+<p>Barnabas 11:4<br>
+And again the prophet saith; <I>I will go before thee, and level<br>
+mountains and crush gates of brass and break in pieces bolts of<br>
+iron, and I will give thee treasures dark, concealed, unseen, that<br>
+they may know that I am the Lord God.</I></p>
+
+<p>Barnabas 11:5<br>
+And; <I>Thou shalt dwell in a lofty cave of a strong rock.</I> And; <I>His<br>
+water shall be sure; ye shall see the King in glory, and your soul<br>
+shall meditate on the fear of the Lord.</I></p>
+
+<p>Barnabas 11:6<br>
+And again He saith in another prophet; <I>And He that doeth these<br>
+things shall be as the tree that is planted by the parting streams<br>
+of waters, which shall yield his fruit at his proper season, and<br>
+his leaf shall not fall off, and all things whatsoever he doeth<br>
+shall prosper.</I></p>
+
+<p>Barnabas 11:7<br>
+<I>Not so are the ungodly, not so, but are as the dust which the wind<br>
+scattereth from the face of the earth. Therefore ungodly men shall<br>
+not stand in judgment, neither sinners in the council of the<br>
+righteous; for the Lord knoweth the way of the righteous, and the<br>
+way of the ungodly shall perish.</I></p>
+
+<p>Barnabas 11:8<br>
+Ye perceive how He pointed out the water and the cross at the same<br>
+time. For this is the meaning; Blessed are they that set their hope<br>
+on the cross, and go down into the water; for He speaketh of the<br>
+reward at <I>his proper season</I>; then, saith He, I will repay. But now<br>
+what saith He? <I>His leaves shall not fall off</I>; He meaneth by this<br>
+that every word, which shall come forth from you through your mouth<br>
+in faith and love, shall be for the conversion and hope of many.</p>
+
+<p>Barnabas 11:9<br>
+And again another prophet saith; <I>And the land of Jacob was praised<br>
+above the whole earth.</I> He meaneth this; He glorifieth the vessel<br>
+of His Spirit.</p>
+
+<p>Barnabas 11:10<br>
+Next what saith He? <I>And there was a river streaming from the right<br>
+hand, and beautiful trees rose up from it; and whosoever shall eat<br>
+of them shall live forever.</I></p>
+
+<p>Barnabas 11:11<br>
+This He saith, because we go down into the water laden with sins and<br>
+filth, and rise up from it bearing fruit in the heart, resting our<br>
+fear and hope on Jesus in the spirit. <I>And whosoever shall eat of<br>
+these shall live forever</I>; He meaneth this; whosoever, saith He,<br>
+shall hear these things spoken and shall believe, shall live forever.</p>
+
+<p>Barnabas 12:1<br>
+ In like manner again He defineth concerning the cross in another<br>
+prophet, who saith; <I>And when shall these things be accomplished?<br>
+saith the Lord. Whenever a tree shall be bended and stand upright,<br>
+and whensoever blood shall drop from a tree.</I> Again thou art taught<br>
+concerning the cross, and Him that was to be crucified.</p>
+
+<p>Barnabas 12:2<br>
+And He saith again in Moses, when war was waged against Israel by men<br>
+of another nation, and that He might remind them when the war was<br>
+waged against them that for their sins they were delivered unto<br>
+death; the Spirit saith to the heart of Moses, that he should make a<br>
+type of the cross and of Him that was to suffer, that unless, saith<br>
+He, they shall set their hope on Him, war shall be waged against them<br>
+for ever. Moses therefore pileth arms one upon another in the midst<br>
+of the encounter, and standing on higher ground than any he stretched<br>
+out his hands, and so Israel was again victorious. Then, whenever he<br>
+lowered them, they were slain with the sword.</p>
+
+<p>Barnabas 12:3<br>
+Wherefore was this? That they might learn that they cannot be saved,<br>
+unless they should set their hope on Him.</p>
+
+<p>Barnabas 12:4<br>
+And again in another prophet He saith; <I>The whole day long have I<br>
+stretched out My hands to a disobedient people that did gainsay My<br>
+righteous way.</I></p>
+
+<p>Barnabas 12:5<br>
+Again Moses maketh a type of Jesus, how that He must suffer, and that<br>
+He Himself whom they shall think to have destroyed shall make alive<br>
+in an emblem when Israel was falling. For the Lord caused all manner<br>
+of serpents to bite them, and they died (forasmuch as the<br>
+transgression was wrought in Eve through the serpent), that He might<br>
+convince them that by reason of their transgression they should be<br>
+delivered over to the affliction of death.</p>
+
+<p>Barnabas 12:6<br>
+Yea and further though Moses gave the commandment; <I>Ye shall not<br>
+have a molten or a carved image for your God</I>, yet he himself made<br>
+one that he might show them a type of Jesus. So Moses maketh a brazen<br>
+serpent, and setteth it up conspicuously, and summoneth the people by<br>
+proclamation.</p>
+
+<p>Barnabas 12:7<br>
+When therefore they were assembled together they entreated Moses that<br>
+he should offer up intercession for them that they might be healed.<br>
+And Moses said unto them; Whensoever, said he, one of you shall be<br>
+bitten, let him come to the serpent which is placed on the tree, and<br>
+let him believe and hope that the serpent being himself dead can make<br>
+alive; and forthwith he shall be saved. And so they did. Here again<br>
+thou hast in these things also the glory of Jesus, how that in Him<br>
+and unto Him are all things.</p>
+
+<p>Barnabas 12:8<br>
+What again saith Moses unto Jesus (Joshua) the son of Nun, when he<br>
+giveth him this name, as being a prophet, that all the people might<br>
+give ear to him alone, because the Father revealeth all things<br>
+concerning His Son Jesus?</p>
+
+<p>Barnabas 12:9<br>
+Moses therefore saith to Jesus the son of Nun, giving him this name,<br>
+when he sent him as a spy on the land; <I>Take a book in thy hands,<br>
+and write what the Lord saith, how the Son of God shall cut up by<br>
+the roots all the house of Amalek in the last days.</I></p>
+
+<p>Barnabas 12:10<br>
+Behold again it is Jesus, not a son of man, but the Son of God, and<br>
+He was revealed in the flesh in a figure. Since then men will say<br>
+that Christ is the son of David, David himself prophesieth being<br>
+afraid and understanding the error of sinners; <I>The Lord said unto<br>
+my Lord, Sit thou on My right hand until I set thine enemies for a<br>
+footstool under Thy feet.</I></p>
+
+<p>Barnabas 12:11<br>
+And again thus sayith Isaiah; <I>The Lord said unto my Christ the<br>
+Lord, of whose right hand I laid hold, that the nations should give<br>
+ear before Him, and I will break down the strength of kings.</I> See<br>
+how David calleth Him Lord, and calleth Him not Son.</p>
+
+<p>Barnabas 13:1<br>
+ Now let us see whether this people or the first people hath the<br>
+inheritance, and whether the covenant had reference to us or to them.</p>
+
+<p>Barnabas 13:2<br>
+Hear then what the scripture saith concerning the people; <I>And Isaac<br>
+prayed concerning Rebecca his wife, for she was barren. And she<br>
+conceived. Then Rebecca went out to enquire of the Lord. And the<br>
+Lord said unto her; Two nations are in thy womb, and two peoples in<br>
+thy belly, and one people shall vanquish another people, and the<br>
+greater shall serve the less.</I></p>
+
+<p>Barnabas 13:3<br>
+Ye ought to understand who Isaac is, and who Rebecca is, and in whose<br>
+case He hath shown that the one people is greater than the other.</p>
+
+<p>Barnabas 13:4<br>
+And in another prophecy Jacob speaketh more plainly to Joseph his<br>
+son, saying; <I>Behold, the Lord hath not bereft me of thy face; bring<br>
+me thy sons, that I may bless them.</I></p>
+
+<p>Barnabas 13:5<br>
+And he brought Ephraim and Manasseh, desiring that Manasseh should be<br>
+blessed, because he was the elder; for Joseph led him by the right<br>
+hand of his father Jacob. But Jacob saw in the spirit a type of the<br>
+people that should come afterwards. And what saith He? <I>And Jacob<br>
+crossed his hands, and placed his right hand on the head of<br>
+Ephraim, the second and younger, and blessed him. And Joseph said<br>
+unto Jacob, Transfer thy right hand to the head of Manasseh, for he<br>
+is my first born son. And Jacob said to Joseph, I know it, my son,<br>
+I know it; but the greater shall serve the less. Yet this one also<br>
+shall be blessed.</I></p>
+
+<p>Barnabas 13:6<br>
+Mark in whose cases He ordained that this people should be first and<br>
+heir of the covenant.</p>
+
+<p>Barnabas 13:7<br>
+If then besides this He also recorded it through Abraham, we attain<br>
+the completion of our knowledge. What then saith he to Abraham when<br>
+he alone believed, and was ascribed for righteousness? <I>Behold I<br>
+have made thee, Abraham, a father of nations that believe in God in<br>
+uncircumcision.</I></p>
+
+<p>Barnabas 14:1<br>
+ Yea verily, but as regards the covenant which He swear to the<br>
+fathers to give it to the people let us see whether He hath actually<br>
+given it. He hath given it, but they themselves were not found worthy<br>
+to receive it by reason of their sins.</p>
+
+<p>Barnabas 14:2<br>
+For the prophet saith; <I>And Moses was fasting in Mount Sinai forty<br>
+days and forty nights, that he might receive the covenant of the<br>
+Lord to give to the people. And [Moses] received from the Lord the<br>
+two tables which were written by the finger of the hand of the Lord<br>
+in the spirit.</I> And Moses took them, and brought them down to give<br>
+them to the people.</p>
+
+<p>Barnabas 14:3<br>
+And the Lord said unto Moses; <I>Moses, Moses, come down quickly; for<br>
+thy people, whom thou leddest forth from the land of Egypt, hath<br>
+done wickedly. And Moses perceived that they had made for<br>
+themselves again molten images, and he cast them out of his hands<br>
+and the tables of the covenant of the Lord were broken in pieces.</I></p>
+
+<p>Barnabas 14:4<br>
+Moses received them, but they themselves were not found worthy. But<br>
+how did we receive them? Mark this. Moses received them being a<br>
+servant, but the Lord himself gave them to us to be the people of His<br>
+inheritance, having endured patiently for our sakes.</p>
+
+<p>Barnabas 14:5<br>
+But He was made manifest, in order that at the same time they might<br>
+be perfected in their sins, and we might receive the covenant through<br>
+Him who inherited it, even the Lord Jesus, who was prepared<br>
+beforehand hereunto, that appearing in person He might redeem out of<br>
+darkness our hearts which had already been paid over unto death and<br>
+delivered up to the iniquity of error, and thus establish the<br>
+covenant in us through the word.</p>
+
+<p>Barnabas 14:6<br>
+For it is written how the Father chargeth Him to deliver us from<br>
+darkness, and to prepare a holy people for Himself.</p>
+
+<p>Barnabas 14:7<br>
+Therefore saith the prophet; <I>I the Lord thy God called thee in<br>
+righteousness, and I will lay hold of thy hand and will strengthen<br>
+thee, and I have given thee to be a covenant of the race, a light<br>
+to the Gentiles, to open the eyes of the blind, and to bring forth<br>
+them that are bound from their fetters, and them that sit in<br>
+darkness from their prison house.</I> We perceive then whence we were<br>
+ransomed.</p>
+
+<p>Barnabas 14:8<br>
+Again the prophet saith; <I>Behold I have set Thee to be a light unto<br>
+the Gentiles, that Thou shouldest be for salvation unto the ends of<br>
+the earth; thus saith the Lord that ransomed thee, even God.</I></p>
+
+<p>Barnabas 14:9<br>
+Again the prophet saith; <I>The Spirit of the Lord is upon Me,<br>
+wherefore He anointed Me to preach good tidings to the humble; He<br>
+hath sent Me to heal them that are broken-hearted, to preach<br>
+release to the captives and recovery of sight to the blind, to<br>
+proclaim the acceptable year of the Lord and the day of recompense,<br>
+to comfort all that mourn.</I></p>
+
+<p>Barnabas 15:1<br>
+ Moreover concerning the Sabbath likewise it is written in the Ten<br>
+Words, in which He spake to Moses face to face on Mount Sinai; <I>And<br>
+ye shall hallow the Sabbath of the Lord with pure hands and with a<br>
+pure heart.</I></p>
+
+<p>Barnabas 15:2<br>
+And in another place He saith; <I>If my sons observe the Sabbath then<br>
+I will bestow My mercy upon them.</I></p>
+
+<p>Barnabas 15:3<br>
+Of the Sabbath He speaketh in the beginning of the creation; <I>And<br>
+God made the works of His hands in six days, and He ended on the<br>
+seventh day, and rested on it, and He hallowed it.</I></p>
+
+<p>Barnabas 15:4<br>
+Give heed, children, what this meaneth; <I>He ended in six days.</I> He<br>
+meaneth this, that in six thousand years the Lord shall bring all<br>
+things to an end; for the day with Him signifyeth a thousand years;<br>
+and this He himself beareth me witness, saying; <I>Behold, the day of<br>
+the Lord shall be as a thousand years.</I> Therefore, children, in six<br>
+days, that is in six thousand years, everything shall come to an end.</p>
+
+<p>
+Barnabas 15:5<br>
+<I>And He rested on the seventh day.</I> this He meaneth; when His Son<br>
+shall come, and shall abolish the time of the Lawless One, and shall<br>
+judge the ungodly, and shall change the sun and the moon and the<br>
+stars, then shall he truly rest on the seventh day.</p>
+
+<p>Barnabas 15:6<br>
+Yea and furthermore He saith; <I>Thou shalt hallow it with pure hands<br>
+and with a pure heart.</I> If therefore a man is able now to hallow<br>
+the day which God hallowed, though he be pure in heart, we have gone<br>
+utterly astray.</p>
+
+<p>Barnabas 15:7<br>
+But if after all then and not till then shall we truly rest and<br>
+hallow it, when we shall ourselves be able to do so after being<br>
+justified and receiving the promise, when iniquity is no more and all<br>
+things have been made new by the Lord, we shall be able to hallow it<br>
+then, because we ourselves shall have been hallowed first.</p>
+
+<p>Barnabas 15:8<br>
+Finally He saith to them; <I>Your new moons and your Sabbaths I cannot<br>
+away with.</I> Ye see what is His meaning ; it is not your present<br>
+Sabbaths that are acceptable [unto Me], but the Sabbath which I have<br>
+made, in the which, when I have set all things at rest, I will make<br>
+the beginning of the eighth day which is the beginning of another<br>
+world.</p>
+
+<p>Barnabas 15:9<br>
+Wherefore also we keep the eighth day for rejoicing, in the which<br>
+also Jesus rose from the dead, and having been manifested ascended<br>
+into the heavens.</p>
+
+<p>Barnabas 16:1<br>
+ Moreover I will tell you likewise concerning the temple, how these<br>
+wretched men being led astray set their hope on the building, and not<br>
+on their God that made them, as being a house of God.</p>
+
+<p>Barnabas 16:2<br>
+For like the Gentiles almost they consecrated Him in the temple. But<br>
+what saith the Lord abolishing the temple? Learn ye. <I>Who hath<br>
+measured the heaven with a span, or hath measured the earth with<br>
+his hand? Have not I, saith the Lord? The heaven is My throne and<br>
+the earth the footstool of My feet. What manner of house will ye<br>
+build for Me? Or what shall be my resting place?</I> Ye perceive that<br>
+their hope is vain.</p>
+
+<p>Barnabas 16:3<br>
+Furthermore He saith again; <I>Behold they that pulled down this<br>
+temple themselves shall build it.</I></p>
+
+<p>Barnabas 16:4<br>
+So it cometh to pass; for because they went to war it was pulled down<br>
+by their enemies. Now also the very servants of their enemies shall<br>
+build it up.</p>
+
+<p>Barnabas 16:5<br>
+Again, it was revealed how the city and the temple and the people of<br>
+Israel should be betrayed. For the scripture saith; <I>And it shall be<br>
+in the last days, that the Lord shall deliver up the sheep of the<br>
+pasture and the fold and the tower thereof to destruction.</I> And it<br>
+came to pass as the Lord spake.</p>
+
+<p>Barnabas 16:6<br>
+But let us enquire whether there be any temple of God. There is; in<br>
+the place where he himself undertakes to make and finish it. For it<br>
+is written <I>And it shall come to pass, when the week is being<br>
+accomplished, the temple of God shall be built gloriously in the<br>
+name of the Lord.</I></p>
+
+<p>Barnabas 16:7<br>
+I find then that there is a temple, How then shall it be built in<br>
+the name of the Lord? Understand ye. Before we believed on God, the<br>
+abode of our heart was corrupt and weak, a temple truly built by<br>
+hands; for it was full of idolatry and was a house of demons, because<br>
+we did whatsoever was contrary to God.</p>
+
+<p>Barnabas 16:8<br>
+<I>But it shall be built in the name of the Lord.</I> Give heed then that<br>
+the temple of the Lord may be built gloriously.</p>
+
+<p>Barnabas 16:9<br>
+How? Understand ye. By receiving the remission of our sins and<br>
+hoping on the Name we became new, created afresh from the beginning.<br>
+Wherefore God dwelleth truly in our habitation within us. How? The<br>
+word of his faith, the calling of his promise, the wisdom of the<br>
+ordinances, the commandments of the teaching, He Himself prophesying<br>
+in us, He Himself dwelling in us, opening for us who had been in<br>
+bondage unto death the door of the temple, which is the mouth, and<br>
+giving us repentance leadeth us to the incorruptible temple.</p>
+
+<p>Barnabas 16:10<br>
+For he that desireth to be saved looketh not to the man, but to Him<br>
+that dwelleth and speaketh in him, being amazed at this that he has<br>
+never at any time heard these words from the mouth of the speaker,<br>
+nor himself ever desired to hear them. This is the spiritual temple<br>
+built up to the Lord.</p>
+
+<p>Barnabas 17:1<br>
+ So far as it was possible with all simplicity to declare it unto<br>
+you, my soul hopeth that I have not omitted anything [of the matters<br>
+pertaining unto salvation and so failed in my desire].</p>
+
+<p>Barnabas 17:2<br>
+For if I should write to you concerning things immediate or future,<br>
+ye would not understand them, because they are put in parables. So<br>
+much then for this.</p>
+
+<p>Barnabas 18:1<br>
+ But let us pass on to another lesson and teaching. There are two<br>
+ways of teaching and of power, the one of light and the other of<br>
+darkness; and there is a great difference between the two ways. For<br>
+on the one are stationed the light giving angels of God, on the other<br>
+the angels of Satan.</p>
+
+<p>Barnabas 18:2<br>
+And the one is the Lord from all eternity and unto all eternity,<br>
+whereas the other is Lord of the season of iniquity that now is.</p>
+
+<p>Barnabas 19:1<br>
+ This then is the way of light, if anyone desiring to travel on the<br>
+way to his appointed place would be zealous in his works. The<br>
+knowledge then which is given to us whereby we may walk therein is as<br>
+follows.</p>
+
+<p>Barnabas 19:2<br>
+Thou shalt love Him that made thee, thou shalt fear Him that created<br>
+thee, thou shalt glorify Him that redeemed thee from death; thou<br>
+shalt be simple in heart and rich in spirit; thou shalt not cleave to<br>
+those who walk the way of death; thou shalt hate everything that is<br>
+not pleasing to God; thou shalt hate all hypocrisy; thou shalt never<br>
+forsake the commandments of the Lord.</p>
+
+<p>Barnabas 19:3<br>
+Thou shalt not exalt thyself, but shalt be lowly minded in all<br>
+things. Thou shalt not assume glory to thyself. Thou shalt not<br>
+entertain a wicked design against thy neighbor; thou shalt not admit<br>
+boldness into thy soul.</p>
+
+<p>Barnabas 19:4<br>
+Thou shalt not commit fornication, <I>thou shalt not commit <br>
+adultery</I>, thou shalt not corrupt boys. The word of God shall not<br>
+come forth from thee where any are unclean. Thou shalt not make a<br>
+difference in a person to reprove him for a transgression. Thou shalt<br>
+be meek, thou shalt be <I>quiet</I>, thou shalt be <I>fearing the words</I><br>
+which thou hast heard. Thou shalt not bear a grudge against thy<br>
+brother.</p>
+
+<p>Barnabas 19:5<br>
+Thou shalt not doubt whether a thing shall be or not be. <I>Thou shalt<br>
+not take the name of the Lord in vain.</I> Thou shalt love thy<br>
+neighbor more than thine own soul. Thou shalt not murder a child by<br>
+abortion, nor again shalt thou kill it when it is born. Thou shalt<br>
+not withhold thy hand from thy son or daughter, but from their youth<br>
+thou shalt teach them the fear of God.</p>
+
+<p>Barnabas 19:6<br>
+Thou shalt not be found coveting thy neighbors goods; thou shalt not<br>
+be found greedy of gain. Neither shalt thou cleave with thy soul to<br>
+the lofty, but shalt walk with the humble and righteous. The<br>
+accidents that befall thee thou shalt receive as good, knowing that<br>
+nothing is done without God. Thou shalt not be double minded nor<br>
+double tongued.</p>
+
+<p>Barnabas 19:7<br>
+Thou shalt be subject unto thy masters as to a type of God in shame<br>
+and fear. Thou shalt not command in bitterness thy bondservant or<br>
+thine handmaid who set their hope on the same God, lest haply, they<br>
+should cease to fear the God who is over both of you; for He came not<br>
+to call with respect of persons, but to call those whom the Spirit<br>
+hath prepared.</p>
+
+<p>Barnabas 19:8<br>
+Thou shalt make thy neighbor partake in all things, and shalt not say<br>
+<I>that anything is thine own.</I> For if ye are fellow partakers in that<br>
+which is imperishable, how much rather shall ye be in the things<br>
+which are perishable. Thou shalt not be hasty with thine own tongue,<br>
+for the mouth is the snare of death. So far as thou art able, thou<br>
+shalt be pure for thy soul's sake.</p>
+
+<p>Barnabas 19:9<br>
+<I>Be not thou found holding out thy hands to receive, and drawing<br>
+them in to give.</I> Thou shalt love as the apple of thine eye every<br>
+one <I>that speaketh unto thee the word of the Lord.<br>
+</I><br>
+Barnabas 19:10<br>
+<I>Thou shalt remember</I> the day of judgment night and day, and thou<br>
+shalt seek out day by day the persons of the saints, either laboring<br>
+by word and going to exhort them and meditating how thou mayest save<br>
+souls by thy word, or thou shalt work with thy hands for a ransom for<br>
+thy sins.</p>
+
+<p>Barnabas 19:11<br>
+Thou shall not hesitate to give, neither shalt thou murmur when<br>
+giving, but thou shalt know who is the good paymaster of thy reward.<br>
+Thou shalt keep those things which thou hast received, neither adding<br>
+to them nor taking away from them. Thou shalt utterly hate the Evil<br>
+One. Thou shalt judge righteously.</p>
+
+<p>Barnabas 19:12<br>
+Thou shalt not make a schism, but thou shalt pacify them that contend<br>
+by bringing them together. Thou shalt confess thy sins. Thou shalt<br>
+not betake thyself to prayer with an evil conscience. This is the<br>
+way of light.</p>
+
+<p>Barnabas 20:1<br>
+ But the way of the Black One is crooked and full of a curse. For it<br>
+is a way of eternal death with punishment wherein are the things that<br>
+destroy men's souls--idolatry, boldness, exhalation of power,<br>
+hypocrisy, doubleness of heart, adultery, murder, plundering, pride,<br>
+transgression, treachery, malice, stubbornness, witchcraft, magic,<br>
+covetousness, absence of the fear of God;</p>
+
+<p>Barnabas 20:2<br>
+persecutors of good men, hating the truth, loving lies, not<br>
+perceiving the reward of righteousness, not <I>cleaving to the good</I><br>
+nor to the righteous judgment, paying no heed to the widow and the<br>
+orphan, wakeful not for the fear of God but for that which is evil;<br>
+men from whom gentleness and forbearance stand aloof and far off;<br>
+loving vain things, pursuing a recompense, not pitying the poor man,<br>
+not toiling for him that is oppressed with toil, ready to slander,<br>
+not recognizing Him that made them murderers of children, corrupters<br>
+of the creatures of God, turning away from him that is in want,<br>
+oppressing him that is afflicted, advocates of the wealthy, unjust<br>
+judges of the poor, sinful in all things.</p>
+
+<p>Barnabas 21:1<br>
+ It is good therefore to learn the ordinances of the Lord, as many as<br>
+have been written above, and to walk in them. For he that doeth these<br>
+things shall be glorified in the kingdom of God; whereas he that<br>
+chooseth their opposites shall perish together with his works. For<br>
+this cause is the resurrection, for this the recompense.</p>
+
+<p>Barnabas 21:2<br>
+I entreat those of you who are in a higher station, if ye will<br>
+receive any counsel of good advice from me, keep amongst you those to<br>
+whom ye may do good. Fail not.</p>
+
+<p>Barnabas 21:3<br>
+The day is at hand, in which everything shall be destroyed together<br>
+with the Evil One. <I>The Lord is at hand and his reward.</I></p>
+
+<p>Barnabas 21:4<br>
+Again and again I entreat you; be good lawgivers one to another;<br>
+continue faithful councilors to yourselves; take away from you all<br>
+hypocrisy.</p>
+
+<p>Barnabas 21:5<br>
+And may God, who is Lord of the whole world, give you wisdom,<br>
+judgment, learning, knowledge of His ordinances, patience.</p>
+
+<p>Barnabas 21:6<br>
+And be ye taught of God, seeking diligently what the Lord requireth<br>
+of you, and act that ye may be found in the day of judgment.</p>
+
+<p>Barnabas 21:7<br>
+But if you have any remembrance of good, call me to mind when ye<br>
+practice these things these things, that both my desire and my<br>
+watchfulness may lead to some good result. I entreat you asking it<br>
+as a favor.</p>
+
+<p>Barnabas 21:8<br>
+So long as the good vessel (of the body) is with you, be lacking in<br>
+none of these things, but search them out constantly, and fulfill<br>
+every commandment; for they deserve it.</p>
+
+<p>Barnabas 21:9<br>
+For this reason I was the more eager to write to you so far as I was<br>
+able, that I might give you joy. Fare ye well, children of love and<br>
+peace. The Lord of glory and of every grace be with your spirit.</p>
+
+
+<P>
+
+</div>
+
+<hr width="50%">
+
+<p style="text-align: center">Go to the <a href="../index.html">Chronological List</a> of all Early Christian Writings</p>
+
+<p style="text-align: center;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2665675471425577";
+/* Leaderboard-bot */
+google_ad_slot = "4364046558";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+
+<p style="text-align: center; font-size:135%;">Please <a href="https://earlywritings.com/buy/">buy the CD</a> to support the site, view it without ads, and get bonus stuff!</p>
+
+
+  <div id="infoleft"></div>
+  <div id="inforight"></div>
+  <div id="footer">
+    <div id="footleft"></div>
+    <div id="footright"></div>
+  </div>
+
+  	<div id="whitebottomlayer">
+	<p id="copyrightnotice"><a href="index.html">Early Christian Writings</a> is copyright &copy; 
+  <script language="JavaScript">
+  <!--
+  var months=new Array(13);
+  months[1]="Jan.";
+  months[2]="Feb.";
+  months[3]="Mar.";
+  months[4]="Apr.";
+  months[5]="May";
+  months[6]="June";
+  months[7]="July";
+  months[8]="Aug.";
+  months[9]="Sept.";
+  months[10]="Oct.";
+  months[11]="Nov.";
+  months[12]="Dec.";
+  var time=new Date();
+  var lmonth=months[time.getMonth() + 1];
+  var date=time.getDate();
+  var year=time.getYear();
+  if (year < 2000)
+    year = year + 1900;
+  document.write("2001-" + year);
+  // -->
+  </script>
+Peter Kirby <code>&lt;<a href="http://www.peterkirby.com/">E-Mail</a>&gt</code>.</p>
+	  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fearlychristianwritingscom%2F121187514627340&amp;send=false&amp;layout=box_count&amp;width=55&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:65px; float: left; margin-left: 15px;" allowTransparency="true"></iframe>
+	  <div style="float: left; margin-right: 10px;">
+	<!-- Place this tag where you want the +1 button to render. -->
+	<div class="g-plusone"></div>
+	<!-- Place this tag after the last +1 button tag. -->
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	  <div><a href="https://twitter.com/mrpeterkirby" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @mrpeterkirby</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+	  </div>
+	<div id="buythecd"><a href="https://earlywritings.com/buy/"><img src="../pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div style="width: 500px; font-size: 12px; margin-top: 8px; margin-left: auto; margin-right: auto; padding-left: 50px;"><div style="position: absolute; width: 40px; height: 40px;"><b>MLA<br>Style</b></div><div style="position: relative; left: 40px;"><p>Kirby, Peter. "Historical Jesus Theories." <i>Early Christian Writings</i>.  
+  <script language="JavaScript">
+  <!--
+  document.write(year + ". " + date + " " + lmonth + " " + year);
+  // -->
+  </script>
+ &lt;http://www.earlychristianwritings.com/text/1clement-hoole.html&gt;.</p></div></div>
+  </div></div><div id="headlayer">
+  <div id="headleft"></div>
+  <div id="headright"></div>
+
+<ul id="menu" style="position: absolute; margin-left: -149px; left: 50%; top: 83px; width: 0px; height: 0px;">
+<li class="topli" style="left: 0px; width: 87px; height: 29px;"><a href="../newtestament.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 87px; height: 29px; border: 0px;" alt="New Testament"></a>
+	<ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px"><div class="topdiv2" style="width: 130px; height: 96px;">
+		<li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 51px; height: 67px;">
+  		<div class="subdiv1" style="width: 49px; height: 65px;"><div class="subdiv2" style="width: 48px; height: 64px;">
+				<li><a href="../matthew.html">Matthew</a></li> 
+				<li><a href="../mark.html">Mark</a></li> 
+				<li><a href="../luke.html">Luke</a></li> 
+				<li><a href="../john.html">John</a></li>
+  		</div></div>
+			</ul>
+		</li>
+		<li><a href="../acts.html"><span>Acts</span></a></li>
+		<li class="submenu"><a><span>Letters of Paul</span></a>
+			<ul class="subul" style="left: 129px; width: 88px; height: 211px;">
+			<div class="subdiv1" style="width: 86px; height: 209px;"><div class="subdiv2" style="width: 85px; height: 208px;">
+				<li><a href="../romans.html">Romans</a></li> 
+				<li><a href="../1corinthians.html">1 Corinthians</a></li> 
+				<li><a href="../2corinthians.html">2 Corinthians</a></li> 
+				<li><a href="../galatians.html">Galatians</a></li> 
+				<li><a href="../ephesians.html">Ephesians</a></li> 
+				<li><a href="../philippians.html">Philippians</a></li> 
+				<li><a href="../colossians.html">Colossians</a></li> 
+				<li><a href="../1thessalonians.html">1 Thessalonians</a></li> 
+				<li><a href="../2thessalonians.html">2 Thessalonians</a></li> 
+				<li><a href="../1timothy.html">1 Timothy</a></li> 
+				<li><a href="../2timothy.html">2  Timothy</a></li> 
+				<li><a href="../titus.html">Titus</a></li> 
+				<li><a href="../philemon.html">Philemon</a></li> 
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../hebrews.html"><span>Letter to the Hebrews</span></a></li>
+		<li class="submenu"><a><span>General Letters</span></a>
+			<ul class="subul" style="left: 129px; width: 51px; height: 115px;">
+			<div class="subdiv1" style="width: 49px; height: 113px;"><div class="subdiv2" style="width: 48px; height: 112px;"> 
+				<li><a href="../james.html">James</a></li> 
+				<li><a href="../1peter.html">1 Peter</a></li> 
+				<li><a href="../2peter.html">2 Peter</a></li> 
+				<li><a href="../1john.html">1 John</a></li> 
+				<li><a href="../2john.html">2 John</a></li> 
+				<li><a href="../3john.html">3 John</a></li> 
+				<li><a href="../jude.html">Jude</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../revelation.html"><span>Revelation</span></a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 87px; width: 62px; height: 29px;"><a href="../apocrypha.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 29px; border: 0px;" alt="Apocrypha"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 131px; height: 163px;">
+			<div class="subdiv1" style="width: 129px; height: 161px;"><div class="subdiv2" style="width: 128px; height: 160px;">
+			  <li><a href="../thomas.html">Gospel of Thomas</a></li>
+				<li><a href="../egerton.html">Egerton Gospel</a></li>
+				<li><a href="../gospelpeter.html">Gospel of Peter</a></li>
+				<li><a href="../oxyrhychus840.html">Oxyrhychus 840</a></li>
+				<li><a href="../gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="../apostolorum.html">Epistula Apostolorum</a></li>
+				<li><a href="../infancyjames.html">Infancy Gospel of James</a></li>
+				<li><a href="../infancythomas.html">Infancy Gospel of Thomas</a></li>
+				<li><a href="../actspilate.html">Acts of Pilate</a></li>
+				<li><a href="../diatessaron.html">Diatessaron</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Gospel Fragments</a>
+		   <ul class="subul" style="left: 129px; width: 156px; height: 131px;">
+			 <div class="subdiv1" style="width: 154px; height: 129px;"><div class="subdiv2" style="width: 153px; height: 128px;">
+			   <li><a href="../oxyrhynchus1224.html">Oxyrhynchus 1224</a></li>
+				 <li><a href="../secretmark.html">Fayyum Fragment</a></li>
+				 <li><a href="../gospelegyptians.html">Gospel of the Egyptians</a></li>
+				 <li><a href="../gospelhebrews.html">Gospel of the Hebrews</a></li>
+				 <li><a href="../gospelebionites.html">Gospel of the Ebionites</a></li>
+				 <li><a href="../gospelnazoreans.html">Gospel of the Nazoreans</a></li>
+				 <li><a href="../traditionsmatthias.html">Traditions of Matthias</a></li>
+				 <li><a href="../dura.html">Dura-Europos Gospel Harmony</a></li>
+			 </div></div>
+			 </ul>
+		</li>
+		<li class="submenu"><a>Apostolic Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 131px;">
+			<div class="subdiv1" style="width: 156px; height: 129px;"><div class="subdiv2" style="width: 155px; height: 128px;">
+			  <li><a href="../preachingpeter.html">Preaching of Peter</a></li>
+				<li><a href="../actspeter.html">Acts of Peter</a></li>
+				<li><a href="../actsjohn.html">Acts of John</a></li>
+				<li><a href="../actspaul.html">Acts of Paul</a></li>
+				<li><a href="../actsandrew.html">Acts of Andrew</a></li>
+				<li><a href="../actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="../contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="../actsthomas.html">Acts of Thomas</a></li>
+			</div></div>
+			</ul>
+		</li>
+    <li class="submenu"><a>Martyrologies</a>
+		  <ul class="subul" style="left: 129px; width: 203px; height: 115px;">
+			<div class="subdiv1" style="width: 201px; height: 113px;"><div class="subdiv2" style="width: 200px; height: 112px;">
+			  <li><a href="../martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+				<li><a href="../esra.html">Fifth and Sixth Books of Esra</a></li>
+				<li><a href="../carpus.html">Acts of Carpus, Papylus, and Agathonice</a></li>
+				<li><a href="../viennalyons.html">Letter from Vienna and Lyons</a></li>
+				<li><a href="../scillitan.html">Passion of the Scillitan Martyrs</a></li>
+				<li><a href="../actsapollonius-2.html">Acts of Apollonius</a></li>
+				<li><a href="../actsperpetua.html">Acts of Perpetua and Felicitas</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../didache.html">Didache</a></li>
+	  <li><a href="../apocalypsepeter.html">Apocalypse of Peter</a></li>
+		<li><a href="../didascalia.html">Didascalia</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 149px; width: 52px; height: 29px;"><a href="../gnostics.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 52px; height: 29px; border: 0px;" alt="Gnostics"></a>
+  <ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px;"><div class="topdiv2" style="width: 130px; height: 96px;">
+	  <li class="submenu"><a>Dialogues with Jesus</a>
+		  <ul class="subul" style="left: 129px; width: 116px; height: 115px;">
+			<div class="subdiv1" style="width: 114px; height: 113px;"><div class="subdiv2" style="width: 113px; height: 112px;">
+			  <li><a href="../sophia.html">Sophia of Jesus Christ</a></li>
+				<li><a href="../secretjames.html">Secret James</a></li>
+				<li><a href="../gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="../dialoguesavior.html">Dialogue of the Savior</a></li>
+				<li><a href="../gospelsavior.html">Gospel of the Savior</a></li>
+				<li><a href="../jeu.html">Books of Jeu</a></li>
+				<li><a href="../pistis.html">Pistis Sophia</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Apocalypses</a>
+		  <ul class="subul" style="left: 129px; width: 138px; height: 67px;">
+			<div class="subdiv1" style="width: 136px; height: 65px;"><div class="subdiv2" style="width: 135px; height: 64px;">
+			  <li><a href="../apocalypsejames2.html">2nd Apocalypse of James</a></li>
+				<li><a href="../nhlapocalypsepaul.html">Coptic Apocalypse of Paul</a></li>
+				<li><a href="../apocalypsejames1.html">1st Apocalypse of James</a></li>
+				<li><a href="../nhlapocalypsepeter.html">Coptic Apocalypse of Peter</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 51px;">
+			<div class="subdiv1" style="width: 156px; height: 49px;"><div class="subdiv2" style="width: 155px; height: 48px;">
+			  <li><a href="../actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="../contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="../petertophilip.html">Letter of Peter to Philip</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>More Nag Hammadi</a>
+		  <ul class="subul" style="left: 129px; width: 189px; height: 131px;">
+			<div class="subdiv1" style="width: 187px; height: 129px;"><div class="subdiv2" style="width: 186px; height: 128px;">
+			  <li><a href="../apocryphonjohn.html">Apocryphon of John</a></li>
+				<li><a href="../gospeltruth.html">Gospel of Truth</a></li>
+				<li><a href="../treatiseres.html">Treatise on the Resurrection</a></li>
+				<li><a href="../gospelphilip.html">Gospel of Philip</a></li>
+			  <li><a href="../trimorphic.html">Trimorphic Protennoia</a></li>
+				<li><a href="../authoritative.html">Authoritative Teaching</a></li>
+				<li><a href="../eighthninth.html">Discourse on the Eighth and the Ninth</a></li>
+				<li><a href="../melchizedek.html">Melchizedek</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 115px;">
+			<div class="subdiv1" style="width: 109px; height: 113px;"><div class="subdiv2" style="width: 108px; height: 112px;">
+			  <li><a href="../basilides.html">Basilides</a></li>
+				<li><a href="../naassene.html">Naassene Fragments</a></li>
+				<li><a href="../valentinus.html">Valentinus</a></li>
+				<li><a href="../marcion.html">Marcion</a></li>
+				<li><a href="../epiphanes.html">Epiphanes</a></li>
+				<li><a href="../ophite.html">Ophite Diagrams</a></li>
+				<li><a href="../gospeljudas.html">Gospel of Judas</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 99px;">
+			<div class="subdiv1" style="width: 109px; height: 97px;"><div class="subdiv2" style="width: 108px; height: 96px;">
+				<li><a href="../ptolemy.html">Ptolemy</a></li>
+				<li><a href="../isidore.html">Isidore</a></li>
+				<li><a href="../theodotus.html">Theodotus</a></li>
+				<li><a href="../heracleon.html">Heracleon</a></li>
+				<li><a href="../apelles.html">Apelles</a></li>
+				<li><a href="../cassianus.html">Julius Cassianus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 201px; width: 85px; height: 29px;"><a href="../churchfathers.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Church Fathers"></a>
+  <ul class="topul" style="width: 133px; height: 147px;">
+	<div class="topdiv1" style="width: 131px; height: 145px;"><div class="topdiv2" style="width: 130px; height: 144px;">
+	  <li class="submenu"><a>Apostolic Fathers</a>
+		  <ul class="subul" style="left: 129px; width: 163px; height: 147px;">
+			<div class="subdiv1" style="width: 161px; height: 145px;"><div class="subdiv2" style="width: 160px; height: 144px;">
+			  <li><a href="../didache.html">Didache</a></li>
+			  <li><a href="../barnabas.html">Epistle of Barnabas</a></li>
+			  <li><a href="../1clement.html">First Clement</a></li>
+			  <li><a href="../shepherd.html">Shepherd of Hermas</a></li>
+			  <li><a href="../ignatius.html">Ignatius of Antioch</a></li>
+			  <li><a href="../polycarp.html">Polycarp to the Philippians</a></li>
+			  <li><a href="../2clement.html">Second Clement</a></li>
+			  <li><a href="../diognetus.html">Epistle of Mathetes to Diognetus</a></li>
+			  <li><a href="../martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Apologists</a>
+		  <ul class="subul" style="left: 129px; width: 120px; height: 99px;">
+			<div class="subdiv1" style="width: 118px; height: 97px;"><div class="subdiv2" style="width: 117px; height: 96px;">
+			  <li><a href="../aristides.html">Aristides</a></li>
+			  <li><a href="../justin.html">Justin Martyr</a></li>
+			  <li><a href="../tatian.html">Tatian</a></li>
+			  <li><a href="../octavius.html">Minucius Felix</a></li>
+			  <li><a href="../athenagoras.html">Athenagoras of Athens</a></li>
+			  <li><a href="../theophilus.html">Theophilus of Antioch</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 123px; height: 147px;">
+			<div class="subdiv1" style="width: 121px; height: 145px;"><div class="subdiv2" style="width: 120px; height: 144px;">
+			  <li><a href="../papias.html">Papias</a></li>
+			  <li><a href="../quadratus.html">Quadratus</a></li>
+			  <li><a href="../aristo.html">Aristo of Pella</a></li>
+			  <li><a href="../apollinaris.html">Claudius Apollinaris</a></li>
+			  <li><a href="../melito.html">Melito of Sardis</a></li>
+			  <li><a href="../hegesippus.html">Hegesippus</a></li>
+			  <li><a href="../dionysius.html">Dionysius of Corinth</a></li>
+			  <li><a href="../rhodon.html">Rhodon</a></li>
+			  <li><a href="../theophiluscaesarea.html">Theophilus of Caesarea</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 136px; height: 147px;">
+			<div class="subdiv1" style="width: 134px; height: 145px;"><div class="subdiv2" style="width: 133px; height: 144px;">
+			  <li><a href="../bardesanes.html">Bardesanes</a></li>
+			  <li><a href="../maximus.html">Maximus of Jerusalem</a></li>
+			  <li><a href="../polycrates.html">Polycrates of Ephesus</a></li>
+			  <li><a href="../victor.html">Victor I</a></li>
+			  <li><a href="../pantaenus.html">Pantaenus</a></li>
+			  <li><a href="../antimontanist.html">Anonymous Anti-Montanist</a></li>
+			  <li><a href="../serapion.html">Serapion of Antioch</a></li>
+			  <li><a href="../apollonius.html">Apollonius</a></li>
+			  <li><a href="../caius.html">Caius</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../irenaeus.html">Irenaeus of Lyons</a></li>
+		<li><a href="../hippolytus.html">Hippolytus of Rome</a></li>
+		<li><a href="../clement.html">Clement of Alexandria</a></li>
+		<li><a href="../tertullian.html">Tertullian</a></li>
+		<li><a href="../origen.html">Origen</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 286px; width: 41px; height: 29px;"><a href="../other.html"><img src="../pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Other"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Pagan and Jewish</a>
+		  <ul class="subul" style="left: 129px; width: 105px; height: 195px;">
+			<div class="subdiv1" style="width: 103px; height: 193px;"><div class="subdiv2" style="width: 102px; height: 192px;">
+			  <li><a href="../mara.html">Mara bar Serapion</a></li>
+			  <li><a href="../josephus.html">Josephus</a></li>
+			  <li><a href="../pliny.html">Pliny the Younger</a></li>
+			  <li><a href="../suetonius.html">Suetonius</a></li>
+			  <li><a href="../tacitus.html">Tacitus</a></li>
+			  <li><a href="../fronto.html">Fronto</a></li>
+			  <li><a href="../lucian.html">Lucian of Samosata</a></li>
+			  <li><a href="../aurelius.html">Marcus Aurelius</a></li>
+			  <li><a href="../galen.html">Galen</a></li>
+			  <li><a href="../celsus.html">Celsus</a></li>
+			  <li><a href="../talmud.html">Talmud</a></li>
+			  <li><a href="../philostratus.html">Philostratus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Jewish/Christian</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 83px;">
+			<div class="subdiv1" style="width: 115px; height: 81px;"><div class="subdiv2" style="width: 114px; height: 80px;">
+			  <li><a href="../patriarchs.html">The Twelve Patriarchs</a></li>
+			  <li><a href="../sibylline.html">Non-Pagan Sibyllines</a></li>
+			  <li><a href="../odes.html">Odes of Solomon</a></li>
+			  <li><a href="../elchasai.html">Book of Elchasai</a></li>
+			  <li><a href="../ascension.html">Ascension of Isaiah</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Hypothesized Sources</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 51px;">
+			<div class="subdiv1" style="width: 115px; height: 49px;"><div class="subdiv2" style="width: 114px; height: 48px;">
+			  <li><a href="../passion.html">Passion Narrative</a></li>
+			  <li><a href="../q.html">Sayings Gospel Q</a></li>
+			  <li><a href="../signs.html">Signs Gospel</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="../antimarcion.html">Anti-Marcionite Prologues</a></li>
+		<li><a href="../muratorian.html">Muratorian Canon</a></li>
+		<li><a href="../kerygmatapetrou.html">Kerygmata Petrou</a></li>
+		<li><a href="../abercius.html">Inscription of Abercius</a></li>
+	</div></div>
+	</ul>
+</li>
+</ul>	
+</div><![if !IE]><script language="JavaScript">  <!-- var view = document.defaultView; var symboltab = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8704,0,8707,0,0, 8715,0,0,8727,0,0,8722,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,8773,913,914,935,8710,917,934,915,919,921, 977,922,923,924,925,927,928,920,929,931,932,933,962, 8486,926,936,918,0,8756,0,8869,0,8254,945,946,967, 948,949,966,947,951,953,981,954,955,956,957,959,960, 952,961,963,964,965,982,969,958,968,950,0,0,0,8764,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,978,8242,8804,8725,8734,402,9827,9830, 9829,9824,8596,8592,8593,8594,8595,176,177,8243, 8805,215,8733,8706,8226,247,8800,8801,8776,8230,0, 0,8629,8501,8465,8476,8472,8855,8853,8709,8745,8746, 8835,8839,8836,8834,8838,8712,8713,8736,8711,174,169, 8482,8719,8730,8901,172,8743,8744,8660,8656,8657, 8658,8659,9674,9001,174,169,8482,8721,0,0,0,0,0,0,0, 0,0,0,0,9002,8747,8992,0,8993,0,0,0,0,0,0,0,0,0, 0]; function convNode(n) { var n1; if (n == null) return; if (n.nodeType == 3) { elem = n.parentNode; var st = view.getComputedStyle(elem, null); var val = st.getPropertyValue('font-family'); if (val.toLowerCase() == 'symbol') { var s0 = n.data, s1 = '', len = s0.length, ch; for (i = 0; i < len; i++) { ch = s0.charCodeAt(i); if (ch < 256 && symboltab[ch] != 0) ch = symboltab[ch]; s1 += String.fromCharCode(ch); } n.data = s1; } } n1 = n.firstChild; while (n1 != null) { convNode(n1); n1 = n1.nextSibling; } } convNode(document); // <![endif]--> </script><!--[if IE]> <script language="JavaScript">var sURL = unescape(window.location.pathname); function refresh() {window.location.href = sURL;}</script> <script language="JavaScript1.1">function refresh() {window.location.replace( sURL );}</script> <script language="JavaScript1.2">function refresh() {window.location.reload( false );}</script> <script language="JavaScript">window.onresize = refresh;</script> <![endif]-->
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="305"; var zflag_cid="39404/39401/1"; var zflag_sid="4519"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="15"; var zflag_click="[INSERT_CLICK_TRACKER_MACRO]";
+</script>
+<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/fo.js"></script>
+<!-- end ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+</body>  </html>

@@ -1,0 +1,6 @@
+ | K | R | S
+data UnsafeCmp a b = UU | CmpU | CmpC | CmpK | CmpR
+
+data UnsafeCompare a b where
+
+-- | 'UU' is

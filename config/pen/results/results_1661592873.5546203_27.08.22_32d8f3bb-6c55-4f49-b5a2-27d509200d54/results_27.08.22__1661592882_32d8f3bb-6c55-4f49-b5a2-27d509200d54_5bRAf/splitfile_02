@@ -1,0 +1,7 @@
+[[String]] -> IO ()
+tabularise rows = do
+  let cols = maximum (map length rows)
+  forM_ rows $ \row -> do
+    let row' = map (\s -> if null s then "" else s) row
+    putStrLn $ intercalate "\t" (pad row' cols)
+EOD

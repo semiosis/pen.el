@@ -1,0 +1,2 @@
+ toUpper , isUpper )
+module Tree ( Tree , node , empty , singleton , leaf , t_insert , t_delete , t_find , t_foreach , t_map , t_count ) where

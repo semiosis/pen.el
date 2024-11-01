@@ -1,0 +1,9 @@
+"StrictHostKeyChecking" is a parameter for the "Host" keyword.
+
+It can be set to "yes", "no", or "ask".
+
+"yes" is the default.
+
+"no" means that the host key will be accepted without any confirmation.
+
+"ask" means that the user will be asked to confirm the host key.

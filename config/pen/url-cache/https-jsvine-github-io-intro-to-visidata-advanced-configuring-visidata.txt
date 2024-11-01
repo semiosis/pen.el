@@ -1,0 +1,432 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 7213
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-d6de"
+expires: Fri, 12 Apr 2024 09:26:41 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 816A:1973AA:72CE80:7929CF:6618FBF6
+Accept-Ranges: bytes
+Date: Fri, 12 Apr 2024 09:16:42 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10330-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1712913403.938010,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 78ce014ef82608a01afe936aa0ef4df9298c142a
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Configuring VisiData &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/advanced/configuring-visidata.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Extending VisiData With Plugins" href="../extending-visidata/" />
+    <link rel="prev" title="Working With Large Files" href="../../intermediate/large-files/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuring VisiData</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vd-command-line-arguments"><code class="docutils literal notranslate"><span class="pre">vd</span></code> command-line arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-global-options-sheet">The global options sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sheet-specific-options-sheets">Sheet-specific options sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-visidatarc-file">The <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> file</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Configuring VisiData</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="configuring-visidata">
+<h1>Configuring VisiData<a class="headerlink" href="#configuring-visidata" title="Permalink to this headline">¶</a></h1>
+<p>VisiData’s behavior can be configured several ways:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">vd</span></code> command-line arguments</li>
+<li>The global options sheet</li>
+<li>Sheet-specific options sheets</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> file</li>
+</ul>
+<div class="section" id="vd-command-line-arguments">
+<h2><code class="docutils literal notranslate"><span class="pre">vd</span></code> command-line arguments<a class="headerlink" href="#vd-command-line-arguments" title="Permalink to this headline">¶</a></h2>
+<p>When you launch <code class="docutils literal notranslate"><span class="pre">vd</span></code>, you can specify certain behaviors via arguments on the command-line.</p>
+<p>For instance, to tell VisiData to ignore the first three lines of your input file, you’d run the following:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>vd my-spreadsheet.csv --skip <span class="m">3</span>
+</pre></div>
+</div>
+<p>To see the full list of configurable options, run <code class="docutils literal notranslate"><span class="pre">vd</span> <span class="pre">-h</span> <span class="pre">|</span> <span class="pre">less</span></code>:</p>
+<div class='ansi2html'>
+<pre>
+vd(1)                        Quick Reference Guide                       vd(1)
+
+NAME
+     VisiData — a terminal utility for exploring and arranging tabular data
+
+SYNOPSIS
+     vd [options] [input ...]
+     vd [options] --play cmdlog [-w waitsecs] [--batch] [-i] [-o output]
+        [field=value]
+     vd [options] [input ...] +toplevel:subsheet:col:row
+
+DESCRIPTION
+     VisiData is an easy-to-use multipurpose tool to explore, clean, edit, and
+     restructure data. Rows can be selected, filtered, and grouped; columns
+     can be rearranged, transformed, and derived via regex or Python expres‐
+     sions; and workflows can be saved, documented, and replayed.
+
+   REPLAY MODE
+     -p, --play=cmdlog       replay a saved cmdlog within the interface
+     -w, --replay-wait=seconds
+                             wait seconds between commands
+     -b, --batch             replay in batch mode (with no interface)
+     -i, --interactive       launch VisiData in interactive mode after batch
+:
+</pre>
+</div>
+<p>(Press <kbd class="kbd docutils literal notranslate">Space</kbd> to scroll down the list.)</p>
+</div>
+<div class="section" id="the-global-options-sheet">
+<h2>The global options sheet<a class="headerlink" href="#the-global-options-sheet" title="Permalink to this headline">¶</a></h2>
+<p>You can also set most of the same options, plus additional color/display options, through the “global options sheet”. To launch that sheet, press <kbd class="kbd docutils literal notranslate">Shift-O</kbd>. You should see something like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv40"> option             </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> global_value       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> default            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> description                        
+</span><span class="ansi1 inv_background inv_foreground"></span><span class="ansi1 inv38-81 inv_foreground"></span><span class="ansi1 inv38-81 inv40"> visidata_dir       </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║ ~/.visidata/       │ ~/.visidata/       │ directory to load and store additi…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> debug</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> False</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> exit on error and display stacktra…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> True</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> show menu on top line when not act…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_keys     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> True</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> show keystrokes inline in submenus</span><span class="ansi40">  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-68"> black on 68 blue   </span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of menu items in general</span><span class="ansi40">      
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu_active  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi38-223 ansi40"> 223 yellow on black</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of active menu items</span><span class="ansi40">          
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu_spec    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-34"> black on 34 green  </span><span class="ansi38-246 ansi48-34"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of sheet-specific menu items</span><span class="ansi40">  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu_help    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-68"> black italic on 68…</span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of helpbox</span><span class="ansi40">                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_boxchars </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ││──┌┐└┘├┤         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> box characters to use for menus</span><span class="ansi40">     
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_more     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> »</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> command submenu indicator</span><span class="ansi40">           
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_push     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ⎘</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> indicator if command pushes sheet …</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_input    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> …</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> indicator if input required for co…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_fmt      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> | VisiData {vd.ver…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> right-side menu format string</span><span class="ansi40">       
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> undo</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> True</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> enable undo/redo</span><span class="ansi40">                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_float_fmt     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> {:.02f}            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> default fmtstr to format float val…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_int_fmt       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> {:d}               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> default fmtstr to format int values</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> col_cache_size     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-226 ansi40">#</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> max number of cache entries in eac…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_formatter     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> generic            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> formatter to create the text in ea…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_displayer     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> generic            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> displayer to render the text in ea…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_splitwin_pct  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-226 ansi40">#</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> height of second sheet on screen</span><span class="ansi40">    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_note_none     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ⌀</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> visible contents of a cell whose v…</span><span class="ansi40"> 
+</span><span class="ansi4 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">Shift+O› global_options</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                  </span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">Shift+O</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">quit-sheet</span><span class="ansi30"></span><span class="ansi30 ansi48-68">        242 options </span>
+</pre>
+</div>
+<p>To customize an option navigate to the <code class="docutils literal notranslate"><span class="pre">global_value</span></code> cell in the option’s row, and press <kbd class="kbd docutils literal notranslate">e</kbd> to edit it, like you would with any other cell in VisiData.</p>
+<p>For example, to change VisiData’s default column width from 20 to 10, navigate down to the <code class="docutils literal notranslate"><span class="pre">default_width</span></code> row, over to the <code class="docutils literal notranslate"><span class="pre">global_value</span></code> cell, press <kbd class="kbd docutils literal notranslate">e</kbd>, type <code class="docutils literal notranslate"><span class="pre">10</span></code>, and then press <kbd class="kbd docutils literal notranslate">Enter</kbd>. Once you do, the global options sheet should look like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 ansi30 ansi48-68"></span><span class="ansi1 ansi4 ansi38-81 ansi48-68"></span><span class="ansi1 ansi4 ansi38-81 ansi40"> option             </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 inv38-246 inv40"></span><span class="ansi1 ansi4 inv37 inv40"> global_value       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> default            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> description                        
+</span><span class="ansi38-81"></span><span class="ansi38-81 ansi40"> disp_selected_note </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> •</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                                     
+</span><span class="ansi38-81 ansi40"> disp_sort_asc      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ↑↟⇞⇡⇧⇑</span><span class="ansi40">             </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> characters for ascending sort</span><span class="ansi40">       
+</span><span class="ansi38-81 ansi40"> disp_sort_desc     </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ↓↡⇟⇣⇩⇓</span><span class="ansi40">             </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> characters for descending sort</span><span class="ansi40">      
+</span><span class="ansi38-81 ansi40"> color_default      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> white on black     </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> the default fg and bg colors</span><span class="ansi40">        
+</span><span class="ansi38-81 ansi40"> color_default_hdr  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> bold</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of the column headers</span><span class="ansi40">         
+</span><span class="ansi38-81 ansi40"> color_bottom_hdr   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi37 ansi40"> underline          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of the bottom header row</span><span class="ansi40">      
+</span><span class="ansi38-81 ansi40"> color_current_row  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="inv38-246 inv40"></span><span class="inv37 inv40"> reverse            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of the cursor row</span><span class="ansi40">             
+</span><span class="ansi38-81 ansi40"> color_current_col  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> bold</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of the cursor column</span><span class="ansi40">          
+</span><span class="ansi38-81 ansi40"> color_current_cell </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> </span><span class="ansi40">                   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of current cell, if differen…</span><span class="ansi40"> 
+</span><span class="ansi38-81 ansi40"> color_current_hdr  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 inv38-246 inv40"></span><span class="ansi1 inv37 inv40"> bold reverse       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of the header for the cursor…</span><span class="ansi40"> 
+</span><span class="ansi38-81 ansi40"> color_column_sep   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│ 246 blue           │</span><span class="ansi37 ansi40"> color of column separators</span><span class="ansi40">          
+</span><span class="ansi38-81 ansi40"> color_key_col      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi38-81 ansi40"> 81 cyan            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of key columns</span><span class="ansi40">                
+</span><span class="ansi38-81 ansi40"> color_hidden_col   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi90 ansi40"> 8</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of hidden columns on metashe…</span><span class="ansi40"> 
+</span><span class="ansi38-81 ansi40"> color_selected_row </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi38-215 ansi40"> 215 yellow         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of selected rows</span><span class="ansi40">              
+</span><span class="ansi38-81 ansi40"> color_clickable    </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi37 ansi40"> underline          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of internally clickable item</span><span class="ansi40">  
+</span><span class="ansi38-81 ansi40"> color_code         </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"></span><span class="ansi1 ansi37 ansi48-237"> bold white on 237  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of code sample</span><span class="ansi40">                
+</span><span class="ansi38-81 ansi40"> color_heading      </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-200 ansi40"> bold 200           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of header</span><span class="ansi40">                     
+</span><span class="ansi38-81 ansi40"> color_guide_unwrit…</span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi38-243 ansi40"> 243 on black       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of unwritten guides in Guide…</span><span class="ansi40"> 
+</span><span class="ansi38-81 ansi40"> force_256_colors   </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> False</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> use 256 colors even if curses repo…</span><span class="ansi40"> 
+</span><span class="ansi38-81 ansi40"> quitguard          </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> False</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> confirm before quitting modified s…</span><span class="ansi40"> 
+</span><span class="inv_background inv40"></span><span class="inv37 inv40"> default_width      ║</span><span class="ansi1 inv37 inv40"> 10                </span><span class="ansi1 inv38-226 inv40">#</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">│ 20                </span><span class="inv38-226 inv40">#</span><span class="inv37 inv40">│ default column width               </span><span class="ansi40"> 
+</span><span class="ansi4 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">Shift+O› global_options</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                        </span><span class="ansi1 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">e</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">edit-option</span><span class="ansi30"></span><span class="ansi30 ansi48-68">        242 options </span>
+</pre>
+</div>
+<p>As with any other sheet, you can leave the global options sheet, and return to your previous sheet, by pressing <kbd class="kbd docutils literal notranslate">q</kbd>.</p>
+</div>
+<div class="section" id="sheet-specific-options-sheets">
+<h2>Sheet-specific options sheets<a class="headerlink" href="#sheet-specific-options-sheets" title="Permalink to this headline">¶</a></h2>
+<p>As the name suggests, the changes you make on the <em>global</em> options sheet affect your entire VisiData session. To change VisiData’s behavior for just one sheet, type <kbd class="kbd docutils literal notranslate">zO</kbd> to edit the “sheet options sheet”:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv40"> option             </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> sheet_value        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> default            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> description                        
+</span><span class="ansi1 inv_background inv_foreground"></span><span class="ansi1 inv38-81 inv_foreground"></span><span class="ansi1 inv38-81 inv40"> visidata_dir       </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║                    │ ~/.visidata/       │ directory to load and store additi…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> debug</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> False</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> exit on error and display stacktra…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> True</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> show menu on top line when not act…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_keys     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> True</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> show keystrokes inline in submenus</span><span class="ansi40">  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-68"> black on 68 blue   </span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of menu items in general</span><span class="ansi40">      
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu_active  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi38-223 ansi40"> 223 yellow on black</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of active menu items</span><span class="ansi40">          
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu_spec    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-34"> black on 34 green  </span><span class="ansi38-246 ansi48-34"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of sheet-specific menu items</span><span class="ansi40">  
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> color_menu_help    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-68"> black italic on 68…</span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> color of helpbox</span><span class="ansi40">                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_boxchars </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ││──┌┐└┘├┤         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> box characters to use for menus</span><span class="ansi40">     
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_more     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">        </span><span class="ansi40">      </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> »</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> command submenu indicator</span><span class="ansi40">           
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_push     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ⎘</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> indicator if command pushes sheet …</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_input    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> …</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> indicator if input required for co…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_menu_fmt      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> | VisiData {vd.ver…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> right-side menu format string</span><span class="ansi40">       
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> undo</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> True</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> enable undo/redo</span><span class="ansi40">                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_float_fmt     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">       </span><span class="ansi40">       </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> {:.02f}            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> default fmtstr to format float val…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_int_fmt       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> {:d}         </span><span class="ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> default fmtstr to format int values</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> col_cache_size     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-226 ansi40">#</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> max number of cache entries in eac…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_formatter     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> generic            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> formatter to create the text in ea…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_displayer     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> generic            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> displayer to render the text in ea…</span><span class="ansi40"> 
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_splitwin_pct  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-226 ansi40">#</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> height of second sheet on screen</span><span class="ansi40">    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> disp_note_none     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">      </span><span class="ansi40">        </span><span class="ansi37 ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ⌀</span><span class="ansi40">                  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> visible contents of a cell whose v…</span><span class="ansi40"> 
+</span><span class="ansi4 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">zShift+O› faa-wildlife-strikes_options</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|         </span><span class="ansi48-68">          </span><span class="ansi1 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">zShift+O</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">quit-sheet</span><span class="ansi30"></span><span class="ansi30 ansi48-68">        242 options </span>
+</pre>
+</div>
+<p>It the sheet options sheet operates just like the global options sheet, but applies only to the sheet you were on when you typed <kbd class="kbd docutils literal notranslate">zO</kbd>.</p>
+</div>
+<div class="section" id="the-visidatarc-file">
+<h2>The <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> file<a class="headerlink" href="#the-visidatarc-file" title="Permalink to this headline">¶</a></h2>
+<p>The approaches above all affect only your current VisiData session. When you quit VisiData, those customizations evaporate.</p>
+<p>To persist your customizations from session to session, you can specify them in your computer’s <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> file.</p>
+<p>Open that file in the editor of your choosing and, for each option you wish to modify, write <code class="docutils literal notranslate"><span class="pre">options.my_example_option</span> <span class="pre">=</span> <span class="pre">my_custom_value</span></code>.</p>
+<p>For instance:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>options.default_width <span class="o">=</span> <span class="m">10</span>
+options.encoding <span class="o">=</span> <span class="s2">&quot;latin-1&quot;</span>
+options.bulk_select_clear <span class="o">=</span> True
+</pre></div>
+</div>
+<p>… and then save the file. Next time you run VisiData, these options will take effect.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> file expects its commands to be written in Python. For basic options-setting, it doesn’t matter too much whether you know Python, as long as you follow the pattern in the example above. Numbers can be written plainly, strings of characters should be wrapped in quotation marks, and <code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code> values need to be written exactly as such.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">If you know Python and are willing to acquaint yourself with <a class="reference external" href="https://www.visidata.org/docs/api/">VisiData’s architecture</a>, you can use your <code class="docutils literal notranslate"><span class="pre">~/.visidatarc</span></code> file to customize VisiData in ways far more powerful than simple option-setting —&nbsp;including <a class="reference external" href="https://github.com/saulpw/visidata/blob/stable/docs/customize.md#how-to-configure-commands">creating your own commands</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../extending-visidata/" class="btn btn-neutral float-right" title="Extending VisiData With Plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../intermediate/large-files/" class="btn btn-neutral float-left" title="Working With Large Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

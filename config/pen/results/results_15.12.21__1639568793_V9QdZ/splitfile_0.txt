@@ -1,0 +1,15 @@
+# prompt-description files
+
+cat draft.prompt-description <<EOD
+title: code generator from description
+doc: Language agnostic
+prompt-version: 1
+engine: OpenAI Davinci
+# model: GPT-J-6B
+temperature: 0.3
+max-generated-tokens: 200
+stop-sequences:
+- "<delim>"
+top-p: 1
+# UnfortunatelyHello
+

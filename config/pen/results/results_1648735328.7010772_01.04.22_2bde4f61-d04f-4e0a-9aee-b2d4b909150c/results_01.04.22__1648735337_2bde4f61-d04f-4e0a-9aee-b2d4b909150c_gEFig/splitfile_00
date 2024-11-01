@@ -1,0 +1,1 @@
+"infixl 1" is a way of documenting that the function is an infix function with a precedence of 1.

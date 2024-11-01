@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: HSP
+# contributor: Toptal & contributors
+# key: hsp
+# --
+
+### HSP ###
+
+# Object files
+hsptmp*
+packfile
+obj
+*.ax
+
+# Binaries
+*.exe
+*.dpm

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: NCrunch
+# contributor: Toptal & contributors
+# key: ncrunch
+# --
+
+### NCrunch ###
+
+# NCrunch
+*.ncrunch*
+_NCrunch_*
+*.crunch.xml
+*.ncrunchsolution*
+nCrunchTemp_*

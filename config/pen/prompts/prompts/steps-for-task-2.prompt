@@ -1,0 +1,26 @@
+task: "Steps for task"
+doc: "Given a task in natural language, produce a series of n steps"
+tags: life
+prompt-version: 1
+prompt: |+
+  List the steps to complete the task. When finished, write Done!
+  Task: <task>
+  <:pp>- Step 1/<n>: Start by
+engine: "OpenAI Davinci"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length <n>)"
+top-p: 1.0
+stop-sequences:
+- "Done"
+cache: on
+vars:
+- "task"
+- "n"
+examples:
+- "Start a business"
+- "5"
+info: on
+filter: off
+completion: off
+insertion: off
+postprocessor: "grep -P \"^- Step \" | sed 's/^- //'"

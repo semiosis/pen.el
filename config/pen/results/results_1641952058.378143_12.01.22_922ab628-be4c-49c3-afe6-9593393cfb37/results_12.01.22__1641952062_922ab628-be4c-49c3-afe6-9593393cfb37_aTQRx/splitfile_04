@@ -1,0 +1,1 @@
+ youtube-dl --write-auto-sub --skip-download https://www.youtube.com/watch?v=p0p5CQUjTxQ

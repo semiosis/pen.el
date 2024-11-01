@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=CTaeOKhiI1k" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=mqlCjq60ogg" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=xqgeT26BAnE&t=1019" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.desiringgod.org/messages/how-to-seek-the-holy-spirit" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=xqgeT26BAnE&t=1160" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=NVLryKLq5Y4" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=rmW1yvsgu8M" "#" "<==" "pen-ci"

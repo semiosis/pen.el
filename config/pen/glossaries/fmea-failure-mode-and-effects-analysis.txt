@@ -1,0 +1,30 @@
+v +/"Failure Modes & Effects Analysis" "$NOTES/ws/glossaries/risk-management.txt"
+
+Design FMEA
+DFMEA
+    Explores the possibility of product
+    malfunctions, reduced product life, and
+    safety and regulatory concerns derived
+    from:
+    - Material Properties
+    - Geometry
+    - Tolerances
+    - Interfaces with other components and/or
+      systems
+    - Engineering Noise: environments, user
+      profile, degradation, systems
+      interactions
+
+Process FMEA
+PFMEA
+    Discovers failure that impacts product
+    quality, reduced reliability of the
+    process, customer dissatisfaction, and
+    safety or environmental hazards derived
+    from:
+    - Human Factors
+    - Methods followed while processing
+    - Materials used
+    - Machines utilized
+    - Measurement systems impact on acceptance
+    - Environment Factors on process performance

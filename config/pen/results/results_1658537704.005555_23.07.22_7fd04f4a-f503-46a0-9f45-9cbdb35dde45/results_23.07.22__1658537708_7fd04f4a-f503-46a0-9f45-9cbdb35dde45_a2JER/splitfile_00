@@ -1,0 +1,9 @@
+
+  putStrLn $ "Your age is: " ++ show ageAsNumber
+EOD
+
+# python files
+
+cat draft.py <<EOD
+def main():
+    print('Please enter your age: '

@@ -1,0 +1,18 @@
+PyTorch
+    [toolkit]
+
+TensorFlow
+    [toolkit]
+
+Caffe
+    [toolkit]
+
+scikit-learn
+    [toolkit]
+    A Python module for machine learning built
+    on top of SciPy.
+
+conda-forge
+    [GitHub organization]
+
+    Contains repositories of conda recipes.

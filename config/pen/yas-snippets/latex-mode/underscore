@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: underscore
+# group: symbols
+# key: _
+# --
+\char`_

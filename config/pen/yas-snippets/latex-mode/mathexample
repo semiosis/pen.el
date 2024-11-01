@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: math examples
+# group: math
+# key: math
+# --
+\iffalse
+\mathrm is the normal upright Roman font
+\mathnormal is the normal math italic font: $\mathnormal{a}$ and $a$ give the same result
+\mathcal is the special calligraphic font for uppercase letters only
+\mathbf gives upright Roman boldface letters
+\mathsf gives upright sans serif letters
+\mathit gives text italic letters: $different\ne\mathit{different}$
+\mathtt gives upright letters from the typewriter type font
+\fi

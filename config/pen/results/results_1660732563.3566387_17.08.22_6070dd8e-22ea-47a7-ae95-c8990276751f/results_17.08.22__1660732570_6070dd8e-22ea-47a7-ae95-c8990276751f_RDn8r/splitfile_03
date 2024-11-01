@@ -1,0 +1,13 @@
+"Functor" is a typeclass.
+Functor is a typeclass that abstracts over types that can be mapped over.
+Functor has two methods:
+    fmap :: (a -> b) -> f a -> f b
+    (<$) :: (a -> b) -> f a -> f b
+
+Functor is implemented for the following data types:
+    Maybe
+    Either
+    [] (list)
+    IO
+    Tuple
+    (,) (tuple

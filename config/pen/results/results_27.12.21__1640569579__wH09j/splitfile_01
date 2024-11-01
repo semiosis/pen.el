@@ -1,0 +1,14 @@
+"hugo" is a command line tool
+
+Usage:
+  hugo [help]
+  hugo [command]
+
+Available Commands:
+  build       Build your site
+  new         Create a new content file and automatically set the date and time
+  newpage     Create a new content file with the given title
+  newpost     Create a new content file with the given title
+  newtheme    Create a new theme scaffold
+  serve       Serve your site locally
+

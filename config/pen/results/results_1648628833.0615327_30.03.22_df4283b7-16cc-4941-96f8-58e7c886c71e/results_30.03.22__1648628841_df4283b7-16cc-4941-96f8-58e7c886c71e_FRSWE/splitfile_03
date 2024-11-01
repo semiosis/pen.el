@@ -1,0 +1,9 @@
+The above code is a recursive function that takes a project and returns a tree of strings.
+
+The case statement is a pattern match on the project type.
+
+Project (ProjectId p) name -> Node (printf "%s (%d)" name p) []
+
+This pattern matches a project with a ProjectId and a name. The name is used in the node label. The node has no children.
+
+ProjectGroup name projects -> Node (Text.unpack name) (map asTree

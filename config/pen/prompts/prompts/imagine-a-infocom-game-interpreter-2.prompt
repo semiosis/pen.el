@@ -1,0 +1,69 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: fun games interpreter
+language: infocom-game
+temperature: 0.6
+max-generated-tokens: 150
+subprompts:
+- banner: |+
+    THE HITCHHIKER'S GUIDE TO THE GALAXY
+    Infocom interactive fiction - a science fiction story
+    Copyright (c) 1984 by Infocom, Inc. All rights reserved.
+    Release 60 / Serial number 861002
+    
+- kickstarter: |+
+    You wake up.
+
+    Location: Bedroom, in the bed
+
+    The room is spinning very gently round your head. Or at least it
+    would be if you could see it which you can't.
+
+    > get out of bed
+    Very difficult, but you manage it. 
+
+    Location: Bedroom
+
+    The room is still spinning. It dips and sways a little. The light is off and you can't see.
+
+    > turn on light
+    Good start to the day. Pity it's going to be the worst one of your life. The
+    light is now on.
+
+    Location: Bedroom
+
+    The bedroom is a mess.
+    It is a small bedroom with a faded carpet and old wallpaper. There is a
+    washbasin, a chair with a tatty dressing gown slung over it, and a window with
+    the curtains drawn. Near the exit leading south is a phone.
+    There is a flathead screwdriver here. (outside the bed)
+    There is a toothbrush here. (outside the bed)
+
+    > 
+prompt: |+
+    <banner>
+    <history><expression>
+    <:pp>
+user-prompt: "^> "
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
+
+stop-sequences:
+- "> "
+
+# TODO Use a second emacs to edit temporary variables
+postprocessor: "pen-tvipe"
+
+# Generate the next prompt
+# Need to override if not using it
+postpostprocessor: "awk 1; echo -n \"\\n> \""
+vars:
+- history
+- expression
+var-defaults:
+- kickstarter
+# validator: grep -q "Location:"
+examples:
+- "> "
+- "look around"

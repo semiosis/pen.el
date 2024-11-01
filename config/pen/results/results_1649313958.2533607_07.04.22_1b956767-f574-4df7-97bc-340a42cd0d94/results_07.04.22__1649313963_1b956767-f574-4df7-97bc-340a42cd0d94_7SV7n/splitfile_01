@@ -1,0 +1,8 @@
+http://www.stavros.io/posts/python-fuse-filesystem/
+
+                             Python - FUSE
+   Stavros Korokithakis
+   February 28, 2014
+
+   FUSE is a simple interface for creating filesystems in userspace.
+   It does not require any kernel modules to be installed,

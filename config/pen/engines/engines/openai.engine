@@ -1,0 +1,36 @@
+vendor: OpenAI
+engine-title: OpenAI
+lm-command: "openai-complete.sh"
+model: davinci
+default-tokens: 256
+best-of: 1
+# zero out the probabilities for anything below the kth token.
+top-k: 5
+# OPENAI_API_BASE
+api-endpoint: "https://api.openai.com"
+engine-delimiter: "###"
+approximate-token-char-length: 2.5
+engine-min-tokens: 0
+engine-max-tokens: 2049
+engine-whitespace-support: no
+
+# For other engines, I may have higher collations and fewer completions
+n-collate: 1
+# n-completions: 5
+
+libre-dataset: no
+libre-model: no
+local: no
+engine-family:
+- OpenAI Curie
+- OpenAI Instruct
+- OpenAI Davinci
+- OpenAI Codex
+defer:
+- nl+code: OpenAI Codex
+- code: OpenAI Cushman
+- nl: OpenAI Davinci
+- nltask: OpenAI Instruct
+- speed: OpenAI Curie
+fallbacks:
+- AI21

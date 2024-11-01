@@ -1,0 +1,144 @@
+block cyphers
+    https://www.youtube.com/watch?v=-Gk9kaFoBxU
+
+    reversible
+
+Quantum key distribution
+Quantum key exchange
+    A cryptographic protocol involving
+    components of quantum mechanics. It
+    enables two parties to produce a shared
+    random secret key known only to them,
+    which can then be used to encrypt and
+    decrypt messages. It is often incorrectly
+    called quantum cryptography, as it is the
+    best-known example of a quantum
+    cryptographic task.
+
+    An important and unique property of
+    quantum key distribution is the ability of
+    the two communicating users to detect the
+    presence of any third party trying to gain
+    knowledge of the key.
+
+Church Turing Thesis
+
+Strong church turing thesis
+    Up to polynomial factors in the length of
+    the input (for comparable algoriths).
+
+    A less accepted thesis compared to the
+    Church Turing Thesis itself.
+
+Church Turing Thesis vs Strong Church Turing Thesis
+
+P vs NP
+    [[/home/shane/notes2018/uni/cosc/412/lectures/05.09.18.org][lectures/05.09.18.org]]
+
+    https://cs.stanford.edu/~trevisan/cs254-10/lecture02.pdf
+
+    P
+        Polynomial-time problem
+
+        Efficient short of path algorihtm to get you a yes no answer
+        What is the shortest path from b to w in the graph?
+        Binary search on the possible pathwars.
+        Do Binar search until you narrow down what the actual shortest path is.
+        Find the is there a path w of legthe 4
+        Find the is there a path w of legthe 3
+        Any algorithmic problem that you are trying to solve can be translated into a decision problem.
+
+    NP
+        Non-deterministic problem
+
+        This is the class that you could solve
+        in polynomial time if only someone
+        gave up a big enough hint.
+
+    P and NP and the most common classes. But here are some others.
+
+    P is a subset of all of the other complexity classes.
+
+    P/poly and BPP are the two complexity
+    classes we are concerned about in quauntum
+    computing.
+
+    P/poly
+        L ∈ P/poly
+        A language is a member of P/poly
+            if there is a sequence of boolean
+            circuits Cn of polynomially bounded
+            size in n such that |x| = n, Cn(x) = 1
+            if and only if x ∈ L.
+
+    BPP
+        Fixed size of input n.
+
+A Hamiltonian path
+Traceable path
+    A path in an undirected or directed graph
+    that visits each vertex exactly once.
+
+cryptographic salt
+salt
+salting
+    Cryptographic salt is made up of random
+    bits added to each password instance
+    before its hashing.
+    
+    Salts create unique passwords even in the
+    instance of two users choosing the same
+    passwords.
+    
+    Salts help us mitigate rainbow table
+    attacks by forcing attackers to re-compute
+    them using the salts.
+
+elliptic curve
+    Defined by:
+        y^2=x^3+ax+b
+
+    Example:
+        let a=−3 and b=5
+
+sign
+signed
+    Encrypt.
+    Encrypted.
+
+    vim +/"itsdangerous" "$NOTES/ws/python/glossary.txt"
+
+zero-knowledge
+zero-knowledge proof
+zero-knowledge protocol
+    [#cryptography]
+
+    A method by which one party can prove to
+    another party that they know a value x,
+    without conveying any information apart
+    from the fact that they know the value x.
+
+Non-interactive zero-knowledge proof
+NIZK
+zk-SNARK
+zk-STARK
+    Zero-knowledge proofs that require no
+    interaction between the prover and
+    verifier.
+
+    Allows you to generate a proof that some
+    computation has some particular output, in
+    such a way that the proof can be verified
+    extremely quickly even if the underlying
+    computation takes a very long time to run.
+    
+    The "ZK" ("zero knowledge") part adds an
+    additional feature: the proof can keep
+    some of the inputs to the computation
+    hidden.
+
+homomorphic encryption
+    NLG: Homomorphic encryption is the
+    property of some encryption schemes that
+    allow the addition and multiplication of
+    ciphertexts without decrypting them.

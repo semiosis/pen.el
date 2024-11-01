@@ -1,0 +1,56 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-loader.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-loader-x.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-loader-x2.el
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# emacs lisp files that are not in init-loader or init-loader-x or init-loader-x2 directories 
+# (e.g., files that are not part of the init loader) 
+# (e.g., files that are not part of the init loader) 
+# (e.g., files that are not part of the init loader) 
+# (e.g., files that are not part of the init loader) 
+# (e

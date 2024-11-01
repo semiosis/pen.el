@@ -1,0 +1,7 @@
+
+  Many of us humans do not know how to quit or exit emacs.
+  Classic emacs has two ways to exit: C-g and C-x C-c.
+  C-x C-c is the same as save-buffers-kill-terminal.
+  Try it now. Put this line in your emacs then press C-x C-c:
+  (kill-emacs)
+

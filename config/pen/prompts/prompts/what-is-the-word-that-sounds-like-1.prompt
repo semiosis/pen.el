@@ -1,0 +1,39 @@
+title: what is the word that sounds like
+tags: prose fun writing
+design-patterns: 
+doc: Given how I think it sounds, list some possible candidates
+prompt-version: 2
+prompt: |
+  <delim>
+  What is the word that sounds like "trush"? Here are some real words that rhyme:
+  - plush
+  - blush
+  - brush
+  - push
+  - lush
+  <delim>
+  What is the word that sounds like <q:sounds like>? Here are some real words that rhyme with <q:sounds like>:
+  <:pp>-
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+n-completions: 10
+stop-sequences:
+- <delim-1>
+cache: true
+vars:
+- sounds like
+examples:
+- communikay
+test-output: flaunt
+# preprocessors:
+# - pf-correct-grammar/1
+prefer-external: true
+n-test-runs: 5
+continuation-function: list-of <1> <g>
+postprocessor: sed 's/^- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
+validator: grep -vP "^$"
+split-patterns:
+- "\n"
+# prettifier: pen-pretty-paragraph

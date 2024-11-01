@@ -1,0 +1,12 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+language: lua
+tags: interpreter
+prompt: |+
+    Lua 5.3.3  Copyright (C) 1994-2016 Lua.org, PUC-Rio
+    > <expression>
+user-prompt: "^> "
+vars:
+- "expression"
+examples:
+- "5 + 5"

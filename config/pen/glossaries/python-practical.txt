@@ -1,0 +1,6 @@
+streamlit
+    Make a really simply web interface for CLI
+    applications for search results.
+
+    Example:
+    - $MYGIT/hoffa/bible-search/app.py

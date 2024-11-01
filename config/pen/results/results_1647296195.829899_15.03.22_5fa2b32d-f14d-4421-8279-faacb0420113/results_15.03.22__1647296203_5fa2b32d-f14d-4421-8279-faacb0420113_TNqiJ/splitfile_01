@@ -1,0 +1,13 @@
+
+
+use Class::MethodMaker
+  new_with_init => 'new',
+  get_set       =>
+  [
+
+   qw / MyText /
+
+  ];
+
+sub init {
+  my ($self,

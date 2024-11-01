@@ -1,0 +1,366 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Jun 2024 01:15:36 GMT
+Server: Apache
+Link: <https://www.nzcpr.com/wp-json/>; rel="https://api.w.org/", <https://www.nzcpr.com/wp-json/wp/v2/posts/39387>; rel="alternate"; type="application/json", <https://www.nzcpr.com/?p=39387>; rel=shortlink
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta property="og:title" content="Rebooting Our Universities and the Science System" />
+<meta property="og:description" content="A critical issue for universities throughout the Western world, has been an ideological shift away from institutional political neutrality, and a focus on teaching and research excellence, towards the critical social justice politics of diversity, equity, and inclusion. DEI agendas focus mostly on race and gender identity issues and have become oppressive and exclusionary." />
+<meta property="og:image" content="" />
+<meta property="og:title" content="Rebooting Our Universities and the Science System" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.nzcpr.com/rebooting-our-universities-and-the-science-system/" />
+
+
+<title>Rebooting Our Universities and the Science System | NZCPR Site</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="https://www.nzcpr.com/wp-content/themes/NZCPR/style.css" />
+<link rel="pingback" href="https://www.nzcpr.com/xmlrpc.php" />
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="NZCPR Site &raquo; Feed" href="https://www.nzcpr.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="NZCPR Site &raquo; Comments Feed" href="https://www.nzcpr.com/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.nzcpr.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=f7ab38c826fdc500d1964821da3a60ce"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='image-list-style-css' href='https://www.nzcpr.com/wp-content/plugins/jj-nextgen-image-list/stylesheets/style.css?ver=f7ab38c826fdc500d1964821da3a60ce' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.nzcpr.com/wp-includes/css/dist/block-library/style.min.css?ver=f7ab38c826fdc500d1964821da3a60ce' type='text/css' media='all' />
+<style id='co-authors-plus-coauthors-style-inline-css' type='text/css'>
+.wp-block-co-authors-plus-coauthors.is-layout-flow [class*=wp-block-co-authors-plus]{display:inline}
+
+</style>
+<style id='co-authors-plus-avatar-style-inline-css' type='text/css'>
+.wp-block-co-authors-plus-avatar :where(img){height:auto;max-width:100%;vertical-align:bottom}.wp-block-co-authors-plus-coauthors.is-layout-flow .wp-block-co-authors-plus-avatar :where(img){vertical-align:middle}.wp-block-co-authors-plus-avatar:is(.alignleft,.alignright){display:table}.wp-block-co-authors-plus-avatar.aligncenter{display:table;margin-inline:auto}
+
+</style>
+<style id='co-authors-plus-image-style-inline-css' type='text/css'>
+.wp-block-co-authors-plus-image{margin-bottom:0}.wp-block-co-authors-plus-image :where(img){height:auto;max-width:100%;vertical-align:bottom}.wp-block-co-authors-plus-coauthors.is-layout-flow .wp-block-co-authors-plus-image :where(img){vertical-align:middle}.wp-block-co-authors-plus-image:is(.alignfull,.alignwide) :where(img){width:100%}.wp-block-co-authors-plus-image:is(.alignleft,.alignright){display:table}.wp-block-co-authors-plus-image.aligncenter{display:table;margin-inline:auto}
+
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='UserAccessManagerLoginForm-css' href='https://www.nzcpr.com/wp-content/plugins/user-access-manager/assets/css/uamLoginForm.css?ver=2.2.23' type='text/css' media='screen' />
+<link rel='stylesheet' id='wp-polls-css' href='https://www.nzcpr.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.63' type='text/css' media='all' />
+<link rel='stylesheet' id='avhec-widget-css' href='https://www.nzcpr.com/wp-content/plugins/extended-categories-widget/4.2/css/avh-ec.widget.css?ver=3.10.0-dev.1' type='text/css' media='all' />
+<link rel='stylesheet' id='promoslider_main-css' href='https://www.nzcpr.com/wp-content/plugins/promotion-slider/css/slider.css?ver=f7ab38c826fdc500d1964821da3a60ce' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.nzcpr.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.nzcpr.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.nzcpr.com/wp-content/plugins/jj-nextgen-image-list/script/jquery.jj_ngg_shuffle.js?ver=f7ab38c826fdc500d1964821da3a60ce" id="jquery-shuffle-js"></script>
+<script type="text/javascript" src="https://www.nzcpr.com/wp-content/plugins/fd-footnotes/fdfootnotes.js?ver=1.34" id="fdfootnote_script-js"></script>
+<script type="text/javascript" id="promoslider_main-js-extra">
+/* <![CDATA[ */
+var promoslider_options = {"version":"3.3.4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.nzcpr.com/wp-content/plugins/promotion-slider/js/promoslider.js?ver=f7ab38c826fdc500d1964821da3a60ce" id="promoslider_main-js"></script>
+<link rel="https://api.w.org/" href="https://www.nzcpr.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.nzcpr.com/wp-json/wp/v2/posts/39387" /><link rel="canonical" href="https://www.nzcpr.com/rebooting-our-universities-and-the-science-system/" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nzcpr.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nzcpr.com%2Frebooting-our-universities-and-the-science-system%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.nzcpr.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nzcpr.com%2Frebooting-our-universities-and-the-science-system%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.nzcpr.com/?wordfence_lh=1&hid=7FA81A4304CB650FB9B6C2FC199B2EC5');
+</script><style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('https://www.nzcpr.com/wp-content/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+<style type="text/css" media="all">
+/* <![CDATA[ */
+@import url("https://www.nzcpr.com/wp-content/plugins/wp-table-reloaded/css/plugin.css?ver=1.9.4");
+@import url("https://www.nzcpr.com/wp-content/plugins/wp-table-reloaded/css/datatables.css?ver=1.9.4");
+/* ]]> */
+</style><link rel="icon" href="https://www.nzcpr.com/wp-content/uploads/2020/06/cropped-Faviconx512-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.nzcpr.com/wp-content/uploads/2020/06/cropped-Faviconx512-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.nzcpr.com/wp-content/uploads/2020/06/cropped-Faviconx512-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.nzcpr.com/wp-content/uploads/2020/06/cropped-Faviconx512-270x270.png" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-180739224-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+</head>
+
+<body class="post-template-default single single-post postid-39387 single-format-standard">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+			
+
+										<img src="\wp-content\themes\NZCPR\images\NZCPR_Logo.png" alt="" />
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu-header"><ul id="menu-home" class="menu"><li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="/">Home</a></li>
+<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6"><a>About</a>
+<ul class="sub-menu">
+	<li id="menu-item-2216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2216"><a href="https://www.nzcpr.com/about-us/">Our People</a></li>
+</ul>
+</li>
+<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="https://www.nzcpr.com/subscribe/">Register</a></li>
+<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="https://www.nzcpr.com/donation-page/">Donate</a></li>
+<li id="menu-item-3809" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3809"><a>Archive</a>
+<ul class="sub-menu">
+	<li id="menu-item-3804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3804"><a href="https://www.nzcpr.com/nzcpr-weekly-index/">NZCPR Weekly</a></li>
+	<li id="menu-item-3803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3803"><a href="https://www.nzcpr.com/guest-articles-archive/">Guest Articles</a></li>
+</ul>
+</li>
+<li id="menu-item-4069" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4069"><a>Campaigns</a>
+<ul class="sub-menu">
+	<li id="menu-item-37862" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37862"><a href="https://www.nzcpr.com/treaty-book-project/">Treaty Book Project</a></li>
+	<li id="menu-item-35302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35302"><a href="https://www.nzcpr.com/3waters/">3Waters</a></li>
+	<li id="menu-item-35429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35429"><a href="https://www.nzcpr.com/he-puapua/">He Puapua – what you need to know</a></li>
+	<li id="menu-item-35510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35510"><a href="https://www.nzcpr.com/peoples-press/">Peoples Press</a></li>
+	<li id="menu-item-23996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23996"><a href="https://www.nzcpr.com/countering-coastal-claims-campaign/">Countering Coastal Claims Campaign</a></li>
+	<li id="menu-item-21926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21926"><a href="https://www.nzcpr.com/support-freedom-of-speech/">Support Free Speech</a></li>
+	<li id="menu-item-11779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11779"><a href="https://www.nzcpr.com/declaration-of-equality-2021/">Declaration of Equality</a></li>
+	<li id="menu-item-37435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37435"><a href="https://www.nzcpr.com/nzcpr-interesting-information/">NZCPR: INTERESTING INFORMATION</a></li>
+</ul>
+</li>
+<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="http://breakingviewsnz.blogspot.co.nz/">Blog</a></li>
+<li id="menu-item-37858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37858"><a href="https://www.nzcpr.com/nzcpr-podcasts/">Podcasts</a></li>
+<li id="menu-item-7496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7496"><a href="https://www.nzcpr.com/parliament/">Parliament</a>
+<ul class="sub-menu">
+	<li id="menu-item-14764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14764"><a href="https://www.nzcpr.com/quick-email-mps/">Contact MPs</a></li>
+	<li id="menu-item-11565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11565"><a href="http://www.nzcpr.com/parliament/">Parties and MPs</a></li>
+	<li id="menu-item-11563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11563"><a href="http://www.nzcpr.com/parliament-business/">Parliament Business</a></li>
+	<li id="menu-item-35218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35218"><a href="https://www.nzcpr.com/local-government-directory/">Local Government Directory</a></li>
+</ul>
+</li>
+<li id="menu-item-35613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35613"><a href="https://www.nzcpr.com/aotearoa-petition/">Petitions</a>
+<ul class="sub-menu">
+	<li id="menu-item-36618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36618"><a href="https://www.nzcpr.com/plain-english-petition/">Plain English Petition</a></li>
+	<li id="menu-item-35612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35612"><a href="https://www.nzcpr.com/newzealand-petition/">New Zealand should remain &#8220;New Zealand&#8221; Petition</a></li>
+	<li id="menu-item-11129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11129"><a href="https://www.nzcpr.com/nzcpr-campaigns/anti-wof-petition/">Anti-WOF Petition</a></li>
+	<li id="menu-item-12335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12335"><a href="https://www.nzcpr.com/protecting-children-petition/">Children Petition</a></li>
+	<li id="menu-item-26136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26136"><a href="https://www.nzcpr.com/foreshore-and-seabed-petition/">Foreshore and Seabed Petition</a></li>
+	<li id="menu-item-11475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11475"><a href="https://www.nzcpr.com/maori-seat-petition/">Maori Seat Petition</a></li>
+	<li id="menu-item-14730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14730"><a href="https://www.nzcpr.com/water-rights-petition/">Water Rights Petition</a></li>
+</ul>
+</li>
+<li id="menu-item-4468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4468"><a href="https://www.nzcpr.com/contact-us/">Contact</a></li>
+</ul></div>			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+		<div id="container" class="single-post">
+      <div id="content" role="main">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<div id="secondary" style="float:left;" class="widget-container">
+  <h3 class="widget-title">About the Author</h3> 
+  <img alt='Avatar photo' src='https://www.nzcpr.com/wp-content/uploads/2024/05/John-Raine.jpg' srcset='https://www.nzcpr.com/wp-content/uploads/2024/05/John-Raine.jpg 2x' class='avatar avatar-96 photo' height='96' width='96' decoding='async'/>		<div id="author-description" style="entry-author-info">
+			<h2>Professor John Raine</h2>
+			<p class="entry-author-description">John Raine is an Emeritus Professor of Engineering and held Deputy and Pro Vice Chancellor roles in three New Zealand Universities.  He was a member of the Science Enterprises Group advising Government on the design of the research funding system 2002-2004, chaired the Ministry of Science &amp; Innovation 2011 Powering Innovation Review, and was Moderator for the 2012 Performance Based Research Fund Research Quality Evaluation.</p>
+		 </div>
+</div>
+
+
+
+<div style="float:left;width:700px;padding-left:10px;">
+  <div id="post-39387" class="post-39387 post type-post status-publish format-standard hentry category-education category-guest-post category-imported_guest category-maori-issues category-politics category-regulation category-social-issues">
+    <h1 class="entry-title">Rebooting Our Universities and the Science System</h1>
+    </br>
+    <div class="entry-content" id="articleText">
+      <div style="float:right;">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nzcpr.com%2Frebooting-our-universities-and-the-science-system%2F" target="_blank" title="Share this on Facebook">
+<span><i class="fab fa-facebook-square fa-2x"></i></span></a>
+<a href="https://twitter.com/intent/tweet/?text=Rebooting Our Universities and the Science System&url=https%3A%2F%2Fwww.nzcpr.com%2Frebooting-our-universities-and-the-science-system%2F" target="_blank" title="Share this on Twitter">
+<span><i class="fab fa-twitter-square fa-2x"></i></span></a>
+
+
+        <script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 1;var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script>
+
+        <a href="https://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF">
+          <img style="border:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-email-button-md.png" alt="Print Friendly and PDF"/>
+        </a>
+<div class="fa fa-search-plus" id="sizeUp" onclick="increaseFontSizeBy1px();" style="font-size:21px"></div>
+<div class="fa fa-search" id="normal" onclick="resetFontSize();" style="font-size:21px"></div>
+<div class="fa fa-search-minus" id="sizeDown" onclick="decreaseFontSizeBy1px();" style="font-size:21px"></div>
+      </div>
+      <span class="meta-prep meta-prep-author">Posted on </span> <a href="https://www.nzcpr.com/rebooting-our-universities-and-the-science-system/" title="January 1, 1970" rel="bookmark"><span class="entry-date">May 10, 2024</span></a> <span class="meta-sep"></span> <span class="author vcard"></br>By  <a href="https://www.nzcpr.com/author/john-raine/" title="Posts by Professor John Raine" class="author url fn" rel="author">Professor John Raine</a> </span>      </p>
+
+      
+<p></p>
+
+
+<p>Both the university sector and the wider science, innovation and technology system are currently under the microscope. Let’s take a look at this.</p>
+<h2><strong>A Symposium for the Future of our Universities</strong></h2>
+<p>On May 15th 2024, a symposium “The Future of our Universities”, organised by the New Zealand Initiative and the Royal Society Te Apārangi Wellington Branch, will take place in Wellington.</p>
+<p>You might ask, “So, what?” Is this symposium important, or will it prove to be yet another academic navel-gazing exercise, aimed at getting more Government funding?</p>
+<p>This symposium comes at a pivotal time for academia, not only in New Zealand, but throughout the Western World. It will follow quite closely the 27<sup>th</sup> March announcement by Government of the establishment of the University Advisory Group &#8211; see <a href="https://uag.org.nz/" target="_blank" rel="noopener">HERE</a> &#8211; chaired by Professor Sir Peter Gluckman, which will consider the effectiveness of the current university system in supporting teaching and research. There are key issues to address around the university business model, operational efficiency, and loss of political neutrality.&nbsp;</p>
+<h2><strong>University Funding and Business Models </strong></h2>
+<p>Our universities now wrestle with a Government contribution which is down relative to inflation by over 40% over the past 34 years.&nbsp; The market-led business model should likely be reshaped towards a capping of numbers of students at university, so that more will study at polytechnics towards valuable vocational and other skills needed by employers.</p>
+<p>The present situation has been aggravated by a ballooning in numbers of administrative staff relative to academics. Some support services are essential, but our ratio of non-academic to academic staff of 1.5 to 1 is much higher than in Australia, the UK, or the USA (where it is about 0.8 to 1).&nbsp;If research-only staff are treated as academic staff this ratio still only improves to 1.4 to 1. Battalions of “managers” and support staff have appeared in areas such as Human Resources, Health and Safety, Student Learning Support and Pastoral Care, Outreach, Māori and Pasifika directorates, and Diversity, Equity, and Inclusion (DEI) support (including LGBQTI+). This bureaucratic inefficiency has been partly offset by the massive growth in full-fee-paying international student numbers from the mid-late 1990’s. This growth created a $5Bn (2019) export industry, but international revenue losses led to large-scale redundancies subsequent to the Covid-19 lockdowns and border closure.</p>
+<h2><strong>Equity versus Excellence</strong></h2>
+<p>Over about 30 years, New Zealand’s education system has progressively adopted socially constructed learning approaches that involve sometimes anti-science “other ways of knowing” and a focus on equity ahead of excellence. This situation has contributed to falling standards and achievement from primary through to tertiary levels, and funding of some research of limited quality and reach. The short articles of References 1 to 8 touch on these issues.&nbsp;</p>
+<p>In the tertiary sector specifically, a critical issue for universities throughout the Western world, has been an ideological shift away from institutional political neutrality, and a focus on teaching and research excellence, towards the critical social justice (CSJ) politics of diversity, equity, and inclusion (DEI). DEI agendas focus mostly on race and gender identity issues and have become, ironically, oppressive and exclusionary.&nbsp; This shift has been fostered in New Zealand by the Ministry of Education (MoE), and in research funding by the Ministry of Business, Innovation and Employment (MBIE).&nbsp;&nbsp; DEI activism in our universities is an aggravating factor in their present financial difficulties.&nbsp;&nbsp;</p>
+<p>CSJ activism has led to a loss of freedom of speech and of academic freedom more widely within universities in the Western World, self-censoring of research journals to avoid giving offence to a particular identity group, and, worst of all, widespread career-damaging cancellation or even loss of employment for staff who speak out against the overbearing nature of institutional DEI policies.&nbsp;New Zealand academic staff have not been immune from this.</p>
+<h2><strong>Open Inquiry versus Indoctrination</strong></h2>
+<p>In New Zealand, CSJ politics have been demonstrated through the universities declaring themselves te Tiriti-led and incorporating Te Ao Māori as a dominant culture within the university.&nbsp; This situation has caused a de facto politicisation of the sector, and the introduction within science programmes of matauranga Māori courses (to become mandatory in 2025 in at least one university) is moving these institutions away from open inquiry and debate to places where some taught material that includes aspects of myth, vitalism, and animism, cannot be questioned. Such an environment leads to a culture of indoctrination, which should have no place in a university.</p>
+<p>By all means, let us study and celebrate indigenous and traditional knowledge from New Zealand and other countries, but within the university context all subjects should allow open exploration, challenge, doubt, and objective discussion of new ideas. The promotion by MoE and MBIE of equivalent status (mana orite) between matauranga Māori and modern science is perceived within the science community as a cultural relativist assertion that does not stand scientific scrutiny.</p>
+<p>The International Science Council explains the word “science” as referring to the systematic organisation of knowledge that can be rationally explained and reliably applied. However, traditional knowledge is not subjected to the validation testing that is expected of science and so cannot be applied reliably in the sense of World science and medicine.</p>
+<p>Abbot et al., in “<em>In Defense of Merit in Science</em>” [9] give the following diagram to compare liberal epistemology, under which the scientific method falls, versus critical social justice theory, where indigenous knowledge finds a more comfortable home.</p>
+<figure class="wp-block-image size-full"><a href="https://www.nzcpr.com/wp-content/uploads/2024/05/100524JR.jpg"><img fetchpriority="high" decoding="async" width="673" height="231" class="wp-image-39408" src="https://www.nzcpr.com/wp-content/uploads/2024/05/100524JR.jpg" alt="" srcset="https://www.nzcpr.com/wp-content/uploads/2024/05/100524JR.jpg 673w, https://www.nzcpr.com/wp-content/uploads/2024/05/100524JR-300x103.jpg 300w" sizes="(max-width: 673px) 100vw, 673px" /></a></figure>
+<p>Matauranga Māori involves wide knowledge from observation of nature, including flora and fauna, a phenomenological understanding of ecosystems, local geology and geography, the weather, and celestial navigation. However, without written language, metal smelting, the wheel, mathematics, all of the physics, chemistry and biology, and advances of modern science, in technological terms matauranga Māori corresponds to knowledge in other societies predating 3000 BC.</p>
+<p>Philosophical and scientific advances of the liberal enlightenment, from about the mid-17th century to the present day, have delivered huge benefits in health, nutrition, domestic comfort, quality of life, life expectancy, education and a codified legal system that were not available from traditional and indigenous knowledge systems. Advances of modern science have been described as tools of colonial oppression. In my view they are not, as science <u>itself</u> is universal and apolitical. Certainly, the technology developed from science has sometimes been used for political ends and not all scientists have behaved with integrity or compassion, but the Ministry of Education should not be inviting our young people to believe that mathematics is neither benign, neutral nor culture-free [10].</p>
+<h2><strong>A Review of the Science System</strong></h2>
+<p>In parallel to the UAG, MBIE has set up a Science System Advisory Group (<a href="https://ssag.org.nz/">https://ssag.org.nz/</a>), also under Sir Peter Gluckman, for which submissions have been requested by 17<sup>th</sup> May 2024.&nbsp; Its terms of reference indicate that the SSAG is to “<em>develop a set of evidence-based recommendations to strengthen the science, innovation and technology system and ensure its future success</em>.”</p>
+<p>This review is well due and has several systemic issues to address around funding, research infrastructure, regulatory frameworks and incentives, system inefficiencies and fragmentation, workforce, competition between research organisations, industry cooperation and support, and international partnerships.</p>
+<p>Critical among these will be a redesign of the currently fragmented research funding system, which is currently unwieldy with much overlap between different funding vehicles. e.g. The MBIE Endeavour grants have drifted towards more fundamental research covered by Marsden and the TEC Centres of Research Excellence funding. National Science Challenges have also funded projects covered by other funding. &nbsp;The research funding system needs to be simplified, for example per the December 2003 report of the Science Enterprises Group [11].</p>
+<p>Key recommendations to lift the R&amp;D engagement and performance of the high value manufacturing and services sector were made in the Powering Innovation Review of 2011 [12]. These could be usefully revisited. They included lifting investment levels over a 10-year period to the OECD average of about 2.5% of GDP; more and stronger international research partnerships; and mechanisms to strengthen connections between universities, CRIs and industry, through replicating the Danish Technological Institute model in New Zealand. This could be done by transforming the former Industrial Research Ltd part of Callaghan Innovation into a bridging applied research organisation with a triangulation role between universities and industry.</p>
+<p>The SSAG Terms of Reference also ask: &#8220;<em>How can opportunities and solutions for Mātauranga be better realised within the system? What is needed to deliver greater diversity with the science, innovation and technology workforce, and participation of under-represented and under-served groups such as Māori and Pacific Peoples?&#8221;</em></p>
+<p>It is highly desirable to increase Māori and Pasifika participation in the science, innovation and technology workforce, although I believe the answer lies less with any failing in the science system and much more with our failure to bring more young Māori and Pasifika through secondary school with qualifications that lead them into this area of study at university, where they can and do succeed on merit.</p>
+<p>The Performance Based Research Fund (under the TEC) had, for the now shelved 2026 Quality Evaluation, moved away from research excellence towards a much greater focus on diversity, equity and inclusion objectives, with greater weighting towards Māori and Pasifika research capability development. This was inappropriate in my view. In all our research funding vehicles it is important is that:</p>
+<ul>
+<li>Research excellence and relevance/impact are the dominant determinants in the support of science, and indeed all research, including that related to matauranga Māori.</li>
+<li>Addressing and including Māori cultural considerations in publicly funded grant applications (such as Vision Matauranga in the Endeavour and Smart Ideas funds) should not be a preferred or mandatory factor. Science research should normally be judged on its scientific merit and relevance alone, and subject to cultural factors only where they are directly relevant to the research in question.</li>
+</ul>
+<h2><strong>Where to from here?</strong></h2>
+<p>The formation of the UAG and SSAG are timely moves by Government and give an opportunity for some much-needed constructive change.</p>
+<p>Thirteen recommendations for recovery of the university sector were made to the incoming Government in a letter to the Post of 3<sup>rd</sup> November 2023 [6]. While issues of funding and operational efficiency must be addressed, critical among these recommendations were that our universities:</p>
+<ul>
+<li>Remain entirely neutral at the institutional level on all matters related to the politics of diversity, equity, inclusion, and cultural affiliation to any one ethnic group, while supporting open academic discourse on all matters within the institution. This point is emphasised both by the landmark USA Kalven Committee Report of 1967 [13] and the 1988 Bologna Accord [14]. University Councils and Vice Chancellors would do well to remember the words in the Kalven Report on the vital need for institutional neutrality: <em>“The instrument of dissent and criticism is the individual faculty member or the individual student. The university is the home and sponsor of critics; it is not itself the critic”.</em></li>
+<li>Ensure that true academic freedom and freedom of speech exists within their institutions.</li>
+<li>Refocus on a merit-based system of recruitment, selection and promotion for staff, and merit-based admission and assessment of students, neither of these driven by ideological or political agendas.</li>
+</ul>
+<p>The 15<sup>th</sup> May Symposium must look beyond the ideologies that are damaging our education system and address what must be done&nbsp;for our universities to become politically neutral, excellence-focused, economically viable and efficient, offering a wide range of programmes&nbsp;across the sciences and humanities, as well as ensuring that we deliver the numbers and quality of graduates to meet the needs of professions such as engineering, IT, law, medicine and teaching.&nbsp; At a time when even the continuation of democracy in New Zealand society has come into question, it is vital for academia, both to recapture the values of open inquiry of the liberal enlightenment, and to find a way to welcome indigenous and traditional knowledges, without their presence being imposed as a quasi-political requirement.</p>
+<p>The SSAG must take the opportunity to refocus the New Zealand science system on a pathway focused on excellence and relevance/impact, greater efficiency of research funding coupled with increased investment, and stronger university-Crown research institute-industry connections, while seeking to build the capability and potential engagement with the science system of all of our people.&nbsp;&nbsp;</p>
+<p><em>References</em></p>
+<ol>
+<li>Elizabeth Rata, “The Decolonisation of New Zealand Education”, The Democracy Project 23 April 2022” (also in <a href="https://blog.elizabethrata.com/2022/05/22/the-decolonisation-of-new-zealand-education/">https://blog.elizabethrata.com/2022/05/22/the-decolonisation-of-new-zealand-education/</a>)</li>
+<li>David Lillis, “Education is in Big Trouble”, Breaking Views 6<sup>th</sup> January 2023 <a href="https://breakingviewsnz.blogspot.com/2023/01/david-lillis-education-is-in-big-trouble.html#more">https://breakingviewsnz.blogspot.com/2023/01/david-lillis-education-is-in-big-trouble.html#more</a></li>
+<li>Peter Schwerdtfeger, John Raine, David Lillis.<strong> “</strong>Post-modernism and the Degrading of Education in New Zealand “Breaking Views, 24<sup>th</sup> July 2023 <a style="font-size: revert;" href="https://breakingviewsnz.blogspot.com/2023/07/peter-schwerdtfeger-john-raine-and.html">https://breakingviewsnz.blogspot.com/2023/07/peter-schwerdtfeger-john-raine-and.html</a>&nbsp;(Reprinted in Bassett Brash and Hide 25<sup style="color: initial;">th</sup><span style="font-size: revert; color: initial;"> July 2023)</span></li>
+</ol>
+<ol start="4">
+<li>David Lillis, John Raine, Peter Schwerdtfeger. “Funding of Research in New Zealand” Breaking Views, 18<sup>th</sup> August 2023. <a href="https://breakingviewsnz.blogspot.com/2023/08/david-lillis-john-raine-and-peter.html">https://breakingviewsnz.blogspot.com/2023/08/david-lillis-john-raine-and-peter.html</a> (Reprinted in Bassett Brash and Hide 19<sup>th</sup> August, 2023)</li>
+<li>Peter Schwerdtfeger, David Lillis and John Raine, “New Zealand’s Tertiary Education Sector in Deep Financial Crisis”, Breaking Views, 13<sup>th</sup> October 2023 <a href="https://breakingviewsnz.blogspot.com/2023/10/peter-schwerdtfeger-david-lillis-and.html">https://breakingviewsnz.blogspot.com/2023/10/peter-schwerdtfeger-david-lillis-and.html</a></li>
+<li>Peter Schwerdtfeger, John Raine et al. “The Challenge of Sustaining a World-Class University System”. The Post, 3<sup>rd</sup> November 2023.</li>
+<li>Michael Johnston, “PISA Results &#8211; Why New Zealand’s Education System is Failing”, 8<sup>th</sup> December 2023. <a href="https://breakingviewsnz.blogspot.com/2023/12/michael-johnston-pisa-results-why-new.html">https://breakingviewsnz.blogspot.com/2023/12/michael-johnston-pisa-results-why-new.html</a></li>
+<li>John Raine, “Can our Universities Rescue Themselves from Politicisation?”, Bassett Brash and Hide, 15<sup>th</sup> December 2023. <a href="https://www.bassettbrashandhide.com/post/john-raine-can-our-universities-rescue-themselves-from-politicisation">https://www.bassettbrashandhide.com/post/john-raine-can-our-universities-rescue-themselves-from-politicisation</a></li>
+<li>Abbot, A. Bikfalvi, A.L. Bleske-Rechek, W. Bodmer, P. Boghossian, C.M. Carvalho, J. Ciccolini, J.A. Coyne,. Gauss, P.M.W. Gill, S. Jitomirskaya, L. Jussim, A.I. Krylov, G.C. Loury, L. Maroja, J.H. McWhorter,S. Moosavi, P. Nayna Schwerdtle, J. Pearl, M.A. Quintanilla Tornel, H.F. Schaefer III, P.R. Schreiner, P. Schwerdtfeger, D. Shechtman, M. Shifman, J. Tanzman, B.L. Trout, A. Warshel, and J.D. West, “In Defense of Merit in Science”. Journal of Controversial Ideas 2023, 3(1), 1; 10.35995/jci03010001, pp1-26.</li>
+<li>“The Common Practice Model – Phase 1: Principles and Pedagogical Approaches”, Curriculum Centre (Te Poutahu), Ministry of Education, 2023.</li>
+<li>“A Framework for Research &amp; Development Investment in New Zealand”. A discussion paper from the Science Enterprises Group Presented to the Minister of Research, Science and Technology, Hon PC Hodgson MP, 17<sup>th</sup> December 2003, 19pp.</li>
+<li>Professor John Raine (Chair), Professor Mina Teicher, Philip O’Reilly, “Powering Innovation: Improving access to and uptake of R&amp;D in the high value manufacturing and services sector” An Independent Report Commissioned by the Ministry of Science &amp; Innovation, April 28, 2011, 122pp. ISBN: File reference: IR060001; Published by the Ministry of Science and Innovation, PO Box 5762, Wellington 6145, New Zealand.</li>
+<li>Kalven Committee Report, “The University’s Role in Political and Social Action”, University of Chicago, 11th November 1967. Report on the University&#8217;s Role in Political and Social Action (Kalven) (uchicago.edu)</li>
+<li>“Magna Charta Universitatum”, Bologna, 18th September 1988. <a href="https://www.cesaer.org/content/7-administration/legal-affairs/values/magna-charta-universitatum.pdf">https://www.cesaer.org/content/7-administration/legal-affairs/values/magna-charta-universitatum.pdf</a></li>
+</ol>    </div><!-- .entry-content -->
+    <div class="entry-utility">
+          </div><!-- .entry-utility -->
+  </div><!-- #post-## -->
+
+
+<script type="application/javascript"> 
+
+    function resetFontSize() {
+        document.getElementById('articleText').style.fontSize = "12px";
+        document.getElementById('articleText').style.lineHeight = "18px";
+    }
+
+    function increaseFontSizeBy1px() {
+        var id = document.getElementById('articleText');
+        var styleSize = window.getComputedStyle(id, null).getPropertyValue('font-size');
+        var currentSize = parseInt(styleSize);
+        currentSize++;
+        document.getElementById('articleText').style.fontSize = currentSize.toString() + "px";
+        document.getElementById('articleText').style.lineHeight = (currentSize + 6).toString() + "px";
+        document.getElementById('sizeUp').style.fontSize = "21px";
+        document.getElementById('normal').style.fontSize = "21px";
+        document.getElementById('sizeDown').style.fontSize = "21px";
+    }
+
+    function decreaseFontSizeBy1px() {
+        var id = document.getElementById('articleText');
+        var styleSize = window.getComputedStyle(id, null).getPropertyValue('font-size');
+        var currentSize = parseInt(styleSize);
+        if (currentSize > 12 ) {
+          currentSize--;
+          document.getElementById('articleText').style.fontSize = currentSize.toString() + "px";
+          document.getElementById('articleText').style.lineHeight = (currentSize + 6).toString() + "px";
+          document.getElementById('sizeUp').style.fontSize = "21px";
+          document.getElementById('normal').style.fontSize = "21px";
+          document.getElementById('sizeDown').style.fontSize = "21px";
+        }
+    }
+</script>
+			</div><!-- #content -->
+		</div><!-- #container -->
+

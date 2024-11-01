@@ -1,0 +1,19 @@
+title: mood to colour
+tags: ilambda
+doc: ''
+prompt: |
+  The CSS code for a color like <1>:
+
+  background-color:
+engine: OpenAI Davinci
+temperature: 0
+max-generated-tokens: 64
+top-p: 1
+stop-sequences:
+- ";"
+- "\n"
+vars:
+- mood
+examples:
+- a blue sky at dusk
+n-test-runs: 2

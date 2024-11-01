@@ -1,0 +1,4 @@
+cd /;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--in-tm-2-pin-.sh" "#" "<==" "pen-xt"
+cd /root/.emacs.d/host/pen.el/scripts/prompting;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.emacs.d/host/pen.el/scripts/prompting; cat \"/root/.pen/tmp/tf_temp6q2w7Fo.txt\" | /root/.pen/tmp/nsfa--in-pen-in-tm-pa-e-tf-sha-x-genesis-1-1-.sh" "#" "<==" "pen-xt"
+cd /;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--in-tm-2-pin-.sh > /root/.pen/tmp/tf_tempKIvDadJ.txt" "#" "<==" "pen-xt"
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--pin-tmux-attach-t-localhost-.sh" "#" "<==" "pen-xt"

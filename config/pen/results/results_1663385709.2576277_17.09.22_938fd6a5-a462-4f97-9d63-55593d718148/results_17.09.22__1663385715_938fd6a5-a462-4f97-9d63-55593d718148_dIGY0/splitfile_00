@@ -1,0 +1,7 @@
+
+
+The butterfly's wings are soft and white.
+With velvet wings comes velvet fangs.
+EOD
+
+cat $PWD/draft.org | hugo new --kind org posts/2020-03-17-sample

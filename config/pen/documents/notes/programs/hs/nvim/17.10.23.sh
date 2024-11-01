@@ -1,0 +1,2 @@
+cd /volumes/home/shane/var/smulliga/source/git/rust-lang/rustlings;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" '/root/.cargo/bin/rustlings'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"
+cd /volumes/home/shane/var/smulliga/source/git/rust-lang/rustlings;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" '/root/.cargo/bin/rustlings'; pak\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

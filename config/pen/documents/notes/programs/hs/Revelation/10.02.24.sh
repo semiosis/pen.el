@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "20:4" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "2:7" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "2:10" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "2:11" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "2:17" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "2:23" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "2:26-28" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "3:21" "#" "<==" "bash"

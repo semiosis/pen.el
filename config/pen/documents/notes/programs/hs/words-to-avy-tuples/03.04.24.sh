@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "words-to-avy-tuples" "-nbe" "/tmp/kQR0avy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "words-to-avy-tuples" "-nbe" "/tmp/W2QVavy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "words-to-avy-tuples" "-nbe" "/tmp/A7NVavy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "words-to-avy-tuples" "-nbe" "/tmp/Rbioavy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "words-to-avy-tuples" "-nbe" "/tmp/Eshuavy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "words-to-avy-tuples" "-nbe" "/tmp/cZl2avy-bible.txt" "#" "<==" "perl"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "words-to-avy-tuples" "-nbe" "/tmp/sNl8avy-bible.txt" "#" "<==" "perl"

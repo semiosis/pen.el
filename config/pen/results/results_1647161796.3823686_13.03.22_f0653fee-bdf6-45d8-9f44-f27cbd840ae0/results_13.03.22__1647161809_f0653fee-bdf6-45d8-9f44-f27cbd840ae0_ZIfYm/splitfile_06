@@ -1,0 +1,15 @@
+ialization(X) :-
+	assert(current_predicate(_,_)),
+	assert(predicate_property(_,_)),
+	assert(predicate_property(_,_,_)),
+	assert(current_prolog_flag(_,_)),
+	assert(prolog_load_context(_,_)),
+	assert(prolog_load_context(_,_,_)),
+	assert(prolog:locate_clauses(_, _)),
+	assert(prolog:message(_, _)),
+	assert(prolog:message_context(_, _)),
+	assert(prolog:message_location(_, _)),
+	assert(prolog:message_line_element(_, _)),
+	assert(prolog:message_line_element(_, _, _)),
+	assert(prolog:message_prefix(_, _)),
+	assert(prolog

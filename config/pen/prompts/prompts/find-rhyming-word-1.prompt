@@ -1,0 +1,30 @@
+task: "find rhyming word"
+tags: prose grammar language fun
+doc: "Find rhyming word"
+prompt-version: 1
+prompt: |+
+    These word rhyme:
+    red:led
+    dog:frog
+    small:tall
+    <word>:
+engine: "OpenAI Davinci"
+temperature: 0.8
+max-generated-tokens: 50
+top-p: 1.0
+stop-sequences:
+- "\n"
+# I think that Davinci may be re-trained on this original prompt
+- "\"\"\""
+cache: on
+vars:
+- "word"
+examples:
+- "train"
+n-completions: 10
+info: on
+completion: off
+insertion: off
+external-related: "https://gist.github.com/brockmanmatt/7a346d641e2d2159eb3319f888193212"
+split-patterns:
+- "\n"

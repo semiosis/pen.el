@@ -1,0 +1,1 @@
+- haskel guru: it is a function that takes a string and returns an IO action.

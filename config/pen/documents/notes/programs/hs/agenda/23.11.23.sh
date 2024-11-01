@@ -1,0 +1,7 @@
+cd /root/.pen/documents/agenda;  "agenda" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "agenda" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "agenda" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "agenda" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "agenda" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "agenda" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "agenda" "#" "<==" "zsh"

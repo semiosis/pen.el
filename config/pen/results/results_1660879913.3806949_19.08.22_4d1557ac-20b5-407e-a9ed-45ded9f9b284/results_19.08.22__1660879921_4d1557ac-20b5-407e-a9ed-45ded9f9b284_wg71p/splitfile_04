@@ -1,0 +1,3 @@
+"hosts" is a simple keyword that is used to specify a list of hosts.
+
+The above snippet will run on all hosts in the inventory.

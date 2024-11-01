@@ -1,0 +1,10 @@
+"provide" is a macro that allows you to define a function or a
+variable that will be available to the user of your library.
+
+The first argument to "provide" is a list of symbols.
+The second argument is a string that describes what the symbols
+defined by the first argument do.
+
+For example, the code above defines a function called "pi" and
+a function called "pi.f", and a variable called "pi", and a
+variable called "pi.

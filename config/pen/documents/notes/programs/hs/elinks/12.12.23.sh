@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempU6UtPkB.html" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempXUV1Lby.html" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "/root/.pen/tmp/tf_temp8P1Kp3d.html" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "81" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempgOF8obj.html" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "81" "--no-numbering" "--dump" "/root/.pen/tmp/tf_tempmVFDdmh.html" "#" "<==" "pen-ci"

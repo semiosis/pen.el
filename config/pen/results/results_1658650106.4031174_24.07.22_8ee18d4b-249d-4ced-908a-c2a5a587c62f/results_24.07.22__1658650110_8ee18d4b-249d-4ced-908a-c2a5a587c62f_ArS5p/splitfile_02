@@ -1,0 +1,2 @@
+This means that `import Options.Applicative` is not valid.
+You need to import the `Applicative` type class from the `Control.Applicative` module.

@@ -1,0 +1,839 @@
+% Created 2024-06-17 Mon 16:05
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
+\author{Fani}
+\date{\textit{<2024-06-17 Mon>}}
+\title{cplint learning Day 1}
+\hypersetup{
+ pdfauthor={Fani},
+ pdftitle={cplint learning Day 1},
+ pdfkeywords={cplint prolog},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1.50 (Org mode 9.6.8)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Installation}
+\label{sec:org1c6a3a8}
+\subsection{1) Install SWI prolog}
+\label{sec:orgda88be5}
+\url{https://www.swi-prolog.org/download/stable}
+
+\subsection{2) Install cplint}
+\label{sec:orgda26047}
+It is explained here:
+\begin{itemize}
+\item \url{http://friguzzi.github.io/cplint/\_build/html/index.html}
+\end{itemize}
+
+I also had to make sure this runs, after installing cplint.
+
+\begin{verbatim}
+1  pack_rebuild(bddem).
+\end{verbatim}
+
+\section{cplint Documentation}
+\label{sec:org2149c82}
+\url{http://friguzzi.github.io/cplint/\_build/html/index.html}
+
+It looks like it's possible to use R with cplint:
+
+\begin{verbatim}
+ 1  Using R¶
+ 2  
+ 3  You have to load library cplint_r (a SWI-Prolog pack) with
+ 4  
+ 5  :- use_module(library(cplint_r)).
+ 6  
+ 7  Then you can use predicates
+ 8  
+ 9  bar_r/1
+10  bar_r/2
+11  argbar_r/1
+12  
+13  that work as their C3.js counterpart but do not return the graph as an
+14  argument as the graph is printed with a different mechanism.
+15  
+16  You also have
+17  
+18  histogram_r(+List:list,+Options:list) is det
+\end{verbatim}
+
+\section{Learning:}
+\label{sec:orgee7a71a}
+\href{https://www.youtube.com/watch?v=SykxWpFwMGs\&pp=ygUSZGVyZWsgYmFuYXMgcHJvbG9n}{youtube.com: Prolog Tutorial}
+
+\begin{verbatim}
+  1  % Prolog programs are a collection of Facts, and Rules that we can
+  2  % Query.
+  3  
+  4  % Prolog focuses on describing facts and relationships about problems
+  5  % rather then on creating a series of steps to solve that problem.
+  6  
+  7  % These Facts and Rules are stored in a file called a Database
+  8  % or Knowledge Base
+  9  
+ 10  % You load a knowledge base like this [knowledge]. or this
+ 11  % consult('knowledge.pl').
+ 12  % halt. exits the prolog system
+ 13  % listing. Displays the contents of the database
+ 14  % All these commands are called predicates
+ 15  
+ 16  % ---------- INTRODUCTION ----------
+ 17  % write prints text between quotes to the screen
+ 18  % nl stands for new line and \'s allows you to use quotes
+ 19  % write('Hello World'),nl,write('Let\'s Program').
+ 20  
+ 21  % This is a fact where loves is a predicate and romeo and
+ 22  % juliet are atoms (constants) and loves arguments
+ 23  loves(romeo, juliet).
+ 24  
+ 25  % This is a rule where :- (if) says if the item on the right is
+ 26  % true, then so is the item on the left
+ 27  loves(juliet, romeo) :- loves(romeo, juliet).
+ 28  
+ 29  % Evaluating whether the goal was met in the terminal
+ 30  % loves(juliet, romeo). = yes
+ 31  
+ 32  % Facts and Rules are called clauses
+ 33  
+ 34  % A Variable is an object we can't name at the time of execution
+ 35  % Variables are uppercase while atoms are lowercase
+ 36  % loves(romeo, X). = X = juliet
+ 37  
+ 38  % ---------- FACTS ----------
+ 39  % Write the relationship first followed by the objects between
+ 40  % parenthese followed by a dot
+ 41  
+ 42  % albert, male, female are atom constants that must begin with a
+ 43  % lowercase letter unless they are between single quotes
+ 44  % An atom can contain letters, numbers, +, -, _, *, /, <, >, :, ., ~, &
+ 45  % AN ATOM CANNOT START WITH _
+ 46  
+ 47  % The name before parenthese is called the predicate
+ 48  % The names in parenthese are called arguments
+ 49  
+ 50  % Let's define information about the people above
+ 51  
+ 52  male(albert).
+ 53  male(bob).
+ 54  male(bill).
+ 55  male(carl).
+ 56  male(charlie).
+ 57  male(dan).
+ 58  male(edward).
+ 59  
+ 60  female(alice).
+ 61  female(betsy).
+ 62  female(diana).
+ 63  
+ 64  % We can find out if alice is a woman with
+ 65  % female(alice). = yes
+ 66  % listing(male). = list all clauses defining the predicate male
+ 67  % male(X), female(Y). = Show all combinations of male and female
+ 68  
+ 69  % ---------- RULES ----------
+ 70  % Rules are used when you want to say that a fact depends on a group of facts
+ 71  
+ 72  % NOTE : You'll get the discontiguous predicate warning if you
+ 73  % don't keep your predicates together
+ 74  
+ 75  happy(albert).
+ 76  happy(alice).
+ 77  happy(bob).
+ 78  happy(bill).
+ 79  with_albert(alice).
+ 80  
+ 81  % We can define the Fact that when Bob is happy he runs
+ 82  % :- stands for if
+ 83  runs(albert) :- happy(albert).
+ 84  % runs(albert). = yes
+ 85  
+ 86  % We can check if 2 conditions are true by putting a comma (and)
+ 87  % between questions (CONJUCTIONS)
+ 88  dances(alice) :-
+ 89    happy(alice),
+ 90    with_albert(alice).
+ 91  
+ 92  % We can define predicates to keep commands brief
+ 93  does_alice_dance :- dances(alice),
+ 94         write('When Alice is happy and with Albert she dances').
+ 95  % Just type does_alice_dance. in the terminal
+ 96  
+ 97  % Both rules must be true to get a yes result
+ 98  swims(bob) :-
+ 99    happy(bob),
+100    near_water(bob).
+101  % swims(bob). = no
+102  
+103  % We can create 2 instances and if either comes back true the result
+104  % will be yes
+105  swims(bill) :-
+106    happy(bill).
+107  
+108  swims(bill) :-
+109    near_water(bill).
+110  % swims(bill). = yes
+111  
+112  % ---------- VARIABLES ----------
+113  % A variable is an object we are unable to name when writing a program.
+114  % An instantiated variable is one that stands for an object.
+115  % A variable begins with an uppercase letter or _ and can contain
+116  % the same symbols as atoms.
+117  % The same variable name used in 2 different questions represents 2
+118  % completely different variables.
+119  
+120  % An uninstantiated variable can be used to search for any match.
+121  
+122  % Return all females (Type ; to cycle through them)
+123  % female(X). X = alice X = betsy X = diana
+124  
+125  parent(albert, bob).
+126  parent(albert, betsy).
+127  parent(albert, bill).
+128  
+129  parent(alice, bob).
+130  parent(alice, betsy).
+131  parent(alice, bill).
+132  
+133  parent(bob, carl).
+134  parent(bob, charlie).
+135  
+136  % When you are cycling through the results the no at the end signals
+137  % that there are no more results
+138  % parent(X, bob). X = albert, X = alice
+139  
+140  % parent(X, bob), dances(X). X = alice
+141  
+142  % Who is Bobs parent? Does he have parents?
+143  % parent(Y, carl), parent(X, Y). = X = albert, Y = bob, X = alice
+144  % Y = bob
+145  
+146  % Find Alberts grandchildren
+147  % Is Albert a father? Does his children have any children?
+148  % parent(albert, X), parent(X, Y). = X = bob, Y = carl, X = bob,
+149  % Y = charlie
+150  
+151  % Use custom predicate for multiple results
+152  get_grandchild :- parent(albert, X), parent(X, Y),
+153                write('Alberts grandchild is '),
+154                write(Y), nl.
+155  
+156  % Do Carl and Charlie share a parent
+157  % Who is Carls parent? Is this same X a parent of Charlie
+158  % parent(X, carl), parent(X, charlie). = X = bob
+159  
+160  % Use format to get the results
+161  % ~w represents where to put each value in the list at the end
+162  % ~n is a newline
+163  % ~s is used to input strings
+164  get_grandparent :- parent(X, carl),
+165                  parent(X, charlie),
+166                  format('~w ~s grandparent~n', [X, "is the"]).
+167  
+168  % Does Carl have an Uncle?
+169  % Who is Carls parent? Who is Carls fathers brother?
+170  brother(bob, bill).
+171  % parent(X, carl), brother(X, Y). = X = bob, Y = bill
+172  
+173  % Demonstrate axioms and derived facts
+174  % We can also use variables in the database
+175  % If you get the singleton warning, that means you defined a variable
+176  % that you didn't do anything with. (This is ok sometimes)
+177  grand_parent(X, Y) :-
+178    parent(Z, X),
+179    parent(Y, Z).
+180  % grand_parent(carl, A). = A = albert, A = alice
+181  
+182  % X blushes if X is human
+183  blushes(X) :- human(X).
+184  human(derek).
+185  
+186  % If we say one thing is true when somehing else is true, we can also
+187  % find that match if we only assign one thing to be true here.
+188  % blushes(derek). = yes
+189  
+190  % Another example on cause and effect
+191  stabs(tybalt,mercutio,sword).
+192  hates(romeo, X) :- stabs(X, mercutio, sword).
+193  % hates(romeo, X). = X = tybalt
+194  
+195  % We can use _ (anonymous variable) if we won't use the variable
+196  % more than once
+197  % The value of an anonymous var is not output
+198  % Check if any males exist in the database : male(_). = yes
+199  
+200  % ---------- WHERE IS IF? ----------
+201  % You can use a type of case statement instead
+202  
+203  what_grade(5) :-
+204    write('Go to kindergarten').
+205  what_grade(6) :-
+206    write('Go to first grade').
+207  what_grade(Other) :-
+208    Grade is Other - 5,
+209    format('Go to grade ~w', [Grade]).
+210  
+211  % ---------- COMPLEX TERMS / STRUCTURES ----------
+212  % A Structure is an object made up from many other objects (components)
+213  % Structures allow us to add context about what an object is to avoid
+214  % confusion. has(albert,olive) Does Albert have a pet named Olive?
+215  % Does Albert have the food named Olive?
+216  
+217  % Structures have a functor followed by a list of arguments
+218  % The number of arguments a Structure has is its arity
+219  % female(alice). has an arity of one
+220  
+221  % Albert owns a pet cat named Olive
+222  % This is a recursive definition
+223  
+224  owns(albert, pet(cat, olive)).
+225  
+226  % owns(albert, pet(cat, X)). : X = olive
+227  
+228  customer(tom, smith, 20.55).
+229  customer(sally, smith, 120.55).
+230  
+231  % An anonymous variable is used when we don't want a value returned
+232  % Is there a customer named sally and what is her balance
+233  % customer(sally,_,Bal).
+234  
+235  % tab puts the defined number of spaces on the screen
+236  % ~2f says we want a float with 2 decimals
+237  get_cust_bal(FName, LName) :- customer(FName, LName, Bal),
+238    write(FName), tab(1),
+239    format('~w owes us $~2f ~n', [LName, Bal]).
+240  
+241  % Use a complex term to define what it means to be a vertical
+242  % versus a horizontal line
+243  vertical(line(point(X, Y), point(X, Y2))).
+244  horizontal(line(point(X, Y), point(X2, Y))).
+245  
+246  % vertical(line(point(5, 10), point(5, 20))). = yes
+247  % horizontal(line(point(10, 20), point(30, 20))).
+248  
+249  % We can also ask what the value of a point should be to be vertical
+250  % vertical(line(point(5, 10), point(X, 20))). = X = 5
+251  
+252  % We could also ask for the X and Y points
+253  % vertical(line(point(5, 10), X)). = X = point(5,_)
+254  
+255  % ---------- COMPARISON ----------
+256  % alice = alice. = yes
+257  % 'alice' = alice. = yes (Prolog considers these to be the same)
+258  % \+ (alice = albert). = yes (How to check for not equal)
+259  
+260  % 3 > 15. = no
+261  % 3 >= 15. = no
+262  % 3 =< 15. = yes
+263  
+264  % W = alice. = yes
+265  % This says that we can assign the value of alice to W and not that
+266  % W is equal to alice
+267  
+268  % Rand1 = Rand2. = yes
+269  % This says that any variable can be assigned anything and one of
+270  % those things is another variable
+271  
+272  % If variables can be matched up between 2 complex terms and the
+273  % functors are equal then the complex terms are equal
+274  % rich(money, X) = rich(Y, no_debt).
+275  
+276  % ---------- TRACE ----------
+277  % Using trace we can see how Prolog evaluates queries one at a time
+278  
+279  warm_blooded(penguin).
+280  warm_blooded(human).
+281  
+282  produce_milk(penguin).
+283  produce_milk(human).
+284  
+285  have_feathers(penguin).
+286  have_hair(human).
+287  
+288  mammal(X) :-
+289    warm_blooded(X),
+290    produce_milk(X),
+291    have_hair(X).
+292  
+293  
+294  % trace.
+295  % mammal(human).
+296  %       1    1  Call: mammal(human) ?
+297  %       2    2  Call: warm_blooded(human) ?
+298  %       2    2  Exit: warm_blooded(human) ?
+299  %       3    2  Call: produce_milk(human) ?
+300  %       3    2  Exit: produce_milk(human) ?
+301  %       4    2  Call: have_hair(human) ?
+302  %       4    2  Exit: have_hair(human) ?
+303  %       1    1  Exit: mammal(human) ?
+304  % yes
+305  
+306  % mammal(penguin).
+307  %       1    1  Call: mammal(penguin) ?
+308  %       2    2  Call: warm_blooded(penguin) ?
+309  %       2    2  Exit: warm_blooded(penguin) ?
+310  %       3    2  Call: produce_milk(penguin) ?
+311  %       3    2  Exit: produce_milk(penguin) ?
+312  %       4    2  Call: have_hair(penguin) ?
+313  %       4    2  Fail: have_hair(penguin) ?
+314  %       1    1  Fail: mammal(penguin) ?
+315  % no
+316  %
+317  % notrace. Turns off trace
+318  
+319  % Output what ever matches the clauses
+320  % warm_blooded(X), produce_milk(X), write(X),nl.
+321  
+322  % ---------- RECURSION ----------
+323  
+324  /*
+325  parent(albert, bob).
+326  parent(albert, betsy).
+327  parent(albert, bill).
+328  
+329  parent(alice, bob).
+330  parent(alice, betsy).
+331  parent(alice, bill).
+332  
+333  parent(bob, carl).
+334  parent(bob, charlie).
+335  */
+336  
+337  % Works for exact matches
+338  related(X, Y) :- parent(X, Y).
+339  % related(albert, bob). = true
+340  
+341  % Cycles through possible results until related returns a true
+342  related(X, Y) :-
+343    parent(X, Z),
+344    related(Z, Y).
+345  
+346  % related(albert,carl). = true
+347  
+348  % 1. parent(albert, Z). = true = Z = bob, betsy, bill
+349  % 2. related(Z, carl). = true when Z = bob
+350  
+351  % ---------- MATH ----------
+352  % Prolog provides 'is' to evaluate mathematical expressions
+353  % X is 2 + 2. = X = 4
+354  
+355  % You can use parenthese
+356  % X is 3 + (2 * 10). =  X = 23
+357  
+358  % You can also make comparisons
+359  % 50 > 30. = yes
+360  % (3*10) >= (50/2). = yes
+361  % \+ (3 = 10). = yes (How to check for not equal)
+362  % 5+4 =:= 4+5. = yes (Check for equality between expressions)
+363  % 5+4 =\= 4+5. = yes (Check for non-equality between expressions)
+364  % 5 > 10 ; 10 < 100. (Checks if 1 OR the other is true)
+365  
+366  % X is mod(7,2). = X = 1 (Modulus)
+367  
+368  double_digit(X,Y) :- Y is X*2.
+369  % double_digit(4,Y). = Y = 8
+370  % Take the 1st argument, multiply it times 2 and return it as the
+371  % 2nd argument
+372  
+373  % Get random value between 0 and 10
+374  % random(0,10,X).
+375  
+376  % Get all values between 0 and 10
+377  % between(0,10,X).
+378  
+379  % Add 1 and assign it to X
+380  % succ(2,X).
+381  
+382  % Get absolute value of -8
+383  % X is abs(-8).
+384  
+385  % Get largest value
+386  % X is max(10,5).
+387  
+388  % Get smallest value
+389  % X is min(10,5).
+390  
+391  % Round a value
+392  % X is round(10.56).
+393  
+394  % Convert float to integer
+395  % X is truncate(10.56).
+396  
+397  % Round down
+398  % X is floor(10.56).
+399  
+400  % Round up
+401  % X is ceiling(10.56).
+402  
+403  % 2^3
+404  % X is 2** 3.
+405  
+406  % Check if a number is even
+407  % 10//2 = 5 (is 10 = 2 * 5)
+408  is_even(X) :- Y is X//2, X =:= 2 * Y.
+409  
+410  % sqrt, sin, cos, tan, asin, acos, atan, atan2, sinh, cosh, tanh,
+411  % asinh, acosh, atanh, log, log10, exp, pi, e
+412  
+413  % ---------- INPUT / OUTPUT ----------
+414  % write('You saw me'), nl.
+415  
+416  % writeq('I show quotes'), nl.
+417  
+418  % You can read data with read
+419  say_hi :-
+420    write('What is your name? '),
+421    read(X),
+422    write('Hi '),
+423    write(X).
+424  
+425  % say_hi.
+426  % What is your name 'Derek'.
+427  % Hi Derek
+428  
+429  fav_char :-
+430    write('What is your favorite character? '),
+431  
+432    % Receives a char and saves its ascii value to X
+433    get(X),
+434    format('The Ascii value ~w is ', [X]),
+435  
+436    % Outputs Ascii value as the char
+437    put(X),nl.
+438  
+439  % Write to a file by defining the file, text to write, connection
+440  % to the file (Stream)
+441  write_to_file(File, Text) :-
+442    open(File, write, Stream),
+443    write(Stream, Text), nl,
+444    close(Stream).
+445  
+446  % Read from a file
+447  read_file(File) :-
+448          open(File, read, Stream),
+449  
+450          % Get char from the stream
+451          get_char(Stream, Char1),
+452  
+453          % Outputs the characters until end_of_file
+454          process_stream(Char1, Stream),
+455          close(Stream).
+456  
+457  % Continue getting characters until end_of_file
+458  % ! or cut is used to end backtracking or this execution
+459  process_stream(end_of_file, _) :- !.
+460  
+461  process_stream(Char, Stream) :-
+462          write(Char),
+463          get_char(Stream, Char2),
+464          process_stream(Char2, Stream).
+465  
+466  % ---------- HOW TO LOOP ----------
+467  
+468  % Use recursion to loop
+469  count_to_10(10) :- write(10), nl.
+470  
+471  count_to_10(X) :-
+472    write(X),nl,
+473    Y is X + 1,
+474    count_to_10(Y).
+475  
+476  % Receives Low (lowest value) and High (highest value)
+477  count_down(Low, High) :-
+478    % Assigns values between Low and High to Y
+479    between(Low, High, Y),
+480    % Assigns the difference to Z
+481    Z is High - Y,
+482    write(Z),nl,
+483    % Continue looping until Y = 10
+484    Y = 10.
+485  
+486  count_up(Low, High) :-
+487    between(Low, High, Y),
+488    Z is Y + Low,
+489    write(Z), nl,
+490    Y = 10.
+491  
+492  % Loop until they guess a number
+493  % start is a dummy value used to start the looping
+494  guess_num :- loop(start).
+495  
+496  % When they guess 15 they execute this message and exit
+497  loop(15) :- write('You guessed it!').
+498  
+499  loop(X) :-
+500    x \= 15,
+501    write('Guess Number '),
+502    read(Guess),
+503    write(Guess),
+504    write(' is not the number'), nl,
+505    loop(Guess).
+506  
+507  % guess_num.
+508  % Guess Number 12.
+509  % 12 is not the number
+510  % Guess Number 15.
+511  % 15 is not the number
+512  % You guessed it!
+513  
+514  % ---------- CHANGING THE DATABASE ----------
+515  % Any predicate you plan to motify should be marked as dynamic before
+516  % this predicate is used in any way
+517  :- dynamic(father/2).
+518  :- dynamic(likes/2).
+519  :- dynamic(friend/2).
+520  :- dynamic(stabs/3).
+521  
+522  father(lord_montague,romeo).
+523  father(lord_capulet,juliet).
+524  
+525  likes(mercutio,dancing).
+526  likes(benvolio,dancing).
+527  likes(romeo,dancing).
+528  likes(romeo,juliet).
+529  likes(juliet,romeo).
+530  likes(juliet,dancing).
+531  
+532  friend(romeo,mercutio).
+533  friend(romeo,benvolio).
+534  % friend(X, romeo) :- friend(romeo, X).
+535  
+536  stabs(tybalt,mercutio,sword).
+537  stabs(romeo,tybalt,sword).
+538  
+539  % Add new clause to the database at the end of the list for the same
+540  % predicate
+541  % assertz(friend(benvolio, mercutio)).
+542  % friend(benvolio, mercutio). = yes
+543  
+544  % Add clause at the start of the predicate list
+545  % asserta(friend(mercutio, benvolio)).
+546  % friend(mercutio, benvolio). = yes
+547  
+548  % Delete a clause
+549  % retract(likes(mercutio,dancing)).
+550  % likes(mercutio,dancing). = no
+551  
+552  % Delete all clauses that match
+553  % retractall(father(_,_)).
+554  % father(lord_montague,romeo). = no
+555  
+556  % Delete all matching clauses
+557  % retractall(likes(_,dancing)).
+558  % likes(_,dancing). = no
+559  
+560  % ---------- LISTS ----------
+561  % You can store atoms, complex terms, variables, numbers and other
+562  % lists in a list
+563  % They are used to store data that has an unknown number of elements
+564  
+565  % We can add items to a list with the | (List Constructor)
+566  % write([albert|[alice, bob]]), nl.
+567  
+568  % Get the length of a list
+569  % length([1,2,3], X).
+570  
+571  % We can divide a list into its head and tail with |
+572  % [H|T] = [a,b,c].
+573  
+574  % H = a
+575  % T = [b,c]
+576  
+577  % We can get additional values by adding more variables to the left
+578  % of |
+579  
+580  %[X1, X2, X3, X4|T] = [a,b,c,d].
+581  
+582  % We can use the anonymous variable _ when we need to reference a
+583  % variable, but we don't want its value
+584  % Let's get the second value in the list
+585  % [_, X2, _, _|T] = [a,b,c,d].
+586  
+587  % We can use | to access values of lists in lists
+588  % [_, _, [X|Y], _, Z|T] = [a, b, [c, d, e], f, g, h].
+589  
+590  % Find out if a value is in a list with member
+591  % List1 = [a,b,c].
+592  % member(a, List1). = yes
+593  
+594  % We could also get all members of a list with a variable
+595  % member(X, [a, b, c, d]).
+596  
+597  % Reverse a list
+598  % reverse([1,2,3,4,5], X).
+599  
+600  % Concatenate 2 lists
+601  % append([1,2,3], [4,5,6], X).
+602  
+603  % Write items in list on separate line
+604  write_list([]).
+605  
+606  write_list([Head|Tail]) :-
+607    write(Head), nl,
+608    write_list(Tail).
+609  % write_list([1,2,3,4,5]). = Outputs the list
+610  
+611  % ---------- STRINGS ----------
+612  % Convert a string into an Ascii character list
+613  % name('A random string', X).
+614  
+615  % Convert a Ascii character list into a string
+616  % name(X, [65,32,114,97,110,100,111,109,32,115,116,114,105,110,103]).
+617  
+618  % Append can join strings
+619  join_str(Str1, Str2, Str3) :-
+620  
+621    % Convert strings into lists
+622    name(Str1, StrList1),
+623    name(Str2, StrList2),
+624  
+625    % Combine string lists into new string list
+626    append(StrList1, StrList2, StrList3),
+627  
+628    % Convert list into a string
+629    name(Str3, StrList3).
+630  
+631  % join_str('Another ', 'Random String', X). = X = 'Another Random String'
+632  
+633  % get the 1st char from a string
+634  /*
+635  name('Derek', List),
+636  nth0(0, List, FChar),
+637  put(FChar).
+638  */
+639  
+640  % Get length of the string
+641  atom_length('Derek',X).
+\end{verbatim}
+
+\section{Example}
+\label{sec:org9dd9e79}
+\subsection{\texttt{epidemic.cpl}}
+\label{sec:org47aaf2b}
+\url{http://github.com/friguzzi/cplint/blob/master/prolog/examples/epidemic.cpl}
+
+\begin{verbatim}
+ 1  /*
+ 2  Model of the development of an epidemic or a pandemic.
+ 3  From
+ 4  E. Bellodi and F. Riguzzi. Expectation Maximization over binary decision
+ 5  diagrams for probabilistic logic programs. Intelligent Data Analysis,
+ 6  17(2):343-363, 2013.
+ 7  */
+ 8  
+ 9  
+10  epidemic : 0.6; pandemic : 0.3 :- flu(_), cold.
+11  % if somebody has the flu and the climate is cold, there is the possibility
+12  % that an epidemic arises with probability 0.6 and the possibility that a
+13  % pandemic arises with probability 0.3
+14  
+15  cold : 0.7.
+16  % it is cold with probability 0.7
+17  
+18  flu(david).
+19  flu(robert).
+20  % david and robert have the flu for sure
+21  
+22  /** <examples>
+23  
+24  ?- epidemic.  % what is the probability that an epidemic arises?
+25  % expected result 0.588
+26  ?- pandemic.  % what is the probability that a pandemic arises?
+27  % expected result 0.357
+28  
+29  */
+\end{verbatim}
+
+\subsection{Load the library}
+\label{sec:org5d29b97}
+
+\subsubsection{Step 1}
+\label{sec:orgb17d410}
+Start swipl in the same directory where \texttt{epidemic.cpl} lives
+
+\begin{verbatim}
+1  swipl
+\end{verbatim}
+
+\subsubsection{Step 2}
+\label{sec:org0f103bf}
+Then type into the \texttt{swipl} console "\texttt{[epidemic].}" and press enter.
+
+\begin{verbatim}
+1  [epidemic].
+\end{verbatim}
+
+This should load the \texttt{epidemic.cpl} program.
+
+\subsubsection{Step 3}
+\label{sec:orgf88e77b}
+
+Then to calculate the probability of an epidemic, type the following into the console and press enter:
+
+\begin{verbatim}
+1  prob(epidemic,P).
+\end{verbatim}
+
+\subsubsection{Output}
+\label{sec:orgb593156}
+\begin{verbatim}
+ 1  Welcome to SWI-Prolog (threaded, 64 bits, version 8.0.2)
+ 2  SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+ 3  Please run ?- license. for legal details.
+ 4  
+ 5  For online help and background, visit http://www.swi-prolog.org
+ 6  For built-in help, use ?- help(Topic). or ?- apropos(Word).
+ 7  
+ 8  ?- [epidemic].
+ 9  true.
+10  
+11  ?- prob(epidemic,P).
+12  P = 0.42 .
+13  
+14  ?-
+\end{verbatim}
+
+\section{cplint Glossary}
+\label{sec:orgb241378}
+
+\begin{verbatim}
+ 1  cpl
+ 2  cplint
+ 3      [#prolog]
+ 4      [prolog package]
+ 5  
+ 6      cplint is a package for prolog that is
+ 7      used for probabilistic logic programming.
+ 8  
+ 9  prob/2
+10      [#cplint]
+11      [predicate]
+12  
+13      prob is a predicate for the cplint that
+14      takes 2 arguments.
+15  
+16      Computes the probability of an atom.
+17  
+18          a:0.2:-
+19              prob(b,P),
+20              P > 0.2.
+21  
+22      Read about it:
+23      - http://friguzzi.github.io/cplint/_build/html/index.html
+\end{verbatim}
+\end{document}

@@ -1,0 +1,4 @@
+;; Display the real life colour for something in the format 0xRRGGBBAA
+;; arguments: (thing)
+(message (eval '(hex-colour-of-thing "blueberries")))
+--> 

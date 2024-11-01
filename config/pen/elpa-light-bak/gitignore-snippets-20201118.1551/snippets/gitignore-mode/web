@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: Web
+# contributor: Toptal & contributors
+# key: web
+# --
+
+### Web ###
+
+*.asp
+*.cer
+*.csr
+*.css
+*.htm
+*.html
+*.js
+*.jsp
+*.php
+*.rss
+*.wasm
+*.wat
+*.xhtml

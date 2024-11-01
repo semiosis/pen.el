@@ -1,0 +1,14 @@
+ "Start Cider REPL"
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Start Cider REPL"
+      command: "cider repl"
+      register: cider_repl_output
+      ignore_errors: true
+      delegate_to: localhost
+      with_items:
+        - "{{ ansible_env.HOME }}/.lein/self-installs/leiningen-2.9.1-standalone.jar"
+        - "{{ ansible_env.HOME }}/.lein/self-installs/leiningen-2.9.1-standalone.jar"
+        - "{{ ansible_env.HOME }}/.lein/self-installs/leiningen-2.9.1-standalone.jar"
+        - "{{ ansible_env.HOME }}/.lein/self-installs/leining

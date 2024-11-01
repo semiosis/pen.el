@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "ncdu" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ncdu" "#" "<==" "nvim"
+cd /root/.pen/documents/notes;  "ncdu" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ncdu" "#" "<==" "nvim"
+cd /volumes/home/shane/var/smulliga/source/git/OpenZeppelin/openzeppelin-contracts;  "ncdu" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/OpenZeppelin/openzeppelin-contracts;  "ncdu" "#" "<==" "nvim"

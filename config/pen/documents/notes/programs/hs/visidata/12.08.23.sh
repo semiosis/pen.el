@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "visidata" "-f" "scrape" "https://news.ycombinator.com/" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-f" "scrape" "https://news.ycombinator.com/" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-f" "scrape" "https://news.ycombinator.com/" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-f" "scrape" "https://news.ycombinator.com/" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-f" "scrape" "https://news.ycombinator.com/" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-f" "scrape" "https://news.ycombinator.com/" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-f" "scrape" "https://news.ycombinator.com/" "#" "<==" "pen-fpvd"

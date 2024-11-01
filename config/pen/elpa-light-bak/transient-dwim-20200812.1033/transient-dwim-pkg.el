@@ -1,0 +1,2 @@
+;;; Generated package description from transient-dwim.el  -*- no-byte-compile: t -*-
+(define-package "transient-dwim" "20200812.1033" "Useful preset transient commands" '((emacs "26.1") (transient "0.1")) :commit "de03d875dd89b1d838be67b0c44d9786adf96717" :authors '(("Naoya Yamashita" . "conao3@gmail.com")) :maintainer '("Naoya Yamashita" . "conao3@gmail.com") :keywords '("tools") :url "https://github.com/conao3/transient-dwim.el")

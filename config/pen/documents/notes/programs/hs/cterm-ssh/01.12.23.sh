@@ -1,0 +1,1 @@
+cd /root/.pen/documents/agenda;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Be_Thou_My_Vision-Slane.mp3" "#" "<==" "pen-ssh-host"

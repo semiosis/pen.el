@@ -1,0 +1,11 @@
+aho-corasick
+    [string-searching algorithm]
+
+    A kind of dictionary-matching algorithm
+    that locates elements of a finite set of
+    strings (the "dictionary") within an input
+    text.
+
+    It matches all strings simultaneously.
+
+    Invented by Alfred V. Aho and Margaret J. Corasick.

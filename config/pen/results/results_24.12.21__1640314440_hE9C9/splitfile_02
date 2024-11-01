@@ -1,0 +1,10 @@
+"visit" is an interactive compiled Lisp function in "simple.el".
+Simple commands to view or edit a file.
+
+You can use `M-x visit-buffer' to visit a file in the buffer
+where it was specified, or the buffer it was copied from.
+
+You can use `M-x visit-file' to visit a file for editing,
+creating it if it does not exist.
+
+You can use `M-x visit-tags-

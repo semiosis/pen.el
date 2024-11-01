@@ -1,0 +1,27 @@
+engine-title: Reasonable defaults
+engine-doc: |+
+  This is not intended to be hard preference
+  for Pen.el that is always used [to delegate engines to
+  prompts]. Rather, it's a good go-to that a
+  prompt may specify, along with a set of
+  requirements.
+vendor: various vendors
+engine-delimiter: "###"
+# Select the first engine that satisfies the requirements
+engine-family:
+- OpenAI Curie
+- OpenAI Instruct
+- OpenAI Davinci
+- OpenAI Codex
+# Unless, for specific requirements, defer
+defer:
+- nl+code: OpenAI Codex
+- code: OpenAI Codex
+- nl: OpenAI Davinci
+- nltask: OpenAI Instruct
+- speed: OpenAI Curie
+# If a model is not resolved (e.g. all are
+# unavailable) then try these in order:
+fallbacks:
+- OpenAI
+- AI21

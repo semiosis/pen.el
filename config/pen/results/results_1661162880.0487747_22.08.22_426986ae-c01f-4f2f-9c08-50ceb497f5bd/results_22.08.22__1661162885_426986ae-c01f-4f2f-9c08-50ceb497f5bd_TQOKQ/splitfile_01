@@ -1,0 +1,7 @@
+ 
+-- bad style 
+example1 = do   s <- getLine 
+let number = (read s :: Int) + 2 
+putStrLn $ "Number plus 2 = " ++ show number 
+
+Example

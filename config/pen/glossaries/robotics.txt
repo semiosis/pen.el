@@ -1,0 +1,278 @@
+https://www.productivity.com/robotic-glossary-of-terms/
+
+Euler angles
+    A set of three rotations about the local
+    coordinate system of a moving body.
+    
+    The current axis of rotation depends on
+    the resultant axis position due to
+    previous rotations.
+    
+    Therefore these angles are sequence
+    dependent, and the order of rotations must
+    be specified, to accurately determine the
+    final body orientation.
+
+JOINT-coordinates
+joint coordinates
+Joint Coordinate System
+JCS
+    http://learnchannel-tv.com/robot/robot-coordinate-systems/joint-coordinates/
+    http://www.biomechanics.psu.edu/tutorials/Kin_tutor10.html
+
+    An alternative way to express the rotation
+    of two adjacent segments is the joint
+    coordinate system (JCS) method.
+    
+    Similar to Euler angles, the relative
+    rotation of two body-segment CSs is
+    expressed by three rotation angles.
+
+    This is used not just in robotics but in
+    anatomy.
+
+trajectories
+    - Robots are programmed to follow trajectories
+    - Robots may be programmed by providing a
+      sequence of points
+    - The points may be expressed in:
+      - Cartesian coordinates
+      - Joint coordinates
+    - From points trajectories are generated
+    - From trajectories, the controller
+      generates commands for actuators
+    - Control may be:
+      - open loop
+      - closed loop
+        - low-level
+          it uses only information from internal sensors
+        - high-level
+          it uses information from external sensors
+
+Taxonomy of Trajectories
+    The achievable trajectories depend on the
+    physical structure of the robot.
+
+    Typical robotic trajectories are:
+    - stop-to-stop
+    - point-to-point
+    - controlled
+    - continuous
+
+Stop-to-Stop Trajectories
+    Used by joints that can be actuated
+    through on/off commands.
+
+    The movement goes between the two ends of
+    the joint
+
+    Typical of pneumatic joints
+
+    Open loop control
+
+    Real-time computation is not required
+
+    Programming is achieved by placing the limits
+
+    Re-programming is hard
+
+    This kind of trajectories are used a lot
+    in simple industrial applications (like
+    pick and place) due to their simplicity.
+
+Continuous Trajectories
+    - To program a precise trajectory the
+      easiest method consists of manually
+      moving the robot while sampling and
+      registering the joint variables.
+    - Between the samples the controller adopt
+      a point-topoint trajectory.
+    - Movements are fluent.
+    - Memory requirements may be huge.
+
+Real Time Streaming Protocol
+RTSP
+    A network control protocol designed for
+    use in entertainment and communications
+    systems to control streaming media
+    servers.
+    
+    The protocol is used for establishing and
+    controlling media sessions between end
+    points.
+
+QoS in DDS
+    A set of configurable parameters that
+    control the behavior of a DDS system, such
+    as resource consumption, fault tolerance,
+    and communication reliability.
+
+QoS
+Quality of Service
+        said qwos
+
+DDS
+Data Distribution Service
+
+GNSS
+Global Navigation Satellite System
+    The standard generic term for satellite
+    navigation systems that provide autonomous
+    geo-spatial positioning with global
+    coverage.
+    
+    This term includes e.g. the GPS, GLONASS,
+    Galileo, Beidou and other regional
+    systems.
+
+    What is GNSS used for?
+        GNSS receivers, using the GPS,
+        GLONASS, Galileo or BeiDou system, are
+        used in many applications.
+        
+        The first systems were developed in
+        the 20th century, mainly to help
+        military personnel find their way, but
+        location awareness soon found many
+        civilian applications.
+
+ApexOS
+    - ros2
+
+autoware
+autoware.ai
+    https://www.autoware.ai/
+
+    The original Autoware project built on
+    ROS1.
+    
+    Launched as a research and development
+    platform for autonomous driving
+    technology.
+
+    The world's first "All-in-One" open-source
+    software for autonomous driving
+    technology.
+    
+    It is based on ROS 1 and available under
+    Apache 2.0 license.
+    
+    It contains the following modules:
+
+    Localization
+        Achieved by 3D maps and SLAM
+        algorithms in combination with GNSS
+        and IMU sensors. 
+
+    Detection
+        Uses cameras and LiDARs with sensor
+        fusion algorithms and deep neural
+        networks.
+
+    Prediction and Planning
+        Based on probabilistic robotics and
+        rule-based systems, partly using deep
+        neural networks as well. 
+
+    output to the vehicle
+        The output of Autoware to the vehicle
+        is a twist of velocity and angular
+        velocity.
+        
+        This is a part of Control, though the
+        major part of Control stack commonly
+        reside in the by-wire controller of
+        the vehicle.
+
+        Autoware system provides command and
+        control over the following functions
+        of the vehicle: 
+        - Accelerator 
+        - Brakes 
+        - Steering 
+        - Transmission shift 
+        - Horn 
+        - Turn Signals 
+        - Hazard lights 
+        - Headlights (on/off and high beam/low beam)
+
+HSDS
+Highly Scalable Data Service
+    REST-based service for HDF5 data using
+    object storage.
+
+    https://github.com/HDFGroup/hsds
+    https://www.hdfgroup.org/solutions/hdf-kita/
+
+Kita
+  [#HSDS]
+    Kita™ Server for AWS Marketplace
+        Access from anywhere using Amazon
+        Machine Image (AMI) for AWS.
+
+    Kita™ Server for On Premise
+        Work with The HDF Group staff for a
+        custom solution to install and access
+        Kita on your existing infrastructure.
+
+signal processing
+    Subfields:
+    - Digital signal processing
+    - Analog signal processing
+
+digital signal
+    [#digital electronics]
+
+    Represented as a pulse train.
+
+Digital signal processing
+DSP
+    [#signal processing]
+
+    The use of digital processing, such as by
+    computers or more specialized digital
+    signal processors, to perform a wide
+    variety of signal processing operations.
+    
+    The digital signals processed in this
+    manner are a sequence of numbers that
+    represent samples of a continuous variable
+    in a domain such as time, space, or
+    frequency.
+    
+    Applications:
+    - audio and speech processing,
+    - sensor array processing,
+        - sonar
+        - radar
+    - spectral density estimation,
+    - statistical signal processing,
+    - digital image processing,
+    - data compression,
+    - video coding,
+    - audio coding,
+    - image compression,
+    - signal processing for telecommunications,
+    - control systems,
+    - biomedical engineering, and
+    - seismology
+
+    The application of digital computation to
+    signal processing allows for many
+    advantages over analog processing in many
+    applications, such as error detection and
+    correction in transmission as well as data
+    compression.
+
+Gaussian function
+a Gaussian
+    A function of the form: for arbitrary real
+    constants a , b and non zero c .
+    
+    The graph of a Gaussian is a
+    characteristic symmetric "bell curve"
+    shape.
+
+    Lingo:
+    - "don't have to specify all the
+      gaussians"

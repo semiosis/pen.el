@@ -1,0 +1,10 @@
+"async/go-loop"
+(fn [ch]
+  (async/go-loop []
+    (async/timeout 1000
+      (fn []
+        (async/put-pending-job ch (random-uuid))))))))
+
+(defonce main-router (route/router
+    "^/hello" (fn [req]
+      (resp/response-json req { :message "Hello World!" :id (-> req :request-

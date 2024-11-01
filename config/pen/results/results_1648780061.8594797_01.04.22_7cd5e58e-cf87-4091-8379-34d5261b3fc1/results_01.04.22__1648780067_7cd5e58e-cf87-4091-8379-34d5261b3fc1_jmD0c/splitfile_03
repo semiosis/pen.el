@@ -1,0 +1,2 @@
+
+- When a prompt function is run from Pen.el, the prompt function queries the user for a response, the response is sent to the AI and its response is captured\n- You can use Pen.el to:\n  - engineer your own prompt functions\n  - extend Pen.el with prompt functions\n  - as a prompting server to serve other applications

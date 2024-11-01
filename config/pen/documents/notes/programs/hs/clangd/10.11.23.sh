@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /usr/include/event2;  "clangd" "#" "<==" "emacs"
+cd /usr/include;  "clangd" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs;  "clangd" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs;  "clangd" "#" "<==" "emacs"

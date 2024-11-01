@@ -1,0 +1,38 @@
+
+^G#                                                                                                                                                         
+»
+» s
+» 5
+cd:cd:34: no such entry in dir stack
+» ls
+clipboard.txt  core  hi.cl  node_modules  package-lock.json  programs  README.org  todo.org  ws                                                             
+» cat hi.cl
+(inferior-shell:run/ss '(echo (1) "2" (+ 3)))
+» 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ tmwr-zsh-161d3d499f ]  2 zsh

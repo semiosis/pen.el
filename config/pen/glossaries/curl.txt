@@ -1,0 +1,9 @@
+MGET
+    Use the get command to download individual
+    files.
+    
+    Use the Multiple Get ( mget ) command with
+    the wildcard character ( * ) to download
+    all available files in a mailslot. 
+
+    Related "GET".

@@ -1,0 +1,54 @@
+L
+LSPACE
+DLOGSPACE
+    [computational complexity]
+
+    The complexity class containing decision
+    problems that can be solved by a
+    deterministic Turing machine using a
+    logarithmic amount of writable memory
+    space.
+    
+    Formally, the Turing machine has two
+    tapes, one of which encodes the input and
+    can only be read, whereas the other tape
+    has logarithmic size but can be read as
+    well as written.
+    
+    Logarithmic space is sufficient to hold a
+    constant number of pointers into the input
+    and a logarithmic number of boolean flags,
+    and many basic logspace algorithms use the
+    memory in this way.
+
+PL
+Probabilistic L
+    The class of languages recognizable by a
+    polynomial time logarithmic space
+    randomized machine with probability > 1/2
+    (this is called unbounded error).
+    
+    Equivalently, as shown below, PL is the
+    class of languages recognized by unbounded
+    time unbounded error logspace randomized
+    machine.
+
+    An example of PL complete problem (under
+    logspace reduction) is finding whether the
+    determinant of a matrix (with integral
+    coefficients) is positive.
+
+    Given a matrix M and a number n, testing
+    with {\displaystyle |M|>n}{\displaystyle
+    |M|>n}[note 1] is also PL complete. By
+    contrast, testing whether matrix permanent
+    is positive is PP complete.
+
+    PLPL=PL in the sense that for every f in
+    PL, PL is unchanged if it is extended to
+    allow {\displaystyle x\to
+    f(A,x)}{\displaystyle x\to f(A,x)} as a
+    subroutine, where A is the input string.
+
+    PL contains NL and BPL and is contained in
+    NC2.

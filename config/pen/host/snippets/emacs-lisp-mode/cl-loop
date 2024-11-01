@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: cl-loop
+# group: for
+# key: for
+# --
+(cl-loop for buf in (buffer-list) collect (buffer-file-name buf))
+;; This loop inserts the phrase “Yowsa” twenty times in the current
+;; buffer.
+(cl-loop repeat 20 do (insert "Yowsa\n"))
+;; This loop calls munch-line on every line until the end of the buffer.
+;; If point is already at the end of the buffer, the loop exits
+;; immediately.
+(cl-loop until (eobp) do (munch-line) (forward-line 1))
+;; This loop is similar to the above one, except that munch-line is
+;; always called at least once.
+(cl-loop for x from 1 to 100
+         for y = (* x x)
+         until (>= y 729)
+         finally return (list x (= y 729)))
+
+;; seq is my own
+(dolist (n (seq 1 10))
+  (message (str n)))
+
+(catch 'bbb
+  (mapc
+   (lambda (x)
+     (message "%s" x)
+     (when (equal x 3) (throw 'bbb x)))
+   myList)
+  nil)

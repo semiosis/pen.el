@@ -1,0 +1,43 @@
+title: Generic tutor for any topic
+tags: chatbot
+issues:
+- It's not as accurate as asktutor/3 or that may have been because I was forcing Codex
+prompt-version: 3
+subprompts:
+- metaprompt: |
+    This is a conversation between a student and their professor.
+    The topic is <q:topic>.
+    <delim>
+- pretext: |
+    Student: "I was in the library the other night in the restricted section and I found a book about <topic>?"
+    Professor: "Of course. What do you need to know?"
+    <delim>
+prompt: |
+  <metaprompt>
+  <pretext>
+  The student asks a question and the professor explains.
+  <delim>
+  Student: <q:question>
+  <delim>
+  The complete explanation.
+  Professor: <:pp>"
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 150
+frequency-penalty: 0.3
+top-p: 1
+best-of: 3
+stop-sequences:
+- "<delim>"
+- "Student:"
+vars:
+- topic
+- question
+examples:
+- nlp
+- What is BPE?
+conversation: true
+conversation-pretext-generator: human-conversation
+postprocessor: "sed \"s/^\\\\(Student\\\\|Professor\\\\): //\" | pen-pretty-paragraph | tr -d '\"'"
+external-related:
+- "https://www.youtube.com/watch?v=buJPwD5nW1g"

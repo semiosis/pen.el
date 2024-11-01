@@ -1,0 +1,6 @@
+http://www.lispworks.com/reference/HyperSpec/Body/f_unionc.htm
+
+
+(defun f-union (set1 set2)
+   "Return the union of SET1 and SET2, without duplicates."
+   (let* ((result (make-hash-table :test 'equal))

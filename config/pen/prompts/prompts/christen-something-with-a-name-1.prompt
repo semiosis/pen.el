@@ -1,0 +1,36 @@
+task: "Christen something with a name"
+doc: "Given the details of something, christen with a name"
+tags: life
+prompt-version: 1
+prompt: |-
+  Details:
+  <details>
+  It was given a really catchy nickname by the previous owner: "
+force-engine: "OpenAI Davinci"
+force-temperature: 0.8
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+n-completions: 20
+stop-sequences:
+- "\""
+- "\n"
+cache: on
+vars:
+- "details"
+examples:
+- |-
+    * Honda CRX Del Sol
+    - 1993 1.5 SOHC (Single Overhead Cam) VTec D15B
+    - Sports Coup
+    - Trans-top model
+    - Rear window does work
+    - 5-speed manual
+    - Date of purchase: 19th October 2021
+    - Mum and Dad approve
+    - As of Nov 22 2021 has done 154 thousand km but purchased 149 thousand km
+    - YA7964
+    - Color: blue
+    - Japanese import
+filter: on
+completion: off
+insertion: off

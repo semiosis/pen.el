@@ -1,0 +1,59 @@
+HTTP/1.1 200 OK
+Date: Sat, 17 Feb 2024 03:40:09 GMT
+Server: Apache/2.4.58 (Unix)
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Tue, 01 May 2012 10:52:48 GMT
+Accept-Ranges: none
+Vary: Accept-Encoding,User-Agent
+Content-Length: 799
+Keep-Alive: timeout=3, max=100
+Content-Type: text/html
+
+<html>
+<head>
+<title>dettus.net- Now with 6502asm, an assembler for the 6502 CPU.</title>
+</head>
+<body bgcolor='#000000' text='#d5d6d5' link='#44ffff' vlink='#44ffff' alink='#44ffff'>
+<table>
+<td valign="top" align="right" width='5%'>
+<a href="/index.html"><img src="/dettus.png" height=43 width=88></a><br>
+<a href="/photos">:photos</a><br>
+<a href="/papers">:papers</a><br>
+<a href="/tutorials">:tutorials</a><br>
+<a href="/drm">:drm</a><br>
+<a href="/nmicrocoder">:nmicrocoder</a><br>
+<a href="/daes">:daes</a><br>
+<a href="/dhex">:dhex</a><br>
+<a href="/deadline">:deadline</a><br>
+<a href="/dettuxx">:dettuxx</a><br>
+<a href="/circdraw">:circdraw</a><br>
+<a href="/systemc.html">:systemc</a><br>
+<a href="/xf86config.html">:xf86config</a><br>
+<a href="/qdslconfig.html">:qdslconfig</a><br>
+<a href="/bootfloppy">:bootfloppy</a><br>
+<a href="/6502">:6502</a><br>
+<a href="/alienware">:alienware</a><br>
+<br>
+<a href="/math">:math</a><br>
+<br>
+<a href="/winscp368setup.exe">winscp.exe</a><br>
+<a href="/putty.exe">putty.exe</a><br>
+<br>
+<a href="/impressum.html">:impressum</a><br>
+</td><td valign="top" width='1%'></td><td valign="top" width='96%'>
+
+circdraw is a program which is used to draw circuit diagrams in latex. It was
+written by Thomas Dettbarn (dettus@dettus.net). Make sure to include the word
+"circdraw" somewhere in the subject header.<br>
+Latest Version: <a href="circdraw_latest.tar.gz">circdraw_latest.tar.gz</a><br>
+<hr>
+Version 0.1, January 21, 2007: <a href="circdraw_0.1.tar.gz">circdraw_0.1.tar.gz</a> MD5 (circdraw_0.1.tar.gz) = d4075484c4ba0bfc21fd9590774cabce<br>
+Version 0.11, January 26, 2007: <a href="circdraw_0.11.tar.gz">circdraw_0.11.tar.gz</a> MD5 (circdraw_0.11.tar.gz) = f164701ca1e72bbfc1f866b33fbeabe1<br>
+Version 0.12, September 23, 2007: <a href="circdraw_0.12.tar.gz">circdraw_0.12.tar.gz</a> MD5 (circdraw_0.12.tar.gz) = 752148edbef8c7ce9bbdf8dc47747d8a<br>
+<hr>
+<center><img src="circdrawshot.png"><br></center>
+</td>
+</table>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tablecaption
+# group: table
+# key: cap
+# --
+#+CAPTION: ${0:Constants}

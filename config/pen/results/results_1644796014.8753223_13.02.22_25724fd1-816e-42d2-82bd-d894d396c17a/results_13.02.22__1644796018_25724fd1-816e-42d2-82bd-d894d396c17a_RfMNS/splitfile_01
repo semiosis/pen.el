@@ -1,0 +1,7 @@
+,
+   which was the first installment in Carroll's fantasy novelal saga.
+   """))
+
+    def test_split_big(self):
+
+        s = "Lorem ipsum dolor sit amet, consectet

@@ -1,0 +1,39 @@
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 582
+Server: DataDome
+X-DataDome: protected
+Accept-CH: Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory
+Content-Type: text/html;charset=utf-8
+Charset: utf-8
+Cache-Control: max-age=0, private, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Accept-CH: Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory
+X-DataDome-CID: AHrlqAAAAAMAETSWFxGyjcAAy2DLLA==
+Set-Cookie: datadome=3i5G-adbXAu1Mv7YX-oo-p~reAVnkGO9jWUy724ddBpYlZ3elGc5wVw6zb-bkMlp6L1CBe_ix5KOtU87_DP_T-yE3ivWSflnxJJXayXjwfENB8hwpii~It2E-vGy6jpL; Max-Age=31536000; Domain=www.nytimes.com; Path=/; Secure; SameSite=Lax
+x-datadome-timer: S1695165451.904327,VS0,VE36
+X-Origin-Time: 2023-09-19 23:17:30 UTC
+Accept-Ranges: bytes
+Date: Tue, 19 Sep 2023 23:17:30 GMT
+X-Served-By: cache-akl10324-AKL
+X-Cache: MISS
+X-Cache-Hits: 0
+Vary: Fastly-SSL
+Set-Cookie: nyt-a=yIIYppVTt4_B03LakpOasj; Expires=Wed, 18 Sep 2024 23:17:30 GMT; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+x-nyt-app-webview: 0
+Set-Cookie: nyt-gdpr=0; Expires=Wed, 20 Sep 2023 05:17:30 GMT; Path=/; Domain=.nytimes.com
+x-gdpr: 0
+Set-Cookie: nyt-purr=cfhhcfhhhukfhufs; Expires=Wed, 18 Sep 2024 23:17:30 GMT; Path=/; Domain=.nytimes.com; SameSite=Lax; Secure
+Set-Cookie: nyt-us=0; Expires=Wed, 20 Sep 2023 05:17:30 GMT; Path=/; Domain=.nytimes.com
+Set-Cookie: nyt-geo=NZ; Expires=Wed, 20 Sep 2023 05:17:30 GMT; Path=/; Domain=.nytimes.com
+X-Frame-Options: DENY
+Set-Cookie: nyt.et.dd=iv=EC0D9976B7C2400EBA13240AF37EEFF8&val=QC8hnZqd1MhGH47SmYAB1m3WzOdtF9ql4itqtOj7Nr95oZWJqKTagcBWblQj/8j85l5pDRJ0o1mxpRlGFvkiyFyD8lxcU0lKFkezsSrDd3EhDpdA/d0n1BkZ1GbUv0LJ/DB6wP6GAi/wx1Xt++0+h3STdbxXR5330Aln54sfB8F5urPum2DvKOIZJ3e/GEbKraFLzve52EbxCu5K1tDv23bEAsRCQ0SlB9Zzjjv+vja1spww889isF/P+Y/pyqxhA+upGzzZ5I1vnklfc/zmJIfDvAmMMqvMdRG1QVXSPBcrBB6DsiqLLkmTaE2yyh90XOAf2duQD2XCE0S3Y2N5yf9OFIoGpebHQYeYrTedw2Q=; Max-Age=60; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+onion-location: https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion/2023/09/19/arts/russell-brand-youtube.html
+X-API-Version: F-X
+x-nyt-route: vi-story
+Content-Security-Policy: upgrade-insecure-requests; default-src data: 'unsafe-inline' 'unsafe-eval' https:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob:; style-src data: 'unsafe-inline' https:; img-src data: https: blob: android-webview-video-poster:; font-src data: https:; connect-src https: wss: blob:; media-src data: https: blob:; object-src https:; child-src https: data: blob:; form-action https:; report-uri https://csp.nytimes.com/report;
+Strict-Transport-Security: max-age=63072000; preload; includeSubdomains
+Set-Cookie: nyt-b3-traceid=7a441acb74664121b67e843d3abc4a1d; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+x-nyt-edge-cache: MISS
+
+<html><head><title>nytimes.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style></head><body style="margin:0"><p id="cmsg">Please enable JS and disable any ad blocker</p><script data-cfasync="false">var dd={'rt':'c','cid':'AHrlqAAAAAMAETSWFxGyjcAAy2DLLA==','hsh':'499AE34129FA4E4FABC31582C3075D','t':'fe','s':17439,'e':'399d7be7d243da8811c2a70d014e978952c284b52f0050c0c61bd2545a1f1a81','host':'geo.captcha-delivery.com'}</script><script data-cfasync="false" src="https://ct.captcha-delivery.com/c.js"></script></body></html>

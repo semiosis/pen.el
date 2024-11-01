@@ -1,0 +1,9 @@
+""")
+
+from sys import exit
+
+def white_dragon():
+    print("""The white dragon is here.
+You are really really not supposed to be here.
+But since you are here, guess what:
+    a

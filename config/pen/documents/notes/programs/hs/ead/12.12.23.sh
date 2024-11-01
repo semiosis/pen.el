@@ -1,0 +1,8 @@
+cd /usr/local/share/emacs/29.1.50/lisp/org;  "ead" "-z" "fuzzy" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp/org;  "ead" "-z" "fuzzy" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" ",@" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "M-l" "M-r" "M-a" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "diathekel" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "diatheke" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "org-ref" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "pen-company-filetype-if-prefix" "#" "<==" "ead"

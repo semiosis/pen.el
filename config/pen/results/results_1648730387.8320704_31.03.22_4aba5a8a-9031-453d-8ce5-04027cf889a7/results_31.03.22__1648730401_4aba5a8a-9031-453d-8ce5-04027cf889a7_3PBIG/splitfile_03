@@ -1,0 +1,21 @@
+- 1. David Love (1941-2009)
+- 2. Benoît Moué
+- 3. Itamar Shtull-Trauring (1980-)
+- 4. Simon Peyton Jones (1946-)
+"""
+import re
+import random
+from itertools import combinations
+import networkx as nx
+from sklearn.feature_extraction.text import CountVectorizer
+
+
+def _is_blank(line):
+    """Is the line blank"""
+    return re.match(r"\s*$", line) is not None
+
+
+def _is_topic(line):
+    """Is the line a topic"""
+    if _is_blank(line):
+        return

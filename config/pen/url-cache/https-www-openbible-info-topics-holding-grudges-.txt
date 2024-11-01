@@ -1,0 +1,1310 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 17968
+Connection: close
+Date: Tue, 26 Sep 2023 03:16:50 GMT
+Server: Apache
+Cache-Control: max-age=600
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 428f5fd898b57c76263aa42c4277686a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD62-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: wEq8Mr9ThGg5sinin6NpgZFQNYaS_C1VEK_CuN-L-4fB3RAth0utjA==
+Age: 7
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>What Does the Bible Say About Holding Grudges?</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/topics/holding_grudges/" />
+<meta name="description" content="Bible verses about Holding Grudges" />
+</head>
+<body class="topics inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<form action="/topics/" method="get" class="topic-search">
+	<p><label>What does the Bible say about
+		<input type="text" size="30" name="q" maxlength="100" value="Holding Grudges" /></label>?
+		<input type="submit" value="Find Out" />
+	</p>
+	<p class="alpha-nav">
+						<a href="/topics/a">A</a>
+							&#8227;
+								<a href="/topics/b">B</a>
+							&#8227;
+								<a href="/topics/c">C</a>
+							&#8227;
+								<a href="/topics/d">D</a>
+							&#8227;
+								<a href="/topics/e">E</a>
+							&#8227;
+								<a href="/topics/f">F</a>
+							&#8227;
+								<a href="/topics/g">G</a>
+							&#8227;
+								<a href="/topics/h">H</a>
+							&#8227;
+								<a href="/topics/i">I</a>
+							&#8227;
+								<a href="/topics/j">J</a>
+							&#8227;
+								<a href="/topics/k">K</a>
+							&#8227;
+								<a href="/topics/l">L</a>
+							&#8227;
+								<a href="/topics/m">M</a>
+							&#8227;
+								<a href="/topics/n">N</a>
+							&#8227;
+								<a href="/topics/o">O</a>
+							&#8227;
+								<a href="/topics/p">P</a>
+							&#8227;
+								<a href="/topics/q">Q</a>
+							&#8227;
+								<a href="/topics/r">R</a>
+							&#8227;
+								<a href="/topics/s">S</a>
+							&#8227;
+								<a href="/topics/t">T</a>
+							&#8227;
+								<a href="/topics/u">U</a>
+							&#8227;
+								<a href="/topics/v">V</a>
+							&#8227;
+								<a href="/topics/w">W</a>
+							&#8227;
+								<a href="/topics/y">Y</a>
+							&#8227;
+								<a href="/topics/z">Z</a>
+					</p></form>
+<h1><span class="small">		100 Bible Verses about
+	</span> Holding Grudges</h1>
+<p><a href="https://twitter.com/share?url=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fholding_grudges%2F" target="_blank" class="share" aria-label="Share on Twitter"><span style="background-color: #55acee"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M26.67 9.38c-.78.35-1.63.58-2.51.69.9-.54 1.6-1.4 1.92-2.42-.85.5-1.78.87-2.78 1.06a4.38 4.38 0 0 0-7.57 3c0 .34.04.68.11 1-3.64-.18-6.86-1.93-9.02-4.57-.38.65-.59 1.4-.59 2.2 0 1.52.77 2.86 1.95 3.64-.72-.02-1.39-.22-1.98-.55v.06c0 2.12 1.51 3.89 3.51 4.29a4.37 4.37 0 0 1-1.97.07c.56 1.74 2.17 3 4.09 3.04a8.82 8.82 0 0 1-5.44 1.87c-.35 0-.7-.02-1.04-.06a12.43 12.43 0 0 0 6.71 1.97c8.05 0 12.45-6.67 12.45-12.45 0-.19-.01-.38-.01-.57.84-.62 1.58-1.39 2.17-2.27z"/></g></svg></span></a>
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fholding_grudges%2F" target="_blank" class="share" aria-label="Share on Facebook"><span style="background-color: #3b5998"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M21 6.144C20.656 6.096 19.472 6 18.097 6c-2.877 0-4.85 1.66-4.85 4.7v2.62H10v3.557h3.247V26h3.895v-9.123h3.234l.497-3.557h-3.73v-2.272c0-1.022.292-1.73 1.858-1.73h2V6.143z" fill-rule="evenodd"/></g></svg></span></a></p>
+<form action="/topics/holding_grudges" method="post" id="vote"><input type="hidden" name="w" value="holding_grudges" /><input type="hidden" id="db" name="db" value="dy" />
+									<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A31-32&amp;version=ESV" class="bibleref">Ephesians 4:31-32</a>
+					<span class="note">
+						ESV / 1,111 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004031-49004032" type="submit" id="vote_u_49004031-49004032" value="1">Helpful</button>
+					<button name="vote_d_49004031-49004032" type="submit" id="vote_d_49004031-49004032" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice. Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+6%3A14-15&amp;version=ESV" class="bibleref">Matthew 6:14-15</a>
+					<span class="note">
+						ESV / 758 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40006014-40006015" type="submit" id="vote_u_40006014-40006015" value="1">Helpful</button>
+					<button name="vote_d_40006014-40006015" type="submit" id="vote_d_40006014-40006015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A17-21&amp;version=ESV" class="bibleref">Romans 12:17-21</a>
+					<span class="note">
+						ESV / 543 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012017-45012021" type="submit" id="vote_u_45012017-45012021" value="1">Helpful</button>
+					<button name="vote_d_45012017-45012021" type="submit" id="vote_d_45012017-45012021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Repay no one evil for evil, but give thought to do what is honorable in the sight of all. If possible, so far as it depends on you, live peaceably with all. Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, &#8220;Vengeance is mine, I will repay, says the Lord.&#8221; To the contrary, &#8220;if your enemy is hungry, feed him; if he is thirsty, give him something to drink; for by so doing you will heap burning coals on his head.&#8221; Do not be overcome by evil, but overcome evil with good.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Mark+11%3A25&amp;version=ESV" class="bibleref">Mark 11:25</a>
+					<span class="note">
+						ESV / 466 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_41011025" type="submit" id="vote_u_41011025" value="1">Helpful</button>
+					<button name="vote_d_41011025" type="submit" id="vote_d_41011025" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A32&amp;version=ESV" class="bibleref">Ephesians 4:32</a>
+					<span class="note">
+						ESV / 456 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004032" type="submit" id="vote_u_49004032" value="1">Helpful</button>
+					<button name="vote_d_49004032" type="submit" id="vote_d_49004032" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Leviticus+19%3A18&amp;version=ESV" class="bibleref">Leviticus 19:18</a>
+					<span class="note">
+						ESV / 402 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_03019018" type="submit" id="vote_u_03019018" value="1">Helpful</button>
+					<button name="vote_d_03019018" type="submit" id="vote_d_03019018" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the <span class="sc">Lord</span>.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+1%3A19-20&amp;version=ESV" class="bibleref">James 1:19-20</a>
+					<span class="note">
+						ESV / 280 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59001019-59001020" type="submit" id="vote_u_59001019-59001020" value="1">Helpful</button>
+					<button name="vote_d_59001019-59001020" type="submit" id="vote_d_59001019-59001020" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A26&amp;version=ESV" class="bibleref">Ephesians 4:26</a>
+					<span class="note">
+						ESV / 277 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004026" type="submit" id="vote_u_49004026" value="1">Helpful</button>
+					<button name="vote_d_49004026" type="submit" id="vote_d_49004026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Be angry and do not sin; do not let the sun go down on your anger,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+17%3A3-4&amp;version=ESV" class="bibleref">Luke 17:3-4</a>
+					<span class="note">
+						ESV / 277 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42017003-42017004" type="submit" id="vote_u_42017003-42017004" value="1">Helpful</button>
+					<button name="vote_d_42017003-42017004" type="submit" id="vote_d_42017003-42017004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Pay attention to yourselves! If your brother sins, rebuke him, and if he repents, forgive him, and if he sins against you seven times in the day, and turns to you seven times, saying, &#8216;I repent,&#8217; you must forgive him.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+19%3A11&amp;version=ESV" class="bibleref">Proverbs 19:11</a>
+					<span class="note">
+						ESV / 234 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20019011" type="submit" id="vote_u_20019011" value="1">Helpful</button>
+					<button name="vote_d_20019011" type="submit" id="vote_d_20019011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Good sense makes one slow to anger, and it is his glory to overlook an offense.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A31&amp;version=ESV" class="bibleref">Ephesians 4:31</a>
+					<span class="note">
+						ESV / 229 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004031" type="submit" id="vote_u_49004031" value="1">Helpful</button>
+					<button name="vote_d_49004031" type="submit" id="vote_d_49004031" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A19&amp;version=ESV" class="bibleref">Romans 12:19</a>
+					<span class="note">
+						ESV / 207 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012019" type="submit" id="vote_u_45012019" value="1">Helpful</button>
+					<button name="vote_d_45012019" type="submit" id="vote_d_45012019" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, &#8220;Vengeance is mine, I will repay, says the Lord.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+7%3A1-5&amp;version=ESV" class="bibleref">Matthew 7:1-5</a>
+					<span class="note">
+						ESV / 204 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40007001-40007005" type="submit" id="vote_u_40007001-40007005" value="1">Helpful</button>
+					<button name="vote_d_40007001-40007005" type="submit" id="vote_d_40007001-40007005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Judge not, that you be not judged. For with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you. Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, &#8216;Let me take the speck out of your eye,&#8217; when there is the log in your own eye? You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+15%3A1&amp;version=ESV" class="bibleref">Proverbs 15:1</a>
+					<span class="note">
+						ESV / 195 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20015001" type="submit" id="vote_u_20015001" value="1">Helpful</button>
+					<button name="vote_d_20015001" type="submit" id="vote_d_20015001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					A soft answer turns away wrath, but a harsh word stirs up anger.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A13&amp;version=ESV" class="bibleref">Colossians 3:13</a>
+					<span class="note">
+						ESV / 194 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003013" type="submit" id="vote_u_51003013" value="1">Helpful</button>
+					<button name="vote_d_51003013" type="submit" id="vote_d_51003013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so you also must forgive.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+18%3A21-22&amp;version=ESV" class="bibleref">Matthew 18:21-22</a>
+					<span class="note">
+						ESV / 162 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40018021-40018022" type="submit" id="vote_u_40018021-40018022" value="1">Helpful</button>
+					<button name="vote_d_40018021-40018022" type="submit" id="vote_d_40018021-40018022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then Peter came up and said to him, &#8220;Lord, how often will my brother sin against me, and I forgive him? As many as seven times?&#8221; Jesus said to him, &#8220;I do not say to you seven times, but seventy-seven times.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+10%3A12&amp;version=ESV" class="bibleref">Proverbs 10:12</a>
+					<span class="note">
+						ESV / 152 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20010012" type="submit" id="vote_u_20010012" value="1">Helpful</button>
+					<button name="vote_d_20010012" type="submit" id="vote_d_20010012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Hatred stirs up strife, but love covers all offenses.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+1%3A9&amp;version=ESV" class="bibleref">1 John 1:9</a>
+					<span class="note">
+						ESV / 146 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62001009" type="submit" id="vote_u_62001009" value="1">Helpful</button>
+					<button name="vote_d_62001009" type="submit" id="vote_d_62001009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A26-27&amp;version=ESV" class="bibleref">Ephesians 4:26-27</a>
+					<span class="note">
+						ESV / 143 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004026-49004027" type="submit" id="vote_u_49004026-49004027" value="1">Helpful</button>
+					<button name="vote_d_49004026-49004027" type="submit" id="vote_d_49004026-49004027" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Be angry and do not sin; do not let the sun go down on your anger, and give no opportunity to the devil.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A12-14&amp;version=ESV" class="bibleref">Colossians 3:12-14</a>
+					<span class="note">
+						ESV / 137 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003012-51003014" type="submit" id="vote_u_51003012-51003014" value="1">Helpful</button>
+					<button name="vote_d_51003012-51003014" type="submit" id="vote_d_51003012-51003014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience, bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so you also must forgive. And above all these put on love, which binds everything together in perfect harmony.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+14%3A10-12&amp;version=ESV" class="bibleref">Romans 14:10-12</a>
+					<span class="note">
+						ESV / 123 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45014010-45014012" type="submit" id="vote_u_45014010-45014012" value="1">Helpful</button>
+					<button name="vote_d_45014010-45014012" type="submit" id="vote_d_45014010-45014012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Why do you pass judgment on your brother? Or you, why do you despise your brother? For we will all stand before the judgment seat of God; for it is written, &#8220;As I live, says the Lord, every knee shall bow to me, and every tongue shall confess to God.&#8221; So then each of us will give an account of himself to God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+5%3A7&amp;version=ESV" class="bibleref">Matthew 5:7</a>
+					<span class="note">
+						ESV / 112 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40005007" type="submit" id="vote_u_40005007" value="1">Helpful</button>
+					<button name="vote_d_40005007" type="submit" id="vote_d_40005007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Blessed are the merciful, for they shall receive mercy.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A5-10&amp;version=ESV" class="bibleref">Colossians 3:5-10</a>
+					<span class="note">
+						ESV / 111 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003005-51003010" type="submit" id="vote_u_51003005-51003010" value="1">Helpful</button>
+					<button name="vote_d_51003005-51003010" type="submit" id="vote_d_51003005-51003010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+13%3A34-35&amp;version=ESV" class="bibleref">John 13:34-35</a>
+					<span class="note">
+						ESV / 110 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43013034-43013035" type="submit" id="vote_u_43013034-43013035" value="1">Helpful</button>
+					<button name="vote_d_43013034-43013035" type="submit" id="vote_d_43013034-43013035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+1%3A1-27&amp;version=ESV" class="bibleref">James 1:1-27</a>
+					<span class="note">
+						ESV / 104 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59001001-59001027" type="submit" id="vote_u_59001001-59001027" value="1">Helpful</button>
+					<button name="vote_d_59001001-59001027" type="submit" id="vote_d_59001001-59001027" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					James, a servant of God and of the Lord Jesus Christ, To the twelve tribes in the Dispersion: Greetings. Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing. If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+6%3A1-3&amp;version=ESV" class="bibleref">Galatians 6:1-3</a>
+					<span class="note">
+						ESV / 96 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48006001-48006003" type="submit" id="vote_u_48006001-48006003" value="1">Helpful</button>
+					<button name="vote_d_48006001-48006003" type="submit" id="vote_d_48006001-48006003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted. Bear one another's burdens, and so fulfill the law of Christ. For if anyone thinks he is something, when he is nothing, he deceives himself.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+4%3A1&amp;version=ESV" class="bibleref">James 4:1</a>
+					<span class="note">
+						ESV / 94 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59004001" type="submit" id="vote_u_59004001" value="1">Helpful</button>
+					<button name="vote_d_59004001" type="submit" id="vote_d_59004001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					What causes quarrels and what causes fights among you? Is it not this, that your passions are at war within you?				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+16%3A28&amp;version=ESV" class="bibleref">Proverbs 16:28</a>
+					<span class="note">
+						ESV / 93 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20016028" type="submit" id="vote_u_20016028" value="1">Helpful</button>
+					<button name="vote_d_20016028" type="submit" id="vote_d_20016028" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					A dishonest man spreads strife, and a whisperer separates close friends.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+4%3A11-12&amp;version=ESV" class="bibleref">James 4:11-12</a>
+					<span class="note">
+						ESV / 91 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59004011-59004012" type="submit" id="vote_u_59004011-59004012" value="1">Helpful</button>
+					<button name="vote_d_59004011-59004012" type="submit" id="vote_d_59004011-59004012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not speak evil against one another, brothers. The one who speaks against a brother or judges his brother, speaks evil against the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. There is only one lawgiver and judge, he who is able to save and to destroy. But who are you to judge your neighbor?				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+15%3A12&amp;version=ESV" class="bibleref">John 15:12</a>
+					<span class="note">
+						ESV / 85 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43015012" type="submit" id="vote_u_43015012" value="1">Helpful</button>
+					<button name="vote_d_43015012" type="submit" id="vote_d_43015012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;This is my commandment, that you love one another as I have loved you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+18%3A21-35&amp;version=ESV" class="bibleref">Matthew 18:21-35</a>
+					<span class="note">
+						ESV / 84 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40018021-40018035" type="submit" id="vote_u_40018021-40018035" value="1">Helpful</button>
+					<button name="vote_d_40018021-40018035" type="submit" id="vote_d_40018021-40018035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then Peter came up and said to him, &#8220;Lord, how often will my brother sin against me, and I forgive him? As many as seven times?&#8221; Jesus said to him, &#8220;I do not say to you seven times, but seventy-seven times. &#8220;Therefore the kingdom of heaven may be compared to a king who wished to settle accounts with his servants. When he began to settle, one was brought to him who owed him ten thousand talents. And since he could not pay, his master ordered him to be sold, with his wife and children and all that he had, and payment to be made. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A1&amp;version=ESV" class="bibleref">Colossians 3:1</a>
+					<span class="note">
+						ESV / 83 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003001" type="submit" id="vote_u_51003001" value="1">Helpful</button>
+					<button name="vote_d_51003001" type="submit" id="vote_d_51003001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+26%3A12&amp;version=ESV" class="bibleref">Proverbs 26:12</a>
+					<span class="note">
+						ESV / 83 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20026012" type="submit" id="vote_u_20026012" value="1">Helpful</button>
+					<button name="vote_d_20026012" type="submit" id="vote_d_20026012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do you see a man who is wise in his own eyes? There is more hope for a fool than for him.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Peter+4%3A8&amp;version=ESV" class="bibleref">1 Peter 4:8</a>
+					<span class="note">
+						ESV / 82 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_60004008" type="submit" id="vote_u_60004008" value="1">Helpful</button>
+					<button name="vote_d_60004008" type="submit" id="vote_d_60004008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Above all, keep loving one another earnestly, since love covers a multitude of sins.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A8&amp;version=ESV" class="bibleref">Colossians 3:8</a>
+					<span class="note">
+						ESV / 81 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003008" type="submit" id="vote_u_51003008" value="1">Helpful</button>
+					<button name="vote_d_51003008" type="submit" id="vote_d_51003008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A21&amp;version=ESV" class="bibleref">Ephesians 5:21</a>
+					<span class="note">
+						ESV / 77 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49005021" type="submit" id="vote_u_49005021" value="1">Helpful</button>
+					<button name="vote_d_49005021" type="submit" id="vote_d_49005021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Submitting to one another out of reverence for Christ.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+1%3A2-4&amp;version=ESV" class="bibleref">James 1:2-4</a>
+					<span class="note">
+						ESV / 76 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59001002-59001004" type="submit" id="vote_u_59001002-59001004" value="1">Helpful</button>
+					<button name="vote_d_59001002-59001004" type="submit" id="vote_d_59001002-59001004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+23%3A34&amp;version=ESV" class="bibleref">Luke 23:34</a>
+					<span class="note">
+						ESV / 76 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42023034" type="submit" id="vote_u_42023034" value="1">Helpful</button>
+					<button name="vote_d_42023034" type="submit" id="vote_d_42023034" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And Jesus said, &#8220;Father, forgive them, for they know not what they do.&#8221; And they cast lots to divide his garments.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+10%3A25-28&amp;version=ESV" class="bibleref">Luke 10:25-28</a>
+					<span class="note">
+						ESV / 75 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42010025-42010028" type="submit" id="vote_u_42010025-42010028" value="1">Helpful</button>
+					<button name="vote_d_42010025-42010028" type="submit" id="vote_d_42010025-42010028" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And behold, a lawyer stood up to put him to the test, saying, &#8220;Teacher, what shall I do to inherit eternal life?&#8221; He said to him, &#8220;What is written in the Law? How do you read it?&#8221; And he answered, &#8220;You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself.&#8221; And he said to him, &#8220;You have answered correctly; do this, and you will live.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+6%3A31&amp;version=ESV" class="bibleref">Luke 6:31</a>
+					<span class="note">
+						ESV / 75 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42006031" type="submit" id="vote_u_42006031" value="1">Helpful</button>
+					<button name="vote_d_42006031" type="submit" id="vote_d_42006031" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And as you wish that others would do to you, do so to them.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+20%3A22&amp;version=ESV" class="bibleref">Proverbs 20:22</a>
+					<span class="note">
+						ESV / 75 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20020022" type="submit" id="vote_u_20020022" value="1">Helpful</button>
+					<button name="vote_d_20020022" type="submit" id="vote_d_20020022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not say, &#8220;I will repay evil&#8221;; wait for the <span class="sc">Lord</span>, and he will deliver you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A2&amp;version=ESV" class="bibleref">Romans 12:2</a>
+					<span class="note">
+						ESV / 72 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012002" type="submit" id="vote_u_45012002" value="1">Helpful</button>
+					<button name="vote_d_45012002" type="submit" id="vote_d_45012002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+7%3A12&amp;version=ESV" class="bibleref">Matthew 7:12</a>
+					<span class="note">
+						ESV / 70 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40007012" type="submit" id="vote_u_40007012" value="1">Helpful</button>
+					<button name="vote_d_40007012" type="submit" id="vote_d_40007012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A1-13&amp;version=ESV" class="bibleref">1 Corinthians 13:1-13</a>
+					<span class="note">
+						ESV / 69 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46013001-46013013" type="submit" id="vote_u_46013001-46013013" value="1">Helpful</button>
+					<button name="vote_d_46013001-46013013" type="submit" id="vote_d_46013001-46013013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal. And if I have prophetic powers, and understand all mysteries and all knowledge, and if I have all faith, so as to remove mountains, but have not love, I am nothing. If I give away all I have, and if I deliver up my body to be burned, but have not love, I gain nothing. Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+6%3A32-42&amp;version=ESV" class="bibleref">Luke 6:32-42</a>
+					<span class="note">
+						ESV / 67 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42006032-42006042" type="submit" id="vote_u_42006032-42006042" value="1">Helpful</button>
+					<button name="vote_d_42006032-42006042" type="submit" id="vote_d_42006032-42006042" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;If you love those who love you, what benefit is that to you? For even sinners love those who love them. And if you do good to those who do good to you, what benefit is that to you? For even sinners do the same. And if you lend to those from whom you expect to receive, what credit is that to you? Even sinners lend to sinners, to get back the same amount. But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+6%3A12&amp;version=ESV" class="bibleref">Matthew 6:12</a>
+					<span class="note">
+						ESV / 67 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40006012" type="submit" id="vote_u_40006012" value="1">Helpful</button>
+					<button name="vote_d_40006012" type="submit" id="vote_d_40006012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And forgive us our debts, as we also have forgiven our debtors.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+1%3A26&amp;version=ESV" class="bibleref">James 1:26</a>
+					<span class="note">
+						ESV / 66 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59001026" type="submit" id="vote_u_59001026" value="1">Helpful</button>
+					<button name="vote_d_59001026" type="submit" id="vote_d_59001026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+2%3A14-24&amp;version=ESV" class="bibleref">James 2:14-24</a>
+					<span class="note">
+						ESV / 64 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59002014-59002024" type="submit" id="vote_u_59002014-59002024" value="1">Helpful</button>
+					<button name="vote_d_59002014-59002024" type="submit" id="vote_d_59002014-59002024" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					What good is it, my brothers, if someone says he has faith but does not have works? Can that faith save him? If a brother or sister is poorly clothed and lacking in daily food, and one of you says to them, &#8220;Go in peace, be warmed and filled,&#8221; without giving them the things needed for the body, what good is that? So also faith by itself, if it does not have works, is dead. But someone will say, &#8220;You have faith and I have works.&#8221; Show me your faith apart from your works, and I will show you my faith by my works. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Hebrews+13%3A5&amp;version=ESV" class="bibleref">Hebrews 13:5</a>
+					<span class="note">
+						ESV / 64 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_58013005" type="submit" id="vote_u_58013005" value="1">Helpful</button>
+					<button name="vote_d_58013005" type="submit" id="vote_d_58013005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Keep your life free from love of money, and be content with what you have, for he has said, &#8220;I will never leave you nor forsake you.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Isaiah+5%3A21&amp;version=ESV" class="bibleref">Isaiah 5:21</a>
+					<span class="note">
+						ESV / 64 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_23005021" type="submit" id="vote_u_23005021" value="1">Helpful</button>
+					<button name="vote_d_23005021" type="submit" id="vote_d_23005021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Woe to those who are wise in their own eyes, and shrewd in their own sight!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+2%3A4&amp;version=ESV" class="bibleref">2 Corinthians 2:4</a>
+					<span class="note">
+						ESV / 63 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_47002004" type="submit" id="vote_u_47002004" value="1">Helpful</button>
+					<button name="vote_d_47002004" type="submit" id="vote_d_47002004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For I wrote to you out of much affliction and anguish of heart and with many tears, not to cause you pain but to let you know the abundant love that I have for you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&amp;version=ESV" class="bibleref">Galatians 5:22-23</a>
+					<span class="note">
+						ESV / 62 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48005022-48005023" type="submit" id="vote_u_48005022-48005023" value="1">Helpful</button>
+					<button name="vote_d_48005022-48005023" type="submit" id="vote_d_48005022-48005023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+14%3A1&amp;version=ESV" class="bibleref">Romans 14:1</a>
+					<span class="note">
+						ESV / 62 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45014001" type="submit" id="vote_u_45014001" value="1">Helpful</button>
+					<button name="vote_d_45014001" type="submit" id="vote_d_45014001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					As for the one who is weak in faith, welcome him, but not to quarrel over opinions.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+2%3A1-4&amp;version=ESV" class="bibleref">Romans 2:1-4</a>
+					<span class="note">
+						ESV / 62 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45002001-45002004" type="submit" id="vote_u_45002001-45002004" value="1">Helpful</button>
+					<button name="vote_d_45002001-45002004" type="submit" id="vote_d_45002001-45002004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who practice such things. Do you suppose, O man&#8212;you who judge those who practice such things and yet do them yourself&#8212;that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance?				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+24%3A29&amp;version=ESV" class="bibleref">Proverbs 24:29</a>
+					<span class="note">
+						ESV / 62 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20024029" type="submit" id="vote_u_20024029" value="1">Helpful</button>
+					<button name="vote_d_20024029" type="submit" id="vote_d_20024029" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not say, &#8220;I will do to him as he has done to me; I will pay the man back for what he has done.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A5&amp;version=ESV" class="bibleref">Colossians 3:5</a>
+					<span class="note">
+						ESV / 60 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003005" type="submit" id="vote_u_51003005" value="1">Helpful</button>
+					<button name="vote_d_51003005" type="submit" id="vote_d_51003005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+5%3A23-24&amp;version=ESV" class="bibleref">Matthew 5:23-24</a>
+					<span class="note">
+						ESV / 60 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40005023-40005024" type="submit" id="vote_u_40005023-40005024" value="1">Helpful</button>
+					<button name="vote_d_40005023-40005024" type="submit" id="vote_d_40005023-40005024" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar and go. First be reconciled to your brother, and then come and offer your gift.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+5%3A5-9&amp;version=ESV" class="bibleref">Matthew 5:5-9</a>
+					<span class="note">
+						ESV / 59 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40005005-40005009" type="submit" id="vote_u_40005005-40005009" value="1">Helpful</button>
+					<button name="vote_d_40005005-40005009" type="submit" id="vote_d_40005005-40005009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Blessed are the meek, for they shall inherit the earth. &#8220;Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. &#8220;Blessed are the merciful, for they shall receive mercy. &#8220;Blessed are the pure in heart, for they shall see God. &#8220;Blessed are the peacemakers, for they shall be called sons of God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ecclesiastes+7%3A9&amp;version=ESV" class="bibleref">Ecclesiastes 7:9</a>
+					<span class="note">
+						ESV / 59 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_21007009" type="submit" id="vote_u_21007009" value="1">Helpful</button>
+					<button name="vote_d_21007009" type="submit" id="vote_d_21007009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Be not quick in your spirit to become angry, for anger lodges in the heart of fools.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+15%3A1-2&amp;version=ESV" class="bibleref">Romans 15:1-2</a>
+					<span class="note">
+						ESV / 58 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45015001-45015002" type="submit" id="vote_u_45015001-45015002" value="1">Helpful</button>
+					<button name="vote_d_45015001-45015002" type="submit" id="vote_d_45015001-45015002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					We who are strong have an obligation to bear with the failings of the weak, and not to please ourselves. Let each of us please his neighbor for his good, to build him up.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+12%3A16&amp;version=ESV" class="bibleref">Proverbs 12:16</a>
+					<span class="note">
+						ESV / 58 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20012016" type="submit" id="vote_u_20012016" value="1">Helpful</button>
+					<button name="vote_d_20012016" type="submit" id="vote_d_20012016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The vexation of a fool is known at once, but the prudent ignores an insult.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+18%3A21&amp;version=ESV" class="bibleref">Matthew 18:21</a>
+					<span class="note">
+						ESV / 57 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40018021" type="submit" id="vote_u_40018021" value="1">Helpful</button>
+					<button name="vote_d_40018021" type="submit" id="vote_d_40018021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then Peter came up and said to him, &#8220;Lord, how often will my brother sin against me, and I forgive him? As many as seven times?&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A9&amp;version=ESV" class="bibleref">Colossians 3:9</a>
+					<span class="note">
+						ESV / 56 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003009" type="submit" id="vote_u_51003009" value="1">Helpful</button>
+					<button name="vote_d_51003009" type="submit" id="vote_d_51003009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not lie to one another, seeing that you have put off the old self with its practices				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+5%3A43-48&amp;version=ESV" class="bibleref">Matthew 5:43-48</a>
+					<span class="note">
+						ESV / 56 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40005043-40005048" type="submit" id="vote_u_40005043-40005048" value="1">Helpful</button>
+					<button name="vote_d_40005043-40005048" type="submit" id="vote_d_40005043-40005048" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;You have heard that it was said, &#8216;You shall love your neighbor and hate your enemy.&#8217; But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+9%3A10-13&amp;version=ESV" class="bibleref">Matthew 9:10-13</a>
+					<span class="note">
+						ESV / 55 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40009010-40009013" type="submit" id="vote_u_40009010-40009013" value="1">Helpful</button>
+					<button name="vote_d_40009010-40009013" type="submit" id="vote_d_40009010-40009013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And as Jesus reclined at table in the house, behold, many tax collectors and sinners came and were reclining with Jesus and his disciples. And when the Pharisees saw this, they said to his disciples, &#8220;Why does your teacher eat with tax collectors and sinners?&#8221; But when he heard it, he said, &#8220;Those who are well have no need of a physician, but those who are sick. Go and learn what this means: &#8216;I desire mercy, and not sacrifice.&#8217; For I came not to call the righteous, but sinners.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+13%3A11-14&amp;version=ESV" class="bibleref">Romans 13:11-14</a>
+					<span class="note">
+						ESV / 53 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45013011-45013014" type="submit" id="vote_u_45013011-45013014" value="1">Helpful</button>
+					<button name="vote_d_45013011-45013014" type="submit" id="vote_d_45013011-45013014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Besides this you know the time, that the hour has come for you to wake from sleep. For salvation is nearer to us now than when we first believed. The night is far gone; the day is at hand. So then let us cast off the works of darkness and put on the armor of light. Let us walk properly as in the daytime, not in orgies and drunkenness, not in sexual immorality and sensuality, not in quarreling and jealousy. But put on the Lord Jesus Christ, and make no provision for the flesh, to gratify its desires.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+37%3A8-9&amp;version=ESV" class="bibleref">Psalm 37:8-9</a>
+					<span class="note">
+						ESV / 53 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19037008-19037009" type="submit" id="vote_u_19037008-19037009" value="1">Helpful</button>
+					<button name="vote_d_19037008-19037009" type="submit" id="vote_d_19037008-19037009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Refrain from anger, and forsake wrath! Fret not yourself; it tends only to evil. For the evildoers shall be cut off, but those who wait for the <span class="sc">Lord</span> shall inherit the land.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+18%3A10&amp;version=ESV" class="bibleref">Matthew 18:10</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40018010" type="submit" id="vote_u_40018010" value="1">Helpful</button>
+					<button name="vote_d_40018010" type="submit" id="vote_d_40018010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;See that you do not despise one of these little ones. For I tell you that in heaven their angels always see the face of my Father who is in heaven.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+7%3A36-50&amp;version=ESV" class="bibleref">Luke 7:36-50</a>
+					<span class="note">
+						ESV / 51 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42007036-42007050" type="submit" id="vote_u_42007036-42007050" value="1">Helpful</button>
+					<button name="vote_d_42007036-42007050" type="submit" id="vote_d_42007036-42007050" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					One of the Pharisees asked him to eat with him, and he went into the Pharisee's house and reclined at table. And behold, a woman of the city, who was a sinner, when she learned that he was reclining at table in the Pharisee's house, brought an alabaster flask of ointment, and standing behind him at his feet, weeping, she began to wet his feet with her tears and wiped them with the hair of her head and kissed his feet and anointed them with the ointment. Now when the Pharisee who had invited him saw this, he said to himself, &#8220;If this man were a prophet, he would have known who and what sort of woman this is who is touching him, for she is a sinner.&#8221; And Jesus answering said to him, &#8220;Simon, I have something to say to you.&#8221; And he answered, &#8220;Say it, Teacher.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+2%3A12-13&amp;version=ESV" class="bibleref">James 2:12-13</a>
+					<span class="note">
+						ESV / 50 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59002012-59002013" type="submit" id="vote_u_59002012-59002013" value="1">Helpful</button>
+					<button name="vote_d_59002012-59002013" type="submit" id="vote_d_59002012-59002013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So speak and so act as those who are to be judged under the law of liberty. For judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+20%3A35&amp;version=ESV" class="bibleref">Acts 20:35</a>
+					<span class="note">
+						ESV / 50 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44020035" type="submit" id="vote_u_44020035" value="1">Helpful</button>
+					<button name="vote_d_44020035" type="submit" id="vote_d_44020035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, &#8216;It is more blessed to give than to receive.&#8217;&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+29%3A22&amp;version=ESV" class="bibleref">Proverbs 29:22</a>
+					<span class="note">
+						ESV / 50 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20029022" type="submit" id="vote_u_20029022" value="1">Helpful</button>
+					<button name="vote_d_20029022" type="submit" id="vote_d_20029022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					A man of wrath stirs up strife, and one given to anger causes much transgression.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+13%3A8-10&amp;version=ESV" class="bibleref">Romans 13:8-10</a>
+					<span class="note">
+						ESV / 49 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45013008-45013010" type="submit" id="vote_u_45013008-45013010" value="1">Helpful</button>
+					<button name="vote_d_45013008-45013010" type="submit" id="vote_d_45013008-45013010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. For the commandments, &#8220;You shall not commit adultery, You shall not murder, You shall not steal, You shall not covet,&#8221; and any other commandment, are summed up in this word: &#8220;You shall love your neighbor as yourself.&#8221; Love does no wrong to a neighbor; therefore love is the fulfilling of the law.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Philippians+2%3A2-8&amp;version=ESV" class="bibleref">Philippians 2:2-8</a>
+					<span class="note">
+						ESV / 48 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_50002002-50002008" type="submit" id="vote_u_50002002-50002008" value="1">Helpful</button>
+					<button name="vote_d_50002002-50002008" type="submit" id="vote_d_50002002-50002008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Complete my joy by being of the same mind, having the same love, being in full accord and of one mind. Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+6%3A7-8&amp;version=ESV" class="bibleref">Galatians 6:7-8</a>
+					<span class="note">
+						ESV / 46 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48006007-48006008" type="submit" id="vote_u_48006007-48006008" value="1">Helpful</button>
+					<button name="vote_d_48006007-48006008" type="submit" id="vote_d_48006007-48006008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+18%3A35&amp;version=ESV" class="bibleref">Matthew 18:35</a>
+					<span class="note">
+						ESV / 46 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40018035" type="submit" id="vote_u_40018035" value="1">Helpful</button>
+					<button name="vote_d_40018035" type="submit" id="vote_d_40018035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+3%3A14&amp;version=ESV" class="bibleref">1 John 3:14</a>
+					<span class="note">
+						ESV / 45 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62003014" type="submit" id="vote_u_62003014" value="1">Helpful</button>
+					<button name="vote_d_62003014" type="submit" id="vote_d_62003014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					We know that we have passed out of death into life, because we love the brothers. Whoever does not love abides in death.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&amp;version=ESV" class="bibleref">Galatians 5:19-21</a>
+					<span class="note">
+						ESV / 44 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48005019-48005021" type="submit" id="vote_u_48005019-48005021" value="1">Helpful</button>
+					<button name="vote_d_48005019-48005021" type="submit" id="vote_d_48005019-48005021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+11%3A4&amp;version=ESV" class="bibleref">Luke 11:4</a>
+					<span class="note">
+						ESV / 43 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42011004" type="submit" id="vote_u_42011004" value="1">Helpful</button>
+					<button name="vote_d_42011004" type="submit" id="vote_d_42011004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And forgive us our sins, for we ourselves forgive everyone who is indebted to us. And lead us not into temptation.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+6%3A38&amp;version=ESV" class="bibleref">Luke 6:38</a>
+					<span class="note">
+						ESV / 43 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42006038" type="submit" id="vote_u_42006038" value="1">Helpful</button>
+					<button name="vote_d_42006038" type="submit" id="vote_d_42006038" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Give, and it will be given to you. Good measure, pressed down, shaken together, running over, will be put into your lap. For with the measure you use it will be measured back to you.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+6%3A37&amp;version=ESV" class="bibleref">Luke 6:37</a>
+					<span class="note">
+						ESV / 43 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42006037" type="submit" id="vote_u_42006037" value="1">Helpful</button>
+					<button name="vote_d_42006037" type="submit" id="vote_d_42006037" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Judge not, and you will not be judged; condemn not, and you will not be condemned; forgive, and you will be forgiven;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A14&amp;version=ESV" class="bibleref">Colossians 3:14</a>
+					<span class="note">
+						ESV / 42 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003014" type="submit" id="vote_u_51003014" value="1">Helpful</button>
+					<button name="vote_d_51003014" type="submit" id="vote_d_51003014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And above all these put on love, which binds everything together in perfect harmony.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+29%3A11&amp;version=ESV" class="bibleref">Proverbs 29:11</a>
+					<span class="note">
+						ESV / 42 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20029011" type="submit" id="vote_u_20029011" value="1">Helpful</button>
+					<button name="vote_d_20029011" type="submit" id="vote_d_20029011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					A fool gives full vent to his spirit, but a wise man quietly holds it back.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+1%3A22-27&amp;version=ESV" class="bibleref">James 1:22-27</a>
+					<span class="note">
+						ESV / 41 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59001022-59001027" type="submit" id="vote_u_59001022-59001027" value="1">Helpful</button>
+					<button name="vote_d_59001022-59001027" type="submit" id="vote_d_59001022-59001027" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But be doers of the word, and not hearers only, deceiving yourselves. For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. For he looks at himself and goes away and at once forgets what he was like. But the one who looks into the perfect law, the law of liberty, and perseveres, being no hearer who forgets but a doer who acts, he will be blessed in his doing. If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A5&amp;version=ESV" class="bibleref">1 Corinthians 13:5</a>
+					<span class="note">
+						ESV / 41 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46013005" type="submit" id="vote_u_46013005" value="1">Helpful</button>
+					<button name="vote_d_46013005" type="submit" id="vote_d_46013005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Or rude. It does not insist on its own way; it is not irritable or resentful;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A3&amp;version=ESV" class="bibleref">Romans 12:3</a>
+					<span class="note">
+						ESV / 41 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012003" type="submit" id="vote_u_45012003" value="1">Helpful</button>
+					<button name="vote_d_45012003" type="submit" id="vote_d_45012003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For by the grace given to me I say to everyone among you not to think of himself more highly than he ought to think, but to think with sober judgment, each according to the measure of faith that God has assigned.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+22%3A34-40&amp;version=ESV" class="bibleref">Matthew 22:34-40</a>
+					<span class="note">
+						ESV / 41 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40022034-40022040" type="submit" id="vote_u_40022034-40022040" value="1">Helpful</button>
+					<button name="vote_d_40022034-40022040" type="submit" id="vote_d_40022034-40022040" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But when the Pharisees heard that he had silenced the Sadducees, they gathered together. And one of them, a lawyer, asked him a question to test him. &#8220;Teacher, which is the great commandment in the Law?&#8221; And he said to him, &#8220;You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+20%3A25-28&amp;version=ESV" class="bibleref">Matthew 20:25-28</a>
+					<span class="note">
+						ESV / 41 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40020025-40020028" type="submit" id="vote_u_40020025-40020028" value="1">Helpful</button>
+					<button name="vote_d_40020025-40020028" type="submit" id="vote_d_40020025-40020028" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But Jesus called them to him and said, &#8220;You know that the rulers of the Gentiles lord it over them, and their great ones exercise authority over them. It shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+4%3A20-21&amp;version=ESV" class="bibleref">1 John 4:20-21</a>
+					<span class="note">
+						ESV / 40 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62004020-62004021" type="submit" id="vote_u_62004020-62004021" value="1">Helpful</button>
+					<button name="vote_d_62004020-62004021" type="submit" id="vote_d_62004020-62004021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If anyone says, &#8220;I love God,&#8221; and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen. And this commandment we have from him: whoever loves God must also love his brother.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A5&amp;version=ESV" class="bibleref">Ephesians 5:5</a>
+					<span class="note">
+						ESV / 39 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49005005" type="submit" id="vote_u_49005005" value="1">Helpful</button>
+					<button name="vote_d_49005005" type="submit" id="vote_d_49005005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+25%3A21-22&amp;version=ESV" class="bibleref">Proverbs 25:21-22</a>
+					<span class="note">
+						ESV / 39 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20025021-20025022" type="submit" id="vote_u_20025021-20025022" value="1">Helpful</button>
+					<button name="vote_d_20025021-20025022" type="submit" id="vote_d_20025021-20025022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If your enemy is hungry, give him bread to eat, and if he is thirsty, give him water to drink, for you will heap burning coals on his head, and the <span class="sc">Lord</span> will reward you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A21&amp;version=ESV" class="bibleref">Romans 12:21</a>
+					<span class="note">
+						ESV / 37 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012021" type="submit" id="vote_u_45012021" value="1">Helpful</button>
+					<button name="vote_d_45012021" type="submit" id="vote_d_45012021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Do not be overcome by evil, but overcome evil with good.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+4%3A1-18&amp;version=ESV" class="bibleref">2 Corinthians 4:1-18</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_47004001-47004018" type="submit" id="vote_u_47004001-47004018" value="1">Helpful</button>
+					<button name="vote_d_47004001-47004018" type="submit" id="vote_d_47004001-47004018" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Therefore, having this ministry by the mercy of God, we do not lose heart. But we have renounced disgraceful, underhanded ways. We refuse to practice cunning or to tamper with God's word, but by the open statement of the truth we would commend ourselves to everyone's conscience in the sight of God. And even if our gospel is veiled, it is veiled to those who are perishing. In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God. For what we proclaim is not ourselves, but Jesus Christ as Lord, with ourselves as your servants for Jesus' sake. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+3%3A16-17&amp;version=ESV" class="bibleref">John 3:16-17</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43003016-43003017" type="submit" id="vote_u_43003016-43003017" value="1">Helpful</button>
+					<button name="vote_d_43003016-43003017" type="submit" id="vote_d_43003016-43003017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+6%3A14&amp;version=ESV" class="bibleref">Matthew 6:14</a>
+					<span class="note">
+						ESV / 35 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40006014" type="submit" id="vote_u_40006014" value="1">Helpful</button>
+					<button name="vote_d_40006014" type="submit" id="vote_d_40006014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For if you forgive others their trespasses, your heavenly Father will also forgive you,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A25&amp;version=ESV" class="bibleref">Ephesians 4:25</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004025" type="submit" id="vote_u_49004025" value="1">Helpful</button>
+					<button name="vote_d_49004025" type="submit" id="vote_d_49004025" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+17%3A4&amp;version=ESV" class="bibleref">Luke 17:4</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42017004" type="submit" id="vote_u_42017004" value="1">Helpful</button>
+					<button name="vote_d_42017004" type="submit" id="vote_d_42017004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And if he sins against you seven times in the day, and turns to you seven times, saying, &#8216;I repent,&#8217; you must forgive him.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A12&amp;version=ESV" class="bibleref">Colossians 3:12</a>
+					<span class="note">
+						ESV / 31 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003012" type="submit" id="vote_u_51003012" value="1">Helpful</button>
+					<button name="vote_d_51003012" type="submit" id="vote_d_51003012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+3%3A5&amp;version=ESV" class="bibleref">Proverbs 3:5</a>
+					<span class="note">
+						ESV / 31 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20003005" type="submit" id="vote_u_20003005" value="1">Helpful</button>
+					<button name="vote_d_20003005" type="submit" id="vote_d_20003005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Trust in the <span class="sc">Lord</span> with all your heart, and do not lean on your own understanding.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+1%3A1-29&amp;version=ESV" class="bibleref">Colossians 1:1-29</a>
+					<span class="note">
+						ESV / 30 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51001001-51001029" type="submit" id="vote_u_51001001-51001029" value="1">Helpful</button>
+					<button name="vote_d_51001001-51001029" type="submit" id="vote_d_51001001-51001029" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Paul, an apostle of Christ Jesus by the will of God, and Timothy our brother, To the saints and faithful brothers in Christ at Colossae: Grace to you and peace from God our Father. We always thank God, the Father of our Lord Jesus Christ, when we pray for you, since we heard of your faith in Christ Jesus and of the love that you have for all the saints, because of the hope laid up for you in heaven. Of this you have heard before in the word of the truth, the gospel, ...				</p>
+			</div>
+			</form>
+<h2>Suggest a Verse</h2>
+<form action="/topics/holding_grudges" method="post" id="form-verse">
+	<h3><label for="preview">Enter a Verse Reference <span class="note">(e.g., <cite class="bibleref">John 3:16-17</cite>)</span></label></h3>
+	<p>
+		<input type="text" size="30" maxlength="100" name="preview" id="preview" value=""/>
+		<input type="submit" id="preview-button" value="Preview" />
+		<input type="hidden" name="verse" id="verse" value="" />
+		<br /><span class="note">Visit the <a href="https://www.biblegateway.com/">Bible</a> online to search for words if you don&rsquo;t know the specific passage your&rsquo;re looking for.</span>
+	</p>
+	<div id="preview-text">
+			</div>
+</form><script type="text/javascript">
+document.body.className += " script";
+var OB = {};
+
+OB.Verse =
+{
+	previewUrl: '/topics/tools/verse',
+
+	Preview: function(e)
+	{
+		e.preventDefault();
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", OB.Verse.previewUrl + "?verse=" + encodeURIComponent(document.getElementById("preview").value));
+		xhr.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				OB.Verse.PreviewResponse(JSON.parse(this.responseText));
+			}
+		}
+		xhr.send();
+	},
+
+	PreviewResponse: function(response)
+	{
+		if (response.content && response.id && response.reference)
+		{
+			document.getElementById("preview-text").innerHTML = '<h3>' + response.reference + '</h3><p>' + response.content + '</p><p><input type="submit" value="Suggest This Verse" /></p>';
+			document.getElementById("verse").value = response.id;
+		}
+		else
+		{
+			document.getElementById("preview-text").innerHTML = '<p class="error">Sorry, we couldn&#8217;t find a passage matching the verse you suggest. Please double-check your spelling and try again.</p>';
+		}
+	}
+};
+
+OB.Vote =
+{
+	myUrl: '/topics/tools/vote',
+
+	Vote: function(e)
+	{
+		e.preventDefault();
+		var encodedWord = encodeURIComponent(document.URL.replace(/\/+$/, '').split(/\//).pop());
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", OB.Vote.myUrl + "?w=" + encodedWord);
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send("word=" + encodedWord + "&db=" + encodeURIComponent(document.getElementById("db").value) + "&id=" + encodeURIComponent(this.id));
+		this.parentNode.innerHTML = "Thank you for your vote.";
+	},
+
+	Over: function()
+	{
+		this.className += " visible";
+	},
+
+	Out: function()
+	{
+		this.className = this.className.replace(/ visible/);
+	}
+};
+
+var buttons = document.querySelectorAll("form#vote button");
+for (var i = 0, j = buttons.length; i < j; i++) {
+	buttons[i].addEventListener("click", OB.Vote.Vote, false);
+}
+document.getElementById("preview-button").addEventListener("click", OB.Verse.Preview, false);
+var divs = document.querySelectorAll("div.verse");
+for (var i = 0, j = divs.length; i < j; i++) {
+	var div = divs[i];
+	div.addEventListener("mouseenter", OB.Vote.Over, false);
+	div.addEventListener("mouseleave", OB.Vote.Out, false);
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+	<strong>Cite this page</strong>: Editor: Stephen Smith. Publication date: Sep 25, 2023. Publisher: OpenBible.info.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

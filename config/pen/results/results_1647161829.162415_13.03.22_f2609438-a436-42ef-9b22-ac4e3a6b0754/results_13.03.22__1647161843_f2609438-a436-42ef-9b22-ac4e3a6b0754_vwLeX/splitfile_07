@@ -1,0 +1,13 @@
+ial_state(state(0,0)).
+final_state(state(3,3)).
+EOD
+
+cat draft.prolog <<EOD
+move(state(X,Y), state(X1,Y1)) :- X1 is X + 1, Y1 is Y.
+move(state(X,Y), state(X1,Y1)) :- X1 is X - 1, Y1 is Y.
+move(state(X,Y), state(X1,Y1)) :- X1 is X, Y1 is Y + 1.
+move(state(X,Y), state(X1,Y1)) :- X1 is X, Y1 is Y - 1.
+EOD
+
+cat draft.prolog <<EOD
+path_cost((A,B), (C,D), PathCost) :- PathCost is abs((A - C) +

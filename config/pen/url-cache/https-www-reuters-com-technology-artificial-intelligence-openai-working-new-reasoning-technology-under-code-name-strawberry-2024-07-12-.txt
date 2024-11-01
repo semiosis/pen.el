@@ -1,0 +1,25 @@
+HTTP/1.1 401 HTTP Forbidden
+Content-Type: text/html;charset=utf-8
+Content-Length: 581
+Connection: keep-alive
+Server: CloudFront
+Date: Sat, 13 Jul 2024 01:05:04 GMT
+x-datadome: protected
+accept-ch: Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory
+charset: utf-8
+cache-control: max-age=0, private, no-cache, no-store, must-revalidate
+pragma: no-cache
+access-control-allow-credentials: true
+access-control-expose-headers: x-dd-b, x-set-cookie
+access-control-allow-origin: *
+x-datadome-cid: AHrlqAAAAAMAZvp691Bvgv4A9o-6ig==
+x-dd-b: 2
+set-cookie: datadome=mxfcS6kwrL01uMLJf7NVDb1WaLO8fgP1tvp5v4exVziy0gMES~yc3KAdxFWCYE147d7Clj1hjRigN_zdAE5pa9oaMiWvLWJ42PNarJQhbElC3eLJugt3KrbryaEVMeDh; Max-Age=31536000; Domain=.reuters.com; Path=/; Secure; SameSite=Lax
+X-Cache: LambdaGeneratedResponse from cloudfront
+Via: 1.1 1afcd397058f15be8cae1f4ab178b100.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: AKL50-C1
+X-Amz-Cf-Id: mNQGa6Q-IHuW9xw_cIjnx3jmbmSDCJmZ42KZvHOWrVHO_dYOGFes_w==
+Content-Security-Policy: frame-ancestors 'self'; report-uri https://reuters.report-uri.com/r/t/csp/enforce; report-to report-uri
+Report-To: {"endpoints":[{"url":"https://reuters.report-uri.com/a/t/g"}],"group":"report-uri","include_subdomains":true,"max_age":31536000}
+
+<html><head><title>reuters.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style></head><body style="margin:0"><p id="cmsg">Please enable JS and disable any ad blocker</p><script data-cfasync="false">var dd={'rt':'c','cid':'AHrlqAAAAAMAZvp691Bvgv4A9o-6ig==','hsh':'2013457ADA70C67D6A4123E0A76873','t':'bv','s':43909,'e':'90a1dae3c92e8cc5575747fc02c740f2bc6acc5dbc9bb241901c31df20fd008c','host':'geo.captcha-delivery.com'}</script><script data-cfasync="false" src="https://ct.captcha-delivery.com/c.js"></script></body></html>

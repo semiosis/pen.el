@@ -1,0 +1,40 @@
+task: "Prompt until the language model believes it has hit the end"
+tags: meta
+prompt-version: 2
+todo:
+- Consider including the EOD in the output as a sentinel, so the user knows
+prompt: |+
+  # append one item at a time to the file
+
+  # Item 1
+  tee -a file <<EOD
+  The square root of 4 is 2.
+  EOD
+  # Item 1 type: sentence
+
+  # Item 2
+  tee -a file <<EOD
+  def hello():
+      print "hello world"
+  EOD
+  # Item 2 type: function
+
+  # Item 3
+  tee -a file <<EOD
+  <:pp><contents>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- "contents"
+var-defaults:
+- "(or (sor (pen-selected-text t)) (pen-preceding-text))"
+examples:
+- "Knock knock. Who's there? "
+filter: on
+completion: off
+insertion: off

@@ -1,0 +1,29 @@
+
+
+EOD
+
+# text files
+
+cat draft.text <<EOD
+The Rosetta Stone
+    A stele composed of granodiorite inscribed
+    with three versions of a decree issued in
+    Memphis, Egypt, in 196 BC during the
+    Ptolemaic dynasty on behalf of King
+    Ptolemy V Epiphanes.
+
+    The top and middle texts are in Ancient
+    Egyptian using hieroglyphic and Demotic
+    scripts respectively, while the bottom is
+    in Ancient Greek.
+
+    The decree has only minor differences
+    between the three versions, making the
+    Rosetta Stone key to deciphering the
+    Egyptian scripts.
+
+    The Rosetta Stone is one of the most famous
+    and earliest discovered examples of an ancient
+    stone inscription. It was found in 1799 by the
+    French scholar Jean-François Champollion while
+    exploring an old

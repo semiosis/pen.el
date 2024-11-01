@@ -1,0 +1,38 @@
+Mosaic law provided Israel a series of
+commands relating to ceremonial purity.
+
+One of these regulations involved childbirth,
+and here Mary and Joseph are completing the
+required purification (Leviticus 12).
+
+[[bible:Leviticus 12]]
+
+This cleansing is not an atonement for sin,
+but a symbolic restoration of purity.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Leviticus 12:1-4
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Leviticus 12:1-4
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+And YHWH spake unto Moses, saying, Speak unto
+the children of Israel, saying, If a woman
+have conceived seed, and born a man child:
+then she shall be unclean seven days;
+according to the days of the separation for
+her infirmity shall she be unclean.
+
+And in the eighth day the flesh of his
+foreskin shall be circumcised.
+
+And she shall then continue in the blood of
+her purifying three and thirty days; she shall
+touch no hallowed thing, nor come into the
+sanctuary, until the days of her purifying be
+fulfilled.
+
+(RLT)
+#+end_src

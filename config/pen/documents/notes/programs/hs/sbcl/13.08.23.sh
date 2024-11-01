@@ -1,0 +1,3 @@
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "» elinks-dump /volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index.html" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "" "#" "<==" "sbcl-ql"

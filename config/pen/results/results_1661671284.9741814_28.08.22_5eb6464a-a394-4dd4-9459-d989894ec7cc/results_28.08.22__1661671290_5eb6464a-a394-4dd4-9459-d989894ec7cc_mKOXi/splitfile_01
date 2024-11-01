@@ -1,0 +1,11 @@
+ The iloc function
+    is a data-centric generalization of
+    the built-in array slicing syntax
+
+i
+
+loc
+
+where i can be used with numpy arrays
+
+i and columns in

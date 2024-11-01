@@ -1,0 +1,7 @@
+"The ancient Greeks wrote on wax tablets, which were then made of wax. The Romans used wax for make-up, so they could smile in their pictures. Wax also served to illuminate tombs.
+
+Cinema comes from the Greek word kinesis, which means movement. In the ancient world, people took pictures of moving things by cutting out the shadows with a knife. Later, a more complex technique was developed that tied a string to a drum and pulled it back and forth to make shadows on a white screen. A camera obscura is an early type of camera that worked like this."""
+raw_data = raw_data.lower()
+# import regular expression module: regrex
+import re
+# token

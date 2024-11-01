@@ -1,0 +1,6 @@
+cd /root/notes;  "csvq" "--help" "#" "<==" "zsh"
+cd /root/notes;  "csvq" "--help" "#" "<==" "zsh"
+cd /root/notes;  "csvq" "-f" "tsv" "select * from stdin limit 10" "#" "<==" "bash"
+cd /root/notes;  "csvq" "-f" "tsv" "select * from stdin limit 10" "#" "<==" "bash"
+cd /root/notes;  "csvq" "-f" "tsv" "select * from stdin limit 10" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "csvq" "-f" "tsv" "select * from stdin limit 10" "#" "<==" "zsh"

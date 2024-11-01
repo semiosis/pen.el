@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: cmd
+# group: mine
+# key: cmd
+# --
+(defn cmd
+""
+[& args]
+(clojure.string/join
+" "
+(map (fn [s] (->
+(sh "q" :in (str s))
+:out)) args)))

@@ -1,0 +1,12 @@
+"hosts" is a variable that is used to specify the hosts that the task should be
+executed on.
+
+The "hosts" variable is used in the tasks section of the playbook.
+
+The "hosts" variable can be a single host or a list of hosts.
+
+The "hosts" variable can be a single host or a list of hosts.
+
+The "hosts" variable can be a single host or a list of hosts.
+
+The "hosts

@@ -1,0 +1,7 @@
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=fHJrYsSfqSQ" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=yID1u3-KqLE" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://en.wikipedia.org/wiki/August_10_(Eastern_Orthodox_liturgics)" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://en.wikipedia.org/wiki/Feast_of_the_Transfiguration" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=fHJrYsSfqSQ" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=9tfqOvxuYtg" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=9tfqOvxuYtg" "#" "<==" "pen-ci"

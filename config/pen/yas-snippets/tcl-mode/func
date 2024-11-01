@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: func
+# key: f
+# --
+proc do_something { a b c } {
+puts "You should buy some $a, $b, and $c!\n"
+}
+
+set running [do_something "apples" "bananas" "cantalopes"]

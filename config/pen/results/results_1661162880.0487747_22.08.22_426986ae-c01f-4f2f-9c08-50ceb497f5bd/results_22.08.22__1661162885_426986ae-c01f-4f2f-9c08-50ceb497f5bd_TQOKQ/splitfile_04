@@ -1,0 +1,4 @@
+
+  putStrLn $ "The sum of " ++ (show number) ++ " and 2 = " ++ (show (number + 2))
+
+The do keyword is followed by an expression with the same syntax as in if statements and

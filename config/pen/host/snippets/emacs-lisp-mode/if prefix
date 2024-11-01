@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: if prefix
+# group: prefix
+# key: ifp
+# --
+(let ((gparg (prefix-numeric-value current-${1:global-}prefix-arg))
+        (current-$1prefix-arg nil))
+    (if (>= gparg 4) nil)
+    (cond ((>= gparg 16) nil)
+          ((>= gparg 4) nil)
+          (t nil)))

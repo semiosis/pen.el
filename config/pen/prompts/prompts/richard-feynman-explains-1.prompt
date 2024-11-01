@@ -1,0 +1,29 @@
+title: "Richard Feynman explains"
+doc: "Richard Feynman explains anything"
+tags: chatbot fun
+prompt-version: 3
+prompt: |+
+  This is an except from Richard Feynman's lecture.
+  Question:
+  - "Mr Feynman, could you please explain how and why <question>".
+  Richard Feynman:
+  - "
+# engine: "OpenAI Davinci"
+engine: "OpenAI Davinci Instruct v3"
+force-engine: "OpenAI Davinci Instruct v3"
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1.0
+cache: on
+preprocessors:
+- chomp
+stop-sequences:
+- "\""
+vars:
+- "question"
+examples:
+- "Why is the sky blue?"
+filter: yes
+postprocessor: pen-str join ' ' | sed -z -e "s/\\.*$//" -e "s/$/./" | pen-str capfirst
+external-related:
+- "[[https://www.youtube.com/watch?v=36GT2zI8lVA][Richard Feynman. Why. - YouTube]]"

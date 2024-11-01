@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "open" "https://www.youtube.com/watch?v=khotCJrEFzQ" "#" "<==" "ff"
+cd /root/.pen/documents/notes;  "open" "https://www.youtube.com/watch?v=khotCJrEFzQ" "#" "<==" "ff"
+cd /root/.pen/documents/notes;  "open" "https://www.youtube.com/watch?v=khotCJrEFzQ" "#" "<==" "ff"
+cd /root/.pen/documents/notes;  "open" "https://www.youtube.com/watch?v=khotCJrEFzQ" "#" "<==" "ff"
+cd /root/.pen/documents/notes;  "open" "https://www.youtube.com/watch?v=khotCJrEFzQ" "#" "<==" "ff"

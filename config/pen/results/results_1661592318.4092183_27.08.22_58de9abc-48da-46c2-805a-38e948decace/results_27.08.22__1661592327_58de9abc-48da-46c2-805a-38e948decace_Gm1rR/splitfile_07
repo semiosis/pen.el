@@ -1,0 +1,21 @@
+.
+
+import qualified Data.ByteString.Lazy as B
+import qualified Data.Text as T
+import qualified Data.Map as Map
+import Data.Map (Map)
+import Data.List (intercalate)
+import Data.Maybe (fromJust)
+import System.IO (hGetLine, stdin, stdout)
+import Control.Monad (forM_, when)
+import Control.Monad.IO.Class (liftIO)
+import qualified Data.ByteString as Bs
+import qualified Data.ByteString.Char8 as B8s
+import qualified Data.Text as T8s
+
+  -- Read a CSV from stdin and return a list of rows:
+  readCsv :: IO [Row]
+  readCsv = do
+    forM_ [1..] $ \_ -> do
+      line <- liftIO $ hGetLine stdin
+      let row = T8

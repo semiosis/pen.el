@@ -1,0 +1,729 @@
+Content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+
+<!-- Mirrored from www.earlyjewishwritings.com/1enoch.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jul 2022 09:50:24 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>1 Enoch</title>
+<meta name="keywords" content="old testament,apocrypha,pseudepigrapha">
+<meta name="description" content="1 Enoch on Early Jewish Writings: a comprehensive sourcebook for ancient Judaism.">
+<link rel="stylesheet" media="all" href="finaldemo/layers.css" type="text/css">
+<style type="text/css">
+body {
+	behavior: url("csshover.html");
+}
+
+body {
+  margin: 0px;
+	padding: 0px;
+}
+
+#menu ul, li, div {
+	margin: 0px;
+	padding: 0px;
+}
+LI:hover {
+	Z-INDEX: 15;
+}
+UL UL {
+  position: absolute;
+	display: none;
+}
+LI:hover UL UL {
+	DISPLAY: none;
+}
+LI:hover UL {
+	DISPLAY: block;
+}
+LI:hover LI:hover UL {
+	DISPLAY: block
+}
+li ul {
+	position: absolute;
+	display: none;
+}
+#menu ul, #menu li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul li {
+	position: relative;
+}
+#menu {
+  line-height: 1px;
+	font-size: 1px;
+}
+
+/* Styles for Menu Items */
+
+li.topli ul a {
+  display: block;
+	padding-top: 3px; padding-left: 3px; padding-bottom: 3px; padding-right: 0px;
+	margin: 0px;
+	text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+	line-height: 10px;
+  font-size: 10px;
+	color: rgb(246, 223, 190);
+}
+li.submenu a {
+  background-image: url("pic/arrow.html"); background-position: right; background-repeat: no-repeat; z-index: 20;
+}
+li.submenu ul a {
+  background-image: url("pic/spacer.gif"); z-index: 25;
+}
+li.topli li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+li.topli li:hover ul li a {
+  color: rgb(246, 223, 190);
+	background-color: rgb(73, 63, 40);
+}
+#menu li.submenu ul li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+#menu li {
+  height: 16px;
+	margin: 0px; padding: 0px;
+  width: inherit;
+}
+
+/* Specific classes */
+
+ul.topul {
+  position: absolute;
+	left: 0px;
+	top: 20px;
+	background-color: black;
+}
+
+li.topli {
+  position: absolute;
+	top: 0px;
+}
+
+div.topdiv1 {
+  position: absolute;
+	top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.topdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(73, 63, 40);
+}
+
+ul.subul {
+  position: absolute;
+  top: -1px;
+  background-color: black;
+}
+
+div.subdiv1 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.subdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+	background-color: rgb(73, 63, 40);
+}
+
+/* Fix some stuff with lists in the body of the page. */
+#infolayer ul {
+  position: relative;
+  display: block;
+  list-style-type: disc;
+	list-style-position: outside;
+}
+#infolayer li {
+  position: relative;
+  display: list-item;
+}
+#infolayer ul li {
+	margin-left: -16px;
+}
+#infolayer ol li {
+  margin-left: -8px;
+}
+#infolayer a {
+  color: #990033;
+}
+#infolayer a:visited {
+  color: black;
+}
+#infolayer a:hover {
+  color: red;
+}
+</style>
+
+</head>
+<body>
+
+<div id="whitetoplayer">
+  <div id="buythecd"><a href="http://earlywritings.com/buy/"><img src="pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div id="breadcrumbs"><p><a href="index.html">Early Jewish Writings</a> <b>|</b> <a href="http://www.earlychristianwritings.com/">Early Christian Writings</a></p></div>
+
+  <form action="http://www.google.com/cse" id="cse-search-box" target="_blank" style="position: absolute; top: 0px; right: 118px; height: 39px; font-family: Arial, Helvetica, sans-serif; margin: 5px;">
+    <div style="background-color: rgb( 174, 134, 64 ); text-align: right; -moz-border-radius: 5px;"><div style="padding: 3px;">
+    <input type="hidden" name="cx" value="007472373078053258639:0l1c0jm5pxi" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" width="40" />
+    <input type="submit" name="sa" value="Search" />
+	</div></div>
+</form>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+</div>
+
+<style>
+#ataglance div.info {
+  margin-top: 6px;
+	margin-bottom: 6px;
+}
+</style>
+
+<div id="infolayer">
+  <div id="textboundingbox">
+
+  <h1 id="textname">1 Enoch</h1>
+
+	<div id="toprightad" style="float: right;">
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2665675471425577";
+/* EJW-Rectangle-top */
+google_ad_slot = "0443831697";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+   </div>
+
+<p style="position: relative; display: inline; padding-top: 0px; margin-top: 5px;"></p>
+
+<h2 id="daterange">Second Century B.C. - First Century A.D.</h2> 
+
+<div>Discuss this text or ask a question on the official <a href="http://earlywritings.com/forum/viewforum.php?f=6">Early Writings forum</a>. Anyone can post.</div>
+
+<h2>Online Text for 1 Enoch</h2>
+
+<ul>
+  <li><a href="http://wesley.nnu.edu/index.php?id=2126">The Book of 
+    Enoch</a> (R. H. Charles)
+  <li><a href="http://www.johnpratt.com/items/docs/enoch.html">Book of Enoch</a> 
+    (Richard Laurence)
+</ul>
+
+<h2>Online Resources for 1 Enoch</h2>
+
+<ul>
+  <li><a href="http://www.jewishencyclopedia.com/articles/5773-enoch-books-of-ethiopic-and-slavonic">Jewish 
+    Encyclopedia: Books of Enoch</a>
+  <li><a href="http://www.newadvent.org/cathen/01602a.htm">Catholic Encyclopedia: 
+    The Book of Enoch</a>
+  <li><a href="http://www.st-andrews.ac.uk/divinity/rt/otp/guestlectures/vanderkam/">The 
+    Enoch Literature</a>
+  <li><a href="http://web.archive.org/web/20090227035953/http://www.mystae.com/restricted/streams/scripts/enoch.html">The 
+    Pseudepigraphical Book of Enoch</a>
+  <li><a href="http://www.livius.org/ei-er/enoch/enoch.htm">The first book of 
+    Enoch</a>
+  <li><a href="http://www.inspiredbooks.com/1Enoch.htm">Enoch Facts</a>
+  <li><a href="http://yourgoingtohell.com/hell/enoch.html">About the Book of Enoch</a>
+</ul>
+<h2>Offline Resources for 1 Enoch</h2>
+<ul>
+  <li><a href="http://www.amazon.com/exec/obidos/ASIN/0385096305/peterkirby">The 
+    Old Testament Pseudepigrapha, Volume One</a> 
+  <li><a href="http://www.amazon.com/exec/obidos/asin/0198261772/peterkirby">The 
+    Apocryphal Old Testament</a>
+  <li><a href="http://www.amazon.com/exec/obidos/asin/0800660749/peterkirby">1 
+    Enoch: Hermeneia Commentary</a>
+  <li><a href="http://www.amazon.com/exec/obidos/asin/1564595234/peterkirby">The 
+    Book of Enoch: Together With a Reprint of the Greek Fragments</a>
+  <li><a href="http://www.amazon.com/exec/obidos/asin/096757370X/peterkirby">The 
+    Book of Enoch</a>
+  <li><a href="http://www.amazon.com/exec/obidos/asin/0788501755/peterkirby">1 
+    Enoch and Sirach</a>
+</ul>
+<h2>Information on 1 Enoch</h2>
+<p>Emil Sch&uuml;rer writes: &quot;<i>Enoch</i> (in common with Elijah) occupies 
+  this singular position among the Old Testament men of God, that when removed 
+  from the earth he was carried directly to heaven. A man of this stamp could 
+  not but appear peculiarly well fitted to serve as a medium through which to 
+  communicate to the world revelations regarding the divine mysteries, seeing 
+  that he had even been deemed worthy of immediate intercourse with God. Accordingly 
+  at a somewhat early period, probably as far back as the second century before 
+  Christ, an apocalyptic writing appeared purporting to have been composed by 
+  Enoch, which work was subsequently issued in an enlarged and revised form. This 
+  Book of Enoch was already known to the author of the Book of 'Jubilees' and 
+  of the 'Testaments of the Twelve Patriarchs,' and was afterwards a great favourite 
+  in the Christian Church. As is well known, it is quoted in the Epistle of Jude 
+  (14, 15), while many of the Fathers use it without hesitation as the genuine 
+  production of Enoch, and as containing authentic divine revelations, although 
+  it has never been officially recognized by the Church as canonical. We still 
+  find the Byzantine chronicler, George Syncellus (about 800 A.D.), quoting two 
+  long passages from it (Syncell. <i>Chron</i>. ed. Dindorf, i. 20-23 and 42-47). 
+  But after that the book disappeared, and was looked upon as lost till, in the 
+  course of the last century, the discovery was made that an <i>Ethiopic version 
+  of it was still extant</i> in the Abyssinian Church. In the year 1773, Bruce 
+  the English traveller brought three manuscripts of it to Europe. But it was 
+  not till the year 1821 that the whole work was given to the world through the 
+  English translation of Laurence. A German translation was issued by Hoffmann 
+  which, from chap. i. to lv. (1833), was based upon the English version of Laurence, 
+  and from chap. lvi. to the end (1838) on the Ethiopic version collated with 
+  a new manuscript. The Ethiopic text was published first by Laurence in 1838, 
+  and subsequently by Dillmann in 1851, after having collated it with five manuscripts. 
+  Dillmann likewise issued (1853) a new German translation, in which there were 
+  material emendations, and on which all disquisitions connected with this book 
+  have been based ever since. It seemed as though there were reason to hope that 
+  more light would be thrown upon this book when a small fragment of it in Greek 
+  (extending from ver. 42 to ver. 49 of chap. lxxxix.), taken from a <i>Codex 
+  Vaticanus </i>(<i>cod. gr.</i> 1809), written in tachygraphic characters, was 
+  published in facsimile by Mai (<i>Patrum Nova Biblioth</i>. vol. ii), and deciphered 
+  by Gildmeister (<i>Zeitschr. der DMG. </i>1855, pp. 621-624). For, from what 
+  was stated by Mai, one was led to suppose that there was still far more in the 
+  codex than had yet been published. But, alas! a fresh examination by Gebhardt 
+  revealed the fact that the deciphered fragment was all of the Book of Enoch 
+  that it contained (Merx <i>Archiv</i>, vol. ii p. 243).&quot; (<i>The Literature 
+  of the Jewish People in the Time of Jesus</i>, pp. 55-56)</p>
+<p>James Charlesworth writes: &quot;This pseudepigraph has evoked divergent opinions; 
+  but today there is a consensus that the book is a composite, portions of which 
+  are clearly pre-Christian as demonstrated by the discovery of Aramaic and Hebrew 
+  fragments from four of the five sections of the book among the Dead Sea Scrolls. 
+  One of these fragments, moreover, Hen<font size="2"><sup>a</sup></font>, was 
+  copied in the second half of the second century B.C. The main question concerns 
+  the date of the second section, chapters 37-71, which contains the Son of Man 
+  sayings. J. T. Milik (esp. no. 755) has shown that this section, which is not 
+  represented among the early fragments, is probably a later addition to 1 Enoch; 
+  but his contention that it was composed around A.D. 270 (no. 755, p. 377) is 
+  very speculative. If, as most specialists concur, the early portions of 1 Enoch 
+  date from the first half of the second century B.C., chapters 37-71 could have 
+  been added in the first century B.C. or first century A.D. The original language 
+  of 1 Enoch appears to be Aramaic, except for the Noah traditions, which were 
+  probably composed in Hebrew. The earliest portions display impressive parallels 
+  with the nascent thoughts of the Jewish sect which eventually settled at Qumran.&quot; 
+  (<i>The Pseudepigrapha and Modern Research</i>, p. 98)</p>
+<p>Raymond F. Surburg writes (<i>Introduction to the Intertestamental Period</i>, 
+  pp. 142-143):</p>
+<blockquote> 
+  <p>The book was arranged by its last editor in five sections, as in the Psalms 
+    and other Jewish Books.</p>
+  <p>Section I (1-36) is mainly concerned with pronouncing God's judgment by Enoch 
+    on the angels, or watchers who fell through their love for the daughters of 
+    men (Gen. 6:1-4), and Enoch's intercession for them. A weird description of 
+    Hades is found in this portion of 1 Enoch.</p>
+  <p>Section II (37-71) has three &quot;parables,&quot; or apocalyptic revelations, 
+    together with the story of Enoch's translation into heaven.</p>
+  <p>Section III (72-87) is primarily concerned with furnishing a treatise on 
+    astronomy, the secrets of the movement of the stars as revealed to Enoch, 
+    who sees with his own eyes their very course, even the portals through which 
+    they enter and issue forth, for the purpose of transmitting the information 
+    to future generations.</p>
+  <p>Section IV runs along lines laid down in the first two portions dealing with 
+    the problem of sin and suffering of Israel. Enoch relates to Methuselah his 
+    visions of the deluge, the fall of the angels, and their punishment in the 
+    underworld, the deliverance of Noah, the Exodus, the giving of the Law, the 
+    conquest of Canaan, the time of the judges, the establishment of the united 
+    kingdom, the building of the temple, the story of the two kingdoms, the fall 
+    of the Northern Kingdom, and the Exile. This is followed by four periods of 
+    angelic rule up to the time of the Maccabean Revolt, the last assault of the 
+    Gentiles, and the great Judgment. The last part of Section IV contains the 
+    prediction of the foundation of the new Jerusalem, the conversion of the Gentiles, 
+    the resurrection of the righteous, and the coming of the Messiah.</p>
+  <p>Section V is without any account of the origin of sin but seems to be mainly 
+    devoted to the problem of suffering of the righteous and the prosperity of 
+    the oppressing sinners. It denounces evil and utters woes on sinners and promises 
+    blessings to the righteous. Within Section V is an older work &quot;The Apocalypse 
+    of Weeks&quot; (93:1-10; 91:12-19). It concludes (105): &quot;In those days 
+    the Lord bade to summon and testify to the children of the earth concerning 
+    their wisdom: show (it) unto them; for ye are their guides, and a recompense 
+    over the world. For I and My Son will be united with them forever in the paths 
+    of uprightness and in their lives; and ye shall have peace; rejoice, ye children 
+    of uprightness. Amen.&quot;</p>
+</blockquote>
+<p>Michael A. Knibb writes: &quot;The pentateuchal (five-part) structure outlined 
+  above refers to the book in its present (Ethiopic) form; the Qumran discoveries 
+  have made it clear that these traditions originally had a different shape. Fragments 
+  of eleven manuscripts of Enoch in Aramaic were discovered amongst the Qumran 
+  scrolls, and these fragments confirmed the view that 1 Enoch was composed in 
+  Aramaic. The manuscripts fall into two distinct groups. On the one hand, fragments 
+  from seven manuscripts correspond to parts of the first, fourth and fifth sections 
+  of the Ethiopic book (chapters 1-36; 83-90; 91-107). The indications are that 
+  these parts of 1 Enoch, together with a work known as the book of Giants, circulated 
+  at Qumran as separate writings and were also copied out in combination&#151;with 
+  the book of Giants apparently as the second of the four elements&#151;to form 
+  a four-part corpus of Enochic writings, a tetrateuch. On the other hand, the 
+  fragments from the other four manuscripts belong to a book of Astronomy which 
+  at Qumran circulated separately from the other Enochic writings; the third section 
+  of the Ethiopic book (chapters 72-82) is based on the Qumran book of Astronomy, 
+  but is much shorter and differs quite substantially. No fragments were discovered 
+  corresponding to the second section of the Ethiopic book (chapters 37-71), the 
+  Parables.&quot; (<i>Outside the Old Testament</i>, p. 27)</p>
+<p>James C. VanderKam writes of 1 Enoch 72-82: &quot;The Astronomical Book (AB) 
+  was written in the Aramaic language, as we now know from the four copies of 
+  it found among the Dead Sea Scrolls (4Q208-11). From Aramaic it was translated 
+  into Greek (there are only a few small remnants that have survived) and from 
+  Greek into Ethiopic. Judging from the script, the oldest of the Aramaic copies 
+  (4Q208) dates from a time not far from 200 BCE; consequently, the book itself 
+  was composed no later than that and probably earlier, although we do not know 
+  how much earlier. The Aramaic copies that have survived indicate that the Ethiopic 
+  version of the booklet, the only complete one that exists, is a condensed form 
+  of the AB in that its text lacks some of the long, table-like sections attested 
+  for the beginning of the book in two of the Aramaic copies.&quot; (<i>An Introduction 
+  to Early Judaism</i>, p. 89)</p>
+<p>Leonhard Rost writes: &quot;Chapters 72-82 constitute an astronomical treatise 
+  probably written around the end of the second century B.C. Chapters 94-105 contain 
+  exhortations of Enoch in the style of the farewell discourses of the twelve 
+  patriarchs. These discourses date from the first century B.C. The beginning 
+  of the book (chapters 1-5) and the conclusion (chapter 108) are among the redactional 
+  additions to this complex book. They date from the first century B.C. Nothing 
+  in the book makes any allusion to the coming of the Romans in 63 B.C.&quot; 
+  (<i>Judaism Outside the Hebrew Canon</i>, p. 139)</p>
+<p>Martin McNamara writes: &quot;This astronomical work is presupposed by <i>Jubilees</i> 
+  4:17, 21 which may have been composed about the mid-second century B.C. This 
+  would indicate a date of composition for <i>The Astronomical Book</i> in the 
+  first quarter of the second century at the latest. J. T. Milik thinks it is 
+  alluded to by the Hellenistic Jewish historian Eupolemus in a work completed 
+  158 B.C. The <i>Book of Jubilees</i>, however, may have been composed later 
+  in the second century B.C., but this need not affect the date to be assigned 
+  to Enoch 72-82. Four copies of an Aramaic Astronomical work attributed to Enoch 
+  have been found at Qumran, the earliest in Milik's opinion dating from the late 
+  third or the beginning of the second century B.C., the latest from the first 
+  years of teh first century A.D. These Qumran manuscripts have a longer text 
+  than the Ethiopic, especially the section on calendrical reckoning. Milik believes 
+  that the original Aramaic text is older than Gen 5:23, which presupposes it 
+  and that it was connected with the calendrical reckoning of a highly theoretical 
+  nature in the Persian period, but was later introduced by the Essenes into their 
+  liturgical lfie. Milik also thinks that archaic features of the literary and 
+  scientific content of the <i>Astronomical Book of Enoch</i> link it with ancient 
+  Babylonian (and indeed Sumerian) literature, and that the description of the 
+  terrestrial orb in Enoch 77 leads us, with complete certainty, to the Mesopotamian 
+  centres of scholarship.&quot; (<i>Intertestamental Literature</i>, pp. 60-61)</p>
+<p>James C. VanderKam writes of 1 Enoch 1-36: &quot;The second early booklet connected 
+  with the name Enoch was also written in Aramaic. It too has been identified 
+  in several copies from Qumran cave 4 (4Q201-202, 204-206), the oldest of which 
+  (4Q201) dates from between 200 and 150 BCE. As a result, it may be another third-century 
+  text. The Book of the Watchers (BW) is best known for introducing the strange 
+  story (or stories) about the angels who sinned by marrying women and fathering 
+  giants. The story in various forms became a major theme in the Enoch tradition 
+  and in a surprisingly large number of other works both Jewish and Christian.&quot; 
+  (<i>An Introduction to Early Judaism</i>, p. 91)</p>
+<p>Martin McNamara writes of the Book of the Watchers: &quot;This section of 1 
+  Enoch is itself a composite work. It begins with a Parable of Enoch on the lot 
+  of the wicked and of the righteous (1-5). Next comes <i>The Book of the Watchers</i> 
+  (i.e. the Angels) proper. This recounts the sin of the angels through their 
+  sexual union with earthly women, on which follows the demoralization of humankind. 
+  We are then told of the doom pronounced by God on the angels and of the joys 
+  in store for the just (6-11), e.g., 'And . . . the Lord said to Raphael: &quot;Bind 
+  Azazel by his hands and his feet, and throw him into the darkness . . . and 
+  let him stay there for ever . . . that on the great day of judgment he may be 
+  hurled into the fire&quot;' (10:4-6). 'Bind them for seventy generations under 
+  the hills of the earth until the day of their judgment and of their consummation, 
+  until the judgment which is for all eternity is accomplished. And in those days 
+  they will lead them to the abyss of fire; in torment and in prison they will 
+  be shut up for all eternity' (10:12-13).&quot; (<i>Intertestamental Literature</i>, 
+  p. 55)</p>
+<p>Leonhard Rost writes: &quot;Chapters 12-16 provide more details about Enoch's 
+  role of mediator in the punishment of the fallen angels. Since they constitute 
+  an expansion and correction of the corresponding material from the Book of Noah, 
+  they must have come later, but they probably still date from the first half 
+  of he second century B.C. Chapters 17-19 and 20-36 contain the first and second 
+  journeys of Enoch through the various regions of the earth, the heavens, and 
+  the underworld, with special emphasis on the dwelling places of the blessed 
+  and the places where sinners and fallen angels are punished. These chapters 
+  probably belong to the second century B.C. also.&quot; (<i>Judaism Outside the 
+  Hebrew Canon</i>, p. 138)</p>
+<p>Martin McNamara writes: &quot;In the words of J. T. Milik, the Qumran evidence 
+  indicates 'that from the first half of the second century B.C. onwards the Book 
+  of Watchers had essentially the same form as that in which it is known through 
+  the Greek and Ethiopic versions.' It can be presumed that it circulated in this 
+  form already by 200 B.C. Certain sections of it can be presumed to be older 
+  still, e.g., the section on the fall of the angels (chs. 6-11, or even 6-19). 
+  G. W. Nickelsburg believes that chapters 6-11 date from the fourth century, 
+  while J. T. Milik (somewhat improbably) is of the opinion that 6-19 are older 
+  than Genesis 6, which he believes is dependent on them.&quot; (<i>Intertestamental 
+  Literature</i>, pp. 58-59)</p>
+<p>Michael A. Knibb writes: &quot;The book of Watchers is, with the exception 
+  of the book of Astronomy, the oldest part of 1 Enoch and the basis upon which 
+  the other sections have been built; there are allusions to it and echoes of 
+  it in the Parables, the book of Dreams and the Epistle. It is not all of one 
+  piece, but acquired its present form by a process of accretion. After an introductory 
+  section (chapters 1-5) the nucleus is formed by the story of the fall from heaven 
+  of the Watchers, i.e. angels (chapters 6-16; cp. Dan. 4:13, 17, 23). To this 
+  has been appended an account of Enoch's journey to the edge of the world where 
+  he sees the places of punishment of the fallen angels and the disobedient stars, 
+  as well as the range of seven mountains in the north-west, on the middle one 
+  of which is situated the throne of God (chapters 17-19). Chapter 20, a list 
+  of the seven archangels and their functions, forms the introduction to the account 
+  of a second journey (chapters 21-36). In the first part of this journey Enoch 
+  visits places already described in chapters 17-19, and thus chapters 21-5 may 
+  be regarded as another version of the earlier journey in which the material 
+  has been reordered and expanded. Thereafter Enoch goes to Jerusalem (chapters 
+  26-27), and then far away to the east to the Garden of Righteousness (chapters 
+  28-32). In the last part of the journey Enoch circles the earth and observes 
+  certain astronomical and meteorological phenomena (chapters 33-6); this material 
+  is related to the material in the book of Astronomy. For the accounts of these 
+  two journeys the author made use of a wide range of biblical and extrabiblical 
+  traditions. In particular he drew together in chapters 21-32 a number of different 
+  biblical traditions relating to the mountain of God (cp. Ps. 48:2; Isa. 14:12-15; 
+  Ezek. 28:11-19; Exod. 24:10) and to the garden of Eden with its tree of knowledge 
+  and tree of life (Gen. 2-3). The underlying theme, announced already in the 
+  introduction (chapters 1-5), is that of judgment. The places which Enoch is 
+  above all concerned to describe are the mountain on which God will sit when 
+  he visits the earth as judge, the place where the dead will wait until the day 
+  of judgement, and the places where the wicked (both angels and men) and the 
+  righteous will either be punished or enjoy a life of bliss.&quot; (<i>Outside 
+  the Old Testament</i>, pp. 29-30)</p>
+<p>James C. VanderKam writes of 1 Enoch 93:1-10 and 91:11-17: &quot;The oldest 
+  surviving historical apocalypse in Jewish literature is probably the short composition 
+  known as the Apocalypse of Weeks. The fact that it does not mention the persecution 
+  of Jews and the ban on Judaism by Antiochus IV in 167 BCE implies that it was 
+  written before these events, that is, perhaps in approximately 170 BCE. It has 
+  accidentally been divided into two parts in the Ethiopian version of <i>1 Enoch</i> 
+  and the order of the two parts reversed; an Aramaic manuscript from Qumran preserves 
+  much of the apocalypse and has the parts in the correct order (4Q212). The apocalypse 
+  takes the form of Enoch's report to Methuselah regarding a vision he had seen; 
+  the text also mentions words of the angels and the contents of the heavenly 
+  tablets as the sources of the revelation disclosed to him. In the report he 
+  quickly sketches history from beginning to end, with almost all of it packaged 
+  as a prediction. History and the different stages of the judgment are divided 
+  into ten units called 'weeks.' These seven-part units are suggestive for several 
+  reasons: they are one of a number of references and allusions to 'sevens' in 
+  the apocalypse (e.g., Enoch is the seventh patriarch); the ten 'weeks' total 
+  seventy units, itself a highly significant number in light of Jeremiah's prediction 
+  that Jerusalem would be desolate for the seventy years of Babylonian control 
+  (see Jer. 25:11-12; 29:10; Dan. 9:2, 24-27); and the decisive 'week,' that is, 
+  the one in which the actual author lives and when the great turning point in 
+  history will begin is the seventh. As 7 x 7 = 49, the total brings to mind associations 
+  with the biblical jubilee (which the author of <i>Jubilees</i> and others understood 
+  as a forty-nine-year unit).&quot; (<i>An Introduction to Early Judaism</i>, 
+  pp. 103-104)</p>
+<p>Leonhard Rost writes: &quot;The Apocalypse of Ten Weeks in chapters 93 and 
+  91:12-17 is at least as early as the Book of Noah [second century B.C.?] and 
+  possibly even earlier. It may originally have been limited to seven weeks and 
+  later expanded. J. P. Thronton has suggested that it is a secret history of 
+  the Qumran sect. If so, the conclusion, at least, would be somewhat later. The 
+  commonly accepted view, however, finds no mention of the Maccabean period; rather, 
+  it concludes that the number of apostates imply that only a certain righteous 
+  individuals are elected to enjoy the age of salvation that follows directly. 
+  This theory would date the Apocalypse of Ten Weeks prior to the Maccabean period, 
+  in other words around 170 B.C. The Apocalypse of the Animals (85-90) contains 
+  an account of history from Adam to the Hasmoneans and concludes with a vision 
+  of the messianic age. The figures belonging to the primal history, like the 
+  figure of the Messiah, are symbolized by bulls; the figures of the patriarchs 
+  and their descendants down to the Hasmonean period are represented by sheep; 
+  their opponents are symbolized by wolves and other wild beasts. The section 
+  is the second earliest. Depending on whether it concludes with Judas Maccabeus 
+  or ends with John Hyrcanus or even Alexander Jannaeus, it belongs to the middle 
+  or end of the second century, or to the first quarter of the first century B.C.&quot; 
+  (<i>Judaism Outside the Hebrew Canon</i>, pp. 137-138)</p>
+<p>James C. VanderKam writes of 1 Enoch 83-90, the Book of Dreams: &quot;Here 
+  too Enoch tells his son Methuselah about his predictive dream visions. In this 
+  section he reports two such experiences. In the first and shorter one (83-84) 
+  he sees the heavens thrown down on earth, the earth swallowed up, and everything 
+  sinking into the abyss. His grandfather Mahalalel explains to him that the vision 
+  concerns the wickedness of the earth and its approaching destruction (the flood). 
+  He urges Enoch to pray that a remnant be left to him on the earth. He does pray 
+  for the remnant, and, after seeing the sun rise on a new day, blesses and praises 
+  the Lord. The second and longer section is called the Animal Apocalypse (chaps. 
+  85-90). Interpretation of the last historical allusions in teh vision, especially 
+  the character who appears to be Judas Maccabeus (the ram with a horn in 90:9, 
+  etc.), has led scholars to date it to the late 160s BCE. The apocalypse has 
+  received its name from the fact that in it biblical characters are described 
+  symbolically as animals. Colors and types of animals express character evaluations. 
+  In the text Enoch surveys all of scriptural history and moves beyond it to the 
+  time of the actual author and the end. The symbols and the language are usually 
+  clear enough so that the biblically literate reader can follow the course of 
+  the story.&quot; (<i>An Introduction to Early Judaism</i>, p. 105)</p>
+<p>Martin McNamara writes: &quot;In the <i>Book of Jubilees</i> 4:19 mention is 
+  made of Enoch's dream visions of the course of history, by which the second 
+  vision of this section may be intended. No fragment of the first vision (83-84) 
+  has been found in Qumran. The second vision seems to have been composed in Maccabean 
+  times, and possibly before Jonathan's assumption of the high priesthood in 153 
+  B.C. The author seems to have belonged to the Hasidic movement.&quot; (<i>Intertestamental 
+  Literature</i>, p. 62)</p>
+<p>James C. VanderKam writes of 1 Enoch 37-71: &quot;Tucked between the two oldest 
+  parts of <i>1 Enoch</i> is an apocalypse that goes under the name the <i>Similitudes</i> 
+  or <i>Parables of Enoch</i>. In it Enoch receives a series of revelations that 
+  are called <i>parables</i>; the first is in chaps. 38-44, the second in 45-47, 
+  and the third in 58-69. Around these three units the author/editor has placed 
+  introductory and concluding chapters (38 and 70-71). The focus in the <i>Similitudes</i> 
+  is on the eschatological punishment of sinners and the blessing of the righteous; 
+  a strong element of reversal is also involved. The downtrodden righteous do 
+  not realize that their salvation is already prepared, while the oppressive sinners 
+  at present fail to understand what awaits them. The text discloses that at the 
+  end the rightous will enjoy bliss while the mighty sinners will be punished 
+  and destroyed. In this work Enoch is termed a 'son of man,' and he is deeply 
+  involved in the final judgment of the wicked and reward of the righteous.&quot; 
+  (<i>An Introduction to Early Judaism</i>, p. 110)</p>
+<p>Leonhard Rost writes: &quot;Chapters 37-71, following an introduction in chapter 
+  37, comprise three discourses made up of similitudes or parables (38-44; 45-47; 
+  and 58-69), together with appendices and supplements, into which the fragments 
+  of the Book of Noah mentioned above have been incorporated. The similitudes 
+  furnish information about the hierarchy of the angels and reveal atmospheric, 
+  meteorological, and astronomical secrets; they culminate in the appointment 
+  of Enoch as the Son of Man. They contain various traditions dating from earlier 
+  ages but in their present recension cannot be designated earlier than the first 
+  century B.C. J.T. Milik dates them as late as the second century C.E., above 
+  all because there is no trace of them at Qumran.&quot; (<i>Judaism Outside the 
+  Hebrew Canon</i>, pp. 138-139)</p>
+<p>Martin McNamara writes: &quot;No fragment of any part of <i>Parables</i> has 
+  been found in Qumran. For this, and for other reasons besides, some scholars 
+  doubt its pre-Christian and Jewish character. J. T. Milik maintains that it 
+  was composed in the second or third century of our era. However, contemporary 
+  scholarship tends to reckon the parables Jewish, and to assign their composition 
+  to the first century of the Christian era.&quot; (<i>Intertestamental Literature</i>, 
+  p. 71)</p>
+<p>Michael A. Knibb writes: &quot;The concern with the Son of Man has led to the 
+  Parables being considered in relation to the traditions in the gospels about 
+  the Son of Man. Some scholars have thought that the Parables are Christian, 
+  but this is very unlikely because the Parables lack any reference to the life, 
+  death and resurrection of Jesus; here the difference from the Testaments of 
+  the Twelve Patriarchs, a work Jewish in origin but clearly Christian in its 
+  present form, is particularly significant. In fact the Parables are a Jewish 
+  work and are rooted firmly in traditions stemming from the Old Testament; they 
+  build upon what is said about the 'one like a man' of Dan. 7, but also draw 
+  upon traditions relating to the Davidic Messiah (cp. Isa. 11) and to God's servant 
+  (cp. Isa. 49). It is a matter of debate whether the Parables, a Jewish work, 
+  might have exercised some limited influence on the gospel traditions; but their 
+  real importance&#151;in the writer's opinion from towards the end of that century. 
+  It should be noted that for this section of Enoch we have available only an 
+  Ethiopic text.&quot; (<i>Outside the Old Testament</i>, p. 44)</p>
+<p>James C. VanderKam writes of 1 Enoch 91-107: &quot;The fifth and last booklet 
+  in <i>1 Enoch</i> is called the Epistle of Enoch. It is the literary home of 
+  the Apocalypse of Weeks (93:1-10; 91:11-17) and of several other types of literary 
+  units. As a result of this variety it is difficult to classify chapters 91-107 
+  under any single rubric, but they do share several features with the wisdom 
+  tradition and thus can be studied here. The Epistle may date to roughly the 
+  same time as the Apocalypse of Weeks, that is, not far from 170 BCE. At least 
+  there is no convincing reason for putting it at a later time. Parts of the Epistle, 
+  like most other booklets in <i>1 Enoch</i>, have been preserved in the Aramaic 
+  fragments from Qumran cave 4.&quot; (<i>An Introduction to Early Judaism</i>, 
+  pp. 119-120)</p>
+<p>Martin McNamara writes: &quot;Material of a variety of kinds follows on <i>The 
+  Apocalypse of Weeks</i>: Enoch's admonitions to the righteous (94:1-5) and woes 
+  on sinners (94:6-11; 95); reasons why the righteous should have hope (96:1-3), 
+  and why sinners should fear (96:4-8). There are woes on those who acquire unrighteous 
+  gain (97), and once more on sinners in general (98-104). The central motif of 
+  this section is the economic differentiation between rich and poor, the classes 
+  being practically identified with the sinners and righteous respectively. The 
+  rich are accused of idolatry in certain texts (99:6-9; cf. 91:9 and 104:9). 
+  The rich sinners are presented as oppressing the righteous poor (95:7; 96:5, 
+  8; 103:9-15; 104:3). The statement that sin originated with man ('Sin has not 
+  been sent upon the earth, but man himself has created it', 98:4) may be intended 
+  to stress human responsibility but may also be directed against other sections 
+  of the Enochic corpus which present the Watchers as having introduced it at 
+  the Flood (e.g. 1 Enoch 6-11).&quot; (<i>Intertestamental Literature</i>, p. 
+  67) </p>
+
+</div>
+ 
+<hr width="50%">
+
+<style type="text/css">
+#ad
+{
+	font-size: 9px; 
+	color: #787878;
+	text-align: center;
+	width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#ad a
+{
+	color: #787878;
+	font-size: 9px; 
+	font-weight: bold;
+	text-decoration: none;
+}
+#ad a:hover
+{
+	color: #787878;
+	font-size: 9px; 
+	font-weight: bold;
+	text-decoration: none;
+}
+</style>
+
+<p style="text-align: center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2665675471425577";
+/* EJW-Leaderboard-bot */
+google_ad_slot = "7325466754";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+
+<p style="text-align: center; font-size:135%;">Please <a href="http://earlywritings.com/buy/">buy the CD</a> to support the site, view it without ads, and get bonus stuff!</p>
+
+
+  <div id="infoleft"></div>
+  <div id="inforight"></div>
+  <div id="footer">
+    <div id="footleft"></div>
+    <div id="footright"></div>
+  </div>
+
+  	<div id="whitebottomlayer">
+	<p id="copyrightnotice"><a href="index-2.html">Early Jewish Writings</a> is copyright &copy; 2001-2013 Peter Kirby <code>&lt;<a href="http://www.peterkirby.com/">E-Mail</a>&gt</code>.</p>
+	  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fearlychristianwritingscom%2F121187514627340&amp;send=false&amp;layout=box_count&amp;width=55&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:65px; float: left; margin-left: 15px;" allowTransparency="true"></iframe>
+	  <div style="float: left;"><a href="http://twitter.com/mrpeterkirby"><img src="pic/followme.png" width="140" height="52"></a></div>
+	<div id="buythecd"><a href="http://earlywritings.com/buy/"><img src="pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div style="width: 500px; font-size: 12px; margin-top: 8px; margin-left: auto; margin-right: auto; padding-left: 50px;"><div style="position: absolute; width: 40px; height: 40px;"><b>MLA<br>Style</b></div><div style="position: relative; left: 40px;"><p>Kirby, Peter. <i>Early Jewish Writings</i>.  
+  <script language="JavaScript">
+  <!--
+  var months=new Array(13);
+  months[1]="Jan.";
+  months[2]="Feb.";
+  months[3]="Mar.";
+  months[4]="Apr.";
+  months[5]="May";
+  months[6]="June";
+  months[7]="July";
+  months[8]="Aug.";
+  months[9]="Sept.";
+  months[10]="Oct.";
+  months[11]="Nov.";
+  months[12]="Dec.";
+  var time=new Date();
+  var lmonth=months[time.getMonth() + 1];
+  var date=time.getDate();
+  var year=time.getYear();
+  if (year < 2000)
+    year = year + 1900;
+  document.write(year + ". " + date + " " + lmonth + " " + year);
+  // -->
+  </script>
+ &lt;http://www.earlyjewishwritings.com/&gt;.</p></div></div>
+  </div></div><div id="headlayer">
+  <div id="headleft"></div>
+  <div id="headright"></div>
+</div>
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  Earlyjewishwritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="305"; var zflag_cid="40179/39401/1"; var zflag_sid="4519"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="15"; var zflag_click="[INSERT_CLICK_TRACKER_MACRO]";
+</script>
+<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/fo.js"></script>
+<!-- end ZEDO for channel:  Earlyjewishwritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+</body> 
+
+<!-- Mirrored from www.earlyjewishwritings.com/1enoch.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jul 2022 09:50:24 GMT -->
+</html>

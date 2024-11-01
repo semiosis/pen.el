@@ -1,0 +1,5 @@
+
+(let [k (atom 0)] 
+   (fn [[x y z]] (swap! k
+(fn [[z k]]
+       (condp = z k)

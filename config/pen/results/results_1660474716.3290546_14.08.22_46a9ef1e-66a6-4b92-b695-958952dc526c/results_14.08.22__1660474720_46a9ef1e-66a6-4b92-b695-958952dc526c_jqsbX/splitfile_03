@@ -1,0 +1,10 @@
+https://wiki.haskell.org/Functor_hierarchy_proposal
+
+
+What is this proposal about?
+
+This proposal is about the design of the functor hierarchy.
+
+The current hierarchy is a bit of a mess.
+
+It's hard to remember the ordering of the types, and it's hard

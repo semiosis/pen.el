@@ -1,0 +1,7 @@
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:0000000000004a0f" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=3" "--decrypt=true" "id:mid-17250197361414082c27041cb@email.biblestudytools.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:0000000000004a11" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=3" "--decrypt=true" "id:1725027807333.bff45f2c-471d-471c-9e4a-ee9d1db1a97b@bf04x.hubspotemail.net" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"

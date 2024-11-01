@@ -1,0 +1,30 @@
+rule
+    Much of Bazel’s strength comes from the
+    ability to define new rules which can be
+    used by others.
+    
+    There is a growing and evolving set of
+    rules to support popular languages and
+    packages.
+
+    Here is a selection of recommended rules:
+    - Android
+    - Boost
+    - C / C++
+    - Docker
+    - Go
+    - Haskell
+    - Java
+    - JavaScript / NodeJS
+    - Kubernetes
+    - Maven dependency management
+    - Objective C
+    - Package building and fetching rules
+    - Protocol Buffers
+    - Python
+    - Scala
+    - Shell
+    - Webtesting (Webdriver)
+
+    https://github.com/bazelbuild/rules_python
+    https://github.com/bazelbuild/rules_docker

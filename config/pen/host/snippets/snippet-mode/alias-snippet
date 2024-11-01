@@ -1,0 +1,5 @@
+# name: alias-snippet
+# key: as
+# type: command
+# --
+(yas-expand-snippet (yas-lookup-snippet "the-real-snippet"))

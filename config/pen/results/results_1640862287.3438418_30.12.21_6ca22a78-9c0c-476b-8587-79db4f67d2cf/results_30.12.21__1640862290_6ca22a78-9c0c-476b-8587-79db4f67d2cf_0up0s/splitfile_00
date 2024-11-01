@@ -1,0 +1,4 @@
+
+Key bindings are the things you can use in emacs that are associated with a command.
+One way to quit "emacs", is by pressing the "control" key and then the "x" key at the same time.
+

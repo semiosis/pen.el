@@ -1,0 +1,8 @@
+The above code is a function that takes a string and returns a list of strings.
+The function is called getResults and it takes a string as its argument.
+The string is the name of a table in the database.
+The function returns a list of strings.
+The list of strings is the result of a query that selects all the rows from the table.
+The function getResults is a monad bind function.
+The monad is the Result monad.
+The bind function is (

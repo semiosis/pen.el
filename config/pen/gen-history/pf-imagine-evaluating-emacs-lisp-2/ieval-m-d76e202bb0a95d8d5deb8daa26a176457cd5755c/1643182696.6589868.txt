@@ -1,0 +1,9 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "colorof" "sky")))
+--> 
+
+
+
+;; Run function -loop
+(message (eval '(-loop "-u" "colorof" "sky")))
+--> 

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: termui line chart
+# key: tuline
+# --
+lc := ui.NewLineChart()
+lc.BorderLabel = "dot-mode Line Chart"
+lc.Data = sinps
+lc.Width = 50
+lc.Height = 11
+lc.X = 0
+lc.Y = 14
+lc.AxesColor = ui.ColorWhite
+lc.LineColor = ui.ColorRed | ui.AttrBold
+lc.Mode = "dot"

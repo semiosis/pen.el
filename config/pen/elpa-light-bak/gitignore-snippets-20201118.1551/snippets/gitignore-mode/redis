@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Redis
+# contributor: Toptal & contributors
+# key: redis
+# --
+
+### Redis ###
+
+# Ignore redis binary dump (dump.rdb) files
+
+*.rdb

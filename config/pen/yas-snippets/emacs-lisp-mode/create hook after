@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: create hook after
+# group: hook
+# key: cha
+# --
+(defvar ${1:my-func}-after-hook '())
+(defun $1-after-advice (&rest args)
+(run-hooks '$1-after-hook))
+(advice-add '$1 :after '$1-after-advice)

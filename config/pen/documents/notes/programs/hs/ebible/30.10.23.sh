@@ -1,0 +1,6 @@
+cd /root/notes;  "ebible" "-ca" "-m" "NASB" "I Peter 2:1" "#" "<==" "fast"
+cd /;  "ebible" "-nbd" "-m" "NASB" "Exodus 33:17-23" "#" "<==" "sh"
+cd /root/.pen/documents/notes/ws/peniel;  "ebible" "-c" "-m" "NASB" "Genesis 1:2" "#" "<==" "fast"
+cd /root/repos/tmux/tmux;  "ebible" "-m" "NASB" "Exodus 33:20" "#" "<==" "Exodus"
+cd /;  "ebible" "-nbd" "-m" "NASB" "1 Thessalonians 4:14" "#" "<==" "sh"
+cd /;  "ebible" "-nbd" "-m" "NASB" "Philippians 1:21:23" "#" "<==" "sh"

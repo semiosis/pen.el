@@ -1,0 +1,6 @@
+ 
+ff00::0 ip6-mcastprefix 
+ff02::1 ip6-allnodes 
+ff02::2 ip6-allrouters
+# The following lines are desirable for IPv6 capable hosts
+fe

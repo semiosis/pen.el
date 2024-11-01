@@ -1,0 +1,497 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 5670
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+x-origin-cache: HIT
+Last-Modified: Sat, 17 Sep 2022 00:58:20 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"63251bac-9777"
+expires: Sat, 17 Sep 2022 04:08:58 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: E01C:2D74:1B7AF8:1FE7C9:63254602
+Accept-Ranges: bytes
+Date: Sat, 17 Sep 2022 03:59:01 GMT
+Via: 1.1 varnish
+Age: 3
+X-Served-By: cache-akl10327-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1663387142.878969,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 0e987b67f266d585f23c56ac26e812cff278efa2
+
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Pink Cherry Blossoms Splash // Bodacious Blog</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.102.0-DEV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Shane Mulligan" />
+    <meta name="description" content="" />
+
+    
+
+    <link rel="stylesheet" href="https://mullikine.github.io/css/main.min.ebba730020e8f5020acefe67a0342e28f210068526f6ac927553db4fe5bbc856.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pink Cherry Blossoms Splash"/>
+<meta name="twitter:description" content="Frottage Blog 🍓&rsquo;s drawing:
+I was reminded of this scene from Mulan:
+Here&rsquo;s some music to listen to while looking at the generations:
+Music https://www.youtube.com/watch?v=qAqXDZoa624&amp;list=RDFPEl86wxqbs&amp;index=12 Prompt Gens 1 2 a figure of a person collapses into clear water, enveloped by the splashes. cherry blossom fall from a tree into the water. pencil and watercolor 1 2 a close-up of a splash at the surface of clear water. cherry blossom petals fall from a branch into the water."/>
+
+    <meta property="og:title" content="Pink Cherry Blossoms Splash" />
+<meta property="og:description" content="Frottage Blog 🍓&rsquo;s drawing:
+I was reminded of this scene from Mulan:
+Here&rsquo;s some music to listen to while looking at the generations:
+Music https://www.youtube.com/watch?v=qAqXDZoa624&amp;list=RDFPEl86wxqbs&amp;index=12 Prompt Gens 1 2 a figure of a person collapses into clear water, enveloped by the splashes. cherry blossom fall from a tree into the water. pencil and watercolor 1 2 a close-up of a splash at the surface of clear water. cherry blossom petals fall from a branch into the water." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mullikine.github.io/posts/pink-cherry-blossoms-splash/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-27T00:00:00+12:00" />
+<meta property="article:modified_time" content="2022-07-27T00:00:00+12:00" /><meta property="og:site_name" content="Bodacious Blog" />
+
+
+
+    <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=78a0d1b0"></script>
+  </head>
+  <body>
+
+    <header class="app-header">
+
+<a href="https://mullikine.github.io"><img class="app-header-avatar" src="http://mullikine.github.io/fievel.png" alt="Shane Mulligan" /></a>
+      <h1>Bodacious Blog</h1>
+      
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://linkedin.com/in/shane-mulligan-811b942b/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+          <a target="_blank" href="https://gitlab.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gitlab">
+  <title>gitlab</title>
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+        <a href="https://mullikine.github.io/cv/">CV</a>
+      </div>
+<div class="highlights">
+<a href="https://semiosis.github.io/">Semiosis</a>
+
+<br />
+<a href="https://mullikine.github.io/posts/parables-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Papables of Jesus</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Glorious Gospel</a>
+<br />
+<a href="https://mullikine.github.io/posts/the-tapestry-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Tapestry of Truth</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-thomas/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Thomas</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-matthew/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Matthew</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-philip/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Philip</a>
+<br />
+<a href="https://mullikine.github.io/posts/the-gospel-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Truth</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-john/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of John</a>
+<br />
+<a href="https://mullikine.github.io/posts/living-water/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Living Water of Truth</a>
+<br />
+<a href="https://mullikine.github.io/posts/the-pathway-to-gnosis/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Pathway to Gnosis</a>
+<br />
+<a href="https://mullikine.github.io/posts/generating-hyperlinks-for-glossaries-and-other-parsers-in-emacs/">Hyperlink generation in emacs</a>
+<br />
+<a href="https://mullikine.github.io/posts/github-search-with-bigquery/">Searching GitHub with BigQuery</a>
+
+<br />
+<a href="https://mullikine.github.io/posts/review-of-the-case-for-learned-index-structures/">Case for Learned Index Structures</a>
+<br />
+<a href="https://mullikine.github.io/posts/arbitrary-interpreters-for-babel/">Arbitrary Interpreters for Babel</a>
+<br />
+<a href="https://mullikine.github.io/glossary.html">Glossary A-Z (502 topics)</a> <a href="https://github.com/mullikine/glossaries-gh">code</a>
+<br />
+<a href="https://mullikine.github.io/posts/pen/">Prompt Engineering in Emacs</a>
+<br />
+<a href="https://mullikine.github.io/posts/dwarf-fortress-macros-with-emacs-and-tmux/">Automating Dwarf Fortress</a>
+<br />
+<a href="https://mullikine.github.io/posts/review-of-the-illustrated-transformer/">The Illustrated Transformer</a>
+<br />
+<a href="https://mullikine.github.io/posts/practical-macros-in-racket-and-how-to-work-with-them/">Practical macros in Racket</a>
+<br />
+<a href="https://mullikine.github.io/posts/imaginary-programming-with-gpt-3/">Imaginary Programming</a>
+<br />
+<a href="https://mullikine.github.io/codelingo-vs-linters/summary/">CodeLingo vs Linters</a>
+<br />
+
+<div class="taglist">
+  
+<a class="tag big" href="https://mullikine.github.io/tags/astral/">astral</a>
+<a class="tag big" href="https://mullikine.github.io/tags/ethereum/">Ethereum</a>
+<a class="tag big" href="https://mullikine.github.io/tags/imaginary/">Imaginary</a>
+<a class="tag big" href="https://mullikine.github.io/tags/אα/">אα</a>
+<a class="tag big" href="https://mullikine.github.io/tags/alethiology/">alethiology</a>
+<a class="tag big" href="https://mullikine.github.io/tags/epistemology/">epistemology</a>
+<a class="tag big" href="https://mullikine.github.io/tags/janus/">𔒯</a>
+<a class="tag big" href="https://mullikine.github.io/tags/reversible/">⇌</a>
+<a class="tag big" href="https://mullikine.github.io/tags/𝑖λ/">𝑖λ</a>
+<a class="tag big" href="https://mullikine.github.io/tags/𝑖web/">𝑖web</a>
+<a class="tag big" href="https://mullikine.github.io/tags/semiosis/">࿋ Semiosis</a>
+<a class="tag big" href="https://mullikine.github.io/tags/𝑖i/">𝑖i</a>
+<a class="tag big" href="https://mullikine.github.io/tags/pen/">Pen.el</a>
+<a class="tag" href="https://mullikine.github.io/tags/gpt/">GPT (Generative Pre-trained Transformer)</a>
+<a class="tag" href="https://mullikine.github.io/tags/biosemiotics/">biosemiotics</a>
+<a class="tag" href="https://mullikine.github.io/tags/xenolinguistics/">xenolinguistics</a>
+<a class="tag big" href="https://mullikine.github.io/tags/emacs/">emacs</a>
+<a class="tag" href="https://mullikine.github.io/tags/elisp/">elisp</a>
+<a class="tag" href="https://mullikine.github.io/tags/racket/">racket</a>
+<a class="tag" href="https://mullikine.github.io/tags/haskell/">haskell</a>
+<a class="tag" href="https://mullikine.github.io/tags/nlp/">NLP</a>
+<a class="tag" href="https://mullikine.github.io/tags/docker/">docker</a>
+
+<a class="tag big" href="https://mullikine.github.io/tags/ir/">IR</a>
+<a class="tag" href="https://mullikine.github.io/tags/dalle/">dalle</a>
+<a class="tag" href="https://mullikine.github.io/tags/games/">games</a>
+<a class="tag" href="https://mullikine.github.io/tags/data/">data</a>
+<a class="tag" href="https://mullikine.github.io/tags/info/">info theory</a>
+<a class="tag" href="https://mullikine.github.io/tags/probability/">probability</a>
+<a class="tag" href="https://mullikine.github.io/tags/problog/">problog</a>
+<a class="tag big" href="https://mullikine.github.io/tags/shell/">shell</a>
+
+<a class="tag" href="https://mullikine.github.io/tags/tooling/">tooling</a>
+<a class="tag" href="https://mullikine.github.io/tags/iac/">IaC</a>
+
+
+
+<a class="tag" href="https://mullikine.github.io/tags/babel/">babel</a>
+<a class="tag" href="https://mullikine.github.io/tags/journal/">journal</a>
+
+
+<a class="tag" href="https://mullikine.github.io/tags/parsers/">parsers</a>
+
+
+<a class="tag" href="https://mullikine.github.io/tags/review/">review</a>
+<a class="tag" href="https://mullikine.github.io/tags/dl/">deep learning</a>
+<a class="tag" href="https://mullikine.github.io/tags/dsl/">DSL</a>
+<a class="tag" href="https://mullikine.github.io/tags/music/">music</a>
+<a class="tag big" href="https://mullikine.github.io/tags/surreal/">surreal</a>
+<a class="tag" href="https://mullikine.github.io/tags/df/">dwarf fortress</a>
+<a class="tag" href="https://mullikine.github.io/tags/spacy/">spacy</a>
+<a class="tag" href="https://mullikine.github.io/tags/latex/">latex</a>
+<a class="tag" href="https://mullikine.github.io/tags/nix/">Nix</a>
+<a class="tag" href="https://mullikine.github.io/tags/diagrams/">diagrams</a>
+<a class="tag big" href="https://mullikine.github.io/tags/faith/">faith</a>
+<a class="tag" href="https://mullikine.github.io/tags/valentinianism/">valentinianism</a>
+<a class="tag" href="https://mullikine.github.io/tags/gnostic/">gnostic</a>
+<a class="tag" href="https://mullikine.github.io/tags/python/">python</a>
+<a class="tag" href="https://mullikine.github.io/tags/vim/">vim</a>
+<a class="tag big" href="https://mullikine.github.io/tags/journal/">journal</a>
+<a class="tag" href="https://mullikine.github.io/tags/neural-engineering/">neural-engineering</a>
+<a class="tag" href="https://mullikine.github.io/tags/golang/">golang</a>
+<a class="tag" href="https://mullikine.github.io/tags/perl/">perl</a>
+<a class="tag" href="https://mullikine.github.io/tags/telco/">telco</a>
+<a class="tag" href="https://mullikine.github.io/tags/automation/">automation</a>
+<a class="tag" href="https://mullikine.github.io/tags/elasticsearch/">ELK</a>
+<a class="tag" href="https://mullikine.github.io/tags/optimisation/">optimisation</a>
+<a class="tag" href="https://mullikine.github.io/tags/release/">release</a>
+<a class="tag" href="https://mullikine.github.io/tags/dotnet/">.NET</a>
+<a class="tag" href="https://mullikine.github.io/tags/csharp/">csharp</a>
+<a class="tag" href="https://mullikine.github.io/tags/math/">math</a>
+<a class="tag" href="https://mullikine.github.io/tags/terminals/">term</a>
+<a class="tag big" href="https://mullikine.github.io/tags/terminals/">poetry</a>
+<a class="tag big" href="https://mullikine.github.io/tags/codegen/">code-gen</a>
+<a class="tag" href="https://mullikine.github.io/tags/rosie/">rosie</a>
+<a class="tag" href="https://mullikine.github.io/tags/terraform/">Terraform</a>
+<a class="tag" href="https://mullikine.github.io/tags/semmle/">Semmle</a>
+<a class="tag" href="https://mullikine.github.io/tags/expect/">tcl/expect</a>
+<a class="tag" href="https://mullikine.github.io/tags/solr/">solr</a>
+<a class="tag" href="https://mullikine.github.io/tags/transformer/">transformer</a>
+
+<a class="tag" href="https://mullikine.github.io/tags/microsoft/">Microsoft</a>
+<a class="tag" href="https://mullikine.github.io/tags/neuralink/">Neuralink</a>
+<a class="tag" href="https://mullikine.github.io/tags/openai/">OpenAI</a>
+<a class="tag" href="https://mullikine.github.io/tags/uber/">Uber</a>
+<a class="tag" href="https://mullikine.github.io/tags/aws/">Amazon</a>
+<a class="tag" href="https://mullikine.github.io/tags/github/">GitHub</a>
+<a class="tag" href="https://mullikine.github.io/tags/facebook/">Facebook</a>
+<a class="tag" href="https://mullikine.github.io/tags/kaggle/">Kaggle</a>
+<a class="tag" href="https://mullikine.github.io/tags/kaggle/">EleutherAI</a>
+
+</div>
+
+
+
+</div>
+<div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <div class="post-footer phone">
+      <p>
+        <a href="https://mullikine.github.io/">Latest articles</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://github.com/semiosis/pen.el">Pen.el</a>
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/tags/">Site Map</a>
+      </p>
+    </div>
+    <header class="post-header">
+      <h1 class ="post-title">Pink Cherry Blossoms Splash</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 27, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://mullikine.github.io/tags/dalle/">dalle</a><a class="tag" href="http://mullikine.github.io/tags/strawberry/">strawberry</a></div></div>
+    </header>
+    
+
+<link rel="stylesheet" type="text/css" href="https://mullikine.github.io/css/magit.css"/>
+
+<script src="https://mullikine.github.io/js/mathjax-config.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+    <div class="post-content">
+      <ul>
+<li><a href="https://frottage.github.io/portfolio/pink-cherry-blossoms-splash/">Frottage Blog</a></li>
+</ul>
+<p><code>🍓</code>&rsquo;s drawing:</p>
+<figure><img src="https://github.com/frottage/dall-e-2-generations/raw/master/melee-variations/melee-girl-blossom-variation.jpg"/>
+</figure>
+
+<p>I was reminded of this scene from Mulan:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/faecNVYjVlk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Here&rsquo;s some music to listen to while looking at the generations:</p>
+<dl>
+<dt>Music</dt>
+<dd><a href="https://www.youtube.com/watch?v=qAqXDZoa624&amp;list=RDFPEl86wxqbs&amp;index=12">https://www.youtube.com/watch?v=qAqXDZoa624&amp;list=RDFPEl86wxqbs&amp;index=12</a></dd>
+</dl>
+<h2 id="prompt-gens">Prompt Gens</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>a figure of a person collapses into clear water, enveloped by the splashes.
+</span></span><span style="display:flex;"><span>cherry blossom fall from a tree into the water. pencil and watercolor</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.11%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.15%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.19%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.22%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.42%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.47%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.49%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2001.58.54%20-%20a%20figure%20of%20a%20person%20collapses%20into%20clear%20water,%20enveloped%20by%20the%20splashes.%20cherry%20blossom%20fall%20from%20a%20tree%20into%20the%20water.%20pencil%20and%20watercolor.jpg" alt=""></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>a close-up of a splash at the surface of clear water. cherry blossom petals
+</span></span><span style="display:flex;"><span>fall from a branch into the water. pencil drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.00.51%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20the%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.00.54%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20the%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.00.58%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20the%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.01.01%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20the%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.01.29%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20the%20water.%20pencil%20drawing.jpg" alt=""></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/qAqXDZoa624" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>a close-up of a splash at the surface of clear water. pink cherry blossom
+</span></span><span style="display:flex;"><span>petals fall from a branch into green water. pencil drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.01.58%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.02.01%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.02.14%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.02.17%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.02.35%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.02.38%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.02.42%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.02.45%20-%20a%20close-up%20of%20a%20splash%20at%20the%20surface%20of%20clear%20water.%20pink%20cherry%20blossom%20petals%20fall%20from%20a%20branch%20into%20green%20water.%20pencil%20drawing.jpg" alt=""></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>a close-up of splash at the surface of green water. a pink cherry blossom
+</span></span><span style="display:flex;"><span>branch hangs over the water. pink petals fall. pencil drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.04.32%20-%20a%20close-up%20of%20splash%20at%20the%20surface%20of%20green%20water.%20a%20pink%20cherry%20blossom%20branch%20hangs%20over%20the%20water.%20pink%20petals%20fall.%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.04.56%20-%20a%20close-up%20of%20splash%20at%20the%20surface%20of%20green%20water.%20a%20pink%20cherry%20blossom%20branch%20hangs%20over%20the%20water.%20pink%20petals%20fall.%20pencil%20drawing.jpg" alt=""></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>pink cherry blossom branch hangs over green water. pink petals fall. rain
+</span></span><span style="display:flex;"><span>splashes on surface. a  pencil drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.05.52%20-%20pink%20cherry%20blossom%20branch%20hangs%20over%20green%20water.%20pink%20petals%20fall.%20rain%20splashes%20on%20surface.%20a%20%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.05.56%20-%20pink%20cherry%20blossom%20branch%20hangs%20over%20green%20water.%20pink%20petals%20fall.%20rain%20splashes%20on%20surface.%20a%20%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.06.01%20-%20pink%20cherry%20blossom%20branch%20hangs%20over%20green%20water.%20pink%20petals%20fall.%20rain%20splashes%20on%20surface.%20a%20%20pencil%20drawing.jpg" alt=""></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>pink petals fall. rain drops splash the surface of green water. a  pencil
+</span></span><span style="display:flex;"><span>drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<figure><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.07.13%20-%20pink%20petals%20fall.%20rain%20drops%20splash%20the%20surface%20of%20green%20water.%20a%20%20pencil%20drawing.jpg"/>
+</figure>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>pink petals splash the surface of green water. the cherry blossom branch
+</span></span><span style="display:flex;"><span>above. a  pencil drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<figure><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.09.38%20-%20pink%20petals%20splash%20the%20surface%20of%20green%20water.%20the%20cherry%20blossom%20branch%20above.%20a%20%20pencil%20drawing.jpg"/>
+</figure>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>a big splash in crystal clear water. petals fall from the cherry blossom
+</span></span><span style="display:flex;"><span>branch. a  pencil drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.11.50%20-%20a%20big%20splash%20in%20crystal%20clear%20water.%20petals%20fall%20from%20the%20cherry%20blossom%20branch.%20a%20%20pencil%20drawing.jpg" alt="">
+<img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.11.58%20-%20a%20big%20splash%20in%20crystal%20clear%20water.%20petals%20fall%20from%20the%20cherry%20blossom%20branch.%20a%20%20pencil%20drawing.jpg" alt=""></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>a splash in crystal clear water. monochrome pencil drawing</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<figure><img src="https://github.com/frottage/dall-e-2-generations/raw/master/cherry-blossoms-water/DALL%C2%B7E%202022-07-27%2002.12.38%20-%20a%20splash%20in%20crystal%20clear%20water.%20monochrome%20pencil%20drawing.jpg"/>
+</figure>
+
+
+    </div>
+    <div class="post-colophon">
+        Thanks for reading!
+        <br />
+        If this article appears incomplete, it may be intentional. Try prompting for a continuation.
+    </div>
+    <div class="post-footer">
+        <p>
+        <a href="https://mullikine.github.io/">Latest articles</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/about/">About this weblog</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://asciinema.org/~mullikine">Recordings</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/posts/the-pathway-to-gnosis/">How I met God</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/posts/blogs-and-vlogs/">Blogs and Vlogs</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/cv/">CV</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://github.com/semiosis/pen.el">Pen.el</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/tags/imaginary-programming">Im λ</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/tags/">Site Map</a>
+        </p>
+    </div>
+  </article>
+
+    </main>
+
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/af7068a2-df42-4f2c-a3bb-688311904992.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+
+  </body>
+</html>

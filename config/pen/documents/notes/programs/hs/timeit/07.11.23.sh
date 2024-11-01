@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "timeit" "pen-cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "hello-world" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "timeit" "pen-cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "hello-world" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "timeit" "pen-cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "hello-world" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "timeit" "pen-cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "hello-world" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "timeit" "pen-cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "hello-world" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "timeit" "pen-cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "hello-world" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "timeit" "pen-cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "hello-world" "#" "<==" "zsh"

@@ -1,0 +1,5 @@
+cd /;  "John" "10:27" "#" "<==" "zsh"
+cd /root/notes;  "John" "14:26" "#" "<==" "zsh"
+cd /root/notes;  "John" "13:35" "#" "<==" "zsh"
+cd /root/notes;  "John" "8:31" "#" "<==" "zsh"
+cd /root/notes;  "John" "15:8" "#" "<==" "zsh"

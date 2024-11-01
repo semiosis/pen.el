@@ -1,0 +1,57 @@
+ialization(main).
+
+%------------------------------------------------------------------------------
+%
+%			  PROLOG DEFINITIONS
+%
+%------------------------------------------------------------------------------
+
+% The following predicates are built-in in SICStus Prolog and are used to
+% build the abstract syntax tree.  They are not needed for the semantic
+% analysis, but we define them here anyway, so that we can use the same AST.
+:- op(1100, xfx, [':-', '-->']).  % list of rules as in prolog files
+:- op(1200, xfx, ['::', ':<']).  % type ascriptions as in prolog files
+:- op(1190, xfx, ['=>']).        % implication as in prolog files
+
+
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cat draft.prolog <<EOD
+%------------------------------------------------------------------------------

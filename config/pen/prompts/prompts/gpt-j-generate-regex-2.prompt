@@ -1,0 +1,20 @@
+title: gpt-j generate regex
+include: Generic completion 50 tokens/1
+tags: code
+prompt-version: 3
+engine: AIx GPT-J-6B
+# this flag instructs pen-aix to add a newline before the response
+# The AIx API appears to remove all beginning whitespace, which may be a bug
+flags:
+- aix-begin-newline
+prompt: |+
+  <text><:pp>
+  regex to match <thing to match> above`(comment-line 1)`.
+vars:
+- text
+- thing to match
+var-defaults:
+- "(pen-preceding-text)"
+end-yas: on
+# The start will not be trimmed
+completion: on

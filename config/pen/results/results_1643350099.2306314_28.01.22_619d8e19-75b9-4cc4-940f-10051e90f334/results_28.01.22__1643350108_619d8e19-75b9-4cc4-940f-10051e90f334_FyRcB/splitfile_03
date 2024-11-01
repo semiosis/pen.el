@@ -1,0 +1,2 @@
+"async/alt!" is a macro that takes a function and returns a channel.
+

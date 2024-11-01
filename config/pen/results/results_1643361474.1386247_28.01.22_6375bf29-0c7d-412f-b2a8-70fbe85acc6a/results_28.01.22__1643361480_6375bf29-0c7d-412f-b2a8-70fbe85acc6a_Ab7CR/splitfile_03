@@ -1,0 +1,12 @@
+"awk -f"
+  prompt: "What is the name of the linter?"
+#+END_SRC
+
+** Example
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Imagine an awk linter"
+  code: "awk -f"
+  prompt: "What is the name of the linter?"
+
+  example: |-
+    $ awk -f my

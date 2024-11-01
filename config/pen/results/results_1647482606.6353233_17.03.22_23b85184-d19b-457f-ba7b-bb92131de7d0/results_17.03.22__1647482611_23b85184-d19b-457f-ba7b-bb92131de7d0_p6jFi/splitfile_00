@@ -1,0 +1,4 @@
+load-directory (dir)
+  ;; http://stackoverflow.com/questions/2069819/how-to-load-all-el-files-in-a-directory
+  (let ((load-it (lambda (f)
+                   (load-file ()

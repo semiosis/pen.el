@@ -1,0 +1,10 @@
+
+
+def __init__(self, image: str) -> None:
+
+self.image = image
+
+self.prompt_value = None
+def _find_image_link(self):
+
+image_link =

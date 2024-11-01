@@ -1,0 +1,5 @@
+cd /;  "host-script" "-sn" "acpi" "-b" "#" "<==" "withopts"
+cd /;  "host-script" "-sn" "acpi" "#" "<==" "withopts"
+cd /;  "host-script" "-sn" "acpi" "#" "<==" "withopts"
+cd /root/.pen/documents/agenda;  "host-script" "-sn" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Amazing_Grace-New_Britain.mp3" "#" "<==" "withopts"
+cd /root/.emacs.d/host/pen.el/src;  "host-script" "-sn" "acpi" "-b" "#" "<==" "withopts"

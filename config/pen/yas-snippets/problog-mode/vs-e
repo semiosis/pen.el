@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: evidence
+# group: vimsnippet
+# key: vs-e
+# --
+evidence(alarm).

@@ -1,0 +1,12 @@
+Firebase
+    A mobile and web application development
+    platform developed by Firebase, Inc. in
+    2011, then acquired by Google in 2014.
+    
+    As of March 2020, the Firebase platform
+    has 19 products, which are used by more
+    than 1.5 million apps.
+
+    Alternatives:
+    - Biff (Clojure)
+      https://findka.com/biff/#introduction

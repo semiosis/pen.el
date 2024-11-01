@@ -1,0 +1,11 @@
+
+
+incrementState :: State Int Int
+incrementState =
+
+-- basically the same but with a guard:
+
+incrementState :: State Int Int
+incrementState =
+
+-- a list of 'State Int Int'

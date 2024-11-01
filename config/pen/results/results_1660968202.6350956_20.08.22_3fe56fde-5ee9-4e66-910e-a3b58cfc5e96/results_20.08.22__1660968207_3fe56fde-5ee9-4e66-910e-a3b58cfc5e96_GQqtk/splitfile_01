@@ -1,0 +1,10 @@
+
+::1	localhost
+fe80::1	localhost
+ff02::1	localhost
+
+ff02::1	mele
+
+ff02::2	mele-mele
+
+www.google.com

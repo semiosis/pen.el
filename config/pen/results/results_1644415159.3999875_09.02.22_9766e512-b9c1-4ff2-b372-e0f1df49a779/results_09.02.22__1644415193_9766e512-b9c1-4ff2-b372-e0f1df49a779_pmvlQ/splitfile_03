@@ -1,0 +1,5 @@
+ that puts some gold stars on the screen
+# Delete the intro when the user starts playing a game
+# require 'spec_helper'
+require 'rspec/expectations'
+require 'bundler/setup'

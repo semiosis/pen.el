@@ -1,0 +1,6 @@
+engine-title: ruDALL-E Malevich (XL)
+lm-command: "hf-complete.sh"
+model: sberbank-ai/rudalle-Malevich
+foundation: false
+modes:
+- text-to-image

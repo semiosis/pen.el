@@ -1,0 +1,14 @@
+"go-loop"
+(fn [n]
+  (loop [i 0]
+    (async/put! main-chan (str "i = " i))
+    (recur (inc i) n))))
+
+(go-loop 10)
+
+; Read the messages from the channel
+(async/go!
+  (fn [_]
+    (loop []
+      (let [msg (async/take! main-chan)]
+        (

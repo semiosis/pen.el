@@ -1,0 +1,8 @@
+"async/go-loop" is a macro that takes a function that takes a channel as an argument and a
+transducer function. It will repeatedly call the function with the channel as an argument and
+process the channel with the transducer.
+
+The transducer is a function that takes a channel as an argument and returns a channel. It will
+be called with the channel that is passed to the function.
+
+The function is a function that takes a channel as an argument. It will be

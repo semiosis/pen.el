@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gensub
+# group: sub
+# key: s
+# --
+gensub(regexp, replacement, options)

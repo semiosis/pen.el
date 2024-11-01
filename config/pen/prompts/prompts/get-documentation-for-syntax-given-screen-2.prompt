@@ -1,0 +1,47 @@
+task: "Get documentation for syntax given screen"
+tags: hci code help documentation
+doc: "Given a view of the screen, get the documentation for the syntax form"
+prompt-version: 1
+prompt: |
+    <delim>
+    Terminal contents:
+    <delim>
+    <screen>
+    <delim>
+    The above is a code snippet.
+    <delim>
+    Documentation and code example for using <syntax>:
+    <delim>
+    <:pp><q:syntax> is a
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 100
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- screen
+- syntax
+var-defaults:
+- "(pen-trim-max-chars (buffer-string-visible) 300)"
+- "(pen-thing-at-point)"
+examples:
+- |-
+    shane@mele:~/notes$ read -d '^C-r user_input
+    shane@mele:~/notes$ read -e -r user_input^C
+    shane@mele:~/notes$ ^C
+    shane@mele:~/notes$ read -r user_input
+    shane@mele:~/notes$ read -r user_input
+    hi^M^C
+    shane@mele:~/notes$ read -e user_input
+    hi
+    ho
+    shane@mele:~/notes$ echo "$user_input"
+    hi
+    shane@mele:~/notes$
+- "read"
+info: on
+filter: off
+completion: off
+insertion: off

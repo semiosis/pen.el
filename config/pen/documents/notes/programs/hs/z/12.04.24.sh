@@ -1,0 +1,1 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Have_Mercy_On_Me_O_My_God-Third_Mode_Melody.pdf"

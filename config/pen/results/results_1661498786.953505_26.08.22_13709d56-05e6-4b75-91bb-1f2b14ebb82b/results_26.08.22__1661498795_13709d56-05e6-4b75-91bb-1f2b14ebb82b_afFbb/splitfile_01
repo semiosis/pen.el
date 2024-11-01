@@ -1,0 +1,20 @@
+
+- you: Did you copy it?
+- transient emacs guru: yes.
+- you: I just have to paste it into my `init.el` file and I can use it.
+- transient emacs guru: great.
+- you: how long did it take to write?
+- transient emacs guru: one hour, so i am not 100% sure if i did it right.
+- you: ok, just trust me. i will test it out and give you feedback on the code :)
+- transient emacs guru: you are very welcome."""
+
+    def is_enabled(self):
+        return self._is_enabled
+
+    def _is_addon(self, name):
+        return name in self._addons
+
+    def _is_transient(self, name):
+        return self._is_addon('transient') and name in self._addons['transient']
+
+    def _get

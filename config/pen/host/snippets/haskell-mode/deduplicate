@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: deduplicate
+# group: List
+# key: dedup
+# --
+-- nub is a function defined in Data.List that takes a list and weeds out duplicate elements.
+import Data.List
+
+numUniques :: (Eq a) => [a] -> Int
+numUniques = length . nub

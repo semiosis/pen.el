@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: NesC
+# contributor: Toptal & contributors
+# key: nesc
+# --
+
+### NesC ###
+
+# telosB build folder
+build/

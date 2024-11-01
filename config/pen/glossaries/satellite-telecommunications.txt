@@ -1,0 +1,9 @@
+CubeSat
+    A class of miniaturized satellite based
+    around a form factor consisting of 10 cm
+    cubes.
+    
+    CubeSats have a mass of no more than 2 kg
+    per unit, and often use commercial off-
+    the-shelf components for their electronics
+    and structure.

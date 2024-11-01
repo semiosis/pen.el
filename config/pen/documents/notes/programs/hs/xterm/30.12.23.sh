@@ -1,0 +1,2 @@
+cd /;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--in-tm-2-pin-.sh > /root/.pen/tmp/tf_temp50X2eSu.txt" "#" "<==" "pen-xt"
+cd /;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--in-tm-2-pin-.sh > /root/.pen/tmp/tf_tempvN6aUNY.txt" "#" "<==" "pen-xt"

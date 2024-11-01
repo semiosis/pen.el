@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Mark" "10:37-40" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Mark" "16:17-20" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Mark" "1:39" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Mark" "3:13-15" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Mark" "3:13-16" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Mark" "3:13-15" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Mark" "16:18" "#" "<==" "zsh"

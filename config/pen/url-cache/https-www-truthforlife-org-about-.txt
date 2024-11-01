@@ -1,0 +1,777 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Cookie, Accept-Language
+X-PJAX-URL: https://www.truthforlife.org/about/
+Content-Language: en
+Set-Cookie: csrftoken=hqpsnQ7M5opQWKFOsWWIxT94qJXy3eC6gg6kzdY7gN7OTLLsTQMlzQwHOe8BEagY; expires=Thu, 05-Dec-2024 05:52:35 GMT; Max-Age=31449600; Path=/; secure
+Server: nothanks
+Content-Security-Policy: frame-ancestors 'self' https://twitter.com;
+X-Content-Security-Policy: frame-ancestors 'self' https://twitter.com;
+X-Content-Type-Options: nosniff
+Date: Thu, 07 Dec 2023 05:52:35 GMT
+Cache-Control: max-age=0, no-cache
+X-Page-Speed: 1.15.0.0-8917
+
+
+<!doctype html>
+<!--[if lt IE 8]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<head>
+<script>window.dataLayer=window.dataLayer||[];</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K5325PL');</script>
+<meta property=fb:app_id content=1707364299500000 />
+<meta name=facebook-domain-verification content=zv960wlypt3vowa96qvljf40xbrajk />
+<meta property=og:url content="https://www.truthforlife.org/about/"/>
+<meta class=swiftype name=type data-type=enum content="/about/"/>
+<meta class=swiftype name=priority data-type=integer content=1>
+<meta charset=utf-8>
+<meta content='IE=edge' http-equiv=X-UA-Compatible>
+<meta content='width=device-width, initial-scale=1.0' name=viewport>
+<meta name=google-play-app content="app-id=org.truthforlife.app"/>
+<link rel=canonical href="https://www.truthforlife.org/about/"/>
+<meta content='A brief history and description of the ministry of Truth For Life, the expositional teaching ministry of Alistair Begg.' name=description>
+<meta content='About, Truth For Life, radio, ministry, expositional, Alistair Begg, teaching, preaching, instruction' name=keywords>
+<link type="text/css" href="/static/django/dist/site.less.eedd0be163c2c7379b27.css" rel=stylesheet />
+<link type="text/css" href="/static/django/dist/print.less.47416da175da45c04ffa.css" rel=stylesheet media=print />
+<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon"/>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-57x57.png' sizes=57x57>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-72x72.png' sizes=72x72>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-114x114.png' sizes=114x114>
+<link rel=apple-touch-icon-precomposed href='/static/images/responsive/apple-icon-144x144.png' sizes=144x144>
+<link rel=apple-touch-icon-precomposed href='/static/images/favicon.png' rel=icon type='image/png'>
+<!--[if lte IE 10]>
+    <script src="/static/js/responsive/lib/modernizr.custom.97061.js" type="text/javascript"></script>
+    <![endif]-->
+<!--[if lt IE 9]>
+    <script>
+    document.createElement('video');
+    </script>
+    <![endif]-->
+<title>About - Truth For Life</title>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','829404677080559');fbq('track','PageView');fbq('track','ViewContent');</script>
+<noscript><img height=1 width=1 style=display:none src="https://www.facebook.com/tr?id=829404677080559&ev=PageView&noscript=1"/></noscript>
+<script>(function(w){"use strict";var loadCSS=function(href,before,media){var doc=w.document;var ss=doc.createElement("link");var ref;if(before){ref=before;}else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1];}var sheets=doc.styleSheets;ss.rel="stylesheet";ss.href=href;ss.media="only x";function ready(cb){if(doc.body){return cb();}setTimeout(function(){ready(cb);});}ready(function(){ref.parentNode.insertBefore(ss,(before?ref:ref.nextSibling));});var onloadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb();}}setTimeout(function(){onloadcssdefined(cb);});};function loadCB(){if(ss.addEventListener){ss.removeEventListener("load",loadCB);}ss.media=media||"all";}if(ss.addEventListener){ss.addEventListener("load",loadCB);}ss.onloadcssdefined=onloadcssdefined;onloadcssdefined(loadCB);return ss;};if(typeof exports!=="undefined"){exports.loadCSS=loadCSS;}else{w.loadCSS=loadCSS;}}(typeof global!=="undefined"?global:this));;(function(w){if(!w.loadCSS){return;}var rp=loadCSS.relpreload={};rp.support=function(){try{return w.document.createElement("link").relList.supports("preload");}catch(e){return false;}};rp.poly=function(){var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"){w.loadCSS(link.href,link);link.rel=null;}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,300);if(w.addEventListener){w.addEventListener("load",function(){w.clearInterval(run);});}if(w.attachEvent){w.attachEvent("onload",function(){w.clearInterval(run);})}}}(this));;</script>
+<style>@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+      { @media {
+            h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{ letter-spacing: 0.5px !important; }
+            .brand-outer-wrapper .nav-pills li + li { letter-spacing: -.5px;}
+      }}</style>
+<script>window.tfl_validate=[];</script>
+</head>
+<body id=body class="">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5325PL" height=0 width=0 style="display:none;visibility:hidden"></iframe></noscript>
+<script>window.fbAsyncInit=function(){FB.init({appId:'1707364299500000',xfbml:true,version:'v2.5'});};(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/sdk.js";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>
+<a href="" id=scroll-player-origin style=display:none></a>
+<div class="scroll-player-wrapper hidden-print show-me remove" style=display:none id=scroll-player>
+<div class=app-miniplayer-content>
+</div>
+<div class=scroll-player-header>
+<div class="app-miniplayer-title scroll-player-title"></div>
+<div class=scroll-player-content-toggle-arrow></div>
+</div>
+</div>
+<div class="modal fade container-fluid" id=queueModal tabIndex=-1 role=dialog aria-labelledby=queueModal aria-hidden=true>
+<div class=modal-dialog role=document>
+<div class=modal-content>
+<div class="queue-row queue-header">
+<div class=queue-left-gutter>
+<button type=button data-dismiss=modal aria-label=Close class=close-listening-queue>
+<img src="/static/images/responsive/icons8-chevron-down-white.svg"/>
+</button>
+</div>
+<div class=queue-details-wrapper>
+<h5>Listen Queue</h5>
+</div>
+<div class=queue-right-gutter>
+<a tabindex=0 class="app-add-queue-popover add-queue-popover" role=button data-toggle=popover data-html=true data-placement=left data-trigger=focus data-content='<div style="color:#000;" class="app-queue-popover-menu"><div class="js-clear-queue queue-button-wrapper">Clear Queue and History</div><div class="js-close-popover queue-button-wrapper">Cancel</div></div>' title="" aria-label=Options>
+<img src="/static/images/responsive/icon-ellipsis-vertical.svg"/>
+</a>
+</div>
+</div>
+<div class="queue-list-wrapper js-up-next-section">
+<div class="queue-list up-next js-queue-list js-up-next">
+<div class="empty-queue-wrapper js-empty-queue-wrapper">
+<span>There is nothing in your queue.</span>
+<p>You can add media by tapping the “add to queue” icon located near the media player.</p>
+<div class=queue-add-example-wrapper>
+<img class="queue-screenshot horizontal" src="/static/images/responsive/how-to-add-to-queue-horizontal.svg"/>
+<img class="queue-screenshot vertical" src="/static/images/responsive/how-to-add-to-queue-vertical.svg"/>
+</div>
+</div>
+</div>
+</div>
+<div class="js-queue-player queue-row queue-footer hidden">
+<div class=queue-left-gutter>
+</div>
+<div class="queue-media-player queue-details-wrapper">
+<div class=queue-player-title>
+<h4 class='queue-title js-queue-player-title'></h4>
+</div>
+<div class=queue-player-controls>
+<div class="js-skip-to-prev js-queue-player-previous queue-player-controls_previous"><img src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-previous.svg"/></div>
+<div class=queue-player-controls_playpause>
+<img class="js-queue-player-play queue-play-btn" src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-play.svg"/>
+<img class="js-queue-player-pause hidden queue-pause-btn" src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-pause.svg"/>
+</div>
+<div class="js-skip-to-next js-queue-player-next queue-player-controls_next"><img src="/static/js/responsive/lib/mediaelement/icons/icons8-queue-next.svg"/></div>
+</div>
+<div class=queue-player-progress-bar-wrapper>
+<div class="js-queue-player-progress-bar queue-player-progress-bar">
+<div class="js-queue-player-progress-current queue-player-progress-bar-current"></div>
+<div class="js-queue-player-progress-time-handle queue-player-time-handle"></div>
+<div class="js-queue-player-progress-time-seek queue-player-time-seek"></div>
+</div>
+<div class=queue-player-time-wrapper>
+<div class="js-queue-player-time-current queue-player-current-time">0:00</div>
+<div class="js-queue-player-time-total queue-player-total-time">0:00</div>
+</div>
+</div>
+</div>
+<div class=queue-right-gutter>
+<a tabindex=0 class="js-add-queue-popover add-queue-popover" role=button data-toggle=popover data-html=true data-placement=left data-trigger=focus data-content='' title="" aria-label=Options>
+<img src="/static/images/responsive/icon-ellipsis-vertical.svg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id=blank-queue-item-wrapper class=hidden style=display:none>
+<div class="queue-row queue-support js-queue-support">
+<div class=queue-left-gutter>
+<div class="sort-arrow-wrapper js-sort-arrow-wrapper">
+<button class="js-move-queue-item-up move-queue-item-up">
+<img src="/static/images/responsive/sort-arrow-up.svg" class=sort-arrow />
+</button>
+<img src="/static/images/responsive/drag-drop.svg" class=drag-drop-icon />
+<button class="js-move-queue-item-down move-queue-item-down">
+<img src="/static/images/responsive/sort-arrow-down.svg" class=sort-arrow />
+</button>
+</div>
+</div>
+<div class=queue-details-wrapper>
+<div class="queue-photo-wrapper queue">
+<div class="js-queue-playnow queue-photo-overlay"></div>
+<img src="/static/js/responsive/lib/mediaelement/icons/tfl-poster-audio.png" class="img-responsive audio-banner js-audio-banner"/>
+<span class="list-player-progress js-player-progress"><span class="list-player-progress-current js-player-progress-current"></span></span>
+</div>
+<div class=queue-description-wrapper>
+<div class="queue-date js-queue-date"></div>
+<h4 class='queue-title js-queue-title'><span></span></h4>
+<div class='small bright queue-scripture-reference'>
+<span class=js-scripture-reference-link></span>
+</div>
+<div class='queue-series js-series'>
+Series: <span class=js-series-link></span>
+</div>
+<div class="queue-sku js-sku">
+<span class="js-sku-id small bright"></span>
+<span class="resource-type js-resource-type small bright"></span>
+<span class="js-video-disclaimer video-disclaimer small bright" style=display:none>Videos cannot be added to the listen queue at this time.</span>
+<span class="js-expiration expiration small bright"></span>
+</div>
+</div>
+<div class=queue-duration-wrapper>
+<div class="js-duration small queue-duration"></div>
+</div>
+</div>
+<div class=expired_notification style=display:none>
+<div>This item is no longer available.</div>
+<button class="js-remove-expired btn btn-sm btn-primary">Remove this item</button>
+</div>
+<div class=queue-right-gutter>
+<a tabindex=0 class="js-add-queue-popover add-queue-popover" role=button title="" aria-label=Options>
+<img src="/static/images/responsive/icon-ellipsis-vertical.svg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class=hidden style=display:none id=queue_player_media_item_wrapper></div>
+<div id=top></div>
+<div id=site_notification class=site_notification>
+<div class=notification_icon></div>
+<div class=notification_message><span class=notification_text></span></div>
+<div class=notification_indicator></div>
+</div>
+<div id=site-wrapper>
+<input id=page_classes type=hidden value=about>
+<script>(function(){var body=document.getElementById('body');var pageClasses=document.getElementById('page_classes');body.className=body.className+' '+pageClasses.value;})();</script>
+<div id=site-canvas>
+<nav class=nav-outer-wrapper role=navigation>
+<div class=nav-utility-outer-wrapper>
+<div class=container>
+<div class=nav-utility-support>
+<div class=nav-utility-wrapper>
+<ul class='nav nav-pills'>
+<li class=utility-findstation><a href='/stationfinder/'>TFL Finder</a></li>
+<li class=utility-events><a href='/events/'>Events</a></li>
+<li class="utility-contact hidden-sm"><a href='/about/contact-us/'>Contact</a></li>
+<li class='utility-about dropdown'>
+<a data-toggle=dropdown href='/about' id=about-dropdown>About</a>
+<ul aria-labelledby=about-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/about/'>About Truth For Life</a></li>
+<li><a href='/about/our-mission/'>Our Mission</a></li>
+<li><a href='/about/what-we-believe/'>What We Believe</a></li>
+<li><a href='/thestory' data-pjax=false target=_blank>Follow Christ</a></li>
+<li><a href='/thestory#wherestart' data-pjax=false target=_blank>Where Do I Start?</a></li>
+<li><a href='/about/about-alistair-begg/'>About Alistair</a></li>
+<li><a href='/about/our-team/'>Our Team</a></li>
+<li><a href='/about/frequently-asked-questions/'>FAQs</a></li>
+<li><a href='/about/policies/'>Policies</a></li>
+<li class=visible-sm><a href='/about/contact-us/'>Contact</a></li>
+</ul>
+</li>
+<li class='utility-donate dropdown hidden-lg'>
+<a data-toggle=dropdown href='#' id=donate-dropdown>Donate</a>
+<ul aria-labelledby=donate-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/donate' class=noplayer>Donate Online</a></li>
+<li><a href='/donate/stewardship/'>Stewardship</a></li>
+<li><a href='/donate/ways-give/'>Ways to Give</a></li>
+<li class=section-title><span>Truthpartner Info</span></li>
+<li><a href='/become-a-truthpartner/' class=noplayer>Become a Truthpartner</a></li>
+</ul>
+</li>
+<li class='utilty-cart  cart-options hidden-xs dropdown'>
+<a title=cart class=btn-cart data-toggle=dropdown href='#'>
+<img class=nav-icon src="/static/images/responsive/icon-nav-cart.svg"/>
+<span class='cart-total cart-contents'>0</span>
+</a>
+<div aria-labelledby=cart class='dropdown-menu dropdown-cart' role=menu>
+<div class=cart-contents>
+<h4 class=' '>Your Cart</h4>
+<p>
+You have
+<a href='/store/cart/' class=cart-total-link>0 items</a>
+in your cart.
+</p>
+<p>
+Subtotal:
+<a href='/store/cart/' class=cart-subtotal-link>$0.00</a>
+</p>
+<p class=cart-actions>
+<a class=btn-view-cart href='/store/cart/'>View cart</a>
+<a class='btn btn-checkout  ' href='/store/checkout/'>
+<i class=ti-shopping-cart></i>
+Checkout
+</a>
+</p>
+</div>
+<div class=cart-empty>
+<h4 class=empty-cart-title>Your cart is empty.</h4>
+<p><a href="/store/">Start shopping now...</a></p>
+</div>
+<div class=clearfix></div>
+</div>
+</li>
+<li class='utility-account sign-in-options'>
+<a href="#account" data-toggle=dropdown>
+<span class=account-badge>
+<small>Sign<br>In</small>
+</span>
+</a>
+<div aria-labelledby=sign-in class='dropdown-menu dropdown-signup' role=menu id=login_form_wrapper>
+<form action="/accounts/login" method=GET class=form-sign-in data-pjax>
+<button class="btn btn-login btn-block btn-lg  ">Sign in</button>
+</form>
+<form action="/account/register/" method=GET data-pjax>
+<p class='help-block sign-up-block'>
+<span>Don't have an account yet?</span>
+<button class='btn btn-default btn-sm btn-block btn-sign-up' type=submit>Sign up</button>
+</p>
+</form>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=brand-outer-wrapper>
+<div class=container>
+<div class=brand-nav-primary-support>
+<div class=brand-wrapper>
+<a class=brand-link href='/'>Truth For Life</a>
+<img class="brand-img print-only" width=300 height=44 src="/static/images/responsive/logo-tag-k.svg" alt="Truth For Life " role=logo />
+</div>
+<div class=nav-primary-wrapper>
+<ul class='nav nav-pills pull-right nav-top-level' id=site-menu>
+<li class='primary primary-today'>
+<a href='/daily/'>Today</a>
+</li>
+<li class='primary dropdown primary-broadcasts'>
+<a data-toggle=dropdown href='#' id=broadcasts-dropdown>Programs</a>
+<ul aria-labelledby=broadcasts-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/broadcasts/latest-aired/'>Latest Program</a></li>
+<li><a href='/broadcasts/archive/'>Archived Programs</a></li>
+<li><a href='/broadcasts/upcoming-broadcasts/'>Program Schedule</a></li>
+<li><a href='/subscribe/'><i class=ti-podcast></i> Subscribe and Connect</a></li>
+<li class=divider></li>
+<li><a href='/stationfinder/' class=noplayer><i class=ti-map-marker></i> TFL Station Finder <span class=ticon-station></span></a></li>
+<li><a href='/radio-info/'>Info for Broadcasters</a></li>
+</ul>
+</li>
+<li class='primary dropdown primary-sermons'>
+<a data-toggle=dropdown href='#' id=sermons-dropdown>Sermons</a>
+<ul aria-labelledby=sermons-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/resources/most-recent-sermons/'>Latest Sermons</a></li>
+<li class=section-title><span>Browse</span></li>
+<li><a href='/resources/topics/'>by Topic</a></li>
+<li><a href='/resources/?type=series&per_page=25'>by Series</a></li>
+<li><a href='/resources/scripture/'>by Scripture</a></li>
+<li><a href='/resources/?type=sermon'>by Date</a></li>
+<li><a href='/resources/?format=transcript'>by Transcripts</a></li>
+</ul>
+</li>
+<li class='primary primary-blog'>
+<a href='https://blog.truthforlife.org/' target=_blank>Blog</a>
+</li>
+<li class='primary dropdown primary-more'>
+<a data-toggle=dropdown href='#' id=more-dropdown>More</a>
+<ul aria-labelledby=more-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href="/subscribe">Subscribe &amp; Connect</a></li>
+<li><a href='/topics/'>Explore Topics</a></li>
+<li><a href="/apps" data-pjax=false target=_blank>Get the App</a></li>
+<li class=divider></li>
+<li><a href='/devotionals/alistair-begg/archive/'>Alistair Begg Devotional</a></li>
+<li><a href='/devotionals/spurgeon/archive/'>C. H. Spurgeon Devotional</a></li>
+<li><a href='https://info.truthforlife.org/reading-plans' target=_blank>Reading Plans</a></li>
+<li><a href='/bible'>Online Bible (ESV)</a></li>
+<li class=divider></li>
+<li><a href='/thestory#wherestart' data-pjax=false target=_blank>Where Do I Start?</a></li>
+<li><a href='/thestory' data-pjax=false target=_blank>Follow Christ</a></li>
+</ul>
+</li>
+<li class='primary visible-xs alt-mobile-nav primary-signin'>
+<a href="/account/login/?next=/about/">Sign In</a>
+</li>
+<li class='primary visible-xs alt-mobile-nav primary-donate'>
+<a class='xs-secondary noplayer' href='/donate/'>Donate</a>
+</li>
+<li class='primary visible-xs alt-mobile-nav '><a class='xs-secondary noplayer' href='/become-a-truthpartner/'>Truthpartner</a></li>
+<li class='primary visible-xs alt-mobile-nav primary-store'>
+<a href='/store/' id=store-dropdown>Store</a>
+</li>
+<li class='primary visible-xs alt-mobile-nav primary-cart '>
+<a class=xs-secondary href='/store/cart/'>
+Cart
+<i class=ti-shopping-cart></i>
+</a>
+</li>
+<li class="visible-xs divider"></li>
+<li class='primary visible-xs xs-secondary primary-faqs'><a href='/about/frequently-asked-questions/'>FAQs</a></li>
+<li class='primary visible-xs xs-secondary primary-stationfinder'><a href='/stationfinder/'>Find a Station <i class=ticon-station></i></a></li>
+<li class='primary visible-xs xs-secondary primary-about'><a href='/about/'>About</a></li>
+<li class='primary visible-xs xs-secondary primary-events'><a href='/events/'>Events</a></li>
+<li class='primary visible-xs xs-secondary primary-contact'><a href='/about/contact-us/'>Contact</a></li>
+<li class='primary visible-xs xs-secondary primary-subscribe'><a href='/subscribe/'>Subscribe <i class=ti-rss></i></a></li>
+<li class='primary hidden-xs dropdown primary-store'>
+<a data-toggle=dropdown href='/store/' id=store-dropdown data-pjax=false target=_blank>Store</a>
+<ul aria-labelledby=store-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a href='/store/'>Storefront</a></li>
+<li><a href='/store/category/books-and-booklets/'>Books and Booklets</a></li>
+<li><a href='/store/category/books-alistair-begg/'>Books by Alistair Begg</a></li>
+<li><a href='/store/category/bundles/'>Bundles</a></li>
+<li><a href='/store/category/dvds/'>DVDs</a></li>
+<li><a href='/store/category/study-guides/'>Study Guides</a></li>
+<li><a href='/store/category/usb/'>USB</a></li>
+</ul>
+</li>
+<li class='primary dropdown btn-donate primary-donate visible-lg hidden-xs'>
+<a data-toggle=dropdown href='/donate/' id=donate-dropdown data-pjax=false target=_blank>Donate</a>
+<ul aria-labelledby=donate-dropdown class='dropdown-menu nav-dropdown dropdown-menu-right' role=menu>
+<li><a class=noplayer href='/donate/'>Donate Online</a></li>
+<li><a href='/donate/stewardship/'>Stewardship</a></li>
+<li><a href='/donate/ways-give/'>Ways to Give</a></li>
+<li class=section-title><span>Truthpartner Info</span></li>
+<li><a href='/become-a-truthpartner/' class=noplayer>Become a Truthpartner</a></li>
+</ul>
+</li>
+<li class=search role=search>
+<a class='btn hidden-xs' data-toggle=dropdown href='#' id=dropdown-search>
+<img class=nav-icon src="/static/images/responsive/icon-nav-search.svg"/>
+</a>
+<div aria-labelledby=dropdown-search class='dropdown-menu dropdown-menu-right dropdown-search' role=menu>
+<form action='/search/' class=form-inline role=form method=GET data-pjax>
+<div class=form-group>
+<label class=sr-only for=searchCriteria>Search</label>
+<input name=q class=form-control id=searchCriteria placeholder=Search type=text>
+<input type=hidden name=inurl value="">
+</div>
+</form>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class='mobile-sign-in sign-in-options'>
+<a class=btn href="/store/cart">
+<img class=nav-icon src="/static/images/responsive/icon-nav-cart.svg"/>
+</a>
+<a class='btn sign-in-register' data-target='#sign-in-modal' data-toggle=modal href='#'>
+<span class=account-badge>
+<small>Sign<br>In</small>
+</span>
+</a>
+<div aria-labelledby=sign-in class='modal fade' id=sign-in-modal role=menu>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<button aria-hidden=true class=close data-dismiss=modal type=button>&times;</button>
+<h4 class=modal-title>Welcome! Sign in.</h4>
+</div>
+<div class=modal-body id=modal_login_body>
+<form action="/accounts/login" method=GET class=form-sign-in data-pjax>
+<input type=hidden name=csrfmiddlewaretoken value=7TtaXRzYqsONOoEKwRXCz97A37tCLoCl6Ja29eqjBRwLLpKoXLNfB6udrCEFmkgd />
+<button class="btn btn-login btn-block btn-lg  ">Sign in</button>
+</form>
+<form action="/account/register/" method=GET data-pjax>
+<input type=hidden name=csrfmiddlewaretoken value=7TtaXRzYqsONOoEKwRXCz97A37tCLoCl6Ja29eqjBRwLLpKoXLNfB6udrCEFmkgd />
+<p class='help-block sign-up-block'>
+<span>Don't have an account yet?</span>
+<button class='btn btn-default btn-sm btn-block btn-sign-up' type=submit>Sign up</button>
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<a class='btn toggle-nav'>
+<img class="nav-icon nav-icon--show" src="/static/images/responsive/icon-nav-menu.svg"/>
+<img class="nav-icon nav-icon--hide" src="/static/images/responsive/icon-nav-close.svg"/>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<section class='container podcast-container'>
+<header class=header-support>
+<div class=article-title-wrapper id=subnav-toggle>
+<div class=visible-titles>
+<span class=caret></span>
+<h4 class=section-title>
+<span class=print-hidden>You found:</span>
+</h4>
+<h5 class=sidebar-nav-active>
+About
+</h5>
+</div>
+<div id=subnav-items>
+<nav class=sidebar-nav role=navigation>
+<ul class='nav nav-pills nav-stacked nav-sidebar'>
+<li class=""><a href="/about/our-mission/">Our Mission</a></li>
+<li class=""><a href="/about/what-we-believe/">What We Believe</a></li>
+<li class=""><a href="https://www.truthforlife.org/thestory/">The Gospel</a></li>
+<li class=""><a href="/about/about-alistair-begg/">About Alistair Begg</a></li>
+<li class=""><a href="/about/our-team/">Our Team</a>
+<ul>
+<li class=""><a href="/about/our-team/jointheteam/">Join the Team</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/about/our-team/volunteer/">Volunteer</a></li>
+</ul>
+</li>
+<li class=""><a href="/about/contact-us/">Contact Us</a>
+<ul>
+<li class=""><a href="/about/contact-us/support-form/">Support Form</a></li>
+</ul>
+</li>
+<li class=""><a href="/about/policies/">Policies</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class=article-title-wrapper>
+<h4 class='section-title  '>
+<span class=muted-text>
+About
+</ul>
+</h4>
+<h1 class='article-title  '>
+About
+</h1>
+</div>
+<div class=social-share role=contentInfo>
+<a href="#" class="btn " id=shareBtn type=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Share <i class=ti-share></i></a>
+<ul class=dropdown-menu id=social-share-options aria-labelledby=shareBtn>
+<li><a id=twitter_share href="" target=_blank data-social=twitter> <span class=sr-only>Twitter </span><i class=ti-twitter></i></a></li>
+<li><a id=facebook_share href="" target=_blank data-social=facebook><span class=sr-only>Facebook</span><i class=ti-facebook></i></a></li>
+<li><a id=whatsapp_share href="" target=_blank data-social=whatsapp><span class=sr-only>WhatsApp</span><i class=ti-whatsapp></i></a></li>
+<li><a id=email_share href="" target=_blank data-social=email> <span class=sr-only>Email </span><i class=ti-envelope></i></a></li>
+</ul>
+</div>
+<script>
+  {
+    const sharable = encodeURIComponent(document.location.href.split("&_pjax=%23site-wrapper").join(""));
+    const title = encodeURIComponent(document.title);
+
+    document.getElementById('twitter_share' ).setAttribute('href', `https://twitter.com/intent/tweet?text=${title}+${sharable}`);
+    document.getElementById('facebook_share').setAttribute('href', `https://www.facebook.com/sharer/sharer.php?title=${title}&u=${sharable}`);
+    document.getElementById('whatsapp_share').setAttribute('href', `https://api.whatsapp.com/send?text=${title}%20%7C%20${sharable}`);
+    document.getElementById('email_share'   ).setAttribute('href', `mailto:username@example.com?subject=${title}&body=${sharable}`);
+  }
+</script>
+</header>
+<div class=main-content-support>
+<div class=main-content-wrapper>
+<p class=lead><img src="https://www.truthforlife.org/static/uploads/AboutAlistair.jpg" alt="Alistair Begg" title="Alistair Begg" width=184 height=210 style="float: left; margin-right: 25px; margin-bottom: 10px; border: none;"/>On February 27, 1995, Truth For Life began airing a 25-minute daily Bible teaching program on seven radio stations. Today the program, featuring Bible teacher Alistair Begg, can be heard in every major market across the US, and also in several countries outside the US, on over <a href="https://www.truthforlife.org/stationfinder/">2,000 radio stations</a>. Truth For Life can also be heard daily on <a href="https://www.youtube.com/user/truthforlife1">YouTube</a>, through the Truth For Life <a href="https://www.truthforlife.org/broadcasts/latest-aired/">website</a> and <a href="https://www.truthforlife.org/theapp/">mobile app</a>, on <a href="https://blog.truthforlife.org/truth-for-life-is-on-streaming-tv">streaming TV</a>, as a<a href="https://www.truthforlife.org/subscribe/#podcast"> podcast</a>, on <a href="https://truthforlife.org/alexa/">Amazon Alexa</a> and <a href="https://www.truthforlife.org/google-home/">Google Home</a> devices, and through a number of <a href="https://www.truthforlife.org/subscribe/">other listening channels</a>.</p>
+<p>The biblical, expositional teaching of <a href="/about/about-alistair-begg/">Alistair Begg</a> is internationally known as an inspiring source for clear, relevant instruction rooted firmly in Scripture. Studying God&#8217;s Word each day, verse by verse, is the hallmark of Truth For Life&#8217;s ministry.</p>
+<p>Driven by the desire to share the Gospel without the barrier of cost, Truth For Life ensures that messages in Alistair Begg&#8217;s entire teaching library can be heard, watched, or shared for free. Additionally, books and other materials that teach more about God&#8217;s Word can be purchased from Truth For Life at cost and mailed to any US location without any additional charge for shipping.</p>
+<p><a href="/donate/stewardship/">Information about stewardship &#187;</a></p>
+</div>
+<aside class=sidebar-wrapper>
+<nav class=sidebar-nav role=navigation>
+<h4 class="nav-title  ">About</h4>
+<ul class='nav nav-pills nav-stacked nav-sidebar'>
+<li class=""><a href="/about/our-mission/">Our Mission</a></li>
+<li class=""><a href="/about/what-we-believe/">What We Believe</a></li>
+<li class=""><a href="https://www.truthforlife.org/thestory/">The Gospel</a></li>
+<li class=""><a href="/about/about-alistair-begg/">About Alistair Begg</a></li>
+<li class=""><a href="/about/our-team/">Our Team</a>
+<ul>
+<li class=""><a href="/about/our-team/jointheteam/">Join the Team</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/about/our-team/volunteer/">Volunteer</a></li>
+</ul>
+</li>
+<li class=""><a href="/about/contact-us/">Contact Us</a>
+<ul>
+<li class=""><a href="/about/contact-us/support-form/">Support Form</a></li>
+</ul>
+</li>
+<li class=""><a href="/about/policies/">Policies</a></li>
+</ul>
+</nav>
+<div class=promotions>
+<a href='https://www.truthforlife.org/donate/?src=23WALD1' target=_blank id="Resource A - December 2023 - 12/01/2023" class=ad-banner-link data-pjax=false>
+<img alt='Promo 1' class='img-responsive promotion' height=300 width=400 src='/static/uploads/banners/shortclassicsbundle_ipadwebsiteapp.jpg'/>
+</a>
+<a href='https://www.truthforlife.org/store/quickorder/?src=23WAYS1' target=_blank id="ESV Bible (/Gifts) - December 2023 - 12/07/2023" class=ad-banner-link data-pjax=false>
+<img alt='Promo 1' class='img-responsive promotion' height=300 width=400 src='/static/uploads/banners/esvstudybible_ipadwebsiteapp.jpg'/>
+</a>
+<a href='https://blog.truthforlife.org/if-you-benefit-from-truth-for-life-you-have-a-truthpartner-to-thank?src=23WAYD2' target=_blank id="What Your Giving Makes Possible - December 2023 - 12/07/2023" class=ad-banner-link data-pjax=false>
+<img alt='Promo 1' class='img-responsive promotion' height=300 width=400 src='/static/uploads/banners/whatyourgivingmakespossible_ipadwebsiteapp.jpg'/>
+</a>
+</div>
+</aside>
+</div>
+</section>
+<div class=base-utility-outer-wrapper role=navigation>
+<div class=container>
+<div class=base-utility-support>
+<div class=back-to-top-wrapper>
+<a class='back-to-top smooth' href='#top'>
+<span class=hidden-xs>Back to top</span>
+<i class="ti-angle-up visible-xs"></i>
+</a>
+</div>
+<div class=link-trail-wrapper>
+<ul class='list-inline link-trail'>
+<li>
+<a href='/'>Home</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer role=contentInfo>
+<div class=container>
+<div class=footer-nav-subscribe-outer-wrapper>
+<div class=footer-nav-subscribe-control-support>
+<div class=footer-nav-wrapper>
+<div class=footer-nav-subscribe-support id=footer-nav-subscribe>
+<div class=connect-with-us-wrapper>
+<h5 class='footer-title  '>Connect with&nbsp;us</h5>
+<div itemscope itemtype='http://schema.org/Organization'>
+<address itemprop=address itemscope itemtype='http://schema.org/PostalAddress'>
+<span itemprop=streetAddress>PO Box 398000</span>
+<br>
+<span itemprop=addressLocality>Cleveland</span>
+,
+<span itemprop=addressRegion>OH</span>
+<span itemprop=postalCode>44139</span>
+</address>
+<p>
+<span class=contact-method-label>By Phone <i class=ti-phone></i></span>
+<span class=contact-method itemprop=telephone><span class=no-break>888-588-7884</span></span>
+</p>
+</div>
+<ul class=list-unstyled>
+<li>
+<a class=contact-method href='/about/contact-us/'>Get in Touch <i class=ti-edit></i></i> </a>
+</li>
+<li class=support-form-link>
+<a class=contact-method href='https://tflhelp.freshdesk.com/support/home'>Need Help? <i class=ti-lifebuoy></i></a>
+</li>
+<li>
+<a class=contact-method href='/stationfinder/' data-pjax=false target=_blank>Radio Station Finder <i class=ti-map-marker></i></a>
+</li>
+</ul>
+</div>
+<div class=welcome-wrapper>
+<h5 class='footer-title   collapsed' data-target='#welcome-list' data-toggle=collapse>
+Welcome
+<span class=caret></span>
+</h5>
+<ul class='list-unstyled collapse' id=welcome-list>
+<li>
+<a href='/about/our-mission/'>Our Mission</a>
+</li>
+<li>
+<a href='/about/frequently-asked-questions/'>FAQs</a>
+</li>
+<li>
+<a href='/about/about-alistair-begg/'>Alistair Begg</a>
+</li>
+<li><a href='/thestory' data-pjax=false target=_blank>Follow Christ</a></li>
+<li><a href='/thestory#wherestart' data-pjax=false target=_blank>Where Do I Start?</a></li>
+</ul>
+</div>
+<div class='clearfix visible-xs visible-sm'></div>
+<div class=our-resources-wrapper>
+<h5 class='footer-title   collapsed' data-target='#our-resources-list' data-toggle=collapse>
+Our Resources
+<span class=caret></span>
+</h5>
+<ul class='list-unstyled collapse' id=our-resources-list>
+<li><a href='http://blog.truthforlife.org/'>Blog</a></li>
+<li><a href='/resources/sermon/'>Sermon Archive</a></li>
+<li><a href='/resources/series/'>Series Archive</a></li>
+<li><a href="/topics/">Topics</a></li>
+<li><a href='/devotionals/alistair-begg/archive/'>Alistair Begg Devotionals</a></li>
+<li><a href='/devotionals/spurgeon/'>C. H. Spurgeon Devotionals</a></li>
+<li><a href='/syndicate/request/' data-pjax=false target=_blank>Add Devotional to Your Website</a></li>
+<li><a href='/bible'>Bible</a></li>
+<li><a href="/subscribe">Connect with TFL</a></li>
+<li><a href="http://blog.truthforlife.org/books-by-alistair-begg">Books by Alistair Begg</a></li>
+</ul>
+</div>
+<div class=donate-wrapper>
+<h5 class='footer-title   collapsed' data-target='#donate-list' data-toggle=collapse>
+Donate
+<span class=caret></span>
+</h5>
+<ul class='list-unstyled collapse' id=donate-list>
+<li>
+<a class=noplayer href='/donate/'>Donate Online</a>
+</li>
+<li>
+<a href='/donate/stewardship/'>Stewardship</a>
+</li>
+<li>
+<a href='/donate/ways-give/'>Ways to Give</a>
+</li>
+<li>
+<li><a class=noplayer href='/become-a-truthpartner/'>Become a Truthpartner</a></li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=subscription-form-wrapper id=email_subscription_wrapper>
+<h5 class=footer-title>Insights Delivered to Your&nbsp;Inbox</h5>
+<div id=HSFooter></div>
+<div class=create-account-message>
+<p>Thank you for subscribing.</p>
+<p>
+Create a free account to manage your subscriptions, track your listening progress, and build a listening library of your favorite messages.
+</p>
+<div class=create-account-btn-wrapper>
+<a href="/account/register">
+<button class=create-account-btn>Create Account</button>
+</a>
+<a href="/account/login">
+<button class=sign-in-btn>Sign In</button>
+</a>
+</div>
+</div>
+<script charset=utf-8 type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>hbspt.forms.create({portalId:'331596',formId:'bd7e5f48-f0b4-4b7d-bda7-95342fdb356a',css:'',target:"#HSFooter",onFormSubmitted:function($form){var footer=$('footer');footer.find('.create-account-message').addClass('footer');footer.find('.submitted-message p').replaceWith($('.create-account-message.footer'));$('.create-account-message.footer').show();}});</script>
+</div>
+</div>
+</div>
+<div class=legal-social-outer-wrapper>
+<div class=legal-social-support>
+<div class=legal-wrapper>
+<p>Truth For Life is the teaching ministry of Alistair Begg and is committed to teaching the Bible with clarity and relevance so that unbelievers will be converted, believers will be established, and local churches will be strengthened.</p>
+<p>
+Truth For Life is a qualified 501(c)(3) tax-exempt organization.
+</p>
+</div>
+<div class=social-wrapper>
+<ul class='list-inline social-media-icons'>
+<li class=twitter>
+<a href='http://www.twitter.com/truthforlife' title=Twitter>
+<i class=ti-twitter></i>
+</a>
+</li>
+<li class=facebook>
+<a href='http://www.facebook.com/truthforlife' title=Facebook>
+<i class=ti-facebook></i>
+</a>
+</li>
+<li class=youtube>
+<a href='https://www.youtube.com/user/truthforlife1/' title=YouTube>
+<i class=ti-youtube></i>
+</a>
+</li>
+<li class=instagram>
+<a href='http://instagram.com/alistair_begg_truthforlife' title=Instagram>
+<i class=ti-instagram></i>
+</a>
+</li>
+<li class=tiktok>
+<a href='https://www.tiktok.com/@truthforlife' title=TikTok>
+<img src="/static/images/responsive/icon-social-tiktok.svg"/>
+</a>
+</li>
+<li class=rss>
+<a href='/subscribe/#mobile' title="More channels&hellip;">
+<i class=ti-rss></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='wrapper copyright-support'>
+<div class=copyright-wrapper>
+<p>
+&copy; 1994 - 2023 Truth For Life. All Rights Reserved.
+<a href='/about/policies/'>Policies</a>
+<span class=pipe>|</span>
+<a href='/sitemap/'>Site Map</a>
+</p>
+</div>
+<div class=footer-logo-wrapper>
+<a class=footer-logo href='/'>
+Truth For Life
+</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
+<script src="/static/js/responsive/lib/mediaelement/mediaelement-and-player.max.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/django/dist/app.js.13094e811b773933d879.js" async defer></script>
+<script type='text/javascript'>window.tfl=window.tfl||{};</script>
+<script>function starttfl(){if(typeof modalmessage=='function'){modalmessage();}if(typeof notificationmessage=='function'){notificationmessage();}}window.onload=starttfl;$(":checkbox").on('click',function(){$(this).parent().toggleClass("checked");});$('#tp_premium input[type=radio]').filter(':checked').each(function(index){$(this).parent().addClass("checked11");});$('input[type=radio]').filter(':checked').each(function(index){$(this).click();$(this).parent().addClass("checked11");});var $radioButtons=$('input[type="radio"]');$radioButtons.click(function(){$radioButtons.each(function(){$(this).parent().toggleClass('checked11',this.checked);});});</script>
+<script>$("a[href*='blog.truthforlife.org']").attr('target','_blank');</script>
+<script>$(document).ready(function($){});</script>
+<script></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+<script type="text/javascript">FreshWidget.init("",{"queryString":"&widgetType=popup&searchArea=no","utf8":"✓","widgetType":"popup","buttonType":"text","buttonText":"Support","buttonColor":"white","buttonBg":"#7F7168","alignment":"2","offset":"235px","formHeight":"500px","url":"https://tflhelp.freshdesk.com"});</script>
+</div>
+</body>
+</html>

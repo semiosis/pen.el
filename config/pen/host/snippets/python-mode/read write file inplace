@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: read write file inplace
+# group: open
+# key: rw-inplace
+# --
+with fileinput.FileInput(sys.argv[1], inplace=True, backup='.bak') as file:
+  for line in file:
+    for src, target in tex_replacements.items():
+      line = line.replace(src, target+"{}")
+    print(line, end='')

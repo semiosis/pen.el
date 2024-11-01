@@ -1,0 +1,9 @@
+ 	 [(first (rest coll)) (rest coll)])
+
+(defn do-it []
+
+No elements, list is empty.
+
+First element (or only element, if empty list)
+
+Second element

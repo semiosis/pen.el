@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Jeremiah" "21:12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jeremiah" "14:7" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jeremiah" "14:10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jeremiah" "14:14" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jeremiah" "16:18" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jeremiah" "17:10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Jeremiah" "7:9-10" "#" "<==" "zsh"

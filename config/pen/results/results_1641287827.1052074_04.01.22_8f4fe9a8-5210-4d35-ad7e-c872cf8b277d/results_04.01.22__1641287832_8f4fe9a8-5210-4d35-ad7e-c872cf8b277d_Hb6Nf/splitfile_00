@@ -1,0 +1,4 @@
+1. We create a new variable called f and ok
+2. We check if the DocumentURI(tok[2]) exists in the files map
+3. If it does not exist, we return nil and an error
+

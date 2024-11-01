@@ -1,0 +1,14 @@
+
+
+data Task =
+
+task :: Task -> Task
+task a1 a2 = a1 ++ a2
+
+data TaskMap =
+
+-- data TaskMap =
+
+-- emptyTask :: TaskMap
+
+-- singleTask

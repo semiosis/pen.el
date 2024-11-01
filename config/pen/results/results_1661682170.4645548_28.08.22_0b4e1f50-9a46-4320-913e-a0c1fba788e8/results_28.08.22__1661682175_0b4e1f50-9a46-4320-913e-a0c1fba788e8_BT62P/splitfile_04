@@ -1,0 +1,10 @@
+"apigateway" is a command line tool for interacting with AWS apigateway.
+
+Usage:
+    saws apigateway create-api-key
+    saws apigateway create-api-key --help
+    saws apigateway create-api-key --version
+
+Options:
+    -h --help                         Show this screen.
+    --version                         Show version.

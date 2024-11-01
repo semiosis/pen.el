@@ -1,0 +1,1 @@
+ t "number" from "common" where "source" = 'versions' and "text" = 'svn' ;

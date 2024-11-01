@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "wget" "-qO-" "https://www.youtube.com/watch?v=efoLi2N0018" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=B0RCg2ZTFeM" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=qYqlwid_Tqk" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=adhqFo3xBmg" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=qYqlwid_Tqk" "#" "<==" "pen-ci"

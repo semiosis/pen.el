@@ -1,0 +1,7 @@
+The above code is a simple program that asks the user for a search term,
+then prints out the results of that search term.
+
+The fromMaybe function is a function that takes two arguments,
+a default value and a maybe value.
+If the maybe value is Nothing, the default value is returned.
+If the maybe value is Just something, the something is returned.

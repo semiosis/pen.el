@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: annotated disjunction
+# group: vimsnippet
+# key: vs-ad
+# --
+${1:0.9}::${2:alarm} :- ${3:burglary}, ${4:earthquake}.
+

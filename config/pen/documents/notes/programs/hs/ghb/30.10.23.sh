@@ -1,0 +1,6 @@
+cd /root/repos/hackerb9;  "ghb" "size"
+cd /root/repos/horriblename;  "ghb" "size"
+cd /root/repos/marianosimone;  "ghb" "size"
+cd /root/repos/hpjansson;  "ghb" "size"
+cd /root/repos/horriblename;  "ghb" "size"
+cd /root/repos/horriblename;  "ghb" "size"

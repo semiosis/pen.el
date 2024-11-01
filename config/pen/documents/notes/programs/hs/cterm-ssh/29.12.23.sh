@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "which" "chrome" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "chrome" "https://m.christianradio.com/ministry/leading-the-way/" "#" "<==" "pen-ssh-host"
+cd /;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "timedatectl" "status" "#" "<==" "pen-ssh-host"
+cd /;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "timedatectl" "status" "#" "<==" "pen-ssh-host"
+cd /;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "timedatectl" "status" "#" "<==" "pen-ssh-host"

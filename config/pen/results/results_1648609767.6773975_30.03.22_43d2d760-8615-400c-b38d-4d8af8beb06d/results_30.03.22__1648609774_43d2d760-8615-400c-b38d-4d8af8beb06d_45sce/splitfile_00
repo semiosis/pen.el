@@ -1,0 +1,17 @@
+"newtype" is a new keyword introduced in GHC 7.8.
+
+"newtype" is a newtype keyword.
+
+"deriving" is a deriving keyword.
+
+"Num" is a Num typeclass.
+
+"Show" is a Show typeclass.
+
+"Eq" is a Eq typeclass.
+
+"Text" is a Text type.
+
+"Double" is a Double type.
+
+"Int" is a Int type.

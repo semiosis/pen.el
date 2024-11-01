@@ -1,0 +1,11 @@
+"apigateway" is a command line tool for creating and managing Amazon API Gateway resources.
+
+Usage:
+    saws apigateway [<command>] [<args>...]
+    saws apigateway [<command>] -h|--help
+
+Commands:
+    create-api-key      Create an API key
+    create-base-path-mapping      Create a base path mapping
+    create-client-certificate      Create a client certificate
+    create-de

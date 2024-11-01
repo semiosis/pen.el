@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: shiftn
+# group: args
+# key: shiftn
+# --
+# shiftn "this shifts a specific arg"
+args=("\$@"); unset "args[\$(( ${0:i} - 1 ))]"; set -- "\${args[@]}"

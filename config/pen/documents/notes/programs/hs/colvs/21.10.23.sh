@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes/ws/lists/peniel;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"

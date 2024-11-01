@@ -1,0 +1,16 @@
+
+  (let ((n (- char ?a)))
+    (if (< n 0)
+        (error "number out of range")
+      (char-to-string n))))
+
+(defun pen-modeline-letter ()
+  "return the letter of the daemon in the modeline"
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (number-to-letter (+ 1 (string-to-number dn))))
+          (t
+           "?"))))
+EOD

@@ -1,0 +1,7 @@
+
+
+# In future, this would disable the use of non-libre models
+libre-only: off
+
+# When set to true, all models are loaded, even if they are not in the model list.
+#

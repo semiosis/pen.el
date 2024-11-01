@@ -1,0 +1,13 @@
+
+  (let ((n (- char ?a)))
+    (if (< n 0)
+        (error "number out of range")
+      (string (+ n ?a)))))
+
+(defun pen-modeline-buffer-name ()
+  (let* ((bn (buffer-name))
+         (bn-sans-extension (file-name-sans-extension bn))
+         (bn-sans-extension-length (length bn-sans-extension))
+         (bn-sans-extension-letter (number-to-letter bn-sans-extension)))
+    ;; if the buffer name is short and has a letter in it, use that letter as the mode line letter.  otherwise, use the first letter of the buffer name.  this ensures that buffers with the same name but different extensions have different mode line letters.
+    ;; if the buffer

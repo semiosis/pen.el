@@ -1,0 +1,5 @@
+newtype CustomInt = CustomInt Int
+data CustomList a = Nil | Cons a (CustomList a)
+instance Show a => Show (CustomList a) where
+  show (Nil) = "Nil"
+  show (Cons x xs) = "Cons " ++ show x ++ " " ++ show xs

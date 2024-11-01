@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "6:6" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "8:33-39" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "8:39" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "8:38-39" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "6:23" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "10:9" "#" "<==" "zsh"

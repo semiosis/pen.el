@@ -1,0 +1,4 @@
+
+fun! byte(line)
+    line2byte(line)+col(".")
+endf

@@ -1,0 +1,5 @@
+declare -f _bcrack_main
+declare -f _bcrack_usage
+declare -f _bcrack_version
+declare -f _bcrack_wordlist_usage
+declare -f _bcrack_wordlist_

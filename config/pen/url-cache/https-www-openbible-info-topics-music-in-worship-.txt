@@ -1,0 +1,1319 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 17776
+Connection: keep-alive
+Date: Sat, 17 Aug 2024 05:56:31 GMT
+Server: Apache
+Cache-Control: max-age=600
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 44a104c959b69258fe6bcdc9f84146fe.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: AKL50-C2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: s28m44bLgDeNwwUbGUx_h00ZrQRDf1d9RYM8jS892jf8R_WRXiSZdg==
+Age: 3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>What Does the Bible Say About Music In Worship?</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/topics/music_in_worship/" />
+<meta name="description" content="Bible verses about Music In Worship" />
+<script>
+	if (window.location.href.match(/\bn=/)) {
+		let newUrl = window.location.href;
+		newUrl = newUrl.replace(/\bn=[^&]+/, "");
+		newUrl = newUrl.replace(/\?$/, "");
+		window.history.replaceState({}, "", newUrl);
+	}
+</script>
+</head>
+<body class="topics inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<form action="/topics/" method="get" class="topic-search">
+	<p><label>What does the Bible say about
+		<input type="text" size="30" name="q" maxlength="100" value="Music In Worship" /></label>?
+		<input type="submit" value="Find Out" id="top-submit" />
+	</p>
+	<p class="alpha-nav">
+						<a href="/topics/a">A</a>
+							&#8227;
+								<a href="/topics/b">B</a>
+							&#8227;
+								<a href="/topics/c">C</a>
+							&#8227;
+								<a href="/topics/d">D</a>
+							&#8227;
+								<a href="/topics/e">E</a>
+							&#8227;
+								<a href="/topics/f">F</a>
+							&#8227;
+								<a href="/topics/g">G</a>
+							&#8227;
+								<a href="/topics/h">H</a>
+							&#8227;
+								<a href="/topics/i">I</a>
+							&#8227;
+								<a href="/topics/j">J</a>
+							&#8227;
+								<a href="/topics/k">K</a>
+							&#8227;
+								<a href="/topics/l">L</a>
+							&#8227;
+								<a href="/topics/m">M</a>
+							&#8227;
+								<a href="/topics/n">N</a>
+							&#8227;
+								<a href="/topics/o">O</a>
+							&#8227;
+								<a href="/topics/p">P</a>
+							&#8227;
+								<a href="/topics/q">Q</a>
+							&#8227;
+								<a href="/topics/r">R</a>
+							&#8227;
+								<a href="/topics/s">S</a>
+							&#8227;
+								<a href="/topics/t">T</a>
+							&#8227;
+								<a href="/topics/u">U</a>
+							&#8227;
+								<a href="/topics/v">V</a>
+							&#8227;
+								<a href="/topics/w">W</a>
+							&#8227;
+								<a href="/topics/y">Y</a>
+							&#8227;
+								<a href="/topics/z">Z</a>
+					</p></form>
+<h1><span class="small">		100 Bible Verses about
+	</span> Music In Worship</h1>
+<p><a href="https://twitter.com/share?url=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fmusic_in_worship%2F" target="_blank" class="share" aria-label="Share on Twitter"><span style="background-color: #55acee"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M26.67 9.38c-.78.35-1.63.58-2.51.69.9-.54 1.6-1.4 1.92-2.42-.85.5-1.78.87-2.78 1.06a4.38 4.38 0 0 0-7.57 3c0 .34.04.68.11 1-3.64-.18-6.86-1.93-9.02-4.57-.38.65-.59 1.4-.59 2.2 0 1.52.77 2.86 1.95 3.64-.72-.02-1.39-.22-1.98-.55v.06c0 2.12 1.51 3.89 3.51 4.29a4.37 4.37 0 0 1-1.97.07c.56 1.74 2.17 3 4.09 3.04a8.82 8.82 0 0 1-5.44 1.87c-.35 0-.7-.02-1.04-.06a12.43 12.43 0 0 0 6.71 1.97c8.05 0 12.45-6.67 12.45-12.45 0-.19-.01-.38-.01-.57.84-.62 1.58-1.39 2.17-2.27z"/></g></svg></span></a>
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fmusic_in_worship%2F" target="_blank" class="share" aria-label="Share on Facebook"><span style="background-color: #3b5998"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M21 6.144C20.656 6.096 19.472 6 18.097 6c-2.877 0-4.85 1.66-4.85 4.7v2.62H10v3.557h3.247V26h3.895v-9.123h3.234l.497-3.557h-3.73v-2.272c0-1.022.292-1.73 1.858-1.73h2V6.143z" fill-rule="evenodd"/></g></svg></span></a></p>
+<form action="/topics/music_in_worship" method="post" id="vote"><input type="hidden" name="w" value="music_in_worship" /><input type="hidden" id="db" name="db" value="dy" />
+									<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+95%3A1&amp;version=ESV" class="bibleref">Psalm 95:1</a>
+					<span class="note">
+						ESV / 211 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19095001" type="submit" id="vote_u_19095001" value="1">Helpful</button>
+					<button name="vote_d_19095001" type="submit" id="vote_d_19095001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Oh come, let us sing to the <span class="sc">Lord</span>; let us make a joyful noise to the rock of our salvation!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+150%3A1-6&amp;version=ESV" class="bibleref">Psalm 150:1-6</a>
+					<span class="note">
+						ESV / 201 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19150001-19150006" type="submit" id="vote_u_19150001-19150006" value="1">Helpful</button>
+					<button name="vote_d_19150001-19150006" type="submit" id="vote_d_19150001-19150006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Praise the <span class="sc">Lord</span>! Praise God in his sanctuary; praise him in his mighty heavens! Praise him for his mighty deeds; praise him according to his excellent greatness! Praise him with trumpet sound; praise him with lute and harp! Praise him with tambourine and dance; praise him with strings and pipe! Praise him with sounding cymbals; praise him with loud clashing cymbals! ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A16&amp;version=ESV" class="bibleref">Colossians 3:16</a>
+					<span class="note">
+						ESV / 191 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51003016" type="submit" id="vote_u_51003016" value="1">Helpful</button>
+					<button name="vote_d_51003016" type="submit" id="vote_d_51003016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A19&amp;version=ESV" class="bibleref">Ephesians 5:19</a>
+					<span class="note">
+						ESV / 148 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49005019" type="submit" id="vote_u_49005019" value="1">Helpful</button>
+					<button name="vote_d_49005019" type="submit" id="vote_d_49005019" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+100%3A1-2&amp;version=ESV" class="bibleref">Psalm 100:1-2</a>
+					<span class="note">
+						ESV / 117 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19100001-19100002" type="submit" id="vote_u_19100001-19100002" value="1">Helpful</button>
+					<button name="vote_d_19100001-19100002" type="submit" id="vote_d_19100001-19100002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">A Psalm for giving thanks. </span>Make a joyful noise to the <span class="sc">Lord</span>, all the earth! Serve the <span class="sc">Lord</span> with gladness! Come into his presence with singing!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+71%3A23&amp;version=ESV" class="bibleref">Psalm 71:23</a>
+					<span class="note">
+						ESV / 97 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19071023" type="submit" id="vote_u_19071023" value="1">Helpful</button>
+					<button name="vote_d_19071023" type="submit" id="vote_d_19071023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					My lips will shout for joy, when I sing praises to you; my soul also, which you have redeemed.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+33%3A3&amp;version=ESV" class="bibleref">Psalm 33:3</a>
+					<span class="note">
+						ESV / 93 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19033003" type="submit" id="vote_u_19033003" value="1">Helpful</button>
+					<button name="vote_d_19033003" type="submit" id="vote_d_19033003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Sing to him a new song; play skillfully on the strings, with loud shouts.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+16%3A25&amp;version=ESV" class="bibleref">Acts 16:25</a>
+					<span class="note">
+						ESV / 90 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44016025" type="submit" id="vote_u_44016025" value="1">Helpful</button>
+					<button name="vote_d_44016025" type="submit" id="vote_d_44016025" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					About midnight Paul and Silas were praying and singing hymns to God, and the prisoners were listening to them,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+5%3A13&amp;version=ESV" class="bibleref">James 5:13</a>
+					<span class="note">
+						ESV / 84 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59005013" type="submit" id="vote_u_59005013" value="1">Helpful</button>
+					<button name="vote_d_59005013" type="submit" id="vote_d_59005013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Is anyone among you suffering? Let him pray. Is anyone cheerful? Let him sing praise.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Hebrews+2%3A12&amp;version=ESV" class="bibleref">Hebrews 2:12</a>
+					<span class="note">
+						ESV / 69 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_58002012" type="submit" id="vote_u_58002012" value="1">Helpful</button>
+					<button name="vote_d_58002012" type="submit" id="vote_d_58002012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Saying, &#8220;I will tell of your name to my brothers; in the midst of the congregation I will sing your praise.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+15%3A9&amp;version=ESV" class="bibleref">Romans 15:9</a>
+					<span class="note">
+						ESV / 69 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45015009" type="submit" id="vote_u_45015009" value="1">Helpful</button>
+					<button name="vote_d_45015009" type="submit" id="vote_d_45015009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And in order that the Gentiles might glorify God for his mercy. As it is written, &#8220;Therefore I will praise you among the Gentiles, and sing to your name.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+149%3A3&amp;version=ESV" class="bibleref">Psalm 149:3</a>
+					<span class="note">
+						ESV / 61 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19149003" type="submit" id="vote_u_19149003" value="1">Helpful</button>
+					<button name="vote_d_19149003" type="submit" id="vote_d_19149003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Let them praise his name with dancing, making melody to him with tambourine and lyre!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+4%3A24&amp;version=ESV" class="bibleref">John 4:24</a>
+					<span class="note">
+						ESV / 60 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43004024" type="submit" id="vote_u_43004024" value="1">Helpful</button>
+					<button name="vote_d_43004024" type="submit" id="vote_d_43004024" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					God is spirit, and those who worship him must worship in spirit and truth.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+26%3A30&amp;version=ESV" class="bibleref">Matthew 26:30</a>
+					<span class="note">
+						ESV / 56 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40026030" type="submit" id="vote_u_40026030" value="1">Helpful</button>
+					<button name="vote_d_40026030" type="submit" id="vote_d_40026030" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And when they had sung a hymn, they went out to the Mount of Olives.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A18-20&amp;version=ESV" class="bibleref">Ephesians 5:18-20</a>
+					<span class="note">
+						ESV / 55 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49005018-49005020" type="submit" id="vote_u_49005018-49005020" value="1">Helpful</button>
+					<button name="vote_d_49005018-49005020" type="submit" id="vote_d_49005018-49005020" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And do not get drunk with wine, for that is debauchery, but be filled with the Spirit, addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart, giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Kings+3%3A15&amp;version=ESV" class="bibleref">2 Kings 3:15</a>
+					<span class="note">
+						ESV / 54 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_12003015" type="submit" id="vote_u_12003015" value="1">Helpful</button>
+					<button name="vote_d_12003015" type="submit" id="vote_d_12003015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But now bring me a musician.&#8221; And when the musician played, the hand of the <span class="sc">Lord</span> came upon him.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Samuel+6%3A5&amp;version=ESV" class="bibleref">2 Samuel 6:5</a>
+					<span class="note">
+						ESV / 54 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_10006005" type="submit" id="vote_u_10006005" value="1">Helpful</button>
+					<button name="vote_d_10006005" type="submit" id="vote_d_10006005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And David and all the house of Israel were celebrating before the <span class="sc">Lord</span>, with songs and lyres and harps and tambourines and castanets and cymbals.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+150%3A4&amp;version=ESV" class="bibleref">Psalm 150:4</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19150004" type="submit" id="vote_u_19150004" value="1">Helpful</button>
+					<button name="vote_d_19150004" type="submit" id="vote_d_19150004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Praise him with tambourine and dance; praise him with strings and pipe!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+9%3A2&amp;version=ESV" class="bibleref">Psalm 9:2</a>
+					<span class="note">
+						ESV / 51 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19009002" type="submit" id="vote_u_19009002" value="1">Helpful</button>
+					<button name="vote_d_19009002" type="submit" id="vote_d_19009002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I will be glad and exult in you; I will sing praise to your name, O Most High.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+14%3A15&amp;version=ESV" class="bibleref">1 Corinthians 14:15</a>
+					<span class="note">
+						ESV / 48 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46014015" type="submit" id="vote_u_46014015" value="1">Helpful</button>
+					<button name="vote_d_46014015" type="submit" id="vote_d_46014015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					What am I to do? I will pray with my spirit, but I will pray with my mind also; I will sing praise with my spirit, but I will sing with my mind also.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+100%3A1-5&amp;version=ESV" class="bibleref">Psalm 100:1-5</a>
+					<span class="note">
+						ESV / 41 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19100001-19100005" type="submit" id="vote_u_19100001-19100005" value="1">Helpful</button>
+					<button name="vote_d_19100001-19100005" type="submit" id="vote_d_19100001-19100005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">A Psalm for giving thanks. </span>Make a joyful noise to the <span class="sc">Lord</span>, all the earth! Serve the <span class="sc">Lord</span> with gladness! Come into his presence with singing! Know that the <span class="sc">Lord</span>, he is God! It is he who made us, and we are his; we are his people, and the sheep of his pasture. Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name! For the <span class="sc">Lord</span> is good; his steadfast love endures forever, and his faithfulness to all generations.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Amos+6%3A5&amp;version=ESV" class="bibleref">Amos 6:5</a>
+					<span class="note">
+						ESV / 39 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_30006005" type="submit" id="vote_u_30006005" value="1">Helpful</button>
+					<button name="vote_d_30006005" type="submit" id="vote_d_30006005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Who sing idle songs to the sound of the harp and like David invent for themselves instruments of music,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Hebrews+13%3A15&amp;version=ESV" class="bibleref">Hebrews 13:15</a>
+					<span class="note">
+						ESV / 37 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_58013015" type="submit" id="vote_u_58013015" value="1">Helpful</button>
+					<button name="vote_d_58013015" type="submit" id="vote_d_58013015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Through him then let us continually offer up a sacrifice of praise to God, that is, the fruit of lips that acknowledge his name.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+40%3A3&amp;version=ESV" class="bibleref">Psalm 40:3</a>
+					<span class="note">
+						ESV / 35 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19040003" type="submit" id="vote_u_19040003" value="1">Helpful</button>
+					<button name="vote_d_19040003" type="submit" id="vote_d_19040003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He put a new song in my mouth, a song of praise to our God. Many will see and fear, and put their trust in the <span class="sc">Lord</span>.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+14%3A26&amp;version=ESV" class="bibleref">1 Corinthians 14:26</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46014026" type="submit" id="vote_u_46014026" value="1">Helpful</button>
+					<button name="vote_d_46014026" type="submit" id="vote_d_46014026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					What then, brothers? When you come together, each one has a hymn, a lesson, a revelation, a tongue, or an interpretation. Let all things be done for building up.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+29%3A25&amp;version=ESV" class="bibleref">2 Chronicles 29:25</a>
+					<span class="note">
+						ESV / 33 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14029025" type="submit" id="vote_u_14029025" value="1">Helpful</button>
+					<button name="vote_d_14029025" type="submit" id="vote_d_14029025" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And he stationed the Levites in the house of the <span class="sc">Lord</span> with cymbals, harps, and lyres, according to the commandment of David and of Gad the king's seer and of Nathan the prophet, for the commandment was from the <span class="sc">Lord</span> through his prophets.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Samuel+6%3A14&amp;version=ESV" class="bibleref">2 Samuel 6:14</a>
+					<span class="note">
+						ESV / 28 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_10006014" type="submit" id="vote_u_10006014" value="1">Helpful</button>
+					<button name="vote_d_10006014" type="submit" id="vote_d_10006014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And David danced before the <span class="sc">Lord</span> with all his might. And David was wearing a linen ephod.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+15%3A25&amp;version=ESV" class="bibleref">Luke 15:25</a>
+					<span class="note">
+						ESV / 27 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42015025" type="submit" id="vote_u_42015025" value="1">Helpful</button>
+					<button name="vote_d_42015025" type="submit" id="vote_d_42015025" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Now his older son was in the field, and as he came and drew near to the house, he heard music and dancing.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+5%3A1&amp;version=ESV" class="bibleref">Psalm 5:1</a>
+					<span class="note">
+						ESV / 27 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19005001" type="submit" id="vote_u_19005001" value="1">Helpful</button>
+					<button name="vote_d_19005001" type="submit" id="vote_d_19005001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">To the choirmaster: for the flutes. A Psalm of David. </span>Give ear to my words, O <span class="sc">Lord</span>; consider my groaning.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+47%3A1-7&amp;version=ESV" class="bibleref">Psalm 47:1-7</a>
+					<span class="note">
+						ESV / 24 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19047001-19047007" type="submit" id="vote_u_19047001-19047007" value="1">Helpful</button>
+					<button name="vote_d_19047001-19047007" type="submit" id="vote_d_19047001-19047007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">To the choirmaster. A Psalm of the Sons of Korah. </span>Clap your hands, all peoples! Shout to God with loud songs of joy! For the <span class="sc">Lord</span>, the Most High, is to be feared, a great king over all the earth. He subdued peoples under us, and nations under our feet. He chose our heritage for us, the pride of Jacob whom he loves. Selah God has gone up with a shout, the <span class="sc">Lord</span> with the sound of a trumpet. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+34%3A1&amp;version=ESV" class="bibleref">Psalm 34:1</a>
+					<span class="note">
+						ESV / 24 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19034001" type="submit" id="vote_u_19034001" value="1">Helpful</button>
+					<button name="vote_d_19034001" type="submit" id="vote_d_19034001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt"> Of David, when he changed his behavior before Abimelech, so that he drove him out, and he went away. </span>I will bless the <span class="sc">Lord</span> at all times; his praise shall continually be in my mouth.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Zephaniah+3%3A17&amp;version=ESV" class="bibleref">Zephaniah 3:17</a>
+					<span class="note">
+						ESV / 23 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_36003017" type="submit" id="vote_u_36003017" value="1">Helpful</button>
+					<button name="vote_d_36003017" type="submit" id="vote_d_36003017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The <span class="sc">Lord</span> your God is in your midst, a mighty one who will save; he will rejoice over you with gladness; he will quiet you by his love; he will exult over you with loud singing.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Exodus+15%3A21&amp;version=ESV" class="bibleref">Exodus 15:21</a>
+					<span class="note">
+						ESV / 23 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_02015021" type="submit" id="vote_u_02015021" value="1">Helpful</button>
+					<button name="vote_d_02015021" type="submit" id="vote_d_02015021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And Miriam sang to them: &#8220;Sing to the <span class="sc">Lord</span>, for he has triumphed gloriously; the horse and his rider he has thrown into the sea.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Mark+14%3A26&amp;version=ESV" class="bibleref">Mark 14:26</a>
+					<span class="note">
+						ESV / 22 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_41014026" type="submit" id="vote_u_41014026" value="1">Helpful</button>
+					<button name="vote_d_41014026" type="submit" id="vote_d_41014026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And when they had sung a hymn, they went out to the Mount of Olives.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Exodus+15%3A1&amp;version=ESV" class="bibleref">Exodus 15:1</a>
+					<span class="note">
+						ESV / 22 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_02015001" type="submit" id="vote_u_02015001" value="1">Helpful</button>
+					<button name="vote_d_02015001" type="submit" id="vote_d_02015001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then Moses and the people of Israel sang this song to the <span class="sc">Lord</span>, saying, &#8220;I will sing to the <span class="sc">Lord</span>, for he has triumphed gloriously; the horse and his rider he has thrown into the sea.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A8&amp;version=ESV" class="bibleref">Philippians 4:8</a>
+					<span class="note">
+						ESV / 21 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_50004008" type="submit" id="vote_u_50004008" value="1">Helpful</button>
+					<button name="vote_d_50004008" type="submit" id="vote_d_50004008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A1-6&amp;version=ESV" class="bibleref">Ephesians 4:1-6</a>
+					<span class="note">
+						ESV / 20 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49004001-49004006" type="submit" id="vote_u_49004001-49004006" value="1">Helpful</button>
+					<button name="vote_d_49004001-49004006" type="submit" id="vote_d_49004001-49004006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I therefore, a prisoner for the Lord, urge you to walk in a manner worthy of the calling to which you have been called, with all humility and gentleness, with patience, bearing with one another in love, eager to maintain the unity of the Spirit in the bond of peace. There is one body and one Spirit&#8212;just as you were called to the one hope that belongs to your call&#8212; one Lord, one faith, one baptism, ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+105%3A2&amp;version=ESV" class="bibleref">Psalm 105:2</a>
+					<span class="note">
+						ESV / 20 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19105002" type="submit" id="vote_u_19105002" value="1">Helpful</button>
+					<button name="vote_d_19105002" type="submit" id="vote_d_19105002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Sing to him, sing praises to him; tell of all his wondrous works!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+33%3A2&amp;version=ESV" class="bibleref">Psalm 33:2</a>
+					<span class="note">
+						ESV / 20 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19033002" type="submit" id="vote_u_19033002" value="1">Helpful</button>
+					<button name="vote_d_19033002" type="submit" id="vote_d_19033002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Give thanks to the <span class="sc">Lord</span> with the lyre; make melody to him with the harp of ten strings!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+9%3A12&amp;version=ESV" class="bibleref">2 Corinthians 9:12</a>
+					<span class="note">
+						ESV / 19 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_47009012" type="submit" id="vote_u_47009012" value="1">Helpful</button>
+					<button name="vote_d_47009012" type="submit" id="vote_d_47009012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For the ministry of this service is not only supplying the needs of the saints but is also overflowing in many thanksgivings to God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+95%3A6&amp;version=ESV" class="bibleref">Psalm 95:6</a>
+					<span class="note">
+						ESV / 18 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19095006" type="submit" id="vote_u_19095006" value="1">Helpful</button>
+					<button name="vote_d_19095006" type="submit" id="vote_d_19095006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Oh come, let us worship and bow down; let us kneel before the <span class="sc">Lord</span>, our Maker!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+5%3A12-14&amp;version=ESV" class="bibleref">2 Chronicles 5:12-14</a>
+					<span class="note">
+						ESV / 18 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14005012-14005014" type="submit" id="vote_u_14005012-14005014" value="1">Helpful</button>
+					<button name="vote_d_14005012-14005014" type="submit" id="vote_d_14005012-14005014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And all the Levitical singers, Asaph, Heman, and Jeduthun, their sons and kinsmen, arrayed in fine linen, with cymbals, harps, and lyres, stood east of the altar with 120 priests who were trumpeters; and it was the duty of the trumpeters and singers to make themselves heard in unison in praise and thanksgiving to the <span class="sc">Lord</span>), and when the song was raised, with trumpets and cymbals and other musical instruments, in praise to the <span class="sc">Lord</span>, &#8220;For he is good, for his steadfast love endures forever,&#8221; the house, the house of the <span class="sc">Lord</span>, was filled with a cloud, so that the priests could not stand to minister because of the cloud, for the glory of the <span class="sc">Lord</span> filled the house of God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Daniel+3%3A15&amp;version=ESV" class="bibleref">Daniel 3:15</a>
+					<span class="note">
+						ESV / 17 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_27003015" type="submit" id="vote_u_27003015" value="1">Helpful</button>
+					<button name="vote_d_27003015" type="submit" id="vote_d_27003015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now if you are ready when you hear the sound of the horn, pipe, lyre, trigon, harp, bagpipe, and every kind of music, to fall down and worship the image that I have made, well and good. But if you do not worship, you shall immediately be cast into a burning fiery furnace. And who is the god who will deliver you out of my hands?&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+68%3A25&amp;version=ESV" class="bibleref">Psalm 68:25</a>
+					<span class="note">
+						ESV / 17 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19068025" type="submit" id="vote_u_19068025" value="1">Helpful</button>
+					<button name="vote_d_19068025" type="submit" id="vote_d_19068025" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The singers in front, the musicians last, between them virgins playing tambourines:				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Samuel+19%3A35&amp;version=ESV" class="bibleref">2 Samuel 19:35</a>
+					<span class="note">
+						ESV / 17 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_10019035" type="submit" id="vote_u_10019035" value="1">Helpful</button>
+					<button name="vote_d_10019035" type="submit" id="vote_d_10019035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I am this day eighty years old. Can I discern what is pleasant and what is not? Can your servant taste what he eats or what he drinks? Can I still listen to the voice of singing men and singing women? Why then should your servant be an added burden to my lord the king?				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+14%3A2-3&amp;version=ESV" class="bibleref">Revelation 14:2-3</a>
+					<span class="note">
+						ESV / 16 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66014002-66014003" type="submit" id="vote_u_66014002-66014003" value="1">Helpful</button>
+					<button name="vote_d_66014002-66014003" type="submit" id="vote_d_66014002-66014003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And I heard a voice from heaven like the roar of many waters and like the sound of loud thunder. The voice I heard was like the sound of harpists playing on their harps, and they were singing a new song before the throne and before the four living creatures and before the elders. No one could learn that song except the 144,000 who had been redeemed from the earth.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+4%3A23&amp;version=ESV" class="bibleref">John 4:23</a>
+					<span class="note">
+						ESV / 16 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43004023" type="submit" id="vote_u_43004023" value="1">Helpful</button>
+					<button name="vote_d_43004023" type="submit" id="vote_d_43004023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But the hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+147%3A7&amp;version=ESV" class="bibleref">Psalm 147:7</a>
+					<span class="note">
+						ESV / 16 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19147007" type="submit" id="vote_u_19147007" value="1">Helpful</button>
+					<button name="vote_d_19147007" type="submit" id="vote_d_19147007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Sing to the <span class="sc">Lord</span> with thanksgiving; make melody to our God on the lyre!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+81%3A1-3&amp;version=ESV" class="bibleref">Psalm 81:1-3</a>
+					<span class="note">
+						ESV / 16 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19081001-19081003" type="submit" id="vote_u_19081001-19081003" value="1">Helpful</button>
+					<button name="vote_d_19081001-19081003" type="submit" id="vote_d_19081001-19081003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">To the choirmaster: according to The Gittith. Of Asaph. </span>Sing aloud to God our strength; shout for joy to the God of Jacob! Raise a song; sound the tambourine, the sweet lyre with the harp. Blow the trumpet at the new moon, at the full moon, on our feast day.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Nehemiah+12%3A27&amp;version=ESV" class="bibleref">Nehemiah 12:27</a>
+					<span class="note">
+						ESV / 16 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_16012027" type="submit" id="vote_u_16012027" value="1">Helpful</button>
+					<button name="vote_d_16012027" type="submit" id="vote_d_16012027" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And at the dedication of the wall of Jerusalem they sought the Levites in all their places, to bring them to Jerusalem to celebrate the dedication with gladness, with thanksgivings and with singing, with cymbals, harps, and lyres.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+4%3A23-24&amp;version=ESV" class="bibleref">John 4:23-24</a>
+					<span class="note">
+						ESV / 15 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43004023-43004024" type="submit" id="vote_u_43004023-43004024" value="1">Helpful</button>
+					<button name="vote_d_43004023-43004024" type="submit" id="vote_d_43004023-43004024" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But the hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him. God is spirit, and those who worship him must worship in spirit and truth.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+150%3A3-5&amp;version=ESV" class="bibleref">Psalm 150:3-5</a>
+					<span class="note">
+						ESV / 15 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19150003-19150005" type="submit" id="vote_u_19150003-19150005" value="1">Helpful</button>
+					<button name="vote_d_19150003-19150005" type="submit" id="vote_d_19150003-19150005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Praise him with trumpet sound; praise him with lute and harp! Praise him with tambourine and dance; praise him with strings and pipe! Praise him with sounding cymbals; praise him with loud clashing cymbals!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+49%3A4&amp;version=ESV" class="bibleref">Psalm 49:4</a>
+					<span class="note">
+						ESV / 15 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19049004" type="submit" id="vote_u_19049004" value="1">Helpful</button>
+					<button name="vote_d_19049004" type="submit" id="vote_d_19049004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I will incline my ear to a proverb; I will solve my riddle to the music of the lyre.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Job+21%3A12&amp;version=ESV" class="bibleref">Job 21:12</a>
+					<span class="note">
+						ESV / 15 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_18021012" type="submit" id="vote_u_18021012" value="1">Helpful</button>
+					<button name="vote_d_18021012" type="submit" id="vote_d_18021012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They sing to the tambourine and the lyre and rejoice to the sound of the pipe.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ezra+3%3A10&amp;version=ESV" class="bibleref">Ezra 3:10</a>
+					<span class="note">
+						ESV / 15 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_15003010" type="submit" id="vote_u_15003010" value="1">Helpful</button>
+					<button name="vote_d_15003010" type="submit" id="vote_d_15003010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And when the builders laid the foundation of the temple of the <span class="sc">Lord</span>, the priests in their vestments came forward with trumpets, and the Levites, the sons of Asaph, with cymbals, to praise the <span class="sc">Lord</span>, according to the directions of David king of Israel.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Chronicles+15%3A16-22&amp;version=ESV" class="bibleref">1 Chronicles 15:16-22</a>
+					<span class="note">
+						ESV / 15 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_13015016-13015022" type="submit" id="vote_u_13015016-13015022" value="1">Helpful</button>
+					<button name="vote_d_13015016-13015022" type="submit" id="vote_d_13015016-13015022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					David also commanded the chiefs of the Levites to appoint their brothers as the singers who should play loudly on musical instruments, on harps and lyres and cymbals, to raise sounds of joy. So the Levites appointed Heman the son of Joel; and of his brothers Asaph the son of Berechiah; and of the sons of Merari, their brothers, Ethan the son of Kushaiah; and with them their brothers of the second order, Zechariah, Jaaziel, Shemiramoth, Jehiel, Unni, Eliab, Benaiah, Maaseiah, Mattithiah, Eliphelehu, and Mikneiah, and the gatekeepers Obed-edom and Jeiel. The singers, Heman, Asaph, and Ethan, were to sound bronze cymbals; Zechariah, Aziel, Shemiramoth, Jehiel, Unni, Eliab, Maaseiah, and Benaiah were to play harps according to Alamoth; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Kings+1%3A39&amp;version=ESV" class="bibleref">1 Kings 1:39</a>
+					<span class="note">
+						ESV / 15 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_11001039" type="submit" id="vote_u_11001039" value="1">Helpful</button>
+					<button name="vote_d_11001039" type="submit" id="vote_d_11001039" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					There Zadok the priest took the horn of oil from the tent and anointed Solomon. Then they blew the trumpet, and all the people said, &#8220;Long live King Solomon!&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+5%3A8-9&amp;version=ESV" class="bibleref">Revelation 5:8-9</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66005008-66005009" type="submit" id="vote_u_66005008-66005009" value="1">Helpful</button>
+					<button name="vote_d_66005008-66005009" type="submit" id="vote_d_66005008-66005009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And when he had taken the scroll, the four living creatures and the twenty-four elders fell down before the Lamb, each holding a harp, and golden bowls full of incense, which are the prayers of the saints. And they sang a new song, saying, &#8220;Worthy are you to take the scroll and to open its seals, for you were slain, and by your blood you ransomed people for God from every tribe and language and people and nation,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+12%3A1-2&amp;version=ESV" class="bibleref">Romans 12:1-2</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45012001-45012002" type="submit" id="vote_u_45012001-45012002" value="1">Helpful</button>
+					<button name="vote_d_45012001-45012002" type="submit" id="vote_d_45012001-45012002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+9%3A23&amp;version=ESV" class="bibleref">Matthew 9:23</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40009023" type="submit" id="vote_u_40009023" value="1">Helpful</button>
+					<button name="vote_d_40009023" type="submit" id="vote_d_40009023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And when Jesus came to the ruler's house and saw the flute players and the crowd making a commotion,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Amos+5%3A23&amp;version=ESV" class="bibleref">Amos 5:23</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_30005023" type="submit" id="vote_u_30005023" value="1">Helpful</button>
+					<button name="vote_d_30005023" type="submit" id="vote_d_30005023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Take away from me the noise of your songs; to the melody of your harps I will not listen.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+65%3A13&amp;version=ESV" class="bibleref">Psalm 65:13</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19065013" type="submit" id="vote_u_19065013" value="1">Helpful</button>
+					<button name="vote_d_19065013" type="submit" id="vote_d_19065013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The meadows clothe themselves with flocks, the valleys deck themselves with grain, they shout and sing together for joy.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+57%3A7&amp;version=ESV" class="bibleref">Psalm 57:7</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19057007" type="submit" id="vote_u_19057007" value="1">Helpful</button>
+					<button name="vote_d_19057007" type="submit" id="vote_d_19057007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					My heart is steadfast, O God, my heart is steadfast! I will sing and make melody!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+7%3A6&amp;version=ESV" class="bibleref">2 Chronicles 7:6</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14007006" type="submit" id="vote_u_14007006" value="1">Helpful</button>
+					<button name="vote_d_14007006" type="submit" id="vote_d_14007006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The priests stood at their posts; the Levites also, with the instruments for music to the <span class="sc">Lord</span> that King David had made for giving thanks to the <span class="sc">Lord</span>&#8212;for his steadfast love endures forever&#8212;whenever David offered praises by their ministry; opposite them the priests sounded trumpets, and all Israel stood.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Chronicles+23%3A5&amp;version=ESV" class="bibleref">1 Chronicles 23:5</a>
+					<span class="note">
+						ESV / 14 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_13023005" type="submit" id="vote_u_13023005" value="1">Helpful</button>
+					<button name="vote_d_13023005" type="submit" id="vote_d_13023005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					4,000 gatekeepers, and 4,000 shall offer praises to the <span class="sc">Lord</span> with the instruments that I have made for praise.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+14%3A19&amp;version=ESV" class="bibleref">1 Corinthians 14:19</a>
+					<span class="note">
+						ESV / 13 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46014019" type="submit" id="vote_u_46014019" value="1">Helpful</button>
+					<button name="vote_d_46014019" type="submit" id="vote_d_46014019" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Nevertheless, in church I would rather speak five words with my mind in order to instruct others, than ten thousand words in a tongue.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+16%3A23-35&amp;version=ESV" class="bibleref">Acts 16:23-35</a>
+					<span class="note">
+						ESV / 13 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44016023-44016035" type="submit" id="vote_u_44016023-44016035" value="1">Helpful</button>
+					<button name="vote_d_44016023-44016035" type="submit" id="vote_d_44016023-44016035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And when they had inflicted many blows upon them, they threw them into prison, ordering the jailer to keep them safely. Having received this order, he put them into the inner prison and fastened their feet in the stocks. About midnight Paul and Silas were praying and singing hymns to God, and the prisoners were listening to them, and suddenly there was a great earthquake, so that the foundations of the prison were shaken. And immediately all the doors were opened, and everyone's bonds were unfastened. When the jailer woke and saw that the prison doors were open, he drew his sword and was about to kill himself, supposing that the prisoners had escaped. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+12%3A1-59&amp;version=ESV" class="bibleref">Luke 12:1-59</a>
+					<span class="note">
+						ESV / 13 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42012001-42012059" type="submit" id="vote_u_42012001-42012059" value="1">Helpful</button>
+					<button name="vote_d_42012001-42012059" type="submit" id="vote_d_42012001-42012059" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					In the meantime, when so many thousands of the people had gathered together that they were trampling one another, he began to say to his disciples first, &#8220;Beware of the leaven of the Pharisees, which is hypocrisy. Nothing is covered up that will not be revealed, or hidden that will not be known. Therefore whatever you have said in the dark shall be heard in the light, and what you have whispered in private rooms shall be proclaimed on the housetops. &#8220;I tell you, my friends, do not fear those who kill the body, and after that have nothing more that they can do. But I will warn you whom to fear: fear him who, after he has killed, has authority to cast into hell. Yes, I tell you, fear him! ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Song+of+Solomon+8%3A1-14&amp;version=ESV" class="bibleref">Song of Solomon 8:1-14</a>
+					<span class="note">
+						ESV / 13 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_22008001-22008014" type="submit" id="vote_u_22008001-22008014" value="1">Helpful</button>
+					<button name="vote_d_22008001-22008014" type="submit" id="vote_d_22008001-22008014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Oh that you were like a brother to me who nursed at my mother's breasts! If I found you outside, I would kiss you, and none would despise me. I would lead you and bring you into the house of my mother&#8212; she who used to teach me. I would give you spiced wine to drink, the juice of my pomegranate. His left hand is under my head, and his right hand embraces me! I adjure you, O daughters of Jerusalem, that you not stir up or awaken love until it pleases. Who is that coming up from the wilderness, leaning on her beloved? Under the apple tree I awakened you. There your mother was in labor with you; there she who bore you was in labor. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Exodus+15%3A20-21&amp;version=ESV" class="bibleref">Exodus 15:20-21</a>
+					<span class="note">
+						ESV / 13 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_02015020-02015021" type="submit" id="vote_u_02015020-02015021" value="1">Helpful</button>
+					<button name="vote_d_02015020-02015021" type="submit" id="vote_d_02015020-02015021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then Miriam the prophetess, the sister of Aaron, took a tambourine in her hand, and all the women went out after her with tambourines and dancing. And Miriam sang to them: &#8220;Sing to the <span class="sc">Lord</span>, for he has triumphed gloriously; the horse and his rider he has thrown into the sea.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+6%3A18&amp;version=ESV" class="bibleref">Ephesians 6:18</a>
+					<span class="note">
+						ESV / 12 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49006018" type="submit" id="vote_u_49006018" value="1">Helpful</button>
+					<button name="vote_d_49006018" type="submit" id="vote_d_49006018" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Praying at all times in the Spirit, with all prayer and supplication. To that end, keep alert with all perseverance, making supplication for all the saints,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+14%3A23&amp;version=ESV" class="bibleref">Romans 14:23</a>
+					<span class="note">
+						ESV / 12 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45014023" type="submit" id="vote_u_45014023" value="1">Helpful</button>
+					<button name="vote_d_45014023" type="submit" id="vote_d_45014023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+87%3A7&amp;version=ESV" class="bibleref">Psalm 87:7</a>
+					<span class="note">
+						ESV / 12 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19087007" type="submit" id="vote_u_19087007" value="1">Helpful</button>
+					<button name="vote_d_19087007" type="submit" id="vote_d_19087007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Singers and dancers alike say, &#8220;All my springs are in you.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+14%3A11&amp;version=ESV" class="bibleref">Romans 14:11</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45014011" type="submit" id="vote_u_45014011" value="1">Helpful</button>
+					<button name="vote_d_45014011" type="submit" id="vote_d_45014011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For it is written, &#8220;As I live, says the Lord, every knee shall bow to me, and every tongue shall confess to God.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+31%3A4&amp;version=ESV" class="bibleref">Jeremiah 31:4</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24031004" type="submit" id="vote_u_24031004" value="1">Helpful</button>
+					<button name="vote_d_24031004" type="submit" id="vote_d_24031004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Again I will build you, and you shall be built, O virgin Israel! Again you shall adorn yourself with tambourines and shall go forth in the dance of the merrymakers.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+101%3A1&amp;version=ESV" class="bibleref">Psalm 101:1</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19101001" type="submit" id="vote_u_19101001" value="1">Helpful</button>
+					<button name="vote_d_19101001" type="submit" id="vote_d_19101001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">A Psalm of David. </span>I will sing of steadfast love and justice; to you, O <span class="sc">Lord</span>, I will make music.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+98%3A1-9&amp;version=ESV" class="bibleref">Psalm 98:1-9</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19098001-19098009" type="submit" id="vote_u_19098001-19098009" value="1">Helpful</button>
+					<button name="vote_d_19098001-19098009" type="submit" id="vote_d_19098001-19098009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">A Psalm. </span>Oh sing to the <span class="sc">Lord</span> a new song, for he has done marvelous things! His right hand and his holy arm have worked salvation for him. The <span class="sc">Lord</span> has made known his salvation; he has revealed his righteousness in the sight of the nations. He has remembered his steadfast love and faithfulness to the house of Israel. All the ends of the earth have seen the salvation of our God. Make a joyful noise to the <span class="sc">Lord</span>, all the earth; break forth into joyous song and sing praises! Sing praises to the <span class="sc">Lord</span> with the lyre, with the lyre and the sound of melody! ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+71%3A22&amp;version=ESV" class="bibleref">Psalm 71:22</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19071022" type="submit" id="vote_u_19071022" value="1">Helpful</button>
+					<button name="vote_d_19071022" type="submit" id="vote_d_19071022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I will also praise you with the harp for your faithfulness, O my God; I will sing praises to you with the lyre, O Holy One of Israel.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+43%3A4&amp;version=ESV" class="bibleref">Psalm 43:4</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19043004" type="submit" id="vote_u_19043004" value="1">Helpful</button>
+					<button name="vote_d_19043004" type="submit" id="vote_d_19043004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then I will go to the altar of God, to God my exceeding joy, and I will praise you with the lyre, O God, my God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+29%3A2&amp;version=ESV" class="bibleref">Psalm 29:2</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19029002" type="submit" id="vote_u_19029002" value="1">Helpful</button>
+					<button name="vote_d_19029002" type="submit" id="vote_d_19029002" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Ascribe to the <span class="sc">Lord</span> the glory due his name; worship the <span class="sc">Lord</span> in the splendor of holiness.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Job+30%3A31&amp;version=ESV" class="bibleref">Job 30:31</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_18030031" type="submit" id="vote_u_18030031" value="1">Helpful</button>
+					<button name="vote_d_18030031" type="submit" id="vote_d_18030031" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					My lyre is turned to mourning, and my pipe to the voice of those who weep.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+35%3A15&amp;version=ESV" class="bibleref">2 Chronicles 35:15</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14035015" type="submit" id="vote_u_14035015" value="1">Helpful</button>
+					<button name="vote_d_14035015" type="submit" id="vote_d_14035015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The singers, the sons of Asaph, were in their place according to the command of David, and Asaph, and Heman, and Jeduthun the king's seer; and the gatekeepers were at each gate. They did not need to depart from their service, for their brothers the Levites prepared for them.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Chronicles+25%3A6-7&amp;version=ESV" class="bibleref">1 Chronicles 25:6-7</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_13025006-13025007" type="submit" id="vote_u_13025006-13025007" value="1">Helpful</button>
+					<button name="vote_d_13025006-13025007" type="submit" id="vote_d_13025006-13025007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They were all under the direction of their father in the music in the house of the <span class="sc">Lord</span> with cymbals, harps, and lyres for the service of the house of God. Asaph, Jeduthun, and Heman were under the order of the king. The number of them along with their brothers, who were trained in singing to the <span class="sc">Lord</span>, all who were skillful, was 288.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Chronicles+15%3A16&amp;version=ESV" class="bibleref">1 Chronicles 15:16</a>
+					<span class="note">
+						ESV / 11 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_13015016" type="submit" id="vote_u_13015016" value="1">Helpful</button>
+					<button name="vote_d_13015016" type="submit" id="vote_d_13015016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					David also commanded the chiefs of the Levites to appoint their brothers as the singers who should play loudly on musical instruments, on harps and lyres and cymbals, to raise sounds of joy.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+10%3A17&amp;version=ESV" class="bibleref">Romans 10:17</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45010017" type="submit" id="vote_u_45010017" value="1">Helpful</button>
+					<button name="vote_d_45010017" type="submit" id="vote_d_45010017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So faith comes from hearing, and hearing through the word of Christ.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+2%3A38&amp;version=ESV" class="bibleref">Acts 2:38</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44002038" type="submit" id="vote_u_44002038" value="1">Helpful</button>
+					<button name="vote_d_44002038" type="submit" id="vote_d_44002038" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And Peter said to them, &#8220;Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+1%3A1-18&amp;version=ESV" class="bibleref">John 1:1-18</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43001001-43001018" type="submit" id="vote_u_43001001-43001018" value="1">Helpful</button>
+					<button name="vote_d_43001001-43001018" type="submit" id="vote_d_43001001-43001018" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through him, and without him was not any thing made that was made. In him was life, and the life was the light of men. The light shines in the darkness, and the darkness has not overcome it. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Song+of+Solomon+3%3A1-11&amp;version=ESV" class="bibleref">Song of Solomon 3:1-11</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_22003001-22003011" type="submit" id="vote_u_22003001-22003011" value="1">Helpful</button>
+					<button name="vote_d_22003001-22003011" type="submit" id="vote_d_22003001-22003011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					On my bed by night I sought him whom my soul loves; I sought him, but found him not. I will rise now and go about the city, in the streets and in the squares; I will seek him whom my soul loves. I sought him, but found him not. The watchmen found me as they went about in the city. &#8220;Have you seen him whom my soul loves?&#8221; Scarcely had I passed them when I found him whom my soul loves. I held him, and would not let him go until I had brought him into my mother's house, and into the chamber of her who conceived me. I adjure you, O daughters of Jerusalem, by the gazelles or the does of the field, that you not stir up or awaken love until it pleases. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+89%3A1&amp;version=ESV" class="bibleref">Psalm 89:1</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19089001" type="submit" id="vote_u_19089001" value="1">Helpful</button>
+					<button name="vote_d_19089001" type="submit" id="vote_d_19089001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">A Maskil of Ethan the Ezrahite. </span>I will sing of the steadfast love of the <span class="sc">Lord</span>, forever; with my mouth I will make known your faithfulness to all generations.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+1%3A1-6&amp;version=ESV" class="bibleref">Psalm 1:1-6</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19001001-19001006" type="submit" id="vote_u_19001001-19001006" value="1">Helpful</button>
+					<button name="vote_d_19001001-19001006" type="submit" id="vote_d_19001001-19001006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers; but his delight is in the law of the <span class="sc">Lord</span>, and on his law he meditates day and night. He is like a tree planted by streams of water that yields its fruit in its season, and its leaf does not wither. In all that he does, he prospers. The wicked are not so, but are like chaff that the wind drives away. Therefore the wicked will not stand in the judgment, nor sinners in the congregation of the righteous; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+29%3A30&amp;version=ESV" class="bibleref">2 Chronicles 29:30</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14029030" type="submit" id="vote_u_14029030" value="1">Helpful</button>
+					<button name="vote_d_14029030" type="submit" id="vote_d_14029030" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And Hezekiah the king and the officials commanded the Levites to sing praises to the <span class="sc">Lord</span> with the words of David and of Asaph the seer. And they sang praises with gladness, and they bowed down and worshiped.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+15%3A14&amp;version=ESV" class="bibleref">2 Chronicles 15:14</a>
+					<span class="note">
+						ESV / 10 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14015014" type="submit" id="vote_u_14015014" value="1">Helpful</button>
+					<button name="vote_d_14015014" type="submit" id="vote_d_14015014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They swore an oath to the <span class="sc">Lord</span> with a loud voice and with shouting and with trumpets and with horns.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Peter+1%3A23&amp;version=ESV" class="bibleref">1 Peter 1:23</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_60001023" type="submit" id="vote_u_60001023" value="1">Helpful</button>
+					<button name="vote_d_60001023" type="submit" id="vote_d_60001023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+99%3A5&amp;version=ESV" class="bibleref">Psalm 99:5</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19099005" type="submit" id="vote_u_19099005" value="1">Helpful</button>
+					<button name="vote_d_19099005" type="submit" id="vote_d_19099005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Exalt the <span class="sc">Lord</span> our God; worship at his footstool! Holy is he!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+98%3A4&amp;version=ESV" class="bibleref">Psalm 98:4</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19098004" type="submit" id="vote_u_19098004" value="1">Helpful</button>
+					<button name="vote_d_19098004" type="submit" id="vote_d_19098004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Make a joyful noise to the <span class="sc">Lord</span>, all the earth; break forth into joyous song and sing praises!				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Esther+5%3A1-14&amp;version=ESV" class="bibleref">Esther 5:1-14</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_17005001-17005014" type="submit" id="vote_u_17005001-17005014" value="1">Helpful</button>
+					<button name="vote_d_17005001-17005014" type="submit" id="vote_d_17005001-17005014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					On the third day Esther put on her royal robes and stood in the inner court of the king's palace, in front of the king's quarters, while the king was sitting on his royal throne inside the throne room opposite the entrance to the palace. And when the king saw Queen Esther standing in the court, she won favor in his sight, and he held out to Esther the golden scepter that was in his hand. Then Esther approached and touched the tip of the scepter. And the king said to her, &#8220;What is it, Queen Esther? What is your request? It shall be given you, even to the half of my kingdom.&#8221; And Esther said, &#8220;If it please the king, let the king and Haman come today to a feast that I have prepared for the king.&#8221; Then the king said, &#8220;Bring Haman quickly, so that we may do as Esther has asked.&#8221; So the king and Haman came to the feast that Esther had prepared. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Chronicles+25%3A1&amp;version=ESV" class="bibleref">1 Chronicles 25:1</a>
+					<span class="note">
+						ESV / 9 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_13025001" type="submit" id="vote_u_13025001" value="1">Helpful</button>
+					<button name="vote_d_13025001" type="submit" id="vote_d_13025001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					David and the chiefs of the service also set apart for the service the sons of Asaph, and of Heman, and of Jeduthun, who prophesied with lyres, with harps, and with cymbals. The list of those who did the work and of their duties was:				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+59%3A16&amp;version=ESV" class="bibleref">Psalm 59:16</a>
+					<span class="note">
+						ESV / 8 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19059016" type="submit" id="vote_u_19059016" value="1">Helpful</button>
+					<button name="vote_d_19059016" type="submit" id="vote_d_19059016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But I will sing of your strength; I will sing aloud of your steadfast love in the morning. For you have been to me a fortress and a refuge in the day of my distress.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+37%3A1-40&amp;version=ESV" class="bibleref">Psalm 37:1-40</a>
+					<span class="note">
+						ESV / 8 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19037001-19037040" type="submit" id="vote_u_19037001-19037040" value="1">Helpful</button>
+					<button name="vote_d_19037001-19037040" type="submit" id="vote_d_19037001-19037040" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt"> Of David. </span>Fret not yourself because of evildoers; be not envious of wrongdoers! For they will soon fade like the grass and wither like the green herb. Trust in the <span class="sc">Lord</span>, and do good; dwell in the land and befriend faithfulness. Delight yourself in the <span class="sc">Lord</span>, and he will give you the desires of your heart. Commit your way to the <span class="sc">Lord</span>; trust in him, and he will act. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Samuel+23%3A1&amp;version=ESV" class="bibleref">2 Samuel 23:1</a>
+					<span class="note">
+						ESV / 7 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_10023001" type="submit" id="vote_u_10023001" value="1">Helpful</button>
+					<button name="vote_d_10023001" type="submit" id="vote_d_10023001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now these are the last words of David: The oracle of David, the son of Jesse, the oracle of the man who was raised on high, the anointed of the God of Jacob, the sweet psalmist of Israel:				</p>
+			</div>
+			</form>
+<h2>Suggest a Verse</h2>
+<form action="/topics/music_in_worship" method="post" id="form-verse">
+	<h3><label for="preview">Enter a Verse Reference <span class="note">(e.g., <cite class="bibleref">John 3:16-17</cite>)</span></label></h3>
+	<p>
+		<input type="text" size="30" maxlength="100" name="preview" id="preview" value=""/>
+		<input type="submit" id="preview-button" value="Preview" />
+		<input type="hidden" name="verse" id="verse" value="" />
+		<br /><span class="note">Visit the <a href="https://www.biblegateway.com/">Bible</a> online to search for words if you don&rsquo;t know the specific passage your&rsquo;re looking for.</span>
+	</p>
+	<div id="preview-text">
+			</div>
+</form><script type="text/javascript">
+document.body.className += " script";
+var OB = {};
+
+OB.Verse =
+{
+	previewUrl: '/topics/tools/verse',
+
+	Preview: function(e)
+	{
+		e.preventDefault();
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", OB.Verse.previewUrl + "?verse=" + encodeURIComponent(document.getElementById("preview").value));
+		xhr.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				OB.Verse.PreviewResponse(JSON.parse(this.responseText));
+			}
+		}
+		xhr.send();
+	},
+
+	PreviewResponse: function(response)
+	{
+		if (response.content && response.id && response.reference)
+		{
+			document.getElementById("preview-text").innerHTML = '<h3>' + response.reference + '</h3><p>' + response.content + '</p><p><input type="submit" value="Suggest This Verse" /></p>';
+			document.getElementById("verse").value = response.id;
+		}
+		else
+		{
+			document.getElementById("preview-text").innerHTML = '<p class="error">Sorry, we couldn&#8217;t find a passage matching the verse you suggest. Please double-check your spelling and try again.</p>';
+		}
+	}
+};
+
+OB.Vote =
+{
+	myUrl: '/topics/tools/vote',
+
+	Vote: function(e)
+	{
+		e.preventDefault();
+		var encodedWord = encodeURIComponent(document.URL.replace(/\/+$/, '').split(/\//).pop());
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", OB.Vote.myUrl + "?w=" + encodedWord);
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send("word=" + encodedWord + "&db=" + encodeURIComponent(document.getElementById("db").value) + "&id=" + encodeURIComponent(this.id));
+		this.parentNode.innerHTML = "Thank you for your vote.";
+	},
+
+	Over: function()
+	{
+		this.className += " visible";
+	},
+
+	Out: function()
+	{
+		this.className = this.className.replace(/ visible/);
+	}
+};
+
+var buttons = document.querySelectorAll("form#vote button");
+for (var i = 0, j = buttons.length; i < j; i++) {
+	buttons[i].addEventListener("click", OB.Vote.Vote, false);
+}
+if (document.getElementById("preview-button")) {
+	document.getElementById("preview-button").addEventListener("click", OB.Verse.Preview, false);
+}
+var divs = document.querySelectorAll("div.verse");
+for (var i = 0, j = divs.length; i < j; i++) {
+	var div = divs[i];
+	div.addEventListener("mouseenter", OB.Vote.Over, false);
+	div.addEventListener("mouseleave", OB.Vote.Out, false);
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

@@ -1,0 +1,5 @@
+neural text degeneration
+
+Nucleus Sampling
+    A simple but effective method to draw the
+    best out of neural generation.

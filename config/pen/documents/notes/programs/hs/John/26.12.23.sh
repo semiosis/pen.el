@@ -1,0 +1,8 @@
+cd //;  "John" "20:1" "#" "<==" "zsh"
+cd /root/notes;  "John" "1:1-4" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "13:34" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "13:34-35" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "15:9-12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "5:46" "#" "<==" "zsh"

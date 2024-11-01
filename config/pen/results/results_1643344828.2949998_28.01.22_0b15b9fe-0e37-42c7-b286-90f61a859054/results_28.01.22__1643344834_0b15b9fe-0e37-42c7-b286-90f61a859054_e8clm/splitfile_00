@@ -1,0 +1,6 @@
+"async/alt!"
+"async/alt!!"
+"async/alt!"))
+
+(defonce main-chan-with-id (async/alt! main-chan
+

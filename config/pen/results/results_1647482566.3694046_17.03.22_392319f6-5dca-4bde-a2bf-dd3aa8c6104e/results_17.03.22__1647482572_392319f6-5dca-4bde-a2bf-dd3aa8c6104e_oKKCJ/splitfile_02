@@ -1,0 +1,5 @@
+is-camel-case-string-p (str)
+  (string-match-p "^[A-Z][a-z]+$" str))
+
+(provide 'is-camel-case-string-p)
+(provide 'is- ()

@@ -1,0 +1,7 @@
+cd ; pb syntax.vim # "<==" zsh
+http://ix.io/4FIE/vim
+" To find the colour of something, use 'hi Special'.
+
+" List all the things
+"%!sed -n 's/.*syntax match \([a-z]\+\).*/\1/p'|uniqnosort.sh
+

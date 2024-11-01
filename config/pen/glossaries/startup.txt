@@ -1,0 +1,7 @@
+Churn
+    uninstall, install,
+    uninstall, install,
+    ...
+
+    This may happen if we make PRs to forks.
+    We need to target the upstream repositories.

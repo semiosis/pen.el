@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el/src;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.emacs.d/host/pen.el/src; /root/.pen/tmp/nsfa--tm-init-pin-root-pen-documents-agenda-.sh" "#" "<==" "pen-xt"

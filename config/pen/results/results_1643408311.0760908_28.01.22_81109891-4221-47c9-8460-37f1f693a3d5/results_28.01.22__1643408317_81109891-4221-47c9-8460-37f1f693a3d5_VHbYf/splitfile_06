@@ -1,0 +1,11 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt.bak  harry.txt.bak.1
+» cat harry.txt
+Harry Potter and the Deathly Hallows
+» cat harry.txt | grep 'Harry'
+Harry Potter and the Deathly Hallows
+Harry Potter and the Philosopher's Stone
+Harry Potter and the Chamber of Secrets
+Harry Potter and the Prisoner of Azkaban
+Harry

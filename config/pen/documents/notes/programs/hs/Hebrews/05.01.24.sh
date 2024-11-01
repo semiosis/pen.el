@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Hebrews" "9:14-27" "#" "<==" "bash"
+cd /root/.pen/documents/bible-notes;  "Hebrews" "9:14-27" "#" "<==" "bash"
+cd /root/.pen/documents/bible-notes;  "Hebrews" "9:14-27" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Hebrews" "5:7-8" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Hebrews" "1:3" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Hebrews" "13:5" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Hebrews" "5:7-8" "#" "<==" "bash"

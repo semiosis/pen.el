@@ -1,0 +1,5 @@
+cd /root/notes;  "Leviticus" "22" "#" "<==" "zsh"
+cd /root/notes;  "Leviticus" "22" "#" "<==" "zsh"
+cd /root/notes;  "Leviticus" "22:32" "#" "<==" "zsh"
+cd /root/notes;  "Leviticus" "22:31-32" "#" "<==" "zsh"
+cd /root/notes;  "Leviticus" "10:3" "#" "<==" "zsh"

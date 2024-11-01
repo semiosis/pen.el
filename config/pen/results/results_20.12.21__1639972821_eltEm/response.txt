@@ -1,0 +1,3 @@
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+jonyive@:/root$ ls
+bin  boot  dev  etc

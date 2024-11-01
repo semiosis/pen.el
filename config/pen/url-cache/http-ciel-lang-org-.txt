@@ -1,0 +1,130 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 1661
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Fri, 30 Aug 2024 23:00:35 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"66d24f13-102a"
+expires: Fri, 30 Aug 2024 23:23:20 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 7C16:1766A4:54D43:585EE:66D2520E
+Accept-Ranges: bytes
+Date: Sat, 31 Aug 2024 07:00:16 GMT
+Via: 1.1 varnish
+Age: 114
+X-Served-By: cache-akl10322-AKL
+X-Cache: HIT
+X-Cache-Hits: 3
+X-Timer: S1725087617.954510,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 204d04a53cc6df2e7bf83b9dcd88392fb6f56fba
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- You need JavaScript. -->
+
+    <div class="cover-main">
+      <h1 id="ciel-00-dev">
+        <a href="#/?id=ciel-00-dev" data-id="ciel-00-dev" class="anchor">
+          <span>CIEL <small>0.0-dev</small>
+          </span>
+        </a>
+      </h1>
+      <blockquote>
+
+        <p>CIEL Is an Extended Lisp</p></blockquote>
+      <ul>
+        <li>100% Common Lisp</li><li>batteries included</li>
+      </ul>
+      <p>
+        <a href="https://github.com/ciel-lang/CIEL" target="_blank" rel="noopener">GitHub</a>
+        <a href="#/?id=ciel">Show me</a></p> <!-- background color -->
+    </div>
+
+   <pre v-pre="" data-lang="lisp"><code class="lang-lisp">#!/usr/bin/env ciel
+
+<span class="token punctuation">(</span><span class="token car">print</span>
+  <span class="token punctuation">(</span><span class="token car">json</span><span class="token lisp-property property">:read-json</span>
+    <span class="token punctuation">(</span><span class="token car">http</span><span class="token lisp-property property">:get</span> <span class="token string">"https://fakestoreapi.com/products?limit=5"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+
+   <p>
+     <pre v-pre="" data-lang="markup"><code class="lang-markup">$ ./myscript.lisp</code></pre>
+   </p>
+
+   <p>
+     <div>You need JavaScript to see the rest of the doc :( Just look at the GitHub repository. Cheers, EWW user maybe?</div>
+   </p>
+
+  </div>
+  <script>
+    window.$docsify = {
+      name: 'CIEL',
+      repo: 'https://github.com/ciel-lang/CIEL',
+      basePath: 'https://ciel-lang.org/',
+      <!-- basePath: 'https://ciel-lang.github.io/CIEL/', -->
+      <!-- basePath: '/',  <\!-- for development -\-> -->
+      coverpage: true,
+      coverpage: ['/', '/fr/'],
+      auto2top: true,
+      loadSidebar: true,
+      subMaxLevel: 3,
+      loadNavbar: true,
+      themeColor: '#0085bd',
+
+      search: {
+        maxAge: 86400000*3, // Expiration time, the default one day
+        placeholder: 'Search…',
+
+        noData: 'No Results!',
+
+        // Headline depth, 1 - 6
+        depth: 3,
+
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+        // To avoid search index collision
+        // between multiple websites under the same domain
+        namespace: 'ciel-lang.org',
+      },
+
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer style="text-align: right;">',
+            '<div style=\"color: dimgrey\">CIEL developers 2024. <a href="https://github.com/sponsors/vindarel/">Show your love!</a></div>',
+            '<div style=\"color: dimgrey\"> Discover our <a href="https://www.udemy.com/course/common-lisp-programming/?referralCode=2F3D698BBC4326F94358" style=\"color: dimgrey\">Common Lisp course in videos.</a></div>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+    }
+  ]
+    }
+  </script>
+  <!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-lisp.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script defer data-domain="ciel-lang.org" src="https://plausible.io/js/script.js"></script>
+</body>
+</html>

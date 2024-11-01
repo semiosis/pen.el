@@ -1,0 +1,1 @@
+ emacs -batch /etc/hosts -Q -f delete-matching-lines apache

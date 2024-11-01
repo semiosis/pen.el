@@ -1,0 +1,62 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 10
+
+* D-Group weekly session notes
+Started working on it: <2024-03-04 Mon>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=9oVSJUk9wDg][The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano - YouTube]]
+
+| Scripture Memory | NT260 Passage | Foundations260 Readings |
+|------------------+---------------+-------------------------|
+| [[sh:bible-read-passage nasb Matthew 5:19-20 ][Matthew 5:19-20]]  | [[sh:bible-study-passage nasb Galatians 1-5 ][Galatians 1-5]] | [[sh:bible-study-passage nasb Leviticus 18-26 ][Leviticus 18-26]]         |
+|                  |               | [[sh:bible-study-passage nasb Numbers 11-17 ][Numbers 11-17]]           |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:19-20
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:19
+‾‾‾‾‾‾‾‾‾‾‾‾
+Whoever then annuls one of the least of these
+commandments, and teaches others to do the same,
+shall be called least in the kingdom of heaven;
+but whoever keeps and teaches them, he shall be
+called great in the kingdom of heaven.
+
+Matthew 5:20
+‾‾‾‾‾‾‾‾‾‾‾‾
+“For I say to you that unless your
+righteousness surpasses that of the scribes and
+Pharisees, you will not enter the kingdom of
+heaven.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

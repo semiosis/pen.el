@@ -1,0 +1,6 @@
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "bash"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "bash"

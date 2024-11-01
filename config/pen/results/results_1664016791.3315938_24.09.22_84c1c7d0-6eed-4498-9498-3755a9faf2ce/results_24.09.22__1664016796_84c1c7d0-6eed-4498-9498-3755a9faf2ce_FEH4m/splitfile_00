@@ -1,0 +1,6 @@
+
+  (loop [list list []]
+    (if (nil? (rest list))
+      nil
+      (recur (rest list)
+             (cons (cons (first list) (first (rest list)))

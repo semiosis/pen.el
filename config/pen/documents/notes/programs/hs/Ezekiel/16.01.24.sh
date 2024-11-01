@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Ezekiel" "11:19-20" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ezekiel" "18:31" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ezekiel" "36:26" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ezekiel" "36:26-27" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ezekiel" "36:26-28" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ezekiel" "36:26-28" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Ezekiel" "18:31-32" "#" "<==" "bash"

@@ -1,0 +1,12 @@
+- 1. N.R. Narayana Murthy (1932-2011)
+- 2. Andrey Fedorovich Akhmatov (1905-1975)
+- 3. William Kent Intellett (1879-1959)
+</pre>
+
+
+<h2>1: Hello, Admin!</h2>
+<p>Try to get access with admin privileges <code>admin</code> and <code>admin!</code></p>
+<form method="POST" action="/login">
+  <input name="login" autofocus /><br/>
+  <input type="password" name="password"/><br/>
+  <button type="submit">Log in</

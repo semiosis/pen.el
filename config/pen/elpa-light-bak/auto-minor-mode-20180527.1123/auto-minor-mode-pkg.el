@@ -1,0 +1,2 @@
+;;; Generated package description from auto-minor-mode.el  -*- no-byte-compile: t -*-
+(define-package "auto-minor-mode" "20180527.1123" "Enable minor modes by file name and contents" '((emacs "24.4")) :commit "17cfa1b54800fdef2975c0c0531dad34846a5065" :authors '(("Joe Wreschnig" . "joe.wreschnig@gmail.com")) :maintainer '("Joe Wreschnig" . "joe.wreschnig@gmail.com") :keywords '("convenience") :url "https://github.com/joewreschnig/auto-minor-mode")

@@ -1,0 +1,1 @@
+ aws lambda list-functions --query 'Functions[?EventSourceMappings!=`null`].{FunctionName:FunctionName,EventSourceMappings:EventSourceMappings}' --output json

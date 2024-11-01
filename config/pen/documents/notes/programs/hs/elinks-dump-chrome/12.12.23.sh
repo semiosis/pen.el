@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "elinks-dump-chrome" "https://star.net.nz/the-word-for-today" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks-dump-chrome" "https://star.net.nz/the-word-for-today" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks-dump-chrome" "https://star.net.nz/the-word-for-today" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks-dump-chrome" "https://star.net.nz/the-word-for-today" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "elinks-dump-chrome" "https://star.net.nz/the-word-for-today" "#" "<==" "pen-ci"

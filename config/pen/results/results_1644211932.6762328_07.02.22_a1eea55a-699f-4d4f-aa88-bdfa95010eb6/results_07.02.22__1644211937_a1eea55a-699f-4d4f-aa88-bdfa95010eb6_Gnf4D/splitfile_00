@@ -1,0 +1,7 @@
+ read_char(c), char_info(c).
+
+char_info(A) :- symbol(A).
+
+char_info(B) :- B < 0, B > $a, !.
+
+char

@@ -1,0 +1,737 @@
+HTTP/1.1 200 OK
+Date: Sat, 21 Oct 2023 20:08:22 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+﻿<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/SubPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.biblestudystart.com/img/books-large.jpg">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Outline of 2 Samuel | Free Bible Outlines</title>
+<!-- InstanceEndEditable -->
+<meta property="og:site_name" content="Bible Outlines" />
+<meta property="og:title" content="Outline of 2 Samuel | Free Bible Outlines" />
+<meta property="og:description" content="Bible outline of 2 Samuel. See what it's about from the first verse to the last." />
+<meta name="Description" content="Bible outline of 2 Samuel. See what it's about from the first verse to the last.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../layout/styles3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 240px;
+}
+@media (min-width: 500px) {
+.gresponsive, #google-responsiveside {
+	width: 468px;
+	height: 60px;
+}
+}
+@media (min-width: 601px) {
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 600px;
+}
+}
+@media (min-width: 1100px) {
+.gresponsive, #google-responsiveside {
+	width: 300px;
+	height: 600px;
+}
+}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="mainbackground">
+  <div id="header">
+    <div class="lowerglow innerdiv"> <!-- InstanceBeginEditable name="SubSiteTitle" -->
+      <div class="title"> <a href="https://www.biblestudystart.com/outlines/">Bible Outlines</a></div>
+      <div class="subtitle">Every book of the Bible outlined in section headings.</div>
+      <!-- InstanceEndEditable --> </div>
+  </div>
+  <div id="outer" class="innerdiv">
+    <div id="content"> 
+      <div class="bibleoutline">
+<h1>Outline of 2 Samuel</h1>
+<table>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 1</td></tr>
+ <tr>
+  <td class="verses">2Sa 1:1-16.</td>
+  <td class="summary">The Amalekite, who brought tidings of the overthrow, and accused himself of Saul's death, is slain.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 1:17-27.</td>
+  <td class="summary">David laments Saul and Jonathan with a song.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 2</td></tr>
+ <tr>
+  <td class="verses">2Sa 2:1-4.</td>
+  <td class="summary">David, by God's direction, with his company goes up to Hebron, where he is made king of Judah.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 2:5-7.</td>
+  <td class="summary">He commends them of Jabesh-gilead for their kindness to Saul.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 2:8-11.</td>
+  <td class="summary">Abner makes Ishbosheth king of Israel.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 2:12-17.</td>
+  <td class="summary">A mortal skirmish between twelve of Abner's and twelve of Joab's men.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 2:18-24.</td>
+  <td class="summary">Asahel is slain.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 2:25-31.</td>
+  <td class="summary">At Abner's motion, Joab sounds a retreat.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 2:32.</td>
+  <td class="summary">Asahel's burial.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 3</td></tr>
+ <tr>
+  <td class="verses">2Sa 3:1.</td>
+  <td class="summary">During the war David still waxes stronger.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:2-5.</td>
+  <td class="summary">Six sons are born to him in Hebron.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:6.</td>
+  <td class="summary">Abner, displeased with Ish-bosheth,</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:7-12.</td>
+  <td class="summary">revolts to David.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:13-16.</td>
+  <td class="summary">David requires as a condition to bring him his wife Michal.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:17-21.</td>
+  <td class="summary">Abner, having communed with the Israelites, is feasted by David, and dismissed.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:22-27.</td>
+  <td class="summary">Joab returning from battle, is displeased with the king, and kills Abner.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:28-30.</td>
+  <td class="summary">David curses Joab;</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 3:31-39.</td>
+  <td class="summary">and mourns for Abner.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 4</td></tr>
+ <tr>
+  <td class="verses">2Sa 4:1.</td>
+  <td class="summary">The Israelites being troubled at the death of Abner,</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 4:2-8.</td>
+  <td class="summary">Baanah and Rechab slay Ish-bosheth, and bring his head to Hebron.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 4:9-12.</td>
+  <td class="summary">David causes them to be slain, and Ish-bosheth's head to be buried.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 5</td></tr>
+ <tr>
+  <td class="verses">2Sa 5:1-3.</td>
+  <td class="summary">The tribes come to Hebron and anoint David over Israel.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 5:4-5.</td>
+  <td class="summary">David's age.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 5:6-10.</td>
+  <td class="summary">He taking Zion from the Jebusites, dwells in it.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 5:11-12.</td>
+  <td class="summary">Hiram sends to David.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 5:13-16.</td>
+  <td class="summary">Eleven sons are born to him in Jerusalem.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 5:17-21.</td>
+  <td class="summary">David, directed by God, smites the Philistines at Baal-perazim;</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 5:22-25.</td>
+  <td class="summary">and again at the mulberry trees.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 6</td></tr>
+ <tr>
+  <td class="verses">2Sa 6:1-5.</td>
+  <td class="summary">David fetches the ark from Kirjath-jearim on a new cart.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 6:6-8.</td>
+  <td class="summary">Uzzah is smitten at Perez-uzzah.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 6:9-11.</td>
+  <td class="summary">God blesses Obed-edom for the ark.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 6:12-16.</td>
+  <td class="summary">David brings the ark into Zion with sacrifices, and dances before it; for which Michal despises him.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 6:17-19.</td>
+  <td class="summary">He places it in a tabernacle with great joy and feasting.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 6:20-23.</td>
+  <td class="summary">Michal, reproving David for his religious joy, is childless to her death.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 7</td></tr>
+ <tr>
+  <td class="verses">2Sa 7:1-3.</td>
+  <td class="summary">Nathan, first approving the purpose of David to build God a house,</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 7:4-11.</td>
+  <td class="summary">after by the word of God forbids him.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 7:12-17.</td>
+  <td class="summary">God promises him benefits and blessings in his seed.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 7:18-29.</td>
+  <td class="summary">David's prayer and thanksgiving.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 8</td></tr>
+ <tr>
+  <td class="verses">2Sa 8:1-2.</td>
+  <td class="summary">David subdues the Philistines and the Moabites.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 8:3-8.</td>
+  <td class="summary">He smites Hadadezer, and the Syrians.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 8:9-10.</td>
+  <td class="summary">Toi sends Joram with presents to bless him.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 8:11-13.</td>
+  <td class="summary">The presents and the spoil David dedicates to God.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 8:14-15.</td>
+  <td class="summary">He puts garrisons in Edom.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 8:16-18.</td>
+  <td class="summary">David's officers.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 9</td></tr>
+ <tr>
+  <td class="verses">2Sa 9:1-6.</td>
+  <td class="summary">David by Ziba sends for Mephibosheth.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 9:7-8.</td>
+  <td class="summary">For Jonathan's sake he entertains him at his table, and restores him all that was Saul's.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 9:9-13.</td>
+  <td class="summary">He makes Ziba his farmer.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 10</td></tr>
+ <tr>
+  <td class="verses">2Sa 10:1-5.</td>
+  <td class="summary">David's messengers, sent to comfort Hanun the son of Nahash, are villanously treated.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 10:6-14.</td>
+  <td class="summary">The Ammonites, strengthened by the Syrians, are overcome by Joab and Abishai.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 10:15-19.</td>
+  <td class="summary">Shobach, making a new supply of the Syrians at Helam, is slain by David.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 11</td></tr>
+ <tr>
+  <td class="verses">2Sa 11:1-5.</td>
+  <td class="summary">While Joab besieges Rabbah, David commits adultery with Bath-sheba.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 11:6-13.</td>
+  <td class="summary">Uriah, sent for by David to cover the adultery, would not go home.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 11:14-17.</td>
+  <td class="summary">He carries to Joab the letter of his death.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 11:18-25.</td>
+  <td class="summary">Joab sends the news thereof to David.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 11:26-27.</td>
+  <td class="summary">David takes Bath-sheba to wife.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 12</td></tr>
+ <tr>
+  <td class="verses">2Sa 12:1-6.</td>
+  <td class="summary">Nathan's parable of the ewe lamb causes David to be his own judge.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 12:7-14.</td>
+  <td class="summary">David, reproved by Nathan, confesses his sin, and is pardoned.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 12:15-23.</td>
+  <td class="summary">David mourns and prays for the child while it lives.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 12:24-25.</td>
+  <td class="summary">Solomon is born, and named Jedidiah.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 12:26-31.</td>
+  <td class="summary">David takes Rabbah, and tortures the people thereof.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 13</td></tr>
+ <tr>
+  <td class="verses">2Sa 13:1-14.</td>
+  <td class="summary">Amnon loving Tamar, by Jonadab's counsel feigning himself sick, ravishes her.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 13:15-18.</td>
+  <td class="summary">He hates her, and shamefully turns her away.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 13:19-22.</td>
+  <td class="summary">Absalom entertains her, and conceals his purpose.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 13:23-30.</td>
+  <td class="summary">At a sheep-shearing among all the king's sons, he kills Amnon.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 13:31-36.</td>
+  <td class="summary">David grieving at the news, is comforted by Jonadab.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 13:37-39.</td>
+  <td class="summary">Absalom flies to Talmai at Geshur.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 14</td></tr>
+ <tr>
+  <td class="verses">2Sa 14:1-24.</td>
+  <td class="summary">Joab, suborning a widow of Tekoah by a parable to incline the king's heart to fetch home Absalom, brings him to Jerusalem.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 14:25-27.</td>
+  <td class="summary">Absalom's beauty, hair, and children.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 14:28-33.</td>
+  <td class="summary">After two years, Absalom is brought into the king's presence by Joab.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 15</td></tr>
+ <tr>
+  <td class="verses">2Sa 15:1-6.</td>
+  <td class="summary">Absalom, by fair speeches and courtesies, steals the hearts of Israel.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:7-9.</td>
+  <td class="summary">Under pretence of a vow, he obtains leave to go to Hebron.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:10-12.</td>
+  <td class="summary">He makes there a great conspiracy.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:13-18.</td>
+  <td class="summary">David upon the news flees from Jerusalem.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:19-23.</td>
+  <td class="summary">Ittai will not leave him.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:24-29.</td>
+  <td class="summary">Zadok and Abiathar are sent back with the ark.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:30.</td>
+  <td class="summary">David and his company go up mount Olivet weeping.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:31.</td>
+  <td class="summary">He curses Ahithophel's counsel.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 15:32-37.</td>
+  <td class="summary">Hushai is sent back with instructions.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 16</td></tr>
+ <tr>
+  <td class="verses">2Sa 16:1-4.</td>
+  <td class="summary">Ziba, by presents and false suggestions, obtains his master's inheritance.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 16:5-8.</td>
+  <td class="summary">At Bahurim Shimei curse David.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 16:9-14.</td>
+  <td class="summary">David with patience abstains, and restrains others, from revenge.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 16:15-19.</td>
+  <td class="summary">Hushai insinuates himself into Absalom's counsel.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 16:20-23.</td>
+  <td class="summary">Ahithophel's counsel.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 17</td></tr>
+ <tr>
+  <td class="verses">2Sa 17:1-14.</td>
+  <td class="summary">Ahithophel's counsel is overthrown by Hushai's, according to God's appointment.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 17:15-22.</td>
+  <td class="summary">Secret intelligence is sent unto David.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 17:23-24.</td>
+  <td class="summary">Ahithophel hangs himself.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 17:25-26.</td>
+  <td class="summary">Amasa is made captain.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 17:27-29.</td>
+  <td class="summary">David at Mahanaim is furnished with provisions.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 18</td></tr>
+ <tr>
+  <td class="verses">2Sa 18:1-5.</td>
+  <td class="summary">David viewing the armies in their march gives them charge of Absalom.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 18:6-8.</td>
+  <td class="summary">The Israelites are sorely smitten in the wood of Ephraim.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 18:9-17.</td>
+  <td class="summary">Absalom, hanging in an oak is slain by Joab, and cast into a pit.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 18:18.</td>
+  <td class="summary">Absalom's place.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 18:19-32.</td>
+  <td class="summary">Ahimaaz and Cushi bring tidings to David.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 18:33.</td>
+  <td class="summary">David mourns for Absalom.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 19</td></tr>
+ <tr>
+  <td class="verses">2Sa 19:1-8.</td>
+  <td class="summary">Joab causes the king to cease his mourning.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 19:9-10.</td>
+  <td class="summary">The Israelites are earnest to bring the king back.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 19:11-17.</td>
+  <td class="summary">David sends to the priests to incite them of Judah.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 19:18-23.</td>
+  <td class="summary">Shimei is pardoned;</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 19:24-31.</td>
+  <td class="summary">Mephibosheth excused;</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 19:32-40.</td>
+  <td class="summary">Barzillai dismissed, and Chimham his son taken into the king's family.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 19:41-43.</td>
+  <td class="summary">The Israelites expostulate with Judah for bringing home the king without them.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 20</td></tr>
+ <tr>
+  <td class="verses">2Sa 20:1-2.</td>
+  <td class="summary">By occasion of the quarrel, Sheba makes a party in Israel.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 20:3.</td>
+  <td class="summary">David's ten concubines are put in confinement for life.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 20:4-13.</td>
+  <td class="summary">Amasa, made captain over Judah, is slain by Joab.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 20:14-15.</td>
+  <td class="summary">Joab pursues Sheba unto Abel.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 20:16-22.</td>
+  <td class="summary">A wise woman saves the city by Sheba's head.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 20:23-26.</td>
+  <td class="summary">David's officers.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 21</td></tr>
+ <tr>
+  <td class="verses">2Sa 21:1-9.</td>
+  <td class="summary">The three years' famine for the Gibeonites ceases, by hanging seven of Saul's sons.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 21:10-11.</td>
+  <td class="summary">Rizpah's kindness unto the dead.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 21:12-14.</td>
+  <td class="summary">David buries the bones of Saul and Jonathan in his father's sepulchre.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 21:15-22.</td>
+  <td class="summary">Four battles against the Philistines, wherein four valiants of David slay four giants.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 22</td></tr>
+ <tr>
+  <td class="verses">2Sa 22:1-51.</td>
+  <td class="summary">David's psalm of thanksgiving for God's powerful deliverance, and manifold blessings.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 23</td></tr>
+ <tr>
+  <td class="verses">2Sa 23:1-5.</td>
+  <td class="summary">David, in his last words, professes his faith in God's promises to be beyond sense or experience.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 23:6-7.</td>
+  <td class="summary">The different state of the wicked.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 23:8-39.</td>
+  <td class="summary">A catalogue of David's mighty men.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">2 Samuel chapter 24</td></tr>
+ <tr>
+  <td class="verses">2Sa 24:1-4.</td>
+  <td class="summary">David, tempted by Satan, forces Joab to number the people.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 24:5-9.</td>
+  <td class="summary">The captains, in nine months and twenty days, bring the muster of thirteen hundred thousand fighting men.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 24:10-14.</td>
+  <td class="summary">David repents, and having three plagues propounded by God, chooses the three days' pestilence.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 24:15-17.</td>
+  <td class="summary">After the death of three score and ten thousand, David by prayer prevents the destruction of Jerusalem.</td>
+ </tr>
+ <tr>
+  <td class="verses">2Sa 24:18-25.</td>
+  <td class="summary">David, by God's direction, purchases Araunah's threshing floor; where having sacrificed, the plague stays.</td>
+ </tr>
+</table>
+
+</div> 
+    </div>
+    <div id="rightside">
+      <div id="rightsideinner"> <!-- InstanceBeginEditable name="EditNextPrev" --> 
+        <div class="nav"><div class="nav-prev"><a href="1samuel.html" rel="prev">&larr;&nbsp;1 Samuel</a></div><div class="nav-next"><a href="1kings.html" rel="next">1 Kings&nbsp;&rarr;</a></div></div> 
+        <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="EditIndexSelector" --> 
+        <div id="indexselector">
+        <select name="OutlinePages" onChange="window.open(this.options[this.selectedIndex].value,'_top')">
+<option selected value="/outlines/">Select a Book of the Bible</option>
+<option value="/outlines/">(About these outlines)</option>
+<option value="genesis.html">Genesis</option>
+<option value="exodus.html">Exodus</option>
+<option value="leviticus.html">Leviticus</option>
+<option value="numbers.html">Numbers</option>
+<option value="deuteronomy.html">Deuteronomy</option>
+<option value="joshua.html">Joshua</option>
+<option value="judges.html">Judges</option>
+<option value="ruth.html">Ruth</option>
+<option value="1samuel.html">1 Samuel</option>
+<option value="2samuel.html">2 Samuel</option>
+<option value="1kings.html">1 Kings</option>
+<option value="2kings.html">2 Kings</option>
+<option value="1chronicles.html">1 Chronicles</option>
+<option value="2chronicles.html">2 Chronicles</option>
+<option value="ezra.html">Ezra</option>
+<option value="nehemiah.html">Nehemiah</option>
+<option value="esther.html">Esther</option>
+<option value="job.html">Job</option>
+<option value="psalms.html">Psalms</option>
+<option value="proverbs.html">Proverbs</option>
+<option value="ecclesiastes.html">Ecclesiastes</option>
+<option value="songofsolomon.html">Song of Solomon</option>
+<option value="isaiah.html">Isaiah</option>
+<option value="jeremiah.html">Jeremiah</option>
+<option value="lamentations.html">Lamentations</option>
+<option value="ezekiel.html">Ezekiel</option>
+<option value="daniel.html">Daniel</option>
+<option value="hosea.html">Hosea</option>
+<option value="joel.html">Joel</option>
+<option value="amos.html">Amos</option>
+<option value="obadiah.html">Obadiah</option>
+<option value="jonah.html">Jonah</option>
+<option value="micah.html">Micah</option>
+<option value="nahum.html">Nahum</option>
+<option value="habakkuk.html">Habakkuk</option>
+<option value="zephaniah.html">Zephaniah</option>
+<option value="haggai.html">Haggai</option>
+<option value="zechariah.html">Zechariah</option>
+<option value="malachi.html">Malachi</option>
+<option value="matthew.html">Matthew</option>
+<option value="mark.html">Mark</option>
+<option value="luke.html">Luke</option>
+<option value="john.html">John</option>
+<option value="acts.html">Acts</option>
+<option value="romans.html">Romans</option>
+<option value="1corinthians.html">1 Corinthians</option>
+<option value="2corinthians.html">2 Corinthians</option>
+<option value="galatians.html">Galatians</option>
+<option value="ephesians.html">Ephesians</option>
+<option value="philippians.html">Philippians</option>
+<option value="colossians.html">Colossians</option>
+<option value="1thessalonians.html">1 Thessalonians</option>
+<option value="2thessalonians.html">2 Thessalonians</option>
+<option value="1timothy.html">1 Timothy</option>
+<option value="2timothy.html">2 Timothy</option>
+<option value="titus.html">Titus</option>
+<option value="philemon.html">Philemon</option>
+<option value="hebrews.html">Hebrews</option>
+<option value="james.html">James</option>
+<option value="1peter.html">1 Peter</option>
+<option value="2peter.html">2 Peter</option>
+<option value="1john.html">1 John</option>
+<option value="2john.html">2 John</option>
+<option value="3john.html">3 John</option>
+<option value="jude.html">Jude</option>
+<option value="revelation.html">Revelation</option>
+</select>
+ 
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="clearall">&nbsp;</div>
+        <div id="searchbox">
+          <form action="https://www.google.com" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="partner-pub-5275979875239567:3875486487">
+              <input type="hidden" name="ie" value="UTF-8">
+              <input type="text" name="q" size="20" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+        
+        <!--SS_AD_START-->
+        <div id="sssidebar" class="sidebar">
+          <div class="innersidebar">
+            <p>Your Bible study shouldn't be left to a web search.</p>
+            <div class="sslink">
+              <p><a href="https://www.swordsearcher.com">Better Bible Study
+                With<br>
+                SwordSearcher
+                Bible Software <br>
+                <img src="../img/swordsearcher.png" alt="SwordSearcher"></a> </p>
+            </div>
+            <p>The internet is good for many things, but it is not designed for studying God's word.</p>
+            <p>SwordSearcher is.</p>
+            <ul>
+              <li><a href="https://www.swordsearcher.com">Learn more.</a></li>
+              <li><a href="https://www.swordsearcher.com/video/3reasons.htm">Video: 3 Reasons to use SwordSearcher</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--SS_AD_END-->
+        
+        
+        <a href="https://www.bible-topics.com/" class="button">Bible Topics</a>
+		<a href="https://www.naves-topical-bible.com/" class="button">Nave's Topical Bible Concordance</a>
+		<a href="https://www.internationalstandardbible.com/" class="button">International Standard Bible Encyclopedia</a>
+  		<a href="https://www.biblicalcyclopedia.com/" class="button">McClintock and Strong Biblical Cyclopedia</a>
+		<a href="https://av1611.com/kjbp/kjv-bible-text/index.html" class="button">Online KJV Text</a>
+		<a href="https://av1611.com/kjbp/kjv-dictionary/kjv-dictionary-index.html" class="button">KJV Dictionary</a> 
+ 
+      </div>
+    </div>
+    <div class="clearall"> &nbsp; </div>
+  </div>
+</div>
+<div id="footer"> <!-- InstanceBeginEditable name="EditFooterIndex" --> 
+  <!--FOOTER_INDEX_DIV_START--> 
+  <!--FOOTER_INDEX_DIV_END--> 
+  <!-- InstanceEndEditable -->
+  <div class="innerdiv"> 
+    <!--FOOTER_START--> 
+    <a href="https://www.biblestudystart.com"><img src="../img/books-tiny.jpg" alt="Bible Study Start" class="bookspicture"></a> <!-- InstanceBeginEditable name="Footer" -->
+    <p>Source: <a href="https://www.swordsearcher.com/bible-study-library/bible-outlines.html">OutlinesBB</a> module from <a href="https://www.swordsearcher.com">SwordSearcher</a>.</p>
+    <!-- InstanceEndEditable -->
+    <p>Website HTML, editorial descriptions, and images &copy;2023 <a href="https://www.studylamp.com">StudyLamp Software LLC.</a> <br>
+      <a href="https://av1611.com/verseclick">Scripture linking and popups powered by VerseClick&trade;.</a> </p>
+    <!--FOOTER_END--> 
+  </div>
+</div>
+<div id="postfooter"> 
+  
+ 
+</div>
+
+
+<script src="https://av1611.com/verseclick/verseclick.js"></script> 
+
+<!-- AddThis Smart Layers BEGIN --> 
+<!-- Go to http://www.addthis.com/get/smart-layers to customize --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e2b9213820e78"></script> 
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5,
+	  'mobile' : false
+    }   
+  });
+</script> 
+<!-- AddThis Smart Layers END --> 
+
+
+</body>
+<!-- InstanceEnd --></html>

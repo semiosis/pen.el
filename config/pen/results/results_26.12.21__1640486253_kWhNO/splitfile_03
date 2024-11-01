@@ -1,0 +1,2 @@
+ ;; Si vous voulez installer une version figée des paquets, mettez cette\n ;; variable à t. Si vous ne voulez pas mettre cette variable à t,\n ;; l'installation se fera à partir des dépôts MELPA.\n ;; (default nil)
+

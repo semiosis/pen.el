@@ -1,0 +1,164 @@
+Link: Excalibur Clan (alternate)
+Home arrow Forum
+_____________________
+Friday, December 19 2008
+o Home
+o Blog
+o Forum
+
+Other Menu        Link: help
+Link: search
+Tutorials           Link: contents
+Rec. Games          Link: - RSS (alternate)
+EX Members          Link: previous
+Mac Newsfeeds       Link: next
+FAQs                Link: index
+Links
+How to register      User Info              Key Stats
+Welcome, Guest.        3162 Posts in 253 Topics by
+Recent Topics      Please login or        125 Members
+register.              Latest Member: morane
+o WTF IS WRONG     December 19, 2008,
+WITH YOU GUYS    11:24:08 AM
+(9) by Leonidas          ___________
+o New record (29)          ___________
+by Leonidas              [ _______ ]
+o New AOE II                 [ Login ]
+forums (not               Login with
+fully             username, password
+established       and session length
+site though :()
+(0) by          Search:
+Stormwind       _____________________
+o Clan              [ Search ]  
+Impersonater    Advanced search
+(12) by Haba
+o dsl, fastpath   Home Help Search Login Register
+(1) by Haba
+o M@a fc (8) by    |  General  |  The pub / general
+Leonidas        discussion (Moderators: Leonidas,
+o Recs not        exc_imac)  |  Hosting with WIRELESS
+working with    ROUTER                               << previous next >>
+new update (8)
+by Leonidas     Pages: [1]                                       Print
+o Fastest time
+castle !! new   Author Topic: Hosting with WIRELESS ROUTER  (Read 802
+record! (10) by        times)
+Leonidas
+o me and tomato    Leonidas   [IMG]  Hosting with WIRELESS ROUTER
+vs 5 nomadwe     Global            << on: May 12, 2007, 04:03:02 AM >>
+(8) by quoquo    Moderator
+o Hosting with     Hero
+WIRELESS ROUTER  Member
+(6) by quoquo    * * * * *  ok this is important, if u want to have a
+Posts:     functioning ip this is what u do if u
+Login Form         607        have an airport (for other routers do the
+comparable for ur router)
+Username             View
+___________          Profile    1. launch airport admin util.
+Password             WWW        2. click configure
+___________                     3. click port mapping
+[ ] Remember me                 4. click add
+[ Login ]                       5. enter 23978 in both the public and the
+Lost Password?                  private fields.  enter your private ip
+adress in the private ip adress field
+Who's Online                  (this is the ip of your exact computer in
+your intranet, found in your network
+We have 1 guest                 prefs)
+online
+spacer.png, 0 kB                that's it, except u can host only wtih
+that computer.
+
+if this doesnt work, repeat the above
+steps, but also port forward 16000 port
+(i dunno if u need to, i did both ports
+just in cast)
+Logged
+BoomBox        Re: Hosting with WIRELESS ROUTER
+Newbie   [IMG] << Reply #1 on: May 12, 2007,
+*              06:17:34 AM >>
+Posts:
+42
+
+View     23978 doesnt help i have had that for a
+Profile  long time and it didnter work but about a
+month ago i do 16000 and mine works.
+Logged
+Leonidas         Re: Hosting with WIRELESS ROUTER
+Global     [IMG] << Reply #2 on: May 12, 2007,
+Moderator        07:27:23 PM >>
+Hero
+Member
+* * * * *
+Posts:     i think with new update to gr u need to
+607        port forward both, im not sure.  Too bad
+evill dont check out the forums, he could
+View       clear this up...
+Profile
+WWW                                           Logged
+*lo            Re: Hosting with WIRELESS ROUTER
+Newbie   [IMG] << Reply #3 on: May 29, 2007,
+*              12:57:35 PM >>
+Posts:
+2
+
+View     i found this websit that explains how to do
+Profile  it and it has a tutorial for every router
+on the market. iused it and it works. so
+have fun everfybody.
+
+http://www.portforward.com/routers.htm
+Logged
+Pharazon         Re: Hosting with WIRELESS ROUTER
+Excalibur  [IMG] << Reply #4 on: May 30, 2007,
+Clan             03:05:22 AM >>
+Newbie
+* * * *
+Posts: 4
+Hey,
+View
+Profile    for hosting AoE2 you need the following
+ports to be open:
+TCP+UDP 2300-2400 for hosting with
+gameranger and
+TCP only 23978 for IP joining your
+games.    Roll Eyes
+
+Tested it a lot and it works  Cheesy
+
+See you around !
+Logged
+Leonidas         Re: Hosting with WIRELESS ROUTER
+Global     [IMG] << Reply #5 on: May 30, 2007,
+Moderator        11:53:50 PM >>
+Hero
+Member
+* * * * *
+Posts:     cool beans thx
+607
+
+View
+Profile
+WWW                                           Logged
+quoquo         Re: Hosting with WIRELESS ROUTER
+Newbie   [IMG] << Reply #6 on: July 06, 2008,
+*              07:30:57 PM >>
+Posts:
+3
+
+View     works like a charm, thanks
+Profile                                       Logged
+
+Pages: [1]                                      Print 
+
+<< previous next >>
+
+Jump to: [ _______________________________________ ] 
+[ go ]
+
+Powered by SMF 1.1 RC3 | SMF (c) 2001-2006, Lewis Media
+Joomla Bridge by JoomlaHacks.com
+Theme by Nesianstyles | Buttons by Andrea
+
+RSS 2.0
+

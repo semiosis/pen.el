@@ -1,0 +1,13 @@
+
+
+main = do
+
+putStr "Alarm Clock"
+
+putStr "====================="
+
+putStrLn "1. Set alarm"
+
+putStrLn "2. Alarm On"
+
+put

@@ -1,0 +1,186 @@
+* add a thread
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (Thread. (fn []
+             (println "Unmounting " mnt)
+             (umount-it!)))
+#+END_SRC
+* =type=
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (type {:as :json})
+#+END_SRC
+
+#+RESULTS:
+#+begin_src clojure
+#+end_src
+
+* =filterv=
+
+
+* =swap!=
+https://clojuredocs.org/clojure.core/swap!
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (def m1 (atom {:a "A" :b "B"}))
+  (swap! m1 assoc :a "Aaay")
+#+END_SRC
+
+* java reflection
+https://stackoverflow.com/questions/7986136/how-do-i-see-the-methods-associated-with-an-object-in-clojure
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (import java.io.File)
+  (let [f (new File ".")] (.getMethods (.getClass f)))
+  (vec (let [f (new File ".")] (.getMethods (.getClass f))))
+#+END_SRC
+
+* =map=
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (:rank {:rank 2})
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  2
+#+END_SRC
+
+* =clojure.core/sort-by=
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (sort-by count ["aaa" "bb" "c"])
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  ("c" "bb" "aaa")
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (sort-by :rank [{:rank 2} {:rank 3} {:rank 1}])
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  ({:rank 1} {:rank 2} {:rank 3})
+#+END_SRC
+
+* =clojure.core/name=
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (name :a)
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  "a"
+#+END_SRC
+
+* =clojure.core/juxt=
+=juxt= runs multiple functions with the same set of arguments and puts the results of each function into a vector.
+
+https://clojuredocs.org/clojure.core/juxt
+https://stackoverflow.com/q/15626542
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  ;; sort list of maps by multiple values
+  (sort-by (juxt :a :b) [{:a 1 :b 3} {:a 1 :b 2} {:a 2 :b 1}])
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  [{:a 1 :b 2} {:a 1 :b 3} {:a 2 :b 1}]
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  ((juxt first count) "Clojure Rocks")
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  [\C 13]
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  ((juxt identity name) :keyword)
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  [:keyword "keyword"]
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (identity :keyword)
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  :keyword
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (name :keyword)
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  "keyword"
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  ;; Extract values from a map, treating keywords as functions.
+  ((juxt :a :b) {:a 1 :b 2 :c 3 :d 4})
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  [1 2]
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  clojure.core/juxt
+   [f]
+   [f g]
+   [f g h]
+   [f g h & fs]
+  Added in 1.1
+    Takes a set of functions and returns a fn that is the juxtaposition
+    of those fns.  The returned fn takes a variable number of args, and
+    returns a vector containing the result of applying each fn to the
+    args (left-to-right).
+    ((juxt a b c) x) => [(a x) (b x) (c x)]
+#+END_SRC
+
+* =into=
+https://clojuredocs.org/clojure.core/into
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (into (sorted-map) [ [:a 1] [:c 3] [:b 2] ] )
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  {:a 1, :b 2, :c 3}
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (into (sorted-map) [ {:a 1} {:c 3} {:b 2} ] )
+#+END_SRC
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  {:a 1, :b 2, :c 3}
+#+END_SRC
+
+* =interleave=
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  ewwlinks +/"(apply assoc {} " "https://clojuredocs.org/clojure.core/interleave"
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (apply assoc {} 
+     (interleave [:fruit :color :temp] 
+                 ["grape" "red" "hot"]))
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  {:temp "hot", :color "red", :fruit "grape"}
+#+END_SRC
+
+* =~=
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (def three-and-four (list 3 4))
+  `(1 ~@three-and-four)
+  ;; (1 3 4)
+#+END_SRC
+
+* =~@=
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  ewwlinks +/"\* ~@ - Unquote splicing" "https://clojure.org/guides/weird_characters"
+#+END_SRC
+
+=~@= is unquote-splicing.
+
+Where unquote (=~=) evaluates a form and
+places the result into the quoted result, =~@=
+expects the evaluated value to be a collection
+and splices the contents of that collection
+into the quoted result.
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (def three-and-four (list 3 4))
+  `(1 ~three-and-four)
+  ;; (1 (3 4))
+#+END_SRC

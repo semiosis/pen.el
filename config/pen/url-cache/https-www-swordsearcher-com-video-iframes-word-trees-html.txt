@@ -1,0 +1,112 @@
+HTTP/1.1 200 OK
+Date: Tue, 19 Sep 2023 02:57:25 GMT
+Server: Apache
+Vary: Accept-Encoding
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/VideoPopupIframe.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--ZOOMSTOP-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceParam name="VideoTitle" type="text" value="Bible Word Trees in SwordSearcher" -->
+<!-- InstanceParam name="VideoWidth" type="number" value="1920" -->
+<!-- InstanceParam name="VideoHeight" type="number" value="1080" -->
+<!-- InstanceParam name="VideoID" type="text" value="ssv_wordtrees" -->
+<!-- InstanceParam name="PosterImage" type="URL" value="https://s3.amazonaws.com/video.swordsearcher.com/hb/ss%20word%20trees%20%28Time%200_06_28%3B12%29.png" -->
+<!-- InstanceParam name="VideoSrcURL" type="URL" value="https://s3.amazonaws.com/video.swordsearcher.com/hb/SwordSearcher-WordTrees-hb.mp4" -->
+<head>
+<title>Video Popup:Bible Word Trees in SwordSearcher</title>
+<style>
+html {
+	background:#111; 
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background:#111;
+	overflow:hidden;
+	margin: 0px;
+	padding: 0px;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/4.12/video.js"></script>
+<style>
+.wrapper {
+	background:#111;
+	max-width:1920px;
+	margin: 0px;
+	padding: 0px;
+}
+.videocontent {
+	background:#111;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+.video-js {
+	background:#111;
+	background-color: #000000;
+	padding-top:56.25%;
+}
+.vjs-fullscreen {
+	background:#111;
+	padding-top:0px;
+}
+</style>
+</head>
+<body>
+<!--
+poster="https://s3.amazonaws.com/video.swordsearcher.com/hb/ss%20word%20trees%20%28Time%200_06_28%3B12%29.png" 
+-->
+<div class="wrapper">
+  <div class="videocontent">
+    <video
+		id="ssv_wordtrees"
+        class="video-js vjs-default-skin vjs-big-play-centered vjs-playing"
+        width="auto" height="auto"
+        controls
+        data-setup="{}">
+      <source src="https://s3.amazonaws.com/video.swordsearcher.com/hb/SwordSearcher-WordTrees-hb.mp4" type="video/mp4"/>
+      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+    </video>
+  </div>
+</div>
+<script>
+	var myPlayer = videojs("ssv_wordtrees");
+	
+	myPlayer.on("ended", function(){ 
+		myPlayer.currentTime(0);
+	});
+
+ 	myPlayer.ready(function(){
+		try {
+			var myExpander = window.parent.hs.getExpander();			
+		} catch(e) {
+			var myExpander = false;
+		}
+		if (myExpander) {
+			// autoplay if in highslide expander.
+			myPlayer.play();
+			//make sure the player is properly stopped/disposed when the expander is closed.
+			//this is not vital but avoids the player throwing an exception.
+			myExpander.onBeforeClose = function() {
+				myPlayer.dispose();
+			}
+		} else {
+			// no autoplay, and, give back the scroll bar.
+			// BTW, why are you going to the iframe popup html instead of allowing it to play in the expander? :-)
+			document.body.style.overflow = "auto";
+		}
+	});
+</script>
+</body>
+<!--ZOOMRESTART-->
+<!-- InstanceEnd --></html>

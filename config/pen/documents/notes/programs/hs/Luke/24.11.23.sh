@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Luke" "12:51" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Luke" "12:51-52" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Luke" "12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Luke" "12:50-52" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Luke" "12:50-55" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Luke" "12:50-54" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Luke" "12:50-53" "#" "<==" "bash"

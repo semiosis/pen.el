@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Systemd.service(5) - System and service manager</title>
+<meta charset="utf-8">
+<style type="text/css">
+body {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+p {
+  margin: 0.67em 0;
+}
+ul { list-style: disc outside; }
+li { list-style: disc inside; }
+a { text-decoration: none; }
+
+    </style>
+
+    <script type="text/javascript">
+
+      function toggle(id) {
+
+        var e = document.getElementById(id);
+
+        if (e.style.display == 'block') {
+
+          e.style.display = 'none';
+
+        } else {
+
+          e.style.display = 'block';
+
+        }
+
+      }
+
+    </script>
+
+  </head>
+<body> <h1 id="header">Systemd.service(5)</h1><p id="preamble"> - System and service manager</p><ul><li><a href="#Description" onclick="toggle('Description'); return false;" title="Description"><span class="icon"></span> Description</a></li></ul><div id="Description" style="display: none"><p id="firstpara"><strong>Systemd</strong> is a system and service manager for Linux, compatible with SysV and LSB init scripts.</p><p id="secondpara"><strong>systemd</strong> provides aggressive parallelism and uses a micro-service approach, with systemd units as the basic building blocks of an application.</p><p id="thirdpara"><strong>systemd</strong> is a replacement for sysvinit.</p></div></body></html>

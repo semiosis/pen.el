@@ -1,0 +1,7 @@
+cd /root/notes;  "I" "Corinthians" "15:10" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "13:2" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "4:10" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Corinthians" "1:30" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "6:10" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "6:9-10" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "6:11-12" "#" "<==" "zsh"

@@ -1,0 +1,52 @@
+HTTP/1.1 200 OK
+Date: Sat, 10 Sep 2022 05:42:47 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Wed, 26 Jun 2013 18:22:24 GMT
+ETag: "4c8-4e012ba271800"
+Accept-Ranges: bytes
+Content-Length: 1224
+Vary: User-Agent
+Keep-Alive: timeout=2, max=1000
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+  <head>
+	<title>fringe-helper</title>
+	<meta http-equiv='Content-type'
+		  content='text/html;charset=UTF-8'/>
+	<meta name='author'
+		  content='Nikolaj Schumacher'/>
+	<meta name='description'
+		  content='helper functions for fringe bitmaps'/>
+	<link rel='stylesheet' type='text/css'
+		  href='../style.css'/>
+	<script src='../email.js' type='text/javascript'/>
+  </head>
+  <body>
+	<ul id='nav' title='navigation'>
+	  <li><a href='../'
+			 title='a list of my emacs extensions'>Emacs extensions</a></li>
+	</ul>
+
+	<h1>fringe-helper</h1>
+	<h2>What's this for?</h2>
+	<p><code>fringe-helper</code> contains helper functions for fringe bitmaps.</p>
+
+	<p id='screenshots'>
+	  <a href='fringe-helper.png'>
+		<img src='fringe-helper.png'
+			 alt="screenshot of flymake-mode enhanced with fringe-helper"
+			 title="screenshot of flymake-mode enhanced with fringe-helper"/>
+	  </a>
+	</p>
+
+	<h2>Download</h2>
+    <p>This project is now available on <a href='https://github.com/nschum/fringe-helper.el'>github</a>.</p>
+
+  </body>
+</html>

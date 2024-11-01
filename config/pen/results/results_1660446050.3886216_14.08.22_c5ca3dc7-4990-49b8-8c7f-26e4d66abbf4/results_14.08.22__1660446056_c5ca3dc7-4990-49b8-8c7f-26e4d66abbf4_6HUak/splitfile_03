@@ -1,0 +1,4 @@
+The above code is a simple program that queries the weather service and prints the results.
+The getResults function is defined in the Weather module.
+The fromMaybe function is defined in the Data.Maybe module.
+The unlines function is defined in the Data.List module.

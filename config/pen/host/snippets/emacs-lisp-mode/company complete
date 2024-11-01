@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: company complete
+# group: company
+# key: cc
+# --
+(defun company-${1:untitled}--candidates (prefix)
+(let ((res '()))
+;; Generate a list
+(setq res '("testing" "testing123"))
+res))
+
+(defun company-pen--grab-symbol ()
+(buffer-substring (point) (save-excursion (skip-syntax-backward "w_.")
+(point))))
+
+(defun company-$1--prefix ()
+"Grab prefix at point."
+(or (company-pen--grab-symbol)
+'stop))
+
+(defun company-$1 (command &optional arg &rest ignored)
+(interactive (list 'interactive))
+(cl-case command
+(interactive (company-begin-backend 'company-$1))
+(prefix (company-$1--prefix))
+(candidates (company-$1--candidates arg))
+;; TODO doc-buffer may contain info on the completion in the future
+;; (doc-buffer (company-$1--doc-buffer arg))
+;; TODO annotation may contain the probability in the future
+;; (annotation (company-$1--annotation arg))
+))

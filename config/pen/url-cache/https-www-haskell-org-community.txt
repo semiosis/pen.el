@@ -1,0 +1,192 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 07 Apr 2022 11:04:12 GMT
+Content-Type: text/html
+Content-Length: 11160
+Last-Modified: Thu, 01 Jan 1970 00:00:01 GMT
+Connection: keep-alive
+ETag: "1-2b98"
+Accept-Ranges: bytes
+
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Community</title>
+      <meta charset="utf-8">
+      <meta content="IE edge" http-equiv="X-UA-Compatible">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <meta content="haskell,functional,pure,programming,lazy" name="keywords">
+      <meta content="The Haskell purely functional programming language home page." name="description">
+      <link href="../img/favicon.ico" rel="shortcut icon">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Raleway:700,900|Ubuntu+Mono:400" type="text/css" rel="stylesheet">
+      <link href="../css/hl.css" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+   </head>
+   <body class="page-community">
+     <div class="wrap">
+       
+       <div class="template">
+       
+
+         <nav class="navbar navbar-default">
+   <div class="container">
+      <div class="navbar-header">
+        <button data-toggle="collapse" data-target="#haskell-menu" class="navbar-toggle collapsed"><span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        
+        <a href="../" class="navbar-brand"><span class="logo"><img src="../img/haskell-logo.svg"></span></a>
+        
+      </div>
+      <div id="haskell-menu" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="../downloads/">Downloads</a></li>
+            <li class="active"><a href="../community/">Community</a></li>
+            <li><a href="../documentation/">Documentation</a></li>
+            <li><a href="../donations/">Donate</a></li>
+         </ul>
+      </div>
+   </div>
+</nav>
+
+
+         
+         <div class=" container ">
+           <div class=" row ">
+              <div class=" span12 col-sm-12">
+         
+
+         <h1 id="community">Community</h1>
+<p>Haskellers interact, talk and collaborate across several mediums and around the world. There are places to learn, to teach, to ask questions, and to find contributors and collaborators.</p>
+<p><a href="../donations/">Help support the community!</a></p>
+<h2 id="online-communities-and-social-resources">Online Communities and Social Resources</h2>
+<p>Haskellers are active on a number of online areas, but the most busy are below:</p>
+<ul>
+<li><a href="../mailing-lists/">The Haskell mailing lists</a></li>
+<li><a href="../irc/">IRC (online chat)</a></li>
+<li><a href="https://matrix.to/#/#haskell:matrix.org">Matrix (online chat)</a></li>
+<li><a href="https://discourse.haskell.org">Haskell Community Discourse</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged?tagnames=haskell">StackOverflow</a></li>
+<li><a href="https://www.facebook.com/groups/programming.haskell/">Facebook community</a></li>
+<li><a href="http://www.reddit.com/r/haskell">Reddit</a></li>
+<li><a href="https://wiki.haskell.org">Wiki</a></li>
+<li><a href="http://planet.haskell.org/">The blogosphere</a></li>
+<li><a href="https://haskellweekly.news/">Haskell Weekly e-mail newsletter</a></li>
+<li><a href="https://gitter.im/haskell-chat">Haskell Gitter Community Chat</a></li>
+<li><a href="https://wiki.haskell.org/Haskell_Communities_and_Activities_Report">Haskell Communities and Activities Report</a></li>
+</ul>
+<h2 id="in-person-groups-and-meetups">In-person Groups and Meetups</h2>
+<p>There are a number of Haskell Users groups where haskellers meet to learn and code. Some are listed below:</p>
+<ul>
+<li><a href="http://www.meetup.com/ATX-Haskell/">Austin Haskell Users Group</a></li>
+<li><a href="http://www.meetup.com/Bay-Area-Haskell-Users-Group/">Bay Area Haskell Users Group</a></li>
+<li><a href="http://www.meetup.com/Boston-Haskell/">Boston Haskell</a></li>
+<li><a href="http://www.meetup.com/berlinhug/">Berlin Haskell Users Group</a></li>
+<li><a href="http://www.meetup.com/Brisbane-Functional-Programming-Group/">Brisbane Functional Programming Group</a></li>
+<li><a href="http://ChicagoHaskell.com/">Chicago Haskell</a></li>
+<li><a href="https://www.meetup.com/haskell-dublin-meetup/">Dublin Haskell Meetup</a></li>
+<li><a href="https://www.meetup.com/Haskell-DC/">Haskell DC</a></li>
+<li><a href="http://www.haskell-ita.it/">Italy Haskell Users Group</a></li>
+<li><a href="http://haskell.jp/">Japan Haskell Users Group (Haskell-jp)</a></li>
+<li><a href="http://www.meetup.com/NY-Haskell/">New York Haskell Users Group</a></li>
+<li><a href="https://muenchen.haskell.bayern/">Munich Haskell Meeting</a></li>
+<li><a href="http://www.meetup.com/London-Haskell/">London Haskell</a></li>
+<li><a href="http://seattlehaskell.org/">Seattle Area Haskell Users’ Group (SeaHUG)</a></li>
+<li><a href="http://www.meetup.com/find/?allMeetups=true&amp;keywords=Haskell&amp;radius=Infinity">More Haskell meetups at meetup.com</a></li>
+</ul>
+<h2 id="committees">Committees</h2>
+<p>Haskell infrastructure is mostly maintained by committees and groups of volunteers. Here are some of the committees involved in keeping things running:</p>
+<ul>
+<li><a href="https://wiki.haskell.org/Core_Libraries_Committee">Core Libraries Committee</a></li>
+<li><a href="https://github.com/ghc-proposals/ghc-proposals">GHC Steering Committee</a></li>
+<li><a href="https://wiki.haskell.org/Hackage_trustees">Hackage trustees</a></li>
+<li><a href="../haskell-org-committee">Haskell.org committee</a></li>
+<li><a href="https://docs.haskellstack.org/en/stable/maintainers/team_process/">Stackage maintainers</a></li>
+<li><a href="https://github.com/haskell-infra/haskell-admins/">Haskell admin team</a>: responsible for all <code>***.haskell.org</code> infrastructure, including this website.</li>
+</ul>
+<h2 id="conferences-and-events">Conferences and Events</h2>
+<p>There are a number of conferences and events featuring Haskell, some focusing on the academic side of things, and some on the commercial or hobbyist side. Here are just a few:</p>
+<h3 id="academic-conferences">Academic Conferences</h3>
+<ul>
+<li><a href="https://www.haskell.org/haskell-symposium/">The Haskell Symposium</a></li>
+<li><a href="https://wiki.haskell.org/HaskellImplementorsWorkshop">Haskell Implementors’ Workshop</a></li>
+<li><a href="http://www.icfpconference.org/">The International Conference on Functional Programming</a></li>
+<li><a href="https://www.sigplan.org/Conferences/POPL/">Symposium on Principles of Programming Languages</a></li>
+<li><a href="http://www.ifl-symposia.org/">International Symposia on Implementation and Application of Functional Languages</a></li>
+<li><a href="http://www.tifp.org/">Symposium on Trends in Functional Programming</a></li>
+</ul>
+<h3 id="non-academic-conferences">Non-Academic Conferences</h3>
+<ul>
+<li><a href="http://cufp.org/">Commercial Users of Functional Programming (Roving)</a></li>
+<li><a href="http://lambdajam.yowconference.com.au/">YOW! LambdaJam (Sydney, AU)</a></li>
+<li><a href="http://functionalconf.com/">Functional Conf (Bangalore, IN)</a></li>
+<li><a href="http://bobkonf.de/">BOB (Berlin, DE)</a></li>
+<li><a href="https://skillsmatter.com/conferences/11741-haskell-exchange-2019">Skills Matter’s Haskell eXchange (London, GB)</a></li>
+<li><a href="http://lambdaconf.us/">LambdaConf (Boulder, CO, USA)</a></li>
+<li><a href="http://www.lambda.world/">Lambda World (Cádiz, Spain and Seattle, USA)</a></li>
+<li><a href="http://composeconference.org">Compose :: Conference (NY, NY, USA)</a></li>
+<li><a href="http://composeconference.org">Compose :: Melbourne (Melbourne, VIC, AU)</a></li>
+<li><a href="http://www.curry-on.org/">Curry On (Europe, roving)</a></li>
+<li><a href="https://lambdale.org/">LambdAle (London, GB)</a></li>
+<li><a href="https://haskell.love">Haskell Love Conference (online)</a></li>
+</ul>
+<h3 id="hackathons">Hackathons</h3>
+<p>Haskell Hackathons are a long tradition, with lots of learning and social exchange. In many ways they function as semi-structured conferences. Here are some of the most notable:</p>
+<ul>
+<li><a href="https://wiki.haskell.org/BayHac">BayHac (San Francisco Bay Area, CA, USA)</a></li>
+<li><a href="https://wiki.haskell.org/Hac_Phi">Hac Phi (Philadelphia, PA, USA)</a></li>
+<li><a href="https://wiki.haskell.org/ZuriHac">ZuriHac (Zurich, CH)</a></li>
+<li><a href="https://wiki.haskell.org/HacFreiburg2017">HacFreiburg (Freiburg, De)</a></li>
+</ul>
+<h2 id="specific-interest-groups">Specific Interest Groups</h2>
+<ul>
+<li><a href="http://industry.haskell.org/">Industrial Haskell Group</a></li>
+<li><a href="http://commercialhaskell.com/">Commercial Haskell Group</a></li>
+<li><a href="http://www.datahaskell.org/">DataHaskell: data science, machine learning, numerical computation and related</a></li>
+<li><a href="http://lurk.org/groups/haskell-art/">Haskell Art</a></li>
+</ul>
+<h2 id="supporting-the-community">Supporting the Community</h2>
+<p>If you would like to support the Haskell community, consider <a href="../donations">donating to Haskell.org</a>, the organization that maintains a significant part of the Haskell community infrastructure.</p>
+
+         
+             </div>
+           </div>
+         </div>
+         
+
+       
+       </div>
+       
+     </div>
+     <div class="footer">
+        <div class="container">
+           <p>
+           <div class=" container ">
+              <div class=" row ">
+                 <div class=" span3 col-sm-4 col-md-3"><span class="item">© 2014–2022 haskell.org</span></div>
+                 <div class=" span12 col-xs-12 visible-xs"><br></div>
+                 <div class=" span8 col-sm-4 col-md-6 text-center"><br class="visible-xs"><span class="item">Got changes to contribute to the site? </span><br class="visible-xs"><a href="https://github.com/haskell-infra/www.haskell.org/">Fork or comment on GitHub</a><br class="visible-xs"></div>
+                 <div class=" span12 col-xs-12 visible-xs"><br></div>
+                 <div class=" span3 col-sm-6 col-md-3 text-right"><span>Hosted on </span><a href="https://metal.equinix.com/"><img style="margin-left: 0.25em;" height="20" src="../img/EM-Horizontal-White.svg" alt="Equinix Metal"></a></div>
+                 <div class=" span12 col-sm-12"><br></div>
+              </div>
+           </div>
+           </p>
+        </div>
+     </div>
+     <script src="../js/jquery.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <script src="../js/home.js"></script>
+     <script src="../js/jquery.console.js"></script>
+     <script src="../js/tryhaskell.js"></script>
+     <script src="../js/tryhaskell.pages.js"></script>
+     <script>var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-83290513-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+     </script>
+   </body>
+</html>

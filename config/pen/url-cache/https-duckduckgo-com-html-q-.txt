@@ -1,0 +1,73 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 15 Dec 2021 22:13:16 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Server-Timing: total;dur=17;desc="Backend Total"
+Strict-Transport-Security: max-age=31536000
+Permissions-Policy: interest-cohort=()
+Content-Security-Policy: default-src 'none' ; connect-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; manifest-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; media-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; script-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; font-src data:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; img-src data:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; style-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; object-src 'none' ; worker-src blob: ; child-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; frame-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; frame-ancestors 'self' ; base-uri 'self' ; block-all-mixed-content ;
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1;mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: origin
+Expect-CT: max-age=0
+Expires: Wed, 15 Dec 2021 22:13:17 GMT
+Cache-Control: max-age=1
+X-DuckDuckGo-Locale: en_US
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--[if IE 6]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 7]><html class="lt-ie8 lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<head>
+  <link rel="canonical" href="https://duckduckgo.com/" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
+  <meta name="referrer" content="origin" />
+  <title>DuckDuckGo</title>
+  <link title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_html_v2.xml" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="//duckduckgo.com/assets/logo_icon128.v101.png" />
+  <link rel="image_src" href="//duckduckgo.com/assets/logo_homepage.normal.v101.png" />
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/h2023.css" type="text/css" />
+</head>
+
+<body class="body--home body--html">
+  <div class="header-wrap--home"></div>
+  <div id="content_wrapper_homepage" class="content-wrap--home">
+  <div id="content_homepage" class="content--home">
+    <div class="logo-wrap--home">
+    <a title="About DuckDuckGo" class="logo_homepage" href="//duckduckgo.com/about.html">About DuckDuckGo</a>
+    </div>
+    <div class="search-wrap--home">
+        <form name="x" id="search_form_homepage" class="search" action="/html/" method="post">
+
+          <input name="q" autocomplete="off" id="search_form_input_homepage" class="search__input" type="text" autofocus />
+
+          <input name="b" id="search_button_homepage" class="search__button search__button--html" value="" title="Search" alt="Search" type="submit" />
+
+	  
+	  
+	  
+	  
+
+        </form>
+    </div>
+
+    <!--[if IE 6]>
+        <p class="text-center">This browser is not supported. Please visit <a href="/lite">/lite</a>.</p>
+    <![endif]-->
+
+	<div id="html-only-notice">
+<!--          This is the HTML version. Get the JS version <a href="https://duckduckgo.com/">here</a>. //-->
+	</div>
+
+  </div> <!-- id="content_homepage" -->
+  </div> <!-- id="content_wrapper_homepage" -->
+</body>
+</html>

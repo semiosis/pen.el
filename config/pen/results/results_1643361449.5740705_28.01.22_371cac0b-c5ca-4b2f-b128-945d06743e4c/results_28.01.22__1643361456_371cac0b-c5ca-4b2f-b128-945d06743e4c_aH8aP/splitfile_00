@@ -1,0 +1,7 @@
+
+
+This post is a demonstration of the [Codex](https://github.com/openai/codex)
+project, which is a collection of tools for generating and using
+[GPT-2](https://openai.com/blog/better-language-models/) models.  It is
+intended to be a useful tool for anyone who wants to experiment with GPT-2
+and its derivatives, and a useful reference for those who want to extend it

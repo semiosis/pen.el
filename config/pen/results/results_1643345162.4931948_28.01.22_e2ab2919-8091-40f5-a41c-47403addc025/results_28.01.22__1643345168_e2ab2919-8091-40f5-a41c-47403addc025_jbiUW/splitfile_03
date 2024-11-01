@@ -1,0 +1,12 @@
+"async/alt!" is a macro that allows you to write asynchronous code
+in a blocking fashion.
+
+The first argument is a channel. The rest of the arguments are
+transducers. A transducer is a function that accepts a sequence and
+returns a sequence.
+
+Example:
+(async/alt! ch (take 3 (repeat 5)) (map inc))
+
+The above code will put the first 3 elements of the infinite
+sequence (repeat 5) into ch. It will

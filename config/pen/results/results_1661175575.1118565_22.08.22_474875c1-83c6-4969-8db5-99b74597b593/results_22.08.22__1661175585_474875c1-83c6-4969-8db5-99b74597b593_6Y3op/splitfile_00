@@ -1,0 +1,2 @@
+"laddr" is a function that takes a socket as its argument and returns a
+list of local addresses that the socket is bound to.

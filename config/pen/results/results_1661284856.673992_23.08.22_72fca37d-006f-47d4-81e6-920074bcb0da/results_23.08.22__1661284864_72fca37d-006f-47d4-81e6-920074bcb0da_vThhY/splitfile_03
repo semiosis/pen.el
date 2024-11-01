@@ -1,0 +1,24 @@
+.
+
+
+[source](https://github.com/a-musing-moose/aeson-type-classes/blob/master/share/SimpleMonadExamples.hs)
+
+                                                     Prelude
+import Control.Applicative ( liftA2, pure )
+import Control.Monad ( ap )
+import Data.Function ( on )
+
+                                                    Example 1: Arbitrary
+{--
+@Define a monad for arbitrary data type `A`.
+@The `pure` constructor lifts any value of type `A` into our monad; and the
+@`(<*>)` operator implements *application*.
+@Note that there is no need for the reader to understand this simple monad,
+@just know that it exists...
+--}
+data A = A String deriving Show
+
+                                                       pure :: A -> AMonad a 
+pure a = A a
+
+                                                      (<*

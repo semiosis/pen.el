@@ -1,0 +1,6 @@
+
+When people first start reading Haskell code they often think the language is hard to understand because of the unfamiliarity with the type system. However, Haskell is actually considered an easy programming language to learn due to the rich type system.
+
+Types are everywhere in Haskell. Types are used to communicate what the programmer means for the program to do. For example, if the developer is trying to define a function that takes an integer and outputs an integer, the type signature of the function would be "Int -> Int". Type inference does most of the work in recognizing what types are needed for a given function. Type inference is the process of using the input and output types of a function definition to determine the types of the function's parameters. Often types are inferred by analyzing the function's definition, the definition of the function's parameters, and the function's context.
+
+The type system is incredibly powerful, and allows for writing code that will never compile into an error. This means that the programmer never has to worry

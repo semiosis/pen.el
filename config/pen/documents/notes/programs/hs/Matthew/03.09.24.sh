@@ -1,0 +1,7 @@
+cd /root/notes;  "Matthew" "7:21-23" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "7:21-23" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "7:24-28" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "7:15-20" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Matthew" "7:15-20" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Matthew" "7:1-15" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Matthew" "7:1-20" "#" "<==" "zsh"

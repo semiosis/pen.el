@@ -1,0 +1,10 @@
+Cyc
+    A long-term artificial intelligence
+    project that aims to assemble a
+    comprehensive ontology and KB that spans
+    the basic concepts and rules about how the
+    world works.
+    
+    Hoping to capture common sense knowledge,
+    Cyc focuses on implicit knowledge that
+    other AI platforms may take for granted.

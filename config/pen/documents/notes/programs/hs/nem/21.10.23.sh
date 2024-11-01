@@ -1,0 +1,5 @@
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "John 3:7" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "John 1:10" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Matthew 27:1" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Matthew 27:8" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Matthew 27:17" "#" "<==" "bash"

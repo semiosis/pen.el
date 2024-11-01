@@ -1,0 +1,27 @@
+
+    Facts are things that are inferred from
+    the remote system's current state or nature.
+
+    They are not declared things, but rather
+    are discovered by Ansible during execution.
+
+Playbook
+    A playbook is a script written in YAML that
+    defines a sequence of tasks to execute on a
+    remote system.
+
+    Playbooks are composed of a list of plays,
+    each of which is composed of a list of tasks.
+
+    The playbook can be run by executing it with
+    the ansible-playbook command.
+
+    The playbook can also be run by using the
+    ansible command and specifying the -i option,
+    which specifies inventory and -m option, which
+    specifies module and module_arguments.
+
+        ansible <host-pattern> -i inventory_file -m <module> \
+        -a '<module_arguments>'
+
+        # Example

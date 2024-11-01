@@ -1,0 +1,1 @@
+aws audit get-role-policy --role-name arn:aws:iam::123456789012:role/RoleName --policy-name PolicyName

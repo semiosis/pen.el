@@ -1,0 +1,9 @@
+[[String]] -> IO ()
+tabularise rows = do
+  let maxWidths = maximumBy (compare `on` length) $ map width rows
+  mapM_ (\row -> putStrLn $ concat ("\t" <> concat $ map (\(w, s) -> (" " * (w - length s)) <> s) row)) $ zipWith pad maxWidths rows
+  where pad :: Int -> String -> String
+        pad n s = s ++ replicate n ' '
+        width :: [String] -> Int
+        width = maximum . map length
+EOD

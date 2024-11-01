@@ -1,0 +1,8 @@
+1. This is a function that takes in a map of arguments
+2. It then checks to see if the path is "/"
+3. If it is, it returns the list of directories
+4. If not, it checks to see if the path ends with a "."
+5. If it does, it returns the list of directories
+6. If not, it checks to see if the path is "/"
+7. If it is, it returns the list of files
+

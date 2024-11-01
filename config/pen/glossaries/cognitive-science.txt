@@ -1,0 +1,24 @@
+Winograd schema
+Winograd schema challenge
+WSC
+    A test of machine intelligence proposed by
+    Hector Levesque, a computer scientist at
+    the University of Toronto.
+    
+    Designed to be an improvement on the
+    Turing test, it is a multiple-choice test
+    that employs questions of a very specific
+    structure: they are instances of what are
+    called Winograd schemas, named after Terry
+    Winograd, professor of CS at Stanford
+    University.
+    
+    On the surface, Winograd schema questions
+    simply require the resolution of anaphora:
+    the machine must identify the antecedent
+    of an ambiguous pronoun in a statement.
+    
+    This makes it a task of NLP, but Levesque
+    argues that for Winograd schemas, the task
+    requires the use of knowledge and
+    commonsense reasoning.

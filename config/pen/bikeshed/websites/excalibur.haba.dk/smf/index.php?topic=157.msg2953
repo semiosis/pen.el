@@ -1,0 +1,1087 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Rank the top 10" />
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum" />
+	<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/script.js?rc2"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1";
+		var smf_images_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images";
+		var smf_scripturl = "http://excalibur.haba.dk/smf/index.php";
+	// ]]></script>
+	<title>Rank the top 10</title>
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/style.css?rc2" />
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/default/print.css?rc2" media="print" />
+	<link rel="help" href="http://excalibur.haba.dk/smf/index.php?action=help" target="_blank" />
+	<link rel="search" href="http://excalibur.haba.dk/smf/index.php?action=search" />
+	<link rel="contents" href="http://excalibur.haba.dk/smf/index.php" />
+	<link rel="alternate" type="application/rss+xml" title=" - RSS" href="http://excalibur.haba.dk/smf/index.php?type=rss;action=.xml" />
+	<link rel="prev" href="http://excalibur.haba.dk/smf/index.php?topic=157.0;prev_next=prev" />
+	<link rel="next" href="http://excalibur.haba.dk/smf/index.php?topic=157.0;prev_next=next" />
+	<link rel="index" href="http://excalibur.haba.dk/smf/index.php?board=6.0" />
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+</head>
+<body>
+	<div id="headerarea" style="padding: 12px 30px 4px 30px;">
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="position: relative;">
+			<tr>
+				<td colspan="2" valign="bottom" style="padding: 5px; white-space: nowrap;">
+					<span style="font-family: Georgia, sans-serif; font-size: xx-large;"></span>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top">
+						<table width="99%" cellspacing="0" cellpadding="5" class="tborder"><tr>
+						<td class="titlebg" width="100%">User Info</td></tr><tr><td width="100%" valign="top" class="windowbg2" style="font-family: verdana, arial, sans-serif; font-size: x-small;">
+							Welcome, <b>Guest</b>. Please <a href="http://excalibur.haba.dk/smf/index.php?action=login">login</a> or <a href="http://excalibur.haba.dk/smf/index.php?action=register">register</a>.<br />
+							May 26, 2008, 12:49:27 PM<br />
+
+							<form action="http://excalibur.haba.dk/smf/index.php?action=login2" method="post" style="margin: 3px 1ex 1px 0; text-align:right;">
+								<input type="text" name="user" size="10" /> <input type="password" name="passwrd" size="10" />
+								<select name="cookielength">
+									<option value="60">1 Hour</option>
+									<option value="1440">1 Day</option>
+									<option value="10080">1 Week</option>
+									<option value="302400">1 Month</option>
+									<option value="-1" selected="selected">Forever</option>
+								</select>
+								<input type="submit" value="Login" /><br />
+								Login with username, password and session length
+							</form>
+						</td></tr></table>
+
+					<form action="http://excalibur.haba.dk/smf/index.php?action=search2" method="post" style="margin: 0; margin-top: 7px;">
+						<b>Search: </b><input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 8ex;" />&nbsp;
+						<a href="http://excalibur.haba.dk/smf/index.php?action=search;advanced">Advanced search</a>
+						<input type="hidden" name="advanced" value="0" />
+						<input type="hidden" name="brd[6]" value="6" />
+					</form>
+
+				</td>
+				<td width="262" style="padding-left: 5px;" valign="top">
+					<br /><table width="99%" cellspacing="0" cellpadding="5" class="tborder">
+					<tr>
+					<td class="titlebg" width="100%">Key Stats</td>
+					</tr>
+					<tr>
+					<td class="windowbg2" width="100%" style="font-size: x-small"><b>3016</b> Posts in <b>228</b> Topics by <b>110</b> Members<br />
+							Latest Member: <b> <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=123">Jack Sparrow</a></b>
+						</td></tr></table>
+				</td>
+			</tr>
+		</table>
+				<a href="http://excalibur.haba.dk/smf/index.php"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/home.gif" alt="Home" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=help"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/help.gif" alt="Help" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=search"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/search.gif" alt="Search" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=login"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/login.gif" alt="Login" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=register"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/register.gif" alt="Register" style="margin: 2px 0;" border="0" /></a>
+	</div>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td id="bodyarea" style="padding: 1ex 20px 2ex 20px;">
+<a name="top"></a>
+<a name="msg1866"></a>
+<table width="100%" cellpadding="3" cellspacing="0">
+	<tr>
+		<td valign="bottom"><span class="nav" style="font-size: smaller;"><b><a href="http://excalibur.haba.dk/smf/index.php" class="nav"></a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php#2" class="nav">Age of Empires 2 - THe Conquerors Forum</a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php?board=6.0" class="nav">Rm-1vs1 discussion</a></b> (Moderators: <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="Board Moderator">Leonidas</a>, <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7" title="Board Moderator">exc_imac</a>) &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php?topic=157.0" class="nav">Rank the top 10</a></b></span></td>
+		<td valign="bottom" align="right" class="smalltext">
+			<span class="nav"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.0;prev_next=prev#new">&laquo; previous</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=157.0;prev_next=next#new">next &raquo;</a></span>
+		</td>
+	</tr>
+</table>
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="margin-bottom: 1ex;">
+	<tr>
+		<td class="catbg" width="100%" height="35">
+			<table cellpadding="3" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<b>Pages:</b> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?topic=157.0">1</a> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?topic=157.15">2</a> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?topic=157.30">3</a> [<b>4</b>] 
+					</td>
+					<td align="right" style="font-size: smaller;"><a href="http://excalibur.haba.dk/smf/index.php?action=printpage;topic=157.0" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/print.gif" alt="Print" border="0" /></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="border-bottom: 0;">
+	<tr class="titlebg">
+		<td valign="middle" width="15%" style="padding-left: 6px;">
+			<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post.gif" alt="" align="middle" /> Author
+		</td>
+		<td valign="middle" width="85%" style="padding-left: 6px;" id="top_subject">
+			Topic: Rank the top 10 &nbsp;(Read 971 times)
+		</td>
+	</tr>
+</table>
+<form action="http://excalibur.haba.dk/smf/index.php?action=quickmod2;topic=157.45" method="post" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return in_edit_mode == 1 ? modify_save('ab41a8f3460500efe60603a0c87caf41') : confirm('Are you sure you want to do this?');">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="bordercolor">
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a></b>
+							<div class="smalltext">
+								Excalibur Clan<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><br />
+								Posts: 519<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://i60.photobucket.com/albums/h35/thaitruong05/opo4s8.gif" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								Dancing 4 My Lover<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1866#msg1866"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1866">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1866#msg1866">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #45 on:</b> April 11, 2007, 05:16:49 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">awww Taa stand up for his girlfriend. lol Taa well im not in top &quot;10&quot; so I can&#039;t beat u in 1 on 1 <img src="http://excalibur.haba.dk/smf/Smileys/default/tongue.gif" alt="Tongue" border="0" /> lol u mr cool.&nbsp; and Taa it not because I can&#039;t beat u, then I aim at trapt.&nbsp; It just because u so pathetic to talk to, I don&#039;t want waste my time on hard head like u.<br /><br />and rusher, i know it not hard to beat me. Im a easy guy to beat.&nbsp; what ur point, that does not change the fact ur nose is brown.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1866">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="signature">one duck, two duck, red duck, green duck</div>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1948"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=69" title="View the profile of malicious">malicious</a></b>
+							<div class="smalltext">
+								Newbie<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 2<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=69"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1948#msg1948"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1948">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1948#msg1948">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #46 on:</b> April 16, 2007, 05:38:57 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">Hey, wtf!!!!<br /><br />We all know that TAA is a talker, but we love him anyway. It&#039;s like a family, there&#039;s always those that we wish weren&#039;t a member, unfortunately we have to deal with them, and we like it. Nothing in the past matters. Top 10 is always changing. But what we have to go on is the fact that the top ten at the current time, are the elite. Just because you were there once, doesn&#039;t mean you are there now. Leo, when will you be there? Get your facts straight before you make stupid remarks. I was tops in rm and dm at one time. That was when I spent 12-24 hours per day playing this game. i&#039;ll never be there again..and that&#039;s ok with me. Have fun with the time you have. Kill as many noobs as you can, and hope to last as long as you can vs the great ones of the time. Fuck it!! Live it. Love it. BTW, I&#039;m drunk, and my post is probably long past where the current discussion is. Uh....asdf</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1948">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1949"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><br />
+								Posts: 566<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=4;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1949#msg1949"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1949">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1949#msg1949">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #47 on:</b> April 16, 2007, 05:46:39 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">u right mal.&nbsp; it takes effort to be that good, and now i myself am just fuckin around.&nbsp; mal, remember last summer, i actually got so good at 1v1, when i smurfed u thought i was some pro from the zone?&nbsp; well i suck now coz i dont play it enough... but i have more fun1!!!<br /><br />and we are like a family, we all love TAA and Rusher and homie, even if we make fun of them a bit; and they have the humor to make fun of us, back!!!</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1949">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1950"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=11" title="View the profile of Chino">Chino</a></b>
+							<div class="smalltext">
+								Newbie<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 47<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=6;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=11"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1950#msg1950"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1950">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1950#msg1950">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #48 on:</b> April 16, 2007, 05:57:44 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post"><div class="quoteheader"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1948#msg1948">Quote from: malicious on April 16, 2007, 05:38:57 AM</a></div><div class="quote">I was tops in rm and dm at one time. That was when I spent 12-24 hours per day playing this game. i&#039;ll never be there again..and that&#039;s ok with me.<br /></div><br />exactly what happend to me <img src="http://excalibur.haba.dk/smf/Smileys/default/sad.gif" alt="Sad" border="0" /> heh.. except that im NOT ok with it <img src="http://excalibur.haba.dk/smf/Smileys/default/cheesy.gif" alt="Cheesy" border="0" />.. that&#039;s why Im still trying to play:-\ lol <img src="http://excalibur.haba.dk/smf/Smileys/default/grin.gif" alt="Grin" border="0" /><br />and the fact that the time that I was really getting very good lasted so lil is why it&#039;s so frustating but oh well Im starting to accept the fact that Im not gonna be playing that much again.. much less getting good again heh</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1950">
+									&#171; <i>Last Edit: April 16, 2007, 06:01:06 AM by Chino</i> &#187;
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1951"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><br />
+								Posts: 566<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=4;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1951#msg1951"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1951">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1951#msg1951">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #49 on:</b> April 16, 2007, 07:17:16 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">yeh chino it sux.&nbsp; you were one of mb 10 top players who were really good at 1v1... o well, we may not even have gr anymore, let alone an aoe community...</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1951">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1954"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38" title="View the profile of The_HOOD">The_HOOD</a></b>
+							<div class="smalltext">
+								Jr. Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 67<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1954#msg1954"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1954">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1954#msg1954">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #50 on:</b> April 16, 2007, 02:22:17 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">You do realise how stupid you look thai?? Ur trying to flame people over a game.. And your calling taa and rusher brown nosers.... dude thats just not cool. If your gonna say that to them say it to there face and then watch them smash ur !@#$$ head in.<br /><br />Your saying shit about someone behind a computer, !@#$ ur tough.<br /><br />TAA is one of the greats and so is Rusher. <br /><br />Regards, hood<br /><br />ps: dont try and flame me now thai, im rlly not in the mood. thx</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1954">
+									&#171; <i>Last Edit: April 16, 2007, 04:10:30 PM by Leonidas</i> &#187;
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1958"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a></b>
+							<div class="smalltext">
+								Excalibur Clan<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><br />
+								Posts: 519<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://i60.photobucket.com/albums/h35/thaitruong05/opo4s8.gif" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								Dancing 4 My Lover<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1958#msg1958"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1958">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1958#msg1958">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #51 on:</b> April 16, 2007, 04:47:34 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">hood u stupid then u sound (cuz it a forum) lol ! It just some stupid game and make it more fun anyway I don&#039;t give a fuck that u in the mood or not.&nbsp; If I feel like say something, I will say it.&nbsp; Think that I care?&nbsp; <br /><br />I have not play much with u before or see your post in the forum, so I got nothing to say about u.&nbsp; <br /><br />I don&#039;t make up stuff to flame people.&nbsp; </div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1958">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="signature">one duck, two duck, red duck, green duck</div>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1961"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><br />
+								Posts: 566<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=4;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1961#msg1961"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1961">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1961#msg1961">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #52 on:</b> April 16, 2007, 06:08:49 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">All i know is that Thai was the nicest guy when i met him on GR, th en a bunch of people started showing off with words, saying they were so good when in fact they should be showing it with winning.&nbsp; So i have no problem with Thai putting them in their place.&nbsp; <br /><br />Hood, TAKE IT OUTSIDE rofl... play thai and see what happens.<br /><br />IMO, i dont think thai las lost a single match vs and constellation of H, if thai was on the team...</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1961">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1962"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=53" title="View the profile of Gambit">Gambit</a></b>
+							<div class="smalltext">
+								Jr. Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 71<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://www.hellenic-art.com/armour/459y.jpg" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=53"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1962#msg1962"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1962">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1962#msg1962">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #53 on:</b> April 16, 2007, 10:42:33 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">don&#039;t think Thai is a Light weight Hood, he is better than you <img src="http://excalibur.haba.dk/smf/Smileys/default/shocked.gif" alt="Shocked" border="0" />, and has proven himself to be a very strong player.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1962">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="signature"><img src="http://i15.photobucket.com/albums/a351/LinkMaster231/gambsig.jpg" alt="" border="0" /></div>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1967"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38" title="View the profile of The_HOOD">The_HOOD</a></b>
+							<div class="smalltext">
+								Jr. Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 67<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1967#msg1967"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1967">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1967#msg1967">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #54 on:</b> April 17, 2007, 01:27:55 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">Ok for starters i have no problem with thai, im just sticking up for my friends. Just because trapt is sticking up for taa because ppl give him alot of shit does not make him gay.<br /><br />Gambit i dotn really give a fuck if he is better than me.... Hey if i actually start playing and i get to beat him, im not gona go and rub it in his face. Its a game and i have fun playing it.<br /><br />So really thai i have nothign against u, i like u when u came to gr and i still do like u, i just dotn appreciate u saying stuff about my pals.<br /><br />thx</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1967">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1969"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7" title="View the profile of exc_imac">exc_imac</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><br />
+								Posts: 570<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=27;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								Wololo<br />
+								<br />
+								
+								<a href="http://members.msn.com/mgalvezcendegui@hotmail.com" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/msntalk.gif" alt="mgalvezcendegui@hotmail.com" border="0" /></a>
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1969#msg1969"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1969">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1969#msg1969">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #55 on:</b> April 17, 2007, 02:16:37 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">then you should say ur friends to give not a shit to us in place to come here to post bout this (since it is the best decision u take for urself.. shouldnt it be the best for them too?), but as they already ignoring this thread, then what are you doing here?.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1969">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="signature">There exists 10 kind of ppl, 1º the ppl who understands the binary code and 10º who doesnt.</div>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1971"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a></b>
+							<div class="smalltext">
+								Excalibur Clan<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><br />
+								Posts: 519<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://i60.photobucket.com/albums/h35/thaitruong05/opo4s8.gif" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								Dancing 4 My Lover<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1971#msg1971"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1971">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1971#msg1971">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #56 on:</b> April 17, 2007, 03:24:45 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">lol you guy funny.&nbsp; it a FORUM, it to discuss everything and anything.&nbsp; People give OPINION AND FACT.&nbsp; If that not make u happy or something.&nbsp; Then i don&#039;t think FORUM is a good thing for u.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1971">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="signature">one duck, two duck, red duck, green duck</div>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1973"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38" title="View the profile of The_HOOD">The_HOOD</a></b>
+							<div class="smalltext">
+								Jr. Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 67<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1973#msg1973"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1973">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1973#msg1973">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #57 on:</b> April 17, 2007, 03:57:10 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">hehehe, good point imac i couldnt be bother anymore <img src="http://excalibur.haba.dk/smf/Smileys/default/smiley.gif" alt="Smiley" border="0" /><br /><br />thai i like ur avatar its cool.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1973">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1974"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a></b>
+							<div class="smalltext">
+								Excalibur Clan<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><br />
+								Posts: 519<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://i60.photobucket.com/albums/h35/thaitruong05/opo4s8.gif" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								Dancing 4 My Lover<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1974#msg1974"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1974">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1974#msg1974">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #58 on:</b> April 17, 2007, 04:21:21 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">I love duck lol I wish I have one for a pet <img src="http://excalibur.haba.dk/smf/Smileys/default/tongue.gif" alt="Tongue" border="0" /> but it pop everywhere so no more me!!!</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1974">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="signature">one duck, two duck, red duck, green duck</div>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg1979"></a><a name="new"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7" title="View the profile of exc_imac">exc_imac</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/starmod.gif" alt="*" border="0" /><br />
+								Posts: 570<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=27;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								Wololo<br />
+								<br />
+								
+								<a href="http://members.msn.com/mgalvezcendegui@hotmail.com" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/msntalk.gif" alt="mgalvezcendegui@hotmail.com" border="0" /></a>
+								
+								<br />
+								<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1979#msg1979"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_1979">
+										<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg1979#msg1979">Re: Rank the top 10</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #59 on:</b> April 17, 2007, 05:09:59 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">yes, pretty funny avatar !&nbsp; <img src="http://excalibur.haba.dk/smf/Smileys/default/cheesy.gif" alt="Cheesy" border="0" />, btw Thai also the idea is to beat the other in the discusion and exterminate theyr argues&nbsp; <img src="http://excalibur.haba.dk/smf/Smileys/default/smiley.gif" alt="Smiley" border="0" />.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_1979">
+									&#171; <i>Last Edit: April 17, 2007, 05:21:30 AM by exc_imac</i> &#187;
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="signature">There exists 10 kind of ppl, 1º the ppl who understands the binary code and 10º who doesnt.</div>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 0 0 1px 0;"></td></tr>
+</table>
+<a name="lastPost"></a>
+
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="margin-top: 1ex;">
+	<tr>
+		<td class="catbg" width="100%" height="30">
+			<table cellpadding="3" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<a name="bot"></a><b>Pages:</b> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?topic=157.0">1</a> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?topic=157.15">2</a> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?topic=157.30">3</a> [<b>4</b>] 
+					</td>
+					<td align="right" style="font-size: smaller;"><a href="http://excalibur.haba.dk/smf/index.php?action=printpage;topic=157.0" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/print.gif" alt="Print" border="0" /></a>&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/xml_topic.js"></script>
+<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+	quickReplyCollapsed = true;
+
+	smf_topic = 157;
+	smf_start = 45;
+	smf_show_modify = 1;
+
+	// On quick modify, this is what the body will look like.
+	var smf_template_body_edit = '<div id="error_box" style="padding: 4px; color: red;"></div><textarea class="editor" name="message" rows="12" style="width: 94%; margin-bottom: 10px;">%body%</textarea><br /><input type="hidden" name="sc" value="ab41a8f3460500efe60603a0c87caf41" /><input type="hidden" name="topic" value="157" /><input type="hidden" name="msg" value="%msg_id%" /><div style="text-align: center;"><input type="submit" name="post" value="Save" onclick="return modify_save(\'ab41a8f3460500efe60603a0c87caf41\');" accesskey="s" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" onclick="return modify_cancel();" /></div>';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '<input type="text" name="subject" value="%subject%" size="60" style="width: 99%;"  maxlength="80" />';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '<a href="http://excalibur.haba.dk/smf/index.php?topic=157.msg%msg_id%#msg%msg_id%">%subject%</a>';
+	var smf_template_top_subject = "Topic: %subject% &nbsp;(Read 971 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// ]]></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top" align="right" class="smalltext"> <span class="nav"> <a href="http://excalibur.haba.dk/smf/index.php?topic=157.0;prev_next=prev#new">&laquo; previous</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=157.0;prev_next=next#new">next &raquo;</a></span></td>
+	</tr>
+</table>
+<div style="padding-top: 4px; padding-bottom: 4px;"></div>
+</form>
+<div align="right" style="margin-bottom: 1ex;">
+	<form action="http://excalibur.haba.dk/smf/index.php" method="get">
+		<span class="smalltext">Jump to:</span>
+		<select name="jumpto" id="jumpto" onchange="if (this.selectedIndex > 0 &amp;&amp; this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			<option value="">Please select a destination:</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#1">General</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=1.0"> => The pub / general discussion</option>
+			<option value="?board=12.0"> => Clantalk</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#2">Age of Empires 2 - THe Conquerors Forum</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=11.0"> => Age of Empires 2</option>
+			<option value="?board=6.0" selected="selected"> => Rm-1vs1 discussion</option>
+			<option value="?board=5.0"> => Rm-teamgame discussion</option>
+			<option value="?board=8.0"> => Rec. Games Discussion</option>
+			<option value="?board=4.0"> => Memorable games</option>
+			<option value="?board=2.0"> => Deathmatch discussion</option>
+		</select>&nbsp;
+		<input type="button" value="go" onclick="if (this.form.jumpto.options[this.form.jumpto.selectedIndex].value) window.location.href = 'http://excalibur.haba.dk/smf/index.php' + this.form.jumpto.options[this.form.jumpto.selectedIndex].value;" />
+	</form>
+</div>
+<br /></td>
+	</tr></table>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			function smfFooterHighlight(element, value)
+			{
+				element.src = smf_images_url + "/" + (value ? "h_" : "") + element.id + ".gif";
+			}
+		// ]]></script>
+		<table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1 RC3</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF &copy; 2001-2006, Lewis Media</a>
+		</span><br /><font size="1">Theme by Nesianstyles | Buttons by Andrea</font>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>

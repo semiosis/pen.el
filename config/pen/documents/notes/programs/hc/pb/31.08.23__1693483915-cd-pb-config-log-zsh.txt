@@ -1,0 +1,2 @@
+cd ; pb config.log # "<==" zsh
+/log

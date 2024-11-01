@@ -1,0 +1,516 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 5920
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 07 Jul 2024 11:58:47 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"668a82f7-4ef8"
+expires: Tue, 09 Jul 2024 10:27:39 GMT
+Cache-Control: max-age=600
+x-proxy-cache: HIT
+X-GitHub-Request-Id: 83AF:1FC5B3:3ADDD1:426B78:668D0F1D
+Accept-Ranges: bytes
+Date: Wed, 10 Jul 2024 05:44:48 GMT
+Via: 1.1 varnish
+Age: 2
+X-Served-By: cache-akl10325-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1720590288.234427,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 3edbcd214dbd6e3e64e9c66e53dc88384957fbb0
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-04-05 Fri 04:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Inline previous result and why you should edebug</title>
+<meta name="author" content="Álvaro Ramírez" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style type='text/css'>
+         /* https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile */
+
+         body {
+           font-size: 100%;
+           max-width: 88ch;
+           padding: 2ch;
+           margin: auto;
+           background-color: white;
+         }
+
+         .figure {
+           padding: 0;
+         }
+
+         /* Table left border */
+         .left {
+           border-left: 1px solid #ccc;
+         }
+
+         .author {
+           font-size: 1em;
+           text-align: right;
+           color: rgb(51, 51, 51);
+           font-weight: bold;
+           font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+           line-height: 1.15em;
+         }
+
+         .title {
+           display: none; /* Title already included in header. Hide. */
+           color: rgb(51, 51, 51);
+           font-size: 1em;
+           text-align: right;
+         }
+
+         .org-src-container {
+           background-color: #fbfbfb;
+           border-radius: 10px;
+         }
+
+         #contact-header {
+           width: 100%;
+         }
+
+         #contact-right {
+           text-align: right;
+         }
+
+         #contact-left {
+           text-align: left;
+         }
+
+         #content {
+         }
+
+         blockquote {
+           overflow: auto;
+         }
+
+         b, strong {
+          font-weight: bold;
+         }
+
+         pre {
+           border: none;
+           box-shadow: none;
+         }
+
+         pre.src {
+           overflow: auto;
+         }
+
+         /* Hide sh/bash/Emacs Lisp overlay */
+         pre.src:hover:before {
+           display: none;
+         }
+
+         p, .org-ol, .org-ul, .org-left {
+           color: #3A4145;
+           font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+               'Lucida Sans', Geneva, Verdana, sans-serif;
+           font-size: 1em;
+           font-style: normal;
+           font-weight: 300;
+           letter-spacing: 0.01rem;
+           line-height: 1.5em;
+           text-rendering: optimizelegibility;
+         }
+
+         h1, h2, h3, h4, h5, #preamble {
+           color: #2E2E2E;
+           font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+           line-height: 1.15em;
+         }
+
+         h1 {
+           font-size: 2em;
+         }
+
+         h2 {
+           font-size: 1.6em;
+           letter-spacing: -0.02em;
+           margin-bottom: 0px;
+           text-indent: -3px;
+         }
+
+         h3 {
+           font-size: 1.2em;
+         }
+
+         #preamble {
+           text-align: right;
+         }
+
+         .timestamp {
+          color: #a9a9a9;
+          display: block;
+          font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+              'Lucida Sans', Geneva, Verdana, sans-serif;
+          font-size: 0.5em;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1em;
+         }
+
+         .modified-timestamp {
+           color: #D3d3d3;
+           font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+               'Lucida Sans', Geneva, Verdana, sans-serif;
+           font-size: 0.8em;
+           text-rendering: optimizelegibility;
+         }
+
+         a {
+          color: #4183C4;
+          text-decoration: none;
+         }
+
+         a:visited {
+          background-color: #4183C4;
+         }
+
+         .outline-2 {
+         }
+
+         .example {
+           white-space: pre-wrap;
+           background-color: #f8ffe1;
+         }
+       </style>
+
+       <!-- Start of Goat Code -->
+       <script data-goatcounter="https://xenodium.goatcounter.com/count"
+               async src="//gc.zgo.at/count.js">
+       </script>
+       <!-- End of Goat Code -->
+</head>
+<body>
+<div id="preamble" class="status">
+
+<table id='contact-header'>
+  <tr>
+    <td id='contact-left'>
+      <a style='color:rgb(51, 51, 51);' href='/'>index</a>
+      <a style='color:rgb(51, 51, 51);' href='/rss.xml'>rss</a>
+    </td>
+    <td id='contact-right'>
+      <a rel='me' href='https://indieweb.social/@xenodium'>mastodon</a>
+      <a href='https://twitter.com/xenodium'>twitter</a>
+      <a href='http://github.com/xenodium'>github</a>
+      <a href='http://uk.linkedin.com/in/xenodium'>linkedin</a>
+      <a href='mailto:me@xenodium.com'>email</a>
+    </td>
+  </tr>
+  <tr>
+    <td style='text-align: left;'>
+      <a href='https://plainorg.com'>
+        <img style='padding-top: 5px; max-width: 4ch;' src='https://plainorg.com/favicon.ico'/>
+      </a>
+      <a href='https://apps.apple.com/app/id1671420139'>
+        <img style='padding-top: 5px; max-width: 4ch;' src='../images/scratch-a-minimal-scratch-area/scratch_icon.png'/>
+      </a>
+      <a href='https://flathabits.com'>
+        <img style='padding-top: 5px; max-width: 4ch;' src='https://flathabits.com/favicon.ico'/>
+      </a>
+      <a href='https://apps.apple.com/app/id6480411697'>
+        <img style='padding-top: 5px; max-width: 4ch;' src='../images/fresh-eyes-now-on-the-app-store/fresh_eyes_icon.png'/>
+      </a>
+    </td>
+    <td style='padding-top:10px;'>
+      <span class='author'>Álvaro Ramírez</span><br/>
+      <a style='color:rgb(51, 51, 51);' href='https://github.com/sponsors/xenodium'>sponsor</a>
+    </td>
+  </tr>
+</table>
+</div>
+<div id="content" class="content">
+<h1 class="title">Álvaro Ramírez</h1>
+<div id="outline-container-inline-previous-result-and-why-you-should-edebug" class="outline-2">
+<h2 id="inline-previous-result-and-why-you-should-edebug"><span class="timestamp-wrapper"><span class="timestamp">05 September 2023</span></span> Inline previous result and why you should edebug</h2>
+<div class="outline-text-2" id="text-inline-previous-result-and-why-you-should-edebug">
+<p>
+Artur Malabarba's <a href="https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html">Debugging Elisp Part 1: Earn your independence</a> is nearly a decade old, yet it rings just as true today.
+</p>
+
+<p>
+Learning to Edebug really <i>"is the right decision for anyone who doesn't know how to Edebug."</i> Why, you may ask? He best puts it as <i>"running into errors is not only a consequence of tinkering with your editor, it is the only road to graduating in Emacs."</i>
+</p>
+
+<p>
+For me personally, it <i>earned me that independence</i> to bend Emacs my way. Don't like how something works? Pull up the debugger to help me understand how a package or function works. I've done this countless of times to bend things my way.
+</p>
+
+<p>
+Speaking of edebug, I had been meaning to tweak edebug's result display behaviour for quite some time. As you step through code, edbug prints the result of previous expressions to the minibuffer. This works well, but I couldn't help but feel like my eyes were constantly jumping between the code and the minibuffer at the bottom of the window.
+</p>
+
+
+<div id="orgdad7414" class="figure">
+<p><img src="../images/inline-previous-result-and-why-you-should-edebug/edebug-minibuffer.gif" alt="edebug-minibuffer.gif" width="70%" />
+</p>
+</div>
+
+<p>
+I wanted to minimize the eye jumping experience, so I figured I could likely bend things my way and print the result at point. How did I go about it? The same way I often do. Figure out what function is called for a given key binding via <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Key-Help.html">describe-key</a> or my favourite replacement helpful-key from <a href="https://github.com/Wilfred/helpful">helpful.el</a>. This led me to <code>edebug-next-mode</code> in <code>edebug.el</code>. At that point, I could have set a breakpoint in <code>edebug-next-mode</code> and eventually step into the relevant code, but hey we had a better clue. We knew that all output started with "Result:", so we could just search for that string in <code>edebug.el</code> instead. Jackpot! <code>edebug-compute-previous-result</code> and its adjacent <code>edebug-previous-result</code> are just the right functions:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span style="color: #a71d5d;">defun</span> <span style="color: #795da3;">edebug-compute-previous-result</span> (previous-value)
+  (<span style="color: #a71d5d;">if</span> edebug-unwrap-results
+      (<span style="color: #a71d5d;">setq</span> previous-value
+            (edebug-unwrap* previous-value)))
+  (<span style="color: #a71d5d;">setq</span> edebug-previous-result
+        (concat <span style="color: #183691;">"Result: "</span>
+                (edebug-safe-prin1-to-string previous-value)
+                (eval-expression-print-format previous-value))))
+
+(<span style="color: #a71d5d;">defun</span> <span style="color: #795da3;">edebug-previous-result</span> ()
+  <span style="color: #183691;">"Print the previous result."</span>
+  (<span style="color: #a71d5d;">interactive</span>)
+  (message <span style="color: #183691;">"%s"</span> edebug-previous-result))
+</pre>
+</div>
+
+<p>
+We can see that <code>edebug-previous-result</code> invokes <code>message</code> which is responsible for displaying the debugged expression's result in the minibuffer. Modifying this functions behaviour would be enough to achieve inline display, but I also want to remove "Result:" from the displayed message. Neither of these functions offer configurability, so we'll resort to advising both functions. That is, <a href="https://en.wikipedia.org/wiki/Monkey_patch">monkey patch</a> them (errm I know&#x2026; lovely).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span style="color: #a71d5d;">defun</span> <span style="color: #795da3;">adviced:edebug-compute-previous-result</span> (_ <span style="color: #0086b3;">&amp;rest</span> r)
+  <span style="color: #183691;">"Adviced `</span><span style="color: #0086b3;">edebug-compute-previous-result</span><span style="color: #183691;">'."</span>
+  (<span style="color: #a71d5d;">let</span> ((previous-value (nth 0 r)))
+    (<span style="color: #a71d5d;">if</span> edebug-unwrap-results
+        (<span style="color: #a71d5d;">setq</span> previous-value
+              (edebug-unwrap* previous-value)))
+    (<span style="color: #a71d5d;">setq</span> edebug-previous-result
+          (edebug-safe-prin1-to-string previous-value))))
+
+(advice-add #'edebug-compute-previous-result
+            <span style="color: #a71d5d;">:around</span>
+            #'adviced:edebug-compute-previous-result)
+</pre>
+</div>
+
+<p>
+<code>adviced:edebug-compute-previous-result</code> removes "Result:" in addition to dropping <code>(eval-expression-print-format previous-value)</code>, which I don't typically rely on.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span style="color: #a71d5d;">require</span> '<span style="color: #0086b3;">eros</span>)
+
+(<span style="color: #a71d5d;">defun</span> <span style="color: #795da3;">adviced:edebug-previous-result</span> (_ <span style="color: #0086b3;">&amp;rest</span> r)
+  <span style="color: #183691;">"Adviced `</span><span style="color: #0086b3;">edebug-previous-result</span><span style="color: #183691;">'."</span>
+  (eros--make-result-overlay edebug-previous-result
+    <span style="color: #a71d5d;">:where</span> (point)
+    <span style="color: #a71d5d;">:duration</span> eros-eval-result-duration))
+
+(advice-add #'edebug-previous-result
+            <span style="color: #a71d5d;">:around</span>
+            #'adviced:edebug-previous-result)
+</pre>
+</div>
+
+<p>
+<code>adviced:edebug-previous-result</code> is in charge of display via <code>message</code>, so all we need is some replacement. I initially played with <a href="https://github.com/auto-complete/popup-el">popup-tip</a> and that <a href="https://indieweb.social/@xenodium/111008598580447299">did the job just fine</a>, but <a href="https://emacs.ch/@fosskers">Colin</a> led me to a better path while <a href="https://emacs.ch/@fosskers/111009811997698187">pointing to Clojure and Common Lisp</a>. This reminded me of <a href="https://github.com/xiongtx/eros">eros: Evaluation Result OverlayS for Emacs Lisp</a>, which I already used. Swapping <code>message</code> for <code>eros--make-result-overlay</code> did the trick. Yes, this is a private function, but I can live with that. This code is only an <code>advice-remove</code> away from disabling, but hey look at those <i>inline results</i>!
+</p>
+
+
+<div id="org75f30dc" class="figure">
+<p><img src="../images/inline-previous-result-and-why-you-should-edebug/edebug-inline.gif" alt="edebug-inline.gif" width="90%" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

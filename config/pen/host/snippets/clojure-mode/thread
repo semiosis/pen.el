@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: thread
+# group: async
+# key: thread
+# --
+;; start 100 threads that use the resource
+(defn -main []
+(dotimes [x 100]
+(doto (Thread. (fn []
+(let [resource @resource]
+;; use the resource here ...
+))
+.start)))

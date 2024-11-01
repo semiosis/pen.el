@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: exit 1
+# key: e1
+# --
+os.Exit(1)

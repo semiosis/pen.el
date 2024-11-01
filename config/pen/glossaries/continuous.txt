@@ -1,0 +1,34 @@
+LGTM
+    https://lgtm.com/
+    
+    Provides "Continuous security analysis".
+
+    A code analysis platform for finding
+    zero-days and preventing critical
+    vulnerabilities
+
+CD4ML
+Continuous Delivery for Machine Learning
+    https://martinfowler.com/articles/cd4ml.html
+
+    Automating the end-to-end lifecycle of ML
+    applications.
+
+    ML applications are becoming popular in
+    our industry, however the process for
+    developing, deploying, and continuously
+    improving them is more complex compared to
+    more traditional software, such as a web
+    service or a mobile application.
+    
+    They are subject to change in three axis:
+    the code itself, the model, and the data.
+    
+    Their behaviour is often complex and hard
+    to predict, and they are harder to test,
+    harder to explain, and harder to improve.
+    
+    Continuous Delivery for ML (CD4ML) is the
+    discipline of bringing Continuous Delivery
+    principles and practices to ML
+    applications.

@@ -1,0 +1,20 @@
+task: "Generate wiki blurb for a person"
+tags: web chatbot
+include: "Generate wiki blurb/1"
+aliases:
+- generate-wiki-blurb-for-a-famous-person
+prompt-version: 2
+prompt: |+
+    <topic> - Wikipedia
+    
+    en.wikipedia.org › wiki › <topic>
+
+    Short bio of the person and character <topic>:
+    <:pp><topic> 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1.0
+# End of the first sentence. Sadly, if there is J.R.R. Tolkien, etc. this will break
+stop-sequences:
+- "."

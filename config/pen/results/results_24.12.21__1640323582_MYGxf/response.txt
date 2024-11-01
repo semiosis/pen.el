@@ -1,0 +1,14 @@
+/* Color scheme B: McDonalds restaurant */
+/* This combination captures the colours of McDonalds restaurant with its high contrast. */
+.b-primary {
+background-color: #FFCB01;
+}
+.b-secondary {
+background-color: #E90000;
+}
+.b-ternary {
+background-color: #FFD300;
+}
+.b-quaternary {
+background-color: #FF7F00;
+}

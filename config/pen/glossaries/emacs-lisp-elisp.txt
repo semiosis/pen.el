@@ -1,0 +1,116 @@
+lexical scoping
+dynamic scoping
+    Lexical scoping refers to when the
+    location of a function's definition
+    determines which variables you have access
+    to.
+    
+    On the other hand, dynamic scoping uses
+    the location of the function's invocation
+    to determine which variables are available
+
+subseq
+    ewwlinks +/"subseq" "http://newartisans.com/2016/01/pattern-matching-with-pcase/"
+
+    (equal (subseq value 0 3) '(1 2 (4 .5)))
+
+user-error
+    This is like error except that a user
+    error (or "pilot error") comes from an
+    incorrect manipulation by the user, not
+    from an actual problem.
+
+eieio
+EIEIO
+Enhanced Implementation of Emacs Interpreted Objects
+    Provides an Object Oriented layer for
+    Emacs Lisp, following the basic concepts
+    of the Common Lisp Object System (CLOS).
+    
+    It provides a framework for writing
+    object-oriented applications in Emacs.
+
+emacs lisp
+    s-trim-right
+
+memoize
+    memoize is a Lisp closure in ‘../manual-packages/emacs-memoize/memoize.el’.
+    
+    (memoize FUNC &optional TIMEOUT)
+    
+    Memoize FUNC: a closure, lambda, or symbol.
+
+    (memoize 'my-function)
+    (memoize-restore 'my-function)
+
+s-join
+  (s-join "|" (--map-indexed (todo it (eq it-index index)) entries)))
+
+search-forward-regexp
+    (search-forward-regexp "argument")
+
+    If I do C-c C-h C-k C-s, I can see that
+    the interactive function is
+    ~isearch-forward-regexp~ and the
+    non-interactive function is
+    ~search-forward-regexp~
+
+pop-to-buffer vs display-buffer
+    vim +/";; Don't call pop-to-buffer. Use display-buffer instead because it doesn't select" "$MYGIT/config/emacs/config/my-anaconda.el"
+
+closure
+    A function that also carries a record of
+    the lexical environment that existed when
+    the function was defined.
+    
+    When it is invoked, any lexical variable
+    references within its definition use the
+    retained lexical environment.
+
+-map-indexed
+    (-map-indexed FN LIST)
+
+    Like map, but provides the index (as well
+    as the element) to the lambda.
+
+    Return a new list consisting of the result
+    of (FN index item) for each item in LIST.
+
+    In the anaphoric form --map-indexed, the
+    index is exposed as symbol it-index.
+
+window-scroll-functions
+    Window scroll hook.
+
+ert
+Emacs Lisp Regression Testing
+    v +/";;; ert.el --- Emacs Lisp Regression Testing" "$EMACSD/packages27/ert-runner-20180831.1145/ert-compat.el"
+
+    v +/"(ert-deftest dm-test-coalesce-hash ()" "$MYGIT/savannah/dungeon/src/dm-util-tests--coalesce-hash.el"
+
+defvar-local
+    Interestingly, defvar-local does not come
+    into effect until run, but I guess defset-
+    local would, because it has a set.
+
+posframe
+    Posframe only works in GUI mode.
+
+pcase
+    http://newartisans.com/2016/01/pattern-matching-with-pcase/
+
+    (pcase value 
+      (`(1 2 (4 . 5) ,(pred stringp)) 
+        (message "It matched!")))
+
+    pred is a form belonging to pcase.
+    It allows you to make an assertion of the
+    value in that place.
+
+pcase-let
+    http://newartisans.com/2016/01/pattern-matching-with-pcase/
+
+    (pcase-let ((`(1 2 ,foo) value1) 
+                (`(3 4 ,bar) value2)) 
+      (message "value1 is a list of (1 2 %s); value2 ends with %s" 
+               foo bar)) 

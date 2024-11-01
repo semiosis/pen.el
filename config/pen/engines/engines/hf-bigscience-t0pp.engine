@@ -1,0 +1,44 @@
+# https://api-inference.huggingface.co/docs/python/html/quicktour.html#using-large-models-10-go
+engine-title: bigscience T0pp
+include: HuggingFace
+engine-notes:
+- It focuses on the start of the prompt
+- Via the HF inference API, it's deterministic, currently
+- |-
+  Prompts such as pf-very-witty-pick-up-lines-
+  for-a-topic/1 appear to work structurally,
+  but it picks out pickup lines from the
+  prompt instead of invent them.
+engine-doc: |+
+    T0* is a series of encoder-decoder models
+    trained on a large set of different tasks
+    specified in NL prompts. We convert
+    numerous English supervised datasets into
+    prompts, each with multiple templates
+    using varying formulations. These prompted
+    datasets allow for benchmarking the
+    ability of a model to perform completely
+    unseen tasks specified in NL. To obtain
+    T0*, we fine-tune a pretrained LM on this
+    multitask mixture covering many different
+    NLP tasks.
+model: bigscience/T0pp
+engine-whitespace-support: no
+engine-strips-gen-starting-whitespace: yes
+# engine-min-tokens: 64
+# engine-max-tokens: 2048
+# That's a stretch haha
+foundation: no
+layers:
+- foundation
+libre: true
+engine-links:
+- "https://huggingface.co/bigscience/T0pp"
+cant-n-complete: true
+envs:
+# This results in a t
+- NO_PARAMETERS: "y"
+- REMOVE_PROMPT_FROM_GEN: "y"
+# This results in a string
+# - NO_PARAMETERS: "Hello"
+repetition-penalty: 1.0

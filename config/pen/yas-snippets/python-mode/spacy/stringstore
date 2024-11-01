@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: spacy/stringstore
+# group: spacy
+# key: sy_ss
+# --
+from spacy.strings import StringStore
+stringstore = StringStore([u"apple", u"orange"])
+apple_hash = stringstore[u"apple"]
+assert apple_hash == 8566208034543834098
+assert stringstore[apple_hash] == u"apple"

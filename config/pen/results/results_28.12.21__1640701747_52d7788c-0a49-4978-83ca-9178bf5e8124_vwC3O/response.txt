@@ -1,0 +1,2 @@
+ a time long long ago", :game_id => game.id, :user_id => user.id, :content => "Once upon a time long long ago")
+    assert_equal(1, Comment.all.count)

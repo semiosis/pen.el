@@ -1,0 +1,3 @@
+;; Run function define-word
+(message (eval '(define-word "watermelon")))
+--> 

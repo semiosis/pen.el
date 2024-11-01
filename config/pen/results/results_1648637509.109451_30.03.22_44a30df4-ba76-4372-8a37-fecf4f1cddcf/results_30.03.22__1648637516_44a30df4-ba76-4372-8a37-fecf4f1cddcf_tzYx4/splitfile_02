@@ -1,0 +1,13 @@
+"shift" is a shell builtin that removes the first element from the positional parameters list and assigns it to the variable named by the second parameter.
+
+shift 2
+
+The above code snippet will remove the first two parameters from the positional parameters list and assign them to the variable named "shift".
+
+shift 2
+
+The above code snippet will remove the first two parameters from the positional parameters list and assign them to the variable named "shift".
+
+shift 2
+
+The above code snippet will remove

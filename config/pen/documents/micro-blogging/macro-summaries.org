@@ -1,0 +1,26 @@
+* [[https://www.youtube.com/watch?v=ppDtDP0Rntw][AWS, meet Clojure - David Chelimsky - YouTube]]
+** amazonica
+Don't use this. It's just a wrapper over java libraries. It's not a great abstraction.
+Google-driven development is still a problem.
+
+** pure-clojure alternatives
+This is better.
+
+** clojure.spec
+
+** What we really want
+- idiomatic clojure
+- data-oriented
+  - Not just talking about map-in map-out
+- async primary
+  - Don't want to do bindings.
+  - Just have it as a function argument
+- discoverability at the repl
+- docs in the repl
+- direct communication with AWS via HTTP
+- pay as you go
+  - don't want to depend on things that we're not going to use
+    - separate artifact for each service
+
+* [[https://www.youtube.com/watch?v=vK1DazRK_a0][Solving Problems the Clojure Way - Rafal Dittwald - YouTube]]
+e:$HOME/blog/posts/review-of-solving-problems-the-clojure-way-rafal-dittwald-youtube.org

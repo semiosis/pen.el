@@ -1,0 +1,117 @@
+Smart Contract
+    Simply some code that exists at an address
+    on a chain and is callable by external
+    actors.
+    
+    The key part is that you actually have to
+    put the code on chain before anyone can
+    start executing it! Deploying your smart
+    contract on chain will vary slightly for
+    whichever specific parachain you will use,
+    but generally you will send a special
+    transaction that will create the smart
+    contract on the ledger.
+    
+    You will likely need to pay an associated
+    fee for the initialization logic and any
+    storage that your contract consumes.
+
+Relay Chain
+    The heart of Polkadot, responsible for the
+    network’s shared security, consensus and
+    cross-chain interoperability.
+
+Parachains
+    Sovereign blockchains that can have their
+    own tokens and optimize their
+    functionality for specific use cases.
+
+    Parachains are "parallel" chains
+    containing their own runtime logic and
+    benefit from the shared security and the
+    cross-chain messaging provided by the
+    Polkadot Relay Chain.
+
+    Parachains permit a high degree of
+    flexibility and customization but require
+    more effort to create and maintain over
+    time.
+
+Parathreads
+    Similar to parachains but with a pay-as-
+    you-go model.
+    
+    More economical for blockchains that don’t
+    need continuous connectivity to the
+    network.
+
+    Parathreads are like parachains and enable
+    the developer to have lower-level control
+    of the logic of their application.
+    
+    The main difference between the two is
+    economic since parathreads will be much
+    less expensive to secure than a parachain.
+    
+    The lower costs of parathreads are due to
+    the fact that parathreads will only
+    produce a block when they need to, unlike
+    parachains, which have secured a slot to
+    produce a block at every block of the
+    Relay Chain.
+
+Bridges
+    Allow parachains and parathreads to
+    connect and communicate with external
+    networks like Ethereum and Bitcoin.
+
+Nominators
+    [Consensus Role]
+
+    Secure the Relay Chain by selecting
+    trustworty validators and staking dots.
+
+Validators
+    [Consensus Role]
+
+    Secure the relay chain by staking dots,
+    validating proofs from collators and
+    participating in consensus with other
+    validators.
+
+Collators
+    [Consensus Role]
+
+    Maintain shards by collecting shard
+    transactions from users and producing
+    proofs for validator.
+
+Fishermen
+    [Consensus Role]
+
+    Monitor the network and report bad
+    behavior to validators.
+
+    Collators and any parachain full node can
+    perform the fisherman role.
+
+Council Members
+    [Governance Role]
+
+    Elected to represent passive stakeholders
+    in two primary governance roles: proposing
+    referenda and vetoing dangerous or
+    malicious referenda.
+
+Technical Committee
+    [Governance Role]
+
+    Composed of teams actively building
+    Polkadot.
+    
+    Can propose emergency referenda, together
+    with the council, for fast-tracked voting
+    and implementation.
+
+substrate
+    https://www.substrate.io/

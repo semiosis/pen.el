@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="http://excalibur.haba.dk/templates/jw_technozine/css/template_css.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+<title>Excalibur Clan - The Flush</title>
+<meta name="title" content="The Flush" />
+<meta name="author" content="Administrator" />
+<meta name="description" content="Age of Empires II Clan – Apple Macintosh" />
+<meta name="keywords" content="aoe, age of empires, mac, osx, age of conquerors, age of kings, apple" />
+<meta name="Generator" content="Joomla! - Copyright (C) 2005 - 2006 Open Source Matters. All rights reserved." />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/comment_style.css"/>
+      <script type='text/javascript'>      /*<![CDATA[*/      var jc_option           = "com_content";      var jc_autoUpdate       = "0";      var jc_update_period    = 300*1000;      var jc_orderBy          = "1";      var jc_commentForm;      var jc_livesite_busyImg = "http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif";      /*]]>*/      </script>
+<script src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/script_1_6.js?f" type="text/javascript"></script>
+<script type="text/javascript">
+var xajaxRequestUri="http://excalibur.haba.dk/index2.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=true;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_jcxLoadUserInfo(){return xajax.call("jcxLoadUserInfo", arguments, 1);}
+function xajax_jcxAddComment(){return xajax.call("jcxAddComment", arguments, 1);}
+function xajax_jcxShowSubscribeForm(){return xajax.call("jcxShowSubscribeForm", arguments, 1);}
+function xajax_jcxShowAddForm(){return xajax.call("jcxShowAddForm", arguments, 1);}
+function xajax_jcxSubscribe(){return xajax.call("jcxSubscribe", arguments, 1);}
+function xajax_jcxMoreComment(){return xajax.call("jcxMoreComment", arguments, 1);}
+function xajax_jcxUpdateComment(){return xajax.call("jcxUpdateComment", arguments, 1);}
+function xajax_jcxUnpublish(){return xajax.call("jcxUnpublish", arguments, 1);}
+function xajax_jcxEdit(){return xajax.call("jcxEdit", arguments, 1);}
+function xajax_jcxSave(){return xajax.call("jcxSave", arguments, 1);}
+	</script>
+	<script type="text/javascript" src="http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js'); } }, 6000);
+	</script>
+			<link rel="alternate" type="application/rss+xml" title="Excalibur Clan" href="http://excalibur.haba.dk/index2.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1" />
+				<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+	
+<script type="text/javascript">
+function imageHeader(selector,phpfile,wordwrap){
+	this.selector = selector;
+	this.phpfile = phpfile;
+	this.wordwrap = wordwrap;
+}
+
+var testURL = "templates/jw_technozine/images/test.png" ;
+var hideFlicker = true;
+var hideFlickerCSS = "templates/jw_technozine/css/hidden_css.css";
+var hideFlickerTimeout = 1000;
+var imageHeaders = [
+						new imageHeader("h2","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=853400&upper=true",false),
+						new imageHeader("h3","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=111&upper=true",false),
+						new imageHeader("div.componentheading","templates/jw_technozine/heading.php?font_size=12&font_color=D15546&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.active_menu","templates/jw_technozine/heading.php?font_size=12&font_color=fff&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.normal","templates/jw_technozine/heading.php?font_size=12&font_color=888&background_color=111&upper=true",false)
+						]
+</script>
+<script
+   type="text/JavaScript"
+   src="templates/jw_technozine/replacement.js">
+</script>
+
+
+</head>
+<body>
+	<a name="up" id="up"></a>
+	<div class="frame">
+		<div class="padding_outside">
+			<div class="greybox">
+				<div class="greybox_bottom_padding">
+					<div class="topnav">
+						<div class="toppath">
+							<span class="pathway"><a href="http://excalibur.haba.dk/index.php" class="pathway">Home</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" /> <a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=section&amp;id=4&amp;Itemid=36" class="pathway">Tutorials</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" /> <a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=category&amp;sectionid=4&amp;id=24&amp;Itemid=36" class="pathway">RM 1vs1 Tutorials</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" />   The Flush </span>						</div>
+						<div class="topright">
+													</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="greybox_bottom_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_bottom">
+					<div id="logobox">
+						<div id="logoarea">
+							<div id="searcharea">
+								
+<form action="index.php?option=com_search" method="get">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="search" class="inputbox" type="text" size="20" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />	</div>
+
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="" />	
+</form>							</div>
+						</div>
+					</div>
+					<div class="padding">
+						<div class="main_header"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="greybox_bottom_padding">
+					<div class="middlenav">
+						<div class="datearea">
+							Monday, October 15 2007						</div>
+						<div id="horizmenu">
+							<ul class="mainlevel"><li><a href="http://excalibur.haba.dk/index.php?option=com_frontpage&amp;Itemid=1" class="normal">Home</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=blogsection&amp;id=0&amp;Itemid=9" class="normal">Blog</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28" class="normal">Forum</a></li></ul>						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="mainbody">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr valign="top">
+														<td class="leftcol">
+								<div class="leftdiv">
+									<div class="firediv">
+																													</div>
+									<div class="leftmodules">
+												<div class="moduletable">
+							<h3>
+					Other Menu				</h3>
+				
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=section&amp;id=4&amp;Itemid=36" class="mainlevel" id="active_menu">Tutorials</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_docman&amp;Itemid=35" class="mainlevel" >Rec. Games</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=12&amp;Itemid=38" class="mainlevel" >EX Members</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_newsfeeds&amp;catid=26&amp;Itemid=37" class="mainlevel" >Mac Newsfeeds</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=category&amp;sectionid=3&amp;id=7&amp;Itemid=39" class="mainlevel" >FAQs</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_weblinks&amp;Itemid=30" class="mainlevel" >Links</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=40" class="mainlevel" >How to register</a></td></tr>
+</table>		</div>
+				<div class="moduletable">
+							<h3>
+					Recent Topics				</h3>
+				<ul class="latestnews"> <li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=91.msg2835#new">how to upload rec game?</a> (2) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=7" title="View the profile of exc_imac">exc_imac</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=227.msg2834#new">WOW check this thing i found</a> (2) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=50" title="View the profile of Rick">Rick</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=225.msg2827#new">REAL QUALITY TEAM 3V3 arabia</a> (1) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=118" title="View the profile of dragon">dragon</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=213.msg2825#new">GR Best clans Biography (Part I)</a> (24) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=7" title="View the profile of exc_imac">exc_imac</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=224.msg2817#new">flank strat evolution</a> (8) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=223.msg2811#new">ghost lake is cool</a> (4) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=7" title="View the profile of exc_imac">exc_imac</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=221.msg2806#new">Re: best clan flames</a> (65) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=219.msg2798#new">starcraft 2</a> (11) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=45" title="View the profile of bert">bert</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=218.msg2740#new">best clan flames</a> (48) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=220.msg2687#new">Greece in Flames</a> (5) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=119" title="View the profile of €pitådeus">€pitådeus</a></li></ul>		</div>
+				<div class="moduletable">
+							<h3>
+					Login Form				</h3>
+					<form action="http://excalibur.haba.dk/index.php" method="post" name="login" >
+		
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td>
+			<label for="mod_login_username">
+				Username			</label>
+			<br />
+			<input name="username" id="mod_login_username" type="text" class="inputbox" alt="username" size="10" />
+			<br />
+			<label for="mod_login_password">
+				Password			</label>
+			<br />
+			<input type="password" id="mod_login_password" name="passwd" class="inputbox" size="10" alt="password" />
+			<br />
+			<input type="checkbox" name="remember" id="mod_login_remember" class="inputbox" value="yes" alt="Remember Me" />
+			<label for="mod_login_remember">
+				Remember me			</label>
+			<br />
+			<input type="submit" name="Submit" class="button" value="Login" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://excalibur.haba.dk/index.php?option=com_registration&amp;task=lostPassword">
+				Lost Password?</a>
+		</td>
+	</tr>
+		</table>
+	
+	<input type="hidden" name="option" value="login" />
+	<input type="hidden" name="op2" value="login" />
+	<input type="hidden" name="lang" value="english" />
+	<input type="hidden" name="return" value="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=35&amp;Itemid=36" />
+	<input type="hidden" name="message" value="0" />
+	<input type="hidden" name="j7d9e0b61acddf6b87dfe8a8f6125cc74" value="1" />
+	</form>
+			</div>
+				<div class="moduletable">
+							<h3>
+					Who's Online				</h3>
+				We have 2 guests online		</div>
+											</div>
+								</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+														<td class="middlecol">
+								<div class="middlediv">
+																					<table class="contentpaneopen">
+			<tr>
+								<td class="contentheading" width="100%">
+					The Flush									</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=35" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=35','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="PDF">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/pdf_button.png"  alt="PDF" name="PDF" align="middle" border="0" /></a>
+			</td>
+							<td align="right" width="100%" class="buttonheading">
+					<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=35&amp;pop=1&amp;page=0&amp;Itemid=36" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=35&amp;pop=1&amp;page=0&amp;Itemid=36','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="Print">
+						<img src="http://excalibur.haba.dk/templates/jw_technozine/images/printButton.png"  alt="Print" name="Print" align="middle" border="0" /></a>
+				</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=35&amp;itemid=36" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=35&amp;itemid=36','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="E-mail">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/emailButton.png"  alt="E-mail" name="E-mail" align="middle" border="0" /></a>
+			</td>
+						</tr>
+			</table>
+			
+		<table class="contentpaneopen">
+					<tr>
+				<td width="70%" align="left" valign="top" colspan="2">
+					<span class="small">
+						 Written by Administrator					</span>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+						<tr>
+				<td valign="top" colspan="2" class="createdate">
+					Tuesday, 10 October 2006				</td>
+			</tr>
+					<tr>
+			<td valign="top" colspan="2">
+				
+	<table cellpadding="0" cellspacing="0" class="contenttoc" align="right">
+	<tr>
+		<th>Article Index</th>
+	</tr>
+	
+	<tr>
+		<td>
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=35&amp;Itemid=36" class="toclink">The Flush</a>
+		</td>
+	</tr>
+	
+			<tr>
+				<td>
+				<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=35&amp;Itemid=36&amp;limit=1&amp;limitstart=1" class="toclink">Page 2</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+				<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=35&amp;Itemid=36&amp;limit=1&amp;limitstart=2" class="toclink">Page 3</a>
+				</td>
+			</tr>
+			</table><div class="pagenavcounter">Page 1 of 3</div><h3>24 Pop</h3><p>The 24 pop Flush is probably one of the easiest to learn, along with the 25 pop Flush. It is also very adaptable, and can be used both aggressively (forward build your military buildings) or defensively (build your military buildings at home). This form of Flush usually uses two Ranges. (Created by Stevay August 22, 2004)</p> <h3>24 Pop Build Order</h3> <p><strong>3 Vils:</strong> Either help your Scout look for Sheep, or chop a straggler (tree by your TC).<br /> <strong>TC:</strong> H-C-C-C-C. Queue up 4 Vils with the 200 food you get. Don&#39;t use H-Shift-C; the game might not recognize the Shift and only may queue up 1 Vil.<br /> <strong>Scout:</strong> Start looking for Sheep in circles, and be sure to not overlap areas where you have already Scouted, as that wastes time. Number your Scout to Ctrl + 1. You will then hit 1 to select your Scout, or hit 1 twice to select it and centre your view on it. Number your TC to Ctrl + 2. You will now hit 2 to select your TC and queue up Vils. Why not use H? H selects your TC, but <strong>also centres your view on your TC.</strong> You want to be able to queue up Vils while watching your Scout. If you need to view your TC to change where your Vils will go when trained, to force drop some food, or watch over things, just hit 2 twice.<br /> <strong>4 Sheep:</strong> Once you have found them, send two Sheep to the TC, and send the other two Sheep scouting, helping the Scout (you are not going to lose your sheep, trust me) in opposite directions (for example, if your Scout has gone north-east, send one Sheep around north-west, and the other south-west). The other two Sheep are to be placed directly onto your TC; one Sheep will be processed by your three Vils (get them to dump off their wood first if they had chopped a straggler), and the other will stand by waiting.<br /> <strong>Vils 4-6:</strong> Sheep. Whenever a Sheep is done, move another Sheep nearby it. Keep only six Vils to one Sheep, make sure that you do not kill an extra Sheep. Always only keep two Sheep on the TC; one being harvested, and the other, alive, standing by. All the others can either be scouting or standing by close to your TC, but not close enough so that your Vils on Sheep might decide to eat two Sheep at once, but also not far enough to have your Sheep stolen by your opponent.<br /> <strong>Vil 7:</strong> Lumber Camp. A Flusher needs wood. If you have not scouted out a suitable forest yet, put this Vil on a straggler instead so that no time is wasted.<br /> <strong>Vils 8-10:</strong> If you do not have an LC yet, get Vil 8 building it. If you do, send all of these 3 Vils to the forest at your LC.<br /> <strong>Vil 11:</strong> After he has been trained, hit Loom, and get the Vil to wait by a Boar. When the Loom is 80% done, lure the Boar.<br /> <strong>Vil 12</strong>: Mill your Berries (you will need that Mill for Farms). <strong>Vils 13-14</strong> Go to Berries along with Vil 12 after the Mill is done, and keep them on the Berries closest to your Mill.<br /> <strong>Boar:</strong> When the Boar is chasing your Vil back to your TC, garrison your lurer, and get all the Vils on Sheep to drop off their food, and then shoot the crap out of that Boar. That bastard needs to die. Plus, for being barbaric, you get good, fast food. If you have a Sheep left over rotting away, it might be a good idea to put one Vil on that Sheep until it is done, and then send him back to Boar.<br /> <strong>Vils 15-19:</strong> Boar. Once your first Boar hits 175 food, lure your second Boar with a full health Hunter on your first Boar (drop off his food at your TC first, in case he dies).<br /> <strong>Farms:</strong> At this point you should consider Farming. Pull the wounded Vils off your first Boar, and make Farms by the right-hand side of your TC. Tests have shown that Farms put on the right-hand side of your TC actually gather food faster. Slowly pull off the wounded Vils off the second Boar as well (so you should have four wounded Vils in total from both Boar) and put them on Farms as well.<br /> <strong>Boar:</strong> Once you have finished your Boar, split up your Hunters onto Sheep.<br /> <strong>Vil 20:</strong> Build a second LC by another forest if your first forest is small, or on the same forest is large (but place the LC farther away so that both LCs are not touching each other).<br /> <strong>Vils 21-23:</strong> Wood right by the second LC.</p> <p>The easiest way to remember this build order is basically 6-4-1-3-5-4. 6 on Sheep, 4 on wood, 1 to lure, 3 on Berries, 5 on Boar, 4 on wood.</p> <p>Now, garrison all your food Vils around your TC (Sheep, Boar, Farms) so that they drop off all their food. If you have 500, hit Feudal. Then press &quot;W&quot; (default hotkey) to send them back to work (your Vils will go back to what they were doing automatically).</p> <p>Move all your previous Boar Vils to wood, except for a couple. If you still have Sheep left over, use two or three Vils (that were previously the Boar Hunters) to harvest them. If you plan to play defensively, send the first couple of Vils I talked about to make a Rax facing towards your enemy. If you plan to play more aggressively (more micromanagement intensive, as well), take four Vils and send them towards your enemy, building your Rax closer to him.</p> <p>Once you hit Feudal (11:xx minutes), queue up two Vils at the TC (and keep the production up 100%; Vils before military, until you research Wheelbarrow when you get enough food), research Double-Bit Axe (faster wood; you might not need any more Vils on wood, unless your wood Vils die to enemy units), make two Spears at your Barracks, and if you played defensively, with the two Vils that made your Barracks, get each of them starting on a Range. If you were forward building, get two Vils to start a Range each with your four forward Vils.</p> <p>Make Spears, Skirms, and Vils all the time. Send your new Vils to food (some on Berries, but most on new Farms), unless you need wood, in which case, send them to wood for a bit. When you have enough wood, get a Blacksmith (for Fletching and other upgrades). Make a Stable ASAP, and get a few Scouts. When you are done your Berries (with six Vils at around the 15:xx minute mark), send those Berrie Vils to your gold (make a Mining Camp if you have not already started mining gold). Get Bloodlines when you have enough gold. When the gold is coming in, move to Archer production from your Ranges instead of Skirms.</p> <p>Once you get enough units (around 10 Skirms, 2-3 Spears), start harrassing his wood, and if he is mining gold or stone, stop him from doing so.</p> <p>Continue to make Vils, and research Wheelbarrow when you have enough food after all your other units (Scouts, Spears, Archers) have been queued up (always queue up two units). It is a tech that is insanely good for Farming. If wood permits, add one or two more Stables in Feudal. Castle when you have enough food as well (but always keep queueing up Vils and military units). Before you Castle, put your newly-made Vils on gold (you might need a new Mining Camp, even if it is on the same gold pile; put the Camp at the other side of it so that Vils do not have to bump into each other or walk long distances back to the first Camp); you will be needing lots of gold in preparation for Castle. During the Feudal/Castle transition, try to build more Stables so that your total Stable count is three or four. Research cavalry techs at the Blacksmith (Scale Barding Armour, Forging).</p> <br /><div class="pagenavbar"><div>Prev - <a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=35&amp;Itemid=36&amp;limit=1&amp;limitstart=1">Next &gt;&gt;</a></div></div><br />			</td>
+		</tr>
+					<tr>
+				<td colspan="2" align="left" class="modifydate">
+					Last Updated ( Tuesday, 10 October 2006 )
+				</td>
+			</tr>
+					</table>
+		
+		<span class="article_seperator">&nbsp;</span>
+		
+					<table align="center" style="margin-top: 25px;">
+			<tr>
+									<th class="pagenav_next">
+						<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=24&amp;Itemid=36">
+							Next &gt;</a>
+					</th>
+								</tr>
+			</table>
+						<div class="back_button">
+				<a href='javascript:history.go(-1)'>
+					[ Back ]</a>
+			</div>
+											</div>
+							</td>
+														<td class="rightcol">
+								<div class="rightdiv">
+																													<div class="moduletable">
+							<h3>
+					Latest News				</h3>
+				<ul class="latestnews">
+	<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=9" class="latestnews">
+			How to register!</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=37&amp;Itemid=9" class="latestnews">
+			You can't join GAMERANGER?</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=36&amp;Itemid=9" class="latestnews">
+			abbreviations</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=35&amp;Itemid=36" class="latestnews">
+			The Flush</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=34&amp;Itemid=9" class="latestnews">
+			How can I get an avatar next to my comment?</a>
+	</li>
+	</ul>		</div>
+										</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+													</tr>
+					</table>	
+				</div>
+				<div class="greybox_top_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_top_padding">
+					<div class="topnav" id="footer">
+						<div class="syndicate">
+			<div align="center">
+			<a href="http://excalibur.haba.dk/index.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1">
+				<img src="http://excalibur.haba.dk/images/M_images/rss20.gif"  alt="RSS 2.0" name="RSS20" align="middle" border="0" /></a>
+		</div>
+		</div></div>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- 1192436227 -->

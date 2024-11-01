@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: results
+# group: mine
+# key: resultss
+# --
+#+RESULTS:
+: -4

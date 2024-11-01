@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: ifelseifelse
+# group: if
+# key: ifeife
+# --
+if(${1:cond})
+   $2
+elseif(${3:cond})
+   $4
+else(${5:cond})
+   $6
+endif($1)$0

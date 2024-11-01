@@ -1,0 +1,14 @@
+[database]
+path=~/.pen/Mail
+[user]
+name=Shane Mulligan
+primary_email=mullikine@gmail.com
+[new]
+tags=new
+ignore=
+[search]
+exclude_tags=deleted;spam;
+[maildir]
+synchronize_flags=true
+[crypto]
+gpg_path=gpg

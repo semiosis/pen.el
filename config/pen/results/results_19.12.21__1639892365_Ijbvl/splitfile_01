@@ -1,0 +1,8 @@
+Output: hi
+root@mele:/root/notes$ echo $?
+Output: 0
+root@mele:/root/notes$ echo hello
+Output: hello
+root@mele:/root/notes$ echo $?
+Output: 0
+root@mele:/root

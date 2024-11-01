@@ -1,0 +1,6 @@
+cd /root/notes;  "II" "Peter" "2:20" "#" "<==" "zsh"
+cd /root/notes;  "II" "John" "1:10" "#" "<==" "zsh"
+cd //;  "II" "Thessalonians" "3:1-14" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "II" "John" "1:9-11" "#" "<==" "zsh"
+cd /;  "II" "John" "1:9-11" "#" "<==" "zsh"
+cd //;  "II" "John" "1:1-11" "#" "<==" "zsh"

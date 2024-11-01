@@ -1,0 +1,9 @@
+
+stack exec FilteredListExample
+stack exec MaybeExample
+stack exec ParsecExample3
+stack exec ParserExample
+
+For examples that use the extensible-exceptions package you need to add the
+
+following to your .

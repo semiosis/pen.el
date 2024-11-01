@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Unordered List
+# contributor: Shane Mulligan <mullikine@gmail.com>
+# group: list
+# key: -
+# --
+* ${1:Text}
+*$0

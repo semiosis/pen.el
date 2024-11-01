@@ -1,0 +1,3 @@
+;; Run function color-of-house
+(message (eval '(color-of-house "whitehouse")))
+--> "white"

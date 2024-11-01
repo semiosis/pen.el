@@ -1,0 +1,5 @@
+
+To quit emacs, start with "M-x".
+Followed by "save-buffers-kill-emacs".
+And you are done.
+

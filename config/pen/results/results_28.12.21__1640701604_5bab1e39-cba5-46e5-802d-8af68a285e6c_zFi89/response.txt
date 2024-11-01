@@ -1,0 +1,8 @@
+ a time...')
+
+    # Load a fixture
+    # -------------------
+    #
+    #  $ ipython fixture-load test.json
+    #  > Story: Once upon a time...
+    #  > Scene:

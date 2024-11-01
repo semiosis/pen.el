@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: decision facts
+# group: vimsnippet
+# key: vs-df
+# --
+?::${1:umbrella}.

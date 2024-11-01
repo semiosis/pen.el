@@ -1,0 +1,6 @@
+
+main = do
+  putStrLn "Enter a line of text for test 1:"
+  s <- getLine
+  putStrLn $ "As upper case:	" ++ (map toLower s)
+  main

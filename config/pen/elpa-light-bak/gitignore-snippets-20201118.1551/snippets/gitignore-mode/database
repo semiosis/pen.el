@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Database
+# contributor: Toptal & contributors
+# key: database
+# --
+
+### Database ###
+
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3

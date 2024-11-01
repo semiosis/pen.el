@@ -1,0 +1,65 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-elpa.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-org.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-org-capture.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-org-agenda.el
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# emacs lisp files (not in git)

@@ -1,0 +1,9 @@
+"async/go-loop"
+(fn [chan coll]
+    (async/go-loop
+        (async/timeout 100 (async/chan 0))
+        (async/put chan (conj coll (random-uuid))))))
+
+; Use a transducer to append a unique id to each message
+(defonce main-chan (async/chan 1 
+

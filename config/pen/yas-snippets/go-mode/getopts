@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: getopts
+# group: getopts
+# key: opt
+# --
+# #+BEGIN_SRC go -n :fp /tmp/babel/main.go :i go run {} --debug :async :results verbatim code
+package main
+
+import (
+      "flag"
+      "fmt"
+)
+
+func main() {
+      debug := flag.Bool("debug", false, "debug on")
+      flag.Parse()
+
+      fmt.Println("Debug", *debug)
+}

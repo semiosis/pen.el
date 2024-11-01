@@ -1,0 +1,9 @@
+The above code is a simple program that prints out the sum of 1 and 2.
+
+The sum2 function is defined as sum2 x y = x + y.
+
+The main function is defined as main = do.
+
+The putStrLn function is defined as putStrLn s = putStrLn s where putStrLn s = print s.
+
+The main function calls the putStrLn function, which prints "1 + 2 = 3".

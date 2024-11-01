@@ -1,0 +1,41 @@
+title: Correct English spelling and grammar
+prompt-version: 5
+tags: prose grammar english
+doc: Given a sentence which may have incorrect spelling or grammar, correct it.
+prompt: |+
+  <delim>
+  Poor English: Please provide me with a short brief\nof the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+  Corrected English: Please provide me with a short brief
+  of the design you’re looking for and some examples or previous projects you’ve done would be helpful.
+  <delim>
+  Poor English: If I’m stressed out about something,\nI tend to have problem to fall asleep.
+  Corrected English: If I’m stressed out about something,
+  I tend to have a problem falling asleep.
+  <delim>
+  Poor English: There is plenty of fun things to do in the summer\n
+  when your able to go outside.
+  Corrected English: There are plenty of fun things to do in the summer when you are able to go outside.
+  <delim>
+  Poor English: She no went to the market.
+  Corrected English: She didn't go to the market.
+  <delim>
+  Poor English: <1>
+  Corrected English:
+force-engine: OpenAI Davinci
+force-temperature: 0.3
+max-generated-tokens: 1000
+top-p: 1
+stop-sequences:
+- "<delim>"
+stop-patterns:
+- "^Poor English:"
+vars:
+- poor english
+examples:
+- The rain in Spain falls mainly on the plain.
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph | sed -e "s/^\\s*//" -e "s/^Corrected English:\\s*//"
+external: ~
+filter: true
+n-test-runs: 2

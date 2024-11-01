@@ -1,0 +1,2 @@
+drop-while
+re-find # test match string with regex

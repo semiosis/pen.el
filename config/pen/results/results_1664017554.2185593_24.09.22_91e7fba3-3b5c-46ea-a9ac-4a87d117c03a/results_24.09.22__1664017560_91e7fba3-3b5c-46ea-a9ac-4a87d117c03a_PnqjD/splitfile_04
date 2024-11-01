@@ -1,0 +1,9 @@
+
+  (reduce conj [] l))
+
+(defn first-names []
+  "Create a map by applying f to the first element of every list in coll"
+
+(defn last-names []
+
+"Create

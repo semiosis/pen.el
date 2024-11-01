@@ -1,0 +1,1256 @@
+HTTP/1.1 200 OK
+Date: Fri, 28 Jun 2024 04:12:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-pita: 0000
+vary: Accept-Encoding, x-pita
+Cache-Control: no-cache
+x-psdebug: 0
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=JXuDKVxBo6Djy83s%2FLVl4Hy1PgwTQaThd8JrJapfLAKJr8waOy5grnBO1T0rP7258%2Bwb8y1YMPlm2SmCTOjJnRPPEmrAYCTvMDkhyD21sdLLn5BbY8omv6%2B0OF9WwIqr1hQ%2Bj%2FzWRBuoJGuuzDXxe0M0"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 89aad6ecaf08a89a-SYD
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png"> 
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+
+    <link rel="preconnect" href="https://experience.tinypass.com" crossorigin>
+    <link rel="preconnect" href="https://media.swncdn.com" crossorigin>
+    <link rel="preconnect" href="https://i.swncdn.com" crossorigin> 
+    <link rel="preconnect" href="https://www.lightboxcdn.com" crossorigin>
+
+    
+
+    <link rel="preconnect" href="https://www.googletagservices.com" crossorigin>
+    <link rel="preconnect" href="https://prebid.adnxs.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    <link rel="preconnect" href="https://ad.doubleclick.net" crossorigin>
+    <link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script async src="https://media.swncdn.com/js/prebid/script.js"></script>
+    <script async src="https://media.swncdn.com/salemads/christianity/advscript.js?v=1"></script>
+
+<meta name="robots" content="max-image-preview:large">
+
+
+
+        <title>What Is Heaven Like According to the Bible?</title>
+        <meta name="description" content="We shall see the Lord face-to-face. The fact that our all-knowing, all-powerful Creator will dwell with us and we shall know him in an even more intimate way should be sufficient for the true Christian to be rest assured that they will be satisfied there."/>
+        <meta name="keywords" content="Heaven Like, According, Bible, Eternity, Like"/>
+        <meta property="fb:admins" content="696121494" />
+        <meta property="fb:app_id" content="185089041525941" />
+        <meta property="fb:pages" content="7212422497" />
+            <link rel="canonical" href="https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html" />
+            <meta property="og:title" content="What Is Heaven Like According to the Bible?"/>
+            <meta property="og:url" content="https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html"/>
+            <meta property="og:image" content="https://media.swncdn.com/via/14241-istockgetty-images-plusfotokita.jpg"/>
+            <meta property="og:site_name" content="Christianity.com"/>
+            <meta property="og:description" content="We shall see the Lord face-to-face. The fact that our all-knowing, all-powerful Creator will dwell with us and we shall know him in an even more intimate way should be sufficient for the true Christian to be rest assured that they will be satisfied there."/>
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:site" content="@christianitycom">
+            <meta name="twitter:title" content="What Is Heaven Like According to the Bible?">
+            <meta name="twitter:description" content="We shall see the Lord face-to-face. The fact that our all-knowing, all-powerful Creator will dwell with us and we shall know him in an even more intimate way should be sufficient for the true Christian to be rest assured that they will be satisfied there.">
+            <meta name="twitter:image" content="https://media.swncdn.com/via/14241-istockgetty-images-plusfotokita.jpg">            
+                
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Article",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html"
+},
+"headline": "What Is Heaven Like According to the Bible?",
+"articleSection": "Heaven and Hell",
+"image": {
+"@type": "ImageObject",
+"url": "https://media.swncdn.com/via/14241-istockgetty-images-plusfotokita.jpg"
+},
+"dateCreated": "2020-08-19T14:40:33.0230000-04:00",
+"datePublished": "2022-03-24T14:00:00.0000000-04:00",
+"dateModified": "2023-09-15T17:37:12.5270000-04:00",
+"author": {
+"@type": "Person",
+"name": "Jessica Miller",
+"url": "https://www.christianity.com/author/jessica-miller/"
+,"description": "Jessica Miller&nbsp;is the pastor’s wife and outreach director at Bean Blossom Community Church&nbsp;in Indiana, where she loves serving the Lord together with her husband, Jeff. Prior to marriage, her perspective on life was radically altered while living as a single woman in the Middle East. She is passionate about growing in her relationship with the Lord and pointing others to the truth. Her degrees are in biblical studies and counseling and she carries a special passion for cross-cultural ministries. She enjoys learning, traveling, and creating. She tweets&nbsp;and&nbsp;blogs&nbsp;from time to time."
+},
+"publisher": {
+"@type": "Organization",
+"name": "Salem Web Network",
+"url": "https://www.salemwebnetwork.com/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://salemnet.vo.llnwd.net/media/crosswalk/resource/areas/crosswalk/resources/images/logos/SWN_logo_blue_text.png",
+"width": 167,
+"height": 60
+}
+},
+"description": "&nbsp;Here are three of the most common ideas about heaven and what the Bible says about them. ",
+"articleBody": "When people try to imagine heaven, they sometimes picture ethereal images like angels loafing on clouds or chubby cherubs strumming on harps. In order to be motivated to live for the values of heaven, maintaining a biblical mindset about eternal realities is important.But maintaining this perspective is difficult when we are bombarded with numerous misconceptions about heaven in popular culture. Here are three of the most common ideas about heaven and what the Bible says about them.Common Misconceptions about Heaven1. Heaven is where good people will spend eternity.&nbsp;The scriptures make clear that there is no one who is good enough for heaven (Romans 3:11-12; Psalm 14:3). Any righteousness that we think we have is like a “filthy rag” (Isaiah 64:6) when held up to the standard of God’s incomparable holiness.Those who think they are good enough for heaven are self-deceived and their pride separates them from God who “opposes the proud but gives grace to the humble” (James 4:6, ESV). In fact, Jesus said the way to heaven is small and narrow, and “only a few find it” (Matthew 7:14).One of the scariest warnings Jesus ever gave was about people who will be self-deceived. They will think they are following Christ and many of them will even be doing miracles in his name, but they will not be allowed entrance to heaven. At the end of their earthly lives, Jesus will reveal to them that he never knew them.Rather than living for God and his will, they had actually been living for themselves and their own selfish desires (Matthew 7:21-23). Jesus said, “Whoever wants to be my disciple must deny themselves and take up their cross daily and follow me” (Luke 9:23).2. Heaven is where Christians will spend eternity.&nbsp;This might not be as clear in scripture as people think. Some scholars on the topic of heaven argue the opposite. For example, in his book, 40 Questions About Heaven and Hell, Alan Gomes believes that the Bible indicates we will spend eternity on the new earth that God will create. He points to passages such as 2 Peter 3:13 and Revelation 21:1-2.Gomes writes, “What possible reason would we have for existing in heaven? It could not be to experience God’s presence more fully, for God will have made his dwelling with us on earth. Nor could it be that heaven provides an especially suitable habitat for resurrected human beings, for God designed a renovated, material earth precisely for that purpose…the New Jerusalem is a literal city that God will situate on the new earth.”3. Heaven will be boring.&nbsp;Randy Alcorn comments: “Our belief that Heaven will be boring (and I hear this from people all the time) betrays a heresy — that God is boring. I think that we will see that for the lie it is if we realize that Heaven is God’s place and it’s the person whose place it is that determines the nature of the place….if we’re experiencing the invigorating stirrings of God’s Spirit and trusting Him to daily fill our lives with divine appointments, experiencing the childlike delights of His gracious daily kindnesses to us, then we will know that God is exciting and Heaven is exhilarating. People who love God crave His companionship. To be in His presence will be the very opposite of boredom.”Biblical Description of Heaven1 Corinthians 2:9-10 says, “The things God has prepared for those who love him” are “revealed to us by his Spirit.” To counter false, unbiblical notions, we need to study and meditate on “words taught by the Spirit” (1 Corinthians 2:13). Our eternal home is a real place (John 14:1-3) where we will reside in real, physical bodies (1 Corinthians 15) and where we will experience everlasting joys, rewards, and treasures (Matthew 5:12; Matthew 6:19-20; Luke 6:23).God dwells there (Revelation 21:3) and the light of Jesus will permeate every corner of this place (Revelation 22:5). Charles Spurgeon said, “To the lover of Jesus it is very pleasant to observe how the Lord Jesus Christ has always stood foremost in glory from before the foundation of the world and will do so as long as eternity shall last.”We shall see the Lord “face-to-face” (1 Corinthians 13:12). The fact that our all-knowing, all-powerful Creator will dwell with us and we shall know him in an even more intimate way should be sufficient for the true Christian to rest assured that they will be satisfied there, but the Bible gives us many other glimpses of what this place will be like.1. Eradication of evil.&nbsp;Jesus promised that when he returns, he will send out his angels to “weed out of his kingdom everything that causes sin and all who do evil,” and “then the righteous will shine like the sun in the kingdom of their Father” (Matthew 13:41-43).Picture your favorite place on earth. Now imagine that place completely free from any of the unpleasantries that make you feel sad, uncomfortable, or anxious. Perfect righteousness and justice reign supreme. Every shred of evil has been completely eliminated and, instead, will be the opposite of anything that causes displeasure.In Revelation 21:4, we see that the eternal state will have “no more sickness, crying, or pain.” What is the opposite of these? Perfect health, joy, and pleasure. In God’s presence, there are “pleasures forevermore” (Psalm 16:11, ESV).&nbsp;Lovers of God will find that the pleasures of heaven eclipse their wildest imaginations (1 Corinthians 2:9).2. Perfect friendships.&nbsp;Think of all the Old Testaments saints or Christians down through history that you would like to meet… Abraham, Moses, Hannah, the Apostle Paul, Hudson Taylor, Amy Carmichael, Jim Elliot, Corrie Ten Boom.The Bible says we will be with all of those people but describes them as “just men made perfect” (Hebrews 12:22-23). There will no longer be any hint of pride, insecurity, jealousy, discrimination, or competition — nothing that would hinder the sweetest Christian fellowship.Think about a time when you felt deep love and respect for fellow believers. Now imagine that love and respect being completely untarnished by any ounce of sin on their part or yours. Imagine that love being multiplied to a perfect degree and encompassing people “from every nation, tribe, people and language” (Revelation 7:9; Daniel 7:14) who are perfectly united in the one aim of loving God and seeking his glory alone.3. Learning and growth.&nbsp;While our knowledge will greatly increase in the eternal state (1 Corinthians 13:12), there is no reason to conclude that we will become all-knowing. William G. T. Shedd states, “By this we are not to understand that the creature’s knowledge, in the future state, will be as extensive as that of the Omniscient One; or that it will be as profound and exhaustive as His. The infinitude of things can be known only by the Infinite Mind.”Alcorn comments on Ephesians 2:6-7: “The word show means ‘to reveal.’ The phrase in the coming ages clearly indicates this will be a progressive, ongoing revelation, in which we learn more and more about God’s grace.”4. Meaningful work.&nbsp;Work was part of God’s original plan for humans before the fall (Genesis 2:15). God is always working (John 5:17) and Jesus said his mission was to finish the work of doing the Father’s will (John 4:34) to bring God glory (John 17:4).Reagan Rose writes, “Imagine all of the things you love about work — the satisfaction, the sense of progress, the knowledge that you have brought something that was disordered into a greater state of order — but imagine all of that without the confusion, sweat, or annoyance that is part and parcel of our work now! Now, that’s a job I wouldn’t mind signing up for.”This eternal view of the satisfying aspects of work can impact our perspective on our earthly jobs. Tom Nelson comments, “If our daily work, done for the glory of God and the common good of others, in some way carries over to the new heavens and new earth, then our present work itself is overflowing with immeasurable value and eternal significance.Living for EternityKnowing the reality of our eternal state and that many of the things we are doing now will continue, only in a perfected condition, should motivate us to live with purpose and godly motivations now. Those who love God will continue to love God and want to obey Him. Those who do not love God would not enjoy heaven anyway and will not be allowed entrance there.Peter writes, “What kind of people ought you to be? You ought to live holy and godly lives as you look forward to the day of God and speed its coming….since you are looking forward to this, make every effort to be found spotless, blameless and at peace with him” (2 Peter 3:11-14).Here are 15 Bible Verses Every Christian Should Know By Heart for you to download and share with loved ones!Photo Credit: ©iStock/Getty Images Plus/FOTOKITAJessica Miller&nbsp;is the pastor’s wife and outreach director at Bean Blossom Community Church&nbsp;in Indiana, where she loves serving the Lord together with her husband, Jeff. Prior to marriage, her perspective on life was radically altered while living as a single woman in the Middle East. She is passionate about growing in her relationship with the Lord and pointing others to the truth. Her degrees are in biblical studies and counseling and she carries a special passion for cross-cultural ministries. She enjoys learning, traveling, and creating. She tweets&nbsp;and&nbsp;blogs&nbsp;from time to time.This article is part of our Christian Terms catalog, exploring words and phrases of Christian theology and history. Here are some of our most popular articles covering Christian terms to help your journey of knowledge and faith:The Full Armor of GodThe Meaning of \\\"Selah\\\"What Is Grace? Bible Definition and Christian QuotesWhat is Discernment? Bible Meaning and ImportanceWhat Is Prophecy? Bible Meaning and Examples"
+}
+</script>
+
+    <script type="application/ld+json"> 
+        {    
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [ 
+
+                {
+                "@type": "ListItem",
+                "position": "1",
+                "item": {
+                
+                        "@id": "https://www.christianity.com/theology/",
+                        "name": "Theology"
+                    }
+                    },
+                    
+                {
+                "@type": "ListItem",
+                "position": "2",
+                "item": {
+                
+                        "@id": "https://www.christianity.com/wiki/heaven-and-hell/",
+                        "name": "Heaven and Hell"
+                    }
+                    },
+                    
+                {
+                "@type": "ListItem",
+                "position": "3",
+                "item": {
+                
+                        "@id": "https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html",
+                        "name": "What Is Heaven Like According to the Bible?"
+                        }
+                    }
+                            
+        ]
+    }
+         
+    </script>
+
+
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
+<link href="/css/main.bundle.css?v=P_Pj4ZZooVhC9iJnMVaYUsn-EZIIacFk3cqh1jyVWzA" rel="preload" as="style" />
+<link href="/css/main.bundle.css?v=P_Pj4ZZooVhC9iJnMVaYUsn-EZIIacFk3cqh1jyVWzA" rel="stylesheet" />
+
+<script>
+    window.swn_pgi = {
+        af: false,
+        sl: 'none'
+    }
+</script>
+
+
+    
+	
+    
+            <link rel="preload" as="image" type="image/webp" href="https://i.swncdn.com/media/400w/via/14241-istockgetty-images-plusfotokita.webp" media="(max-width: 767px)">
+            <link rel="preload" as="image" type="image/webp" href="https://i.swncdn.com/media/950w/via/14241-istockgetty-images-plusfotokita.webp" media="(min-width: 768px)">
+
+
+ 
+
+    <script type="text/javascript">!(function (o, _name) { o[_name] = o[_name] || function $() { ($.q = $.q || []).push(arguments) }, o[_name].v = o[_name].v || 2; !(function (o, t, n, f, e, i) { function c(f, e) { (f = (function (t, n) { try { if (n = (t = o.localStorage).getItem("_aQS01QkQ4OUUyRTZEREYxQTBCQjA3MzM2RUUtOQ")) return JSON.parse(n).lgk || []; if ((t.getItem("v4ac1eiZr0") || "").split(",")[4] > 0) return [[_name + "-engaged", "true"]] } catch (f) { } })()) && typeof f.forEach === n && (e = o[t].pubads()) && f.forEach((function (o) { o && o[0] && e.setTargeting(o[0], o[1] || "") })) } (i = o[t] = o[t] || {}).cmd = i.cmd || [], typeof i.pubads === n ? c() : typeof i.cmd.unshift === n ? i.cmd.unshift(c) : i.cmd.push(c) })(window, "googletag", "function");; })(window, decodeURI('%61%64%6di%72%61%6c')); !(function (t, c, i) { i = t.createElement(c), t = t.getElementsByTagName(c)[0], i.async = 1, i.src = "https://chessbranch.com/build/f0815b8b67a/baaf951eb6625f98db7164cf2.js", t.parentNode.insertBefore(i, t) })(document, "script");</script>
+
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/add8cdcf76d30830b2f782ce74a9df56.js"></script>
+
+	<meta name="theme-color" content="#ffffff" />
+	<link rel="manifest" href="/manifest.webmanifest" />
+</head>
+<body class="font-helvetica relative" x-data="{ showMobile: false }">
+    <div b-xx9ix8dtoz id="fb-root"></div>
+    <script> 
+        var allpass_containerRequests = [], allpass_publicationId = 35610, allpass_parentPublicationId = 35597;
+
+        allpass_domain = "www.christianity.com";
+        var domain = "www.christianity.com";
+    </script> 
+
+    
+
+
+    	<!-- Mobile menu, left desktop sidebar, show/hide based on menu state. -->
+	<nav x-show="showMobile" class="sidebar fixed z-[999999]" x-cloak>
+		<div class="w-full lg:w-52 h-full lg:h-screen shadow-lg rounded-md bg-white overflow-y-scroll lg:overflow-y-visible" id="mobile-menu">
+			<div class="mx-auto max-w-[80%] lg:max-w-none">
+				<!--Mobile Search -->
+				<div class="lg:hidden mb-5 mt-1">
+					<form method="get" id="mobile-search-form" class="" action="/search/">
+						<div class="w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex space-x-2">	
+							<!-- Search box -->
+							<input type="text" name="q" placeholder="Search..." class="w-[90%] p-3 md:p-4 text-[#333] md:text-lg rounded-md focus:outline-none" />
+							<!-- Search icon -->
+							<button type="submit" class="" aria-label="Search">
+								<svg class="text-[#B6B2B6] h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.966 56.966">
+									<path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+								</svg>
+							</button>	
+						</div>
+					</form>
+				</div>
+				<div class="px-2 pt-2 pb-3 space-y-1 bg-white">
+						<div class="flex space-x-2 justify-center content-center lg:hidden mb-5">
+							<a class="plus-join w-1/2 rounded-md bg-csorange text-white text-sm p-2 text-center border" href="https://www.christianity.com/subscribe/" data-google-interstitial="false">
+								<span class="font-bold inline-block align-text-top">JOIN</span>
+								<picture><img src="https://media.swncdn.com/christianity/plus/plus-badge-orange.svg" width="56" height="25" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="inline-block h-auto w-14 -ml-1" alt="Plus"></picture>
+							</a>
+							<a class="plus-login w-1/2 text-sm p-2 text-center border" href="#" data-google-interstitial="false" @click.prevent="showMobile = false">
+								<span class="font-bold text-black uppercase align-middle">Login</span>
+							</a>
+						</div>
+					<ul class="" x-data="{ menuActive:0 }" @mouseleave="menuActive = 0">
+							<li class="relative">
+								<a href="/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 1">
+									Home Page
+								</a>
+
+							</li>
+							<li class="relative">
+								<a href="/wiki/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 2">
+									Trending
+								</a>
+
+							</li>
+							<li class="relative">
+								<a href="/christian-life/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 3">
+									Christian Living
+										<svg class="css-1kirocq rotate-[270deg] h-[6px] float-right mt-[9px] hidden lg:block" viewBox="0 0 13 8"><polygon points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4" fill="#000"></polygon></svg>
+								</a>
+
+									<ul x-show="menuActive == 3" class="w-60 hidden absolute top-0 -right-60 bg-white z-10 shadow-lg rounded-md p-2" :class="{ 'lg:block': menuActive == 3 }">
+											<li>
+												<a href="/wiki/bible/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Bible Study</a>
+											</li>
+											<li>
+												<a href="/wiki/prayer/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Prayer</a>
+											</li>
+											<li>
+												<a href="/wiki/marriage/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Marriage</a>
+											</li>
+											<li>
+												<a href="/wiki/holidays/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Holidays</a>
+											</li>
+											<li>
+												<a href="/wiki/christian-life/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Christian Life</a>
+											</li>
+											<li>
+												<a href="/wiki/people/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">People</a>
+											</li>
+											<li>
+												<a href="/wiki/cults-and-other-religions/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Cults and Religions</a>
+											</li>
+											<li>
+												<a href="/wiki/slideshows/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Slideshows</a>
+											</li>
+									</ul>
+									<div class="lg:hidden grid grid-cols-2 gap-2 p-2">
+											<div>
+												<a href="/wiki/bible/" class="text-black text-sm font-medium">Bible Study</a>
+											</div>
+											<div>
+												<a href="/wiki/prayer/" class="text-black text-sm font-medium">Prayer</a>
+											</div>
+											<div>
+												<a href="/wiki/marriage/" class="text-black text-sm font-medium">Marriage</a>
+											</div>
+											<div>
+												<a href="/wiki/holidays/" class="text-black text-sm font-medium">Holidays</a>
+											</div>
+											<div>
+												<a href="/wiki/christian-life/" class="text-black text-sm font-medium">Christian Life</a>
+											</div>
+											<div>
+												<a href="/wiki/people/" class="text-black text-sm font-medium">People</a>
+											</div>
+											<div>
+												<a href="/wiki/cults-and-other-religions/" class="text-black text-sm font-medium">Cults and Religions</a>
+											</div>
+											<div>
+												<a href="/wiki/slideshows/" class="text-black text-sm font-medium">Slideshows</a>
+											</div>
+									</div>
+							</li>
+							<li class="relative">
+								<a href="/theology/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 4">
+									Theology
+										<svg class="css-1kirocq rotate-[270deg] h-[6px] float-right mt-[9px] hidden lg:block" viewBox="0 0 13 8"><polygon points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4" fill="#000"></polygon></svg>
+								</a>
+
+									<ul x-show="menuActive == 4" class="w-60 hidden absolute top-0 -right-60 bg-white z-10 shadow-lg rounded-md p-2" :class="{ 'lg:block': menuActive == 4 }">
+											<li>
+												<a href="/wiki/christian-terms/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Christian Terms</a>
+											</li>
+											<li>
+												<a href="/wiki/end-times/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">End Times</a>
+											</li>
+											<li>
+												<a href="/wiki/god/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">God</a>
+											</li>
+											<li>
+												<a href="/wiki/heaven-and-hell/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Heaven and Hell</a>
+											</li>
+											<li>
+												<a href="/wiki/holy-spirit/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Holy Spirit</a>
+											</li>
+											<li>
+												<a href="/wiki/salvation/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Salvation</a>
+											</li>
+											<li>
+												<a href="/wiki/angels-and-demons/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Angels and Demons</a>
+											</li>
+											<li>
+												<a href="/wiki/sin/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Sin</a>
+											</li>
+									</ul>
+									<div class="lg:hidden grid grid-cols-2 gap-2 p-2">
+											<div>
+												<a href="/wiki/christian-terms/" class="text-black text-sm font-medium">Christian Terms</a>
+											</div>
+											<div>
+												<a href="/wiki/end-times/" class="text-black text-sm font-medium">End Times</a>
+											</div>
+											<div>
+												<a href="/wiki/god/" class="text-black text-sm font-medium">God</a>
+											</div>
+											<div>
+												<a href="/wiki/heaven-and-hell/" class="text-black text-sm font-medium">Heaven and Hell</a>
+											</div>
+											<div>
+												<a href="/wiki/holy-spirit/" class="text-black text-sm font-medium">Holy Spirit</a>
+											</div>
+											<div>
+												<a href="/wiki/salvation/" class="text-black text-sm font-medium">Salvation</a>
+											</div>
+											<div>
+												<a href="/wiki/angels-and-demons/" class="text-black text-sm font-medium">Angels and Demons</a>
+											</div>
+											<div>
+												<a href="/wiki/sin/" class="text-black text-sm font-medium">Sin</a>
+											</div>
+									</div>
+							</li>
+							<li class="relative">
+								<a href="/church/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 5">
+									Church
+										<svg class="css-1kirocq rotate-[270deg] h-[6px] float-right mt-[9px] hidden lg:block" viewBox="0 0 13 8"><polygon points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4" fill="#000"></polygon></svg>
+								</a>
+
+									<ul x-show="menuActive == 5" class="w-60 hidden absolute top-0 -right-60 bg-white z-10 shadow-lg rounded-md p-2" :class="{ 'lg:block': menuActive == 5 }">
+											<li>
+												<a href="/church/church-history/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Church History</a>
+											</li>
+											<li>
+												<a href="/church/denominations/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Denominations</a>
+											</li>
+									</ul>
+									<div class="lg:hidden grid grid-cols-2 gap-2 p-2">
+											<div>
+												<a href="/church/church-history/" class="text-black text-sm font-medium">Church History</a>
+											</div>
+											<div>
+												<a href="/church/denominations/" class="text-black text-sm font-medium">Denominations</a>
+											</div>
+									</div>
+							</li>
+							<li class="relative">
+								<a href="/bible/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 6">
+									Bible
+										<svg class="css-1kirocq rotate-[270deg] h-[6px] float-right mt-[9px] hidden lg:block" viewBox="0 0 13 8"><polygon points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4" fill="#000"></polygon></svg>
+								</a>
+
+									<ul x-show="menuActive == 6" class="w-60 hidden absolute top-0 -right-60 bg-white z-10 shadow-lg rounded-md p-2" :class="{ 'lg:block': menuActive == 6 }">
+											<li>
+												<a href="/bible/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Bible Search</a>
+											</li>
+											<li>
+												<a href="/bible/niv/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Books of the Bible</a>
+											</li>
+											<li>
+												<a href="/bible/daily-bible-verse/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Verse of the Day</a>
+											</li>
+											<li>
+												<a href="/bible/year/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Bible in a Year</a>
+											</li>
+											<li>
+												<a href="/bible/commentary/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Commentaries</a>
+											</li>
+											<li>
+												<a href="/bible/large/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Large Print Bible</a>
+											</li>
+											<li>
+												<a href="/bible/dictionary/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Bible Dictionaries</a>
+											</li>
+											<li>
+												<a href="/bible/bible-topics/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Bible Topics</a>
+											</li>
+									</ul>
+									<div class="lg:hidden grid grid-cols-2 gap-2 p-2">
+											<div>
+												<a href="/bible/" class="text-black text-sm font-medium">Bible Search</a>
+											</div>
+											<div>
+												<a href="/bible/niv/" class="text-black text-sm font-medium">Books of the Bible</a>
+											</div>
+											<div>
+												<a href="/bible/daily-bible-verse/" class="text-black text-sm font-medium">Verse of the Day</a>
+											</div>
+											<div>
+												<a href="/bible/year/" class="text-black text-sm font-medium">Bible in a Year</a>
+											</div>
+											<div>
+												<a href="/bible/commentary/" class="text-black text-sm font-medium">Commentaries</a>
+											</div>
+											<div>
+												<a href="/bible/large/" class="text-black text-sm font-medium">Large Print Bible</a>
+											</div>
+											<div>
+												<a href="/bible/dictionary/" class="text-black text-sm font-medium">Bible Dictionaries</a>
+											</div>
+											<div>
+												<a href="/bible/bible-topics/" class="text-black text-sm font-medium">Bible Topics</a>
+											</div>
+									</div>
+							</li>
+							<li class="relative">
+								<a href="/trivia/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 7">
+									Bible Trivia
+										<svg class="css-1kirocq rotate-[270deg] h-[6px] float-right mt-[9px] hidden lg:block" viewBox="0 0 13 8"><polygon points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4" fill="#000"></polygon></svg>
+								</a>
+
+									<ul x-show="menuActive == 7" class="w-60 hidden absolute top-0 -right-60 bg-white z-10 shadow-lg rounded-md p-2" :class="{ 'lg:block': menuActive == 7 }">
+											<li>
+												<a href="/trivia/bibleball/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Bible Baseball</a>
+											</li>
+											<li>
+												<a href="/trivia/jeopardy/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Bible Jeopardy</a>
+											</li>
+											<li>
+												<a href="/trivia/question/fill-in-the-blanks/?challenge=Y" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Trivia Challenge</a>
+											</li>
+											<li>
+												<a href="/trivia/millionquestion/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Saintly Millionaire</a>
+											</li>
+											<li>
+												<a href="/trivia/category/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-medium">Trivia by Category</a>
+											</li>
+									</ul>
+									<div class="lg:hidden grid grid-cols-2 gap-2 p-2">
+											<div>
+												<a href="/trivia/bibleball/" class="text-black text-sm font-medium">Bible Baseball</a>
+											</div>
+											<div>
+												<a href="/trivia/jeopardy/" class="text-black text-sm font-medium">Bible Jeopardy</a>
+											</div>
+											<div>
+												<a href="/trivia/question/fill-in-the-blanks/?challenge=Y" class="text-black text-sm font-medium">Trivia Challenge</a>
+											</div>
+											<div>
+												<a href="/trivia/millionquestion/" class="text-black text-sm font-medium">Saintly Millionaire</a>
+											</div>
+											<div>
+												<a href="/trivia/category/" class="text-black text-sm font-medium">Trivia by Category</a>
+											</div>
+									</div>
+							</li>
+							<li class="relative">
+								<a href="/jesus/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 8">
+									Jesus
+								</a>
+
+							</li>
+							<li class="relative">
+								<a href="/videos/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 9">
+									Videos
+								</a>
+
+							</li>
+							<li class="relative">
+								<a href="/devotionals/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 10">
+									Devotionals
+								</a>
+
+							</li>
+							<li class="relative">
+								<a href="https://www.lifeaudio.com/" class="text-black hover:bg-csorange hover:text-white block p-2 rounded-md text-base font-bold" @mouseover="menuActive = 11">
+									Podcasts
+								</a>
+
+							</li>
+
+						<li class="md:border-t md:pt-2">
+							<a href="https://www.christianity.com/plus/" class="block p-2" title="Plus">
+								<picture><img src="https://media.swncdn.com/christianity/plus/plus-badge-orange.svg" width="56" height="25" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="h-auto w-14" alt="Plus"></picture>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+    <header id="ccom-header" class="sticky top-0 z-[99999]">
+        	<nav class="bg-white w-full min-h-[64px] md:min-h-[74px] xl:min-h-[112px] border-b lg:border-0">
+		<div class="mx-auto px-2 sm:px-4 relative flex items-center md:pt-1.5">
+			<!-- Menu button-->
+			<div class="relative md:flex items-center justify-between h-16 w-[40px] font-helvetica" x-cloak>
+				<div class="absolute inset-y-0 left-0 flex items-center">
+					<button type="button" class="inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
+						aria-controls="mobile-menu" aria-expanded="false" @click="showMobile = !showMobile">
+						<span class="sr-only">Open main menu</span>
+						<svg x-show="!showMobile" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+						<svg x-show="showMobile" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			
+			<!--Search -->
+			<div class="hidden lg:block">
+				<div class="main-search flex relative ml-1" x-data="{ isOpen: false }" x-cloak>
+    <!-- Search icon -->
+    <button type="button" class="p-2" aria-label="Search" @click="isOpen = !isOpen" @keydown.escape="isOpen = false">
+        <svg class="text-[#6E666E] h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.966 56.966">
+            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+        </svg>
+    </button>
+
+    <form x-show="isOpen" method="get" id="desktop-search-form" class="origin-top-right absolute left-9 md:left-11 -top-1.5" :class="{ 'block': isOpen, 'hidden' : !isOpen }" action="/search/"> 
+        <div class="items-center w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <div class="flex items-center flex-1 px-3 space-x-2"> 
+                <!-- Search box -->
+                <input type="text" name="q" placeholder="Search..."
+                    class="w-11/12 py-3 bg-transparent text-[#333] text-base rounded-md focus:outline-none" />
+                <!-- Search icon -->
+                <button type="submit" class="mx-1" aria-label="Search">
+                    <svg class="text-[#B6B2B6] h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.966 56.966">
+                        <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+			</div>
+	
+			<!-- Logo -->
+			<div class="absolute top-[15px] left-[50%] -translate-x-[60%] md:-translate-x-[50%]">
+				<a class="no-underline hover:no-underline" href="https://www.christianity.com/" title="Christianity.com">
+					<picture><img src="https://media.swncdn.com/christianity/logo/logo.svg" width="333" height="50" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="block h-auto w-[180px] md:w-[300px] lg:w-[333px]" alt="Christianity.com"></picture>
+				</a>
+			</div>
+
+			<!-- Membership -->
+			<div class="lg:hidden absolute right-0 pr-4">
+				<a class="btn-plus inline-block mt-1 px-1 bg-csorange rounded-lg" title="Plus" href="https://www.christianity.com/subscribe/" data-google-interstitial="false">
+					<picture><img src="https://media.swncdn.com/christianity/plus/plus-badge-orange.svg" width="64" height="28" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="h-auto w-16 rounded-lg" alt="Plus"></picture>
+				</a>
+			</div>
+			<div class="hidden lg:block absolute right-0 pr-4">
+					<div class="flex space-x-2">
+						<a class="plus-join rounded-full bg-csorange text-white text-base py-2 px-3 text-center" href="https://www.christianity.com/subscribe/" data-google-interstitial="false">
+							<span class="font-bold inline-block align-bottom">JOIN</span>
+							<picture><img src="https://media.swncdn.com/christianity/plus/plus-badge-orange.svg" width="56" height="25" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="inline-block h-auto w-14 -ml-1" alt="Plus"></picture>
+						</a>
+						<a class="plus-login block p-2 text-center" href="#" onclick="event.preventDefault()" data-google-interstitial="false">
+							<span class="">Login</span>
+						</a>
+					</div>
+
+			</div>	
+		</div>
+
+		<!-- Desktop trending links -->
+		<div class="hidden lg:block mt-2 border-y border-b-4">
+			<div class="flex space-x-4 flex-wrap justify-center content-center h-12">
+				<ul class="text-sm text-[#333]">
+						<li class="inline-block mr-6 last:mr-0"><a href="/trivia/">Bible Trivia</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/bible/daily-bible-verse/">Daily Verse</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/bible/">Read the Bible</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/jesus/">Jesus</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/wiki/prayer/">Prayer</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/wiki/bible/">Bible Study</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/wiki/marriage/">Marriage</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/christian-life/">Christian Living</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/theology/">Theology</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/church/church-history/">Church History</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/wiki/end-times/">End Times</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/videos/">Videos</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="/devotionals/">Devotionals</a></li>
+						<li class="inline-block mr-6 last:mr-0"><a href="https://www.lifeaudio.com/">Podcasts</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>	
+
+    </header> 
+    
+    <div b-xx9ix8dtoz>
+
+
+    <div class="container p-5 lg:px-0 md:py-7 pb-10 mx-auto max-w-7xl">
+			<div class="hidden md:flex justify-center content-center">
+				
+				
+
+                <div class="flex flex-wrap justify-center content-center a-none a-d-90"><div id="desktop_header_728x90-1"></div></div>        
+                <div class="flex flex-wrap justify-center content-center a-none a-t-90"><div id="tablet_header_728x90-1"></div></div>
+            </div>
+        <div class="md:mt-7 bg-white">
+
+				<div class="w-full mb-1 lg:mb-7">
+					
+	
+	
+    <h1 class="font-bold text-2xl lg:text-4xl leading-7 lg:leading-10 mb-4 ">What Is Heaven Like According to the Bible?</h1>
+
+	<div class="text-csgray-600">
+		<div class="text-base md:text-xl mt-5 italic md:not-italic"><p>&nbsp;Here are three of the most common ideas about heaven and what the Bible says about them. </p></div>
+		<div class="text-sm	my-3 flex flex-row uppercase">
+			<div class="">
+				
+	<div class="clear">				
+			<div class="article-author flex text-csgray-600 uppercase text-sm leading-5 inline-block align-middle items-center">
+				<a class="underline text-csblue" href="https://www.christianity.com/author/jessica-miller/" title="Jessica Miller">Jessica Miller</a>	
+			</div>
+				<span class="block text-csgray-600 text-sm">Christianity.com Contributing Writer</span>
+	</div>
+
+			</div>
+			<div class="ml-5 pl-5 text-sm text-csgray-600 border-l">
+				<b class="block">Updated</b> 
+				Sep 15, 2023
+			</div>
+		</div>	
+	</div>
+		<div class="md:hidden py-3">
+			<div class="flex flex-wrap justify-center content-center a-none a-m-50"><div id="mobile_header_320x50-1"></div></div>
+		</div>
+	 
+
+				</div>
+
+			<div class="md:flex">
+				<div class="w-full md:flex-1 md:pr-3 md:w-[calc(100%-320px)] border-r-solid md:border-r border-r-csgray-200 md:mr-3">
+					
+
+
+
+<div class="">
+	
+	<div class="relative rounded-md overflow-hidden my-5 lg:mt-0 lg:mb-6">
+        <picture><source srcset="https://i.swncdn.com/media/400w/via/14241-istockgetty-images-plusfotokita.webp" type="image/webp" media="(max-width: 767px)"><source srcset="https://i.swncdn.com/media/400w/via/14241-istockgetty-images-plusfotokita.jpg" type="image/jpeg" media="(max-width: 767px)"><source srcset="https://i.swncdn.com/media/950w/via/14241-istockgetty-images-plusfotokita.webp" type="image/webp"><img src="https://i.swncdn.com/media/950w/via/14241-istockgetty-images-plusfotokita.jpg" width="950" height="496" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-full h-auto" alt="What Is Heaven Like According to the Bible?"></picture>	  
+	</div>
+	
+</div>
+<article>
+	<div class="mt-5" id="abstract">
+		<div class="md:flex">
+			<div class="hidden lg:block w-[12%] relative">
+				<div class="sticky top-[15%]">
+					
+	<div class="relative hidden lg:block">
+		<div class="sticky top-14 text-left w-[60px]">
+			<p class="text-sm text-[#B6B2B6] font-bold mt-2 mb-4 uppercase">SHARE</p>
+			<div class="block mx-auto">
+				<a href="https://facebook.com/sharer/sharer.php?u=https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Facebook"
+					class="rounded-full border-2 bg-white w-[60px] h-[60px] inline-block px-4 py-2" onclick="trackShare()">
+					<div class="w-[26px]">
+						
+
+        <svg class="facebook" style="height:auto;width:26px;fill:#4267B2;" viewBox="0 0 1280 2048"><path d="M959 1524v-264h-157q-86 0 -116 -36t-30 -108v-189h293l-39 -296h-254v-759h-306v759h-255v296h255v218q0 186 104 288.5t277 102.5q147 0 228 -12z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+					</div>					
+				</a>
+				<a href="https://twitter.com/intent/tweet/?text=What Is Heaven Like According to the Bible?&amp;url=https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Twitter"
+					class="rounded-full border-2 bg-white w-[60px] h-[60px] inline-block px-2.5 py-2" onclick="trackShare()">
+					<div class="w-[38px]">
+						
+
+        <svg class="twitter" style="height:auto;width:38px;fill:#1DA1F2;" viewBox="0 0 1920 2048"><path d="M1620 1128q-67 -98 -162 -167q1 -14 1 -42q0 -130 -38 -259.5t-115.5 -248.5t-184.5 -210.5t-258 -146t-323 -54.5q-271 0 -496 145q35 -4 78 -4q225 0 401 138q-105 2 -188 64.5t-114 159.5q33 -5 61 -5q43 0 85 11q-112 23 -185.5 111.5t-73.5 205.5v4q68 -38 146 -41 q-66 44 -105 115t-39 154q0 88 44 163q121 -149 294.5 -238.5t371.5 -99.5q-8 38 -8 74q0 134 94.5 228.5t228.5 94.5q140 0 236 -102q109 21 205 78q-37 -115 -142 -178q93 10 186 50z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+					</div>					
+				</a>
+			</div>
+		</div>
+	</div>
+				
+				</div>
+			</div>
+			<div class="my-5 w-full lg:w-[76%]">
+				<p>When people try to imagine heaven, they sometimes picture ethereal images like angels loafing on clouds or chubby cherubs strumming on harps. In order to be motivated to live for the values of heaven, maintaining a biblical mindset about eternal realities is important.</p><div class="text-center w-[300px] min-h-[250px] mb-4 mx-auto"><div class="flex flex-wrap justify-center content-center a-none a-d-250"><div class="300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-t-250"><div class="tablet_300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div></div><p>But maintaining this perspective is difficult when we are bombarded with numerous misconceptions about heaven in popular culture. Here are three of the most common ideas about heaven and what the Bible says about them.</p><h2>Common Misconceptions about Heaven</h2><p><strong>1. Heaven is where good people will spend eternity.&nbsp;</strong>The scriptures make clear that there is no one who is good enough for heaven (<a href="http://www.christianity.com/bible/search/?ver=niv&q=romans+3%3a11-12">Romans 3:11-12</a>; <a href="http://www.christianity.com/bible/search/?ver=niv&q=psalms+14:3">Psalm 14:3</a>). Any righteousness that we think we have is like a “filthy rag” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=isaiah+64:6">Isaiah 64:6</a>) when held up to the standard of God’s incomparable <a href="https://www.christianity.com/wiki/christian-terms/what-is-holiness-what-can-be-holy.html">holiness</a>.</p><div class="swn-mop-premium-promo my-5"></div><p>Those who think they are <a href="https://www.christianity.com/wiki/salvation/being-a-good-person-not-enough-to-get-into-heaven.html" rel="noopener noreferrer" target="_blank">good enough for heaven</a> are self-deceived and their pride separates them from God who “opposes the proud but gives grace to the humble” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=james+4:6">James 4:6</a>, ESV). In fact, Jesus said the way to heaven is small and narrow, and “only a few find it” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=matthew+7:14">Matthew 7:14</a>).</p><p>One of the scariest warnings Jesus ever gave was about people who will be self-deceived. They will think they are following Christ and many of them will even be doing miracles in his name, but they will not be allowed entrance to heaven. At the end of their earthly lives, Jesus will reveal to them that he never knew them.</p><div class="text-center w-[300px] min-h-[250px] mb-4 mx-auto"><div class="flex flex-wrap justify-center content-center a-none a-d-250"><div class="300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-t-250"><div class="tablet_300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div></div><p>Rather than living for God and his will, they had actually been living for themselves and their own selfish desires (<a href="http://www.christianity.com/bible/search/?ver=niv&q=matthew+7%3a21-23">Matthew 7:21-23</a>). Jesus said, “Whoever wants to be my disciple must deny themselves and take up their cross daily and follow me” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=luke+9:23">Luke 9:23</a>).</p><p><strong>2. Heaven is where Christians will spend eternity.&nbsp;</strong>This might not be as clear in scripture as people think. Some scholars on the topic of heaven argue the opposite. For example, in his book, <a href="https://amzn.to/3wAfCRG" rel="noopener noreferrer" target="_blank"><em>40 Questions About Heaven and Hell</em></a>, Alan Gomes believes that the Bible indicates we will spend eternity on the new earth that God will create. He points to passages such as <a href="http://www.christianity.com/bible/search/?ver=niv&q=2+peter+3:13">2 Peter 3:13</a> and <a href="http://www.christianity.com/bible/search/?ver=niv&q=revelations+21%3a1-2">Revelation 21:1-2</a>.</p><p>Gomes writes, “What possible reason would we have for existing in heaven? It could not be to experience God’s presence more fully, for God will have made his dwelling with us on earth. Nor could it be that heaven provides an especially suitable habitat for resurrected human beings, for God designed a renovated, material earth precisely for that purpose…the New Jerusalem is a literal city that God will situate on the new earth.”</p><div class="text-center w-[300px] min-h-[250px] mb-4 mx-auto"><div class="flex flex-wrap justify-center content-center a-none a-d-250"><div class="300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-t-250"><div class="tablet_300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div></div><p><strong>3. Heaven will be boring.&nbsp;</strong>Randy Alcorn <a href="https://www.epm.org/resources/2013/May/29/will-heaven-be-boring-video/#:~:text=God%20designed%20and%20gave%20us%20our%20taste%20buds%2C,lives%20are%20boring.%20That%20is%20not%20God%E2%80%99s%20fault." rel="noopener noreferrer" target="_blank">comments</a>: “Our belief that Heaven will be boring (and I hear this from people all the time) betrays a heresy — that <em>God</em> is boring. I think that we will see that for the lie it is if we realize that Heaven is God’s place and it’s the person whose place it is that determines the nature of the place….if we’re experiencing the invigorating stirrings of God’s Spirit and trusting Him to daily fill our lives with divine appointments, experiencing the childlike delights of His gracious daily kindnesses to us, then we will know that God is exciting and Heaven is exhilarating. People who love God crave His companionship. To be in His presence will be the very opposite of boredom.”</p><h2>Biblical Description of Heaven</h2><p><a href="http://www.christianity.com/bible/search/?ver=niv&q=1+corinthians+2%3a9-10">1 Corinthians 2:9-10</a> says, “The things God has prepared for those who love him” are “revealed to us by his Spirit.” To counter false, unbiblical notions, we need to study and meditate on “words taught by the Spirit” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=1+corinthians+2:13">1 Corinthians 2:13</a>). Our eternal home is a real place (<a href="http://www.christianity.com/bible/search/?ver=niv&q=john+14%3a1-3">John 14:1-3</a>) where we will reside in real, physical bodies (<a href="https://www.biblestudytools.com/1-corinthians/15.html">1 Corinthians 15</a>) and where we will experience everlasting joys, rewards, and treasures (<a href="http://www.christianity.com/bible/search/?ver=niv&q=matthew+5:12">Matthew 5:12</a>; <a href="http://www.christianity.com/bible/search/?ver=niv&q=matthew+6%3a19-20">Matthew 6:19-20</a>; <a href="http://www.christianity.com/bible/search/?ver=niv&q=luke+6:23">Luke 6:23</a>).</p><div class="text-center w-[300px] min-h-[250px] mb-4 mx-auto"><div class="flex flex-wrap justify-center content-center a-none a-d-250"><div class="300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-t-250"><div class="tablet_300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div></div><p>God dwells there (<a href="http://www.christianity.com/bible/search/?ver=niv&q=revelations+21:3">Revelation 21:3</a>) and the light of Jesus will permeate every corner of this place (<a href="http://www.christianity.com/bible/search/?ver=niv&q=revelations+22:5">Revelation 22:5</a>). Charles Spurgeon <a href="https://www.spurgeon.org/resource-library/sermons/the-lamb-the-light/#flipbook/" rel="noopener noreferrer" target="_blank">said</a>, “To the lover of Jesus it is very pleasant to observe how the Lord Jesus Christ has always stood foremost in glory from before the foundation of the world and will do so as long as eternity shall last.”</p><p>We shall see the Lord “face-to-face” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=1+corinthians+13:12">1 Corinthians 13:12</a>). The fact that our all-knowing, all-powerful Creator will dwell with us and we shall know him in an even more intimate way should be sufficient for the true Christian to rest assured that they will be satisfied there, but the Bible gives us many other glimpses of what this place will be like.</p><p><strong>1. Eradication of evil.&nbsp;</strong>Jesus promised that when he returns, he will send out his angels to “weed out of his kingdom everything that causes sin and all who do evil,” and “then the righteous will shine like the sun in the kingdom of their Father” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=matthew+13%3a41-43">Matthew 13:41-43</a>).</p><div class="text-center w-[300px] min-h-[250px] mb-4 mx-auto"><div class="flex flex-wrap justify-center content-center a-none a-d-250"><div class="300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-t-250"><div class="tablet_300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div></div><p>Picture your favorite place on earth. Now imagine that place completely free from any of the unpleasantries that make you feel sad, uncomfortable, or anxious. Perfect righteousness and justice reign supreme. Every shred of evil has been completely eliminated and, instead, will be the opposite of anything that causes displeasure.</p><div class="recommended text-center w-[320px] mx-auto">
+		<div class="subtitle-orange mb-2 font-normal">Recommended</div>	
+		<div class="mb-2">
+			<a class="block overflow-hidden" href="https://www.christianity.com/wiki/god/how-god-rebuilds-your-life-from-the-inside-out.html?utm_source=direct&utm_medium=recommended-box&utm_campaign=article">
+				<div class="relative">
+					<picture><source srcset="https://i.swncdn.com/media/350w/via/images/2024/06/17/36406/36406-cms-image-size_source_file.webp" type="image/webp"><img src="https://i.swncdn.com/media/350w/via/images/2024/06/17/36406/36406-cms-image-size_source_file.jpg" width="350" height="183" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-full h-auto" alt="How God Rebuilds Your Life from the Inside Out" loading="lazy"></picture>
+					
+   
+				</div>
+				<div class="text-left">
+					<p class="font-bold text-xl leading-6 text-black">How God Rebuilds Your Life from the Inside Out</p>
+				</div>
+			</a>
+		</div>	
+	</div><p>In <a href="http://www.christianity.com/bible/search/?ver=niv&q=revelations+21:4">Revelation 21:4</a>, we see that the eternal state will have “no more sickness, crying, or pain.” What is the opposite of these? Perfect health, joy, and pleasure. In God’s presence, there are “pleasures forevermore” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=psalms+16:11">Psalm 16:11</a>, ESV).&nbsp;Lovers of God will find that the pleasures of heaven eclipse their wildest imaginations (<a href="http://www.christianity.com/bible/search/?ver=niv&q=1+corinthians+2:9">1 Corinthians 2:9</a>).</p><p><strong>2. Perfect friendships.&nbsp;</strong>Think of all the Old Testaments saints or Christians down through history that you would like to meet… Abraham, Moses, Hannah, the Apostle Paul, Hudson Taylor, Amy Carmichael, Jim Elliot, Corrie Ten Boom.</p><div class="text-center w-[300px] min-h-[250px] mb-4 mx-auto"><div class="flex flex-wrap justify-center content-center a-none a-d-250"><div class="300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-t-250"><div class="tablet_300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div></div><p>The Bible says we will be with all of those people but describes them as “just men made perfect” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=hebrews+12%3a22-23">Hebrews 12:22-23</a>). There will no longer be any hint of pride, insecurity, jealousy, discrimination, or competition — nothing that would hinder the sweetest Christian fellowship.</p><p>Think about a time when you felt deep love and respect for fellow believers. Now imagine that love and respect being completely untarnished by any ounce of sin on their part or yours. Imagine that love being multiplied to a perfect degree and encompassing people “from every nation, tribe, people and language” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=revelations+7:9">Revelation 7:9</a>; <a href="http://www.christianity.com/bible/search/?ver=niv&q=daniel+7:14">Daniel 7:14</a>) who are perfectly united in the one aim of loving God and seeking his glory alone.</p><p><strong>3. Learning and growth.&nbsp;</strong>While our knowledge will greatly increase in the eternal state (<a href="http://www.christianity.com/bible/search/?ver=niv&q=1+corinthians+13:12">1 Corinthians 13:12</a>), there is no reason to conclude that we will become all-knowing. William G. T. Shedd <a href="https://biblehub.com/library/shedd/sermons_to_the_natural_man/the_future_state_a_self-conscious_2.htm">states</a>, “By this we are not to understand that the creature’s knowledge, in the future state, will be as extensive as that of the Omniscient One; or that it will be as profound and exhaustive as His. The infinitude of things can be known only by the Infinite Mind.”</p><div class="text-center w-[300px] min-h-[250px] mb-4 mx-auto"><div class="flex flex-wrap justify-center content-center a-none a-d-250"><div class="300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-t-250"><div class="tablet_300x250_dynamic"></div></div><div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div></div><p>Alcorn <a href="https://www.epm.org/blog/2019/Apr/24/learn-heaven">comments</a> on <a href="http://www.christianity.com/bible/search/?ver=niv&q=ephesians+2%3a6-7">Ephesians 2:6-7</a>: “The word <em>show</em> means ‘to reveal.’ The phrase <em>in the coming ages</em> clearly indicates this will be a progressive, ongoing revelation, in which we learn more and more about God’s grace.”</p><p><strong>4. Meaningful work.&nbsp;</strong>Work was part of God’s original plan for humans before the fall (<a href="http://www.christianity.com/bible/search/?ver=niv&q=genesis+2:15">Genesis 2:15</a>). God is always working (<a href="http://www.christianity.com/bible/search/?ver=niv&q=john+5:17">John 5:17</a>) and Jesus said his mission was to finish the work of doing the Father’s will (<a href="http://www.christianity.com/bible/search/?ver=niv&q=john+4:34">John 4:34</a>) to bring God glory (<a href="http://www.christianity.com/bible/search/?ver=niv&q=john+17:4">John 17:4</a>).</p><p>Reagan Rose <a href="https://www.redeemingproductivity.com/will-we-work-in-heaven/" rel="noopener noreferrer" target="_blank">writes</a>, “Imagine all of the things you love about work — the satisfaction, the sense of progress, the knowledge that you have brought something that was disordered into a greater state of order — but imagine all of that without the confusion, sweat, or annoyance that is part and parcel of our work now! Now, that’s a job I wouldn’t mind signing up for.”</p><p>This eternal view of the satisfying aspects of work can impact our perspective on our earthly jobs. Tom Nelson <a href="https://tifwe.org/what-will-work-be-like-in-the-new-heaven-and-earth/" rel="noopener noreferrer" target="_blank">comments</a>, “If our daily work, done for the glory of God and the common good of others, in some way carries over to the new heavens and new earth, then our present work itself is overflowing with immeasurable value and eternal significance.</p><h2>Living for Eternity</h2><p>Knowing the reality of our eternal state and that many of the things we are doing now will continue, only in a perfected condition, should motivate us to live with purpose and godly motivations now. Those who love God will continue to love God and want to obey Him. Those who do not love God would not enjoy heaven anyway and will not be allowed entrance there.</p><p>Peter writes, “What kind of people ought you to be? You ought to live holy and godly lives as you look forward to the day of God and speed its coming….since you are looking forward to this, make every effort to be found spotless, blameless and at <a href="https://www.christianity.com/bible/bible-verses-about-peace-21">peace</a> with him” (<a href="http://www.christianity.com/bible/search/?ver=niv&q=2+peter+3%3a11-14">2 Peter 3:11-14</a>).</p><p><strong>Here are <a href="https://newsletters.christianity.com/direct-top-15-bible-verses-free-printable/" rel="noopener noreferrer" target="_blank">15 Bible Verses Every Christian Should Know By Heart</a> for you to download and share with loved ones!</strong></p><p><span style="font-size: 10px;">Photo Credit: ©iStock/Getty Images Plus/FOTOKITA</span></p><hr><p><strong><em><picture><source type="image/webp" srcset="https://i.swncdn.com/media/150w/via/17962-93316-2jpeg.webp"><img src="https://media.swncdn.com/via/17962-93316-2jpeg.jpg" alt="SWN writer" class="fr-fic fr-dii fr-fil" style="width: 150px;" loading="lazy"></picture></em></strong><strong><em>Jessica Miller</em></strong><em>&nbsp;is the pastor’s wife and outreach director at <a href="https://www.beanblossomchurch.com/">Bean Blossom Community Church</a></em><em>&nbsp;in Indiana, where she loves serving the Lord together with her husband, Jeff. Prior to marriage, her perspective on life was radically altered while living as a single woman in the Middle East. She is passionate about growing in her relationship with the Lord and pointing others to the truth. Her degrees are in biblical studies and counseling and she carries a special passion for cross-cultural ministries. She enjoys learning, traveling, and creating. She <a href="https://twitter.com/mrsjessicajoy" target="_blank">tweets</a></em><em>&nbsp;</em><em>and</em><em>&nbsp;<a href="https://www.myjourneytomotherhoodinterrupted.com/" target="_blank">blogs</a></em><em>&nbsp;</em><em>from time to time.</em></p><hr><p><strong><em>This article is part of our <a href="https://www.christianity.com/wiki/christian-terms/">Christian Terms</a> catalog, exploring words and phrases of Christian theology and history. Here are some of our most popular articles covering Christian terms to help your journey of knowledge and faith:</em></strong></p><p><a href="https://www.christianity.com/wiki/christian-terms/what-is-the-full-armor-of-god-how-can-i-put-on-the-whole-armor-of-god.html">The Full Armor of God</a><br><a href="https://www.christianity.com/wiki/christian-terms/what-does-selah-mean-in-the-bible.html">The Meaning of "Selah"</a><br><a href="https://www.christianity.com/wiki/christian-terms/what-is-grace.html">What Is Grace? Bible Definition and Christian Quotes</a><br><a href="https://www.christianity.com/wiki/christian-terms/what-is-biblical-discernment-and-why-is-it-important-11532182.html">What is Discernment? Bible Meaning and Importance</a><br><a href="https://www.christianity.com/wiki/christian-terms/what-is-prophecy-meaning-of-prophesy.html">What Is Prophecy? Bible Meaning and Examples</a></p>
+			</div>	
+			<div class="hidden lg:block w-[12%]"></div>
+		</div>
+	</div>
+
+
+		<div class="swn-editor-premium-promo"></div>
+</article>
+
+<div class="lg:hidden">
+	
+	<div class="block text-center mb-7 min-h-[100px]">
+		<p class="text-sm text-[#B6B2B6] font-bold mt-5 mb-3">SHARE</p>
+		<div class="block mx-auto">
+			<a href="https://facebook.com/sharer/sharer.php?u=https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Facebook"
+			   class="rounded-full border-2 bg-white w-[60px] h-[60px] mx-3 inline-block px-4 py-2" onclick="trackShare()">
+				<div class="w-[26px]">
+					
+
+        <svg class="facebook" style="height:auto;width:26px;fill:#4267B2;" viewBox="0 0 1280 2048"><path d="M959 1524v-264h-157q-86 0 -116 -36t-30 -108v-189h293l-39 -296h-254v-759h-306v759h-255v296h255v218q0 186 104 288.5t277 102.5q147 0 228 -12z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+				</div>				
+			</a>
+			<a href="https://twitter.com/intent/tweet/?text=What Is Heaven Like According to the Bible?&amp;url=https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html" target="_blank" rel="noopener" aria-label="Share on Twitter"
+		   class="rounded-full border-2 bg-white w-[60px] h-[60px] mx-3 inline-block px-2.5 py-2" onclick="trackShare()">
+				<div class="w-[38px]">
+					
+
+        <svg class="twitter" style="height:auto;width:38px;fill:#1DA1F2;" viewBox="0 0 1920 2048"><path d="M1620 1128q-67 -98 -162 -167q1 -14 1 -42q0 -130 -38 -259.5t-115.5 -248.5t-184.5 -210.5t-258 -146t-323 -54.5q-271 0 -496 145q35 -4 78 -4q225 0 401 138q-105 2 -188 64.5t-114 159.5q33 -5 61 -5q43 0 85 11q-112 23 -185.5 111.5t-73.5 205.5v4q68 -38 146 -41 q-66 44 -105 115t-39 154q0 88 44 163q121 -149 294.5 -238.5t371.5 -99.5q-8 38 -8 74q0 134 94.5 228.5t228.5 94.5q140 0 236 -102q109 21 205 78q-37 -115 -142 -178q93 10 186 50z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+
+				</div>				
+			</a>
+		</div>
+	</div>
+
+</div>
+
+
+    <div class="border-t py-4 mt-4 text-sm">
+        <a class="text-[#004E98] underline" href="/" title="Christianity">Christianity</a>
+        <span class="text-[#666666] px-1">/</span>
+
+                <a class="text-[#004E98] underline" href="/theology/">Theology</a>
+                <span class="text-[#666666] px-1">/</span>
+                <a class="text-[#004E98] underline" href="/wiki/heaven-and-hell/">Heaven and Hell</a>
+                <span class="text-[#666666] px-1">/</span>
+                <span class="font-bold">What Is Heaven Like According to the Bible?</span>
+    </div>
+
+
+	<div class="text-center pt-1">
+		
+    <hr />
+    <div class="my-7">
+        <div class="M914697ScriptRootC1582388" id="M914697ScriptRootC1582388"></div>
+    </div>
+
+	</div>
+	﻿<div la-dynamic-embed-widget data-utm-source="CustomPlayer5" class="mb-6"></div>
+
+				</div>
+					<div class="w-full md:flex-none md:w-[320px] ">
+						
+
+<div class="flex flex-col space-y-5">
+
+
+        <div class="clear">
+            <div class="flex flex-wrap justify-center content-center a-none a-d-250"><div id="desktop_right_300x250-1"></div></div>
+            <div class="flex flex-wrap justify-center content-center a-none a-t-250"><div id="tablet_right_300x250-1"></div></div>
+            <div class="flex flex-wrap justify-center content-center a-none a-m-250"><div class="mobile_300x250_dynamic"></div></div>
+        </div> 
+    
+            <div>
+                <div id='lightbox-inline-form-edfedb12-7772-48a7-bb4f-e6ac43b31e99'></div>
+                <div id='lightbox-inline-form-3d92ee92-4e85-4611-95c0-8db67dd0c87a'></div>
+                <div id='lightbox-inline-form-7e7810b0-4f65-4cf4-98c9-827e01077280'></div>
+            </div>
+
+
+    
+	<div class="today-on">
+		<div class="subtitle-orange mb-4">Today on Christianity.com</div>
+			<div class="border-b mb-5 last:mb-0">
+				<a class="block overflow-hidden" href="https://www.christianity.com/wiki/god/how-god-rebuilds-your-life-from-the-inside-out.html">
+					<div class="relative">
+						<picture><source srcset="https://i.swncdn.com/media/350w/via/images/2024/06/17/36406/36406-cms-image-size_source_file.webp" type="image/webp"><img src="https://i.swncdn.com/media/350w/via/images/2024/06/17/36406/36406-cms-image-size_source_file.jpg" width="350" height="183" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-full h-auto" alt="How God Rebuilds Your Life from the Inside Out" loading="lazy"></picture>
+						
+   
+					</div>
+					<div class="mb-5 pt-3">
+						<p class="font-bold text-xl leading-6">How God Rebuilds Your Life from the Inside Out</p>
+					</div>
+				</a>
+			</div>
+			<div class="border-b mb-5 last:mb-0">
+				<a class="block overflow-hidden" href="https://www.christianity.com/wiki/slideshows/8-incredible-ways-to-embrace-someone-fighting-anxiety.html">
+					<div class="relative">
+						<picture><source srcset="https://i.swncdn.com/media/350w/via/images/2023/06/22/31274/31274-istockgetty-images-plusvladans-3_source_file.webp" type="image/webp"><img src="https://i.swncdn.com/media/350w/via/images/2023/06/22/31274/31274-istockgetty-images-plusvladans-3_source_file.jpg" width="350" height="183" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-full h-auto" alt="8 Incredible Ways to Embrace Someone Fighting Anxiety" loading="lazy"></picture>
+						
+   
+					</div>
+					<div class="mb-5 pt-3">
+						<p class="font-bold text-xl leading-6">8 Incredible Ways to Embrace Someone Fighting Anxiety</p>
+					</div>
+				</a>
+			</div>
+			<div class="border-b mb-5 last:mb-0">
+				<a class="block overflow-hidden" href="https://www.christianity.com/plus/how-to-recognize-and-overcome-shame-through-faith.html" data-google-interstitial="false">
+					<div class="relative">
+						<picture><source srcset="https://i.swncdn.com/media/350w/via/images/2024/06/07/36221/36221-cms-image-size-5_source_file.webp" type="image/webp"><img src="https://i.swncdn.com/media/350w/via/images/2024/06/07/36221/36221-cms-image-size-5_source_file.jpg" width="350" height="183" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-full h-auto" alt="How to Recognize and Overcome Shame through Faith" loading="lazy"></picture>
+						
+    <picture><img src="https://media.swncdn.com/christianity/plus/plus-badge-orange.svg" width="64" height="28" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="absolute top-0 left-0 h-auto w-16 " alt="Plus"></picture>    
+   
+					</div>
+					<div class="mb-5 pt-3">
+						<p class="font-bold text-xl leading-6">How to Recognize and Overcome Shame through Faith</p>
+					</div>
+				</a>
+			</div>
+	</div>
+
+
+        <div class="a-250">
+            
+    <div class="flex flex-wrap justify-center content-center my-2.5">
+        <a data-sa></a>
+    </div>    
+
+        </div>
+    
+	<div class="popular">
+		<div class="subtitle-orange">Most Popular</div>
+		<ol class="list-decimal pl-6 text-xl text-csgray-600">
+				<li class="border-b-solid border-b border-b-csgray-200 py-5">
+					<a href="https://www.christianity.com/wiki/prayer/why-pray-in-the-morning-prayers-to-begin-each-day.html" class="block" title="Morning Prayers to Start Your Day with God">
+						<p class="text-md md:text-xl text-black font-bold leading-6 pb-4">Morning Prayers to Start Your Day with God</p>
+						<span class="text-sm uppercase block">Christianity.com Editorial Staff</span>
+						
+   				
+					</a>
+				</li>		
+				<li class="border-b-solid border-b border-b-csgray-200 py-5">
+					<a href="https://www.christianity.com/wiki/prayer/birthday-blessings-prayers.html" class="block" title="The Best Birthday Prayers to Celebrate Friends and Family&nbsp;">
+						<p class="text-md md:text-xl text-black font-bold leading-6 pb-4">The Best Birthday Prayers to Celebrate Friends and Family&nbsp;</p>
+						<span class="text-sm uppercase block">Christianity.com Editorial Staff</span>
+						
+   				
+					</a>
+				</li>		
+				<li class="border-b-solid border-b border-b-csgray-200 py-5">
+					<a href="https://www.christianity.com/wiki/prayer/healing-prayers.html" class="block" title="35 Prayers for Healing the Sick and Hurting">
+						<p class="text-md md:text-xl text-black font-bold leading-6 pb-4">35 Prayers for Healing the Sick and Hurting</p>
+						<span class="text-sm uppercase block">Christianity.com Editorial Staff</span>
+						
+   				
+					</a>
+				</li>		
+				<li class="border-b-solid border-b border-b-csgray-200 py-5">
+					<a href="https://www.christianity.com/wiki/sin/masturbation-a-sin.html" class="block" title="Is Masturbation a Sin?">
+						<p class="text-md md:text-xl text-black font-bold leading-6 pb-4">Is Masturbation a Sin?</p>
+						<span class="text-sm uppercase block">Heather Riggleman</span>
+						
+   				
+					</a>
+				</li>		
+				<li class="border-b-solid border-b border-b-csgray-200 py-5">
+					<a href="https://www.christianity.com/wiki/prayer/why-pray-at-night-prayers-for-evening-and-bedtime.html" class="block" title="31 Night Prayers: Powerful to Pray Evening Rest and Bedtime">
+						<p class="text-md md:text-xl text-black font-bold leading-6 pb-4">31 Night Prayers: Powerful to Pray Evening Rest and Bedtime</p>
+						<span class="text-sm uppercase block">Christianity.com Editorial Staff</span>
+						
+   				
+					</a>
+				</li>		
+		</ol>
+	</div>
+ 
+
+        
+	<div class="bg-csgray-100 p-4">
+		<div class="subtitle-orange"><a href="https://www.christianity.com/devotionals/">Today's Devotional</a></div>
+		<a class="" href="https://www.christianity.com/devotionals/first15-devotionals/god-gives-peace-first15-june-27-2017.html">
+			<span class="text-xl font-bold py-4 block">God Gives Peace - First15 - June 27</span>
+			<div class="text-base pb-4"><p><em>You will be robbed of peace as soon as you turn your trust away from God and begin to live in your own strength.</em> </p></div>
+			<div class="text-center ">
+				<span class="bg-white rounded-full py-4 font-bold text-base px-6 text-csblue inline-block" href="https://www.christianity.com/devotionals/first15-devotionals/god-gives-peace-first15-june-27-2017.html">Continue reading...</span>
+			</div>	
+		</a>
+	</div>
+
+        
+	<div class="trivia">
+		<div class="subtitle-orange pb-5"><a href="https://www.christianity.com/trivia/">Free Bible Trivia Games</a></div>
+
+			<a class="flex bg-csgray-100 mb-5" href="https://www.christianity.com/trivia/bibleball/">
+				<div class="w-2/3 pt-[11px] pb-[12px] pl-5 text-base">
+					<p class="font-bold">Bible Baseball</p>
+					<p class="text-csblue underline">Play now...</p>
+				</div>
+				<div class="w-1/3 rounded-md block overflow-hidden">
+					<picture><source srcset="https://i.swncdn.com/media/70w/christianity/icons/game-bible-baseball.webp" type="image/webp"><img src="https://i.swncdn.com/media/70w/christianity/icons/game-bible-baseball.png" width="70" height="70" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-[70px] h-[70px] float-right" alt="Bible Baseball" loading="lazy"></picture>
+				</div>
+			</a>
+			<a class="flex bg-csgray-100 mb-5" href="https://www.christianity.com/trivia/millionquestion/">
+				<div class="w-2/3 pt-[11px] pb-[12px] pl-5 text-base">
+					<p class="font-bold">Saintly Millionaire</p>
+					<p class="text-csblue underline">Play now...</p>
+				</div>
+				<div class="w-1/3 rounded-md block overflow-hidden">
+					<picture><source srcset="https://i.swncdn.com/media/70w/christianity/icons/game-saintly-millionaire.webp" type="image/webp"><img src="https://i.swncdn.com/media/70w/christianity/icons/game-saintly-millionaire.png" width="70" height="70" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-[70px] h-[70px] float-right" alt="Saintly Millionaire" loading="lazy"></picture>
+				</div>
+			</a>
+			<a class="flex bg-csgray-100 mb-5" href="https://www.christianity.com/trivia/jeopardy/">
+				<div class="w-2/3 pt-[11px] pb-[12px] pl-5 text-base">
+					<p class="font-bold">Bible Jeopardy</p>
+					<p class="text-csblue underline">Play now...</p>
+				</div>
+				<div class="w-1/3 rounded-md block overflow-hidden">
+					<picture><source srcset="https://i.swncdn.com/media/70w/christianity/icons/game-bible-jeopardy.webp" type="image/webp"><img src="https://i.swncdn.com/media/70w/christianity/icons/game-bible-jeopardy.png" width="70" height="70" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-[70px] h-[70px] float-right" alt="Bible Jeopardy" loading="lazy"></picture>
+				</div>
+			</a>
+			<a class="flex bg-csgray-100 mb-5" href="https://www.christianity.com/trivia/category/">
+				<div class="w-2/3 pt-[11px] pb-[12px] pl-5 text-base">
+					<p class="font-bold">Bible Trivia By Category</p>
+					<p class="text-csblue underline">Play now...</p>
+				</div>
+				<div class="w-1/3 rounded-md block overflow-hidden">
+					<picture><source srcset="https://i.swncdn.com/media/70w/christianity/icons/game-bible-trivia-by-category.webp" type="image/webp"><img src="https://i.swncdn.com/media/70w/christianity/icons/game-bible-trivia-by-category.png" width="70" height="70" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-[70px] h-[70px] float-right" alt="Bible Trivia By Category" loading="lazy"></picture>
+				</div>
+			</a>
+			<a class="flex bg-csgray-100 mb-5" href="https://www.christianity.com/trivia/question/fill-in-the-blanks/?challenge=Y">
+				<div class="w-2/3 pt-[11px] pb-[12px] pl-5 text-base">
+					<p class="font-bold">Bible Trivia Challenge</p>
+					<p class="text-csblue underline">Play now...</p>
+				</div>
+				<div class="w-1/3 rounded-md block overflow-hidden">
+					<picture><source srcset="https://i.swncdn.com/media/70w/christianity/icons/game-bible-trivia-challenge.webp" type="image/webp"><img src="https://i.swncdn.com/media/70w/christianity/icons/game-bible-trivia-challenge.png" width="70" height="70" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-[70px] h-[70px] float-right" alt="Bible Trivia Challenge" loading="lazy"></picture>
+				</div>
+			</a>
+	</div>
+   
+</div>
+					</div>
+			    </div>
+
+    
+<footer class="bg-[#f5f5f5] text-[#666] text-xs border-t">
+    <div class="p-5 md:py-8 max-w-3xl mx-auto lg:px-0">
+        <div class="w-fit mx-auto flex">
+            <a class="bg-gray-300 rounded-full w-[45px] h-[45px] mx-1 py-[2px] px-[11px]" href="https://www.facebook.com/christianitycom" target="_blank" title="Facebook">  
+                <div class="text-[#fff] w-[25px]">		
+                    
+
+        <svg class="facebook" style="height:auto;width:25px;fill:#fff;" viewBox="0 0 1280 2048"><path d="M959 1524v-264h-157q-86 0 -116 -36t-30 -108v-189h293l-39 -296h-254v-759h-306v759h-255v296h255v218q0 186 104 288.5t277 102.5q147 0 228 -12z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+		
+	            </div>                
+            </a>
+            <a class="bg-gray-300 rounded-full w-[45px] h-[45px] mx-1 py-[4px] px-[10px]" href="http://twitter.com/christianitycom" target="_blank" title="Twitter">
+                <div class="text-[#fff] w-[30px]">		
+                    
+
+        <svg class="twitter" style="height:auto;width:30px;fill:#fff;" viewBox="0 0 1920 2048"><path d="M1620 1128q-67 -98 -162 -167q1 -14 1 -42q0 -130 -38 -259.5t-115.5 -248.5t-184.5 -210.5t-258 -146t-323 -54.5q-271 0 -496 145q35 -4 78 -4q225 0 401 138q-105 2 -188 64.5t-114 159.5q33 -5 61 -5q43 0 85 11q-112 23 -185.5 111.5t-73.5 205.5v4q68 -38 146 -41 q-66 44 -105 115t-39 154q0 88 44 163q121 -149 294.5 -238.5t371.5 -99.5q-8 38 -8 74q0 134 94.5 228.5t228.5 94.5q140 0 236 -102q109 21 205 78q-37 -115 -142 -178q93 10 186 50z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+	
+	            </div>                
+            </a>                        
+            <a class="bg-gray-300 rounded-full w-[45px] h-[45px] mx-1 py-[3px] px-[9px]" href="https://www.youtube.com/channel/UCaw3_ORaY9qkDu5vvij1WWQ" target="_blank" title="YouTube">
+                <div class="text-[#fff] w-[35px]">		
+                    
+
+        <svg class="youtube" style="height:auto;width:35px;fill:#fff;" viewBox="0 0 2048 2048"><path d="M971 292v-211q0 -67 -39 -67q-23 0 -45 22v301q22 22 45 22q39 0 39 -67zM1309 291v-46h-90v46q0 68 45 68t45 -68zM343 509h107v94h-312v-94h105v-569h100v569zM631 -60h89v494h-89v-378q-30 -42 -57 -42q-18 0 -21 21q-1 3 -1 35v364h-89v-391q0 -49 8 -73 q12 -37 58 -37q48 0 102 61v-54zM1060 88v197q0 73 -9 99q-17 56 -71 56q-50 0 -93 -54v217h-89v-663h89v48q45 -55 93 -55q54 0 71 55q9 27 9 100zM1398 98v13h-91q0 -51 -2 -61q-7 -36 -40 -36q-46 0 -46 69v87h179v103q0 79 -27 116q-39 51 -106 51q-68 0 -107 -51 q-28 -37 -28 -116v-173q0 -79 29 -116q39 -51 108 -51q72 0 108 53q18 27 21 54q2 9 2 58zM790 1011v210q0 69 -43 69t-43 -69v-210q0 -70 43 -70t43 70zM1509 260q0 -234 -26 -350q-14 -59 -58 -99t-102 -46q-184 -21 -555 -21t-555 21q-58 6 -102.5 46t-57.5 99 q-26 112 -26 350q0 234 26 350q14 59 58 99t103 47q183 20 554 20t555 -20q58 -7 102.5 -47t57.5 -99q26 -112 26 -350zM511 1536h102l-121 -399v-271h-100v271q-14 74 -61 212q-37 103 -65 187h106l71 -263zM881 1203v-175q0 -81 -28 -118q-37 -51 -106 -51q-67 0 -105 51 q-28 38 -28 118v175q0 80 28 117q38 51 105 51q69 0 106 -51q28 -37 28 -117zM1216 1365v-499h-91v55q-53 -62 -103 -62q-46 0 -59 37q-8 24 -8 75v394h91v-367q0 -33 1 -35q3 -22 21 -22q27 0 57 43v381h91z" transform="translate(0,1792) scale(1, -1)"></path></svg>
+			
+	            </div>                
+            </a>           
+        </div>
+        <div class="mt-3">
+            <h4 class="font-bold text-black mb-1">About Christianity.com</h4>            
+            <ul class="mb-4">
+                <li class="inline-block mr-3 mb-1"><a href="https://www.christianity.com/about-christianity.html">About Us</a></li>
+                <li class="inline-block mr-3 mb-1"><a href="https://www.salemwebnetwork.com/advertise-with-us/">Advertise with Us</a></li>
+                <li class="inline-block mr-3 mb-1"><a href="https://www.christianity.com/contact-us.html">Feedback</a></li>
+                <li class="inline-block mr-3 mb-1"><a href="http://www.salemwebnetwork.com/our-brands/terms-of-use">Terms of Use</a></li>
+                <li class="inline-block mr-3 mb-1"><a href="https://www.christianity.com/sitemap.html">Site Map</a></li>
+                <li class="inline-block mr-3 mb-1"><a href="https://salemmedia.com/salem-web-network-privacy-policy/">Privacy Policy</a></li>
+                <li class="inline-block mr-3 mb-1"><a href="https://www.christianity.com/link-to-us.html">Link to Us</a></li>
+                <li class="inline-block mr-3 mb-1"><a href="https://www.christianity.com/rss/">RSS</a></li>
+                <li class="inline-block mr-3 mb-1"><a rel="nofollow noopener" target="_blank" href="https://salemmedia.com/salem-web-network-ccpa-privacy-notice-for-california-residents/">California - CCPA Notice</a></li>
+                <li class="inline-block mr-3 mb-1"><a rel="nofollow noopener" target="_blank" href="https://salemmedia.com/ccpa-sale-opt-out/">California - Do Not Sell My Personal Information</a></li>
+            </ul>
+        </div>
+
+        <div class="hidden md:flex">
+            <div class="flex-none mb-3 md:mr-5">
+                <picture><source srcset="https://i.swncdn.com/media/235w/logo/swn/swn-black.webp" type="image/webp"><img src="https://i.swncdn.com/media/235w/logo/swn/swn-black.png" width="235" height="68" onerror="this.onerror = null;this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src;" class="w-[235px] h-auto" alt="Salem Web Network" loading="lazy"></picture>                
+            </div>
+            <div class="flex-1">         
+
+                <h4 class="font-bold text-black mb-1">Christianity.com is a member of the Salem Web Network of sites including:</h4>
+                <ul>
+                    <li class="inline-block mb-1"><a href="https://www.biblestudytools.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">BibleStudyTools.com</a></li>
+                    <li class="inline-block mb-1">&nbsp;• &nbsp;</li>
+                    <li class="inline-block mb-1"><a href="https://www.crosscards.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">Crosscards.com</a></li>
+                    <li class="inline-block mb-1">&nbsp;• &nbsp;</li>
+                    <li class="inline-block mb-1"><a href="https://www.crosswalk.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">Crosswalk.com</a></li>
+                    <li class="inline-block mb-1">&nbsp;• &nbsp;</li>
+                    <li class="inline-block mb-1"><a href="https://www.godtube.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">GodTube.com</a></li>
+                    <li class="inline-block mb-1">&nbsp;• &nbsp;</li>
+                    <li class="inline-block mb-1"><a href="https://www.ibelieve.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">iBelieve.com</a></li>
+                    <li class="inline-block mb-1">&nbsp;• &nbsp;</li>
+                    <li class="inline-block mb-1"><a href="https://www.lightsource.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">Lightsource.com</a></li>
+                    <li class="inline-block mb-1">&nbsp;• &nbsp;</li>
+                    <li class="inline-block mb-1"><a href="https://www.oneplace.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">Oneplace.com</a></li>
+                    <li class="inline-block mb-1">&nbsp;• &nbsp;</li>
+                    <li class="inline-block mb-1"><a href="https://www.christianheadlines.com/?utm_source=footer&amp;utm_medium=link&amp;utm_campaign=traffic" rel="nofollow">ChristianHeadlines.com</a></li>
+                </ul>                
+            </div> 
+        </div>      
+        <div id="copyright" class="text-center md:pt-5 text-black">
+            <span class="hidden md:block">Copyright © 2024, Christianity.com. All rights reserved. Article Images Copyright © 2024 Getty Images unless otherwise indicated.</span>
+            <span class="md:hidden">Copyright © 2024, Christianity.com. All rights reserved.</span>           
+        </div>
+    </div>       
+</footer>
+
+    <div b-xx9ix8dtoz class="swn-mop-sticky-bottom" id="swn-mop-sticky-bottom"></div>
+
+    
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2396832-14"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    //Call 'set' before config to define mapping
+    gtag('set', {
+        'custom_map': {
+            'dimension2': 'PageType',
+            '1': 'AdsBlocked',
+            'dimension3': 'SubscriberType'
+        }
+    });
+
+    gtag('set', { 'dimension2': 'free', 'dimension3': 'free' })
+    gtag('config', 'UA-2396832-14');
+    gtag('config', 'AW-11021558786'); // Salem Surround
+
+    let isAdBlockEnabled = false;
+
+    function DoGEvent() {
+        gtag('event', 'page_additional_info', {
+            'send_to': 'G-LDQDHWBW77',
+            'AdsBlocked': isAdBlockEnabled || false,
+            'PageType': 'free',
+            'SubscriberType': 'free',
+            'non_interaction': true
+        });
+    }
+    
+    (function AdBlockEnabled() {
+        document.cookie = "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+
+        window.setAdBlockCookie = function (adblocker) {
+            let d = new Date();
+            d.setTime(d.getTime() + 60 * 5 * 1000);
+            document.cookie = "__adblocker=" + (adblocker ? "true" : "false") + "; expires=" + d.toUTCString() + "; path=/";
+        };
+        var script = document.createElement("script");
+        script.setAttribute("async", true);
+        script.setAttribute("src", "https://media.salemwebnetwork.com/adverts/advertisements.js");
+        script.setAttribute("onload", "DoGEvent()");
+        script.setAttribute("onerror", "window.setAdBlockCookie(true); isAdBlockEnabled = true; DoGEvent();");
+        document.getElementsByTagName("head")[0].appendChild(script);
+        })() 
+            
+</script>
+
+<script async src="https://www.lightboxcdn.com/vendor/bc19182f-96dd-4199-ba0d-be806e2f3167/lightbox_speed.js"></script>
+
+<script async src="/js/main.bundle.js?v=NJaXeKwUwlRbLcuCNxoOuM0xG8u2nCo5nIK3U-TkYN0"></script>
+
+    <div id="login-form" data-sandbox="false"></div>
+    <script async src="https://experience.tinypass.com/xbuilder/experience/load?aid=E8I5BL4opu"></script>
+        <script>
+            window.tp = window["tp"] || [];
+            window.tp.push(["setTags", ["swn:article","Bible","faith","heaven"]]);
+        </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            //MGID
+            var mgLoaded = false;
+            const mgContentObserver = new IntersectionObserver((entries, mgObserver) => {
+                entries.forEach((entry) => {
+                        if (entry.isIntersecting && !mgLoaded) {
+                        const lazyRc = entry.target
+                        console.log("Scrolled to MGID.")
+
+                        function test_adblock(func, id) {
+                            var t = '0.1.2-dev',
+                                el = document.createElement('div');
+                            el.id = id ? id : 'sponsorText';
+                            el.appendChild(document.createTextNode('&nbsp;'));
+                            Object.assign(el.style, {
+                                left: '-999px',
+                                position: 'absolute'
+                            });
+                            document.body.appendChild(el);
+                            setTimeout(function () {
+                                if (el) {
+                                    var o = el.clientHeight === 0;
+                                    func(o, t);
+                                    document.body.removeChild(el);
+                                }
+                            }, 200);
+                        }
+                        test_adblock(function (is_blocked) {
+                            var script = document.createElement('script');
+                            script.src = 'https://jsc.mgid.com/c/h/christianity.com.1582388.js';
+                            script.async = true;
+                            document.body.appendChild(script);
+                        })
+
+                        mgLoaded = true
+                    }
+                })
+            });
+                const arrMg = document.querySelectorAll('div#M914697ScriptRootC1582388')
+                arrMg.forEach((v) => {
+                mgContentObserver.observe(v);
+            })
+        })
+    </script>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            //Fixed Ad
+            var adLoaded = false;
+            const zcastAdObserver = new IntersectionObserver((entries, adObserver) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !adLoaded) {
+                        const lazyAd = entry.target
+                        console.log("Scrolled to Zcast-sa.")                        
+                        
+                        var body = document.getElementsByTagName('body')[0];
+                        var js = document.createElement("script");
+                        js.defer = true;
+                        js.src = "https://zcast-api.salemwebnetwork.com/sa.js?v=1";
+                        body.appendChild(js);                        
+
+                        adLoaded = true                        
+                    }
+                })
+            });
+            const arr = document.querySelectorAll('[data-sa]')
+            arr.forEach((v) => { zcastAdObserver.observe(v); })
+
+            //Life Audio Embed
+            const ladewTag = "la-dynamic-embed-widget", observer = new IntersectionObserver(e => { let t = e[0]; if (t.isIntersecting) { observer.unobserve(t.target); let r = document.createElement("script"), s = document.querySelector(`[${ladewTag}]`), a = s.getAttribute("data-utm-source") || "", l = (s.getAttribute("data-title-css") || "").replaceAll(" ", ","), c = (s.getAttribute("data-desc-css") || "").replaceAll(" ", ","); r.src = `https://www.lifeaudio.com/widgets/dynamic-embed?titleCss=${l}&descCss=${c}&utmSource=${a}`, document.body.appendChild(r) } });
+            const laArr = document.querySelectorAll(`[${ladewTag}]`)
+            laArr.forEach((v) => { observer.observe(document.querySelector(`[${ladewTag}]`)); })
+        })
+    </script> 
+
+<script async src="https://api.pushnami.com/scripts/v1/pushnami-adv/60c2775acd8eda0011eb13ca" onload="Pushnami.update().prompt();"></script>
+
+
+<script>
+    setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+        fbq('dataProcessingOptions', ['LDU'], 0, 0);
+        fbq('init', '228399734010278');
+        fbq('track', "PageView");
+        fbq('track', 'ViewContent');
+    }, 3000);
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=228399734010278&ev=PageView&noscript=1&dpo=LDU&dpoco=0&dpost=0" /></noscript>
+ 
+
+<script async src='https://services.brid.tv/player/build/brid.min.js'></script><script defer src="//b-code.liadm.com/a-06us.min.js" charset="utf-8"></script>
+
+
+<script>
+    window.zmp = window.zmp || {}
+    window.zmp.cmd = window.zmp.cmd || []
+</script>
+
+<div x-data="{}" x-init="
+    window.CB.Zeta.Init('christianity', 'article', 'CCOM-11831624')
+    window.CB.Zeta.UpdateUser({EmailAddress: '', FirstName: '', LastName: ''})"></div>
+
+<script>
+    function trackShare() {
+        window.CB.Zeta.TrackShare('CCOM-11831624', 'article', 'https://www.christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html');
+    }
+</script>
+
+
+
+<script>
+
+  (function() {
+      let _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+      _sf_async_config.uid = 66097;
+      _sf_async_config.domain = 'christianity.com';
+      _sf_async_config.flickerControl = false;
+              
+
+        _sf_async_config.path = 'christianity.com/wiki/heaven-and-hell/what-is-heaven-like-according-to-the-bible.html';
+                    
+      _sf_async_config.sections = 'Heaven and Hell';
+      _sf_async_config.authors = 'Jessica Miller';
+      /** CONFIGURATION END **/
+      function loadChartbeat() {
+          let e = document.createElement('script');
+          let n = document.getElementsByTagName('script')[0];
+          e.type = 'text/javascript';
+          e.async = true;
+          e.src = '//static.chartbeat.com/js/chartbeat.js';
+          n.parentNode.insertBefore(e, n);
+      }
+      loadChartbeat();
+    })(); 
+</script>
+
+    
+	
+
+</body>
+</html>

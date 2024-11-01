@@ -1,0 +1,6 @@
+covered a new neuron type that learns to recognize and select
+    from multiple inputs. This new neuron type is called Multimodal Neurons.
+    We show that they can be used to learn a sparse attention mechanism,
+    which can be used for machine translation.
+
+

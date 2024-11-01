@@ -1,0 +1,9 @@
+covered a new type of neuron that can be used in deep neural networks to learn representations of data that are invariant to changes in the ordering of its features.
+    https://openai.com/blog/multimodal-neurons/
+
+sparse transformer
+    https://openai.com/blog/sparse-transformer/
+
+sparse attention
+    v +/"Sparse Attention" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+

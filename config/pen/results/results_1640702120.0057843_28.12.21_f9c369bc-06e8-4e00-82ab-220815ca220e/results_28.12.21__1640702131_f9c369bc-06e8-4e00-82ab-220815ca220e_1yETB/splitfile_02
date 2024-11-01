@@ -1,0 +1,10 @@
+- 1. HTTP
+- 2. HTML
+- 3. CSS
+- 4. Javascript (Programming Language)
+- 5. AJAX (Programming Language)
+"""
+
+    print("Correct\n") if correct == result else print("Incorrect...\n")
+
+    print("test_result() test end...")

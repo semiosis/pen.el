@@ -1,0 +1,27 @@
+---
+title: a list of reasons why
+prompt-version: 1
+tags: life
+doc: This is a generic completer.
+prompt: |
+  I had to write down all the reasons why <1>
+  This is my list:
+  -
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1
+cache: true
+stop-sequences:
+- "\n\n"
+vars:
+- text
+preprocessors:
+- sed -z -e 's/\s\+$//' -e 's/\.$//' -e 's/$/./'
+examples:
+- Recycling is good for the world
+completion: off
+var-defaults:
+- "(pen-preceding-text)"
+postprocessor: sed -e 's/^- //' -e 's/^-//' | sed 's/^/- /' | uniqnosort | sed -z
+  's/^/\n/'

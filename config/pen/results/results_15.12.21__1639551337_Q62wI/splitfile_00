@@ -1,0 +1,9 @@
+
+
+[ -z "$fp" ] && exit 1
+[ -f "$fp" ] || exit 2
+
+DIR=$(dirname $0);
+
+header=$(${DIR}/header.sh $fp)
+

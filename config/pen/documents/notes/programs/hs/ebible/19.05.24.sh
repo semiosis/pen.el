@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "II Thessalonians 2:14" "#" "<==" "II"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "ebible" "-m" "ESV" "John 7:18" "#" "<==" "John"
+cd /root/notes;  "ebible" "-m" "ESV" "Daniel \"7:13\\e2\\80\\9314\"" "#" "<==" "Daniel"
+cd /root/notes;  "ebible" "-m" "ESV" "Daniel 7:13-14" "#" "<==" "Daniel"
+cd /root/notes;  "ebible" "-m" "ESV" "Ezekiel 5:10-12" "#" "<==" "Ezekiel"

@@ -1,0 +1,5 @@
+"{-# LANGUAGE KindSignatures #-}" is a language extension that allows you to write type signatures for data types and newtypes. It is enabled by default in GHC 8.6.1 and later.
+
+The syntax for a kind signature is similar to that of a type signature, but with the keyword "kind" preceding the "::" symbol.
+
+The following example defines a newtype, "Temp", which has a single constructor, "Temp", and a single field, "temp". The field's type is given a kind

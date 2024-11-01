@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Set Search Parameters" />
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum" />
+	<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/script.js?rc2"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1";
+		var smf_images_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images";
+		var smf_scripturl = "http://excalibur.haba.dk/smf/index.php";
+	// ]]></script>
+	<title>Set Search Parameters</title>
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/style.css?rc2" />
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/default/print.css?rc2" media="print" />
+	<link rel="help" href="http://excalibur.haba.dk/smf/index.php?action=help" target="_blank" />
+	<link rel="search" href="http://excalibur.haba.dk/smf/index.php?action=search" />
+	<link rel="contents" href="http://excalibur.haba.dk/smf/index.php" />
+	<link rel="alternate" type="application/rss+xml" title=" - RSS" href="http://excalibur.haba.dk/smf/index.php?type=rss;action=.xml" />
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+</head>
+<body>
+	<div id="headerarea" style="padding: 12px 30px 4px 30px;">
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="position: relative;">
+			<tr>
+				<td colspan="2" valign="bottom" style="padding: 5px; white-space: nowrap;">
+					<span style="font-family: Georgia, sans-serif; font-size: xx-large;"></span>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top">
+						<table width="99%" cellspacing="0" cellpadding="5" class="tborder"><tr>
+						<td class="titlebg" width="100%">User Info</td></tr><tr><td width="100%" valign="top" class="windowbg2" style="font-family: verdana, arial, sans-serif; font-size: x-small;">
+							Welcome, <b>Guest</b>. Please <a href="http://excalibur.haba.dk/smf/index.php?action=login">login</a> or <a href="http://excalibur.haba.dk/smf/index.php?action=register">register</a>.<br />
+							May 26, 2008, 09:14:24 PM<br />
+
+							<form action="http://excalibur.haba.dk/smf/index.php?action=login2" method="post" style="margin: 3px 1ex 1px 0; text-align:right;">
+								<input type="text" name="user" size="10" /> <input type="password" name="passwrd" size="10" />
+								<select name="cookielength">
+									<option value="60">1 Hour</option>
+									<option value="1440">1 Day</option>
+									<option value="10080">1 Week</option>
+									<option value="302400">1 Month</option>
+									<option value="-1" selected="selected">Forever</option>
+								</select>
+								<input type="submit" value="Login" /><br />
+								Login with username, password and session length
+							</form>
+						</td></tr></table>
+
+					<form action="http://excalibur.haba.dk/smf/index.php?action=search2" method="post" style="margin: 0; margin-top: 7px;">
+						<b>Search: </b><input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 8ex;" />&nbsp;
+						<a href="http://excalibur.haba.dk/smf/index.php?action=search;advanced">Advanced search</a>
+						<input type="hidden" name="advanced" value="0" />
+					</form>
+
+				</td>
+				<td width="262" style="padding-left: 5px;" valign="top">
+					<br /><table width="99%" cellspacing="0" cellpadding="5" class="tborder">
+					<tr>
+					<td class="titlebg" width="100%">Key Stats</td>
+					</tr>
+					<tr>
+					<td class="windowbg2" width="100%" style="font-size: x-small"><b>3016</b> Posts in <b>228</b> Topics by <b>110</b> Members<br />
+							Latest Member: <b> <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=123">Jack Sparrow</a></b>
+						</td></tr></table>
+				</td>
+			</tr>
+		</table>
+				<a href="http://excalibur.haba.dk/smf/index.php"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/home.gif" alt="Home" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=help"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/help.gif" alt="Help" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=search"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/search.gif" alt="Search" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=login"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/login.gif" alt="Login" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=register"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/register.gif" alt="Register" style="margin: 2px 0;" border="0" /></a>
+	</div>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td id="bodyarea" style="padding: 1ex 20px 2ex 20px;">
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		function selectBoards(ids)
+		{
+			var toggle = true;
+
+			for (i = 0; i < ids.length; i++)
+				toggle = toggle & document.forms.searchform["brd" + ids[i]].checked;
+
+			for (i = 0; i < ids.length; i++)
+				document.forms.searchform["brd" + ids[i]].checked = !toggle;
+		}
+
+		function expandCollapseBoards()
+		{
+			var current = document.getElementById("searchBoardsExpand").style.display != "none";
+
+			document.getElementById("searchBoardsExpand").style.display = current ? "none" : "";
+			document.getElementById("exandBoardsIcon").src = smf_images_url + (current ? "/expand.gif" : "/collapse.gif");
+		}
+	// ]]></script>
+	<form action="http://excalibur.haba.dk/smf/index.php?action=search2" method="post" accept-charset="ISO-8859-1" name="searchform" id="searchform">
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td><span class="nav" style="font-size: smaller;"><b><a href="http://excalibur.haba.dk/smf/index.php" class="nav"></a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php?action=search;params=YWR2YW5jZWR8J3wwfCJ8YnJkfCd8MSwxMiwxMSw2LDUsOCw0LDJ8InxzaG93X2NvbXBsZXRlfCd8fCJ8c3ViamVjdF9vbmx5fCd8fCJ8c29ydHwnfHJlbGV2YW5jZXwifHNvcnRfZGlyfCd8ZGVzY3wifHNlYXJjaHwnfA==" class="nav">Search</a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php?action=search2;params=YWR2YW5jZWR8J3wwfCJ8YnJkfCd8MSwxMiwxMSw2LDUsOCw0LDJ8InxzaG93X2NvbXBsZXRlfCd8fCJ8c3ViamVjdF9vbmx5fCd8fCJ8c29ydHwnfHJlbGV2YW5jZXwifHNvcnRfZGlyfCd8ZGVzY3wifHNlYXJjaHwnfA==" class="nav">Search Results</a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php?action=search" class="nav">Search</a></b></span></td>
+			</tr>
+		</table>
+
+		<table border="0" cellspacing="0" cellpadding="6" align="center" class="tborder">
+			<tr class="titlebg">
+				<td>Set Search Parameters</td>
+			</tr>
+			<tr>
+				<td class="windowbg">
+					<div style="color: red; margin: 1ex 0 2ex 3ex;">
+						Did you forget to put something to search for?
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="windowbg">
+					<b>Search for:</b><br />
+					<table border="0" cellpadding="5" cellspacing="0"><tr>
+						<td><input type="text" name="search" size="40" /></td>
+						<td>&nbsp;<input type="submit" name="submit" value="Search" /></td>
+					</tr>
+					<tr>
+						<td align="right" class="smalltext"><i>e.g.</i> Orwell "Animal Farm" -movie</td>
+						<td></td>
+					</tr>
+					</table><br /><br />
+					<a href="http://excalibur.haba.dk/smf/index.php?action=search;advanced" onclick="this.href += ';search=' + document.searchform.search.value;">Advanced search</a>
+					<input type="hidden" name="advanced" value="0" />
+				</td>
+			</tr>
+		</table>
+	</form></td>
+	</tr></table>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			function smfFooterHighlight(element, value)
+			{
+				element.src = smf_images_url + "/" + (value ? "h_" : "") + element.id + ".gif";
+			}
+		// ]]></script>
+		<table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1 RC3</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF &copy; 2001-2006, Lewis Media</a>
+		</span><br /><font size="1">Theme by Nesianstyles | Buttons by Andrea</font>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>

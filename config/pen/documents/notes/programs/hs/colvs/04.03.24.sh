@@ -1,0 +1,4 @@
+cd /root/.pen/documents/notes;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_35873bb448_genesis-15-6-and-he-believed-the-lord-and-he-counted-it-to-him-as-righteousness-esv.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_35873bb448_genesis-15-6-and-he-believed-the-lord-and-he-counted-it-to-him-as-righteousness-esv.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_35873bb448_genesis-15-6-and-he-believed-the-lord-and-he-counted-it-to-him-as-righteousness-esv.txt" "#" "<==" "pen-xa"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_e284a1b4e8_romans-5-13-for-sin-indeed-was-in-the-world-before-the-law-was-given-but-sin-is-not-counted-where-there-is-no-law-esv.txt" "#" "<==" "pen-xa"

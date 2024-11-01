@@ -1,0 +1,13 @@
+glTF
+    A standard file format for three-
+    dimensional scenes and models.
+    
+    A glTF file uses one of two possible file
+    extensions: .gltf or .glb.
+    
+    Both .gltf and .glb files may reference
+    external binary and texture resources.
+    
+    Alternatively, both formats may be self-
+    contained by directly embedding binary
+    data buffers.

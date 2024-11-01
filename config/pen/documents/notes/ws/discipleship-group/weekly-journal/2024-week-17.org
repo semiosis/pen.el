@@ -1,0 +1,84 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 17
+
+* D-Group weekly session notes
+Started working on it: <2024-04-21 Sun>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=z6vR_FV7s7c][4 Hours Best TOP 27 Worship Piano Instrumental for Prayer and Meditation e,?e??i??i?? - YouTube]]
+
+| Scripture Memory NT | NT260 Passage      | Foundations260 Passage | Scripture Memory OT | OT260 Passage |
+|---------------------+--------------------+------------------------+---------------------+---------------|
+| [[sh:bible-read-passage nasb Matthew 5:33-35 ][Matthew 5:33-35]]     | [[sh:bible-study-passage nasb II Corinthians 3-7 ][II Corinthians 3-7]] | [[sh:bible-study-passage nasb II Samuel 1-7 ][II Samuel 1-7]]          | [[sh:bible-read-passage nasb Psalm 84:11 ][Psalm 84:11]]         | [[sh:bible-study-passage nasb Numbers 13-20 ][Numbers 13-20]] |
+|                     |                    | [[sh:bible-study-passage nasb Psalm 18 ][Psalm 18]]               |                     | [[sh:bible-study-passage nasb Psalm 81-85 ][Psalm 81-85]]   |
+|                     |                    | [[sh:bible-study-passage nasb Psalm 23 ][Psalm 23]]               |                     |               |
+|                     |                    | [[sh:bible-study-passage nasb II Samuel 9 ][II Samuel 9]]            |                     |               |
+|                     |                    | [[sh:bible-study-passage nasb II Samuel 11-12 ][II Samuel 11-12]]        |                     |               |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:33-35
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:33
+‾‾‾‾‾‾‾‾‾‾‾‾
+“Again, you have heard that the ancients were
+told, ‘You shall not make false vows, but shall
+fulfill your vows to the Lord.’
+
+Matthew 5:34
+‾‾‾‾‾‾‾‾‾‾‾‾
+But I say to you, make no oath at all, either by
+heaven, for it is the throne of God,
+
+Matthew 5:35
+‾‾‾‾‾‾‾‾‾‾‾‾
+or by the earth, for it is the footstool of His
+feet, or by Jerusalem, for it is the city of the
+great King.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Psalm 84:11
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Psalms 84:11
+‾‾‾‾‾‾‾‾‾‾‾‾
+For the LORD God is a sun and shield; The LORD
+gives grace and glory; No good thing does He
+withhold from those who walk uprightly.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

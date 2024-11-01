@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "Genesis" "8:14-20" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Genesis" "2:16-17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Genesis" "8:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Genesis" "8:21-22" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Genesis" "8:20-22" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Genesis" "2:16-17" "#" "<==" "bash"
+cd /root/notes;  "Genesis" "8:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Genesis" "8:22" "#" "<==" "zsh"

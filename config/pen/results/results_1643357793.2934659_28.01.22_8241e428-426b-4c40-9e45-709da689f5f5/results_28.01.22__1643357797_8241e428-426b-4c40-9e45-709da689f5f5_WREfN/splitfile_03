@@ -1,0 +1,10 @@
+"
+
+# The first step is to tokenize the text.
+from nltk.tokenize import word_tokenize
+
+# Tokenize the text
+tokens = word_tokenize(text)
+
+# Next, we'll stem the tokens.
+

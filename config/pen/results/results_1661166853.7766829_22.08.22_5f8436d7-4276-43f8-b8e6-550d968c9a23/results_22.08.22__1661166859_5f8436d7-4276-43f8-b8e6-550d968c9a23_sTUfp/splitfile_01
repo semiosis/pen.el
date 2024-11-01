@@ -1,0 +1,9 @@
+pper)
+
+main :: IO ()
+main = do
+
+printf "The answer is: %s
+" (toUpper $ head $ readFile "input.txt")
+
+This will print "The answer is: ABCD

@@ -1,0 +1,88 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 19
+
+* D-Group weekly session notes
+Started working on it: <2024-05-10 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=atM1QICvvtI][Praise - Elevation worship | Instrumental Worship | Soaking Music | Deep Prayer - YouTube]]
+
+| Scripture Memory NT | NT260 Passage     | Foundations260 Passage | Scripture Memory OT | OT260 Passage   |
+|---------------------+-------------------+------------------------+---------------------+-----------------|
+| [[sh:bible-read-passage nasb Matthew 5:38-40 ][Matthew 5:38-40]]     | [[sh:bible-study-passage nasb II Corinthians 13 ][II Corinthians 13]] | [[sh:bible-study-passage nasb I Kings 2 ][I Kings 2]]              | [[sh:bible-read-passage nasb Deuteronomy 1:29-30 ][Deuteronomy 1:29-30]] | [[sh:bible-study-passage nasb Deuteronomy 1-5 ][Deuteronomy 1-5]] |
+|                     | [[sh:bible-study-passage nasb Mark 1-4 ][Mark 1-4]]          | [[sh:bible-study-passage nasb I Kings 6 ][I Kings 6]]              |                     | [[sh:bible-study-passage nasb Psalm 91-95 ][Psalm 91-95]]     |
+|                     |                   | [[sh:bible-study-passage nasb I Kings 8-9 ][I Kings 8-9]]            |                     |                 |
+|                     |                   | [[sh:bible-study-passage nasb Psalm 148-150 ][Psalm 148-150]]          |                     |                 |
+|                     |                   | [[sh:bible-study-passage nasb Psalm 119:129-176 ][Psalm 119:129-176]]      |                     |                 |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:38-40
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:38
+‾‾‾‾‾‾‾‾‾‾‾‾
+“You have heard that it was said, ‘An eye for
+an eye, and a tooth for a tooth.’
+
+Matthew 5:39
+‾‾‾‾‾‾‾‾‾‾‾‾
+But I say to you, do not resist an evil person;
+but whoever slaps you on your right cheek, turn
+the other to him also.
+
+Matthew 5:40
+‾‾‾‾‾‾‾‾‾‾‾‾
+If anyone wants to sue you and take your shirt,
+let him have your coat also.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Deuteronomy 1:29-30
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Deuteronomy 1:29
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Then I said to you, ‘Do not be shocked, nor
+fear them.
+
+Deuteronomy 1:30
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+The LORD your God who goes before you will
+Himself fight on your behalf, just as He did for
+you in Egypt before your eyes,
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

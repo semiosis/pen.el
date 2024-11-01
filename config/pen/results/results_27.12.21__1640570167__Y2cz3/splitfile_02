@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Systemd.service(5) - System and service manager</title>
+<style>
+body {
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+p {
+    margin: 0.67em 0;
+}
+ul {
+    list-style-type: disc;
+}
+li {
+    margin: 0.67em 0;  /* same as p */
+}
+
+  </style>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="https://www.freedesktop.org/software/systemd/man/systemd.css">
+
+  <script src="https://www.freedesktop.org/software/systemd/man/systemd.js"></script>
+
+  <script type="text/javascript">
+
+      function toggle_visibility(id) {
+
+          var e = document.getElementById(id);
+
+          if (e) {
+
+              if (e.style.display == 'block') {
+
+                  e.style.display = 'none';
+
+              } else {
+
+                  e.style.display = 'block';
+
+              }
+
+          } else { // no element found, so do nothing! }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} }} }} }} }} }} }} }} }}}}}} }}}}}} }}}}}} }}}}}} }}}}}} }}}}}} }}}}}} }{{{{{{{{{{{{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{{{{{{{{{{{{{{{{{{<br />\n\n\n\n\n\n\n\n\n\n<a id="top"></a><h1 class="title">Systemd</h1><p class="subtitle"><a href="/software/" title="Software home page">Software home page</a></p><hr />\n<div class="sectionbody">\n<ul class="sectlevel1"><li><p>Systemd is a system and service manager for Linux, compatible with SysV and LSB init scripts.</p></li><li><p>Systemd provides aggressive parallelism and uses a micro-service approach, with systemd units as the basic building blocks of an application.</p></li><li><p>Systemd is a replacement for sysvinit. It can be used to control the systemd daemon itself (see systemd.service(5) for details) as well as other system daemons and services.</p></li><li><p>The systemd daemon prepares the system for the root user and starts the login manager (systemd-logind.service).</p></li><li><p>The login manager reads settings from /etc/systemd/logind.conf and starts the users&#39; sessions.</p></li><li><p>Users may invoke programs via su(1) or sudo.</p></li></ul>\n</div>\n<hr />\n<div class="sectionbody">\n<ul class="sectlevel1"><li><a href="#top"><span class="toc-item-num">1&nbsp;&nbsp;</span>Top</a></li><li><a href="#description"><span class="toc-item-num">2&nbsp;&nbsp;</span>Description</a></li><li><a href="#1.-Description"><span class="toc-item-num">3&nbsp;&nbsp;</span>1. Description</a></li><ul class="sectlevel2"><ul class="sectlevel3"><ul class="sectlevel4"><ul class="sectlevel5"></ul></ul></ul></ul></ul></div>\n<hr />\n<div class="sectionbody">\n<ul class="sectlevel1"><li><a href="#2.-Usage"><span class="toc-item-num">4&nbsp;&nbsp;</span>2. Usage</a></li><ul class="sectlevel2"><ul class="sectlevel3"><ul class="sectlevel4"></ul></ul></ul></ul></div>\n<hr />\n<div class="sectionbody">\n<p>Systemd is a system and service manager for Linux, compatible with SysV and LSB init scripts.</p>\n</div>\n<hr />\n<div class="sectionbody">\n<p>Systemd provides aggressive parallelism and uses a micro-service approach, with systemd units as the basic building blocks of an application.</p>\n</div>\n<hr />\n<div class="sectionbody">\n<p>Systemd is a replacement for sysvinit. It can be used to control the systemd daemon itself (see systemd.service(5) for details) as well as other system daemons and services.</p>\n</div>\n<hr />\n<div class="sectionbody">\n<p>The systemd daemon prepares the system for the root user and starts the login manager (systemd-logind.service).</p>\n</div>\n<hr />
+

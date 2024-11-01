@@ -1,0 +1,131 @@
+Site Reliability Engineer
+SRE
+    Responsible for availability, latency,
+    performance, efficiency, change
+    management, monitoring, emergency
+    response, and capacity planning.
+    
+    Create a bridge between development and
+    operations by applying a software
+    engineering mindset to system
+    administration topics.
+
+    - service discovery
+    - the ability to horizontally scale with ease
+
+forward proxy
+    An intermediary for its associated clients
+    to contact any server.
+
+reverse proxy
+
+    A type of proxy server that retrieves
+    resources on behalf of a client from one
+    or more servers.
+    
+    These resources are then returned to the
+    client, appearing as if they originated
+    from the proxy server itself.
+
+reverse proxy vs forward proxy
+    forward proxy
+        An intermediary for its associated
+        clients to contact any server.
+
+    reverse proxy
+        An intermediary for its associated
+        servers to be contacted by any client.
+    
+    In other words, a proxy acts on behalf of
+    the client(s), while a reverse proxy acts
+    on behalf of the server(s).
+
+intermediary
+    A person who acts as a link between people
+    in order to try to bring about an
+    agreement or reconciliation; a mediator.
+
+load balancer
+    [reverse proxy]
+
+    A device that acts as a reverse proxy and
+    distributes network or application traffic
+    across a number of servers.
+    
+    Load balancers are used to increase
+    capacity (concurrent users) and
+    reliability of applications.
+
+SAS
+Serial Attached SCSI
+    A point-to-point serial protocol that
+    moves data to and from computer-storage
+    devices such as hard drives and tape
+    drives.
+    
+    SAS replaces the older Parallel SCSI bus
+    technology that first appeared in the
+    mid-1980s.
+    
+    SAS, like its predecessor, uses the
+    standard SCSI command set.
+
+vertical scaling
+    Adding more resources (CPU/RAM/DISK) to
+    your server (database or application
+    server is still remains one) as on demand.
+    
+    Vertical Scaling is most commonly used in
+    applications and products of middle-range
+    as well as small and middle-sized
+    companies.
+
+vendor lock-in
+proprietary lock-in
+customer lock-in
+    Makes a customer dependent on a vendor for
+    products and services, unable to use
+    another vendor without substantial
+    switching costs.
+    
+    Lock-in costs that create barriers to
+    market entry may result in antitrust
+    action against a monopoly.
+
+Apache Thrift
+    [software framework]
+
+    For scalable cross-language services
+    development, combines a software stack
+    with a code generation engine to build
+    services that work efficiently and
+    seamlessly between C++, Java, Python, PHP,
+    Ruby, Erlang, Perl, Haskell, C#, Cocoa,
+    JavaScript, Node.js, Smalltalk, OCaml and
+    Delphi and other languages.
+
+    RPC system.
+
+    Thrift is an interface definition language
+    and binary communication protocol used for
+    defining and creating services for
+    numerous languages. It forms a remote
+    procedure call framework and was developed
+    at Facebook for "scalable cross-language
+    services development".
+
+Memcached
+    A general-purpose distributed memory-
+    caching system.
+    
+    It is often used to speed up dynamic
+    database-driven websites by caching data
+    and objects in RAM to reduce the number of
+    times an external data source must be
+    read.
+
+Colocation centre
+carrier hotel
+    A type of data centre where equipment,
+    space, and bandwidth are available for
+    rental to retail customers.

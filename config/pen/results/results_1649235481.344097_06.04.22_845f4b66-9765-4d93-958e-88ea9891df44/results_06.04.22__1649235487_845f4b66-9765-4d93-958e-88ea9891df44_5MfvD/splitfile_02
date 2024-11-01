@@ -1,0 +1,1 @@
+""I/O system" refers to an interface between the Haskell program and the outside world. It is an abstraction that provides a consistent way to read and write data. It is a layer of functionality between the program and the computer."

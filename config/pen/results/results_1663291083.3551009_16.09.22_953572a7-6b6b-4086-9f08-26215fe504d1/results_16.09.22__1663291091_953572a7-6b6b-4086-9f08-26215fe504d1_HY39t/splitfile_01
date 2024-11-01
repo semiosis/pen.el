@@ -1,0 +1,1 @@
+ (progn (shell-command "echo *|xargs") (goto-char (point-min))))

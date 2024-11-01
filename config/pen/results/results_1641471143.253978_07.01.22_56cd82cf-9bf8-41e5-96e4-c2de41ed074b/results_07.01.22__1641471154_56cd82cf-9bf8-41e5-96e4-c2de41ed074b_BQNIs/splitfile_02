@@ -1,0 +1,22 @@
+
+There was a table set out under a tree in front of the house.
+The March Hare and the Hatter were having tea at it.
+A Dormouse was sitting between them, fast asleep.
+The other two were using it as a cushion, resting their elbows on it.
+What are they talking over?
+Write a chatbot that can perform the following tasks for a user. This is a fairly open-ended task that you can think about and design however you would like!
+Try to write your chatbot so that it can perform all tasks, not just any one. Below are a few requirements (optional to include, but definitely consider):
+1. The chatbot has a response for each question and each statement
+2. The chatbot only responds to users asking about gossip or opinions
+3. "Touching and holding" conversations, i.e. making people discuss and share opinions and gossip
+4. The chatbot will respond to different questions and statements with different responses, just like a real human
+Remember, you will be constructing your chatbot in a systematic way, so don't try to randomly write code to perform the above tasks in your chatbot! Stick to a plan of action, which we will discuss in detail in the lectures when we go over Question Generation!
+Write a driver function that will iterate through this process with the user, who will:
+* type various messages, both questions and statements/facts into the console.
+* your program will check whether or not the message is: 1) question, 2) statement, or 3) a greeting
+* your program will then perform the correct, expected command/action on your chatbot and then print out the chatbot’s response.
+* the chatbot will respond differently to different greetings.
+"""
+
+def run(msg):
+    # the way we get arg1 is "from the position one after <bot name> interrogative," which we can find by doing

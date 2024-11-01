@@ -1,0 +1,13 @@
+
+  -- Get the widths of the columns.
+  let widths = map (\col -> maximum 0 (map (length . show) col)) rows
+
+  -- Print a row separator.
+  putStrLn $ replicate (length widths) "-"
+
+  -- Print each row, padded to the column widths.
+  mapM_ (\row -> putStrLn $ intercalate " | " (map (\w -> pad w w) zip row widths)) rows
+
+  -- Print a row separator.
+  putStrLn $ replicate (length widths) "-"
+EOD

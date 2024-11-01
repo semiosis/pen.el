@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Adobe
+# contributor: Toptal & contributors
+# key: adobe
+# --
+
+### Adobe ###
+
+# Adobe Source Files
+*.psd
+*.ai
+*.indd
+*.prproj
+*.aep

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tostring
+# group: 
+# key: 2s
+# --
+show (1+1)

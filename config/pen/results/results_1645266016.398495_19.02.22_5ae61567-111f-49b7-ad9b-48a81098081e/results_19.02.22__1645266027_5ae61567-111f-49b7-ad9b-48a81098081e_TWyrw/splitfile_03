@@ -1,0 +1,7 @@
+1. This is the main function of the program
+2. It takes an argument called args
+3. It then sets a variable called port to the value of the environment variable PORT or 9837
+4. It then creates a new server with the run-server function
+5. It then runs the server with the app as the argument
+6. It then prints out the string "Running Khala at http:/127.0.0.1:port/"
+

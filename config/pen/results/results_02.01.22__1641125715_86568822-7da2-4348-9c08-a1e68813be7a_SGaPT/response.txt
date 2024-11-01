@@ -1,0 +1,2 @@
+Dec  7 09:47:15 mele kernel: [104581.820013] User logged in
+Dec  7 09:47:15 mele kernel: [104581.820013] audit: type=1400 audit(1572893135.

@@ -1,0 +1,6 @@
+"Neural Radiance Fields" (NeRF) are able to reconstruct scenes with unprecedented fidelity, and various
+recent works have extended NeRF to handle dynamic scenes. A common approach to reconstruct such
+non-rigid scenes is through the use of a learned deformation field mapping from coordinates in each input
+image into a canonical template coordinate space. However, these deformation-based approaches struggle
+to model changes in topology, as topological changes require a discontinuity in the deformation field, but
+these de

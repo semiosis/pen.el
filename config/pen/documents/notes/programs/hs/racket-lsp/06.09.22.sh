@@ -1,0 +1,6 @@
+cd /root/repos/BeautifulRacket/stacker;  "racket-lsp" "#" "<==" "zsh"
+cd /root/repos/BeautifulRacket;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /root/repos/BeautifulRacket;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /usr/share/racket/collects/racket;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /volumes/home/shane/var/smulliga/source/git/ericclack/racket-examples;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans;  "racket-lsp" "#" "<==" "racket-lsp"

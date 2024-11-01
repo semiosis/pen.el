@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: HOL
+# contributor: Toptal & contributors
+# key: hol
+# --
+
+### HOL ###
+
+*Script
+
+# Holmake generated files
+*Theory.sig
+*Theory.sml
+*.uo
+*.ui
+
+# Holmake auxiliary files
+.hollogs
+.HOLMK

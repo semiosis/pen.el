@@ -1,0 +1,14 @@
+
+
+  -- Parse each record into a list of fields.
+  fields <- map (T.words . T.unpack) records
+
+  -- Print the number of records read.
+  print $ length records
+
+  -- Print the first record.
+  print $ head records
+
+  -- Print the first field of the first record.
+  print $ head . head . fields
+EOD

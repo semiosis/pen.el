@@ -1,0 +1,9 @@
+
+          (unwind-protect
+              (funcall fun)
+            (setq pen t))
+          (if pen
+              (pen-complete-line preceding-text tv)
+            (funcall fun))))
+    (pen-complete-line preceding-text tv)))
+

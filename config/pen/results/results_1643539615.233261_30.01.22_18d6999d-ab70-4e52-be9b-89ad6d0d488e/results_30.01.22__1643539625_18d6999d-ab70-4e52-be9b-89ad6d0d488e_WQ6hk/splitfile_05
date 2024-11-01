@@ -1,0 +1,14 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-package.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-ui.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-keybindings.el
+EOD

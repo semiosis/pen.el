@@ -1,0 +1,5 @@
+cd //;  "I" "John" "4:7" "#" "<==" "zsh"
+cd //;  "I" "John" "4:13" "#" "<==" "zsh"
+cd //;  "I" "John" "4:9-10" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "4:17" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "Corinthians" "15:1-5" "#" "<==" "zsh"

@@ -1,0 +1,11 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt~  harry2.txt  harry3.txt
+» cd ..
+» cat 'harrys adventures/harry2.txt'
+Harry Potter and the Chamber of Secrets
+» cat 'harrys adventures/harry3.txt'
+Harry Potter and the Prisoner of Azkaban
+» cd ..
+» ls
+ harrys-adventures 

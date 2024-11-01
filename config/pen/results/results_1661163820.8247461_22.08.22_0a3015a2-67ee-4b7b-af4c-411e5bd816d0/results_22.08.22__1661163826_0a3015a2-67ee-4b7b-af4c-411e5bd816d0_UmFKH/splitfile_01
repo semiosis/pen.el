@@ -1,0 +1,9 @@
+
+
+~~~~~~~~
+
+The following flags are necessary for the examples to run in ghci:
+
+Use -package ghc-prim to add to the list of haskell packages.
+
+Use -package integer-simple to use the complex

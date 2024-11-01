@@ -1,0 +1,10 @@
+* =(sor pen-force-engine)=
+* =--each=
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  v +/"--each" "$EMACSD/packages28/docker-20210313.1943/docker-utils.el"
+#+END_SRC
+
+* =interactive=
+Lets you provide a mechanism for default parameters when called interactively.
+* =defun=
+A defun is a function definition

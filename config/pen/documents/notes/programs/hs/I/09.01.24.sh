@@ -1,0 +1,6 @@
+cd /volumes/home/shane/notes/ws/bible-studies;  "I" "John" "4:21" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "I" "John" "4:18" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "I" "John" "2:9" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "I" "John" "4:21" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "I" "John" "3:23-24" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "I" "John" "3:13-15" "#" "<==" "bash"

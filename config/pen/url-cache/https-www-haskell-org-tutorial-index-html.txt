@@ -1,0 +1,87 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:03:08 GMT
+Content-Type: text/html
+Content-Length: 3047
+Last-Modified: Sun, 17 Feb 2019 03:57:23 GMT
+Connection: keep-alive
+ETag: "5c68dba3-be7"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+<title>A Gentle Introduction to Haskell, Version 98</title>
+<body bgcolor="#ffffff">
+<hr>
+<div align=center>
+<img src="title.gif" alt="Annoying Graphic Logo">
+<hr>
+<a href="http://www.cs.yale.edu/homes/hudak-paul.html">
+Paul Hudak</a>, Yale University <br>
+<a href="http://www.cs.yale.edu/homes/peterson-john.html">
+John Peterson</a>, Yale University <br>
+<a href="http://coyote.lanl.gov/HOMES/jfasel.html">
+Joseph Fasel</a>, Los Alamos National Laboratory <br>
+<hr>
+June 2000<br>
+</div>
+<hr>
+This is the master HTML version of the Gentle Introduction To Haskell,
+version 98.  Revised June, 2000 by Reuben Thomas.
+<p>
+You may download the following:
+<ul>
+<li> <a href="haskell-98-tutorial.ps.gz">Postscript (.ps.gz, 221K)</a> 
+<li> <a href="haskell-98-tutorial.pdf.gz">gzipped PDF (.pdf.gz, 273K)</a> 
+<li> <a href="haskell-98-tutorial.pdf">PDF (.pdf, 434K)</a> 
+<li> <a href="haskell-98-tutorial.dvi.gz">DVI (.tar.gz, 127K)</a> 
+<li> <a href="haskell-98-tutorial-html.tar.gz">HTML (.tar.gz,
+113K)</a>, code files included. 
+<li> <a href="code.tar.gz">Haskell source code (.tar.gz, 27K)</a>
+<li> <a href="haskell-98-tutorial-sources.tar.gz">Document sources
+(.tar.gz, 151K)</a>
+</ul>
+<p>
+Brief Table of Contents.
+<ul>
+<LI><a href="intro.html">Introduction</a>
+<LI><a href="goodies.html">Values, Types, and Other Goodies</a>
+<LI><a href="functions.html">Functions</a>
+<LI><a href="patterns.html">Case Expressions and Pattern Matching</a>
+<LI><a href="classes.html">Type Classes and Overloading</a>
+<LI><a href="moretypes.html">Types, Again</a>
+<LI><a href="io.html">Input/Output</a>
+<LI><a href="stdclasses.html">Standard Haskell Classes</a>
+<LI><a href="monads.html">Monads</a>
+<LI><a href="numbers.html">Numbers</a>
+<LI><a href="modules.html">Modules</a>
+<LI><a href="pitfalls.html">Typing Pitfalls</a>
+<LI><a href="arrays.html">Arrays</a>
+<LI><a href="end.html">The Next Stage</a>
+<LI><a href="haskell-tutorial.html">Bibliography</a>
+<LI><a href="indextutorial.html">Complete Table of Contents</a>
+</UL>
+<p>
+
+All code in this tutorial, with additional commentary, is found in the
+<a href="code/">code</a> directory packaged with this tutorial.
+We suggest that you inspect, run, and modify  this code as you read
+the tutorial.   This code has been tested on Hugs 98.
+<p>
+Premission is granted to correct, improve, or enhance this document.
+If you wish to publish updated versions of the tutorial on haskell.org
+please contact John Peterson.  
+<p>
+ Copyright (C) 1999 Paul Hudak, John Peterson and Joseph Fasel
+<p>
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of "A Gentle Introduction to Haskell" (the Text), to deal
+in the Text without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Text, and to permit persons to whom the
+Text is furnished to do so, subject to the following condition:
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Text.
+</body>
+

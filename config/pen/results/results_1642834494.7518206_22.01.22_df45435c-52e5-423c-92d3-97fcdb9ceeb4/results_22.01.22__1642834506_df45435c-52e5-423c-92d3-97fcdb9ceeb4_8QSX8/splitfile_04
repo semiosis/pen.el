@@ -1,0 +1,23 @@
+- 1. Hillary Clinton
+- 2. Bill Clinton
+- 3. George W. Bush
+- 4. Ronald Reagan
+"""
+
+
+
+
+''' Evaluation helpers '''
+
+
+def rand_score(clusters, classes):
+    """ Compute Rand Score between two list of (sorted) labels. """
+    N = len(clusters)
+    C = np.max(classes) + 1
+
+    TP = 0     # True Positives (predicted cluster / actual class)
+    FN = 0     # False Negatives (predicted cluster / actual class)
+    FP = 0     # False Positives (predicted cluster / actual class)
+
+    for i in range(N):
+

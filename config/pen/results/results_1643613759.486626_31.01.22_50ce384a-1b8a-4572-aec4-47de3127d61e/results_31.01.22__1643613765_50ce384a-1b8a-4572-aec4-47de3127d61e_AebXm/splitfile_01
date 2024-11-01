@@ -1,0 +1,13 @@
+
+
+cd $HOME/viper-deployment-overlay
+
+echo 'waiting for new docker container to be launched'
+
+while :
+
+do
+
+sleep 10
+
+if `docker ps | grep "$GY

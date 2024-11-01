@@ -1,0 +1,188 @@
+https://www.pcmag.com/encyclopedia/term/permissionless
+
+permissionless
+permissionless blockchain
+    Not requiring authorization.
+    
+    Permissionless often refers to public
+    blockchains that allow anyone to
+    participate in validating and mining
+    transactions as well as using the system
+    to buy, sell and trade assets.
+    
+    Contrast with permissioned blockchain.
+    
+    See blockchain, private blockchain and
+    crypto glossary.
+
+permissioned
+permissioned blockchain
+consortium blockchain
+private blockchain
+    A private blockchain that requires vetting
+    to become a validator, miner or, in many
+    cases, a user.
+    
+    Uses the blockchain architecture but is
+    controlled by an organization.
+    
+    Contrast with permissionless.
+    
+    See blockchain, private blockchain and
+    crypto glossary.
+
+TDA
+Token Distribution Auction
+    During the TDA, the weights of both the
+    assets in the Balancer LBP will be
+    flexible and will change over time
+    depending on the trades initiated.
+    
+    The moment the pool goes live on the 28th
+    of December 2021, the weight will be set
+    at 96:4 (ALI/USDC), and, over the time the
+    pool runs, this weight will gradually
+    decrease to the final weight of 50:50.
+
+    https://medium.com/alethea-ai/alethea-ai-announces-token-distribution-auction-ec17600e6233
+
+cryptonetworks
+    Networks built on top of the internet that
+    1) use consensus mechanisms such as
+    blockchains to maintain and update state,
+    2) use cryptocurrencies (coins/tokens) to
+    incentivize consensus participants
+    (miners/validators) and other network
+    participants.
+    
+    Some cryptonetworks, such as Ethereum, are
+    general programming platforms that can be
+    used for almost any purpose.
+    
+    Other cryptonetworks are special purpose,
+    for example Bitcoin is intended primarily
+    for storing value, Golem for performing
+    computations, and Filecoin for
+    decentralized file storage.
+
+Transaction malleability
+    While transactions are signed, the
+    signature does not currently cover all the
+    data in a transaction that is hashed to
+    create the transaction hash.
+    
+    Thus, while uncommon, it is possible for a
+    node on the network to change a
+    transaction you send in such a way that
+    the hash is invalidated.
+    
+    Note that this just changes the hash; the
+    output of the transaction remains the same
+    and the bitcoins will go to their intended
+    recipient.
+    
+    However this does mean that, for instance,
+    it is not safe to accept a chain of
+    unconfirmed transactions under any
+    circumstance because the later
+    transactions will depend on the hashes of
+    the previous transactions, and those
+    hashes can be changed until they are
+    confirmed in a block (and potentially even
+    after a confirmation if the block chain is
+    reorganized).
+    
+    In addition, clients must always actively
+    scan for transactions to them; assuming a
+    txout exists because the client created it
+    previously is unsafe.
+
+Decentralized autonomous organization
+DAO
+decentralized autonomous corporation
+    An organization represented by rules
+    encoded as a computer program that is
+    transparent, controlled by the
+    organization members and not influenced by
+    a central government.
+
+    Can you imagine a way of organizing with
+    other people around the world, without
+    knowing each other and establishing your
+    own rules, and making your own decisions
+    autonomously all encoded on a Blockchain?
+    Well, DAOs are making this real.
+
+    A DAO’s financial transactions and rules
+    are recorded on a blockchain.
+    
+    This eliminates the need to involve a
+    third party in a financial transaction,
+    simplifying those transactions through
+    smart contracts.
+    
+    The firmness of a DAO is a smart contract.
+    
+    The smart contract represents the rules of
+    the organization and holds the
+    Organization’s storage.
+    
+    No one can edit the rules without people
+    noticing, because DAOs are transparent and
+    public.
+    
+    Up to today we are used to companies
+    backed by legal status, a DAO may
+    perfectly function without it as it can be
+    structured as a general partnership.
+
+    In comparison to traditional companies,
+    DAOs have a democratized organization.
+    
+    All the members of a DAO need to vote for
+    any changes to be implemented, instead of
+    implemented changes by a sole party
+    (depending on the company’s structure).
+    
+    The funding of DAOs is mainly based on
+    crowdfunding that issues tokens.
+    
+    The governance of DAOs is based on
+    community, while traditional companies’
+    governance is mostly based on executives,
+    Board of Directors, activist investors.
+    etc.
+    
+    DAOs’ operations are fully transparent and
+    global, meanwhile, traditional companies’
+    operations are private, only the
+    organization know what is happening, and
+    they are not always global.
+
+double-spending
+    The risk that a digital currency can be
+    spent twice.
+    
+    It is a potential problem unique to
+    digital currencies because digital
+    information can be reproduced relatively
+    easily by savvy individuals who understand
+    the blockchain network and the computing
+    power necessary to manipulate it.
+
+State channels
+    Refer to the process in which users
+    transact with one another directly outside
+    of the blockchain, or 'off-chain,' and
+    greatly minimize their use of 'on-chain'
+    operations.
+
+Layer 2
+    A secondary framework or protocol that is
+    built on top of an existing blockchain
+    system.
+
+    The main goal of these protocols is to
+    solve the transaction speed and scaling
+    difficulties that are being faced by the
+    major cryptocurrency networks.

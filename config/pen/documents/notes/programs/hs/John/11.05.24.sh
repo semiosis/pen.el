@@ -1,0 +1,7 @@
+cd /root/notes;  "John" "5:37-42" "#" "<==" "zsh"
+cd /root/notes;  "John" "20:31" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "5:17" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "19:30" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "6:63" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "10:27-28" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "8:42" "#" "<==" "zsh"

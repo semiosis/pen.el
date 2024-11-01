@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: subscript
+# group: tex
+# key: ss
+# --
+\$\mathit{d}_\mathit{model}\$

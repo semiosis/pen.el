@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Romans 7" "#" "<==" "Romans"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Romans 7" "#" "<==" "Romans"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Galatians 5" "#" "<==" "Galatians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Ga 5:16-26" "#" "<==" "Ga"
+cd /root/.pen/documents/notes;  "ebible" "-c" "-m" "ESV" "Revelation of John 1:11" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Romans 8" "#" "<==" "Romans"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Joel 2:28" "#" "<==" "Joel"

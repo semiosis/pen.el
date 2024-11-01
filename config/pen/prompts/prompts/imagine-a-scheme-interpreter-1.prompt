@@ -1,0 +1,20 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: interpreter
+language: scheme
+prompt: |+
+    Chez Scheme Version 9.5.3
+    Copyright 1984-2019 Cisco Systems, Inc.
+    
+    > <expression>
+user-prompt: "^> "
+no-trim-start: on
+vars:
+- "expression"
+examples:
+- "(+ 5 5)"
+n-completions: 10
+# This is required because there is no output user prompt to detect
+# Therefore we have to make multiple completions and pick from the ones that
+# begin with a newline and the following line does not have a leading '>'.
+validator: sed -n -z '/^\n[^>]/p' | grep -qP .

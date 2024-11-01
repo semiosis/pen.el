@@ -1,0 +1,3 @@
+
+
+$ runghc +RTS -N1 -hidir example1 +RTS -N2 -hidir example2 example1: putStrLn "Hello, World" example1: main example1: putStrL

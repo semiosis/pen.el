@@ -1,0 +1,2 @@
+cd /root/.pen/documents/notes;  "open-colors" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "open-colors" "#" "<==" "zsh"

@@ -1,0 +1,14 @@
+impedence mismatch
+programming impedence mismatch
+
+Intermediate language
+IL
+    An object-oriented programming language
+    designed to be used by compilers for the
+    .NET Framework before static or dynamic
+    compilation to machine code.
+    
+    The IL is used by the .NET Framework to
+    generate machine-independent code as the
+    output of compilation of the source code
+    written in any

@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el;  "vd" "/root/.pen/tmp/asxUFI_faith-and-judgement.org" "docs/theology/faith-and-judgement.org" "#" "<==" "vd"
+cd /root/.emacs.d/host/pen.el;  "vd" "/root/.pen/tmp/1BHc1W_faith-and-judgement.org" "docs/theology/faith-and-judgement.org" "#" "<==" "vd"
+cd /root/.emacs.d/host/pen.el;  "vd" "/root/.pen/tmp/aiLa3L_faith-and-judgement.org" "docs/theology/faith-and-judgement.org" "#" "<==" "vd"
+cd /root/.emacs.d/host/pen.el;  "vd" "/root/.pen/tmp/SiBkf7_faith-and-judgement.html" "docs/theology/faith-and-judgement.html" "#" "<==" "vd"
+cd /root/.emacs.d/host/pen.el;  "vd" "/root/.pen/tmp/dnlJWj_faith-and-judgement.org" "docs/theology/faith-and-judgement.org" "#" "<==" "vd"

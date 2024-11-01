@@ -1,0 +1,14 @@
+This is Albus.
+"""
+
+
+import os
+import re
+
+from test.config import Config
+
+
+class Message(object):
+
+    # handler: Irssi.Module = None
+    message_regex = re

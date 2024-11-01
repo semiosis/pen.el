@@ -1,0 +1,3 @@
+from tensorflow.python.framework import graph_util
+graph_def = tf.get_default_graph().as_graph_def()
+output_graph_def = graph_util.convert_variables_to_constants(sess, graph_def, ['output'])

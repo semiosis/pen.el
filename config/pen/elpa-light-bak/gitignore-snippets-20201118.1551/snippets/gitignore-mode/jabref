@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: JabRef
+# contributor: Toptal & contributors
+# key: jabref
+# --
+
+### JabRef ###
+
+# JabRef - https://www.jabref.org/
+*.bak
+*.sav

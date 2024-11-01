@@ -1,0 +1,8 @@
+mount/pensieve
+  "Mounts 'pensieve' to ~/pensieve"
+  [name location]
+  (if (sh "mountpoint" "-q" location)
+    (println "Already mounted:" location)
+    (mount/device name location []
+  (sh "umount" (u/expand-home  "$HOME/pensieve"))
+  (sh "umount" "-l" (u/expand-home  "$HOME/pensieve")))

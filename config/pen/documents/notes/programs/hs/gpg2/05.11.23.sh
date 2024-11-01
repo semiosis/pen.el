@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/flonatel/pipexec;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/flonatel/pipexec;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/flonatel/pipexec;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputFGly1Q" "--verify" "--" "/tmp/epg-signatureWAR1mb" "-" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/flonatel/pipexec;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputGydM3a" "--verify" "--" "/tmp/epg-signatureA2wwS2" "-" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputP1JcBt" "--verify" "--" "/tmp/epg-signatureJWnQy7" "-" "#" "<==" "emacs"

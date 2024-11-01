@@ -1,0 +1,27 @@
+title: correct grammar 2
+prompt-version: 4
+issues:
+- "n-shot alone isn't the most effective way to align GPT-3/Davinci to the goal. Codex handles it a little better."
+prompt: |
+  Input: "Anna and Mike is going skiing."
+  Output: "Anna and Mike are going skiing."
+  Input: "Anna and Pat are married; he has been together for 20 years."
+  Output: "Anna and Pat are married; they have been together for 20 years."
+  Input: "I walk to the store and I bought milk."
+  Output: "I walked to the store and I bought milk."
+  Input: <q:sentence>
+  Output: <:pp>"
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: "prompt-length"
+top-p: 1
+stop-sequences:
+- "\n"
+vars:
+- sentence
+examples:
+- She no went to the market.
+filter: on
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str remove-leading-and-trailing-newlines | uq | sed -z 's/^"//' | pen-pretty-paragraph

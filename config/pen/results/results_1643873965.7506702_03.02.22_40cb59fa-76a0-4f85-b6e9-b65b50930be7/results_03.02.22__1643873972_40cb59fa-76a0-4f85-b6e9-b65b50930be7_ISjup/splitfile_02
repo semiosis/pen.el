@@ -1,0 +1,8 @@
+
+shane@mele:$NOTES$ read -d '^C-r user_input
+shane@mele:$NOTES$ read -e -r user_input^C
+shane@mele:$NOTES$ ^C
+shane@mele:$NOTES$ read -r user_input
+shane@mele:$NOTES$ read -r user_input
+hi^M^C
+shane@

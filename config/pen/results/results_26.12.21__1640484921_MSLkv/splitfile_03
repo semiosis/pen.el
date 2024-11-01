@@ -1,0 +1,3 @@
+
+google -c 1 -l 1 -q "$1" | grep -oE 'http[^ ]+'
+

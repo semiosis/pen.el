@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Matthew" "18:12" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Matthew" "8:28-34" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Matthew" "13:10-13" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Matthew" "13:34-35" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Matthew" "5:44" "#" "<==" "bash"
+cd /root/notes;  "Matthew" "5" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "5" "#" "<==" "zsh"

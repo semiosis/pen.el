@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Revelation" "of" "John" "21:6-7" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Revelation" "of" "John" "21:6-8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Revelation" "of" "John" "21:8" "#" "<==" "zsh"
+cd /;  "Revelation" "of" "John" "22:17" "#" "<==" "zsh"
+cd /;  "Revelation" "of" "John" "2:10-11" "#" "<==" "zsh"
+cd /root/notes;  "Revelation" "of" "John" "5:9-10" "#" "<==" "zsh"

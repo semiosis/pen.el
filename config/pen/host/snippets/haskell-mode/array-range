@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: array-range
+# group: data.array
+# key: range
+# --
+import Data.Array (range)
+range (0,4)
+range ((0,0),(1,2))

@@ -1,0 +1,2 @@
+;;; Generated package description from git-commit-insert-issue.el  -*- no-byte-compile: t -*-
+(define-package "git-commit-insert-issue" "20210107.2018" "Get issues list when typing \"Fixes #\"" '((emacs "25") (projectile "0") (s "0") (ghub "0") (bitbucket "0")) :commit "6cfb8b4b5b23ae881cf3d005da4d7f60d91cd2cd" :authors '(("Vindarel")) :maintainer '("Vindarel") :keywords '("tools" "vc" "github" "gitlab" "bitbucket" "commit" "issues") :url "https://gitlab.com/emacs-stuff/git-commit-insert-issue/")

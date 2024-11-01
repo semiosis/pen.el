@@ -1,0 +1,4 @@
+Generate a cl-struct definition for a list of data members"
+  (let ((struct-name (concat "emacs-cl-" (upcase (car list-of-data-members)))))
+    (concat "(cl-defstruct " struct-name " "
+            (mapconcat 'identity (cdr list-of-data-members) " ") ")")))

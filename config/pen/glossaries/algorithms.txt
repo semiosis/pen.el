@@ -1,0 +1,204 @@
+Boyer–Moore majority vote algorithm
+
+
+Bellman–Ford algorithm
+
+
+Knuth-Morris-Pratt string-searching algorithm
+or KMP algorithm
+    Searches for occurrences of a "word" W
+    within a main "text string" S by employing
+    the observation that when a mismatch
+    occurs, the word itself embodies
+    sufficient information to determine where
+    the next match could begin, thus bypassing
+    re-examination of previously matched
+    characters.
+
+Euclidean clustering
+    Essentially groups points that are close
+    together.
+    
+    You must set a "closeness" threshold, such
+    that points within this threshold are
+    considered to be part of the same cluster.
+    
+    Another useful feature is that you can set
+    a minimum and a maximum number of points
+    that a cluster can contain.
+
+bitap
+    [#sequence algorithms]
+
+    Fuzzy algorithm that determines if strings
+    are approximately equal.
+
+Computer vision (using CNN) algorithms
+    - object detection (Retinanet, YOLOv3)
+    - instance segmentation (Mask-RCNN)
+    - semantic segmentation (UNet)
+    - pose estimation (PoseNet)
+    - image classification (ResNet)
+
+NLP (using RNN) algorithms
+    - sentiment analysis (BERT, ULMFIT)
+
+Structured/Tabular data algorithms
+    - regression and classification
+      (Random forest, Logistic Regression)
+
+Deep Reinforcement Learning (DQN, PG)
+
+https://scikit-learn.org/stable/
+
+Classification
+    [#scikit]
+
+    Identifying to which category an object
+    belongs to.
+
+    Applications:
+    - Spam detection
+    - Image recognition
+
+    Algorithms:
+    - SVM
+    - nearest neighbors
+    - random forest
+
+Regression
+    [#scikit]
+
+    Predicting a continuous-valued attribute
+    associated with an object.
+
+    Applications:
+    - Drug response
+    - Stock prices
+
+    Algorithms:
+    - SVR
+    - ridge regression
+    - Lasso
+
+Clustering
+    [#scikit]
+
+    Automatic grouping of similar objects into
+    sets.
+
+    Applications:
+    - Customer segmentation
+    - Grouping experiment outcomes
+
+    Algorithms:
+    - k-Means
+    - spectral clustering
+    - mean-shift
+
+spectral clustering
+    [class of techniques]
+
+    Use the spectrum of the similarity matrix
+    of the data to perform dimensionality
+    reduction before clustering in fewer
+    dimensions.
+    
+    The similarity matrix is provided as an
+    input and consists of a quantitative
+    assessment of the relative similarity of
+    each pair of points in the dataset.
+    
+    In application to image segmentation,
+    spectral clustering is known as
+    segmentation-based object categorization.
+
+    See:
+        vim +/"spectrum \[of a matrix\]" "$HOME/notes/ws/linear-algebra/glossary.txt"
+
+Dimensionality reduction
+    [#scikit]
+
+    Reducing the number of random variables to
+    consider.
+
+    Applications:
+    - Visualization
+    - Increased efficiency
+
+    Algorithms:
+    - PCA
+    - feature selection
+    - non-negative matrix factorization
+
+Model selection
+    Comparing, validating and choosing
+    parameters and models.
+
+    Goal:
+        Improved accuracy via parameter
+        tuning.
+
+    Modules:
+    - grid search
+    - cross validation
+    - metrics
+
+Preprocessing
+    Feature extraction and normalization.
+
+    Application:
+        Transforming input data such as text
+        for use with machine learning
+        algorithms.
+
+    Modules:
+    - preprocessing
+    - feature extraction
+
+least absolute shrinkage and selection operator
+Lasso
+LASSO
+    [algorithm]
+    [regression analysis method]
+    
+    Performs both variable selection and
+    regularization in order to enhance the
+    prediction accuracy and interpretability
+    of the statistical model it produces.
+    
+SVM Regression
+SVR
+    [algorithm]
+
+    ewwlinks +/"Support Vector Machine - Regression (SVR)" "https://www.saedsayad.com/support_vector_machine_reg.htm"
+
+    SVM can also be used as a regression
+    method, maintaining all the main
+    features that characterize the algorithm
+    (maximal margin).
+    
+    SVR uses the same principles as the SVM
+    for classification, with only a few minor
+    differences.
+    
+    First of all, because output is a real
+    number it becomes very difficult to
+    predict the information at hand, which has
+    infinite possibilities.
+    
+    In the case of regression, a margin
+    of tolerance (epsilon) is set in
+    approximation to the SVM which would
+    have already requested from the problem.
+    
+    But besides this fact, there is also a
+    more complicated reason, the
+    algorithm is more complicated therefore to
+    be taken in consideration.
+    
+    However, the main idea is always the same:
+    to minimize error, individualizing
+    the hyperplane which maximizes the margin,
+    keeping in mind that part of the
+    error is tolerated.

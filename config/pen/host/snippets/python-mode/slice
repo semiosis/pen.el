@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: slice
+# group: syntax
+# key: sl
+# --
+[${0:start:end:step}]

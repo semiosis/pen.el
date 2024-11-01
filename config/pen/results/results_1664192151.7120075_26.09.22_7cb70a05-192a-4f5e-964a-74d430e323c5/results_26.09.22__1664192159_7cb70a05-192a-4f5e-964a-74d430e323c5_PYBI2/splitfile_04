@@ -1,0 +1,5 @@
+";" is a command that runs a command on the shell.
+
+For example, ;:ls lists the contents of the current directory.
+
+;:ls

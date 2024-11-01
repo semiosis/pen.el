@@ -1,0 +1,4 @@
+, depending on if speech is true or false
+# The above two are hidden within a function, which is unneccessary and simply there for ease of use
+# to be called from next few lines
+# call add_to_speech

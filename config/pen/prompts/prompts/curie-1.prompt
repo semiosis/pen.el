@@ -1,0 +1,5 @@
+title: curie
+include: Generic completion 50 tokens/1
+prompt-version: 1
+engine: OpenAI Curie
+tags: fundamental

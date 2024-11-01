@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Romans" "2:29" "#" "<==" "zsh"
+cd /;  "Romans" "4:20" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "3:27" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "4:20" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "4:16" "#" "<==" "zsh"

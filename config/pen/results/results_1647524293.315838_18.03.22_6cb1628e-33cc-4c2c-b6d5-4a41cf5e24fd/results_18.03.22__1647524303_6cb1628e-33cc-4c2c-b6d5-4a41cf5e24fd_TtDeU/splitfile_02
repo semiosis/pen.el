@@ -1,0 +1,5 @@
+Once upon a time there was a group of people who started a Python project. After a few years, they realised that for various strategic reasons, some Clojure libraries would be very useful for their project.
+
+I am interested in Clojure interoperating with Python NLP libraries.(ns clojure-interop-with-python-nlp-libraries-testbed.core
+  (:gen-class)
+  (:require [libpython-clj2.require :refer [require-python]]

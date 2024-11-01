@@ -1,0 +1,28 @@
+RAT
+Remote Access Trojan
+
+oauth
+    Provides granular permissions ("scopes")
+    and easy ability for users (or
+    administrators) to see granted tokens and
+    revoke tokens/permissions at will.
+
+Paessler Router Traffic Grapher
+PRTG
+    Creates innovative and easy-to-use network
+    and bandwidth monitoring software.
+    
+    PRTG Network Monitor can manage Linux-
+    based networks in a secure and efficient
+    way.
+
+    The PRTG dashboard displays an overview of
+    the status of your Linux network.
+    
+    It also shows the performance, hard
+    drives, memory and NTP.
+    
+    With PRTG, you can define threshold values
+    for certain parameters such as bandwidth,
+    and set automatic notifications when those
+    values are exceeded.

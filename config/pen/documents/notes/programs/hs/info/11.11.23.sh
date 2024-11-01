@@ -1,0 +1,6 @@
+cd /root/notes;  "info" "ed" "#" "<==" "tmux: server"
+cd /usr/share/info;  "info" "ed" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "info" "(ed) Commands" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "info" "(ed) Commands" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "info" "org" "#" "<==" "zsh"
+cd /root/notes;  "info" "(org) Deadlines and Scheduling" "#" "<==" "tmux: server"

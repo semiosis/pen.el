@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: arg-$2
+# group: getopts
+# key: $2
+# --
+(len(sys.argv) > 2 and sys.argv[2])

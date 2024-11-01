@@ -1,0 +1,7 @@
+ google="https://www.google.com/search?q="
+c=s=s.replace(" ","+")
+print(google+c)
+"""
+
+string_to_search = """
+

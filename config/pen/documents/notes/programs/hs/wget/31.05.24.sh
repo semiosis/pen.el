@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://youtube.com/watch?v=ZiivY7VtsAU&t=344" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://youtube.com/watch?v=ZiivY7VtsAU&t=367" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://youtube.com/watch?v=ZiivY7VtsAU&t=378" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.star.net.nz/the-word-for-today/-the-right-balance-2024_05_28" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=ZsSUZfhQWeI" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "wget" "-qO-" "https://www.youtube.com/watch?v=U1F_tNvpqnQ" "#" "<==" "pen-ci"

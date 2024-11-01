@@ -1,0 +1,2 @@
+2019-01-07 16:24:58,828 INFO  [falcon9.launch.stage.stage_1] (falcon9.launch.stage.main:42) [falcon9.launch.stage.main] Stage 1 current trajectory update:
+

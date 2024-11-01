@@ -1,0 +1,340 @@
+Mesh
+Mesh Tensorflow
+    Model Parallelism Made Easier.
+
+    Mesh TF (`mtf`) is a language for
+    distributed DL, capable of specifying a
+    broad class of distributed tensor
+    computations.
+    
+    The purpose of Mesh TF is to formalize and
+    implement distribution strategies for your
+    computation graph over your
+    hardware/processors.
+    
+    For example: "Split the batch over rows of
+    processors and split the units in the
+    hidden layer across columns of
+    processors."
+    
+    Mesh TF is implemented as a layer over TF.
+
+    https://www.youtube.com/watch?v=HgGyWS40g-g
+
+TFX
+TensorFlow Extended
+    An end-to-end platform for deploying
+    production ML pipelines When you’re ready
+    to move your models from research to
+    production, use TFX to create and manage a
+    production pipeline.
+
+    [[https://www.youtube.com/watch?v=Mxk4qmO_1B4][TFX Episode 1: What exactly is this TFX thing? (Coding TensorFlow) - YouTube]]
+
+    $NOTES/ws/machine-learning/procedure.txt
+
+tensorflow hub
+    https://tfhub.dev/google/universal-sentence-encoder/1
+
+sess = tf.InteractiveSession()
+    The only difference with a regular Session
+    is that an InteractiveSession installs
+    itself as the default session on
+    construction.
+    
+    We do not need to write that with tf.
+    
+    Session() as sess code whenever we need to
+    perform some operations.
+
+placeholders
+    https://morioh.com/p/0a89dc905845
+
+ndarray
+ND array
+    Represents a multidimensional, homogeneous
+    array of fixed-size items.
+    
+    An associated data-type object describes
+    the format of each element in the array:
+    - byte-order
+    - how many bytes it occupies in memory
+    - whether it is an integer, a floating
+      point number, or something else, etc.
+
+tf.Estimator
+    Used for:
+        creating a feature extractor.
+
+keras
+    It's like a 3rd mode.
+
+    It actually uses graph mode in the
+    background.
+
+    Does the TensorFlow backend of Keras rely
+    on the eager execution?
+
+        No, it doesn't. Keras was built before
+        eager execution introduction.
+
+        A graph already exists whenever you
+        use keras.
+
+TensorFlow eager [execution] mode
+    [imperative programming environment]
+    
+    The default mode in Tensorflow 2.0.
+
+    ifl TensorFlow eager mode
+
+    A more Pythonic way of building models.
+    - compatible with native Python debugging tools
+    - Error logging is immediate
+    - Native Python control flow i.e loops and recursions
+    - Eager execution simplifies your code
+    - Back propagation is built in to eager execution
+
+    Evaluates operations immediately, without
+    building graphs: operations return
+    concrete values instead of constructing a
+    computational graph to run later.
+    
+    This makes it easy to get started with
+    TensorFlow and debug models, and it
+    reduces boilerplate as well.
+    
+    To follow along with this guide, run the
+    code samples below in an interactive
+    python interpreter.
+
+    Flexible machine learning platform for
+    research and experimentation, providing:
+
+    - An intuitive interface
+      Structure your code naturally and use
+      Python data structures.
+      
+      Quickly iterate on small models and small
+      data.
+
+    - Easier debugging
+      Call ops directly to inspect running
+      models and test changes.
+      
+      Use standard Python debugging tools for
+      immediate error reporting.
+
+    - Natural control flow
+      Use Python control flow instead of graph
+      control flow, simplifying the
+      specification of dynamic models.
+
+TensorFlow [dataflow] graph mode.
+    ifl TensorFlow graph mode.
+
+    https://www.tensorflow.org/guide/graphs
+
+    TensorFlow uses a dataflow graph to
+    represent your computation in terms of the
+    dependencies between individual
+    operations.
+    
+    This leads to a low-level programming
+    model in which you:
+    - first define the dataflow graph, then
+    - create a TensorFlow session to run parts
+      of the graph across a set of local and
+      remote devices.
+
+TensorFlow Text
+    Compatible with both TensorFlow eager mode
+    and graph mode.
+
+tensorflow eager vs pytorch
+
+quantization
+    [#Model optimization]
+
+quantized Model
+    [#Model optimization]
+
+model optimization
+    Minimize the complexity of optimizing
+    inference.
+
+    Inference efficiency is particularly
+    important for edge devices, such as mobile
+    and Internet of Things (IoT).
+    
+    Such devices have many restrictions on
+    processing, memory, power-consumption, and
+    storage for models.
+    
+    Furthermore, model optimization unlocks
+    the processing power of fixed-point
+    hardware and next generation hardware
+    accelerators.
+
+openai/gradient-checkpointing
+    [python/Tensorflow package]
+
+    Handle GPU memory limitations.
+
+core abstractions of tensorflow
+    - computational graph
+    - session
+
+computational graph
+    Makes the framework be able to handle the
+    lazy evaluation paradigm (not eager
+    execution, which is implemented
+    “traditional” imperative Python
+    programming) is the computational graph
+    =tf.Graph=.
+    
+    Basically, this approach allows the
+    programmer to create =tf.Tensor= (edges)
+    and =tf.Operation= (nodes), which are not
+    evaluated immediately, but only when the
+    graph is executed.
+    
+    Such a method to constructing ML models is
+    quite common for many frameworks (for
+    instance, a similar idea is used in Apache
+    Spark) and has different pros and cons,
+    which become obvious during writing and
+    running the code.
+    
+    The main and most important advantage is
+    the fact that dataflow graphs enable
+    parallelism and distributed execution
+    quite easily without explicitly
+    usingmultiprocessing module.
+    
+    In practice, well-written TF model uses
+    the resources of all of the cores as soon
+    as it is launched without any additional
+    configuration.
+    
+    However, a very obvious disadvantage of
+    this workflow is that as long as you’re
+    constructing your graph but not running it
+    with (or without) some input provided, you
+    can’t ever be sure that it will not crash.
+    
+    It definitely may crash.
+    
+    Also, unless you’ve executed the graph,
+    you can’t estimate the running time of it
+    too.
+    
+    The main components of the computational
+    graph worth talking about are graph
+    collections and graph structure.
+    
+    Strictly speaking, the graph structure is
+    the specific set of nodes and edges
+    discussed earlier, and graph collections
+    are sets of variables, which can be
+    grouped logically.
+    
+    For instance, the common way to retrieve
+    trainable variables of the graph is
+    tf.get_collection
+    (tf.GraphKeys.TRAINABLE_VARIABLES).
+
+session
+    Highly correlated with the computational
+    graph.
+
+    Has a bit more complex interpretation: TF
+    session =tf.Session= is used to connect
+    between the client program and C++ runtime
+    (as you remember, TF is written in C++).
+    
+    Why C++?
+    
+    The answer is that mathematical operations
+    implemented via this language can be very
+    well optimized and, as the result, the
+    computational graph operations can be
+    processed with a great performance.
+    
+    If you’re using low-level TF API (which
+    most of Python developers use), TF session
+    is invoked as a context manager: with
+    =tf.Session()= as sess: syntax is used.
+    
+    The session with no arguments passed to
+    the constructor (as in the previous
+    example) is using only the resources of
+    the local machine and default TF graph,
+    but it can also access remote devices via
+    distributed TF runtime.
+    
+    In practice, a graph can’t exist without a
+    session (without session it can’t be
+    executed) and the session always has a
+    pointer to the global graph.
+    
+    Diving deeper into the details of running
+    the session, the main point worth noticing
+    is the syntax of it: =tf.Session.run()=.
+    
+    It can have as argument fetch (or list of
+    fetches) which can be tensor, operation or
+    tensor-like object.
+    
+    In addition, feed_dict can be passed (this
+    optional argument is a mapping
+    (dictionary) of tf.placeholder objects to
+    their values) together with a set of
+    options.
+
+checkpoint
+training checkpoint
+    https://www.tensorflow.org/guide/checkpoint
+
+    ewwlinks +/"^Make your model work on all frameworks" "https://huggingface.co/transformers/model_sharing.html"
+
+    It’s best to upload your model with both
+    PyTorch and TF checkpoints.
+
+Saving a TensorFlow model
+    Typically means one of two things:
+    - 1 Checkpoints, OR 
+    - 2 SavedModel.
+
+    Checkpoints capture the exact value of all
+    parameters (tf.Variable objects) used by a
+    model.
+    
+    Checkpoints do not contain any description
+    of the computation defined by the model
+    and thus are typically only useful when
+    source code that will use the saved
+    parameter values is available.
+    
+    The SavedModel format on the other hand
+    includes a serialized description of the
+    computation defined by the model in
+    addition to the parameter values
+    (checkpoint).
+    
+    Models in this format are independent of
+    the source code that created the model.
+    
+    They are thus suitable for deployment via
+    TF Serving, TF Lite, TF.js, or programs in
+    other programming languages (the C, C++,
+    Java, Go, Rust, C# etc. TF APIs).
+
+TensorFlow Serving
+    A flexible, high-performance serving
+    system for ML models, designed for
+    production environments.
+
+    TF Serving makes it easy to deploy new
+    algorithms and experiments, while keeping
+    the same server architecture and APIs.

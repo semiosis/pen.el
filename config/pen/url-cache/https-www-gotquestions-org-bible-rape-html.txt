@@ -1,0 +1,195 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/html
+Last-Modified: Tue, 20 Aug 2024 22:35:32 GMT
+Accept-Ranges: bytes
+ETag: "01264451f3da1:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self' https://*.gotquestions.org
+Date: Sat, 24 Aug 2024 21:15:49 GMT
+Content-Length: 7154
+
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+<head>
+<title>What does the Bible say about rape? | GotQuestions.org</title>
+<META name="keywords" itemprop="keywords" content="Bible rape"><META name="description" itemprop="description" property="og:description" content="What does the Bible say about rape? Where does the Bible condemn rape? Is it true that the Bible allows rape in certain circumstances?">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="image_src" itemprop="image" href="https://www.gotquestions.org/img/GQlogo.png"><link rel="canonical" itemprop="url mainEntityOfPage" href="https://www.gotquestions.org/Bible-rape.html">
+<meta itemprop="author" content="GotQuestions.org">
+<meta itemprop="datePublished" content="2011-10-20">
+<meta property="og:image" content="https://www.gotquestions.org/img/OG/Bible-rape.jpg">
+<meta property="og:site_name" content="GotQuestions.org">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.gotquestions.org/Bible-rape.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7EVHFDMSZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M7EVHFDMSZ');
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-site-theme="light">
+<div class="fixed-button settings box-shadow"><img src="img/cogwheel.svg" alt="settings icon" onclick="settingsMenu(this)"></div>
+<div class="fixed-button sharebutton box-shadow"><img src="img/share.svg" alt="share icon" onclick="shareMenu(this)"></div>
+<header class="gradient-to-b" style="--color-start: var(--bgcolor-header-start); --color-end: var(--bgcolor-header-end);">
+<div class="searchbox desktop-show"><div class="search"><div class='gq-ac-placeholder header'></div></div></div>
+<div class="logo-wrap"><a href="https://www.gotquestions.org" class="logo"><img src="img/logo_white.svg" alt="Bible Questions Answered"></a></div>
+<nav>
+<ul>
+<li><a href="whats-new.html">New</a></li>
+<li><a href="top20.html">Top 20</a></li>
+<li><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="extra-menu modal-menu box-shadow">
+<li class="mobile-show flex-half"><a href="whats-new.html">New</a></li>
+<li class="mobile-show flex-half"><a href="top20.html">Top 20</a></li>
+<li class="mobile-show flex-half"><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li class="mobile-show flex-half"><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="Gospel-presentations.html">The Gospel</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="Bible-Questions.html">Ask</a></li>
+<li><a href="crucial.html">Crucial Questions</a></li>
+<li><a href="content.html">Content Index</a></li>
+<li><a href="questweek.html">Question of the Week</a></li>
+<li><a href="free-Bible-study.html">Bible Studies</a></li>
+<li><a href="international.html">International</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li class="mobile-show donate"><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="settings-menu modal-menu box-shadow">
+<li>
+<div class="toggle-wrap">
+<span>Light</span><input type="checkbox" checked id="toggle" class="checkbox" onclick="toggleTheme(this)" /><label for="toggle" class="switch"></label><span>Dark</span>
+</div>
+</li>
+<li><div id="bibleRefLinkSettings"><label for="bibleRefLinkVersion">Bible Version</label><select id="bibleRefLinkVersion" name="bibleRefLinkVersion" onchange="changeVersion();BibleRefLink.brlSavePrefs();"><option value="ESV">ESV</option><option value="CSB">CSB</option><option value="KJV">KJV</option><option value="NASB">NASB</option><option value="NIV" selected="selected">NIV</option><option value="NKJV">NKJV</option><option value="NLT">NLT</option></select></div></li>
+<li><label for="font">Font Family</label><select name="font" id="font" onchange="changeFont()"><option value="system-ui">Default</option><option value="Arial">Arial</option><option value="Verdana">Verdana</option><option value="Helvetica">Helvetica</option><option value="Tahoma">Tahoma</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option></select></li>
+<li><label for="lineheight">Line Height</label><select name="lineheight" id="lineheight" onchange="changeLineHeight()"><option value="1.4">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+<li><label for="fontsize">Font Size</label><select name="fontsize" id="fontsize" onchange="changeFontSize()"><option value="1">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+</ul>
+<ul class="final-menu modal-menu box-shadow">
+<li><a href="https://www.facebook.com/sharer.php?u=https://www.gotquestions.org/" class="fb"><img src="img/logo-fb-simple.svg" alt="Facebook icon">Facebook</a></li>
+<li><a href="https://twitter.com/share?url=https://www.gotquestions.org/" class="tw"><img src="img/logo-twitter.svg" alt="Twitter icon">Twitter</a></li>
+<li><a href="https://pinterest.com/pin/create/link/?url=https://www.gotquestions.org/" class="pi"><img src="img/logo-pinterest.svg" alt="Pinterest icon">Pinterest</a></li>
+<li><a class="SendEmail" href=""><img src="img/letter.svg" alt="Email icon">Email</a></li>
+<li class="mobile-show"><a class="SendSMS" href=""><img src="img/sms-icon.svg" alt="SMS icon">Text/SMS</a></li>
+</ul>
+<img src="img/menu.svg" class="menu-icon" alt="Menu icon" onclick="extraMenu(this)">
+</nav>
+</header>
+<div class="featured gradient-to-tr" style="--color-start: var(--bgcolor-featured-start); --color-end: var(--bgcolor-featured-end)">
+<div class="featured-left">
+<h5>Find Out</h5>
+<h4><a href="going-to-heaven.html">How to go to Heaven</a></h4>
+<h4><a href="get-right-with-God.html">How to get right with God</a></h4>
+</div>
+<div class="featured-right">
+<div class="desktop-hide gq-YT"><a href="https://www.youtube.com/gotquestionsorg" target="_blank"><img src="img/GQ-YT.png"></a></div>
+</div>
+</div>
+<main><div class="breadcrumb-wrapper">
+<span class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org"><span itemprop="name"><span class="home-icon"></span>Home</span></a><meta itemprop="position" content="1"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content.html"><span itemprop="name">Content Index</span></a><meta itemprop="position" content="2"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_sin.html"><span itemprop="name">Sin</span></a><meta itemprop="position" content="3"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_sin_sexual.html"><span itemprop="name">Sexual Sin</span></a><meta itemprop="position" content="4"></span> <span class="chevron-right"></span> Bible rape</span></div>
+<section class="content-wrap gradient-to-b" style="--color-start: var(--bgcolor-content-start); --color-end: var(--bgcolor-content-end);" ><div class="content">
+<div class="label gradient-to-tr" style="--color-start: #96445a; --color-end: #6f637e;">Question</div>
+<div class="sponsor-sidebar"><div class="desktop-show" align="center"><div class="adManager-placeholder"></div></div></div>
+<h1><span itemprop="name headline" property="og:title">What does the Bible say about rape?</span></h1>
+<div class="actions-wrap"><div class="actions">
+<a target="_blank" rel="noopener nofollow" href="INTL/Bible-rape.html" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'intl'});"><img src="img/translate-icon.svg" alt="translate"></a>
+<a target="_blank" rel="noopener" property="og:video" href="https://youtu.be/jI_aN2HS6lU" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'video'});"><img src="img/logo-youtube.svg" alt="video" class="questionInteract"></a>
+<a target="_blank" rel="noopener" href="https://printer.gotquestions.net/GeneratePF?articleId=2725" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'print'});"><img src="img/print.svg" class="questionInteract" alt="Bible rape"></a>
+<span class="audio-icon"><img src="img/volume.svg" alt="audio" class="questionInteract"><audio controls preload="none" style="width:300px;height:25px"><source src="audio/Bible-rape.mp3" type="audio/mpeg"></audio></span>
+</div></div>
+<div itemprop="articleBody">
+<div class="label  gradient-to-tr" style="--color-start: #29a699; --color-end: #749c5a;">Answer</div><br><br>
+The Bible addresses the issue of rape directly. And, as one would expect, the Bible depicts rape as a gross violation of God’s design (e.g., Genesis 34). The Bible condemns rape whenever it is mentioned.<br><br>
+<div class="youtube-player" data-id="jI_aN2HS6lU"></div><br>
+Rape factors into several biblical stories: Jacob’s daughter, <a href="Dinah-in-the-Bible.html">Dinah</a>, was abducted and raped by Shechem (Genesis 34:1&ndash;31). In a horrifying atrocity, the men of Gibeah savagely gang raped and murdered a Levite’s concubine (Judges 19:11&ndash;30). The men of <a href="Sodom-and-Gomorrah.html">Sodom</a> attempted to rape two visitors in their city (Genesis 19:4&ndash;9). David’s son <a href="Amnon-in-the-Bible.html">Amnon</a> raped his half-sister Tamar (2 Samuel 13:1&ndash;39). In every case, the aftermath of these crimes was tragic and devastating.<br><br>
+As the people of Israel prepared to enter the Promised Land under Joshua’s leadership, the laws of God were repeated. One of those laws was a clear prohibition against forcing a woman into a sexual encounter against her will, or what we today call rape. This command was meant to protect women and to protect the nation of Israel from committing sinful actions.<br><br>
+The laws of Deuteronomy 22:13&ndash;29 are related in that they deal with offenses involving women. Verses 13&ndash;22 deal with crimes involving a married woman, and verses 23&ndash;29 deal with crimes involving an unmarried woman. In that latter section, verses 25&ndash;27 clearly address the crime of rape: “If out in the country a man happens to meet a young woman pledged to be married and rapes her, only the man who has done this shall die. Do nothing to the woman; she has committed no sin deserving death. This case is like that of someone who attacks and murders a neighbor, for the man found the young woman out in the country, and though the betrothed woman screamed, there was no one to rescue her.”<br><br>
+The law specified that in a sexual assault the woman was responsible to actively resist the rapist and “scream for help” (Deuteronomy 22:24). If she failed to resist when she could have done so, the law viewed the act as consensual sex, not rape, and both parties were guilty. If the assault took place in an isolated area, the law gave the woman the benefit of the doubt and assumed she had resisted her attacker, but there was no one to help her. In that case, she was not held culpable (Deuteronomy 22:27). The law stipulated that a rapist was to be killed by stoning (Deuteronomy 22:25).<br><br>
+In the same context is a passage that causes some controversy: Deuteronomy 22:28&ndash;29 says, “If a man happens to meet a virgin who is not pledged to be married and rapes her and they are discovered, he shall pay her father fifty shekels of silver. He must marry the young woman, for he has violated her. He can never divorce her as long as he lives.” Some versions of the Bible, such as the NIV, the GW, the GNT, and the NET, translate the Hebrew verb in question as “rapes”; however, the NLT simply says that the man “has intercourse” with the woman. We believe the NLT comes the closest to the law’s original intent, for these reasons:<br><br>
+1) The verses immediately preceding Deuteronomy 22:28&ndash;29 are the ones that deal with rape (verses 25&ndash;27). The law has already prescribed the death penalty for that crime. Why would verses 28&ndash;29 address rape again and, in so doing, change the penalty? Obviously, different crimes are in view.<br><br>
+2) Exodus 22:16 is a parallel law: “If a man seduces a virgin who is not pledged to be married and sleeps with her, he must pay the bride-price, and she shall be his wife.” No force is involved, only seduction. It’s a case of consensual sex and requires the same penalty as prescribed in Deuteronomy 22: the man pays a fine and marries the girl he slept with.<br><br>
+3) In the wording of Deuteronomy 22:28, the penalty is enforced if “they are discovered.” The fact that <em>both</em> of them are “discovered” indicates the consensual nature of the sexual act. The condition that “they” (plural) are found out makes no sense in the case of rape. Thus, this law covers a consensual tryst. A man who seduces a young woman, sleeps with her, and then expects to avoid all responsibility is thwarted in his plan. God instructs the couple to get married and stay married.<br><br>
+4) There are two distinct Hebrew words used in the same passage. In Deuteronomy 22:25, the word <i>chazaq</i> is translated “rapes.” But in verse 28 is a completely different verb (<i>taphas</i>), translated “seizes” in the ESV and “has intercourse with” in the NLT. The different verbs suggest different behaviors.<br><br>
+Critics of the Bible also point to Numbers 31, in which Moses tells his fighting men that “the young girls who are virgins may live; you may keep them for yourselves” (Numbers 31:18, NLT). Critics wrongly assume that the captive women were to be raped. Rape is never mentioned in the passage. The soldiers were commanded to purify themselves and their captives (verse 19). Rape would have violated this command (see Leviticus 15:16&ndash;18). The women who were taken captive are never referred to as sexual objects. Did the captive women eventually marry some of the Israelites? Yes, probably. Is there any indication that rape or sex slavery was forced upon the women? Absolutely not.<br><br>
+In the New Testament, rape is not mentioned directly, but within the Jewish culture of the day, rape would have been considered <a href="sexual-immorality.html">sexual immorality</a>. Jesus and the apostles spoke against sexual immorality, and Jesus suggested immorality is justifiable grounds for divorce (Matthew 5:32).<br><br>
+Further, the New Testament is clear that Christians are to obey the laws of their governing authorities (Romans 13). Not only is rape morally wrong; it is also wrong according to the laws of the land. As such, anyone who would commit this crime should expect to pay the consequences, including arrest and imprisonment.<br><br>
+To the victims of rape, we must offer much care and compassion. God’s Word often speaks about helping those in need and in vulnerable situations. Christians should model the love and compassion of Christ by assisting victims of rape in any way possible.<br><br>
+People are responsible for the sins they commit, including rape. However, no one is beyond the grace of God. Even those who have committed the vilest of sins can know God’s forgiveness if they repent and turn from their evil ways (1 John 1:9). Divine forgiveness does not remove the need for punishment according to earthly laws, but it can offer hope and the way to a new life.<br><br>
+</div>
+<section class="homepage-sponsor desktop-hide">
+<div class="desktop-hide" align="center"><div class="adManager-placeholder-mobile"></div></div>
+</section>
+<div class="related resources"><h4>For Further Study</h4>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'chrbook'});" href="https://www.christianbook.com/Christian/Books/product?event=AFF&p=1011693&item_no=515989">Rid of My Disgrace: Hope and Healing for Victims of Sexual Assault by Lindsey &amp; Justin Holcomb</a><br><br>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'logos'});" href="https://www.logos.com/free-edition?utm_source=gotquestions&utm_medium=advertising_display&utm_content=more+insights+get+started&utm_campaign=promo-basic-fundamentals">More insights from your Bible study - Get Started with Logos Bible Software for Free!</a>
+</div>
+<div class="related topics"><h4>Related Articles</h4>
+<a href="spousal-rape.html">What does the Bible say about spousal/marital rape?</a><br><br>
+<a href="rape-culture.html">What is rape culture?</a><br><br>
+<a href="sexual-assault.html">What does the Bible say about sexual assault?</a><br><br>
+<a href="did-David-rape-Bathsheba.html">Did David rape Bathsheba?</a><br><br>
+<a href="Deuteronomy-22-28-29-marry-rapist.html">Does Deuteronomy 22:28-29 command a rape victim to marry her rapist?</a>
+</div>
+<center><strong class="return">Return to:<br><br>
+<a class="button-link box-shadow" href="questions_topical-Bible.html">Topical Bible Questions</a><br><br>
+What does the Bible say about rape?</strong></center>
+</div>
+</section>
+<section class="subscribe gradient-to-br" style="--color-start: #153c59; --color-end: #1b537c">
+<div class="grid">
+<div class="gradient-to-br box-shadow" style="--color-start: #2c6482; --color-end: #64547b">
+<h5>Subscribe to the</h5>
+<h3>Question of the Week</h3>
+<p>Get our Question of the Week delivered right to your inbox!</p>
+<iframe src="scommon/qotw.htm" title="question of the week" frameborder="0" width="100%" height="100%"></iframe>
+</div></div>
+</section>
+<section class="share gradient-to-b" style="--color-start: #073D60; --color-end: #0A3652;">
+<span>Follow Us:</span>
+<a target="_blank" href="https://www.facebook.com/gotquestions.org"><img src="img/logo-fb-simple.svg" alt="Facebook icon"></a>
+<a target="_blank" href="https://twitter.com/gotquestions"><img src="img/logo-twitter.svg" alt="Twitter icon"></a>
+<a target="_blank" href="https://www.youtube.com/gotquestionsorg"><img src="img/logo-youtube.svg" alt="YouTube icon"></a>
+<a target="_blank" href="https://www.pinterest.com/gotquestionsmin/"><img src="img/logo-pinterest.svg" alt="Pinterest icon"></a>
+<a target="_blank" href="https://www.instagram.com/gotquestionsministries/"><img src="img/logo-instagram.svg" alt="Instagram icon"></a>
+</section>
+</main>
+<footer>
+<div class="grid"><div>
+<div class="logo"></div>
+<ul>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="citation.html">Citation</a></li>
+<li><a href="apply.html">Serve with Us</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="network">
+GotQuestions.org is the primary site of Got Questions Ministries <a target="_blank" href="https://www.gqm.one"><img src="img/gqm-one.png"></a>
+</div>
+<div class="apps">
+<a href="https://apps.apple.com/us/app/got-questions/id366553550" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'ios-app'});"><img src="img/apple-appstore.svg" class="appSource"></a>
+<a href="https://play.google.com/store/apps/details?id=com.gotquestions.gqandapp&hl=en" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'android-app'});"><img src="img/google-play.svg" class="appSource"></a>
+<a href="https://www.amazon.com/gp/product/B07VX73L12" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'alexa-skill'});"><img src="img/amazon-alexa.svg" class="appSource"></a>
+</div>
+</div>
+</footer>
+<center><div class="bottom">&copy; Copyright 2002-2024 Got Questions Ministries. All rights reserved.&nbsp;<a href="privacy.html">Privacy Policy</a></div>
+<div itemprop="dateModified" content="2023-07-03">This page last updated: July 3, 2023</div></center>
+<script src="scripts.js"></script>
+<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="GotQuestions.org"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="url" content="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="width" content="400"><meta itemprop="height" content="79">
+</div></div>
+<div itemprop="video" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="embedURL" content="https://youtu.be/jI_aN2HS6lU"><meta itemprop="name" content="What does the Bible say about rape?"><meta itemprop="description" content="What does the Bible say about rape? Where does the Bible condemn rape? Is it true that the Bible allows rape in certain circumstances?"><meta itemprop="thumbnailUrl" content="https://www.gotquestions.org/img/video-thumbnails/Bible-rape.jpg"><meta itemprop="uploadDate" content="2023-07-03">
+</div>
+</body>
+</html>

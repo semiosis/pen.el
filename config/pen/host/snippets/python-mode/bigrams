@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: bigrams
+# group: nlp
+# key: bigrams
+# --
+s = "I am Sam."
+tokens = s.split(" ")
+bigrams = [(tokens[i],tokens[i+1]) for i in range(0,len(tokens)-1)]

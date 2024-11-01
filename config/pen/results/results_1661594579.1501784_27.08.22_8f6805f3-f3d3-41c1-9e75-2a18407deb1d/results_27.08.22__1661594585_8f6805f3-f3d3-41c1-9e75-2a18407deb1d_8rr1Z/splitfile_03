@@ -1,0 +1,3 @@
+ instead of
+
+- you: That is correct. I have another error message: 'Data.ByteString.Lazy.Internal.ByteString': this type is not exported by ‘Data.ByteString.Lazy’

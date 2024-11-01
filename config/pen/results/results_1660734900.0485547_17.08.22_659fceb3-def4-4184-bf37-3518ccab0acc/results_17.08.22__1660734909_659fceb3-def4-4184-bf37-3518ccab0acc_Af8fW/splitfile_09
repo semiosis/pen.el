@@ -1,0 +1,25 @@
+
+  putStrLn "What is your age?"
+  age <- getLine
+  putStrLn $ "You are " ++ age ++ " years old"
+
+  -- Read in from the user a person's name
+  -- Then, print the name back to the user within a sentence
+  putStrLn "What is your name?"
+  name <- getLine
+  putStrLn $ "Your name is " ++ name
+
+  -- Read in from the user a person's weather condition (sunny, cloudy, rainy)
+  -- Then, print the weather back to the user within a sentence
+  putStrLn "What is the weather like today?"
+  weather <- getLine
+  travelToSchool weather
+  travelToWork weather
+
+
+main :: IO ()
+main = do
+    putStrLn "What is your age?"
+    age <- getLine
+
+    putStrLn $ "

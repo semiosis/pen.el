@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: augroup ... autocmd block
+# group: vimsnippet
+# key: vs-au
+# --
+augroup ${1:AU_NAME}
+	" this one is which you're most likely to use?
+	autocmd ${2:BufRead,BufNewFile} ${3:*.ext,*.ext3|<buffer[=N]>} ${0}
+augroup end

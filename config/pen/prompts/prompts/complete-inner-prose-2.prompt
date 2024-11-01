@@ -1,0 +1,28 @@
+title: complete inner prose
+todo: 
+tags: nlp-task prose
+design-patterns: 
+doc: Given the start and end of prose, predict the middle
+prompt-version: 2
+# <:pp> before :s (suffix) is implicit
+prompt: |
+  <1><:s><2>
+engine: OpenAI Davinci Text
+force-engine: OpenAI Davinci Text
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- prefix
+- suffix
+examples:
+- Hello my friend, could you please
+- if at all possible? Thank you.
+# postprocessor: sed -n "/^<1>.*<2>$/p"
+# preprocessors:
+# - pf-correct-grammar
+prefer-external: true
+n-test-runs: 5

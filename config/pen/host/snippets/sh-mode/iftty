@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: iftty
+# group: 
+# key: iftty
+# --
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+:
+fi

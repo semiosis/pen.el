@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: get-buffer-create
+# group: buffers
+# key: gbc
+# --
+(defun helm-dash-debugging-buffer ()
+  "Return the helm-dash debugging buffer."
+  (get-buffer-create "*helm-dash-errors*"))

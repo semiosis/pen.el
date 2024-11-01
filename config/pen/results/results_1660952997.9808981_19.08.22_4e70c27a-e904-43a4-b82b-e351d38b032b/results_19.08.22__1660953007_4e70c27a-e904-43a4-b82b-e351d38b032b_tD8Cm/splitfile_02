@@ -1,0 +1,44 @@
+# Playbook for (require 'clojure-mode)
+(require 'cider)
+(require 'ob-clojure)
+
+(require 'clomacs)
+
+(if (inside-docker-p)
+    (setq cider-lein-command "pen-lein"))
+
+(setq cider-auto-jump-to-error nil)
+(setq cider-repl-pop-to-buffer-on-connect nil)
+
+(pen-with 'cider
+          ;; Fixes super annoying message
+          (setq cider-allow-jack-in-without-project t))
+
+(defun pen-4clojure-check-and-proceed ()
+  "Check the answer and show the next question if it worked."
+  (interactive)
+  (let ((result (4clojure-check-answers)))
+    (unless (string-match "failed." result)
+       (4clojure-next-question))))
+---
+- name: "Install dependencies"
+  hosts: all
+  become: true
+  gather_facts: false
+  vars:
+    clojure_version: "1.10.1.488"
+  tasks:
+    - name: "Install dependencies"
+      raw: "curl -sSL https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein | sudo tee /usr/local/bin/lein"
+      sudo: true
+      become: true
+      not_if: "test -f /usr/local/bin/lein"
+    - name: "Install dependencies"
+      raw: "sudo chmod a+x /usr/local/bin/lein"
+      sudo: true
+      become: true
+    - name: "Install dependencies"
+      raw: "sudo lein"
+      sudo: true
+      become: true
+    - name

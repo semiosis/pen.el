@@ -1,0 +1,15 @@
+
+
+-- (same meaning)
+instance MonadState Int where
+
+initialization :: State Int a
+initialization = do
+
+x <- get
+
+y <- get
+
+z <- get
+
+put (x + y +

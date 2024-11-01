@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer;  "o-db" "/volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer/Complete.db" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/scripts;  "o-db" "/root/.pen/gematria-interlinear.db" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/scripts;  "o-db" "/root/.pen/gematria-interlinear.db" "#" "<==" "sh"
+cd /root/notes;  "o-db" "/volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer/Complete.db" "#" "<==" "sh"
+cd /root/notes;  "o-db" "/root/.pen/gematria-interlinear.db" "#" "<==" "sh"
+cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer;  "o-db" "/root/.pen/gematria-interlinear.db" "#" "<==" "sh"
+cd /root/notes;  "o-db" "/root/.pen/gematria-interlinear.db" "#" "<==" "sh"
+cd /root/.pen/documents/notes;  "o-db" "/root/.pen/gematria-interlinear.db" "#" "<==" "sh"

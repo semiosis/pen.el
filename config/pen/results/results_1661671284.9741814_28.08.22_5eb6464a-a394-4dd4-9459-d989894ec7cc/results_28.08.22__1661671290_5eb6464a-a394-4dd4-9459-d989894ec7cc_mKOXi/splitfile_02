@@ -1,0 +1,6 @@
+ this contains an array with all
+   integer locations as keys, and lists of
+   ndarrays, that are the values indexed by
+   the integer locations.
+
+argparse    The standard library command-

@@ -1,0 +1,33 @@
+fringe
+    A thin strip down the left and/or right
+    edge of a window. They can contain glyphs
+    to indicate various things.
+
+    Does not appear in the terminal.
+
+command
+    An interactive function.
+
+emacs modules
+    https://phst.eu/emacs-modules.html#definitions
+
+    vim +/"--with-modules" "$HOME/source/readme/emacs.sh"
+    
+    A library that GNU Emacs can dynamically
+    load to provide extension functions not
+    implemented in Emacs Lisp.
+    
+    The exact format of module files depends
+    on the underlying operating system; on
+    GNU/Linux, modules are shared ELF
+    libraries.
+
+module function
+    A function exported from a module library
+    and registered with GNU Emacs that
+    provides extension functions to GNU Emacs.
+    
+    A module initialization function is a
+    function exported from a module library
+    that GNU Emacs calls to initialize the
+    containing module.

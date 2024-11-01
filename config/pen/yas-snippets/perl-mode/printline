@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: printline
+# group: print
+# key: pl
+# --
+print "Hello world!\n";
+use feature 'say';
+say 'Hello world!';

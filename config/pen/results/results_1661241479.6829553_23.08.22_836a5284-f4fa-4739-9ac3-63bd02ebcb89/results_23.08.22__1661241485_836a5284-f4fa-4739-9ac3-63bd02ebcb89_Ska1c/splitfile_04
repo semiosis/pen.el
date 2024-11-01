@@ -1,0 +1,11 @@
+">>=" is a monad binding operator.
+
+The '>>=' operator is used to bind the result of a monadic function to its left operand.
+
+The '>>=' operator is defined as follows:
+
+(m >>= f) >>= g = m >>= (\x -> f x >>= g)
+
+The '>>=' operator is used to bind the result of a monadic function to its left operand.
+
+The '>>=' operator is defined

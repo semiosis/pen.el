@@ -1,0 +1,695 @@
+https://en.wikipedia.org/wiki/Glossary_of_ring_theory
+
+ring theory
+    [#algebra]
+
+    https://en.wikipedia.org/wiki/Ring_theory
+
+    The study of rings[1]—algebraic structures
+    in which addition and multiplication are
+    defined and have similar properties to
+    those operations defined for the integers.
+    Ring theory studies the structure of
+    rings, their representations, or, in
+    different language, modules, special
+    classes of rings (group rings, division
+    rings, universal enveloping algebras), as
+    well as an array of properties that proved
+    to be of interest both within the theory
+    itself and for its applications, such as
+    homological properties and polynomial
+    identities.
+
+    Commutative rings are much better
+    understood than noncommutative ones.
+    Algebraic geometry and algebraic number
+    theory, which provide many natural
+    examples of commutative rings, have driven
+    much of the development of commutative
+    ring theory, which is now, under the name
+    of commutative algebra, a major area of
+    modern mathematics. Because these three
+    fields (algebraic geometry, algebraic
+    number theory and commutative algebra) are
+    so intimately connected it is usually
+    difficult and meaningless to decide which
+    field a particular result belongs to. For
+    example, Hilbert's Nullstellensatz is a
+    theorem which is fundamental for algebraic
+    geometry, and is stated and proved in
+    terms of commutative algebra. Similarly,
+    Fermat's Last Theorem is stated in terms
+    of elementary arithmetic, which is a part
+    of commutative algebra, but its proof
+    involves deep results of both algebraic
+    number theory and algebraic geometry.
+
+    Noncommutative rings are quite different
+    in flavour, since more unusual behavior
+    can arise. While the theory has developed
+    in its own right, a fairly recent trend
+    has sought to parallel the commutative
+    development by building the theory of
+    certain classes of noncommutative rings in
+    a geometric fashion as if they were rings
+    of functions on (non-existent)
+    'noncommutative spaces'. This trend
+    started in the 1980s with the development
+    of noncommutative geometry and with the
+    discovery of quantum groups. It has led to
+    a better understanding of noncommutative
+    rings, especially noncommutative
+    Noetherian rings.[2]
+
+    For the definitions of a ring and basic
+    concepts and their properties, see Ring
+    (mathematics). The definitions of terms
+    used throughout ring theory may be found
+    in Glossary of ring theory.
+
+Amitsur complex
+    The Amitsur complex of a ring homomorphism
+    is a cochain complex that measures the
+    extent in which the ring homomorphism
+    fails to be faithfully flat.
+
+Artinian
+    A left Artinian ring is a ring satisfying
+    the descending chain condition for left
+    ideals; a right Artinian ring is one
+    satisfying the descending chain condition
+    for right ideals. If a ring is both left
+    and right Artinian, it is called Artinian.
+    Artinian rings are Noetherian rings.
+
+Artin-Wedderbun theorem
+    The Artin–Wedderburn theorem states that a
+    semisimple ring is a finite product of
+    (full) matrix rings over division rings.
+
+associate
+    In a commutative ring, an element a is
+    called an associate of an element b if a
+    divides b and b divides a.
+
+automorphism
+    A ring automorphism is a ring isomorphism
+    between the same ring; in other words, it
+    is a unit element of the endomorphism ring
+    of the ring that is multiplicative and
+    preserves the multiplicative identity.
+
+    An algebra automorphism over a commutative
+    ring R is an algebra isomorphism between
+    the same algebra; it is a ring
+    automorphism that is also R-linear.
+
+Azumaya
+    An Azumaya algebra is a generalization of
+    a central simple algebra to a non-field
+    base ring.
+
+bidimension
+    The bidimension of an associative algebra
+    A over a commutative ring R is the
+    projective dimension of {\displaystyle A}A
+    as an {\displaystyle A^{op}\otimes
+    _{R}A}{\displaystyle A^{op}\otimes
+    _{R}A}-module. For example, an algebra has
+    bidimension zero if and only if it is
+    separable.
+
+boolean
+    A boolean ring is a ring in which every
+    element is multiplicatively idempotent.
+
+Brauer
+    The Brauer group of a field is an abelian
+    group consisting of all equivalence
+    classes of central simple algebras over
+    the field.
+
+category
+    The category of rings is a category where
+    the objects are (all) the rings and where
+    the morphisms are (all) the ring
+    homomorphisms.
+
+center
+    1. An element r of a ring R is central if
+       xr = rx for all x in R. The set of all
+       central elements forms a subring of R,
+       known as the center of R.
+    2. A central algebra is an associative
+       algebra over the center.
+    3. A central simple algebra is a central
+       algebra that is also a simple ring.
+
+centralizer
+    1.  The centralizer of a subset S of a ring is the subring of the ring consisting of the elements commuting with the elements of S. For example, the centralizer of the ring itself is the center of the ring.
+    2.  The double centralizer of a set is the centralizer of the centralizer of the set. Cf. double centralizer theorem.
+
+characteristic
+    1.  The characteristic of a ring is the smallest positive integer n satisfying nx = 0 for all elements x of the ring, if such an n exists. Otherwise, the characteristic is 0.
+    2.  The characteristic subring of R is the smallest subring (i.e., the unique minimal subring). It is necessary the image of the unique ring homomorphism {\displaystyle \mathbb {Z} \to R}{\mathbb  {Z}}\to R and thus is isomorphic to {\displaystyle \mathbb {Z} /n}\mathbb {Z} /n where n is the characteristic of R.
+
+change
+    A change of rings is a functor (between
+    appropriate categories) induced by a ring
+    homomorphism.
+
+Clifford algebra
+    A Clifford algebra is a certain
+    associative algebra that is useful in
+    geometry and physics.
+
+coherent
+    A left coherent ring is a ring such that
+    every finitely generated left ideal of it
+    is a finitely presented module; in other
+    words, it is coherent as a left module
+    over itself.
+
+commutative
+    1.  A ring R is commutative if the multiplication is commutative, i.e. rs = sr for all r,s ∈ R.
+    2.  A ring R is skew-commutative if {\displaystyle xy=(-1)^{\epsilon (x)\epsilon (y)}yx}{\displaystyle xy=(-1)^{\epsilon (x)\epsilon (y)}yx} where {\displaystyle \epsilon (x)}\epsilon (x) denotes the parity of an element x.
+    3.  A commutative algebra is an associative algebra that is a commutative ring.
+    4.  Commutative algebra is the theory of commutative rings.
+
+derivation
+    1.  A derivation of a possibly-non-associative algebra A over a commutative ring R is an R-linear endomorphism that satisfies the Leibniz rule.
+    2.  The derivation algebra of an algebra A is the subalgebra of the endomorphism algebra of A that consists of derivations.
+
+differential
+    A differential algebra is an algebra
+    together with a derivation.
+
+direct
+    A direct product of a family of rings is a
+    ring given by taking the cartesian product
+    of the given rings and defining the
+    algebraic operations component-wise.
+
+divisor
+    1.  In an integral domain R,[clarification needed] an element a is called a divisor of the element b (and we say a divides b) if there exists an element x in R with ax = b.
+    2.  An element r of R is a left zero divisor if there exists a nonzero element x in R such that rx = 0 and a right zero divisor or if there exists a nonzero element y in R such that yr = 0. An element r of R is a called a two-sided zero divisor if it is both a left zero divisor and a right zero divisor.
+
+division
+    A division ring or skew field is a ring in
+    which every nonzero element is a unit and
+    1 ≠ 0.
+
+domain
+    A domain is a nonzero ring with no zero
+    divisors except 0. For a historical
+    reason, a commutative domain is called an
+    integral domain.
+
+endomorphism
+    An endomorphism ring is a ring formed by
+    the endomorphisms of an object with
+    additive structure; the multiplication is
+    taken to be function composition, while
+    its addition is pointwise addition of the
+    images.
+
+enveloping algebra
+    The (universal) enveloping algebra E of a
+    not-necessarily-associative algebra A is
+    the associative algebra determined by A in
+    some universal way. The best known example
+    is the universal enveloping algebra of a
+    Lie algebra.
+
+extension
+    A ring extension of a ring R by an abelian
+    group I is a pair {\displaystyle
+    (E,\varphi )}{\displaystyle (E,\varphi )}
+    consisting of a ring E and a ring
+    homomorphism {\displaystyle \varphi :E\to
+    R}{\displaystyle \varphi :E\to R} whose
+    kernel is I.
+
+exterior algebra
+    The exterior algebra of a vector space or
+    a module V is the quotient of the tensor
+    algebra of V by the ideal generated by
+    elements of the form {\displaystyle
+    x\otimes x}{\displaystyle x\otimes x}.
+
+field
+    A field is a commutative division ring;
+    i.e., a nonzero ring in which each nonzero
+    element is invertible.
+
+filtered ring
+    A filtered ring is a ring with a
+    filtration.
+
+finitely generated
+    1.  A left ideal I is finitely generated if there exist finitely many elements a1, ..., an such that I = Ra1 + ... + Ran. A right ideal I is finitely generated if there exist finitely many elements a1, ..., an such that I = a1R + ... + anR. A two-sided ideal I is finitely generated if there exist finitely many elements a1, ..., an such that I = Ra1R + ... + RanR.
+    2.  A finitely generated ring is a ring that is finitely generated as Z-algebra.
+
+finitely presented
+    A finitely presented algebra over a
+    commutative ring R is a (commutative)
+    associative algebra that is a quotient of
+    a polynomial ring over R in finitely many
+    variables by a finitely generated
+    ideal.[1]
+
+free
+    1.  A free ideal ring or a fir is a ring in which every right ideal is a free module of fixed rank.
+    2.  A semifir is a ring in which every finitely generated right ideal is a free module of fixed rank.
+    3.  The free product of a family of associative is an associative algebra obtained, roughly, by the generators and the relations of the algebras in the family. The notion depends on which category of associative algebra is considered; for example, in the category of commutative rings, a free product is a tensor product.
+    4.  A free ring is a ring that is a free algebra over the integers.
+
+graded
+    A graded ring is a ring together with a
+    grading or a graduation; i.e, it is a
+    direct sum of additive subgroups with the
+    multiplication that respects the grading.
+    For example, a polynomial ring is a graded
+    ring by degrees of polynomials.
+
+generate
+    An associative algebra A over a
+    commutative ring R is said to be generated
+    by a subset S of A if the smallest
+    subalgebra containing S is A itself and S
+    is said to be the generating set of A. If
+    there is a finite generating set, A is
+    said to be a finitely generated algebra.
+
+hereditary
+    A ring is left hereditary if its left
+    ideals are all projective modules. Right
+    hereditary rings are defined analogously.
+
+ideal
+    A left ideal I of R is an additive
+    subgroup of R such that aI ⊆ I for all a ∈
+    R. A right ideal is a subgroup of R such
+    that Ia ⊆ I for all a ∈ R. An ideal
+    (sometimes called a two-sided ideal for
+    emphasis) is a subgroup which is both a
+    left ideal and a right ideal.
+
+idempotent
+    An element r of a ring is idempotent if r2
+    = r.
+
+integral domain
+    "integral domain" or "entire ring" is
+    another name for a commutative domain;
+    i.e., a nonzero commutative ring with no
+    zero divisors except 0.
+
+invariant
+    A ring R has invariant basis number if Rm
+    isomorphic to Rn as R-modules implies m =
+    n.
+
+irreducible
+    An element x of an integral domain is
+    irreducible if it is not a unit and for
+    any elements a and b such that x = ab,
+    either a or b is a unit. Note that every
+    prime element is irreducible, but not
+    necessarily vice versa.
+
+Jacobson
+    1.  The Jacobson radical of a ring is the intersection of all maximal left ideals.
+    2.  A Jacobson ring is a ring in which each prime ideal is an intersection of primitive ideals.
+
+kernel
+    The kernel of a ring homomorphism of a
+    ring homomorphism f : R → S is the set of
+    all elements x of R such that f(x) = 0.
+    Every ideal is the kernel of a ring
+    homomorphism and vice versa.
+
+Köthe
+    Köthe's conjecture states that if a ring
+    has a nonzero nil right ideal, then it has
+    a nonzero nil ideal.
+
+local
+    1.  A ring with a unique maximal left ideal is a local ring. These rings also have a unique maximal right ideal, and the left and the right unique maximal ideals coincide. Certain commutative rings can be embedded in local rings via localization at a prime ideal.
+    2.  A localization of a ring : For commutative rings, a technique to turn a given set of elements of a ring into units. It is named Localization because it can be used to make any given ring into a local ring. To localize a ring R, take a multiplicatively closed subset S containing no zero divisors, and formally define their multiplicative inverses, which shall be added into R. Localization in noncommutative rings is more complicated, and has been in defined several different ways.
+
+minimal and maximal
+    1.  A left ideal M of the ring R is a maximal left ideal (resp. minimal left ideal) if it is maximal (resp. minimal) among proper (resp. nonzero) left ideals. Maximal (resp. minimal) right ideals are defined similarly.
+    2.  A maximal subring is a subring that is maximal among proper subrings. A "minimal subring" can be defined analogously; it is unique and is called the characteristic subring.
+
+matrix
+    1.  A matrix ring over a ring R is a ring whose elements are square matrices of fixed size with the entries in R. The matrix ring or the full matrix ring of matrices over R is the matrix ring consisting of all square matrices of fixed size with the entries in R. When the grammatical construction is not workable, the term "matrix ring" often refers to the "full" matrix ring when the context makes no confusion likely; for example, when one says a semsimple ring is a product of matrix rings of division rings, it is implicitly assumed that "matrix rings" refer to "full matrix rings". Every ring is (isomorphic to) the full matrix ring over itself.
+    2.  The ring of generic matrices is the ring consisting of square matrices with entries in formal variables.
+
+monoid
+    A monoid ring.
+
+Morita
+    Two rings are said to be Morita equivalent
+    if the category of modules over the one is
+    equivalent to the category of modules over
+    the other.
+
+nearring
+    A nearring is a structure that is a group
+    under addition, a semigroup under
+    multiplication, and whose multiplication
+    distributes on the right over addition.
+
+nil
+    1.  A nil ideal is an ideal consisting of nilpotent elements.
+    2.  The (Baer) upper nil radical is the sum of all nil ideals.
+    3.  The (Baer) lower nil radical is the intersection of all prime ideals. For a commutative ring, the upper nil radical and the lower nil radical coincide.
+
+nilpotent
+    1.  An element r of R is nilpotent if there exists a positive integer n such that rn = 0.
+    2.  A nil ideal is an ideal whose elements are nilpotent elements.
+    3.  A nilpotent ideal is an ideal whose power Ik is {0} for some positive integer k. Every nilpotent ideal is nil, but the converse is not true in general.
+    4.  The nilradical of a commutative ring is the ideal that consists of all nilpotent elements of the ring. It is equal to the intersection of all the ring's prime ideals and is contained in, but in general not equal to, the ring's Jacobson radical.
+
+Noetherian
+    A left Noetherian ring is a ring
+    satisfying the ascending chain condition
+    for left ideals. A right Noetherian is
+    defined similarly and a ring that is both
+    left and right Noetherian is Noetherian. A
+    ring is left Noetherian if and only if all
+    its left ideals are finitely generated;
+    analogously for right Noetherian rings.
+
+null
+    null ring: See rng of square zero.
+
+opposite
+    Given a ring R, its opposite ring Rop has
+    the same underlying set as R, the addition
+    operation is defined as in R, but the
+    product of s and r in Rop is rs, while the
+    product is sr in R.
+
+order
+    An order of an algebra is (roughly) a
+    subalgebra that is also a full lattice.
+
+Ore
+    A left Ore domain is a (non-commutative)
+    domain for which the set of non-zero
+    elements satisfies the left Ore condition.
+    A right Ore domain is defined similar.
+
+perfect
+    A left perfect ring is one satisfying the
+    descending chain condition on right
+    principal ideals. They are also
+    characterized as rings whose flat left
+    modules are all projective modules. Right
+    perfect rings are defined analogously.
+    Artinian rings are perfect.
+
+polynomial
+    1.  A polynomial ring over a commutative ring R is a commutative ring consisting of all the polynomials in the specified variables with coefficients in R.
+    2.  A skew polynomial ring
+
+    Given R a ring and an endomorphism
+    {\displaystyle \sigma \in {\textrm
+    {End}}(R)}\sigma \in {\textrm {End}}(R) of
+    R. The skew polynomial ring {\displaystyle
+    R[x;\sigma ]}R[x;\sigma ] is defined to be
+    the set {\displaystyle
+    \{a_{n}x^{n}+a_{n-1}x^{n-1}+\ldots
+    +a_{1}x+a_{0}\mid n\in \mathbb {N}
+    ,\,a_{n},a_{n-1},\ldots ,a_{1},a_{0}\in
+    R\}}{\displaystyle
+    \{a_{n}x^{n}+a_{n-1}x^{n-1}+\ldots
+    +a_{1}x+a_{0}\mid n\in \mathbb {N}
+    ,\,a_{n},a_{n-1},\ldots ,a_{1},a_{0}\in
+    R\}}, with addition defined as usual, and
+    multiplication defined by the relation
+    {\displaystyle xa=\sigma (a)x\;\forall
+    a\in R}xa=\sigma (a)x\;\forall a\in R.
+
+prime
+    1.  An element x of an integral domain is a prime element if it is not zero and not a unit and whenever x divides a product ab, x divides a or x divides b.
+    2.  An ideal P in a commutative ring R is prime if P ≠ R and if for all a and b in R with ab in P, we have a in P or b in P. Every maximal ideal in a commutative ring is prime.
+    3.  An ideal P in a (not necessarily commutative) ring R is prime if P ≠ R and for all ideals A and B of R, {\displaystyle AB\subseteq P}{\displaystyle AB\subseteq P} implies {\displaystyle A\subseteq P}{\displaystyle A\subseteq P} or {\displaystyle B\subseteq P}{\displaystyle B\subseteq P}. This extends the definition for commutative rings.
+    4.  prime ring : A nonzero ring R is called a prime ring if for any two elements a and b of R with aRb = 0, we have either a = 0 or b = 0. This is equivalent to saying that the zero ideal is a prime ideal (in the noncommutative sense.) Every simple ring and every domain is a prime ring.
+
+primitive
+    1.  A left primitive ring is a ring that has a faithful simple left R-module. Every simple ring is primitive. Primitive rings are prime.
+    2.  An ideal I of a ring R is said to be primitive if {\displaystyle R/I}R/I is primitive.
+
+principal
+    A principal ideal : A principal left ideal
+    in a ring R is a left ideal of the form Ra
+    for some element a of R. A principal right
+    ideal is a right ideal of the form aR for
+    some element a of R. A principal ideal is
+    a two-sided ideal of the form RaR for some
+    element a of R.
+
+principal
+    1.  A principal ideal domain is an integral domain in which every ideal is principal.
+    2.  A principal ideal ring is a ring in which every ideal is principal.
+
+quasi-Frobenius
+    Types:
+    - quasi-Frobenius ring
+    - quotient ring or factor ring
+
+quasi-Frobenius ring
+    quasi-Frobenius
+
+    A special type of Artinian ring which is
+    also a self-injective ring on both sides.
+    Every semisimple ring is quasi-Frobenius.
+
+quotient ring
+factor ring
+    Given a ring R and an ideal I of R, the
+    quotient ring is the ring formed by the
+    set R/I of cosets {a + I : a∈R} together
+    with the operations (a + I) + (b + I) = (a
+    + b) + I and (a + I)(b + I) = ab + I. The
+    relationship between ideals,
+    homomorphisms, and factor rings is summed
+    up in the fundamental theorem on
+    homomorphisms.
+
+radical
+    The radical of an ideal I in a commutative
+    ring consists of all those ring elements a
+    power of which lies in I. It is equal to
+    the intersection of all prime ideals
+    containing I.
+
+ring
+    1.  A set R with two binary operations,
+      usually called addition (+) and
+      multiplication (×), such that R is an
+      abelian group under addition, R is a
+      monoid under multiplication, and
+      multiplication is both left and right
+      distributive over addition. Rings are
+      assumed to have multiplicative
+      identities unless otherwise noted. The
+      additive identity is denoted by 0 and
+      the multiplicative identity by 1.
+      (Warning: some books, especially older
+      books, use the term "ring" to mean what
+      here will be called a rng; i.e., they do
+      not require a ring to have a
+      multiplicative identity.)
+    2.  A ring homomorphism : A function f : R
+      → S between rings (R, +, ∗) and (S, ⊕,
+      ×) is a ring homomorphism if it
+      satisfies
+            f(a + b) = f(a) ⊕ f(b)
+            f(a ∗ b) = f(a) × f(b)
+            f(1) = 1
+        for all elements a and b of R.
+    3.  ring isomorphism : A ring homomorphism
+      that is bijective is a ring isomorphism.
+      The inverse of a ring isomorphism is
+      also a ring isomorphism. Two rings are
+      isomorphic if there exists a ring
+      isomorphism between them. Isomorphic
+      rings can be thought as essentially the
+      same, only with different labels on the
+      individual elements.
+
+rng
+    A rng of square zero: A rng in which xy =
+    0 for all x and y. These are sometimes
+    also called zero rings, even though they
+    usually do not have a 1. The term "rng" is
+    meant to suggest that it is a "ring"
+    without an "identity".
+
+self-injective
+    A ring R is left self-injective if the
+    module RR is an injective module. While
+    rings with unity are always projective as
+    modules, they are not always injective as
+    modules.
+
+semiperfect
+    A semiperfect ring is a ring R such that,
+    for the Jacobson radical {\displaystyle
+    J(R)}J(R) of R, (1) {\displaystyle
+    R/J(R)}{\displaystyle R/J(R)} is
+    semisimple and (2) idempotents lift modulo
+    {\displaystyle J(R)}J(R).
+
+semiprimary
+    A semiprimary ring is a ring R such that, for the Jacobson radical {\displaystyle J(R)}J(R) of R, (1) {\displaystyle R/J(R)}{\displaystyle R/J(R)} is semisimple and (2) {\displaystyle J(R)}J(R) is a nilpotent ideal.
+
+semiprime
+    1.  A semiprime ring is a ring where the
+      only nilpotent ideal is the trivial
+      ideal {\displaystyle \{0\}}\{0\}. A
+      commutative ring is semiprime if and
+      only if it is reduced.
+    2.  An ideal I of a ring R is semiprime if
+      for any ideal A of R, {\displaystyle
+      A^{n}\subseteq I}{\displaystyle
+      A^{n}\subseteq I} implies {\displaystyle
+      A\subseteq I}{\displaystyle A\subseteq
+      I}.  Equivalently, I is semiprime if and
+      only if {\displaystyle R/I}R/I is a
+      semiprime ring.
+
+semiprimitive
+    A semiprimitive ring or Jacobson
+    semisimple ring is a ring whose Jacobson
+    radical is zero. Von Neumann regular rings
+    and primitive rings are semiprimitive,
+    however quasi-Frobenius rings and local
+    rings are usually not semiprimitive.
+
+semiring
+    A semiring : An algebraic structure
+    satisfying the same properties as a ring,
+    except that addition need only be an
+    abelian monoid operation, rather than an
+    abelian group operation. That is, elements
+    in a semiring need not have additive
+    inverses.
+
+semisimple
+    A semisimple ring is an Artinian ring R
+    that is a finite product of simple
+    Artinian rings; in other words, it is a
+    semisimple left R-module.
+
+separable
+    A separable algebra is an associative
+    algebra whose tensor-square admits a
+    separability idempotent.
+
+serial
+    A right serial ring is a ring that is a
+    right serial module over itself.
+
+Severi–Brauer
+    The Severi–Brauer variety is an algebraic
+    variety associated to a given central
+    simple algebra.
+
+simple
+    1.  A simple ring is a non-zero ring which
+      only has trivial two-sided ideals (the
+      zero ideal, the ring itself, and no
+      more) is a simple ring.
+    2.  A simple algebra is an associative
+      algebra that is a simple ring.
+
+subring
+    A subring is a subset S of the ring
+    (R,+,×) which remains a ring when + and ×
+    are restricted to S and contains the
+    multiplicative identity 1 of R.
+
+symmetric algebra
+    1.  The symmetric algebra of a vector
+      space or a module V is the quotient of
+      the tensor algebra of V by the ideal
+      generated by elements of the form
+      {\displaystyle x\otimes y-y\otimes
+      x}{\displaystyle x\otimes y-y\otimes x}.
+    2.  The graded-symmetric algebra of a
+      vector space or a module V is a variant
+      of the symmetric algebra that is
+      constructed by taking grading into
+      account.
+
+Sylvester domain
+    A Sylvester domain is a ring in which
+    Sylvester's law of nullity holds.
+
+tensor
+    The tensor product algebra of associative
+    algebras is the tensor product of the
+    algebras as the modules with component
+    multiplication
+
+    The tensor algebra of a vector space or a
+    module V is the direct sum of all tensor
+    powers {\displaystyle V^{\otimes
+    n}}V^{{\otimes n}} with the multiplication
+    given by tensor product.
+
+trivial
+    1.  A trivial ideal is either the zero or
+      the unit ideal.
+    2.  The trivial ring or zero ring is the
+      ring consisting of a single element 0 =
+      1.
+
+unit
+    unit or invertible element : An element r
+    of the ring R is a unit if there exists an
+    element r−1 such that rr−1 = r−1r = 1.
+    This element r−1 is uniquely determined by
+    r and is called the multiplicative inverse
+    of r. The set of units forms a group under
+    multiplication.
+
+unity
+    The term "unity" is another name for the
+    multiplicative identity.
+
+unique
+    A unique factorization domain or factorial
+    ring is an integral domain R in which
+    every non-zero non-unit element can be
+    written as a product of prime elements of
+    R.
+
+uniserial
+    A right uniserial ring is a ring that is a
+    right uniserial module over itself. A
+    commutative uniserial ring is also called
+    a valuation ring.
+
+von Neumann regular element
+    1.  von Neumann regular element : An
+      element r of a ring R is von Neumann
+      regular if there exists an element x of
+      R such that r = rxr.
+    2.  A von Neumann regular ring: A ring for
+      which each element a can be expressed as
+      a = axa for another element x in the
+      ring.  Semisimple rings are von Neumann
+      regular.
+
+zero
+    A zero ring: The ring consisting only of a
+    single element 0 = 1, also called the
+    trivial ring. Sometimes "zero ring" is
+    alternatively used to mean rng of square
+    zero.

@@ -1,0 +1,8 @@
+
+exec "normal @" . col('.') . "yyp<cr>"
+endf
+fun! Paste()
+exec "normal @" . col('.') . "p<cr>"
+endf
+
+fun!

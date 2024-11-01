@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: multilinecomment
+# key: /*
+# --
+{-
+hello
+world
+-}

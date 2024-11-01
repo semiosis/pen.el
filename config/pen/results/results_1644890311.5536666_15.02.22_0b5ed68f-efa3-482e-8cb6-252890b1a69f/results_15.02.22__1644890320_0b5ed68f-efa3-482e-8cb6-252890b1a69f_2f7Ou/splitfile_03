@@ -1,0 +1,17 @@
+automatic drawing, paintings, photography and poetry.
+Surrealism has certain asylum characteristics and practices. The artistic
+expression that is labeled as surrealistic can be quite varied, and may include
+the intention to alter the social reality. Some surrealists techniques are
+improvisation, non-linear writing, non-sequitur, sensory overload and rejections
+of logic. Surrealism also refers to the group of artists who employed these
+techniques in order to disrupt and create break with tradition.
+"""
+        article = self.bbc_page.parse_article(text)
+
+        self.assertIn('surrealism', article.tags)
+
+        self.assertIn(u'surrealist automatic painting', article.keywords)
+
+    def test_keywords_parsing(self):
+        text = u"""Linköping is a university town in east central Sweden. It has a
+population of around 130,000

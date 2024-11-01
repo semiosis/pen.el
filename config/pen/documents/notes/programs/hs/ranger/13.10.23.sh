@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/aaabatt/KCOpenPublic;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/.cache/lsp;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/.cache/lsp;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/.cache/lsp/npm/vim-language-server;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/.cache/lsp/npm;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "ranger" "#" "<==" "zsh"

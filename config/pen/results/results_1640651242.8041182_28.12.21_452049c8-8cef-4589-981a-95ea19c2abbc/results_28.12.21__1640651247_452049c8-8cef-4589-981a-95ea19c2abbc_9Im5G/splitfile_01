@@ -1,0 +1,4 @@
+ abort
+    let [cmd, args] = [[a:000], a:1 ? a:000 : []]
+    if (a:0) | exec "!".join(cmd, ' ', args) | endif
+endfun

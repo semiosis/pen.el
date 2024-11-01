@@ -1,0 +1,53 @@
+KProbes
+    A debugging mechanism for the Linux kernel
+    which can also be used for monitoring
+    events inside a production system.
+    
+    You can use it to weed out performance
+    bottlenecks, log specific events, trace
+    problems etc.
+    
+    KProbes was developed by IBM as an
+    underlying mechanism for another higher
+    level tracing tool called DProbes.
+    
+    DProbes adds a number of features,
+    including its own scripting language for
+    the writing of probe handlers.
+    
+    However, only KProbes has been merged into
+    the standard kernel.
+
+BPF
+Berkeley Packet Filter
+    A technology used in certain computer
+    operating systems for programs that need
+    to, among other things, analyze network
+    traffic.
+    
+    It provides a raw interface to data link
+    layers, permitting raw link-layer packets
+    to be sent and received.
+    
+    It is available on most Unix-like
+    operating systems.
+    
+    In addition, if the driver for the network
+    interface supports promiscuous mode, it
+    allows the interface to be put into that
+    mode so that all packets on the network
+    can be received, even those destined to
+    other hosts.
+
+    http://brendangregg.com/blog/2019-12-02/bpf-a-new-type-of-software.html
+        Enables you to use things like KProbes
+        without needing to make a kernel
+        extension.
+        
+        BPF is enabling people to do is move
+        functionality from the kernel out of
+        the kernel so that it can be a service
+        can be defined in user space as a BPF
+        program and then loaded.
+
+        BPF is a VM in the kernel.

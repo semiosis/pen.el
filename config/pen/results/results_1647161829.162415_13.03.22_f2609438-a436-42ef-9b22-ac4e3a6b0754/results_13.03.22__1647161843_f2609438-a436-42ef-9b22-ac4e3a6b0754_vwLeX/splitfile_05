@@ -1,0 +1,62 @@
+ialization(main).
+
+:- include('../../../../test/common_logic_snark/test_cases.prolog').
+
+:- include('../../../../test/common_logic_snark/des.prolog').
+EOD
+
+# test files
+cat draft.test <<EOD
+:- begin_tests(main).
+:- use_module(library(plunit)).
+%:- use_module(library(debug)).
+%:- set_prolog_flag(optimise, true).
+%:- set_prolog_flag(trace_gc, true).
+
+
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# prolog files
+cat draft.prolog <<EOD
+initialization(main).
+
+:- include('../../../../test/common_logic_snark/test_cases.pro

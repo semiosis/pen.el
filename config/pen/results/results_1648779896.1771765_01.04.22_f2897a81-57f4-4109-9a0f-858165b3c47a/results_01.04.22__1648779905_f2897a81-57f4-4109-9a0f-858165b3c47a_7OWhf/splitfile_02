@@ -1,0 +1,20 @@
+
+Command line interface
+======================
+
+The command line interface is the most common way to interact with vim.
+
+The command line is entered by pressing the : key.  This opens the command
+line window at the bottom of the screen.  This window is similar to a
+terminal window.  The command line can be used to enter commands, search for
+text, change options, etc.
+
+The command line window is divided into three parts:
+
+1. The prompt: This is a line at the very top of the window.  The prompt
+   displays the current mode of vim (normal, insert, visual, etc.) and the
+   current file and line number.  The prompt is also used to enter
+   commands.  The prompt is terminated by a colon (:).
+
+2. The command line: This is the main part of the window.  The command line
+   is where most of the work is done.  The command line

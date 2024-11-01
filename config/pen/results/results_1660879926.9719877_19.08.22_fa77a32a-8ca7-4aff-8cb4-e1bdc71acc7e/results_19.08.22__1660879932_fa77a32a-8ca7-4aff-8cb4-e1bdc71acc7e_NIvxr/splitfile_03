@@ -1,0 +1,2 @@
+"hosts: all" is a special value for the hosts keyword argument.
+It means that the task should be applied to all hosts in the inventory.

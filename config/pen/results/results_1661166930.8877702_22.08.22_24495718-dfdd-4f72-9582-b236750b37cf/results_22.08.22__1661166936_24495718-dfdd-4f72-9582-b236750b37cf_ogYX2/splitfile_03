@@ -1,0 +1,7 @@
+
+"echo '" . s . "
+"' | \
+"rm -f /tmp/test.txt
+"echo '" . s . "
+"'
+endfunction

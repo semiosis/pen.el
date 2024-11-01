@@ -1,0 +1,7 @@
+1. This function takes two arguments, path and buf
+2. It then checks if the path is empty
+3. If it is empty then it returns the list of directories
+4. If it is not empty then it checks if the path is a directory
+5. If it is a directory then it returns the list of directories
+6. If it is not a directory then it returns the list of files
+7. If it is not a directory and not empty then it returns the list

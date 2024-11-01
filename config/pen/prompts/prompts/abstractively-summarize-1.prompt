@@ -1,0 +1,27 @@
+---
+title: abstractively summarize
+tags: grammar english
+prompt-version: 1
+prompt: |
+  Document:
+  <delim>
+  <1>
+  <delim>
+  Summary:
+  <delim>
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 100
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- passage
+examples:
+- |-
+  This week CrowdScience investigates the information superhighway connecting mind with body. The Vagus nerve is part of
+  our parasympathetic nervous system, delivering information from all our major organs to the brain stem, and stimulating
+  it can help us switch off our fight or flight response and calm us down. But listener Mags wants to know what science
+  says about its impact on our general wellbeing?
+external: summarize-passage
+filter: true

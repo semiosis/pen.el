@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "diatheke" "-b" "KJV" "-o" "w" "-f" "internal" "-k" "Deuteronomy 6:13" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "John 15:9-17" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Ephesians 4:22-28" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "KJV" "-o" "w" "-f" "internal" "-k" "Isaiah 30:1" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "KJV" "-o" "w" "-f" "internal" "-k" "Psalms 2:7" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "KJV" "-o" "w" "-f" "internal" "-k" "Isaiah 7:14" "#" "<==" "in-pen"

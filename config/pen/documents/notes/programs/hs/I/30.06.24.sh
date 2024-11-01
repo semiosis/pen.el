@@ -1,0 +1,6 @@
+cd /root/notes;  "I" "Corinthians" "6:12" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "10:23" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "10:24" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "10:19-21" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "10:19-21" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "10:31-33" "#" "<==" "zsh"

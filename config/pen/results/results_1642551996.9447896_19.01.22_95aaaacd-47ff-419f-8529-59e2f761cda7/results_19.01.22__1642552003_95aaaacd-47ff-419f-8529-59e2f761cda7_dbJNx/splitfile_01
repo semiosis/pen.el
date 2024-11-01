@@ -1,0 +1,5 @@
+The above code is equivalent to the following:
+
+(defn member [s col]
+  (some (fn [x] (= s x)) col))
+

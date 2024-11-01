@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "bible-book" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/notes;  "bible-book" "-m" "NASB" "Genesis 1:1" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "bible-book" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "bible-book" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "bible-book" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"

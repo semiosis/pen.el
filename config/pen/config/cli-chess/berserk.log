@@ -1,0 +1,4 @@
+08/25/2023 11:54:11.273 | DEBUG | berserk.session | session.request | request POST https://lichess.org/api/token/test params=None data=******** json=None
+08/25/2023 11:54:11.292 | DEBUG | berserk.session | session.request | request POST https://lichess.org/api/token/test params=None data=******** json=None
+08/25/2023 11:54:12.263 | DEBUG | berserk.session | session.request | stream GET https://lichess.org/api/stream/event params=None data=None json=None
+08/25/2023 11:54:12.306 | DEBUG | berserk.session | session.request | stream GET https://lichess.org/api/stream/event params=None data=None json=None

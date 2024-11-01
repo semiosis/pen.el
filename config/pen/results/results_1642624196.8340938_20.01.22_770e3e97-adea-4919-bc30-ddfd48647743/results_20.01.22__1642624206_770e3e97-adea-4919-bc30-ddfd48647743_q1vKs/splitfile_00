@@ -1,0 +1,7 @@
+
+      (= "run" type) (run-cmd dir)
+      (= "run-with-args" type) (run-cmd-with-args dir)
+      (= "run-with-env" type) (run-cmd-with-env dir)
+      (= "run-with-env-and-args" type) (run-cmd-with-env-and-args dir)
+      (= "run-with-args-and-env" type) (run-cmd-with-args-and-env dir)
+      (= "run-with-env-and-args-and-env" type) (run-cmd-with-env-and-args-and-

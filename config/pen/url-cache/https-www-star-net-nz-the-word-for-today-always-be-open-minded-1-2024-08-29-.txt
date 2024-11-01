@@ -1,0 +1,119 @@
+HTTP/1.1 200 OK
+Date: Thu, 29 Aug 2024 04:45:09 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+Cache-Control: no-cache, must-revalidate
+Access-Control-Allow-Origin: *
+X-Frame-Options: ALLOWALL
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9DAeVrpmKsMTXePCJmViOSH9qFnk8u1hfjK2NaMbHBjxhOcuq1tqYJOP2XY34yfOy%2FzOWEF%2BMdYWeGiflLg%2F8Kq%2FKPV6X%2Btd5dU9JVBmHuB4mIfkHLreZ4vhmmQuWiSh1moHXvXrGrlSLOrHHw%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ba9e3d3eebf79d0-SYD
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!-- viewport meta -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" charset="utf-8">
+	<title>Star</title>
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/android-icon-192x192.png" sizes="192x192" />
+	<link rel="icon" type="image/png" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/favicons/49/favicon-16x16.png" sizes="16x16" />
+
+	<meta name="application-name" content="Rhema Media" />
+	<meta property="og:image" content="https://s3-ap-southeast-2.amazonaws.com/crowdhubrhemaau/s_Star_1605724716_.jpg" />
+	<meta property="og:title" content="Star - Christian Music You’ve Loved For Years">
+	<meta property="og:site_name" content="Star" />
+	<meta property="og:description" content="It's home to your favourite Christian tunes, both contemporary hits and those that take you back a few years!">
+	<meta name="twitter:title" content="Star - Christian Music You’ve Loved For Years" />
+	<meta name="twitter:description" content="It's home to your favourite Christian tunes, both contemporary hits and those that take you back a few years!" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="https://www.star.net.nz/the-word-for-today/-always-be-open-minded-1-2024_08_29/" />
+
+	<script type="text/javascript" src="https://star.crowdhub.media/js/lib.js"></script>
+	<script type="text/javascript" src="https://star.crowdhub.media/js/app.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://star.crowdhub.media/css/app.css">
+
+	<!-- <script src="https://cdn.polyfill.io/v2/polyfill.js?features=es5,es6,es2016,es2017|gated&flags=gated&unknown=polyfill&callback=onPolyfillsLoad"></script> -->
+	<script type="text/javascript" src="https://servedbyadbutler.com/app.js"></script>
+	<script defer="defer" src="https://maps.googleapis.com/maps/api/js?v=3.50&libraries=places&key=AIzaSyDjVkyemugVLnlBPw3jUmQRhbbW33Wg5XA"></script>
+	<!-- Include Editor style. -->
+	<link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+
+	<!-- Include JS file. -->
+	<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K301EN66GP"></script>
+	<script>
+		var gaId = 'G-K301EN66GP';
+		var gaOn = 'true';
+
+		if (gaId && gaOn == 'true') {
+
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', gaId);
+
+			window.dataLayer = window.dataLayer || [];
+		}
+	</script>
+	<meta name="google-site-verification" content="j--qaPUzQBCxwG2ajb3Hs4WahVxX__PmnVo9kvaetZU" />
+</head>
+
+<!-- BUILD THE PLAYGROUND -->
+
+<body>
+	<div style="position:absolute; top: -200px; color: white;"> Star - Christian Music You’ve Loved For Years  It's home to your favourite Christian tunes, both contemporary hits and those that take you back a few years! </div>
+	<div id="no_scroll_wrapper" data-nosnippet>
+		<div id="background"></div>
+		<div id="controllers" class="hide_with_qr">
+			<div id="topnav" class=""></div>
+			<div id="screens"></div>
+			<div id="bottomnav"></div>
+		</div>
+
+		<div id="sidenav"></div>
+		<div id="content_message_container"></div>
+		<div id="selectable_container"></div>
+		<div id="messages"></div>
+		<div id="audio_player"></div>
+		<div id="darkness"></div>
+		<div id="loading"></div>
+		<div id="textmessage"></div>
+	</div>
+	<script async src="https://cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+	<script async defer type="text/javascript" src="https://crowdhubrhemaau.s3-ap-southeast-2.amazonaws.com/js/platform.js"></script>
+
+</body>
+
+</html>

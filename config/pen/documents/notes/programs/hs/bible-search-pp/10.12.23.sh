@@ -1,0 +1,5 @@
+cd /root/notes/ws/bible-studies;  "bible-search-pp" "eternal" "life" "#" "<==" "zsh"
+cd /root/notes/ws/bible-studies;  "bible-search-pp" "where" "I" "am" "#" "<==" "zsh"
+cd /root/notes/ws/bible-studies;  "bible-search-pp" "worshipped" "God" "#" "<==" "zsh"
+cd /root/notes/ws/bible-studies;  "bible-search-pp" "worshiped" "God" "#" "<==" "zsh"
+cd /root/notes/ws/bible-studies;  "bible-search-pp" "time" "has" "come" "#" "<==" "zsh"

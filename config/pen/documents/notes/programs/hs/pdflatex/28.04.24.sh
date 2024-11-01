@@ -1,0 +1,3 @@
+cd "/volumes/home/shane/var/smulliga/source/git/itsmeuttu/chemistry-notes/Physical Chemistry";  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "Chemical_Equilibrium.md.tex" "#" "<==" "emacs"
+cd "/volumes/home/shane/var/smulliga/source/git/itsmeuttu/chemistry-notes/Physical Chemistry";  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "Chemical_Equilibrium.md.tex" "#" "<==" "emacs"
+cd "/volumes/home/shane/var/smulliga/source/git/itsmeuttu/chemistry-notes/Physical Chemistry";  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "Chemical_Equilibrium.md.tex" "#" "<==" "emacs"

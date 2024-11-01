@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lf
+# key: lf
+# --
+log_file = open('log_file', 'w')

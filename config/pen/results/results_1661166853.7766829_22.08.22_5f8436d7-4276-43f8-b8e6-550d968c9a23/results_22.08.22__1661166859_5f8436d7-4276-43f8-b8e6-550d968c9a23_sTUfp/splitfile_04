@@ -1,0 +1,7 @@
+pper, isUpper)
+
+main :: IO ()
+
+main = getContents >>= putStr . toUpper . reverse . head . words
+
+The program is relatively short, but it uses a number of language features.

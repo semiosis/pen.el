@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "bible-search-phrase" "disciple" "song" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-search-phrase" "disciple" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-search-phrase" "disciple" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-search-phrase" "disciple" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-search-phrase" "disciple" "#" "<==" "pen-ci"

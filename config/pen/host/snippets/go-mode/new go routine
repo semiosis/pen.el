@@ -1,0 +1,4 @@
+# key: ngo
+# name: new go routine
+# --
+go f(x, y, z) // This run the function f(x, y, z)

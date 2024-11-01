@@ -1,0 +1,18 @@
+
+
+  -- Parse each record into a list of fields, one for each comma-separated value.
+  fields <- records ^. map (T.words . T.unpack)
+
+  -- Convert the list of fields into a list of records, where each
+  -- field is converted to a number if possible.
+  numbers <- fields ^. map (mapMaybe parseNumber)
+
+  -- Print the sum of all the numbers in the file
+  print (sum numbers)
+
+-- Parses a string into an integer, if possible.
+parseNumber :: String -> Maybe Int
+parseNumber s = case read s of
+                  [Just n] -> return n
+                  _ -> Nothing
+EOD

@@ -1,0 +1,741 @@
+AWS Elastic Beanstalk
+    [PaaS]
+
+    An orchestration service offered by AWS
+    for deploying applications which
+    orchestrates various AWS services,
+    including EC2, S3, Simple Notification
+    Service, CloudWatch, autoscaling, and
+    Elastic Load Balancers.
+
+    With AWS Elastic Beanstalk, you can
+    quickly deploy and manage applications in
+    the AWS Cloud without worrying about the
+    infrastructure that runs those
+    applications.
+    
+    AWS Elastic Beanstalk reduces management
+    complexity without restricting choice or
+    control.
+    
+    You simply upload your application, and
+    AWS Elastic Beanstalk automatically
+    handles the details of capacity
+    provisioning, load balancing, scaling, and
+    application health monitoring.
+
+AppSync
+AWS AppSync
+    https://sammart.in/post/2020-05-17-querying-appsync-with-python/
+
+    A really easy way to quickly assemble a
+    GraphQL API to interact with data from
+    DynamoDB, Lambda, ElasticSearch, RDS, or
+    other HTTP endpoints.
+
+    Enables you to use AWS Lambda to resolve
+    any GraphQL field.
+    
+    For example, a GraphQL query might send a
+    call to an Amazon RDS instance, and a
+    GraphQL mutation might write to a Amazon
+    Kinesis stream.
+    
+    In this section, we'll show you how to
+    write a Lambda function that performs
+    business logic based on the invocation of
+    a GraphQL field operation. 
+
+Amazon Elastic File System
+EFS
+    A cloud storage service provided by Amazon
+    Web Services designed to provide scalable,
+    elastic, concurrent with some
+    restrictions, and encrypted file storage
+    for use with both AWS cloud services and
+    on-premises resources.
+
+    This is used to mount EFS filesystems.
+
+    https://github.com/aws/efs-utils
+    
+    e.g.
+        sudo mount -t efs file-system-id efs-mount-point/
+
+amazon-efs-utils
+    Utilities for Amazon Elastic File System
+    (EFS)
+
+task definition
+    Required to run Docker containers in
+    Amazon ECS.
+
+    A task definition contains a list of
+    container definitions received by the
+    Docker daemon to create a container
+    instance.
+
+Amazon Resource Name
+ARN
+    It's an ID.
+
+Amazon Elastic Container Service
+ECS
+    A cloud computing service in AWS that
+    manages containers and allows developers
+    to run applications in the cloud without
+    having to configure an environment for the
+    code to run in.
+    
+    ECS supports Docker, an open source Linux
+    container service.
+
+ESC Service
+    https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d#:~:text=Service%20%E2%80%94%20Defines%20long%20running%20tasks,instance%20to%20an%20ECS%20Cluster.
+
+    Defines long running tasks of the same
+    Task Definition.
+    
+    This can be 1 running container or
+    multiple running containers all using the
+    same Task Definition.
+
+ECS cluster
+    An Amazon ECS cluster is a logical
+    grouping of tasks or services.
+    
+    If you are running tasks or services that
+    use the EC2 launch type, a cluster is also
+    a grouping of container instances.
+    
+    If you are using capacity providers, a
+    cluster is also a logical grouping of
+    capacity providers.
+
+ECS task
+    A task is the instantiation of a task
+    definition within a cluster.
+    
+    After you have created a task definition
+    for your application within Amazon ECS,
+    you can specify the number of tasks to run
+    on your cluster.
+    
+    The Amazon ECS task scheduler is
+    responsible for placing tasks within your
+    cluster.
+
+VPC
+    Virtual Private Cloud
+
+Amazon Managed Blockchain
+    https://aws.amazon.com/about-aws/whats-new/2021/03/announcing-general-availability-of-ethereum-on-amazon-managed-blockchain/
+
+    Provision Ethereum nodes.
+
+AWS
+Amazon Web Services
+
+RDS
+Relational Database Service
+Amazon Relational Database Service
+    A distributed relational database service
+    by AWS.
+    
+    It is a web service running "in the cloud"
+    designed to simplify the setup, operation,
+    and scaling of a relational database for
+    use in applications.
+
+ElastiCache
+Amazon ElastiCache
+    A fully managed in-memory data store and
+    cache service by AWS.
+    
+    The service improves the performance of
+    web applications by retrieving information
+    from managed in-memory caches, instead of
+    relying entirely on slower disk-based
+    databases.
+
+CodeGuru
+Amazon CodeGuru
+    A developer tool powered by ML that
+    provides intelligent recommendations for
+    improving code quality and identifying an
+    application’s most expensive lines of
+    code.
+    
+    Integrate Amazon CodeGuru into your
+    existing software development workflow
+    where you will experience built-in code
+    reviews to detect and optimize the
+    expensive lines of code to reduce costs.
+
+    You associate it with GitHub and select
+    the repo.
+        https://youtu.be/i0Lz0bCaPOI?t=120
+
+CodeGuru Profiler
+Amazon CodeGuru Profiler
+    Helps developers find an application’s
+    most expensive lines of code along with
+    specific visualizations and
+    recommendations on how to improve code to
+    save money.
+
+CodeGuru Reviewer
+Amazon CodeGuru Reviewer
+    Uses ML to identify critical issues and
+    hard-to-find bugs during application
+    development to improve code quality.
+
+SQS
+Simple Queue Service
+Amazon Simple Queue Service
+    A distributed message queuing service
+    introduced by Amazon.com in late 2004.
+
+    It supports programmatic sending of
+    messages via web service applications as a
+    way to communicate over the Internet.
+
+    See "RabbitMQ".
+
+Perspective
+AWS Perspective
+    [tool]
+
+    https://aws.amazon.com/solutions/implementations/aws-perspective/
+
+    Quickly visualizes AWS Cloud workloads as
+    architecture diagrams.
+    
+    You can use the solution to build,
+    customize, and share detailed workload
+    visualizations based on live data from
+    AWS.
+    
+    This solution works by maintaining an
+    inventory of the AWS resources across your
+    accounts and Regions, mapping
+    relationships between them, and displaying
+    them in a web user interface (web UI).
+    
+    When making changes to a resource, AWS
+    Perspective saves you time by providing a
+    link to the resource in the AWS Management
+    Console.
+
+CloudFormation
+AWS CloudFormation
+    Provides a common language for you to
+    model and provision AWS and third party
+    application resources in your cloud
+    environment.
+    
+    AWS CloudFormation allows you to use
+    programming languages or a simple text
+    file to model and provision, in an
+    automated and secure manner, all the
+    resources needed for your applications
+    across all regions and accounts.
+    
+    This gives you a single source of truth
+    for your AWS and third party resources.
+
+lambda cold start issue
+    A lambda is a little container of compute.
+
+    You can keep lambdas warm by putting them
+    on a cron and calling them every now and
+    then.
+
+Lambda
+AWS Lambda
+    [#AWS]
+    [Computing service]
+
+    A lambda is a little container of compute.
+
+    You can keep lambdas warm by putting them
+    on a cron and calling them every now and
+    then.
+
+    An event-driven, serverless computing
+    platform provided by Amazon as a part of
+    AWS.
+    
+    It is a computing service that runs code
+    in response to events and automatically
+    manages the computing resources required
+    by that code.
+    
+    It was introduced in November 2014.
+
+    Event-driven, serverless computing
+    platform.
+    
+    Runs code in response to events and
+    automatically manages the computing
+    resources required by that code. 
+
+AWS EventBridge
+EventBridge
+    [#AWS]
+
+    Event-Driven AWS Integration for your SaaS
+    Applications.
+
+    Serverless event bus that makes it easy to
+    connect applications together using data
+    from your own applications, integrated
+    Software-as-a-Service (SaaS) applications,
+    and AWS services.
+    
+    EventBridge delivers a stream of real-time
+    data from event sources, such as Zendesk,
+    Datadog, or Pagerduty, and routes that
+    data to targets like AWS Lambda.
+    
+    You can set up routing rules to determine
+    where to send your data to build
+    application architectures that react in
+    real time to all of your data sources.
+    
+    EventBridge makes it easy to build event-
+    driven applications because it takes care
+    of event ingestion and delivery, security,
+    authorization, and error handling for you.
+    
+    As your applications become more
+    interconnected through events, you need to
+    spend more effort to find events and
+    understand their structure in order to
+    write code to react to those events.
+
+AWS Cloud9
+Cloud9 IDE
+    An Online IDE, published as open source
+    from version 2.0, until version 3.0.
+    
+    It supports multiple programming
+    languages, including C, C++, PHP, Ruby,
+    Perl, Python, JavaScript with Node.js, and
+    Go.
+
+Amazon EC2
+
+Amazon EBS
+
+AMI
+Amazon Machine Image
+    A special type of virtual appliance that
+    is used to create a VM within the Amazon
+    Elastic Compute Cloud ("EC2").
+    
+    It serves as the basic unit of deployment
+    for services delivered using EC2.
+
+stateless
+    State is managed by another system.
+    
+    On AWS, this can be DynamoDB, RDS, S3, or
+    other storage services.
+    
+    Managing a stateless system is less
+    complex than managing a stateful system.
+    
+    You can terminate single instances at any
+    time without loosing data.
+
+Amazon VPC
+Amazon Virtual Private Cloud
+
+Transport Layer Security
+TLS
+
+User Datagram Protocol
+UDP
+
+Transmission Control Protocol
+TCP
+
+Elastic Load Balancing
+ELB
+    Achieve fault tolerance for any
+    application by ensuring scalability,
+    performance, and security.
+
+    Automatically distributes incoming
+    application traffic across multiple
+    targets, such as Amazon EC2 instances,
+    containers, IP addresses, and Lambda
+    functions.
+    
+    It can handle the varying load of your
+    application traffic in a single
+    Availability Zone or across multiple
+    Availability Zones.
+    
+    Elastic Load Balancing offers three types
+    of load balancers that all feature the
+    high availability, automatic scaling, and
+    robust security necessary to make your
+    applications fault tolerant.
+
+Application Load Balancer
+ALB
+    Best suited for load balancing of HTTP and
+    HTTPS traffic and provides advanced
+    request routing targeted at the delivery
+    of modern application architectures,
+    including microservices and containers.
+    
+    Operating at the individual request level
+    (Layer 7), Application Load Balancer
+    routes traffic to targets within Amazon
+    VPC based on the content of the request.
+
+Network Load Balancer
+NLB
+    Best suited for load balancing of TCP, UDP
+    and TLS traffic where extreme performance
+    is required.
+    
+    Operating at the connection level (Layer
+    4), Network Load Balancer routes traffic
+    to targets within Amazon VPC and is
+    capable of handling millions of requests
+    per second while maintaining ultra-low
+    latencies.
+    
+    Network Load Balancer is also optimized to
+    handle sudden and volatile traffic
+    patterns.
+
+Classic Load Balancer
+CLB
+    Provides basic load balancing across
+    multiple Amazon EC2 instances and operates
+    at both the request level and connection
+    level.
+    
+    Classic Load Balancer is intended for
+    applications that were built within the
+    EC2-Classic network.
+
+Spot fleet
+    https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet.html
+
+    This is the answer to capacity problems.
+
+ECR
+Amazon Elastic Container Registry
+    [#aws]
+
+    A fully-managed Docker container registry
+    that makes it easy for developers to
+    store, manage, and deploy Docker
+
+ECS
+Elastic Container Service
+    Fully managed container orchestration
+    service.
+    
+    Customers such as Duolingo, Samsung, GE,
+    and Cookpad use ECS to run their most
+    sensitive and mission critical
+    applications because of its security,
+    reliability, and scalability.
+    
+    ECS is a great choice to run containers
+    for several reasons.
+    
+    First, you can choose to run your ECS
+    clusters using AWS Fargate, which is
+    serverless compute for containers.
+    
+    Fargate removes the need to provision and
+    manage servers, lets you specify and pay
+    for resources per application, and
+    improves security through application
+    isolation by design.
+    
+    Second, ECS is used extensively within
+    Amazon to power services such as Amazon
+    SageMaker, AWS Batch, Amazon Lex, and
+    Amazon.com’s recommendation engine,
+    ensuring ECS is tested extensively for
+    security, reliability, and availability.
+
+Marketplace
+AWS Marketplace
+    A digital catalog with thousands of
+    software listings from independent
+    software vendors that make it easy to
+    find, test, buy, and deploy software that
+    runs on AWS.
+
+Amazon S3
+Amazon Simple Storage Service
+s3
+    A service offered by AWS that provides
+    object storage through a web service
+    interface.
+    
+    Amazon S3 uses the same scalable storage
+    infrastructure that Amazon.com uses to run
+    its global e-commerce network.
+
+Bastion Server
+Bastion Host
+    Use to controlling network access to EC2
+    Instances.
+
+    https://docs.aws.amazon.com/quickstart/latest/linux-bastion/architecture.html
+
+Reserved Instance
+    A reservation of resources and capacity,
+    for either one or three years, for a
+    particular Availability Zone within a
+    region.
+    
+    Unlike on-demand, when you purchase a
+    reservation, you commit to paying for all
+    of the hours of the 1- or 3-year term; in
+    exchange, the hourly rate is lowered
+    significantly.
+
+Standard Reserved Instances
+    Provide you with a significant discount
+    (up to 75%) compared to On-Demand instance
+    pricing, and can be purchased for a 1-year
+    or 3-year term.
+    
+    Customers have the flexibility to change
+    the Availability Zone, the instance size,
+    and networking type of their Standard
+    Reserved Instances.
+
+Availability Zone
+    A logical data center in a region
+    available for use by any AWS customer.
+    
+    Each zone in a region has redundant and
+    separate power, networking and
+    connectivity to reduce the likelihood of
+    two zones failing simultaneously.
+    
+    A common misconception is that a single
+    zone equals a single data center.
+
+DynamoDB
+Amazon DynamoDB
+    A key-value and document database that
+    delivers single-digit millisecond
+    performance at any scale.
+    
+    It's a fully managed, multiregion,
+    multimaster, durable database with built-
+    in security, backup and restore, and in-
+    memory caching for internet-scale
+    applications.
+
+SAM
+Serverless Application Model
+AWS Serverless Application Model
+AWS SAM
+    [cloud formation]
+
+    An AWS deploy tool on top of cloud
+    formation.
+
+    An open-source framework that you can use
+    to build serverless applications on AWS.
+    
+    A serverless application is a combination
+    of Lambda functions, event sources, and
+    other resources that work together to
+    perform tasks.
+    
+    Note that a serverless application is more
+    than just a Lambda function—it can include
+    additional resources such as APIs,
+    databases, and event source mappings.
+
+template.yaml
+    SAM template.
+
+    https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy.html
+
+AWS Fargate
+Fargate
+    Amazon's container service.
+
+    A serverless compute engine for containers
+    that works with both Amazon Elastic
+    Container Service (ECS) and Amazon Elastic
+    k8s Service (EKS).
+    
+    Fargate makes it easy for you to focus on
+    building your applications.
+    
+    Fargate removes the need to provision and
+    manage servers, lets you specify and pay
+    for resources per application, and
+    improves security through application
+    isolation by design.
+    
+    Fargate allocates the right amount of
+    compute, eliminating the need to choose
+    instances and scale cluster capacity.
+    
+    You only pay for the resources required to
+    run your containers, so there is no over-
+    provisioning and paying for additional
+    servers.
+    
+    Fargate runs each task or pod in its own
+    kernel providing the tasks and pods their
+    own isolated compute environment.
+    
+    This enables your application to have
+    workload isolation and improved security
+    by design.
+    
+    This is why customers such as Vanguard,
+    Accenture, Foursquare, and Ancestry have
+    chosen to run their mission critical
+    applications on Fargate.
+
+CodeBuild
+AWS CodeBuild
+    Fully managed CI service that compiles
+    source code, runs tests, and produces
+    software packages that are ready to
+    deploy.
+    
+    With CodeBuild, you don’t need to
+    provision, manage, and scale your own
+    build servers.
+    
+    CodeBuild scales continuously and
+    processes multiple builds concurrently, so
+    your builds are not left waiting in a
+    queue.
+    
+    You can get started quickly by using
+    prepackaged build environments, or you can
+    create custom build environments that use
+    your own build tools.
+    
+    With CodeBuild, you are charged by the
+    minute for the compute resources you use.
+
+CloudSearch
+Amazon CloudSearch
+    Quickly add rich search capabilities to
+    your website or application.
+    
+    You don't need to become a search expert
+    or worry about hardware provisioning,
+    setup, and maintenance.
+    
+    With a few clicks in the AWS Management
+    Console, you can create a search domain
+    and upload the data that you want to make
+    searchable, and Amazon CloudSearch will
+    automatically provision the required
+    resources and deploy a highly tuned search
+    index.
+    
+    You can easily change your search
+    parameters, fine tune search relevance,
+    and apply new settings at any time.
+    
+    As your volume of data and traffic
+    fluctuates, Amazon CloudSearch seamlessly
+    scales to meet your needs.
+
+Service-oriented architecture
+    NLG: A style of software architecture in
+    which functionality is provided as
+    services to other components.
+
+CQRS
+    NLG:
+        Command Query Responsibility
+        Segregation is a pattern for
+        implementing distributed systems.
+        
+        It divides the application into two
+        logical parts: the command side and
+        the query side.
+        
+        The command side is responsible for
+        changing the state of the application,
+        while the query side is responsible
+        for reporting the state of the
+        application.
+
+AWS Outposts
+    A fully managed service that offers the
+    same AWS infrastructure, AWS services,
+    APIs, and tools to virtually any
+    datacenter, co-location space, or on-
+    premises facility for a truly consistent
+    hybrid experience.
+    
+    AWS Outposts is ideal for workloads that
+    require low latency access to on-premises
+    systems, local data processing, data
+    residency, and migration of applications
+    with local system interdependencies.
+
+Command Query Responsibility
+    NLG: A pattern that describes how a
+    command and a query can be separated in an
+    application.
+
+API Composition Pattern
+    [[egr:aws API Composition Pattern]]
+
+Lambda Resolver
+    [[egr:aws lambda resolver]]
+
+    https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-lambda-resolvers.html
+
+Eventsourcing
+Decoupled Service Choreography
+    NLG:
+        A service choreography is a model of a
+        service that is used to describe the
+        capabilities of the service and the
+        interactions that are possible with
+        the service.
+        
+        A decoupled service choreography is a
+        service choreography where the service
+        and the consumer of the service are
+        not tightly coupled.
+
+SAGA
+    [Microservice Patterns in AWS]
+
+    https://www.shogan.co.uk/aws/saga-pattern-with-aws-cdk-lambda-and-step-functions/
+
+    A sequence of local transactions.
+
+    Intra-service orchestration using state
+    machines.
+
+    The saga pattern is useful when you have
+    transactions that require a bunch of steps
+    to complete successfully, with failure of
+    steps requiring associated rollback
+    processes to run.
+    
+    This post will cover the saga pattern with
+    aws-cdk, leveraging AWS Step Functions and
+    Lambda.

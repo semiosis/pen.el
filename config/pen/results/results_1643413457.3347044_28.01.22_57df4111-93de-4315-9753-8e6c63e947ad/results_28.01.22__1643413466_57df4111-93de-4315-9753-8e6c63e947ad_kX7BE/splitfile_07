@@ -1,0 +1,15 @@
+cd ..
+» pwd
+/root
+» cd notes
+» pwd
+/root/notes
+» cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» cd ..
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» cd ..
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt  term.

@@ -1,0 +1,99 @@
+task: "generate html from ascii browser"
+doc: "Given an ascii browser dump, generate some html"
+prompt-version: 3
+prompt: |-
+    # Render the website:
+    lynx --dump -nolist site1.html | head -n 30 <<EOD
+    My Website
+
+       A responsive website created by me.
+
+       Home Link Link Link
+
+    TITLE HEADING
+
+    Title description, Dec 7, 2017
+
+       Image
+
+       Some text..
+
+       Sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    Footer
+    EOD
+
+    # Show the html:
+    cat site1.html | head -n 30 <<EOD
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Page Title</title>
+    </head>
+    <body>
+
+    <div class="header">
+      <h1>My Website</h1>
+      <p>A <b>responsive</b> website created by me.</p>
+    </div>
+
+    <div class="navbar">
+      <a href="#home" class="active">Home</a>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div>Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+
+    </body>
+    </html>
+    EOD
+
+    # Render the website and then curl the html
+
+    # Render the website:
+    lynx --dump -nolist <q:url> | head -n 30 <<EOD
+    <ascii>
+    EOD
+
+    # Show the html:
+    curl -s <q:url> <<EOD
+    <:pp><!DOCTYPE html>
+    <html>
+    <head>
+    <title>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "100"
+top-p: 1.0
+n-collate: 1
+n-completions: 5
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- url
+- ascii
+examples:
+- |-
+     Apple
+
+     We look forward to welcoming you to our stores. Whether you shop in a
+     store or shop online, our Specialists can help you buy the products
+     you love. Shop with a Specialist, get credit with Apple Trade In,
+     choose free delivery or pickup, and more at the Apple Store Online.
+     Shop with a Specialist, get credit with Apple Trade In, choose free
+     delivery or pickup, and more at the Apple Store Online.
+info: on
+completion: off
+insertion: off

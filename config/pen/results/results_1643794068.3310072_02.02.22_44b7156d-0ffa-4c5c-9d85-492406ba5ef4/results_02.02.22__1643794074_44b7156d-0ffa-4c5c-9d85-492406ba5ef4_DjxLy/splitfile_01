@@ -1,0 +1,8 @@
+ " " args))
+
+(defn sh
+  ""
+  (clojure.java.shell/sh cmd))
+
+(defn fuse-pensieve-path
+  "Returns the path of the fuse-p

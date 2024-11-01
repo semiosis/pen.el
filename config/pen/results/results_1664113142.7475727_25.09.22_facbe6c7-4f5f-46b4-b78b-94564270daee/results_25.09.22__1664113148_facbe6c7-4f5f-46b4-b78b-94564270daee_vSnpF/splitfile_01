@@ -1,0 +1,12 @@
+(as-> [x]
+  (inc x)
+  (as-> [x]
+    (dec x)
+    (as-> [x]
+      (inc x)
+      (as-> [x]
+        (dec x)
+        (as-> [x]
+          (inc x)
+          (as-> [x]
+            (

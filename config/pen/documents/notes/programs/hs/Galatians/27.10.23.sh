@@ -1,0 +1,5 @@
+cd /root/notes;  "Galatians" "6" "#" "<==" "zsh"
+cd /root/notes;  "Galatians" "6" "#" "<==" "zsh"
+cd /root/notes;  "Galatians" "6" "#" "<==" "shx"
+cd /root/notes;  "Galatians" "6" "#" "<==" "zsh"
+cd /root/notes;  "Galatians" "6" "#" "<==" "zsh"

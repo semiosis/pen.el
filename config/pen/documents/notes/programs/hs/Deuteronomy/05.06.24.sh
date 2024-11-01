@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Deuteronomy" "10:14-17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Deuteronomy" "10:14-17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Deuteronomy" "10:14-17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Deuteronomy" "10:16-17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Deuteronomy" "10:14-15" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Deuteronomy" "10:14" "#" "<==" "zsh"

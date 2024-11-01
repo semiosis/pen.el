@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: defer
+# key: defer
+# --
+defer ui.Close()

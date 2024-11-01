@@ -1,0 +1,25 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\(x,y) -> [x,y])) tuples
+
+  -- Tabularise the rows and print them to stdout.
+  mapM_ (putStrLn . T.unpack) $ tabularize rows
+EOD
+
+# haskell files
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+-- It then tabularises and prints the output
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+import Data.List (intercalate)
+
+  main = do
+
+    -- Read the CSV from stdin and decode it into a list of lines.

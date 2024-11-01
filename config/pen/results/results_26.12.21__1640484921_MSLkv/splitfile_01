@@ -1,0 +1,2 @@
+
+wget -q -O - "http://www.google.com/search?sourceid=chrome&ie=UTF-8&oe=UTF-8&q=$1" | grep -o -m 1 -P '<div class="s">.*?<

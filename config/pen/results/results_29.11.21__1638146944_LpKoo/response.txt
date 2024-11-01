@@ -1,0 +1,3 @@
+Multiply two imaginary numbers"
+  (interactive "sEnter a: " "sEnter b: ")
+  (message "The product is: %s" (* (string-to-number a) (string-to-number b))))

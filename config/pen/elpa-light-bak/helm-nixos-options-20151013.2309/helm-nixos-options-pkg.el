@@ -1,0 +1,2 @@
+;;; Generated package description from helm-nixos-options.el  -*- no-byte-compile: t -*-
+(define-package "helm-nixos-options" "20151013.2309" "Helm Interface for nixos-options" '((nixos-options "0.0.1") (helm "1.5.6")) :commit "053a2d5110ce05b7f99bcc2ac4804b70cbe87916" :authors '(("Diego Berrocal" . "cestdiego@gmail.com") ("Travis B. Hartwell" . "nafai@travishartwell.net")) :maintainer '("Diego Berrocal" . "cestdiego@gmail.com") :keywords '("unix") :url "http://www.github.com/travisbhartwell/nix-emacs/")

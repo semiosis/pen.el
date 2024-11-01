@@ -1,0 +1,15 @@
+</b><a href="http://example.com/elsie" class="sister" id="link1"><!-- Elsie --></a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and</body>
+</html>
+"""
+
+SOUP = bs4.BeautifulSoup(HTML_DOC, 'html.parser')
+
+print(SOUP.prettify())
+
+# A: find_all()
+# 
+# 
+# SOUP.find_all(TAG)  # returns a result_set (a list)
+# SOUP.find_all(TAG, id=ID)  # returns a TAG with a specified id attribute
+# SOUP.find_all(TAG, class_=CLASS)  # returns a TAG with specified class attribute
+# SOUP.find

@@ -1,0 +1,2 @@
+(group-by (fn [[_ a] [_ b]] (= b a))
+         (partition 2 (range 10)))

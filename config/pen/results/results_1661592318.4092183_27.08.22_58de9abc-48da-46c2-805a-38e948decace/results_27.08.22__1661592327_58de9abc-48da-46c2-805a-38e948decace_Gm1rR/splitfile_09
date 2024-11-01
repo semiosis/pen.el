@@ -1,0 +1,22 @@
+.
+
+import Data.List (intercalate)
+import Data.Text (pack, unpack)
+import qualified Data.ByteString as B
+import qualified Data.Text as T
+import qualified Data.Map as M
+import qualified Data.Set as S
+import Control.Monad (forM_, when)
+import System.IO (hGetContents, readFile, writeFile)
+import System.Environment (getArgs)
+import System.Exit (exitSuccess)
+import qualified Data.ByteString.Lazy as BL
+import qualified Data.ByteString as B
+-- import Control.Monad (forM_)
+-- import Control.Monad.IO.Class (liftIO)
+-- import Control.Exception (catchException)
+
+
+main = do args <- getArgs -- get command line arguments and put them in a list of strings called args 
+
+  case args of -- pattern match on args to find out what

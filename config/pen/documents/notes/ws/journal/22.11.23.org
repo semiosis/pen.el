@@ -1,0 +1,18 @@
+Today I feel like =I John 2:4= was exemplified in my life.
+
+#+BEGIN_SRC bash -n :async :results verbatim code :lang text
+  I John 2:4
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+| 1 John 2:4
+| ‾‾‾‾‾‾‾‾‾‾
+| The one who says, “I have come to know Him,”
+| and does not keep His commandments, is a liar,
+| and the truth is not in him;
+| 
+| (NASB)
+#+end_src
+
+It is certainly important to keep Jesus Christ's commandments.

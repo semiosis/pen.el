@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: arg-$0
+# group: getopts
+# key: $0
+# --
+sys.argv[0]

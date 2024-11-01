@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: AppceleratorTitanium
+# contributor: Toptal & contributors
+# key: appceleratortitanium
+# --
+
+### AppceleratorTitanium ###
+
+# Build folder and log file
+build/
+build.log

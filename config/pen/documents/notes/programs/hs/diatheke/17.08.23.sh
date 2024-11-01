@@ -1,0 +1,7 @@
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Judges" "15:19" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Revelation" "21:27" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Revelation" "21:26-27" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Revelation" "21:25-27" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Philippians" "4:19" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Isaiah" "26:3" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "1" "Samuel" "2:30" "#" "<==" "in-pen"

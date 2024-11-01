@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Deuteronomy" "28:1-19" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Deuteronomy" "28:1-19" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Deuteronomy" "28:1-19" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Deuteronomy" "28:1-19" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Deuteronomy" "23:7" "#" "<==" "bash"

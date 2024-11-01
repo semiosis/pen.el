@@ -1,0 +1,1418 @@
+HTTP/1.1 200 OK
+date: Mon, 15 Apr 2024 13:32:16 GMT
+server: mw-web.codfw.main-54758c58bc-29dvb
+x-content-type-options: nosniff
+content-language: en
+origin-trial: AonOP4SwCrqpb0nhZbg554z9iJimP3DxUDB8V4yu9fyyepauGKD0NXqTknWi4gnuDfMG6hNb7TDUDTsl0mDw9gIAAABmeyJvcmlnaW4iOiJodHRwczovL3dpa2lwZWRpYS5vcmc6NDQzIiwiZmVhdHVyZSI6IlRvcExldmVsVHBjZCIsImV4cGlyeSI6MTczNTM0Mzk5OSwiaXNTdWJkb21haW4iOnRydWV9
+accept-ch: 
+vary: Accept-Encoding,Cookie,Authorization
+last-modified: Fri, 12 Apr 2024 16:22:13 GMT
+content-type: text/html; charset=UTF-8
+age: 50455
+x-cache: cp4044 hit, cp4044 hit/4
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp4044"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+set-cookie: WMF-DP=79c;Path=/;HttpOnly;secure;Expires=Tue, 16 Apr 2024 00:00:00 GMT
+x-client-ip: 222.154.246.11
+cache-control: private, s-maxage=0, max-age=0, must-revalidate
+set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600
+accept-ranges: bytes
+content-length: 41358
+
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-feature-night-mode-disabled skin-theme-clientpref-day vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Nazarene (sect) - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-feature-night-mode-disabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],
+"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b3b4f2e4-62ec-4a10-8b2d-f45b4c6aeb2b","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Nazarene_(sect)","wgTitle":"Nazarene (sect)","wgCurRevisionId":1216724723,"wgRevisionId":1216724723,"wgArticleId":366888,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: location missing publisher","Articles with short description","Short description is different from Wikidata","Articles containing Greek-language text","Articles containing Ancient Greek (to 1453)-language text","Articles containing Arabic-language text","Christianity and Judaism related controversies","Schisms in Christianity","1st-century Christianity","4th-century Christianity","Early Jewish Christian sects",
+"Former Christian denominations","Heresy in ancient Christianity","Mandaeism","Mandaeans"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Nazarene_(sect)","wgRelevantArticleId":366888,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,
+"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q929001","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.scribunto.logs","site",
+"mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.26">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/1200px-Bloch-SermonOnTheMount.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1346">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/800px-Bloch-SermonOnTheMount.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="898">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/640px-Bloch-SermonOnTheMount.jpg">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="718">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Nazarene (sect) - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Nazarene_(sect)">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Nazarene_(sect)&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Nazarene_(sect)">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Nazarene_sect rootpage-Nazarene_sect skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools" role="navigation" >
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-client-prefs-landmark" aria-label="Appearance">
+		
+		
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Nazarene+%28sect%29" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Nazarene+%28sect%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Nazarene+%28sect%29" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Nazarene+%28sect%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Nazarene_(title)"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Nazarene_(title)">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Nazarene (title)</div>
+		</a>
+		
+		<ul id="toc-Nazarene_(title)-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-The_Sect_of_the_Nazarenes_(1st_century)"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#The_Sect_of_the_Nazarenes_(1st_century)">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>The Sect of the Nazarenes (1st century)</div>
+		</a>
+		
+		<ul id="toc-The_Sect_of_the_Nazarenes_(1st_century)-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-The_Nazarenes_(4th_century)"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#The_Nazarenes_(4th_century)">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>The Nazarenes (4th century)</div>
+		</a>
+		
+			<button aria-controls="toc-The_Nazarenes_(4th_century)-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle The Nazarenes (4th century) subsection</span>
+			</button>
+		
+		<ul id="toc-The_Nazarenes_(4th_century)-sublist" class="vector-toc-list">
+			<li id="toc-Gospel_of_the_Nazarenes"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Gospel_of_the_Nazarenes">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.1</span>Gospel of the Nazarenes</div>
+			</a>
+			
+			<ul id="toc-Gospel_of_the_Nazarenes-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Patristic_references_to_&quot;Nazarenes&quot;"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Patristic_references_to_&quot;Nazarenes&quot;">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.2</span>Patristic references to "Nazarenes"</div>
+			</a>
+			
+			<ul id="toc-Patristic_references_to_&quot;Nazarenes&quot;-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Nazarene_beliefs"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Nazarene_beliefs">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.3</span>Nazarene beliefs</div>
+			</a>
+			
+			<ul id="toc-Nazarene_beliefs-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-The_Judeo-Nazarenes_(7th_century)"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#The_Judeo-Nazarenes_(7th_century)">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>The Judeo-Nazarenes (7th century)</div>
+		</a>
+		
+		<ul id="toc-The_Judeo-Nazarenes_(7th_century)-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Nasoraean_Mandaeans"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Nasoraean_Mandaeans">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>Nasoraean Mandaeans</div>
+		</a>
+		
+		<ul id="toc-Nasoraean_Mandaeans-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Modern_&quot;Nazarene&quot;_churches"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Modern_&quot;Nazarene&quot;_churches">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>Modern "Nazarene" churches</div>
+		</a>
+		
+		<ul id="toc-Modern_&quot;Nazarene&quot;_churches-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>See also</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">9</span>Further reading</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">10</span>External links</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Nazarene (sect)</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 23 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-23" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">23 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%86%D8%A7%D8%B5%D8%B1%D9%8A%D9%88%D9%86_(%D8%B7%D8%A7%D8%A6%D9%81%D8%A9)" title="ناصريون (طائفة) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Natzarens_(secta_del_segle_IV)" title="Natzarens (secta del segle IV) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Nazarener_(Religion)" title="Nazarener (Religion) – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Natsareenid" title="Natsareenid – Estonian" lang="et" hreflang="et" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Nazarenos_(secta_cristiana)" title="Nazarenos (secta cristiana) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Nazareo" title="Nazareo – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Naz%C3%B4r%C3%A9ens_(secte)" title="Nazôréens (secte) – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%82%98%EC%82%AC%EB%A0%9B%ED%8C%8C" title="나사렛파 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/Nazareni" title="Nazareni – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Nasrani_(sekte)" title="Nasrani (sekte) – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Nazareni_(setta)" title="Nazareni (setta) – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-mg mw-list-item"><a href="https://mg.wikipedia.org/wiki/Naz%C3%B4reana" title="Nazôreana – Malagasy" lang="mg" hreflang="mg" class="interlanguage-link-target"><span>Malagasy</span></a></li><li class="interlanguage-link interwiki-arz mw-list-item"><a href="https://arz.wikipedia.org/wiki/%D9%86%D8%A7%D8%B5%D8%B1%D9%8A%D9%88%D9%86_(%D8%B7%D8%A7%D8%A6%D9%81%D9%87)" title="ناصريون (طائفه) – Egyptian Arabic" lang="arz" hreflang="arz" class="interlanguage-link-target"><span>مصرى</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Nazoree%C3%ABrs" title="Nazoreeërs – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-nds-nl mw-list-item"><a href="https://nds-nl.wikipedia.org/wiki/Nazoree%C3%ABrs" title="Nazoreeërs – Low Saxon" lang="nds-NL" hreflang="nds-NL" class="interlanguage-link-target"><span>Nedersaksies</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Nazarejczycy" title="Nazarejczycy – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Nazarenos_(seita)" title="Nazarenos (seita) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/Nazarineni" title="Nazarineni – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B7%D0%B0%D1%80%D0%B5%D0%B8_(%D1%81%D0%B5%D0%BA%D1%82%D0%B0,_I_%D0%B2%D0%B5%D0%BA)" title="Назареи (секта, I век) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Nazareni" title="Nazareni – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Nasar%C3%A9erna" title="Nasaréerna – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wikipedia.org/wiki/Mga_Nazareno" title="Mga Nazareno – Tagalog" lang="tl" hreflang="tl" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-ur mw-list-item"><a href="https://ur.wikipedia.org/wiki/%D9%86%D8%A7%D8%B5%D8%B1%DB%8C_(%D9%81%D8%B1%D9%82%DB%81)" title="ناصری (فرقہ) – Urdu" lang="ur" hreflang="ur" class="interlanguage-link-target"><span>اردو</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q929001#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Nazarene_(sect)" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Nazarene_(sect)" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Nazarene_(sect)"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Nazarene_(sect)&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Nazarene_(sect)"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Nazarene_(sect)&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Nazarene_(sect)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Nazarene_(sect)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Nazarene_(sect)&amp;oldid=1216724723" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Nazarene_(sect)&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Nazarene_%28sect%29&amp;id=1216724723&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNazarene_%28sect%29"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNazarene_%28sect%29"><span>Download QR code</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q929001" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Nazarene_%28sect%29&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Nazarene_(sect)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-client-prefs-landmark" aria-label="Appearance">
+						</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">First-century Christian sect</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For other uses of "Nazarene", see <a href="/wiki/Nazarene_(disambiguation)" class="mw-redirect mw-disambig" title="Nazarene (disambiguation)">Nazarene (disambiguation)</a>.</div>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><table class="sidebar sidebar-collapse nomobile nowraplinks hlist"><tbody><tr><td class="sidebar-pretitle">Part of <a href="/wiki/Category:Jewish_Christianity" title="Category:Jewish Christianity">a series</a> on</td></tr><tr><th class="sidebar-title-with-pretitle"><a href="/wiki/Jewish_Christianity" title="Jewish Christianity">Jewish Christianity</a></th></tr><tr><td class="sidebar-image"><span typeof="mw:File"><a href="/wiki/File:Bloch-SermonOnTheMount.jpg" class="mw-file-description" title="&quot;The Sermon on the Mount&quot; by Carl Bloch (1834–1890)"><img alt="&quot;The Sermon on the Mount&quot; by Carl Bloch (1834–1890)" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/120px-Bloch-SermonOnTheMount.jpg" decoding="async" width="120" height="135" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/180px-Bloch-SermonOnTheMount.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/240px-Bloch-SermonOnTheMount.jpg 2x" data-file-width="1377" data-file-height="1545" /></a></span></td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:#0000b4 2px solid;font-size:105%;"><div class="sidebar-list-title-c">Figures</div></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Jesus" title="Jesus">Jesus</a>
+<ul><li><a href="/wiki/Jesus_in_Christianity" title="Jesus in Christianity">in Christianity</a></li></ul></li>
+<li><a href="/wiki/John_the_Baptist" title="John the Baptist">John the Baptist</a></li>
+<li><a href="/wiki/Saint_Peter" title="Saint Peter">Simon Peter</a></li>
+<li><a href="/wiki/Apostles_in_the_New_Testament" title="Apostles in the New Testament">Twelve Apostles</a></li>
+<li><a href="/wiki/James_the_Just" class="mw-redirect" title="James the Just">James the Just</a></li>
+<li><a href="/wiki/Simeon_of_Jerusalem" title="Simeon of Jerusalem">Simeon of Jerusalem</a></li>
+<li><a href="/wiki/Jude,_brother_of_Jesus" title="Jude, brother of Jesus">Jude</a></li>
+<li><a href="/wiki/Paul_the_Apostle" title="Paul the Apostle">Paul</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible"><div class="sidebar-list-title" style="border-top:#0000b4 2px solid;font-size:105%;"><div class="sidebar-list-title-c">Ancient groups</div></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Ebionites" title="Ebionites">Ebionites</a></li>
+<li><a href="/wiki/Elcesaites" title="Elcesaites">Elcesaites</a></li>
+<li><a class="mw-selflink selflink">Nazarenes</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:#0000b4 2px solid;font-size:105%;"><div class="sidebar-list-title-c">Recent groups</div></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Hebrew_Christian_movement" title="Hebrew Christian movement">Hebrew Christian movement</a></li>
+<li><a href="/wiki/Messianic_Judaism" title="Messianic Judaism">Messianic Judaism</a></li>
+<li><a href="/wiki/Hebrew_Roots" title="Hebrew Roots">Hebrew Roots</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:#0000b4 2px solid;font-size:105%;"><div class="sidebar-list-title-c">Pejoratives</div></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Judaizers" title="Judaizers">Judaizers</a></li>
+<li><a href="/wiki/Legalism_(theology)" title="Legalism (theology)">Legalists</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:#0000b4 2px solid;font-size:105%;"><div class="sidebar-list-title-c">Adversity</div></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Split_of_early_Christianity_and_Judaism" class="mw-redirect" title="Split of early Christianity and Judaism">Split of Christianity and Judaism</a></li>
+<li><a href="/wiki/Paul_the_Apostle_and_Judaism" class="mw-redirect" title="Paul the Apostle and Judaism">Paul and Judaism</a></li>
+<li><a href="/wiki/Marcionism" title="Marcionism">Marcionism</a></li>
+<li><a href="/wiki/Christianity_and_antisemitism" class="mw-redirect" title="Christianity and antisemitism">Christian anti-semitism</a></li>
+<li><a href="/wiki/Constantine_the_Great_and_Christianity" title="Constantine the Great and Christianity">Constantine</a></li>
+<li><a href="/wiki/Circumcision_controversy_in_early_Christianity" title="Circumcision controversy in early Christianity">Circumcision controversy</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:#0000b4 2px solid;font-size:105%;"><div class="sidebar-list-title-c">Writings</div></div><div class="sidebar-list-content mw-collapsible-content">
+<dl><dt>New Testament</dt></dl>
+<ul><li><a href="/wiki/Gospel_of_Matthew" title="Gospel of Matthew">Gospel of Matthew</a></li>
+<li><a href="/wiki/Epistle_of_James" title="Epistle of James">Epistle of James</a></li></ul>
+<dl><dt><a href="/wiki/Jewish%E2%80%93Christian_gospels" title="Jewish–Christian gospels">Jewish–Christian gospels</a></dt></dl>
+<ul><li><a href="/wiki/Gospel_of_the_Ebionites" title="Gospel of the Ebionites">Gospel of the Ebionites</a></li>
+<li><a href="/wiki/Gospel_of_the_Hebrews" title="Gospel of the Hebrews">Gospel of the Hebrews</a></li>
+<li><a href="/wiki/Gospel_of_the_Nazarenes" title="Gospel of the Nazarenes">Gospel of the Nazarenes</a></li></ul>
+<dl><dt>Other</dt></dl>
+<ul><li><a href="/wiki/Clementine_literature" title="Clementine literature">Clementine</a></li>
+<li><a href="/wiki/Didache" title="Didache">Didache</a></li>
+<li><a href="/wiki/Book_of_Elchasai" title="Book of Elchasai">Book of Elchasai</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:#0000b4 2px solid;font-size:105%;"><div class="sidebar-list-title-c">Issues</div></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Language_of_Jesus" title="Language of Jesus">Aramaic of Jesus</a></li>
+<li><a href="/wiki/Yeshua" title="Yeshua">Yeshua (name)</a></li>
+<li><a href="/wiki/Council_of_Jerusalem" title="Council of Jerusalem">Council of Jerusalem</a></li>
+<li><a href="/wiki/Expounding_of_the_Law" class="mw-redirect" title="Expounding of the Law">Expounding of the Law</a></li>
+<li><a href="/wiki/Sabbath_in_Christianity" title="Sabbath in Christianity">Sabbath</a></li>
+<li><a href="/wiki/Quartodecimanism" title="Quartodecimanism">Quartodecimanism</a></li>
+<li><a href="/wiki/Shekhinah" title="Shekhinah">Shekhinah</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-below" style="border-top:#0000b4 1px solid">
+<div class="hlist"><ul><li><span class="noviewer" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/49/Star_of_David.svg/14px-Star_of_David.svg.png" decoding="async" width="14" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/49/Star_of_David.svg/21px-Star_of_David.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/49/Star_of_David.svg/28px-Star_of_David.svg.png 2x" data-file-width="600" data-file-height="693" /></span></span>&#160;<a href="/wiki/Portal:Judaism" title="Portal:Judaism">Judaism&#32;portal</a></li><li><span class="noviewer" typeof="mw:File"><a href="/wiki/File:P_christianity.svg" class="mw-file-description"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/P_christianity.svg/16px-P_christianity.svg.png" decoding="async" width="16" height="14" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/P_christianity.svg/24px-P_christianity.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/79/P_christianity.svg/32px-P_christianity.svg.png 2x" data-file-width="400" data-file-height="360" /></a></span>&#160;<a href="/wiki/Portal:Christianity" title="Portal:Christianity">Christianity&#32;portal</a></li></ul></div></td></tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Jewish_Christianity" title="Template:Jewish Christianity"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Jewish_Christianity" title="Template talk:Jewish Christianity"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Jewish_Christianity" title="Special:EditPage/Template:Jewish Christianity"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>The <b>Nazarenes</b> (or <b>Nazoreans</b>; <a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el">Ναζωραῖοι</span>, <small><a href="/wiki/Romanization_of_Greek" title="Romanization of Greek">romanized</a>:&#160;</small><span title="Greek-language romanization"><i lang="el-Latn">Nazōraioi</i></span>)<sup id="cite_ref-strongs_1-0" class="reference"><a href="#cite_note-strongs-1">&#91;1&#93;</a></sup> were an early <a href="/wiki/Jewish_Christian" class="mw-redirect" title="Jewish Christian">Jewish Christian</a> <a href="/wiki/Sect" title="Sect">sect</a> in first-century Judaism. The first use of the term is found in the <a href="/wiki/Acts_of_the_Apostles" title="Acts of the Apostles">Acts of the Apostles</a> (<a rel="nofollow" class="external text" href="https://bible.oremus.org/?passage=Acts%2024:5&amp;version=nrsv">Acts 24:5</a>) of the <a href="/wiki/New_Testament" title="New Testament">New Testament</a>, where <a href="/wiki/Paul_the_Apostle" title="Paul the Apostle">Paul the Apostle</a> is accused of being a ringleader of the sect of the Nazarenes ("<span title="Ancient Greek (to 1453)-language text"><span lang="grc">πρωτοστάτην  τε  τῆς  τῶν  Ναζωραίων αἱρέσεως</span></span>") before the Roman <a href="/wiki/Procurator_(Ancient_Rome)" class="mw-redirect" title="Procurator (Ancient Rome)">procurator</a> <a href="/wiki/Antonius_Felix" title="Antonius Felix">Antonius Felix</a> at <a href="/wiki/Caesarea_Maritima" title="Caesarea Maritima">Caesarea Maritima</a> by <a href="/wiki/Tertullus" title="Tertullus">Tertullus</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> At that time, the term simply designated followers of <a href="/wiki/Jesus" title="Jesus">Jesus of Nazareth</a>, as the <a href="/wiki/Hebrew_language" title="Hebrew language">Hebrew</a> term <style data-mw-deduplicate="TemplateStyles:r1020748213">.mw-parser-output .script-hebrew,.mw-parser-output .script-Hebr{font-family:"SBL Hebrew","SBL BibLit","Taamey Ashkenaz","Taamey Frank CLM","Frank Ruehl CLM","Ezra SIL","Ezra SIL SR","Keter Aram Tsova","Taamey David CLM","Keter YG","Shofar","David CLM","Hadasim CLM","Simple CLM","Nachlieli",Cardo,Alef,"Noto Serif Hebrew","Noto Sans Hebrew","David Libre",David,"Times New Roman",Gisha,Arial,FreeSerif,FreeSans}</style><span class="script-hebrew" style="font-size: 115%;" dir="rtl">נוֹצְרִי</span>&#8206; (<i><span title="Hebrew-language romanization"><i lang="he-Latn">nôṣrî</i></span></i>),<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> and the Arabic term نَصْرَانِي (<i><span title="Arabic-language romanization"><i lang="ar-Latn">naṣrānī</i></span></i>),<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> still do. 
+</p><p>As time passed, the term came to refer to a sect of Jewish Christians who continued to observe the <a href="/wiki/Torah" title="Torah">Torah</a>, in contrast to gentiles who eschewed Torah observance.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> They are described by <a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius of Salamis</a> and are mentioned later by <a href="/wiki/Jerome" title="Jerome">Jerome</a> and <a href="/wiki/Augustine_of_Hippo" title="Augustine of Hippo">Augustine of Hippo</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> The writers made a distinction between the Nazarenes of their time and the "Nazarenes" mentioned in Acts 24:5.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span id="Nazarene_.28title.29"></span><span class="mw-headline" id="Nazarene_(title)">Nazarene (title)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=1" title="Edit section: Nazarene (title)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Nazarene_(title)" title="Nazarene (title)">Nazarene (title)</a></div>
+<p>The English term <i>Nazarene</i> is commonly used to translate two related Greek words that appear in the New Testament: <i>Nazōraios</i> (<span title="Ancient Greek (to 1453)-language text"><span lang="grc">Ναζωραῖος, Ναζαραῖος</span></span>) ("Nazorean") and <i>Nazarēnos</i> ("Nazarene"). The term <i>Nazōraios</i> may have a religious significance instead of denoting a place of origin, while <i>Nazarēnos</i> (<span title="Ancient Greek (to 1453)-language text"><span lang="grc">Ναζαρηνός</span></span>) is an adjectival form of the phrase <i>apo Nazaret</i> "from Nazareth."<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+</p><p>Because of this, the phrases traditionally rendered as "Jesus of Nazareth" can also be translated as "Jesus the Nazarene" or "Jesus the Nazorean." In the New Testament, the form <i>Nazōraios</i> or <i>Nazaraios</i> is more common than <i>Nazarēnos</i> (meaning "from Nazareth").<sup id="cite_ref-strongs_1-1" class="reference"><a href="#cite_note-strongs-1">&#91;1&#93;</a></sup>
+</p>
+<h2><span id="The_Sect_of_the_Nazarenes_.281st_century.29"></span><span class="mw-headline" id="The_Sect_of_the_Nazarenes_(1st_century)">The Sect of the Nazarenes (1st century)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=2" title="Edit section: The Sect of the Nazarenes (1st century)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Nazarene_(title)#&quot;Nazarenes&quot;_-_a_term_for_the_Early_Christians" title="Nazarene (title)">Nazarene</a>, <a href="/wiki/Nazirite#In_the_New_Testament" title="Nazirite">Nazirite</a>, <a href="/wiki/Book_of_Acts" class="mw-redirect" title="Book of Acts">Book of Acts</a>, and <a href="/wiki/Early_Christianity" title="Early Christianity">Early Christianity</a></div>
+<p>The Greek epithet <i>Nazōraios</i> is applied to Jesus 14 times in the New Testament, and is used once in <a href="/wiki/Acts_of_the_Apostles" title="Acts of the Apostles">Acts</a> to refer to the sect of Christians of which Paul was a leader.<sup id="cite_ref-strongs_1-2" class="reference"><a href="#cite_note-strongs-1">&#91;1&#93;</a></sup> It is traditionally translated as "a man from <a href="/wiki/Nazareth" title="Nazareth">Nazareth</a>"; the plural <i>Nazōraioi</i> would mean "men from Nazareth". The title is first applied to the Christians by <a href="/wiki/Tertullus" title="Tertullus">Tertullus</a> (<a rel="nofollow" class="external text" href="https://bible.oremus.org/?passage=Acts%2024:5&amp;version=nrsv">Acts 24:5</a>), though <a href="/wiki/Herod_Agrippa_II" title="Herod Agrippa II">Herod Agrippa II</a> (<a rel="nofollow" class="external text" href="https://bible.oremus.org/?passage=Acts%2026:28&amp;version=nrsv">Acts 26:28</a>) uses the term "Christians" which had first been used at <a href="/wiki/Antioch" title="Antioch">Antioch</a> (<a rel="nofollow" class="external text" href="https://bible.oremus.org/?passage=Acts%2011:26&amp;version=nrsv">Acts 11:26</a>). The name used by Tertullus survives into <a href="/wiki/Mishnaic_Hebrew" title="Mishnaic Hebrew">Mishnaic</a> and <a href="/wiki/Modern_Hebrew" title="Modern Hebrew">modern Hebrew</a> as <i>notzrim</i> (<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1020748213"><span class="script-hebrew" style="font-size: 115%;" dir="rtl">נוצרים</span>&#8206;) a standard Hebrew term for "Christian", the name also exist in the <a href="/wiki/Quran" title="Quran">Quran</a> and modern <a href="/wiki/Arabic" title="Arabic">Arabic</a> as <span title="Arabic-language text"><span lang="ar" dir="rtl">نَصَارَىٰ</span></span> <i>naṣārā</i> (plural of <span title="Arabic-language text"><span lang="ar" dir="rtl">نَصْرَانِيّ</span></span> <i><a href="/wiki/Christians#Arabic_terms" title="Christians">naṣrānī</a></i> "Christian").
+</p><p><a href="/wiki/Tertullian" title="Tertullian">Tertullian</a> (c. 160 – c. 220, <style data-mw-deduplicate="TemplateStyles:r1215172403">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a{background-size:contain}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a{background-size:contain}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a{background-size:contain}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#2C882D;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911F}html.skin-theme-clientpref-night .mw-parser-output .cs1-visible-error,html.skin-theme-clientpref-night .mw-parser-output .cs1-hidden-error{color:#f8a397}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-visible-error,html.skin-theme-clientpref-os .mw-parser-output .cs1-hidden-error{color:#f8a397}html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911F}}</style><cite class="citation cs2"><i>Against Marcion</i>, 4:8</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Against+Marcion&amp;rft.pages=4%3A8&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>) records that the Jews called Christians "Nazarenes" from Jesus being a man of Nazareth, though he also makes the connection with <a href="/wiki/Nazarites" class="mw-redirect" title="Nazarites">Nazarites</a> in <a rel="nofollow" class="external text" href="https://bible.oremus.org/?passage=Lamentations%204:7&amp;version=nrsv">Lamentations 4:7</a>.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> <a href="/wiki/Jerome" title="Jerome">Jerome</a> too records that, in the synagogues, the word "Nazarenes" was used to describe Christians.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> <a href="/wiki/Eusebius" title="Eusebius">Eusebius</a>, around 311 CE, records that the name "Nazarenes" had formerly been used of Christians.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>  The use relating to a specific "sect" of Christians does not occur until <a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius</a> (310/20–403).<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup> According to <a href="/wiki/Arnold_Ehrhardt" title="Arnold Ehrhardt">Arnold Ehrhardt</a>, just as <a href="/wiki/Early_centers_of_Christianity#Antioch" class="mw-redirect" title="Early centers of Christianity">Antioch</a> coined the term Christians, so <a href="/wiki/Early_centers_of_Christianity#Jerusalem" class="mw-redirect" title="Early centers of Christianity">Jerusalem</a> coined the term Nazarenes, from Jesus of Nazareth.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup>
+</p><p>The terms "sect of the Nazarenes" and "Jesus of Nazareth" both employ the adjective <i>nasraya</i> (ܕܢܨܪܝܐ) in the Syrian Aramaic <a href="/wiki/Peshitta" title="Peshitta">Peshitta</a>, from <i>Nasrat</i> (ܢܨܪܬ) for Nazareth.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup>
+</p>
+<h2><span id="The_Nazarenes_.284th_century.29"></span><span class="mw-headline" id="The_Nazarenes_(4th_century)">The Nazarenes (4th century)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=3" title="Edit section: The Nazarenes (4th century)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Nazarene_(title)#Nazarenes,_and_Ephanius&#39;_Nasaraioi_(4th_century_CE)" title="Nazarene (title)">Nazarene (title) §&#160;Nazarenes, and Ephanius' Nasaraioi (4th century CE)</a></div>
+<p>According to <a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius</a> in his <i><a href="/wiki/Panarion" title="Panarion">Panarion</a></i>, the 4th-century Nazarenes (Ναζωραῖοι) were originally Jewish converts of the <a href="/wiki/Apostles_in_the_New_Testament" title="Apostles in the New Testament">Apostles</a><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup> who fled <a href="/wiki/Jerusalem" title="Jerusalem">Jerusalem</a> because of Jesus' prophecy of its <a href="/wiki/Siege_of_Jerusalem_(70_CE)" title="Siege of Jerusalem (70 CE)">coming siege</a> (during the <a href="/wiki/First_Jewish%E2%80%93Roman_War" title="First Jewish–Roman War">First Jewish–Roman War</a> in 70 CE). They fled to <a href="/wiki/Pella,_Jordan" title="Pella, Jordan">Pella</a>, <a href="/wiki/Perea" title="Perea">Peraea</a> (northeast of Jerusalem), and eventually spread outwards to <a href="/wiki/Halab" class="mw-redirect" title="Halab">Beroea</a> (Aleppo) and <a href="/wiki/Bashan" title="Bashan">Basanitis</a>, where they permanently settled (Panarion 29.3.3).<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup>
+</p><p>The Nazarenes were similar to the <a href="/wiki/Ebionites" title="Ebionites">Ebionites</a>, in that they considered themselves <a href="/wiki/Jews" title="Jews">Jews</a>, maintained an adherence to the <a href="/wiki/Law_of_Moses" title="Law of Moses">Law of Moses</a>. Unlike the Ebionites, they accepted the <a href="/wiki/Virgin_birth_of_Jesus" title="Virgin birth of Jesus">Virgin Birth</a>.<sup id="cite_ref-Krauss_21-0" class="reference"><a href="#cite_note-Krauss-21">&#91;21&#93;</a></sup><sup id="cite_ref-Hegg_2007_22-0" class="reference"><a href="#cite_note-Hegg_2007-22">&#91;22&#93;</a></sup> They seemed to consider Jesus as a prophet, but other attestations from the church fathers might suggest that they also hold on the divinity of Jesus.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup>
+</p><p>As late as the eleventh century, <a href="/wiki/Humbert_of_Silva_Candida" title="Humbert of Silva Candida">Cardinal Humbert of Mourmoutiers</a> still referred to the Nazarene sect as a <a href="/wiki/Seventh-day_Sabbath" class="mw-redirect" title="Seventh-day Sabbath">Sabbath</a>-keeping Christian body existing at that time.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup> Modern scholars believe it is the Pasagini or <a href="/wiki/Pasagians" title="Pasagians">Pasagians</a> who are referenced by Cardinal Humbert, suggesting the Nazarene sect existed well into the eleventh century and beyond (the <a href="/wiki/Catholic" class="mw-redirect" title="Catholic">Catholic</a> writings of Bonacursus entitled <i>Against the Heretics</i>). It is believed that Gregorius of Bergamo, about 1250 CE, also wrote concerning the Nazarenes as the <a href="/wiki/Pasagians" title="Pasagians">Pasagians</a>.
+</p>
+<h3><span class="mw-headline" id="Gospel_of_the_Nazarenes">Gospel of the Nazarenes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=4" title="Edit section: Gospel of the Nazarenes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Gospel_of_the_Nazarenes" title="Gospel of the Nazarenes">Gospel of the Nazarenes</a></div>
+<p>The Gospel of the Nazarenes is the title given to fragments of one of the lost <a href="/wiki/Jewish-Christian_Gospels" class="mw-redirect" title="Jewish-Christian Gospels">Jewish-Christian Gospels</a> of Matthew partially reconstructed from the writings of <a href="/wiki/Jerome" title="Jerome">Jerome</a>.
+</p>
+<h3><span id="Patristic_references_to_.22Nazarenes.22"></span><span class="mw-headline" id="Patristic_references_to_&quot;Nazarenes&quot;">Patristic references to "Nazarenes"</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=5" title="Edit section: Patristic references to &quot;Nazarenes&quot;"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the 4th century, <a href="/wiki/Jerome" title="Jerome">Jerome</a> also refers to Nazarenes as those "who accept Messiah in such a way that they do not cease to observe the old Law." In his <i>Epistle</i> 75, to Augustine, he said:
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1211633275">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 32px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote"><p>What shall I say of the Ebionites who pretend to be Christians? To-day there still exists among the Jews in all the synagogues of the East a heresy which is called that of the Minæans, and which is still condemned by the <a href="/wiki/Pharisees" title="Pharisees">Pharisees</a>; [its followers] are ordinarily called 'Nasarenes'; they believe that Christ, the son of God, was born of the <a href="/wiki/Virgin_Mary" class="mw-redirect" title="Virgin Mary">Virgin Mary</a>, and they hold him to be the one who suffered under Pontius Pilate and ascended to heaven, and in whom we also believe. But while they pretend to be both Jews and Christians, they are neither.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup></p></blockquote>
+<p><a href="/wiki/Jerome" title="Jerome">Jerome</a> saw a distinction between Nazarenes and Ebionites, a different Jewish sect, but does not comment on whether Nazarene Jews considered themselves to be "Christian" or not or how they viewed themselves as fitting into the descriptions he uses. He clearly equates them with <a href="/wiki/Filaster" class="mw-redirect" title="Filaster">Filaster</a>'s Nazarei.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">&#91;27&#93;</a></sup> His criticism of the Nazarenes is noticeably more direct and critical than that of Epiphanius.
+</p><p>The following creed is from a church at Constantinople at the same period, and condemns practices of the Nazarenes:
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>I renounce all customs, rites, legalisms, unleavened breads &amp; sacrifices of lambs of the Hebrews, and all other feasts of the Hebrews, sacrifices, prayers, aspersions, purifications, sanctifications and propitiations and fasts, and new moons, and Sabbaths, and superstitions, and hymns and chants and observances and Synagogues, and the food and drink of the Hebrews; in one word, I renounce everything Jewish, every law, rite and custom and if afterwards I shall wish to deny and return to <a href="/wiki/Judaizers" title="Judaizers">Jewish superstition</a>, or shall be found eating with the Jews, or feasting with them, or secretly conversing and condemning the Christian religion instead of openly confuting them and condemning their vain faith, then let the trembling of <a href="/wiki/Gehazi" title="Gehazi">Gehazi</a> cleave to me, as well as the legal punishments to which I acknowledge myself liable. And may I be anathema in the world to come, and may my soul be set down with Satan and the devils."<sup id="cite_ref-28" class="reference"><a href="#cite_note-28">&#91;28&#93;</a></sup></p></blockquote>
+<p>"Nazarenes" are referenced past the fourth century CE as well. Jacobus de Voragine (1230–98) described James as a "Nazarene" in The Golden Legend, vol 7. Thomas Aquinas (1225–74) quotes Augustine of Hippo, who was given an apocryphal book called Hieremias (<a href="/wiki/Jeremiah" title="Jeremiah">Jeremiah</a> in Latin) by a "Hebrew of the Nazarene Sect", in <a href="/wiki/Catena_(Biblical_commentary)" class="mw-redirect" title="Catena (Biblical commentary)">Catena</a> Aurea — Gospel of Matthew, chapter 27. So this terminology seems to have remained at least through the 13th century in European discussions.
+</p>
+<h3><span class="mw-headline" id="Nazarene_beliefs">Nazarene beliefs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=6" title="Edit section: Nazarene beliefs"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The beliefs of the Nazarene sect or sects are described through various church fathers and heresiologists.
+</p>
+<ul><li>in Jesus as Messiah:</li></ul>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>The Nazarenes... accept Messiah in such a way that they do not cease to observe the old Law.</p><div class="templatequotecite">—&#8202;<cite>Jerome, On. Is. 8:14</cite></div></blockquote>
+<ul><li>in the Virgin Birth:</li></ul>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>They believe that the <a href="/wiki/Messiah" title="Messiah">Messiah</a> was born of the Virgin Mary.</p><div class="templatequotecite">—&#8202;<cite>Jerome, Letter 75 Jerome to Augustine</cite></div></blockquote>
+<ul><li>Adhering to circumcision and the Law of Moses:</li></ul>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>They disagree with Jews because they have come to faith in Christ; but since they are still fettered by the Law – circumcision, the Sabbath, and the rest – they are not in accord with the Christians.</p><div class="templatequotecite">—&#8202;<cite><a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius of Salamis</a>, <i><a href="/wiki/Panarion" title="Panarion">Panarion</a></i> 29.7.4</cite></div></blockquote>
+<ul><li>Use of Old Testament and New Testament:</li></ul>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>They use not only the New Testament but the Old Testament as well, as the Jews do.</p><div class="templatequotecite">—&#8202;<cite>Epiphanius of Salamis, <i>Panarion</i> 29.7.2</cite></div></blockquote>
+<ul><li>Use of Hebrew and Aramaic New Testament source texts:</li></ul>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>They have the Gospel according to Matthew in its entirety in Hebrew. For it is clear that they still preserve this, in the Hebrew alphabet, as it was originally written.</p><div class="templatequotecite">—&#8202;<cite>Epiphanius of Salamis, <i>Panarion</i> 29.9.4</cite></div></blockquote>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>And he <a href="/wiki/Hegesippus_(chronicler)" title="Hegesippus (chronicler)">Hegesippus</a> the Nazarene quotes some passages from the <a href="/wiki/Gospel_according_to_the_Hebrews" class="mw-redirect" title="Gospel according to the Hebrews">Gospel according to the Hebrews</a> and from the Syriac [the Aramaic], and some particulars from the Hebrew tongue, showing that he was a convert from the Hebrews, and he mentions other matters as taken from the oral tradition of the Jews.</p><div class="templatequotecite">—&#8202;<cite><a href="/wiki/Eusebius" title="Eusebius">Eusebius</a>, <i><a href="/wiki/Church_History_(Eusebius)" title="Church History (Eusebius)">Church History</a></i> 4.22</cite></div></blockquote>
+<h2><span id="The_Judeo-Nazarenes_.287th_century.29"></span><span class="mw-headline" id="The_Judeo-Nazarenes_(7th_century)">The Judeo-Nazarenes (7th century)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=7" title="Edit section: The Judeo-Nazarenes (7th century)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/w/index.php?title=Odon_Lafontaine&amp;action=edit&amp;redlink=1" class="new" title="Odon Lafontaine (page does not exist)">Odon Lafontaine</a>, from the <a href="/wiki/Revisionist_School_of_Islamic_Studies" class="mw-redirect" title="Revisionist School of Islamic Studies">Revisionist School of Islamic Studies</a>, hypothesized that this sect survived into the seventh century, when they attempted to precipitate the return of <a href="/wiki/Jesus" title="Jesus">Jesus</a>, as the <a href="/wiki/Messiah" title="Messiah">Messiah</a> of the <a href="/wiki/Apocalypse" title="Apocalypse">Apocalypse</a>, by translating their scripture and lectionaries into Arabic, recruiting the local Arab Christians, capturing Jerusalem, rebuilding the Temple, and re-initiating its sacrifices. When Jesus did not return, he concluded that the situation eventually span out of control, resulting in the development of the <a href="/wiki/Quran" title="Quran">Quran</a> and <a href="/wiki/Islam" title="Islam">Islam</a>. <sup id="cite_ref-29" class="reference"><a href="#cite_note-29">&#91;29&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Nasoraean_Mandaeans">Nasoraean Mandaeans</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=8" title="Edit section: Nasoraean Mandaeans"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1045330069"><table class="sidebar sidebar-collapse nomobile nowraplinks hlist"><tbody><tr><td class="sidebar-pretitle">Part of <a href="/wiki/Category:Mandaeism" title="Category:Mandaeism">a series</a> on</td></tr><tr><th class="sidebar-title-with-pretitle" style="font-size:200%;font-weight:normal;"><b><a href="/wiki/Mandaeism" title="Mandaeism">Mandaeism</a></b></th></tr><tr><td class="sidebar-image"><span typeof="mw:File"><a href="/wiki/Drabsha" title="Drabsha"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Darfash_-_Mandaean_cross.svg/100px-Darfash_-_Mandaean_cross.svg.png" decoding="async" width="100" height="168" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Darfash_-_Mandaean_cross.svg/150px-Darfash_-_Mandaean_cross.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Darfash_-_Mandaean_cross.svg/200px-Darfash_-_Mandaean_cross.svg.png 2x" data-file-width="964" data-file-height="1615" /></a></span></td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Prophets</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Adam" title="Adam">Adam</a></li>
+<li><a href="/wiki/Seth" title="Seth">Seth</a></li>
+<li><a href="/wiki/Noah" title="Noah">Noah</a></li>
+<li><a href="/wiki/Shem" title="Shem">Shem</a></li>
+<li><a href="/wiki/John_the_Baptist" title="John the Baptist">John the Baptist</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Names for adherents</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Mandaeans" title="Mandaeans">Mandaeans</a></li>
+<li><a href="/wiki/Sabians" title="Sabians">Sabians</a></li>
+<li><a class="mw-selflink-fragment" href="#Nasoraean_Mandaeans">Nasoraeans</a></li>
+<li><a href="/wiki/Gnosticism" title="Gnosticism">Gnostics</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;"><a href="/wiki/List_of_Mandaean_texts" class="mw-redirect" title="List of Mandaean texts">Scriptures</a></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><i><a href="/wiki/Ginza_Rabba" title="Ginza Rabba">Ginza Rabba</a></i>
+<ul><li><i><a href="/wiki/Right_Ginza" title="Right Ginza">Right Ginza</a></i></li>
+<li><i><a href="/wiki/Left_Ginza" title="Left Ginza">Left Ginza</a></i></li></ul></li>
+<li><i><a href="/wiki/Mandaean_Book_of_John" title="Mandaean Book of John">Mandaean Book of John</a></i></li>
+<li><i><a href="/wiki/Qolasta" title="Qolasta">Qolasta</a></i></li>
+<li><i><a href="/wiki/Niana" title="Niana">Niana</a></i></li>
+<li><i><a href="/wiki/Haran_Gawaita" title="Haran Gawaita">Haran Gawaita</a></i></li>
+<li><i><a href="/wiki/The_Wedding_of_the_Great_Shishlam" title="The Wedding of the Great Shishlam">The Wedding of the Great Shishlam</a></i></li>
+<li><i><a href="/wiki/The_Baptism_of_Hibil_Ziwa" title="The Baptism of Hibil Ziwa">The Baptism of Hibil Ziwa</a></i></li>
+<li><i><a href="/wiki/Diwan_Abatur" class="mw-redirect" title="Diwan Abatur">Diwan Abatur</a></i></li>
+<li><i><a href="/wiki/The_Thousand_and_Twelve_Questions" title="The Thousand and Twelve Questions">The Thousand and Twelve Questions</a></i></li>
+<li><i><a href="/wiki/Scroll_of_Exalted_Kingship" title="Scroll of Exalted Kingship">Scroll of Exalted Kingship</a></i></li>
+<li><i><a href="/wiki/The_Coronation_of_the_Great_Shishlam" title="The Coronation of the Great Shishlam">The Coronation of the Great Shishlam</a></i></li>
+<li><i><a href="/wiki/Alma_Ri%C5%A1aia_Rba" title="Alma Rišaia Rba">Alma Rišaia Rba</a></i></li>
+<li><i><a href="/wiki/Alma_Ri%C5%A1aia_Zu%E1%B9%ADa" title="Alma Rišaia Zuṭa">Alma Rišaia Zuṭa</a></i></li>
+<li><i><a href="/wiki/Zihrun_Raza_Kasia" title="Zihrun Raza Kasia">Zihrun Raza Kasia</a></i></li>
+<li><i><a href="/wiki/Scroll_of_the_Parwanaya" title="Scroll of the Parwanaya">Scroll of the Parwanaya</a></i></li>
+<li><i><a href="/wiki/Book_of_the_Zodiac" title="Book of the Zodiac">Book of the Zodiac</a></i></li>
+<li><i><a href="/wiki/Dmut_Ku%C5%A1%E1%B9%ADa" title="Dmut Kušṭa">Dmut Kušṭa</a></i></li>
+<li><i><a href="/wiki/Scroll_of_the_Rivers" title="Scroll of the Rivers">Scroll of the Rivers</a></i></li>
+<li><i><a href="/wiki/Secrets_of_the_Ancestors" title="Secrets of the Ancestors">Secrets of the Ancestors</a></i></li>
+<li><i><a href="/wiki/Scroll_of_the_Ancestors" title="Scroll of the Ancestors">Scroll of the Ancestors</a></i></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;"><a href="/wiki/Mandaean_priest" title="Mandaean priest">Priests</a></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Rishama" title="Rishama">Rishama</a></li>
+<li><a href="/wiki/Ganzibra" title="Ganzibra">Ganzibra</a></li>
+<li><a href="/wiki/Tarmida" title="Tarmida">Tarmida</a></li>
+<li><a href="/wiki/Shganda" title="Shganda">Shganda</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Individual leaders</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Miriai" title="Miriai">Miriai</a></li>
+<li><a href="/wiki/Shlama_beth_Qidra" title="Shlama beth Qidra">Shlama beth Qidra</a></li>
+<li><a href="/wiki/Zazai_of_Gawazta" title="Zazai of Gawazta">Zazai of Gawazta</a></li>
+<li><a href="/wiki/Anush_Bar_Danqa" class="mw-redirect" title="Anush Bar Danqa">Anush Bar Danqa</a></li>
+<li><a href="/wiki/Yahya_Bihram" title="Yahya Bihram">Yahya Bihram</a></li>
+<li><a href="/wiki/Dakhil_Aidan" title="Dakhil Aidan">Dakhil Aidan</a></li>
+<li><a href="/wiki/Jabbar_Choheili" title="Jabbar Choheili">Jabbar Choheili</a></li>
+<li><a href="/wiki/Sattar_Jabbar_Hilo" title="Sattar Jabbar Hilo">Sattar Jabbar Hilo</a></li>
+<li><a href="/wiki/Najah_Choheili" title="Najah Choheili">Najah Choheili</a></li>
+<li><a href="/wiki/Salah_Choheili" title="Salah Choheili">Salah Choheili</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Rituals</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Masbuta" title="Masbuta">Masbuta</a></li>
+<li><a href="/wiki/Masiqta" title="Masiqta">Masiqta</a></li>
+<li><a href="/wiki/Tamasha_(ablution)" title="Tamasha (ablution)">Tamasha</a></li>
+<li><a href="/wiki/Rishama_(ablution)" title="Rishama (ablution)">Rishama</a></li>
+<li><a href="/wiki/Kushta" title="Kushta">Kushta</a></li>
+<li><a href="/wiki/Qabin" title="Qabin">Qabin</a></li>
+<li><a href="/wiki/Misha_(Mandaeism)" title="Misha (Mandaeism)">Misha</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Ritual food and drink</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Mambuha" title="Mambuha">Mambuha</a></li>
+<li><a href="/wiki/Halalta" title="Halalta">Halalta</a></li>
+<li><a href="/wiki/Hamra_(Mandaeism)" title="Hamra (Mandaeism)">Hamra</a></li>
+<li><a href="/wiki/Pihta" title="Pihta">Pihta</a></li>
+<li><a href="/wiki/Fatira" title="Fatira">Fatira</a></li>
+<li><a href="/wiki/Zidqa_brika" title="Zidqa brika">Zidqa brika</a></li>
+<li><a href="/wiki/Lofani" title="Lofani">Lofani</a></li>
+<li><a href="/wiki/Sa_(Mandaeism)" title="Sa (Mandaeism)">Sa</a></li>
+<li><a href="/wiki/Dukrana" title="Dukrana">Dukrana</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Practices</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Hayyi_Rabbi" title="Hayyi Rabbi">Belief in Oneness of God</a></li>
+<li><a href="/wiki/Brakha" title="Brakha">Daily prayer</a></li>
+<li><a href="/wiki/Masbuta" title="Masbuta">Baptism</a></li>
+<li><a href="/wiki/Sauma" title="Sauma">Fasting</a></li>
+<li><a href="/wiki/Zidqa" title="Zidqa">Almsgiving</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Objects and symbols</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Drabsha" title="Drabsha">Drabsha</a></li>
+<li><a href="/wiki/Rasta_(Mandaeism)" title="Rasta (Mandaeism)">Rasta</a></li>
+<li><a href="/wiki/Burzinqa" title="Burzinqa">Burzinqa</a></li>
+<li><a href="/wiki/Pandama" title="Pandama">Pandama</a></li>
+<li><a href="/wiki/Klila" title="Klila">Klila</a></li>
+<li><a href="/wiki/Taga_(Mandaeism)" title="Taga (Mandaeism)">Taga</a></li>
+<li><a href="/wiki/Riha_(Mandaeism)" title="Riha (Mandaeism)">Riha</a></li>
+<li><a href="/wiki/Skandola" title="Skandola">Skandola</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;"><a href="/wiki/Mandaean_cosmology" title="Mandaean cosmology">Cosmology</a></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Hayyi_Rabbi" title="Hayyi Rabbi">Hayyi Rabbi</a></li>
+<li><a href="/wiki/World_of_Light" title="World of Light">World of Light</a></li>
+<li><a href="/wiki/Mana_(Mandaeism)" title="Mana (Mandaeism)">Mana</a></li>
+<li><a href="/wiki/Manda_(Mandaeism)" title="Manda (Mandaeism)">Manda</a></li>
+<li><a href="/wiki/Uthra" title="Uthra">Uthra</a></li>
+<li><a href="/wiki/Manda_d-Hayyi" title="Manda d-Hayyi">Manda d-Hayyi</a></li>
+<li><a href="/wiki/Yushamin" title="Yushamin">Yushamin</a></li>
+<li><a href="/wiki/Abatur" title="Abatur">Abatur</a></li>
+<li><a href="/wiki/Ptahil" title="Ptahil">Ptahil</a></li>
+<li><a href="/wiki/Hibil" title="Hibil">Hibil</a></li>
+<li><a href="/wiki/Shitil" title="Shitil">Shitil</a></li>
+<li><a href="/wiki/Anush_(Mandaeism)" title="Anush (Mandaeism)">Anush</a></li>
+<li><a href="/wiki/Sam_Ziwa" title="Sam Ziwa">Sam Ziwa</a></li>
+<li><a href="/wiki/Bihram" title="Bihram">Bihram Rabba</a></li>
+<li><a href="/wiki/Adathan" class="mw-redirect" title="Adathan">Adathan</a></li>
+<li><a href="/wiki/Yadathan" class="mw-redirect" title="Yadathan">Yadathan</a></li>
+<li><a href="/wiki/Shilmai" title="Shilmai">Shilmai</a></li>
+<li><a href="/wiki/Nidbai" title="Nidbai">Nidbai</a></li>
+<li><a href="/wiki/Yawar_Ziwa" title="Yawar Ziwa">Yawar Ziwa</a></li>
+<li><a href="/wiki/Simat_Hayyi" title="Simat Hayyi">Simat Hayyi</a></li>
+<li><a href="/wiki/Yufin-Yufafin" title="Yufin-Yufafin">Yufin-Yufafin</a></li>
+<li><a href="/wiki/Nsab" title="Nsab">Nsab</a></li>
+<li><a href="/wiki/Nbat" title="Nbat">Nbat</a></li>
+<li><a href="/wiki/Gubran" title="Gubran">Gubran</a></li>
+<li><a href="/wiki/Shihlun" title="Shihlun">Shihlun</a></li>
+<li><a href="/wiki/Urfeil" class="mw-redirect" title="Urfeil">Urfeil</a></li>
+<li><a href="/wiki/Marfeil" class="mw-redirect" title="Marfeil">Marfeil</a></li>
+<li><a href="/wiki/Saureil" title="Saureil">Saureil</a></li>
+<li><a href="/wiki/Zihrun" title="Zihrun">Zihrun</a></li>
+<li><a href="/wiki/Etinsib_Ziwa" title="Etinsib Ziwa">Etinsib Ziwa</a></li>
+<li><a href="/wiki/Piriawis" title="Piriawis">Piriawis</a></li>
+<li><a href="/wiki/Tarwan" title="Tarwan">Tarwan</a></li>
+<li><a href="/wiki/Yura_(Mandaeism)" title="Yura (Mandaeism)">Yura</a></li>
+<li><a href="/wiki/Yurba" title="Yurba">Yurba</a></li>
+<li><a href="/wiki/Yukashar" title="Yukashar">Yukashar</a></li>
+<li><a href="/wiki/Ziwa_(Aramaic)#Mandaeism" title="Ziwa (Aramaic)">Ziwa</a></li>
+<li><a href="/wiki/Shahrat" title="Shahrat">Shahrat</a></li>
+<li><a href="/wiki/Malwasha" class="mw-redirect" title="Malwasha">Malwasha</a></li>
+<li><a href="/wiki/Nishimta" title="Nishimta">Nishimta</a></li>
+<li><a href="/wiki/Dinanukht" title="Dinanukht">Dinanukht</a></li>
+<li><a href="/wiki/Shishlam" title="Shishlam">Shishlam</a></li>
+<li><a href="/wiki/Ezlat" title="Ezlat">Ezlat</a></li>
+<li><i><a href="/wiki/Shkinta" title="Shkinta">škina</a></i></li>
+<li><a href="/wiki/Dmuta" title="Dmuta">Dmuta</a></li>
+<li><a href="/wiki/Mshunia_Kushta" title="Mshunia Kushta">Mshunia Kushta</a></li>
+<li><a href="/wiki/Adam_kasia" class="mw-redirect" title="Adam kasia">Adam kasia</a></li>
+<li><a href="/wiki/Adam_pagria" class="mw-redirect" title="Adam pagria">Adam pagria</a></li>
+<li><a href="/wiki/Shatrin" title="Shatrin">Shatrin</a></li>
+<li><a href="/wiki/Laufa" title="Laufa">Laufa</a></li>
+<li><a href="/wiki/Hitfun" title="Hitfun">Hitfun</a></li>
+<li><a href="/wiki/Tibil" title="Tibil">Tibil</a></li>
+<li><a href="/wiki/World_of_Darkness_(Mandaeism)" title="World of Darkness (Mandaeism)">World of Darkness</a></li>
+<li><a href="/wiki/Sea_of_Suf" title="Sea of Suf">Sea of Suf</a></li>
+<li><a href="/wiki/Siniawis" title="Siniawis">Siniawis</a></li>
+<li><a href="/wiki/Matarta" title="Matarta">Matarta</a></li>
+<li><a href="/wiki/Ruha" title="Ruha">Ruha</a></li>
+<li><a href="/wiki/Ur_(Mandaeism)" title="Ur (Mandaeism)">Ur</a></li>
+<li><a href="/wiki/Krun" title="Krun">Krun</a></li>
+<li><a href="/wiki/Gaf_(Mandaeism)" title="Gaf (Mandaeism)">Gaf</a></li>
+<li><a href="/wiki/Qin_(Mandaeism)" title="Qin (Mandaeism)">Qin</a></li>
+<li><a href="/wiki/Zahreil" title="Zahreil">Zahreil</a></li>
+<li><a href="/wiki/Anathan" title="Anathan">Anathan</a></li>
+<li><a href="/wiki/Giu_(Mandaeism)" title="Giu (Mandaeism)">Giu</a></li>
+<li><a href="/wiki/Shdum" title="Shdum">Shdum</a></li>
+<li><a href="/wiki/Zartai-Zartanai" title="Zartai-Zartanai">Zartai-Zartanai</a></li>
+<li><a href="/wiki/Hag_and_Mag" title="Hag and Mag">Hag</a></li>
+<li><a href="/wiki/Hag_and_Mag" title="Hag and Mag">Mag</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;"><a href="/wiki/Mandaean_calendar#Festivals" title="Mandaean calendar">Festivals</a></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Parwanaya" title="Parwanaya">Parwanaya</a></li>
+<li><a href="/wiki/Dehwa_Rabba" title="Dehwa Rabba">Dehwa Rabba</a></li>
+<li><a href="/wiki/Dehwa_d-Shishlam_Rabba" class="mw-redirect" title="Dehwa d-Shishlam Rabba">Dehwa d-Shishlam Rabba</a></li>
+<li><a href="/wiki/Dehwa_Daimana" title="Dehwa Daimana">Dehwa Daimana</a></li>
+<li><a href="/wiki/Dehwa_Hanina" title="Dehwa Hanina">Dehwa Hanina</a></li>
+<li><a href="/wiki/Abu_al-Haris" title="Abu al-Haris">Abu al-Haris</a> (Ashoriya)</li>
+<li><a href="/wiki/Mandaean_calendar#Festivals" title="Mandaean calendar">Ead Fel</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;">Places</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Yardna" title="Yardna">Yardena</a></li>
+<li><a href="/wiki/Beth_Manda" class="mw-redirect" title="Beth Manda">Beth Manda</a></li>
+<li><a href="/wiki/Shkinta" title="Shkinta">Shkinta</a></li>
+<li><a href="/wiki/Andiruna" title="Andiruna">Andiruna</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#efefef;text-align:center;"><a href="/wiki/Brakha" title="Brakha">Prayers</a></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Asiet_Malkia" title="Asiet Malkia">Asiet Malkia</a></li>
+<li><a href="/wiki/Rushma" title="Rushma">Rushma</a></li>
+<li><a href="/wiki/Rahma_(Mandaeism)" title="Rahma (Mandaeism)">Rahma</a></li>
+<li><a href="/wiki/Tabahatan" title="Tabahatan">Tabahatan</a></li>
+<li><a href="/wiki/Shumhata" title="Shumhata">Shumhata</a></li>
+<li><a href="/wiki/Bshuma" title="Bshuma">Bshuma</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-below" style="border-top:1px lightblue solid; border-bottom:1px lightblue solid;">
+<a href="/wiki/Portal:Religion" title="Portal:Religion">Religion portal</a></td></tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Mandaeism" title="Template:Mandaeism"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Mandaeism" title="Template talk:Mandaeism"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Mandaeism" title="Special:EditPage/Template:Mandaeism"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Nazarene_(title)#Mandaeans" title="Nazarene (title)">Nazarene (title) §&#160;Mandaeans</a>, and <a href="/wiki/Mandaean_priest" title="Mandaean priest">Mandaean priest</a></div>
+<p>Those few who are initiated into the secrets of the <a href="/wiki/Mandaeism" title="Mandaeism">Mandaean</a> religion are called <i>Naṣuraiia</i> or Nasoraeans/Nasaraeans meaning guardians or possessors of secret rites and knowledge.<sup id="cite_ref-RudolphEI_30-0" class="reference"><a href="#cite_note-RudolphEI-30">&#91;30&#93;</a></sup> According to the <a href="/wiki/Haran_Gawaita" title="Haran Gawaita">Haran Gawaita</a>, Nasoraean Mandaeans fled <a href="/wiki/Jerusalem" title="Jerusalem">Jerusalem</a> before its <a href="/wiki/Siege_of_Jerusalem_(70_CE)" title="Siege of Jerusalem (70 CE)">fall in 70 CE</a> due to persecution by a faction of <a href="/wiki/Jews" title="Jews">Jews</a>.<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">&#91;31&#93;</a></sup> The word <i>Naṣuraiia</i> may come from the root n-ṣ-r meaning "to keep", since although they reject the <a href="/wiki/Law_of_Moses" title="Law of Moses">Mosaic Law</a>, they consider themselves to be keepers of <a href="/wiki/Gnosis" title="Gnosis">Gnosis</a>. <a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius</a> mentions a group called Nasaraeans (Νασαραίοι, <a rel="nofollow" class="external text" href="https://web.archive.org/web/20150906041916/http://www.masseiana.org/panarion_bk1.htm#18">Part 18</a> of the Panarion), distinguished from the "Nazoraioi" (<a rel="nofollow" class="external text" href="https://web.archive.org/web/20150906041916/http://www.masseiana.org/panarion_bk1.htm#29">Part 29</a>). According to <a href="/wiki/Joseph_Lightfoot" class="mw-redirect" title="Joseph Lightfoot">Joseph Lightfoot</a>, <a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius</a> also makes a distinction between the Ossaeans and the Nasaraeans,<sup id="cite_ref-panarion1-19_32-0" class="reference"><a href="#cite_note-panarion1-19-32">&#91;32&#93;</a></sup> the two main groups within the <a href="/wiki/Essenes" title="Essenes">Essenes</a>:<sup id="cite_ref-lightfoot1875_33-0" class="reference"><a href="#cite_note-lightfoot1875-33">&#91;33&#93;</a></sup>
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1211633275"><blockquote class="templatequote"><p>The Nasaraeans ‐ they were Jews by nationality ‐ originally from Gileaditis, Bashanitis and the Transjordan ... They acknowledged <a href="/wiki/Moses" title="Moses">Moses</a> and believed that he had received laws ‐ not this law, however, but some other. And so, they were Jews who kept all the Jewish observances, but they would not offer sacrifice or eat meat. They considered it unlawful to eat meat or make sacrifices with it. They claim that these <a href="/wiki/Torah" title="Torah">Books</a> are fictions, and that none of these customs were instituted by the fathers. This was the difference between the Nasaraeans and the others.</p><div class="templatequotecite">—&#8202;<cite>Epiphanius' Panarion 1:18</cite></div></blockquote>
+<p>The Nasaraeans may be the same as the <a href="/wiki/Mandaeans" title="Mandaeans">Mandaeans</a> of today. <a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius</a>  says (29:6) that they existed before Christ. That is questioned by some, but others accept the pre-Christian origin of this group.<sup id="cite_ref-Drower1960_34-0" class="reference"><a href="#cite_note-Drower1960-34">&#91;34&#93;</a></sup>
+</p><p>In the <i><a href="/wiki/Ginza_Rabba" title="Ginza Rabba">Ginza Rabba</a></i>, the term <i>Nasoraean</i> is used to refer to righteous Mandaeans, i.e., <a href="/wiki/Mandaean_priest" title="Mandaean priest">Mandaean priests</a> (comparable to the concept of <a href="/wiki/Pneumatic_(Gnosticism)" title="Pneumatic (Gnosticism)"><i>pneumatikoi</i></a> in Gnosticism).<sup id="cite_ref-Buckley_2002_35-0" class="reference"><a href="#cite_note-Buckley_2002-35">&#91;35&#93;</a></sup><sup id="cite_ref-Buckley2010_36-0" class="reference"><a href="#cite_note-Buckley2010-36">&#91;36&#93;</a></sup><sup id="cite_ref-GR_Gelbert_37-0" class="reference"><a href="#cite_note-GR_Gelbert-37">&#91;37&#93;</a></sup> As Nasoraeans, Mandaeans believe that they constitute the true congregation of <i>bnai nhura</i> meaning 'Sons of Light'.<sup id="cite_ref-BSN_38-0" class="reference"><a href="#cite_note-BSN-38">&#91;38&#93;</a></sup><sup class="reference nowrap"><span title="Page / location: 50">&#58;&#8202;50&#8202;</span></sup>
+</p>
+<h2><span id="Modern_.22Nazarene.22_churches"></span><span class="mw-headline" id="Modern_&quot;Nazarene&quot;_churches">Modern "Nazarene" churches</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=9" title="Edit section: Modern &quot;Nazarene&quot; churches"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A number of modern churches use the word "Nazarene" or variants in their name or beliefs:
+</p>
+<ul><li>The <a href="/wiki/Apostolic_Christian_Church_(Nazarene)" title="Apostolic Christian Church (Nazarene)">Apostolic Christian Church (Nazarene)</a>, originating in the Swiss Nazarene Baptist movement;</li>
+<li>The <a href="/wiki/Church_of_the_Nazarene" title="Church of the Nazarene">Church of the Nazarene</a>, a <a href="/wiki/Protestant" class="mw-redirect" title="Protestant">Protestant</a> Christian denomination that was born out of the <a href="/wiki/Holiness_Movement" class="mw-redirect" title="Holiness Movement">Holiness Movement</a> of the late 19th and early 20th centuries;</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=10" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Early_Christianity" title="Early Christianity">Early Christianity</a></li>
+<li><a href="/wiki/Essenes" title="Essenes">Essenes</a></li>
+<li><a href="/wiki/Jewish_Christians" class="mw-redirect" title="Jewish Christians">Jewish Christians</a></li>
+<li><a href="/wiki/Judaizers" title="Judaizers">Judaizers</a></li>
+<li><a href="/wiki/Mandaeism" title="Mandaeism">Mandaeism</a></li>
+<li><a href="/wiki/Messianic_Judaism" title="Messianic Judaism">Messianic Judaism</a></li>
+<li><a href="/wiki/St_Thomas_Christians" class="mw-redirect" title="St Thomas Christians">St Thomas Christians</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=11" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1217336898">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width reflist-columns-2">
+<ol class="references">
+<li id="cite_note-strongs-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-strongs_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-strongs_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-strongs_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation cs2">"G3480", <a rel="nofollow" class="external text" href="http://www.blueletterbible.org/lang/lexicon/lexicon.cfm?Strongs=G3480&amp;t=KJV"><i>Lexicon</i></a>, Strong</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=G3480&amp;rft.btitle=Lexicon&amp;rft.pub=Strong&amp;rft_id=http%3A%2F%2Fwww.blueletterbible.org%2Flang%2Flexicon%2Flexicon.cfm%3FStrongs%3DG3480%26t%3DKJV&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Acts 24:5 "For we have found this man a pestilent fellow, and a mover of sedition among all the Jews throughout the world, and a ringleader of the sect of the Nazarenes."</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a href="https://en.wiktionary.org/wiki/%D7%A0%D7%95%D7%A6%D7%A8%D7%99" class="extiw" title="wikt:נוצרי">נוצרי (Wiktionary), in singular</a></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a href="https://en.wiktionary.org/wiki/%D9%86%D8%B5%D8%B1%D8%A7%D9%86%D9%8A" class="extiw" title="wikt:نصراني">نصراني (Wiktionary), in singular</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">David C. Sim <i>The Gospel of Matthew and Christian Judaism</i> 1998 p182 "The Nazarenes are first mentioned by Epiphanius who records that they upheld the Torah, including the practice of circumcision and sabbath observance (Panarion 29:5.4; 7:2, 5; 8:1–7), read the Hebrew scriptures in the original Hebrew"</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Petri Luomanen "Nazarenes" in <i>A companion to second-century Christian "heretics"</i> pp279</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Memoirs of Dr. Joseph Priestley – Page 670 The term Ebionites occurs in Irenaeus, Tertullian, Origen, and Eusebius but none makes any mention of Nazarenes. They must have been even more considerable in the time of these writers,</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Edward Hare <i>The principal doctrines of Christianity defended</i> 1837 p318 "The Nazarenes of ecclesiastical history adhered to the law of their fathers; whereas when Tertullus accused Paul as "a ringleader of the sect of the Nazarenes," he accused him as one who despised the law, and " had gone about to the temple," Acts xxiv, 5, 6. "</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Frank Ely Gaebelein, James Dixon Douglas <i>The Expositor's Bible commentary: with the New International Version 1984 "Matthew certainly used </i>Nazōraios<i> as an adjectival form of </i>apo Nazaret<i> ("from Nazareth" or "Nazarene"), even though the more acceptable adjective is </i>Nazarēnos<i> (cf. Bonnard, Brown, Albright and Mann, Soares Prabhu)."</i></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFTepplerWeingarten2007" class="citation cs2">Teppler, Yaakov Y; Weingarten, Susan (2007), <i>Birkat haMinim: Jews and Christians in conflict in the ancient world</i>, p.&#160;52, <q>This presumption is strengthened by the statement of Tertullian: The Christ of the Creator had to be called a Nazarene... Unde et ipso nomine nos Iudaei Nazarenos appellant per eum. Nam et sumus iie auibus scriptum est: Nazaraei...</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Birkat+haMinim%3A+Jews+and+Christians+in+conflict+in+the+ancient+world&amp;rft.pages=52&amp;rft.date=2007&amp;rft.aulast=Teppler&amp;rft.aufirst=Yaakov+Y&amp;rft.au=Weingarten%2C+Susan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFSchnelle1987" class="citation cs2">Schnelle, Udo (1987), <i>Antidoketische Christologie im Johannesevangelium</i>, p.&#160;41, <q>usquehodiein synagogis suis sub nomine Nazarenorum blasphemant populum christianum... 191; In Esaiam: ...in blasphemiis et ter per singulos dies in omnibus synagogis sub nomine Nazarenorum anathematizent uocabulum Christianum...</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Antidoketische+Christologie+im+Johannesevangelium&amp;rft.pages=41&amp;rft.date=1987&amp;rft.aulast=Schnelle&amp;rft.aufirst=Udo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation cs2"><i>Bulletin</i>, School of Oriental Studies, 2002</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Bulletin&amp;rft.pub=School+of+Oriental+Studies&amp;rft.date=2002&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">Epiphanius Panarion 29</span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFPriestley" class="citation cs2">Priestley, Dr Joseph, <i>Memoirs</i>, <q>The term Ebionites occurs in Irenaeus, Tertullian, Origen, and Eusebius but none of them make any mention of Nazarenes</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Memoirs&amp;rft.aulast=Priestley&amp;rft.aufirst=Dr+Joseph&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFEhrhardt" class="citation cs2">Ehrhardt, Arnold, <i>The Acts of the Apostles</i>, p.&#160;114, <q>(John 1 :46) is an apt commentary upon this development, for there seems to be no evidence to support the thesis of a...  We only mention it because it has given rise to all sorts of speculations amongst the more imaginative students of Christian origins</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Acts+of+the+Apostles&amp;rft.pages=114&amp;rft.aulast=Ehrhardt&amp;rft.aufirst=Arnold&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFMetzger1977" class="citation cs2">Metzger, Bruce Manning (1977), <i>The early versions of the New Testament</i>, p.&#160;86, <q>Peshitta Matt, and Luke... nasraya, 'of Nazareth'<span class="cs1-kern-right"></span></q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+early+versions+of+the+New+Testament&amp;rft.pages=86&amp;rft.date=1977&amp;rft.aulast=Metzger&amp;rft.aufirst=Bruce+Manning&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFJennings1926" class="citation cs2"><a href="/w/index.php?title=William_Jennings_(Syriacist)&amp;action=edit&amp;redlink=1" class="new" title="William Jennings (Syriacist) (page does not exist)">Jennings, William</a> (1926), <i>Lexicon to the Syriac New Testament</i>, p.&#160;143</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Lexicon+to+the+Syriac+New+Testament&amp;rft.pages=143&amp;rft.date=1926&amp;rft.aulast=Jennings&amp;rft.aufirst=William&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFSmith1903" class="citation cs2"><a href="/wiki/Robert_Payne_Smith" title="Robert Payne Smith">Smith, Robert Payne</a> (1903), <i>Compendious Syriac Dictionary</i>, p.&#160;349</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Compendious+Syriac+Dictionary&amp;rft.pages=349&amp;rft.date=1903&amp;rft.aulast=Smith&amp;rft.aufirst=Robert+Payne&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text">Panarion 29.5.6</span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text">See: Jonathan Bourgel, "<a rel="nofollow" class="external text" href="https://www.academia.edu/4909339/The_Jewish_Christians_Move_from_Jerusalem_as_a_Pragmatic_Choice">The Jewish Christians’ Move from Jerusalem as a pragmatic choice</a>", in: Dan Jaffe (ed), <i>Studies in Rabbinic Judaism and Early Christianity</i>, Leyden: Brill, 2010, pp. 107–38.</span>
+</li>
+<li id="cite_note-Krauss-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-Krauss_21-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFKrauss" class="citation encyclopaedia cs1"><a href="/wiki/Samuel_Krauss" title="Samuel Krauss">Krauss, Samuel</a>. <a rel="nofollow" class="external text" href="http://jewishencyclopedia.com/view.jsp?artid=140&amp;letter=N&amp;search=nazarenes">"Nazarenes"</a>. <i>Jewish Encyclopedia</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2007-08-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Nazarenes&amp;rft.btitle=Jewish+Encyclopedia&amp;rft.aulast=Krauss&amp;rft.aufirst=Samuel&amp;rft_id=http%3A%2F%2Fjewishencyclopedia.com%2Fview.jsp%3Fartid%3D140%26letter%3DN%26search%3Dnazarenes&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Hegg_2007-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-Hegg_2007_22-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFHegg2007" class="citation cs2">Hegg, Tim (2007), <a rel="nofollow" class="external text" href="https://web.archive.org/web/20070821045706/http://www.torahresource.com/EnglishArticles/VirginBirth.pdf"><i>The Virgin Birth: An Inquiry into the Biblical Doctrine</i></a> <span class="cs1-format">(PDF)</span>, TorahResource, archived from <a rel="nofollow" class="external text" href="http://www.torahresource.com/EnglishArticles/VirginBirth.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 21 August 2007<span class="reference-accessdate">, retrieved <span class="nowrap">13 August</span> 2007</span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Virgin+Birth%3A+An+Inquiry+into+the+Biblical+Doctrine&amp;rft.pub=TorahResource&amp;rft.date=2007&amp;rft.aulast=Hegg&amp;rft.aufirst=Tim&amp;rft_id=http%3A%2F%2Fwww.torahresource.com%2FEnglishArticles%2FVirginBirth.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.biblicalcyclopedia.com/nazarenes.html">"Nazarenes from the McClintock and Strong Biblical Cyclopedia"</a>. <i>McClintock and Strong Biblical Cyclopedia Online</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-07-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=McClintock+and+Strong+Biblical+Cyclopedia+Online&amp;rft.atitle=Nazarenes+from+the+McClintock+and+Strong+Biblical+Cyclopedia.&amp;rft_id=https%3A%2F%2Fwww.biblicalcyclopedia.com%2Fnazarenes.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFStrong1874" class="citation cs2">Strong (1874), <i>Cyclopedia</i>, vol.&#160;1, New York, p.&#160;660</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Cyclopedia&amp;rft.place=New+York&amp;rft.pages=660&amp;rft.date=1874&amp;rft.au=Strong&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Citation" title="Template:Citation">citation</a>}}</code>:  CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.newadvent.org/fathers/1102075.htm">"CHURCH FATHERS: Letter 75 (Augustine) or 112 (Jerome)"</a>. <i>www.newadvent.org</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.newadvent.org&amp;rft.atitle=CHURCH+FATHERS%3A+Letter+75+%28Augustine%29+or+112+%28Jerome%29&amp;rft_id=https%3A%2F%2Fwww.newadvent.org%2Ffathers%2F1102075.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://jewishencyclopedia.com/articles/11393-nazarenes">"NAZARENES - JewishEncyclopedia.com"</a>. <i>jewishencyclopedia.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=jewishencyclopedia.com&amp;rft.atitle=NAZARENES+-+JewishEncyclopedia.com&amp;rft_id=https%3A%2F%2Fjewishencyclopedia.com%2Farticles%2F11393-nazarenes&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text">Filaster (ca. 397 CE) was a bishop who wrote the <i>"Book of Diverse Heresies"</i> (lived about the time of <a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius</a>). <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFPritz" class="citation cs2">Pritz, Ray, <i>Nazarene Jewish Christianity: from the end of the New Testament period until its disappearance in the fourth century</i>, p. 73 ft.12, <q>The sect of Filaster (Nazorei/Nazarei) derives somehow from the Nazirites and accepts the Law and prophets</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Nazarene+Jewish+Christianity%3A+from+the+end+of+the+New+Testament+period+until+its+disappearance+in+the+fourth+century&amp;rft.pages=p.+73+ft.12&amp;rft.aulast=Pritz&amp;rft.aufirst=Ray&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFParks1974" class="citation cs2">Parks, James (1974), <i>The Conflict of The Church and The Synagogue</i>, New York: Atheneum, pp.&#160;397–98</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Conflict+of+The+Church+and+The+Synagogue&amp;rft.place=New+York&amp;rft.pages=397-98&amp;rft.pub=Atheneum&amp;rft.date=1974&amp;rft.aulast=Parks&amp;rft.aufirst=James&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><i>Le Grand Secret de l'Islam: L’histoire cachée de l’islam révélée par la recherche historique</i> 4th ed. by Odon Lanfontaine, 2020. ISBN 978-1-517-01131-4.</span>
+</li>
+<li id="cite_note-RudolphEI-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-RudolphEI_30-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFRudolph2008" class="citation web cs1">Rudolph, Kurt (7 April 2008). <a rel="nofollow" class="external text" href="https://iranicaonline.org/articles/mandaeans-2-religion">"MANDAEANS ii. THE MANDAEAN RELIGION"</a>. <i>Encyclopaedia Iranica</i><span class="reference-accessdate">. Retrieved <span class="nowrap">3 January</span> 2022</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Encyclopaedia+Iranica&amp;rft.atitle=MANDAEANS+ii.+THE+MANDAEAN+RELIGION&amp;rft.date=2008-04-07&amp;rft.aulast=Rudolph&amp;rft.aufirst=Kurt&amp;rft_id=https%3A%2F%2Firanicaonline.org%2Farticles%2Fmandaeans-2-religion&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text">Buckley, Jorunn Jacobsen(2010). Turning the Tables on Jesus: The Mandaean View. In <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFHorsley2010" class="citation book cs1">Horsley, Richard (March 2010). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=ncuQxl5Ate0C&amp;dq=buckley+mandaean+turning+the+table+on+jesus&amp;pg=PA109"><i><span></span></i>Christian Origins<i><span></span></i></a>. Fortress Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781451416640" title="Special:BookSources/9781451416640"><bdi>9781451416640</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Christian+Origins&amp;rft.pub=Fortress+Press&amp;rft.date=2010-03&amp;rft.isbn=9781451416640&amp;rft.aulast=Horsley&amp;rft.aufirst=Richard&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DncuQxl5Ate0C%26dq%3Dbuckley%2Bmandaean%2Bturning%2Bthe%2Btable%2Bon%2Bjesus%26pg%3DPA109&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>(pp94-11). Minneapolis: Fortress Press</span>
+</li>
+<li id="cite_note-panarion1-19-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-panarion1-19_32-0">^</a></b></span> <span class="reference-text"><a href="/wiki/Epiphanius_of_Salamis" title="Epiphanius of Salamis">Epiphanius of Salamis</a> (<span title="circa">c.</span><span style="white-space:nowrap;">&#8201;378</span>). <i><a href="/wiki/Panarion" title="Panarion">Panarion</a></i>. 1:19.</span>
+</li>
+<li id="cite_note-lightfoot1875-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-lightfoot1875_33-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLightfoot" class="citation book cs1"><a href="/wiki/Joseph_Barber_Lightfoot" class="mw-redirect" title="Joseph Barber Lightfoot">Lightfoot, Joseph Barber</a>. "On Some Points Connected with the Essenes". <i>St. Paul's epistles to the Colossians and to Philemon: a revised text with introductions, notes, and dissertations</i>. London: <a href="/wiki/Macmillan_Publishers" title="Macmillan Publishers">Macmillan Publishers</a>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/oclc/6150927">6150927</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=On+Some+Points+Connected+with+the+Essenes&amp;rft.btitle=St.+Paul%27s+epistles+to+the+Colossians+and+to+Philemon%3A+a+revised+text+with+introductions%2C+notes%2C+and+dissertations&amp;rft.place=London&amp;rft.pub=Macmillan+Publishers&amp;rft_id=info%3Aoclcnum%2F6150927&amp;rft.aulast=Lightfoot&amp;rft.aufirst=Joseph+Barber&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Drower1960-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-Drower1960_34-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFDrower1960" class="citation book cs1"><a href="/wiki/E._S._Drower" title="E. S. Drower">Drower, Ethel Stephana</a> (1960). <a rel="nofollow" class="external text" href="http://holybooks.lichtenbergpress.netdna-cdn.com/wp-content/uploads/The-Secret-Adam-A-Study-of-Nasoraen-Gnosis.pdf"><i>The secret Adam, a study of Nasoraean gnosis</i></a> <span class="cs1-format">(PDF)</span>. London UK: Clarendon Press. xvi. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140306132110/http://holybooks.lichtenbergpress.netdna-cdn.com/wp-content/uploads/The-Secret-Adam-A-Study-of-Nasoraen-Gnosis.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on March 6, 2014.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+secret+Adam%2C+a+study+of+Nasoraean+gnosis&amp;rft.place=London+UK&amp;rft.pages=xvi&amp;rft.pub=Clarendon+Press&amp;rft.date=1960&amp;rft.aulast=Drower&amp;rft.aufirst=Ethel+Stephana&amp;rft_id=http%3A%2F%2Fholybooks.lichtenbergpress.netdna-cdn.com%2Fwp-content%2Fuploads%2FThe-Secret-Adam-A-Study-of-Nasoraen-Gnosis.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span>, p. xiv.</span>
+</li>
+<li id="cite_note-Buckley_2002-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-Buckley_2002_35-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFBuckley2002" class="citation book cs1">Buckley, Jorunn Jacobsen (2002). <i>The Mandaeans: ancient texts and modern people</i>. New York: Oxford University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-19-515385-5" title="Special:BookSources/0-19-515385-5"><bdi>0-19-515385-5</bdi></a>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/oclc/65198443">65198443</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Mandaeans%3A+ancient+texts+and+modern+people&amp;rft.place=New+York&amp;rft.pub=Oxford+University+Press&amp;rft.date=2002&amp;rft_id=info%3Aoclcnum%2F65198443&amp;rft.isbn=0-19-515385-5&amp;rft.aulast=Buckley&amp;rft.aufirst=Jorunn+Jacobsen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Buckley2010-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-Buckley2010_36-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFBuckley2010" class="citation book cs1">Buckley, Jorunn Jacobsen (2010). <i>The great stem of souls: reconstructing Mandaean history</i>. Piscataway, N.J: Gorgias Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-59333-621-9" title="Special:BookSources/978-1-59333-621-9"><bdi>978-1-59333-621-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+great+stem+of+souls%3A+reconstructing+Mandaean+history&amp;rft.place=Piscataway%2C+N.J&amp;rft.pub=Gorgias+Press&amp;rft.date=2010&amp;rft.isbn=978-1-59333-621-9&amp;rft.aulast=Buckley&amp;rft.aufirst=Jorunn+Jacobsen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-GR_Gelbert-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-GR_Gelbert_37-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFGelbert2011" class="citation book cs1">Gelbert, Carlos (2011). <a rel="nofollow" class="external text" href="https://livingwaterbooks.com.au/product/ginza-rba/"><i>Ginza Rba</i></a>. Sydney: Living Water Books. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780958034630" title="Special:BookSources/9780958034630"><bdi>9780958034630</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Ginza+Rba&amp;rft.place=Sydney&amp;rft.pub=Living+Water+Books&amp;rft.date=2011&amp;rft.isbn=9780958034630&amp;rft.aulast=Gelbert&amp;rft.aufirst=Carlos&amp;rft_id=https%3A%2F%2Flivingwaterbooks.com.au%2Fproduct%2Fginza-rba%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-BSN-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-BSN_38-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFBrikhah_S._Nasoraia2012" class="citation web cs1">Brikhah S. Nasoraia (2012). <a rel="nofollow" class="external text" href="http://isamveri.org/pdfdrg/D201813/2012_I/2012_I_NASORAIAB.pdf">"Sacred Text and Esoteric Praxis in Sabian Mandaean Religion"</a> <span class="cs1-format">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Sacred+Text+and+Esoteric+Praxis+in+Sabian+Mandaean+Religion&amp;rft.date=2012&amp;rft.au=Brikhah+S.+Nasoraia&amp;rft_id=http%3A%2F%2Fisamveri.org%2Fpdfdrg%2FD201813%2F2012_I%2F2012_I_NASORAIAB.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=12" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1054258005">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin" style="">
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFBroadhead2010" class="citation book cs1">Broadhead, E.K. (2010). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=C97_rPZRbuUC&amp;pg=PA163">"Nazarenes"</a>. <i>Jewish Ways of Following Jesus: Redrawing the Religious Map of Antiquity</i>. <a href="/wiki/Coronet_Books" title="Coronet Books">Coronet Books</a>. p.&#160;163ff. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-16-150304-7" title="Special:BookSources/978-3-16-150304-7"><bdi>978-3-16-150304-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Nazarenes&amp;rft.btitle=Jewish+Ways+of+Following+Jesus%3A+Redrawing+the+Religious+Map+of+Antiquity&amp;rft.pages=163ff&amp;rft.pub=Coronet+Books&amp;rft.date=2010&amp;rft.isbn=978-3-16-150304-7&amp;rft.aulast=Broadhead&amp;rft.aufirst=E.K.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DC97_rPZRbuUC%26pg%3DPA163&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFDaviesFinkelsteinHorburySturdy1984" class="citation book cs1">Davies, W.D.; Finkelstein, L.; Horbury, W.; Sturdy, J.; Katz, S.T.; Hart, M.B.; Michels, T. (1984). <span class="id-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/cambridgehis_xxxx_1984_004_8494287"><i>The Cambridge History of Judaism: The early Roman period</i></a></span>. Cambridge University Press. p.&#160;<a rel="nofollow" class="external text" href="https://archive.org/details/cambridgehis_xxxx_1984_004_8494287/page/n772">741</a>-772. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-24377-3" title="Special:BookSources/978-0-521-24377-3"><bdi>978-0-521-24377-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Cambridge+History+of+Judaism%3A+The+early+Roman+period&amp;rft.pages=741-772&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1984&amp;rft.isbn=978-0-521-24377-3&amp;rft.aulast=Davies&amp;rft.aufirst=W.D.&amp;rft.au=Finkelstein%2C+L.&amp;rft.au=Horbury%2C+W.&amp;rft.au=Sturdy%2C+J.&amp;rft.au=Katz%2C+S.T.&amp;rft.au=Hart%2C+M.B.&amp;rft.au=Michels%2C+T.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fcambridgehis_xxxx_1984_004_8494287&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFKruger2005" class="citation book cs1">Kruger, M.J. (2005). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=KZttl7QL8NAC&amp;pg=PA230"><i>The Gospel of the Savior: An Analysis of P. Oxy. 840 and Its Place in the Gospel Traditions of Early Christianity</i></a>. Texts And Editions for New Testament Study. Brill. p.&#160;230ff. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-90-04-14393-7" title="Special:BookSources/978-90-04-14393-7"><bdi>978-90-04-14393-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Gospel+of+the+Savior%3A+An+Analysis+of+P.+Oxy.+840+and+Its+Place+in+the+Gospel+Traditions+of+Early+Christianity&amp;rft.series=Texts+And+Editions+for+New+Testament+Study&amp;rft.pages=230ff&amp;rft.pub=Brill&amp;rft.date=2005&amp;rft.isbn=978-90-04-14393-7&amp;rft.aulast=Kruger&amp;rft.aufirst=M.J.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DKZttl7QL8NAC%26pg%3DPA230&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFPritz1988" class="citation book cs1">Pritz, R. (1988). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=vh84AAAAIAAJ"><i>Nazarene Jewish Christianity: From the End of the New Testament Period Until Its Disappearance in the Fourth Century</i></a>. <a href="/wiki/Hebrew_University_of_Jerusalem" title="Hebrew University of Jerusalem">Hebrew University Magnes Press</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-90-04-08108-6" title="Special:BookSources/978-90-04-08108-6"><bdi>978-90-04-08108-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Nazarene+Jewish+Christianity%3A+From+the+End+of+the+New+Testament+Period+Until+Its+Disappearance+in+the+Fourth+Century&amp;rft.pub=Hebrew+University+Magnes+Press&amp;rft.date=1988&amp;rft.isbn=978-90-04-08108-6&amp;rft.aulast=Pritz&amp;rft.aufirst=R.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Dvh84AAAAIAAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANazarene+%28sect%29" class="Z3988"></span></li></ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Nazarene_(sect)&amp;action=edit&amp;section=13" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://nazareneisrael.org/">Nazarene Israel</a></li>
+<li><a rel="nofollow" class="external text" href="http://netzarifaith.org/">Netzari Faith</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.natzraya.org">Natzraya International - The Sect of the Nazarenes</a></li>
+<li><a rel="nofollow" class="external text" href="http://nazarenejudaism.com/">Nazarene Judaism</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ccel.org/ccel/aquinas/catena1.ii.xxvii.html">Catena Aurea – Gospel of Matthew Ch. 27</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.newadvent.org/cathen/10724b.htm">Catholic Encyclopedia: Nazarene</a></li>
+<li><a rel="nofollow" class="external text" href="https://books.google.com/books?id=s9-utOHPLfEC&amp;dq=Panarion&amp;pg=PA112">Epiphanius of Salamis' Panarion</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ccel.org/ccel/schaff/npnf201.iii.ix.xxii.html">Eusebius of Caesarea's Ecclesiastical History 4.22</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ccel.org/ccel/schaff/npnf203.v.iii.v.html">Jerome's Lives of Illustrius Men Ch. 3</a></li>
+<li><a rel="nofollow" class="external text" href="http://jewishencyclopedia.com/view.jsp?artid=140&amp;letter=N&amp;search=nazarenes">Jewish Encyclopedia: Nazarenes</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.newadvent.org/fathers/1102075.htm">Letter 75 Jerome to Augustine</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.netzarim.info/index.php/The_Term_%22Nazarene%22_Part_1">NetzariPedia: The Term Nazarene Pt1</a></li>
+<li><a rel="nofollow" class="external text" href="https://sourcebooks.fordham.edu/basis/goldenlegend/GoldenLegend-Volume7.asp">The Golden Legend, Regarding St. James the Martyr being a Nazarene</a></li>
+<li><a rel="nofollow" class="external text" href="https://legrandsecretdelislam.files.wordpress.com/2020/09/le-grand-secret-de-lislam-4e-ed-2020.pdf">Le Grand Secret de l'Islam</a></li></ul>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Mandaeism" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="3"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Mandaeism_footer" title="Template:Mandaeism footer"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Mandaeism_footer" title="Template talk:Mandaeism footer"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Mandaeism_footer" title="Special:EditPage/Template:Mandaeism footer"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Mandaeism" style="font-size:114%;margin:0 4em"><a href="/wiki/Mandaeism" title="Mandaeism">Mandaeism</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">People</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mandaeans" title="Mandaeans">Mandaeans</a></li>
+<li><a href="/wiki/Mandaean_Americans" title="Mandaean Americans">Mandaean Americans</a></li>
+<li><a href="/wiki/Mandaean_Australians" title="Mandaean Australians">Mandaean Australians</a></li>
+<li><a href="/wiki/Mandaeans_in_Sweden" title="Mandaeans in Sweden">Mandaeans in Sweden</a></li>
+<li><a href="/wiki/Sabians" title="Sabians">Sabians</a></li>
+<li><a class="mw-selflink-fragment" href="#Nasoraean_Mandaeans">Nasoraeans</a></li></ul>
+</div></td><td class="noviewer navbox-image" rowspan="16" style="width:1px;padding:0 0 0 2px"><div><span typeof="mw:File"><a href="/wiki/File:Darfash_-_Mandaean_cross.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Darfash_-_Mandaean_cross.png/70px-Darfash_-_Mandaean_cross.png" decoding="async" width="70" height="109" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Darfash_-_Mandaean_cross.png/105px-Darfash_-_Mandaean_cross.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Darfash_-_Mandaean_cross.png/140px-Darfash_-_Mandaean_cross.png 2x" data-file-width="450" data-file-height="700" /></a></span></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Historical identities</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Essenes" title="Essenes">Essenes</a></li>
+<li><a href="/wiki/Gnosticism" title="Gnosticism">Gnostics</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Mandaean_priest" title="Mandaean priest">Priesthood</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Titles</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Rishama" title="Rishama">Rishama</a></li>
+<li><a href="/wiki/Ganzibra" title="Ganzibra">Ganzibra</a></li>
+<li><a href="/wiki/Tarmida" title="Tarmida">Tarmida</a></li>
+<li>(<a href="/wiki/Shganda" title="Shganda">Shganda</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Individuals</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li>(<a href="/wiki/List_of_Mandaean_priests" title="List of Mandaean priests">List of Mandaean priests</a>)</li>
+<li><a href="/wiki/Shlama_beth_Qidra" title="Shlama beth Qidra">Shlama beth Qidra</a></li>
+<li><a href="/wiki/Zazai_of_Gawazta" title="Zazai of Gawazta">Zazai of Gawazta</a></li>
+<li><a href="/wiki/Anush_bar_Danqa" title="Anush bar Danqa">Anush bar Danqa</a></li>
+<li><a href="/wiki/Yahya_Bihram" title="Yahya Bihram">Yahya Bihram</a></li>
+<li><a href="/wiki/Ram_Zihrun" title="Ram Zihrun">Ram Zihrun</a></li>
+<li><a href="/wiki/Bibia_Mudalal" title="Bibia Mudalal">Bibia Mudalal</a></li>
+<li><a href="/wiki/Abdullah_Khaffagi" title="Abdullah Khaffagi">Abdullah Khaffagi</a></li>
+<li><a href="/wiki/Negm_bar_Zahroon" title="Negm bar Zahroon">Negm bar Zahroon</a></li>
+<li><a href="/wiki/Abdullah_bar_Negm" title="Abdullah bar Negm">Abdullah bar Negm</a></li>
+<li><a href="/wiki/Abdullah_bar_Sam" title="Abdullah bar Sam">Abdullah bar Sam</a></li>
+<li><a href="/wiki/Dakhil_Aidan" title="Dakhil Aidan">Dakhil Aidan</a></li>
+<li><a href="/wiki/Jabbar_Choheili" title="Jabbar Choheili">Jabbar Choheili</a></li>
+<li><a href="/wiki/Salah_Choheili" title="Salah Choheili">Salah Choheili</a></li>
+<li><a href="/wiki/Najah_Choheili" title="Najah Choheili">Najah Choheili</a></li>
+<li><a href="/wiki/Taleb_Doraji" title="Taleb Doraji">Taleb Doraji</a></li>
+<li><a href="/wiki/Khaldoon_Majid_Abdullah" title="Khaldoon Majid Abdullah">Khaldoon Majid Abdullah</a></li>
+<li><a href="/wiki/Sattar_Jabbar_Hilo" title="Sattar Jabbar Hilo">Sattar Jabbar Hilo</a></li>
+<li><a href="/wiki/Yuhana_Nashmi" title="Yuhana Nashmi">Yuhana Nashmi</a></li>
+<li><a href="/wiki/Brikha_Nasoraia" title="Brikha Nasoraia">Brikha Nasoraia</a></li>
+<li><a href="/wiki/Rafid_al-Sabti" title="Rafid al-Sabti">Rafid al-Sabti</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Institutions</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mandaean_Council_of_Ahvaz" title="Mandaean Council of Ahvaz">Mandaean Council of Ahvaz</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/List_of_Mandaic_manuscripts" title="List of Mandaic manuscripts">Literature</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Main texts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><i><a href="/wiki/Ginza_Rabba" title="Ginza Rabba">Ginza Rabba</a></i>
+<ul><li><i><a href="/wiki/Right_Ginza" title="Right Ginza">Right Ginza</a></i></li>
+<li><i><a href="/wiki/Left_Ginza" title="Left Ginza">Left Ginza</a></i></li></ul></li>
+<li><i><a href="/wiki/Mandaean_Book_of_John" title="Mandaean Book of John">Mandaean Book of John</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Prayers</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Qolasta" scope="row" class="navbox-group" style="width:1%"><i><a href="/wiki/Qolasta" title="Qolasta">Qolasta</a></i></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Niana" title="Niana">Niana</a></li>
+<li><a href="/wiki/Rushma" title="Rushma">Rushma</a></li>
+<li><i><a href="/wiki/Asiet_Malkia" title="Asiet Malkia">Asiet Malkia</a></i></li>
+<li><a href="/wiki/Rahma_(Mandaeism)" title="Rahma (Mandaeism)">Rahma</a></li>
+<li><i><a href="/wiki/Tabahatan" title="Tabahatan">Tabahatan</a></i></li>
+<li><i><a href="/wiki/Shumhata" title="Shumhata">Shumhata</a></i></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Ritual texts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><i><a href="/wiki/The_Wedding_of_the_Great_Shishlam" title="The Wedding of the Great Shishlam">The Wedding of the Great Shishlam</a></i></li>
+<li><i><a href="/wiki/Scroll_of_the_Parwanaya" title="Scroll of the Parwanaya">Scroll of the Parwanaya</a></i></li>
+<li><i><a href="/wiki/Scroll_of_the_Great_Baptism" title="Scroll of the Great Baptism">Scroll of the Great Baptism</a></i></li>
+<li><i><a href="/wiki/Scroll_of_the_Ancestors" title="Scroll of the Ancestors">Scroll of the Ancestors</a></i></li>
+<li><i><a href="/wiki/Zihrun_Raza_Kasia" title="Zihrun Raza Kasia">Zihrun Raza Kasia</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Esoteric texts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><i><a href="/wiki/The_Thousand_and_Twelve_Questions" title="The Thousand and Twelve Questions">The Thousand and Twelve Questions</a></i></li>
+<li><i><a href="/wiki/Scroll_of_Exalted_Kingship" title="Scroll of Exalted Kingship">Scroll of Exalted Kingship</a></i></li>
+<li><i><a href="/wiki/The_Coronation_of_the_Great_Shishlam" title="The Coronation of the Great Shishlam">The Coronation of the Great Shishlam</a></i></li>
+<li><i><a href="/wiki/Alma_Ri%C5%A1aia_Rba" title="Alma Rišaia Rba">Alma Rišaia Rba</a></i></li>
+<li><i><a href="/wiki/Alma_Ri%C5%A1aia_Zu%E1%B9%ADa" title="Alma Rišaia Zuṭa">Alma Rišaia Zuṭa</a></i></li>
+<li><i><a href="/wiki/The_Baptism_of_Hibil_Ziwa" title="The Baptism of Hibil Ziwa">The Baptism of Hibil Ziwa</a></i></li>
+<li><i><a href="/wiki/Scroll_of_Abatur" title="Scroll of Abatur">Scroll of Abatur</a></i></li>
+<li><i><a href="/wiki/Dmut_Ku%C5%A1%E1%B9%ADa" title="Dmut Kušṭa">Dmut Kušṭa</a></i></li>
+<li><i><a href="/wiki/Secrets_of_the_Ancestors" title="Secrets of the Ancestors">Secrets of the Ancestors</a></i></li>
+<li><i><a href="/wiki/Scroll_of_the_Rivers" title="Scroll of the Rivers">Scroll of the Rivers</a></i></li>
+<li><i><a href="/wiki/Book_of_the_Zodiac" title="Book of the Zodiac">Book of the Zodiac</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Historical texts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><i><a href="/wiki/Haran_Gawaita" title="Haran Gawaita">Haran Gawaita</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Apotropaic_magic" title="Apotropaic magic">Apotropaic</a> texts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Incantation_bowl" title="Incantation bowl">Incantation bowls</a></li>
+<li><a href="/wiki/Mandaic_lead_rolls" title="Mandaic lead rolls">Lead rolls</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Mandaean_cosmology" title="Mandaean cosmology">Cosmology</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Tibil" title="Tibil">Tibil</a></li>
+<li><a href="/wiki/Yardna" title="Yardna">Yardna</a></li></ul>
+</div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/World_of_Light" title="World of Light">World of Light</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Hayyi_Rabbi" title="Hayyi Rabbi">Hayyi Rabbi</a></li>
+<li><a href="/wiki/Shkinta" title="Shkinta">Shkina</a></li>
+<li><a href="/wiki/Piriawis" title="Piriawis">Piriawis</a></li>
+<li><a href="/wiki/Mshunia_Kushta" title="Mshunia Kushta">Mshunia Kushta</a></li>
+<li><a href="/wiki/Tarwan" title="Tarwan">Tarwan</a></li>
+<li><a href="/wiki/Yasana" title="Yasana">Yasana</a></li></ul>
+</div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Uthras" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Uthra" title="Uthra">Uthras</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Yushamin" title="Yushamin">Yushamin</a></li>
+<li><a href="/wiki/Abatur" title="Abatur">Abatur</a></li>
+<li><a href="/wiki/Ptahil" title="Ptahil">Ptahil</a></li>
+<li><a href="/wiki/Hibil" title="Hibil">Hibil</a></li>
+<li><a href="/wiki/Shitil" title="Shitil">Shitil</a></li>
+<li><a href="/wiki/Anush_(Mandaeism)" title="Anush (Mandaeism)">Anush</a></li>
+<li><a href="/wiki/Sam_Ziwa" title="Sam Ziwa">Sam Ziwa</a></li>
+<li><a href="/wiki/Manda_d-Hayyi" title="Manda d-Hayyi">Manda d-Hayyi</a></li>
+<li><a href="/wiki/Shilmai" title="Shilmai">Shilmai</a></li>
+<li><a href="/wiki/Nidbai" title="Nidbai">Nidbai</a></li>
+<li><a href="/wiki/Adathan_and_Yadathan" title="Adathan and Yadathan">Adathan and Yadathan</a></li>
+<li><a href="/wiki/Yufin-Yufafin" title="Yufin-Yufafin">Yufin-Yufafin</a></li>
+<li><a href="/wiki/Urfeil_and_Marfeil" title="Urfeil and Marfeil">Urfeil and Marfeil</a></li>
+<li><a href="/wiki/Tarwan" title="Tarwan">Tar and Tarwan</a></li>
+<li><a href="/wiki/Bihram" title="Bihram">Bihram</a></li>
+<li><a href="/wiki/Zihrun" title="Zihrun">Zihrun</a></li>
+<li><a href="/wiki/Etinsib_Ziwa" title="Etinsib Ziwa">Etinsib Ziwa</a></li>
+<li><a href="/wiki/Nbat" title="Nbat">Nbat</a></li>
+<li><a href="/wiki/Nsab" title="Nsab">Nsab</a></li>
+<li><a href="/wiki/Gubran" title="Gubran">Gubran</a></li>
+<li><a href="/wiki/Shihlun" title="Shihlun">Shihlun</a></li>
+<li><a href="/wiki/Yura_(Mandaeism)" title="Yura (Mandaeism)">Yura</a></li>
+<li><a href="/wiki/Yurba" title="Yurba">Yurba</a></li>
+<li><a href="/wiki/Yukabar" title="Yukabar">Yukabar</a></li>
+<li><a href="/wiki/Yukashar" title="Yukashar">Yukashar</a></li>
+<li><a href="/wiki/Yawar_Ziwa" title="Yawar Ziwa">Yawar Ziwa</a></li>
+<li><a href="/wiki/Simat_Hayyi" title="Simat Hayyi">Simat Hayyi</a></li>
+<li><a href="/wiki/Saureil" title="Saureil">Saureil</a></li></ul>
+</div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Concepts" scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Anana_(Mandaeism)" title="Anana (Mandaeism)">Anana</a></li>
+<li><a href="/wiki/Gufna" title="Gufna">Gufna</a></li>
+<li><a href="/wiki/Ziwa_(Aramaic)" title="Ziwa (Aramaic)">Ziwa</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Intermediary realms</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Matarta" title="Matarta">Matarta</a></li>
+<li><a href="/wiki/Hitfun" title="Hitfun">Hitfun</a></li>
+<li><a href="/wiki/Shahrat" title="Shahrat">Shahrat</a></li>
+<li><a href="/wiki/Shatrin" title="Shatrin">Shatrin</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/World_of_Darkness_(Mandaeism)" title="World of Darkness (Mandaeism)">World of Darkness</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Sea_of_Suf" title="Sea of Suf">Sea of Suf</a></li>
+<li><a href="/wiki/Siniawis" title="Siniawis">Siniawis</a></li>
+<li><a href="/wiki/Jesus_in_Mandaeism" title="Jesus in Mandaeism">Mšiha</a></li></ul>
+</div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Demons_in_Mandaeism" title="Demons in Mandaeism">Demons</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Ruha" title="Ruha">Ruha</a></li>
+<li><a href="/wiki/Ur_(Mandaeism)" title="Ur (Mandaeism)">Ur</a></li>
+<li><a href="/wiki/Krun" title="Krun">Krun</a></li>
+<li><a href="/wiki/Gaf_(Mandaeism)" title="Gaf (Mandaeism)">Gaf</a></li>
+<li><a href="/wiki/Qin_(Mandaeism)" title="Qin (Mandaeism)">Qin</a></li>
+<li><a href="/wiki/Anathan" title="Anathan">Anathan</a></li>
+<li><a href="/wiki/Shdum" title="Shdum">Shdum</a></li>
+<li><a href="/wiki/Giu_(Mandaeism)" title="Giu (Mandaeism)">Giu</a></li>
+<li><a href="/wiki/Hag_and_Mag" title="Hag and Mag">Hag and Mag</a></li>
+<li><a href="/wiki/Zartai-Zartanai" title="Zartai-Zartanai">Zartai-Zartanai</a></li>
+<li><a href="/wiki/Zahreil" title="Zahreil">Zahreil</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Mandaean_cosmology#Planets" title="Mandaean cosmology">Planets</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Shamish" title="Shamish">Shamish</a> (Sun)</li>
+<li><a href="/wiki/Libat" title="Libat">Libat</a> (Venus)</li>
+<li><a href="/wiki/Nbu" title="Nbu">Nbu</a> (Mercury)</li>
+<li><a href="/wiki/Sin_(Mandaeism)" title="Sin (Mandaeism)">Sin</a> (Moon)</li>
+<li><a href="/wiki/Kiwan" title="Kiwan">Kiwan</a> (Saturn)</li>
+<li><a href="/wiki/Bil_(Mandaeism)" title="Bil (Mandaeism)">Bil</a> (Jupiter)</li>
+<li><a href="/wiki/Nirig" title="Nirig">Nirig</a> (Mars)</li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Important figures</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Adam" title="Adam">Adam</a></li>
+<li><a href="/wiki/Seth" title="Seth">Seth</a></li>
+<li><a href="/wiki/Abel" title="Abel">Abel</a></li>
+<li><a href="/wiki/Enos_(biblical_figure)" title="Enos (biblical figure)">Enosh</a></li>
+<li><a href="/wiki/Noah" title="Noah">Noah</a></li>
+<li><a href="/wiki/Shem" title="Shem">Shem</a></li>
+<li><a href="/wiki/Miriai" title="Miriai">Miriai</a></li>
+<li><a href="/wiki/Elizabeth_(biblical_figure)" title="Elizabeth (biblical figure)">Elizabeth</a></li>
+<li><a href="/wiki/John_the_Baptist" title="John the Baptist">John the Baptist</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Legendary figures</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dinanukht" title="Dinanukht">Dinanukht</a></li>
+<li><a href="/wiki/Shishlam" title="Shishlam">Shishlam</a></li>
+<li><a href="/wiki/Ezlat" title="Ezlat">Ezlat</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Kushta" title="Kushta">Kushta</a> (truth)</li>
+<li><a href="/wiki/Manda_(Mandaeism)" title="Manda (Mandaeism)">Manda</a> (gnosis)</li>
+<li><a href="/wiki/Laufa" title="Laufa">Laufa</a> (communion)</li>
+<li><a href="/wiki/Dmuta" title="Dmuta">Dmuta</a> (image)</li>
+<li><a href="/wiki/Nishimta" title="Nishimta">Nishimta</a> (soul)</li>
+<li><a href="/wiki/Ruha#As_the_spirit" title="Ruha">Ruha</a> (spirit)</li>
+<li><a href="/wiki/Mana_(Mandaeism)" title="Mana (Mandaeism)">Mana</a> (mind)</li>
+<li><a href="/wiki/Adam_Kasia" title="Adam Kasia">Adam Kasia</a> (hidden Adam)</li>
+<li><a href="/wiki/Adam_Pagria" title="Adam Pagria">Adam Pagria</a> (bodily Adam)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Objects and symbols</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Drabsha" title="Drabsha">Drabsha</a> (banner)</li>
+<li><a href="/wiki/Misha_(Mandaeism)" title="Misha (Mandaeism)">Misha</a> (oil)</li>
+<li><a href="/wiki/Riha_(Mandaeism)" title="Riha (Mandaeism)">Riha</a> (incense)</li>
+<li><a href="/wiki/Skandola" title="Skandola">Skandola</a> (talisman seal)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Ritual food and drink</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Drinks</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mambuha" title="Mambuha">Mambuha</a></li>
+<li><a href="/wiki/Halalta" title="Halalta">Halalta</a></li>
+<li><a href="/wiki/Hamra_(Mandaeism)" title="Hamra (Mandaeism)">Hamra</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Foods</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Pihta" title="Pihta">Pihta</a></li>
+<li><a href="/wiki/Fatira" title="Fatira">Fatira</a></li>
+<li><a href="/wiki/Sa_(Mandaeism)" title="Sa (Mandaeism)">Sa</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Meals</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dukrana" title="Dukrana">Dukrana</a></li>
+<li><a href="/wiki/Lofani" title="Lofani">Lofani</a></li>
+<li><a href="/wiki/Zidqa_brika" title="Zidqa brika">Zidqa brika</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Clothing</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Rasta_(Mandaeism)" title="Rasta (Mandaeism)">Rasta</a> (robe)</li>
+<li><a href="/wiki/Burzinqa" title="Burzinqa">Burzinqa</a> (turban)</li>
+<li><a href="/wiki/Pandama" title="Pandama">Pandama</a> (mouth-veil)</li>
+<li><a href="/wiki/Himiana" title="Himiana">Himiana</a> (girdle)</li>
+<li><a href="/wiki/Margna" title="Margna">Margna</a> (staff)</li>
+<li><a href="/wiki/Klila" title="Klila">Klila</a> (wreath)</li>
+<li><a href="/wiki/Taga_(Mandaeism)" title="Taga (Mandaeism)">Taga</a> (crown)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Rituals and practices</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Masbuta" title="Masbuta">Masbuta</a> (baptism)</li>
+<li><a href="/wiki/Tamasha_(ablution)" title="Tamasha (ablution)">Tamasha</a> (triple ablution)</li>
+<li><a href="/wiki/Rishama_(ablution)" title="Rishama (ablution)">Rishama</a> (minor ablution)</li>
+<li><a href="/wiki/Masiqta" title="Masiqta">Masiqta</a> (death mass)</li>
+<li><a href="/wiki/Qabin" title="Qabin">Qabin</a> (wedding)</li>
+<li><a href="/wiki/Brakha" title="Brakha">Brakha</a> (prayer)</li>
+<li><a href="/wiki/Bshuma" title="Bshuma">Bshuma</a></li>
+<li><a href="/wiki/Sauma" title="Sauma">Sauma</a> (fasting)</li>
+<li><a href="/wiki/Zidqa" title="Zidqa">Zidqa</a> (almsgiving)</li>
+<li><a href="/wiki/Mandaean_name" title="Mandaean name">Naming</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Buildings and structures</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mandi_(Mandaeism)" title="Mandi (Mandaeism)">Mandi</a>
+<ul><li><a href="/wiki/Sabian%E2%80%93Mandaean_Mandi_of_Baghdad" title="Sabian–Mandaean Mandi of Baghdad">Baghdad Mandi</a></li>
+<li><a href="/wiki/Ganzibra_Dakhil_Mandi" title="Ganzibra Dakhil Mandi">Ganzibra Dakhil Mandi</a></li>
+<li><a href="/wiki/Yahya_Yuhana_Mandi" title="Yahya Yuhana Mandi">Yahya Yuhana Mandi</a></li></ul></li>
+<li><a href="/wiki/Shkinta" title="Shkinta">Shkinta</a></li>
+<li><a href="/wiki/Andiruna" title="Andiruna">Andiruna</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Mandaean_calendar" title="Mandaean calendar">Calendar</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Feasts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dehwa_Rabba" title="Dehwa Rabba">Dehwa Rabba</a></li>
+<li><a href="/wiki/Feast_of_the_Great_Shishlam" title="Feast of the Great Shishlam">Feast of the Great Shishlam</a></li>
+<li><a href="/wiki/Dehwa_Hanina" title="Dehwa Hanina">Dehwa Hanina</a></li>
+<li><a href="/wiki/Abu_al-Haris" title="Abu al-Haris">Abu al-Haris</a></li>
+<li><a href="/wiki/Parwanaya" title="Parwanaya">Parwanaya</a></li>
+<li><a href="/wiki/Dehwa_Daimana" title="Dehwa Daimana">Dehwa Daimana</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Months</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Daula_(month)" title="Daula (month)">Daula</a></li>
+<li><a href="/wiki/Nuna_(month)" title="Nuna (month)">Nuna</a></li>
+<li><a href="/wiki/Embra_(month)" title="Embra (month)">ʿmbra</a></li>
+<li><a href="/wiki/Taura_(month)" title="Taura (month)">Taura</a></li>
+<li><a href="/wiki/Silmia" title="Silmia">Ṣilmia</a></li>
+<li><a href="/wiki/Sartana_(month)" title="Sartana (month)">Sarṭana</a></li>
+<li><a href="/wiki/Aria_(month)" title="Aria (month)">Aria</a></li>
+<li><a href="/wiki/Shumbulta" title="Shumbulta">Šumbulta</a></li>
+<li><a href="/wiki/Qaina" title="Qaina">Qaina</a></li>
+<li><a href="/wiki/Arqba" title="Arqba">Arqba</a></li>
+<li><a href="/wiki/Hitia" title="Hitia">Hiṭia</a></li>
+<li><a href="/wiki/Gadia_(month)" title="Gadia (month)">Gadia</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Epochs</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Adam_and_Eve" title="Adam and Eve">Adam and Eve</a></li>
+<li><a href="/wiki/Ram_and_Rud" title="Ram and Rud">Ram and Rud</a></li>
+<li><a href="/wiki/Shurbai_and_Sharhabeil" title="Shurbai and Sharhabeil">Shurbai and Sharhabeil</a></li>
+<li><a href="/wiki/Noah" title="Noah">Noah</a> and <a href="/wiki/Noah%27s_wife#In_Mandaeism" title="Noah&#39;s wife">Nuraita</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Language</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mandaic_language" title="Mandaic language">Mandaic</a></li>
+<li><a href="/wiki/Neo-Mandaic" title="Neo-Mandaic">Neo-Mandaic</a></li>
+<li><a href="/wiki/Mandaic_alphabet" title="Mandaic alphabet">Alphabet</a></li>
+<li><a href="/wiki/Mandaic_(Unicode_block)" title="Mandaic (Unicode block)">Unicode block</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other topics</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Mandaean_studies" title="Mandaean studies">Mandaean studies</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="3"><div><span class="noviewer" typeof="mw:File"><span title="Category"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" width="16" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /></span></span> <b><a href="/wiki/Category:Mandaeism" title="Category:Mandaeism">Category</a></b> &#160;<b>&#183;</b>&#32; <b><a href="/wiki/Outline_of_Mandaeism" title="Outline of Mandaeism">Outline</a></b></div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw2363
+Cached time: 20240412162835
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.662 seconds
+Real time usage: 0.824 seconds
+Preprocessor visited node count: 3985/1000000
+Post‐expand include size: 169711/2097152 bytes
+Template argument size: 5111/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 11/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 139178/5000000 bytes
+Lua time usage: 0.419/10.000 seconds
+Lua memory usage: 21411849/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  687.068      1 -total
+ 20.17%  138.614      1 Template:Reflist
+ 19.32%  132.765     14 Template:Citation
+ 14.08%   96.714      1 Template:Lang-gr
+ 12.94%   88.908     10 Template:Navbox
+ 12.82%   88.076      2 Template:Sidebar_with_collapsible_lists
+ 12.20%   83.818      1 Template:Jewish_Christianity
+  8.51%   58.452      1 Template:Short_description
+  8.46%   58.094      1 Template:Mandaeism_footer
+  7.45%   51.172      9 Template:Blockquote
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:366888-0!canonical and timestamp 20240412162835 and revision id 1216724723. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Nazarene_(sect)&amp;oldid=1216724723">https://en.wikipedia.org/w/index.php?title=Nazarene_(sect)&amp;oldid=1216724723</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Christianity_and_Judaism_related_controversies" title="Category:Christianity and Judaism related controversies">Christianity and Judaism related controversies</a></li><li><a href="/wiki/Category:Schisms_in_Christianity" title="Category:Schisms in Christianity">Schisms in Christianity</a></li><li><a href="/wiki/Category:1st-century_Christianity" title="Category:1st-century Christianity">1st-century Christianity</a></li><li><a href="/wiki/Category:4th-century_Christianity" title="Category:4th-century Christianity">4th-century Christianity</a></li><li><a href="/wiki/Category:Early_Jewish_Christian_sects" title="Category:Early Jewish Christian sects">Early Jewish Christian sects</a></li><li><a href="/wiki/Category:Former_Christian_denominations" title="Category:Former Christian denominations">Former Christian denominations</a></li><li><a href="/wiki/Category:Heresy_in_ancient_Christianity" title="Category:Heresy in ancient Christianity">Heresy in ancient Christianity</a></li><li><a href="/wiki/Category:Mandaeism" title="Category:Mandaeism">Mandaeism</a></li><li><a href="/wiki/Category:Mandaeans" title="Category:Mandaeans">Mandaeans</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">CS1 maint: location missing publisher</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_containing_Greek-language_text" title="Category:Articles containing Greek-language text">Articles containing Greek-language text</a></li><li><a href="/wiki/Category:Articles_containing_Ancient_Greek_(to_1453)-language_text" title="Category:Articles containing Ancient Greek (to 1453)-language text">Articles containing Ancient Greek (to 1453)-language text</a></li><li><a href="/wiki/Category:Articles_containing_Arabic-language_text" title="Category:Articles containing Arabic-language text">Articles containing Arabic-language text</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 1 April 2024, at 16:50<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply. By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Nazarene_(sect)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-54758c58bc-jvrhf","wgBackendResponseTime":196,"wgPageParseReport":{"limitreport":{"cputime":"0.662","walltime":"0.824","ppvisitednodes":{"value":3985,"limit":1000000},"postexpandincludesize":{"value":169711,"limit":2097152},"templateargumentsize":{"value":5111,"limit":2097152},"expansiondepth":{"value":16,"limit":100},"expensivefunctioncount":{"value":11,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":139178,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  687.068      1 -total"," 20.17%  138.614      1 Template:Reflist"," 19.32%  132.765     14 Template:Citation"," 14.08%   96.714      1 Template:Lang-gr"," 12.94%   88.908     10 Template:Navbox"," 12.82%   88.076      2 Template:Sidebar_with_collapsible_lists"," 12.20%   83.818      1 Template:Jewish_Christianity","  8.51%   58.452      1 Template:Short_description","  8.46%   58.094      1 Template:Mandaeism_footer","  7.45%   51.172      9 Template:Blockquote"]},"scribunto":{"limitreport-timeusage":{"value":"0.419","limit":"10.000"},"limitreport-memusage":{"value":21411849,"limit":52428800},"limitreport-logs":"table#1 {\n    [\"size\"] = \"tiny\",\n}\ntable#1 {\n    [\"size\"] = \"tiny\",\n}\n"},"cachereport":{"origin":"mw2363","timestamp":"20240412162835","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Nazarene (sect)","url":"https:\/\/en.wikipedia.org\/wiki\/Nazarene_(sect)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q929001","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q929001","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-11-15T02:46:54Z","dateModified":"2024-04-01T16:50:19Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/96\/Bloch-SermonOnTheMount.jpg","headline":"sect of 4th-century Christianity described by Epiphanius"}</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+- 1. Edward Ahn (Born 1944)
+- 2. Eric Ries (Born 1961)
+- 3. Max Levchin (Born 1973)
+- 4. Jerry Yang (Born 1971)
+"""
+
+
+class TestEnron(unittest.TestCase):
+
+    def test_enron(self):
+        """
+        Verify that the output matches the example dataset.
+        """
+        enron_path = os.path.join(os.path.dirname(__file__), '../data/enron')
+        enron = SpindleDataset(enron_path)
+
+        self.assertEqual(json.dumps(enron, indent=4), en

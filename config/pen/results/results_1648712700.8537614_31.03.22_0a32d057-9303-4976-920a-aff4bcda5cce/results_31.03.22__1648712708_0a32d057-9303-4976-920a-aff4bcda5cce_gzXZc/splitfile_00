@@ -1,0 +1,13 @@
+The above code is a very simple Haskell program that prints out the sum of the two numbers 1 and 2.
+
+The main function is where all the action happens.
+
+The main function is the entry point of the program.
+
+The do notation is used to sequence the side effects.
+
+The putStrLn function is a function that takes a string and prints it to the console.
+
+The string concatenation is done using the ++ operator.
+
+The show function converts any

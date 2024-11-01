@@ -1,0 +1,27 @@
+task: "Generate one line of code from a task in NL"
+doc: "Generate one line of code from a task in NL"
+tags: code hci
+prompt-version: 1
+prompt: |+
+    Q: Write a Python program that calculates the sum of all positive integers smaller than 8.
+    A: sum(x for x in range(8))
+    Q: Write a <language> program that <task>.
+    A:
+engine: AI21 J1-Jumbo
+stop-sequences:
+- "Q:"
+temperature: 0.0
+max-generated-tokens: 40
+top-p: 1.0
+cache: on
+vars:
+- "language"
+- "task"
+var-defaults:
+- "(pen-detect-language-ask)"
+examples:
+- "Python"
+- "calculates the sum of all positive integers smaller than 8"
+filter: no
+completion: on
+insertion: on

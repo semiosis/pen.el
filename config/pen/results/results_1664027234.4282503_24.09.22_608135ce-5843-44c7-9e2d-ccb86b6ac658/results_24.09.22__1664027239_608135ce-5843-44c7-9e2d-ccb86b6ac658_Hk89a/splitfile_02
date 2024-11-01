@@ -1,0 +1,1 @@
+name "*.term" | sort -rn | cut -d. -f1 | tee terms.txt

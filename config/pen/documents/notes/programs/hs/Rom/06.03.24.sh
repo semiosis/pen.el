@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Rom" "10:3" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rom" "6:3-4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rom" "7:6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rom" "6:9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rom" "6:3" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rom" "13:13-14" "#" "<==" "zsh"

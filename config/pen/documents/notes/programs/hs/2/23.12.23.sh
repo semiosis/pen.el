@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "2" "Cor" "1:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "2" "Cor" "1:22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "2" "Cor" "1:21-22" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "2" "Cor" "1:21-22" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "2" "Timothy" "2:15" "#" "<==" "bash"

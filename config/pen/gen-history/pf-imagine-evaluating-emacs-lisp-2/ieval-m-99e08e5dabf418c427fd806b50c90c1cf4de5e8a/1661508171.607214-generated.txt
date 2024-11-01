@@ -1,0 +1,9 @@
+(defun my/test
+    (x)
+  (apply
+   (lambda
+     (thing)
+     (= "J. R. R. Tolkien" thing))
+   x))
+(message (eval '(my/test "Lewis Carroll")))
+--> 

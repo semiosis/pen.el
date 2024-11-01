@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: as-pattern
+# group: pattern-syntax
+# key: as
+# --
+f (x:xs)   = x:x:xs
+f s@(x:xs) = x:s

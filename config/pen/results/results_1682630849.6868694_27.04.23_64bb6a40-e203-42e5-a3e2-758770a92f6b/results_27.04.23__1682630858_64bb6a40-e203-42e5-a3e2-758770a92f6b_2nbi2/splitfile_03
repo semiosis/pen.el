@@ -1,0 +1,3 @@
+"@u" is a type-level string that represents the name of the unit.
+
+The following is an example of a function that takes a parameter of type @u:

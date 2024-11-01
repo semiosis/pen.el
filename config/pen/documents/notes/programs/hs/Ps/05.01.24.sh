@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Ps" "103:17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Ps" "145:19" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Ps" "118:4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Ps" "103:11" "#" "<==" "zsh"
+cd /root/programs/tmux/capture;  "Ps" "145:19" "#" "<==" "zsh"
+cd /root/programs/tmux/capture;  "Ps" "118:4" "#" "<==" "zsh"
+cd /root/programs/tmux/capture;  "Ps" "103:17" "#" "<==" "zsh"

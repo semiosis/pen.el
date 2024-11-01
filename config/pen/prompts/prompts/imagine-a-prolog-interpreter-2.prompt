@@ -1,0 +1,42 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+language: prolog
+tags: interpreter prolog
+subprompts:
+- kickstarter: |+
+    Welcome to SWI-Prolog (threaded, 64 bits, version 8.2.4)
+    SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+    Please run ?- license. for legal details.
+    
+    For online help and background, visit https://www.swi-prolog.org
+    For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+    ?- 
+prompt: |+
+    <history><expression>
+comint-user-prompt-regex: "^?- "
+# Double newline is a better default stop sequence
+# Because 200 tokens will take a long time to generate.
+stop-sequences:
+- "\n\n"
+- "?- "
+vars:
+- history
+- expression
+var-defaults:
+- kickstarter
+# If this generates text from the user input then it will be added
+# to the user input
+ii-input-echo-pp: |-
+    sed -n -z '/^consult([^)]*)\.$/{s/^consult([^)]*)\.$/true.\n/p;}'
+max-generated-tokens: 200
+# sed wont even run if its input is empty so
+# the postpostprocessor: cant ensure a prompt.
+# But we cant force it.
+postpostprocessor: pen-str newline-if-empty | sed -z 's/\(?-\)\?$/\n\n?- /'
+examples:
+- "?- "
+- "write('Hello World')."
+n-completions: 10
+# validator: sed -z 's/\n\n.*//' | sed -n -z '/^\n[^?].*\n?-/p' | grep -qP .
+# postprocessor: sed -z 's/\n\n.*//'

@@ -1,0 +1,73 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:03:29 GMT
+Content-Type: text/html
+Content-Length: 4016
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-fb0"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Introduction</title>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="goodies.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-intro"></a><p>
+<a name="sect1"></a>
+<h2>1<tt>&nbsp;&nbsp;</tt>Introduction</h2>
+<p>
+Our purpose in writing this tutorial is not to teach programming, nor
+even to teach functional programming.  Rather, it is intended to serve
+as a supplement to the Haskell Report [<a href="haskell-tutorial.html#$haskell-98">4</a>], which is
+otherwise a rather dense technical exposition.  Our goal is to provide
+a gentle introduction to Haskell for someone who has experience with
+at least one other language, preferably a functional language (even if
+only an "almost-functional" language such as ML or Scheme).
+If the
+reader wishes to learn more about the functional programming style, we
+highly recommend Bird's text <I>Introduction to
+Functional Programming</I> [<a href="haskell-tutorial.html#$bird98">1</a>] or Davie's <I>An Introduction
+to Functional Programming Systems Using Haskell</I> [<a href="haskell-tutorial.html#$davie92">2</a>]. 
+For a useful survey of functional programming languages
+and techniques, including some of the language design principles used
+in Haskell, see [<a href="haskell-tutorial.html#$huda89a">3</a>].<p>
+The Haskell language has evolved significantly since its birth in 1987.
+This tutorial deals with <a href="http://haskell.org/report">Haskell 98</a>.  Older versions of the language are now obsolete;
+Haskell users are encouraged to use Haskell 98.  There are also many
+extensions to Haskell 98 that have been widely implemented.  These are
+not yet a formal part of the Haskell language and are not covered in
+this tutorial.<p>
+Our general strategy for introducing language features is this:
+motivate the idea, define some terms, give some examples, and then
+point to the Report for details.  We suggest, however, that the reader
+completely ignore the details until the <I>Gentle Introduction</I> has been
+completely read.  On the other hand, Haskell's Standard Prelude (in
+Appendix A of the Report and the standard libraries
+(found in the <a href="http://haskell.org/library"></a>Library Report [<a href="haskell-tutorial.html#$haskell-libs">5</a>]) contain
+lots of useful examples of Haskell code; we 
+encourage a thorough reading once this tutorial is completed.  This
+will not only give the reader a feel for what real Haskell code looks
+like, but will also familiarize her with Haskell's standard set of
+predefined functions and types.<p>
+Finally, the Haskell web site, <a href="http://haskell.org">
+<tt>http://haskell.org</tt></a>, has a wealth of information about the Haskell
+language and its implementations.  <p>
+[We have also taken the course of not laying out a plethora of
+lexical syntax rules at the outset.  Rather, we introduce them
+incrementally as our examples demand, and enclose them in brackets, as
+with this paragraph.  This is in stark contrast to the organization of
+the Report, although the Report remains the authoritative source for
+details (references such as "report section 2.1" refer to sections in the
+Report).]<p>
+Haskell is a <I>typeful</I> programming language: (Coined by Luca Cardelli.) types are pervasive, and the newcomer is best off
+becoming well aware of the full power and complexity of Haskell's type
+system from the outset.  For those whose only experience is with
+relatively "untypeful" languages such as Perl, Tcl, or Scheme, this may be
+a difficult adjustment; for those familiar with Java, C, Modula, or
+even ML, the adjustment should be easier but still not insignificant,
+since Haskell's type system is different and somewhat richer than
+most.  In any case, "typeful programming" is part of the Haskell
+programming experience, and cannot be avoided.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="goodies.html">next</a> <a href="index.html">top</a>

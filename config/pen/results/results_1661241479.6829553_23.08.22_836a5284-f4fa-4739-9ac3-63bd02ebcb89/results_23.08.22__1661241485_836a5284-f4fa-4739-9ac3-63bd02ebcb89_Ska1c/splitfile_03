@@ -1,0 +1,7 @@
+">>=" is a monadic bind, the same as "bind" in Haskell.
+
+The ">>=" operator takes a monadic value, a function that takes a normal
+value and returns a monadic value, and a normal value, and returns a
+monadic value.
+
+In the following example, we use ">>=" to build a simple counter monad.

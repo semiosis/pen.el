@@ -1,0 +1,8 @@
+cd /root/notes;  "bsb" "II" "Thessalonians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bsb" "II" "Thessalonians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bsb" "II" "Thessalonians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bsb" "II" "Thessalonians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bsb" "II" "Thessalonians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bsb" "II" "Thessalonians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bsb" "II" "Thessalonians" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bsb" "Josh" "#" "<==" "zsh"

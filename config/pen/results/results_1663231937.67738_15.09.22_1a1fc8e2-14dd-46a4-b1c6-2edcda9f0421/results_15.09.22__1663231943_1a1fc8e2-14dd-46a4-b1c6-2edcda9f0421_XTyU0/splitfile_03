@@ -1,0 +1,5 @@
+Out[2]:
+[{'bot_name': 'bot_1',
+  'bot_type': 'bot_type_1',
+  'bot_version': '1.0.0',
+  'bot_status': 'bot_status_1'},

@@ -1,0 +1,371 @@
+∈
+    ∈	(-	2208	8712	ELEMENT OF
+
+    A returned set from a query.
+    ∈{["richhickey"] ["tonsky"] ["pithyless"]}
+
+modeling a business
+    Only need 3 types of things:
+    - stream
+    - tree
+    - mesh
+
+stream
+    Queues back up on your queue system.
+    
+tree
+    Gives you hierarchy.
+
+mesh
+    [graph]
+
+    A type of graph.
+
+persistent data structure
+    A data structure that always preserves the
+    previous version of itself when it is
+    modified.
+    
+    They can be considered as ‘immutable’ as
+    updates are not in-place.
+    
+    A data structure is partially persistent
+    if all versions can be accessed but only
+    the newest version can be modified.
+    
+    Fully persistent if every version can be
+    both accessed and modified.
+    
+    Confluently persistent is when we merge
+    two or more versions to get a new version.
+    
+    This induces a DAG on the version graph.
+
+Entity/Attribute/Value
+Triple Store
+RDF
+clause
+    [Triple Store]
+
+    - Entity
+    - Attribute
+    - Value
+
+    Like RDF:
+    - subject,
+    - predicate, and
+    - object.
+
+    Can be used to find a datom.
+    The triple can be used to find the
+    quadruple.
+
+    When used as a query, is called a clause.
+
+    sp +/"\[?id :user\/name \"richhickey\"\]" "$HOME/var/smulliga/source/git/mullikine/code-org-tidbits/datomic/basic-query.org"
+
+universal schema
+    Consists of:
+    - Entity
+    - Attribute
+    - Value
+    - Transaction
+
+datom
+atomic fact
+    [5-tuple]
+
+    Entity/Attribute/Value/Transaction is a
+    path to time.
+
+    Consists of:
+    - E  - Entity
+    - A  - Attribute
+    - V  - Value
+    - Tx - Transaction
+    - Op - Boolean indicating if the datom is being
+      added(true) or retracted(false)
+
+    https://www.youtube.com/watch?v=faoXSarGgEI&list=PLZdCLR02grLpRgqU50KY3YfMePw1SHnpp&index=3
+
+universal relation
+    https://youtu.be/faoXSarGgEI?list=PLZdCLR02grLpRgqU50KY3YfMePw1SHnpp&t=42
+
+structural sharing
+    https://youtu.be/9TYfcyvSpEQ?t=832
+
+    Provides an efficient way to share data
+    between multiple versions of it, instead
+    of copying the whole data.
+    
+    It's kind of similar to the way git
+    manages multiple versions of your source
+    code: git doesn't copy all the files on
+    each commit.
+
+    When you want a new datastructure, you
+    copy other datastructures into it.
+    
+    Build up from lists to trees, then once
+    you have trees you can make pretty much
+    anything, including maps.
+
+entity
+    [#datalog]
+
+    Feels like maps, but they're actually
+    more like multimaps.
+
+    Reverse attributes - inverted index.
+    Can get keys from values.
+
+attribute
+    [#datalog]
+
+    Wefine fields stating what their name is
+    and what type of data they hold.
+
+    In Datomic nomenclature fields are
+    referred to as attributes.
+
+value
+    [#datalog]
+
+    https://youtu.be/9TYfcyvSpEQ?t=609
+
+    Something that could constitute the basis
+    for a decision making process.
+
+    A value never changes.
+
+    https://youtu.be/9TYfcyvSpEQ?t=1090
+
+    An accretion of facts.
+
+    It satisfies many of the requirements of a
+    value (i.e. it looks the same) but it
+    grows in that it has more than one view.
+
+Guava
+    Google's Java Library.
+
+    https://github.com/google/guava
+
+multimap
+    A Multimap is a new collection type that
+    is found in Google's Guava library for
+    Java.
+    
+    A Multimap can store more than one value
+    against a key.
+    
+    Both the keys and the values are stored in
+    a collection
+
+datomic
+    $NOTES/ws/datomic/factoids.org
+
+perception
+    Obtain a queue of transactions.
+    - not just your own.
+
+    Query transformations for
+    filtering/triggering.
+
+consintent read
+    https://youtu.be/9TYfcyvSpEQ?t=2156
+
+conditional put
+    https://youtu.be/9TYfcyvSpEQ?t=2156
+
+retract
+    [#tx]
+
+    https://youtu.be/9TYfcyvSpEQ?t=2156
+
+assert
+    [#tx]
+
+    https://youtu.be/9TYfcyvSpEQ?t=2156
+
+transaction
+    Transactions happen on the transactor in
+    serial.
+
+    But you parallelise it by pipelining the
+    architecture.
+
+    https://youtu.be/7Fi-UvrRpyI?t=2270
+
+    Can be about multiple entities.
+
+    The transactions themselves are one or
+    more datums.
+
+HornetQ
+    An open-source asynchronous messaging
+    project from JBoss. It is an example of
+    Message-oriented middleware.
+
+tx-data
+transaction data
+    - tx-fn(args...)
+    - assert
+    - retract
+
+    assertions and retractions are the atomic
+    units of transactions in an expansion
+    process.
+
+    https://youtu.be/9TYfcyvSpEQ?t=2400
+
+transaction function
+tx-fn
+    (f db & args) -> tx-data
+
+    Send it to the database and it runs there
+    using values.
+
+    A function of the 'value of the database'
+    and some arguments and it produces other
+    tx-data.
+
+    Because tx-fn can return a tx-data, it can
+    recall other assertions, retractions and
+    maybe other tx-fn.
+
+sorting
+    This is how to organise things.
+
+fact
+    Facts have a time attribute (actually, a
+    transaction ID, because the transaction is
+    given the timestamp).
+
+    This is also true in the Latin definition
+    for fact -- it has a time.
+
+    https://youtu.be/9TYfcyvSpEQ?t=1353
+
+    Talking about facts removes structure.
+
+composite collections
+    An entire database can become a value to
+    your program.
+
+    It can be as useful and reliable for the
+    basis of decision-making as an immutable
+    string is.
+
+accretion
+
+time-travel
+    [features of Datomic]
+
+    - db.asOf()
+    - db.history()
+    - :db/txInstant
+
+storage service
+    Contains facts.
+
+    ewwlinks +/"^Peers read facts from the Storage Service." "https://docs.datomic.com/on-prem/overview/architecture.html"
+
+transactor
+    [server]
+
+    https://docs.datomic.com/on-prem/getting-started/dev-setup.html
+
+    ewwlinks +/"\* Accept transactions" "https://docs.datomic.com/on-prem/overview/architecture.html"
+
+    - Accept transactions
+    - Process them serially
+    - Commit the results to the storage service
+    - all writes are synchronously made to redundant storage
+    - Transmit changes to the peers
+    - Index in the background, place indexes in storage service
+
+transactor properties file
+    Config file for a transactor.
+
+client
+
+datomic peer
+peer
+    The Peer cache implements a least-recently
+    used policy for discarding data, making it
+    possible to work with databases that won't
+    fit entirely in memory.
+
+    Related:
+    - datomic peer server
+    - datomic peer library
+
+datomic peer server
+peer server
+    Have multiple of these if you want.
+
+    Provides an interface for Datomic clients
+    to access databases.
+
+    https://docs.datomic.com/on-prem/peer/peer-server.html
+
+    You start a peer server.
+
+    ewwlinks +/"Starting a Peer Server" "https://docs.datomic.com/on-prem/getting-started/dev-setup.html"
+
+    The Datomic Peer Server does not create
+    durable-storage databases itself.
+
+    To use a Peer Server along with a dev
+    storage database you will need to have
+    previously created a database and have a
+    running dev Transactor.
+
+    ewwlinks +/"^Peer Server" "https://docs.datomic.com/on-prem/overview/architecture.html"
+
+datomic peer library
+    You can include the peer library into your
+    clojure project.
+
+    https://docs.datomic.com/on-prem/peer/integrating-peer-lib.html
+
+    This is how to interact with the datomic
+    database.
+
+connection string
+    datomic:dev://localhost:4334/<DB-NAME>
+
+    Example:
+        datomic:dev://localhost:4334/hello
+
+namespace qualified keyword field
+    Example
+        :user/name
+
+non-namespace qualified keyword field
+    Example:
+        :cars
+
+table
+    [#RDBMS]
+
+    In datomic, we do away with the concept of
+    a table.
+
+    You could say datomic ONLY specifies
+    'columns'.
+
+    Additionally, these columns have no
+    relationship to (or grouping with) any
+    other column.
+
+    Contrast this with an RDBMS which groups
+    columns with the concept of a table.
+
+assertion
+    Adds a single atomic fact to Datomic.
+    Assertions are represented by ordinary
+    data structures (lists or maps).
+
+    https://docs.datomic.com/on-prem/tutorial/assertion.html

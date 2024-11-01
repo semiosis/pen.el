@@ -1,0 +1,59 @@
+missing values
+    [#feature engineering]
+
+    Values that are not recorded during data
+    collection.
+    
+    They are mostly not provided, left out due
+    to errors, or too difficult to measure.
+    
+    Missing values may be very important to
+    models, and as such there exist numerous
+    ways and techniques to handle them.
+    
+    Let’s go over some of these techniques.
+
+    The choice of technique is dependent on
+    the type of features you have. For
+    categorical features, you can do things
+    like:
+
+    - Mode filling
+      Fill missing values with the most
+      popular/frequent/modal class.
+
+    - Temporal filling (forward or backward fill)
+      Fill missing values with the preceding
+      value (top-down) or with the succeeding
+      value (bottom-up).
+
+    - Encoding and fill
+      In this method, you can encode the
+      values using different strategies, and
+      then fill with either the mean, mode, or
+      the median.
+
+categorical features
+    [#feature engineering]
+
+    Features that can take on values from a
+    limited set.
+    
+    For example, the relative hotness of a
+    place/thing (hot, hotter, hottest) or star
+    ratings for an application (1,2,3,4,5).
+    
+    In regards to our dataset, features like
+    level_of_education_clients in the
+    loan_demographics dataset is a categorical
+    feature containing classes like Secondary,
+    Graduate, Post-Graduate, and Primary.
+
+numerical/continuous features
+    [#feature engineering]
+
+polynomial features
+    [#feature engineering]
+
+Normalization of features
+    [#feature engineering]

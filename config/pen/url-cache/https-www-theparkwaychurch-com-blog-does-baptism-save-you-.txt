@@ -1,0 +1,1065 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Age: 4
+Content-Length: 25097
+Content-Type: text/html;charset=utf-8
+Date: Sun, 03 Mar 2024 07:38:29 GMT
+Etag: W/"fd1ef1cf79cfd534731bd25dfd171b49--gzip"
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Server: Squarespace
+Set-Cookie: crumb=BTyaPl2OFl2yNDM5YjI2NTdlOTY4ZDM3ZmNkYjVkNGQxMGQ2MDhi;Secure;Path=/
+Strict-Transport-Security: max-age=0
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Contextid: es5LmvkA/Pt84eusH
+
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"  >
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1">
+
+    <!-- This is Squarespace. --><!-- ray-violet-5wsl -->
+<base href="">
+<meta charset="utf-8" />
+<title>Does Baptism Save You? &mdash; The Parkway Church</title>
+<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5c92b27811f78438347e2476/8a6bf841-9662-4a52-8148-078d34ba4797/favicon.ico?format=100w"/>
+<link rel="canonical" href="https://www.theparkwaychurch.com/blog/does-baptism-save-you"/>
+<meta property="og:site_name" content="The Parkway Church"/>
+<meta property="og:title" content="Does Baptism Save You? &mdash; The Parkway Church"/>
+<meta property="og:latitude" content="33.1994617"/>
+<meta property="og:longitude" content="-96.69121999999999"/>
+<meta property="og:locality" content=""/>
+<meta property="og:url" content="https://www.theparkwaychurch.com/blog/does-baptism-save-you"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="I have been baptized 6 times. If that sounds crazy to you, you are right; it is crazy. This blog aims to answer my questions which remained unanswered for so long; it might even help some of you avoid being baptized for a second, third, or seventh time…"/>
+<meta property="og:image" content="http://static1.squarespace.com/static/5c92b27811f78438347e2476/5caca5f8e2c4831a0f05df04/5cba305aee6eb05d103a1ca3/1555706208395/android-wallpaper-beach-dawn-189349+%281%29.jpg?format=1500w"/>
+<meta property="og:image:width" content="1000"/>
+<meta property="og:image:height" content="667"/>
+<meta itemprop="name" content="Does Baptism Save You? — The Parkway Church"/>
+<meta itemprop="url" content="https://www.theparkwaychurch.com/blog/does-baptism-save-you"/>
+<meta itemprop="description" content="I have been baptized 6 times. If that sounds crazy to you, you are right; it is crazy. This blog aims to answer my questions which remained unanswered for so long; it might even help some of you avoid being baptized for a second, third, or seventh time…"/>
+<meta itemprop="thumbnailUrl" content="http://static1.squarespace.com/static/5c92b27811f78438347e2476/5caca5f8e2c4831a0f05df04/5cba305aee6eb05d103a1ca3/1555706208395/android-wallpaper-beach-dawn-189349+%281%29.jpg?format=1500w"/>
+<link rel="image_src" href="http://static1.squarespace.com/static/5c92b27811f78438347e2476/5caca5f8e2c4831a0f05df04/5cba305aee6eb05d103a1ca3/1555706208395/android-wallpaper-beach-dawn-189349+%281%29.jpg?format=1500w" />
+<meta itemprop="image" content="http://static1.squarespace.com/static/5c92b27811f78438347e2476/5caca5f8e2c4831a0f05df04/5cba305aee6eb05d103a1ca3/1555706208395/android-wallpaper-beach-dawn-189349+%281%29.jpg?format=1500w"/>
+<meta itemprop="author" content="Zach Lee"/>
+<meta itemprop="datePublished" content="2019-01-17T15:32:00-0600"/>
+<meta itemprop="dateModified" content="2019-04-19T15:36:48-0500"/>
+<meta itemprop="headline" content="Does Baptism Save You?"/>
+<meta itemprop="publisher" content="The Parkway Church"/>
+<meta name="twitter:title" content="Does Baptism Save You? — The Parkway Church"/>
+<meta name="twitter:image" content="http://static1.squarespace.com/static/5c92b27811f78438347e2476/5caca5f8e2c4831a0f05df04/5cba305aee6eb05d103a1ca3/1555706208395/android-wallpaper-beach-dawn-189349+%281%29.jpg?format=1500w"/>
+<meta name="twitter:url" content="https://www.theparkwaychurch.com/blog/does-baptism-save-you"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="I have been baptized 6 times. If that sounds crazy to you, you are right; it is crazy. This blog aims to answer my questions which remained unanswered for so long; it might even help some of you avoid being baptized for a second, third, or seventh time…"/>
+<meta name="description" content="I have been baptized 6 times. If that sounds crazy to you, you are right; 
+it is crazy. This blog aims to answer my questions which remained 
+unanswered for so long; it might even help some of you avoid being baptized 
+for a second, third, or seventh time…" />
+<link rel="preconnect" href="https://images.squarespace-cdn.com">
+<script type="text/javascript" src="//use.typekit.net/ik/k2-EzU_wqeRTjf5vB26BUDaRXCvc_vIgKyRqnXdZ_IqfezvIfFHN4UJLFRbh52jhWDmR5Q4KwRStwQBcFD6XwD6DF2i8wRbaFy7QMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0ScBoOWZTdhU8ifXuiaFCO1FUiABkZWF3jAF8OcFzdP37O1FUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80Zko0ZWbCjWw0dA9CdeNRjAUGdaFXOY4ypPuh-ANCZWblFWiDdfoDSWmyScmDSeBRZPoRdhXCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUX-em3jW4nihBojhyuScFGOcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0ScBoOWZTdhU8ifXuiaFCO1FUiABkZWF3jAF8OcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUaiaS0iey8SeBk-aiypAFGiW4R-foRdhXK2cZuiYmkjPu3ifuKdhUqJyFciWsuScIlSYbljhN0Zem0ShmqJ68ciWsuScIlSYbKIA4kjAoqdhtlZa4ziemDSWm8H6GJEGMfIMMjgkMfH6qJ6W6bMs6YJMJ7fbKImsMfeMb6MKG4fJBmIMJjgkMfH6qJym9bMy65JMJ7fbKfmsMfegI6MKG4fOZbIMwjgfMfH6qJ0BMbMU6YJMJ7fbRM9gM2eMq6MKG4fOibIMwj2KMfH6qJ0mMbMU6sJMHbMiLVzztB.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400&family=Libre+Franklin:wght@400;500">
+<script type="text/javascript" crossorigin="anonymous" nomodule="nomodule" src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js"></script>
+<script type="text/javascript" crossorigin="anonymous" src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js"></script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-c9ea572624ccd4964c26-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-c9ea572624ccd4964c26-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-675f9459672cf966ca51-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-675f9459672cf966ca51-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-a682f7ad337741eb05d6-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-a682f7ad337741eb05d6-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-73b8e232ffd5b43ca99e-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-73b8e232ffd5b43ca99e-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-e3dba6f4bd49760d9a75-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-e3dba6f4bd49760d9a75-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-0ec4208d26f4da126f22-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-0ec4208d26f4da126f22-min.en-US.js" ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/performance-595641e15dc2776e5ea1-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-performance');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/performance-595641e15dc2776e5ea1-min.en-US.js" defer ></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-f1b17328c55249cf16e9-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-68f0d70f87aaddb33c87-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-ce3304dbbbc00b0adc2c-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-1e4496937ccd55da84b7-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-0ec9ba70c561f4417993-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-17dca3f66c4211bf16d1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-33c1f90c488c55fae579-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-d3ebe653c1c873022724-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-7116ec013cb68ccb46b1-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-c284904b25c71d02bce8-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-6e60a567b55f463b68e7-min.en-US.js"},"squarespace-custom-css-popup":{"css":"//assets.squarespace.com/universal/styles-compressed/custom-css-popup-5d1c15b78a92b66bb9c2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/custom-css-popup-7acbb1abe140de860b8e-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-9349bf4b96d773b4fc4a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-c448735543b55eab799b-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-17dca3f66c4211bf16d1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-070905c328c108a2d84a-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-206ef2320c2cea5a2878-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-e6610e528d6f92fd5031-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-503cf40eefffe62983b2-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-1e4496937ccd55da84b7-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-cc29311f395b003af368-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-1e4496937ccd55da84b7-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-88078df9f58614d82665-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-1e4496937ccd55da84b7-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-02d1e0bcb6fc2a7af709-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-667fa2c6bd659fe9a639-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-c425f4bbbcfb78c3f308-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-f2c5750b07447cd0e8c5-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-f51f475a757005c26ee7-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-1e4496937ccd55da84b7-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-43d31ab46f5dc95b0c84-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-1e4496937ccd55da84b7-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-93bc5328ce08f99b4278-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-622dbcc4356d75bd674a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-e651beeebf0f0d458f3c-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-fd133305dca90ae5ca2f-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-3a1fa618b156b16f9a32-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-4ef11503ebc255d049e5-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-5ccc4fc16300710a0a68-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-5978fce864bf3409cbda-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-1e4496937ccd55da84b7-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-ed7446c70dde7b3316d8-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-03eed1717232cc37078d-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-b9419dfe48307ccde360-min.en-US.js"}},"pageType":50,"website":{"id":"5c92b27811f78438347e2476","identifier":"ray-violet-5wsl","websiteType":1,"contentModifiedOn":1709234226074,"cloneable":false,"hasBeenCloneable":false,"siteStatus":{},"language":"en-US","timeZone":"America/Chicago","machineTimeZoneOffset":-21600000,"timeZoneOffset":-21600000,"timeZoneAbbr":"CST","siteTitle":"The Parkway Church","fullSiteTitle":"Does Baptism Save You? \u2014 The Parkway Church","siteDescription":"","location":{"mapLat":33.1994617,"mapLng":-96.69121999999999,"addressTitle":"The Parkway Church","addressLine1":"5600 Virginia Parkway","addressLine2":"McKinney, TX, 75071","addressCountry":"United States"},"logoImageId":"6514730d009f1e55950d8075","shareButtonOptions":{"1":true,"7":true,"2":true},"logoImageUrl":"//images.squarespace-cdn.com/content/v1/5c92b27811f78438347e2476/f245327b-b509-410c-8858-549af5f6ea76/Parkway+Logo.png","authenticUrl":"https://www.theparkwaychurch.com","internalUrl":"https://ray-violet-5wsl.squarespace.com","baseUrl":"https://www.theparkwaychurch.com","primaryDomain":"www.theparkwaychurch.com","sslSetting":3,"isHstsEnabled":false,"socialAccounts":[{"serviceId":62,"screenname":"Twitter","addedOn":1587416815757,"profileUrl":"https://twitter.com/parkwaymckinney","iconEnabled":true,"serviceName":"twitter-unauth"},{"serviceId":60,"screenname":"Facebook","addedOn":1587416866575,"profileUrl":"https://www.facebook.com/parkwaymckinney/","iconEnabled":true,"serviceName":"facebook-unauth"},{"serviceId":69,"screenname":"YouTube","addedOn":1587417205548,"profileUrl":"https://www.youtube.com/channel/UCjcFg9l8VP7Ro-tiew0L2xw/","iconEnabled":true,"serviceName":"youtube-unauth"},{"serviceId":71,"screenname":"Spotify","addedOn":1610651864477,"profileUrl":"https://open.spotify.com/playlist/3Tw6j4yR4FY8Quwm7SoA7X?si=KBImL6msQfWE53oazM7y8w","iconEnabled":true,"serviceName":"spotify-unauth"}],"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"a540fb05f3a9cb083e578f306f87fc104f4600200662ee3fffb0b9879fdaecd6","captchaSettings":{"enabledForDonations":false},"showOwnerLogin":false},"websiteSettings":{"id":"5c92b27811f78438347e2479","websiteId":"5c92b27811f78438347e2476","subjects":[],"country":"US","state":"TX","simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"announcementBarSettings":{"style":1,"text":"<p class=\"\" style=\"white-space:pre-wrap;\"><strong>No Theological Equipping Classes During winter (Dec and jan)</strong></p>"},"popupOverlaySettings":{"style":1,"showOnScroll":false,"scrollPercentage":25,"showOnTimer":true,"timerDelay":0,"showUntilSignup":false,"displayFrequency":1,"enableMobile":true,"enabledPages":["5d77de4e6723583bf71fe226"],"showOnAllPages":true,"version":18},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":false,"contactPhoneNumber":"9723467175","businessHours":{"monday":{"text":"9am - 5pm","ranges":[{"from":540,"to":1020}]},"tuesday":{"text":"9am - 5pm","ranges":[{"from":540,"to":1020}]},"wednesday":{"text":"9am - 5pm","ranges":[{"from":540,"to":1020}]},"thursday":{"text":"9am - 5pm","ranges":[{"from":540,"to":1020}]},"friday":{"text":"","ranges":[{}]},"saturday":{"text":"","ranges":[{}]},"sunday":{"text":"8:30am - 7:30pm","ranges":[{"from":510,"to":1170}]}},"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"checkoutPageMarketingOptInEnabled":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsSuccessText":"","restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false,"productComposerABTestOptedOut":false,"productReviewsEnabled":false,"displayImportedProductReviewsEnabled":false,"hasOptedToCollectNativeReviews":false},"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false,"userAccountsSettings":{"loginAllowed":false,"signupAllowed":false}},"cookieSettings":{"isCookieBannerEnabled":false,"isRestrictiveCookiePolicyEnabled":false,"isRestrictiveCookiePolicyAbsolute":false,"cookieBannerText":"","cookieBannerTheme":"","cookieBannerVariant":"","cookieBannerPosition":"","cookieBannerCtaVariant":"","cookieBannerCtaText":"","cookieBannerAcceptType":"OPT_IN","cookieBannerOptOutCtaText":"","cookieBannerHasOptOut":false,"cookieBannerHasManageCookies":true,"cookieBannerManageCookiesLabel":""},"websiteCloneable":false,"collection":{"title":"Blog","id":"5caca5f8e2c4831a0f05df04","fullUrl":"/blog","type":1,"permissionType":1},"item":{"title":"Does Baptism Save You?","id":"5cba305aee6eb05d103a1ca3","fullUrl":"/blog/does-baptism-save-you","publicCommentCount":0,"commentState":2,"recordType":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Slideshow","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"350px","gridSpacing":"20px","tweak-blog-list-columns":"4","tweak-blog-list-item-image-aspect-ratio-grid":"3:2 Standard","tweak-blog-list-item-image-aspect-ratio-stacked":"1:1 Square","tweak-blog-list-item-image-show":"true","tweak-blog-list-spacing":"29px","tweak-blog-list-style":"Grid","tweak-footer-layout":"Columns","tweak-header-bottom-overlay-on-index-gallery":"false","tweak-index-gallery-apply-bottom-spacing":"true","tweak-index-gallery-autoplay-duration":"2","tweak-index-gallery-autoplay-enable":"true","tweak-index-gallery-fixed-height":"true","tweak-index-gallery-height":"100vh","tweak-index-gallery-indicators":"Lines","tweak-index-gallery-layout":"Split","tweak-index-gallery-transition":"Fade","tweak-index-gallery-transition-duration":"500","tweak-index-nav-position":"Right","tweak-index-page-apply-bottom-spacing":"false","tweak-index-page-fullscreen":"None","tweak-index-page-min-height":"100vh","tweak-mobile-breakpoint":"640px","tweak-overlay-parallax-enabled":"true","tweak-overlay-parallax-new-math":"true","tweak-product-item-image-zoom-factor":"2.5","tweak-product-list-item-hover-behavior":"Show Alternate Image","tweak-product-list-items-per-row":"4","tweak-related-products-items-per-row":"3","tweak-related-products-title-spacing":"50px","tweak-site-ajax-loading-enable":"false","tweak-site-border-show":"false","tweak-site-border-width":"5px"},"templateId":"55f0aac0e4b0f0a5b7e0b22e","templateVersion":"7","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","templateScriptsRootUrl":"https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/353/scripts/","betaFeatureFlags":["unify_edit_mode_p2","campaigns_import_discounts","nested_categories_migration_enabled","website_fonts","visitor_react_forms","is_feature_gate_refresh_enabled","fluid_engine","commerce_order_status_access","pdp_product_add_ons_visitor_site","order_status_page_checkout_landing_enabled","background_art_onboarding","viewer-role-contributor-invites","toggle_preview_new_shortcut","send_local_pickup_ready_email","rewrite_transactional_email_from_address","scripts_defer","campaigns_global_uc_ab","proposals_beta_in_circle_labs","google_consent_v2","campaigns_new_image_layout_picker","commerce_subscription_renewal_notifications","campaigns_discount_section_in_blasts","campaigns_thumbnail_layout","commerce_site_visitor_metrics","marketing_landing_page","commerce_clearpay","commerce_etsy_shipping_import","campaigns_discount_section_in_automations","commerce_restock_notifications","show_add_to_cart_in_plp","customer_accounts_email_verification","accounting_orders_sync","enable_css_variable_tweaks","fluid_engine_clean_up_grid_contextual_change","commerce_etsy_product_import","customer_account_creation_recaptcha","commsplat_forms_visitor_profile","commerce_checkout_website_updates_enabled","async_copy_collection"],"videoAssetsFeatureFlags":["mux-data-video-collection","mux-data-course-collection"],"impersonatedSession":false,"demoCollections":[{"collectionId":"57b49b6eb3db2bc95c645a32","deleted":false}],"tzData":{"zones":[[-360,"US","C%sT",null]],"rules":{"US":[[1967,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}},"showAnnouncementBar":false,"recaptchaEnterpriseContext":{"recaptchaEnterpriseSiteKey":"6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv"},"i18nContext":{"timeZoneData":{"id":"America/Chicago","name":"Central Time"}}};</script><script>SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.theparkwaychurch.com/blog?format=rss" />
+<script type="application/ld+json">{"url":"https://www.theparkwaychurch.com","name":"The Parkway Church","description":"","image":"//images.squarespace-cdn.com/content/v1/5c92b27811f78438347e2476/f245327b-b509-410c-8858-549af5f6ea76/Parkway+Logo.png","@context":"http://schema.org","@type":"WebSite"}</script><script type="application/ld+json">{"legalName":"The Parkway Church","address":"5600 Virginia Parkway\nMcKinney, TX, 75071\nUnited States","email":"info@theparkwaychurch.com","telephone":"9723467175","sameAs":["https://twitter.com/parkwaymckinney","https://www.facebook.com/parkwaymckinney/","https://www.youtube.com/channel/UCjcFg9l8VP7Ro-tiew0L2xw/","https://open.spotify.com/playlist/3Tw6j4yR4FY8Quwm7SoA7X?si=KBImL6msQfWE53oazM7y8w"],"@context":"http://schema.org","@type":"Organization"}</script><script type="application/ld+json">{"address":"5600 Virginia Parkway\nMcKinney, TX, 75071\nUnited States","image":"https://static1.squarespace.com/static/5c92b27811f78438347e2476/t/6514730d009f1e55950d8075/1709234226074/","name":"The Parkway Church","openingHours":"Mo 09:00-17:00, Tu 09:00-17:00, We 09:00-17:00, Th 09:00-17:00, , , Su 08:30-19:30","@context":"http://schema.org","@type":"LocalBusiness"}</script><script type="application/ld+json">{"name":"Does Baptism Save You? \u2014 The Parkway Church","url":"https://www.theparkwaychurch.com/blog/does-baptism-save-you","datePublished":"2019-01-17T15:32:00-0600","dateModified":"2019-04-19T15:36:48-0500","headline":"Does Baptism Save You?","author":"Zach Lee","publisher":{"name":"The Parkway Church","logo":{"@type":"ImageObject","url":"https://static1.squarespace.com/static/5c92b27811f78438347e2476/t/6514730d009f1e55950d8075/1709234226074/"},"@context":"http://schema.org","@type":"Organization"},"image":"http://static1.squarespace.com/static/5c92b27811f78438347e2476/5caca5f8e2c4831a0f05df04/5cba305aee6eb05d103a1ca3/1555706208395/android-wallpaper-beach-dawn-189349+%281%29.jpg?format=1500w","@context":"http://schema.org","@type":"Article"}</script><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/5c92b27811f78438347e2476/173/55f0aac0e4b0f0a5b7e0b22e/5c9ae7039140b799e0333323/353/site.css"/><script>
+window.Squarespace.onInitialize(Y, () => {
+  var title = document.querySelectorAll('.image-slide-title');
+  for (var sf = 0; sf < title.length; ++sf) {
+    var item = title[sf]; 
+    item.innerHTML = item.innerText.replace(/#/g, '<br>');
+  }
+});  
+</script><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-86276104-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZjQwMz', true);gtag('config', 'UA-86276104-1');</script><!-- End of Squarespace Headers -->
+  </head>
+  <body id="item-5cba305aee6eb05d103a1ca3" class="tweak-social-icons-style-solid tweak-social-icons-shape-square tweak-site-width-option-full-background tweak-icon-weight-medium   tweak-site-ajax-loading-bar-show ancillary-header-top-left-layout-horizontal ancillary-header-top-center-layout-horizontal ancillary-header-top-right-layout-horizontal ancillary-header-bottom-left-layout-horizontal ancillary-header-bottom-center-layout-horizontal ancillary-header-bottom-right-layout-horizontal ancillary-header-branding-position-bottom-left ancillary-header-tagline-position-hide ancillary-header-primary-nav-position-bottom-right ancillary-header-secondary-nav-position-bottom-right ancillary-header-social-position-hide ancillary-header-search-position-bottom-right ancillary-header-cart-position-bottom-right ancillary-header-account-position-hide tweak-header-primary-nav-hover-style-plain tweak-header-primary-nav-button-style-solid tweak-header-primary-nav-button-shape-square  tweak-header-secondary-nav-hover-style-spotlight tweak-header-secondary-nav-button-style-solid tweak-header-secondary-nav-button-shape-square tweak-header-search-style-icon-only tweak-header-search-placeholder-show tweak-header-cart-style-text tweak-header-account-style-text tweak-overlay-parallax-enabled tweak-overlay-parallax-new-math tweak-index-nav-style-none tweak-index-nav-position-right tweak-index-nav-text-show tweak-index-page-fullscreen-none  tweak-index-page-scroll-indicator-none tweak-index-page-scroll-indicator-icon-arrow tweak-index-page-scroll-indicator-icon-weight-hairline  tweak-index-gallery-layout-split tweak-index-gallery-spacing-sides-show tweak-index-gallery-spacing-top-bottom-show tweak-index-gallery-fixed-height tweak-index-gallery-apply-bottom-spacing tweak-index-gallery-hover-style-fade tweak-index-gallery-controls-small-arrows tweak-index-gallery-controls-icon-weight-hairline tweak-index-gallery-indicators-lines tweak-index-gallery-autoplay-enable tweak-index-gallery-transition-fade tweak-index-gallery-content-position-middle-center tweak-index-gallery-content-text-alignment-center tweak-footer-show tweak-footer-layout-columns  tweak-footer-stacked-alignment-left tweak-footer-business-info-show   ancillary-mobile-bar-branding-position-top-left ancillary-mobile-bar-menu-icon-position-top-right tweak-mobile-bar-menu-icon-hamburger ancillary-mobile-bar-search-icon-position-top-right ancillary-mobile-bar-cart-position-hide tweak-mobile-bar-cart-style-text ancillary-mobile-bar-account-position-hide tweak-mobile-bar-account-style-text tweak-mobile-overlay-slide-origin-left tweak-mobile-overlay-close-show  tweak-mobile-overlay-menu-primary-button-style-solid tweak-mobile-overlay-menu-primary-button-shape-square   tweak-mobile-overlay-menu-secondary-button-style-solid tweak-mobile-overlay-menu-secondary-button-shape-square tweak-quote-block-alignment-left  tweak-blog-meta-primary-date tweak-blog-meta-secondary-author tweak-blog-list-style-grid tweak-blog-list-separator-show tweak-blog-list-alignment-left tweak-blog-list-item-image-show tweak-blog-list-item-image-aspect-ratio-grid-32-standard tweak-blog-list-item-image-aspect-ratio-stacked-11-square tweak-blog-list-item-title-show tweak-blog-list-item-excerpt-show tweak-blog-list-item-body-show tweak-blog-list-item-readmore-inline tweak-blog-list-item-meta-position-below-title tweak-blog-list-pagination-link-label-show tweak-blog-list-pagination-link-icon-show tweak-blog-list-pagination-link-icon-weight-light tweak-blog-item-alignment-center tweak-blog-item-meta-position-below-title tweak-blog-item-share-position-below-content tweak-blog-item-pagination-link-icon-show  tweak-blog-item-pagination-link-title-show tweak-blog-item-pagination-link-meta-category tweak-blog-item-pagination-link-icon-weight-medium   event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address     event-excerpts  event-item-back-link    gallery-design-slideshow aspect-ratio-auto lightbox-style-dark gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-no-background gallery-transitions-fade gallery-show-arrows gallery-auto-crop   tweak-product-list-image-aspect-ratio-11-square tweak-product-list-item-hover-behavior-show-alternate-image tweak-product-list-meta-position-under tweak-product-list-mobile-meta-position-under tweak-product-list-meta-alignment-under-left tweak-product-list-meta-alignment-overlay-center-center tweak-product-list-show-title tweak-product-list-show-price tweak-product-list-filter-display-top tweak-product-list-filter-alignment-center tweak-product-item-nav-show-breadcrumb-and-pagination tweak-product-item-nav-pagination-style-previousnext tweak-product-item-nav-breadcrumb-alignment-left tweak-product-item-nav-pagination-alignment-split tweak-product-item-gallery-position-left tweak-product-item-gallery-design-slideshow tweak-product-item-gallery-aspect-ratio-11-square tweak-product-item-gallery-thumbnail-alignment-left tweak-product-item-details-alignment-left tweak-product-item-details-show-title tweak-product-item-details-show-price tweak-product-item-details-show-excerpt tweak-product-item-details-excerpt-position-below-price tweak-product-item-details-show-share-buttons tweak-product-item-details-show-variants tweak-product-item-details-show-quantity tweak-product-item-details-options-style-square tweak-product-item-details-show-add-to-cart-button tweak-product-item-details-add-to-cart-button-style-solid tweak-product-item-details-add-to-cart-button-shape-square tweak-product-item-details-add-to-cart-button-padding-small tweak-product-item-image-zoom-enabled tweak-product-item-image-zoom-behavior-click tweak-product-item-lightbox-enabled tweak-related-products-image-aspect-ratio-11-square tweak-related-products-meta-alignment-under-center tweak-product-badge-style-rectangle tweak-product-badge-position-top-right tweak-product-badge-inset-dock-horizontally newsletter-style-custom hide-opentable-icons opentable-style-dark small-button-style-outline small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light tweak-share-buttons-style-outline tweak-share-buttons-icons-show tweak-share-buttons-labels-show native-currency-code-usd view-item collection-type-blog collection-5caca5f8e2c4831a0f05df04 collection-layout-default mobile-style-available sqs-has-custom-cart has-logo-image has-social enable-load-effects has-primary-nav has-secondary-nav has-footer-nav" data-controller="HashManager, SiteLoader, MobileClassname">
+
+    <div class="Loader"></div>
+
+    <div class="Mobile" data-nc-base="mobile-bar" data-controller="AncillaryLayout">
+  <div class="Mobile-bar Mobile-bar--top" data-nc-group="top" data-controller="MobileOffset">
+
+    <div data-nc-container="top-left">
+      <a href="/" class="Mobile-bar-branding" data-nc-element="branding" data-content-field="site-title">
+        
+          
+            <img src="//images.squarespace-cdn.com/content/v1/5c92b27811f78438347e2476/f245327b-b509-410c-8858-549af5f6ea76/Parkway+Logo.png?format=1500w" alt="The Parkway Church" class="Mobile-bar-branding-logo" />
+          
+        
+      </a>
+    </div>
+    <div data-nc-container="top-center"></div>
+    <div data-nc-container="top-right"></div>
+  </div>
+  <div class="Mobile-bar Mobile-bar--bottom" data-nc-group="bottom" data-controller="MobileOffset">
+    <div data-nc-container="bottom-left">
+      <button
+        class="Mobile-bar-menu"
+        data-nc-element="menu-icon"
+        data-controller-overlay="menu"
+        data-controller="MobileOverlayToggle"
+        aria-label="Open navigation menu"
+      >
+        <svg class="Icon Icon--hamburger" viewBox="0 0 24 18">
+          <use xlink:href="/assets/ui-icons.svg#hamburger-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#hamburger-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--hotdog" viewBox="0 0 24 14">
+          <use xlink:href="/assets/ui-icons.svg#hotdog-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#hotdog-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--plus" viewBox="0 0 20 20">
+          <use xlink:href="/assets/ui-icons.svg#plus-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#plus-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--dots-horizontal" viewBox="0 0 25 7">
+          <use xlink:href="/assets/ui-icons.svg#dots-horizontal-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#dots-horizontal-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--dots-vertical" viewBox="0 0 7 25">
+          <use xlink:href="/assets/ui-icons.svg#dots-vertical-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#dots-vertical-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--squares-horizontal" viewBox="0 0 25 7">
+          <use xlink:href="/assets/ui-icons.svg#squares-horizontal-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#squares-horizontal-icon--odd" class="use--odd"></use>
+        </svg>
+        <svg class="Icon Icon--squares-vertical" viewBox="0 0 7 25">
+          <use xlink:href="/assets/ui-icons.svg#squares-vertical-icon--even" class="use--even"></use>
+          <use xlink:href="/assets/ui-icons.svg#squares-vertical-icon--odd" class="use--odd"></use>
+        </svg>
+      </button>
+    </div>
+    <div data-nc-container="bottom-center">
+      
+    </div>
+    <div data-nc-container="bottom-right">
+      
+      <a href="/search" class="Mobile-bar-search" data-nc-element="search-icon" aria-label="Search">
+        <svg class="Icon Icon--search" viewBox="0 0 20 20">
+          <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="Mobile-overlay">
+    <div class="Mobile-overlay-menu" data-controller="MobileOverlayFolders">
+      <div class="Mobile-overlay-menu-main">
+        <nav class="Mobile-overlay-nav Mobile-overlay-nav--primary" data-content-field="navigation">
+          
+  
+    
+      
+        
+          <button class="Mobile-overlay-nav-item Mobile-overlay-nav-item--folder" data-controller-folder-toggle="about-mentor">
+            <span class="Mobile-overlay-nav-item--folder-label">About</span>
+          </button>
+        
+      
+    
+    
+  
+    
+      
+        
+          <button class="Mobile-overlay-nav-item Mobile-overlay-nav-item--folder" data-controller-folder-toggle="gatherings">
+            <span class="Mobile-overlay-nav-item--folder-label">Gatherings</span>
+          </button>
+        
+      
+    
+    
+  
+    
+      
+        
+          <button class="Mobile-overlay-nav-item Mobile-overlay-nav-item--folder" data-controller-folder-toggle="resources">
+            <span class="Mobile-overlay-nav-item--folder-label">Resources</span>
+          </button>
+        
+      
+    
+    
+  
+    
+      
+        
+          <button class="Mobile-overlay-nav-item Mobile-overlay-nav-item--folder" data-controller-folder-toggle="members">
+            <span class="Mobile-overlay-nav-item--folder-label">Members</span>
+          </button>
+        
+      
+    
+    
+  
+
+        </nav>
+        <nav class="Mobile-overlay-nav Mobile-overlay-nav--secondary" data-content-field="navigation">
+          
+  
+    
+      
+        
+          <a href="/giving" class="Mobile-overlay-nav-item">
+            Giving
+          </a>
+        
+      
+    
+    
+  
+
+        </nav>
+      </div>
+      <div class="Mobile-overlay-folders" data-content-field="navigation">
+        
+  
+    <div class="Mobile-overlay-folder" data-controller-folder="about-mentor">
+      <button class="Mobile-overlay-folder-item Mobile-overlay-folder-item--toggle" data-controller-folder-toggle="about-mentor">
+        <span class="Mobile-overlay-folder-item--toggle-label">Back</span>
+      </button>
+      
+        
+          <a href="/leadership" class="Mobile-overlay-folder-item">
+            Leadership
+          </a>
+        
+      
+        
+          <a href="/history" class="Mobile-overlay-folder-item">
+            History
+          </a>
+        
+      
+        
+          <a href="/beliefs" class="Mobile-overlay-folder-item">
+            Beliefs
+          </a>
+        
+      
+        
+          <a href="/visit" class="Mobile-overlay-folder-item">
+            Visit us
+          </a>
+        
+      
+        
+          <a href="/membership" class="Mobile-overlay-folder-item">
+            Membership
+          </a>
+        
+      
+        
+          <a href="/contact" class="Mobile-overlay-folder-item">
+            Contact
+          </a>
+        
+      
+    </div>
+  
+
+  
+    <div class="Mobile-overlay-folder" data-controller-folder="gatherings">
+      <button class="Mobile-overlay-folder-item Mobile-overlay-folder-item--toggle" data-controller-folder-toggle="gatherings">
+        <span class="Mobile-overlay-folder-item--toggle-label">Back</span>
+      </button>
+      
+        
+          <a href="/service" class="Mobile-overlay-folder-item">
+            Sunday Worship
+          </a>
+        
+      
+        
+          <a href="/tec" class="Mobile-overlay-folder-item">
+            Theological Equipping Class (TEC)
+          </a>
+        
+      
+        
+          <a href="/groups" class="Mobile-overlay-folder-item">
+            Community Groups
+          </a>
+        
+      
+        
+          <a href="/children" class="Mobile-overlay-folder-item">
+            Preschool, Elementary, and Youth
+          </a>
+        
+      
+        
+          <a href="/calendar" class="Mobile-overlay-folder-item">
+            Calendar
+          </a>
+        
+      
+    </div>
+  
+
+  
+    <div class="Mobile-overlay-folder" data-controller-folder="resources">
+      <button class="Mobile-overlay-folder-item Mobile-overlay-folder-item--toggle" data-controller-folder-toggle="resources">
+        <span class="Mobile-overlay-folder-item--toggle-label">Back</span>
+      </button>
+      
+        
+          <a href="/sermons" class="Mobile-overlay-folder-item">
+            Sermons
+          </a>
+        
+      
+        
+          <a href="/tecrecordings" class="Mobile-overlay-folder-item">
+            Classes
+          </a>
+        
+      
+        
+          <a href="/blog" class="Mobile-overlay-folder-item">
+            Blog
+          </a>
+        
+      
+        
+          <a href="/music" class="Mobile-overlay-folder-item">
+            Music
+          </a>
+        
+      
+    </div>
+  
+
+  
+    <div class="Mobile-overlay-folder" data-controller-folder="members">
+      <button class="Mobile-overlay-folder-item Mobile-overlay-folder-item--toggle" data-controller-folder-toggle="members">
+        <span class="Mobile-overlay-folder-item--toggle-label">Back</span>
+      </button>
+      
+        
+          <a href="/seasons-at-parkway" class="Mobile-overlay-folder-item">
+            Seasons at Parkway
+          </a>
+        
+      
+        
+          
+            <a href="https://theparkwaychurch.ccbchurch.com/" class="Mobile-overlay-folder-item">
+              CCB Login
+            </a>
+          
+        
+      
+        
+          
+            <a href="https://pbcmckinney.us11.list-manage.com/subscribe?u=dd43d10e11735bf189c3a1d2b&id=417b1922bd" class="Mobile-overlay-folder-item">
+              Email Updates
+            </a>
+          
+        
+      
+    </div>
+  
+
+        
+  
+
+      </div>
+    </div>
+    <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" aria-label="Close navigation menu">
+      <svg class="Icon Icon--close" viewBox="0 0 16 16">
+        <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
+      </svg>
+    </button>
+    <div class="Mobile-overlay-back" data-controller="MobileOverlayToggle"></div>
+  </div>
+</div>
+
+
+    <div class="Parallax-host-outer">
+      <div class="Parallax-host" data-parallax-host>
+        
+          
+            
+          
+        
+      </div>
+    </div>
+
+    <div class="Site" data-nc-base="header" data-controller="AncillaryLayout">
+      <div class="sqs-announcement-bar-dropzone"></div>
+
+      <header class="Header Header--top">
+        <div class="Header-inner Header-inner--top" data-nc-group="top">
+          <div data-nc-container="top-left">
+
+            <div class="Header-search" data-nc-element="search">
+              <form class="Header-search-form" action="/search" method="get">
+                <input class="Header-search-form-input" name="q" type="text" spellcheck="false" value="" autocomplete="off" placeholder="Search" />
+                <button class="Header-search-form-submit" type="submit" data-test="template-search">
+                  <svg class="Icon Icon--search--small" viewBox="0 0 15 15">
+                    <use xlink:href="/assets/ui-icons.svg#search-icon--small"></use>
+                  </svg>
+                  <svg class="Icon Icon--search" viewBox="0 0 20 20">
+                    <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+          </div>
+          <div data-nc-container="top-center">
+            
+            
+              <div class="Header-social" data-nc-element="social">
+                
+  <nav class="SocialLinks" data-content-field="connected-accounts">
+    <div class="SocialLinks-inner">
+    <a href="https://twitter.com/parkwaymckinney" target="_blank" class="SocialLinks-link twitter-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#twitter-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#twitter-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://www.facebook.com/parkwaymckinney/" target="_blank" class="SocialLinks-link facebook-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#facebook-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#facebook-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://www.youtube.com/channel/UCjcFg9l8VP7Ro-tiew0L2xw/" target="_blank" class="SocialLinks-link youtube-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#youtube-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#youtube-unauth-mask"></use>
+          </svg>
+        </div>
+      </a><a href="https://open.spotify.com/playlist/3Tw6j4yR4FY8Quwm7SoA7X?si=KBImL6msQfWE53oazM7y8w" target="_blank" class="SocialLinks-link spotify-unauth" style="">
+        <div>
+          <svg class="SocialLinks-link-svg" viewBox="0 0 64 64">
+            
+            <use class="SocialLinks-link-icon" xlink:href="#spotify-unauth-icon"></use>
+            <use class="SocialLinks-link-mask" xlink:href="#spotify-unauth-mask"></use>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+              </div>
+            
+          </div>
+          <div data-nc-container="top-right">
+
+            
+
+          </div>
+        </div>
+      </header>
+
+      <div class="Site-inner">
+
+        <header class="Header Header--bottom">
+          <div class="Header-inner Header-inner--bottom" data-nc-group="bottom">
+            <div data-nc-container="bottom-left">
+              <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
+                
+  <div class="Header-nav-inner">
+    <span class="Header-nav-item Header-nav-item--folder">
+
+      <a href="/about-mentor" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch">About</a>
+
+      <span class="Header-nav-folder">
+        
+          
+            <a href="/leadership" class="Header-nav-folder-item" data-test="template-nav">Leadership</a>
+          
+        
+          
+            <a href="/history" class="Header-nav-folder-item" data-test="template-nav">History</a>
+          
+        
+          
+            <a href="/beliefs" class="Header-nav-folder-item" data-test="template-nav">Beliefs</a>
+          
+        
+          
+            <a href="/visit" class="Header-nav-folder-item" data-test="template-nav">Visit us</a>
+          
+        
+          
+            <a href="/membership" class="Header-nav-folder-item" data-test="template-nav">Membership</a>
+          
+        
+          
+            <a href="/contact" class="Header-nav-folder-item" data-test="template-nav">Contact</a>
+          
+        
+      </span>
+    </span><span class="Header-nav-item Header-nav-item--folder">
+
+      <a href="/gatherings" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch">Gatherings</a>
+
+      <span class="Header-nav-folder">
+        
+          
+            <a href="/service" class="Header-nav-folder-item" data-test="template-nav">Sunday Worship</a>
+          
+        
+          
+            <a href="/tec" class="Header-nav-folder-item" data-test="template-nav">Theological Equipping Class (TEC)</a>
+          
+        
+          
+            <a href="/groups" class="Header-nav-folder-item" data-test="template-nav">Community Groups</a>
+          
+        
+          
+            <a href="/children" class="Header-nav-folder-item" data-test="template-nav">Preschool, Elementary, and Youth</a>
+          
+        
+          
+            <a href="/calendar" class="Header-nav-folder-item" data-test="template-nav">Calendar</a>
+          
+        
+      </span>
+    </span><span class="Header-nav-item Header-nav-item--folder">
+
+      <a href="/resources" class="Header-nav-folder-title Header-nav-folder-title--active" data-controller="HeaderNavFolderTouch">Resources</a>
+
+      <span class="Header-nav-folder">
+        
+          
+            <a href="/sermons" class="Header-nav-folder-item" data-test="template-nav">Sermons</a>
+          
+        
+          
+            <a href="/tecrecordings" class="Header-nav-folder-item" data-test="template-nav">Classes</a>
+          
+        
+          
+            <a href="/blog" class="Header-nav-folder-item Header-nav-folder-item--active" data-test="template-nav">Blog</a>
+          
+        
+          
+            <a href="/music" class="Header-nav-folder-item" data-test="template-nav">Music</a>
+          
+        
+      </span>
+    </span><span class="Header-nav-item Header-nav-item--folder">
+
+      <a href="/members" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch">Members</a>
+
+      <span class="Header-nav-folder">
+        
+          
+            <a href="/seasons-at-parkway" class="Header-nav-folder-item" data-test="template-nav">Seasons at Parkway</a>
+          
+        
+          
+            
+              <a href="https://theparkwaychurch.ccbchurch.com/" target="_blank" class="Header-nav-folder-item">CCB Login</a>
+            
+          
+        
+          
+            
+              <a href="https://pbcmckinney.us11.list-manage.com/subscribe?u=dd43d10e11735bf189c3a1d2b&id=417b1922bd" target="_blank" class="Header-nav-folder-item">Email Updates</a>
+            
+          
+        
+      </span>
+    </span>
+  </div>
+
+              </nav>
+            </div>
+            <div data-nc-container="bottom-center">
+
+              <a href="/" class="Header-branding" data-nc-element="branding" data-content-field="site-title">
+                
+                  
+                    <img src="//images.squarespace-cdn.com/content/v1/5c92b27811f78438347e2476/f245327b-b509-410c-8858-549af5f6ea76/Parkway+Logo.png?format=1500w" alt="The Parkway Church" class="Header-branding-logo" />
+                  
+                
+              </a>
+              
+
+            </div>
+            <div data-nc-container="bottom-right">
+
+              <nav class="Header-nav Header-nav--secondary" data-nc-element="secondary-nav" data-content-field="navigation">
+                
+  <div class="Header-nav-inner">
+    <a href="/giving" class="Header-nav-item" data-test="template-nav">Giving</a>
+  </div>
+
+              </nav>
+
+            </div>
+          </div>
+        </header>
+
+        <div class="Content-outer">
+          
+
+          <main class="Main Main--blog-item" >
+            
+              <section class="Main-content" data-content-field="main-content">
+                <article id="post-5cba305aee6eb05d103a1ca3" class="BlogItem hentry author-zach-lee post-type-text" data-item-id="5cba305aee6eb05d103a1ca3">
+
+    
+      <h1 class="BlogItem-title" data-content-field="title">Does Baptism Save You?</h1>
+    
+
+    <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1555706174187" id="item-5cba305aee6eb05d103a1ca3"><div class="row sqs-row"><div class="col sqs-col-1 span-1"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1555706178319_6753"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-10 span-10"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-b47f3b4f2714f5290410"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p class="" style="white-space:pre-wrap;">I have been baptized 6 times.</p><p class="" style="white-space:pre-wrap;">If that sounds crazy to you, you are right; it&nbsp;<em>is </em>crazy.</p><p class="" style="white-space:pre-wrap;">I grew up in a denomination that taught that one was not justified by faith alone, but that one was justified by faith&nbsp;<em>plus</em>&nbsp;baptism.</p><p class="" style="white-space:pre-wrap;">So I got baptized at age 11, but I wasn’t saved. I didn’t have the Spirit. I didn’t love Christ. I mentally believed certain truths about the gospel (Jesus is God’s Son, he died for my sins, he was raised, etc.), but I didn’t trust in the gospel. Head knowledge and heart knowledge can be different.&nbsp;</p><p class="" style="white-space:pre-wrap;">I was truly saved at 17 in an Evangelical church, so I decided to get baptized again (since I wanted to be obedient to the biblical pattern of people getting baptized&nbsp;<em>after </em>they come to faith). That should have been the end of the story. Unfortunately, it was not. After that I ended up getting baptized 4 more times. Why the madness you may ask?! Well, I was also wrestling with the question, “if baptism doesn’t save you, then why are there so many biblical passages that seem to suggest that it does?”</p><p class="" style="white-space:pre-wrap;">Nobody was really shepherding me at the time, and I didn’t have anyone who could answer my questions. Questions like: Why does the Bible use the word “save” so often in the context of baptism? How do you know when you are really saved? How can I discern whether or not I have fully obeyed the biblical command to be baptized?</p><p class="" style="white-space:pre-wrap;">This blog aims to answer my questions which remained unanswered for so long; it might even help some of you avoid being baptized for a second, third, or seventh time.</p><h2 style="white-space:pre-wrap;"><strong>Justification by faith alone</strong></h2><p class="" style="white-space:pre-wrap;">The Bible is clear that you are saved simply by repentance and faith in Christ:</p><p style="margin-left:40px;white-space:pre-wrap;" class="">Romans 4:3-5<em>&nbsp;- For what does the Scripture say? "Abraham believed God, and it was counted to him as righteousness." Now to the one who works, his wages are not counted as a gift but as his due. And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Romans 10:8-10<em>&nbsp;- But what does it say? "The word is near you, in your mouth and in your heart" (that is, the word of faith that we proclaim); because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is saved.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Romans 3:23–26<em>&nbsp;- for all have sinned and fall short of the glory of God,&nbsp;24and are justified by his grace as a gift, through the redemption that is in Christ Jesus,&nbsp;25&nbsp;whom God put forward as a propitiation by his blood, to be received by faith. This was to show God’s righteousness, because in his divine forbearance he had passed over former sins.&nbsp;26&nbsp;It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Ephesians 2:8-9<em>&nbsp;- For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Acts 15:8-9<em>&nbsp;- And God, who knows the heart, bore witness to them, by giving them the Holy Spirit just as he did to us, and he made no distinction between us and them, having cleansed their hearts by faith.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Philippians 3:8-9<em>&nbsp;- Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Galatians 3:5-6<em>&nbsp;- Does he who supplies the Spirit to you and works miracles among you do so by works of the law, or by hearing with faith - just as Abraham "believed God, and it was counted to him as righteousness"?</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Ephesians 1:13-14<em>&nbsp;- In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee&nbsp;of our inheritance until we acquire possession of it,&nbsp;to the praise of his glory.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">2 Timothy 1:9<em>&nbsp;-&nbsp;9&nbsp;who saved us and called us to a holy calling, not because of our works but because of his own purpose and grace, which he gave us in Christ Jesus before the ages began,</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Acts 10:47<em>&nbsp;- “Can anyone withhold water for baptizing these people, who have received the Holy Spirit just as we have?”</em></p><p class="" style="white-space:pre-wrap;">Notice how so many passages teach that one is saved just by believing (and where baptism is not even mentioned). Also notice how some passages even explicitly teach that one receives the Spirit and is regenerated just by hearing the gospel, even when they haven’t been baptized yet (Acts 10; Ephesians 1; etc.).</p><h2 style="white-space:pre-wrap;"><strong>What about passages that seem to say that baptism “saves?”</strong></h2><p class="" style="white-space:pre-wrap;">There are 5 passages in the New Testament that some people will point to to say that baptism is necessary for salvation and regeneration. Now, there are other passages that talk about baptism generally, but these are the big ones regarding “salvation.” Let’s address each one in turn:</p><p style="margin-left:40px;white-space:pre-wrap;" class="">Mark 16:16&nbsp;- <em>Whoever believes and is baptized will be saved, but whoever does not believe will be condemned.</em></p><p class="" style="white-space:pre-wrap;">First, this passage is not actually in the Bible. The long ending of Mark 16 isn’t in our oldest and best manuscripts. Mark 16 actually ends at verse 8. Remember, “the Bible” isn’t what you&nbsp;<em>think</em>&nbsp;the Bible is in your English translation. Rather the wording of the original Hebrew, Aramaic, and Greek manuscripts is “the Bible” and your English Bible is inspired to the degree that it accurately reflects the best manuscripts we have. Your English translators put the long ending of Mark in big brackets to show that this passage’s authenticity has a dubious status. If you want more info on this check out our resources on textual criticism&nbsp;<a href="http://www.theparkwaychurch.com/mediaPlayer/#episodeaudio/18">here.</a>&nbsp;Second, let’s notice what the text actually says. It says that anyone who believes and is baptized will be saved (which everyone agrees with), and it says that those who don’t believe will be condemned.&nbsp;<em>Notice that the issue of someone who believes, but hasn’t gotten around to baptism yet isn’t addressed at all.</em>&nbsp;If the author wanted to say that baptism was necessary for salvation he would have said “…but whoever does not believe&nbsp;<em>and is not baptized</em>&nbsp;will be condemned.” Notice the phrase “and is not baptized” is not in the text. It is a logical fallacy (called “denying the antecedent”) to assume a premise that is not in the text. For example, If I say “If its raining outside, the grass will be wet,” you cannot then logically conclude that “If it’s not raining outside, the grass won’t be wet”; perhaps the grass is wet due to the sprinklers or the dew that morning! In the same way you can’t take a text that says, “whoever believes and is baptized will be saved,” and turn it around to say, “whoever does believe but hasn’t been baptized yet will not be saved.” The passage simply doesn’t comment on the fate of a person who does believe the gospel and then gets hit by a bus before being baptized.&nbsp;</p><p style="margin-left:40px;white-space:pre-wrap;" class="">John 3:5&nbsp;- <em>Jesus answered, “Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God.</em></p><p class="" style="white-space:pre-wrap;">What does it mean to be “born of water?” What does the “water” refer to? Well, it can’t refer to natural birth (amniotic fluid being the “water”) because (1) we don’t have any Greek manuscripts that I know of calling natural birth being “born of water.” That is more of a modern, scientific idea. (2) That would mean that babies that die in the womb aren’t saved because they haven’t been physically born, i.e. “born of water.” So does the phrase “born of water” refer to baptism? No. It refers to the prophetic hope of being sprinkled/washed clean by the Spirit in the Old Testament.&nbsp;Ezekiel 36:25-27 says:</p><p style="margin-left:40px;white-space:pre-wrap;" class="">“I will&nbsp;sprinkle clean water on you, and you shall be clean from all your uncleannesses, and from all your idols I will cleanse you. And I will give you&nbsp;a new heart, and a new spirit&nbsp;I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put my&nbsp;Spirit within you, and cause you to walk in my statutes and be careful to obey my rules.”</p><p class="" style="white-space:pre-wrap;">Jesus is saying that if one wants to be saved, they have to experience the new birth mentioned in Ezekiel where God cleanses and regenerates.</p><p class="" style="white-space:pre-wrap;">This interpretation is superior to the “baptism” interpretation for the following reasons:</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>1.</strong>&nbsp;The Ezekiel passage represents both being born again of the Spirit and having your heart washed with the Spirit’s power like water.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>2.</strong>&nbsp;Jesus corrects Nicodemus for not knowing about this passage that he, as “a teacher of Israel,” should know. This makes since if Jesus is referencing a passage in the Old Testament that Nicodemus should have known. It makes no sense for Jesus to rebuke Nicodemus for not knowing about Christian baptism.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>3.</strong>&nbsp;“Water” in the book of John is a constant metaphor for the Holy Spirit (for example, Jesus tells the woman at the well that God will give her “living water” etc.).</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>4.</strong>&nbsp;Jesus plays on words several times in this passage (for example he uses the same Greek word for “wind” and “Spirit” in his conversation with Nicodemus), so it is conceivable that he is using additional non-literal imagery here when talking about water.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>5.&nbsp;</strong>It would have made no sense to Jesus to tell Nicodemus that he has to be baptized because Jesus hasn’t died for sins yet, and “John’s baptism” is not the same as Christian baptism (see&nbsp;Acts 19:1-7).</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>6.</strong>&nbsp;The Greek word “kai” doesn’t just mean “and.” It also can mean “also,” “even,” “namely,” or a host of other things. The phrase could be saying be “born of water, namely the Spirit.” There is a parallel here to&nbsp;Titus 3:5-6 where the Spirit’s work is likened to the effects of water, though it is the Spirit, and not the water, who really does the cleansing.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>7.</strong>&nbsp;The idea of the Spirit cleansing like water was also a popular theme in Judaism. In the Dead Sea Scrolls, 1QS (also called the “Community Rule”) 4:20-21 says, “Then God will purify the deeds of man by his truth and he will cleanse the frame of man. He will eradicate the perverse spirit from within his flesh, and cleanse him by the Holy Spirit from all his wicked deeds.”</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>8.&nbsp;</strong>This phrase is probably a hendiadys. A hendiadys is where two words describe the same thing. If I say, “I am grateful for my wife’s love and affection,” that doesn’t mean that I’m talking about two separate things (love&nbsp;<em>and</em>&nbsp;affection). I am using two different words (love and affection) to talk about one thing, which is my wife’s feelings for me. Or if I say, “despite the rain and weather,” the rain and weather are not two separate things, but one reality: “rainy weather.” In the same way, the Spirit and water are probably supposed to be referring to the same reality: new life.&nbsp;</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>9.</strong>&nbsp;There are several people who are saved/forgiven in the gospels who don’t get baptized. But this would be impossible if Jesus is telling Nicodemus that one must be baptized to be saved. This statement comes before the woman who cries at Jesus’s feet or the criminal on the cross, for example. To say it another way, if Jesus is saying baptism is necessary for salvation, then everyone who lives after he says that statement has to be baptized. Yet several are saved after he says this statement without ever being baptized.</p><p class="" style="white-space:pre-wrap;">So, I think a good way to understand what Jesus is saying is, “how do you, Nicodemus, a teacher of the law, not realize that one must receive the kind of birth that Ezekiel prophesied about? You need your heart sprinkled clean (water) and you need your heart changed (Spirit).”</p><p style="margin-left:40px;white-space:pre-wrap;" class="">1 Peter 3:21&nbsp;- <em>Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ…</em></p><p class="" style="white-space:pre-wrap;">Notice what this passages says actually saves.&nbsp;<em>Not</em>&nbsp;the water! Peter is drawing parallels from the gospel and he is linking it back to the story of Noah which is why water is even mentioned at all. But the text explicitly says that it is not the physical act of baptism (“not as a removal of dirt from the body”) but it is explicitly the faith of the person that saves (the “appeal to God for a good conscience”).</p><p class="" style="white-space:pre-wrap;">This passage says that the baptism is not what saves but the appeal to God in faith for salvation (symbolized by being delivered through the waters of judgment like Noah’s family was). To try to take this passage, pull it out of its symbolic context, and ignore everything else the New Testament says about justification is a serious misinterpretation of this text.</p><p class="" style="white-space:pre-wrap;">Peter’s point is that converting and turning to Christ is what keeps you from being judged like the people who were judged by water in Noah’s day.</p><p style="margin-left:40px;white-space:pre-wrap;" class="">Acts 2:38&nbsp;- <em>And Peter said to them, “Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.</em></p><p style="margin-left:40px;white-space:pre-wrap;" class=""><em>And</em></p><p style="margin-left:40px;white-space:pre-wrap;" class="">Acts 9:17&nbsp;- <em>So Ananias departed and entered the house. And laying his hands on him he said, “Brother Saul, the Lord Jesus who appeared to you on the road by which you came has sent me so that you may regain your sight and be filled with the Holy Spirit.”</em></p><p class="" style="white-space:pre-wrap;">I’ll address these last two verses together since my explanation for them is the same.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>1.&nbsp;</strong>First notice that the first text does not say that those who believe and are not baptized are not saved (again, the logical fallacy of “denying the antecedent”). And neither of these texts say “if one isn’t baptized then they cannot have the Spirit.” They simply comment on the fact that one should believe and be baptized.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>2.&nbsp;</strong>But the biggest thing to note is that the word “baptism” in these verses serves as a metonymy.</p><p class="" style="white-space:pre-wrap;">What is a metonymy?!</p><p class="" style="white-space:pre-wrap;">(Now, pay attention to this next part because it was this following argument that finally freed me from my baptismal legalism.)</p><h2 style="white-space:pre-wrap;"><strong>The Metonymy of “baptism”</strong></h2><p class="" style="white-space:pre-wrap;">A metonymy is where one thing is represented by something that is closely related to it. If I say, “the White House said…” then I have used a metonymy. The White House can’t say anything. It is a building. The “White House” is a way to refer to the president or one of his associates. Or if I use the old adage that, “the pen is mightier than the sword.” I have used two metonymies. The word “pen” refers to ideas and the word “sword” refers to physical force. Notice how “pen” and “sword” serve as representatives for things they are closely related to.</p><p class="" style="white-space:pre-wrap;">This is how baptism is often discussed in the New Testament. It’s not that doing a water ritual is what makes you and God cool. It is faith alone in Christ alone which makes you and God cool. But the word “baptism” is used to represent the event of someone becoming a believer (God and a person being reconciled).</p><p class="" style="white-space:pre-wrap;"><em>Any time the Bible says baptism saves, it is using the term “baptism” as a metonymy. Baptism doesn’t really save anymore than the building known as the “white house” talks. It is a stand-in for trusting Christ.</em></p><p class="" style="white-space:pre-wrap;">Allow me to illustrate this further.</p><p class="" style="white-space:pre-wrap;">If someone is tempted to cheat on their wife and I say, “you should be faithful because you put a ring on her finger.” Notice that it is not the “ring” that makes them married (some married people don’t wear wedding rings and other people who are not married wear rings on their fingers). What I am doing is using the word “ring” as a metonymy. I’m using it to refer to what actually made them married (vows, the pronouncement of the minister, consummation, etc.). The Bible will often use the concept of “baptism” like I use the word “ring.” Baptism doesn’t save you, but it is a way to refer to what actually does save you (the grace of God in Christ through faith). In the same way the Bible says that a woman is “saved” through childbearing (1 Tim 2:15), Does this mean that a woman must have a physical child in order to be saved? Should we ignore everything the Bible says about being saved by faith and Christ and say, “but the Bible says childbearing saves?” No, we should realize that “childbearing,” like baptism, is a metonymy for a bigger reality; it is a metonymy for being a godly woman.</p><h2 style="white-space:pre-wrap;"><strong>Additional problems with thinking baptism saves you</strong></h2><p class="" style="white-space:pre-wrap;">In addition to all the biblical evidence above, there are a lot of other theological problems that come along with thinking baptism regenerates you:</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>1.&nbsp;</strong>There are people in the Bible who are saved and have the Spirit who have not been baptized (see especially&nbsp;Acts 10:44-48).</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>2.&nbsp;</strong>There are people who get baptized and aren’t saved. Not only do we see this all the time in our day-to-day lives (we all know people who were baptized but now live like the devil), but we may even see this with the case of Simon the Magician in the book of Acts. What do you do when someone has been baptized but still seems unchanged? Do you just keep dunking them, hoping that one will take? No. What they need is true saving faith.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>3.&nbsp;</strong>The criminal on the cross was saved though he wasn’t baptized. Now, some will point out that he’s under the Old Covenant and therefore doesn’t need baptism, but that misses the point because (1) the whole point is that he is receiving unmerited grace that requires no action on his part. (2) If he is under the Old Covenant then he has to offer animal sacrifices, clean himself at the temple, obey the Mosaic Law, etc. – all things he obviously isn’t doing. (3) And Jesus’ statement about how you must be “born of water” is said&nbsp;<em>before</em>the criminal dies on the cross. Whether he is in the Old or New Covenant, he still gets saved by grace. That’s the whole point of that text.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>4.&nbsp;</strong>Baptism is something you do and therefore, whether you like the phrase or not, it is a “work,” and the Bible clearly demonstrates that we are not saved by anything we perform (Ephesians 2:8-10). We are not saved by any action or ritual that we can do.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>5.&nbsp;</strong>This would mean that babies who die in infancy go to hell. Follow the logic here: if baptism is&nbsp;<em>necessary</em>&nbsp;for salvation and children are born sinful (Psalm 51:5;&nbsp;Romans 3:9-20;&nbsp;Ephesians 2:1-3) then you have to hold that they are lost. If you believe that God can save them by grace, then you don’t have to hold this view. There is no “age of accountability” other than the age they are at conception. (For more on this topic, read our blog&nbsp;<a href="http://www.theparkwaychurch.com/blog/post/what-happens-to-infants-when-they-die">“What Happens To Infants When They Die?”</a>)</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>6.&nbsp;</strong>If baptism is&nbsp;<em>necessary</em>, then it’s necessary every time. You cannot say that God can still save a child or save someone who hasn’t been baptized “if he wants,” and also say baptism is “necessary.” They are mutually exclusive. You can’t say baptism is necessary, but then say that God can still save someone without it. If he can, then it’s not necessary.</p><p style="margin-left:40px;white-space:pre-wrap;" class=""><strong>7.&nbsp;</strong>What if someone didn’t get all the way under the water? What if the minister who baptized them later becomes apostate? If baptism is&nbsp;<em>necessary</em>&nbsp;for salvation and you don’t do it right, you might go to hell for not practicing the ordinance perfectly. That seems to assume that man was made for baptism and not baptism for man.</p><h2 style="white-space:pre-wrap;"><strong>Conclusion</strong></h2><p class="" style="white-space:pre-wrap;">Now, don’t get me wrong. Baptism is&nbsp;<em>super</em>&nbsp;important. It is commanded of every Christian. If you have not been biblically baptized, you are walking in sin. Baptism is not optional. If someone just refused to be baptized, I would call their salvation into question; not because baptism saves you, but rather they are claiming that they love Christ while refusing to obey him.</p><p class="" style="white-space:pre-wrap;">At the same time, we must always guard the sacred doctrine of justification by faith alone. God elects, God calls, God regenerates, God justifies, God sanctifies, God resurrects. God, and God alone saves you, and your response to that grace is not the same thing as the grace itself. It’s important to recognize that as you are commanded to be baptized, you can rejoice in the fact that you are justified and regenerated before you ever get wet.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1555706178319_15863"><div class="sqs-block-content"><script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
+<script type="text/javascript">
+BGLinks.version = "ESV";
+BGLinks.linkVerses();
+</script></div></div></div><div class="col sqs-col-1 span-1"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1555706178319_10421"><div class="sqs-block-content">&nbsp;</div></div></div></div></div>
+
+    <div class="Blog-meta BlogItem-meta">
+      <!--
+
+      Author
+
+      --><a href="/blog?author=5c93e6900d929737c887b987" class="Blog-meta-item Blog-meta-item--author">Zach Lee</a><!--
+
+      Date
+
+      --><time class="Blog-meta-item Blog-meta-item--date" datetime="2019-01-17">January 17, 2019</time>
+    </div>
+
+    <div class="BlogItem-share">
+
+<div class="Share sqs-share-buttons" data-item-identifier="5cba305aee6eb05d103a1ca3" data-item-path="blog/does-baptism-save-you">
+
+  <div class="Share-buttons">
+
+    <!--
+
+      Facebook
+
+    --><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.theparkwaychurch.com%2Fblog%2Fdoes-baptism-save-you" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="facebook">
+        <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <use xlink:href="/universal/svg/social-accounts.svg#facebook-icon"></use>
+        </svg><span class="Share-buttons-item-label">Facebook</span><span class="Share-buttons-item-count">0</span>
+      </a><!--
+
+      Twitter
+
+    --><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.theparkwaychurch.com%2Fblog%2Fdoes-baptism-save-you&text=I+have+been+baptized+6+times.+If+that+sounds+crazy+to+you%2C+you+are+..." class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="twitter">
+        <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <use xlink:href="/universal/svg/social-accounts.svg#twitter-icon"></use>
+        </svg><span class="Share-buttons-item-label">Twitter</span>
+      </a><!--
+
+      Pinterest
+
+    --><a href="https://www.pinterest.com/pin/create/link/?description=I+have+been+baptized+6+times.+If+that+sounds+crazy+to+you%2C+you+are+...&media=https://images.squarespace-cdn.com/content/v1/5c92b27811f78438347e2476/1555705969339-Q9OBFC5YMLZLWSR1OFJG/android-wallpaper-beach-dawn-189349+%281%29.jpg&url=https%3A%2F%2Fwww.theparkwaychurch.com%2Fblog%2Fdoes-baptism-save-you" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="pinterest">
+        <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <use xlink:href="/universal/svg/social-accounts.svg#pinterest-icon"></use>
+        </svg><span class="Share-buttons-item-label">Pinterest</span><span class="Share-buttons-item-count">0</span>
+      </a><!--
+
+      Simple Like
+
+    --><a href="#" class="Share-buttons-item Share-buttons-item--like" data-item-identifier="5cba305aee6eb05d103a1ca3" data-like-count="5" data-service="squarespace-like">
+        <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <g class="svg-icon">
+            <path d="M39.9,37.8c-7.3,4.8-7.7,6.9-7.9,7.8c-0.2-0.9-0.6-3-7.9-7.8c-16-10.6,1.4-25.4,7.9-11.7C38.5,12.4,55.9,27.3,39.9,37.8z"/>
+          </g>
+        </svg><span class="Share-buttons-item-label"><span class="Share-buttons-item-label-count">0</span> Likes</span>
+      </a>
+    
+
+  </div>
+
+</div>
+</div>
+
+    <section id="comments-5cba305aee6eb05d103a1ca3" class="BlogItem-comments">
+      
+  <div class="squarespace-comments" id="comments-5cba305aee6eb05d103a1ca3" data-item-id="5cba305aee6eb05d103a1ca3" data-public-comment-count="0" data-comment-state="2"></div>
+
+    </section>
+
+  </article>
+
+
+
+
+
+  <nav class="BlogItem-pagination clear">
+
+    
+      <a href="/blog/what-should-protestants-think-about-catholicism" class="BlogItem-pagination-link BlogItem-pagination-link--prev">
+        <svg class="BlogItem-pagination-link-icon" viewBox="0 0 23 48">
+          <g class="svg-icon">
+            <polyline fill="none" stroke-miterlimit="10" points="21.5,1.3 2.6,23.4 21.5,45.7 "/>
+          </g>
+        </svg><!--
+        --><div class="BlogItem-pagination-link-content">
+          <div class="BlogItem-pagination-link-label">Previous</div>
+          <h4 class="BlogItem-pagination-link-title">What Should Protestants Think About Catholicism?</h4>
+          <div class="BlogItem-pagination-link-meta">
+            <!--
+
+            Author
+
+            --><span class="BlogItem-pagination-link-meta-item BlogItem-pagination-link-meta-item--author">The Parkway Church</span><!--
+
+            Date
+
+            --><time class="BlogItem-pagination-link-meta-item BlogItem-pagination-link-meta-item--date" datetime="2019-02-21">February 21, 2019</time>
+          </div>
+        </div>
+      </a>
+    
+
+    
+      <a href="/blog/should-christians-take-medication-for-anxiety-and-depression" class="BlogItem-pagination-link BlogItem-pagination-link--next">
+        <div class="BlogItem-pagination-link-content">
+          <div class="BlogItem-pagination-link-label">Next</div>
+          <h4 class="BlogItem-pagination-link-title">Should Christians Take Medication for Anxiety and Depression?</h4>
+          <div class="BlogItem-pagination-link-meta">
+            <!--
+
+            Author
+
+            --><span class="BlogItem-pagination-link-meta-item BlogItem-pagination-link-meta-item--author">Zach Lee</span><!--
+
+            Date
+
+            --><time class="BlogItem-pagination-link-meta-item BlogItem-pagination-link-meta-item--date" datetime="2019-01-03">January 3, 2019</time>
+          </div>
+        </div><!--
+        --><svg class="BlogItem-pagination-link-icon" viewBox="0 0 23 48">
+          <g class="svg-icon">
+            <polyline fill="none" stroke-miterlimit="10" points="1.5,45.7 20.4,23.5 1.5,1.3 "/>
+          </g>
+        </svg>
+      </a>
+    
+
+  </nav>
+              </section>
+            
+          </main>
+
+        </div>
+      </div>
+
+      <footer class="Footer" role="contentinfo" data-controller="FooterBreakpoints">
+
+  <div class="Footer-inner clear">
+
+    <div class="sqs-layout sqs-grid-12 columns-12 Footer-blocks Footer-blocks--top sqs-alternate-block-style-container empty" data-layout-label="Footer Top Blocks" data-type="block-field" data-updated-on="1471285419835" id="footerBlocksTop"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+
+    <div class="Footer-middle">
+      <div class="Footer-business">
+
+        
+          <div class="Footer-business-info">
+            
+              
+                <div class="Footer-business-info-item Footer-business-info-item--name">The Parkway Church</div>
+                <div class="Footer-business-info-item">5600 Virginia Parkway,</div>
+                <div class="Footer-business-info-item">McKinney, TX, 75071,</div>
+                <div class="Footer-business-info-item Footer-business-info-item--country">United States</div>
+              
+            
+            
+              <a href="tel:9723467175" rel="tel" class="Footer-business-info-item Footer-business-info-item--phone">9723467175</a>
+              <a href="mailto:info@theparkwaychurch.com" title="info@theparkwaychurch.com" target="_blank" class="Footer-business-info-item Footer-business-info-item--email">info@theparkwaychurch.com</a>
+            
+          </div>
+        
+
+        
+          
+            <div class="Footer-business-hours">
+              <div class="Footer-business-hours-heading">Hours</div>
+              <div class="Footer-business-hours-item">Mon 9am - 5pm</div>
+              <div class="Footer-business-hours-item">Tue 9am - 5pm</div>
+              <div class="Footer-business-hours-item">Wed 9am - 5pm</div>
+              <div class="Footer-business-hours-item">Thu 9am - 5pm</div>
+              
+              
+              <div class="Footer-business-hours-item">Sun 8:30am - 7:30pm</div>
+            </div>
+          
+        
+
+      </div>
+
+      <div class="sqs-layout sqs-grid-12 columns-12 Footer-blocks Footer-blocks--middle sqs-alternate-block-style-container empty" data-layout-label="Footer Middle Blocks" data-type="block-field" data-updated-on="1556745715776" id="footerBlocksMiddle"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+
+      
+  <nav class="Footer-nav" data-content-field="navigation">
+
+    <div class="Footer-nav-group"><div class="Footer-nav-folder-heading">About</div>
+
+      
+
+        
+          
+            <a href="/leadership" class="Footer-nav-folder-item">Leadership</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/history" class="Footer-nav-folder-item">History</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/beliefs" class="Footer-nav-folder-item">Beliefs</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/contact" class="Footer-nav-folder-item">Contact</a>
+          
+        
+
+      
+
+    </div><div class="Footer-nav-group"></div><div class="Footer-nav-group"><div class="Footer-nav-folder-heading">Gatherings</div>
+
+      
+
+        
+          
+            <a href="/service" class="Footer-nav-folder-item">Worship</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/tec" class="Footer-nav-folder-item">TEC</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/groups" class="Footer-nav-folder-item">Groups</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/children" class="Footer-nav-folder-item">Children</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/calendar" class="Footer-nav-folder-item">Calendar</a>
+          
+        
+
+      
+
+    </div><div class="Footer-nav-group"></div><div class="Footer-nav-group"><div class="Footer-nav-folder-heading">Resources</div>
+
+      
+
+        
+          
+            <a href="/sermons" class="Footer-nav-folder-item">Sermons</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/tecrecordings" class="Footer-nav-folder-item">Classes</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/blog" class="Footer-nav-folder-item">Blog/Articles</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/music" class="Footer-nav-folder-item">Music</a>
+          
+        
+
+      
+
+        
+          
+            <a href="/advent-devotional-guide" class="Footer-nav-folder-item">Advent</a>
+          
+        
+
+      
+
+    </div><div class="Footer-nav-group"></div>
+
+  </nav>
+
+    </div>
+
+    <div class="sqs-layout sqs-grid-12 columns-12 Footer-blocks Footer-blocks--bottom sqs-alternate-block-style-container" data-layout-label="Footer Bottom Blocks" data-type="block-field" data-updated-on="1646150400233" id="footerBlocksBottom"><div class="row sqs-row"><div class="col sqs-col-6 span-6"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_18_1471014531379_92833"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">© The Parkway Church 2022</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54" id="block-yui_3_17_2_1_1587417206298_10265"><div class="sqs-block-content">
+
+
+
+<div class="sqs-svg-icon--outer social-icon-alignment-left social-icons-color-white social-icons-size-small social-icons-style-regular " >
+  <style>
+    #block-yui_3_17_2_1_1587417206298_10265 .social-icons-style-border .sqs-svg-icon--wrapper {
+      
+        box-shadow: 0 0 0 2px inset;
+      
+      border: none; 
+    }
+  </style>
+  <nav class="sqs-svg-icon--list">
+    <a href="https://twitter.com/parkwaymckinney" target="_blank" class="sqs-svg-icon--wrapper twitter-unauth" aria-label="Twitter">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#twitter-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#twitter-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://www.facebook.com/parkwaymckinney/" target="_blank" class="sqs-svg-icon--wrapper facebook-unauth" aria-label="Facebook">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#facebook-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#facebook-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://www.youtube.com/channel/UCjcFg9l8VP7Ro-tiew0L2xw/" target="_blank" class="sqs-svg-icon--wrapper youtube-unauth" aria-label="YouTube">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#youtube-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#youtube-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://open.spotify.com/playlist/3Tw6j4yR4FY8Quwm7SoA7X?si=KBImL6msQfWE53oazM7y8w" target="_blank" class="sqs-svg-icon--wrapper spotify-unauth" aria-label="Spotify">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#spotify-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#spotify-unauth-mask"></use>
+        </svg>
+      </div>
+    </a>
+  </nav>
+</div>
+</div></div></div><div class="col sqs-col-6 span-6"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1556745546029_16259"><div class="sqs-block-content">&nbsp;</div></div></div></div></div>
+
+  </div>
+
+</footer>
+
+
+    </div>
+
+    <script src="https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/353/scripts/site-bundle.js" type="text/javascript"></script>
+
+    <script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
+<script type="text/javascript">
+BGLinks.version = "ESV";
+BGLinks.linkVerses();
+</script><script data-sqs-type="imageloader-bootstrapper">if(window.ImageLoader) window.ImageLoader.bootstrap({}, document);</script><script>Squarespace.afterBodyLoad(Y);</script><svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg"><symbol id="twitter-unauth-icon" viewBox="0 0 64 64"><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"/></symbol><symbol id="twitter-unauth-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"/></symbol><symbol id="facebook-unauth-icon" viewBox="0 0 64 64"><path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"/></symbol><symbol id="facebook-unauth-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"/></symbol><symbol id="youtube-unauth-icon" viewBox="0 0 64 64"><path d="M46.7,26c0,0-0.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C38.3,21.4,32,21.4,32,21.4h0 c0,0-6.3,0-10.5,0.3c-0.6,0.1-1.9,0.1-3,1.3c-0.9,0.9-1.2,3-1.2,3S17,28.4,17,30.9v2.3c0,2.4,0.3,4.9,0.3,4.9s0.3,2.1,1.2,3 c1.1,1.2,2.6,1.2,3.3,1.3c2.4,0.2,10.2,0.3,10.2,0.3s6.3,0,10.5-0.3c0.6-0.1,1.9-0.1,3-1.3c0.9-0.9,1.2-3,1.2-3s0.3-2.4,0.3-4.9 v-2.3C47,28.4,46.7,26,46.7,26z M28.9,35.9l0-8.4l8.1,4.2L28.9,35.9z"/></symbol><symbol id="youtube-unauth-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M47,33.1c0,2.4-0.3,4.9-0.3,4.9s-0.3,2.1-1.2,3c-1.1,1.2-2.4,1.2-3,1.3 C38.3,42.5,32,42.6,32,42.6s-7.8-0.1-10.2-0.3c-0.7-0.1-2.2-0.1-3.3-1.3c-0.9-0.9-1.2-3-1.2-3S17,35.6,17,33.1v-2.3 c0-2.4,0.3-4.9,0.3-4.9s0.3-2.1,1.2-3c1.1-1.2,2.4-1.2,3-1.3c4.2-0.3,10.5-0.3,10.5-0.3h0c0,0,6.3,0,10.5,0.3c0.6,0.1,1.9,0.1,3,1.3 c0.9,0.9,1.2,3,1.2,3s0.3,2.4,0.3,4.9V33.1z M28.9,35.9l8.1-4.2l-8.1-4.2L28.9,35.9z"/></symbol><symbol id="spotify-unauth-icon" viewBox="0 0 64 64"><path d="M32,16c-8.8,0-16,7.2-16,16c0,8.8,7.2,16,16,16c8.8,0,16-7.2,16-16C48,23.2,40.8,16,32,16 M39.3,39.1c-0.3,0.5-0.9,0.6-1.4,0.3c-3.8-2.3-8.5-2.8-14.1-1.5c-0.5,0.1-1.1-0.2-1.2-0.7c-0.1-0.5,0.2-1.1,0.8-1.2 c6.1-1.4,11.3-0.8,15.5,1.8C39.5,38,39.6,38.6,39.3,39.1 M41.3,34.7c-0.4,0.6-1.1,0.8-1.7,0.4c-4.3-2.6-10.9-3.4-15.9-1.9 c-0.7,0.2-1.4-0.2-1.6-0.8c-0.2-0.7,0.2-1.4,0.8-1.6c5.8-1.8,13-0.9,18,2.1C41.5,33.4,41.7,34.1,41.3,34.7 M41.5,30.2 c-5.2-3.1-13.7-3.3-18.6-1.9c-0.8,0.2-1.6-0.2-1.9-1c-0.2-0.8,0.2-1.6,1-1.9c5.7-1.7,15-1.4,21,2.1c0.7,0.4,0.9,1.3,0.5,2.1 C43.1,30.4,42.2,30.6,41.5,30.2"/></symbol><symbol id="spotify-unauth-mask" viewBox="0 0 64 64"><path d="M39,37.7c-4.2-2.6-9.4-3.2-15.5-1.8c-0.5,0.1-0.9,0.7-0.8,1.2c0.1,0.5,0.7,0.9,1.2,0.7c5.6-1.3,10.3-0.8,14.1,1.5 c0.5,0.3,1.1,0.1,1.4-0.3C39.6,38.6,39.5,38,39,37.7z M40.9,33c-4.9-3-12.2-3.9-18-2.1c-0.7,0.2-1,0.9-0.8,1.6 c0.2,0.7,0.9,1,1.6,0.8c5.1-1.5,11.6-0.8,15.9,1.9c0.6,0.4,1.4,0.2,1.7-0.4C41.7,34.1,41.5,33.4,40.9,33z M0,0v64h64V0H0z M32,48 c-8.8,0-16-7.2-16-16c0-8.8,7.2-16,16-16c8.8,0,16,7.2,16,16C48,40.8,40.8,48,32,48z M43,27.6c-5.9-3.5-15.3-3.9-21-2.1 c-0.8,0.2-1.2,1.1-1,1.9c0.2,0.8,1.1,1.2,1.9,1c4.9-1.5,13.4-1.2,18.6,1.9c0.7,0.4,1.6,0.2,2.1-0.5C43.9,29,43.7,28,43,27.6z"/></symbol></svg>
+
+  </body>
+</html>

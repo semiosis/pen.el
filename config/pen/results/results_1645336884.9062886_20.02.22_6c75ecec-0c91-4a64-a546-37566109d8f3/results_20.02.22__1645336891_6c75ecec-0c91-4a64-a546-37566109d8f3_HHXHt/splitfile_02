@@ -1,0 +1,9 @@
+
+
+import re
+
+# find all words that start with a capital letter
+# and are followed by zero or more lowercase letters
+# (the ? mark after the curly brackets makes it so that
+# the regex engine makes the group optional)
+# and end with a period, question mark

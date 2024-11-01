@@ -1,0 +1,9 @@
+ do
+
+From the shell:
+
+$ ghc -fforce-recomp --make helloworld.hs
+$ ./helloworld
+Hello, world!
+
+The following example shows a state monad in action. In

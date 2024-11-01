@@ -1,0 +1,69 @@
+task: "Generate the contents of a new file"
+doc: "Prompt for the probable contents of a file with this path and sibling files"
+task: code project filesystem
+prompt-version: 3
+subprompts:
+  - dirs: |-
+        $ ls -d */ # list directories here
+        <ls dirs here output>
+        
+prompt: |+
+    $ pwd
+    <working directory>
+
+    $ ls -a
+    <ls output>
+
+    <dirs>
+
+    $ ls **/*
+    <ls star output>
+
+    $ cat <q:filename> <<EOD
+    <preceding text>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+# This means that even a long-completion can't change the stop-sequence
+force-stop-sequence: EOD
+stop-sequences:
+- EOD
+cache: on
+vars:
+- "preceding text"
+- "filename"
+- "working directory"
+- "ls output"
+- "ls star output"
+- "ls dirs here output"
+var-defaults:
+- "(pen-preceding-text)"
+- "(pen-current-filename-maybe)"
+- "(pen-snc \"pwd\")"
+- "(pen-snc \"ls -a | head -n 20\")"
+- "(pen-snc \"ls **/* | head -n 20\")"
+- "(pen-snc \"ls -d */ | head -n 10\")"
+examples:
+- ""
+- ".gitignore"
+- "/home/mullikine/codex-scaffolding-demo"
+- ".\nLICENSE.md"
+- |-
+    contracts/Migrate.sol
+    migrations/doit.js
+    node_modules/
+    src/main.js
+    test/test-main.js
+- |-
+    contracts/
+    migrations/
+    node_modules/
+    src/
+    test/
+filter: off
+info: off
+completion: on
+insertion: on
+# This forces the action, and works fine
+# action: pen-complete-insert

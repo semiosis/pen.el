@@ -1,0 +1,8 @@
+# name: trypass
+# group: sot
+# key: tp
+# --
+try:
+  ${0:pass}
+except:
+  pass

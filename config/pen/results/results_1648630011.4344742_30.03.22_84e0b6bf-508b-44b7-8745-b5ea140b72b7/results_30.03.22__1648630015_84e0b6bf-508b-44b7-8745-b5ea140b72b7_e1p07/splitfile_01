@@ -1,0 +1,7 @@
+
+import qualified Data.Text.IO as TextIO
+
+import Data.Text (Text(..))
+import Data.Text.IO (putStr(..), getLine)
+
+import Data.Maybe (fromMaybe)

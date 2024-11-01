@@ -1,0 +1,2 @@
+(as-> {} (assoc % :a 1)
+  (assoc % :b 2))

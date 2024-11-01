@@ -1,0 +1,7 @@
+Psalm 51
+    vim +/"PSALM 51" "$MYGIT/mullikine/bible/KJV.txt"
+    vim +/"5Behold, I was shapen in iniquity; and in sin did my mother conceive me." "$MYGIT/mullikine/bible/KJV.txt"
+
+    Behold, we were shapen in asymmetry; and
+    in imperfection did the universe conceive
+    us.

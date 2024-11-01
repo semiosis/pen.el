@@ -1,0 +1,2 @@
+frame
+    vim +/"^frame" "$NOTES/ws/computing/glossary.txt"

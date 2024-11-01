@@ -1,0 +1,11 @@
+pen-mark-lines ()
+  (interactive)
+  (let ((lines-context 2))
+
+    (if (not (listp current-prefix-arg))
+        (setq lines-context (prefix-numeric-value current-prefix-arg)))
+
+    (if (pen-selected)
+        (call-interactively 'kill-region))
+    (let ((prefix (pen-preceding-lines lines-context))
+          (suffix (pen-proceeding-lines lines-context)))

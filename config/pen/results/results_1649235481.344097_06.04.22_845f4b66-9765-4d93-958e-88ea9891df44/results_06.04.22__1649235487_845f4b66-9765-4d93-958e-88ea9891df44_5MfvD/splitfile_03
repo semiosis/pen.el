@@ -1,0 +1,1 @@
+""I/O system" refers to the way a program interacts with the outside world. In Haskell, it is a library called "System.IO". It is the basis for all other libraries. It is the lowest level of the library hierarchy."

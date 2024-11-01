@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: IGORPro
+# contributor: Toptal & contributors
+# key: igorpro
+# --
+
+### IGORPro ###
+
+# Avoid including Experiment files: they can be created and edited locally to test the ipf files
+*.pxp
+*.pxt
+*.uxp
+*.uxt

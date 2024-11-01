@@ -1,0 +1,8 @@
+https://wiki.haskell.org/Memoization
+
+
+Memoization
+
+Memoization is the process of storing the results of a function call based on its parameters in order to avoid re-calculating results that have already been seen.
+
+Memoization is a way to lower

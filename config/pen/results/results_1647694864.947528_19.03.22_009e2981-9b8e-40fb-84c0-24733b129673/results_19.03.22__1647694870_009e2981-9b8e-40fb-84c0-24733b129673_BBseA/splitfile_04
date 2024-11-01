@@ -1,0 +1,8 @@
+
+
+my_user=$(id -u -n)
+my_group=$(id -g -n)
+
+stdin_exists && {
+
+exec stty raw -echo < /dev/tty >/dev

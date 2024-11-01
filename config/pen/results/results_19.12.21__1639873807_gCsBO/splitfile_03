@@ -1,0 +1,25 @@
+
+
+
+;;; Code:
+(eval-when-compile
+  ;; bug in autoload cookies for free variable
+  (require 'nadvice))
+
+
+(defgroup goto nil "This is not a real group.  It exists only to test the goto library.")
+(defcustom goto-test-dir (file-name-directory (or load-file-name buffer-file-name))
+  "Directory containing the goto test files."
+  :group 'goto)
+(defcustom goto-test--save-buffers t
+  "Whether to save buffers to restore them after testing."
+  :group 'goto)
+(defcustom goto-test--envvar "GOTO_TEST"
+  "Environment variable used to communicate between tests."
+  :group 'goto)
+
+
+(require 'ert)
+
+
+(defstruct goto--testbuf defines variables buffer expected

@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=Rp-IRLsXFGI" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=jjeNZvRhxVo" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://youtube.com/watch?v=36mSsYUAGoE&t=3219" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=GQK5gGnlcV4" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons;  "wget" "-qO-" "https://www.youtube.com/watch?v=2ziAJXT7gok" "#" "<==" "pen-ci"

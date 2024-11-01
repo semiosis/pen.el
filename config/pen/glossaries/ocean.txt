@@ -1,0 +1,49 @@
+compute to data
+compute-to-data
+ocean compute-to-data
+    Compute-to-Data resolves the tradeoff
+    between the benefits of using private
+    data, and the risks of exposing it.
+    
+    It does so by providing a means to
+    exchange data while preserving privacy by
+    allowing the data to stay on-premise with
+    data publishers, yet allows data consumers
+    to run compute jobs on data — all through
+    the Ocean Market interface.
+
+    Our response to solving the current
+    tradeoff between benefits of using the
+    private data and the risks of exposing it.
+    
+    Compute-to-Data lets data stay on-premise,
+    while allowing 3rd parties to run specific
+    compute jobs on it, like building AI
+    models.
+
+    https://blog.oceanprotocol.com/compute-to-data-is-now-available-in-ocean-market-58868be52ef7
+
+ocean.py
+    - Publish data services: downloadable
+      files or compute-to-data.
+
+      Ocean creates a new ERC20 datatoken for
+      each dataset / data service.
+
+      https://github.com/ethereum/EIPs/blob/7f4f0377730f5fc266824084188cc17cf246932e/EIPS/eip-20.md
+
+    - Mint datatokens for the service
+
+    - Sell datatokens via an
+      OCEAN-datatoken Balancer pool (for auto
+      price discovery), or for a fixed price
+
+    - Stake OCEAN on datatoken pools
+
+    - Consume datatokens, to access the service
+
+    - Transfer datatokens to another
+      owner, and all other ERC20 actions
+      using web3.py etc.
+
+      https://web3py.readthedocs.io/en/stable/examples.html#working-with-an-erc20-token-contract

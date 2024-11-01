@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "I" "John" "4:2" "#" "<==" "zsh"
+cd /;  "I" "Peter" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "I" "Corinthians" "4-8" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "I" "Corinthians" "4:5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Corinthians" "4:9-13" "#" "<==" "zsh"

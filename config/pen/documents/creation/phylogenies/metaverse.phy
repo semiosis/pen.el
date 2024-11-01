@@ -1,0 +1,18 @@
+name: "Metaverse"
+
+creations:
+- cosmogony:
+  - ext: cosmog
+  - repo: cosmogonies
+  - next:
+    - protoverse
+
+- protoverse:
+  - ext: protov
+  - repo: protoverses
+  - next:
+    - metaverse
+
+- actual:
+  - ext: metav
+  - repo: metaverses

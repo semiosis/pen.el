@@ -1,0 +1,10 @@
+
+short_description: A game about tea.
+EOD
+
+cat draft.metaverse-description-2 <<EOD
+name: Mad TeaParty 2
+short_description: A game about tea.
+EOD
+
+<|endoftext|>Q

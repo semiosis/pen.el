@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds" "#" "<==" "pen-ci"
+cd /root/.pen/documents/agenda;  "elinks" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "bash"
+cd /root/.pen/documents/agenda;  "elinks" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "bash"
+cd /root/.pen/documents/agenda;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "pen-ci"
+cd /root/.pen/documents/agenda;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "/root/.pen/tmp/tf_temp72BlBOX.html" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "-dump-width" "78" "--no-numbering" "--dump" "https://vision.org.au/the-word-for-today-reading/" "#" "<==" "pen-ci"

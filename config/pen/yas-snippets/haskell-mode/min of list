@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: min of list
+# group: list math
+# key: min
+# --
+min(list)

@@ -1,0 +1,5 @@
+cd /root/notes;  "vo" "Matthew" "6:27" "#" "<==" "zsh"
+cd /root/notes;  "vo" "Matthew" "6:27" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "vo" "Psalm" "88" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "vo" "Psalm" "88" "#" "<==" "zsh"
+cd /root/notes;  "vo" "Psalm" "31" "#" "<==" "zsh"

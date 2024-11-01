@@ -1,0 +1,17 @@
+
+
+for n in $extra_commands; do $n $1 ; done
+
+exit 0
+
+fi
+
+fi
+
+;;
+
+    -s) {
+
+shift
+
+if test "$parent_sn

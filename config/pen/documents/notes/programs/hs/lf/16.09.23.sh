@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "lf" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "lf" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "lf" "#" "<==" "strace"
+cd /root/.emacs.d/host/pen.el/src;  "lf" "#" "<==" "strace"
+cd /root/.emacs.d/host/pen.el/src;  "lf" "#" "<==" "strace"
+cd /root/.emacs.d/host/pen.el/src;  "lf" "#" "<==" "zsh"

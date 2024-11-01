@@ -1,0 +1,1408 @@
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sun, 12 May 2024 23:30:49 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"c13483031c19d9023243b8ba5bd531c2"
+X-Frame-Options: SAMEORIGIN
+Vary: Origin, Cookie
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Expires: Sun, 12 May 2024 23:39:04 GMT
+Cache-Control: max-age=500
+X-Varnish: 778887848 779195614
+Age: 5
+Via: 1.1 varnish (Varnish/6.6)
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+	<script>
+	 function testWebP(evt) {
+		 const htmlTag = document.querySelector('html');
+		 if (evt && evt.type === 'load' && evt.target.width === 1) {
+			 htmlTag.classList.add('webp');
+		 } else {
+			 htmlTag.classList.add('no-webp');
+		 }
+	 }
+	 const webpTestImg = new Image();
+	 webpTestImg.onload = testWebP;
+	 webpTestImg.onerror = testWebP;
+	 webpTestImg.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
+	</script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, IE=EmulateIE7" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="static" content="https://d3o8vwpyaorolj.cloudfront.net/static/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<link rel="canonical" href="https://www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/">
+
+  <meta class="elastic" name="search_rating" content="200">
+  
+  
+  
+  <title>Cherishing Jesus, Our True Treasure | Revive Our Hearts Blog | Revive Our Hearts</title>
+  
+  <meta name="description" content="The deepest desires of our soul can only be satisfied by God alone. But how?">
+
+	
+		
+			
+		
+	
+
+
+
+  
+  
+  
+
+
+<meta property="og:site_name" content="Revive Our Hearts">
+
+
+<meta property="og:title" content="Cherishing Jesus, Our True Treasure">
+<meta property="og:image" content="https://df6yevl24pl4a.cloudfront.net/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg">
+<meta property="og:description" content="The deepest desires of our soul can only be satisfied by God alone. But how?">
+<meta property="og:url" content="https://www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/">
+
+<meta property="fb:app_id" content="242322817029" />
+<meta property="og:type" content="website">
+<meta property="twitter:domain" content="www.reviveourhearts.com">
+<meta property="twitter:card" content="summary_large_image">
+
+
+<meta property="twitter:title" content="Cherishing Jesus, Our True Treasure">
+<meta property="twitter:description" content="The deepest desires of our soul can only be satisfied by God alone. But how?">
+<meta property="twitter:image" content="https://df6yevl24pl4a.cloudfront.net/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg">
+
+
+<meta property="twitter:site" content="@reviveourhearts">
+
+  
+  
+
+<link rel="icon" type="image/png" href="https://d3o8vwpyaorolj.cloudfront.net/static/gui/favicon.1e5ac17d41a1.png" />
+<link rel="apple-touch-icon-precomposed" href="https://d3o8vwpyaorolj.cloudfront.net/static/gui/mark-114x114.png">
+
+			
+			
+			
+				<link rel="preload" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/progress-bar-notifications.dac1dd83ac26.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/progress-bar-notifications.dac1dd83ac26.css"></noscript>
+
+			
+			
+		
+
+  <link rel="preconnect" href="https://d3o8vwpyaorolj.cloudfront.net/static/" crossorigin>
+  <link rel="preconnect" href="https://df6yevl24pl4a.cloudfront.net/" crossorigin>
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+  
+  <link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/base.50a2499a43e0.css" type="text/css" media="screen"><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/base.c92535ef5966.css" type="text/css" media="screen and (min-width: 981px)">
+  <link rel="preload" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/postera.df0aa5d818ac.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/postera.df0aa5d818ac.css"></noscript>
+
+  
+	<link rel="preload" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/postera-content.9934fd85e7bf.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/postera-content.9934fd85e7bf.css"></noscript>
+
+
+  
+  <link rel="preload" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/print.65e965763c4a.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/print.65e965763c4a.css"></noscript>
+
+  
+  
+
+
+<link rel="preload" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/blog-base.4dc737ad722f.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/blog-base.4dc737ad722f.css"></noscript>
+
+
+
+  <link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/post-detail.7962bfad7f07.css" type="text/css">
+  
+	<link rel="preload" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/related-posts.bf8aa3819b2d.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/related-posts.bf8aa3819b2d.css"></noscript>
+
+  
+
+  
+  
+
+  
+  <link rel="preload" href="https://use.typekit.net/vjx4jzp.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  
+  <meta name="google-site-verification" content="pA_z7scNJXosZPWsAZbpPJCz-4NLJJwNCJ8mLTC3UfE" /><!--
+    <PageMap xmlns="http://www.google.com/schemas/sitemap-pagemap/1.0"><DataObject type="document"><Attribute name="title">Cherishing Jesus, Our True Treasure</Attribute><Attribute name="author">Heather Cofer</Attribute><Attribute name="description">The deepest desires of our soul can only be satisfied by God alone. But how?</Attribute><Attribute name="slug">cherishing-jesus-our-true-treasure</Attribute><Attribute name="date">2020-06-17</Attribute><Attribute name="date-day">17</Attribute><Attribute name="date-month">6</Attribute><Attribute name="date-year">2,020</Attribute><Attribute name="topic">Surrender</Attribute></DataObject><DataObject type="thumbnail"><Attribute name="src" value="https://www.reviveourhearts.comhttps://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg__80x80_q90_subsampling-2.jpg" /><Attribute name="width" value="80" /><Attribute name="height" value="40" /></DataObject></PageMap>
+
+  --><meta class="elastic" name="thumbnail" content="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg__240x240_q90_subsampling-2.jpg"><meta class="elastic" name="thumbnail_webp" content="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg__240x240_q90_subsampling-2.jpg.webp"><meta class="elastic" name="slug" content="cherishing-jesus-our-true-treasure"><meta class="elastic" name="date" content="2020-06-17"><meta class="elastic" name="date_day" content="17"><meta class="elastic" name="date_month" content="6"><meta class="elastic" name="date_year" content="2020"><meta class="elastic" name="description" content="The deepest desires of our soul can only be satisfied by God alone. But how?"><meta class="elastic" name="section" content="blog"><meta class="elastic" name="subsection" content="blog"><meta class="elastic" name="topics" content="Surrender"><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/disqus-extras.4228f4183adb.css" type="text/css" media="print"><link rel="preload" fetchpriority="high" as="image" href="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg__815x407_q90_crop_subsampling-2_upscale.jpg.webp" type="image/webp"><meta class="elastic" name="content_type" content="blog post"><meta class="elastic" name="pub_date" content="June 17, 2020">
+  
+  
+  
+
+  <link rel="preload" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/popity.ded0d3233d3b.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/css/popity.ded0d3233d3b.css"></noscript>
+
+
+</head>
+
+<body id="body" class="blog-detail lang-- content-padding main-lang--en" >
+	
+	
+
+  
+
+
+	<img loading="lazy" style="opacity: 0; position: absolute; top: 0; left: -1000px;" src="https://df6yevl24pl4a.cloudfront.net/filer_public/58/62/5862d40d-d512-4634-ba0b-0e71d24e9a0a/roh-share.webp" alt="" />
+	
+
+	
+	
+	
+		
+	
+	
+	
+
+
+
+		
+		
+			
+					
+					
+<style>
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: %; }
+  }
+</style>
+<div id="campaign-site-notification-simple-2024 FYE Progress Bar" 
+  class="notification-div campaign-site-notification"
+  data-site-notification="campaign-13"
+  data-cookie-expire="48">
+  <div class="wrap site-notification" id="notification">
+    <div class="inner">
+      <p>
+        <span class="mobile-text">Help us finish the ministry year strong by giving toward our $838,000 need.</span>
+        <span class="desktop-text">Help us finish the ministry year strong by giving toward our $838,000 need.</span>
+      </p>
+      <div class="meter" data-percent="16%">
+        <span class="alt-title">16%</span>
+        <span class="progress" style="width: 16%">
+          <span class="alt-title">16%</span>
+        </span>
+      </div>
+      
+      <div class="more">
+        <a href="https://www.reviveourhearts.com/donate/serve-together/" class="btn btn-sm">
+          <span class="mobile-text">
+            
+            Donate Now
+          </span>
+          <span class="desktop-text">
+            Donate Now
+          </span>
+        </a>
+      </div>
+      
+    </div>
+    <a href="#" class="remove" title="Close" aria-label="Close"><svg class="icon-close"><use xlink:href="#x" /></svg></a>
+  </div>
+</div>
+					
+			
+
+			
+			
+			
+			
+		
+	
+	
+	
+	
+
+	
+	<div class="page">
+		
+		
+		
+		<div id="main-nav" class="main-nav headroom--top" role="navigation">
+			
+			<div class="navbar-main-wrap page-header">
+				<div class="branding">
+					<a href="/" title="Revive Our Hearts" aria-label="Revive Our Hearts' %}">
+						
+						
+						
+						<svg class="logo" width="240" height="100">
+							<use xlink:href="#roh-logo"/>
+						</svg>
+						
+						
+					</a>
+				</div>
+				
+				<div class="nav nav-desktop ">
+					<ul id="global-nav">
+						
+						<li id="parent-listen" class="dropdown">
+							<a href="/podcast/">Podcasts</a>
+							<ul class="dropdown-menu hidden-xs" style="display: none;">
+								
+								<li class="child descendant">
+									<a href="/podcast/revive-our-hearts/">Revive Our Hearts</a>
+								</li>
+								<li class="child descendant">
+									<a href="/podcast/weekend/">Revive Our Hearts Weekend</a>
+								</li>
+								<li id="parent-grounded" class="child descendant">
+									<a href="/podcast/grounded/">Grounded</a>
+								</li>
+								<li class="child descendant">
+									<a href="/podcast/seeking-him/">Seeking Him</a>
+								</li>
+								<li class="child descendant">
+									<a href="/podcast/the-deep-well/">The Deep Well</a>
+								</li>
+								<li class="child descendant">
+									<a href="/podcast/true-girl/">True Girl</a>
+								</li>
+								
+								<li class="child descendant">
+									<a href="/podcast/bible-studies/">Revive Our Hearts Bible Studies</a>
+								</li>
+								<li class="child descendant">
+									<a href="https://itstrueyou.com/videocast/" target="_blank">True You Videocast</a>
+								</li>
+								
+								<li class="divider"></li>
+								<li class="child descendant">
+									<a href="/app/">Revive Our Hearts App</a>
+								</li>
+								<li id="" class="parent highlight">
+									<a href="/listen">How to Listen</a>
+								</li>
+								<li class="child descendant">
+									<a href="/radio/listen-in-your-area/">Listen on the Radio</a>
+								</li>
+								<li class="child descendant">
+									<a href="/alexa/">Listen on Alexa</a>
+								</li>
+								<li class="child descendant">
+									<a href="/google-home/">Listen on Google Home</a>
+								</li>
+							</ul>
+						</li>
+
+						<li id="parent-blogs" class="dropdown">
+							<a href="/blog">Blogs</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/blog">Revive Our Hearts</a>
+								</li>
+								<li>
+									<a href="/bible-project/blog">CSB Bible Project</a>
+								</li>
+								<li>
+									<a href="/40-days-praying-your-nation/blog">40 Days of Praying for Your Nation</a>
+								</li>
+							</ul>
+						</li>
+						
+						
+						
+						<li id="parent-blogs" class="dropdown">
+							<a href="/leaders/">Leaders</a>
+							<ul class="dropdown-menu hidden-xs" style="display: none;">
+								
+								<li id="parent-blogs" class="child descendant">
+									<a href="/ambassadors/">Ambassadors</a>
+								</li>
+								
+								
+								<li class="child descendant"><a href="/leaders/">Women's Ministry Leaders</a></li>
+								
+								<li class="child descendant">
+									<a href="/toolkit/">Event Toolkit</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li id="parent-studies" class="dropdown">
+							<a href="/studies/">Studies</a>
+							<ul class="dropdown-menu hidden-xs" style="display: none;">
+								<li id="parent-online" class="child descendant">
+									<a href="/study/biblical-womanhood/">Biblical Womanhood</a>
+								</li>
+								<li id="parent-refresh" class="child descendant">
+									<a href="/study/women-of-the-bible/">Women of the Bible</a>
+								</li>
+								<li id="parent-refresh" class="child descendant">
+									<a href="/study/revival/">Revival</a>
+								</li>
+								<li id="parent-refresh" class="child descendant">
+									<a href="/study/bible-study/">Bible Study</a>
+								</li>
+							</ul>
+						</li>
+						<li id="parent-store">
+							<a href="https://store.reviveourhearts.com" class="disabled">Store</a>
+						</li>
+						
+						<li id="parent-more">
+							<button class="open-nav">More...</button>
+						</li>
+						<li id="parent-donate" class="dropdown highlight">
+							<a class="dropdown-toggle disabled btn" data-toggle="dropdown" href="/donate/online/">
+								Donate
+							</a>
+							<ul class="dropdown-menu hidden-xs" style="display: none;">
+								<li class="child descendant" id="parent-online">
+									<a href="/donate/">Donation Information</a>
+								</li>
+								<li class="child descendant" id="parent-become-a-revive_partner">
+									<a href="/donate/revive-partner/">
+										Become a Revive Partner
+									</a>
+								</li>
+								<li class="child descendant">
+									<a href="/donate/support-our-staff">Support a Staff Member</a>
+								</li>
+								<li class="divider"></li>
+								<li class="child descendant" id="parent-4-distinctives">
+									<a href="/donate/4-distinctives">Our 4 Distinctives</a>
+								</li>
+								<li class="child descendant" id="parent-core-stewardship-principles">
+									<a href="/donate/core-stewardship-principles">Core Stewardship Principles</a>
+								</li>
+								<li class="child descendant" id="parent-stocks-and-mutual-funds">
+									<a href="/donate/stocks/">Stocks and Mutual Funds</a>
+								</li>
+								<li class="child descendant" id="parent-wills-trusts">
+									<a href="/donate/wills-trusts/">Wills &amp; Trusts</a>
+								</li>
+								<li class="child descendant" id="parent-other-ways-to-give">
+									<a href="/donate/mail-phone/">Other Ways to Give</a>
+								</li>
+								<li class="child descendant" id="parent-previous-offers">
+									<a href="/donate/previous-offers/">Previous Offers</a>
+								</li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				
+				
+				<div class="nav-tools-wrap">
+					<span class="nav nav-tools">
+
+						<a class="btn invisible-lg menu-donate-btn" href="/donate/">Donate</a>
+
+						<button id="search_button" type="button" aria-expanded="false" aria-label="Open Menu" data-modal-open="search-modal">
+							<span class="hidden">Search</span>
+							<svg class="icon search" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"/></svg>
+						</button>
+
+						
+
+						<span id="parent-accounts" class="dropdown ">
+							
+								<a href="/accounts/" class="accounts-link " title="Accounts" aria-label="Accounts">
+									<svg class="icon icon--account" height="21" width="21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+										<path d="M412.1 416.6C398.1 361.1 347.9 320 288 320H224c-59.9 0-110.1 41.1-124.1 96.6C58 375.9 32 319 32 256C32 132.3 132.3 32 256 32s224 100.3 224 224c0 63-26 119.9-67.9 160.6zm-28.5 23.4C347.5 465.2 303.5 480 256 480s-91.5-14.8-127.7-39.9c4-49.3 45.3-88.1 95.7-88.1h64c50.4 0 91.6 38.8 95.7 88.1zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-256a48 48 0 1 1 0-96 48 48 0 1 1 0 96zm-80-48a80 80 0 1 0 160 0 80 80 0 1 0 -160 0z"/>
+									</svg>
+								</a>
+							
+							<ul class="dropdown-menu" style="display: none;">
+								
+									<li class="child descendant" id="parent-signout">
+										<a href="/accounts/login/">Sign In &nbsp;<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M217 401L345 273c9.4-9.4 9.4-24.6 0-33.9L217 111c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l87 87L24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l246.1 0-87 87c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0zM344 80l80 0c22.1 0 40 17.9 40 40l0 272c0 22.1-17.9 40-40 40l-80 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c48.6 0 88-39.4 88-88l0-272c0-48.6-39.4-88-88-88l-80 0c-13.3 0-24 10.7-24 24s10.7 24 24 24z"/></svg></a>
+									</li>
+								
+							</ul>
+						</span>
+
+					</span>
+
+					
+
+<button class="toggle-menu p-0" role="button" aria-label="Menu">
+	<span class="hidden">Menu</span>
+	<div id="hamburger-icon" class="hamburger">
+		<span></span>
+		<span class="paddy"></span>
+		<span></span>
+	</div>
+</button>
+
+<div class="menu-wrapper">
+	
+	<div class="list-wrapper">
+		<ul class="menu level-1">
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/podcast/">Podcasts</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li>
+						<a href="/podcast/revive-our-hearts/">Revive Our Hearts</a>
+					</li>
+					<li>
+						<a href="/podcast/weekend/">Weekend</a>
+					</li>
+					<li id="parent-grounded">
+						<a href="/podcast/grounded/">Grounded</a>
+					</li>
+					<li>
+						<a href="/podcast/seeking-him/">Seeking Him</a>
+					</li>
+					<li>
+						<a href="/podcast/the-deep-well/">The Deep Well</a>
+					</li>
+					<li>
+						<a href="/podcast/true-girl/">True Girl</a>
+					</li>
+
+					<li>
+						<a href="/podcast/bible-studies/">Bible Studies</a>
+					</li>
+					<li>
+						<a href="https://itstrueyou.com/videocast/">True You Videocast</a>
+					</li>
+
+					<li class="divider"></li>
+
+					<li class="title">
+						<a href="/app/"><svg class="icon" width="14" height="14"><use xlink:href="#mobile"></use></svg> The App</a>
+					</li>
+					<li>
+						<a href="/listen">How to Listen</a>
+					</li>
+					<li>
+						<a href="/radio/listen-in-your-area/">Listen on the Radio</a>
+					</li>
+					<li>
+						<a href="/alexa/">Listen on Alexa</a>
+					</li>
+					<li>
+						<a href="/google-home/">Listen on Google Home</a>
+					</li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="/blogs/">Blogs</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li>
+						<a href="/blog/">Revive Our Hearts</a>
+					</li>
+					<li>
+						<a href="/bible-project/blog/">CSB Bible Project</a>
+					</li>
+					<li>
+						<a href="/40-days-praying-your-nation/blog/">40 Days of Praying for Your Nation</a>
+					</li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="/articles/">Articles</a>
+			</li>
+			<li>
+				<a href="/videos/">Videos</a>
+			</li>
+			<li>
+				<a href="/books/">Books</a>
+			</li>
+
+			<li class="divider"></li>
+			<li>
+				<a href="/donate/online/">Donate</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li>
+						<a href="/donate/">Donation Info</a>
+					</li>
+					<li>
+						<a href="/donate/revive-partner/">Revive Partner</a>
+					</li>
+					<li>
+						<a href="/donate/support-our-staff/">Support a Staff Member</a>
+					</li>
+					<li>
+						<a href="/donate/stocks/">Donate Stocks</a>
+					</li>
+					<li>
+						<a href="/donate/wills-trusts/">Wills &amp; Trusts</a>
+					</li>
+					<li>
+						<a href="/donate/mail-phone/">Other Ways to Give</a>
+					</li>
+					<li>
+						<a href="/donate/previous-offers/">Previous Offers</a>
+					</li>
+					<li>
+						<a href="/donate/4-distinctives">Our 4 Distinctives</a>
+					</li>
+					<li>
+						<a href="/donate/core-stewardship-principles">Core Stewardship Principles</a>
+					</li>
+				</ul>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="/studies/">Studies</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li id="parent-refresh">
+						<a href="/study/women-of-the-bible/">Women of the Bible</a>
+					</li>
+					<li id="parent-online">
+						<a href="/study/biblical-womanhood/">Biblical Womanhood</a>
+					</li>
+					<li id="parent-refresh">
+						<a href="/study/revival/">Revival</a>
+					</li>
+					<li id="parent-refresh">
+						<a href="/study/bible-study/">Bible Study</a>
+					</li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="/challenges/">Challenges</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="/store/">Store</a>
+				
+			</li>
+			<li>
+				<a href="/resource-library/">Browse Resources…</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li>
+            <a href="/resource-library/topics/">By Topic</a>
+          </li>
+          <li>
+            <a href="/resource-library/scripture/">By Scripture</a>
+          </li>
+          <li>
+            <a href="/contributors/">By Contributor</a>
+          </li>
+          
+          <li>
+            <a href="/languages/">By Language</a>
+          </li>
+          
+          <li>
+            <a href="/young-women/">For Young Women</a>
+          </li>
+				</ul>
+			</li>
+			
+			<li class="divider"></li>
+			<li>
+				<a href="/events">Events</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li><a href="/events/true-woman-25/">True Woman '25</a></li>
+					<li><a href="/events/biblical-help-for-real-life/">Biblical Help Series</a></li>
+					<li><a href="/events/true-woman-22/">True Woman '22</a></li>
+					<li><a href="/events/revive-21/">Revive '21</a></li>
+					<li><a href="/events/">All Past Events</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/leaders/">Leaders</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li><a href="/ambassadors/">Ambassadors</a></li>
+					<li><a href="/leaders/">Women&rsquo;s Leaders</a></li>
+					<li><a href="/toolkit/">Event Toolkit</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/about/">About Us</a>
+				<button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+				<ul class="sub-menu level-2">
+					<li><a href="/about/nancy-demoss-wolgemuth/">About Nancy DeMoss Wolgemuth</a></li>
+					<li><a href="/about/robert-wolgemuth/">About Robert Wolgemuth</a></li>
+					<li><a href="/about/statement-of-faith/">Statement of Faith</a></li>
+					<li><a href="/true-woman/manifesto/">True Woman Manifesto</a></li>
+					<li><a href="/international/">International</a></li>
+					<li><a href="/newsletter/">Newsletter</a></li>
+					<li><a href="/about/join-the-team/">Join the Team</a></li>
+					<li><a href="/about/board">Our Board</a></li>
+					<li><a href="/2023-annual-report/">2023 Annual Report</a></li>
+					<li><a href="/about/financial-accountability/">Financial Accountability</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/goodnews">Good News</a>
+			</li>
+
+			<li class="divider"></li>
+			
+			<li>
+        <a href="/contact-us/">Get Help</a>
+        <button class="nested" aria-label="Open Menu"><svg class="icon" width="14" height="14"><use xlink:href="#angle-right"/></svg></button>
+        <ul class="sub-menu level-2">
+          <li>
+            <a href="/faq/">FAQs</a>
+          </li>
+          <li>
+            <a href="/contact-us/">Contact Us</a>
+          </li>
+        </ul>
+      </li>
+      
+			
+			<li class="child descendant" id="parent-signout">
+				<a href="/accounts/login/">Sign In &nbsp;<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M217 401L345 273c9.4-9.4 9.4-24.6 0-33.9L217 111c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l87 87L24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l246.1 0-87 87c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0zM344 80l80 0c22.1 0 40 17.9 40 40l0 272c0 22.1-17.9 40-40 40l-80 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c48.6 0 88-39.4 88-88l0-272c0-48.6-39.4-88-88-88l-80 0c-13.3 0-24 10.7-24 24s10.7 24 24 24z"/></svg></a>
+			</li>
+			
+				
+		</ul>
+	</div>
+	<div class="list-wrapper">
+		<button type="button" class="back-one-level">
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+				<path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+			</svg>
+			<span>Back</span>
+		</button>
+		<div class="sub-menu-wrapper"></div>
+	</div>
+	<div class="list-wrapper">
+		<button type="button" class="back-one-level">
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+				<path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+			</svg>
+			<span>Back</span>
+		</button>
+		<div class="sub-menu-wrapper"></div>
+	</div>
+</div>
+					
+				</div>
+				
+				
+			</div>
+			
+			
+		  </div>
+		  
+		  
+		  
+	  	  
+		  
+		  
+		  
+		  
+		  <nav class="breadcrumb" role="navigation">
+			  <span>
+				  <a href="/" aria-label="Home"><svg class="icon icon-home"><use xlink:href="#home"/></svg></a>
+				  <svg class="icon"><use xlink:href="#angle-right"/></svg>
+			  </span>
+			  
+			  
+			  
+			  <span>
+				  <a href="/blog/">Blog</a>
+				  <svg class="icon"><use xlink:href="#angle-right"/></svg>
+			  </span>
+			  
+			  
+			  
+			  
+			  <span>Cherishing Jesus, Our True Treasure</span>
+			  
+			  
+		  </nav>
+		  
+	  <!-- wrapper -->
+	  <div id="main-wrap" class="">
+		  
+		  
+		  <!-- main -->
+		  <main id="main" role="main" class="main  one-col m-auto">
+			  
+			  
+
+<!-- content -->
+<section class="content">
+  
+  
+<article>
+  
+  <header class="pb-0">
+    <hgroup class="blog-post-header">
+      <nav class="nav-date">
+        
+        <a href="/blog/when-youre-spiritually-dry-stay-attached-to-the-vi/" title="When You’re Spiritually Dry, Stay Attached to the Vine" class="previous">
+          <svg class="icon"><use xlink:href="#angle-left"/></svg>&nbsp;<span>Previous</span>
+        </a>
+
+        <span class="date">June 17, 2020</span>
+
+        
+        <a href="/blog/beauty-and-blessing-weakness/" title="The Beauty and Blessing of Weakness" class="next">
+          <span>Next</span>&nbsp;<svg class="icon"><use xlink:href="#angle-right"/></svg>
+        </a>
+        
+      </nav>
+
+      
+      <div class="entry-image entry-banner">
+        <picture>
+          
+          <source class="img-responsive center" srcset="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg__815x407_q90_crop_subsampling-2_upscale.jpg.webp" width="815" height="407" type="image/webp" />
+          <img class="img-rounded img-responsive center" src="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/16/1d/161daa23-90e8-4cde-8c07-71289cd86e80/200617-tw-treasure.jpg__815x407_q90_crop_subsampling-2_upscale.jpg" width="815" height="407" alt="" />
+        </picture>
+      </div>
+      
+
+      
+
+      <h1 class="text-center">Cherishing Jesus, Our True Treasure</h1>
+      <div class="header-meta">
+        <!-- Author(s) -->
+        <span class="authors">
+                
+          <a href="/contributors/heather-cofer/">Heather Cofer</a>
+          
+        </span>
+        <!-- Tags -->
+        
+        <span class="pipe">|</span> 
+        
+        <a href="/blog/topics/surrender/">Surrender</a>
+        
+        
+
+        
+        <span class="pipe">|</span>
+        <a href="#comments">Comments</a>
+        
+      </div>
+    </hgroup>
+  </header>
+  
+
+  
+
+  <div class="entry-content" style="position: relative;">
+    <!-- Social Nav -->
+      
+
+  
+  
+    <div class="entry-info">
+      
+      
+    
+    </div>
+  
+
+  
+<div id="toolbarActions" class="toolbar-actions page-actions">
+	
+
+	<a class="twitter" href="https://simpleshare.io/go?site=twitter&url=http%3A//www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/&text=The%20deepest%20desires%20of%20our%20soul%20can%20only%20be%20satisfied%20by%20God%20alone.%20But%20how%3F" target="_blank" title="Share on Twitter" aria-label="Share on Twitter">
+			<svg class="icon" width="18" height="18"><use xlink:href="#twitter"/></svg>
+	</a>
+
+	<a class="facebook" href="https://simpleshare.io/go?site=facebook&url=http%3A//www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/" target="_blank" title="Share on Facebook" aria-label="Share on Facebook">
+		<svg class="icon" width="18" height="18"><use xlink:href="#facebook-f"/></svg>
+	</a>
+	
+	
+	
+	
+	<a class="email" href="mailto:?subject=Cherishing%20Jesus%2C%20Our%20True%20Treasure&body=I%20wanted%20you%20to%20see%20this%20resource%20from%20Revive%20Our%20Hearts%0A%0Ahttp%3A//www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/%0A%0A" title="Email this" aria-label="Email this">
+    <svg class="icon" width="18" height="18"><use xlink:href="#paper-plane"/></svg>
+	</a>
+	<a class="print" href="javascript:window.print()" title="Print this" aria-label="Print this">
+    <svg class="icon" width="18" height="18"><use xlink:href="#print"/></svg>
+	</a>
+	
+</div>
+
+
+
+
+  <div class="canister">    
+  <p><em>“I can’t believe it . . . I can’t believe it!” </em></p>
+
+<p>My hands were shaking and eyes wide as I saw <em>two</em> little lines appear on the pregnancy test. It was a day I thought I would never see. </p>
+
+<p>My dream from the time I was in pigtails was to be a wife and mom. I spent hours “nurturing” my dolls and would, on occasion, put a balled-up blanket under my shirt to give myself a little baby bump. As I grew into my teenage years, those desires matured as the Lord deepened my understanding of the beautiful design and calling of marriage and motherhood. In His providence, He wrote a beautiful love story for my husband and me, and we were married at nineteen. And boy, oh, boy, was I ready to have children! Or so I thought.</p>
+
+<p>About ten months into marriage, I was diagnosed with something I had never heard of. I looked it up, and one symptom stood out from all the others: infertility. I was completely devastated. Tears had never come like they did that summer, and I was brought to my knees over and over again. “This has always been my dream, God! I gave up other opportunities to become a wife and mom because You said it was good! And now I may never have children of my own. I don’t understand!”</p>
+
+<p>Until then, I hadn’t realized that the desire for children had become an idol in my life. I had no idea my grip on becoming a mom was deathly tight until it seemed like my dream was being taken away. God began revealing a sense of entitlement in me. I felt I <em>deserved</em> children because I had always esteemed this God-designed role of motherhood and rejected the world’s view of it being “lesser-than.” But through those weeks and months of wrestling, He began to turn my heart back to Him as my ultimate prize and joy. He reminded me that what I truly deserve is an eternity without Him, and that it is only because of His mercy and love that I will be with Him for eternity. </p>
+
+<p>My faith was challenged by the question He put before me: <em>Do you trust that I know what is best for your life?</em> I knew to be His follower I needed to believe this truth with my whole heart, rejecting the lies of the enemy and my own doubts that were trying to draw my gaze from His glorious face. Everything began to change. It was still very painful to anticipate a possible future without children. But I was now anchored in God’s love and goodness rather than my own desires, and I learned that I could rejoice through the tears because of that. </p>
+
+<p>It was only several weeks later that God completely surprised me with that positive pregnancy test. I was awed and overwhelmed by God’s undeserved gift to me in placing this tiny person in my womb. Instead of going into motherhood with a sense of entitlement, I was ready to receive this child with humility and praise because my delight was now grounded in my Creator and Savior instead of in being a mom. </p>
+
+<p>All true joy and delight comes first and foremost from knowing and loving God. James 1:17 says, “Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change.” He is the Originator of all that is good and lovely and praiseworthy. And unlike everything else in our lives, He won’t change with time or fail us in any way. When we forget this fact and look to other good gifts to satisfy us—whether motherhood or marriage or friendship or job or anything else—we will be disappointed, disillusioned, and discontented. We’ll turn from one thing to the next to try to fill that “something” that keeps gnawing inside us to be satiated. But the reality is, that “something”—the deepest desires of our soul—can only be satisfied by God alone. When we grasp this and truly believe it, we will know with all our beings how good, how loving, and how all-satisfying He truly is. </p>
+
+<p>What steps can we take to treasure our Lord and Savior Jesus Christ as we ought and experience the joy of being satisfied in Him? </p>
+
+<h3>1. Know Your God</h3>
+
+<p>Delight in God starts with knowing God. As Jen Wilkin said in her book <a href="https://store.reviveourhearts.com/products/women-word-jen-wilkin-cd?_pos=2&amp;_sid=e6b821d60&amp;_ss=r"><em>Women of the Word</em></a>, “The heart cannot love what the mind does not know.” True, passionate love for God comes from a deep, unshakable knowledge of who He is. This won’t happen by accident. It can only come by faithfully spending time in His Word. We need to approach Scripture with an understanding that it’s not about ourselves, but about God. And the more we know God, the more our awe and adoration of Him will grow. </p>
+
+<p>There are many ways we can fill our minds and hearts with Scripture. Have time blocked out every day for soaking in God’s Word. Listen to an audio Bible as you drive or make dinner. Participate in a Bible study with women from your church. Put sticky notes around the house with verses you’re memorizing. Meditate on the faithfulness of Jesus, who “loved us and gave himself up for us” (Eph. 5:2). Every second of seeking God is eternally worth it. </p>
+
+<h3>2. Identify Idols</h3>
+
+<p>To truly delight in the Lord, we have to identify the things in our lives that are pulling our hearts away from Him. Sometimes these are hard to recognize at first glance because they are often <em>good</em> things. But when we are truly seeking God and asking Him to reveal anything that is hindering our intimacy with Him, He will make those things clear.</p>
+
+<p>Start by asking God to reveal idols. Often I pray the very end of Psalm 139: </p>
+
+<blockquote>
+<p>Search me, O God, and know my heart! Try me and know my thoughts! And see if there be any grievous way in me, and lead me in the way everlasting! (vv. 23–24) </p>
+</blockquote>
+
+<p>God is not a God of confusion. He <em>will</em> lead us in the way everlasting. He will open our eyes to the things we’re holding onto too tightly. He’ll show us how to release our grip and surrender those back into their rightful place: at His feet. </p>
+
+<p>He will give you wisdom when you ask what that should look for you. Your idol might be something good, like coffee or social media, that can be let go of for a season. It might be something harmful that needs to go completely, like an alcohol addiction. Or, if it’s the longing for something like a husband or child, most of the work will need to be internal. God is fully capable of teaching us how to practically focus on Him rather than these things. </p>
+
+<h3>3. Practice Praise</h3>
+
+<p>There are many, many commands in Scripture to rejoice or give thanks or praise the Lord. When our hearts are filled with gratitude for the thousands of ways God has shown His love and faithfulness to us, it drives away feelings of discontentment that like to cling closely to our minds and hearts and to distract us from His goodness. </p>
+
+<p>We can start by praising Him for life—physical <em>and</em> spiritual. We can praise Him for the ability to see, to hear, to smell, and to feel. We can praise Him for our loved ones. We can thank Him for the opportunities He’s given us, whatever they may be. Once we start, it’s hard to stop. More and more things come to mind. When we practice the discipline of praising the Lord, no matter what circumstances we find ourselves in, God uses it for great good in our souls. Giving thanks humbles us and reminds us that we deserve nothing, but He has greatly lavished His love on us in a million ways.</p>
+
+<p>We’re not guaranteed anything in this life. We can either resent the waiting, the disappointment, and the unknowns, or we can surrender those desires into the Lord’s almighty, loving hands. He sees the beginning from the end; we don’t. So let’s entrust ourselves to His eternal purposes and keep our eyes fixed on His wonderful face.</p>
+  </div>
+
+  
+
+  
+  
+
+  
+<div id="footerActions" class="footer-actions page-actions">
+	
+
+
+
+
+	<a class="twitter" href="https://simpleshare.io/go?site=twitter&url=http%3A//www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/&text=The%20deepest%20desires%20of%20our%20soul%20can%20only%20be%20satisfied%20by%20God%20alone.%20But%20how%3F" target="_blank" title="Share on Twitter" aria-label="Share on Twitter">
+			<svg class="icon" width="18" height="18"><use xlink:href="#twitter"/></svg>
+	</a>
+
+	<a class="facebook" href="https://simpleshare.io/go?site=facebook&url=http%3A//www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/" target="_blank" title="Share on Facebook" aria-label="Share on Facebook">
+		<svg class="icon" width="18" height="18"><use xlink:href="#facebook-f"/></svg>
+	</a>
+	
+	
+	
+	
+	<a class="email" href="mailto:?subject=Cherishing%20Jesus%2C%20Our%20True%20Treasure&body=I%20wanted%20you%20to%20see%20this%20resource%20from%20Revive%20Our%20Hearts%0A%0Ahttp%3A//www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/%0A%0A" title="Email this" aria-label="Email this">
+    <svg class="icon" width="18" height="18"><use xlink:href="#paper-plane"/></svg>
+	</a>
+	<a class="print" href="javascript:window.print()" title="Print this" aria-label="Print this">
+    <svg class="icon" width="18" height="18"><use xlink:href="#print"/></svg>
+	</a>
+	
+
+<a href="#comments" class="comment">
+  <svg class="icon"><use xlink:href="#comment"/></svg>
+</a>
+
+
+</div>
+
+
+  
+  
+  
+  
+	<footer class="author-bio">
+    <h2><svg class="icon" width="30" height="30"><use xlink:href="#mug-hot"/></svg> About the Author</h2>
+		
+		
+		
+		
+
+<div class="author hide-fade-rtl">
+  
+	<a href="/contributors/heather-cofer/" class="author-photo">
+		<picture class="img-circle img-responsive">
+			
+			<source srcset="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/b5/4c/b54cebe9-e293-4a2b-a6e3-cf90b09c70d2/heather-cofer.jpg__120x120_q90_crop_subsampling-2.jpg.webp" type="image/webp" />
+			<img width="120" height="120" loading="lazy" src="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/b5/4c/b54cebe9-e293-4a2b-a6e3-cf90b09c70d2/heather-cofer.jpg__120x120_q90_crop_subsampling-2.jpg" alt="Heather Cofer" />
+	</a>
+    
+  <div class="author-content">
+      <h4><a href="/contributors/heather-cofer/">Heather Cofer</a></h4>
+      
+	  <p>
+<style type="text/css"><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->
+</style>
+Heather Cofer is a wife and mother of six living in northern Colorado with a passion for encouraging women to love Jesus. She is the author of <em>Expectant: Cultivating a Vision for Christ-Centered Pregnancy,</em> and has also written for <em>Set … <a class="read-more" href="/contributors/heather-cofer/">read more …</a></em></p>
+      
+  </div>
+</div>
+
+		
+		
+	</footer>
+  
+
+  
+  <hr>
+  
+  
+  <section class="section entry-comments" id="comments">
+    <div class="text-center"><svg class="icon icon-5x"><use xlink:href="#comment"/></svg></div>
+    <h2>Join the Discussion</h2>
+    
+
+
+<div id="disqus_thread"></div>
+<button id="disqus-trigger" class="btn">
+  Load Comments
+</button>
+<script type="text/javascript">
+
+// Prepare the trigger and target
+const loadDisqusButton = document.querySelector("#disqus-trigger");
+
+var disqus_config = function () {
+  this.page.url = 'https://www.reviveourhearts.com/blog/cherishing-jesus-our-true-treasure/';
+  this.page.identifier = 'blog.Post.10602';
+};
+
+loadDisqusButton.addEventListener("click", (e) => {
+  const disqus_trigger = document.getElementById('disqus-trigger');
+  const disqus_embed = document.createElement('script');
+  const disqus_hook = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+
+  // Load script asynchronously only when the trigger and target exist
+  if( disqus_trigger ) {
+    disqus_embed.type = 'text/javascript';
+    disqus_embed.async = true;
+    disqus_embed.src = '//reviveourhearts.disqus.com/embed.js';
+    disqus_hook.appendChild(disqus_embed);
+  }
+
+  // remove the original button
+  e.target.parentNode.removeChild(e.target);
+
+}, {once: true});
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </section>
+  
+  
+
+	<!-- Footer Pager -->
+	<div class="footer-pager duo with-media">
+		<div class="prev">
+			
+			<div class="prev-link">
+				<a href="/blog/when-youre-spiritually-dry-stay-attached-to-the-vi/" rel="prev">
+					<span>Previous Post</span>
+					<strong>When You’re Spiritually Dry, Stay Attached to the Vine</strong>
+					
+				</a>
+			</div>
+			
+		</div>
+		<div class="next">
+			
+			<div class="next-link">
+				<a href="/blog/beauty-and-blessing-weakness/" rel="prev">
+					<span>Next Post</span>
+					<strong>The Beauty and Blessing of Weakness</strong>
+					
+				</a>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Related Posts -->
+	<section class="entry-related">
+		 <h3 class="widget-title">Related Posts</h3>
+		<div class="card-deck">
+			
+			<div class="card">
+				
+				<a class="card-img" href="/blog/an-idol-hunt/">
+				   
+					<picture>
+						<source srcset="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/99/80/99800b16-b5db-45a6-aeb5-733ac897e204/120823-idol-hunt.png__300x150_subsampling-2.png.webp" width="300" height="150" type="image/webp" />
+						<img loading="lazy" src="https://df6yevl24pl4a.cloudfront.net/filer_public_thumbnails/filer_public/99/80/99800b16-b5db-45a6-aeb5-733ac897e204/120823-idol-hunt.png__300x150_subsampling-2.png" width="300" height="150" alt="" />
+					</picture>
+				   
+				</a>
+				<div class="card-body">
+					<h4 class="card-body-title"><a href="/blog/an-idol-hunt/">An Idol Hunt</a></h4>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	
+
+  
+
+
+	
+  </div>
+
+</article>
+
+
+
+</section>
+
+		  </main>
+	  </div>
+      
+  
+  
+<!-- footer -->
+<footer class="global-footer" id="global-footer">
+	
+
+	<div class="container">
+		<div class="footer-navs">
+
+			
+			<ul class="footer-nav">
+				<li><a href="/podcasts/">Podcasts</a></li>
+				<li><a href="/blogs/">Blog</a></li>
+				<li><a href="/challenges/">Challenges</a></li>
+				<li><a href="/studies/">Studies</a></li>
+			</ul>
+			<ul class="footer-nav">
+				<li><a href="https://store.reviveourhearts.com">Store</a></li>
+				<li><a href="/app/">App</a></li>
+				<li><a href="/international/">International</a></li>
+				<li><a href="/leaders/">Leaders</a></li>
+			</ul>
+			<ul class="footer-nav">
+				<li><a href="/contact-us/">Contact Us</a></li>
+				<li><a href="/about/">About Us</a></li>
+				<li><a href="/about/join-the-team/">Join the Team</a></li>
+				<li><a href="/donate/">Donate</a></li>
+			</ul>
+			
+
+			<nav class="allthethings-nav">
+				<a href="https://facebook.com/ReviveOurHearts" class="facebook badge" aria-label="Visit Revive Our Hearts on Facebook" title="Visit Revive Our Hearts on Facebook">
+					<svg class="icon" width="18" height="18"><use xlink:href="#facebook-f"/></svg> 
+					<span>Follow us on Facebook</span>
+				</a>
+				
+				
+				<a href="http://instagram.com/reviveourhearts/" class="instagram badge" aria-label="Visit Revive Our Hearts on Instagram" title="Visit Revive Our Hearts on Instagram">
+					<svg class="icon" width="18" height="18"><use xlink:href="#instagram"/></svg> 
+					<span>Follow us on Instagram</span>
+				</a>
+				
+				<a href="http://twitter.com/reviveourhearts" class="twitter badge" aria-label="Visit Revive Our Hearts on Twitter" title="Visit Revive Our Hearts on Twitter">
+					<svg class="icon" width="18" height="18"><use xlink:href="#twitter"/></svg> 
+					<span>Follow us on Twitter</span>
+				</a>
+				<a href="https://youtube.com/reviveourhearts" class="youtube badge" aria-label="Visit Revive Our Hearts on YouTube" title="Visit Revive Our Hearts on YouTube">
+					<svg class="icon" width="18" height="18"><use xlink:href="#youtube"/></svg> 
+					<span>Revive Our Hearts @ YouTube</span>
+				</a>
+				
+				
+				<a href="/podcast-instructions" class="rss badge" aria-label="Learn how to access the Revive Our Hearts podcast." title="Learn how to access the Revive Our Hearts podcast.">
+					<svg class="icon" width="18" height="18"><use xlink:href="#rss"/></svg> 
+					<span>Subscribe via RSS</span>
+				</a>
+			</nav>
+		</div>
+		<div class="subscription-wrap">
+			<div class="subscription hide-fade-up">
+				<div id="subscribe-form">
+
+
+					
+
+
+				</div>
+			</div>
+
+			<svg class="logo" width="14" height="14"><use xlink:href="#roh-logo"/></svg>
+		</div>
+
+
+	</div>
+	
+	
+	<div class="footer-address-bar">
+		<div class="container">
+			<address class="vcard">
+				<span class="name org"><em>Revive Our Hearts</em></span>
+				<span class="adr">
+					<span class="street-address">
+					P.O. Box 2000
+					</span>
+					<span class="locality">Niles</span>, <abbr class="region">MI</abbr> <span class="postal-code">49120</span>
+				</span>
+				
+				
+				
+				<a href="tel:1-800-569-5959" class="tel">
+					<svg class="icon"><use xlink:href="#mobile"/></svg> 1-800-569-5959
+				</a>
+				
+			</address>
+		</div>
+	</div>
+	
+	
+  <section class="footer-copyright">
+    <div class="container">
+      <p class="credits">
+        &copy; 2001&ndash;2024
+        <a href="/">
+          <em>Revive Our Hearts</em> Ministries</a>
+         
+      </p>
+      <p class="credits-nav">
+      	<!-- <a href="/about/financial-accountability/">ECFA Member</a> -->
+      	<a href="/privacy-statement/">Privacy Policy</a>
+      	<a href="/terms-of-service/">Terms of Service</a>
+      </p>
+	  	
+      </div>
+    </div>
+  </section>
+  
+</footer>
+
+  
+  </div> <!-- /page -->
+
+	
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://www.googletagmanager.com/gtag/js?id=G-TRHXNC2KW0" async></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ 
+ gtag('config', 'G-TRHXNC2KW0');
+ 
+ gtag('config', 'AW-928672555');
+ 
+ gtag('config', 'AW-11333294955');
+ 
+</script>
+
+
+
+
+
+	<template id="facebook-pixel-template">
+		<script>
+		 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+																	 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+			 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.defer=!0;
+			 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+																					document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+		 fbq('init', '481276693909320');
+		 fbq('track', "PageView");
+		</script>
+	</template>
+	<script>
+	 let loadFBPixelCalled = false;
+	 const fbPixelLoadedEvent = new Event("fbPixelLoaded");
+	 function loadFBPixel() {
+		 const template = document.getElementById("facebook-pixel-template")
+		 document.body.appendChild(template.content);
+		 console.log("Added facebook pixel script to document body", template.content);
+		 loadFBPixelCalled = true;
+		 window.dispatchEvent(fbPixelLoadedEvent);
+	 }
+	 window.addEventListener("DOMContentLoaded", () => {
+		 ["click", "scroll", "press"].forEach((event) => {
+			 document.addEventListener(event, () => {
+				 if (!loadFBPixelCalled) { loadFBPixel(); }
+				 console.log("Detected event", event);
+			 });
+		 });
+		 setTimeout(() => {
+			 if (!loadFBPixelCalled) {
+				 loadFBPixel();
+			 }
+		 }, 5000);
+	 }, {once: true});
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+				   src="https://www.facebook.com/tr?id=481276693909320&ev=PageView&noscript=1"
+			  /></noscript>
+
+
+
+
+  
+	
+
+  <script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/base.f7f1300beb4d.js" defer></script>
+  <script>
+   window.STATIC_URL = "https://d3o8vwpyaorolj.cloudfront.net/static/";
+   window.SITE_ACRONYM = "ROH"
+   window.RECAPTCHA_PUBLIC_KEY = "6LcESpwUAAAAAP5O8jZimSHmA-cJgCdESTKpTq0W";
+  </script>
+  
+  
+  
+  
+  
+  <script type="text/javascript">
+  
+  
+  </script>
+	
+	<script>
+	 window.preloadSvgIconsURLS = ["https://d3o8vwpyaorolj.cloudfront.net/static/svg/sprite-preload.c19e089f644c.svg"];
+	 window.svgIconsURLs = ["https://d3o8vwpyaorolj.cloudfront.net/static/svg/sprite.69b3f3d46deb.svg",];
+	</script>
+  
+	  <template id="choozle-template">
+		  <script type="text/javascript" src="//nexus.ensighten.com/choozle/18557/Bootstrap.js"></script>
+	  </template>
+  
+
+<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/loadDelayedScripts.7ddfdd3c4523.js"></script>
+<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/loadDelayedScripts.0354f53ddc8a.js" defer></script>
+<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/loadDelayedScripts.94b6b5947c6f.js"></script>
+<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/loadDelayedScripts.beb1aec762a3.js" defer></script>
+<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/loadDelayedScripts.e74c32d929b4.js"></script>
+
+
+	<!-- web chat -->
+	
+	
+	<script>
+		function initFreshChat() {
+			window.fcWidget.init({
+				token: "24b7043e-1b37-4a4e-9552-ca42b2a0217a",
+				host: "https://roh-support.freshchat.com"
+			});
+			window.fcWidget.user.setFirstName("");
+			window.fcWidget.user.setLastName("");
+			window.fcWidget.user.setEmail("");
+		}
+		function initialize(i, t) {
+			var e;
+			i.getElementById(t) ?
+				initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0,
+					e.src = "https://roh-support.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
+		}
+		function initiateCall() {
+			initialize(document, "Freshchat-js-sdk")
+		}
+	 window.delayedScriptLoaders.push(initiateCall);
+	</script>
+	
+	
+	<!-- /web chat -->
+
+	
+	
+
+  
+		<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/animate.368d2a33aacd.js"></script>
+  
+	
+  
+				<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/siteNotifications.aebb9ac8fff7.js" defer></script>
+			
+
+
+
+
+	
+	<dialog data-modal="search-modal">
+		<button class="close-modal close-modal--search" aria-label="close" data-modal-close="search-modal">✕</button>
+		<form action="/search/" class="form-search-modal">
+			<div class="form-group mb-0">
+				<label class="search-label hidden" for="q">Search this Site</label>
+				<input type="search" name="q" class="form-control modal-search-field" placeholder="Search this Site" id="search-field" maxlength="128" />
+			</div>
+			<button class="btn" class="search-button" aria-label="Search">
+				<svg class="icon" width="20" height="20"><use xlink:href="#search"/></svg>
+			</button>
+		</form>
+	</dialog>
+	
+
+
+	
+  
+    
+		<div id="popity-container"></div>
+		<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/popity.afbe2e314fc2.js" defer></script>  	
+	
+  
+
+	<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/footerSubscribe.b4b2b367c541.js" defer></script>
+	<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/handleCart.e4e9c263f6d2.js" defer></script>  	
+
+
+	
+	
+
+	
+	
+<script async defer data-pin-hover="true" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+<script>
+  window.fbAppId = '';
+</script>
+
+<script src="https://d3o8vwpyaorolj.cloudfront.net/static/CACHE/js/%22socialToolbar%22.5e0bac57ee58.js"></script>
+
+
+
+
+
+  </body>
+  </html>

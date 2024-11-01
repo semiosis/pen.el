@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "words-to-avy-tuples" "-nbe" "/tmp/FMQTavy-bible.txt" "#" "<==" "perl"
+cd /root/notes;  "words-to-avy-tuples" "-nbe" "/tmp/f3cAavy-bible.txt" "#" "<==" "perl"
+cd /root/notes;  "words-to-avy-tuples" "-nbe" "/tmp/DHg7avy-bible.txt" "#" "<==" "perl"
+cd /root/notes;  "words-to-avy-tuples" "-nbe" "/tmp/1Cdsavy-bible.txt" "#" "<==" "perl"
+cd /root/notes;  "words-to-avy-tuples" "-nbe" "/tmp/J8XCavy-bible.txt" "#" "<==" "perl"

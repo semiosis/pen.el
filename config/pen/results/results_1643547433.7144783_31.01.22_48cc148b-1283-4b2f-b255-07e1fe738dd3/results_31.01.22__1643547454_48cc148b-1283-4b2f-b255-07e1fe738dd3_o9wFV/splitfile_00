@@ -1,0 +1,4 @@
+
+(map #(str %1 "=" (cmd %2)) args)
+(str (join "\n" (map #(str %1 "=" (cmd %2)) args)) "\n")
+

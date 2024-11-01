@@ -1,0 +1,28 @@
+title: English to French
+prompt-version: 2
+tags: translation language grammar english french
+prompt: |+
+  Translate to French.
+
+  English: Give me a home among the gumtrees.
+  French: Donnez-moi une maison parmi les gommiers.
+  <delim>
+  English: Could I have a baguette please?
+  French: Puis-je avoir une baguette s'il vous plaît?
+  <delim>
+  English: See you later!
+  French: À tout à l'heure!
+  <delim>
+  English: <1>
+  French:
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 100
+top-p: 1
+filter: true
+stop-sequences:
+- "<delim>"
+vars:
+- english prose
+examples:
+- I love you.

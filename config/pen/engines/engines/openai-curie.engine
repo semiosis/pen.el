@@ -1,0 +1,8 @@
+engine-title: OpenAI Curie
+include: OpenAI Davinci
+lm-command: "openai-complete.sh"
+model: curie
+engine-delimiter: "\"\"\""
+lighter-engines:
+- OpenAI Babbage
+- OpenAI Ada

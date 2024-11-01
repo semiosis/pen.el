@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/examples;  "hx" "/volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/examples/recactions.rs" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/examples;  "hx" "/volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/examples/recactions.rs" "#" "<==" "zsh"
+cd /root/notes;  "hx" "/volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/examples/recactions.rs" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/examples;  "hx" "recactions.rs" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "hx" "src/lib.rs" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "hx" "examples/recactions.rs" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "hx" "test.rs" "#" "<==" "zsh"

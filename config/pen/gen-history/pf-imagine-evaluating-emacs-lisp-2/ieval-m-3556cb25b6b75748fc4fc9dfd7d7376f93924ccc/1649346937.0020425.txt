@@ -1,0 +1,3 @@
+;; Run function make-long-story
+(message (eval '(make-long-story)))
+--> 

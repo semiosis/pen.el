@@ -1,0 +1,2 @@
+cd /root/.pen/documents/agenda;  "cvlc-host" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Alleluia_Sing_To_Jesus-Hyfrydol.mp3" "#" "<==" "cvlc"
+cd /root/.pen/documents/notes;  "cvlc-host" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Praise_God_From_Whom_All_Blessings_Flow-Old_100th.mp3" "#" "<==" "cvlc"

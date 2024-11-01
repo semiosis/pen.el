@@ -1,0 +1,521 @@
+Shift-left testing
+    An approach to software testing and system
+    testing in which testing is performed
+    earlier in the lifecycle (i.e. moved left
+    on the project timeline).
+    
+    It is the first half of the maxim "test
+    early and often".
+    
+    It was coined by Larry Smith in 2001.
+
+Wizard of Oz testing
+    Testing in which the automated machine
+    component is substituted by some form of
+    human intervention but in such a way that
+    the user participating in the test is
+    unaware of the substitution.
+
+test fixture
+fixture
+    In testing electronic equipment such as
+    circuit boards, electronic components, and
+    chips, a test fixture is a device or setup
+    designed to hold the device under test in
+    place and allow it to be tested by being
+    subjected to controlled electronic test
+    signals.
+
+    A software test fixture sets up a system
+    for the software testing process by
+    initializing it, thereby satisfying any
+    preconditions the system may have.For
+    example, the Ruby on Rails web framework
+    uses YAML to initialize a database with
+    known parameters before running a test.
+    This allows for tests to be repeatable,
+    which is one of the key features of an
+    effective test framework.
+
+exploratory testing
+    A form of manual testing.
+
+    Run and use your application, check the
+    features and experiment with them.
+
+    - no plan
+
+integration testing
+    Testing multiple components.
+
+unit test
+    Smaller than an integration test.
+
+    Checks that a single component operates in
+    the right way.
+
+    A unit test helps you to isolate what is
+    broken in your application and fix it
+    faster.
+
+Traceability matrix
+software testing traceability matrix
+    A document that traces and maps the
+    relationship between two baseline
+    documents.
+
+    This includes one with the requirement
+    specifications and another one with the
+    test cases.
+
+    A document that corelates any two-baseline
+    documents that require a many-to-many
+    relationship to check the completeness of
+    the relationship.
+
+    It is used to track the requirements and
+    to check the current project requirements
+    are met.
+
+Static Analysis
+    Typically the source or object code of an
+    application is analyzed directly (without
+    executing it).
+
+    Depending on the tools that are used, the
+    resulting analysis can be fairly advanced
+    (especially when formal methods can be
+    used to prove certain properties of the
+    code), but typically only a subset of the
+    code can be analyzed completely
+    statically.
+
+    For code sections that cannot be analyzed
+    statically, a conservative approach to
+    classify the severity of potential hazards
+    can lead to many false positives.
+
+    Static analysis tools can for example be
+    used to ensure that code adheres to
+    certain standards, e.g. defined by the
+    motor industry software reliability
+    association (MISRA).
+
+Dynamic Analysis
+    An application must be executed in a way
+    that represents the scenario that is of
+    interest (e.g. by providing corresponding
+    inputs).
+
+    As a result, the results that are acquired
+    are not necessarily representative for the
+    application but can be highly correlated
+    to the selected scenario of interest.
+
+    Deriving (formal) guarantees based on
+    dynamic analysis is typically difficult.
+
+    Nevertheless, dynamic analysis can provide
+    a good understanding of the execution
+    behavior of an application and is
+    frequently used e.g. in performance
+    optimization.
+
+PC-lint
+pclint
+    A command-line tool for performing static
+    code analysis, indicating suspicious or
+    plain wrong issues in source code.
+
+    PC-lint can be integrated into IDEs as an
+    external tool, and the format of the
+    warning messages can be adapted to the
+    form the IDE is able to recognize and
+    process.
+
+xunit
+junit
+    These usually refer to the same thing.
+
+    https://docs.gitlab.com/ee/ci/junit_test_reports.html
+
+    I believe so.
+
+    JUnit is primarily for unit testing J2SE
+    programs. xUnit is a collective terms to refer
+    to all JUnit-like tools; there are many!
+
+CTest
+    [#cmake]
+
+    A testing tool distributed as a part of
+    CMake.
+
+    It can be used to automate updating (using
+    CVS for example), configuring, building,
+    testing, performing memory checking,
+    performing coverage, and submitting
+    results to a CDash or Dart dashboard
+    system.
+
+Continuous Deployment
+    Every change that is made is automatically
+    deployed to production.
+
+    A practice where you automatically ensure
+    that your software can be released into
+    production any time, can help you with
+    that.
+
+    With continuous delivery you use a build
+    pipeline.
+
+Run rate
+    The ratio between number test cases
+    executed/total test cases of test
+    specification.
+
+    For example, the test specification has
+    total 120 TCs, but the tester only
+    executed 100 TCs, So the run rate is
+    100/120 = 0.83 (83%)
+
+Pass rate
+    The ratio between numbers test cases
+    passed / test cases executed.
+
+    For example, in above 100 TCs executed,
+    there’re 80 TCs that passed, so the pass
+    rate is 80/100 = 0.8 (80%)
+
+System testing
+    Testing conducted on a complete integrated
+    system to evaluate the system's compliance
+    with its specified requirements.
+
+    System testing takes, as its input, all of
+    the integrated components that have passed
+    integration testing.
+
+Integration Test Plan
+    Carried out during the design stage.
+
+    An integration test plan is a collection
+    of integration tests that focus on
+    functionality.
+
+Integration tests
+    Catch system-level issues, such as a
+    broken database schema, mistaken cache
+    integration, and so on.
+
+    Integrate/combine the unit tested module
+    one by one and test the behavior as a
+    combined unit.
+
+    The main function or goal of this testing
+    is to test the interfaces between the
+    units/modules.
+
+    The individual modules are first tested in
+    isolation.
+
+    Once the modules are unit tested, they are
+    integrated one by one, till all the
+    modules are integrated, to check the
+    combinational behavior, and validate
+    whether the requirements are implemented
+    correctly or not.
+
+    Here we should understand that Integration
+    testing does not happen at the end of the
+    cycle, rather it is conducted
+    simultaneously with the development.
+
+    So in most of the times, all the modules
+    are not actually available to test and
+    here is what the challenge comes to test
+    something which does not exist!
+
+    See "Stub and Driver".
+
+Stub and Driver
+    [#mocking]
+
+    Incremental Approach is carried out by
+    using dummy programs called Stubs and
+    Drivers.
+
+    Stubs and Drivers do not implement the
+    entire programming logic of the software
+    module but just simulate data
+    communication with the calling module.
+
+    Stub: Is called by the Module under Test.
+
+    Driver: Calls the Module to be tested.
+
+UAT
+User acceptance testing
+    Business to look at it to see if it does
+    the thing you want to do.
+
+Smoke Testing
+Build Verification Testing
+    Testing the build for the very first time
+    is to accept or reject the build.
+
+    To verify that the implementations done in
+    a build are working fine.
+
+    A type of software testing that comprises
+    of a non-exhaustive set of tests that aim
+    at ensuring that the most important
+    functions work.
+
+    The result of this testing is used to
+    decide if a build is stable enough to
+    proceed with further testing.
+
+Sanity testing
+    Verify the newly added functionalities,
+    bugs etc.  are working fine.
+
+    This is the first testing on the initial
+    build.
+
+end-to-end tests
+broad stack tests
+    Give you the biggest confidence when you
+    need to decide if your software is working
+    or not.
+
+    End-to-End tests come with their own kind
+    of problems.
+
+    They are notoriously flaky and often fail
+    for unexpected and unforeseeable reasons.
+
+    Quite often their failure is a false
+    positive.
+
+    The more sophisticated your user
+    interface, the more flaky the tests tend
+    to become.
+
+    Browser quirks, timing issues, animations
+    and unexpected popup dialogs are only some
+    of the reasons that got me spending more
+    of my time with debugging than I'd like to
+    admit.
+
+    In a microservices world there's also the
+    big question of who's in charge of writing
+    these tests. Since they span multiple
+    services (your entire system) there's no
+    single team responsible for writing
+    end-to-end tests.
+
+interface
+    Two parties involved:
+    - publisher
+    - subscriber
+
+    In a REST world a provider builds a REST
+    API with all required endpoints; a
+    consumer makes calls to this REST API to
+    fetch data or trigger changes in the other
+    service.
+
+    In an asynchronous, event-driven world, a
+    provider (often rather called publisher)
+    publishes data to a queue; a consumer
+    (often called subscriber) subscribes to
+    these queues and reads and processes data.
+
+publisher
+    [#pubsub]
+
+    Provider.
+
+subscriber
+    [#pubsub]
+    Consumer.
+
+contract tests
+    Splitting your system into many small
+    services often means that these services
+    need to communicate with each other via
+    certain (hopefully well-defined, sometimes
+    accidentally grown) interfaces.
+
+    Interfaces between different applications
+    can come in different shapes and
+    technologies.
+
+    Common ones are:
+    - REST and JSON via HTTPS
+    - RPC using something like gRPC
+    - building an event-driven architecture using queues
+
+Consumer-Driven Contract tests
+CDC tests
+    [contract test]
+
+    Let the consumers drive the implementation
+    of a contract.
+
+    Using CDC, consumers of an interface write
+    tests that check the interface for all
+    data they need from that interface.
+
+    The consuming team then publishes these
+    tests so that the publishing team can
+    fetch and execute these tests easily.
+
+    The providing team can now develop their
+    API by running the CDC tests.
+
+    Once all tests pass they know they have
+    implemented everything the consuming team
+    needs.
+
+validation Testing
+    The process of evaluating software during
+    the development process or at the end of
+    the development process to determine
+    whether it satisfies specified business
+    requirements.
+
+    Validation Testing ensures that the
+    product actually meets the client's needs.
+
+validation testing vs verification testing
+    The distinction between the two terms is
+    largely to do with the role of
+    specifications.
+
+    Validation is the process of checking
+    whether the specification captures the
+    customer's needs.
+
+    Verification is the process of checking
+    that the software meets the specification.
+
+acceptance test
+    A test conducted to determine if the
+    requirements of a specification or
+    contract are met.
+
+    It may involve chemical tests, physical
+    tests, or performance tests.
+
+    - Gherkin
+
+    ewwlinks +/"writing acceptance criteria in Gherkin" "http://webcache.googleusercontent.com/search?q=cache:https://medium.com/@mvwi/story-writing-with-gherkin-and-cucumber-1878124c284c"
+
+characterization tests
+    A means to describe the actual behavior of
+    an existing piece of software, and
+    therefore protect existing behavior of
+    legacy code against unintended changes via
+    automated testing.
+
+test pyramid
+    Top:
+        Acceptance
+        End-to-end
+        GUI
+
+    Middle:
+        API
+        Integration
+        Component tests
+
+    Bottom:
+        Unit tests
+
+Continuous delivery
+    A practice where you automatically ensure
+    that your software can be released into
+    production any time, can help you with
+    that.
+
+    With continuous delivery you use a build
+    pipeline.
+
+build pipeline
+    A automatically test your software and
+    deploy it to your testing and production
+    environments.
+
+test harness
+automated test framework
+    A collection of software and test data
+    configured to test a program unit by
+    running it under varying conditions and
+    monitoring its behavior and outputs.
+
+    It has two main parts:
+    - test execution engine
+    - test script repository
+
+Test Pyramid
+    A metaphor that tells us to group software
+    tests into buckets of different
+    granularity.
+
+    It also gives an idea of how many tests we
+    should have in each of these groups.
+
+    Although the concept of the Test Pyramid
+    has been around for a while, teams still
+    struggle to put it into practice properly.
+
+    This article revisits the original concept
+    of the Test Pyramid and shows how you can
+    put this into practice.
+
+    It shows which kinds of tests you should
+    be looking for in the different levels of
+    the pyramid and gives practical examples
+    on how these can be implemented.
+
+    https://martinfowler.com/articles/practical-test-pyramid.html
+
+AB testing
+    Essentially an experiment where two or
+    more variants of a page are shown to users
+    at random, and statistical analysis is
+    used to determine which variation performs
+    better for a given conversion goal.
+
+Regression automation
+Automated regression testing
+    A software testing technique that utilizes
+    computer-based tools and techniques in
+    testing software after it has been changed
+    or updated.
+
+    It is a test automation process that
+    applies the work flow, plan, scripts and
+    other processes within a regression
+    testing methodology.
+
+Portability testing
+    Software may need to be built and tested
+    on many different platforms.
+
+    It is infeasible for each developer to do
+    this before every commit.
+
+Smoke Testing
+Build Verification Testing
+    A type of software testing that comprises
+    of a non-exhaustive set of tests that aim
+    at ensuring that the most important
+    functions work.
+
+    The result of this testing is used to
+    decide if a build is stable enough to
+    proceed with further testing.

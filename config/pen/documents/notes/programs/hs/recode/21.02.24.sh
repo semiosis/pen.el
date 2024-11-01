@@ -1,0 +1,4 @@
+cd /root/.emacs.d/host/pen.el/src;  "recode" "html.." "#" "<==" "web"
+cd /root/.emacs.d/host/pen.el/src;  "recode" "html.." "#" "<==" "web"
+cd /root/.emacs.d/host/pen.el/src;  "recode" "html.." "#" "<==" "web"
+cd /root/.emacs.d/host/pen.el/src;  "recode" "html.." "#" "<==" "web"

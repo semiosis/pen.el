@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: zipper
+# group: traversal
+# key: zip
+# --
+(require '[clojure.zip :as z])
+
+(def loc (z/vector-zip [[1 2] [3 4]])

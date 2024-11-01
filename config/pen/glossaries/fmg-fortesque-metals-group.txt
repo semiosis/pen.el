@@ -1,0 +1,219 @@
+$NOTES/ws/fmg-fortesque-metals-group/alv/stacks/glossary.txt
+
+belmont
+belmont city
+    A suburb of Perth, the capital city of Western Australia, and is located 7 kilometres (4 mi) east of Perth's central business district (CBD) on the southern bank of the Swan River. Its local government area is the City of Belmont.
+
+MLV
+Mapping Light Vehicle
+
+    Right, so i guess an ATC8010 in an MLV
+    is probably not technically operating as
+    an AECM, since it's not an autonomous
+    system.
+
+    But for all intents and purposes I will be
+    trying to keep the terrain mapper project
+    consistent with ALV, so i'll probably
+    refer to it as an AECM if i need to
+        - Stephen Vidas
+
+AECM
+    http://gitlab.com/fortescue-autonomy/messages/supervisory-messages/-/blob/master/README.md#L197
+    
+    # Definitions
+
+    | Term | Definition                                   |
+    | ---- | -------------------------------------------- |
+    | ECM  | Electronic Control Module - Onboard computer |
+    | AECM | Autonomy ECM onboard a robot                 |
+    | SECM | Safety ECM onboard a robot                   |
+    | SCS  | Supervisory Control System                   |
+
+STM system design
+
+rclcpp
+
+AECM
+    ALV ECM.
+
+    Runs fatos.
+
+Cradlepoint
+    Cradlepoint wireless edge solutions unlock
+    the power of 4G LTE and 5G cellular
+    networks to give your WAN the boundless
+    reach, reliability, and agility it needs
+    to keep up with your business.
+
+SLED
+
+RTK
+Real Time Kinematics
+    [#novatel]
+
+Apex Health Status
+AHS
+
+Super Mega Bot
+SMB
+
+PACMod
+    [ROS node]
+
+    This ROS node is designed to allow the
+    user to control a vehicle with the PACMod
+    drive-by-wire system, board revision 3.
+
+    See [the ROS wiki](http://wiki.ros.org/pacmod3).
+
+Platform
+    Focus areas:
+    - Rangers 2 and 3 delivery
+    - Mine Spec Ranger 1
+    - Continued by-wire development
+    - Scheduling safety break and by wire
+      installs
+    - Planning rack creation and installs
+
+    Actions completed:
+    - By wire control of brakes, steering and
+    - acceleration progressed
+    - First Ranger delivered to FMG
+    - Sensors products (Radar, Lidar, Camera, GPS)
+    - have been selected and purchased
+    - Draft Safety ECM document created
+    - E-shift interface provided by Ford
+
+Onboard
+    Focus areas:
+    - Embotech assessment
+    - Apex - Real time ROS conversion
+
+    Actions completed:
+    - Driver development
+
+Network
+    Focus areas:
+    - Review RF planning with latest road path
+    - Design workshop to be held for overall network design
+
+Site Infrastructure
+    Focus areas:
+    - Finalise permanent infrastructure design
+      and cost proposal
+
+    Actions completed:
+    - Price comparison for permanent Infrastructures.
+
+Department of Transport
+DoT
+
+electronic transmission shifters
+e-shifters
+    Use electronic controls instead of
+    mechanical components to connect the
+    shifter and transmission to change gears
+    and drive modes.
+
+HSE
+Health and Safety Executive
+
+SMP
+Site Management Plan
+
+Earthworks
+    Engineering works created through the
+    processing of parts of the earth's surface
+    involving quantities of soil or unformed
+    rock.
+
+Embotech
+    https://www.embotech.com/
+
+    A leading developer of cutting-edge
+    decision-making software.
+    
+    Our embeddable software empowers
+    autonomous systems to make decisions by
+    solving complex optimization problems in
+    milliseconds, bringing significant
+    improvements in safety, productivity and
+    energy efficiency.
+    
+    Current applications include Automotive,
+    Industrial and Aerospace Solutions.
+
+    Solutions:
+    - Safe Motion Planning
+
+    Products:
+    - Motion Planner
+
+FMEA
+Failure Mode and Effects Analysis
+    A structured approach to discovering
+    potential failures that may exist within
+    the design of a product or process.
+    
+    Failure modes are the ways in which a
+    process can fail.
+    
+    Effects are the ways that these failures
+    can lead to waste, defects or harmful
+    outcomes for the customer.
+
+    The process of reviewing as many
+    components, assemblies, and subsystems as
+    possible to identify potential failure
+    modes in a system and their causes and
+    effects.
+
+ApexOS
+    - ros2
+
+Fortescue Metals Group
+FMG
+
+Cat MineStar
+    Autonomous haulage technology, Command for
+    hauling.            
+
+Twiggy
+twiggy forrest
+Andrew Forrest
+John Andrew Henry Forrest
+    - born 1961
+
+    An Australian businessman.
+    
+    He is best known as the former CEO (and
+    current non-executive chairman) of FMG,
+    but also has interests elsewhere in the
+    mining industry and in cattle stations.
+
+autoware
+autoware.ai
+    [#ROS 1]
+
+    v +/"autoware.ai" "$NOTES/ws/glossaries/robotics.txt"
+
+AutowareAuto
+    [#ROS 2]
+
+    A clean slate rewrite of Autoware.AI based
+    on ROS 2.
+
+    The world's first "all-in-one" open-source
+    software for self-driving vehicles hosted
+    under the Autoware Foundation.
+
+autoware.ai vs AutowareAuto
+    The former is ROS1-based.
+    The latter is ROS2-based.
+
+pacmod
+    fmg-find-reference-to pacmod
+
+AutonomousStuff
+AStuff

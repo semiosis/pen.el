@@ -1,0 +1,7 @@
+cd 'harrys adventures'
+» ls
+ Harry Potter and the Chamber of Secrets.txt  Harry Potter and the Deathly Hallows.txt  Harry Potter and the Goblet of Fire.txt  Harry Potter and the Half-Blood Prince.txt  Harry Potter and the Order of the Phoenix.txt  Harry Potter and the Philosopher's Stone.txt  Harry Potter and the Prisoner of Azkaban.txt
+» cd ..
+» cd core
+» ls
+

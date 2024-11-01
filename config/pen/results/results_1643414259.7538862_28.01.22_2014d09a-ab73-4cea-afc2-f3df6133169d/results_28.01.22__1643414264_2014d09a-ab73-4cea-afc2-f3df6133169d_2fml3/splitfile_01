@@ -1,0 +1,8 @@
+ we might want to use a different directory for the cache
+cache-dir: $CACHE_DIR
+
+# The default shell to use
+shell: /bin/bash
+
+# The default editor to use
+editor: vi

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: clpfd
+# group: modules
+# key: clpfd
+# --
+:- use_module(library(clpfd)).

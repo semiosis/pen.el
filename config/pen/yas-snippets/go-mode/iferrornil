@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: iferrornil
+# key: ifenil
+# --
+if err != nil {
+return nil, errors.Trace(err)
+}

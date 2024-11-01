@@ -1,0 +1,20 @@
+
+'format'
+Aug 28 13:25:46 [("filename" 30 t)
+Aug 28 13:25:46  ("title" 30 t)
+Aug 28 13:25:46  ("vars" 20 t)
+Aug 28 13:25:46  ("filter" 10 t)
+Aug 28 13:25:46  ("conversation" 15 t)
+Aug 28 13:25:46  ("external" 15 t)
+Aug 28 13:25:46  ("in development" 15 t)
+Aug 28 13:25:46  ("needs work" 10 t)]
+
+'format'
+Aug 28 13:27:27 [("filename" 30 t)
+Aug 28 13:27:27  ("title" 30 t)
+Aug 28 13:27:27  ("vars" 20 t)
+Aug 28 13:27:27  ("filter" 10 t)
+Aug 28 13:27:27  ("conversation" 15 t)
+Aug 28 13:27:27  ("external" 15 t)
+Aug 28 13:27:27  ("in development" 15 t)
+Aug 28 13:27:27  ("needs work" 10 t)]

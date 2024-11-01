@@ -1,0 +1,348 @@
+autoware auto
+    The open source algorithms built upon ROS2.
+
+ADE
+    Makes it easy to build images through CI.
+
+    - What type of CI?
+
+rclcpp
+    https://github.com/ros2/rclcpp
+    
+    rclcpp (ROS Client Library for C++)
+
+--merge-install
+    vim +/"--isolated The colcon option --merge-install has the inverse logic." "$DUMP$NOTES/ws/ros2/colcon-readthedocs-io-en-released.txt"
+
+rviz vs rqt vs gazebo
+    https://answers.ros.org/question/317316/when-should-i-use-rviz-rqt-or-gazebo/
+
+    As Gazebo isn't a visualisation tool, but
+    a dynamics simulator, I don't believe
+    there is actually much overlap between it
+    and the other tools you mention (yes,
+    Gazebo has a UI component, but that's not
+    a generic visualisation tool , it's
+    completely tied to gzserver).
+
+    Viz is "[..] a 3D visualizer for the Robot
+    Operating System (ROS) framework"
+    according to the description of its Github
+    repository.
+
+    RQT is "[..] a Qt-based framework for GUI
+    development for ROS" according the wiki
+    page.
+
+rosbag
+    This is a set of tools for recording from
+    and playing back to ROS topics. It is
+    intended to be high performance and avoids
+    deserialization and reserialization of the
+    messages.
+
+rosbag2
+    Part of the ROS 2 command line interfaces.
+    This repo introduces a new verb called bag
+    and thus serves as the entry point of
+    using rosbag2.
+
+    As of the time of writing, there are three
+    commands available for ros2 bag:
+    - record
+    - play
+    - info
+
+    Commands:
+        # record all topics currently available in the system:
+        ros2 bag record -a
+
+bag file
+
+workspace
+    Example:
+        ewwlinks +/"Step 2: Source the ROS2 workspace" "https://www.theconstructsim.com/ros2-tutorials-5-how-to-create-a-ros2-package-for-python-update/"
+
+rviz
+    A 3d visualization environment for robots
+    using ROS. 
+
+roscore
+    A collection of nodes and programs that
+    are pre-requisites of a ROS-based system.
+    
+    You must have a roscore running in order
+    for ROS nodes to communicate.
+    
+    It is launched using the roscore command.
+
+    NOTE: If you use roslaunch, it will
+    automatically start roscore if it detects
+    that it is not already running (unless the
+    --wait argument is supplied). 
+
+    roscore will start up: 
+    - a ROS Master 
+    - a ROS Parameter Server 
+    - a rosout logging node 
+
+node
+    A managed node presents a known interface,
+    executes according to a known life cycle
+    state machine, and otherwise can be
+    considered a black box.
+
+    This allows freedom to the node developer
+    on how they provide the managed life cycle
+    functionality, while also ensuring that
+    any tools created for managing nodes can
+    work with any compliant node.
+
+    Follows the Node Life Cycle.
+        
+    There are 4 primary states:
+    - Unconfigured
+    - Inactive
+    - Active
+    - Finalized
+
+    Questions to ask:
+    - Is the node managed?
+
+    6 Transition states:
+    - Configuring
+    - CleaningUp
+    - ShuttingDown
+    - Activating
+    - Deactivating
+    - ErrorProcessing
+
+    Design document:
+        $HOME/OneDrive/Project - ALV/Engineering/Architecture/Nodes/Sample Node.md
+
+colcon
+    A build tool that can build packages of
+    multiple build systems (python, cmake,
+    ament_cmake, ament_python, catkin...).
+
+    The build system used for ROS 1 is catkin.
+
+    The build systems used for ROS 2 are
+    ament_cmake and ament_python.
+
+ament
+    An evolution of catkin.
+
+    - ament_package
+      A Python package providing an API to
+      parse the files containing the meta
+      information.
+
+    - ament_cmake
+      Contains a set of packages which provide
+      CMake based functionality. The features
+      are split across several packages in
+      order to ensure that they are cleanly
+      separated from each other.
+
+    - ament_lint
+      contains a set of packages which perform
+      linting tasks. For a set of linters a
+      ROS 2 specific configuration is provided
+      which can be used via the command line
+      as well as from within CMake (commonly
+      as a CTest).
+
+    - ament_tools
+      A Python package which provides command
+      line tools to build, test, install, and
+      uninstall packages.
+
+    - ament_index
+      Contains a set of packages which provide
+      API to access the ament resource index.
+      Currently it only contains a Python
+      implementation but other languages like
+      C++ should follow.
+
+melodic
+ROS Melodic Morenia distribution
+ros1
+
+dashing
+ros2
+    https://index.ros.org/doc/ros2/Installation/Dashing/
+
+colcon
+    [#ros2}
+
+    ewwlinks +/"4 Using colcon to build packages" "https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/"
+
+roslaunch2
+    [#ros1]
+
+    Versatile, flexible and dynamic launch
+    configurations for the Robot Operating
+    System (ROS 1) using Python (v2 & 3)
+    http://CodeFinder2.github.io/roslaunch2/
+
+ament
+    A meta build system to improve building
+    applications which are split into separate
+    packages. It consists of two major parts:
+    - a build system (e.g. CMake, Python
+      setuptools) to configure, build, and
+      install a single package
+    - a tool to invoke the build of individual
+      packages in their topological order
+
+rosbag
+    v +/"rosbag play --clock \*.bag" "$MYGIT/fortescue-autonomy/wiki.wiki/Linux/Cheat-Sheet-ROS1.md"
+
+    It has a python interface.
+
+    v +/"import rosbag" "$MYGIT/fortescue-autonomy/alv/novatel/test/plot_time.py"
+
+rosbag2
+    The ros2 version.
+    
+    Part of the ROS 2 command line interfaces.
+    
+    This repo introduces a new verb called bag
+    and thus serves as the entry point of
+    using rosbag2.
+    
+    As of the time of writing, there are three
+    commands available for ros2 bag:
+
+.stamp
+    NOT a timestamp file.
+
+    A can't find on Google what this file
+    extension means.
+
+    It's a temporary file In the ROS build
+    process, I think.
+
+    cd "$MYGIT/fortescue-autonomy/alv"; tp find-here-path "*.stamp" | v
+
+PACMod
+Platform Actuation and Control MODule
+pacmod
+    v +/"# PACMod (Platform Actuation and Control MODule) Vehicle Interface for Board Revision 3 #" "$MYGIT/fortescue-autonomy/alv/pacmod3/README.md"
+
+rosmsg
+    [package]
+
+    Contains two command-line tools:
+    - rosmsg
+    - rossrv
+    
+    http://wiki.ros.org/action/show/rosmsg?action=show&redirect=rossrv
+
+    rosmsg and rossrv are handy command-line
+    tools that provide reference information
+    for developers and also serve as a
+    powerful introspection tool for learning
+    more about data being transmitted in ROS.
+
+    For example, if you are using a message in
+    your code, you can type rosmsg show at the
+    command-line to look up its fields:
+
+rosmsg
+    [command-line tool]
+
+    Displays information about ROS Message
+    types.
+
+rossrv
+    [command-line tool]
+
+    Displays information about ROS Service
+    types.
+
+catkin
+    The official build system of ROS and the
+    successor to the original ROS build
+    system, rosbuild.
+    
+    catkin combines CMake macros and Python
+    
+    scripts to provide some functionality on
+    top of CMake's normal workflow.
+    
+    catkin was designed to be more
+    conventional than rosbuild, allowing for
+    better distribution of packages, better
+    cross-compiling support, and better
+    portability.
+    
+    catkin's workflow is very similar to
+    CMake's but adds support for automatic
+    'find package' infrastructure and building
+    multiple, dependent projects at the same
+    time.
+
+    Portability
+        One of the biggest problems with
+        rosbuild is that it is not [easily]
+        portable to all operating systems,
+        especially Microsoft Windows.
+        
+        This is because rosbuild utilizes a
+        mixture of Bash scripts, GNU Make, and
+        CMake to build code.
+        
+        In rosbuild, when we invoke the build
+        system, we have to call custom scripts
+        provided with rosbuild such as
+        rosmake.
+        
+        rosmake is a Bash script that calls
+        make which itself calls CMake which
+        generates yet another makefile and
+        finally invoking make again!
+        
+        Catkin is much more elegant and is
+        invoked by simply invoking CMake.
+
+        Catkin is implemented as custom CMake
+        macros along with some Python code.
+        
+        As CMake and Python are portable,
+        catkin is easily portable to any
+        system that supports both Python and
+        CMake.
+        
+        In fact, catkin projects can be used
+        seamlessly with other CMake projects
+        -- when catkin projects are built they
+        also generate export information that
+        allows them to be found with the CMake
+        find_package() function.
+
+* Initialisation phase
+
+* What tools do we 
+htop -- examine memory info on a per-process basis
+
+developing-production-quality-algorithms.html
+
+* Diagnostics
+Put into every node.
+
+
+.msg
+    [file type]
+
+    There are two parts to a .msg file: fields
+    and constants.
+    
+    Fields are the data that is sent inside of
+    the message.
+    
+    Constants define useful values that can be
+    used to interpret those fields (e.g. enum-
+    like constants for an integer value). 
+    

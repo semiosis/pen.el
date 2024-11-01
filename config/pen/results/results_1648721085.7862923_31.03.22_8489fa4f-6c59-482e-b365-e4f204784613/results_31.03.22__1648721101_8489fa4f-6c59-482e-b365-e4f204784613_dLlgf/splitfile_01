@@ -1,0 +1,23 @@
+- 1. person 1
+- 2. person 2
+- 3. person 3
+- 4. person 4
+
+
+'''
+
+
+def main():
+    '''
+    main function for testing purposes
+    '''
+
+    clus = Cluster()
+
+    clus.cluster_from_file(sys.argv[1])
+
+    print('\n-----------Cluster 1-------------------\n')
+    for i in range(clus.n_clusters):
+        print('\nTopic:', clus.topics[i], '\nExperts:')
+        for j in range(clus.n_top_experts):
+            print(clus.experts[i][j

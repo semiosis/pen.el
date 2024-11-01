@@ -1,0 +1,45 @@
+task: "multiplex"
+doc: "Run multiple prompts under one prompt"
+in-development: on
+tags: meta
+notes:
+- designed for Codex
+prompt-version: 1
+# Use the variadic-transformer to transform multiple inputs into prompts.
+# I should probably use transducers.
+
+# <va> is the variadic nth, <vi> is the counter
+prompt: |+
+    Inputs:
+
+    <vas>
+    
+    Outputs:
+
+    <outerdelim>Prompt 1
+
+# Use repeater:?
+variadic-template:
+    <outerdelim>Prompt <vi>
+    <va>
+    <outerdelim>
+
+engine: "OpenAI Codex"
+defs:
+  # Find a good one
+- outerdelim: "~`~`~`"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+
+# penf pf-invent-a-new-word/1 "variadic transformer"
+# variadic transformers
+# This would be used instead of the variadic-template, which is a simplification
+# The default transvariadicator is the variadic-template function.
+transvariadicator:
+filter: on
+completion: off
+insertion: off

@@ -1,0 +1,11 @@
+
+
+travelToSchool destination = do
+
+putStrLn $ unlines [ " I am going to " , destination , " . " ]
+
+main :: IO ()
+
+main = do
+
+args <- getArgs

@@ -1,0 +1,16 @@
+
+I think all that matters is Y. If there is no Y then all sorts of reasons are made for the relationship failing which are based on behaviour that are hard-to-define.
+"""
+
+# Raw text
+raw_text = text
+
+# A list of words
+words = []
+
+# Break the text into sentences
+sentences = break_into_sentences(raw_text)
+
+# Break the sentences into words
+for s in sentences:
+    words.extend(break_

@@ -1,0 +1,22 @@
+- 1. Beg, M. 2006. An overview of shape-from-silhouette
+  methods for 3D object reconstruction from a single image.
+  Pattern Analysis and Machine Intelligence, 28(10):1213–1239.
+"""
+
+
+def make_get_file_function(filename):
+    def get_file():
+        with open(filename) as f:
+            return f.read().strip()
+
+    return get_file
+
+
+slide = SlideSetFactory()
+
+
+@pytest.fixture(scope="session")
+def get_new_slides():
+    """Get a new SlideSet instance with no already generated slides."""
+
+    slides = slide("test", "

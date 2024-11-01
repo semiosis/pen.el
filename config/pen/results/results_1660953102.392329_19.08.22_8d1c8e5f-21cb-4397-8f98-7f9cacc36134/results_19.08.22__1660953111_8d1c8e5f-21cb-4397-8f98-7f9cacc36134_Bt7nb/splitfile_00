@@ -1,0 +1,27 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: Create a Library
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Create a Library
+      zabbix_host:
+        server_url: "http://localhost/zabbix/"
+        login_user: Admin
+        login_password: zabbix
+        host_name: "Library"
+        host_groups:
+          - "Library"
+        state: present
+      delegate_to: localhost
+    - name: Create a Media Library
+      zabbix_mediatype:
+        server_url: "http://localhost/zabbix/"
+        login_user: Admin
+        login_password: zabbix
+        mediatype_name: "Media Library"
+        state: present
+      delegate_to: localhost
+    - name: Create a Media Library
+      zabbix_usermedia:

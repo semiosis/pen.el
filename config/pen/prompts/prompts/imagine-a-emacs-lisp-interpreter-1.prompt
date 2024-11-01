@@ -1,0 +1,12 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: interpreter ilambda
+language: emacs lisp
+prompt: |+
+    -UUU:----F1  *scratch*      All L4     (Lisp Interaction ElDoc) ------
+    Eval: <expression>
+user-prompt: "^Eval: "
+vars:
+- "expression"
+examples:
+- "( + 5 5)"

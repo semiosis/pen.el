@@ -1,0 +1,944 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 28 Apr 2024 01:07:53 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=20
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+x-powered-by: WP Engine
+X-TEC-API-VERSION: v1
+X-TEC-API-ROOT: https://www.mbts.edu/wp-json/tribe/events/v1/
+X-TEC-API-ORIGIN: https://www.mbts.edu
+Vary: Accept-Encoding,Cookie
+X-Cacheable: YES:43200.000
+Cache-Control: max-age=43200, must-revalidate
+X-Cache: HIT: 7
+X-Cache-Group: normal
+
+<!DOCTYPE HTML>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if (gt IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-M5KQMW6');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30626997-6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-30626997-6');
+	</script>
+	
+			<title>Don Whitney - Midwestern Baptist Theological Seminary</title>
+	
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--responsive goodness-->
+	
+	<!--<link rel="shortcut icon" href="https://mbts.wpenginepowered.com/wp-content/themes/saratoga/assets/favicon.ico"/>-->
+	
+	<script type="text/javascript">
+		var elm = document.getElementsByTagName("html")[0];
+		elm.style.display = "none";
+		document.addEventListener("DOMContentLoaded", function(event) {
+			elm.style.display = "block";
+		});
+	</script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v21.6 (Yoast SEO v21.6) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Free resources and giveaways to express our gratitude during Pastor Appreciation Month." />
+	<link rel="canonical" href="https://www.mbts.edu/whitney/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Don Whitney" />
+	<meta property="og:description" content="Free resources and giveaways to express our gratitude during Pastor Appreciation Month." />
+	<meta property="og:url" content="https://www.mbts.edu/whitney/" />
+	<meta property="og:site_name" content="Midwestern Baptist Theological Seminary" />
+	<meta property="article:publisher" content="https://www.facebook.com/midwestern.seminary" />
+	<meta property="article:modified_time" content="2024-04-11T15:22:57+00:00" />
+	<meta property="og:image" content="https://www.mbts.edu/wp-content/uploads/2024/04/240405_whitney_faculty_announcement_promo_web_feature.jpg" />
+	<meta property="og:image:width" content="2200" />
+	<meta property="og:image:height" content="1238" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@mbts" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.mbts.edu/whitney/","url":"https://www.mbts.edu/whitney/","name":"Don Whitney - Midwestern Baptist Theological Seminary","isPartOf":{"@id":"https://www.mbts.edu/#website"},"primaryImageOfPage":{"@id":"https://www.mbts.edu/whitney/#primaryimage"},"image":{"@id":"https://www.mbts.edu/whitney/#primaryimage"},"thumbnailUrl":"https://www.mbts.edu/wp-content/uploads/2024/04/240405_whitney_faculty_announcement_promo_web_feature.jpg","datePublished":"2024-04-10T20:49:57+00:00","dateModified":"2024-04-11T15:22:57+00:00","description":"Free resources and giveaways to express our gratitude during Pastor Appreciation Month.","breadcrumb":{"@id":"https://www.mbts.edu/whitney/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.mbts.edu/whitney/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.mbts.edu/whitney/#primaryimage","url":"https://www.mbts.edu/wp-content/uploads/2024/04/240405_whitney_faculty_announcement_promo_web_feature.jpg","contentUrl":"https://www.mbts.edu/wp-content/uploads/2024/04/240405_whitney_faculty_announcement_promo_web_feature.jpg","width":2200,"height":1238},{"@type":"BreadcrumbList","@id":"https://www.mbts.edu/whitney/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mbts.edu/"},{"@type":"ListItem","position":2,"name":"Don Whitney"}]},{"@type":"WebSite","@id":"https://www.mbts.edu/#website","url":"https://www.mbts.edu/","name":"Midwestern Baptist Theological Seminary","description":"We are for the church.","publisher":{"@id":"https://www.mbts.edu/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.mbts.edu/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.mbts.edu/#organization","name":"Midwestern Baptist Theological Seminary","url":"https://www.mbts.edu/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.mbts.edu/#/schema/logo/image/","url":"https://www.mbts.edu/wp-content/uploads/2018/11/MBTS-seal-fill-grey-01.png","contentUrl":"https://www.mbts.edu/wp-content/uploads/2018/11/MBTS-seal-fill-grey-01.png","width":4268,"height":4268,"caption":"Midwestern Baptist Theological Seminary"},"image":{"@id":"https://www.mbts.edu/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/midwestern.seminary","https://twitter.com/mbts"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='stylesheet' id='sbi_styles-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-common-skeleton-style-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.18' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-tooltip-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.18' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://mbts.wpenginepowered.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.3' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ctf_styles-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='uaf_client_css-css' href='https://mbts.wpenginepowered.com/wp-content/uploads/useanyfont/uaf.css?ver=1702439791' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-job-listings-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css?ver=598383a28ac5f9f156e4' type='text/css' media='all' />
+<link rel='stylesheet' id='magpopup-css' href='https://mbts.wpenginepowered.com/wp-content/themes/saratoga/css/magnific-popup.css?ver=1675893653' type='text/css' media='all' />
+<link rel='stylesheet' id='global-css-css' href='https://mbts.wpenginepowered.com/wp-content/themes/saratoga/css/global.css?ver=1707869446' type='text/css' media='all' />
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+
+<link rel="alternate" type="application/rss+xml" title="Podcast RSS feed" href="https://www.mbts.edu/feed/podcast" />
+
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://www.mbts.edu"><link rel="https://theeventscalendar.com/" href="https://www.mbts.edu/wp-json/tribe/events/v1/" />		<style type="text/css" id="wp-custom-css">
+			form.post-password-form { 
+max-width:400px; margin:0 auto; background:#fff; border-radius:3px; border:1px solid rgba(245,245,245,0.9); box-shadow:0px 4px 8px rgba(200,200,200,0.25); padding:40px; display:flex; flex-direction:column; }
+
+form.post-password-form p:last-child { display:Flex; flex-direction:column; justify-content:center; align-items:center; }
+
+form.post-password-form label { width:100%; text-align:center; margin-top:20px; }
+
+form.post-password-form input[type="password"] { height:40px; border:1px solid #eee; width:100%; display:block; margin-top:5px; }
+
+
+body.page-template-page-protected [data-st="st-eight"] { margin:0 auto !important; }
+
+body.page-template-page-protected [data-st="st-eight"] h1 { text-align:center !important; }
+
+.na_gform_checkbox legend {
+    color: #5C5A56;
+    text-transform: inherit;
+}
+
+.na_gform_checkbox legend,
+.na_gform_checkbox label {
+    color: #5C5A56;
+    text-transform: inherit;
+}		</style>
+			<link rel="stylesheet" type="text/css" href="https://mbts.wpenginepowered.com/wp-content/themes/saratoga/style.min.css?ver=1698787077">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.typekit.net/mws6yab.css">
+
+
+
+
+
+	
+	<script id="mcjs">
+		! function(c, h, i, m, p) {
+			m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+		}(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/4bfccf87f1ae2e87932e5c764/c4a1266b0d6a541c5fe59d01b.js");
+	</script>
+
+
+	<!-- Start VWO Async SmartCode -->
+	<!-- We do not recommend using tag managers (like Google Tag Manager) to install VWO SmartCode. By default, all tag managers load VWO code asynchronously, which can cause page flickers. To know more -->
+	<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+	<script type='text/javascript' id='vwoCode'>
+		window._vwo_code = window._vwo_code || (function() {
+			var account_id = 729229,
+				version = 1.5,
+				settings_tolerance = 2000,
+				library_tolerance = 2500,
+				use_existing_jquery = false,
+				is_spa = 1,
+				hide_element = 'body',
+				hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+				/* DO NOT EDIT BELOW THIS LINE */
+				f = false,
+				d = document,
+				vwoCodeEl = d.querySelector('#vwoCode'),
+				code = {
+					use_existing_jquery: function() {
+						return use_existing_jquery
+					},
+					library_tolerance: function() {
+						return library_tolerance
+					},
+					hide_element_style: function() {
+						return '{' + hide_element_style + '}'
+					},
+					finish: function() {
+						if (!f) {
+							f = true;
+							var e = d.getElementById('_vis_opt_path_hides');
+							if (e) e.parentNode.removeChild(e)
+						}
+					},
+					finished: function() {
+						return f
+					},
+					load: function(e) {
+						var t = d.createElement('script');
+						t.fetchPriority = 'high';
+						t.src = e;
+						t.type = 'text/javascript';
+						t.onerror = function() {
+							_vwo_code.finish()
+						};
+						d.getElementsByTagName('head')[0].appendChild(t)
+					},
+					getVersion: function() {
+						return version
+					},
+					getMatchedCookies: function(e) {
+						var t = [];
+						if (document.cookie) {
+							t = document.cookie.match(e) || []
+						}
+						return t
+					},
+					getCombinationCookie: function() {
+						var e = code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi);
+						e = e.map(function(e) {
+							try {
+								var t = decodeURIComponent(e);
+								if (!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)) {
+									return ''
+								}
+								return t
+							} catch (e) {
+								return ''
+							}
+						});
+						var i = [];
+						e.forEach(function(e) {
+							var t = e.match(/([\d,]+)/g);
+							t && i.push(t.join('-'))
+						});
+						return i.join('|')
+					},
+					init: function() {
+						if (d.URL.indexOf('__vwo_disable__') > -1) return;
+						window.settings_timer = setTimeout(function() {
+							_vwo_code.finish()
+						}, settings_tolerance);
+						var e = d.createElement('style'),
+							t = hide_element ? hide_element + '{' + hide_element_style + '}' : '',
+							i = d.getElementsByTagName('head')[0];
+						e.setAttribute('id', '_vis_opt_path_hides');
+						vwoCodeEl && e.setAttribute('nonce', vwoCodeEl.nonce);
+						e.setAttribute('type', 'text/css');
+						if (e.styleSheet) e.styleSheet.cssText = t;
+						else e.appendChild(d.createTextNode(t));
+						i.appendChild(e);
+						var n = this.getCombinationCookie();
+						this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + +is_spa + '&vn=' + version + (n ? '&c=' + n : ''));
+						return settings_timer
+					}
+				};
+			window._vwo_settings_timer = code.init();
+			return code;
+		}());
+	</script>
+	<!-- End VWO Async SmartCode -->
+</head>
+
+<body class="page-template-default page page-id-72884 tribe-no-js saratoga">
+
+	<!-- WCAG compliance insert above header, Makes tab navigation able to skip to main content of page -->
+	<a tabindex="0" class="skip_link_tabindex" href="#main_content">Skip to main content</a>
+
+	<!-- This scrip sets the focus to the main content so that the doesn't go back to header -->
+	<script>
+		jQuery(function($) {
+			$(".skip_link_tabindex").click(function() {
+				$('#main_content').focus();
+			});
+		});
+	</script>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5KQMW6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<header>
+
+				<nav role="menu">
+			<div data-st="st-row" class="pw">
+				<nav data-st="st-three">
+					<div class="menu-utility-nav-container"><ul id="menu-utility-nav" class="menu"><li id="menu-item-136" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136"><a href="https://www.jasonkallen.com">President</a></li>
+<li id="menu-item-21342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21342"><a href="https://www.mbts.edu/about/faculty/">Faculty</a></li>
+<li id="menu-item-18641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18641"><a href="https://www.mbts.edu/events/">Events</a></li>
+<li id="menu-item-18640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18640"><a href="https://www.mbts.edu/about/conference/">Conferences</a></li>
+<li id="menu-item-138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-138"><a href="https://shop.mbts.edu/">Store</a></li>
+<li id="menu-item-29780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29780"><a href="/give/">Give</a></li>
+</ul></div>				</nav>
+				<!--left nav-->
+
+				<div data-st="st-seven">
+					<form role="search" method="get" id="searchform" action="/">
+						<div><label class="screen-reader-text" for="s">Search for:</label>
+							<input type="text" placeholder="Search Site" name="s" id="s" /><!-- Really, you care about the search value? A little touchy, no? -->
+							<input type="submit" id="searchsubmit" value="Search" />
+						</div>
+					</form>
+				</div>
+
+				<nav data-st="st-two"><div class="menu-apply-menu-container"><ul id="menu-apply-menu" class="menu"><li id="menu-item-31366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31366"><a href="https://www.mbts.edu/future-students/visit-campus/">Visit Campus</a></li>
+<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="https://www.mbts.edu/future-students/request-information/">Request Info</a></li>
+<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="https://www.mbts.edu/future-students/apply-now/">Apply Now</a></li>
+</ul></div></nav>
+				<!--right nav -->
+			</div>
+		</nav>
+		<div data-st="st-row" class="pw">
+			<div data-st="st-three">
+				<!--<h1><a href="https://www.mbts.edu">Midwestern Baptist Theological Seminary</a></h1>-->
+
+				<a href="https://www.mbts.edu"><img src="https://mbts.wpenginepowered.com/wp-content/themes/saratoga/assets/mbts_header_logo.svg" alt="MBTS logo link to homepage" /> </a>
+
+
+
+
+			</div>
+			<nav data-st="st-eight"><div class="menu-primary-menu-container"><ul id="menu-primary-menu" class="menu"><li id="menu-item-19507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19507"><a href="https://www.mbts.edu/about/">About</a></li>
+<li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="https://www.mbts.edu/future-students/">Admissions</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-126"><a href="https://www.mbts.edu/degrees/">Academics</a>
+<ul class="sub-menu">
+	<li id="menu-item-71188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71188"><a href="https://www.mbts.edu/degrees/">Degrees</a></li>
+	<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="https://www.mbts.edu/degrees/college/">Spurgeon College</a></li>
+	<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="https://www.mbts.edu/degrees/masters-studies/">Masters Studies</a></li>
+	<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="https://www.mbts.edu/degrees/doctoral-studies/">Doctoral Studies</a></li>
+	<li id="menu-item-68368" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68368"><a href="https://www.mbts.edu/degrees/masters-studies/ftc-cohorts/">For the Church Cohorts</a></li>
+	<li id="menu-item-36365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36365"><a href="https://www.mbts.edu/degrees/global-campus/">Global Campus</a></li>
+	<li id="menu-item-31552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31552"><a href="https://www.mbts.edu/degrees/campus/">Extension Centers</a></li>
+	<li id="menu-item-30481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30481"><a href="https://www.mbts.edu/about/faculty/">Meet Our Faculty</a></li>
+	<li id="menu-item-21330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21330"><a href="https://www.mbts.edu/degrees/womens-studies/">Women&#8217;s Studies</a></li>
+	<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="https://www.mbts.edu/degrees/asian-studies/">Asian Studies</a></li>
+	<li id="menu-item-50577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50577"><a href="https://www.mbts.edu/degrees/estudios-en-espanol/">Spanish Studies</a></li>
+</ul>
+</li>
+<li id="menu-item-124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="https://www.mbts.edu/current-students/">Current Students</a></li>
+<li id="menu-item-18639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18639"><a href="https://www.mbts.edu/alumni/">Alumni &#038; Friends</a></li>
+<li id="menu-item-123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="https://www.mbts.edu/resources/">Resources</a></li>
+</ul></div></nav>
+			<div data-st="st-one">
+				<a id="Sesame" href="#scrollTo">
+					<div class="menu"><span>.</span><span>.</span><span>.</span></div>
+					<label for="Sesame">Menu</label>
+				</a>
+			</div>
+		</div>
+	</header>
+
+			<main data-st="st-grid" class="cf" >
+		
+
+		<!-- First, let's figure out what type of header has been selected. Five options:
+Tiny - plain header (no BG)
+Small - breadcrumb and cta button
+Large - header with graphics options
+Jumbo - large header plus a custom splash area
+Graphic - 16:9 image, and no title -->
+
+					<section role="heading" class="splash size-graphic none">
+				<!-- Optional Cover Image Code -->
+									<div class="cover-image " style='background: url(https://mbts.wpenginepowered.com/wp-content/uploads/2024/04/240405_whitney_faculty_announcement_promo_web_feature.jpg) no-repeat center center; background-size:cover;' ></div>
+								<h1>Don Whitney</h1>
+			</section>
+		
+
+
+
+<!---->
+
+<!-- ACF's flexible layout field -->
+
+			<!-- Show the custom background image, if it exists -->
+			
+			<section  class="none " >
+				<div class="pw" data-st="st-row">
+					<div data-st="st-twelve">
+						<h4 class="dw_title1">Midwestern Welcomes Don Whitney</h4>
+<p style="text-align: center; color: #bda262!important; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px; margin-bottom: 30px;">Elected to serve as Professor of Biblical Spirituality in the John H. Powell Endowed Chair of Pastoral Ministry</p>
+<p class="type" style="font-size: 1.25rem!important;">We&#8217;re thrilled to announce that Dr. Don Whitney has been elected to the faculty at Midwestern Seminary. Dr. Whitney has served the church faithfully as both a professor and an author. To celebrate Dr. Whitney’s appointment, we’ve curated exclusive content, videos, and giveaways to introduce you to one of today’s most influential figures in the study and practice of spiritual disciplines.</p>
+<p style="text-align: center;"><a class="blue" role="button" href="#video" target="_blank" rel="noopener noreferrer">Video Announcement</a> <a class="blue" role="button" href="#free">Free Praying the Bible E-Book</a> <a class="blue" role="button" href="#four">Four Part Email Series</a></p>
+
+					</div>
+				</div>
+			</section>
+
+			
+			
+			<!-- Show the custom background image, if it exists -->
+			
+			<section  class="none " >
+				<div class="pw" data-st="st-row">
+					<div data-st="st-twelve">
+						<div id="video" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/933303555?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="New Professor of Biblical Spirituality Announcement"></iframe></div>
+<p><script src="https://player.vimeo.com/api/player.js"></script></p>
+<p>&nbsp;<br />
+<center><a class="blue" role="button" href="https://www.mbts.edu/2024/04/donald-s-whitney-joins-midwestern-seminary-faculty-as-professor-of-biblical-spirituality-elected-to-john-h-powell-endowed-chair-of-pastoral-ministry/">Read the full News story</a></center></p>
+<style>.dw_title1{text-align: center; margin-bottom: 0; font-size: 4.0rem;} .dw_title2{text-align: center; margin-bottom: 0; font-size: 3.5rem;} @media (min-width: 639px){.cover-image{background: url(https://mbts.wpenginepowered.com/wp-content/uploads/2024/04/240408_Whitney_page_header.jpg) no-repeat center center !important; background-size: cover !important;}.dw_title1{font-size: 2.4rem !important;}.dw_title2{font-size: 2.4rem !important;}}</style>
+
+					</div>
+				</div>
+			</section>
+
+			
+			
+			<!-- Show the custom background image, if it exists -->
+			
+			<section  class="none " >
+				<p><span id="free"></span></p>
+							</section>
+
+			
+		
+			<section class="graphic cf ">
+				<div class="cf">
+										<img src="https://mbts.wpenginepowered.com/wp-content/uploads/2024/04/prayingthebible_web_feature.jpg" class="graphic-mobile" alt="Link Graphic"/>
+					<img src="https://mbts.wpenginepowered.com/wp-content/uploads/2024/04/prayingthebible_landing_page_header.jpg" class="graphic-desktop" alt="Link Graphic"/>
+				</div>
+			</section>
+
+		
+			<!-- Show the custom background image, if it exists -->
+			
+			<section  class="none tight" >
+				<div class="pw" data-st="st-row">
+					<div data-st="st-twelve">
+						<h4 class="dw_title2">Free E-Book Copy of <em>Praying the Bible</em></u></h4>
+<p class="type" style="font-size: 1.25rem!important;">Through May 15, we’re giving away free downloads of Dr. Whitney’s foundational work on praying Scripture, <em>Praying the Bible</em>. Complete the form below and we’ll email you your free digital copy of <em>Praying the Bible</em>.</p>
+<script type="text/javascript"></script>
+                <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_137' style='display:none'><div id='gf_137' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_137' id='gform_137'  action='/whitney/#gf_137' data-formid='137' novalidate>
+                        <div class='gform-body gform_body'><ul id='gform_fields_137' class='gform_fields top_label form_sublabel_above description_above'><li id="field_137_1"  class="gfield gfield--type-name gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_1"><label class='gfield_label gform-field-label gfield_label_before_complex'  >Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row' id='input_137_1'>
+                            
+                            <span id='input_137_1_3_container' class='name_first gform-grid-col gform-grid-col--size-auto' >
+                                                    <label for='input_137_1_3' class='gform-field-label gform-field-label--type-sub '>First</label>
+                                                    <input type='text' name='input_1.3' id='input_137_1_3' value=''   aria-required='true'     />
+                                                </span>
+                            
+                            <span id='input_137_1_6_container' class='name_last gform-grid-col gform-grid-col--size-auto' >
+                                                            <label for='input_137_1_6' class='gform-field-label gform-field-label--type-sub '>Last</label>
+                                                            <input type='text' name='input_1.6' id='input_137_1_6' value=''   aria-required='true'     />
+                                                        </span>
+                            
+                        </div></li><li id="field_137_2"  class="gfield gfield--type-email gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_2"><label class='gfield_label gform-field-label' for='input_137_2' >Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_137_2' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  />
+                        </div></li><li id="field_137_19"  class="gfield gfield--type-radio gfield--type-choice gfield--width-full gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_19"><label class='gfield_label gform-field-label'  >Are you interested in studying at Spurgeon College or Midwestern Seminary?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_radio'><ul class='gfield_radio' id='input_137_19'>
+			<li class='gchoice gchoice_137_19_0'>
+				<input name='input_19' type='radio' value='Yes'  id='choice_137_19_0'    />
+				<label for='choice_137_19_0' id='label_137_19_0' class='gform-field-label gform-field-label--type-inline'>Yes</label>
+			</li>
+			<li class='gchoice gchoice_137_19_1'>
+				<input name='input_19' type='radio' value='No'  id='choice_137_19_1'    />
+				<label for='choice_137_19_1' id='label_137_19_1' class='gform-field-label gform-field-label--type-inline'>No</label>
+			</li></ul></div></li><li id="field_137_4"  class="gfield gfield--type-phone gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_4"><label class='gfield_label gform-field-label' for='input_137_4' >Phone<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_phone'><input name='input_4' id='input_137_4' type='tel' value='' class='large'   aria-required="true" aria-invalid="false"   /></div></li><li id="field_137_10"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_10"><label class='gfield_label gform-field-label' for='input_137_10' >What Campus are you most interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_10' id='input_137_10' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Main Campus' >Main Campus</option><option value='Online' >Online</option><option value='St. Louis' >St. Louis</option><option value='Iowa' >Iowa</option></select></div></li><li id="field_137_3"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--has-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_3"><label class='gfield_label gform-field-label' for='input_137_3' >I&#039;m interested in:<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='gfield_description' id='gfield_description_137_3'>Choose the program level you're interested in.</div><div class='ginput_container ginput_container_select'><select name='input_3' id='input_137_3' class='large gfield_select'  aria-describedby="gfield_description_137_3"  aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Undergraduate' >Undergraduate</option><option value='Masters' >Masters</option><option value='Doctoral' >Doctoral</option></select></div></li><li id="field_137_6"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_6"><label class='gfield_label gform-field-label' for='input_137_6' >What Undergraduate degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_6' id='input_137_6' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Accelerate - MDiv' >Accelerate - MDiv</option><option value='Accelerate - Biblical Counseling' >Accelerate - Biblical Counseling</option><option value='Accelerate - Christian Ed' >Accelerate - Christian Ed</option><option value='Accelerate - Missions' >Accelerate - Missions</option><option value='Adult Degree Completion' >Adult Degree Completion</option><option value='Associates' >Associates</option><option value='Biblical Counseling' >Biblical Counseling</option><option value='Biblical Studies' >Biblical Studies</option><option value='Business Leadership' >Business Leadership</option><option value='Christian Ministry' >Christian Ministry</option><option value='Communications' >Communications</option><option value='Education' >Education</option><option value='Fusion/Intercultural Studies' >Fusion/Intercultural Studies</option><option value='Graphic Design' >Graphic Design</option><option value='History' >History</option><option value='Interdisciplinary Studies' >Interdisciplinary Studies</option><option value='Philosophy' >Philosophy</option><option value='Student Ministry' >Student Ministry</option><option value='Theology' >Theology</option><option value='Worship Ministry' >Worship Ministry</option></select></div></li><li id="field_137_11"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_11"><label class='gfield_label gform-field-label' for='input_137_11' >What Undergraduate (Online) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_11' id='input_137_11' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Accelerate - MDiv' >Accelerate - MDiv</option><option value='Accelerate - Biblical Counseling' >Accelerate - Biblical Counseling</option><option value='Accelerate - Christian Ed' >Accelerate - Christian Ed</option><option value='Accelerate - MDiv - Korean' >Accelerate - MDiv - Korean</option><option value='Adult Degree Completion' >Adult Degree Completion</option><option value='Associates' >Associates</option><option value='Biblical Studies' >Biblical Studies</option><option value='Biblical Counseling' >Biblical Counseling</option><option value='Business Leadership' >Business Leadership</option><option value='Christian Ministry' >Christian Ministry</option><option value='Education' >Education</option><option value='Global Business Leadership - Korean' >Global Business Leadership - Korean</option><option value='Interdisciplinary Studies' >Interdisciplinary Studies</option></select></div></li><li id="field_137_12"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_12"><label class='gfield_label gform-field-label' for='input_137_12' >What Undergraduate (St. Louis) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_12' id='input_137_12' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Accelerate - MDiv' >Accelerate - MDiv</option><option value='Adult Degree Completion' >Adult Degree Completion</option><option value='Associates' >Associates</option><option value='Biblical Studies' >Biblical Studies</option><option value='Business Leadership' >Business Leadership</option><option value='Christian Ministry' >Christian Ministry</option><option value='Education' >Education</option><option value='Interdisciplinary Studies' >Interdisciplinary Studies</option></select></div></li><li id="field_137_7"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_7"><label class='gfield_label gform-field-label' for='input_137_7' >What Masters degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_7' id='input_137_7' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Divinity' >Master of Divinity</option><option value='Master of Divinity - Korean' >Master of Divinity - Korean</option><option value='The Timothy Track' >The Timothy Track</option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Christian Studies - Korean' >Master of Christian Studies - Korean</option><option value='Master of Theological Studies' >Master of Theological Studies</option><option value='Master of Theological Studies - Korean' >Master of Theological Studies - Korean</option><option value='Master of Arts in Biblical Counseling' >Master of Arts in Biblical Counseling</option><option value='Master of Arts in Christian Education' >Master of Arts in Christian Education</option><option value='Master of Arts in Christian Education - Korean' >Master of Arts in Christian Education - Korean</option><option value='Fusion - Master of Arts in Intercultural Studies' >Fusion - Master of Arts in Intercultural Studies</option><option value='Master of Arts in Worship Ministries' >Master of Arts in Worship Ministries</option></select></div></li><li id="field_137_13"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_13"><label class='gfield_label gform-field-label' for='input_137_13' >What Masters (Online) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_13' id='input_137_13' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Divinity' >Master of Divinity</option><option value='Master of Divinity - Korean' >Master of Divinity - Korean</option><option value='Master of Divinity - Mandarin' >Master of Divinity - Mandarin</option><option value='Master of Divinity - Spanish' >Master of Divinity - Spanish</option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Theological Studies' >Master of Theological Studies</option><option value='Master of Theological Studies - Korean' >Master of Theological Studies - Korean</option><option value='Master of Theological Studies - Mandarin' >Master of Theological Studies - Mandarin</option><option value='Master of Theological Studies - Spanish' >Master of Theological Studies - Spanish</option><option value='Master of Arts in Biblical Counseling' >Master of Arts in Biblical Counseling</option><option value='Master of Arts in Biblical Counseling - Korean' >Master of Arts in Biblical Counseling - Korean</option><option value='Master of Arts in Christian Education' >Master of Arts in Christian Education</option><option value='Master of Arts in Christian Education - Korean' >Master of Arts in Christian Education - Korean</option><option value='Master of Arts in Intercultural Studies' >Master of Arts in Intercultural Studies</option></select></div></li><li id="field_137_14"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_14"><label class='gfield_label gform-field-label' for='input_137_14' >What Masters (St. Louis) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_14' id='input_137_14' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Theological Studies' >Master of Theological Studies</option></select></div></li><li id="field_137_15"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_15"><label class='gfield_label gform-field-label' for='input_137_15' >What Masters (Iowa) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_15' id='input_137_15' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Theological Studies' >Master of Theological Studies</option></select></div></li><li id="field_137_8"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_8"><label class='gfield_label gform-field-label' for='input_137_8' >What Doctoral degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_8' id='input_137_8' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='PhD' >PhD</option><option value='PhD - Korean' >PhD - Korean</option><option value='PhD - Spanish' >PhD - Spanish</option><option value='PhD The Residency' >PhD The Residency</option><option value='DMin' >DMin</option><option value='DMin - Korean' >DMin - Korean</option><option value='DMin - Mandarin' >DMin - Mandarin</option><option value='DMin - Romanian' >DMin - Romanian</option><option value='DMin - Spanish' >DMin - Spanish</option><option value='DMin - Ukranian' >DMin - Ukrainian</option><option value='DEdMin' >DEdMin</option><option value='DEdMin - Korean' >DEdMin - Korean</option><option value='EdD' >EdD</option><option value='EdD - Korean' >EdD - Korean</option><option value='ThM' >ThM</option></select></div></li><li id="field_137_5"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_5"><label class='gfield_label gform-field-label' for='input_137_5' >When do you plan to start taking classes?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_5' id='input_137_5' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='SP-24' >SP-24</option><option value='FA-24' >FA-24</option><option value='SP-25' >SP-25</option><option value='FA-25' >FA-25</option><option value='SP-26' >SP-26</option></select></div></li><li id="field_137_16"  class="gfield gfield--type-text fbp field_sublabel_above gfield--no-description field_description_above hidden_label gfield_visibility_hidden"  data-js-reload="field_137_16"><div class='admin-hidden-markup'><i class='gform-icon gform-icon--hidden'></i><span>Hidden</span></div><label class='gfield_label gform-field-label' for='input_137_16' >fbp</label><div class='ginput_container ginput_container_text'><input name='input_16' id='input_137_16' type='text' value='' class='medium'      aria-invalid="false"   /> </div></li><li id="field_137_17"  class="gfield gfield--type-text fbc field_sublabel_above gfield--no-description field_description_above hidden_label gfield_visibility_hidden"  data-js-reload="field_137_17"><div class='admin-hidden-markup'><i class='gform-icon gform-icon--hidden'></i><span>Hidden</span></div><label class='gfield_label gform-field-label' for='input_137_17' >fbc</label><div class='ginput_container ginput_container_text'><input name='input_17' id='input_137_17' type='text' value='' class='medium'      aria-invalid="false"   /> </div></li><li id="field_137_20"  class="gfield gfield--type-honeypot gform_validation_container field_sublabel_above gfield--has-description field_description_above gfield_visibility_visible"  data-js-reload="field_137_20"><label class='gfield_label gform-field-label' for='input_137_20' >Name</label><div class='gfield_description' id='gfield_description_137_20'>This field is for validation purposes and should be left unchanged.</div><div class='ginput_container'><input name='input_20' id='input_137_20' type='text' value='' autocomplete='new-password'/></div></li></ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_137' class='gform_button button' value='Submit'  onclick='if(window["gf_submitting_137"]){return false;}  if( !jQuery("#gform_137")[0].checkValidity || jQuery("#gform_137")[0].checkValidity()){window["gf_submitting_137"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_137"]){return false;} if( !jQuery("#gform_137")[0].checkValidity || jQuery("#gform_137")[0].checkValidity()){window["gf_submitting_137"]=true;}  jQuery("#gform_137").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=137&amp;title=&amp;description=&amp;tabindex=0' />
+            <input type='hidden' class='gform_hidden' name='is_submit_137' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='137' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_137' value='WyJ7XCIxOVwiOltcIjI4OWUxZjgzZjAzMGIwYzU2YTdiMGQwM2RiYzI4NjE3XCIsXCJlM2Q5ZTQwZTkwNTlhYjYwNDlkMDJlYTcwZDk3OTYxMVwiXX0iLCJjZDcwYTNjMTZhMmIyZDA4YjAwMmVlNDcwMzY1NDc4ZiJd' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_137' id='gform_target_page_number_137' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_137' id='gform_source_page_number_137' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_137' id='gform_ajax_frame_137' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script type="text/javascript">
+gform.initializeOnLoaded( function() {gformInitSpinner( 137, 'https://www.mbts.edu/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_137').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_137');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_137').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_137').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_137').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_137').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_137').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_137').val();gformInitSpinner( 137, 'https://www.mbts.edu/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [137, current_page]);window['gf_submitting_137'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_137').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_137').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [137]);window['gf_submitting_137'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_137').text());}, 50);}else{jQuery('#gform_137').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [137, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 137, currentPage: current_page } });} );} );
+</script>
+
+
+					</div>
+				</div>
+			</section>
+
+			
+			
+			<!-- Show the custom background image, if it exists -->
+			
+			<section  class="none " >
+				<p><a id="four"></a></p>
+							</section>
+
+			
+		
+			<section class="graphic cf ">
+				<div class="cf">
+										<img src="https://mbts.wpenginepowered.com/wp-content/uploads/2024/04/240409_Whitney_email_series_promo_web_feature-1.jpg" class="graphic-mobile" alt="Link Graphic"/>
+					<img src="https://mbts.wpenginepowered.com/wp-content/uploads/2024/04/240409_Whitney_email_series_promo_page_header-2.jpg" class="graphic-desktop" alt="Link Graphic"/>
+				</div>
+			</section>
+
+		
+			<!-- Show the custom background image, if it exists -->
+			
+			<section  class="none " >
+				<div class="pw" data-st="st-row">
+					<div data-st="st-twelve">
+						<h4 class="dw_title2">Receive exclusive content from Dr. Whitney</h4>
+<p style="text-align: center; color: #bda262!important; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px; margin-bottom: 30px;">
+<p class="type" style="font-size: 1.25rem!important; text-align: center;">A new four-part series on four disciplines the Church needs today</p>
+
+                <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_136' style='display:none'><div id='gf_136' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_136' id='gform_136'  action='/whitney/#gf_136' data-formid='136' novalidate>
+                        <div class='gform-body gform_body'><ul id='gform_fields_136' class='gform_fields top_label form_sublabel_above description_above'><li id="field_136_1"  class="gfield gfield--type-name gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_1"><label class='gfield_label gform-field-label gfield_label_before_complex'  >Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row' id='input_136_1'>
+                            
+                            <span id='input_136_1_3_container' class='name_first gform-grid-col gform-grid-col--size-auto' >
+                                                    <label for='input_136_1_3' class='gform-field-label gform-field-label--type-sub '>First</label>
+                                                    <input type='text' name='input_1.3' id='input_136_1_3' value=''   aria-required='true'     />
+                                                </span>
+                            
+                            <span id='input_136_1_6_container' class='name_last gform-grid-col gform-grid-col--size-auto' >
+                                                            <label for='input_136_1_6' class='gform-field-label gform-field-label--type-sub '>Last</label>
+                                                            <input type='text' name='input_1.6' id='input_136_1_6' value=''   aria-required='true'     />
+                                                        </span>
+                            
+                        </div></li><li id="field_136_2"  class="gfield gfield--type-email gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_2"><label class='gfield_label gform-field-label' for='input_136_2' >Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_136_2' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  />
+                        </div></li><li id="field_136_19"  class="gfield gfield--type-radio gfield--type-choice gfield--width-full gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_19"><label class='gfield_label gform-field-label'  >Are you interested in studying at Spurgeon College or Midwestern Seminary?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_radio'><ul class='gfield_radio' id='input_136_19'>
+			<li class='gchoice gchoice_136_19_0'>
+				<input name='input_19' type='radio' value='Yes'  id='choice_136_19_0'    />
+				<label for='choice_136_19_0' id='label_136_19_0' class='gform-field-label gform-field-label--type-inline'>Yes</label>
+			</li>
+			<li class='gchoice gchoice_136_19_1'>
+				<input name='input_19' type='radio' value='No'  id='choice_136_19_1'    />
+				<label for='choice_136_19_1' id='label_136_19_1' class='gform-field-label gform-field-label--type-inline'>No</label>
+			</li></ul></div></li><li id="field_136_4"  class="gfield gfield--type-phone gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_4"><label class='gfield_label gform-field-label' for='input_136_4' >Phone<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_phone'><input name='input_4' id='input_136_4' type='tel' value='' class='large'   aria-required="true" aria-invalid="false"   /></div></li><li id="field_136_10"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_10"><label class='gfield_label gform-field-label' for='input_136_10' >What Campus are you most interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_10' id='input_136_10' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Main Campus' >Main Campus</option><option value='Online' >Online</option><option value='St. Louis' >St. Louis</option><option value='Iowa' >Iowa</option></select></div></li><li id="field_136_3"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--has-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_3"><label class='gfield_label gform-field-label' for='input_136_3' >I&#039;m interested in:<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='gfield_description' id='gfield_description_136_3'>Choose the program level you're interested in.</div><div class='ginput_container ginput_container_select'><select name='input_3' id='input_136_3' class='large gfield_select'  aria-describedby="gfield_description_136_3"  aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Undergraduate' >Undergraduate</option><option value='Masters' >Masters</option><option value='Doctoral' >Doctoral</option></select></div></li><li id="field_136_6"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_6"><label class='gfield_label gform-field-label' for='input_136_6' >What Undergraduate degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_6' id='input_136_6' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Accelerate - MDiv' >Accelerate - MDiv</option><option value='Accelerate - Biblical Counseling' >Accelerate - Biblical Counseling</option><option value='Accelerate - Christian Ed' >Accelerate - Christian Ed</option><option value='Accelerate - Missions' >Accelerate - Missions</option><option value='Biblical Studies' >Biblical Studies</option><option value='Business Leadership' >Business Leadership</option><option value='Christian Ministry' >Christian Ministry</option><option value='Communications' >Communications</option><option value='Biblical Counseling' >Biblical Counseling</option><option value='Education' >Education</option><option value='Fusion/Intercultural Studies' >Fusion/Intercultural Studies</option><option value='Graphic Design' >Graphic Design</option><option value='History' >History</option><option value='Interdisciplinary Studies' >Interdisciplinary Studies</option><option value='Philosophy' >Philosophy</option><option value='Student Ministry' >Student Ministry</option><option value='Worship Ministry' >Worship Ministry</option><option value='Theology' >Theology</option><option value='Associates' >Associates</option><option value='Adult Degree Completion' >Adult Degree Completion</option></select></div></li><li id="field_136_11"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_11"><label class='gfield_label gform-field-label' for='input_136_11' >What Undergraduate (Online) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_11' id='input_136_11' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Accelerate - MDiv' >Accelerate - MDiv</option><option value='Accelerate - Biblical Counseling' >Accelerate - Biblical Counseling</option><option value='Accelerate - Christian Ed' >Accelerate - Christian Ed</option><option value='Accelerate - MDiv - Korean' >Accelerate - MDiv - Korean</option><option value='Biblical Studies' >Biblical Studies</option><option value='Biblical Counseling' >Biblical Counseling</option><option value='Business Leadership' >Business Leadership</option><option value='Global Business Leadership - Korean' >Global Business Leadership - Korean</option><option value='Christian Ministry' >Christian Ministry</option><option value='Education' >Education</option><option value='Interdisciplinary Studies' >Interdisciplinary Studies</option><option value='Associates' >Associates</option><option value='Adult Degree Completion' >Adult Degree Completion</option></select></div></li><li id="field_136_12"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_12"><label class='gfield_label gform-field-label' for='input_136_12' >What Undergraduate (St. Louis) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_12' id='input_136_12' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Accelerate - MDiv' >Accelerate - MDiv</option><option value='Biblical Studies' >Biblical Studies</option><option value='Business Leadership' >Business Leadership</option><option value='Christian Ministry' >Christian Ministry</option><option value='Education' >Education</option><option value='Interdisciplinary Studies' >Interdisciplinary Studies</option><option value='Associates' >Associates</option><option value='Adult Degree Completion' >Adult Degree Completion</option></select></div></li><li id="field_136_7"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_7"><label class='gfield_label gform-field-label' for='input_136_7' >What Masters degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_7' id='input_136_7' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Divinity' >Master of Divinity</option><option value='Master of Divinity - Korean' >Master of Divinity - Korean</option><option value='The Timothy Track' >The Timothy Track</option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Christian Studies - Korean' >Master of Christian Studies - Korean</option><option value='Master of Theological Studies' >Master of Theological Studies</option><option value='Master of Theological Studies - Korean' >Master of Theological Studies - Korean</option><option value='Master of Arts in Biblical Counseling' >Master of Arts in Biblical Counseling</option><option value='Master of Arts in Christian Education' >Master of Arts in Christian Education</option><option value='Master of Arts in Christian Education - Korean' >Master of Arts in Christian Education - Korean</option><option value='Fusion - Master of Arts in Intercultural Studies' >Fusion - Master of Arts in Intercultural Studies</option><option value='Master of Arts in Worship Ministries' >Master of Arts in Worship Ministries</option></select></div></li><li id="field_136_13"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_13"><label class='gfield_label gform-field-label' for='input_136_13' >What Masters (Online) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_13' id='input_136_13' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Divinity' >Master of Divinity</option><option value='Master of Divinity - Korean' >Master of Divinity - Korean</option><option value='Master of Divinity - Mandarin' >Master of Divinity - Mandarin</option><option value='Master of Divinity - Spanish' >Master of Divinity - Spanish</option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Theological Studies' >Master of Theological Studies</option><option value='Master of Theological Studies - Korean' >Master of Theological Studies - Korean</option><option value='Master of Theological Studies - Mandarin' >Master of Theological Studies - Mandarin</option><option value='Master of Theological Studies - Spanish' >Master of Theological Studies - Spanish</option><option value='Master of Arts in Biblical Counseling' >Master of Arts in Biblical Counseling</option><option value='Master of Arts in Biblical Counseling - Korean' >Master of Arts in Biblical Counseling - Korean</option><option value='Master of Arts in Christian Education' >Master of Arts in Christian Education</option><option value='Master of Arts in Christian Education - Korean' >Master of Arts in Christian Education - Korean</option><option value='Master of Arts in Intercultural Studies' >Master of Arts in Intercultural Studies</option></select></div></li><li id="field_136_14"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_14"><label class='gfield_label gform-field-label' for='input_136_14' >What Masters (St. Louis) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_14' id='input_136_14' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Theological Studies' >Master of Theological Studies</option></select></div></li><li id="field_136_15"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_15"><label class='gfield_label gform-field-label' for='input_136_15' >What Masters (Iowa) degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_15' id='input_136_15' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='Master of Applied Theology' >Master of Applied Theology</option><option value='Master of Biblical Studies' >Master of Biblical Studies</option><option value='Master of Christian Studies' >Master of Christian Studies</option><option value='Master of Theological Studies' >Master of Theological Studies</option></select></div></li><li id="field_136_8"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_8"><label class='gfield_label gform-field-label' for='input_136_8' >What Doctoral degree are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_8' id='input_136_8' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='PhD' >PhD</option><option value='PhD - Korean' >PhD - Korean</option><option value='PhD - Spanish' >PhD - Spanish</option><option value='PhD The Residency' >PhD The Residency</option><option value='DMin' >DMin</option><option value='DMin - Korean' >DMin - Korean</option><option value='DMin - Mandarin' >DMin - Mandarin</option><option value='DMin - Romanian' >DMin - Romanian</option><option value='DMin - Spanish' >DMin - Spanish</option><option value='DMin - Ukranian' >DMin - Ukrainian</option><option value='DEdMin' >DEdMin</option><option value='DEdMin - Korean' >DEdMin - Korean</option><option value='EdD' >EdD</option><option value='EdD - Korean' >EdD - Korean</option><option value='ThM' >ThM</option></select></div></li><li id="field_136_5"  class="gfield gfield--type-select gfield_contains_required field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_5"><label class='gfield_label gform-field-label' for='input_136_5' >When do you plan to start taking classes?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_5' id='input_136_5' class='large gfield_select'    aria-required="true" aria-invalid="false" ><option value='' ></option><option value='SP-24' >SP-24</option><option value='FA-24' >FA-24</option><option value='SP-25' >SP-25</option><option value='FA-25' >FA-25</option><option value='SP-26' >SP-26</option></select></div></li><li id="field_136_20"  class="gfield gfield--type-hidden gfield--width-full gform_hidden field_sublabel_above gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_20"><div class='ginput_container ginput_container_text'><input name='input_20' id='input_136_20' type='hidden' class='gform_hidden'  aria-invalid="false" value='Whitney Email Series' /></div></li><li id="field_136_16"  class="gfield gfield--type-text fbp field_sublabel_above gfield--no-description field_description_above hidden_label gfield_visibility_hidden"  data-js-reload="field_136_16"><div class='admin-hidden-markup'><i class='gform-icon gform-icon--hidden'></i><span>Hidden</span></div><label class='gfield_label gform-field-label' for='input_136_16' >fbp</label><div class='ginput_container ginput_container_text'><input name='input_16' id='input_136_16' type='text' value='' class='medium'      aria-invalid="false"   /> </div></li><li id="field_136_17"  class="gfield gfield--type-text fbc field_sublabel_above gfield--no-description field_description_above hidden_label gfield_visibility_hidden"  data-js-reload="field_136_17"><div class='admin-hidden-markup'><i class='gform-icon gform-icon--hidden'></i><span>Hidden</span></div><label class='gfield_label gform-field-label' for='input_136_17' >fbc</label><div class='ginput_container ginput_container_text'><input name='input_17' id='input_136_17' type='text' value='' class='medium'      aria-invalid="false"   /> </div></li><li id="field_136_21"  class="gfield gfield--type-honeypot gform_validation_container field_sublabel_above gfield--has-description field_description_above gfield_visibility_visible"  data-js-reload="field_136_21"><label class='gfield_label gform-field-label' for='input_136_21' >Comments</label><div class='gfield_description' id='gfield_description_136_21'>This field is for validation purposes and should be left unchanged.</div><div class='ginput_container'><input name='input_21' id='input_136_21' type='text' value='' autocomplete='new-password'/></div></li></ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_136' class='gform_button button' value='Submit'  onclick='if(window["gf_submitting_136"]){return false;}  if( !jQuery("#gform_136")[0].checkValidity || jQuery("#gform_136")[0].checkValidity()){window["gf_submitting_136"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_136"]){return false;} if( !jQuery("#gform_136")[0].checkValidity || jQuery("#gform_136")[0].checkValidity()){window["gf_submitting_136"]=true;}  jQuery("#gform_136").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=136&amp;title=&amp;description=&amp;tabindex=0' />
+            <input type='hidden' class='gform_hidden' name='is_submit_136' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='136' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_136' value='WyJ7XCIxOVwiOltcIjI4OWUxZjgzZjAzMGIwYzU2YTdiMGQwM2RiYzI4NjE3XCIsXCJlM2Q5ZTQwZTkwNTlhYjYwNDlkMDJlYTcwZDk3OTYxMVwiXX0iLCJjZDcwYTNjMTZhMmIyZDA4YjAwMmVlNDcwMzY1NDc4ZiJd' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_136' id='gform_target_page_number_136' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_136' id='gform_source_page_number_136' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_136' id='gform_ajax_frame_136' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script type="text/javascript">
+gform.initializeOnLoaded( function() {gformInitSpinner( 136, 'https://www.mbts.edu/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_136').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_136');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_136').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_136').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_136').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_136').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_136').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_136').val();gformInitSpinner( 136, 'https://www.mbts.edu/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [136, current_page]);window['gf_submitting_136'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_136').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_136').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [136]);window['gf_submitting_136'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_136').text());}, 50);}else{jQuery('#gform_136').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [136, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 136, currentPage: current_page } });} );} );
+</script>
+
+
+					</div>
+				</div>
+			</section>
+
+			
+			
+			<!-- Show the custom background image, if it exists -->
+			
+			<section  class="none tight" >
+				<div class="pw" data-st="st-row">
+					<div data-st="st-twelve">
+						<p class="type" style="font-size: 1.25rem!important;">To read more about Dr. Whitney’s election to the faculty at Midwestern Seminary, click the button below.</p>
+<p class="type" style="font-size: 1.25rem!important;">Follow us on <a href="https://twitter.com/mbts">X</a>, <a href="https://www.facebook.com/midwestern.seminary/">Facebook</a>, and <a href="https://www.instagram.com/midwesternseminary/">Instagram</a> for more content and giveaways celebrating this exciting news.</p>
+<p><center><a class="blue" role="button" href="https://www.mbts.edu/2024/04/donald-s-whitney-joins-midwestern-seminary-faculty-as-professor-of-biblical-spirituality-elected-to-john-h-powell-endowed-chair-of-pastoral-ministry/" target="_blank" rel="noopener noreferrer">News Story</a></center></p>
+
+					</div>
+				</div>
+			</section>
+
+			
+			
+<!-- TINY CONTENT
+*************************************************************************************** -->
+
+
+
+
+	</main>
+	<!--aj-grid-->
+
+<footer class="cf" role="contentinfo">
+	<nav role="menu" id="footerMenu" class="cf">
+		<div data-st="st-row" class="pw">
+			<a id="closeSesame" class="cf" href="#">
+				<div class="close"><span>.</span><span>.</span></div>
+			</a>
+
+			<form role="search" method="get" id="searchform" action="/">
+				<div><label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="Search Site" onfocus="this.value=&quot;&quot;" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>
+
+			<div class="menu-popup-menu-container"><ul id="menu-popup-menu" class="menu"><li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-155"><a href="https://www.mbts.edu/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-20035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20035"><a href="https://www.mbts.edu/about/what-we-believe/">What We Believe</a></li>
+	<li id="menu-item-20036" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20036"><a href="https://www.mbts.edu/about/conference/">Conferences</a></li>
+	<li id="menu-item-18016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18016"><a href="https://www.mbts.edu/about/faculty/">Meet Our Faculty</a></li>
+	<li id="menu-item-18645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18645"><a href="https://www.mbts.edu/about/leadership/">Leadership Team</a></li>
+	<li id="menu-item-23230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23230"><a href="https://www.mbts.edu/about/staff/">Staff</a></li>
+	<li id="menu-item-23225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23225"><a href="https://www.mbts.edu/events/chapel/">Chapel</a></li>
+	<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="https://www.mbts.edu/about/contact/">Contact</a></li>
+	<li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="https://www.mbts.edu/about/consumer-information/">Consumer Information</a></li>
+	<li id="menu-item-20020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20020"><a href="https://www.mbts.edu/about/employment/">Employment</a></li>
+	<li id="menu-item-30918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30918"><a href="https://www.mbts.edu/coronavirus/">COVID-19 Updates</a></li>
+	<li id="menu-item-31658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31658"><a href="https://www.mbts.edu/about/consumer-information/title-ix/">Title IX</a></li>
+	<li id="menu-item-36139" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36139"><a href="https://mbts.wpenginepowered.com/wp-content/uploads/2023/12/230420_PO_institutional_strategic_plan_23-28_update-1.pdf">2023-2028 Strategic Plan</a></li>
+</ul>
+</li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-148"><a href="https://www.mbts.edu/future-students/">Admissions</a>
+<ul class="sub-menu">
+	<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="https://www.mbts.edu/future-students/why-residential/">Why Residential?</a></li>
+	<li id="menu-item-187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187"><a href="https://www.mbts.edu/future-students/why-kansas-city/">Why Kansas City?</a></li>
+	<li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="https://www.mbts.edu/future-students/housing/">Campus Housing</a></li>
+	<li id="menu-item-31277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31277"><a href="https://www.mbts.edu/future-students/cost-and-aid/">Cost &#038; Aid</a></li>
+	<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="https://www.mbts.edu/future-students/campus-life/">Campus Life</a></li>
+	<li id="menu-item-156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-156"><a href="https://www.mbts.edu/future-students/visit-campus/">Visit Midwestern</a></li>
+	<li id="menu-item-22657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22657"><a href="https://www.mbts.edu/future-students/preview/">Preview Day</a></li>
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://www.mbts.edu/current-students/accreditation/">Accreditation</a></li>
+	<li id="menu-item-32613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32613"><a href="https://www.mbts.edu/about/staff/admissions/">Meet the Team</a></li>
+</ul>
+</li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-149"><a href="https://www.mbts.edu/degrees/">Academics</a>
+<ul class="sub-menu">
+	<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://www.mbts.edu/degrees/college/">Spurgeon College</a></li>
+	<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="https://www.mbts.edu/degrees/masters-studies/">Masters Studies</a></li>
+	<li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a href="https://www.mbts.edu/degrees/doctoral-studies/">Doctoral Studies</a></li>
+	<li id="menu-item-36288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36288"><a href="https://www.mbts.edu/degrees/global-campus/">Global Campus (Online)</a></li>
+	<li id="menu-item-67786" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67786"><a href="https://www.mbts.edu/degrees/masters-studies/ftc-cohorts/">For the Church Cohorts</a></li>
+	<li id="menu-item-21341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21341"><a href="https://www.mbts.edu/degrees/womens-studies/">Women&#8217;s Studies</a></li>
+	<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://www.mbts.edu/degrees/asian-studies/">Asian Studies</a></li>
+	<li id="menu-item-50580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50580"><a href="https://www.mbts.edu/degrees/estudios-en-espanol/">Spanish Studies</a></li>
+	<li id="menu-item-30480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30480"><a href="https://www.mbts.edu/about/faculty/">Meet Our Faculty</a></li>
+	<li id="menu-item-31663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31663"><a href="https://www.mbts.edu/degrees/advisors/">Academic Advisors</a></li>
+	<li id="menu-item-21769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21769"><a href="https://www.mbts.edu/degrees/masters-studies/trainingnetwork/">Midwestern Training Network</a></li>
+	<li id="menu-item-31401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31401"><a href="https://www.mbts.edu/degrees/stlouis/">St. Louis Campus</a></li>
+	<li id="menu-item-28126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28126"><a href="https://www.mbts.edu/about/staff/worship-ministries/">Worship Ministries</a></li>
+	<li id="menu-item-22983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22983"><a href="https://www.mbts.edu/about/conference/courses/">Conference Courses</a></li>
+	<li id="menu-item-19633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19633"><a href="https://www.mbts.edu/resources/journal/">Journal of Theology</a></li>
+</ul>
+</li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-147"><a href="https://www.mbts.edu/current-students/">Current Students</a>
+<ul class="sub-menu">
+	<li id="menu-item-22850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22850"><a href="https://www.mbts.edu/about/mathenastudentcenter/">Mathena Student Center</a></li>
+	<li id="menu-item-199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-199"><a href="https://www.mbts.edu/events/">Campus Events</a></li>
+	<li id="menu-item-34132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34132"><a href="https://www.mbts.edu/current-students/campus-updates-email/">Campus Life E-Newsletter</a></li>
+	<li id="menu-item-19080" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19080"><a href="https://www.mbts.edu/current-students/#class">Schedules &#038; Catalogs</a></li>
+	<li id="menu-item-22842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22842"><a href="https://www.mbts.edu/about/staff/registrar/">Registrar</a></li>
+	<li id="menu-item-19211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19211"><a href="https://www.mbts.edu/about/staff/financial-services/">Financial Services</a></li>
+	<li id="menu-item-20304" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20304"><a href="/about/staff/registrar/">Register for Classes</a></li>
+	<li id="menu-item-31278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31278"><a href="https://www.mbts.edu/future-students/cost-and-aid/">Cost &#038; Aid</a></li>
+	<li id="menu-item-37173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37173"><a href="https://www.mbts.edu/about/staff/registrar/#resources">Academic Catalogs</a></li>
+	<li id="menu-item-37174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37174"><a href="https://www.mbts.edu/about/staff/registrar/#resources">Student Handbooks</a></li>
+	<li id="menu-item-37175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37175"><a href="https://www.mbts.edu/about/staff/registrar/#resources">Academic Calendar</a></li>
+	<li id="menu-item-20040" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20040"><a href="https://www.mbts.edu/about/staff/security/">Campus Security</a></li>
+	<li id="menu-item-17743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17743"><a href="https://library.mbts.edu/">Library</a></li>
+	<li id="menu-item-66977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66977"><a href="https://www.mbts.edu/current-students/mwi/">Midwestern Women’s Institute</a></li>
+	<li id="menu-item-31662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31662"><a href="https://www.mbts.edu/degrees/advisors/">Academic Advisors</a></li>
+	<li id="menu-item-29586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29586"><a href="https://www.mbts.edu/current-students/writers-studio/">Writing Center</a></li>
+</ul>
+</li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145"><a href="https://www.mbts.edu/alumni/">Alumni &#038; Friends</a>
+<ul class="sub-menu">
+	<li id="menu-item-18646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18646"><a href="/give/">Give Now</a></li>
+	<li id="menu-item-20175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20175"><a href="https://www.mbts.edu/alumni/#update">Update Information</a></li>
+	<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a href="https://www.mbts.edu/about/churches/">Church Partnerships</a></li>
+	<li id="menu-item-18643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18643"><a href="https://www.mbts.edu/resources/magazine/">Midwestern Magazine</a></li>
+	<li id="menu-item-18642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18642"><a href="https://www.mbts.edu/resources/jobs/">Job Board</a></li>
+	<li id="menu-item-18644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18644"><a href="https://www.parchment.com/u/registration/63742904/account">Transcript Requests</a></li>
+</ul>
+</li>
+<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-146"><a href="https://www.mbts.edu/resources/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-21344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21344"><a href="https://www.mbts.edu/resources/news/">News &#038; Updates</a></li>
+	<li id="menu-item-34131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34131"><a href="https://www.mbts.edu/current-students/campus-updates-email/">Campus Life E-Newsletter</a></li>
+	<li id="menu-item-20038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20038"><a href="https://www.mbts.edu/about/conference/">Conferences</a></li>
+	<li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="https://ftc.co">For The Church</a></li>
+	<li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a href="https://jasonkallen.com">Jason K. Allen</a></li>
+	<li id="menu-item-31392" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31392"><a href="https://ftcinstitute.com/p/home/">FTC Institute</a></li>
+	<li id="menu-item-34257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34257"><a href="https://ftc.co/called/">Called</a></li>
+	<li id="menu-item-32457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32457"><a href="https://www.mbts.edu/resources/magazine/">Midwestern Magazine</a></li>
+	<li id="menu-item-159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-159"><a href="https://www.spurgeon.org">Spurgeon Library</a></li>
+	<li id="menu-item-33663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33663"><a href="https://www.mbts.edu/degrees/centers/cbc/">Center for Biblical Counseling</a></li>
+	<li id="menu-item-30666" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30666"><a href="https://cbs.mbts.edu">Center for Biblical Studies</a></li>
+	<li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="https://cpt.mbts.edu">Center for Public Theology</a></li>
+	<li id="menu-item-161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-161"><a href="https://shop.mbts.edu/">Sword &#038; Trowel Bookstore</a></li>
+	<li id="menu-item-20718" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20718"><a href="https://portal.mbts.edu/faculty/login.asp">Faculty Portal</a></li>
+</ul>
+</li>
+</ul></div>		</div>
+	</nav>
+	<div data-st="st-row" class="pw cf">
+		<div data-st="st-four">
+			<div class="logo">
+				<img src="https://mbts.wpenginepowered.com/wp-content/themes/saratoga/assets/mbts_logo_footer.svg" alt="MBTS logo for the footer" />
+			</div>
+			<h5>Midwestern Baptist Theological Seminary</h5>
+			<p>5001 North Oak Trafficway<br />
+				Kansas City, Missouri 64118<br />
+				<strong>816-414-3700</strong> / 800-944-6287
+		</div>
+		<div data-st="st-eight">
+			<div class="bemis-social dark">
+				<a class="fb" href="https://www.facebook.com/midwestern.seminary">Facebook</a>
+				<a class="tw" href="https://twitter.com/MBTS">Twitter</a>
+				<a class="vi" href="https://vimeo.com/mbtskc/">Vimeo</a>
+				<a class="insta" href="https://www.instagram.com/midwesternseminary/">Instagram</a>
+				<a class="can" href="http://mbts.instructure.com/">Canvas</a>
+				<a class="yt" href="https://www.youtube.com/c/MidwesternSeminary">Youtube</a>
+			</div>
+			<p>&copy; 2024 Midwestern Baptist Theological Seminary. <a href="https://www
+			.mbts.edu/about/terms-of-use/">Terms of Use</a> | <a href="https://www.mbts.edu/about/privacy-policy/">Privacy Policy</a> | <a href="https://portal.mbts.edu/faculty/login.asp">Faculty Portal</a> | <a href="http://365.mbts.edu/">Faculty Email</a></p>
+		</div>
+	</div>
+	<!--st-row-->
+	<div data-st="st-row" class="pw">
+		<div data-st="st-twelve">
+			<ul class="network">
+				<li><a class="active" href="#" role="button">Midwestern Seminary</a></li>
+				<li><a href="https://www.spurgeoncollege.com">Spurgeon College</a></li>
+				<li><a href="https://ftc.co">For the Church</a></li>
+				<li><a href="https://www.jasonkallen.com">Jason K. Allen</a></li>
+				<li><a href="https://www.spurgeon.org">The Spurgeon Center</a></li>
+				<li><a href="https://cpt.mbts.edu">Center for Public Theology</a></li>
+				<li><a href="https://cbs.mbts.edu">Center for Biblical Studies</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--st-row-->
+</footer>
+
+<!-- <script>
+	(function(d) {
+		var config = {
+				kitId: 'ktb6qqo',
+				scriptTimeout: 3000,
+				async: true
+			},
+			h = d.documentElement,
+			t = setTimeout(function() {
+				h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+			}, config.scriptTimeout),
+			tk = d.createElement("script"),
+			f = false,
+			s = d.getElementsByTagName("script")[0],
+			a;
+		h.className += " wf-loading";
+		tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+		tk.async = true;
+		tk.onload = tk.onreadystatechange = function() {
+			a = this.readyState;
+			if (f || a && a != "complete" && a != "loaded") return;
+			f = true;
+			clearTimeout(t);
+			try {
+				Typekit.load(config)
+			} catch (e) {}
+		};
+		s.parentNode.insertBefore(tk, s)
+	})(document);
+</script> -->
+
+<script>
+	var sesame = document.getElementById("Sesame");
+	if (sesame) {
+		document.getElementById("Sesame").addEventListener('click', function(event) {
+			document.getElementById("footerMenu").setAttribute('class', 'opened');
+			event.preventDefault();
+		});
+	}
+	var closeSesame = document.getElementById("closeSesame");
+	if (closeSesame) {
+		document.getElementById("closeSesame").addEventListener('click', function(event) {
+			document.getElementById("footerMenu").setAttribute('class', '');
+			event.preventDefault();
+		});
+	}
+</script>
+
+<script>
+	var ebookOpener = document.getElementById("ebookOpener");
+	if (ebookOpener) {
+		document.getElementById("ebookOpener").addEventListener('click', ebookOpened);
+	}
+
+	function ebookOpened() {
+		document.getElementById("ebook").setAttribute('class', 'opened');
+	}
+	var mc_embedded_subscribe = document.getElementById("mc-embedded-subscribe");
+	if (mc_embedded_subscribe) {
+		document.getElementById("mc-embedded-subscribe").addEventListener('click', ebookClosed);
+	}
+	var closer = document.getElementById("closer");
+	if (closer) {
+		document.getElementById("closer").addEventListener('click', ebookClosed);
+	}
+
+	function ebookClosed() {
+		document.getElementById("ebook").setAttribute('class', '');
+	}
+</script>
+
+
+<script>
+	/* smooth as butter scrolling */
+	(function() {
+		'use strict';
+		var section = document.querySelectorAll(".section");
+		var sections = {};
+		var i = 0;
+		Array.prototype.forEach.call(section, function(e) {
+			sections[e.id] = e.offsetTop;
+		});
+		window.onscroll = function() {
+			var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+			for (i in sections) {
+				if (sections[i] <= scrollPosition) {
+					document.querySelector('.active').setAttribute('class', ' ');
+					document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+				}
+			}
+		};
+	})();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+
+
+
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://www.mbts.edu/wp-admin/admin-ajax.php";
+</script>
+<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_reset_css-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css' href='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.7.10' type='text/css' media='all' />
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-content/themes/saratoga/assets/site.js?ver=1.0.0' id='script-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-content/themes/saratoga/assets/jquery.magnific-popup.js?ver=1675893653' id='magpopup-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-content/themes/saratoga/assets/global.js?ver=1698787076' id='global-js-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after" type="text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='https://mbts.wpenginepowered.com/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608' id='wp-a11y-js'></script>
+<script type='text/javascript' defer='defer' src='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.10' id='gform_json-js'></script>
+<script type='text/javascript' id='gform_gravityforms-js-extra'>
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":0,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/www.mbts.edu\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.mbts.edu\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.mbts.edu\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"65560e610db5943726b8164354443c70","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.mbts.edu\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.mbts.edu\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"65560e610db5943726b8164354443c70","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+/* ]]> */
+</script>
+<script type='text/javascript' defer='defer' src='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.10' id='gform_gravityforms-js'></script>
+<script type='text/javascript' id='gform_conditional_logic-js-extra'>
+/* <![CDATA[ */
+var gf_legacy = {"is_legacy":"1"};
+var gf_legacy = {"is_legacy":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer='defer' src='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.7.10' id='gform_conditional_logic-js'></script>
+<script type='text/javascript' defer='defer' src='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=2.7.10' id='gform_masked_input-js'></script>
+<script type='text/javascript' defer='defer' src='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=1329f9a0886f2ff3fb51c6f17277eb75' id='gform_gravityforms_utils-js'></script>
+<script type='text/javascript' defer='defer' src='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=4ef53fe41c14a48b294541d9fc37387e' id='gform_gravityforms_theme_vendors-js'></script>
+<script type='text/javascript' id='gform_gravityforms_theme-js-extra'>
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"65560e610db5943726b8164354443c70"}}},"hmr_dev":"","public_path":"https:\/\/www.mbts.edu\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer='defer' src='https://mbts.wpenginepowered.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=443293948084ca0fe29518ebcd01dc6b' id='gform_gravityforms_theme-js'></script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 137) {gf_global["number_formats"][137] = {"1":{"price":false,"value":false},"2":{"price":false,"value":false},"19":{"price":false,"value":false},"4":{"price":false,"value":false},"10":{"price":false,"value":false},"3":{"price":false,"value":false},"6":{"price":false,"value":false},"11":{"price":false,"value":false},"12":{"price":false,"value":false},"7":{"price":false,"value":false},"13":{"price":false,"value":false},"14":{"price":false,"value":false},"15":{"price":false,"value":false},"8":{"price":false,"value":false},"5":{"price":false,"value":false},"16":{"price":false,"value":false},"17":{"price":false,"value":false},"20":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][137] = { logic: { 4: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null},10: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null},3: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null},6: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Undergraduate"},{"fieldId":"10","operator":"is","value":"Main Campus"}],"enabled":true},"nextButton":null,"section":null},11: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Undergraduate"},{"fieldId":"10","operator":"is","value":"Online"}],"enabled":true},"nextButton":null,"section":null},12: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Undergraduate"},{"fieldId":"10","operator":"is","value":"St. Louis"}],"enabled":true},"nextButton":null,"section":null},7: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"Main Campus"}],"enabled":true},"nextButton":null,"section":null},13: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"Online"}],"enabled":true},"nextButton":null,"section":null},14: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"St. Louis"}],"enabled":true},"nextButton":null,"section":null},15: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"Iowa"}],"enabled":true},"nextButton":null,"section":null},8: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Doctoral"}],"enabled":true},"nextButton":null,"section":null},5: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null} }, dependents: { 4: [4],10: [10],3: [3],6: [6],11: [11],12: [12],7: [7],13: [13],14: [14],15: [15],8: [8],5: [5] }, animation: 1, defaults: {"1":{"1.2":"","1.3":"","1.4":"","1.6":"","1.8":""},"10":"","3":"","6":"","11":"","12":"","7":"","13":"","14":"","15":"","8":"","5":""}, fields: {"1":[],"2":[],"19":[4,10,3,5],"4":[],"10":[6,11,12,7,13,14,15],"3":[6,11,12,7,13,14,15,8],"6":[],"11":[],"12":[],"7":[],"13":[],"14":[],"15":[],"8":[],"5":[],"16":[],"17":[],"20":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gform.utils.trigger({ event: 'gform/conditionalLogic/init/start', native: false, data: { formId: 137, fields: null, isInit: true } });window['gformInitPriceFields']();gf_apply_rules(137, [4,10,3,6,11,12,7,13,14,15,8,5], true);jQuery('#gform_wrapper_137').show();jQuery(document).trigger('gform_post_conditional_logic', [137, null, true]);gform.utils.trigger({ event: 'gform/conditionalLogic/init/end', native: false, data: { formId: 137, fields: null, isInit: true } });} );} jQuery('#input_137_4').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [137, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 137, currentPage: 1 } });} );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 136) {gf_global["number_formats"][136] = {"1":{"price":false,"value":false},"2":{"price":false,"value":false},"19":{"price":false,"value":false},"4":{"price":false,"value":false},"10":{"price":false,"value":false},"3":{"price":false,"value":false},"6":{"price":false,"value":false},"11":{"price":false,"value":false},"12":{"price":false,"value":false},"7":{"price":false,"value":false},"13":{"price":false,"value":false},"14":{"price":false,"value":false},"15":{"price":false,"value":false},"8":{"price":false,"value":false},"5":{"price":false,"value":false},"20":{"price":false,"value":false},"16":{"price":false,"value":false},"17":{"price":false,"value":false},"21":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][136] = { logic: { 4: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null},10: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null},3: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null},6: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Undergraduate"},{"fieldId":"10","operator":"is","value":"Main Campus"}],"enabled":true},"nextButton":null,"section":null},11: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Undergraduate"},{"fieldId":"10","operator":"is","value":"Online"}],"enabled":true},"nextButton":null,"section":null},12: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Undergraduate"},{"fieldId":"10","operator":"is","value":"St. Louis"}],"enabled":true},"nextButton":null,"section":null},7: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"Main Campus"}],"enabled":true},"nextButton":null,"section":null},13: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"Online"}],"enabled":true},"nextButton":null,"section":null},14: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"St. Louis"}],"enabled":true},"nextButton":null,"section":null},15: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Masters"},{"fieldId":"10","operator":"is","value":"Iowa"}],"enabled":true},"nextButton":null,"section":null},8: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Doctoral"}],"enabled":true},"nextButton":null,"section":null},5: {"field":{"enabled":true,"actionType":"show","logicType":"all","rules":[{"fieldId":"19","operator":"is","value":"Yes"}]},"nextButton":null,"section":null} }, dependents: { 4: [4],10: [10],3: [3],6: [6],11: [11],12: [12],7: [7],13: [13],14: [14],15: [15],8: [8],5: [5] }, animation: 1, defaults: {"1":{"1.2":"","1.3":"","1.4":"","1.6":"","1.8":""},"10":"","3":"","6":"","11":"","12":"","7":"","13":"","14":"","15":"","8":"","5":"","20":"Whitney Email Series"}, fields: {"1":[],"2":[],"19":[4,10,3,5],"4":[],"10":[6,11,12,7,13,14,15],"3":[6,11,12,7,13,14,15,8],"6":[],"11":[],"12":[],"7":[],"13":[],"14":[],"15":[],"8":[],"5":[],"20":[],"16":[],"17":[],"21":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gform.utils.trigger({ event: 'gform/conditionalLogic/init/start', native: false, data: { formId: 136, fields: null, isInit: true } });window['gformInitPriceFields']();gf_apply_rules(136, [4,10,3,6,11,12,7,13,14,15,8,5], true);jQuery('#gform_wrapper_136').show();jQuery(document).trigger('gform_post_conditional_logic', [136, null, true]);gform.utils.trigger({ event: 'gform/conditionalLogic/init/end', native: false, data: { formId: 136, fields: null, isInit: true } });} );} jQuery('#input_136_4').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [136, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 136, currentPage: 1 } });} );
+</script>
+<script>
+			var otpOpener = document.getElementById("otpOpener");
+		if (otpOpener) {
+			document.getElementById("otpOpener").addEventListener('click', otpOpened);
+		}
+
+		function otpOpened() {
+			document.getElementById("otp").setAttribute('class', 'opened');
+		}
+		var otpCloser = document.getElementById("otpCloser");
+		if (otpCloser) {
+			document.getElementById("otpCloser").addEventListener('click', otpClosed);
+		}
+
+		function otpClosed() {
+			document.getElementById("otp").setAttribute('class', 'closed');
+		}
+		
+		(function(config) {
+			var s = document.createElement("script");
+			s.src =
+				"https://cdn.virtuoussoftware.com/tracker/virtuous.tracker.shim.min.js";
+			s.type = "text/javascript";
+			s.onload = function() {
+				virtuousTrackerShim.init(config);
+			};
+			document.getElementsByTagName("script")[0].parentNode.appendChild(s);
+		})({
+			organizationId: "94d55a17-38f5-465c-8c2f-e36718cada58",
+		});
+</script>
+
+</body>
+
+</html>

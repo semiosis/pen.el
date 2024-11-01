@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/messages" "#" "<==" "withopts"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "#" "<==" "zsh"
+cd /root/.vim;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/vim-bundles/iphonetext/ftdetect;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/vim-bundles/AnsiEsc/plugin;  "ranger" "#" "<==" "zsh"

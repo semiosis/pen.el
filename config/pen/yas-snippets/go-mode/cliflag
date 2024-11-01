@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: cliflag
+# key: cf
+# --
+app.Flags = []cli.Flag {
+cli.StringFlag{
+Name: "lang",
+Value: "english",
+Usage: "language for the greeting",
+},
+}

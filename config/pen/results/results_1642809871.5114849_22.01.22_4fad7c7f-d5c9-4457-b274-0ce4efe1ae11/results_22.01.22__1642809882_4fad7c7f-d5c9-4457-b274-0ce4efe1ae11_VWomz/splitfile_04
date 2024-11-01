@@ -1,0 +1,23 @@
+
+The following packages are recommended for vscode.
+###
+Human: That's great to hear. Do you know about any others?
+###
+AI: Some of the suggested packages are:
+- codefunc & vscode-snippets
+- ms-python & python-extension-pack
+- davidanson & gitlens
+- shardulm94 & vscode-twig
+- eamodio & gitlens
+- robertohuertasm & vscode-icons
+- foxundermoon &shell-switcher
+- emilast &LogFileHighlighter
+- bungcip &better-toml
+- wix &vscode-import-cost
+###
+Human: Which is the most useful package?
+###
+AI: Probably the package `davidanson/vscode-gitlens`.
+###
+Human: Why is that?
+###

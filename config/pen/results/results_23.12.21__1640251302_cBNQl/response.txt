@@ -1,0 +1,13 @@
+/* Color scheme B: Flag of the USA */
+.b-primary {
+background-color: #d00;
+}
+.b-secondary {
+background-color: #f1f1f1;
+}
+.b-ternary {
+background-color: #1b1b1b;
+}
+.b-quaternary {
+background-color: #ffd700;
+}

@@ -1,0 +1,532 @@
+Content-type: text/html
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-03 Tue 23:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="root" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7546bef">1. Gospel of Jesus Christ</a>
+<ul>
+<li><a href="#orgd628648">1.1. Gospel in a table</a></li>
+</ul>
+</li>
+<li><a href="#org3d13221">2. </a></li>
+<li><a href="#org9acb1b8">3. Verses</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7546bef" class="outline-2">
+<h2 id="org7546bef"><span class="section-number-2">1.</span> Gospel of Jesus Christ</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+For all have sinned, and come short of the glory of God. No man is righteous of their own, we are all
+guilty of sin and rebelled against Holy God who hates iniquity and demands justice. We all
+deserve punishment for our sin, but God so loved the world that he sent his son Jesus Christ to
+suffer and die on the cross on our behalf. Jesus never sinned and lived a perfect life of
+obedience. He was crucified for our sins and for the sins of the whole world. 3 days after his
+sacrifice, God raised Jesus Christ from the dead. He has resurrected to glory and lives forever
+more. The Lord Jesus Christ has been given all power and authority. He sent out his followers to go
+and make disciples of all nations, to proclaim the good news and to teach others to obey
+everything he commanded them. He is now exalted and sits at the right of hand of God. God has
+appointed a day to righteously judge the whole world by Jesus Christ who'm he has ordained. We
+are called to preach the gospel and to warn all of mankind to repent and be baptized in the name of
+Jesus Christ for the remission of sins, that you may receive the Holy Ghost. By grace and through
+faith we are justified and reconciled back to God. Grace is not an excuse to continue in sin, but
+through faith, God has given us the power to be dead to sin. The righteousness of every man is filthy
+as rags, so that no man can boast. Blessed is the man who forsakes his sin and puts trust in the Lord
+Jesus Christ. Cursed is the man who forsakes the faith and puts trust in his own good works. If we
+say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, He is
+faithful and just to forgive our sins, and to cleanse us from all unrighteousness. We encourage
+everyone not to sin, and if any man does sin, we have an advocate with our father. He is jesus christ,
+the righteous one! He is the propitiation of our sins, and not only for ours, but also for the sins of
+the whole world. Those who reject the Lord Jesus Christ and the message of his mercy, will be
+rejected on the great day of judgement.
+</p>
+
+<ul class="org-ul">
+<li>John 14</li>
+<li>Romans 8</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd628648" class="outline-3">
+<h3 id="orgd628648"><span class="section-number-3">1.1.</span> Gospel in a table</h3>
+<div class="outline-text-3" id="text-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Verse ID</th>
+<th scope="col" class="org-left">Passage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Romans 3:23</td>
+<td class="org-left">FOR ALL HAVE SINNED, AND COME SHORT OF THE GLORY OF GOD.</td>
+</tr>
+
+<tr>
+<td class="org-left">Romans 3:10</td>
+<td class="org-left">NO MAN IS RIGHTEOUS OF THEIR OWN</td>
+</tr>
+
+<tr>
+<td class="org-left">Ecclesiastes 7:20, Psalm 5:5</td>
+<td class="org-left">WE ARE ALL GUILTY OF SIN AND REBELLED AGAINST A HOLY GOD WHO HATES INIQUITY AND DEMANDS JUSTICE</td>
+</tr>
+
+<tr>
+<td class="org-left">John 3:16</td>
+<td class="org-left">WE ALL DESERVE PUNISHMENT FOR OUR SIN, BUT GOD SO LOVED THE WORLD THAT HE SENT HIS SON JESUS CHRIST TO SUFFER AND DIE ON THE CROSS ON OUR BEHALF</td>
+</tr>
+
+<tr>
+<td class="org-left">Hebrews 4:15</td>
+<td class="org-left">JESUS NEVER SINNED AND LIVED A PERFECT LIFE OF OBEDIENCE</td>
+</tr>
+
+<tr>
+<td class="org-left">1 John 2:2</td>
+<td class="org-left">HE WAS CRUCIFIED FOR OUR SINS AND FOR THE SINS OF THE WHOLE WORLD</td>
+</tr>
+
+<tr>
+<td class="org-left">Matthew 12:40</td>
+<td class="org-left">3 DAYS AFTER HIS SACRIFICE,</td>
+</tr>
+
+<tr>
+<td class="org-left">Acts 13:30</td>
+<td class="org-left">GOD RAISED JESUS CHRIST FROM THE DEAD</td>
+</tr>
+
+<tr>
+<td class="org-left">Revelation 1:18</td>
+<td class="org-left">HE HAS RESURRECTED TO GLORY AND LIVES FOREVER MORE</td>
+</tr>
+
+<tr>
+<td class="org-left">Matthew 28:18</td>
+<td class="org-left">THE LORD JESUS CHRIST HAS BEEN GIVEN ALL POWER AND AUTHORITY.</td>
+</tr>
+
+<tr>
+<td class="org-left">Matthew 18:19-20</td>
+<td class="org-left">HE SENT OUT HIS FOLLOWERS TO GO AND MAKE DISCIPLES OF ALL NATIONS, TO PROCLAIM THE GOOD NEWS AND TO TEACH OTHERS TO OBEY EVERYTHING HE COMMANDED THEM.</td>
+</tr>
+
+<tr>
+<td class="org-left">Acts 2:33</td>
+<td class="org-left">HE IS NOW EXALTED AND SITS AT THE RIGHT OF HAND OF GOD.</td>
+</tr>
+
+<tr>
+<td class="org-left">Acts 17:31</td>
+<td class="org-left">GOD HAS APPOINTED A DAY TO RIGHTEOUSLY JUDGE THE WHOLE WORLD BY JESUS CHRIST WHO'M HE HAS ORDAINED</td>
+</tr>
+
+<tr>
+<td class="org-left">Acts 2:38</td>
+<td class="org-left">WE ARE CALLED TO PREACH THE GOSPEL AND TO WARN ALL OF MANKIND TO REPENT AND BE BAPTIZED IN THE NAME OF JESUS CHRIST FOR THE REMISSION OF SINS, THAT YOU MAY RECEIVE THE HOLY GHOST.</td>
+</tr>
+
+<tr>
+<td class="org-left">Romans 5:1</td>
+<td class="org-left">BY GRACE AND THROUGH FAITH WE ARE JUSTIFIED AND RECONCILED BACK TO GOD</td>
+</tr>
+
+<tr>
+<td class="org-left">Romans 6:1</td>
+<td class="org-left">GRACE IS NOT AN EXCUSE TO CONTINUE IN SIN,</td>
+</tr>
+
+<tr>
+<td class="org-left">Romans 6:11</td>
+<td class="org-left">BUT THROUGH FAITH, GOD HAS GIVEN US THE POWER TO BE DEAD TO SIN.</td>
+</tr>
+
+<tr>
+<td class="org-left">Isaiah 64:6</td>
+<td class="org-left">THE RIGHTEOUSNESS OF EVERY MAN IS FILTHY AS RAGS, SO THAT NO MAN CAN BOAST.</td>
+</tr>
+
+<tr>
+<td class="org-left">Romans 8:13</td>
+<td class="org-left">BLESSED IS THE MAN WHO FORSAKES HIS SIN AND PUTS TRUST IN THE LORD JESUS CHRIST,</td>
+</tr>
+
+<tr>
+<td class="org-left">Romans 8:13</td>
+<td class="org-left">CURSED IS THE MAN WHO FORSAKES THE FAITH AND PUTS TRUST IN HIS OWN GOOD WORKS,</td>
+</tr>
+
+<tr>
+<td class="org-left">1 John 1:8</td>
+<td class="org-left">IF WE SAY WE HAVE NO SIN, WE DECEIVE OURSELVES, AND THE TRUTH IS NOT IN US.</td>
+</tr>
+
+<tr>
+<td class="org-left">1 John 1:9</td>
+<td class="org-left">IF WE CONFESS OUR SINS, HE IS FAITHFUL AND JUST TO FORGIVE OUR SINS, AND TO CLEANSE US FROM ALL UNRIGHTEOUSNESS.</td>
+</tr>
+
+<tr>
+<td class="org-left">1 John 2:1-2</td>
+<td class="org-left">WE ENCOURAGE EVERYONE NOT TO SIN, AND IF ANY MAN DOES SIN, WE HAVE AN ADVOCATE WITH OUR FATHER. HE IS JESUS CHRIST, THE RIGHTEOUS ONE! HE IS THE PROPITIATION OF OUR SINS, AND NOT ONLY FOR OURS, BUT ALSO FOR THE SINS OF THE WHOLE WORLD.</td>
+</tr>
+
+<tr>
+<td class="org-left">Luke 9:26</td>
+<td class="org-left">THOSE WHO REJECT THE LORD JESUS CHRIST AND THE MESSAGE OF HIS MERCY, WILL BE REJECTED ON THE GREAT DAY OF JUDGEMENT.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3d13221" class="outline-2">
+<h2 id="org3d13221"><span class="section-number-2">2.</span> </h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Paul says, "Believe on the Lord Jesus Christ and you will be saved." He says, "If you confess with your lips that Jesus is Lord and believe in your heart that God raised him from the dead you will be saved."
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9acb1b8" class="outline-2">
+<h2 id="org9acb1b8"><span class="section-number-2">3.</span> Verses</h2>
+<div class="outline-text-2" id="text-3">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Romans 3:23
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Romans 3:10
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Ecclesiastes 7:20
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Psalm 5:5
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>John 3:16
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Hebrews 4:15
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>1 John 2:2
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Matthew 12:40
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Acts 13:30
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Revelation 1:18
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Matthew 28:18
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Matthew 18:19-20
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Acts 2:33
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Acts 17:31
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Acts 2:38
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Romans 5:1
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Romans 6:1
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Romans 6:11
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Isaiah 64:6
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Romans 8:13
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>1 John 1:8
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>1 John 1:9
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>1 John 2:1-2
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>Luke 9:26
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: root</p>
+<p class="date">Created: 2023-10-03 Tue 23:12</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

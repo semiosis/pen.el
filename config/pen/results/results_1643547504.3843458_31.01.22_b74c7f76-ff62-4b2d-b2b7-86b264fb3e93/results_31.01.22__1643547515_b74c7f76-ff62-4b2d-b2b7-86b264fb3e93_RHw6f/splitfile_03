@@ -1,0 +1,4 @@
+
+(defn args-to-envs [& args]
+  (join "\n" (map #(str %1 "=" (cmd %2)) args)))
+

@@ -1,0 +1,1 @@
+ aws logs describe-log-groups --query 'logGroups[?starts_with(logGroupName,\`/aws/lambda/\`)].logGroupName'

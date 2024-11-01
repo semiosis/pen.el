@@ -1,0 +1,11 @@
+
+
+$ ghci
+
+ghci> :l tutorial
+
+ghci> run 4 (readFile "tutorial.hs")
+
+ghci> :l tutorial
+
+ghci> run 8 (readFile "tutorial

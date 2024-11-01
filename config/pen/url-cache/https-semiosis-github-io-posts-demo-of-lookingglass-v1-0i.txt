@@ -1,0 +1,550 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 8445
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Thu, 17 Mar 2022 02:48:37 GMT
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31556952
+ETag: W/"6232a185-8dc9"
+expires: Mon, 21 Mar 2022 09:25:45 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: D082:5085:4DA40D:59C46A:62384241
+Accept-Ranges: bytes
+Date: Mon, 21 Mar 2022 09:15:49 GMT
+Via: 1.1 varnish
+Age: 4
+X-Served-By: cache-akl10335-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1647854150.632889,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 08d1bcb79c77656e927720f2c0ae1b97887c83a3
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Shane Mulligan]">
+<meta name="description" content="Summary This is an early demo of the LookingGlass web browser.
+I use a standalone Docker image (i.e. standalone browser command, lg).
+Code  LookingGlass http://github.com/semiosis/pen.el/blob/master/src/pen-looking-glass.el eww http://github.com/semiosis/pen.el/blob/master/src/pen-eww.el  Browse non-existent wiki pages  --  Prompts Generate html from ascii browser  Code http://github.com/semiosis/prompts/blob/master/prompts/generate-html-from-ascii-browser-2.prompt   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48  task: &amp;#34;generate html from ascii browser&amp;#34; doc: &amp;#34;Given an ascii browser dump, generate some html&amp;#34; prompt-version: 3 prompt: |-# Render the website: lynx --dump -nolist &amp;lt;q:url&amp;gt; &amp;lt;&amp;lt;EOD &amp;lt;ascii&amp;gt; EOD # The following is the html for the above web page curl -s &amp;lt;q:url&amp;gt; &amp;lt;&amp;lt;EOD &amp;lt;!" />
+<meta name="keywords" content="NLP GPT OpenAI EleutherAI Huggingface AGI" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://semiosis.github.io/posts/demo-of-lookingglass-v1-0i/" />
+
+
+    <title>
+        
+            Demo of LookingGlass v1.0i :: semiosis  — Signs, Natural Language and Coding
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.a1aef01748e04726a2f119488e08ba465956045f8d530944baf7e1dc3d76f616.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Demo of LookingGlass v1.0i">
+<meta itemprop="description" content="Summary This is an early demo of the LookingGlass web browser.
+I use a standalone Docker image (i.e. standalone browser command, lg).
+Code  LookingGlass http://github.com/semiosis/pen.el/blob/master/src/pen-looking-glass.el eww http://github.com/semiosis/pen.el/blob/master/src/pen-eww.el  Browse non-existent wiki pages  --  Prompts Generate html from ascii browser  Code http://github.com/semiosis/prompts/blob/master/prompts/generate-html-from-ascii-browser-2.prompt   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48  task: &#34;generate html from ascii browser&#34; doc: &#34;Given an ascii browser dump, generate some html&#34; prompt-version: 3 prompt: |-# Render the website: lynx --dump -nolist &lt;q:url&gt; &lt;&lt;EOD &lt;ascii&gt; EOD # The following is the html for the above web page curl -s &lt;q:url&gt; &lt;&lt;EOD &lt;!"><meta itemprop="datePublished" content="2021-11-12T00:00:00&#43;13:00" />
+<meta itemprop="dateModified" content="2021-11-12T00:00:00&#43;13:00" />
+<meta itemprop="wordCount" content="347"><meta itemprop="image" content="http://semiosis.github.io/"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://semiosis.github.io/"/>
+
+<meta name="twitter:title" content="Demo of LookingGlass v1.0i"/>
+<meta name="twitter:description" content="Summary This is an early demo of the LookingGlass web browser.
+I use a standalone Docker image (i.e. standalone browser command, lg).
+Code  LookingGlass http://github.com/semiosis/pen.el/blob/master/src/pen-looking-glass.el eww http://github.com/semiosis/pen.el/blob/master/src/pen-eww.el  Browse non-existent wiki pages  --  Prompts Generate html from ascii browser  Code http://github.com/semiosis/prompts/blob/master/prompts/generate-html-from-ascii-browser-2.prompt   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48  task: &#34;generate html from ascii browser&#34; doc: &#34;Given an ascii browser dump, generate some html&#34; prompt-version: 3 prompt: |-# Render the website: lynx --dump -nolist &lt;q:url&gt; &lt;&lt;EOD &lt;ascii&gt; EOD # The following is the html for the above web page curl -s &lt;q:url&gt; &lt;&lt;EOD &lt;!"/>
+
+
+
+
+    <meta property="og:title" content="Demo of LookingGlass v1.0i" />
+<meta property="og:description" content="Summary This is an early demo of the LookingGlass web browser.
+I use a standalone Docker image (i.e. standalone browser command, lg).
+Code  LookingGlass http://github.com/semiosis/pen.el/blob/master/src/pen-looking-glass.el eww http://github.com/semiosis/pen.el/blob/master/src/pen-eww.el  Browse non-existent wiki pages  --  Prompts Generate html from ascii browser  Code http://github.com/semiosis/prompts/blob/master/prompts/generate-html-from-ascii-browser-2.prompt   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48  task: &#34;generate html from ascii browser&#34; doc: &#34;Given an ascii browser dump, generate some html&#34; prompt-version: 3 prompt: |-# Render the website: lynx --dump -nolist &lt;q:url&gt; &lt;&lt;EOD &lt;ascii&gt; EOD # The following is the html for the above web page curl -s &lt;q:url&gt; &lt;&lt;EOD &lt;!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://semiosis.github.io/posts/demo-of-lookingglass-v1-0i/" /><meta property="og:image" content="http://semiosis.github.io/"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-12T00:00:00&#43;13:00" />
+<meta property="article:modified_time" content="2021-11-12T00:00:00&#43;13:00" /><meta property="og:site_name" content="semiosis" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-11-12 00:00:00 &#43;1300 NZDT" />
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://mullikine.matomo.cloud/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '2']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/mullikine.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">semiosis</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/protocol/">࿋ Semiosis Protocol</a></li><li><a href="/cterm/">ℝ𝑖 Complex Term</a></li><li><a href="/continuum/">∞ Continuum</a></li><li><a href="/ii/">𝑖i Imaginary Interpreter</a></li><li><a href="/ilambda/">𝑖λ ilambda</a></li><li><a href="/creation/">🌌 Creation</a></li><li><a href="/melee/">🍓 Melee</a></li><li><a href="/apostrophe/">🎤 Apostrophe</a></li><li><a href="/mad-teaparty/">🎩 Mad TeaParty</a></li><li><a href="/channel/">👻 Chann.el</a></li><li><a href="/esp/">💫 ESP</a></li><li><a href="/looking-glass/">🔍 Looking Glass</a></li><li><a href="/pen/">🖊 Pen.el</a></li><li><a href="/nlsh/">🗣️  NL·SH</a></li><li><a href="/philosophy/">😮💨PHIL</a></li><li><a href="/paracosm/">🧠 Paracosm</a></li><li><a href="/pensieve/">🧿 PenSieve</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="http://semiosis.github.io/posts/demo-of-lookingglass-v1-0i/">Demo of LookingGlass v1.0i</a>
+      </h1>
+
+      <div class="post-meta">
+        <div>
+          Nov 12, 2021
+        </div>
+        <div>
+          2 min read
+        </div></div>
+
+      
+
+      
+
+      <div class="post-content">
+        <h2 id="summary">Summary</h2>
+<p>This is an early demo of the LookingGlass web browser.</p>
+<p>I use a standalone Docker image (i.e. standalone browser command, <code>lg</code>).</p>
+<h3 id="code">Code</h3>
+<dl>
+<dt>LookingGlass</dt>
+<dd><a href="http://github.com/semiosis/pen.el/blob/master/src/pen-looking-glass.el">http://github.com/semiosis/pen.el/blob/master/src/pen-looking-glass.el</a></dd>
+<dt>eww</dt>
+<dd><a href="http://github.com/semiosis/pen.el/blob/master/src/pen-eww.el">http://github.com/semiosis/pen.el/blob/master/src/pen-eww.el</a></dd>
+</dl>
+<h2 id="browse-non-existent-wiki-pages">Browse non-existent wiki pages</h2>
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/1MkhkkSP2BVDsmqUKE2jXRjOI" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/1MkhkkSP2BVDsmqUKE2jXRjOI.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/1MkhkkSP2BVDsmqUKE2jXRjOI.js" id="asciicast-1MkhkkSP2BVDsmqUKE2jXRjOI" async></script>
+<h2 id="prompts">Prompts</h2>
+<h3 id="generate-html-from-ascii-browser">Generate html from ascii browser</h3>
+<dl>
+<dt>Code</dt>
+<dd><a href="http://github.com/semiosis/prompts/blob/master/prompts/generate-html-from-ascii-browser-2.prompt">http://github.com/semiosis/prompts/blob/master/prompts/generate-html-from-ascii-browser-2.prompt</a></dd>
+</dl>
+<!--listend-->
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">task</span>: <span style="color:#e6db74">&#34;generate html from ascii browser&#34;</span>
+<span style="color:#f92672">doc</span>: <span style="color:#e6db74">&#34;Given an ascii browser dump, generate some html&#34;</span>
+<span style="color:#f92672">prompt-version</span>: <span style="color:#ae81ff">3</span>
+<span style="color:#f92672">prompt</span>: |-<span style="color:#e6db74">
+</span><span style="color:#e6db74">    # Render the website:
+</span><span style="color:#e6db74">    lynx --dump -nolist &lt;q:url&gt; &lt;&lt;EOD
+</span><span style="color:#e6db74">    &lt;ascii&gt;
+</span><span style="color:#e6db74">    EOD
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    # The following is the html for the above web page
+</span><span style="color:#e6db74">    curl -s &lt;q:url&gt; &lt;&lt;EOD
+</span><span style="color:#e6db74">    &lt;!DOCTYPE html&gt;
+</span><span style="color:#e6db74">    &lt;!-- This page uses very simple html --&gt;
+</span><span style="color:#e6db74">    &lt;!-- Allowed tags: h1 p ul li a --&gt;
+</span><span style="color:#e6db74">    &lt;:pp&gt;&lt;html&gt;
+</span><span style="color:#e6db74">    &lt;head&gt;
+</span><span style="color:#e6db74">    &lt;title&gt;</span>    
+<span style="color:#f92672">engine</span>: <span style="color:#e6db74">&#34;OpenAI Codex&#34;</span>
+<span style="color:#f92672">temperature</span>: <span style="color:#ae81ff">0.2</span>
+<span style="color:#f92672">max-generated-tokens</span>: <span style="color:#e6db74">&#34;(* 1 prompt-length)&#34;</span>
+<span style="color:#f92672">frequency-penalty</span>: <span style="color:#ae81ff">0.5</span>
+<span style="color:#f92672">top-p</span>: <span style="color:#ae81ff">1.0</span>
+<span style="color:#f92672">n-collate</span>: <span style="color:#ae81ff">1</span>
+<span style="color:#f92672">n-completions</span>: <span style="color:#ae81ff">5</span>
+
+<span style="color:#f92672">closer</span>: <span style="color:#ae81ff">pf-continue-last</span>
+<span style="color:#f92672">autoclose</span>: <span style="color:#66d9ef">on</span>
+
+<span style="color:#f92672">stop-sequences</span>:
+- <span style="color:#e6db74">&#34;EOD&#34;</span>
+<span style="color:#f92672">cache</span>: <span style="color:#66d9ef">on</span>
+<span style="color:#f92672">vars</span>:
+- <span style="color:#ae81ff">url</span>
+- <span style="color:#ae81ff">ascii</span>
+<span style="color:#f92672">postprocessor</span>: <span style="color:#e6db74">&#34;sed -z -e &#39;s=\\(&lt;/html&gt;\\).*=\\1=&#39; -e &#39;s= &gt;=&gt;=g&#39;&#34;</span>
+<span style="color:#f92672">examples</span>:
+- |-<span style="color:#e6db74">
+</span><span style="color:#e6db74">     Apple
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">     We look forward to welcoming you to our stores. Whether you shop in a
+</span><span style="color:#e6db74">     store or shop online, our Specialists can help you buy the products
+</span><span style="color:#e6db74">     you love. Shop with a Specialist, get credit with Apple Trade In,
+</span><span style="color:#e6db74">     choose free delivery or pickup, and more at the Apple Store Online.
+</span><span style="color:#e6db74">     Shop with a Specialist, get credit with Apple Trade In, choose free
+</span><span style="color:#e6db74">     delivery or pickup, and more at the Apple Store Online.</span>     
+<span style="color:#f92672">info</span>: <span style="color:#66d9ef">on</span>
+<span style="color:#f92672">completion</span>: <span style="color:#66d9ef">off</span>
+<span style="color:#f92672">insertion</span>: <span style="color:#66d9ef">off</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="imagine-a-website-from-a-url">Imagine a website from a URL</h3>
+<dl>
+<dt>Code</dt>
+<dd><a href="http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt">http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt</a></dd>
+</dl>
+<h2 id="designing-a-house">Designing a house</h2>
+<p>Here I demonstrate interactively imagining and
+designing a website, and image of a house with
+Codex.</p>
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/F1uXYJn8BXcNUOCb9uYwL5ySr" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/F1uXYJn8BXcNUOCb9uYwL5ySr.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/F1uXYJn8BXcNUOCb9uYwL5ySr.js" id="asciicast-F1uXYJn8BXcNUOCb9uYwL5ySr" async></script>
+<p>The next step is to use DALL-E to imagine the
+images.</p>
+<h2 id="regular-google-search-with-image-to-text">Regular google search with <code>image-to-text</code></h2>
+<p>The web browser works like a regular browser, too.</p>
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/MBEZM8EwCK2VtDuYq8ww8X5zf" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/MBEZM8EwCK2VtDuYq8ww8X5zf.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/MBEZM8EwCK2VtDuYq8ww8X5zf.js" id="asciicast-MBEZM8EwCK2VtDuYq8ww8X5zf" async></script>
+<h2 id="browse-unavailable-website">Browse unavailable website</h2>
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/MsI2s9TpwSinAhGEkL6WnWerT" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/MsI2s9TpwSinAhGEkL6WnWerT.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/MsI2s9TpwSinAhGEkL6WnWerT.js" id="asciicast-MsI2s9TpwSinAhGEkL6WnWerT" async></script>
+<ul>
+<li>Automatically visit imaginary when 404 or 502</li>
+<li>Generate html from ascii, up to the <code>&lt;/html&gt;</code></li>
+</ul>
+
+      </div>
+    </article>
+
+    <div class="post-colophon">
+        Thanks for reading.
+        <br />
+        If this article appears incomplete then it may be
+        intentional. Try prompting for a continuation.
+    </div>
+
+    <hr />
+
+    <div class="post-info">
+      
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        347 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-11-12 00:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+      <hr />
+      <div class="sharing-buttons">
+        
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Demo%20of%20LookingGlass%20v1.0i&amp;caption=Demo%20of%20LookingGlass%20v1.0i&amp;canonicalUrl=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
+    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=Demo%20of%20LookingGlass%20v1.0i&amp;body=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f&amp;media=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f;description=Demo%20of%20LookingGlass%20v1.0i" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f&amp;title=Demo%20of%20LookingGlass%20v1.0i&amp;summary=Demo%20of%20LookingGlass%20v1.0i&amp;source=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f&amp;resubmit=true&amp;title=Demo%20of%20LookingGlass%20v1.0i" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f;title=Demo%20of%20LookingGlass%20v1.0i" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+  <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Demo%20of%20LookingGlass%20v1.0i%20http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f&amp;t=Demo%20of%20LookingGlass%20v1.0i" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Demo%20of%20LookingGlass%20v1.0i&amp;url=http%3a%2f%2fsemiosis.github.io%2fposts%2fdemo-of-lookingglass-v1-0i%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+  <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </div>
+  </div>
+</a>
+
+      </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="http://semiosis.github.io/posts/demo-of-org-brain-with-pen-el/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Demo of Org-Brain with Pen.el</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="http://semiosis.github.io/posts/demo-of-explain-a-file-4-prompt-explain-any-file/">
+                <span class="button__text">Demo of explain-a-file-4.prompt – Explain any file</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            <span>Visit <a href="https://github.com/semiosis"><image src="/New_Zealand_Simplified.svg" style="display:inline-block; line-height:2em; vertical-align:middle; height: 2em;" /> Semiotic LLC on GitHub</a></span>
+
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js" integrity="sha512-LOZOpupEpysT3YEvwutcyj7&#43;h4zOJYpHwTfBft9G4GAqBeQithiluAtZOccxt6KTNRwvIiKiH27iflSoRI3SDg=="></script>
+
+
+
+    </body>
+</html>

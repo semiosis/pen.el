@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: im
+# group: vimsnippet
+# key: vs-im
+# --
+imap ${1} ${2}

@@ -1,0 +1,9 @@
+;; Run function hexcolorof
+(message (eval '(hexcolorof "water")))
+--> "ffffffff"
+
+
+
+;; Run function hexcolorof
+(message (eval '(hexcolorof "strawberryg")))
+--> 

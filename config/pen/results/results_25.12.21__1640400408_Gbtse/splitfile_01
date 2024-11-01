@@ -1,0 +1,12 @@
+The room is very messy indeed.
+
+## House rule ##
+# Take screwdriver
+# Take toothbrush
+# Go south
+
+## >_##
+"""
+
+def test_room_with_exits_and_commands():
+    m = create_m

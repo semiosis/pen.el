@@ -1,0 +1,8 @@
+
+
+(defn write-all [file & args]
+
+(defn write-file [file]
+ (with-open [f (clojure.java.io/writer file)]))
+
+(defn read-

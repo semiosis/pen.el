@@ -1,0 +1,5 @@
+cd /volumes/home/shane/notes/ws/jobs;  "xdg-open" "/root/.config/broot/conf.toml" "#" "<==" "broot"
+cd /volumes/home/shane/notes/ws/jobs;  "xdg-open" "/root/.config/broot/conf.toml" "#" "<==" "broot"
+cd /root/.pen/documents/notes;  "xdg-open" "/root/.pen/documents/notes/remember.org" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el/src;  "xdg-open" "/root/.config/broot/conf.toml" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el/docs/asciinema;  "xdg-open" "/root/.emacs.d/host/pen.el/docs/asciinema/637135.gif" "#" "<==" "broot"

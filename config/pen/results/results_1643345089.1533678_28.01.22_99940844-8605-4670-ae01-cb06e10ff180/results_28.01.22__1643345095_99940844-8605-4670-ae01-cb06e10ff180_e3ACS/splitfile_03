@@ -1,0 +1,8 @@
+"async/go-loop" is a function that takes a channel and a function that
+returns a channel.  async/go-loop will run the function and put the
+returned channel on the channel given as a parameter.  The function
+will be run asynchronously.  The function will be run in a thread
+pool.  The thread pool will grow and shrink according to demand.  The
+channel given as a parameter will be closed when async/go-loop
+terminates.
+

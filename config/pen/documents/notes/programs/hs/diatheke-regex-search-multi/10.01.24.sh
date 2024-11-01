@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes/ws/journal;  "diatheke-regex-search-multi" "-fv" "NASB" "take" "up" "your" "cross" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/journal;  "diatheke-regex-search-multi" "-fv" "NASB" "your" "cross" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/journal;  "diatheke-regex-search-multi" "-fv" "NASB" "their" "cross" "#" "<==" "pen-ci"
+cd /;  "diatheke-regex-search-multi" "-fv" "NASB" "live" "by" "the" "sword" "#" "<==" "pen-ci"
+cd /;  "diatheke-regex-search-multi" "-fv" "NASB" "Those" "He" "sanctified" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "law" "to" "Christ" "#" "<==" "pen-ci"

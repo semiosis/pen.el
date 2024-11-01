@@ -1,0 +1,7 @@
+ the updates of the shell
+sh-update: off
+
+# If you want to show debug information, use the following directive
+debug: on
+
+# Enable/disable csh-style history. Setting it to off disables csh

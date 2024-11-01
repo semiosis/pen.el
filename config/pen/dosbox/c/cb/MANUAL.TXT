@@ -1,0 +1,589 @@
+                     CAPTAIN BIBLE
+                    SPECIAL EDITION
+
+<<< Ordering >>>
+
+Captain Bible in Dome of Darkness, Special Edition
+(C) 1994 Bridgestone Multimedia Group.  All rights reserved.
+Captain Bible is a trademark of Bridgestone Multimedia Group.
+This product is not public domain.  However, we encourage
+you to share it with a friend.  Permission is granted for
+you to copy the CAPBIBLE.EXE program as long as you do not
+alter the files.
+
+The full version has seven times as many levels, three levels
+of difficulty, an end game with a giant robot, parental
+control mechanisms (translation, combat, subject),
+and much more.
+
+To order the Full Version
+call 1-800-507-0008: Mention "Special Edition".
+Bridgestone Multimedia Group,
+1979 Palomar Oaks Way, Carlsbad, CA 92009.
+619-431-9888, 619-431-0489 (FAX)
+
+
+<<< The Story of Captain Bible in Dome of Darkness >>>
+
+It was a quiet afternoon in the city.  The new weather control 
+system was about to be put into operation, and the whole city
+system seemed to be running smoother than ever.  It had been
+many months since the city council had met because there just
+didn't seem to be any problems.  Yes, there had been rumors that
+other cities were under attack, but it had been decades since
+anything had happened here.  In fact, in that last meeting, the
+council had voted to dismantle the city's perimeter guard
+system, leaving only the Unibot functioning.  Oddly enough, that
+was the first meeting that they hadn't bothered to open with
+prayer.
+
+The trouble started with a sort of a whisper, hardly noticeable,
+as a sort of general unease.  At first, everyone just assumed
+that they were in a bad mood and didn't worry about it.  But then,
+people started thinking things that they had never thought before,
+like "Does God really care?" or "I wonder if it's really wrong
+to..."  Just as people were starting to get alarmed, the sky went
+pitch black!  What everyone had thought was the weather control
+tower was actually a Tower of Deception!  The city had been
+trapped inside an anti-truth field, which was shutting out even
+the natural truth of God's creation.  The city had been betrayed
+by a traitor who was long gone.  They found out later that the
+designer in charge of the weather system had been in the employ
+of the enemy for years, and had installed the field generator
+without anyone knowing.  As the anti-truth field took hold of
+the citizens, deception cybers began roaming the city at will,
+capturing the citizens and brainwashing them with their lies.
+The city council quickly met to try to prevent the disaster,
+but it was too late!  When the council left the council chamber,
+they found that the cybers had captured all the other citizens
+of the city.  It was decided that one council member would stay
+in each of the seven main buildings to wait for help.  Help
+eventually did come in the form of the Bible Corps: the rescue
+organization dedicated to helping those who are overcome by the
+enemy.  They tried in vain to break through the Dome of Darkness
+covering the city, and were only able to punch a small hole
+through it.  They would have lost hope of freeing the city except
+for one last plan that called for the help of their greatest
+champion....            CAPTAIN BIBLE!
+
+
+Captain Bible is a super hero with a difference!  His power
+comes from the Bible.  He has no special powers of his own, but
+is able to overcome all the deceptions and lies of darkness
+through the skillful application of the Word of God.  Captain
+Bible's mission is to be teleported into the city and knock out
+the Tower of Deception which is generating the dome.  He must
+use the Unibot to destroy the Tower.  However, he needs the help
+of seven people (the council members) to operate the Unibot.  He
+first has to rescue them, for by now they must be deceived. 
+Along the way, Captain Bible will encounter many of the
+deception cybers which will try to block his path.  Each cyber
+is guarded by a lie, and it takes just the right verse from his
+computer Bible to get past that lie so that it can be attacked. 
+Then Captain Bible still has to find each cyber's weak point in
+order to successfully combat and destroy it.  Unfortunately, the
+process of teleportation wipes out Captain Bible's computer
+Bible clear of all scriptures!  Anticipating this, the Bible
+Corps has already transported scripture stations into the city,
+where Captain Bible can re-charge his computer Bible. 
+Fortunately, Captain Bible's faith and prayer will get him
+through these challenges if you help him meaningfully apply the
+Bible.  In this Special Edition, you will go with Captain Bible
+as he battles through one building to release the victim trapped
+there.
+
+
+<<< Installing and Starting Captain Bible >>>
+
+> Sound and Music Configuration - Setsound
+To configure (or re-configure) the game for sound and music, run
+Setsound from the directory where the program files were
+installed.  Run Setsound from DOS not Windows.
+
+Warning: It is important to select the correct name of your
+sound card to choose a sound card option. If you choose the
+wrong card, you could have trouble starting the game. You would
+then have to run Setsound again to reset the music and sound. If
+you cannot find your sound card listed in Setsound, try "Sound
+Blaster" or "Sound Blaster clone." If Setsound prompts you for
+whether you want to auto-detect for Sound Blaster, you should
+normally type "Y."  Setsound will ask you about your sound card
+twice: once for digitized sound, and once for music (MIDI).
+
+> Starting the Game
+These instructions pertain to playing the game from a DOS
+prompt. To start the game in Windows you will click on the
+Captain Bible icon in Windows ( see "Windows Instructions").
+To play the game, you must be in the proper directory.
+At the DOS prompt, type CBSE and press ENTER.
+
+
+> Solving Memory Problems
+If you are low on Conventional Memory Free (this is not likely,
+since Captain Bible takes only 500K), you should check to see if
+you have any unnecessary TSR's in your system. TSR's are
+programs that load into memory and wait in the background, such
+as pop-up programs, network drivers, etc.
+
+If the removal of TSR's doesn't solve the problem, you can save
+about 26K of conventional memory by eliminating sound from
+Captain Bible. The game will then use less memory. To eliminate
+sound, delete the file SOUND.1 (example: DEL SOUND.1 Press
+Enter) from the directory where you installed the program
+files. You can also save about 31K of memory by deleting music
+from Captain Bible. Delete the file Sound.2 to eliminate music.
+
+You can free up about 270K of hard drive space by deleting the
+file: CBSEDRV.EXE  Warning: Be sure you have configured the sound
+and music for your sound card before you delete this file.
+Otherwise, you will need to run the orginal CAPBIBLE.EXE to unpack
+the files again.
+
+
+> Windows Instructions
+After installing Captain Bible Special Edition under DOS, follow
+these instructions to set up the program to run under Windows.
+The on-line Help in Windows may also be useful.
+
+1. Start Windows.
+
+2. Click on (select) the Windows Group (e.g. Games) where you
+wish to place the Captain Bible icon.
+
+3. Click on the File menu item in the Windows Program Manager
+and click on (select) New.
+
+4. You should have a dialog box named "New Program Object."  Make
+sure that  "Program Item" is selected.  Click on OK.
+
+5. You should now have a dialog box named "Program Item
+Properties."  Click on the text box to the right of "Command
+Line:." Enter the following text: C:\CAPBIBLE\CBSE.PIF
+DO NOT PRESS ENTER! (Substitute your path if other than
+C:\CAPBIBLE.)
+
+6. Click on Change Icon. If it tells you something about "No
+icons available" just click on OK. 
+
+7. You should now have a dialog box named "Change Icon" Click
+on the text box to the right of "File Name:"  Backspace and/or
+Delete several times to clear anything that may be in that box
+and then type: C:\CAPBIBLE\CBSE.ICO (press ENTER). (Remember to
+substitute your path if other than C:\CAPBIBLE.) You should see
+the Captain Bible icon appear.
+
+8. If you are using Windows 3.1, click on "OK" and go to step 10.
+
+9. If you are using Windows 3.0, you should now be back in
+"Program Item Properties". Click on the text box to the right of
+"Description:" and enter: Captain Bible Special Edition (press
+ENTER). You should now be done.
+
+10. Click on "OK." You should now be done.
+
+For music and sound, be sure you run Setsound from the DOS
+prompt.  See "Sound and Music Configuration - Setsound."
+
+Do not use Digitized sound on Internal Speaker mode when using
+the game in Windows: it may cause Windows to hang.
+
+
+> Troubleshooting - Windows and Sound
+Under certain configurations of Microsoft Windows (3.1) in 386
+Enhanced Mode, you may experience some difficulties in running
+DOS programs that use sound from Windows. These problems are
+related to the interaction between Windows and your sound card.
+They are not dependent on the specific program that you run,
+except to the extent of how much of the sound hardware it uses
+(Music, Sound Effects, etc). If you do experience difficulty,
+the quickest way to solve the problem is to run Windows in
+standard mode. To do this, exit Windows and type win/s (Press
+Enter). You should find that other DOS sound programs will now
+run from Windows also. However, if you need to run Windows in
+386 Enhanced mode, here are some hints:
+
+1. If Windows complains about DMABufferSize, follow its
+directions, but use the number 100 for DMABufferSize.
+
+2. If Windows complains that the sound is in use by another
+application, it may mean that your Windows WAVE driver needs to
+be removed or reconfigured.
+
+3. If your program runs but makes no sound, you may have a
+conflict between Windows and your sound card. This problem could
+affect DOS programs or Windows programs. Refer to your sound
+card manual for assistance.
+
+> Objective of the Game
+Destroy deception cybers and successfully navigate other obstacles
+along the way.  Use the computer Bible to select the right verses
+to accomplish the mission. Pick up verses at the Scripture
+stations.  Fight through one building, find the victim, and help
+him see the Truth!
+
+In the Full Version, you must rescue seven people from seven
+buildings.  Then with the help of those seven people, you use the
+giant Unibot to defeat the Tower of Deception.
+
+
+<<< Game Controls >>>
+
+Using a mouse, move the cursor around the screen. You will see
+icons (visual signs) appearing. Click the left mouse button to
+choose the option represented by an icon.
+
+Using a keyboard, the cursor keys move Captain Bible. The space
+bar cycles through any available temporary icons. (For example,
+if you are by a Scripture station, the space bar may display the
+icon "Get Verse".) Press Enter to choose the option. The first
+letter of the option will often work as well. (Example: O will
+turn OFF the computer Bible.)
+
+
+<<< Understanding the Screen Icons >>>
+
+At the top of the screen you will see certain icons such as
+shown on the screen below. Click on an icon to activate it.
+(Keyboard commands for selecting each icon are shown next to the
+icons below.)
+
+> Computer Bible (Keyboard:F1)
+If there are verses in the computer Bible, you may click on the
+verse reference on the left to select the verse. The text of the
+verse will then appear on the right. The verses will be listed
+in Bible order. If Apply is lit, you may  select it to apply the
+verse. Select Off to exit. If you have more verses than can be
+displayed on the screen at one time, an arrow key will be lit.
+Select the "Page Up" and "Page Down" arrows to display more
+verses.  (Using the keyboard, you may use the cursor arrow keys
+to select among the verses, the "Page Up" key and "Page 
+Down" keys to show any verses that do not display on a single
+screen, the "O" or "Esc" keys for Off, and the "A" or "Enter"
+keys for Apply.)
+
+> Map (Keyboard:F2)
+Displays a map. If Captain Bible is inside a building, the map
+shows the building. Explored areas are in gold, unexplored in
+grey. 
+Scripture stations are shown as dots at intersections - gold if
+the Scripture has been obtained, gray if not. If you move the
+cursor over the scripture station dot or communications room,
+the reference to the verse will be shown (but not the text of
+the verse).
+After they have been explored, the rooms show "P" for prayer
+room, "J" for jump tunnel, "T" for trap, "C" for communications,
+and "V" for victim. (The Special Edition does not have all of
+these room types)
+
+> Faith (Keyboard:F3)
+Displays the level of Captain Bible's faith. As the icon changes
+color ("drains" from top to bottom), it indicates the level of
+the remaining faith. Select the icon to show the numerical
+percentage of remaining faith. Click on "Continue" to return to
+the normal display. (With the keyboard, press Enter.) Faith is
+restored in the prayer rooms.
+
+> Sword (Keyboard:F4)
+Having this icon indicates that Captain Bible will fight better
+and hit harder in combat. Select the icon for explanation. Click
+on "continue" to return to the normal display. (With the
+keyboard, press Enter.) The Sword is obtained in the prayer room.
+
+> Shield (Keyboard:F5)
+Having this icon indicates that Captain Bible will be better
+able to protect himself in combat, jump tunnels, trap rooms,
+etc. Select the icon for explanation. Click on "continue" to
+return to the normal display. (With the keyboard, press Enter.)
+The Shield is obtained in the prayer room.
+
+> No Trap (Keyboard:F6)
+Having this icon indicates that Captain Bible has the ability to
+discern trap rooms. Trap room doors will automatically flash
+green when Captain Bible approaches them. Select the icon for
+explanation. Click on "Continue" to return to the  normal
+display. (With the keyboard, press Enter.) The No Trap
+capability is obtained in the prayer room.
+
+> Candle (Keyboard:F7)
+Having this icon indicates that the Lord will light the path
+before Captain Bible. Some parts of the halls are dark. With the
+Candle, they will automatically light up as entered. Select the
+icon for explanation. Click on "Continue" to return to the
+normal display. (With the keyboard, press Enter.)  The Candle is
+obtained in the prayer room. 
+
+
+> Flight (Keyboard:F8)
+Having this icon indicates that Captain Bible has the power of
+flight in certain places. Select the icon for explanation. Click
+on "Continue" to return to the normal display. (With the
+keyboard, press Enter.) Flight capability is obtained in the
+prayer room.  Flight is not implemented in this Special Edition.
+
+
+<<< Game Options Esc >>
+
+Select the disk icon to obtain a menu of game controls. (With the
+keyboard, press Esc.)
+
+Move the mouse to scroll the options and click the left mouse
+button to select a desired choice. (With the keyboard, use the
+cursor arrow keys to scroll the options and press Enter to
+select one.) 
+
+> Quit
+Exit to DOS without saving the game. It will prompt you to be
+sure!
+
+> Save Game
+Save the current game to disk. Click on one of the lines and
+type in a name for  your game. When you are done, press Enter to
+save the current game.
+In some situations, such as conversations, the game will be
+saved starting at the beginning of the current scene.
+Quick Save:
+Press F10 at any time during the game to save the current game
+without going through any menus; press F9 to load from the Quick
+Save. Quick Save is separate from other ways to save and load
+games. 
+
+> Load Game
+Load one of the saved games. Select the title of the game that
+you want to load. If the most recent game was saved under the
+list of games, it is indicated by << after the title. In some
+situations, such as a conversation, it will load from the
+beginning of the scene. 
+
+> New Game
+Start the game from the beginning. A prompt will ask you if you
+are sure!
+
+> Translation 	
+Indicates the current translation. Select the menu item to cycle
+through the available translations. You will not have these
+options if you restricted the game during installation. 
+
+> Music On/Off
+Indicates whether music is turned On or Off. Select the menu
+item to toggle between On and Off. Note: Installation defaults
+to no music. You must run Setsound (See "Sound and Music -
+Setsound") to configure the program for music.  If music is not
+operating properly or you need to configure the game to run with
+your sound board, you may need to run Setsound. 
+
+> Sound Effects On/Off
+Indicates whether the sound effects are turned On or Off. Click
+on the menu item to toggle between On and Off. Note:
+Installation defaults to no sound. You must run Setsound (see
+"Sound and Music - Setsound") to configure the program for
+sound.  If sound effects are not operating properly or you need
+to configure the game to run with your sound board, you may need
+to run Setsound. 
+
+> Automatic Combat On/Off
+Indicates whether you are in automatic or manual combat during
+combat with cybers and while in the jump tunnels. Select the
+menu item to toggle between On and Off. You can switch between
+automatic and manual combat at anytime when the Game Options
+icon is available, except in the middle of combat or the jump
+tunnels.  In Automatic Combat mode, there is no manual skill
+involved, but losing or winning is picked randomly.
+
+> Continue 
+Go on with the game. Select to exit the Game Options menu.
+
+
+<<< Conversation Screens >>>
+
+Captain Bible will sometimes have a dialog with other people. If
+text is displayed, you may use your mouse to move the cursor
+until you see the "Continue" icon. Click to continue (With the
+keyboard, press Enter.) 
+
+Captain Bible will often have options as to what to say. With
+the mouse, move the cursor over the text box until the desired
+text is highlighted. Click to choose that text. (with keyboard,
+use the cursor arrow keys to select among text options. Press
+Enter to choose the text.) 
+
+Sometimes the computer Bible will open up in the middle of a
+conversation. This indicates that Captain Bible is able to quote
+a Bible verse to the person with whom he is speaking. Select a
+verse, then click on Apply. (Keyboard users press the A or Enter
+button.)
+
+
+<<< Game Actions >>>
+
+During the game you will have a number of options. See "Game
+Controls" for instructions on how to select an option. You can
+learn about some of the action options below.
+
+> GET VERSE
+Select "GET VERSE" for Captain Bible to go to the Scripture
+station and pick up the Bible verse. You will see the verse
+displayed on the screen. (Select Continue to return to the
+hallway.)
+
+> CONFRONT CYBER
+Select "CONFRONT CYBER" for Captain Bible to confront the cyber
+lie of the deception cyber. The cyber lie will be displayed. The
+computer Bible will open to allow you to choose a verse to apply.
+Select "APPLY" to apply the verse to the Cyber Lie and combat the
+cyber. If you select a verse that is close, but not quite right,
+there will be no penalty. However, if you apply a totally wrong
+verse, Captain Bible will lose some faith. Select "OFF" before
+applying a verse to retreat with no penalty.
+
+> Combat
+After successfully defeating a cyber lie, Captain Bible can
+battle the cyber. 
+In manual combat (Automatic Combat Off on the Disk options) you
+have three icons from which to select during a battle: Attack
+("A" key), Defend ("D" key), and Retreat ("R" key). Attack a
+cyber when it is vulnerable.  Defend when it is about to hit you.
+When a cyber is attacked successfully, it will react, but it may
+take several hits to kill it. 
+In Automatic Combat you have two icons: Combat ("C" key) and
+Retreat ("R" key). The outcome of the combat is determined
+randomly; Captain Bible may be hurt or unhurt, the cyber
+may be destroyed or not.
+
+> Locked Doors
+Some doors will have a lock on them. To unlock a door, select
+"UNLOCK".  You will then need to match a true statement with the
+appropriate Bible verse.
+
+
+<<< Cyber Hints >>>
+
+Macho Cyber - It is the meanest. Its punches are deadly, and
+it's hard to kill. Hit it when its eye is open.
+
+Mantis Cyber - It is deadly with the flame throwers, but it
+isn't too hard to kill. Hit it when both arms are lowered.
+
+Armored Cyber - It takes a licking but keeps on ticking. Hit it
+when its lid is open.
+
+Snake Cyber - Don't get hypnotized by its weaving back and
+forth. Hit it when it pauses in the lower right corner. 
+
+Leech Cyber - It leeches on top of Scripture stations. Hit it
+when its lid is open. 
+
+Zapper Cyber - You can walk right under it in the hallways, but
+it gives you a real zap. If you defeat a zapper cyber in combat,
+all of your faith is restored. The zapper cybers draw faith away
+from their victims, and this faith is released when the zapper
+cyber is destroyed.  There are no Zapper Cybers in this Special
+Edition.
+
+Spider Cyber - It sometimes drops behind you when you pass under
+it. Hit it at the top of its jump.
+
+Annoy Cyber - You'll only see this one outside. It flies around
+you and wipes out all of the verses. It's a coward, so it
+doesn't stay around long enough for combat.  There is no Annoy
+Cyber in this Special Edition.
+
+<<< Rooms >>>
+
+From the hallways, Captain Bible may enter a number of different
+rooms or other places.
+
+> Trap Room
+Some rooms have a cyber in them. You need to apply the correct
+verse to confront the lie and escape the room without Captain
+Bible being hurt. If you apply a verse that is nearly correct,
+you will be given another chance.
+
+> Jump Tunnel
+The jump tunnel takes Captain Bible to a different part of the
+building. In manual combat mode (Automatic Combat Off), you need
+to move left or right ( move the mouse left or right or use the
+arrow keys) to avoid oncoming cybers. In Automatic Combat, you
+cannot control Captain Bible.  The Jump Tunnel is not implemented
+in this Special Edition.
+
+> Prayer Room
+In the prayer rooms, Captain Bible can have his faith restored
+or get a powerup. To obtain a powerup, ask for it, then apply
+the  correct verse. If the wrong verse is applied, Captain Bible
+is not hurt.
+
+> Victim Room
+In each building there is one victim room. Captain Bible needs
+to talk with the victim and apply several verses to help the
+victim see the truth. Once the victim sees the truth, he or she
+will help Captain Bible in the Unibot. In the first building,
+the victim will provide the verse that Captain Bible needs to
+get to the rest of the buildings. In the other buildings,
+Captain Bible is returned to the entrance of the building once
+the victim has been rescued. 
+
+> Communications Room
+In the communications rooms, Captain Bible talks to the victims
+who have been rescued. These people will mention a verse that he
+or she was reading and ask about its meaning, suggesting several
+alternatives. If you choose the correct one, the person will
+apply it and transfer it to the computer Bible. If you choose
+the wrong one or do not choose any verse, Captain Bible will
+lose some faith. In a given communications room, the person will
+always discuss the same verse.
+
+
+<<< Game Hints >>>
+
+Pause the game by clicking on the floppy disk icon at the top of
+the screen. Click on Continue to restart.
+
+Use the F10 key (see "Quick Save") often to save the game. F9
+loads the saved game.
+
+Use the map frequently; you can figure out where to go next by
+seeing which area is lit up on the map. You can also tell which
+rooms are communications rooms.
+
+Watch the Faith meter. Keep track of the prayer room locations
+for restoring Faith.
+
+If Confront Cyber is chosen, there is no assurance that Captain
+Bible has the required Bible verse. Carefully evaluate whether a
+particular verse really applies to the lie or is just dealing
+with the same subject matter. Select OFF to exit the
+confrontation if Captain Bible doesn't have the right verse.
+There is no penalty for choosing OFF.
+
+Watch out for variations in the cybers. Learn the weaknesses of
+each cyber. Each has a moment of vulnerability.
+
+In combat, it is faster to use the A key (Attack) and the D key
+(Defend) than the mouse.
+
+Locks show statements that are not necessarily paraphrases of
+the correct verse. However, the statements are directly
+supported by the verse.
+
+
+<<< Copyrights >>>
+
+Captain Bible in Dome of Darkness, Special Edition
+(C) 1994 Bridgestone Multimedia Group.  All rights reserved.
+Captain Bible is a trademark of Bridgestone Multimedia Group.
+
+Scripture taken from the HOLY BIBLE, NEW INTERNATIONAL VERSION(R).
+NIV(R).  Copyright(C) 1973, 1978, 1984 by International Bible
+Society.  Used by permission of Zondervan Publishing House.
+All rights reserved.
+
+Scripture verses are taken from The Living Bible (C) 1971.
+Used by permission of Tyndale House Publishers, Inc.,
+Wheaton, IL 60189.  All rights reserved.
+
+Scripture text is from the Revised Standard Version of the Bible,
+copyright 1946, 1952, 1971 by the Division of Christian Education
+of the National Council of the Churches of Christ in the USA.
+Used by permission.
+
+

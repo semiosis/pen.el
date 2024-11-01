@@ -1,0 +1,378 @@
+Horn clause
+    [#mathematical logic]
+    [#logic programming]
+
+    A logical formula of a particular rule-
+    like form which gives it useful properties
+    for use in logic programming, formal
+    specification, and model theory.
+    
+    Horn clauses are named for the logician
+    Alfred Horn, who first pointed out their
+    significance in 1951.
+
+logic
+    Types
+    - epistemic,
+    - doxastic,
+    - temporal,
+    - deontic,
+    - modal,
+    - paraconsistent,
+    - default,
+    - defeasible,
+    - nonmonotonic
+
+epistemic
+epistemic modal logic
+    [type of logic]
+
+    A subfield of modal logic that is
+    concerned with reasoning about knowledge.
+
+doxastic
+    [type of logic]
+
+    A type of logic concerned with reasoning
+    about beliefs.
+    
+    The term doxastic derives from the Ancient
+    Greek δόξα, from which the English term
+    doxa is also borrowed.
+
+temporal
+    [type of logic]
+
+    Any system of rules and symbolism for
+    representing, and reasoning about,
+    propositions qualified in terms of time.
+
+    For example:
+    - "I am always hungry"
+    - "I will eventually be hungry"
+    - "I will be hungry until I eat something"
+
+deontic
+    [type of logic]
+
+    The field of philosophical logic that is
+    concerned with obligation, permission, and
+    related concepts.
+    
+    Alternatively, a deontic logic is a formal
+    system that attempts to capture the
+    essential logical features of these
+    concepts.
+
+modal
+    [type of logic]
+
+    A collection of formal systems originally
+    developed and still widely used to
+    represent statements about necessity and
+    possibility.
+    
+    The basic unary modal operators are most
+    often interpreted "□" for "Necessarily"
+    and "◇" for "Possibly".
+
+paraconsistent
+    [type of logic]
+
+    An attempt at a logical system to deal
+    with contradictions in a discriminating
+    way.
+    
+    Alternatively, paraconsistent logic is the
+    subfield of logic that is concerned with
+    studying and developing "inconsistency-
+    tolerant" systems of logic which reject
+    the principle of explosion.
+
+default
+    [type of logic]
+
+    A non-monotonic logic proposed by Raymond
+    Reiter to formalize reasoning with default
+    assumptions.
+    
+    Default logic can express facts like “by
+    default, something is true”; by contrast,
+    standard logic can only express that
+    something is true or that something is
+    false.
+
+defeasible
+    [type of logic]
+    
+    A non-monotonic logic proposed by Donald
+    Nute to formalize defeasible reasoning.
+    
+    In defeasible logic, there are three
+    different types of propositions:
+    
+    - Strict rules.
+      Specify that a fact is always a
+      consequence of another
+
+    - Defeasible rules.
+      Specify that a fact is typically a
+      consequence of another
+
+    - Undercutting defeaters.
+      specify exceptions to defeasible rules.
+
+    A priority ordering over the defeasible
+    rules and the defeaters can be given.
+    
+    During the process of deduction, the
+    strict rules are always applied, while a
+    defeasible rule can be applied only if no
+    defeater of a higher priority specifies
+    that it should not.
+
+nonmonotonic
+non-monotonic
+    [type of logic]
+
+    A formal logic whose conclusion relation
+    is not monotonic.
+    
+    In other words, non-monotonic logics are
+    devised to capture and represent
+    defeasible inferences (cf. defeasible
+    reasoning), i.e., a kind of inference in
+    which reasoners draw tentative
+    conclusions, enabling reasoners to retract
+    their conclusion(s) based on further
+    evidence.
+
+Lemma
+    [#Mathematics]
+    [#informal logic]
+    [#argument mapping]
+
+    A lemma is a generally minor, proven
+    proposition which is used as a stepping
+    stone to a larger result.
+
+    For that reason, it is also known as a
+    "helping theorem" or an "auxiliary
+    theorem".
+
+interpretability
+    A relation between formal theories that
+    expresses the possibility of interpreting
+    or translating one into the other.
+
+syllogism
+    A syllogism is a kind of logical argument
+    that applies deductive reasoning to arrive
+    at a conclusion based on two or more
+    propositions that are asserted or assumed
+    to be true.
+
+    In a form, defined by Aristotle, from the
+    combination of a general statement and a
+    specific statement, a conclusion is
+    deduced.
+
+Homotopy type theory
+HoTT
+    Various lines of development of
+    intuitionistic type theory, based on the
+    interpretation of types as objects to
+    which the intuition of (abstract) homotopy
+    theory applies.
+
+SMT instance
+    A generalization of a Boolean SAT instance
+    in which various sets of variables are
+    replaced by predicates from a variety of
+    underlying theories.
+    
+    SMT formulas provide a much richer
+    modeling language than is possible with
+    Boolean SAT formulas.
+
+SMT problem
+    An extended version of SAT problem.
+    
+    Given a formula, checking if there is a
+    set of values for variables that satisfies
+    the formula.
+    
+    The difference is, that SAT only deals
+    with boolean expressions, whereas SMT can
+    handle various types such as integer, bit
+    vector and real number.
+    
+    Depending on which theory to use, you can
+    express constraints in different formats.
+    
+    This time, we will use linear integer
+    arithmetic, where equations in the SMT
+    problems are linear equations over integer
+    variables.
+    
+    There are many SMT Solvers, but I chose Z3
+    because it is well documented and is
+    ported to Python language.
+    
+    It’s really easy to use.
+
+    https://dwheeler.com/essays/minisat-user-guide.html
+
+Conjunctive Normal Form
+CNF
+cnf
+    Like many SAT solvers, MiniSAT requires
+    that its input be in CNF.
+
+    Built from these building blocks:
+    - term
+      A term is either a boolean variable
+      (e.g., x4) or a negated boolean variable
+      (NOT x4, written here as -x4).
+
+    - clause
+      A clause is a set of one or more terms,
+      connected with OR (written here as |);
+      boolean variables may not repeat inside
+      a clause.
+
+    - expression
+      An expression is a set of one or more
+      clauses, each connected by AND (written
+      here as &).
+
+modus ponens
+method of affirming
+    [#logic]
+    [rule of logic]
+
+    The rule of logic which states that if a
+    conditional statement (‘if p then q ’) is
+    accepted, and the antecedent ( p ) holds,
+    then the consequent ( q ) may be inferred.
+
+    If a conditional statement (‘if p then q
+    ’) is accepted, and the antecedent ( p )
+    holds, then the consequent ( q ) may be
+    inferred.
+
+subject
+    https://www.jstor.org/stable/1398382?origin=crossref
+
+predicate
+    Takes an argument as input and outputs
+    true or false.
+
+    Example, -type in the find command.
+        "-type f" is not a predicate.
+
+        The predicate is 'is the type', not
+        'the type is f'.
+
+        Predicates can take several variables.
+
+        "Socrates is the teacher of Plato",
+        the predicate "is the teacher of"
+        takes two variables.
+
+        Therefore the predicate "-type"
+        actually takes 2 variables, the
+        current node being checked and the
+        type of the node.
+
+    The part of a sentence or clause
+    containing a verb and stating something
+    about the subject (e.g. went home in John
+    went home ).
+
+    Something which is affirmed or denied
+    concerning an argument of a proposition.
+
+argumentum a fortiori
+    A form of argumentation that draws upon
+    existing confidence in a proposition to
+    argue in favor of a second proposition
+    that is held to be implicit in, and even
+    more certain than, the first.
+
+First-order logic
+    Symbolized reasoning in which each
+    sentence, or statement, is broken down
+    into a subject and a predicate.
+    
+    The predicate modifies or defines the
+    properties of the subject.
+    
+    In first-order logic, a predicate can only
+    refer to a single subject.
+
+    E.g. Prolog.
+
+    https://www.baeldung.com/cs/first-order-logic
+
+Second-order logic
+    [#logic and mathematics]
+
+    An extension of first-order logic, which
+    itself is an extension of propositional
+    logic.
+    
+    Second-order logic is in turn extended by
+    higher-order logic and type theory.
+    
+    First-order logic quantifies only
+    variables that range over individuals
+    (elements of the domain of discourse);
+    second-order logic, in addition, also
+    quantifies over relations.
+    
+    For example, the second-order sentence
+    ∀P∀x(Px ∨ ¬Px) says that for every formula
+    P, and every individual x, either Px is
+    true or not(Px) is true (this is the law
+    of excluded middle).
+    
+    Second-order logic also includes
+    quantification over sets, functions, and
+    other variables (see section below).
+    
+    Both first-order and second-order logic
+    use the idea of a domain of discourse
+    (often called simply the "domain" or the
+    "universe").
+    
+    The domain is a set over which individual
+    elements may be quantified.
+
+conjunction
+    [#logic]
+
+    AND.
+
+action
+    Actions are described by a set of action
+    schemas that implicitly define the
+    ACTIONS(s) and RESULT(s, a) functions
+    needed to do a problem-solving search.
+    
+    Classical planning concentrates on
+    problems where most actions leave most
+    things unchanged.
+
+    A set of ground (variable-free) actions
+    can be represented by a single action
+    schema.
+    
+    The schema is a lifted representation-it
+    lifts the level of reasoning from
+    propositional logic to a restricted subset
+    of first-order logic.
+    
+    For example, here is an action schema for
+    flying a plane from one location to
+    another:

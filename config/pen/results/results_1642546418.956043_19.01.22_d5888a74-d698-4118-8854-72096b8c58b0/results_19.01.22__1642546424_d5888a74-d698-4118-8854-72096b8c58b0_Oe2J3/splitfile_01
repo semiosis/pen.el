@@ -1,0 +1,4 @@
+
+Ampersand is a prefix operator that conjugates an object, e.g. several functions in lispers.net such as "not", "nth" and "conj".
+It is also a character prefix in a symbol, e.g. "&".
+

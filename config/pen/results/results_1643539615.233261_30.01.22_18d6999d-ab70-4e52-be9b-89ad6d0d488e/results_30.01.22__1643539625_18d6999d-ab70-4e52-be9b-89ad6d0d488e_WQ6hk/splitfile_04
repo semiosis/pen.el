@@ -1,0 +1,57 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+custom.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+EOD
+
+
+# emacs-lisp files
+
+cat draft.emacs-lisp <<EOD
+init.el
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# emacs-lisp files
+
+cat draft.emacs-lisp <<EOD
+init.el
+EOD

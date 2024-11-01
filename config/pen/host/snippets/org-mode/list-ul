@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: unordered-list
+# group: idioms
+# key: ul
+# --
++ ${1:list of things}
+  - ${0:first item}

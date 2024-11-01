@@ -1,0 +1,16 @@
+
+  (let ((num (- char 1)))
+    (cond ((<= num 0)
+           "")
+          ((< num 26)
+           (char-to-string (+ ?a num)))
+          (t
+           (number-to-letter (+ 1 (% num 26)))))))
+
+(defun pen-modeline-buffer-name ()
+  "Return the buffer name to display in the mode line.
+If `pen-show-buffer-name' is nil, just return the buffer name."
+  (if pen-show-buffer-name
+      (concat " " (pen-daemon-name) "/" (number-to-letter buffer-file-coding-system))
+    ""))
+EOD

@@ -1,0 +1,44 @@
+# Playbook for (require 'clojure-mode)
+(require 'cider)
+(require 'ob-clojure)
+
+(require 'clomacs)
+
+(if (inside-docker-p)
+    (setq cider-lein-command "pen-lein"))
+
+(setq cider-auto-jump-to-error nil)
+(setq cider-repl-pop-to-buffer-on-connect nil)
+
+(pen-with 'cider
+          ;; Fixes super annoying message
+          (setq cider-allow-jack-in-without-project t))
+
+(defun pen-4clojure-check-and-proceed ()
+  "Check the answer and show the next question if it worked."
+  (interactive)
+  (let ((result (4clojure-check-answers)))
+    (unless (string-match "failed." result)
+       (4clojure-next-question))))
+---
+- name: 4clojure
+  hosts: all
+  gather_facts: no
+  vars:
+    4clojure_username: "{{ 4clojure_username }}"
+    4clojure_password: "{{ 4clojure_password }}"
+  tasks:
+  - name: 4clojure login
+    pen-4clojure:
+      username: "{{ 4clojure_username }}"
+      password: "{{ 4clojure_password }}"
+      action: login
+  - name: 4clojure check
+    pen-4clojure:
+      action: check
+      question: "{{ item.question }}"
+      answer: "{{ item.answer }}"
+    with_items:
+      - { question: "1", answer: "1" }
+      - { question: "2", answer: "2" }
+      - { question: "3", answer: "3

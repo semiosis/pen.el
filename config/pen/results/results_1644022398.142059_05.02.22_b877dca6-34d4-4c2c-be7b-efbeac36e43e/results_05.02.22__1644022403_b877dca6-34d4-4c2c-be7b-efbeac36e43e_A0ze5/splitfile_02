@@ -1,0 +1,10 @@
+, bs4
+import sys, traceback
+
+from pq import run_parallel_q
+opts = {
+'type': 'JSON',
+'string': 'data.jsons'
+\}
+
+

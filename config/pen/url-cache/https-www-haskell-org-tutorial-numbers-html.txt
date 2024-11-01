@@ -1,0 +1,265 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:05:36 GMT
+Content-Type: text/html
+Content-Length: 14809
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-39d9"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Numbers</title>
+<p>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="monads.html">back</a> <a href="modules.html">next</a> <a href="index.html">top</a><hr>
+<a name="sect10"></a>
+<h2>10<tt>&nbsp;&nbsp;</tt>Numbers</h2><p>
+Haskell provides a rich collection of numeric types, based on those of
+Scheme [<a href="haskell-tutorial.html#$RRRRS">7</a>], which in turn are based on Common
+Lisp [<a href="haskell-tutorial.html#$steele:common-lisp">8</a>].  (Those languages, however, are
+dynamically typed.)  The standard types include fixed- and
+arbitrary-precision integers, ratios (rational numbers) formed from
+each integer type, and single- and double-precision real and complex
+floating-point.  We outline here the basic characteristics of the
+numeric type class structure and refer the reader to
+<a href="../onlinereport/basic.html#numbers">&sect;6.4</a> for details.<p>
+<a name="sect10.1"></a>
+<h3>10.1<tt>&nbsp;&nbsp;</tt>Numeric Class Structure</h3><p>
+The numeric type classes (class <tt>Num</tt> and those that lie below it)
+account for 
+many of the standard Haskell classes.  We also note that <tt>Num
+</tt>is a subclass of <tt>Eq</tt>, but not of <tt>Ord</tt>; this is because the order
+predicates do not apply to complex numbers.  The subclass <tt>Real
+</tt>of <tt>Num</tt>, however, is a subclass of <tt>Ord</tt> as well.<p>
+The <tt>Num</tt> class provides several basic operations common to all
+numeric types; these include, among others, addition, subtraction,
+negation, multiplication, and absolute value:
+<tt><br>
+
+<br>
+(+),&nbsp;(-),&nbsp;(*)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Num&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+negate,&nbsp;abs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Num&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+
+</tt>[<tt>negate</tt> is the function applied by Haskell's only prefix operator,
+minus; we can't call it <tt>(-)</tt>, because that is the subtraction
+function, so this name is provided instead.  For example,
+<tt>-x*y</tt> is equivalent to <tt>negate&nbsp;(x*y)</tt>.  (Prefix minus has the same
+syntactic precedence as infix minus, which, of course, is lower
+than that of multiplication.)]<p>
+Note that <tt>Num</tt> does <I>not</I> provide a division operator; two
+different kinds of division operators are provided in two non-overlapping
+subclasses of <tt>Num</tt>:<p>
+The class <tt>Integral</tt> provides whole-number division and remainder
+operations.  The
+standard instances of <tt>Integral</tt> are <tt>Integer</tt> (unbounded or
+mathematical integers, also known as "bignums") and <tt>Int
+</tt>(bounded, machine integers, with a range equivalent to at least
+29-bit signed binary).  A particular Haskell implementation might
+provide other integral types in addition to these.  Note that
+<tt>Integral</tt> is a subclass of <tt>Real</tt>, rather than of <tt>Num</tt> directly;
+this means that there is no attempt to provide Gaussian integers.<p>
+All other numeric types fall in the class <tt>Fractional</tt>, which provides
+the ordinary division operator <tt>(/)</tt>.  The further subclass
+<tt>Floating</tt> contains trigonometric, logarithmic, and exponential functions.<p>
+The <tt>RealFrac</tt> subclass of <tt>Fractional</tt>  and <tt>Real</tt> provides a function
+<tt>properFraction</tt>, which decomposes a number into its whole and
+fractional parts, and a collection of functions that round to
+integral values by differing rules:
+<tt><br>
+
+<br>
+properFraction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Fractional&nbsp;a,&nbsp;Integral&nbsp;b)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;(b,a)<br>
+truncate,&nbsp;round,<br>
+floor,&nbsp;ceiling:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Fractional&nbsp;a,&nbsp;Integral&nbsp;b)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;b<br>
+
+<br>
+<p>
+</tt>The <tt>RealFloat</tt> subclass of <tt>Floating</tt> and <tt>RealFrac</tt> provides
+some specialized functions for efficient access to the components
+of a floating-point number, the <I>exponent</I> and <I>significand</I>.
+The standard types <tt>Float</tt> and <tt>Double</tt> fall in class <tt>RealFloat</tt>.<p>
+<a name="sect10.2"></a>
+<h3>10.2<tt>&nbsp;&nbsp;</tt>Constructed Numbers</h3><p>
+Of the standard numeric types, <tt>Int</tt>, <tt>Integer</tt>, <tt>Float</tt>, and <tt>Double
+</tt>are primitive.  The others are made from these by type constructors.<p>
+<tt>Complex</tt> (found in the library <tt>Complex</tt>) is a type constructor that
+makes a complex type in class  <tt>Floating</tt> from a <tt>RealFloat</tt> type:
+<tt><br>
+
+<br>
+data&nbsp;(RealFloat&nbsp;a)&nbsp;=&gt;&nbsp;Complex&nbsp;a&nbsp;=&nbsp;!a&nbsp;:+&nbsp;!a&nbsp;&nbsp;deriving&nbsp;(Eq,&nbsp;Text)<br>
+
+<br>
+
+</tt>The <tt>!</tt> symbols are strictness flags; these were discussed in Section 
+<a href="moretypes.html#tut-strict-flag">6.3</a>.
+Notice the context <tt>RealFloat&nbsp;a</tt>, which restricts the argument
+type; thus, the standard complex types are <tt>Complex&nbsp;Float</tt> and
+<tt>Complex&nbsp;Double</tt>.  We can also see from the <tt>data</tt> declaration
+that a complex number is written <I>x</I> <tt>:+</tt> <I>y</I>; the arguments are
+the cartesian real and imaginary parts, respectively.  Since <tt>:+
+</tt>is a data constructor, we can use it in pattern matching:
+<tt><br>
+
+<br>
+conjugate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(RealFloat&nbsp;a)&nbsp;=&gt;&nbsp;Complex&nbsp;a&nbsp;-&gt;&nbsp;Complex&nbsp;a<br>
+conjugate&nbsp;(x:+y)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;:+&nbsp;(-y)<br>
+
+<br>
+<p>
+</tt>Similarly, the type constructor <tt>Ratio</tt> (found in the <tt>Rational
+</tt>library) makes a rational type in class <tt>RealFrac</tt> from an instance of
+<tt>Integral</tt>. 
+(<tt>Rational</tt> is a type synonym for <tt>Ratio&nbsp;Integer</tt>.)
+<tt>Ratio</tt>, however, is an abstract type constructor. 
+Instead of a data constructor like <tt>:+</tt>, rationals use the `<tt>%</tt>' function to
+form a ratio from two integers.  Instead of pattern matching,
+component extraction functions are provided:
+<tt><br>
+
+<br>
+(%)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Integral&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Ratio&nbsp;a<br>
+numerator,&nbsp;denominator&nbsp;&nbsp;::&nbsp;(Integral&nbsp;a)&nbsp;=&gt;&nbsp;Ratio&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+<p>
+</tt>Why the difference?  Complex numbers in cartesian form are
+unique---there are no nontrivial identities involving <tt>:+</tt>.  On the
+other hand, ratios are not unique, but have a canonical (reduced) form
+that the implementation of the abstract data type must maintain; it is
+not necessarily the case, for instance, that <tt>numerator&nbsp;(x%y)</tt> is
+equal to <tt>x</tt>, although the real part of <tt>x:+y</tt> is always <tt>x</tt>.<a name="tut-num-constants"></a><p>
+<a name="sect10.3"></a>
+<h3>10.3<tt>&nbsp;&nbsp;</tt>Numeric Coercions and Overloaded Literals</h3>
+<p>
+The Standard Prelude and libraries provide several overloaded functions
+that serve as explicit coercions:
+<tt><br>
+
+<br>
+fromInteger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Num&nbsp;a)&nbsp;=&gt;&nbsp;Integer&nbsp;-&gt;&nbsp;a<br>
+fromRational&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Fractional&nbsp;a)&nbsp;=&gt;&nbsp;Rational&nbsp;-&gt;&nbsp;a<br>
+toInteger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Integral&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;Integer<br>
+toRational&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(RealFrac&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;Rational<br>
+fromIntegral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Integral&nbsp;a,&nbsp;Num&nbsp;b)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;b<br>
+fromRealFrac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(RealFrac&nbsp;a,&nbsp;Fractional&nbsp;b)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;b<br>
+<br>
+fromIntegral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;fromInteger&nbsp;.&nbsp;toInteger<br>
+fromRealFrac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;fromRational&nbsp;.&nbsp;toRational<br>
+
+<br>
+<p>
+</tt>Two of these are implicitly used to provide overloaded numeric literals:
+An integer numeral (without a decimal point) is actually equivalent to
+an application of <tt>fromInteger</tt> to the value of the numeral as an
+<tt>Integer</tt>.  Similarly, a floating numeral (with a decimal point) is
+regarded as an application of <tt>fromRational</tt> to the value of the
+numeral as a <tt>Rational</tt>.  Thus, <tt>7</tt> has the type <tt>(Num&nbsp;a)&nbsp;=&gt;&nbsp;a</tt>,
+and <tt>7.3</tt> has the type <tt>(Fractional&nbsp;a)&nbsp;=&gt;&nbsp;a</tt>.  This means that we
+can use numeric literals in generic numeric functions, for example:
+<tt><br>
+
+<br>
+halve&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Fractional&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+halve&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;*&nbsp;0.5<br>
+
+<br>
+
+</tt>This rather indirect way of overloading numerals has the additional
+advantage that the method of interpreting a numeral as a number
+of a given type can be specified in an <tt>Integral</tt> or <tt>Fractional
+</tt>instance declaration (since <tt>fromInteger</tt> and <tt>fromRational</tt> are
+operators of those classes, respectively).  For example, the
+<tt>Num</tt> instance of <tt>(RealFloat&nbsp;a)&nbsp;=&gt;&nbsp;Complex&nbsp;a</tt> contains this method:
+<tt><br>
+
+<br>
+fromInteger&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;fromInteger&nbsp;x&nbsp;:+&nbsp;0<br>
+
+<br>
+
+</tt>This says that a <tt>Complex</tt> instance of <tt>fromInteger</tt> is defined to
+produce a complex number whose real part is supplied by an appropriate
+<tt>RealFloat</tt> instance of <tt>fromInteger</tt>.  In this manner, even
+user-defined numeric types (say, quaternions) can make use of
+overloaded numerals.<p>
+As another example, recall our first definition of <tt>inc</tt> from Section
+<a href="goodies.html#tut-values-etc">2</a>:
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Integer&nbsp;-&gt;&nbsp;Integer<br>
+inc&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;n+1<br>
+
+<br>
+
+</tt>Ignoring the type signature, the most general type of <tt>inc</tt> is 
+<tt>(Num&nbsp;a)&nbsp;=&gt;&nbsp;a-&gt;a</tt>.  The explicit type signature is legal,
+however, since it is <I>more specific</I> than the principal type (a
+more general type signature would cause a static error).  The type
+signature has the effect of restricting <tt>inc</tt>'s type, and in this
+case would cause something like <tt>inc&nbsp;(1::Float)</tt> to be ill-typed.<p>
+<a name="sect10.4"></a>
+<h3>10.4<tt>&nbsp;&nbsp;</tt>Default Numeric Types</h3><p>
+Consider the following function definition:
+<tt><br>
+
+<br>
+rms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Floating&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+rms&nbsp;x&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;sqrt&nbsp;((x^2&nbsp;+&nbsp;y^2)&nbsp;*&nbsp;0.5)<br>
+
+<br>
+
+</tt>The exponentiation function <tt>(^)</tt> (one of three different standard
+exponentiation operators with different typings, see report section 6.8.5) has
+the type <tt>(Num&nbsp;a,&nbsp;Integral&nbsp;b)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;b&nbsp;-&gt;&nbsp;a</tt>, and since <tt>2</tt> has the
+type <tt>(Num&nbsp;a)&nbsp;=&gt;&nbsp;a</tt>, the type of <tt>x^2</tt> is <tt>(Num&nbsp;a,&nbsp;Integral&nbsp;b)&nbsp;=&gt;&nbsp;a</tt>.
+This is a problem; there is no way to resolve the overloading
+associated with the type variable <tt>b</tt>, since it is in the context, but
+has otherwise vanished from the type expression.  Essentially, the
+programmer has specified that <tt>x</tt> should be squared, but has not
+specified whether it should be squared with an <tt>Int</tt> or an <tt>Integer
+</tt>value of two.  Of course, we can fix this:
+<tt><br>
+
+<br>
+rms&nbsp;x&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;sqrt&nbsp;((x&nbsp;^&nbsp;(2::Integer)&nbsp;+&nbsp;y&nbsp;^&nbsp;(2::Integer))&nbsp;*&nbsp;0.5)<br>
+
+<br>
+
+</tt>It's obvious that this sort of thing will soon grow tiresome, however.<p>
+In fact, this kind of overloading ambiguity is not restricted to
+numbers:
+<tt><br>
+
+<br>
+show&nbsp;(read&nbsp;"xyz")<br>
+
+<br>
+
+</tt>As what type is the string supposed to be read?  This is
+more serious than the exponentiation ambiguity, because there, any
+<tt>Integral</tt> instance will do, whereas here, very different behavior
+can be expected depending on what instance of <tt>Text</tt> is used to
+resolve the ambiguity.<p>
+Because of the difference between the numeric and general cases of the
+overloading ambiguity problem, Haskell provides a solution that is
+restricted to numbers: Each module may contain a <I>default
+declaration,</I> consisting of the keyword <tt>default</tt> followed by a
+parenthesized, comma-separated list of numeric monotypes (types with
+no variables).  When an ambiguous type variable is discovered (such as
+<tt>b</tt>, above), if at least one of its classes is numeric and all of its
+classes are standard, the default list is consulted, and the first
+type from the list that will satisfy the context of the type variable
+is used.  For example, if the default declaration
+<tt>default&nbsp;(Int,&nbsp;Float)</tt> is in effect, the ambiguous exponent above will
+be resolved as type <tt>Int</tt>.  (See <a href="../onlinereport/decls.html#default-decls">&sect;4.3.4</a> for more details.)<p>
+The "default default" is <tt>(Integer,&nbsp;Double)</tt>, but
+<tt>(Integer,&nbsp;Rational,&nbsp;Double)</tt> may also be appropriate.  Very cautious
+programmers may prefer <tt>default&nbsp;()</tt>, which provides no defaults.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="monads.html">back</a> <a href="modules.html">next</a> <a href="index.html">top</a>

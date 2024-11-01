@@ -1,0 +1,8 @@
+Group means
+    The mail folder.
+
+Group buffer
+    The buffer which lists mail folders.
+
+Summary buffer
+    The buffer which lists mails.

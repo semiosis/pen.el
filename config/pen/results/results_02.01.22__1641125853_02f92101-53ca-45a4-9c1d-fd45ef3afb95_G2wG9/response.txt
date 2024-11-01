@@ -1,0 +1,9 @@
+NAME
+    ideviceinfo - list device information
+SYNOPSIS
+    ideviceinfo [OPTION...]
+DESCRIPTION
+    -l, --list-apps
+        List installed applications.
+    -k, --list-files
+        List installed application binary contents.

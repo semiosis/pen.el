@@ -1,0 +1,5 @@
+">>=" is a monad binding operator
+
+f >>= g is the same as f (g x)
+
+where f is a monad and x is the argument to g

@@ -1,0 +1,22 @@
+General Data Protection Regulation
+GDPR
+    A legal framework that sets guidelines for
+    the collection and processing of personal
+    information from individuals who live in
+    the European Union (EU).
+
+    E.g.
+        Anonymous - Don’t store any personal
+        data, unless given with permission
+        (eg. email for newsletter).
+        
+        Don’t store IP addresses or
+        superfluous session data that could be
+        used for fingerprinting.
+        
+        This way, my site is GDPR compliant by
+        default.
+        
+        And while not a hard requirement, I
+        don’t use cookies to track visitors
+        across multiple sessions.

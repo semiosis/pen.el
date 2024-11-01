@@ -1,0 +1,3 @@
+The above code defines a new data type called GameState.
+The data type has two fields, numberToGuess and numTries.
+The type of numberToGuess is Integer, and the type of numTries is Integer.

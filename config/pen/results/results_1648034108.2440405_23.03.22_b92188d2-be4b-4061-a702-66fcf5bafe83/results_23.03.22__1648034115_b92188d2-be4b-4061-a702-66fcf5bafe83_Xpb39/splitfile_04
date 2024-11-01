@@ -1,0 +1,3 @@
+(reset! mnt (mount/start (k-app))))
+
+(defonce mnt (atom nil))

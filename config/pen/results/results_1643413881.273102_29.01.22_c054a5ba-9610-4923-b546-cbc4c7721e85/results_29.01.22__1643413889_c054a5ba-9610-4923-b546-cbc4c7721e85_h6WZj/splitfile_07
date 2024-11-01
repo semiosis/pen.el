@@ -1,0 +1,10 @@
+
+      (if (and (not (pen-complete-line-p preceding-text))
+               (not (pen-complete-desirable-line-p preceding-text)))
+          ;; Disabled pen-mode temporarily
+          (let* ((pen nil)
+                 (fun (key-binding (kbd "M-3"))))
+            (call-interactively fun))
+        ;; Enabled pen-mode temporarily
+        (let ((response
+               (

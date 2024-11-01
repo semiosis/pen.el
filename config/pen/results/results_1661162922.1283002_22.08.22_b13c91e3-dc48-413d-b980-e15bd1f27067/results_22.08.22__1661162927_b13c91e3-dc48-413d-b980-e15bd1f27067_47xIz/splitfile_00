@@ -1,0 +1,17 @@
+
+
+x <- return 42
+
+z <- x
+
+return z
+
+example2 = do x <- return 42
+
+y <- x
+
+return y
+
+example3 = do -- ok if short
+
+x <- return 42

@@ -1,0 +1,17 @@
+
+let main = do
+
+Output:
+
+Output:
+
+type TI = (Int,Int)
+type TM = (TM,[Int])
+
+let tm =
+
+Output:
+
+Output:
+
+newtype

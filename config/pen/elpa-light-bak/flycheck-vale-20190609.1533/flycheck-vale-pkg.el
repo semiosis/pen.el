@@ -1,0 +1,2 @@
+;;; Generated package description from flycheck-vale.el  -*- no-byte-compile: t -*-
+(define-package "flycheck-vale" "20190609.1533" "flycheck integration for vale" '((emacs "24.4") (flycheck "0.22") (let-alist "1.0.4")) :commit "f08249535348d046d0974b9c20fe1b7dd3cd2660" :authors '(("Austin Bingham" . "austin.bingham@gmail.com")) :maintainer '("Austin Bingham" . "austin.bingham@gmail.com") :url "https://github.com/abingham/flycheck-vale")

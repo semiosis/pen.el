@@ -1,0 +1,6 @@
+
+
+(defun context-predicate (context-tuple)
+  (interactive)
+  (let ((compiled-tuple (compile-context-tuple context-tuple)))
+    (funcall (

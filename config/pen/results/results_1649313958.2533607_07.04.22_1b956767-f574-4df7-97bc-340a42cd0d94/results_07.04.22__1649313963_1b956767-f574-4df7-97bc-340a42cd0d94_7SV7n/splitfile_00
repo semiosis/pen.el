@@ -1,0 +1,7 @@
+http://www.stavros.io/posts/python-fuse-filesystem/
+
+                                                          Stavros Korokithakis
+    Python FUSE File System
+
+    I've been playing around with the FUSE file system abstraction layer recently and
+    I've just released a simple Python-based filesystem.

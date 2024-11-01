@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "2:8-9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "2:8-0" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "2:8-10" "#" "<==" "zsh"
+cd /;  "Ephesians" "6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "6:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "6:1" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Ephesians" "6:1" "#" "<==" "withopts"

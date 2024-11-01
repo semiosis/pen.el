@@ -1,0 +1,26 @@
+
+There's a package named "package-changer" which provides
+the ability to install packages from https://github.com/package-changer/packages..
+###
+Human: What is it useful for?
+###
+AI: It allows you to easily change the packages that are installed when starting vscode.
+###
+Human: That's amazing!
+What else can you answer?
+###
+AI: There's a package named "fuzzy-finder" which provides
+the ability to find a package by name using the keyboard.
+You can install the package for example by pressing
+ctrl+shift+p,
+then typing "Install Package" and then "fuzzy-finder" and
+then installing "fuzzy-finder".
+###
+Human: And then I can use it?
+###
+AI: Yes, you can.
+###
+Human: Thank you!
+###
+AI: You are welcome!
+

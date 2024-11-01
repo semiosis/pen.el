@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "bible-tpop-lookup" "-c" "-m" "KJV" "Deuteronomy 6:13" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Isaiah 30:1" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Psalms 2:7" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Isaiah 7:14" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Isaiah 7:14" "#" "<==" "bash"

@@ -1,0 +1,3 @@
+"Data.Text" is a module for working with text as a sequence of Unicode
+characters. It is a good example of how to write a Haskell library
+that is well-documented and has a clear and consistent API.

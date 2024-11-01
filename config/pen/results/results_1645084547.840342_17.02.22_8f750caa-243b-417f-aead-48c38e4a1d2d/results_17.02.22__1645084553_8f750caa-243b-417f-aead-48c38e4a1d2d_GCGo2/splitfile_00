@@ -1,0 +1,14 @@
+"org.clojure/clojure" is a dependency of the project.
+
+The following is a code example:
+
+(ns my-namespace
+  (:require [io.repl :refer [doc]]))
+
+(doc io.repl/doc)
+
+(doc io.repl/doc "clojure.core")
+
+(doc io.repl/doc "clojure.core" "first")
+
+(doc io.repl/doc "clojure.core" "first"

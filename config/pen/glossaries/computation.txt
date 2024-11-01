@@ -1,0 +1,160 @@
+Turing machine
+    An abstract model of a computer developed
+    by the famous computer scientist Alan
+    Turing.
+
+    From a theoretical standpoint, the Turing
+    machine is useful because it allows you to
+    reason about what can and can't be
+    computed, not just on a digital computer,
+    but any possible computer.
+
+    This model also allows computer scientists
+    to show equivalence between computing
+    systems if they can each simulate a Turing
+    machine.
+
+    You can use this to show, for example,
+    that there's nothing that you can compute
+    in Java that you can't also compute in
+    assembly language.
+
+Gödel machine
+    Theoretical self-improving computer
+    program that solves problems in an optimal
+    way.
+
+    Uses a recursive self-improvement protocol
+    in which it rewrites its own code when it
+    can prove the new code provides a better
+    strategy.
+
+Gödel coding
+Gödel numbering
+    A way for mathematics to talk about
+    itself.
+
+    Any statement about numbers has its own
+    particular code number.
+
+    A Gödel numbering is a function that
+    assigns to each symbol and well-formed
+    formula of some formal language a unique
+    natural number, called its Gödel number.
+
+    The concept was used by Kurt Gödel for the
+    proof of his incompleteness theorems.
+    (Gödel 1931)
+
+    A Gödel numbering can be interpreted as an
+    encoding in which a number is assigned to
+    each symbol of a mathematical notation,
+    after which a sequence of natural numbers
+    can then represent a sequence of symbols.
+
+    These sequences of natural numbers can
+    again be represented by single natural
+    numbers, facilitating their manipulation
+    in formal theories of arithmetic.
+
+    The axioms of mathematics, true statements
+    (e.g. Fermat's last theorem) etc. have
+    their own number.
+
+    So every code number can be worked
+    backwards into a statement.
+
+    Not every number will have a meaningful
+    mathematical statement but every
+    mathematical statement will have a unique
+    number associated with it.
+
+    A big simplification:
+    - It's a bit like saying any statement
+      who's code number is divisible by the
+      code number of the axioms will be
+      provable by the axioms.
+
+model of computation
+    [#computability theory]
+    [#computational complexity theory]
+
+    A model which describes how an output of a
+    mathematical function is computed given an
+    input.
+    
+    A model describes how units of
+    computations, memories, and communications
+    are organized.
+
+    Classified in three categories:
+    - sequential models,
+    - functional models, and
+    - concurrent models.
+
+    Sequential models include:
+    - Finite state machines
+    - Pushdown automata
+    - Random access machines
+    - Turing machines
+
+    Functional models include:
+    - Lambda calculus
+    - General recursive functions
+    - Combinatory logic
+    - Abstract rewriting systems
+
+    Concurrent models include:
+    - Cellular automaton
+    - Kahn process networks
+    - Petri nets
+    - Synchronous Data Flow
+    - Interaction nets
+    - Actor model
+
+cellular automaton
+    A discrete model of computation studied in
+    automata theory.
+    
+    Cellular automata are also called cellular
+    spaces, tessellation automata, homogeneous
+    structures, cellular structures,
+    tessellation structures, and iterative
+    arrays.
+
+Kahn process networks
+KPNs
+process networks
+    A distributed model of computation where a
+    group of deterministic sequential
+    processes are communicating through
+    unbounded first in, first out (FIFO)
+    channels.
+    
+    The resulting process network exhibits
+    deterministic behavior that does not
+    depend on the various computation or
+    communication delays.
+    
+    The model was originally developed for
+    modeling distributed systems but has
+    proven its convenience for modeling signal
+    processing systems.
+    
+    As such, KPNs have found many applications
+    in modeling embedded systems, high-
+    performance computing systems, and other
+    computational tasks.
+    
+    KPNs were first introduced by Gilles Kahn.
+
+Synchronous Data Flow
+    [restricted Kahn process network]
+
+    A restriction on Kahn process networks
+    where the number of tokens read and
+    written by each process is known ahead of
+    time.
+    
+    In some cases, processes can be scheduled
+    such that channels have bounded FIFOs.

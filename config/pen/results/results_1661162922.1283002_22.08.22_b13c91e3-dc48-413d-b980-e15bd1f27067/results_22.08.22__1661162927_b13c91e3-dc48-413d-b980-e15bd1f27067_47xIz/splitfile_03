@@ -1,0 +1,9 @@
+: use do-notation
+
+mv <- newMVar undefined
+
+void (forkIO (putMVar mv ()))
+
+example2 = do  -- poor style: use explicit forklift
+
+-- forkIO (put

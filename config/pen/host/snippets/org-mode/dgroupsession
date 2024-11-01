@@ -1,0 +1,63 @@
+# -*- mode: snippet -*-
+# name: d-group-session
+# group: bible
+# key: dgs
+# expand-env: ((yas-indent-line 'fixed))
+# --
+#+TITLE: D-Group journal weekly entry for `(e/date "%Y")`, week `(date-week-number)`
+
+* D-Group weekly session notes
+Started working on it: <`(e/date "%F %a")`>
+
+Listen to instrumental worship music:
+`(dgs-get-weekly-hymn-music-link)`
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage
+|-
+`(d-group-weekly-scripture-memory-hear-journal-table-rows)`
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  `(d-group-get-weekly-scripture-memory-nt)`
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+`(snc "bible-show-verses -m NASB -pp | cat" (d-group-get-weekly-scripture-memory-nt))`
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  `(d-group-get-weekly-scripture-memory-ot)`
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+`(snc "bible-show-verses -m NASB -pp | cat" (d-group-get-weekly-scripture-memory-ot))`
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

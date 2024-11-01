@@ -1,0 +1,17 @@
+
+  (interactive)
+  (pen-nuke-recursive (list (buffer-file-name))))
+
+;; Launch the nukes recursively
+(defun pen-nuke-recursive (files)
+  (if files
+      (progn
+        (mapcar 'pen-nuke-file files)
+        (pen-nuke-recursive (pen-next-files files)))))
+
+;; Nuke the file and update the buffer.  This is a destructive operation.
+(defun pen-nuke-file (file)
+  (if (and file (file-exists-p file))
+      (progn
+        ;; Nuke the file.  This is destructive.  If we don't do this, then the buffer will have a stale copy of the file.
+        ;; We do this before we update the buffer so that if there is an error, we don

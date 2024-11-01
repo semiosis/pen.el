@@ -1,0 +1,3 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "most-famous-person-known-for" "getting the medal of honor")))
+--> 

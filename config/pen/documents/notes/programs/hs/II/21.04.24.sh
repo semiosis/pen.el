@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "II" "Corinthians" "3:17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "II" "Corinthians" "3-7" "#" "<==" "bash"
+cd /root/notes;  "II" "Corinthians" "3:6" "#" "<==" "zsh"
+cd /root/notes;  "II" "Corinthians" "3:18" "#" "<==" "zsh"
+cd /root/notes;  "II" "Corinthians" "3:7" "#" "<==" "zsh"
+cd /root/notes;  "II" "Corinthians" "3:7-9" "#" "<==" "zsh"
+cd /root/notes;  "II" "Corinthians" "3:6-9" "#" "<==" "zsh"

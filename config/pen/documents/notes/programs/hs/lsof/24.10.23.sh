@@ -1,0 +1,5 @@
+cd /root/notes;  "lsof" "-p" "1735627" "#" "<==" "pen-tm"
+cd /root/notes;  "lsof" "-p" "1735633" "#" "<==" "pen-tm"
+cd /root/notes;  "lsof" "-p" "1735689" "#" "<==" "pen-tm"
+cd /root/notes;  "lsof" "-p" "1735690" "#" "<==" "pen-tm"
+cd /root/notes;  "lsof" "-p" "1735697" "#" "<==" "pen-tm"

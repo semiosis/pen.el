@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "John" "I" "#" "<==" "zsh"
+cd /;  "John" "1:1" "#" "<==" "zsh"
+cd /;  "John" "1:1" "#" "<==" "zsh"
+cd /root/.pen/documents/church-services;  "John" "1:1" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "John" "1:14" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "John" "3:17" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "John" "3:16-17" "#" "<==" "bash"

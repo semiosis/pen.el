@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "e-ic" "cfw:open-calendar-buffer" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "e-ic" "testbrain-stdout" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "e-ic" "testbrain-stdout" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "e-ic" "testbrain-stdout" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "e-ic" "testbrain-stdout" "#" "<==" "zsh"

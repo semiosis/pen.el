@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: defun-after-advice
+# group: advice
+# key: dada
+# --
+(defun ${1:wiki-summary}-after-advice (&rest args)
+  $0)
+(advice-add '$1 :after '$1-after-advice)

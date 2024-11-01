@@ -1,0 +1,1917 @@
+https://github.com/mullikine/weightagnostic.github.io/blob/master/draft.md
+
+Domain randomization
+    A systematic approach to data generation
+    process that aims to enhance
+    generalization of the ML algorithms to new
+    environments.
+    
+    Domain randomization is an approach where
+    one tries to find a representation that
+    generalizes across different environments,
+    called domains.
+
+Boltzmann machine
+stochastic Hopfield network with hidden units
+    [stochastic RNN]
+    [Markov random field]
+
+    Can be seen as the stochastic, generative
+    counterpart of Hopfield networks. They
+    were one of the first neural networks
+    capable of learning internal
+    representations, and are able to represent
+    and (given sufficient time) solve
+    difficult combinatoric problems.
+
+RBM
+restricted Boltzmann machine
+    [generative stochastic ANN]
+
+    Can learn a probability distribution over
+    its set of inputs.
+
+    Rose to prominence after Geoffrey Hinton
+    and collaborators invented fast learning
+    algorithms for them in the mid-2000.
+
+    RBMs have found applications in:
+    - dimensionality reduction
+    - classification
+    - collaborative filtering
+    - feature learning
+    - topic modeling
+    - many body quantum mechanics
+
+    Can be trained in either supervised or
+    unsupervised ways, depending on the task.
+
+    A variant of Boltzmann machines, with the
+    restriction that their neurons must form a
+    bipartite graph.
+
+    By contrast, "unrestricted" Boltzmann
+    machines may have connections between
+    hidden units.
+
+    This restriction allows for more efficient
+    training algorithms than are available for
+    the general class of Boltzmann machines,
+    in particular the gradient-based
+    contrastive divergence algorithm.
+
+    Can also be used in deep learning
+    networks:
+    - deep belief networks can be formed by
+      "stacking" RBMs and optionally
+      fine-tuning the resulting deep network
+      with gradient descent and
+      backpropagation.
+
+deep-belief network
+    https://skymind.ai/wiki/deep-belief-network
+
+    A stack of restricted Boltzmann machines,
+    in which each RBM layer communicates with
+    both the previous and subsequent layers.
+
+    The nodes of any single layer don’t
+    communicate with each other laterally.
+
+    Used to recognize, cluster and generate
+    images, video sequences and motion-capture
+    data.
+
+Artificial Neural Network
+ANN
+    Pros
+    - Can perform tasks in which a linear
+      program cannot perform.
+    - Robust to partial failure.
+    - Does not need to be reprogrammed as it
+      learns itself.
+    - Can be implemented in an easy way
+      without any problem.
+    - Excel at solving complex problems.
+
+    Cons
+    - Requires training.
+    - May requires high processing time for
+      larger networks.
+    - The architecture is different from the
+      architecture and history of
+      microprocessors so they have to be
+      emulated.
+
+saliency map
+    [#computer vision]
+
+    An image that shows each pixel's unique
+    quality.
+
+    The goal of a saliency map is to simplify
+    and/or change the representation of an
+    image into something that is more
+    meaningful and easier to analyze.
+
+training
+training set
+training data set
+    The general term for the samples used to
+    create the model
+
+test
+test set
+test data set
+validation
+validation set
+validation data set
+    Used to qualify performance.
+
+loss
+    The penalty for a bad prediction.
+    
+    That is, loss is a number indicating how
+    bad the model's prediction was on a single
+    example.
+    
+    If the model's prediction is perfect, the
+    loss is zero; otherwise, the loss is
+    greater.
+
+evaluation
+    For any machine learning model, we
+    evaluate the performance of the model
+    based on several points, and the loss is
+    amongst them.
+
+    We all know that an ML model:
+    - Underfits
+      When the training loss is way more
+      significant than the testing loss.
+
+    - Overfits
+      When the training loss is way smaller
+      than the testing loss.
+
+    - Performs very well when the training
+      loss and the testing loss are very
+      close.
+
+test loss
+testing loss
+validation loss
+    It is bad when the test loss increases
+    over epocs.
+
+    Adding dropout can stop the test loss from
+    increasing over time.
+
+AI accelerator
+    A class of specialized hardware
+    accelerator or computer system designed to
+    accelerate artificial intelligence
+    applications, especially ANNs, recurrent
+    NN, machine vision and ML.
+    
+    Typical applications include algorithms
+    for robotics, internet of things and other
+    data-intensive or sensor-driven tasks.
+    
+    They are often manycore designs and
+    generally focus on low-precision
+    arithmetic, novel dataflow architectures
+    or in-memory computing capability.
+    
+    As of 2018, a typical AI integrated
+    circuit chip contains billions of MOSFET
+    transistors.
+    
+    A number of vendor-specific terms exist
+    for devices in this category, and it is an
+    emerging technology without a dominant
+    design.
+
+TensorRT
+    [#nvidia]
+
+model interchange format
+
+parameters
+    The parameters of a neural network are
+    typically the weights of the connections.
+
+    In this case, these parameters are learned
+    during the training stage.
+
+    So, the algorithm itself (and the input
+    data) tunes these parameters.
+
+    The hyper parameters are typically the
+    learning rate, the batch size or the
+    number of epochs.
+
+probabilistic gating function
+
+hierarchical mixture of experts
+    A MoE where the output is conditioned on
+    multiple levels of probabilistic gating
+    functions.
+
+    https://people.cs.pitt.edu/~milos/courses/cs2750-Spring04/lectures/class22.pdf
+
+ensemble methods
+    Use a combination of simpler learners to
+    improve predictions.
+
+MoE
+Mixture of experts
+    [layer]
+    [technique]
+
+    Terminology:
+    - Expert = learner
+
+    Refers to a ML technique where multiple
+    experts (learners) are used to divide the
+    problem space into homogeneous regions.
+    
+    An example from the CV domain is combining
+    a NN model for human detection with
+    another for pose estimation.
+    
+    If the output is conditioned on multiple
+    levels of probabilistic gating functions,
+    the mixture is called a hierarchical
+    mixture of experts.
+    
+    A gating network decides which expert to
+    use for each input region.
+    
+    Learning thus consists of:
+    1) learning the parameters of individual
+       learners, and
+    2) learning the parameters of the gating
+       network.
+
+gating network
+    Part of a MoE.
+
+    Decides what expert to use via some logic.
+
+    Decides how much weight to place on each
+    expert.
+
+    Types of gating network:
+    - softmax
+      https://www.cs.toronto.edu/~hinton/csc321/notes/lec15.pdf
+
+Softmax gating network
+    [gating network]
+
+Zero shot learning
+One shot learning
+Few shot learning
+    Refers to model’s ability to learn a new
+    task by seeing zero / one / few examples
+    for that task
+
+Batching
+    A process of passing (or training) several
+    training instances simultaneously either
+    forward or backward in the network. 
+
+    https://www.marktechpost.com/2020/04/12/implementing-batching-for-seq2seq-models-in-pytorch/
+
+autoregression
+autoregressive model
+autoregressive
+auto-regressive
+auto-regression
+    [#statistics]
+    [#econometrics]
+    [#signal processing]
+
+    The way these models actually work is that
+    after each token is produced, that token
+    is added to the sequence of inputs.
+    
+    And that new sequence becomes the input to
+    the model in its next step.
+    
+    This is an idea called auto-regression
+
+    Examples:
+    - RNN
+    - Transformer   
+
+    An autoregressive model is a
+    representation of a type of random
+    process; as such, it is used to describe
+    certain time-varying processes in nature,
+    economics, etc.
+
+    A time series model that uses observations
+    from previous time steps as input to a
+    regression equation to predict the value
+    at the next time step.
+    
+    It is a very simple idea that can result
+    in accurate forecasts on a range of time
+    series problems.
+
+Weight Agnostic Neural Networks
+    https://ai.googleblog.com/2019/08/exploring-weight-agnostic-neural.html
+
+hidden representation
+    https://deepai.org/machine-learning-glossary-and-terms/hidden-representation
+
+    verb:
+        Part of feature learning.
+
+    noun:
+        The machine-readable data
+        representations learned from a neural
+        network’s hidden layers.
+
+T2T
+Tensor2Tensor
+    [library]
+
+    Contains deep learning models and datasets.
+
+    Designed to make DL more accessible and
+    accelerate ML research.
+
+    Actively used and maintained by
+    researchers and engineers within the
+    Google Brain team and a community of
+    users.
+
+rules of thumb
+    vim +/"\* Rules of thumb for building an MLP" "$NOTES/ws/deep-learning/rules-of-thumb.org"
+
+types of learning
+    - competitive
+    - error-correction
+      - backpropagation with GD
+
+neighborhood function
+    Gives the distance between the neuron u
+    and the neuron v in step s.
+
+    ewwlinks +/"between the neuron" "https://en.wikipedia.org/wiki/Self-organizing_map"
+
+    https://www.sciencedirect.com/topics/computer-science/neighborhood-function
+
+Neural State Machine
+    arxiv-summary "https://arxiv.org/abs/1907.03950"
+
+Morphogenesis
+    The biological process that causes an
+    organism to develop its shape.
+
+Self-Organizing Maps
+self-organizing feature map
+SOM
+SOFM
+Kohonen neural network
+Kohonen map
+network
+    [ANN]
+
+    Training:
+    - unsupervised
+
+    Output/Product:
+    - a low-dimensional (typically 2D),
+      discretized representation of the input
+      space of the training samples, called a
+      map.
+
+    Purpose/Application:
+    - dimensionality reduction.
+    - Visualizing Convolutional Neural
+      Networks
+    - Data topology learning
+    - High-dimensional data visualization
+    - Clustering
+
+    Very simple and powerful algorithm that
+    has a wide variety of applications.
+
+    https://github.com/itdxer/neupy
+
+    Points of difference:
+    - Apply competitive learning as opposed to
+      error-correction learning
+    - Uses a neighborhood function to preserve
+      the topological properties of the input
+      space.
+
+sequential model
+    model = tf.keras.models.Sequential()
+
+    What you're going to use most of the time.
+    It just means things are going to go in
+    direct order.
+
+    A feed forward model.
+
+    No going backwards...for now.
+
+Densely-connected
+Fully connected
+
+Dense layer
+    model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))
+                                    128 units.            rectified linear
+
+    Simplest neural network layer.
+
+    Densely-connected
+    Fully connected
+
+relu
+    The activation function you should just
+    default to.
+
+output layer
+    model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax))
+                                    10 nodes
+                                    1 node per possible number prediction
+
+softmax
+softmax function
+    The softmax function, also known as
+    softargmax or normalized exponential
+    function, is a generalization of the
+    logistic function to multiple dimensions.
+    
+    It is used in multinomial logistic
+    regression and is often used as the last
+    activation function of a NN to normalize
+    the output of a network to a probability
+    distribution over predicted output
+    classes, based on Luce's choice axiom.
+    
+    The softmax function takes as input a
+    vector z of K real numbers, and normalizes
+    it into a probability distribution
+    consisting of K probabilities proportional
+    to the exponentials of the input numbers.
+    
+    That is, prior to applying softmax, some
+    vector components could be negative, or
+    greater than one; and might not sum to 1;
+    but after applying softmax, each component
+    will be in the interval ( 0 , 1 ), and
+    the components will add up to 1, so that
+    they can be interpreted as probabilities.
+    
+    Furthermore, the larger input components
+    will correspond to larger probabilities.
+
+    ewwlinks +/"This stack of RBMs might end with a a Softmax layer to create a classifier, or it may simply help cluster" "https://skymind.ai/wiki/deep-belief-network"
+
+    For when you are looking for something
+    more like a probability distribution of
+    which of the possible prediction options
+    this thing we're passing features through
+    of is.
+
+compile the model
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+Adam optimizer
+    A great default to start with.
+
+input layer
+    Maybe use a flatten layer.
+
+flatten layer
+    model.add(tf.keras.layers.Flatten())
+
+    Was the input layer flat, or was it multi-dimensional?
+
+    This will serve as our input layer.
+
+    It's going to take the data we throw at
+    it, and just flatten it for us.
+
+Loss
+    A calculation of error.
+
+NN
+    Doesn't actually attempt to maximize accuracy.
+    It can minimize loss. A
+
+Loss function
+    Select one
+        sparse_categorical_crossentropy
+            Great for classification.
+
+categorical cross-entropy
+    A good starting choice of loss funtion for
+    a classification task.
+
+save the model
+    model.save('epic_num_reader.model')
+
+load the model
+    new_model = tf.keras.models.load_model('epic_num_reader.model')
+
+make predictions on the model
+    predictions = new_model.predict(x_test)
+
+Random Multimodel Deep Learning
+RMDL
+    vim +/"\*\* Ensemble Deep Learning" "$HOME/notes/models.org"
+
+residual connection
+skip connection
+    [#deep learning]
+    [#RNN]
+
+    Used to allow gradients to flow through a
+    network directly, without passing through
+    the non-linear activation functions.
+
+    Form conceptually a 'bus' which flows
+    right the way through the network, and in
+    reverse, the gradients can flow backwards
+    along it too.
+
+    high-level intuition:
+    - residual connections help deep models
+      train more successfully.
+
+Non-linear activation functions
+    By nature of being non-linear, cause the
+    gradients to explode or vanish (depending
+    on the weights).
+
+Causal inference
+    arxiv causal deep learning
+
+    Not a gradient descent or loss function
+    problem.
+
+    You need to do nearest neighbor.
+
+    Example
+        You can only give me the treatment or
+        the control, not both.
+
+        But you can find a similar person and
+        gather more evidence based on what
+        happened to them.
+
+    The process of drawing a conclusion about
+    a causal connection based on the
+    conditions of the occurrence of an effect.
+
+    The main difference between causal
+    inference and inference of association is
+    that the former analyzes the response of
+    the effect variable when the cause is
+    changed.
+
+Causal inference vs inference of association
+    https://en.wikipedia.org/wiki/Causal_inference
+
+    Causal inference analyzes the response of
+    the effect variable when the cause is
+    changed, where inference of association
+    does not.
+
+data augmentation
+    Artificially expand the size of a training
+    dataset by creating modified versions of
+    images in the dataset.
+
+    Training deep learning neural network
+    models on more data can result in more
+    skillful models, and the augmentation
+    techniques can create variations of the
+    images that can improve the ability of the
+    fit models to generalize what they have
+    learned to new images.
+
+early stopping
+    [#ml]
+
+    A form of regularization used to avoid
+    overfitting when training a learner with
+    an iterative method, such as GD.
+
+    Such methods update the learner so as to
+    make it better fit the training data with
+    each iteration.
+
+    Up to a point, this improves the learner's
+    performance on data outside of the
+    training set.
+
+    Past that point, however, improving the
+    learner's fit to the training data comes
+    at the expense of increased generalization
+    error.
+
+    Early stopping rules provide guidance as
+    to how many iterations can be run before
+    the learner begins to over-fit.
+
+    Early stopping rules have been employed in
+    many different ML methods, with varying
+    amounts of theoretical foundation.
+
+time-major format
+    https://stackoverflow.com/questions/48783798/whats-the-difference-between-data-time-major-and-batch-major?noredirect=1&lq=1
+
+    When in comes to RNNs, the tensors usually
+    go to rank 3+, but the idea stays the
+    same.
+
+    If the input is (batch_size, sequence_num,
+    features), it's called batch major,
+    because the 0 axis is the batch_size.
+
+    If the input is (sequence_num, batch_size,
+    features), it's called time major
+    likewise.
+
+    The features is always the last dimension
+    (at least I don't know real cases when
+    it's not), so there's no further variety
+    in naming.
+
+    Depending on the network structure, it
+    might expect specifically the batch or the
+    time as the 0 axis, so the format of input
+    data matters.
+
+    And depending on the previous layers, one
+    can get either of the those
+    representations to be fed into an RNN.
+
+    So the conversion from one arrangement to
+    another might be required, either by the
+    library function or by the caller.
+
+    As far as I can remember, batch major is
+    the default in TF and keras, so it simply
+    boils down what shape is produced from the
+    layer just before the RNN.
+
+    Once again: there is one-to-one
+    correspondence between batch major and
+    time major representations.
+
+    Any tensor can be represented as both.
+
+    But for a particular implementation, one
+    of those can be expected or required.
+
+        vim +/"time-major format" "$MYGIT/tensorflow/nmt/README.md"
+
+black-box optimisation algorithm
+    [type of optimisation algorithm]
+
+    Used for:
+    - Prototyping and when gradient-based
+      algorithms fail.
+
+      Examples:
+      - because the function is not
+        differentiable.
+      - because the function is truly opaque
+        (no gradients).
+      - because the gradient would require too
+        much memory to compute efficiently.
+
+    Assumption:
+    - the black box can be queried through a
+      simulation or experimental measurements
+      that provide a system output for
+      specified values of system inputs.
+
+convolutional
+    [NN layer]
+
+    Consists of a set of "filters".
+
+    The filters take a subset of the input
+    data at a time, but are applied across the
+    full input (by sweeping over the input).
+
+    The operations performed by this layer are
+    still linear/matrix multiplications, but
+    they go through an activation function at
+    the output, which is usually a non-linear
+    operation.
+
+    A linear operation using a subset of the
+    weights of a dense layer.
+
+    Nearby inputs are connected to nearby
+    outputs (specifically - a convolution 607
+    ).
+
+    The weights for the convolutions at each
+    location are shared.
+
+    Due to the weight sharing, and the use of
+    a subset of the weights of a dense layer,
+    there’s far less weights than in a dense
+    layer.
+
+    Generally followed by a non-linear
+    activation function.
+
+pooling
+    [NN layer]
+
+    Effectively down samples the output of the
+    prior layer, reducing the number of
+    operations required for all the following
+    layers, but still passing on the valid
+    information from the previous layer.
+
+    Replace each patch in the input with a
+    single output, which is the maximum (can
+    also be average) of the input patch.
+
+    Utilises:
+    - consecutive layers of the network are
+      activated by “higher” or more complex
+      features that are exhibited by a larger
+      area of the networks input data.
+
+normalisation
+    [NN layer]
+
+    Used at the input for feature scaling, and
+    in batch normalisation at hidden layers.
+
+    Scale the input so that the output has
+    near to a zero mean and unit standard
+    deviation, to allow for faster and more
+    resilient training.
+
+fully-connected
+densely-connected
+    [NN layer]
+
+    A linear operation on the layer’s input
+    vector.
+
+    A linear operation in which every input is
+    connected to every output by a weight (so
+    there are n_inputs * n_outputs weights -
+    which can be a lot!).
+
+    Generally followed by a non-linear
+    activation function.
+
+    vs:
+    - convolutional
+    - pooling
+
+    https://forums.fast.ai/t/dense-vs-convolutional-vs-fully-connected-layers/191
+
+Knowledge Graph
+    as "https://arxiv.org/abs/1906.05317"
+
+commonsense modeling
+    as "https://arxiv.org/abs/1906.05317"
+
+antirectifier
+    [#keras]
+    [example of a custom activation layer]
+
+    vim +/"We build a custom activation layer called 'Antirectifier'," "$MYGIT/keras-team/keras/examples/antirectifier.py"
+
+regularization
+    methods:
+    - L2
+    - drop out
+    - data augmentation
+    - early stopping
+
+L2 norm
+    Summing squared terms.
+
+L2 normalization
+    Different to L2 regularisation.
+
+L2 regularisation
+    Different to L2 normalization.
+
+L2 normalization vs L2 regularization
+    Not related in any meaningful sense,
+    beyond the superficial fact that both
+    require computing L2 norms.
+
+                      | operates on
+    ----------------- | ----------------
+    L2 regularization | model parameters
+    L2 normalization  | data representation
+
+ReLU
+rectified linear unit
+    A unit employing the rectifier
+
+rectifier
+    [activation function]
+
+    See "ReLU".
+
+Core Categorical Feature Concepts
+    - Vocabulary
+      The set of possible values for a
+      categorical feature.
+
+      It's used to train the embeddings or
+      create the hash buckets for categorical
+      features.
+
+    - Hash buckets
+      The simplest way to map categorical
+      features is just to hash their values,
+      possibly into a set of buckets, whose
+      number is determined or a hyperparameter.
+
+    - One hot encoding
+      Given a categorical input feature, if we
+      simply map the possible values to
+      numbers (say red->1, blue->2, green->3)
+      we are putting red and blue closer in
+      meaning (2-1=1), even if they aren't any
+      closer in meaning than red and green
+      (3-1=2).
+
+      Instead, a one hot encoding feature column
+      would create 3 separate nodes for red,
+      blue, and green, and have each one except
+      the actual value be 0, and the actual
+      value 1.
+
+      This way red is no closer to blue than
+      green.
+
+    - Softmax
+      Like a sigmoid function, but for multiple
+      input values, it maps a set of numerical
+      values to a set of probabilities that sum
+      to 1. which is supposed to represent the
+      probability of the input example being a
+      given calss.
+
+      A very common pattern is for the final
+      layer of the network to have the same
+      number of nodes as the number of possible
+      classes, and then run the softmax function
+      on the logits to generate probabilities
+      for each of those classes.
+
+    - Logits
+      The very big or very small numbers that
+      get mapped to probabilities.
+
+      Techncially, logit is the inverse of the
+      logistic (softmax) function, but in
+      practice logits is used to refer to the
+      value that would be obtained by running
+      the logit function on the probabilities.
+
+    - Word embeddings
+      Technically any sort of numbers generated
+      from words, but in a TF context word
+      embeddings usually refers to creating
+      vectors from categorical features and
+      training those vectors.
+
+      See the word2vec tutorial here.
+
+      It provides more semantics than just a
+      one-hot encoding since similar input
+      features will have more similar values.
+
+      Instead of a node for every possible value
+      of the category, you use a fixed size
+      vector (depth).
+
+      The vectors are trained by the network, in
+      the word2vec example, it's used based on
+      proximity in text, so that similar vector
+      values are in fact closer in meaning.
+
+      One interesting side-effect of this
+      approach is that you can do vector math on
+      the embeddings (e.g. king-queen = man).
+
+Popular Architectures
+    [#deep learning]
+
+    - Linear Classifier
+      Simple architecture that takes input
+      features and combines them with weights
+      and biases to predict an output value.
+      One of the built in Esimators.
+
+    - DNNClassifier
+      Deep neural net classifiers.
+
+      Involved intermediate layers of nodes that
+      represent "hidden features" and activation
+      functions to represent non-linearity.
+
+      One of the built in Estimators.
+
+    - Wide and Deep
+      An architecture popularized by a Google
+      paper that combines linear classifiers
+      with deep neural net classifiers.
+
+      The intuition is that the "wide" linear
+      parts represent memorizing specific
+      examples and the "deep" parts represent
+      understanding high level features.
+
+      For example, many parts of English grammar
+      have rules based on parts-of-speech
+      (learned by the deep part), but many
+      common examples that break those (learned
+      by the wide part).
+
+      One of the built-in Estimators.
+
+      See this tutorial.
+
+    - ConvNets
+      Convolutional neural nets.
+
+      Popular architecture for image
+      classification that uses grids that run
+      across the input image to produce hidden
+      layers.
+
+      Examples include LeNet, Nvidia, ImageNet
+
+    - Transfer Learning
+      Models that use existing trained models as
+      starting points and add additional layers
+      for the specific use case.
+
+      The intuition being the highly trained
+      existing models know many general features
+      that are a good starting point for
+      training a small network on specific
+      examples.
+
+      The TF for Poets tutorial is a good
+      example of doing this for image
+      recognition.
+
+    - RNN
+      Recurrent neural nets, an architecture
+      designed for handling a sequence of inputs
+      that have "memory" of the sequence.
+
+      LSTMs are a fancy version of RNNs.
+
+      Very popular for Natural Language
+      Processing (NLP) use cases
+
+    - GAN
+      General adversarial neural network, one
+      model creates fake examples, and another
+      model is served both fake example and real
+      examples and is asked to distinguish.
+
+      Popular approach to using ML to generate
+      new data.
+
+GAN
+Generative Adversarial Networks
+    Two models fighting against each other
+    would be able to co-train through plain
+    old backpropagation.
+
+    G
+    Generator
+        (like painting forgers who can't see
+        the original painting)
+
+        Trying to create fake data that looks
+        just like the genuine data.
+
+    D
+    Discriminator
+        Getting data from either the real set
+        or G and labeling the difference.
+
+    Goodfellow’s metaphor
+        G was like a team of forgers trying to
+        match real paintings with their
+        output, while D was the team of
+        detectives trying to tell the
+        difference.
+
+        Except that in this case, the forgers
+        G never get to see the original data —
+        only the judgments of D. They’re like
+        blind forgers.
+
+    ewwlinks +/"only 5 components to think about" "https://medium.com/@devnag/generative-adversarial-networks-gans-in-50-lines-of-code-pytorch-e81b79659e3f"
+    $MYGIT/devnag/pytorch-generative-adversarial-networks
+
+    Only 5 components to think about:
+    - R
+      The original, genuine data set.
+
+    - I
+      The random noise that goes into the
+      generator as a source of entropy.
+
+    - G
+      The generator which tries to copy/mimic
+      the original data set.
+
+    - D
+      The discriminator which tries to tell
+      apart G’s output from R.
+
+    - The actual ‘training’ loop where we
+      teach G to trick D and D to beware G.
+
+sequence-to-sequence
+    [models type]
+
+    Receives a sequence of input data and
+    provides another sequence of data as an
+    output.
+
+    Completely different from
+    - FFNN
+    - ConvNet
+    which receive a fixed-size vector as input
+    and produce a fixed-sized vector as an
+    output.
+
+    For example if you want to translate
+    sentence “You are awesome.” from English
+    to Serbian, sequence-to-sequence model
+    will receive word by word as an input and
+    generate output “Ti si super”.
+
+Multi-Head Attention block
+    [component of the transformer]
+
+    We are now familiar with RNN’s shortcoming
+    is that it is not well versed in handling
+    dependencies between input or output
+    tokens themselves.
+    
+    To handle this flaw, the Transformer just
+    allows the encoder and decoder to see the
+    entire input sequence all at once,
+    directly modeling these dependencies
+    using self-attention.
+    
+    This fundamental idea of transformer is
+    implemented by its vital component, the
+    Multi-Head Attention block.
+
+transformer
+    [architecture]
+
+    https://rubikscode.net/2019/07/29/introduction-to-transformers-architecture/
+
+    Transformer architectures are not designed
+    to operate efficiently on CPU, so we
+    recommend you have a GPU available for
+    both training and usage.
+
+    https://explosion.ai/blog/spacy-pytorch-transformers
+
+    Let’s roll back a bit to understand the
+    basic concept of Transformers.
+    
+    Components
+    - Multi-Head Attention block.
+
+    https://jalammar.github.io/illustrated-transformer/
+
+    Types of attention (in the Transformer)
+    https://youtu.be/BhlOGGzC0Q0?t=569
+    - encoder-decoder attention
+    - encoder self-attention
+    - decoder self-attention
+
+Perceiver
+    A transformer adapted to be able to
+    process non-textual data, such as images,
+    sounds and video, and spatial data.
+    
+    Transformers underlie other notable
+    systems such as BERT and GPT-3, which
+    preceded Perceiver.
+    
+    It adopts an asymmetric attention
+    mechanism to distill inputs into a latent
+    bottleneck, allowing it to learn from
+    large amounts of heterogeneous data.
+    
+    Perceiver matches or outperforms
+    specialized models on classification
+    tasks.
+
+   Perceiver was introduced in June 2021 by
+   DeepMind.
+   
+   It was followed by Perceiver IO in August
+   2021.
+
+residual neural network
+resnet
+    [ANN]
+
+    Builds on constructs known from pyramidal
+    cells in the cerebral cortex.
+
+    Residual neural networks do this by
+    utilizing skip connections, or short-cuts
+    to jump over some layers.
+
+    A classic neural network used as a
+    backbone for many computer vision tasks.
+
+self-attention
+intra-attention
+Scaled Dot-Product Attention
+    [attention mechanism]
+
+    Intuition:
+        Each 512D row reflects on its own
+        position/context within the entire
+        matrix.
+
+    Relates different positions of a single
+    sequence in order to compute a
+    representation of the sequence.
+
+    ewwlinks +/"Self-Attention" "https://medium.com/saarthi-ai/transformers-attention-based-seq2seq-machine-translation-a28940aaa4fe"
+
+    An attention operation of a single
+    sequence in order to calculate the
+    representation of the very same sequence.
+    
+    This concept has been very useful in NLP
+    tasks such as Text summarization, Machine
+    Translation and Image Description
+    Generation.
+
+    The method the Transformer uses to bake
+    the “understanding” of other relevant
+    words into the one we’re currently
+    processing.
+
+    ---
+
+    https://ryanong.co.uk/2020/01/10/day-10-transformers-multihead-attention-mechanism/
+    
+    The self-attention mechanism, also known
+    as Scaled Dot-Product Attention, involves
+    three different inputs: queries, keys and
+    values vectors.
+    
+    These vectors are created by multiplying
+    three different matrices, that are trained
+    during the training process, with either
+    the word embeddings or the output of the
+    previous encoder in the stack.
+    
+    Once we have computed the vectors, we
+    would need to compute the attention score,
+    which tells the model which part of the
+    sequence to focus on where encoding a
+    word.
+    
+    The score is computed by taking the dot
+    products of the query with all the other
+    key vectors in the sequence.
+    
+    Once the score has been computed, we
+    divide each score by the square root of
+    the dimension of the key vectors and apply
+    the softmax function to obtain the weights
+    on the value vectors.
+    
+    Finally, we multiply each value vector by
+    their corresponding weights and sum them
+    up to produce the output of the self-
+    attention layer at this position.
+
+induction
+inductive inference
+    [#statistical inference]
+
+    Reasoning from observed training cases to
+    general rules, which are then applied to
+    the test cases.
+
+    This has an extra middle step (i.e. the
+    creation of rules) compared to
+    transduction.
+    
+transduction
+transductive inference
+    [#statistical inference]
+
+    Reasoning from observed, specific
+    (training) cases to specific (test) cases.
+
+    vs inductive inference:
+        The distinction is most interesting in
+        cases where the predictions of the
+        transductive model are not achievable
+        by any inductive model.
+
+    In contrast to induction, it has no
+    intermediate step of learning rules /
+    generalising.
+
+transduction problems
+    Approximating a mapping function from data
+    and using it to make a prediction.
+
+    Example:
+    - language modeling
+
+neural sequence transduction model
+sequence transduction model
+transduction model
+    Examples:
+    - The Transformer
+
+transformer
+The Transformer
+    [sequence transduction model]
+
+    egr transformer google
+
+    Attention is all you need.
+
+    Based entirely on attention, replacing the
+    recurrent layers most commonly used in
+    encoder-decoder architectures with
+    multi-headed self-attention.
+
+    Next generation of sequence models.
+
+    self-attentional layers.
+
+    tensor2tensor
+
+    One of the models in the Tensor2Tensor
+    library.
+
+    Use neither Convolutional Neural Networks
+    (CNNs) nor Recurrent Neural Networks
+    (RNNs) in its structure, but just
+    attention mechanisms.
+
+    The first transduction model relying
+    entirely on self-attention to compute
+    representations of its input and output
+    without using sequence aligned RNNs or
+    convolution.
+
+Recurrent Neural Network
+RNN
+    It models sequences.
+
+    The de facto go-to type of network to make
+    predictions with time series data
+    (including including all variants of
+    recurrent neural networks including
+    residual networks)
+
+    Applyies the same set of weights
+    recursively to the state of the aggregator
+    at time t and input at time t.
+
+    Pure RNNs are rarely used now, but its
+    analogs, for example, LSTM and GRU, are
+    the most up-to-date in most sequence
+    modeling problems.
+
+    LSTM, which is used instead of a simple
+    dense layer in pure RNN.
+
+    Then what‘s wrong with RNNs?
+    1.  The first flaw of RNN is its
+        sequential nature.
+    
+        It means that each hidden state
+        depends on the output of the previous
+        hidden state.
+        
+        This becomes a huge problem for GPUs.
+        
+        As they have huge a computational
+        power, they resent having to wait for
+        data from the network to become
+        available.
+        
+        This makes RNN unfit even with
+        technologies like CuDNN which slow
+        down the whole process for GPU.
+
+    2.  The second is the long-range
+        dependencies. 
+
+    https://medium.com/saarthi-ai/transformers-attention-based-seq2seq-machine-translation-a28940aaa4fe
+
+converged
+    Finished, further training doesn't improve
+    results.
+
+latent space
+    Before you use a neural network for a task
+    (classification, regression, image
+    reconstruction), the usual architecture is
+    to extract features through many layers
+    (convolutional, recurrent, pooling etc.).
+    
+    We say that the function that maps your
+    input to this before last layer projects
+    it on the latent space.
+    
+    In other words, the latent space is the
+    space where your features lie.
+
+    https://ai-odyssey.com/2017/02/07/autoencoders%E2%80%8A/
+
+    Autoencoders (AE) are a family of neural
+    networks for which the input is the same
+    as the output*. They work by compressing
+    the input into a latent-space
+    representation, and then reconstructing
+    the output from this representation.
+
+loss function
+cost function
+    A function that maps an event or values of
+    one or more variables onto a real number
+    intuitively representing some "cost"
+    associated with the event.
+
+predictive loss
+
+posterior predictive loss
+
+
+Character Embedding
+    https://towardsdatascience.com/besides-word-embedding-why-you-need-to-know-character-embedding-6096a34a3b10
+
+attention mechanism
+attention
+    [mechanism]
+
+    https://skymind.ai/wiki/attention-mechanism-memory-network
+
+    Attention mechanisms and structures such
+    as CNNs and RNNs are not mutually
+    exclusive. In fact, all of them can be
+    combined with no perjury.
+
+    Types of attention (in the Transformer)
+    https://youtu.be/BhlOGGzC0Q0?t=569
+    - encoder-decoder attention
+    - encoder self-attention
+    - decoder self-attention
+
+    attention != choice
+    attention == focus
+
+    https://www.coursera.org/lecture/nlp-sequence-models/attention-model-intuition-RDXpX
+
+    It's possible to learn the attention
+    matrix.
+
+    Concepts:
+    - Attention can be directed at the present
+      and the past.
+
+      What is the neural network paying
+      attention to?
+
+    Serves:
+    - as a memory-access mechanism.
+      to orient memory access
+    - to orient perception as well as
+
+    You might even say perception is just a
+    very short-term subset of all memory.
+
+    Filters the perceptions that can be stored
+    in memory, and filters them again on a
+    second pass when they are to be retrieved
+    from memory.
+
+    Matters because:
+    - it has been shown to produce
+      state-of-the-art results in machine
+      translation and other natural language
+      processing tasks, when combined with
+      neural word embeddings, and
+    - is one component of breakthrough
+      algorithms such as Transformer and BERT,
+      which is setting new records in accuracy
+      in NLP.
+
+    Part of our best effort to date to create
+    real natural-language understanding in
+    machines.
+
+    If that succeeds, it will have an enormous
+    impact on society and almost every form of
+    business.
+
+    Describes the mind’s ability to allocate
+    consideration unevenly across a field of
+    sensation, thought and proprioception, to
+    focus and bring certain inputs to the
+    fore, while ignoring or diminishing the
+    importance of others.
+
+    https://www.youtube.com/watch?v=SY5PvZrJhLE
+        Now an attention mechanism is
+        basically a way where information is
+        routed in between the different tokens
+        [right here] and as it goes up the
+        layer, (basically) the information is
+        routed around and the model can make
+        various inferences and at the end.
+
+gradient lenth
+    v +/"if i >= grad_length:" "$MYGIT/uber-research/PPLM/run_pplm.py"
+
+    I'm not sure yet if it's a project-specific thing.
+
+    It's like the number of steps.
+
+bias and variance in deep learning
+    https://medium.com/datadriveninvestor/bias-and-variance-in-machine-learning-51fdd38d1f86
+
+    What is bias and variance, and how bias
+    and variance relate to underfitting and
+    overfitting.
+    
+    Then we will understand how to fix the
+    bias variance.
+
+variance in deep learning
+
+variation in gradients
+    https://arxiv.org/abs/1812.00308
+
+    The largest variation of a deep NN with
+    ReLU activation function arises when the
+    layer with the fewest nodes changes its
+    activation pattern.
+    
+    An important implication is that deep NN
+    is a useful tool to generate functions
+    most of whose variations are concentrated
+    on a smaller area of the input space near
+    the boundaries corresponding to the layer
+    with the fewest nodes.
+    
+    In turn, this property makes the function
+    more invariant to input transformation.
+    
+    That is, our theoretical result gives a
+    clue about how to design the architecture
+    of a deep NN to increase complexity and
+    transformation invariancy simultaneously.
+
+error
+    The difference between the actual output
+    and predicted output
+
+    Error in our model is summation of
+    reducible and irreducible error.
+
+Irreducible Error
+    Errors that cannot be reduced no matter
+    what algorithm you apply is called an
+    irreducible error.
+    
+    It is usually caused by unknown variables
+    that may be having an influence on the
+    output variable.
+
+Reducible Error
+    Has two components
+    - bias and
+    - variance.
+
+    Presence of bias or variance causes
+    overfitting or underfitting of data.
+
+error
+    types / the summation of:
+    - Irreducible Error
+    - Reducible Error
+
+    Error is ML models known as bias variance
+    decomposition.
+
+bias
+    How far are the predicted values from the
+    actual values.
+    
+    If the average predicted values are far
+    off from the actual values then the bias
+    is high.
+
+    High bias
+        Causes algorithm to miss relevant
+        relationship between input and output
+        variable.
+        
+        When a model has a high bias then it
+        implies that the model is too simple
+        and does not capture the complexity of
+        data thus underfitting the data.
+
+variance
+    Occurs when the model performs good on the
+    trained dataset but does not do well on a
+    dataset that it is not trained on, like a
+    test dataset or validation dataset.
+    
+    Tells us how scattered are the predicted
+    value from the actual value.
+    
+    High variance
+        Causes overfitting that
+        implies that the algorithm models random
+        noise present in the training data.
+        
+        When a model has a high variance then the
+        model becomes very flexible and tune
+        itself to the data points of the training
+        set. when a high variance model encounters
+        a different data point that it has not
+        learnt then it cannot make right
+        prediction.
+
+Overfitting
+    Learning the parameters of a prediction
+    function and testing it on the same data
+    is a methodological mistake.
+
+    A model that would just repeat the labels
+    of the samples that it has just seen would
+    have a perfect score but would fail to
+    predict anything useful on yet-unseen
+    data.
+
+hyperparameter
+    A parameter whose value is used to control
+    the learning process.
+
+    By contrast, the values of other
+    parameters (typically node weights) are
+    learned.
+
+hyperparameter optimization
+tuning
+    The problem of choosing a set of optimal
+    hyperparameters for a learning algorithm.
+
+    The same kind of machine learning model
+    can require different constraints, weights
+    or learning rates to generalize different
+    data patterns.
+
+    These measures are called hyperparameters,
+    and have to be tuned so that the model can
+    optimally solve the machine learning
+    problem.
+
+    Hyperparameter optimization finds a tuple
+    of hyperparameters that yields an optimal
+    model which minimizes a predefined loss
+    function on given independent data.
+
+    The objective function takes a tuple of
+    hyperparameters and returns the associated
+    loss.
+
+    Cross-validation is often used to estimate
+    this generalization performance.
+
+    Approaches:
+    - grid search
+
+parameter sweep
+grid search
+    [#ml]
+    [hyperparameter optimization technique]
+    [algorithm]
+
+    Exhaustively search through a manually
+    specified subset of the hyperparameter
+    space of a learning algorithm.
+
+    Must be guided by some performance metric,
+    typically measured by cross-validation on
+    the training set or evaluation on a
+    held-out validation set.
+
+Cross-validation
+CV
+    [procedure]
+
+    https://scikit-learn.org/stable/modules/cross_validation.html
+
+    hold out part of the available data as a
+    test set X_test, y_test.
+
+        To avoid overfitting, it is common
+        practice when performing a
+        (supervised) machine learning
+        experiment.
+
+    The best parameters can be determined by
+    grid search techniques.
+
+credit assignment
+    The two challenges:
+    - long-range dependencies
+      (i.e. things that impact your
+      predictions, but which happened a long
+      time ago in a galaxy far, far way); and
+    - dealing with massive instances of data,
+      like very large images.
+
+distributed representation
+distributed vector representation
+    [[https://youtu.be/zCEYiCxrL_0][youtu.be/zCEYiCxrL_0]]
+
+    A way of mapping or encoding information
+    to some physical medium such as a memory
+    or neural network.
+
+    A traditional representation is
+    non-distributed and is based on storing
+    information in hard-wired spaces with
+    hard-wired locations.
+
+Holographic Reduced Representations
+HRR
+    Convolution Algebra for Compositional
+    Distributed Representations.
+
+Inference of association
+
+Holographic Reduced Representations
+HRR
+    http://www2.fiit.stuba.sk/~kvasnicka/CognitiveScience/6.prednaska/plate.ieee95.pdf
+
+Early stopping
+    A form of regularization used to avoid
+    overfitting when training a learner with
+    an iterative method, such as gradient
+    descent.
+
+bi-directional learning
+    The training of a neural network to be a
+    classifier in one direction and a
+    generator in the opposite direction.
+
+    This procedure increases the robustness of
+    neural nets to adversarial examples and
+    white noise static in image classification
+    task.
+
+    [[https://arxiv.org/abs/1805.08006][arxiv.org/abs/1805.08006]]
+
+Dropout
+    A regularization technique for NNs and DL
+    models.
+
+    Simple and powerful.
+
+Credit Assignment [Problem]
+    Credit assigment among available features.
+
+    The fundamental task of all neural
+    networks is credit assignment.
+
+    Credit assignment is allocating importance
+    to input features through the weights of
+    the neural network's model.
+
+Learning
+    [process]
+
+    NN figures out which input features
+    correlate highly with the outcomes the net
+    tries to predict.
+
+    Learnings are embodied in the adjusted
+    quantities of the weights that result in
+    accurate decisions about the data they’re
+    exposed to.
+
+    Banter:
+        There are different ways to structure
+        and channel the relationship of input
+        features to outcomes.
+
+batch normalisation
+    A better regularisation technique than
+    dropout.
+
+dropout
+    It's a way of freezing all the weights and
+    biases of a set of neurons for one
+    iteration.
+
+    Dropout shoots neurons (makes them 0) for
+    one iteration.
+
+    They're probably reactivated on the next
+    iteration.
+
+    Don't use dropout on convolutional layers
+    because you have far less degrees of
+    freedom in convolutional layers that
+    fully-connected layers.
+
+    Use dropout on fully-connected layers
+    because they have 'too many' degrees of
+    freedom.
+        To bring the test loss under control.
+        And increase the accuracy.
+
+    How does dropout help?
+
+decaying learning rate
+    Helps to clean up noise.
+
+    Example:
+        Decays from 0.003 to 0.0001.
+
+degrees of freedom
+    The number of degrees of freedom needs to
+    be contrained to force the neural network
+    to create categories.
+
+overfitting
+    Happens when there are too many degrees of
+    freedom.
+
+convolutional networks
+    They exist to take into account locational
+    information.
+
+    If you believe that there is important
+    information in the locality of pixels,
+    shape and colour of pixel data, you use
+    convolutions to capture that information.
+
+fully connected layer
+    Each neuron takes the weights of all the
+    neurons in the previous layer.
+
+logit
+un-normalized log-probability
+    Raw weighted sums plus bias before the
+    activation function.
+
+    logits are un-normalized log-probabilities
+
+    The unit of measurement for the log-odds
+    scale is called a logit, from logistic
+    unit, hence the alternative names (logit
+    regression/logistic regression)..
+
+batch
+
+re-identification
+re-ID
+    Aims at retrieving a person of interest
+    across multiple non-overlapping cameras.
+    
+    https://arxiv.org/abs/2001.04193
+
+    With the advancement of deep NNs and
+    increasing demand of intelligent video
+    surveillance, it has gained significantly
+    increased interest in the CV community.
+    
+    By dissecting the involved components in
+    developing a person Re-ID system, we
+    categorize it into the closed-world and
+    open-world settings.
+    
+    The widely studied closed-world setting is
+    usually applied under various research-
+    oriented assumptions, and has achieved
+    inspiring success using DL techniques on a
+    number of datasets.
+    
+    We first conduct a comprehensive overview
+    with in-depth analysis for closed-world
+    person Re-ID from three different
+    perspectives, including deep feature
+    representation learning, deep metric
+    learning and ranking optimization.
+    
+    With the performance saturation under
+    closed-world setting, the research focus
+    for person Re-ID has recently shifted to
+    the open-world setting, facing more
+    challenging issues.
+    
+    This setting is closer to practical
+    applications under specific scenarios.
+    
+    We summarize the open-world Re-ID in terms
+    of five different aspects.
+    
+    By analyzing the advantages of existing
+    methods, we design a powerful AGW
+    baseline, achieving SOTA or at least
+    comparable performance on twelve datasets
+    for FOUR different Re-ID tasks.
+    
+    Meanwhile, we introduce a new evaluation
+    metric (mINP) for person Re-ID, indicating
+    the cost for finding all the correct
+    matches, which provides an additional
+    criteria to evaluate the Re-ID system for
+    real applications.
+    
+    Finally, some important yet under-
+    investigated open issues are discussed.
+
+mINP
+    [evaluation metric for person Re-ID]
+
+    Indicating the cost for finding all the
+    correct matches, which provides an
+    additional criteria to evaluate the Re-ID
+    system for real applications.
+
+multi-object tracking
+MOT
+    Key components:
+    - object detection
+    - re-ID
+
+CNN
+ConvNet
+Convolutional neural network
+
+interpretability
+    Opening neural networks and working out
+    how they process information.
+
+    https://openai.com/blog/openai-scholars-spring-2020-final-projects/
+
+NERF
+Neural Radiance Field
+    https://www.matthewtancik.com/nerf
+
+Contrastive loss
+    Takes the output of the network for a
+    positive example and calculates its
+    distance to an example of the same class
+    and contrasts that with the distance to
+    negative examples.
+
+Cossim Power
+    Does it mean "Cosine Similarity"?
+
+differentiable programming
+    A programming paradigm in which a numeric
+    computer program can be differentiated
+    throughout via automatic differentiation.
+    
+    This allows for gradient based
+    optimization of parameters in the program,
+    often via GD.
+    
+    Differentiable programming has found use
+    in a wide variety of areas, particularly
+    scientific computing and artificial
+    intelligence.

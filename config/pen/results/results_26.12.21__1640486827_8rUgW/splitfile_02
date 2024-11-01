@@ -1,0 +1,7 @@
+"add-to-list" is a function that adds an element to a list if it is not already present.
+
+The first argument is the name of the list variable to modify.
+The second argument is the element to add to the list.
+The third argument is an optional predicate function used to test whether an element is already a member of the list.
+If the third argument is omitted or nil, "add-to-list" adds the element if it is not present.
+If the third argument

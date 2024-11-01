@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "create-tablist" "oci prompts-details -csv" "prompts" "t" "30 30 20 10 15 15 15 10" "/semiosis/prompts/prompts" "#" "<==" "prompt-tablist"
+cd /root/.pen/documents/notes;  "create-tablist" "oci prompts-details -csv" "prompts" "t" "30 30 20 10 15 15 15 10" "/semiosis/prompts/prompts" "#" "<==" "prompt-tablist"
+cd /root/.pen/documents/notes;  "create-tablist" "oci prompts-details -csv" "prompts" "t" "30 30 20 10 15 15 15 10" "/semiosis/prompts/prompts" "#" "<==" "prompt-tablist"
+cd /root/.pen/documents/notes;  "create-tablist" "oci prompts-details -csv" "prompts" "t" "30 30 20 10 15 15 15 10" "/semiosis/prompts/prompts" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "create-tablist" "oci prompts-details -csv" "prompts" "t" "30 30 20 10 15 15 15 10" "/semiosis/prompts/prompts" "#" "<==" "prompt-tablist"

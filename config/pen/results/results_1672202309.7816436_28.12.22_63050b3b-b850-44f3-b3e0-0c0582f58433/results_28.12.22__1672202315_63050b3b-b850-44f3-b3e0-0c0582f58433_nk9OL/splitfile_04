@@ -1,0 +1,7 @@
+! WordToCopy()
+" If a word is selected, copy it
+"if &selection == ''
+" if a word is selected, copy it
+if &selection == ''
+if &selection == ''
+if &selection == ''

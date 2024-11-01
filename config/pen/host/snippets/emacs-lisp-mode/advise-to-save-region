@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: advise-to-save-region
+# group: advice
+# key: adr
+# --
+(advice-add '$1 :around #'advise-to-save-region)

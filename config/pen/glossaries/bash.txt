@@ -1,0 +1,6 @@
+command substitution
+$()
+
+process substitution
+<()
+>()

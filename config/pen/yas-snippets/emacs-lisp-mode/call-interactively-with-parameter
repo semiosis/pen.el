@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: call-interactively
+# group: 
+# key: ci
+# --
+(call-interactively '$1)

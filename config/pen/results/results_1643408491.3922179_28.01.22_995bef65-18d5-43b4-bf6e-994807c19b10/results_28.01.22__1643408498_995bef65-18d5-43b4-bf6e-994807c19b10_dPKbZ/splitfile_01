@@ -1,0 +1,8 @@
+cd 'harrys adventures'
+» ls
+ harry-potter.txt  harry-potter-2.txt  harry-potter-3.txt  harry-potter-4.txt
+ harry-potter-5.txt  harry-potter-6.txt  harry-potter-7.txt
+» cd ..
+» cd 'harrys adventures/harry potter'
+» ls
+

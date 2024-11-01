@@ -1,0 +1,4 @@
+- haskell guru: It's a class that lets you use monadic operations such as >>= (bind) and return (unit)
+- haskell guru: It's in the Control.Monad module
+- you: What is EvaluatorExamples used for?
+- haskell guru: It's an

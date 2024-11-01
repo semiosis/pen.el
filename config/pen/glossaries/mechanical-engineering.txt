@@ -1,0 +1,19 @@
+differential
+    A gear train with three shafts that has
+    the property that the rotational speed of
+    one shaft is the average of the speeds of
+    the others, or a fixed multiple of that
+    average.
+
+pneumatics
+    A branch of engineering that makes use of
+    gas or pressurized air.
+    
+    Pneumatic systems used in industry are
+    commonly powered by compressed air or
+    compressed inert gases.
+    
+    A centrally located and electrically-
+    powered compressor powers cylinders, air
+    motors, pneumatic actuators, and other
+    pneumatic devices.

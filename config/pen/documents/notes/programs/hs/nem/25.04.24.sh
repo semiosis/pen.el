@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "Matthew" "5:33-35" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "Psalm" "84:11" "#" "<==" "bash"

@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "tmux-shell"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "tmux-shell"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "tmux-shell"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "tmux-shell"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "tmux-shell"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "tmux-shell"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "zsh"

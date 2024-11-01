@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "z" "/tmp/emm.RTZaef/Vision - Dec 2023.pdf"
+cd /root/.pen/documents/notes;  "z" "/tmp/emm.HLq10K/Vision - Dec 2023.pdf"
+cd /root/.pen/documents/notes;  "z" "/tmp/emm.w2HOnS/Vision\\ -\\ Dec\\ 2023.pdf"
+cd /root/.pen/documents/notes;  "z" "/root/.pen/file-store-by-hash/35ad5bf3a8/Vision - Dec 2023.pdf"
+cd /root/.pen/documents/notes;  "z" "/root/.pen/file-store-by-hash/832632a509/Day 1.pdf"

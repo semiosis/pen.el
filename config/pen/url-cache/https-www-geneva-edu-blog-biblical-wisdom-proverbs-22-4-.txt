@@ -1,0 +1,877 @@
+HTTP/1.1 200 OK
+Date: Mon, 15 Jan 2024 08:16:38 GMT
+Server: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k PHP/7.4.30
+Strict-Transport-Security: max-age=63072000
+Upgrade: h2
+Connection: Upgrade, Keep-Alive
+X-Powered-By: PHP/7.4.30
+Vary: Accept-Encoding,User-Agent
+Content-Length: 13448
+Keep-Alive: timeout=5, max=100
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+
+		 
+
+<!-- begin Convert Experiences code added 3-30-2021 -->
+<script type="text/javascript" src="https://cdn-3.convertexperiments.com/js/10021707-10025123.js"></script>
+<!-- end Convert Experiences code -->
+
+
+<!-- Google Optimize code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-2257710-1', 'auto');
+  ga('require', 'GTM-TZS6D9G');
+  ga('send', 'pageview');
+</script>
+
+
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-TZS6D9G':true});</script>
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-NJ49Q2" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ49Q2');</script>
+<!-- End Google Tag Manager -->
+
+ 
+
+
+		<!-- GENERAL DECLARATIONS =================================== -->
+		<meta charset="utf-8"/>
+		<title>Proverbs 22:4 – The reward for humility and fear of the LORD... - Geneva College</title>
+        <meta content="Proverbs 22:4 – The reward for humility and fear of the LORD..." name="title"/>
+    <link href="https://www.geneva.edu/blog/biblical-wisdom/proverbs-22-4" rel="canonical"/>
+
+
+
+		
+		
+		
+		
+
+ 
+
+		<!-- standard scripts include -->
+		
+<!-- latest jQuery direct from google's CDN Keep // for secure https links -->
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+<script src="https://www.geneva.edu/_files/js/jquery-browser.plugin.js" type="text/javascript"></script>
+<!-- MOBILE SPECIFIC METAS ================================= -->
+<meta content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" name="viewport"/>
+<!-- Custom mobile header theme color -->
+<meta name="theme-color" content="#c99a2c">
+<meta name="msapplication-navbutton-color" content="#c99a2c">
+<meta name="theme-color" content="#c99a2c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- FONTS ================================================= -->
+
+<!--<link href="//fonts.googleapis.com/css?family=Nunito:400,400i,700,700i,900" rel="stylesheet"/>-->
+
+<!-- Font Awesome 5 -->
+<script src="https://kit.fontawesome.com/00b85cf77f.js" crossorigin="anonymous"></script>
+<!--<link crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet"/>-->
+
+
+<!-- CSS =================================================== -->
+<link href="https://www.geneva.edu/_files/css/normalize.css" rel="stylesheet"/>
+<link href="https://www.geneva.edu/_files/css/main-nav-responsive.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="https://www.geneva.edu/_files/css/main-nav-pure.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="https://www.geneva.edu/_files/css/jquery.mmenu.all.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.geneva.edu/_files/css/jquery.jscrollpane.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.geneva.edu/_files/css/geneva-main-newbrand.css" rel="stylesheet"/>
+<link href="https://www.geneva.edu/_files/css/left-nav-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.geneva.edu/_files/css/right-menu-styles.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.geneva.edu/_files/css/skeleton-newbrand.css" rel="stylesheet"/> 
+
+<!-- FAVICON ================================================ -->
+<link href="https://www.geneva.edu/_files/sitegraphics/genevicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://www.geneva.edu/_files/sitegraphics/genevicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+<!-- ADDITIONAL STYLES AND SCRIPTS ========================== -->
+
+<script src="https://www.geneva.edu/_files/js/scriptelements.js" type="text/javascript"></script>
+<script src="https://www.geneva.edu/_files/js/jquery.mmenu.min.all.js" type="text/javascript"></script>
+<script src="https://www.geneva.edu/_files/js/scriptelements-standard-page-newbrand.js" type="text/javascript"></script>
+
+<!-- End General Scripts -->
+<div>
+
+	
+
+
+
+</div>
+
+		
+
+<!-- START OPEN GRAPH TAGS-->
+    <meta content="Proverbs 22:4 – The reward for humility and fear of the LORD..." property="og:title"/>
+        <meta content="website" property="og:type"/>
+    
+	<meta content="https://www.geneva.edu/blog/biblical-wisdom/proverbs-22-4" property="og:url"/>
+		<meta content="Humility requires God’s grace, given often through rebukes, setbacks, God’s Word, parents, and teachers, until we learn that God is God, and we are not, and that other people deserve the same love and consideration we do. The humble person thinks honestly about himself, not too highly, nor falsely denying what God has given" property="og:description"/>
+		    	<meta content="https://www.geneva.edu/blog/old_assets/2019.04_blog-proverbs-22-4.jpg" property="og:image"/>
+    	<!-- END OPEN GRAPH TAGS-->
+
+		
+
+
+		
+		<link href="https://www.geneva.edu/_files/css/colorbox.css" rel="stylesheet"/>
+
+
+<script src="https://www.geneva.edu/_files/js/jquery.colorbox-min.js"></script>
+<script>
+   $(document).ready(function(){
+    //Examples of how to assign the ColorBox event to elements
+    $(".group1").colorbox({rel:'group1'});
+    $(".group2").colorbox({rel:'group2', transition:"fade"});
+    $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+    $(".group4").colorbox({rel:'group4', slideshow:true});
+    $(".ajax").colorbox();
+if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+} else {
+    $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+    $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+    $(".iframe").colorbox({iframe:true,fixed: true, width:"80%", height:"80%"});
+    $(".iframeprint").colorbox({iframe:true, width:"720", height:"700"});
+    $(".iframepdf").colorbox({iframe:true, innerWidth:800, innerHeight:650});
+    $(".iframepdfshort").colorbox({iframe:true, innerWidth:800, innerHeight:500});
+    $(".iframeshort").colorbox({iframe:true, innerWidth:800, innerHeight:500});
+    $(".iframeshow").colorbox({rel:'iframeshow'});
+}
+    $(".inline").colorbox({inline:true,scrolling:true, width:"80%"});
+    $(".callbacks").colorbox({
+     onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+     onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+     onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+     onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+     onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+    });
+    $('.non-retina').colorbox({rel:'group5', transition:'none'})
+    $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+    
+    //preserving a JavaScript event for inline calls.
+    $("#click").click(function(){ 
+     $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+     return false;
+    });
+   });
+
+
+// Stop browser scrolling
+
+$(document).bind('cbox_open', function () {
+    $('html').css({ overflow: 'hidden' });
+}).bind('cbox_closed', function () {
+    $('html').css({ overflow: 'auto' });
+}); 
+
+// Stop browser scrolling
+
+
+</script>
+		
+	</head>
+	<body>
+		<div id="topLinkBar">  
+				
+			<!-- ICO BAR Include Here-->
+			<div>
+<!-- Ico Bar --><ul class="topicobar">
+<li class="btndrop2 first"><i class="fa-solid fa-pen-to-square">&#160;</i> APPLY
+<ul class="btndrop-menu leftalign">
+<li><a href="/admissions/tugapply.php">Undergraduate</a></li>
+<li><a href="/online-degree/odpapply.php">Adult Degree</a></li>
+<li><a href="/graduate/gradapply.php">Graduate</a></li>
+</ul>
+</li>
+<li class="nodrop"><a class="toplevel" href="/give/"><i class="fa-solid fa-gift-card">&#160;</i> GIVE</a></li>
+<li class="nodrop"><a class="toplevel" href="/admissions/visit/"><i class="fa-regular fa-location-dot">&#160;</i> VISIT</a></li>
+</ul><!-- end Ico Bar -->
+
+
+</div>			
+		</div>
+		<div id="goldBarSpace">
+
+
+			<!-- Header Include Here-->
+			<div>
+<div id="goldBarContainer">
+<div id="logoFlag"><a href="/index.php"> <img alt="Geneva College" class="" height="525" src="/_files/sitegraphics/geneva-spade-light.svg" width="1920"/> </a></div>
+<!--<div id="textLogoTop"><span class="middle-align"></span><img alt="Geneva College" border="0" height="31" src="/_files/images/textlogotop.gif" width="317" /></div>--> <a id="pagetop" name="pagetop"></a>
+<div id="searchBoxHeader"><form action="/search_results.php" class="formFix" id="searchbox_006510535078434149773:n0dixopbnng">
+<div id="searchFld"><input class="searchTxt" id="fldsearch" name="q" placeholder="Search Geneva" style="background-color: transparent;" tabindex="1" type="text"/> <input name="cx" type="hidden" value="006510535078434149773:n0dixopbnng"/> <input name="cof" type="hidden" value="FORID:11"/> <input name="sa" type="hidden" value="Search"/> <!--<input class="searchButton" name="input" src="/_files/images/searchico28.png" type="image" value="Search Geneva" />--> <button class="searchButton" style="cursor: pointer; background: none; overflow: hidden;"> <i class="fa-xl fa-solid fa-magnifying-glass searchButton" style="color: #aa8228; text-align: center; margin-top: 50%;"></i> </button></div>
+</form></div>
+<!-- end searchBoxHeader -->
+<div id="screencheck"></div>
+<div class="menutrigger"><a href="#menu">&#160;</a></div>
+</div><!-- end goldBarContainer -->
+
+
+</div> 
+
+		</div>
+		<!--end goldBarSpace -->
+		<div id="menuSpace">
+			<div id="menuContainer">
+
+
+				<!-- Offcanvas Menu Include Here-->
+				<div>
+<nav>
+<ul class="nav-menu nav-center">
+<li><a aria-haspopup="true" href="/about-geneva/"> <span>About Geneva</span> </a>
+<ul>
+<li><a href="/about-geneva/">Fast Facts &amp; Overview</a></li>
+<li><a href="/about-geneva/identity/">Geneva Identity</a></li>
+<li><a href="/about-geneva/policies/">Academic Policies</a></li>
+<li><a href="/about-geneva/leadership.php">Leadership</a></li>
+<li><a href="/blog/index.php">Geneva Blog</a></li>
+<li><a href="https://www.geneva.edu/calendar/index.php">Calendar</a></li>
+</ul>
+</li>
+<li class="undergraduate"><a href="/academics/">Academics</a>
+<ul aria-label="submenu">
+<li><a href="/academics/">Explore Academics</a></li>
+<li><a href="/academics/programs/">Search Degree Programs</a></li>
+<li><a href="/academics/core-studies/index.php">Core Curriculum</a></li>
+<li><a href="/graduate/">Graduate Programs</a></li>
+<li><a href="/online-degree/index.php">Online Degree Programs</a></li>
+<li><a href="/pittsburgh/">Geneva Pittsburgh Campus</a></li>
+<li><a href="/faculty-staff/faculty/">Our Faculty</a></li>
+<li><a href="/cfl/">Center for Faith &amp; Life</a></li>
+</ul>
+</li>
+<li class="undergraduate"><a aria-haspopup="true"> <span>Admissions &amp; Aid</span> </a>
+<ul aria-label="submenu">
+<li><a href="/financial-aid/tug-financial-aid.php">Undergraduate</a></li>
+<li><a href="/graduate/admissions/index.php">Graduate</a></li>
+<li><a href="/online-degree/admissions/index.php">Online Degree Programs</a></li>
+<li><a href="/admissions/visit/">Visit Geneva</a></li>
+<li><a href="/admissions/international/">International Students</a></li>
+<li><a href="/admissions/transfers/">Transfer Students</a></li>
+<li><a href="/academics/crossroads/earlycollege/">Early College</a></li>
+<li><a href="/admissions/military/">Military &amp; Veterans</a></li>
+<!--<li class="minibanner">
+<div class="minibanner-img"><a href="https://www.geneva.edu/admissions/tugapply"> <img alt="Apply Now" src="/_files/images/apply-mb.png" width="100%" /> </a></div>
+</li>--></ul>
+</li>
+<li><a aria-haspopup="true"> <span>Student Life</span> </a>
+<ul>
+<li><a href="/academics/registrar/">Registrar</a></li>
+<li><a href="/student-life/">Student Development</a></li>
+<li><a href="/cse/">Student Engagement (CSE)</a></li>
+<li><a href="/faith/">Faith and Discipleship</a></li>
+<li><a href="/financial-aid/">Financial Aid</a></li>
+<li><a href="/student-accounts/">Student Accounts</a></li>
+<li><a href="/academics/crossroads/">Crossroads</a></li>
+<li><a href="/library/">McCartney Library</a></li>
+<li><a href="/about-geneva/campus_bookstore.php">Campus Store</a></li>
+<li><a href="/student-life/services/security/">Campus Safety</a></li>
+<!--<li class="minibanner"><div class="minibanner-img"><a href="https://my.geneva.edu"><img alt="myGeneva Login" src="/_files/sitegraphics/currmb2.png" width="100%" /></a></div></li>-->
+<li><a href="https://moodle.geneva.edu"><img alt="Moodle Login" src="/_files/sitegraphics/moodle-ico.png" style="display: inline-block; margin-right: 5px;"/> Online Course Login</a></li>
+<li class="minibanner"><a href="https://my.geneva.edu"> <img alt="myGeneva Login" class="liImg" src="/_files/images/mygen.png" width="149"/> </a></li>
+</ul>
+</li>
+<li><a aria-haspopup="true"><span>Alumni</span></a>
+<ul>
+<li><a href="/give/">Giving</a></li>
+<li><a href="/alumni/">Alumni Home</a></li>
+<li><a href="/alumni/events/">Alumni Events</a></li>
+<li><a href="/alumni/connect/alumni_updateform.php">Alumni Update Form</a></li>
+<li><a href="/academics/registrar/student_records_transcripts.php">Transcript Requests</a></li>
+<li><a href="/alumni/represent/alumni_referrals.php">Gold and White Referrals</a></li>
+<li><a href="/alumni/represent/legacylink.php">Legacy Link Program</a></li>
+<li><a href="/alumni/connect/alumni_contact.php">Contact Alumni Engagement</a></li>
+<!--<li class="minibanner">
+<div class="minibanner-img"><a href="/homecoming/" title="Homecoming"><img alt="Homecoming 2023" src="/_files/images/homecoming-mb.jpg" width="100%" /></a></div>
+</li>--></ul>
+</li>
+<li class="noarrow"><a href="https://athletics.geneva.edu">Athletics</a></li>
+</ul>
+</nav>
+
+
+</div> 
+
+			</div>
+			<!-- end menuContainer -->
+		</div>
+		<!-- end menuSpace -->
+		<link href="../../_files/css/article-hero.css" rel="stylesheet"/>
+<!-- Article Hero -->
+<div class="article-hero__container">
+  <div class="article-hero__background">
+    <img alt="Geneva College shield" class="article-hero__shield" src="https://www.geneva.edu/_files/images/spade-trans-10.svg"/>
+  </div>
+  <div class="article-hero__body">
+    <div class="article-hero__back">
+      <a href="https://www.geneva.edu/blog/">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Blog search
+      </a>
+    </div>
+    <div class="article-hero__title">
+      <h1><span>Proverbs 22:4 – The reward for humility and fear of the LORD...</span></h1>
+    </div>
+    <div class="article-hero__wrapper">
+      <img alt="Picture of Proverbs 22:4 – The reward for humility and fear of the LORD..." src="../old_assets/2019.04_blog-proverbs-22-4.jpg"/>
+
+      <div class="article-hero__categories">
+        <a href="https://www.geneva.edu/blog/?category=biblical-wisdom">Biblical Wisdom</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+		
+		
+		<div id="contentSpace">
+			
+			<div class="container" id="contentContainer" style="padding-top: 0;">
+				<div id="pageTopper"></div>
+				<div class="row">
+					<div class="twelve columns">
+						<div id="pageContent">
+							
+							
+							<!--<br class="clearit" />-->
+							
+							
+							
+							
+							<div class="content-container">
+								
+
+<div id="subscription-panel">
+
+<span>
+<a class="btn-more" href="http://feeds.feedburner.com/geneva-blog-rss" style="margin-left: 0;" target="_blank"><i aria-hidden="true" class="fa-regular fa-square-rss"></i> RSS Subscribe</a>
+</span>
+
+<span>
+<a class="btn-more" href="proverbs-22-4-print" style="margin-left: 0; padding-left: 0;"><i aria-hidden="true" class="fa-light fa-print"></i> Print</a></span>
+
+<span>
+<a class="a2a_dd btn-more" href="https://www.addtoany.com/share" style="margin-left: 0;padding-left: 0;"><i aria-hidden="true" class="fa-light fa-share-from-square"></i> Share</a></span>
+</div>
+								    <div class="blogtext">
+        <p><em>by Dr. Bill Edgar, former chair of the Geneva College Board of Trustees, former Geneva College President and longtime pastor in the Reformed Presbyterian Church of North America (RPNCA)</em></p>
+<p>Pride goes before destruction. In an exaltation of power and freedom, Icarus flew so high that the sun melted the wax holding feathers on his wings, and he crashed into the sea and drowned. Eve and Adam wanted to be like God, and ended up mortal, expelled from the Garden. Nebuchadnezzar boasted, &#8220;Is not this great Babylon which I have built (Daniel 4:30)?&#8221; until God deprived him of his wits.</p>
+<p>Pride comes naturally to the sons of Adam and the daughters of Eve, but &#8220;God resists the proud and gives grace to the humble (James 4:6).&#8221; Pride does not end in riches and honor and life. Humility requires God&#8217;s grace, given often through rebukes, setbacks, God&#8217;s Word, parents, and teachers, until we learn that God is God, and we are not, and that other people deserve the same love and consideration we do. The humble person thinks honestly about himself, not too highly, nor falsely denying what God has given: &#8220;Humility is not thinking less of yourself, but thinking of yourself less (C.S. Lewis, <em>Mere Christianity</em>).&#8221;</p>
+<p>God commands us to cultivate humility. &#8220;Humble yourselves (I Peter 5:6, James 4:10),&#8221; before God by accepting His Word and Providence without grumbling, and before other people by putting their interests above your own (Philippians 2:1-5). Coupled with humility is the fear of the Lord. The proud forget God, do not call on Him for help and forgiveness, and refuse to give Him thanks. The humble know they rely on Him even for breath itself.</p>
+<p>The reward for humility and fear of the Lord is &#8220;riches and honor and life,&#8221; the things God promised Abraham when He called him, and Solomon after he asked for wisdom. It&#8217;s what Jesus promised Peter, who asked Him what he would get for having left everything to follow Him:</p>
+<p>Truly, I say to you, there is no one who has left house or brothers or sisters or mother or father or children or lands, for my sake and for the gospel, who will not receive a hundredfold now in this time, houses and brothers and sisters and mothers and children and lands, with persecutions, and in the age to come eternal life (Mark 10:29-30).</p>
+<p>There are great rewards in this life for humility and fear of the Lord. But because the world is proud and resists God, the rewards come &#8220;with persecutions&#8221; -- sometimes job loss, sometimes ruined reputation, sometimes even death. No follower of Jesus should ever believe that He promises a life of uninterrupted success resulting in &#8220;riches and honor and life,&#8221; such as Job had before God allowed Satan to take them away. Our true riches are stored up for us in the age to come, when God gives the humble eternal life.</p>
+<p>Does the prospect of impacting the world excite you? Do you want a career that allows you to use your God-given talents to make a difference in your life, your community, and the world around you? If so, you should learn more about Geneva&#8217;s&#160;<a href="https://www.geneva.edu/academics/programs/biblical-studies">biblical studies program</a>.</p>
+<p>For more information, contact us at 855-979-5563 or&#160;<a href="mailto:web@geneva.edu">web@geneva.edu</a>. Get ready to make your mark on this world.</p>
+<p><span>-----</span></p>
+<p><span font-size="8px">Photo by&#160;<a href="https://unsplash.com/photos/qYanN54gIrI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ben White</a>&#160;on&#160;<a href="https://unsplash.com/search/photos/humble?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+    </div>
+<!-- Blog Disclaimer -->
+<p class="blog-disclaimer">Opinions expressed in the Geneva Blog are those of its contributors and do not necessarily represent the opinions or official position of the College. The Geneva Blog is a place for faculty and contributing writers to express points of view, academic insights, and contribute to national conversations to spark thought, conversation, and the pursuit of truth, in line with our philosophy as a Christian, liberal arts institution.</p>
+<span style="display: block;text-align: right;font-size: 16px;color: #c1c1c1;font-style: italic;">
+Apr 1, 2019
+</span>
+
+<ul class="blogoptions">
+                                                            <li><a href="index.php">Biblical Wisdom</a></li>
+                        </ul>
+
+
+
+    
+
+								
+								
+
+
+
+
+
+    
+								
+								
+
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								 
+
+
+								
+
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_copy_link"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+
+							</div>
+							<!-- end contentContainer -->
+							<!--<div id="faux-column"><system-region name="WIDGET - QUICKFORM AREA"/></div>-->
+							<!-- end faux-->
+							
+							<!--<br class="clearit"/>-->
+							
+						</div>
+						<!-- end div pageContent -->
+					</div>
+					<!-- end eight columns -->
+					<!--<div class="three columns side">-->
+					<!--	<system-region name="WIDGET - QUICK FAUX COLUMN"/>-->
+					<!--	<system-region name="WIDGET - QUICK FAUX COLUMN 2"/>-->
+					<!--	<system-region name="WIDGET - QUICK FAUX COLUMN 3"/>-->
+					<!--</div>-->
+					<!-- end four columns-->
+				</div>
+				<!-- end row -->
+				<!--<br class="clearit" />-->
+			</div>
+			                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            	                                                                                                                                                            	                                                                                                                                                	                                    	                                    	                                                            	                                                                                                                                                            	                    	                                                                                                                                                                                                            	                                                            	                                    	                                                                                                                    	                                                                                                                                            	                                                        	                    	                                                                                                            	                                                                                                                	                                                                                                	                                    	                                                                    	                                                                    	                                                                                    	                                                                            	                                                                                                	                                                                                                	                                                                                                                            	                                                                                                                                                                                                                                                                                                                                                                                	                                                                	                                                                                            	                                                                                                	                                                                                                                                        	                                                                            	                                                                                                	                                                                                                                        	                                                                                                                                	                                                                                                                                                                        	                                                                                                                                                                                                                                                                    	                                                                                                                            	                                                                                                                                	                                                                                                                                                                	                                                                                                                            	                                                                                                                        	                                                                                	                                                                        	                    	                                                                                                                                                                                    	                                                                                                    	                                                                                                                                                                                                                	                                                                                                                                                                                                                                                                                                                                                                        	                                                                	                                                                                                                                                                                	                                	                                                            	                                            	                                                                                                                                                                	                                                                                                                                                                                	                                                                                                	                                                                                                                                                                                                                                	                                                                                                                                	                                                                                                                                                                                                        	                                                                                                                                                                    	                                                                                                        	                                	                                                                                    	                                                                                	                                                                                                                                                                                                                                    	                    	                                	                                                    	                                                	                                                	                                    	                                                                    	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <link href="https://www.geneva.edu/_files/carousel/ver2/assets/owl.carousel.min.css" rel="stylesheet"/>
+<link href="https://www.geneva.edu/_files/carousel/ver2/assets/owl.theme.default.min.css" rel="stylesheet"/>
+<style>
+.content-card {
+  width: 100%;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  text-align: center;
+}
+
+.content-card span {
+  font-size: 25px;
+  margin-top: 20px;
+  display: block;
+  color: #b4975b;
+  padding: 10px 10px;
+  font-weight: 700;
+}
+
+.card-carousel .content-card {
+  background-color:#ffffff;
+  box-sizing: border-box;
+  min-height:500px;
+  height: 100%;
+  text-align:left;
+  border-radius:5px;
+}
+
+.card-carousel .content-card img {
+  border-radius:5px 5px 0 0;
+}
+
+.card-carousel .content-card .card-text {
+  padding:25px;
+}
+
+.card-carousel .content-card .card-text h3 {
+    line-height: 28px;
+}
+
+.card-carousel .content-card .card-text p {
+  font-size:12px;
+}
+
+.card-carousel div.scroll-container {
+  margin: 0 auto;
+  max-width:1400px;
+}
+
+#carousel-wrapper {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1),rgba(0, 0, 0, .1),rgba(255, 255, 255, 1));
+    padding: 5px 0 80px 0;
+}
+.section h2.headerline span {
+    display: block;
+    font-size: 18px;
+    color: #daaf48;
+}
+</style>
+<div id="carousel-wrapper">
+<div class="wide-container">
+<div class="section card-carousel stories headerline"><!-- Featured Blogs -->
+<div class="scroll-container">
+<h2 class="headerline"><span>Biblical Wisdom</span>Related Blog Posts</h2>
+<div class="owl-carousel scroller-stories owl-theme">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        	            	<div class="content-card"><a href="faithful-doubt-habakkuk.php" target="_blank"> <img alt="Image of Faithful Doubt: Habakkuk, a Review and Reflection" src="../old_assets/blog_faithful-doubt.jpg"/></a>
+                <div class="card-text">
+                                <h3>Faithful Doubt: Habakkuk, a Review and Reflection</h3>
+                                <p>Faithful Doubt: Habakkuk, written by pastor Travis Scott, explores the short prophetic book of Habakkuk, in a practical and meaningful way through the lens of a doubter. Travis approaches the passage of scripture from an honest and humble perspective, recalling difficulties experienced as a husband, father, and pastor.</p>
+                </div>
+                </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            	            	<div class="content-card"><a href="../the-college/every-good-work-commencement-address-2021.php" target="_blank"> <img alt="Image of &quot;Every Good Work&quot;" src="../old_assets/blog_every-good-work.jpg"/></a>
+                <div class="card-text">
+                                <h3>"Every Good Work"</h3>
+                                <p>Dr. J. Ligon Duncan of Reformed Theological Seminary delivered the spring 2021 Commencement address at Geneva College on May 10, 2021. Here is an excerpt of that message, entitled, "Every Good Work," from 2 Timothy 3. This excerpt first appeared in the Summer 2021 edition of Geneva Magazine.</p>
+                </div>
+                </div>
+                                                                                                                                                                                                                                                                                                    	            	<div class="content-card"><a href="proverbs-29-26.php" target="_blank"> <img alt="Image of It Is from the LORD that a Man Gets Justice" src="../old_assets/blog_prov29-26.jpg"/></a>
+                <div class="card-text">
+                                <h3>It Is from the LORD that a Man Gets Justice</h3>
+                                <p>When the Bible teaches one thing and your “instincts,” as it were, disagree, whose wisdom do you trust, your own or God’s? Do we really need to be told not to trust in our own minds? Yes, because we want to trust ourselves, and because in our day putatively wise people constantly tell us that high self-esteem brings success. </p>
+                </div>
+                </div>
+                                                                                                                                                                                                                                                                                    	            	<div class="content-card"><a href="proverbs-28-26.php" target="_blank"> <img alt="Image of Whoever Trusts in His Own Mind Is a Fool" src="../old_assets/prov28-26.jpg"/></a>
+                <div class="card-text">
+                                <h3>Whoever Trusts in His Own Mind Is a Fool</h3>
+                                <p>When the Bible teaches one thing and your “instincts,” as it were, disagree, whose wisdom do you trust, your own or God’s? Do we really need to be told not to trust in our own minds? Yes, because we want to trust ourselves, and because in our day putatively wise people constantly tell us that high self-esteem brings success. </p>
+                </div>
+                </div>
+                                                                                            	            	<div class="content-card"><a href="7-reasons-why-bible-study-for-college-students-can-help-with-better-grades.php" target="_blank"> <img alt="Image of 7 Reasons Why Bible Study for College Students Can Help with Better Grades" src="../old_assets/gc_bible-study_eddy-graphic.png"/></a>
+                <div class="card-text">
+                                <h3>7 Reasons Why Bible Study for College Students Can Help with Better Grades</h3>
+                                <p>As busy as college students are, it can be profoundly beneficial for them to seek out and engage in a routine Bible study. Diving deeper into their faith, exploring what the world’s challenges mean to them, and creating a Christian-based path forward can give any college student the direction he or she needs to achieve their best life. Still, it’s not always easy to make that decision—instead of a night with friends or yet another study session for a high-level math class, go to Bible study instead.</p>
+                </div>
+                </div>
+                                                                                            	            	<div class="content-card"><a href="the-rest-of-peace.php" target="_blank"> <img alt="Image of The Rest of Peace" src="../old_assets/blog_the-rest-of-peace.jpg"/></a>
+                <div class="card-text">
+                                <h3>The Rest of Peace</h3>
+                                <p>Handing our cares and worries over to God gives us peace which keeps us from falling into doubt, as stated in Philippians. "Do not be anxious about anything, but in everything, by prayer and petition, with thanksgiving, present your requests to God." </p>
+                </div>
+                </div>
+                                                                                                                            	            	<div class="content-card"><a href="proverbs-26-23-27.php" target="_blank"> <img alt="Image of Know Well the Condition of Your Flocks" src="../old_assets/blog_prov27-23-27.jpg"/></a>
+                <div class="card-text">
+                                <h3>Know Well the Condition of Your Flocks</h3>
+                                <p>What should someone with wealth do? Solomon writes, “Pay attention to it and know its condition.” He uses the example of sheep and goats. Wise parents blessed with wealth will teach their children how to work to maintain it. Wise children will accept the burdens of responsibility that go with family wealth, always remembering that riches do not last forever.</p>
+                </div>
+                </div>
+                                                                                                                                                                                                                                                                                                    	            	<div class="content-card"><a href="proverbs-26-26.php" target="_blank"> <img alt="Image of Whoever Hates Disguises Himself " src="../old_assets/blog_prov26-26.jpg"/></a>
+                <div class="card-text">
+                                <h3>Whoever Hates Disguises Himself </h3>
+                                <p>The Book of Proverbs has no use for the gullible, viewing them as willful fools. Even when everyone else can see a hateful, deceitful person for what he is, the gullible choose to believe gracious words.</p>
+                </div>
+                </div>
+                                                                	            	<div class="content-card"><a href="../faith/justification-by-grace-alone-through-faith-alone.php" target="_blank"> <img alt="Image of Justification by Grace Alone through Faith Alone" src="../old_assets/blog_justification.jpg"/></a>
+                <div class="card-text">
+                                <h3>Justification by Grace Alone through Faith Alone</h3>
+                                <p>At Easter, a good question to ask is, "How are people saved?" This should be a question that Christians can easily answer, and indeed most can. However, sometimes Christians are less knowledgeable about the doctrine of justification and its important distinctions than perhaps they should be.</p>
+                </div>
+                </div>
+                                                                                                                                                                                                                                                                                                                                                                    	            	<div class="content-card"><a href="../uncategorized/ebook-lessons-for-leaders.php" target="_blank"> <img alt="Image of Lessons for Leaders from Cain and Abel" src="../old_assets/e-book_gallo-bieber.jpg"/></a>
+                <div class="card-text">
+                                <h3>Lessons for Leaders from Cain and Abel</h3>
+                                <p>How should leaders deal with difficult situations in difficult times? Geneva College’s John Gallo and Jenna Bieber provide a guidebook for leaders. "Lessons from Cain and Abel to Guide Leaders Through Turbulent Times" walks readers through the account of Cain and Abel to teach leaders the importance of justice, mercy, harmony and equality.</p>
+                </div>
+                </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+</div>
+</div>
+</div>
+</div>
+<script>
+jQuery(document).ready(function(){
+    jQuery(".scroller-stories").owlCarousel({
+        center: false,
+        items:1,
+        margin:25,
+        dots:true,
+        responsive:{
+            800:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+});
+</script>
+<script src="https://www.geneva.edu/_files/carousel/ver2/owl.carousel.min.js"></script>
+
+			<!-- end contentContainer-->
+			<!--<br class="clearit" />-->
+			<div id="footerBar"></div>
+			<div id="footerStripes"></div>
+		</div>
+		<!-- end contentSpace div-->
+		<div id="footerSpace">
+
+			<!-- Footer Include Here-->
+			<div>
+<div class="footerGradient">
+<div class="wide-container" id="footerContainer">
+<div class="row">
+<div class="four columns" id="footerLeft"><img alt="Geneva College" class="u-full-width" src="/_files/sitegraphics/geneva-spade-stacked.svg" style="max-width: 200px;"/>
+<div id="socialfooter">
+<ul class="socialicons">
+<li><a href="https://www.facebook.com/genevacollege" rel="noopener noreferrer" target="_blank"> <i class="fa-brands fa-facebook-square"></i> </a></li>
+<li><a href="https://twitter.com/GenevaCollege" rel="noopener noreferrer" target="_blank"> <i class="fa-brands fa-twitter"></i> </a></li>
+<li><a href="https://instagram.com/genevacollege/" rel="noopener noreferrer" target="_blank"> <i class="fa-brands fa-instagram"></i> </a></li>
+<li><a href="https://www.youtube.com/user/genevacollege" rel="noopener noreferrer" target="_blank"> <i class="fa-brands fa-youtube"></i> </a></li>
+<li><a href="https://www.linkedin.com/company/geneva-college" rel="noopener noreferrer" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a></li>
+<li><a href="https://www.tiktok.com/@genevacollege" rel="noopener noreferrer" target="_blank"> <i class="fa-brands fa-tiktok"></i></a></li>
+</ul>
+</div>
+<div class="pad20 buttonflex"><a class="quickbtn" href="/about-geneva/contact_us.php"><i class="fa fa-phone">&#160;</i>Contact Us</a><a class="quickbtn" href="/about-geneva/campus_map.php"><i class="fas fa-map-marker-alt"></i>&#160;Campus Map</a></div>
+</div>
+<!-- end footer left-->
+<div class="eight columns" id="footerRight">
+<div class="flex-foot">
+<div class="footerGroup">
+<h2 class="hidToggle">General Information</h2>
+<ul class="hidFootLinks">
+<li><a href="/about-geneva/index.php">About Geneva</a></li>
+<li><a href="/about-geneva/foundational_concepts.php">Foundational Concepts</a></li>
+<li><a href="/about-geneva/nondiscrimination_policy.php">Nondiscrimination Policy</a></li>
+<li><a href="/about-geneva/titleix/index.php">Title IX</a></li>
+<li><a href="/employment/index.php">Employment</a></li>
+<li><a href="/about-geneva/attribution.php">Attribution</a></li>
+</ul>
+</div>
+<div class="footerGroup">
+<h2 class="hidToggle">Degree Programs</h2>
+<ul class="hidFootLinks">
+<li><a href="/admissions/admissions.php">Undergraduate</a></li>
+<li><a href="/graduate/index.php">Graduate Programs</a></li>
+<li><a href="/adult-degree/index.php">Online Degree Programs (ODP)</a></li>
+<li><a href="/academics/programs/">Find Your Program</a></li>
+<li><a href="/admissions/index.php">Apply Now</a></li>
+</ul>
+</div>
+<div class="footerGroup">
+<h2 class="hidToggle">Resources</h2>
+<ul class="hidFootLinks">
+<li><a href="/academics/registrar/index.php">Registrar</a></li>
+<li><a href="/academics/index.php">Academic Departments</a></li>
+<li><a href="/career/index.php">Center for Calling and Career</a></li>
+<li><a href="/student-life/services/ssc/index.php">Student Success Center</a></li>
+<li><a href="/emergency/index.php">Emergency Information</a></li>
+</ul>
+</div>
+<!--<div class="footerGroup">
+<h2 class="hidToggle">ALUMNI &amp; FRIENDS</h2>
+<ul class="hidFootLinks">
+<li><a href="/alumni/index">Alumni Relations</a></li>
+<li><a href="/alumni/online-services/class-notes/">Alumni Class Notes</a></li>
+<li><a href="/alumni/events/index">Alumni Events</a></li>
+<li><a href="/give/index">Give</a></li>
+</ul>
+</div>--> <a class="BackToTop" href="#topOfPageLink"><img alt="Back To Top" src="/_files/sitegraphics/to-top-sm.png"/></a></div>
+<!-- end footerRight --></div>
+<!-- end row --></div>
+<!-- end footer container --></div>
+<!-- end footer gradient --></div>
+<div class="footer-end">
+<div class="motto-margin">
+<div class="pad20"><img alt="Geneva College Pro Christo Et Patria" class="u-full-width" src="/_files/sitegraphics/motto-dark.svg" style="max-width: 250px;"/></div>
+<div class="pad20">
+<p class="copyright">&#169; Geneva College | All rights reserved</p>
+</div>
+</div>
+</div>
+
+
+</div> 
+		</div>
+
+
+
+		<!-- Offcanvas Menu Include Here-->
+		<div>
+
+	
+	<!-- RESPONSIVE MENU ============================================== -->
+	<nav id="menu">
+		<ul>
+			<div id="searchBox-menu" class="roundcorners">
+				<form action="/search_results" class="formFix" id="searchbox_006510535078434149773:n0dixopbnng">
+					<div id="searchFld-menu">
+						<input class="searchTxt-menu" id="fldsearch" name="q" style="background-color: transparent;" tabindex="1" type="text" placeholder="Search Geneva" />
+						<input name="cx" type="hidden" value="006510535078434149773:n0dixopbnng" />
+						<input name="cof" type="hidden" value="FORID:11" />
+						<input name="sa" type="hidden" value="Search" />
+						<!-- <input class="searchButton-menu" name="input" src="https://www.geneva.edu/_files/sitegraphics/searchico32.png" type="image" value="Search Geneva" /> -->
+						<button class="searchButton" style="cursor: pointer; background: none; overflow: hidden;">
+							<i class="fa-xl fa-solid fa-magnifying-glass searchButton" style="color: #aa8228; text-align: center; margin-top: 40%;"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- end searchBox-menu-->
+			<li>
+				<span>About Geneva</span>
+				<ul>
+					<li>
+						<a href="/about-geneva/index">Fast Facts &amp; Overview</a>
+					</li>
+					<li>
+						<a href="/about-geneva/identity/index">Geneva Identity</a>
+					</li>
+					<li>
+						<a href="/about-geneva/policies/index">Academic Policies</a>
+					</li>
+					<li>
+						<a href="/about-geneva/leadership">Leadership</a>
+					</li>
+					<li>
+						<a href="/blog/index">Geneva Blog</a>
+					</li>
+					<li>
+						<a href="/calendar/index">Calendar of Events</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>Academics</span>
+				<ul>
+					<li><a href="/academics/index">Explore Academics</a></li>
+                    <li><a href="/academics/programs/index">Search Degree Programs</a></li>
+                    <li><a href="/academics/core">Core Curriculum</a></li>
+                    <li><a href="/graduate/index">Graduate Programs</a></li>
+                    <li><a href="/online-degree/index">Online Degree Programs</a></li>
+                    <li><a href="/pittsburgh/index">Geneva Pittsburgh Campus</a></li>
+                    <li><a href="/faculty-staff/faculty/">Our Faculty</a></li>
+                    <li><a href="/cfl/">Center for Faith &amp; Life</a></li>
+				</ul>
+			</li>
+			<li>
+				<a aria-haspopup="true">
+					<span>Admissions &amp; Aid</span>
+				</a>
+				<ul>
+				    <li><a href="/financial-aid/tug-financial-aid">Undergraduate</a></li>
+                    <li><a href="/graduate/admissions/index">Graduate</a></li>
+                    <li><a href="/online-degree/admissions/index">Online Degree Programs</a></li>
+                    <li><a href="/admissions/visit/index">Visit Geneva</a></li>
+                    <li><a href="/admissions/international/index">International Students</a></li>
+                    <li><a href="/admissions/transfers/index">Transfer Students</a></li>
+                    <li><a href="/academics/crossroads/earlycollege/index">Early College</a></li>
+                    <li><a href="/admissions/military/index">Military &amp; Veterans</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>Student Life</span>
+				<ul>
+					<li>
+						<a href="https://my.geneva.edu">MyGeneva</a>
+					</li>
+					<li>
+						<a href="/academics/registrar/index">Registrar</a>
+					</li>
+					<li>
+						<a href="/student-life/index">Student Development</a>
+					</li>
+					<li>
+						<a href="/cse/index">Student Engagement (CSE)</a>
+					</li>
+					<li>
+						<a href="/financial-aid/index">Financial Aid</a>
+					</li>
+					<li>
+					    <a href="/student-accounts/">Student Accounts</a>
+					</li>
+					<li>
+						<a href="/academics/crossroads/index">Crossroads</a>
+					</li>
+					<li>
+						<a href="/library/index">McCartney Library</a>
+					</li>
+					<li>
+						<a href="/about-geneva/campus_bookstore">Campus Store</a>
+					</li>
+					<li>
+						<a href="/student-life/services/security/">Campus Safety</a>
+					</li>
+					<li><a href="https://moodle.geneva.edu"><img alt="Moodle Login" src="/_files/sitegraphics/moodle-ico.png" style="display: inline-block; margin-right: 5px;" /> Online Course Login</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>Alumni</span>
+				<ul>
+					<li>
+						<a href="/give/index">Giving</a>
+					</li>
+					<li>
+						<a href="/alumni/index">Alumni Home</a>
+					</li>
+					<li>
+						<a href="/alumni/events/index">Alumni Events</a>
+					</li>
+					<li>
+						<a href="/alumni/connect/alumni_updateform">Alumni Update Form</a>
+					</li>
+					<li>
+						<a href="/academics/registrar/student_records_transcripts">Transcript Requests</a>
+					</li>
+					<li>
+						<a href="/alumni/represent/alumni_referrals">Gold and White Referrals</a>
+					</li>
+					<li>
+						<a href="/alumni/represent/legacylink">Legacy Link Program</a>
+					</li>
+					<li>
+						<a href="/alumni/connect/alumni_contact">Contact Alumni Engagement</a>
+					</li>
+					<!--<li>
+						<a href="/homecoming/index">Homecoming 2023</a>
+					</li>-->
+				</ul>
+			</li>
+			<li>
+				<a href="https://athletics.geneva.edu">
+					<span>Athletics</span>
+				</li>
+			</li>
+			<div class="mmenu-undernav">&copy; Geneva College | 
+				<a href="/about-geneva/contact_us">Contact Us</a>
+			</div>
+			<div class="searchBox-panel2"></div>
+		</ul></nav>
+
+
+	
+
+
+</div>
+
+		
+		<!-- include External Jquery last -->
+		
+	</body>
+</html>

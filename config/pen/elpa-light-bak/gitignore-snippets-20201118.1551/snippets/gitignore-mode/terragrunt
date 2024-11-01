@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Terragrunt
+# contributor: Toptal & contributors
+# key: terragrunt
+# --
+
+### Terragrunt ###
+
+# terragrunt cache directories
+**/.terragrunt-cache/*

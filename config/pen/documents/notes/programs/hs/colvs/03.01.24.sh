@@ -1,0 +1,3 @@
+cd /;  "colvs" "#" "<==" "pa"
+cd /;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"

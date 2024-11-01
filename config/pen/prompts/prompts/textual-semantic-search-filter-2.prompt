@@ -1,0 +1,49 @@
+task: "textual semantic search filter"
+tags: search nlp-task
+doc: "Given a document and a query, measure how semantically true the is-a relationship is"
+# TODO 
+external-related: "https://github.com/openai/openai-python/blob/main/examples/semanticsearch/semanticsearch.py"
+engine: OpenAI Codex
+force-engine: OpenAI Codex
+prompt-version: 1
+# prompt: |+
+#     cat passage <<EOD
+#     <document>
+#     EOD
+
+#     # The above passage <:pp><:beam>
+prompt: |+
+    cat passage <<EOD
+    <document>
+    EOD
+
+    # The above passage <:pp><query>
+# In search mode, pp is used to collect token logprompts following.
+# in semantic search the trailing tokens have their logprobs added up and averaged.
+# TODO: Send multiple prompts in same request.
+# But how are they interactively wrapped up as input?
+packable: on
+package-delimiter: "\n"
+temperature: 0.3
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+mode: search
+search-threshold: 0.5
+### Search means to return logprob and force max-generated-tokens to 0
+# force-logprobs: 0
+# force-max-generated-tokens: 0
+# # I also need to bypass any checks
+# force-api: on
+# Also, change the return function from prompts to logprob
+vars:
+- "query"
+# The counter-query, if provided, generates logprobs which are subtracted from the original
+# - "counter query"
+examples:
+- "is a todo item"
+info: on
+filter: off
+completion: off
+insertion: off

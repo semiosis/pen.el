@@ -1,0 +1,11 @@
+do
+  -- Get the column widths for each row.
+  widths <- map (maximum 0) $ map (map (\row -> maximum (map (length . unpack) row))) rows
+
+  -- Print the header.
+  let header = [("Name", "Age")]
+  print $ tabulate header widths
+
+  -- Print each row.
+  mapM_ print $ tabulate rows widths
+EOD

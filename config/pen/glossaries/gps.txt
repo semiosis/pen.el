@@ -1,0 +1,39 @@
+UTM
+The UTM system
+    Divides the Earth into 60 zones, each 6°
+    of longitude in width.
+    
+    Zone 1 covers longitude 180° to 174° W;
+    
+    zone numbering increases eastward to zone
+    60, which covers longitude 174°E to 180°.
+    
+    The polar regions south of 80°S and north
+    of 84°N are excluded.
+
+    As opposed to MGRS.
+
+False northing
+    A linear value applied to the origin of
+    the y coordinates.
+    
+    False easting and northing values are
+    usually applied to ensure that all x and y
+    values are positive.
+    
+    You can also use the false easting and
+    northing parameters to reduce the range of
+    the x or y coordinate values.
+
+MGRS
+The Military Grid Reference System
+    The geocoordinate standard used by NATO
+    militaries for locating points on Earth.
+    
+    The MGRS is derived from the Universal
+    Transverse Mercator (UTM) grid system and
+    the Universal Polar Stereographic (UPS)
+    grid system, but uses a different labeling
+    convention.
+
+    As opposed to UTM.

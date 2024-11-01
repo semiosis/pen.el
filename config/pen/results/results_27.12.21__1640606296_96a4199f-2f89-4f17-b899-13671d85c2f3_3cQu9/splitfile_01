@@ -1,0 +1,12 @@
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
+
+                             Amazon EC2
+                             Instance Metadata
+
+   Amazon EC2 provides metadata about your EC2 instances and resources.
+   You can use the metadata to configure applications and to monitor your
+   resources. The metadata is available as both an HTTP and an HTTPS endpoint.
+
+   For example, you can use the metadata to get information about your
+   instances, such as the operating system (OS) running on the instance,
+   the Availability Zone, and the instance

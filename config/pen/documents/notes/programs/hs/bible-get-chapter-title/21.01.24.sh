@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "bible-get-chapter-title" "Leviticus" "5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-get-chapter-title" "Leviticus" "5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-get-chapter-title" "Leviticus" "5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-get-chapter-title" "Leviticus" "10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-get-chapter-title" "Leviticus" "10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-get-chapter-title" "Leviticus" "10" "#" "<==" "zsh"

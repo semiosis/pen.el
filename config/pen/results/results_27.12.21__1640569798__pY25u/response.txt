@@ -1,0 +1,1 @@
+- Linus Torvald (1969-): systemd is a daemon that manages the lifecycle of the system, provides resource management for processes, and other basic tasks.

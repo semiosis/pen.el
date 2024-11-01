@@ -1,0 +1,1 @@
+System.Console.GetOpt "h:p:s:" (Some 'h') (Some 'p') (Some 's')

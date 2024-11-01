@@ -1,0 +1,5 @@
+cd /root/.pen/documents/church-services;  "Colossians" "1:15" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "Colossians" "1:15-18" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "Colossians" "1:15-20" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "Colossians" "1:15-21" "#" "<==" "bash"
+cd /root/.pen/documents/church-services;  "Colossians" "1:15-20" "#" "<==" "bash"

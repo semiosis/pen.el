@@ -1,0 +1,52 @@
+syntactic parsing
+    The automatic analysis of syntactic
+    structure of NL, especially syntactic
+    relations (in dependency grammar) and
+    labelling spans of constituents (in
+    constituency grammar).
+    
+    It is motivated by the problem of
+    structural ambiguity in NL: a sentence can
+    be assigned multiple grammatical parses,
+    so some kind of knowledge beyond
+    computational grammar rules are need to
+    tell which parse is intended.
+    
+    Syntactic parsing is one of the important
+    tasks in computational linguistics and
+    NLP, and has been a subject of research
+    since the mid-20th century with the advent
+    of computers.
+    
+    Different theories of grammar propose
+    different formalisms for describing the
+    syntactic structure of sentences.
+    
+    For computational purposes, these
+    formalisms can be grouped under
+    constituency grammars and dependency
+    grammars.
+    
+    Parsers for either class call for
+    different types of algorithms, and
+    approaches to the two problems have taken
+    different forms.
+    
+    The creation of human-annotated treebanks
+    using various formalisms (e.g. Universal
+    Dependencies) has proceeded alongside the
+    development of new algorithms and methods
+    for parsing.
+    
+    Part-of-speech tagging (which resolves
+    some semantic ambiguity) is a related
+    problem, and often a prerequisite for or a
+    subproblem of syntactic parsing.
+    
+    Syntactic parses can be used for
+    information extraction (e.g. event
+    parsing, semantic role labelling, entity
+    labelling) and may be further used to
+    extract formal semantic representations.
+
+    https://en.wikipedia.org/wiki/Syntactic_parsing_(computational_linguistics)

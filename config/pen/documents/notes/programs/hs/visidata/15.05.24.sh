@@ -1,0 +1,5 @@
+cd /root/notes/ws/chemistry/reports;  "visidata" "/tmp/babel-6qzzWG/org-tableJGJVJ3.tsv" "#" "<==" "pen-fpvd"
+cd /root/notes/ws/chemistry/reports;  "visidata" "/tmp/babel-6qzzWG/org-tablehljwnC.tsv" "#" "<==" "pen-fpvd"
+cd /root/notes/ws/chemistry/reports;  "visidata" "/tmp/babel-6qzzWG/org-tableOqCJVt.tsv" "#" "<==" "pen-fpvd"
+cd /root/notes/ws/chemistry/reports;  "visidata" "/tmp/babel-6qzzWG/org-tableKh7VG3.tsv" "#" "<==" "pen-fpvd"
+cd /root/notes/ws/chemistry/reports;  "visidata" "/tmp/babel-6qzzWG/org-tableKh7VG3.tsv" "#" "<==" "pen-fpvd"

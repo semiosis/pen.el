@@ -1,0 +1,6 @@
+do
+  let cols = maximum (map length rows)
+  forM_ rows $ \row -> do
+    let row' = map (\x -> if null x then "" else x) row
+    putStrLn $ concat (map (\i -> (" " ++ row' !! i ++ " |")) [0..cols-1])
+EOD

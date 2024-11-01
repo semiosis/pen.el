@@ -1,0 +1,22 @@
+engine-title: OpenAI Davinci
+include: OpenAI
+# model: text-davinci-001
+model: davinci
+foundation: true
+default-temperature: 0.8
+specialities:
+- foundation
+- nl
+layers:
+- foundation
+- nl
+# downstream-engines usually spiritually descended from
+# or finetuned (extra training)
+downstream-engines:
+- OpenAI Codex
+- OpenAI Davinci Instruct
+# fewer parameters (less training)
+lighter-engines:
+- OpenAI Curie
+- OpenAI Babbage
+- OpenAI Ada

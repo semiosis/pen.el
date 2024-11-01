@@ -1,0 +1,20 @@
+cd ..
+» pwd
+/root
+» cd notes
+» pwd
+/root/notes
+» cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» cd ..
+» pwd
+/root/notes
+» cd ..
+» pwd
+/root
+» cd notes
+» pwd
+/root/notes
+» ls -l 'harrys adventures'
+-rw-r--r

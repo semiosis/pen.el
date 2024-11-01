@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print-stderr
+# group: print
+# key: p2
+# --
+print STDERR "message"

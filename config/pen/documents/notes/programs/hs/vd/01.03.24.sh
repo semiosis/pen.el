@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes;  "vd" "/root/.emacs.d/host/pen.el/docs/theology/faith-and-judgement.org" "/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "#" "<==" "vd"

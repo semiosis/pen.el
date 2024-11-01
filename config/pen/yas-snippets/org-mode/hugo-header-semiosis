@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: hugo-header-semiosis
+# group: hugo
+# key: hugos
+# --
+#+HUGO_BASE_DIR: /home/shane/var/smulliga/source/git/semiosis/semiosis-hugo
+#+HUGO_SECTION: ./posts
+
+#+TITLE: ${1:Title of Post}
+#+DATE: <`(format-time-string "%Y-%m-%d")`>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: ${2:GPT-2}
+$0

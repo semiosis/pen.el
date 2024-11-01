@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: new slice
+# key: nsl
+# --
+var s []int

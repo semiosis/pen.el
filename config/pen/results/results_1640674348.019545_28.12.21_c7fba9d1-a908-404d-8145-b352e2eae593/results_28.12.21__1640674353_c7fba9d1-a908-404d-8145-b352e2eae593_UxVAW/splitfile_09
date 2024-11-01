@@ -1,0 +1,5 @@
+covered that the “multimodal neurons” in the Transformer are actually a
+    generalization of the “sparse attention” we discovered in our DALLE model.
+    "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+
+

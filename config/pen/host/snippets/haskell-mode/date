@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: date
+# key: date
+# --
+import Data.Time
+
+main = getCurrentTime >>= print

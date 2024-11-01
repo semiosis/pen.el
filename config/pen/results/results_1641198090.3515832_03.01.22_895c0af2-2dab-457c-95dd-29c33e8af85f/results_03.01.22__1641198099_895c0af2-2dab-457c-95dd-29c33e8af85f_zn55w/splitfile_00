@@ -1,0 +1,9 @@
+
+arr+=("$path")
+
+# if the array is not empty, then append to it
+if test -n "$fun"; then
+    arr+=("$fun")
+fi
+
+# if the array is not empty

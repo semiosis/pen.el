@@ -1,0 +1,7 @@
+The above code is an example of a monad comprehension. The monad comprehension is a syntactic sugar for a for-comprehension.
+
+The getResults function is a function that takes a string and returns a list of strings.
+The fromMaybe function is a function that takes a default value and a maybe value.
+The unlines function is a function that takes a list of strings and returns a single string with each string separated by a newline.
+
+The monad comprehension is

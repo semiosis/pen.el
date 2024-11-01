@@ -1,0 +1,28 @@
+title: correct word
+tags: prose grammar
+prompt: |
+  Replace with the correct word
+
+  Here are some different ways of saying "criticize unfairly":
+  - denigrate
+  - disparage
+  - belittle the value or importance of
+  <delim>
+  Here are some different ways of saying "<1>":
+  -
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 100
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- passage
+examples:
+- If you are a developer you might have a favorite IDE that you always use. And it
+  is really easy if you can develop software from different languages on top of the
+  same IDE that you like.
+preprocessors:
+- pf-correct-grammar/1
+external: summarize-passage
+filter: true

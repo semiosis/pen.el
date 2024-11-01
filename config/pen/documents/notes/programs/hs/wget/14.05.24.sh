@@ -1,0 +1,6 @@
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=Mc9vV3n68oU&t=1987" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=na22KkydPRs&t=301" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "wget" "-qO-" "https://www.youtube.com/watch?v=VqtqnWS_eBU" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "wget" "-qO-" "https://www.youtube.com/watch?v=3GRbIN7BJ0c" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=7vIfhcb0obg" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://youtube.com/watch?v=cUEfF0fc4Bo&t=813" "#" "<==" "pen-ci"

@@ -1,0 +1,5 @@
+
+
+*** Check the day of the date I want
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  ubuntu: given a date with date -d, provide the

@@ -1,0 +1,19 @@
+https://wiki.haskell.org/Simple_monad_examples
+
+
+
+Simple monad examples
+
+This page is about monads which are so simple that they can be implemented
+directly in Haskell.
+
+Contents
+1
+2
+3
+4
+5
+6
+7
+8
+9

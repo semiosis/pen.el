@@ -1,0 +1,7 @@
+cd /root/notes;  "I" "Corinthians" "3:23" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "1:7" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "1:7-9" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "2:3-4" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "2:9-11" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "2:8-11" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "2:15-17" "#" "<==" "zsh"

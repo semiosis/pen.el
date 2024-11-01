@@ -1,0 +1,36 @@
+---
+title: Article summary from title
+doc: Given the title of an article, generate a summary
+tags: comprehension prose blogging
+prompt: |
+  Title: Build a WhatsApp Chatbot With Python, Flask and Twilio
+  Summary: A chatbot is a software application that is able to conduct a conversation with a human
+  user through written or spoken language. The level of "intelligence" among chatbots varies greatly.
+  While some chatbots have a fairly basic understanding of language, others employ
+  sophisticated artificial intelligence (AI) and machine learning (ML) algorithms to achieve an
+  almost human conversational level. In this tutorial I'm going to show you how easy it is to build a
+  chatbot for WhatsApp using the Twilio API for WhatsApp and the Flask framework for Python.
+
+  Title: Run Your Flask Regularly Scheduled Jobs with Cron
+  Summary: A common need of web applications is to have a periodically running task in the
+  background. This could be a task that imports new data from third party sources, or maybe one
+  that removes revoked tokens from your database once they have expired. In this and many other
+  situations you are faced with the challenge of implementing a task that runs in the background at
+  regular intervals. This is a pattern that many people ask me about. I've seen implementations that
+  are based on the APScheduler package, on Celery, and even homegrown solutions built inside a
+  background thread. Sadly none of these options are very good. In this article I'm going to show
+  you what I believe is a very robust implementation that is based on the Flask CLI and the cron
+  service.
+
+  Title: <1>
+  Summary:
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- article title
+examples:
+- Building an SMS Chatbot with OpenAI's GPT-3 engine, Twilio and Python

@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "zsh"
+cd /root/.pen;  "info" "-q" "tial" "#" "<==" "man"
+cd /root/.pen;  "info" "-q" "tail" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "docker" "#" "<==" "man"

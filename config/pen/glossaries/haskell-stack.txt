@@ -1,0 +1,13 @@
+package.yaml
+    [#cabal]
+
+    A file format supported by hpack.
+    
+    It adds some niceties on top of cabal.
+    
+    For example, hpack has YAML syntax support
+    and will automatically generate of
+    exposed-modules lists.
+    
+    However, it's just a frontend to cabal
+    package files.

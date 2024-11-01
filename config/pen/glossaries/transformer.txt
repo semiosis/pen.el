@@ -1,0 +1,358 @@
+https://huggingface.co/transformers/examples.html
+
+scaling transformer
+    [[https://www.youtube.com/watch?v=hgSGHusDx7M][Sparse is Enough in Scaling Transformers {aka Terraformer} | ML Research Paper Explained - YouTube]]
+
+Retrieval-Enhanced Transformer
+RETRO
+    We enhance auto-regressive LMs by
+    conditioning on document chunks retrieved
+    from a large corpus, based on local
+    similarity with preceding tokens.
+
+    We typically train RETRO from scratch, yet
+    can also rapidly RETROfit pre-trained
+    transformers with retrieval and still
+    achieve good performance.
+
+    [[calibre:Improving language models by retrieving from trillions of tokens]]
+
+one-hot encoding
+    Each word from the vocabulary is
+    represented as a unique binary vector with
+    only one nonzero entry.
+
+    Not so great at representing words.
+
+    Terrible for n-grams.
+
+    Each vector has a size of the vocabulary
+    (or even bigger in case of n-grams) which
+    makes modeling difficult.
+
+Hourglass
+    A hierarchical Transformer LM.
+
+    Hourglass improves upon the Transformer
+    baseline given the same amount of
+    computation and can yield the same results
+    as Transform- ers more efficiently.
+
+∞-former
+Infty-Former
+infinite memory transformer
+    Extends the vanilla transformer with an
+    unbounded long-term memory.
+
+continuous-space attention mechanism
+sticky memories
+    It is able to model arbitrarily long
+    contexts and maintain "sticky memories"
+    while keeping a fixed computation budget.
+
+key
+value
+query
+    [#attention]
+
+    https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+
+    The key/value/query concepts come from
+    retrieval systems.
+    
+    For example, when you type a query to
+    search for some video on Youtube, the
+    search engine will map your query against
+    a set of keys (video title, description,
+    etc.) associated with candidate videos in
+    the database, then present you the best
+    matched videos (values).
+
+attention
+    [operation]
+    [mechanism]
+
+    Turns out can be thought of as a retrieval
+    process as well, so the key/value/query
+    concepts also apply here.
+
+Jax
+    JAX is Autograd and XLA, brought together
+    for high-performance machine learning
+    research.
+
+    https://github.com/google/jax
+
+DistilGPT2
+
+DistilBERT
+    https://huggingface.co/transformers/model_doc/distilbert.html
+
+Bi-Encoder
+    https://www.sbert.net/examples/applications/cross-encoder/README.html
+
+    Bi-Encoders produce for a given sentence a
+    sentence embedding. We pass to a BERT
+    independently the sentences A and B, which
+    result in the sentence embeddings u and v.
+    These sentence embedding can then be
+    compared using cosine similarity.
+
+Cross-Encoder
+    https://www.sbert.net/examples/applications/cross-encoder/README.html
+
+    We pass both sentences simultaneously to
+    the Transformer network. It produces than
+    an output value between 0 and 1 indicating
+    the similarity of the input sentence pair:
+
+    A Cross-Encoder does not produce a
+    sentence embedding. Also, we are not able
+    to pass individual sentences to a
+    Cross-Encoder.
+
+Bi-Encoder vs  Cross-Encoder
+    https://www.sbert.net/examples/applications/cross-encoder/README.html
+
+    As detailed in our paper, Cross-Encoder
+    achieve better performances than
+    Bi-Encoders. However, for many application
+    they are not pratical as they do not
+    produce embeddings we could e.g. index or
+    efficiently compare using cosine
+    similarity.
+
+X-formers
+    A transformer variant.
+
+vanilla transformer
+    [#X-formers]
+
+    A transformer that is not an X-former.
+
+    https://papers.labml.ai/paper/2106.04554
+
+transformer
+    [transformer]
+
+    [[https://ryanong.co.uk/2020/01/09/day-9/][Day 9: Transformers - Introduction - Ryan Ong]]
+
+    Residual connection and layer
+    normalisation are applied to each of the
+    two sub-layers (Add & Norm).
+
+switch transformer
+    https://www.infoq.com/news/2021/02/google-trillion-parameter-ai/
+
+    https://arxiv.org/abs/2101.03961
+
+    $MYGIT/tensorflow/mesh/mesh_tensorflow/transformer/moe.py
+
+temperature
+    [#GPT]
+
+    Float value controlling randomness in
+    boltzmann distribution.
+    
+    Lower temperature results in less random
+    completions.
+    
+    As the temperature approaches zero, the
+    model will become deterministic and
+    repetitive.
+    
+    Higher temperature results in more random
+    completions.
+
+causal masking
+    [[https://keras.io/examples/generative/text_generation_with_miniature_gpt/][Text generation with a miniature GPT]]
+    [[https://datascience.stackexchange.com/questions/65067/proper-masking-in-the-transformer-model][nlp - Proper masking in the transformer model - Data Science Stack Exchange]]
+
+    Self-attention causality: in the multi-
+    head attention blocks used in the decoder,
+    this mask is used to force predictions to
+    only attend to the tokens at previous
+    positions, so that the model can be used
+    autoregressively at inference time.
+    
+    This corresponds to parameter `attn_mask`.
+
+transformer block
+block
+    The original transformer model is made up
+    of an encoder and decoder – each is a
+    stack of what we can call transformer
+    blocks.
+
+    Both the encoder stack and the decoder
+    stack are each made up of consecutive
+    transformer blocks.
+
+    http://jalammar.github.io/illustrated-gpt2/
+
+    GPT-2 is built using transformer decoder
+    blocks.
+
+    BERT, on the other hand, uses transformer
+    encoder blocks
+
+encoder block
+    [#transformer block]
+
+decoder block
+    [#transformer block]
+
+    Has a small architectural variation from
+    the encoder block.
+
+stack
+    A stack of transformer blocks.
+
+multi-head attention
+    [#transformer]
+
+    [[https://ryanong.co.uk/2020/01/09/day-9/][Day 9: Transformers - Introduction - Ryan Ong]]
+
+    Multi-head Attention is a module for
+    attention mechanisms which runs through an
+    attention mechanism several times in
+    parallel.
+
+    The independent attention outputs are then
+    concatenated and linearly transformed into
+    the expected dimension.
+
+position-wise feed-forward neural network
+position-wise FFNN
+    [#transformer]
+
+    [[https://ryanong.co.uk/2020/01/09/day-9/][Day 9: Transformers - Introduction - Ryan Ong]]
+
+    [[https://medium.com/@chiranthancv95/transformers-attention-is-all-you-need-8de139e0fe9e][TransformersAttention is all you need! | by CV CHIRANTHAN | Feb, 2021 | Medium]]
+
+    Each encoder consists of two sub layers:
+    - A self-attention layer:
+          A layer that helps the encoder look
+          at other words in the input sentence
+          as it encodes a specific word.
+    - An FFNN:
+          The exact same FF network is
+          independently applied to the word in
+          each position through its own path
+          in the encoder, hence it is called
+          position-wise FF NN.
+
+multi-head self-attention
+    [#transformer]
+
+    - 'n' attention heads
+
+    Involves performing multiple single
+    attention function (multiple heads), each
+    with a different set of query, key and
+    value weight matrices.
+    
+    The purpose of multi-head self-attention
+    is that it allows the model to focus on
+    information from multiple representation
+    subspaces at different positions.
+    
+    These matrices are initialised randomly
+    and are used to project inputs into
+    different representation subspace.
+    
+    We can then perform multiple attention
+    function, in parallel, using these
+    different representation subspaces
+    (queries, keys and values).
+    
+    Therefore, a transformer with 8 attention
+    heads as outlined in Vaswani et al. (2017)
+    means that we will end up with 8 different
+    output matrices.
+    
+    Seeing as the FF NN only expects a single
+    output matrix, we condense the output
+    matrices into a single matrix by
+    concatenating them and multiplying it by
+    another weight matrix that was also
+    trained during the training process.
+
+    The Transformer architecture ditched the
+    recurrence mechanism in favor of multi-
+    head self-attention mechanism. Avoiding
+    the RNNs’ method of recurrence will result
+    in massive speed-up in the training time.
+
+    See "self-attention".
+
+attention score
+    [[https://ryanong.co.uk/2020/01/10/day-10-transformers-multihead-attention-mechanism/][Day 10: Transformers - MultiHead Attention Mechanism - Ryan Ong]]
+
+    Tells the model which part of the sequence
+    to focus on when encoding a word.
+    
+    The score is computed by taking the dot
+    products of the query with all the other
+    key vectors in the sequence.
+
+representation subspaces
+    - queries,
+    - keys, and
+    - values
+
+head
+attention head
+    Each with a different set of query, key
+    and value weight matrices.    
+
+    See "multi-head self-attention".
+
+positional encoding
+    [[https://ryanong.co.uk/2020/01/11/day-11-transformers-positioning-encoding-and-decoder/][Day 11 - Transformers: Positioning Encoding and Decoder - Ryan Ong]]
+
+    ewwlinks +/"What is positional encoding" "https://kazemnejad.com/blog/transformer_architecture_positional_encoding/"
+
+    Position and order of words are the essential parts of any language. They define the grammar and thus the actual semantics
+    of a sentence.
+
+soft prompt
+    [[calibre:The Power of Scale for Parameter-Efficient Prompt Tuning]]
+
+    Unlike the discrete text prompts used by
+    GPT-3, soft prompts are learned through
+    back-propagation and can be tuned to
+    incorporate signal from any number of
+    labeled examples.
+
+    https://gaotianyu.xyz/prompting/
+
+prompt tuning
+    [[calibre:The Power of Scale for Parameter-Efficient Prompt Tuning]]
+
+    A simple yet effective mechanism for
+    learning "soft prompts" to condition
+    frozen language models to perform specific
+    downstream tasks.
+
+    A simplification of prefix tuning.
+
+prefix tuning
+    [[calibre:Prefix-Tuning: Optimizing Continuous Prompts for Generation]]
+
+signal
+    [[y:soft prompt]]
+
+T5
+Text-To-Text Transfer Transformer
+    https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
+
+Colossal Clean Crawled Corpus
+C4
+    https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
+
+    https://www.tensorflow.org/datasets/catalog/c4
+
+sequence transduction
+    Converting one sequence of symbols to
+    another.

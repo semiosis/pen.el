@@ -1,0 +1,2 @@
+cd /root/.pen/results/results_1661241121.413512_23.08.22_dc90c6ed-9061-48b0-9ee3-c9935974780f;  "xdg-open" "/root/.pen/results/results_1661241121.413512_23.08.22_dc90c6ed-9061-48b0-9ee3-c9935974780f/results_23.08.22__1661241226_dc90c6ed-9061-48b0-9ee3-c9935974780f_UQJ6e/splitfile_03" "#" "<==" "broot"
+cd /root/.pen/glossaries;  "xdg-open" "/root/.pen/glossaries/algorithm-analysis.txt" "#" "<==" "broot"

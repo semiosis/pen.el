@@ -1,0 +1,26 @@
+ (T.unpack . T.pack) columns
+
+  -- Turn each number into a pair of numbers and store it in a list of pairs, one for each column in the record.
+  pairs <- map (\(x, y) -> (read x, read y)) numbers
+
+  -- Print the list of pairs to stdout.
+  print pairs
+EOD
+
+# python files
+
+cat draft.py <<EOD
+#!/usr/bin/env python3
+import csv
+import sys
+import textwrap
+
+
+def main():
+    """Read CSV from stdin and print pairs to stdout."""
+
+    # Read CSV from stdin and decode it into a list of lines.
+    # We use the Lazy version of ByteString to avoid reading the whole file into memory.
+    lines = sys.stdin.buffer.read().decode("utf-8").splitlines()
+
+    #

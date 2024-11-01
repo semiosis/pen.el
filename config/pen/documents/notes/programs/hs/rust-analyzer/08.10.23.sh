@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "rust-analyzer" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "rust-analyzer" "#" "<==" "emacs"
+cd /root/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core;  "rust-analyzer" "#" "<==" "emacs"
+cd /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/structopt-0.3.26;  "rust-analyzer" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs;  "rust-analyzer" "#" "<==" "emacs"
+cd /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/flate2-1.0.27;  "rust-analyzer" "#" "<==" "emacs"

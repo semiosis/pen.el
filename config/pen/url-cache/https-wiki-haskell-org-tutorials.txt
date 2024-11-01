@@ -1,0 +1,480 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Server: nginx/1.14.0 (Ubuntu)
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Last-Modified: Thu, 10 Mar 2022 23:38:50 GMT
+Accept-Ranges: bytes
+Date: Thu, 07 Apr 2022 09:32:51 GMT
+Via: 1.1 varnish
+X-Served-By: cache-akl10324-AKL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1649323971.143977,VS0,VE334
+Vary: Accept-Encoding, Cookie
+transfer-encoding: chunked
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorials - HaskellWiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials","wgTitle":"Tutorials","wgCurRevisionId":65000,"wgRevisionId":65000,"wgArticleId":3477,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tutorials","wgRelevantArticleId":3477,"wgRequestId":"19567c190490f1ee8214c584","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false},"wgCollapsibleVectorEnabledModules":{"collapsiblenav":true,"experiments":true}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","skins.hawiki.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.hawiki.styles&amp;only=styles&amp;skin=hawiki"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=hawiki"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hawiki"></script>
+<meta name="generator" content="MediaWiki 1.27.4"/>
+<link rel="shortcut icon" href="/wikistatic/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="HaskellWiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.haskell.org/api.php?action=rsd"/>
+<link rel="copyright" href="/HaskellWiki:Copyrights"/>
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Tutorials rootpage-Tutorials skin-hawiki action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Tutorials</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From HaskellWiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introductions_to_Haskell"><span class="tocnumber">1</span> <span class="toctext">Introductions to Haskell</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Best_places_to_start"><span class="tocnumber">1.1</span> <span class="toctext">Best places to start</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Other_tutorials"><span class="tocnumber">1.2</span> <span class="toctext">Other tutorials</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Motivation_for_using_Haskell"><span class="tocnumber">2</span> <span class="toctext">Motivation for using Haskell</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Blog_articles"><span class="tocnumber">3</span> <span class="toctext">Blog articles</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Practical_Haskell"><span class="tocnumber">4</span> <span class="toctext">Practical Haskell</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Testing"><span class="tocnumber">4.1</span> <span class="toctext">Testing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Reference_material"><span class="tocnumber">5</span> <span class="toctext">Reference material</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Comparisons_to_other_languages"><span class="tocnumber">6</span> <span class="toctext">Comparisons to other languages</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Teaching_Haskell"><span class="tocnumber">7</span> <span class="toctext">Teaching Haskell</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Introducing_I.2FO"><span class="tocnumber">7.1</span> <span class="toctext">Introducing I/O</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Using_monads"><span class="tocnumber">8</span> <span class="toctext">Using monads</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Tutorials"><span class="tocnumber">8.1</span> <span class="toctext">Tutorials</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Workshops_on_advanced_functional_programming"><span class="tocnumber">9</span> <span class="toctext">Workshops on advanced functional programming</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introductions_to_Haskell">Introductions to Haskell</span></h2>
+<p>These are the recommended places to start learning, short of buying a <a href="/Books#Textbooks" title="Books">textbook</a>.
+</p><p>See also <a href="/Meta-tutorial" title="Meta-tutorial">Meta-tutorial</a>, another, shorter overview of tutorials aimed at helping you find the right one.
+</p>
+<h3><span class="mw-headline" id="Best_places_to_start">Best places to start</span></h3>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cis.upenn.edu/~cis194/spring13/lectures.html">Introduction to Haskell (Spring 2013)</a></dt>
+<dd> An excellent tutorial to Haskell for beginners given as a course at UPenn by the author of the Typeclassopedia and Diagrams, Brent Yorgey. More compact than LYAH and RWH, but still communicates both basics and some notoriously unfamiliar concepts effectively.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://learnyouahaskell.com">Learn You a Haskell for Great Good! (LYAH)</a></dt>
+<dd> Nicely illustrated tutorial showing Haskell concepts while interacting in GHCi. Written and drawn by Miran Lipovača.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://book.realworldhaskell.org/">Real World Haskell (RWH)</a></dt>
+<dd> A free online version of the complete book, with numerous reader-submitted comments. RWH is best suited for people who know the fundamentals of Haskell already, and can write basic Haskell programs themselves already. It makes a great follow up after finishing LYAH. It can easily be read cover-to-cover, or you can focus on the chapters that interest you most, or when you find an idea you don't yet understand.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/Haskell/YAHT">Yet Another Haskell Tutorial (YAHT)</a></dt>
+<dd>By Hal Daume III et al. A recommended tutorial for Haskell that is still under construction but covers already much ground. Also a classic text.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.happylearnhaskelltutorial.com">Happy Learn Haskell Tutorial (HLHT)</a></dt>
+<dd> Illustrated total beginner tutorial with fun, example-driven learning. Free and PDF/ebook versions available.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/Haskell">Haskell Wikibook</a> </dt>
+<dd>A communal effort by several authors to produce the definitive Haskell textbook. It's very much a work in progress at the moment, and contributions are welcome. For 6 inch e-Readers/tablet computers, there is <a rel="nofollow" class="external text" href="http://commons.wikimedia.org/wiki/File:Haskell_eBook_Reader.pdf">a PDF version of the book</a>. </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours">Write Yourself a Scheme in 48 Hours in Haskell</a></dt>
+<dd>A Haskell Tutorial, by Jonathan Tang. Most Haskell tutorials on the web seem to take a language-reference-manual approach to teaching. They show you the syntax of the language, a few language constructs, and then have you construct a few simple functions at the interactive prompt. The "hard stuff" of how to write a functioning, useful program is left to the end, or sometimes omitted entirely.  This tutorial takes a different tack. You'll start off with command-line arguments and parsing, and progress to writing a fully-functional Scheme interpreter that implements a good-sized subset of R5RS Scheme. Along the way, you'll learn Haskell's I/O, mutable state, dynamic typing, error handling, and parsing features. By the time you finish, you should be fairly fluent in both Haskell and Scheme.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://acm.wustl.edu/functional/haskell.php">How to Learn Haskell</a></dt>
+<dd>Some students at Washington University in St. Louis documented the path they took to learning Haskell and put together a nice meta-tutorial to guide beginners through some of the available resources. Experienced programmers looking for some quick code examples may be interested in their <a rel="nofollow" class="external text" href="http://acm.wustl.edu/functional/hs-breads.php">breadcrumbs</a>.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="https://ohaskell.guide/">About Haskell by Human Language (О Haskell по-человечески)</a></dt>
+<dd>The book about Haskell for an absolute beginners. Written by Denis Shevchenko in Russian.</dd></dl>
+<h3><span class="mw-headline" id="Other_tutorials">Other tutorials</span></h3>
+<dl><dt><a rel="nofollow" class="external text" href="http://dev.stephendiehl.com/hask/">What I wish I knew when learning Haskell</a>&#160;</dt>
+<dd>By Stephen Diehl. Does what it says on the tin.  See <a rel="nofollow" class="external text" href="http://www.reddit.com/r/haskell/comments/23srcm/what_i_wish_i_knew_when_learning_haskell_20/">Reddit appreciation</a></dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://channel9.msdn.com/Series/C9-Lectures-Erik-Meijer-Functional-Programming-Fundamentals">C9 Lectures: Erik Meijer - Functional Programming Fundamentals</a></dt>
+<dd>A set of videos of lectures by Erik Meijer</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20160404145554/http://www.yellosoft.us/evilgenius/">Haskell for the Evil Genius</a>&#160;</dt>
+<dd>By Andrew Pennebaker. An overview of how functional and declarative programming can increase the accuracy and efficiency of digital superweapons, empowering evil geniuses in their supreme goal of taking over the world.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20160317061940/http://www.yellosoft.us/parallel-processing-with-haskell">Parallel Processing with Haskell</a>&#160;</dt>
+<dd>By Andrew Pennebaker. A short, accelerated introduction to Haskell for coding parallel programs.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20160506054437/http://www.yellosoft.us/getoptfu">GetOptFu</a>&#160;</dt>
+<dd>By Andrew Pennebaker. A guide to robust command line argument parsing in Haskell. Available online in HTML, and offline in ePUB and MOBI formats.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/tutorial/">A Gentle Introduction to Haskell</a>&#160;</dt>
+<dd>By Paul Hudak, John Peterson, and Joseph H. Fasel. The title is misleading. Some knowledge of another functional programming language is expected. The emphasis is on the type system and those features which are really new in Haskell (compared to other functional programming languages). A classic, but not for the faint of heart (it's not so gentle).  Also available in <a rel="nofollow" class="external text" href="http://www.haskell.org/wikiupload//5/5e/GentleFR.pdf">French</a> <a rel="nofollow" class="external text" href="http://gorgonite.developpez.com/livres/traductions/haskell/gentle-haskell/">from this website</a>, <a rel="nofollow" class="external text" href="http://www.rsdn.ru/article/haskell/haskell_part1.xml">Russian</a> and in <a rel="nofollow" class="external text" href="https://github.com/brthanmathwoag/ebooks">EPUB and MOBI formats</a>.</dd></dl>
+<dl><dt><a href="/H-99:_Ninety-Nine_Haskell_Problems" title="H-99: Ninety-Nine Haskell Problems">H-99: Ninety-Nine Haskell Problems</a></dt>
+<dd>A collection of programming puzzles, with Haskell solutions. Solving these is a great way to get into Haskell programming.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://shuklan.com/haskell">Undergraduate Haskell Lectures from the University of Virginia</a> </dt>
+<dd>An introductory set of slides full of example code for an undergraduate course in Haskell. Topics include basic list manipulations, higher order functions, cabal, the IO Monad, and Category Theory.</dd></dl>
+<dl><dt><a href="/Haskell_Tutorial_for_C_Programmers" title="Haskell Tutorial for C Programmers">Haskell Tutorial for C Programmers</a></dt>
+<dd>By Eric Etheridge.  From the intro: "This tutorial assumes that the reader is familiar with C/C++, Python, Java, or Pascal. I am writing for you because it seems that no other tutorial was written to help students overcome the difficulty of moving from C/C++, Java, and the like to Haskell."</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/linux/tutorials/l-hask/">Beginning Haskell</a> </dt>
+<dd>From IBM developerWorks. This tutorial targets programmers of imperative languages wanting to learn about functional programming in the language Haskell. If you have programmed in languages such as C, Pascal, Fortran, C++, Java, Cobol, Ada, Perl, TCL, REXX, JavaScript, Visual Basic, or many others, you have been using an imperative paradigm. This tutorial provides a gentle introduction to the paradigm of functional programming, with specific illustrations in the Haskell 98 language. (Free registration required.)</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cse.chalmers.se/~rjmh/tutorials.html">Tutorial Papers in Functional Programming</a>.</dt>
+<dd>A collection of links to other Haskell tutorials, from John Hughes.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cs.ou.edu/~rlpage/fpclassCurrent/textbook/haskell.shtml">Two Dozen Short Lessons in Haskell</a> </dt>
+<dd>By Rex Page. A draft of a textbook on functional programming, available by ftp. It calls for active participation from readers by omitting material at certain points and asking the reader to attempt to fill in the missing information based on knowledge they have already acquired. The missing information is then supplied on the reverse side of the page. </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="ftp://ftp.geoinfo.tuwien.ac.at/navratil/HaskellTutorial.pdf">Haskell-Tutorial</a> </dt>
+<dd>By Damir Medak and Gerhard Navratil. The fundamentals of functional languages for beginners. </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://video.s-inf.de/#FP.2005-SS-Giesl.(COt).HD_Videoaufzeichnung">Video Lectures</a> </dt>
+<dd>Lectures (in English) by Jürgen Giesl. About 30 hours in total, and great for learning Haskell. The lectures are 2005-SS-FP.V01 through 2005-SS-FP.V26. Videos 2005-SS-FP.U01 through 2005-SS-FP.U11 are exercise answer sessions, so you probably don't want those.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cs.utoronto.ca/~trebla/fp/">Albert's Functional Programming Course</a> </dt>
+<dd>A 15 lesson introduction to most aspects of Haskell.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.iceteks.com/articles.php/haskell/1">Introduction to Haskell</a></dt>
+<dd>By Chris Dutton, An "attempt to bring the ideas of functional programming to the masses here, and an experiment in finding ways to make it easy and interesting to follow".</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.csc.depauw.edu/~bhoward/courses/0203Spring/csc122/haskintro/">An Introduction to Haskell</a></dt>
+<dd>A brief introduction, by Brian Howard.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.linuxjournal.com/article/9096">Translating Haskell into English</a></dt>
+<dd>By Shannon Behrens, a glimpse of the Zen of Haskell, without requiring that they already be Haskell converts.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.shlomifish.org/lecture/Perl/Haskell/slides/">Haskell for Perl Programmers</a></dt>
+<dd>Brief introduction to Haskell, with a view to what perl programmers are interested in</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://lisperati.com/haskell/">How To Organize a Picnic on a Computer</a></dt>
+<dd>Fun introduction to Haskell, step by step building of a program to seat people at a planned picnic, based on their similarities using data from a survey and a map of the picnic location.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20150827061048/https://cs.wallawalla.edu/research/KU/PR/Haskell.html">Haskell Tutorial</a></dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.lisperati.com/haskell/">Conrad Barski's Haskell tutorial ..  with robots</a></dt></dl>
+<dl><dt><a href="/wikiupload/2/2d/Introduction.pdf" class="internal" title="Introduction.pdf">Frederick Ross's Haskell introduction</a></dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20120417155342/https://de.wikibooks.org/wiki/Haskell">Dirk's Haskell Tutorial</a></dt>
+<dd>in German for beginners by a beginner. Not so deep, but with a lot examples with very small steps.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.crsr.net/Programming_Languages/SoftwareTools/index.html">Software Tools in Haskell</a></dt>
+<dd>A tutorial for advanced readers</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://learn.hfm.io/">Learning Haskell</a></dt>
+<dd>A comprehensive introduction to Haskell that combines text with screencasts. No previous knowledge of functional programming is required. The tutorial is still work in progress with additional chapters being added over time.</dd></dl>
+<p>See also the discussion <a rel="nofollow" class="external text" href="http://www.reddit.com/r/haskell/comments/2blsqa/papers_every_haskeller_should_read/">Papers every haskeller should read</a>.
+</p>
+<h2><span class="mw-headline" id="Motivation_for_using_Haskell">Motivation for using Haskell</span></h2>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html">Why Functional Programming Matters</a> </dt>
+<dd>By <a rel="nofollow" class="external text" href="http://www.cse.chalmers.se/~rjmh/">John Hughes</a>, The Computer Journal, Vol. 32, No. 2, 1989, pp. 98 - 107. Also in: David A. Turner (ed.): Research Topics in Functional Programming, Addison-Wesley, 1990, pp. 17 - 42.<br /> Exposes the advantages of functional programming languages.  Demonstrates how higher-order functions and lazy evaluation enable new forms of modularization of programs.</dd></dl>
+<dl><dd><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=XrNdvWqxBvA">video</a> of John Hughes talk at Functional Conf 2016 is available on youtube</dd></dl>
+<dl><dt><a href="/Why_Haskell_matters" title="Why Haskell matters">Why Haskell matters</a> </dt>
+<dd>Discussion of the advantages of using Haskell in particular. An excellent article.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=Fqi0Xu2Enaw">Haskell Introduction</a></dt>
+<dd>A video from FP Complete</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cs.kent.ac.uk/pubs/1997/224/index.html">Higher-order + Polymorphic = Reusable</a> </dt>
+<dd>By <a rel="nofollow" class="external text" href="http://www.cs.kent.ac.uk/people/staff/sjt/index.html">Simon Thompson</a>. Unpublished, May 1997.<br /> <strong>Abstract:</strong> This paper explores how certain ideas in object oriented languages have their correspondents in functional languages. In particular we look at the analogue of the iterators of the C++ standard template library. We also give an example of the use of constructor classes which feature in Haskell 1.3 and Gofer.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/java/library/j-cb07186/index.html">Explore functional programming with Haskell</a></dt>
+<dd>Introduction to the benefits of functional programming in Haskell by Bruce Tate.</dd></dl>
+<h2><span class="mw-headline" id="Blog_articles">Blog articles</span></h2>
+<p>There are a large number of tutorials covering diverse Haskell topics
+published as blogs. Some of the best of these articles are collected
+here:
+</p>
+<dl><dt><a href="/Blog_articles" title="Blog articles">Blog articles</a></dt></dl>
+<h2><span class="mw-headline" id="Practical_Haskell">Practical Haskell</span></h2>
+<p>These tutorials examine using Haskell to writing complex real-world applications
+</p>
+<dl><dt><a rel="nofollow" class="external text" href="http://research.microsoft.com/en-us/um/people/simonpj/Papers/marktoberdorf/">Tackling the awkward squad: monadic input/output, concurrency, exceptions, and foreign-language calls in Haskell</a></dt>
+<dd>Simon Peyton Jones. Presented at the 2000 Marktoberdorf Summer School. In "Engineering theories of software construction", ed Tony Hoare, Manfred Broy, Ralf Steinbruggen, IOS Press, <a href="/Special:BookSources/1586031724" class="internal mw-magiclink-isbn">ISBN 1-58603-1724</a>, 2001, pp47-96. The standard reference for monadic IO in GHC/Haskell.  <br /><strong>Abstract:</strong>Functional programming may be beautiful, but to write real applications we must grapple with awkward real-world issues: input/output, robustness, concurrency, and interfacing to programs written in other languages.</dd></dl>
+<dl><dt><a href="/Hitchhikers_Guide_to_the_Haskell" title="Hitchhikers Guide to the Haskell" class="mw-redirect">Hitchhikers Guide to the Haskell</a></dt>
+<dd> Tutorial for C/Java/OCaml/... programers by Dmitry Astapov. From the intro: "This text intends to introduce the reader to the practical aspects of Haskell from the very beginning (plans for the first chapters include: I/O, darcs, Parsec, QuickCheck, profiling and debugging, to mention a few)".</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/IO_inside">Haskell I/O inside: Down the Rabbit's Hole</a></dt>
+<dd>By Bulat Ziganshin (2006), a comprehensive tutorial on using IO monad.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20060622030538/http://www.reid-consulting-uk.ltd.uk/docs/ffi.html">A Guide to Haskell's Foreign Function Interface</a></dt>
+<dd>A guide to using the foreign function interface extension, using the rich set of functions in the Foreign libraries, design issues, and FFI preprocessors.</dd></dl>
+<dl><dt><a href="/Haskell_IO_for_Imperative_Programmers" title="Haskell IO for Imperative Programmers">Haskell IO for Imperative Programmers</a></dt>
+<dd>A short introduction to IO from the perspective of an imperative programmer.</dd></dl>
+<dl><dt><a href="/A_brief_introduction_to_Haskell" title="A brief introduction to Haskell">A Brief Introduction to Haskell</a></dt>
+<dd>A translation of the article, <a rel="nofollow" class="external text" href="http://web.archive.org/web/20150216125944/www.cs.jhu.edu/~scott/pl/lectures/caml-intro.html">Introduction to OCaml</a>, to Haskell.</dd></dl>
+<dl><dt><a href="/Roll_your_own_IRC_bot" title="Roll your own IRC bot">Roll your own IRC bot</a></dt>
+<dd>This tutorial is designed as a practical guide to writing real world code in Haskell and hopes to intuitively motivate and introduce some of the advanced features of Haskell to the novice programmer, including monad transformers. Our goal is to write a concise, robust and elegant IRC bot in Haskell.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://projects.haskell.org/gtk2hs/docs/tutorial/glade/">Glade Tutorial (GUI Programming)</a></dt>
+<dd>For the absolute beginner in both Glade and Gtk2Hs. Covers the basics of Glade and how to access a .glade file and widgets in Gtk2Hs. Estimated learning time: 2 hours.</dd>
+<dt><a rel="nofollow" class="external text" href="http://www.muitovar.com/glade/es-index.html">Tutorial de Glade</a></dt>
+<dd>A Spanish translation of the Glade tutorial</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.muitovar.com/gtk2hs/index.html">Gtk2Hs Tutorial</a></dt>
+<dd> An extensive <a href="/Gtk2Hs" title="Gtk2Hs">Gtk2Hs</a> programming guide, based on the GTK+2.0 tutorial by Tony Gale and Ian Main. This tutorial on GUI programming with Gtk2Hs has 22 chapters in 7 sections, plus an appendix on starting drawing with Cairo. A Spanish translation and source code of the examples are also available.</dd></dl>
+<dl><dt>Applications of Functional Programming</dt>
+<dd>Colin Runciman and David Wakeling (ed.), UCL Press, 1995, <a href="/Special:BookSources/1857283775" class="internal mw-magiclink-isbn">ISBN 1-85728-377-5</a> HB. From the cover:<blockquote>This book is unique in showcasing real, non-trivial applications of functional programming using the Haskell language. It presents state-of-the-art work from the FLARE project and will be an invaluable resource for advanced study, research and implementation.</blockquote></dd></dl>
+<dl><dt><a href="/DealingWithBinaryData" title="DealingWithBinaryData" class="mw-redirect">DealingWithBinaryData</a> a guide to ByteStrings, the various <tt>Get</tt> monads and the <tt>Put</tt> monad.</dt></dl>
+<dl><dt><a href="/Internationalization_of_Haskell_programs" title="Internationalization of Haskell programs">Internationalization of Haskell programs</a></dt>
+<dd>Short tutorial on how to use GNU gettext utility to make applications, written on Haskell, multilingual.</dd></dl>
+<h3><span class="mw-headline" id="Testing">Testing</span></h3>
+<dl><dt><a rel="nofollow" class="external text" href="http://blog.moertel.com/posts/2006-10-31-introductory-haskell-solving-the-sorting-it-out-kata.html">Small overview of QuickCheck</a></dt></dl>
+<dl><dt><a href="/Introduction_to_QuickCheck" title="Introduction to QuickCheck" class="mw-redirect">Introduction to QuickCheck</a></dt></dl>
+<h2><span class="mw-headline" id="Reference_material">Reference material</span></h2>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/Category:Tutorials">A growing list of Haskell tutorials on a diverse range of topics</a></dt>
+<dd>Available on this wiki</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/Category:How_to">"How to"-style tutorials and information</a></dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://zvon.org/other/haskell/Outputglobal/index.html">Haskell Reference</a> </dt>
+<dd>By Miloslav Nic.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="https://web.archive.org/web/20201109033750/http://members.chello.nl/hjgtuyl/tourdemonad.html">A tour of the Haskell Monad functions</a> (Web Archive)</dt>
+<dd>By Henk-Jan van Tuyl.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cse.unsw.edu.au/~en1000/haskell/inbuilt.html">Useful Haskell functions</a></dt>
+<dd>An explanation for beginners of many Haskell functions that are predefined in the Haskell Prelude.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/ghc/docs/latest/html/libraries/">Documentation for the standard libraries</a></dt>
+<dd>Complete documentation of the standard Haskell libraries.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/Category:Idioms">Haskell idioms</a></dt>
+<dd>A collection of articles describing some common Haskell idioms. Often quite advanced.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/Blow_your_mind">Useful idioms</a></dt>
+<dd>A collection of short, useful Haskell idioms.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/Programming_guidelines">Programming guidelines</a></dt>
+<dd>Some Haskell programming and style conventions.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cse.chalmers.se/~rjmh/Combinators/LightningTour/index.htm">Lightning Tour of Haskell</a></dt>
+<dd>By John Hughes, as part of a Chalmers programming course</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://vmg.pp.ua/books/КопьютерыИсети/_ИХТИК31G/single/Hall%20C.The%20little%20Haskeller.pdf">The Little Haskeller</a> </dt>
+<dd>By Cordelia Hall and John Hughes. 9. November 1993, 26 pages. An introduction using the Chalmers Haskell B interpreter (hbi). Beware that it relies very much on the user interface of hbi which is quite different for other Haskell systems, and the tutorials cover Haskell 1.2 , not Haskell 98.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.staff.science.uu.nl/~fokke101/courses/fp-eng.pdf">Functional Programming</a></dt>
+<dd>By Jeroen Fokker, 1995. (153 pages, 600 KB). Textbook for learning functional programming with Gofer (an older implementation of Haskell). Here without Chapters&#160;6 and&#160;7.</dd></dl>
+<h2><span class="mw-headline" id="Comparisons_to_other_languages">Comparisons to other languages</span></h2>
+<p>Articles contrasting feature of Haskell with other languages.
+</p>
+<dl><dt><a rel="nofollow" class="external text" href="https://www.reddit.com/r/programming/comments/nq1k/haskell_and_scheme_which_one_and_why/">Haskell versus Scheme</a></dt>
+<dd>Mark C. Chu-Carroll, Haskell and Scheme: Which One and Why?</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://wiki.python.org/moin/PythonVsHaskell">Comparing Haskell and Python</a></dt>
+<dd>A short overview of similarities and differences between Haskell and Python.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="https://www.reddit.com/r/programming/comments/nwm2/syntax_extension_for_monads_in_ocaml/">Monads in OCaml</a></dt>
+<dd>Syntax extension for monads in OCaml</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.shlomifish.org/lecture/Perl/Haskell/slides/">Haskell for Perl programmers</a></dt>
+<dd>Short intro for perlers</dd></dl>
+<dl><dt><a href="/A_brief_introduction_to_Haskell" title="A brief introduction to Haskell">Introduction to Haskell</a> versus <a rel="nofollow" class="external text" href="http://web.archive.org/web/20150216125944/www.cs.jhu.edu/~scott/pl/lectures/caml-intro.html">Introduction to OCaml</a>.</dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20181111222520/http://www.thaiopensource.com/relaxng/derivative.html">An algorithm for RELAX NG validation</a></dt>
+<dd>by James Clark (of RELAX NG fame). Describes an algorithm for validating an XML document against a RELAX NG schema, uses Haskell to describe the algorithm. The algorithm in Haskell and Java is then <a rel="nofollow" class="external text" href="http://web.archive.org/web/20160405023514/https://www.donhopkins.com/drupal/node/117">discussed here</a>.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20170929191210/blog.prb.io/first-steps-with-haskell-for-web-applications.html">Haskell + FastCGI versus Ruby on Rails</a></dt>
+<dd>A short blog entry documenting performance results with ruby on rails and Haskell with fastcgi</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.1058&amp;rep=rep1&amp;type=pdf">Haskell vs. Ada vs. C++ vs. Awk vs. ..., An Experiment in Software Prototyping Productivity</a> (PDF)</dt>
+<dd>Paul Hudak and Mark P. Jones, 16 pages.<blockquote>Description of the results of an experiment in which several conventional programming languages, together with the functional language Haskell, were used to prototype a Naval Surface Warfare Center requirement for Geometric Region Servers. The resulting programs and development metrics were reviewed by a committee chosen by the US Navy. The results indicate that the Haskell prototype took significantly less time to develop and was considerably more concise and easier to understand than the corresponding prototypes written in several different imperative languages, including Ada and C++. </blockquote> </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20160918184011/www.osl.iu.edu/publications/prints/2003/comparing_generic_programming03.pdf">A Comparative Study of Language Support for Generic Programming</a> (pdf)</dt>
+<dd>Ronald Garcia, Jaakko Jrvi, Andrew Lumsdaine, Jeremy G. Siek, and Jeremiah Willcock. In Proceedings of the 2003 ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications (OOPSLA'03), October 2003.<blockquote>An interesting comparison of generic programming support across languages, including: Haskell, SML, C++, Java, C#. Haskell supports all constructs described in the paper -- the only language to do so. </blockquote></dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://homepages.inf.ed.ac.uk/wadler/realworld/index.html">Functional Programming in the Real World</a></dt>
+<dd>A list of functional programs applied to real-world tasks. The main criterion for being real-world is that the program was written primarily to perform some task, not primarily to experiment with functional programming. Functional is used in the broad sense that includes both `pure' programs (no side effects) and `impure' (some use of side effects). Languages covered include CAML, Clean, Erlang, Haskell, Miranda, Scheme, SML, and others.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.defmacro.org/ramblings/lisp-in-haskell.html">Lisp in Haskell</a></dt>
+<dd>Writing A Lisp Interpreter In Haskell, a tutorial</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://bendyworks.com/geekville/articles/2012/12/from-ruby-to-haskell-part-1-testing">From Ruby to Haskell, Part 1: Testing</a></dt>
+<dd>A quick comparison between ruby's and haskell's BDD.</dd></dl>
+<h2><span class="mw-headline" id="Teaching_Haskell">Teaching Haskell</span></h2>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cs.kent.ac.uk/pubs/1997/208/index.html">Where do  I begin? A problem solving approach to teaching functional programming</a></dt>
+<dd>By <a rel="nofollow" class="external text" href="http://www.cs.kent.ac.uk/people/staff/sjt/index.html">Simon Thompson</a>. In Krzysztof Apt, Pieter Hartel, and Paul Klint, editors, First International Conference on Declarative Programming Languages in Education. Springer-Verlag, September 1997. <br /> <strong>Abstract:</strong> This paper introduces a problem solving method for teaching functional programming, based on Polya's `How To Solve It', an introductory investigation of mathematical method. We first present the language independent version, and then show in particular how it applies to the development of programs in Haskell. The method is illustrated by a sequence of examples and a larger case study. </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cs.kent.ac.uk/pubs/1995/214/index.html">Functional programming through the curriculum</a></dt>
+<dd>By <a rel="nofollow" class="external text" href="http://www.cs.kent.ac.uk/people/staff/sjt/index.html">Simon Thompson</a> and Steve Hill. In Pieter H. Hartel and Rinus Plasmeijer, editors, Functional Programming Languages in Education, LNCS 1022, pages 85-102. Springer-Verlag, December 1995. <br /> <strong>Abstract:</strong> This paper discusses our experience in using a functional language in topics across the computer science curriculum. After examining the arguments for taking a functional approach, we look in detail at four case studies from different areas: programming language semantics, machine architectures, graphics and formal languages. </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20180612235656/www.cse.unsw.edu.au/~chak/papers/CK02a.html">The Risks and Benefits of Teaching Purely Functional Programming in First Year</a></dt>
+<dd>By <a rel="nofollow" class="external text" href="http://web.archive.org/web/20180519035020/www.cse.unsw.edu.au/~chak/">Manuel M. T. Chakravarty</a> and <a rel="nofollow" class="external text" href="http://www.cse.unsw.edu.au/~keller/">Gabriele Keller</a>. Journal of Functional Programming 14(1), pp 113-123, 2004. An earlier version of this paper was presented at Functional and Declarative Programming in Education (FDPE02).  <br /> <strong>Abstract</strong> We argue that teaching purely functional programming as such in freshman courses is detrimental to both the curriculum as well as to promoting the paradigm. Instead, we need to focus on the more general aims of teaching elementary techniques of programming and essential concepts of computing. We support this viewpoint with experience gained during several semesters of teaching large first-year classes (up to 600 students) in Haskell. These classes consisted of computer science students as well as students from other disciplines. We have systematically gathered student feedback by conducting surveys after each semester. This article contributes an approach to the use of modern functional languages in first year courses and, based on this, advocates the use of functional languages in this setting.</dd></dl>
+<h3><span class="mw-headline" id="Introducing_I.2FO">Introducing I/O</span></h3>
+<dl><dt><a href="/Haskell_IO_for_Imperative_Programmers" title="Haskell IO for Imperative Programmers">Haskell I/O for Imperative Programmers</a></dt>
+<dd> A direct low-fuss jargon-light guide to using Haskell's I/O system, with examples.</dd></dl>
+<dl><dt><a href="/Introduction_to_IO" title="Introduction to IO">Introduction to IO</a></dt>
+<dd> By Cale Gibbard.  A quick introduction to how I/O is treated in Haskell.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="https://web.archive.org/web/20170502044052/http://tobold.org/book/doio">How to do IO in Haskell</a></dt>
+<dd>By Toby Goodwin. It describes Haskell I/O (with lots and lots of examples) with an emphasis on types, rather than monad theory.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="https://neilmitchell.blogspot.com/2010/01/haskell-io-without-monads.html">Explaining Haskell IO without Monads</a></dt>
+<dd> By Neil Mitchell.  A direct, example-based guide to to performing I/O in Haskell.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://blog.sigfpe.com/2007/11/io-monad-for-people-who-simply-dont.html">The IO Monad for People who Simply Don't Care</a></dt>
+<dd>By Dan Piponi.  Another basic introduction to I/O in Haskell.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="https://kevinmahoney.co.uk/articles/haskell-io/">Haskell IO Without the M-word</a></dt>
+<dd>By Kevin Mahoney. A brief, low-jargon guide to I/O in Haskell.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://cmsc-16100.cs.uchicago.edu/2019-autumn/Lectures/06/intro-to-haskell-io.php">Lecture 6: A Brief Introduction to Haskell I/O</a></dt>
+<dd>By Ravi Chugh and Stuart A. Kurtz. A simple example-based introduction to I/O in Haskell.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://h2.jaguarpaw.co.uk/posts/impure-lazy-language">An impure lazy programming language</a></dt>
+<dd>By Tom Ellis.  An alternate introduction to I/O in Haskell for anyone who has ever thought of trying to combine laziness with "regular I/O" (i.e. the direct use of side-effects for input and output).</dd></dl>
+<p>See also: 
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="https://monospacedmonologues.com/2014/02/check-your-io">Check your I/O</a> (Samir Talwar)</li>
+<li> <a rel="nofollow" class="external text" href="https://github.com/soupi/haskell-study-plan#what-is-io">What is IO</a> (Gil Mizrahi)</li>
+<li> <a rel="nofollow" class="external text" href="https://blog.jle.im/entry/the-compromiseless-reconciliation-of-i-o-and-purity.html">The Compromiseless Reconciliation of I/O and Purity</a> (Justin Le)</li>
+<li> <a rel="nofollow" class="external text" href="https://coot.me/posts/monadic-io.html">Why Monadic IO?</a> (Marcin Szamotulski)</li>
+<li> <a rel="nofollow" class="external text" href="https://wayne-adams.blogspot.com/2011/11/from-oo-to-fp-haskell-io-part-1.html">From OO to FP: Haskell I/O, Part 1</a> (Wayne Adams)</li>
+<li> <a rel="nofollow" class="external text" href="https://blog.adamretter.org.uk/haskell-io-and-xpath">Haskell I/O and XPath</a> (Adam Retter)</li>
+<li> <a rel="nofollow" class="external text" href="https://blog.ploeh.dk/2020/06/08/the-io-container">The IO Container</a> (Mark Seemann)</li>
+<li> <a href="/IO_at_work" title="IO at work">IO at work</a></li>
+<li> <a href="/IO_Semantics" title="IO Semantics">IO Semantics</a></li>
+<li> <a href="/IO,_partible-style" title="IO, partible-style">IO, partible-style</a></li></ul>
+<h2><span class="mw-headline" id="Using_monads">Using monads</span></h2>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/wikiupload/c/c6/ICMI45-paper-en.pdf">How to build a monadic interpreter in one day</a> (PDF)</dt>
+<dd>By Dan Popa.  A small tutorial on how to build a language in one day, using the Parser Monad in the front end and a monad with state and I/O string in the back end.  Read it if you are interested in learning: 
+<ol><li> language construction and </li>
+<li> interpreter construction</li></ol></dd></dl>
+<dl><dt><a href="/Monad_Transformers_Explained" title="Monad Transformers Explained">Monad Transformers Explained</a></dt></dl>
+<dl><dt><a href="/MonadCont_under_the_hood" title="MonadCont under the hood">MonadCont under the hood</a></dt>
+<dd>A detailed description of the <i>Cont</i> data type and its monadic operations, including the class <i>MonadCont</i>.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Monads_in_functional_programming">Article on monads on Wikipedia</a></dt></dl>
+<dl><dt><a href="/IO_inside" title="IO inside">IO inside</a> page</dt>
+<dd>Explains why I/O in Haskell is implemented with a monad.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://stefan-klinger.de/files/monadGuide.pdf">The Haskell Programmer's Guide to the IO Monad - Don't Panic.</a> </dt>
+<dd>By Stefan Klinger. This report scratches the surface of category theory, an abstract branch of algebra, just deep enough to find the monad structure. It seems well written.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20160418173441/https://karczmarczuk.users.greyc.fr/TEACH/Doc/monads.html">Systematic Design of Monads</a></dt>
+<dd>By John Hughes and Magnus Carlsson. Many useful monads can be designed in a systematic way, by successively adding facilities to a trivial monad. The capabilities that can be added in this way include state, exceptions, backtracking, and output. Here we give a brief description of the trivial monad, each kind of extension, and sketches of some interesting operations that each monad supports.</dd></dl>
+<dl><dt><a href="/Simple_monad_examples" title="Simple monad examples">Simple monad examples</a></dt></dl>
+<p>See also: 
+</p>
+<ul><li> the <a href="/Monad" title="Monad">Monad</a> HaskellWiki page</li>
+<li> <a href="/Research_papers/Monads_and_arrows" title="Research papers/Monads and arrows">Research papers/Monads and arrows</a>.</li>
+<li> <a href="/Blog_articles#Monads" title="Blog articles">Blog articles</a></li>
+<li> <a href="/Monad_tutorials_timeline" title="Monad tutorials timeline">Monad tutorials timeline</a></li></ul>
+<h3><span class="mw-headline" id="Tutorials">Tutorials</span></h3>
+<p><i>The comprehensive list is available at <a href="/Monad_tutorials_timeline" title="Monad tutorials timeline">Monad tutorials timeline</a>.</i>
+</p>
+<dl><dt><a rel="nofollow" class="external text" href="http://mvanier.livejournal.com/3917.html">Mike Vanier's monad tutorial</a></dt>
+<dd>Recommended by David Balaban.</dd></dl>
+<dl><dt><a href="/All_About_Monads" title="All About Monads">All About Monads</a>, <a rel="nofollow" class="external text" href="http://www.sampou.org/haskell/a-a-monads/html/index.html">モナドのすべて</a></dt>
+<dd>By Jeff Newbern. This tutorial aims to explain the concept of a monad and its application to functional programming in a way that is easy to understand and useful to beginning and intermediate Haskell programmers. Familiarity with the Haskell language is assumed, but no prior experience with monads is required. </dd></dl>
+<dl><dt><a href="/Monads_as_computation" title="Monads as computation">Monads as computation</a></dt>
+<dd>A tutorial which gives a broad overview to motivate the use of monads as an abstraction in functional programming and describe their basic features. It makes an attempt at showing why they arise naturally from some basic premises about the design of a library.</dd></dl>
+<dl><dt><a href="/Monads_as_containers" title="Monads as containers">Monads as containers</a></dt>
+<dd>A tutorial describing monads from a rather different perspective: as an abstraction of container-types, rather than an abstraction of types of computation.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20140821053740/https://www.grabmueller.de/martin/www/pub/Transformers.en.html">Monad Transformers Step by Step</a></dt>
+<dd>By Martin Grabm&#252;ller. A small tutorial on using monad transformers.  In contrast to others found on the web, it concentrates on using them, not on their implementation.</dd></dl>
+<dl><dt><a href="/What_a_Monad_is_not" title="What a Monad is not">What a Monad is not</a></dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://noordering.wordpress.com/2009/03/31/how-you-shouldnt-use-monad/">How you should(n’t) use Monad</a></dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www-users.mat.uni.torun.pl/~fly/materialy/fp/haskell-doc/Monads.html">What the hell are Monads?</a> </dt>
+<dd>By Noel Winstanley. A basic introduction to monads, monadic programming and IO. This introduction is presented by means of examples rather than theory, and assumes a little knowledge of Haskell. </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.engr.mun.ca/~theo/Misc/haskell_and_monads.htm">Monads for the Working Haskell Programmer -- a short tutorial</a></dt>
+<dd>By Theodore Norvell. </dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html">You Could Have Invented Monads! (And Maybe You Already Have.)</a></dt>
+<dd>A short tutorial on monads, introduced from a pragmatic approach, with less category theory references </dd></dl>
+<dl><dt><a href="/Meet_Bob_The_Monadic_Lover" title="Meet Bob The Monadic Lover">Meet Bob The Monadic Lover</a></dt>
+<dd>By Andrea Rossato. A humorous and short introduction to Monads, with code but without any reference to category theory: what monads look like and what they are useful for, from the perspective of a ... lover.  (There is also the slightly more serious <a href="/The_Monadic_Way" title="The Monadic Way">The Monadic Way</a> by the same author.)</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.haskell.org/pipermail/haskell-cafe/2006-November/019190.html">Monstrous Monads</a></dt>
+<dd>Andrew Pimlott's humourous introduction to monads, using the metaphor of "monsters".</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://strabismicgobbledygook.wordpress.com/2010/03/06/a-state-monad-tutorial/">A State Monad Tutorial</a></dt>
+<dd>A detailed tutorial with simple but practical examples.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.reddit.com/r/programming/comments/ox6s/ask_reddit_what_the_hell_are_monads/coxiv">Ask Reddit: What the hell are monads? answer by tmoertel</a> and <a rel="nofollow" class="external text" href="https://www.reddit.com/r/programming/comments/ox6s/ask_reddit_what_the_hell_are_monads/coxoh/">dons</a>.</dt></dl>
+<dl><dt><a href="/The_Monadic_Way" title="The Monadic Way">The Monadic Way</a></dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.alpheccar.org/content/60.html">Three kind of monads</a>&#160;</dt>
+<dd> sequencing, side effects or containers</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.muitovar.com/monad/moncow.html">The Greenhorn's Guide to becoming a Monad Cowboy</a></dt>
+<dd>Covers basics, with simple examples, in a <i>for dummies</i> style. Includes monad transformers and monadic functions. Estimated learning time 2-3 days.</dd></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://ertes.de/articles/monads.html">Understanding Haskell Monads</a></dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.reddit.com/r/programming/comments/64th1/monads_in_python_in_production_code_you_can_and/c02u9mb">An explanation by 808140</a></dt></dl>
+<h2><span class="mw-headline" id="Workshops_on_advanced_functional_programming">Workshops on advanced functional programming</span></h2>
+<dl><dt><a rel="nofollow" class="external text" href="http://compilers.iecc.com/comparch/article/95-04-024">Advanced Functional Programming: 1st International Spring School on Advanced Functional Programming Techniques</a>, Bastad, Sweden, May 24 - 30, 1995. Tutorial Text (Lecture Notes in Computer Science)  </dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20181001214823/http://www.di.uminho.pt/afp98/">Advanced Functional Programming: 3rd International School</a>, AFP'98, Braga, Portugal, September 12-19, 1998, Revised Lectures (Lecture Notes in Computer Science)    </dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://web.archive.org/web/20170530134050/www.staff.science.uu.nl/~jeuri101/afp/afp4/">Advanced Functional Programming: 4th International School</a>, AFP 2002, Oxford, UK, August 19-24, 2002, Revised Lectures (Lecture Notes in Computer Science)   </dt></dl>
+<dl><dt><a rel="nofollow" class="external text" href="http://www.cs.ut.ee/afp04/">Advanced Functional Programming: 5th International School</a>, AFP 2004, Tartu, Estonia, August 14-21, 2004, Revised Lectures (Lecture Notes in Computer Science)   </dt></dl>
+<p>More advanced materials available from the <a href="/Conferences" title="Conferences">conference proceedings</a>, and the <a href="/Research_papers" title="Research papers">Research papers</a> collection.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20220406112039
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.008 seconds
+Real time usage: 0.008 seconds
+Preprocessor visited node count: 54/1000000
+Preprocessor generated node count: 60/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key wikidb_haskell:pcache:idhash:3477-0!*!0!!en!*!* and timestamp 20220406112039 and revision id 65000
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.haskell.org/index.php?title=Tutorials&amp;oldid=65000">https://wiki.haskell.org/index.php?title=Tutorials&amp;oldid=65000</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Category:Tutorials" title="Category:Tutorials">Tutorials</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Tutorials" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="hawikiTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Tutorials"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Tutorials"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="hawikiTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Tutorials" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Tutorials&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Tutorials&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search HaskellWiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Haskell"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/Haskell" title="Visit the main page [z]" accesskey="z">Haskell</a></li><li id="n-portal"><a href="/HaskellWiki:Community" title="About the project, what you can do, where to find things">Wiki community</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Tutorials" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Tutorials" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Tutorials&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Tutorials&amp;oldid=65000" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Tutorials&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/index.php?title=Special:CiteThisPage&amp;page=Tutorials&amp;id=65000" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 March 2022, at 23:38.</li>
+											<li id="footer-info-copyright">Recent content is available under <a href="/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">simple permissive license</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+									<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":14});});</script>
+	</body>
+</html>

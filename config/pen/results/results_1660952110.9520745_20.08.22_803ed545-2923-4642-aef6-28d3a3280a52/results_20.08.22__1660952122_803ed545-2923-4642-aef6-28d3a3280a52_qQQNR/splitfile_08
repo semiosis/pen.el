@@ -1,0 +1,21 @@
+#
+# This file is the prompt description file for the shell.
+# It is used to generate the prompts for the shell.
+#
+# The format of the file is lines of the form:
+#
+#   prompt-name: prompt-text
+#
+# Where prompt-name is a unique identifier for the prompt and
+# prompt-text is a string that will be displayed as the prompt.
+#
+# The prompt-text string may contain the following escape sequences:
+#
+#   \w      the current working directory
+#   \W      the last element of the current working directory
+#   \!      the history number of this command
+#   \#      the command number of this command
+#   \t      the name of the current shell
+#   \u      the name of the user
+#   \h      the name of the host
+#   \H      the name of the host in a

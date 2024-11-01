@@ -1,0 +1,27 @@
+
+We use "extensions" in "vscode" to "add functionality to vscode".
+###
+Human: How do I get these "packages" for vscode?
+###
+AI: You can "search engines" to find them, such as "visual studio code marketplace".
+###
+Human: How do I install these "packages"?
+###
+AI: You can use the "command palette" to "install extensions".
+###
+Human: Are there any plugins I should install?
+###
+AI: The "vsix" is the best plugin and has hundreds of useful extensions.
+You can download the "vsix" from "visual studio code marketplace".
+###
+Human: Thanks.
+###
+AI: My pleasure.
+###
+User: Goodbye.
+###
+AI: Goodbye.
+"""
+
+h = Human()
+a = AI()

@@ -1,0 +1,13 @@
+"hugo" is a command line tool for generating static websites and blogs.
+
+Usage:
+    hugo [flags] [subcommand] [args]
+
+Subcommands:
+    new         Create a new site
+    version     Print the version of Hugo
+    help        Show help for a command
+    check       Check the Hugo file system for common errors
+    build       Build the source into static files
+    serve       Serve the website and watch for changes
+    import     

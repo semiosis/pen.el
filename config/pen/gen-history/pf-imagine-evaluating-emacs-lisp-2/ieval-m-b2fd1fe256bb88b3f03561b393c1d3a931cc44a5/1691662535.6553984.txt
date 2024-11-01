@@ -1,0 +1,9 @@
+;; Run function color-of
+(message (eval '(color-of "watermelon")))
+--> "red"
+
+
+
+;; Run function color-of
+(message (eval '(color-of "strawberry")))
+--> 

@@ -1,0 +1,493 @@
+data whitening
+    Rescale and decorrelate your data before
+    using it in your neural net.
+
+    problems:
+        large values
+        different scales
+        skewed
+        correlated
+
+    PCA is a method of doing this.
+
+    rescale
+    reshift
+
+    This is needed when the data comes in on
+    completely different scales.
+
+    One axis could be 1-20.
+    One axis could be 200-20000.
+    This is going to be problematic.
+    One will give you much larger activations.
+
+    Data whitening is happening less these days.
+
+    You can add another layer and let it learn
+    the parameters. We don't need to learn the
+    correlation layers by ourselves.
+
+    Because PCA uses 2 matrices, one for
+    weights and one for biases.
+
+PCA
+    A matrix multiply with a matrix add.
+
+    Use it to whiten your input before use in
+    a neural network.
+
+    Finds the correllation axes.
+
+hierarchical clustering
+hierarchical cluster analysis
+    An algorithm that groups similar objects
+    into groups called clusters.
+    
+    The endpoint is a set of clusters, where
+    each cluster is distinct from each other
+    cluster, and the objects within each
+    cluster are broadly similar to each other.
+
+regression to the mean
+regression toward the mean
+    The phenomenon that arises if a sample
+    point of a random variable is extreme, a
+    future point will be closer to the mean or
+    average on further measurements.
+
+    The reason why if you have a really good
+    round of golf today, your round tomorrow
+    will not be as good.
+
+Scientific Debt
+    http://varianceexplained.org/r/scientific-debt/
+
+    - They made irreversible decisions based
+      on flawed analyses.
+    - Lack of monitoring. 
+    - Lack of data infrastructure.
+    - Spreading inaccurate lore.
+
+    Is scientific debt always bad?  Not at
+    all!
+
+    How can we manage scientific debt well?
+    - Let data scientists “pay interest” on
+      it.
+    - Build data engineering processes.
+    - Revisit old analyses.
+    - Have data expertise spread throughout
+      the company.
+
+synthetic data generation
+    eww "https://towardsdatascience.com/synthetic-data-generation-a-must-have-skill-for-new-data-scientists-915896c0c1ae"
+
+accuracy paradox
+    The paradoxical finding that accuracy is
+    not a good metric for predictive models
+    when classifying in predictive analytics.
+    
+    This is because a simple model may have a
+    high level of accuracy but be too crude to
+    be useful.
+    
+    For example, if the incidence of category
+    A is dominant, being found in 99% of
+    cases, then predicting that every case is
+    category A will have an accuracy of 99%.
+    
+    Precision and recall are better measures
+    in such cases.
+    
+    The underlying issue is that there is a
+    class imbalance between the positive class
+    and the negative class.
+    
+    Prior probabilities for these classes need
+    to be accounted for in error analysis.
+    
+    Precision and recall help, but precision
+    too can be biased by very unbalanced class
+    priors in the test sets.
+
+    Example:
+        You create a classification model and
+        get 90% accuracy immediately. Great!
+        
+        Then you discover 90% of the data
+        belongs to one class.
+
+multivariate linear regression
+    Multiple correlated dependent variables
+    are predicted, rather than a single scalar
+    variable.
+
+regression analysis
+    Focuses on the conditional probability
+    distribution of the response given the
+    values of the predictors, rather than on
+    the joint probability distribution of all
+    of these variables, which is the domain of
+    multivariate analysis.
+
+    Examples:
+    - linear regression
+
+simple linear regression
+    Linear regression with one explanatory
+    variable.
+
+multiple linear regression
+    Linear regression with more than one
+    explanatory variables.
+
+scalar response
+dependent variable
+criterion variable
+    [#linear regression]
+
+predictor variable
+explanatory variable
+independent variable
+    [#linear regression]
+
+linear regression
+    [#statistics]
+    [form of regression analysis]
+    [statistical technique]
+
+    The score of a variable Y is predicted
+    from the score of variable X.
+    - X is predictor variable (1 or more)
+    - Y is criterion variable
+
+    A linear approach to modeling the
+    relationship between a scalar response and
+    one or more explanatory variables.
+
+    The relationships are modeled using linear
+    predictor functions whose unknown model
+    parameters are estimated from the data.
+
+    Such models are called linear models.
+
+    linear regression
+
+    Most commonly, the conditional mean of the
+    response given the values of the
+    explanatory variables (or predictors) is
+    assumed to be an affine function of those
+    values; less commonly, the conditional
+    median or some other quantile is used.
+
+    If the goal is prediction, or forecasting,
+    or error reduction, linear regression can
+    be used to fit a predictive model to an
+    observed data set of values of the
+    response and explanatory variables.
+
+    After developing such a model, if
+    additional values of the explanatory
+    variables are collected without an
+    accompanying response value, the fitted
+    model can be used to make a prediction of
+    the response.
+
+    If the goal is to explain variation in the
+    response variable that can be attributed
+    to variation in the explanatory variables,
+    linear regression analysis can be applied
+    to quantify the strength of the
+    relationship between the response and the
+    explanatory variables, and in particular
+    to determine whether some explanatory
+    variables may have no linear relationship
+    with the response at all, or to identify
+    which subsets of explanatory variables may
+    contain redundant information about the
+    response.
+
+    Linear regression models are often fitted
+    using the least squares approach, but they
+    may also be fitted in other ways, such as
+    by minimizing the "lack of fit" in some
+    other norm (as with least absolute
+    deviations regression), or by minimizing a
+    penalized version of the least squares
+    cost function as in ridge regression
+    (L2-norm penalty) and lasso (L1-norm
+    penalty).
+
+    Conversely, the least squares approach can
+    be used to fit models that are not linear
+    models.
+
+    Thus, although the terms "least squares"
+    and "linear model" are closely linked,
+    they are not synonymous.
+
+poloynomial regression
+    [#statistics]
+    [form of regression analysis]
+
+    The relationship between the independent
+    variable x and the dependent variable y is
+    modelled as an nth degree polynomial in x.
+
+    Fits a nonlinear relationship between the
+    value of x and the corresponding
+    conditional mean of y, denoted E(y |x),
+    and has been used to describe nonlinear
+    phenomena such as the growth rate of
+    tissues, the distribution of carbon
+    isotopes in lake sediments, and the
+    progression of disease epidemics.
+
+    Although polynomial regression fits a
+    nonlinear model to the data, as a
+    statistical estimation problem it is
+    linear, in the sense that the regression
+    function E(y | x) is linear in the unknown
+    parameters that are estimated from the
+    data.
+
+    Considered to be a special case of
+    multiple linear regression.
+
+    The explanatory (independent) variables
+    resulting from the polynomial expansion of
+    the "baseline" variables are known as
+    higher-degree terms.
+
+    Such variables are also used in
+    classification settings.
+
+logistic regression
+    https://www.datasciencecentral.com/profiles/blogs/simplified-logistic-regression
+
+    The appropriate regression analysis to
+    conduct when the dependent variable is
+    dichotomous (binary).
+
+    The logistic model is used to model the
+    probability of a certain class or event
+    existing such as pass/fail, win/lose,
+    alive/dead or healthy/sick.
+
+    This can be extended to model several
+    classes of events such as determining
+    whether an image contains a cat, dog,
+    lion, etc.
+
+    A statistical model that in its basic form
+    uses a logistic function to model a binary
+    dependent variable, although many more
+    complex extensions exist.
+
+    Used to describe data and to explain the
+    relationship between one dependent binary
+    variable and one or more nominal, ordinal,
+    interval or ratio-level independent
+    variables.
+
+confusion matrix
+error matrix
+matching matrix (unsupervised learning)
+    [table layout]
+    [#classification]
+
+    Visualise the performance of an algorithm,
+    typically a supervised learning one.
+
+    each row:
+    - instances in a predicted class.
+    each column:
+    - instances in an actual class.
+    (or vice versa)
+
+    It makes it easy to see if the system is
+    confusing two classes (i.e. commonly
+    mislabeling one as another).
+
+    A special kind of contingency table, with
+    two dimensions ("actual" and "predicted"),
+    and identical sets of "classes" in both
+    dimensions (each combination of dimension
+    and class is a variable in the contingency
+    table).
+
+    A table that is often used to describe the
+    performance of a classification model (or
+    "classifier") on a set of test data for
+    which the true values are known.
+    
+    The confusion matrix itself is relatively
+    simple to understand, but the related
+    terminology can be confusing.
+
+maximum entropy
+    [principle]
+
+    https://en.wikipedia.org/wiki/Principle_of_maximum_entropy
+
+    Closely related to maximum liklihood.
+
+    readsubs +/"closely related to" "[[https://www.youtube.com/watch?v=dogYA3s7KQE][Big Data Revisited - YouTube]]"
+
+class imbalance
+    Examples:
+    - accuracy paradox
+
+    https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/
+
+    Possible solutions:
+    - collect more data
+    - change the performance metric
+      Accuracy is not the metric to use when
+      working with an imbalanced dataset.
+
+      Other options:
+      - Confusion Matrix
+        A breakdown of predictions into a
+        table showing correct predictions (the
+        diagonal) and the types of incorrect
+        predictions made (what classes
+        incorrect predictions were assigned).
+      - Precision
+        A measure of a classifiers exactness.
+      - Recall
+        A measure of a classifiers
+        completeness.
+      - F1 Score (or F-score)
+        A weighted average of precision and
+        recall.
+    - Resample the dataset
+    - Generate synthetic samples
+    - Try different algorithms
+
+sample complexity [of a ML algorithm]
+    The number of training-samples that it
+    needs in order to successfully learn a
+    target function.
+    
+    The number of training-samples that we
+    need to supply to the algorithm, so that
+    the function returned by the algorithm is
+    within an arbitrarily small error of the
+    best possible function, with probability
+    arbitrarily close to 1.
+    
+    Two variants:
+    - weak
+      Fixes a particular input-output
+      distribution.
+    - strong
+      Takes the worst-case sample complexity
+      over all input-output distributions.
+
+DS
+Distribution Semantics
+
+KBMC
+Knowledge Base Model Construction
+
+self-similarity
+    Closely related to scale invariance.
+
+    A function or curve is invariant under a
+    discrete subset of the dilatations.
+
+scale invariance
+    [maths]
+
+    Usually refers to an invariance of
+    individual functions or curves.
+
+    It is also possible for the probability
+    distributions of random processes to
+    display this kind of scale invariance or
+    self-similarity.
+
+transformation
+    A function f that maps a set X to itself.
+
+Correlation [coefficient/matrix]
+Pearson product-moment correlation coefficient
+r
+R
+Pearson's r
+    A measure of the strength and direction of
+    the linear relationship between two
+    variables.
+
+    A function of the covariance.
+        The covariance of the variables
+        divided by the product of their
+        standard deviations.
+
+    Pearson's r is the best known and most
+    commonly used type of correlation
+    coefficient
+
+    When the term "correlation coefficient" is
+    used without further qualification, it
+    usually refers to the Pearson
+    product-moment correlation coefficient.
+
+    In addition to telling you whether
+    variables are positively or inversely
+    related (what covariance does),
+    correlation also tells you the degree to
+    which the variables tend to move together.
+
+    r = 1
+        The variables have a perfect positive
+        correlation.
+
+        This means that if one variable moves
+        a given amount, the second moves
+        proportionally in the same direction.
+
+    0 > r < 1
+        A less than perfect positive
+        correlation, with the strength of the
+        correlation growing as the number
+        approaches one.
+
+    r = 0
+        No relationship exists between the
+        variables.
+
+        If one variable moves, you can make no
+        predictions about the movement of the
+        other variable; they are uncorrelated.
+
+    r = -1
+        The variables are perfectly negatively
+        correlated (or inversely correlated)
+        and move in opposition to each other.
+
+        If one variable increases, the other
+        variable decreases proportionally.
+
+    -1 < r 0
+        A less than perfect negative
+        correlation, with the strength of the
+        correlation growing as the number
+        approaches -1.
+
+Correlation vs Covariance
+    What sets them apart is the fact that
+    correlation values are standardized
+    whereas, covariance values are not.
+
+Covariance [coefficient/matrix]
+    A positive covariance means the variables
+    are positively related, while a negative
+    covariance means the variables are
+    inversely related.
+
+L2-norm penalty
+    NLG: A penalty that is based on the square
+    of the difference between the actual and
+    predicted value.

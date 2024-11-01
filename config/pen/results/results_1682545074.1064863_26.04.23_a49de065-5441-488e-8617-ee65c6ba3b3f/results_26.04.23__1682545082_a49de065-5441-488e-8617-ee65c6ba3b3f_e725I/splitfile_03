@@ -1,0 +1,11 @@
+"ScopedTypeVariables" is a GHC extension that allows you to declare a type variable in a forall statement.
+
+This is useful when you want to declare a type variable that is only in scope for a specific part of a type signature.
+
+For example, consider the following code:
+
+data T a = MkT (a, a)
+
+This is a data type with two fields, both of which are of the same type, a.
+
+However, we want to use the type variable a

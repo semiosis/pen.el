@@ -1,0 +1,7 @@
+cd /root/.pen/org-brain/past;  "gmi" "pull" "#" "<==" "spin"
+cd /root/notes;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/documents/notes;  "gmi" "pull" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.pen/org-brain/people;  "gmi" "pull" "#" "<==" "spin"
+cd /root/.emacs.d/host/pen.el/scripts;  "gmi" "pull" "#" "<==" "spin"

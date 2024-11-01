@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: timeout
+# key: timeout
+# --
+timeout := time.After(time.Hour * 1)
+if keepAll {
+timeout = time.After(time.Minute * 5)
+}
+if <-timeout {
+true
+}

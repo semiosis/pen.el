@@ -1,0 +1,12 @@
+
+The five Impressions of the Great Light are:
+The First Impression is the Body, which is of earth.
+The Second Impression is the Mind, which is of water.
+The Third Impression is the Vital, which is of air.
+The Fourth Impression is the Shadow, which is of fire.
+The Fifth Impression is the Light, which is of gold.
+EOD
+
+# text files with blank lines and lines longer than 80 characters
+cat draft.text <<EOD > draft2.text
+contained within the First Mystery in their final synthesis. The five Impressions of the Great Light are found represented in the esoteric Pentagram. The Gnostic Pentagram is the human figure with four limbs, and one unique apex, which is the head. The sign of the Pentagram is also called the sign of the Microcosm. It represents what the Cabbalist Rabbis of the book Zohar call the Micro

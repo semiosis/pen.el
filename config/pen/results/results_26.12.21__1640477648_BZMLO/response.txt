@@ -1,0 +1,5 @@
+declare -f __start_password-cracking
+declare -f __end_password-cracking
+declare -f __set_password-cracking_variables
+declare -f __set_password-cracking_variables
+declare -f __

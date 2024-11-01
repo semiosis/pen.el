@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: if ... else statement
+# group: vimsnippet
+# key: vs-ife
+# --
+if ${1}
+	${2:${VISUAL}}
+else
+	${0}
+endif

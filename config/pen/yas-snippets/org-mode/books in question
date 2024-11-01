@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: books in question
+# group: hugo
+# key: biq
+# --
++ Books in question:
+- __ by 

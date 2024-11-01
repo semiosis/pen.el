@@ -1,0 +1,8 @@
+The above code is a simple prolog program that will find all solutions to the
+N-queens problem. The program works by creating a list of all possible solutions
+and then filtering out the invalid ones.
+
+The first rule, blocks([],[],[]), is a base case that represents an empty list of
+blocks. This is the case that the program will terminate on.
+
+The second rule, blocks([N1,N2,N3|Ns1], [N4,

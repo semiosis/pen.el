@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: drawer
+# group: mine
+# key: D
+# --
+:${1:Drawer_Name}:
+`yas-selected-text`$0
+:END:

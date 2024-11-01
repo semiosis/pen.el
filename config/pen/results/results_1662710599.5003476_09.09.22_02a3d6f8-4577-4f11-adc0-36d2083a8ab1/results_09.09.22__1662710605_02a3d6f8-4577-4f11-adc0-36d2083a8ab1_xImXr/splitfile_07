@@ -1,0 +1,1 @@
+aws ec2 describe-security-groups --group-ids sg-12345678 | jq '.SecurityGroups[0].GroupName'

@@ -1,0 +1,28 @@
+backlink
+    A backlink for a given web resource is a
+    link from some other website to that web
+    resource.
+    
+    A web resource may be a website, web page,
+    or web directory.
+    
+    A backlink is a reference comparable to a
+    citation.
+
+fragment identifier
+    [#computer hypertext]
+
+    A short string of characters that refers
+    to a resource that is subordinate to
+    another, primary resource.
+
+    #Regular-expressions
+    [[https://www.gnu.org/software/ed/manual/ed_manual.html#Regular-expressions][GNU 'ed' Manual]]
+
+apex
+    The top or highest part of something,
+    especially one forming a point.
+
+apex domain
+    Example:
+    - example.com

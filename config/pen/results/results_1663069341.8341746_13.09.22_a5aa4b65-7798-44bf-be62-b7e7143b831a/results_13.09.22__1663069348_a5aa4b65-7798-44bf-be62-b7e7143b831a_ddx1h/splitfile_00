@@ -1,0 +1,11 @@
+"JSONParserCommon" is a module that provides a common interface to the JSON
+parser.
+
+The interface is as follows:
+
+run_parser_print :: ParseState -> IO ( Either ErrInfo ( JValue ) )
+run_parser_print ps = run_parser ( print_parse_result ps )
+
+The ParseState is a record that contains the current position in the input
+stream, the current line number, the current column number, and the current
+character.

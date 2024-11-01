@@ -1,0 +1,2 @@
+foreign distro
+    https://guix.gnu.org/manual/en/html_node/Application-Setup.html

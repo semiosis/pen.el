@@ -1,0 +1,1052 @@
+Kubernetes
+K8S
+    [container orchestration system]
+    
+    For automating the management, scaling,
+    and deployment of microservice
+    applications.
+    
+    This incredibly popular framework allows
+    you to manage hundreds or thousands of
+    containers at production scale.
+
+statefulset
+    The workload API object used to manage
+    stateful applications.
+
+service mesh
+    A dedicated infrastructure layer for
+    facilitating service-to-service
+    communications between microservices,
+    often using a sidecar proxy.
+
+k8s control plane
+    [an orchestration layer]
+
+    Exposes the API and interfaces to:
+    - define,
+    - deplay
+    - manage
+    the container lifecycle.
+
+    Continually and actively manages every
+    object's actual state to match the desired
+    state you supplied in an object spec.
+
+Red Hat OpenShift
+    [k8s distribution]
+
+    A k8s distribution focused on developer
+    experience and application security that's
+    platform agnostic.
+    
+    OpenShift helps you develop and deploy
+    applications to one or more hosts.
+    
+    These can be public facing web
+    applications, or backend applications,
+    including micro services or databases.
+
+Kubernetes distribution
+    https://containerjournal.com/topics/container-ecosystems/kubernetes-distribution-what-it-is-and-what-it-isnt/
+
+    It's not “vanilla” k8s, meaning a k8s
+    installation that you create by
+    downloading the k8s source code from
+    GitHub, compiling it and installing it
+    yourself.
+    
+    Almost no one would install k8s that way
+    because it would take way too much work.
+    
+    Instead, most people who use k8s install
+    it using a distribution.
+    
+    At a high level, a k8s distribution is any
+    pre-built, prepackaged software platform
+    that includes k8s.
+    
+    Not only do k8s distributions save you
+    from the hassle of having to download and
+    build a bunch of stuff from source
+    yourself, but most also feature user-
+    friendly installers to help simplify the
+    complex task of installing k8s’ various
+    components.
+
+    ‘Pure’ distributions
+        Platforms that offer pre-built k8s and
+        just pre-built k8s.
+        
+        For the most part, they leave it up to
+        the user to choose which other
+        technologies to use to build out a
+        complete containerized application
+        stack.
+        
+        In this sense, these are the “purest”
+        k8s distributions.
+        
+        Canonical k8s and Kontena Pharos are
+        examples in this category.
+
+    ‘Plus’ distributions
+        Platforms that integrate k8s with
+        other specific technologies, such as
+        certain container runtimes, host
+        operating systems or control-plane
+        add-ons.
+        
+        These are k8s distributions in the
+        sense that they include k8s, but they
+        do not give you the pure upstream
+        version of the technology or the
+        flexibility to set it up any way you
+        want.
+        
+        OpenShift and Rancher (both of which
+        are broad platforms that didn’t
+        include k8s at all in their early
+        days) are examples.
+
+    Kubernetes-as-a-service
+        - Azure AKS,
+        - AWS EKS
+        - Google GKE
+
+    Limited-purpose distributions
+        Those distributions (or platforms
+        built using k8s) that are intended for
+        a specific and limited purpose.
+        
+        Single-node, “lightweight” k8s
+        distributions such as MicroK8s and K3s
+        are examples.
+        
+        So is (arguably) KubeVirt, a platform
+        that uses k8s to orchestrate VMs
+        instead of containers.
+
+Fluentd
+    A cross platform open-source data
+    collection software.
+
+Fluentd vs Logstash
+    Logstash routes all data into a single
+    stream and then uses algorithmic if-then
+    statements to send them to the correct
+    destination.
+    
+    Fluentd uses tags to route events.
+    
+    Each Fluentd event has a tag that tells
+    Fluentd where it needs to be routed.
+
+EFK stack
+    - Fluentd
+    - Elasticsearch
+    - Kibana
+
+    https://github.com/fluent/fluentd
+    https://github.com/elastic/elasticsearch
+    https://github.com/elastic/kibana
+
+    These tools work well with one another and
+    together represent a reliable solution
+    used for k8s monitoring and log
+    aggregation.
+    
+    Fluentd collects logs from pods running on
+    cluster nodes, then routes them to a
+    centralized Elasticsearch.
+    
+    Then Elasticsearch ingests these logs from
+    Fluentd and stores them in a central
+    location.
+    
+    It is also used to efficiently search text
+    files.
+    
+    Kibana is the UI; the user can visualize
+    the collected logs and metrics and create
+    custom dashboards based on queries.
+    
+    The EFK stack is useful for
+    troubleshooting logs, dashboarding, and
+    detecting issues as they come up---all in
+    a user-friendly interface.
+    
+    Kibana lets users search and visualize
+    data using user-friendly graphs and
+    charts.
+
+Weave Scope
+    https://github.com/weaveworks/scope
+
+    A zero-configuration monitoring tool
+    developed by Weaveworks.
+    
+    It generates a map of processes,
+    containers, and hosts in a k8s cluster to
+    help understand Docker containers in real
+    time.
+    
+    It can also be used to manage containers
+    and run diagnostic commands on containers
+    without leaving the graphical UI.
+    
+    If you are looking for a practical
+    graphical tool to obtain a visual overview
+    of your k8s cluster---including the
+    application, the infrastructure, and the
+    connections among your cluster nodes---
+    Weave Scope may help you.
+    Extensible via plugins.
+
+    Lets developers view real-time dashboards
+    and contextual metrics, tags, and metadata
+    associated with containers.
+
+Prometheus
+    https://github.com/prometheus/prometheus
+
+    One of the most popular monitoring tools
+    used with k8s.
+    
+    It's community-driven and a member of the
+    Cloud Native Computing Foundation.
+    
+    This project, developed first by
+    SoundCloud and afterward donated to the
+    CNCF, is inspired by Google Borg Monitor.
+    
+    Prometheus stores all its data as a time
+    series.
+    
+    This data can be queried via the PromQL
+    query language and visualized with a
+    built-in expression browser.
+    
+    Since Prometheus is not a dashboard, it
+    relies on Grafana for visualizing data.
+    
+    Version 1.0 of this tool was released in
+    2016, and it is becoming one of the most
+    used k8s monitoring tools.
+    
+    Other tools from the k8s ecosystem,
+    including Istio, include a built-in
+    Prometheus adapter that exposes generated
+    metrics.
+    
+    Prometheus can be installed directly as a
+    single binary that you can run on your
+    host or as a Docker container.
+    the Prometheus Operator
+        Run Prometheus on top of Kubernetes
+
+        https://github.com/coreos/prometheus-operator
+
+Jaeger
+    https://github.com/jaegertracing/jaeger
+
+    A tracing system released by Uber
+    Technologies; it's used for
+    troubleshooting and monitoring
+    transactions in complex distributed
+    systems.
+    
+    With the rise of microservices and
+    distributed systems, problems can include:
+    - distributed context propagation,
+    - distributed transactions monitoring, and
+    - latency optimization.
+    
+    Jaeger addresses these problems as well as
+    others that we can find in distributed
+    systems.
+    
+    Jaeger has native support for OpenTracing
+    and addresses two main areas:
+    - networking, and
+    - observability.
+
+Kubernetes Dashboard
+    https://github.com/kubernetes/dashboard/tree/master/src/deploy/recommended
+
+    A general-purpose web user interface for
+    k8s clusters that includes management,
+    troubleshooting, and monitoring features.
+    
+    A web-based, UI add-on for k8s clusters.
+    
+    It has many features that allow users to
+    create and manage workloads as well as do
+    discovery, load balancing, configuration,
+    storage, and monitoring.
+    
+    It is helpful for small clusters and for
+    people starting to learn k8s.
+    
+    This tool offers different views for CPU
+    and memory usage metrics aggregated across
+    all nodes.
+    
+    It can also be used to monitor the health
+    status of workloads (pods, deployments,
+    replica sets, cron jobs, etc.).
+    
+    Installing k8s Dashboard is quite easy and
+    can be done using ready-to-use YAML files.
+
+Kube-state-metrics
+    https://github.com/kubernetes/kube-state-metrics
+
+    Kube-state-metrics listens to the k8s API
+    server and generates metrics about the
+    state of numerous k8s objects, including
+    cron jobs, config maps, pods, and nodes.
+    
+    These metrics are unmodified, unlike
+    kubectl metrics that use the same k8s API
+    but apply some heuristics to display
+    comprehensible and readable messages.
+    
+    Kube-state-metrics uses the Golang
+    Prometheus client to export metrics in the
+    Prometheus metrics exposition format and
+    expose metrics on an HTTP endpoint.
+    
+    Prometheus can consume the web endpoint.
+    
+    This tool is not oriented toward
+    performance and health but rather toward
+    cluster-wide, state-based metrics such as
+    the number of desired pod replicas for
+    deployment or the total CPU resources
+    available on a node.
+
+Container Advisor
+cAdvisor
+    https://github.com/google/cadvisor
+
+    cAdvisor is a container resource usage and
+    performance analysis agent; it's
+    integrated into the Kubelet binary.
+    
+    cAdvistor auto-discovers all containers in
+    a machine and collects statistics about
+    memory, network usage, filesystem, and
+    CPU.
+    
+    cAdvisor has native support for Docker
+    containers.
+    
+    It does not operate at the pod level, but
+    on each node.
+    
+    Be advised, however: cAdvisor is a simple-
+    to-use but limited tool, so if you are
+    looking to store metrics for long-term use
+    or perform complex monitoring actions,
+    cAdvisor will not fit your needs.
+
+Kubelet
+    In a k8s cluster, Kubelet acts as a bridge
+    between the master and the nodes.
+    
+    It is the primary node agent that runs on
+    each node and maintains a set of pods.
+    
+    Kubelet watches for PodSpecs via the k8s
+    API server and collects resource
+    utilization statistics and pod and events
+    status.
+    
+    Kubelet fetches individual container usage
+    statistics from Docker's Container Advisor
+    (cAdvisor).
+    
+    But Kubelet also accepts PodSpecs provided
+    through different mechanisms and ensures
+    that the containers described in those
+    PodSpecs are up and running.
+    
+    These aggregated pod resource usage
+    statistics are exposed via a REST API.
+
+PodSpec
+    The spec format for a Pod.
+
+Replica Set
+    Ensures how many replica of pod should be
+    running.
+    
+    It can be considered as a replacement of
+    replication controller.
+
+    https://www.assistanz.com/steps-to-create-replica-sets-in-the-kubernetes/
+
+    Create a new replica set:
+        kubectl apply -f rs.yml
+        kubectl get rs
+        kubectl describe rs rs-web
+
+kube-apiserver
+Kubernetes API server
+    Validates and configures data for the api
+    objects which include pods, services,
+    replicationcontrollers, and others.
+    
+    The API Server services REST operations
+    and provides the frontend to the cluster's
+    shared state through which all other
+    components interact.
+
+kubelet
+    the primary "node agent" that runs on each
+    node.
+    
+    It can register the node with the
+    apiserver using one of: the hostname; a
+    flag to override the hostname; or specific
+    logic for a cloud provider.
+    
+    The kubelet works in terms of a PodSpec.
+    
+    A PodSpec is a YAML or JSON object that
+    describes a pod.
+
+chart repository
+    An HTTP server that houses an index.yaml
+    file and optionally some packaged charts.
+    
+    When you're ready to share your charts,
+    the preferred way to do so is by uploading
+    them to a chart repository.
+
+    charts/
+      |
+      |- index.yaml
+      |
+      |- alpine-0.1.2.tgz
+      |
+      |- alpine-0.1.2.tgz.prov
+
+kubeval
+    A tool for validating a k8s YAML or JSON
+    configuration file.
+    
+    It does so using schemas generated from
+    the k8s OpenAPI specification, and
+    therefore can validate schemas for
+    multiple versions of k8s.
+
+Deployment
+    [object]
+
+    Represents an application running on your
+    cluster.
+    
+    When you create the Deployment, you might
+    set the Deployment =spec= to specify that
+    you want three replicas of the application
+    to be running.
+    
+    The k8s system reads the Deployment spec
+    and starts three instances of your desired
+    application--updating the status to match
+    your spec.
+    
+    If any of those instances should fail (a
+    status change), the k8s system responds to
+    the difference between spec and status by
+    making a correction--in this case,
+    starting a replacement instance.
+
+object
+    Persistent entities in the k8s system.
+    
+    k8s uses these entities to represent the
+    state of your cluster.
+    
+    They can describe:
+    - What containerized applications are
+      running (and on which nodes)
+    - The resources available to those
+      applications
+    - The policies around how those
+      applications behave, such as restart
+      policies, upgrades, and fault-tolerance
+
+    A "record of intent" -- once you create
+    the object, the k8s system will constantly
+    work to ensure that object exists.
+    
+    By creating an object, you're effectively
+    telling the k8s system what you want your
+    cluster's workload to look like; this is
+    your cluster's desired state.
+
+    + Use the k8s API or kubectl to:
+      - create,
+      - modify, or
+      - delete
+      objects
+
+helm2
+    DEPRECATED
+
+Kubernetes
+    Sits on top of the infrastructure and
+    enables you to describe your workload in a
+    common format.
+    
+    k8s makes it easy to move workloads from
+    one place to another, or combine
+    disjointed environments with a shared
+    control plane.
+
+CNCF conformant k8s cluster
+
+CNCF conformance
+
+k8s conformance
+    [#CNCF]
+    https://github.com/cncf/k8s-conformance
+
+k3s
+    [#rancher]
+
+    Lightweight Kubernetes.
+
+    The certified Kubernetes distribution
+    built for IoT & Edge computing
+
+    K3s, by Rancher, is the best way to have a
+    lightweight, fully CNCF conformant k8s
+    cluster running on diverse
+    infrastructures, including possible IoT
+    appliances such as Raspberry Pis.
+    
+    K3s starts in seconds thanks to its light
+    weight nature.
+    
+    As it adds some components to the cluster
+    automatically, k3s is very easy to use and
+    therefore very accessible for new users.
+    
+    One of these components is Traefik, which
+    is deployed in a k3s cluster as the
+    default Ingress Controller.
+    
+    Traefik is a cloud-native dynamic reverse
+    proxy.
+    
+    Its purpose is to route incoming requests
+    to all your services deployed on your
+    platform.
+    
+    Traefik is able to observe different
+    container technologies such as Docker or
+    k8s to auto-configure itself.
+    
+    Since a k8s Ingress Controller must have
+    dynamic reconfiguration, Traefik is a
+    perfect fit.
+    
+    In addition to being light weight and
+    simple to use, Traefik comes with many
+    more features built in: HTTP/2 Support,
+    gRP, websockets or a unique automatic Lets
+    Encrypt integration, just to name a few.
+    
+    K3s and Traefik aim to be simple and offer
+    the best user experience.
+    
+    K3s provides a fully working and easy to
+    use cluster, with important components on
+    board already.
+    
+    Traefik is integrated into K3s by default
+    and preconfigured to use HTTPS as well as
+    add-ons, such as metric collection or
+    support for external-dns.
+    
+    Since these are already done, all you need
+    to do is specify the k8s Ingress Objects
+    when deploying your application.
+    
+    How K3s archives is very simple: it
+    automatically deployes any manifest that
+    is a Helm Chart.
+    
+    By reusing the popular Helm Chart
+    technology, k3s can easily run the same
+    deployments you would run on a typical k8s
+    cluster.
+    
+    Also, this design allows you to easily
+    customize the integrated Traefik ingress
+    controller for certain scenarios; for
+    example, by activating the Let’s Encrypt
+    integration, which works well together
+    with the pre-configured HTTPS.
+    
+    Given the focus on simplicity and user-
+    experience, the combination of k3s and
+    Traefik is a match made in heaven for an
+    easy, production-ready k8s environment.
+
+kubectx
+    helpful for multi-cluster installations,
+    where you need to switch context between
+    one cluster and another.
+    
+    Rather than type a series of lengthy
+    kubectl commands, kubectx works it magic
+    in one short command.
+    
+    It also allows you to alias a lengthy
+    cluster name into an alias.
+    
+    For example (taken directly from the
+    kubectx website), kubectx eu=gke_ahmetb-samples-playground_europe-west1-b_dublin
+    allows you to switch to that cluster by
+    running:
+        kubectx eu
+    
+    Another slick trick is that kubectx
+    remembers your previous context (much like
+    the "Last" button on a television remote)
+    and allows you to switch back by running
+    kubectx -.
+
+kubens
+    This script allows you to easily switch
+    between Kubernetes namespaces. A simple
+    kubens foo will make foo your active
+    namespace. The simplicity of this tool is
+    what makes it so appealing. It does one
+    thing and does it well. Like kubectx, the
+    dash (-) option returns you to the
+    previous value.
+
+tiller
+    [#helm2]
+
+    DEPRECATED, but needed for helm2.
+
+    Tiller is the service that actually
+    communicates with the Kubernetes API to
+    manage our Helm packages.
+
+node port
+NodePort
+    Exposes the service on a static port on
+    the node IP address.
+    
+    NodePorts are in the 30000-32767 range by
+    default, which means a NodePort is
+    unlikely to match a service's intended
+    port (for example, 8080 may be exposed as
+    31020).
+
+Kubernetes Secrets
+    Let you store and manage sensitive
+    information, such as passwords, OAuth
+    tokens, and ssh keys.
+    
+    Storing confidential information in a
+    Secret is safer and more flexible than
+    putting it verbatim in a Pod
+
+Kubernetes manifest
+    Used to create, modify and delete k8s
+    resources such as pods, deployments,
+    services or ingresses.
+    
+    It is very common to define manifests in
+    form of =.yaml= files and send them to the
+    k8s API Server via commands such as
+    =kubectl apply -f my-file=.
+
+Helm
+    Serves multiple purposes:
+    - package manager for Kubernetes
+    - tool for managing applications that run
+      in the Kubernetes cluster manager.
+
+    Helm provides a set of operations that are
+    useful for managing applications, such as:
+    - inspect,
+    - install,
+    - upgrade and
+    - delete.
+
+Helm Charts
+    Helm uses a packaging format called
+    charts.
+    
+    A chart is a collection of files that
+    describe a related set of k8s resources.
+    
+    A single chart might be used to deploy
+    something simple, like a memcached pod, or
+    something complex, like a full web app
+    stack with HTTP servers, databases,
+    caches, and so on.
+
+    Applications Ready-To-Deploy.
+
+    Packages of pre-configured k8s resources.
+    
+    A Helm chart describes how to manage a
+    specific application on k8s.
+    
+    It consists of metadata that describes the
+    application, plus the infrastructure
+    needed to operate it in terms of the
+    standard k8s primitives.
+    
+    Each chart references one or more
+    (typically Docker-compatible) container
+    images that contain the application code
+    to be run.
+
+    Contain at least these two elements:
+    - A description of the package
+      (chart.yml).
+    - One or more templates, which contains
+      Kubernetes manifest files.
+
+    Despite the fact you can run application
+    containers using the k8s command line
+    (kubectl), the easiest way to run
+    workloads in k8s is using the ready-made
+    Helm charts.
+    
+    Helm charts simply indicate to k8s how to
+    perform the application deployment and how
+    to manage the container clusters.
+
+    Bitnami provides a set of stable and
+    tested charts that give you the
+    opportunity to deploy popular software
+    application with ease and confidence.
+
+ingress
+    https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+    Exposes HTTP and HTTPS routes from outside
+    the cluster to services within the
+    cluster.
+
+    Traffic routing is controlled by rules
+    defined on the Ingress resource.
+
+        internet
+            |
+       [ Ingress ]
+       --|-----|--
+       [ Services ]
+
+    An Ingress may be configured to give
+    Services externally-reachable URLs, load
+    balance traffic, terminate SSL / TLS, and
+    offer name based virtual hosting.
+
+    An Ingress controller is responsible for
+    fulfilling the Ingress, usually with a
+    load balancer, though it may also
+    configure your edge router or additional
+    frontends to help handle the traffic.
+
+    An Ingress does not expose arbitrary ports
+    or protocols.
+
+    Exposing services other than HTTP and
+    HTTPS to the internet typically uses a
+    service of type =Service.Type=NodePort= or
+    =Service.Type=LoadBalancer=.
+
+Kubernetes' networking model
+    Dictates that Pods must be reachable by
+    their IP address across Nodes.
+
+    That is, the IP address of a Pod is always
+    visible to other Pods in the network, and
+    each Pod views its own IP address as the
+    same as how other Pods see it.
+
+    https://www.cuelogic.com/blog/kubernetes-networking-model
+
+Node
+    A worker machine in Kubernetes, part of a
+    cluster.
+
+Cluster
+context
+    A set of Nodes that run containerized
+    applications managed by k8s.
+    
+    For this example, and in most common k8s
+    deployments, nodes in the cluster are not
+    part of the public internet.
+
+Edge router
+    A router that enforces the firewall policy
+    for your cluster.
+    
+    This could be a gateway managed by a cloud
+    provider or a physical piece of hardware.
+
+Cluster network
+    A set of links, logical or physical, that
+    facilitate communication within a cluster
+    according to the k8s networking model.
+
+Service
+    An abstraction that defines a logical set
+    of pods where the application is running.
+
+    https://www.cuelogic.com/blog/kubernetes-networking-model
+
+    A k8s Service that identifies a set of
+    Pods using label selectors.
+    
+    Unless mentioned otherwise, Services are
+    assumed to have virtual IPs only routable
+    within the cluster network.
+
+Kindie
+Kubernetes Individual
+    An opinionated k8s cluster setup for
+    individuals or small business.
+
+    Batteries included so that you can hit the
+    ground running and add production workload
+    in no time.
+
+Kubeadm
+    A tool built to provide kubeadm init and
+    kubeadm join as best-practice “fast paths”
+    for creating k8s clusters.
+    
+    kubeadm performs the actions necessary to
+    get a minimum viable cluster up and
+    running.
+    
+    By design, it cares only about
+    bootstrapping, not about provisioning
+    machines.
+    
+    Likewise, installing various nice-to-have
+    addons, like the k8s Dashboard, monitoring
+    solutions, and cloud-specific addons, is
+    not in scope.
+    
+    Instead, we expect higher-level and more
+    tailored tooling to be built on top of
+    kubeadm, and ideally, using kubeadm as the
+    basis of all deployments will make it
+    easier to create conformant clusters.
+
+sidecar
+    [#k8s]
+    [design pattern]
+
+    The sidecar concept in k8s is getting more
+    and more popular, and for a good reason.
+    
+    In the container world, it's a common
+    principle that a container should address
+    a single concern only, but do it well.
+    
+    The sidecar pattern helps achieving this
+    principle by decoupling the main business
+    logic from supplementary tasks that extend
+    the original functionality.
+    
+    In k8s, a pod is a group of one or more
+    containers with shared storage and
+    network.
+    
+    A sidecar is a utility container in a pod
+    that's loosely coupled to the main
+    application container.
+    
+    Perhaps the most well known use case of
+    sidecars is proxies in a service mesh
+    architecture, but there are other
+    examples, including log shippers,
+    monitoring agents or data loaders.
+    
+    Sidecars have been used for a long time in
+    k8s, but the pattern was not supported as
+    a built-in feature in k8s.
+    
+    It was only a nominal distinction, and
+    sidecar containers were basically regular
+    containers in a pod.
+    
+    But the more applications started
+    embracing the pattern, the more issues
+    have turned up.
+    
+    Soon it became clear that k8s should
+    formally identify sidecars, and handle the
+    lifecycle of such containers differently.
+
+Harbour
+    Mission:
+        To be the most secure,
+    performant, scalable, and available cloud
+    native repository for Kubernetes.
+
+    Provides rich functions in container image
+    management.
+    
+    It solves our challenges of transferring
+    images and Helm charts between container
+    clusters.
+    
+    Harbor does allow us to save a lot of
+    resources in image repository.
+    
+    The community is very active and the
+    features are constantly being improved.
+
+kaniko
+    https://github.com/GoogleContainerTools/kaniko
+    
+    Build Container Images In Kubernetes
+
+GoogleContainerTools
+    https://github.com/GoogleContainerTools/
+
+compute node
+    [#openstack]
+
+    Runs a hypervisor and the nova-compute
+    service.
+    
+    This is where virtual instances actually
+    run.
+
+controller node
+    Anything that is not a compute node;
+    public facing APIs, web interface,
+    scheduler, database server, message queue,
+    etc.
+
+Node Controller
+    [Kubernetes master component]
+    
+    Manages various aspects of nodes.
+    
+    The node controller has multiple roles in
+    a node's life.
+
+minikube
+    Minikube is a tool that makes it easy to
+    run k8s locally.
+    
+    Minikube runs a single-node k8s cluster
+    inside a VM on your laptop for users
+    looking to try out k8s or develop with it
+    day-to-day.
+
+    https://kubernetes.io/docs/setup/learning-environment/minikube/
+
+kazel
+    A BUILD file generator for go and bazel
+
+flannel
+    A network fabric for containers, designed
+    for k8s.
+
+pod
+    (like pod of whales or pea pod)
+
+    A group of one or more containers (such as
+    Docker containers), with shared
+    storage/network, and a specification for
+    how to run the containers. 
+
+    https://kubernetes.io/docs/concepts/workloads/pods/pod/
+
+    How to open a shell to a pod when it has more than one container
+    https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/
+
+Kind
+    The name of a particular object schema
+    (e.g. the "Cat" and "Dog" kinds would have
+    different attributes and properties)
+
+Resource
+    A representation of a system entity, sent
+    or retrieved as JSON via HTTP to the
+    server. Resources are exposed via
+    Collections.
+
+Collections
+    A list of resources of the same type,
+    which may be queryable.
+
+Elements
+    An individual resource, addressable via a
+    URL.
+
+API Group
+    Aset of resources that are exposed
+    together. Along with the version is
+    exposed in the "apiVersion" field as
+    "GROUP/VERSION", e.g. "policy.k8s.io/v1".
+
+helm
+    package manager for Kubernetes.
+
+    Helm is the best way to find, share, and
+    use software built for Kubernetes.
+
+Kubernetes
+k8s
+
+kops
+Kubernetes ops. 
+    [command]
+
+    The easiest way to get a production grade
+    k8s cluster up and running.
+    
+    We like to think of it as kubectl for
+    clusters.
+    
+    helps you create, destroy, upgrade and
+    maintain production-grade, highly
+    available, k8s clusters from the command
+    line.
+    
+    AWS (Amazon Web Services) is currently
+    officially supported, with GCE and VMware
+    vSphere in alpha support.
+
+MicroK8s
+    An easy-to-run and install mini-version of
+    k8s.
+    
+    And now Canonical has added autonomous
+    high availability (HA) clustering to it.
+    
+    Although small and simple, is a full-
+    fledged k8s implementation.
+    
+    It includes automatic updates and well-
+    defined security capabilities.
+    
+    Microk8s also includes Canonical open-
+    source add-on services such as a container
+    registry, storage pass-through, and native
+    GPGPU enablement for hardware acceleration
+    and ML workflows.

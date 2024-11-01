@@ -1,0 +1,14 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-el-org.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-el-org2.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-el-org3.el
+EOD

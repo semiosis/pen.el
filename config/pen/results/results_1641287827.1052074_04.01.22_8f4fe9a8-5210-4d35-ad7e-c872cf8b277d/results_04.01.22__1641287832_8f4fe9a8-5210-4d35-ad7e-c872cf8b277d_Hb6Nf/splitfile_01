@@ -1,0 +1,5 @@
+1. This function takes two arguments, url and localPath
+2. It then creates a new file called localPath
+3. It then creates a new request that gets the image from the url
+4. It then pipes the response to the file
+

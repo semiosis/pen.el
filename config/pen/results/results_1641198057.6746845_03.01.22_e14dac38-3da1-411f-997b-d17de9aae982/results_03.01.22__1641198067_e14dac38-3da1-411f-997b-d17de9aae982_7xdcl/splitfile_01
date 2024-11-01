@@ -1,0 +1,6 @@
+
+declare -a lines
+lines=()
+lines+=("$(p "$fun" | tr -s / -)")
+lines+=("$lang_lc")
+lines+=("$(p "$fun" | sed

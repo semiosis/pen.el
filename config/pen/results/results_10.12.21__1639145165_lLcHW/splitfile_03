@@ -1,0 +1,15 @@
+- Strongly Polymorphic Types
+- Type Families
+- The Unique Type
+-Class
+- Linear Types
+- Intersection and Union Types
+- Density and Disjointness of Types
+- Type Inference for Applicative Functors
+- Functional Dependencies
+- Natural Transformation and Apply Combinators
+- Monad Transformers
+- Symmetric and Unboxed Records
+- Stepwise Refinement of Data Types
+- Nullary Type Class Constructors
+

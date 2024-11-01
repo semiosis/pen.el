@@ -1,0 +1,10 @@
+org.clozure.swank"
+
+swank
+
+(clack:clack-dev)
+
+(ert-deftest test-clack-dev ()
+)
+
+(clackup app.l

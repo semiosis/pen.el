@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: infer
+# contributor: Toptal & contributors
+# key: infer
+# --
+
+### infer ###
+
+# infer- http://fbinfer.com/
+infer-out

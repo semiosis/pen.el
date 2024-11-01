@@ -1,0 +1,62 @@
+val
+    constant
+
+var
+    variable
+
+property
+    Syntax sugar for getter/setter methods
+    that look like fields.
+    
+    Instead of having to use the methods
+    item.getQuantity() and item.setQuantity(),
+    we can access the property item.quantity
+    and set it using item.quantity = 1,
+    exactly like a field.
+    
+    The compiler transforms property access
+    and assignment to use the appropriate
+    getters/setters (hence, syntax sugar).
+    
+    The most noteworthy consequence of this
+    is, in my opinion, allowing validation on
+    assigment.
+    
+    For example, item.quantity may be defined
+    as follows (in Kotlin):
+
+when
+    Switch.
+
+annotation
+    A means of attaching metadata to code. To
+    declare an annotation, put the annotation
+    modifier in front of a class.
+    
+    annotation class Fancy
+    @Fancy class Foo {
+        @Fancy fun baz(@Fancy foo: Int): Int {
+            return (@Fancy 1)
+        }
+    }
+
+meta annotation
+    Additional attributes of the annotation
+    can be specified by annotating the
+    annotation class with meta-annotations:
+
+    Examples:
+    - @Target
+    - @Retention
+    - @MustBeDocumented
+    
+    @Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION,
+            AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.EXPRESSION)
+    @Retention(AnnotationRetention.SOURCE)
+    @MustBeDocumented
+    annotation class Fancy
+    @Fancy class Foo {
+        @Fancy fun baz(@Fancy foo: Int): Int {
+            return (@Fancy 1)
+        }
+    }

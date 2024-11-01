@@ -1,0 +1,3 @@
+
+google(){ python -c "import urllib; print urllib.urlopen('http://google.com/search?q=' + '$*').read()"; }
+

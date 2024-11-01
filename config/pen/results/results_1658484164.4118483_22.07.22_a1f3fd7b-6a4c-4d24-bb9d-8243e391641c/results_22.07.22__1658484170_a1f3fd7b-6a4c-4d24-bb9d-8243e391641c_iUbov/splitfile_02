@@ -1,0 +1,8 @@
+/git
+
+putdir() { mkdir "$@" && cd "$@" && git status --porcelain }
+
+echo $MYGIT
+echo $MYGIT
+echo $MYGIT
+echo $MYG

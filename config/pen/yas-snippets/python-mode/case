@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: case
+# key: case
+# --
+def boolean():
+    print("You have a boolean" )
+
+def integer():
+    print("You have an integer")
+
+def floatType():
+    print("You have a float")
+
+def string():
+    print("You have a string")
+
+switchDict = {bool: boolean, int: integer, float: floatType, str: string}
+switchDict[type(varX)]()

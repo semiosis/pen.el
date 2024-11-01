@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "nasb" "Luke" "12" "#" "<==" "Luke"
+cd /root/.pen/documents/notes;  "nasb" "Matthew" "17" "#" "<==" "Matthew"
+cd /root/.pen/documents/notes;  "nasb" "Jas." "3:18" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nasb" "Jn." "14:21-23" "#" "<==" "zsh"
+cd /root/notes;  "nasb" "Matthew" "17:17" "#" "<==" "tmux: server"

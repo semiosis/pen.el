@@ -1,0 +1,18 @@
+
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(html_doc)
+
+a_tags = soup.find_all('a')
+
+for a in a_tags:
+    print(a.get('href'))
+
+# А если так надо? Можн

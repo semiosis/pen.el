@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Chocolatey
+# contributor: Toptal & contributors
+# key: chocolatey
+# --
+
+### Chocolatey ###
+
+# Exclude packaged modules
+*.nupkg

@@ -1,0 +1,47 @@
+title: "Write a blog post"
+tags: writing web
+doc: "Given a topic and the number of words, generate a blog post."
+prompt-version: 3
+prompt: |+
+    Write a <n words> words blog post about the <topic>.
+
+lm-command: "openai-complete.sh"
+force-engine: "OpenAI Davinci Instruct"
+force-temperature: 0.8
+max-generated-tokens: <m:(pen-n-words->n-tokens/m <n words>)>
+top-p: 1.0
+best-of: 1
+no-trim-start: off
+no-trim-end: off
+# For davinci-instruct-beta, it appears to begin with \n\n, so can't use that
+# as stop sequence.
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "topic"
+- n words
+examples:
+- "iPhone 12"
+- "200"
+n-test-runs: 5
+prettifier: pen-pretty-paragraph
+n-collate: 1
+n-completions: 10
+filter: no
+completion: off
+insertion: off
+info: on
+external-related:
+- "https://gptprompts.org/p/blog-post-generation"
+
+# This elisp is sourced when this prompt is loaded
+elisp: |-
+    (defun pen-n-words->n-tokens (n-words &optional chars-per-tok chars-per-word)
+      (setq chars-per-word (or chars-per-word
+                               (pen-get-average-word-length)))
+    
+      (to-integer (/ (* n-words chars-per-word) chars-per-tok)))
+    
+    (defmacro pen-n-words->n-tokens/m (n-words)
+      `(pen-n-words->n-tokens ,n-words (pen-num token-char-length)))

@@ -1,0 +1,100 @@
+Bundle
+    This is actually Go, Juju, etc.
+
+    If I see a codelingo.yaml file named
+    'bundle' anywhere, I should change this.
+
+Tenet
+    This is the name of both the
+    codelingo.yaml file and the individual
+    tenets within.
+
+    Technically, it's NOT the name of the
+    codelingo.yaml file.
+
+    Neither should the codelingo.yaml file be
+    called a 'principle'.
+
+    There needs to be a name for it though.
+
+    It's a set of tenets and its purpose is to
+    be placed into a repository.
+
+Flow
+    A workflow, automated by CodeLingo.
+
+    Underpinned by Tenets.
+
+    A request is made in the form of a protobuf message.
+    vim +/"req := &flow.ReviewRequest{" "$HOME/go/src/github.com/codelingo/lingo/app/commands/review.go"
+
+    The request arrives here. -- the yaml file is still loaded as a string only.
+    vim +/"func RequestReview" "$HOME/go/src/github.com/codelingo/lingo/app/commands/review/review.go"
+
+Review Flow
+    Codelingo's flagship flow (ie. workflow),
+
+    An action in github.
+
+    Check every new line of code in all pull
+    requests and comment on any code that
+    breaks a Tenet.
+
+    Automatically reviews a repository's pull
+    requests.
+    
+        ie. to conform to its project specific
+        patterns.
+
+Fact
+    Non-leaf node of CLQL.
+
+json dump
+    Currently it serves no real purpose for
+    the CLI tool, but it could be used by the
+    user to integrate into another flow.
+
+    For each result in the JSON dump, send an
+    email to someone.
+
+Cloudbees
+    These are the guys that made Jenkins X.
+
+    [[gr:cloudbees jenkins x]]
+
+    Opinionated Kubernetes and Jenkins X | CloudBees
+    https://www.cloudbees.com/blog/opinionated-kubernetes-and-jenkins-x
+
+Jenkins X
+    A Kubernetes-native continuous integration
+    and continuous delivery platform for
+    developing cloud native ...
+
+Kibana
+    Log Engine.
+
+    Look at pods that are going slow and
+    filter down to find the pods which are
+    going slowly.
+
+schema
+    Usually refers to the graphql schema for
+    CLQL.
+
+    Some of the CLQL basic facts are from the
+    graphql schema.
+
+fission
+    Service function engine.
+
+    We want to remove this and rely on
+    autoscaling of the Kubernetes cluster
+    instead.
+
+CLAIR
+    Responsible for co-ordinating reviews on
+    repositories.
+
+RR
+Review Request
+    I coined this.

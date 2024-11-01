@@ -1,0 +1,12 @@
+#if __GLASGOW_HASKELL__
+{-# LANGUAGE OverloadedStrings #-} #endif
+-- |
+module Main where
+import qualified Data.Text as T
+import Control.Applicative (pure, (<*>) )
+#if __GLASGOW_HASKELL__ >= 802
+import Prelude hiding (dropWhile) #else
+import Data.List (dropWhile) #endif -- \\/\mk\thanks\/ {- \/thanks\/ -}
+#if __GLASGOW_HASKELL__ >= 802
+import Data.String.UTF8 (encodeUtf8)#else
+import Data.String.UTF8 (encodeUtf8) hiding (encodeUtf8)#endif -- \\/\mk\thanks\/ {- \/thanks\/ -}-- -- | @main :: IO ()@main :: IO ()@main

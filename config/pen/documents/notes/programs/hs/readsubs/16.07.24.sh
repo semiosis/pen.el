@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "readsubs" "https://www.youtube.com/watch?v=92JXBog4DtM" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "readsubs" "https://youtube.com/watch?v=6EBKeGC1LOo&t=488" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "readsubs" "https://www.youtube.com/watch?v=ZSVWNhh1bbE&ab_channel=DesiringGod" "#" "<==" "pen-ci"
+cd /;  "readsubs" "https://www.youtube.com/watch?v=TSDuiULbFf4" "#" "<==" "pen-ci"
+cd /;  "readsubs" "https://www.youtube.com/watch?v=vLhykZY3v3U" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "readsubs" "https://www.youtube.com/watch?v=iEkEihkqI9I&ab_channel=DesiringGod" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "readsubs" "https://www.youtube.com/watch?v=2StKxMKWfbU&t=434s" "#" "<==" "pen-ci"

@@ -1,0 +1,5 @@
+cd /;  "Romans" "1:29-33" "#" "<==" "withopts"
+cd /root/notes;  "Romans" "10:17" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "1:4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "12:1" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Romans" "12:1" "#" "<==" "zsh"

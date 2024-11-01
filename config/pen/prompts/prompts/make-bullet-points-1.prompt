@@ -1,0 +1,38 @@
+title: make bullet points
+doc: Take some prose and generate some bullet points
+tags: prose fun life summarisation
+prompt-version: 2
+# It would be good if I could partially generate a prompt, and then continue with the desired one.
+# For example, retry completing until you get a one-liner list item.
+# Then complete that one.
+# I need conditional completions.
+prompt: |
+  Make bullet points about the following:
+  <delim>
+  <notes>
+  <delim>
+  - Key points:
+  <:pp>- 1. 
+# model: davinci-instruct-beta
+# temperature: 0.7
+engine: OpenAI Curie
+force-engine: OpenAI Curie
+delimiter: "\n\n"
+temperature: 0.5
+max-generated-tokens: prompt-length
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- notes
+preprocessors:
+- pen-str join ' '
+postprocessor: sed 's/^- //'
+examples:
+- |-
+  This anonymous gold coinage appears to have been initiated shortly before
+  Rajaraja Chola invaded Lanka in 990 AD, and struck through the period when
+  the Cholas dominated the island (1017-1070), and continued by closely
+  similar coins struck for Vijayabahu (1055-1110) after he re-established
+  Sinhala independence in 1070. Like other Lankan coins from around the 11th
+  Century, no date is indicated.

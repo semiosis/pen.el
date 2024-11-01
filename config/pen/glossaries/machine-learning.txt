@@ -1,0 +1,627 @@
+argmax
+    An operation that finds the argument that
+    gives the maximum value from a target
+    function.
+    
+    Argmax is most commonly used in ML for
+    finding the class with the largest
+    predicted probability.
+    
+    Argmax can be implemented manually,
+    although the argmax() NumPy function is
+    preferred in practice.
+
+              argmax_y P(y|x)
+
+              This means:
+                   Find the highest
+                   probability English
+                   sentence y, given french
+                   sentence x.
+
+              https://web.stanford.edu/class/cs224n/slides/cs224n-2019-lecture08-nmt.pdf
+
+fitness function
+FF
+    Defined as a particular type of objective
+    function used to assess how close a
+    solution, created by defined combinations
+    of a creature, is to achieving the set
+    aims.
+
+cosine similarity
+    A metric used to measure how similar the
+    documents are irrespective of their size.
+    
+    Mathematically, it measures the cosine of
+    the angle between two vectors projected in
+    a multi-dimensional space.
+    
+    The smaller the angle, higher the cosine
+    similarity.
+
+feature
+feature set
+    A feature is an individual measurable
+    property or characteristic of a phenomenon
+    being observed.
+    
+    Choosing informative, discriminating and
+    independent features is a crucial step for
+    effective algorithms in pattern
+    recognition, classification and
+    regression.
+
+perceptron
+    An algorithm for supervised learning of
+    binary classifiers.
+    
+    A binary classifier is a function which
+    can decide whether or not an input,
+    represented by a vector of numbers,
+    belongs to some specific class.
+    
+    It is a type of linear classifier, i.e. a
+    classification algorithm that makes its
+    predictions based on a linear predictor
+    function combining a set of weights with
+    the feature vector.
+
+perceptron learning algorithm
+    https://en.wikipedia.org/wiki/Perceptron#Learning_algorithm
+
+numeric
+    [data type]
+
+    Data that are expressed on a numeric
+    scale.
+
+    continuous
+    interval
+    float
+    numeric
+        [numeric data type]
+
+        Data that can take on any value in an
+        interval.
+
+    discrete
+    integer
+    count
+        [numeric data type]
+
+        Data that can take on only integer
+        values, such as counts.
+
+categorical
+enum
+enumerated
+factors
+nominal
+    [data type]
+
+    Data that can take on only a specific set
+    of values representing a set of possible
+    categories.
+
+    Binary
+    dichotomous
+    logical
+    indicator
+    boolean
+        [categorical data type]
+
+        A special case of categorical data
+        with just two categories of values.
+
+    ordinal
+    ordered factor
+        [categorical data type]
+
+        Categorical data that has an explicit
+        ordering.
+
+supervised learning
+    NLG: The process of learning from data
+    with the guidance of a teacher or
+    supervisor.
+
+unsupervised learning
+    NLG: learning that is not supervised by a
+    teacher or tutor.
+
+semi-supervised learning
+    NLG: ML where some of the training data is
+    labelled, but not all of it.
+
+self-supervision
+self-supervised learning
+Autonomous supervised learning
+    It is a representation learning approach
+    that eliminates the pre-requisite
+    requiring humans to label data.
+
+    Self-supervised learning systems extract
+    and use the naturally available relevant
+    context and embedded metadata as
+    supervisory signals.
+
+    vs. supervised learning
+        Self-supervised Learning is supervised
+        Learning because its goal is to learn
+        a function from pairs of inputs and
+        labeled outputs. Explicit use of
+        labeled input-outputs pairs in
+        self-supervised learning is not
+        needed. Instead, correlations,
+        embedded metadata, or domain knowledge
+        available within the input is
+        implicitly and autonomously extracted
+        from the data and used as supervisory
+        signals. Like supervised learning,
+        self-supervised learning has use cases
+        in regression and classification.
+
+    vs. unsupervised learning
+        Self-supervised learning is like
+        unsupervised Learning because the
+        system learns without using
+        explicitly-provided labels. It is
+        different from unsupervised learning
+        because we are not learning the
+        inherent structure of data.
+        Self-supervised learning, unlike
+        unsupervised learning, is not centered
+        around clustering and grouping,
+        dimensionality reduction,
+        recommendation engines, density
+        estimation, or anomaly detection.
+
+    vs. semi-supervised learning
+        Combination of labeled and unlabeled
+        data is used to train semi-supervised
+        learning algorithms, where smaller
+        amounts of labeled data in conjunction
+        with large amounts of unlabeled data
+        can speed up learning tasks.
+        Self-supervised learning is different
+        as systems learn entirely without
+        using explicitly-provided labels.
+
+pretext task
+auxiliary task
+pre-training task
+    [#self-supervised learning]
+    [framing]
+
+    At the core of self-supervised
+    methods.
+
+    Allows us to use the data itself to
+    generate labels and use supervised methods
+    to solve unsupervised problems.
+
+    The representations learned by performing
+    this task can be used as a starting point
+    for our downstream supervised tasks.
+
+learnable in the model
+    The function family is said to be
+    learnable in the model.
+
+    For each model, the basic goal is to
+    perform as well, or nearly as well, as the
+    best predictor in a family of functions.
+
+    For a given model and function family, if
+    this goal can be achieved under some
+    reasonable constraints, the family is said
+    to be learnable in the model.
+
+    Examples of families of functions used for
+    prediction:
+    - decision trees
+    - neural networks
+
+    Shane:
+        So I can say index structures are
+        learnable in the model.
+
+        Which model?
+
+ablation study
+    [procedure]
+    
+    Certain parts of the network are removed,
+    in order to gain a better understanding of
+    the network’s behaviour.
+
+AlphaZero
+    Can crack any perfect-information game.
+
+    Can can crack any game that provides all
+    the information that’s relevant to
+    decision-making; the new generation of
+    games to which Campbell alludes do not.
+    
+    Poker furnishes a good example of such
+    games of imperfect information: Players
+    can hold their cards close to their
+    chests.
+    
+    Other examples include many multiplayer
+    games, such as StarCraft II, Dota, and
+    Minecraft. But they may not pose a worthy
+    challenge for long.
+
+Early stopping
+    A form of regularization used to avoid
+    overfitting when training a learner with
+    an iterative method, such as gradient
+    descent.
+
+    https://en.wikipedia.org/wiki/Early_stopping
+
+Under-sampling
+    Resample the data set by decreasing the
+    majority class observations, keeping
+    minority class untouched.
+
+Over-sampling
+    Resample the data set by increasing the
+    minority class observations, keeping
+    majority class untouched.
+
+multiclass classification
+    The single-label problem of categorizing
+    instances into precisely one of more than
+    two classes.
+
+multi-output classification
+    [problem]
+
+    Variant of the classification problem
+    where multiple labels may be assigned to
+    each instance.
+
+    Strongly related to "multi-label
+    classification".
+
+multi-label classification
+    [problem]
+
+    Strongly related to "multi-output
+    classification".
+    
+    Variant of the classification problem
+    where multiple labels may be assigned to
+    each instance.
+    
+    Generalization of multiclass
+    classification.
+    
+    In the multi-label problem there is no
+    constraint on how many of the classes the
+    instance can be assigned to.
+    
+Bagging
+Bootstrap aggregating
+    [#machine learning]
+    [ensemble meta-algorithm]
+
+    Each tree has a subset of the features.
+
+    Involves creating multiple models of a
+    single algorithm such as a decision tree,
+    each trained on a different bootstrap
+    sample of the data.
+
+    Because bootstrapping involves sampling
+    with replacement, some of the data in the
+    sample is left out of each tree.
+
+    Consequently, the decision trees created
+    are made using different samples which
+    will solve the problem of overfitting to
+    the sample size.
+
+    Ensembling decision trees in this way
+    helps reduce the total error because
+    variance continues to decrease with each
+    new tree added without an increase in the
+    bias of the ensemble.
+
+    A bag of decision trees that uses subspace
+    sampling is referred to as a random
+    forest.
+
+    Only a selection of the features is
+    considered at each node split which
+    decorrelates the trees in the forest.
+
+    Another advantage of random forests is
+    that they have an in-built validation
+    mechanism.
+
+    Because only a percentage of the data is
+    used for each model, an out-of-bag error
+    of the model’s performance can be
+    calculated using 37% of the sample left
+    out of each model.
+
+    Designed to improve the stability and
+    accuracy of machine learning algorithms
+    used in statistical classification and
+    regression.
+
+    It also:
+    - reduces variance, and
+    - helps to avoid overfitting.
+
+    Although it is usually applied to decision
+    tree methods, it can be used with any type
+    of method.
+
+    A special case of the model averaging
+    approach.
+
+    vim +/"bagging" "$HOME/notes/ws/chenrong-lu/bagging.org"
+
+kernelised support vector machine
+    NLG: A type of ML algorithm which is a
+    kernelized version of the support vector
+    machine.
+
+random forest
+random decision forest
+    [ensemble learning method]
+
+    vim +/"Weighted Neighborhood Scheme" "$HOME/notes/glossary.txt"
+
+    Tasks:
+    - classification,
+    - regression,
+    - and other tasks
+      Solving complex timeseries problems.
+
+    Operates by:
+    - constructing a multitude of decision
+      trees at training time and outputting
+      the class that is the mode of the
+      classes (classification) or mean
+      prediction (regression) of the
+      individual trees.
+
+    Correct for decision trees' habit of
+    overfitting to their training set.
+
+    New extensions of random forest combine
+    'bagging' and random selection of
+    features, introduced in order to construct
+    a collection of decision trees with
+    controlled variance.
+
+    Decision Trees tend to be weak learners
+    which makes them ideal for bagging and
+    boosting.
+    
+    The result is known as a random forest.
+
+random forest classifier
+    NLG: A type of ML algorithm that is based
+    on a collection of decision trees.
+
+random forest regressor
+    NLG: A regression tree-based ML algorithm
+    that is used for classification and
+    regression problems.
+
+ML
+    Topics
+    - Linear & Logistic
+    - SVM & Regularization
+    - DecisionTrees
+    - Bagging
+    - RandomForest
+    - Categorical Encoding
+      chen
+      one-hot encodeng
+      https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159
+
+      you need it so you can predict a category
+    - sentiment prediction
+    - conversations toxicity detection
+      https://github.com/mullikine/DeepToxic
+
+Machine learning ensemble
+    Use multiple learning algorithms to obtain
+    better predictive performance than could
+    be obtained from any of the constituent
+    learning algorithms alone.
+
+recommender systems
+    [information filtering system]
+
+    Predicts the "rating" or "preference" a
+    user would give to an item.
+
+accuracy
+    A value from 0.0 to 1.0.
+
+    Higher accuracy is good.
+
+Accuracy vs Cross Entropy Loss
+    https://jamesmccaffrey.wordpress.com/2013/11/05/why-you-should-use-cross-entropy-error-instead-of-classification-error-or-mean-squared-error-for-neural-network-classifier-training/
+
+Neural Architecture Search
+NAS
+
+distributed machine learning
+    Involves:
+    - synchronous stochastic gradient descent
+    - pipeline parallelism for training
+
+    Examples
+    - GPipe
+      https://ai.googleblog.com/2019/03/introducing-gpipe-open-source-library.html
+
+sample
+    A sample is a single row of data.
+
+    It contains inputs that are fed into the
+    algorithm and an output that is used to
+    compare to the prediction and calculate an
+    error.
+
+    A training dataset is comprised of many
+    rows of data, e.g. many samples. A sample
+    may also be called an instance, an
+    observation, an input vector, or a feature
+    vector.
+
+    Now that we know what a sample is, let’s
+    define a batch.
+
+batch
+    The batch size is a hyperparameter that
+    defines the number of samples to work
+    through before updating the internal model
+    parameters.
+
+    Think of a batch as a for-loop iterating
+    over one or more samples and making
+    predictions. At the end of the batch, the
+    predictions are compared to the expected
+    output variables and an error is
+    calculated. From this error, the update
+    algorithm is used to improve the model,
+    e.g. move down along the error gradient.
+
+    A training dataset can be divided into one
+    or more batches.
+
+    See "batch vs epoch".
+
+gradient descent
+    When all training samples are used to
+    create one batch, the learning algorithm
+    is called batch GD.
+    
+    When the batch is the size of one sample,
+    the learning algorithm is called
+    stochastic GD.
+    
+    When the batch size is more than one
+    sample and less than the size of the
+    training dataset, the learning algorithm
+    is called mini-batch GD.
+
+    - Batch Gradient Descent
+      Batch Size = Size of Training Set
+    - Stochastic Gradient Descent
+      Batch Size = 1
+    - Mini-Batch Gradient Descent
+      1 < Batch Size < Size of Training Set
+
+    In the case of mini-batch GD, popular
+    batch sizes include 32, 64, and 128
+    samples.
+    
+    You may see these values used in models in
+    the literature and in tutorials.
+
+epoch
+    The number of epochs is a hyperparameter
+    that defines the number times that the
+    learning algorithm will work through the
+    entire training dataset.
+    
+    One epoch means that each sample in the
+    training dataset has had an opportunity to
+    update the internal model parameters.
+    
+    An epoch is comprised of one or more
+    batches.
+    
+    For example, as above, an epoch that has
+    one batch is called the batch GD learning
+    algorithm.
+    
+    You can think of a for-loop over the
+    number of epochs where each loop proceeds
+    over the training dataset.
+    
+    Within this for-loop is another nested
+    for-loop that iterates over each batch of
+    samples, where one batch has the specified
+    “batch size” number of samples.
+    
+    The number of epochs is traditionally
+    large, often hundreds or thousands,
+    allowing the learning algorithm to run
+    until the error from the model has been
+    sufficiently minimized.
+    
+    You may see examples of the number of
+    epochs in the literature and in tutorials
+    set to 10, 100, 500, 1000, and larger.
+    
+    It is common to create line plots that
+    show epochs along the x-axis as time and
+    the error or skill of the model on the
+    y-axis.
+    
+    These plots are sometimes called learning
+    curves.
+    
+    These plots can help to diagnose whether
+    the model has over learned, under learned,
+    or is suitably fit to the training
+    dataset.
+
+    See "batch vs epoch".
+
+batch vs epoch
+    The batch size is a number of samples
+    processed before the model is updated.
+    
+    The number of epochs is the number of
+    complete passes through the training
+    dataset.
+    
+    The size of a batch must be more than or
+    equal to one and less than or equal to the
+    number of samples in the training dataset.
+    
+    The number of epochs can be set to an
+    integer value between one and infinity.
+    
+    You can run the algorithm for as long as
+    you like and even stop it using other
+    criteria besides a fixed number of epochs,
+    such as a change (or lack of change) in
+    model error over time.
+    
+    They are both integer values and they are
+    both hyperparameters for the learning
+    algorithm, e.g. parameters for the
+    learning process, not internal model
+    parameters found by the learning process.
+    
+    You must specify the batch size and number
+    of epochs for a learning algorithm.
+    
+    There are no magic rules for how to
+    configure these parameters.
+    
+    You must try different values and see what
+    works best for your problem.
+
+contrastive learning
+    An approach to formulate the task of
+    finding similar and dissimilar things for
+    an ML model.
+    
+    Using this approach, one can train a ML
+    model to classify between similar and
+    dissimilar images.

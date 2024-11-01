@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: getopts
+# group: 
+# key: getopts
+# --
+use Getopt::Long;
+GetOptions(
+        "conf=s" => \$httpd_conf,
+        "comments" => \$with_comments,
+        "interpolate-all" => \$interpolate_all,
+        ) or die "Usage: $0 [--conf=/path/to/httpd.conf] [--comments] [--interpolate-all]\n";

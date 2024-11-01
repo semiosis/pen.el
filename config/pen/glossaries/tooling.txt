@@ -1,0 +1,34 @@
+tool control language
+tcl
+
+uncrustify
+    Code beautifier (C++).
+
+static analysis
+static code analysis
+    A method of computer program debugging
+    that is done by examining the code without
+    executing the program.
+    
+    The process provides an understanding of
+    the code structure, and can help to ensure
+    that the code adheres to industry
+    standards.
+
+git-filter-repo
+git filter-repo
+    A versatile tool for rewriting history,
+    which includes capabilities I have not
+    found anywhere else.
+    
+    It roughly falls into the same space of
+    tool as git filter-branch but without the
+    capitulation-inducing poor performance,
+    with far more capabilities, and with a
+    design that scales usability-wise beyond
+    trivial rewriting cases.
+    
+    git filter-repo is now recommended by the
+    git project instead of git filter-branch.
+
+    https://github.com/newren/git-filter-repo

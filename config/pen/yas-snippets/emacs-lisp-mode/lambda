@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: lambda
+# group: define
+# key: lm
+# --
+(lm ${0:body})

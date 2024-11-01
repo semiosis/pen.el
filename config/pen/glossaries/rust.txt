@@ -1,0 +1,29 @@
+racer
+    Rust Code Completion utility
+
+    http://siciarz.net/24-days-of-rust-racer/
+
+flamegraph
+    The proportion of a program’s runtime that
+    occurs in a routine is proportional to the
+    width of the bar for that routine.
+
+    https://ngoldbaum.github.io/posts/python-vs-rust-nn/
+
+clippy
+    https://doc.rust-lang.org/clippy/usage.html
+
+    cargo clippy
+
+    Runs lints.
+
+miri
+    Miri is an Undefined Behavior detection
+    tool for Rust. It can run binaries and
+    test suites of cargo projects and detect
+    unsafe code that fails to uphold its
+    safety requirements. For instance:
+
+    - Out-of-bounds memory accesses and
+      use-after-free
+    - Invalid use of uninitialized data

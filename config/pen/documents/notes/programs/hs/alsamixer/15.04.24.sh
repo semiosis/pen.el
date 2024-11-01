@@ -1,0 +1,1 @@
+cd /;  "alsamixer" "#" "<==" "sh-monitor"

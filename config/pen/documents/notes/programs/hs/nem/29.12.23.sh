@@ -1,0 +1,8 @@
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Mark 12:35" "#" "<==" "pen-ci"
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Mark 12:1" "#" "<==" "pen-ci"
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Mark 12:2" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "Luke" "21:32-36" "#" "<==" "bash"
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "I Kings 12:1" "#" "<==" "pen-ci"
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "I Kings 12:2" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "nem" "nbd" "fast" "ebible" "-c" "-m" "RLT" "Revelation of John 1:7" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "nem" "nbd" "fast" "ebible" "-c" "-m" "RLT" "Revelation of John 1:11" "#" "<==" "pen-ci"

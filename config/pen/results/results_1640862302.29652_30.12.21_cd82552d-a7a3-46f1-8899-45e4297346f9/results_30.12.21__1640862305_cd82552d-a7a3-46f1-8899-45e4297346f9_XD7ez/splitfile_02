@@ -1,0 +1,4 @@
+ The key binding you want to know is "C-g".
+
+The concept of "C-g" is that it is a key binding that tells emacs to quit.
+

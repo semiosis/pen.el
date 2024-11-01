@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tuple comparison
+# group: syntax
+# key: ()<
+# --
+(0, 1) < (1, 0)

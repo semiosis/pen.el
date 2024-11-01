@@ -1,0 +1,6 @@
+Report) HasEncodedTextLen() bool {
+	return m.Has(tag.EncodedTextLen)
+}
+
+//HasEncodedText returns true if EncodedText is present, Tag 355
+func (m Collateral

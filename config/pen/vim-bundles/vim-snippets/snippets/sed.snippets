@@ -1,0 +1,18 @@
+snippet rlnl "Delete all leading blank lines at top of file (only). sed-remove-leading-newlines.sh"
+	sed '/./,$!d'
+snippet rtnl "Delete all trailing blank lines at end of file (only). remove-trailing-newlines.sh"
+	sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba'
+snippet third_step_3_print
+	sed -n '1~3!p'
+snippet other_step_2_delete
+	sed '1~2!d'
+snippet line_after_match
+	sed -n '/ABC/{n;p}' infile
+snippet add_to_start_of_file
+	sed -i '1s/^/<added text>/' file
+snippet rclaf "remove_comment_lines_after_first_line"
+	remove_comment_lines_after_first_line() {
+	    sed '2,${/^\s*#/d}'
+	}
+	
+	remove_comment_lines_after_first_line $@

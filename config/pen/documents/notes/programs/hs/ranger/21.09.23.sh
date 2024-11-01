@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs;  "ranger" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "#" "<==" "zsh"
+cd /root/repos/bubbletea/examples;  "ranger" "#" "<==" "zsh"

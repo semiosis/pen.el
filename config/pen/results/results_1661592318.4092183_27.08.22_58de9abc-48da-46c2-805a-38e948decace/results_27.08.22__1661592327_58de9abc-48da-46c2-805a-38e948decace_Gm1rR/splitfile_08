@@ -1,0 +1,58 @@
+.
+-- It then writes the data structure to stdout as a CSV.
+
+import Data.List.Split
+import Data.Maybe
+import Data.Text (pack, unpack)
+import Data.Text.Lazy (packLazy, unpackLazy)
+import qualified Data.Map as Map
+import qualified Data.Set as Set
+import qualified Data.Vector as Vector
+import qualified Data.Vector.Mutable as MVector
+import qualified Data.Vector.Unboxed as UVector
+import qualified GHC.TypeLits as TypeLits
+import GHC.TypeLits (Word64, Word8)
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# vim: set ts=2 sw=2 et:

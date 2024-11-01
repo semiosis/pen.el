@@ -1,0 +1,626 @@
+* Prompts
+This is a free and open-source (FOSS) curation
+of prompts for OpenAI's GPT-3, EleutherAI's
+GPT-j, and other LMs.
+
+| License | Discord server invite       |
+|---------+-----------------------------|
+| =GPL-3= | https://discord.gg/JwKGbAdNHR |
+
+** Learning material
+- https://generative.ink/posts/methods-of-prompt-programming/
+- https://mullikine.github.io/posts/prompt-design-with-yasnippet/
+- https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
+- https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
+- https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
+
+** Automatic prompts discovery
+Pen has a discovery mechanism to expand its database of prompts.
+
+Placing urls to other prompts repositories in [[./prompt-repositories.txt]] will
+create a discovery network of prompts.
+
+** Import parameters from engines
+An engine may be specified. The parameters contained in that engine will be imported as keys.
+
+- http://github.com/semiosis/engines
+
+** Automatic tests
+For the https://github.com/semiosis/prompts repository, prompts are regularly
+reviewed and tested under any branch.
+
+Push your own branch to the prompts repository. You'll need membership to the
+=semiosis= organisation to do this.
+
+*** Test results go here
+https://github.com/semiosis/prompt-tests/
+
+** Prompt description file format
+=prompt description= is the full name for =.prompt= files.
+
+A =prompt description= file contains the prompt as well as any other parameters
+associated with that prompt, such as the engine that should be used to generate it.
+
+It is =yaml= with a schema which is being
+actively developed.
+
+Don't worry much about leaving keys out which
+you do not understand yet, as most of them
+have defaults.
+
+** Demos
+- [[https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/][Prompt chaining: Linking prompts together usefully in emacs // Bodacious Blog]]
+
+** An example =.prompt= file
+This is a minimal =.prompt= file that should work.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: "My new prompt"
+  # Make sure to increment the prompt-version every time you update
+  # so they will be tested.
+  prompt-version: 1
+  prompt: "Complete this sentence"
+  temperature: 0.8
+  max-generated-tokens: 60
+#+END_SRC
+
+** Prompt template format basics
+The =prompt= field within a =.prompt= file employs a templating system.
+
+- =<1>= means to substitute the first variable into this position of the prompt.
+- =<2>= means to substitute the second variable into this position of the prompt.
+- =<word>= is a named varialbe substitution. It means to substitute the variable named =word= into this position of the prompt.
+- =<delim>= is a special variable substitution. It means to substitute the delimiter, usually =###= for GPT-3 or 'triple doublequote' for Codex, into this position of the prompt.
+
+** Building prompt functions
++ The only required fields are:
+  - =title=
+    - This will end up being the name of the prompt function.
+  - =prompt=
+    - The prompt is the text to be continued by the language model.
+
++ Suggested fields to consider specifying:
+  - =temperature: 0.9=
+    - This turns the dial on how deterministic the generations are.
+  - =max-generated-tokens: 60=
+    - This will prevent the language model from generating beyond this number of tokens.
+  - =stop-sequences=
+    - This is a list of stop sequences. The first one one specified here is passed to the language model
+      as a parameter. As soon as the language model generates this string, it will stop generating text.
+    - The remaining stop sequences provided
+      here will be managed by emacs. This is
+      because with the OpenAI API, only one stop
+      sequence may be specified.
+
+See the glossary.
+
+http://github.com/semiosis/pen.el/blob/master/glossary.txt
+
+Each =.prompt= file generates a function in emacs lisp.
+
+This generated function I will refer to as a _prompt function_.
+
++ You may give parameters to your prompt functions:
+  - =vars= is a list of parameter names for the prompt function to be generated.
+  - =examples= is a list of example values for those variables.
+    - The example values are used in prompt tests and also given as defaults if =read-string-hist= is used to read the value from the user.
+  - =var-defaults= is a list of emacs lisp expressions which are evaluated to give the value of a variable for a prompt function
+    - If text is selected then the first value of =var-defaults= is by default set to =(pen-selected-text)=
+    - Otherwise, the default value of all =var-defaults= items is =(read-string-hist)=, which reads the value from the user
+    - =var-defaults= can be overridden by specifying in the =.prompt= file.
+
+More about =var-defaults=:
+
++ =title=, =varname= and =example= are available to the expressions in =var-defaults=:
+  - =title= is the name of the prompt.
+  - =titleslug= is the slugified prompt title
+  - =varname= is the name of the variable corresponding to the position, in this case the 2nd variable.
+  - =varslug= is the slugified varname
+  - =example= is the example corresponding to the position.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  var-defaults:
+  - "(pen-selected-text)"
+  - "(read-string-hist (concat title \" \" varname \": \") example)"
+#+END_SRC
+
+=vars= may also be structured as follows.
+This combines the separate keys =vars=,
+=examples=, =var-defaults= and
+=preprocessors= under =vars=, which may be better organised.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  vars:
+  - code:
+    - default: "(pen-buffer-string-or-selection)"
+    - example: "print(\"Hello world, I have no empathy\")"
+  - language:
+    - default: "(pen-detect-language-ask)"
+    - preprocessor: slugify
+    - example: "Python"
+  - "appending transformation":
+    - example: "Print again but with empathy"
+#+END_SRC
+
+=vars= may also be structured like this, which
+combines the separate keys =vars= and =var-defaults=.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  vars:
+  - "compiler/linter output": "(pen-list2str (pen-lsp-error-list))"
+  - "code segment": "(pen-buffer-string-or-selection t)"
+#+END_SRC
+
+For reference, here are the keys placed into
+their own fields.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  vars:
+  - "compiler/linter output"
+  - "code segment"
+  var-defaults:
+  - "(pen-list2str (pen-lsp-error-list))"
+  - "(pen-buffer-string-or-selection t)"
+#+END_SRC
+
+*** Using parameters in the prompt
+A prompt's variables (parameters) are usually
+copied into the prompt template in their
+respective positions.
+
+The following prompt will substitute =<1>=
+with the value of the first variable and =<2>=
+with the value of the second.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  prompt: |+
+      The following is an analogy.
+
+      <1> are like <2> in that
+#+END_SRC
+
+If you were to be in emacs and select some
+text, then run this prompt function, the
+selection would be used as the value of the
+first variable.
+
+Otherwise, the elisp expression as specified
+by the positional subvalue of =var-defaults=
+will be run to give the value. By default,
+this will be a function that reads a string
+from the user, but you may override that with any function or expression.
+
+There are some helper functions defined in [[http://github.com/semiosis/pen.el/blob/master/src/pen-core.el][pen-core.el]]
+such as =(pen-preceding-text)= which could be useful.
+
+=<:pp>= is a special template variable which
+can be used if you want to include part of the
+prompt itself as part of the output.
+
+Whatever comes after =<:pp>= will be returned
+from the prompt function as the first part of
+the output.
+
+This is useful if you're generating a list.
+The final part of your prompt might be
+=<:pp>-=.
+
+*** List of special placeholders
+- =<1>= and =<2>= etc. are just the first and second variable substituions.
+- =<:pp>= denotes a point in the prompt where what follows is included as the start of the returned completion.
+- =<:s>= denotes the place where completion happens. Therefore =<:pp>= must always proceed =<:s>=.
+- =<:memory>= denotes where previous examples of prompt+output are placed. That must always proceed =<:pp>=
+
+There are also preprocessors for variables:
+
+- =<q:1>=, for example would double quote the first variable
+
+** =YASnippet= template
+
+[[./snippets/prompt-description-mode/prompt]]
+
+This =YASnippet= snippet contains an explanation of the =.prompt= file format.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  # -*- mode: snippet -*-
+  # name: prompt
+  # group: pen
+  # key: pr
+  # expand-env: ((yas-indent-line 'fixed))
+  # --
+  # ---------------
+  # Functional keys
+  # ---------------
+
+  # A prompt which is in development will not be loaded by pen.el
+  in-development: yes
+
+  # A title for the prompt. This will become the function name.
+  title: "${1:title}"
+
+  # The task the prompt aims to accomplish. This may become the title if the title is left out.
+  # The task may also become a metaprompt.
+  task: "${1:task}"
+
+  # Increment this number every time you make a functional change.
+  # The test suite will only rerun if this version is incremented.
+  prompt-version: 1
+
+  # <:pp> defines a point whereafter text that follows
+  # will be included in the completion string.
+  # <1>, <2> etc. are placeholders for variable substitution.
+  # <1> is special because it may be the current selection.
+  # <2>, on the other hand, is read in from the user.
+  # This way, a function can be curried/beta-reduced to a function of 1 argument.
+  prompt: |+
+      The following is an analogy.
+
+      <1> are like <2> in that
+
+  # Additional transformation of prompt after the template
+  prompt-filter: "sed -z 's/\\s\\+$//'"
+
+  # Language and topic refer to the language and topic 
+  # within the model that this prompt was designed for.
+  # With this information, a prompt can be translated.
+  language: English
+  topic: Dictionary
+
+  # The translator takes stdin and templates into the command two arguments, from-language and to-language.
+  # The output is the prompt designed for a different language. For example,
+  # Turn an "anything->English dictionary" into an "anything->YourLanguage dictionary".
+  # 4 default parameters: stdin(prompt), <from-language>, <to-language>, and <from-topic>.
+  # If the prompt has a language and/or topic, they are substituted in, otherwise they are detected.
+  # The substituted variables are automatically quoted.
+  translator: "wrlp pf-translate-from-world-language-x-to-y/3 <from-language> <to-language> <from-topic>"
+
+  # Alternatively, the translator can be specified in emacs lisp.
+  # The arguments are provided through lexical scope.
+  translator: "(wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))"
+
+  # These are elisp String->String functions and run from pen.el
+  # It probably runs earlier than the preprocessors shell scripts
+  preprocessors:
+  - "pf-correct-grammar"
+
+  # The command passed to lm-complete
+  lm-command: "openai-complete.sh"
+
+  # The model to be specified to the lm-command.
+  model: "davinci"
+
+  # Specifying an engine means that you don't have to specify the parameters contained by that engine
+  # Typically, the engine specifies the model and the lm-command
+  # http://github.com/semiosis/engines
+  engine: "OpenAI Davinci"
+
+  # Sometimes the engine requires a mode to be specified
+  # because the API requires it.
+  mode: summarize
+
+  # 0.0 = /r/ihadastroke
+  # 1.0 = /r/iamveryrandom
+  # Use 0.3-0.8
+  temperature: 0.8
+
+  # This is the max total tokens sent+requested from the LM inluding prompt+generated text
+  max-tokens: 60
+
+  # This is the max tokens requested to be generated from the LM
+  max-generated-tokens: 60
+
+  # This number may go to the API if available.
+  # See top p sampling in the pen.el glossary.
+  # https://github.com/semiosis/pen.el/blob/master/glossary.txt
+  top-p: 1.0
+
+  # This number may go to the API and may
+  # improve the quality at the expense of making more
+  # requests.
+  best-of: 1
+
+  # Number of examples to generate by default from
+  # The input to the output of the prompt has an arity of 2 (i.e. conversion)
+  xlr-n-generate: 5
+
+  # Do not remove whitespace from the beginning of the response string
+  no-trim-start: off
+
+  # Do not remove whitespace from the end of the response string
+  no-trim-end: off
+
+  # This means that the results will not be uniqued. This is useful for getting statistics.
+  no-uniq-results: on
+
+  # Currently the OpenAI API can only accept one stop-sequence.
+  # So only the first one will be used by the API,
+  # but the completer script can make use the others.
+  stop-sequences:
+  - "\n"
+  - "\n\n"
+  - "##"
+
+  # stop-patterns are like stop-sequences but they are regexes
+  stop-patterns:
+  - "^Input:"
+
+  # split-patterns are used to split results into multiple results.
+  # This happens immediately after obtaining the generation and before postprocessing.
+  split-patterns:
+  - "\n"
+
+  # end-split-patterns are used to split results into multiple results, just like split-patterns.
+  # But these patterns are effective after postprocessing.
+  end-split-patterns:
+  - "\n"
+
+  # This shell command can be used to validate the output.
+  # Invalid results will be filtered out.
+  # The validator takes only stdin which is the output of the prompt if it is a shell command.
+  # If it is a pen function (prefixed with pen- or pf-) then
+  # that function takes the prompt output as it's only argument.
+  validator: grep -qP "^perl -.*'.*'$"
+
+  # Cache the function by default when running the prompt function
+  cache: on
+
+  # Names for the variables of the prompt function.
+  # The first variable may be captured by selection, rather than manually entered.
+  vars:
+  - "former"
+  - "latter"
+
+  # These are expressions run from within Pen to give the value for the variable
+  var-defaults:
+  - "(detect-language)"
+  - "(pen-preceding-text)"
+
+  # Examples of typical values for the variables
+  examples:
+  - "boysenberries"
+  - "strawberries"
+
+  # Sets of examples may also be specified as below
+  examples:
+  -
+    - tectonic plates
+    - What do you call
+  -
+    - pun
+    - What do you call an alcoholic cat?
+
+  # A preprocessor may be run on the variable inputs before entering the prompt
+  preprocessors:
+  - "sed 's/^/- /"
+  - "cat"
+
+  # Prompt function aliases
+  aliases:
+  - "asktutor"
+
+  # Pipelines
+  # Example: http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-man-page-1.prompt
+  # With the following pipeline you may use the following template. The variable 'program' will be uppercased
+  # <uc:program>
+  # See: http://github.com/semiosis/pen.el/blob/master/scripts/pen-str
+  # Or like this (a simple variable substitution):
+  # <shell-comment>
+  # See: http://github.com/semiosis/prompts/blob/master/prompts/generate-textual-transformation-script-4.prompt
+  pipelines:
+  - uc: pen-str uc
+
+  # This is run on the completion results.
+  # It may be used to format the results
+  # before usage/insertion by emacs.
+  postprocessor: "sed 's/- //' | uniqnosort"
+
+  # The number of times the prompt is run when tested
+  n-test-runs: 5
+
+  # This is a script which may optionally be run on the prompt
+  # to prettify its output
+  prettifier: pen-pretty-paragraph
+
+  # Run it n times and combine the output. Default: 1
+  # This does not result in a list. It's usually a
+  # concatenation, but may use a different collation
+  # function for combining results.
+  n-collate: 1
+
+  # The number of completions to ask from the LM/API
+  n-completions: 10
+
+  # This for combining prompts with n-collate:
+  # It might be, for example, summarize, or uniqnosort.
+  pen-collation-postprocessor: "uniqnosort"
+
+  # Replace selected text. Yes if this is intended to be a text-replacement function.
+  filter: no
+
+  # Completion indicates that this prompt can be used as a company-mode completion function.
+  # When using this it is advisable to keep the default var-defaults unless you know what you're doing.
+  completion: on
+
+  # Insertion indicates that this prompt should be inserted by default, rather than a buffer opening
+  insertion: on
+
+  # The repeater is is appended to a previous template for conversation mode
+  # When a prompt is not run with conversation mode but has a repeater, it is still appended
+  # The {} is replaced with the LAST argument to the prompt function
+  repeater: |
+    Input: {}
+    Output:
+
+  # --------
+  # Doc keys
+  # --------
+
+  # A TODO list.
+  todo:
+  - Finish this prompt.
+
+  # A list of design patterns used.
+  # This may be a url or the name of a pattern.
+  design-patterns:
+  - multiplex
+  - "https://generative.ink/posts/methods-of-prompt-programming/"
+
+  # Possible other names for this prompt.
+  future-titles:
+  - Get code snippet
+  - Get snippet
+
+  # Aims for developing this prompt.
+  aims:
+  - More abstractive rewording
+
+  # Function documentation.
+  doc: "Given ... ${1:title}"
+
+  # For documentation that falls outside of todo, aims, doc, etc.
+  notes:
+  - "rlprompt is used here outside of pen.el"
+
+  # A list of problems with the prompt.
+  issues:
+  - "Struggles with the latter columns."
+
+  # A list of paths to previous prompts
+  past-versions:
+  - deprecated/pick-up-line.prompt
+
+  # A URL to related websites, documents or tools
+  # For example,
+  # - A website that provided the inspiration for or idea behind the prompt
+  # - A web service that provides a similar function
+  external-related:
+  - "https://paraphrasing-tool.com/"
+
+  # A list of related prompts
+  related-prompts:
+  - annotate-with-commentary.prompt
+#+END_SRC
+
+*** A note about functions and expressions in =.prompt=
+If the value matches =^(pf|pen)-.*= then it is interpreted as an elisp function/macro.
+
+If the value matches =^\(.*\)$= then it is interpreted as an elisp expression.
+
+Otherwise, it is interpreted as a bash pipeline expression.
+
+This affects how the following keys are interpreted:
+- =prettifier=
+- =prompt-filter=
+- =preprocessors=
+- =var-defaults=
+- =pen-collation-postprocessor=
+
+** Default values
+If you leave out these keys, the defaults will be used.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  lm-command: "openai-complete.sh"
+  stop-sequences:
+  - "###<long>###"
+  stop-patterns:
+  - "^Input:"
+  # Other options if using openai-complete.sh:
+  # - curie
+  engine: "OpenAI Davinci"
+  mode:
+  best-of: 1
+  # YAS is not enabled by default
+  yas:
+  start-yas:
+  end-yas:
+  cache: false
+  # For 2 variables while selecting text, this is default
+  # Otherwise, var-defaults is nil
+  var-defaults:
+  - "(pen-selected-text)"
+  # title, varname and example are available variables for this expression
+  # title is the name of the prompt
+  # varname is the name of the variable corresponding to the position, in this case the 2nd variable
+  # example is the 
+  - "(read-string-hist (concat title \" \" varname \": \") example)"
+  completion: off
+  # n-collate is functionally equivalent to n-completions
+  # but is the number of requests made. 1 by default.
+  n-collate: 1
+  # The number of attempts that should be made to find valid output
+  n-attempts: 10
+  # Generate 5 completions at a time serverside by default
+  n-completions: 5
+  n-test-runs: 5
+  no-trim-start: off
+  no-trim-end: off
+  # These are nil if not specified
+  vars:
+  examples:
+  var-defaults:
+  aliases:
+  prettifier:
+#+END_SRC
+
+*** =YASnippet= keys currently in development
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  # ------------------------------------
+  # Non-functional (in-development) keys
+  # ------------------------------------
+
+  # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
+  conversation: no
+
+  # This is the readline prompt that is given to rlwrap for conversation mode
+  rlprompt: nlsh <1>
+
+  # Output to test against. Possibly using similarity.
+  test-output: "both are types of berry"
+
+  # This compares the output of the external script to the output of the LM
+  similarity-test: "compare <1> <2>"
+
+  # Prefer the external command if it's available.
+  prefer-external: on
+
+  # This is an optional external command which may be used to perform the same task as your prompt.
+  # This could be used in future to train the prompt.
+  # The external command must take all variables as arguments (no stdin).
+  # echo would simply result in the prompt function returning all the arguments as given.
+  external: "echo"
+
+  # This script returns a 0-1 decimal value representing the quality of the generated output.
+  # The input is 2 arguments each containing output
+  # The output is a decimal number from 0 to 1
+  quality-script: "my-quality-checker-for-this-prompt.sh"
+
+  # This is the name of an external database-driven pretext generator.
+  # It would typically summarize and fact extract from history.
+  # It then passes the pretext to the new prompt.
+  conversation-pretext-generator: "human-conversation"
+
+  # Not available yet: openai api completions.create --help
+  frequency-penalty: 0.5
+
+  # Not available yet: openai api completions.create --help
+  # If I make presence-penalty 0 then it will get very terse
+  presence-penalty: 0.0
+
+  # sp +/"repetition_penalty" "$MYGIT/arrmansa/Basic-UI-for-GPT-J-6B-with-low-vram/GPT-J-6B-Low-Vram-UI.py"
+  repetition-penalty: 0.0
+
+  # sp +/"top_k" "$MYGIT/arrmansa/Basic-UI-for-GPT-J-6B-with-low-vram/GPT-J-6B-Low-Vram-UI.py"
+  top-k:
+#+END_SRC
+
+** Tooling
+If you are looking for a tool which can load
+and make use of these =.prompt= files
+directly, you may use =pen.el=, a package of
+emacs that was used to generate them.
+
+https://github.com/semiosis/pen.el
+
+** Notes
+- Trailing whitespace is always removed from the prompt before it is sent to the LM.

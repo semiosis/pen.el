@@ -1,0 +1,6 @@
+aws lambda create-function \
+--function-name helloworld \
+--zip-file fileb://./deploy.zip \
+--handler helloworld.handler \
+--runtime python3.6 \
+--role arn:aws:iam::123456789012:role/lambda_basic_execution

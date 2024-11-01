@@ -1,0 +1,2 @@
+""large-file-warning-threshold" refers to the Emacs Lisp variable that controls the warning message displayed when a file is being edited which is larger than the value of the variable.
+

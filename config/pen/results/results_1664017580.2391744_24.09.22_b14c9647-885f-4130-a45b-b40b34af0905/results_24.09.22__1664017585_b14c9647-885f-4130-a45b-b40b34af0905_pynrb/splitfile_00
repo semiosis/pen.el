@@ -1,0 +1,7 @@
+
+  (cond
+    (empty? list) nil
+    (odd? (count list)) (cons (first list) nil)
+    :else 
+      (let [pre (first list)
+            post (rest

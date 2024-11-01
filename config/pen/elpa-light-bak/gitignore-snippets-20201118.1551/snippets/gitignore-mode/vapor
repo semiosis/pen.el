@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Vapor
+# contributor: Toptal & contributors
+# key: vapor
+# --
+
+### Vapor ###
+
+Config/secrets

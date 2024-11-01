@@ -1,0 +1,3 @@
+(reset! mnt (make-mnt)))
+
+(defonce mnt (atom nil))

@@ -1,0 +1,19 @@
+.
+
+import qualified Data.ByteString as B
+import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
+import qualified Data.Text.Lazy as TLZ
+import qualified Data.Vector as V
+import qualified Data.Vector.Storable as VS
+import qualified Data.HashMap as HM
+import qualified Data.HashSet as HS
+import qualified Data.Map as M
+import qualified Data.Set as S
+import qualified Data.IntMap as IM
+import System.Random (mkStdGen)
+import Control.Monad (forM_, unless, when)
+import Control.Monad.State (forM, gets, gets2, modify, put)
+import Control.Monad.ST (runST)
+import Control.Applicative ((<$>))
+-- import Control.Monad (replicateM_) -- for testing only!  Replicates a monadic value an

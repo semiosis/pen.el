@@ -1,0 +1,5 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "elinks" "-dump" "-r6-https-keenwiki-shikadi-net-/keenwiki.shikadi.net/wiki/D'Nahron.html" "#" "<==" "bash"
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "elinks" "-dump" "-r6-https-www-vatican-va-/www.vatican.va/content/vatican/it/holy-father/caio.html" "#" "<==" "bash"
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "elinks" "-dump" "-r6-https-www-vatican-va-/www.vatican.va/content/vatican/it/holy-father/silverio.html" "#" "<==" "bash"
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "elinks" "-dump" "-r6-https-www-vatican-va-/www.vatican.va/content/vatican/it/holy-father/lucio-iii.html" "#" "<==" "bash"
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "elinks" "-dump" "-r6-https-www-vatican-va-/www.vatican.va/content/vatican/it/holy-father/vittore-ii.html" "#" "<==" "bash"

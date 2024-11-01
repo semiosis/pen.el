@@ -1,0 +1,5 @@
+"T.send sock" is a function.
+
+It takes a socket and a byte string as arguments.
+
+It returns a monad.

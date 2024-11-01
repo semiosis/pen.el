@@ -1,0 +1,42 @@
+#+TITLE: Flymake Racket
+
+[[https://melpa.org/#/flymake-racket][file:https://melpa.org/packages/flymake-racket-badge.svg]]
+
+Flymake extension for Racket.
+
+* Install
+  #+begin_src emacs-lisp :tangle yes
+(use-package flymake-racket
+  :ensure t
+  :commands (flymake-racket-add-hook)
+  :init
+  (add-hook 'scheme-mode-hook #'flymake-racket-add-hook)
+  (add-hook 'racket-mode-hook #'flymake-racket-add-hook))
+  #+end_src
+
+  Since I use both Emacs 25 and Emacs 26, I use flycheck-racket for Emacs 25
+  and flymake-racket for Emacs 26.
+
+  #+begin_src emacs-lisp :tangle yes
+  (defun +scheme-mode-setup-linting ()
+    "Use `flymake' instead of `flycheck' in Emacs 26."
+    (when (>= emacs-major-version 26)
+      (flymake-mode)
+      (flycheck-mode -1)))
+
+  (add-hook 'scheme-mode-hook #'+scheme-mode-setup-linting)
+  (add-hook 'racket-mode-hook #'+scheme-mode-setup-linting)
+  #+end_src
+* Differences to flycheck-racket
+  - More responsive, flycheck-racket seems to stall typing while it runs
+    which prompted me to write flymake-racket.
+  - flycheck-racket only gives the error message and not the possible cause.
+    flymake-racket explicitly looks for the possible cause: message.
+
+  See below for comparison:
+
+  Flymake:
+  [[./screenshots/flymake-racket.png]]
+
+  Flycheck:
+  [[./screenshots/flycheck-racket.png]]

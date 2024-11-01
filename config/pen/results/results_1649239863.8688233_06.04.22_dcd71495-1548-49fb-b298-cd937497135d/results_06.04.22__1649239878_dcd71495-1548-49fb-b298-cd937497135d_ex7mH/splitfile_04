@@ -1,0 +1,25 @@
+
+ready
+EOD
+
+I'm not sure what's going on here. It seems like the "do"
+keyword is not working correctly.
+
+Thanks,
+
+-Andrew
+
+-- 
+Andrew Tridgell
+http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
+EOD
+
+echo "Sending bug report to $bug_email"
+
+# send the bug report
+cat $tmpfile | mail -s "Bug report for $bug_email" $bug_email
+
+# clean up
+rm -f $tmpfile
+
+exit 0

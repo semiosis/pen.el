@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "uplot" "density" "-H" "-t" "IRIS" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "uplot" "density" "-H" "-t" "IRIS" "#" "<==" "bash"
+cd /;  "uplot" "boxplot" "-H" "-t" "IRIS" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "uplot" "density" "-H" "-t" "IRIS" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "uplot" "density" "-H" "-t" "IRIS" "#" "<==" "bash"

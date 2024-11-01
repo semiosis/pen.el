@@ -1,0 +1,2 @@
+
+- When you run a prompt function, the Pen.el server will query the user for inputs, send them to the AI, then receive the AI's response and show it to the user.

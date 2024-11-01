@@ -1,0 +1,72 @@
+HVM vs PV
+    Offers two types of virtualization:
+    - Paravirtual (PV), and
+    - Hardware Virtual Machine (HVM).
+
+    Each solution offers its own advantages.
+
+    When we’re using AWS, it’s easy for
+    someone — almost without thinking — to
+    choose which AMI flavor seems best when
+    spinning up a new EC2 instance.
+    
+    Maybe you’re just doing some quick
+    testing, or maybe you know all you need
+    and your AMI has a relatively recent
+    version of Microsoft SQL Server on it.
+    
+    However, when you dig a little deeper,
+    you’ll see that the AMIs offer a choice of
+    virtualization type:
+    - PV and
+    - HVM.
+
+HVM
+    HVM guests are fully virtualized.
+    
+    It means that the VMs running on top of
+    their hypervisors are not aware that they
+    are sharing processing time with other
+    clients on the same hardware.
+    
+    The host should have the capability to
+    emulate underlying hardware for each of
+    its guest machines.
+    
+    This virtualization type provides the
+    ability to run an operating system
+    directly on top of a VM without any
+    modification — as if it were run on the
+    bare-metal hardware.
+    
+    The advantage of this is that HVMs can use
+    hardware extensions which provide very
+    fast access to underlying hardware on the
+    host system.
+
+Paravirtualization
+    A lighter form of virtualization than HVM.
+    
+    This technique is fast and provides near
+    native speed in comparison to full
+    virtualization.
+    
+    With Paravirtualization, the guest
+    operating system requires some
+    modification before everything can work.
+    
+    These modifications allow the hypervisor
+    to export a modified version of the
+    underlying hardware to the VMs, allowing
+    them near-native performance.
+    
+    All PV machines running on a hypervisor
+    are basically modified operating systems
+    like Solaris or various Linux
+    distributions.
+
+Amazon Machine Images
+AWS AMI
+    A supported and maintained image provided
+    by AWS that provides the information
+    required to launch an instance.

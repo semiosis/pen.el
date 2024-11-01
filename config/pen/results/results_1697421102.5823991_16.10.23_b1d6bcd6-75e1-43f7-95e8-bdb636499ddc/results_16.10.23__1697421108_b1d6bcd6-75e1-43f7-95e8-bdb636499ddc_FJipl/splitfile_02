@@ -1,0 +1,1 @@
+nsfazc \"$(cmd-nice-posix "$script")\")" "$modename" (if (not (listp "$bufname")) nil "$@" ) "$bufname")) nil $extra_elisp)"

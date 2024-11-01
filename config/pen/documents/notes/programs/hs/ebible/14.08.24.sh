@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ebible" "-m" "ESV" "Eph 1:15-23" "#" "<==" "Eph"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Eph 1:3" "#" "<==" "Eph"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Eph 2:6" "#" "<==" "Eph"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Col 3:3" "#" "<==" "Col"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "Matt 28:18-20" "#" "<==" "Matt"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "ebible" "-m" "ESV" "James 1" "#" "<==" "James"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Cronicles 21" "#" "<==" "I"
+cd /root/.emacs.d/host/pen.el/scripts/bible-books;  "ebible" "-m" "ESV" "I Chronicles 21" "#" "<==" "I"

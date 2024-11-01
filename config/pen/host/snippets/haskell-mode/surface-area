@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: surface-area
+# group: math
+# key: surface-area
+# --
+data Point = Point Float Float deriving (Show)
+data Shape = Circle Point Float | Rectangle Point Point deriving (Show)
+
+surface :: Shape -> Float
+surface (Circle _ r) = pi * r ^ 2
+surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - y1)
+
+-- :info Point
+-- :info Circle
+-- :t Point
+-- :t Circle
+
+surface $ Circle (Point 10 20) 10
+surface $ Rectangle (Point 0 0) (Point 100 100)

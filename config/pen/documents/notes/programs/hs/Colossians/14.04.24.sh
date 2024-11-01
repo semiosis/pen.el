@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Colossians" "3:2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "2:18" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:19-23" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Colossians" "1:21-22" "#" "<==" "zsh"

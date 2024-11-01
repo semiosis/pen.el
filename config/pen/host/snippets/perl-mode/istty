@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: istty
+# group: common
+# key: istty
+# --
+use feature qw{ say };
+if (-t) {
+    say "Input comes from tty.";
+}
+else {
+    say "Input doesn't come from tty.";
+}

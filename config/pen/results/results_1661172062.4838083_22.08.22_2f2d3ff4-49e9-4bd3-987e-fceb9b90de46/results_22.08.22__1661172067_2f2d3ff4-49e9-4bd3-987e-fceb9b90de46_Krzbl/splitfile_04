@@ -1,0 +1,6 @@
+
+str <- getLine
+putStrLn "Enter a line of text for test 2:"
+str' <- getLine
+putStrLn $ "Test 1:" ++ (map toUpper (lines str)) ++ "
+put

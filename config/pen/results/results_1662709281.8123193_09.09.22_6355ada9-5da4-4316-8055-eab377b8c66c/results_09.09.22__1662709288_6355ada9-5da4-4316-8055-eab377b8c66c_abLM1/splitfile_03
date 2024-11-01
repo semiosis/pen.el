@@ -1,0 +1,8 @@
+aws lambda create-function
+  --function-name <value>
+  --runtime <value>
+  --role <value>
+  --handler <value>
+  --zip-file <value>
+  [--cli-input-json <value>]
+  [--generate-cli-skeleton]

@@ -1,0 +1,782 @@
+HTTP/1.1 200 OK
+Date: Sat, 21 Oct 2023 20:11:23 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+﻿<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/SubPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.biblestudystart.com/img/books-large.jpg">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Outline of 1 Chronicles | Free Bible Outlines</title>
+<!-- InstanceEndEditable -->
+<meta property="og:site_name" content="Bible Outlines" />
+<meta property="og:title" content="Outline of 1 Chronicles | Free Bible Outlines" />
+<meta property="og:description" content="Bible outline of 1 Chronicles. See what it's about from the first verse to the last." />
+<meta name="Description" content="Bible outline of 1 Chronicles. See what it's about from the first verse to the last.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../layout/styles3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 240px;
+}
+@media (min-width: 500px) {
+.gresponsive, #google-responsiveside {
+	width: 468px;
+	height: 60px;
+}
+}
+@media (min-width: 601px) {
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 600px;
+}
+}
+@media (min-width: 1100px) {
+.gresponsive, #google-responsiveside {
+	width: 300px;
+	height: 600px;
+}
+}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="mainbackground">
+  <div id="header">
+    <div class="lowerglow innerdiv"> <!-- InstanceBeginEditable name="SubSiteTitle" -->
+      <div class="title"> <a href="https://www.biblestudystart.com/outlines/">Bible Outlines</a></div>
+      <div class="subtitle">Every book of the Bible outlined in section headings.</div>
+      <!-- InstanceEndEditable --> </div>
+  </div>
+  <div id="outer" class="innerdiv">
+    <div id="content"> 
+      <div class="bibleoutline">
+<h1>Outline of 1 Chronicles</h1>
+<table>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 1</td></tr>
+ <tr>
+  <td class="verses">1Ch 1:1-4.</td>
+  <td class="summary">Adam's line to Noah.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:5-7.</td>
+  <td class="summary">The sons of Japheth.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:8-16.</td>
+  <td class="summary">The sons of Ham.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:17-23.</td>
+  <td class="summary">The sons of Shem.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:24-28.</td>
+  <td class="summary">Shem's line to Abraham.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:29-31.</td>
+  <td class="summary">Ishmael's sons.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:32-33.</td>
+  <td class="summary">The sons of Keturah.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:34-37.</td>
+  <td class="summary">The posterity of Abraham by Esau.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:38-42.</td>
+  <td class="summary">The sons of Seir.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:43-50.</td>
+  <td class="summary">The kings of Edom.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 1:51-54.</td>
+  <td class="summary">The dukes of Edom.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 2</td></tr>
+ <tr>
+  <td class="verses">1Ch 2:1-2.</td>
+  <td class="summary">The sons of Israel.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:3-12.</td>
+  <td class="summary">The posterity of Judah by Tamar.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:13-17.</td>
+  <td class="summary">The children of Jesse.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:18-20.</td>
+  <td class="summary">The posterity of Caleb the son of Hezron.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:21-24.</td>
+  <td class="summary">Hezron's posterity by the daughter of Machir.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:25-33.</td>
+  <td class="summary">Jerahmeel's posterity.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:34-41.</td>
+  <td class="summary">Sheshan's posterity.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:42-49.</td>
+  <td class="summary">Another branch of Caleb's posterity.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 2:50-55.</td>
+  <td class="summary">The posterity of Caleb the son of Hur.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 3</td></tr>
+ <tr>
+  <td class="verses">1Ch 3:1-9.</td>
+  <td class="summary">The sons of David.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 3:10-16.</td>
+  <td class="summary">His line to Zedekiah.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 3:17-24.</td>
+  <td class="summary">The successors of Jeconiah.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 4</td></tr>
+ <tr>
+  <td class="verses">1Ch 4:1-4.</td>
+  <td class="summary">The posterity of Judah by Caleb, the son of Hur.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 4:5-8.</td>
+  <td class="summary">Of Ashur, the posthumous son Hezron.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 4:9-10.</td>
+  <td class="summary">Of Jabez, and his prayer.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 4:11-20.</td>
+  <td class="summary">The other families of the same stock.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 4:21-23.</td>
+  <td class="summary">The sons of Shelah.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 4:24-38.</td>
+  <td class="summary">The posterity and cities of Simeon.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 4:39-43.</td>
+  <td class="summary">Their conquest of Gedor, and of the Amalekites in mount Seir.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 5</td></tr>
+ <tr>
+  <td class="verses">1Ch 5:1-2.</td>
+  <td class="summary">Judah and Joseph preferred before Reuben, who forfeited his birthright.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 5:3-10.</td>
+  <td class="summary">Ruben's descendants; some of whom vanquish the Hagarites.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 5:11-17.</td>
+  <td class="summary">The chief men of Gad, and their habitations.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 5:18-22.</td>
+  <td class="summary">Ruben, Gad, and half of Manasseh, obtain a victory over the Hagarites.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 5:23-24.</td>
+  <td class="summary">The habitations and chief men of that half of Manasseh.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 5:25-26.</td>
+  <td class="summary">The captivity of the two tribes and half, for their sins.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 6</td></tr>
+ <tr>
+  <td class="verses">1Ch 6:1-3.</td>
+  <td class="summary">The sons of Levi.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 6:4-15.</td>
+  <td class="summary">The line of Eleazar unto the captivity.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 6:16-48.</td>
+  <td class="summary">The families of Gershom, Kohath, and Merari.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 6:49-53.</td>
+  <td class="summary">The office of Aaron, and his line unto Ahimaaz.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 6:54-81.</td>
+  <td class="summary">The cities of the priests and Levites.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 7</td></tr>
+ <tr>
+  <td class="verses">1Ch 7:1-5.</td>
+  <td class="summary">The sons of Issachar;</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:6-12.</td>
+  <td class="summary">of Benjamin;</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:13.</td>
+  <td class="summary">of Naphtali;</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:14.</td>
+  <td class="summary">of Manasseh;</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:15-20.</td>
+  <td class="summary">and of Ephraim.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:21-22.</td>
+  <td class="summary">The calamity of Ephraim by the men of Gath.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:23-27.</td>
+  <td class="summary">His posterity by Beriah.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:28-29.</td>
+  <td class="summary">Their habitations.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 7:30-40.</td>
+  <td class="summary">The sons of Asher.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 8</td></tr>
+ <tr>
+  <td class="verses">1Ch 8:1-32.</td>
+  <td class="summary">The sons and chief men of Benjamin.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 8:33-40.</td>
+  <td class="summary">The stock of Saul and Jonathan.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 9</td></tr>
+ <tr>
+  <td class="verses">1Ch 9:1.</td>
+  <td class="summary">The original of Israel and Judah's genealogies.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 9:2-9.</td>
+  <td class="summary">The Israelites;</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 9:10-13.</td>
+  <td class="summary">the priests;</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 9:14-26.</td>
+  <td class="summary">and the Levites, with Nethinims, which dwelt in Jerusalem.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 9:27-34.</td>
+  <td class="summary">The charge of certain Levites.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 9:35-44.</td>
+  <td class="summary">The stock of Saul and Jonathan.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 10</td></tr>
+ <tr>
+  <td class="verses">1Ch 10:1-7.</td>
+  <td class="summary">Saul's overthrow and death.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 10:8-10.</td>
+  <td class="summary">The Philistines triumph over Saul.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 10:11-12.</td>
+  <td class="summary">The kindness of Jabesh-gilead towards Saul and his sons.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 10:13-14.</td>
+  <td class="summary">Saul's sin, for which the kingdom was translated from him to David.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 11</td></tr>
+ <tr>
+  <td class="verses">1Ch 11:1-3.</td>
+  <td class="summary">David by general consent is made king at Hebron.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 11:4-9.</td>
+  <td class="summary">He wins the castle of Zion from the Jebusites by Joab's valour.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 11:10-47.</td>
+  <td class="summary">A catalogue of David's mighty men.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 12</td></tr>
+ <tr>
+  <td class="verses">1Ch 12:1-22.</td>
+  <td class="summary">The companies that came to David at Ziklag.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 12:23-40.</td>
+  <td class="summary">The armies that came to him at Hebron.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 13</td></tr>
+ <tr>
+  <td class="verses">1Ch 13:1-8.</td>
+  <td class="summary">David fetches the ark with great solemnity from Kirjath- jearim.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 13:9-14.</td>
+  <td class="summary">Uzza being smitten, the ark is left at the house of Obed- edom.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 14</td></tr>
+ <tr>
+  <td class="verses">1Ch 14:1.</td>
+  <td class="summary">Hiram's kindness to David.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 14:2-7.</td>
+  <td class="summary">David's felicity in people, wives, and children.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 14:8-17.</td>
+  <td class="summary">His two victories against the Philistines.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 15</td></tr>
+ <tr>
+  <td class="verses">1Ch 15:1-24.</td>
+  <td class="summary">David having prepared a place for the ark, the priests and Levites bring it from Obed-edom.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 15:25-28.</td>
+  <td class="summary">He performs the solemnity thereof with great joy.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 15:29.</td>
+  <td class="summary">Michal despises him.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 16</td></tr>
+ <tr>
+  <td class="verses">1Ch 16:1-3.</td>
+  <td class="summary">David's festival sacrifice.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 16:4-6.</td>
+  <td class="summary">He orders a choir to sing thanksgiving.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 16:7-36.</td>
+  <td class="summary">The psalm of thanksgiving.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 16:37-43.</td>
+  <td class="summary">He appoints ministers, porters, priests, and musicians, to attend continually on the ark.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 17</td></tr>
+ <tr>
+  <td class="verses">1Ch 17:1-2.</td>
+  <td class="summary">Nathan first approving the purpose of David, to build God a house,</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 17:3-10.</td>
+  <td class="summary">after by the word of God forbids him.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 17:11-15.</td>
+  <td class="summary">He promises him blessings and benefits in his seed.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 17:16-27.</td>
+  <td class="summary">David's prayer and thanksgiving.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 18</td></tr>
+ <tr>
+  <td class="verses">1Ch 18:1-2.</td>
+  <td class="summary">David subdues the Philistines and the Moabites.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 18:3-8.</td>
+  <td class="summary">He smites Hadarezer and the Syrians.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 18:9-10.</td>
+  <td class="summary">Tou sends Hadoram with presents to bless David.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 18:11-12.</td>
+  <td class="summary">The presents and the spoil David dedicates to God.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 18:13.</td>
+  <td class="summary">He puts garrisons in Edom.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 18:14-17.</td>
+  <td class="summary">David's officers.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 19</td></tr>
+ <tr>
+  <td class="verses">1Ch 19:1-5.</td>
+  <td class="summary">David's messengers, sent to comfort Hanun, the son of Nahash, are villainously treated.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 19:6-15.</td>
+  <td class="summary">The Ammonites, strengthened by the Syrians, are overcome by Joab and Abishai.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 19:16-19.</td>
+  <td class="summary">Shophach, making a new supply of the Syrians, is slain by David.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 20</td></tr>
+ <tr>
+  <td class="verses">1Ch 20:1-3.</td>
+  <td class="summary">Rabbah is besieged by Joab, spoiled by David, and the people thereof tortured.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 20:4-8.</td>
+  <td class="summary">Three giants are slain in three several overthrows of the Philistines.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 21</td></tr>
+ <tr>
+  <td class="verses">1Ch 21:1-4.</td>
+  <td class="summary">David, tempted by Satan, forces Joab to number the people.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 21:5-8.</td>
+  <td class="summary">The number of the people being brought, David repents of it.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 21:9-13.</td>
+  <td class="summary">David having three plagues propounded by God, chooses the pestilence.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 21:14-17.</td>
+  <td class="summary">After the death of seventy thousand, David by repentance prevents the destruction of Jerusalem.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 21:18-27.</td>
+  <td class="summary">David, by Gad's direction, purchases Ornan's threshing- floor; where having built an altar, God gives a sign of his favour by fire, and stays the plague.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 21:28-30.</td>
+  <td class="summary">David sacrifices there, being restrained from Gibeon by fear of the angel.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 22</td></tr>
+ <tr>
+  <td class="verses">1Ch 22:1-5.</td>
+  <td class="summary">David, foreknowing the place of the temple, prepares abundance for the building of it.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 22:6-16.</td>
+  <td class="summary">He instructs Solomon in God's promises, and his duty in building the temple.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 22:17-19.</td>
+  <td class="summary">He charges the princes to assist his son.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 23</td></tr>
+ <tr>
+  <td class="verses">1Ch 23:1.</td>
+  <td class="summary">David in his old age makes Solomon king.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 23:2-6.</td>
+  <td class="summary">The number and distribution of the Levites.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 23:7-11.</td>
+  <td class="summary">The families of the Gershonites.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 23:12-20.</td>
+  <td class="summary">The sons of Kohath.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 23:21-23.</td>
+  <td class="summary">The sons of Merari.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 23:24-32.</td>
+  <td class="summary">The office of the Levites.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 24</td></tr>
+ <tr>
+  <td class="verses">1Ch 24:1-19.</td>
+  <td class="summary">The division of the sons of Aaron by lot into four and twenty orders.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 24:20-25.</td>
+  <td class="summary">The Kohathites,</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 24:26-31.</td>
+  <td class="summary">and the Merarites, divided by lot.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 25</td></tr>
+ <tr>
+  <td class="verses">1Ch 25:1-7.</td>
+  <td class="summary">The number and offices of the singers.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 25:8-31.</td>
+  <td class="summary">Their division by lot into four and twenty orders.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 26</td></tr>
+ <tr>
+  <td class="verses">1Ch 26:1-12.</td>
+  <td class="summary">The divisions of the porters.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 26:13-19.</td>
+  <td class="summary">The gates assigned by lot.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 26:20-28.</td>
+  <td class="summary">The Levites that had charge of the treasures.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 26:29-32.</td>
+  <td class="summary">Officers and judges.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 27</td></tr>
+ <tr>
+  <td class="verses">1Ch 27:1-15.</td>
+  <td class="summary">The twelve captains for every several month.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 27:16-22.</td>
+  <td class="summary">The princes of the twelve tribes.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 27:23-24.</td>
+  <td class="summary">The numbering of the people is hindered.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 27:25-34.</td>
+  <td class="summary">David's several officers.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 28</td></tr>
+ <tr>
+  <td class="verses">1Ch 28:1-8.</td>
+  <td class="summary">David in a solemn assembly having declared God's favour to him, and promise to his son Solomon, exhorts them to fear God.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 28:9-10.</td>
+  <td class="summary">He encourages Solomon to build the temple.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 28:11-21.</td>
+  <td class="summary">He gives him patterns, gold and silver, etc.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">1 Chronicles chapter 29</td></tr>
+ <tr>
+  <td class="verses">1Ch 29:1-5.</td>
+  <td class="summary">David, by his example and entreaty,</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 29:6-9.</td>
+  <td class="summary">causes the princes and people to offer willingly.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 29:10-19.</td>
+  <td class="summary">David's thanksgiving and prayer.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 29:20-25.</td>
+  <td class="summary">The people, having blessed God, and sacrificed, make Solomon king.</td>
+ </tr>
+ <tr>
+  <td class="verses">1Ch 29:26-30.</td>
+  <td class="summary">David's reign and death.</td>
+ </tr>
+</table>
+
+</div> 
+    </div>
+    <div id="rightside">
+      <div id="rightsideinner"> <!-- InstanceBeginEditable name="EditNextPrev" --> 
+        <div class="nav"><div class="nav-prev"><a href="2kings.html" rel="prev">&larr;&nbsp;2 Kings</a></div><div class="nav-next"><a href="2chronicles.html" rel="next">2 Chronicles&nbsp;&rarr;</a></div></div> 
+        <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="EditIndexSelector" --> 
+        <div id="indexselector">
+        <select name="OutlinePages" onChange="window.open(this.options[this.selectedIndex].value,'_top')">
+<option selected value="/outlines/">Select a Book of the Bible</option>
+<option value="/outlines/">(About these outlines)</option>
+<option value="genesis.html">Genesis</option>
+<option value="exodus.html">Exodus</option>
+<option value="leviticus.html">Leviticus</option>
+<option value="numbers.html">Numbers</option>
+<option value="deuteronomy.html">Deuteronomy</option>
+<option value="joshua.html">Joshua</option>
+<option value="judges.html">Judges</option>
+<option value="ruth.html">Ruth</option>
+<option value="1samuel.html">1 Samuel</option>
+<option value="2samuel.html">2 Samuel</option>
+<option value="1kings.html">1 Kings</option>
+<option value="2kings.html">2 Kings</option>
+<option value="1chronicles.html">1 Chronicles</option>
+<option value="2chronicles.html">2 Chronicles</option>
+<option value="ezra.html">Ezra</option>
+<option value="nehemiah.html">Nehemiah</option>
+<option value="esther.html">Esther</option>
+<option value="job.html">Job</option>
+<option value="psalms.html">Psalms</option>
+<option value="proverbs.html">Proverbs</option>
+<option value="ecclesiastes.html">Ecclesiastes</option>
+<option value="songofsolomon.html">Song of Solomon</option>
+<option value="isaiah.html">Isaiah</option>
+<option value="jeremiah.html">Jeremiah</option>
+<option value="lamentations.html">Lamentations</option>
+<option value="ezekiel.html">Ezekiel</option>
+<option value="daniel.html">Daniel</option>
+<option value="hosea.html">Hosea</option>
+<option value="joel.html">Joel</option>
+<option value="amos.html">Amos</option>
+<option value="obadiah.html">Obadiah</option>
+<option value="jonah.html">Jonah</option>
+<option value="micah.html">Micah</option>
+<option value="nahum.html">Nahum</option>
+<option value="habakkuk.html">Habakkuk</option>
+<option value="zephaniah.html">Zephaniah</option>
+<option value="haggai.html">Haggai</option>
+<option value="zechariah.html">Zechariah</option>
+<option value="malachi.html">Malachi</option>
+<option value="matthew.html">Matthew</option>
+<option value="mark.html">Mark</option>
+<option value="luke.html">Luke</option>
+<option value="john.html">John</option>
+<option value="acts.html">Acts</option>
+<option value="romans.html">Romans</option>
+<option value="1corinthians.html">1 Corinthians</option>
+<option value="2corinthians.html">2 Corinthians</option>
+<option value="galatians.html">Galatians</option>
+<option value="ephesians.html">Ephesians</option>
+<option value="philippians.html">Philippians</option>
+<option value="colossians.html">Colossians</option>
+<option value="1thessalonians.html">1 Thessalonians</option>
+<option value="2thessalonians.html">2 Thessalonians</option>
+<option value="1timothy.html">1 Timothy</option>
+<option value="2timothy.html">2 Timothy</option>
+<option value="titus.html">Titus</option>
+<option value="philemon.html">Philemon</option>
+<option value="hebrews.html">Hebrews</option>
+<option value="james.html">James</option>
+<option value="1peter.html">1 Peter</option>
+<option value="2peter.html">2 Peter</option>
+<option value="1john.html">1 John</option>
+<option value="2john.html">2 John</option>
+<option value="3john.html">3 John</option>
+<option value="jude.html">Jude</option>
+<option value="revelation.html">Revelation</option>
+</select>
+ 
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="clearall">&nbsp;</div>
+        <div id="searchbox">
+          <form action="https://www.google.com" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="partner-pub-5275979875239567:3875486487">
+              <input type="hidden" name="ie" value="UTF-8">
+              <input type="text" name="q" size="20" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+        
+        <!--SS_AD_START-->
+        <div id="sssidebar" class="sidebar">
+          <div class="innersidebar">
+            <p>Your Bible study shouldn't be left to a web search.</p>
+            <div class="sslink">
+              <p><a href="https://www.swordsearcher.com">Better Bible Study
+                With<br>
+                SwordSearcher
+                Bible Software <br>
+                <img src="../img/swordsearcher.png" alt="SwordSearcher"></a> </p>
+            </div>
+            <p>The internet is good for many things, but it is not designed for studying God's word.</p>
+            <p>SwordSearcher is.</p>
+            <ul>
+              <li><a href="https://www.swordsearcher.com">Learn more.</a></li>
+              <li><a href="https://www.swordsearcher.com/video/3reasons.htm">Video: 3 Reasons to use SwordSearcher</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--SS_AD_END-->
+        
+        
+        <a href="https://www.bible-topics.com/" class="button">Bible Topics</a>
+		<a href="https://www.naves-topical-bible.com/" class="button">Nave's Topical Bible Concordance</a>
+		<a href="https://www.internationalstandardbible.com/" class="button">International Standard Bible Encyclopedia</a>
+  		<a href="https://www.biblicalcyclopedia.com/" class="button">McClintock and Strong Biblical Cyclopedia</a>
+		<a href="https://av1611.com/kjbp/kjv-bible-text/index.html" class="button">Online KJV Text</a>
+		<a href="https://av1611.com/kjbp/kjv-dictionary/kjv-dictionary-index.html" class="button">KJV Dictionary</a> 
+ 
+      </div>
+    </div>
+    <div class="clearall"> &nbsp; </div>
+  </div>
+</div>
+<div id="footer"> <!-- InstanceBeginEditable name="EditFooterIndex" --> 
+  <!--FOOTER_INDEX_DIV_START--> 
+  <!--FOOTER_INDEX_DIV_END--> 
+  <!-- InstanceEndEditable -->
+  <div class="innerdiv"> 
+    <!--FOOTER_START--> 
+    <a href="https://www.biblestudystart.com"><img src="../img/books-tiny.jpg" alt="Bible Study Start" class="bookspicture"></a> <!-- InstanceBeginEditable name="Footer" -->
+    <p>Source: <a href="https://www.swordsearcher.com/bible-study-library/bible-outlines.html">OutlinesBB</a> module from <a href="https://www.swordsearcher.com">SwordSearcher</a>.</p>
+    <!-- InstanceEndEditable -->
+    <p>Website HTML, editorial descriptions, and images &copy;2023 <a href="https://www.studylamp.com">StudyLamp Software LLC.</a> <br>
+      <a href="https://av1611.com/verseclick">Scripture linking and popups powered by VerseClick&trade;.</a> </p>
+    <!--FOOTER_END--> 
+  </div>
+</div>
+<div id="postfooter"> 
+  
+ 
+</div>
+
+
+<script src="https://av1611.com/verseclick/verseclick.js"></script> 
+
+<!-- AddThis Smart Layers BEGIN --> 
+<!-- Go to http://www.addthis.com/get/smart-layers to customize --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e2b9213820e78"></script> 
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5,
+	  'mobile' : false
+    }   
+  });
+</script> 
+<!-- AddThis Smart Layers END --> 
+
+
+</body>
+<!-- InstanceEnd --></html>

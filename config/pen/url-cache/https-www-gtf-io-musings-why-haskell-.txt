@@ -1,0 +1,10 @@
+HTTP/1.1 404 Not Found
+Alt-Svc: h3=":443"; ma=2592000
+Content-Type: text/html; charset=utf8
+Date: Thu, 12 Sep 2024 10:52:15 GMT
+Server: Caddy
+Server: Warp/3.3.31
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
+<!DOCTYPE HTML><html><head><title>GTF :: We&#39;ve lost it, precious!</title><meta charset="utf8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index, follow"><link rel="stylesheet" href="/styles/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/base16/papercolor-light.min.css"></head><body><header class="site-header"><div class="brand">~gtf</div><nav><input type="checkbox" id="nav-control"><label class="nav-label" for="nav-control">oh the places you&#39;ll go</label><div class="nav-content"><span class="nav-item"><a href="/">home</a></span><span class="nav-item active"><a href="/musings">musings</a></span><span class="nav-item"><a href="/projects">projects</a></span><span class="nav-item"><a href="/colophon">colophon</a></span></div></nav></header><div class="top-container"><div class="content-container"><main class="content-container" role="main"><section class="error-page error-404"><h1>I just don&#39;t know where it is!</h1><p>Sadly /musings/why-haskell/ isn&#39;t something I know about, perhaps go back and try again.</p></section></main></div></div><footer class="site-footer"><span class="footer-item">Site updated: <time datetime="2024-09-12">2024-09-12</time></span><span class="footer-item"><a href="/assets/gideon-farrell.pubkey.asc" title="Gideon&#39;s Public Key">Public PGP Key</a></span><span class="footer-item"><a href="/colophon" title="Colophon">Colophon</a></span></footer></body></html>

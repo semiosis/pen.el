@@ -1,0 +1,3 @@
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\"export TERM=screen-2color;  'pen-v' '-c' 'syntax off | set nohlsearch | set t_Co=0 | set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q\!' '/tmp/tf_temp_348e5e90d0.txt'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" tmux attach -t 460aed6e-52b6-11ee-99ba-633cbe6d19f7:\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "bash"
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" tmux attach -t 5119ef52-52b6-11ee-83cf-cf474d6c5c0c:\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "bash"

@@ -1,0 +1,99 @@
+Vagrant
+    [hashicorp product]
+
+    Imperative IaC.
+
+    Aim is to provide a consistent development
+    environment workflow across multiple
+    operating systems.
+
+    Building and maintaining portable virtual
+    software development environments; e.g.,
+    for VirtualBox, KVM, Hyper-V, Docker
+    containers, VMware, and AWS. 
+
+    An open-source software product for
+    building and maintaining portable virtual
+    software development environments; e.g.,
+    for VirtualBox, KVM, Hyper-V, Docker
+    containers, VMware, and AWS.
+
+    l Vagrantfile
+
+packer
+    [hashicorp product]
+
+    https://www.packer.io/
+    https://github.com/hashicorp/packer
+
+    A tool for creating identical machine
+    images for multiple platforms from a
+    single source configuration.
+
+    Automates the creation of any type of
+    machine image.
+    
+    It embraces modern configuration
+    management by encouraging you to use
+    automated scripts to install and configure
+    the software within your Packer-made
+    images.
+    
+    Packer brings machine images into the
+    modern age, unlocking untapped potential
+    and opening new opportunities.
+
+    - azure
+    - aws
+    - gcp
+    - vbox
+    - docker
+    - vmware
+    - digitalocean
+
+Terraform
+    [hashicorp product]
+
+    Infrastructure as Code.
+
+    Provision and manage any cloud,
+    infrastructure, or service.
+
+    vim +/"Infrastructure automation" "$NOTES/ws/cloud/glossary.txt"
+
+Vault
+    vim +/"Security automation" "$NOTES/ws/cloud/glossary.txt"
+
+Consul
+    [#hashicorp]
+
+    vim +/"Networking automation" "$NOTES/ws/cloud/glossary.txt"
+
+    Service Networking Across Any Cloud.
+
+    Automate network configurations, discover
+    services, and enable secure connectivity
+    across any cloud or runtime.
+
+Nomad
+    [#hashicorp]
+
+    vim +/"Application automation" "$NOTES/ws/cloud/glossary.txt"
+
+    Workload Orchestration Made Easy.
+
+    A simple and flexible workload
+    orchestrator to deploy and manage
+    containers and non-containerized
+    applications across on-prem and clouds at
+    scale.
+
+    A flexible workload orchestrator that
+    enables an organization to easily deploy
+    and manage any containerized or legacy
+    application using a single, unified
+    workflow.
+    
+    Nomad can run a diverse workload of
+    Docker, non-containerized, microservice,
+    and batch applications.

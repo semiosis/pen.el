@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_6d6a143be0_matthew-5-5-6.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_003b6a6102_genesis-18-26.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_003b6a6102_genesis-18-26.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_003b6a6102_genesis-18-26.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_003b6a6102_genesis-18-26.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_003b6a6102_genesis-18-26.txt" "#" "<==" "pen-xa"
+cd /;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"

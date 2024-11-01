@@ -1,0 +1,8 @@
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://www.youtube.com/watch?v=Amx6M8fsnEw&ab_channel=DesiringGod" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=Amx6M8fsnEw" "#" "<==" "o"
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://www.christianity.com/jesus/following-jesus/communion/how-should-christians-approach-communion.html" "#" "<==" "o"
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://www.youtube.com/watch?v=NE1K_WJwoDI&ab_channel=ReformedChurchofDunedin" "#" "<==" "o"

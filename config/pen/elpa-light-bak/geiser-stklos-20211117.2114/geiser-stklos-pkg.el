@@ -1,0 +1,2 @@
+;;; Generated package description from geiser-stklos.el  -*- no-byte-compile: t -*-
+(define-package "geiser-stklos" "20211117.2114" "STklos Scheme implementation of the geiser protocols" '((emacs "24.4") (geiser "0.16")) :commit "9db60a7e751c97e30dd528e2a96ff19575b618d2" :authors '(("Jeronimo Pellegrini" . "j_p@aleph0.info")) :maintainer '("Jeronimo Pellegrini" . "j_p@aleph0.info") :keywords '("languages" "stklos" "scheme" "geiser") :url "https://gitlab.com/emacs-geiser/stklos")

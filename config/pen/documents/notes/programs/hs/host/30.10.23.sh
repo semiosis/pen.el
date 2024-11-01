@@ -1,0 +1,7 @@
+cd /root/notes;  "host" "#" "<==" "zsh"
+cd /root/notes;  "host" "#" "<==" "zsh"
+cd /root/notes;  "host" "#" "<==" "zsh"
+cd /root/notes;  "host" "#" "<==" "zsh"
+cd /root/notes;  "host" "#" "<==" "zsh"
+cd /root/notes;  "host" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/peniel;  "host" "-ntm" "#" "<==" "zsh"

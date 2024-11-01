@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=aUPSZBm1OjY" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=OoNr_JGfTNk" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://antonbosch.org/the-two-gospel-heresy" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=lTMcFZJTN78" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=I79XQBcQ6Vk" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=Rvvdx4i2TK8" "#" "<==" "pen-ci"

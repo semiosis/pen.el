@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "Galatians" "3:3-9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Galatians" "3:6-9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Galatians" "3:6-9" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Galatians" "3:1-5" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Galatians" "2:19" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Galatians" "4:21-22" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Galatians" "3:6-9" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Galatians" "3:6-9" "#" "<==" "bash"

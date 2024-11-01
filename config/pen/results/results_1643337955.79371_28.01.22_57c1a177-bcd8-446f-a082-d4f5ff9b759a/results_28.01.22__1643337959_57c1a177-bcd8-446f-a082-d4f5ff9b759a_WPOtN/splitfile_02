@@ -1,0 +1,1 @@
+ curl -X POST -H 'Content-Type: application/json' -d '{"amount": 100, "currency": "BTC"}' https://api.coinbase.com/v2/prices/spot?currency=USD | jq .data.amount

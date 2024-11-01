@@ -1,0 +1,27 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: Populate Library
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    library:
+      name: "Library"
+      description: "Library"
+      library_type: "Local"
+      library_storage:
+        name: "Library Storage"
+        description: "Library Storage"
+        storage_type: "Local"
+        path: "/mnt/library"
+        host: "localhost"
+        port: "8080"
+        protocol: "http"
+        username: "admin"
+        password: "admin"
+        remote_user: "admin"
+        remote_password: "admin"
+        remote_library_user: "admin"
+        remote_library_password: "admin"
+        remote_library_password_file: "/etc/ansible/library_password"
+        remote_library_key_file

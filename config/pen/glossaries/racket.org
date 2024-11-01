@@ -1,0 +1,69 @@
+* continuation
+https://docs.racket-lang.org/guide/conts.html
+
+* quasi-quoting / backtick operator
+#+BEGIN_SRC emacs-lisp
+  ;; racket has the backtick or 'quasiquote operator
+  (quasiquote x)
+  (quasiquote (unquote 5))
+
+
+  (let ((operator '+)
+        (opname "add"))
+    `(begin
+      (write "if I ")
+
+      (write ,opname)
+
+      (write "x and 2. the result is ")
+      (write (,operator x 2))))
+#+END_SRC
+
+* important functions
++ read-syntax
+
+* reader and expander
+
+The reader and expander always exist as a cooperating pair.
+
+But they have distinct roles.
+
+** reader
+
+Every reader must export a read-syntax function.
+
++ Racket passes two arguments to read-syntax:
+  - the *path* to the source file, and
+  - a *port* for reading data from the file. 
+
+*** read-syntax
+
+Every read-syntax has one job: to return code describing a module, packaged as a syntax object.
+
+#+BEGIN_SRC racket
+  #lang br/quicklang
+
+  (define (read-syntax path port)
+    (define src-lines (port->lines port))
+    (datum->syntax #f '(module lucy br
+                         42)))
+  (provide read-syntax)
+#+END_SRC
+
+* futures visualizer -- a useful tools for visualising the future of program runtime and profiling the CPU
+A graphical profiling tool for parallel programs written using future.
+
+The tool shows a timeline of a program’s execution including all
+future-related events, as well as the overall amount of processor
+utilization at any point during the program’s lifetime.
+
+* Redex -- Practical Semantics Engineering
+
+PLT Redex consists of a domain-specific language for specifying reduction semantics, plus a suite of tools for working with the semantics.
+
+* Syntax object
++ Racket syntax is also decorated with some interesting information such as:
+  - the source file
+  - line number
+  - column number
+  - information about lexical scoping

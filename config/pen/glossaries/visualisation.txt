@@ -1,0 +1,44 @@
+flame graph
+    http://www.brendangregg.com/flamegraphs.html
+
+    A visualization of profiled software,
+    allowing the most frequent code-paths to
+    be identified quickly and accurately.
+    
+    They can be generated using my open source
+    programs on
+    github.com/brendangregg/FlameGraph, which
+    create interactive SVGs.
+    
+    See the Updates section for other
+    implementations.
+    
+    Recently I've been helping with d3-flame-
+    graph.
+
+    Summary:
+        The x-axis shows the stack profile
+        population, sorted alphabetically (it
+        is not the passage of time), and the
+        y-axis shows stack depth, counting
+        from zero at the bottom.
+        
+        Each rectangle represents a stack
+        frame.
+        
+        The wider a frame is is, the more
+        often it was present in the stacks.
+        
+        The top edge shows what is on-CPU, and
+        beneath it is its ancestry.
+        
+        The colors are usually not
+        significant, picked randomly to
+        differentiate frames.
+
+    Examples:
+    - CPU
+    - Memory
+    - Off-CPU
+    - Hot/Cold
+    - Differential

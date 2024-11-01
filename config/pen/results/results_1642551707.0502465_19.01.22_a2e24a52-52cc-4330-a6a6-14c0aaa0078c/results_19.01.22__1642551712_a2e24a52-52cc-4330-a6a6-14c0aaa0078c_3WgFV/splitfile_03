@@ -1,0 +1,4 @@
+1. This function takes two arguments, s and col
+2. It then uses the some function to check if s is in col
+3. It then returns the result of the some function
+

@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="http://excalibur.haba.dk/templates/jw_technozine/css/template_css.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+<title>Excalibur Clan - WTF IS WRONG WITH YOU GUYS</title>
+<meta name="description" content="Age of Empires II Clan – Apple Macintosh, WTF IS WRONG WITH YOU GUYS." />
+<meta name="keywords" content="aoe, age of empires, mac, osx, age of conquerors, age of kings, apple, WTF, IS, WRONG, WITH, YOU, GUYS" />
+<meta name="Generator" content="Joomla! - Copyright (C) 2005 - 2006 Open Source Matters. All rights reserved." />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/comment_style.css"/>
+      <script type='text/javascript'>      /*<![CDATA[*/      var jc_option           = "com_smf";      var jc_autoUpdate       = "0";      var jc_update_period    = 300*1000;      var jc_orderBy          = "1";      var jc_commentForm;      var jc_livesite_busyImg = "http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif";      /*]]>*/      </script>
+<script src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/script_1_6.js?f" type="text/javascript"></script>
+<script type="text/javascript">
+var xajaxRequestUri="http://excalibur.haba.dk/index2.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=true;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_jcxLoadUserInfo(){return xajax.call("jcxLoadUserInfo", arguments, 1);}
+function xajax_jcxAddComment(){return xajax.call("jcxAddComment", arguments, 1);}
+function xajax_jcxShowSubscribeForm(){return xajax.call("jcxShowSubscribeForm", arguments, 1);}
+function xajax_jcxShowAddForm(){return xajax.call("jcxShowAddForm", arguments, 1);}
+function xajax_jcxSubscribe(){return xajax.call("jcxSubscribe", arguments, 1);}
+function xajax_jcxMoreComment(){return xajax.call("jcxMoreComment", arguments, 1);}
+function xajax_jcxUpdateComment(){return xajax.call("jcxUpdateComment", arguments, 1);}
+function xajax_jcxUnpublish(){return xajax.call("jcxUnpublish", arguments, 1);}
+function xajax_jcxEdit(){return xajax.call("jcxEdit", arguments, 1);}
+function xajax_jcxSave(){return xajax.call("jcxSave", arguments, 1);}
+	</script>
+	<script type="text/javascript" src="http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js'); } }, 6000);
+	</script>
+			<link rel="alternate" type="application/rss+xml" title="Excalibur Clan" href="http://excalibur.haba.dk/index2.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1" />
+				<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+	
+<script type="text/javascript">
+function imageHeader(selector,phpfile,wordwrap){
+	this.selector = selector;
+	this.phpfile = phpfile;
+	this.wordwrap = wordwrap;
+}
+
+var testURL = "templates/jw_technozine/images/test.png" ;
+var hideFlicker = true;
+var hideFlickerCSS = "templates/jw_technozine/css/hidden_css.css";
+var hideFlickerTimeout = 1000;
+var imageHeaders = [
+						new imageHeader("h2","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=853400&upper=true",false),
+						new imageHeader("h3","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=111&upper=true",false),
+						new imageHeader("div.componentheading","templates/jw_technozine/heading.php?font_size=12&font_color=D15546&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.active_menu","templates/jw_technozine/heading.php?font_size=12&font_color=fff&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.normal","templates/jw_technozine/heading.php?font_size=12&font_color=888&background_color=111&upper=true",false)
+						]
+</script>
+<script
+   type="text/JavaScript"
+   src="templates/jw_technozine/replacement.js">
+</script>
+
+
+</head>
+<body>
+	<a name="up" id="up"></a>
+	<div class="frame">
+		<div class="padding_outside">
+			<div class="greybox">
+				<div class="greybox_bottom_padding">
+					<div class="topnav">
+						<div class="toppath">
+							<span class="pathway"><a href="http://excalibur.haba.dk/index.php" class="pathway">Home</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" />   Forum </span>						</div>
+						<div class="topright">
+													</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="greybox_bottom_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_bottom">
+					<div id="logobox">
+						<div id="logoarea">
+							<div id="searcharea">
+								
+<form action="index.php?option=com_search" method="get">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="search" class="inputbox" type="text" size="20" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />	</div>
+
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="" />	
+</form>							</div>
+						</div>
+					</div>
+					<div class="padding">
+						<div class="main_header"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="greybox_bottom_padding">
+					<div class="middlenav">
+						<div class="datearea">
+							Friday, December 19 2008						</div>
+						<div id="horizmenu">
+							<ul class="mainlevel"><li><a href="http://excalibur.haba.dk/index.php?option=com_frontpage&amp;Itemid=1" class="normal">Home</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=blogsection&amp;id=0&amp;Itemid=9" class="normal">Blog</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28" class="active_menu">Forum</a></li></ul>						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="mainbody">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr valign="top">
+														<td class="leftcol">
+								<div class="leftdiv">
+									<div class="firediv">
+																													</div>
+									<div class="leftmodules">
+												<div class="moduletable">
+							<h3>
+					Other Menu				</h3>
+				
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=section&amp;id=4&amp;Itemid=36" class="mainlevel" >Tutorials</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_docman&amp;Itemid=35" class="mainlevel" >Rec. Games</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=12&amp;Itemid=38" class="mainlevel" >EX Members</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_newsfeeds&amp;catid=26&amp;Itemid=37" class="mainlevel" >Mac Newsfeeds</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=category&amp;sectionid=3&amp;id=7&amp;Itemid=39" class="mainlevel" >FAQs</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_weblinks&amp;Itemid=30" class="mainlevel" >Links</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=40" class="mainlevel" >How to register</a></td></tr>
+</table>		</div>
+				<div class="moduletable">
+							<h3>
+					Recent Topics				</h3>
+				<ul class="latestnews"> <li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=271.msg3243#new">WTF IS WRONG WITH YOU GUYS</a> (9) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=170.msg3238#new">New record</a> (29) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=272.0#new">New AOE II forums (not fully established site though :()</a> (0) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=137" title="View the profile of Stormwind">Stormwind</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=248.msg3233#new">Clan Impersonater</a> (12) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=1" title="View the profile of Haba">Haba</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=270.msg3228#new">dsl, fastpath</a> (1) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=1" title="View the profile of Haba">Haba</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=267.msg3224#new">M@a fc</a> (8) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=269.msg3222#new">Recs not working with new update</a> (8) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=263.msg3209#new">Fastest time castle !! new record!</a> (10) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=241.msg3207#new">me and tomato vs 5 nomadwe </a> (8) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=128" title="View the profile of quoquo">quoquo</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=197.msg3197#new">Hosting with WIRELESS ROUTER</a> (6) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=128" title="View the profile of quoquo">quoquo</a></li></ul>		</div>
+				<div class="moduletable">
+							<h3>
+					Login Form				</h3>
+					<form action="http://excalibur.haba.dk/index.php" method="post" name="login" >
+		
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td>
+			<label for="mod_login_username">
+				Username			</label>
+			<br />
+			<input name="username" id="mod_login_username" type="text" class="inputbox" alt="username" size="10" />
+			<br />
+			<label for="mod_login_password">
+				Password			</label>
+			<br />
+			<input type="password" id="mod_login_password" name="passwd" class="inputbox" size="10" alt="password" />
+			<br />
+			<input type="checkbox" name="remember" id="mod_login_remember" class="inputbox" value="yes" alt="Remember Me" />
+			<label for="mod_login_remember">
+				Remember me			</label>
+			<br />
+			<input type="submit" name="Submit" class="button" value="Login" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://excalibur.haba.dk/index.php?option=com_registration&amp;task=lostPassword">
+				Lost Password?</a>
+		</td>
+	</tr>
+		</table>
+	
+	<input type="hidden" name="option" value="login" />
+	<input type="hidden" name="op2" value="login" />
+	<input type="hidden" name="lang" value="english" />
+	<input type="hidden" name="return" value="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=271.msg3243" />
+	<input type="hidden" name="message" value="0" />
+	<input type="hidden" name="j98bd93c676e35afa0740256c3ea41ff3" value="1" />
+	</form>
+			</div>
+				<div class="moduletable">
+							<h3>
+					Who's Online				</h3>
+				We have 1 guest online		</div>
+											</div>
+								</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+														<td class="middlecol">
+								<div class="middlediv">
+																		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="WTF IS WRONG WITH YOU GUYS" />
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum" />
+	<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/script.js?rc2"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1";
+		var smf_images_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images";
+		var smf_scripturl = "http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&";
+	// ]]></script>
+	<title>WTF IS WRONG WITH YOU GUYS</title>
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/style.css?rc2" />
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/default/print.css?rc2" media="print" />
+	<link rel="help" href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=help" target="_blank" />
+	<link rel="search" href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=search" />
+	<link rel="contents" href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28" />
+	<link rel="alternate" type="application/rss+xml" title=" - RSS" href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&type=rss;action=.xml" />
+	<link rel="prev" href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.0;prev_next=prev" />
+	<link rel="next" href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.0;prev_next=next" />
+	<link rel="index" href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&board=2.0" />
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+</head>
+<body>
+	<div id="headerarea" style="padding: 12px 30px 4px 30px;">
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="position: relative;">
+			<tr>
+				<td colspan="2" valign="bottom" style="padding: 5px; white-space: nowrap;">
+					<span style="font-family: Georgia, sans-serif; font-size: xx-large;"></span>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top">
+						<table width="99%" cellspacing="0" cellpadding="5" class="tborder"><tr>
+						<td class="titlebg" width="100%">User Info</td></tr><tr><td width="100%" valign="top" class="windowbg2" style="font-family: verdana, arial, sans-serif; font-size: x-small;">
+							Welcome, <b>Guest</b>. Please <a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=login">login</a> or <a href="http://excalibur.haba.dk/index.php?option=com_registration&task=register">register</a>.<br />
+							December 19, 2008, 11:24:44 AM<br />
+
+							<form action="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=login2" method="post" style="margin: 3px 1ex 1px 0; text-align:right;">
+								<input type="text" name="user" size="10" /> <input type="password" name="passwrd" size="10" />
+								<select name="cookielength">
+									<option value="60">1 Hour</option>
+									<option value="1440">1 Day</option>
+									<option value="10080">1 Week</option>
+									<option value="302400">1 Month</option>
+									<option value="-1" selected="selected">Forever</option>
+								</select>
+								<input type="submit" value="Login" /><br />
+								Login with username, password and session length
+							</form>
+						</td></tr></table>
+
+					<form action="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=search2" method="post" style="margin: 0; margin-top: 7px;">
+						<b>Search: </b><input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 8ex;" />&nbsp;
+						<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=search;advanced">Advanced search</a>
+						<input type="hidden" name="advanced" value="0" />
+						<input type="hidden" name="brd[2]" value="2" />
+					</form>
+
+				</td>
+				<td width="262" style="padding-left: 5px;" valign="top">
+					<br /><table width="99%" cellspacing="0" cellpadding="5" class="tborder">
+					<tr>
+					<td class="titlebg" width="100%">Key Stats</td>
+					</tr>
+					<tr>
+					<td class="windowbg2" width="100%" style="font-size: x-small"><b>3162</b> Posts in <b>253</b> Topics by <b>125</b> Members<br />
+							Latest Member: <b> <a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=138">morane</a></b>
+						</td></tr></table>
+				</td>
+			</tr>
+		</table>
+				<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/home.gif" alt="Home" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=help"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/help.gif" alt="Help" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=search"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/search.gif" alt="Search" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=login"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/login.gif" alt="Login" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/index.php?option=com_registration&task=register"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/register.gif" alt="Register" style="margin: 2px 0;" border="0" /></a>
+	</div>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td id="bodyarea" style="padding: 1ex 20px 2ex 20px;">
+<a name="top"></a>
+<a name="msg3230"></a>
+<table width="100%" cellpadding="3" cellspacing="0">
+	<tr>
+		<td valign="bottom"><span class="nav" style="font-size: smaller;"><b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28" class="nav"></a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&#2" class="nav">Age of Empires 2 - THe Conquerors Forum</a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&board=2.0" class="nav">Deathmatch discussion</a></b> (Moderator: <a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=7" title="Board Moderator">exc_imac</a>) &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.0" class="nav">WTF IS WRONG WITH YOU GUYS</a></b></span></td>
+		<td valign="bottom" align="right" class="smalltext">
+			<span class="nav"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.0;prev_next=prev#new">&laquo; previous</a> <a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.0;prev_next=next#new">next &raquo;</a></span>
+		</td>
+	</tr>
+</table>
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="margin-bottom: 1ex;">
+	<tr>
+		<td class="catbg" width="100%" height="35">
+			<table cellpadding="3" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<b>Pages:</b> [<b>1</b>] 
+					</td>
+					<td align="right" style="font-size: smaller;"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=printpage;topic=271.0" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/print.gif" alt="Print" border="0" /></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="border-bottom: 0;">
+	<tr class="titlebg">
+		<td valign="middle" width="15%" style="padding-left: 6px;">
+			<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" align="middle" /> Author
+		</td>
+		<td valign="middle" width="85%" style="padding-left: 6px;" id="top_subject">
+			Topic: WTF IS WRONG WITH YOU GUYS &nbsp;(Read 291 times)
+		</td>
+	</tr>
+</table>
+<form action="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=quickmod2;topic=271.0" method="post" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return in_edit_mode == 1 ? modify_save('3ece11a552a908400cbd8d8eaefec15c') : confirm('Are you sure you want to do this?');">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="bordercolor">
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=137" title="View the profile of Stormwind">Stormwind</a></b>
+							<div class="smalltext">
+								Newbie<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 4<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=137"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3230#msg3230"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3230">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3230#msg3230">WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b> on:</b> August 20, 2008, 06:21:33 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">I was playing a 3v3 with Leo today and it was like celts v britons in the pocket and the celts dude was massing onnies right. Then Leo starts flaming him, saying shit like &quot;ONNIES DON&#039;T BEAT LB&#039;s&quot; how stupid is that?<br /><br />could I please have some backup&nbsp; on this topic?</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3230">
+									&#171; <i>Last Edit: August 20, 2008, 06:24:41 AM by Stormwind</i> &#187;
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3231"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=127" title="View the profile of Miko Reglia">Miko Reglia</a></b>
+							<div class="smalltext">
+								Newbie<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 1<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=127"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3231#msg3231"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3231">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3231#msg3231">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #1 on:</b> August 20, 2008, 02:06:18 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">This is telperion, I was the celts, and ¡Paço! was the britons, we were in the pocket, tho we were massed in the middle.&nbsp; I &quot;massed&quot; like 10 onnies or so to counteract paco&#039;s massing up longbowmen vs. leo&#039;s chinese.&nbsp; I don&#039;t remember if it was leo said that, but I know someone did, but it was a good game, wish we had recorded that 4v4. <img src="http://excalibur.haba.dk/smf/Smileys/default/tongue.gif" alt="Tongue" border="0" /></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3231">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3234"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><br />
+								Posts: 607<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=4;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=4"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3234#msg3234"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3234">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3234#msg3234">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #2 on:</b> August 20, 2008, 11:09:36 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">nah haba dont worry, these guys are just noobs lol<br /><br />the thing is, longbows do beat brit, if the brit is not good.&nbsp; but if hte brit is good, the longbows win.&nbsp; <br /><br />I&#039;ll explain it.&nbsp; <br /><br />seige onnies have a fixed range which 8+1 in post- imp (for teuts, which is what teleperion was).&nbsp; Longbows have a range of 6+6 in post imp.&nbsp; so the seige onnies will be killed by massed lb without killing any longbows.&nbsp; In fact this is what happens:&nbsp; the seige onnie gets close enough to kill the first few longbows, but a few rows behind that that the seige onnie CANT EVEN SEE hit and kill the onnie!!<br /><br />so in fact we lost the game coz teleperion was such a newb, when i was in middle and fighting brits plus franks, he sent just onnies.<br /><br />Now let me describe the situation:<br /><br />i went to the middle, and knowing that there were franks and brits, i made champs halbs chukos and seige rams (seige rams and trebs are the CORRECT) seige vs longbows btw).&nbsp; the longbow guy massed lb, but as i tried to prepare my rams to hit him, the frank guy kept attackin my rams.&nbsp; so i couldnt push forward.&nbsp; even the flank persian enemy sent some paladins on me lol.<br /><br />Then our ally teleprion sent the nooby seige onnies, and they were killed.&nbsp; In fact, when i tried to send the seige rams i had forward, his idiotic onnies killed some of my rams lol.&nbsp; we really needed teuts to make something like bb cannons or paladins/skirm/trebs to be honest.&nbsp; <br /><br />To make it worse, stormwind was goth, and was making cav archers vs persians on the flank lol.<br /><br />so i think we need to talk about what are the right units to kill the right enemy civ/army, so that we learn better for future games to be less disastrous</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3234">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3235"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=137" title="View the profile of Stormwind">Stormwind</a></b>
+							<div class="smalltext">
+								Newbie<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 4<br />
+								<br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=137"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3235#msg3235"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3235">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3235#msg3235">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #3 on:</b> August 21, 2008, 02:12:14 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">nooby siege onnies? pfft, at least he didnt ram pallies</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3235">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3236"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=10" title="View the profile of aztek">aztek</a></b>
+							<div class="smalltext">
+								Jr. Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 59<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://legacy-zone.com/naruto.gif" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=10"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3236#msg3236"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3236">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3236#msg3236">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #4 on:</b> August 21, 2008, 02:26:38 AM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">with mac lag, seige beats pretty much everything. longbows do not own seige onagers in DM, dm is another game compared to rm, the economy you can make in dm is what allows non-stop seige and it shows the power of seige, any civ with seige onagers and decent rams can rape brits absolutely, sure seige onies can get out ranged but in dm lol it doesn&#039;t matter.<br /><br />sure from RM perspective longbows can own seige onies, but thats only because most cant mass seige onies and still have a huge amount of eco, so ofcourse in that case with a bit of micro and overmassing the seige onie masser you can beat him, but that can apply to halbs champ mass vs seige onies in rm...<br /><br />honestly in dm brits are a weaker civ, they can&#039;t push very well at all, because they dont have extra treb or seige range, they don&#039;t have decent rams... basically a slow push civ most of the time...<br /><br />the only advantage of brit is they are a cheap civ military wise, if you can outlast your oponent and use the gold adv you will beat him, but in a team dm that is not the case, since trading is normal, with gold seige onies will always win. <br /><br />Better seige is always a clear advantage in DM.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3236">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3239"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=54" title="View the profile of le_fol">le_fol</a></b>
+							<div class="smalltext">
+								Newbie<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 27<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=14;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=54"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.the-emperors.net/" title="the emperors" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3239#msg3239"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3239">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3239#msg3239">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #5 on:</b> September 11, 2008, 12:55:39 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">ok, but in my humble opinion methinks brits have extra range for trebs/onagers (=siege engineer).</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3239">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3240"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=10" title="View the profile of aztek">aztek</a></b>
+							<div class="smalltext">
+								Jr. Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 59<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://legacy-zone.com/naruto.gif" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=10"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3240#msg3240"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3240">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3240#msg3240">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #6 on:</b> September 11, 2008, 05:44:41 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">yeah lbs have alot of range they can kill some onies, but paladins are technically supposed to kill seige, well lol that does not happen here... Im sure everyone has seen pallies die to onies, the lag makes seige extra strong, so any civ with seige onies can pretty much walk-over brits... teuts, sarcs, celts, korea, aztecs <img src="http://excalibur.haba.dk/smf/Smileys/default/grin.gif" alt="Grin" border="0" /><br /><br />brit does have seige engineers but any civ with seige onies also gets the extra range, takes a few onies to wipe out 4 trebs, they keep pushing with trebs and lbs have to keep moving back, in a no lag game yeah brit can prolly kill the onies and micro trebs but i dont see that beign the case in a team game with lag</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3240">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3241"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><br />
+								Posts: 607<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=4;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=4"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3241#msg3241"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3241">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3241#msg3241">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #7 on:</b> September 15, 2008, 08:47:09 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">well, then aztec after reading your posts i&#039;ve come to the following conclusion.<br /><br />You are probably right, that seige onnies in a laggy game should win when 2 skilled players are playing eachother.&nbsp; However, since i&#039;ve seen brits kill seige onnies in laggy games multiple times.. i must conclude that the person playing the seige onnies (it was paco in the game that trigerred this discusion, i think) must not have been very skilled.<br /><br />And in fact, i&#039;ve beat seige onnies with lb many times, the last time of which the seige onnies were zoze&#039;s... again, probably the result of the seige onnie civ not being played right, i guess.&nbsp; in the case of my game vs zoze, i think&nbsp; he was gathering them too far forward or something, they would just walk up and be killed b4 firing a shot, and i could make more lb than the onnie could kill anyway.&nbsp; the trebs didnt kill any, the lb got them all.&nbsp; In the dm in question with paco, the same thing happened, but here it was a bit different:&nbsp; the guy playing brits had so many trash units (skirm, halbs) in front of the lb, that the seige onnies never got into range to hit the lb; the result was that the lb just murdered his seige onnies while the onnies were trying to get close (Probably he should killed the trrash units first and gone for the lb later?)</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3241">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3242"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=10" title="View the profile of aztek">aztek</a></b>
+							<div class="smalltext">
+								Jr. Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/star.gif" alt="*" border="0" /><br />
+								Posts: 59<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://legacy-zone.com/naruto.gif" width="65" height="65" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=10"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3242#msg3242"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3242">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3242#msg3242">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #8 on:</b> September 15, 2008, 10:19:49 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">ok if your killing someones siege onies and winning it&#039;s simply because the other person is not playing the siege civ right like you said. some general info about siege onies:<br /><br />- all civs with siege onies have the +1 siege range and they all have siege rams with the exception of teuts<br /><br />so to counter all the siege you would expect the brit to mass:<br /><br />lbs, halbs, onies, trebs<br /><br />so you would basically try and out micro his seige and try to push extremely slowly or just defend<br /><br />but the thing is the siege onie player can make an extremely strong army that makes it basically impossible for the brit to overcome<br /><br />the trick is to not loose any onies due to bad army skills, they need to be on stand ground most of the time to ensure the lbs come to you not the other way around.<br /><br />so since we alrdy know all seige onie civs have +1 seige, we can already assume the way to push is with trebs, it becomes like a castle blood, where the only purpose is to kill castles while the other guys only purpose is to defend his castles<br /><br />but if the seige guys army is made of halbs, skirms, onies, trebs and rams you can already see why it would be hard for brit to stop it, the seige users army only purpose is to stand ground next to his trebs, when enemie army comes defense stance, but stand ground assures his army does not get killed one by one and he moves with his trebs, ensuring maximum protection<br /><br />sure the brit can try and mass trebs and micro but the other guy can just send in a few rams and onies and kill the trebs, while brit on the other hand only has trebs to fight trebs (lbs suck at killing trebs)<br /><br />the siege guy has trebs, rams and onies to fight trebs, so in a treb war this is already basically a 3:1 handicap <br /><br />each castle that dies is a step closer to death for the brit.<br /><br />Finally i guess the conclusion i personally have here is that the true advantage that seige onie civs have vs a civ like brits is not their siege onagers, but their <b>trebs</b>. <br /><br />Siege onies provide maximum defense for trebs, and combined with other units they are like a moving giant, so if your brit vs a siege onie civ and the enemie is not whoaring the trebs chances are you will win <img src="http://excalibur.haba.dk/smf/Smileys/default/smiley.gif" alt="Smiley" border="0" /> <br /><br />- Unless the other guy has a civ with rams bonuses such as celts and mongols.<br /><br />PS: Brit also has the +1 seige range</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3242">
+									&#171; <i>Last Edit: September 15, 2008, 10:29:37 PM by aztek</i> &#187;
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0 1px;">
+		<a name="msg3243"></a><a name="new"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tr>
+						<td valign="top" width="16%" rowspan="2" style="overflow: hidden;">
+							<b><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></b>
+							<div class="smalltext">
+								Global Moderator<br />
+								Hero Member<br />
+								<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/stargmod.gif" alt="*" border="0" /><br />
+								Posts: 607<br />
+								<br />
+								<div style="overflow: auto; width: 100%;"><img src="http://excalibur.haba.dk/smf/index.php?action=dlattach;attach=4;type=avatar" alt="" class="avatar" border="0" /></div><br />
+								
+								
+								
+								<br />
+								<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=profile;u=4"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0" /></a>
+								<a href="http://www.excalibur.haba.dk" title="E//X" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/www_sm.gif" alt="WWW" border="0" /></a>
+							</div>
+						</td>
+						<td valign="top" width="85%" height="100%">
+							<table width="100%" border="0"><tr>
+								<td valign="middle"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3243#msg3243"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" border="0" /></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_3243">
+										<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg3243#msg3243">Re: WTF IS WRONG WITH YOU GUYS</a>
+									</div>
+									<div class="smalltext">&#171; <b>Reply #9 on:</b> September 17, 2008, 08:42:49 PM &#187;</div></td>
+								<td align="right" valign="bottom" height="20" nowrap="nowrap" style="font-size: smaller;">
+								</td>
+							</tr></table>
+							<hr width="100%" size="1" class="hrcolor" />
+							<div class="post">thx tec,<br /><br />that&#039;s the best explanation i&#039;ve ever read.&nbsp; Indeed, it explains why the one time i was massed with koreans i lost:&nbsp; i hadnt made many trebs (3 i think) while the other person had a dozen...</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_3243">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/ip.gif" alt="" border="0" />
+									Logged
+								</td>
+							</tr></table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+	</td></tr>
+	<tr><td style="padding: 0 0 1px 0;"></td></tr>
+</table>
+<a name="lastPost"></a>
+
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="margin-top: 1ex;">
+	<tr>
+		<td class="catbg" width="100%" height="30">
+			<table cellpadding="3" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<a name="bot"></a><b>Pages:</b> [<b>1</b>] 
+					</td>
+					<td align="right" style="font-size: smaller;"><a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&action=printpage;topic=271.0" target="_blank"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/print.gif" alt="Print" border="0" /></a>&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/xml_topic.js"></script>
+<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+	quickReplyCollapsed = true;
+
+	smf_topic = 271;
+	smf_start = 0;
+	smf_show_modify = 1;
+
+	// On quick modify, this is what the body will look like.
+	var smf_template_body_edit = '<div id="error_box" style="padding: 4px; color: red;"></div><textarea class="editor" name="message" rows="12" style="width: 94%; margin-bottom: 10px;">%body%</textarea><br /><input type="hidden" name="sc" value="3ece11a552a908400cbd8d8eaefec15c" /><input type="hidden" name="topic" value="271" /><input type="hidden" name="msg" value="%msg_id%" /><div style="text-align: center;"><input type="submit" name="post" value="Save" onclick="return modify_save(\'3ece11a552a908400cbd8d8eaefec15c\');" accesskey="s" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" onclick="return modify_cancel();" /></div>';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '<input type="text" name="subject" value="%subject%" size="60" style="width: 99%;"  maxlength="80" />';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '<a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.msg%msg_id%#msg%msg_id%">%subject%</a>';
+	var smf_template_top_subject = "Topic: %subject% &nbsp;(Read 291 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// ]]></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top" align="right" class="smalltext"> <span class="nav"> <a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.0;prev_next=prev#new">&laquo; previous</a> <a href="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28&topic=271.0;prev_next=next#new">next &raquo;</a></span></td>
+	</tr>
+</table>
+<div style="padding-top: 4px; padding-bottom: 4px;"></div>
+</form>
+<div align="right" style="margin-bottom: 1ex;">
+	<form action="http://excalibur.haba.dk/index.php?option=com_smf&Itemid=28" method="get">
+		<span class="smalltext">Jump to:</span>
+		<select name="jumpto" id="jumpto" onchange="if (this.selectedIndex > 0 &amp;&amp; this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			<option value="">Please select a destination:</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#1">General</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="board=1.0"> => The pub / general discussion</option>
+			<option value="board=12.0"> => Clantalk</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#2">Age of Empires 2 - THe Conquerors Forum</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="board=11.0"> => Age of Empires 2</option>
+			<option value="board=6.0"> => Rm-1vs1 discussion</option>
+			<option value="board=5.0"> => Rm-teamgame discussion</option>
+			<option value="board=8.0"> => Rec. Games Discussion</option>
+			<option value="board=4.0"> => Memorable games</option>
+			<option value="board=2.0" selected="selected"> => Deathmatch discussion</option>
+		</select>&nbsp;
+		<input type="button" value="go" onclick="if (this.form.jumpto.options[this.form.jumpto.selectedIndex].value) window.location.href = smf_scripturl + this.form.jumpto.options[this.form.jumpto.selectedIndex].value;" />
+	</form>
+</div>
+<br /></td>
+	</tr></table>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			function smfFooterHighlight(element, value)
+			{
+				element.src = smf_images_url + "/" + (value ? "h_" : "") + element.id + ".gif";
+			}
+		// ]]></script>
+		<table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1 RC3</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF &copy; 2001-2006, Lewis Media</a><br/>Joomla Bridge by <a href="http://www.JoomlaHacks.com" title="JoomlaHacks.com" target="_blank">JoomlaHacks.com</a>
+		</span><br /><font size="1">Theme by Nesianstyles | Buttons by Andrea</font>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>								</div>
+							</td>
+													</tr>
+					</table>	
+				</div>
+				<div class="greybox_top_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_top_padding">
+					<div class="topnav" id="footer">
+						<div class="syndicate">
+			<div align="center">
+			<a href="http://excalibur.haba.dk/index.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1">
+				<img src="http://excalibur.haba.dk/images/M_images/rss20.gif"  alt="RSS 2.0" name="RSS20" align="middle" border="0" /></a>
+		</div>
+		</div></div>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- 1229682284 -->

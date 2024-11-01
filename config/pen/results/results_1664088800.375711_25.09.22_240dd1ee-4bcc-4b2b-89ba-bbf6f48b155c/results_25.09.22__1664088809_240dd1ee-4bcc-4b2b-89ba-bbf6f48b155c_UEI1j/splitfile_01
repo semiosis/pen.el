@@ -1,0 +1,4 @@
+ -name clipboard.txt
+./clipboard.txt
+root@pen-mele:~/notes# find . -name hi.cl
+root@pen-mele:~/notes# find -name hi.cl

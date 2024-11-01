@@ -1,0 +1,3 @@
+"com.rpl/specter" is a library for generating HTML reports from Clojure test
+results.
+

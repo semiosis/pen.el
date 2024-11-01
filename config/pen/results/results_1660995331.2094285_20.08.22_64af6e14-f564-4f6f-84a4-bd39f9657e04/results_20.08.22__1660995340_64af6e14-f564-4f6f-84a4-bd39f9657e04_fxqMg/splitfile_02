@@ -1,0 +1,15 @@
+
+  (let ((n (- char ?a)))
+    (if (>= n 0)
+        (char-to-string (+ ?a n))
+      (char-to-string (+ ?A (- n))))))
+
+(defun pen-modeline-name-ascii ()
+  "return the name of the pen daemon in ascii"
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "PEN")
+          ((s-matches? "pen-" dn)
+           (s-replace-regexp "pen-" "" dn))
+          (t
+           "EMACS"))))

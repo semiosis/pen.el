@@ -1,0 +1,16 @@
+
+main :: IO ()
+main = do
+  output <- getResults "Weather"
+  print $ unlines $ fromMaybe [] output
+
+# The first line defines the main function. It takes no arguments and returns
+# nothing.
+
+# The second line calls the getResults function with the string "Weather" as
+# its argument.
+
+# The third line defines the variable output to be the result of the call to
+# getResults.
+
+# The fourth line prints the result of the call

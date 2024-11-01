@@ -1,0 +1,7 @@
+"random-uuid"
+  (GET ["/"]
+    (let [resp (resp/ok (random-uuid))]
+      (resp/write resp)
+      (resp/content-type resp "text/plain")
+      (resp/done resp)))
+

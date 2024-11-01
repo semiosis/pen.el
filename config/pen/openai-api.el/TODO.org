@@ -1,0 +1,36 @@
+* OpenAI API
+** Set up search
+https://beta.openai.com/docs/guides/search
+
+** Set up classification
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  cat $MYGIT/semiosis/openai-classification-training-data/movie-comment-sentiment-analysis.jsonl | sed -n "2{p;q}" | jq .
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+{
+  "text": "i sympathize with the plight of these families, but the movie doesn't do a very good job conveying the issue at hand.",
+  "label": "Negative",
+  "metadata": {
+    "source": "example.com"
+  }
+}
+#+end_src
+
+*** bash
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  curl https://api.openai.com/v1/files \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
+    -F purpose="classifications" \
+    -F file='@train.jsonl'
+#+END_SRC
+
+*** python
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  import openai
+  fp="$MYGIT/semiosis/openai-classification-training-data/movie-comment-sentiment-analysis.jsonl"
+  openai.File.create(file=open(fp), purpose="classifications")
+#+END_SRC
+
+** Set up something to both estimate and get usage metrics

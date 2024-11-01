@@ -1,0 +1,9 @@
+The above code is a little bit confusing, but it's doing the following:
+
+* First, we create two empty hashes: $sp and $sk.
+* Then we iterate through the keys of %$s.
+* For each key, we iterate through the keys of %{$s->{$key}}.
+* For each of these keys, we store them in $sp.
+* We also store the lowercase version of the key in $sk.
+
+

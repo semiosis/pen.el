@@ -1,0 +1,5 @@
+cd /root/.pen/org-brain/people;  "feh" "/volumes//home/shane/dump/home/shane/notes/ws/screenshots/file_1701563568_screen_qJkIZ7_rand-5672_pid-1050966.png" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "feh" "/volumes/home/shane/dump/home/shane/notes/ws/screenshots/file_1701563568_screen_qJkIZ7_rand-5672_pid-1050966.png" "#" "<==" "bash"
+cd /root/.pen/org-brain/people;  "feh" "/volumes/home/shane/dump/home/shane/notes/ws/screenshots/file_1701563568_screen_qJkIZ7_rand-5672_pid-1050966.png" "#" "<==" "bash"
+cd /root/.pen/org-brain/people;  "feh" "/volumes/home/shane/dump/home/shane/notes/ws/screenshots/file_1701563568_screen_qJkIZ7_rand-5672_pid-1050966.png" "#" "<==" "bash"
+cd /root/.pen/org-brain/people;  "feh" "/volumes/home/shane/dump/home/shane/notes/ws/screenshots/file_1701563568_screen_qJkIZ7_rand-5672_pid-1050966.png" "#" "<==" "bash"

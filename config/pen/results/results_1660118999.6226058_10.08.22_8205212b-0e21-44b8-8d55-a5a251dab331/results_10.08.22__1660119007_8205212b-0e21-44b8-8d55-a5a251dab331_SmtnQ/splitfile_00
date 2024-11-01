@@ -1,0 +1,7 @@
+artyom22
+""".strip()
+
+    expected_result = {'author': 'artyom22',
+                       'title': 'This is a poem about stars, tatoos and geometry.'}
+
+    assert reader.read(data) == expected_result

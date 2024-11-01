@@ -1,0 +1,403 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 27 Jan 2024 10:05:35 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Cookie
+Set-Cookie: session=.eJwVy0sOAiAMANG7cILSQqFehvRDNyaaqHFjvLu4fZP5lOXPR67X_bpv643lUhryIB9B2pSpEbYEEwlg2UJ1YOM6q42d6GptZAwYEeabTzQWOAg5I2MKCIor9ozoSFMhHf4L40w-Zq3X89FGdehGnbV8f5bSKi0.ZbTVbw.NV_KFTI9twAlfcge0T8SNwn8Khw; HttpOnly; Path=/
+X-Clacks-Overhead: GNU Terry Pratchett
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Permissions-Policy: interest-cohort=()
+Content-Security-Policy: default-src 'none'; style-src 'self' 'unsafe-inline'; img-src * data:; script-src 'self' 'unsafe-inline'; frame-ancestors 'none'
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+~swflint/emacs-universal-sidecar -
+
+A universal "sidecar" buffer for emacs, inspired by the `org-roam-mode` buffer. -
+
+sourcehut git
+</title>
+<link href="/static/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="/static/logo.png" rel="icon" sizes="any" type="image/png"/>
+<link href="/static/main.min.df853ed0.css" rel="stylesheet"/>
+<meta content="git" name="vcs"/>
+<meta content="main" name="vcs:default-branch"/>
+<meta content="https://git.sr.ht/~swflint/emacs-universal-sidecar" name="vcs:clone"/>
+<meta content="git@git.sr.ht:~swflint/emacs-universal-sidecar" name="vcs:clone"/>
+<meta content="https://git.sr.ht/~swflint/emacs-universal-sidecar" name="forge:summary"/>
+<meta content="https://git.sr.ht/~swflint/emacs-universal-sidecar/tree/{ref}/{path}" name="forge:dir"/>
+<meta content="https://git.sr.ht/~swflint/emacs-universal-sidecar/tree/{ref}/{path}" name="forge:file"/>
+<meta content="https://git.sr.ht/~swflint/emacs-universal-sidecar/blob/{ref}/{path}" name="forge:rawfile"/>
+<meta content="https://git.sr.ht/~swflint/emacs-universal-sidecar/tree/{ref}/{path}#L{line}" name="forge:line"/>
+<meta content="git.sr.ht/~swflint/emacs-universal-sidecar git https://git.sr.ht/~swflint/emacs-universal-sidecar" name="go-import"/>
+</head>
+<body>
+<nav class="container navbar navbar-light navbar-expand-sm">
+<span class="navbar-brand">
+<span aria-hidden="true" class="icon icon-circle"><svg height="22" viewbox="0 0 512 512" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"></path></svg>
+</span>
+<a href="https://sr.ht">
+    sourcehut
+  </a>
+</span>
+<ul class="navbar-nav">
+</ul>
+<div class="login">
+<span class="navbar-text">
+<a href="https://meta.sr.ht/oauth/authorize?client_id=25ff6e5ce60d7345&amp;scopes=profile,keys,b99a95de3e69c958/jobs:write&amp;state=%2F~swflint%2Femacs-universal-sidecar%2F%3F" rel="nofollow">Log in</a>
+    —
+    <a href="https://meta.sr.ht">Register</a>
+</span>
+</div>
+</nav>
+<div class="header-tabbed">
+<div class="container">
+<h2>
+<a href="/~swflint/">~swflint</a>/<wbr/>emacs-universal-sidecar
+    </h2>
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" href="/~swflint/emacs-universal-sidecar">summary</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~swflint/emacs-universal-sidecar/tree">tree</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~swflint/emacs-universal-sidecar/log">log</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~swflint/emacs-universal-sidecar/refs">refs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~swflint/emacs-universal-sidecar/licenses">licenses</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-extension">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+        A universal "sidecar" buffer for emacs, inspired by the `org-roam-mode` buffer.
+      </div>
+<div class="col-md-6 licenses">
+<a href="/~swflint/emacs-universal-sidecar/licenses">
+      Licensed under
+      
+      CC-BY-SA-4.0, 
+      
+      CC0-1.0, 
+      
+      GPL-3.0-or-later
+      
+      
+      </a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row" style="margin-bottom: 1rem">
+<div class="col-md-6">
+<div class="event-list" style="margin-bottom: 0.5rem">
+<div class="event">
+<div>
+<a href="/~swflint/emacs-universal-sidecar/commit/9050eaea7946e613a4b9ecd9dd1462614699edb1" title="9050eaea7946e613a4b9ecd9dd1462614699edb1">9050eaea</a>
+  
+  —
+  
+  
+  <a href="/~swflint/">Samuel W. Flint</a>
+<small class="pull-right">
+<a href="/~swflint/emacs-universal-sidecar/log?from=9050eaea7946e613a4b9ecd9dd1462614699edb1#log-9050eaea7946e613a4b9ecd9dd1462614699edb1" id="log-9050eaea7946e613a4b9ecd9dd1462614699edb1"><span title="2024-01-15 17:27:54 UTC">11 days ago</span></a>
+</small>
+</div>
+<pre class="commit">Make universal-sidecar-buffer-mode-hook customizable</pre>
+</div>
+<div class="event">
+<div>
+<a href="/~swflint/emacs-universal-sidecar/commit/3bc115d05264cc786eb5864a343ec08e52b30a22" title="3bc115d05264cc786eb5864a343ec08e52b30a22">3bc115d0</a>
+  
+  —
+  
+  
+  <a href="/~swflint/">Samuel W. Flint</a>
+<small class="pull-right">
+<a href="/~swflint/emacs-universal-sidecar/log?from=3bc115d05264cc786eb5864a343ec08e52b30a22#log-3bc115d05264cc786eb5864a343ec08e52b30a22" id="log-3bc115d05264cc786eb5864a343ec08e52b30a22"><span title="2024-01-15 17:26:45 UTC">11 days ago</span></a>
+</small>
+</div>
+<pre class="commit">Fix date typo</pre>
+</div>
+<div class="event">
+<div>
+<a href="/~swflint/emacs-universal-sidecar/commit/dcb8b31d98e2729aefb105556ae59685b03bd234" title="dcb8b31d98e2729aefb105556ae59685b03bd234">dcb8b31d</a>
+  
+  —
+  
+  
+  <a href="/~swflint/">Samuel W. Flint</a>
+<small class="pull-right">
+<a href="/~swflint/emacs-universal-sidecar/log?from=dcb8b31d98e2729aefb105556ae59685b03bd234#log-dcb8b31d98e2729aefb105556ae59685b03bd234" id="log-dcb8b31d98e2729aefb105556ae59685b03bd234"><span title="2024-01-15 17:05:18 UTC">11 days ago</span></a>
+</small>
+</div>
+<pre class="commit">Fix some typos</pre>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-4">
+<h3>refs</h3>
+<dl>
+<dt>main</dt>
+<dd>
+<a href="/~swflint/emacs-universal-sidecar/tree">browse <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+<a href="/~swflint/emacs-universal-sidecar/log">log <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+</dd>
+<dt>v1.5.2</dt>
+<dd>
+<a href="/~swflint/emacs-universal-sidecar/refs/v1.5.2">release notes <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+</dd>
+</dl>
+</div>
+<div class="col-md-8">
+<h3>clone</h3>
+<dl>
+<dt>read-only</dt>
+<dd><a href="https://git.sr.ht/~swflint/emacs-universal-sidecar">https://git.sr.ht/~swflint/emacs-universal-sidecar</a></dd>
+<dt>read/write</dt>
+<dd>git@git.sr.ht:~swflint/emacs-universal-sidecar</dd>
+</dl>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8 offset-md-4">
+<form action="/clone" method="POST">
+<input dir="auto" name="_csrf_token" type="hidden" value="42673c7d3a4a634324f0b99d069e9317246181b7ef2cab47fd707ddbce6172b690b470f8dfd890929ca25fdd5238a0fc047fd628f6dd5b451e613e2ac05b356a"/>
+<input dir="auto" name="cloneUrl" type="hidden" value="https://git.sr.ht/~swflint/emacs-universal-sidecar"/>
+<input dir="auto" name="name" type="hidden" value="emacs-universal-sidecar"/>
+<input dir="auto" name="description" type="hidden" value="Clone of https://git.sr.ht/~swflint/emacs-universal-sidecar"/>
+<input dir="auto" name="visibility" type="hidden" value="UNLISTED"/>
+<button class="btn btn-primary btn-block" type="submit">
+              Clone repo to your account <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span>
+</button>
+<p class="text-muted text-centered">
+<small>
+                You can also use your local clone with
+                <a href="https://git-send-email.io">git send-email</a>.
+              </small>
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="readme">
+<div class="col-md-10">
+<style>.highlight { background: inherit; }</style><div class="markdown"><h2 id="emacs-universal-sidecar-a-hrefhttpsmelpaorguniversal-sidecarimg-srchttpsmelpaorgpackagesuniversal-sidecar-badgesvg-altmelpa-a"><a href="#emacs-universal-sidecar-a-hrefhttpsmelpaorguniversal-sidecarimg-srchttpsmelpaorgpackagesuniversal-sidecar-badgesvg-altmelpa-a" rel="nofollow noopener">#</a>emacs-universal-sidecar <a href="https://melpa.org/#/universal-sidecar" rel="nofollow noopener"><img alt="MELPA" src="https://melpa.org/packages/universal-sidecar-badge.svg"/></a></h2>
+<p>A universal "sidecar" buffer for emacs in the spirit of the <code>org-roam-mode</code> buffer.</p>
+<p><a href="https://builds.sr.ht/~swflint/emacs-universal-sidecar?" rel="nofollow noopener"><img alt="builds.sr.ht status" src="https://builds.sr.ht/~swflint/emacs-universal-sidecar.svg"/></a></p>
+<h3 id="installation"><a href="#installation" rel="nofollow noopener">#</a>Installation</h3>
+<p>This package has one main requirement: <code>magit</code>, for <code>magit-section</code>.
+Assuming this package is satisfied, the <code>universal-sidecar.el</code> file may be placed on the load path and <code>require</code>d.</p>
+<h3 id="usage"><a href="#usage" rel="nofollow noopener">#</a>Usage</h3>
+<p>The <code>universal-sidecar-toggle</code> command will bring up a per-frame "sidecar" buffer.
+These sidecar buffers are used to show information about or related to the focused buffer.
+Information is shown in <em>sections</em>, which are configured using the <code>universal-sidecar-sections</code> variable.
+The behavior of this variable, and expected interface is described below in configuration.</p>
+<p>Additionally, to make sure that the sidecar buffer is updated, it's necessary to advise several functions.
+This can be done automatically using the <code>universal-sidecar-insinuate</code> function, which will advise functions listed in <code>universal-sidecar-advise-commands</code>.
+This may be undone with <code>universal-sidecar-uninsinuate</code>.
+Additionally, <code>universal-sidecar-insinuate</code> will add <code>universal-sidecar-refresh</code> to the <code>focus-in-hook</code>, and will set an idle timer to refresh all sidecar buffers (idle time configured with <code>universal-sidecar-refresh-time</code>).
+Buffers can be ignored by modifying the <code>universal-sidecar-ignore-buffer-regexp</code>, or using the (irregular) <code>universal-sidecar-ignore-buffer-functions</code> hook.
+This hook will be run with an argument (the buffer) and run until a non-nil result.</p>
+<h4 id="configuration"><a href="#configuration" rel="nofollow noopener">#</a>Configuration</h4>
+<p>The name of the sidecar buffer is configured using <code>universal-sidecar-buffer-name-format</code>, which must contain <code>%F</code>, a representation of the description of the frame.</p>
+<p>Which sections are shown is configured using <code>universal-sidecar-sections</code>, which is a list of functions or functions-with-arguments.
+For example, let's consider the section <code>buffer-git-status</code>, which shows git status.
+This section allows a keyword argument, <code>:show-renames</code>, which defaults to t.
+If we want the default behavior, we would configure it using</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="ss">'buffer-git-status</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+<p>However, if we want the opposite behavior (don't show renames), we'd configure it as shown below.</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="o">'</span><span class="p">(</span><span class="nv">buffer-git-status</span><span class="w"> </span><span class="nb">:show-renames</span><span class="w"> </span><span class="no">t</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+<p>Note that using <code>add-to-list</code> is generally bad practice, as the sections will be run in the order they're present in the list.</p>
+<p>Next, the displayed buffer name is generated using <code>universal-sidecar-buffer-id-format</code> and <code>universal-sidecar-buffer-id-formatters</code>.
+These may be customized to your liking.
+Note: <code>universal-sidecar-buffer-id-formatters</code> is an alist of character/function pairs.
+The functions should take as their first (and only mandatory) argument the buffer for which the sidecar is being displayed.</p>
+<p>Finally, sidecar buffers are displayed using <code>display-window</code>.
+This means that how the buffer is displayed is easily configurable from <code>display-buffer-alist</code>.
+The author's configuration is shown below as an example.
+In particular, using the <code>display-buffer-in-side-window</code> display action is suggested, as it's generally not helpful to select the sidecar window through normal window motion commands</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'display-buffer-alist</span><span class="w"></span>
+<span class="w">             </span><span class="o">'</span><span class="p">(</span><span class="s">"\\*sidecar\\*"</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nv">display-buffer-in-side-window</span><span class="p">)</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nv">slot</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nv">window-width</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="mf">0.2</span><span class="p">)</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nv">window-height</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="mf">0.2</span><span class="p">)</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nv">preserve-size</span><span class="w"> </span><span class="no">t</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">t</span><span class="p">)</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nf">window-parameters</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="p">((</span><span class="nv">no-other-window</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">t</span><span class="p">)</span><span class="w"></span>
+<span class="w">                                     </span><span class="p">(</span><span class="nv">no-delete-other-windows</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">t</span><span class="p">)))))</span><span class="w"></span>
+</pre></div>
+<p>Finally, errors in sections or section definitions are by default logged to the <code>*Warnings*</code> buffer.
+This is done in a way to allow for debugging.
+Moreover, the logging can be disabled by setting <code>universal-sidecar-inhibit-section-error-log</code> to non-nil, in which case (unless debugging is enabled) these errors will be ignored.</p>
+<h3 id="section-functions"><a href="#section-functions" rel="nofollow noopener">#</a>Section Functions</h3>
+<p>The basic installation of <code>universal-sidecar</code> does not include any section functions.
+This is to reduce the number of dependencies of the package itself so that it may be used as a library for others, or to help integrate multiple packages.
+A <code>universal-sidecar-sections.el</code> package is available as well, which will have simple section definitions that may be of use.</p>
+<p>However, implementation of functions is generally straight-forward.
+First, sections are simply functions which take a minimum of two arguments, <code>buffer</code>, or the buffer we're generating a sidecar for, and <code>sidecar</code>, the sidecar buffer.
+When writing these section functions, it is recommended to avoid writing content to <code>sidecar</code> until it's verified that the information needed is available.
+That is <strong>don't write sections without bodies</strong>.</p>
+<p>To aid in defining sections, the <code>universal-sidecar-define-section</code> and <code>universal-sidecar-insert-section</code> macros are available.
+The first defines a section which can be added to <code>universal-sidecar-sections</code>.
+The second simplifies writing sections by adding proper separators and headers to the sidecar buffer.
+We will demonstrate both below.</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">universal-sidecar-define-section</span><span class="w"> </span><span class="nv">fortune-section</span><span class="w"> </span><span class="p">(</span><span class="nv">file</span><span class="w"> </span><span class="nv">title</span><span class="p">)</span><span class="w"></span>
+<span class="w">                                  </span><span class="p">(</span><span class="nb">:major-modes</span><span class="w"> </span><span class="nv">org-mode</span><span class="w"></span>
+<span class="w">                                   </span><span class="nb">:predicate</span><span class="w"> </span><span class="p">(</span><span class="nv">not</span><span class="w"> </span><span class="p">(</span><span class="nf">buffer-modified-p</span><span class="p">)))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="nv">title</span><span class="w"> </span><span class="p">(</span><span class="k">or</span><span class="w"> </span><span class="nv">title</span><span class="w"></span>
+<span class="w">                   </span><span class="p">(</span><span class="k">and</span><span class="w"> </span><span class="nv">file</span><span class="w"></span>
+<span class="w">                        </span><span class="p">(</span><span class="nf">format</span><span class="w"> </span><span class="s">"Fortune: %s"</span><span class="w"> </span><span class="nv">file</span><span class="p">))</span><span class="w"></span>
+<span class="w">                   </span><span class="s">"Fortune"</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="nv">fortune</span><span class="w"> </span><span class="p">(</span><span class="nv">shell-command-to-string</span><span class="w"> </span><span class="p">(</span><span class="nf">format</span><span class="w"> </span><span class="s">"fortune%s"</span><span class="w"></span>
+<span class="w">                                                  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="nv">file</span><span class="w"></span>
+<span class="w">                                                      </span><span class="p">(</span><span class="nf">format</span><span class="w"> </span><span class="s">" %s"</span><span class="w"> </span><span class="nv">file</span><span class="p">)</span><span class="w"></span>
+<span class="w">                                                    </span><span class="s">""</span><span class="p">)))))</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nv">universal-sidecar-insert-section</span><span class="w"> </span><span class="nv">fortune-section</span><span class="w"> </span><span class="nv">title</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">insert</span><span class="w"> </span><span class="nv">fortune</span><span class="p">))))</span><span class="w"></span>
+</pre></div>
+<p>Note: the arguments (<code>file</code> and  <code>title</code>) are <em>keyword</em> arguments.
+Additionally, you specify that this section only applies when <code>buffer</code> is a descendent of <code>:major-modes</code> which can be either a symbol or a list of symbols.
+<code>:predicate</code> is used to specify a somewhat more complex predicate to determine if the section should be generated.</p>
+<p>This section could be added in any of the following ways:</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="ss">'fortune-section</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="o">'</span><span class="p">(</span><span class="nv">fortune-section</span><span class="w"> </span><span class="nb">:file</span><span class="w"> </span><span class="s">"definitions"</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="o">'</span><span class="p">(</span><span class="nv">fortune-section</span><span class="w"> </span><span class="nb">:title</span><span class="w"> </span><span class="s">"O Fortuna!"</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="o">'</span><span class="p">(</span><span class="nv">fortune-section</span><span class="w"> </span><span class="nb">:file</span><span class="w"> </span><span class="s">"definitions"</span><span class="w"> </span><span class="nb">:title</span><span class="w"> </span><span class="s">"Random Definition"</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+<p>Finally, section text can be formatted and fontified as if it was in some other mode, for instance, <code>org-mode</code> using <code>universal-sidecar-fontify-as</code>.
+An example is shown below.</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">universal-sidecar-fontify-as</span><span class="w"> </span><span class="nv">org-mode</span><span class="w"> </span><span class="p">((</span><span class="nv">org-fold-core-style</span><span class="w"> </span><span class="ss">'overlays</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nv">some-function-that-generates-org-text</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nv">some-post-processing-of-org-text</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+<h3 id="including-citation-data"><a href="#including-citation-data" rel="nofollow noopener">#</a>Including Citation Data</h3>
+<p>The <code>universal-sidecar-citeproc</code> library simplifies the use of <code>citeproc.el</code> to format citation data.
+To this end, the <code>universal-cidecar-citeproc</code> customization group allows citeproc-related paths to be set once and easily reused (in particular, it is important to remind users to set the <code>universal-sidecar-citeproc-locales</code> and <code>universal-sidecar-citeproc-styles</code> variables).
+Additionally, it provides a single place for users to set their default preferred citation style (as an absolute path, or relative to <code>universal-sidecar-citeproc-styles</code>).</p>
+<p>Users are encouraged to customize in the following pattern.</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">setopt</span><span class="w"> </span><span class="nv">universal-sidecar-citeproc-locales</span><span class="w"> </span><span class="s">"~/citeproc/locales/"</span><span class="w"></span>
+<span class="w">        </span><span class="nv">universal-sidecar-citeproc-styles</span><span class="w"> </span><span class="s">"~/citeproc/styles/"</span><span class="w"></span>
+<span class="w">        </span><span class="nv">universal-sidecar-citeproc-default-style</span><span class="w"> </span><span class="s">"ieee.csl"</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+<p>For developers, there are two main functions, <code>universal-sidecar-citeproc-get-processor</code> and <code>universal-sidecar-citeproc-org-output</code>.
+The former will create a citation processor (see <code>citeproc</code> library documentation) from a list of data sources, and style/locale information.
+The latter will take a processor and generate an <code>org-mode</code> formatted (and fontified) string for insertion into a sidecar.
+These may be used as follows:</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">defun</span><span class="w"> </span><span class="nv">demo-citeproc-formatter</span><span class="w"> </span><span class="p">(</span><span class="nv">keys</span><span class="w"> </span><span class="nv">bibliography</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="nv">processor</span><span class="w"> </span><span class="p">(</span><span class="nv">universal-sidecar-citeproc-get-processor</span><span class="w"> </span><span class="nv">bibliography</span><span class="p">)))</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nv">citeproc-add-uncited</span><span class="w"> </span><span class="nv">keys</span><span class="w"> </span><span class="nv">processor</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nv">universal-sidecar-citeproc-org-output</span><span class="w"> </span><span class="nv">processor</span><span class="p">)))</span><span class="w"></span>
+</pre></div>
+<h3 id="using-org-roam-buffer-sections-a-hrefhttpsmelpaorguniversal-sidecar-roamimg-srchttpsmelpaorgpackagesuniversal-sidecar-roam-badgesvg-altmelpa-a"><a href="#using-org-roam-buffer-sections-a-hrefhttpsmelpaorguniversal-sidecar-roamimg-srchttpsmelpaorgpackagesuniversal-sidecar-roam-badgesvg-altmelpa-a" rel="nofollow noopener">#</a>Using Org-Roam Buffer Sections <a href="https://melpa.org/#/universal-sidecar-roam" rel="nofollow noopener"><img alt="MELPA" src="https://melpa.org/packages/universal-sidecar-roam-badge.svg"/></a></h3>
+<p>The additional file <code>universal-sidecar-roam.el</code> can be used to show sections from the <code>org-roam-mode</code> buffer in <code>universal-sidecar</code>.
+This can be done either through manual use of the <code>universal-sidecar-roam-section</code> function, or through taking an existing configuration (<code>org-roam-mode-sections</code>).</p>
+<p>To use <code>universal-sidecar-roam-section</code>, a minimum configuration is:</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="o">'</span><span class="p">(</span><span class="nv">universal-sidecar-roam-section</span><span class="w"> </span><span class="nv">org-roam-backlinks-section</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+<p>Note, that if you would pass arguments to the normal org-roam section, you may do so after the section name in <code>universal-sidecar-org-roam-section</code>.</p>
+<p>Finally, your sections can be added en-masse with:</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">setq</span><span class="w"> </span><span class="nv">universal-sidecar-sections</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nv">universal-sidecar-roam-convert-roam-sections</span><span class="w"> </span><span class="nv">org-roam-mode-sections</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+<p>Additionally, the <code>universal-sidecar-buffer-id-formatters</code> variable can have a "node title or buffer name" formatter, using the <code>universal-sidecar-roam-buffer-name</code> function.</p>
+<h3 id="elfeed-related-papers-sections-a-hrefhttpsmelpaorguniversal-sidecar-elfeed-relatedimg-srchttpsmelpaorgpackagesuniversal-sidecar-elfeed-related-badgesvg-altmelpa-a"><a href="#elfeed-related-papers-sections-a-hrefhttpsmelpaorguniversal-sidecar-elfeed-relatedimg-srchttpsmelpaorgpackagesuniversal-sidecar-elfeed-related-badgesvg-altmelpa-a" rel="nofollow noopener">#</a>Elfeed Related Papers Sections <a href="https://melpa.org/#/universal-sidecar-elfeed-related" rel="nofollow noopener"><img alt="MELPA" src="https://melpa.org/packages/universal-sidecar-elfeed-related-badge.svg"/></a></h3>
+<p>The usecase that started this project: I wanted to be able to see possibly related papers that I've read when I read through the ArXiv RSS feeds.
+I initially wrote a basic command which could be run manually for each Elfeed article, yet this is somewhat painful.
+Thus came <code>universal-sidecar</code>, and this particular sidecar section.
+This extension is fairly simple, and builds on top of the <code>bibtex-completion</code> library, so it's necessary to configure it appropriately.
+Once <code>bibtex-completion</code> is configured and the <code>universal-sidecar-elfeed-related-section</code> is added to <code>universal-sidecar-sections</code>, if an article's authors have other works in your Bibtex databases, they will be shown.
+Note, however, that as of now, search is only by author last name.</p>
+<h3 id="elfeed-score-section-a-hrefhttpsmelpaorguniversal-sidecar-elfeed-scoreimg-srchttpsmelpaorgpackagesuniversal-sidecar-elfeed-score-badgesvg-altmelpa-a"><a href="#elfeed-score-section-a-hrefhttpsmelpaorguniversal-sidecar-elfeed-scoreimg-srchttpsmelpaorgpackagesuniversal-sidecar-elfeed-score-badgesvg-altmelpa-a" rel="nofollow noopener">#</a>Elfeed Score Section <a href="https://melpa.org/#/universal-sidecar-elfeed-score" rel="nofollow noopener"><img alt="MELPA" src="https://melpa.org/packages/universal-sidecar-elfeed-score-badge.svg"/></a></h3>
+<p>The section <code>universal-sidecar-elfeed-score-section</code> shows the score of the currently shown elfeed entry and why it is scored that way.</p>
+<h3 id="org-mode-citations-section-a-hrefhttpsmelpaorgorg-cite-sidecarimg-srchttpsmelpaorgpackagesorg-cite-sidecar-badgesvg-altmelpa-a"><a href="#org-mode-citations-section-a-hrefhttpsmelpaorgorg-cite-sidecarimg-srchttpsmelpaorgpackagesorg-cite-sidecar-badgesvg-altmelpa-a" rel="nofollow noopener">#</a>Org Mode Citations Section <a href="https://melpa.org/#/org-cite-sidecar" rel="nofollow noopener"><img alt="MELPA" src="https://melpa.org/packages/org-cite-sidecar-badge.svg"/></a></h3>
+<p>This package can be used to show an Org-Mode document's citations in <code>universal-sidecar</code>.
+This is done through the use of <code>citeproc</code> and can be shown quite flexibly.
+A minimum configuration is as follows:</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">setq</span><span class="w"> </span><span class="nv">org-cite-sidecar-locales</span><span class="w"> </span><span class="s">"~/.emacs.d/csl-data/locales/"</span><span class="w"> </span><span class="c1">;set to your directories for locale and style data</span><span class="w"></span>
+<span class="w">      </span><span class="nv">org-cite-sidecar-styles</span><span class="w"> </span><span class="s">"~/.emacs.d/csl-data/styles/"</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="ss">'org-cite-sidecar</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+<p>It is important to set the <code>org-cite-sidecar-locales</code> and <code>org-cite-sidecar-styles</code> variables to the directories where you have cloned the CSL locale and style data repositories (see docstrings for links).</p>
+<p>Additionally, there are two arguments to the section which are not exposed as customization variables:</p>
+<ul>
+<li><code>:style</code> allows you to select a prefered CSL style within <code>org-cite-sidecar-styles</code>.
+Default is <code>ieee.csl</code>.</li>
+<li><code>:header</code> allows you to change the header of the section from the default "References".</li>
+</ul>
+<h3 id="ebib-formatted-reference-section"><a href="#ebib-formatted-reference-section" rel="nofollow noopener">#</a>Ebib Formatted Reference Section</h3>
+<p>This package can be used to show a formatted reference to the bib entry at point in <code>ebib</code>.
+This is done using the <code>citeproc</code> library and can be flexibly configured.
+Handling of locale and style management is performed using <code>universal-sidecar-citeproc</code>, and its variables (<code>universal-sidecar-citeproc-styles</code> and <code>universal-sidecar-citeproc-locales</code>) must be configured.</p>
+<p>A minimum configuration is shown as follows:</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">setopt</span><span class="w"> </span><span class="nv">universal-sidecar-citeproc-locales</span><span class="w"> </span><span class="s">"~/.emacs.d/csl-data/locales/"</span><span class="w"> </span><span class="c1">;set to your directories for locale and style data</span><span class="w"></span>
+<span class="w">        </span><span class="nv">universal-sidecar-citeproc-styles</span><span class="w"> </span><span class="s">"~/.emacs.d/csl-data/styles/"</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="nv">add-to-list</span><span class="w"> </span><span class="ss">'universal-sidecar-sections</span><span class="w"> </span><span class="ss">'org-cite-sidecar</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+<p>Additionally, there are two arguments to the section which are not exposed as customization variables:</p>
+<ul>
+<li><code>:style</code> allows you to select a prefered CSL style to override <code>universal-sidecar-citeproc-default-style</code>.</li>
+<li><code>:header</code> allows you to change the header of the section from the default "References".</li>
+</ul>
+<h3 id="ebdb-mua-sidecar"><a href="#ebdb-mua-sidecar" rel="nofollow noopener">#</a>EBDB Mua Sidecar</h3>
+<p><a href="https://github.com/girzel/ebdb/" rel="nofollow noopener">EBDB</a> records for MUA buffers can be displayed using Universal Sidecar.
+As of now, it only supports <code>message-mode</code>, <code>gnus-article-mode</code> and <code>gnus-summary-mode</code> (patches welcome to support others, though I suspect it's just the major mode names that need set).
+To use this section, add <code>ebdb-mua-sidecar</code> to your <code>universal-sidecar-sections</code>, and have <code>ebdb-mua-sidecar-insinuate</code> run somewhere in your init.</p>
+<p>The following options are available:</p>
+<ul>
+<li><code>:header</code> allows you to change the header of the section from the default <code>Addressees:</code>.</li>
+<li><code>:updatep</code> (default <code>'existing</code>), determines how records are updated (see also <code>ebdb-update-records</code>).</li>
+<li><code>:formatter</code> (default <code>ebdb-default-multiline-formatter</code>) determines how records are formatted.
+This should be an instance of <code>ebdb-record-formatter</code>.</li>
+</ul>
+<h3 id="basic-and-example-sections"><a href="#basic-and-example-sections" rel="nofollow noopener">#</a>Basic and Example Sections</h3>
+<p>These are found in <code>universal-sidecar-sections.el</code>.</p>
+<h4 id="buffer-tail"><a href="#buffer-tail" rel="nofollow noopener">#</a>Buffer Tail</h4>
+<p><code>(universal-sidecar-tail-buffer-section :show-buffer :n-lines :title)</code></p>
+<p>Show the last <code>n-lines</code> of <code>show-buffer</code> in the sidecar with <code>title</code>.
+If <code>show-buffer</code> doesn't exist, or is empty, no section will be shown.
+Additionally, <code>show-buffer</code> can be a buffer object, a string buffer name, a symbol whose value is a buffer, or a zero-argument function which will be called to get a buffer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container license-footer">
+<a href="/~swflint/emacs-universal-sidecar/licenses">
+  ~swflint/emacs-universal-sidecar licenses:
+  
+  CC-BY-SA-4.0, 
+  
+  CC0-1.0, 
+  
+  GPL-3.0-or-later
+  
+  </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "II" "John" "1:9-11" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "II" "Corinthians" "6:14-18" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "II" "Corinthians" "6" "#" "<==" "withopts"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "II" "Corinthians" "6" "#" "<==" "withopts"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "II" "Corinthians" "6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "II" "Corinthians" "6:14" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "II" "Corinthians" "6:8" "#" "<==" "bash"

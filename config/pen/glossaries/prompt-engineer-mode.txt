@@ -1,0 +1,183 @@
+prompt description
+prompt description file
+prompt description YAML
+.prompt
+    [#prompt-engineer-mode] 
+
+    A yaml containing the definition of an
+    individual prompt.
+
+    Parameters:
+    - model
+      [string]
+
+    - prompt
+      [string]
+
+    - Best of
+      [int]
+
+      Recommended value: 1
+      Min value: 1
+      Max value: 20
+
+    - Frequency Penalty
+      [float]
+
+      Default value: 0
+      Min value: 0
+      Max value: 1
+
+    - top-p
+      [float]
+
+      Recommended value: 1
+      Max value: 1
+      Min value: 0
+
+    - temperature
+      [float]
+
+      Recommended value: 0.9 
+      Min value: 0
+      Max value: 1
+
+    - restart sequence
+      [string]
+
+    - start sequence
+      [string]
+
+    - stop sequences
+      [list of strings]
+
+    - response length
+      [int]
+
+      Min value: 64
+      Max value: 2048
+
+    - presence penalty
+      [float]
+
+      Default value: 0
+      Min value: 0
+      Max value: 1
+
+chaining
+    [#prompt engineering]
+
+    http://gptprompts.wikidot.com/chaining:chaining
+
+    API results into one another: The results
+    of one API call can be processed and fed
+    back into another API call with a
+    different prompt to expand the potential
+    capabilities of a workflow.
+        
+    While OpenAI API has a lot of capabilities
+    on its own, it is limited to 2000
+    characters per prompt.
+    
+    This puts a need to be able to determine
+    optimal types of prompt selection and
+    examples included in the prompt for
+    complex queries.
+    
+    Rather than try to do everything at once,
+    subtasks can be delegated to different API
+    calls with subtask-optimized prompts.
+    
+    I don't know if there's a better term for
+    this, so I'm tentatively calling this
+    behavior chaining and can change this if
+    it turns out there's a better name.
+    
+    Chaining ends up boiling down into a
+    couple different tasks.
+    
+    First, you need to figure out what a
+    prompt is actually asking for.
+    
+    To do this you can decompose the task into
+    its component parts and figure out the
+    sort of prompts you need to query to
+    answer the parts http://gptprompts.wikidot.com/chaining:using-the-fringe.
+    
+    For each of those sub-parts, you need to
+    be able to figure out how to optimize the
+    prompt so that it optimizes the answer via
+    context stuffing
+    http://gptprompts.wikidot.com/context-stuffing.
+    
+    However, during all of this, you want to
+    make sure that you're ensuring that the
+    API is in compliance with safety practices
+    for your task
+    http://gptprompts.wikidot.com/safety.
+    
+context-stuffing
+    [#prompt engineering]
+
+    With only 2048 tokens, you need to make
+    use of your real estate by providing
+    instructions and making implicit
+    information explicit.
+
+benchmarking
+    [#prompt engineering]
+
+    A single prompt getting a good response
+    once might be enough for your use case,
+    but generally we want to know how well
+    different solutions hold up on a variety
+    of use cases.
+    
+    Also important to understand where prompts
+    designs outperform others.
+
+explicit bias
+    [#ai safety]
+
+    Where output is clearly toxic (cursing,
+    slander).
+
+implicit bias
+    [#ai safety]
+
+    Where the policy from the output changes
+    based on context (e.g. opposition to
+    programs that help certain groups,
+    probabilities about roles).
+
+openai-ft
+    [cli command]
+
+    Run a fine-tuning job using OpenAI
+    finetuning API.
+
+    py -36 i openai-finetune
+
+openai-ft-classification
+    [cli command]
+
+    Run a classification fine-tuning job using
+    OpenAI finetuning API
+
+    py -36 i openai-finetune
+
+openai-ft-events
+    [cli command]
+
+    List the events for a batch-mode
+    fine-tuning run.
+
+    py -36 i openai-finetune
+
+openai-ft-report
+    [cli command]
+
+    List the events for a batch-mode
+    fine-tuning run.
+
+    py -36 i openai-finetune

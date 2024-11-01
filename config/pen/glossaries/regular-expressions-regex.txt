@@ -1,0 +1,33 @@
+grex
+    Automatically generating a single regular
+    expression from user-provided test cases.
+    
+    The resulting expression is guaranteed to
+    match the test cases which it was
+    generated from.
+
+
+possessive [quantifier]
+    Like a greedy quantifier, a possessive
+    quantifier repeats the token as many times
+    as possible. Unlike a greedy quantifier,
+    it does not give up matches as the engine
+    backtracks. With a possessive quantifier,
+    the deal is all or nothing.
+
+    Used for performance.
+    Greedy parts of the regex backtrack to
+    match fewer characters when another part
+    of the regex fails, in case it was too
+    greedy. A posessive, greedy qualifier will
+    not give up what it has matched, so it
+    will fail faster.
+
+regex quantifiers
+    *  = greedy
+    *? = lazy
+    +  = possessive
+        ++, ?+, {n,m}+
+
+lazy
+    Opposite of greedy.

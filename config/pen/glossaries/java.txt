@@ -1,0 +1,155 @@
+annotation
+    A form of syntactic metadata that can be
+    added to Java source code.
+    
+    Classes, methods, variables, parameters
+    and Java packages may be annotated
+
+    Annotations applied to Java code:
+    - @Override
+      Checks that the method is an override.
+      Causes a compilation error if the method
+      is not found in one of the parent
+      classes or implemented interfaces.
+
+    - @Deprecated
+      Marks the method as obsolete. Causes a
+      compile warning if the method is used.
+
+    - @SuppressWarnings
+      Instructs the compiler to suppress the
+      compile time warnings specified in the
+      annotation parameters.
+
+    Annotations applied to other annotations
+    (also known as "Meta Annotations"):
+    - @Retention
+      Specifies how the marked annotation is
+      stored, whether in code only, compiled
+      into the class, or available at runtime
+      through reflection.
+
+    - @Documented
+      Marks another annotation for inclusion
+      in the documentation.
+
+    - @Target
+      Marks another annotation to restrict
+      what kind of Java elements the
+      annotation may be applied to.
+
+    - @Inherited
+      Marks another annotation to be inherited
+      to subclasses of annotated class (by
+      default annotations are not inherited to
+      subclasses).
+
+    Since Java 7, three additional annotations
+    have been added to the language.
+    - @SafeVarargs
+      Suppress warnings for all callers of a
+      method or constructor with a generics
+      varargs parameter, since Java 7.
+
+    - @FunctionalInterface
+      Specifies that the type declaration is
+      intended to be a functional interface,
+      since Java 8.
+
+    - @Repeatable
+      Specifies that the annotation can be
+      applied more than once to the same
+      declaration, since Java 8.
+
+@Override
+@Override annotation
+    Used when we override a method in sub
+    class.
+
+    v +/"@Override" "$MYGIT/clarketm/java-design-patterns/Behavioral/ChainOfResponsibility/ChainOfResponsibility/CEO.java"
+
+    https://beginnersbook.com/2014/07/override-annotation-in-java/
+
+    [[sps:sp +/"@Override" "$MYGIT/clarketm/java-design-patterns/Behavioral/ChainOfResponsibility/ChainOfResponsibility/CEO.java"]]
+
+    If the programmer makes any mistake such
+    as wrong method name, wrong parameter
+    types while overriding, you would get a
+    compile time error.
+
+    As by using this annotation you instruct
+    compiler that you are overriding this
+    method. If you don’t use the annotation
+    then the sub class method would behave as
+    a new method (not the overriding method)
+    in sub class.
+
+    It improves the readability of the code.
+
+uber jar
+Fat jar
+    A jar with dependencies.
+
+    cd "$MYGIT/borkdude/clj-kondo.lsp"; ./script/build-server
+    vim +/"lein uberjar" "$MYGIT/borkdude/clj-kondo.lsp/script/release"
+
+    There are three common methods for
+    constructing an uber jar:
+    - Unshaded:
+      Unpack all JAR files, then repack them
+      into a single JAR. Works with Java's
+      default class loader.
+
+      Tools:
+      - maven-assembly-plugin
+
+    - Shaded:
+      Same as unshaded, but rename (i.e.,
+      "shade") all packages of all
+      dependencies. Works with Java's default
+      class loader. Avoids some (not all)
+      dependency version clashes.
+    
+      Tools:
+      - maven-shade-plugin
+
+    - JAR of JARs:
+      The final JAR file contains the other
+      JAR files embedded within. Avoids
+      dependency version clashes. All resource
+      files are preserved.
+
+      Tools:
+      - Eclipse JAR File Exporter
+
+CompletableFuture
+    https://github.com/eclipse/lsp4j/blob/master/documentation/jsonrpc.md
+
+    An extension to Java's Future API which
+    was introduced in Java 8.
+
+    A Future is used for asynchronous
+    Programming.
+
+    It provides two methods, isDone() and
+    get().
+
+    The methods retrieve the result of the
+    computation when it completes.
+
+@JsonRequest
+    [#lsp4j]
+    [annotation]
+
+    https://github.com/eclipse/lsp4j/blob/master/org.eclipse.lsp4j.jsonrpc/src/main/java/org/eclipse/lsp4j/jsonrpc/services/JsonRequest.java
+
+atomic reference
+    [java]
+
+    This is wrapped in clojure as an atom.
+
+    At the lowest level this is just a
+    pointer.
+
+gradle.properties
+    https://stackoverflow.com/q/37063217

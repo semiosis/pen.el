@@ -1,0 +1,7 @@
+
+The braces are used to make the data keyword an algebraic data type.
+An algebraic data type is a data type that is made up of other data types.
+The data keyword is used to declare a data type.
+When the data keyword is used it is followed by a single type name.
+Then after the type name, we put a curvy brace, then add more data types.
+And usually, the data types are separated by commas.

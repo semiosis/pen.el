@@ -1,0 +1,3 @@
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "1John" "#" "<==" "sbcl-ql"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Hebrews \"12:14,15\"" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Colossians 3:23-24." "#" "<==" "sbcl-ql"

@@ -1,0 +1,8 @@
+
+call SetSelection()
+"Paste <cword> into " register
+<nowiki> "</nowiki>
+fun! SetSelection()
+
+"Steal <cword> into register
+elseif @%

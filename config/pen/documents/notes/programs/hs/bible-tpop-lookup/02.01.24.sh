@@ -1,0 +1,5 @@
+cd /root/.pen/documents/bible-notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Luke 12:15" "#" "<==" "zsh"
+cd /root/.pen/documents/bible-notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Matthew 5:37" "#" "<==" "zsh"
+cd /root/.pen/documents/bible-notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Matthew 5:40-42" "#" "<==" "zsh"
+cd /root/.pen/documents/bible-notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Matthew 6:1-18" "#" "<==" "zsh"
+cd /root/.pen/documents/bible-notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Matthew 6:1-18" "#" "<==" "zsh"

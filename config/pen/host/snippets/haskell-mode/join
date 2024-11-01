@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: join
+# group: string
+# key: join
+# --
+import Data.List ( intercalate )
+joinNL ls = intercalate "\n" ls

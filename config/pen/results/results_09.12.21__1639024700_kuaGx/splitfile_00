@@ -1,0 +1,13 @@
+- 1. Immanuel Kant (1724-1804)
+- 2. Sigmund Freud (1856-1939)
+- 3. Plato (c. 427–347 BC)"""
+
+
+def test_from_text(text):
+    expected = """1: Kant (1724-1804),
+2: Hegel (1770-1831),
+3: Schopenhauer (1788-1860),
+4: Kierkegaard (1813-1855),
+5: Nietzsche (1844-1900)"""
+
+    assert expected == to_table(from_text(text))

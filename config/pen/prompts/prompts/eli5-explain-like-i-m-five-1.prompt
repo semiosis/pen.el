@@ -1,0 +1,41 @@
+title: eli5 explain like I'm five
+tags: prose grammar english summarisation
+prompt: |
+  My second grader asked me what this passage means:
+  <delim>
+  <passage>
+  <delim>
+  I rephrased it for him, in plain language a second grader can understand:
+  <delim>
+engine: OpenAI Davinci
+# force-engine: OpenAI Davinci
+temperature: 0.6
+# I should watch out with large values of max-tokens.
+# The second stop-sequence isn't currently getting recognised by the API, so it costs money
+max-generated-tokens: 500
+top-p: 1
+stop-sequences:
+- "<delim>"
+- "\n\n"
+vars:
+- passage
+examples:
+- |-
+  Men at Work are an Australian rock band formed
+  in Melbourne in 1978 and best known for
+  breakthrough hits such as "Who Can It Be Now?"
+  or "Down Under". Its founding member and
+  frontman is Colin Hay, who performs on lead
+  vocals and guitar. After playing as an
+  acoustic duo with Ron Strykert during 1978–79,
+  Hay formed the group with Strykert playing
+  bass guitar and Jerry Speiser on drums. They
+  were soon joined by Greg Ham on flute,
+  saxophone, and keyboards and John Rees on bass
+  guitar, with Strykert then switching to lead
+  guitar.
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
+external: summarize-passage
+filter: true

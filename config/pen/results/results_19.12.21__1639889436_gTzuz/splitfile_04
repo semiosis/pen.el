@@ -1,0 +1,1 @@
+ np.add_newdoc_ufunc(np.sin, 'sin', '''

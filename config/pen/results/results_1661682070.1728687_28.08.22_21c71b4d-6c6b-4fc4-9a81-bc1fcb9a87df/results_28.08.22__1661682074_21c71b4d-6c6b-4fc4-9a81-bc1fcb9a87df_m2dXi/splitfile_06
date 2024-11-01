@@ -1,0 +1,1 @@
+ delete-rest-api  --rest-api-id  $API_ID

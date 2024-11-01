@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wait
+# group: eww
+# key: wait
+# --
+wait${1:$$(bp xargs sph eww "https://blog.miguelgrinberg.com/post/how-to-make-python-wait")}

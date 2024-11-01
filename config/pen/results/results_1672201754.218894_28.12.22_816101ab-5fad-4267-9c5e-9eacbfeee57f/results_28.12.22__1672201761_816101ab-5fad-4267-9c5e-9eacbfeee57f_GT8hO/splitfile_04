@@ -1,0 +1,5 @@
+
+"return strpart(getline('.'), 0, col('.') - 1)
+
+function! DeleteToMarked()
+"return substitute(getline('.'),'^\s*','','g')

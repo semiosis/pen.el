@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "Using" "cahce" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "Using" "cache" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "Using" "cache" "#" "<==" "ead"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ead" "Melee" "#" "<==" "ead"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ead" "-p" "23.orgMelee" "#" "<==" "ead"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ead" "-p" "23.org" "Melee" "#" "<==" "ead"

@@ -1,0 +1,14 @@
+
+
+
+main = do
+
+putStrLn "Enter a sentence:"
+
+sentence <- getLine
+
+putStrLn (fromUpper sentence)
+
+getLine
+
+putStrLn "Enter a sentence:"

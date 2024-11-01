@@ -1,0 +1,3 @@
+"http/post" is a function that takes a URI and a map of parameters and returns a
+string containing the response body.
+

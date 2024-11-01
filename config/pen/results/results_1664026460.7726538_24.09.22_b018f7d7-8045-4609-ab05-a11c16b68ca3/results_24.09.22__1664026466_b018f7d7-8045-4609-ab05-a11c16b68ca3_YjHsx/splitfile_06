@@ -1,0 +1,1 @@
+The biggest challenge I see is around the data. We use a shared cluster of SQL servers to keep all the data. Everyone has their own tables in their own databases and that data is only updated when it is reported into the system. That creates a lot of lag and delays in the data.

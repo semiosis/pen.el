@@ -1,0 +1,155 @@
+* Game worlds
+- bewilderness
+- bibleverse
+- biblemultiverse
+  - combine bible verses somehow
+
+* The timer list contains a heap of closures
+This is really interesting.
+They're from reading the Bible.
+Therefore, to speed up bible-mode I need to cancel all these timers.
+
+* Just keep my computer working for the keyboard
+
+* TODO Find out if I can save eieio objects
+[[info:(eieio) eieio-persistent]]
+
+Example of using ebdb
+j:ebdb-record
+
+* Point and click adventure
+https://youtu.be/EDt6XXsRXag?t=177
+
+- Provide clear goals
+  - short and longterm goals
+- Provide clear signposting/clues
+  - clues telling you what to do
+    - looking at objects
+    - talking to characters
+  - eventually clues culminate into an 'aha' moment which gives you a lead to start figuring things out
+  - feedback for doing the wrong thing that gives you a clue to do the right thing
+- Avoid pixel-hunting - highlight clickable things
+
+* Uses
+- It might actually help to draw my way around my computer
+  - i.e. it might actually help me with memory, etc.
+    - Who knows
+- It should be low-stress
+- It should help me to learn my way around novels if I want to read novels
+- It should be very low stress
+- It should be quite static and remain nostalgic
+
+* TODO Make a hyperdrive for ASCII Adventures
+- Actually, some people might simply not use it
+- Because
+
+** todo
+- Make it so an area/place file can be loaded into the major mode, and animates
+  - e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
+
+* Remember
+Every slot that appears in each parent class
+is replicated in the new class.
+
+* Ideas
+- I could have extremely little amounts of text explaining things
+  - A person should simply explore
+    - The scope/depth of the map should be quite extreme and a person should really get lost inside of it
+      - Then they have to make their way back out
+        - There should be extremely little explanation
+  - Then the plan might be to collect treasure
+    - Or the plan could be simply to visit different places
+  - But the idea *is* to get lost in a little bit of an adventure
+    - If I want, I *could* use duradraw or something
+- I could have switches in each area
+  - Then I could generate myself some tasks, to toggle switches from about the map
+- I should definitely put good thought into the underlying engine
+
+** I think 1-bit braille is actually quite nice, and would work for emacs =org-link=
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  braille-show-image ~/.pen/documents/rays-maze-techtrons.png
+#+END_SRC
+
+* What will make the game great
+Make the game for myself.
+
+- Simple and easy level design
+  - Lots of areas and levels
+- Simplicity of playing
+  - It's really easy to play
+- Robust engine
+- Utilise lots of emacs features
+  - Keep me using emacs
+- Let it be ongoing into the future
+
+* Vision
+- This is meant to be an imagination, exploration game.
+  - It's not meant to be difficult.
+  - It should not require much tedium.
+  - But it should have many areas to stretch the imagination.
+  - It should just have a lot of switches.
+    - And they don't need to be discovered.
+      - Pretty much everything should be visible.
+- It's like a super elaborate Magic School Bus exploration game.
+- Just go from area to area and see what others have created.
+- Keep it very simple so that it is very easy to extend
+- Keep all the level data inside of org files
+
+* Editing
+- Make it so I can build the game as I am exploring it.
+  - This will be the most efficient way to construct the world.
+  - New [org-link]s should create the new areas.
+- I may as well use eieio, then, and persistent storage
+  - Also, I get a pretty printer, Custom etc. and other features
+
+Example scene:
+- The outside of a house with 3 people around a barrel fire
+- Some clickable options for things to do:
+  - Enter the house
+  - Sit down with them around the barrel
+
+Example scene (barrel):
+- Some clickable options for things to do:
+  - Listen to them sing
+  - Leave (and return to the outside of the house)
+
+Example scene (inside the house):
+- Clickable options:
+  - Talk to the dormouse
+    - This leads to another scene, etc.
+      - Going into the mouse tunnels.
+  - Yell out really loudly, "I love apples!"
+    - This leads to another scene, etc.
+
+I guess the genius of this game is that it could lead anywhere.
+
+Then, maybe you can time yourself doing a race from A-B.
+
+The above alone should be quite fun.
+I would not even need an inventory, etc.
+Therefore, I should start with that.
+
+Design decisions:
+- Keep it simple.
+- Show everything there is to see on the viewport in a simple animation.
+  - Typically, 1,2 or 3 frames
+- List the things you can take or look at.
+  - Prioritise an 'Escape from Monkey Island' interface
+    - vs a text adventure interface (like magnetic scrolls)
+    - Advance to using emacs transients, etc.
+  - Click on options, item names, commands, etc.
+- Inspect things closely.
+
+Later:
+- Inventory.
+  - Make it so I can look at objects up close - this should be hypertext, too.
+
+* Ideas
+** Multiplayer
+It would be cool if the game state is stored in a git repository and synchronized over the internet.
+
+So many people can play together. But nah.
+
+An inventory object should have a decal.
+
+Exploring the world, you may find objects that increase your stats

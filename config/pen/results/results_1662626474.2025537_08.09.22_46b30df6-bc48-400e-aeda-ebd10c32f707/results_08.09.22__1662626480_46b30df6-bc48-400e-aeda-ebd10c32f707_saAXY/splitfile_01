@@ -1,0 +1,3 @@
+ import Sys.Printf main = do now <- getCurrentTime putStrLn "It is now " putStrLn $ show now putStrLn "." after 1 main :: IO () main = return ()
+
+-- Exercise

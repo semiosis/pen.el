@@ -1,0 +1,127 @@
+HIL
+    Facts
+    - A HIL simulator includes sophisticated
+      mathematical models of actuators,
+      dynamics and sensors
+
+    - A HIL simulator constitutes a “virtual
+      world” for the control system
+
+    - HIL testing is performed in a safe test
+      bed, without risk to people, equipment
+      or environment
+
+    - HIL testing is black-box testing
+
+    - No source code is revealed or exposed
+      through HIL testing
+
+    - HIL testing is the de facto industry
+      standard for control system software in
+      the automotive and aerospace industries
+
+    - Every vessel is unique regarding
+      equipment and configuration, increasing
+      the potential for errors
+
+Systems Modelling Language
+SysML
+
+Object Management Group
+OMG
+    https://www.omg.org/
+
+    Their modeling standards now make up most
+    of the modeling standards in the world:
+    - UML
+    - SysML
+
+DDS
+    $MYGIT/objectcomputing/OpenDDS
+
+    https://en.wikipedia.org/wiki/Data_Distribution_Service
+
+    An OMG machine-to-machine (sometimes
+    called middleware or connectivity
+    framework) standard that aims to enable
+    dependable, high-performance,
+    interoperable, real-time, scalable data
+    exchanges using a publish–subscribe
+    pattern.
+
+    DDS addresses the needs of applications
+    like aerospace and defense, air-traffic
+    control, autonomous vehicles, medical
+    devices, robotics, power generation,
+    simulation and testing, smart grid
+    management, transportation systems, and
+    other applications that require real-time
+    data exchange.
+
+Real time system
+    The system is subjected to real time,
+    i.e., response should be guaranteed within
+    a specified timing constraint or system
+    should meet the specified deadline.
+    
+    For example: flight control system, real
+    time monitors etc.
+
+advanced driver-assistance systems
+ADAS
+
+ECU
+electronic control units
+
+control system
+    A set of mechanical or electronic devices
+    that regulates other devices or systems by
+    way of control loops.
+    
+    Typically, control systems are
+    computerized.
+    
+    Control systems are a central part of
+    industry and of automation.
+
+Hardware-in-the-loop testing
+HIL testing
+    An efficient black-box method for testing
+    and verifying control system software. 
+
+    Accomplished by isolating the control
+    system and its operator stations from its
+    surroundings, and replacing all actual I/O
+    with simulated I/O from a HIL simulator in
+    real time.
+    
+    The HIL simulator imitates the vessel,
+    vessel systems and environment, responds
+    to the commands from the control system in
+    a realistic manner, and provides realistic
+    and consistent measurements.
+    
+    The control system cannot sense any
+    difference between the real world and the
+    virtual world in the HIL simulator.
+    
+    The HIL simulator thereby facilitates
+    systematic testing of control system
+    design philosophy, functionality,
+    performance, and failure handling
+    capability, both in normal and off-design
+    operating conditions.
+
+control system
+    Interacts with vessel systems through a
+    set of input/output (I/O) signals.
+    
+    Input is provided by sensors that measure
+    dynamic states and parameters, as well as
+    by operator stations and other control
+    systems.
+    
+    Based on the input and internal models in
+    the control system, the control system
+    calculates control signal output to the
+    actuators.

@@ -1,0 +1,2 @@
+;;; Generated package description from company-wordfreq.el  -*- no-byte-compile: t -*-
+(define-package "company-wordfreq" "20210201.1839" "Company backend for human language texts" '((emacs "27.1") (company "0.9")) :commit "3787785af2135c42af7b22562da554628141afdb" :authors '(("Johannes Mueller" . "github@johannes-mueller.org")) :maintainer '("Johannes Mueller" . "github@johannes-mueller.org") :keywords '("company" "convenience" "matching") :url "https://github.com/johannes-mueller/company-wordfreq.el")

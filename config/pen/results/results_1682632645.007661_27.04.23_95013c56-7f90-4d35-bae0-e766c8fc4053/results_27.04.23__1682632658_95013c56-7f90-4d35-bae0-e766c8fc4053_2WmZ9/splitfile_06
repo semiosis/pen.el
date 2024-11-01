@@ -1,0 +1,9 @@
+#ifdef __GLASGOW_HASKELL__
+{-# OPTIONS_GHC -fno-code #-} #else
+{-# OPTIONS -fno-code #-} #endif
+import Control.Monad (void)
+import Control.DeepSeq
+import Control.Exception (handle)
+import Data.IORef (newIORef, readIORef)
+import qualified Data.Map as M
+import Data.Set (Set) import qualified Data.Set as S import System.Console.Haskeline (InteractiveTerm, getInputLine, getLoop, newLine) import System.Console.Haskeline.Monad import Prelude hiding (catch) import Text.Printf (printf) #ifdef __GLASGOW_HASKELL__ newtype MinTerm = Min Term deriving Show data Term = Bin Op [Term] -- ^ binary operators | UnOp Op --

@@ -1,0 +1,31 @@
+e:/volumes/home/shane/notes/ws/bible-studies/under-the-law-of-Christ.org
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matthew 23:10
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 23:10
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Do not be called leaders; for One is your
+Leader, that is, Christ.
+
+(NASB)
+#+end_src
+
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  1 Corinthians 11:3
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+1 Corinthians 11:3
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+But I want you to understand that Christ is
+the head of every man, and the man is the head
+of a woman, and God is the head of Christ.
+
+(NASB)
+#+end_src

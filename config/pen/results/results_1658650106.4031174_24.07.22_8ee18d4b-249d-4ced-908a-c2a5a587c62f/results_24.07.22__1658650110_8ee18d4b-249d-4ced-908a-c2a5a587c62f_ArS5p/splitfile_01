@@ -1,0 +1,2 @@
+This means that `import Options.Applicative` is not valid.
+You can't import a module with the same name as a class.

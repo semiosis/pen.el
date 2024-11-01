@@ -1,0 +1,681 @@
+HTTP/1.1 200 OK
+Date: Sat, 21 Oct 2023 20:32:08 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+﻿<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/SubPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.biblestudystart.com/img/books-large.jpg">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Outline of Mark | Free Bible Outlines</title>
+<!-- InstanceEndEditable -->
+<meta property="og:site_name" content="Bible Outlines" />
+<meta property="og:title" content="Outline of Mark | Free Bible Outlines" />
+<meta property="og:description" content="Bible outline of Mark. See what it's about from the first verse to the last." />
+<meta name="Description" content="Bible outline of Mark. See what it's about from the first verse to the last.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../layout/styles3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 240px;
+}
+@media (min-width: 500px) {
+.gresponsive, #google-responsiveside {
+	width: 468px;
+	height: 60px;
+}
+}
+@media (min-width: 601px) {
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 600px;
+}
+}
+@media (min-width: 1100px) {
+.gresponsive, #google-responsiveside {
+	width: 300px;
+	height: 600px;
+}
+}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="mainbackground">
+  <div id="header">
+    <div class="lowerglow innerdiv"> <!-- InstanceBeginEditable name="SubSiteTitle" -->
+      <div class="title"> <a href="https://www.biblestudystart.com/outlines/">Bible Outlines</a></div>
+      <div class="subtitle">Every book of the Bible outlined in section headings.</div>
+      <!-- InstanceEndEditable --> </div>
+  </div>
+  <div id="outer" class="innerdiv">
+    <div id="content"> 
+      <div class="bibleoutline">
+<h1>Outline of Mark</h1>
+<table>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 1</td></tr>
+ <tr>
+  <td class="verses">Mr 1:1-8.</td>
+  <td class="summary">The office of John the Baptist.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:9-11.</td>
+  <td class="summary">Jesus is baptized;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:12-13.</td>
+  <td class="summary">tempted;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:14-15.</td>
+  <td class="summary">he preaches;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:16-22.</td>
+  <td class="summary">calls Peter, Andrew, James, and John;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:23-28.</td>
+  <td class="summary">heals one that had a devil;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:29-31.</td>
+  <td class="summary">Peter's mother in law;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:32-39.</td>
+  <td class="summary">many diseased persons;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 1:40-45.</td>
+  <td class="summary">and cleanses the leper.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 2</td></tr>
+ <tr>
+  <td class="verses">Mr 2:1-2.</td>
+  <td class="summary">Christ followed by multitudes,</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 2:3-12.</td>
+  <td class="summary">heals one sick of the palsy;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 2:13-14.</td>
+  <td class="summary">calls Matthew from the receipt of custom;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 2:15-17.</td>
+  <td class="summary">eats with Publicans and sinners;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 2:18-22.</td>
+  <td class="summary">excuses his disciples for not fasting;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 2:23-28.</td>
+  <td class="summary">and for plucking the ears of corn on the sabbath day.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 3</td></tr>
+ <tr>
+  <td class="verses">Mr 3:1-9.</td>
+  <td class="summary">Christ heals the withered hand,</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 3:10.</td>
+  <td class="summary">and many other infirmities;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 3:11-12.</td>
+  <td class="summary">rebukes the unclean spirit;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 3:13-21.</td>
+  <td class="summary">chooses his twelve apostles;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 3:22-30.</td>
+  <td class="summary">convinces the blasphemy of casting out devils by Beelzebub;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 3:31-35.</td>
+  <td class="summary">and shows who are his brother, sister, and mother.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 4</td></tr>
+ <tr>
+  <td class="verses">Mr 4:1-13.</td>
+  <td class="summary">The parable of the sower,</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 4:14-20.</td>
+  <td class="summary">and the meaning thereof.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 4:21-25.</td>
+  <td class="summary">We must communicate the light of our knowledge to others.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 4:26-29.</td>
+  <td class="summary">The parable of the seed growing secretly;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 4:30-34.</td>
+  <td class="summary">and of the mustard seed.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 4:35-41.</td>
+  <td class="summary">Christ stilleth the tempest on the sea.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 5</td></tr>
+ <tr>
+  <td class="verses">Mr 5:1-12.</td>
+  <td class="summary">Christ delivering the possessed of the legion of devils,</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 5:13-21.</td>
+  <td class="summary">they enter into the swine.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 5:22-24.</td>
+  <td class="summary">He is entreated by Jairus to go and heal his daughter.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 5:25-34.</td>
+  <td class="summary">He heals the woman of the bloody issue,</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 5:35-43.</td>
+  <td class="summary">and raises from death Jairus' daughter.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 6</td></tr>
+ <tr>
+  <td class="verses">Mr 6:1-6.</td>
+  <td class="summary">Christ is contemned of his countrymen.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 6:7-13.</td>
+  <td class="summary">He gives the twelve power over unclean spirits.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 6:14-15.</td>
+  <td class="summary">Divers opinions of Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 6:16-29.</td>
+  <td class="summary">John the Baptist is imprisoned, beheaded, and buried.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 6:30-33.</td>
+  <td class="summary">The apostles return from preaching.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 6:34-44.</td>
+  <td class="summary">The miracle of five loaves and two fishes.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 6:45-52.</td>
+  <td class="summary">Christ walks on the sea;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 6:53-56.</td>
+  <td class="summary">and heals all that touch him.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 7</td></tr>
+ <tr>
+  <td class="verses">Mr 7:1-7.</td>
+  <td class="summary">The Pharisees find fault with the disciples for eating with unwashed hands.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 7:8-13.</td>
+  <td class="summary">They break the commandment of God by the traditions of men.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 7:14-23.</td>
+  <td class="summary">Meat defiles not the man.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 7:24-30.</td>
+  <td class="summary">He heals the Syrophenician woman's daughter of an unclean spirit;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 7:31-37.</td>
+  <td class="summary">and one that was deaf, and stammered in his speech.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 8</td></tr>
+ <tr>
+  <td class="verses">Mr 8:1-9.</td>
+  <td class="summary">Christ feeds the people miraculously;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 8:10-13.</td>
+  <td class="summary">refuses to give a sign to the Pharisees;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 8:14-21.</td>
+  <td class="summary">admonishes his disciples to beware of the leaven of the Pharisees, and of the leaven of Herod;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 8:22-26.</td>
+  <td class="summary">gives a blind man his sight;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 8:27-33.</td>
+  <td class="summary">acknowledges that he is the Christ who should suffer and rise again;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 8:34-38.</td>
+  <td class="summary">and exhorts to patience in persecution for the profession of the gospel.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 9</td></tr>
+ <tr>
+  <td class="verses">Mr 9:1-10.</td>
+  <td class="summary">Jesus is transfigured.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 9:11-13.</td>
+  <td class="summary">He instructs his disciples concerning the coming of Elias;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 9:14-29.</td>
+  <td class="summary">casts forth a deaf and dumb spirit;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 9:30-32.</td>
+  <td class="summary">foretells his death and resurrection;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 9:33-37.</td>
+  <td class="summary">exhorts his disciples to humility;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 9:38-50.</td>
+  <td class="summary">bidding them not to prohibit such as are not against them, nor to give offence to any of the faithful.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 10</td></tr>
+ <tr>
+  <td class="verses">Mr 10:1-12.</td>
+  <td class="summary">Christ disputes with the Pharisees touching divorcement:</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 10:13-16.</td>
+  <td class="summary">blesses the children that are brought unto him;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 10:17-22.</td>
+  <td class="summary">resolves a rich man how he may inherit life everlasting;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 10:23-27.</td>
+  <td class="summary">tells his disciples of the danger of riches;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 10:28-31.</td>
+  <td class="summary">promises rewards to them that forsake any thing for the gospel;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 10:32-34.</td>
+  <td class="summary">foretells his death and resurrection;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 10:35-45.</td>
+  <td class="summary">bids the two ambitious suitors to think rather of suffering with him;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 10:46-52.</td>
+  <td class="summary">and restores to Bartimaeus his sight.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 11</td></tr>
+ <tr>
+  <td class="verses">Mr 11:1-11.</td>
+  <td class="summary">Christ rides with triumph into Jerusalem;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 11:12-14.</td>
+  <td class="summary">curses the fruitless fig-tree;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 11:15-19.</td>
+  <td class="summary">purges the temple;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 11:20-26.</td>
+  <td class="summary">exhorts his disciples to stedfastness of faith, and to forgive their enemies;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 11:27-33.</td>
+  <td class="summary">and defends the lawfulness of his actions by the witness of John, who was a man sent of God.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 12</td></tr>
+ <tr>
+  <td class="verses">Mr 12:1-12.</td>
+  <td class="summary">In a parable of the vineyard let out to wicked husbandmen Christ foretells the reprobation of the Jews, and the calling of the Gentiles.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 12:13-17.</td>
+  <td class="summary">He avoids the snare of the Pharisees and Herodians about paying tribute to Caesar;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 12:18-27.</td>
+  <td class="summary">convicts the Sadducees of error, who denied the resurrection;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 12:28-34.</td>
+  <td class="summary">resolves the scribe, who questioned of the first commandment;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 12:35-37.</td>
+  <td class="summary">refutes the opinion that the scribes held of Christ;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 12:38-40.</td>
+  <td class="summary">bidding the people to beware of their ambition and hypocrisy;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 12:41-44.</td>
+  <td class="summary">and commends the poor widow for her two mites, above all.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 13</td></tr>
+ <tr>
+  <td class="verses">Mr 13:1-8.</td>
+  <td class="summary">Christ foretells the destruction of the temple;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 13:9.</td>
+  <td class="summary">the persecutions for the gospel;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 13:10-13.</td>
+  <td class="summary">that the gospel must be preached to all nations;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 13:14-23.</td>
+  <td class="summary">that great calamities shall happen to the Jews;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 13:24-31.</td>
+  <td class="summary">and the manner of his coming to judgment;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 13:32-37.</td>
+  <td class="summary">the hour whereof being known to none, every man is to watch and pray, that we be not found unprovided, when he comes to each one particularly by death.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 14</td></tr>
+ <tr>
+  <td class="verses">Mr 14:1-2.</td>
+  <td class="summary">A conspiracy against Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:3-9.</td>
+  <td class="summary">Precious ointment is poured on his head by a woman.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:10-11.</td>
+  <td class="summary">Judas sells his Master for money.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:12-21.</td>
+  <td class="summary">Christ himself foretells how he shall be betrayed by one of his disciples;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:22-25.</td>
+  <td class="summary">after the passover prepared, and eaten, institutes his last supper;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:26-42.</td>
+  <td class="summary">declares aforehand the flight of all his disciples, and Peter's denial.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:43-45.</td>
+  <td class="summary">Judas betrays him with a kiss.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:46-52.</td>
+  <td class="summary">He is apprehended in the garden;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:53-64.</td>
+  <td class="summary">falsely accused and impiously condemned of the Jews' council;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:65.</td>
+  <td class="summary">shamefully abused by them;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 14:66-72.</td>
+  <td class="summary">and thrice denied of Peter.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 15</td></tr>
+ <tr>
+  <td class="verses">Mr 15:1-5.</td>
+  <td class="summary">Jesus brought bound, and accused before Pilate.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 15:6-15.</td>
+  <td class="summary">Upon the clamour of the common people, the murderer Barabbas is loosed, and Jesus delivered up to be crucified.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 15:16-20.</td>
+  <td class="summary">He is crowned with thorns, spit on, and mocked;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 15:21-26.</td>
+  <td class="summary">faints in bearing his cross;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 15:27-28.</td>
+  <td class="summary">hangs between two thieves;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 15:29-38.</td>
+  <td class="summary">suffers the triumphing reproaches of the Jews;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 15:39-41.</td>
+  <td class="summary">but is confessed by the centurion to be the Son of God;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 15:42-47.</td>
+  <td class="summary">and is honourably buried by Joseph.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Mark chapter 16</td></tr>
+ <tr>
+  <td class="verses">Mr 16:1-8.</td>
+  <td class="summary">An Angel declares the resurrection of Christ to three women.</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 16:9-11.</td>
+  <td class="summary">Christ himself appears to Mary Magdalene;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 16:12-13.</td>
+  <td class="summary">to two going into the country;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 16:14.</td>
+  <td class="summary">then to the apostles;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 16:15-18.</td>
+  <td class="summary">whom he sends forth to preach the gospel;</td>
+ </tr>
+ <tr>
+  <td class="verses">Mr 16:19-20.</td>
+  <td class="summary">and ascends into heaven.</td>
+ </tr>
+</table>
+
+</div> 
+    </div>
+    <div id="rightside">
+      <div id="rightsideinner"> <!-- InstanceBeginEditable name="EditNextPrev" --> 
+        <div class="nav"><div class="nav-prev"><a href="matthew.html" rel="prev">&larr;&nbsp;Matthew</a></div><div class="nav-next"><a href="luke.html" rel="next">Luke&nbsp;&rarr;</a></div></div> 
+        <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="EditIndexSelector" --> 
+        <div id="indexselector">
+        <select name="OutlinePages" onChange="window.open(this.options[this.selectedIndex].value,'_top')">
+<option selected value="/outlines/">Select a Book of the Bible</option>
+<option value="/outlines/">(About these outlines)</option>
+<option value="genesis.html">Genesis</option>
+<option value="exodus.html">Exodus</option>
+<option value="leviticus.html">Leviticus</option>
+<option value="numbers.html">Numbers</option>
+<option value="deuteronomy.html">Deuteronomy</option>
+<option value="joshua.html">Joshua</option>
+<option value="judges.html">Judges</option>
+<option value="ruth.html">Ruth</option>
+<option value="1samuel.html">1 Samuel</option>
+<option value="2samuel.html">2 Samuel</option>
+<option value="1kings.html">1 Kings</option>
+<option value="2kings.html">2 Kings</option>
+<option value="1chronicles.html">1 Chronicles</option>
+<option value="2chronicles.html">2 Chronicles</option>
+<option value="ezra.html">Ezra</option>
+<option value="nehemiah.html">Nehemiah</option>
+<option value="esther.html">Esther</option>
+<option value="job.html">Job</option>
+<option value="psalms.html">Psalms</option>
+<option value="proverbs.html">Proverbs</option>
+<option value="ecclesiastes.html">Ecclesiastes</option>
+<option value="songofsolomon.html">Song of Solomon</option>
+<option value="isaiah.html">Isaiah</option>
+<option value="jeremiah.html">Jeremiah</option>
+<option value="lamentations.html">Lamentations</option>
+<option value="ezekiel.html">Ezekiel</option>
+<option value="daniel.html">Daniel</option>
+<option value="hosea.html">Hosea</option>
+<option value="joel.html">Joel</option>
+<option value="amos.html">Amos</option>
+<option value="obadiah.html">Obadiah</option>
+<option value="jonah.html">Jonah</option>
+<option value="micah.html">Micah</option>
+<option value="nahum.html">Nahum</option>
+<option value="habakkuk.html">Habakkuk</option>
+<option value="zephaniah.html">Zephaniah</option>
+<option value="haggai.html">Haggai</option>
+<option value="zechariah.html">Zechariah</option>
+<option value="malachi.html">Malachi</option>
+<option value="matthew.html">Matthew</option>
+<option value="mark.html">Mark</option>
+<option value="luke.html">Luke</option>
+<option value="john.html">John</option>
+<option value="acts.html">Acts</option>
+<option value="romans.html">Romans</option>
+<option value="1corinthians.html">1 Corinthians</option>
+<option value="2corinthians.html">2 Corinthians</option>
+<option value="galatians.html">Galatians</option>
+<option value="ephesians.html">Ephesians</option>
+<option value="philippians.html">Philippians</option>
+<option value="colossians.html">Colossians</option>
+<option value="1thessalonians.html">1 Thessalonians</option>
+<option value="2thessalonians.html">2 Thessalonians</option>
+<option value="1timothy.html">1 Timothy</option>
+<option value="2timothy.html">2 Timothy</option>
+<option value="titus.html">Titus</option>
+<option value="philemon.html">Philemon</option>
+<option value="hebrews.html">Hebrews</option>
+<option value="james.html">James</option>
+<option value="1peter.html">1 Peter</option>
+<option value="2peter.html">2 Peter</option>
+<option value="1john.html">1 John</option>
+<option value="2john.html">2 John</option>
+<option value="3john.html">3 John</option>
+<option value="jude.html">Jude</option>
+<option value="revelation.html">Revelation</option>
+</select>
+ 
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="clearall">&nbsp;</div>
+        <div id="searchbox">
+          <form action="https://www.google.com" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="partner-pub-5275979875239567:3875486487">
+              <input type="hidden" name="ie" value="UTF-8">
+              <input type="text" name="q" size="20" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+        
+        <!--SS_AD_START-->
+        <div id="sssidebar" class="sidebar">
+          <div class="innersidebar">
+            <p>Your Bible study shouldn't be left to a web search.</p>
+            <div class="sslink">
+              <p><a href="https://www.swordsearcher.com">Better Bible Study
+                With<br>
+                SwordSearcher
+                Bible Software <br>
+                <img src="../img/swordsearcher.png" alt="SwordSearcher"></a> </p>
+            </div>
+            <p>The internet is good for many things, but it is not designed for studying God's word.</p>
+            <p>SwordSearcher is.</p>
+            <ul>
+              <li><a href="https://www.swordsearcher.com">Learn more.</a></li>
+              <li><a href="https://www.swordsearcher.com/video/3reasons.htm">Video: 3 Reasons to use SwordSearcher</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--SS_AD_END-->
+        
+        
+        <a href="https://www.bible-topics.com/" class="button">Bible Topics</a>
+		<a href="https://www.naves-topical-bible.com/" class="button">Nave's Topical Bible Concordance</a>
+		<a href="https://www.internationalstandardbible.com/" class="button">International Standard Bible Encyclopedia</a>
+  		<a href="https://www.biblicalcyclopedia.com/" class="button">McClintock and Strong Biblical Cyclopedia</a>
+		<a href="https://av1611.com/kjbp/kjv-bible-text/index.html" class="button">Online KJV Text</a>
+		<a href="https://av1611.com/kjbp/kjv-dictionary/kjv-dictionary-index.html" class="button">KJV Dictionary</a> 
+ 
+      </div>
+    </div>
+    <div class="clearall"> &nbsp; </div>
+  </div>
+</div>
+<div id="footer"> <!-- InstanceBeginEditable name="EditFooterIndex" --> 
+  <!--FOOTER_INDEX_DIV_START--> 
+  <!--FOOTER_INDEX_DIV_END--> 
+  <!-- InstanceEndEditable -->
+  <div class="innerdiv"> 
+    <!--FOOTER_START--> 
+    <a href="https://www.biblestudystart.com"><img src="../img/books-tiny.jpg" alt="Bible Study Start" class="bookspicture"></a> <!-- InstanceBeginEditable name="Footer" -->
+    <p>Source: <a href="https://www.swordsearcher.com/bible-study-library/bible-outlines.html">OutlinesBB</a> module from <a href="https://www.swordsearcher.com">SwordSearcher</a>.</p>
+    <!-- InstanceEndEditable -->
+    <p>Website HTML, editorial descriptions, and images &copy;2023 <a href="https://www.studylamp.com">StudyLamp Software LLC.</a> <br>
+      <a href="https://av1611.com/verseclick">Scripture linking and popups powered by VerseClick&trade;.</a> </p>
+    <!--FOOTER_END--> 
+  </div>
+</div>
+<div id="postfooter"> 
+  
+ 
+</div>
+
+
+<script src="https://av1611.com/verseclick/verseclick.js"></script> 
+
+<!-- AddThis Smart Layers BEGIN --> 
+<!-- Go to http://www.addthis.com/get/smart-layers to customize --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e2b9213820e78"></script> 
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5,
+	  'mobile' : false
+    }   
+  });
+</script> 
+<!-- AddThis Smart Layers END --> 
+
+
+</body>
+<!-- InstanceEnd --></html>

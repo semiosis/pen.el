@@ -1,0 +1,42 @@
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 582
+Server: DataDome
+X-DataDome: protected
+Accept-CH: Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory
+Content-Type: text/html;charset=utf-8
+Charset: utf-8
+Cache-Control: max-age=0, private, no-cache, no-store, must-revalidate
+Pragma: no-cache
+X-DataDome-CID: AHrlqAAAAAMA2NU-bAi0D0kAdlxERA==
+Set-Cookie: datadome=nnrbF1YyUNbZL2azwpx8fc8LG6Wn861VAo~4hNnFm47bgVMVwjHtEMQA40W2~lyHSCGPhxdY93_Zql3hjGc00EayEHKRUnDP_4Xh~X4atpS~RxuVNi6E7jnft5Ud~rcu; Max-Age=31536000; Domain=www.nytimes.com; Path=/; Secure; SameSite=Lax
+x-datadome-timer: S1711061405.143022,VS0,VE34
+X-Origin-Time: 2024-03-21 22:50:05 UTC
+Accept-Ranges: bytes
+Date: Thu, 21 Mar 2024 22:50:05 GMT
+X-Served-By: cache-akl10320-AKL
+X-Cache: MISS
+X-Cache-Hits: 0
+Vary: Fastly-SSL
+Set-Cookie: nyt-a=ajfhh5kPVh6s-Lp1U-y9Zv; Expires=Fri, 21 Mar 2025 22:50:05 GMT; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+x-nyt-app-webview: 0
+Set-Cookie: nyt-gdpr=0; Expires=Fri, 22 Mar 2024 04:50:05 GMT; Path=/; Domain=.nytimes.com
+x-gdpr: 0
+Set-Cookie: nyt-purr=cfhhcfhhhukfhufshg; Expires=Fri, 21 Mar 2025 22:50:05 GMT; Path=/; Domain=.nytimes.com; SameSite=Lax; Secure
+Permissions-Policy: browsing-topics=()
+Set-Cookie: nyt-us=0; Expires=Fri, 22 Mar 2024 04:50:05 GMT; Path=/; Domain=.nytimes.com
+Set-Cookie: nyt-geo=NZ; Expires=Fri, 22 Mar 2024 04:50:05 GMT; Path=/; Domain=.nytimes.com
+X-Frame-Options: DENY
+Set-Cookie: nyt.et.dd=iv=3ECF6C015773417A8F72D32C21E06327&val=/keBohau3WfkP7XGBTEcO6z1SeyHiHVFQiN4RBL8t7M3jSuXMgtrnRsBpPogKwKtHlzuRmr9CHRHJRdiBk7Fl74hjb/y2EHwrHvFV+SWXkulzAFNOjnSdsrE0GfFzxl+cN6q3aeh96EYIx/j6vWHY1Q4c3/loUYNGSE29x4qe4gEO5/dFJn+F8pRMdWRDJHD2dCxH+tTe/pQJDZwuhG5vMSrm/LOtRi1yWfhl27kv3dAU4dZJWb1fkL2V8erjpaaFc9O1z5qKzx1p6Xq+oFrp2rihBCMdeZ/BTe6VBdLOGNM2+G7Qyxp8wO5ZuRTrXjeC70bTJxjInq+iw+uv08yoiyGL9IMl9y2n8qiUHAv2yU=; Max-Age=60; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+Set-Cookie: datadome=0; Domain=.nytimes.com; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; Secure
+onion-location: https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion/2024/03/21/technology/apple-doj-lawsuit-antitrust.html
+X-API-Version: F-X
+x-nyt-route: vi-story
+Content-Security-Policy: upgrade-insecure-requests; default-src data: 'unsafe-inline' 'unsafe-eval' https:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob:; style-src data: 'unsafe-inline' https:; img-src data: https: blob: android-webview-video-poster:; font-src data: https:; connect-src data: https: wss: blob:; media-src data: https: blob:; object-src https:; child-src https: data: blob:; form-action https:; report-uri https://csp.nytimes.com/report;
+Strict-Transport-Security: max-age=63072000; preload; includeSubdomains
+Access-Control-Expose-Headers: X-Nyt-Mktg-Group
+x-nyt-mktg-group: group6
+Set-Cookie: nyt-b3-traceid=556983174813468997f0462784d35669; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+x-nyt-edge-cache: MISS
+
+<html><head><title>nytimes.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style></head><body style="margin:0"><p id="cmsg">Please enable JS and disable any ad blocker</p><script data-cfasync="false">var dd={'rt':'c','cid':'AHrlqAAAAAMA2NU-bAi0D0kAdlxERA==','hsh':'499AE34129FA4E4FABC31582C3075D','t':'fe','s':17439,'e':'0f008294b893c588613a866f3707c81a2698d02eaaaf41fa0ff70423d3e1fe87','host':'geo.captcha-delivery.com'}</script><script data-cfasync="false" src="https://ct.captcha-delivery.com/c.js"></script></body></html>

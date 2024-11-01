@@ -1,0 +1,6 @@
+Once upon a time, in the land of Clojure-Python interop, there was a
+great library called `libpython-clj`. It was a bit difficult to get
+everything set up, but it was a major step forward from the initial
+`python-fn` library in Clojure.(ns clojure-interop-with-python-nlp-libraries-testbed.core
+  (:gen-class)
+  (:require [libpython-clj2.require :refer [require-python]]

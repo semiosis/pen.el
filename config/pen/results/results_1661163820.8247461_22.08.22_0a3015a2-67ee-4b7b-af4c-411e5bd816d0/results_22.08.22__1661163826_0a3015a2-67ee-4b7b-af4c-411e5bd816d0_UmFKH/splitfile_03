@@ -1,0 +1,6 @@
+
+~~~~~~~~
+
+In the build directory, they will be compiled to CommonWords.cabal and CommonWords.hs.
+
+If you want to get a feel for how the language works, you can write some Haskell code and run it.

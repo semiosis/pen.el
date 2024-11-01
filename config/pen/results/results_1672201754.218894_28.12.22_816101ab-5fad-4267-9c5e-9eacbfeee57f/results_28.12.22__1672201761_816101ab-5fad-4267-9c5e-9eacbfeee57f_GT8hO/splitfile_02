@@ -1,0 +1,11 @@
+
+
+" get the current selected text
+let s = getline('.')
+return s
+
+endfunction
+
+function! RepeatLastCommand()
+
+let [lnum1, col1] = getpos(".")

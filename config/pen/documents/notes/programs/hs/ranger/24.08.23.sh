@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "ranger" "#" "<==" "bash"
+cd /root/.pen/documents/devotionals;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/devotionals;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "ranger" "#" "<==" "zsh"

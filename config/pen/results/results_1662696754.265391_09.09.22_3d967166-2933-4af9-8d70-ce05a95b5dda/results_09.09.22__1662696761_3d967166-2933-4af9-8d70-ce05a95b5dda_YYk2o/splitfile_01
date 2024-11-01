@@ -1,0 +1,16 @@
+"TabNine" is a company.
+
+#+END_SRC
+
+* TODO NFT store
+Based on ethereum.
+
+* TODO Build crypto-based prompt store
+- This would use Hugo
+
+* Pen
+Make it so this stuff can be disabled through
+an emacs custom var, which is able to be
+configured through the =pen.yaml=.
+
+#+BEGIN_SRC emacs-lisp -n :async :

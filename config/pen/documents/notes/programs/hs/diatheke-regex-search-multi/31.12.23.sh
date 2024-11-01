@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "diatheke-regex-search-multi" "-fv" "nasb" "let" "the" "peace" "of" "Christ" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "nasb" "peace" "of" "Christ" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "RLT" "peace" "of" "Christ" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "RLT" "law" "of" "Christ" "#" "<==" "pen-ci"
+cd /;  "diatheke-regex-search-multi" "-fv" "RLT" "riches" "in" "Christ" "#" "<==" "pen-ci"
+cd /;  "diatheke-regex-search-multi" "-fv" "RLT" "blood" "#" "<==" "pen-ci"

@@ -1,0 +1,15 @@
+- 1. Derrida (1930-2003)
+- 2. Foucault (1915-1984)
+- 3. Lacan (1901-1981)
+- 4. Nozick (1953-2002)
+"""
+
+        # Create dataframe with random values.
+        df = pd.DataFrame(np.random.randint(10, size=(n_docs, len(columns))), columns=columns)
+
+        # Make a fake list of documents filepaths.
+        def list_filepaths():
+            for i in range(n_docs):
+                yield f"doc{i}.txt"
+
+        # Fake parse docs function will return the doc

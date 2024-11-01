@@ -1,0 +1,1 @@
+- Simon Peyton Jones: Sure. It's an example of using the state monad, which is a monad that allows you to embed a function that changes its state in a normal function that does not change its state. The runState function allows us to get the final state after running a state monad, and the

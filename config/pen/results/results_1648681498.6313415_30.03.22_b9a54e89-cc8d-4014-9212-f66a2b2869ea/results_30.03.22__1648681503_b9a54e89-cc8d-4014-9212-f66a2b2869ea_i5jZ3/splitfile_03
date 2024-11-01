@@ -1,0 +1,4 @@
+"GeneralizedNewtypeDeriving" is a typeclass that allows us to use newtype
+deriving with a type that is not a concrete type.
+
+The following code snippet demonstrates how to use the typeclass:

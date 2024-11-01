@@ -1,0 +1,13 @@
+
+
+x <- remember " foo "
+
+y <- remember " bar "
+
+return (x,y)
+
+-- |
+
+-- This is bad style, because the reader could assume that the
+
+-- 'y' in

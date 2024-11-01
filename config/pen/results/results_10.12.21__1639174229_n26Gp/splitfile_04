@@ -1,0 +1,12 @@
+
+Type systems are designating for making sure that the program is syntactically correct, and also the type of the input data is correct. There are three different type systems that are used in Haskell programming.
+
+Systems that are called Hindley-Milner type systems, which are specific for type inference.
+
+Systems that are called formal type systems, which have a concrete set of types.
+
+Systems that are called classic type systems, which have a concrete set of types and these types are restricted to a finite set.
+
+In the Hindley-Milner type systems, type inference is done by type constructors. In the formal type systems, the set of types has a finite set, and in the classic type systems, the set of types has a finite set.
+
+If a type system is a Hindley-Milner type systems, then the type inference is done by type constructors. If a type system is a formal type system, then the set

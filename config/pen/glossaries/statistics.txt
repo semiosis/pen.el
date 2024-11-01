@@ -1,0 +1,878 @@
+power law
+    The term power law describes a functional
+    relationship between two quantities where
+    one quantity varies as a power of the
+    other.
+
+    [[https://www.youtube.com/watch?v=7jUp1rR-Q4I][Exponentials & Power Laws - YouTube]]
+
+exponential
+power
+
+covariance
+    A measure of the joint variability of two
+    random variables.
+    
+    If the greater values of one variable
+    mainly correspond with the greater values
+    of the other variable, and the same holds
+    for the lesser values (that is, the
+    variables tend to show similar behavior),
+    the covariance is positive.
+    
+    In the opposite case, when the greater
+    values of one variable mainly correspond
+    to the lesser values of the other, (that
+    is, the variables tend to show opposite
+    behavior), the covariance is negative.
+    
+    The sign of the covariance therefore shows
+    the tendency in the linear relationship
+    between the variables.
+    
+    The magnitude of the covariance is not
+    easy to interpret because it is not
+    normalized and hence depends on the
+    magnitudes of the variables.
+    
+    The normalized version of the covariance,
+    the correlation coefficient, however,
+    shows by its magnitude the strength of the
+    linear relation.
+    
+    A distinction must be made between (1) the
+    covariance of two random variables, which
+    is a population parameter that can be seen
+    as a property of the joint probability
+    distribution, and (2) the sample
+    covariance, which in addition to serving
+    as a descriptor of the sample, also serves
+    as an estimated value of the population
+    parameter.
+
+ground truth
+    A term used in various fields to refer to
+    information that is known to be real or
+    true, provided by direct observation and
+    measurement (i.e. empirical evidence) as
+    opposed to information provided by
+    inference.
+
+    "the ground truth of the messages used to
+    train the algorithm"
+
+log-likelihood
+    The natural logarithm of the likelihood.
+
+    https://www.statlect.com/glossary/log-likelihood
+
+    In turn, given a sample and a parametric
+    family of distributions (i.e., a set of
+    distributions indexed by a parameter) that
+    could have generated the sample, the
+    likelihood is a function that associates
+    to each parameter the probability (or
+    probability density) of observing the
+    given sample. 
+
+a parametric family of distributions
+    A set of distributions indexed by a
+    parameter.
+
+model validation
+statistical model validation
+    The process by which model outputs are
+    (systematically) compared to independent
+    real-world observations to judge the
+    quantitative and qualitative
+    correspondence with reality.
+
+cross-validation
+rotation estimation
+out-of-sample testing
+    [model validation technique]
+
+    Any of various similar model validation
+    techniques for assessing how the results
+    of a statistical analysis will generalize
+    to an independent data set.
+
+    It is mainly used in settings where the
+    goal is prediction, and one wants to
+    estimate how accurately a predictive model
+    will perform in practice.
+
+    In a prediction problem, a model is
+    usually given a dataset of known data on
+    which training is run (training dataset),
+    and a dataset of unknown data (or first
+    seen data) against which the model is
+    tested (called the validation dataset or
+    testing set).
+
+    The goal of cross-validation is to test
+    the model's ability to predict new data
+    that was not used in estimating it, in
+    order to flag problems like overfitting or
+    selection bias and to give an insight on
+    how the model will generalize to an
+    independent dataset (i.e., an unknown
+    dataset, for instance from a real
+    problem).
+
+stochastic
+    Refers to the property of being well
+    described by a random probability
+    distribution.
+
+statistical modelling
+    A method of mathematically approximating
+    the world.
+
+    Statistical models contain variables that
+    can be used to explain relationships
+    between other variables.
+
+    We use hypothesis testing, confidence
+    intervals etc to make inferences and
+    validate our hypothesis.
+
+CI
+confidence interval
+    A type of estimate computed from the
+    statistics of the observed data.
+
+    This proposes a range of plausible values
+    for an unknown parameter.
+
+    The interval has an associated confidence
+    level that the true parameter is in the
+    proposed range
+
+empirical study
+    The collection and analysis of primary
+    data based on direct observation or
+    experiences in the 'field'.
+
+sample size determination
+    The act of choosing the number of
+    observations or replicates to include in a
+    statistical sample.
+
+    The sample size is an important feature of
+    any empirical study in which the goal is
+    to make inferences about a population from
+    a sample.
+
+choropleth map
+    A choropleth map is a type of thematic map
+    in which areas are shaded or patterned in
+    proportion to a statistical variable that
+    represents an aggregate summary of a
+    geographic characteristic within each
+    area, such as population density or per-
+    capita income.
+
+outlier
+    ewwlinks +/"We find the z score" "https://medium.com/datadriveninvestor/finding-outliers-in-dataset-using-python-efc3fce6ce32"
+
+    If the z score is greater than 3 than we
+    can classify that point as an outlier.
+
+    Any point outside of 3 standard deviations
+    would be an outlier.
+
+marginalized
+    Treated as insignificant or peripheral.
+
+marginal likelihood function
+integrated likelihood
+model evidence
+evidence
+    [#statistics]
+    [#bayesion statistics]
+
+    A likelihood function in which some
+    parameter variables have been
+    marginalized.
+
+standard score
+z score
+z-value
+z-score
+normal score
+standardized variable
+    [#statistics]
+    [dimensionless quantity]
+
+    The number of standard deviations a point
+    lies from the mean value.
+
+    ewwlinks +/"We find the z score" "https://medium.com/datadriveninvestor/finding-outliers-in-dataset-using-python-efc3fce6ce32"
+
+    The signed fractional number of standard
+    deviations by which the value of an
+    observation or data point is above the
+    mean value of what is being observed or
+    measured.
+
+    Observed values above the mean have
+    positive standard scores, while values
+    below the mean have negative standard
+    scores.
+
+    It is calculated by subtracting the
+    population mean from an individual raw
+    score and then dividing the difference by
+    the population standard deviation.
+
+    This conversion process is called
+    standardizing or normalizing (however,
+    "normalizing" can refer to many types of
+    ratios; see normalization for more).
+
+    They are most frequently used to compare
+    an observation to a theoretical deviate,
+    such as a standard normal deviate.
+
+    Computing a z-score requires knowing the
+    mean and standard deviation of the
+    complete population to which a data point
+    belongs; if one only has a sample of
+    observations from the population, then the
+    analogous computation with sample mean and
+    sample standard deviation yields the
+    t-statistic.
+
+R-squared
+R2
+    [statistical measure]
+
+    Represents the proportion of the variance
+    for a dependent variable that's explained
+    by an independent variable or variables in
+    a regression model.
+
+positive false discovery rate
+pFDR
+
+Null hypothesis
+    The hypothesis that there is no
+    significant difference between specified
+    populations, any observed difference being
+    due to sampling or experimental error.
+
+p-value
+probability value
+    [statistical hypothesis testing]
+
+    For a given statistical model, the
+    probability that, when the null hypothesis
+    is true, the statistical summary would be
+    equal to, or more extreme than, the actual
+    observed results.
+
+    The expected false positive rate.
+
+    When you perform a hypothesis test in
+    statistics, a p-value helps you determine
+    the significance of your results.
+
+    A number between 0 and 1.
+
+    A small p-value (typically ≤ 0.05)
+    indicates strong evidence against the null
+    hypothesis, so you reject the null
+    hypothesis.
+
+    See:
+    - q-value
+
+q-value
+    The expected pFDR.
+
+    Provide a means to control the pFDR.
+
+    See:
+    - p-value
+
+p-value vs q-value
+    They're not opposites.
+
+    p-value gives the expected false positive
+    rate obtained by:
+        rejecting the null hypothesis for any
+        result with an equal or smaller
+        p-value
+
+    q-value gives the expected pFDR obtained
+    by:
+        rejecting the null hypothesis for any
+        result with an equal or smaller
+        q-value.
+
+Laplace smoothing
+additive smoothing
+Lidstone smoothing
+    [#statistics]
+
+    A technique used to smooth categorical data.
+
+    Given an observation x={x1,x2,x3,...,xd}
+    from a multinomial distribution with N
+    trials, a smoothed version of the data
+    gives the estimator.
+
+    Not to be confused with Laplacian
+    smoothing.
+
+    A small-sample correction, or
+    pseudo-count, will be incorporated in
+    every probability estimate.
+
+    A way of regularizing Naive Bayes, and when the pseudo-count is zero, it is called Laplace smoothing.
+
+    https://medium.com/syncedreview/applying-multinomial-naive-bayes-to-nlp-problems-a-practical-explanation-4f5271768ebf
+
+Laplacian smoothing
+    [#image processing]
+
+Naive Bayes
+    [family of classifiers]
+    [family of algorithms]
+    [family of probabilistic classifiers]
+
+    Based on applying Bayes theorem with a
+    strong (naive) assumption, that every
+    feature is independent of the others, in
+    order to predict the category of a given
+    sample.
+
+    They are probabilistic classifiers,
+    therefore will calculate the probability
+    of each category using Bayes theorem, and
+    the category with the highest probability
+    will be output.
+
+    Have been successfully applied to many
+    domains, particularly NLP.
+
+    ewwlinks +/"A practical example" "http://webcache.googleusercontent.com/search?q=cache:https://medium.com/syncedreview/applying-multinomial-naive-bayes-to-nlp-problems-a-practical-explanation-3f5271768ebf"
+
+    Classify a sentence such as "A very close
+    game" into a discrete category (e.g.
+    'Sports' or 'Not sports').
+
+    Expressed formally, this is what we would
+    like to calculate P( Sports | A very close
+    game), i.e. the probability that the
+    category of the sentence is Sports given
+    that the sentence is “A very close game”.
+
+paraphrasing
+
+Bayes Theorm
+    Can be read a little bit like, for example:
+
+        Someone is told that the probability
+        of them having a disease is equal to
+        𝑥, but they are convinced that
+        assessment of them is wrong, so they
+        start questioning the assumptions.
+
+        What other risk factors are there? For
+        example, the estimation may be based
+        partly on an assumption about the risk
+        of exposure via air, and we want to
+        formulate the risk in terms of
+        exposure then recalculate the risk.
+
+        We also know that exposure via air may
+        not be the only way to contract the
+        disease (there is an inherent
+        probability of contracting it P(H))
+        and that it is merely a risk factor,
+        and so if in the case we have
+        definitely been exposed, it still only
+        influences the ultimate chances of
+        having the disease.
+
+        Let's call exposure via air the prior
+        and when we take it as certainty
+        during a thought experiment, lets call
+        it an assumption.
+
+        Are they really sure that they have
+        been exposed, and how does exposure
+        relate to their risk? What can we
+        learn more about how risk of exposure
+        relates to risk of the person having
+        the disease, so that we can better
+        understand the dynamics of it?
+
+        P(H)
+            Exposure aside, they're less
+            likely to have the disease if it's
+            a rare disease. But by the same
+            logic, if it's a common problem,
+            then they're more likely to have
+            it. That much is obvious and no
+            more satisfying than our original
+            diagnosis. We want to investigate
+            in terms of exposure.
+
+        1/P(e)
+            By contrast, when exposure is
+            generally rare, then when it is
+            discovered it becomes a bigger
+            deal. When rare, upon determining
+            that exposure has taken place the
+            chances of having the disease
+            become higher.
+
+            If exposure is an ordinary event,
+            then it's actually less likely
+            that the person has contracted the
+            disease in a situation where it's
+            determined that they have been
+            exposed.
+
+            If it's really common, then it
+            doesn't influence the rest of the
+            equation much -- that's the
+            takeaway.
+
+        P(e|H)
+            Lastly, getting statistics about
+            people who actually have the
+            disease -- this is the gold.
+            What is the chance that a person
+            that has the disease was exposed
+            to it in the way we have assumed
+            (via air)? This data is hard to
+            find, but if we have this data, we
+            can recalculate the original
+            diagnosis.
+
+            But on the other hand, since this
+            information is gold we can
+            actually calculate it if we solve
+            for X, if we take the other
+            variables to be accurate.
+
+            Being able to invert the
+            probability of X given Y to be the
+            probability of Y given X is
+            actually the point of the Bayes
+            formula.
+
+            It's not certain that all people
+            that have the disease were
+            exposed to it in the way that was
+            assumed, which is why we brought
+            exposure though air under the
+            microscope. Perhaps they
+            contracted it without exposure.
+    
+    $DUMP$HOME/notes2018/ws/bayesian-statistics/1*YTWinOBUgmStxkbUJZ1vNw.png
+
+             P(e|H).P(H)
+    P(H|e) = -----------
+                P(e)
+
+    H = hypothesis - https://opennmt.net/OpenNMT/translation/beam_search/
+    e = evidence/assumption
+
+    - Likelihood: P(e|H)
+      How probable is the evidence given that
+      our hypothesis is true?
+
+    - Posterior: P(H|e)
+      How probable is our hypothesis given the
+      observed evidence?
+      (Not directly computable)
+
+    - Prior: P(H)
+      How probable was our hypothesis before
+      observing the evidence?
+
+    - Marginal: P(e)
+      How probable is the new evidence under
+      all possible hypotheses?
+
+             P(B|A).P(A)
+    P(A|B) = -----------
+                P(B)
+
+    | POS  | name                         |
+    |------+------------------------------|
+    | P(∙) | Domain knowledge             |
+    | A    | Unknown variables (unknowns) |
+    | B    | Observed values (knowns)     |
+
+    Relate this to LM generation and beam
+    search.
+
+Naive Bayes
+    [classifier]
+    [classification algorithm]
+
+    Why is Naive Bayes naive?
+    - It assumes each feature is independent
+      from one another.
+
+    vimlinks +/"^  Naive Bayes Classifier" "https://medium.com/@mark.rethana/bayesian-statistics-and-naive-bayes-classifier-33b735ad7b16"
+
+    Used for binary or multi-class
+    classification.
+
+    The classification is carried out by
+    calculating the posterior probabilities
+    and finding the hypothesis with the
+    highest probability using MAP.
+
+    Basically, it is finding the probability
+    of given feature being associated with a
+    label and assigning the label with the
+    highest probability.
+
+    It is referred to as naive because it
+    assumes all features are independent,
+    which is rarely the case in real life.
+
+    Things to Remember
+    - Easy to understand and fast to implement
+    - Need less training data than logistic
+      regression
+    - Performs well for categorical input values
+    - “Zero Frequency” or if a categorical
+      variable has a category in the test set
+      that is not present in the training set,
+      the model will assign a 0% probability
+      to this category making it unable to
+      make a prediction. This can be fixed by
+      using a smoothing method such as Laplace
+      estimation. Laplace estimation assigns a
+      small non-zero probability to data not
+      in the train set. This is extremely
+      relevant for text classification. For
+      example if one word does not appear in
+      the train set you do not want the
+      classifier to lower the probability of
+      the entire document to 0.
+    - Assumption of independent predictors
+
+    vim +/"Naive Bayes classifier" "$MYGIT/facebook/duckling/exe/Duckling/Ranking/Train.hs"
+
+Conditional Random Fields
+CRF
+    [class of statistical modeling method]
+
+    Often applied in pattern recognition and
+    ML and used for structured prediction.
+
+    CRFs fall into the sequence modeling
+    family.
+
+    Whereas a discrete classifier predicts a
+    label for a single sample without
+    considering "neighboring" samples, a CRF
+    can take context into account; e.g., the
+    linear chain CRF (which is popular in NLP)
+    predicts sequences of labels for sequences
+    of input samples.
+
+    CRFs are a type of discriminative
+    undirected probabilistic graphical model.
+
+    They are used to encode known
+    relationships between observations and
+    construct consistent interpretations and
+    are often used for labeling or parsing of
+    sequential data, such as NLP or biological
+    sequences and in CV.
+
+    Specifically, CRFs find applications in
+    POS tagging, shallow parsing,named entity
+    recognition,gene finding and peptide
+    critical functional region finding, among
+    other tasks, being an alternative to the
+    related hidden Markov models (HMMs).
+
+    In CV, CRFs are often used for object
+    recognition and image segmentation.
+
+rejection sampling
+    A basic technique used to generate
+    observations from a distribution.
+
+    It is also commonly called the acceptance-
+    rejection method or "accept-reject
+    algorithm" and is a type of exact
+    simulation method.
+
+    Based on the observation that to sample a
+    random variable in one dimension, one can
+    perform a uniformly random sampling of the
+    two-dimensional Cartesian graph, and keep
+    the samples in the region under the graph
+    of its density function.
+
+importance sampling
+    A general technique for estimating
+    properties of a particular distribution,
+    while only having samples generated from a
+    different distribution than the
+    distribution of interest.
+
+    It is related to umbrella sampling in
+    computational physics.
+
+    Depending on the application, the term may
+    refer to the process of sampling from this
+    alternative distribution, the process of
+    inference, or both.
+
+Standard Normal Distribution
+    A Gaussian distribution with
+    unit-variance.
+
+    A normal distribution with a mean of 0 and
+    a standard deviation of 1.
+
+unit-variance
+    A Gaussian distribution with unit-variance
+    is also referred to as the standard normal
+    distribution.
+
+    The mean (and expected value) of a
+    standard normal distribution is zero.
+
+    The standard deviation of a sample as well
+    as the variance will tend towards 1 as the
+    sample size tends towards infinity.
+
+Zero-mean
+    "Zero-meaned" means the vector has been
+    transformed so that its mean is 0.
+
+Standard Normal Distribution
+    Two alternative ways to describe it:
+    a)  has unit variance
+    b)  has zero-mean
+
+    Because any normal distribution can be
+    specified by the two parameters: mean (μ)
+    and standard deviation (σ).
+
+    If a normal distribution has zero mean
+    then it must have unit variance.
+
+Markov Assumption
+    Used to describe a model where the Markov
+    Property is assumed to hold.
+
+Markov Property
+    Needing not information of past states.
+
+    The memoryless property of a stochastic
+    process.
+
+    See Markov Assumption.
+
+Markov decision processes
+MDP
+    [control process]
+    `discrete time
+    `stochastic
+
+    Provides a mathematical framework for
+    modeling decision making in situations
+    where outcomes are partly random and
+    partly under the control of a decision
+    maker.
+
+    MDPs are useful for studying optimization
+    problems solved via dynamic programming
+    and reinforcement learning.
+
+    Used in many disciplines, including
+    robotics, automatic control, economics and
+    manufacturing.
+
+Markov Process
+    A process that needs not information of
+    past states.
+
+    A process with the Markov Property is
+    called a Markov Process.
+
+Ising Model
+    [#statistical mechanics]
+
+    A mathematical model of ferromagnetism.
+
+    Consists of discrete variables
+    that represent magnetic dipole moments of
+    atomic spins that can be in one of two
+    states (+1 or −1).
+
+    The spins are arranged in a graph, usually
+    a lattice, allowing each spin to interact
+    with its neighbors.
+
+    Allows the identification of
+    phase transitions, as a simplified model
+    of reality.
+
+    The 2D square-lattice Ising
+    model is one of the simplest statistical
+    models to show a phase transition.
+
+    I think this was talked about in both
+    COSC 431 and COSC 420. Therefore, it must
+    be important.
+
+    [[https://en.wikipedia.org/wiki/Ising_model][Ising model - Wikipedia]]
+
+    https://scontent.fakl1-2.fna.fbcdn.net/v/t1.0-9/60506453_870932796585313_1503976398916681728_o.jpg
+
+    https://www.quora.com/How-is-the-Ising-model-related-to-machine-learning
+
+Markov Random Field
+    Extends this property to two or more
+    dimensions or to random variables defined
+    for an interconnected network of items.
+
+    Example,
+        Ising Model
+
+Markov Chain
+    A discrete-time stochastic process
+    satisfying the Markov Property.
+
+stochastic process
+random process
+    [mathematical object]
+
+Random walk
+    [random process]
+
+    Describes a path that consists of a
+    succession of random steps on some
+    mathematical space such as the integers.
+
+    [[https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Walk3d_0.png/280px-Walk3d_0.png][upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Walk3d_0.png/280px-Walk3d_0.png]]
+
+classification
+    Supervised.
+
+    Like regression, but output is
+    non-discrete.
+
+    Output variable in regression is categorical
+    (or discrete).
+
+regression analysis
+    A set of statistical processes for
+    estimating the relationships among
+    variables.
+
+    The focus is on the relationship between a
+    dependent variable and one or more
+    independent variables (or 'predictors').
+
+    Helps one understand how the typical value
+    of the dependent variable (or 'criterion
+    variable') changes when any one of the
+    independent variables is varied, while the
+    other independent variables are held
+    fixed.
+
+Cluster analysis
+Clustering
+    [task]
+
+    Group a set of objects in such a way that
+    objects in the same group (called a
+    cluster) are more similar (in some sense)
+    to each other than to those in other
+    groups (clusters).
+
+    Cluster objects according to similarity
+    according to some sense.
+
+    The main difference between clustering and
+    classification is that the list of groups
+    is not clearly defined and is determined
+    during the operation of the algorithm.
+
+KNN
+K-NN
+K-NN
+    The algorithm has a loose relationship to
+    the k-nearest neighbor classifier, a
+
+K-Means Clustering
+    [uncontrolled clustering algorithm]
+
+    A method of vector quantization,
+    originally from signal processing, that
+    aims to partition n observations into k
+    clusters in which each observation belongs
+    to the cluster with the nearest mean,
+    serving as a prototype of the cluster.
+
+    - simple
+    - inaccurate
+
+    Split the set of elements of a vector
+    space into a previously known number of
+    clusters k.
+
+    Algorithm:
+    - minimizes the standard deviation at the
+      points of each cluster.
+
+    At each iteration the center of mass is
+    recalculated for each cluster obtained in
+    the previous step, then the vectors are
+    divided into clusters again according to
+    which of the new centers was closer in the
+    selected metric.
+
+    The algorithm terminates when no cluster
+    changes at any iteration.
+
+outlier detection
+anomaly detection
+
+Classification tree
+    Decision trees with categorical targets.
+
+regression
+    Supervised.
+
+    Like classification, but output is
+    non-discrete.
+
+    Output variable in regression is numerical
+    (or continuous).
+
+SVM
+Support-vector Machines
+    Supervised learning models with associated
+    learning algorithms that analyze data used
+    for classification and regression
+    analysis.
+
+    Used to identify things like
+    letters in handwriting.
+
+    $HOME/notes2018/ws/codecraft/03.07.18.org
+
+uncontrolled clustering algorithm
+    NLG: An algorithm that groups points into
+    clusters by comparing the distance of each
+    point to the centroid of all points in the
+    cluster.

@@ -1,0 +1,22 @@
+border-image
+    https://youtu.be/ypstT5UfCsk?t=189
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Border-image_generator
+
+media query
+@media
+    gli -F .scss "@media"
+    ga "@media" .scss
+
+    https://css-tricks.com/logic-in-media-queries/
+
+&
+    Nest operator.
+
+    https://dev.to/akashshyam/selector-nesting-has-come-to-css-532i
+
+@nest
+    This is a new at-rule that helps us
+    overcome some of the limitations of
+    nesting using the &. Look at the following
+    code:

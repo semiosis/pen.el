@@ -1,0 +1,52 @@
+task: "Imagine an awk linter"
+doc: "Given a line of awk code, check it for errors"
+prompt-version: 1
+prompt: |+
+    gawk -f syntax-test.awk <<EOD
+    BEGIN {
+      x = f(
+    }
+    EOD
+    gawk: syntax-test.awk:2:   x = f(
+    gawk: syntax-test.awk:2:         ^ unexpected newline or end of string
+
+    awk -f program.awk <<EOD
+    BEGIN {
+      a=5
+      if NR >= window_size && (effective_nr % step == 0) {
+      }
+    }
+    EOD
+    awk: program:3: if NR >= window_size && (effective_nr % step == 0) {
+    awk: program:3: ^ syntax error
+
+    awk -f program2.awk <<EOD
+    for (i=1; i<window_size; i++) {
+      s = s memory[i] RS
+    }
+    EOD
+
+    awk -f program3.awk <<EOD
+    BEGIN {
+      <line of code>
+    }
+    EOD
+engine: "OpenAI Codex"
+temperature: 0.2
+max-generated-tokens: 60
+n-completions: 10
+no-uniq-results: on
+top-p: 1.0
+cache: on
+stop-sequences:
+- "__long__"
+vars:
+- "line of code"
+examples:
+- "        close cmd, \"to\""
+preprocessors:
+- "cat"
+# postprocessor: "grep -v -P \"^6\" | sed \"s/^5: //\""
+filter: yes
+completion: off
+insertion: off

@@ -1,0 +1,5 @@
+""David Paich" refers to composer David Paich (1952-) who was the leader and keyboard player of the band "Toto" and has also worked on film scores."""
+
+# The following code is just to show how we might use the `re.match` function to extract the word we are interested in from the text of the email message.
+def get_word(text):
+    """

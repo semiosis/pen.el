@@ -1,0 +1,6 @@
+The above code is equivalent to:
+(ns ruse.util
+  (:require [clojure.repl :refer :all])
+  (:import (java.io File) (java.nio.file Paths))
+  (:gen-class))
+

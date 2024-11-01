@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "I" "Peter" "2:9" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "I" "Corinthians" "11:11" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "I" "Corinthians" "11:11-12" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "I" "Corinthians" "9:21" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "I" "Corinthians" "6:11" "#" "<==" "bash"

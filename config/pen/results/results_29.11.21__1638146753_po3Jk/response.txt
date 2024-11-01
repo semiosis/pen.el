@@ -1,0 +1,16 @@
+Generate a baby name from the api"
+  (interactive "ssex: \nscountry: ")
+  (let ((url-request-method "GET")
+        (url-request-extra-headers
+         '(("Content-Type" . "application/json")))
+        (url-request-data
+         (json-encode
+          `((sex . ,sex)
+            (country . ,country)
+            (amount . 1)
+            (key . "d8f3e0e2-a1d9-4b1a-a3e6-2c3dcea6a9b6"))))))
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "http://api.namsor.com/onomastics/api/json/gendre")
+      (goto-char url-http-end-of-headers)
+      (json-read))))

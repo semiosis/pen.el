@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: my defun
+# group: learning
+# key: df
+# --
+(defn hello-message [name] (str "Hello " name))

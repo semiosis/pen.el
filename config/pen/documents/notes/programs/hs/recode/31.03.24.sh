@@ -1,0 +1,6 @@
+cd /;  "recode" "html.." "#" "<==" "web"
+cd /root/.pen/documents/notes;  "recode" "html.." "#" "<==" "web"
+cd /root/.pen/documents/notes;  "recode" "html.." "#" "<==" "web"
+cd /root/.pen/documents/notes;  "recode" "html.." "#" "<==" "web"
+cd /root/notes/ws/irish;  "recode" "html.." "#" "<==" "web"
+cd /root/.pen/documents/notes;  "recode" "html.." "#" "<==" "web"

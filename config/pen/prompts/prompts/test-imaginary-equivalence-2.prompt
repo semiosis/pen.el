@@ -1,0 +1,79 @@
+task: "test imaginary equivalence"
+tags: epistemology alethiology
+doc: "Given two strings of arbitrary content, test their imaginary equivalence. This is an imaginary neural hash collision test"
+aliases:
+- imaginary hash collision test
+prompt-version: 1
+prompt: |+
+  <delim>1
+  1/0
+  <delim>
+  is the same as
+  <delim>
+  ∞
+  <delim>
+  TRUE because 1 divided by 0 diverges to infinity.
+
+  <delim>2
+  "Language is everywhere.
+  
+  It permeates our thoughts mediates our
+  relations with others, and even creeps into
+  our dreams." -Ronald Wayne Langacker
+  <delim>
+  is the same as
+  <delim>
+  FTC Puts Hundreds of Businesses on Notice about Fake Reviews (ftc.gov)
+  202 points by walterbell 3 hours ago | flag | hide | 92 comments
+  <delim>
+  FALSE because they are very unrelated.
+
+  <delim>3
+  (map
+   (fn [x] (+ x 1))
+   (range 1 5))
+  <delim>
+  is the same as
+  <delim>
+  (map (fn [x] (inc x)) (range 1 5))
+  <delim>
+  TRUE because `+ x` is equivalent to `inc`.
+
+  <delim>3
+  e^{i\pi} + 1 = 0
+  <delim>
+  is the same as
+  <delim>
+  euler's identity
+  <delim>
+  TRUE because euler's identity is the name of the equation e^{i\pi} + 1 = 0.
+
+  <delim>4
+  <a>
+  <delim>
+  is the same as
+  <delim>
+  <b>
+  <delim>
+
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 100
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "A"
+- "B"
+examples:
+- "Semerkhet, the Egyptian king who ruled during the First Dynasty"
+- "Moses also known as Moshe Rabbenu"
+filter: on
+completion: off
+insertion: off
+n-collate: 3
+n-completions: 10
+no-uniq-results: on
+results-analyser: pen-analyse-true-or-false
+postprocessor: sed 's/^\([a-zA-Z]*\).*/\1/'

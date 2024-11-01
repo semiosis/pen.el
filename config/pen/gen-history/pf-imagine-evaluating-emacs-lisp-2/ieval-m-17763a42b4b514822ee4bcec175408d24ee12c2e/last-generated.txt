@@ -1,0 +1,4 @@
+;; make short story
+;; arguments: (topic)
+(message (eval '(make-short-story "raspberries")))
+--> 

@@ -1,0 +1,13 @@
+there was a", a, "named", n, "who liked to", p,
+        "with cats. They were so", a, "and", a, "that everybody loved them."
+    )
+    return prompt(
+        "Try another poem:",
+        "cat[poem_again]",
+        "cat[poem_end]"
+    )
+
+
+def poem_again(message):
+    return prompt(
+        "Here you

@@ -1,0 +1,6 @@
+cd /root/notes;  "ved" "-m" "ddA\\<C-v>\\<C-i>\\<C-c>Jj" "#" "<==" "zsh"
+cd /root/notes;  "ved" "-m" "ddA\\<C-v>\\<C-i>\\<C-c>Jj" "#" "<==" "zsh"
+cd /root/notes;  "ved" "-m" "ddA\\<C-v>\\<C-i>\\<C-c>Jj" "#" "<==" "zsh"
+cd /root/notes;  "ved" "-gm" "IMG" "ddA\\<C-v>\\<C-i>\\<C-c>Jj" "#" "<==" "zsh"
+cd /root/notes;  "ved" "-gm" "IMG" "ddA\\<C-v>\\<C-i>\\<C-c>Jj" "#" "<==" "zsh"
+cd /root/notes;  "ved" "-gm" "IMG" "ddA\\<C-v>\\<C-i>\\<C-c>Jj" "#" "<==" "zsh"

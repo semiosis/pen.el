@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ff" "https://www.youtube.com/watch?v=yENsZ-Fsj4I"
+cd /root/.pen/documents/notes;  "ff" "http://www.youtube.com/results?aq=f&oq=&search_query=chemistry%20ncea"
+cd /root/.pen/documents/notes;  "ff" "http://www.youtube.com/results?aq=f&oq=&search_query=chemistry%20ncea"
+cd /root/.pen/documents/notes;  "ff" "http://www.youtube.com/results?aq=f&oq=&search_query=chemistry%20ncea"
+cd /root/.pen/documents/notes;  "ff" "http://www.google.com/search?ie=utf-8&oe=utf-8&q=farming%20technology"

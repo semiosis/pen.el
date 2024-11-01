@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: math upright Roman boldface letters
+# group: math
+# key: mbold
+# --
+\mathbf{`yas-selected-text`$0}

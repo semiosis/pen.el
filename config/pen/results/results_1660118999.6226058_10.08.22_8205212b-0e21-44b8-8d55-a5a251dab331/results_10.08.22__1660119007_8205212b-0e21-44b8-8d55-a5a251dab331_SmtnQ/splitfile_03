@@ -1,0 +1,12 @@
+Frank
+"""
+
+print(text)
+
+
+def hello():
+    """This is a docstring. It is used to document what a function does."""
+    print("Hello!")
+
+
+print(hello.__doc__)

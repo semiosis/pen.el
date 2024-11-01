@@ -1,0 +1,7 @@
+
+   You can use the metadata to configure applications and to monitor your
+   resources. The metadata is available as both a set of HTTP headers
+   and a JSON document.
+
+   Instance Metadata
+   Amazon EC2 provides metadata

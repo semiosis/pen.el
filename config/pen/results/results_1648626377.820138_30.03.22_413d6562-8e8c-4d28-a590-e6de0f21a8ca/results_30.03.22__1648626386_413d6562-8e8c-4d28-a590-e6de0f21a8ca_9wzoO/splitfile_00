@@ -1,0 +1,7 @@
+http://https:/www.google.com/search?ie=utf-8&oe=utf-8&q=containers-0.4
+
+                                      Containers
+
+   Containers, also called pods, are the building blocks of Kubernetes.
+   Containers are isolated processes running on a host, and are often
+   described as running in a container. They are not

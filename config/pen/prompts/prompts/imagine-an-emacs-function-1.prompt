@@ -1,0 +1,28 @@
+title: imagine an emacs function
+task: "imagine an emacs lisp function given the name only"
+tags: ilambda code
+doc: "Given a function name, return the imagined body of the function"
+prompt-version: 1
+prompt: |+
+  ;;my-emacs-library.el
+
+  (defun <name> (
+engine: "OpenAI Codex"
+temperature: 0.2
+max-generated-tokens: 1000
+top-p: 1.0
+cache: on
+stop-sequences:
+- "\n\n"
+vars:
+- "name"
+validator: "chomp | sed -z 's/.*\\(.\\)$/\\1/' | grep -q ')'"
+examples:
+- "times"
+preprocessors:
+- "slugify"
+postprocessor: chomp
+postpostprocessor: "sed -z \"s/^;;my-emacs-library.el\\\\n\\\\n//\""
+filter: on
+completion: off
+insertion: off

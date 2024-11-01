@@ -1,0 +1,18 @@
+ialization(main).
+
+:- initialization(main).
+
+main :-
+	write('Hello world'), nl,
+	halt.
+EOD
+
+cat draft.prolog2 <<EOD
+initialization(main).
+
+:- initialization(main).
+
+main :-
+	write('Hello world'), nl,
+	halt.
+EOD

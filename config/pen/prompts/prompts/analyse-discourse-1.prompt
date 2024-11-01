@@ -1,0 +1,62 @@
+task: "analyse discourse"
+doc: "Annotate the given discourse segments"
+tags: language grammar
+prompt-version: 1
+copyright: "(c) 2006 Massachusetts Institute of Technology"
+prompt: |+
+    Coherence in Natural Language: Data Structures and Applications
+    (c) 2006 Massachusetts Institute of Technology
+    Authors: Florian Wolf and Edward Gibson
+    <delim>
+    Table 2.1
+    Contentful conjunctions that illustrate coherence relations
+    
+    Relation              : Conjunction
+    Cause-effect          : because, and so                                                                                                                              
+    Violated expectation  : although, but, while                                                                                                                         
+    Condition             : if... (then), as long as, while                                                                                                              
+    Similarity            : and, (and) similarly                                                                                                                         
+    Contrast              : by contrast, but                                                                                                                             
+    Temporal sequence     : (and) then; first, second,... ; before; after; while                                                                                         
+    Attribution           : according to... ,... said, claim that... , maintain that... , stated that...                                                                 
+    Example               : For example, for instance                                                                                                                    
+    Elaboration           : also, furthermore, in addition, notice (furthermore) that, (for, in, on, against, with,...) which, who, (for, in, on, against, with,...) whom
+    Generalization        : in general
+    <delim>
+    Discourse 1:
+    <delim>
+    If the new software works, everyone should be happy.
+    The new software worked great, but nobody was happy.
+    <delim>
+    Analysis of 1:
+    <delim>
+    Condition
+    a. If the new software works,    
+    b. everyone should be happy.
+
+    Violated Expectation
+    a. The new software worked great,
+    b. but nobody was happy.
+    <delim>
+    Discourse 2:
+    <delim>
+    <discourse segments>
+    <delim>
+    Analysis of 2:
+    <delim>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "discourse segments"
+examples:
+- "First, John went grocery shopping. Then he disappeared in a liquor store."
+filter: on
+completion: off
+insertion: off
+external-related:
+- "https://mitpress.mit.edu/books/coherence-natural-language"

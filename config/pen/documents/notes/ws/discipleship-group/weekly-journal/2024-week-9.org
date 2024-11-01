@@ -1,0 +1,233 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 9
+
+* D-Group weekly session notes
+Started working on it: <2024-03-01 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=z6vR_FV7s7c][4 Hours Best TOP 27 Worship Piano Instrumental for Prayer and Meditation e,?e??i??i?? - YouTube]]
+
+| Scripture Memory | NT260 Passage | Foundations260 Readings |
+|------------------+---------------+-------------------------|
+| [[sh:bible-read-passage nasb Matthew 5:17-18 ][Matthew 5:17-18]]  | [[sh:bible-study-passage nasb James 3-5 ][James 3-5]]     | [[sh:bible-study-passage nasb Exodus 32-40 ][Exodus 32-40]]            |
+|                  | [[sh:bible-study-passage nasb Acts 15-16 ][Acts 15-16]]    | [[sh:bible-study-passage nasb Leviticus 8-17 ][Leviticus 8-17]]          |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:17-18
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:17
+‾‾‾‾‾‾‾‾‾‾‾‾
+“Do not think that I came to abolish the Law or
+the Prophets; I did not come to abolish but to
+fulfill.
+
+Matthew 5:18
+‾‾‾‾‾‾‾‾‾‾‾‾
+For truly I say to you, until heaven and earth
+pass away, not the smallest letter or stroke
+shall pass from the Law until all is accomplished.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+*** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb James 3:17-18 ][James 3:17-18]]
+**** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb James 3:17-18
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+James 3:17-18
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+But the wisdom from above is first pure, then
+peaceable, gentle, reasonable, full of mercy
+and good fruits, unwavering, without
+hypocrisy.
+
+And the seed whose fruit is righteousness is
+sown in peace by those who make peace.
+
+(NASB)
+#+end_src
+
+*Matthew 5:9* - Blessed are the peacemakers, for they shall be called sons of God.
+
+**** E (explain)
+
+**** A (apply)
+
+**** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+***** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb James 4:11-12 ][James 4:11-12]]
+****** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb James 4:11-12
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+James 4:11-12
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Do not speak against one another, brethren.
+
+He who speaks against a brother or judges his
+brother, speaks against the law and judges the
+law; but if you judge the law, you are not a
+doer of the law but a judge of it.
+
+There is only one Lawgiver and Judge, the One
+who is able to save and to destroy; but who
+are you who judge your neighbor?
+
+(NASB)
+#+end_src
+
+We should observe the law - but be a doer, and avoid judging others with the law:
+
+*Matthew 23:2-7* - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. They do all their deeds to be seen by others. For they make their phylacteries broad and their fringes long, and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
+
+- [[https://www.youtube.com/watch?v=alOI2zxIPgc][How Preachers Grow Graceless - YouTube]]
+
+Be a doer of good, not merely a hearer:
+
+*James 1:22-23* -  But be doers of the word, and not hearers only, deceiving yourselves. For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. (ESV)
+
+*Romans 2:13-16* - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
+
+****** E (explain)
+
+****** A (apply)
+
+****** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+******* H.E.A.R journal entry for verse [[sh:bible-study-passage nasb James 5:13-18 ][James 5:13-18]]
+******** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb James 5:13-18
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+James 5:13-18
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Is anyone among you suffering?
+
+Then he must pray.
+
+Is anyone cheerful?
+
+He is to sing praises.
+
+Is anyone among you sick?
+
+Then he must call for the elders of the church
+and they are to pray over him, anointing him
+with oil in the name of the Lord; and the
+prayer offered in faith will restore the one
+who is sick, and the Lord will raise him up,
+and if he has committed sins, they will be
+forgiven him.
+
+Therefore, confess your sins to one another,
+and pray for one another so that you may be
+healed.
+
+The effective prayer of a righteous man can
+accomplish much.
+
+Elijah was a man with a nature like ours, and
+he prayed earnestly that it would not rain,
+and it did not rain on the earth for three
+years and six months.
+
+Then he prayed again, and the sky poured rain
+and the earth produced its fruit.
+
+(NASB)
+#+end_src
+
+******** E (explain)
+
+******** A (apply)
+
+******** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+********* H.E.A.R journal entry for verse [[sh:bible-study-passage nasb James 5:19-20 ][James 5:19-20]]
+********** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb James 5:19-20
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+James 5:19-20
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+My brethren, if any among you strays from the
+truth and one turns him back, let him know
+that he who turns a sinner from the error of
+his way will save his soul from death and will
+cover a multitude of sins.
+
+(NASB)
+#+end_src
+
+********** E (explain)
+
+********** A (apply)
+
+********** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+* Study Notes
+** Faith eclipses the law
+*Romans 4:9-12* - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are _not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised_.
+
+** Entering into life / the Kingdom of Heaven
+*Matthew 23:23-25* - Woe to you, scribes and Pharisees, hypocrites! For you tithe mint and dill and cumin, and have neglected the weightier matters of the law: _justice and mercy and faithfulness. These you ought to have done, without neglecting the others_.  You blind guides, straining out a gnat and swallowing a camel!  Woe to you, scribes and Pharisees, hypocrites! For you clean the outside of the cup and the plate, but inside they are full of greed and self-indulgence.
+
+** [[http://persweb.wabash.edu/facstaff/royaltyr/AncientCities/web/bradleyj/Project%201/The%20Epistle%20of%20Ignatius%20to%20the%20Magnesians.htm][The Epistle of Ignatius to the Magnesians]]
+Not under the law:
+
+*Ignatius to the Magnesians 8* - Be not deceived with strange doctrines, nor with old fables, which are unprofitable. For if we still live according to the Jewish law, we acknowledge that we have not received grace. For the divinest prophets lived according to Christ Jesus. On this account also they were persecuted, being inspired by His grace to fully convince the unbelieving that there is *one God, who has manifested Himself by Jesus Christ His Son, who is His eternal Word*, not proceeding forth from silence, and who in all things pleased Him that sent Him.
+
+Let us live with Christ:
+
+*Ignatius to the Magnesians 9* - If, therefore, those who were brought up in the ancient order of things have come to the possession of a newhope, no longer observing the Sabbath, but living in the observance of the Lord's Day, on which also our life has sprung up again by Him and by His death-whom some deny, by which mystery we have obtained faith, and therefore *endure, that we may be found the disciples of Jesus Christ, our only Master*-how shall we be able to live apart from Him, whose disciples the prophets themselves in the Spirit did wait for Him as their Teacher? And therefore He whom they rightly waited for, being come, raised them from the dead.
+
+But we should still die to sin and be His disciples:
+
+*Ignatius to the Magnesians 10* - Let us not, therefore, be insensible to His kindness. For were He to reward us according to our works, we should cease to be. Therefore, *having become His disciples, let us learn to live according to the principles of Christianity*. For whosoever is called by any other name besides this, is not of God. Lay aside, therefore, the evil, the old, the sour leaven, and be ye changed into the new leaven, which is Jesus Christ. Be ye salted in Him, lest any one among you should be corrupted, since by your savour ye shall be convicted. It is absurd to profess Christ Jesus, and to Judaize. For _Christianity did not embrace Judaism, but Judaism Christianity, that so every tongue which believeth might be gathered together to God_.

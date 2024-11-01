@@ -1,0 +1,24 @@
+task: "Imagine a man page"
+doc: "Given a program name, imagine a man page"
+prompt-version: 1
+tags: interpreter
+prompt: |+
+    <:pp><uc:program>(1)                     User Commands                    <uc:program>(1)
+    
+    NAME
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "program"
+pipelines:
+- uc: pen-str uc
+examples:
+- "echo"
+filter: on
+completion: off
+insertion: off

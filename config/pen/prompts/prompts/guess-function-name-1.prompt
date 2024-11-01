@@ -1,0 +1,54 @@
+task: "name a function, given the description or code"
+doc: "Given a function or a description of a function, come up with a good name for it"
+tags: code help documentation
+title: guess function name
+prompt-version: 1
+prompt: |+
+  List of algorithms:
+  <delim>
+  Function or algorithm:
+  <markdown-delim>
+  (defun f (n)
+    (if (= n 0) 0
+      (if (= n 1) 1
+        (+ (f (- n 1)) (f (- n 2))))))
+  <markdown-delim>
+  Algorithm name: Generate the fibonacci sequence
+  Function name: fib
+  <delim>
+  Function or algorithm:
+  <markdown-delim>
+  <algorithm or description>
+  <markdown-delim>
+  Algorithm name: 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+n-completions: 10
+stop-sequences:
+- "<delim>"
+cache: on
+# TODO Make it so vals are also substituted
+defs:
+- markdown-delim: "\"```\""
+vars:
+- "algorithm or description"
+examples:
+# quicksort
+- |
+  f :: (Ord a) => [a] -> [a]
+  f [] = []
+  f (x:xs) =
+    let smaller = f [a | a <- xs, a <= x]
+        bigger = f [a | a <- xs, a > x]
+    in  smaller ++ [x] ++ bigger
+info: on
+filter: off
+completion: off
+insertion: off
+
+# Make the ability for a prompt function to
+# return a list of results by slicing up the
+# results with a stream editor, rather than merely split-patterns
+postprocessor: "sed 1d | sed 's/Function name: //'"

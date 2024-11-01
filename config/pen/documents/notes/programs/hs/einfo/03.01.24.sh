@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "einfo" "m4" "#" "<==" "info"
+cd /root/.pen/documents/notes;  "einfo" "m4" "#" "<==" "info"
+cd /etc/mail;  "einfo" "m4" "#" "<==" "info"
+cd /root/.pen/documents/notes;  "einfo" "lksajfdskl" "#" "<==" "info"
+cd /root/.pen/documents/notes;  "einfo" "m4" "#" "<==" "info"
+cd /root/.pen/documents/notes;  "einfo" "(elisp) pcase Macro" "#" "<==" "info"
+cd /root/.pen/documents/notes;  "einfo" "(elisp) pcase Macro" "#" "<==" "info"

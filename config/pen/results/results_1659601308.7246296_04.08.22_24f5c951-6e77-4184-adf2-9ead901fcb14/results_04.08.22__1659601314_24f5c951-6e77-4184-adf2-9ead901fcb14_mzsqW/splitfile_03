@@ -1,0 +1,7 @@
+""
+
+readme_file = open('README.md', 'w')
+readme_file.write(readme_string)
+
+for i, idea in enumerate(business_ideas):
+    readme_file.write('

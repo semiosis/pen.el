@@ -1,0 +1,9 @@
+
+
+main = do
+
+hSetBuffering ( Just HandleStandardIn , LineBuffering )
+
+hSetEcho stdin False
+
+getArgs >>= putStrLn . argumentStrings -- Prints program name and

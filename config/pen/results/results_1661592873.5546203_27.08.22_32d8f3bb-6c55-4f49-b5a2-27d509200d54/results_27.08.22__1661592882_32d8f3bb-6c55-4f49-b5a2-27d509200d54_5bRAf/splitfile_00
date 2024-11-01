@@ -1,0 +1,7 @@
+[[String]] -> IO ()
+tabularise rows = do
+  let colWidths = maximumBy (compare `on` length) $ map length rows
+  forM_ rows $ \row -> do
+    let row' = map (\s -> s ++ replicate (colWidths - length s) ' ') row
+    putStrLn $ T.pack row'
+EOD

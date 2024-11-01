@@ -1,0 +1,7 @@
+Output:
+
+root@mele:/root$ ls -l
+total 0
+-rw-r--r-- 1 root root 0 Jul  5 12:21 file1
+-rw-r--r-- 1 root root 0 Jul  5 12:21 file2
+-rw

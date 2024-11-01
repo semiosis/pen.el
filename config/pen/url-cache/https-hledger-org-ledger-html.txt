@@ -1,0 +1,898 @@
+HTTP/1.1 200 OK
+Date: Mon, 15 Jan 2024 07:49:31 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+alt-svc: h3=":443"; ma=86400
+last-modified: Sat, 13 Jan 2024 17:13:21 GMT
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=r9%2BnqLvoA0a9l%2BkiVk0TP3o9KkY1ffI%2BVJx%2ByRE0ajNZd%2BdxUeyY5wjnVKbJYATzNhIOLgZG5n%2FBR77jhTLNS7FyQHCEnGSHLgfAqlDl7RV8SrUiFArceF2zRLCPtjeia0n%2BZLRTe6mPNg%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 845c85c3e83ca94a-SYD
+
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>hledger and Ledger - hledger</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="plain text accounting, made easy">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <style>
+        div.docversions {height: 3em;}
+        </style>
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="highslide/highslide.css">
+        <link rel="stylesheet" href="css/site.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            // var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">HLEDGER.ORG</li><li class="chapter-item "><a href="index.html">Home</a></li><li class="chapter-item "><a href="news.html">News</a></li><li class="chapter-item "><a href="faq.html">FAQ</a></li><li class="chapter-item "><a href="videos.html">Videos/Talks</a></li><li class="chapter-item "><a href="install.html">Install</a></li><li class="chapter-item "><a href="release-notes.html">Release notes</a></li><li class="chapter-item "><a href="start.html">Get Started</a></li><li class="chapter-item "><a href="1.32/hledger.html">hledger manual (1.32)</a></li><li class="chapter-item "><a href="1.32/hledger-ui.html">hledger-ui manual (1.32)</a></li><li class="chapter-item "><a href="1.32/hledger-web.html">hledger-web manual (1.32)</a></li><li class="chapter-item "><a href="scripts.html">Scripts and add-ons</a></li><li class="chapter-item "><a href="cookbook.html">Cookbook</a></li><li class="chapter-item "><a href="support.html">Discussion/Support</a></li><li class="chapter-item "><a href="climate-impact.html">Climate impact</a></li><li class="chapter-item affix "><li class="part-title">DEVELOPERS</li><li class="chapter-item "><a href="CONTRIBUTING.html">Contributor Quick Start</a></li><li class="chapter-item "><a href="LINKS.html">Developer links</a></li><li class="chapter-item "><a href="dev.html">Developer docs</a></li><li class="chapter-item "><a href="CREDITS.html">CREDITS</a></li><li class="chapter-item affix "><li class="part-title">PROJECT FINANCE</li><li class="chapter-item "><a href="sponsor.html">Sponsor hledger</a></li><li class="chapter-item "><a href="REGRESSIONS.html">Regression bounty</a></li><li class="chapter-item "><a href="financerepo.html">Financial reports</a></li><li class="chapter-item "><a href="FINANCE.html">FINANCE notes</a></li><li class="chapter-item affix "><li class="part-title">ALL PAGES</li><li class="chapter-item "><a href="accounting.html">Accounting</a></li><li class="chapter-item "><a href="balancing-the-accounting-equation.html">Balancing the accounting equation</a></li><li class="chapter-item "><a href="loans.html">Borrowing and lending</a></li><li class="chapter-item "><a href="budgeting-and-forecasting.html">Budgeting and Forecasting (2018)</a></li><li class="chapter-item "><a href="budgeting.html">Budgeting</a></li><li class="chapter-item "><a href="roi.html">Calculate return on investment</a></li><li class="chapter-item "><a href="gain.html">Calculate unrealized gain</a></li><li class="chapter-item "><a href="change-account-name-separator.html">Change account name separator</a></li><li class="chapter-item "><a href="charts.html">Charts and Graphs</a></li><li class="chapter-item "><a href="checking-for-errors.html">Checking for errors</a></li><li class="chapter-item "><a href="climate-impact.html">Climate impact</a></li><li class="chapter-item "><a href="command-line-completion.html">Command line completion</a></li><li class="chapter-item "><a href="common-journal-entries.html">Common journal entries</a></li><li class="chapter-item "><a href="workflows.html">Workflows</a></li><li class="chapter-item "><a href="cost-notation.html">Cost notation</a></li><li class="chapter-item "><a href="create-a-journal.html">Create a journal</a></li><li class="chapter-item "><a href="currency-conversion.html">Currency conversion</a></li><li class="chapter-item "><a href="conversion2.html">Currency conversion 2</a></li><li class="chapter-item "><a href="editors.html">Editor configuration</a></li><li class="chapter-item "><a href="export.html">Exporting from hledger</a></li><li class="chapter-item "><a href="faq.html">FAQ</a></li><li class="chapter-item "><a href="features.html">Features</a></li><li class="chapter-item "><a href="forecasting.html">Forecasting</a></li><li class="chapter-item "><a href="foreign-trip-expenses.html">Foreign trip expenses</a></li><li class="chapter-item "><a href="start.html">Get Started</a></li><li class="chapter-item "><a href="index.html">Home</a></li><li class="chapter-item "><a href="how-to-record.html">How to record journal entries</a></li><li class="chapter-item "><a href="how-to-figure-out.html">How to figure out journal entries</a></li><li class="chapter-item "><a href="import-csv.html">Importing CSV data</a></li><li class="chapter-item "><a href="install.html">Install</a></li><li class="chapter-item "><a href="investment-accounting-features.html">Investment Accounting Feature Ladder</a></li><li class="chapter-item "><a href="invoicing.html">Invoicing</a></li><li class="chapter-item "><a href="mobile.html">Mobile apps</a></li><li class="chapter-item "><a href="mockups.html">Mockups</a></li><li class="chapter-item "><a href="multicurrency-tutorial.html">Multicurrency tutorial (2018)</a></li><li class="chapter-item "><a href="news.html">News</a></li><li class="chapter-item "><a href="project-accounting.html">Project accounting</a></li><li class="chapter-item "><a href="2-minute-quick-start.html">2 minute quick start</a></li><li class="chapter-item "><a href="5-minute-quick-start.html">5 minute quick start</a></li><li class="chapter-item "><a href="release-notes.html">Release notes</a></li><li class="chapter-item "><a href="report-examples.html">Report examples</a></li><li class="chapter-item "><a href="reporting-version-control-stats.html">Reporting version control stats</a></li><li class="chapter-item "><a href="rewrite-account-names.html">Rewrite account names</a></li><li class="chapter-item "><a href="rewrite-commodity-symbols.html">Rewrite commodity symbols</a></li><li class="chapter-item "><a href="save-frequently-used-options.html">Save frequently used options</a></li><li class="chapter-item "><a href="scripts.html">Scripts and add-ons</a></li><li class="chapter-item "><a href="scripting.html">Scripting hledger</a></li><li class="chapter-item "><a href="simons-setup.html">Simon's setup notes</a></li><li class="chapter-item "><a href="time-and-task-dashboard.html">SM's time & task dashboard</a></li><li class="chapter-item "><a href="sponsor.html">Sponsor</a></li><li class="chapter-item "><a href="tags-tutorial.html">Tags tutorial</a></li><li class="chapter-item "><a href="tax-reporting-setup.html">A tax reporting setup</a></li><li class="chapter-item "><a href="time-to-money.html">Converting time to money</a></li><li class="chapter-item "><a href="time-planning.html">Time planning</a></li><li class="chapter-item "><a href="track-changes-with-version-control.html">Track changes with version control</a></li><li class="chapter-item "><a href="track-investments.html">Track investments (2017)</a></li><li class="chapter-item "><a href="investments.html">Track investments (2020)</a></li><li class="chapter-item "><a href="inventory.html">Tracking and selling inventory</a></li><li class="chapter-item "><a href="basics.html">Tutorial: hledger basics</a></li><li class="chapter-item "><a href="ui.html">Tutorial: hledger-ui</a></li><li class="chapter-item "><a href="web.html">Tutorial: hledger-web</a></li><li class="chapter-item "><a href="videos.html">Videos/Talks</a></li><li class="chapter-item "><a href="visualising2023.html">Visualising discussion 2023</a></li><li class="chapter-item "><a href="beancount.html">hledger and Beancount</a></li><li class="chapter-item "><a href="dsq.html">hledger and dsq/DataStation</a></li><li class="chapter-item "><a href="just.html">hledger and just</a></li><li class="chapter-item "><a href="gnucash.html">hledger and GnuCash</a></li><li class="chapter-item expanded "><a href="ledger.html" class="active">hledger and Ledger</a></li><li class="chapter-item "><a href="obsidian.html">hledger and Obsidian</a></li><li class="chapter-item "><a href="paisa.html">hledger and Paisa</a></li><li class="chapter-item "><a href="postgres.html">hledger and Postgres</a></li><li class="chapter-item "><a href="quicken.html">hledger and Quicken / Quickbooks</a></li><li class="chapter-item "><a href="sqlite.html">hledger and SQLite</a></li><li class="chapter-item "><a href="ultorg.html">hledger and Ultorg</a></li><li class="chapter-item "><a href="ynab.html">hledger and YNAB</a></li><li class="chapter-item "><a href="hledgermatic.html">hledgermatic</a></li><li class="chapter-item "><a href="dev/hledger.html">hledger manual (dev)</a></li><li class="chapter-item "><a href="dev/hledger-ui.html">hledger-ui manual (dev)</a></li><li class="chapter-item "><a href="dev/hledger-web.html">hledger-web manual (dev)</a></li><li class="chapter-item "><a href="hledger-web-tips.html">hledger-web tips</a></li><li class="chapter-item "><a href="ACHIEVEMENTS.html">ACHIEVEMENTS</a></li><li class="chapter-item "><a href="BACKLOG.html">BACKLOG</a></li><li class="chapter-item "><a href="BENCHMARKS.html">BENCHMARKS</a></li><li class="chapter-item "><a href="CHANGELOGS.html">CHANGELOGS</a></li><li class="chapter-item "><a href="CODE.html">CODE</a></li><li class="chapter-item "><a href="COMMITS.html">COMMITS</a></li><li class="chapter-item "><a href="CREDITS.html">CREDITS</a></li><li class="chapter-item "><a href="CONTRIBUTING.html">Contributor Quick Start</a></li><li class="chapter-item "><a href="LINKS.html">Developer links</a></li><li class="chapter-item "><a href="dev.html">Developer docs</a></li><li class="chapter-item "><a href="DECISIONS.html">DECISIONS</a></li><li class="chapter-item "><a href="DOCS.html">DOCS</a></li><li class="chapter-item "><a href="ERRORS.html">ERRORS</a></li><li class="chapter-item "><a href="EXAMPLES.html">EXAMPLES</a></li><li class="chapter-item "><a href="FILES.html">FILES</a></li><li class="chapter-item "><a href="FINANCE.html">FINANCE</a></li><li class="chapter-item "><a href="ISSUES.html">ISSUES</a></li><li class="chapter-item "><a href="MAKE.html">MAKE</a></li><li class="chapter-item "><a href="mockups.html">Mockups</a></li><li class="chapter-item "><a href="PULLREQUESTS.html">PULLREQUESTS</a></li><li class="chapter-item "><a href="dev-README.html">README</a></li><li class="chapter-item "><a href="REGRESSIONS.html">REGRESSIONS</a></li><li class="chapter-item "><a href="RELEASING.html">RELEASING</a></li><li class="chapter-item "><a href="REPOS.html">REPOS</a></li><li class="chapter-item "><a href="ROADMAP.html">ROADMAP</a></li><li class="chapter-item "><a href="SHAKE.html">SHAKE</a></li><li class="chapter-item "><a href="TESTS.html">TESTS</a></li><li class="chapter-item "><a href="TODO.html">TODO</a></li><li class="chapter-item "><a href="VERSIONNUMBERS.html">VERSIONNUMBERS</a></li><li class="chapter-item "><a href="DEVWORKFLOWS.html">DEVWORKFLOWS</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <a href="https://github.com/simonmichael/hledger_site/commits/master" accesskey="2" title="what's new"></a>
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" accesskey="s">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list" accesskey="t">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar" accesskey="/">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">
+                        <a href="/" title="hledger home" accesskey="1" style="text-decoration:none; color:inherit;">hledger</a>
+                    </h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/simonmichael/hledger_site" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="hledger-and-ledger"><a class="header" href="#hledger-and-ledger">hledger and Ledger</a></h1>
+<div class=pagetoc>
+<ul>
+<li><a href="#differences">Differences</a>
+<ul>
+<li><a href="#10000-foot-view">10000 foot view</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#command-line-interface">Command line interface</a></li>
+<li><a href="#journal-format">Journal format</a></li>
+<li><a href="#decoding-errors">Decoding errors</a></li>
+<li><a href="#tabs-and-spaces">Tabs and spaces</a></li>
+<li><a href="#decimal-mark">Decimal mark</a></li>
+<li><a href="#balancing-precision">Balancing precision</a></li>
+<li><a href="#balance-assertions--assignments">Balance assertions / assignments</a></li>
+<li><a href="#directive-scope">Directive scope</a></li>
+<li><a href="#commodity-directives">Commodity directives</a></li>
+<li><a href="#periodic-transactions">Periodic transactions</a></li>
+<li><a href="#amount-expressions">Amount expressions</a></li>
+<li><a href="#lot-notation">Lot notation</a></li>
+<li><a href="#other-differences">Other differences</a></li>
+</ul>
+</li>
+<li><a href="#interoperating-tips">Interoperating tips</a>
+<ul>
+<li><a href="#ledger-to-hledger">Ledger to hledger</a></li>
+<li><a href="#hledger-to-ledger">hledger to Ledger</a></li>
+</ul>
+</li>
+<li><a href="#history">History</a></li>
+</ul>
+</div>
+<p>hledger was inspired by the app that pioneered plain text accounting: Ledger (<a href="https://ledger-cli.org">https://ledger-cli.org</a>).
+This page describes differences between them, and a little history.</p>
+<p>If you are a Ledger user trying to use hledger with your data,
+feel free to skip ahead to <a href="#interoperating-tips">Interoperating tips</a>.
+And please let me know your experience in the <a href="support.html">#hledger or #plaintextaccounting chats</a>.
+Related: <a href="https://github.com/simonmichael/hledger/issues/1962">#1962</a>.*</p>
+<h2 id="differences"><a class="header" href="#differences">Differences</a></h2>
+<h3 id="10000-foot-view"><a class="header" href="#10000-foot-view">10000 foot view</a></h3>
+<p>How is hledger different from Ledger ? First, the high-order differences:</p>
+<ul>
+<li>hledger is actively maintained (since 2008)</li>
+<li>hledger focusses strongly on UX, reliability, and real-world practicality</li>
+<li>hledger is written in Haskell, which helps with correctness and maintainability</li>
+<li>hledger tries to reimplement Ledger's best parts in more depth, with improved functionality and robustness.</li>
+</ul>
+<p>Compared to Ledger, hledger has</p>
+<ul>
+<li>a complete and accurate manual</li>
+<li>standard &quot;financial statement&quot; reports</li>
+<li>multi-column reports</li>
+<li>an easier query syntax </li>
+<li>better depth limiting</li>
+<li>a battle-tested CSV/SSV/TSV import system</li>
+<li>and comes with multiple officially-supported user interfaces (CLI, console, TUI, WUI).</li>
+</ul>
+<p>Compared to hledger, Ledger has</p>
+<ul>
+<li>assisted lot tracking for investment transactions</li>
+<li>more support for embedding small programs in your data to get custom behaviour 
+(value expressions, maybe python expressions ?)</li>
+<li>a lighter memory footprint and smaller executables</li>
+</ul>
+<p>See also: </p>
+<ul>
+<li><a href="https://plaintextaccounting.org/Getting-started-FAQ#which-pta-app-should-i-choose">PTA: Getting started FAQ: Which PTA app should I choose ?</a></li>
+<li><a href="https://www.libhunt.com/compare-hledger-vs-ledger">https://www.libhunt.com/compare-hledger-vs-ledger</a></li>
+<li><a href="https://www.reddit.com/r/plaintextaccounting/comments/ztdk0o/ledger_vs_hledger/">https://www.reddit.com/r/plaintextaccounting/comments/ztdk0o/ledger_vs_hledger/</a></li>
+</ul>
+<h3 id="features"><a class="header" href="#features">Features</a></h3>
+<p>Over time, features have propagated both ways.
+Here is 
+<a href="features.html">a presentation of hledger features</a>
+and here is a feature comparison as of 2022 (updates welcome):</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>hledger</th><th>Ledger</th></tr></thead><tbody>
+<tr><td><strong>Common features:</strong></td><td></td><td></td></tr>
+<tr><td>journal format</td><td>Y</td><td>Y</td></tr>
+<tr><td>csv format</td><td>Y</td><td>Y</td></tr>
+<tr><td>timeclock format</td><td>Y</td><td>Y</td></tr>
+<tr><td>multiple commodities</td><td>Y</td><td>Y</td></tr>
+<tr><td>conversion prices and cost reporting</td><td>Y</td><td>Y</td></tr>
+<tr><td>market prices and value reporting</td><td>Y</td><td>Y</td></tr>
+<tr><td>virtual (unbalanced) postings</td><td>Y</td><td>Y</td></tr>
+<tr><td>automated postings</td><td>Y</td><td>Y</td></tr>
+<tr><td>periodic transactions</td><td>Y</td><td>Y</td></tr>
+<tr><td>budget reporting</td><td>Y</td><td>Y</td></tr>
+<tr><td>capital gains reporting</td><td>Y</td><td>Y</td></tr>
+<tr><td>report filtering with flags and query arguments</td><td>Y</td><td>Y</td></tr>
+<tr><td>basic output format customisation</td><td>Y</td><td>Y</td></tr>
+<tr><td>print, register, balance commands</td><td>Y</td><td>Y</td></tr>
+<tr><td><strong>Features in Ledger only:</strong></td><td></td><td></td></tr>
+<tr><td>automatic revaluation transactions (<code>--revalued</code>)</td><td></td><td>Y</td></tr>
+<tr><td>lot reporting (<code>--lots</code>)</td><td></td><td>Y</td></tr>
+<tr><td>embedded programming language (value expressions)</td><td></td><td>Y</td></tr>
+<tr><td>embedded python snippets / python API</td><td></td><td>Y</td></tr>
+<tr><td>probably miscellaneous other things...</td><td></td><td>Y</td></tr>
+<tr><td><strong>Features in hledger only:</strong></td><td></td><td></td></tr>
+<tr><td>international number formats</td><td>Y</td><td></td></tr>
+<tr><td>timedot format</td><td>Y</td><td></td></tr>
+<tr><td>multi-period balance reports</td><td>Y</td><td></td></tr>
+<tr><td>account types</td><td>Y</td><td></td></tr>
+<tr><td>activity command</td><td>Y</td><td></td></tr>
+<tr><td>add command</td><td>Y</td><td></td></tr>
+<tr><td>balancesheet command</td><td>Y</td><td></td></tr>
+<tr><td>cashflow command</td><td>Y</td><td></td></tr>
+<tr><td>check command</td><td>Y</td><td></td></tr>
+<tr><td>close command</td><td>Y</td><td></td></tr>
+<tr><td>descriptions command</td><td>Y</td><td></td></tr>
+<tr><td>diff command</td><td>Y</td><td></td></tr>
+<tr><td>files command</td><td>Y</td><td></td></tr>
+<tr><td>iadd command</td><td>Y</td><td></td></tr>
+<tr><td>import command</td><td>Y</td><td></td></tr>
+<tr><td>incomestatement command</td><td>Y</td><td></td></tr>
+<tr><td>irr command</td><td>Y</td><td></td></tr>
+<tr><td>interest command</td><td>Y</td><td></td></tr>
+<tr><td>notes command</td><td>Y</td><td></td></tr>
+<tr><td>prices command</td><td>Y</td><td></td></tr>
+<tr><td>rewrite command</td><td>Y</td><td></td></tr>
+<tr><td>ui command</td><td>Y</td><td></td></tr>
+<tr><td>web command</td><td>Y</td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="performance"><a class="header" href="#performance">Performance</a></h3>
+<p>Traditionally, Ledger and hledger performance felt about the same on small files,
+but Ledger used less memory and was faster with large files - with very large files,
+up to ~10x faster. That extra speed came partly from providing fewer guarantees, 
+eg Ledger's balance assertions/assignments are not date-aware.</p>
+<p>Lately (2021) the performance gap seems to have closed, with hledger outperforming 
+Ledger in some cases - more formal benchmarking needed, please see if you can reproduce.
+[This was an intel hledger binary running translated on a macbook m1 via Rosetta translation, ie slower than normal]:</p>
+<pre><code class="language-cli">$ uname -a
+Darwin SMs-slate-mac.local 20.6.0 Darwin Kernel Version 20.6.0: Tue Oct 12 18:33:38 PDT 2021; root:xnu-7195.141.8~1/RELEASE_ARM64_T8101 arm64
+
+$ brew info ledger
+...
+/opt/homebrew/Cellar/ledger/3.2.1_7 (126 files, 4.7MB) *
+  Poured from bottle on 2021-11-18 at 16:04:23
+...
+
+$ ledger --version
+Ledger 3.2.1-20200518, the command-line accounting tool
+...
+
+$ hledger-1.24 --version
+hledger 1.24-0-gf0f830e06, mac-x86_64
+
+$ cat bench-ledger.sh 
+hledger -f examples/10000x1000x10.journal print
+hledger -f examples/10000x1000x10.journal register
+hledger -f examples/10000x1000x10.journal balance
+hledger -f examples/100000x1000x10.journal balance
+hledger -f examples/100000x1000x10.journal balance ff
+
+$ quickbench -f bench-ledger.sh -w ledger,hledger-1.24
+Running 5 tests 1 times with 2 executables at 2021-12-09 08:50:10 HST:
+
+Best times:
++-----------------------------------------------++--------+--------------+
+|                                               || ledger | hledger-1.24 |
++===============================================++========+==============+
+| -f examples/10000x1000x10.journal print       ||   7.08 |         0.84 |
+| -f examples/10000x1000x10.journal register    ||  18.16 |        16.65 |
+| -f examples/10000x1000x10.journal balance     ||   0.38 |         0.80 |
+| -f examples/100000x1000x10.journal balance    ||  29.14 |         6.78 |
+| -f examples/100000x1000x10.journal balance ff ||   1.13 |         5.89 |
++-----------------------------------------------++--------+--------------+
+
+$ file /opt/homebrew/bin/ledger /Users/simon/src/hledger/bin/hledger-1.24
+/opt/homebrew/bin/ledger:                  Mach-O 64-bit executable arm64
+/Users/simon/src/hledger/bin/hledger-1.24: Mach-O 64-bit executable x86_64
+</code></pre>
+<p>In 2022, hledger compiled natively on a macbook air m1 processes 25k transactions per second (which means reporting on a normal year's worth of transactions takes less than a tenth of a second):</p>
+<pre><code class="language-cli">$ hledger --version
+hledger 1.24.99.2-gba5b0e93f-20220205, mac-aarch64
+$ make throughput
+date: Tue Feb 8 11:03:50 HST 2022
+system: Darwin slate.local 21.3.0 Darwin Kernel Version 21.3.0: Wed Jan 5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_ARM64_T8101 arm64
+executable: hledger
+version: hledger 1.24.99.2-gba5b0e93f-20220205, mac-aarch64
+  1000 txns: Run time (throughput)    : 0.07s (15308 txns/s)
+  2000 txns: Run time (throughput)    : 0.09s (21121 txns/s)
+  3000 txns: Run time (throughput)    : 0.13s (23648 txns/s)
+  4000 txns: Run time (throughput)    : 0.17s (23226 txns/s)
+  5000 txns: Run time (throughput)    : 0.21s (23647 txns/s)
+  6000 txns: Run time (throughput)    : 0.24s (24784 txns/s)
+  7000 txns: Run time (throughput)    : 0.29s (24166 txns/s)
+  8000 txns: Run time (throughput)    : 0.33s (24450 txns/s)
+  9000 txns: Run time (throughput)    : 0.35s (25516 txns/s)
+ 10000 txns: Run time (throughput)    : 0.41s (24226 txns/s)
+100000 txns: Run time (throughput)    : 4.32s (23158 txns/s)
+Tue Feb  8 11:03:57 HST 2022
+</code></pre>
+<h3 id="command-line-interface"><a class="header" href="#command-line-interface">Command line interface</a></h3>
+<ul>
+<li>
+<p>hledger does not require a space between command-line flags and their values,
+eg <code>-fFILE</code> works as well as <code>-f FILE</code></p>
+</li>
+<li>
+<p>hledger uses <code>--ignore-assertions</code>/<code>-I</code> to disable balance assertions. 
+Ledger uses <code>--permissive</code> for that, and uses <code>-I</code> as the short form of <code>--prices</code>.</p>
+</li>
+<li>
+<p>hledger's <code>-x</code>/<code>--explicit</code> flag makes print show all amounts;
+Ledger's <code>--explicit</code> flag does something else.</p>
+</li>
+<li>
+<p>hledger's and Ledger's <code>-H</code>/<code>--historical</code> flags are unrelated.
+hledger's <code>-H</code> makes register and balance-like commands include
+balances from before the report start date, instead of starting at
+zero:</p>
+<pre><code>hledger register --help:
+-H --historical           show historical running total/balance
+                          (includes postings before report start date)
+
+hledger balance --help:
+-H --historical           show historical ending balance in each period
+                          (includes postings before report start date)
+</code></pre>
+<p>Whereas Ledger's <code>-H</code> changes the valuation date used by <code>-V</code>/<code>-X</code>:</p>
+<pre><code>ledger --help:
+--historical (-H)
+                          Value commodities at the time of their acquisition.
+</code></pre>
+</li>
+<li>
+<p>hledger's <a href="hledger.html#queries">query language</a> is a little less
+powerful than Ledger's, simpler, and easier to remember.
+It uses google-like prefixes, such as <code>desc:</code>, <code>payee:</code>, <code>amt:</code>, and <code>not:</code>.
+Multiple query terms are combined using fixed AND/OR rules.
+We don't yet support full boolean expressions, so some more advanced
+queries require two invocations of hledger in a pipe, eg: 
+<code>hledger print QUERY1 | hledger -f- reg QUERY2</code></p>
+</li>
+<li>
+<p>hledger provides more short flags (<code>-b</code>, <code>-e</code>, <code>-p</code>, <code>-D</code>, <code>-W</code>, <code>-M</code>, <code>-Q</code>, <code>-Y</code>) and the <code>date:</code> query argument for setting report period and interval, and all of these combine nicely.</p>
+</li>
+<li>
+<p>hledger cleans up some old <a href="https://github.com/simonmichael/hledger/issues/564">semantic confusion</a> around what &quot;uncleared&quot; means:</p>
+<ul>
+<li>hledger renames Ledger's &quot;uncleared&quot; status (ie, when the status field
+is empty) to &quot;unmarked&quot;, and the <code>--uncleared</code>/<code>-U</code> flag to <code>--unmarked</code>/<code>-U</code></li>
+<li>hledger uses <code>-P</code> as the short form of <code>--pending</code>. Ledger uses <code>-P</code> for grouping by payee. </li>
+<li>each of hledger's <code>--unmarked</code>/<code>-U</code>, <code>--pending</code>/<code>-P</code>, <code>--cleared</code>/<code>-C</code> flags match only that single status. To match more than one status, the flags can be combined.</li>
+</ul>
+<p>So the hledger equivalent of Ledger's <code>-U</code> flag (&quot;match uncleared&quot;) is <code>-UP</code> (&quot;match unmarked or pending&quot;).</p>
+</li>
+</ul>
+<h3 id="journal-format"><a class="header" href="#journal-format">Journal format</a></h3>
+<p>hledger's journal file format is very similar to Ledger's.
+Some syntactic forms 
+(eg <a href="hledger.html#file-comments">hledger comments</a> 
+vs <a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Commenting-on-your-Journal">Ledger comments</a>,
+or <a href="hledger.html#assertions-and-ordering">balance assertions</a>)
+can be interpreted in slightly different ways.
+A small number of Ledger's syntactic forms are ignored (lot notation)
+or rejected (value expressions). With some care to restrict yourself to compatible features,
+or to keep non-compatible features in separate files,
+it's possible to keep a journal file that works with both hledger and Ledger simultaneously.
+See also <a href="https://github.com/simonmichael/hledger/issues/1752">#1752</a>.</p>
+<p>Here is a detailed list of Ledger's file format features,
+from the <a href="https://www.ledger-cli.org/3.0/doc/ledger3.html">Ledger manual</a> as of 2022-12,
+and their status in hledger 1.28, hledger dev, and intended (Yes / Ignored / No).</p>
+<div class="table-wrapper"><table><thead><tr><th>Supported in hledger ?</th><th>1.28</th><th>dev</th><th style="text-align: left">Notes</th><th>Goal</th></tr></thead><tbody>
+<tr><td><strong>Transactions</strong></td><td></td><td></td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Basic-format">5.1 Basic format</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Eliding-amounts">5.2 Eliding amounts</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Auxiliary-dates">5.3 Auxiliary dates</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Codes">5.4 Codes</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Transaction-state">5.5 Transaction state</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Transaction-notes">5.6 Transaction notes</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Metadata">5.7 Metadata</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Metadata-tags">5.7.1 Metadata tags</a></td><td>Y</td><td>Y</td><td style="text-align: left">format is <code>TAG1:, TAG2:</code> not <code>:TAG1:TAG2:</code></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Payee-metadata-tag">5.7.1.1 Payee metadata tag</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Metadata-values">5.7.2 Metadata values</a></td><td>Y</td><td>Y</td><td style="text-align: left">values are terminated by comma, can have multiple tag/values on one line</td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Typed-metadata">5.7.3 Typed metadata</a></td><td>N</td><td>N</td><td style="text-align: left"><code>date:</code>/<code>date2:</code> values are checked as dates, all other tag values are strings</td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Virtual-postings">5.8 Virtual postings</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Expression-amounts">5.9 Expression amounts</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Balance-verification">5.10 Balance verification</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Balance-assertions">5.10.1 Balance assertions</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Special-assertion-value-0">5.10.1.1 Special assertion value 0</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Balance-assignments">5.10.2 Balance assignments</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Resetting-a-balance">5.10.3 Resetting a balance</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Balancing-transactions">5.10.4 Balancing transactions</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Posting-cost">5.11 Posting cost</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Explicit-posting-costs">5.12 Explicit posting costs</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Primary-and-secondary-commodities">5.12.1 Primary and secondary commodities</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Posting-cost-expressions">5.13 Posting cost expressions</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Total-posting-costs">5.14 Total posting costs</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Virtual-posting-costs">5.15 Virtual posting costs</a></td><td>I</td><td>I</td><td style="text-align: left">the parentheses have no effect</td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Commodity-prices">5.16 Commodity prices</a></td><td>I</td><td>I</td><td style="text-align: left">cost basis is not tracked separately from cost</td><td>Y</td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Total-commodity-prices">5.16.1 Total commodity prices</a></td><td>I</td><td>I</td><td style="text-align: left">Ledger lot notation is ignored, but transactions may fail to balance as a result</td><td>Y</td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Prices-versus-costs">5.17 Prices versus costs</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Fixated-prices-and-costs">5.18 Fixated prices and costs</a></td><td>I</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Lot-dates">5.19 Lot dates</a></td><td>I</td><td>I</td><td style="text-align: left"></td><td>Y</td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Lot-notes">5.20 Lot notes</a></td><td>N</td><td>I</td><td style="text-align: left"></td><td>Y</td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Lot-value-expressions">5.21 Lot value expressions</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Automated-Transactions">5.22 Automated Transactions</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Amount-multipliers">5.22.1 Amount multipliers</a></td><td>Y</td><td>Y</td><td style="text-align: left">different syntax</td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Accessing-the-matching-posting_0027s-amount">5.22.2 Accessing the matching posting’s amount</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Referring-to-the-matching-posting_0027s-account">5.22.3 Referring to the matching posting’s account</a></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Applying-metadata-to-every-matched-posting">5.22.4 Applying metadata to every matched posting</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Applying-metadata-to-the-generated-posting">5.22.5 Applying metadata to the generated posting</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#State-flags">5.22.6 State flags</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Effective-Dates">5.22.7 Effective Dates</a></td><td>Y</td><td>Y</td><td style="text-align: left">same as Auxiliary Dates</td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Periodic-Transactions">5.22.8 Periodic Transactions</a></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Complete-control-over-commodity-pricing">((Amount valuation expressions))</a></td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><strong>Directives</strong> <a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#Command-Directives">link</a></td><td></td><td></td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>P</code> historical (market) prices</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>=</code> An automated transaction.</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>~</code> A periodic transaction.</td><td>Y</td><td>Y</td><td style="text-align: left">certain period expressions can only start on an interval boundary (fixed in dev)</td><td></td></tr>
+<tr><td><code>;</code> <code>#</code> <code>%</code> <code>*</code> | comment lines</td><td>Y</td><td>Y</td><td style="text-align: left">but not <code>%</code> or |</td><td></td></tr>
+<tr><td><code>!</code> or <code>@</code> as a directive prefix</td><td>not <code>@</code></td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>account</code> pre-declare account names</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>account</code> subdirectives</td><td>I</td><td>I</td><td style="text-align: left"></td><td>I/Y</td></tr>
+<tr><td><code>apply account</code> set a default parent account</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>apply fixed</code> set fixated prices</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>apply tag</code> assign a tag to transactions</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>alias</code> rewrite account names</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>assert</code> error if a value expression fails</td><td>N</td><td>I</td><td style="text-align: left">use hledger check or hledger-check-fancyassertions</td><td></td></tr>
+<tr><td><code>bucket</code>/<code>A</code> set a default balancing account</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>capture</code> replace accounts matched by regex with another</td><td>N</td><td>I</td><td style="text-align: left">can be emulated with regex <code>alias</code></td><td></td></tr>
+<tr><td><code>check</code> warn if a value expression fails</td><td>N</td><td>I</td><td style="text-align: left">use hledger check or hledger-check-fancyassertions</td><td></td></tr>
+<tr><td><code>comment</code> start multi-line comments</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>commodity</code> pre-declare commodities</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>commodity</code> subdirectives</td><td>N</td><td>I</td><td style="text-align: left">all but <code>format</code> are ignored</td><td>I/Y</td></tr>
+<tr><td><code>define</code> define value expressions for future use</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>end</code>/<code>end apply</code> shorthand for ending most recent apply block</td><td>N</td><td>N</td><td style="text-align: left"></td><td>Y</td></tr>
+<tr><td><code>end apply account</code></td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>end apply fixed</code></td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>end apply tag</code></td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>end apply year</code></td><td>N</td><td>I</td><td style="text-align: left"></td><td>Y</td></tr>
+<tr><td><code>end tag</code></td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>eval</code>/<code>expr</code> evaluate a value expression</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>include</code> include another file</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>payee</code> pre-declare payee names</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>payee</code> subdirectives</td><td>N</td><td>I</td><td style="text-align: left"></td><td>I/Y</td></tr>
+<tr><td><code>python</code> embed python in journal</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>tag</code> pre-declare tag names</td><td>I</td><td>I</td><td style="text-align: left"></td><td>Y</td></tr>
+<tr><td><code>tag</code> subdirectives</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>test</code>, a synonym for <code>comment</code></td><td>N</td><td>N</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>value EXPR</code> set a default valuation function for all commodities</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>Y</code>/<code>year</code>/<code>apply year</code> set the year for year-less dates</td><td>only <code>Y</code></td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>N COMM</code> ignore pricing information for a commodity</td><td>I</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>D AMT</code> set a default commodity and its format</td><td>Y</td><td>Y</td><td style="text-align: left"></td><td></td></tr>
+<tr><td><code>C AMT1 = AMT2</code> declare a commodity equivalency</td><td>N</td><td>I</td><td style="text-align: left"></td><td>I/Y</td></tr>
+<tr><td><code>I, i, O, o, b, h</code> timeclock entries in journal</td><td>N</td><td>N</td><td style="text-align: left">timeclock data must be in a separate file (can be <code>include</code>d)</td><td></td></tr>
+<tr><td><code>--command-line-flags</code> in journal</td><td>N</td><td>I</td><td style="text-align: left"></td><td></td></tr>
+</tbody></table>
+</div>
+<h3 id="decoding-errors"><a class="header" href="#decoding-errors">Decoding errors</a></h3>
+<p>hledger, like most Haskell programs, exits with a confusing error message
+if it sees non-ascii data
+and the system locale is not configured to decode UTF-8.
+If your data contains non-ascii characters and hledger gives an error
+such as &quot;invalid byte sequence&quot;, &quot;mkTextEncoding: invalid argument&quot; or similar,
+you must <a href="https://hledger.org/install.html#check-your-locale">configure your locale</a>.</p>
+<h3 id="tabs-and-spaces"><a class="header" href="#tabs-and-spaces">Tabs and spaces</a></h3>
+<p>In places which normally require two or more spaces (or tabs),
+eg between account name and amount,
+ledger will also accept a single tab character. 
+But hledger always requires two or more spaces or tabs (ensuring a visually distinct gap).
+So you might need to add a space in such cases.</p>
+<h3 id="decimal-mark"><a class="header" href="#decimal-mark">Decimal mark</a></h3>
+<p>Ledger parses <code>1,000</code> as 1000, but hledger parses it as 1, by default
+(see <a href="hledger.html#decimal-marks-digit-group-marks">hledger &gt; Decimal marks, digit group marks</a>).</p>
+<p>To prevent any undetected disagreements, 
+use <a href="#commodity-directives">commodity directives</a> or <a href="hledger.html#decimal-mark-directive">decimal-mark directives</a>
+to disambiguate the decimal mark character during parsing.</p>
+<h3 id="balancing-precision"><a class="header" href="#balancing-precision">Balancing precision</a></h3>
+<p>Ledger and hledger can occasionally disagree on whether a transaction is balanced.
+In this journal, $'s precision (number of decimal places) is 2 in txn1, 4 in txn2, and 4 globally:</p>
+<pre><code class="language-journal">2022-01-01 txn1
+    expenses                                 AAA 989.02 @ $1.123456  ; $1111.12045312
+    checking                                  $-1111.12
+
+2022-01-02 txn2
+    expenses                                      $0.1234
+    checking
+</code></pre>
+<p>Ledger checks transaction balancedness using local precisions only,
+so it balances with precision 2, and accepts txn1's $-0.00045312 imbalance.</p>
+<p>hledger checks transaction balancedness using global precisions,
+so it balances with precision 4, and rejects txn1's imbalance.
+To read these entries with hledger, you have to limit $'s global precision,
+by adding <code>-c '\$0.00'</code> to the command (easiest when piping)
+or <code>commodity $0.00</code> to the file (more permanent, when creating a new file).</p>
+<p>More: <a href="https://github.com/simonmichael/hledger/issues/1964">#1964</a></p>
+<h3 id="balance-assertions--assignments"><a class="header" href="#balance-assertions--assignments">Balance assertions / assignments</a></h3>
+<p>Ledger calculates balance assignments and checks balance assertions simply in the order they were parsed.
+hledger calculates balance assignments and checks balance assertions in date order
+and then (for postings on the same date) parse order.
+This ensures correct, reliable behaviour independent of the ordering of journal entries and files. </p>
+<p>hledger correctly handles multiple balance assignments/assertions within a single transaction.</p>
+<p>Ledger rejects the following balance assertion, as if <code>(a)</code> and <code>a</code> were different accounts; hledger does not.</p>
+<pre><code class="language-journal">2023-01-01
+  (a)  1
+
+2023-01-02
+  a    1 = 2
+  b
+</code></pre>
+<p>In addition to <code>=</code>, hledger supports several other kinds of balance assertion, with syntax <code>==</code>, <code>=*</code> and <code>==*</code>. Ledger rejects these.</p>
+<p>hledger allows <code>@</code>/<code>@@</code> cost notation in balance assertion/assignment amounts,
+ie to the right of the equals sign; Ledger does not.</p>
+<p>hledger adds a restriction on balance assignments:
+it does not allow balance assignments on accounts affected by auto posting rules
+(since in general this can make balancing the journal impossible).</p>
+<h3 id="directive-scope"><a class="header" href="#directive-scope">Directive scope</a></h3>
+<p>The region affected by directives, and their behaviour with included files or sibling files,
+is sometimes different in hledger. This is to ensure robust, predictable behaviour.
+Here are hledger's <a href="dev/hledger.html#directive-effects">Directive effects</a> and 
+<a href="hledger.html#directives-and-multiple-files">Directives and multiple files</a> behaviour.
+You might need to move directives and/or rearrange your files.</p>
+<h3 id="commodity-directives"><a class="header" href="#commodity-directives">Commodity directives</a></h3>
+<p>hledger allows <code>commodity</code> directives with a <code>format</code> subdirective to be written as one line,
+eg these are equivalent:</p>
+<pre><code class="language-journal">commodity JPY
+  format 1.00 JPY
+
+commodity 1.00 JPY
+</code></pre>
+<p>hledger's commodity directive currently ignores other subdirectives (eg <code>alias</code>).</p>
+<p>hledger's commodity directive always requires a decimal mark in the amount.
+To display no decimal digits, write the decimal mark at the end:</p>
+<pre><code class="language-journal">commodity 1000. JPY
+</code></pre>
+<p>And as <a href="#decimal-mark">mentioned above</a>, hledger assumes a single period or comma is a decimal mark,
+so when specifying digit group marks, write a decimal mark as well:
+Eg:</p>
+<pre><code class="language-journal">commodity 1,000. JPY
+</code></pre>
+<p>See also: <a href="hledger.html#commodity-directive">hledger &gt; <code>commodity</code> directive</a>.</p>
+<h3 id="periodic-transactions"><a class="header" href="#periodic-transactions">Periodic transactions</a></h3>
+<p>hledger understands most Ledger periodic transactions,
+but if you find some variants that are not supported, please report.</p>
+<p>When you do specify a custom start date, hledger will start the transactions on that date.
+Ledger seems to always generate them on the period boundaries.</p>
+<h3 id="amount-expressions"><a class="header" href="#amount-expressions">Amount expressions</a></h3>
+<p>hledger does not support value expressions, Ledger's embedded programming language.
+In particular, parenthesised amount expressions like <code>($10 / 3)</code> are not supported;
+these must be converted to explicit amounts. Here are the known ways:</p>
+<ul>
+<li>
+<p>Convert each expression manually, eg replace <code>($10 / 3)</code> with <code>$3.333</code>.</p>
+</li>
+<li>
+<p>Convert each expression with ledger.
+Eg in emacs, select the parenthesised expression and enter <code>C-u M-| xargs ledger eval</code> (and remove the newline).
+This might not work in all cases.</p>
+</li>
+<li>
+<p>Convert all expressions with beancount.
+This is a lossy conversion, but it might be good enough.
+After installing 
+ledger2beancount,
+beancount,
+and beancount2ledger (see #<a href="https://github.com/beancount/beancount2ledger/issues/33">33</a>),
+try:</p>
+<pre><code class="language-cli">$ ledger2beancount file.ledger &gt; file.beancount
+$ beancount2ledger file.beancount &gt; file.journal
+</code></pre>
+</li>
+</ul>
+<h3 id="lot-notation"><a class="header" href="#lot-notation">Lot notation</a></h3>
+<p>hledger currently does not provide automatic lot selection or a <code>--lots</code> report; 
+instead you must track them manually, recording cost basis with <code>@</code>
+and using explicit per-lot subaccounts and gain/loss postings
+(see <a href="https://hledger.org/investments.html">https://hledger.org/investments.html</a>).</p>
+<!--
+hledger does not automatically calculate capital gains when selling
+a lot at a different price from its cost basis, as Ledger does.
+```journal
+; Ledger expects the 5 EUR capital gain income here because selling a 10 EUR lot at 15 EUR.
+; hledger does not. Must leave that amount implicit to allow both to parse this.
+2019-03-01 Sell
+  Assets:Shares           -1 ETF {10 EUR} @ 15 EUR
+  Assets:Cash             15 EUR
+  Income:Capital Gains   ;-5 EUR
+```
+-->
+<p>More importantly, hledger ignores Ledger's lot notation, like <code>-5 AAPL {$50.00} [2012/04/10] (Oh my!) @@ $375.00</code>.
+(Any of <code>{LOTUNITCOST}</code>, <code>{{LOTTOTALCOST}}</code>, <code>{=FIXEDLOTUNITCOST}</code>, <code>{{=FIXEDLOTTOTALCOST}}</code>, <code>[LOTDATE]</code>, <code>(LOTNOTE)</code> after a posting amount).
+This can disrupt transaction balancing, making files unreadable.
+(<a href="https://github.com/simonmichael/hledger/issues/1084">#1084</a>)
+For now the only true workaround is to rewrite such entries to use hledger-style explicit lot notation.</p>
+<h3 id="other-differences"><a class="header" href="#other-differences">Other differences</a></h3>
+<ul>
+<li>
+<p>hledger's input data formats (journal, timeclock, timedot, ...) are separate;
+you can't mix timeclock entries and journal entries in one file as in Ledger.
+(Though a journal file can <code>include</code> a timeclock file.)
+This helps implement more useful error messages.</p>
+</li>
+<li>
+<p>hledger supports international number formats, auto-detecting the
+decimal mark (comma or period), digit group mark (period, comma, or
+space) and digit group sizes to use for each commodity. Or, these can
+be declared explicitly with commodity directives.</p>
+</li>
+<li>
+<p>hledger's default commodity directive (D) sets the commodity to be
+used for subsequent commodityless amounts, and also sets that
+commodity's display settings if such an amount is the first
+seen. Ledger uses D only for commodity display settings and for the
+entry command.</p>
+</li>
+<li>
+<p>hledger <a href="hledger.html#auto-postings">auto postings</a> allow only
+minimal customisation of the amount (just multiplying the matched
+amount by a constant), not a full embedded expression language like
+Ledger. (And we call them &quot;auto&quot; to avoid &quot;automatic&quot; vs &quot;automated&quot; confusion.)</p>
+</li>
+<li>
+<p>In multi-period reports, hledger expands the report start/end dates
+to span whole periods.</p>
+</li>
+<li>
+<p>hledger's print command always shows both the primary transaction date and any secondary date, in their usual positions.
+Ledger's print command with <code>--aux-date</code> replaces the primary date with any secondary date.</p>
+</li>
+<li>
+<p>hledger always shows time balances (from timeclock or timedot data) in hours.</p>
+</li>
+<li>
+<p>hledger always splits multi-day time sessions at midnight, to show the per-day amounts.
+Ledger does this only with the <code>--day-break</code> flag.</p>
+</li>
+<li>
+<p>hledger's <a href="hledger.html#csv-format">CSV/TSV/SSV-reading</a> and <a href="hledger.html#import">import</a> system is more mature and flexible than Ledger's <a href="https://www.ledger-cli.org/3.0/doc/ledger3.html#The-convert-command"><code>convert</code> command</a>.</p>
+</li>
+<li>
+<p>Ledger can report multiple errors at once; hledger reports only one error at a time.</p>
+</li>
+<li>
+<p>Ledger can also output warnings. hledger does not print warnings; it either succeeds or fails.</p>
+</li>
+<li>
+<p>hledger will complain if transaction or posting comments contain <code>date:</code> or <code>date2:</code>
+not followed by a valid <a href="/hledger.html#posting-dates">date tag value</a>.</p>
+</li>
+</ul>
+<h2 id="interoperating-tips"><a class="header" href="#interoperating-tips">Interoperating tips</a></h2>
+<p>The core of hledger's and Ledger's journal formats is the same, so you
+can use both tools on the same files, if you are careful to avoid
+tool-specific features.</p>
+<p>When you can't avoid tool-specific syntax, you can put it in separate tool-specific files,
+and have both of these <a href="hledger.html#include-directive">include</a> a shared common file.
+(Eg 2023.ledger and 2023.hledger, both including 2023.journal).</p>
+<p>A third approach is to do a one-way conversion to a new file,
+using whatever edits and transformations are necessary,
+and automate it as much as possible (with sed, perl, Emacs macros, or similar),
+so you can redo the conversion when needed, perhaps incrementally.</p>
+<h3 id="ledger-to-hledger"><a class="header" href="#ledger-to-hledger">Ledger to hledger</a></h3>
+<p>Most Ledger users will have at least some Ledger-specific syntax,
+so the quickest way  to tap into hledger reports may be:</p>
+<pre><code>$ ledger print --raw | hledger -f- -I CMD
+</code></pre>
+<p>The print command omits directives.
+<code>--raw</code> prevents decimal zeroes being added to amounts and disrupting transaction balancing.
+<code>-I</code> disables checking of balance assertions (if needed).
+If this works you can do quick reporting like so:</p>
+<pre><code class="language-cli">$ ledger print --raw | hledger -f- check       # check for problems
+$ ledger print --raw | hledger -f- stats       # show journal statistics
+$ ledger print --raw | hledger -f- is -MAS -2  # summarise monthly revenues/expenses
+$ ledger print --raw | hledger -f- web         # view journal in hledger-web WUI
+$ hledger-ui -f &lt;(ledger print --raw)          # view journal in hledger-ui TUI (works in bash)
+</code></pre>
+<p>Some common problems:</p>
+<ul>
+<li>
+<p>hledger does not support Ledger's amount expressions, like <code>($10 / 3)</code>.
+If you have those, see <a href="#amount-expressions">Amount expressions</a> above.</p>
+</li>
+<li>
+<p>hledger does not support all of Ledger's lot notation,
+like <code>-5 AAPL {$50.00} [2012/04/10] (Oh my!) @@ $375.00</code>.
+It can parse it, but will ignore it, so transaction balancing will probably fail.
+For now the only true workaround is to rewrite such entries to use hledger-style lot notation.
+See <a href="#lot-notation">Lot notation</a> above.</p>
+</li>
+</ul>
+<p>See also the other <a href="#">Differences</a> mentioned above.</p>
+<h3 id="hledger-to-ledger"><a class="header" href="#hledger-to-ledger">hledger to Ledger</a></h3>
+<p>Currently there's no specific output format for Ledger; use <code>print</code>'s standard <code>txt</code> output format.</p>
+<pre><code class="language-cli">$ hledger print | ledger --permissive -f - CMD
+</code></pre>
+<p>Ledger requires a space between <code>-f</code> and <code>-</code>.
+<code>--permissive</code> disables checking of balance assertions (if needed).</p>
+<p>Some common problems:</p>
+<ul>
+<li>
+<p>hledger's extended balance assertions (<code>=*</code>, <code>==</code>, <code>==*</code>) are not supported
+by Ledger and must be avoided or commented out (eg with <code>sed -E -e 's/(==|=\*)/; \1/'</code>).</p>
+</li>
+<li>
+<p>Transactions which hledger considers balanced (using global display precisions)
+can be considered unbalanced by Ledger (using local display precisions)
+(see <a href="#balancing-precision">Balancing precision</a>).
+Try to make those transaction amounts more precise so that they balance in both.</p>
+</li>
+<li>
+<p>hledger print will add a trailing decimal mark to amounts with digit
+group marks and no decimal digits, to disambiguate them (since
+1.31), but Ledger
+<a href="https://github.com/ledger/ledger/issues/2301">currently</a> does not
+parse such numbers.  You can avoid them by suppressing digit group
+marks (eg with <code>-c</code>) or by ensuring some decimal digits (eg with
+<code>--round</code>); see <a href="hledger.html#amount-formatting-parseability">hledger &gt; Amount formatting, parseability</a>.</p>
+</li>
+</ul>
+<p>See also the other <a href="#">Differences</a> mentioned above.</p>
+<h2 id="history"><a class="header" href="#history">History</a></h2>
+<p>I (Simon) discovered John Wiegley's <a href="http://ledger-cli.org">Ledger</a> in 2006,
+and was very happy to find this efficient command-line reporting tool with a transparent data format. Initially, I used it to generate time reports for my job. Before long I wanted some improvements - splitting sessions at day boundaries, reporting in hours, etc.</p>
+<p>Meanwhile, John was now busy elsewhere. For a long time the Ledger project remained stalled, with unfixed functionality/documentation bugs and an ever-looming v3 release making life hard for new users and creating friction for community growth.
+I did what I could to help - reporting bugs, providing support, contributing a <a href="https://ledger-cli.org">domain and website</a> - but I didn't want to invest in learning C++.</p>
+<p>I was learning and investing time in <a href="https://haskell.org">Haskell</a>, and I felt Ledger could be perhaps implemented well, and perhaps more effectively in the long run, in this language.
+I urgently needed a rock solid, hassle-free and enjoyable accounting tool.
+Also, I wanted a more active project and some way to make progress on the roadbumps and confusion facing other newcomers.</p>
+<p>Of course I tried a little shiny-tech salesmanship on John, but couldn't expect him to start over. (At that time he was deeply in the C++ world; nowadays he is a Haskell expert!)</p>
+<p>So in 2007 I began experimenting.
+I built a toy parser in a few different languages, and it was easiest in Haskell.
+I kept tinkering.
+Goals included:</p>
+<ol>
+<li>to get better at Haskell by building something useful to me</li>
+<li>to implement at least the basic core of Ledger, adapted for my needs</li>
+<li>to learn how well Haskell could work for real-world applications</li>
+</ol>
+<p>And later:</p>
+<ol start="4">
+<li>to provide a new highly-compatible implementation of at least the basics of Ledger, useful to others, with a greater focus on ease of use, reliability, documentation and web presence</li>
+<li>to experiment with new user interfaces, APIs, etc.</li>
+</ol>
+<p>Before too long I had a tool that was useful to me. With Ledger still installed,
+and by maintaining high compatibility, I now had two implementations which could be compared at times of confusion about functionality or suspected bugs/bookkeeping errors, which was quite valuable.</p>
+<p>Later, John returned for a while and finished Ledger version 3, the Ledger project attracted new contributors and maintainers, and incremental improvements resumed. I continued sharing discoveries and design discussions, and we have seen many ideas propagating in both directions. I think having independent but compatible implementations has been
+quite helpful for troubleshooting, exploring the design space, and growing the community.
+For a while I ran <a href="https://twitter.com/LedgerTips">LedgerTips</a> on twitter.</p>
+<p>hledger shared #ledger's IRC channel until 2014, when I created 
+the <a href="http://irc.hledger.org">#hledger</a> channel (now accessible on Libera IRC and Matrix).</p>
+<p>In 2016 I set up https://plaintextaccounting.org as a common entry point and information hub.</p>
+<p>The further adventures in hledger's development are not yet told, other than in the commit log, issue tracker and mail list, but other contributors joined the project and <a href="CREDITS.html">CREDITS</a> notes some of their work.</p>
+
+                    </main>
+<style>
+#footer {
+    margin-top: 4em;
+    padding-top: 1em;
+    border-top: thin solid hsl(197, 37%, 91%);
+    color: rgb(204, 204, 204);
+    font-style: italic; 
+    font-size:  small;
+}
+#footer a {
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+    white-space: nowrap;
+}
+</style>
+                    <div id="footer">
+                        <div id="comments">
+                            Your questions and feedback make this project better! 
+                            Please join 
+                            <a href="http://matrix.hledger.org">#hledger:matrix.org</a> or 
+                            <a href="http://irc.hledger.org">#hledger:libera.chat</a>,
+                            paste this page's full URL, 
+                            write your comment 
+                            (and if you have time, watch for a reply).
+                            Or,
+                            <a href="https://github.com/simonmichael/hledger_site/edit/master/src/ledger.md">edit this page</a>.
+                        </div>
+                    </div>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="gnucash.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left" accesskey="<">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="obsidian.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right" accesskey=">">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="gnucash.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left" accesskey="<">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="obsidian.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right" accesskey=">">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="highslide/highslide.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+
+
+    </body>
+</html>

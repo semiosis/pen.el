@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "James" "2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "James" "2:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "James" "2:1" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "James" "5:15-16" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "James" "1:17" "#" "<==" "zsh"

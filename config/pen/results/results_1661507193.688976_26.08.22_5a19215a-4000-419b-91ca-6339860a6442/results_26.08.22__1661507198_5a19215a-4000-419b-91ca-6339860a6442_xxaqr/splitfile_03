@@ -1,0 +1,1 @@
+(with-asdf! :com.stuartsierra.lush (load "lush/setup"))

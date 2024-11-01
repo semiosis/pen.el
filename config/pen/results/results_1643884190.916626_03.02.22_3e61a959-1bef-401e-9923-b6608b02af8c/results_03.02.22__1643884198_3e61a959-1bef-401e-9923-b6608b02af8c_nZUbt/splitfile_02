@@ -1,0 +1,6 @@
+1. This function takes a map as an argument
+2. It then checks to see if the path is a directory
+3. If it is a directory, it calls readdir-list-files-base
+4. If it is not a directory, it calls read-fuse-file
+5. readdir-list-files-base takes a map as an argument and returns a list of files
+6. read-fuse-file takes a map as an argument and returns

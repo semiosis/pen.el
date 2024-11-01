@@ -1,0 +1,20 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: Populate Library
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Create a Library
+      library:
+        name: "{{ item.name }}"
+        description: "{{ item.description }}"
+        type: "{{ item.type }}"
+        state: present
+      with_items:
+        - { name: "Library1", description: "Library1 description", type: "Library" }
+        - { name: "Library2", description: "Library2 description", type: "Library" }
+        - { name: "Library3", description: "Library3 description", type: "Library" }
+        - { name: "Library4", description: "Library4 description", type: "Library" }
+        - { name: "Library5", description: "Library5 description", type: "Library" }
+        -

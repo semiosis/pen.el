@@ -1,0 +1,26 @@
+Content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+<!-- Mirrored from www.hymnsite.com/hymndex.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2023 21:03:18 GMT -->
+<HEAD>
+  <TITLE>Frames for Alphabetical List of Methodist Hymns</TITLE>
+  <META name="Author" content="CARadke">
+  <META name="Keywords" content="United Methodist Hymnal hymns music words MIDI search free">
+  <META name="Description" content="Alphabetical list of United Methodist hymns at HymnSite.com, the searchable site of public domain midi files and lyrics from The United Methodist Hymnal and more">
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<meta http-equiv="content-language" content="en-us" >
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+</HEAD>
+<FRAMESET cols="280,*">
+  <FRAME src="abc.html">
+  <FRAME src="randhymn.html" name="top">
+</FRAMESET>
+
+<BODY>
+</BODY>
+<!-- Mirrored from www.hymnsite.com/hymndex.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2023 21:03:20 GMT -->
+</HTML>

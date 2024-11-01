@@ -1,0 +1,7 @@
+ abort
+  quitall!
+endfun
+command! -nargs=* QuitNvim call QuitNvim(<q-args>)
+
+set termguicolors
+let &t_8f = "\<C-F

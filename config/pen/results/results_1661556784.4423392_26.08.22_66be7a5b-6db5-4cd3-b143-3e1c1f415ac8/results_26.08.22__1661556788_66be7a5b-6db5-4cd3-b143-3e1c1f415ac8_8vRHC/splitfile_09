@@ -1,0 +1,1 @@
+(closer-mop:install-package :closer-mop)

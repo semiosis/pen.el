@@ -1,0 +1,12 @@
+
+function! GenerateTable()
+
+function! RedrawCursor()
+
+function! Navigation()
+
+function! SplitLines()
+
+function! InsertNewlineAndIndent()
+
+function! DeleteSelected()

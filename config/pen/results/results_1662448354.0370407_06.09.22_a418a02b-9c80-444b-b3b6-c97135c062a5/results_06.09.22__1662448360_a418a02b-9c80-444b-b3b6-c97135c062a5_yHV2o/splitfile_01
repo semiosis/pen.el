@@ -1,0 +1,8 @@
+"provide" is a macro that allows you to define "public" symbols (in the
+sense of Racket's module system) that are available to other modules.
+
+The first argument to "provide" is a list of symbols. Each symbol in this
+list is considered to be "public" and is available to other modules.
+
+The second argument to "provide" is a list of expressions. Each expression
+in this list is evaluated in the context of the module that is providing

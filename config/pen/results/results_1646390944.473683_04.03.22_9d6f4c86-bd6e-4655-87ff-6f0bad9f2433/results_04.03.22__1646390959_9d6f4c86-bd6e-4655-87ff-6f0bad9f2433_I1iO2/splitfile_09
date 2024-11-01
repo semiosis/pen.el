@@ -1,0 +1,9 @@
+
+The five Impressions of the Great Light are the Supernal Mother, the Supernal Father, the
+Supernal Son, the Supernal Daughter, and the Supernal Son.
+The five Helpers are the Mother of Man, the Father of Man, the Son of Man, the Daughter
+of Man, and the Son of Woman.
+The five Impressions of the Great Light are also called The Fivefold Vision.
+EOD
+
+cat draft.text | grep -i "vision" >vision.text

@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" tmux attach -t 62bd2594-5f68-11ee-9951-832944ec7201:\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "bash"

@@ -1,0 +1,8 @@
+cd /root/.pen/documents/bible;  "nem" "Zechariah" "11:12-13" "#" "<==" "zsh"
+cd /root/.pen/documents/bible;  "nem" "Zechariah" "11:12-13" "#" "<==" "zsh"
+cd /root/.pen/documents/bible;  "nem" "Exodus" "12:46" "#" "<==" "zsh"
+cd /root/.pen/documents/bible;  "nem" "Genesis" "3:15" "#" "<==" "zsh"
+cd /root/.pen/documents/bible;  "nem" "Galatians" "4:4" "#" "<==" "zsh"
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "ESV" "Isaiah 26:4" "#" "<==" "pen-ci"
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "ESV" "Isaiah 26:5" "#" "<==" "pen-ci"
+cd /;  "nem" "nbd" "fast" "ebible" "-c" "-m" "ESV" "Isaiah 26:6" "#" "<==" "pen-ci"

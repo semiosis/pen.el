@@ -1,0 +1,8 @@
+https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/13-the-list-monad
+
+
+The List Monad
+
+The List monad is used to represent computations in a way that's more
+readable than the do notation. The list monad is a monad that
+represents lists. It is a monad because

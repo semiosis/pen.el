@@ -1,0 +1,29 @@
+* TODO Make a database of the jaycar inventory
+- Automate this by scraping the jaycar website.
+
+** Know the categories
+I should know all the categories.
+
+** Inventory
+- Tools & Test Equipment
+  - Multimeters
+    - Digital Multimeters
+    - Analogue Multimeters
+    - Clampmeters
+    - Probes & Accessories
+    - Panel Meters
+  - Environment Meters
+    - Anemometers
+    - Sound Meters
+    - Light Meters
+    - Water, Moisture & PH Meters
+    - Thermometers
+    - Gas Detectors
+    - Distance Meters
+  - ...
+- Sound & Video
+  - ...
+- ...
+
+*** Make a script to generate this list?
+=wget= is going to take a long time.

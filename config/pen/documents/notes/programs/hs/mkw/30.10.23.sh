@@ -1,0 +1,5 @@
+cd /root/notes;  "mkw" "xterm" "#" "<==" "mkw"
+cd /root/repos/hackerb9/lsix;  "mkw" "-f" "lsix" "#" "<==" "mkw"
+cd /root/repos/horriblename/lfimg-sixel;  "mkw" "-f" "lfrun" "#" "<==" "mkw"
+cd /root;  "mkw" "epub-thumbnailer" "#" "<==" "mkw"
+cd /root/.config/lf;  "mkw" "-f" "preview" "#" "<==" "mkw"

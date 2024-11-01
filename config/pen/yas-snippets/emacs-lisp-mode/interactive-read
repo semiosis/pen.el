@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: interactive-read
+# group: interactive
+# key: ir
+# --
+(interactive (list (read-string "path:")))

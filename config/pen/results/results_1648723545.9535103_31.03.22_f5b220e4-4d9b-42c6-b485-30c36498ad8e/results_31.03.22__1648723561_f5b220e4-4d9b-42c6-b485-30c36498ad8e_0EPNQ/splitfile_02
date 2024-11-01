@@ -1,0 +1,12 @@
+- 1. Simon Peyton Jones (1946-)
+- 2. Stefan Monnier (1960-)
+- 3. Conal Elliott (1963-)
+- 4. Edward Kmett (1989-)
+  import Data.Monoid
+  numberToGuessInteger numTriesInteger = getTime :: Int -> IO Int
+  main :: IO ()
+  main = do
+    putStrLn "How many guesses?" let guesses = read :: String -> Int in
+    putStrLn "How long is the sequence?" let length = read :: String -> Int in
+      let numTries = read :: String -> Int 1 in
+        let numberToGuess = randomRs (1, length) in printGame

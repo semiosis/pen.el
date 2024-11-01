@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "15" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "7:14" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "8:3" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "8:3-4" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "8:3-4" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "8:3-4" "#" "<==" "zsh"

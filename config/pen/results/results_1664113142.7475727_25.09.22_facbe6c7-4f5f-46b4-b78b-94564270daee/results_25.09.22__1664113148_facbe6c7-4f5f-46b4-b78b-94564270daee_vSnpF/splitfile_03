@@ -1,0 +1,3 @@
+(as-> [x]
+    (inc (inc x))
+  (inc x))

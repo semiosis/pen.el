@@ -1,0 +1,714 @@
+HTTP/1.1 200 OK
+Date: Thu, 29 Feb 2024 00:54:38 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Thu, 07 Jun 2018 05:50:24 GMT
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=75
+Transfer-Encoding: chunked
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta name="description"
+content="The Gospel of Philip, from The Nag Hammadi Library. This site includes the entire Nag Hammadi Library, as well as a large collection of other primary Gnostic scriptures and documents.">
+<title>The Gospel of Philip -- The Nag Hammadi Library</title>
+</head>
+
+<body background="../images/bkg1.jpg" text="#000000" link="#0000EE" vlink="#0000EE"
+alink="#FF0000">
+
+<table border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <td valign="top" align="left" width="155"><img src="/images/coptic.gif" title="First page of &quot;Gospel of Thomas&quot; coptic manuscript. (Photo Courtesy of the Institute for Antiquity and Christianity, Claremont Graduate University)" alt="First page of &quot;Gospel of Thomas&quot; coptic manuscript. (Photo Courtesy of the Institute for Antiquity and Christianity, Claremont Graduate University)" height="261" width="145"><br clear="all">
+    <p><a href="nhl.html"><img src="../images/butnhl.gif" width="140" height="25"
+    alt="Nag Hammadi Library main page"></a></p>
+    <p><a href="nhlintro.html"><img src="../images/butintro.gif" width="140" height="25"
+    alt="Introduction to Gnosticism and the Nag Hammadi Library"></a></p>
+    <p><a href="nhlalpha.html"><img src="../images/butalpha.gif" width="140" height="25"
+    alt="Alphabetic Index of the Nag Hammadi Library"></a></p>
+    <p><a href="nhlcodex.html"><img src="../images/butcodex.gif" width="140" height="25"
+    alt="Codex Index of the Nag Hammadi Library"></a></p>
+    <p><a href="nhl_thomas.htm"><img src="../images/butgth.gif" width="140" height="25"
+    alt="Gospel of Thomas Collection"></a></p>
+    <p><a href="nhsearch.html"><img src="../images/butnhlsr.gif" width="140" height="25"
+    alt="Search the Nag Hammadi Library"></a></p>
+    <p><a href="../library.html"><img src="../images/libbut.gif" width="140" height="25"
+    alt="Return to The Gnostic Society Library page"></a></p>
+    <p><a href="../welcome.html"><img src="../images/butgnarch.gif" width="140" height="25"
+    alt="Return to The Gnosis Archive main page"></a></p>
+    <p>&nbsp;</p>
+    <h6><font face="Arial Narrow">(Above image of the Gospel of Thomas courtesy of the
+    Institute for Antiquity and Christianity, Claremont Graduate University) </font></h6>
+    <p>&nbsp;</p>
+    <h6><font face="Arial Narrow"><em>Visit the <a href="../bookstore1.htm">Bookstore</a> for
+    a complete selection of translations and books about the Gnostic Gospels.<br>
+    </em></font></h6>
+    <p><a href="../bookstore1.htm" target="_blank"><img
+    src="../images/Bookstore/gnosticgospels.gif"
+    alt="The Gnostic Gospels, by Elaine Pagels (Click to buy the book)" align="left"
+    hspace="10" width="90" height="140" border="2"></a></p>
+    <p><br clear="all">
+    </p>
+    <p>&nbsp;</p>
+    <p><a href="../bookstore1.htm" target="_blank"><img
+    src="../images/Bookstore/naghammadi.gif" width="93" height="140"
+    alt="The Nag Hammadi Library, edited by James Robinson (Click to buy the book)"
+    align="left" hspace="10" vspace="10" border="2"></a></td>
+<! ------------------------------------------ >
+<! ---------------Second column ------------- >
+<! ------------------------------------------ >
+    <td> <p align="center"><br>
+      <img src="/images/GnosticSocietyLibrary.gif" title="The Gnostic Society Library - gnosis.org" alt="The Gnostic Society Library" width="521" height="43"></p>
+    <p align="center"><strong><font size="5">The Nag Hammadi Library </font></strong></p>
+    <h3 align="center">The Gospel of Philip</h3>
+    <hr>
+    <p align="center"><strong>Translated by Wesley W. Isenberg </strong></p>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p><br>
+            A Hebrew makes another Hebrew, and such a person is called &quot;proselyte&quot;. But a
+            proselyte does not make another proselyte. [...] just as they [...] and make others like
+            themselves, while others simply exist. </p>
+          <p>The slave seeks only to be free, but he does not hope to acquire the estate of his
+            master. But the son is not only a son but lays claim to the inheritance of the father.
+            Those who are heirs to the dead are themselves dead, and they inherit the dead. Those who
+            are heirs to what is living are alive, and they are heirs to both what is living and the
+            dead. The dead are heirs to nothing. For how can he who is dead inherit? If he who is dead
+            inherits what is living he will not die, but he who is dead will live even more. </p>
+          <p>A Gentile does not die, for he has never lived in order that he may die. He who has
+            believed in the truth has found life, and this one is in danger of dying, for he is alive.
+            Since Christ came, the world has been created, the cities adorned, the dead carried out.
+            When we were Hebrews, we were orphans and had only our mother, but when we became
+            Christians, we had both father and mother. </p>
+          <p>Those who sow in winter reap in summer. The winter is the world, the summer the other
+            Aeon (eternal realm). Let us sow in the world that we may reap in the summer. Because of
+            this, it is fitting for us not to pray in the winter. Summer follows winter. But if any
+            man reap in winter he will not actually reap but only pluck out, since it will not provide
+            a harvest for such a person. It is not only [...] that it will [...] come forth, but also
+            on the Sabbath [...] is barren. </p>
+          <p>Christ came to ransom some, to save others, to redeem others. He ransomed those who
+            were strangers and made them his own. And he set his own apart, those whom he gave as a
+            pledge according to his plan. It was not only when he appeared that he voluntarily laid
+            down his life, but he voluntarily laid down his life from the very day the world came into
+            being. Then he came first in order to take it, since it had been given as a pledge. It
+            fell into the hands of robbers and was taken captive, but he saved it. He redeemed the
+            good people in the world as well as the evil. </p>
+          <p>Light and Darkness, life and death, right and left, are brothers of one another. They
+            are inseparable. Because of this neither are the good good, nor evil evil, nor is life
+            life, nor death death. For this reason each one will dissolve into its earliest origin.
+            But those who are exalted above the world are indissoluble, eternal. </p>
+          <p>Names given to the worldly are very deceptive, for they divert our thoughts from what
+            is correct to what is incorrect. Thus one who hears the word &quot;God&quot; does not
+            perceive what is correct, but perceives what is incorrect. So also with &quot;the
+            Father&quot; and &quot;the Son&quot; and &quot;the Holy Spirit&quot; and &quot;life&quot;
+            and &quot;light&quot; and &quot;resurrection&quot; and &quot;the Church (Ekklesia)&quot;
+            and all the rest - people do not perceive what is correct but they perceive what is
+            incorrect, unless they have come to know what is correct. The names which are heard are in
+            the world [...] deceive. If they were in the Aeon (eternal realm), they would at no time
+            be used as names in the world. Nor were they set among worldly things. They have an end in
+            the Aeon. </p>
+          <p>One single name is not uttered in the world, the name which the Father gave to the Son;
+            it is the name above all things: the name of the Father. For the Son would not become
+            Father unless he wore the name of the Father. Those who have this name know it, but they
+            do not speak it. But those who do not have it do not know it. </p>
+          <p>But truth brought names into existence in the world for our sakes, because it is not
+            possible to learn it (truth) without these names. Truth is one single thing; it is many
+            things and for our sakes to teach about this one thing in love through many things. The
+            rulers (archons) wanted to deceive man, since they saw that he had a kinship with those
+            that are truly good. They took the name of those that are good and gave it to those that
+            are not good, so that through the names they might deceive him and bind them to those that
+            are not good. And afterward, what a favor they do for them! They make them be removed from
+            those that are not good and place them among those that are good. These things they knew,
+            for they wanted to take the free man and make him a slave to them forever. </p>
+          <p>These are powers which [...] man, not wishing him to be saved, in order that they may
+            [...]. For if man is saved, there will not be any sacrifices [...] and animals will not be
+            offered to the powers. Indeed, the animals were the ones to whom they sacrificed. They
+            were indeed offering them up alive, but when they offered them up, they died. As for man,
+            they offered him up to God dead, and he lived. </p>
+          <p>Before Christ came, there was no bread in the world, just as Paradise, the place were
+            Adam was, had many trees to nourish the animals but no wheat to sustain man. Man used to
+            feed like the animals, but when Christ came, the perfect man, he brought bread from heaven
+            in order that man might be nourished with the food of man. The rulers thought that it was
+            by their own power and will that they were doing what they did, but the Holy Spirit in
+            secret was accomplishing everything through them as it wished. Truth, which existed since
+            the beginning, is sown everywhere. And many see it being sown, but few are they who see it
+            being reaped. </p>
+          <p>Some said, &quot;Mary conceived by the Holy Spirit.&quot; They are in error. They do
+            not know what they are saying. When did a woman ever conceive by a woman? Mary is the
+            virgin whom no power defiled. She is a great anathema to the Hebrews, who are the apostles
+            and the apostolic men. This virgin whom no power defiled [...] the powers defile
+            themselves. And the Lord would not have said &quot;My Father who is in Heaven&quot; (Mt
+            16:17), unless he had had another father, but he would have said simply &quot;My
+            father&quot;. </p>
+          <p>The Lord said to the disciples, &quot;[...] from every house. Bring into the house of
+            the Father. But do not take (anything) in the house of the Father nor carry it off.&quot; </p>
+          <p>&quot;Jesus&quot; is a hidden name, &quot;Christ&quot; is a revealed name. For this
+            reason &quot;Jesus&quot; is not particular to any language; rather he is always called by
+            the name &quot;Jesus&quot;. While as for &quot;Christ&quot;, in Syriac it is
+            &quot;Messiah&quot;, in Greek it is &quot;Christ&quot;. Certainly all the others have it
+            according to their own language. &quot;The Nazarene&quot; is he who reveals what is
+            hidden. Christ has everything in himself, whether man, or angel, or mystery, and the
+            Father. </p>
+          <p>Those who say that the Lord died first and (then) rose up are in error, for he rose up
+            first and (then) died. If one does not first attain the resurrection, he will not die. As
+            God lives, he would [...]. </p>
+          <p>No one will hide a large valuable object in something large, but many a time one has
+            tossed countless thousands into a thing worth a penny. Compare the soul. It is a precious
+            thing and it came to be in a contemptible body. </p>
+          <p>Some are afraid lest they rise naked. Because of this they wish to rise in the flesh,
+            and they do not know that it is those who wear the flesh who are naked. It is those who
+            [...] to unclothe themselves who are not naked. &quot;Flesh and blood shall not inherit
+            the kingdom of God&quot; (1 Co 15:50). What is this which will not inherit? This which is
+            on us. But what is this, too, which will inherit? It is that which belongs to Jesus and
+            his blood. Because of this he said &quot;He who shall not eat my flesh and drink my blood
+            has not life in him&quot; (Jn 6:53). What is it? His flesh is the word, and his blood is
+            the Holy Spirit. He who has received these has food and he has drink and clothing. I find
+            fault with the others who say that it will not rise. Then both of them are at fault. You
+            say that the flesh will not rise. But tell me what will rise, that we may honor you. You
+            say the Spirit in the flesh, and it is also this light in the flesh. (But) this too is a
+            matter which is in the flesh, for whatever you shall say, you say nothing outside the
+            flesh. It is necessary to rise in this flesh, since everything exists in it. In this
+            world, those who put on garments are better than the garments. In the Kingdom of Heaven,
+            the garments are better than those that put them on. </p>
+          <p>It is through water and fire that the whole place is purified - the visible by the
+            visible, the hidden by the hidden. There are some things hidden through those visible.
+            There is water in water, there is fire in chrism. </p>
+          <p>Jesus took them all by stealth, for he did not appear as he was, but in the manner in
+            which they would be able to see him. He appeared to them all. He appeared to the great as
+            great. He appeared to the small as small. He appeared to the angels as an angel, and to
+            men as a man. Because of this, his word hid itself from everyone. Some indeed saw him,
+            thinking that they were seeing themselves, but when he appeared to his disciples in glory
+            on the mount, he was not small. He became great, but he made the disciples great, that
+            they might be able to see him in his greatness. </p>
+          <p>He said on that day in the thanksgiving, &quot;You who have joined the perfect light
+            with the Holy Spirit, unite the angels with us also, as being the images.&quot; Do not
+            despise the lamb, for without it, it is not possible to see the king. No one will be able
+            to go in to the king if he is naked. </p>
+          <p>The heavenly man has many more sons than the earthly man. If the sons of Adam are many,
+            although they die, how much more the sons of the perfect man, they who do not die but are
+            always begotten. The father makes a son, and the son has not the power to make a son. For
+            he who has been begotten has not the power to beget, but the son gets brothers for
+            himself, not sons. All who are begotten in the world are begotten in a natural way, and
+            the others are nourished from the place whence they have been born. It is from being
+            promised to the heavenly place that man receives nourishment. [...] him from the mouth.
+            And had the word gone out from that place, it would be nourished from the mouth and it
+            would become perfect. For it is by a kiss that the perfect conceive and give birth. For
+            this reason we also kiss one another. We receive conception from the grace which is in one
+            another. </p>
+          <p>There were three who always walked with the Lord: Mary, his mother, and her sister, and
+            Magdalene, the one who was called his companion. His sister and his mother and his
+            companion were each a Mary. </p>
+          <p>&quot;The Father&quot; and &quot;the Son&quot; are single names; &quot;the Holy
+            Spirit&quot; is a double name. For they are everywhere: they are above, they are below;
+            they are in the concealed, they are in the revealed. The Holy Spirit is in the revealed:
+            it is below. It is in the concealed: it is above. </p>
+          <p>The saints are served by evil powers, for they are blinded by the Holy Spirit into
+            thinking that they are serving an (ordinary) man whenever they do so for the saints.
+            Because of this, a disciple asked the Lord one day for something of this world. He said to
+            him, &quot;Ask your mother, and she will give you of the things which are another's.&quot;
+          </p>
+          <p>The apostles said to the disciples, &quot;May our entire offering obtain salt.&quot;
+            They called Sophia &quot;salt&quot;. Without it, no offering is acceptable. But Sophia is
+            barren, without child. For this reason, she is called &quot;a trace of salt&quot;.
+            Wherever they will [...] in their own way, the Holy Spirit [...], and her children are
+            many. </p>
+          <p>What the father possesses belongs to the son, and the son himself, so long as he is
+            small, is not entrusted with what is his. But when he becomes a man, his father gives him
+            all that he possesses. </p>
+          <p>Those who have gone astray, whom the spirit begets, usually go astray also because of
+            the Spirit. Thus, by one and the same breath, the fire blazes and is put out. </p>
+          <p>Echamoth is one thing and Echmoth, another. Echamoth is Wisdom simply, but Echmoth is
+            the Wisdom of death, which is the one who knows death, which is called &quot;the little
+            Wisdom&quot;. </p>
+          <p>There are domestic animals, like the bull and the ass and others of this kind. Others
+            are wild and live apart in the deserts. Man ploughs the field by means of the domestic
+            animals, and from this he is nourished, he and the animals, whether tame or wild. Compare
+            the perfect man. It is through powers which are submissive that he ploughs, preparing for
+            everything to come into being. For it is because of this that the whole place stands,
+            whether the good or the evil, the right and the left. The Holy Spirit shepherds everyone
+            and rules all the powers, the &quot;tame&quot; ones and the &quot;wild&quot; ones, as well
+            as those which are unique. For indeed he [...] shuts them in, in order that [...] wish,
+            they will not be able to escape. </p>
+          <p>He who has been created is beautiful, but you would &lt;not&gt; find his sons noble
+            creations. If he were not created, but begotten, you would find that his seed was noble.
+            But now he was created (and) he begot. What nobility is this? First, adultery came into
+            being, afterward murder. And he was begotten in adultery, for he was the child of the
+            Serpent. So he became a murderer, just like his father, and he killed his brother. Indeed,
+            every act of sexual intercourse which has occurred between those unlike one another is
+            adultery. </p>
+          <p>God is a dyer. As the good dyes, which are called &quot;true&quot;, dissolve with the
+            things dyed in them, so it is with those whom God has dyed. Since his dyes are immortal,
+            they become immortal by means of his colors. Now God dips what he dips in water. </p>
+          <p>It is not possible for anyone to see anything of the things that actually exist unless
+            he becomes like them. This is not the way with man in the world: he sees the sun without
+            being a sun; and he sees the heaven and the earth and all other things, but he is not
+            these things. This is quite in keeping with the truth. But you saw something of that
+            place, and you became those things. You saw the Spirit, you became spirit. You saw Christ,
+            you became Christ. You saw the Father, you shall become Father. So in this place you see
+            everything and do not see yourself, but in that place you do see yourself - and what you
+            see you shall become. </p>
+          <p>Faith receives, love gives. No one will be able to receive without faith. No one will
+            be able to give without love. Because of this, in order that we may indeed receive, we
+            believe, and in order that we may love, we give, since if one gives without love, he has
+            no profit from what he has given. He who has received something other than the Lord is
+            still a Hebrew. </p>
+          <p>The apostles who were before us had these names for him: &quot;Jesus, the Nazorean,
+            Messiah&quot;, that is, &quot;Jesus, the Nazorean, the Christ&quot;. The last name is
+            &quot;Christ&quot;, the first is &quot;Jesus&quot;, that in the middle is &quot;the
+            Nazarene&quot;. &quot;Messiah&quot; has two meanings, both &quot;the Christ&quot; and
+            &quot;the measured&quot;. &quot;Jesus&quot; in Hebrew is &quot;the redemption&quot;.
+            &quot;Nazara&quot; is &quot;the Truth&quot;. &quot;The Nazarene&quot; then, is &quot;the
+            Truth&quot;. &quot;Christ&quot; [...] has been measured. &quot;The Nazarene&quot; and
+            &quot;Jesus&quot; are they who have been measured. </p>
+          <p>When the pearl is cast down into the mud, it becomes greatly despised, nor if it is
+            anointed with balsam oil will it become more precious. But it always has value in the eyes
+            of its owner. Compare the Sons of God: wherever they may be, they still have value in the
+            eyes of their Father. </p>
+          <p>If you say, &quot;I am a Jew,&quot; no one will be moved. If you say, &quot;I am a
+            Roman,&quot; no one will be disturbed. If you say, &quot;I am a Greek, a barbarian, a
+            slave, a free man,&quot; no one will be troubled. If you say, &quot;I am a
+            Christian,&quot; the [...] will tremble. Would that I might [...] like that - the person
+            whose name [...] will not be able to endure hearing. </p>
+          <p>God is a man-eater. For this reason, men are sacrificed to him. Before men were
+            sacrificed, animals were being sacrificed, since those to whom they were sacrificed were
+            not gods. </p>
+          <p>Glass decanters and earthenware jugs are both made by means of fire. But if glass
+            decanters break, they are done over, for they came into being through a breath. If
+            earthenware jugs break, however, they are destroyed, for they came into being without
+            breath. </p>
+          <p>An ass which turns a millstone did a hundred miles walking. When it was loosed, it
+            found that it was still at the same place. There are men who make many journeys, but make
+            no progress towards any destination. When evening came upon them, they saw neither city
+            nor village, neither human artifact nor natural phenomenon, power nor angel. In vain have
+            the wretches labored. </p>
+          <p>The eucharist is Jesus. For he is called in Syriac &quot;Pharisatha,&quot; which is
+            &quot;the one who is spread out,&quot; for Jesus came to crucify the world. </p>
+          <p>The Lord went into the dye works of Levi. He took seventy-two different colors and
+            threw them into the vat. He took them out all white. And he said, &quot;Even so has the
+            Son of Man come as a dyer.&quot; </p>
+          <p>As for the Wisdom who is called &quot;the barren,&quot; she is the mother of the
+            angels. And the companion of the [...] Mary Magdalene. [...] loved her more than all the
+            disciples, and used to kiss her often on her mouth. The rest of the disciples [...]. They
+            said to him &quot;Why do you love her more than all of us?&quot; The Savior answered and
+            said to them,&quot;Why do I not love you like her? When a blind man and one who sees are
+            both together in darkness, they are no different from one another. When the light comes,
+            then he who sees will see the light, and he who is blind will remain in darkness.&quot; </p>
+          <p>The Lord said, &quot;Blessed is he who is before he came into being. For he who is, has
+            been and shall be.&quot; </p>
+          <p>The superiority of man is not obvious to the eye, but lies in what is hidden from view.
+            Consequently, he has mastery over the animals which are stronger than he is and great in
+            terms of the obvious and the hidden. This enables them to survive. But if man is separated
+            from them, they slay one another and bite one another. They ate one another because they
+            did not find any food. But now they have found food because man tilled the soil. </p>
+          <p>If one goes down into the water and comes up without having received anything, and says
+            &quot;I am a Christian,&quot; he has borrowed the name at interest. But if he receives the
+            Holy Spirit, he has the name as a gift. He who has received a gift does not have to give
+            it back, but of him who has borrowed it at interest, payment is demanded. This is the way
+            it happens to one when he experiences a mystery. </p>
+          <p>Great is the mystery of marriage! For without it, the world would not exist. Now the
+            existence of the world [...], and the existence of [...] marriage. Think of the [...]
+            relationship, for it possesses [...] power. Its image consists of a defilement. </p>
+          <p>The forms of evil spirit include male ones and female ones. The males are they which
+            unite with the souls which inhabit a female form, but the females are they which are
+            mingled with those in a male form, though one who was disobedient. And none shall be able
+            to escape them, since they detain him if he does not receive a male power or a female
+            power, the bridegroom and the bride. One receives them from the mirrored bridal chamber.
+            When the wanton women see a male sitting alone, they leap down on him and play with him
+            and defile him. So also the lecherous men, when they see a beautiful woman sitting alone,
+            they persuade her and compel her, wishing to defile her. But if they see the man and his
+            wife sitting beside one another, the female cannot come into the man, nor can the male
+            come into the woman. So if the image and the angel are united with one another, neither
+            can any venture to go into the man or the woman. </p>
+          <p>He who comes out of the world, and so can no longer be detained on the grounds that he
+            was in the world, evidently is above the desire of the [...] and fear. He is master over
+            [...]. He is superior to envy. If [...] comes, they seize him and throttle him. And how
+            will this one be able to escape the great [...] powers? How will he be able to [...]?
+            There are some who say, &quot;We are faithful&quot; in order that [...] the unclean
+            spirits and the demons. For if they had the Holy Spirit, no unclean spirit would cleave to
+            them. Fear not the flesh nor love it. If you fear it, it will gain mastery over you. If
+            you love it, it will swallow and paralyze you. </p>
+          <p>And so he dwells either in this world or in the resurrection or in the middle place.
+            God forbid that I be found in there! In this world, there is good and evil. Its good
+            things are not good, and its evil things not evil. But there is evil after this world
+            which is truly evil - what is called &quot;the middle&quot;. It is death. While we are in
+            this world, it is fitting for us to acquire the resurrection, so that when we strip off
+            the flesh, we may be found in rest and not walk in the middle. For many go astray on the
+            way. For it is good to come forth from the world before one has sinned. </p>
+          <p>There are some who neither will nor have the power to; and others who, if they will, do
+            not profit; for they did not act since [...] makes them sinners. And if they do not will,
+            justice will elude them in both cases: and it is always a matter of the will, not the act.
+          </p>
+          <p>An apostolic man in a vision saw some people shut up in a house of fire and bound with
+            fiery [...], lying [...] flaming [...], them in [...] faith [...]. And he said to them,
+            &quot;[...] able to be saved?&quot; [...], &quot;They did not desire it. They received
+            [...] punishment, what is called 'the [...] darkness', because he [...].&quot; </p>
+          <p>It is from water and fire that the soul and the spirit came into being. It is from
+            water and fire and light that the son of the bridal chamber (came into being). The fire is
+            the chrism, the light is the fire. I am not referring to that fire which has no form, but
+            to the other fire whose form is white, which is bright and beautiful, and which gives
+            beauty. </p>
+          <p>Truth did not come into the world naked, but it came in types and images. The world
+            will not receive truth in any other way. There is a rebirth and an image of rebirth. It is
+            certainly necessary to be born again through the image. Which one? Resurrection. The image
+            must rise again through the image. The bridal chamber and the image must enter through the
+            image into the truth: this is the restoration. Not only must those who produce the name of
+            the Father and the Son and the Holy Spirit, do so, but have produced them for you. If one
+            does not acquire them, the name (&quot;Christian&quot;) will also be taken from him. But
+            one receives the unction of the [...] of the power of the cross. This power the apostles
+            called &quot;the right and the left.&quot; For this person is no longer a Christian but a
+            Christ. </p>
+          <p>The Lord did everything in a mystery, a baptism and a chrism and a eucharist and a
+            redemption and a bridal chamber. [...] he said, &quot;I came to make the things below like
+            the things above, and the things outside like those inside. I came to unite them in the
+            place.&quot; [...] here through types [...]and images. </p>
+          <p>Those who say, &quot;There is a heavenly man and there is one above him&quot; are
+            wrong. For it is the first of these two heavenly men, the one who is revealed, that they
+            call &quot;the one who is below&quot;; and he to whom the hidden belongs is that one who
+            is above him. For it would be better for them to say, &quot;The inner and outer, and what
+            is outside the outer&quot;. Because of this, the Lord called destruction the &quot;the
+            outer darkness&quot;: there is not another outside of it. He said, &quot;My Father who is
+            in secret&quot;. He said, &quot;Go into your chamber and shut the door behind you, and
+            pray to your Father who is in secret&quot; (Mt 6:6), the one who is within them all. But
+            that which is within them all is the fullness. Beyond it, there is nothing else within it.
+            This is that of which they say, &quot;That which is above them&quot;. </p>
+          <p>Before Christ, some came from a place they were no longer able to enter, and they went
+            where they were no longer able to come out. Then Christ came. Those who went in, he
+            brought out, and those who went out, he brought in. </p>
+          <p>When Eve was still with Adam, death did not exist. When she was separated from him,
+            death came into being. If he enters again and attains his former self, death will be no
+            more. </p>
+          <p>&quot;My God, my God, why, O Lord, have you forsaken me?&quot; (Mk 15:34). It was on
+            the cross that he said these words, for he had departed from that place. </p>
+          <p>[...] who has been begotten through him who [...] from God. </p>
+          <p>The [...] from the dead. [...] to be, but now [...] perfect. [...] flesh, but this
+            [...] is true flesh. [...] is not true, but [...] only possess an image of the true. </p>
+          <p>A bridal chamber is not for the animals, nor is it for the slaves, nor for defiled
+            women; but it is for free men and virgins. </p>
+          <p>Through the Holy Spirit we are indeed begotten again, but we are begotten through
+            Christ in the two. We are anointed through the Spirit. When we were begotten, we were
+            united. None can see himself either in water or in a mirror without light. Nor again can
+            you see in light without mirror or water. For this reason, it is fitting to baptize in the
+            two, in the light and the water. Now the light is the chrism. </p>
+          <p>There were three buildings specifically for sacrifice in Jerusalem. The one facing the
+            west was called &quot;The Holy&quot;. Another, facing south, was called &quot;The Holy of
+            the Holy&quot;. The third, facing east, was called &quot;The Holy of the Holies&quot;, the
+            place where only the high priest enters. Baptism is &quot;the Holy&quot; building.
+            Redemption is the &quot;Holy of the Holy&quot;. &quot;The Holy of the Holies&quot; is the
+            bridal chamber. Baptism includes the resurrection and the redemption; the redemption
+            (takes place) in the bridal chamber. But the bridal chamber is in that which is superior
+            to [...] you will not find [...] are those who pray [...] Jerusalem who [...] Jerusalem,
+            [...] those called the &quot;Holy of the Holies&quot; [...] the veil was rent, [...]
+            bridal chamber except the image [...] above. Because of this, its veil was rent from top
+            to bottom. For it was fitting for some from below to go upward. </p>
+          <p>The powers do not see those who are clothed in the perfect light, and consequently are
+            not able to detain them. One will clothe himself in this light sacramentally in the union.
+          </p>
+          <p>If the woman had not separated from the man, she should not die with the man. His
+            separation became the beginning of death. Because of this, Christ came to repair the
+            separation, which was from the beginning, and again unite the two, and to give life to
+            those who died as a result of the separation, and unite them. But the woman is united to
+            her husband in the bridal chamber. Indeed, those who have united in the bridal chamber
+            will no longer be separated. Thus Eve separated from Adam because it was not in the bridal
+            chamber that she united with him. </p>
+          <p>The soul of Adam came into being by means of a breath. The partner of his soul is the
+            spirit. His mother is the thing that was given to him. His soul was taken from him and
+            replaced by a spirit. When he was united (to the spirit), he spoke words incomprehensible
+            to the powers. They envied him [...] spiritual partner [...] hidden [...] opportunity
+            [...] for themselves alone [...] bridal chamber, so that [...]. </p>
+          <p>Jesus appeared [...] Jordan - the fullness of the Kingdom of Heaven. He who was
+            begotten before everything, was begotten anew. He who was once anointed, was anointed
+            anew. He who was redeemed, in turn redeemed (others). </p>
+          <p>Indeed, one must utter a mystery. The Father of everything united with the virgin who
+            came down, and a fire shone for him on that day. He appeared in the great bridal chamber.
+            Therefore his body came into being on that very day. It left the bridal chamber as one who
+            came into being from the bridegroom and the bride. So Jesus established everything in it
+            through these. It is fitting for each of the disciples to enter into his rest. </p>
+          <p>Adam came into being from two virgins, from the Spirit and from the virgin earth.
+            Christ therefore, was born from a virgin to rectify the Fall which occurred in the
+            beginning. </p>
+          <p>There are two trees growing in Paradise. The one bears animals, the other bears men.
+            Adam ate from the tree which bore animals. He became an animal and he brought forth
+            animals. For this reason the children of Adam worship animals. The tree [...] fruit is
+            [...] increased. [...] ate the [...] fruit of the [...] bears men, [...] man. [...] God
+            created man. [...] men create God. That is the way it is in the world - men make gods and
+            worship their creation. It would be fitting for the gods to worship men! </p>
+          <p>Surely what a man accomplishes depends on his abilities. For this reason, we refer to
+            one`s accomplishments as &quot;abilities&quot;. Among his accomplishments are his
+            children. They originate in a moment of ease. Thus his abilities determine what he may
+            accomplish, but this ease is clearly evident in the children. You will find that this
+            applies directly to the image. Here is the man made after the image accomplishing things
+            with his physical strength, but producing his children with ease. </p>
+          <p>In this world, the slaves serve the free. In the Kingdom of Heaven, the free will
+            minister to the slaves: the children of the bridal chamber will minister to the children
+            of the marriage. The children of the bridal chamber have just one name: rest. Altogether,
+            they need take no other form, because they have contemplation, [...]. They are numerous
+            [...] in the things [...] the glories [...]. </p>
+          <p>Those [...] go down into the water. [...] out (of the water), will consecrate it, [...]
+            they who have [...] in his name. For he said, &quot;Thus we should fulfill all
+            righteousness.&quot; (Mt 3:15) </p>
+          <p>Those who say they will die first and then rise are in error. If they do not first
+            receive the resurrection while they live, when they die they will receive nothing. So also
+            when speaking about baptism they say, &quot;Baptism is a great thing,&quot; because if
+            people receive it they will live. </p>
+          <p>Philip the apostle said, &quot;Joseph the carpenter planted a garden because he needed
+            wood for his trade. It was he who made the cross from the trees which he planted. His own
+            offspring hung on that which he planted. His offspring was Jesus, and the planting was the
+            cross.&quot; But the Tree of Life is in the middle of the Garden. However, it is from the
+            olive tree that we got the chrism, and from the chrism, the resurrection. </p>
+          <p>This world is a corpse-eater. All the things eaten in it themselves die also. Truth is
+            a life-eater. Therefore no one nourished by truth will die. It was from that place that
+            Jesus came and brought food. To those who so desired, he gave life, that they might not
+            die. </p>
+          <p>God [...] garden. Man [...] garden. There are [...] and [...] of God. [...] The things
+            which are in [...] I wish. This garden is the place where they will say to me, &quot;[...]
+            eat this or do not eat that, just as you wish.&quot; In the place where I will eat all
+            things is the Tree of Knowledge. That one killed Adam, but here the Tree of Knowledge made
+            men alive. The law was the tree. It has power to give the knowledge of good and evil. It
+            neither removed him from evil, nor did it set him in the good, but it created death for
+            those who ate of it. For when he said, &quot;Eat this, do not eat that&quot;, it became
+            the beginning of death. </p>
+          <p>The chrism is superior to baptism, for it is from the word &quot;Chrism&quot; that we
+            have been called &quot;Christians,&quot; certainly not because of the word
+            &quot;baptism&quot;. And it is because of the chrism that &quot;the Christ&quot; has his
+            name. For the Father anointed the Son, and the Son anointed the apostles, and the apostles
+            anointed us. He who has been anointed possesses everything. He possesses the resurrection,
+            the light, the cross, the Holy Spirit. The Father gave him this in the bridal chamber; he
+            merely accepted (the gift). The Father was in the Son and the Son in the Father. This is
+            the Kingdom of Heaven. </p>
+          <p>The Lord said it well: &quot;Some have entered the Kingdom of Heaven laughing, and they
+            have come out [...] because [...] a Christian, [...]. And as soon as [...] went down into
+            the water, he came [...] everything (of this world), [...] because he [...] a trifle, but
+            [...] full of contempt for this [...] the Kingdom of Heaven [...] If he despises [...],
+            and scorns it as a trifle, [...] out laughing. So it is also with the bread and the cup
+            and the oil, even though there is another one superior to these. </p>
+          <p>The world came about through a mistake. For he who created it wanted to create it
+            imperishable and immortal. He fell short of attaining his desire. For the world never was
+            imperishable, nor, for that matter, was he who made the world. For things are not
+            imperishable, but sons are. Nothing will be able to receive imperishability if it does not
+            first become a son. But he who has not the ability to receive, how much more will he be
+            unable to give? </p>
+          <p>The cup of prayer contains wine and water, since it is appointed as the type of the
+            blood for which thanks is given. And it is full of the Holy Spirit, and it belongs to the
+            wholly perfect man. When we drink this, we shall receive for ourselves the perfect man.
+            The living water is a body. It is necessary that we put on the living man. Therefore, when
+            he is about to go down into the water, he unclothes himself, in order that he may put on
+            the living man. </p>
+          <p>A horse sires a horse, a man begets man, a god brings forth a god. Compare the
+            bridegroom and the bride. They have come from the [...]. No Jew [...] has existed. And
+            [...] from the Jews. [...] Christians [...] these [...] are referred to as &quot;The
+            chosen people of [...],&quot; and &quot;The true man&quot; and &quot;Son of Man&quot; and
+            &quot;the seed of the Son of Man&quot;. This true race is renowned in the world [...] that
+            the sons of the bridal chamber dwell. </p>
+          <p>Whereas in this world the union is one of husband with wife - a case of strength
+            complemented by weakness(?) - in the Aeon (eternal realm), the form of the union is
+            different, although we refer to them by the same names. There are other names, however;
+            they are superior to every other name that is named and are stronger than the strong. For
+            where there is a show of strength, there those who excel in strength appear. These are not
+            separate things, but both of them are this one single thing. This is the one which will
+            not be able to rise above the heart of flesh. </p>
+          <p>Is it not necessary for all those who possess everything to know themselves? Some
+            indeed, if they do not know themselves, will not enjoy what they possess. But those who
+            have come to know themselves will enjoy their possessions. </p>
+          <p>Not only will they be unable to detain the perfect man, but they will not be able to
+            see him, for if they see him, they will detain him. There is no other way for a person to
+            acquire this quality except by putting on the perfect light and he too becoming perfect
+            light. He who has put it on will enter [...]. This is the perfect [...] that we [...]
+            become [...] before we leave [...]. Whoever receives everything [...] hither [...] be able
+            [...] that place, but will [...] the Middle as imperfect. Only Jesus knows the end of this
+            person. </p>
+          <p>The priest is completely holy, down to his very body. For if he has taken the bread, he
+            will consecrate it. Or the cup or anything else that he gets, he will consecrate. Then how
+            will he not consecrate the body also? </p>
+          <p>By perfecting the water of baptism, Jesus emptied it of death. Thus we do go down into
+            the water, but we do not go down into death, in order that we may not be poured out into
+            the spirit of the world. When that spirit blows, it brings the winter. When the Holy
+            Spirit breathes, the summer comes. </p>
+          <p>He who has knowledge of the truth is a free man, but the free man does not sin, for
+            &quot;He who sins is the slave of sin&quot; (Jn 8:34). Truth is the mother, knowledge the
+            father. Those who think that sinning does not apply to them are called &quot;free&quot; by
+            the world. Knowledge of the truth merely makes such people arrogant, which is what the
+            words, &quot;it makes them free&quot; mean. It even gives them a sense of superiority over
+            the whole world. But &quot;Love builds up&quot; (1 Co 8:1). In fact, he who is really
+            free, through knowledge, is a slave, because of love for those who have not yet been able
+            to attain to the freedom of knowledge. Knowledge makes them capable of becoming free. Love
+            never calls something its own, [...] it [...] possess [...]. It never says,&quot;This is
+            yours&quot; or &quot;This is mine,&quot; but &quot;All these are yours&quot;. Spiritual
+            love is wine and fragrance. All those who anoint themselves with it take pleasure in it.
+            While those who are anointed are present, those nearby also profit (from the fragrance).
+            If those anointed with ointment withdraw from them and leave, then those not anointed, who
+            merely stand nearby, still remain in their bad odor. The Samaritan gave nothing but wine
+            and oil to the wounded man. It is nothing other than the ointment. It healed the wounds,
+            for &quot;love covers a multitude of sins&quot; (1 P 4:8). </p>
+          <p>The children a woman bears resemble the man who loves her. If her husband loves her,
+            then they resemble her husband. If it is an adulterer, then they resemble the adulterer.
+            Frequently, if a woman sleeps with her husband out of necessity, while her heart is with
+            the adulterer with whim she usually has intercourse, the child she will bear is born
+            resembling the adulterer. Now you who live together with the Son of God, love not the
+            world, but love the Lord, in order that those you will bring forth may not resemble the
+            world, but may resemble the Lord. </p>
+          <p>The human being has intercourse with the human being. The horse has intercourse with
+            the horse, the ass with the ass. Members of a race usually have associated with those of
+            like race. So spirit mingles with spirit, and thought consorts with thought, and light
+            shares with light. If you are born a human being, it is the human being who will love you.
+            If you become a spirit, it is the spirit which will be joined to you. If you become
+            thought, it is thought which will mingle with you. If you become light, it is the light
+            which will share with you. If you become one of those who belong above, it is those who
+            belong above who will rest upon you. If you become horse or ass or bull or dog or sheep,
+            or another of the animals which are outside or below, then neither human being nor spirit
+            nor thought nor light will be able to love you. Neither those who belong above nor those
+            who belong within will be able to rest in you, and you have no part in them. </p>
+          <p>He who is a slave against his will, will be able to become free. He who has become free
+            by favor of his master, and has sold himself into slavery, will no longer be able to be
+            free. </p>
+          <p>Farming in the world requires the cooperation of four essential elements. A harvest is
+            gathered into the barn only as a result of the natural action of water, earth, wind and
+            light. God's farming likewise has four elements - faith, hope, love, and knowledge. Faith
+            is our earth, that in which we take root. And hope is the water through which we are
+            nourished. Love is the wind through which we grow. Knowledge, then, is the light through
+            which we ripen. Grace exists in four ways: it is earthborn; it is heavenly; [...] the
+            highest heaven; [...] in [...]. </p>
+          <p>Blessed is the one who on no occasion caused a soul [...]. That person is Jesus Christ.
+            He came to the whole place and did not burden anyone. Therefore, blessed is the one who is
+            like this, because he is a perfect man. For the Word tells us that this kind is difficult
+            to define. How shall we be able to accomplish such a great thing? How will he give
+            everyone comfort? Above all, it is not proper to cause anyone distress - whether the
+            person is great or small, unbeliever or believer - and then give comfort only to those who
+            take satisfaction in good deeds. Some find it advantageous to give comfort to the one who
+            has fared well. He who does good deeds cannot give comfort to such people, for he does not
+            seize whatever he likes. He is unable to cause distress, however, since he does not
+            afflict them. To be sure, the one who fares well sometimes causes people distress - not
+            that he intends to do so; rather, it is their own wickedness which is responsible for
+            their distress. He who possesses the qualities (of the perfect man) bestows joy upon the
+            good. Some, however, are terribly distressed by all this. </p>
+          <p>There was a householder who had every conceivable thing, be it son or slave or cattle
+            or dog or pig or corn or barley or chaff or grass or [...] or meat and acorn. Now he was a
+            sensible fellow, and he knew what the food of each one was. He served the children bread
+            [...]. He served the slaves [...] and meal. And he threw barley and chaff and grass to the
+            cattle. He threw bones to the dogs, and to the pigs he threw acorns and slop. Compare the
+            disciple of God: if he is a sensible fellow, he understands what discipleship is all
+            about. The bodily forms will not deceive him, but he will look at the condition of the
+            soul of each one and speak with him. There are many animals in the world which are in a
+            human form. When he identifies them, to the swine he will throw acorns, to the cattle he
+            will throw barley and chaff and grass, to the dogs he will throw bones. To the slaves he
+            will give only the elementary lessons, to the children he will give the complete
+            instruction. </p>
+          <p>There is the Son of Man and there is the son of the Son of Man. The Lord is the Son of
+            Man, and the son of the Son of Man is he who creates through the Son of Man. The Son of
+            Man received from God the capacity to create. He also has the ability to beget. He who has
+            received the ability to create is a creature. He who has received the ability to beget is
+            an offspring. He who creates cannot beget. He who begets also has power to create. Now
+            they say, &quot;He who creates begets&quot;. But his so-called &quot;offspring&quot; is
+            merely a creature. Because of [...] of birth, they are not his offspring but [...]. He who
+            creates works openly, and he himself is visible. He who begets, begets in private, and he
+            himself is hidden, since [...] image. Also, he who creates, creates openly. But one who
+            begets, begets children in private. </p>
+          <p>No one can know when the husband and the wife have intercourse with one another, except
+            the two of them. Indeed, marriage in the world is a mystery for those who have taken a
+            wife. If there is a hidden quality to the marriage of defilement, how much more is the
+            undefiled marriage a true mystery! It is not fleshly, but pure. It belongs not to desire,
+            but to the will. It belongs not to the darkness or the night, but to the day and the
+            light. If a marriage is open to the public, it has become prostitution, and the bride
+            plays the harlot not only when she is impregnated by another man, but even if she slips
+            out of her bedroom and is seen. Let her show herself only to her father and her mother,
+            and to the friend of the bridegroom and the sons of the bridegroom. These are permitted to
+            enter every day into the bridal chamber. But let the others yearn just to listen to her
+            voice and to enjoy her ointment, and let them feed from the crumbs that fall from the
+            table, like the dogs. Bridegrooms and brides belong to the bridal chamber. No one shall be
+            able to see the bridegroom with the bride unless he become such a one. </p>
+          <p>When Abraham [...] that he was to see what he was to see, he circumcised the flesh of
+            the foreskin, teaching us that it is proper to destroy the flesh. </p>
+          <p>Most things in the world, as long as their inner parts are hidden, stand upright and
+            live. If they are revealed, they die, as is illustrated by the visible man: as long as the
+            intestines of the man are hidden, the man is alive; when his intestines are exposed and
+            come out of him, the man will die. So also with the tree: while its root is hidden, it
+            sprouts and grows. If its root is exposed, the tree dries up. So it is with every birth
+            that is in the world, not only with the revealed but with the hidden. For so long as the
+            root of wickedness is hidden, it is strong. But when it is recognized, it is dissolved.
+            When it is revealed, it perishes. That is why the Word says, &quot;Already the axe is laid
+            at the root of the trees&quot; (Mt 3:10). It will not merely cut - what is cut sprouts
+            again - but the ax penetrates deeply, until it brings up the root. Jesus pulled out the
+            root of the whole place, while others did it only partially. As for ourselves, let each
+            one of us dig down after the root of evil which is within one, and let one pluck it out of
+            one's heart from the root. It will be plucked out if we recognize it. But if we are
+            ignorant of it, it takes root in us and produces its fruit in our heart. It masters us. We
+            are its slaves. It takes us captive, to make us do what we do not want; and what we do
+            want, we do not do. It is powerful because we have not recognized it. While it exists it
+            is active. Ignorance is the mother of all evil. Ignorance will result in death, because
+            those who come from ignorance neither were nor are nor shall be. [...] will be perfect
+            when all the truth is revealed. For truth is like ignorance: while it is hidden, it rests
+            in itself, but when it is revealed and is recognized, it is praised, inasmuch as it is
+            stronger than ignorance and error. It gives freedom. The Word said, &quot;If you know the
+            truth, the truth will make you free&quot; (Jn 8:32). Ignorance is a slave. Knowledge is
+            freedom. If we know the truth, we shall find the fruits of the truth within us. If we are
+            joined to it, it will bring our fulfillment. </p>
+          <p>At the present time, we have the manifest things of creation. We say, &quot;The strong
+            who are held in high regard are great people. And the weak who are despised are the
+            obscure.&quot; Contrast the manifest things of truth: they are weak and despised, while
+            the hidden things are strong and held in high regard. The mysteries of truth are revealed,
+            though in type and image. The bridal chamber, however, remains hidden. It is the Holy in
+            the Holy. The veil at first concealed how God controlled the creation, but when the veil
+            is rent and the things inside are revealed, this house will be left desolate, or rather
+            will be destroyed. And the whole (inferior) godhead will flee from here, but not into the
+            holies of the holies, for it will not be able to mix with the unmixed light and the
+            flawless fullness, but will be under the wings of the cross and under its arms. This ark
+            will be their salvation when the flood of water surges over them. If some belong to the
+            order of the priesthood, they will be able to go within the veil with the high priest. For
+            this reason, the veil was not rent at the top only, since it would have been open only to
+            those above; nor was it rent at the bottom only, since it would have been revealed only to
+            those below. But it was rent from the top to bottom. Those above opened to us the things
+            below, in order that we may go in to the secret of the truth. This truly is what is held
+            in high regard, (and) what is strong! But we shall go in there by means of lowly types and
+            forms of weakness. They are lowly indeed when compared with the perfect glory. There is
+            glory which surpasses glory. There is power which surpasses power. Therefore, the perfect
+            things have opened to us, together with the hidden things of truth. The holies of the
+            holies were revealed, and the bridal chamber invited us in. </p>
+          <p>As long as it is hidden, wickedness is indeed ineffectual, but it has not been removed
+            from the midst of the seed of the Holy Spirit. They are slaves of evil. But when it is
+            revealed, then the perfect light will flow out on every one. And all those who are in it
+            will receive the chrism. Then the slaves will be free and the captives ransomed.
+            &quot;Every plant which my father who is in heaven has not planted will be plucked
+            out.&quot; (Mt 15:13) Those who are separated will unite [...] and will be filled. Every
+            one who will enter the bridal chamber will kindle the light, for [...] just as in the
+            marriages which are [...] happen at night. That fire [...] only at night, and is put out.
+            But the mysteries of that marriage are perfected rather in the day and the light. Neither
+            that day nor its light ever sets. If anyone becomes a son of the bridal chamber, he will
+            receive the light. If anyone does not receive it while he is here, he will not be able to
+            receive it in the other place. He who will receive that light will not be seen, nor can he
+            be detained. And none shall be able to torment a person like this, even while he dwells in
+            the world. And again when he leaves the world, he has already received the truth in the
+            images. The world has become the Aeon (eternal realm), for the Aeon is fullness for him.
+            This is the way it is: it is revealed to him alone, not hidden in the darkness and the
+            night, but hidden in a perfect day and a holy light. </p>
+        </blockquote>
+        </blockquote>
+      </blockquote>
+    <p align="center">&nbsp;</p>
+    <p align="center">The Gospel According to Philip </p>
+   <h5 align="center">Original translation of this text was prepared by members of the <br>
+Coptic Gnostic Library Project of the Institute for Antiquity and Christianity, Claremont Graduate School.<br>
+The Coptic Gnostic Library Project was funded by UNESCO, the National Endowment for the Humanities, and other Institutions.<br>
+ E. J. Brill has asserted copyright on texts published by the Coptic Gnostic Library Project.
+      <br>
+      <br>
+The translation presented here has been edited,  modified and formatted for use in the Gnostic Society Library.<br>
+For academic citation, please refer to published editions of this text.
+</h5>
+
+    <p>&nbsp;</p>
+    <h6 align="center"><font face="Arial"><span style="background-color: rgb(224,224,224)">| <a
+    HREF="nhl.html">Nag Hammadi Library </a>| <a HREF="../library.html">Gnostic Society
+    Library </a>| <a HREF="../welcome.html">Gnosis Archive </a>|</span></font></h6>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputpgwwou" "--verify" "--" "/tmp/epg-signaturej6wSZ1" "-" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputBTh1Xk" "--verify" "--" "/tmp/epg-signaturezzfjKn" "-" "#" "<==" "emacs"
+cd /root/.emacs.d/elpa/ledger-mode-20231206.930;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"

@@ -1,0 +1,6 @@
+cd /root/.xiphos;  "ranger" "#" "<==" "zsh"
+cd /root/.config;  "ranger" "#" "<==" "zsh"
+cd /root/.sword;  "ranger" "#" "<==" "zsh"
+cd /root/.sword/modules/texts/ztext/nasb;  "ranger" "#" "<==" "zsh"
+cd /root/dump/root/notes/databases;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ranger" "#" "<==" "zsh"

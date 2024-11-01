@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Ezekiel" "37:13-15" "#" "<==" "zsh"
+cd /;  "Ezekiel" "28:15" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Ezekiel" "36:25" "#" "<==" "zsh"
+cd /;  "Ezekiel" "36:25" "#" "<==" "zsh"
+cd //;  "Ezekiel" "36:25-27" "#" "<==" "zsh"

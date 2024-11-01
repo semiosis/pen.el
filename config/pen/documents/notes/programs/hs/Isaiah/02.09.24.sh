@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Isaiah" "44:6" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Isaiah" "44:8" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Isaiah" "44:8-9" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Isaiah" "44:8" "#" "<==" "zsh"
+cd /;  "Isaiah" "1:16" "#" "<==" "zsh"
+cd //;  "Isaiah" "1:16-20" "#" "<==" "zsh"
+cd //;  "Isaiah" "1:12-17" "#" "<==" "zsh"

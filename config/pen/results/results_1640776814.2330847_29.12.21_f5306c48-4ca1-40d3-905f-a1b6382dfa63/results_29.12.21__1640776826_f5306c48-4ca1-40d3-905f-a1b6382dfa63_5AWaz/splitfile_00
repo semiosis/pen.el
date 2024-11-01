@@ -1,0 +1,13 @@
+- 1. Robert B. Reich (1947-)
+- 2. Bourdieu (1930-2000)
+- 3. Benzaquen (1973-)
+"""
+
+def load_docs(file_path):
+    doc_dict = {}
+    with open(file_path) as fp:
+        lines = fp.read().splitlines()
+
+    i = 0
+    while i < len(lines):
+        if lines[i].startswith('

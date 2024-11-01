@@ -1,0 +1,16 @@
+do
+  -- column widths
+  let cols = maximumBy (compare `on` length) rows
+
+  -- print the header
+  print $ map T.pack . head $ cols
+
+  -- print the separator
+  print $ replicate (length cols) "-"
+
+  -- print the rows
+  mapM_ (print . zipWith (zipWith pad) cols) rows
+
+pad :: String -> Int -> String
+pad s n = replicate n $ T.pack s ++ " "
+EOD

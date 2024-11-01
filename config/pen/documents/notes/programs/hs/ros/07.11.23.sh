@@ -1,0 +1,8 @@
+cd /;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "sh"
+cd /root/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "emacs"
+cd /root/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "emacs"
+cd /;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "sh"
+cd /root/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "emacs"
+cd /;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "sh"
+cd /;  "ros" "-L" "sbcl" "-Q" "-l" "/root/.sbclrc" "run" "--" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "2 John" "#" "<==" "sbcl"
+cd /;  "ros" "-L" "sbcl" "-Q" "-l" "/root/.sbclrc" "run" "--" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "II John" "#" "<==" "sbcl"

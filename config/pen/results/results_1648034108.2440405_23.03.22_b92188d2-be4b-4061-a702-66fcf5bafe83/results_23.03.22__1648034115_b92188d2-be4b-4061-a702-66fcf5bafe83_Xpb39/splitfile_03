@@ -1,0 +1,7 @@
+(let [mnt1 (atom nil)
+        ch (chan)
+        khala (atom (khala.core/create :connect ch))
+        db (atom nil)]
+    (log/info khala "/home/alan/khala/conf.ed)
+
+(defonce mnt (atom nil))

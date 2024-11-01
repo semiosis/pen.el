@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="http://excalibur.haba.dk/templates/jw_technozine/css/template_css.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+<title>Excalibur Clan - MAC AOE2 LADDER</title>
+<meta name="title" content="MAC AOE2 LADDER" />
+<meta name="author" content="Administrator" />
+<meta name="description" content="Age of Empires II Clan – Apple Macintosh" />
+<meta name="keywords" content="aoe, age of empires, mac, osx, age of conquerors, age of kings, apple" />
+<meta name="Generator" content="Joomla! - Copyright (C) 2005 - 2006 Open Source Matters. All rights reserved." />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/comment_style.css"/>
+      <script type='text/javascript'>      /*<![CDATA[*/      var jc_option           = "com_content";      var jc_autoUpdate       = "0";      var jc_update_period    = 300*1000;      var jc_orderBy          = "1";      var jc_commentForm;      var jc_livesite_busyImg = "http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif";      /*]]>*/      </script>
+<script src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/script_1_6.js?f" type="text/javascript"></script>
+<script type="text/javascript">
+var xajaxRequestUri="http://excalibur.haba.dk/index2.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=true;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_jcxLoadUserInfo(){return xajax.call("jcxLoadUserInfo", arguments, 1);}
+function xajax_jcxAddComment(){return xajax.call("jcxAddComment", arguments, 1);}
+function xajax_jcxShowSubscribeForm(){return xajax.call("jcxShowSubscribeForm", arguments, 1);}
+function xajax_jcxShowAddForm(){return xajax.call("jcxShowAddForm", arguments, 1);}
+function xajax_jcxSubscribe(){return xajax.call("jcxSubscribe", arguments, 1);}
+function xajax_jcxMoreComment(){return xajax.call("jcxMoreComment", arguments, 1);}
+function xajax_jcxUpdateComment(){return xajax.call("jcxUpdateComment", arguments, 1);}
+function xajax_jcxUnpublish(){return xajax.call("jcxUnpublish", arguments, 1);}
+function xajax_jcxEdit(){return xajax.call("jcxEdit", arguments, 1);}
+function xajax_jcxSave(){return xajax.call("jcxSave", arguments, 1);}
+	</script>
+	<script type="text/javascript" src="http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: http://excalibur.haba.dk/mambots/system/xajax_0.2.4/xajax_js/xajax.js'); } }, 6000);
+	</script>
+			<link rel="alternate" type="application/rss+xml" title="Excalibur Clan" href="http://excalibur.haba.dk/index2.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1" />
+				<link rel="shortcut icon" href="http://excalibur.haba.dk/images/favicon.ico" />
+	
+<script type="text/javascript">
+function imageHeader(selector,phpfile,wordwrap){
+	this.selector = selector;
+	this.phpfile = phpfile;
+	this.wordwrap = wordwrap;
+}
+
+var testURL = "templates/jw_technozine/images/test.png" ;
+var hideFlicker = true;
+var hideFlickerCSS = "templates/jw_technozine/css/hidden_css.css";
+var hideFlickerTimeout = 1000;
+var imageHeaders = [
+						new imageHeader("h2","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=853400&upper=true",false),
+						new imageHeader("h3","templates/jw_technozine/heading.php?font_size=12&font_color=94B3C5&background_color=111&upper=true",false),
+						new imageHeader("div.componentheading","templates/jw_technozine/heading.php?font_size=12&font_color=D15546&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.active_menu","templates/jw_technozine/heading.php?font_size=12&font_color=fff&background_color=111&upper=true",false),
+						new imageHeader("ul.mainlevel a.normal","templates/jw_technozine/heading.php?font_size=12&font_color=888&background_color=111&upper=true",false)
+						]
+</script>
+<script
+   type="text/JavaScript"
+   src="templates/jw_technozine/replacement.js">
+</script>
+
+
+</head>
+<body>
+	<a name="up" id="up"></a>
+	<div class="frame">
+		<div class="padding_outside">
+			<div class="greybox">
+				<div class="greybox_bottom_padding">
+					<div class="topnav">
+						<div class="toppath">
+							<span class="pathway"><a href="http://excalibur.haba.dk/index.php" class="pathway">Home</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" /> <a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=blogsection&amp;id=0&amp;Itemid=9" class="pathway">Blog</a> <img src="http://excalibur.haba.dk/templates/jw_technozine/images/arrow.png" border="0" alt="arrow" />   MAC AOE2 LADDER </span>						</div>
+						<div class="topright">
+													</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<div class="greybox_bottom_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_bottom">
+					<div id="logobox">
+						<div id="logoarea">
+							<div id="searcharea">
+								
+<form action="index.php?option=com_search" method="get">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="search" class="inputbox" type="text" size="20" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />	</div>
+
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="" />	
+</form>							</div>
+						</div>
+					</div>
+					<div class="padding">
+						<div class="main_header"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="greybox_bottom_padding">
+					<div class="middlenav">
+						<div class="datearea">
+							Friday, September 30 2011						</div>
+						<div id="horizmenu">
+							<ul class="mainlevel"><li><a href="http://excalibur.haba.dk/index.php?option=com_frontpage&amp;Itemid=1" class="normal">Home</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=blogsection&amp;id=0&amp;Itemid=9" class="active_menu">Blog</a></li><li><a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28" class="normal">Forum</a></li></ul>						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="mainbody">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr valign="top">
+														<td class="leftcol">
+								<div class="leftdiv">
+									<div class="firediv">
+																													</div>
+									<div class="leftmodules">
+												<div class="moduletable">
+							<h3>
+					Other Menu				</h3>
+				
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=section&amp;id=4&amp;Itemid=36" class="mainlevel" >Tutorials</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_docman&amp;Itemid=35" class="mainlevel" >Rec. Games</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=12&amp;Itemid=38" class="mainlevel" >EX Members</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_newsfeeds&amp;catid=26&amp;Itemid=37" class="mainlevel" >Mac Newsfeeds</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=category&amp;sectionid=3&amp;id=7&amp;Itemid=39" class="mainlevel" >FAQs</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_weblinks&amp;Itemid=30" class="mainlevel" >Links</a></td></tr>
+<tr align="left"><td><a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=40" class="mainlevel" >How to register</a></td></tr>
+</table>		</div>
+				<div class="moduletable">
+							<h3>
+					Recent Topics				</h3>
+				<ul class="latestnews"> <li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=506.msg5619#new">coming up with team strats</a> (14) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=194" title="View the profile of stoned_monk">stoned_monk</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=504.msg5617#new">Woohoo celebrate leo's1000th post</a> (2) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=156" title="View the profile of Puddîng">Puddîng</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=505.msg5606#new">Who fits what role?</a> (8) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=185" title="View the profile of Frozen">Frozen</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=507.0#new">Thons of good info</a> (0) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=206" title="View the profile of The_Dragon">The_Dragon</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=497.msg5591#new">im done</a> (25) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=187" title="View the profile of Jad">Jad</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=503.msg5585#new">everyone play this</a> (2) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=193" title="View the profile of Citin">Citin</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=500.msg5583#new">Rushing on Nomad</a> (7) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=193" title="View the profile of Citin">Citin</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=502.msg5580#new">Tha food chain</a> (3) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=4" title="View the profile of Leonidas">Leonidas</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=491.msg5576#new">Piss off!</a> (19) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=50" title="View the profile of Rick">Rick</a></li><li class="latestnews"><a class="latestnews" href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;topic=471.msg5575#new">1vs1 arabia_laggy_games</a> (8) by <a href="http://excalibur.haba.dk/index.php?option=com_smf&amp;Itemid=28&amp;action=profile;u=183" title="View the profile of niels">niels</a></li></ul>		</div>
+				<div class="moduletable">
+							<h3>
+					Login Form				</h3>
+					<form action="http://excalibur.haba.dk/index.php" method="post" name="login" >
+		
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td>
+			<label for="mod_login_username">
+				Username			</label>
+			<br />
+			<input name="username" id="mod_login_username" type="text" class="inputbox" alt="username" size="10" />
+			<br />
+			<label for="mod_login_password">
+				Password			</label>
+			<br />
+			<input type="password" id="mod_login_password" name="passwd" class="inputbox" size="10" alt="password" />
+			<br />
+			<input type="checkbox" name="remember" id="mod_login_remember" class="inputbox" value="yes" alt="Remember Me" />
+			<label for="mod_login_remember">
+				Remember me			</label>
+			<br />
+			<input type="submit" name="Submit" class="button" value="Login" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://excalibur.haba.dk/index.php?option=com_registration&amp;task=lostPassword">
+				Lost Password?</a>
+		</td>
+	</tr>
+		</table>
+	
+	<input type="hidden" name="option" value="login" />
+	<input type="hidden" name="op2" value="login" />
+	<input type="hidden" name="lang" value="english" />
+	<input type="hidden" name="return" value="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9" />
+	<input type="hidden" name="message" value="0" />
+	<input type="hidden" name="jc5894e5b21382c605955b84c85f2acb0" value="1" />
+	</form>
+			</div>
+				<div class="moduletable">
+							<h3>
+					Who's Online				</h3>
+				We have 1 guest online		</div>
+											</div>
+								</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+														<td class="middlecol">
+								<div class="middlediv">
+																					<table class="contentpaneopen">
+			<tr>
+								<td class="contentheading" width="100%">
+					MAC AOE2 LADDER									</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=7" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;do_pdf=1&amp;id=7','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="PDF">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/pdf_button.png"  alt="PDF" name="PDF" align="middle" border="0" /></a>
+			</td>
+							<td align="right" width="100%" class="buttonheading">
+					<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=7&amp;pop=1&amp;page=0&amp;Itemid=9" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=view&amp;id=7&amp;pop=1&amp;page=0&amp;Itemid=9','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="Print">
+						<img src="http://excalibur.haba.dk/templates/jw_technozine/images/printButton.png"  alt="Print" name="Print" align="middle" border="0" /></a>
+				</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=7&amp;itemid=9" target="_blank" onclick="window.open('http://excalibur.haba.dk/index2.php?option=com_content&amp;task=emailform&amp;id=7&amp;itemid=9','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="E-mail">
+					<img src="http://excalibur.haba.dk/templates/jw_technozine/images/emailButton.png"  alt="E-mail" name="E-mail" align="middle" border="0" /></a>
+			</td>
+						</tr>
+			</table>
+			
+		<table class="contentpaneopen">
+					<tr>
+				<td width="70%" align="left" valign="top" colspan="2">
+					<span class="small">
+						 Written by Administrator					</span>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+						<tr>
+				<td valign="top" colspan="2" class="createdate">
+					Saturday, 30 January 2010				</td>
+			</tr>
+					<tr>
+			<td valign="top" colspan="2">
+				<p><a href="http://www.lastaoeladder.com" target="_blank" title="Aoe2 ladder"><img src="http://www.lastaoeladder.com/images/medieval.jpg" alt="" width="128" height="74" /></a></p> <h3>we have a great new ladder once again!</h3><address><a href="http://www.lastaoeladder.com" target="_blank" title="Aoe2 ladder">http://www.lastaoeladder.com</a> </address><p>&nbsp;</p><div style="position: absolute; left: 428px; top: 76px; width: 100px; height: 100px">Newaye</div><p>This ladder will be split into two &quot;leagues&quot;</p><p>&nbsp;</p><p>To make this more fun, we will give $100 gift certificate (perhaps from Amazon.com) to the first player in the pro bracket to reach 2000 ranking.</p><p>&nbsp;</p><p>The second tier players will also get some incentive.&nbsp; When the top player reaches 2000, we will look at the top player in the second tier; he will get $50.</p><p>&nbsp;</p><p>The admins will decide if someone should be moved from one group to the other.</p><p>&nbsp;</p><p>TELL YOUR FRIENDS... and start practicing 1v1 <br /></p><div><br /></div><!--JOM COMMENT START-->
+<div style="display:block;clear:both;">
+    
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="80%" class="contentheading"><a name="jc_allComments" id="jc_allComments"></a>Comments (<span id="jc_numComment">28</span>)<a href="/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9#jc_writeComment"><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/images/comment_add.gif" alt="add" width="16" height="16" border="0" align="absmiddle" /></a></td>
+                <td width="2%" align="right"><a href="http://excalibur.haba.dk/index2.php?option=com_jomcomment&amp;no_html=1&amp;jc_task=rss&amp;contentid=7"><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/templates/haba/images/feed.gif" alt="feed" width="16" height="16" border="0" /></a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><div id="jc_commentsDiv"> 
+
+
+<div class="jomentry2"  id="pc_333" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=1cdb41a1a2705a4ff5d78af283d1546f&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : nou  
+		: <a rel="nofollow" href="http://www.mbt-scarpe-prezzi.com">http://www.mbt-scarpe-prezzi.com</a>
+	</div>
+	<div class="bCommentText">MBT shoes,mbt changa feel unique style of white with excellent design and exceptional comfort in a sandal brand leader in the design of each pair of shoes to fit feet are targeted more with hand-shoe technology, with to customers comfort beyond imagination. MBT sandals, soft, smooth surface, is a powerfuldailytrainingwithmbt walking shoes <br />. MBT sandals feel cool summer experience, they are committed to forging muscles will make your office or other business setting. MBT Habari sandals are new immigrants in 2010. mbt habari <br /> very stylish, cool. This will be the best choice for the summer of 2011. MBT is made by a high-quality leather Napp, comfortable and lasting effect. <br /><br/></div>
+	<div class="bCommentSmallPrint">March 01, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_340" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=11db9d4eae4dc0846952c15d0c740bea&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Slendertone : Slendertone  
+		: <a rel="nofollow" href="http://www.slendertoneoutlet.com/">http://www.slendertoneoutlet.com/</a>
+	</div>
+	<div class="bCommentText"><a rel="nofollow" href='http://www.slendertoneoutlet.com/'>Slendertone</a>, <a rel="nofollow" href='http://www.slendertoneoutlet.com/'>Flex Belt</a>, <a rel="nofollow" href='http://www.slendertoneoutlet.com/'>Abs Belt</a> or <a rel="nofollow" href='http://www.slendertoneoutlet.com/'>Massage Equipment</a> can not only lose your weight,but also keep fit and good shape.Using these massage equipments can make your life more colorful and comfortable.<br/></div>
+	<div class="bCommentSmallPrint">March 03, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_365" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=1967b90636030aea9118682fdd20dd0f&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>diesel belt : diesel belt  
+		: <a rel="nofollow" href="http://www.beltslink.com/belts/diesel-953.html">http://www.beltslink.com/belts/diesel-953.html</a>
+	</div>
+	<div class="bCommentText">Good work! Your post is an excellent example of why I keep comming back to read your excellent quality content that is forever updated <a rel="nofollow" href='http://www.beltslink.com/belts/diesel-953.html'>diesel belt</a> .<br/></div>
+	<div class="bCommentSmallPrint">April 09, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_381" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=6003fdea77ff521cb9770af7f519bc70&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>coach factory outlet : coach factory outlet  
+		: <a rel="nofollow" href="http://onlinecoachfactoryoutlets.com">http://onlinecoachfactoryoutlets.com</a>
+	</div>
+	<div class="bCommentText">Other car opened <br /> <br />A child holding a bottle in the side of the road stood a long time, then the police came and asked him: "Little man, why stand in the side of the road?" "Mom told me to come out to buy soy sauce," says child long face, "she said to wait for cars opened across the street ... I can ... " <br /> <br /><a rel="nofollow" href='http://buycheapestlv.com/'>louis vuitton handbags outlet</a> <br /><a rel="nofollow" href='http://onlinecoachfactoryoutlets.com'>coach factory outlet online</a><br/></div>
+	<div class="bCommentSmallPrint">April 18, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_389" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=d34dd1f7f709a62546c7ceb858d79152&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>http://www.juicycoutures-outlets.com : juicycoutures  
+		: <a rel="nofollow" href="http://www.juicycoutures-outlets.com">http://www.juicycoutures-outlets.com</a>
+	</div>
+	<div class="bCommentText">juicy couture, as one of the world most popular brands, famous for perfect quality and its modern fashion in styles and colors. juicy couture outlet displays the latest items of juicy couture tracksuits with most preferential factory wholesale price at the present. I promise you have never experienced such a big excitement!<br/></div>
+	<div class="bCommentSmallPrint">April 25, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_390" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=d34dd1f7f709a62546c7ceb858d79152&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : ralphlauren  
+		: <a rel="nofollow" href="http://www.ralphlaurens-outlet.com">http://www.ralphlaurens-outlet.com</a>
+	</div>
+	<div class="bCommentText">Ralph Lauren Polo 2011 hot sale offers a good opportunity to order your favorite Ralph Lauren. Ralph Lauren polo shirts shirts of high fashion and top range quality will never go out of modern trend. Order Ralph Lauren online shop, enjoy great discount and free shipping.<br/></div>
+	<div class="bCommentSmallPrint">April 25, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_402" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=62c399e78fff6f133fe9cad2891c2321&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : oneearth234  
+		: <a rel="nofollow" href="http://www.juicycoutureoutlet-us.com/">http://www.juicycoutureoutlet-us.com/</a>
+	</div>
+	<div class="bCommentText">Come here <a rel="nofollow" href='http://www.juicycoutureoutlet-us.com/'>Juicy Couture Outlet</a>! There have <a rel="nofollow" href='http://www.juicycoutureoutlet-us.com/juicy-couture-handbags-c-2.html'>Juicy Couture Bags</a> and <a rel="nofollow" href='http://www.juicycoutureoutlet-us.com/juicy-couture-diaper-handbags-c-8.html'>Juicy Couture Diaper Bag</a> with soft leather, charming style, beautiful color will make you crazy. The delicate handbag of Juicy Couture Sale is my best birthday present that i received.<br/></div>
+	<div class="bCommentSmallPrint">April 27, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_414" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=4ebbd4e0d10edf00db6e39a549ac06f9&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>http://www.uscheapnfljerseys.com/ : nfl jerseys  
+		: <a rel="nofollow" href="http://www.uscheapnfljerseys.com/">http://www.uscheapnfljerseys.com/</a>
+	</div>
+	<div class="bCommentText"><a rel="nofollow" href='http://www.uscheapnfljerseys.com/'>http://www.uscheapnfljerseys.com/</a> <br />http://www.uscheapnfljerseys.com/cheap-nfl-jerseys<br/></div>
+	<div class="bCommentSmallPrint">May 12, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_425" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=064fa341ef33a3ec1eb0da02d51205b8&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : dgvsd  
+		
+	</div>
+	<div class="bCommentText"> <br />I found a hot place to share with you, there are lots of High quality designer  <br /> <br />handbags with low price are all here!^_^ <br />Wow, I would like to recommend a very good place for you,There are so many  <br /> <br />fashion items you need and all the big brand you love on =======^_^(mygoodbag) <br /> <br />^_^========== Like: Louis Vuitton Chanel Gucci Burberry Chloe Hermes Prada Fendi  <br /> <br />etc.There are all in <a rel="nofollow" href='http://www.bingstore.us/'>http://www.bingstore.us/</a> &amp; <a rel="nofollow" href='http://www.bingstore.us/'>http://www.bingstore.us/</a><br/></div>
+	<div class="bCommentSmallPrint">May 16, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_432" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=cf959443d5face0e1c573fe6a7f04cfb&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : lemon_hui  
+		
+	</div>
+	<div class="bCommentText">Xilisoft  video converter for mac is a feature-rich video converter that supports converting between virtually all video (including high-definition (HD)) and audio formats such as AVI, MPEG, WMV, DivX, MP4, H.264/AVC, MOV, MP3, WMA, MP2, FLAC, APE, OGG, AAC, M4A, WAV and AC3. No longer will you have to worry about files not being compatible with your favorite multimedia devices, Xilisoft Video Converter for Mac makes most media files playable on the PSP, iPod, PS3, iPhone, iPad2, Apple TV, Zune, mobile phones as well as many others. <br />This Mac video converter can also extract audio from videos, batch-capture images from movies and create videos from pictures. In addition, Xilisoft Video Converter for Mac offers numerous ways to customize your files: clip and split them, merge them with transitions added, crop video image, add watermarks, soundtracks and artistic effects to them. Download Xilisoft Video Converter for Mac FREE and experience seamless multimedia conversion on your Mac. <br />&#8226; Convert virtually all video formats including HD videos <br />&#8226; Extract audio from video files; convert between different audio formats <br />&#8226; Makes different format files compatible with popular multimedia devices <br />&#8226; Batch-capture images from videos; create videos from pictures <br /> <br />http://www.xilisoft.com/video-converter-mac.html <br /><br/></div>
+	<div class="bCommentSmallPrint">May 17, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_434" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=acff76d4f298ca9877ba639547a112b4&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : Juicy Couture Outlet  
+		: <a rel="nofollow" href="http://www.myjuicycouturesoutlet.com">http://www.myjuicycouturesoutlet.com</a>
+	</div>
+	<div class="bCommentText">With graceful designs and multiple colors, <a rel="nofollow" href='http://www.juicycoutures-outlets.com'>juicy couture handbags</a> and <a rel="nofollow" href='http://www.juicycoutures-outlets.com'>juicy couture tracksuits</a>, which won most reputation and popularity in last several years, continue to provide 100% satisfaction to our customers. New season styles and discount price are offered at <a rel="nofollow" href='http://www.juicycoutures-outlets.com'>juicy couture sale</a> online. Free shipping is also available now!<br/></div>
+	<div class="bCommentSmallPrint">May 17, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_443" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=74c2ffc4a09e727053891cd1586f4dc3&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>nike dunks : nike dunks  
+		: <a rel="nofollow" href="http://nikessbdunk.com/">http://nikessbdunk.com/</a>
+	</div>
+	<div class="bCommentText">But <a rel="nofollow" href='http://nikessbdunk.com/nike-women-sb-dunk-high-en.html'>nike dunk high for women</a> I think I would prefer it if they said, above all, he <a rel="nofollow" href='http://nikessbdunk.com/kids-nike-dunk-high.html'>kids nike dunks</a> was my friend.<br/></div>
+	<div class="bCommentSmallPrint">May 19, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_478" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=ea461d41db8c7e2283c04fe320c661b8&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : dhgfvhgfv  
+		
+	</div>
+	<div class="bCommentText"> <br /> <br /> <br />Bik <br />Hi,Dear Ladies and Gentlemen, === <a rel="nofollow" href='http://www.bingstore.us'>http://www.bingstore.us</a> ==== Here are the mos <br /> <br />popular, most stylish and avant-garde <br /> <br />shoes,handbags,Tshirts, jacket,Tracksuit w <br /> <br />ect&#8230;NIKE ,50%off ca,ed hardy t-shirt$15 jeans,coach handbag$33,air max90,dunk,polo t-shirt$13,,lacoste t-shirt $13 air jordan for sale,$35,nfl nba jersy for sale <br /> <br />puma gucci$35,nike jordans six ring,yeezy$%5!! <br /> <br />new era caps$13 gucci handbags jeans,t-shirts sunglass,caps <br /> <br />true religion jeans$35,ca,ed hardy jeans$35 <br /> <br />LV,CHANAL,HANDBAGS$35 <br /> <br />NIKE SHOX+AIR MAX+TL3+OZ+NZ ONLY $35 <br /> <br />UGG TIMBLAND+LACOSTE SHOES+ED HARDY SHOES$35 <br /> <br />DIESEL T-SHIRT,GSTAR T-SHIRT,CA T-SHIRT,50% OFF FOR SALE $15 <br /> <br />DIOR SUNGLASS,DG SUNGLASS$15 <br /> <br />our website: ===== <a rel="nofollow" href='http://www.bingstore.us'>http://www.bingstore.us</a> =====ni (Ed hardy,) $18 <br /> <br />http://www.bingstore.us <br /> <br /><br/></div>
+	<div class="bCommentSmallPrint">May 26, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_483" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=7c61690010a7505d3a774d3d64e229da&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : guccibags  
+		: <a rel="nofollow" href="http://www.luxuryguccistore.com">http://www.luxuryguccistore.com</a>
+	</div>
+	<div class="bCommentText"><a rel="nofollow" href='http://www.luxuryguccistore.com'>[b] Gucci [/b]</a>, as one of the world most popular brands, famous for perfect quality and its modern fashion in styles and colors. <a rel="nofollow" href='http://www.luxuryguccistore.com'>[b] Gucci outlet [/b]</a> displays the latest items of <a rel="nofollow" href='http://www.luxuryguccistore.com'>[b] Gucci Handbags [/b]</a> with most preferential factory wholesale price at the present. I promise you have never experienced such a big excitement!<br/></div>
+	<div class="bCommentSmallPrint">May 30, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_519" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=1adb13e2c06bd7bbac453ceb6e535402&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : mulberry alexa bags  
+		: <a rel="nofollow" href="http://www.mulberryalxeabagsoutlet.com/">http://www.mulberryalxeabagsoutlet.com/</a>
+	</div>
+	<div class="bCommentText">[Deutsche Presse-Agentur New York, July 1 (Xinhua) - Today, the   <a rel="nofollow" href='http://www.mulberrybagssale.co.uk/'>mulberry bags</a> International Monetary Fund (IM F) former Managing Director Dominique Strauss -   Kahn alleged sexual assault case began to collapse, <a rel="nofollow" href='http://www.ukmulberrybags.com/'>mulberry handbags</a> the New York State Court   announced the release of Kahn, from house arrest, the prosecutor acknowledged   the credibility of the plaintiff's serious problems. 62-year-old Kahn, a <a rel="nofollow" href='http://www.alexamulberrybag.com/'>mulberry alexa</a> hand on   his wife on his shoulders, face out of court with a shy smile. The couple got   into a car and quickly left. Judge Michael <a rel="nofollow" href='http://www.mulberrybagsuksale.com/'>mulberry bags</a> Omar Jacobs agreed to waive the   prosecution's request for bail French politician. Over the past month, Kahn was   under house arrest in a luxury apartment, wearing electronic <a rel="nofollow" href='http://www.ukmulberrybags.com/mulberry-antony-handbags-c-66.html'>mulberry antony messenger bag</a> shackles, armed   guards outside. After the court decision to release Kahn, Cyrus Vance admitted   the Manhattan district attorney, the prosecution stated that <a rel="nofollow" href='http://www.ukmulberrybags.com/mulberry-holdall-handbags-c-71.html'>holdall bags</a> the plaintiff's   vulnerability. This change makes the case a dramatic turning point. Kahn, the   French influence sexual <a rel="nofollow" href='http://www.mulberrybagssale.co.uk/mulberry-bayswater-bags-sale-c-67.html'>mulberry bayswater</a> assault case, the expected presidential election   process, forcing the world's most influential bankers resigned the post of   president of IM F, and triggered a powerful <a rel="nofollow" href='http://www.mulberrybagsuksale.com/mulberry-alexa-bags-c-77.html'>alexa mulberry bags</a> figure on sexual harassment and   sexual abuse controversy. The plaintiff was a waitress, her lawyer protested the   release of Thompson Kahn, Kahn insisted that the plaintiff suffered <a rel="nofollow" href='http://www.uggsalecanada.com/'>ugg canada</a> a sexual   assault. The waitress was originally said on May 14, the so-called sexual   assault after the incident, she immediately <a rel="nofollow" href='http://www.monclerjacketsuksale.com/'>moncler uk</a> reported the boss. But then she   admitted that this argument is wrong, sexual assault incidents in 2806 occurred   after the room, she went to clean the <a rel="nofollow" href='http://www.uggsalecanada.com/ugg-bailey-button-boots-c-65.html'>bailey button ugg</a> next room, then came back clean room 2806,   since which time the report boss.ZZQ0706<br/></div>
+	<div class="bCommentSmallPrint">July 07, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_538" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=d40848c04e419c290908eae6a7736b10&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Coach Bags : Juicy Couture Outlet  
+		: <a rel="nofollow" href="http://www.juicycoutureoutlets-us.com">http://www.juicycoutureoutlets-us.com</a>
+	</div>
+	<div class="bCommentText">Buy discount coach handbags and <a rel="nofollow" href='http://www.coachoutlet-sales.com/coach-purses-c-7.html'>Coach Purses</a> sale from <a rel="nofollow" href='http://www.coachoutlet-sales.com'>Coach Outlet</a> store online,we offer elegant and fashion coach free shipping and fast delivery.Coach women's handbags were made out of sturdy cowhide, which was of much better quality than many other bags.<br/></div>
+	<div class="bCommentSmallPrint">July 11, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_539" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=d40848c04e419c290908eae6a7736b10&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Juicy Couture Handbags : Juicy Couture Handbags  
+		: <a rel="nofollow" href="http://www.juicycoutureoutlets-us.com">http://www.juicycoutureoutlets-us.com</a>
+	</div>
+	<div class="bCommentText">You can find a number of different styles in our online <a rel="nofollow" href='http://www.juicycoutureoutlets-us.com'>Juicy Couture Outlet</a> store and if you're looking for <a rel="nofollow" href='http://www.juicycoutureoutlets-us.com'>Cheap Juicy Couture</a> then you'll probably be able to find something which suits you and your style. Cheap Juicy Couture welcome you!<br/></div>
+	<div class="bCommentSmallPrint">July 11, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_545" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=c1b27c0705b7c1f26a53b96f7f59b93d&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>http://www.cheaphatssale.com : Minnesota Twins Hats  
+		: <a rel="nofollow" href="http://www.cheaphatssale.com">http://www.cheaphatssale.com</a>
+	</div>
+	<div class="bCommentText">Have you ever been on a farm <a rel="nofollow" href='http://www.smallb2c.com/cheap-Big-Size-Jordan-Shoes-c-1302.html'>Big Size Jordan Shoes</a> ? Can you tell the difference between a field of soybeans and a field of watermelon plants? Do you know that pivot irrigation doesn?t mean your tractor sprinkler made a sharp turn in the hose? If you said no to one or more of these questions, you may be a city slicker and you may need my help <a rel="nofollow" href='http://www.cheaphatsale.com/category/cid-wholesale-the-hundreds-hats.html'>The Hundreds Hats</a> .<br/></div>
+	<div class="bCommentSmallPrint">July 21, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_563" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=7e263413e5c2a96d8eddf932875dcae6&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>asdg : Moncler Outlet  
+		: <a rel="nofollow" href="http://www.moncleroutlet-stores.com">http://www.moncleroutlet-stores.com</a>
+	</div>
+	<div class="bCommentText">Recently, <a rel="nofollow" href='http://www.moncleroutlet-stores.com/'>Moncler Doudoune</a> after walking fashion <a rel="nofollow" href='http://www.moncleroutlet-stores.com/'>Moncler Jackets</a>-modified routes, <a rel="nofollow" href='http://www.moncleroutlet-stores.com/'>Moncler Outlet</a> down is no longer patent of winter clothing, fashion child in hot weather wearing Down and there are many examples of. <a rel="nofollow" href='http://www.moncleroutlet-stores.com/'>Moncler Outlet Online</a> has caught up with this craze, this season introduced different material design of <a rel="nofollow" href='http://www.moncleroutlet-stores.com/'>Moncler Sale</a> Down Jacket, more Super warm function apart from both light and thin, and the price is reasonable.  <br /><br/></div>
+	<div class="bCommentSmallPrint">July 26, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_579" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=35ae37b7e860b99cc21817a1a5b516c1&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>mbt : mbt  
+		
+	</div>
+	<div class="bCommentText">In general, MBT shoes colorful bold and courageous, the past few shoes and MBT shoes drab colors, red, white, blue, <a rel="nofollow" href='http://www.outletmbtscarpe.com'>[b] mbt zapatos [/b]</a>yellow, black and other colored scene, the traditional two-color stripe in the retained basis with , further broadening the multi-colored, <a rel="nofollow" href='http://www.noimbt-arakmbt.com/'>[b] mbt cip&#337;k [/b]</a> multi-format with. Pure gold running shoes sports fans will not want to come head of Health, as Nike once for Michael Johnson and Liu Xiang has carefully built over the golden shoes, the whole pair of shoes covered with gold like the golden armor holy warriors, the king quite style. MBT shoes champion solid days of the go, <a rel="nofollow" href='http://www.outletmbtcipo.com/'>[b] mbt cip&#337; [/b]</a> with two-color or multi-color mix of MBT shoes are also popular with consumers. Different color schemes show different styles: pink and black mix of gentle and calm; black and white mix, showing bright personality; <a rel="nofollow" href='http://www.outletmbtchaussures.com/'>[b] mbt chaussures [/b]</a>pink and black mix of lively and lovely. MBT sneakers and casual style is a combination of simple style, vigor, and is passionate style of MBT shoes and the inner function, strong, dynamic rhythm more highlights an independent self-confident style. However, undoubtedly the most dazzling golden color.<br/></div>
+	<div class="bCommentSmallPrint">July 29, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_590" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=6bf93387760dec9fec75fe5a674c799c&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : nike shox clearance  
+		: <a rel="nofollow" href="http://www.shoxs.cc/">http://www.shoxs.cc/</a>
+	</div>
+	<div class="bCommentText">You&#8217;re so talented in writing. God is really using you in miraculous ways. You are doing a great job! This was an awesome blog!<br/></div>
+	<div class="bCommentSmallPrint">August 02, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_591" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=6bf93387760dec9fec75fe5a674c799c&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : shox shoes  
+		
+	</div>
+	<div class="bCommentText">good writing and interesting, thanks! Do you like the <a rel="nofollow" href='http://www.shoxs.cc/'>nike shox shoes</a>? now we have a good deal with you, our web has <a rel="nofollow" href='http://www.shoxs.cc/nike-shox-nz-c-77.html'>nike shox nz</a>, nike shox r4 for every nike lover. <br/></div>
+	<div class="bCommentSmallPrint">August 02, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_592" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=6bf93387760dec9fec75fe5a674c799c&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : nike shox  
+		
+	</div>
+	<div class="bCommentText">i was looking for crucial information on <a rel="nofollow" href='http://www.cheapshox.org/'>nike shox nz</a>. The information was <br />important as I am about to launch my own portal. Thanks for providing a missing link in my business.<br/></div>
+	<div class="bCommentSmallPrint">August 02, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_593" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=6bf93387760dec9fec75fe5a674c799c&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : womens air max 90  
+		
+	</div>
+	<div class="bCommentText">good writing and interesting, thanks! Do you like the <a rel="nofollow" href='http://www.nikeairmax90s.com/'>air max shoes</a>? now we have a good deal with you, our web has <a rel="nofollow" href='http://www.nikeairmax90s.com/nike-air-max-90-c-6.html'>air max 90</a>,<a rel="nofollow" href='http://www.nikeairmax90s.com/nike-air-max-95-c-17.html'> air max 95</a> for every puma lover. <br/></div>
+	<div class="bCommentSmallPrint">August 02, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_597" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=f91c5b9f571eb3514f1d1655b74fd106&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>Coach Outlet Online : wowdota  
+		: <a rel="nofollow" href="http://www.coachfactoryoutlets-stores.com/">http://www.coachfactoryoutlets-stores.com/</a>
+	</div>
+	<div class="bCommentText">Beauty-women always choose their favorite Bag from the <a rel="nofollow" href='http://www.coachfactoryoutlets-stores.com/'>Coach Outlet Stores</a>. Now, It's very easy for getting Coach purses, because generally there many purchasing <a rel="nofollow" href='http://www.coachfactoryoutlets-stores.com/'>Coach Outlet</a> featuring a varied choice of Coach products to pick from our <a rel="nofollow" href='http://www.coachfactoryoutlets-stores.com/'>Coach Outlet Online</a> store. Shopping at our <a rel="nofollow" href='http://www.coachfactoryoutlets-stores.com/'>Coach Outlet Store Online</a> can help you save much money. Here are some suggestions for you when you shop at <a rel="nofollow" href='http://www.coachfactoryoutlets-stores.com/'>Coach Outlet Store</a>.<br/></div>
+	<div class="bCommentSmallPrint">August 05, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_632" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=05d802ef36dcac53128c4973079f9391&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>UGG BOOTS : wuxuming  
+		
+	</div>
+	<div class="bCommentText"><a rel="nofollow" href='http://www.bootsuk-sales.com'>Ugg Boots</a> Online: a website for finding 100% genuine <a rel="nofollow" href='http://www.bootsuk-sales.com'>Ugg Boots</a>. Unlike other sites, I am not trying to trick you into thinking I have the real deal. I pass on great information so you can decide what kind of Ugg boots you want. Such as, where are the best places to find information on <a rel="nofollow" href='http://www.bootsuk-sales.com'>Ugg Boots sale</a>, how to spot the fake <a rel="nofollow" href='http://www.bootsuk-sales.com'>ok Ugg boots uk</a> and I point you in the direction to get the 100% authentic Ugg Australian Boots.Debenhams,<a rel="nofollow" href='http://www.bootsuk-sales.com/ugg-gloves-c-85.html'>Ugg gloves</a>,<a rel="nofollow" href='http://www.bootsuk-sales.com/ugg-classic-mini-boots5854-c-58.html/'>UGG Classic Mini Boots</a>,<a rel="nofollow" href='http://www.bootsuk-sales.com/ugg-classic-tall-boots5815-c-64.html/'>UGG Classic Tall Boots</a>,<a rel="nofollow" href='http://www.bootsuk-sales.com/ugg-jimmy-choo-boots-c-66.html/'>Ugg Jimmy Choo Boots</a>.Ugg Boots for Less Price Ugg Boots Wholesale,Amazon UK. UGG footwears are may regarding flung burning ashiontummyle footwear.http://www.bootsuk-sales.com.<br/></div>
+	<div class="bCommentSmallPrint">September 01, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry2"  id="pc_641" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=05d802ef36dcac53128c4973079f9391&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>oilnjmla : wuxuming  
+		
+	</div>
+	<div class="bCommentText">If you are a fan of fashion,you may have the trouble that what you can wear in cold winter,not only warm but fashional, <br /><a rel="nofollow" href='http://www.downuk.net'>Moncler Jackets</a> solve this problem for you with it's feature,the  <br /><a rel="nofollow" href='http://www.downuk.net'>Moncler Jackets uk</a> will become your best friend in cold winter. You can find the fashion <a rel="nofollow" href='http://www.downuk.net/moncler-men-jackets-c-86.html'>Moncler Men Jackets</a>,<a rel="nofollow" href='http://www.downuk.net/moncler-women-jackets-c-91.html'>Moncler Women Jackets</a>,<a rel="nofollow" href='http://www.downuk.net'>Moncler down Jackets</a>,Moncler kids Jackets,Moncler Handbags,Moncler Boots,Moncler Accessories,Moncler T Shirts,Moncler Polo Shirts in our shop.If you are a fan of fashion,you may have the trouble that what you can wear in cold winter,not only warm but fashional,Moncler Jackets solve this problem for you with it's feature,the Moncler Jackets will become your best friend in cold winter. <a rel="nofollow" href='http://www.downuk.net'>Moncler Jackets sale</a> in our shop.http://www.downuk.net/<br/></div>
+	<div class="bCommentSmallPrint">September 01, 2011</div>
+</div>
+
+ 
+
+
+<div class="jomentry1"  id="pc_654" >
+	<div class="bCommentTitle"><div class="avatarImg"><img src="http://www.gravatar.com/avatar.php?gravatar_id=14147547872c70889ac14c6c292c89b7&amp;default=http%3A%2F%2Fexcalibur.haba.dk%2Fmambots%2Fcontent%2Fpcajaxcomment%2Fsmilies%2Fguest.gif&amp;size=40 " width="40"  height="40"  alt="" border="0"/></div>... : The North Face  
+		: <a rel="nofollow" href="http://www.outdoorjackets-outlet.com">http://www.outdoorjackets-outlet.com</a>
+	</div>
+	<div class="bCommentText">North Face Jackets sale at our <a rel="nofollow" href='http://www.outdoorjackets-outlet.com'>[b]The North Face[/b]</a> could be nice companions for you in the cold winter. As an official supplier of <a rel="nofollow" href='http://www.outdoorjackets-outlet.com'>[b]North Face Outlet[/b]</a>, we only sell the 100% authentic quality North Face Outlet jacktes in the most popular styles.<br/></div>
+	<div class="bCommentSmallPrint">September 13, 2011</div>
+</div>
+
+</div>
+		  
+	</td>
+        </tr>
+      </table>
+      <div id="jc_commentsDivContainer">
+        <table width="100%"  border="0" cellspacing="2" cellpadding="2">
+          <tr>
+            <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="contentheading"><a name="jc_writeComment" id="jc_writeComment"></a>Write comment</td>
+              </tr>
+            </table>
+              
+			  </td>
+          </tr>
+        </table>
+		<div id="jc_busyDiv"></div>
+			<div id="jc_commentFormDiv" >
+			<div class="jomentry2">
+			<form method="post" onsubmit="return false;" action="" id="jc_commentForm">
+			        
+                    <div> 
+                        <label for="jc_name">Name</label> 
+                        <input name="jc_name" type="text" id="jc_name" value=""/> 
+                    </div> 
+                    
+                    
+                    <div> 
+                        <label for="jc_email">Email</label> 
+                        <input name="jc_email" type="text" id="jc_email"/> 
+                    </div> 
+                     
+					
+					<div>
+						<label for="jc_website">Website</label>
+						<input name="jc_website" type="text" id="jc_website" />
+					</div>
+					
+					
+					<div>
+						<label for="jc_title">Title</label>
+						<input name="jc_title" type="text" id="jc_title" />
+					</div>
+					
+					<div>
+						<label for="jc_comment">Comment</label>
+						
+							<div><div id="bb_container"><div id="bb_main"><div class="bb_item bb_itemImg" style="width:13px;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bbcode_front.gif" alt="quote" border="0"/></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[b]', '[/b]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bold.gif" alt="bold" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[i]', '[/i]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/italicize.gif" alt="italicize" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[u]', '[/u]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/underline.gif" alt="underline" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[s]', '[/s]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/strike.gif" alt="strike" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[url]', '[/url]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/url.gif" alt="url" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[img]', '[/img]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/img.gif" alt="image" border="0"/></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="encloseText('[quote]', '[/quote]', xajax.$('jc_comment')); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/quote.gif" alt="quote" border="0"/></a></div><div class="bb_item bb_itemImg" style="width:13px;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/bbcode_front.gif" alt="quote" border="0"/></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/smiley-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' ;)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/wink-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :D', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cheesy-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' ;D', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/grin-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' >:(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/angry-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/sad-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :o', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/shocked-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' 8)', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cool-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :P', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/tongue-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :-\\', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/undecided-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :-*', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/kiss-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div><div class="bb_item"><a href="javascript:void(0);" tabindex="-1" onclick="jc_addText(' :\'(', 'jc_comment'); return false;"><img class="bb_itemImg" src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/smilies/cry-toolbar.gif" alt="Smiley" title="Smiley" border="0" /></a></div></div></div></div>
+						
+						<textarea name="jc_comment" rows="6" id="jc_comment" ></textarea>
+					</div>
+					
+                    
+					<div><p><img src="http://excalibur.haba.dk/index2.php?option=com_jomcomment&amp;jc_task=img&amp;jc_sid=wNVcYpSQWF9qGyUEVAaL8T0VrrCkWR7JL0Ga27WfemM3gzxG1hntHhAYKAiG2Ezl" id="jc_captchaImg" name="jc_captchaImg" border="1" style="vertical-align:middle" /><br />Write the displayed characters</p></div> 
+					<div><input name="jc_password" type="text" id="jc_password" size="8" maxlength="8"   class="inputting"/></div>
+					
+					
+					<div><button id="jc_submit" onclick="addComments()" >Add Comment</button></div>
+					
+					<input name="jc_contentid" type="hidden" id="jc_contentid" value="7"/>
+                    <input name="jc_sid" type="hidden" id="jc_sid" value="wNVcYpSQWF9qGyUEVAaL8T0VrrCkWR7JL0Ga27WfemM3gzxG1hntHhAYKAiG2Ezl" />
+                    <input name="jc_task" type="hidden" id="jc_task" value="add" />
+                    <input name="jc_isajax" type="hidden" id="jc_isajax" value="0" />
+                    <input name="jc_option" type="hidden" id="jc_option" value="com_content"/>
+			</form>
+            </div>
+			</div>
+		</div>
+    
+  
+  </div>
+<br/><div style="text-align:center;"><a target="_blank" href="http://www.azrul.com">Powered by Azrul&#39;s Jom Comment</a></div><script type='text/javascript'> if(xajaxLoaded) {xajax_jcxLoadUserInfo(readCookie('jc_name'),readCookie('jc_email'),readCookie('jc_website'));}</script><img src="http://excalibur.haba.dk/mambots/content/pcajaxcomment/busy.gif" alt="busy" style="visibility:hidden;display:none;"/><!--JOM COMMENT END-->			</td>
+		</tr>
+					<tr>
+				<td colspan="2" align="left" class="modifydate">
+					Last Updated ( Sunday, 24 July 2011 )
+				</td>
+			</tr>
+					</table>
+		
+		<span class="article_seperator">&nbsp;</span>
+		
+					<table align="center" style="margin-top: 25px;">
+			<tr>
+									<th class="pagenav_prev">
+						<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=40&amp;Itemid=9">
+							&lt; Prev</a>
+					</th>
+										<td width="50">&nbsp;
+
+					</td>
+										<th class="pagenav_next">
+						<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=9">
+							Next &gt;</a>
+					</th>
+								</tr>
+			</table>
+						<div class="back_button">
+				<a href='javascript:history.go(-1)'>
+					[ Back ]</a>
+			</div>
+											</div>
+							</td>
+														<td class="rightcol">
+								<div class="rightdiv">
+																													<div class="moduletable">
+							<h3>
+					Latest News				</h3>
+				<ul class="latestnews">
+	<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=51&amp;Itemid=36" class="latestnews">
+			Quick Guide to becoming decent (DM GUIDE) by Halt</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=50&amp;Itemid=36" class="latestnews">
+			Quick Guide To being Decent</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=48&amp;Itemid=36" class="latestnews">
+			THE SLING</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=47&amp;Itemid=36" class="latestnews">
+			Drush FC with huns</a>
+	</li>
+		<li class="latestnews">
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=view&amp;id=46&amp;Itemid=36" class="latestnews">
+			 DM attacking guide</a>
+	</li>
+	</ul>		</div>
+				<div class="moduletable">
+							<h3>
+					Archive				</h3>
+				<ul>
+	<li>
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=archivecategory&amp;year=2006&amp;month=09&amp;module=1">
+			September, 2006</a>
+	</li>
+		<li>
+		<a href="http://excalibur.haba.dk/index.php?option=com_content&amp;task=archivecategory&amp;year=2006&amp;month=01&amp;module=1">
+			January, 2006</a>
+	</li>
+	</ul>		</div>
+										</div>
+								<img src="http://excalibur.haba.dk/templates/jw_technozine/images/spacer.png" alt="spacer.png, 0 kB" title="spacer" class="" height="1" width="198" /><br />
+							</td>
+													</tr>
+					</table>	
+				</div>
+				<div class="greybox_top_padding">
+					<div class="color_seperator"></div>
+				</div>
+				<div class="greybox_top_padding">
+					<div class="topnav" id="footer">
+						<div class="syndicate">
+			<div align="center">
+			<a href="http://excalibur.haba.dk/index.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1">
+				<img src="http://excalibur.haba.dk/images/M_images/rss20.gif"  alt="RSS 2.0" name="RSS20" align="middle" border="0" /></a>
+		</div>
+		</div></div>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- 1317381308 -->

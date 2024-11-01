@@ -1,0 +1,9 @@
+
+
+There was a cock that crowed in the morn that woke the sisters up all in
+one: and so they began their day with a fall.
+"""
+
+
+def diff_block(before, after):
+    return

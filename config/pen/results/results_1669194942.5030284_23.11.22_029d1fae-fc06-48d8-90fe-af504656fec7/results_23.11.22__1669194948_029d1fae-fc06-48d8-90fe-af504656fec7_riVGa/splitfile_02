@@ -1,0 +1,7 @@
+
+
+
+That's right, just a single argument—what else are we going to do with it?
+
+The sin function doesn't use any other variables, so the instruction
+"return the tangent of the argument" could just as well

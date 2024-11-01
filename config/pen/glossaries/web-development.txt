@@ -1,0 +1,20 @@
+websocket
+    Basically a two way connection between a
+    client and server.
+    
+    You would typically encounter one in any
+    use case when you would want the server to
+    send data to the browser without the
+    browser requesting it first.
+
+progressive enhancement
+    A more sophisticated and at the same time
+    stable way of assuring that
+    
+    but it takes more time and effort.
+
+graceful degradation
+    Can be used more easily as a patch for an
+    already existing product; it means harder
+    maintenance later on, but requires less
+    initial work.

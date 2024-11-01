@@ -1,0 +1,42 @@
+type
+    [keyword]
+
+    v +/"type PathLike = string | Buffer | URL;" "$HOME/node_modules/@types/node/fs.d.ts"
+    v +/"type TypedArray = Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array | Float32Array | Float64Array;" "$HOME/node_modules/@types/node/globals.d.ts"
+
+namespace
+Internal modules
+    v +/"namespace promises {" "$HOME/node_modules/@types/node/fs.d.ts"
+
+module
+mxternal module
+
+export
+    The namespace keyword is used in
+    conjuction with export.
+
+    We want the interfaces and classes here to
+    be visible outside the namespace, we
+    preface them with export.
+    
+    Conversely, the variables lettersRegexp
+    and numberRegexp are implementation
+    details, so they are left unexported and
+    will not be visible to code outside the
+    namespace.
+
+    ewwlinks +/"namespace Validation {" "https://www.typescriptlang.org/docs/handbook/namespaces.html"
+
+interface
+    One of TypeScript’s core principles is
+    that type checking focuses on the shape
+    that values have.
+    
+    This is sometimes called “duck typing” or
+    “structural subtyping”.
+    
+    In TypeScript, interfaces fill the role of
+    naming these types, and are a powerful way
+    of defining contracts within your code as
+    well as contracts with code outside of
+    your project.

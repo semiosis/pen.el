@@ -1,0 +1,13 @@
+"table.iloc" is a pandas function that allows us to select rows and columns by number.
+
+In [38]: table.iloc[0]
+Out[38]: 
+Aggressive Humour[1]                                                                                                            
+
+In [39]: table.iloc[0, 1]
+Out[39]: 1
+
+In [40]: table.iloc[0, 0]
+Out[40]: 'Aggressive Humour'
+
+In [

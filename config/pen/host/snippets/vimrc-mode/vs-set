@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: set
+# group: vimsnippet
+# key: vs-set
+# --
+set ${1:setting} = ${0:value}

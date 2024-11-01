@@ -1,0 +1,6 @@
+
+arr+=("$(p "$path" | sed 's/^\(.*\)$/\1/')")
+
+# append the rest of the items to it
+while read -r line; do
+    arr

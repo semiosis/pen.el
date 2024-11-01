@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: advise-to-save-excursion
+# group: advice
+# key: ade
+# --
+(advice-add '$1 :around #'advise-to-save-excursion)

@@ -1,0 +1,12 @@
+cd 'harrys adventures'
+» ls
+ harry.txt
+» pwd
+/root/notes/harrys adventures
+» cd ..
+» pwd
+/root/notes
+» cd 'harrys adventures'
+» ls -l harry.txt
+-rw-r--r-- 1 root root 0 Apr  7  2018 harry.txt
+» cat harry.txt | grep -i 'harry' | wc -

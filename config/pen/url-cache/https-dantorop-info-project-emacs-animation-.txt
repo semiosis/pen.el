@@ -1,0 +1,104 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Sat, 17 Feb 2024 00:46:10 GMT
+Cache-Control: max-age=14400, public
+Last-Modified: Fri, 05 Jan 2024 19:05:26 GMT
+ETag: W/"4b4e9147d0643ed50eeca4af4a20a2eb"
+Server: AmazonS3
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 ee04ad259df5ebe5cd4930f5e2241ff0.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: AKL50-C1
+X-Amz-Cf-Id: 5T6ep6YZhcWHdcHXGpyST8cbDfGWImOy-PMifrSJ2hEvKnd77uC1Fg==
+Age: 13704
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+
+<title>Emacs Lisp Animations | Digital | Dan Torop</title>
+
+
+<link rel="stylesheet" href="/static/cache/css/output.5336a4529821.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/static/cache/css/output.383cb89899f2.css" type="text/css" media="print" />
+
+
+
+<link rel="stylesheet" href="/static/cache/css/output.b81f51b5a3ca.css" type="text/css" media="all" />
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div id="page">
+    
+    <header>
+      <a href="/" title="Home">Dan Torop</a>
+    </header>
+
+    <nav>
+      <ul>
+	<li><a href="/">Projects: Lots</a></li>
+	<li><a href="/projects/photographic.html">photographic</a></li>
+	<li><a href="/projects/digital.html" class="active">digital</a></li>
+	<li><a href="/projects/writing_and_collaboration.html">writing &amp; collaboration</a></li>
+	<li><a href="/about.html">About &amp; contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <div id="content">
+	<div id="content-header">
+	  <h1 class="title">Emacs Lisp Animations</h1>
+	</div>
+	<div id="content-inner">
+	  <div id="content-area">
+	    
+<p><a href="http://www.gnu.org/software/emacs/">Emacs</a>, a programmer's text editor with roots in the 1970s, is a great tool for animation. In Fall, 2010 I taught a digital art class at NYU's interdisciplinary Steinhardt art school. Clearly, the thing to do was to teach how to make animations in Emacs by programming it in Lisp.</p>
+<p>These exercises are meant for non-programmers to get a glimpse of what a program and a language can do, by creating "physical" objects, in this case punctuation marks on the screen. ASCII art is the future, yes? At the very least, ASCII art in the '70s was to computer science what post-minimalism was to the contemporary art of the period. Think of a pile of ampersands and exclamation marks as earth art.</p>
+<pre class="hlght"><span class="go">,,,,,,,,#
+,,,,,#
+,,,,,,#,,##,,,#,,#
+,,,,#,,,#,,,,,,#,,,#,#
+,,,#,,,#,,,,,,,,,,,#
+#,,#,,,#,,,,,,,,#,,,,,</span></pre>
+<p>Below are links to the class notes. They get a bit more lively&mdash;and informative&mdash;as the weeks go on. With luck I'll flesh out the earlier weeks and work on a better sequence.</p>
+<ul>
+<li><a title="Emacs Lisp programming pt. 1" href="/project/emacs-animation/lisp1.html">Part 1: talking to Lisp, basics</a></li>
+<li><a title="Emacs Lisp programming pt. 2" href="/project/emacs-animation/lisp2.html">Part 2: minimal ASCII art</a></li>
+<li><a title="Emacs Lisp programming pt. 3" href="/project/emacs-animation/lisp3.html">Part 3: lists and color</a></li>
+<li><a title="Emacs Lisp programming pt. 4" href="/project/emacs-animation/lisp4.html">Part 4: animation</a></li>
+<li><a title="Emacs Lisp programming pt. 5" href="/project/emacs-animation/lisp5.html">Part 5: better xy moves, defuns, calling defuns, color</a></li>
+<li><a title="Emacs Lisp programming pt. 6" href="/project/emacs-animation/lisp6.html">Part 6: more succinct drawing, <code>if</code> and <code>random</code></a></li>
+<li><a title="Emacs Lisp programming pt. 7" href="/project/emacs-animation/lisp7.html">Part 7: motion, drunkard's walk, keyboard control</a></li>
+<li><a title="Emacs Lisp programming pt. 8" href="/project/emacs-animation/lisp8.html">Part 8: pong, etc.</a></li>
+<li><a title="Emacs Lisp programming pt. 9" href="/project/emacs-animation/lisp9.html">Part 9: Common Lisp, <code>incf</code>, <code>decf</code>, structs</a></li>
+</ul>
+<p>Here is a page describing a few <a href="/project/emacs-animation/useful.html">useful Emacs Lisp commands</a>.</p>
+
+	  </div>
+	</div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="breadcrumb"><a href="/">Home</a> › <a href="/projects/digital.html">Digital</a> › Emacs Lisp Animations</div>
+      <div id="footer-message">
+	<p>&copy; 2024 by Dan Torop</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

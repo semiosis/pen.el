@@ -1,0 +1,12 @@
+#if __GLASGOW_HASKELL__ >= 802
+
+module Main where
+
+import Data.Set (Set)
+import Control.Applicative
+import Control.Monad.Trans.Maybe( MaybeT(..))
+#elif __GLASGOW_HASKELL__ >= 709
+import Data.Set (Set)
+#endif
+example1 = do
+example2 :: MaybeT Set Int example2 = do

@@ -1,0 +1,13 @@
+/* Color scheme B: McDonalds */
+.b-primary {
+background-color: #FFA500;
+}
+.b-secondary {
+background-color: #FF8C00;
+}
+.b-ternary {
+background-color: #FF4500;
+}
+.b-quaternary {
+background-color: #FF0000;
+}

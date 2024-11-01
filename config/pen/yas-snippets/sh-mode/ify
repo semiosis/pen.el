@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ify
+# key: ify
+# --
+if test "${0:JUSTPASTE}" = "y"; then
+:
+fi

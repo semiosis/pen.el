@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: just-integer
+# group: maybe
+# key: ji
+# --
+(Just 1980)

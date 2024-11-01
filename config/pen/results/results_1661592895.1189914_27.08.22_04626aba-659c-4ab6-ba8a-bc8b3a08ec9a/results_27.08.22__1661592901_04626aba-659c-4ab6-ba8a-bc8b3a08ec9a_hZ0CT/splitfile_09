@@ -1,0 +1,9 @@
+
+  let maxWidths = maximumBy (compare `on` length) rows
+  mapM_ (\row -> mapM_ (\col -> putStrLn $ pad col maxWidths) row) rows
+
+pad :: String -> [Int] -> String
+pad s ws = let
+  n = sum ws
+  in replicate (n - length s) ' ' ++ s
+EOD

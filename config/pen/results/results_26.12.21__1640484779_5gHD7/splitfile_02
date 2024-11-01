@@ -1,0 +1,3 @@
+
+curl -s "http://www.google.com/search?q=$1" | grep -oE 'href="[^"]+"' \
+| grep -oE 'http[^">]+' | paste -s -d ' ' - | tr -

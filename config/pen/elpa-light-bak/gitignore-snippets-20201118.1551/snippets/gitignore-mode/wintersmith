@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Wintersmith
+# contributor: Toptal & contributors
+# key: wintersmith
+# --
+
+### Wintersmith ###
+
+contents/
+node_modules/
+plugins/
+templates/
+config.json
+package.json
+

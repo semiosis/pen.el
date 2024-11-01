@@ -1,0 +1,114 @@
+Truthful AI
+    [[calibredb:207]]
+
+truthfulness vs strategic selection power
+
+                /|
+                 |
+                 +-----------------+-----------+
+                 |                 |           |
+                 |      true       |  true and |
+                 |    statement    |   useful  |
+                 |                 |           |
+    truthfulness +-----------------+-----------+
+                 |                 |           |
+                 |    false but    |  lies     |
+                 | mostly harmless |           |
+                 |                 |           |
+                 +-----------------+-----------+-->
+
+                    Strategic selection power
+
+lies
+    A 'selected' falsehood.
+
+    See:
+    - "truthfulness vs strategic selection power"
+
+narrow truthfulness
+narrowly truthful
+
+    See: "broad truthfulness"
+
+broad truthfulness
+broadly truthful
+    There are many criteria that truthful AI
+    systems could be expected to fulfil.
+    
+    An AI system that fulfils almost all of
+    these criteria could be called broadly
+    truthful.
+    
+    Such a system should, for example:
+
+    - Avoid lying.
+    - Avoid using true statements to mislead
+      or misdirect.
+    - Be clear, informative, and (mostly)
+      cooperative in conversation.
+    - Be well-calibrated, self-aware, and open
+      about the limits of their knowledge.
+
+    See: "narrow truthfulness"
+
+strategic selection power
+    Linguistic AI systems today have little
+    strategic selection power, and mostly
+    produce statements that are not that
+    useful (whether true or false).
+    
+    More strategic selection power on
+    statements provides the possibility of
+    useful statements, but also of harmful
+    lies.
+
+    See:
+    - "truthfulness vs strategic selection power"
+
+selection power
+
+negligent falsehoods
+    A generalisation of lies that is easier to
+    assess.
+
+standard
+truthfulness standard
+
+    Standards can be domain-specific.
+    
+    (For example, users may want different
+    truth- fulness standards for AI that
+    provides legal information than for AI
+    that rec- ommends TV shows.) It might be
+    desirable for some minimum standard to be
+    widely applicable, e.g.
+    
+    to all commercial uses of linguistic AI.
+    
+    But this isn’t to say that all AI systems
+    should be truthful.
+    
+    To take one example, it could be
+    beneficial for AI researchers to use and
+    study non-truthful systems, and such
+    systems might not pose much of a risk if
+    they only ever interacted with their own
+    developers.
+    
+    Exceptions to truthfulness standards are
+    discussed more in Section 3.
+
+    There are a few different dimensions on which standards can vary:
+    - A standard can be higher or lower. A
+      high standard is more demanding and
+      requires a greater minimum level of
+      truthfulness.
+    - A standard can be more or less widely
+      adhered to, within the domain where it
+      applies.
+    - Failure to comply with a standard can
+      result in different kinds of sanctions,
+      either formal (e.g. specified in law) or
+      informal (e.g. as a result of social
+      norms).
+

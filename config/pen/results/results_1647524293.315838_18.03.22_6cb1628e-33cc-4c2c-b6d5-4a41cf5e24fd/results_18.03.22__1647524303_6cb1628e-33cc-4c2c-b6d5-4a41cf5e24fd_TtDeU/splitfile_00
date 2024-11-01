@@ -1,0 +1,8 @@
+Once upon a time, there were two enchanted forests filled with all of the
+imagination that little children and young adults could conjure up.
+
+## Usage
+
+1. Download and install [libpython-clj2](https://github.com/taylorwood/libpython-clj(ns clojure-interop-with-python-nlp-libraries-testbed.core
+  (:gen-class)
+  (:require [libpython-clj2.require :refer [require-python]]

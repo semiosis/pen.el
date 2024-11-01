@@ -1,0 +1,9 @@
+""))
+    for line in input_file:
+        line = line.strip()
+        if line != "":
+            ideas.append(line)
+    return ideas
+
+def get_ideas_txt(ideas):
+    """Reads a list of business

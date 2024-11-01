@@ -1,0 +1,88 @@
+Presto
+    An open source distributed SQL query
+    engine for running interactive analytic
+    queries against data sources of all sizes
+    ranging from gigabytes to petabytes.
+
+    Presto was designed and written from the
+    ground up for interactive analytics and
+    approaches the speed of commercial data
+    warehouses while scaling to the size of
+    organizations like Facebook.
+
+    Presto allows querying data where it
+    lives, including Hive, Cassandra,
+    relational databases or even proprietary
+    data stores.
+    
+    A single Presto query can combine data
+    from multiple sources, allowing for
+    analytics across your entire organization.
+    
+    Presto is targeted at analysts who expect
+    response times ranging from sub-second to
+    minutes.
+    
+    Presto breaks the false choice between
+    having fast analytics using an expensive
+    commercial solution or using a slow "free"
+    solution that requires excessive hardware.
+
+ZooKeeper
+    A centralized service for maintaining
+    configuration information, naming,
+    providing distributed synchronization, and
+    providing group services.
+    
+    All of these kinds of services are used in
+    some form or another by distributed
+    applications.
+    
+    Each time they are implemented there is a
+    lot of work that goes into fixing the bugs
+    and race conditions that are inevitable.
+    
+    Because of the difficulty of implementing
+    these kinds of services, applications
+    initially usually skimp on them, which
+    make them brittle in the presence of
+    change and difficult to manage.
+    
+    Even when done correctly, different
+    implementations of these services lead to
+    management complexity when the
+    applications are deployed.
+
+Tika
+    Detects and extracts metadata and text
+    from over a thousand different file types
+    (such as PPT, XLS, and PDF).
+    
+    All of these file types can be parsed
+    through a single interface, making Tika
+    useful for search engine indexing, content
+    analysis, translation, and much more.
+    
+    You can find the latest release on the
+    download page.
+    
+    Please see the Getting Started page for
+    more information on how to start using
+    Tika.
+    
+    The Parser and Detector pages describe the
+    main interfaces of Tika and how they work.
+
+    TODO: Make scope use tika.
+    $SCRIPTS/scope.sh
+
+Openmeetings
+    [Apache project]
+
+    Provides video conferencing, instant
+    messaging, white board, collaborative
+    document editing and other groupware
+    tools.
+    
+    It uses API functions of Media Server for
+    Remoting and Streaming Kurento.

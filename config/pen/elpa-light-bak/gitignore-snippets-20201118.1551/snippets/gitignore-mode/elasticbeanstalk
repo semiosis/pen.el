@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ElasticBeanstalk
+# contributor: Toptal & contributors
+# key: elasticbeanstalk
+# --
+
+### ElasticBeanstalk ###
+
+.elasticbeanstalk/

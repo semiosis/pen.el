@@ -1,0 +1,8 @@
+Define a CL struct with the given members."
+  (let ((struct-name (make-symbol "struct-name")))
+    (list 'cl-defstruct struct-name
+          (mapcar (lambda (member)
+                    (list (car member)
+                          (list '&optional
+                                (list (car member)))))
+                  members))))

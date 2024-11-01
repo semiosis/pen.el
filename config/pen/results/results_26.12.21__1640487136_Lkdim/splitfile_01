@@ -1,0 +1,3 @@
+"git/sha" is a keyword that holds the SHA-1 hash of the commit at the current
+point in the history of the current branch.
+

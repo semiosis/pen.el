@@ -1,0 +1,13 @@
+
+
+travelToSchool destination = do
+
+putStrLn " How many miles do you want to travel today? "
+
+userInput <- getLine
+
+case userInput of
+
+'q' -> return ()
+
+num

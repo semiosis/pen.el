@@ -1,0 +1,113 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:05:47 GMT
+Content-Type: text/html
+Content-Length: 4932
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-1344"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Typing Pitfalls</title>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="modules.html">back</a> <a href="arrays.html">next</a> <a href="index.html">top</a><hr>
+<p>
+<a name="sect12"></a>
+<h2>12<tt>&nbsp;&nbsp;</tt>Typing Pitfalls</h2><p>
+This short section give an intuitive description of a few common
+problems that novices run into using Haskell's type system.<p>
+<a name="sect12.1"></a>
+<h3>12.1<tt>&nbsp;&nbsp;</tt>Let-Bound Polymorphism</h3><p>
+Any language using the Hindley-Milner type system has what is called
+<I>let-bound polymorphism</I>, because identifiers not bound using a
+<tt>let</tt> or <tt>where</tt> clause (or at the top level of a module) are limited
+with respect to their polymorphism.  In particular, a 
+<I>lambda-bound</I> function (i.e., one passed as argument to another
+function) cannot be instantiated in two different ways.  For example,
+this program is illegal:
+<tt><br>
+
+<br>
+let&nbsp;f&nbsp;g&nbsp;&nbsp;=&nbsp;&nbsp;(g&nbsp;[],&nbsp;g&nbsp;'a')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;ill-typed&nbsp;expression<br>
+in&nbsp;f&nbsp;(\x-&gt;x)<br>
+
+<br>
+
+</tt>because <tt>g</tt>, bound to a lambda abstraction whose principal type is
+<tt>a-&gt;a</tt>, is used within <tt>f</tt> in two different ways: once with type
+<tt>[a]-&gt;[a]</tt>, and once with type <tt>Char-&gt;Char</tt>.<p>
+<a name="sect12.2"></a>
+<h3>12.2<tt>&nbsp;&nbsp;</tt>Numeric Overloading</h3><p>
+It is easy to forget at times that numerals are <I>overloaded,</I> and
+<I>not implicitly coerced</I> to the various numeric types, as in many
+other languages.  More general numeric expressions sometimes cannot be
+quite so generic.  A common numeric typing error is something like the
+following:
+<tt><br>
+
+<br>
+average&nbsp;xs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;sum&nbsp;xs&nbsp;/&nbsp;length&nbsp;xs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;Wrong!<br>
+
+<br>
+
+(/)</tt> requires fractional arguments, but <tt>length</tt>'s result is
+an <tt>Int</tt>.  The type mismatch must be corrected with an explicit coercion:
+<tt><br>
+
+<br>
+average&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Fractional&nbsp;a)&nbsp;=&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;a<br>
+average&nbsp;xs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;sum&nbsp;xs&nbsp;/&nbsp;fromIntegral&nbsp;(length&nbsp;xs)<br>
+
+<br>
+<p>
+</tt><a name="sect12.3"></a>
+<h3>12.3<tt>&nbsp;&nbsp;</tt>The Monomorphism Restriction</h3><p>
+The Haskell type system contains a restriction related to type classes
+that is not found in ordinary Hindley-Milner type systems: the 
+<I>monomorphism restriction</I>.  The reason for this restriction is related
+to a subtle type ambiguity and is explained in full detail in the
+Report (<a href="../onlinereport/decls.html#sect:monomorphism-restriction">&sect;4.5.5</a>).  A simpler explanation
+follows:<p>
+The monomorphism restriction says that any identifier bound by a
+pattern binding (which includes bindings to a single identifier), and
+having no explicit type signature, must be <I>monomorphic</I>.  An
+identifier is monomorphic if is either not overloaded, or is
+overloaded but is used in at most one specific overloading and is not
+exported.<p>
+Violations of this restriction result in a static type error.  The
+simplest way to avoid the problem is to provide an explicit type
+signature.  Note that <I>any</I> type signature will do (as long it is
+type correct).<p>
+A common violation of the restriction happens with functions defined
+in a higher-order manner, as in this definition of <tt>sum</tt> from the
+Standard Prelude:
+<tt><br>
+
+<br>
+sum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;foldl&nbsp;(+)&nbsp;0<br>
+
+<br>
+
+</tt>As is, this would cause a static type error.  We can fix the problem
+by adding the type signature:
+<tt><br>
+
+<br>
+sum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Num&nbsp;a)&nbsp;=&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+
+</tt>Also note that this problem would not have arisen if we had written:
+<tt><br>
+
+<br>
+sum&nbsp;xs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;foldl&nbsp;(+)&nbsp;0&nbsp;xs<br>
+
+<br>
+
+</tt>because the restriction only applies to pattern bindings.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="modules.html">back</a> <a href="arrays.html">next</a> <a href="index.html">top</a>
+<p>

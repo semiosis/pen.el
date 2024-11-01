@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: decorator example
+# group: examples
+# key: dec-ex
+# --
+def _fix_path(func):
+    """Method decorator for automatically normalising paths."""
+    def wrapper(self, *args, **kwds):
+        if len(args):
+            # args is a tuple. that's why it needs list()
+            args = list(args)
+            args[0] = _fixpath(args[0])
+        return func(self, *args, **kwds)
+    return wrapper

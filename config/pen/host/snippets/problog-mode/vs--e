@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: -e
+# group: vimsnippet
+# key: vs--e
+# --
+#!/usr/bin/env problog

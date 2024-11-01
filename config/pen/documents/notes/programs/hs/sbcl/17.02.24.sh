@@ -1,0 +1,2 @@
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "John \"1:6,7\"" "#" "<==" "sbcl-ql"
+cd /;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "2 Kings" "#" "<==" "sbcl-ql"

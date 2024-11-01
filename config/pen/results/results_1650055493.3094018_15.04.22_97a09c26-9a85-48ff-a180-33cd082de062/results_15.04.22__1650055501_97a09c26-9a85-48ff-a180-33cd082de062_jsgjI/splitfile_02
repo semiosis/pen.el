@@ -1,0 +1,7 @@
+
+
+Transients provide a fast and convenient way of accessing multimode
+commands,
+similar to the way prefix keys work in emacs and other modes. But where
+
+the former is designed for single-mode commands, a transient

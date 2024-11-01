@@ -1,0 +1,1 @@
+- Simon Peyton Jones: That runs a state monad and returns the value, which is the same as mapState.

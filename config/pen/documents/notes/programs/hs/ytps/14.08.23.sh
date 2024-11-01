@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ytps" "Derek" "Prince" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ytps" "Derek" "Prince" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ytps" "Derek" "Prince" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ytps" "Derek" "Prince" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ytps" "Derek" "Prince" "#" "<==" "zsh"
+cd /root/notes;  "ytps" "--hep" "#" "<==" "zsh"
+cd /root/notes;  "ytps" "--help" "#" "<==" "zsh"
+cd /root/notes;  "ytps" "Derek" "Prince" "#" "<==" "zsh"

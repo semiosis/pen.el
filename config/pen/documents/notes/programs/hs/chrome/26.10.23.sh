@@ -1,0 +1,7 @@
+cd /root/notes;  "chrome" "Link: preconnect" "#" "<==" "pen-xa"
+cd /root/notes;  "chrome" "Link: alternate (only screen and (max-width: 720px))" "#" "<==" "pen-xa"
+cd /root/notes;  "chrome" "Link: Edit this page (alternate)" "#" "<==" "pen-xa"
+cd /root/notes;  "chrome" "Link: Wikipedia (en) (search)" "#" "<==" "pen-xa"
+cd /root/notes;  "chrome" "Link: EditURI" "#" "<==" "pen-xa"
+cd /root/notes;  "chrome" "Link: license" "#" "<==" "pen-xa"
+cd /root/notes;  "chrome" "/root/dump/tmp/scratchCQWav9.html" "#" "<==" "zsh"

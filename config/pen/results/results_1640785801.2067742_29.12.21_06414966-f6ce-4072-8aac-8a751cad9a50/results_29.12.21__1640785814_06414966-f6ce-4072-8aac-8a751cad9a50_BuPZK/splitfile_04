@@ -1,0 +1,16 @@
+- 1. Bourdieu
+- 2. Bourdieu (1930-)
+- 3. Bourdieu (1930-2001)
+"""
+
+    class MockCLI(object):
+        def output_fn(self, output):
+            print(output)
+
+    cli = MockCLI()
+    cli.run(create_parser(), [], text.splitlines())
+
+
+def test_search():
+    # TODO: add test with more than one document and use regex to search in all documents.
+    text = """

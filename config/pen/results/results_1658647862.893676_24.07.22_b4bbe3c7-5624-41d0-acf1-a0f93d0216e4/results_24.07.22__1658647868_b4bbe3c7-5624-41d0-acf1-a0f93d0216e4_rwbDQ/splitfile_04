@@ -1,0 +1,13 @@
+"StrictHostKeyChecking" is a parameter in the "Host" section of the SSH config file.
+
+It has three possible values:
+
+"yes" means to always check the host keys.
+"no" means to never check the host keys.
+"ask" means to ask the user about the host keys.
+
+The default value is "ask".
+
+If you set it to "no", you won't be prompted to add new hosts to the known_hosts file.
+
+If

@@ -1,0 +1,3 @@
+unmount/pensieve [] []
+  (sh "umount" (u/expand-home  "$HOME/pensieve"))
+  (sh "umount" "-l" (u/expand-home  "$HOME/pensieve")))

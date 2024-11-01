@@ -1,0 +1,40 @@
+title: "convert decimal to hex in code"
+prompt-version: 1
+tags: code math
+prompt: |+
+    Convert decimal to hex in the following code.
+
+    Dec code:
+    > background: rgb(220,220,220);
+    Hex code:
+    > background: #dcdcdc;
+    <delim>
+    Dec code:
+    > <1>
+    Hex code:
+    >
+xlr-n-generate: 5
+engine: "OpenAI Davinci"
+temperature: 0
+max-generated-tokens: 60
+top-p: 1.0
+best-of: 1
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "decimal code"
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- "text-shadow: 0 0 0.2em  rgba(255, 255, 255, 0.4);"
+n-test-runs: 5
+n-collate: 1
+n-completions: 10
+filter: yes
+doc: "Given some code that uses decimal, convert to hex"
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify
+external-related:
+- https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=dc

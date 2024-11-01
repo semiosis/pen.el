@@ -1,0 +1,5 @@
+
+(loop for r in jsonresults
+                            do
+                            (f-join gen-dir "splitfile_" counter))
+

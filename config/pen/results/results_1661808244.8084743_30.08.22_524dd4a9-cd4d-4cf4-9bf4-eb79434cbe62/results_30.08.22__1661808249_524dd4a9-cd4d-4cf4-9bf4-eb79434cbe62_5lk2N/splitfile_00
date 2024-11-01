@@ -1,0 +1,7 @@
+x7f8c8a395e80
+    """
+    if not case_sensitive:
+        string = string.lower()
+
+    directory, filename = os.path.split(string)
+    name, extension

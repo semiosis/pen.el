@@ -1,0 +1,3 @@
+cd /root/.pen/documents/notes;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/All_Creatures_Of_Our_God_And_King-Lasst_Uns_Erfreuen.pdf"
+cd /root/.pen/documents/notes;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1524.pdf"
+cd /root/.pen/documents/notes;  "z" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Pdf/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1524.pdf"

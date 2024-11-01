@@ -1,0 +1,11 @@
+git diff
+diff --git a/core b/core
+index fc9e4b4..8a1f5a2 100644
+--- a/core
++++ b/core
+@@ -1 +1 @@
+-harry potter and the chamber of secrets
++harry potter and the prisoner of azkaban
+» git diff --cached core
+diff --git a/core b/core
+index fc9e4b4..

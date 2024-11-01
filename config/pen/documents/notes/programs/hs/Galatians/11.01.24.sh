@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Galatians" "5:22" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Galatians" "5:2-4" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Galatians" "5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Galatians" "5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Galatians" "5:1-4" "#" "<==" "bash"

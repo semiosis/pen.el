@@ -1,0 +1,10 @@
+""
+
+with open('business_ideas.txt', 'w') as f:
+    f.write(business_ideas)
+
+#%%
+
+folder = 'C:/Users/Administrator/Desktop/Data/tm/'
+
+for filename in os.

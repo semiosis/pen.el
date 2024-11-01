@@ -1,0 +1,1 @@
+""realized?" refers to the lisp concept of a function that returns a value based on the values of its arguments. in clojure, a function can be thought of as realized if it has a value that is determined by the arguments passed to it. this is opposed to a "symbol macro", which is a function that is not realized and whose value is determined by the macro definition. "

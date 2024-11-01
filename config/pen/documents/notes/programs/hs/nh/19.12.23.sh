@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "nh" "ocif" "-nd" "-E" "cat /root/.pen/tmp/file_input_7MCYTx_rand-2581_pid-2058988.bin | timeout 4 filter-things.sh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nh" "ocif" "-nd" "-E" "cat /root/.pen/tmp/file_input_7MCYTx_rand-2581_pid-2058988.bin | timeout 4 scrape-emails" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nh" "ocif" "-nd" "-E" "cat /root/.pen/tmp/file_input_Kfin4X_rand-2611_pid-2065075.bin | timeout 4 filter-things.sh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nh" "ocif" "-nd" "-E" "cat /root/.pen/tmp/file_input_y5IwAZ_rand-32417_pid-2070464.bin | timeout 4 filter-things.sh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nh" "ocif" "-nd" "-E" "cat /root/.pen/tmp/file_input_jqfDJ0_rand-31396_pid-2076859.bin | timeout 4 filter-things.sh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nh" "ocif" "-nd" "-E" "cat /root/.pen/tmp/file_input_4ue6UM_rand-7319_pid-453586.bin | timeout 4 filter-things.sh" "#" "<==" "bash"

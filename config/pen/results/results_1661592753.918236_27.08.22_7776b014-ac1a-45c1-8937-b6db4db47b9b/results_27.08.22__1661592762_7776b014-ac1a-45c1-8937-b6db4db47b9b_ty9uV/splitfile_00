@@ -1,0 +1,8 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\t -> (t !! 0, t !! 1))) tuples
+
+  -- Tabularise the rows and print them to stdout.
+  print $ T.concat $ map T.pack rows
+EOD

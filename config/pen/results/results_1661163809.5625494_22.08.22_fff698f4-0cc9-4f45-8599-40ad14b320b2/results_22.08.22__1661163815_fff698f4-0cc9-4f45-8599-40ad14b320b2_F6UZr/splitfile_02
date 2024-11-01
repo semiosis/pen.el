@@ -1,0 +1,7 @@
+
+
+$ ghci -package parsec <text file name>
+
+For example,
+
+$ ghci -package parsec /Users/lars/parsec/purescript-parsec/tests/Text/Parsec

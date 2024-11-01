@@ -1,0 +1,5 @@
+cd /;  "John" "10:27-29" "#" "<==" "zsh"
+cd /;  "John" "10:27-29" "#" "<==" "withopts"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "John" "8:31-47" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "14:15-16" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "15:15" "#" "<==" "bash"

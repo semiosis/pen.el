@@ -1,0 +1,11 @@
+"toUpper" is a function in the "Char" module.
+"Char" is a module in the "Data" package.
+"Data" is a package in the "System" library.
+"System" is a library in the "base" distribution.
+"base" is a distribution in the standard library.
+
+:info toUpper
+:info Char
+:info Data
+:info System
+:info base

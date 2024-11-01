@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: exit
+# group: 
+# key: e0
+# --
+exit()

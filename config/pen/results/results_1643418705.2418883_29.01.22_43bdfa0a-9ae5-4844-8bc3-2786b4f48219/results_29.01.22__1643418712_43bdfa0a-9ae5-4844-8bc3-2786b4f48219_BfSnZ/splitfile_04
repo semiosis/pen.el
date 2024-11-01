@@ -1,0 +1,13 @@
+"http/post" is a library that provides a simple API for making HTTP requests.
+
+(require '[clojure.string :as s])
+(require '[http/post :as post])
+
+(defn post-json
+  [url data]
+  (->> data
+    (post/json url)
+    (assoc :headers {"Content-Type" "application/json"})
+    (assoc :body)))
+
+(defn post-json-sync

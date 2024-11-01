@@ -1,0 +1,40 @@
+task: "Generate a grammar from a description of the language"
+tags: parsers
+doc: "Given a description of a language, generate a grammar"
+prompt-version: 1
+prompt: |+
+  git clone "<url>"
+  cd `(insert (pen-snc "sed 's/.*github.com\\/[^/]*\\///'" "<url>"))`
+  cd `(insert (slugify "<description>"))`
+  # g4 grammar for parsing `(insert (slugify "<description>"))`
+  cat `(insert (slugify "<description>"))`.g4 <<EOD
+  <:pp>grammar `(insert (slugify "<description>"))`;
+
+  prog : program EOF
+  
+  # lexer rule
+  options {
+      language = `(insert (slugify "<description>"))`;
+  }
+
+
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+yas: on
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- "description"
+# This should be a constant defined elsewhere
+- "url"
+var-defaults:
+- "(read-string-hist \"language description: \")"
+- "\"https://github.com/antlr/grammars-v4\""
+examples:
+- "basic"
+filter: off
+completion: off
+insertion: on

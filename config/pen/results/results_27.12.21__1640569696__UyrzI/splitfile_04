@@ -1,0 +1,13 @@
+"sysstat" is a collection of performance monitoring tools for Linux.
+The package is intended to be used by system administrators and
+performance tuning specialists.
+
+This is the "sysstat" package, version 10.2.1.
+
+Home page: http://sebastian.germes.in/en/sysstat.html
+
+Usage: sysstat [options] [<file>]
+
+Options:
+  -h, --help                 display this help and exit
+

@@ -1,0 +1,1447 @@
+HTTP/1.1 200 OK
+Date: Fri, 20 Oct 2023 06:11:40 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Content-Type-Options: nosniff
+Cache-Control: public, max-age=14400
+X-Drupal-Dynamic-Cache: UNCACHEABLE
+X-UA-Compatible: IE=edge
+Content-language: en
+X-Frame-Options: SAMEORIGIN
+Permissions-Policy: interest-cohort=()
+Expires: Fri, 20 Oct 2023 10:11:40 GMT
+Last-Modified: Wed, 18 Oct 2023 09:52:08 GMT
+Vary: Cookie,Accept-Encoding
+X-Drupal-Cache: MISS
+Access-Control-Allow-Origin: *
+CF-Cache-Status: HIT
+Age: 78675
+Strict-Transport-Security: max-age=0
+Server: cloudflare
+CF-RAY: 818f1acffc841c51-AKL
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="no-js">
+<head id="mainhead">
+<title>Theology Thursday: Covenant | GCU Blog</title>
+<meta name="st:robots" content="follow, index">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.googleoptimize.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googleadservices.com">
+<link rel="preconnect" href="https://s.yimg.com/">
+<link rel="preconnect" href="https://connect.facebook.net/">
+<link rel="preconnect" href="https://az416426.vo.msecnd.net">
+<link rel="preconnect" href="https://builder.lift.acquia.com">
+<link rel="preconnect" href="https://us-east-1-decisionapi.lift.acquia.com">
+<link rel="preconnect" href="https://res.cloudinary.com">
+
+<script src="https://cdn.cookielaw.org/consent/18b97d2c-12b0-4563-a2bd-9f60463ca3cd/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="18b97d2c-12b0-4563-a2bd-9f60463ca3cd"></script>
+<script type="text/javascript">
+      function OptanonWrapper() { }
+    </script>
+
+<meta charset="utf-8" />
+<meta itemprop="acquia_lift:content_title" content="Theology Thursday: What Are the Biblical Covenants?" />
+<meta itemprop="acquia_lift:content_type" content="blog_post" />
+<meta itemprop="acquia_lift:page_type" content="node page" />
+<meta itemprop="acquia_lift:context_language" content="en" />
+<meta itemprop="acquia_lift:content_section" content />
+<meta itemprop="acquia_lift:content_keywords" content />
+<meta itemprop="acquia_lift:post_id" content="3591" />
+<meta itemprop="acquia_lift:content_uuid" content="2df8f534-062e-4c42-b41d-4db1ca36b90f" />
+<meta itemprop="acquia_lift:published_date" content="1575503303" />
+<meta itemprop="acquia_lift:persona" content />
+<meta itemprop="acquia_lift:engagement_score" content="1" />
+<meta itemprop="acquia_lift:account_id" content="GRANDCANYONUNI" />
+<meta itemprop="acquia_lift:site_id" content="gcu_prod" />
+<meta itemprop="acquia_lift:liftAssetsURL" content="https://builder.lift.acquia.com" />
+<meta itemprop="acquia_lift:liftDecisionAPIURL" content="https://us-east-1-decisionapi.lift.acquia.com" />
+<meta itemprop="acquia_lift:bootstrapMode" content="auto" />
+<meta itemprop="acquia_lift:contentReplacementMode" content="trusted" />
+<meta itemprop="acquia_lift:cdfVersion" content="2" />
+<script src="https://builder.lift.acquia.com/lift.js" async></script>
+<meta name="geo.region" content="US" />
+<link rel="canonical" href="https://www.gcu.edu/blog/theology-ministry/theology-thursday-what-are-biblical-covenants" />
+<meta name="description" content="The Bible can be difficult to understand. The concept of Covenant provides the framework of the biblical story and can provide the key to understanding its meaning." class="swiftype" data-type="string" />
+<meta name="keywords" content="Covenant" />
+<meta property="og:site_name" content="GCU" />
+<meta property="og:url" content="https://www.gcu.edu/blog/theology-ministry/theology-thursday-what-are-biblical-covenants" />
+<meta property="og:title" content="Theology Thursday: What Are the Biblical Covenants?" />
+<meta property="og:description" content="For a long time, I had a tough time understanding the Bible. That is not to say that I have all my questions answered now." />
+<meta class="swiftype" name="content-type" data-type="string" content="Blogs" />
+<meta class="swiftype" name="custom-weight" data-type="integer" content="3" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BlogPosting",
+            "headline": "Theology Thursday: What Are the Biblical Covenants?",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://www.gcu.edu/sites/default/files/styles/medium/public/media/Bible%20Study.jpg?itok=mSjYkWtU",
+                "width": "724",
+                "height": "483"
+            },
+            "datePublished": "2019-12-04T16:48:23-0700",
+            "isAccessibleForFree": "True",
+            "author": {
+                "@type": "Organization",
+                "name": "GCU",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.gcu.edu/sites/default/files/media/images/Logos/gcu-schema-logo.png",
+                    "width": "143",
+                    "height": "60"
+                }
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "GCU",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.gcu.edu/sites/default/files/media/images/Logos/gcu-schema-logo.png",
+                    "width": "143",
+                    "height": "60"
+                }
+            }
+        },
+        {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://www.gcu.edu/#collegeoruniversity",
+            "description": "Grand Canyon University (GCU) is Arizona\u0027s premier private Christian university. For more than 65 years, our Phoenix campus has been the gateway to success for countless scholars and industry leaders.",
+            "name": "Grand Canyon University",
+            "sameAs": [
+                "https://www.facebook.com/GrandCanyonU",
+                "https://twitter.com/gcu",
+                "https://plus.google.com/+grandcanyonuniversity",
+                "https://www.instagram.com/gcu/",
+                "https://www.youtube.com/user/gcu",
+                "https://www.linkedin.com/school/grand-canyon-university/",
+                "https://en.wikipedia.org/"
+            ],
+            "url": "https://www.gcu.edu/",
+            "telephone": "1-855-428-5673",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.gcu.edu/sites/default/files/media/images/Logos/gcu-schema-logo-112.png",
+                "width": "267",
+                "height": "112"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3300 West Camelback Road",
+                "addressRegion": "AZ",
+                "postalCode": "85017",
+                "addressCountry": "US"
+            }
+        }
+    ]
+}</script>
+<meta name="og:type" content="article" />
+<meta name="article:author" content="Grand Canyon University" />
+<meta name="og:site-name" content="GCU" />
+<meta name="article:published_time" content="2019-12-05T00:00:00-0700" />
+<meta name="og:image" content="https://www.gcu.edu/sites/default/files/media/Bible%20Study.jpg" />
+<link rel="icon" href="/sites/default/files/favicon_1.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/themes/custom/gcu/media/favicon/favicon.ico?s2gj1q" sizes="any" />
+<link rel="icon" href="/themes/custom/gcu/media/favicon/favicon.svg?s2gj1q" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/themes/custom/gcu/media/favicon/favicon-180x180-apple.png?s2gj1q" />
+<link rel="manifest" href="/themes/custom/gcu/media/favicon/manifest.webmanifest?s2gj1q" />
+<meta name="msapplication-TileImage" content="/sites/default/files/media/images/mstile-144x144.png?s2gj1q" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#522398" />
+<script src="https://www.googleoptimize.com/optimize.js?id=GTM-WHKC57K"></script>
+<link rel="stylesheet" href="/themes/custom/gcu/assets/styles/bootstrap.css?v=0.1.1" />
+</head>
+<body>
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+<section aria-label="Main Website Container" class="gcu-base">
+<a href="#main-content" tabindex="1" class="skiplink">Skip to main content</a>
+
+<section class="ie-msg alert--banner alert--banner__danger" role="alert" aria-atomic="true" aria-label="Internet Explorer browser support alert">
+<div class="container">
+<p>This website does not fully support Internet Explorer. For a better experience, please consider using a modern browser such as <a href="https://www.google.com/intl/en/chrome" target="_blank">Chrome</a>, <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>, or <a href="https://www.microsoft.com/en-us/edge" target="_blank">Edge</a>.</p>
+</div> </section>
+<header class="banner gcu-header" aria-label="Main Website Header">
+<div class="container banner__content">
+<div class="banner__logo">
+<a href="/">
+<img src="/themes/custom/gcu/media/images/header/gcu.svg" width="240" height="48" alt="Grand Canyon University" class="desktop" loading="lazy" />
+<svg version="1.1" id="GCU" class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 359.05 127.09" style="enable-background:new 0 0 359.05 127.09;" xml:space="preserve" alt="Grand Canyon University">
+<style type="text/css">
+              .st0 {
+                fill: #FFFFFF;
+              }
+            </style>
+<path class="st0" d="M325.07,122.14h-1.69v-0.81h4.41v0.81h-1.7v4.95h-1.02V122.14z M331.1,127.09l-1.65-4.71v4.71h-0.88v-5.76h1.36
+                l1.62,4.75l1.62-4.75h1.32v5.76h-0.92v-4.71l-1.62,4.71H331.1L331.1,127.09z" />
+<path class="st0" d="M235.1,1.33C233.81,0.42,232.23,0,230.65,0h-95.97c5.96,8.82,4.06,15.82,2.89,20.07l-26.86,97.48
+                c-0.42,1.52-0.43,3.15,0.11,4.63c1.1,3.03,3.93,4.91,7,4.91h87.75l6.05-21.99c0.83-3.02-0.81-6.17-3.77-7.24l-23.73-8.51
+                l-3.13,11.31c-0.86,3.11-4.34,5.63-7.78,5.63h-27.55l22.11-80.2c0.86-3.12,3.7-5.29,6.94-5.29h28.3l-0.94,3.62
+                c-0.82,3.01,0.81,6.15,3.75,7.22l23.74,8.61l8.46-30.91C238.83,6.4,237.75,3.19,235.1,1.33L235.1,1.33z" />
+<path class="st0" d="M124.7,1.33C123.41,0.42,121.83,0,120.25,0H24.27c5.96,8.82,4.06,15.82,2.89,20.07L0.31,117.54
+                c-0.42,1.52-0.43,3.15,0.11,4.63c1.1,3.03,3.93,4.91,7,4.91h87.75l15.38-55.76c0.31-1.12,0.35-2.32,0.01-3.44
+                c-0.81-2.64-3.2-4.3-5.79-4.3H63.44L74.2,76.07c1.42,2.15,1.78,4.88,1,7.7l-4.55,16.67c-0.94,3.44-4.08,5.83-7.65,5.83H35.27
+                l22.05-80.03c0.86-3.11,3.68-5.27,6.9-5.29l28.38-0.16l-0.99,3.62c-0.82,3.01,0.81,6.15,3.75,7.22l23.74,8.61l8.5-30.91
+                c0.81-2.94-0.27-6.15-2.91-8.01L124.7,1.33z" />
+<path class="st0" d="M319.14,0l-27.66,100.48c-0.94,3.43-4.08,5.81-7.65,5.81h-27.77v-0.03l0,0L285.37,0h-40.29
+              c5.96,8.82,4.06,15.82,2.89,20.07l-26.93,97.67c-0.61,2.22-0.15,4.6,1.25,6.44c1.4,1.83,3.59,2.91,5.9,2.91h87.77l29.62-107.83
+              c1.11-4.27,3.22-13.63,13.46-19.26h-39.91L319.14,0z" />
+</svg>
+</a>
+</div>
+<div class="banner__cta">
+<a href="https://gcuportal.gcu.edu/" target="_blank" rel="noopener" class="buttons button button--border-bottom visible-dt-inline-block">
+GCU Login
+<span class="sr-only">Open in New Window</span>
+</a>
+<a href="https://www.gcu.edu/rmi/standalone" id="rmiButton" data-cy="rmiButton" data-enabled="false" class="buttons button cta button--cta button--lg">
+Request Info
+</a>
+<a href="https://www.gcu.edu/rmi/apply-now" onclick="dataLayer.push({category: 'navigation', action:'click', value: 'apply-now'})" target="_blank" rel="noopener noreferrer" class="buttons button button--lg">
+Apply<span class="hidden-xs"> Now</span>
+<span class="sr-only">Open in New Window</span>
+</a>
+</div>
+<nav class="banner__nav" aria-label="Main Website Navigation" id="main-navigation">
+
+<button type="button" class="toggle" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="icon-bar" aria-hidden="true"></span>
+<span class="icon-bar" aria-hidden="true"></span>
+<span class="icon-bar" aria-hidden="true"></span>
+<span class="sr-only">Toggle Navigation</span>
+</button>
+<div>
+<ul class="nav navbar-nav" role="menubar">
+<li class="title" role="none">
+Main Menu
+<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation" aria-label="Press 'Escape' key to close navigation.">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="dropdown" role="menuitem" aria-expanded="false" aria-controls="subMenu1" tabindex="1" id="subMenu1">
+<a href="/degree-programs" role="link" class="dropdown-toggle ">Degree Programs</a>
+<div class="sub-menu" role="none">
+<div class="sub-menu__content" role="none">
+<ul role="menu" aria-label="degree programs">
+<li class="title" role="none">Degree Programs<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button class="subnav-close" aria-haspopup="true" aria-controls="subMenu1">
+Go back to Main Menu
+</button>
+</li>
+<li role="none" class="sub-content">
+<div class="hidden-mo" role="none">
+<div class="img-overlay" id="img-degreeMenuImage">
+<img src="/" class="img-fade" alt="GCU Graduate Student" aria-hidden="true" width="305" height="206" loading="lazy" />
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-Landing.jpg" class="img img-responsive" alt="GCU Graduate Student" aria-hidden="true" width="305px" height="206px" loading="lazy" />
+</div>
+</div>
+<div role="none">
+<div aria-expanded="false" aria-controls="links-AreaofInterest">
+<a href="javascript:void(0)" role="menuitem" aria-label="area of interest" class="nolink section-title">
+Area of Interest </a>
+<ul role="menu" aria-label="area of interest" class="links" id="links-AreaofInterest">
+<li class="title" role="none">Area of Interest<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-AreaofInterest">
+Go back to Degree Programs
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/business" role="menuitem" aria-label="business" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/2023-09/Online-CCOB-113021-173.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Business </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/teaching" role="menuitem" aria-label="teaching" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/2023-09/Online-Teaching-082921-020.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Teaching </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/psychology-counseling" role="menuitem" aria-label="psychology &amp; counseling" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-Psychology.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Psychology &amp; Counseling </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/nursing-healthcare" role="menuitem" aria-label="nursing &amp; health care" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-Nursing.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Nursing &amp; Health Care </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/criminal-justice-public-administration" role="menuitem" aria-label="criminal justice, government &amp; public administration" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-Criminal.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Criminal Justice, Government <br/> &nbsp;&nbsp;&nbsp;&nbsp;&amp; Public Administration
+</a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/engineering-technology" role="menuitem" aria-label="engineering &amp; technology" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-Engineering.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Engineering &amp; Technology </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/medical-studies-science" role="menuitem" aria-label="medical studies &amp; sciences" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-MedicalStudies.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Medical Studies &amp; Sciences </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/language-communication" role="menuitem" aria-label="language &amp; communications" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-Language.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Language &amp; Communications </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/theology-ministry" role="menuitem" aria-label="theology &amp; ministry" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-Theology.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Theology &amp; Ministry </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/performing-arts-digital-arts" role="menuitem" aria-label="performing arts &amp; digital arts" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/degree-programs/Degree-Programs-AOI-PerformingArts.jpg" data-imageref="img-degreeMenuImage" class="nav__item">
+Performing Arts &amp; Digital Arts </a>
+</div>
+</li>
+</ul>
+</div>
+<div aria-expanded="false" aria-controls="links-Location">
+<a href="javascript:void(0)" role="menuitem" aria-label="location" class="nolink section-title">
+Location </a>
+<ul role="menu" aria-label="location" class="links" id="links-Location">
+<li class="title" role="none">Location<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-Location">
+Go back to Degree Programs
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/online-degrees" role="menuitem" aria-label="online" class="nav__item">
+<span class="icon" aria-hidden="true">
+<img src="/themes/custom/gcu/media/images/icons/icon-online-orange.svg" width="14" height="14" alt="OnlineIcon" />
+</span>
+Online </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/on-campus-degrees" role="menuitem" aria-label="campus" class="nav__item">
+<span class="icon" aria-hidden="true">
+<img src="/themes/custom/gcu/media/images/icons/icon-campus-green.svg" width="14" height="14" alt="CampusIcon" />
+</span>
+Campus </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/evening-degrees" role="menuitem" aria-label="evening" class="nav__item">
+<span class="icon" aria-hidden="true">
+<img src="/themes/custom/gcu/media/images/icons/icon-evening-blue.svg" width="14" height="14" alt="EveningIcon" />
+</span>
+Evening </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div role="none">
+<div aria-expanded="false" aria-controls="links-DegreeLevel">
+<a href="javascript:void(0)" role="menuitem" aria-label="degree level" class="nolink section-title">
+Degree Level </a>
+<ul role="menu" aria-label="degree level" class="links" id="links-DegreeLevel">
+<li class="title" role="none">Degree Level<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-DegreeLevel">
+Go back to Degree Programs
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/bachelors-degree" role="menuitem" aria-label="bachelor&#039;s" class="nav__item">
+Bachelor&#039;s </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/masters-degree" role="menuitem" aria-label="master&#039;s" class="nav__item">
+Master&#039;s </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/doctoral-degree" role="menuitem" aria-label="doctoral" class="nav__item">
+Doctoral </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/certificates" role="menuitem" aria-label="certificates" class="nav__item">
+Certificates </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/bridge-programs" role="menuitem" aria-label="bridge" class="nav__item">
+Bridge </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/degree-programs/post-masters-certificates" role="menuitem" aria-label="post-master&#039;s" class="nav__item">
+Post-Master&#039;s </a>
+</div>
+</li>
+</ul>
+</div>
+<div aria-expanded="false" aria-controls="links-OtherCourseOptions">
+<a href="javascript:void(0)" role="menuitem" aria-label="other course options" class="nolink section-title">
+Other Course Options </a>
+<ul role="menu" aria-label="other course options" class="links" id="links-OtherCourseOptions">
+<li class="title" role="none">Other Course Options<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-OtherCourseOptions">
+Go back to Degree Programs
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/academics/minor-degree-programs.php" role="menuitem" aria-label="minors" class="nav__item">
+Minors </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/individual-courses/single-courses" role="menuitem" aria-label="individual courses" class="nav__item">
+Individual Courses </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/individual-courses/dual-enrollment" role="menuitem" aria-label="high school dual enrollment" class="nav__item">
+High School Dual Enrollment </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/individual-courses/continuing-education" role="menuitem" aria-label="current teacher continuing education" class="nav__item">
+Current Teacher Continuing Education </a>
+</div>
+</li>
+</ul>
+</div>
+<div role="none">
+<a href="/degree-programs" role="menuitem" aria-label="all majors &amp; programs" class="nav__item strong">
+All Majors &amp; Programs </a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="dropdown" role="menuitem" aria-expanded="false" aria-controls="subMenu2" tabindex="2" id="subMenu2">
+<a href="/academics" role="link" class="dropdown-toggle ">Academics</a>
+<div class="sub-menu" role="none">
+<div class="sub-menu__content" role="none">
+<ul role="menu" aria-label="academics">
+<li class="title" role="none">Academics<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button class="subnav-close" aria-haspopup="true" aria-controls="subMenu2">
+Go back to Main Menu
+</button>
+</li>
+<li role="none" class="sub-content">
+<div class="hidden-mo" role="none">
+<div class="img-overlay" id="img-academicMenuImage">
+<img src="/" class="img-fade" alt="GCU Graduation" aria-hidden="true" width="305" height="206" loading="lazy" />
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-Landing.jpg" class="img img-responsive" alt="GCU Graduation" aria-hidden="true" width="305px" height="206px" loading="lazy" />
+</div>
+</div>
+<div role="none">
+<div aria-expanded="false" aria-controls="links-Colleges">
+<a href="javascript:void(0)" role="menuitem" aria-label="colleges" class="nolink section-title">
+Colleges </a>
+<ul role="menu" aria-label="colleges" class="links" id="links-Colleges">
+<li class="title" role="none">Colleges<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-Colleges">
+Go back to Academics
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/college-of-doctoral-studies.php" role="menuitem" aria-label="doctoral" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-College-Doctoral.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Doctoral </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/colangelo-college-of-business.php" role="menuitem" aria-label="business" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/academics/colleges/ccob/Ground_CCOB-110821-019%20full.png" data-imageref="img-academicMenuImage" class="nav__item">
+Business </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/college-of-education.php" role="menuitem" aria-label="education" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-Colleges-Education.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Education </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/college-of-arts-and-media" role="menuitem" aria-label="arts &amp; media" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-College-FineArts.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Arts &amp; Media </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/college-of-humanities-and-social-sciences" role="menuitem" aria-label="humanities &amp; social sciences" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-College-Humanities.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Humanities &amp; Social Sciences </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/college-of-nursing-and-health-care-professions.php" role="menuitem" aria-label="nursing &amp; health care" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-College-Nursing.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Nursing &amp; Health Care </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/college-of-science-engineering-and-technology.php" role="menuitem" aria-label="science, engineering &amp; technology" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-College-Engineering.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Science, Engineering &amp; Technology </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/college-of-theology" role="menuitem" aria-label="theology" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-Theology-Hover.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Theology </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/honors-college" role="menuitem" aria-label="honors" data-image="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/academics/Academics-College-Honors.jpg" data-imageref="img-academicMenuImage" class="nav__item">
+Honors </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div role="none">
+<div role="none">
+<a href="/academics/academic-policies.php" role="menuitem" aria-label="academic catalog &amp; policies" class="nav__item">
+Academic Catalog &amp; Policies </a>
+</div>
+<div role="none">
+<a href="/academics/accreditation" role="menuitem" aria-label="university accreditation &amp; regulation" class="nav__item">
+University Accreditation &amp; Regulation </a>
+</div>
+<div role="none">
+<a href="/academics/educational-alliances.php" role="menuitem" aria-label="educational alliances" class="nav__item">
+Educational Alliances </a>
+</div>
+<div role="none">
+<a href="/faculty-list" role="menuitem" aria-label="faculty directory" class="nav__item">
+Faculty Directory </a>
+</div>
+<div role="none">
+<a href="/academics/office-of-assessment" role="menuitem" aria-label="office of assessment" class="nav__item">
+Office of Assessment </a>
+</div>
+<div role="none">
+<a href="/academics/provost-message" role="menuitem" aria-label="provost message" class="nav__item">
+Provost Message </a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="dropdown" role="menuitem" aria-expanded="false" aria-controls="subMenu3" tabindex="3" id="subMenu3">
+<a href="/admissions" role="link" class="dropdown-toggle ">Admissions</a>
+<div class="sub-menu" role="none">
+<div class="sub-menu__content" role="none">
+<ul role="menu" aria-label="admissions">
+<li class="title" role="none">Admissions<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button class="subnav-close" aria-haspopup="true" aria-controls="subMenu3">
+Go back to Main Menu
+</button>
+</li>
+<li role="none" class="sub-content">
+<div role="none">
+<a href="/admissions/undergraduate" class="img-overlay link nav__item" role="menuitem">
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/admissions/Admissions-Tuition-2.jpg" class="img img-responsive" alt="a student and her family" aria-hidden="true" width="305" height="206" loading="lazy" />
+<div class="nav__item-title">
+Undergraduate Admissions
+</div>
+</a>
+</div>
+<div role="none">
+<a href="/admissions/graduate-doctoral" class="img-overlay link nav__item" role="menuitem">
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/admissions/Admissions-Requirements.jpg" class="img img-responsive" alt="graduate student on campus" aria-hidden="true" width="305" height="206" loading="lazy" />
+<div class="nav__item-title">
+Graduate &amp; Doctoral Admissions
+</div>
+</a>
+</div>
+<div role="none">
+<div role="none">
+<a href="/admissions" role="menuitem" aria-label="admission requirements" class="nav__item">
+Admission Requirements </a>
+</div>
+<div role="none">
+<a href="/admissions/college-transfer-center.php" role="menuitem" aria-label="college transfer center" class="nav__item">
+College Transfer Center </a>
+</div>
+<div role="none">
+<a href="/admissions/visit-gcu-campus" role="menuitem" aria-label="visit campus" class="nav__item">
+Visit Campus </a>
+</div>
+<div role="none">
+<a href="/admissions/campus-resources" role="menuitem" aria-label="campus resources" class="nav__item">
+Campus Resources </a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="dropdown" role="menuitem" aria-expanded="false" aria-controls="subMenu4" tabindex="4" id="subMenu4">
+<a href="/tuition-and-financial-aid" role="link" class="dropdown-toggle ">Tuition &amp; Financial Aid</a>
+<div class="sub-menu" role="none">
+<div class="sub-menu__content" role="none">
+<ul role="menu" aria-label="tuition &amp; financial aid">
+<li class="title" role="none">Tuition &amp; Financial Aid<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button class="subnav-close" aria-haspopup="true" aria-controls="subMenu4">
+Go back to Main Menu
+</button>
+</li>
+<li role="none" class="sub-content">
+<div role="none">
+<a href="/tuition-and-financial-aid" class="img-overlay link nav__item" role="menuitem">
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/experience/GCU-Experience-Online.jpg" class="img img-responsive" alt="woman going over tuition for classes" aria-hidden="true" width="305" height="206" loading="lazy" />
+<div class="nav__item-title">
+Tuition &amp; Financial Aid
+</div>
+</a>
+</div>
+<div role="none">
+<div aria-expanded="false" aria-controls="links-Tuition">
+<a href="javascript:void(0)" role="menuitem" aria-label="tuition" class="nolink section-title">
+Tuition </a>
+<ul role="menu" aria-label="tuition" class="links" id="links-Tuition">
+<li class="title" role="none">Tuition<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-Tuition">
+Go back to Tuition &amp; Financial Aid
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/tuition/online-evening" role="menuitem" aria-label="online &amp; evening" class="nav__item">
+Online &amp; Evening </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/tuition/on-campus" role="menuitem" aria-label="on-campus" class="nav__item">
+On-Campus </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/tuition/housing-meal-costs" role="menuitem" aria-label="housing &amp; meal costs" class="nav__item">
+Housing &amp; Meal Costs </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/tuition/other-fees" role="menuitem" aria-label="other fees" class="nav__item">
+Other Fees </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/tuition/cost-attendance" role="menuitem" aria-label="cost of attendance" class="nav__item">
+Cost of Attendance </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div role="none">
+<div aria-expanded="false" aria-controls="links-FinancialAid">
+<a href="javascript:void(0)" role="menuitem" aria-label="financial aid" class="nolink section-title">
+Financial Aid </a>
+<ul role="menu" aria-label="financial aid" class="links" id="links-FinancialAid">
+<li class="title" role="none">Financial Aid<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-FinancialAid">
+Go back to Tuition &amp; Financial Aid
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/financial-aid/fafsa" role="menuitem" aria-label="fafsa" class="nav__item">
+FAFSA </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/financial-aid/scholarships-grants" role="menuitem" aria-label="scholarships &amp; grants" class="nav__item">
+Scholarships &amp; Grants </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/financial-aid/student-loans" role="menuitem" aria-label="student loans" class="nav__item">
+Student Loans </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="dropdown" role="menuitem" aria-expanded="false" aria-controls="subMenu5" tabindex="5" id="subMenu5">
+<a href="/why-gcu" role="link" class="dropdown-toggle ">Why GCU</a>
+<div class="sub-menu" role="none">
+<div class="sub-menu__content" role="none">
+<ul role="menu" aria-label="why gcu">
+<li class="title" role="none">Why GCU<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button class="subnav-close" aria-haspopup="true" aria-controls="subMenu5">
+Go back to Main Menu
+</button>
+</li>
+<li role="none" class="sub-content">
+<div role="none">
+<a href="/why-gcu" class="img-overlay link nav__item" role="menuitem">
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_340,h_227,c_fill,g_faces,f_auto,q_auto/https://www.gcu.edu/sites/default/files/media/images/menu/experience/GCU-Experience-Campus.jpg" class="img img-responsive" alt="havocs at a GCU basketball game" aria-hidden="true" width="305" height="206" loading="lazy" />
+<div class="nav__item-title">
+Why GCU
+</div>
+</a>
+</div>
+<div role="none">
+<div aria-expanded="false" aria-controls="links-StudentJourney">
+<a href="javascript:void(0)" role="menuitem" aria-label="student journey" class="nolink section-title">
+Student Journey </a>
+<ul role="menu" aria-label="student journey" class="links" id="links-StudentJourney">
+<li class="title" role="none">Student Journey<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-StudentJourney">
+Go back to Why GCU
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/online-learning" role="menuitem" aria-label="online learning" class="nav__item">
+Online Learning </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/campus-life" role="menuitem" aria-label="campus life" class="nav__item">
+Campus Life </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/evening-classes" role="menuitem" aria-label="evening classes" class="nav__item">
+Evening Classes </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/hybrid-learning" role="menuitem" aria-label="hybrid learning" class="nav__item">
+Hybrid Learning </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/military-university" role="menuitem" aria-label="military &amp; veteran" class="nav__item">
+Military &amp; Veteran </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/rotc-programs" role="menuitem" aria-label="rotc" class="nav__item">
+ROTC </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/international-students" role="menuitem" aria-label="international students" class="nav__item">
+International Students </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/native-american" role="menuitem" aria-label="native american" class="nav__item">
+Native American </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div role="none">
+<div aria-expanded="false" aria-controls="links-OurStory">
+<a href="javascript:void(0)" role="menuitem" aria-label="our story" class="nolink section-title">
+Our Story </a>
+<ul role="menu" aria-label="our story" class="links" id="links-OurStory">
+<li class="title" role="none">Our Story<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-OurStory">
+Go back to Why GCU
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/university-snapshot" role="menuitem" aria-label="university snapshot" class="nav__item">
+University Snapshot </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/christian-identity-and-mission" role="menuitem" aria-label="christian identity &amp; mission" class="nav__item">
+Christian Identity &amp; Mission </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/why-gcu/history-of-gcu" role="menuitem" aria-label="history &amp; campus growth" class="nav__item">
+History &amp; Campus Growth </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/about/community-outreach-volunteering" role="menuitem" aria-label="community outreach" class="nav__item">
+Community Outreach </a>
+</div>
+</li>
+</ul>
+</div>
+<div aria-expanded="false" aria-controls="links-About">
+<a href="javascript:void(0)" role="menuitem" aria-label="about" class="nolink section-title">
+About </a>
+<ul role="menu" aria-label="about" class="links" id="links-About">
+<li class="title" role="none">About<button class="nav-close" aria-haspopup="true" aria-controls="headerNavigation">
+<span class="sr-only">Close Menu</span>
+</button>
+</li>
+<li class="goback" role="none">
+<button type="button" class="subnav-close" aria-haspopup="true" aria-controls="links-About">
+Go back to Why GCU
+</button>
+</li>
+<li role="none">
+<div role="none">
+<a href="/about/leadership-team" role="menuitem" aria-label="leadership team" class="nav__item">
+Leadership Team </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/about/locations" role="menuitem" aria-label="campus locations" class="nav__item">
+Campus Locations </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/blog" role="menuitem" aria-label="blog" class="nav__item">
+Blog </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/about/offices-services" role="menuitem" aria-label="offices" class="nav__item">
+Offices </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/about/contact" role="menuitem" aria-label="contact" class="nav__item">
+Contact </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/about/media-and-branding" role="menuitem" aria-label="media &amp; branding" class="nav__item">
+Media &amp; Branding </a>
+</div>
+</li>
+<li role="none">
+<div role="none">
+<a href="/coronavirus-disease-2019-information" role="menuitem" aria-label="covid-19 information" class="nav__item">
+COVID-19 Information </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="visible-mo" role="none">
+<a href="https://gcuportal.gcu.edu/" role="link" target="_blank" rel="noopener" class=" ">GCU Login</a>
+</li>
+<li class="footer" role="none">
+<button type="button" class="openRMI buttons button button--cta button--inline">
+Request Info
+</button>
+<a href="https://apply.gcu.edu/Register.aspx?sid=WEB&caid=Direct&aid=Apply.GCUweb" target="_blank" rel="noopener" class="buttons button button--inline">
+Apply
+<span class="sr-only">Open in New Window</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<form class="banner__search" method="get" action="/search">
+<label class="sr-only" for="mainSearch">Search by Keyword</label>
+<input type="text" name="q" autocomplete="off" id="mainSearch" placeholder="Search..." required>
+<span class="triangle" aria-hidden="true"></span>
+<button type="submit">
+<span class="sr-only">Submit Search Form</span>
+</button>
+</form>
+</div>
+</header>
+<main class="mainContent" id="main-content" tabindex="-1" aria-label="Main Website Content">
+
+<div id="rmiFormContainer">
+<div class="container" style="opacity: 0;">
+<div class="rmiForm hidden">
+<button id="rmiClose" class="button" data-cy="close-rmi">
+<svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z" />
+</svg>
+<span class="sr-only">Close Form</span>
+</button>
+<div class="wrapRmiForm">
+<div id="mainRMI" data-location="https://rmi-form-builder.gcu.edu/v1/generate?value=desktop" data-mobile="https://rmi-form-builder.gcu.edu/v1/generate?value=mobile">
+<p class="spinner"><span class="sr-only">Loading</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-swiftype-name="body" data-swiftype-type="text">
+<div>
+<div data-drupal-messages-fallback class="hidden"></div><div id="block-gcu-page-title">
+</div>
+<div id="block-gcu-content">
+<header class="container header-content">
+<h1 data-swiftype-name="title" data-swiftype-type="string" id="mainHeadingLabel" class="heading-label">
+<a class="heading-anchor" id="h-blog-post"></a>
+<span>Theology Thursday: What Are the Biblical Covenants?</span>
+</h1>
+</header>
+<div class="container breadcrumb-box-dt">
+<nav aria-label="Breadcrumbs">
+<ul>
+<li>
+<span>
+<a class="breadcrumb-page-level-link" href="/" aria-label="Home">Home</a>
+&nbsp;
+</span>
+</li>
+<li>
+<svg data-index="2" class="breadcrumb-arrow" aria-hidden="true" width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+<path fill="#333333" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z" />
+</svg>
+<span>
+<a class="breadcrumb-page-level-link" href="/blog/tag/theology-thursday" aria-label="Theology Thursday">Theology Thursday</a>
+&nbsp;
+</span>
+</li>
+<li>
+<svg data-index="3" class="breadcrumb-arrow" aria-hidden="true" width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+<path fill="#333333" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z" />
+</svg>
+<span class="breadcrumb-last-link">Theology &amp; Ministry</span>
+</li>
+</ul>
+</nav>
+</div>
+<section class="container" aria-label="Theology Thursday: What Are the Biblical Covenants?">
+<div class="row">
+<div class="col-md-8 extra-padding">
+<div class="blog-byline margin-bottom-20">
+<span class="press-date">December 05, 2019</span>
+by <a href="/blog/author/brett-berger-thm">Brett A. Berger, ThM</a>
+<span>in [ <a href="/blog/theology-ministry">Theology &amp; Ministry</a> ]</span>
+</div>
+<div class="blog-leadin">
+<p></p>
+</div>
+<style>
+        @media(min-width: 320px) {
+          .blog-leadin__image {
+            min-height: 195px;
+          }
+        }
+        @media(min-width: 480px) {
+          .blog-leadin__image {
+            min-height: 277px;
+          }
+        }
+        @media(min-width: 768px) {
+          .blog-leadin__image {
+            min-height: 454px;
+          }
+        }
+      </style>
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/media/Bible%20Study.jpg" srcset="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_320,h_240,c_fill,g_faces,q_auto,f_auto/https://www.gcu.edu/sites/default/files/media/Bible%20Study.jpg 320w,https://res.cloudinary.com/grand-canyon-university/image/fetch/w_480,h_316,c_fill,g_faces,q_auto,f_auto/https://www.gcu.edu/sites/default/files/media/Bible%20Study.jpg 480w,https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto,f_auto/https://www.gcu.edu/sites/default/files/media/Bible%20Study.jpg 750w" sizes="(max-width: 479px) 320px, (max-width: 767px) 480px, 750px" class="blog-leadin__image gray-border" style="margin-bottom: 30px; width: 100%; height: auto;" alt="Man conducting Bible study" />
+<div class="ck5-container">
+<div>
+<p>For a long time, I had a tough time understanding the Bible. That is not to say that I have all my questions answered now. It is simply to say that when I read the Bible in the past, there seemed to be a disconnection between my expectations, my preconception, and what the Bible said. It was difficult for me to see how the whole thing fit together, especially when it came to the relationship between the Old and New Testaments.</p>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+<li><a href="#h-a-conceptual-gap">A Conceptual Gap</a></li>
+<li><a href="#h-the-concept-of-covenant">The Concept of Covenant</a></li>
+<li><a href="#h-the-biblical-covenants">The Biblical Covenants</a></li>
+</ul>
+<h2 id="h-a-conceptual-gap">A Conceptual Gap</h2>
+<p>Part of this difficulty is the distance of time, space, and culture that stands between the texts of the Bible and me. A major gap stands between 21st century America and first-century Palestine that can make understanding difficult. Why is so much ink spent on circumcision? Why is eating meat such a moral dilemma for these people? Why are the Samaritans so despised?</p>
+<p>However, there was a concept that made almost everything make sense once I understood it. The concept is covenant, and I would argue that it is one of the most important concepts to understand if you want to understand the Bible rightly.</p>
+<h2 id="h-the-concept-of-covenant">The Concept of Covenant</h2>
+<p>A covenant in the ancient world was similar to what we in the modern world would call a contract, treaty, or a will. Each covenant established the basis of a relationship, conditions for that relationship, promises and conditions of the relationship and consequences if those conditions were unmet. One of the most familiar examples of a covenant for us is marriage.</p>
+<p>Why do I think understanding covenant is so important? It is because the covenants provide the skeletal framework for how the whole biblical story holds together. As the story of the Bible unfolds, we see God is a covenant making, covenant keeping, and covenant fulfilling God. God establishes covenants with certain people and these covenants are the way God unfolds his redemptive plan. The covenants are the structure of the story.</p>
+<h2 id="h-the-biblical-covenants">The Biblical Covenants</h2>
+<p>There are several covenants in the Bible, but five covenants are crucial for understanding the story of the Bible and God’s redemptive plan: the Noahic Covenant, the Abrahamic Covenant, The Mosaic Covenant, the Davidic Covenant and the New Covenant.</p>
+<h3>The Noahic Covenant</h3>
+<p>From Genesis 9, this is a covenant God establishes with Noah after the flood in which he resets and renews the blessings of creation, reaffirming God’s image in humanity and the work of dominion. This covenant promises the preservation of humanity and provides for the restraint of human evil and violence.</p>
+<h3>The Abrahamic Covenant</h3>
+<p>See Genesis 12 and 15. This is the most central to the biblical story. In it, God promises Abraham a land, descendants and blessing. This blessing promised to Abraham would extend through him to all the peoples of the earth. Understanding the Abrahamic Covenant is paramount to understanding theological concepts like a Promised Land, election, the people of God, inheritance and so on. It provides context for understanding practices like circumcision, conflicts with surrounding nations and divisions between Jews and Gentiles.</p>
+<h3>The Mosaic Covenant</h3>
+<p>See Exodus 19 and 24. This is the covenant God establishes with the people of Israel at Mt. Sinai after he led them out of Egyptian slavery. With it, God supplies the Law that is meant to govern and shape the people of Israel in the Promised Land. This Law was not a means of salvation but would distinguish the people from the surrounding nations as a special kingdom of priests (Exodus 19:1-7). This covenant was conditional and defined blessings and curses based on obedience or disobedience (see Deuteronomy 28-29). Understanding the Mosaic Covenant is foundational to understanding the cycles of blessing and curse in the Old Testament, the exiles of Israel and Judah, the disputes between Jesus and the Pharisees and Paul’s pastoral teachings about law and grace.</p>
+<h3>The Davidic Covenant</h3>
+<p>See 2 Samuel 7. This is the covenant where God promises a descendant of David to reign on the throne over the people of God. It is a continuation of the earlier covenants in that it promises a Davidic king as the figure through whom God would secure the promises of land, descendants, and blessing. This covenant becomes the basis for hope of a Messiah and makes sense of the Gospels’ concern to show Jesus was the rightful King of the Jews.</p>
+<h3>The New Covenant</h3>
+<p>See Jeremiah 31:31-34 and Luke 22:14-23. This is language first used in Jeremiah’s promise of rescue and renewal of the exiled people of God in Babylon. It promises a coming day when God would make a new covenant unlike the one which Israel had broken. This coming day would bring forgiveness of sin, internal renewal of the heart, and intimate knowledge of God. On the night of Jesus’s Last Supper, Jesus takes the cup and declares that his death would be the inauguration of this new covenant.</p>
+<p>These five covenants provide the skeletal framework and context for practically every page of the Bible. They are fundamental to understanding the Bible rightly. The Old Testament covenants establish promises that look forward to fulfillment. Much of the New Testament is concerned to show how Jesus Christ fulfills these covenant promises and what life should look like for a people living in the New Covenant inaugurated by his death and resurrection.</p>
+<p>Hopefully, this brief explanation of the biblical covenants will be a starting point to help you move toward greater understanding of the Bible as it did for me.</p>
+<p><em>Want more? Check out all the articles from <a href="/blog/theology-ministry" target="_blank">Theology Thursday</a> and return each week for a new post. Learn more about the <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="3a09c2e2-3521-4a4f-8125-b49a12083487" href="/college-of-theology" target="_blank" title="College of Theology">College of Theology</a>  and <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="f8505236-5d2e-44fb-8148-168427fae167" href="/degree-programs/theology-ministry" target="_blank" title="Theology and Ministry">available degrees</a> by checking out our website or requesting more information with the button on this page.</em></p>
+</div>
+</div>
+<div class="blogs-disclaimer">
+</div>
+<div class="blogs-disclaimer">
+<p>The views and opinions expressed in this article are those of the author’s and do not
+necessarily reflect the official policy or position of Grand Canyon University. Any sources cited were
+accurate as of the publish date.</p>
+</div>
+<div class="blog-tags">
+<p class="h4">Tags</p>
+<ul>
+<li>
+<a href="/blog/tag/theology-thursday">Theology Thursday</a>
+</li>
+</ul>
+</div>
+<div data-hydrate-once="1">
+<div class="social-icons social--blog" data-module="socialShare">
+<a href="https://www.facebook.com/dialog/share?href=https%3A%2F%2Fwww.gcu.edu%2Fblog%2Ftheology-ministry%2Ftheology-thursday-what-are-biblical-covenants&amp;quote=Theology%20Thursday%3A%20What%20Are%20the%20Biblical%20Covenants%3F&amp;display=popup" class="js-social-share-popup" data-popup-height="300" data-share="facebook" data-popup-width="600" data-tooltip="top" title="Share on Facebook" rel="noopener noreferrer" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><path fill="#1877f2" d="M24 12c0-6.628-5.373-12-12-12S0 5.372 0 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078V12h3.047V9.356c0-3.007 1.791-4.669 4.532-4.669 1.313 0 2.687.235 2.687.235v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12" /></g></g></svg>
+</a>
+<a href="https://twitter.com/intent/tweet?text=Theology%20Thursday%3A%20What%20Are%20the%20Biblical%20Covenants%3F&amp;via=gcu&amp;url=https%3A%2F%2Fwww.gcu.edu%2Fblog%2Ftheology-ministry%2Ftheology-thursday-what-are-biblical-covenants" class="js-social-share-popup" data-share="twitter" data-popup-height="300" data-popup-width="600" data-tooltip="top" title="Share on Twitter" rel="noopener noreferrer" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 20"><g><g><path fill="#1da1f2" d="M7.548 20c9.057 0 14.01-7.694 14.01-14.366 0-.218-.005-.436-.014-.652A10.17 10.17 0 0 0 24 2.368a9.644 9.644 0 0 1-2.828.794A5.045 5.045 0 0 0 23.337.37a9.71 9.71 0 0 1-3.126 1.226A4.864 4.864 0 0 0 16.617 0c-2.72 0-4.925 2.261-4.925 5.048 0 .397.044.782.128 1.152C7.728 5.989 4.099 3.98 1.67.925a5.127 5.127 0 0 0-.666 2.537 5.08 5.08 0 0 0 2.19 4.203 4.793 4.793 0 0 1-2.23-.632v.065c0 2.445 1.697 4.487 3.95 4.95a4.821 4.821 0 0 1-2.224.086c.627 2.006 2.445 3.466 4.6 3.507A9.725 9.725 0 0 1 0 17.732 13.69 13.69 0 0 0 7.548 20" /></g></g></svg>
+</a>
+<a href="mailto:?subject=Theology%20Thursday%3A%20What%20Are%20the%20Biblical%20Covenants%3F&amp;body=https%3A%2F%2Fwww.gcu.edu%2Fblog%2Ftheology-ministry%2Ftheology-thursday-what-are-biblical-covenants" title="Share via eMail" data-share="mail" data-tooltip="top">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18"><g><g><path fill="#522398" d="M8.56 10.06C2.34 5.544 1.865 5.146.43 4.026A1.129 1.129 0 0 1 0 3.14V2.25A2.25 2.25 0 0 1 2.25 0h19.5A2.25 2.25 0 0 1 24 2.25v.89c0 .348-.16.676-.431.887-1.435 1.125-1.908 1.518-8.128 6.032-.788.572-2.353 1.96-3.441 1.941-1.087.019-2.653-1.369-3.44-1.94zm14.985-4.116a.282.282 0 0 1 .455.22v9.586A2.25 2.25 0 0 1 21.75 18H2.25A2.25 2.25 0 0 1 0 15.75V6.169a.28.28 0 0 1 .455-.22c1.05.815 2.442 1.851 7.223 5.324.99.722 2.658 2.241 4.322 2.232 1.673.014 3.375-1.538 4.327-2.232 4.78-3.473 6.168-4.514 7.218-5.33z" /></g></g></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="col-md-4 extra-padding">
+<div style="min-height: 580px;" id="inlineRMI" data-module="formBuilder" data-location="https://rmi-form-builder.gcu.edu/v1/generate?value=inline" data-mobile="https://rmi-form-builder.gcu.edu/v1/generate?value=inline&amp;affiliate=MOBI" data-preset="[{ &quot;degree_level_id&quot;: &quot;2&quot; }, { &quot;modality_id&quot;: &quot;2&quot; }]">
+<div class="wrapInlineRmiForm">
+<p class="spinner"><span class="sr-only">Loading Form</span></p>
+</div>
+</div>
+<div class="margin-30y">
+<hr>
+</div>
+<div id="LearnMore-Lift">
+<div class="quick-links">
+<p class="h4">More About GCU</p>
+<ul>
+<li><a href="/why-gcu/campus-life">Campus Experience</a></li>
+<li><a href="/degree-programs/online-degrees">Online Experience</a></li>
+</ul>
+</div>
+</div>
+<div class="acquiaLift-blogs"></div>
+</div>
+</div>
+<div id="blog-author-component" data-module="blogAuthor" data-bio="Brett&#x20;was&#x20;born&#x20;and&#x20;raised&#x20;in&#x20;Arizona.&#x00A0;&#x20;He&#x20;completed&#x20;an&#x20;MDiv&#x20;from&#x20;Phoenix&#x20;Seminary&#x20;and&#x20;a&#x20;ThM&#x20;from&#x20;Gordon-Conwell&#x20;Theological&#x20;Seminary.&#x00A0;&#x20;His&#x20;academic&#x20;interests&#x20;include&#x20;biblical&#x20;theology,&#x20;ethics,&#x20;and&#x20;spiritual&#x20;formation.&#x00A0;&#x20;He&#x20;and&#x20;his&#x20;wife,&#x20;Audra,&#x20;have&#x20;three&#x20;sons.&#x20;In&#x20;addition&#x20;to&#x20;his&#x20;work&#x20;at&#x20;GCU&#x20;as&#x20;Coordinator&#x20;of&#x20;the&#x20;Barnabas&#x20;Pastoral&#x20;Program,&#x20;he&#x20;serves&#x20;his&#x20;church&#x20;by&#x20;leading&#x20;a&#x20;small&#x20;group&#x20;Bible&#x20;Study&#x20;and&#x20;a&#x20;ministry&#x20;focused&#x20;on&#x20;the&#x20;integration&#x20;of&#x20;faith&#x20;and&#x20;work.&#x00A0;&#x0A;" data-name="Brett&#x20;A.&#x20;Berger,&#x20;ThM" data-url="&#x2F;blog&#x2F;author&#x2F;brett-berger-thm" data-image="&#x2F;9j&#x2F;4AAQSkZJRgABAQEBLAEsAAD&#x2F;4QD&#x2B;RXhpZgAATU0AKgAAAAgABgEOAAIAAAABAAAAAAESAAMAAAABAAEAAAExAAIAAAAZAAAAVgE7AAIAAAANAAAAcIKYAAIAAAABAAAAAIdpAAQAAAABAAAAfgAAAABDYXB0dXJlIE9uZSAxMSBNYWNpbnRvc2gAAFRyYXZpcyBOZWVseQAAAAOkMQACAAAADQAAAKikMgAFAAAABAAAALakNAACAAAAHwAAANYAAAAAMDYyMDIzMDAzMjM3AAAAAAAYAAAAAQAAAEYAAAABAAAAAAAAAAAAAAAAAAAAAENhbm9uIEVGIDI0LTcwbW0gZi8yLjhMIElJIFVTTQAA&#x2F;&#x2B;ESymh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4NCjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNi4wIj4NCgk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPg0KCQk8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmF1eD0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC9hdXgvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnBob3RvbWVjaGFuaWM9Imh0dHA6Ly9ucy5jYW1lcmFiaXRzLmNvbS9waG90b21lY2hhbmljLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIiB4bWxuczpwbHVzPSJodHRwOi8vbnMudXNlcGx1cy5vcmcvbGRmL3htcC8xLjAvIiB4bWxuczpJcHRjNHhtcEV4dD0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcEV4dC8yMDA4LTAyLTI5LyIgeG1sbnM6ZXhpZkVYPSJodHRwOi8vY2lwYS5qcC9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQ2FwdHVyZSBPbmUgMTEgTWFjaW50b3NoIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxOC0wOC0xNFQwODo0Nzo1Ni4yNyIgeG1wOlJhdGluZz0iMCIgYXV4OlNlcmlhbE51bWJlcj0iMDYyMDIzMDAzMjM3IiBhdXg6TGVuc0luZm89IjI0LzEgNzAvMSAwLzAgMC8wIiBhdXg6TGVucz0iQ2Fub24gRUYgMjQtNzBtbSBmLzIuOEwgSUkgVVNNIiBhdXg6TGVuc1NlcmlhbE51bWJlcj0iNTE1NTAwMTAzMSIgYXV4OkZsYXNoQ29tcGVuc2F0aW9uPSIwLzEiIGF1eDpGaXJtd2FyZT0iRmlybXdhcmUgVmVyc2lvbiAxLjAuMyIgcGhvdG9zaG9wOkxlZ2FjeUlQVENEaWdlc3Q9IjI5NzYwOEFDOEUyOEJFNjJGREUyRjJFOEQ1QTU5RkMyIiBwaG90b3Nob3A6Q3JlZGl0PSJUcmF2aXMgTmVlbHkiIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAxOC0wOC0xNFQwMDowMDowMCIgcGhvdG9zaG9wOkNhcHRpb25Xcml0ZXI9IiIgcGhvdG9zaG9wOkNpdHk9IiIgcGhvdG9zaG9wOlN0YXRlPSIiIHBob3Rvc2hvcDpDb3VudHJ5PSIiIHBob3Rvc2hvcDpBdXRob3JzUG9zaXRpb249IiIgcGhvdG9zaG9wOkNhdGVnb3J5PSIiIHBob3Rvc2hvcDpIZWFkbGluZT0iIiBwaG90b3Nob3A6SW5zdHJ1Y3Rpb25zPSIiIHBob3Rvc2hvcDpUcmFuc21pc3Npb25SZWZlcmVuY2U9IiIgcGhvdG9zaG9wOlNvdXJjZT0iIiBwaG90b21lY2hhbmljOkNvbG9yQ2xhc3M9IjAiIHBob3RvbWVjaGFuaWM6VGFnZ2VkPSJGYWxzZSIgcGhvdG9tZWNoYW5pYzpQcmVmcz0iMDowOjA6LTAwMDAxIiBwaG90b21lY2hhbmljOlBNVmVyc2lvbj0iUE01IiBJcHRjNHhtcENvcmU6SW50ZWxsZWN0dWFsR2VucmU9IiIgSXB0YzR4bXBDb3JlOkNvdW50cnlDb2RlPSIiIElwdGM0eG1wQ29yZTpMb2NhdGlvbj0iIiBwbHVzOkltYWdlU3VwcGxpZXJOYW1lPSIiIHBsdXM6SW1hZ2VTdXBwbGllcklEPSIiIHBsdXM6SW1hZ2VTdXBwbGllckltYWdlSUQ9IiIgSXB0YzR4bXBFeHQ6UmVnT3JnSWQ9IiIgSXB0YzR4bXBFeHQ6UmVnSXRlbUlkPSIiIElwdGM0eG1wRXh0OkRpZ2l0YWxJbWFnZUdVSUQ9IiIgSXB0YzR4bXBFeHQ6UGVyc29uSW5JbWFnZT0iIiBleGlmRVg6Qm9keVNlcmlhbE51bWJlcj0iMDYyMDIzMDAzMjM3IiBleGlmRVg6TGVuc01vZGVsPSJDYW5vbiBFRiAyNC03MG1tIGYvMi44TCBJSSBVU00iPg0KCQkJPHBob3Rvc2hvcDpTdXBwbGVtZW50YWxDYXRlZ29yaWVzPg0KCQkJCTxyZGY6U2VxPg0KCQkJCQk8cmRmOmxpLz4NCgkJCQk8L3JkZjpTZXE&#x2B;DQoJCQk8L3Bob3Rvc2hvcDpTdXBwbGVtZW50YWxDYXRlZ29yaWVzPg0KCQkJPGRjOmRlc2NyaXB0aW9uPg0KCQkJCTxyZGY6QWx0Pg0KCQkJCQk8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiLz4NCgkJCQk8L3JkZjpBbHQ&#x2B;DQoJCQk8L2RjOmRlc2NyaXB0aW9uPg0KCQkJPGRjOnRpdGxlPg0KCQkJCTxyZGY6QmFnPg0KCQkJCQk8cmRmOmxpPkJyZXR0IEJlcmdlci5USUY8L3JkZjpsaT4NCgkJCQk8L3JkZjpCYWc&#x2B;DQoJCQk8L2RjOnRpdGxlPg0KCQkJPGRjOmNyZWF0b3I&#x2B;DQoJCQkJPHJkZjpCYWc&#x2B;DQoJCQkJCTxyZGY6bGk&#x2B;VHJhdmlzIE5lZWx5PC9yZGY6bGk&#x2B;DQoJCQkJPC9yZGY6QmFnPg0KCQkJPC9kYzpjcmVhdG9yPg0KCQkJPGRjOnJpZ2h0cz4NCgkJCQk8cmRmOkFsdD4NCgkJCQkJPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ii8&#x2B;DQoJCQkJPC9yZGY6QWx0Pg0KCQkJPC9kYzpyaWdodHM&#x2B;DQoJCQk8ZGM6c3ViamVjdD4NCgkJCQk8cmRmOlNlcT4NCgkJCQkJPHJkZjpsaT4xOFBITzAzOTE8L3JkZjpsaT4NCgkJCQk8L3JkZjpTZXE&#x2B;DQoJCQk8L2RjOnN1YmplY3Q&#x2B;DQoJCQk8SXB0YzR4bXBDb3JlOlNjZW5lPg0KCQkJCTxyZGY6U2VxPg0KCQkJCQk8cmRmOmxpLz4NCgkJCQk8L3JkZjpTZXE&#x2B;DQoJCQk8L0lwdGM0eG1wQ29yZTpTY2VuZT4NCgkJCTxJcHRjNHhtcENvcmU6U3ViamVjdENvZGU&#x2B;DQoJCQkJPHJkZjpTZXE&#x2B;DQoJCQkJCTxyZGY6bGkvPg0KCQkJCTwvcmRmOlNlcT4NCgkJCTwvSXB0YzR4bXBDb3JlOlN1YmplY3RDb2RlPg0KCQkJPGV4aWZFWDpMZW5zU3BlY2lmaWNhdGlvbj4NCgkJCQk8cmRmOlNlcT4NCgkJCQkJPHJkZjpsaT4yNC8xPC9yZGY6bGk&#x2B;DQoJCQkJCTxyZGY6bGk&#x2B;NzAvMTwvcmRmOmxpPg0KCQkJCQk8cmRmOmxpPjAvMDwvcmRmOmxpPg0KCQkJCQk8cmRmOmxpPjAvMDwvcmRmOmxpPg0KCQkJCTwvcmRmOlNlcT4NCgkJCTwvZXhpZkVYOkxlbnNTcGVjaWZpY2F0aW9uPg0KCQk8L3JkZjpEZXNjcmlwdGlvbj4NCgk8L3JkZjpSREY&#x2B;DQo8L3g6eG1wbWV0YT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSd3Jz8&#x2B;&#x2F;&#x2B;0AkFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAABXHAFaAAMbJUccAgAAAgAEHAIZAAkxOFBITzAzOTEcAjcACDIwMTgwODE0HAI8AAYwMDAwMDAcAlAADFRyYXZpcyBOZWVseRwCbgAMVHJhdmlzIE5lZWx5ADhCSU0EJQAAAAAAECF5UvmZCsNZZpERGHRToNv&#x2F;4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFjcHJ0AAABUAAAADNkZXNjAAABhAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAAABRyWFlaAAACGAAAABRnWFlaAAACLAAAABRiWFlaAAACQAAAABRkbW5kAAACVAAAAHBkbWRkAAACxAAAAIh2dWVkAAADTAAAAIZ2aWV3AAAD1AAAACRsdW1pAAAD&#x2B;AAAABRtZWFzAAAEDAAAACR0ZWNoAAAEMAAAAAxyVFJDAAAEPAAACAxnVFJDAAAEPAAACAxiVFJDAAAEPAAACAx0ZXh0AAAAAENvcHlyaWdodCAoYykgMTk5OCBIZXdsZXR0LVBhY2thcmQgQ29tcGFueQAAZGVzYwAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA&#x2B;EAAC2z2Rlc2MAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAAC5JRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAC5JRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZpZXcAAAAAABOk&#x2F;gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZWiAAAAAAAEwJVgBQAAAAVx&#x2F;nbWVhcwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAo8AAAACc2lnIAAAAABDUlQgY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA&#x2B;AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB&#x2F;gICwgfCDIIRghaCG4IggiWCKoIvgjSCOcI&#x2B;wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ&#x2B;woRCicKPQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N&#x2B;A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg&#x2B;zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR&#x2B;UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h&#x2B;yInIlUigiKvIt0jCiM4I2YjlCPCI&#x2F;AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneierJ9woDSg&#x2F;KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi&#x2B;RL8cv&#x2F;jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0zRjN&#x2F;M7gz8TQrNGU0njTYNRM1TTWHNcI1&#x2F;TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA&#x2B;oD7gPyE&#x2F;YT&#x2B;iP&#x2B;JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS&#x2B;JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0&#x2F;dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW&#x2B;VcNVyGXNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg&#x2F;GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg&#x2F;aJZo7GlDaZpp8WpIap9q92tPa6dr&#x2F;2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9QX2hfgF&#x2B;Yn7CfyN&#x2F;hH&#x2F;lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmIzokziZmJ&#x2F;opkisqLMIuWi&#x2F;yMY4zKjTGNmI3&#x2F;jmaOzo82j56QBpBukNaRP5GokhGSepLjk02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ&#x2F;JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ&#x2B;Ln&#x2F;qgaaDYoUehtqImopajBqN2o&#x2B;akVqTHpTilqaYapoum&#x2F;adup&#x2B;CoUqjEqTepqaocqo&#x2B;rAqt1q&#x2B;msXKzQrUStuK4trqGvFq&#x2B;LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2Pvgq&#x2B;hL7&#x2F;v3q&#x2F;9cBwwOzBZ8Hjwl&#x2F;C28NYw9TEUcTOxUvFyMZGxsPHQce&#x2F;yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI&#x2F;0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba&#x2B;9uA3AXcit0Q3ZbeHN6i3ynfr&#x2B;A24L3hROHM4lPi2&#x2B;Nj4&#x2B;vkc&#x2B;T85YTmDeaW5x&#x2F;nqegy6LzpRunQ6lvq5etw6&#x2F;vshu0R7ZzuKO6070DvzPBY8OXxcvH&#x2F;8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio&#x2B;Tj5x&#x2F;pX&#x2B;uf7d&#x2F;wH&#x2F;Jj9Kf26&#x2F;kv&#x2B;3P9t&#x2F;&#x2F;&#x2F;&#x2F;2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz&#x2F;2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz&#x2F;wAARCAGkAVADASIAAhEBAxEB&#x2F;8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL&#x2F;8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4&#x2B;Tl5ufo6erx8vP09fb3&#x2B;Pn6&#x2F;8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL&#x2F;8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3&#x2B;Pn6&#x2F;9oADAMBAAIRAxEAPwD1pE2kGpo156e9Cx4HFSRpj1zXKeoOVc&#x2F;nTxHzSxrkU9Fx&#x2B;dUAijip1XI&#x2F;QU1IstUiJgUAKq8cVJGcHr&#x2B;VNCHrT1T2&#x2F;KgB68gVIgyencZpAmD2&#x2F;KnqlADgpz9KDz7enFPUnd&#x2B;tKy5&#x2F;n9aAGou3NAHPrTljYrT1GRQAxTxz9acozTinH&#x2B;eKAvHFADe9KF5P&#x2B;cU7b14pyR5P9KAGEc&#x2F;09aVQQKV2WJdzEKrcAnvmnKPkz1HXigBhXNL0Wob3UoNPsmuJZVWEY3SdQo9T7VRufFdlHpUVx5v7udI3QqN23fjZnHTJPBPBx1xU8yWg&#x2B;Vs0&#x2F;u0hTn8OlOtplvLaOaNg0cihgQeDT2TB&#x2F;wAaoRAwIpAN2KmIx9PTFM2fNQBCwyKYy5&#x2F;lU7JgfdphU46UAQMvFN8vK&#x2F;1qYrmg5FAEDJg96TZUmzp&#x2F;jShePegCApyc9ccVEwyPWp3HNQspwaAIJI&#x2B;f0zTGX5fzyamZON2ajYHbQBXZcf41C65P61aePJqJlGfegCtKtV3XBzyfpVuVfmqFlyf9mgCsw&#x2B;Wo3GPU&#x2F;SrDp8vSoWXHSgDWVf8AD6U9YufTAojGB&#x2B;NSqARUgNMO7B&#x2F;r1p8cVPjXn9amWPB6e9UA1I&#x2F;8&#x2B;tSLF&#x2B;H9Kese1d3&#x2B;RTwn&#x2F;wCv0oAI1yKcFz&#x2F;9anIm0&#x2B;9SBMAfWgBojwBTgmDn&#x2B;KnhVzTwuT60ANVOMD1p&#x2B;zj3P6U&#x2F;bk0bcUAN25FCrtFOUZ4pypjHegBu3ihV9KkAz&#x2F;PNNkGCvP3j&#x2B;XU&#x2F;0oAFXJxTYLjznZY47iRo5PLkWKNpHQ9sqBnkYIPTB61X1bTby&#x2F;tpPsd01nIqHDhBJjjOSGBHHX&#x2B;o5r4w&#x2F;az&#x2F;AGgbfw5qCw3vivwn4i1PS3JZ7K2mtpF2kkRSPHLNF0YjDqGXdlejY56&#x2B;IVJXa&#x2F;I2o0XVdkfS3j&#x2F;46eH&#x2F;AAT4f&#x2B;2ahdW5try2guZUkcBEinkKxHdn7mA&#x2B;Su4fIzKM8N80al&#x2F;wUfvtL8RHw&#x2F;aWep3Edxu&#x2B;y3chhS&#x2B;lVNjAEqWikm&#x2B;fauWjLbNsgBYg&#x2F;MqfHGb4lW2o28djpi3FzbG3FxFOAJowoB&#x2B;STKSMnXK7SC25Sr7i1&#x2B;006y8d2WnaktnpdtdXVyI0uYoAqx3vDKJUxtVTIVPCgAOw52uU8fEY6Utnb&#x2B;up7GHy9L4tT2zWP2&#x2B;vF1rq19cR2KanaW&#x2F;&#x2B;kAyhIbldqFjiMDYQUKsxIYAcjBBaTrfhb&#x2B;17HJ4Rs7WbSD5d0j20SC4W3a0mbGIXdsoylsxiOQD5Jo9zDk18w&#x2F;FT4zWumadPdQ29w1vMB9ps4pD9u0i6DNFLEjsCf3e1ihcNlTtJfG4Y&#x2B;vfFnTdQu7bVrTZbzhorDXLeAhYdQ8yFZklVDkKwZJ1KnJ2gBj1NcccRUbTud0sHTSskff37Ov7SljqviiTREuLyTS5LZbnTxdQ7ZYegeAHPzbODglmBfH3Rx9AWt9HeW8My7tlwispx8vIzjNfjn8PvGkl&#x2F;ayabdXDRyeINPFsWctOunndczvKoJzhUixycr5incAoLfQn7NP8AwUxi&#x2B;F2uTaH4tvL688NyxJd27yTfaptKUvsYrIQGKgLyhOMsXXyyWWX0sHjLe5PY8rGYJ&#x2F;HDfqfoZgA9OORTSOKyfh&#x2F;8QNH&#x2B;Jvh2HVNF1LTdU0&#x2B;cApNZXaXEbEgNwyk9mU844YHHNbLjD46V7W&#x2B;qPHImTjpimOuP6VOVxnrTHXmgCBVyfxoKZFSeXgUu3H9c0DICnNNYc1My46elMK5P40AVmXa3emMvy1Oy7jxTWGVoArsARxUUi5Wp3XIqN0wuaAISuPaq8i&#x2F;rViReaidP8&#x2B;tAFaRPn&#x2B;h&#x2F;Ko3T&#x2B;XarTx8&#x2F;&#x2F;WqJ0xu96AKkoqHGM8VbePaPwqKRflNAGkif59akjXGP84oVMH8afs5FSA9Ih&#x2F;SptnX6&#x2B;tNjXOKlTr&#x2F;gaABUyevHepU5H5UImfyp6Ljk&#x2F;j70wFAwKcF57&#x2F;X1oQZ&#x2F;&#x2F;VUgXp&#x2B;lMBAop&#x2B;OaUrmlxhuntQAIMn6&#x2B;1OAyf5ULHluv6U709&#x2B;tABs69TSqMev8AhQD8pz6UobI&#x2F;pQAFM1zvxE&#x2B;Ill4A0C41C6F5ItsjSBbdA0kpAJKoG6njnoAOSQMmtHxN4iXw3otxeGGaZoY2ZY41DM5Az1JCqPV3IRRySBX59ftz&#x2F;tv33iLw3caXCsOn2c0hhlinuEa3mYEMEcKymfDBGCkhOjcj5W4cXi1SXKviex14XCuq7vZbnI&#x2F;tmft0658S7do4Yf7B8Nw3Uqyrdaoty98YSOI41XZjdjL7tquvBwDn4z8Z&#x2F;G68&#x2B;Isqx2tjLcSW&#x2F;wAuJfljccDCojdR6s7Nggnqcvj0LxZ&#x2B;0P8AFT&#x2B;zdFtL7W7zUAgihijBihTAAPyYEcS7icjai5x3Gf0b&#x2F;Yh&#x2F;4JQeG&#x2F;hQtnrXiy3tfEHiDIkRdjfZbVvRAxJYgHG488ZAXNeHisZSox9pWd5Pb&#x2B;v6R9Hl&#x2B;W1sTL2dBWit3&#x2F;X9dz5L&#x2F;ZQ&#x2F;Zg&#x2B;Ifj6ey1jR9FutItZUUi6lPkw3IwQGjUDc5IyQduBhTuYZz9WaR&#x2F;wTb8XeIb57qC2t9HlvAouxAwgtpyv3X8rlUdeV&#x2B;XCsuONwLN98&#x2B;FfAsNhHiKGONegGw9Pz&#x2F;ma77w&#x2F;4fVCq&#x2B;S20jgtjn39a&#x2B;ZrZtOrL3FY&#x2B;ww&#x2B;T0MPHXV&#x2B;Z&#x2B;fVn&#x2F;wAEhNQ8QXF5c6hesbi4jLzTIcGV9u0MwI&#x2F;1m3GWHJ5OSSSeU1b&#x2F;AII9Xtnc3Hkzt&#x2B;5hDAlc5IyAcAdh6dmOMda&#x2F;Vm304Qhdu1cDAGTgim32nL5ZYDazDt1x&#x2F;n&#x2B;dc31yutUzq9jRenIj8b9c&#x2F;wCCYPi7w06iOGR2JbLwtyFYl2wPpwfVeOeRXjvx7&#x2F;Yg8eeGtDmFvpNxrmn2rqrT2ULNcQp8znzI9wJCsAcgEfMMHtX7p69o7Swf6vZtGOn&#x2B;c1574s&#x2B;HNpq27dbxsy4bKrtYHsQRgg&#x2F;4VrRzipTfv6mVbKaFeNkrPyPwl&#x2F;Z2&#x2F;am8bfsreKZv&#x2B;EN1meHzF2zabLPJ9ln2uCC8Mp2KwWMLu2sSMjptz9t&#x2F;Az&#x2F;guZ4b16Ww0jxl4c1qHWLiaK3a50ixiFtIXOzzCs15vX5scDd8p3YX7tdt&#x2B;2v&#x2F;AMEvPDXx8sbq&#x2F;sYv7D8TKHKX1uMLctwf3yD5ZORy2A&#x2F;JOWOBX5X&#x2F;AB2&#x2B;APij4GfEGTRvEGkvZt5mIJ8nybxN21WSToVXAznBByWHNfYZfm0K0fdfyPhM2yGrh5XS07rb&#x2F;gf1Y&#x2F;fn4f8AjrT&#x2F;AIoeDrHXtHuLe60vUUEtvNG&#x2B;8Mp9cYw3qMnByOxrZVPT8Pevzb&#x2F;4Jhf8FFPAfhKy0fwL4o0&#x2B;Xw7eLb&#x2F;Zv7ae6nuLO4mU5HmwEP8AZGIZsvE3k&#x2F;LlljOXb9ILXV7W&#x2B;jRopldZFDo21lWRSMgqSACCOQRwa&#x2B;gp1FNaHzFSLi7MkK4Wmnt&#x2B;VSHlefwqNsYrQgYR&#x2F;Ko2Xn69vWpnXJxTGXLUBcrlct6e9NdOamP0ppAx0xQMrsM&#x2B;1RNyO3p0qdzzTCMigZA0e096hdPxFWHTHt68VHIuGxjgUAVpF574qKRMv61YkXJqu3tQBC5&#x2F;&#x2B;sKhl4FTSR4Pf&#x2F;CoXXg&#x2F;yoA2Y1yOKeFwaSM4FSbR8v0qdQCMY7fSp1xv&#x2B;aowmP8A9VOXgZ5pgTKmSfpUkY55qNGwv&#x2B;cVMnPamA5Bg&#x2F;0qSPAHpUf3cU9F4&#x2F;r1oAUcdqdnNN25Oeg6cU7HH5UAOQ4anbMnvTU4b8fzqQY&#x2F;&#x2B;sKCbiCPHv8ASkYLEjMx2qvVqkU4&#x2F;wAa5D44&#x2F;Fm3&#x2B;Cnww1TxHdQNd&#x2F;YlVbe3VSzXEzsEjjAHJLMRwOvqOtTKSinJjinJ8qPEP&#x2B;Cgfjy2Gl6d4Yk1OT7ZqbC4bTY7lI4lgBIElwGRg25&#x2F;lUPlCSQF&#x2B;TfXxtrXwEj&#x2B;NnjOHQ9HtbO3W3X555oS32aEnO7MyMWUnOEyCTnqcmvV&#x2F;gtr2ufF3xXf69q1xcLrWs3RlvZrcZ2hcRhTKowNsShAEVl2qCp5O33Tw54Ht&#x2F;C1p9ntczRsx&#x2B;cIFMpPLNxxjAxx2x0HA&#x2B;Mx2OcZyqLfofc5TlqqRjTe27K&#x2F;7JH7J&#x2F;hr4HaSyaNp8PnTY33TRL9ouj0DMQOBnO1B8qjtkkn6Z8JaE0dxs2bmUA7hztySf6VyXwp0pruDDJllwcN0A5xz&#x2F;T0x61654W0iO1Maoyq2753I547gfj1Pr2r4zEVp1Z3kz76nThRp8sFaxoaDpUcrbT8kfJLAcHj8un1Ga6&#x2F;RdNkJURxhlXHCcD6knH9enSmeH9OSYblHzK&#x2B;Ru6nAHT612HhnT5JId&#x2F;kMrLnAJ7fr6V04Wi3Y8&#x2F;EYq1yrFoDTKBIjYAH33z&#x2F;n8aJtBbcWC9uinNdlp&#x2F;h1podzR7jnkphhn8cdKfeaCsknzK&#x2B;PXYxb8ePpXq&#x2F;VdDy&#x2F;r6vY8v1HRFR2AA2LwMH&#x2B;dcnrfhgw7tiBU65&#x2F;DGP8fXrXsuteHwF&#x2B;X5u&#x2B;3BDEewIBP5Vy2s6AsCMwVl3cDjkDn&#x2F;635V5uIwb6HpYbHXPEPEGhB1cMr4Y4IUYwOOg6cYr57&#x2F;ak&#x2F;Zj0H42eC7rT9Tsre9huBvAYcq4yBIjYykg5GVOcZXocV9feJNMzE3lxqXX0PUen14&#x2F;GvLfHXh9UgjZVZoZDyh6j3z6Yxz3wa46VSdOaaZ6V41Y2kj8G&#x2F;wBon9njUvgN8W2sbw3U1vekzwXqxgR3aMR52VAwHVm5752kAZBr78&#x2F;4JXftkXFvDZ&#x2F;CnxreXLaldPNN4ev55fMW8SNQ0tuX5PmL8z5bJZWHUgs3Y&#x2F;tefs1Wvxf8Calp8qouoQ&#x2B;ZcafM6f6qYZHPfa2SrD0cn0x8HfD&#x2B;11iLQ&#x2F;7LZzpXiDw&#x2F;qMNzoGqzLtl068glCw&#x2B;Y3QxlswksGKsVyCGr7jLc0ckn1W&#x2F;&#x2B;Z&#x2B;f53kqpyfLs9V&#x2F;kfths&#x2B;Wo2TBrjf2d&#x2F;jVb&#x2F;ALQHwi0rxRDZvps18rLd2UgxJZToxSWI9ztYEA9xj3Fdo65HSvroyUldHw&#x2B;zsyNulNZcnHTmpCgFRscn2qguRlcimMDt4&#x2F;Wns2envTG4H&#x2B;eaCiJl9KjP09hUjnIpjdPagCI&#x2F;5NRSnmpW&#x2B;U1HK3OaAK7jc341Ey4Y&#x2F;NVhhg1BLjP&#x2B;FAFeUcVXkGR&#x2B;P51Yc9ev5VDIMrQBsKvH&#x2F;wBepFBOBTe1SIcDpUgPXn&#x2B;lLjB&#x2F;GkBJ6fy&#x2B;lPHJ&#x2F;GqAeh&#x2F;lUsRytRBen9aenyZ&#x2B;tAEydaf1FRK2RUgcHGM0ASA7faimnilb&#x2B;lADuh9KcD6dhTVXj6H86XHzelBI5Tu7j618S&#x2F;8ABWn4q3iX2g&#x2B;C7GZo&#x2F;MsptTuWjnWLy0YvEpcspVchJgDyyjc2FKqa&#x2B;2Rx9a&#x2F;Pf&#x2F;grjpNinxs8OysVhlbRftNxcGQMwAnZY0Ef8TdQgb5cszHCrmuXGK9OxthXapcf&#x2B;xZoySae32Owt7WEZWGWKE72Ax8w6lACuQzckqByqjH1Bo&#x2B;kNdNH5YWaSNcAlgct0JJ&#x2F;Ak&#x2B;36&#x2F;M&#x2F;7L2rSW9rbQxx&#x2F;J5YDgymYNI5VevO5jwCwxxjnHT6m8Cst3ut27KTIqjqQo4&#x2B;gPoeua&#x2F;OM1qWm0frGR07UVLuekfCm1&#x2B;xfu1UbjukwWGSRgZOPX0HtXqnh21SEKJvmk&#x2F;iX07nH14PPrXF&#x2F;DeyW1L8q00rdP7gH8&#x2F;u8&#x2F;5NddFdLBLtXCkv0APy&#x2F;X2&#x2F;&#x2B;tXiKVveZ6taXNdI7fQwGEYbLAKQAcjA5H64P5V2&#x2B;h3MWxWUnEvHJ2gYHTnGMc9fWvP&#x2F;AA0QD5yOGeRwmVJHy469PfGPfqK7zSLWTMcka7Y2YAcHI6&#x2B;3rjn3ya9rBy0PExcUlqdVZ3MLlcMnP3Wzk98evvU81xE6Y3HjnLcD&#x2B;VULaQ2xXdIq&#x2B;24cnHfn&#x2F;wCv79DTricE4V2AxwI8N&#x2F;LOOvHNewp6HhunqVNXmR4cFlYfdBB&#x2F;Tr9O9cdrreWkn8HnP9AMcdu&#x2F;HB&#x2B;ldRMJJ5GEsJjMeSDg7SM89h7H6Vy&#x2F;iO1ktB5fDbeTnoccfpn9a8&#x2F;FS0uerg4pOxxeqq1zcqqrtZ32YUdBz835Ef5yRy&#x2F;xE0XzbbcEwuAPlJXHHP0HHQdxXVazus7xjINvREY44Bxn8xj9az9Wi&#x2B;3WG7HGCOex7DHevDlZt3PajO1mj52&#x2B;Knhfy1d1Vhz8wQcgZwefzx9PavgT9qj4ZWfhz4kXmtfZ1hgvjcQ6lBB8puIJYjulVcErIFy&#x2F;AILR7jnMmz9Kfib5Zt5l2DcGDDPPvx35OPxxXy9&#x2B;0P8AChviTp&#x2F;2OFfJmuUeC3Y5CtJGS0Z3c4yVYE4AGRnIOD6OVztVX3HPm0VPDNv1Mf8A4I7&#x2F;ABlbxv8ADPxd4XnuftFx4Y1Xz1lP&#x2F;LeO5G9jtySp85ZmPJDeYGByWFfYrH5a&#x2F;Pj&#x2F;AIJMxR&#x2F;DX4469pM&#x2F;mRyeKNFWaABS0cjRSBzksQQyhmJIUhg4OQQ1foIWwF6&#x2B;tfpuFlenofkWKi1UdxJDtaozz&#x2F;nrT2OOM&#x2F;hUZ4Oc10GAxj81Iwx2pxOTj09ajc5&#x2F;rQIjbj&#x2B;WKjk4FSM&#x2F;B&#x2B;tRtQVcjPFRSHNSt0qFvx5pFEcjc1A&#x2F;WppDlvSoH5J&#x2F;KmBFJ8v5VA5yamk79ahcZoA2EzjFSK&#x2B;38ahRspj&#x2B;dSIfyoAmDYp6vhqYvLY796d3H1oAk34NPDZHpUOafEfw78UASoMfnUoODUIanBvu0AWAMH6U77pqBXwMg&#x2F;8A16eJct3oAmDc8UZ&#x2B;aoy&#x2F;p69qaXwPrQBL5m3p1&#x2F;lX5z&#x2F;8Fb7SG3&#x2F;aR8OTTTRtv0pZ&#x2F;KV&#x2F;nVUkYIScd5FOFwem4k5wv6J78V&#x2B;bn&#x2F;BUy5m1L9rXTYmaFlt9Kt4Au7JBeXOOB1AfJ643D1xXPinaFzTDq9RIf&#x2B;z34k&#x2B;y3FpHJG0nllpH9N2RnOPbAznuT3Ar7G&#x2B;Ferwz2ybsb0iGHx1y2fzxn6fjx8T&#x2F;ALPlk0FhdSNv3s3yLj7gxkYHYZ&#x2F;zgCvqn4eXskSQy7j5dwvlbDjBLYJx6fp&#x2F;MV&#x2B;aZkrzbR&#x2B;wZXpQin2PpnwPctDaDywx8zjI4BOcf0zXVafE7X&#x2B;7yWO1vl5wCQeg9jtHP0&#x2F;DnvBckOn6dG1xt&#x2B;6vl7zgM3qeOg7Y5yQB1q7e&#x2F;Gbw74Olmmvr23E0a7XhWRZWTaMgBRwCcjsM&#x2F;QV5UKSb992OipJ3909Q8O26SzQqwA2sWweeRjp&#x2F;nqK7rRtXaxtPnDP8xyCMkDJ47dPT0PU184t&#x2B;2R4T8PzHz7ry8IGRJx5LlG5UruPORjkZHWuu8J&#x2F;tg&#x2B;D9eDLHfeXPgbo2UluenGeeo6nv0r1aFWnFWueXiKFWX2bnv0GvwX6oDu69weOvUHnB9emfXg1ZbU7dj&#x2B;8Yt1wACWPp&#x2F;WvILT4i2OtoJLOVXDfMCoGXHXgc8c&#x2B;&#x2F;PoMZ1F8WrBYrI7HzPugMeSe2P&#x2F;rH2x3rtji0jzngX5nc6zrsKyt5eSu3C46L6nPT&#x2F;P54N9ayzp92TaMPycE8fyH4V514o&#x2B;NWn&#x2B;H4Xjby28tfMfJzvORgbeO&#x2B;B6f08f8AHv8AwU30HwvfS2&#x2F;mQosIw&#x2B;SuScdMFgO2Sd3bjJ4rGpiKcnb8jro4Kql7i&#x2B;8948Saar3W1CrSHJdeoRQPvc9ecAj&#x2F;AGgfauZ1jT5YNNkMihtvXjkHtx&#x2F;&#x2B;v9OfHR&#x2F;wUI0DVWh1CS90uOF3ZQHvkSTaQOQrEfe6ZJyP7td1p&#x2F;xsh8ZaU0xuY2tZiVUxAswDKMZHXGDnJwRkHJ&#x2B;7XlV4027rRno04VVa5wPxEu&#x2F;LNxuba0mWCNyPl2k4&#x2F;DODx970Brw3xF42uPCs0Nzs8wiWKbyGfcxkyxHzfw&#x2F;OMccnOcYGD7R8UWt7i0eW3l3SQ5wvOcMMDPqOeO&#x2F;A75r5z&#x2B;IEMmqx3G5WaNomG0HBbOSAOOu3v06HHFXgeaM7s6MVFToyiQ&#x2F;DuXQ5fj&#x2F;4XvNPXy7a9nY2MkJHH7tCFyeTGRlwB3I5ODn6wZ8j&#x2B;mK&#x2F;O3wB8QJdD&#x2B;MHhBri6WPT5L6GMyKzxKqQyFVPsNsjgk5CrIx5zx&#x2B;h3meYilWZgwzyMZ&#x2F;Cv03LpXpn5FmMbVbCu2BTd3NNLYpCc&#x2F;n0r0TzgLZZsVExLCldh1qM5zQICM00ijNDHAoKIznFQyDH&#x2F;wCupmPAqGR&#x2B;f88UFELDDfSoXPNSPyfxqKTrSAY&#x2F;f3qF&#x2B;FqRjUbHANMC&#x2B;r1Ksvy&#x2F;zqmsuDTvNNAF5JME1IJvl&#x2B;lZ6Od3&#x2B;NTrNsNAFsPlqkjcYqms&#x2B;08cfSnCbI7UAWxJzSrJVfzcgU5JMjIoAsCTmniSqok4pRLigC4knX&#x2B;dOJDe1VBNk0omwce3agVywTmvy&#x2B;&#x2F;4Ka&#x2B;L2i&#x2F;baktSzJb2WmweZlMK3O8EH&#x2B;LDZOT1YEdAMfplqutW&#x2B;iaZcXt5MsFraxmWWRuiKOv&#x2F;AOrqc4r87v8Agp1pmg&#x2F;EbWtN8XabY6ra6s0yWDiRIzHeoV&#x2B;TG1iUY5PGCDuPORzw4ytTilTk9XsjvwODr1L1qcW4x3fY3P2eNKabR7ddu5Y90T5JBLLtX0&#x2F;D8h2Fe3afcSeFPJm2BobOMs2Mkbuqkj0wwP8AkmvF&#x2F;wBippG8Lae17JlZnaRWxuHsffJw35V9KfD230&#x2B;&#x2B;ubu0vr7T7WKZPJL3NyieS4J2E7iCVYAAkAkHscHH55jpKE5X7n6lgZN0Y27E3hj41R6zdkS3pVS4DkSMGC9SCQRgEnsc446HmrrPjPwz43v5Lezh1TxJfwyMJJ7DddQQcjKvOWSJDkgbWYZPqRXhfjb4WeJPHH2jT9NllFutw32uaG8DSXMQcKyRSx8bTvBZweBwCC2RtfFj9hXx14y&#x2B;Bi29rbubm3kRYdL02Ux2sUC5&#x2B;WOEbASeNx2k5O7p0ywmXwrVFedjqxuKeHpOcYOTXYp&#x2F;Ej4WWOpQtJa&#x2B;G&#x2F;GUkLDzf9ES1vNpyQfuzM4PBHAB7Y4xXA&#x2B;HNHuNPurq48I6tqC3VnxPYX1o9vOvcq6NgrkHPI5z3zXqv7J37DfxP8Y&#x2F;EbwrN8QvhX4X&#x2B;G2n&#x2B;GIvsh1Xw&#x2F;pkuk3mqRqrbpZ3LYZmJBURqVQkZJCha9UX9mjxJcfEaazu7C6uLVZHhtPEECx&#x2B;YiEBlW6hkwHXqAYtxypO1c8&#x2B;lmOAjhHyKfMv66HPkubfXoOcoODXfZ&#x2B;j&#x2F;Qi&#x2F;Yp&#x2B;Ouu&#x2B;O9ehtNSWXepCsit6HqBjgjP5Y5wK&#x2B;8PFvhSRPBMku2ZpNjFdpA2nB56dRzj8eK&#x2B;Sf2X&#x2F;ggPBnxUuBOT5sWpT3MTooX9yURcN1IzIHOM8cjHSvtTUtdU&#x2B;G2tmb7wIAPO3g89en09K8mnGL57FY&#x2B;cueHKj8z&#x2F;2oPip4mm8TS&#x2B;GdPkNrH5jLJcOA7A99pxyeT09a8RtPBn9satPb6bpMWuTWuRd3uqX5srCJuMqZFUlnI52opwOuOtfdHjL9mPT&#x2F;AB&#x2F;46aaSZo9wnifY4SRCZTIvzNwA&#x2F;Ckjn5B7g838OP2OWQa1a&#x2B;JrKz3XWmzwaZa2jq9lpssgKrMfm3SyDhg5UEElgAwUgwkVJqN&#x2F;V&#x2F;1&#x2B;n4HdUxMYUnOK1XTq&#x2F;wCvy7nzj8N9f8D&#x2B;GpNzfEL4T2VwxaJkttCv722VkOCv2pHCty2OR&#x2B;HOD6trv7TEngm1s&#x2F;8AhIrHT30W8kFvaeIvDWox3OkSOcARysY0kty2R95Cm5lG8uVzwPiT&#x2F;gmt&#x2B;0jrmm2vhq&#x2B;8R&#x2B;GZvhjokhuNPsHurdJLeVlzhp40MzRB2cgMucEDAwoHqvxk&#x2F;Yzjtg0dtqcK&#x2F;wBpWsMWqQTwKLfUQiEPPKjfxsn3mIBZQeeQT62aZThaUVOFTm&#x2F;r1a&#x2B;88PJ85xOKm416XLbbb&#x2F;JP&#x2B;tiG28VyeJdSNrFcNepNGcMrHDgHA9wB0J&#x2F;P3zfGfhpY57iONo1a3wQc8R7QeAR6EZ&#x2F;Lmrv7PPwxvfC&#x2B;mERrqDW&#x2B;w29tM6W32hot&#x2F;XzZW2k42gMp3bRkxscGpviDH9jjupPKiVHciFAwkUAnLMxOdxYnJJOCc14uFqRUuQ9jEQfNofCfji7&#x2B;zaf5SiRryK8Fxb4H3W&#x2B;QbcdssNpJH905Hf8ASL4Ia&#x2F;ceI&#x2F;hB4dvruOSG4nsInYPnJyvDc&#x2B;owf8a&#x2F;PfUvDMWr&#x2B;O1iupo4LLT9QleW4uQSqWxlJLN3LZTaVHJ6nBK19Zfsd&#x2F;FS88S6hqmhrpNzpvh&#x2B;yhD6T9ol3OyBgM7eke4HOwEgYHcmvusuxkYVI0mvi69j89zHKZ1MPPFpr3Xt3WzfyPfi&#x2B;5qjZsH69KaJMikL7T&#x2B;NfSHx4p6&#x2F;jTc0Fx2z&#x2B;Bpm&#x2F;wBvegBSajdsAf40pfNRSS4pFiyPioZD&#x2B;falL&#x2F;MfftUbmmMbIPmqKVuKezbj1qJ2&#x2B;agVxh5BqNjgU9jz7d6jc8f55oARZ&#x2B;KlV&#x2B;BVJZCBUiTYoGXg&#x2B;RThLg&#x2F;rVPzc1Is&#x2B;TQBa83Bp6TcVUWWnCUYoJLiTZHXvUgeqaygD&#x2B;VPWT3570Bct&#x2B;Zx196cZsfyqmJ8GnedmgRaEuT&#x2F;PFOWXNU&#x2F;P2tzThN&#x2F;KgRxP7UGhXHi74J6ppttIyyXrwoSpOdofef8A0EflXwP8SvDWr&#x2F;DG3k8N3iSX&#x2F;h&#x2B;4UokUxLtY8hgwJ52BlBK5GMtjGeP0m1W3XU44Y2ZVVplUk9AWyi5&#x2F;4Ey89hXgvx2&#x2B;Fslx8To91sZ1msHuI2K&#x2F;J95V&#x2B;b3yTj3FfI55VdPEqTWnKvzZ&#x2B;jcJ0VVwE4Xs&#x2B;Z&#x2F;kjyH4Dzra6FZNEPMTzn80mL5ZGZt28DoAxZjxgYGQBnFfXXwo0dBD9ohnuvKZMzAfNtIUnHQf3vb7wyTmvirwtfN4U11rdY7iOIMLZVdh84DoAvy&#x2F;xCNR&#x2F;wB9H1FfZPwO8VrD4asVXy2XIRATgEAjJx1bA6DHp9R8zmcHKXMuup9Hlq&#x2F;cqHVafd&#x2F;wx6Df&#x2F;smR&#x2B;P5rXVLHUBo&#x2B;sW7LJaX8KBmQdNsmCNyk87c8E5znoS&#x2F;Bv4x&#x2F;DiLbpVtoviG13HJtbiS1ZuON8RRgp&#x2F;7745Ldh6R4B1eO42HzWKzAAKHBwBjuMgnkcjPf8fY&#x2F;DlzNcW0fllmj55BG0nPsPxyOnTNTg8KnGyKrYqpTetmuzPmrw14b&#x2B;OeuSLCum&#x2B;D&#x2F;AA7DNgyzTXM1xMD937qRIM&#x2F;Q9PXNbOu&#x2F;Dif4e&#x2B;GGuNY1261TUpt0caKhghDHg4T73frnp1r6IuNPke4&#x2B;8yh&#x2B;AHGcH1zkV85&#x2F;tTa&#x2F;J4a1G3k2s7TEpEhHDNjPTtkc9D1oxUZU1bvpuPC1pV58uiW9krX9XuQ&#x2F;DJZB49h2LG8ccaq7EEqBjA59uM&#x2B;2a9c8bXjWOiKbGRGkY7lUN5hOem7jIz0z3rxv9na4uLq0t5pmWOa4YyTDGSpPzAAd1HI4I4HvXtni&#x2F;Qp9N0zzGZZEwQxAyBjPcn&#x2F;P6UUMPJUmdNbl54qX&#x2F;DnnGsqsFmbpZFMku0yxrwXAPP4jHHHr61oX&#x2F;wAD9P8AHulC507VNY0e62EpJaTJtZu&#x2B;5ZFYc56gY&#x2F;OuS8daxdaUFa3j&#x2B;0RpIpZcjLjA2nj0JHHXivRP2efFdn4w0QNDNHHIQS0bKVZPXjsBj9a56dFxqWtoya0ZQp88Xs&#x2F;6uef6j&#x2B;zB8SNPlxaeOmuIm6LcaTDMVOM&#x2F;KfOTHseB14HSnah&#x2B;yHfXtmreJvGuoX9uh3yWumiO2hkIbJ8zbHvI7YDYHXrzX0fFps9q&#x2F;wDz0jf7u1gM9&#x2B;R&#x2F;&#x2B;v1rC8Szsi7myyqCGUjA2jJznGc&#x2B;3r613SwcUrs4lj60&#x2F;duvkkn&#x2B;R5bceB9J0LTm&#x2B;zxrtt1Gwj5lVAOAwz8w54z06V85ftGW9vC0bRxtGql0KpwgyfmAC&#x2B;4447jpX0P428Tx20d1F&#x2F;q2gU7mKgKR05P5&#x2F;jXyn&#x2B;0h4vW8MPTazA85JJLkf99A8Y&#x2F;QVwU6SVW0Tsp3UXKZ4jcfCSHxR4x1S&#x2B;t5m&#x2B;yrdw&#x2F;uRnyxL5vP1BLbh&#x2F;tFuOjH6c&#x2B;F3w3g8GwW97F5ytcQrEysMKPlY4&#x2F;QflXFfAD4ezax8C77xJcNu&#x2B;3XKXCMW3Fg0gZOcDA46AdhzXufiy8iXU2s7YL5NqdzsBjkqPLQf7sZyf8AroB1U19DlvPPGxj2f4I8XNKlKllM&#x2F;wC8vxbT&#x2F;UqtL701psVXM&#x2B;P89Ka0tfoB&#x2B;UFhpsGgyetVvNyKQynHp&#x2F;WpGTGX9Kaz5H9KhaTj&#x2B;VDsSPSgLj92DUbNUZfaetIzZFADmcbv6VGz4&#x2B;tB5NRE0wFeTjC1GXx&#x2F;KjzMCo3fI6&#x2F;SkCIw26nIcFajX5SP85p4bZQUSbhnH6U&#x2F;OD&#x2B;NRgcVIBtP8qAFXI&#x2F;Gnr&#x2F;9emqecd&#x2F;enAYH4UCsOVsDn&#x2F;8AXUm7Hr69KjBwM04PigLEgf5efrTt&#x2B;41HnNAOKBWJgeaDx&#x2F;8AXqLzMNTwdwoENmhW7tpIZBujmQo4zjIPBrl77xBHN8T9Lg1zbJNDYXdqZSoUTltjwynt84Rs44DiQDgCuqV8E&#x2F;WvLf2sNDvP&#x2B;FfQ&#x2B;IdMKjUPDtwsrBhuWSBzscH2Uspz2Xea8fOsF7ajzx&#x2B;KOv8Amj6PhrMvq&#x2B;J9lL4Z6P16P9Pn5HzX&#x2B;0ppCeGfi9JeWMwmtZonkBQq0cLlkJQ8ja2Qx9TlfQke1fAjxKV0exkRWli8oKPVMc4PqeFOPYntivD&#x2F;ANpbWrfVr&#x2F;Q7yBo7e08tRJGpAQt5anceM7lZiepztzzzj0P9nnUY4vCvkSOZZI&#x2F;lSRkK4O3IAx2AwDzyemcgn43FfwIy&#x2F;rc&#x2B;9wM7Ymcej1&#x2F;Jn138K&#x2F;GDS&#x2B;JILVm8y3j2hmBxlTu79yuMfl3FfR&#x2F;gLxRbvbJHHKpVcY2Djpn5enbHH9a&#x2B;H&#x2F;gj4mFvqohRvLkhAB&#x2F;vALgE59OV6jHB9ePe7P4h3Xh6yjdLSTUGUqDHHKAzruxkNgjIyTg46EckiuOjiPZ&#x2F;Ez1K&#x2B;H9rG0dz1v4jfG5fCwjs7GFrzUJ&#x2F;3cMMT8seccegxyeMY9s184&#x2F;tM&#x2F;EK38I3UNx4nvrG1vri0lkgYy5VHwEzlsfdDAf8CzxnFez6Bp1roES63rTNHqFw22G2chTbIwzgtwGYcA46DvkA18lf8FB&#x2F;AOnfHHwz5V9GrC1keeHDseACXXgddqk4APA5A4qv3laopS26eRlhVTg&#x2B;WC23fd&#x2F;5HC&#x2F;DL&#x2F;gqj4T8GfEK30NptL1SSNyhisL2CS4OOv7sPuJXB4A4HNfYNv8A8FIPA&#x2B;qeDLidb63aERlmWUDd05GCc7uTwM&#x2F;XpX4&#x2F;6n8AfDdrO2l&#x2F;2T9jumXzreQW6TuAHC8FCuSMhsZVgAx7YGvo&#x2F;gbV9cmWPUNTg8mFdrSWT&#x2F;6Vcqv3snPUDPzZyeCG5Br0vYxS&#x2F;dya7mDqRnK1SKdtrXX9ep9dQ&#x2F;8ABTrwT4z&#x2B;JNx4dm8QaTpXl3JGy4u41mBHRMZxv45XJI9M5x9M&#x2F;ByCb4heBbvxV4Vv1a6kvZBbqrhY7pI9pZgR6uWGehK9utfnTof7Huj63qIW88Pxvpf2dZoQx27&#x2F;AJC35ZB6qSPlJABG79Bv2cfH9r8LPBOm6XFHHP8AY4crBAMK0IbajKgAwT5eAgGRnoeRXJWowkuWOx1yxE&#x2B;TZXv9&#x2F;ket&#x2F;Cv49tfQJHqX2mG6WQwyJKv3HJwVbpjuB&#x2F;8AXrd8YeNorvzVzujkO5XDAbycAY6cnGeg6dq83&#x2B;KVnZ634gbWNEmjj1BkD3ccRI80HjJ6dMYLfTI7Hl9Q&#x2B;IV8P3dzA0TZwGB3bueuODk&#x2F;j2965JYqdNezqP8A4JKw9Ko1Wgrd12Oc&#x2B;LfiSSDxHJ5LRtDJFnZu2nflQvI6g5YH6DrmvmX9o3xVHaTRSNIxjjYyyIrEllLEnjg7cAjJI5xz1FeofEfWptV8SqsjSLsPnNluTzge&#x2B;O3Q&#x2F;hXjHxxi36zcSbC8ccAYRq25rhRvzjAyuSW2k8YU4HOaMHZ1FJk5hLlpNLse&#x2B;&#x2B;FfHE3gP4KeHvD90kDNfQWIhgYkTTGLy9y7cnDtgjHqwHGc12tqkkNuqzSeZOSXlf8A56SEks34kn8OK8x8B6bDrviPSEa4hmbQxKFQ&#x2F;NIqx7CHP&#x2B;88sRz&#x2F;ANMhXpwIAzX2vDuHShKu93p&#x2B;r&#x2F;E&#x2B;C4uxT54YVbRV36vRfcl&#x2B;I7dk&#x2F;wCeaQtk0hNC9a&#x2B;jPjgDc&#x2F;401ulOP9KM4WgNxu3imscDrT8f4UjHNAWIs&#x2F;57U1zxT2HPtTWGDQBG3zcU3&#x2F;PNOYfNUZ5NADWXFR&#x2F;h&#x2B;FPP86Yx&#x2B;ooBDVb3&#x2F;wDrUZ&#x2F;yajA4FOD4OKCiYnHHTtShgf8APWmbun9e1C8P&#x2F;nmgCZWwfwzUgbBqur05JKAJd&#x2F;FPLY5qNeRmnL1P&#x2B;c0AL5mfWng8&#x2F;h1pmP8AOOlBbiglkmRjtSbsH&#x2B;XtTQ3NN3c8&#x2B;lBJMjZpt3Zw6jZT2t1Ctxa3CNFNE33ZEYEMp&#x2B;oJFNVsilD8UDPjL47&#x2F;ALO&#x2F;iT4aaDd3F9DZ6loemzrLa6pHcKHdOBslhyJA4IVjtBjO0ZbHFdF&#x2B;z5cK9rdSK0Z86I&#x2B;WXCsz7X2szKDgnDEdcEhfvcV71&#x2B;0F4Xi8b&#x2F;BbxJYTQrcD7E9wsTcLI8Q8xQcYIGVGSOR1HIr5j&#x2F;ZZ1ySbxHpbKyiMCW28vdtYn5yxBYFsYDLxjO0ZyOnxmeYGFCCVPY&#x2F;QeHcyqYqrJ1mubRep7B4Tjk8O&#x2F;GSOzaeZftMEd2hLtwWYqynj5vut16nHtX1H4W1O18NWsd7IizMrGTeQSkXIDMec5Oe2OnJ9fnj4kwwp8R&#x2F;BOpwyQsslulvIzHazszAx4GOBjB5HIKnPOa9um0e48V&#x2B;ERbxhrcSx7gQvyycjBJ46kL1J6c9RXxVT4oyex9tOXu8pyfj&#x2F;AOOt142vdOt42mhtbubyWlA2vtCbsRgE7S2QBuzt56swY61p&#x2F;wAI&#x2F;Ywwza1qlnGzqAyTyR4i&#x2B;9gFQeGO7JJwW2pngnPzf8av2KPj3Ab7WPBPirwpHavJtMWo28ltOBtG8xNGpXJOcBgMKBhudo4nwr&#x2B;wl4z1K4vV8YeIrh87DbGzvHjMbAqzCQwqTIrhSDluQ3Qbefew1FSjz8y189TGjTUpcln8kvzbSPprW&#x2F;DHwY8RC487VtHWeZS7Q2toHjic4O8LtH8QQEFjwi8E1y7&#x2F;AAv&#x2B;C&#x2B;m&#x2B;HVt5vGFixtpvPSRN&#x2B;7LsX&#x2B;UeUBvX7oPTBxgc16H&#x2B;zr&#x2B;xN8KtK8a3WqXHg241Zbqygtbi1OotPHDOpIkkjWUqF3Dblc8EZ7kV6rov7HnwT0bxdqGpz&#x2F;D26urS4ihWKzuAXitmAcllXzcDORkj0BOTk13QwbezX3v&#x2F;ACIrV6NKTjOjUbWunI&#x2B;2h4zodx8L9IZFt&#x2F;EDybSV5iaRWiJLRo5wQyhgvBGDtOcZJHU&#x2B;FrvwnqUE0Og6npVxdcONj&#x2B;XKSCpGfuuQvzDHG7IzzycL44fsWfC3WYfFkel&#x2B;D7jS77WhHJG7SmOK1iEZQCMo7NG3ylvlA5yeTivmrxx&#x2F;wTR8X311dSeGfF3&#x2F;AAjEZEaWUF1I9wlowY75NrgytgYAUHBCZLA4zjLCtPVovmpyhdQmr9&#x2B;V&#x2F;qvzPpL&#x2F;AISOTTk1Jpm1JbdpUAijn&#x2B;ZmHlqMj5jyoUgAHC7jiuls9Qi8UWtqs1mxElu09s8siyNGDkMu4EncEGSPTOOAQPP&#x2F;AIe&#x2F;8E&#x2F;ta&#x2B;GXha31bxB8VfE3ivUYYoxm4hhsod4Y4dET5lUb2wsjucE5OQM&#x2B;kafPb&#x2B;DNGur64uPNmbfbs75yMYDKDj7v3SB1yuc5JFfPZhJX9no&#x2F;MrD3&#x2B;JHlPiuRW1aSGKKSWTajMS3zRRsTksc56Y9fmPbNeGfFjWIdT8RLYRzRSXMkkEKyFcQskjIqhcAFfm7nHPbBBb1HUPiBPq2sa3JBa28sn2aKOKaMDKyZDlcdDw5HPTPUDJXy&#x2F;wAFafHrvx&#x2F;8J6Tpl1HJHp7i6kWNW2&#x2F;Z0iYMCSd235k&#x2B;9&#x2F;e25zk16OT4dyqRj6Hn51XUKE5&#x2B;T&#x2F;I&#x2B;l&#x2F;Afw80f4e6dJFpcBVrgh57iV2kmuCOhZmJOBk4AOBnit0yYFQo21VHQAYpw5PvX6jCEYR5YqyPyGpUlUk51G231erHFucUpPNMbrx0oyc&#x2F;j0pmZIGxj&#x2B;VDHg549aZSb6AHbuPT2oPK9KbkfWg5A98&#x2F;lQD2Av&#x2F;8AWpjjpS&#x2F;w01&#x2B;uf&#x2F;1GgkRhtqJ&#x2B;f&#x2F;r0535xUbNg&#x2F;wBaChJOtRu&#x2B;TSl6id8f560DBefpTwuB&#x2F;Koxzt4pw&#x2F;pQMeDil&#x2B;8cnmmqd38qeox&#x2F;h60ALjJpQMrxSM2PpSiTigBVOF9PfNODllpuPr1pd2BQA8vgUF&#x2B;KazfnTd&#x2B;aCSTPP404HI61GTz&#x2B;lGceh&#x2F;GgQ7O3Io83b9KZux3pPM49KYxzrvRlb7rAg49DXwXo2oJ8B&#x2F;j7rnhmZ5P&#x2B;JZqMiRExtHH9nIBjfnJx5bowVcDOwdN2fvLzMen418B&#x2F;txeII9B&#x2F;ag1q4mknt4Wa2jNxCiu8RFpGx4Y85GVAHGTzmvKzajGpSUXu3p9x7OR15UcQ5x2S19LpfqfT&#x2F;wASvFUesWGj3&#x2F;z&#x2B;XYoZoVVcs8gDGTqSGcLnBzwXKjnfXu3wZ8dzSaDHHHbqyAmQOrmPAX7&#x2B;cZBKkfTAIxjGPiH4RfGuGfw7Gl9b3Elj5yQ5ih3AfIFEY54YZBxjIBwMnge1&#x2B;F&#x2F;iRNp8UlpY&#x2F;ZbGxgAjljnhXadgjCsA5wCu2RipBG0DgnIX81xOFafL2P1OnWjUjddT7ZbX7PUtFt7e6BYIoUyFBgsOp&#x2B;vTI6AAduBwV74CW1WW8hVQu9g5CHEqrx6E8bc9PpXG&#x2B;CfGY1bTLO4tbW&#x2B;ga5QTFLmIxSbegkcN&#x2F;EQScEc7uwGa9A8Hi7n0oyRyf6stIW2Da&#x2F;vu6Y6cjrjIrGNbllZmlOLjG8XYqWvjWPwlqAW602eNfNWP7QeBliAORjPzA8k9&#x2B;wxnah&#x2B;MOm3PztNCzQhw6qXZB6g45C4Oc4IG7rU&#x2B;t&#x2B;D7rxBYD5rWC4ghWTdPvYKN2SSF56hcjJPGOMmuJvPAUzajaxwNZxStL5zxuyLGi5&#x2F;hZSR5gDKx27h1&#x2B;U8CvUo15tXuzOUlLU6iTxna6rG1zHY&#x2B;dHIdwkVt27eWPXOCBk9PxHGRC9pHbXyzTIsLFTvYRtgHqwXu2ev4YPUVreGfBtxpunbY4Y5ZGYswLLnt05ynPG0cnPOCSK5j4n31x4YtGuJVCwXEg2yqCwx3yeRznAyex69uPEVpy0kaU5XdrmrrnxFt5LpbfzPLWMcy4I8teoJIHHPf1x0rwP8AaV8d2unRtbxz3yQwA3UKwgt5yrglkyBvVm6Y68kdSak8c&#x2B;KdStINKsbMzQNqOJpjdXAj2IimVpFbbvOIyBgfdMkQLLu58w8f3cereGNSa1eOSeC1IfzZSJDI2SrMQWwrFlJHzDG8ck5POqbk4tlRlGKduhQ8VeIbDw5ZTKzSQ3Sh2d1G7pb7UUgAZJUKeDzknk8VF&#x2B;xF4bj17xFrnin7NHHFaIuk2fAOz5EeTBxgHBQHBzktnOcnwH4&#x2B;fFmSXwvb2LSRyveL9lLYYyxytgtgEjquFPQeoJYMPsH9kfTYtE&#x2F;Z88P2KKqvZiaKYr0eQTPvb8TzzX22Q4SMZKct7O39fM&#x2B;G4mx0pU&#x2F;Zw2uk&#x2F;wA&#x2F;0PSlOB607vUYbj0o82vrj4cl8yjdz&#x2B;tQmTJ&#x2F;Cl35NAmS5zRnioxLigS5oAfu4oL49aj35P40m8bfagQ8vn8OtRk&#x2F;hQ0mBTXk59KABxUTEinbwD1&#x2B;lRs&#x2B;aAGL0&#x2F;iprc&#x2B;lBkwzdqiMvX9KBxFV&#x2B;Kk381WV8Cn78mgomMoWnLcgHr3quT83fmnMuT&#x2B;lAFnzM45&#x2B;lIz7R9agD7BSq2RQBMJs0vm8f1qInFIGyv8AnignUmMnelD4qv0oMuB&#x2F;jQhepY34ajzeKrtNzTPNyKYE&#x2F;mc5zQX&#x2B;Wq4PHtR5uaoCYyc&#x2F;er4Z&#x2F;bJ8Op4q&#x2B;MHizcNySXcduwYnaQLaAMDj6Y9zjNfcSo827y45JPLRpGCDJCqMk&#x2B;nAB68CvjLxjeJ8QPHuvahaTR3dvqeoyT2rQElLuIngr6&#x2F;Iu4dRuUc8g14mfScKEJf3v0Z9NwxR9pXnfblf5o&#x2B;ePhj8Q5vAWq&#x2F;2Xqhke4hk81GIjaK4QYAPJ2hxnHIPTOTkhfpPwN8eZBr0i2sD3UM0CTtDKyL5rklJfMkkzsYjY20DAbr0214x8ZPhm2oxW9xaeZHJB80M0TFWjbOMoen3sjGOoHXt5LB8S7zwzqaWuoed&#x2B;5nC&#x2B;eu0hcNnJORjBVeQT8w7YrwpUaeLXP8Aa6nvRrVME&#x2F;ZvWPQ&#x2F;WH4dfEJ&#x2F;FRWaZ7K8vPKLWPkTL5kKhSA7A4VYlZRGVyQ5LHOF&#x2B;X2XwX8W7fw9HY6cylwjmGfMBUb1JjZNxJDkupAYE85znFfmp&#x2B;yJ8eIYfs0azK1vEzT7LFIibpI7dsu0jMG5IPABCKBtZSzV9QeFvjZZ3dmkd201nemzW6g8xfMEtzcTySQwBl&#x2B;b5IlRm7&#x2F;LnJGC3gV8DKnN3Pbw&#x2B;MhVgmj6i0bxUfFvhu8W4Kg3DPNHaxMw887xlW6nhn2leD16g5PR29jpvibUNLvJbNWme3e5td4dd0is&#x2F;wA7sOWjyQApPRuA3FeK&#x2B;EvijpKeL1Frd2sdisOElMW1ZojheWyDuXzG3Z5ztPKgrXRH44x2XjbQ7WacLdRrLOFGNrBrk71BBBJY7Cynjk&#x2B;tEYtHROd9v6ujsvEni19IutL8t5PtkkssSq4CxxMo3MoIzHjYjqzZJXbgZBBrz&#x2F;4s&#x2F;FG18U6RBDCySNbwhtqyOuzaOWYA5OMsu0DO5D&#x2F;ECtV&#x2F;GnxasdPvkupGiWdJ71p43bDWybWMUiZBDMFw656KrDkjn518V&#x2F;Eyz&#x2B;HmnL&#x2F;Z95a3EmsX9nBvnmXH2cBmOzfuZRiO5IGQoZV6ByVXseeWhMqyhC7LXjj4rR&#x2B;BI4ppL6VreOGW2kku1AAjMQODIYyY&#x2F;MDQkKpUAeYctwT4nqPxMj8PeGNWv76JbWxmVpIoYAqkxoiqDvOSM5LYP8WGYfNlvM&#x2F;j&#x2F;wDFOz8WG8W0uJbmHz0ckxmFCsiqilyOQJArlyRuEhznOwtzHhv&#x2B;0Pizr&#x2F;mXSGfT5CPLhePb5r4XEjEY5OD1zlSQecEetSy5RXPV0X9bHkyzKU37Olq&#x2F;61Zs&#x2B;CdEuviF8R4dSmjKwXF2nlRKm0Kozuk2klcnO7jGBjrya&#x2B;8f2ZZ4&#x2F;wDhWUsMcq7rPUJkeIH5og&#x2B;HT6q2Tg9ODXzl8Mvh8trfx3U&#x2B;d7KxznKRqq&#x2F;Ofb5fXvt64r0n9mf4m3Fv&#x2B;1zc&#x2F;DW4EMdv4s0B9W095bny0tb22MrSLj&#x2B;LzIURAP7yKSR1r1MpxKqY9R&#x2F;utL8DjznAKGWt9eZNvv8A1c&#x2B;hPP4pPO6fpVVZ&#x2F;MjBHQjIoL4FfWn56WhNupfOwetVPNyKPMOaLEtltZsg0hlzmq&#x2F;mY&#x2F;8A10eYSKALBkbbSeaQM5&#x2F;WoRJihn496ARL5uRTTKTTGbBFIXOetIpDnfBqNnwxajdg&#x2F;eqNmyf6UaADvmm7uKDJ9ffNMZxSAYk2KlWXpVISfIKkSTH&#x2F;ANegouB&#x2B;3tSiTaarCXaKd5uGoAmD807fgenrVYSUomI&#x2F;xFAFgvQZcCoFn&#x2F;WkMm5aCbljzeOv&#x2F;wBamNP8v4VXMmKRpOPagksGTJz&#x2F;ACppfI&#x2F;lzUPmYb8aDMBQMn83immcKD7dT6VP4c8PX3i3VFstPt2ubhuwIVVHqzMQFHuSK7qf4DnwnZJdapqlpcXUc&#x2F;FlaAyK&#x2B;wqW3SED5ecfd57etb06MpfCB80&#x2F;8FP&#x2F;AIyyfsr&#x2F;ALH3k28e3xB8QobyynuH3K2l2KKBI8TDgyOx8vsR8xB4xXhP7K3hdh8FPDKSxqk0ek2sZXb8ysIl4x2xgnjI&#x2B;QjqRXv3&#x2F;Bbr9my4&#x2B;Mn7Lvw98YWhuriDwFff8Tf5&#x2F;wBzLbXXyCQr1xHcxQgY4xKc8gV578EtMZPBtoix7oXgjQgfej43owA64YDp2JGME4&#x2B;S4tqOEo0fmfoPBuHup1fK39fgYfjXwXHevcLFFEqmH7SnmH92gJOWGMEBSV6dmznJAr5t&#x2B;OHwXuLa5kkjjdXUMwbyj854HPuQeuOScEnGB9qa94ZS9tZIGgk&#x2F;dlsLvzlSOcHuM9R0ZGY9cg8H498Fx6lpkjQqbi42lcSDLSLgbtwIzkkD15PbpXzWFxDg7pn0WOwSqR1R8I&#x2B;FvHGrfC&#x2F;Vt1jdSLFJlJVLlVuI92WRlIwecZDZ4BwAea92&#x2B;Ev7fC6Vdq10UUQwNLDC0L4&#x2B;1Bi4kd2BC5kBbGSCFUN91QOX&#x2B;LnwiWy1GSaSAeXICFYD7h4&#x2B;TBHsTtPOMYOBivL7&#x2F;wCG1xtSW3Z1ZSWXBbIxjcMg84&#x2B;v6178alOqvf1PkJ0atGXun1vrn7Wq3UMEdxrkFwAhWKW0k3qrLuEc5wCCxGCRk4CqCXYYEsP7bUOs61DfK62ENjbSEWwk3vb7H3BAWTczGVB8u0DLuMDJFfGSaHqFuWjkiWTcQu4LhpE5xux1HLHtnmr6W812&#x2B;&#x2B;S3laaaNUJLNvKDCgHjtwCMdMipeBoM1jjq&#x2F;c&#x2B;ovF&#x2F;7azayuo6hJJFDK6pbWvnXAAkTcEcSMcKP3TSBhwSsb&#x2F;dZ1FeSeOv2idT&#x2B;JHl3Vv5wYSShM7UkSPyvKw2MH5l6gDHy44X5Tw1p4RuPEASMWm63UkBSNyAsmOhOOQBjHoM8AV33hL4N3N1OqzL5ZkIZsN985w2D69euegwDnFVGOHoaxWoS&#x2B;sYh2k9DD8H&#x2B;ErzxhrqebI8k00ihG&#x2B;YhASc84PYkAnJ64zmvqX4NfC2GwEKmNpPLLR&#x2B;Z9xQNpG0dwcj8AB16HM&#x2B;CHwijtrwTtbrDJH8qgkPtA&#x2F;iO77vLHHUBgD0ya&#x2B;lvBXglbGESYVZGVpYYpANyKfm81&#x2B;BljwRu4AwTk7VryMbjnN26H0WV5eqa5mc&#x2F;4e8MpFZ48tVLYj2njCD5gpx0JB3HjjIHJTny&#x2F;wAM6ZqVh&#x2F;wVP&#x2B;CN5p1vdXS2cesTXTW0QeSOKG03h2U&#x2F;LtyQvPG6VR1Kivoa801IYdsvy7QXByAeOS3OfmJbPOcl&#x2B;SOg1&#x2F;2J&#x2F;g23ib4l&#x2B;NfiZcJIlnp9vF4L0qdZCo&#x2B;1XFxb3V22DglURLYY6bnIOdla8M808yhbpv6WNOJuWOWzv5W9bo9E8eeAX0tDe2Uby26ttmWNchOuGH&#x2B;ycc&#x2B;mfrXICUOuQ3H1r6GsJB53mKfJ3bUBU8wud0oI9duVcd&#x2B;MAjmtvxL&#x2B;z9oPxA0eHULqFbS&#x2B;vohOLixmVWCnjdIrY&#x2F;End&#x2B;dfqFXC3fNE&#x2F;Hz5eD5NOD5r0Txf&#x2B;zDr2hys2myW2tQrn5Yj5c3H&#x2B;yeD&#x2B;Bzk9K871GzuNJvXt7qCa1uEPMUqFGH4GuOVNx3RPUM4HtTt2KriTnHb1oL&#x2F;AP6qzK2J2bilEnNVxLmjfgfzoAsM&#x2B;O9IZMVDv3f560hkyKRRIZcH0qPeWP8Anmo2k5&#x2B;tNeTH19qQEnmYyBTfMwn9ahZySTntQXI&#x2F;z1oAriTFP8&#x2F;8qrCTihpwBQUXBNz&#x2F;AJ4p&#x2F;m4OTVE3O1f6UhnLP96gRe8&#x2F;Jo884qmJv8ihJc55oJLhm469aPtBx&#x2B;tVRJn&#x2B;lHnDFAiyZv8APrSeZnHrTtA0e&#x2B;8VavDp&#x2B;mWdxf31xwkECb3b&#x2F;Ae54r2PwB&#x2B;yYTJ5nia&#x2B;CzwqZZdOtZAvlIDj97Mcgc8bUBOe&#x2F;BrSFGU37ozyLSdKvPEF59nsbWe8uDzsiTcQPU9gPc4FekeEf2YNS1XyJtUvIrO3knjtzHbjzpNzFeC33VwGz&#x2F;EcA4BxXvvhLwXp&#x2F;h&#x2B;NrbSbaxsLeJkje2FoQHc&#x2F;xMWBLYGWJcnoDgEc7&#x2B;k6ZFpOi6Hbtd28cEl7LeO8ce5mZUYliO5JIOa7YYWMdZagcrofhPTfA&#x2B;nrpemrYQ6fDdbAUtizlgPmd2LF2KkhcseGcYwAMec&#x2B;Lr9Nd8UyCEQQwy&#x2B;ZbRbIxGqB1dVfH1KNzzl69OvbeS9vLi4DMu2EAzImF3Su4PHVmIx83ODg9q8Z8RGOy1u5sDMyf6RNYedIuMFHI3&#x2F;gVtz7hzjpmu2Omg0ja8N&#x2B;FtG&#x2B;MvhPUvA&#x2F;iC1W60nxVZXehzKzFfs1pexNsdT2dWY7XHKsikEHIPxf4K&#x2B;FeqfCLX77wTrHkzat4ZuX025ljP7u7CH93cL0&#x2F;dyL5ci99rc4CmvqrRPGEepXsUkMjW96x8x4i2NpRjLbr&#x2B;Eiyx57Z9cU&#x2F;wDbD&#x2B;HFp48XS&#x2F;iXo62dreNYRS3kcKYa4tyuBJIoHJjAYNnBCbznCbR8rxZlksRhfbU170NfVdf8&#x2F;kz6rhPMlhsV7Gp8M9PR9Pv2&#x2B;4&#x2B;eNd0hcrdSLN59thgQAG2c7lPoFOTzwBnkbQKxvEHhr&#x2B;1UmkiVre6LglWfKzA8FwTxnBwRg9ehzXZ30ySWn2hSy&#x2B;ZuVt25WXkbs5xyD0P0z1qrplvBujkjbCsDiRNyt0IKd9ycAhT6KckjNfl0Jn6hON0fNvxU&#x2B;HUetXM1x&#x2B;8aTyvLNuzeW2&#x2F;r9O&#x2B;4EDjnHBGPJ734d&#x2B;ZuWRmheZ1&#x2F;e7ANpwRhh2&#x2B;oPUccnbX2H468D297BIsir5chAEik70wcjDDDA9CBnjrjhhXk2vfDWawvDt8u5XIO6QgMrDjIOVw3UZB5B7EnPpUa7SPIrYKMnex4kvw0hlvSWEUMbMqAuDxxwA5P5HjseorUs&#x2F;hNZ3UkMcliyFi6rIxIXOeCOxzgH&#x2B;fbPqNn4ZhSZvOie1uGUblKnDDPDA8dzjPXjGc4ratPDUNxEnltZsep&#x2B;UEkdecqTgfUGtZYiXQ5Fl6TPM9F&#x2B;EltY20KwrBuKnzCB06AgZye3PXGMV0Wm&#x2B;Do4rxmbzGitXVkQ7wsQHcsPcDC5J56cla7218I&#x2F;bZFjVZrheB5aOQij0BIC&#x2B;p6Ej862YfCKLfIsnktNGQ6wbd0USgnBYdDjjggDI6Hvi6knudVHBpdC98MPCjSS2s0lvHJ8w8uENu8xjkjJ&#x2F;u&#x2F;KpCnqRk5yTXpUUdxYX3kPHLPDcRiZrwsg89ixyiqGJ2ng&#x2B;YwUAHjHVY&#x2F;BOix2kSrC&#x2B;ZU2gsGG2M988d&#x2F;Q9CD1q14n1CCCMSGRn3P87byrMOFAUnkDoN2SSO42iuGpI9anFLQx&#x2F;EqX3iLUrPR9Jj&#x2B;1atrVwlnB82FkklJUKCeiqN7M3RVVidoOK9&#x2B;8G6JY&#x2F;Cfwdo&#x2F;hHTIYlm0lXa7dGLLd3EwZWuX&#x2F;wBr&#x2F;WSNjAGOMDaK4H9nfSDo&#x2F;hfxB8S7q1sZndU0bw8JVDPbmcukt3GnTdiPYhOMADAOQ1eieCdDGl&#x2B;BBqV5ulutUi2SoDlobUEKu0nkFyFQHuMdwcfpvCGUvD4f6zUXvTtb&#x2F;Dv&#x2B;O&#x2F;3H5vxbmir1&#x2F;q1N&#x2B;7Dfzl1&#x2B;7b1udJo&#x2F;7jwzJcY2lZo0k3DkqzKVYj&#x2F;ZgQAjpyR2rvNMvxaeBba73QxT26z20pMYdnDO20PnoqnIyME1x76e1ro9tZzbWmtWMN4ycC434adx&#x2F;uRBlXNdTpuny2Pwwv8Ac3lSajd2kqrIvzXO9RISfQbWA9eM8V9az4&#x2F;zO81exnS5sY&#x2F;Lh8u4sGd1hITc6qrKTkYPAYevPWsPxJ8P7DxlZWdtqGkiSK4i80CWLzOoyRxkg8dU9sKK6W20mO&#x2B;n00tpu1jYKSVk5HynODVO2K3&#x2B;s&#x2B;H98d9CqtcR7kJyTjOOvoMVz30JseE&#x2B;Mv2P7O8VrjQL1rFeqRXBM0L&#x2F;AEbJbHuC&#x2F;wDh4341&#x2B;GmveBSW1LT5o7fOFuox5kDf8DHT8cGvtiW2WDRlaRtTa3tb0pKrKG&#x2B;b1OR0GR&#x2B;PNZsjWuraW11cMskctybYRtHt284G8n5Tnjng5P8AFwKxnh4y1QHwyZsj&#x2B;WKDNX018Q&#x2F;2WfD&#x2F;AIpaSax26PfMxwliFaIn3jHH&#x2F;fO0&#x2B;oFeH&#x2B;PfgT4j&#x2B;H4aS4tftlmBn7RanzAB6sv3h65wR71yToSiO5yrT89aDcbj6VVEgcKVwwPIxyDTg&#x2B;P5VkIm83L0jNgfWoxJk&#x2F;jQZctQMUDig9KaZOD2qMy4FA0UfNwOtBfI68Gqvn8f1zQLjIqSi15tOM&#x2B;Pr6VT8winCX5&#x2F;pQSy15&#x2B;efwpBPgn6VW8&#x2F;H1rpPh98KNc&#x2B;Jku7TbNxZq22W8kBEKc8gHqx68KCfpVRi5OyEYrzgDqO2ea9Q&#x2B;FP7Meq&#x2B;NGhvNckk8O6S6mUCSP&#x2F;AEu6UdSkbY2L&#x2F;wBNHwo6816l8Pv2eNB&#x2B;Edybi7jt9Z1SG1W4F3eAGG3LcKUiXOWJ4UDJ5&#x2B;9ztr0jT9NmvPD9xPeRiSJn&#x2B;zpbm5C&#x2B;dIeGaQ9WwCQq54A464HZSwqWswRleDPCenfD7Q7O30bTP7PtbssBOhG&#x2B;7K9Xd35cDnJI2dgOhrfs7Rb&#x2B;HS7mR9N&#x2B;2XF0JFO1nCxLxycfMxGPm6DJChQcGxpumrcXWoXXmWKLY262VurNv8vPBxnp82MnHOKueJ9Zm8OwWMUf2NpYrEugjG5ndsKgA&#x2F;3j&#x2B;QrrUuiHYb4Wvrm&#x2F;vtYaK4tJ7a0SYRB12l2zgkD&#x2F;AGRkAnj5j6cw&#x2B;OXm0mw0x0&#x2B;y2aw2bh2U5IDgcD8Ac&#x2B;3NaGm6KNGs9Us20xmWG2iBdZFZ5GYcsccj1ye&#x2F;Sq&#x2F;iPSptVvoobTTD9o&#x2F;svKtM2MEZA4zz17cimrb&#x2F;ANbAVrQRXXiO8SJrhriPToJkndjtiCOD&#x2F;wCggZ&#x2B;oNeQfH34crd&#x2B;NNYcXS3LaxLHCzCP91DOynbIdvBWRA0bAcEquBubNeoT6k0WoaTeXF2YRc6VPbyRwHDZTaDzjpz6DqOnex4o8OzeLdE1aCFbOGK8scNMI9skUyDAcr05bDdOuevSqjo7jjofDvjS01fwZrc10wuALeVIXLZEhKYLKeP8AWLtDZHDgK68gg&#x2B;3fs6&#x2F;Gnyzb7PLO6V7j7geMW7nbcRbcHK5O4L0KyYPcU&#x2F;xZ4Rg8X&#x2B;EZLi5jw&#x2B;mgLqpiO7cw&#x2B;ZJkPVscOpznacc8V4DZahffCjxgbeYKsN9JvUZCou4nDL2EcqFkI6At7LXRy3L3R6T&#x2B;078Crf4UeNhLo7favDmrKkunzYPlxsQf3BcAjoG2HnKdjtzXlkVo0UmY3SJpQQYSc&#x2B;ZtJJyOuR046YB7V9d&#x2F;Dvxbpvxk&#x2B;GS6Rq0kl1Y6e4gWBBtluIW&#x2B;6dzZ2sCCuezLuJG2vCvjv8F9S&#x2B;EPiry51uLjTp8vp948eDdxcBXAGdrgEBgG&#x2F;u9BX5PxLw&#x2B;8JU&#x2B;s0F&#x2B;7e&#x2F;8Adf8Ak&#x2B;nbbsfpXDeffWYLDYh&#x2F;vFs&#x2F;5kv1XX7&#x2B;9uHkV7&#x2B;zdJFZkbMYkBDoO&#x2F;Ucc8HgnOSM964zxN4bBlfy1KsuMAjbt&#x2F;Lnb3Hsfau&#x2F;0F5IY&#x2F;3P3pHO5AdyNg8HGQO&#x2B;Sev61PqXhy31O1kjlhTzFByAv3R3wrDHHI7HoTjv85GZ9Vynlui6X5gWPDYLbmCt8&#x2F;TBI4IOM&#x2F;U7sHPGNgeE1nUyfuQrD75XJfoDyQTkenXnqK2P&#x2B;EHaynfy7mN9wC7Xifdx3yMqcDv0xnk1cj0KSK32teR7hlsgfMR6jGOmeuD&#x2B;NdGhza30MGfSFhEaySCYSLwNxYBR04J5&#x2F;DgcdDTfBvg7&#x2B;09akuLZBbwKR51y6f3f7nIywxgY6EHrg100Og28alpWkvJYcFhJF9084JXGT&#x2B;XFbmn2csCZm2rHGNwU&#x2F;dA46j&#x2B;XH9aiT6G0dht08OhaYYh&#x2B;8CZCo0w2oT6Dux7lvfrisz4f&#x2F;DK7&#x2F;aY&#x2B;J&#x2B;n&#x2B;HYZntdNnfzNRui4URQ9GG7PDvwi4yQNxwQpIg8a6hJeXQs7VWmaQiCOGIfNO7kBYwOmWYgZ4GDXtf7IfxZ&#x2B;GPg2fx54W8Oa5pmv&#x2F;ABC&#x2B;HhI8YQeRIj2zFcRG2kYBZbdGzGGQn595IBIr1shyl42veXwR38&#x2B;y&#x2B;f5HiZ&#x2F;nCwOH9z&#x2B;JLSP6v5fn8yx8VfsV740XwvZ2drZaT4ckJENmMLKEOyKFf9pssOckhic8Zroku45ZftM8cbtCUk1GJDlElA&#x2F;cQL64baSe4C&#x2B;tcF4DkuLy&#x2B;mvFVW1TzjLAW&#x2B;7I5UBnPqsaf&#x2B;PMR7V3Xhnwrc&#x2B;Jri3mtpZI7G63HdjLn&#x2F;npdsO7EnCZ7sD1Ix&#x2B;wcqjG39f1&#x2F;XQ&#x2F;J5eZq30bJplvbrOv2p2On2k5&#x2B;bzkdwLiX3GQVz6KfWvRfF8TT6LZ25jS4t7m9ebGD55jjt2CbvwVTgc81T&#x2B;HHhiPVNTDW6276bbzLpljHH8zKiKrzEH&#x2F;AHcJu7EkdRipNZkhuNYVjby2ZjN4VZSzDhdgx&#x2B;eOPX8azk1sSdNpdxarfaTGZtRjb&#x2B;zhlSzcfL6AVDoQhgstLn&#x2B;3Tqq3jLtK5bB4q14dmnk1fSI4dQgkX7AQxYAdNo6DipftMlt4WgZr63j8i8Id0j3MPwrnfb&#x2B;uojJ8d3kdtpOtQebf7pJ4jG7DamWce3r&#x2F;ACq1D50HhTUI&#x2F;wC0rdUt7rcSFDN1X&#x2B;HtWd4qv5L7xDqSx3y3GJrUhJIvL6sp&#x2B;vNdG1pJaDX4Xh0&#x2B;3ZUWYMRjIK7j2&#x2B;go&#x2F;wCB&#x2B;gzmPETNpk2sxwvazyNHHfREZhdmB&#x2B;bH1x2xxVjW9OaPUbry7OZo2txdxNuEjkdweRlu4PXJ5yMU&#x2F;wASx&#x2F;2pd6V&#x2B;&#x2B;sbh7ywa3KMMfMFBxn655qW2gWW20S7azjX7RGbZi94eewx9WpXsv6&#x2F;roKx5P8Qf2cNA&#x2B;IZ863jaz1O5XzxPCNjuD&#x2F;EyY&#x2B;cZ7kBvcV4H8QvgP4g&#x2B;HLyySW7ajYx8m6tUZlUerr1X68r719cTafcafYR7Ipwmk3TwOqTLMvlucD5TyR0wP5Uy5uom8N28k01vthm8i83B1kUHgOd3pxz1OevFRKjGWwtT4UM4fPf0o873r6g&#x2B;J&#x2F;7L2i&#x2B;PJJrrTVXQb4SNH5iqPKuH46qDhs56rhueQa&#x2B;c&#x2F;iB8N9a&#x2B;GWpLDq1o0Sy58i4Q7obgc&#x2F;db14PynBHpXHUoyiMxzNtb1prSbhz&#x2B;NV2fPNOV81kBnhuOtOLbRn8qjL5&#x2F;L0oLZqCx3mYq1oukX3ifVI7HTbW4vbyU&#x2F;LFChZiPU&#x2B;gHcnAFbfw1&#x2B;FN78Sb0skn2PTom2TXbLvwePkReNz8juAMjJGQD9Q&#x2F;Dz4b6f4K0qCx022&#x2B;wwTOUlmD4efy&#x2B;ZJZJDy5GdqgAKD0A4NdFKg5avYk87&#x2B;FH7Kljp1sL&#x2F;wAVSx31zlithBIfs9uAMs80gwG29wDjPHzV7ZDFDY2Ear5VnYTR&#x2F;ubJZPLW1tVwPmRATukODtBOchak0izhv&#x2F;su0wqLw&#x2B;ayxwtN5Vun3V3NxgnBJ7k1oadprarJp091a31zcapdGdhL8gaOLO1MDGBjBx6mu6FNQ0X9f1&#x2F;W4WF8L&#x2B;HLy48Qz313ZxN5cbXgjc4JfH7sN13FVHGeAc4rXsdDkmj0GyW1s063L73LAnlgfX8e&#x2B;aryWippevzf2SsjNP5EYN0f3oUgc&#x2B;20n8jWmmlJY&#x2B;J592lKy2NhgbbsZY5B&#x2F;D5T&#x2F;Om&#x2F;6&#x2B;718yhXtLiLwndLJZ2Mv2672lk&#x2B;TcSR688lR&#x2B;FY&#x2B;pmPVfF7yyutvENQtrIJb8tlSDgtg9Ceg&#x2F;nWhPpuNN0O3&#x2F;s1I3uJnlY&#x2F;acjC5PqewHPv70zRI5o&#x2F;Dmnzeda2&#x2F;wBp1lZf3eBjMjjHIPpT6&#x2F;1&#x2F;wewjRkuYPtviTy766haGC1J3&#x2F;MF&#x2B;VjwMYye&#x2B;CaLQ2994s04sb69b7AuVjQ7fvDqv1I5zUl39rZfFW6azl2rBt3AMVHlA5PT9BUeiXUw8YWYl1K3jMelBvLSINn94vI5BH4Zoe3y&#x2F;RCOTlsCml&#x2B;H1s7JoVzdQq8uVIBL4B6nsB3&#x2F;HpXTeFblb7R9BvppLe8nZHtJQGWNwwJIAx1&#x2B;YdCB&#x2F;Ss2EWeo&#x2B;GvDX&#x2B;mXV0Wl3FOcrmRucEA47HrVPwnKNKvf7P&#x2F;ssNHa6pIqNIVBxu4I3dQQR0Jx6CtJbv5&#x2F;qBx&#x2F;jfwmPAtt&#x2F;ay2H2fS9MuGt9QUMMNbFspIV9I2JY9gruSOOPDf2hvhP9rsGkhhEk10jf2SrZ2&#x2B;W3LW7N9OR74xz0&#x2B;tPGPhyHU9I1&#x2B;1m0y4&#x2B;z3GCUSbzuWbByM8dK8h8T&#x2B;GP7Jhi0eW0uIYdQgjfRpCd7WRAGUGSDlc8bj8ysBuJLEbU5lKV9T5&#x2F;&#x2F;Zx&#x2B;KLeFfFUdvcNK0tipickfM6OVDkr3ZSMsvByrY5Zc&#x2B;D&#x2B;BP&#x2B;CpupfH79sPX4fHetzj4VrPP4a0e2iR400RUlKLqRhUktcNIis&#x2B;&#x2F;cBGDGu0EkexfFnwPqHgbxZHqGnhk1bT5xcaiEH3X6pMvHKtgZwP4Q2Mivjfxf8ABaf4N&#x2F;tEy&#x2B;KvBmyO3d&#x2F;7ctrOUKrXMRZlkjOQUZ1O9CygbgFYr821ccYoOm4zjzRkmn9369zrwsZuanSdpLVfLt5n3TrPhOXwt4nn0&#x2B;4SH7RBIyu8b&#x2B;ZHKOqyo4OXjcEMGyQVKk&#x2F;eONeHQpJ7Rir&#x2F;ADr9xiNze2R0I9Pwzz1yPhR8fdJ&#x2F;aX&#x2B;F2oWej6fpun614ZghubWO1jWa4tdMkfyU&#x2B;XcHeO3mIXbu4injHGwNXceGNFvLOyt11BbZZmQCWSMfKGwBkZGcZ9R7HPU&#x2F;i&#x2B;ZYD6niPZ9HqvR&#x2F;5fcfq&#x2B;WZg8XhVWdk72a81Zv5O5wGq6FJaS8wrktncsQ27s9OBx6&#x2F;nUQt1J&#x2B;WRg8jY2qRu&#x2F;EdQc4z1r0rXfCbRqWiyq4GFLHpke&#x2F;tnHFclqXh25glMQHmK27d8vTGf8fw6c98uY7k1Iq2mnLCVVI1V2G5t0mSPp6c44AH1ovfMnSQ7XVm&#x2B;712D6du&#x2F;wBeK09O0NppgrybI9oL7c8ngep9PTPFbd74Rht9O&#x2B;7tLAgEkAnB9fr39&#x2F;pUzaBNI4X4XaKIPiQmv3EP2uHwqh1HackSzsyQWyKc9ftMsLcj7sbZwASPiv8A4J2eD3uP27fil4ms4mtdPFncaXJISB50l1eLIzycknP2Qs3JXcxHzEZX7C&#x2F;ad8df8KH&#x2B;BU6WjSJ4m8SXe20Ut5fCxkRSHg&#x2F;KqPdSZ7lRjBAK&#x2B;X&#x2F;8ErPhrDD8MdW1S6sWX&#x2B;2tVnkKxHPmwwKqQxj&#x2F;AHirHnnDyZA4r9T4Xw&#x2F;sMHGMl70vefktl&#x2B;CTPzTiTEfWMTKon7sbRXnbV&#x2F;i3&#x2B;B9ffDjwz9qtI4SWhuLeENcBxjy7Mchf9&#x2B;X7zf73uMeuWVvJp&#x2B;mq1moj1LViFms2GPJixwCOwVdxbp0cYypUYvw38LtLKsOofu7q0YXV7c4&#x2B;W4kxlI&#x2B;uSqjkjnjA6sVPX6Fpl14r1rV9YmsSPsNs1tbhnIRwxyzn1ztVR2&#x2B;Vjn5sD6ST6nzBf8D6fbeEbHSot00LSWk8oWAEkljuLM4GNxzkkYGTWRodvJdSWK217DKZra8CpLzuPA&#x2F;3iOCcjrXXX8l9LqOm7YYWiNg&#x2B;FYbVHyrWJ4TtftUmhrcafvWS3nVjEc7uckADkDr1PNc8pX1&#x2F;rqFzY0C1uJLjQZvsNr&#x2F;qnQkPtB454HTpU14l3beGtUMcFjC1rdHKuSWB4BwR9c1n6K1vb6PorSRXsDR3vk7c7drMSvQdiAevrU&#x2B;pQQPB4ijbTbx38tZlbBxLwz9VPXO0cip6&#x2F;wBd&#x2F;UDNurCbUNW8QTTWcNwyG3YGNiuSB789utdH9jE3iibytNXbeWoOJZM&#x2F;54Fc54fa3ePVF8u8h86wt5dg9Ap9&#x2B;vf1rXjntzqmiyLDfTma3KFckZwucYyP7wqelv62X&#x2B;QFS5hnOiaOzf2Tut7gRYwwIyTx7H&#x2B;tQyaY8Og30aabb79Pu&#x2F;NQeZ90ZBB&#x2F;DnBp91ahfC&#x2B;qRx6ZMzWl6xCPK6bgCoBGQeuSfqKmvdOhh1fUkOmfu7603gi4JyR8o9845pf1&#x2F;WvmBV1vSPtWo6lGunw7byzWYBJvmyvQ8fSqdvIZT5TNfQRatZbjuQSIJVHr6H&#x2B;lN0SW1utU0VpIL23WazeEhQfnC&#x2B;3Xmm6VOIdO0MpqU8U0dy0DLLHuznIHHQcc0Wt&#x2F;X9dgMuPT4dThgVJLXdq0JU5Jt5Vni6H0z7dwKyfEUVt4hsGtdctjdadeW29reZVwrJ8rhXAxkYBXODx1xXQ3bypZXC&#x2B;dY3x0&#x2F;VQRkDdgkf0J&#x2F;Ws69t10uZ1ZJ7JbfUypDfvYfLlHT&#x2F;vo&#x2F;hmq&#x2F;r&#x2B;vwHY&#x2B;Wfjl8Bbr4XTnULFpLvQZ2ASTO6S0JAKrJjscja3Qgj1BbzkHNfZN9FDbaU9vfW8NxZ&#x2B;XLaTq2ZLdljfB3DtmNgfTCfhXzP8AG74RyfCzxGvk&#x2B;ZJpN8zNauefK5OYWPcr2b&#x2B;IYPUHHFWo8vvR2EedebXTfC34b3HxN12S3VmhsbVPMurgfwA8Kq8Y3M3A&#x2F;P2PP6Dot14n1u10&#x2B;yj8y6vJBGgJwoz1Zj2UDkk9ADX1h4F8H2vw58MadpFqqqtvLNcT3W3El48UfzSgdeZSuM9FRBjqTnQo8zu9ijQ8FeG7XwhY26wRxWtvZQySxRhdzYi4Xavq8jFstyeDxiuohsns7K8kW3U&#x2F;YdNiiaW7fktKTk&#x2B;xJH5msuCBtP0maNVSxEdhawF5fmlYsdxz&#x2B;JHX0NbNyLeVtaaO3uL0&#x2F;aLeNWdiqDao4z0GT6jFekv6&#x2F;D&#x2F;MDo7eY2up6jG2owq1jpqQx7UHRgcDrzyO3tVjT2tYtX0KObUrzclr8pUNHnI&#x2B;Y9COcCokS4W&#x2B;1wJp9sqrHD8jkZHy&#x2B;2RWjYy30Ot6KFkt7b&#x2F;RGGGB9MjoRUdP67AZSXOnyeHof&#x2B;JvqoW41FItyzNyCNp6p7fzqcX0F3LrkwutWui0UcRCvu2gDYcDA9zU0N3qT&#x2B;GLFvtmn&#x2F;LqqZ&#x2B;&#x2F;ziQ570EagYvEB8&#x2B;3&#x2B;UlW2HrtkY91Paq0v&#x2F;XdeQElkLafxHo2611CTy7HKeerAdhjIyOn8qraD5cXgvTtukTKsWqL92QbSBJKc9RVu2a6t9c0WSTUvJ8y1OMwxMDtRieSoP8AEKpaHOreE1DaqrNHqHzGOTywCAxOVDEDkn0pL&#x2B;t&#x2F;MRr3Yt4k8WJ9huI2WOJ9saMVz5DHkgYJ496r2kbR&#x2B;JtPaHTY1DaeEPmFcjJDArnt8vTI5qzqly323xKq61agTWqYQRxnGImXli24&#x2F;eHeqEU1u&#x2B;raGs2oXDmawBUZZclUB&#x2B;Vv&#x2B;B&#x2B;po&#x2F;y8&#x2B;wiWzl1Kbw74Wk32iL9oEZZQ2V&#x2F;eP2OR&#x2F;D2IrC8UFbHUpb6TUh5MOrRvO1tJt2h3ZOqn5TggentVqFdPl8Maa3k3M01pfrLHvXy5AQd&#x2F;DfLnqR1596j8cWXn6T4oFvpjrIUScPKu2TcgBzlgQ3QH73Nafa&#x2F;ruBvTiCU&#x2B;IoTfaw0kdsJFBkbqY3cY&#x2B;QDqOorjfiHoGn61aeGVutQ1iFWicLIHZgjGFAG&#x2B;4RkHnB68jua7LQpr&#x2F;VZtQMdla&#x2F;6VY5UB&#x2B;CCAoyO3JNQXFneT2&#x2F;h2aPT7OPc7gFWwU&#x2B;YEDgY&#x2F;h&#x2F;SiMrO&#x2F;6&#x2B;QI&#x2B;cPFHhaDxq5s1kmXWdOm8q7vtxUXMe4&#x2F;e4yV&#x2F;jHAIwSMHcB8jfte&#x2F;DO4&#x2B;Euh2urWMf2i68P36G0Qgl7mORRHcRDj54wqxsVJUgLGQSRx&#x2B;g&#x2F;xP8Gve6ddX2ozRfZ7e9SC6SMvHLJFJIQF3BvlxIyMGUggbuQCa&#x2B;fvi54t8P698V9M8L&#x2B;FBJdeE9Aka&#x2B;1PUGuPNs7XUB&#x2B;5S2E0is1yoLP5zglUcRLk4fYvYyqVVK&#x2F;u2s0dFKpyO8dz5I&#x2B;FXiOb4HeOLHxBo&#x2B;m3uk32nyma4jgYMl5psjAOoH3WZGDH5uOfusDX6daNpmi&#x2F;FrwBp3ijQXjhbUlMxtt8caOwJHyQgZBGPmGRtJAwDxXyP8bv2VL&#x2B;Px1a6h4fuzBYrbmR7ezlMgWIhgQI2AXaBuYKFGAeh6D5i&#x2B;K3iX4meBfhbrXhfwf8QPEnh3wxJqCyavYWMCxvORgRyLcGP7QilQMxRSpHJyWRySTyYnK6WKh7CuuZPZ9V6Pp&#x2F;SPSjjp02q9B2kt10a811P09Twjtk3&#x2F;LtLHClV65JOeP8e&#x2F;Aqivw7jmLgCQK&#x2B;DnH3R&#x2B;XFeV&#x2F;8E1P2n1&#x2B;Pfwct9B1y5E&#x2F;jXwnFHbX8dy58&#x2B;&#x2B;gUARXSluXDfdJJJBHLEkk&#x2F;SmqvDoun3GoXdza2NnYQvLcSzvsiiiXLM7seMDqSfzr8zx2U1cLiPq816ed9rf5d9D7jC5pGtS9rF27&#x2B;Xr&#x2F;n2PPx4Eht90gh245J2fe6gj6Hp68&#x2F;hXQf8IB&#x2F;ZNsusX8MkUCOot4nRsyE9MIo3ydSdsYLE45GDXy78f8A&#x2F;gqZN4R15NP&#x2B;GvhOTxFeSssUeoam7WtruJJ&#x2B;SJAJ5AFUsW3wEbMESK2a8xg&#x2B;Pnxv&#x2B;OPw31b&#x2B;3LvStO0rVr5bVNN0mxSxinDNHv8ANlG65kjZdxKSTOpC&#x2F;d5r7DJuFVSar4v4uke3r5&#x2F;el5vb5vNM&#x2B;nV&#x2F;c0HaPV9X6dv18uvP&#x2F;tayj9ob442JW8uHt9GFzBbG3UKhXPllw2wqMpFEowx4B5JJY&#x2F;TH&#x2F;BOfwFpd1&#x2B;zZ4RvWW4sdPdZEnm4eR7pJJklKqv3v3a8ZOSZJgRgZNz4P&#x2F;CWePXbx9S1jT3n0&#x2F;TlhjSNAwOAOoLDC89B1wc9hXofgPwNf&#x2F;BzU7aaPSv8AhLPAPiGH&#x2B;1NV0e3to3n0y7KKGvIYMZnjeNV8yFW3708xFdpJVf6atR56binZu3&#x2B;fl6HzdSotIrZHqaxNZeH9P0lXjWPUpvmnLeY6uZMEn1I6&#x2B;xCjpkDY13UdLis&#x2F;EFuZZHCwxhT5gUIvlHhQCCAOeKz&#x2F;AAJqFr4g8Kx65osel2&#x2B;l3l3H&#x2F;Z8kCtHGI0XCsqEKUXcSoXAICj2A3L&#x2B;XVLnWNcEckLKICMorc4GB1NVH3YqLe3XvtqcvUq3X9j29zoskZIH2FkU&#x2B;ZuAHlg9MnPbtUPhOWK3sdAkj1OSEo8wzNlmYFmTpwO&#x2F;pWpqUupPd6Lunt9otmyArbv8AVj3xVPRYL5NF0Z1sbFtl4xbJyxDO5Pb3Bqb3X&#x2F;B9QFN15OjXqQ6ms32XUTIMgDC5AHT0yfyrT1OSNte1CM6ssf2i0YqNoO04UdT9M&#x2F;nVS8tbtrbxAr2NvI0MokVRgbhwcdfXNXZ47pNctVSzs&#x2F;LurPA3A5B7fpU3&#x2F;rTyAyfBUstxd23k3ULLeaX5S7sAkhyPQ9j&#x2B;lWobmQ6Lo80uoRqsNzscJt3RDeevqBtHYdaz&#x2F;CT5vNJeXT2w3moxjJy&#x2F;rwvocdTVpIBb&#x2B;HJFh012ks7s7WlYhh&#x2F;31z&#x2B;Rpvf&#x2F;AIbzQFidleLXoDqgbpKpAwRxuP3SOjVXv7yBb&#x2F;TZFvL0eZbFWDM5QfLwfwJ9e9XruO6&#x2F;t3Uo&#x2F;sGnrHcWZbkd8Yz0&#x2F;wA4rPuBff2X4fZrOzVo3aFwDlT0T09an&#x2B;vwEZPg&#x2B;aQSeHXXUoQq&#x2F;a0zIFBbqB1&#x2B;nbNXcXR0edY5LG7W01Usd3zYwRjheO&#x2F;eqHh0qkmlrJpjtJHeTx7oV3Fju9un4mrGow2t1pGrLLpWosq3X8SsFB3dfvfSm9&#x2F;67ssp&#x2B;MoGg&#x2F;4SJJtNjCr9nlUxMM8Y3HA&#x2B;n15qjrM6I&#x2B;uR2t5JE0YhlEVz90EYIHsOPwz61H411K3fVtajt7ia1f7FCWDH5VLMQPb07&#x2B;gqTxUbhW1hbiGK8jW1hQMn3s89Pfnt7e5oj0X9fZAyfECpaeILvzI&#x2F;satfQMWQZhkWWMIQR75Nc3q&#x2F;hmz8b&#x2F;DXW9D1Ur5mkpFIhBHzJu8otG2DhgUSTvy5HQ1uapIov9QW1kB2yWQa3l&#x2F;kPzH6fjS0yOG210zR28jR6laXUFxAxOQ0dwhDL36MenoOlOOtk&#x2F;Ik8o&#x2F;Yp8BrHA2vXEduranfRabayTt&#x2F;Bks2B&#x2F;tSKgPqFAHUmvVbO2abxB4ulWb93p8Mlks8qcx5JLgL07DPqR9a43wn8PtLv&#x2F;gP4OM13dRNqtpblbOKTyjDO2HSbKlX2knDDkHKEYKmu9060t7PT9SuJt15d6xZXF0FUcb2dm2HHVsHJPJbaxwSKapqEeVdP6&#x2F;zGVJ72Ga&#x2B;1KW2ikvWxYv5sn3VHynjPp17dODyM72qTSQRa99q1CG1ENzbsyKPuhtnU8Efe4PFcVaXUt1oF1JcXC2sMmmWzpHGfnYICpA9&#x2B;D0z0z2Odi71mzSTWPItJrpLm1hlklI&#x2B;TbnJweg65KnaCCCM5o6&#x2F;15FHZXj6bFrWtw3F5dSSSWKOnnk5yqno5A9V&#x2F;iq1p95p5vfDsscN&#x2F;JHPA4BRhIMhN2D8x67j&#x2B;INO0uS&#x2B;l8VKbe1hhh1HSRvMJCneWJyVyOqZ6HsKqadq&#x2B;rnQNDnm&#x2F;s9WhuSkwdHU4LliRy3YA&#x2F;TNLpb9fJkjLS8sotIkt30&#x2B;Xdb6uVbzIfL&#x2B;ZPvEfX72fetuewsYdY8SRtpa7biBnJ9T5fPGP9oVyXjebUtLk1aQXVurR3Ed2hixJuBbDggxjnYxHB&#x2F;u&#x2B;ld1bLeT&#x2B;L9Qi&#x2F;ti3ZLq03rtt4&#x2B;hKqeefT9aT73&#x2F;AD8hmTAtsYvDrR6ad0aPGAGZT0EZ7dxUOkTpNot5t0uJvK1eQf6RDhlB9yhz9&#x2B;rKDUk0TQZJNURTFc7JM28Z3Dcynpj&#x2F;AGaztPQtoeuf8TiTMeoh2ELK2OYu3zY6dKqO&#x2F;wA&#x2F;PuI6rVLjOqa2v9nPxbf88&#x2F;3eNo7Y6celV9He8H&#x2F;CPrFY21uEhkiKMwZD&#x2B;7AH3CO6jtVjWLdT4g1Jf7Wm&#x2F;wBIsT0cFwQx5wPY&#x2B;nasXRLiyu4PDzf2hdXHmROxMLbgTxnKEEd&#x2F;SpUdP67CNC4t9Rt&#x2F;CE29obT7JqLMDgtHsDA9wD93Peo9dgmkvde26jF81mJQse2RSQD2GGGcDoaozJo8WgahJHC0jpdYYxsIJM&#x2F;d6ApzyK2Es4bvxXNDHpNwZprD5JJYnXOSE&#x2B;&#x2B;FYdv71Vt&#x2F;XoBg&#x2F;D2ex&#x2F;tC0Y3lxcpJp4iV9hmyobcp3BSe3QsetXkj0qfwzprRzTMsd7lALVm2nLHH&#x2B;ryOcis3wNeXEeu6HNDptvC1wkqASMAwHddwzyOOuPumuhkm1A&#x2B;FLlms4B9nvgxDT8RsCP8A2Yj86062&#x2F;XzaA5bxN4c0HXLbxVpF1HPfWN5Eq3VvvzuVgc&#x2F;I5HVe2McVgaD8HPCvg&#x2B;00DSNL8Oiz0uaxeAQLC9vHIqxEshVfkOQw&#x2B;tem64mqzeJb6ERxJJNYkhGPmK44QdGB6lhwO9ZcaX09n4dma4tVUSeWrIfmUFgBw6E&#x2F;dQqee9TGX9X8ilI&#x2B;e7zw7&#x2F;wiL28N7YTSTaFfyWNrdyRmYyW5&#x2B;UKz7c7lUheeWAQ8nOMK&#x2B;&#x2B;DXh3xBP4kKaS1jqUamPULae0Agmt5B99GyDlFzwMgAnABr6X17w7qEmna8q3Ecjq6yhWEeJQSXx&#x2F;quuePyrN134bXHiPWLW8t7tUuriw8sSttTGQeHCxA4JGevGD61uqnf&#x2B;uo&#x2B;Zo&#x2F;PXXPhT44&#x2F;Z11iz8feD9R0vT9Y8LyyWkwKCa3vLeT5THIp2iSF1ZTtbBwMq2RmvetT&#x2B;ImpftQ&#x2F;s86PrWtWg0Hc109zp&#x2B;nzyyWlxcQTCCOX51LeWJTuVXLeWQMs5Ga9W8YeHbfxr4Is7fxNb2NnqVu76bd3qRFUniYdGJIymNxGQcckBe3D6D4DurbSrPwDarZ6fp&#x2B;ieZFc3Ai&#x2F;dpmWWaTHKnLSuVRcj&#x2F;U4zxmniI0ZONaoleLdn26aM1jWkouMXvv8jxP4X&#x2F;swaL4j8ZWt9f29wtpb2slzGnmqgfJCJ8qtniFR1HU1614d&#x2B;Amk&#x2B;HvB&#x2F;hu3WxmuLy615A4RgwjUCfd&#x2F;qySFX5BkjGQBnkCvd7JJNB1m7tLdYWisdNWImOF1UkjsS&#x2F;oB0&#x2F;Osga3qms3HhW3WNLX7RLLMrSqY&#x2B;N0bcEhwcKTxgdetaSqu2n9bmXM2ynoXhu00ibxRN9iutq28cSgzT9fKfPB&#x2F;2sD8K7jQ59Isdc0NV0uZZI9OxlbZ2wNgA5bA6g&#x2B;9Zjadqhh14NPbbI5FUlnUZ&#x2B;cntD&#x2F;tAVv6JouqLr2lAPpzAWCZxvb&#x2F;AJ6eiqO&#x2F;6VySen&#x2F;B8kKRk3viyzufCqxtNdWyy6iXH&#x2B;kLGyjduA&#x2B;Vsj6e9aulnRZ9R8Qs93LJI0K8maQ9Q38R4&#x2F;WpNOt9StvC1n&#x2B;7X&#x2F;j9QkJ8gI4z1c9q33udUjvtXzGqhoFwwl3Z49Mj19aTlr&#x2F;wfNEmPNLpslzoatJdbDCRk3Y2&#x2F;dI&#x2F;v57VBp15o58MaYBeFV&#x2B;1eXgRbgGBx12HuvrWvbnVWvNFYtD8sR&#x2B;7G2See&#x2B;&#x2F;HcU2O81SHw&#x2F;8AKu7ydQ3j5gMjO4&#x2F;xehNT&#x2F;W&#x2F;qBVnvdK8&#x2F;xAg1FgY4VZgYwuBtLDqg9KbHq2kyanoTR37Fri3OwrFuY7Yw3GFP98VsXN3qw1&#x2F;V13Ku6053AnkRj0b&#x2F;AGqzYrvVN&#x2F;hlW8uVFNxHhQwB&#x2F;dkD7zH&#x2B;6KnmVvl38vQCno1xHZWmnyDVLiLy790DXOT97J2gHaBwfTtWleCFtK1&#x2B;OTVZGiW4Vw8WV8oMwznG4EDDHkVm6LZXC6PazNp9mvl6ukjbRk42nJJ455roJ47uLUdf&#x2F;wBFtYllt43WQfeU&#x2B;V82eh6sO9V1&#x2F;wCG7gzOa50qfxRpsjNu&#x2B;1WIV2LqAwOWPH&#x2F;1u9ZAn0lvCWkyeY7SW14MlZtuQGZjwSOowcVsLeap&#x2F;afhyTzrFjHFLExTfk4jC&#x2B;uOqio5JdUj8IzfvLdWtb4giVH6DC9m9DRe2n9dRGPosq2&#x2B;rKkOpOqwau7bWI6OMgZIwF&#x2B;YdBj3rS1B5BpniBV1C3LLMGH79TjofSqOtJNF4lvJLi3guFW6tpgydMHKd8nj5fxxVi6uLfy9fVtJvvmKNxb4DduMkUb6&#x2B;gzlNemmufGGqeYsN7HcLYRR7MHHDtkdecnrxj1qtrt7bznW2tppbORpYYFRujcjg59vXnqccg1NqMif8LO0rymlshNpv2opKwy5jyucbj0Dg4&#x2F;Q1lSX01ymnx31usv2y&#x2F;e7Z4&#x2B;doXpg&#x2B;nAI&#x2B;70z1wDK0&#x2F;r&#x2B;uxQ3xFeCXXbpbyPy&#x2F;M1W2iSePj&#x2F;VqDz&#x2B;R9v5lj6hcWfhrwxdPJH5C30szTg&#x2F;8s2fGG&#x2F;2WJX8fXgVi22pMlna3VtKLi3Zru&#x2F;kiY&#x2F;Mijcq4&#x2B;o5HbkYBBGNXw&#x2F;bQ3&#x2F;gWb7PMIpNP0jLW8v3TKRuwB69enbn0xUVr&#x2F;XoBz2j6p&#x2F;wkHirwtYvZOYdO0i2t444vuXH&#x2B;jqTyP8Aa2Y5zgYJByK9Gs7meXw5pslrbrCnzwyysCS&#x2B;75WyDyx6Egg8uSGPQ&#x2B;IfDPxfceG7&#x2F;wCF8sN2bq31jT45J3BDSR7rcbt2DyETPHXMa9Oc&#x2B;n61qlqNE8V6RcaxJdXFjnUbW2iAdUiILFcgEFduVG7nIBBBAI6Jxuv69P1BnI&#x2B;HWtdN8O6GrK&#x2B;oTahDc2EjHnADkjHUcFc9Djacc5B19NnvPElppkVxPDp0erWcumu4AkaGUD5M9mOR0BB78ZwvOXl1f2vwyt1s4FtV026i1GNnHMqHBbA6kEE9uc9Rw1FpJZNourTLPJfXGl3QvIQvzB0fDdM44weCfvAYG6sd&#x2F;wCv67&#x2F;gUeifAzxlD4z8N&#x2B;Gbm9vrqS&#x2B;sfP0e9TBnWOeH91In3WYD5SwJb881a1RtIsdD1NFurgfYNQ81lSZo9mWHIDlflOen1rzv4R&#x2B;Kf7K&#x2B;NGv2kemxrb6pcWniO3EseHVZU8qdc4zkPAr4IGPMINexeI5NUebxBbrbLHugWeFxKJAGVdxyNyn7zLx3Gam&#x2F;X9fP&#x2F;gk9TlPiidPlg1BWs7iZp9P&#x2B;0bmj3IdpHIZTngr&#x2B;RFdj4UvbHU77T5&#x2F;sDYk05GH7x&#x2B;QQSOPbArjfHF5qlxpOksw0&#x2B;NbjT5oJAd6sCsROP4hgnd&#x2B;QrrPhZHqjpov77bG2nD5dq8YyP&#x2B;efvQ9v6&#x2F;roHQc50xfDOnyQ6ewY3RHHmx4JyevHcVHbpHPpWvf8SlZG84r&#x2B;&#x2F;jyW&#x2B;bI&#x2B;ba3HFXbm21IeBrZjMuYNUUZyM48wjp5Q7NVC0m2Q65HLqttE32xR8kiRsMgcFSSO&#x2F;oKE&#x2F;e&#x2B;fn3QHWXcivrbMuj2pZrQnJXbjIz18usvTptQitPD7La2cLQ3Lx7ZWDHacjhlJ9u3atG2Qya8q&#x2F;wBq3B3WS8iNZFPp0Fc9YzWsum6Op1K4Z1nJ2RHZkhh1RgQe&#x2F;QChf1v5knSXcGpXWn&#x2B;IofNWNZJgwLLvUbio9j1U1Lpk0954p0mZtShSSSyUMY2Xvuf7rA9x61h3h0iH&#x2B;3WbzDIjIxO1oTw7N94bB&#x2B;tXdPezbW9BH9n6hcK1kdrmLzlwsX94Mx&#x2F;io5dP&#x2B;B5B0MJbddMvNFabVJlZdQMI2HySS6kkYDFW&#x2F;iHTuK3zbW0&#x2B;l&#x2B;Io&#x2F;tF20ck&#x2F;mN&#x2F;oxbGZOekeP4AawdYRLCzXytL&#x2F;AHdrr4kMeCuF8wH7jqAep6VuafamWTxFbjS7HbNFGwzEF5MTZz8p&#x2F;iPvV&#x2B;f&#x2B;XdAWr2G3ufEdlJNJds8liNzG2fodzHlUyOQDXO2k&#x2B;lnw1YiOWa5jS&#x2B;8oxmYNtycfdlIYfNnoK6SBbhdS0K4XT7IM1m0bcEfN5Y77PUGse4utV&#x2F;4Ru5i&#x2B;zxx&#x2B;TqIkX94JVxvD&#x2F;wB9T&#x2B;lEf8uvqCZpWdrpNzfeILc6dcEeRn&#x2F;j3HO6PPHPqB0o0&#x2B;w0&#x2B;JfDtzHY3UMoR0P7hBwQinJ&#x2F;EmluLnWrTXdaZf7NCyWYZSTMvRCPRh3HeotC17WJ4fD8cn9mbo3kVtplbo6r02j07mnH&#x2B;tfIRzvjey0HV9G8Qw30KTW8c5uWhllDoSspY5QEnB2AEAdM8Vz&#x2F;AMN9KsPDlmy36W91NqBeV5pJQjmdoQ2QDyQGO4jGcFj3Na3xB1XVDJr1qsK3G4kBEYRjPmSYxl2PTjkCum0zT75bLVAbe1xbalG0QlHnLwFXI&#x2B;YHOCeg6iscZhfrEORu2qff8PmXGXKXPCngTT5U1C7uFvJvMtx5TKSFaPaNvAPA5&#x2F;EexBqHxR4PsLG88EKsV9J9ljuAPMCt0WAHlu&#x2F;Brq5NU1IeINQjmk07ypbYSKVZ1bI&#x2B;9wVI6AVmXFxeRnw7JNeRmRXMBVkVTuLIOeOnyEZAHWtaceSCjfZW&#x2F;Az5ne5xt9Yactj4kLeZEzXHXfCMZK&#x2B;9XrKXRX8SaaJL&#x2B;4H&#x2B;grhROSP4z0Suov11Ix68v&#x2B;g7k8uXaocs64L9yB0447imQPqC6xpLLbrJFNZ4VjKFBKoT&#x2F;ePZv0pOWn&#x2F;B8kPmOUs001&#x2F;Ctv5c1ywa6GP3EzfwL6pWpfQael1rXmTXHywZObeRP4QeoQelQ3EF9H4T&#x2B;aysme1v8Mpl3ZUMAf4P7vNaDz3Vr4n1Ly9PsCs1nuBWXachf9weo70Pf&#x2F;gruhmLFc6H5&#x2F;hyT7ZI3nRTBczSf881bp19agnvtDg8KagzXWVtLxlfMj8chDyf94VqwX&#x2B;p&#x2F;YvD3&#x2B;ix4W4MSn7SMH5tgHXn5Qfyp093qj6b4ija12r56u4Ew4y2Sev91QaObX&#x2F;g&#x2B;YDYho7ePLyOOSWTzrDflLgdN4Q8Fh6DtWTYHT47Pwy8klzGYZJY8yyBxuO4dNzZ4roLa81O58XWPmJGrTaePvpuBxknpJ6kVm2kupR6Xp0jC1byNRIYRxsp4OGHzPjoSanp&#x2F;wAHyaAjTVNOsvBd0W1CVjaXzIyuhT7uxDjKgYw2a2NSmsD4pvObqRLizPzRTJyQwHQMP4R6VXa61IaJrX&#x2B;jrCqzh3w4Ycucn747bamnl1V&#x2F;EdtHtsW82xByyPn0PRz60X&#x2F;q&#x2F;oSc3YXVhJ&#x2F;YKySXitG0kXz3SqSQ3oG5q5ObCHw&#x2F;qTK160f2ncxjnD4y2Dn5qb4ck1RotDfbb7WnfJSPAGQT3kqTxbcatF4e8QQ&#x2F;6GWWYbMxPk5dcf8ALTFVfX&#x2F;g&#x2B;Y76nP3PiXS9T13WEjuLqKSGyA5JdyyncOF3EfU4zzW9FdXGqQ6k1veWp86CGVdybiQw9AfXIrgZW1CLQdYzawXBvriK3CuRtxtU427jnILjHeumlvIRql9DNZyRww6YiOyEqPlbIyVwFG1s4yep4qV&#x2F;X4FWMP4zTXOh2ek3V1tmVrM2qvGhXY0rRgHH1x1zzjAzWJcSyWb3kthc&#x2B;db6TYraLHJ&#x2F;CzAknBwQeg5xkg5ycmtn4jtpcGmWc8G5Tb2azAMCA5Qq4G5hk&#x2F;d6A1yfhprfxFZWcbeZY3mo3D382DtAUYwPYbVA7dB1GMnQa2M&#x2B;9Vblr23hBtbyCG10tFP3d0hDOv6jtzzx1ro&#x2F;EWoJD4attJnh&#x2B;xS6lfqJLyPB82GJN5Bx&#x2F;dALbTnBJ4DHbXO&#x2B;Fbn&#x2B;2tQhe8j82KOW61eWZVz8iFggP&#x2F;AR34&#x2B;vJqg99HrnjC3sZnkuGtbGW8eAEkeeWVjk9TksufXYe2aumne4dTzH4ReJFn8M&#x2B;A9StYZP7S0lLHSI4n&#x2B;7MJYwN3TGcMWAxj5jntn2zwj4th0rxnHo9no8N0s1vNplzN5qR&#x2B;bKiiQCVfvBjG&#x2B;MgtnbnqcV8w6T4l1rwV8F&#x2F;DuuafcWdxapqel&#x2F;a0x80CpPEpkGOoUjkHqoI4PNev8Ai7xdHpEqRafN5Ou29z9s1Dbu&#x2F;fuv3drAg8oWAPOQcY5yNetvl&#x2B;CKZ195o8ifD&#x2F;STq14o8kNpVxHGMLIOVUsPfbuOc4UHLbeBh&#x2F;AzVJ4r&#x2B;7tbey2&#x2B;TI2n3MkpwcfdQ9cn5QuepO0dMgjo9D8nV7TVrOGOTUG1eFb23Z02qkpAcbuMKxx129I853fe5DwDczah8Stct7u6Fqus2i3HlRjb&#x2B;&#x2B;iCh15JyT3B3DHsQBlJWdn&#x2F;AF&#x2F;Wv3Atirp0TeGfjrYw3esCCWGyurMlX8vy4hJHKjZBGcbZMgjIGAc5zX0lNJb3XixGmvJpo9QsT85USKwzu&#x2B;8i5yOO&#x2F;IPtXzH4jvLeT4z&#x2B;ENS020lkkaa4srhm&#x2B;6zrbTlQ2f72ChBwwA6YANfQ2ma7CJfDczaTHamWJoWWRArxHaFHzKpBwx65xgfhUSvb7&#x2B;39dBSOI8V3Wk2&#x2F;hjS44LieRYZZ4AnnZ2fKxxtbnIx6dDXa&#x2F;DKPSY30DdYzs501sN9mznkD6d65H4r3d9b2NxbtFCqRauWik3hw0RDbeQ4PYj6AV3Xwwk1Y23hchdKCtp79DKufunpz6U3K9&#x2F;8AP1B7DroaT&#x2F;whMqSWNwyjUwCHtjtBDg9uaqSz29raeJlt9PmutojnEYXzcFST91iT0A6CtmcatP4WulzYn&#x2F;Tif3buCOM55Q1W1TTdQtNS8ReZeJHD9mgmxJGCANh3YIC&#x2F;3aOv&#x2F;B9BG&#x2F;otxFceLYzDpEDK1ihBKeS3U4&#x2F;5Z&#x2F;yNUbOS5&#x2F;sPw&#x2F;8A8S&#x2B;G3H23YAzrMoyW7ggjp6VV8HyMfF2mj&#x2B;2k&#x2F;e6ceEljfO2RRnB57&#x2B;pp8axweF9GebVJlWHV4&#x2F;nBkhb78g6hsenb&#x2B;lH9dfMk3muNSkfxNB5Nuv7pGXy5PWAnoQe9LH&#x2F;af2nw1M0loqm3w3mKyNloUHXkdTWfcw2T6vr&#x2F;APpl7dLJZoSGKTLxFt4Gwn&#x2B;IVDYvo9qmhx&#x2B;bJHIgKAGWSD7rKvQlR29KSXX9PICHxZa3VxoWqMt9DG8d4swC7JclXJIxtU8hcfe71dsmT&#x2B;19Y3at5ciwZIE7RZG1dpwzn3qlrVxp8vh3XA1rcXgtbncV&#x2B;SfIVwTx5hPRjUnh&#x2B;8jsPEt4sVhO8baaAEYumCh9GGOjfpVf108gNi3u7SWXRD&#x2F;bjbZULRk3w7DJ7&#x2B;hrH1SK1Ph7UGXVJrv7PdlWG5ZsHIT&#x2B;Fc&#x2F;xA9a0rLUZItP0X&#x2F;iU3G6GZgMSJggtsx&#x2B;TZ&#x2F;Cq&#x2B;uwrfaZ4iV9GO2SUMzPFFJ1bBOevGwVS3&#x2F;4buJD5NK02fxXe28lxeRyy2GcYmXhj5fHy46r2Oaw4ZNInsPDN2t9eM01y0f8ArpW&#x2B;YyM3QLk&#x2F;6s10umXVxL4w0&#x2B;4j063QzWIVxynVmk7Jjgj171galcX2l&#x2B;FdJ3afbMlrfq&#x2B;BOcbdzMf4c&#x2F;dc9qqO1vTr6gYkenw6h4s8SLHeXSrDc2ylQpUvuuJSR86ktwO2etdzeWVrY2&#x2B;vRNNceZCYZs7HOTw33lUZ4OOvauI0KfZqfjJ&#x2F;7LjZm1CxyVhHQgSfxKD&#x2F;ABt0&#x2F;wAa7m4aSLVvEa2ulwwstos2TF5e5kVj1Cn0ANaa3&#x2F;ryFLcnll0lvFluEuppobyy27DcbsnPpJ6pnj2rmvEF3Y2&#x2F;gazkktJm&#x2B;x3yySMPNTdkPh8IcH&#x2F;WKSR6H611n9ragdS8PyJaxeVcWrruFwpwRCGXg7T1YisHxQdUtPBGr&#x2B;T9hVbO&#x2B;3qr5jHl7k&#x2F;ulwfl3Dt0qb9PTqCL9jfaXd69qkUNvcQSTWnmCRYXJ5IXq2emKjstV0sWug3E1w0LOxVlkl3eWx46DPc4&#x2B;lUdPvtXXxMqq2lMsljkZ85&#x2B;oHuo7Vb07UNTXQdDk&#x2B;zwy&#x2B;ZeCMiL92o3En&#x2B;KUn&#x2B;H&#x2F;wCtWXTf8fJgPn&#x2B;z3Ok6xFDqV&#x2B;HhnDRmIMisMgD&#x2B;Af7Q69qtW&#x2F;kf8JfazR6pqjx3doCULFh135xg&#x2F;wAK4P1rPu7i5uh4ojuNPtW8mNZFDP5zcxNJ02Efe56063CyzeHZP7JsVYwBcm2A4aFAR93pz0pP&#x2B;tuxRRsogPDdnGt9qRl03UF4&#x2B;zHcjA5&#x2F;55c4Zz&#x2B;FGheKvDvjLXfEEWj&#x2B;JNO1jbbp5zWZW5VTtYKGMakAkB8c8gHGcHGX8V&#x2F;CF149&#x2B;C&#x2F;jjQrW3sbO81uzuLGCbzQgjklDIu75Qdp3Ybad20tgg4Ned&#x2F;G&#x2F;4J&#x2B;PPjr4v0XToPBHhrwza6dpllifV7XRdYhtJkkmhkEMaTb5rNYpRKkMvksZEOVB2BOuhRpVFec1Hfdrye27v5bWHGz6nsNu2nRXHhu4ku5vmD20eY5I2BAI2k7RzgY57iqk6aXY6XcK148bf2ixQSXLZZ4yA&#x2B;0HlsEqDjP3x6ivHYj4q07XvCWp30ek6fpPh&#x2F;QF8L6p4e1DXLO8uJ7EW0txfXjzvdRxSFBDZuDLDG7xFnZkUyRNwNh8FdU0OOKTWLDwj8Q4NJvPClpbWt7eaVc3SCwm1ey1K3me9uFhn2zajHbQvuYyERxSYZDI3VHL4Wu6n&#x2F;Bd3pfb9B8i6s&#x2B;pPGXiHw14K0HxJea5r1hpNjGiCea9m&#x2B;yxxNjABZgByOmTkn3FP0C40LUr3RdQh1aG5tbjTRLFPDcNJHMhCMrqw4KsCCCOowea8I8Naw3hJtC8RT6l4X1az8Gabe3L6IniS2k&#x2F;sCx1l4pNLa2uJplgeeGzNvap5jojwXkqxSsDGJY7m48XeNPineXrL4U01bzw7H4PPhWLW7K4RYNQtpZbKR2W4EYuZLh4FEe3DRysY5ZFYLJH1CLVuba&#x2B;v3LbfVWd9tUvMOTzPa9Nv9F07wxohl1KGOaa7BRWuCrE555PXAzn8awfEfivRb2z1qWPUY2he5SNCLoyeYVAk6DOPlwx9F&#x2B;Y8HNeBaB4CtPFXhqyk1DXPD&#x2B;vWcnibRdL0qRNXhbULuxgkew1bSbqd5Cty4ttRNkzKztNuhJInDMefT9n7xV490TwjNoH9kw6l4Dt3tbvVbS8ihl1fVcTG01O&#x2F;tZAlwYw7XCTwShZpV1a7UbV&#x2F;enSWBpq7c3&#x2F;AFr&#x2B;ene&#x2F;QfIt7n0vDLZ6nqfk2upN5Qv43MsZKqy&#x2B;QrA7iB19j361atdRvj&#x2F;wkFxDdQXPKxL8g3sFOMADoP8AaYk1n&#x2B;C&#x2F;Dt34P07SLG&#x2B;020hk0lbS2lSKZZk3C3EWEJAyoIABODWRrOsWtt4UtRdWtzatqt4GLgF1JORljznovYjoK8pLW3p&#x2F;mSVvjj8WodH12HQbqOO5vl0RnkSFizQ78ohY9skHAAJPPpWZ4Z159O8O6veXdv50On2o0&#x2B;2mQ&#x2F;MjBQTxwQQSp4xz64O3zHxBaWN7&#x2B;1JqWpXF5c7d8bQ&#x2B;aPluZEjAWMDA4QDAGAMueuTjo&#x2F;B2r3lr4Hm8pxO1stxqN7bsfuyFnIA6c7uAMD7w4PIJy2Sv&#x2F;X9fqXbQ2&#x2F;DEE2mfCeaa1mhkXWZVsId&#x2B;QPJjyHAPTBIYk9sNx684ur&#x2B;Td6rqMVwbeZtPXUGl6PHA1tmKMdPmMmwn0LnrU0uraP4gsb&#x2B;z0W4uB&#x2F;wgujC2nZHZI2ndF852X&#x2F;ZVh3GXlwRnOOOcR3nh7xePLZrW4vbPw5CxPJKztNOR7&#x2B;XAgHTh&#x2B;1XF2t&#x2F;X9aBHc4fS59Puv2D55LjRrmTa8kcZiDE7kb5S208Y4HJJ46V02ralPZfBfw3qUk8c11eXVrqUt5n5rZBIpbzP9naSrfVs89eZ&#x2B;Agj8U&#x2F;sS6vbHVCrW&#x2B;s3kO2SIseJRjHIHfp9eabb6nbar&#x2B;zxdCd3t7y6CaQkZ5juo1lWJnH1xuHoQRz2b&#x2F;X&#x2F;ACBH0p4NtfED&#x2B;GIpJp7WFtGmAhVQSGhbkEZ6HdwR14OGBArz&#x2F;XdRsfB37Q73MHnaixEWoxKoLbklBSQAAHI3KuMBsZyuSCK67Q7PTE1q3murm8bSdSAswiPtW6jChcgYBLbgRgknnjkccj8YZX0H4ieE7m12rbw3UmkXUzZLSxXGQrHIyx3qpyckhjkqcZUu&#x2F;wDX9X&#x2F;MEWvHk15p&#x2F;wAaPD6NNb6fpt9fxXFqqIj4zlWVc5AwDwFIOB3UgD2bS77b4O0eSTWBJcadejeYTtEvzMfmj3NtyWA&#x2B;UDBFfKfxi1WzsPEfh9by8l1DVNF1u1RhvJPlGRRhTx8oVgQFJwACFUMQPpawu1&#x2F;4QbVo00dZltrguglHnIdzD7pKsVzz&#x2B;IrO36f19zCRh&#x2F;Hi5gt7m8ura6uJHjvrUyRPC6GZTmJ1OAAxXIOcAjnBOa7v4S6jpOpaP4TlGoXW5rIgq06N&#x2F;Cf7w9u9eb&#x2F;Ey9mPiS4s47G3jj1FrORdrhV3F8bgNg&#x2B;8oGfoK9D&#x2B;Des3134f8KyfY1RXtA5&#x2B;dGUnDZ43ihfD&#x2F;XYXQ2pk0&#x2B;Xw5dAPcT&#x2F;6XnkQyfwZ6Bam1ey0mPX9aIsbhJJdPZSwgliHEY&#x2F;iTA&#x2F;ipJtR1B&#x2F;Dd03kWqkXuD5iBgDsxztlPetTUZ9Tl1zVhjT022TkbHdTysfqrDt&#x2B;lS5dvz9BGR4dura51vQZ1024uVayB3bVnADLu7szdVHar9lN9l8GotvpanytQLAcwer5w0e3v61W0G11SG&#x2B;8Ms00Mcb2kyHzYSduxY&#x2F;4uPUjpQpll8FyH&#x2B;1Y4yl&#x2B;A3lyRtg&#x2B;WqdGHqemarqv&#x2B;D3YG9qElxPrusKumxRt9lIG9I26omOVbP6GpNM1PVktvD7i3t445JHXMUxOAcn7pH0qOW3ay8b6hHNqsu2SxV9xVo&#x2B;jbTyrgdAKztIltLrwtogbWLi4aCcLhbgTZw&#x2B;P4gx6H170oq8V8u&#x2F;Yk2dSg1a6t&#x2F;EEYaFVnYZ8yLcvJ2&#x2F;wvnt6Vm6UuoHxlZxy3VtGt5poD7Wx8270eNv4Se&#x2F;anahb6b5HiRJGuMwxs2TaOufkaQfMsYrHs9Z0WLxX4dMd3Ni4tG2p5&#x2B;OUjyeJCP75P4VfLpt&#x2B;HkB0VgL&#x2B;Xw3oMzap80epRxy&#x2F;uIPmUu4P&#x2F;LP&#x2F;AHT&#x2F;AJ5sXemXzt4mgbVlw0aPH&#x2F;o0fy7onJxtKn7x9awYbjTV8ErJ9hmkEd6obEcLYOFUnhuzMK07y206fXtah&#x2F;sm48zyCQRagZyFUH5W9QRQ&#x2F;wCtF3QhkEnk6v4fuJNWRZGtTE48xo&#x2B;SijODJjhs9qo&#x2B;Jzbv4JvJBr3&#x2F;AB535ljIvV5QkEr17AsPXinWF7abfD80FnfwxuWBU&#x2B;fFt3c8&#x2F;jxTtT1FYfD2vL9jnmWC581QZs&#x2F;IxGfvHsS3FXHf&#x2F;hu4zm9AE0lv4uubXV7XyZL&#x2B;zTOzzslUQ&#x2F;eMmeQw4GBXeatfSf8ACWa1G2rJGi2LsxG6LGeMf6zH8I7V53bRWdtYeNGn0u6k23ttIAsJuNnyxg4wflGApwPc16IiWkfxDvoo7CePzNPzhfNiX&#x2F;XFTj&#x2B;HuOlX0v8A5eRMiOOS2eDw&#x2F;wD8T9pBvZVUXCS5wwxxyfuj8hWV4kTTm8P&#x2B;Ire8vLiHdNGhcM0WVZlwckbM&#x2F;N7EVbs9T87wv4bkbR5bqS3nTcW8uYk7mU&#x2F;eJPvUurvdfYfE32XS4o1&#x2B;y&#x2B;ZtyISGQEgfd29QO4od0&#x2F;8Ahu4HGeG7&#x2F;TV8TafHJf3k0ktiu1lmmkGQTnO3jn9cVueHprebwFo8i3FzH5OoRsS6OT8sjg&#x2F;fB9O9ZV9NfWut&#x2B;HpZNLh8m7gdJGe4Q7CIgRwoYnq35Cs&#x2B;zvVs&#x2F;CMkTaHDM0eoupC2qPtbaxP31Gfmzz71nq&#x2F;&#x2B;H9S9zvbkRDVfFEX9sMzS2UZCPcgbcQMp&#x2B;VWU9x&#x2B;dR27&#x2B;XD4bzqi&#x2F;LEq5V2XoiL&#x2F;z0PcVFBqa3XiHWbddKns2ey4KlYg24Kv8GDwVNV1ubF7Tw9cfZNQ23ExUnFwwG8kjv0BWo6f12EVYJ4rnStYmbWrybyrn5I451lxj5uByT170sfxRvLfxXJJJ4Q8dM0doFXfHp&#x2B;WxyOl0O&#x2F;rzyKjuryKy0HUt2itcIbrh3jSbPyj&#x2B;8Mj8fyrqtH1xh4tVo9Pt9q2qH73l85HYp&#x2F;nmtYySWqv6u3bswueF&#x2B;J7Pwp4purzVNQ0fx55N5azaRq9t9t0lba2NxayWbTOzXReNzZyyIEkcQ4beYy4Vhk33we8Iy&#x2F;CHxB4Z0&#x2F;wp8TBoF1p13Y2fk6xpshs4r29hvRNDL9rZg0U1sjwuCwXJ&#x2B;8AMbGv&#x2F;ALKQ8X&#x2B;DtKj&#x2F;ALY8Q6XY3GpXQjt9OmsoDCL24aed2k2nzphIGRZZVYiCe4hIYSu9YOq&#x2F;8E&#x2F;7W2j1aztfFnxEbTYDcPepea7BcSyRXVoEZIz5QXcSgUvJuIhjjhwYlEY9yniKCsvaWs7r4na232lr27X36mqlHuaXi&#x2F;wR4Xn1zxd&#x2F;a3hr4gWWh&#x2B;LodPhnsRqWmWMWbGKDylhf7YGUGK0AYK27bGSu3aCIfDEHhO9ufDOrW&#x2F;8AwsC8hiXS4lXTpNKuY&#x2F;N002zQSSraSt5sm2zhy0gbZE7xxFUZETufC&#x2F;7Mtjp3xm8K&#x2B;ILqbxFrV34f0y2kh&#x2F;tbUYbxJLiLTDpYmkGFLymIibeT8swldQnnSA8pqP7I816nhbUNF8TeNPC93Cy210un6oLeC9Eb7YhNHHIgZo8SFGBDcjcWUbDhHFUbKDlpZa622237RWvXbYXNHa47WvE3g4pHd32jfEO8uvCvja78TWDSeHbm8azuZknjYKI0dlU&#x2F;a5T&#x2F;AHw5BLZAFaWqfF3w5af8JAtto&#x2F;xFt7qQRyF&#x2F;&#x2B;EB1ku&#x2B;MsN3&#x2B;jHjlgM8fMcZOa8&#x2F;1j9lPx1oOk63e6f8AEXxBfXsV95bwXN3Lbx6l5ce2FZ5lu3c72YiWSRZmUSTG2Fm5ieHqvhd4Q8Y&#x2B;Bfh14jsfG19F4i15miL3TXSSiOIQxRKoIjXOSjyklN2ZthL&#x2B;WHbKt7FrnUubpu11v1T&#x2F;AKfqL3To7Hxiniqz1bU428QWVtCiEJq2kXGkyOY9jghLmKNypPRhwfmwTg1B4pjuZItDhhvLOZYDLJ5jtgYQnBwgHoOpPNN8U6tDb3Wq240eDaunLzHbBmJww4JUdsCqt3ewTy3rfZrrdZ2W9IwQWyYs4z0PMZ4z&#x2F;EfWvLdr3X6dkI8E&#x2B;JNy8Xxf8K6vqEUSadNq1zF5CSbvMkMf7p0PTg8HPrnpmtj4U6nH4h8KwzrI1rqWr6gqvuHyyW8WGdsHg52H67hwdvHDfGmOHR&#x2F;EfhNrXT7iK60qee4KurBFaa3miRmJz91nzkY4UcAVtWOrt4c&#x2B;H9vZ&#x2B;XHNeNCNKsI&#x2F;L&#x2B;&#x2B;p&#x2F;wBbID&#x2F;MggHgEfLzo1dpL&#x2B;v63K6Gv428WzeHvhRJrNr9ljj8UajHbSJHx56fahM2446H94T09O9T&#x2F;CfTZ9a8c6RpsNw1xNM2o&#x2B;I7pGXEcTyr5MR6DJ2FT16HNeW6&#x2F;fQ&#x2B;OvD&#x2F;AIQ8K6b50l7fapdX7Rhuu&#x2B;5W3hGc4A2mQnOMYr1Hwn4q03wbq3jfxzfDyNL0s32nadbwLxItqCoAwOpZFAwRWctdFv8A1&#x2B;gHmn7Ed7c6l8EfHWl&#x2F;Y7G6a18ST8swUKJFRsjPqSx&#x2F;&#x2B;vzWbrUlyvhG60mRE&#x2B;z6T4g8gxxgfuJpbtWTBA4yrce5PUEA4f7CuqW9j4m&#x2B;I2lXNvdQ&#x2B;ZewzrFExKkkNnkEDHTn3qp8dL6TQPH&#x2F;AI20yxluLVhrFtqLxz5XzUbyVVvwkI&#x2B;mKromv62C&#x2B;h9d&#x2B;ILKDXvDMuoabdR2ej26CBYZG2qjNtG4E528hPmOcDJzgsD5&#x2F;wDtGa7pfxA&#x2B;CTahb3001xahfOVE&#x2B;5PGwz0BXcduTkAFYlbHFdXdeKtNvNAjjmZrO202AeewxtuXZSvI&#x2B;62fmHP&#x2B;2PmBNcR4Rv8AVJbm60K60nS7fTdctnX7RJKAGcIPMB3kE70ZJPvH77AjIZamL0t8&#x2F;wCvzHY8t&#x2F;aY8aTaj4H0Hxfo9vHbwg28WoSHO4kOGD4JzwTnnOMqDyWx9beFNb&#x2B;2afrcE2tWq&#x2F;bNPW4RQyRNt2YBA3fMCxJ6cEe9fCPxT1I&#x2B;HvhxdaZ4guZIoYXl06a3jYfLPEzKGz&#x2F;ECQSrZ5DZyNpLfWXwH8UB9C8LzNot5NBq&#x2B;leUhYeam9V5&#x2B;8xxjPTuB&#x2F;snE9Lr&#x2B;uv6DkWvEd6uoeNfD&#x2B;3Vpn22&#x2B;nqzK0ci7leY9QM4JGR6ivSvhVBHaaR4T33k7FoZ4SVtjjcBx90AdjXiunzR33jPTd2jbVt2toQPsy4JWW5xxt9Ov19q9c8ATwxaRo0a6Uqvb6nJbc2zLgtIX6hD2BHpVS0&#x2F;pdmSzrtWSztvDPiCT&#x2B;0LiFrPUnbG&#x2B;aHA3xj37Ma1NS&#x2F;s0eJtUjGo3k5k0ln2GZJBw5Xoy57VlX13M&#x2B;h&#x2B;I1j0uFllkVsiZ48MXxnmMYztHStltQvr3xPcJ9hVTNoxI&#x2F;exTBszH1dT39Kzv&#x2F;V&#x2F;QkyYLfRdPuPDdz9nmEkcl0gfynhxvwnVAo64q&#x2F;Ld6fe&#x2B;Dtet&#x2F;sdxeCPU5SoDpPxvjYcGQn9Aai03VdSuNM8Myxw2I8yYqQQYurFuzMP4KuBtUuNH14qyoY7jJwPMUHcT0wv8IFXza6&#x2F;n5gai3UMvi9JrXR7qF5bM43W0sOQeRyEI6471Xtb&#x2B;Wfw5pc0mjAg3qqd7RSbdzdfm2nqtXPKvtP8AGGmtJdWscUllsbK&#x2B;UcjB7gj1rHtYp5fBxjj1qNfLvTt&#x2B;WKTHDOOgU96I2sn6d&#x2F;Mk3mlnttZ1&#x2F;wCz2NpG0tlu&#x2F;wBWFwVhA6rn&#x2B;8Kz7jUNWjm8NsscKiN5UTZc5&#x2B;Vvlxg&#x2F;7J&#x2F;DArQa0aPxrfLNqUirNaCQbRLHuB2IRxJj&#x2B;H9a5l7i2OgeH2k166WWxvFVla8DBuWDAh938LfpSirq&#x2F;wDWwG8k2oSeHtbjZUWP7Y0nzx7sbnA7SDoVB&#x2F;GtZ&#x2F;7WbxK8itZeZJZAOGgc5Odw6P65rmbS0sGtvEdu9w1wryhgRGjnDdfur2Oa0rC3s213R5n&#x2B;1bpLHy5MQTDIxuB4HYr&#x2F;AOPD2qnt&#x2F;wADyQiOO11SPT9HZpNNWH7X5eQsi7csSOqn&#x2B;6aLz7eJPEkD3UMaqLdgUZG&#x2B;V13MeYux3etYNw&#x2B;i2PglQ11fQra352nFyuwkMy&#x2F;w9i&#x2F;0qbW7zSTrmv2sd40ss2nbgjzKcrgp0kx0IP8A31WnLr&#x2F;wPNDI7GHWZNO8URpNBc&#x2F;aLaxkYvGc7j5n9wL1wPU8dulddPPrD&#x2B;M45PNsY1ksyBslO7BJbvGQelcP4fm0We21xn&#x2B;0W&#x2B;bTTTiJSd3&#x2B;sB&#x2F;1OehH8XPpxmuoefRIPF1q0moTqXsgQsjSKDj1EijPUfWqW23fp5IUtx2nwalc6Jp3&#x2F;EwUK13tUGKOQc89dqnrmtHWbScWniVJ9Wjhf&#x2B;z3IYP5Z5jl5AZipxj06g1gX0eleHvBOiyXUK3ga5gnLRRhjGrE9SQpyARnbkc9TVjxD4ksTB4qhtLG8klk0VmiiKyqrkQzcYY7M7iBye4qXrqvy8xGPqFkiWHhxv8AhIZFWLdkGSFMnCL&#x2F;AOzdqxbd1uPDesQW&#x2B;rW83&#x2F;E5lKEy&#x2B;dtJMbY4kA&#x2F;i6e9aWnatH&#x2F;Z3hVn0OQSTJ5hPlwqEyI2yeeP51hapdWJ07WEuLW6ZP7ZOETzJVBCRdlO3tjrR1&#x2F;4buaRO&#x2F;NlqUHj26ddSix9gOQsMaZ&#x2F;enHJVzUdvPqVr4Qtpt9m32e6XysK0gdmMmASAncLwFxz19KOm3Ok&#x2F;8J3qUn2c2u20EeWWGI53K38Rz&#x2F;EKi0260a&#x2B;8B6eV1CX&#x2F;AErVYcyFJrhmPzHClQV9Oc4H41NON9126eRLNbVtGvhqetWLySPCqtd712Q4IAOFYEHHLdQTx1plpFqGmy6bqDSXTTahttjbwzK4TDEZ3NjP3f1PPSptSs7J9d8USLf3FoqwKhZVEOCInYjcyZ7Doe1U7COZoPDrrrL&#x2B;WWMoL&#x2F;vCxY5HzPIR0Y9B&#x2B;HStrK2v5eRJDJY3lto62TNqTtoN1HcNLsRjcAM&#x2F;ygKp2n5u5PT6U6RHudTvI&#x2F;8AidM3iGzQREWBIgKxMPn4A79gelPvZ7prXxPMmpW821wF3ypwFHcKgPXNSpp2rJ4g0VFntdsdmCxWB27Fev40Pv8A10f5gZ8Wsra22m3sieICtrGunyKbFFeSTYMMuSBtOW5JB6cdahW5k0Wymt2vNSSTQriK9lcRR7WTaWAQ55JAI7detQabZavJ4U0YebbsbjVElY&#x2F;YyMKHc&#x2B;vptFLqcOrXNx4nb7RGI2aFTiAdFVEPOfY&#x2F;nStG9v63&#x2F;wCHAh8Tzy30d5Zw6vqEUmrmG5gyIsomQ53DJwRhvXtWbf8AiK312O4kh1DXGj8SIsNoot&#x2F;n3IG3FgASvHep&#x2F;G1xrVnfW8fnN&#x2F;o&#x2B;iF&#x2B;FB5GR0A&#x2B;o61zNjNqdpNoMY1Cx321m0zZhKhCR9ccnn2x701FW&#x2F;r&#x2B;uiKRznxu8QaedMuLxZvELyXiG1jUIbUs8ALybnYABTt25Xccn7vequtfETUtBi168jFqjWcEQjilmBZpEUMAoCZK7mC8k&#x2F;eGeMiuT&#x2B;I1xJfR&#x2B;GLW6vo5IbhneRIj8rh50XrjIyu4nJI5rH&#x2F;aS8RWvh34U695K3W51uCFktwysUBCBZ92RhmztGR8oHWi0dv6&#x2F;rQZxvxz&#x2B;MmjfFHw5Z6vpOoRqusX9rY&#x2B;QmwugDyhCDwcOqg&#x2F;8Cq1rPjGzn8UzaXazXF5b&#x2B;F9JmEKSIAIpEUb9x&#x2F;hRnYKOMnZJg8cfHP7Nvii&#x2B;134hzrYLDcXmky&#x2F;bLaNsfZ0kiym5geFRFYYz0x1UsCPSvFPxEku&#x2F;hLNqVjqCzX&#x2F;jDUGtovJjzI9uoIMjEfwsd8mO5lwaxjIaZ6L8BNZvLj4ka9r0lxNN&#x2F;ZdktnpiWoYmaRElhiwcE&#x2F;NIXf35Ppjpf2mfGCeFvhd4H&#x2B;Hlr5dr5Wmyapqexg80uzhQ2O7zZbP&#x2B;zVv4f2WmfCHwfpt5d3UOm6ba6fJq9wP9ZI2xNkIJHUlRu4zgtxXj3ha01b40&#x2B;KbW8mFxFqHjJTDC0rBpkhaUBFXPTbGCxJ7gniqik7SZXUb&#x2B;yT4n&#x2F;sX9pHVrO3vFtl1S3jJjuMdVaM4BIPXzP5&#x2B;ldN&#x2B;3jYHRPjFcXUtzDeDUkjSTyiuYxH&#x2B;82&#x2F;L2IGMnHO2vGfBPiT&#x2F;hC&#x2F;2kPCd8zR31rcXsFlLkbXCyRJjt&#x2F;s8HqSvvXrn7f8l&#x2F;eeP5ZvsK2en28qQrIx3Su0kLDGCMjkY59an7Ov8AW3zJR7p8MfEn9tfBzQ4LyFdSjgtjqdzOBlmKp&#x2F;Fk9d2M5wDgZPUnzxvHUUHiZNPuNWW11DWJRf6Nby&#x2F;I1tOgJVFPDfOpZSM8ELwSxNWf2Sddl1D4a6pYpcKt9q0vkWUb8x3MLYCuvHy8&#x2F;KQB94DoDg5P7U&#x2F;hLS&#x2F;EK6&#x2B;2vafPYXtm62ml3cHSJ1VWEkbDuG57kYx1OKxV73X9f1&#x2B;hotjy&#x2F;wDa0u4bbULy4htUmh8cWokimjXbHbX8a&#x2B;XJnOAN0YjI4Ukq3GDX0N&#x2B;x74puNY&#x2B;B3guzk1S1S&#x2B;sZEEaY5QlC5XJcEhskgkDhiOwFfHPxM&#x2B;JE3xM&#x2B;GK6DrmoWtvrGl33kXssQJk&#x2B;0Ko2yhTjasqOW4PVCmMV7Z&#x2B;wl40hT4V&#x2B;EZJLW7uZrGeFZZRM6qXgmniWTg5&#x2B;ZYwCMc4U87jWitbQk&#x2B;hfAqXVzepdLeW&#x2B;xby1ALRbsgtPjq&#x2F;beM&#x2F;8A6q9P8OalJZRSKdUsWEOteeAWPynPQ&#x2F;vO7bvpuFeG2N&#x2F;Y2fhjUGghnjuPslvex7pZo9pQkkA5wCPmB&#x2F;rXSaD46s08U3iGPUFtdQhhv4pGupcK2VBOQ55Bwx44454FPrr&#x2F;AFsG57pdai0SeJI11mCPasNyhW7XOFXLZyT3Gf8AgVbFnMZPEWmyLrn2jzNO6Lsk8wbcnlTnrtPGK5qLxLBPrGpLHb3Lm4slkCmcthsYZTvbv8vpRaarDd3HheZdHuGVkeKOSS2STGFHyll3H7o&#x2F;Naztp&#x2F;w3b&#x2F;gAasFzbQeG9Fkk1K6jNvfbkZGnQEAscckr0LDp2rRgbR7ifxJbtfS3aXARmV&#x2F;JkI4KMP8AV59D&#x2B;Nc1aam1t4TuFi0llaz1PzUDCSIghssv&#x2B;q&#x2F;3h3610keoXNx4h12FtJVUmtVkRhNG3PlnPB2Hrt6&#x2B;v41Wq&#x2F;4dd0BqWM2l6fq2hF&#x2F;tkMj2zFCBNGp2KcjjCnhqqyz6VP4S1iH7LJezWd&#x2B;8SjdFIx2vGAfnkDcg96l0&#x2F;V9SW18LzR29rHJHuRlP7o8hI2A2Ow6k9c1OLvV7qy8Rfu4VZZ&#x2F;OO2fzM4csf4R1UCi9nf8AXzJNJbizvfGEMlvo99H5loSG8hgArFj1TcOuKy7y&#x2F;mj8F2839l&#x2B;Y1vfrvDyOCV37W4kQfwnP4VqQx6tb&#x2B;INFkSS02tbeW2bdhwVyOQx7isvVft0XgbVHluLIeTNlgsoXBGxGGGjP9404q9vkSWrdlOp&#x2B;IoZdBXb9mEgYJA24NG&#x2B;fTODT9NuDu8OP&#x2F;Y8Uclv5sIJt48kfLEcYb6N&#x2F;wGm2v2i48Z3ls2pxRrcWG7O&#x2B;FgULLH3i7EE9e9ZllLfLoHh65bWE3Q3gMmbZGAPmuG&#x2B;6y9Tg01a2v69gL179qi8N61bR2cCbb92jJUoFRnj2&#x2F;dBPG0irGpatqt34kjDW9qv2vTiTtuGyQeWGGUdGwaj1O1e4tNehOqABtssZWORccdOJR&#x2F;EM&#x2F;wDAqp3E8M2s6F5mszQ77UqcXOAwKkMCGYg849aen9X7DM3w5r2qGz1iRrW1aWbTbaZlcHKFZZtwypbODnsOnft2n9salf8AiPS5PLtFjNgfLVZ2Ys2A2NrKMnHTrXm&#x2F;hu4t7a91JjqLReZpjbpPM8pZCs7BiGUqp5Y&#x2B;vFdBp0FlqFzoVrPqk80N1amN1&#x2B;1hs7RkHkk7hwQRgggEYoq03KEorR66&#x2F;IT3PQvHl1B4o8C3kun6Ja6PIvkyMGs5Yt0rGNWDBiPMIyAGVj8obP3QBk6vo19Z6lrHzWCqunSkhQ6kjAx1DDkA8H8KwV0SOw8Ia7JLq3ifWruzu3hil1G9ub9okWVDtj3ZAyp5YfM2BknAq1rItm8Wk&#x2F;aruC3vNOdPmWaP&#x2F;lpk9Vx90k8&#x2B;lY4WjOnT5Zu7u&#x2B;noGnQw7XTdWbw94Tmj1CHEcRBAtFUt&#x2F;q198f8A16x7y71RtI1Ty5LCX&#x2F;idTE&#x2B;Y7Mw&#x2F;dL2VFHYHlql0BNLPhzwsBptwu0FT&#x2F;oq4H71B1x7VhXx0uNdUh864Rjq7MYkZjwYVHKw&#x2B;&#x2F;Y11cuv&#x2F;AAPMpHolrearpvinXJlt45Ntvu&#x2B;QLGCAkXcyn37VLYXWoQ&#x2B;FtI8y2jjaO8jDnJkXhDj5sdfve3pWZL9ij1TxI39qtaLDaJkkpGRuhLdXXd0T1q1ZQR6vpvh3ytfk&#x2F;wBIucgifflSoc&#x2F;dcHjceQeNxqYf1p5EM17qRhdeKP8AiToJW8xBKAi7vlZc9C3A9v8AGs7UJ7GHWPDK3Ol3BYwO4k8r5V2RIfvSlB19MmpNVg1TTY9dkbXxMI1Xd5lrEmQCc5Y7jyOeMU5INY1bXdFjkmsWaK0ZS8KsZOUYHg8DO3BPHPYdKttb&#x2F;wCfYk53VPEejf2DrcUj3EebkIyiZjg7skYjc9qnnl0K&#x2B;8SJdLbXDNDp2FYxzPkkk9wR6d6fqkGtt4N1BoV&#x2B;bUr4qrSyY8sMY8n5AScLk5IHoc9SviO51SfxdqCLb6W0djYEKpkbepJPLbtuMKB&#x2B;fNNvt&#x2B;foMzNJtdDXw5oZS3k3NcFAxtnI4I9VI6CodQi0l7DxF&#x2B;5ZUmvxCGNueQpUsR8mP4Tz71aE2pWmmeFrf7LZTeWGlZlUuvCYzndjuefcViuuqPpUzR2dq8Y1ArLtibMrckgDPP8ACPrkdua5tf8Ag&#x2B;YFH4mXmjwaxq0kqSubXTEHMH3cgso&#x2B;VBjkt39Kx7rV9O0fR9VuhDen&#x2B;zdIW3i2zg4YruGB5gO44A6ZAU&#x2B;vMPiufVNWm1xpoLO3hvtQhs8wEmVeQWTYgY5IG3GOOD0zjD&#x2B;IOrXnirSb&#x2B;3W9gWG71OG3uFVxD5jHaD83zHaq9QUBJI6Yqb6f15FHHT3&#x2F;APaHxY8PwwWvlx6PYJdT70bcfLhlmwVGGLkhOmSS46818&#x2B;f8FBfjjL8PvgtqzNfWt5dQW6breGYSRtcySh8oV6opY5bJGSRx0rsvjFeWvi7&#x2B;3jaa3cx3EssgaW2xErqZYod3UqMRKyrg4XngHBr85fjB4ukvPiDrlqtxNfrNiBkmkMwdY3UgF2OSuVGfXOBwDnOpLlVwloXP2QNe8Raadasb57ZbvxgIraHLlXtbZd7SyO3YyKWUKByJGJwMBvpn4YabN8RNWfR7VbdbXSQLP&#x2F;RBjZHuBmbceFPAUHr&#x2B;leI&#x2F;B7wvJ4bsdLvhHYzalqnmbM8kyOox&#x2B;Az&#x2B;Qr6O&#x2B;GLQ&#x2F;CD4A6rNHPJHqmtXpgt2t1KhoyULzMx7MR64wo9axoxbCJ2Pxn1p&#x2F;iv8Y9N8LafbwWmkadbRvffPlflUMkZxxgYU4Ndt8DdAsfDtlN4xu&#x2F;tPk6Dbf2dZ3GMeZcEl5SmRwqIY1&#x2F;4G3pXJfA3wmumeGLPxJNavcXmpXdxPIZidiZBVAD&#x2F;EdqDtyTXW&#x2F;tT3cnwz&#x2B;EXhH4e6fqC3GpalbeZerBGN7TXDfvz1JABMmBnhVHpW8fP&#x2B;rX&#x2F;4Bp0PkP40TTWOnabr8aqzae9jdrcW525Kbhz6H5QCegr6J&#x2F;bTvLPxh8M4PElrdXF40w069U4bag3qu7nOPv4OD6dK8H1zTYPEPw11JWzaXEa26Ej5onO5x&#x2B;Hpj&#x2F;69ek&#x2F;DbxTffFr9hXUbNpbNrrw&#x2F;potZQcmRzbSqQCOmSEH1BrOPX&#x2B;uxK3Ok&#x2F;ZFv4V0C9Go2sslv4ZQyQtEwV4JXAZ13dgC2MHjB7559Qvdct&#x2F;EKaLpd1qEepXF9fHUHhu&#x2F;luIQOeSDzz6Y5&#x2B;XjFfJP7IH7S&#x2F;wDb3xCWzby9P1Mz&#x2B;fqsAYNFdQcbJU77cHHZlIGc9&#x2F;qj4q&#x2B;EofG2kah4k0&#x2F;T9txcOttaiH7sYGP3iFeh6kL8xB5wKyT&#x2F;AK&#x2F;r7zSOx8i&#x2F;tY&#x2F;DZvhrrsni1LFbjTdfuprO&#x2F;VCrIlvlgJPlGGeNhuzgjBPU816H&#x2B;wfrGpR&#x2B;Cnt7m4j8&#x2B;11k2k&#x2B;xd24SNE6P365z356elYHxvuL6CG6sft8jaboNq0Bhuh8ks75yu48Zxjpk5rG&#x2F;YWh&#x2F;sXRfFGh6jH&#x2F;xMLeRJIGBLF3WOKRcDpkqMdu3TrRF62Je59ct4q1DQrDS7i6vLG3Wxd9MuZJACXQkgZOB7Z9CRntVfwBqN7b6&#x2F;a29vd28gtbW&#x2F;tREgVdpQpIOcNtBGw9D39a5Rmh1O9muI9JkNt4gtyGjM7LHPOATjDZCseo4A3DucVf&#x2B;Hmq2MvjvSnmhkjjkuI5EHlHbIJrMrwpHcoQTs6gjPArX&#x2B;un9dxn194bl1HVdZ02b7QfL1HSl3YKsCWywb&#x2F;Vj&#x2B;EHv6VTsbnU49B0JptSszKupLbuptthG8lgR8w7qgx&#x2F;tnmub&#x2B;HcWmx6R4Ulmt7iR7fzrRSbVSOf3e07UBAwMr&#x2F;nJrl5pdjoWoi1tZY&#x2F;sGo&#x2F;aiizTIU&#x2B;YZGNwI&#x2B;XJX8MCly2dv0XdoR12seauh&#x2B;KN2q2iSLcrOgWUR7HLA4wxJGQo4&#x2F;2j2re08LqHjCZY9eV4b&#x2F;ThIgVo5Dy4Q4wc&#x2F;dCnv3rmTfWX9peJY4PtTfaIEkyL2TCvGhUEAyAc5X67DV&#x2F;QL20udT8OyHR7qfzrIRMfKScI6xZ6qzHksR9Vqd1&#x2F;w3Zf5Aadhewnw14bu7rUrhZLfUcTeW0sWQZGLDhsdlPStS3l0trrxABrF9c&#x2B;ZGrNGZY5dpVMHAaMnoa5LSpDY&#x2B;HJhHpO2Sx1MrjEsW9Og&#x2F;5Z&#x2F;wB09&#x2B;4NdbFqUza3qkbaFDLFcWW4FpY3OduCMMqnkEVT3&#x2F;4bumSXE0&#x2F;SbSXw&#x2F;NKt0yPG0W77M4&#x2F;hG0&#x2F;JGO7Y&#x2F;Gq9&#x2F;quiWVl4gVbi4CLcmYo80i4y53DDMBjEdJpstxDp&#x2F;h3ZptvbhboQAmJPvbwF5Vu&#x2B;w9KutqOrW8&#x2F;iKHybXbJCso2zuv8AyzO8cj&#x2F;azTv&#x2F;AFfzApWGr6SfE2lr50jNNpuwf6RH864LHq&#x2F;qUOapXkek33h6D&#x2F;iU3E7R6k0R2xo&#x2B;WGQCTEx4OM9O5q9Bq2sQ6p4dLJAW2MqkXg&#x2B;cBeQOP7op102qS6PqanyY5LPUELtIu8HDAI2QQfvYHQ8A&#x2B;hpxl&#x2F;V&#x2F;MCvpup2A1TxBbrpmoRyLbJIuIJl5MeR2PcCppNZhFx4VuILG62yLLG6zGYYyi9dy4&#x2B;961l&#x2B;IX1XTPFusFbjSkMmnfxO&#x2F;VVHUbf8Aa&#x2F;WkhvdQmsfDm&#x2B;6sV8y5lAMb7f8AlsDgB4z2Uj&#x2F;PDtf&#x2F;AIfyCxD4Wfd4n1KL&#x2B;yWjb7Hf2&#x2F;y7YyxjlTByAARznmupsdYkms&#x2F;Cs39jCYqSjqxjc&#x2F;Mqoeo9TXK&#x2B;F0uovGF9H&#x2F;av&#x2B;kXM&#x2B;qRhfJQNljC&#x2F;Q5U&#x2F;UID&#x2B;udC18R&#x2B;TpPhq4Gufu5r4R5aC3&#x2B;UvLn&#x2B;4O6Vcdf6fYJbnQXF7HBY&#x2B;Im&#x2F;4R&#x2B;NEe7WRs2sXP7wA9MZ4Uc47Vet9QnTW9I8nSov3ll3jCDheeQp9q5tvEQB8UWsmvWjFlWRA0CpjdE3o4z830q1D4vtbu&#x2B;8OynV7ONvIaJispRsmMcH97xyO9VKOn9diRNLj1a20Xw3&#x2B;5s12yyowMBLKRMAf&#x2B;Ww9PSuY8UzX5kvlms4XjbUkJyRgkll4XLk&#x2B;nboea6TwD4t0Hx1pMcVrqjXMmi6wbaXyxJuLA7Gwfrzxn24rj&#x2F;Hkceja&#x2F;ebtSuIY11S3ULIrRI&#x2B;7HrtLct&#x2F;eot72q&#x2F;DzGdQs8aWHiaaPQ1ja6Ece8JHFkBPK7c469&#x2F;WtCHX7e3ufDcb2F424ZUQmZ&#x2B;BFHknAxgKvc1zt&#x2F;qV9pXg3xRcHVo2WGQBW8mJQMFW7qx&#x2F;i7nmtDw7falJ4n0aGOaxnaKzkCvIPmAw8ZwqIO6r3qY9&#x2F;8&#x2B;yEx09&#x2F;pl1Ya5I&#x2B;mzQ&#x2B;fdDeZo40&#x2B;UEdSz56LWwL7StY8c2Y3Xkhhs93y&#x2B;bIqEuR0AZBwx&#x2F;OsqK81Q&#x2B;EdQuCsTteXrhAo8sKp2bf4j6k1p6nqeoxeMJle3tJFhtDIMyeY2BjHHSrl2&#x2F;X0EYG3TU8B2cpu7&#x2B;3Et6QMJDGc7XQYzDnPy1b1i&#x2B;0&#x2B;0vvEG3Wr&#x2F;dHa72zdgDBUdSqj0NUbbzI&#x2F;DPhy1OmxyH&#x2B;0UZtixpwryZ6v6uB&#x2B;NGr6heXMvixV0ccwW8S7pYR8xibP5Z9abt&#x2F;XqhkFjLayXnh2RtYvFmkt5bout3hm3ICBnbnjcO&#x2F;FYVlp9hcw6RM15f3bQ6mZ0nnZLh1YMd2HeNmHzHpnjHHNbGq&#x2B;IJrHW9NaTStiW2krJ&#x2F;rYScfdPcYzx61yul397baL4Xt1sbBmkNzNIXQdmLcfMeNzDn2&#x2B;lS2rf15gY2u&#x2B;KtHv7y5juZZrjydf8pPMwhO3AJDbUBJIA6&#x2F;pXmHxY8Sxp4fSaHT5Fm&#x2B;2Xl9G7nacQxlQc88ZXOcnJrr7&#x2F;xPqcdtpUjtZWcQuLy&#x2F;KkEqEQP6dDk&#x2F;ga&#x2B;bfjb8YL&#x2B;30OFNXuIreHyVQrCQcCRvPkGcAN8i4992DT2&#x2F;r5DPnn9o&#x2F;wCOGveAfDetR6W0f9qWNrIsSxIfLR1DKCc8cyF3I&#x2F;2B07&#x2F;NXwT0WEahc3l&#x2F;cu101qZGluY924kdz0&#x2F;KvYv2ofivZ674H1hdLRWW3t1h&#x2B;XkLI&#x2B;2Mux7nGcfUV5&#x2F;8M7Q2EPyedFJdW8cEIjIkQlu&#x2B;OvAyfwNclTV&#x2F;15Ebs93&#x2B;Aulx&#x2B;MvHGj3F41jb6Vp1swRxHyflzJJj1&#x2B;XaD6tXq2gTt8XvGOlWjNv03&#x2B;0WuJFceXbRwR5CR477iAMemfauG8K3EWiz6RY6fMgVbQPKYrbcZHxwuTnOPXnnJ716x8G9BbQ&#x2F;C2jX01m891dX5BedxkkkgIq&#x2F;h6ZraMbK3f8A4JrE9o&#x2B;HmlNrFrNdSTQXFr4d1DzhCuFh8w5CKOxIwzDJ4IB7155451dfHvxj1DxLfTW9pb2NzJaWkUQDM&#x2F;lxOznj0JIyPQ&#x2B;9b&#x2F;x&#x2B;8Zp8PvAPh&#x2F;w7b6cra5qUk2pXO2X5cnDA8dgCFHHRRXBP4O1X4c&#x2F;D&#x2B;HUNSmt7e5u7CSVIlz5gM5CDr3&#x2B;fn6fXFztaw2eQfDoNe6R4ksQ0MDM8SiCbkFhLJ932PXArW&#x2F;Y5uV8M&#x2F;HXxh4Ov9O8y31T7QjRJ83lkksrgcAgYYH2x6YrlfgrP5&#x2B;r&#x2B;JLJrRJInWNzCX&#x2B;aMeZnhu6ndnHv2qTXb&#x2B;P4Tfta6Hra&#x2F;brW3&#x2B;3G3uA2UYROqrkH&#x2B;78&#x2B;fwrmi9UR5njHj7RdR&#x2B;C&#x2F;xp1DyFjs77Rt0sCjrNayHlNw7BhIvtsU&#x2F;T7G&#x2F;ZD&#x2F;aFXxho&#x2B;laPomqJLDp8YvJLK7x5kfGQoPXbnPI3Da2Bjt5x&#x2B;3l8OLfSZdL8b6a1zJDY6lNY38rjO61nXdzn&#x2B;66ZAPr1r5o8PeIbj4aa0Vt52&#x2F;0i5It5lzGYOxUHsCCcjoe&#x2F;Ss3o7Dvys&#x2B;8&#x2F;iTb&#x2F;wDCa6Arat4ftXW&#x2B;1YzGRAMsnOVwAzbQQOCR9K8n&#x2B;B32Pwj8W&#x2F;E50ub7K0dzFfsZ&#x2F;mkdY&#x2F;kdVHoqEcDkgd8V4b&#x2B;1H&#x2B;118QNb0Swt&#x2F;D&#x2B;rNounaZCsEz&#x2B;UstxdTFWJYMflUABcDHUknqAOd&#x2F;YV8X&#x2B;I9I&#x2B;Juoy&#x2B;I71ta86CG4PnN8yoWdZc4HP30b&#x2F;gA7ZojKPPYHJXsj7x&#x2B;Imuad4Rv1mtNautsxTVLH7OT9ndcjzY9q8dCSAMYO3jmr&#x2F;wf1u41XxBpfkz2ryWc8NuoZsrIPPlCNlc4B3HBA6dxzXH&#x2B;Kdauh4ahijjtlOny7XtyGZL61mBXPHBZc&#x2F;exkEdSKz&#x2F;AIHeIbO18YRWsivbr&#x2B;5vrc8ZVPOiDKc5A2SGRdxHAA6c1tu7FdT7h8I3erWvga1ZF09TZ34VtpeNyoJIIbLDIX1Azj3q340g1yzk8QKgJk8uKaIYUrJzuwfk6AnB9jWLpEGmnwJ4it&#x2F;t2oXawzeaUSVLjyAXD52lSR8qluBjBPapdYstH1fV7gSWszLqGjsQ32JWO9sDAPl9Ng4OP4arl6&#x2F;p6MR19gdUvvELCN5V&#x2B;2aUGKhlPyfwn&#x2F;V9QQwq1A&#x2B;sWuneH7q5uLaORXaKfzYiQx3YJDD3wRxxXF&#x2B;HoNJg17wtugkLTWstu7C1X5tigt&#x2F;B0bAP&#x2F;ATVwJoel&#x2B;Cbeby5o5tNvAUkZXtywHIyQVHV1Bz6VMY9P09UM1L6&#x2B;kWz8QQ&#x2F;2law3EN0siATqOC4AHOcdG5z0IrpvDepibxha7dcj&#x2B;z31oOGeE878jPyj&#x2B;Aev8P41yN7faeniDxDarDdzPLZrJ5cd2rk7UEasB5vHJPI7ge1L4f8RWI1Tw&#x2F;O2nXUu6F4TvMLeaAoRWGZeueTj1NFrr&#x2F;hu3&#x2F;AA7DTXlPgjTQ2sed5F2F3BTn&#x2B;NlP7uT&#x2F;bUdK3bxobHxZqkM2rXkayWe8AXEy4woBHzOw9DXExT6WPCOqW50G6eGG&#x2F;JDC0jk2KzqByrt0IxXWWN4lv47tG&#x2F;sm&#x2B;VbizDAyWs8eGDDI4jI5Ck&#x2F;hVSvq&#x2F;Xt5MRireaeNM8NFvEl43l3vkxSG&#x2F;jbcS20LypJyob64q7Jb6ZqDeKrR75r52iSZF&#x2F;dyM6ENJgbE3dTtqhNq0sfgGFv7MZls74EHzCpTALKfnQdGcDkVrPIz&#x2B;MdRhk0PK3FllXHkuykfKRk7T0UEVV7f8Ou6YFC&#x2F;vNMvfEbLHNeTSXmjLc7RJtYksFPEhBwRs4rl9J8RWFt4e8MzSSX2V1FXHmXcZx&#x2B;9lDDBkx2PGO1dvo2oagr6DILaJY3tpbdwjhQCoyAFJxtJ9D&#x2F;d9q4&#x2F;VYdYtPBumRrJZr9nu3xmNvlw8jD&#x2F;lp6EUabf11GjQ8Nf2bF8QE&#x2F;4lV08X9qu8v7twHaSzkYNhMq2Si8jkfjzn3Gk6O&#x2F;gWER6GrR2eoDaAssPlcf7Xo75zWxpcmqy&#x2B;MLiRW0&#x2B;M&#x2F;bbUbWBXJ5jOeHH3ZQeCOnSrWoadqdx4U1rbqFvaRpeGVykKSqQWAbrGuMYz3960py&#x2F;TuTIxb7S0TxZrVmdHv41ktA0ZjuHxjGD&#x2F;ABgcY9O9TeHr11i8NSf2XqCs7tE6rcbcNtOc&#x2F;PzhlHXgZGOvF&#x2B;8spR45EFzrun5msdxZlWM&#x2F;f2n&#x2B;MemawIRNc&#x2B;FtHeLWrW3lXUhEzxKrlW3SDjLnsQfYHoRV20&#x2F;4fsSL8NtduPD&#x2F;AIp8SWbWcMiPrrOjAknDS52lfmyR36Dj8uh&#x2F;aCt0hsdcvodHZTC9rI8kduEOFIJ&#x2B;YAHp6c15b4b1ldK&#x2F;aEl0f&#x2B;1JFutS1Qss0y5jlcnL7ACoJx8wAJHzDsBXtXj&#x2F;AEe&#x2F;1zwR4tT&#x2B;0I&#x2F;mKRqBaqM4UZwcse5pSilJfLv5FbM8r&#x2B;ImrWN18PdStbXSp5W1DVxHIiwoM4dAATkkE4UfNjr1rY0nX9P0LxsJLxb6yt4bH98oJWGNfMD8tkDPJ6E5xUWhHU7rwZqUU0lrGtreW0rsFOMMwbgk9APlPC&#x2F;dJFcJ8Q&#x2F;D8k&#x2F;inWbhvFzW8S6dGiwqsTxlRHknI598k8&#x2B;3GCOun&#x2B;fkHqeleFdY0e9&#x2B;H&#x2B;myWt5IftV2M&#x2B;XEu0Md6L8zRn&#x2B;6O9dJca5p66&#x2F;rUn9vz7Es9qhr0jAAz&#x2F;AyjqfavnD4XeNNT0k&#x2B;F7O4XTNWjkuhLDIWyN&#x2B;8EeYfmGcOSAO2a9jt&#x2F;EtwZfE15JpsZWGJItsG2NeEYMQzY4LDGT6dqqW&#x2F;9dybHRWv7vTvDca6t&#x2B;&#x2B;nl3HKySt95ZD1lPp&#x2B;tQeIbu407S&#x2F;FVx&#x2F;amVWVM4tM9HYY&#x2B;&#x2F;noVH41BpOpMZvDa3Gj&#x2B;Sgh34eYyY3KD0VW&#x2F;wA5rwz4s&#x2F;teaBpvijUNB0nQG1C4vNWKTzriNI9rK20ErkkEDIA&#x2B;uOoXn&#x2F;l3A9Z8V6g1tr1002rKs1rov2VW2tCS2WOc7&#x2F;8AaXjHauR8V6immW1rIurajFBp&#x2B;iNOokdmQgqc5JXA4wOo69a5t&#x2F;jJHq0fiC&#x2F;XT1WOZI7UJGVl8tjwRjoWO7J4449M1b8WeIJb628Q7raztvJsLaybymGws5BKnbjopGevU1Pr&#x2F;W3&#x2B;YHm3izxdBpOlvZvHdmS00mO2I3f8trhxk49yM54OM54zXwr&#x2B;1F491bxz491JFk22&#x2F;nkQhW4CgfKo9gqrk9yM175&#x2B;1v8AHu1sdUutP0&#x2B;&#x2F;&#x2B;03cl9JJO1uVVYNgEaqWHXawc885XHXIrxbS9Jt9X8SrdyRecyLHGg6qgKMDk&#x2B;wHU&#x2B;lY1JX06g9dDyz4teBdQ8NfCfTbOOHd&#x2F;al0st9J3jRV3Ln6yKR7bSK6X4T&#x2B;G3jnur5Ypdx08raNHHkLHjBfB&#x2F;ibHXsD7mu5&#x2B;Id5p&#x2F;ifwZrmkyFZWuLZsu33QUcy8fRxUPhyOHR&#x2F;7JZoIkfULQQjFztDcZ6UoxHy6nd&#x2F;CywkvdY8PTSfb2j8plAA2fME74x3r3v4UWFnovgnVtc1O0ultNFupLezYnf5k5IUuBkjCKzD6k9wK8d&#x2B;BXgibxnLpdvDbGO20uSSe&#x2B;miuS3lwLncAM&#x2F;ebhR&#x2B;fOK774z&#x2B;K1ufDug&#x2B;FNEa&#x2B;jt5pmvJ7aMELEq5656DkAe&#x2B;K2irMvZF&#x2F;wACW03xK8SeIPF2qWd3qSs8Wl6aLibf5Ma43YGe5BP5VL8dZm1Txrb2SWy2qwyW8IZ5NwjRFaQ4X&#x2B;8do56V1vw98LW&#x2F;g&#x2F;wF4es5NNuoZJJmuneFjKTjJJY&#x2F;Q9T6VycmnSa745m1BbWY&#x2B;ZLfXKy3TEfIiLGpwfXjp29Kzlt&#x2F;X9dAPlj4OXP9kfFa&#x2B;s51uoUMSBCjfvISHRc5HY7fpn613H7XXhdb7SZ9Vtrv7U1rqC4G3ZKuY8AqeuQcHkDOK8n0TWRpvxf0e8PnW6zMYXL&#x2F;ADKql0kH4YNfUnxX8ITa&#x2F;wCEtTuBbWt&#x2F;a3V5C&#x2B;&#x2B;D5HLBACcjjJxnjjINc&#x2B;8f68iFtYuae1v&#x2B;0T&#x2B;yzr1nqGoQyeZAjsPL3MSUzvx16c8cdRXwz4p8I3mm6Fqel3bTR32h3ChiqB9mfu89ecH8jX13&#x2B;wzrc8A8ReGfJtrlfsUgj85dsi&#x2B;WzRjcCOoBXgc8cV57&#x2B;2V8Of8AhCfGcfijcv2fXbSKDUzA5jVJB8isfYPt6&#x2B;rZ61crPX0G9UfLjTLq&#x2B;hy6Oyq18kzOwCEPLlSBgH&#x2B;npXU6Nrx&#x2B;Hvxe8MxtYeWl1bSNJIki7mRFBYDA&#x2F;uknn&#x2B;73rI&#x2B;JWgXmka&#x2F;Y6gv2qyuPKxFPHKrevXgZBrg&#x2F;&#x2B;E11a68W6Feaose2yuvs6TQqNuHypLd&#x2B;C2efTrWNmncz2PurWNVXVPBSxx29y01gRbecM&#x2B;ZHE&#x2B;PKfIOQA2Fx29&#x2B;tWvgxY3U3iCx1S1dlWOQlYGHzPGwaVk6joxyo4GQBkdR5v8PfEcGteD442mnjnWM2EpIJYqwzbyYzjKsNpPsR6V6x8I9eh8QLp0hWa3jMhXz4jh4y8M20jHQ&#x2F;KuSBkc4weDupXepotT7y8NXVxe3mqW&#x2F;2WztTeWQaMy4kWUbcDgScYx6dDVHTbrVZb7w7N5WlJDNaSQSoEclMADn5udpIHuCetZfhK40ua68O3VxrlwwvtPCk216cSlF8w5yT0yOeOA3aqUD6Vp0ehS&#x2F;2tqUf2fUpLLfJebRvbccHAB6ZUj1xVculv09UUdDojXlvpXh9Y7bTytnqDQJhfuBmIIGZPon0NdLHJrJ0XxHZpDaQeXOZxErshcsc5xh1wdqjrwQfrXDSNpljY3TW2uXA&#x2B;y6tkpJeTMrDdjs38Skf8CrtYl0q&#x2F;wBa1a3W&#x2B;utSa6s93ktJ9oA&#x2B;UD7rKTgk8fShx62&#x2F;D0YCTLq&#x2F;&#x2F;CV6c7XUcP2yyMYZoNzK39R6&#x2B;4FZ&#x2B;nXuqx6Fo8n2q3Q2uo&#x2F;Z2AtmbymbOOh&#x2B;6fy&#x2B;YdO2XC3hubSvDE3lyKyztaoRJLGxyTHhhlT91TwR1x0zVe&#x2B;&#x2F;4Rs6J4itW3L9nvxPCWuH2orspC538KFJ4PQMPSmo9P0XewHdWM2rRSeJoWubWSMqtxIotm&#x2B;XI3k4zxlVJ&#x2B;oNdIg1iPU&#x2F;Dc0l1ZbZ7VkLmB0O4Qkrk5xyXryObVPD9j47vFaJo4dS0z5S05kbccBQQrk&#x2F;dAPTs3tnq&#x2F;D&#x2B;qaBFpfhW6xcqiSeVuH2lNqlwM9uBtA&#x2B;hqVF9vwXYDo70zJ4b16E30Kwx3rSYW4T5EZ1yuGTPG0cZrS06ef8A4TXT5P7ch23NpyGMDnd1H8KnlQ3Q1iHU9LP&#x2F;AAkkcP2iSFlExQXP8QUlgN8g6hf1plpfaS&#x2B;peGbmOyubhZ4micD7PJuBRVU4808hpGz3qraf8N2Au6WU0&#x2F;RNJW41rP2fUvI&#x2B;VvJDq4PBVnZTjcFxjGOfTGD4ksdHtPD6xzTXCzR6g6EF3t8jbxjdtX7uD8taNxJDa&#x2B;H9eWx0a5hMeoC5WOSJolLs65AIDJghR3wCxq1rs12LHVUsLWOGOG&#x2B;hulGRGzB9rHgEA5y3frV31&#x2F;r&#x2B;uokZOh3emWPjO9YSXzRx3tod3miQR5lj&#x2B;bljjBxzjNd5qljoU1h4njmWW7ty29iirJt&#x2F;vfcOegz61wvjibVdGn8QXitpoSO2ivo&#x2F;MWRWBjYOeQxGeBjtmu41gazc654qt1htbXzLZmPnliBthKth1Zjk716pjr7UQ&#x2F;y&#x2F;QUjPvvscfifw&#x2B;9vp97NHJYuVKyOfuxljwzA&#x2F;xDt&#x2F;WsXULe1u&#x2F;AlwW03UWSHU8FfN2gOjIAeGyDux25rQso9SvbTRJH1rTFbS4ZUbzIyfNAQhlRgq8lI3PzbRx3Ncdca7fXmleJIbXXtIjMd6ZSoRGeOQlM8M3T5VPI6GtI2vb&#x2F;PuKx5x8cG&#x2F;4Qzx5HrdvYqui6DrNjcGNmcTRxFEjnGeO8hbryPxr3rR9b0XVPCmsMsAhikuAC7CJDjcTnBOejDrzXiPx00O08Wr4kt9WuhJqWoaOJYriAKoiK46EcZGAccnpVz9kP476pr3wV1S1ka3uLu1nUbjJ5JG5YQN25s54PRR&#x2B;ea0leyfp&#x2B;hT2Ox1S30vwxc&#x2B;IgJy3naal3CA5PnMCPlyPl4IGADnkkVmeJorfVzrUcOj2cV3Lp0bPJJbq3&#x2F;LFR83Tn0AzxzXT&#x2F;GTX9UvtWvrEW9sqrpErb&#x2F;tBkACuMbhwcdDkZ&#x2B;nauW1i7tE03WGuL6aTdYIwEWDuynGeq44OCcdDWVPX&#x2B;r9hHmfivQHgvfDI&#x2F;sf5bWNz5ts6h8BAAQi89QeSc46c4FbnhHxpYy&#x2B;FfELS65qlvuu9sUWGXEauOoAzgh26kHHrR4rsYNN1&#x2F;RYUk1S3jW0yzM2YwdpB4XIPX6VzOiapdah4JvLSO4sb6C61Bo&#x2F;KlQq0u3BwqjG75lyWPcVqtdf63&#x2B;Yz1Dxl4qmhutNtbXxFbw3i6cyKmxS28oVH3mzxt9P518beMPAv&#x2F;CIiTUbP7dera2azyXLz7XnmuCST6kHBzjsB7V9V6s95qPjG9kk0m0K2emNzlBhi6ng4&#x2F;uuR6&#x2F;TmvFfGXhz7bYWsNwz3klw9vNLFC2xIYo4XZQSDwflP&#x2F;fX0rPoI8v8B&#x2B;OdR8K39jpc1vqC2ccgvL9mmVyjnr82ec8A9eO3Oa9A8ffEVPFfwW1RtHF3b3&#x2B;uXDmObdnZGgYg85xjbj175rxzWPDTFN8MbfbtZmZjmY&#x2F;u4Qe3U9B79ex69D4Z8YRretbST3i2Gmwi3iheP&#x2F;Wu&#x2F;BUHGCOxOc8elDvb&#x2B;v63EfMuseBdQTUmt28xtpMrySckgdcj69zyT7k12lrot1omhR20bSGZiVfnk5XGSfU&#x2B;Y3HfAr6a8S&#x2F;BfTdUgmu4Fjj89nkO7GPMJwF&#x2F;A&#x2F;kD7GuXsPhol5rK&#x2F;KoUzqy7hyZOF5&#x2F;HA&#x2F;8A1VyKL3FGNjzOz&#x2B;D76X4C1a&#x2F;vCTfy6dcsN4ytsPLfBx6naR&#x2B;I&#x2F;Hz&#x2F;AOEMd&#x2F;8AEPxHY29gsfnWd0kCyeWogijJxuY9s8cdT&#x2B;ePe&#x2F;2ldMvovghrGj6SZm1C9t&#x2F;InlRcuoVkE7L9I03Dr949ec8p&#x2B;zhaxeGbaysrC0t7Zykt1NG4&#x2B;W6C&#x2F;Ijbu7Acc&#x2B;9bxjZGltT2rRdMsvhh4P1aCxhmhmjcWhu7cczsTl3P&#x2B;8SeOwAHSub0ezm8UePtQuphe6hHptvFYxFiE&#x2B;ZjliAMHpirV5cGz8IaVEP7Ss5L65MzRhPNRsE9OvYj061H8P0jt&#x2F;D7XVxbakZNU1VpfNEn7wRr8ucA8fdHHr1qpPp&#x2F;X9aAz0rxh4msPCl&#x2F;awyT32n29jZZkDgt83p0PtxWDBqNnJ4ds7iNrq9abS7iQ8FceYyY64xkE14L8bfEV38VviVcabDPfSi6uUtkR2WM7FA3E&#x2B;vTP412GsX8PgXwpdK11qEFlp8aWccDr&#x2B;865cD2GG&#x2F;IVPkK5806sn2S&#x2B;0W6jLCRmTIPK8B8cfQY&#x2B;lfZXhDw&#x2F;bap4AluCJLeVr&#x2B;JiYXK87AelFFc8f6&#x2F;AUN2eZ&#x2F;BSQQ&#x2F;tFyW7Isy&#x2F;aL23JbIZ081TyVxnmvTP2h&#x2F;CGm&#x2B;IPhHpem3VrHJa31vdxyg8sQrLIOTk5DKKKKPs&#x2F;15lR2PiOxvv7S8B2SzQwPJa30lokpTMhRWZRknqcV5H4&#x2B;sE0qa&#x2B;8kldsu4cDg5&#x2B;lFFEuhlI9S&#x2B;FHiy902yl8qQbWQ5BGQRgtg&#x2B;wZQR7k19NfssX7R&#x2B;IpIGjilhWclUddyjCTEYHsTmiinH9BxPrr4U&#x2B;MZ7n4b&#x2B;HTJb2cn2e7aBN0Z4TceOvsPyq4viGTUrXUEkt7NfL1WKdSsWGDl1Gf6&#x2F;&#x2F;W4ooray5v67mp18Vsl1H4otWG2F2tmAA&#x2B;4SAxIPY7sn2JNbdx4mltPG&#x2B;lyeRaySSWCBmdDkg&#x2B;Yx6EdwDRRWPf0&#x2F;RCMW91&#x2B;6m8MWjeYV&#x2F;wCJqYQB0UK20EZ7jrz3p2o&#x2B;IbqK48Tr5gZfsxyCow21eM&#x2F;mR9D9KKK35V2&#x2F;q6BHM674x1CTxRoI87aJLR0bHdcDj6dPyroPh&#x2F;8AEi&#x2B;uPDOl2skdu0a36qp&#x2B;cMuSxOMN6jP4miihxXb&#x2B;tRy2O9bxdeyeINbxJtEtgSwBJ5CAA8k9ifzqo3iW8tdI8PTrJ80d&#x2B;igEcENI&#x2B;R&#x2F;46PyooohFcq07fkQVrTxdea7f&#x2B;JLSRo4kmiAZo0G7IOAecjOD6U&#x2F;7Vc&#x2B;IYtcguLqYZ0y3d3QKPMYZwSuNn5KO1FFaJJfev0KY&#x2F;wAaeFINU8Oa9JJNeL5uhPIyLMdu4rg4ByB90dK3dQ0lb3x9rkdxNczNNpzyNIZNrZ4H8OB29KKKmLdvl&#x2F;kT0IfBHhyFNIvlgkmtU0&#x2F;SvtyLCQokl&#x2B;UksMHOSxJ6deMVR8PWsGt6Hr0k0EYa6tyJjHmPzMBuTtIyeetFFfN5XOTx1W76v&#x2F;0pHRUS5Ecv40um0PxtFDalkjutFSSTc7OWJaQdWJP8Ir5n&#x2B;Fl5NZfEy9jtZpLM31srTPA21mIkJB9M8kZx0oor6qn0&#x2B;RlHY&#x2B;pfidYPNf3iyXl5MsuizsRJJvwQ&#x2B;RgkZ7dM4Oaz7Ii38OXixqsfmaFbSsy&#x2F;eJMjA89T&#x2B;POe9FFYw3S&#x2F;rdEdDj&#x2F;FeuX1n4otSt3Iyx2JAVlTbgAnHT2Fcba6Za6p4e00XFvDJv1GN5DjaZCSX5IwcA9qKK6J6JW8v1KR02m6BHd&#x2B;L9dhaa6WOOxCqqylQoZATj&#x2F;vha4bxVp8a6aYI90cbabFI2zgk&#x2F;Zpj160UVl&#x2F;l&#x2B;gjw34jaRa2Gv6h5MIj&#x2F;s2xjS32sw8r5QcjB68&#x2F;jXG6HJNDqOiWK3VwILh&#x2F;tMnzZLMAHHXtnj1wBRRUfZ&#x2F;rsI92&#x2B;F&#x2B;sT6rokFvcN5iXUTTyk&#x2F;eZz9oYnP1UVvPYQ6d4tnjjQGOFmYI3IbccEH&#x2F;gOR9Ce&#x2F;NFFZMImLe6VDr3jq4tbpfOhXTLhmBA&#x2F;eNuZCx&#x2F;2isa8jnPIxXyZ8BfibqWra5o9rP9neG&#x2B;0xkkGzGDkZYc8E0UVrHZlPc&#x2B;ivGUEmmx6THDc3SRxWDOi&#x2B;Z90lcEg9e1aekeFLOLwR4cZVk8xrWWUv5hLFtobP50UVm29P67iR4p&#x2B;zosev8AxQmnvIY7iVvNk3OMkEuRwfoBXVftIvLb&#x2B;DvD9v58zw6nfhrgOcs&#x2B;ATjd17AcnoBRRRLaX9dxdD&#x2F;&#x2F;2Q&#x3D;&#x3D;">
+<p class="spinner"><span class="sr-only">Loading</span></p>
+</div>
+</section>
+</div>
+<section class="blog--related-articles" aria-label="Related Articles">
+<div class="lt-gray extra-padding margin-top-20">
+<div class="container">
+<a class="heading-anchor" id></a>
+<h2 class="heading-label">Related Articles in <a href="/blog/theology-ministry">Theology &amp; Ministry</a></h2>
+<div region="content"><div class="js-view-dom-id-c4e0907fb3e8046f2f5c3b61ccc305ff73857b3d2aa4e9d938b910770b003bbf">
+<div class="views-element-container"><div class="js-view-dom-id-85d2663cfef970022b43e2524b7f54eacc3e2b62d733b49ab5a47db3e90d055b">
+<div class="views-row">
+<a class="heading-anchor" id="h-theology-thursday-through-the-crucible-of-pain-unveiling-the-divine-tapestry-of-suffering"></a>
+<div data-history-node-id="5691" about="/blog/theology-ministry/theology-thursday-through-crucible-pain-unveiling-divine-tapestry-suffering" class="card--blog-list card card-with-image card-with-link">
+<a href="/blog/theology-ministry/theology-thursday-through-crucible-pain-unveiling-divine-tapestry-suffering" class="card-link-wrap" title="Theology Thursday: Through the Crucible of Pain: Unveiling the Divine Tapestry of Suffering">
+<picture class="card--blog__image" aria-hidden="true" style="min-height: 195px; max-height: 240px;">
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_360,h_240,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/media/images/Blog/theology-ministry/overcoming%20mental%20suffering%20and%20pain.jpg" alt="Overcoming mental suffering and pain" loading="lazy" />
+</picture>
+<div class="card-content">
+<h3 class="card--blog__heading"><span>Theology Thursday: Through the Crucible of Pain: Unveiling the Divine Tapestry of Suffering</span>
+</h3>
+<div class="card--blog-landing-list__body">
+In the tapestry of human existence, suffering is a profound and enigmatic thread woven intricately into the fabric of our lives. It is a universal experience that knows no boundaries, transcending...
+</div>
+<div class="card--blog__footer">
+<span class="press-date">Posted on&nbsp;October 12, 2023</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="views-row">
+<a class="heading-anchor" id="h-theology-thursday-god-in-my-thought-life-the-principles-of-thought-and-worship"></a>
+<div data-history-node-id="5684" about="/blog/theology-ministry/theology-thursday-god-my-thought-life-principles-thought-and-worship" class="card--blog-list card card-with-image card-with-link">
+<a href="/blog/theology-ministry/theology-thursday-god-my-thought-life-principles-thought-and-worship" class="card-link-wrap" title="Theology Thursday: God in My Thought Life: The Principles of Thought and Worship">
+<picture class="card--blog__image" aria-hidden="true" style="min-height: 195px; max-height: 240px;">
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_360,h_240,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/media/images/Blog/theology-ministry/A%20women%20praying.jpg" alt="A women praying" loading="lazy" />
+</picture>
+<div class="card-content">
+<h3 class="card--blog__heading"><span>Theology Thursday: God in My Thought Life: The Principles of Thought and Worship</span>
+</h3>
+<div class="card--blog-landing-list__body">
+Two fundamental concepts must be embraced to grasp the profound importance of your thought life. First and foremost, we must understand that humanity's very purpose, our telos, is to engage in worship...
+</div>
+<div class="card--blog__footer">
+<span class="press-date">Posted on&nbsp;October 05, 2023</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="views-row">
+<a class="heading-anchor" id="h-top-7-qualities-of-a-christian-leader-"></a>
+<div data-history-node-id="5671" about="/blog/theology-ministry/top-qualities-christian-leader" class="card--blog-list card card-with-image card-with-link">
+<a href="/blog/theology-ministry/top-qualities-christian-leader" class="card-link-wrap" title="Top 7 Qualities of a Christian Leader ">
+<picture class="card--blog__image" aria-hidden="true" style="min-height: 195px; max-height: 240px;">
+<img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_360,h_240,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/media/images/Blog/theology-ministry/Confident%20man%20participates%20in%20Bible%20study.jpg" alt="Confident man participates in Bible study" loading="lazy" />
+</picture>
+<div class="card-content">
+<h3 class="card--blog__heading"><span>Top 7 Qualities of a Christian Leader </span>
+</h3>
+<div class="card--blog-landing-list__body">
+You will find effective, competent leaders everywhere — from boardrooms to intensive care units to libraries, and in churches. Leadership in ministry settings is crucial not only for ensuring that the...
+</div>
+<div class="card--blog__footer">
+<span class="press-date">Posted on&nbsp;September 28, 2023</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div role="button" id="backToTop" class="backToTop" tabindex="0">
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 1600 1472" aria-hidden="true">
+<path d="M1579 779q0 51-37 90l-75 75q-38 38-91 38q-54 0-90-38L992 651v704q0 52-37.5 84.5T864 1472H736q-53 0-90.5-32.5T608 1355V651L314 944q-36 38-90 38t-90-38l-75-75q-38-38-38-90q0-53 38-91L710 37q35-37 90-37q54 0 91 37l651 651q37 39 37 91z" fill="#ffffff" />
+</svg>
+<span class="sr-only">Scroll back to top</span>
+</div>
+</main>
+<aside class="gcu-sticky-footer" aria-label="Sticky Website Footer">
+<div class="container gcu-sticky-footer__content">
+<div class="gcu-sticky-footer__logo">
+<a href="/">
+<img loading="lazy" src="/themes/custom/gcu/media/images/header/gcu.svg" width="200" height="40" alt="Grand Canyon University Logo" />
+</a>
+</div>
+<div class="gcu-sticky-footer__contact">
+<a href="tel:+18554285673" title="GCU Phone Number" class="contact-icons phone">
+<span>1-855-GCU-LOPE</span>
+</a>
+<div class="contact-icons chat" tabindex="0" data-module="snapLiveChat" role="button">
+<span>Live Chat</span>
+</div>
+</div>
+<div class="gcu-sticky-footer__cta">
+<a href="https://www.gcu.edu/rmi/standalone" class="buttons button cta button--cta button--lg openRMI">
+Request Info
+</a>
+<a href="https://www.gcu.edu/rmi/apply-now" onclick="dataLayer.push({category: 'navigation', action:'click', value: 'apply-now'})" target="_blank" rel="noopener noreferrer" class="buttons button button--lg apply-btn">
+Apply<span class="hidden-xs"> Now</span>
+<span class="sr-only">Open in New Window</span>
+</a>
+</div>
+</div>
+</aside>
+<footer class="footer" aria-label="Main Website Footer">
+<hr class="footer__hr">
+<div class="container footer__container">
+<div class="row">
+<div class="col-md-6">
+<div class="footer__contact">
+<div class="contact-section">
+<svg id="Lope" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 519.47 38.5">
+<defs>
+<style>
+                    .cls-1 {
+                      fill: #552b9a;
+                    }
+                  </style>
+</defs>
+<path class="cls-1" d="m510.05.81h-1.69v-.81h4.41v.81h-1.7v4.95h-1.02V.81Zm6.03,4.95l-1.65-4.71v4.71h-.88V0h1.36l1.62,4.75,1.62-4.75h1.32v5.76h-.91V1.05l-1.62,4.71h-.85Z" />
+<g>
+<path class="cls-1" d="m9.07,4.62L8.03,0h29.97l-3.3,12.26-7.64-2.47c-.77-.28-.99-1.1-.77-2.04l.33-1.38h-7.53c-.55,0-1.1.5-1.27,1.04l-2.69,10.17h10.39l-3.9,5.22c-.6.83-1.54,1.32-2.42,1.32h-5.83l-3.85,14.35H0L9.07,4.62Zm32.12-.05L40.2,0h11.77l-10.28,38.5h-9.57L41.19,4.57Z" />
+<path class="cls-1" d="m56.92,4.57L55.88,0h11.88l3.85,24.64L78.21,0h8.41l-10.34,38.44h-10.34l-3.96-21.67-5.77,21.67h-8.36L56.92,4.57Z" />
+<path class="cls-1" d="m90.64,7.98h9.51l-6.49,24.2h7.53c.5,0,1.1-.44,1.26-1.04l6.38-23.76c.17-.55-.27-1.04-.77-1.04h-16.99L89.7,0h26.67c2.25,0,3.57,1.82,2.97,4.01l-8.14,30.47c-.61,2.2-2.92,4.01-5.11,4.01h-23.65l8.19-30.52Z" />
+<path class="cls-1" d="m136.4,24.31L132.16,0h8.69l1.92,15.89L153.23,0h10.01l-17.27,24.25-3.79,14.24h-9.57l3.79-14.19Z" />
+<path class="cls-1" d="m155.87,34.43l8.14-30.36C164.61,1.82,166.92,0,169.18,0h19.52c2.2,0,3.52,1.82,2.91,4.07l-8.14,30.36c-.6,2.25-2.91,4.07-5.11,4.07h-19.52c-2.25,0-3.57-1.81-2.97-4.07Zm18.37-2.31c.11,0,.38-.17.38-.28l6.82-25.46h-8.25c-.17,0-.28.11-.33.28l-6.82,25.46h8.19Z" />
+<path class="cls-1" d="m189.14,34.49l7.97-29.92L196.13,0h11.77l-8.63,32.17h8.25c.11,0,.27-.11.33-.27L216.42,0h9.51l-10.34,38.5h-23.54c-2.2,0-3.52-1.76-2.92-4.01Z" />
+<path class="cls-1" d="m230.01,7.98h9.51l-2.58,9.57h7.75c.39,0,.88-.33.99-.77l2.53-9.4c.17-.55-.22-.99-.77-.99h-17.05L229.07,0h26.73c2.2,0,3.52,1.82,2.91,4.07l-4.23,15.78c-.6,2.25-2.86,4.01-5.06,4.07l1.43,14.57h-9.35l-1.1-14.57h-5.17l-3.9,14.57h-9.51l8.19-30.52Z" />
+<path class="cls-1" d="m276.37,7.98h9.57l-3.13,11.71h7.48c.5,0,1.04-.38,1.21-.99l3.08-11.33c.17-.55-.27-.99-.77-.99h-17.05L275.49,0h26.67c2.25,0,3.58,1.82,2.97,4.07l-4.84,17.93c-.61,2.25-2.86,4.07-5.11,4.07h-14.08l-3.35,12.43h-9.57l8.19-30.52Z" />
+<path class="cls-1" d="m302.11,34.49l7.97-29.92L309.1,0h11.77l-8.63,32.17h8.25c.11,0,.27-.11.33-.27L329.39,0h9.51l-10.34,38.5h-23.54c-2.2,0-3.52-1.76-2.92-4.01Z" />
+<path class="cls-1" d="m342.98,7.98h9.51l-2.58,9.57h7.75c.39,0,.88-.33.99-.77l2.53-9.4c.17-.55-.22-.99-.77-.99h-17.05L342.04,0h26.73c2.2,0,3.52,1.82,2.91,4.07l-4.23,15.78c-.6,2.25-2.86,4.01-5.06,4.07l1.43,14.57h-9.35l-1.1-14.57h-5.17l-3.9,14.57h-9.51l8.19-30.52Z" />
+<path class="cls-1" d="m376.14,7.98h9.57l-3.13,11.71h7.48c.5,0,1.04-.38,1.21-.99l3.08-11.33c.17-.55-.27-.99-.77-.99h-17.05L375.26,0h26.67c2.25,0,3.58,1.82,2.97,4.07l-4.84,17.93c-.61,2.25-2.86,4.07-5.11,4.07h-14.08l-3.35,12.43h-9.57l8.19-30.52Z" />
+<path class="cls-1" d="m401.72,34.43l8.14-30.36c.6-2.25,2.91-4.07,5.17-4.07h19.52c2.2,0,3.52,1.82,2.91,4.07l-8.14,30.36c-.6,2.25-2.91,4.07-5.11,4.07h-19.52c-2.25,0-3.57-1.81-2.97-4.07Zm18.37-2.31c.11,0,.38-.17.38-.28l6.82-25.46h-8.25c-.17,0-.28.11-.33.28l-6.82,25.46h8.19Z" />
+<path class="cls-1" d="m436.53,25.91l7.75,2.42c.71.22.93,1.21.71,2.09l-.44,1.71h7.15c.5,0,1.1-.38,1.26-.99l1.38-5.11c.11-.38.05-.83-.33-1.04l-12.98-7.42c-1.21-.71-1.65-2.09-1.27-3.63l2.64-9.84c.61-2.25,2.92-4.07,5.17-4.07h23.32l-3.41,12.59-7.7-2.42c-.77-.28-.99-1.26-.77-2.09l.44-1.71h-7.15c-.5,0-1.1.44-1.27,1.04l-1.37,5.22c-.11.38.05.61.22.71l13.14,7.53c1.21.71,1.65,2.09,1.26,3.63l-2.64,9.9c-.61,2.25-2.92,4.07-5.17,4.07h-23.32l3.35-12.59Z" />
+<path class="cls-1" d="m474.97,4.62L473.93,0h29.97l-3.3,12.26-7.64-2.47c-.77-.28-.99-1.16-.77-2.04l.33-1.38h-7.53c-.55,0-1.1.5-1.27,1.04l-2.2,8.19h10.39l-3.85,5.22c-.6.82-1.48,1.32-2.42,1.32h-5.88l-2.64,10.01h8.19c.16,0,.33-.17.38-.33l1.38-5,7.64,2.42c.77.22.99,1.21.77,2.09l-1.92,7.15h-27.66l9.07-33.88Z" />
+</g>
+</svg>
+<div class="contact-info">
+<a href="tel:+18554285673" title="GCU Phone Number" class="contact-icons phone">
+1-855-GCU-LOPE
+</a>
+<div class="contact-icons chat" tabindex="0" data-module="snapLiveChat" role="button">
+Live Chat
+</div>
+</div>
+</div>
+<div class="contact-section">
+<div class="contact-social social-icons social-icons--grayscale">
+<a href="https://www.facebook.com/GrandCanyonU" target="_blank" title="Like us on Facebook" data-tooltip rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><path fill="#48525b" d="M24 12c0-6.628-5.373-12-12-12S0 5.372 0 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078V12h3.047V9.356c0-3.007 1.791-4.669 4.532-4.669 1.313 0 2.687.235 2.687.235v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12" /></g></g></svg>
+</a>
+<a href="https://twitter.com/gcu" target="_blank" title="Follow us on Twitter" data-tooltip rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 20"><g><g><path fill="#48525b" d="M7.548 20c9.057 0 14.01-7.694 14.01-14.366 0-.218-.005-.436-.014-.652A10.17 10.17 0 0 0 24 2.368a9.644 9.644 0 0 1-2.828.794A5.045 5.045 0 0 0 23.337.37a9.71 9.71 0 0 1-3.126 1.226A4.864 4.864 0 0 0 16.617 0c-2.72 0-4.925 2.261-4.925 5.048 0 .397.044.782.128 1.152C7.728 5.989 4.099 3.98 1.67.925a5.127 5.127 0 0 0-.666 2.537 5.08 5.08 0 0 0 2.19 4.203 4.793 4.793 0 0 1-2.23-.632v.065c0 2.445 1.697 4.487 3.95 4.95a4.821 4.821 0 0 1-2.224.086c.627 2.006 2.445 3.466 4.6 3.507A9.725 9.725 0 0 1 0 17.732 13.69 13.69 0 0 0 7.548 20" /></g></g></svg>
+</a>
+<a href="https://www.linkedin.com/school/grand-canyon-university/" target="_blank" title="Connect with us on LinkedIn" data-tooltip rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><path fill="#48525b" d="M17.03 20.571V15c0-1.329-.026-3.038-1.848-3.038-1.853 0-2.137 1.447-2.137 2.942v5.667H9.488V9.118H12.9v1.564h.048c.477-.9 1.64-1.848 3.37-1.848 3.6 0 4.27 2.373 4.27 5.459v6.278zM3.412 5.486A2.06 2.06 0 0 1 5.476 3.43c1.136 0 2.063.924 2.063 2.057a2.057 2.057 0 0 1-2.063 2.058 2.06 2.06 0 0 1-2.063-2.058zm.284 15.085V9.118H7.26V20.57zM22.286 0H1.709C.766 0 0 .777 0 1.73v20.54C0 23.223.766 24 1.709 24h20.577c.943 0 1.714-.777 1.714-1.73V1.73C24 .777 23.229 0 22.286 0z" /></g></g></svg>
+</a>
+<a href="https://www.youtube.com/user/gcu" target="_blank" title="Follow us on YouTube" data-tooltip rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 17"><g><g><path fill="#48525b" d="M9.518 11.961v-7.1l6.242 3.55zm13.885-9.334A3 3 0 0 0 21.29.502C19.43 0 11.961 0 11.961 0S4.493 0 2.63.502A3 3 0 0 0 .518 2.627C.02 4.5.02 8.41.02 8.41s0 3.91.499 5.784a2.956 2.956 0 0 0 2.111 2.091c1.863.502 9.33.502 9.33.502s7.469 0 9.331-.502a2.956 2.956 0 0 0 2.112-2.09c.499-1.875.499-5.785.499-5.785s0-3.91-.5-5.784z" /></g></g></svg>
+</a>
+<a href="https://instagram.com/gcu/" target="_blank" title="Follow us on Instagram" data-tooltip rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><clipPath id="x1yxa"><path d="M.04 0h23.593v23.593H.04z" /></clipPath></defs><g><g><g><g/><g clip-path="url(#x1yxa)"><path fill="#48525b" d="M11.837 0c3.203 0 3.605.014 4.863.07 1.256.059 2.113.258 2.864.55a5.78 5.78 0 0 1 2.089 1.36 5.788 5.788 0 0 1 1.361 2.09c.291.75.491 1.607.548 2.863.057 1.258.071 1.66.071 4.864 0 3.203-.014 3.605-.071 4.863-.057 1.256-.257 2.114-.548 2.864a5.786 5.786 0 0 1-1.361 2.09 5.78 5.78 0 0 1-2.09 1.36c-.75.292-1.607.491-2.863.548-1.258.058-1.66.071-4.863.071-3.204 0-3.606-.013-4.864-.07-1.256-.058-2.113-.257-2.864-.549a5.776 5.776 0 0 1-2.09-1.36 5.78 5.78 0 0 1-1.36-2.09c-.292-.75-.49-1.608-.548-2.864C.053 15.402.04 15 .04 11.797c0-3.204.013-3.606.07-4.864.058-1.256.257-2.113.55-2.864A5.782 5.782 0 0 1 2.02 1.98 5.776 5.776 0 0 1 4.109.62C4.859.328 5.717.129 6.973.07 8.23.015 8.633 0 11.837 0m0 2.125c-3.15 0-3.524.013-4.767.07-1.15.052-1.775.244-2.191.406-.55.214-.943.469-1.356.882a3.652 3.652 0 0 0-.882 1.356c-.162.416-.354 1.04-.407 2.191-.057 1.243-.069 1.617-.069 4.767 0 3.15.012 3.523.07 4.767.052 1.15.244 1.774.406 2.19.213.55.469.943.882 1.356.413.413.805.669 1.356.883.416.161 1.04.354 2.19.406 1.244.057 1.617.069 4.768.069 3.15 0 3.522-.012 4.766-.069 1.15-.052 1.775-.245 2.19-.406.552-.214.944-.47 1.357-.883a3.65 3.65 0 0 0 .882-1.356c.162-.416.355-1.04.407-2.19.057-1.244.068-1.617.068-4.767 0-3.15-.011-3.524-.068-4.767-.052-1.15-.245-1.775-.407-2.19a3.652 3.652 0 0 0-.882-1.357 3.649 3.649 0 0 0-1.356-.882c-.416-.162-1.04-.354-2.19-.406-1.245-.057-1.618-.07-4.767-.07" /></g></g><g><path fill="#48525b" d="M11.838 15.73a3.932 3.932 0 1 1 0-7.864 3.932 3.932 0 0 1 0 7.864m0-9.99a6.058 6.058 0 1 0 0 12.117 6.058 6.058 0 0 0 0-12.117" /></g><g><path fill="#48525b" d="M19.551 5.496a1.415 1.415 0 1 1-2.83-.001 1.415 1.415 0 0 1 2.83 0" /></g></g></g></svg>
+</a>
+</div>
+<div class="contact-address">
+Grand Canyon University © 2023<span class="xs-break-block al l-rights-reserved"> All Rights Reserved</span>
+<span class="break-block">3300 West Camelback Road - Phoenix, AZ 85017</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="footer__links">
+<div role="tablist" aria-multiselectable="false" data-module="panelAccordion" class="panel-multiple panel--white panel--hide-controls panel--border">
+<div class="footer__nav-panel">
+<div class="panel" data-panel-index="panel-1" style="opacity:0" data-mobile="0" data-desktop="0">
+<div class="footer__nav-content">
+<div class="panel-heading" id="reqHead-1">
+<div class="panel-title panel-title--purple">
+<div class="panel-button chevron collapsed nav-content__heading" role="tab" tabindex="0" data-toggle="collapse" aria-expanded="true" aria-controls="reqCollapse-1">
+Explore GCU
+</div>
+</div>
+</div>
+<div id="reqCollapse-1" class="panel-collapse collapse" aria-labelledby="reqHead-1" tabindex="0">
+<div class="panel-body">
+<div class="nav-content__grid">
+<ul class="nav-content__list">
+<li>
+<a href="https://students.gcu.edu/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Current Students</a>
+</li>
+<li>
+<a href="https://alumni.gcu.edu/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Alumni</a>
+</li>
+<li>
+<a href="https://gculopes.com/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Athletics</a>
+</li>
+<li>
+<a href="https://www.gcuarena.com/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Arena</a>
+</li>
+<li>
+<a href="https://lopeshops.gcu.edu/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Lope Shops</a>
+</li>
+<li>
+<a href="https://gcbc.gcu.edu/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>GCBC</a>
+</li>
+<li>
+<a href="http://www.canyonpromotions.com/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Canyon Promotions</a>
+</li>
+</ul>
+<ul class="nav-content__list">
+<li>
+<a href="https://www.gcugolf.com/lope-house-restaurant/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Lope House</a>
+</li>
+<li>
+<a href="https://www.gcugolf.com/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>GCU Golf Course</a>
+</li>
+<li>
+<a href="https://news.gcu.edu/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>GCU News</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel" data-panel-index="panel-2" style="opacity:0" data-mobile="0" data-desktop="0">
+<div class="footer__nav-content">
+<div class="panel-heading" id="reqHead-2">
+<div class="panel-title panel-title--purple">
+<div class="panel-button chevron collapsed nav-content__heading" role="tab" tabindex="0" data-toggle="collapse" aria-expanded="true" aria-controls="reqCollapse-2">
+Resources
+</div>
+</div>
+</div>
+<div id="reqCollapse-2" class="panel-collapse collapse" aria-labelledby="reqHead-2" tabindex="0">
+<div class="panel-body">
+<div>
+<ul class="nav-content__list single-list">
+<li>
+<a href="/academics/academic-policies/title-ix.php">Title IX</a>
+</li>
+<li>
+<a href="/privacy-policy">Privacy Policy</a>
+</li>
+<li>
+<a href="https://jobs.gcu.edu/" target="_blank" rel="noopener" title="Opens A New Window" data-tooltip>Careers at GCU</a>
+</li>
+<li>
+<a href="/about/contact">Contact Us</a>
+</li>
+<li>
+<a href="https://www.gcu.edu/about/media-and-branding">Media and Licensing</a>
+</li>
+<li>
+<a href="/academics/academic-policies.php#h-consumer-information">Consumer Information</a>
+</li>
+<li>
+<a href="/financial-disclosures">Financial Disclosures</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div id="block-cookiesdisclaimer">
+<div>
+<div class="disclaimer-nondiscrimination disclaimer" tabindex="0">
+<p><strong>Privacy / Cookie Disclaimer:</strong></p>
+<p>Our site uses cookies to personalize content, to provide social media features/ads and to analyze site traffic. We share information about your use of this site with our social media, advertising and analytics teams who may combine it with other information that you’ve provided to them. By continuing to navigate this site you are consenting to the collection of information via our use of cookies. For more information on our cookie collection and use please visit our <a href=" https://www.gcu.edu/privacy-policy" title="Privacy Policy">Privacy Policy.</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</section>
+</div>
+<link rel="preload" href="/themes/custom/gcu/assets/styles/main.css?v=0.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>
+      <link rel="stylesheet" href="/themes/custom/gcu/assets/styles/main.css?v=0.1.1" />
+    </noscript>
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_ceUaY0P2RrUAMuP6RDgygs4h9hVQRMF6BIJZvlSVPP4.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_Tx-ZB92yPcdOrcfXsguOMGYZMO4jsG4ukP6ncymrM2w.css" />
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/3591","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","cro":{"rmi":{"fullpageCompliance":0}},"gcu":{"ajaxBase":"https:\/\/redesign.gcu.edu","ids":{"google_optimize":"GTM-WHKC57K","google_tag_manager":"GTM-W46JW8K"}},"js":{"drupalUrl":"https:\/\/www.gcu.edu","dpUrl":"https:\/\/www.gcu.edu","redesignUrl":"https:\/\/redesign.gcu.edu","apiUrl":"https:\/\/mkt-api.gcu.edu","liveLeadsUrl":"https:\/\/ll.gcu.edu","gcuEduScriptsDir":"https:\/\/www.gcu.edu\/themes\/custom\/gcu\/assets\/scripts","gcuEduThemeDir":"https:\/\/www.gcu.edu\/themes\/custom\/gcu","youtubeApi":"AIzaSyCXCNg6w3uKjDMkfCG0DPAyL-OdOf-Dv_o","mapsApi":"AIzaSyCdQ9FNWKp2nB6ClIYVP70gZcoFnr7z37M","facebookShareAppId":"2195181794114282","formbuilderUrl":"https:\/\/rmi-form-builder.gcu.edu"},"user":{"uid":0,"permissionsHash":"328b073c074dd7ce5114cd562b7f2aaa62d9ceadf3f519ad844112dad3dae569"}}</script>
+<script src="/sites/default/files/js/js_5-2hVRlYOjG5Sw2LrKggbNrjewgdQyOicS68o-sVeic.js"></script>
+<script async defer src="https://www.googletagmanager.com/gtm.js?id=GTM-W46JW8K"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"818f1acffc841c51","b":1,"version":"2023.10.0","token":"2acc0d1a3f9748b29fb0d506b07f5732"}' crossorigin="anonymous"></script>
+</body>
+</html>

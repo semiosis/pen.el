@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: termui table
+# key: tutab
+# --
+rows1 := [][]string{
+[]string{"header1", "header2", "header3"},
+[]string{"你好吗", "Go-lang is so cool", "Im working on Ruby"},
+[]string{"2016", "10", "11"},
+}
+
+table1 := termui.NewTable()
+table1.Rows = rows1
+table1.FgColor = termui.ColorWhite
+table1.BgColor = termui.ColorDefault
+table1.Y = 0
+table1.X = 0
+table1.Width = 62
+table1.Height = 7

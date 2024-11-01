@@ -1,0 +1,10 @@
+http://https:/hoogle.haskell.org/?hoogle=Data.Text
+
+
+
+Data.Text
+
+Decode text values to and from a variety of formats.
+
+Data.Text is a Haskell library for dealing with text. It offers
+functions for converting text to and from lists of code points,

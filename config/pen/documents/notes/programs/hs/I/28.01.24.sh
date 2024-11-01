@@ -1,0 +1,6 @@
+cd /volumes/home/shane/notes/ws/bible-studies;  "I" "Corinthians" "9:21" "#" "<==" "zsh"
+cd /;  "I" "John" "#" "<==" "zsh"
+cd /;  "I" "John" "#" "<==" "zsh"
+cd /;  "I" "John" "#" "<==" "zsh"
+cd //;  "I" "John" "3:4-8" " v" "#" "<==" "zsh"
+cd //;  "I" "John" "3:4-9" "#" "<==" "zsh"

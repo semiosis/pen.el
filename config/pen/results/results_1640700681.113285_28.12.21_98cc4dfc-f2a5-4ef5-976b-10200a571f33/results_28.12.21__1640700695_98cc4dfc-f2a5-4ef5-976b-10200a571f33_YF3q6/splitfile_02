@@ -1,0 +1,17 @@
+- 1. Aristotle (384-322 B.C.)
+- 2. Avicii (1994-2018)
+- 3. Chomsky
+- 4. Confucius (551-479 BC)
+- 5. Kant (1724-1804)
+
+    """)
+    print("Let's get on with our demo.")
+    print()
+    print("First we're going to add some documents to our corpus.")
+    print("We've provided you with 3 documents to add.")
+
+    # TODO: Add documents to the corpus! Modify the lines below!
+
+    c.add_document(doc1)
+    c.add_document(doc2)
+    c.add_document(doc

@@ -1,0 +1,7 @@
+cd /root/notes/ws/probability/reports;  "show-dot" "#" "<==" "bash"
+cd /root/notes/ws/probability/reports;  "show-dot" "#" "<==" "bash"
+cd /root/notes/ws/probability/reports;  "show-dot" "#" "<==" "bash"
+cd /root/notes/ws/probability/reports;  "show-dot" "#" "<==" "bash"
+cd /;  "show-dot" "#" "<==" "zsh"
+cd /root/notes/ws/probability/reports;  "show-dot" "#" "<==" "bash"
+cd /root/notes/ws/probability/reports;  "show-dot" "#" "<==" "bash"

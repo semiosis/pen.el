@@ -1,0 +1,5 @@
+cd /root/notes/ws/fani;  "rlwrap" "replify" "tmpg" "#" "<==" "rlwrap"
+cd /root/notes/ws/fani;  "rlwrap" "replify" "tmpg" "#" "<==" "rlwrap"
+cd /root/notes/ws/fani;  "rlwrap" "replify" "tmpg" "#" "<==" "rlwrap"
+cd /root/notes/ws/fani;  "rlwrap" "replify" "tmpg" "#" "<==" "rlwrap"
+cd /root/.pen/documents/notes;  "rlwrap" "replify" "tmpg" "#" "<==" "rlwrap"

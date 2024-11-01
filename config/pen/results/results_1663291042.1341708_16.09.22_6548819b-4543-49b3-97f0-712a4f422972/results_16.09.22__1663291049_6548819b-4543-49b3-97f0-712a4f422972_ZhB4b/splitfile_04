@@ -1,0 +1,4 @@
+
+(define-derived-mode komamodesupercata-mode fundamental-mode "Supercata"
+(set-syntax-table komamodesupercata-syntax-table)
+(make-variable-buffer-local 'supercata-font

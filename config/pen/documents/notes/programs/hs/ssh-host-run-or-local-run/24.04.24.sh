@@ -1,0 +1,1 @@
+cd /volumes/home/shane/notes/ws/problog/scratch;  "ssh-host-run-or-local-run" "chrome" "/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/basic/03_dice.html" "#" "<==" "tclsh8.6"

@@ -1,0 +1,5 @@
+: permission denied: /root
+
+root@pen-mele:/root$ ssh-copy-id -i id.rsa root@192.168.1.1
+
+root@pen-mele:/root$ ssh -i id.rsa root@192.168 /home/admin/documents/nsa-files

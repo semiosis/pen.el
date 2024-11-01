@@ -1,0 +1,36 @@
+task: "clean prose with codex"
+doc: "Given some prose, clean it to remove things like references, and annotations"
+tags: prose grammar preprocessing nlp-task
+issues:
+- This doesn't work as well as the GPT-3 version. We almost need the blindness of GPT-3 to remove all the annotations.
+prompt-version: 1
+issues:
+- "Appears to keep the numerical annotations"
+prompt: |+
+  # Original passage:
+  <delim>
+  <passage>
+  <delim>
+  # The same passage, but with only the prose and no extra characters:
+  <delim>
+engine: "OpenAI Codex"
+force-engine: "OpenAI Codex"
+temperature: 0.5
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "passage"
+preprocessors:
+- sed 's=<delim>=\\"\\"\\"='
+examples:
+- |-
+    19 Now Ahab told Jezebel(A) everything Elijah had done and how he had killed(B) all the
+    prophets with the sword. 2 So Jezebel sent a messenger to Elijah to say, “May the gods
+    deal with me, be it ever so severely,(C) if by this time tomorrow I do not make your life
+    like that of one of them.”(D) 
+filter: on
+completion: off
+insertion: off

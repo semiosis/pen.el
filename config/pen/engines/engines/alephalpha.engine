@@ -1,0 +1,41 @@
+vendor: AlephAlpha
+engine-title: AlephAlpha
+lm-command: "alephalpha-complete.sh"
+notes: "אα"
+model: EleutherAI/gpt-neo-2.7B
+default-tokens: 64
+best-of: 1
+# zero out the probabilities for anything below the kth token.
+top-k: 5
+api-endpoint: "https://api.aleph-alpha.de"
+engine-delimiter: "###"
+approximate-token-char-length: 2.5
+engine-min-tokens: 0
+engine-max-tokens: 2048
+engine-whitespace-support: no
+
+# penalty includes prompt
+#     Flag deciding whether presence penalty or
+#     frequency penalty are applied to the
+#     prompt and completion (True) or only the
+#     completion (False).
+
+# Defaults for prompt
+penalty-includes-prompt: no
+multiplicative-penalty: no
+frequency-penalty: 0.0
+presence-penalty: 0.0
+
+# Option not available. How does this relate to frequency?
+# repetition-penalty: 0.0
+
+# For other engines, I may have higher collations and fewer completions
+n-collate: 1
+n-completions: 5
+
+libre-dataset: no
+libre-model: no
+local: no
+engine-family:
+- AlephAlpha EUTranMM
+- AlephAlpha gpt-neo-27b

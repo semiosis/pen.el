@@ -1,0 +1,3 @@
+<80%>/' '+s/^[^ ]\{81,\}//'"
+lazy-highlight-cleanup () {
+  echo -ne '\e[?25h'

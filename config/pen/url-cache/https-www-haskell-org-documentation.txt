@@ -1,0 +1,191 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 07 Apr 2022 11:07:47 GMT
+Content-Type: text/html
+Content-Length: 11271
+Last-Modified: Thu, 01 Jan 1970 00:00:01 GMT
+Connection: keep-alive
+ETag: "1-2c07"
+Accept-Ranges: bytes
+
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Documentation</title>
+      <meta charset="utf-8">
+      <meta content="IE edge" http-equiv="X-UA-Compatible">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <meta content="haskell,functional,pure,programming,lazy" name="keywords">
+      <meta content="The Haskell purely functional programming language home page." name="description">
+      <link href="../img/favicon.ico" rel="shortcut icon">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Raleway:700,900|Ubuntu+Mono:400" type="text/css" rel="stylesheet">
+      <link href="../css/hl.css" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+   </head>
+   <body class="page-documentation">
+     <div class="wrap">
+       
+       <div class="template">
+       
+
+         <nav class="navbar navbar-default">
+   <div class="container">
+      <div class="navbar-header">
+        <button data-toggle="collapse" data-target="#haskell-menu" class="navbar-toggle collapsed"><span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        
+        <a href="../" class="navbar-brand"><span class="logo"><img src="../img/haskell-logo.svg"></span></a>
+        
+      </div>
+      <div id="haskell-menu" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="../downloads/">Downloads</a></li>
+            <li><a href="../community/">Community</a></li>
+            <li class="active"><a href="../documentation/">Documentation</a></li>
+            <li><a href="../donations/">Donate</a></li>
+         </ul>
+      </div>
+   </div>
+</nav>
+
+
+         
+         <div class=" container ">
+           <div class=" row ">
+              <div class=" span12 col-sm-12">
+         
+
+         <h1 id="documentation">Documentation</h1>
+<p>This page lists various resources to help you with Haskell. Resources marked with [$] require payment.</p>
+<p>If you are new to Haskell and are not sure where to start from, we recommend <a href="https://www.seas.upenn.edu/~cis194/spring13/lectures.html">CIS194</a>. CIS194 is the introductory Haskell course of the University of Pennsylvania; it is free, thorough, practical and will guide you from the basics to advanced features of the language.</p>
+<h2 id="introductory-books-for-learning-haskell">Introductory Books for Learning Haskell</h2>
+<ul>
+<li>[$] <a href="https://www.haskellfromtheverybeginning.com/">Haskell from the Very Beginning</a></li>
+<li><a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good!</a></li>
+<li><a href="http://book.realworldhaskell.org/">Real World Haskell</a></li>
+<li>[$] <a href="http://haskellbook.com">Haskell Programming from first principles</a></li>
+<li>[$] <a href="http://www.apress.com/9781430262503">Beginning Haskell</a></li>
+<li>[$] <a href="http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/thinking-functionally-haskell">Thinking Functionally with Haskell</a></li>
+<li>[$] <a href="http://www.cs.nott.ac.uk/~pszgmh/pih.html">Programming in Haskell</a></li>
+<li>[$] <a href="http://www.haskellcraft.com/craft3e/Home.html">Haskell: The Craft of Functional Programming</a></li>
+<li>[$] <a href="http://euterpea.com/haskell-school-of-music/">The Haskell School of Music</a></li>
+<li>[$] <a href="https://www.manning.com/books/get-programming-with-haskell">Get Programming with Haskell</a></li>
+<li><a href="https://lhbg-book.link">Learn Haskell by building a blog generator</a></li>
+<li>[$] <a href="https://www.pragprog.com/titles/rshaskell/effective-haskell/">Effective Haskell (beta)</a></li>
+</ul>
+<h2 id="intermediate-haskell-books">Intermediate Haskell Books</h2>
+<ul>
+<li><a href="http://www.yesodweb.com/book">Developing Web Applications with Haskell and Yesod</a></li>
+<li>[$] <a href="https://www.manning.com/books/functional-design-and-architecture">Functional Design and Architecture</a></li>
+<li>[$] <a href="https://www.manning.com/books/haskell-in-depth">Haskell in Depth</a></li>
+<li><a href="https://simonmar.github.io/pages/pcph.html">Parallel and Concurrent Programming in Haskell</a></li>
+<li>[$] <a href="https://www.apress.com/gp/book/9781484244791">Practical Haskell</a></li>
+<li>[$] <a href="https://leanpub.com/production-haskell">Production Haskell</a></li>
+</ul>
+<h2 id="courses">Courses</h2>
+<p>Course material created by instructors</p>
+<ul>
+<li><a href="https://www.seas.upenn.edu/~cis194/">University of Pennsylvania’s CIS 194</a></li>
+<li><a href="https://github.com/data61/fp-course">Data61 Functional Programming Course</a></li>
+<li><a href="http://shuklan.com/haskell/">University of Virginia’s CS 1501</a></li>
+<li><a href="http://www.scs.stanford.edu/14sp-cs240h/">Stanford’s cs240h</a></li>
+<li><a href="http://ozark.hendrix.edu/~yorgey/360/f16/">Hendrix’s CSCI 360</a></li>
+</ul>
+<h2 id="tutorials">Tutorials</h2>
+<p>Short, dense, classic ways to hit the ground running</p>
+<ul>
+<li><a href="https://www.haskell.org/tutorial/">A Gentle Introduction to Haskell</a></li>
+<li><a href="https://www.happylearnhaskelltutorial.com/">Happy Learn Haskell Tutorial</a></li>
+<li><a href="http://en.wikibooks.org/wiki/Haskell/YAHT/Preamble">Yet Another Haskell Tutorial</a></li>
+<li><a href="http://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours">Write Yourself a Scheme in 48 Hours</a></li>
+<li><a href="https://wespiser.com/writings/wyas/home.html">Write Yourself a Scheme 2.0</a></li>
+<li><a href="http://learn.hfm.io">Learning Haskell</a></li>
+</ul>
+<h2 id="online-resources">Online Resources</h2>
+<p>Curated resources put together by Haskellers:</p>
+<ul>
+<li><a href="http://wiki.haskell.org">The Haskell Wiki</a></li>
+<li><a href="http://en.wikibooks.org/wiki/Haskell">The Haskell Wikibook</a></li>
+<li><a href="https://www.schoolofhaskell.com/">FP Complete’s School of Haskell</a></li>
+<li><a href="http://dev.stephendiehl.com/hask/">Stephen Diehl’s What I Wish I Knew When Learning Haskell</a></li>
+<li><a href="https://github.com/bitemyapp/learnhaskell">Chris Allen’s List of Learning Haskell Resources</a></li>
+<li><a href="http://bob.ippoli.to/archives/2013/01/11/getting-started-with-haskell/">Bob Ippolito’s Getting Started with Haskell</a></li>
+<li><a href="http://www.vex.net/~trebla/haskell/index.xhtml">Albert Y.C. Lai’s Haskell Notes and Examples</a></li>
+<li><a href="https://wiki.haskell.org/Learning_Haskell">Learning Haskell Resources on the Haskell Wiki</a></li>
+</ul>
+<h2 id="manuals-and-guides">Manuals and Guides</h2>
+<p>Manuals and guides that cover common Haskell tooling:</p>
+<ul>
+<li><a href="http://www.haskell.org/ghc/docs/latest/html/users_guide/">GHC User’s Guide</a></li>
+<li><a href="https://www.haskell.org/cabal/">Cabal Homepage And Quick Links</a></li>
+<li><a href="http://www.haskell.org/cabal/users-guide/">Cabal User Guide</a></li>
+<li><a href="https://docs.haskellstack.org/">Stack User Guide</a></li>
+<li><a href="https://haskell-haddock.readthedocs.io/">Haddock User Guide</a></li>
+<li><a href="http://taylor.fausak.me/2014/03/04/haskeleton-a-haskell-project-skeleton/">Haskeleton: A Haskell Project Skeleton</a></li>
+<li><a href="https://wiki.haskell.org/How_to_write_a_Haskell_program">How to Write a Haskell Program</a></li>
+</ul>
+<h2 id="package-and-dependency-management">Package and Dependency Management</h2>
+<p>The Cabal guide is a good start but there’s a lot to learn:</p>
+<ul>
+<li><a href="http://dev.stephendiehl.com/hask/#cabal">Stephen Diehl’s Cabal Quickstart</a></li>
+<li><a href="http://www.vex.net/~trebla/haskell/sicp.xhtml">The Storage and Interpretation of Cabal Packages</a></li>
+<li><a href="http://www.vex.net/~trebla/haskell/cabal-cabal.xhtml">The Cabal of Cabal</a></li>
+</ul>
+<h2 id="library-documentation">Library Documentation</h2>
+<p>Documentation for Haskell libraries is typically available on Hackage. We also have specialized tools for searching across it, not only by name, but by type.</p>
+<ul>
+<li><a href="http://www.haskell.org/hoogle/">Hoogle API Search</a></li>
+<li><a href="http://hackage.haskell.org/">Hackage</a></li>
+<li><a href="https://www.stackage.org">Stackage (with API Search)</a></li>
+<li><a href="https://wiki.haskell.org/Typeclassopedia">The Typeclassopedia</a></li>
+<li><a href="https://downloads.haskell.org/~ghc/latest/docs/html/libraries/index.html">Haddocks for Libraries included with GHC</a></li>
+</ul>
+<h2 id="language-report">Language Report</h2>
+<p>The Haskell 2010 language report is available online as <a href="https://haskell.org/onlinereport/haskell2010/">HTML</a> and as <a href="https://haskell.org/definition/haskell2010.pdf">PDF</a>.</p>
+<p>It can also be downloaded as a git repository:</p>
+<pre><code>$ git clone -b h2010 https://github.com/haskell/haskell-report</code></pre>
+<p>The differences between GHC and the report can be found <a href="http://www.haskell.org/ghc/docs/latest/html/users_guide/bugs.html#haskell-standards-vs-glasgow-haskell-language-non-compliance">in the GHC User’s Guide</a>.</p>
+
+         
+             </div>
+           </div>
+         </div>
+         
+
+       
+       </div>
+       
+     </div>
+     <div class="footer">
+        <div class="container">
+           <p>
+           <div class=" container ">
+              <div class=" row ">
+                 <div class=" span3 col-sm-4 col-md-3"><span class="item">© 2014–2022 haskell.org</span></div>
+                 <div class=" span12 col-xs-12 visible-xs"><br></div>
+                 <div class=" span8 col-sm-4 col-md-6 text-center"><br class="visible-xs"><span class="item">Got changes to contribute to the site? </span><br class="visible-xs"><a href="https://github.com/haskell-infra/www.haskell.org/">Fork or comment on GitHub</a><br class="visible-xs"></div>
+                 <div class=" span12 col-xs-12 visible-xs"><br></div>
+                 <div class=" span3 col-sm-6 col-md-3 text-right"><span>Hosted on </span><a href="https://metal.equinix.com/"><img style="margin-left: 0.25em;" height="20" src="../img/EM-Horizontal-White.svg" alt="Equinix Metal"></a></div>
+                 <div class=" span12 col-sm-12"><br></div>
+              </div>
+           </div>
+           </p>
+        </div>
+     </div>
+     <script src="../js/jquery.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <script src="../js/home.js"></script>
+     <script src="../js/jquery.console.js"></script>
+     <script src="../js/tryhaskell.js"></script>
+     <script src="../js/tryhaskell.pages.js"></script>
+     <script>var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-83290513-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+     </script>
+   </body>
+</html>

@@ -1,0 +1,3 @@
+cd /volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets;  "show-pic" "/volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets/KestrelLogoRepoHeader.png" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets;  "show-pic" "/volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets/KestrelLogoRepoHeader.png" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets;  "show-pic" "/volumes/home/shane/var/smulliga/source/git/Evocation-Games/KestrelEngine/support/assets/KestrelLogoRepoHeader.png" "#" "<==" "bash"

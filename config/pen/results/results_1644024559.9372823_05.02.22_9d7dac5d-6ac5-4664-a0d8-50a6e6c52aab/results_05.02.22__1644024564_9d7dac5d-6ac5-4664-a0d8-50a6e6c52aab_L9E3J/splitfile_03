@@ -1,0 +1,8 @@
+
+]
+build-backend = "setup.py build_ext --inplace"
+install-requires = [
+    "setuptools>=42",
+]
+entry-points = """
+console_scripts =

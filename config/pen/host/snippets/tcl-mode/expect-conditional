@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: expect-conditional
+# key: cond
+# --
+expect {
+"> " { }
+"$ " { }
+"assword: " {
+send "$password\n"
+expect {
+"> " { }
+"$ " { }
+}
+}
+"(yes/no)? " {
+send "yes\n"
+expect {
+"> " { }
+"$ " { }
+}
+}
+default {
+send_user "Login failed\n"
+exit
+}
+}

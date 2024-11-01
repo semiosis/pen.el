@@ -1,0 +1,58 @@
+
+You can make your website perform better by making it load faster.
+###
+
+A:
+
+I think that "once you have a good idea of how your website is performing, you can make it better by tweaking the website to improve its performance." is not a very good sentence.
+I think that "You can make your website perform better by making it load faster." is better.
+
+A:
+
+You could also consider "Once you have a good idea of how your website is performing, you can make it better by tweaking the website to improve its performance."
+This is the same, but it's more clear that you mean to make it load faster, and not just to make it perform better.
+
+<|endoftext|>Q:
+
+Why is the following code not working as expected with a custom comparer
+
+I am using a custom comparer to sort a List.I have the following code:
+class MyComparer : IComparer<MyType>
+{
+public int Compare(MyType x, MyType y)
+{
+return string.Compare(x.Name, y.Name);
+}
+}
+
+The following is the code that calls the custom comparer:
+var myList = new List<MyType>(...);
+myList.Sort(new MyComparer());
+
+The sort is not working as expected.It is sorting by the first letter of the name.
+
+A:
+
+You need to implement IComparable<MyType> instead of IComparer<MyType>.
+You need to use the Sort method that is defined on the ICollection<T> interface, not the List<T> interface.
+
+So your code should become:
+class MyComparer : IComparer<MyType>
+{
+public int Compare(MyType x, MyType y)
+{
+return string.Compare(x.Name, y.Name);
+}
+
+public int Compare(object x, object y)
+{
+// If x and y are both null, return 0.
+if (x == null && y == null)
+return 0;
+
+// If x is null, return -1.
+if (x == null)
+return -1;
+
+// If y is null, return 1.
+

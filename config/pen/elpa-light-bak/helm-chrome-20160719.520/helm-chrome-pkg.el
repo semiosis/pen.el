@@ -1,0 +1,2 @@
+;;; Generated package description from helm-chrome.el  -*- no-byte-compile: t -*-
+(define-package "helm-chrome" "20160719.520" "Helm interface for Chrome bookmarks" '((helm "1.5") (cl-lib "0.3") (emacs "24")) :commit "fd630ace4b4b4f33355a973743bbfe0c90ce4830" :authors '(("KAWABATA, Taichi <kawabata.taichi_at_gmail.com>")) :maintainer '("KAWABATA, Taichi <kawabata.taichi_at_gmail.com>") :keywords '("tools") :url "https://github.com/kawabata/helm-chrome")

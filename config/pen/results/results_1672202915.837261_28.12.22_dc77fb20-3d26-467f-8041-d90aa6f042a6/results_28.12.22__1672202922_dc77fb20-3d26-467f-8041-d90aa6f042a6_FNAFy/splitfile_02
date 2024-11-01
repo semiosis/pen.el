@@ -1,0 +1,14 @@
+
+endf
+
+fun! ReselectVisual()
+
+" Delete any selection
+
+" Delete any existing visual selection
+
+" If there is no selection
+
+" If there is a visual selection
+
+" If there is no selection

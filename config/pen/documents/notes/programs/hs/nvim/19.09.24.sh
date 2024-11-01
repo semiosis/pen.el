@@ -1,0 +1,1 @@
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" 'env' 'COLORTERM=truecolor' 'TERM=xterm-24bit' 'EMACS_TERM_TYPE=xterm-24bit' 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

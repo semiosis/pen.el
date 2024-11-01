@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "elinks-dump-chrome" "-orefs" "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=0" "#" "<==" "leading-the-way"
+cd /root/.emacs.d/host/pen.el/src;  "elinks-dump-chrome" "-orefs" "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=1" "#" "<==" "leading-the-way"
+cd /root/.emacs.d/host/pen.el/src;  "elinks-dump-chrome" "-orefs" "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=2" "#" "<==" "leading-the-way"
+cd /root/.emacs.d/host/pen.el/src;  "elinks-dump-chrome" "-orefs" "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=3" "#" "<==" "leading-the-way"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks-dump-chrome" "https://star.net.nz/the-word-for-today" "#" "<==" "withopts"

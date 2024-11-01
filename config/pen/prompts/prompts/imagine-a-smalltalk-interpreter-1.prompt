@@ -1,0 +1,13 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: interpreter
+language: smalltalk
+prompt: |+
+    GNU Smalltalk ready
+    
+    st> <expression>
+user-prompt: "^st> "
+vars:
+- "expression"
+examples:
+- "5 + 5"

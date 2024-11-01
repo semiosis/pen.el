@@ -1,0 +1,7 @@
+# key: regex
+# name: regex
+# --
+(regexp-match #rx"(c*)(a*)" "caat")
+(regexp-match #px"(c*)(a*)" "caat")
+(regexp-match #px"(c*)(a*)" "caat")
+(regexp-match #px"(c*)a*" "caat")

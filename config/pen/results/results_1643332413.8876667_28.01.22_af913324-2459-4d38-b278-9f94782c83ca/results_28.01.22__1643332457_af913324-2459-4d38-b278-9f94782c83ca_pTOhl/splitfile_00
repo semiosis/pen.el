@@ -1,0 +1,6 @@
+, mi, hf, mf = input().split()
+hi = int(hi)
+mi = int(mi)
+hf = int(hf)
+mf = int(mf)
+if hi <

@@ -1,0 +1,9 @@
+neuroevolution
+neuro-evolution
+    A form of artificial intelligence that
+    uses evolutionary algorithms to generate
+    ANNs, parameters, topology and rules.
+    
+    It is most commonly applied in artificial
+    life, general game playing and
+    evolutionary robotics.

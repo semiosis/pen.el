@@ -1,0 +1,1 @@
+ PEN MODEL DummyModel prompt Once upon n 1 top k 1 top p 1 log probs 10 stop sequences delim delim maximum tokens 59 temperature 0 8 presence penalty 0 frequency penalty 0 

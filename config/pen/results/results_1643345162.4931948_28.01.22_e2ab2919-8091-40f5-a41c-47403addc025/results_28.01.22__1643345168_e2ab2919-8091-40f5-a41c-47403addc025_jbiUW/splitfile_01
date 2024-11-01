@@ -1,0 +1,10 @@
+"async/alt!" is a macro that takes a channel and a transformation function.
+It will create a new channel and pass the transformed value to the new channel.
+
+(async/alt! ch (fn [val] (println val)))
+
+The above will pass the value to the channel and print it to the console.
+
+(async/alt! ch (fn [val] (println val) :done))
+
+The above will print the value to the console, then close the

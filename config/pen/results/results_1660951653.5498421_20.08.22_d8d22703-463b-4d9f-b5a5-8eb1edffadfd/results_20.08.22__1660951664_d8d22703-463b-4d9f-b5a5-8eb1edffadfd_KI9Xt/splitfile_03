@@ -1,0 +1,25 @@
+
+#
+# This playbook will:
+# - create a Library if it doesn't already exist
+# - create a Collection if it doesn't already exist
+# - create a CollectionVersion if it doesn't already exist
+# - create a CollectionVersion if the sync source is newer than the last sync date
+#   of the CollectionVersion
+# - update the CollectionVersion's metadata with data from the sync source
+# - add all content from the sync source to the Library's root CollectionVersion
+# - update the last sync date of the CollectionVersion to match that of the sync source
+EOD
+cat <<EOD >> draft.yaml
+- hosts: localhost
+  connection: local
+
+  vars_files:
+    - "{{ playbook_dir }}/vars/common.yaml"
+
+  roles:
+    - role: "{{ role }}"
+
+  tasks:
+
+    # Create a Library if it doesn't already

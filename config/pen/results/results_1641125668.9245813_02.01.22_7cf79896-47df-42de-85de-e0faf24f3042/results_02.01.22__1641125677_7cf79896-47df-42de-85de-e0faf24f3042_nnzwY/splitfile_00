@@ -1,0 +1,11 @@
+- 1. Adrienne Rich (1932-)
+- 2. bell hooks (1941-)
+- 3. Carol Hanisch (1947-)
+"""
+
+def test_documents_list_loading(documents_list):
+    assert len(documents_list) == 3
+
+
+def test_document_model(document):
+    assert document.name == "

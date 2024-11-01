@@ -1,0 +1,27 @@
+
+
+This is a test post.
+
+EOD
+
+# org files
+
+cat draft.org <<EOD
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Marry Me Melee 2
+#+DATE: <2022-08-10>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: melee, 2nd post, testing, etc.
+
+ This is a test post.
+
+ This is another test post.
+
+ This is a third test post.
+
+ EOD

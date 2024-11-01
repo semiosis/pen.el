@@ -1,0 +1,13 @@
+name: "Tome"
+
+proto:
+- ext: scribe
+- repo: scribes
+
+meta:
+- ext: scroll
+- repo: scrolls
+
+actual:
+- ext: tome
+- repo: tomes

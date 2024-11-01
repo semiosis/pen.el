@@ -1,0 +1,1725 @@
+HTTP/1.1 200 OK
+Date: Thu, 21 Mar 2024 09:49:09 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1711014549&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=jDk2zp8Rd1G7Khibm00CtYwU9jcDYDCoE0Duy6uhPLs%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711014549&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=jDk2zp8Rd1G7Khibm00CtYwU9jcDYDCoE0Duy6uhPLs%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Status: 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Vary: Accept-Encoding, Origin
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block
+X-Request-Id: 2d2753cc-ab6a-4f81-ad55-0799d0a6702b
+X-App-Commit: 9ae9129e
+X-App-Release: v25389
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Runtime: 0.376288
+X-Content-Type-Options: nosniff
+X-Rack-Cache: miss
+Set-Cookie: _session=cjlxM0NvNWd6ZGJzOWR6OWxCMytMWGVYVkQ5WGJTMFZmMXBBNjkzZE1xdE1ZZThSS1U2SHcxQ2xLQTFzWEo2WmZPelVFZWxyWGQ5L1YzTHNEMXVPL3lTN25vWXpLcjRWMkwvMXpsVTJway9keXRUd1MxWGVEYmV2eFlaT2RqeHdDdVJKMmZSVkhpNXRQVFZLYU1reVlwQXRaVjd5OVZxb29yT2hiMHVLaEVzWUZGazZmU2lRaXN6dFp4WmhEK09OLS1wcHlEc0VsaFZEaHlBcFJZV25XaFB3PT0%3D--c2143eb4188e8134902db83373566a8fe3a60ba6; domain=.shinetv.co.nz; path=/; expires=Fri, 21 Mar 2025 09:49:09 GMT; secure; HttpOnly; SameSite=Lax
+X-Powered-By: Phusion Passenger(R)
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Set-Cookie: __cf_bm=EVD2mjKwQ7Tlc.Hi3pXl5x7YxD2vAlXhNNEw4tsBQIo-1711014549-1.0.1.1-jHwqzEVHxfG2oGhaUP5jaXhnnyTkO_uUGFCW.kcJLv0LEMq4muOUucvDRMmDBaDkUU7aX1Zn1yU4ejF27oeZnQ; path=/; expires=Thu, 21-Mar-24 10:19:09 GMT; domain=.www.shinetv.co.nz; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 867d07c44b19a801-SYD
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" xml:lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" xml:lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" xml:lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" xml:lang="en"> <!--<![endif]-->
+<head lang="en" xml:lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="https://dr56wvhu2c8zo.cloudfront.net/rhemamedia/assets/bd1224d4-9a53-4fc3-8267-fb9d4b4a38f2.png" type="image/png">
+
+    <meta name="apple-itunes-app" content="app-id=1547598454, app-argument=https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1">
+
+
+  <title>John Lennox - Part 1 - A Very Tall Man Uk - Shine TV</title>
+  <meta name="description" content="Today’s guest is an Irish Professor Emeritus of Mathematics from Oxford University, and one of the world’s best known Christian apologists, though as Professor John Lennox told Gary, he’s not apologising for anything.">
+  <link rel="canonical" href="https://www.shinetv.co.nz/videos/averytallmanuk-johnlennox-pt1" />
+
+  
+
+    <meta property="og:url" content="https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1/videos/averytallmanuk-johnlennox-pt1">
+    <meta property="fb:app_id" content="136862186391940">
+    <meta property="og:title" content="John Lennox - Part 1 - A Very Tall Man Uk - Shine TV">
+    <meta property="og:site_name" content="Shine TV">
+    <meta property="og:image" content="https://vhx.imgix.net/rhemamedia/assets/2a4999c6-040a-441e-be0f-dff8623025a4.jpg?auto=format%2Ccompress&fit=crop&h=720&w=1280">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:description" content="Today’s guest is an Irish Professor Emeritus of Mathematics from Oxford University, and one of the world’s best known Christian apologists, though as Professor John Lennox told Gary, he’s not apologising for anything.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Lennox - Part 1 - A Very Tall Man Uk - Shine TV">
+    <meta name="twitter:description" content="Today’s guest is an Irish Professor Emeritus of Mathematics from Oxford University, and one of the world’s best known Christian apologists, though as Professor John Lennox told Gary, he’s not apologising for anything.">
+    <meta name="twitter:image" content="https://vhx.imgix.net/rhemamedia/assets/2a4999c6-040a-441e-be0f-dff8623025a4.jpg?auto=format%2Ccompress&fit=crop&h=720&w=1280">
+    <meta name="twitter:image:width" content="1280">
+    <meta name="twitter:image:height" content="720">
+
+
+
+<link rel="author" href="/humans.txt">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="IJC2Y4UYC909sBNfRsT5U/JmKvE6BoJ/4nBX9lE5HuJDxCzBmf6bzEr3q5N9Dh+J6DuCvfWUhro8hgdugVF0yg==" />
+
+
+    <!-- apple / android  -->
+  <meta name="mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-title" content="Shine TV">
+  <!-- microsoft tile color -->
+  <meta name="msapplication-TileColor" content="#f18700">
+  <!-- android browser bar color -->
+  <meta name="theme-color" content="#f18700">
+
+    <!-- apple and other browsers -->
+    <link rel="apple-touch-icon" sizes="57x57"    href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=57&w=57">
+    <link rel="apple-touch-icon" sizes="114x114"  href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=114&w=114">
+    <link rel="apple-touch-icon" sizes="72x72"    href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=72&w=72">
+    <link rel="apple-touch-icon" sizes="144x144"  href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=144&w=144">
+    <link rel="apple-touch-icon" sizes="60x60"    href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=60&w=60">
+    <link rel="apple-touch-icon" sizes="120x120"  href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=120&w=120">
+    <link rel="apple-touch-icon" sizes="76x76"    href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=76&w=76">
+    <link rel="apple-touch-icon" sizes="152x152"  href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=152&w=152">
+    <link rel="apple-touch-icon" sizes="180x180"  href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=180&w=180">
+    <!-- windows tile -->
+    <meta name="msapplication-TileImage" content="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=144&w=144">
+    <!-- android icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=32&w=32">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://vhx.imgix.net/rhemamedia/assets/b172fb15-7683-4dc4-bd55-cf9419d819fd.png?fm=png&q=16&w=16">
+
+
+    
+
+
+  <link rel="stylesheet" media="all" href="https://cdn.vhx.tv/assets/webpack/icons.svg-ottbundle-d623b35c7e3be9722fa8.css" />
+  <link rel="stylesheet" media="all" href="https://cdn.vhx.tv/assets/webpack/sites-ottbundle-626f6d34d3432b87cfcb.css" />
+
+      <link rel="stylesheet" media="all" href="https://cdn.vhx.tv/assets/webpack/device-limit-player-ottbundle-bf5f2df3061f96958c2b.css" />
+  <link rel="stylesheet" media="all" href="https://cdn.vhx.tv/assets/webpack/videos-ottbundle-32807b0200f0081186af.css" />
+  <script>
+  var disableInputOnSubmit = function(el) {
+    if (document.createElement('div').setAttribute && typeof(document.getElementsByClassName) !== 'undefined')  {
+      el.getElementsByClassName('comment-submit')[0].setAttribute('disabled','disabled');
+    }
+  }
+</script>
+
+
+
+    <link rel="stylesheet" media="screen" href="https://cdn.vhx.tv/assets/templates/_shared/typography.cabin-3bf68dd13d2221ffbd04f997f0f6249994683fed079914a0ce21bd419fde9158.css" />
+
+<style>
+
+
+  /* main colors */
+  .site-background-color {
+    background-color: #141414 !important;
+  }
+  .site-primary-highlight-color {
+    background: #f18700 !important;
+  }
+  .site-primary-color,
+  strong.site-primary-color,
+  .site-primary-color strong,
+  a.site-primary-color:link,
+  a.site-primary-color:visited {
+    color: #f18700 !important;
+  }
+  a.site-primary-color:hover,
+  a.site-primary-color:active {
+    color: #cd7300 !important;
+  }
+
+  .site-border-color,
+  .site-border-color.border-light {
+    border-color: #323232 !important;
+  }
+  .site-border-primary-color,
+  .site-border-primary-color.border-light {
+    border-color: #f18700 !important;
+  }
+
+  /* custom font primary family */
+  .site-font-primary-family {
+    font-family: 'cabin', sans-serif !important;
+  }
+
+  /* font primary color */
+  .site-font-primary-color,
+  .site-font-primary-color strong {
+    color: #ffffff !important;
+  }
+
+  /* font secondary color */
+  .site-font-secondary-color,
+  .site-font-secondary-color strong {
+    color: #bebebb !important;
+  }
+
+  /* link primary color */
+  a.site-link-primary-color:link,
+  a.site-link-primary-color:visited,
+  a.site-link-primary-color strong {
+    color: #ffffff !important;
+  }
+  a.site-link-primary-color:hover,
+  a.site-link-primary-color:active {
+    color: #d9d9d9 !important;
+    opacity: .7;
+  }
+  .site-link-primary-color-contain a:link,
+  .site-link-primary-color-contain a:visited {
+    color: #f18700 !important;
+  }
+  .site-link-primary-color-contain a:hover,
+  .site-link-primary-color-contain a:active {
+    color: #cd7300 !important;
+    opacity: .7;
+  }
+
+  /* link secondary color */
+  .pagination a,
+  a.site-link-secondary-color:link,
+  a.site-link-secondary-color:visited,
+  a.site-link-secondary-color strong,
+  .site-link-secondary-color-contain a:link,
+  .site-link-secondary-color-contain a:visited {
+    color: #7c7c7c;
+  }
+  .pagination a:hover,
+  a.site-link-secondary-color:hover,
+  a.site-link-secondary-color:active,
+  .site-link-secondary-color-contain a:hover,
+  .site-link-secondary-color-contain a:active {
+    color: #696969;
+    opacity: .7;
+  }
+
+  /* link underline font primary color */
+  .site-link-contain a:link,
+  .site-link-contain a:visited {
+    color: #ffffff !important;
+    text-decoration: underline;
+  }
+  .site-link-contain a:hover,
+  .site-link-contain a:active {
+    color: #ffffff !important;
+    opacity: .7;
+    text-decoration: underline;
+  }
+
+  /* border color same as primary color */
+  .site-border-primary-color {
+    border-color: #ffffff !important;
+  }
+  .site-border-top-primary-color {
+    border-top-color: #ffffff !important;
+  }
+  .site-border-bottom-primary-color {
+    border-bottom-color: #ffffff !important;
+  }
+  .site-border-left-primary-color {
+    border-left-color: #ffffff !important;
+  }
+  .site-border-right-primary-color {
+    border-right-color: #ffffff !important;
+  }
+
+  /* link header color */
+  a.site-link-header-color:link,
+  a.site-link-header-color:visited,
+  a.site-link-header-color:link strong,
+  a.site-link-header-color:visited strong {
+    color: #030303 !important;
+  }
+  a.site-link-header-color:hover,
+  a.site-link-header-color:active {
+    color: #030303;
+    opacity: .7;
+  }
+ .avatar-chevron.icon {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpolygon%20fill%3D%22%23000000%22%20points%3D%2222.9%2C7.2%2020%2C4.4%2011.5%2C12.9%203%2C4.4%200.1%2C7.2%208.7%2C15.7%208.7%2C15.7%2011.5%2C18.6%2011.5%2C18.6%2011.5%2C18.6%2014.3%2C15.7%2014.3%2C15.7%20%22%2F%3E%3C%2Fsvg%3E%0A");
+    background-repeat: no-repeat;
+  }
+  .user-dropdown a:hover {
+    background-color: rgba(1,1,1,0.2);
+    color: #fff;
+  }
+  .user-dropdown input {
+    background-color: #030303;
+  }
+  .user-dropdown input:hover {
+    background-color: rgba(1,1,1,0.2);
+    color: #fff;
+  }
+
+  /* buttons site primary */
+  .btn-site-primary,
+  .btn-site-primary:link,
+  .btn-site-primary:visited {
+    color: #000;
+    border-color: #cd7300;
+    background-color: #f18700;
+  }
+  .btn-site-primary:hover,
+  .btn-site-primary.is-hover,
+  .btn-site-primary:focus,
+  .btn-site-primary:focus:hover,
+  .btn-site-primary:active,
+  .btn-site-primary.is-active {
+    border-color: #cd7300;
+    background-color: #cd7300;
+    color: #000;
+  }
+
+  .btn-site-primary[disabled],
+  .btn-site-primary.is-disabled,
+  .btn-site-primary[disabled]:visited,
+  .btn-site-primary.is-disabled:visited,
+  .btn-site-primary[disabled]:hover,
+  .btn-site-primary.is-disabled:hover,
+  .btn-site-primary[disabled].is-hover,
+  .btn-site-primary.is-disabled.is-hover,
+  .btn-site-primary[disabled]:active,
+  .btn-site-primary.is-disabled:active,
+  .btn-site-primary[disabled]:focus,
+  .btn-site-primary.is-disabled:focus,
+  .btn-site-primary[disabled]:focus:hover,
+  .btn-site-primary.is-disabled:focus:hover,
+  .btn-site-primary[disabled].is-active,
+  .btn-site-primary.is-disabled.is-active {
+    opacity: .5;
+    background-color: #f18700;
+    color: #000;
+    border-color: #cd7300;
+  }
+
+  /* buttons site secondary */
+  .btn-site-secondary,
+  .btn-site-secondary:link,
+  .btn-site-secondary:visited {
+    color: #bebebb;
+    border-color: #141414;
+    background-color: #323232;
+  }
+  .btn-site-secondary:hover,
+  .btn-site-secondary.is-hover,
+  .btn-site-secondary:focus,
+  .btn-site-secondary:active,
+  .btn-site-secondary.is-active {
+    color: #5f5f5e;
+    border-color: #0f0f0f;
+    background-color: #323232;
+  }
+
+  .btn-site-primary.is-processing,
+  .btn-site-secondary.is-processing {
+    color: transparent !important;
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23000000%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E');
+  }
+
+  /* buttons dropdown */
+  .btn-dropdown-site,
+  .btn-dropdown-site:link,
+  .btn-dropdown-site:visited {
+    color: #000000;
+    border-color: #f18700;
+    background-color: #f18700;
+  }
+  .btn-dropdown-site:hover,
+  .btn-dropdown-site.is-hover,
+  .btn-dropdown-site:focus,
+  .btn-dropdown-site:active,
+  .btn-dropdown-site.is-active {
+    border-color: #f18700;
+    background-color: #cd7300;
+  }
+
+  .site-btn-block,
+  .site-btn-block:link,
+  .site-btn-block:visited {
+    color: #ffffff;
+  }
+
+  .site-btn-block:hover,
+  .site-btn-block.is-hover,
+  .site-btn-block.is-active,
+  .site-btn-block:active {
+    box-shadow: inset 0px -4px 0px #ffffff;
+  }
+
+  .site-form-color input[type="email"],
+  .site-form-color input[type="text"],
+  .site-form-color input[type="search"],
+  .site-form-color input[type="password"],
+  .site-form-color input[type="tel"],
+  .site-form-color textarea {
+    color: #323232 !important;
+    border-color: #696969 !important;
+    background-color:  #fcfcfc !important;
+  }
+  .site-form-color label,
+  .site-form-color-minimal input[type="email"],
+  .site-form-color-minimal input[type="text"],
+  .site-form-color-minimal input[type="search"],
+  .site-form-color-minimal input[type="password"],
+  .site-form-color-minimal textarea {
+    color: #ffffff;
+    background: transparent !important;
+  }
+  .site-form-color input[type="text"]:focus,
+  .site-form-color input[type="search"]:focus,
+  .site-form-color input[type="password"]:focus,
+  .site-form-color input[type="tel"]:focus,
+  .site-form-color textarea:focus {
+    border-color: #7c7c7c !important;
+  }
+
+  .site-form-color input[type="text"]::-webkit-input-placeholder,
+  .site-form-color-minimal input[type="text"]::-webkit-input-placeholder,
+  .site-form-color input[type="email"]::-webkit-input-placeholder,
+  .site-form-color-minimal input[type="email"]::-webkit-input-placeholder,
+  .site-form-color input[type="search"]::-webkit-input-placeholder,
+  .site-form-color-minimal input[type="search"]::-webkit-input-placeholder,
+  .site-form-color input[type="password"]::-webkit-input-placeholder,
+  .site-form-color-minimal input[type="password"]::-webkit-input-placeholder,
+  .site-form-color input[type="tel"]::-webkit-input-placeholder,
+  .site-form-color-minimal input[type="tel"]::-webkit-input-placeholder,
+  .site-form-color textarea::-webkit-input-placeholder,
+  .site-form-color-minimal textarea::-webkit-input-placeholder {
+    color: #323232 !important;
+    opacity: .5;
+  }
+  .site-form-color input[type="text"]::-moz-input-placeholder,
+  .site-form-color-minimal input[type="text"]::-moz-input-placeholder,
+  .site-form-color input[type="email"]::-moz-input-placeholder,
+  .site-form-color-minimal input[type="email"]::-moz-input-placeholder,
+  .site-form-color input[type="search"]::-moz-input-placeholder,
+  .site-form-color-minimal input[type="search"]::-moz-input-placeholder,
+  .site-form-color input[type="password"]::-moz-input-placeholder,
+  .site-form-color-minimal input[type="password"]::-moz-input-placeholder,
+  .site-form-color input[type="tel"]::-moz-input-placeholder,
+  .site-form-color-minimal input[type="tel"]::-moz-input-placeholder,
+  .site-form-color textarea::-moz-input-placeholder,
+  .site-form-color-minimal textarea::-moz-input-placeholder {
+    color: #323232 !important;
+    opacity: .5;
+  }
+
+  .site-form-color input[type="text"]:-moz-input-placeholder,
+  .site-form-color-minimal input[type="text"]:-moz-input-placeholder,
+  .site-form-color input[type="email"]:-moz-input-placeholder,
+  .site-form-color-minimal input[type="email"]:-moz-input-placeholder,
+  .site-form-color input[type="search"]:-moz-input-placeholder,
+  .site-form-color-minimal input[type="search"]:-moz-input-placeholder,
+  .site-form-color input[type="password"]:-moz-input-placeholder,
+  .site-form-color-minimal input[type="password"]:-moz-input-placeholder,
+  .site-form-color input[type="tel"]:-moz-input-placeholder,
+  .site-form-color-minimal input[type="tel"]:-moz-input-placeholder,
+  .site-form-color textarea:-moz-input-placeholder,
+  .site-form-color-minimal textarea:-moz-input-placeholder {
+    color: #323232 !important;
+    opacity: .5;
+  }
+
+  .site-form-color input[type="text"]:-ms-input-placeholder,
+  .site-form-color-minimal input[type="text"]:-ms-input-placeholder,
+  .site-form-color input[type="email"]:-ms-input-placeholder,
+  .site-form-color-minimal input[type="email"]:-ms-input-placeholder,
+  .site-form-color input[type="search"]:-ms-input-placeholder,
+  .site-form-color-minimal input[type="search"]:-ms-input-placeholder,
+  .site-form-color input[type="password"]:-ms-input-placeholder,
+  .site-form-color-minimal input[type="password"]:-ms-input-placeholder,
+  .site-form-color input[type="tel"]:-ms-input-placeholder,
+  .site-form-color-minimal input[type="tel"]:-ms-input-placeholder,
+  .site-form-color textarea:-ms-input-placeholder,
+  .site-form-color-minimal textarea:-ms-input-placeholder {
+    color: #323232 !important;
+    opacity: .5;
+  }
+
+  .site-form-color .radio label .radio--icon {
+    border-color: #bebebb !important;
+  }
+  .site-form-color .radio.primary .circle-top span {
+    background: #f18700 !important;
+  }
+  .site-form-color .radio.primary .circle-bottom span {
+    background: #c16c00 !important;
+  }
+
+  /* header */
+  .site-header {
+    border-bottom: 1px solid #2e2e2e;
+    background-color: #ffffff;
+
+
+  }
+  .site-header-background-color {
+    background-color: #ffffff;
+  }
+  @media only screen and (max-width: 40em) {
+     .site-header-background-color-small-only {
+      background-color: #ffffff;
+    }
+  }
+
+  /* modals */
+  .site-modal {
+    box-shadow: inset 0 0 2px #7c7c7c !important;
+  }
+
+  /* tooltips */
+  .tooltip.bottom-right:after,
+  .tooltip.bottom-left:after,
+  .tooltip.bottom:after,
+  .tooltip.bottom-right:before,
+  .tooltip.bottom-left:before,
+  .tooltip.bottom:before {
+    border-top-color: #7c7c7c;
+  }
+  .tooltip.right:after,
+  .tooltip.right:after
+  .tooltip.right-top:after,
+  .tooltip.right-top:before,
+  .tooltip.right-bottom:before,
+  .tooltip.right-bottom:before {
+    border-right-color: #7c7c7c;
+  }
+
+  .tooltip.left-bottom:after,
+  .tooltip.left-top:after,
+  .tooltip.left:after,
+  .tooltip.left-bottom:before,
+  .tooltip.left-top:before,
+  .tooltip.left:before {
+    border-left-color: #7c7c7c;
+  }
+
+  .tooltip.top-right:after,
+  .tooltip.top-left:after,
+  .tooltip.top:after,
+  .tooltip.top-right:before,
+  .tooltip.top-left:before,
+  .tooltip.top:before {
+    border-bottom-color: #7c7c7c;
+  }
+
+  .tooltip {
+    border: 1px solid #7c7c7c;
+    background: #7c7c7c;
+    color: #ffffff;
+  }
+
+  .reveal-modal {
+    border-color: #323232;
+    box-shadow: 0 0 3px #cbcbcb;
+  }
+  .reveal-modal-bg {
+    background-color: rgba(0,0,0,.8);
+  }
+  .play-outer-circle-large:hover {
+    border-color: #f18700;
+  }
+  .forums-container tr.clickable:hover .thread-activity {
+    background-color: #141414;
+  }
+
+    [data-flash].is-inline.is-error {
+      background: rgba(211, 16, 74, 1) !important;
+    }
+    [data-flash].is-inline.is-error .flash-msg,
+    [data-flash].is-inline.is-error .flash-msg strong {
+      color: #fff !important;
+    }
+    [data-flash].is-inline.is-error .flash-close .icon-remove-mono {
+      display: none !important;
+    }
+    [data-flash].is-inline.is-error .flash-close .icon-remove-inverse {
+      display: block !important;
+    }
+
+  /* custom banner */
+    .custom-banner--container {
+      background-color: #f18700;
+    }
+
+    .custom-banner--header, .custom-banner--subtext {
+      color: #ffffff;
+    }
+
+</style>
+<style>
+  /* icons site primary */
+  .site-icon-arrow-right {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.61%2C19.75l8.26-8.26L5.61%2C3.24c-0.68-.69.61-1.58%2C1-2%2C0.72-.69%2C1.76.78%2C2.2%2C1.22l3.39%2C3.39L17.41%2C11c0.71%2C0.69-.8%2C1.77-1.22%2C2.19L12.8%2C16.59%2C7.63%2C21.77c-0.7.67-1.58-.61-2-1A0.68%2C0.68%2C0%2C0%2C1%2C5.61%2C19.75Z%22%20fill%3D%22%23f18700%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-menu {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Hamburger%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Crect%20x%3D%222.6%22%20y%3D%223.6%22%20width%3D%2218%22%20height%3D%223%22%20fill%3D%22%23ffffff%22%2F%3E%0D%0A%3Crect%20x%3D%222.6%22%20y%3D%2210%22%20width%3D%2218%22%20height%3D%223%22%20fill%3D%22%23ffffff%22%2F%3E%0D%0A%3Crect%20x%3D%222.6%22%20y%3D%2216.3%22%20width%3D%2218%22%20height%3D%223%22%20fill%3D%22%23ffffff%22%2F%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-chrevron-down {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%22-294%20385%2023%2023%22%20enable-background%3D%22new%20-294%20385%2023%2023%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%20%20%3Cpolygon%20fill%3D%22%23ffffff%22%20points%3D%22-271.1%2C392.9%20-275.4%2C388.7%20-282.5%2C395.8%20-289.6%2C388.7%20-293.9%2C392.9%20-286.7%2C400%20-286.8%2C400.1%20%0D%0A%20%20%20%20-282.5%2C404.3%20-282.5%2C404.3%20-282.5%2C404.3%20-278.2%2C400.1%20-278.3%2C400%20%20%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-chat {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%22-294%20385%2023%2023%22%20enable-background%3D%22new%20-294%20385%2023%2023%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M-282.5%2C388.6c2.6%2C0%2C5.1%2C0.1%2C6.8%2C1.3c1.9%2C1.4%2C1.9%2C4.3%2C1.7%2C6c-0.2%2C2.1-1.2%2C3.5-3%2C4.2%0D%0A%09%09%09c-1.3%2C0.5-3%2C0.7-5.1%2C0.7c-1%2C0-2.1-0.1-3.4-0.2l-1-0.1l0%2C0l-1.2-0.4c-1.1-0.3-2.5-1-3.1-2.6c-0.7-1.8-0.7-4.2%2C0-5.9%0D%0A%09%09%09C-289.6%2C389.1-286.6%2C388.6-282.5%2C388.6%20M-282.5%2C386.6c-3.7%2C0-8.4%2C0.3-9.9%2C4.3c-0.9%2C2.2-0.9%2C5.1%2C0%2C7.4c0.7%2C2%2C2.4%2C3.2%2C4.3%2C3.8v3.2%0D%0A%09%09%09l2.6-2.7c1.1%2C0.1%2C2.4%2C0.2%2C3.6%2C0.2c2%2C0%2C4-0.2%2C5.7-0.9c2.6-1%2C4-3.1%2C4.3-5.8c0.3-2.8-0.1-6.1-2.6-7.9%0D%0A%09%09%09C-276.7%2C386.6-279.8%2C386.6-282.5%2C386.6L-282.5%2C386.6z%22%2F%3E%0D%0A%09%3C%2Fg%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+
+  /* icons site social */
+  .site-icon-twitter {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%22-294%20385%2023%2023%22%20enable-background%3D%22new%20-294%20385%2023%2023%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M-272.5%2C390.3c-0.7%2C0.3-1.5%2C0.5-2.4%2C0.6c0.8-0.5%2C1.5-1.3%2C1.8-2.3c-0.8%2C0.5-1.7%2C0.8-2.6%2C1%0D%0A%09%09c-2.8-3-7.9-0.2-7%2C3.7c-3.4-0.1-6.4-1.7-8.4-4.2c-1.1%2C1.9-0.5%2C4.3%2C1.3%2C5.5c-0.7%2C0-1.3-0.2-1.9-0.5c0%2C1.9%2C1.4%2C3.7%2C3.3%2C4.1%0D%0A%09%09c-0.6%2C0.2-1.2%2C0.2-1.9%2C0.1c0.5%2C1.6%2C2%2C2.8%2C3.8%2C2.8c-1.7%2C1.3-3.9%2C2-6.1%2C1.7c4%2C2.6%2C9.5%2C2.5%2C13.4-0.5c3-2.3%2C4.8-6.1%2C4.6-9.9%0D%0A%09%09C-273.7%2C391.8-273.1%2C391.1-272.5%2C390.3C-273.2%2C390.6-273.1%2C391.1-272.5%2C390.3z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-facebook {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%22-294%20385%2023%2023%22%20enable-background%3D%22new%20-294%20385%2023%2023%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M-280.4%2C406.8v-9.3h3.4v-4h-3.4v-2.1c0-0.5%2C0.3-0.9%2C0.9-0.9h2.6v-4.5h-2.8c-3%2C0-5.3%2C2.4-5.3%2C5.5v2.1h-3.1v4%0D%0A%09h3.1v9.3h4.6L-280.4%2C406.8z%22%2F%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-tumblr {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%23ffffff%3B%22%20d%3D%22M17.6%2C20.4c-2%2C1-4.4%2C1.4-6.6%2C0.8c-2.3-0.6-3.4-2.3-3.4-4.5v-7H5.4V6.9c2.5-0.8%2C3.7-2.9%2C4-5.4h2.8%0D%0A%09%09v5.1h4.7v3.1h-4.7v5.1c0%2C1-0.2%2C2.4%2C0.9%2C3c1.4%2C0.8%2C3.2%2C0.2%2C4.5-0.6V20.4z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-envelope {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%23ffffff%3B%22%20d%3D%22M22.6%2C9c0-0.2-0.1-0.5-0.3-0.6L12%2C0.8c-0.3-0.2-0.6-0.2-0.9%2C0L0.7%2C8.4C0.5%2C8.5%2C0.4%2C8.8%2C0.4%2C9v12.6%0D%0A%09%09c0%2C0.4%2C0.3%2C0.8%2C0.8%2C0.8h20.7c0.4%2C0%2C0.8-0.4%2C0.8-0.8V9z%20M11.5%2C2.4l9.6%2C7v0.9l-6.6%2C4.7l5.2%2C3.3c0.8%2C0.5%2C0%2C1.8-0.8%2C1.3L11.5%2C15%0D%0A%09%09l-7.4%2C4.7c-0.8%2C0.5-1.7-0.8-0.8-1.3l5.2-3.3l-6.6-4.7V9.4L11.5%2C2.4z%22%2F%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%23ffffff%3B%22%20d%3D%22M19.7%2C18.4%22%2F%3E%0D%0A%09%3Cpolygon%20style%3D%22fill%3A%23ffffff%3B%22%20points%3D%2211.5%2C13.1%2013.4%2C14.3%2019.5%2C9.9%2011.5%2C4%203.5%2C9.9%209.6%2C14.3%20%09%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-check {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%0D%0A%09%09%3Crect%20x%3D%2211.9%22%20y%3D%222.1%22%20transform%3D%22matrix%28-0.7072%20-0.7071%200.7071%20-0.7072%2016.2216%2029.719%29%22%20style%3D%22fill%3A%23ffffff%3B%22%20width%3D%224.7%22%20height%3D%2218.8%22%2F%3E%0D%0A%09%0D%0A%09%09%3Crect%20x%3D%220.2%22%20y%3D%2211.3%22%20transform%3D%22matrix%280.7072%200.707%20-0.707%200.7072%2011.5962%20-0.598%29%22%20style%3D%22fill%3A%23ffffff%3B%22%20width%3D%2212.5%22%20height%3D%224.7%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+
+  /* icons site secondary */
+  .site-icon-clock {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%23bebebb%3B%22%20d%3D%22M11.5%2C22c-4.5%2C0-8.6-3-10-7.3c-1.4-4.3%2C0.2-9.2%2C4-11.8c3.7-2.6%2C8.9-2.5%2C12.5%2C0.3%0D%0A%09%09c3.6%2C2.8%2C5%2C7.7%2C3.4%2C12C19.8%2C19.3%2C15.8%2C22%2C11.5%2C22z%20M11.5%2C3.3C7%2C3.3%2C3.3%2C7%2C3.3%2C11.5c0%2C4.5%2C3.7%2C8.2%2C8.2%2C8.2c4.5%2C0%2C8.2-3.7%2C8.2-8.2%0D%0A%09%09C19.7%2C7%2C16%2C3.3%2C11.5%2C3.3z%22%2F%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%23ffffff%3B%22%20d%3D%22M12.9%2C12.9v-2.9V5.5c0-0.4-0.4-0.8-0.8-0.8h-1.3c-0.4%2C0-0.8%2C0.4-0.8%2C0.8v4.5H6.5%0D%0A%09%09c-0.4%2C0-0.8%2C0.4-0.8%2C0.8v1.3c0%2C0.4%2C0.4%2C0.8%2C0.8%2C0.8h3.5H12.9z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-reply {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%23bebebb%3B%22%20d%3D%22M20.7%2C20c-0.1%2C0.3-0.3%2C0.7-0.4%2C0.9c-0.1%2C0.1-0.2%2C0.2-0.3%2C0.2c-0.2%2C0-0.4-0.2-0.4-0.4%0D%0A%09%09c0-0.2%2C0-0.4%2C0.1-0.6c0-0.5%2C0.1-1%2C0.1-1.5c0-5.7-3.4-6.7-8.6-6.7H8.4V15c0%2C0.4-0.3%2C0.8-0.8%2C0.8c-0.2%2C0-0.4-0.1-0.5-0.2L1%2C9.4%0D%0A%09%09C0.8%2C9.2%2C0.8%2C9%2C0.8%2C8.8c0-0.2%2C0.1-0.4%2C0.2-0.5l6.1-6.1C7.3%2C2%2C7.5%2C1.9%2C7.7%2C1.9c0.4%2C0%2C0.8%2C0.3%2C0.8%2C0.8v3.1h2.7%0D%0A%09%09c3.9%2C0%2C8.8%2C0.7%2C10.5%2C4.8c0.5%2C1.3%2C0.6%2C2.6%2C0.6%2C4C22.2%2C16.2%2C21.4%2C18.4%2C20.7%2C20z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-remove {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20style%3D%22fill%3A%23bebebb%3B%22%20d%3D%22M19.6%2C17.5l-6-6l6-6c0.3-0.3%2C0.3-0.8%2C0-1.1l-0.9-0.9c-0.3-0.3-0.8-0.3-1.1%2C0l-6%2C6l-6-6%0D%0A%09c-0.3-0.3-0.8-0.3-1.1%2C0L3.4%2C4.4c-0.3%2C0.3-0.3%2C0.8%2C0%2C1.1l6%2C6l-6%2C6c-0.3%2C0.3-0.3%2C0.8%2C0%2C1.1l0.9%2C0.9c0.3%2C0.3%2C0.8%2C0.3%2C1.1%2C0l6-6l6%2C6%0D%0A%09c0.3%2C0.3%2C0.8%2C0.3%2C1.1%2C0l0.9-0.9C19.9%2C18.3%2C19.9%2C17.8%2C19.6%2C17.5z%22%2F%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-back {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20style%3D%22fill%3A%23bebebb%3B%22%20d%3D%22M11.5%2C20.9l1-1c0.3-0.3%2C0.3-0.7%2C0-0.9L6%2C12.5h14.6c0.4%2C0%2C0.7-0.3%2C0.7-0.7v-1.3c0-0.4-0.3-0.7-0.7-0.7%0D%0A%09H6l6.5-6.5c0.3-0.3%2C0.3-0.7%2C0-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9%2C0l-9.4%2C9.4c-0.3%2C0.3-0.3%2C0.7%2C0%2C0.9l9.4%2C9.4%0D%0A%09C10.9%2C21.2%2C11.3%2C21.2%2C11.5%2C20.9z%22%2F%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-link {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2223px%22%20height%3D%2223px%22%20viewBox%3D%220%200%2023%2023%22%20style%3D%22enable-background%3Anew%200%200%2023%2023%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23bebebb%3B%22%20d%3D%22M19.3%2C8.2c-1.8%2C1.8-3.7%2C4.6-6.6%2C3.8c0.8-0.8%2C1.6-1.6%2C2.4-2.4%0D%0A%09c0.9-0.9%2C1.8-1.8%2C2.6-2.7c1.9-1.9-0.8-4.8-2.6-2.9c-0.5%2C0.5-0.9%2C0.9-1.4%2C1.4c-0.2%2C0.2-1.4%2C1.1-1.4%2C1.4l0%2C0c-0.8%2C0.8-1.6%2C1.6-2.4%2C2.4%0D%0A%09c-0.4-1.3%2C0-2.8%2C1-3.8c1.3-1.3%2C2.7-3.3%2C4.5-3.8C19.3%2C0.5%2C22.1%2C5.4%2C19.3%2C8.2%22%2F%3E%0D%0A%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23bebebb%3B%22%20d%3D%22M7.9%2C15.6C7%2C16.5%2C5.5%2C15%2C6.5%2C14.1c1.4-1.4%2C2.7-2.7%2C4.1-4.1%0D%0A%09c0.8-0.8%2C1.5-1.5%2C2.3-2.3c0.2-0.2%2C0.3-0.3%2C0.5-0.5c1-0.6%2C2%2C0.7%2C1.2%2C1.6C12.4%2C11.2%2C10.1%2C13.3%2C7.9%2C15.6z%22%2F%3E%0D%0A%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23bebebb%3B%22%20d%3D%22M5.8%2C13.4c-0.9%2C0.9-1.8%2C1.8-2.6%2C2.7c-1.9%2C1.9%2C0.8%2C4.8%2C2.6%2C2.9%0D%0A%09c0.9-0.9%2C2-1.8%2C2.8-2.9c0.8-0.8%2C1.6-1.6%2C2.4-2.4c0.4%2C1.3%2C0%2C2.8-1%2C3.8c-1.3%2C1.3-2.7%2C3.3-4.5%2C3.8c-3.8%2C1.1-6.7-3.8-3.9-6.6%0D%0A%09C3.4%2C13%2C5.4%2C10.2%2C8.2%2C11C7.4%2C11.8%2C6.6%2C12.6%2C5.8%2C13.4%22%2F%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-trash {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%221792px%22%20height%3D%221792px%22%20viewBox%3D%22590%20-500%201792%201792%22%20enable-background%3D%22new%20590%20-500%201792%201792%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20fill%3D%22%23bebebb%22%20d%3D%22M1294%2C876V172c0-9.3-3-17-9-23s-13.7-9-23-9h-64c-9.3%2C0-17%2C3-23%2C9s-9%2C13.7-9%2C23v704c0%2C9.3%2C3%2C17%2C9%2C23%0D%0A%09s13.7%2C9%2C23%2C9h64c9.3%2C0%2C17-3%2C23-9S1294%2C885.3%2C1294%2C876z%20M1550%2C876V172c0-9.3-3-17-9-23s-13.7-9-23-9h-64c-9.3%2C0-17%2C3-23%2C9%0D%0A%09s-9%2C13.7-9%2C23v704c0%2C9.3%2C3%2C17%2C9%2C23s13.7%2C9%2C23%2C9h64c9.3%2C0%2C17-3%2C23-9S1550%2C885.3%2C1550%2C876z%20M1806%2C876V172c0-9.3-3-17-9-23%0D%0A%09s-13.7-9-23-9h-64c-9.3%2C0-17%2C3-23%2C9s-9%2C13.7-9%2C23v704c0%2C9.3%2C3%2C17%2C9%2C23s13.7%2C9%2C23%2C9h64c9.3%2C0%2C17-3%2C23-9S1806%2C885.3%2C1806%2C876z%0D%0A%09%20M1262-116h448l-48-117c-4.7-6-10.3-9.7-17-11h-317c-6.7%2C1.3-12.3%2C5-17%2C11L1262-116z%20M2190-84v64c0%2C9.3-3%2C17-9%2C23s-13.7%2C9-23%2C9h-96%0D%0A%09v948c0%2C55.3-15.7%2C103.2-47%2C143.5s-69%2C60.5-113%2C60.5h-832c-44%2C0-81.7-19.5-113-58.5s-47-86.2-47-141.5V12h-96c-9.3%2C0-17-3-23-9%0D%0A%09s-9-13.7-9-23v-64c0-9.3%2C3-17%2C9-23s13.7-9%2C23-9h309l70-167c10-24.7%2C28-45.7%2C54-63s52.3-26%2C79-26h320c26.7%2C0%2C53%2C8.7%2C79%2C26%0D%0A%09s44%2C38.3%2C54%2C63l70%2C167h309c9.3%2C0%2C17%2C3%2C23%2C9S2190-93.3%2C2190-84z%22%2F%3E%0D%0A%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-replay {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M16.4%2016.9c-2.8%202.4-7.1%202.3-9.8-.3l-2%202c3.8%203.8%209.9%203.9%2013.9.3l-2.1-2z%22%20fill%3D%22%23f18700%22%2F%3E%3Cpath%20d%3D%22M15.3%205.3l.9.6c3%202.6%203.7%207.2.9%2010.3l2%202c2.3-2.5%203.1-6%202.3-9.3-.9-3.6-3.8-6.4-7.4-7.3-3.8-.8-8.1.7-10.4%204l.1-1.2c0-.2%200-.5-.2-.7-.6-.8-1.7-.4-1.8.4l-.5%204.6c-.1.6.4%201.1%201%201.1h4.6c.9%200%201.3-1.1.8-1.7-.3-.2-.5-.3-.8-.3h-1.2c2-3.2%206.3-4.4%209.7-2.5z%22%20fill%3D%22%23f18700%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-alt-download {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cg%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23ffffff%22%3E%3Cpath%20d%3D%22M17.3%2017.2c-1.1%200-1.4-1.5-.5-2%20.4-.2%201-.1%201.5-.3.6-.2%201-.6%201.4-1%201.3-1.6.5-4.1-1.4-4.8-.3-.1-.7-.2-1.1-.2-.2%200-.3-.8-.4-1-.4-.9-1-1.8-1.7-2.4-1.8-1.6-4.5-1.8-6.6-.5-1%20.5-1.7%201.4-2.2%202.3-.2.3-.3.7-.4%201-.2.7-.2.5-.8.7-1.9.4-3%202.5-2.2%204.3.4.9%201.3%201.6%202.3%201.8.5.1%201%200%201.3.4.4.4.3%201.1-.2%201.4-.7.6-2.2.1-2.9-.3-1-.5-1.8-1.3-2.3-2.3-.8-1.6-.7-3.5.2-4.9.4-.8%201.1-1.4%201.8-1.9.4-.2.9-.3%201.1-.7.2-.4.5-.8.7-1.2%202.1-3.1%206.2-4.4%209.6-2.9%201.6.7%203%201.9%203.8%203.4.2.4.3.9.7%201.1l1.2.6c.8.5%201.4%201.2%201.8%202%201.6%203.4-1%207.4-4.7%207.4%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15.4%2017.2l-3.1%203.4c-.4.4-1.1.5-1.5%200-.5-.6-1.1-1.2-1.6-1.8-.2-.2-1.2-1.6-1.5-1.6-.9-1%20.7-2.4%201.5-1.4l1.3%201.4v-3.9c0-.4-.1-.9%200-1.3%200-1.3%202.1-1.3%202.1%200v5.2c.5-.5%201-1.4%201.7-1.7.8-.4%201.8.9%201.1%201.7z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-random {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M5.7%2015.2v-6H8L4%204.6-.1%209.2h2.3v7c0%201.3%201%202.3%202.3%202.3H15l-3-3.2H5.7z%22%20fill%3D%22#ffffff%22%2F%3E%3Cpath%20d%3D%22M20.7%2013.8v-7c0-1.3-1-2.3-2.3-2.3H8l3%203.2h6.3v6H15l4.1%204.6%204.1-4.6h-2.5z%22%20fill%3D%22#ffffff%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-visa {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2271%22%20height%3D%2243%22%20viewBox%3D%220%200%2071%2043%22%3E%3Cpath%20d%3D%22M51.9%2017.9c-.2.5-.5%201.4-.5%201.4l-1.5%204H53c-.2-.7-.9-4.2-.9-4.2l-.2-1.2zM69%200H2C.9%200%200%20.9%200%202v39c0%201.1.9%202%202%202h67c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2zM11.6%2014h6c.8%200%201.5.3%201.7%201.2l1.3%206.6c-1.3-3.5-4.4-6.4-9.1-7.6l.1-.2zm7.1%2014.4l-3-11.5c2.5%201.5%204.2%203.5%205%205.9l.2%201%203.7-9.8h3.9l-5.9%2014.4h-3.9zm9%200L30.1%2014h3.7l-2.3%2014.4h-3.8zm10.2.2c-1.7%200-3.3-.4-4.2-.8l.5-3.2.5.2c1.2.5%202.4.8%203.8.8.9-.1%202.2-.6%201.9-1.7-.3-.9-1.6-1.3-2.3-1.7-1-.5-2-1.2-2.5-2.2-1-2%20.2-4.2%201.9-5.3%202.2-1.3%205.1-1.3%207.4-.4l-.5%203.1-.3-.2c-1-.4-4.9-1.3-4.9.7%200%20.8%201.2%201.3%201.8%201.6%201%20.5%202.1%201%202.8%202%201.1%201.4.8%203.5-.2%204.8-1.4%201.8-3.6%202.3-5.7%202.3zm16.2-.2s-.3-1.7-.4-2.2h-4.8c-.1.4-.8%202.2-.8%202.2h-3.9l5.5-13.2c.4-.9%201.1-1.2%202-1.2h2.9l3%2014.4h-3.5z%22%20fill%3D%22#ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-amex {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2271%22%20height%3D%2243%22%20viewBox%3D%220%200%2071%2043%22%3E%3Cpath%20d%3D%22M35.5%2023.5h-5l-2%202.2-1.9-2.2h-6.3v6.6h6.2l2-2.2%201.9%202.2h3.1v-2.2h2c1.5%200%202.7-.6%202.7-2.2%200-1.7-1.3-2.2-2.7-2.2zm-9.9%205.2h-3.9v-1.3h3.5V26h-3.5v-1.2h4l1.7%201.9-1.8%202zm6.3.8l-2.4-2.7%202.4-2.6v5.3zm3.6-3h-2v-1.7h2.1c1.2%200%201.2%201.7-.1%201.7zm9.4-7.8h1.8l.6-1.5h3.3l.6%201.5h3.2v-5l3%205h2.2v-6.6H58v4.6l-2.8-4.6h-2.4v6.2l-2.7-6.2h-2.4l-2.2%205.2H45c-1.6%200-2.1-2.3-1.1-3.4.3-.3.6-.4%201.2-.4h1.5v-1.4h-1.5c-2.1%200-3.2%201.3-3.2%203.3-.1%202%201%203.3%203%203.3zm4.1-5.5l1.1%202.6h-2.2l1.1-2.6zm-15.2%203.1h1.7c.6%200%20.9.1%201.1.3.3.3.2.9.2%201.3v.8h1.6v-1.3c0-.6%200-.9-.3-1.2-.1-.2-.4-.4-.8-.6.9-.4%201.3-1.4%201-2.3-.3-1.2-1.7-1.2-2.6-1.2h-3.6v6.6h1.6v-2.4zm0-2.8h1.9c.3%200%20.6%200%20.7.1.5.2.4%201%200%201.2-.2.1-.5.1-.8.1h-1.9v-1.4zm-2.7%203.8h-3.7V16H31v-1.3h-3.6v-1.2h3.7v-1.4h-5.3v6.6h5.3zM23%2018.7h1.6v-6.6H22l-1.9%204.5-2.1-4.5h-2.6v6.2l-2.7-6.2h-2.3l-2.8%206.6h1.7l.6-1.5h3.3l.6%201.5H17v-5.2l2.3%205.2h1.4l2.3-5.2v5.2zm-12.5-2.9l1.1-2.6%201.1%202.6h-2.2zm35.6%2014.3h5.3v-1.4h-3.7v-1.3h3.6V26h-3.6v-1.2h3.7v-1.3h-5.3zM61.8%2026H61c-.3%200-.6%200-.8-.2-.2-.2-.1-.6%200-.7l.1-.1c.2-.1.3-.1.6-.1h2.9v-1.4h-3.2c-1%200-1.6.4-1.9.8l-.1.1-.1.2c-.1.1-.1.3-.1.4v.7l.1.6c0%20.1%200%20.1.1.2%200%20.1.1.2.1.2l.1.1.1.1s.1%200%20.1.1c.1.1.2.1.3.1%200%200%20.1%200%20.1.1.7.2%201.4.2%202.2.2%201%200%20.9%201.2-.1%201.2h-3V30h3c1.1%200%202.2-.4%202.4-1.6.4-1.6-.6-2.3-2.1-2.4zm-16.5-.8c0-.8-.3-1.2-.8-1.5-.5-.3-1.1-.3-1.9-.3H39V30h1.6v-2.4h1.7c1.1%200%201.4.5%201.4%201.6v.8h1.6v-1.3c0-.8-.2-1.5-1-1.8.3-.1%201-.6%201-1.7zm-2.1%201c-.2.1-.5.1-.8.1h-1.9v-1.5h1.9c.3%200%20.6%200%20.8.1.5.3.4%201%200%201.3-.2.1.2-.2%200%200zM69%200H2C.9%200%200%20.9%200%202v39c0%201.1.9%202%202%202h67c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2zM18.2%2018.9V20h-5.3l-.6-1.5h-1.4l-.6%201.5H5.5l4-9.2h4.1l.5%201.1v-1.1H19l1.1%202.4%201-2.4h15.3c.7%200%201.3.1%201.8.5v-.5h4.2v.5c.7-.4%201.6-.5%202.6-.5h6.1l.6%201.1v-1.1h4.5l.6%201.1v-1.1h4.4V20h-4.4l-.8-1.4V20h-5.5l-.6-1.5h-1.4l-.8%201.5h-2.9c-1.1%200-2-.3-2.5-.6v.6h-6.8v-2.1c0-.3-.1-.3-.2-.3H35V20H21.9v-1.1l-.5%201.1h-2.8l-.4-1.1zm46.9%2011c-.7%201.3-2%201.5-3.3%201.5h-4.4v-.6c-.5.4-1.3.6-2.1.6h-13v-2.1c0-.3%200-.3-.3-.3h-.2v2.4h-4.2v-2.5c-.7.3-1.5.3-2.2.3h-.5v2.2h-5.1L28.5%2030l-1.3%201.4h-8.3v-9.2h8.5l1.2%201.4%201.3-1.4h5.7c.7%200%201.7.1%202.2.5v-.5h5.1c.5%200%201.5.1%202.1.5v-.5h7.7v.5c.4-.4%201.2-.5%201.9-.5h4.3v.5c.4-.3%201-.5%201.8-.5h4.5v3.3h-.9c1.3.9%201.6%203%20.8%204.4-.4.7.3-.5%200%200zM39.4%2012.1H41v6.6h-1.6zM55.6%2026h-.8c-.5%200-1.5-.5-.7-1%20.2-.1.3-.1.6-.1h2.9v-1.4h-3.2c-1.5%200-2.6%201.2-2.1%202.7.4%201.3%202.1%201.2%203.2%201.3%201%200%20.9%201.2-.1%201.2h-3.1v1.4h3.1c1.1%200%202.2-.4%202.4-1.6.4-1.7-.7-2.4-2.2-2.5z%22%20fill%3D%22#ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-mc {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2271%22%20height%3D%2243%22%20viewBox%3D%220%200%2071%2043%22%3E%3Cpath%20d%3D%22M36.2%2022.5c.2-.9.3-2.2-.8-2.7-1.4-.7-3%20.1-3.6%201.5-.3.7-.3%201.5-.1%202.2.6%201.4%202.7%201.8%204%201.1l.2-1.1c-.9.2-3.1.5-2.9-1h3.2zm-1.8-1.9c.6%200%20.7.4.6.9h-1.8c.2-.6.6-.9%201.2-.9zm-3.8%202.3l.4-2.1h.7l.3-1.1h-.8l.3-1.4h-1.4l-1%204.9c-.3%201.3%201%202.1%202.2%201.4l.1-1c-.8%200-.8-.3-.8-.7zm8-2.7l-.1-.5h-1.2l-1%205.1h1.4l.4-2.3c.4-1.5%201.1-1.4%201.4-1.4l.4-1.4c-.7%200-1.1.2-1.3.5zm-10.2%201.9c-.2-.1-2.1-1-1-1.3.3%200%201%200%201.4.1l.3-1c-1.3-.5-3.7-.2-3.6%201.6.1%201.1%201.3.9%201.8%201.6.7.9-1.9.6-2.2.5l-.1%201c.8.2%202%20.3%202.8%200%201-.3%201.7-1.9.6-2.5-.3-.2.3.1%200%200zm14.5-2.4c.5%200%20.7%200%201.1.3l.9-.9c-1.7-1.9-4.5-.3-5.1%201.8-.7%202.7%201.4%204.8%204%203.6l-.4-1.3c-2.8%201-2.8-3.5-.5-3.5zM23%2019.6c-.4%200-.9%200-1.8.2l-.2%201.1c.6-.1%202.9-.7%202.6.6-1.1.1-2.2-.1-2.9%201-1.1%201.6.8%203.2%202.3%202.1l.2.3h1.3L25%2022c.2-.7.4-2.4-2-2.4zm.3%203.4c-.1.5-1.3%201-1.5.3-.3-.9%201.1-1%201.6-.9l-.1.6zm27.9-2.9l-.2-.5h-1.2l-1%205.2h1.4l.4-2.4c.4-1.5%201.1-1.5%201.4-1.5l.4-1.4c-.6.1-1%20.4-1.2.6zM69%200H2C.9%200%200%20.9%200%202v39c0%201.1.9%202%202%202h67c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2zM45.1%2035.5c-3.4%200-6.4-1.2-8.8-3.1%201.8-1.8%203.2-4%204-6.5h-1.2c-.7%202.2-2%204.2-3.7%205.8-1.7-1.6-2.9-3.6-3.6-5.8h-1.2c.8%202.5%202.1%204.7%204%206.5-4%203.2-9.5%204.1-14.3%202-4-1.7-7.1-5.4-8.1-9.6C10%2015.4%2018%206.4%2027.5%207.6c2.6.3%205.1%201.4%207.1%203-1.8%201.8-3.2%204-4%206.5h1.2c.7-2.2%202-4.2%203.6-5.8%201.7%201.6%202.9%203.6%203.7%205.8h1.2c-.8-2.5-2.2-4.7-4-6.5%207.6-6.2%2019.4-2.5%2022.2%206.8%202.7%208.9-4.1%2018.1-13.4%2018.1zm7.2-13.7c-.5%201.6.5%203%201.5%203%20.5%200%20.9-.2%201.2-.4l.2.4h1.5l1.2-6.6h-1.5l-.4%202c-.7-.5-1.2-.8-2-.6-1%20.3-1.5%201.3-1.7%202.2-.5%201.6.7-2.4%200%200zm3.1-.8c.2.2.2.8.1%201.3-.2.4-.4.9-.9%201-.6.1-1-.4-1-1%20.1-.6%201.1-2.2%201.8-1.3.2.3-.4-.5%200%200zm-36.9-2.5l-1.7%203.8-.3-3.8h-2.2l-1.2%206.3h1.4l.8-4.5.4%204.5h1.4l1.9-4.4-.8%204.4h1.5l1.1-6.3zm28.4%201.1c-.4%200-.9%200-1.8.2l-.2%201.1c.6-.1%202.9-.7%202.6.6-1.1.1-2.2-.1-3%201-1.1%201.6.8%203.2%202.3%202.1l.2.3h1.3l.6-2.8c.1-.8.4-2.5-2-2.5zm.2%203.4c-.1.5-1.3%201-1.5.3-.3-.9%201.1-1%201.6-.9l-.1.6z%22%20fill%3D%22#ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-discover {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2271%22%20height%3D%2243%22%20viewBox%3D%220%200%2071%2043%22%3E%3Cpath%20d%3D%22M6.5%2012.1v6.5s4.2.5%204.2-3.2v-.1c-.1-3.6-4.2-3.2-4.2-3.2zM69%200H2C.9%200%200%20.9%200%202v39c0%201.1.9%202%202%202h67c1.1%200%202-.9%202-2V2c0-1.1-.9-2-2-2zm-9.8%2010.4h3.2c1.7%200%203.1%201.2%203.1%202.9%200%201.3-.8%202.5-2.1%202.9l3%204.2H64l-2.7-4h-.2v4h-1.9v-10zm-6.8%200H58v1.8h-3.5v2.2h3.4v1.8h-3.4v2.5H58v1.8h-5.5V10.4zm-8.2%200l2.7%206.5%202.6-6.5h2.1l-4.2%2010.2h-1.2L42%2010.4h2.2zm-31.5%205c0%203.2-2.9%204.9-4.8%204.9H4.6v-9.9h3.3c1.9%200%204.8%201.8%204.8%205zm2.8%204.9h-2v-10h2v10zm4.2.3c-2.5%200-3.6-1.9-3.6-1.9l1.2-1.2c.7%201%203.1%202.2%203.5.4.5-1.8-1.8-1.9-2.9-2.4-1.7-.9-1.8-3.4-.2-4.6%201.5-1.1%203.5-.6%204.8.6l-1.1%201.3c-.7-.8-3-1.2-2.9.4%200%201%202%201.3%202.7%201.7%203.2%201.3%201.6%205.7-1.5%205.7zm11.6-.6c-3.4%201.8-7.7-.8-7.7-4.6%200-3.9%204.2-6.4%207.7-4.6v2.4c-2.1-2.1-5.8-.8-5.8%202.3%200%203%203.7%204.4%205.8%202.3V20zm6-9.8c2.8%200%205.2%202.3%205.2%205.2%200%202.8-2.3%205.2-5.2%205.2-2.8%200-5.2-2.3-5.2-5.2%200-2.8%202.4-5.2%205.2-5.2zM68%2040H32.8C45%2036.8%2057.2%2032.4%2068%2025.7V40zm-4.4-26.5v-.1c0-.6-.5-1.4-1.3-1.4h-1.1v2.9h1.1c.8%200%201.3-.7%201.3-1.4z%22%20fill%3D%22#ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-jcb {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2271%22%20height%3D%2243%22%20viewBox%3D%220%200%2071%2043%22%3E%3Cpath%20d%3D%22M69%200H2C-.1%200%200%202.1%200%203.5v37.4C0%2042.6%201.4%2043%202.7%2043h66c1.4%200%202.4-.8%202.4-2.3V3c-.1-1.4-.3-3-2.1-3zM28.3%2030.8c0%202.4-1.9%204.4-4.3%204.6-2.1.3-4.3%200-6.5%200-.9%200-.8.1-.8-.8v-9c2.8.7%209.5%201.7%2010.4-2.2.3-1.2.1-2.6.1-3.8v-2.1c0-.4.1-.5-.3-.5h-3.7v3.4c0%201.5.3%203.5-1.5%204.2-.8.3-1.7.2-2.5%200-.9-.2-1.8-.5-2.6-.9-.1-.1%200-.5%200-.6v-6.4c0-2.1-.4-4.7.5-6.7.5-1%201.3-1.6%202.2-2.1%201.4-.6%208.7-.5%208.7-.3v15.1c.3%202.7.3%205.4.3%208.1zm13%20.1c0%202.4-2%204.4-4.4%204.6-.9.1-2%200-2.9%200h-4c-.4%200-.2-1.3-.2-1.6v-9.1c1.4%201.2%203.4%201.5%205.2%201.5%201.1%200%202.1%200%203.1-.2l1.2-.2c.1%200%20.6-.1.7-.2.2-.3%200-1.5%200-1.9v-.1c-1.4.7-3.4%201.4-5%201-3-.4-3.4-4.8-.8-6.1%201.9-.7%204.1-.1%205.8.7v-1.8c0-.3-.3-.3-.5-.3-.4-.1-.8-.2-1.2-.2-.9-.1-1.9-.2-2.8-.2-1.8%200-3.7.2-5.3%201.2l-.5.3v-3.5c0-1.2-.2-2.6.1-3.8.3-1.3%201.2-2.2%202.2-2.9.7-.4%201.4-.6%202.2-.6%202.3-.1%204.6%200%206.8%200%20.3%200%20.3%2021.2.3%2023.4zm12.9%200c0%202.5-2.1%204.5-4.5%204.6-2.3.1-4.6%200-6.9%200-.2%200-.1-6.1-.1-6.7V26h7c.4%200%20.7%200%201.1-.1%201.3-.3%202.5-1.4%202-2.9-.3-.9-1.3-1.4-2.3-1.6h-.3l1.1-.4c.7-.4%201.1-1.2%201-2-.1-1.2-1.2-1.8-2.3-1.9-1.8-.2-3.8%200-5.6%200h-1.6c-.3%200-.2-.3-.2-.6v-4.1c0-2.5%201.8-4.6%204.3-4.8%202.2-.2%204.4%200%206.6%200%20.6%200%20.7-.1.7.5v22.8zm-6.5-8.8c1.5.2%201.6%202.5%200%202.5h-2.3c-.1%200-.4.1-.4-.1v-2.4c0-.2.4-.1.5-.1.7.1%201.4.1%202.2.1zm-2.8-1.4v-2c0-.6.9-.3%201.3-.3.5%200%201.5-.2%201.9.3.7.5.4%201.7-.4%202-.8.2-1.9%200-2.8%200z%22%20fill%3D%22#ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-calendar {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M19.3%202.8h-1.1v2.5h-4V2.8H8.8v2.5h-4V2.8H3.7c-1.4%200-2.5%201.1-2.5%202.5v14.9c0%201.4%201.1%202.5%202.5%202.5h15.6c1.4%200%202.5-1.1%202.5-2.5V5.3c0-1.4-1.1-2.5-2.5-2.5zm0%2017.4H3.7v-9.9h15.6v9.9zM7.7.3H5.9v4.2h1.7V.3zm9.4%200h-1.7v4.2h1.7V.3z%22%20fill%3D%22#ffffff%22%2F%3E%3Cg%20fill%3D%22#ffffff%22%3E%3Cpath%20d%3D%22M5.1%2011.7h1.4v1.4H5.1zM5.1%2014.5h1.4v1.4H5.1zM5.1%2017.4h1.4v1.4H5.1zM8%2011.7h1.4v1.4H8zM8%2014.5h1.4v1.4H8zM8%2017.4h1.4v1.4H8zM10.8%2011.7h1.4v1.4h-1.4zM10.8%2014.5h1.4v1.4h-1.4zM10.8%2017.4h1.4v1.4h-1.4zM13.6%2011.7H15v1.4h-1.4zM13.6%2014.5H15v1.4h-1.4zM13.6%2017.4H15v1.4h-1.4zM16.5%2011.7h1.4v1.4h-1.4zM16.5%2014.5h1.4v1.4h-1.4zM16.5%2017.4h1.4v1.4h-1.4z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-credit {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2271%22%20height%3D%2243%22%20viewBox%3D%220%200%2071%2043%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20#ffffff%20!important%3B%20%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M71%202c0-1.1-.9-2-2-2h-67c-1.1%200-2%20.9-2%202v8.6h71v-8.6zm-71%2018.4v20.6c0%201.1.9%202%202%202h67c1.1%200%202-.9%202-2v-20.6h-71zm17.7%2014.9h-9.6v-3.6h9.6v3.6zm17.3%200h-13.9v-3.6h13.9v3.6z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+  .site-icon-search {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.8%2019.5L17.4%2015c-.6.9-1.5%201.7-2.4%202.4l4.5%204.4c1.4%201.6%203.8-.8%202.3-2.3z%22%20fill%3D%22%23bebebb%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15%2017.4c4.4-3%205.2-9.4%201.8-13.4C13.8.5%208.6-.3%204.7%202.3.9%204.7-.4%209.9%201.7%2014c2.2%204.4%207.7%206.2%2012.1%204.1.4-.2.8-.5%201.2-.7zm-5.2-1.7C6.7%2015.7%204%2013%204%209.8%204%206.7%206.7%204%209.8%204c3.2%200%205.8%202.7%205.8%205.8.1%203.2-2.6%205.9-5.8%205.9z%22%20fill%3D%22%23bebebb%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.8%202.2c4.2%200%207.7%203.4%207.7%207.7%200%201.5-.5%203.1-1.4%204.3-.5.7-1%201.3-1.7%201.8l-.3.2c-1.2.9-2.8%201.3-4.3%201.3-4.2%200-7.7-3.4-7.7-7.7.1-4.2%203.5-7.6%207.7-7.6m0-1.5C4.7.7.6%204.8.6%209.9s4.1%209.2%209.2%209.2c1.8%200%203.7-.6%205.2-1.6.9-.6%201.7-1.4%202.3-2.4%201.1-1.5%201.6-3.3%201.6-5.2.1-5.1-4-9.2-9.1-9.2z%22%20fill%3D%22%23bebebb%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+  }
+  .site-icon-is-searching {
+     background-position: center center !important;
+     background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23323232%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23323232%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E');
+     background-repeat: no-repeat;
+     background-size: contain;
+     z-index: 999;
+     width: 80px;
+     height: 80px;
+     margin: 0 auto;
+  }
+  .site-icon-report {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%201792%202031%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1122.987%20238.933L1075.2%200H0v2030.933h238.933v-836.266h669.014l47.786%20238.933H1792V238.933z%22%20fill%3D%22%23bebebb%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .site-icon-block {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%201792%201792%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M896%201612.8c-165.76%200-318.08-56.448-439.04-151.424L1461.376%20456.96A708.02%20708.02%200%200%201%201612.8%20896c0%20396.032-320.768%20716.8-716.8%20716.8M179.2%20896c0-396.032%20320.768-716.8%20716.8-716.8%20165.76%200%20318.08%2056.448%20439.04%20151.424L330.624%201335.04A708.02%20708.02%200%200%201%20179.2%20896M896%200C401.408%200%200%20401.408%200%20896s401.408%20896%20896%20896%20896-401.408%20896-896S1390.592%200%20896%200%22%20fill%3D%22%23ffffff%22%20fill-rule%3D%22evenodd%22%20fill-opacity%3D%22.6%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+</style>
+
+
+  <style>
+    div.browse-item-subtext { 
+	visibility: hidden;
+}
+.navigation-inner a.custom-nav-donate {
+    background:#f18700;
+    color:#fff !important;
+}
+.browse-item-title .browse-image-container img {
+    border-radius: 5px;
+}
+.duration-container 
+a.custom-nav-donate.site-font-primary-family.head.site-link-header-color{
+	color: #fff !important;
+	font-weight: 1000 !important;
+    background: rgb(252, 175, 23);
+    border-radius: 12px 12px 12px 12px;
+    transition: all ease-in-out 200ms;
+    margin-top: 1px;
+}
+
+.overview .hero-image .image {
+    background-size: cover !important;
+    background-position: 50% top;
+}
+
+.site-icon-menu {
+    background-image: url(https://donate.rhemamedia.co.nz/resources/shinetv/img/svg/hamburger.svg);
+}
+
+.site-header .show-menu-container {
+    left: auto;
+    right: 10px;
+}
+
+.site-header .show-menu-trigger {
+    opacity:1;
+    margin-right:0;
+}
+
+.primary-actions a.btn-site-primary {
+    color:#ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .overview, .overview.has-length-content {
+        height:420px !important;
+        min-height:420px !important;
+    }
+}
+
+      .color-overlay { background: #f18700; }
+      .default-bg { background-color: #f18700; }
+  </style>
+
+  <script>
+  var Tracking = undefined;
+  window.Page = undefined;
+  var Segment_ID = undefined;
+  window._current_user = undefined;
+  window._current_site = undefined;
+</script>
+
+
+  <script>
+    window._vhx = {
+      environment: 'production',
+      site: { id: '106285', domain: 'www.shinetv.co.nz', host: 'rhemamedia.vhx.tv', previewUrl: 'https://www.shinetv.co.nz/login' },
+      geo:  { country: 'nz' },
+      product: {id: '' }
+    };
+
+    window._current_user = {"id":null,"email":null,"name":null,"city":null,"state":null,"country":null,"external_user_id":null};
+
+    window._current_site =
+      {"id":106285,"facebook_pixel_codes":[{"pixel_code":"358209331487946","product_id":null}],"twitter_pixel_codes":[],"adwords_pixel_codes":[],"key":"rhemamedia","title":"Shine TV","subdomain":"rhemamedia","made_for_kids":false,"made_for_kids_tracking_blocked":false,"algolia_search_enabled":true,"passwords_disabled":false,"segment_heartbeat_frequency":10,"segment_includes_user_id":true,"sso_enabled":false};
+  </script>
+
+<script>
+  window.Tracking = {
+    EVENTS:     {"EVENT_SALE_INITIATED":"sale_initiated","EVENT_SALE_COMPLETE":"sale_complete","EVENT_SALE_COMPLETE_GIFT":"sale_conversion-gift","EVENT_SALE_ERROR":"sale_error","EVENT_SALE_COMPLETE_SAVE_CARD":"sale_complete_save_card","EVENT_SALE_MISSING_EMAIL":"sale_missing_email","EVENT_SALE_UNCONFIRMED_EMAIL":"sale_unconfirmed_email","EVENT_SALE_MISSING_CC":"sale_missing_cc","EVENT_SALE_MISSING_CVC":"sale_missing_cvc","EVENT_SALE_MISSING_EXP":"sale_missing_exp","EVENT_SALE_MISSING_ZIP":"sale_missing_zip","EVENT_SALE_INVALID_CC":"sale_invalid_cc","EVENT_SALE_INVALID_CVC":"sale_invalid_cvc","EVENT_SALE_INVALID_EXP":"sale_invalid_exp","EVENT_SALE_INVALID_ZIP":"sale_invalid_zip","EVENT_SALE_INVALID_COUPON":"sale_invalid_coupon","EVENT_SALE_INACTIVE_COUPON":"sale_inactive_coupon","EVENT_SALE_GEOBLOCKED_COUPON":"sale_geoblocked_coupon","EVENT_SALE_EXPIRED_CC":"sale_expired_cc","EVENT_SALE_PLAY_TRAILER":"sale_play_trailer","EVENT_SALE_PROCESSING_ERROR":"sale_processing_error","EVENT_SALE_UNKNOWN_ERROR":"sale_unknown_error","EVENT_SALE_INCOMPLETE_FORM":"sale_incomplete_form","EVENT_SALE_SHARE_FACEBOOK":"sale_share_facebook","EVENT_SALE_SHARE_TWITTER":"sale_share_twitter","EVENT_SALE_SHARE_EMAIL":"sale_share_email","EVENT_SALE_START_WATCHING":"sale_start_watching","EVENT_SALE_SAVE_CARD":"sale_save_card","EVENT_SALE_SHOW_PAYMENT_TAB":"sale_show_payment_tab","EVENT_SALE_SHOW_DETAILS_TAB":"sale_show_details_tab","EVENT_ADMIN_SIGNUP":"admin_signup","EVENT_ADMIN_ADD_SITE":"admin_add_site","EVENT_ADMIN_PUBLISH_THEME":"admin_publish_theme","EVENT_ADMIN_CREATE_VIDEO":"admin_create_video","EVENT_ADMIN_UPLOAD_VIDEO":"admin_upload_video","EVENT_ADMIN_UPLOAD_VIDEO_NATIVE":"admin_upload_video_native","EVENT_ADMIN_UPLOAD_VIDEO_DROPBOX":"admin_upload_video_dropbox","EVENT_ADMIN_TRANSCODE_VIDEO":"admin_transcode_video","EVENT_ADMIN_CREATE_EXTRA":"admin_create_extra","EVENT_ADMIN_UPLOAD_EXTRA":"admin_upload_extra","EVENT_ADMIN_UPLOAD_EXTRA_NATIVE":"admin_upload_video_native","EVENT_ADMIN_CONNECT_PAYOUT":"admin_connect_payout","EVENT_ADMIN_CREATE_SCREENER":"admin_create_screener","EVENT_ADMIN_CREATE_COUPON":"admin_create_coupon","EVENT_ADMIN_CREATE_UPDATE":"admin_create_update","EVENT_ADMIN_PUBLISH_UPDATE":"admin_publish_update","EVENT_ADMIN_CREATE_PARTNER":"admin_create_partner","EVENT_ADMIN_UPLOADED_FOLLOWERS_CS":"admin_uploaded_followers_csv","EVENT_ADMIN_ADDED_FOLLOWERS":"admin_added_followers","EVENT_ADMIN_CREATE_SUBSCRIPTION":"admin_create_subscription","EVENT_ADMIN_LINK_HELP":"admin_link_help","EVENT_ADMIN_LINK_FAQ":"admin_link_faq","EVENT_ADMIN_LINK_GETTING_STARTED":"admin_link_getting_started","EVENT_ADMIN_LINK_HOWTO":"admin_link_howto","EVENT_ADMIN_LINK_BEST_PRACTICES":"admin_link_best_practices","EVENT_ADMIN_LINK_DEV_DOCS":"admin_link_dev_docs","EVENT_FORUM_CREATE_THREAD":"forum_create_thread","EVENT_FORUM_CREATE_POST":"forum_create_post","EVENT_UPDATE_COMMENT":"comment_update","EVENT_CONCURRENT_LIMIT":"concurrent_limit","EVENT_VIDEO_COMMENT":"video_comment","EVENT_SITE_HERO_WATCH_TRAILER":"site_hero_watch_trailer","EVENT_SITE_HERO_BUY":"site_hero_buy","EVENT_SITE_FOOTER_BUY":"site_footer_buy","EVENT_SITE_FOOTER_IOS":"site_footer_ios","EVENT_SITE_BUY":"site_buy","EVENT_SITE_UNAVAILABLE_REQUEST":"site_unavailable_request","EVENT_SITE_SEARCH":"site_search","EVENT_SITE_SEARCH_EMPTY":"site_search_empty","EVENT_SITE_SEARCH_VIDEO_CLICK":"search_video","EVENT_SITE_SEARCH_COLLECTION_CLICK":"search_collection","EVENT_SITE_SEARCH_PRODUCT_CLICK":"search_product","EVENT_SITE_SEARCH_ITEM_SELECTION":"site_search_item_selected","EVENT_SITE_VIDEO_BUY":"site_video_buy","EVENT_SITE_VIDEO_WATCH_TRAILER":"site_video_watch_trailer","EVENT_SITE_COLLECTION_BUY":"site_collection_buy","EVENT_SITE_PRODUCT_PREORDER":"site_product_preorder","EVENT_SITE_PRODUCT_BUY":"site_product_buy","EVENT_SITE_PRODUCT_RENT":"site_product_rent","EVENT_SITE_CAROUSEL_NEXT":"site_carousel_next","EVENT_SITE_CAROUSEL_PREV":"site_carousel_prev","EVENT_SITE_CAROUSEL_COIN":"site_carousel_coin","EVENT_SITE_CAROUSEL_WATCH_NOW":"site_carousel_watch_now","EVENT_SITE_CAROUSEL_TRAILER":"site_carousel_trailer","EVENT_SITE_HOME":"site_home","EVENT_SITE_BROWSE":"site_browse","EVENT_SITE_SETTINGS":"site_settings","EVENT_SITE_FORUMS":"site_forums","EVENT_SITE_SUPPORT":"site_help","EVENT_SITE_CONTACT":"site_contact","EVENT_SITE_CONTACT_HELP":"site_contact_help","EVENT_SITE_VIEW_PRODUCTS":"site_products","EVENT_SITE_VIEW_PRODUCT":"site_product","EVENT_SITE_COLLECTION_CLICK":"site_collection","EVENT_SITE_VIDEO_CLICK":"site_video","EVENT_SITE_EXTRA_CLICK":"site_extras","EVENT_SITE_CATEGORY_CLICK":"site_category","EVENT_SITE_MOVIE_CLICK":"site_movie","EVENT_SITE_PLAYLIST_CLICK":"site_playlist","EVENT_SITE_SERIES_CLICK":"site_series","EVENT_SITE_SEASON_CLICK":"site_season","EVENT_SITE_TERMS":"site_tos","EVENT_SITE_PRIVACY":"site_privacy","EVENT_SITE_COOKIES":"site_cookies","EVENT_SITE_COPYRIGHT":"site_copyright","EVENT_SITE_DATA_PROCESSING":"site_data_processing","EVENT_SITE_WATCHLIST_REMOVE":"site_removewatchlist","EVENT_SITE_WATCHLIST_ADD":"site_addwatchlist","EVENT_SITE_PAGE_VIEW":"site_page_view","EVENT_SITE_CONTEXT_HOMEPAGE":"site_context_homepage","EVENT_SITE_CONTEXT_COLLECTION":"site_context_collection","EVENT_SITE_CONTEXT_CATEGORY":"site_context_category","EVENT_SITE_CONTEXT_MOVIE":"site_context_movie","EVENT_SITE_CONTEXT_PLAYLIST":"site_context_playlist","EVENT_SITE_CONTEXT_SERIES":"site_context_series","EVENT_SITE_CONTEXT_UPNEXT":"site_context_upnext","EVENT_AUTHENTICATION_LOGIN":"authentication_login","EVENT_AUTHENTICATION_ACTIVATION_STARTED":"activationstarted","EVENT_AUTHENTICATION_ACTIVATION_COMPLETE":"activation","EVENT_AUTHENTICATION_SIGNIN_VIEW":"signin","EVENT_AUTHENTICATION_SIGNIN_STARTED":"signinstarted","EVENT_AUTHENTICATION_SIGNIN_COMPLETE":"authentication","EVENT_AUTHENTICATION_SIGNUP_VIEW":"signup","EVENT_AUTHENTICATION_SIGNUP_STARTED":"signupstarted","EVENT_AUTHENTICATION_PURCHASE_STARTED":"purchasestarted","EVENT_AUTHENTICATION_PURCHASE_COMPLETED":"purchasecompleted","EVENT_AUTHENTICATION_CONVERSION":"conversion","EVENT_AUTHENTICATION_REGISTRATION":"register","EVENT_AUTHENTICATION_IDENTIFY_USER":"identify_user","EVENT_SETTINGS_SAVE_PROFILE":"settings_save_profile","EVENT_SETTINGS_SAVE_NOTIFICATIONS":"settings_save_notifications","EVENT_SETTINGS_SAVE_CARD":"settings_save_card","EVENT_DEVICES_DOWNLOAD_IOS":"devices_download_ios","EVENT_DEVICES_DOWNLOAD_APPLETV":"devices_download_appletv","EVENT_DEVICES_DOWNLOAD_ANDROID":"devices_download_android","EVENT_DEVICES_DOWNLOAD_ANDROIDTV":"devices_download_androidtv","EVENT_DEVICES_DOWNLOAD_AMAZON_FIRE_TV":"devices_download_amazon_firetv","EVENT_DEVICES_DOWNLOAD_AMAZON_FIRE_TABLET":"devices_download_amazon_tablet","EVENT_DEVICES_DOWNLOAD_XBOX":"devices_download_xbox","EVENT_DEVICES_DOWNLOAD_ROKU":"devices_download_roku","EVENT_DEVICES_DOWNLOAD_TIZEN":"devices_download_tizen","EVENT_DEVICES_DOWNLOAD_CHROMECAST":"devices_download_chromecast","EVENT_NEWSLETTER_SIGNUP":"event_newsletter_signup","EVENT_METADATA_ADVISORY":"metadata_click_advisory","EVENT_METADATA_CAST":"metadata_click_cast","EVENT_METADATA_CREW":"metadata_click_crew","EVENT_METADATA_GENRES":"metadata_click_genres","EVENT_METADATA_RATING":"metadata_click_rating","EVENT_METADATA_TAGS":"metadata_click_tags","EVENT_SEGMENT_AUTHENTICATION_CONVERSION":"Order Completed","EVENT_SEGMENT_AUTHENTICATION_PURCHASE_STARTED":"Checkout Started","EVENT_SEGMENT_AUTHENTICATION_REGISTRATION":"Registration Completed","EVENT_SEGMENT_AUTHENTICATION_SIGNIN_COMPLETE":"Sign In Complete","EVENT_SEGMENT_AUTHENTICATION_SIGNIN_VIEW":"Sign In Viewed","EVENT_SEGMENT_AUTHENTICATION_SIGNUP_STARTED":"Signed Up","EVENT_SEGMENT_AUTHENTICATION_SIGNUP_VIEW":"Sign Up Viewed","EVENT_SEGMENT_EXTRA_VIEWED":"Extra Content Viewed","EVENT_SEGMENT_SEARCH_EXECUTED":"Search Executed","EVENT_SEGMENT_SEARCH_ITEM_SELECTED":"Search Result Selected","EVENT_SEGMENT_VIDEO_AD_START":"Video Ad Started","EVENT_SEGMENT_VIDEO_AD_CLICKED":"Video Ad Clicked","EVENT_SEGMENT_VIDEO_AD_FINISH":"Video Ad Completed","EVENT_SEGMENT_VIDEO_AD_FAIL":"Video Ad Failed","EVENT_SEGMENT_VIDEO_AD_SKIP":"Video Ad Skipped","EVENT_SEGMENT_VIDEO_COMMENT_ADDED":"Video Comment Added","EVENT_SEGMENT_VIDEO_COMPLETE_PROGRESS_PERCENTILE":"Video Content Completed","EVENT_SEGMENT_VIDEO_ENDED":"Video Content Ended","EVENT_SEGMENT_VIDEO_END_BUFFER":"Video Playback Buffer Completed","EVENT_SEGMENT_VIDEO_HALF_PROGRESS_PERCENTILE":"50% Content Completed","EVENT_SEGMENT_VIDEO_PAUSE":"Video Playback Paused","EVENT_SEGMENT_VIDEO_PLAY":"Video Playback Started","EVENT_SEGMENT_VIDEO_QUARTER_PROGRESS_PERCENTILE":"25% Content Completed","EVENT_SEGMENT_VIDEO_RESUME":"Video Playback Resumed","EVENT_SEGMENT_VIDEO_SEEKED":"Video Playback Seek Completed","EVENT_SEGMENT_VIDEO_SEEKING":"Video Playback Seek Started","EVENT_SEGMENT_VIDEO_START_BUFFER":"Video Playback Buffer Started","EVENT_SEGMENT_VIDEO_TIMEUPDATE":"Video Content Playing","EVENT_SEGMENT_VIDEO_THIRD_PROGRESS_PERCENTILE":"75% Content Completed","EVENT_SEGMENT_VIDEO_WATCHLIST_ADD":"Added to Watch List","EVENT_SEGMENT_VIDEO_WATCHLIST_REMOVE":"Removed from Watch List","EVENT_SEARCH":"search","EVENT_SEARCH_ITEM_SELECTED":"searchitemselected","EVENT_EXTRA_VIEWED":"extraviewed"},
+    GOOGLE_ANALYTICS_4: {"EVENTS":{"BEGIN_CHECKOUT":"begin_checkout","LOGIN":"login","PURCHASE":"purchase","SEARCH":"search","SIGN_UP":"sign_up"},"HAS_OTT_GTAG":true,"HAS_SITE_GTAG":false,"OTT_WEB_ID":"G-0SEZQT9B00","SITE_WEB_ID":null},
+    PROPERTIES: {"PROPERTY_COLLECTOR_URL":"https://collector.vhx.tv/pixel.gif","PROPERTY_COLLECTION_ID":"collection_id","PROPERTY_DEVICE":"device","PROPERTY_DEVICE_ID":"device_id","PROPERTY_NAME":"name","PROPERTY_PLATFORM":"platform","PROPERTY_PLATFORM_ID":"platform_id","PROPERTY_PLATFORM_VERSION":"platform_version","PROPERTY_PRODUCT_ID":"product_id","PROPERTY_REFERRER":"referrer","PROPERTY_SESSION_ID":"session_id","PROPERTY_SITE_ID":"site_id","PROPERTY_TIMESTAMP":"timestamp","PROPERTY_TYPE":"type","PROPERTY_URL":"url","PROPERTY_USER_AGENT":"user_agent","PROPERTY_USER_EMAIL":"user_email","PROPERTY_USER_ID":"user_id","PROPERTY_VIDEO_ID":"video_id","PROPERTY_VIEW":"view"},
+    DEPRECATED_EVENTS: ["admin_connect_payout","admin_create_coupon","admin_create_screener","admin_link_dev_docs","admin_link_faq","admin_link_help","admin_publish_theme","metadata_click_cast","metadata_click_crew","metadata_click_genres","metadata_click_rating","metadata_click_tags","metadata_click_advisory"],
+    UPDATED_EVENTS: {"search_video":"searchitemselected","search_collection":"searchitemselected","site_search_item_selected":"searchitemselected","site_extras":"extraviewed"},
+    SESSION: '1af09bc3c7664ce23e411bcd23773369'
+  };
+</script>
+  <script>
+    window.Page = {"PROPERTIES":{"VIEW_TYPE":"video","VIDEO_ID":3099028,"COLLECTION_ID":984003,"COLLECTION_TITLE":"A Very Tall Man Uk","PRODUCT_ID":70302,"VIDEO_TITLE":"John Lennox - Part 1","CANONICAL_COLLECTION":{"id":984003,"name":"A Very Tall Man Uk","href":"https://www.shinetv.co.nz/season-1-115","parent":{"id":984000,"name":"A Very Tall Man - UK Edition","type":"series"}}}}
+  </script>
+
+
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LfvmnopAAAAACA1XKDZ4aLl79C20qmy7BJp9SP8"></script>
+<style>
+    .grecaptcha-badge { visibility: hidden; }
+</style>
+<script>
+  window.ott_recaptcha = {
+    ACTIONS: {"SIGNUP":"signup"},
+    SITE_KEY: '6LfvmnopAAAAACA1XKDZ4aLl79C20qmy7BJp9SP8'
+  }
+</script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.
+    dataLayer.
+    push(
+        {"_current_user":{"id":null,"email":null,"name":null,"city":null,"state":null,"country":null,"external_user_id":null},"_current_site":{"id":106285,"facebook_pixel_codes":[{"pixel_code":"358209331487946","product_id":null}],"twitter_pixel_codes":[],"adwords_pixel_codes":[],"key":"rhemamedia","title":"Shine TV","subdomain":"rhemamedia","made_for_kids":false,"made_for_kids_tracking_blocked":false,"algolia_search_enabled":true,"passwords_disabled":false,"segment_heartbeat_frequency":10,"segment_includes_user_id":true,"sso_enabled":false}}
+    );
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SEZQT9B00"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+
+  gtag('js', new Date());
+  gtag('config', 'G-0SEZQT9B00', {"debug_mode":false,"site":"rhemamedia","user_id":null});
+</script>
+
+
+
+  <script>
+
+      (function() {
+        var vhx = document.createElement('script'); vhx.type = 'text/javascript'; vhx.async = true;
+        vhx.src = 'https://cdn.vhx.tv/assets/tracker-edc375764c9cdb603b31a7a029eb38d94760b632112c5c6a65ce346dc9786678.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vhx, s);
+      })();
+
+    // <!-- Google Tag Manager -->
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJ7BXMQ');
+    // <!-- End Google Tag Manager -->
+
+  if (window._current_site && window._current_site.facebook_pixel_codes.length > 0) {
+    // <!-- Facebook Pixel Code -->
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    //<!-- End Facebook Pixel Code -->
+  }
+
+  if (window._current_site && window._current_site.twitter_pixel_codes.length > 0) {
+    // <!-- Twitter Pixel Code -->
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    //<!-- End Twitter Pixel Code -->
+  }
+
+      Segment_ID = '9nRpWGIa285bCV16FpFHxJ6oz6Pxxayv';
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+      analytics.load("9nRpWGIa285bCV16FpFHxJ6oz6Pxxayv");
+      }}();
+  </script>
+
+
+
+    <script data-ad-client="ca-pub-4670566811119679" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  <script>
+  if (/ticket=/.test(location.search) && window.history.replaceState) {
+    var url = location.href.replace(/\?([^#]*)/, function(_, search) {
+      search = search.split('&').map(function(v) {
+        return !/^ticket=/.test(v) && !/^support=/.test(v) && !/^sso=/.test(v) && v;
+      }).filter(Boolean).join('&');
+      return search ? '?' + search : '';
+    });
+
+    if (url != location.href) {
+      window.history.replaceState({}, '', url);
+    }
+  }
+
+  if (/return_to=/.test(location.search) && window.history.replaceState) {
+    var url = location.href.replace(/\?([^#]*)/, function(_, search) {
+      search = search.split('&').map(function(v) {
+        return !/^return_to=/.test(v) && v;
+      }).filter(Boolean).join('&');
+      return search ? '?' + search : '';
+    });
+
+    if (url != location.href) {
+      window.history.replaceState({}, '', url);
+    }
+  }
+
+  if (/logout=/.test(location.search) && window.history.replaceState) {
+    var url = location.href.replace(/\?([^#]*)/, function(_, search) {
+      search = search.split('&').map(function(v) {
+        return !/^logout=/.test(v) && v;
+      }).filter(Boolean).join('&');
+      return search ? '?' + search : '';
+    });
+
+    if (url != location.href) {
+      window.history.replaceState({}, '', url);
+    }
+  }
+</script>
+
+
+  <script>
+    window.TOKEN = "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ2YmZlZmMzNGIyNTdhYTE4Y2E2NDUzNDE2ZTlmZmRjNjk4MDAxMDdhZTQ2ZWJhODg0YTU2ZDBjOGQ4NTYzMzgifQ.eyJhcHBfaWQiOjExNDU0NywiZXhwIjoxNzExMDE4MTY1LCJub25jZSI6ImIxMmI1Nzg3ZWVhNzMwZDQiLCJzY29wZXMiOlsicHVibGljIl0sInNlc3Npb25faWQiOiJ2YUM5Z0JubElkaGF3ZkFLUTRtQVpBPT0iLCJzaXRlX2lkIjoxMDYyODV9.ep7F7rQIJ3oR9htYODYWMLcpC8xZUa9L7imkAxjTawL87PA8KwPEn-HquG6L_4qiX8GtLSeT32Cfb5XqSwwLPSN0wzD7ht_hZJ53M0TwJAvQzH5fIXWjqo79KxDd5lEuzx0I71RRNLaOc7L62u3CiwHPzSo383PvrE9_4Ym1kOc-s5MtLMqhj3NGhzMLn0mXjSQ-1xnNiZFkMiEoDcA4Z0GWBOTwqSeqDuUBR3-Jc0F3_s7pzOTFnAh6ivRK4Nq_dFpbuflzmzD5CfUjU0uHefOG3ytgGfV3N1YoA3x-xbudA0b5r9bBbEgjafWUryq25IZSTlLx9ToMCj9e7wOFU22GZfC2z04R925Qr32Rxt5c9ph-Pg-Gm4_QFQhhsytjN0wnmln8r6ndvAuBnCnu85Xw8f3YmyTsfYW5Zk4v1Ie2lOF7Sflfxy-8ELnLMqlnKGF4FZjOQGXmIm7aK1ewVbN_On03DC2OhFswXyrZkoDJVdSIhEqgxcg82Tnir-WZSQQ0I98Cwyr4xRpVg7a3zW1P9oYStJ5DlzhBu5c9b5OYVFJ9nU_8_MyY0IxZRmbeK8vy-u6Ncf9fS6mkeQGiDGFYC-Jw4bYSBUH7fmSImACj-LLRxCG40SeJVssHbGoA4EHNzAeXB9EeA3z_vipDK9GaZonv0A-9hRJa-cbAQz4";
+  </script>
+
+  
+  
+  
+</head>
+
+<body class="site-background-color logged-out videos videos-show group-a site-color-is-light video-averytallmanuk-johnlennox-pt1 sites" data-site-color="#f18700" data-track-event="">
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ7BXMQ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  
+
+  <a href="#maincontent" class="skipto">Skip to main content</a>
+    <div style="display: none !important;" rel="description" class="is-hidden">
+      Your Kiwi Christian Channel.  Great family movies FREE to watch on-air and on-demand, anytime!
+    </div>
+
+  <div data-flash="{&quot;auto_hide&quot;:true,&quot;style&quot;:&quot;overlay&quot;,&quot;container&quot;:null,&quot;type&quot;:&quot;notice&quot;,&quot;message&quot;:{&quot;body&quot;:null},&quot;show_on_load&quot;:false}" class="is-error is-hidden">
+    <div class="flash-icon">
+      <i class="icon icon-check-inverse icon-check-white"></i>
+      <i class="icon icon-alert-inverse icon-alert-white"></i>
+      <i class="icon icon-check-alt icon-check-blue"></i>
+      <i class="icon medium icon-check"></i>
+      <i class="icon medium icon-alert"></i>
+    </div>
+
+    <div class="flash-msg"></div>
+
+    <div class="flash-close">
+      <i class="icon icon-remove-inverse icon--xsmall"></i>
+      <i class="icon icon-remove-mono icon-x-black icon--xsmall"></i>
+    </div>
+</div>
+
+
+
+
+  <main class="main-container">
+      
+
+
+
+
+
+  <div class="custom-banner--container site-header">
+    <a class="block" target="_top" href="https://donate.rhemamedia.co.nz/?brand=shine">
+    <div class="row padding-medium">
+        <div class="column small-16 text-center margin-bottom-small">
+          <h1 class="custom-banner--header site-font-primary-family">IT'S NOT TOO LATE TO SUPPORT YOUR SHINE FOR THE END OF FINANCIAL YEAR APPEAL.  CLICK HERE TO DONATE</h1>
+        </div>
+        <div class="column small-16 text-center">
+          <p class="custom-banner--subtext site-font-primary-family">Your financial support helps keep your Shine on-air and freely available to every Kiwi home.</p>
+        </div>
+    </div>
+    </a>
+  <span class="js-banner-close " data-close><i class="icon icon-remove-inverse right"></i></span>
+</div>
+
+
+
+
+
+<header class="nav-background-color border-bottom site-border-color site-header has-logo ">
+  <div class="row full-width primary-row-container flex-container">
+    <div class="small-16 medium-11 columns identity-container flex-container has-image">
+      <span class="show-for-small-only flex-item padding-right-small show-menu-container">
+        <label for="show-menu" class="show-menu-trigger">
+          <span class="site-link-header-color "><i class="icon site-icon-menu"></i></span>
+        </label>
+      </span>
+
+      <h1 class="identity site-font-primary-family head primary flex-item padding-horizontal-medium">
+            <a href="/">
+              <img class="logo" src="https://vhx.imgix.net/rhemamedia/assets/0f710130-4e4f-4864-8385-26ab244cce2a.png?fit=max&h=84&q=92&w=400" alt="Shine TV" />
+</a>      </h1>
+
+      <nav class="navigation-container inline flex-item" role="navigation" aria-label="Primary">
+        <input type="checkbox" id="show-menu" name="show-menu" role="button">
+
+        <div class="navigation-inner site-header-background-color-small-only" id="primary-navigation">
+
+          <a href="/browse" class="browse-link site-font-primary-family head site-link-header-color">
+            Browse
+          </a>
+
+
+              <a href="#"
+                id="search-nav-toggle"
+                class="search-link site-font-primary-family head site-link-header-color">
+                Search
+              </a>
+
+                <a href="https://www.shinetv.co.nz/videos/live" rel="noopener" class="custom-nav-watch-live site-font-primary-family head site-link-header-color" target="_blank">Watch Live</a>
+                <a href="https://info.shinetv.co.nz/shinetv/schedule" rel="noopener" class="custom-nav-schedule site-font-primary-family head site-link-header-color" target="_blank">Schedule</a>
+                <a href="https://donate.rhemamedia.co.nz/?brand=shine" rel="noopener" class="custom-nav-donate site-font-primary-family head site-link-header-color" target="_blank">Donate</a>
+
+
+            <a href="http://www.shinetv.co.nz/checkout/subscribe/signup" class="show-for-small-only flex-item site-link-header-color site-font-primary-family head subscribe-link" data-track-event-properties="{&quot;type&quot;:&quot;subscription&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;}" data-track-event="site_buy">
+              Start Watching
+            </a>
+
+              <a href="/login" class="show-for-small-only flex-item user-action-link head site-link-header-color site-font-primary-family">
+                Sign in
+              </a>
+
+        </div>
+      </nav>
+    </div>
+
+    <div class="hide-for-small-only text-right flex-right small-16 medium-5 columns small-only-text-center user-activity site-border-color">
+      <div class="user-actions has-image padding-right-medium flex-container" role="navigation" aria-label="Secondary">
+
+
+            <a href="http://www.shinetv.co.nz/checkout/subscribe/signup" class="flex-item site-link-header-color site-font-primary-family head subscribe-link user-action-link" data-track-event-properties="{&quot;type&quot;:&quot;subscription&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;}" data-track-event="site_buy">
+              <strong style="font-weight: bold;">Start Watching</strong>
+            </a>
+
+              <a href="/login" class="flex-item user-action-link head site-link-header-color  site-font-primary-family">
+                Sign In
+              </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <div id="search-react-app"
+    data-props="{&quot;overlay&quot;:true,&quot;site_id&quot;:106285,&quot;api_v1_url&quot;:&quot;https://api.vhx.tv&quot;,&quot;api_v2_url&quot;:&quot;https://api.vhx.com&quot;,&quot;user_subscribed&quot;:false,&quot;purchased_product_ids&quot;:[],&quot;theme&quot;:&quot;dark&quot;,&quot;show_filters&quot;:false}">
+  </div>
+
+
+
+    
+
+
+<div id="preview-notification" class="preview-notification">Live stream preview</div>
+<section id="watch-player" class="full-width-container background-black contain top-container ">
+  <div class="embed " data-sticky-player>
+          <section class="flex-vertical-middle row fill-width background-black" id="watch-next">
+  <div class="column small-13 large-11 small-centered">
+    <div class="row fill-width">
+      <div class="flex-vertical-middle column small-16 smedium-8 medium-9 text-center">
+          <a class="img border-reset" href="/a-very-tall-man-uk-edition/season:1/videos/averytallmanuk-johnlennox-pt2">
+            <div class="img-content" style="background-image: url(https://vhx.imgix.net/rhemamedia/assets/65571eaf-586b-4589-ac07-a2a7508f6129.jpg?auto=format%2Ccompress&amp;fit=crop&amp;h=360&amp;w=640);"></div>
+            <i class="icon large icon-play-inverse site-border-primary-color"></i>
+          </a>
+      </div>
+      <div class="flex-vertical-middle column small-16 smedium-8 medium-7 padding-left-xlarge">
+        <div class="contain">
+          <h5 class="padding-bottom-medium border-bottom border-transparent">
+            <p class="text inverse">
+              Next video will start in <strong data-count class='site-primary-color'
+  data-text-countdown='seconds'>
+  30 seconds
+</strong>
+
+            </p>
+          </h5>
+          <h2 class="margin-top-large margin-bottom-medium head primary inverse"><strong>John Lennox - Part 2</strong></h2>
+          <div class="site-link-primary-color-contain">
+            <div class="text inverse"><p>In part 2. Professor John Lennox tackles the big questions of ‘Why is there suffering?, and ‘Could God have made a world where people don’t do horr...</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row fill-width text-center">
+      <a href="#" data-replay class="site-primary-color btn icon-revert icon--left site-icon-replay is-inline margin-top-large">
+        Replay Video
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<iframe
+  src="https://embed.vhx.tv/videos/3099028?api=1&amp;autoplay=1&amp;buy_label=Register&amp;collection_id=984003&amp;color=f18700&amp;context=https%3A%2F%2Fwww.shinetv.co.nz%2Fa-very-tall-man-uk-edition%2Fseason%3A1&amp;is_trailer=false&amp;live=0&amp;locale=en&amp;playsinline=1&amp;product_id=70302&amp;referrer=&amp;vimeo=1"
+  allow="encrypted-media; autoplay; fullscreen" id="watch-embed"
+  class="sticky-player-child embed-content border-reset"
+  title="Video Player"
+  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+</iframe>
+<a href="#" data-sticky-player-close class="btn btn-site-secondary btn--small">
+  Close
+</a>
+<a href="#" data-sticky-player-open class="btn btn-site-secondary btn--small">
+  Open
+</a>
+
+  </div>
+</section>
+
+
+<section id="watch-info" class="full-width-container border-bottom border-transparent">
+  <div class="standard-width-container row">
+    <div class="column small-centered margin-bottom-xlarge small-14">
+      <div class="row margin-vertical-medium">
+  <div class="column small-16 medium-8 large-10">
+    <div class="contain margin-top-large column small-16">
+        <h3 class="secondary padding-bottom-small series-title site-font-primary-color">
+          <a href="/a-very-tall-man-uk-edition" class="context-link">
+            A Very Tall Man - UK Edition
+          </a>
+        </h3>
+      <h1 class="head primary site-font-primary-color site-font-primary-family margin-bottom-small collection-title video-title">
+        <strong>John Lennox - Part 1</strong>
+      </h1>
+      <h5 class="text site-font-secondary-color">
+            <a href="https://rhemamedia.vhx.tv/a-very-tall-man-uk-edition/season:1" class="site-font-secondary-color">
+              Season 1, Episode 2
+            </a> &bull;
+          28m
+            <div class="padding-top-small">
+              <a
+                href="#comments"
+                title="View Latest Comments"
+                class="site-icon-chat icon--small icon--left site-link-primary-color" >
+                1 comment
+              </a>
+            </div>
+      </h5>
+    </div>
+
+
+    <section class="contain column small-16 margin-top-large">
+      <div class="text site-font-secondary-color site-link-primary-color-contain"
+           data-text-show-less="Show less"
+           data-text-show-more="Show more"
+           data-truncate>
+        <p>Today’s guest is an Irish Professor Emeritus of Mathematics from Oxford University, and one of the world’s best known Christian apologists, though as Professor John Lennox told Gary, he’s not apologising for anything.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="column small-16 medium-8 large-6">
+    <div class="contain padding-vertical-medium padding-horizontal-large centered">
+      
+    </div>
+
+    <div class="contain padding-vertical-medium padding-horizontal-large share-tools">
+        <h5 class="margin-top-large padding-bottom-medium text-center border-bottom site-border-color site-font-secondary-color">
+  Share with friends
+</h5>
+<div class="text-center margin-top-medium margin-bottom-large video-share-container">
+  <a
+    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.shinetv.co.nz%2Fvideos%2Faverytallmanuk-johnlennox-pt1%2F"
+    data-social-popup data-share="facebook"
+    data-tooltip='{"id": "tooltip-facebook", "width": "auto", "position": "top"}'
+    class="btn btn-site-secondary icon--center site-icon-facebook margin-horizontal-small">
+    Facebook
+  </a>
+  <a
+    href="https://twitter.com/share?url=https%3A%2F%2Fwww.shinetv.co.nz%2Fvideos%2Faverytallmanuk-johnlennox-pt1%2F&text=Watch+John+Lennox+-+Part+1&related="
+    data-social-popup data-share="twitter"
+    data-tooltip='{"id": "tooltip-twitter", "width": "auto", "position": "top"}'
+    class="btn btn-site-secondary icon--center site-icon-twitter margin-horizontal-small">
+    Twitter
+  </a>
+  <a target="_blank" href="/cdn-cgi/l/email-protection#3b04484e59515e584f066c5a4f58531b715453551b775e555554431b161b6b5a494f1b0a1b5d4954561b685352555e1b6f6d1d5a564b0059545f4206534f4f4b481e087a1e097d1e097d4c4c4c15485352555e4f4d1558541555411e097d4d525f5e54481e097d5a4d5e49424f5a5757565a554e501651545355575e55555443164b4f0a1e097d" data-tooltip='{"id": "tooltip-email", "width": "auto", "position": "top"}' class="btn btn-site-secondary icon--center site-icon-envelope margin-horizontal-small">
+    Email
+  </a>
+
+  <div id="tooltip-facebook" class="tooltip medium">
+    Share on Facebook
+  </div>
+  <div id="tooltip-twitter" class="tooltip medium">
+    Share on Twitter
+  </div>
+  <div id="tooltip-email" class="tooltip medium">
+    Share via Email
+  </div>
+</div>
+
+          <div class="video-devices-container">
+    <h5 class="padding-vertical-medium text-center border-bottom site-border-color site-font-secondary-color">
+      Watch anywhere, anytime
+    </h5>
+    <p class="text-center padding-top-medium">
+
+      <a class="site-link-secondary-color padding-horizontal-small" target="_blank" href="https://itunes.apple.com/us/app/id1547598454" data-track-event="devices_download_ios">
+        <strong>iPhone</strong>
+      </a>
+
+      <a class="site-link-secondary-color padding-horizontal-small" target="_blank" href="http://www.shinetv.co.nz/help/using-the-apple-tv-app/apple-tv-apps" data-track-event="devices_download_appletv">
+        <strong>Apple TV</strong>
+      </a>
+
+      <a class="site-link-secondary-color padding-horizontal-small" target="_blank" href="https://play.google.com/store/apps/details?id=com.rhemamedia" data-track-event="devices_download_android">
+        <strong>Android</strong>
+      </a>
+
+      <a class="site-link-secondary-color padding-horizontal-small" target="_blank" href="https://play.google.com/store/apps/details?id=com.rhemamedia" data-track-event="devices_download_androidtv">
+        <strong>Android TV</strong>
+      </a>
+
+
+      <a class="site-link-secondary-color padding-horizontal-small" target="_blank" href="https://www.amazon.com/gp/product/B08Y62GZY1/" data-track-event="devices_download_amazon_firetv">
+        <strong>Fire TV</strong>
+      </a>
+
+
+      <a class="site-link-secondary-color padding-horizontal-small" target="_blank" href="https://channelstore.roku.com/details/618021" data-track-event="devices_download_roku">
+        <strong>
+          Roku <span class='tiny superscript'>&reg;</span>
+        </strong>
+      </a>
+
+    </p>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+          <div class="row margin-top-large">
+    <h3 class="head secondary site-font-primary-color text-center margin-bottom-medium">
+      Up Next in <a href='https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1'               class='site-font-primary-color'>A Very Tall Man Uk</a>
+    </h3>
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+
+        <li
+  class="js-collection-item
+    collection-item-3098816 item-type-video
+    
+    "
+  data-item-id="3098816"
+  data-item-type="video"
+  
+    data-tooltip="id: collection-tooltip-3098816;
+    position: right;
+    offset: 0;
+    animate: true;
+    timer: 650;
+    delay: false;
+    is_centered: true;"
+    
+>
+  <div class="browse-item-card">
+    <div class="grid-item-padding">
+      <a href="https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1/videos/averytallmanuk-johnlennox-pt2" class="browse-item-link" data-track-event="site_video" data-track-event-properties="{&quot;type&quot;:&quot;video&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;,&quot;id&quot;:3098816,&quot;context&quot;:&quot;site_context_upnext&quot;,&quot;label&quot;:&quot;John Lennox - Part 2&quot;,&quot;canonical_collection&quot;:null}">
+        <div class="browse-image-container ">
+
+
+          <img alt="John Lennox - Part 2" src="https://vhx.imgix.net/rhemamedia/assets/65571eaf-586b-4589-ac07-a2a7508f6129.jpg?auto=format%2Ccompress&fit=crop&h=360&w=640" />
+
+            <span class="play-outer-circle">
+              <i class="icon medium icon-play-inverse"></i>
+            </span>
+
+          <div class="browse-info-container">
+              <div class="duration-container
+                
+                "
+              >
+                29:25
+              </div>
+          </div>
+        </div> 
+      </a>
+
+      <div class="padding-small">
+        <div class="site-font-primary-color browse-item-title">
+           <a
+            href="https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1/videos/averytallmanuk-johnlennox-pt2"
+            data-track-event="site_video"
+            data-track-event-properties="{&quot;type&quot;:&quot;video&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;,&quot;id&quot;:3098816,&quot;context&quot;:&quot;site_context_upnext&quot;,&quot;label&quot;:&quot;John Lennox - Part 2&quot;,&quot;canonical_collection&quot;:null}"
+          >
+            <strong title="John Lennox - Part 2">
+              John Lennox - Part 2
+            </strong>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div 
+         class="tooltip background-white" id="collection-tooltip-3098816">
+      <h3 class="tooltip-item-title site-font-primary-family"><strong>John Lennox - Part 2</strong></h3>
+
+        <div class="transparent padding-top-medium">
+          <p>In part 2. Professor John Lennox tackles the big questions of ‘Why is there suffering?, and ‘Could God have made a world where people don’t do horrible things to each other?’</p>
+        </div>
+    </div>
+  </div>
+</li>
+
+
+        <li
+  class="js-collection-item
+    collection-item-3100553 item-type-video
+    
+    "
+  data-item-id="3100553"
+  data-item-type="video"
+  
+    data-tooltip="id: collection-tooltip-3100553;
+    position: right;
+    offset: 0;
+    animate: true;
+    timer: 650;
+    delay: false;
+    is_centered: true;"
+    
+>
+  <div class="browse-item-card">
+    <div class="grid-item-padding">
+      <a href="https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1/videos/averytallmanuk-nicky-gumbel-part1" class="browse-item-link" data-track-event="site_video" data-track-event-properties="{&quot;type&quot;:&quot;video&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;,&quot;id&quot;:3100553,&quot;context&quot;:&quot;site_context_upnext&quot;,&quot;label&quot;:&quot;Nicky Gumbel - Part 1&quot;,&quot;canonical_collection&quot;:null}">
+        <div class="browse-image-container ">
+
+
+          <img alt="Nicky Gumbel - Part 1" src="https://vhx.imgix.net/rhemamedia/assets/5b6b0f01-1d1f-49e2-8511-547f7289a095.jpg?auto=format%2Ccompress&fit=crop&h=360&w=640" />
+
+            <span class="play-outer-circle">
+              <i class="icon medium icon-play-inverse"></i>
+            </span>
+
+          <div class="browse-info-container">
+              <div class="duration-container
+                
+                "
+              >
+                26:03
+              </div>
+          </div>
+        </div> 
+      </a>
+
+      <div class="padding-small">
+        <div class="site-font-primary-color browse-item-title">
+           <a
+            href="https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1/videos/averytallmanuk-nicky-gumbel-part1"
+            data-track-event="site_video"
+            data-track-event-properties="{&quot;type&quot;:&quot;video&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;,&quot;id&quot;:3100553,&quot;context&quot;:&quot;site_context_upnext&quot;,&quot;label&quot;:&quot;Nicky Gumbel - Part 1&quot;,&quot;canonical_collection&quot;:null}"
+          >
+            <strong title="Nicky Gumbel - Part 1">
+              Nicky Gumbel - Part 1
+            </strong>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div 
+         class="tooltip background-white" id="collection-tooltip-3100553">
+      <h3 class="tooltip-item-title site-font-primary-family"><strong>Nicky Gumbel - Part 1</strong></h3>
+
+        <div class="transparent padding-top-medium">
+          <p>In this episode our guest is known the world over as former vicar of Holy Trinity Brompton.  Nicky Gumbel talks about his coming to faith, being overzealous, and why he believes in the Alpha course.</p>
+        </div>
+    </div>
+  </div>
+</li>
+
+
+        <li
+  class="js-collection-item
+    collection-item-3104340 item-type-video
+    
+    "
+  data-item-id="3104340"
+  data-item-type="video"
+  
+    data-tooltip="id: collection-tooltip-3104340;
+    position: right;
+    offset: 0;
+    animate: true;
+    timer: 650;
+    delay: false;
+    is_centered: true;"
+    
+>
+  <div class="browse-item-card">
+    <div class="grid-item-padding">
+      <a href="https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1/videos/avtmuk-nicky-gumbel-p2-ep07-vod-4k" class="browse-item-link" data-track-event="site_video" data-track-event-properties="{&quot;type&quot;:&quot;video&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;,&quot;id&quot;:3104340,&quot;context&quot;:&quot;site_context_upnext&quot;,&quot;label&quot;:&quot;Nicky Gumbel - Part 2&quot;,&quot;canonical_collection&quot;:null}">
+        <div class="browse-image-container ">
+            <span class="freemium-lock">
+              <i class="icon icon--xsmall icon-lock-inverse"></i>
+            </span>
+
+
+          <img alt="Nicky Gumbel - Part 2" src="https://vhx.imgix.net/rhemamedia/assets/7f962468-bdde-4b40-a1f2-115e5ed83cbb.jpg?auto=format%2Ccompress&fit=crop&h=360&w=640" />
+
+
+          <div class="browse-info-container">
+              <div class="duration-container
+                is-locked
+                "
+              >
+                25:17
+              </div>
+          </div>
+        </div> 
+      </a>
+
+      <div class="padding-small">
+        <div class="site-font-primary-color browse-item-title">
+           <a
+            href="https://www.shinetv.co.nz/a-very-tall-man-uk-edition/season:1/videos/avtmuk-nicky-gumbel-p2-ep07-vod-4k"
+            data-track-event="site_video"
+            data-track-event-properties="{&quot;type&quot;:&quot;video&quot;,&quot;location&quot;:&quot;https://rhemamedia.vhx.tv/videos/averytallmanuk-johnlennox-pt1/&quot;,&quot;id&quot;:3104340,&quot;context&quot;:&quot;site_context_upnext&quot;,&quot;label&quot;:&quot;Nicky Gumbel - Part 2&quot;,&quot;canonical_collection&quot;:null}"
+          >
+            <strong title="Nicky Gumbel - Part 2">
+              Nicky Gumbel - Part 2
+            </strong>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div 
+         class="tooltip background-white" id="collection-tooltip-3104340">
+      <h3 class="tooltip-item-title site-font-primary-family"><strong>Nicky Gumbel - Part 2</strong></h3>
+
+        <div class="transparent padding-top-medium">
+          <p>In this second part, Nicky Gumbel talks about pandemic of loneliness and his hope for the future.</p>
+        </div>
+    </div>
+  </div>
+</li>
+
+    </ul>
+  </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="row standard-width-container margin-bottom-large">
+      <div class="padding-top-xlarge column small-centered small-14 medium-13 large-10" id="watch-comments">
+        <a name="comments"></a>
+
+<div class="comments-container"
+  data-text-confirm-user-block="Are you sure you want to block this user?"
+  data-text-comment-deleted="Comment has been deleted."
+  data-text-comments-heading-singular="Comment"
+  data-text-comments-heading-plural="Comments"
+  data-text-error-deleting-comment="Error deleting comment."
+  data-text-please-enter-comment="Please enter a comment."
+  data-text-report-comments="Report comment?"
+  data-text-signup-signin-to-reply="Sign up or sign in to reply!"
+  data-text-something-went-wrong="Something went wrong. Please refresh your browser and try again."
+  data-text-user-already-blocked="User is already blocked."
+  data-text-error-permissions="Insufficient permissions to view comments."
+>
+    <div class="row-alignment border-bottom site-border-color">
+      <div id="comment-heading">
+        <h3 class="head secondary site-font-primary-color site-font-primary-family tracking-small padding-bottom-medium"><strong><span class="comment-count" data-count="1">1</span> <span class="comment-count-language">Comment</span></strong></h3>
+      </div>
+      <div id="sort-dropdown">
+        <form id="sort-dropdown" autocomplete="off">
+  <select id="comment-sort" class="js-sort-items btn-dropdown-transparent" data-url="/comments" data-commentable-id="3099028">
+      <option value="">Sort by...</option>
+      <option value="desc">
+        Sort by newest first
+      </option>
+      <option value="asc">
+      Sort by oldest first
+      </option>
+  </select>
+</form>
+
+      </div>
+    </div>
+
+
+  <div id="comments-section"
+    class="comments-listing js-load-more-container"
+    data-text-error-loading="There was an error loading comments. Try refreshing the page to view."
+  >
+      <p class="text-center margin-vertical-xlarge"><i class="loader-white loader--large"></i></p>
+  </div>
+
+  <div class="row">
+    <div class="small-16 text-center padding-top-medium padding-bottom-large">
+      <a id="comments-load-more" data-load-more="infinite_scroll: false;" data-load-more-target="js-load-more-container" class="js-load-more-link btn btn-site-secondary is-hidden">Load More</a>
+    </div>
+  </div>
+
+</div>
+
+
+      </div>
+  </section>
+
+
+  </main>
+
+    <style>
+  a.site-link-footer-color,
+  a.site-link-footer-color:visited {
+    color: #030303 !important;
+  }
+  .btn-site-footer,
+  .btn-site-footer:link,
+  .btn-site-footer:visited {
+    color: #f18700;
+    background-color: #000;
+  }
+  .btn-site-footer:hover,
+  .btn-site-footer.is-hover,
+  .btn-site-footer:focus,
+  .btn-site-footer:focus:hover,
+  .btn-site-footer:active,
+  .btn-site-footer.is-active {
+    color: #000;
+    border-color: #000;
+    background-color: #f18700;
+  }
+
+  .btn-logout-form {
+    display: inline;
+    line-height: 0;
+  }
+
+  .btn-logout {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .btn-logout:hover {
+    opacity: .5;
+  }
+</style>
+
+<footer class="footer--site border-top site-border-color site-background-color padding-top-medium padding-bottom-medium ">
+  <div class="row full-width">
+    <div class="small-16 medium-6 large-10 columns helper-links small-only-text-center">
+      <div class="padding-left-medium display-flex-container flex-start force-min-height">
+              <a href="https://info.shinetv.co.nz/shinetv/contactus" class="site-font-secondary-color" target="_blank" rel="noopener">Contact Us</a>
+              <a href="https://info.shinetv.co.nz/shinetv/aboutus" class="site-font-secondary-color" target="_blank" rel="noopener">About Us</a>
+              <a href="https://info.shinetv.co.nz/shinetv/howtowatch" class="site-font-secondary-color" target="_blank" rel="noopener">How to Watch</a>
+              <a href="https://info.shinetv.co.nz/shinetv/sharethelove/" class="site-font-secondary-color" target="_blank" rel="noopener">Share The Love</a>
+              <a href="https://rhemamedia.co.nz/advertise" class="site-font-secondary-color" target="_blank" rel="noopener">Advertise With Us</a>
+
+
+        <a href="/help" class="site-font-secondary-color legal-link help-link" rel="noopener">
+          Help
+        </a>
+        <a href="/tos" class="site-font-secondary-color legal-link terms-link" rel="noopener">
+          Terms
+        </a>
+        <a href="/privacy" class="site-font-secondary-color legal-link privacy-link" rel="noopener">
+          Privacy
+        </a>
+        <a href="/cookies" class="site-font-secondary-color legal-link cookies-link" rel="noopener">
+          Cookies
+        </a>
+
+
+            <a href="/login" class="site-font-secondary-color signin-link">
+              Sign in
+            </a>
+      </div>
+    </div> <!-- columns -->
+    <div class="small-16 medium-10 large-6 small-only-text-center text-right columns vhx-link">
+      <div class="padding-right-small display-flex-container flex-end force-min-height">
+          &nbsp;
+        <div id="language-switcher-react-app"
+             class="padding-right-small"
+             data-supported-locales="[]"
+        </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.vhx.tv/assets/vite/assets/language-switcher-5233bead.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/styled-components.browser.esm.b15de927.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/LanguageSwitcher.78d3a1c5.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/index.6d3846f1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/intl.helpers.24f17431.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/index.ba1ac051.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/deviceSizes.2eb09890.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/provider.5e3c9ea9.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/message.08215b33.js" as="script" crossorigin="anonymous">
+      </div> <!-- display-flex-container -->
+    </div>
+  </div> <!-- row -->
+</footer>
+
+<div class="modal">
+  <div class="close"><a href="#close" alt="Close Window"><strong class="is-inverse">&times;</strong></a></div>
+  <div class="content"></div>
+</div>
+
+<div id="blanket"></div>
+
+
+  <div class="modals">
+    
+  </div>
+
+  <script src="https://cdn.vhx.tv/assets/webpack/vendor-ottbundle-0242e3bea3624e99e050.js"></script>
+
+  <script>
+    window.VHX = window.VHX || {};
+    window.VHX.config = {
+      api_url: "https://api.vhx.tv",
+      token: "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ2YmZlZmMzNGIyNTdhYTE4Y2E2NDUzNDE2ZTlmZmRjNjk4MDAxMDdhZTQ2ZWJhODg0YTU2ZDBjOGQ4NTYzMzgifQ.eyJhcHBfaWQiOjExNDU0NywiZXhwIjoxNzExMDE4MTY1LCJub25jZSI6ImIxMmI1Nzg3ZWVhNzMwZDQiLCJzY29wZXMiOlsicHVibGljIl0sInNlc3Npb25faWQiOiJ2YUM5Z0JubElkaGF3ZkFLUTRtQVpBPT0iLCJzaXRlX2lkIjoxMDYyODV9.ep7F7rQIJ3oR9htYODYWMLcpC8xZUa9L7imkAxjTawL87PA8KwPEn-HquG6L_4qiX8GtLSeT32Cfb5XqSwwLPSN0wzD7ht_hZJ53M0TwJAvQzH5fIXWjqo79KxDd5lEuzx0I71RRNLaOc7L62u3CiwHPzSo383PvrE9_4Ym1kOc-s5MtLMqhj3NGhzMLn0mXjSQ-1xnNiZFkMiEoDcA4Z0GWBOTwqSeqDuUBR3-Jc0F3_s7pzOTFnAh6ivRK4Nq_dFpbuflzmzD5CfUjU0uHefOG3ytgGfV3N1YoA3x-xbudA0b5r9bBbEgjafWUryq25IZSTlLx9ToMCj9e7wOFU22GZfC2z04R925Qr32Rxt5c9ph-Pg-Gm4_QFQhhsytjN0wnmln8r6ndvAuBnCnu85Xw8f3YmyTsfYW5Zk4v1Ie2lOF7Sflfxy-8ELnLMqlnKGF4FZjOQGXmIm7aK1ewVbN_On03DC2OhFswXyrZkoDJVdSIhEqgxcg82Tnir-WZSQQ0I98Cwyr4xRpVg7a3zW1P9oYStJ5DlzhBu5c9b5OYVFJ9nU_8_MyY0IxZRmbeK8vy-u6Ncf9fS6mkeQGiDGFYC-Jw4bYSBUH7fmSImACj-LLRxCG40SeJVssHbGoA4EHNzAeXB9EeA3z_vipDK9GaZonv0A-9hRJa-cbAQz4",
+      token_expires_in: "7200000",
+      user_has_subscription: "false"
+    };
+  </script>
+
+  <script src="https://cdn.vhx.tv/assets/webpack/sites-ottbundle-61499ade4fa23d78bfdb.js"></script>
+  
+
+      <script>
+    window.COMMENTABLE_ID = 3099028;
+    window.VHX = window.VHX || {};
+    window.VHX.config = {
+      api_url: "https://api.vhx.tv",
+      embed_url: "https://embed.vhx.tv/videos/3099028?api=1&amp;autoplay=1&amp;buy_label=Register&amp;collection_id=984003&amp;color=f18700&amp;context=https%3A%2F%2Fwww.shinetv.co.nz%2Fa-very-tall-man-uk-edition%2Fseason%3A1&amp;is_trailer=false&amp;live=0&amp;locale=en&amp;playsinline=1&amp;product_id=70302&amp;referrer=&amp;vimeo=1",
+      token: "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ2YmZlZmMzNGIyNTdhYTE4Y2E2NDUzNDE2ZTlmZmRjNjk4MDAxMDdhZTQ2ZWJhODg0YTU2ZDBjOGQ4NTYzMzgifQ.eyJhcHBfaWQiOjExNDU0NywiZXhwIjoxNzExMDE4MTY1LCJub25jZSI6ImIxMmI1Nzg3ZWVhNzMwZDQiLCJzY29wZXMiOlsicHVibGljIl0sInNlc3Npb25faWQiOiJ2YUM5Z0JubElkaGF3ZkFLUTRtQVpBPT0iLCJzaXRlX2lkIjoxMDYyODV9.ep7F7rQIJ3oR9htYODYWMLcpC8xZUa9L7imkAxjTawL87PA8KwPEn-HquG6L_4qiX8GtLSeT32Cfb5XqSwwLPSN0wzD7ht_hZJ53M0TwJAvQzH5fIXWjqo79KxDd5lEuzx0I71RRNLaOc7L62u3CiwHPzSo383PvrE9_4Ym1kOc-s5MtLMqhj3NGhzMLn0mXjSQ-1xnNiZFkMiEoDcA4Z0GWBOTwqSeqDuUBR3-Jc0F3_s7pzOTFnAh6ivRK4Nq_dFpbuflzmzD5CfUjU0uHefOG3ytgGfV3N1YoA3x-xbudA0b5r9bBbEgjafWUryq25IZSTlLx9ToMCj9e7wOFU22GZfC2z04R925Qr32Rxt5c9ph-Pg-Gm4_QFQhhsytjN0wnmln8r6ndvAuBnCnu85Xw8f3YmyTsfYW5Zk4v1Ie2lOF7Sflfxy-8ELnLMqlnKGF4FZjOQGXmIm7aK1ewVbN_On03DC2OhFswXyrZkoDJVdSIhEqgxcg82Tnir-WZSQQ0I98Cwyr4xRpVg7a3zW1P9oYStJ5DlzhBu5c9b5OYVFJ9nU_8_MyY0IxZRmbeK8vy-u6Ncf9fS6mkeQGiDGFYC-Jw4bYSBUH7fmSImACj-LLRxCG40SeJVssHbGoA4EHNzAeXB9EeA3z_vipDK9GaZonv0A-9hRJa-cbAQz4",
+      token_expires_in: "7200000",
+      user_has_subscription: "false",
+      is_avod: true,
+      user_has_plan: false,
+      is_admin: false
+    };
+    window.VHX.video = {
+      id: "3099028",
+      status: "pending",
+      isLive: "false",
+      scheduled_at: "",
+      isDRM: "true",
+      isTrailer: "false",
+      
+    };
+  </script>
+
+  <script src="https://cdn.vhx.tv/assets/webpack/videos-ottbundle-f4ddcc8c819a805af2a6.js"></script>
+  <script src="https://cdn.vhx.tv/assets/player.js"></script>
+
+    <script src="https://cdn.vhx.tv/assets/vite/assets/search-b0acc08c.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/styled-components.browser.esm.b15de927.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/index.esm.25697539.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/index.a0093c23.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/intl.helpers.24f17431.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/api.utils.703333ed.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/Menu.esm.dfb804b1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/Button.esm.a3cfa5c3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/Text.esm.9692ec6d.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/message.08215b33.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/Checkmark.esm.489669d2.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/Link.esm.088f9a0d.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/Search.esm.fefe3e97.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/index.6d3846f1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/text-helpers.6e258858.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/time-helpers.a9c94651.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/_includes.a0cf76c1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/_curry2.6f920f03.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/path.a6c4b3fd.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/Header.esm.4e09b1f3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/DismissX.esm.96e3f70c.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/colors.esm.ddd777ea.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/inheritsLoose.af59e121.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/index.ba1ac051.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/ChevronDown.esm.32ded020.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/_isArray.3eafb232.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/index.8f4f2bdd.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/equals.0c7eab92.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://cdn.vhx.tv/assets/vite/_isString.966efe80.js" as="script" crossorigin="anonymous"><link rel="stylesheet" media="screen" href="https://cdn.vhx.tv/assets/vite/assets/search.entry-f3a7a39a.css" />
+
+
+<script>
+  setTimeout(function() {
+    document.documentElement.className += ' is-loaded';
+    var selects = document.getElementsByClassName('select'),
+        checkboxes = document.getElementsByClassName('checkbox'),
+        i;
+
+    if (selects.length) {
+      for (i = 0; i < selects.length; i++) {
+        selects[i].className += ' ready';
+      }
+    }
+
+    if (checkboxes.length) {
+      for (i = 0; i < checkboxes.length; i++) {
+        for (var p=0; p < checkboxes[i].childNodes.length; p++) {
+          if (checkboxes[i].childNodes[p].tagName == 'LABEL') {
+            checkboxes[i].childNodes[p].className += ' ready';
+            break;
+          }
+        }
+      }
+    }
+  }, 500);
+</script>
+
+  
+
+
+
+    <script>
+      const javascript = '\$(document).ready(function(){\n // fix Roku badge link\n var old_roku_link = \'https://channelstore.roku.com/details/618021\';\n var new_roku_link = \'https://channelstore.roku.com/details/07b4e38c84504dcda9e39938be359e2b/shine-tv\';\n\$(\"a[href*=\'\"+old_roku_link+\"\']\").attr(\"href\",new_roku_link);\n});';
+      try {
+        // Using eval so we can catch syntax errors
+        eval(javascript);
+      } catch (err) {
+        console.error(err);
+      }
+    </script>
+</body>
+</html>

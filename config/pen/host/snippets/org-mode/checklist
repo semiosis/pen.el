@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: checklist
+# group: mine
+# key: cl
+# --
++ ${1:Checklist} [/]
+  - [-] ${0:first item}

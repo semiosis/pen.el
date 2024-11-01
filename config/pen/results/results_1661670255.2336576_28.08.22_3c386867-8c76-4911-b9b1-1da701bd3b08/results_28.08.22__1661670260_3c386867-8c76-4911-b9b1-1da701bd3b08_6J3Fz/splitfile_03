@@ -1,0 +1,13 @@
+"table.iloc" is a pandas function that allows us to index the rows and columns of a table by their integer location.
+
+The first row of a table has an integer location of 0.
+
+The first column of a table has an integer location of 0.
+
+The second row of a table has an integer location of 1.
+
+The second column of a table has an integer location of 1.
+
+The third row of a table has an integer location of 2.
+
+The third

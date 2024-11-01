@@ -1,0 +1,1 @@
+aws lambda create-function --function-name MyFunction --runtime nodejs6.10 --role arn:aws:iam::123456789012:role/MyRole --handler index.handler --zip-file fileb://lambda.zip

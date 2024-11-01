@@ -1,0 +1,383 @@
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache, private
+Date: Mon, 04 Apr 2022 00:17:03 GMT
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IldWaDFUemkwMjA5U2JJRXVaVkpTWHc9PSIsInZhbHVlIjoicm5idzJMT2JEdTB4dmVqQjVTV0tBNml2Z2VYTlUrSlI2TVpkZWpLKzIwOG9iQjRhcU5TQlhrUDBWZ3dmSXlmNnJhdERHbEw0OW5VYUpWOElUL0hkTjZ4Z3F1UW1kc3VyeHJwNjE2a2YzckVpVSsrVWUvaHozRmJPcUZ1bjR4SGwiLCJtYWMiOiI2NzhkODU5YjAyMjMyMDAzM2I4Y2E4ZGIyOWM3ZWY5YTA4OTM1YmRhODA4NjJiNDBlMjZjMTc0NTUzYmE0YWZlIn0%3D; expires=Mon, 04-Apr-2022 02:17:03 GMT; Max-Age=7200; path=/; samesite=lax
+Set-Cookie: gptprompts_session=eyJpdiI6Im54Vldrc2RVQVVTaGxVZ0RGbk5Bc3c9PSIsInZhbHVlIjoiSDB1N2FVS3ErakVUNEV6bVIyblQvd0N5L0VpcWg5MUEzYjFsOUZvMERZNDI4L1ZvdzhzQ1FRKytXVURSK2RiSmtKa2M0MnV2Y1U5RlIrN0l5d0dlMDFxVjQ4a1pHNlorNnZzRGVjT1ltUDBlOUdaM1pvYXp2U1pjZnQ0YXBiZXMiLCJtYWMiOiIwNzRiNzA2OGE1ZDJlZWFmYTgzMzU4ZmNhM2M4ZWUyOTEzMTFjYjI3MTQxMzc2ZDA3YzFiMjdiMzljZTNmMzU0In0%3D; expires=Mon, 04-Apr-2022 02:17:03 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>GPT Prompt Database</title>
+	<link rel="stylesheet" href="/style.css?r=345501">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</head>
+<body>
+	<div class="heading">
+		<div class="container flex jsb aic">
+			<h1><a href="/">GPT Prompts</a></h1>
+			<div class="navbar-right">
+									<a href="https://gptprompts.org/login" class="btn btn-empty">Login</a>
+								<a href="/about.html" class="btn btn-empty">About</a>
+				<a href="https://gptprompts.org/prompts/create" class="btn btn-primary">Submit prompt</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+			<div class="search">
+		<h2>Search</h2>
+		<form action="/prompts/search" method="GET">
+			<div class="flex">
+				<input type="text" class="inline" name="query">
+				<button class="btn btn-secondary">Search</button>
+			</div>
+		</form>
+	</div>
+
+	<h2>Recent prompts</h2>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/11">self-care coach named Louie</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Louie is a personal coach chatbot that will help you to improve yourself using logic and out-of-the-box thinking, he&#039;s clever, helpful, kind, and he will (almost) never say things that would hurt you. Although you have to be careful with this stuff because it can have errors :)
+
+
+Parameters:
+
+Engine: Davinci |
+
+Temperature: 0.9 (you can modify this at your wish) |
+
+Response Length: 150 or more |
+
+Stop sequences: ↵ (enter), Louie:, You: |
+
+Top P: 1 |
+
+Frequency penalty: 0 |
+
+Presence penalty: 0.6 |
+
+Best of: 1 |
+
+Inject start text: ↵(enter)Louie: |
+
+Inject restart text: ↵(enter)You:  |
+
+That&#039;s it.</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/13">assistant</a></span>
+											<span class="label"><a href="https://gptprompts.org/tags/14">chat</a></span>
+											<span class="label"><a href="https://gptprompts.org/tags/15">chatbot</a></span>
+									
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="11">
+	 &#x1F44D; <span class="upvote-count">3</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/5">Poem generator</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Poem generator</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/9">poetry-generation</a></span>
+									
+									<a target="_blank" href="https://www.notion.so/Poem-Generator-9ce8ed105fbb4ac38546e566e1d61ecf">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="5">
+	 &#x1F44D; <span class="upvote-count">3</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/7">Text adventure</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Simulates a text adventure game</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/10">game</a></span>
+											<span class="label"><a href="https://gptprompts.org/tags/11">text-adventure</a></span>
+									
+									<a target="_blank" href="https://github.com/maraoz/gpt-scrolls">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="7">
+	 &#x1F44D; <span class="upvote-count">3</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/10">How to remove coke stains out of white clothes</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Write an essay with steps on how to remove coke stains
+Step 1</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+				
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="10">
+	 &#x1F44D; <span class="upvote-count">1</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/9">What is the Google page experience?</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Understanding page experience in Google Search results.</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/12">google</a></span>
+									
+									<a target="_blank" href="https://support.google.com/webmasters/answer/10218333?hl=en">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="9">
+	 &#x1F44D; <span class="upvote-count">1</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/4">Blog post generation</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Blog post generation, &quot;uses&quot; the davinci-instruct-beta model by OpenAI. (Meaning that it will not work well on other models that have not been fine-tuned on taking instructions rather than examples.)</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/1">content-generation</a></span>
+									
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="4">
+	 &#x1F44D; <span class="upvote-count">3</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/6">Question Answering with internal monologue</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Question answering that also simulates an internal monologue of the model (i.e. his thoughts on the questions.)</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/3">question-answering</a></span>
+									
+									<a target="_blank" href="https://github.com/maraoz/gpt-scrolls">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="6">
+	 &#x1F44D; <span class="upvote-count">2</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/8">Complicate it</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Write a more complicated version of the input text</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/1">content-generation</a></span>
+									
+									<a target="_blank" href="https://github.com/maraoz/gpt-scrolls/">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="8">
+	 &#x1F44D; <span class="upvote-count">2</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/2">Text summarization</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Summarize and simplify text so that a second grader can understand</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/6">text-summarization</a></span>
+											<span class="label"><a href="https://gptprompts.org/tags/5">summarization</a></span>
+									
+									<a target="_blank" href="https://www.notion.so/Summarization-69a5c64efb2f463f9eb556485f0e2fcc">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="2">
+	 &#x1F44D; <span class="upvote-count">4</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/3">Medical question answering</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>The original Twitter thread linked as source shows that GPT-3 predicts the correct answer with a plausible explanation, but due to the randomness of the model results can vary in my experience. In any case, it shouldn&#039;t be needed to say this but: never use GPT-3 answers as medical advice</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/7">medical</a></span>
+											<span class="label"><a href="https://gptprompts.org/tags/3">question-answering</a></span>
+									
+									<a target="_blank" href="https://twitter.com/QasimMunye/status/1278750809094750211">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="3">
+	 &#x1F44D; <span class="upvote-count">3</span>
+</a>
+			</div>
+		</div>
+	</div>
+	<div class="prompt">
+		<div class="description">
+			<div class="flex aic jsb">
+				<h2><a href="https://gptprompts.org/prompts/1">Basic question answering prompt</a></h2>
+				<div class="prompt-info">
+					<span title="Last updated" class="date">3 months ago</span>
+				</div>
+			</div>
+			<p>Basic question answering prompt</p>
+		</div>
+
+		
+
+		<div class="flex prompt-bar">
+			<div class="tags">
+															<span class="label"><a href="https://gptprompts.org/tags/3">question-answering</a></span>
+									
+									<a target="_blank" href="https://www.notion.so/Q-A-a8629813805045ae91be72e079347a05">Source</a>
+							</div>
+			
+			<div class="actions">
+								
+				<a class="btn btn-secondary upvotes upvote-btn"  data-id="1">
+	 &#x1F44D; <span class="upvote-count">2</span>
+</a>
+			</div>
+		</div>
+	</div>
+<div class="pages">
+	
+</div>	</div>
+	<script type="text/javascript" src="/script.js"></script>
+</body>
+</html>

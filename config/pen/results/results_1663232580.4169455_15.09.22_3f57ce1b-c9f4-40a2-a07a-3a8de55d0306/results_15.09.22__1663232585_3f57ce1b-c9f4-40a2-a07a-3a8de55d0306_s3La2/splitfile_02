@@ -1,0 +1,1 @@
+ aws lambda create-function --function-name <name> --runtime <runtime> --role <role> --handler <handler> --zip-file <zip file>

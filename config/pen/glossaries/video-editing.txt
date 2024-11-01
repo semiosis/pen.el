@@ -1,0 +1,7 @@
+remux
+    A lossless process that simply takes the
+    video and audio streams from one container
+    and puts them into a new container.
+
+    "You can remux videos with OBS, for
+    example."

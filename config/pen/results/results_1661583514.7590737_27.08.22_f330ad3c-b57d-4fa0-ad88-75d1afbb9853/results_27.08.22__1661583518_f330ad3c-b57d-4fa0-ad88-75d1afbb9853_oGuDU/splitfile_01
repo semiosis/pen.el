@@ -1,0 +1,1 @@
+defun get-cl-implementation () (first *implementation-type*))

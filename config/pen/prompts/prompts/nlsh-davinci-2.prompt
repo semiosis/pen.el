@@ -1,0 +1,39 @@
+title: nlsh davinci
+task: Generate a bash one liner for OS from NL
+tags: hci
+prompt-version: 2
+doc: Get a bash one liner on OS from natural language
+notes:
+- "rlprompt is used here outside of pen.el"
+rlprompt: nlsh <1>
+prompt: |
+  # List of one-liner shell commands for <1>.
+  # Language: Shell
+  # Operating System: <1>
+
+  Input: Print the current directory
+  Output: pwd
+  <delim>
+  Input: List files
+  Output: ls -l
+  <delim>
+  Input: Change directory to /tmp
+  Output: cd /tmp
+  <delim>
+repeater: |
+  Input: {}
+  Output:
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- Operating System
+- command
+examples:
+- Arch Linux
+- Install package
+postprocessor: 'sed ''s/^Output: //'''
+conversation: true

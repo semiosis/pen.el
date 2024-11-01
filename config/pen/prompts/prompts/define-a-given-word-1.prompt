@@ -1,0 +1,41 @@
+task: "Define a given word"
+tags: prose english
+doc: "Given a word, even a fake one, come up with a definition"
+prompt-version: 2
+prompt: |-
+    imprudent (imprudent)
+    <delim>
+    Not showing care for the consequences of
+    an action; rash.
+    "it would be imprudent to leave her winter
+    coat behind"
+    <delim>
+    vain (vain)
+    <delim>
+    Having or showing an excessively high
+    opinion of one's appearance, abilities, or
+    worth.
+    "their flattery made him vain"
+    <delim>
+    <word> (<word>)
+    <delim>
+force-engine: "OpenAI Davinci"
+force-temperature: 0.8
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+defs:
+# Annoyingly, PEN_STOP_SEQUENCE as --- can cause problems
+# Because it may be recognised as a CLI argument.
+# - delim2: "\"---\""
+vars:
+- "word"
+validator: grep -q "<word>"
+examples:
+- "surrealeptitious"
+info: on
+completion: off
+insertion: off
+postprocessor: pen-str remove-starting-and-trailing-whitespace

@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "1" "Corinthians" "13:13" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Peter" "4:7" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "1" "Peter" "1:22" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "1" "Peter" "1:22-25" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "1" "John" "3:1-3" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "1" "John" "3:2-4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Peter" "1:13-20" "#" "<==" "zsh"

@@ -1,0 +1,8 @@
+
+(defn debug [request]
+  ;; (print (slurp (:body request)))
+  (print
+   {:status 200
+    :headers {"Content-Type" "text/html"}
+    :body request}))
+

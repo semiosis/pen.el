@@ -1,0 +1,27 @@
+task: "imagine a project template"
+doc: "Given the type of project I want to make, generate the file structure"
+tags: project code filesystem
+prompt-version: 1
+prompt: |+
+    $ # Start a brand new <type> project. Use a template.
+    $ git checkout "https://github.com/templates/<sl:type>-project-template"    
+    $ find ./<sl:type>-project-template/ -type f # Show template files <<EOD
+    .
+    <:pp>./
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+delimiter: "$ "
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- "type"
+examples:
+- "haskell stack"
+info: on
+completion: off
+insertion: off
+postprocessor: sed '/~$/d' | sed 's/^\.\/<sl:type>-project-template\///' | sed -e '/^$/d' -e '/^\.$/d'
+action: pen-touch-all-files

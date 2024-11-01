@@ -1,0 +1,99 @@
+RDF/XML
+    [Format]
+
+    A syntax, defined by the W3C, to express
+    an RDF graph as an XML document.
+    
+    RDF/XML is sometimes misleadingly called
+    simply RDF because it was introduced among
+    the other W3C specifications defining RDF
+    and it was historically the first W3C
+    standard RDF serialization format.
+
+SPARQL
+    An RDF query language—that is, a semantic
+    query language for databases—able to
+    retrieve and manipulate data stored in RDF
+    format.
+
+Linked Data
+Linked Open Data
+LOD
+    [#semantic web]
+
+    Structured data which is interlinked with
+    other data so it becomes more useful
+    through semantic queries.
+    
+    It builds upon standard Web technologies
+    such as HTTP, RDF and URIs, but rather
+    than using them to serve web pages only
+    for human readers, it extends them to
+    share information in a way that can be
+    read automatically by computers.
+    
+    Part of the vision of linked data is for
+    the Internet to become a global database.
+    
+    Tim Berners-Lee, director of the World
+    Wide Web Consortium (W3C), coined the term
+    in a 2006 design note about the Semantic
+    Web project.
+    
+    Linked data may also be open data, in
+    which case it is usually described as
+    linked open data (LOD).
+
+LOD Cloud
+    [#semantic web]
+
+    This image shows datasets that have been
+    published in the Linked Data format.
+
+    https://lod-cloud.net/
+
+Linked Data principles
+    [#semantic web]
+
+    - There must be resolvable http:// (or
+      https://) URIs.
+
+    - They must resolve, with or without
+      content negotiation, to RDF data in one
+      of the popular RDF formats (RDFa,
+      RDF/XML, Turtle, N-Triples).
+
+    - The dataset must contain at least 1000
+      triples. (Hence, your FOAF file most
+      likely does not qualify.)
+
+    - The dataset must be connected via RDF
+      links to a dataset that is already in
+      the diagram. This means, either your
+      dataset must use URIs from the other
+      dataset, or vice versa. We arbitrarily
+      require at least 50 links.
+
+    - Access of the entire dataset must be
+      possible via RDF crawling, via an RDF
+      dump, or via a SPARQL endpoint.
+
+RDF
+Resource Description Framework
+    A framework for describing resources on
+    the web.
+    
+    RDF is designed to be read and understood
+    by computers.
+    
+    RDF is not designed for being displayed to
+    people.
+    
+    RDF is written in XML.
+
+RDF crawler
+RDF web crawler
+    [#semantic web]
+
+LOD crawler
+    [#semantic web]

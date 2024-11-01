@@ -1,0 +1,280 @@
+Wikidata
+    A collaboratively edited multilingual KG
+    hosted by the Wikimedia Foundation.
+    
+    It is a common source of open data that
+    Wikimedia projects such as Wikipedia, and
+    anyone else, can use under the CC0 public
+    domain license.
+
+Suggested Upper Merged Ontology
+SUMO
+    [[calibre:Group Modelling for Responsive Environments]]
+
+KIF
+Knowledge Interchange Format
+    http://logic.stanford.edu/kif/dpans.html
+    https://web.archive.org/web/20070212094221/http://www.ksl.stanford.edu/knowledge-sharing/kif/#manual
+
+    A programming language created in 1990.
+    
+    Knowledge Interchange Format (KIF) is a
+    computer language designed to enable
+    systems to share and re-use information
+    from knowledge-based systems.
+    
+    KIF is similar to frame languages such as
+    KL-One and LOOM but unlike such language
+    its primary role is not intended as a
+    framework for the expression or use of
+    knowledge but rather for the interchange
+    of knowledge between systems.
+    
+    The designers of KIF likened it to
+    PostScript.
+
+panoptic
+    One universe, containing every possible
+    'thing': quantifiers work properly.
+
+transparent
+    Meanings of expressions do not depend on
+    the logical context: equality works
+    properly.
+
+unrestricted
+    Any name can be used for any logical
+    purpose: no type/sort checking, few
+    'legality' constraints.
+
+network logic
+    Meanings of expressions do not depend on
+    their network location: no
+    lexical/syntactic negotiation.
+
+    (Horatio principle)
+
+Horatio principle
+    http://mark.reid.name/blog/the-horatio-principle.html
+
+    Some events in a large world are
+    necessarily nonmeasurable.
+
+semantic web
+    A proposed development of the World Wide
+    Web in which data in web pages is
+    structured and tagged in such a way that
+    it can be read directly by computers.
+
+    "the Semantic Web could usher in a golden age of information access"
+
+ontology
+    [#metaphysics]
+    [noun]
+
+    A set of concepts and categories in a
+    subject area or domain that shows their
+    properties and the relations between them.
+
+    "what's new about our ontology is that it
+    is created automatically from large
+    datasets"
+
+
+    [#metaphysics]
+    [field of study]
+
+    The study of things, how they relate to
+    other things, and what those things are
+    called.
+    
+    However, there's an easier, less
+    philosophical way of explaining what an
+    ontologist does.
+    
+    He or she is a creator of languages.
+    
+    An ontologist is a language engineer.
+
+shape graph
+
+data graph
+
+SHACL
+Shapes Constraint Language
+    While languages like XML Schema are
+    limited to tree structures, SHACL is based
+    on RDF and supports the validation of
+    graph-based and object-oriented data.
+    
+    Since SHACL is based on RDF, it may also
+    serve as a schema language for JSON via
+    its JSON-LD dialect.
+    
+    The examples in this Tutorial are using
+    the RDF Turtle notation.
+    
+    We also show screenshots of TopBraid
+    Composer, for those who would like to
+    follow along with a graphical editing
+    tool.
+    
+    A language for validating RDF graphs
+    against a set of conditions.
+        Includes features to express
+        conditions that constrain the number
+        of values that a property may have,
+        the type of such values, numeric
+        ranges, string matching patterns, and
+        logical combinations of such
+        constraints.
+        
+        Also includes an extension mechanism
+        to express more complex conditions in
+        languages such as SPARQL.
+        
+        These conditions are provided as
+        shapes and other constructs expressed
+        in the form of an RDF graph.
+        
+        RDF graphs that are used in this
+        manner are called "shapes graphs" in
+        SHACL and the RDF graphs that are
+        validated against a shapes graph are
+        called "data graphs".
+
+    As SHACL shape graphs are used to validate
+    that data graphs satisfy a set of
+    conditions they can also be viewed as a
+    description of the data graphs that do
+    satisfy these conditions.
+    
+    Such descriptions may be used for a
+    variety of purposes beside validation,
+    including user interface building, code
+    generation and data integration.
+        
+Terse RDF Triple Language
+Turtle
+    [syntax and file format]
+    
+    For expressing data in the RDF data model.
+    
+    Syntax is similar to that of SPARQL, an
+    RDF query language.
+    
+    It is a common data format for storing RDF
+    data, along with N-Triples, JSON-LD and
+    RDF/XML.
+
+SPARQL
+    (pronounced "sparkle", a recursive acronym
+    for SPARQL Protocol and RDF Query
+    Language)
+
+    [RDF query language]
+    [semantic query language]
+
+    For databases; able to retrieve and
+    manipulate data stored in RDF format.
+    
+    Implementations for multiple programming
+    languages exist.
+    
+    There exist tools that allow one to
+    connect and semi-automatically construct a
+    SPARQL query for a SPARQL endpoint, for
+    example ViziQuer.
+    
+    In add—tion, there exist tools that
+    translate SPARQL queries to other query
+    languages, for example to SQL and to
+    XQuery.
+
+KG
+knowledge graph
+    A representation of a set of statements in
+    the form of a node- and edge-labeled
+    directed multigraph allowing multiple,
+    heterogeneous edges for the same nodes.
+    
+    A collection of definitional statements
+    specifying the meaning of the knowledge
+    graph's labels is called its schema.
+
+KOS
+knowledge organization system
+
+Synaptica
+    [Taxonomy management software]
+    
+    For knowledge organization systems, Linked
+    Data, annotation, indexing, auto
+    classification, search and discovery.
+
+    https://www.synaptica.com/
+
+    Knowledge Solutions
+
+    Synaptica provides enterprise taxonomy and
+    ontology management software tools and
+    professional services.
+    
+    Our mission is to help you organize,
+    categorize, and discover the knowledge in
+    your enterprise.
+
+SKOS
+Simple Knowledge Organization System
+    An area of work developing specifications
+    and standards to support the use of KOS
+    such as thesauri, classification schemes,
+    subject heading systems and taxonomies
+    within the framework of the Semantic Web.
+    
+    Provides a standard way to represent
+    knowledge organization systems using the
+    RDF.
+    
+    Encoding this information in RDF allows it
+    to be passed between computer applications
+    in an interoperable way.
+    
+    Using RDF also allows knowledge
+    organization systems to be used in
+    distributed, decentralised metadata
+    applications.
+    
+    Decentralised metadata is becoming a
+    typical scenario, where service providers
+    want to add value to metadata harvested
+    from multiple sources.
+
+Terse RDF Triple Language
+Turtle
+.ttl
+
+    find $MYGIT/RDFLib/pySHACL/test/resources/dash_tests -name '*.ttl' | pager
+
+RDF
+    Represents information using semantic
+    triples, which comprise a subject,
+    predicate, and object.
+    
+    Each item in the triple is expressed as a
+    Web URI.
+    
+    Turtle provides a way to group three URIs
+    to make a triple, and provides ways to
+    abbreviate such information, for example
+    by factoring out common portions of URIs.
+    
+    For example, information about Huckleberry
+    Finn could be expressed as:
+
+    <http://example.org/person/Mark_Twain>
+       <http://example.org/relation/author>
+       <http://example.org/books/Huckleberry_Finn> .
+
+seed thesaurus
+seed thesaurai

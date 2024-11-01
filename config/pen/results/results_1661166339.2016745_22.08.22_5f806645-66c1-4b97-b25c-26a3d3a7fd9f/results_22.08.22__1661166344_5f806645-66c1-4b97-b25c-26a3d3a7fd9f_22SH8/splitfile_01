@@ -1,0 +1,11 @@
+
+import qualified Data.Map as M
+import qualified Data.Set as S
+
+main :: IO ()
+main = do
+main = do
+
+toUpper :: String -> String
+toUpper [] = []
+toUpper

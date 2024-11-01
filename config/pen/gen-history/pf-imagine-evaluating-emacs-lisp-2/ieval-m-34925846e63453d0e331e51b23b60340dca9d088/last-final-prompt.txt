@@ -1,0 +1,3 @@
+;; Run function css-code-color-of-thing
+(message (eval '(css-code-color-of-thing "sun")))
+--> 

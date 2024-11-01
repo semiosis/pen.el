@@ -1,0 +1,21 @@
+ There was a table set out under a tree in
+front of the house, and the Dormouse was
+having tea at it : the March Hare and the
+Hatter were using it as a cushion, resting
+their elbows on it, and talking over its head.
+"""
+
+try_again = True
+
+while try_again:
+    print(text)
+    i = input("Attempt: ")
+
+    print("\n")
+
+    if text != i:
+        try_again = True
+        print("Nope, try again!")
+    else:
+        try_again = False
+        print("Nice!")

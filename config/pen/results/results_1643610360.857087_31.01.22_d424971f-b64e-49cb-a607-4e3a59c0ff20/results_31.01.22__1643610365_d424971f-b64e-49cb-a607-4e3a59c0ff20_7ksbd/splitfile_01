@@ -1,0 +1,7 @@
+by-default: nil
+
+# If set to on, it will default to the language set
+# in fav-world-language.
+# If set to nil, it will default to current
+# buffer's language
+# If set

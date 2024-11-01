@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: record
+# group: syntax
+# key: rec
+# --
+data Car = Car {company :: String, model :: String, year :: Int} deriving (Show)
+Car {company = "Ford", model = "Mustang", year = 1967}

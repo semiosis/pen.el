@@ -1,0 +1,13 @@
+
+- [[https://en.wikipedia.org/wiki/Gospel_of_Thomas][Gospel of Thomas]]
+EOD
+
+cat draft.org <<EOD
+* TODO Look into Canon and Heresy
+
+In his Church History, Philip of Side states
+that "the ancients absolutely refused the
+Gospel of the Hebrews, the Gospel of Peter and
+the Gospel of Thomas, which they considered
+the work of heretics."
+EOD

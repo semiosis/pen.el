@@ -1,0 +1,2 @@
+ ; Ce buffer est pour le texte qui n'est pas enregistré, ainsi que pour l'évaluation Lisp.\n;; Pour créer un fichier, visitez-le avec C-x C-f et entrez le texte dans son buffer.
+

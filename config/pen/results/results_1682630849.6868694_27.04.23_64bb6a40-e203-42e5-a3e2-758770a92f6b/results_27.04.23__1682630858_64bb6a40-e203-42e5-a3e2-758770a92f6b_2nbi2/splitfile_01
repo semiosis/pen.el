@@ -1,0 +1,5 @@
+"@u" is a type-level string that serves as a name for the unit.
+
+The type-level string is used to provide a human-readable name for the unit.
+
+The human-readable name is used to provide a string that can be used in documentation.

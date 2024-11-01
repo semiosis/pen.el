@@ -1,0 +1,2 @@
+Output:
+bin  boot  cdrom  dev  etc  export  gnu  home  input.txt  lib  lib32  lib64  libx32  mnt  media  nix  opt  path  proc  root  run  snap  srv  tmp

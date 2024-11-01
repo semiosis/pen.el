@@ -1,0 +1,1 @@
+- Simon Peyton Jones: That's kind of like execState, but returns the return value of the state monad.

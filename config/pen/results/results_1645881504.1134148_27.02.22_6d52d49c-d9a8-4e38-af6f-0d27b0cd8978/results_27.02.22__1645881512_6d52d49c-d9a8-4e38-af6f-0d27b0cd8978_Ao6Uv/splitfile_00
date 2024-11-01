@@ -1,0 +1,5 @@
+
+
+(defun context-func-for-expression (context-predicate)
+  (lambda (expr)
+    (let ((context-preds (-distinct (flatten-once (cl-loop for tup in

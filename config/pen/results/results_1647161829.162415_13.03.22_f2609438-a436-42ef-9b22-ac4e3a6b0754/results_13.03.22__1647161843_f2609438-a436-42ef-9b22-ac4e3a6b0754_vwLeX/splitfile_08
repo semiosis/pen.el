@@ -1,0 +1,14 @@
+ial_state(state(left,left,left,left)).
+final_state(state(_,right,right,right)).
+
+% actions
+action(move(_,_,_,_)).
+action(push(_,_,_,_)).
+action(pull(_,_,_,_)).
+EOD
+
+cat draft.prolog <<EOD
+% preconditions of actions
+poss(move(X1,X2),S):- state(S), not wall(X1), not wall(X2), clear(X1), clear(X2).
+poss(push(X1,X2),S):- state(S), not wall(X1), not wall(X2), clear(X1), clear(X2).
+poss(pull(X1,X2),S):- state(S), not wall(X1), not wall(X2

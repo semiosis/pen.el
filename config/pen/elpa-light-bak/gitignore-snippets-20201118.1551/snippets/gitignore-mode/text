@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Text
+# contributor: Toptal & contributors
+# key: text
+# --
+
+### Text ###
+
+*.doc
+*.docx
+*.log
+*.msg
+*.pages
+*.rtf
+*.txt
+*.wpd
+*.wps

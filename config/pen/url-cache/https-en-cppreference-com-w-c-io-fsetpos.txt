@@ -1,0 +1,624 @@
+HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 06:07:04 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding,Cookie
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Content-Language: en
+TT-Server: t=1711951624297574 D=23824
+Upgrade: h2
+Connection: Upgrade, Keep-Alive
+Last-Modified: Fri, 26 Jan 2024 20:40:14 GMT
+Content-Length: 10460
+Keep-Alive: timeout=10, max=20
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>fsetpos - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit" />
+<link rel="edit" title="Edit" href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/io/fsetpos","wgTitle":"c/io/fsetpos","wgCurRevisionId":127259,"wgArticleId":6233,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/io/fsetpos","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_io_fsetpos skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-login"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Fio%2Ffsetpos" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></span></div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/w/c/io/fsetpos"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/mwiki/index.php?title=Talk:c/io/fsetpos&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/w/c/io/fsetpos" >View</a></span></li>
+					<li id="ca-edit"><span><a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+                <h1 id="firstHeading" class="firstHeading">fsetpos</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="/w/c" title="c">c</a>&lrm; | <a href="/w/c/io" title="c/io">io</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/language" title="c/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/header" title="c/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/types" title="c/types"> Type support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/program" title="c/program"> Program utilities</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/variadic" title="c/variadic"> Variadic function support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/error" title="c/error"> Error handling</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/memory" title="c/memory"> Dynamic memory management</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/string" title="c/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/algorithm" title="c/algorithm"> Algorithms</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/numeric" title="c/numeric"> Numerics</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/chrono" title="c/chrono"> Date and time utilities</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/io" title="c/io"> Input/output support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/locale" title="c/locale"> Localization support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/thread" title="c/thread"> Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/experimental" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/symbol_index" title="c/symbol index"> Symbol index</a> </td></tr>
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c/io" title="c/io"> File input/output</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5">Types and objects</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/FILE" title="c/io/FILE"><span class="t-lines"><span>FILE</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fpos_t" title="c/io/fpos t"><span class="t-lines"><span>fpos_t</span></span></a></div><div><span class="t-lines"><span>&#160;&#160;&#160;&#160;</span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br />
+</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/std_streams" title="c/io/std streams"><span class="t-lines"><span>stdin</span><span>stdout</span><span>stderr</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Functions</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">File access</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fopen" title="c/io/fopen"><span class="t-lines"><span>fopen</span><span>fopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/freopen" title="c/io/freopen"><span class="t-lines"><span>freopen</span><span>freopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fwide" title="c/io/fwide"><span class="t-lines"><span>fwide</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/setbuf" title="c/io/setbuf"><span class="t-lines"><span>setbuf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/setvbuf" title="c/io/setvbuf"><span class="t-lines"><span>setvbuf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fclose" title="c/io/fclose"><span class="t-lines"><span>fclose</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fflush" title="c/io/fflush"><span class="t-lines"><span>fflush</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Direct input/output</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fread" title="c/io/fread"><span class="t-lines"><span>fread</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fwrite" title="c/io/fwrite"><span class="t-lines"><span>fwrite</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Unformatted input/output</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fgetc" title="c/io/fgetc"><span class="t-lines"><span>fgetc</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fgets" title="c/io/fgets"><span class="t-lines"><span>fgets</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fputc" title="c/io/fputc"><span class="t-lines"><span>fputc</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fputs" title="c/io/fputs"><span class="t-lines"><span>fputs</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/getchar" title="c/io/getchar"><span class="t-lines"><span>getchar</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/gets" title="c/io/gets"><span class="t-lines"><span>gets</span><span>gets_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-until-c11">(until C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/putchar" title="c/io/putchar"><span class="t-lines"><span>putchar</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/puts" title="c/io/puts"><span class="t-lines"><span>puts</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/ungetc" title="c/io/ungetc"><span class="t-lines"><span>ungetc</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fgetwc" title="c/io/fgetwc"><span class="t-lines"><span>fgetwc</span><span>getwc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fgetws" title="c/io/fgetws"><span class="t-lines"><span>fgetws</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fputwc" title="c/io/fputwc"><span class="t-lines"><span>fputwc</span><span>putwc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fputws" title="c/io/fputws"><span class="t-lines"><span>fputws</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/getwchar" title="c/io/getwchar"><span class="t-lines"><span>getwchar</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/putwchar" title="c/io/putwchar"><span class="t-lines"><span>putwchar</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/ungetwc" title="c/io/ungetwc"><span class="t-lines"><span>ungetwc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Formatted input</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fscanf" title="c/io/fscanf"><span class="t-lines"><span>scanf</span><span>fscanf</span><span>sscanf</span><span>scanf_s</span><span>fscanf_s</span><span>sscanf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fwscanf" title="c/io/fwscanf"><span class="t-lines"><span>wscanf</span><span>fwscanf</span><span>swscanf</span><span>wscanf_s</span><span>fwscanf_s</span><span>swscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span>&#160;&#160;&#160;&#160;</span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/vfscanf" title="c/io/vfscanf"><span class="t-lines"><span>vscanf</span><span>vfscanf</span><span>vsscanf</span><span>vscanf_s</span><span>vfscanf_s</span><span>vsscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/vfwscanf" title="c/io/vfwscanf"><span class="t-lines"><span>vwscanf</span><span>vfwscanf</span><span>vswscanf</span><span>vwscanf_s</span><span>vfwscanf_s</span><span>vswscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span> &#160;&#160;&#160;&#160;</span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">Formatted output</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fprintf" title="c/io/fprintf"><span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fwprintf" title="c/io/fwprintf"><span class="t-lines"><span>wprintf</span><span>fwprintf</span><span>swprintf</span><span>wprintf_s</span><span>fwprintf_s</span><span>swprintf_s</span><span>snwprintf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span>&#160;&#160;&#160;&#160;</span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/vfprintf" title="c/io/vfprintf"><span class="t-lines"><span>vprintf</span><span>vfprintf</span><span>vsprintf</span><span>vsnprintf</span><span>vprintf_s</span><span>vfprintf_s</span><span>vsprintf_s</span><span>vsnprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/vfwprintf" title="c/io/vfwprintf"><span class="t-lines"><span>vwprintf</span><span>vfwprintf</span><span>vswprintf</span><span>vwprintf_s</span><span>vfwprintf_s</span><span>vswprintf_s</span><span>vsnwprintf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">File positioning</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/ftell" title="c/io/ftell"><span class="t-lines"><span>ftell</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fgetpos" title="c/io/fgetpos"><span class="t-lines"><span>fgetpos</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/fseek" title="c/io/fseek"><span class="t-lines"><span>fseek</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>fsetpos</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/rewind" title="c/io/rewind"><span class="t-lines"><span>rewind</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Error handling</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/clearerr" title="c/io/clearerr"><span class="t-lines"><span>clearerr</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/feof" title="c/io/feof"><span class="t-lines"><span>feof</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/ferror" title="c/io/ferror"><span class="t-lines"><span>ferror</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/perror" title="c/io/perror"><span class="t-lines"><span>perror</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Operations on files</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/remove" title="c/io/remove"><span class="t-lines"><span>remove</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/rename" title="c/io/rename"><span class="t-lines"><span>rename</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/tmpfile" title="c/io/tmpfile"><span class="t-lines"><span>tmpfile</span><span>tmpfile_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/io/tmpnam" title="c/io/tmpnam"><span class="t-lines"><span>tmpnam</span><span>tmpnam_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code>&lt;stdio.h&gt;</code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dcl">
+<td class="t-dcl-nopad"> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> fsetpos<span class="br0">&#40;</span> <a href="http://en.cppreference.com/w/c/io/FILE"><span class="kw883">FILE</span></a> <span class="sy2">*</span>stream, <span class="kw4">const</span> <a href="http://en.cppreference.com/w/c/io/fpos_t"><span class="kw884">fpos_t</span></a> <span class="sy2">*</span>pos <span class="br0">&#41;</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td class="t-dcl-nopad">  </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>Sets the file position indicator and the multibyte parsing state (if any) for the file stream <code>stream</code> according to the value pointed to by <code>pos</code>. 
+</p><p>Besides establishing new parse state and position, a call to this function undoes the effects of <span class="t-lc"><a href="/w/c/io/ungetc" title="c/io/ungetc">ungetc</a></span> and clears the end-of-file state, if it is set.
+</p><p>If a read or write error occurs, the error indicator (<span class="t-lc"><a href="/w/c/io/ferror" title="c/io/ferror">ferror</a></span>) for the stream is set.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></table>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td>  stream
+</td>
+<td> -
+</td>
+<td>  file stream to modify
+</td></tr>
+<tr class="t-par">
+<td>  pos
+</td>
+<td> -
+</td>
+<td>  pointer to a <span class="t-lc"><a href="/w/c/io/fpos_t" title="c/io/fpos t">fpos_t</a></span> object to use as new value of file position indicator
+</td></tr></table>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
+<p><span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> upon success, nonzero value otherwise.
+</p>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
+<p>After seeking to a non-end position in a wide stream, the next call to any output function may render the remainder of the file undefined, e.g. by outputting a multibyte sequence of a different length.
+</p>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><p>fsetpos with error checking</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+&#160;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="coMULTI">/* Prepare an array of f-p values. */</span>
+    <span class="co2">#define SIZE 5</span>
+    <span class="kw4">double</span> A<span class="br0">&#91;</span>SIZE<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">1</span>.,<span class="nu0">2</span>.,<span class="nu0">3</span>.,<span class="nu0">4</span>.,<span class="nu0">5</span>.<span class="br0">&#125;</span><span class="sy4">;</span>
+    <span class="coMULTI">/* Write array to a file. */</span>
+    <a href="http://en.cppreference.com/w/c/io/FILE"><span class="kw883">FILE</span></a> <span class="sy2">*</span> fp <span class="sy1">=</span> <a href="http://en.cppreference.com/w/c/io/fopen"><span class="kw819">fopen</span></a><span class="br0">&#40;</span><span class="st0">&quot;test.bin&quot;</span>, <span class="st0">&quot;wb&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/io/fwrite"><span class="kw826">fwrite</span></a><span class="br0">&#40;</span>A,<span class="kw4">sizeof</span><span class="br0">&#40;</span><span class="kw4">double</span><span class="br0">&#41;</span>,SIZE,fp<span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/io/fclose"><span class="kw822">fclose</span></a> <span class="br0">&#40;</span>fp<span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="coMULTI">/* Read the f-p values into array B. */</span>
+    <span class="kw4">double</span> B<span class="br0">&#91;</span>SIZE<span class="br0">&#93;</span><span class="sy4">;</span>
+    fp <span class="sy1">=</span> <a href="http://en.cppreference.com/w/c/io/fopen"><span class="kw819">fopen</span></a><span class="br0">&#40;</span><span class="st0">&quot;test.bin&quot;</span>,<span class="st0">&quot;rb&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/io/fpos_t"><span class="kw884">fpos_t</span></a> pos<span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/io/fgetpos"><span class="kw872">fgetpos</span></a><span class="br0">&#40;</span>fp,<span class="sy3">&amp;</span>pos<span class="br0">&#41;</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>      <span class="coMULTI">/* current position: start of file */</span>
+    <span class="br0">&#123;</span>
+       <a href="http://en.cppreference.com/w/c/io/perror"><span class="kw878">perror</span></a><span class="br0">&#40;</span><span class="st0">&quot;fgetpos()&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+       <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw852">fprintf</span></a><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/io/std_streams"><span class="kw887">stderr</span></a>,<span class="st0">&quot;fgetpos() failed in file&#160;%s at line #&#160;%d<span class="es1">\n</span>&quot;</span>, __FILE__,__LINE__<span class="sy2">-</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
+       <a href="http://en.cppreference.com/w/c/program/exit"><span class="kw488">exit</span></a><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/program/EXIT_status"><span class="kw494">EXIT_FAILURE</span></a><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="kw4">int</span> ret_code <span class="sy1">=</span> <a href="http://en.cppreference.com/w/c/io/fread"><span class="kw825">fread</span></a><span class="br0">&#40;</span>B,<span class="kw4">sizeof</span><span class="br0">&#40;</span><span class="kw4">double</span><span class="br0">&#41;</span>,<span class="nu0">1</span>,fp<span class="br0">&#41;</span><span class="sy4">;</span>   <span class="coMULTI">/* read one f-p value */</span>
+    <span class="coMULTI">/* current position: after reading one f-p value */</span>
+    <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;%.1f; read count =&#160;%d<span class="es1">\n</span>&quot;</span>, B<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>, ret_code<span class="br0">&#41;</span><span class="sy4">;</span>   <span class="coMULTI">/* print one f-p value and ret_code */</span>
+&#160;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>fsetpos<span class="br0">&#40;</span>fp,<span class="sy3">&amp;</span>pos<span class="br0">&#41;</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>   <span class="coMULTI">/* reset current position to start of file */</span>
+    <span class="br0">&#123;</span>
+       <span class="kw1">if</span> <span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/io/ferror"><span class="kw877">ferror</span></a><span class="br0">&#40;</span>fp<span class="br0">&#41;</span><span class="br0">&#41;</span>
+       <span class="br0">&#123;</span>
+          <a href="http://en.cppreference.com/w/c/io/perror"><span class="kw878">perror</span></a><span class="br0">&#40;</span><span class="st0">&quot;fsetpos()&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+          <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw852">fprintf</span></a><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/io/std_streams"><span class="kw887">stderr</span></a>,<span class="st0">&quot;fsetpos() failed in file&#160;%s at line #&#160;%d<span class="es1">\n</span>&quot;</span>, __FILE__,__LINE__<span class="sy2">-</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span>
+          <a href="http://en.cppreference.com/w/c/program/exit"><span class="kw488">exit</span></a><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/program/EXIT_status"><span class="kw494">EXIT_FAILURE</span></a><span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    ret_code <span class="sy1">=</span> <a href="http://en.cppreference.com/w/c/io/fread"><span class="kw825">fread</span></a><span class="br0">&#40;</span>B,<span class="kw4">sizeof</span><span class="br0">&#40;</span><span class="kw4">double</span><span class="br0">&#41;</span>,<span class="nu0">1</span>,fp<span class="br0">&#41;</span><span class="sy4">;</span>   <span class="coMULTI">/* reread first f-p value */</span>
+    <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;%.1f; read count =&#160;%d<span class="es1">\n</span>&quot;</span>, B<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>, ret_code<span class="br0">&#41;</span><span class="sy4">;</span>   <span class="coMULTI">/* print one f-p value and ret_code */</span>
+    <a href="http://en.cppreference.com/w/c/io/fclose"><span class="kw822">fclose</span></a><span class="br0">&#40;</span>fp<span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="kw1">return</span> <a href="http://en.cppreference.com/w/c/program/EXIT_status"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span> 
+<span class="br0">&#125;</span></pre></div></div>
+<p>Output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1.0; read count = 1
+1.0; read count = 1</pre></div></div> 
+</div>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit&amp;section=5" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-11">
+<ul><li> C11 standard (ISO/IEC 9899:2011): 
+</li></ul>
+<dl><dd><ul><li> 7.21.9.3 The fsetpos function (p: 337)
+</li></ul>
+</dd></dl>
+<div class="t-ref-std-c99">
+<ul><li> C99 standard (ISO/IEC 9899:1999): 
+</li></ul>
+<dl><dd><ul><li> 7.19.9.3 The fsetpos function (p: 303)
+</li></ul>
+</dd></dl>
+<div class="t-ref-std-c89">
+<ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
+</li></ul>
+<dl><dd><ul><li> 4.9.9.3 The fsetpos function 
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="/w/c/io/fgetpos" title="c/io/fgetpos"> <span class="t-lines"><span>fgetpos</span></span></a></div></div>
+</td>
+<td>   gets the file position indicator <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgetpos&amp;action=edit">&#91;edit&#93;</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="/w/c/io/ftell" title="c/io/ftell"> <span class="t-lines"><span>ftell</span></span></a></div></div>
+</td>
+<td>   returns the current file position indicator <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_ftell&amp;action=edit">&#91;edit&#93;</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="/w/c/io/fseek" title="c/io/fseek"> <span class="t-lines"><span>fseek</span></span></a></div></div>
+</td>
+<td>   moves the file position indicator to a specific location in a file <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fseek&amp;action=edit">&#91;edit&#93;</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="/w/cpp/io/c/fsetpos" title="cpp/io/c/fsetpos">C++ documentation</a></span> for <span class="t-dsc-see-tt"><span>fsetpos</span></span></div>
+</td></tr>
+
+</table></div>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 4992/1000000
+Preprocessor generated node count: 8623/1000000
+Post‐expand include size: 160603/2097152 bytes
+Template argument size: 32446/2097152 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6233-0!*!0!!en!*!* and timestamp 20240126204014 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fsetpos&amp;oldid=127259">https://en.cppreference.com/mwiki/index.php?title=c/io/fsetpos&amp;oldid=127259</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:WhatLinksHere/c/io/fsetpos" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/w/Special:RecentChangesLinked/c/io/fsetpos" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/mwiki/index.php?title=c/io/fsetpos&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=c/io/fsetpos&amp;oldid=127259" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/mwiki/index.php?title=c/io/fsetpos&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="tr" hreflang="tr">Türkçe</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/c/io/fsetpos" title="c/io/fsetpos" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 27 February 2021, at 10:22.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 39,075 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.603 secs. -->
+	</body>
+<!-- Cached 20240126204014 -->
+</html>

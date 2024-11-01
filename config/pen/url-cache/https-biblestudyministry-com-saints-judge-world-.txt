@@ -1,0 +1,2022 @@
+HTTP/1.1 200 OK
+Date: Sat, 23 Sep 2023 10:03:53 GMT
+Server: Apache/2.4.37 (Debian)
+X-Powered-By: PHP/7.4.16
+X-Pingback: https://biblestudyministry.com/xmlrpc.php
+Link: <https://biblestudyministry.com/wp-json/>; rel="https://api.w.org/", <https://biblestudyministry.com/wp-json/wp/v2/posts/1749>; rel="alternate"; type="application/json", <https://biblestudyministry.com/?p=1749>; rel=shortlink
+Vary: X-Forwarded-Proto,X-WP-CORE-VERSION,Accept-Encoding
+Cache-Control: max-age=31536000
+Expires: Sun, 22 Sep 2024 09:47:30 GMT
+Content-Type: text/html; charset=UTF-8
+SiteSpeed: L3NhaW50cy1qdWRnZS13b3JsZC8=.raw.gz 3.56
+Content-Length: 26701
+
+<!DOCTYPE html>
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="template" content="Apex 1.40" />
+<meta property="og:title" content="The Saints Shall Judge the World"/>
+<meta property="og:description" content="The saints shall judge the world is not a scripture commonly known to churchgoers and people. However, thanks to the famous phrase by artists along the lines of"/>
+<meta property="og:image" content="https://teepublicuploadsproduction.s3.amazonaws.com/uploads/4503d1f0-8c40-0131-7f74-26efa92933ac/Tupac_OnlyGodCanJudgeMe_previewtemplate_display.jpg"/>
+<meta property="og:image:width" content="630"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:type" content="article"/>
+<meta property="og:article:published_time" content="2014-09-20 18:51:13"/>
+<meta property="og:article:modified_time" content="2018-11-19 12:18:27"/>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Saints Shall Judge the World"/>
+<meta name="twitter:description" content="The saints shall judge the world is not a scripture commonly known to churchgoers and people. However, thanks to the famous phrase by artists along the lines of"/>
+<meta name="twitter:image" content="https://teepublicuploadsproduction.s3.amazonaws.com/uploads/4503d1f0-8c40-0131-7f74-26efa92933ac/Tupac_OnlyGodCanJudgeMe_previewtemplate_display.jpg"/>
+<meta name="author" content="Elder Ishe"/>
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>The Saints Shall Judge the World - Bible Study Ministry</title>
+	<meta name="description" content="The saints shall judge the world is not a scripture commonly known to churchgoers and people. However, thanks to the famous phrase by artists along the line" />
+	<link rel="canonical" href="https://biblestudyministry.com/saints-judge-world/" />
+	<meta property="og:url" content="https://biblestudyministry.com/saints-judge-world/" />
+	<meta property="og:site_name" content="Bible Study Ministry" />
+	<meta property="article:publisher" content="https://www.facebook.com/biblestudymin/" />
+	<meta property="article:published_time" content="2014-09-20T23:51:13+00:00" />
+	<meta property="article:modified_time" content="2018-11-19T18:18:27+00:00" />
+	<meta property="og:image" content="https://teepublicuploadsproduction.s3.amazonaws.com/uploads/4503d1f0-8c40-0131-7f74-26efa92933ac/Tupac_OnlyGodCanJudgeMe_previewtemplate_display.jpg" />
+	<meta name="author" content="Elder Ishe" />
+	<meta name="twitter:creator" content="@biblestudymin" />
+	<meta name="twitter:site" content="@biblestudymin" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Elder Ishe" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="3 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://biblestudyministry.com/saints-judge-world/","url":"https://biblestudyministry.com/saints-judge-world/","name":"The Saints Shall Judge the World - Bible Study Ministry","isPartOf":{"@id":"https://biblestudyministry.com/#website"},"primaryImageOfPage":{"@id":"https://biblestudyministry.com/saints-judge-world/#primaryimage"},"image":{"@id":"https://biblestudyministry.com/saints-judge-world/#primaryimage"},"thumbnailUrl":"https://teepublicuploadsproduction.s3.amazonaws.com/uploads/4503d1f0-8c40-0131-7f74-26efa92933ac/Tupac_OnlyGodCanJudgeMe_previewtemplate_display.jpg","datePublished":"2014-09-20T23:51:13+00:00","dateModified":"2018-11-19T18:18:27+00:00","author":{"@id":"https://biblestudyministry.com/#/schema/person/d7d89dc6f2697cef5b61ef843b4d0aef"},"description":"The saints shall judge the world is not a scripture commonly known to churchgoers and people. However, thanks to the famous phrase by artists along the line","breadcrumb":{"@id":"https://biblestudyministry.com/saints-judge-world/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://biblestudyministry.com/saints-judge-world/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://biblestudyministry.com/saints-judge-world/#primaryimage","url":"https://teepublicuploadsproduction.s3.amazonaws.com/uploads/4503d1f0-8c40-0131-7f74-26efa92933ac/Tupac_OnlyGodCanJudgeMe_previewtemplate_display.jpg","contentUrl":"https://teepublicuploadsproduction.s3.amazonaws.com/uploads/4503d1f0-8c40-0131-7f74-26efa92933ac/Tupac_OnlyGodCanJudgeMe_previewtemplate_display.jpg"},{"@type":"BreadcrumbList","@id":"https://biblestudyministry.com/saints-judge-world/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://biblestudyministry.com/"},{"@type":"ListItem","position":2,"name":"Blog Lessons","item":"https://biblestudyministry.com/blog-lessons/"},{"@type":"ListItem","position":3,"name":"The Saints Shall Judge the World"}]},{"@type":"WebSite","@id":"https://biblestudyministry.com/#website","url":"https://biblestudyministry.com/","name":"Bible Study Ministry","description":"Your Online Bible Study Supplement Source","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://biblestudyministry.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://biblestudyministry.com/#/schema/person/d7d89dc6f2697cef5b61ef843b4d0aef","name":"Elder Ishe","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://biblestudyministry.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/34f0df4ee82008df4e7d8d3be9f35dae?s=96&d=retro&r=g","contentUrl":"https://secure.gravatar.com/avatar/34f0df4ee82008df4e7d8d3be9f35dae?s=96&d=retro&r=g","caption":"Elder Ishe"},"description":"Koko Ishe is a Bible Teacher, Author, and Servant of Jesus Christ. He has been passionate about the Word of God his entire life and has done extensive study and research of the Bible to share with those who want to learn more about the God of the Bible.","sameAs":["http://biblestudyministry.com/"],"url":"https://biblestudyministry.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.stripe.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel="alternate" type="application/rss+xml" title="Bible Study Ministry &raquo; Feed" href="https://biblestudyministry.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bible Study Ministry &raquo; Comments Feed" href="https://biblestudyministry.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bible Study Ministry &raquo; The Saints Shall Judge the World Comments Feed" href="https://biblestudyministry.com/saints-judge-world/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/biblestudyministry.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://biblestudyministry.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 12px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 21px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--regular: 16px;--wp--preset--font-size--larger: 37px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='exit-popup-css-css' href='https://biblestudyministry.com/wp-content/plugins/exit-popup/css/exit-popup.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-banner-style-css' href='https://biblestudyministry.com/wp-content/plugins/simple-banner/simple-banner.css?ver=2.15.4' type='text/css' media='all' />
+<link rel='stylesheet' id='SFSImainCss-css' href='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/css/sfsi-style.css?ver=2.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-evs-css-css' href='https://biblestudyministry.com/wp-content/plugins/wp-evs/assets/evs.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='give-styles-css' href='https://biblestudyministry.com/wp-content/plugins/give/assets/dist/css/give.css?ver=2.33.2' type='text/css' media='all' />
+<link rel='stylesheet' id='give-donation-summary-style-frontend-css' href='https://biblestudyministry.com/wp-content/plugins/give/assets/dist/css/give-donation-summary.css?ver=2.33.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tptn-style-left-thumbs-css' href='https://biblestudyministry.com/wp-content/plugins/top-10/css/left-thumbs.min.css?ver=3.3.1' type='text/css' media='all' />
+<style id='tptn-style-left-thumbs-inline-css' type='text/css'>
+
+			.tptn-left-thumbs a {
+				width: 150px;
+				height: 150px;
+				text-decoration: none;
+			}
+			.tptn-left-thumbs img {
+				width: 150px;
+				max-height: 150px;
+				margin: auto;
+			}
+			.tptn-left-thumbs .tptn_title {
+				width: 100%;
+			}
+			
+</style>
+<link rel='stylesheet' id='ct-apex-google-fonts-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CSatisfy&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-apex-font-awesome-css' href='https://biblestudyministry.com/wp-content/themes/apex/assets/font-awesome/css/all.min.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-apex-style-css' href='https://biblestudyministry.com/wp-content/themes/apex/style.css?ver=6.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/contact-bank/assets/global/plugins/custom/js/custom.js?ver=6.3.1' id='contact-bank-bootstrap.js-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/exit-popup/js/js-cookie.js?ver=1695462450' id='js-cookie-js-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/exit-popup/js/exit-popup.js?ver=1695462450' id='exit-popup-js-js'></script>
+<script id="simple-banner-script-js-before" type="text/javascript">
+const simpleBannerScriptParams = {"version":"2.15.4","hide_simple_banner":false,"simple_banner_position":false,"header_margin":false,"header_padding":false,"simple_banner_z_index":false,"simple_banner_text":"","pro_version_enabled":"","disabled_on_current_page":false,"debug_mode":false,"id":1749,"disabled_pages_array":[],"is_current_page_a_post":true,"disabled_on_posts":false,"simple_banner_font_size":false,"simple_banner_color":"","simple_banner_text_color":"","simple_banner_link_color":"","simple_banner_close_color":false,"simple_banner_custom_css":"","simple_banner_scrolling_custom_css":false,"simple_banner_text_custom_css":false,"simple_banner_button_css":false,"site_custom_css":"","keep_site_custom_css":false,"site_custom_js":"","keep_site_custom_js":false,"wp_body_open_enabled":false,"wp_body_open":true,"close_button_enabled":false,"close_button_expiration":false,"close_button_cookie_set":false,"current_date":{"date":"2023-09-23 09:47:30.504394","timezone_type":3,"timezone":"UTC"},"start_date":{"date":"2023-09-23 09:47:30.504403","timezone_type":3,"timezone":"UTC"},"end_date":{"date":"2023-09-23 09:47:30.504407","timezone_type":3,"timezone":"UTC"},"simple_banner_start_after_date":false,"simple_banner_remove_after_date":false,"simple_banner_insert_inside_element":false}
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/simple-banner/simple-banner.js?ver=2.15.4' id='simple-banner-script-js'></script>
+<script type='text/javascript' id='give-stripe-js-js-extra'>
+/* <![CDATA[ */
+var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["JPY","KRW","CLP","ISK","BIF","DJF","GNF","KHR","KPW","LAK","LKR","MGA","MZN","VUV"],"sitename":"Bible Study Ministry","checkoutBtnTitle":"Donate","publishable_key":"pk_live_SMtnnvlq4TpJelMdklNha8iD","checkout_image":"","checkout_address":"","checkout_processing_text":"Donation Processing...","give_version":"2.33.2","cc_fields_format":"multi","card_number_placeholder_text":"Card Number","card_cvc_placeholder_text":"CVC","donate_button_text":"Donate Now","element_font_styles":{"cssSrc":false},"element_base_styles":{"color":"#32325D","fontWeight":500,"fontSize":"16px","fontSmoothing":"antialiased","::placeholder":{"color":"#222222"},":-webkit-autofill":{"color":"#e39f48"}},"element_complete_styles":{},"element_empty_styles":{},"element_invalid_styles":{},"float_labels":"","base_country":"US","preferred_locale":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://js.stripe.com/v3/?ver=2.33.2' id='give-stripe-js-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/give/assets/dist/js/give-stripe.js?ver=2.33.2' id='give-stripe-onpage-js-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after" type="text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='give-js-extra'>
+/* <![CDATA[ */
+var give_global_vars = {"ajaxurl":"https:\/\/biblestudyministry.com\/wp-admin\/admin-ajax.php","checkout_nonce":"7a46669e9d","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Please select a payment method.","bad_minimum":"The minimum custom donation amount for this form is","bad_maximum":"The maximum custom donation amount for this form is","general_loading":"Loading...","purchase_loading":"Please Wait...","textForOverlayScreen":"<h3>Processing...<\/h3><p>This will only take a second!<\/p>","number_decimals":"2","is_test_mode":"","give_version":"2.33.2","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Please select payment mode.","give_first":"Please enter your first name.","give_last":"Please enter your last name.","give_email":"Please enter a valid email address.","give_user_login":"Invalid email address or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agree_to_terms":"You must agree to the terms and conditions."},"confirm_email_sent_message":"Please check your email and click on the link to access your complete donation history.","ajax_vars":{"ajaxurl":"https:\/\/biblestudyministry.com\/wp-admin\/admin-ajax.php","ajaxNonce":"08ef4fcde7","loading":"Loading","select_option":"Please select an option","default_gateway":"stripe_checkout","permalinks":"1","number_decimals":2},"cookie_hash":"93e0bd936f903c0e34fafc242a7384f3","session_nonce_cookie_name":"wp-give_session_reset_nonce_93e0bd936f903c0e34fafc242a7384f3","session_cookie_name":"wp-give_session_93e0bd936f903c0e34fafc242a7384f3","delete_session_nonce_cookie":"0"};
+var giveApiSettings = {"root":"https:\/\/biblestudyministry.com\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/give/assets/dist/js/give.js?ver=1c38f856714bc980' id='give-js'></script>
+<!--[if IE 8]>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/themes/apex/js/build/html5shiv.min.js?ver=6.3.1' id='ct-apex-html5-shiv-js'></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://biblestudyministry.com/wp-json/" /><link rel="alternate" type="application/json" href="https://biblestudyministry.com/wp-json/wp/v2/posts/1749" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://biblestudyministry.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.1" />
+<link rel='shortlink' href='https://biblestudyministry.com/?p=1749' />
+<link rel="alternate" type="application/json+oembed" href="https://biblestudyministry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbiblestudyministry.com%2Fsaints-judge-world%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://biblestudyministry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbiblestudyministry.com%2Fsaints-judge-world%2F&#038;format=xml" />
+	<meta property="og:title" content="The Saints Shall Judge the World - Bible Study Ministry Bible Study Ministry" />
+	<meta property="og:type" content="activity" />
+	<meta property="og:url" content="https://biblestudyministry.com/saints-judge-world/"/>
+		<meta property="og:site_name" content="Bible Study Ministry" />
+	<meta property="og:description" content="The saints shall judge the world is not a scripture commonly known to churchgoers and people. However, thanks to the famous phrase by artists along [...]" />
+		<meta property="fb:admins" content="100002933404752" />
+			<meta property="fb:app_id" content="100002933404752" />
+		<meta name="generator" content="Site Kit by Google 1.109.0" /><style type="text/css">.simple-banner{background: #024985;}</style><style type="text/css">.simple-banner .simple-banner-text{color: #ffffff;}</style><style type="text/css">.simple-banner .simple-banner-text a{color:#f16521;}</style><style type="text/css">.simple-banner{z-index: 99999;}</style><style id="simple-banner-site-custom-css-dummy" type="text/css"></style><script id="simple-banner-site-custom-js-dummy" type="text/javascript"></script><style type="text/css" id="tve_global_variables">:root{--tcb-background-author-image:url(https://secure.gravatar.com/avatar/34f0df4ee82008df4e7d8d3be9f35dae?s=256&d=retro&r=g);--tcb-background-user-image:url();--tcb-background-featured-image-thumbnail:url(https://biblestudyministry.com/wp-content/plugins/thrive-visual-editor/editor/css/images/featured_image.png);}</style><meta name="follow.it-verification-code-a2JJL1BSMjhIajU3bFhjZ2UxekhyYVZYS0pjeDROaFNiSEFvL2w3V3cxN2JmbTgzYXkrMWY5aEszRXhYSklkMUtSRzA3NlJtRUxEaEh4WklFSEtZUkRQTDBYMnIrUk9la3lZQVdqSC8xbmhBQzZFQUk3eUZnWE1ZME54dFpUNm18bkxoTWZHc2NHOVU0M2hDS1J3S01kZExsQTFMNFF1S2ErTGpvSGJQa0hGWT0=" content="RlBBh7JXZbYJ4TLyEyMC"/><meta name="generator" content="Give v2.33.2" />
+
+<!-- Google AdSense snippet added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense snippet added by Site Kit -->
+
+<!-- Google AdSense snippet added by Site Kit -->
+<script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3522646715417537&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous" type="text/javascript"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+<style type="text/css" id="thrive-default-styles"></style></head>
+
+<body id="apex" class="post-template-default single single-post postid-1749 single-format-standard sfsi_actvite_theme_shaded_dark singular singular-post singular-post-1749">
+		
+<!--BEGIN: TRACKING CODE MANAGER (v2.0.16) BY INTELLYWP.COM IN BODY//-->
+<!-- ClickMagick Organic Tracking Code -->
+<script src="//track.clkmg.com/js/clickmagick.js"></script>
+<script>var pid = 13754, uid = 81848; clickmagick(uid, pid);</script>
+<!--END: https://wordpress.org/plugins/tracking-code-manager IN BODY//-->	<a class="skip-content" href="#main">Skip to content</a>
+	<div id="overflow-container" class="overflow-container">
+		<div id="max-width" class="max-width">
+									<header class="site-header" id="site-header" role="banner">
+				<div id="menu-primary-container" class="menu-primary-container">
+					<div id="menu-primary" class="menu-container menu-primary" role="navigation">
+	<nav class="menu"><ul id="menu-primary-items" class="menu-primary-items"><li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-7427"><a href="https://biblestudyministry.com/">Start Here</a></li>
+<li id="menu-item-1035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1035"><a href="https://biblestudyministry.com/about/">About</a></li>
+<li id="menu-item-1032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1032"><a href="https://biblestudyministry.com/contact/">Contact Us</a></li>
+<li id="menu-item-3248" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-3248"><a href="https://biblestudyministry.com/blog-lessons/">Blog Lessons</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">open dropdown menu</span></button>
+<ul class="sub-menu">
+	<li id="menu-item-3677" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3677"><a href="https://biblestudyministry.com/category/bible-study/">Bible Study</a></li>
+	<li id="menu-item-3678" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3678"><a href="https://biblestudyministry.com/category/chapter-summary/">Chapter Summary</a></li>
+	<li id="menu-item-6274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6274"><a href="https://biblestudyministry.com/category/history/history-of-israel-series/">History of Israel Series</a></li>
+</ul>
+</li>
+<li id="menu-item-8469" class="menu-item menu-item-type-post_type menu-item-object-give_forms menu-item-has-children menu-item-8469"><a href="https://biblestudyministry.com/donations/8465/">Support BSM Today</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">open dropdown menu</span></button>
+<ul class="sub-menu">
+	<li id="menu-item-6983" class="menu-item menu-item-type-post_type menu-item-object-give_forms menu-item-6983"><a href="https://biblestudyministry.com/donations/support-bible-study-ministry/">Support Bible Study Ministry</a></li>
+</ul>
+</li>
+<li id="menu-item-1034" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1034"><a href="https://biblestudyministry.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-7245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7245"><a href="https://biblestudyministry.com/bible-study-live/">Bible Study Live</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">open dropdown menu</span></button>
+<ul class="sub-menu">
+	<li id="menu-item-1033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1033"><a href="https://biblestudyministry.com/bible-study-ministry/">Bible Study Ministry</a></li>
+</ul>
+</li>
+</ul></nav></div>
+														</div>
+				<button id="toggle-navigation" class="toggle-navigation">
+					<span class="screen-reader-text">open menu</span>
+					<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <g transform="translate(-148.000000, -36.000000)" fill="#6B6B6B">
+				            <g transform="translate(123.000000, 25.000000)">
+				                <g transform="translate(25.000000, 11.000000)">
+				                    <rect x="0" y="16" width="24" height="2"></rect>
+				                    <rect x="0" y="8" width="24" height="2"></rect>
+				                    <rect x="0" y="0" width="24" height="2"></rect>
+				                </g>
+				            </g>
+				        </g>
+				    </g>
+				</svg>				</button>
+				<div id="title-container" class="title-container">
+					<div id='site-title' class='site-title'><a href='https://biblestudyministry.com'>Bible Study Ministry</a></div>					<p class="tagline">Your Online Bible Study Supplement Source</p>				</div>
+			</header>
+									<section id="main" class="main" role="main">
+				<div id="loop-container" class="loop-container">
+	<div class="post-1749 post type-post status-publish format-standard hentry category-bible-study category-sabbath-day-studies category-word-of-god entry">
+		<article>
+				<div class="post-container">
+			<div class='post-header'>
+				<h1 class='post-title'>The Saints Shall Judge the World</h1>
+				<div class="post-byline">
+    <span class="post-date">
+		Published 	</span>
+	</div>			</div>
+			<div class="post-content">
+								<p><strong><img decoding="async" fetchpriority="high" class="alignleft" src="https://teepublicuploadsproduction.s3.amazonaws.com/uploads/4503d1f0-8c40-0131-7f74-26efa92933ac/Tupac_OnlyGodCanJudgeMe_previewtemplate_display.jpg" alt="The Saints Shall Judge the World" width="356" height="356" />The saints shall judge the world</strong> is not a scripture commonly known to churchgoers and people. However, thanks to the famous phrase by artists along the lines of, &#8220;Only God can judge me,&#8221; it has gain popularity and some notoriety.</p>
+<p><span style="text-decoration: underline;">It is true</span>, God will judge man, but the Saints will join the God-family at an appointed time and judge the world &#8230; including people who feel only God can judge them.</p>
+<h4>&#8211; Peace and blessings, this is <strong>BibleStudyMinistry.com</strong> an Online Bible Study Supplement Source &#8211;</h4>
+<p>In<strong> I Corinthians chapter 6</strong>, Paul asked the people if they have the ability of judgement. <strong>This judgement differs from the one people often use the word judgment for</strong>. This judgement is actually a judgment for their behavior.</p>
+<p>The judgement pertaining to the phrase, &#8220;Only God can judge me,&#8221; is when someone looks down or upon someone. This is when someone frowns upon someone&#8217;s because of their behavior, characteristic, or lifestyle they have.</p>
+<p>For instance, people pass judgement on someone who has a drinking problem, but he or she holds a public office or position. Drug addicts, sex addicts, and the list goes on of people who feel others judge them because of what they do or have done, and who they are.</p>
+<h2><span style="color: #008000;">The Saints Shall Judge the World</span></h2>
+<p>The judgment we are talking about in this post, and in this scripture, is for the saints is judgment on matters of the law. Saints usually do not or should not care about how they feel about something or someone. Saints base their <strong>judgement</strong> on what the law states.</p>
+<p>This is what Paul was attempting to solve with members of the church in Corinth. He dared any of them who had matters against each other to attempt to solve their problem themselves. They should use of other saints as it pertains to a matter. This was preferred, rather than for  them to run to the government legal systems.</p>
+<h5>See Ist Corinthians 6</h5>
+<blockquote><p><em><b>2 </b><b>Do ye not know that the saints shall judge the world</b><b>? and if the world shall be judged by you, are ye unworthy to judge the smallest matters?</b></em></p></blockquote>
+<p>Paul asks, do you not know that the saints will judge the world? If we, the saints, are going the judge the world, how is it that we cannot judge small matters today?</p>
+<blockquote><p><em><strong><b>3 </b><b>Know ye not that we shall judge angels</b><b>? how much more things that pertain to this life</b>?</strong></em></p></blockquote>
+<p>Those saints who are blessed enough to make the first resurrection will sit on thrones and judge the world, including angels (fallen angels). If the saints will execute judgment on and of such a high nature, how much more things that pertain to this life, such as how much money you owe your neighbor?</p>
+<h3 style="text-align: right;"><strong><em><span style="color: #800080;">The Saints Shall Judge the World</span></em></strong></h3>
+<p><em><span style="text-decoration: underline;">The saints shall judge the world</span></em>, and if you plan on being a saint in Jesus&#8217; Kingdom, you need to learn God&#8217;s judgement and execute it with all matters.</p>
+<h3>Selah</h3>
+<blockquote><p><em>Thank you for joining us today. It’s always a pleasure to have you. BibleStudyMinistry.com (BSM), believes the Bible is one assimilated account leading and pointing to <b>Jesus the Messiah, to </b>His Kingdom on the Earth, and His Royal Family.</em></p></blockquote>
+<h3>Not on our exclusive newsletter? Sign up for PDFs, live Q&amp;As, and more!</h3>
+<h4><b>=</b></h4>
+<h4><b>Leave a comment below of your thoughts…</b></h4>
+<p>Or do it here on <a onclick="javascript:pageTracker._trackPageview('/outgoing/plus.google.com/+BibleStudyMinistry');"  href="https://plus.google.com/+BibleStudyMinistry">Google</a> – <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/Bible-Study-Ministry-282576951768248/');"  href="https://www.facebook.com/Bible-Study-Ministry-282576951768248/">Facebook</a> or <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/biblestudymin');"  href="https://twitter.com/biblestudymin">Twitter</a>. We’re also on <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.instagram.com/biblestudyministry/');"  href="https://www.instagram.com/biblestudyministry/">Instagram</a>…</p>
+<h2><a href="http://biblestudyministry.com/category/chapter-summary/">Past Chapter Summaries</a></h2>
+<p>&nbsp;</p>
+<div style="display:block;margin-left:auto;margin-right:auto;padding:20px 5px 20px 5px"><div class="fb-like" data-href="https://biblestudyministry.com/saints-judge-world/" data-send="true" data-width="" data-show-faces="true" data-action="recommend"></div></div><div class='sfsi_Sicons sfsi_Sicons_position_left sfsi-mouseOver-effect sfsi-mouseOver-effect-fade_in' style='float: none; vertical-align: middle; text-align:left'><div style='margin:0px 8px 0px 0px; line-height: 24px'><span>Share the article on your favorite social media outlet; help the Word flow out into all nations!</span></div><div class='sfsi_socialwpr'><div class='sf_subscrbe sf_icon' style='text-align:left;vertical-align: middle;float:left;width:auto'><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.specificfeeds.com/widgets/emailSubscribeEncFeed/a2JJL1BSMjhIajU3bFhjZ2UxekhyYVZYS0pjeDROaFNiSEFvL2w3V3cxN2JmbTgzYXkrMWY5aEszRXhYSklkMUtSRzA3NlJtRUxEaEh4WklFSEtZUkRQTDBYMnIrUk9la3lZQVdqSC8xbmhBQzZFQUk3eUZnWE1ZME54dFpUNm18bkxoTWZHc2NHOVU0M2hDS1J3S01kZExsQTFMNFF1S2ErTGpvSGJQa0hGWT0=/OA==/');"  href="https://www.specificfeeds.com/widgets/emailSubscribeEncFeed/a2JJL1BSMjhIajU3bFhjZ2UxekhyYVZYS0pjeDROaFNiSEFvL2w3V3cxN2JmbTgzYXkrMWY5aEszRXhYSklkMUtSRzA3NlJtRUxEaEh4WklFSEtZUkRQTDBYMnIrUk9la3lZQVdqSC8xbmhBQzZFQUk3eUZnWE1ZME54dFpUNm18bkxoTWZHc2NHOVU0M2hDS1J3S01kZExsQTFMNFF1S2ErTGpvSGJQa0hGWT0=/OA==/" target="_blank"><img src="https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/images/visit_icons/Follow/icon_Follow_en_US.png" alt="error" /></a></div><div class='sf_fb sf_icon' style='text-align:left;vertical-align: middle;'><div class="fb-like" data-href="https://biblestudyministry.com/saints-judge-world/?ao_noptimize=1"  data-send="false" data-layout="button" ></div></div><div class='sf_fb_share sf_icon' style='text-align:left;vertical-align: middle;'><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/sharer/sharer.php?u=https://biblestudyministry.com/saints-judge-world/?ao_noptimize=1');"  target='_blank'  href='https://www.facebook.com/sharer/sharer.php?u=https://biblestudyministry.com/saints-judge-world/?ao_noptimize=1' style='display:inline-block;'><img class='sfsi_wicon'  data-pin-nopin='true' alt='fb-share-icon' title='Facebook Share' src='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/images/share_icons/fb_icons/en_US.svg' /></a></div><div class='sf_twiter sf_icon' style='display: inline-block;vertical-align: middle;width: auto;margin-left: 7px;'>
+						<a target='_blank' href='https://twitter.com/intent/tweet?text=The+Saints+Shall+Judge+the+World+https://biblestudyministry.com/saints-judge-world/?ao_noptimize=1'style='display:inline-block' >
+							<img data-pin-nopin= true class='sfsi_wicon' src='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/images/share_icons/Twitter_Tweet/en_US_Tweet.svg' alt='Tweet' title='Tweet' >
+						</a>
+					</div><div class='sf_pinit sf_icon' style='text-align:left;vertical-align: middle;float:left;line-height: 33px;width:auto;margin: 0 -2px;'><a href='#' onclick='sfsi_pinterest_modal_images(event,"https://biblestudyministry.com/saints-judge-world/?ao_noptimize=1","The Saints Shall Judge the World")' style='display:inline-block;'  > <img class='sfsi_wicon'  data-pin-nopin='true' alt='fb-share-icon' title='Pin Share' src='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/images/share_icons/Pinterest_Save/en_US_save.svg' /></a></div></div></div>							</div>
+						<div class="post-meta">
+				<p class="post-categories"><span>Published in </span><a href="https://biblestudyministry.com/category/bible-study/" title="View all posts in Bible Study">Bible Study</a>, <a href="https://biblestudyministry.com/category/sabbath-day-studies/" title="View all posts in Sabbath Day Studies">Sabbath Day Studies</a> and <a href="https://biblestudyministry.com/category/word-of-god/" title="View all posts in Word of God">Word of God</a></p>								<nav class="further-reading">
+	<div class="previous">
+		<span>Previous Post</span>
+		<a href="https://biblestudyministry.com/spiritually-minded-life-peace/">Spiritually Minded is Life and Peace</a>
+	</div>
+	<div class="next">
+		<span>Next Post</span>
+		<a href="https://biblestudyministry.com/added-transgressions/">It Was Added Because of Transgressions</a>
+	</div>
+</nav>			</div>
+		</div>
+	</article>
+	<section id="comments" class="comments">
+      <div class="comments-number">
+      <h2>
+        2 Comments      </h2>
+    </div>
+    <ol class="comment-list">
+    		<li class="comment even thread-even depth-1" id="li-comment-11457">
+		<article id="comment-11457" class="comment">
+			<div class="comment-author">
+				<img alt='HAPPY' src='https://secure.gravatar.com/avatar/5777a7ed7b576858e7f392b955b10337?s=48&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/5777a7ed7b576858e7f392b955b10337?s=96&#038;d=retro&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>				<span class="author-name">HAPPY</span>
+			</div>
+			<div class="comment-content">
+								<p>We do judge the world not people , AMEN</p>
+			</div>
+			<div class="comment-footer">
+				<span class="comment-date"></span>
+				<a rel='nofollow' class='comment-reply-link' href='#comment-11457' data-commentid="11457" data-postid="1749" data-belowelement="comment-11457" data-respondelement="respond" data-replyto="Reply to HAPPY" aria-label='Reply to HAPPY'>Reply</a>							</div>
+		</article>
+		<ul class="children">
+		<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-11458">
+		<article id="comment-11458" class="comment">
+			<div class="comment-author">
+				<img alt='Elder Ishe' src='https://secure.gravatar.com/avatar/34f0df4ee82008df4e7d8d3be9f35dae?s=48&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/34f0df4ee82008df4e7d8d3be9f35dae?s=96&#038;d=retro&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>				<span class="author-name"><a href="http://biblestudyministry.com/" class="url" rel="ugc">Elder Ishe</a></span>
+			</div>
+			<div class="comment-content">
+								<p>Amen Happy, the world and not people. Thank you.</p>
+			</div>
+			<div class="comment-footer">
+				<span class="comment-date"></span>
+				<a rel='nofollow' class='comment-reply-link' href='#comment-11458' data-commentid="11458" data-postid="1749" data-belowelement="comment-11458" data-respondelement="respond" data-replyto="Reply to Elder Ishe" aria-label='Reply to Elder Ishe'>Reply</a>							</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  </ol>
+  	<div id="respond" class="comment-respond">
+		<div id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/saints-judge-world/#respond" style="display:none;">Cancel reply</a></small></div><form action="https://biblestudyministry.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment">
+	            <label for="comment">Comment</label>
+	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+	        </p><p class="comment-form-author">
+	            <label for="author">Name*</label>
+	            <input id="author" name="author" type="text" value="" size="30" aria-required='true' />
+	        </p>
+<p class="comment-form-email">
+	            <label for="email">Email*</label>
+	            <input id="email" name="email" type="email" value="" size="30" aria-required='true' />
+	        </p>
+<p class="comment-form-url">
+	            <label for="url">Website</label>
+	            <input id="url" name="url" type="url" value="" size="30" />
+	            </p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1749' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	</section></div></div>
+	<div id="fb-root"></div>
+	<script>
+	var notify_url='http://biblestudyministry.com';
+	window.fbAsyncInit=function() {
+		FB.init({appId:'100002933404752',status:true,cookie:true,xfbml:true,oauth:true});
+		FB.Event.subscribe('comment.create',commentcreate);
+		FB.Event.subscribe('comment.remove',commentremove);	
+		function commentcreate(response){
+			var data={
+				fbaction:'createcomment',
+				hrefcomment:response.href,
+				fbcommentID:response.commentID};
+			jQuery.post(notify_url,data);
+		}
+		function commentremove(response){
+			var data={
+				fbaction:'removecomment',
+				hrefcomment:response.href,
+				fbcommentID:response.commentID};
+			jQuery.post(notify_url,data);
+		}
+	};
+	(function(){
+		var e = document.createElement('script'); e.async = true;
+		e.src = document.location.protocol 
+		+ '//connect.facebook.net/en_US/all.js';
+		document.getElementById('fb-root').appendChild(e);
+	}());
+	</script>
+	</section> <!-- .main -->
+
+	<aside class="sidebar sidebar-primary" id="sidebar-primary" role="complementary">
+		<h1 class="screen-reader-text">Sidebar</h1>
+		<section id="search-2" class="widget widget_search"><h2 class="widget-title">Look Up Past Posts by Keyword!</h2><div class='search-form-container'>
+	<form role="search" method="get" class="search-form" action="https://biblestudyministry.com/">
+		<label class="screen-reader-text" for="search-field">Search</label>
+		<input id="search-field" type="search" class="search-field" value="" name="s"
+		       title="Search for:"/>
+		<input type="submit" class="search-submit" value='Go'/>
+	</form>
+</div></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://biblestudyministry.com/2023/09/'> September 2023 </option>
+	<option value='https://biblestudyministry.com/2023/08/'> August 2023 </option>
+	<option value='https://biblestudyministry.com/2023/07/'> July 2023 </option>
+	<option value='https://biblestudyministry.com/2023/06/'> June 2023 </option>
+	<option value='https://biblestudyministry.com/2023/05/'> May 2023 </option>
+	<option value='https://biblestudyministry.com/2023/04/'> April 2023 </option>
+	<option value='https://biblestudyministry.com/2023/02/'> February 2023 </option>
+	<option value='https://biblestudyministry.com/2023/01/'> January 2023 </option>
+	<option value='https://biblestudyministry.com/2022/12/'> December 2022 </option>
+	<option value='https://biblestudyministry.com/2022/11/'> November 2022 </option>
+	<option value='https://biblestudyministry.com/2022/10/'> October 2022 </option>
+	<option value='https://biblestudyministry.com/2022/09/'> September 2022 </option>
+	<option value='https://biblestudyministry.com/2022/08/'> August 2022 </option>
+	<option value='https://biblestudyministry.com/2022/07/'> July 2022 </option>
+	<option value='https://biblestudyministry.com/2022/06/'> June 2022 </option>
+	<option value='https://biblestudyministry.com/2022/05/'> May 2022 </option>
+	<option value='https://biblestudyministry.com/2022/04/'> April 2022 </option>
+	<option value='https://biblestudyministry.com/2022/03/'> March 2022 </option>
+	<option value='https://biblestudyministry.com/2022/02/'> February 2022 </option>
+	<option value='https://biblestudyministry.com/2021/12/'> December 2021 </option>
+	<option value='https://biblestudyministry.com/2021/11/'> November 2021 </option>
+	<option value='https://biblestudyministry.com/2021/09/'> September 2021 </option>
+	<option value='https://biblestudyministry.com/2021/08/'> August 2021 </option>
+	<option value='https://biblestudyministry.com/2021/07/'> July 2021 </option>
+	<option value='https://biblestudyministry.com/2021/06/'> June 2021 </option>
+	<option value='https://biblestudyministry.com/2020/09/'> September 2020 </option>
+	<option value='https://biblestudyministry.com/2020/08/'> August 2020 </option>
+	<option value='https://biblestudyministry.com/2020/07/'> July 2020 </option>
+	<option value='https://biblestudyministry.com/2020/06/'> June 2020 </option>
+	<option value='https://biblestudyministry.com/2020/05/'> May 2020 </option>
+	<option value='https://biblestudyministry.com/2020/04/'> April 2020 </option>
+	<option value='https://biblestudyministry.com/2020/03/'> March 2020 </option>
+	<option value='https://biblestudyministry.com/2020/02/'> February 2020 </option>
+	<option value='https://biblestudyministry.com/2020/01/'> January 2020 </option>
+	<option value='https://biblestudyministry.com/2019/12/'> December 2019 </option>
+	<option value='https://biblestudyministry.com/2019/10/'> October 2019 </option>
+	<option value='https://biblestudyministry.com/2019/09/'> September 2019 </option>
+	<option value='https://biblestudyministry.com/2019/08/'> August 2019 </option>
+	<option value='https://biblestudyministry.com/2019/07/'> July 2019 </option>
+	<option value='https://biblestudyministry.com/2019/06/'> June 2019 </option>
+	<option value='https://biblestudyministry.com/2019/05/'> May 2019 </option>
+	<option value='https://biblestudyministry.com/2019/04/'> April 2019 </option>
+	<option value='https://biblestudyministry.com/2019/03/'> March 2019 </option>
+	<option value='https://biblestudyministry.com/2019/02/'> February 2019 </option>
+	<option value='https://biblestudyministry.com/2019/01/'> January 2019 </option>
+	<option value='https://biblestudyministry.com/2018/12/'> December 2018 </option>
+	<option value='https://biblestudyministry.com/2018/11/'> November 2018 </option>
+	<option value='https://biblestudyministry.com/2018/10/'> October 2018 </option>
+	<option value='https://biblestudyministry.com/2018/09/'> September 2018 </option>
+	<option value='https://biblestudyministry.com/2018/08/'> August 2018 </option>
+	<option value='https://biblestudyministry.com/2018/07/'> July 2018 </option>
+	<option value='https://biblestudyministry.com/2018/06/'> June 2018 </option>
+	<option value='https://biblestudyministry.com/2018/05/'> May 2018 </option>
+	<option value='https://biblestudyministry.com/2018/04/'> April 2018 </option>
+	<option value='https://biblestudyministry.com/2018/03/'> March 2018 </option>
+	<option value='https://biblestudyministry.com/2018/01/'> January 2018 </option>
+	<option value='https://biblestudyministry.com/2017/12/'> December 2017 </option>
+	<option value='https://biblestudyministry.com/2017/11/'> November 2017 </option>
+	<option value='https://biblestudyministry.com/2017/10/'> October 2017 </option>
+	<option value='https://biblestudyministry.com/2017/09/'> September 2017 </option>
+	<option value='https://biblestudyministry.com/2017/08/'> August 2017 </option>
+	<option value='https://biblestudyministry.com/2017/07/'> July 2017 </option>
+	<option value='https://biblestudyministry.com/2017/05/'> May 2017 </option>
+	<option value='https://biblestudyministry.com/2017/04/'> April 2017 </option>
+	<option value='https://biblestudyministry.com/2017/03/'> March 2017 </option>
+	<option value='https://biblestudyministry.com/2017/02/'> February 2017 </option>
+	<option value='https://biblestudyministry.com/2016/11/'> November 2016 </option>
+	<option value='https://biblestudyministry.com/2016/10/'> October 2016 </option>
+	<option value='https://biblestudyministry.com/2016/09/'> September 2016 </option>
+	<option value='https://biblestudyministry.com/2016/08/'> August 2016 </option>
+	<option value='https://biblestudyministry.com/2016/05/'> May 2016 </option>
+	<option value='https://biblestudyministry.com/2016/04/'> April 2016 </option>
+	<option value='https://biblestudyministry.com/2016/03/'> March 2016 </option>
+	<option value='https://biblestudyministry.com/2016/02/'> February 2016 </option>
+	<option value='https://biblestudyministry.com/2016/01/'> January 2016 </option>
+	<option value='https://biblestudyministry.com/2015/12/'> December 2015 </option>
+	<option value='https://biblestudyministry.com/2015/11/'> November 2015 </option>
+	<option value='https://biblestudyministry.com/2015/10/'> October 2015 </option>
+	<option value='https://biblestudyministry.com/2015/09/'> September 2015 </option>
+	<option value='https://biblestudyministry.com/2015/08/'> August 2015 </option>
+	<option value='https://biblestudyministry.com/2015/07/'> July 2015 </option>
+	<option value='https://biblestudyministry.com/2015/06/'> June 2015 </option>
+	<option value='https://biblestudyministry.com/2015/05/'> May 2015 </option>
+	<option value='https://biblestudyministry.com/2015/04/'> April 2015 </option>
+	<option value='https://biblestudyministry.com/2015/03/'> March 2015 </option>
+	<option value='https://biblestudyministry.com/2015/02/'> February 2015 </option>
+	<option value='https://biblestudyministry.com/2014/12/'> December 2014 </option>
+	<option value='https://biblestudyministry.com/2014/11/'> November 2014 </option>
+	<option value='https://biblestudyministry.com/2014/10/'> October 2014 </option>
+	<option value='https://biblestudyministry.com/2014/09/'> September 2014 </option>
+	<option value='https://biblestudyministry.com/2014/08/'> August 2014 </option>
+	<option value='https://biblestudyministry.com/2014/07/'> July 2014 </option>
+	<option value='https://biblestudyministry.com/2014/06/'> June 2014 </option>
+	<option value='https://biblestudyministry.com/2014/04/'> April 2014 </option>
+	<option value='https://biblestudyministry.com/2014/03/'> March 2014 </option>
+	<option value='https://biblestudyministry.com/2014/02/'> February 2014 </option>
+	<option value='https://biblestudyministry.com/2014/01/'> January 2014 </option>
+	<option value='https://biblestudyministry.com/2013/12/'> December 2013 </option>
+	<option value='https://biblestudyministry.com/2013/11/'> November 2013 </option>
+	<option value='https://biblestudyministry.com/2013/10/'> October 2013 </option>
+	<option value='https://biblestudyministry.com/2013/09/'> September 2013 </option>
+	<option value='https://biblestudyministry.com/2013/08/'> August 2013 </option>
+	<option value='https://biblestudyministry.com/2013/07/'> July 2013 </option>
+	<option value='https://biblestudyministry.com/2013/06/'> June 2013 </option>
+	<option value='https://biblestudyministry.com/2013/05/'> May 2013 </option>
+	<option value='https://biblestudyministry.com/2013/04/'> April 2013 </option>
+	<option value='https://biblestudyministry.com/2013/03/'> March 2013 </option>
+	<option value='https://biblestudyministry.com/2013/02/'> February 2013 </option>
+	<option value='https://biblestudyministry.com/2013/01/'> January 2013 </option>
+	<option value='https://biblestudyministry.com/2012/12/'> December 2012 </option>
+	<option value='https://biblestudyministry.com/2012/11/'> November 2012 </option>
+	<option value='https://biblestudyministry.com/2012/10/'> October 2012 </option>
+	<option value='https://biblestudyministry.com/2012/09/'> September 2012 </option>
+	<option value='https://biblestudyministry.com/2012/08/'> August 2012 </option>
+	<option value='https://biblestudyministry.com/2012/07/'> July 2012 </option>
+	<option value='https://biblestudyministry.com/2012/06/'> June 2012 </option>
+	<option value='https://biblestudyministry.com/2012/05/'> May 2012 </option>
+	<option value='https://biblestudyministry.com/2012/04/'> April 2012 </option>
+	<option value='https://biblestudyministry.com/2012/03/'> March 2012 </option>
+	<option value='https://biblestudyministry.com/2012/02/'> February 2012 </option>
+	<option value='https://biblestudyministry.com/2012/01/'> January 2012 </option>
+	<option value='https://biblestudyministry.com/2011/12/'> December 2011 </option>
+	<option value='https://biblestudyministry.com/2011/11/'> November 2011 </option>
+	<option value='https://biblestudyministry.com/2011/10/'> October 2011 </option>
+	<option value='https://biblestudyministry.com/2011/09/'> September 2011 </option>
+	<option value='https://biblestudyministry.com/2011/08/'> August 2011 </option>
+	<option value='https://biblestudyministry.com/2011/07/'> July 2011 </option>
+	<option value='https://biblestudyministry.com/2011/04/'> April 2011 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-2" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</section>
+		<section id="recent-posts-3" class="widget widget_recent_entries">
+		<h2 class="widget-title">Recent Content!</h2>
+		<ul>
+											<li>
+					<a href="https://biblestudyministry.com/why-david-locked-up-his-concubines-yet-still-take-care-of-them-in-2nd-samuel-20-verse-3/">Why David Locked Up His Concubines Yet Still Take Care of Them in 2nd Samuel 20 Verse 3?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/job-chapter-11-summary/">Job Chapter 11 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/what-do-world-geopolitics-have-to-do-with-the-bible/">What Do World Geopolitics Have to Do with the Bible?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/psalm-chapter-1-summary/">Psalm Chapter 1 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-8-commentary/">Exodus Chapter 8 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/seek-the-kingdom-of-heaven-as-a-definite-chief-aim/">Seek the Kingdom of Heaven as a Definite Chief Aim</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-7-commentary-moses-and-aaron/">Exodus Chapter 7 Commentary: Moses and Aaron</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-4-commentary/">Exodus Chapter 4 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-3-african-commentary/">Exodus Chapter 3 African Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-28-summary/">2 Chronicle Chapter 28 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-26-summary/">2 Chronicle Chapter 26 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/genesis-33-akobe-and-esau-reunite/">Genesis 33 Akobe and Esau Reunite</a>
+									</li>
+					</ul>
+
+		</section><section id="search-2" class="widget widget_search"><h2 class="widget-title">Look Up Past Posts by Keyword!</h2><div class='search-form-container'>
+	<form role="search" method="get" class="search-form" action="https://biblestudyministry.com/">
+		<label class="screen-reader-text" for="search-field">Search</label>
+		<input id="search-field" type="search" class="search-field" value="" name="s"
+		       title="Search for:"/>
+		<input type="submit" class="search-submit" value='Go'/>
+	</form>
+</div></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://biblestudyministry.com/2023/09/'> September 2023 </option>
+	<option value='https://biblestudyministry.com/2023/08/'> August 2023 </option>
+	<option value='https://biblestudyministry.com/2023/07/'> July 2023 </option>
+	<option value='https://biblestudyministry.com/2023/06/'> June 2023 </option>
+	<option value='https://biblestudyministry.com/2023/05/'> May 2023 </option>
+	<option value='https://biblestudyministry.com/2023/04/'> April 2023 </option>
+	<option value='https://biblestudyministry.com/2023/02/'> February 2023 </option>
+	<option value='https://biblestudyministry.com/2023/01/'> January 2023 </option>
+	<option value='https://biblestudyministry.com/2022/12/'> December 2022 </option>
+	<option value='https://biblestudyministry.com/2022/11/'> November 2022 </option>
+	<option value='https://biblestudyministry.com/2022/10/'> October 2022 </option>
+	<option value='https://biblestudyministry.com/2022/09/'> September 2022 </option>
+	<option value='https://biblestudyministry.com/2022/08/'> August 2022 </option>
+	<option value='https://biblestudyministry.com/2022/07/'> July 2022 </option>
+	<option value='https://biblestudyministry.com/2022/06/'> June 2022 </option>
+	<option value='https://biblestudyministry.com/2022/05/'> May 2022 </option>
+	<option value='https://biblestudyministry.com/2022/04/'> April 2022 </option>
+	<option value='https://biblestudyministry.com/2022/03/'> March 2022 </option>
+	<option value='https://biblestudyministry.com/2022/02/'> February 2022 </option>
+	<option value='https://biblestudyministry.com/2021/12/'> December 2021 </option>
+	<option value='https://biblestudyministry.com/2021/11/'> November 2021 </option>
+	<option value='https://biblestudyministry.com/2021/09/'> September 2021 </option>
+	<option value='https://biblestudyministry.com/2021/08/'> August 2021 </option>
+	<option value='https://biblestudyministry.com/2021/07/'> July 2021 </option>
+	<option value='https://biblestudyministry.com/2021/06/'> June 2021 </option>
+	<option value='https://biblestudyministry.com/2020/09/'> September 2020 </option>
+	<option value='https://biblestudyministry.com/2020/08/'> August 2020 </option>
+	<option value='https://biblestudyministry.com/2020/07/'> July 2020 </option>
+	<option value='https://biblestudyministry.com/2020/06/'> June 2020 </option>
+	<option value='https://biblestudyministry.com/2020/05/'> May 2020 </option>
+	<option value='https://biblestudyministry.com/2020/04/'> April 2020 </option>
+	<option value='https://biblestudyministry.com/2020/03/'> March 2020 </option>
+	<option value='https://biblestudyministry.com/2020/02/'> February 2020 </option>
+	<option value='https://biblestudyministry.com/2020/01/'> January 2020 </option>
+	<option value='https://biblestudyministry.com/2019/12/'> December 2019 </option>
+	<option value='https://biblestudyministry.com/2019/10/'> October 2019 </option>
+	<option value='https://biblestudyministry.com/2019/09/'> September 2019 </option>
+	<option value='https://biblestudyministry.com/2019/08/'> August 2019 </option>
+	<option value='https://biblestudyministry.com/2019/07/'> July 2019 </option>
+	<option value='https://biblestudyministry.com/2019/06/'> June 2019 </option>
+	<option value='https://biblestudyministry.com/2019/05/'> May 2019 </option>
+	<option value='https://biblestudyministry.com/2019/04/'> April 2019 </option>
+	<option value='https://biblestudyministry.com/2019/03/'> March 2019 </option>
+	<option value='https://biblestudyministry.com/2019/02/'> February 2019 </option>
+	<option value='https://biblestudyministry.com/2019/01/'> January 2019 </option>
+	<option value='https://biblestudyministry.com/2018/12/'> December 2018 </option>
+	<option value='https://biblestudyministry.com/2018/11/'> November 2018 </option>
+	<option value='https://biblestudyministry.com/2018/10/'> October 2018 </option>
+	<option value='https://biblestudyministry.com/2018/09/'> September 2018 </option>
+	<option value='https://biblestudyministry.com/2018/08/'> August 2018 </option>
+	<option value='https://biblestudyministry.com/2018/07/'> July 2018 </option>
+	<option value='https://biblestudyministry.com/2018/06/'> June 2018 </option>
+	<option value='https://biblestudyministry.com/2018/05/'> May 2018 </option>
+	<option value='https://biblestudyministry.com/2018/04/'> April 2018 </option>
+	<option value='https://biblestudyministry.com/2018/03/'> March 2018 </option>
+	<option value='https://biblestudyministry.com/2018/01/'> January 2018 </option>
+	<option value='https://biblestudyministry.com/2017/12/'> December 2017 </option>
+	<option value='https://biblestudyministry.com/2017/11/'> November 2017 </option>
+	<option value='https://biblestudyministry.com/2017/10/'> October 2017 </option>
+	<option value='https://biblestudyministry.com/2017/09/'> September 2017 </option>
+	<option value='https://biblestudyministry.com/2017/08/'> August 2017 </option>
+	<option value='https://biblestudyministry.com/2017/07/'> July 2017 </option>
+	<option value='https://biblestudyministry.com/2017/05/'> May 2017 </option>
+	<option value='https://biblestudyministry.com/2017/04/'> April 2017 </option>
+	<option value='https://biblestudyministry.com/2017/03/'> March 2017 </option>
+	<option value='https://biblestudyministry.com/2017/02/'> February 2017 </option>
+	<option value='https://biblestudyministry.com/2016/11/'> November 2016 </option>
+	<option value='https://biblestudyministry.com/2016/10/'> October 2016 </option>
+	<option value='https://biblestudyministry.com/2016/09/'> September 2016 </option>
+	<option value='https://biblestudyministry.com/2016/08/'> August 2016 </option>
+	<option value='https://biblestudyministry.com/2016/05/'> May 2016 </option>
+	<option value='https://biblestudyministry.com/2016/04/'> April 2016 </option>
+	<option value='https://biblestudyministry.com/2016/03/'> March 2016 </option>
+	<option value='https://biblestudyministry.com/2016/02/'> February 2016 </option>
+	<option value='https://biblestudyministry.com/2016/01/'> January 2016 </option>
+	<option value='https://biblestudyministry.com/2015/12/'> December 2015 </option>
+	<option value='https://biblestudyministry.com/2015/11/'> November 2015 </option>
+	<option value='https://biblestudyministry.com/2015/10/'> October 2015 </option>
+	<option value='https://biblestudyministry.com/2015/09/'> September 2015 </option>
+	<option value='https://biblestudyministry.com/2015/08/'> August 2015 </option>
+	<option value='https://biblestudyministry.com/2015/07/'> July 2015 </option>
+	<option value='https://biblestudyministry.com/2015/06/'> June 2015 </option>
+	<option value='https://biblestudyministry.com/2015/05/'> May 2015 </option>
+	<option value='https://biblestudyministry.com/2015/04/'> April 2015 </option>
+	<option value='https://biblestudyministry.com/2015/03/'> March 2015 </option>
+	<option value='https://biblestudyministry.com/2015/02/'> February 2015 </option>
+	<option value='https://biblestudyministry.com/2014/12/'> December 2014 </option>
+	<option value='https://biblestudyministry.com/2014/11/'> November 2014 </option>
+	<option value='https://biblestudyministry.com/2014/10/'> October 2014 </option>
+	<option value='https://biblestudyministry.com/2014/09/'> September 2014 </option>
+	<option value='https://biblestudyministry.com/2014/08/'> August 2014 </option>
+	<option value='https://biblestudyministry.com/2014/07/'> July 2014 </option>
+	<option value='https://biblestudyministry.com/2014/06/'> June 2014 </option>
+	<option value='https://biblestudyministry.com/2014/04/'> April 2014 </option>
+	<option value='https://biblestudyministry.com/2014/03/'> March 2014 </option>
+	<option value='https://biblestudyministry.com/2014/02/'> February 2014 </option>
+	<option value='https://biblestudyministry.com/2014/01/'> January 2014 </option>
+	<option value='https://biblestudyministry.com/2013/12/'> December 2013 </option>
+	<option value='https://biblestudyministry.com/2013/11/'> November 2013 </option>
+	<option value='https://biblestudyministry.com/2013/10/'> October 2013 </option>
+	<option value='https://biblestudyministry.com/2013/09/'> September 2013 </option>
+	<option value='https://biblestudyministry.com/2013/08/'> August 2013 </option>
+	<option value='https://biblestudyministry.com/2013/07/'> July 2013 </option>
+	<option value='https://biblestudyministry.com/2013/06/'> June 2013 </option>
+	<option value='https://biblestudyministry.com/2013/05/'> May 2013 </option>
+	<option value='https://biblestudyministry.com/2013/04/'> April 2013 </option>
+	<option value='https://biblestudyministry.com/2013/03/'> March 2013 </option>
+	<option value='https://biblestudyministry.com/2013/02/'> February 2013 </option>
+	<option value='https://biblestudyministry.com/2013/01/'> January 2013 </option>
+	<option value='https://biblestudyministry.com/2012/12/'> December 2012 </option>
+	<option value='https://biblestudyministry.com/2012/11/'> November 2012 </option>
+	<option value='https://biblestudyministry.com/2012/10/'> October 2012 </option>
+	<option value='https://biblestudyministry.com/2012/09/'> September 2012 </option>
+	<option value='https://biblestudyministry.com/2012/08/'> August 2012 </option>
+	<option value='https://biblestudyministry.com/2012/07/'> July 2012 </option>
+	<option value='https://biblestudyministry.com/2012/06/'> June 2012 </option>
+	<option value='https://biblestudyministry.com/2012/05/'> May 2012 </option>
+	<option value='https://biblestudyministry.com/2012/04/'> April 2012 </option>
+	<option value='https://biblestudyministry.com/2012/03/'> March 2012 </option>
+	<option value='https://biblestudyministry.com/2012/02/'> February 2012 </option>
+	<option value='https://biblestudyministry.com/2012/01/'> January 2012 </option>
+	<option value='https://biblestudyministry.com/2011/12/'> December 2011 </option>
+	<option value='https://biblestudyministry.com/2011/11/'> November 2011 </option>
+	<option value='https://biblestudyministry.com/2011/10/'> October 2011 </option>
+	<option value='https://biblestudyministry.com/2011/09/'> September 2011 </option>
+	<option value='https://biblestudyministry.com/2011/08/'> August 2011 </option>
+	<option value='https://biblestudyministry.com/2011/07/'> July 2011 </option>
+	<option value='https://biblestudyministry.com/2011/04/'> April 2011 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-2" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</section><section id="text-9" class="widget widget_text"><h2 class="widget-title">Translate into Your Language</h2>			<div class="textwidget"><div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-1162144-33'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+		</section><section id="search-2" class="widget widget_search"><h2 class="widget-title">Look Up Past Posts by Keyword!</h2><div class='search-form-container'>
+	<form role="search" method="get" class="search-form" action="https://biblestudyministry.com/">
+		<label class="screen-reader-text" for="search-field">Search</label>
+		<input id="search-field" type="search" class="search-field" value="" name="s"
+		       title="Search for:"/>
+		<input type="submit" class="search-submit" value='Go'/>
+	</form>
+</div></section><section id="text-7" class="widget widget_text"><h2 class="widget-title">Get With the Program!</h2>			<div class="textwidget"><!-- AWeber Web Form Generator 3.0.1 -->
+<style type="text/css">
+#af-form-478712605 .af-body .af-textWrap{width:70%;display:block;float:right;}
+#af-form-478712605 .af-body a{color:#9E9B9B;text-decoration:underline;font-style:normal;font-weight:normal;}
+#af-form-478712605 .af-body input.text, #af-form-478712605 .af-body textarea{background-color:#F0F0F0;border-color:#DBDBDB;border-width:1px;border-style:solid;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body input.text:focus, #af-form-478712605 .af-body textarea:focus{background-color:#EBEBEB;border-color:#C4C4C4;border-width:1px;border-style:solid;}
+#af-form-478712605 .af-body label.previewLabel{display:block;float:left;width:25%;text-align:left;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:16px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body{padding-bottom:7px;padding-top:7px;background-repeat:repeat-y;background-position:center left;background-image:none;color:#000000;font-size:11px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-header{padding-bottom:1px;padding-top:25px;padding-right:15px;padding-left:15px;background-color:#FFFFFF;background-repeat:no-repeat;background-position:top center;background-image:url("https://forms.aweber.com/images/forms/minimal/white/header.png");border-color:#000000;border-width:5px;border-bottom-style:solid;border-left-style:none;border-right-style:none;border-top-style:none;color:#000000;font-size:12px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-quirksMode .bodyText{padding-top:2px;padding-bottom:2px;}
+#af-form-478712605 .af-quirksMode{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .af-standards .af-element{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .bodyText p{margin:1em 0;}
+#af-form-478712605 .buttonContainer input.submit{background-color:#000000;background-image:url("https://forms.aweber.com/images/forms/minimal/white/button.png");color:#FFFFFF;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Verdana, sans-serif;}
+#af-form-478712605 .buttonContainer input.submit{width:auto;}
+#af-form-478712605 .buttonContainer{text-align:right;}
+#af-form-478712605 body,#af-form-478712605 dl,#af-form-478712605 dt,#af-form-478712605 dd,#af-form-478712605 h1,#af-form-478712605 h2,#af-form-478712605 h3,#af-form-478712605 h4,#af-form-478712605 h5,#af-form-478712605 h6,#af-form-478712605 pre,#af-form-478712605 code,#af-form-478712605 fieldset,#af-form-478712605 legend,#af-form-478712605 blockquote,#af-form-478712605 th,#af-form-478712605 td{float:none;color:inherit;position:static;margin:0;padding:0;}
+#af-form-478712605 button,#af-form-478712605 input,#af-form-478712605 submit,#af-form-478712605 textarea,#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{float:none;position:static;margin:0;}
+#af-form-478712605 div{margin:0;}
+#af-form-478712605 fieldset{border:0;}
+#af-form-478712605 form,#af-form-478712605 textarea,.af-form-wrapper,.af-form-close-button,#af-form-478712605 img{float:none;color:inherit;position:static;background-color:none;border:none;margin:0;padding:0;}
+#af-form-478712605 input,#af-form-478712605 button,#af-form-478712605 textarea,#af-form-478712605 select{font-size:100%;}
+#af-form-478712605 p{color:inherit;}
+#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{padding:0;}
+#af-form-478712605 table{border-collapse:collapse;border-spacing:0;}
+#af-form-478712605 ul,#af-form-478712605 ol{list-style-image:none;list-style-position:outside;list-style-type:disc;padding-left:40px;}
+#af-form-478712605,#af-form-478712605 .quirksMode{width:100%;max-width:201.18181824684px;}
+#af-form-478712605.af-quirksMode{overflow-x:hidden;}
+#af-form-478712605{background-color:#FFFFFF;border-color:#E3E3E3;border-width:1px;border-style:solid;}
+#af-form-478712605{display:block;}
+#af-form-478712605{overflow:hidden;}
+.af-body .af-textWrap{text-align:left;}
+.af-body input.image{border:none!important;}
+.af-body input.submit,.af-body input.image,.af-form .af-element input.button{float:none!important;}
+.af-body input.text{width:100%;float:none;padding:2px!important;}
+.af-body.af-standards input.submit{padding:4px 12px;}
+.af-clear{clear:both;}
+.af-element label{text-align:left;display:block;float:left;}
+.af-element{padding:5px 0;}
+.af-form-wrapper{text-indent:0;}
+.af-form{text-align:left;margin:auto;}
+.af-header{margin-bottom:0;margin-top:0;padding:10px;}
+.af-quirksMode .af-element{padding-left:0!important;padding-right:0!important;}
+.lbl-right .af-element label{text-align:right;}
+body {
+}
+</style>
+<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+<div style="display: none;">
+<input type="hidden" name="meta_web_form_id" value="478712605" />
+<input type="hidden" name="meta_split_id" value="" />
+<input type="hidden" name="listname" value="biblestudyminis" />
+<input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=video" id="redirect_a50c767f89cc30c1b99cc5551a1693ea" />
+
+<input type="hidden" name="meta_adtracking" value="Bible_Study_Ministry_Home_Page" />
+<input type="hidden" name="meta_message" value="1" />
+<input type="hidden" name="meta_required" value="name,email" />
+
+<input type="hidden" name="meta_tooltip" value="" />
+</div>
+<div id="af-form-478712605" class="af-form"><div id="af-header-478712605" class="af-header"><div class="bodyText"><p style="text-align: center;">&nbsp;Get weekly Bible Lessons emailed to you in video, audio, and in text form.&nbsp; Sign up today!</p></div></div>
+<div id="af-body-478712605"  class="af-body af-standards">
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860232">Name: </label>
+<div class="af-textWrap">
+<input id="awf_field-65860232" type="text" name="name" class="text" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" />
+</div>
+<div class="af-clear"></div></div>
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860234">Email: </label>
+<div class="af-textWrap"><input class="text" id="awf_field-65860234" type="text" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
+</div><div class="af-clear"></div>
+</div>
+<div class="af-element buttonContainer">
+<input name="submit" id="af-submit-image-478712605" type="image" class="image" style="background: none; max-width: 100%;" alt="Submit Form" src="https://forms.aweber.com/images/forms/minimal/white/button.png" tabindex="502" />
+<div class="af-clear"></div>
+</div>
+</div>
+</div>
+<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=LOwc7IxMbAys" alt="" /></div>
+</form>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-478712605")) {
+                document.getElementById("af-form-478712605").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-478712605")) {
+                document.getElementById("af-body-478712605").className = "af-body inline af-quirksMode";
+            }
+            if (document.getElementById("af-header-478712605")) {
+                document.getElementById("af-header-478712605").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-478712605")) {
+                document.getElementById("af-footer-478712605").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+    -->
+</script>
+
+<!-- /AWeber Web Form Generator 3.0.1 --></div>
+		</section>
+		<section id="recent-posts-3" class="widget widget_recent_entries">
+		<h2 class="widget-title">Recent Content!</h2>
+		<ul>
+											<li>
+					<a href="https://biblestudyministry.com/why-david-locked-up-his-concubines-yet-still-take-care-of-them-in-2nd-samuel-20-verse-3/">Why David Locked Up His Concubines Yet Still Take Care of Them in 2nd Samuel 20 Verse 3?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/job-chapter-11-summary/">Job Chapter 11 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/what-do-world-geopolitics-have-to-do-with-the-bible/">What Do World Geopolitics Have to Do with the Bible?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/psalm-chapter-1-summary/">Psalm Chapter 1 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-8-commentary/">Exodus Chapter 8 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/seek-the-kingdom-of-heaven-as-a-definite-chief-aim/">Seek the Kingdom of Heaven as a Definite Chief Aim</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-7-commentary-moses-and-aaron/">Exodus Chapter 7 Commentary: Moses and Aaron</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-4-commentary/">Exodus Chapter 4 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-3-african-commentary/">Exodus Chapter 3 African Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-28-summary/">2 Chronicle Chapter 28 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-26-summary/">2 Chronicle Chapter 26 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/genesis-33-akobe-and-esau-reunite/">Genesis 33 Akobe and Esau Reunite</a>
+									</li>
+					</ul>
+
+		</section><section id="search-2" class="widget widget_search"><h2 class="widget-title">Look Up Past Posts by Keyword!</h2><div class='search-form-container'>
+	<form role="search" method="get" class="search-form" action="https://biblestudyministry.com/">
+		<label class="screen-reader-text" for="search-field">Search</label>
+		<input id="search-field" type="search" class="search-field" value="" name="s"
+		       title="Search for:"/>
+		<input type="submit" class="search-submit" value='Go'/>
+	</form>
+</div></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://biblestudyministry.com/2023/09/'> September 2023 </option>
+	<option value='https://biblestudyministry.com/2023/08/'> August 2023 </option>
+	<option value='https://biblestudyministry.com/2023/07/'> July 2023 </option>
+	<option value='https://biblestudyministry.com/2023/06/'> June 2023 </option>
+	<option value='https://biblestudyministry.com/2023/05/'> May 2023 </option>
+	<option value='https://biblestudyministry.com/2023/04/'> April 2023 </option>
+	<option value='https://biblestudyministry.com/2023/02/'> February 2023 </option>
+	<option value='https://biblestudyministry.com/2023/01/'> January 2023 </option>
+	<option value='https://biblestudyministry.com/2022/12/'> December 2022 </option>
+	<option value='https://biblestudyministry.com/2022/11/'> November 2022 </option>
+	<option value='https://biblestudyministry.com/2022/10/'> October 2022 </option>
+	<option value='https://biblestudyministry.com/2022/09/'> September 2022 </option>
+	<option value='https://biblestudyministry.com/2022/08/'> August 2022 </option>
+	<option value='https://biblestudyministry.com/2022/07/'> July 2022 </option>
+	<option value='https://biblestudyministry.com/2022/06/'> June 2022 </option>
+	<option value='https://biblestudyministry.com/2022/05/'> May 2022 </option>
+	<option value='https://biblestudyministry.com/2022/04/'> April 2022 </option>
+	<option value='https://biblestudyministry.com/2022/03/'> March 2022 </option>
+	<option value='https://biblestudyministry.com/2022/02/'> February 2022 </option>
+	<option value='https://biblestudyministry.com/2021/12/'> December 2021 </option>
+	<option value='https://biblestudyministry.com/2021/11/'> November 2021 </option>
+	<option value='https://biblestudyministry.com/2021/09/'> September 2021 </option>
+	<option value='https://biblestudyministry.com/2021/08/'> August 2021 </option>
+	<option value='https://biblestudyministry.com/2021/07/'> July 2021 </option>
+	<option value='https://biblestudyministry.com/2021/06/'> June 2021 </option>
+	<option value='https://biblestudyministry.com/2020/09/'> September 2020 </option>
+	<option value='https://biblestudyministry.com/2020/08/'> August 2020 </option>
+	<option value='https://biblestudyministry.com/2020/07/'> July 2020 </option>
+	<option value='https://biblestudyministry.com/2020/06/'> June 2020 </option>
+	<option value='https://biblestudyministry.com/2020/05/'> May 2020 </option>
+	<option value='https://biblestudyministry.com/2020/04/'> April 2020 </option>
+	<option value='https://biblestudyministry.com/2020/03/'> March 2020 </option>
+	<option value='https://biblestudyministry.com/2020/02/'> February 2020 </option>
+	<option value='https://biblestudyministry.com/2020/01/'> January 2020 </option>
+	<option value='https://biblestudyministry.com/2019/12/'> December 2019 </option>
+	<option value='https://biblestudyministry.com/2019/10/'> October 2019 </option>
+	<option value='https://biblestudyministry.com/2019/09/'> September 2019 </option>
+	<option value='https://biblestudyministry.com/2019/08/'> August 2019 </option>
+	<option value='https://biblestudyministry.com/2019/07/'> July 2019 </option>
+	<option value='https://biblestudyministry.com/2019/06/'> June 2019 </option>
+	<option value='https://biblestudyministry.com/2019/05/'> May 2019 </option>
+	<option value='https://biblestudyministry.com/2019/04/'> April 2019 </option>
+	<option value='https://biblestudyministry.com/2019/03/'> March 2019 </option>
+	<option value='https://biblestudyministry.com/2019/02/'> February 2019 </option>
+	<option value='https://biblestudyministry.com/2019/01/'> January 2019 </option>
+	<option value='https://biblestudyministry.com/2018/12/'> December 2018 </option>
+	<option value='https://biblestudyministry.com/2018/11/'> November 2018 </option>
+	<option value='https://biblestudyministry.com/2018/10/'> October 2018 </option>
+	<option value='https://biblestudyministry.com/2018/09/'> September 2018 </option>
+	<option value='https://biblestudyministry.com/2018/08/'> August 2018 </option>
+	<option value='https://biblestudyministry.com/2018/07/'> July 2018 </option>
+	<option value='https://biblestudyministry.com/2018/06/'> June 2018 </option>
+	<option value='https://biblestudyministry.com/2018/05/'> May 2018 </option>
+	<option value='https://biblestudyministry.com/2018/04/'> April 2018 </option>
+	<option value='https://biblestudyministry.com/2018/03/'> March 2018 </option>
+	<option value='https://biblestudyministry.com/2018/01/'> January 2018 </option>
+	<option value='https://biblestudyministry.com/2017/12/'> December 2017 </option>
+	<option value='https://biblestudyministry.com/2017/11/'> November 2017 </option>
+	<option value='https://biblestudyministry.com/2017/10/'> October 2017 </option>
+	<option value='https://biblestudyministry.com/2017/09/'> September 2017 </option>
+	<option value='https://biblestudyministry.com/2017/08/'> August 2017 </option>
+	<option value='https://biblestudyministry.com/2017/07/'> July 2017 </option>
+	<option value='https://biblestudyministry.com/2017/05/'> May 2017 </option>
+	<option value='https://biblestudyministry.com/2017/04/'> April 2017 </option>
+	<option value='https://biblestudyministry.com/2017/03/'> March 2017 </option>
+	<option value='https://biblestudyministry.com/2017/02/'> February 2017 </option>
+	<option value='https://biblestudyministry.com/2016/11/'> November 2016 </option>
+	<option value='https://biblestudyministry.com/2016/10/'> October 2016 </option>
+	<option value='https://biblestudyministry.com/2016/09/'> September 2016 </option>
+	<option value='https://biblestudyministry.com/2016/08/'> August 2016 </option>
+	<option value='https://biblestudyministry.com/2016/05/'> May 2016 </option>
+	<option value='https://biblestudyministry.com/2016/04/'> April 2016 </option>
+	<option value='https://biblestudyministry.com/2016/03/'> March 2016 </option>
+	<option value='https://biblestudyministry.com/2016/02/'> February 2016 </option>
+	<option value='https://biblestudyministry.com/2016/01/'> January 2016 </option>
+	<option value='https://biblestudyministry.com/2015/12/'> December 2015 </option>
+	<option value='https://biblestudyministry.com/2015/11/'> November 2015 </option>
+	<option value='https://biblestudyministry.com/2015/10/'> October 2015 </option>
+	<option value='https://biblestudyministry.com/2015/09/'> September 2015 </option>
+	<option value='https://biblestudyministry.com/2015/08/'> August 2015 </option>
+	<option value='https://biblestudyministry.com/2015/07/'> July 2015 </option>
+	<option value='https://biblestudyministry.com/2015/06/'> June 2015 </option>
+	<option value='https://biblestudyministry.com/2015/05/'> May 2015 </option>
+	<option value='https://biblestudyministry.com/2015/04/'> April 2015 </option>
+	<option value='https://biblestudyministry.com/2015/03/'> March 2015 </option>
+	<option value='https://biblestudyministry.com/2015/02/'> February 2015 </option>
+	<option value='https://biblestudyministry.com/2014/12/'> December 2014 </option>
+	<option value='https://biblestudyministry.com/2014/11/'> November 2014 </option>
+	<option value='https://biblestudyministry.com/2014/10/'> October 2014 </option>
+	<option value='https://biblestudyministry.com/2014/09/'> September 2014 </option>
+	<option value='https://biblestudyministry.com/2014/08/'> August 2014 </option>
+	<option value='https://biblestudyministry.com/2014/07/'> July 2014 </option>
+	<option value='https://biblestudyministry.com/2014/06/'> June 2014 </option>
+	<option value='https://biblestudyministry.com/2014/04/'> April 2014 </option>
+	<option value='https://biblestudyministry.com/2014/03/'> March 2014 </option>
+	<option value='https://biblestudyministry.com/2014/02/'> February 2014 </option>
+	<option value='https://biblestudyministry.com/2014/01/'> January 2014 </option>
+	<option value='https://biblestudyministry.com/2013/12/'> December 2013 </option>
+	<option value='https://biblestudyministry.com/2013/11/'> November 2013 </option>
+	<option value='https://biblestudyministry.com/2013/10/'> October 2013 </option>
+	<option value='https://biblestudyministry.com/2013/09/'> September 2013 </option>
+	<option value='https://biblestudyministry.com/2013/08/'> August 2013 </option>
+	<option value='https://biblestudyministry.com/2013/07/'> July 2013 </option>
+	<option value='https://biblestudyministry.com/2013/06/'> June 2013 </option>
+	<option value='https://biblestudyministry.com/2013/05/'> May 2013 </option>
+	<option value='https://biblestudyministry.com/2013/04/'> April 2013 </option>
+	<option value='https://biblestudyministry.com/2013/03/'> March 2013 </option>
+	<option value='https://biblestudyministry.com/2013/02/'> February 2013 </option>
+	<option value='https://biblestudyministry.com/2013/01/'> January 2013 </option>
+	<option value='https://biblestudyministry.com/2012/12/'> December 2012 </option>
+	<option value='https://biblestudyministry.com/2012/11/'> November 2012 </option>
+	<option value='https://biblestudyministry.com/2012/10/'> October 2012 </option>
+	<option value='https://biblestudyministry.com/2012/09/'> September 2012 </option>
+	<option value='https://biblestudyministry.com/2012/08/'> August 2012 </option>
+	<option value='https://biblestudyministry.com/2012/07/'> July 2012 </option>
+	<option value='https://biblestudyministry.com/2012/06/'> June 2012 </option>
+	<option value='https://biblestudyministry.com/2012/05/'> May 2012 </option>
+	<option value='https://biblestudyministry.com/2012/04/'> April 2012 </option>
+	<option value='https://biblestudyministry.com/2012/03/'> March 2012 </option>
+	<option value='https://biblestudyministry.com/2012/02/'> February 2012 </option>
+	<option value='https://biblestudyministry.com/2012/01/'> January 2012 </option>
+	<option value='https://biblestudyministry.com/2011/12/'> December 2011 </option>
+	<option value='https://biblestudyministry.com/2011/11/'> November 2011 </option>
+	<option value='https://biblestudyministry.com/2011/10/'> October 2011 </option>
+	<option value='https://biblestudyministry.com/2011/09/'> September 2011 </option>
+	<option value='https://biblestudyministry.com/2011/08/'> August 2011 </option>
+	<option value='https://biblestudyministry.com/2011/07/'> July 2011 </option>
+	<option value='https://biblestudyministry.com/2011/04/'> April 2011 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-2" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</section><section id="text-9" class="widget widget_text"><h2 class="widget-title">Translate into Your Language</h2>			<div class="textwidget"><div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-1162144-33'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+		</section><section id="search-2" class="widget widget_search"><h2 class="widget-title">Look Up Past Posts by Keyword!</h2><div class='search-form-container'>
+	<form role="search" method="get" class="search-form" action="https://biblestudyministry.com/">
+		<label class="screen-reader-text" for="search-field">Search</label>
+		<input id="search-field" type="search" class="search-field" value="" name="s"
+		       title="Search for:"/>
+		<input type="submit" class="search-submit" value='Go'/>
+	</form>
+</div></section><section id="text-7" class="widget widget_text"><h2 class="widget-title">Get With the Program!</h2>			<div class="textwidget"><!-- AWeber Web Form Generator 3.0.1 -->
+<style type="text/css">
+#af-form-478712605 .af-body .af-textWrap{width:70%;display:block;float:right;}
+#af-form-478712605 .af-body a{color:#9E9B9B;text-decoration:underline;font-style:normal;font-weight:normal;}
+#af-form-478712605 .af-body input.text, #af-form-478712605 .af-body textarea{background-color:#F0F0F0;border-color:#DBDBDB;border-width:1px;border-style:solid;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body input.text:focus, #af-form-478712605 .af-body textarea:focus{background-color:#EBEBEB;border-color:#C4C4C4;border-width:1px;border-style:solid;}
+#af-form-478712605 .af-body label.previewLabel{display:block;float:left;width:25%;text-align:left;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:16px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body{padding-bottom:7px;padding-top:7px;background-repeat:repeat-y;background-position:center left;background-image:none;color:#000000;font-size:11px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-header{padding-bottom:1px;padding-top:25px;padding-right:15px;padding-left:15px;background-color:#FFFFFF;background-repeat:no-repeat;background-position:top center;background-image:url("https://forms.aweber.com/images/forms/minimal/white/header.png");border-color:#000000;border-width:5px;border-bottom-style:solid;border-left-style:none;border-right-style:none;border-top-style:none;color:#000000;font-size:12px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-quirksMode .bodyText{padding-top:2px;padding-bottom:2px;}
+#af-form-478712605 .af-quirksMode{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .af-standards .af-element{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .bodyText p{margin:1em 0;}
+#af-form-478712605 .buttonContainer input.submit{background-color:#000000;background-image:url("https://forms.aweber.com/images/forms/minimal/white/button.png");color:#FFFFFF;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Verdana, sans-serif;}
+#af-form-478712605 .buttonContainer input.submit{width:auto;}
+#af-form-478712605 .buttonContainer{text-align:right;}
+#af-form-478712605 body,#af-form-478712605 dl,#af-form-478712605 dt,#af-form-478712605 dd,#af-form-478712605 h1,#af-form-478712605 h2,#af-form-478712605 h3,#af-form-478712605 h4,#af-form-478712605 h5,#af-form-478712605 h6,#af-form-478712605 pre,#af-form-478712605 code,#af-form-478712605 fieldset,#af-form-478712605 legend,#af-form-478712605 blockquote,#af-form-478712605 th,#af-form-478712605 td{float:none;color:inherit;position:static;margin:0;padding:0;}
+#af-form-478712605 button,#af-form-478712605 input,#af-form-478712605 submit,#af-form-478712605 textarea,#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{float:none;position:static;margin:0;}
+#af-form-478712605 div{margin:0;}
+#af-form-478712605 fieldset{border:0;}
+#af-form-478712605 form,#af-form-478712605 textarea,.af-form-wrapper,.af-form-close-button,#af-form-478712605 img{float:none;color:inherit;position:static;background-color:none;border:none;margin:0;padding:0;}
+#af-form-478712605 input,#af-form-478712605 button,#af-form-478712605 textarea,#af-form-478712605 select{font-size:100%;}
+#af-form-478712605 p{color:inherit;}
+#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{padding:0;}
+#af-form-478712605 table{border-collapse:collapse;border-spacing:0;}
+#af-form-478712605 ul,#af-form-478712605 ol{list-style-image:none;list-style-position:outside;list-style-type:disc;padding-left:40px;}
+#af-form-478712605,#af-form-478712605 .quirksMode{width:100%;max-width:201.18181824684px;}
+#af-form-478712605.af-quirksMode{overflow-x:hidden;}
+#af-form-478712605{background-color:#FFFFFF;border-color:#E3E3E3;border-width:1px;border-style:solid;}
+#af-form-478712605{display:block;}
+#af-form-478712605{overflow:hidden;}
+.af-body .af-textWrap{text-align:left;}
+.af-body input.image{border:none!important;}
+.af-body input.submit,.af-body input.image,.af-form .af-element input.button{float:none!important;}
+.af-body input.text{width:100%;float:none;padding:2px!important;}
+.af-body.af-standards input.submit{padding:4px 12px;}
+.af-clear{clear:both;}
+.af-element label{text-align:left;display:block;float:left;}
+.af-element{padding:5px 0;}
+.af-form-wrapper{text-indent:0;}
+.af-form{text-align:left;margin:auto;}
+.af-header{margin-bottom:0;margin-top:0;padding:10px;}
+.af-quirksMode .af-element{padding-left:0!important;padding-right:0!important;}
+.lbl-right .af-element label{text-align:right;}
+body {
+}
+</style>
+<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+<div style="display: none;">
+<input type="hidden" name="meta_web_form_id" value="478712605" />
+<input type="hidden" name="meta_split_id" value="" />
+<input type="hidden" name="listname" value="biblestudyminis" />
+<input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=video" id="redirect_a50c767f89cc30c1b99cc5551a1693ea" />
+
+<input type="hidden" name="meta_adtracking" value="Bible_Study_Ministry_Home_Page" />
+<input type="hidden" name="meta_message" value="1" />
+<input type="hidden" name="meta_required" value="name,email" />
+
+<input type="hidden" name="meta_tooltip" value="" />
+</div>
+<div id="af-form-478712605" class="af-form"><div id="af-header-478712605" class="af-header"><div class="bodyText"><p style="text-align: center;">&nbsp;Get weekly Bible Lessons emailed to you in video, audio, and in text form.&nbsp; Sign up today!</p></div></div>
+<div id="af-body-478712605"  class="af-body af-standards">
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860232">Name: </label>
+<div class="af-textWrap">
+<input id="awf_field-65860232" type="text" name="name" class="text" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" />
+</div>
+<div class="af-clear"></div></div>
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860234">Email: </label>
+<div class="af-textWrap"><input class="text" id="awf_field-65860234" type="text" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
+</div><div class="af-clear"></div>
+</div>
+<div class="af-element buttonContainer">
+<input name="submit" id="af-submit-image-478712605" type="image" class="image" style="background: none; max-width: 100%;" alt="Submit Form" src="https://forms.aweber.com/images/forms/minimal/white/button.png" tabindex="502" />
+<div class="af-clear"></div>
+</div>
+</div>
+</div>
+<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=LOwc7IxMbAys" alt="" /></div>
+</form>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-478712605")) {
+                document.getElementById("af-form-478712605").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-478712605")) {
+                document.getElementById("af-body-478712605").className = "af-body inline af-quirksMode";
+            }
+            if (document.getElementById("af-header-478712605")) {
+                document.getElementById("af-header-478712605").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-478712605")) {
+                document.getElementById("af-footer-478712605").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+    -->
+</script>
+
+<!-- /AWeber Web Form Generator 3.0.1 --></div>
+		</section>
+		<section id="recent-posts-3" class="widget widget_recent_entries">
+		<h2 class="widget-title">Recent Content!</h2>
+		<ul>
+											<li>
+					<a href="https://biblestudyministry.com/why-david-locked-up-his-concubines-yet-still-take-care-of-them-in-2nd-samuel-20-verse-3/">Why David Locked Up His Concubines Yet Still Take Care of Them in 2nd Samuel 20 Verse 3?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/job-chapter-11-summary/">Job Chapter 11 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/what-do-world-geopolitics-have-to-do-with-the-bible/">What Do World Geopolitics Have to Do with the Bible?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/psalm-chapter-1-summary/">Psalm Chapter 1 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-8-commentary/">Exodus Chapter 8 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/seek-the-kingdom-of-heaven-as-a-definite-chief-aim/">Seek the Kingdom of Heaven as a Definite Chief Aim</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-7-commentary-moses-and-aaron/">Exodus Chapter 7 Commentary: Moses and Aaron</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-4-commentary/">Exodus Chapter 4 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-3-african-commentary/">Exodus Chapter 3 African Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-28-summary/">2 Chronicle Chapter 28 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-26-summary/">2 Chronicle Chapter 26 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/genesis-33-akobe-and-esau-reunite/">Genesis 33 Akobe and Esau Reunite</a>
+									</li>
+					</ul>
+
+		</section><section id="text-9" class="widget widget_text"><h2 class="widget-title">Translate into Your Language</h2>			<div class="textwidget"><div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-1162144-33'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+		</section><section id="search-2" class="widget widget_search"><h2 class="widget-title">Look Up Past Posts by Keyword!</h2><div class='search-form-container'>
+	<form role="search" method="get" class="search-form" action="https://biblestudyministry.com/">
+		<label class="screen-reader-text" for="search-field">Search</label>
+		<input id="search-field" type="search" class="search-field" value="" name="s"
+		       title="Search for:"/>
+		<input type="submit" class="search-submit" value='Go'/>
+	</form>
+</div></section><section id="text-7" class="widget widget_text"><h2 class="widget-title">Get With the Program!</h2>			<div class="textwidget"><!-- AWeber Web Form Generator 3.0.1 -->
+<style type="text/css">
+#af-form-478712605 .af-body .af-textWrap{width:70%;display:block;float:right;}
+#af-form-478712605 .af-body a{color:#9E9B9B;text-decoration:underline;font-style:normal;font-weight:normal;}
+#af-form-478712605 .af-body input.text, #af-form-478712605 .af-body textarea{background-color:#F0F0F0;border-color:#DBDBDB;border-width:1px;border-style:solid;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body input.text:focus, #af-form-478712605 .af-body textarea:focus{background-color:#EBEBEB;border-color:#C4C4C4;border-width:1px;border-style:solid;}
+#af-form-478712605 .af-body label.previewLabel{display:block;float:left;width:25%;text-align:left;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:16px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body{padding-bottom:7px;padding-top:7px;background-repeat:repeat-y;background-position:center left;background-image:none;color:#000000;font-size:11px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-header{padding-bottom:1px;padding-top:25px;padding-right:15px;padding-left:15px;background-color:#FFFFFF;background-repeat:no-repeat;background-position:top center;background-image:url("https://forms.aweber.com/images/forms/minimal/white/header.png");border-color:#000000;border-width:5px;border-bottom-style:solid;border-left-style:none;border-right-style:none;border-top-style:none;color:#000000;font-size:12px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-quirksMode .bodyText{padding-top:2px;padding-bottom:2px;}
+#af-form-478712605 .af-quirksMode{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .af-standards .af-element{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .bodyText p{margin:1em 0;}
+#af-form-478712605 .buttonContainer input.submit{background-color:#000000;background-image:url("https://forms.aweber.com/images/forms/minimal/white/button.png");color:#FFFFFF;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Verdana, sans-serif;}
+#af-form-478712605 .buttonContainer input.submit{width:auto;}
+#af-form-478712605 .buttonContainer{text-align:right;}
+#af-form-478712605 body,#af-form-478712605 dl,#af-form-478712605 dt,#af-form-478712605 dd,#af-form-478712605 h1,#af-form-478712605 h2,#af-form-478712605 h3,#af-form-478712605 h4,#af-form-478712605 h5,#af-form-478712605 h6,#af-form-478712605 pre,#af-form-478712605 code,#af-form-478712605 fieldset,#af-form-478712605 legend,#af-form-478712605 blockquote,#af-form-478712605 th,#af-form-478712605 td{float:none;color:inherit;position:static;margin:0;padding:0;}
+#af-form-478712605 button,#af-form-478712605 input,#af-form-478712605 submit,#af-form-478712605 textarea,#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{float:none;position:static;margin:0;}
+#af-form-478712605 div{margin:0;}
+#af-form-478712605 fieldset{border:0;}
+#af-form-478712605 form,#af-form-478712605 textarea,.af-form-wrapper,.af-form-close-button,#af-form-478712605 img{float:none;color:inherit;position:static;background-color:none;border:none;margin:0;padding:0;}
+#af-form-478712605 input,#af-form-478712605 button,#af-form-478712605 textarea,#af-form-478712605 select{font-size:100%;}
+#af-form-478712605 p{color:inherit;}
+#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{padding:0;}
+#af-form-478712605 table{border-collapse:collapse;border-spacing:0;}
+#af-form-478712605 ul,#af-form-478712605 ol{list-style-image:none;list-style-position:outside;list-style-type:disc;padding-left:40px;}
+#af-form-478712605,#af-form-478712605 .quirksMode{width:100%;max-width:201.18181824684px;}
+#af-form-478712605.af-quirksMode{overflow-x:hidden;}
+#af-form-478712605{background-color:#FFFFFF;border-color:#E3E3E3;border-width:1px;border-style:solid;}
+#af-form-478712605{display:block;}
+#af-form-478712605{overflow:hidden;}
+.af-body .af-textWrap{text-align:left;}
+.af-body input.image{border:none!important;}
+.af-body input.submit,.af-body input.image,.af-form .af-element input.button{float:none!important;}
+.af-body input.text{width:100%;float:none;padding:2px!important;}
+.af-body.af-standards input.submit{padding:4px 12px;}
+.af-clear{clear:both;}
+.af-element label{text-align:left;display:block;float:left;}
+.af-element{padding:5px 0;}
+.af-form-wrapper{text-indent:0;}
+.af-form{text-align:left;margin:auto;}
+.af-header{margin-bottom:0;margin-top:0;padding:10px;}
+.af-quirksMode .af-element{padding-left:0!important;padding-right:0!important;}
+.lbl-right .af-element label{text-align:right;}
+body {
+}
+</style>
+<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+<div style="display: none;">
+<input type="hidden" name="meta_web_form_id" value="478712605" />
+<input type="hidden" name="meta_split_id" value="" />
+<input type="hidden" name="listname" value="biblestudyminis" />
+<input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=video" id="redirect_a50c767f89cc30c1b99cc5551a1693ea" />
+
+<input type="hidden" name="meta_adtracking" value="Bible_Study_Ministry_Home_Page" />
+<input type="hidden" name="meta_message" value="1" />
+<input type="hidden" name="meta_required" value="name,email" />
+
+<input type="hidden" name="meta_tooltip" value="" />
+</div>
+<div id="af-form-478712605" class="af-form"><div id="af-header-478712605" class="af-header"><div class="bodyText"><p style="text-align: center;">&nbsp;Get weekly Bible Lessons emailed to you in video, audio, and in text form.&nbsp; Sign up today!</p></div></div>
+<div id="af-body-478712605"  class="af-body af-standards">
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860232">Name: </label>
+<div class="af-textWrap">
+<input id="awf_field-65860232" type="text" name="name" class="text" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" />
+</div>
+<div class="af-clear"></div></div>
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860234">Email: </label>
+<div class="af-textWrap"><input class="text" id="awf_field-65860234" type="text" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
+</div><div class="af-clear"></div>
+</div>
+<div class="af-element buttonContainer">
+<input name="submit" id="af-submit-image-478712605" type="image" class="image" style="background: none; max-width: 100%;" alt="Submit Form" src="https://forms.aweber.com/images/forms/minimal/white/button.png" tabindex="502" />
+<div class="af-clear"></div>
+</div>
+</div>
+</div>
+<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=LOwc7IxMbAys" alt="" /></div>
+</form>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-478712605")) {
+                document.getElementById("af-form-478712605").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-478712605")) {
+                document.getElementById("af-body-478712605").className = "af-body inline af-quirksMode";
+            }
+            if (document.getElementById("af-header-478712605")) {
+                document.getElementById("af-header-478712605").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-478712605")) {
+                document.getElementById("af-footer-478712605").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+    -->
+</script>
+
+<!-- /AWeber Web Form Generator 3.0.1 --></div>
+		</section><section id="block-5" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-full"><a href="https://bible-study-ministry-apparel.creator-spring.com/listing/spiritualstudent?product=823" target="_blank" rel=" noreferrer noopener"><img decoding="async" loading="lazy" width="800" height="800" src="https://biblestudyministry.com/wp-content/uploads/2022/08/spiritual-student-shirts.jpeg" alt="" class="wp-image-9886" srcset="https://biblestudyministry.com/wp-content/uploads/2022/08/spiritual-student-shirts.jpeg 800w, https://biblestudyministry.com/wp-content/uploads/2022/08/spiritual-student-shirts-300x300.jpeg 300w, https://biblestudyministry.com/wp-content/uploads/2022/08/spiritual-student-shirts-150x150.jpeg 150w, https://biblestudyministry.com/wp-content/uploads/2022/08/spiritual-student-shirts-768x768.jpeg 768w" sizes="(max-width: 800px) 100vw, 800px" /></a><figcaption class="wp-element-caption">Grab a Tee and Support the Ministry</figcaption></figure>
+</section><section id="block-4" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-large is-resized"><a href="https://anchor.fm/kingdomofpriests" target="_blank" rel=" noreferrer noopener"><img decoding="async" loading="lazy" src="https://biblestudyministry.com/wp-content/uploads/2022/08/And-the-Books-were-Opened-1024x576.png" alt="" class="wp-image-9882" width="262" height="147" srcset="https://biblestudyministry.com/wp-content/uploads/2022/08/And-the-Books-were-Opened-1024x576.png 1024w, https://biblestudyministry.com/wp-content/uploads/2022/08/And-the-Books-were-Opened-300x169.png 300w, https://biblestudyministry.com/wp-content/uploads/2022/08/And-the-Books-were-Opened-768x432.png 768w, https://biblestudyministry.com/wp-content/uploads/2022/08/And-the-Books-were-Opened-1536x864.png 1536w, https://biblestudyministry.com/wp-content/uploads/2022/08/And-the-Books-were-Opened-2048x1152.png 2048w" sizes="(max-width: 262px) 100vw, 262px" /></a><figcaption class="wp-element-caption">The New Podcast Filled with the Holy Spirit</figcaption></figure>
+</section><section id="widget_tptn_pop-2" class="widget tptn_posts_list_widget"><h2 class="widget-title">Popular Content!</h2><div class="tptn_posts  tptn_posts_widget tptn_posts_widget-widget_tptn_pop-2    tptn-left-thumbs"><ul><li><a href="https://biblestudyministry.com/israel-split-kingdoms/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2014/11/Why-Did-Israel-Split-into-Two-Kingdoms-150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Why Did Israel Split into Two Kingdoms" title="Why Did Israel Split into Two Kingdoms?" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/admin/">Elder Ishe</a></span> <span class="tptn_excerpt"> Sometimes some of the histories in the Bible escape some&hellip;</span></li><li><a href="https://biblestudyministry.com/names-12-tribes-israel/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2012/02/12-Tribes-of-Israel1-150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Names of the 12 Tribes of Israel" title="Names of the 12 Tribes of Israel" srcset="https://biblestudyministry.com/wp-content/uploads/2012/02/12-Tribes-of-Israel1-150x150.jpg 150w, https://biblestudyministry.com/wp-content/uploads/2012/02/12-Tribes-of-Israel1-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" srcset="https://biblestudyministry.com/wp-content/uploads/2012/02/12-Tribes-of-Israel1-150x150.jpg 150w, https://biblestudyministry.com/wp-content/uploads/2012/02/12-Tribes-of-Israel1-100x100.jpg 100w" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/admin/">Elder Ishe</a></span> <span class="tptn_excerpt"> Need to Know the Names of the 12 Tribes of&hellip;</span></li><li><a href="https://biblestudyministry.com/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2023/06/09da13b3bb985b4a908265332ccd34c21687537943_cropped_optimized-150x150.jpg" class="tptn_firstcorrect tptn_thumb thumbnail" alt="bible study lessons and studies" title="bible study lessons and studies" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/seth/">Brthr Nhmyh</a></span> <span class="tptn_excerpt"> The World is a Completely New Place Where You Must&hellip;</span></li><li><a href="https://biblestudyministry.com/genesis-chapter-3-summary/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2017/05/genesis-chapter-one-could-be-150x150.jpeg" class="tptn_featured tptn_thumb thumbnail" alt="Genesis 43" title="Genesis Chapter 3 Summary" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/admin/">Elder Ishe</a></span> <span class="tptn_excerpt"> In this chapter, our species took a detour that has&hellip;</span></li><li><a href="https://biblestudyministry.com/chapter-summaries-genesis-chapter-2-summary/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2018/05/Chapter-Summaries-Genesis-Chapter-2-Summary-150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Genesis Chapter 12 Summary" title="Chapter Summaries: Genesis Chapter 2 Summary" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/seth/">Brthr Nhmyh</a></span> <span class="tptn_excerpt"> Chapter 2 of Genesis begins with the report of the&hellip;</span></li><li><a href="https://biblestudyministry.com/matthew-chapter-5-summary-chapter-summaries/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2019/02/Matthew-Chapter-1-Summary--150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Matthew Chapter 8 Summary" title="Matthew Chapter 5 Summary: Chapter Summaries" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/seth/">Brthr Nhmyh</a></span> <span class="tptn_excerpt"> Matthew chapter 5 summary, Jesus the Holy Messiah from God&hellip;</span></li><li><a href="https://biblestudyministry.com/matthew-chapter-2-summary-chapter-summaries/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2019/02/Matthew-Chapter-1-Summary--150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Matthew Chapter 8 Summary" title="Matthew Chapter 2 Summary: Chapter Summaries" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/seth/">Brthr Nhmyh</a></span> <span class="tptn_excerpt"> In Matthew chapter 2 summary, we will meet some wise&hellip;</span></li><li><a href="https://biblestudyministry.com/matthew-chapter-1-summary-chapter-summaries/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2019/02/Matthew-Chapter-1-Summary--150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Matthew Chapter 8 Summary" title="Matthew Chapter 1 Summary: Chapter Summaries" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/seth/">Brthr Nhmyh</a></span> <span class="tptn_excerpt"> Can you say New Testament chapter summaries? Welcome to Matthew&hellip;</span></li><li><a href="https://biblestudyministry.com/judges-chapter-6-summary-chapter-summaries/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2016/03/Judges-Summary-5-150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Judges Chapter 20 Summary Part 2" title="Judges Chapter 6 Summary: Chapter Summaries" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/seth/">Brthr Nhmyh</a></span> <span class="tptn_excerpt"> Judges chapter 6 summary is going to tell us about&hellip;</span></li><li><a href="https://biblestudyministry.com/judges-chapter-2-summary-chapter-summaries/"     class="tptn_link"><img loading="lazy"  width="150" height="150"  src="https://biblestudyministry.com/wp-content/uploads/2016/03/Judges-Summary-4-150x150.jpg" class="tptn_featured tptn_thumb thumbnail" alt="Judges Chapter 8 Summary" title="Judges Chapter 2 Summary: Chapter Summaries" /></a><span class="tptn_author">  by <a href="https://biblestudyministry.com/author/seth/">Brthr Nhmyh</a></span> <span class="tptn_excerpt"> Judges chapter 2 summary began with bad news for the&hellip;</span></li></ul><div class="tptn_clear"></div></div></section>
+		<section id="recent-posts-3" class="widget widget_recent_entries">
+		<h2 class="widget-title">Recent Content!</h2>
+		<ul>
+											<li>
+					<a href="https://biblestudyministry.com/why-david-locked-up-his-concubines-yet-still-take-care-of-them-in-2nd-samuel-20-verse-3/">Why David Locked Up His Concubines Yet Still Take Care of Them in 2nd Samuel 20 Verse 3?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/job-chapter-11-summary/">Job Chapter 11 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/what-do-world-geopolitics-have-to-do-with-the-bible/">What Do World Geopolitics Have to Do with the Bible?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/psalm-chapter-1-summary/">Psalm Chapter 1 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-8-commentary/">Exodus Chapter 8 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/seek-the-kingdom-of-heaven-as-a-definite-chief-aim/">Seek the Kingdom of Heaven as a Definite Chief Aim</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-7-commentary-moses-and-aaron/">Exodus Chapter 7 Commentary: Moses and Aaron</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-4-commentary/">Exodus Chapter 4 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-3-african-commentary/">Exodus Chapter 3 African Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-28-summary/">2 Chronicle Chapter 28 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-26-summary/">2 Chronicle Chapter 26 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/genesis-33-akobe-and-esau-reunite/">Genesis 33 Akobe and Esau Reunite</a>
+									</li>
+					</ul>
+
+		</section><section id="media_video-2" class="widget widget_media_video"><h2 class="widget-title">Daniel Chapter 2 Study</h2><div style="width:100%;" class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-1749-1" preload="metadata" controls="controls"><source type="video/youtube" src="https://youtu.be/5gThyhHdJAE?_=1" /><a href="https://youtu.be/5gThyhHdJAE">https://youtu.be/5gThyhHdJAE</a></video></div></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://biblestudyministry.com/2023/09/'> September 2023 </option>
+	<option value='https://biblestudyministry.com/2023/08/'> August 2023 </option>
+	<option value='https://biblestudyministry.com/2023/07/'> July 2023 </option>
+	<option value='https://biblestudyministry.com/2023/06/'> June 2023 </option>
+	<option value='https://biblestudyministry.com/2023/05/'> May 2023 </option>
+	<option value='https://biblestudyministry.com/2023/04/'> April 2023 </option>
+	<option value='https://biblestudyministry.com/2023/02/'> February 2023 </option>
+	<option value='https://biblestudyministry.com/2023/01/'> January 2023 </option>
+	<option value='https://biblestudyministry.com/2022/12/'> December 2022 </option>
+	<option value='https://biblestudyministry.com/2022/11/'> November 2022 </option>
+	<option value='https://biblestudyministry.com/2022/10/'> October 2022 </option>
+	<option value='https://biblestudyministry.com/2022/09/'> September 2022 </option>
+	<option value='https://biblestudyministry.com/2022/08/'> August 2022 </option>
+	<option value='https://biblestudyministry.com/2022/07/'> July 2022 </option>
+	<option value='https://biblestudyministry.com/2022/06/'> June 2022 </option>
+	<option value='https://biblestudyministry.com/2022/05/'> May 2022 </option>
+	<option value='https://biblestudyministry.com/2022/04/'> April 2022 </option>
+	<option value='https://biblestudyministry.com/2022/03/'> March 2022 </option>
+	<option value='https://biblestudyministry.com/2022/02/'> February 2022 </option>
+	<option value='https://biblestudyministry.com/2021/12/'> December 2021 </option>
+	<option value='https://biblestudyministry.com/2021/11/'> November 2021 </option>
+	<option value='https://biblestudyministry.com/2021/09/'> September 2021 </option>
+	<option value='https://biblestudyministry.com/2021/08/'> August 2021 </option>
+	<option value='https://biblestudyministry.com/2021/07/'> July 2021 </option>
+	<option value='https://biblestudyministry.com/2021/06/'> June 2021 </option>
+	<option value='https://biblestudyministry.com/2020/09/'> September 2020 </option>
+	<option value='https://biblestudyministry.com/2020/08/'> August 2020 </option>
+	<option value='https://biblestudyministry.com/2020/07/'> July 2020 </option>
+	<option value='https://biblestudyministry.com/2020/06/'> June 2020 </option>
+	<option value='https://biblestudyministry.com/2020/05/'> May 2020 </option>
+	<option value='https://biblestudyministry.com/2020/04/'> April 2020 </option>
+	<option value='https://biblestudyministry.com/2020/03/'> March 2020 </option>
+	<option value='https://biblestudyministry.com/2020/02/'> February 2020 </option>
+	<option value='https://biblestudyministry.com/2020/01/'> January 2020 </option>
+	<option value='https://biblestudyministry.com/2019/12/'> December 2019 </option>
+	<option value='https://biblestudyministry.com/2019/10/'> October 2019 </option>
+	<option value='https://biblestudyministry.com/2019/09/'> September 2019 </option>
+	<option value='https://biblestudyministry.com/2019/08/'> August 2019 </option>
+	<option value='https://biblestudyministry.com/2019/07/'> July 2019 </option>
+	<option value='https://biblestudyministry.com/2019/06/'> June 2019 </option>
+	<option value='https://biblestudyministry.com/2019/05/'> May 2019 </option>
+	<option value='https://biblestudyministry.com/2019/04/'> April 2019 </option>
+	<option value='https://biblestudyministry.com/2019/03/'> March 2019 </option>
+	<option value='https://biblestudyministry.com/2019/02/'> February 2019 </option>
+	<option value='https://biblestudyministry.com/2019/01/'> January 2019 </option>
+	<option value='https://biblestudyministry.com/2018/12/'> December 2018 </option>
+	<option value='https://biblestudyministry.com/2018/11/'> November 2018 </option>
+	<option value='https://biblestudyministry.com/2018/10/'> October 2018 </option>
+	<option value='https://biblestudyministry.com/2018/09/'> September 2018 </option>
+	<option value='https://biblestudyministry.com/2018/08/'> August 2018 </option>
+	<option value='https://biblestudyministry.com/2018/07/'> July 2018 </option>
+	<option value='https://biblestudyministry.com/2018/06/'> June 2018 </option>
+	<option value='https://biblestudyministry.com/2018/05/'> May 2018 </option>
+	<option value='https://biblestudyministry.com/2018/04/'> April 2018 </option>
+	<option value='https://biblestudyministry.com/2018/03/'> March 2018 </option>
+	<option value='https://biblestudyministry.com/2018/01/'> January 2018 </option>
+	<option value='https://biblestudyministry.com/2017/12/'> December 2017 </option>
+	<option value='https://biblestudyministry.com/2017/11/'> November 2017 </option>
+	<option value='https://biblestudyministry.com/2017/10/'> October 2017 </option>
+	<option value='https://biblestudyministry.com/2017/09/'> September 2017 </option>
+	<option value='https://biblestudyministry.com/2017/08/'> August 2017 </option>
+	<option value='https://biblestudyministry.com/2017/07/'> July 2017 </option>
+	<option value='https://biblestudyministry.com/2017/05/'> May 2017 </option>
+	<option value='https://biblestudyministry.com/2017/04/'> April 2017 </option>
+	<option value='https://biblestudyministry.com/2017/03/'> March 2017 </option>
+	<option value='https://biblestudyministry.com/2017/02/'> February 2017 </option>
+	<option value='https://biblestudyministry.com/2016/11/'> November 2016 </option>
+	<option value='https://biblestudyministry.com/2016/10/'> October 2016 </option>
+	<option value='https://biblestudyministry.com/2016/09/'> September 2016 </option>
+	<option value='https://biblestudyministry.com/2016/08/'> August 2016 </option>
+	<option value='https://biblestudyministry.com/2016/05/'> May 2016 </option>
+	<option value='https://biblestudyministry.com/2016/04/'> April 2016 </option>
+	<option value='https://biblestudyministry.com/2016/03/'> March 2016 </option>
+	<option value='https://biblestudyministry.com/2016/02/'> February 2016 </option>
+	<option value='https://biblestudyministry.com/2016/01/'> January 2016 </option>
+	<option value='https://biblestudyministry.com/2015/12/'> December 2015 </option>
+	<option value='https://biblestudyministry.com/2015/11/'> November 2015 </option>
+	<option value='https://biblestudyministry.com/2015/10/'> October 2015 </option>
+	<option value='https://biblestudyministry.com/2015/09/'> September 2015 </option>
+	<option value='https://biblestudyministry.com/2015/08/'> August 2015 </option>
+	<option value='https://biblestudyministry.com/2015/07/'> July 2015 </option>
+	<option value='https://biblestudyministry.com/2015/06/'> June 2015 </option>
+	<option value='https://biblestudyministry.com/2015/05/'> May 2015 </option>
+	<option value='https://biblestudyministry.com/2015/04/'> April 2015 </option>
+	<option value='https://biblestudyministry.com/2015/03/'> March 2015 </option>
+	<option value='https://biblestudyministry.com/2015/02/'> February 2015 </option>
+	<option value='https://biblestudyministry.com/2014/12/'> December 2014 </option>
+	<option value='https://biblestudyministry.com/2014/11/'> November 2014 </option>
+	<option value='https://biblestudyministry.com/2014/10/'> October 2014 </option>
+	<option value='https://biblestudyministry.com/2014/09/'> September 2014 </option>
+	<option value='https://biblestudyministry.com/2014/08/'> August 2014 </option>
+	<option value='https://biblestudyministry.com/2014/07/'> July 2014 </option>
+	<option value='https://biblestudyministry.com/2014/06/'> June 2014 </option>
+	<option value='https://biblestudyministry.com/2014/04/'> April 2014 </option>
+	<option value='https://biblestudyministry.com/2014/03/'> March 2014 </option>
+	<option value='https://biblestudyministry.com/2014/02/'> February 2014 </option>
+	<option value='https://biblestudyministry.com/2014/01/'> January 2014 </option>
+	<option value='https://biblestudyministry.com/2013/12/'> December 2013 </option>
+	<option value='https://biblestudyministry.com/2013/11/'> November 2013 </option>
+	<option value='https://biblestudyministry.com/2013/10/'> October 2013 </option>
+	<option value='https://biblestudyministry.com/2013/09/'> September 2013 </option>
+	<option value='https://biblestudyministry.com/2013/08/'> August 2013 </option>
+	<option value='https://biblestudyministry.com/2013/07/'> July 2013 </option>
+	<option value='https://biblestudyministry.com/2013/06/'> June 2013 </option>
+	<option value='https://biblestudyministry.com/2013/05/'> May 2013 </option>
+	<option value='https://biblestudyministry.com/2013/04/'> April 2013 </option>
+	<option value='https://biblestudyministry.com/2013/03/'> March 2013 </option>
+	<option value='https://biblestudyministry.com/2013/02/'> February 2013 </option>
+	<option value='https://biblestudyministry.com/2013/01/'> January 2013 </option>
+	<option value='https://biblestudyministry.com/2012/12/'> December 2012 </option>
+	<option value='https://biblestudyministry.com/2012/11/'> November 2012 </option>
+	<option value='https://biblestudyministry.com/2012/10/'> October 2012 </option>
+	<option value='https://biblestudyministry.com/2012/09/'> September 2012 </option>
+	<option value='https://biblestudyministry.com/2012/08/'> August 2012 </option>
+	<option value='https://biblestudyministry.com/2012/07/'> July 2012 </option>
+	<option value='https://biblestudyministry.com/2012/06/'> June 2012 </option>
+	<option value='https://biblestudyministry.com/2012/05/'> May 2012 </option>
+	<option value='https://biblestudyministry.com/2012/04/'> April 2012 </option>
+	<option value='https://biblestudyministry.com/2012/03/'> March 2012 </option>
+	<option value='https://biblestudyministry.com/2012/02/'> February 2012 </option>
+	<option value='https://biblestudyministry.com/2012/01/'> January 2012 </option>
+	<option value='https://biblestudyministry.com/2011/12/'> December 2011 </option>
+	<option value='https://biblestudyministry.com/2011/11/'> November 2011 </option>
+	<option value='https://biblestudyministry.com/2011/10/'> October 2011 </option>
+	<option value='https://biblestudyministry.com/2011/09/'> September 2011 </option>
+	<option value='https://biblestudyministry.com/2011/08/'> August 2011 </option>
+	<option value='https://biblestudyministry.com/2011/07/'> July 2011 </option>
+	<option value='https://biblestudyministry.com/2011/04/'> April 2011 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-2" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</section><section id="text-7" class="widget widget_text"><h2 class="widget-title">Get With the Program!</h2>			<div class="textwidget"><!-- AWeber Web Form Generator 3.0.1 -->
+<style type="text/css">
+#af-form-478712605 .af-body .af-textWrap{width:70%;display:block;float:right;}
+#af-form-478712605 .af-body a{color:#9E9B9B;text-decoration:underline;font-style:normal;font-weight:normal;}
+#af-form-478712605 .af-body input.text, #af-form-478712605 .af-body textarea{background-color:#F0F0F0;border-color:#DBDBDB;border-width:1px;border-style:solid;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body input.text:focus, #af-form-478712605 .af-body textarea:focus{background-color:#EBEBEB;border-color:#C4C4C4;border-width:1px;border-style:solid;}
+#af-form-478712605 .af-body label.previewLabel{display:block;float:left;width:25%;text-align:left;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:16px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-body{padding-bottom:7px;padding-top:7px;background-repeat:repeat-y;background-position:center left;background-image:none;color:#000000;font-size:11px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-header{padding-bottom:1px;padding-top:25px;padding-right:15px;padding-left:15px;background-color:#FFFFFF;background-repeat:no-repeat;background-position:top center;background-image:url("https://forms.aweber.com/images/forms/minimal/white/header.png");border-color:#000000;border-width:5px;border-bottom-style:solid;border-left-style:none;border-right-style:none;border-top-style:none;color:#000000;font-size:12px;font-family:Trebuchet MS, sans-serif;}
+#af-form-478712605 .af-quirksMode .bodyText{padding-top:2px;padding-bottom:2px;}
+#af-form-478712605 .af-quirksMode{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .af-standards .af-element{padding-right:15px;padding-left:15px;}
+#af-form-478712605 .bodyText p{margin:1em 0;}
+#af-form-478712605 .buttonContainer input.submit{background-color:#000000;background-image:url("https://forms.aweber.com/images/forms/minimal/white/button.png");color:#FFFFFF;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Verdana, sans-serif;}
+#af-form-478712605 .buttonContainer input.submit{width:auto;}
+#af-form-478712605 .buttonContainer{text-align:right;}
+#af-form-478712605 body,#af-form-478712605 dl,#af-form-478712605 dt,#af-form-478712605 dd,#af-form-478712605 h1,#af-form-478712605 h2,#af-form-478712605 h3,#af-form-478712605 h4,#af-form-478712605 h5,#af-form-478712605 h6,#af-form-478712605 pre,#af-form-478712605 code,#af-form-478712605 fieldset,#af-form-478712605 legend,#af-form-478712605 blockquote,#af-form-478712605 th,#af-form-478712605 td{float:none;color:inherit;position:static;margin:0;padding:0;}
+#af-form-478712605 button,#af-form-478712605 input,#af-form-478712605 submit,#af-form-478712605 textarea,#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{float:none;position:static;margin:0;}
+#af-form-478712605 div{margin:0;}
+#af-form-478712605 fieldset{border:0;}
+#af-form-478712605 form,#af-form-478712605 textarea,.af-form-wrapper,.af-form-close-button,#af-form-478712605 img{float:none;color:inherit;position:static;background-color:none;border:none;margin:0;padding:0;}
+#af-form-478712605 input,#af-form-478712605 button,#af-form-478712605 textarea,#af-form-478712605 select{font-size:100%;}
+#af-form-478712605 p{color:inherit;}
+#af-form-478712605 select,#af-form-478712605 label,#af-form-478712605 optgroup,#af-form-478712605 option{padding:0;}
+#af-form-478712605 table{border-collapse:collapse;border-spacing:0;}
+#af-form-478712605 ul,#af-form-478712605 ol{list-style-image:none;list-style-position:outside;list-style-type:disc;padding-left:40px;}
+#af-form-478712605,#af-form-478712605 .quirksMode{width:100%;max-width:201.18181824684px;}
+#af-form-478712605.af-quirksMode{overflow-x:hidden;}
+#af-form-478712605{background-color:#FFFFFF;border-color:#E3E3E3;border-width:1px;border-style:solid;}
+#af-form-478712605{display:block;}
+#af-form-478712605{overflow:hidden;}
+.af-body .af-textWrap{text-align:left;}
+.af-body input.image{border:none!important;}
+.af-body input.submit,.af-body input.image,.af-form .af-element input.button{float:none!important;}
+.af-body input.text{width:100%;float:none;padding:2px!important;}
+.af-body.af-standards input.submit{padding:4px 12px;}
+.af-clear{clear:both;}
+.af-element label{text-align:left;display:block;float:left;}
+.af-element{padding:5px 0;}
+.af-form-wrapper{text-indent:0;}
+.af-form{text-align:left;margin:auto;}
+.af-header{margin-bottom:0;margin-top:0;padding:10px;}
+.af-quirksMode .af-element{padding-left:0!important;padding-right:0!important;}
+.lbl-right .af-element label{text-align:right;}
+body {
+}
+</style>
+<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+<div style="display: none;">
+<input type="hidden" name="meta_web_form_id" value="478712605" />
+<input type="hidden" name="meta_split_id" value="" />
+<input type="hidden" name="listname" value="biblestudyminis" />
+<input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=video" id="redirect_a50c767f89cc30c1b99cc5551a1693ea" />
+
+<input type="hidden" name="meta_adtracking" value="Bible_Study_Ministry_Home_Page" />
+<input type="hidden" name="meta_message" value="1" />
+<input type="hidden" name="meta_required" value="name,email" />
+
+<input type="hidden" name="meta_tooltip" value="" />
+</div>
+<div id="af-form-478712605" class="af-form"><div id="af-header-478712605" class="af-header"><div class="bodyText"><p style="text-align: center;">&nbsp;Get weekly Bible Lessons emailed to you in video, audio, and in text form.&nbsp; Sign up today!</p></div></div>
+<div id="af-body-478712605"  class="af-body af-standards">
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860232">Name: </label>
+<div class="af-textWrap">
+<input id="awf_field-65860232" type="text" name="name" class="text" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" />
+</div>
+<div class="af-clear"></div></div>
+<div class="af-element">
+<label class="previewLabel" for="awf_field-65860234">Email: </label>
+<div class="af-textWrap"><input class="text" id="awf_field-65860234" type="text" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
+</div><div class="af-clear"></div>
+</div>
+<div class="af-element buttonContainer">
+<input name="submit" id="af-submit-image-478712605" type="image" class="image" style="background: none; max-width: 100%;" alt="Submit Form" src="https://forms.aweber.com/images/forms/minimal/white/button.png" tabindex="502" />
+<div class="af-clear"></div>
+</div>
+</div>
+</div>
+<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=LOwc7IxMbAys" alt="" /></div>
+</form>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-478712605")) {
+                document.getElementById("af-form-478712605").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-478712605")) {
+                document.getElementById("af-body-478712605").className = "af-body inline af-quirksMode";
+            }
+            if (document.getElementById("af-header-478712605")) {
+                document.getElementById("af-header-478712605").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-478712605")) {
+                document.getElementById("af-footer-478712605").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+    -->
+</script>
+
+<!-- /AWeber Web Form Generator 3.0.1 --></div>
+		</section>
+		<section id="recent-posts-3" class="widget widget_recent_entries">
+		<h2 class="widget-title">Recent Content!</h2>
+		<ul>
+											<li>
+					<a href="https://biblestudyministry.com/why-david-locked-up-his-concubines-yet-still-take-care-of-them-in-2nd-samuel-20-verse-3/">Why David Locked Up His Concubines Yet Still Take Care of Them in 2nd Samuel 20 Verse 3?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/job-chapter-11-summary/">Job Chapter 11 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/what-do-world-geopolitics-have-to-do-with-the-bible/">What Do World Geopolitics Have to Do with the Bible?</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/psalm-chapter-1-summary/">Psalm Chapter 1 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-8-commentary/">Exodus Chapter 8 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/seek-the-kingdom-of-heaven-as-a-definite-chief-aim/">Seek the Kingdom of Heaven as a Definite Chief Aim</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-7-commentary-moses-and-aaron/">Exodus Chapter 7 Commentary: Moses and Aaron</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-4-commentary/">Exodus Chapter 4 Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/exodus-chapter-3-african-commentary/">Exodus Chapter 3 African Commentary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-28-summary/">2 Chronicle Chapter 28 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/2-chronicle-chapter-26-summary/">2 Chronicle Chapter 26 Summary</a>
+									</li>
+											<li>
+					<a href="https://biblestudyministry.com/genesis-33-akobe-and-esau-reunite/">Genesis 33 Akobe and Esau Reunite</a>
+									</li>
+					</ul>
+
+		</section>	</aside>
+
+<footer id="site-footer" class="site-footer" role="contentinfo">
+		<div class="design-credit">
+        <span>
+            <a href="https://www.competethemes.com/apex/" rel="nofollow">Apex WordPress Theme</a> by Compete Themes        </span>
+	</div>
+</footer>
+</div>
+</div><!-- .overflow-container -->
+
+
+<!-- Exit Popup -->
+    <div id='exitpopup-modal'>
+      <div class='underlay'></div>
+	  <div class='exitpopup-modal-window' style='width:px !important; height:px !important;'>
+          
+        <div class='modal-title' style='background-color: !important;'>
+          <h3></h3>
+        </div>
+        <div class='modal-body'>
+			        </div>
+        <div class='exitpopup-modal-footer'>
+          <p></p>
+        </div>
+		      </div>
+    </div>
+
+	<script type='text/javascript'>
+	  jQuery(document).ready(function($) {
+      var exit_popup_value = Cookies.get('viewedExitPopupWP'); // v3.0
+      if(!exit_popup_value){ // v3.0
+	  var _exitpopup = exitpopup(document.getElementById('exitpopup-modal'), {
+        aggressive: true,
+        timer: 0,
+		sensitivity: 20,
+		delay: 0,
+        sitewide: true,
+		cookieExpire: ,
+        callback: function() { console.log('exitpopup fired!'); }
+      });
+
+      
+      $('body').on('click', function() {
+        $('#exitpopup-modal').hide();
+      });
+		      $('#exitpopup-modal .exitpopup-modal-footer').on('click', function() {
+        $('#exitpopup-modal').hide();
+      });
+      $('#exitpopup-modal .exitpopup-modal-window').on('click', function(e) {
+        e.stopPropagation();
+      });
+      } // v3.0
+      });
+	</script>
+<!-- End Exit Popup -->
+<div class="simple-banner simple-banner-text" style="display:none !important"></div><script type='text/javascript'>( $ => {
+	/**
+	 * Displays toast message from storage, it is used when the user is redirected after login
+	 */
+	if ( window.sessionStorage ) {
+		$( window ).on( 'tcb_after_dom_ready', () => {
+			const message = sessionStorage.getItem( 'tcb_toast_message' );
+
+			if ( message ) {
+				tcbToast( sessionStorage.getItem( 'tcb_toast_message' ), false );
+				sessionStorage.removeItem( 'tcb_toast_message' );
+			}
+		} );
+	}
+
+	/**
+	 * Displays toast message
+	 *
+	 * @param {string}   message  - message to display
+	 * @param {Boolean}  error    - whether the message is an error or not
+	 * @param {Function} callback - callback function to be called after the message is closed
+	 */
+	function tcbToast( message, error, callback ) {
+		/* Also allow "message" objects */
+		if ( typeof message !== 'string' ) {
+			message = message.message || message.error || message.success;
+		}
+		if ( ! error ) {
+			error = false;
+		}
+		TCB_Front.notificationElement.toggle( message, error ? 'error' : 'success', callback );
+	}
+} )( typeof ThriveGlobal === 'undefined' ? jQuery : ThriveGlobal.$j );
+</script>
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1162144-33");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+			<!--facebook like and share js -->
+			<div id="fb-root"></div>
+			<script>
+				(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+		<script>
+window.addEventListener('sfsi_functions_loaded', function() {
+    if (typeof sfsi_responsive_toggle == 'function') {
+        sfsi_responsive_toggle(0);
+        // console.log('sfsi_responsive_toggle');
+
+    }
+})
+</script>
+    <script>
+        window.addEventListener('sfsi_functions_loaded', function() {
+            if (typeof sfsi_plugin_version == 'function') {
+                sfsi_plugin_version(2.77);
+            }
+        });
+
+        function sfsi_processfurther(ref) {
+            var feed_id = 'a2JJL1BSMjhIajU3bFhjZ2UxekhyYVZYS0pjeDROaFNiSEFvL2w3V3cxN2JmbTgzYXkrMWY5aEszRXhYSklkMUtSRzA3NlJtRUxEaEh4WklFSEtZUkRQTDBYMnIrUk9la3lZQVdqSC8xbmhBQzZFQUk3eUZnWE1ZME54dFpUNm18bkxoTWZHc2NHOVU0M2hDS1J3S01kZExsQTFMNFF1S2ErTGpvSGJQa0hGWT0=';
+            var feedtype = 8;
+            var email = jQuery(ref).find('input[name="email"]').val();
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if ((email != "Enter your email") && (filter.test(email))) {
+                if (feedtype == "8") {
+                    var url = "https://api.follow.it/subscription-form/" + feed_id + "/" + feedtype;
+                    window.open(url, "popupwindow", "scrollbars=yes,width=1080,height=760");
+                    return true;
+                }
+            } else {
+                alert("Please enter email address");
+                jQuery(ref).find('input[name="email"]').focus();
+                return false;
+            }
+        }
+    </script>
+    <style type="text/css" aria-selected="true">
+        .sfsi_subscribe_Popinner {
+            width: 100% !important;
+
+            height: auto !important;
+
+            padding: 18px 0px !important;
+
+            background-color: #ffffff !important;
+        }
+        .sfsi_subscribe_Popinner form {
+            margin: 0 20px !important;
+        }
+        .sfsi_subscribe_Popinner h5 {
+            font-family: Helvetica,Arial,sans-serif !important;
+
+            font-weight: bold !important;
+
+            color: #000000 !important;
+
+            font-size: 16px !important;
+
+            text-align: center !important;
+            margin: 0 0 10px !important;
+            padding: 0 !important;
+        }
+        .sfsi_subscription_form_field {
+            margin: 5px 0 !important;
+            width: 100% !important;
+            display: inline-flex;
+            display: -webkit-inline-flex;
+        }
+
+        .sfsi_subscription_form_field input {
+            width: 100% !important;
+            padding: 10px 0px !important;
+        }
+
+        .sfsi_subscribe_Popinner input[type=email] {
+            font-family: Helvetica,Arial,sans-serif !important;
+
+            font-style: normal !important;
+
+            color: #000000 !important;
+
+            font-size: 14px !important;
+
+            text-align: center !important;
+        }
+
+        .sfsi_subscribe_Popinner input[type=email]::-webkit-input-placeholder {
+
+            font-family: Helvetica,Arial,sans-serif !important;
+
+            font-style: normal !important;
+
+            color: #000000 !important;
+
+            font-size: 14px !important;
+
+            text-align: center !important;
+        }
+        .sfsi_subscribe_Popinner input[type=email]:-moz-placeholder {
+            /* Firefox 18- */
+
+            font-family: Helvetica,Arial,sans-serif !important;
+
+            font-style: normal !important;
+
+            color: #000000 !important;
+
+            font-size: 14px !important;
+
+            text-align: center !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=email]::-moz-placeholder {
+            /* Firefox 19+ */
+            font-family: Helvetica,Arial,sans-serif !important;
+
+            font-style: normal !important;
+
+            color: #000000 !important;
+
+            font-size: 14px !important;
+
+            text-align: center !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=email]:-ms-input-placeholder {
+            font-family: Helvetica,Arial,sans-serif !important;
+
+            font-style: normal !important;
+
+            color: #000000 !important;
+
+            font-size: 14px !important;
+
+            text-align: center !important;
+        }
+
+        .sfsi_subscribe_Popinner input[type=submit] {
+            font-family: Helvetica,Arial,sans-serif !important;
+
+            font-weight: bold !important;
+
+            color: #000000 !important;
+
+            font-size: 16px !important;
+
+            text-align: center !important;
+
+            background-color: #dedede !important;
+        }
+
+        .sfsi_shortcode_container {
+            float: left;
+        }
+
+        .sfsi_shortcode_container .norm_row .sfsi_wDiv {
+            position: relative !important;
+        }
+
+        .sfsi_shortcode_container .sfsi_holders {
+            display: none;
+        }
+
+            </style>
+
+<style type="text/css" id="tve_notification_styles"></style>
+<div class="tvd-toast tve-fe-message" style="display: none">
+	<div class="tve-toast-message tve-success-message">
+		<div class="tve-toast-icon-container">
+			<span class="tve_tick thrv-svg-icon"></span>
+		</div>
+		<div class="tve-toast-message-container"></div>
+	</div>
+</div><style id='tptn-style-left-thumbs-widget_tptn_pop-2-inline-css' type='text/css'>
+
+			.tptn-left-thumbs a {
+				width: 150px;
+				height: 150px;
+				text-decoration: none;
+			}
+			.tptn-left-thumbs img {
+				width: 150px;
+				max-height: 150px;
+				margin: auto;
+			}
+			.tptn-left-thumbs .tptn_title {
+				width: 100%;
+			}
+			
+			.tptn_posts_widget-widget_tptn_pop-2 img.tptn_thumb {
+				width: 150px !important;
+				height: 150px !important;
+			}
+			
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://biblestudyministry.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://biblestudyministry.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/js/shuffle/modernizr.custom.min.js?ver=6.3.1' id='SFSIjqueryModernizr-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/js/shuffle/jquery.shuffle.min.js?ver=6.3.1' id='SFSIjqueryShuffle-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/js/shuffle/random-shuffle-min.js?ver=6.3.1' id='SFSIjqueryrandom-shuffle-js'></script>
+<script type='text/javascript' id='SFSICustomJs-js-extra'>
+/* <![CDATA[ */
+var sfsi_icon_ajax_object = {"ajax_url":"https:\/\/biblestudyministry.com\/wp-admin\/admin-ajax.php","plugin_url":"https:\/\/biblestudyministry.com\/wp-content\/plugins\/ultimate-social-media-icons\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/ultimate-social-media-icons/js/custom.js?ver=2.8.5' id='SFSICustomJs-js'></script>
+<script type='text/javascript' id='give-donation-summary-script-frontend-js-extra'>
+/* <![CDATA[ */
+var GiveDonationSummaryData = {"currencyPrecisionLookup":{"USD":2,"EUR":2,"GBP":2,"AUD":2,"BRL":2,"CAD":2,"CZK":2,"DKK":2,"HKD":2,"HUF":2,"ILS":2,"JPY":0,"MYR":2,"MXN":2,"MAD":2,"NZD":2,"NOK":2,"PHP":2,"PLN":2,"SGD":2,"KRW":0,"ZAR":2,"SEK":2,"CHF":2,"TWD":2,"THB":2,"INR":2,"TRY":2,"IRR":2,"RUB":2,"AED":2,"AMD":2,"ANG":2,"ARS":2,"AWG":2,"BAM":2,"BDT":2,"BHD":3,"BMD":2,"BND":2,"BOB":2,"BSD":2,"BWP":2,"BZD":2,"CLP":0,"CNY":2,"COP":2,"CRC":2,"CUC":2,"CUP":2,"DOP":2,"EGP":2,"GIP":2,"GTQ":2,"HNL":2,"HRK":2,"IDR":2,"ISK":0,"JMD":2,"JOD":2,"KES":2,"KWD":2,"KYD":2,"MKD":2,"NPR":2,"OMR":3,"PEN":2,"PKR":2,"RON":2,"SAR":2,"SZL":2,"TOP":2,"TZS":2,"UAH":2,"UYU":2,"VEF":2,"XCD":2,"AFN":2,"ALL":2,"AOA":2,"AZN":2,"BBD":2,"BGN":2,"BIF":0,"XBT":8,"BTN":1,"BYR":2,"BYN":2,"CDF":2,"CVE":2,"DJF":0,"DZD":2,"ERN":2,"ETB":2,"FJD":2,"FKP":2,"GEL":2,"GGP":2,"GHS":2,"GMD":2,"GNF":0,"GYD":2,"HTG":2,"IMP":2,"IQD":2,"IRT":2,"JEP":2,"KGS":2,"KHR":0,"KMF":2,"KPW":0,"KZT":2,"LAK":0,"LBP":2,"LKR":0,"LRD":2,"LSL":2,"LYD":3,"MDL":2,"MGA":0,"MMK":2,"MNT":2,"MOP":2,"MRO":2,"MUR":2,"MVR":1,"MWK":2,"MZN":0,"NAD":2,"NGN":2,"NIO":2,"PAB":2,"PGK":2,"PRB":2,"PYG":2,"QAR":2,"RSD":2,"RWF":2,"SBD":2,"SCR":2,"SDG":2,"SHP":2,"SLL":2,"SOS":2,"SRD":2,"SSP":2,"STD":2,"SYP":2,"TJS":2,"TMT":2,"TND":3,"TTD":2,"UGX":2,"UZS":2,"VND":1,"VUV":0,"WST":2,"XAF":2,"XOF":2,"XPF":2,"YER":2,"ZMW":2},"recurringLabelLookup":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/give/assets/dist/js/give-donation-summary.js?ver=2.33.2' id='give-donation-summary-script-frontend-js'></script>
+<script type='text/javascript' id='tptn_tracker-js-extra'>
+/* <![CDATA[ */
+var ajax_tptn_tracker = {"ajax_url":"https:\/\/biblestudyministry.com\/wp-admin\/admin-ajax.php","top_ten_id":"1749","top_ten_blog_id":"1","activate_counter":"1","top_ten_debug":"0","tptn_rnd":"1488594219"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/top-10/includes/js/top-10-tracker.min.js?ver=3.3.1' id='tptn_tracker-js'></script>
+<script type='text/javascript' id='ct-apex-js-js-extra'>
+/* <![CDATA[ */
+var ct_apex_objectL10n = {"openMenu":"open menu","closeMenu":"close menu","openChildMenu":"open dropdown menu","closeChildMenu":"close dropdown menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/themes/apex/js/build/production.min.js?ver=6.3.1' id='ct-apex-js-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/comment-reply.min.js?ver=6.3.1' id='comment-reply-js'></script>
+<!--[if IE 8]>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/themes/apex/js/build/respond.min.js?ver=6.3.1' id='ct-apex-respond-js'></script>
+<![endif]-->
+<script type='text/javascript' id='tve-dash-frontend-js-extra'>
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"https:\/\/biblestudyministry.com\/wp-admin\/admin-ajax.php","force_ajax_send":"","is_crawler":"1","recaptcha":[],"post_id":"1749"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-content/plugins/thrive-visual-editor/thrive-dashboard/js/dist/frontend.min.js?ver=3.37.4' id='tve-dash-frontend-js'></script>
+<script id="mediaelement-core-js-before" type="text/javascript">
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.3.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.3.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='https://biblestudyministry.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17' id='mediaelement-vimeo-js'></script>
+<script type="text/javascript">var tcb_current_post_lists=JSON.parse('[]'); var tcb_post_lists=tcb_post_lists?[...tcb_post_lists,...tcb_current_post_lists]:tcb_current_post_lists;</script>
+<script type="text/javascript" src="https://biblestudyministry.com/hashcash.js"></script></body>
+</html>

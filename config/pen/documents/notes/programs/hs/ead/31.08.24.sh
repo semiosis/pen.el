@@ -1,0 +1,5 @@
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "-z" "visit" "this" "file" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "-z" "visit" "this" "file" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "-z" "visit" "this" "file" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bbible-open-interlinear\\b" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "ead" "\\b\\bbible-open-interlinear\\b\\b" "#" "<==" "nsfa-pen-tm-ns-"

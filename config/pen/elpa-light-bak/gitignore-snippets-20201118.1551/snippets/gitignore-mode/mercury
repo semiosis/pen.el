@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: Mercury
+# contributor: Toptal & contributors
+# key: mercury
+# --
+
+### Mercury ###
+
+Mercury/
+Mercury.modules
+*.mh
+*.err
+*.init
+*.dll
+*.exe
+*.a
+*.so
+*.dylib
+*.beams
+*.d
+*.c_date

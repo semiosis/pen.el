@@ -1,0 +1,230 @@
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 08:46:57 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Last-Modified: Mon, 16 Nov 2020 22:42:04 GMT
+ETag: "2b7c-5b44116598566-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 3904
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<?xml version="1.1" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ga">
+<head>
+    <title>Irish Spelling and Pronunciation</title>
+    <link rel="StyleSheet" href="/css/smo.css" type="text/css"/>
+    <link rel="StyleSheet" href="/gaeilge/donncha/snas.css" type="text/css"/>
+    <link rel="StyleSheet" href="/gaeilge/donncha/focal/snas.css" type="text/css"/>
+    <style type="text/css">
+        p.ceann { font-weight:bold; font-size:120%; margin:1.5em 0 0 0.3em; }
+    </style>
+</head>
+<body>
+
+
+<ul class="smo-navlist">
+<li><a href="/" title="Sabhal Mór Ostaig - leathanach cinn"></a></li>
+<li><a href="/gaeilge/donncha/moi/" title="Dennis King">Donncha</a></li>
+<li><a href="/gaeilge/donncha/" title="Láithreáin Ghaeilge le Dennis King">Gaeilge</a></li>
+<li><a href="/gaeilge/donncha/focal/" title="The Word of the Day in Irish">Focal an Lae</a></li>
+<li><a href="/gaeilge/donncha/focal/features/" title="Freestanding articles originally published as part of Focal an Lae">Features</a></li>
+</ul>
+<div class="smo-body-indent">
+
+
+<h1 class="features en" style="margin-bottom:0.2em">The Pronunciation and Spelling of Modern Irish</h1>
+<hr class="features" style="margin-bottom:2em"/>
+
+<p>Some initial observations:</p>
+
+<ul>
+<li>Spoken Irish has only a few sounds not found in some dialect of English.</li>
+<li>Irish has a unique spelling system, quite different from the English one.</li>
+<li>Irish spelling, although complicated, is actually much more regular than English spelling (!).</li>
+</ul>
+
+<p>The following summary is intended to cover only the broad principles of spelling and pronunciation.  The English sounds used to
+show the value of the Irish letters are sometimes only approximate, although they are always reasonably close.  You should consult a
+textbook for the fine points, which vary somewhat from dialect to dialect.</p>
+
+<p class="ceann">I.  Word  Stress:</p>
+<p>Except for a few common words with an unstressed prefix, all words are
+strongly accented on the first syllable.</p>
+
+<p class="ceann">II.  The Vowels:</p>
+<p>Irish has both short vowels and long vowels.  The long vowels are generally indicated in writing by  an acute accent.</p>
+
+<p>The long vowels are:</p>
+<ul>
+<li>í      as in   sí     pronounced      “shee”</li>
+<li>é      as in   sé          pronounced          “shay”</li>
+<li>ú      as in   tú         pronounced       “too”</li>
+<li>ó      as in   bó          pronounced       “boe”</li>
+<li>á      as in   tá         pronounced      “taw”</li>
+</ul>
+<p>(This is the same “a” as in the BBC pronunciation of  “law” or “walk”. )</p>
+
+<p>There are three combinations of letters that are always pronounced as long vowels, even though they do not have the acute accent:</p>
+<ul>
+<li>ae      as in   lae     pronounced      “lay”</li>
+<li>eo      as in   eol     pronounced     “ohl” (to rhyme with “hole”)</li>
+<li>ao      as in   lao     pronounced    either “lay” or “lee”, depending on dialect</li>
+</ul>
+
+<p>The short vowels are:</p>
+<ul>
+<li>i       as in   in      pronounced      “in”  (as in English)</li>
+<li>e       as in   te     pronounced    “teh” (more about the “t” sound below!)</li>
+<li>u       as in   rud    pronounced     “rud” (like the u in Enlgish “put”)</li>
+<li>o       as in   cos    pronounced   “cos” (o as in German “Gott”, or in English “goat” said without rounding the lips)</li>
+<li>a       as in   mac   pronounced    “mahk” (like the a in “father”)</li>
+<li>ea      as in   bean   pronounced   “ban” (like the a in “cat”)</li>
+</ul>
+
+<p>Short vowels differ from long vowels in one important respect.  They are
+given their full pronunciation ONLY in the first syllable of a word.  In all
+other syllables, they are all reduced to the neutral “uh” sound of English
+“but”.  The same thing happens in English, where “Benjamin” is pronounced
+“BEN-juh-muhn”.   Thus the Irish word for Irish, “éireannach”, is
+pronounced “AY-ruh-nuhkh”.</p>
+
+<p>There are two important diphthongs that you should recognize, both
+written using a combination of vowels and consonants:</p>
+
+<p>The “ow” diphthong, as in “ow, I stubbed my toe”:</p>
+<ul>
+<li>abha    as in   abhann     pronounced   “own” (to rhyme with “clown”)</li>
+<li>amha    as in   samhradh    pronounced  “sow-ruh” (like a female pig)</li>
+</ul>
+<p>...and the “eye” diphthong:</p>
+<ul>
+<li>agha    as in   aghaidh   pronounced     “eye”</li>
+<li>adh     as in   Tadhg    pronounced   “tiger without the -er”</li>
+</ul>
+
+
+<p class="ceann">III. The Consonants:</p>
+
+<p>Except for “h”, all Irish consonants come in two flavors, called “broad”
+and “slender”.  Basically, broad consonants are pronounced with a “-w”
+off-glide, and slender consonants are pronounced with a “-y” off-glide.
+Broad consonants are always written with the letters a, o, or u next to them.
+Slender consonants are always written with the letters i or e next to
+them.  Examples:</p>
+
+<p>Slender “b”</p>
+<ul>
+<li>beo     (byoh)</li>
+<li>bí     (bee)</li>
+</ul>
+<p>Broad “b”</p>
+<ul>
+<li>bó     (boh)</li>
+<li>buí    (bwee)</li>
+</ul>
+
+<p>In speech, the difference between “beo” and “bó” is only the y-glide
+heard in “beo”.  Likewise, the difference between “bí” and “buí” is
+only the w-glide heard in “buí”.  As a result of the need to show the
+broad or slender qualilty of all consonants unambiguously, a consonant in
+the middle of a word  cannot be flanked on one side by an “i” and on the
+other by an “a”.  For exmaple, if you wrote “misa” the pronunciation
+would be uncertain.  Do you mean a word that sounds like “MISS-uh” or
+one that sounds like “MISH-uh”?  If you mean MISS-uh, you need to write
+“miosa”, so the “s” is clearly broad.  If you mean MISH-uh, you need to
+write “mise”, so that the “s” is clearly slender.  (Slender “s” is
+pronounced “sh”, as in Seán, Sinéad, etc.)</p>
+
+<p>English uses combinations of letters to indicate a single consonant
+sound, such as “ch” in “church” and “sh” in “shape”.  Irish does the same
+sort of thing, only there are more of them.  Here is a basic list of the
+values of these combinations, which can be either broad of slender,
+depending on the adjacent vowels:</p>
+
+<ul>
+<li>bh (broad)      = w</li>
+<li>bh (slender)    = v</li>
+<li>ch (broad)      = ch    as in German “Bach”, Scottish “loch”</li>
+<li>ch (slender)    = ch    as in German “ich”, or h</li>
+<li>dh (broad)      = gh    as the g in Spanish “abogado” or Greek “avgolemono” (this is the voiced equivalent of the “ch” in “Bach”);
+                            usually silent except at beginning of words; see a textbook on this!</li>
+<li>dh (slender)    = y</li>
+<li>fh (broad)      = silent</li>
+<li>fh (slender)    = silent</li>
+<li>gh (broad)      = same as broad dh</li>
+<li>gh (slender)    = y</li>
+<li>mh (broad)      = w</li>
+<li>mh (slender)    = v</li>
+<li>ph (broad)      = fw</li>
+<li>ph (slender)    = fy</li>
+<li>sh (broad)      = h</li>
+<li>sh (slender)    = h</li>
+<li>th (broad)      = h</li>
+<li>th (slender)    = h</li>
+</ul>
+
+<p>Irish also has another set of consonant combinations at the beginning of
+words that result from an initial mutation called eclipsis.  These are
+pronounced as follows (with broad and slender versions in each case):</p>
+
+<ul>
+<li>mb      = m     as in “na mban” (nuh mahn)</li>
+<li>gc      = g     as in “i gcarr” (uh gawr)</li>
+<li>nd      = n     as in “i ndán” (uh nawn)</li>
+<li>bhf     = w     as in “an bhfuil” or v as in “a bhfile” (uh will)</li>
+<li>ng      = ng    as in “i ngairdín” (ng as in English “king”) (uhNGAHR-jeen)</li>
+<li>bp      = b     as in “na bplátaí” (nuh BLAW-tee)</li>
+<li>dt      = d     as in “i dteach” (uh dyakh)</li>
+</ul>
+
+<p>In every case of eclipsis, all you do is pronounce the first consonant and ignore the second, except for “ng”,
+which is pronounced together as the “ng” in “thing”.</p>
+
+
+<p class="ceann">IV. Examples</p>
+
+<p>Here are some samples of Irish words, some of which you may encounter in books or e-mail, to further illustrate the principles discussed above:</p>
+
+<table cellpadding="5" style="margin:0 0 2em 3em">
+<tr style="font-weight:bold"><td>WORD</td><td>PRONOUNCED</td><td>MEANING</td></tr>
+<tr><td>file     </td><td>       FILL-uh        </td><td>         poet</td></tr>
+<tr><td>draoi     </td><td>     DREE        </td><td>            druid</td></tr>
+<tr><td>filíocht   </td><td>    FILL-ee-uhkht     </td><td>      poetry</td></tr>
+<tr><td>draíocht   </td><td>    DREE-uhkht          </td><td>    druidry, magic</td></tr>
+<tr><td>bile     </td><td>       BILL-uh             </td><td>    sacred tree</td></tr>
+<tr><td>tobar    </td><td>       TOE-buhr          </td><td>      well, spring</td></tr>
+<tr><td>sí        </td><td>     SHEE         </td><td>           fairy mound</td></tr>
+<tr><td>bean sí     </td><td>   BAN SHEE        </td><td>        fairy woman</td></tr>
+<tr><td>an slua sí </td><td>    uhn SLOO-uh SHEE    </td><td>    the fairy host</td></tr>
+<tr><td>Samhain     </td><td>    SOWN (rhymes with “clown”) </td><td> November 1</td></tr>
+<tr><td>Oíche Shamhna </td><td> EE-huh HOW-nuh    </td><td>      Halloween</td></tr>
+<tr><td>Lá Fhéile Bríde </td><td>  LAW AY-luh BREE-dyuh </td><td> February 1</td></tr>
+<tr><td>Bealtaine   </td><td>    BYAHL-tuh-nuh      </td><td>     May 1</td></tr>
+<tr><td>Lúnasa   </td><td>      LOO-nuh-suh       </td><td>      August 1</td></tr>
+<tr><td>cara       </td><td>     KAH-ruh         </td><td>        friend</td></tr>
+<tr><td>X, a chara,  </td><td>   X, uh KHAH-ruh      </td><td>    Dear X (X, O friend)</td></tr>
+<tr><td>A chairde,  </td><td>    uh KHAHR-dyuh     </td><td>      Dear Friends</td></tr>
+<tr><td>beannachtaí </td><td>   BYAN-uhkh-tee      </td><td>     blessings</td></tr>
+<tr><td>dia       </td><td>      DYEE-UH, JEE-uh    </td><td>     god</td></tr>
+<tr><td>bandia     </td><td>     BAHN-JEE-uh      </td><td>       goddess</td></tr>
+<tr><td>Dia duit!  </td><td>     JEE-uh ditch         </td><td>   God to you! = Greetings!</td></tr>
+<tr><td>Slán go fóill</td><td> SLAWN guh FOE-ill    </td><td>   Bye for now</td></tr>
+</table>
+
+
+</div>
+<ul class="smo-navlist">
+<li><a href="/" title="Sabhal Mór Ostaig - leathanach cinn"></a></li>
+<li><a href="/gaeilge/donncha/moi/" title="Dennis King">Donncha</a></li>
+<li><a href="/gaeilge/donncha/" title="Láithreáin Ghaeilge le Dennis King">Gaeilge</a></li>
+<li><a href="/gaeilge/donncha/focal/" title="The Word of the Day in Irish">Focal an Lae</a></li>
+<li><a href="/gaeilge/donncha/focal/features/" title="Freestanding articles originally published as part of Focal an Lae">Features</a></li>
+</ul>
+
+<div class="smo-latha">2009-08-04 <a href="/~caoimhin/cpd3.html">CPD</a></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "-i" "black_and_white" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "black_and_white" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "agenda" "#" "<==" "ead"
+cd /root/.pen/documents/notes;  "ead" "Facilitating" "the" "recognition" "and" "stoking" "into" "flame" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "-f" "\"H-" "#" "<==" "zsh"

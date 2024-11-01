@@ -1,0 +1,311 @@
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Cache-Control: public, max-age=600
+Content-Type: text/html; charset=utf-8
+Etag: W/"326298485fef226096e4a4103adaddc3694ad664"
+Last-Modified: Fri, 15 Dec 2023 18:03:03 UTC
+Referrer-Policy: strict-origin-when-cross-origin
+Server: pages-server
+Date: Wed, 20 Dec 2023 08:32:52 GMT
+Transfer-Encoding: chunked
+
+<!-- Generated from 34d8998 on 2023-12-15 @ 18:03 with Emacs 29.1 (Org mode 9.6.6) -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta author="System Crafters - David Wilson"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="icon" type="image/png" href="/img/favicon.png"/><link rel="alternative" type="application/rss+xml" title="System Crafters News" href="https://systemcrafters.net/rss/news.xml"/><link rel="stylesheet" href="https://systemcrafters.net/fonts/iosevka-aile/iosevka-aile.css"/><link rel="stylesheet" href="https://systemcrafters.net/fonts/jetbrains-mono/jetbrains-mono.css"/><link rel="stylesheet" href="https://systemcrafters.net/css/code.css"/><link rel="stylesheet" href="https://systemcrafters.net/css/site.css"/><script defer="defer" data-domain="systemcrafters.net" src="https://plausible.io/js/plausible.js"></script><title>Build a Second Brain in Emacs with Org Roam - System Crafters</title></head><body><header class="site-header"><div class="container"><div class="site-title"><img class="logo" src="https://systemcrafters.net/img/sc_logo.png" alt="System Crafters"/></div></div><div class="site-masthead"><div class="container"><nav class="nav"><a class="nav-link" href="/">Home</a> <a class="nav-link" href="/guides/">Guides</a> <a class="nav-link" href="/news/">News</a> <a class="nav-link" href="/community/">Community</a> <a class="nav-link" href="https://store.systemcrafters.net?utm_source=sc-site-nav">Store</a> <a class="nav-link" href="/how-to-help/">How to Help</a></nav></div></div></header><div class="container"><div class="site-post"><h1 class="site-post-title">Build a Second Brain in Emacs with Org Roam</h1><p class="site-post-meta"></p><div id="content"><p>
+<div class="video">  <iframe src="https://www.youtube.com/embed/AyhPmypHDEw" allowfullscreen></iframe></div>
+</p>
+
+<div class="cta center">
+If you find this guide helpful, please consider supporting System Crafters via the links on the <a href="/how-to-help/#support-my-work">How to Help</a> page!
+</div>
+
+<h2><a id="what-is-org-roam" class="anchor" href="#what-is-org-roam">¶</a>What is Org Roam?</h2><div class="outline-text-2" id="text-orgfae5c4a">
+<p>
+Org Mode is known to be a great tool not just for writing and personal notes but also TODO lists, project planning, time tracking, and more.  Once you start to become really invested in Org Mode you&rsquo;ll eventually have to come up with a system for managing your Org files so that it&rsquo;s easy to store and find the information you need.
+</p>
+
+<p>
+<a href="https://github.com/org-roam/org-roam">Org Roam</a> is an extension to Org Mode which solves a couple of the biggest problems that I&rsquo;ve personally had when using Org for personal notes:
+</p>
+
+<ul class="org-ul">
+<li><b>How many Org files do I need?</b></li>
+<li><b>How do I decide where to put things in my Org files?</b></li>
+</ul>
+
+<p>
+Org Roam solves these problems by making it easy to create topic-focused Org Files and link them together so that you can treat the information as nodes in a network rather than as hierarchical documents.  You can think of it like a personal wiki!
+</p>
+
+<p>
+It&rsquo;s inspired by a program called <a href="https://roamresearch.com/">Roam</a> and a note-taking strategy called <a href="https://www.orgroam.com/manual.html#A-Brief-Introduction-to-the-Zettelkasten-Method">Zettelkasten</a> where the goal is to create many individual single-topic notes that are linked together to create a &ldquo;networked&rdquo; knowledge base.
+</p>
+
+<p>
+Many people consider this like creating a &ldquo;second brain&rdquo; because it can easily handle a huge amount of knowledge and remind you of connections between topics very effectively.
+</p>
+
+<p>
+The major advantage of Org Roam over other similar note taking tools is that you get to use all of the other great features of Org Mode in a new way!
+</p>
+</div>
+
+<h2><a id="prerequisites" class="anchor" href="#prerequisites">¶</a>Prerequisites</h2><div class="outline-text-2" id="text-orgafec427">
+<p>
+Org Roam v2 depends on a customized build of the SQLite database tool to operate. Org Roam will take care of compiling this code for you as long as you have a compatible compiler installed!
+</p>
+
+<p>
+For Linux and macOS users, make sure you have a C/C++ compiler like <code>gcc</code> or <code>clang</code> installed.
+</p>
+
+<p>
+Windows users can follow <a href="https://www.orgroam.com/manual.html#C-Compiler">the instructions in the Org Roam manual</a> to build the database program.
+</p>
+
+<p>
+You may be wondering why Org Roam needs a database; the database enables Org Roam to keep track of all of the &ldquo;nodes&rdquo; that you create and the links between them <b>very</b> efficiently.  You can also use Org Roam&rsquo;s database to develop your own extensions!
+</p>
+</div>
+
+<h2><a id="installation" class="anchor" href="#installation">¶</a>Installation</h2><div class="outline-text-2" id="text-orge3370be">
+<p>
+Install the <code>org-roam</code> package from MELPA using <code>package.el</code>, <code>straight.el</code> or any other package manager you normally use to install packages.
+</p>
+
+<p>
+If you use <code>use-package</code> with <code>package.el</code>, add this to your configuration temporarily and execute it to install <code>org-roam</code>:
+</p>
+
+<pre>(<span class="org-keyword">use-package</span> <span class="org-constant">org-roam</span>
+  <span class="org-builtin">:ensure</span> t)</pre>
+
+<p>
+After loading the package, you can check the variable <code>org-roam--sqlite-available-p</code> for a value of <code>t</code> to ensure that everything is set up correctly and ready to run.
+</p>
+</div>
+
+<h2><a id="basic-configuration" class="anchor" href="#basic-configuration">¶</a>Basic configuration</h2><div class="outline-text-2" id="text-org303a84e">
+<p>
+After Org Roam has been installed, the most important thing to configure is the folder where your Org Roam files will be located.
+</p>
+
+<p>
+By default, this will be a folder called <code>org-roam</code> in your <code>$HOME</code> directory but you will probably want to set this to something else.  No matter what path you use, things will be slightly easier if you create the folder in advance!
+</p>
+
+<p>
+<b>TIP:</b> Don&rsquo;t use your existing Org files folder for this!  Your existing files won&rsquo;t have the necessary metadata so they won&rsquo;t show up in Org Roam&rsquo;s database.
+</p>
+
+<p>
+We&rsquo;ll also add some necessary key bindings and a call to <code>org-roam-setup</code> to make sure everything is ready to go.
+</p>
+
+<pre>(<span class="org-keyword">use-package</span> <span class="org-constant">org-roam</span>
+  <span class="org-builtin">:ensure</span> t
+  <span class="org-builtin">:custom</span>
+  (org-roam-directory <span class="org-string">"~/RoamNotes"</span>)
+  <span class="org-builtin">:bind</span> ((<span class="org-string">"C-c n l"</span> . org-roam-buffer-toggle)
+         (<span class="org-string">"C-c n f"</span> . org-roam-node-find)
+         (<span class="org-string">"C-c n i"</span> . org-roam-node-insert))
+  <span class="org-builtin">:config</span>
+  (org-roam-setup))</pre>
+</div>
+
+<h2><a id="dealing-with-migration-warnings" class="anchor" href="#dealing-with-migration-warnings">¶</a>Dealing with migration warnings</h2><div class="outline-text-2" id="text-orgdb93110">
+<p>
+The first time you load the package, you will probably be presented with a message in the <code>*Warnings*</code> buffer about the need to migrate Org Roam v1 files to v2.
+</p>
+
+<p>
+If you&rsquo;ve never used Org Roam before, you can set the variable <code>org-roam-v2-ack</code> to <code>t</code> in your configuration.
+</p>
+
+<p>
+<b>If you&rsquo;ve been using Org Roam v1</b>, make sure to run <code>M-x org-roam-migrate-wizard</code> as suggested by the message!  Check out the <a href="https://github.com/org-roam/org-roam/wiki/Hitchhiker's-Rough-Guide-to-Org-roam-V2#migration-instructions">migration instructions</a> in the wiki for more information.
+</p>
+
+<p>
+Here&rsquo;s how to set the variable in your configuration so that you will no longer see this message:
+</p>
+
+<pre>(<span class="org-keyword">use-package</span> <span class="org-constant">org-roam</span>
+  <span class="org-builtin">:ensure</span> t
+  <span class="org-builtin">:init</span>
+  (<span class="org-keyword">setq</span> org-roam-v2-ack t)
+  <span class="org-builtin">:custom</span>
+  (org-roam-directory <span class="org-string">"~/RoamNotes"</span>)
+  <span class="org-builtin">:bind</span> ((<span class="org-string">"C-c n l"</span> . org-roam-buffer-toggle)
+         (<span class="org-string">"C-c n f"</span> . org-roam-node-find)
+         (<span class="org-string">"C-c n i"</span> . org-roam-node-insert))
+  <span class="org-builtin">:config</span>
+  (org-roam-setup))</pre>
+</div>
+
+<h2><a id="creating-your-first-node" class="anchor" href="#creating-your-first-node">¶</a>Creating your first node</h2><div class="outline-text-2" id="text-orga28b4a0">
+<p>
+Let&rsquo;s create our first node!  We can use the <code>C-c n f</code> binding to invoke <code>org-roam-node-find</code> which brings up a completion session to select or create a node.
+</p>
+
+<p>
+Since we want to create a new node, we can type in the desired node name &ldquo;Programming Languages&rdquo; and press <code>RET</code> (Enter).
+</p>
+
+<p>
+A new Org capture buffer will be created for the node.  Why a capture buffer?  Because Org Roam enables you to specify multiple capture templates for new notes in case you have different kinds of nodes you need to create!  We&rsquo;ll cover this in another video.
+</p>
+
+<p>
+For now, we can add some text to the file and then press <code>C-c C-c</code> to confirm the capture to save the file.
+</p>
+
+<p>
+Let&rsquo;s follow the same process to create another node called &ldquo;Emacs Lisp&rdquo;.
+</p>
+</div>
+
+<h2><a id="theyrsquore-just-org-files" class="anchor" href="#theyrsquore-just-org-files">¶</a>They&rsquo;re just .org files!</h2><div class="outline-text-2" id="text-orgdad43c6">
+<p>
+These are just plain <code>.org</code> files inside of your notes folder!  You can check them into a Git repository or sync them with any other tool you like.  The database file that Org Roam creates <b>does not</b> need to be synced between machines because Org Roam can recreate it from existing .org files.
+</p>
+</div>
+
+<h2><a id="inserting-links-to-other-nodes" class="anchor" href="#inserting-links-to-other-nodes">¶</a>Inserting links to other nodes</h2><div class="outline-text-2" id="text-org6aae99c">
+<p>
+The real power of Org Roam begins when you start linking your node files together!  However, this works differently than normal Org links.
+</p>
+
+<p>
+In an Org Roam buffer, we can use the <code>C-c n i</code> binding to invoke <code>org-roam-node-insert</code> which will bring up a completion list containing all of your nodes.  Selecting one of them will cause a link to that node to be inserted at the point in the current buffer.
+</p>
+
+<p>
+Let&rsquo;s use this command to insert a link to &ldquo;Emacs Lisp&rdquo; in the &ldquo;Programming Languages&rdquo; node.
+</p>
+</div>
+
+<h2><a id="inserting-links-to-nodes-that-donrsquot-exist-yet" class="anchor" href="#inserting-links-to-nodes-that-donrsquot-exist-yet">¶</a>Inserting links to nodes that don&rsquo;t exist yet</h2><div class="outline-text-2" id="text-orga783253">
+<p>
+You can also type the name of a node that doesn&rsquo;t exist yet and it will be created!  Once you use <code>C-c C-c</code> to confirm the capture buffer that appears for the new node, a link to that node will be inserted into the buffer you started from.
+</p>
+
+<p>
+Let&rsquo;s use <code>C-c n i</code> to insert a new node called &ldquo;Scheme&rdquo; to see how this works.
+</p>
+
+<p>
+This makes it much faster to build out your node graph!
+</p>
+</div>
+
+<h2><a id="inserting-node-links-using-completions" class="anchor" href="#inserting-node-links-using-completions">¶</a>Inserting node links using completions</h2><div class="outline-text-2" id="text-org7392684">
+<p>
+You can also use <code>M-x completion-at-point</code> to complete the names of nodes inside of double-square brackets <code>[[]]</code>.  I&rsquo;ve found that this doesn&rsquo;t work in some cases, though!
+</p>
+
+<p>
+If you&rsquo;d like to complete names of nodes anywhere in an Org Roam file without using the brackets, set <code>org-roam-completion-everywhere</code> to <code>t</code>.  If you type a couple letters in your buffer and run <code>M-x completion-at-point</code>, a completion session will allow you to complete the name of the node.  Once you save the file, the <code>roam:Node</code> link syntax will be fixed!
+</p>
+
+<p>
+Here&rsquo;s an updated configuration that makes node completions easier:
+</p>
+
+<pre>(<span class="org-keyword">use-package</span> <span class="org-constant">org-roam</span>
+  <span class="org-builtin">:ensure</span> t
+  <span class="org-builtin">:init</span>
+  (<span class="org-keyword">setq</span> org-roam-v2-ack t)
+  <span class="org-builtin">:custom</span>
+  (org-roam-directory <span class="org-string">"~/RoamNotes"</span>)
+  (org-roam-completion-everywhere t)
+  <span class="org-builtin">:bind</span> ((<span class="org-string">"C-c n l"</span> . org-roam-buffer-toggle)
+         (<span class="org-string">"C-c n f"</span> . org-roam-node-find)
+         (<span class="org-string">"C-c n i"</span> . org-roam-node-insert)
+         <span class="org-builtin">:map</span> org-mode-map
+         (<span class="org-string">"C-M-i"</span>    . completion-at-point))
+  <span class="org-builtin">:config</span>
+  (org-roam-setup))</pre>
+</div>
+
+<h2><a id="creating-a-heading-node" class="anchor" href="#creating-a-heading-node">¶</a>Creating a heading node</h2><div class="outline-text-2" id="text-orgd4c7a2a">
+<p>
+One of the new features of Org Roam v2 is the ability to turn a top-level heading inside of a node file into its own unique node.  This can be helpful if some nodes don&rsquo;t really deserve their own files but you still want to link to them!
+</p>
+
+<p>
+When you have your cursor in a top-level header in an Org Roam node buffer, run <code>M-x org-id-get-create</code> to assign an Org ID to the header.  You will now see that header&rsquo;s name in the list of nodes displayed by <code>C-c n f</code>.
+</p>
+
+<p>
+Let&rsquo;s create a top-level heading node called &ldquo;Resources&rdquo; in the &ldquo;Emacs Lisp&rdquo; node!
+</p>
+</div>
+
+<h2><a id="creating-aliases-for-nodes" class="anchor" href="#creating-aliases-for-nodes">¶</a>Creating aliases for nodes</h2><div class="outline-text-2" id="text-org8d093af">
+<p>
+What happens if you have top-level heading nodes in multiple files which have the same name?
+</p>
+
+<p>
+Let&rsquo;s create another top-level heading node called &ldquo;Resources&rdquo; in the &ldquo;Scheme&rdquo; node and use <code>org-id-get-create</code> to give it an ID.
+</p>
+
+<p>
+Now if we use <code>C-c n f</code> to list all nodes, we see two &ldquo;Resources&rdquo; nodes in the list!  How can we tell them apart?
+</p>
+
+<p>
+The way to solve this is to create an alias for one (or all) of the nodes with the same name.  If you put your cursor on a heading node or in a file node, you can run <code>M-x org-roam-alias-add</code>.  You will be prompted for the name of the alias to add.
+</p>
+
+<p>
+If you check the node listing with <code>C-c n f</code> now, you will still see the duplicated &ldquo;Resources&rdquo; names, but the alias you added will also be in the list!
+</p>
+
+<p>
+If you need to, you can add multiple aliases for a single node.
+</p>
+</div>
+
+<h2><a id="viewing-backlinks-for-the-current-file" class="anchor" href="#viewing-backlinks-for-the-current-file">¶</a>Viewing backlinks for the current file</h2><div class="outline-text-2" id="text-org540d98c">
+<p>
+Once you&rsquo;ve started creating a lot of nodes that are linked together, it might be very helpful to open the backlinks buffer to see which notes are linked to the node you are currently viewing.
+</p>
+
+<p>
+Let&rsquo;s open the &ldquo;Emacs Lisp&rdquo; node and then press <code>C-c n l</code> to execute the <code>org-roam-buffer-toggle</code> command.  A new buffer called <code>*org-roam*</code> will be created in a new window.
+</p>
+
+<p>
+Now any time you select a buffer for an Org Roam node, you will see the list of references to that node from any other nodes.  Since we&rsquo;re looking at the &ldquo;Emacs Lisp&rdquo; node, we can see a reference from the &ldquo;Programming Languages&rdquo; node!
+</p>
+
+<p>
+Let&rsquo;s create another node called &ldquo;System Crafters&rdquo; and add links to both &ldquo;Programming&rdquo; and &ldquo;Emacs Lisp&rdquo; to see how it looks in the backlinks buffer for those nodes.
+</p>
+</div>
+
+<h2><a id="whatrsquos-next" class="anchor" href="#whatrsquos-next">¶</a>What&rsquo;s next?</h2><div class="outline-text-2" id="text-orge85c8be">
+<p>
+We&rsquo;ve covered enough about Org Roam in this video so that you can start taking notes in a new way!  It&rsquo;s very satisfying to build up your personal knowledge base.
+</p>
+
+<p>
+In later videos, we&rsquo;ll cover the following topics:
+</p>
+
+<ul class="org-ul">
+<li>Using capture templates to create Org Roam nodes</li>
+<li>Daily journalling and logging with the &ldquo;dailies&rdquo; feature</li>
+<li>Populating the Org Agenda with Org Roam files</li>
+</ul>
+
+<p>
+&#x2026; and more as Org Roam v2 develops!
+</p>
+
+<p>
+In the meantime, check out the <a href="https://www.orgroam.com/manual.html">Org Roam Manual</a> for more information on the features it provides.
+</p>
+</div>
+</div></div><div class="list-form center"><div class="list-form-title">Subscribe to the System Crafters Newsletter!</div><form method="POST" action="https://www.simplelists.com/subscribe.php"><input type="hidden" name="format" value="text"/><input type="hidden" name="action" value="subscribe"/><input type="hidden" name="list" value="news@lists.systemcrafters.net"/><div class="list-form-message">Stay up to date with the latest System Crafters news and updates!  Read the <a href="/newsletter/">Newsletter</a> page for more information.</div><div class="row"><div class="column"><div class="row center list-form-label">Name (optional)</div><div class="row"><input type="text" name="name"/></div></div><div class="column"><div class="row center list-form-label">Email Address</div><div class="row"><input type="text" name="email"/></div></div></div><div><input type="submit" value="Subscribe!"/></div></form></div></div><footer class="site-footer"><div class="container"><div class="row"><div class="column"><p><a href="https://systemcrafters.net/privacy-policy/">Privacy Policy</a> · <a href="https://systemcrafters.net/credits/">Credits</a> · <a href="https://systemcrafters.net/rss/">RSS Feeds</a> · <a rel="me" href="https://fosstodon.org/@daviwil">Fediverse</a></p><p>© 2021-2023 System Crafters LLC</p></div><div class="column align-right"><p><a href="https://codeberg.org/SystemCrafters/systemcrafters.net"><img src="https://systemcrafters.net/img/codeberg.png" style="width: 120px" alt="Contribute on Codeberg"/></a></p></div></div></div></footer></body></html>

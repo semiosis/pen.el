@@ -1,0 +1,14 @@
+- 1. Edward Snowden (1993-2018)
+- 2. Julian Assange (1954-)
+- 3. Edward Snowden (1973-)
+"""
+
+
+def test_parse_input():
+    """Test if the parser generates an dictionary that maps each document to its metadata."""
+    parsed_documents, parsed_metadata = parse_input(TEST_INPUT)
+
+    assert len(parsed_documents) == 3
+    assert len(parsed_metadata) == 3
+
+    assert parsed_documents[0] == 'Truth is the property of being in accord\nwith fact or reality.[1] In everyday\nlanguage, truth is typically ascribed to\nthings that

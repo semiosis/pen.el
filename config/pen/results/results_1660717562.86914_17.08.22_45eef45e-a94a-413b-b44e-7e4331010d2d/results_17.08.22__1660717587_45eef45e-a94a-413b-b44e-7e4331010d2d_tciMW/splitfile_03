@@ -1,0 +1,5 @@
+
+factChecker :: String -> IO Bool
+factChecker query = do
+  s <- readProcess "myeval" ["pena", "pf-fact-checker/1"] query
+  return (s == "True" || s == "True\n")

@@ -1,0 +1,23 @@
+
+    A fact is a piece of information
+    that can be inferred from the
+    remote system's current state.
+
+    Facts are used to populate variables
+    that can be used in templates and
+    playbooks.
+
+    Facts are not declared things, they are
+    things that are inferred from the
+    remote system's current state.
+
+    Facts are not variables.
+
+    Facts are not things.
+
+    Facts are not anything.
+
+    Facts are just facts.
+
+
+EOD

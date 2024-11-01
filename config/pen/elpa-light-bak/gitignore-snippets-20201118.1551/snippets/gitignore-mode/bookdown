@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Bookdown
+# contributor: Toptal & contributors
+# key: bookdown
+# --
+
+### Bookdown ###
+
+# R package: bookdown caching files
+/*_files/

@@ -1,0 +1,8 @@
+- 1. Fernando Pérez (born 1972)
+- 2. Steven Bird (born 1956)
+- 3. Edward Loper (born 1959)
+- 4. Peter Norvig (born 1960)"""
+
+
+if __name__ == "__main__":
+    main()

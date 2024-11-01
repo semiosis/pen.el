@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: range
+# key: range
+# --
+(for/sum ([x (in-range ${0:10})]) x)

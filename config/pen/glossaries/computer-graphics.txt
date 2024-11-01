@@ -1,0 +1,8 @@
+triangle mesh
+triangular mesh
+    A triangle mesh is a type of polygon mesh
+    in computer graphics.
+    
+    It comprises a set of triangles (typically
+    in three dimensions) that are connected by
+    their common edges or corners.

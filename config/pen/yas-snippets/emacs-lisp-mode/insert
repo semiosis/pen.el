@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: insert
+# group: buffer-editing
+# key: ins
+# --
+(insert $0)

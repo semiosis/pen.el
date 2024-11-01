@@ -1,0 +1,26 @@
+title: rephrase a phrase like
+tags: prose nlp-task
+prompt: |
+  <delim>
+  Here are some different ways of saying "criticize unfairly" in one word:
+  - denigrate
+  - disparage
+  <delim>
+  Here are some different ways of saying <q:phrase>, <style>:
+  -
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 100
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- phrase
+- style
+examples:
+- house rules
+- in a nice way
+postprocessor: sed 's/- //' | uniqnosort
+split-patterns:
+- "\n"
+filter: true

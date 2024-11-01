@@ -1,0 +1,87 @@
+types of decision trees
+    - Categorical Variable Decision Tree
+    - Continuous Variable Decision Tree
+
+Categorical Variable Decision Tree
+    [decision Tree]
+    
+    The target variable is categorical.
+
+Continuous Variable Decision Tree
+    [decision Tree]
+
+    The target variable is continuous.
+
+algorithms used in decision trees
+    - ID3
+    - Gini Index
+    - Chi-Square
+    - Reduction in Variance
+
+ID3
+    [algorithm] 
+
+    The core algorithm for building decision
+    trees.
+    
+    Employs a top-down, greedy search through
+    the space of possible branches with no
+    backtracking.
+    
+    Uses Entropy and Information Gain to
+    construct a decision tree.
+
+information
+    Quantifies how surprising an event is from
+    a random variable in bits.
+
+information vs entropy
+    Information quantifies how surprising an
+    event is from a random variable in bits.
+    
+    Entropy quantifies how much information
+    there is in a random variable, or more
+    specifically, the probability distribution
+    for the events of the random variable.
+
+information gain
+IG
+    [data mining]
+    
+    Measures the reduction in entropy or
+    surprise by splitting a dataset according
+    to a given value of a random variable.
+
+    The reduction in entropy or surprise by
+    transforming a dataset and is often used
+    in training decision trees.
+
+    A larger information gain suggests a lower
+    entropy group or groups of samples, and
+    hence less surprise.
+
+    The amount of information that's gained by
+    knowing the value of the attribute, which
+    is the entropy of the distribution before
+    the split minus the entropy of the
+    distribution after it.
+    
+    The largest information gain is equivalent
+    to the smallest entropy.
+
+    Calculated by comparing the entropy of the
+    dataset before and after a transformation.
+
+    See "Mutual information".
+        vim +/"mutual information" "$NOTES/ws/information-theory/glossary.txt"
+
+information gain ratio
+    [#decision tree learning]
+    
+    Ratio of information gain to the intrinsic
+    information.
+    
+    It was proposed by Ross Quinlan, to reduce
+    a bias towards multi-valued attributes by
+    taking the number and size of branches
+    into account when choosing an attribute.

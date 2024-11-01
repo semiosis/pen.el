@@ -1,0 +1,8 @@
+cd /root/repos/mitsuhiko/teetty;  "om" "#" "<==" "om"
+cd /root/repos/mitsuhiko/teetty;  "om" "#" "<==" "om"
+cd /root/.emacs.d/host/pen.el/scripts;  "om" "#" "<==" "om"
+cd /root/.emacs.d/host/pen.el/scripts;  "om" "#" "<==" "om"
+cd /root/.emacs.d/host/pen.el/scripts;  "om" "#" "<==" "om"
+cd /root/repos/mitsuhiko/teetty;  "om" "#" "<==" "om"
+cd /root/repos/mitsuhiko/teetty;  "om" "#" "<==" "om"
+cd /root/repos/mitsuhiko/teetty;  "om" "#" "<==" "om"

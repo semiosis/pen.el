@@ -1,0 +1,9 @@
+"table.iloc" is a function that allows you to access rows and columns by their integer position.
+
+"table.iloc[0]" is a function that returns the first row of the table.
+
+"table.iloc[0][0]" is a function that returns the first element of the first row of the table.
+
+"table.iloc[0,0]" is a function that returns the same thing.
+
+"table.iloc[:,0]" is a function

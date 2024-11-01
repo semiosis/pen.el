@@ -1,0 +1,467 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:04:24 GMT
+Content-Type: text/html
+Content-Length: 26111
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-65ff"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Standard Classes</title>
+<p>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="io.html">back</a> <a href="monads.html">next</a> <a href="index.html">top</a><hr>
+<p>
+<a name="sect8"></a>
+<h2>8<tt>&nbsp;&nbsp;</tt>Standard Haskell Classes</h2><p>
+In this section we introduce the predefined standard type
+classes in Haskell.  We have simplified these classes somewhat by
+omitting some of the less interesting methods in these classes; the
+Haskell report contains a more complete description.  Also, some of
+the standard classes are part of the standard Haskell libraries; these
+are described in the Haskell Library Report.<p>
+<a name="sect8.1"></a>
+<h3>8.1<tt>&nbsp;&nbsp;</tt>Equality and Ordered Classes</h3><p>
+The classes <tt>Eq</tt> and <tt>Ord</tt> have already been discussed.  The
+definition of <tt>Ord</tt> in the Prelude is somewhat more complex than the
+simplified version of <tt>Ord</tt> presented earlier.  In particular, note the
+<tt>compare</tt> method:
+<tt><br>
+
+<br>
+data&nbsp;Ordering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;EQ&nbsp;|&nbsp;LT&nbsp;|&nbsp;GT&nbsp;<br>
+compare&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Ord&nbsp;a&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Ordering<br>
+
+<br>
+
+</tt>The <tt>compare</tt> method is sufficient to define all other
+methods (via defaults) in this class and is the best way to create
+<tt>Ord</tt> instances. <a name="tut-enum-classes"></a><p>
+<a name="sect8.2"></a>
+<h3>8.2<tt>&nbsp;&nbsp;</tt>The Enumeration Class</h3>
+<p>
+Class <tt>Enum</tt> has a set of operations that underlie the syntactic sugar of
+arithmetic sequences; for example, the arithmetic sequence expression
+<tt>[1,3..]</tt> stands for <tt>enumFromThen&nbsp;1&nbsp;3</tt> (see
+<a href="../onlinereport/exps.html#arithmetic-sequences">&sect;3.10</a> for the formal translation).  
+We can now see that arithmetic sequence expressions can be used to
+generate lists of any type that is an instance of <tt>Enum</tt>.  This
+includes not only most numeric types, but also <tt>Char</tt>, so that, for
+instance, <tt>['a'..'z']</tt> denotes the list of lower-case letters in
+alphabetical order.  Furthermore, user-defined enumerated types like
+<tt>Color</tt> can easily be given <tt>Enum</tt> instance declarations.  If so:
+<p>
+<tt>[Red&nbsp;..&nbsp;Violet]</tt>    =&gt;    <tt>[Red,&nbsp;Green,&nbsp;Blue,&nbsp;Indigo,&nbsp;Violet]
+<p>
+
+</tt>Note that such a sequence is <I>arithmetic</I> in the sense that the
+increment between values is constant, even though the values are not
+numbers.  Most types in <tt>Enum</tt> can be mapped onto fixed precision
+integers; for these, 
+the <tt>fromEnum</tt> and <tt>toEnum</tt> convert between <tt>Int</tt> and a type in <tt>Enum</tt>.<a name="tut-text-class"></a><p>
+<a name="sect8.3"></a>
+<h3>8.3<tt>&nbsp;&nbsp;</tt>The Read and Show Classes</h3>
+<p>
+The instances of class <tt>Show</tt> are those types that can be converted
+to character strings (typically for I/O).  The class <tt>Read</tt> 
+provides operations for parsing character strings to obtain the values
+they may represent.  The simplest function in the class <tt>Show</tt> is
+<tt>show</tt>: 
+<tt><br>
+
+<br>
+show&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Show&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;String<br>
+
+<br>
+
+</tt>Naturally enough, <tt>show</tt> takes any value of an appropriate type and
+returns its representation as a character string (list of characters),
+as in <tt>show&nbsp;(2+2)</tt>, which results in <tt>"4"</tt>.  This is fine as far as
+it goes, but we typically need to produce more complex strings
+that may have the representations of many values in them, as in
+<tt><br>
+
+<br>
+"The&nbsp;sum&nbsp;of&nbsp;"&nbsp;++&nbsp;show&nbsp;x&nbsp;++&nbsp;"&nbsp;and&nbsp;"&nbsp;++&nbsp;show&nbsp;y&nbsp;++&nbsp;"&nbsp;is&nbsp;"&nbsp;++&nbsp;show&nbsp;(x+y)&nbsp;++&nbsp;"."<br>
+
+<br>
+
+</tt>and after a while, all that concatenation gets to be a bit
+inefficient.  Specifically, let's consider a function to represent
+the binary trees of Section <a href="goodies.html#tut-recursive-types">2.2.1</a> as a string,
+with suitable markings to show the nesting of subtrees and the
+separation of left and right branches (provided the element type is
+representable as a string):
+<tt><br>
+
+<br>
+showTree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Show&nbsp;a)&nbsp;=&gt;&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;String<br>
+showTree&nbsp;(Leaf&nbsp;x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;show&nbsp;x<br>
+showTree&nbsp;(Branch&nbsp;l&nbsp;r)&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;"&lt;"&nbsp;++&nbsp;showTree&nbsp;l&nbsp;++&nbsp;"|"&nbsp;++&nbsp;showTree&nbsp;r&nbsp;++&nbsp;"&gt;"<br>
+
+<br>
+
+</tt>Because <tt>(++)</tt> has time complexity linear in the length of its
+left argument, <tt>showTree</tt> is potentially quadratic in the size of the
+tree. <p>
+To restore linear complexity, the function <tt>shows</tt> is provided:
+<tt><br>
+
+<br>
+shows&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Show&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;String&nbsp;-&gt;&nbsp;String<br>
+
+<br>
+
+shows</tt> takes a printable value and a string and returns
+that string with the value's representation concatenated
+at the front.  The second argument serves as a sort of string
+accumulator, and <tt>show</tt> can now be defined as <tt>shows</tt> with
+the null accumulator.  This is the default definition of
+<tt>show</tt> in the <tt>Show</tt> class definition:
+<tt><br>
+
+<br>
+show&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;shows&nbsp;x&nbsp;""<br>
+
+<br>
+
+</tt>We can use <tt>shows</tt> to define a more efficient version of <tt>showTree</tt>,
+which also has a string accumulator argument:
+<tt><br>
+
+<br>
+showsTree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Show&nbsp;a)&nbsp;=&gt;&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;String&nbsp;-&gt;&nbsp;String<br>
+showsTree&nbsp;(Leaf&nbsp;x)&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;shows&nbsp;x&nbsp;s<br>
+showsTree&nbsp;(Branch&nbsp;l&nbsp;r)&nbsp;s=&nbsp;&nbsp;'&lt;'&nbsp;:&nbsp;showsTree&nbsp;l&nbsp;('|'&nbsp;:&nbsp;showsTree&nbsp;r&nbsp;('&gt;'&nbsp;:&nbsp;s))<br>
+
+<br>
+
+</tt>This solves our efficiency problem (<tt>showsTree</tt> has linear complexity),
+but the presentation of this function (and others like it) can be
+improved.  First, let's create a type synonym:
+<tt><br>
+
+<br>
+type&nbsp;ShowS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;String&nbsp;-&gt;&nbsp;String<br>
+
+<br>
+
+</tt>This is the type of a function that returns a string representation of
+something followed by an accumulator string.
+Second, we can avoid carrying accumulators around, and also avoid
+amassing parentheses at the right end of long constructions, by using
+functional composition:
+<tt><br>
+
+<br>
+showsTree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Show&nbsp;a)&nbsp;=&gt;&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;ShowS<br>
+showsTree&nbsp;(Leaf&nbsp;x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;shows&nbsp;x<br>
+showsTree&nbsp;(Branch&nbsp;l&nbsp;r)&nbsp;&nbsp;=&nbsp;&nbsp;('&lt;':)&nbsp;.&nbsp;showsTree&nbsp;l&nbsp;.&nbsp;('|':)&nbsp;.&nbsp;showsTree&nbsp;r&nbsp;.&nbsp;('&gt;':)<br>
+
+<br>
+
+</tt>Something more important than just tidying up the code has come about
+by this transformation:  we have raised the presentation from an
+<I>object level</I> (in this case, strings) to a <I>function level.
+</I>We can think of the typing as saying that <tt>showsTree</tt> maps a tree
+into a <I>showing function</I>.  Functions like <tt>('&lt;'&nbsp;:)</tt> or
+<tt>("a&nbsp;string"&nbsp;++)</tt> are primitive showing functions, and we build up
+more complex functions by function composition.<p>
+Now that we can turn trees into strings, let's turn to the inverse
+problem.  The basic idea is a parser for a type <tt>a</tt>, which
+is a function that takes a string and returns a list of <tt>(a,&nbsp;String)
+</tt>pairs [<a href="haskell-tutorial.html#$wadler:list-of-successes">9</a>].  The Prelude provides
+a type synonym for such functions:
+<tt><br>
+
+<br>
+type&nbsp;ReadS&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;String&nbsp;-&gt;&nbsp;[(a,String)]<br>
+
+<br>
+
+</tt>Normally, a parser returns a singleton list, containing a value
+of type <tt>a</tt> that was read from the input string and the remaining
+string that follows what was parsed.  If no parse was possible, however,
+the result is the empty list, and if there is more than one possible
+parse (an ambiguity), the resulting list contains more than one pair.
+The standard function <tt>reads</tt> is a parser for any instance of <tt>Read</tt>:
+<tt><br>
+
+<br>
+reads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Read&nbsp;a)&nbsp;=&gt;&nbsp;ReadS&nbsp;a<br>
+
+<br>
+
+</tt>We can use this function to define a parsing function for the string
+representation of binary trees produced by <tt>showsTree</tt>.  List comprehensions
+give us a convenient idiom for constructing such parsers: (An
+even more elegant approach to parsing uses monads and parser
+combinators.  These are part of a standard parsing library distributed
+with most Haskell systems.)
+<tt><br>
+
+<br>
+readsTree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Read&nbsp;a)&nbsp;=&gt;&nbsp;ReadS&nbsp;(Tree&nbsp;a)<br>
+readsTree&nbsp;('&lt;':s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[(Branch&nbsp;l&nbsp;r,&nbsp;u)&nbsp;|&nbsp;(l,&nbsp;'|':t)&nbsp;&lt;-&nbsp;readsTree&nbsp;s,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(r,&nbsp;'&gt;':u)&nbsp;&lt;-&nbsp;readsTree&nbsp;t&nbsp;]<br>
+readsTree&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[(Leaf&nbsp;x,&nbsp;t)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;(x,t)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;-&nbsp;reads&nbsp;s]<br>
+
+<br>
+
+</tt>Let's take a moment to examine this function definition in detail.
+There are two main cases to consider:  If the first character of the
+string to be parsed is <tt>'&lt;'</tt>, we should have the representation of
+a branch; otherwise, we have a leaf.  In the first case, calling the
+rest of the input string following the opening angle bracket <tt>s</tt>,
+any possible parse must be a tree <tt>Branch&nbsp;l&nbsp;r</tt> with remaining string <tt>u</tt>,
+subject to the following conditions:
+<OL><LI>
+The tree <tt>l</tt> can be parsed from the beginning of the string <tt>s</tt>.
+<LI>
+The string remaining (following the representation of <tt>l</tt>) begins
+with <tt>'|'</tt>.  Call the tail of this string <tt>t</tt>.
+<LI>
+The tree <tt>r</tt> can be parsed from the beginning of <tt>t</tt>.
+<LI>
+The string remaining from that parse begins with <tt>'&gt;'</tt>, and
+<tt>u</tt> is the tail.
+</OL>
+Notice the expressive power we get from the combination of pattern
+matching with list comprehension: the form of a resulting parse is
+given by the main expression of the list comprehension, the first
+two conditions above are expressed by the first generator
+("<tt>(l,&nbsp;'|':t)</tt> is drawn from the list of parses of <tt>s</tt>"), and the
+remaining conditions are expressed by the second generator.<p>
+The second defining equation above just says that to parse the
+representation of a leaf, we parse a representation of the element
+type of the tree and apply the constructor <tt>Leaf</tt> to the value thus
+obtained.<p>
+We'll accept on faith for the moment that there is a <tt>Read</tt> (and
+<tt>Show</tt>) instance
+of <tt>Integer</tt> (among many other types), providing a <tt>reads</tt> that behaves
+as one would expect, e.g.:
+<p>
+<tt>(reads&nbsp;"5&nbsp;golden&nbsp;rings")&nbsp;::&nbsp;[(Integer,String)]</tt>    =&gt;    <tt>[(5,&nbsp;"&nbsp;golden&nbsp;rings")]</tt> <p>
+
+With this understanding, the reader should verify the following evaluations:
+<p>
+<table >
+<tr><td>
+  <tt>readsTree&nbsp;"&lt;1|&lt;2|3&gt;&gt;"</tt></td><td align=center>    =&gt;    </td><td>
+    <tt>[(Branch&nbsp;(Leaf&nbsp;1)&nbsp;(Branch&nbsp;(Leaf&nbsp;2)&nbsp;(Leaf&nbsp;3)),&nbsp;"")]</tt></td></tr><tr><td><tt>readsTree&nbsp;"&lt;1|2"</tt>     </td><td align=center>    =&gt;    </td><td> <tt>[]
+</tt></td></tr></table>
+<p>
+<p>
+There are a couple of shortcomings in our definition of <tt>readsTree</tt>.
+One is that the parser is quite rigid, allowing no white space before
+or between the elements of the tree representation; the other is that
+the way we parse our punctuation symbols is quite different from the
+way we parse leaf values and subtrees, this lack of uniformity making
+the function definition harder to read.  We can address both of these
+problems by using the lexical analyzer provided by the Prelude:
+<tt><br>
+
+<br>
+lex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;ReadS&nbsp;String<br>
+
+<br>
+
+lex</tt> normally returns a singleton list containing a
+pair of strings: the first lexeme in the input string and the remainder
+of the input.  The lexical rules are those of Haskell programs,
+including comments, which <tt>lex</tt> skips, along with whitespace.
+If the input string is empty or contains only whitespace and comments,
+<tt>lex</tt> returns <tt>[("","")]</tt>; if the input is not empty in this sense,
+but also does not begin with a valid lexeme after any leading whitespace
+and comments, <tt>lex</tt> returns <tt>[]</tt>.<p>
+Using the lexical analyzer, our tree parser now looks like this:
+<tt><br>
+
+<br>
+readsTree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Read&nbsp;a)&nbsp;=&gt;&nbsp;ReadS&nbsp;(Tree&nbsp;a)<br>
+readsTree&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[(Branch&nbsp;l&nbsp;r,&nbsp;x)&nbsp;|&nbsp;("&lt;",&nbsp;t)&nbsp;&lt;-&nbsp;lex&nbsp;s,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(l,&nbsp;&nbsp;&nbsp;u)&nbsp;&lt;-&nbsp;readsTree&nbsp;t,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;("|",&nbsp;v)&nbsp;&lt;-&nbsp;lex&nbsp;u,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(r,&nbsp;&nbsp;&nbsp;w)&nbsp;&lt;-&nbsp;readsTree&nbsp;v,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;("&gt;",&nbsp;x)&nbsp;&lt;-&nbsp;lex&nbsp;w&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(Leaf&nbsp;x,&nbsp;t)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;(x,&nbsp;&nbsp;&nbsp;t)&nbsp;&lt;-&nbsp;reads&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+
+<br>
+<p>
+</tt>We may now wish to use <tt>readsTree</tt> and <tt>showsTree</tt> to declare 
+<tt>(Read&nbsp;a)&nbsp;=&gt;&nbsp;Tree&nbsp;a</tt> an instance of <tt>Read</tt> and <tt>(Show&nbsp;a)&nbsp;=&gt;&nbsp;Tree&nbsp;a</tt> an
+instance of <tt>Show</tt>.  This would allow us to
+use the generic overloaded functions from the Prelude to parse and
+display trees.  Moreover, we would automatically then be able to parse
+and display many other types containing trees as components, for
+example, <tt>[Tree&nbsp;Integer]</tt>.  As it turns out, <tt>readsTree</tt> and <tt>showsTree
+</tt>are of almost the right types to be <tt>Show</tt> and <tt>Read</tt> methods
+The <tt>showsPrec
+</tt>and <tt>readsPrec</tt> methods are parameterized versions of <tt>shows</tt> and
+<tt>reads</tt>.  The extra parameter is a precedence level, used to properly
+parenthesize expressions containing infix constructors.  For types
+such as <tt>Tree</tt>, the precedence can be ignored.  The <tt>Show</tt> and <tt>Read
+</tt>instances for <tt>Tree</tt> are:
+<tt><br>
+
+<br>
+instance&nbsp;Show&nbsp;a&nbsp;=&gt;&nbsp;Show&nbsp;(Tree&nbsp;a)&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;showsPrec&nbsp;_&nbsp;x&nbsp;=&nbsp;showsTree&nbsp;x<br>
+<br>
+instance&nbsp;Read&nbsp;a&nbsp;=&gt;&nbsp;Read&nbsp;(Tree&nbsp;a)&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;readsPrec&nbsp;_&nbsp;s&nbsp;=&nbsp;readsTree&nbsp;s<br>
+
+<br>
+
+</tt>Alternatively, the <tt>Show</tt> instance could be defined in terms of
+<tt>showTree</tt>: 
+<tt><br>
+
+<br>
+instance&nbsp;Show&nbsp;a&nbsp;=&gt;&nbsp;Show&nbsp;(Tree&nbsp;a)&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;show&nbsp;t&nbsp;=&nbsp;showTree&nbsp;t<br>
+
+<br>
+
+</tt>This, however, will be less efficient than the <tt>ShowS</tt> version.  Note
+that the <tt>Show</tt> class defines default methods for both <tt>showsPrec</tt> and
+<tt>show</tt>, allowing the user to define either one of these in an instance
+declaration.  Since these defaults are mutually recursive, an instance
+declaration that defines neither of these functions will loop when
+called.  Other classes such as <tt>Num</tt> also have these "interlocking
+defaults". <p>
+We refer the interested reader to <a href="../onlinereport/derived.html#derived-appendix">&sect;D</a> for details
+of the <tt>Read</tt> and <tt>Show</tt> classes.<p>
+We can test the <tt>Read</tt> and <tt>Show</tt> instances by applying <tt>(read&nbsp;.&nbsp;show)
+</tt>(which should be the identity) to some trees, where <tt>read</tt> is a
+specialization of <tt>reads</tt>:
+<tt><br>
+
+<br>
+read&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Read&nbsp;a)&nbsp;=&gt;&nbsp;String&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+
+</tt>This function fails if there is not a unique parse or if the input
+contains anything more than a representation of one value of type <tt>a
+</tt>(and possibly, comments and whitespace).<a name="tut-derived-instances"></a><p>
+<a name="sect8.4"></a>
+<h3>8.4<tt>&nbsp;&nbsp;</tt>Derived Instances</h3>
+<p>
+Recall the <tt>Eq</tt> instance for trees we presented in Section
+<a href="classes.html#tut-type-classes">5</a>; such a declaration is
+simple---and boring---to produce: we require that the
+element type in the leaves be an equality type; then, two leaves are
+equal iff they contain equal elements, and two branches are equal iff
+their left and right subtrees are equal, respectively.  Any other two
+trees are unequal:
+<tt><br>
+
+<br>
+instance&nbsp;&nbsp;(Eq&nbsp;a)&nbsp;=&gt;&nbsp;Eq&nbsp;(Tree&nbsp;a)&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(Leaf&nbsp;x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&nbsp;(Leaf&nbsp;y)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;==&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(Branch&nbsp;l&nbsp;r)&nbsp;==&nbsp;(Branch&nbsp;l'&nbsp;r')&nbsp;&nbsp;=&nbsp;&nbsp;l&nbsp;==&nbsp;l'&nbsp;&amp;&amp;&nbsp;r&nbsp;==&nbsp;r'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;False<br>
+
+<br>
+<p>
+</tt>Fortunately, we don't need to go through this tedium every time we
+need equality operators for a new type; the <tt>Eq</tt> instance can be 
+<I>derived automatically</I> from the <tt>data</tt> declaration if we so specify:
+<tt><br>
+
+<br>
+data&nbsp;&nbsp;Tree&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;Leaf&nbsp;a&nbsp;|&nbsp;Branch&nbsp;(Tree&nbsp;a)&nbsp;(Tree&nbsp;a)&nbsp;&nbsp;deriving&nbsp;Eq<br>
+
+<br>
+
+</tt>The <tt>deriving</tt> clause implicitly produces an <tt>Eq</tt> instance declaration
+just like the one in Section <a href="classes.html#tut-type-classes">5</a>.  Instances of <tt>Ord</tt>,
+<tt>Enum</tt>, <tt>Ix</tt>, <tt>Read</tt>, and <tt>Show</tt> can also be generated by the
+<tt>deriving</tt> clause. 
+[More than one class name can be specified, in which case the list
+of names must be parenthesized and the names separated by commas.]<p>
+The derived <tt>Ord</tt> instance for <tt>Tree</tt> is slightly more complicated than
+the <tt>Eq</tt> instance:
+<tt><br>
+
+<br>
+instance&nbsp;&nbsp;(Ord&nbsp;a)&nbsp;=&gt;&nbsp;Ord&nbsp;(Tree&nbsp;a)&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(Leaf&nbsp;_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;=&nbsp;(Branch&nbsp;_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(Leaf&nbsp;x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;=&nbsp;(Leaf&nbsp;y)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;&lt;=&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(Branch&nbsp;_)&nbsp;&nbsp;&nbsp;&lt;=&nbsp;(Leaf&nbsp;_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(Branch&nbsp;l&nbsp;r)&nbsp;&lt;=&nbsp;(Branch&nbsp;l'&nbsp;r')&nbsp;&nbsp;=&nbsp;&nbsp;l&nbsp;==&nbsp;l'&nbsp;&amp;&amp;&nbsp;r&nbsp;&lt;=&nbsp;r'&nbsp;||&nbsp;l&nbsp;&lt;=&nbsp;l'<br>
+
+<br>
+
+</tt>This specifies a <I>lexicographic</I> order:  Constructors are ordered
+by the order of their appearance in the <tt>data</tt> declaration, and the
+arguments of a constructor are compared from left to right.  Recall
+that the built-in list type is semantically equivalent to an ordinary
+two-constructor type.  In fact, this is the full declaration:
+<tt><br>
+
+<br>
+data&nbsp;[a]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[]&nbsp;|&nbsp;a&nbsp;:&nbsp;[a]&nbsp;deriving&nbsp;(Eq,&nbsp;Ord)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;pseudo-code<br>
+
+<br>
+
+</tt>(Lists also have <tt>Show</tt> and <tt>Read</tt> instances, which are not derived.)
+The derived <tt>Eq</tt> and <tt>Ord</tt> instances for lists are the usual ones; in
+particular, character strings, as lists of characters, are ordered as
+determined by the underlying <tt>Char</tt> type, with an initial substring
+comparing less than a longer string; for example, <tt>"cat"&nbsp;&lt;&nbsp;"catalog"</tt>.<p>
+In practice, <tt>Eq</tt> and <tt>Ord</tt> instances are almost always derived,
+rather than user-defined.  In fact, we should provide our own
+definitions of equality and ordering predicates only with some
+trepidation, being careful to maintain the expected algebraic
+properties of equivalence relations and total orders.
+An intransitive <tt>(==)</tt> predicate, for example, could be disastrous,
+confusing readers of the program and confounding manual or
+automatic program transformations that rely on the <tt>(==)</tt> predicate's
+being an approximation to definitional equality.  Nevertheless,
+it is sometimes necessary to provide <tt>Eq</tt> or <tt>Ord</tt> instances 
+different from those that would be derived; probably the most
+important example is that of an abstract data type in which different
+concrete values may represent the same abstract value.<p>
+An enumerated type can have a derived <tt>Enum</tt> instance, and here again,
+the ordering is that of the constructors in the <tt>data</tt> declaration.
+For example:
+<tt><br>
+
+<br>
+data&nbsp;Day&nbsp;=&nbsp;Sunday&nbsp;|&nbsp;Monday&nbsp;|&nbsp;Tuesday&nbsp;|&nbsp;Wednesday<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;Thursday&nbsp;|&nbsp;Friday&nbsp;|&nbsp;Saturday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deriving&nbsp;(Enum)<br>
+
+<br>
+
+</tt>Here are some simple examples using the derived instances for this type:
+<p>
+<table >
+<tr><td>
+<tt>[Wednesday&nbsp;..&nbsp;Friday]</tt>     </td><td align=center>=&gt;</td><td>  <tt>[Wednesday,&nbsp;Thursday,&nbsp;Friday]</tt></td></tr><tr><td><tt>[Monday,&nbsp;Wednesday&nbsp;..]</tt>  </td><td align=center>=&gt;</td><td>  <tt>[Monday,&nbsp;Wednesday,&nbsp;Friday]
+</tt></td></tr></table>
+<p>
+<p>
+Derived <tt>Read</tt> (<tt>Show</tt>) instances are possible for all types
+whose component types also have <tt>Read</tt> (<tt>Show</tt>) instances.
+(<tt>Read</tt> and <tt>Show</tt> instances for most of the standard types
+are provided by the Prelude.  Some types, such as the function type <tt>(-&gt;)</tt>,
+have a <tt>Show</tt> instance but not a corresponding <tt>Read</tt>.)  The textual
+representation 
+defined by a derived <tt>Show</tt> instance is consistent with the
+appearance of constant Haskell expressions of the type in question.
+For example, if we add <tt>Show</tt> and <tt>Read</tt> to the <tt>deriving</tt> clause for type
+<tt>Day</tt>, above, we obtain
+<p>
+<tt>show&nbsp;[Monday&nbsp;..&nbsp;Wednesday]</tt>    =&gt;    
+   <tt>"[Monday,Tuesday,Wednesday]"
+<p>
+<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="io.html">back</a> <a href="monads.html">next</a> <a href="index.html">top</a>
+</tt>

@@ -1,0 +1,10 @@
+"Clavier" is a simple program that allows you to type and save notes.
+
+Usage:
+    clavier [options]
+
+Options:
+    -h --help       Show this screen.
+    --version       Show version.
+    --file=<file>   File to save notes to.
+    --debug         Print debug information.

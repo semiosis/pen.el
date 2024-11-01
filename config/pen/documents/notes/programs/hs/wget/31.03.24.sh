@@ -1,0 +1,6 @@
+cd /;  "wget" "-qO-" "https://www.desiringgod.org/interviews/does-god-control-all-things-all-the-time" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=3d-slDHXuZo" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/@DevotionsWithDemarcus" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=xNz-xu3fmt4" "#" "<==" "pen-ci"
+cd /root/notes/ws/irish;  "wget" "-qO-" "https://www.youtube.com/watch?app=desktop&v=_nxu1CssWLk" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://rickhowerton.wordpress.com/2015/05/06/you-are-my-disciple-if-the-five-ifs-of-a-disciple/" "#" "<==" "pen-ci"

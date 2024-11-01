@@ -1,0 +1,1 @@
+""realized?" refers to the fact that, in clojure, you can use the same var in different namespaces and it won't conflict. you can have a var named "foo" in one namespace, and a var named "foo" in another namespace, and they won't conflict. this is a huge advantage over lisp, where you can only have one var named "foo" in a lisp program."

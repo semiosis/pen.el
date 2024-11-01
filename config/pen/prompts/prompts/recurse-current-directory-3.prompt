@@ -1,0 +1,67 @@
+title: "recurse current directory"
+doc: "imaginarily recurse the current directory"
+tags: filesystem project
+prompt-version: 3
+todo:
+- Make a more general version of this
+notes:
+- parent was removed because for short listings, it was interfering
+# Don't include this necessarily
+subprompts:
+  - dirs: |-
+        $ ls -d */ # list directories here
+        <ls dirs here output>
+
+        $ find . -type d -maxdepth 1 # list directories here
+        <find dirs here output>
+        
+prompt: |+
+  <dirs>
+  
+  $ pwd
+  <working directory>
+
+  # recursively search for files in this directory
+  $ find . -maxdepth 5
+  <:pp>./
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "\n\n"
+cache: on
+n-completions: 10
+vars:
+- "working directory"
+- "ls dirs here output"
+- "find dirs here output"
+var-defaults:
+- "(pen-snc \"pwd\")"
+- "(pen-snc \"ls -d */ | head -n 5\")"
+- "(pen-snc \"find . -type d -maxdepth 1\")"
+examples:
+- "/home/shane/source/git/mobile-shell/mosh"
+- "secret documents"
+- |-
+    drwxrwxr-x   2 shane shane     4096 Oct 13 19:34 contracts
+    -rw-rw-r--   1 shane shane      816 Oct 13 02:59 README.org
+    -rw-rw-r--   1 shane shane 10166273 Oct 13 02:59 tags
+    drwxrwxr-x 271 shane shane    12288 Oct 13 01:08 node_modules
+    -rw-r--r--   1 shane shane   262758 Oct 13 01:08 package-lock.json
+- |-
+    .
+    ./.git/
+    ./.github
+    ./src/
+    ./test/
+info: on
+completion: off
+insertion: off
+validator: grep -qP "^\\./"
+# must come after validator
+postpostprocessor: sed 's/^\.\///' | sed -e '/^$/d' -e '/^\.$/d'
+split-patterns:
+- "\n"
+# These are defined after the prompt has executed
+action: pen-find-file

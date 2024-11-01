@@ -1,0 +1,4 @@
+"add-to-list" "add-hook" "advice-add" "advice-remove" "advice-member-p"
+"advice-mapc" "advice-function-member-p" "advice-mapcar" "advice-eval-interactive-spec"
+"advice-add-docstring" "advice-remove-docstring" "advice-add-props"
+"advice-remove-props"

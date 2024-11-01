@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Psalm" "91" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Psalm" "91" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Psalm" "91" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Psalm" "91" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Psalm" "91" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Psalm" "91" "#" "<==" "zsh"

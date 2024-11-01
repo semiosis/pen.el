@@ -1,0 +1,163 @@
+parse
+deserialize
+read
+
+parser
+deserializer
+reader
+
+render
+serialize
+write
+
+renderer
+serializer
+writer
+
+parser-renderer
+    A tool that does both deserializing and
+    serializing.
+
+    It's both a parser and a renderer.
+
+    Example:
+    - https://github.com/200ok-ch/org-parser
+
+LR(0) & SLR(1)
+    [parsing techniques]
+
+    - bottom-up
+
+    They are optimal parsing techniques and a
+    bit harder compared to LL(1) parsing table
+    but on the other hand the advantage is
+    that these are more powerful; they can
+    detect syntactic errors more easily and
+    earlier.
+
+    Demonstration:
+        readsubs "https://www.youtube.com/watch?v=caGd_-TvPLc"
+
+        How to compute the automaton which is
+        required to compute the table which
+        further is helpful for checking
+        whether a string can be accepted by
+        the parser or not.
+
+Rosie Pattern Matching Language
+RPL
+    A language for writing PEG grammars, which
+    are by definition both greedy and
+    possessive.
+
+Parsing Expression Grammars
+PEG
+    PEG languages are greedy and possessive.
+
+    v +/"## Parsing Expression Grammars" "$MYGIT/rosie-pattern-language/rosie/doc/raisondetre.md"
+
+    v +/"+ Extends the power of context-free grammars with PEG-like syntax for lookahead and negative lookahead." "$MYGIT/Engelberg/instaparse/README.md"
+
+possessive
+    Once a choice is made, Rosie will never
+    backtrack and try another alternative:
+    Rosie matches are _possessive_. Let's make
+    that clear with a different example.
+    
+    The RPL pattern `a / (a b)` will not match
+    the input "a b" because the pattern will
+    never look for b.
+
+tree-sitter
+    [parser]
+    [incremental parsing toolkit]
+
+    https://github.com/tree-sitter/tree-sitter
+
+    Used by:
+        GitHub Semantic Code team.
+        $MYGIT/github/semantic/docs/
+
+        vim +/"# Grammar Development for Semantic Code" "$MYGIT/github/semantic/docs/grammar-development-guide.md"
+
+    Provides an abstract representation of
+    code regardless of the programming
+    language it was written in.
+
+    Most parsers are difficult to reuse
+    because they're coupled to the language’s
+    implementation.
+
+    With tree-sitter, you don't have to write
+    a lot of complicated code to parse a
+    language; you just write the grammar.
+
+    A grammar definition tends to be more
+    maintainable and easier to understand, as
+    it flows more naturally than code.
+
+semantic
+    [parser]
+    [#github]
+
+parsing
+    While the goal is to emulate valid syntax,
+    certain use-cases require supporting
+    invalid syntax.
+
+    There is a difference between parsing
+    verses interpreting or compiling a
+    language.
+
+    Your parse tree doesn't always represent
+    code that will run, but it has to be
+    "valid enough" to represent readable code.
+
+    Example
+        The Java language requires statements
+        (such as the expression `x = 3`) to be
+        inside of methods.
+
+        However, in the `tree-sitter-java`
+        grammar, we explicitly allow
+        statements to be parsed outside of
+        methods.
+
+        The grammar was loosened so that
+        syntax highlighting for a code snippet
+        of Java in a markdown file may be
+        supported.
+
+        While this code wouldn't compile, it
+        doesn't break for the use-cases that
+        rely on our parsing of the language.
+
+recursive descent parser
+    [top-down parser]
+
+    Built from a set of mutually recursive
+    procedures (or a non-recursive equivalent)
+    where each such procedure implements one
+    of the nonterminals of the grammar.
+
+    Thus the structure of the resulting
+    program closely mirrors that of the
+    grammar it recognizes.
+
+    Pitfalls
+    - Recursive descent parsers will infinite
+      loop if the grammar is left-recursive.
+
+predictive parser
+    [recursive descent parser]
+
+    Does not require backtracking.
+
+ANTLR
+ANother Tool for Language Recognition
+    A powerful parser generator for reading,
+    processing, executing, or translating
+    structured text or binary files.
+
+formal language
+    A set of strings over an alphabet.

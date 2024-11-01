@@ -1,0 +1,353 @@
+HTTP/1.1 200 OK
+Date: Sat, 31 Aug 2024 08:46:46 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 8bbbc082b98e1c56-AKL
+CF-Cache-Status: HIT
+Age: 2
+Cache-Control: public, max-age=30
+Expires: Sat, 31 Aug 2024 08:47:16 GMT
+Last-Modified: Sat, 31 Aug 2024 08:46:44 GMT
+Vary: Accept-Encoding
+Server: cloudflare
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tclers wiki">
+<meta name="author" content>
+<link rel="icon" href="/img/favicon.ico">
+<title>Tcl Gems</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/nikit.css" type="text/css">
+<link rel="stylesheet" href="/css/sh_style.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/css/theme.bootstrap_3.min.css" type="text/css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+</head>
+<body onload="sh_highlightDocument(); nikitUser();">
+<nav class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;Tcler&#39;s Wiki<span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a href="/welcome">Home</a></li>
+<li><a rel="nofollow" href="/recent">Changes</a></li>
+<li><a rel="nofollow" href="/_random">Random page</a></li>
+<li><a rel="nofollow" href="/_new">New page</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="dropdown" id="li_idPageEdit" style="display:none">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="name_idPageEdit">Page</span><span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a rel="nofollow" href="/_edit/Tcl+Gems?A=1">Comment</a></li>
+<li><a rel="nofollow" hidden="true" href="/_edit/Tcl+Gems">Edit</a></li>
+<li><a rel="nofollow" href="/_upload/Tcl+Gems">Upload</a></li>
+<li><a rel="nofollow" href="/ref/Tcl+Gems">References</a></li>
+<li><a rel="nofollow" href="/history/Tcl+Gems">History</a></li>
+<li><hr></li>
+<li><a href="#f47900787f068429a86969567309b86cff9324b4ed440c1b5a39ae77542c7a9b">auto update</a>
+</li>
+<li><a href="#b3fdf645e33448501f8cc172cf23f390bf77da4615889c3d019441e9c48a37bf">re-source</a>
+</li>
+<li><a href="#af64c82c36a704d727bd2b62ac0b8daa73b1e611775ad4ae243a6b404050b9e5">Reload a package</a>
+</li>
+<li><a href="#668f4c7ad7a4874ed3ad9ac0834ecf2fcc3c968b85e4c2408ae3a4bb5b172f87">editing procedures</a>
+</li>
+<li><a href="#f97b4bc94ed3757f09f263e7f95a07d3e641b54b993934ddfad5f6b7fafe5ab4">new language constructs</a>
+</li>
+<li><a href="#79772d5963abc6cf13322d80374ff4dac6328f0577d4520c0afea93bf39e9f65">Unknown possibilities</a>
+</li>
+<li><a href="#6e9c76ddd417f8cbae0191e880b3d69dbf1ca2933dddfa18680197f5aa2e6818">Tcl as OS glue</a>
+</li>
+<li><a href="#012f344926502d0c9039df24d3b336953e269aaa3fce922e2b68e366570e94f0">No-Op Prompts</a>
+</li>
+<li><a href="#08d6bcb9565684f0b6e82366eea37811e29d8a072c9440cc3f97a250259782da">Swapping variables</a>
+</li>
+<li><a href="#c71cedc6c720887d66ff73c9d5d3733403cef90174e0faacbbcf8c5e56a1c8d5">Constants</a>
+</li>
+<li><a href="#26b3952de46d31294ec9494d862177ecb2a07162edcec403d248c91b631fcf04">Whole or in pieces</a>
+</li>
+<li><a href="#79039595efafceedf19b6d27a415438e228a79a56fe9f94f33b86c12404f8b69">The canvas is a gem</a>
+</li>
+<li><a href="#7becebd1474f3e24dfcdca44e6c4e8e7c31fe7520d780bc38f417c50651f7c71">Optional arguments</a>
+</li>
+<li><a href="#8ae977122dffec92bed4b4c2e527b594b0e560a48611a8ce5121b715e0fb116b">Use profile with ?# command</a>
+</li>
+<li><a href="#300e34953f0b815794bb7fe93014eb6c404b33f71800d20912a53a08e22e73d5">LISPlike lists</a>
+</li>
+<li><a href="#f5fb7b57671da41cf47f509bb9e280d05f0c09fd4f33d0afa5bc5bc0200cf7d2">List Comparision</a>
+</li>
+<li><a href="#be13ffb9301d79ab5049c203715d0658769a8aed7fa36521d623c33e1e62bf82">lshift for command-line argument and procedure args parsing</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="li_idPageNoEdit" style="display:none">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="name_idPageNoEdit">Page</span><span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a rel="nofollow" href="/ref/Tcl+Gems">References</a></li>
+<li><a rel="nofollow" href="/history/Tcl+Gems">History</a></li>
+<li><hr></li>
+<li><a href="#f47900787f068429a86969567309b86cff9324b4ed440c1b5a39ae77542c7a9b">auto update</a>
+</li>
+<li><a href="#b3fdf645e33448501f8cc172cf23f390bf77da4615889c3d019441e9c48a37bf">re-source</a>
+</li>
+<li><a href="#af64c82c36a704d727bd2b62ac0b8daa73b1e611775ad4ae243a6b404050b9e5">Reload a package</a>
+</li>
+<li><a href="#668f4c7ad7a4874ed3ad9ac0834ecf2fcc3c968b85e4c2408ae3a4bb5b172f87">editing procedures</a>
+</li>
+<li><a href="#f97b4bc94ed3757f09f263e7f95a07d3e641b54b993934ddfad5f6b7fafe5ab4">new language constructs</a>
+</li>
+<li><a href="#79772d5963abc6cf13322d80374ff4dac6328f0577d4520c0afea93bf39e9f65">Unknown possibilities</a>
+</li>
+<li><a href="#6e9c76ddd417f8cbae0191e880b3d69dbf1ca2933dddfa18680197f5aa2e6818">Tcl as OS glue</a>
+</li>
+<li><a href="#012f344926502d0c9039df24d3b336953e269aaa3fce922e2b68e366570e94f0">No-Op Prompts</a>
+</li>
+<li><a href="#08d6bcb9565684f0b6e82366eea37811e29d8a072c9440cc3f97a250259782da">Swapping variables</a>
+</li>
+<li><a href="#c71cedc6c720887d66ff73c9d5d3733403cef90174e0faacbbcf8c5e56a1c8d5">Constants</a>
+</li>
+<li><a href="#26b3952de46d31294ec9494d862177ecb2a07162edcec403d248c91b631fcf04">Whole or in pieces</a>
+</li>
+<li><a href="#79039595efafceedf19b6d27a415438e228a79a56fe9f94f33b86c12404f8b69">The canvas is a gem</a>
+</li>
+<li><a href="#7becebd1474f3e24dfcdca44e6c4e8e7c31fe7520d780bc38f417c50651f7c71">Optional arguments</a>
+</li>
+<li><a href="#8ae977122dffec92bed4b4c2e527b594b0e560a48611a8ce5121b715e0fb116b">Use profile with ?# command</a>
+</li>
+<li><a href="#300e34953f0b815794bb7fe93014eb6c404b33f71800d20912a53a08e22e73d5">LISPlike lists</a>
+</li>
+<li><a href="#f5fb7b57671da41cf47f509bb9e280d05f0c09fd4f33d0afa5bc5bc0200cf7d2">List Comparision</a>
+</li>
+<li><a href="#be13ffb9301d79ab5049c203715d0658769a8aed7fa36521d623c33e1e62bf82">lshift for command-line argument and procedure args parsing</a>
+</li>
+</ul>
+</li>
+<li><a href="/page/Showcase">Showcase</a></li>
+<li><a href="/page/Tcl+Tutorial+Lesson+0">Tutorial</a></li>
+<li><a href="/page/Articles">Articles</a></li>
+<li><a href="/page/Tcl+Playground">Playground</a></li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;Help<span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a rel="nofollow" href="/page/Help">Page Markup</a></li>
+<li><a rel="nofollow" href="/page/How+do+Wiki+Categories+work">Wiki Categories</a></li>
+<li><a rel="nofollow" href="/page/Contents">Topics</a></li>
+<li><a rel="nofollow" target="_blank" href="https://chiselapp.com/user/stevel/repository/nikit/ticket">Report Problems</a></li>
+<li><a rel="nofollow" href="/privacy">Privacy</a></li>
+<li><a rel="nofollow" href="/license">License</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="name_SMenu">User</span><span class="caret"></span></a>
+<ul class="dropdown-menu" id="ul_SMenu">
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-right" method="post" action="/search" id="searchform">
+<input name="Q" type="text" class="form-control" placeholder="Search..." />
+<input type="hidden" name="sites" value="wiki.tcl-lang.org" />
+</form>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<h2>Tcl Gems</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<p class="mkup_p">Many long time Tcl users are positively passionate about the language because of some of the wonderful things you can do with Tcl and Tk. It isn't so much the portability, or the extensions, or the internationalization (unicode) support, or even the fact that Tcl programmers are better looking than most users of those other languages. The simplicity of the Tcl language itself, coupled with the highly dynamic and introspective nature of the interpreter make wonderful things possible.</p><p class="mkup_p">Unfortunately, all these little gems are not obvious to the first-time Tcl user. In fact, it sometimes takes quite a while to realize just how powerful Tcl can be in the &quot;right hands.&quot; There is nothing at all wrong with using Tcl and Tk as you would any other programming language, but if you learn and use a few little tricks like these, you will be a more productive person, and you might even have a little more fun while you're at it.</p><p class="mkup_p">This page lists a few of those &quot;Tcl Gems&quot; that have been developed over years and years and years and years of experienced Tcl use. Some of it is just pointers to other pages, and some is just a description of what you can do. Call this advocacy if you like, or just a collection of interesting reading, but I hope you enjoy these.</p><p class="mkup_p">You might also want to check out <a class="mkup_a mkup_known" href="/page/Tk+Gems">Tk Gems</a> if you're interested in some clever little tricks with different kinds of widgets.</p>
+<p class="mkup_p"><i class="mkup_i">RWT</i></p><p class="mkup_p">Besides gems, sometimes a good pebble would be o.k. Have you checked the <a class="mkup_a mkup_known" href="/page/Bag+of+algorithms">Bag of algorithms</a>, <a class="mkup_a mkup_known" href="/page/Tcl+examples">Tcl examples</a>, and <a class="mkup_a mkup_known" href="/page/Bag+of+Tk+algorithms">Bag of Tk algorithms</a>, just in case...? <i class="mkup_i">RS</i> </p><hr class="mkup_hr"><h2 id="f47900787f068429a86969567309b86cff9324b4ed440c1b5a39ae77542c7a9b" class="mkup_h1">auto update</h2><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/Richard+Suchenwirth">Richard Suchenwirth</a> shows how to set up a source file that automatically reloads itself into the interpreter every time you save it. Great development aid! Look for <i class="mkup_i">autoupdate</i> on <a class="mkup_a mkup_known" href="/page/Braintwisters">Braintwisters</a>. There are some other cute ideas on that page, including <i class="mkup_i">dynamic variables</i> and <i class="mkup_i">intgen</i> which returns a new unique integer each time called.</p><hr class="mkup_hr"><h2 id="b3fdf645e33448501f8cc172cf23f390bf77da4615889c3d019441e9c48a37bf" class="mkup_h1">re-source</h2><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/Jeffrey+Hobbs">Jeffrey Hobbs</a> posted on comp.lang.tcl that TkCon has a command <i class="mkup_i">tkcon resource</i> that he uses all the time in development to reread the script in (it is extremely handy to not have to exit and restart wish). It not only resources in the main interpreter, but reinitializes the primary slave environments. TkCon is a gem in itself. If you don't have it, get it.</p><hr class="mkup_hr"><h2 id="af64c82c36a704d727bd2b62ac0b8daa73b1e611775ad4ae243a6b404050b9e5" class="mkup_h1">Reload a package</h2><p class="mkup_p">See <a class="mkup_a mkup_known" href="/page/package+require">package require</a>.</p><hr class="mkup_hr"><h2 id="668f4c7ad7a4874ed3ad9ac0834ecf2fcc3c968b85e4c2408ae3a4bb5b172f87" class="mkup_h1">editing procedures</h2><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/Richard+Suchenwirth">Richard Suchenwirth</a> says: In my Tcl sandbox, I often don't even care to source a file at runtime, I typically rather</p><UL class="mkup_UL"><li class="mkup_li">display the full proc (name, args, defaults, body) into a text widget</li><li class="mkup_li">edit it (maybe just insert a [puts])</li><li class="mkup_li">eval the text widget's content, so the proc is redefined.</li></UL><p class="mkup_p">This way debugging doesn't leave traces in the original files, it's even faster than sourcing, and very intuitive. Oh, if it was a successful change, I'd also make it persistent in the source file - just ask auto_index where the proc came from ;-)</p><p class="mkup_p">and <a class="mkup_a mkup_known" href="/page/Harald+Kirsch">Harald Kirsch</a> says that one of his favorite procs is</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_0" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_0" class="sh_tcl sh_sourceCode"> proc learnSelection {} {
+   set s [selection get]
+   uplevel \#0 eval [list $s]
+ }</pre></div><p class="mkup_p"><i class="mkup_i">DKF: Whyever not the following instead?</i></p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_1" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_1" class="sh_tcl sh_sourceCode"> proc learnSelection {} {
+    uplevel \#0 [selection get]
+ }
+</pre></div><p class="mkup_p"><i class="mkup_i">Sometimes you just have to wonder about people...</i></p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_2" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_2" class="sh_tcl sh_sourceCode"> proc learnSelection {} {uplevel #0 [selection get]}</pre></div><p class="mkup_p">is also equivalent - hashes matter only at beginning of command - <i class="mkup_i">RS</i></p><p class="mkup_p"><i class="mkup_i">unless you're using a syntax-sensitive editor like emacs or Source Navigator, which is not quite clever enough ...</i></p><hr class="mkup_hr"><h2 id="f97b4bc94ed3757f09f263e7f95a07d3e641b54b993934ddfad5f6b7fafe5ab4" class="mkup_h1">new language constructs</h2><p class="mkup_p">Tcl is almost unique in that you can create new language constructs if you really need them. </p><UL class="mkup_UL"><li class="mkup_li">For an example of adding a new loop control feature, take a look at <a class="mkup_a mkup_known" href="/page/do%2E%2E%2Euntil+in+Tcl">do...until in Tcl</a>, which also doubles as a <a class="mkup_a mkup_known" href="/page/do%2E%2Ewhile">do..while</a> construct, if you happen to prefer that logic. </li><li class="mkup_li">A Java-style <a class="mkup_a mkup_known" href="/page/try+%2E%2E%2E+finally+%2E%2E%2E">try ... finally ...</a> has also been implemented.</li><li class="mkup_li"><a class="mkup_a mkup_known" href="/page/returneval">returneval</a> lets you return from a procedure and evaluate a script &quot;in its place&quot;.</li><li class="mkup_li">Very old (or very different) language constructs have also been considered, see <a class="mkup_a mkup_known" href="/page/Goto+in+Tcl">Goto in Tcl</a>, <a class="mkup_a mkup_known" href="/page/Basic+in+Tcl">Basic in Tcl</a>, <a class="mkup_a mkup_known" href="/page/RPN+in+Tcl">RPN in Tcl</a>, <a class="mkup_a mkup_known" href="/page/Playing+APL">Playing APL</a>.</li></UL><hr class="mkup_hr"><h2 id="79772d5963abc6cf13322d80374ff4dac6328f0577d4520c0afea93bf39e9f65" class="mkup_h1">Unknown possibilities</h2><p class="mkup_p">One of the few Tcl rules says that the first word of a command is the command name, and you can even legally break that, allowing for constructs like</p><pre class="mkup_pre"> i = $j+1 ==== set i [expr $j+1]
+ a ( 2 )  ==== lindex $a 2
+ {1 .. 5}   ==== {1 2 3 4 5}</pre><p class="mkup_p">without having procs <i class="mkup_i">i</i>, <i class="mkup_i">a</i>, <i class="mkup_i">1</i> - that would be the known way. See <a class="mkup_a mkup_known" href="/page/Radical+Language+Modification">Radical language modification</a>, where this is done with the <i class="mkup_i">unknown</i> command. <a class="mkup_a mkup_known" href="/page/Gadgets">Gadgets</a> o.t.o.h. do &quot;infix assignment&quot; more orthodoxly, with &quot;light-weight objects&quot;. <a class="mkup_a mkup_known" href="/page/Let+unknown+know">Let unknown know</a> if you want to build language modifications incrementally...</p><hr class="mkup_hr"><h2 id="6e9c76ddd417f8cbae0191e880b3d69dbf1ca2933dddfa18680197f5aa2e6818" class="mkup_h1">Tcl as OS glue</h2><p class="mkup_p">In the amazing ETLinux project [<a rel="nofollow" class="mkup_a" href="http://www.etlinux.org">L1 <span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>], an embedded system is developed that packs stripped-down Linux and Tcl (7.6, enhanced by mount, ifconfig, route, uuen/decode, dup, fork, kill, nice, ...) into a tiny 386SX/2 MB RAM/2 MB disk configuration. Tcl scripts do the <i class="mkup_i">init</i> (first process at all), mail server, web server, ...</p><hr class="mkup_hr"><h2 id="012f344926502d0c9039df24d3b336953e269aaa3fce922e2b68e366570e94f0" class="mkup_h1">No-Op Prompts</h2><p class="mkup_p"><i class="mkup_i">DKF:</i> When I'm running <i class="mkup_i">tclsh</i> or <i class="mkup_i">wish</i> interactively, I have my prompt set to the usual default of <i class="mkup_i">%</i> and have the following little procedure in my <i class="mkup_i">.tclshrc</i> (see &quot;<a class="mkup_a mkup_known" href="/page/The+RC+File">The RC File</a>&quot; for more on tclshrc)</p><pre class="mkup_pre"> proc % args {uplevel 1 $args}</pre><p class="mkup_p">This lets me copy and paste whole lines of Tcl with the mouse triple-clicks without having to worry about stripping leading prompt symbols, so making it faster for me to edit sessions interactively (particularly when you want to change part way through an existing procedure definition.) Power-user type facility? You betcha! Useful? Certainly so for me. I just wish I could do this with other interactive scripting systems...</p><p class="mkup_p"><i class="mkup_i">mikeH:</i> Note that you can also set your prompt to the semi-colon and then a space <i class="mkup_i">; </i> to achieve the same goal without doing extra evals etc.. this trick also works nicely for traditional sh style shells like bash</p><hr class="mkup_hr"><h2 id="08d6bcb9565684f0b6e82366eea37811e29d8a072c9440cc3f97a250259782da" class="mkup_h1">Swapping variables</h2><pre class="mkup_pre"> foreach {a b} [list $b $a] break ;# RS</pre><p class="mkup_p">or, maybe not a gem:</p><pre class="mkup_pre"> eval set a \{$b\} \; set b \{$a\} ;# Donald Arseneau</pre><p class="mkup_p"><i class="mkup_i">That <a class="mkup_a mkup_known" href="/page/eval">eval</a> only puts you in <a class="mkup_a mkup_known" href="/page/Tcl+Quoting">Quoting hell</a>, DA. For it to work, you need to do</i></p><pre class="mkup_pre"> eval [list set a $b] \; [list set b $a]</pre><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/DKF">DKF</a>: In 8.5 or with <a class="mkup_a mkup_known" href="/page/TclX">TclX</a>, with <a class="mkup_a mkup_known" href="/page/lassign">lassign</a>:</p><pre class="mkup_pre"> lassign [list $b $a] a b</pre><hr class="mkup_hr"><h2 id="c71cedc6c720887d66ff73c9d5d3733403cef90174e0faacbbcf8c5e56a1c8d5" class="mkup_h1">Constants</h2><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/constants">Constants</a> that shall be visible anywhere in the code must be global. Global variables need however be declared every time you use them, either with <i class="mkup_i">global Pi</i> once per proc or <i class="mkup_i">::Pi</i> once per use. Or, you can proc'ify them, since procs are global too:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_3" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_3" class="sh_tcl sh_sourceCode">  proc constant {name value} {proc $name {} [list return $value]}
+  constant Pi 3.1415926535
+  puts &quot;Pi = [Pi]&quot;</pre></div><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/wdb">wdb</a>: My approach:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_4" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_4" class="sh_tcl sh_sourceCode"> proc pi args {
+     expr 3.14159265359 $args
+ }
+ proc -pi args {
+     expr -3.14159265359 $args
+ }</pre></div><p class="mkup_p">If I say, [pi / 4], the function returns correctly 0.785398163398. </p><hr class="mkup_hr"><h2 id="26b3952de46d31294ec9494d862177ecb2a07162edcec403d248c91b631fcf04" class="mkup_h1">Whole or in pieces</h2><p class="mkup_p">A proc may be called with either a variable number of non-list arguments, which is convenient interactively, or a list of such arguments (which is good if you have the list anyway - no need for <i class="mkup_i">eval</i>), if you interpret the <i class="mkup_i">args</i> parameter as follows:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_5" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_5" class="sh_tcl sh_sourceCode"> proc lsum {args} {
+     if {[llength $args]==1} {set args [lindex $args 0]}
+     expr [join $args +]+0
+ } ;# RS
+ lsum 1 2 3
+ lsum $a_list_I_got_from_somewhere</pre></div><hr class="mkup_hr"><h2 id="79039595efafceedf19b6d27a415438e228a79a56fe9f94f33b86c12404f8b69" class="mkup_h1">The canvas is a gem</h2><p class="mkup_p"><b class="mkup_b"><a class="mkup_a mkup_known" href="/page/An+analog+clock+in+Tk">An analog clock in Tk</a></b> is a beautifully simple and simply beautiful piece of <a class="mkup_a mkup_known" href="/page/canvas">canvas</a> demo code.</p><hr class="mkup_hr"><h2 id="7becebd1474f3e24dfcdca44e6c4e8e7c31fe7520d780bc38f417c50651f7c71" class="mkup_h1">Optional arguments</h2><p class="mkup_p">HD: <a class="mkup_a mkup_known" href="/page/Laurent+Demailly">Laurent Demailly</a> has written the package <b class="mkup_b">opt</b>, which looks very powerful and comprehensive, but I find the following approach very easy to implement and adequate for my needs.</p><p class="mkup_p">Let's say I start with a proc that takes a long list of arguments, each having a default value:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_6" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_6" class="sh_tcl sh_sourceCode"> proc myProc {{arg1 dflt1} {arg2 dflt2} ... {arg9 dflt9}} {</pre></div><p class="mkup_p">This requires the user to know the order of arguments, and it's a pain if you only want to specify a non-default argument for arg9. It would be nicer if we call myProc in this case as:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_7" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_7" class="sh_tcl sh_sourceCode"> myProc -arg9 Fred</pre></div><p class="mkup_p">So let's rewrite myProc as:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_8" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_8" class="sh_tcl sh_sourceCode"> proc myProc {args} {
+
+     # Set up default values
+     array set the_args {
+         -arg1 dflt1
+         -arg2 dftl2
+         (etc ...)
+         -arg9 dflt9
+     }
+
+     # Now overwrite with user-supplied values
+     array set the_args $args
+
+     # And off we go...
+     puts &quot;The ninth argument is $the_args(-arg9)&quot;
+ }</pre></div><p class="mkup_p">In practice I usually have procs like this in a package:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_9" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_9" class="sh_tcl sh_sourceCode"> package provide XYZ 1.1
+
+ namespace eval XYZ {
+     variable Global
+     array set Global {etc ...}
+ }
+
+ proc XYZ::myProc {args} {
+      variable Global
+      array set the_args [array get Global -*]
+      array set the_args $args
+      # Carry on as before
+ }</pre></div><hr class="mkup_hr"><h2 id="8ae977122dffec92bed4b4c2e527b594b0e560a48611a8ce5121b715e0fb116b" class="mkup_h1">Use profile with ?# command</h2><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/Chang+LI">Chang LI</a> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="56353e3738313a1638333722213724337835393b">[email&#160;protected]</a></p><p class="mkup_p">I defined the ?# command as</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_10" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_10" class="sh_tcl sh_sourceCode"> proc ?# {args} {
+    if {[info exists ::tcl_platform(debug)]} {
+       uplevel 1 eval $args
+    }
+ } </pre></div><p class="mkup_p"><b class="mkup_b">US</b> Very useful, but one round of evaluation too much. Should be:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_11" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_11" class="sh_tcl sh_sourceCode"> proc ?# {args} {
+    if {[info exists :tcl_platform(debug)]} {
+       uplevel 1 $args
+    }
+ }</pre></div><p class="mkup_p">? means the alternative comment. It was quite useful to add profile code and you do not need to delete them when you distribute the code later, just set the tcl_platform(debug) as 0.</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_12" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_12" class="sh_tcl sh_sourceCode"> set tcl_platform(debug) 1
+
+ ?# package require Tclx
+ ?# profile -commands on
+
+   # your tcl code here
+
+ ?# profile off report
+ ?# parray report</pre></div><hr class="mkup_hr"><h2 id="300e34953f0b815794bb7fe93014eb6c404b33f71800d20912a53a08e22e73d5" class="mkup_h1">LISPlike lists</h2><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/Kevin+Kenny">Kevin Kenny</a> emulates mutable lists built of cons cells with procs in <a class="mkup_a mkup_known" href="/page/Tcl+and+LISP">Tcl and Lisp</a>.</p><hr class="mkup_hr"><h2 id="f5fb7b57671da41cf47f509bb9e280d05f0c09fd4f33d0afa5bc5bc0200cf7d2" class="mkup_h1">List Comparision</h2><p class="mkup_p">Ed Suominen (a TCL beginner as of Sept. 2001) contributes the following simple but fast proc for comparing lists. The result are two lists containing items exclusively in one argument list or the other.</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_13" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_13" class="sh_tcl sh_sourceCode"> # PROCEDURE: LISTCOMP
+ # CALLS:  none
+ # RETURNS:  lists of unique elements in each list
+ # USAGE:  list1, list2 are the lists to compare.
+ # outname1, outname2 are names of lists to use as the
+ # output of the procedure
+ # Copyright (c) 2001 Edwin A. Suominen, http://eepatents.com
+ # This procedure code is freeware under the terms of the no-endorsement
+ # version of the BSD License, incorporated herein by reference, with 
+ # &lt;OWNER&gt; = Edwin A. Suominen, &lt;ORGANIZATION&gt; = author, &lt;YEAR&gt; = 2001.
+ # Inventors of any inventions that employ or are based on this 
+ # procedure retain their patent rights to such inventions.
+
+ proc listcomp { list1 list2 out1Name out2Name } {
+
+   ### Define empty lists in case one has no unique elements
+   set out1 {}; set out2 {}
+
+   ### Test each element of each list against all elements of other list
+ 
+   foreach {i} $list1 {j} $list2 {
+
+     # First, test for unique element in list1
+     if { [ lsearch  -exact $list2 $i ] &lt; 0 } { lappend out1 $i }
+     # Then test for unique element in list2
+     if { [ lsearch  -exact $list1 $j ] &lt; 0 } { lappend out2 $j }
+   }
+
+   ### Put results in specified lists
+   upvar #0 $out1Name x 
+   set x $out1
+   upvar #0 $out2Name x 
+   set x $out2
+
+   ### END LISTCOMP
+   return
+ }</pre></div><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/Setok">Setok</a> Wouldn't it be better to sort the list first (Ologn) or build an array with the elements as keys? As far as I can tell the above can lead to On^2 time.</p><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/Michael+Schlenker">Michael Schlenker</a> You're absolutly right. See <a class="mkup_a mkup_known" href="/page/Some+ways+to+do+set+comparision">Some ways to do set comparision</a> for some much faster alternatives (more than a magnitude faster). So perhaps this proc should be moved from the Gems section, especially because it returns incorrect results!</p>
+<hr class="mkup_hr"><h2 id="be13ffb9301d79ab5049c203715d0658769a8aed7fa36521d623c33e1e62bf82" class="mkup_h1">lshift for command-line argument and procedure args parsing</h2><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_14" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_14" class="sh_tcl sh_sourceCode"> #==========================================================
+ # NAME    : lshift
+ # PURPOSE : shift list and return first element
+ # AUTHOR  : Richard Booth
+ #           http://www.lehigh.edu/~rvb2
+ #           <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="64161206562408010c0d030c4a010011">[email&#160;protected]</a> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aad8dcc8c5c5dec2eacbcdcfd8cf84c9c5c7">[email&#160;protected]</a>
+ # ---------------------------------------------------------
+ # ARGUMENTS :
+ #   % inputlist
+ #       List to be shifted.
+ # RESULTS :
+ #   * Sets inputlist to 2nd to last elements of original inputlist
+ #   * Returns first element in inputlist
+ # NOTES :
+ #   * useful for command-line arguments and procedure args processing
+ # EXAMPLE-CALL :
+ #
+ #  while {[llength $argv] &gt; 0} {
+ #    set arg [lshift argv]
+ #    switch -- $arg {
+ #      -lib  {set lib [lshift argv]}
+ #      -show {set show 1}
+ #      default {lappend tests $arg}
+ #    }
+ #  }
+ #
+ #==========================================================
+ proc lshift {inputlist} {
+   upvar $inputlist argv
+   set arg  [lindex $argv 0]
+  #set argv [lrange $argv 1 end] ;# below is much faster - lreplace can make use of unshared Tcl_Obj to avoid alloc'ing the result
+   set argv [lreplace $argv[set argv {}] 0 0]
+   return $arg
+ }</pre></div><p class="mkup_p">See also <a class="mkup_a mkup_known" href="/page/Stacks+and+queues">Stacks and queues</a>. <i class="mkup_i">JCW - Here's a non-recursive directory walker based on it:</i></p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_15" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_15" class="sh_tcl sh_sourceCode"> proc walkdirs {args} {
+   set files {}
+   while {[set dir [lshift args]] != &quot;&quot;} {
+     foreach x [glob -nocomplain [file join $dir *]] {
+       lappend [lindex {files args} [file isdir $x]] $x
+     }
+   }
+   return $files
+ }</pre></div><hr class="mkup_hr"><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/RS">RS</a> considers this code by <a class="mkup_a mkup_known" href="/page/Lars+H">Lars H</a> from <a class="mkup_a mkup_known" href="/page/Googol+magnitude">Googol magnitude</a> a true gem - it turns positive decimal integers (of any length) to bit strings:</p><div class="sh_sourceCode"><button class="copybtn btn pull-right" data-clipboard-target="#mkup_code_16" title="Click to copy code snippet to clipboard"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button><pre id="mkup_code_16" class="sh_tcl sh_sourceCode"> proc dec2bin {num} {
+    while {[regexp {[0-9]} $num]} {
+       set num\
+         [string map {o0 0 o1 1 o2 2 o3 3 o4 4 i0 5 i1 6 i2 7 i3 8 i4 9 0 &quot;&quot;}\
+           [string map {0 0o 1 0i 2 1o 3 1i 4 2o 5 2i 6 3o 7 3i 8 4o 9 4i} $num]]
+    }
+    string map {i 1 o 0} $num
+ }</pre></div><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/APN">APN</a> Agreed. In Tcl 8.6, the %lb <a class="mkup_a mkup_known" href="/page/format">format</a> specifier provides the same function.</p><hr class="mkup_hr"><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/RLH">RLH</a> - <i class="mkup_i">or even the fact that Tcl programmers are better looking than most users of those other languages</i> - Maybe I need to find another language then! ;-)</p><hr><div class="mkup_centered"><table class="mkup_categories"><tr><td class="mkup_td"><a class="mkup_a" href="/page/Category+Advocacy">Category Advocacy</a></td><td class="mkup_td"><a class="mkup_a" href="/page/Category+Discussion">Category Discussion</a></td></tr></table></div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="Footer">Updated 2017-07-31 08:12:36</div>
+</div>
+</div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/js/jquery.tablesorter.combined.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/nikit.js"></script>
+<script type="text/javascript" src="/scripts/sh_main.js"></script>
+<script type="text/javascript" src="/scripts/sh_tcl.js"></script>
+<script type="text/javascript" src="/scripts/sh_c.js"></script>
+<script type="text/javascript" src="/scripts/sh_cpp.js"></script>
+
+<script src="https://hcaptcha.com/1/api.js"></script>
+<script>var clipboard = new ClipboardJS('.copybtn', {
+  text: function(trigger) {
+    return document.querySelector(trigger.getAttribute('data-clipboard-target')).textContent + '\n';
+  }
+});
+sort_tables();
+</script>
+</body>
+</html>

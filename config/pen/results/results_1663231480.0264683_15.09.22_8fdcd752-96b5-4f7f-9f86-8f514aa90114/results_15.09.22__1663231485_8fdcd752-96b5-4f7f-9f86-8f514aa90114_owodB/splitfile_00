@@ -1,0 +1,9 @@
+.d/apache2 restart
+EOD
+
+cat draft.term <<EOD
+/etc/apache2/mods-available/mpm_event.conf
+EOD
+
+cat draft.term <<EOD
+/

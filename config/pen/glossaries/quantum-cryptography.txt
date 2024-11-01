@@ -1,0 +1,15 @@
+Kerckhoffs's principle
+Kerckhoffs's desideratum
+Kerckhoffs's assumption
+Kerckhoffs's axiom
+Kerckhoffs's doctrine
+Kerckhoffs's law
+    [...of cryptography]
+
+    Stated by Netherlands born cryptographer
+    Auguste Kerckhoffs in the 19th century: A
+    cryptosystem should be secure even if
+    everything about the system, except the
+    key, is public knowledge.
+
+    "Is it Kerckhoffs's principle compliant?"

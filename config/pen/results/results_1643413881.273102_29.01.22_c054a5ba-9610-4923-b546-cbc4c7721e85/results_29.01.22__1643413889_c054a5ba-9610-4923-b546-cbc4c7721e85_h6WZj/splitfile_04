@@ -1,0 +1,10 @@
+
+      (if (pen-complete-line-p preceding-text)
+          (pen-complete-line preceding-text tv)
+        (progn
+          (if (pen-complete-desirable-line-p preceding-text)
+              (pen-complete-desirable-line preceding-text tv)
+            (progn
+              ;; Disabled pen-mode temporarily
+              (let* ((pen nil)
+                     (fun (key-binding

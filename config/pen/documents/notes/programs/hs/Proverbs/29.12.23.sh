@@ -1,0 +1,5 @@
+cd /;  "Proverbs" "20:27" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Proverbs" "20:27" "#" "<==" "bash"
+cd /;  "Proverbs" "20:27" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Proverbs" "21:31" "#" "<==" "bash"
+cd //;  "Proverbs" "21:31" "#" "<==" "zsh"

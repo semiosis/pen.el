@@ -1,0 +1,18 @@
+utterance
+    [#spoken language analysis]
+
+    The smallest unit of speech.
+    
+    It is a continuous piece of speech
+    beginning and ending with a clear pause.
+    
+    In the case of oral languages, it is
+    generally, but not always, bounded by
+    silence.
+    
+    Utterances do not exist in written
+    language, however, only their
+    representations do.
+    
+    They can be represented and delineated in
+    written language in many ways.

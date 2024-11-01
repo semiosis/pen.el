@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: case
+# group: control structures
+# key: case
+# --
+case "$1" in
+f) LISTFILE="\$OPTARG" ;;
+h|*) printinfo && exit ;;
+esac

@@ -1,0 +1,4 @@
+[[String]] -> IO ()
+tabularise rows = mapM_ print rows
+
+EOD

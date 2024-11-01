@@ -1,0 +1,10 @@
+- GADT
+- Type Families (covers Arrays and Holes)
+- Dependent Pattern Matching
+- Extensible (covers Data Parallelism)
+- Type Inference (covers overloading)
+- Generics
+- Quasi Variant Types
+- Type Providers
+- Phantom Types (covers Type Classes)
+- Open Type Functions set. It includes all sections of Data Kinds, Type Families, Overloading and Kind Equalities from "Advanced Type Systems

@@ -1,0 +1,11 @@
+
+
+main = do
+
+-- Creating MP3 player
+
+helpText <- B. getContents
+
+=<< putStrLn " Which sound do you want to play? "
+
+$ MP3. readFile " /home

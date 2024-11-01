@@ -1,0 +1,28 @@
+(You can buy one at the Apple store!)"
+        
+        if defaults.object(forKey: "name") != nil {
+            nameLabel.text = defaults.object(forKey: "name") as? String
+        }
+        
+        if defaults.object(forKey: "picture") != nil {
+            let imageData = defaults.object(forKey: "picture") as? Data
+            pictureImageView.image = UIImage(data: imageData!)
+            pictureImageView.layer.borderWidth = 2
+            pictureImageView.layer.borderColor = UIColor.white.cgColor
+            pictureImageView.layer.cornerRadius = pictureImageView.frame.size.width/2
+            pictureImageView.clipsToBounds = true
+        }
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    @IBAction func checkboxButtonTapped(_ sender: UIButton) {
+        isTaskCompleted = !isTaskCompleted
+        if isTaskCompleted {
+            sender.setImage(UIImage(named: "ic_check_box"), for: .normal)
+        } else {
+            sender.setImage(UIImage(named: "ic_check_box_outline_blank"), for: .normal)
+

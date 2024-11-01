@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rule 3 elements
+# group: vimsnippet
+# key: vs-r3
+# --
+${1:broken} :- ${2:umbrella}, ${3:umbrella}, ${4:umbrella}.

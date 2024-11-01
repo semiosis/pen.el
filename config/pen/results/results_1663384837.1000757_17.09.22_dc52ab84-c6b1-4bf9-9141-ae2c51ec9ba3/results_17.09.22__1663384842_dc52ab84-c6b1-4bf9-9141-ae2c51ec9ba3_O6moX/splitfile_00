@@ -1,0 +1,8 @@
+
+I found a strawbery
+And I brought it home to you.
+
+EOD
+
+cat draft.org <<EOD
+#+LATEX_HEADER: \usepackage[margin=0.5in]

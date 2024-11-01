@@ -1,0 +1,9 @@
+
+
+  -- Parse the CSV into a list of records
+  let records = parseCSV lines
+
+  -- Tabularise the records
+  let tabularised = tabularise records
+
+  -- Print the tabularised data to

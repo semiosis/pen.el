@@ -1,0 +1,1 @@
+["PEN_MODEL: DummyModel", "prompt: Once", "n: 1", "top_k: 1", "top_p: 1", "log_probs: 10", "stop_sequences: ['###', '<delim>', '<delim>']", "maximum_tokens: 57", "temperature: 0.8", "presence_penalty: 0", "frequency_penalty: 0"]

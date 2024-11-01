@@ -1,0 +1,5 @@
+/root
+bash$ ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+bash$ cd /
+bash$ pwd

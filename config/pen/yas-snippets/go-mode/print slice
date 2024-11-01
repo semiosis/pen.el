@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: print slice
+# key: psl
+# --
+fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)

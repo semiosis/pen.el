@@ -1,0 +1,12 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt~  harry.txt.bak
+» cd ..
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt~  harry.txt.bak
+» cd ..
+» ls
+ clipboard.txt   core 

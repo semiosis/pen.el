@@ -1,0 +1,1 @@
+ aws ec2 describe-spot-price-history --instance-types m3.medium --start-time 2018-01-01T00:00:00 --end-time 2018-01-02T00:00:00 --product-descriptions Linux/UNIX

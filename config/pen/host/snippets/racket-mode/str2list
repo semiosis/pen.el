@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: str2list
+# group: 
+# key: str2list
+# --
+(require racket/port)
+(port->lines (open-input-string "line 1\nline 2\n  line 3\nline 4"))

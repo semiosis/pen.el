@@ -1,0 +1,19 @@
+ https://www.nasa.gov/jpl/black-holes-and-white-holes/
+
+Time Taken: Feb 12, 2018.
+
+Available: https://www.nasa.gov/image-feature/white-hole-images
+"""
+# Space Images - Featured Image
+# 
+# * Visit the url for JPL Featured Space Image [here](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars).
+# 
+# * Use splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called `featured_image_url`.
+# 
+# * Make sure to find the image url to the full size `.jpg` image.
+# 
+# * Make sure to save a complete url string for this image.
+# 
+# ```python
+# Example:
+#

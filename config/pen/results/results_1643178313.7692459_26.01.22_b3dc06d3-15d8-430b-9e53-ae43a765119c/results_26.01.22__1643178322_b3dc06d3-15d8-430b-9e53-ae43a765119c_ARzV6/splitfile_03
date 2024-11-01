@@ -1,0 +1,23 @@
+Original language: English
+English translation:
+Perhaps I should change the hostname for the docker container. Good idea
+"""
+
+import os
+import sys
+import re
+import argparse
+import subprocess
+
+
+def get_parser():
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('--dir', type=str, default='.',
+                        help='directory to search for files')
+    parser.add_argument('--file-extension', type=str, default='txt',
+                        help='file extension to search for')
+    parser.add_argument('--original-language', type=str, default='es',
+                        help='original language')
+    parser.add_argument('--target-language', type=str, default='en',
+                        help='target language')
+    parser.add_argument('--original-encoding', type=str

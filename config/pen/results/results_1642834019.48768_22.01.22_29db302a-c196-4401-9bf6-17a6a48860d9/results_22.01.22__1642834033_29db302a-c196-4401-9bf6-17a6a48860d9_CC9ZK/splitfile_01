@@ -1,0 +1,18 @@
+- 1. Joseph Whitaker (1907-1995)
+- 2. Jack Kilby (1931-2005)
+- 3. Robert Noyce (1928-1990)
+- 4. Eli Manne (1908-1964)
+"""
+
+
+class TestExperiment(unittest.TestCase):
+
+    def test_experiment(self):
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+
+            data_path = os.path.join(tmpdir, 'data')
+            model_path = os.path.join(tmpdir, 'model')
+
+            with open(data_path, 'w') as f:
+                print(EXPERIMENT_DATA

@@ -1,0 +1,28 @@
+full-name: ~
+bio: "A tomato is nothing by itself. It needs a bear.
+
+The tomato bear lives in a world of fake plants, butt wasn't always that way.
+Once upon a time, the plants were alive and full of life -- and real.
+
+The tomato bear is the bearer of a real plant.
+
+Real plants can philosophize.
+
+Bears are smaller than tomatoes.
+The tomato bear comes from a small village of bears.
+
+There are different types of tomato bears.
+- Cherry tomato
+- Big tomato"
+
+defs:
+- task: "Write a bio about <bio>"
+
+- biography: |-
+    Biography:
+    <(pf-instruct-an-ai-to-write-something/1 task)>
+
+- full-name: "<(pf-christen-something-with-a-name/1 biography)>"
+- description: "<biography>"
+
+description: ~

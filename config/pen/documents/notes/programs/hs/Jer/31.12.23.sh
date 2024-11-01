@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Jer" "6:10" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Jer" "13:10" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Jer" "4:22" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Jer" "17:23" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Jer" "9:6" "#" "<==" "bash"

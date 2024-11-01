@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ga" "github/semantic" "docker-compose.yml" "#" "<==" "ga"
+cd /root/.pen/documents/notes;  "ga" "github/semantic" "docker-compose.yml" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "ga" "github/semantic" "docker-compose.yml" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "ga" "github/semantic" "docker-compose.yml" "#" "<==" "ga"
+cd /root/.pen/documents/notes;  "ga" "github/semantic" "docker-compose.yml" "#" "<==" "ga"

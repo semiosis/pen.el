@@ -1,0 +1,1 @@
+ curl -X POST -d '{"amount": 100}' -H "Authorization: Bearer $TOKEN" https://api.coinbase.com/v2/prices/BTC-USD/buy

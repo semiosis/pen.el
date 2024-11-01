@@ -1,0 +1,33 @@
+task: "generate text given an image and prompt text"
+doc: "generate text given an image and prompt text"
+tags: vision art
+notes:
+- "I'm using this to test AlephAlpha's MM model"
+prompt-version: 1
+payloads:
+# This could be a raw string to a file or URL, or an elisp function
+# - image: "(read-file-name \"image 2 of 2: \")"
+- image: "(read-file-name \"image: \")"
+prompt: |+
+  <text prompt>
+force-engine: "AlephAlpha EUTranMM"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "text prompt"
+examples:
+- "In this surreal artwork"
+preprocessors:
+- pen-str unwhitespacify
+info: on
+# filter: on
+completion: off
+insertion: off
+# postprocessor: "pf-correct-grammar/1"
+# postprocessor: "pf-correct-english-spelling-and-grammar/1"
+prettifier: pen-pretty-paragraph
+postprocessor: pen-str clean-alephalpha

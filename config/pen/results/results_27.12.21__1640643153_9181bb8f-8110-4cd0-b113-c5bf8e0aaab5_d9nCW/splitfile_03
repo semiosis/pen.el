@@ -1,0 +1,74 @@
+CNC-MACHINE-CLI(1)                     User Commands                    CNC-MACHINE-CLI(1)
+
+NAME
+       cnc-machine-cli - Command line interface for CNC-Machine
+
+SYNOPSIS
+       cnc-machine-cli [OPTION]... [COMMAND]
+
+DESCRIPTION
+       CNC-Machine is a command line interface for CNC-Machine.
+
+COMMANDS
+       help, h
+              Prints this manual page.
+
+       version, v
+              Prints the version number of CNC-Machine.
+
+       start, s
+              Starts the CNC-Machine.
+
+       stop, x
+              Stops the CNC-Machine.
+
+       restart, r
+              Restarts the CNC-Machine.
+
+       status, t
+              Prints the status of the CNC-Machine.
+
+       list, l
+              Lists all available commands.
+
+       config, c
+              Prints the configuration of the CNC-Machine.
+
+       set, s
+              Sets a configuration value.
+
+       get, g
+              Gets a configuration value.
+
+       log, o
+              Prints the log of the CNC-Machine.
+
+       clear, cl
+              Clears the log of the CNC-Machine.
+
+OPTIONS
+       -h, --help
+              Prints this manual page.
+
+       -v, --version
+              Prints the version number of CNC-Machine.
+
+       -c, --config
+              Prints the configuration of the CNC-Machine.
+
+       -s, --set
+              Sets a configuration value.
+
+       -g, --get
+              Gets a configuration value.
+
+       -l, --list
+              Lists all available commands.
+
+       -o, --log
+              Prints the log of the CNC-Machine.
+
+       -cl, --clear
+              Clears the log of the CNC-Machine.
+
+      

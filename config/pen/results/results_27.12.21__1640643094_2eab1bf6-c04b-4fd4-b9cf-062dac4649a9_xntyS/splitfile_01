@@ -1,0 +1,13 @@
+CRC-MACHINE-CLI(1)                     User Commands                    CRC-MACHINE-CLI(1)
+
+NAME
+       crc-machine-cli - Command line interface to the CRC-Machine
+
+SYNOPSIS
+       crc-machine-cli [OPTION]... [FILE]...
+
+DESCRIPTION
+       This is a simple command line interface to the CRC-Machine.
+       It is intended to be used in conjunction with an editor.
+
+       If a file is not specified, the program reads from

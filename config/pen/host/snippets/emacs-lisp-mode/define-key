@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: define-key
+# group: define
+# key: dk
+# --
+(define-key ${1:my-mode-map} (kbd "${2:key}") $0)

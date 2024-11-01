@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/src;  "colvs" "#" "<==" "pen-pa"
+cd /root/.emacs.d/host/pen.el/src;  "colvs" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "#" "<==" "pen-pa"
+cd /root/notes;  "colvs" "#" "<==" "pen-pa"
+cd /volumes/home/shane/notes/ws/bible-studies;  "colvs" "#" "<==" "pen-pa"

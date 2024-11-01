@@ -1,0 +1,1 @@
+ ${package1.name} wanted '${package3.name}' for its `thing` method, but ${package2.name} had the answer. ${package2.name} also did many other things as well."),

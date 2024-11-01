@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: json
+# key: json
+# --
+import json
+import requests
+from shanepy import *
+
+response = requests.get('https://httpbin.org/ip')
+tv(json.dumps(response.json()))

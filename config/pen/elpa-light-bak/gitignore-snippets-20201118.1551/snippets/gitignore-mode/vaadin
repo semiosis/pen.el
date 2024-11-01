@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Vaadin
+# contributor: Toptal & contributors
+# key: vaadin
+# --
+
+### Vaadin ###
+
+.vaadin-designer
+.designer

@@ -1,0 +1,9 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: populate Library
+  hosts: library
+  remote_user: root
+  gather_facts: no
+  tasks:
+    - name: populate Library
+      shell: "rsync -avz --delete /mnt/library/ /var/www/html/library"

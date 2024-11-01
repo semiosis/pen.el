@@ -1,0 +1,45 @@
+
+
+-- I want to create an imaginary list
+data Ilist a = Nil | Cons a (Ilist a) deriving Show
+
+append :: Ilist a -> Ilist a -> Ilist a
+append Nil ys = ys
+append (Cons x xs) ys = Cons x (append xs ys)
+
+instance Functor Ilist where
+    -- fmap :: (a -> b) -> Ilist a -> Ilist b
+    fmap _ Nil = Nil
+    fmap f (Cons x xs) = Cons (f x) (fmap f xs)
+
+instance Applicative Ilist where
+    -- pure :: a -> Ilist a
+    pure x = Cons x Nil
+
+    -- (<*>) :: Ilist (a -> b) -> Ilist a -> Ilist b
+    -- (<*>) = ap
+    ap = liftA2 append
+
+-- I want to create an imaginary list
+data Ilist a = Nil | Cons a (Ilist a) deriving Show
+
+append :: Ilist a -> Ilist a -> Ilist a
+append Nil ys = ys
+append (Cons x xs) ys = Cons x (append xs ys)
+
+instance Functor Ilist where
+    -- fmap :: (a -> b) -> Ilist a -> Ilist b
+    fmap _ Nil = Nil
+    fmap f (Cons x xs) = Cons (f x) (fmap f xs)
+
+instance Applicative Ilist where
+    -- pure :: a -> Ilist a
+    pure x = Cons x Nil
+
+    -- (<*>) :: Ilist (a -> b) -> Ilist a -> Ilist b
+    -- (<*>) = ap
+    ap = liftA2 append
+
+    -- liftA2 :: (a -> b -> c) -> Ilist a -> Ilist b -> Ilist c
+    liftA2 f Nil ys = Nil
+    liftA2 f (Cons x xs) (Cons y

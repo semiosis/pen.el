@@ -1,0 +1,235 @@
+TeamCity
+    [JetBrains]
+
+    Let TeamCity do the routine work. Get
+    powerful CI out of the box. Fully automate
+    DevOps pipelines of any complexity and
+    scale, without writing any code. Docker,
+    Maven, NuGet. C++, Python, PHP, Node.JS.
+    Cloud Integrations.
+
+Shift Left
+    [#testing]
+
+    Typical:
+        System Requirements
+        -> Software Requirements
+        -> Analysis
+        -> Program Design
+        -> Coding
+        -> Testing
+        -> Operations
+
+    To 'shift left' the testing means to put
+    testing earlier in the SDLC.
+
+A/B testing
+    A randomized experiment with two variants,
+    A and B.
+
+    It includes application of statistical
+    hypothesis testing or "two-sample
+    hypothesis testing" as used in the field
+    of statistics.
+
+CI/CD
+    The onramp to everything good in modern
+    software development, but argues that some
+    of the associated disciplines of the early
+    pioneers haven’t got the attention they
+    should.
+
+    With sophisticated service routing, it
+    becomes easier to adopt
+    experimentation-first approaches like
+    canarying, blue/green deployments, and A/B
+    testing which slow the 
+
+ripple effect of a new service rollout.         
+
+experimentation-first approaches
+    - canarying,
+    - blue/green deployments, and
+    - A/B testing
+
+Progressive delivery
+    After you have:
+    - shifted testing left,
+    - automated load-testing and deployment,
+    - committed to DevOps and CI/CD
+
+    You then start with progressive delivery.
+
+    Routes traffic to a specific subset of
+    users before being deployed more broadly,
+    so that testing in production doesn’t have
+    to be a massive risk.
+
+    Spreads until it reaches the entire user
+    base without — or hopefully without — a
+    degradation of user experience.
+
+    Continuous delivery with fine-grained
+    control over the blast radius.
+
+    Building blocks:
+    - User segmentation
+    - Traffic management
+    - Observability
+    - Automation
+
+    The next step after continuous delivery,
+    “where new versions are deployed to a
+    subset of users and are evaluated in terms
+    of correctness and performance before
+    rolling them to the totality of users” or
+    rolling it back when it fails to meet key
+    metrics.
+
+    Makes it easier to adopt
+    experimentation-first approaches which
+    slow the ripple effect of a new service
+    rollout.         
+
+release
+    The distribution of the final version of
+    an application.
+    
+    A software release may be either public or
+    private and generally constitutes the
+    initial generation of a new or upgraded
+    application.
+    
+    A release is preceded by the distribution
+    of alpha and then beta versions of the
+    software.
+
+software release life cycle
+    The sum of the stages of development and
+    maturity for a piece of computer software.
+    
+    Cycles range from its initial development
+    to its eventual release, and include
+    updated versions of the released version
+    to help improve software or fix software
+    bugs still present in the software.
+
+Release management
+    The process of managing, planning,
+    scheduling and controlling a software
+    build through different stages and
+    environments; including testing and
+    deploying software releases.
+
+Artifactory
+    Universal Artifact Repository Manager
+
+    Features:
+    - Security and vulnerability analysis 
+    - Content signing and validation 
+
+CR
+Crash Reporting
+Exception Monitoring
+    [tech stack category]
+
+sentry.io
+    [#CR]
+
+    Self-hosted and cloud-based error
+    monitoring that helps all software teams
+    discover, triage, and prioritize errors in
+    real-time.
+
+    Supported by GitLab.
+
+    https://sentry.io/welcome/
+
+codecov.io
+    http://codecov.io/
+
+    Improve your code review workflow and
+    quality.
+    
+    Codecov provides highly integrated tools
+    to group, merge, archive, and compare
+    coverage reports.
+    
+    Free for open source.
+    
+    Plans starting at $10/user per month.
+
+OpenShift
+    A family of containerization software
+    developed by Red Hat.
+    
+    Its flagship product is the OpenShift
+    Container Platform—an on-premises platform
+    as a service built around Docker
+    containers orchestrated and managed by k8s
+    on a foundation of Red Hat Enterprise
+    Linux.
+
+big bang integration
+    The phenomenon where components are only
+    tested together near the end of the
+    development process.
+
+codeship
+    Runs the tests and deploys.
+
+    Replaces circle CI.
+
+travis vs circleci
+    CircleCI
+    - Language-Inclusive Support
+    - Custom Environments
+    - Flexible Resource Allocation
+
+    Travis CI
+    - Easy Setup
+      Getting started with Travis CI is as
+      easy as enabling a project, adding basic
+      build instructions to your project and
+      committing code.
+
+    - Supports Your Platform
+      Lots of databases and services are
+      pre-installed and can simply be enabled
+      in your build configuration, we'll
+      launch them for you automatically.
+      MySQL, PostgreSQL, ElasticSearch, Redis,
+      Riak, RabbitMQ, Memcached are available
+      by default.
+
+    - Deploy With Confidence
+      Deploying to production after a
+      successful build is as easy as setting
+      up a bit of configuration, and we'll
+      deploy your code to Heroku, Engine Yard
+      Cloud, Nodejitsu, cloudControl,
+      OpenShift, and CloudFoundry.
+
+CircleCI
+    Continuous integration and delivery
+    platform.
+
+Travis CI
+    [CI service]
+    
+    Used for automated testing of an Emacs
+    Lisp library hosted on GitHub.
+
+    Travis CI - Test and Deploy Your Code with Confidence
+
+    Travis CI enables your team to test and
+    ship your apps with confidence. Easily
+    sync your projects with Travis CI and
+    you'll be testing your code in minutes.
+
+appveyor
+    CI/CD service for Windows, Linux and macOS
+    Build, test, deploy your apps faster, on
+    any platform.
+
+    https://www.appveyor.com

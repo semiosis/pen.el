@@ -1,0 +1,75 @@
+* Engines
+This is a free and open-source (FOSS) curation of LMs (language models) and APIs, their
+capabilities and relationships, and logic to select the appropriate engine for
+a prompt based on that prompt's requirements.
+
+| License | Discord server invite         |
+|---------+-------------------------------|
+| =GPL-3= | https://discord.gg/JwKGbAdNHR |
+
+See the =prompts= repo for detailed documentation.
+
+http://github.com/semiosis/prompts
+
+Specifying an engine in a =.prompt= means that
+you don't have to specify the parameters
+contained by that engine
+
+Typically, the engine specifies the =model=
+and the =lm-command=.
+
+An engine may also load another engine as a
+template. This is done by supplying the
+=include= key with the title of another
+=engine=.
+
+* Terminology
++ foundation :: This means that a model is generalised and capable of many tasks via prompting.
+
+[[./glossary.txt]]
+
++ downstream-engines: Usually means finetuned (extra training).
+
+** layers vs specialties vs requirements
+
+* Philosophy
+- When defining attributes of engines it's
+  important to not value preciseness over
+  pragmatism. For example, I have specified
+  "foundation, nl, code" for codex as if it had
+  an independent training step for NL on top of the
+  foundation model, which it did not.
+
+* Resources
+** Foundation models
+*** A cautionary note
+- https://arxiv.org/abs/2108.07258
+- https://crfm.stanford.edu/2021/10/18/reflections.html
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Foundation models are neither “foundational”
+  nor the foundations of AI.
+  
+  We deliberately chose “foundation” rather than
+  “foundational”, because we found that
+  “foundational” implied that these models
+  provide fundamental principles in a way that
+  “foundation” does not.
+  
+  For example, we can readily say “shaky
+  foundations”, whereas “shaky and foundational”
+  is unidiomatic.
+  
+  While many people currently find “foundational
+  model” more natural to say, “foundation model”
+  is grammatically a well- formed noun compound
+  (incidentally parallel to “LM”).
+  
+  Further, “foundation” describes the (role of)
+  model and not AI; we neither claim nor believe
+  that foundation models alone are the
+  foundation of AI, but instead note they are
+  “only one component (though an increasingly
+  important component) of an AI system” (see
+  Section 1.2; pg. 7-9).
+#+END_SRC

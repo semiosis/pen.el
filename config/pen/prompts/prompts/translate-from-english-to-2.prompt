@@ -1,0 +1,41 @@
+title: Translate from English to
+tags: translation prose nlp-task
+prompt-version: 2
+doc: This prompt translates English text to any world langauge
+issues:
+- I think the unicode characters may be multibyte causing issues with completion
+prompt: |
+  <delim>
+  # English: Hello
+  # Russian: Zdravstvuyte
+  # Italian: Salve
+  # Japanese: Konnichiwa
+  # German: Guten Tag
+  # French: Bonjour
+  # Spanish: Hola
+  <delim>
+  # English: Happy birthday!
+  # French: Bon anniversaire !
+  # German: Alles Gute zum Geburtstag!
+  # Italian: Buon compleanno!
+  # Indonesian: Selamat ulang tahun!
+  <delim>
+  # English: <2>
+  # <1>:
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "#"
+vars:
+- language
+- phrase
+# ascification of the prompt is not ideal
+prompt-filter: pen-c ascify
+examples:
+- French
+- Goodnight
+var-defaults:
+- "(read-string \"language: \")"
+- "(pen-selected-text)"

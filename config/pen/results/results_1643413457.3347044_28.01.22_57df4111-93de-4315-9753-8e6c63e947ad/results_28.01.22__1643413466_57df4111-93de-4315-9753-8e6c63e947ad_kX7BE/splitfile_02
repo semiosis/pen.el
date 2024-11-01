@@ -1,0 +1,8 @@
+cd 'harrys adventures'
+» ls
+ harry.txt  harry.txt.gpg  harry.txt.gpg~
+» cat harry.txt
+Harry Potter and the Sorcerer's Stone
+
+...
+

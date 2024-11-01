@@ -1,0 +1,14 @@
+"visit" is a function provided by the edt-mapper.el Lisp library.
+
+DESCRIPTION:
+
+The function "visit" establishes a file as the current buffer, and
+initializes its local variables.
+
+The variable "edt-find-the-other-file" is set to t.
+
+The variable "edt-select-mode" is set to t.
+
+The variable "fill-column" is set to 80.
+
+

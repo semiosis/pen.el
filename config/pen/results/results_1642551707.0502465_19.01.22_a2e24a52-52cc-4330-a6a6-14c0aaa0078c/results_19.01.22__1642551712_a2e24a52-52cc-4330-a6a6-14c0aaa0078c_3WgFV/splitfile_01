@@ -1,0 +1,6 @@
+1. This function takes two arguments, s and col
+2. It then creates a function that takes one argument
+3. It then checks if the argument is equal to s
+4. If it is, it returns true
+5. If it is not, it returns false
+

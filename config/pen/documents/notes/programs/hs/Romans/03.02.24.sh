@@ -1,0 +1,6 @@
+cd /volumes/home/shane/notes/ws/bible-studies;  "Romans" "1:27" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Romans" "1" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Romans" "1" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Romans" "1:24-32" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs;  "Romans" "11" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el;  "Romans" "14:23" "#" "<==" "zsh"

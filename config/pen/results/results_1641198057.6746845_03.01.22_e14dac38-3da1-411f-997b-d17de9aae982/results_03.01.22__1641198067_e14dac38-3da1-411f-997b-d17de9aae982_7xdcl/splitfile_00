@@ -1,0 +1,4 @@
+
+declare -a arr=()
+arr+=("$(p "$fun" | tr -s / -)")
+arr+=("$(p "$lang" | tr '[:upper:]' '[:lower:]' |

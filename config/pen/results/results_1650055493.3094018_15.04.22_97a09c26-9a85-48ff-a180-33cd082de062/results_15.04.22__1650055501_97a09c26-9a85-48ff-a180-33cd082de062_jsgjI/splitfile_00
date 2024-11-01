@@ -1,0 +1,6 @@
+ 
+
+The term "transient" was coined to refer to this new kind of command and
+keybinding, and to avoid confusion with prefix keys and prefix
+arguments (which are not commands in Lisp, but the Emacs
+implementation

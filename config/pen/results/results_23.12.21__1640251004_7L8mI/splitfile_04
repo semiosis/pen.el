@@ -1,0 +1,12 @@
+/* Color scheme B: a blue sky at dusk */
+.b-primary {
+background-color: #2D9CDB;
+}
+.b-secondary {
+background-color: #1D5E8F;
+}
+.b-ternary {
+background-color: #1D5E8F;
+}
+.b-quaternary {
+background-color: #1D5E8F

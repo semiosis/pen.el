@@ -1,0 +1,19 @@
+# The program in python
+
+cat program_in_python <<EOD
+5 + 5
+EOD
+
+# The exact same program in lisp
+
+cat program_in_lisp <<EOD<:pp>
+# The program in python
+
+cat program_in_python <<EOD
+5 + 5
+EOD
+
+# The exact same program in lisp
+
+cat program_in_lisp <<EOD
+(+ 5 5)

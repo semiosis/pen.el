@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Xill
+# contributor: Toptal & contributors
+# key: xill
+# --
+
+### Xill ###
+
+.project
+.xlib
+testit-reports/
+.generated-tests/
+generated-tests/
+xill.properties

@@ -1,0 +1,152 @@
+episodic memory
+    Things that you remember from your life.
+
+proprioception
+    Sense of position and movement.
+
+somatotopy
+    The mapping of the body surfaces in the
+    brain.
+
+    In the cortex, it is also referred to as
+    the cortical homunculus.
+
+somatic senses
+somesthetic senses
+    Somesthesis includes the sense of touch,
+    proprioception, and (depending on usage)
+    haptic perception.
+
+    This brain-surface ("cortical") map is not
+    immutable, however.
+
+    Dramatic shifts can occur in response to
+    stroke or injury.
+
+somatosensory system
+    Part of the sensory nervous system.
+
+    A complex system of sensory neurons and
+    pathways that responds to changes at the
+    surface or inside the body.
+
+Somatosensation
+    The axons (as afferent nerve fibers) of
+    sensory neurons connect with, or respond
+    to, various receptor cells.
+
+    These sensory receptor cells are activated
+    by different stimuli such as heat and
+    nociception, giving a functional name to
+    the responding sensory neuron, such as a
+    thermoreceptor which carries information
+    about temperature changes.
+
+    Other types include mechanoreceptors,
+    chemoreceptors, and nociceptors which send
+    signals along a sensory nerve to the
+    spinal cord where they may be processed by
+    other sensory neurons and then relayed to
+    the brain for further processing.
+
+    Sensory receptors are found all over the
+    body including the skin, epithelial
+    tissues, muscles, bones and joints,
+    internal organs, and the cardiovascular
+    system.
+
+neurons
+    Represent information in the rate
+
+    statistics and precise timing of spikes.
+
+spinal nerves
+    Emerge from segments of the spinal cord.
+
+cranial nerves
+    In contrast to spinal nerves.
+
+    The nerves that emerge directly from the
+    brain (including the brainstem).
+    
+    Ten of the cranial nerves originate in the
+    brainstem.
+    
+    Cranial nerves relay information between
+    the brain and parts of the body, primarily
+    to and from regions of the head and
+    neck.
+
+    Spinal nerves emerge sequentially from the
+    spinal cord with the spinal nerve closest
+    to the head (C1) emerging in the space
+    above the first cervical vertebra.
+    
+    The cranial nerves, however, emerge from
+    the central nervous system above this
+    level.
+    
+    Each cranial nerve is paired and is
+    present on both sides.
+    
+    Depending on definition in humans there
+    are twelve or thirteen cranial nerves
+    pairs, which are assigned Roman numerals
+    
+    I–XII, sometimes also including cranial
+    nerve zero.
+    
+    The numbering of the cranial nerves is
+    based on the order in which they emerge
+    from the brain, front to back (brainstem).
+    
+    The terminal nerves (0), olfactory nerves
+    (I) and optic nerves (II) emerge from the
+    cerebrum or forebrain, and the remaining
+    ten pairs arise from the brainstem, which
+    is the lower part of the brain.
+    
+    The cranial nerves are considered
+    components of the peripheral nervous
+    system (PNS), although on a structural
+    level the olfactory (I), optic (II), and
+    trigeminal (V) nerves are more accurately
+    considered part of the central nervous
+    system (CNS).
+
+plasticity rule
+    When one neuron drives the activity of
+    another neuron, the connection between
+    these neurons is potentiated.
+
+potentiated
+    Increase the power, effect, or likelihood
+    of (something, especially a drug or
+    physiological reaction).
+
+spikes
+    [#neuralink]
+
+    Invasive.
+        Need invasive BCI to monitor spikes.
+
+    Give the most information.
+
+    No ceiling compared to EEG or other
+    methods.
+
+Dendritic arbor
+
+DBS
+Deep Brain Stimulation
+
+N1
+    [#neuralink]
+
+    Contains:
+    - N1 Sensor.
+
+haptic feedback
+    - flash of light
+    - sensation of typing with anethetised
+      hands

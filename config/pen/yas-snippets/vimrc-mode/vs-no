@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: no
+# group: vimsnippet
+# key: vs-no
+# --
+noremap ${1} ${2}

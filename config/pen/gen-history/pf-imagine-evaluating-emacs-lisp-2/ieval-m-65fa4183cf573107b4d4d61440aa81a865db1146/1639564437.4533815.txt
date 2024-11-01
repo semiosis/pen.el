@@ -1,0 +1,11 @@
+;; price of vehicle
+;; arguments: (name)
+(message (eval '(price-of-vehicle "Tesla Model S")))
+--> "Tesla Model S costs $75000"
+
+
+
+;; price of vehicle
+;; arguments: (name)
+(message (eval '(price-of-vehicle "Mazda 323")))
+--> 

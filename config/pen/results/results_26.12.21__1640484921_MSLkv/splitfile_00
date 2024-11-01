@@ -1,0 +1,3 @@
+
+curl http://www.google.com/search\?q=$* | grep http | cut -d '"' -f 2 | grep -v ^http://ad | xargs curl | grep -i ^http://
+

@@ -1,0 +1,6 @@
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/.emacs.d/host/pen.el/src;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"

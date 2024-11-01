@@ -1,0 +1,35 @@
+title: correct grammar
+prompt-version: 5
+tags: prose grammar english
+aliases:
+- grammar
+issues:
+- Does not like long inputs
+prompt: |
+  Correct grammar
+  <delim>
+  Original: "Anna and Mike is going skiing."
+  Standard American English: "Anna and Mike are going skiing."
+  <delim>
+  Original: <q:sentence>
+  Standard American English: <:pp>"
+engine: OpenAI Davinci
+temperature: 0
+max-generated-tokens: 200
+top-p: 1
+filter: true
+# suggestion predicates
+suggest-p:
+- "(pen-selected-p)"
+# semantically test for these
+nl-suggest-p:
+- "grammar is incorrect"
+stop-sequences:
+- "<delim>"
+vars:
+- sentence
+examples:
+- She no went to the market.
+preprocessors:
+- pen-str onelineify
+postprocessor: "pen-str remove-leading-and-trailing-newlines | uq | pen-str unonelineify"

@@ -1,0 +1,10 @@
+VIM(1)                     User Commands                    VIM(1)
+
+NAME
+       vim - Vi IMproved, a programmers text editor
+
+SYNOPSIS
+       vim [option] [file ...]      Use the command without a file argument to start an
+       interactive session.
+
+       vimdiff [option] [file ...]  Vimdiff is a diff program for interactive programs.

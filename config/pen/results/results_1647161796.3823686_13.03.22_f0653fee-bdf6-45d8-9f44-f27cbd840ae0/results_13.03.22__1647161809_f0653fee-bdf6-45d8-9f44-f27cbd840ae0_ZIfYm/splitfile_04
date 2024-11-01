@@ -1,0 +1,59 @@
+ial_state(
+	[
+		[empty, empty, empty, empty, empty, empty],
+		[empty, empty, empty, empty, empty, empty],
+		[empty, empty, empty, empty, empty, empty],
+		[empty, empty, empty, empty, empty, empty],
+		[empty, empty, empty, white_pawn_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1],
+		[black_pawn_2]
+	]
+).
+final_state(
+	[
+		[empty],
+		[empty],
+		[empty],
+		[empty],
+		[black_pawn],
+	]
+).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

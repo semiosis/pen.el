@@ -1,0 +1,6 @@
+
+    call writefile('/tmp/test.txt', s)
+endfunction
+function! AddPrompt(fun, in, ...)
+    let args = a:000
+    let s =

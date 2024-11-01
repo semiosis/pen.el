@@ -1,0 +1,4 @@
+Out[2]: ['/home/jupyter/agi/agi/__init__.py',
+ '/home/jupyter/agi/agi/agi.py',
+ '/home/jupyter/agi/agi/agi_parser.py',
+

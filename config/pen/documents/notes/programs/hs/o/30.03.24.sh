@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://boxbase.org/entries/2020/may/18/diy-io-monad/" "#" "<==" "o"
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://boxbase.org/entries/2020/may/18/diy-io-monad/" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "https://gist.github.com/kleesc/d6150824e0ad6a261810/" "#" "<==" "bash"

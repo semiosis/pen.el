@@ -1,0 +1,13 @@
+#+BRAIN_CHILDREN:  Ian%20Dalziel Mike%20(from%20ALC%20prayer%20group) Bip%20Jeffers Samantha%20Cook Nathan's%20Cousins%20-%20Woodfields Yohana%20Kidasu%20-%20sponsored%20child Kieren Zak%20King Tom%20(Adson%20and%20Elliot's%20friend) Adson%20Llewelyn Richard%20O'Keefe churches Clinton Blake%20Smail Donald%20Lark
+
+This is especially for information about people, such as:
+- contact information.
+- their business information, etc.
+
+mx:ebdb-display-all-records
+
+It's really a KB that's meant to serve as a
+generic KB where every node is generally the name of a
+person but may be a category, unlike the agenda, which should mainly
+contain events, or categories of events.
+

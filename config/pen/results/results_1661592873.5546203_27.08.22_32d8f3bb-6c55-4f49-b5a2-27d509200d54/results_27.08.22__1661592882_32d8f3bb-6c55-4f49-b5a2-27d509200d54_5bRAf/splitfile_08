@@ -1,0 +1,14 @@
+[[String]] -> IO ()
+tabularise rows = do
+  -- Calculate the maximum width of each column.
+  let widths = maximumBy (compare `on` length) $ map (maximumBy (compare `on` length) . map (length)) rows
+
+  -- Print the header.
+  print $ unlines $ map (\(w, n) -> replicate n w ++ " ") widths
+
+  -- Print the separator.
+  print $ unlines $ map (\(w, n) -> replicate n "-" ++ " ") widths
+
+  -- Print each row.
+  mapM_ print . map (unlines . map (replicate width)) . transpose rows
+EOD

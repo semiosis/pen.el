@@ -1,0 +1,5 @@
+
+
+do 
+
+In this case, the long form is probably clearer than the short form. Note that due to Haskell's sensitive typing, it is not possible in general to infer the type of an expression. In this example, the type

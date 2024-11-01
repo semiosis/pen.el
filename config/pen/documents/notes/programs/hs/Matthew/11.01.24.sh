@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "Matthew" "5:23-24" "#" "<==" "bash"
+cd /root/.pen/documents/bible-notes/verse;  "Matthew" "23:10" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Matthew" "5:3-4" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Matthew" "5:3-4" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "Matthew" "5:3-4" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "Matthew" "18:3" "#" "<==" "bash"
+cd /;  "Matthew" "5:19-20" "#" "<==" "zsh"

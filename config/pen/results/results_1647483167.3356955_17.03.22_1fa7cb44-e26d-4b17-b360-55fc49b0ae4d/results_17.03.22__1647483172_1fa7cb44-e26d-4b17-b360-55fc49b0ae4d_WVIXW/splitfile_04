@@ -1,0 +1,20 @@
+Once upon a time, there was a sequence of 5 numbers:
+
+f(0) = 1
+f(1) = 4
+f(2) = 9
+f(3) = 121
+f(4) = 12321
+
+It looks like all the numbers in the sequence
+are ()
+  (interactive)
+  (let ((lines-context 2))
+
+    (if (not (listp current-prefix-arg))
+        (setq lines-context (prefix-numeric-value current-prefix-arg)))
+
+    (if (pen-selected)
+        (call-interactively 'kill-region))
+    (let ((suffix (pen-proceeding-lines lines-context)))
+

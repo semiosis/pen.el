@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: iterate-over-two-collections
+# key: i2
+# --
+for name, color in izip(names, colors):
+print name, '--->', colorfor name, color in izip(names, colors):
+print name, '--->', color

@@ -1,0 +1,1773 @@
+HTTP/1.1 200 OK
+Date: Fri, 24 Mar 2023 20:10:50 GMT
+Server: Apache/2.4.38 (Debian) OpenSSL/1.1.1n
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+Content-Length: 22264
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="alternate" type="application/rss+xml" title="RMS RSS" href="rss/rss.xml">
+    <title>Richard Stallman's Personal Page</title>
+    <link rel="stylesheet" type="text/css" href="/common/stallman.css">
+    <link rel="shortcut icon" href="https://stallman.org/rms.png" type="image/x-icon">
+<link rel="icon" href="rms.png">
+  </head>
+
+  <body style="min-width:678px;">
+
+   
+
+   
+
+    <h3 class="c1">
+      Richard Stallman's Personal Site
+    </h3>
+
+<div style="text-align:center; font-size:16pt; margin:50px;">I 
+continue to be the Chief GNUisance of the GNU Project.<br />
+This is my long-term commitment and I plan to continue.<br />
+<a href="https://stallmansupport.org">Support me against a campaign of hatred</a>
+</div>
+
+    <center>
+<!--    If you participate in the commercial ritual of end-of-the-year
+    presents, please avoid the digital products that would mistreat
+    the people you give them to.
+    <h3>
+    <a href="https://www.fsf.org/givingguide/">fsf.org/givingguide</a>
+    </h3>-->
+
+    </center>
+
+    <div class="columnt1">
+    <p>
+      <a href="#politics">Political Articles</a> |
+      <a class=nobr href="archives/polnotes.html">Political Notes</a> |
+      <a href="talks.html">Talks</a> |
+      <a href="airlines.html">Airlines</a> |
+      <a href="/antiglossary.html">Anti-Glossary</a> |
+      <a href="/archive.html">Archive</a> |
+      <a href="/banfacerecognition.html">Ban face recognition</a> |
+      <a href="#books">Books</a> |
+      <a href="/comics.html">Comics</a> |
+      <a class=nobr href="empire.html">Empire of the Megacorporations</a> |
+      <a href="#fiction">Fiction</a> |
+      <a href="/glossary.html">Glossary</a> |
+      <a class=nobr href="gpg.html">GPG Key</a> |
+      <a href="#humor">Humor</a> |
+      <a class=nobr href="/biographies.html#humorousbio">Humorous Bio</a> |
+      <a href="/links.html">Links</a> |
+      <a href="/media.html">Media/Press/Bio</a> |
+      <a class=nobr href="#non-political">Non-Political Articles</a> |
+      <a href="#apocalypse">The Four Factors of the Apocalypse</a> |
+      <a class=nobr href="#oughttobe">There Ought to Be a Law</a> |
+      <a class=nobr href="#travel">Travel Experiences</a> |
+      <a class=nobr href="#travel_photos">Travel Photos</a> |
+      <a class=nobr href="rms-lifestyle.html">RMS personal FAQ</a> |
+      <a href="sayings.html">Sayings</a> |
+      <a class=nobr href="#sci_links">Scientific Links</a> |
+      <a href="#love">Stallman on Love</a> |
+      <a href="#thanks">Thanks</a> |
+      </p>
+      </div>
+
+      <div class="columnt2">
+<!-- Site Search -->
+        <form method="post" action="/cgi-bin/site-search.cgi">
+	  <div>
+	    <input type="hidden" name="case" value="0">
+            <label>Site search: <input type="text" size="30"
+            name="term"></label>
+            <input type="submit" value="go">
+            <a style="font-family: monospace"
+            href="site-search/index.html">advanced</a>
+	  </div>
+        </form>
+	<p><i><small>Send comments/questions about the search engine to: rms at gnu dot org</small></i></p>
+	</div>
+
+	<br style="clear:both">
+
+	<div class="c2">
+
+What's bad about:
+<a href="/airbnb.html">Airbnb</a> |
+<a href="/amazon.html">Amazon</a> |
+<a href="/amtrak.html">Amtrak</a> |
+<a href="/ancestry.html">Ancestry</a> |
+<a href="/apple.html">Apple</a> |
+<a href="/cloudflare.html">Cloudflare</a> |
+<a href="/discord.html">Discord</a> |
+<a href="/ebooks.pdf">Ebooks</a> |
+<a href="/eventbrite.html">Eventbrite</a> |
+<a href="/evernote.html">Evernote</a> |
+<a href="/facebook.html">Facebook</a> |
+<a href="/frito-lay.html">Frito-Lay</a> |
+<a href="/frontier.html">Frontier</a> |
+<a href="/google.html">Google</a> |
+<a href="/gofundme.html">Gofundme</a> |
+<a href="/food-delivery.html">Grubhub</a> |
+<a href="/intel.html">Intel</a> |
+<a href="/linkedin.html">LinkedIn</a> |
+<a href="/lyft.html">Lyft</a> |
+<!-- meetup.com has the same injustices as eventbrite.com
+     and they share one page -->
+<a href="/eventbrite.html">Meetup</a> |
+<a href="/microsoft.html">Microsoft</a> |
+<a href="/netflix.html">Netflix</a> |
+<a href="/patreon.html">Patreon</a> |
+<a href="/pay-toilets.html">Pay Toilets</a> |
+<a href="/skype.html">Skype</a> |
+<a href="/slack.html">Slack</a> |
+<a href="/spotify.html">Spotify</a> |
+<a href="/tesla.html">Tesla</a> |
+<a href="/ticketmaster.html">Ticketmaster</a> |
+<a href="/twitter.html">Twitter</a> |
+<a href="/uber.html">Uber</a> |
+<a href="/wendys.html">Wendy's</a> |
+<a href="/whatsapp.html">WhatsApp</a> |
+<a href="/zoom.html">Zoom</a><!-- |-->
+
+</div>
+
+
+	<!-- Talk has already ended.
+	<div class="talk">
+	  <h3 style="text-align:center;"><a href="/talks.html"><span id="talks" style="display:inline;">Talks</span></a></h3>
+	  <h2>Wednesday, April 13</h2>
+	  <h3>The state of the free software movement</h3>
+	  <p><b>Start time:</b><br/>2:00pm&nbsp;Boston,&nbsp;USA&nbsp;(EDT) | 6:00pm&nbsp;GMT</p>
+          <p>Richard Stallman will be speaking about the free software movement
+          and your freedom, and the progress and growing dangers in today's
+          digital world of software.  His speech will be nontechnical, admission
+          is gratis, and the public is encouraged to attend online, at
+          <a href="https://www.fsf.org/live">fsf.org/live</a>.</p>
+	</div>
+	-->
+
+	<!--
+	<div class="talk">
+	  <h3 style="text-align:center;"><a href="/talks.html"><span id="talks" style="display:inline;">Talks</span></a></h3>
+	  <h2>Monday, May 31</h2>
+	  <h3>Live de Segunda #80</h3>
+	  <p><b>Start time:</b><br/>11:00pm&nbsp;GMT | 7:00pm&nbsp;Boston,&nbsp;USA&nbsp;(EDT)
+	  | 8:00pm&nbsp;São&nbsp;Paulo,&nbsp;Brazil&nbsp;(BRT)</p>
+	  <p><b>Title:</b><br/>Uma conversa com Richard Stallman</p>
+	  <p><a href="/live/stream-debxp-may-31-cover.png">Poster</a></p>
+	  <p>
+	  Hosts:<br/>Blau Araujo, Paulo Kretcheu, Alexandre Oliva</p>
+	  <p>
+	    You can watch the stream
+	    <a href="/live/">
+	    here</a>.</p>
+	</div>
+	-->
+    
+    <p>
+      <a href="rss/rss.xml">RSS site feed</a> for the most recent
+      political notes and new material.<br><br>
+
+      This is the personal web site of Richard Stallman.<br>
+      The views expressed here are my personal views, not those of
+      the <a href="http://www.fsf.org/">Free Software Foundation</a> or
+      the <a href="http://www.gnu.org/">GNU Project</a>.<br>
+      For the sake of separation, this site has always been
+      hosted elsewhere and managed separately.
+      </p>
+    <p>
+      If you want to send me GPG-encrypted mail, do not trust key
+      servers!
+      Some of them have phony keys under my name and email address,
+      made by someone else as a trick.
+      See <a href="/gpg.html">gpg.html</a> for my real key.
+    </p>
+
+      <!-- Special Notes should be done with <h1> -->
+
+      <h1><a href="/articles/dont-watch-covid-tv.html">Don't watch TV
+      coverage of Covid-19!</a></h1>
+
+      <h3>
+
+Our next rally for Julian Assange is Saturday, March 4 at 11:30 to
+12:30pm.  We will gather at Park St. Station on the Boston Common to speak
+out for Assange and gather signatures on our petition to our senators.</br>
+(<a href="https://harpers.org/archive/2023/03/alternative-facts-how-the-media-failed-julian-assange/">See how the media failed Julian Assange</a> at Harper's Magazine.)
+
+      </h3>
+<!-- Instead of deleting past advocacies and activist announcements, 
+some keepers, if not all, can go here, inside the html comments:
+
+	Thursday, February 23 at 6:30,
+	at the Community Church of Boston at 565 Boylston St, Boston (Copley Sq):
+	a panel discussion,
+	"The Future of Gen Z Journalism Depends on Julian Assange's Freedom",
+	on how the Julian Assange case will impact the future of journalism.
+	<p>
+	  This event is part of the fifth annual <em>Student Press Freedom Day</em> initiative
+	  &lt;<a href="https://studentpressfreedom.org">https://studentpressfreedom.org</a>&gt;.
+	<p>
+	  I am not involved personally.
+
+	‘First Night Against the Wars’ is coming up.  Let's have our next stand-out
+for Julian starting at 2pm on Dec 31 in *Copley Sq*. at the corner of
+Boylston and Dartmouth, in front of Trinity Church.  We are expecting
+more activists this year as we join forces with Boston’s new coalition
+‘Solidarity Action Network’. The coalition group will be gathering from
+noon to 5, bringing all our issues together, crushing inequality, climate
+collapse, endless war, nuclear Armageddon and, of course, free speech! It
+grew out of the Earth Day Strike a few months back.
+
+      <h3>
+	
+	Vote for Sanders 
+	<a href="https://www.commondreams.org/views/2020/05/14/sanders-campaign-was-about-us-not-bernie-remember">in your state's Democratic primary</a>.
+	It is important to win him more delegates even though he won't win the
+	nomination that way.  Besides, if Biden's various problems knock him
+	out, Sanders might yet be nominated.
+
+      </h3>
+ -->
+<h3>
+<!-- Commented out this line, which was originally here in favor of a newer endorsement by RMS --> <!--
+  Participate in a <a href="http://ctrl-c.club/~jahoti/FFF/index.html">climate strike rally</a> on Fridays.
+-->
+<!--  Turn this back on in late December
+<p>
+  <a href="https://www.fsf.org/blogs/community/fsf-giving-guide-freedom-is-the-greatest-gift-of-all">FSF Giving Guide</a>
+-->
+
+<!-- Election endorsements here -->
+<p>
+Canadians: I suggest you seek election advice at a local chapter of a
+group that pushes to curb global heating and has the courage to say,
+"Canada should stop exporting fossil fuel."  It will at least use the
+right goals to suggest who to vote for in your area.
+</p>
+
+Join a <a href="https://jahoti.tilde.team/events/FFF_index.html">Friday climate strike</a>.
+<p>
+That page is made by scraping Fridays for Future so you can get the
+information without running any Javascript code.  I would be very glad
+if they made the information on their own site accessible
+from the Free World; then we could simply refer people to their site
+and do without the scraping etc.
+</h3>
+
+<!-- currently not so
+      <h3>
+	I am limiting the number of new political notes per day so as not
+	to overload the volunteers who install new notes.
+        If you'd like to help, please write to rms at gnu period org.
+      </h3>
+-->
+
+      <h3>
+	Is your bank pressuring you to use biometric ID?
+	If so, please write to rms at gnu dot org.
+	It could be useful if you document what is happening.
+      </h3>
+
+<!--
+      <h3>
+      Please
+      <a href="https://my.fsf.org/donate">
+      donate to the Free Software Foundation</a> to support its work
+      for your freedom.
+      </h3>
+-->
+
+      <h3>
+      Please
+      <a href="https://fsf.org/">
+      join the Free Software Foundation</a> to support its work
+      for your freedom.
+      </h3>
+
+      <h3>
+	"They" is plural &mdash;
+	for singular antecedents, use <a href="/articles/genderless-pronouns.html">
+	singular gender-neutral pronouns</a>.
+      </h3>
+
+      <p>
+      <a href="/linkpolicy.html">Link Policy</a>
+      </p>
+
+      <p>
+      The largest part of the site is the 
+      <a href="archives/polnotes.html" >political notes</a>, and they 
+     are typically updated every day.</p>
+
+      <ul id="volunteerList">
+	<li>send me examples of how proprietary programs have been
+	 designed to be addictive.</li>
+	<li>I'm looking for people to check a few sites for me regularly
+      and show me any new articles that I would like to see or link to.
+      If you would like to help me 
+       in this way, please write to rms at gnu dot o r g.</li>
+	<li>send me examples of how proprietary programs have been
+	 designed to cause programmed obsolescence of products.</li>
+	<li>write <a href="https://www.gnu.org/help/help-javascript.html">
+	    site-specific Firefox extensions</a>
+     or local scripts to operate specific web sites.</li>
+	<li>help
+     <a href="http://savannah.gnu.org/maintenance/HowToBecomeASavannahHacker">
+     maintain and operate</a> savannah.gnu.org.</li>
+	<li>experiment to find good ways to attach
+     fruits to a <a href="http://stallman.org/grav-mass.html">Grav-mass tree</a>.</li>
+	<li>help web sites put free licenses
+     on their Javascript code.</li>
+</ul>
+
+
+      <p>
+      <a href="/civillibertiesminute/">Civil Liberties Minute</a>:
+      </p>
+
+    <!-- Here begins column 1: urgent action items -->
+    <div class="column1">
+
+    <a href="http://www.aclu.org/safefree/"><img src="flag_set_vectorized.png" 
+        alt="[America Means Civil Liberties / Patriotism Means Protecting 
+             Them / www.aclu.org/safefree ]" style="margin-left:-6px;"></a>
+    <h6>
+      graphic by Susan Henson<br>
+      Americans, you may wish to copy this icon to your own page, as a
+      way of showing what patriotism means to you.
+    </h6>
+
+    <h3>
+      <a href="#upcoming-talks" id="upcoming-talks">Upcoming talks</a>
+    </h3>
+
+    <!-- When there are no upcoming talks, uncomment the list item reading
+     "No upcoming talks." Comment it out if there are talks. -->
+
+<!-- Format for date: Expires DD Month YYYY
+     Variations of this aren't correctly read by the program that tallies expired talks. -->
+
+<ul>
+
+<!-- Do not remove, only comment/uncomment: -->
+<li><p><i>[ No upcoming talks. ]</i>
+
+</ul>
+
+
+    <h3>
+      <a href="#urgent" id="urgent">Urgent action items</a>
+    </h3>
+
+    <!-- Urgent action items. -->
+
+<!--
+From now on, please put this at the end of every urgent note
+that involves calling US congresscritters or senators:
+
+The Capitol Switchboard numbers are
+<a href="tel:+12022243121">+1-202-224-3121</a>,
+<a href="tel:+18888186641">+1-888-818-6641</a> and
+<a href="tel:+18883553588">+1-888-355-3588</a>.
+<p>
+If you phone, please spread the word!<p>
+
+From now on, please put this at the end of urgent notes
+about calling the White House:
+
+<p>The White House comments lines are 
+<a href="tel:+12024561111">+1-202-456-1111</a>
+and (TTY/TDD) +1-202-456-6213.</p>
+If you phone, please spread the word!<p>
+
+-->
+
+<!-- DO NOT REMOVE added for "rmsnote" ZZURGENTINSERTMK -->
+<!-- this line is line 25-->
+<ul>
+<!-- Format for date: Expires DD Month YYYY 
+Variations of this aren't correctly read by the program that tallies expired urgent notes. -->
+
+<li><!-- Expires 27 march 2023 -->
+US citizens: call on Congress to make Warren Buffett <a href="https://actionnetwork.org/forms/tell-congress-make-warren-buffett-answer-for-his-push-to-deregulate-the-railroad-industry">answer for his
+    push to deregulate the railroads</a>.
+
+The Capitol Switchboard numbers are
+<a href="tel:+12022243121">+1-202-224-3121</a>,
+<a href="tel:+18888186641">+1-888-818-6641</a> and
+<a href="tel:+18883553588">+1-888-355-3588</a>.
+<p>
+If you phone, please spread the word!<p>
+</li>
+
+<li><!-- Expires 27 march 2023 -->
+US citizens: call on Biden <a href="https://act.winwithoutwar.org/act/no-kids-in-cages">not to imprison unauthorized immigrant
+    families</a>.
+
+<p>The White House comments lines are 
+<a href="tel:+12024561111">+1-202-456-1111</a>
+and (TTY/TDD) +1-202-456-6213.</p>
+If you phone, please spread the word!<p>
+</li>
+
+<li><!-- Expires 25 March 2023 -->  
+US citizens:
+<a href="https://act.demandprogress.org/sign/stop-dejoy-swap/?t=1002&akid=30493%2E96703%2ErQ4pk_">call on the USPS Board of Governors</a>
+to stop DeJoy's USPS privatization plan.
+
+<li><!-- Expires 25 March 2023 -->  
+US citizens: call on your senators to
+<a href="https://environmentamerica.webaction.org/p/dia/action4/common/public/?action_KEY=53765&supporter_KEY=229474&utm_source=salsa&utm_medium=email&tag=email_blast:117564&utm_campaign=AME4-FWAT:CWA-0323&utm_content=EM9:00C:0HH-LLP">defend the Clean Water Act</a>.
+<p>
+To sign without running nonfree JavaScript
+<a href="https://gnu.org/philosophy/javascript-trap.html">code</a>
+from the web site,
+use the <a href="/salsalabs-method.html">Salsalabs workaround</a>.
+<p>
+The Capitol Switchboard numbers are
+<a href="tel:+12022243121">+1-202-224-3121</a>,
+<a href="tel:+18888186641">+1-888-818-6641</a> and
+<a href="tel:+18883553588">+1-888-355-3588</a>.
+<p>
+If you phone, please spread the word!<p>
+
+
+<p>
+<li><!-- keeps until the boycott ends -->
+  <p>Boycott Chevron, <a href="https://www.commondreams.org/views/2020/08/15/dont-let-big-oil-open-new-front-its-war-environmental-defenders">in the name of Steven Donziger</a>.</p>
+</li>
+
+</ul>
+
+
+      <h3>Recording of Guantanamero</h3>
+
+     Listen to the <a href="guantanamero.ogg">recording</a>
+
+     of <a href="guantanamero.html">Guantanamero</a>,
+     a protest song written in Spanish.  The recording is in
+     Ogg Vorbis format.  To install an Ogg Vorbis player,
+     see <a href="http://www.fsf.org/resources/formats/playogg">
+     the FSF's Ogg Players page</a>.
+
+     <h3><a href="#oughttobe" id="oughttobe">There Ought to Be a Law</a></h3>
+     <!-- Only keep the 4 most recent items here.  After that move to --
+  -- ~/public_html/there-ought-to-be-a-law.html -->
+
+<!-- 
+
+This file is displayed on the index.html page of stallman.org and shouldn't take up
+too much page space so four texts is the current desired limit. New texts should be added
+to this file and the oldest from here moved to there-ought-to-be-a-law.html. This file is
+included at the top of there-ought-to-be-a-law.html so these texts are listed in the master
+list.
+
+-->
+
+<ul>
+
+  <li id="let-users-download-closed-accounts-data">
+    <p>
+      There should be a law requiring online services, if they close a
+      user's account, to <a href="https://www.stallman.org/notes/2022-jul-oct.html#3_September_2022_(Google_canceled_account_over_photo_sent_to_a_doctor)">permit the user to continue to download whatever
+      information perse had left in the account</a>.
+    <p>
+      To be sure, it is foolish to rely on an online service to hold any
+      data for you; you should store it locally, and use online services
+      only as backups (encrypted).  Preferably more than one online service
+      in parallel, for redundancy.  But we should not allow online services
+      to cite this as an excuse for arbitrarily causing people great
+      avoidable harm.
+  </li>
+
+  <li id="approaching-maskless">
+    <p>
+      It should be a crime to knowingly <a href="https://www.stallman.org/archives/2021-jan-apr.html#13_March_2021_(Passengers_with_no_masks)">approach a person while maskless</a> inside
+      a building or vehicle.    
+  </li>
+
+  <li id="forbid-surveillance-software">
+    *The pandemic has taken <a href="https://www.theguardian.com/commentisfree/2020/dec/14/pandemic-workers-surveillance-monitor-jobs">surveillance of workers</a> to the next level.*
+    <p>
+      The extreme of this is represented by the Amazon warehouse,
+      where a worker's every move is controlled by the computer system.
+      This is one of <a href="/amazon.html">many reasons to refuse to buy from Amazon</a>.
+    <p>
+      Unfortunately, surveillance of workers is not limited to Amazon.  I
+      think states should pass laws to limit surveillance of workers.  It
+      should cover independent contractors as well as employees.
+    <p>
+      The law should completely forbid demanding that workers run any
+      specific software on their own computers (keep in mind that portable
+      phones are computers); the employer who wants that must furnish
+      the computer at no charge.
+  </li>
+
+  <li id="face-recognition-limit">
+    A hundred years ago, having your face photo circulated as a suspect
+    could <a href="https://slate.com/technology/2020/02/rogues-gallery-facial-recognition-technology-history.html">direct persecution at you</a> &mdash; for instance, making it impossible to get a job.
+    <p>
+      Now it can cause you to be arrested randomly for walking down the street.
+    <p>
+      If stores use face recognition inside the store, they should not be
+      allowed to use photos for matching against people in the store
+      except for photos they have taken in that store, and photos
+      of people convicted of theft and fraud.
+  </li>
+  
+</ul>
+
+
+     <a href="/there-ought-to-be-a-law.html">More items where there
+     ought to be a law.</a>
+
+     <h3>Quotes</h3>
+     <p>
+     Here are some
+     <a href="/quotes.html">
+     quotations</a> that I particularly like.
+     </p>
+
+    </div>
+
+    <!-- Here begins column 2 Recent Pol-Notes -->
+    <div class="column2">
+      <h2>Most recent <a href="archives/polnotes.html">Political
+      Notes and News Items</a></h2> (<a href="rss/rss.xml">RSS Feed</a>)
+<dl><dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#24_March_2023_(metropolitan_police_louise_casey)" target="_top"><b>Met police found to be institutionally racist, misogynistic and homophobic</b></a><br><small><i>24 March 2023</i></small></h3></dt><dd>
+<p>
+A government-commission report found that the "Metropolitan Police",
+which is the thug depart ment for London and does other things
+nationally, is 
+<a href="https://www.theguardian.com/uk-news/2023/mar/21/metropolitan-police-institutionally-racist-misogynistic-homophobic-louise-casey-report">pervaded by racism and sexism and other forms of
+bigotry.</a>
+<p>
+This includes harsh bullying by thugs against thugs, as well as
+against everyone else.  In London, polls find that most people do
+not trust it.
+<p>
+Here'a a description of the 
+<a href="https://www.theguardian.com/uk-news/2023/mar/21/louise-caseys-report-on-the-met-police-the-fall-of-a-british-institution">bad things it does.</a>
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#24_March_2023_(misguided_policies_economic_growth)" target="_top"><b>Economic growth is not a magic wand for ending poverty</b></a><br><small><i>24 March 2023</i></small></h3></dt><dd>
+<p>
+*Economic growth is not a 
+<a href="https://www.theguardian.com/global-development/2023/mar/20/economic-growth-is-not-a-magic-wand-for-ending-poverty">magic wand for ending poverty.</a>
+<p>
+our focus should be on reducing inequality not increasing GDP.*
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#24_March_2023_(high_us_maternal_mortality)" target="_top"><b>US maternal mortality is more than 10 times higher than in Australia. Why?</b></a><br><small><i>24 March 2023</i></small></h3></dt><dd>
+<p>
+*US maternal mortality is more than ten times 
+<a href="https://www.theguardian.com/commentisfree/2023/mar/20/us-maternal-mortality-rate-climbing-health-crisis">higher than in Australia.*</a>
+<p>
+It is not easy to measure the causes of this, but we know that they
+include consequences of the pandemic of Covid-19, a general attitude
+of disregard for women's medical needs and health, and racism (black
+American mothers are even more likely to die).
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#24_March_2023_(un_chief_calls_for_halt)" target="_top"><b>UN Chief Calls for Halt to New Fossil Fuel Development Ahead of Climate Ambition Summit</b></a><br><small><i>24 March 2023</i></small></h3></dt><dd>
+<p>
+Secretary General Guterres has set up a climate summit for September,
+with a new demand for earnestness: for a country to be invited, it
+will have to pledne to end licensing and funding of new oil and gas
+reserves and 
+<a href="https://www.commondreams.org/newswire/un-chief-calls-for-halt-to-new-fossil-fuel-development-ahead-of-climate-ambition-summit">expansion of old ones.</a>
+Bravo, Gutierres!  It is heart-warming to see someone in a position of
+importance who recognizes what priorities are needed for survival.
+<p>
+With his influence, he has a chance of overcoming the power of fossil
+fools.  It won't be easy to beat tham, but civilization depends on it,
+and every young person's life is at risk.
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#24_March_2023_(light_polluting_mass_satellite_groups)" target="_top"><b>Calls for ban on light-polluting mass satellite groups like Elon Musk’s Starlink</b></a><br><small><i>24 March 2023</i></small></h3></dt><dd>
+<p>
+Astronomers call for people to support banning projects that involve
+putting large number of satellites into low Earth orbit, to 
+<a href="https://www.theguardian.com/science/2023/mar/20/light-polluting-mass-satellite-groups-must-be-regulated-say-scientists">preserve
+the darkness of night.</a>
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#24_March_2023_(Prison_time_for_doctors,_brain_drain,_ID)" target="_top"><b>Prison time for doctors, brain drain, ID</b></a><br><small><i>24 March 2023</i></small></h3></dt><dd>
+<p>
+A hospital in Idaho will no longer deliver babies, as Idaho's
+repressive laws make it
+<a href="https://www.theguardian.com/us-news/2023/mar/20/idaho-bonner-hospital-baby-delivery-abortion-ban">risky for doctors</a>
+to work there.
+<p>
+It is the only hospital in Sandpoint, which is at the northern tip of
+Idaho.  I wonder what is happening elsewhere in that state.
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#24_March_2023_(Border_surveillance,_US-Mexico)" target="_top"><b>Border surveillance, US-Mexico</b></a><br><small><i>24 March 2023</i></small></h3></dt><dd>
+<p>
+The EFF has published a complete
+<a href="https://theintercept.com/2023/03/20/border-surveillance-map/">list of the locations</a>
+of the highly
+visible US surveillance towers on the border with Mexico.
+  The US government has a list but has refused to publish it.
+<p>
+These towers surveil everyone in the border region constantly, but
+<a href="/archives/2018-may-jul.html#28_June_2018_(Surveillance_'wall')">they are not the only method</a>.  Citizens that live in or visit the
+border are frequently stopped or harasssed while they drive.
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#23_March_2023_(india_banned_twitter_account)" target="_top"><b>India Banned My Twitter Account For Affirming Civil Liberties in Punjab</b></a><br><small><i>23 March 2023</i></small></h3></dt><dd>
+<p>
+Modi regime censors and punishes foreign critics of 
+<a href="https://pieterjfriedrich.medium.com/india-banned-my-twitter-account-for-affirming-civil-liberties-in-punjab-e69b1c7afb03">its violations of
+human rights.</a>
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#23_March_2023_(jetblue_spirit_merger)" target="_top"><b>DOJ Sues to Block 'Blatantly Anti-Competitive' JetBlue-Spirit Airlines Merger</b></a><br><small><i>23 March 2023</i></small></h3></dt><dd>
+<p>
+The US is suing to stop JetBlue and 
+<a href="https://www.commondreams.org/news/jetblue-spirit-merger">Spirit Airlines from merging.</a>
+<p>
+I'm glad to see the government doing this duty to some extent.
+However, to do it fully would require strengthening antitrust law.
+If we put progressives in control of Congress, they will do this.
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#23_March_2023_(ipcc_survival_guide)" target="_top"><b>Demanding Swift Action, UN Chief Calls IPCC Report a 'Survival Guide for Humanity'</b></a><br><small><i>23 March 2023</i></small></h3></dt><dd>
+<p>
+UN secretary general Gutierres has endorsed the IPCC's plan for 
+<a href="https://www.commondreams.org/news/guterres-ipcc-survival-guide-humanity">rapid reduction of fossil fuel use.</a>
+<p>
+The hard part is convincing governments to carry it out, over the
+opposition of fossil fuel companies that are determined to make us
+burn every last drop before civilization collapses.
+<p>
+Several important governments that we might expect to resist it
+have 
+<a href="https://www.commondreams.org/news/ipcc-report-dire-warning">endorsed it already,</a>
+<p>
+including China, Brazil, Saudi Arabia, the United States, and the
+European Union.
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#23_March_2023_(preventing_whale_ship_strikes)" target="_top"><b>We Need a National Strategy on Whale Ship Strikes</b></a><br><small><i>23 March 2023</i></small></h3></dt><dd>
+<p>
+Being hit by ships is a major cause of deaths for endangered whales.
+The US should adopt measures to 
+<a href="https://www.commondreams.org/opinion/preventing-whale-ship-strikes">protect whales from ships.</a>
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#23_March_2023_(florida_periods_discussion_ban)" target="_top"><b>Florida considers ban on discussion of menstruation before sixth grade</b></a><br><small><i>23 March 2023</i></small></h3></dt><dd>
+<p>
+*Florida considers ban on discussion of 
+<a href="https://www.theguardian.com/us-news/2023/mar/20/florida-considers-ban-on-discussion-of-periods-menstruation-before-sixth-grade">menstruation before sixth grade.*</a>
+<p>
+Some of the students will start menstruation before they reach sixth grade.
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(climate_groups_ipcc_report)" target="_top"><b>Climate Groups Reject 'Risky, Untested' Technofixes in IPCC Report</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+Plans to reduce greenhouse gas emissions must not rely on risky and
+untested technologies, such as 
+<a href="https://www.commondreams.org/news/ipcc-carbon-capture-removal">carbon dioxide removal.</a>
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(biden_vetoed_retirement_rule)" target="_top"><b>Biden vetoes Republican effort to overturn socially conscious retirement rule</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+Biden vetoed a bill passed by Republican legislators (including a
+couple of quasi-Democrats) that would have allowed pension funds to
+invest people's pensions disregarding how the investments are likely 
+<a href="https://www.theguardian.com/us-news/2023/mar/20/joe-biden-first-veto-republicans-retirement-investment">to
+lose value due to global heating effects.</a>
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(nader_bailing_out_the_rich)" target="_top"><b>Bailing Out the Undeserving Rich—Again</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+Ralph Nader looks at fallacies right-wingers use to justify 
+<a href="https://www.commondreams.org/opinion/bailing-out-the-rich">impoverishing the non-rich.</a>
+
+<p>
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(los_angeles_teachers_strike)" target="_top"><b>Tens of Thousands of LA Teachers to Strike in Solidarity With Support Workers</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+*Tens of Thousands of LA Teachers to Strike in 
+<a href="https://www.commondreams.org/news/los-angeles-teachers-strike">Solidarity With Support
+ Workers.*</a>
+
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(Contrails_contribute_to_global_heating)" target="_top"><b>Contrails contribute to global heating</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+
+Contrails contribute to <a class=glossary href="/glossary.html#global%20heating">global heating</a>, but airlines <a href="https://www.theguardian.com/science/2023/mar/18/aviation-chiefs-rejected-measures-to-curb-climate-impact-of-jet-vapours">lobby against
+    measures</a> to reduce contrails.
+
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(Protests_in_Milan)" target="_top"><b>Protests in Milan</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+
+  *Crowds in Milan <a href="https://www.theguardian.com/world/2023/mar/18/crowds-in-milan-italy-protest-against-curbs-on-rights-of-same-sex-parents">protest against curbs on rights of same-sex parents</a>.*
+
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(Long_term_addictions_and_lung_damage_from_vaping)" target="_top"><b>Long term addictions and lung damage from vaping</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+
+*   Leading respiratory doctor fears generation could end up with <a href="https://www.theguardian.com/society/2023/mar/18/uk-health-expert-raises-alarm-at-epidemic-of-vaping-among-teenagers">long-term
+    addictions and lung damage</a> [from vaping].*
+
+</dd>
+<dt><h3><a href="https://stallman.org/archives/2023-jan-apr.html#22_March_2023_(Deregulation_of_railways_and_banks_by_former_saboteur_in_chief)" target="_top"><b>Deregulation of railways and banks by former saboteur in chief</b></a><br><small><i>22 March 2023</i></small></h3></dt><dd>
+<p>
+
+*The former <a class=glossary href="/glossary.html#saboteur">saboteur</a> in chief deregulated railways and banks.  He
+<a href="https://www.theguardian.com/us-news/2023/mar/17/donald-trump-railways-banks-deregulation-blames-biden">blames Biden</a> for the fallout.
+<p>
+In true hypocritical manner, the ex-president has quickly forgotten why
+   the two sectors are in shambles.*
+
+</dd></dl>
+    </div>
+
+    <!-- Here begins column 3: misc -->
+    <div class="column3">
+
+      <hr />
+
+      <p href="#apocalypse" id="apocalypse">
+	The four factors of the apocalypse:
+	<br />
+	&nbsp;&nbsp;&nbsp;global heating, global hating,
+	<br />
+	&nbsp;&nbsp;&nbsp;global eating, global mating.
+      </p>
+
+      <hr />
+
+    <div id="comic-container">
+    <div id="comic">
+    <div id="comic-expand">
+        <a href="comics.html"><img src="images/expand_r.png" alt=""></a>
+    </div> <!-- END comic-expand div -->
+    <a href="/images/so-many-candidates.jpg">
+      <img src="/images/so-many-candidates-small.jpg"
+    alt="So Many Candidates">
+    </a>
+    </div> <!-- END comic div -->
+    </div> <!-- END comic-container div -->
+
+    <a href="comics.html">[More Cartoons]</a>
+
+      <hr />
+
+    <br><br>
+    <a href="https://stallman.org/facebook.html"><img 
+        src="/no-facebook.svg"
+        alt="Not f'd. You won't find us on Facebook" 
+        width="200"></a>
+    <p>
+    Copy <a href="/no-facebook.svg">this button</a> (courtesy of R.Siddharth)
+    to express your rejection of Facebook.
+    </p>
+
+    <!-- Template for plugs:
+
+<hr>
+<h3>
+<a href="http://www.example.org/">SINGLE-LINK VARIANT</a>
+</h3>
+<br>
+
+<hr>
+<h3>DESCRIPTIVE VARIANT</h3>
+<p>
+*Description*
+</p>
+
+-->
+
+<!-- May need to change h2's back to h3 -->
+
+<hr>
+<h2>
+<a href="http://www.gp.org/">Support the Green Party</a>
+</h2>
+<br>
+
+<hr>
+<h2>
+<a href="/republican-election-rigging.html">Republican Election
+Rigging Tactics</a>
+</h2>
+<br>
+
+<hr>
+<h2>
+  <a href="/evoting.html">Evoting</a>
+</h2>
+<br>
+
+<hr>
+<h2>
+  <a href="/olympics.html">The Olympics</a>
+</h2>
+<br />
+
+<hr>
+<h2>
+  <a href="/something-to-fear.html">Why everyone has a reason to fear
+  massive surveillance</a>
+</h2>
+<br />
+
+<hr />
+<h2>
+  <a href="http://www.churchandstate.org.uk">Churchandstate.org.uk</a>
+</h2>
+
+   <!--
+<h3>UK airports</h3>
+<p> I'm looking for people who would
+    like to launch and run a petition where people will publicly
+    state that if the UK starts fingerprinting air travelers,
+    they will not fly out of UK airports.  The site should
+    display the names and cities of signers.  Please write to rms
+    at gnu.org if you are interested.
+</p>
+-->
+
+  <!--
+<h3>WiFi passwords</h3>
+ <p> Is anyone interested in taking
+    a leadership role in a campaign to encourage people to remove
+    passwords from their WiFi hubs?  I am too overloaded to do
+    it, but I hope to inspire someone else.  Please write to rms
+    at gnu.org.
+  </p>
+ -->
+
+<hr>
+<h3>E-books</h3>
+<p>
+<a href="/non-oppressive-ebooks.html">Non-oppressive Commercial
+E-books</a>
+</p>
+
+<hr>
+<h3>Don't use Facebook</h3>
+<p>
+Facebook's <a
+href="http://www.guardian.co.uk/commentisfree/cifamerica/2011/jun/14/facebook-facial-recognition-software">face
+recognition demonstrates a threat</a> to everyone's privacy. I
+therefore ask people not to put photos of me on Facebook; you
+can do likewise.</p>
+
+<p>Of course, <a href="/facebook.html">Facebook is bad for
+many other reasons as well.</a>
+
+<hr>
+<h3>
+<a href="harry-potter.html">Boycott Harry Potter Books, Movies, etc.</a>
+</h3>
+<br>
+
+<hr>
+<h3>
+<a href="/internet-music.html">Internet Music EULAS</a>
+</h3>
+<br>
+
+<hr>
+<h3>
+<a href="/business-supremacy-treaties.html">Business Supremacy Treaties</a>
+</h3>
+<br>
+
+<hr />
+<h3>
+<a href="/stay-away-countries.html">Countries to Stay Away From</a>
+</h3>
+<br />
+
+<hr>
+<h3>No national identity cards</h3>
+<p>
+I'd like to make a list of countries that do not require a national
+identity card, and have no plans to adopt one. If you live in or have
+confirmed knowledge of such a country, please send email to rms at
+gnu.org.
+
+<p>
+Here's my list of countries with no national ID cards
+and no plans for one: Australia, Canada, New Zealand, UK.
+Australia's previous government tried to
+institute national ID cards, but the Labor government dropped
+the plan.</p>
+
+<p>India has mostly finished imposing a national biometric ID number
+in a grand act of oppression.
+</p>
+
+<p>Switzerland has national ID cards which are optional,
+but they or some other government ID card are needed for some purposes.
+<p>
+Iceland doesn't have ID cards as such, but they
+have ID numbers that citizens are forced to use frequently.
+For example, the national ID number is often required to
+rent a video or use a gym.
+</p>
+
+<p>
+Denmark issues non-photo ID cards with a "person number", and many
+services use this card to identify people.
+</p>
+
+<p>
+Norway will impose a national
+<a href="http://people.skolelinux.org/pere/blog/Norwegian_citizens_now_required_by_law_to_give_their_fingerprint_to_the_police.html">biometric
+ID card</a>.
+</p>
+
+<p>
+<a href="https://www.irishtimes.com/news/ireland/irish-news/privacy-campaigners-concerned-over-national-id-card-by-stealth-1.3091209">Ireland</a>
+- national ID card by stealth.
+</p>
+
+<p>
+ACLU: the
+<a href="https://www.aclu.org/other/5-problems-national-id-cards">five dangers of national ID cards</a>.
+</p>
+
+<p>
+Wikipedia has a list of <a href="http://en.wikipedia.org/wiki/List_of_identity_card_policies_by_country">identity card policies by country</a>.
+</p>
+
+<hr>
+<h3>Borders</h3>
+<p>
+Stay away from certain countries because of their
+<a href="bad-border-policy-countries.html">bad
+immigration policies</a>.
+</p>
+
+<hr>
+<h3>Flight connections</h3>
+<p>
+Avoid flight connections in these airports because
+of their
+<a href="bad-connection-airports.html">
+treatment of passengers</a>.
+</p>
+
+<hr>
+<h3>The Lifelong Activist</h3>
+<p>
+People often ask how I manage to continue devoting myself to
+progressive activism (such as the free software movement) for
+years without burning out.  The best way I can answer is by
+recommending a book, <a href="http://lifelongactivist.com">
+The Lifelong Activist</a> by Hillary Rettig.
+
+<p>I disagree with the book on one theoretical point in the last
+part of the book: we shouldn't think of political activism as
+<em>being</em> marketing and sales, because those terms refer to
+business, and politics is something much more
+important than mere business.  However, this doesn't diminish
+the value of the book's practical advice about borrowing
+techniques from marketing and sales.</p>
+
+<p>Disclosure: I am friends with the author.</p>
+
+<hr />
+<p>
+<h3>Bob Chassell</h3>
+<a href="/Bob-Chassell/">Writing</a> (mostly science fiction) by my
+friend Bob Chassell who recently died.
+</p>
+
+<hr>
+<h3>Solidarity Economy and Free Software</h3>
+<p>
+<a href="https://stallman.org/solidarity-economy.html">
+Personal Declaration of Richard Stallman and Euclides Mance
+on Solidarity Economy and Free Software.</a>
+</p>
+
+<hr>
+<h3>Falkvinge articles</h3>
+<p>
+<a href="/falkvinge.html">I have reposted some of Rick Falkvinge's articles.</a>
+As posted on his site, you can't see them in a browser
+without running some nonfree Javascript code which is apparently
+non-free.  These versions show the same text, without the obstacle.
+</p>
+
+
+    </div>
+
+
+    <!-- Here the page returns to full width (100%) -->
+    <div class="rest">
+
+     <hr>
+
+    <h3>
+      <a href="/longterm.html" id="long-term">Long-term action items</a>
+    </h3>
+
+    <hr>
+
+    <h3>
+      <a href="#politics" id="politics">Political Articles</a>
+
+    </h3>
+    <p>
+      These are my political articles that are not related to the GNU
+      operating system or free software. For GNU-related articles, see
+      the <a href= "http://www.gnu.org/philosophy/">GNU philosophy
+      directory</a>.
+
+      You can also order copies of my
+      book, <a href="https://shop.fsf.org/books-docs/free-software-free-society-selected-essays-richard-m-stallman-3rd-edition">Free 
+      Software, Free Society, 3rd edition'</a>, signed or not signed.
+
+      <ul>
+	<li>
+	  <a href="/articles/companies-snoop-on-students.html">Many governments invite schools to invite companies to snoop on students</a> (June 2022)
+	</li>
+	
+	<li>
+	  <a href="/articles/lasting-peace-weaken-putin-not-ruin.html">To Endure, Peace Needs to Weaken Putin But Not Ruin Him</a> (March 2022)
+	</li>
+	
+	<li>
+	  <a href="/articles/putin-forces.html">The Russian Army has become the Putin Forces</a> (March 2022)
+	</li>
+	
+	<li>
+	  <a href="/articles/defining-racism.html">The definition of "racism" must not be formulated based on who the perpetrators are</a> (February 2022)
+	</li>
+
+	<li>
+	  <a href="/articles/corporate-landlords.html">Why we should get rid of corporate landlords, and an easy method</a> (August 2021)
+	</li>
+
+	<li>
+	  <a href="/articles/cooperative-internet-disservices.html">Worker-owned internet services can still be dis-services</a> (June 2021)
+	</li>
+
+	<li>
+	  <a href="/articles/necessary-changes.html">Necessary Changes in Society</a> (March 2021)
+	</li>
+	<li>
+	  <a href="/articles/toobin.html">On the Firing of Jeffrey Toobin</a> (November 2020)
+	</li>
+	<li>
+	  <a href="/articles/policing-police.html">The Broken Trust Model of Policing Police</a> (October 2020)
+	</li>
+      <li>
+	<a href="/articles/clark-killick.html">An Extinction Rebellion activist comments about the London police
+	    by Clark Killick</a> (October 2020)
+      </li>
+      <li>
+        <a href="/articles/real-privacy-laws.html">What sort of laws would give us real privacy?</a> (December 2019)
+      </li>
+      <li>
+	<a href="/articles/microsoft-talk.html">My Talk at
+	Microsoft</a> (September 2019)
+      </li>
+      <li>
+	<a href="/articles/surveillance-ordinance.html">Surveillance Ordinance</a> (November 2018)
+      </li>
+      <li>
+	<a href="/articles/ramayana.html">How the Ramayana endorses caste bias</a> (April 2018)
+      </li>
+
+      <li>
+	<a href="/articles/genderless-pronouns.html">Better
+  Genderless Pronouns in English</a> (April 2018)
+      </li>
+
+      <li>
+	A <a href="https://www.theguardian.com/commentisfree/2018/apr/03/facebook-abusing-data-law-privacy-big-tech-surveillance">radical
+	proposal</a> to keep your personal data safe. (April 2018)
+      </li>
+
+      <li>
+	<a href="/articles/what-mary-had.html">What Mary Had</a> (May
+	2017)
+      </li>
+
+      <li>
+	<a href="/articles/anonymous-payments-thru-phones.html">Anonymous
+	internet payments using pay phones</a> (Apr 2017)
+      </li>
+
+      <li>
+	When people are
+	<a href="/articles/conscripted.html">conscripted
+	  by the DMCA into the War on Sharing</a>. (Dec 2016)
+      </li>
+
+      <li>
+	If you feel your organization needs
+	a <a href="/facebook-presence.html">"presence" in
+	Facebook</a>.
+	(Dec 2016)
+      </li>
+
+      <li>
+	<a href="https://www.gnu.org/philosophy/surveillance-vs-democracy.html">
+	  How Much Surveillance</a> Can Democracy Withstand?
+      </li>
+
+      <li>
+	Yes, <a href="/articles/why-fear-surveillance.html">You Have
+	Something to Fear</a>. (August 2016)
+      </li>
+
+      <li>
+	A
+	<a href="http://www.theguardian.com/politics/2016/jul/13/something-to-really-miss-about-david-cameron">
+	  proposal for resolving the dispute</a> over the South China
+	  Sea.  (July 2016)
+      </li>
+
+      <li>
+	Is
+	<a href="/articles/duckduckgo-censorship.html">
+	  duckduckgo.com partially enforcing</a> the "celebrity threesome
+	injunction"? (May 2016)
+      </li>
+
+    <li>
+    Adapting the Marseillaise to the <a
+    href="/articles/chant-du-29-novembre.html">
+    greatest threat to civilization</a>.
+    </li>
+
+    <li>
+    <a href="/articles/logo-sea-turtle.html">Proposing the Logo Sea
+    Turtle &mdash; for Whales</a> (October 2015)
+    </li>
+
+    <li>
+    <a
+    href="/articles/when-should-body-cameras-record.html">Controlling
+    When the Cameras Record</a> (August 2015)
+    </li>
+
+    <li>
+    A few
+    <a href="/articles/words-to-greece.html">
+    words to Greece</a> (June 2015)
+    </li>
+
+    <li>
+    Fixing <a
+    href="/articles/progressive-tax-on-business-gross-income.html">Too
+    Big To Fail</a> (Apr 2015)
+    </li>
+
+    <li>
+    <a href="/enslaved-workers.html">Enslaved Workers</a>
+    </li>
+
+    <li>
+    <a href="/articles/hrant-dink.html">What I said about
+    Hrant Dink</a> in my talks in Turkey (Apr 2015)
+    </li>
+
+    <li>
+    Earth
+    <a href="/articles/planet-koch.html">under attack from planet Koch</a>.
+    </li>
+
+    <li>
+    <a href="/articles/fine-hiring-ex-officials.html">Fine government
+    contractors for hiring ex-officials</a> (Feb 2015)
+    </li>
+
+    <li>
+    <a href="/articles/witch-hunt.html">Suggestion to the target of a
+    witch hunt</a> (Feb 2015)
+    </li>
+
+    <li>
+    <a
+    href="/articles/nonexistence-not-good-or-bad.html">Nonexistence</a>
+    (Feb 2015)
+    </li>
+
+    <li>
+    <a href="/articles/thermocene.html">The Thermocene
+    Epoch</a> (Feb 2015)
+    </li>
+
+    <li>
+    <a href="/articles/digital-voting-bad.html">Digital Voting.</a>
+    (Jan 2015)
+    </li>
+
+    <li>
+    My letter asking the judge not to sentence
+    <a href="/articles/hammond.pdf">
+    Jeremy Hammond to prison</a>. (Jan 2015)
+    </li>
+
+    <li>
+    It is a <a href="/evoting.html">bad idea to have computers count
+    the votes in public elections</a>.
+    </li>
+
+    <li>
+    <a href="/internet-voting.html">Internet Voting: don't even think of it!</a>
+    </li>
+
+    <li>
+    The patent system is, at best,
+    <a href="http://www.luc.edu/media/lucedu/law/students/publications/llj/pdfs/45_1_stallman.pdf">
+    not worth keeping</a>.  (February 2014)
+    </li>
+
+    <li>
+    <a href="/articles/why-we-need-a-state.html">Why We Need A
+    State</a> (November 2013)
+    </li>
+
+    <li>
+    We can put an end to "too big to fail" with an
+    <a href="https://www.reuters.com/article/idUK261136661120130204">
+    innovative tax</a>
+    that also defeats corporate tax-dodging. (August 2013)
+    </li>
+
+    <li>
+    <a href="/articles/exxon.html">Exxon and the Letter Exx.</a>  (April 1,
+    2013)
+    </li>
+
+    <li>
+    <a href="https://www.reuters.com/article/idUK261136661120130204">
+    Fixing too big to fail</a> (February 2013)
+    </li>
+
+    <li>
+    <a href="http://www.guardian.co.uk/technology/blog/2013/jan/21/hmv-loss-music-buying-cash">Why
+    internet music "sale" is a bad deal.</a> (January 2013)
+    </li>
+
+    <li>
+    <a href="/articles/online-education.html">
+    On-line education</a> is using a flawed Creative Commons license
+    (September 2012) <a href="/articles/online-education.fr.html">French
+    Translation</a>
+    </li>
+
+    <li>
+    <a href="/articles/redistributable-scientific-publishing.html">
+    Redistributable Scientific Publishing</a> (April 2012)
+    </li>
+
+    <li>
+    <a href="/articles/asked-to-lie.html">My Doctor's Office Asked me to
+    Lie</a> (August 2011)
+    </li>
+
+      <li><a href="articles/responding-to-beggars.html">Responding to Beggars</a></li>
+
+      <li><a href="articles/extreme.html">UK extreme pornography law</a>.</li>
+
+      <li>
+	My criticism of the
+	<a href="/articles/zeitgeist.html">The Zeitgeist Movement</a>.
+	The Venus Project is more or less the same idea.
+      </li>
+
+      <li>
+        <a href="articles/states-union.html">The states need to form a
+        union</a>.
+      </li>
+
+      <li><a href="/articles/political-articles.html">Additional
+      Political Articles</a> are on a separate page</li>
+
+    </ul>
+
+    <h3>
+      <a href="#notes" id="notes">Political notes</a>
+    </h3>
+
+    <blockquote>
+      <em>"Those who profess to favor freedom, yet depreciate agitation, are
+      men who want crops without plowing up the ground. They want rain without
+      thunder and lightning. They want the ocean without the awful roar of its
+      many waters. This struggle may be a moral one; or it may be a physical
+      one; or it may be both moral and physical; but it must be a struggle.
+      Power concedes nothing without a demand. It never did and it never
+      will."</em>
+
+      <div class="c3">
+
+        <a href="http://memory.loc.gov/ammem/doughtml/doughome.html">Frederick
+        Douglass</a>, American Abolitionist,
+        <a href="http://en.wikiquote.org/wiki/Frederick_Douglass#West_India_Emancipation_.281857.29">Letter
+        to an associate, 1849</a>
+      </div>
+    </blockquote>
+
+    <p>
+
+      Here are notes about various issues I care about, usually with links to
+      more information.  The current notes are
+      <a href="/archives/current.html">here</a>.  For all previous
+      notes, see <a href="/archives/index.html">this page</a>.
+      <br>
+
+    <p>
+
+      See <a href="/repairing-links.html">this page</a> for
+      information on efforts to maintain links in the political notes.
+
+    <p>
+
+      Political notes about the 2001 G8 summit in Genoa, Italy are being
+      archived on <a href="/genoa.html">their own page</a>.
+
+      <h3>Media/Press/Bios</h3>
+      <p>
+      Richard Stallman's bio and publicity photos, and other things
+      of interest to the press, have been moved to a
+      <a href="/media.html">separate page</a>.
+      </p>
+
+    <h3>
+      <a href="#travel" id="travel">Travel experiences</a>
+    </h3>
+
+    <p>
+      <ul>
+      <li>
+      <a href="/articles/palestine-trip.html">How it happened</a> that I
+      planned speeches at Israeli universities, then cancelled them.
+      </li>
+
+        <li><a href="http://www.fsf.org/blogs/rms">Richard Stallman's travel blog</a>
+        and <a href="/restaurants.html">restaurants reviews</li>
+
+        <li>My <a href="articles/machu.html">visit to Machu Picchu</a></li>
+        <li>Stories about visits to <a href="articles/tikal.html">Tikal</a> and
+            <a href="articles/greece.html">Greece</a></li>
+      </ul>
+
+    <h3>
+      <a href="#travel_photos" id="travel_photos">Photos about my travels</a>
+    </h3>
+
+    <p>
+      <ul>
+	<li>Photos of me <a href="photos/rms-working/">working on my 
+	    laptop</a> at various places</li>
+	<li><a href="/photos/index.html">All of my photos</a>, organized by 
+	location, from my trips.</li>
+
+	<li>
+	<a href="/favorite-photos.html">Photos people like best</a>,
+	among those I have taken and posted here.
+	</li>
+
+        <li><a href="http://juliancash.com/view/rms2/set/medium_index.html">OSCON</a></li>
+
+        <li><a href="http://juliancash.com/view/rms3/set/medium_index.html">More
+      Photos from OSCON</a></li>
+
+      <!-- former link: http://www.hacklabs.ch/lanz/photos/rms/ -->
+       <li>my
+<a href="https://stallman.org/photos/switzerland/2003-RMS-Tour-de-Suisse/index.html">
+visit to Switzerland</a> in May 2003 (and the same 
+<a href="http://www.flickr.com/photos/mum/sets/72157623706272563/">
+photos at the original photographer's site</a>.)</li>
+
+        <li>Some pictures from <a href="vaasa.html">Vaasa</a> where I slipped on icy
+      ground in the airport, broke my elbow, and gave my speech by telephone from 
+      the hospital bed</li>
+        <li>my <a 
+            href="/photos/greece">trips to Greece</a>
+
+        </li>
+        <li>In Singapore in March 2001, a <a href=
+      "parrot-love.jpg">lovely parrot</a> (50k jpeg) became enamored of me, while others
+      <a href="singapore-music.jpg">enjoyed my recorder playing</a> (91k jpeg)</li>
+        <li>my <a 
+            href="/photos/china/2000/RMS_in_China_2000.html">visit to China</a>
+      in May/June 2000. I also visited Tibet unawares, because nobody told me
+      that JiuZhaiGou was part of Tibetan territory annexed by China since the
+      conquest</li>
+
+        <li>my visit to Brazil: some from <a href=
+      "https://web.archive.org/web/20010613171306/http://www.cipsga.org.br/rmsinrio/">Rio de Janeiro</a> and some from
+      <a href="https://web.archive.org/web/20010613171306/http://www.cipsga.org.br/rmsinrio/">Porto Alegre</a> where the
+      Software Livre 2000 event was held.
+
+        <li><a href="https://web.archive.org/web/20060112234750/http://www.lugos.si/lugos/rms2000/pic/">my trip to Slovenia</a></li>
+	<li>
+	<!-- We have unlimited, nonexclusive rights to this -->
+	A 
+	<a href="./rms-1.jpg">
+	photo of me</a> by Blake Livingston (may be used under CC-BY-SA).
+	</li>
+      </ul>
+
+    <h3>
+    <a href="#sci_links" id="sci_links">Scientific Links</a>
+    </h3>
+    <ul>
+    <li>
+    <a href="http://arstechnica.com/science/2007/09/the-pseudoscience-behind-homeopathy/">
+    Homeopathy debunked</a>, and thoroughly, as pseudoscience.
+    </li>
+
+    </ul>
+
+    <hr>
+
+    <h3>
+      Some <a href="#humor" id="humor">humor</a>
+    </h3>
+
+    <p>
+        <a href="https://stallman.org/articles/the-berry-torture.html">The berry torture</a>.
+    </p>
+
+    <p>
+      <a href="https://www.gnu.org/music/free-software-song.en.html">The Free Software Song</a>, by Richard M. Stallman. You can listen to a performance of the song:
+      <a href="https://www.gnu.org/music/free-software-song-rhythmic.ogg">Free Software Song performed by Thor</a>
+
+      Here is a variant of this song called <a href="https://blog.vimuser.org/free-firmware-song.html">"The Free Firmware Song"</a>.
+    </p>
+    
+    <p>
+      A song parody, <a href="https://aoeu2code.com/post/251">Colors of the Lisp</a>, by Jefferson Carpenter.
+    </p>
+
+    <p>
+    Earth
+    <a href="/articles/planet-koch.html">under attack from planet Koch</a>.
+    </p>
+
+    <p>
+    <a href="/doxing.html">On doxing</a>, and how to spell it.
+    </p>
+
+    <p>
+    <a href="/futon-physics.html">Futon Physics</a>
+    </p>
+
+    <p>
+    <a id="ruleta-espanola" href="/images/ruleta-espanola.png">A Spanish cartoon: La Ruleta
+    Espa&ntilde;ola.  <img src="/images/ruleta-espanola-small-alpha.png"
+    alt="thumbnail" style="vertical-align:middle;"></a>
+    </p>
+
+    <p>
+    <a
+    href="https://web.archive.org/web/20140208062623/http://shift-reset.com/blog/2013/12/24/The%20Night%20before%20M-x-mas/">The
+    Night before M-x-mas</a>
+    </p>
+
+    <p>
+      Here I am <a href="power-tie.jpg">wearing my "power tie"</a>.
+
+    <p>
+      <a href="https://harpers.org/archive/2021/01/pour-decisions/">Wine
+      snobs</a> get their comeuppance.</p>
+    
+    <p>
+      Here I am <a href=
+      "IMG_5884.JPG">struggling to open a bottle of water</a>.
+
+    <p>
+
+     My application to an join Marian Henley's <a
+     href="ex-boyfriends-list.html">ex-boyfriends list</a>.
+
+    <p>
+    My <a href="doggerel.html">funny poetry and song parodies</a>.
+
+    <p>
+    <a href="comics.html">My Cartoons</a>
+
+    <p>
+    <a href="/puns.html">My Puns in English</a>
+    (<a href="/puns.html#littleleague">Little Leaguer</a>, August 2019).
+
+    <p>
+    <a href="/spanish-puns.html">My Puns in Spanish</a>
+    (New pun: <a href="/spanish-puns.html#apostasia">Apostasía</a>
+    April 2019)
+
+    <p>
+    <a href="/french-puns.html">My Puns in French</a>
+    (New pun: <a href="/french-puns.html#microsoft">Microsoft à l'école</a> July 2019)
+
+    <p>
+    <a href="/portuguese-puns.html">My Puns in Portuguese</a>
+
+    <p>
+    <a href="/italian-puns.html">My Puns in Italian</a>
+    (New pun: <a href="/italian-puns.html#pesce">Quale pesce fa
+    starnutire?</a> New 10/2018)
+
+
+    <p>
+    <a href="/german-puns.html">My Puns in German</a> (New 02/2016)
+
+    <p>
+    <a href="linguistic-swifties.html">Linguistic Swifties</a>
+    (Now with: Wintu, Penutian, Cochiti, Taos, and Towa.)
+
+    <p>
+    <a href="/saint.html"><img src="/graphics/saint-button.png" alt="I am a
+     Saint In the Church Of Emacs"></a>
+      --<a href="/saint.html">Saint
+      IGNUcius</a>-- The Church of Emacs will <a href="extra/church.html">soon
+      be officially listed</a> by at least one person as his religion for
+      census purposes.
+    
+    <p>
+
+      There are no godfathers in the Church of Emacs, since there are no gods,
+      but you can be someone's <a href="editorfather.html">editorfather</a>.
+    
+    <p>
+      <a href="articles/texas.html">Stallman Does Dallas</a>: "I have to warn
+      you that Texans have been known to have an adverse reaction to my
+      personality&hellip;"
+    
+    <p>
+
+      <a href="articles/yellow-hat.html">The Dalai Lama today announced the
+      official release of Yellow Hat GNU/Linux.</a>
+
+    <p>
+    <a href="/articles/pre-zen.html">Pre-Zen Studies.</a>
+    </p>
+    
+    <p>
+      I found <a href="extra/bdk.html">a funny song about the Mickey Mouse
+      Copyright Act</a> (officially the Sonny Bono Copyright Act) which
+      extended copyright retroactively by 20 years on works made as early as
+      the 1920s.
+    
+    <p>
+    If you are a geek and read Spanish, you will love Raulito el Friki,
+    who said "Hello, world!" immediately after he was born.  Here's 
+    <a href="http://www.taringa.net/posts/linux/1289402/Raulito-el-friki:-Homenaje.html">
+    an archive of this now-defunct comic strip</a>.
+
+    <p>
+    <a href="http://disobedience.mit.edu/?p=813">    
+    Sleeping with Stallman</a> at MIT.
+
+    <p>
+    <a href="/malentendido-gracioso.html">Un malentendido gracioso</a>.
+
+    <p>
+    ESR's favorite programming language: 
+    <a href="http://fdiv.net/2012/04/01/objectivist-c">
+    Objectivist C</a>.
+
+    <p>
+    <a href="http://web.archive.org/web/20140701124736/http://americanextremists.thecomicseries.com/
+">American
+    Extremists</a>
+
+    <p>
+    <a href="/articles/mouth.html">My Small Mouth</a>
+
+    <p>
+    <a href="/huns-writs.html">The huns and the writs</a>.
+
+    <p>
+    <a href="/articles/cluj.html">No Kludges in Cluj</a> (June 2014)
+
+    <p>
+    <a href="/images/P1010083.JPG">Hammer into Anvil</a>
+
+    <h3>
+    <a href="#fiction" id="fiction">Fiction</a>
+    </h3>
+    <p>
+
+    <p>
+    <a href="/articles/made-for-you.html">
+    Made for You</a> (December 2012)
+    (<a href="/articles/made-for-you.html">local
+    copy</a>) <a href="/articles/made-for-you.eo.html">Esperanto
+    translation</a>
+    </p>
+
+    <a href="/articles/jinnetic.html">A science fiction story: Jinnetic
+    Engineering</a> (<a href="/articles/jinnetic-portuguese.html">in 
+    Portuguese</a>,
+    <a href="/articles/jinnetic-engineering.fa.html">Farsi</a>,
+    <a href="/articles/jinnetic.es.html">Spanish</a>, 
+    <a href="/articles/jinnetic.hy.html">Armenian</a>,
+    <a href="/articles/jinnetic.ru.html">Russian</a>,
+    <a href="/articles/jinnetic.fr.html">French</a>, and
+    <a href="/articles/jinnetic.it.html">Italian</a>).
+
+    <p>
+    <a href="http://www.gnu.org/philosophy/right-to-read.html">The Right to 
+    Read</a>
+
+    <h3>
+    <a href="#books" id="books">Books</a>
+    </h3>
+    <p>
+    My book of essays about the philosophy of Software Freedom,
+    is available from the
+    <a href="http://shop.fsf.org/category/books">
+    GNU Press</a>.
+    </p>
+
+    <h3>
+      <a href="#love" id="love">Stallman on Love</a>
+    </h3>
+    <p>
+    <a href="articles/love-and-dance.html">Love and Dance</a>
+    <p>
+    <a href="articles/childhood-sweetheart.html">My Childhood Sweetheart</a>
+    <p>
+    <a href="articles/made-for-you.html">Made for You</a>
+    <p>
+    <a href="extra/personal.html">My Former Personal Ad</a>
+    
+    <h3>
+    <a href="#non-political" id="non-political">Non-Political Articles</a>
+    </h3>
+
+    <p>
+      <a href="/articles/dr-stallman.html">Am I Doctor Stallman?</a>
+    </p>
+
+     <p>
+       <a href="/articles/avec-des-chapeaux.html">Avec des
+       chapeaux</a> French song parody.
+     </p>
+
+    <p>
+      My <a href="/RMSGeorgianMusicWUOG.ogg">radio program of Music from
+	Georgia</a>, originally broadcast on WUOG in Athens, Georgia on
+      Oct 13, 2014.
+    </p>
+
+    <p>
+    <a href="/articles/trolley-problem.html">Resolving the trolley
+    problem</a>
+
+    <p>
+    <a href="/articles/quantum-abortion.html">Quantum Theory and
+    Abortion Rights</a>
+    </p>
+
+    <p>
+    A 
+    <a href="/articles/castellano-sin-genero.html">
+    proposal for gender neutrality in Spanish</a>, suitable for both
+    speech and writing.
+    </p>
+
+    <p>
+    <a href="articles/posix.html">Origin of the POSIX name.</a>
+    </p>
+
+    <p>
+      <a href="articles/on-hacking.html">On Hacking</a>: In June 2000, while
+      visiting Korea, I did a fun hack that clearly illustrates the original
+      and true meaning of the word "hacker".
+      </p>
+    <p>
+    <a href="/articles/childhood-sweetheart.html">My Childhood Sweetheart</a>
+    </p>
+
+    <p>
+    <a href="/articles/love-and-dance.html">Love and Dance</a>
+    </p>
+
+        <p>Predicting the attack on <a id="pearlharbor"
+           href="pearlharbor.html">Pearl Harbor</a></p>
+
+    <p>
+      <a href="/articles/destruction-certificate.txt">Certificate of confusion</a>
+    </p>
+   <h3>
+      <a id="links" href="/links.html">Links</a>
+   </h3>
+
+    <h3>
+      <a href="#thanks" id="thanks">Thanks</a>
+    </h3>
+
+    <p>
+      I would like to thank:
+      <ul>
+        <li>Positive Internet for hosting this web site.</li>
+	<li>Graziano Sorbaioli for improving the layout of the main
+        page.</li>
+      </ul>
+
+    <hr>
+
+    <p>
+      Please send comments on these web pages to <b>rms at gnu period org</b>.
+    
+    <p>
+      Copyright &copy; 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+      2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+      2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
+      Richard Stallman<br>
+
+      Verbatim copying and redistribution of this entire page are
+      permitted provided this notice is preserved.<br>
+
+      Verbatim copying and redistribution of any of the photos in the
+      <i>photos</i> subdirectory is permitted under the 
+      <a href="http://creativecommons.org/licenses/by-nd/3.0/">
+      Creative
+      Commons Noderivs license version 3.0</a> or later.  You can copy and
+      redistribute the photo of <a href="rms.jpg">me playing music to
+      the butterfly</a> under the 
+      <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+      Creative Commons Noderivs
+      Nocommercial license version 3.0</a> or later.  Any other photos of
+      me in this (the toplevel) directory may be copied and redistributed under
+      the 
+      <a href="http://creativecommons.org/licenses/by-nd/3.0/">
+      Creative Commons Noderivs license version 3.0</a>
+ <!-- hhmts end -->
+
+   </div>
+
+  </body>
+</html>

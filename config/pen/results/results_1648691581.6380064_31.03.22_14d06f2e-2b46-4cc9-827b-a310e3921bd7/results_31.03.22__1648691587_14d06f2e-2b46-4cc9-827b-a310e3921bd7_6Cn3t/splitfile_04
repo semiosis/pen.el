@@ -1,0 +1,10 @@
+
+liftm (Maybe s) s
+
+# Using Text files
+# 
+# ```python
+# with open('file.txt', 'r') as file:
+# data = file.read()
+# ```
+# where `file` is the variable and

@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "ESV" "Genesis 1:5" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Matthew" "5:9-10" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Matthew" "5:9-10" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Luke 24:9" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Matthew" "5:9-10" "#" "<==" "bash"

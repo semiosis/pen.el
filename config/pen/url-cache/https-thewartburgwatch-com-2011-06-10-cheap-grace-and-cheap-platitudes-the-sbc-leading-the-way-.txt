@@ -1,0 +1,1143 @@
+HTTP/1.1 200 OK
+Date: Mon, 04 Mar 2024 19:22:56 GMT
+Server: Apache
+X-Powered-By: PHP/7.3.33
+Link: <https://thewartburgwatch.com/wp-json/>; rel="https://api.w.org/", <https://thewartburgwatch.com/?p=10401>; rel=shortlink
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Vary: Accept-Encoding
+Content-Length: 21061
+Keep-Alive: timeout=5
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en"> <!--<![endif]-->
+<!-- ************************ -->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>Cheap Grace and Cheap Platitudes: The SBC Leading the Way | The Wartburg Watch 2024</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://thewartburgwatch.com/tww2/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="https://thewartburgwatch.com/tww2/wp-content/themes/weaver-ii-pro/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=true;</script>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Wartburg Watch 2024 &raquo; Feed" href="https://thewartburgwatch.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Wartburg Watch 2024 &raquo; Comments Feed" href="https://thewartburgwatch.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Wartburg Watch 2024 &raquo; Cheap Grace and Cheap Platitudes: The SBC Leading the Way Comments Feed" href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thewartburgwatch.com\/tww2\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.17"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='https://thewartburgwatch.com/tww2/wp-content/themes/weaver-ii-pro/style.min.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='https://thewartburgwatch.com/tww2/wp-content/themes/weaver-ii-pro/style-mobile.min.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-style-sheet-css'  href='https://thewartburgwatch.com/tww2/wp-content/uploads/weaverii-subthemes/style-weaverii.css?ver=200' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://thewartburgwatch.com/tww2/wp-includes/css/dist/block-library/style.min.css?ver=5.3.17' type='text/css' media='all' />
+<link rel='stylesheet' id='embedpress_blocks-cgb-style-css-css'  href='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/Gutenberg/dist/blocks.style.build.css?ver=1708365137' type='text/css' media='all' />
+<link rel='stylesheet' id='embedpress-css'  href='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=5.3.17' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://thewartburgwatch.com/tww2/wp-includes/css/dashicons.min.css?ver=5.3.17' type='text/css' media='all' />
+<link rel='stylesheet' id='plyr-css'  href='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/css/plyr.css?ver=5.3.17' type='text/css' media='all' />
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/quote-comments/quote-comments.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/js/plyr.polyfilled.js?ver=1'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.5.7'></script>
+<link rel='https://api.w.org/' href='https://thewartburgwatch.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thewartburgwatch.com/tww2/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thewartburgwatch.com/tww2/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Pedophilia, SNAP, Bishop&#8217;s Accountability and the Impotent SBC Leadership' href='https://thewartburgwatch.com/2011/06/09/pedophilia-snap-bishops-accountability-and-the-impotent-sbc-leadership/' />
+<link rel='next' title='Wade Burleson: The SBC continues its hypocrisy on pedophiles' href='https://thewartburgwatch.com/2011/06/10/wade-burleson-the-sbc-continues-its-hypocrisy-on-pedophiles/' />
+<meta name="generator" content="WordPress 5.3.17" />
+<link rel="canonical" href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/" />
+<link rel='shortlink' href='https://thewartburgwatch.com/?p=10401' />
+
+<!-- This site is using Weaver II Pro 2.2.4 (200) subtheme: Magazine -->
+<!-- Page ID: 10401 -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(https://thewartburgwatch.com/tww2/wp-content/themes/weaver-ii-pro/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><!-- Google Analytics Tracking by Google Analyticator 6.5.7 -->
+<script type="text/javascript">
+    var analyticsFileTypes = [];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-11109100-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+
+<body class="post-template-default single single-post postid-10401 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='https://thewartburgwatch.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="https://thewartburgwatch.com/" title="The Wartburg Watch 2024" rel="home">The Wartburg Watch 2024</a></span></h1>
+			<h2 id="site-description"> Dissecting Christian Trends</h2>
+		</div>
+
+		<div id="header_image">
+                              <img src="https://thewartburgwatch.com/tww2/wp-content/uploads/2022/06/TWW_Castle_03_940_188.png" width="940" height="188" alt="The Wartburg Watch 2024" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="https://thewartburgwatch.com/" title="The Wartburg Watch 2024" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul id="menu-main-menu" class="sf-menu"><li id="menu-item-22785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-22785"><a href="http://thewartburgwatch.com">Home</a></li>
+<li id="menu-item-161618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-161618"><a href="https://thewartburgwatch.com/about-tww/">About TWW</a>
+<ul class="sub-menu">
+	<li id="menu-item-161623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161623"><a href="https://thewartburgwatch.com/the-basics/">The Basics</a></li>
+	<li id="menu-item-22763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22763"><a href="https://thewartburgwatch.com/about-tww/about-us-dee/">Dee</a></li>
+	<li id="menu-item-22764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22764"><a href="https://thewartburgwatch.com/about-tww/about-us-deb/">Deb</a></li>
+	<li id="menu-item-161619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161619"><a href="https://thewartburgwatch.com/about-tww/gbtc/">GBTC</a></li>
+	<li id="menu-item-161620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161620"><a href="https://thewartburgwatch.com/about-tww/the-wartburg-watch-blog-rules-reasons/">TWW Rules of the Road</a></li>
+	<li id="menu-item-158832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-158832"><a href="https://thewartburgwatch.com/before-you-comment/">Before You Comment &#8211; !Must Read!</a></li>
+	<li id="menu-item-22759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22759"><a href="https://thewartburgwatch.com/about-tww/about-us-our-faq/">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-22774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22774"><a href="https://thewartburgwatch.com/echurchwartburg-2/">Online Church</a></li>
+<li id="menu-item-22776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22776"><a href="#">Follow Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-22775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22775"><a href="https://thewartburgwatch.com/follow-us-2/follow-tww-on-twitter/">Twitter</a></li>
+	<li id="menu-item-22757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22757"><a href="https://thewartburgwatch.com/follow-us-2/rss-feeds/">RSS Feeds</a></li>
+</ul>
+</li>
+<li id="menu-item-22762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22762"><a href="https://thewartburgwatch.com/about-us-contacting-us/">Contacting Us</a></li>
+<li id="menu-item-48691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48691"><a href="https://thewartburgwatch.com/open-discussion-page/">Open Discussion</a></li>
+<li id="menu-item-73280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73280"><a href="https://thewartburgwatch.com/permpage-searching-the-wartburg-watch/">Search TWW</a></li>
+</ul></div>		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+		<div id="container_wrap" class="container-single equal_height right-1-col">
+		<div id="container">
+	<div id="sitewide-top-widget-area" class="widget-area sidebar_top" role="complementary">
+<aside id="text-12" class="widget widget_text">			<div class="textwidget"></div>
+		</aside>	</div><!-- sitewide-top-widget-area -->
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="https://thewartburgwatch.com/2011/06/09/pedophilia-snap-bishops-accountability-and-the-impotent-sbc-leadership/" rel="prev"><span class="meta-nav">&larr;</span> Pedophilia, SNAP, Bishop&#8217;s Accountability and the Impotent SBC Leadership</a></div>
+				<div class="nav-next"><a href="https://thewartburgwatch.com/2011/06/10/wade-burleson-the-sbc-continues-its-hypocrisy-on-pedophiles/" rel="next">Wade Burleson: The SBC continues its hypocrisy on pedophiles <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-10401" class="content-single  post-10401 post type-post status-publish format-standard hentry category-sexual-abuse category-theology">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">Cheap Grace and Cheap Platitudes: The SBC Leading the Way</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap post_hide_cats post_hide_tags post_hide_permalink">
+			<span class="sep posted-on">Posted on </span><a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/" title="02:00 PM" rel="bookmark"><time class="entry-date" datetime="2011-06-10T14:00:13-04:00">Fri Jun 10, 2011</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://thewartburgwatch.com/author/dee/" title="View all posts by dee" rel="author">dee</a></span></span><span class="updated">June 10, 2011</span><span class="post-avatar-tiny"><img alt='avatar' src='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=22&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=44&#038;d=blank&#038;r=g 2x' class='avatar avatar-22 photo' height='22' width='22' /></span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p style="text-align: center;">
+	&ldquo;Forgiveness does not mean excusing.&rdquo; ~C.S. Lewis</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">
+	<a href="http://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/thumbnail-aspx/" rel="attachment wp-att-10404"><img alt="" class="aligncenter size-thumbnail wp-image-10404" height="150" src="http://thewartburgwatch.com/wp/wp-content/uploads/2011/06/thumbnail.aspx_-150x150.jpg" title="thumbnail.aspx" width="150" srcset="https://thewartburgwatch.com/tww2/wp-content/uploads/2011/06/thumbnail.aspx_-150x150.jpg 150w, https://thewartburgwatch.com/tww2/wp-content/uploads/2011/06/thumbnail.aspx_-64x64.jpg 64w, https://thewartburgwatch.com/tww2/wp-content/uploads/2011/06/thumbnail.aspx_-128x128.jpg 128w" sizes="(max-width: 150px) 100vw, 150px" /></a></p>
+<p style="text-align: center;">Dietrich Bonhoeffer<br />
+	&nbsp;</p>
+<p>&nbsp;</p>
+<p>Continuing on in my &ldquo;intemperate&rdquo; tirade, I present the topic of cheap grace.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>Years ago, when I first became a Christian, I went on a cruise with my dad (a non-Christian). A friend gave me the book The Cost of Discipleship by Dietrich Bonhoeffer. I spent most of the cruise shaken to my core.</p>
+<p>
+	&nbsp;</p>
+<p>The premise of this book is simple. Bonhoeffer, who died in a prison camp for his part in an assassination attempt on Adolf Hitler (note to patriarchs-this is a real man), emphasized when Christ bids a man to come, he bids him to come and die. He also said that we must take up the Cross with all of its implications.<br />
+	&nbsp;</p>
+<p>I became a Christian in the Boston area. At the time I knew virtually no Christians, having become a Christian during an episode of Star Trek. I knew a couple of seminarians but no one my age. However, I pursued the faith with a vigor given to me by God. As time went on, however, I met more and more professing Christians who had a seemingly lackadaisical attitude towards the faith.<br />
+	&nbsp;</p>
+<p>One woman told me she was glad for &ldquo;once saved; always saved&rdquo; because she shure wasn&rsquo;t living the faith. When I asked why not, she just shrugged and continued partying. There seemed to be little remorse or concern about her lack of spiritual interest.<br />
+	&nbsp;</p>
+<p>I have had more people inform me that so and so is &quot;saved&quot; because he &quot;walked the aisle&quot; and &quot;accepted Jesus into his heart&quot; at a church or Christian gathering. These supposedly saved folks exhibited little regard for the faith or their activities.<br />
+	&nbsp;</p>
+<p>I asked an elder in Texas why so many people profess the faith and so few people seem to show any effort in pursuing the faith. He said the longer he was a Christian, the more people he believed were not Christian in spite of their protests to the contrary.<br />
+	&nbsp;</p>
+<p>Pete Briscoe, an awesome pastor in Texas, dove into this topic and discussed chronic sin. I am paraphrasing what he said. He thought that the difference between a Christian and one who confesses but does not possess the faith is how that person responds to the sin. True Christians fall down, realize their sin, repent, pick themselves up and continue in this process until the day they go home.<br />
+	&nbsp;</p>
+<p>In contrast, a non-possesser of the faith, falls down, doesn&rsquo;t give two hoots about it, does relatively little to prevent such a repeat fall and mutters something about &ldquo;once saved, always saved.&rdquo;</p>
+<p>&nbsp;</p>
+<p>The Christian faith in America has entered what Michael Spencer called the &quot;post evangelical wilderness&quot;. Everyone defines what is right in their own eyes and splintering is occurring at an alarming rate. How else would pastors like Ed Young Jr, Joel Osteen, and Benny Hinn achieve such worldly success?<br />
+	&nbsp;</p>
+<p>We now offer cheap grace and just about cheap everything else. This would include cheap forgiveness, cheap healing, cheap faith and cheap repentance.<br />
+	&nbsp;</p>
+<p>What is the posture of the true Christian? We must be willing to offer forgiveness when it is asked of us. Here is a link to an article called <strong>Beware of Cheap Forgiveness.</strong> <a href="http://raynoah.com/2011/02/08/beware-of-cheap-forgiveness/">LINK</a><br />
+	&nbsp;</p>
+<p><span id="more-10401"></span><br />
+	&nbsp;</p>
+<p>The writer takes on the passage that claims you must forgive or God will not forgive you. Matthew 6:14-15 (NIV) &quot;For if you forgive men when they sin against you, your heavenly Father will also forgive you. But, if you do not forgive men their sins, your Father will not forgive your sins.&quot;<br />
+	&nbsp;</p>
+<p>Does this verse really mean that unless you forgive &ldquo;Brother X&rsquo;s sin against you&rdquo;, God will not forgive your sins?<br />
+	&nbsp;</p>
+<p>The author calls our attention to several verses such as Colossians 3:13 (NIV) <em>&quot; Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.&quot;</em><br />
+	&nbsp;</p>
+<p>He says that such verses state that &ldquo;<em>we are commanded to forgive others in the same manner that God forgives us.&rdquo;</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;He goes on to elaborate the following. <em>&ldquo;How does God forgive us? Only when we confess. Confession opens the door to forgiveness. I John 1:9 says, &ldquo;If&hellip;&rdquo; underscore that conditional clause, &ldquo;&hellip;if we confess our sins&hellip;&rdquo; then comes the apodosis, or the consequence, &ldquo;God will forgive our sins, and cleanse us from all unrighteousness.&rdquo; Nothing in the Bible indicates that God forgives sin if people don&rsquo;t confess and repent of the sin.&rdquo;</em></p>
+<p>&nbsp;</p>
+<p><em>&quot;Furthermore, the Bible always calls the sinner to repentance&mdash;that is, a radical reversal of the attitudes and actions that resulted in the sin. Confession without repentance is always hollow.&rdquo;</em>&nbsp;&nbsp;He refers to Acts 2:37-38 (ESV)</p>
+<p>&nbsp;</p>
+<p><em>Now when they heard this they were cut to the heart, and said to Peter and the rest of the apostles, &quot;Brothers,what shall we do?&quot; And Peter said to them, &quot;Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.&quot;</em></p>
+<p>&nbsp;</p>
+<p>Note in this verse the following pints. The listeners were &ldquo;cut to the heart.&rdquo; They felt remorse. They were told to repent and then they would receive the forgiveness of their sins. The author concludes &ldquo;<em>What Scripture does teach is that we must always be ready and willing, as God is always ready and willing, to forgive those who repent. But forgiveness without confession and repentance doesn&rsquo;t lead to reconciliation.&rdquo;<br />
+	</em></p>
+<p>&nbsp;</p>
+<p>The author then goes on to quote Bonhoeffer.<br />
+	&nbsp;</p>
+<p><em>&ldquo;cheap grace&hellip; which amounts to the justification of sin without the justification of the repentant sinner.&rdquo;</em></p>
+<p>&nbsp;</p>
+<p>It is imperative that the sinner deeply repent in order to achieve forgiveness from God and then from the offended party. If this step is not taken, true reconciliation with both God and man is not possible. Isn&rsquo;t that what it is all about, a restored relationship? The author says &ldquo;<em>Genuine forgiveness and Biblical reconciliation require a two-person transaction that is enabled by the confession and repentance.&rdquo;</em></p>
+<p>&nbsp;</p>
+<p>I found an excellent article in the National Catholic Reporter written by Bill Tammeus, who calls himself a small &ldquo;c&rdquo; catholic (meaning he is Protestant), which addresses the issue of forgiveness in light of the terrible sex abuse debacle in the RCC. <a href="http://ncronline.org/blogs/small-c-catholic/forgiveness-sex-abuse-doesnt-come-cheap">LINK </a><br />
+	&nbsp;</p>
+<p>On a side note: there have been far too many Baptists who have smugly pointed to the abuses in the RCC. There are far too many sex scandals in the SBC for anyone to point fingers elsewhere.</p>
+<p>&nbsp;</p>
+<p>I don&rsquo;t necessarily agree in total with the author&rsquo;s position but I feel that he brings some much needed perspective to the situation. I fully expect that some readers will dismiss the article out of hand just because it is in a Catholic publication. Please don&rsquo;t. His words are thought provoking. I also would love to get the perspectives of our Calvinist readers about his view of the Reformed tradition approach to sin in the first paragraph.</p>
+<p>	&nbsp;</p>
+<p><em>&ldquo;At one time I might have said, simply (and simplistically), that I think it&rsquo;s everyone&rsquo;s obligation to forgive and move on. I&rsquo;d have said that out of my Reformed Tradition (Presbyterian) theology, and no doubt I could have said sincere words to justify it theologically.&rdquo;</em></p>
+<p>&nbsp;</p>
+<p>He now disagrees with this perspective and goes onto explain.&nbsp;He believes that only the victim has the right to forgive a criminal act. In other words, if a pedophile raped 10 boys, only the boys and the family can forgive him. A pastor cannot forgive these acts for the boys. Yet, how many churches end up forgiving the criminal and ignoring the victims?</p>
+<p>&nbsp;</p>
+<p>The author expresses concern about the <strong>&ldquo;instant forgiveness&rdquo;</strong> offered by the Amish to the man who killed five children. He claims that such forgiveness is based in self interest due to faulty theology. He says:</p>
+<p>
+	&nbsp;</p>
+<p><em>&ldquo;Indeed, once one understood the foundational motive for that immediate forgiveness (the German Lutheran martyr Dietrich Bonhoeffer called such forgiveness &ldquo;cheap grace&rdquo;) the act became even more problematic. That&rsquo;s because the Amish understood that if they didn&rsquo;t forgive, they themselves would not be forgiven by God and that would jeopardize their chances for an eternal relationship with God. A harsh way of putting it is that they didn&rsquo;t forgive as an act of charity but as an <strong>act of self-interest.</strong>&rdquo;</em><br />
+	&nbsp;</p>
+<p><em>A most interesting perspective on forgiveness ends this thought provoking article. He says that forgiveness, in the sex abuse scandal, would involve a transaction involving more that just the pedophile priest and the victim. He says that the entire church leadership must be involved in the act of repentance since the leadership deliberately covered up for the abusers.</p>
+<p>	</em></p>
+<p>&nbsp;</p>
+<p><em>He ends his article by saying &ldquo;Forgiveness can and should be liberating, but not if we do it on the cheap. In the end, there&rsquo;s no iPhone app for it.&rdquo;<br />
+	</em></p>
+<p>&nbsp;</p>
+<p>I leave you with this short video on cheap forgiveness. Although it is directed at forgiveness within marriage, it fits well for the church as well.</p>
+<p>&nbsp;</p>
+<p>Here are two quotes from Bonhoeffer to contemplate after you view this video.<a href="http://en.wikipedia.org/wiki/The_Cost_of_Discipleship"> LINK</a><br />
+	&nbsp;</p>
+<p><em>&quot;Cheap grace is the preaching of forgiveness without requiring repentance, baptism without church discipline. Communion without confession. Cheap grace is grace without discipleship, grace without the cross, grace without Jesus Christ.&quot;<br />
+	</em></p>
+<p>&nbsp;</p>
+<p><em>&quot;Costly grace confronts us as a gracious call to follow Jesus, it comes as a word of forgiveness to the broken spirit and the contrite heart. It is costly because it compels a man to submit to the yoke of Christ and follow him; it is grace because Jesus says: &quot;My yoke is easy and my burden is light.&quot;</em></p>
+<p>	&nbsp;</p>
+<p><iframe allowfullscreen="" frameborder="0" height="349" src="http://www.youtube.com/embed/PCTYaSH4HWM" width="560"></iframe></p>
+<p>
+	&nbsp;</p>
+<p>Lydia&#39;s Corner:&nbsp;<span style="font-size: 10px;">1 Samuel 14:1-52&nbsp;John 7:31-53 &nbsp;Psalm 109:1-31&nbsp;Proverbs 15:5-7</span></p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-10401 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="https://thewartburgwatch.com/2011/06/09/pedophilia-snap-bishops-accountability-and-the-impotent-sbc-leadership/" rel="prev"><span class="meta-nav">&larr;</span> Pedophilia, SNAP, Bishop&#8217;s Accountability and the Impotent SBC Leadership</a></div>
+				<div class="nav-next"><a href="https://thewartburgwatch.com/2011/06/10/wade-burleson-the-sbc-continues-its-hypocrisy-on-pedophiles/" rel="next">Wade Burleson: The SBC continues its hypocrisy on pedophiles <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>Cheap Grace and Cheap Platitudes: The SBC Leading the Way</em> &#8212; 16 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-21664" >
+		<article id="comment-21664" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Karlton G. Kemerait</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21664"><time datetime="2011-06-10T14:08:47-04:00">Fri Jun 10, 2011 at 02:08 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Dee,</p>
+<p>you said &#8220;&#8230;who died in a prison camp for his part in an assassination attempt on Adolf Hitler (note to patriarchs-this is a real man)&#8230;&#8221;</p>
+<p>I hope the parenthetical statement is not based on the preceding statement? You not saying he was a &#8220;Real&#8221; man because he attempted to assassinate Hitler and certainly not, I wouldn&#8217;t think, because he failed in that attempt are you?</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21666" >
+		<article id="comment-21666" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Anonymous</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21666"><time datetime="2011-06-10T14:19:48-04:00">Fri Jun 10, 2011 at 02:19 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Oh no, real men would have &#8220;reasoned&#8221; with Hitler and used lots of stats. I am sure that would have worked. Wonder why we did not think of that with bin Laden?</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21668" >
+		<article id="comment-21668" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Martin</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21668"><time datetime="2011-06-10T14:30:47-04:00">Fri Jun 10, 2011 at 02:30 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Karlton, I think the references to &#8220;real men&#8221; or girlie men is a response to the patriarchal focus on gender roles. The TWW women are using their own faulty doctrine against them. I think it is hilarious. Doug Phillips, Piper, Eldridge, etc are always making the man out to be the warrior and great spiritual leader.</p>
+<p>I do understand your point but think you are missing the larger point of the post. I am not sure if this is an oversight on your part or simply a way to refocus the conversation to one you think is an easy win for your ego.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-dee bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-21682" >
+		<article id="comment-21682" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">dee</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21682"><time datetime="2011-06-10T15:31:48-04:00">Fri Jun 10, 2011 at 03:31 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Anonymous</p>
+<p>Some of these guys remind me of Neville Chamberlain.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-dee bypostauthor even thread-even depth-1" id="li-comment-21684" >
+		<article id="comment-21684" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">dee</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21684"><time datetime="2011-06-10T15:32:22-04:00">Fri Jun 10, 2011 at 03:32 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Karl</p>
+<p>He gave up his life to save the lives of many Jews. He was willing to take a risk. That is a real man.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-dee bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-21685" >
+		<article id="comment-21685" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/5083f9533f7a285098f835d5c3aff9e7?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">dee</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21685"><time datetime="2011-06-10T15:33:21-04:00">Fri Jun 10, 2011 at 03:33 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Karl</p>
+<p>And then he offered comfort and care to other prisoners before he was executed. Read his Letters and Papers from Prison.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21687" >
+		<article id="comment-21687" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/0f4e4f53609c0082576f3974949a9402?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/0f4e4f53609c0082576f3974949a9402?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Anonymous</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21687"><time datetime="2011-06-10T15:42:10-04:00">Fri Jun 10, 2011 at 03:42 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Great post.  You mention some great leaders in the faith and some great concepts and truths here.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21698" >
+		<article id="comment-21698" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Deb</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21698"><time datetime="2011-06-10T20:36:10-04:00">Fri Jun 10, 2011 at 08:36 PM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Dee,</p>
+<p>Great post!  You have given all of us much to ponder.</p>
+<p>Martin said,</p>
+<p>&#8220;The TWW women are using their own faulty doctrine against them&#8221;</p>
+<p>Care to elaborate on our &#8220;faulty doctrine&#8221; here at TWW?  I am most interested.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21703" >
+		<article id="comment-21703" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Martin</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21703"><time datetime="2011-06-11T01:15:31-04:00">Sat Jun 11, 2011 at 01:15 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>“The TWW women are using their own faulty doctrine against them”</p>
+<p>It is the fault of my grammatical structure. I meant that the patriarchs have faulty doctrine and you are using it against them in ways I am finding quite amusing. In other words, you are taking what they teach and pointing out how they are not really living out what they teach.</p>
+<p>For example, they claim to be protectors and responsible but they spend all their time on gender roles and ignore ministers in their midst who are predators. How is that being the &#8220;protectors&#8221; they claim to be? You call them girly men and it fits</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21704" >
+		<article id="comment-21704" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Martin</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21704"><time datetime="2011-06-11T01:18:22-04:00">Sat Jun 11, 2011 at 01:18 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&#8220;Some of these guys remind me of Neville Chamberlain&#8221;</p>
+<p>Some are even more like Marshall Petain and collaborate with the enemy. Steve Gaines and Paige Patterson come to mind&#8230;.<br />
+.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21706" >
+		<article id="comment-21706" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Deb</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21706"><time datetime="2011-06-11T06:48:39-04:00">Sat Jun 11, 2011 at 06:48 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Martin,</p>
+<p>Thanks so much for your clarification.  Yes, the patriarchs emphasize over and over again Scripture verses that support their extra-Biblical teaching and ignore the rest.  I hope we are helping our brothers and sisters in Christ to understand that.  </p>
+<p>There will be much more to come on this topic because it&#8217;s definitely a HOT BUTTON issue with us.  </p>
+<p>Blessings.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21707" >
+		<article id="comment-21707" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Arce</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21707"><time datetime="2011-06-11T07:16:14-04:00">Sat Jun 11, 2011 at 07:16 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>The whole submission thing has been so badly exegeted, as have several of Paul&#8217;s passages that seem to suggest a secondary role for women.  The only clear statement he made was as to his practice not HIS practice, using the word &#8220;I&#8221;.  Patriarchy and a secondary role for women is a phenomenon of the Fall.  It is the result of sin.  God&#8217;s comments to Adam and Eve are descriptive not prescriptive, and boy was God right about that.  Men can be boors, abusive, power seeking over the women and children around them.</p>
+<p>Seeking to maintain the male dominance in religion, some have come up with a heresy &#8212; the eternal submission of the Son to the Father (ESS).  Jesus said &#8220;I and the Father are One.&#8221;  Jesus while on earth was submissive to the Father and to their joint plan for our salvation.</p>
+<p>The Bible teaches that we are all priests to each other.  There is no hierarchy seen in the new testament church, which met in homes, including in the home of at least one independent business woman who traveled and carried Paul&#8217;s message to a church.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21708" >
+		<article id="comment-21708" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Arce</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21708"><time datetime="2011-06-11T07:17:46-04:00">Sat Jun 11, 2011 at 07:17 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Many scholars think the whole head covering thing was Paul being sarcastic to the church for even considering such a thing.  How, if circumcision is not important does one come to the conclusion that head covering is.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21710" >
+		<article id="comment-21710" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">Deb</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21710"><time datetime="2011-06-11T07:50:27-04:00">Sat Jun 11, 2011 at 07:50 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Arce,</p>
+<p>Couldn&#8217;t agree with you more!  We have discussed ESS in the past, but we have picked up some new readers. There will be upcoming posts on this topic for their benefit.  </p>
+<p>We will also be getting back into so-called &#8220;Biblical Manhood and Womanhood&#8221;, which isn&#8217;t biblical at all!  Time is on our side because we are beginning to see the havoc being wreaked by these false doctrines in Sovereign Grace Ministries, a &#8220;family of churches&#8221; which seems to have been enforcing these doctrines for decades.  There is no way to avoid the law of sowing and reaping, and SGM has planted some really BAD seeds.  CJ and Company must really be praying for crop failure.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21714" >
+		<article id="comment-21714" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><span class="fn">anonymous</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21714"><time datetime="2011-06-13T02:25:52-04:00">Mon Jun 13, 2011 at 02:25 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>If forgiveness means not holding onto a grudge and hatred that consumes you and turns you into a bad person, then yes, everyone should forgive.  Just like it is said that the Sabbath was for the benefit of mankind, maybe forgiveness if meant for our inner peace and happiness, and deny Satan a foothold into our lives.  However, there is nothing wrong with simultaneously forgiving, then seeking justice from government and asking God for vengeance.  Doing these things are the only way some people can forgive.  </p>
+<p>I saw a documentary on the late Pope John Paul and how he forgave the man who shot him.  Everyone praised the Pope, rightly so, but I remember being struck that the charges were not dropped and the gunman was still in prison.  I remember thinking that is not fair.  The Pope gets all this credit for being a forgiving person.  But if anyone in my old fundamentalist church had done the same thing, we would be condemned for not dropping all the charges, told it therefore not &#8220;true forgiveness&#8221;, and maybe we weren&#8217;t &#8220;really&#8221; Christians.</p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21744" >
+		<article id="comment-21744" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/940bb9dd9cef9ffa9482bbfa3129198a?s=40&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/940bb9dd9cef9ffa9482bbfa3129198a?s=80&#038;d=blank&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Kirby</span> on <a href="https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/#comment-21744"><time datetime="2011-06-15T00:31:07-04:00">Wed Jun 15, 2011 at 12:31 AM</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>_<br />
+re: Dr. Gary and Barb &#8211; &#8220;America&#8217;s Family Coaches&#8221;?</p>
+<p><strong>Ugh.</strong></p>
+</div>
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="right-1-col equal_height">
+	<div id="sidebar_primary" class="widget-area weaver-clear" role="complementary">
+<aside id="text-11" class="widget widget_text"><h3 class="widget-title">Permanent TWW Pages</h3>			<div class="textwidget"><p><a href="https://thewartburgwatch.com/permpage-the-arc-association-of-related-churches-is-planting-churches-looking-for-flowers-and-scoping-out-demons/">Association of Related Churches</a><br />
+<a href="https://thewartburgwatch.com/permpage-prayer-requests/">Prayer Requests</a><br />
+<a href="https://thewartburgwatch.com/permpage-how-to-resign-from-a-church-whether-or-not-you-are-under-church-discipline/">How to Resign from a Church</a><br />
+<a href="https://thewartburgwatch.com/permpage-church-membership-covenants-legal-contracts-that-are-not-biblical/">Membership Covenants</a><br />
+<a href="https://thewartburgwatch.com/permpage-church-discipline-and-abuse/">Church Discipline</a><br />
+<a href="https://thewartburgwatch.com/permpage-sovereign-grace-churches-ministries-a-troubled-church-planting-network/">Sovereign Grace Ministries</a><br />
+<a href="https://thewartburgwatch.com/my-comment-was-deleted/">My Comment was Deleted</a><br />
+<a href="https://thewartburgwatch.com/open-discussion-page/">Open Discussion Page</a></p>
+<p><a href="https://thewartburgwatch.com/permpage-searching-the-wartburg-watch/">Search TWW</a></p>
+<p><a href="https://thewartburgwatch.com/permpage-permanent-pages/">Permanent Pages Descriptions</a></p>
+</div>
+		</aside><aside id="text-8" class="widget widget_text"><h3 class="widget-title">Twitter</h3>			<div class="textwidget"><p>We are @wartwatch at twitter.com</p>
+<p>Twitter (Elon) has made changes that prevent us from displaying recent tweets.</p>
+</div>
+		</aside><aside id="categories-3" class="widget widget_categories"><h3 class="widget-title">Categories</h3><form action="https://thewartburgwatch.com" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="423">9 Marks</option>
+	<option class="level-0" value="319">9Marks</option>
+	<option class="level-0" value="403">Abuse-physical</option>
+	<option class="level-0" value="822">Abusive Behavior</option>
+	<option class="level-0" value="28">Abusive church tactics</option>
+	<option class="level-0" value="405">Academics</option>
+	<option class="level-0" value="163">Acts 29</option>
+	<option class="level-0" value="58">Al Mohler</option>
+	<option class="level-0" value="259">Ambassadors of Reconciliation</option>
+	<option class="level-0" value="214">American Scientific Affiliation</option>
+	<option class="level-0" value="724">Anabaptists</option>
+	<option class="level-0" value="400">Anglican</option>
+	<option class="level-0" value="741">AOG</option>
+	<option class="level-0" value="358">ARC &#8211; Assoc. of Related Churches</option>
+	<option class="level-0" value="275">Arminianism</option>
+	<option class="level-0" value="698">Assemblies of God</option>
+	<option class="level-0" value="177">Atheism/New Atheism</option>
+	<option class="level-0" value="12">Authoritarian leadership</option>
+	<option class="level-0" value="289">Bent Myer/Paul Petry</option>
+	<option class="level-0" value="330">Biblical Counseling</option>
+	<option class="level-0" value="51">Biblical literalism</option>
+	<option class="level-0" value="168">Bill Gothard</option>
+	<option class="level-0" value="117">Biologos</option>
+	<option class="level-0" value="190">Blog Site News</option>
+	<option class="level-0" value="135">Blogging and the church</option>
+	<option class="level-0" value="6">Book Reviews</option>
+	<option class="level-0" value="171">Botkin</option>
+	<option class="level-0" value="306">Breaking News</option>
+	<option class="level-0" value="13">C.J. Mahaney</option>
+	<option class="level-0" value="425">Caing Well</option>
+	<option class="level-0" value="296">Calvary Chapel</option>
+	<option class="level-0" value="372">Calvary Temple</option>
+	<option class="level-0" value="9">Calvinism/Calvinista</option>
+	<option class="level-0" value="522">Catch The Fire Raleigh</option>
+	<option class="level-0" value="327">CBMW</option>
+	<option class="level-0" value="483">Cedarville University</option>
+	<option class="level-0" value="365">Celebrity Christianity</option>
+	<option class="level-0" value="422">Celebrity Pastors</option>
+	<option class="level-0" value="428">Charismatic</option>
+	<option class="level-0" value="355">Child abuse</option>
+	<option class="level-0" value="873">Christian Nationalism</option>
+	<option class="level-0" value="331">Christian urban legends</option>
+	<option class="level-0" value="554">Christmas</option>
+	<option class="level-0" value="501">Church and the law</option>
+	<option class="level-0" value="41">Church conflict</option>
+	<option class="level-0" value="148">Church discipline</option>
+	<option class="level-0" value="354">Church governance/bylaws</option>
+	<option class="level-0" value="353">Church growth</option>
+	<option class="level-0" value="249">Church History</option>
+	<option class="level-0" value="419">Church of England</option>
+	<option class="level-0" value="413">Clergy</option>
+	<option class="level-0" value="535">Codswallop</option>
+	<option class="level-0" value="283">Complementarianism</option>
+	<option class="level-0" value="32">Conferences</option>
+	<option class="level-0" value="513">Corporal punishment</option>
+	<option class="level-0" value="47">Council of Biblical Manhood and Womanhood</option>
+	<option class="level-0" value="382">counseling</option>
+	<option class="level-0" value="208">Covenants/Contracts</option>
+	<option class="level-0" value="374">Crazy stuff</option>
+	<option class="level-0" value="70">Creationism</option>
+	<option class="level-0" value="395">Crimes</option>
+	<option class="level-0" value="388">Crossway</option>
+	<option class="level-0" value="223">Cults</option>
+	<option class="level-0" value="553">Current Topics</option>
+	<option class="level-0" value="475">Dave Ramsey</option>
+	<option class="level-0" value="431">Death and dying</option>
+	<option class="level-0" value="671">Deconstruction</option>
+	<option class="level-0" value="684">Deconstruction.</option>
+	<option class="level-0" value="366">demons</option>
+	<option class="level-0" value="432">Disreputable religious leaders</option>
+	<option class="level-0" value="119">Doctrine</option>
+	<option class="level-0" value="304">Domestic Violence</option>
+	<option class="level-0" value="377">Dones/Nones/Leaving Church</option>
+	<option class="level-0" value="169">Doug Phillips/Vision Forum</option>
+	<option class="level-0" value="291">Doug Wilson</option>
+	<option class="level-0" value="689">Duggars</option>
+	<option class="level-0" value="183">ECFA</option>
+	<option class="level-0" value="424">EChurch</option>
+	<option class="level-0" value="285">EChurch@Wartburg</option>
+	<option class="level-0" value="704">Education</option>
+	<option class="level-0" value="384">Egalitarianism</option>
+	<option class="level-0" value="368">Emergence Christianity</option>
+	<option class="level-0" value="845">Episcopals</option>
+	<option class="level-0" value="385">ESS</option>
+	<option class="level-0" value="394">etc.</option>
+	<option class="level-0" value="143">Eternal Subordination of the Son</option>
+	<option class="level-0" value="418">Ethics</option>
+	<option class="level-0" value="369">Evangelical Free Church</option>
+	<option class="level-0" value="412">Evangelicalism</option>
+	<option class="level-0" value="433">Fallen Pastors</option>
+	<option class="level-0" value="147">Family Integrated Church</option>
+	<option class="level-0" value="123">Fixed Point Foundation</option>
+	<option class="level-0" value="420">Founders</option>
+	<option class="level-0" value="270">Gender Roles</option>
+	<option class="level-0" value="90">Gospel Coalition</option>
+	<option class="level-0" value="748">Gossip</option>
+	<option class="level-0" value="772">GRACE</option>
+	<option class="level-0" value="860">Grief</option>
+	<option class="level-0" value="532">Hillsong</option>
+	<option class="level-0" value="218">Homeschooling</option>
+	<option class="level-0" value="84">Homosexuality</option>
+	<option class="level-0" value="662">Hostile Christian work environment.</option>
+	<option class="level-0" value="401">Human Trafficking</option>
+	<option class="level-0" value="399">Humor</option>
+	<option class="level-0" value="242">IFB</option>
+	<option class="level-0" value="430">Illness</option>
+	<option class="level-0" value="381">Integrity</option>
+	<option class="level-0" value="718">Investigation</option>
+	<option class="level-0" value="297">James MacDonald</option>
+	<option class="level-0" value="152">Joel Osteen</option>
+	<option class="level-0" value="174">John Calvin</option>
+	<option class="level-0" value="280">John MacArthur</option>
+	<option class="level-0" value="10">John Piper</option>
+	<option class="level-0" value="851">Joshua Harris</option>
+	<option class="level-0" value="869">Kevin DeYoung</option>
+	<option class="level-0" value="624">Law and Gospel</option>
+	<option class="level-0" value="414">Lawsuits</option>
+	<option class="level-0" value="361">Leaving church</option>
+	<option class="level-0" value="360">Legal</option>
+	<option class="level-0" value="398">Legalism</option>
+	<option class="level-0" value="429">Lutheranism/Martin Luther</option>
+	<option class="level-0" value="57">Mark Dever</option>
+	<option class="level-0" value="14">Mark Driscoll</option>
+	<option class="level-0" value="409">Marriage and Divorce</option>
+	<option class="level-0" value="160">Marriage issues</option>
+	<option class="level-0" value="128">Martin Luther</option>
+	<option class="level-0" value="779">Mary</option>
+	<option class="level-0" value="534">Matt Chandler</option>
+	<option class="level-0" value="449">Membership Covenants</option>
+	<option class="level-0" value="380">Men</option>
+	<option class="level-0" value="308">Mental Illness</option>
+	<option class="level-0" value="778">Methodist Church</option>
+	<option class="level-0" value="241">Michael and Debbie Pearl</option>
+	<option class="level-0" value="343">Missio Alliance</option>
+	<option class="level-0" value="375">Missions</option>
+	<option class="level-0" value="393">mistruths</option>
+	<option class="level-0" value="396">Money and churches</option>
+	<option class="level-0" value="99">Musings</option>
+	<option class="level-0" value="376">New Apostolic Reformation</option>
+	<option class="level-0" value="608">Nondisclosure agreement NDA</option>
+	<option class="level-0" value="359">Older church members</option>
+	<option class="level-0" value="421">Oneness Pentelcostalism</option>
+	<option class="level-0" value="696">Parachurch issues</option>
+	<option class="level-0" value="876">Park Street Church</option>
+	<option class="level-0" value="712">Pastors</option>
+	<option class="level-0" value="389">Pastors and Affairs</option>
+	<option class="level-0" value="105">Patriarchy</option>
+	<option class="level-0" value="877">PCA</option>
+	<option class="level-0" value="533">Peacemakers</option>
+	<option class="level-0" value="206">Peacemakers/CCEF</option>
+	<option class="level-0" value="53">Pending</option>
+	<option class="level-0" value="406">Perry Noble</option>
+	<option class="level-0" value="356">Plagiarism</option>
+	<option class="level-0" value="663">Politics</option>
+	<option class="level-0" value="164">Politics and faith</option>
+	<option class="level-0" value="370">Presbyterian</option>
+	<option class="level-0" value="42">Puritans</option>
+	<option class="level-0" value="104">Quiverfull</option>
+	<option class="level-0" value="482">Racism</option>
+	<option class="level-0" value="292">Racism/Slavery</option>
+	<option class="level-0" value="17">Reformed Baptist</option>
+	<option class="level-0" value="367">Religious trends</option>
+	<option class="level-0" value="371">Rights of Conscience</option>
+	<option class="level-0" value="357">Robert Morris</option>
+	<option class="level-0" value="279">Russell Moore</option>
+	<option class="level-0" value="514">RZIM &#8211; Ravi Zacharias International Ministries</option>
+	<option class="level-0" value="600">Sabbaticals</option>
+	<option class="level-0" value="362">Satan/Demons</option>
+	<option class="level-0" value="16">SBC pastors</option>
+	<option class="level-0" value="27">Science and faith</option>
+	<option class="level-0" value="746">SEBTS</option>
+	<option class="level-0" value="293">Sex Abuse</option>
+	<option class="level-0" value="89">Sexual offenders/pedohilia+the church</option>
+	<option class="level-0" value="139">Shepherding movement</option>
+	<option class="level-0" value="317">Singleness</option>
+	<option class="level-0" value="198">Site News</option>
+	<option class="level-0" value="575">Social media</option>
+	<option class="level-0" value="411">Societal issues</option>
+	<option class="level-0" value="363">Soma</option>
+	<option class="level-0" value="742">Southeastern Baptist Theological Seminary</option>
+	<option class="level-0" value="15">Southern Baptist Convention</option>
+	<option class="level-0" value="145">Southern Baptist Theological Seminary</option>
+	<option class="level-0" value="565">Sovereign Grace Churches</option>
+	<option class="level-0" value="11">Sovereign Grace Ministries</option>
+	<option class="level-0" value="138">Spiritual abuse</option>
+	<option class="level-0" value="491">State and religion</option>
+	<option class="level-0" value="335">Steven Furtick</option>
+	<option class="level-0" value="875">Stupid Christian stuff</option>
+	<option class="level-0" value="141">Submission</option>
+	<option class="level-0" value="386">Substance abuse</option>
+	<option class="level-0" value="450">Tacky pastors</option>
+	<option class="level-0" value="243">Theology</option>
+	<option class="level-0" value="426">Tiffany Thigpen</option>
+	<option class="level-0" value="101">Tithe</option>
+	<option class="level-0" value="60">Together for the Gospel</option>
+	<option class="level-0" value="78">Tom Rich</option>
+	<option class="level-0" value="397">Transitions</option>
+	<option class="level-0" value="521">Tullian Tchividjian</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="809">Vineyard</option>
+	<option class="level-0" value="417">Violence and the church</option>
+	<option class="level-0" value="378">Wade Burleson</option>
+	<option class="level-0" value="387">Wayne Grudem</option>
+	<option class="level-0" value="113">Wealth/ church/pastors/leaders</option>
+	<option class="level-0" value="408">Willow Creek</option>
+	<option class="level-0" value="88">Women and the church</option>
+	<option class="level-0" value="30">Young, Restless and Reformed (YRR)</option>
+</select>
+</form>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+			</aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://thewartburgwatch.com/2024/03/'> March 2024 </option>
+	<option value='https://thewartburgwatch.com/2024/02/'> February 2024 </option>
+	<option value='https://thewartburgwatch.com/2024/01/'> January 2024 </option>
+	<option value='https://thewartburgwatch.com/2023/12/'> December 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/11/'> November 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/10/'> October 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/09/'> September 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/08/'> August 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/07/'> July 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/06/'> June 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/05/'> May 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/04/'> April 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/03/'> March 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/02/'> February 2023 </option>
+	<option value='https://thewartburgwatch.com/2023/01/'> January 2023 </option>
+	<option value='https://thewartburgwatch.com/2022/12/'> December 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/11/'> November 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/10/'> October 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/09/'> September 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/08/'> August 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/07/'> July 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/06/'> June 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/05/'> May 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/04/'> April 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/03/'> March 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/02/'> February 2022 </option>
+	<option value='https://thewartburgwatch.com/2022/01/'> January 2022 </option>
+	<option value='https://thewartburgwatch.com/2021/12/'> December 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/11/'> November 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/10/'> October 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/09/'> September 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/08/'> August 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/07/'> July 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/06/'> June 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/05/'> May 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/04/'> April 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/03/'> March 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/02/'> February 2021 </option>
+	<option value='https://thewartburgwatch.com/2021/01/'> January 2021 </option>
+	<option value='https://thewartburgwatch.com/2020/12/'> December 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/11/'> November 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/10/'> October 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/09/'> September 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/08/'> August 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/07/'> July 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/06/'> June 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/05/'> May 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/04/'> April 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/03/'> March 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/02/'> February 2020 </option>
+	<option value='https://thewartburgwatch.com/2020/01/'> January 2020 </option>
+	<option value='https://thewartburgwatch.com/2019/12/'> December 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/11/'> November 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/10/'> October 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/09/'> September 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/08/'> August 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/07/'> July 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/06/'> June 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/05/'> May 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/04/'> April 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/03/'> March 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/02/'> February 2019 </option>
+	<option value='https://thewartburgwatch.com/2019/01/'> January 2019 </option>
+	<option value='https://thewartburgwatch.com/2018/12/'> December 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/11/'> November 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/10/'> October 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/09/'> September 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/08/'> August 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/07/'> July 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/06/'> June 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/05/'> May 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/04/'> April 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/03/'> March 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/02/'> February 2018 </option>
+	<option value='https://thewartburgwatch.com/2018/01/'> January 2018 </option>
+	<option value='https://thewartburgwatch.com/2017/12/'> December 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/11/'> November 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/10/'> October 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/09/'> September 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/08/'> August 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/07/'> July 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/06/'> June 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/05/'> May 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/04/'> April 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/03/'> March 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/02/'> February 2017 </option>
+	<option value='https://thewartburgwatch.com/2017/01/'> January 2017 </option>
+	<option value='https://thewartburgwatch.com/2016/12/'> December 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/11/'> November 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/10/'> October 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/09/'> September 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/08/'> August 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/07/'> July 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/06/'> June 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/05/'> May 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/04/'> April 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/03/'> March 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/02/'> February 2016 </option>
+	<option value='https://thewartburgwatch.com/2016/01/'> January 2016 </option>
+	<option value='https://thewartburgwatch.com/2015/12/'> December 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/11/'> November 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/10/'> October 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/09/'> September 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/08/'> August 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/07/'> July 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/06/'> June 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/05/'> May 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/04/'> April 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/03/'> March 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/02/'> February 2015 </option>
+	<option value='https://thewartburgwatch.com/2015/01/'> January 2015 </option>
+	<option value='https://thewartburgwatch.com/2014/12/'> December 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/11/'> November 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/10/'> October 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/09/'> September 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/08/'> August 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/07/'> July 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/06/'> June 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/05/'> May 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/04/'> April 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/03/'> March 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/02/'> February 2014 </option>
+	<option value='https://thewartburgwatch.com/2014/01/'> January 2014 </option>
+	<option value='https://thewartburgwatch.com/2013/12/'> December 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/11/'> November 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/10/'> October 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/09/'> September 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/08/'> August 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/07/'> July 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/06/'> June 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/05/'> May 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/04/'> April 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/03/'> March 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/02/'> February 2013 </option>
+	<option value='https://thewartburgwatch.com/2013/01/'> January 2013 </option>
+	<option value='https://thewartburgwatch.com/2012/12/'> December 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/11/'> November 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/10/'> October 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/09/'> September 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/08/'> August 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/07/'> July 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/06/'> June 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/05/'> May 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/04/'> April 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/03/'> March 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/02/'> February 2012 </option>
+	<option value='https://thewartburgwatch.com/2012/01/'> January 2012 </option>
+	<option value='https://thewartburgwatch.com/2011/12/'> December 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/11/'> November 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/10/'> October 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/09/'> September 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/08/'> August 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/07/'> July 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/06/'> June 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/05/'> May 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/04/'> April 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/03/'> March 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/02/'> February 2011 </option>
+	<option value='https://thewartburgwatch.com/2011/01/'> January 2011 </option>
+	<option value='https://thewartburgwatch.com/2010/12/'> December 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/11/'> November 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/10/'> October 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/09/'> September 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/08/'> August 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/07/'> July 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/06/'> June 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/05/'> May 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/04/'> April 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/03/'> March 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/02/'> February 2010 </option>
+	<option value='https://thewartburgwatch.com/2010/01/'> January 2010 </option>
+	<option value='https://thewartburgwatch.com/2009/12/'> December 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/11/'> November 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/10/'> October 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/09/'> September 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/08/'> August 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/07/'> July 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/06/'> June 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/05/'> May 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/04/'> April 2009 </option>
+	<option value='https://thewartburgwatch.com/2009/03/'> March 2009 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-2" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+
+		</aside><aside id="search-2" class="widget widget_search"><h3 class="widget-title">Search Post Titles</h3><form role="search" style="background:transparent;" method="get" class="searchform" action="https://thewartburgwatch.com/" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search TWW" />
+	<input class="searchformimg" type="image" src="/tww2/wp-content/themes/weaver-ii-pro/images/go_button.gif" alt="Search" />
+	</form></aside><aside id="linkcat-2" class="widget widget_links"><h3 class="widget-title">Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.asa3online.org/Voices/" title="A network of Christians in science">American Scientific Affiliation Voices</a></li>
+<li><a href="http://watchkeep.blogspot.com">Amy Smith</a></li>
+<li><a href="https://www.anglicanwatch.com">Anglican Watch</a></li>
+<li><a href="http://www.apttoteach.org/teach/index.php" title="Dee&#8217; favorite Christian teacher, ever!">Apt to Teach</a></li>
+<li><a href="http://www.paradigmcounselingps.com/">Bent Meyer (Seattle counselor)</a></li>
+<li><a href="http://kinnon.tv/">Bill Kinnon.tv</a></li>
+<li><a href="http://futuristguy.wordpress.com">Brad Sargent/Futurist</a></li>
+<li><a href="http://jeriwho.net/lillypad2/" title="Jerri Massi">Christian Fundamentalism-IFB</a></li>
+<li><a href="http://www.cmda.org/wcm/" title="to serve with professional excellence as witnesses of Christ&#8217;s love and compassion, and by advancing biblical principles of healthcare within the Church and to our culture.">Christian Medical Dental Society</a></li>
+<li><a href="https://christianpundit.wordpress.com">Christian Pundit</a></li>
+<li><a href="http://www.equip.org">Christian Research Institute</a></li>
+<li><a href="http://www.churchexiters.com">Church Exiters/Spiritual Abuse Recovery</a></li>
+<li><a href="http://www.divorceminister.com/en/">Divorce Minister</a></li>
+<li><a href="http://eaandfaith.blogspot.com">Emotional Abuse and Your Faith</a></li>
+<li><a href="http://fbcjaxwatchdog.blogspot.com/">FBC Jax Watchdog</a></li>
+<li><a href="http://www.fixed-point.org/" title="committed to publicly defending Christianity through education, events, and the development of innovative resources that empower Christians and challenge skeptics.">Fixed Point Foundation</a></li>
+<li><a href="http://netgrace.org" title="Biz Tchividjian">GRACE</a></li>
+<li><a href="http://blog.christianitytoday.com/women/" title="Discussion of women&#8217;s issues at Christianity Today">Her.meneutics (CT)</a></li>
+<li><a href="http://ergofabulous.org/luther/?">Insults-Martin Luther</a></li>
+<li><a href="http://www.internetmonk.com/">Internet Monk</a></li>
+<li><a href="https://janespeaksup.com">Jane Speaks</a></li>
+<li><a href="http://jeriwho.net/lillypad2/" title="Tracking Abuses in Christian Fundamentalism and Documenting Its Heresies.">Jeri Massi</a></li>
+<li><a href="http://joyfulexiles.com">Joyful Exiles</a></li>
+<li><a href="http://www.larknews.com/">Lark News (funny)</a></li>
+<li><a href="https://lifehurtsyouareafighter.com">Life Hurts. You&#039;re a Fighter.</a></li>
+<li><a href="http://mattbredmond.com/">Matt Redmond</a></li>
+<li><a href="http://megmoseley.com">Meg Moseley</a></li>
+<li><a href="http://www.missioalliance.org">Missio Alliance</a></li>
+<li><a href="http://godsjobcentrestirling.wordpress.com/2013/08/19/discipline-2/">Nick Bulbeck&#039;s blog</a></li>
+<li><a href="http://notesfromthewell.wordpress.com/">Notes From the Well</a></li>
+<li><a href="http://www.paulburleson.com/">Paul Burleson</a></li>
+<li><a href="http://www.reasons.org/" title="Progressive/Old Earth Creationism">Reasons to Believe/Hugh Ross</a></li>
+<li><a href="http://www.recoveryfromabuse.com">Recovery From Abuse</a></li>
+<li><a href="http://www.patheos.com/blogs/rogereolson/">Roger Olson</a></li>
+<li><a href="http://www.patheos.com/blogs/jesuscreed/">Scot McKnight</a></li>
+<li><a href="http://sgmsurvivors.com">SGM Survivors</a></li>
+<li><a href="http://www.snapnetwork.org/" title="(For help with sexual abuse by pastors)">SNAP</a></li>
+<li><a href="http://evangelicalarminians.org/about-us/">Society of Evangelical Arminians</a></li>
+<li><a href="http://spiritualfriendship.org" title="Celibate gays forming deep friendships">Spiritual Friendship</a></li>
+<li><a href="http://spiritualsoundingboard.com">Spiritual Sounding Board</a></li>
+<li><a href="http://stopbaptistpredators.org/">Stop Baptist Predators</a></li>
+<li><a href="http://www.biologos.org/blog" title="Theistic (Christian) Evolution">The Biologos Forum/Francis Collins</a></li>
+<li><a href="http://oneyearbibleonline.com/" title="To assist us in our goal to read through the Bible in one year">The One Year Bible</a></li>
+<li><a href="http://www.pajamapages.com">The Pajama Pages</a></li>
+<li><a href="http://thouarttheman.org/" title="Todd Wilhelm&#8217;s website">Thou Art the Man</a></li>
+<li><a href="http://timfall.wordpress.com">Tim Fall</a></li>
+<li><a href="http://www.kerussocharis.blogspot.com/">Wade Burleson&#039;s Blog</a></li>
+<li><a href="http://www.wthrockmorton.com/">Warren Throckmorton</a></li>
+<li><a href="http://wenatcheethehatchet.blogspot.com/">Wenatchee the Hatchet</a></li>
+
+	</ul>
+</aside>
+	</div><!-- #sidebar_primary .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+&copy 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 - The Wartburg Watch		</span> <!-- #site-info -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/js/pdfobject.min.js?ver=3.9.10'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/js/initplyr.js?ver=3.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var eplocalize = {"ajaxurl":"https:\/\/thewartburgwatch.com\/tww2\/wp-admin\/admin-ajax.php","is_pro_plugin_active":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/js/front.js?ver=3.9.10'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/js/vimeo-player.js?ver=3.9.10'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21'></script>
+<script type='text/javascript'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4'></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/react.min.js?ver=16.9.0'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/vendor/react-dom.min.js?ver=16.9.0'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/escape-html.min.js?ver=1.5.1'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/element.min.js?ver=2.8.2'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/is-shallow-equal.min.js?ver=1.6.1'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/compose.min.js?ver=3.7.2'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/hooks.min.js?ver=2.6.0'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/deprecated.min.js?ver=2.6.1'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/priority-queue.min.js?ver=1.3.1'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/redux-routine.min.js?ver=3.6.2'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-includes/js/dist/data.min.js?ver=4.9.2'></script>
+<script type='text/javascript'>
+( function() {
+	var userId = 0;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+	wp.data.plugins.persistence.__unstableMigrate( { storageKey: storageKey } );
+} )();
+</script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/js/ads.js?ver=3.9.10'></script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/plugins/embedpress/assets/js/documents-viewer-script.js?ver=3.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thewartburgwatch.com/tww2/wp-content/themes/weaver-ii-pro/js/weaverjslib.min.js?ver=2.2.4'></script>
+</div> <!-- #weaver-final -->
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'p3plmcpnl500010'},{'dcenter':'p3'},{'cp_id':'5826179'},{'cp_cache':''},{'cp_cl':'6'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>

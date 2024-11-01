@@ -1,0 +1,5 @@
+
+(defun gene-start ()
+  (interactive)
+  (pen-one (pf-evaluate-entire-terminal-to-get-a-new-terminal/1))
+  (gene-start))

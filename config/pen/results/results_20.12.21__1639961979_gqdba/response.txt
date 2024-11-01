@@ -1,0 +1,4 @@
+shane@mele:~$ cd /home/shane/
+shane@mele:/home/shane$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+shane@mele:/home/shane$ cd Desktop

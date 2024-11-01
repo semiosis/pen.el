@@ -1,0 +1,671 @@
+HTTP/1.1 200 OK
+Date: Wed, 21 Feb 2024 06:42:49 GMT
+Server: Apache
+Upgrade: h2
+Connection: Upgrade, Keep-Alive
+X-Content-Type-Options: nosniff
+Last-Modified: Mon, 12 Feb 2024 01:11:59 GMT
+ETag: "e94c-61124f6eb71f9"
+Accept-Ranges: bytes
+Permissions-Policy: interest-cohort=()
+Cache-Control: max-age=900, public
+Age: 2
+Vary: Accept-Encoding
+Via: e1s
+Content-Length: 16062
+Keep-Alive: timeout=5, max=100
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# dct: http://purl.org/dc/terms/ cc: https://creativecommons.org/ns#">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Denote Emacs Configuration // Take on Rules</title><link rel="canonical" href="https://takeonrules.com/2022/10/09/denote-emacs-configuration/" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="google-site-verification" content="Qrv_HOtNzrtzf4kjCTH5bVcJCMLGyuvjHr7xHQ4jngM" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="searchmysite-verification" content="KDGCBwFTE43aRnfGjmdoWR1h5vgDIIZslBJUDtNafm" />
+<link rel="blogroll" type="application/xml" href="https://takeonrules.com/blogroll.opml" title="Take on Rules Blog Roll" />
+<style media="screen,print">
+  @charset "UTF-8";:root{--body-font:serif;--header-font:sans-serif;--counter-font:serif;--code-font:monospace;--bg-dim:#ede7db;--bg-inactive:#dfd5cf;--bg-ochre:#f0e0cc;--black:#333333;--blue-faint:#003497;--blue-warmer:#0000b0;--blue:#0031a9;--cyan-faint:#005077;--cyan-warmer:#3f578f;--cyan:#005e8b;--fg-alt:#193668;--fg-dim:#595959;--green-faint:#2a5045;--green-warmer:#316500;--green:#006800;--magenta-warmer:#8f0075;--red-faint:#702f00;--red-warmer:#972500;--white:#fbf7f0;--yellow-faint:#624416;--yellow-warmer:#884900;--yellow:#6f5500;--a-external-visited:var(--cyan-warmer);--a-external:var(--blue-faint);--a-visited:var(--cyan);--a:var(--blue);--abbr:var(--dfn);--aside:var(--yellow-faint);--bg-reply-to-email-hover:var(--green-warmer);--bg-reply-to-email:var(--green-faint);--bg:var(--white);--blockquote:var(--green-faint);--border:var(--head-bg);--cite:var(--cyan-warmer);--code:var(--green);--commentary:var(--yellow-faint);--dfn:var(--fg-dim);--bg-disclaimer:var(--bg-ochre);--dt:var(--dfn);--em:var(--fg-alt);--fg-reply-to-email:var(--bg);--fg:var(--black);--h1:var(--fg);--h2:var(--yellow-faint);--h3:var(--fg-alt);--h4:var(--cyan-warmer);--kbd:var(--green-warmer);--margin:var(--blue-faint);--mark-bg:var(--bg-inactive);--mark-fg:var(--fg-dim);--rune:var(--red-warmer);--side-number:var(--blue);--summary:var(--magenta-warmer);--table-bg-thead:var(--bg-inactive);--table-bg-tr-alt:var(--bg-dim);--table-td-fg:var(--red-faint);--table-th-fg:var(--red-warmer);--time:var(--cyan-faint)}@media(prefers-color-scheme:dark){:root{--fg:var(--white);--bg:var(--black);--bg-dim:#1d2235;--bg-inactive:#2b3045;--bg-ochre:#442c2f;--black:#0d0e1c;--blue-faint:#82b0ec;--blue-warmer:#79a8ff;--blue:#2fafff;--cyan-faint:#9ac8e0;--cyan-warmer:#4ae2f0;--cyan:#00d3d0;--fg-alt:#c6daff;--fg-dim:#989898;--green-faint:#88ca9f;--green-warmer:#70b900;--green:#44bc44;--magenta-warmer:#f78fe7;--red-faint:#ff9f80;--red-warmer:#ff6b55;--white:#eeeeee;--yellow-faint:#d2b580;--yellow-warmer:#fec43f;--yellow:#d0bc00}}body{background-color:var(--bg);color:var(--fg)}h1{color:var(--h1)}h2{color:var(--h2)}h3{color:var(--h3)}h4{color:var(--h4)}table{border-top:2px solid var(--table-bg-thead);border-bottom:2px solid var(--table-bg-thead)}table.unstriped tbody tr,table .unstriped .subbody{background-color:var(--table-bg-thead)}table thead th{border-bottom:1px solid var(--table-bg-thead)}table thead tr{background-color:var(--table-bg-thead)}table th{font-weight:700;color:var(--table-th-fg)}table caption,table td{color:var(--table-td-fg)}table tbody th{text-align:left}table tbody .bargraph{color:var(--fg-dim)}table tbody tr:nth-child(odd),table tbody.subhead{background-color:var(--table-bg-tr-alt)}table tfoot td,table tfoot th{border-top-color:var(--table-bg-thead)}blockquote{border-left:1px dotted var(--blockquote)}.epigraphs{width:85%;padding:1rem}.epigraphs:nth-of-type(odd){background-color:var(--bg-dim)}.epigraphs dl{margin-bottom:0}.epigraphs blockquote{border-left:none;padding:0;margin:0}blockquote,.license,blockquote p{color:var(--blockquote)}.h-entry aside,.p-summary{color:var(--aside)}.h-entry aside.margin,.p-summary.margin{color:var(--aside)}.disclaimer{background-color:var(--bg-disclaimer);padding:1rem}.inline-comments{border-left:2px dotted var(--bg-dim);padding-left:1rem}.licensed{border-left:1px dotted var(--code)}.licensed .wrapper{color:var(--code)}.rune{color:var(--rune)}dt{color:var(--dfn);font-weight:700}dfn,.dfn{color:var(--dfn);font-weight:700}abbr{color:var(--abbr)}abbr:hover,abbr:focus,abbr:active{background:var(--abbr);color:var(--bg)}a,[role=note],dfn,.dfn,abbr,code,time,summary{transition:all 300ms}a,.contrast,[role=note] a{color:var(--a)}a:hover,a:focus,a:active,.contrast:hover,.contrast:focus,.contrast:active,[role=note] a:hover,[role=note] a:focus,[role=note] a:active{background:var(--a);color:var(--bg)}a:hover *,a:focus *,a:active *,.contrast:hover *,.contrast:focus *,.contrast:active *,[role=note] a:hover *,[role=note] a:focus *,[role=note] a:active *{color:var(--bg)}a:hover time,a:focus time,a:active time,.contrast:hover time,.contrast:focus time,.contrast:active time,[role=note] a:hover time,[role=note] a:focus time,[role=note] a:active time{background:var(--time)}a:hover code,a:focus code,a:active code,.contrast:hover code,.contrast:focus code,.contrast:active code,[role=note] a:hover code,[role=note] a:focus code,[role=note] a:active code{background:var(--code)}a:hover abbr,a:focus abbr,a:active abbr,.contrast:hover abbr,.contrast:focus abbr,.contrast:active abbr,[role=note] a:hover abbr,[role=note] a:focus abbr,[role=note] a:active abbr{background:var(--abbr)}.h-entry footer .reply-by-email,.h-entry footer button{padding:.5rem .75rem;background:var(--bg-reply-to-email);color:var(--fg-reply-to-email);border-radius:4px}.h-entry footer .reply-by-email:focus,.h-entry footer .reply-by-email:hover,.h-entry footer .reply-by-email:active,.h-entry footer button:focus,.h-entry footer button:hover,.h-entry footer button:active{background:var(--bg-reply-to-email-hover)}a:visited,[role=note] a:visited{color:var(--a-visited)}a:visited:hover,a:visited:focus,a:visited:active,[role=note] a:visited:hover,[role=note] a:visited:focus,[role=note] a:visited:active{background:var(--a-visited);color:var(--bg)}a.offscreen:focus,a.offscreen:active,a.offscreen:hover{background:var(--a);color:var(--bg)}.h-entry em{color:var(--em)}.h-entry cite{color:var(--cite)}.h-entry cite:hover{border-bottom:thin dotted var(--cite)}pre,code{color:var(--code)}pre code{background:var(--bg-dim)}kbd{color:var(--kbd)}s,del,ins{color:var(--commentary)}s p,del p,ins p{color:var(--commentary)}s,del{text-decoration-thickness:1px;text-decoration-color:var(--commentary)}s:hover,s:focus,del:hover,del:focus{text-decoration:none}.margin,.side,.update{color:var(--margin)}ins[role=note]{border-color:var(--commentary)}body.resume .margin,body.resume .side,body.resume .update{color:var(--body)}body.resume small a.ref{display:none}@media screen and (max-width:760px){ins[role=note]{border-left:thin dotted var(--commentary)}}time{color:var(--time)}mark{color:var(--mark-fg);background-color:var(--mark-bg)}details{border-left:1px dotted var(--summary);padding-left:.5rem}summary{color:var(--summary)}summary:hover{background:var(--summary);color:var(--bg)}summary:hover>*{color:var(--bg)}summary:hover time{background:var(--summary)}summary:hover code{background:var(--code)}summary:hover a{background:var(--summary)}summary:hover a:hover{background:var(--summary)}.side-container:after,.side[role=note]:before,.side-label,.side-toggler{color:var(--side-number)}html,body{height:100%}html{scroll-behavior:smooth;vertical-align:baseline;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{margin-left:auto;margin-right:auto;padding-left:12.5%;font-family:var(--body-font);counter-reset:sidenote-counter}body,.list-page ul{width:87.5%}.site-nav-home,h1,h2,h3,h4{font-family:var(--header-font);font-weight:400}.site-nav-home,h1{font-size:1.8rem}h2{font-size:1.5rem}h3{font-size:1.3rem}h4{font-size:1.2rem}abbr{cursor:help}p,summary,li{vertical-align:baseline}figure,blockquote{margin-left:0;margin-right:0;padding-left:0;padding-right:0}small a.ref{font-size:xx-small}.verse{font-family:var(--body-font);font-style:italic;color:var(--fg);padding:0}.verse.mono{font-family:var(--code-font)}blockquote{width:55%;padding-left:1rem}blockquote p,blockquote .group,blockquote ul,blockquote ol,blockquote dl,blockquote h2,blockquote h3,blockquote h4,blockquote footer{width:90%}blockquote .verse{width:auto;color:var(--blockquote)}blockquote footer{text-align:right;margin-left:1rem;margin-top:1rem}nav [role=list] [role=listitem]{display:inline-block}.epigraph{width:45%;padding-left:5%;margin-top:2rem;margin-bottom:2rem;border-left:none;font-style:italic}@media screen and (max-width:760px){.epigraph{width:75%}}.epigraph .p-author{font-style:normal}.full-width .epigraphs blockquote{width:100%}.full-width .epigraphs pre{width:100%}.fantasy{font-family:fantasy}.cursive{font-family:cursive}.cursive cite:before{content:"«"}.cursive cite:after{content:"»"}.cursive [role=note]{font-family:var(--body-font)}.table-wrapper{overflow-x:auto;padding:1rem 0}blockquote .table-wrapper{width:auto}table.full{width:100%;max-width:100%}table{width:auto;margin:0 auto;border-spacing:0}table .l{text-align:left}table .c{text-align:center}table .r{text-align:right}tbody tr.subhead th{text-align:left}.subbody td{padding-left:1.5rem}tfoot td,tfoot th{border-top-width:1px;border-top-style:solid}th,tfoot td{text-align:center}th,td{padding:.3rem}td{text-align:left}caption{text-align:left;width:auto;margin-left:auto;margin-right:auto;caption-side:top}figure{max-width:55%}img{max-width:100%}figcaption{float:right;clear:right;margin-right:-50%;vertical-align:baseline;position:relative;max-width:40%;width:40%}.type-tags,.type-series,.full-width{max-width:90%}.type-tags section>ul,.type-tags section>ol,.type-tags h2,.type-tags h3,.type-tags h4,.type-tags summary,.type-tags p,.type-tags footer,.type-tags .table-wrapper,.type-tags pre,.type-tags dl,.type-series section>ul,.type-series section>ol,.type-series h2,.type-series h3,.type-series h4,.type-series summary,.type-series p,.type-series footer,.type-series .table-wrapper,.type-series pre,.type-series dl,.full-width section>ul,.full-width section>ol,.full-width h2,.full-width h3,.full-width h4,.full-width summary,.full-width p,.full-width footer,.full-width .table-wrapper,.full-width pre,.full-width dl{width:85%}h2,h3,h4,summary,p,.table-wrapper,pre,dl{width:55%}.p-summary{width:65%}body>header hr{display:none}body>header>nav{padding:1rem 0}body>header>nav.skip-links{padding:0}body>header>nav h1{display:inline-block;margin:0}body>header>nav .site-nav-home{display:inline;margin:0}body>header>nav a{letter-spacing:.15em;font-style:normal;font-size:1.2rem;font-family:var(--header-font);text-decoration-style:double;display:inline-block;margin:1rem 2rem 0 auto;vertical-align:baseline;font-variant:small-caps}body>footer{padding-bottom:1rem;width:85%;text-align:center;font-family:var(--header-font)}pre,pre code{font-family:var(--code-font);overflow-x:auto}pre{padding:0 1.5%}pre code{padding:1.5%;display:block;white-space:pre}kbd,code{font-family:var(--code-font)}kbd{padding:0 2px;margin:0 1px;border-radius:4px;background:var(--bg-dim)}.note,[role=note]{margin-top:0;float:right;clear:right;margin-right:0;margin-bottom:1rem;width:50%;vertical-align:baseline;position:relative}.note>*:first-child,[role=note]>*:first-child{margin-top:0}.note .fullwidth,[role=note] .fullwidth{max-width:100%}.note p,.note dl,.note.table-wrapper table,[role=note] p,[role=note] dl,[role=note].table-wrapper table{width:100%}.note h2,.note h3,.note h4,[role=note] h2,[role=note] h3,[role=note] h4{width:auto}.note dl,[role=note] dl{display:block}.note ol,.note ul,.note pre,.note code,.note blockquote,[role=note] ol,[role=note] ul,[role=note] pre,[role=note] code,[role=note] blockquote{width:87.5%}.note.side,[role=note].side{margin:0 -60% 1rem 0;width:50%}figcaption p{width:100%}figure[role=note]{max-width:100%}figure[role=note] figcaption{margin-right:0;float:none;clear:both;max-width:100%;width:100%}@media screen and (max-width:760px){figure[role=note]+*{clear:left}}.ogc .margin[role=note],.margine.note{width:27.5%}.side-container{counter-increment:sidenote-counter}.side-label{font-variant-position:super}.side-label:after{content:"#" counter(sidenote-counter);font-variant-position:super;margin-left:.25rem}@media screen and (min-width:761px){.side-container .side-toggler{display:none}.side.hidden[role=note]{display:initial}}.side[role=note]:before{content:counter(sidenote-counter)") ";font-family:var(--counter-font);position:relative;vertical-align:baseline}.side-toggler{font-family:var(--body-font);font-size:smaller}.full-width [role=note],.full-width .side-container{display:none}.margin[role=note],figure[role=note],.margin.note{margin-right:12.5%;width:27%}@media screen and (max-width:760px){.side-container .side-toggler{margin-left:.33rem;display:inline-block}.js.side-container:after,.js .side-label{display:none}header+section.e-content>aside.margin:first-child{padding-top:1rem}details,blockquote{clear:both}[role=note],.note{display:block;padding-left:2.5%;margin-right:2.5%;width:87.5%}[role=note].margin-table.table-wrapper,.note.margin-table.table-wrapper{width:87.5%}[role=note].margin-table.table-wrapper table,.note.margin-table.table-wrapper table{width:100%}figcaption{width:100%}.licensed{width:87.5%}figure[role=note],.margin[role=note],.margin.note{width:87.5%;clear:both;float:none}.side[role=note]{clear:both;margin:1rem 0;width:97.5%}figure[role=note]{margin-left:0;padding-left:0}}@media screen{.print-footer{display:none}}a.offscreen{position:absolute;left:-1000px;top:-1000px;width:1px;height:1px;text-align:left;overflow:hidden}a.offscreen:focus,a.offscreen:active,a.offscreen:hover{position:absolute;padding:.75rem;margin:1.5rem 2rem 0 0;left:5px;top:-20px;width:auto;height:auto;overflow:visible}dl{display:grid}dl dt{grid-column:1}dl dd{grid-column:2}dl dt:after{content:":";font-weight:700}dl dd{margin-left:1rem;text-indent:-.5rem}dl dd:before{content:"· "}dd li{padding-left:1rem}mark{padding-left:.1rem;padding-right:.1rem;margin-left:-.1rem;margin-right:-.1rem}.h-entry section>ul,.h-entry section>ol{width:45%}main>.h-entry>header,main>.h-entry>footer,main>.h-entry>ol,main>#skip-to-content>header,main>#skip-to-content>footer,main>#skip-to-content>ol{width:85%}main>.h-entry>header *,main>.h-entry>footer *,main>.h-entry>ol *,main>#skip-to-content>header *,main>#skip-to-content>footer *,main>#skip-to-content>ol *{width:auto}main>.h-entry>ol,main>#skip-to-content>ol{padding-left:1rem}main>.h-entry>footer input{width:80%}.breadcrumb,.paginator,.feeds{width:85%;font-family:var(--header-font)}.breadcrumb .label,.paginator .label,.feeds .label{display:none}.breadcrumb,.paginator{padding-bottom:1rem}@media screen and (max-width:760px){h2,h2,h3,h4,summary,p,body>footer,.table-wrapper,pre,dl,.h-entry summary{width:85%}.h-entry section>ol,.h-entry section>ul{width:76.5%}figure{max-width:90%}figcaption{margin-right:0%;max-width:none}blockquote{width:80%}blockquote>*{width:80%}}@media(max-width:760px){pre,pre code{width:90%}}sup{font-size:51%}ins{text-decoration-line:none}.licensed{padding-left:1rem}.licensed .wrapper{font-family:var(--code-font);font-variant:small-caps}details>*:not(details){width:52%}summary{margin-top:.83em;margin-bottom:.83em}.year-summary>details>summary{width:55%}.year-summary>details>ul{list-style:none;width:87.5%}@media screen and (max-width:760px){details>*:not(summary):not([role=note]){width:87.5%}.year-summary>details>summary{width:87.5%}.year-summary>details>ul{width:auto}}dfn,.dfn,.mechanic{font-weight:700}.dfn{font-style:italic}.mechanic{font-style:normal;font-variant:petite-caps;text-transform:capitalize}.print-only,.hidden,.hide-js,.label{display:none}
+</style>
+<style media="print">
+  :root{--body-font:serif;--header-font:sans-serif;--counter-font:serif;--code-font:monospace;--bg-dim:#ede7db;--bg-inactive:#dfd5cf;--bg-ochre:#f0e0cc;--black:#333333;--blue-faint:#003497;--blue-warmer:#0000b0;--blue:#0031a9;--cyan-faint:#005077;--cyan-warmer:#3f578f;--cyan:#005e8b;--fg-alt:#193668;--fg-dim:#595959;--green-faint:#2a5045;--green-warmer:#316500;--green:#006800;--magenta-warmer:#8f0075;--red-faint:#702f00;--red-warmer:#972500;--white:#fbf7f0;--yellow-faint:#624416;--yellow-warmer:#884900;--yellow:#6f5500;--a-external-visited:var(--cyan-warmer);--a-external:var(--blue-faint);--a-visited:var(--cyan);--a:var(--blue);--abbr:var(--dfn);--aside:var(--yellow-faint);--bg-reply-to-email-hover:var(--green-warmer);--bg-reply-to-email:var(--green-faint);--bg:var(--white);--blockquote:var(--green-faint);--border:var(--head-bg);--cite:var(--cyan-warmer);--code:var(--green);--commentary:var(--yellow-faint);--dfn:var(--fg-dim);--bg-disclaimer:var(--bg-ochre);--dt:var(--dfn);--em:var(--fg-alt);--fg-reply-to-email:var(--bg);--fg:var(--black);--h1:var(--fg);--h2:var(--yellow-faint);--h3:var(--fg-alt);--h4:var(--cyan-warmer);--kbd:var(--green-warmer);--margin:var(--blue-faint);--mark-bg:var(--bg-inactive);--mark-fg:var(--fg-dim);--rune:var(--red-warmer);--side-number:var(--blue);--summary:var(--magenta-warmer);--table-bg-thead:var(--bg-inactive);--table-bg-tr-alt:var(--bg-dim);--table-td-fg:var(--red-faint);--table-th-fg:var(--red-warmer);--time:var(--cyan-faint)}@media(prefers-color-scheme:dark){:root{--fg:var(--white);--bg:var(--black);--bg-dim:#1d2235;--bg-inactive:#2b3045;--bg-ochre:#442c2f;--black:#0d0e1c;--blue-faint:#82b0ec;--blue-warmer:#79a8ff;--blue:#2fafff;--cyan-faint:#9ac8e0;--cyan-warmer:#4ae2f0;--cyan:#00d3d0;--fg-alt:#c6daff;--fg-dim:#989898;--green-faint:#88ca9f;--green-warmer:#70b900;--green:#44bc44;--magenta-warmer:#f78fe7;--red-faint:#ff9f80;--red-warmer:#ff6b55;--white:#eeeeee;--yellow-faint:#d2b580;--yellow-warmer:#fec43f;--yellow:#d0bc00}}*{-webkit-transition:none!important;transition:none!important;font-size:11px!important}pre,pre code{font-size:10px!important}h1{font-size:20px!important;font-weight:800}h2{font-size:17px!important;font-weight:600}h3{font-size:13px!important;font-weight:500}h4{font-size:12px!important;font-weight:400}small{font-size:9px!important}*,*:before,*:after{background:0 0!important;box-shadow:none!important;text-shadow:none!important}@page{margin:.75in .25in;orphans:4;widows:2}body{overflow-wrap:break-word}.book,.ref{display:none}body.resume>footer{display:none}body.resume *{color:var(--fg)!important}body.resume a,body.resume abbr,body.resume .dfn{text-decoration:none!important}body.resume small a.ref{display:none}body.resume .dfn{font-style:normal;font-weight:400}body.resume h1{color:var(--h1)!important}body.resume h2{color:var(--h2)!important}body.resume h3{color:var(--h3)!important}body.resume h3 a{font-size:13px!important}body.resume section:not(.note) dl{margin-left:10px}.page-break{display:block;page-break-before:always}a{text-decoration:none}.h-entry .table-wrapper,.h-entry h2,.h-entry h3,.h-entry h4,.h-entry summary{page-break-after:avoid}main h1,main h2,main h3,main h4{clear:left}body>footer nav,header,main>nav,main>section,article footer,.feeds{display:none}main header,blockquote footer{display:inherit}footer.group{font-family:var(--header-font);font-size:9pt}footer.group .footer-links{display:none}details>*{border-left:none!important}tr,img{page-break-inside:avoid}img{max-width:100%!important}p,h2,h3,h4,summary{orphans:4;widows:4}table tbody tr.subhead th{text-align:left}.print-only{display:block}
+</style>
+
+<link rel="alternate" type="application/json" href="https://takeonrules.com/index.json" title="Take on Rules json Feed" />
+<link rel="alternate" type="application/rss&#43;xml" href="https://takeonrules.com/index.xml" title="Take on Rules rss Feed" />
+<link rel="alternate" type="application/atom" href="https://takeonrules.com/index.atom" title="Take on Rules atom Feed" />
+
+<link rel="me" href="https://www.linkedin.com/in/jeremynfriesen/" title="/in/jeremynfriesen" />
+<link rel="me" href="https://www.reddit.com/user/takeonrules" title="/u/takeonrules" />
+<link rel="me" href="https://dice.camp/@takeonrules" title="@takeonrules" />
+<link rel="me" href="https://dev.to/jeremyf" title="dev.to/jeremyf" />
+<link rel="me" href="https://github.com/jeremyf" title="github.com/jeremyf" />
+<link rel="me" href="https://takeonrules.com/" title="Jeremy Friesen" />
+<meta property="org_id" content="20221009T122156" />
+<meta name="org-roam-type" content="post" />
+<meta name="theme-color" content="#EEEEEE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D0E1C" media="(prefers-color-scheme: dark)">
+<meta name="dateModified" content="2022-10-10" />
+<meta name="datePublished" content="2022-10-09" />
+<meta name="keywords" content="emacs" /><meta name="keywords" content="programming" />
+
+<meta property="og:title" content="Denote Emacs Configuration" />
+<meta property="og:description" content="Oct 29, 2022 update: The updated version of my Denote config is available at https://git.sr.ht/~jeremyf/dotemacs/tree/main/item/emacs.d/jf-denote.el Oct 10, 2022 update: My “live” version of my Denote config is available at https://github.com/jeremyf/dotemacs/blob/main/emacs.d/denote-emacs-configuration.org I wrote about Exploring the Denote Emacs Package and Migration Plan for Org-Roam Notes to Denote; this is now my configuration for using Denote. This sits orthogonal to my data migration of notes into Denote paradigm. I’m writing the data migration scripts in Ruby 📖 ; I’m more fluent in that language and found it just a easier to conceptualize the migration." />
+<meta name="description" content="Oct 29, 2022 update: The updated version of my Denote config is available at https://git.sr.ht/~jeremyf/dotemacs/tree/main/item/emacs.d/jf-denote.el Oct 10, 2022 update: My “live” version of my Denote config is available at https://github.com/jeremyf/dotemacs/blob/main/emacs.d/denote-emacs-configuration.org I wrote about Exploring the Denote Emacs Package and Migration Plan for Org-Roam Notes to Denote; this is now my configuration for using Denote. This sits orthogonal to my data migration of notes into Denote paradigm. I’m writing the data migration scripts in Ruby 📖 ; I’m more fluent in that language and found it just a easier to conceptualize the migration." />
+<meta property="og:locale" content="en-us" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://takeonrules.com/2022/10/09/denote-emacs-configuration/" />
+    <meta property="article:published_time" content="2022-10-09"/>
+    <meta property="article:modified_time" content="2022-10-10"/>
+    <meta property="og:updated_time" content="2022-10-10"/><meta property="og:site_name" content="Take on Rules" />
+<meta property="og:image" content="https://takeonrules.com/images/takeonrules.wordpress.com-banner.jpg" />
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="288" />
+<link rel="image_src" href="https://takeonrules.com/images/takeonrules.wordpress.com-banner.jpg" content="https://takeonrules.com/images/takeonrules.wordpress.com-banner.jpg" />
+
+<script type="text/javascript">
+ window.addEventListener(
+   'load',
+   (e) => {
+     const sides = document.querySelectorAll(".side-container")
+     sides.forEach((side, i, _arr) => {
+       side.classList.add("js");
+       let b = document.createElement("button");
+       b.setAttribute("aria-expanded", "false");
+       b.setAttribute("aria-controls", "side-content-" + (i + 1));
+       b.innerHTML = "Sidenote #" + (i + 1);
+       b.classList.add("side-toggler");
+       b.addEventListener('click', (e) => {
+	 e.preventDefault();
+	 let the_b = e.target.parentElement;
+	 if (the_b.getAttribute("aria-expanded") == "true") {
+	   the_b.setAttribute("aria-expanded", false);
+	 } else {
+	   the_b.setAttribute("aria-expanded", true);
+	 }
+	 let text = the_b.parentElement.querySelector(".side[role='note']");
+	 text.classList.toggle("hidden");
+       });
+       side.prepend(b);
+       let note = side.querySelector(".side[role='note']");
+       note.classList.add("hidden");
+       note.setAttribute("id", "side-content-" + (i + 1));
+ })});
+</script>
+
+  </head>
+  <body class="type-post default-width">
+    <header aria-label="Site header">
+      
+      <nav aria-label="Site navigation">
+	<span role="menu" aria-label="Site navigation links">
+          <span role="menuitem" aria-labelledby="skip-link">
+	    <a href="#skip-to-content" class="offscreen" id="skip-link">Skip to Main Content</a>
+	  </span><span class="hidden"> &middot; </span>
+          <span aria-labelledby="home" role="menuitem" class="site-nav-home">
+	    <a id="home" aria-label="Home" rel="home" href="https://takeonrules.com/"  >Take on Rules</a>
+	  </span><span class="hidden"> &middot; </span>
+          <span role="menuitem" aria-label="About">
+	    <a href="https://takeonrules.com/about/"  title="About">About</a>
+	  </span><span class="hidden"> &middot; </span>
+          <span role="menuitem" aria-label="Site Map">
+	    <a href="https://takeonrules.com/site-map/"  title="Site Map">Site Map</a>
+	  </span><span class="hidden"> &middot; </span>
+          <span role="menuitem" aria-label="Search">
+	    <a  rel="search" id="search-link" href="https://duckduckgo.com/?q=site:takeonrules.com" title="Search via DuckDuckGo">Search</a>
+	  </span>
+	</span>
+      </nav>
+      <script>
+       var form = document.getElementById('search-link');
+       form.setAttribute("href", "/search/");
+       form.setAttribute("title", "Site-wide search");
+      </script>
+      <hr />
+    </header>
+    <main aria-label="Main Content">
+      
+<nav aria-labelledby="breadcrumbs-label" class="breadcrumb">
+<span role="menu" aria-labelledby="breadcrumbs-label">
+<span id="breadcrumbs-label" class="label">Breadcrumbs </span>
+<span role="menuitem" aria-label="Home">
+<a href="https://takeonrules.com/">Home</a>
+</span><span aria-hidden="true"> / </span>
+<span role="menuitem" aria-labelled-by="https://takeonrules.com/2022/">
+<a rel="up" href="https://takeonrules.com/2022/" id="https://takeonrules.com/2022/">Posts for 2022</a>
+</span><span aria-hidden="true"> / </span>
+<cite role="menuitem">
+<a href="https://takeonrules.com/2022/10/09/denote-emacs-configuration/" id="https://takeonrules.com/2022/10/09/denote-emacs-configuration/" aria-current="page">Denote Emacs Configuration</a>
+</cite>
+  </span></nav>
+<hr class="hidden" />
+
+
+      
+<article class="h-entry" id="skip-to-content" aria-labelledby="denote-emacs-configuration">
+  <header aria-label="Article header">
+    <h1 class="p-name" id="denote-emacs-configuration">Denote Emacs Configuration</h1>
+<h2>A Literate Configuration</h2>
+<nav aria-label="Content's metadata and navigation">
+  <span class="u-author p-author"><a rel="author" class="u-url" href="https://takeonrules.com/contact-me/">Jeremy Friesen</a></span> wrote <a href="https://takeonrules.com/2022/10/06/on-breaking-down-larger-projects/" aria-label="Previous post" title="Previous post is &ldquo;On Breaking Down Larger Projects&rdquo;"><small>&lt;</small></a> <a rel="bookmark" title="This post is titled &ldquo;Denote Emacs Configuration&rdquo;" href="https://takeonrules.com/2022/10/09/denote-emacs-configuration/" aria-current="page">this post</a> <a href="https://takeonrules.com/2022/10/12/analysis-and-preliminary-work-for-importing-functionality-from-another-project/" aria-label="Next post" title="Next post is &ldquo;Analysis and Preliminary Work for Importing Functionality from Another Project&rdquo;"><small>&gt;</small></a>
+<span aria-hidden="true"> on </span>
+<del datetime="2022-10-10"><time aria-label="Published On" datetime="2022-10-09">2022-10-09</time></del>
+<ins datetime="2022-10-10"><time aria-label="Modified On" datetime="2022-10-10">2022-10-10</time></ins>
+:: <span class="label">Tags:</span> <span role="menu" aria-label="Tags for “Denote Emacs Configuration”">
+<span role="menuitem" aria-label="&ldquo;emacs&rdquo; tag navigation"><a href="https://takeonrules.com/2022/10/02/migration-plan-for-org-roam-notes-to-denote/" aria-label="Previous post tagged with &ldquo;emacs&rdquo; is &ldquo;Migration Plan for Org-Roam Notes to Denote&rdquo;" title="Older post tagged with &ldquo;emacs&rdquo; is &ldquo;Migration Plan for Org-Roam Notes to Denote&rdquo;"><small>&lt;</small></a>
+<a rel="tag" href="https://takeonrules.com/tags/emacs/" class="p-category" aria-label="All posts tagged with &ldquo;emacs&rdquo;" title="All posts tagged with &ldquo;emacs&rdquo;">emacs</a> <a href="https://takeonrules.com/2022/10/16/revisiting-the-principles-of-my-text-editor/" aria-label="Next post tagged with &ldquo;emacs&rdquo; is &ldquo;Revisiting the Principles of My Text Editor&rdquo;" title="Newer post tagged with &ldquo;emacs&rdquo; is &ldquo;Revisiting the Principles of My Text Editor&rdquo;"><small>&gt;</small></a>
+</span><span aria-hidden=true> &middot; </span>
+<span role="menuitem" aria-label="&ldquo;programming&rdquo; tag navigation"><a href="https://takeonrules.com/2022/10/06/on-breaking-down-larger-projects/" aria-label="Previous post tagged with &ldquo;programming&rdquo; is &ldquo;On Breaking Down Larger Projects&rdquo;" title="Older post tagged with &ldquo;programming&rdquo; is &ldquo;On Breaking Down Larger Projects&rdquo;"><small>&lt;</small></a>
+<a rel="tag" href="https://takeonrules.com/tags/programming/" class="p-category" aria-label="All posts tagged with &ldquo;programming&rdquo;" title="All posts tagged with &ldquo;programming&rdquo;">programming</a> <a href="https://takeonrules.com/2022/10/12/analysis-and-preliminary-work-for-importing-functionality-from-another-project/" aria-label="Next post tagged with &ldquo;programming&rdquo; is &ldquo;Analysis and Preliminary Work for Importing Functionality from Another Project&rdquo;" title="Newer post tagged with &ldquo;programming&rdquo; is &ldquo;Analysis and Preliminary Work for Importing Functionality from Another Project&rdquo;"><small>&gt;</small></a>
+</span></span>
+
+
+</nav>
+
+    
+
+  </header>
+  <section class="e-content" aria-label="Article Content">
+
+    <ins class="update" datetime="2022-10-29"><p><em><strong><time datetime="2022-10-29">Oct 29, 2022</time> update:</strong></em> 
+The updated version of my Denote config is available at <a href="https://git.sr.ht/~jeremyf/dotemacs/tree/main/item/emacs.d/jf-denote.el">https://git.sr.ht/~jeremyf/dotemacs/tree/main/item/emacs.d/jf-denote.el</a>
+</p></ins>
+
+<ins class="update" datetime="2022-10-10"><p><em><strong><time datetime="2022-10-10">Oct 10, 2022</time> update:</strong></em> 
+My &ldquo;live&rdquo; version of my Denote config is available at <a href="https://github.com/jeremyf/dotemacs/blob/main/emacs.d/denote-emacs-configuration.org">https://github.com/jeremyf/dotemacs/blob/main/emacs.d/denote-emacs-configuration.org</a>
+</p></ins>
+
+<p>I wrote about <a href="https://takeonrules.com/2022/10/01/exploring-the-denote-emacs-package/">Exploring the Denote Emacs Package</a> and <a href="https://takeonrules.com/2022/10/02/migration-plan-for-org-roam-notes-to-denote/">Migration Plan for Org-Roam Notes to Denote</a>; this is now my configuration for using <a href="https://protesilaos.com/emacs/denote">Denote</a>.  This sits orthogonal to my data migration of notes into Denote paradigm.</p>
+
+<aside  role="note" class="margin">
+
+<p><small>I’m writing the data migration scripts in <span><a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a></span> <small><a class="ref" rel="tag opener" aria-label="Other site-wide references of “Ruby”" title="Other site-wide references of “Ruby”" href="https://takeonrules.com/site-map/glossary/#abbr-dfn-RUBY">📖</a></small>
+; I’m more fluent in that language and found it just a easier to conceptualize the migration.  As of <time datetime="2022-10-03">October 3rd</time>, I have completed a test migration of my glossary.</small></p>
+</aside>
+
+<h2 id="configuration">Configuration</h2>
+<p>This base configuration gets me started using Denote.</p>
+<pre><code class="language-emacs-lisp">(use-package denote
+  ;; I want to point to cutting edge development; there's already features I
+  ;; want that have been added since v1.0.0
+  :straight (denote :host nil :type git :repo &quot;https://git.sr.ht/~protesilaos/denote&quot;)
+  :commands (denote-directory denote-file-prompt denote--title-prompt)
+  :bind (&quot;H-f&quot; . 'jf/denote-find-file)
+  :hook (dired-mode . denote-dired-mode)
+  :custom ((denote-directory (expand-file-name &quot;denote&quot; org-directory)
+			     ;; These are the minimum viable prompts for notes
+			     (denote-prompts '(title keywords))
+			     ;; I love ‘org-mode format; reading ahead I'm setting this
+			     (denote-file-type 'org)
+			     ;; And `org-read-date' is an amazing bit of tech
+			     (denote-date-prompt-denote-date-prompt-use-org-read-date t)))
+  :config
+  (cl-defun jf/denote-org-property-from-id (&amp;key identifier property)
+    &quot;Given an IDENTIFIER and PROPERTY return it's value or nil.
+
+  Return nil when:
+
+  - is not a denote file
+  - IDENTIFIER leads to a non `org-mode' file
+  - PROPERTY does not exist on the file&quot;
+    (when-let ((filename (denote-get-path-by-id identifier)))
+      (when (string= (file-name-extension filename) &quot;org&quot;)
+	(with-current-buffer (find-file-noselect filename)
+	  (cadar (org-collect-keywords (list property)))))))
+
+  (cl-defun jf/denote-org-properties-from-id (&amp;key identifier properties)
+    &quot;Given an IDENTIFIER and PROPERTIES list return an a-list of values.
+
+  Return nil when:
+
+  - is not a denote file
+  - IDENTIFIER leads to a non `org-mode' file
+  - PROPERTY does not exist on the file&quot;
+    (when-let ((filename (denote-get-path-by-id identifier)))
+      (when (string= (file-name-extension filename) &quot;org&quot;)
+	(with-current-buffer (find-file-noselect filename)
+	  (org-collect-keywords properties)))))
+  )
+  ;;; Testing jf/denote-org-property-from-id
+;; (message &quot;%s&quot; (jf/denote-org-property-from-id :identifier &quot;20220930T215235&quot;
+;; 					      :property &quot;ABBR&quot;))
+;;; Testing jf/denote-org-properties-from-id
+;; (message &quot;%s&quot; (jf/denote-org-properties-from-id :identifier &quot;20220930T215235&quot;
+;; 					      :properties '(&quot;TITLE&quot; &quot;ABBR&quot;)))
+</code></pre>
+<p>From this configuration, I’ll build out my interactions.</p>
+<h3 id="foundational-functions-for-my-denote-interaction">Foundational Functions for my Denote Interaction</h3>
+<p>In <a href="https://protesilaos.com/emacs/denote">Denote</a>’s documentation for <a href="https://protesilaos.com/emacs/denote#h:887bdced-9686-4e80-906f-789e407f2e8f">Convenience commands for note creation</a>, they locally bind the <code>denote-prompts</code> variable then call <code>denote</code>; in <a href="https://protesilaos.com/emacs/denote#h:15719799-a5ff-4e9a-9f10-4ca03ef8f6c5">Maintain separate directories for notes</a> they mention having silos of information by using <code>.dir-locals.el</code> to cordon off different <em>domains</em>.  See the <a href="#domains">Domains</a> section of this file for more infromation.</p>
+<p>And while I might want to do that for my <em>domains</em> I have the use case of wanting to link to a Glossary item from other domains.</p>
+<p>I envision the <code>jf/denote-find-file</code> as the anchor for my general file finding, and then using a local binding of <code>denote-directory</code> to provide an initial narrowing default.</p>
+<p>It doesn’t take much to see a macro emerging for these local bindings; find all sub-directories of the directory defiend by the <code>denote-directory</code> variable.  For each of those directories make an interactive function of the form <code>jf/denote-find-file--domain</code>.  That interactive function would locally bind <code>denote-directory</code> to <code>”denote-directory/domain”</code>.</p>
+<p>Alternatively, as I create each domain’s create function, I also create the finder function.</p>
+<pre><code class="language-emacs-lisp">(defun jf/denote-find-file ()
+      &quot;Find file in the current `denote-directory'.&quot;
+      (interactive)
+      (require 'consult-projectile)
+      (require 'denote)
+      (consult-projectile--file (denote-directory)))
+
+(cl-defmacro jf/denote-create-functions-for (&amp;key domain)
+  &quot;A macro to create functions for the given DOMAIN.
+
+Creates:
+
+- Wrapping function of `jf/denote-find-file' that narrows results
+  to the given DOMAIN.&quot;
+  (let ((defun-fn (intern (concat &quot;jf/denote-find-file--&quot; domain)))
+	(docstring (concat &quot;Find file in \&quot;&quot;
+			   domain
+			   &quot;\&quot; subdirectory of `denote-directory'.&quot;)))
+    `(defun ,defun-fn ()
+       ,docstring
+       (interactive)
+       (let ((denote-directory (f-join (denote-directory) ,domain)))
+	 (call-interactively #'jf/denote-find-file)))))
+</code></pre>
+<h2 id="domains">Domains</h2>
+<p>In <a href="https://takeonrules.com/2022/10/02/migration-plan-for-org-roam-notes-to-denote/">Migration Plan for Org-Roam Notes to Denote</a> I talked about data structures and starting articulating some domains.</p>
+
+<aside  role="note" class="margin">
+
+<p><small>From Webster’s 1913 Dictionary: <em>Domain</em>: The territory over which dominion or authority is exerted; the possessions of a sovereign or commonwealth, or the like. Also used figuratively.</small></p>
+<p><small>And the Mathematical concept of <em>Domain</em>: The domain of a function is the set of its possible inputs, i.e., the set of input values where for which the function is defined.</small></p>
+
+</aside>
+
+<p>As of <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-10-02 Sun&gt;</span></span>, my denote finding implementation leverages <code>consult-projectile--file</code>.  This populates the mini-buffer with entries of the following format: <code>domain/identifier--multi-word-title_tag1_tag2.org</code>.  The domain is a subdirectory of my <code>denote-directory</code>.</p>
+<p>I have the domains following:</p>
+<dl>
+<dt>Blog Post</dt>
+<dd>Something I share with the world.</dd>
+<dt>Dailies</dt>
+<dd>An anchor for any time references.</dd>
+<dt>Employer</dt>
+<dd>More specifically, <a href="https://scientist.com">Scientist.com</a>.</dd>
+<dt>Epigraph</dt>
+<dd>A quote that I found interesting.</dd>
+<dt>Glossary</dt>
+<dd>A term/concept I reference.</dd>
+<dt>People</dt>
+<dd>Similar to a glossary but for notes regarding people.</dd>
+</dl>
+<h3 id="blog-post">Blog Post</h3>
+<p>When I start writing a note, I am uncertain if it will be a <em>Blog Post</em>.  However, once I publish something I <em>think</em> it makes sense to transfer the note into the <em>Blog Post</em> domain.  By treating a <em>Blog Post</em> as a domain it will be visually chunked at the beginning of the line (e.g. the subdirectory).</p>
+<p>Alternatively I could add the “blog-post” keyword/tag to the note.  The primary benefit would be that something I post to my blog could be of another domain.</p>
+<p>What might those other domains be?</p>
+<p>I don’t think I need linger on this for too long, as I can easily migrate.  The foundational element is the <code>identifier</code>; which is dynamically queried.</p>
+<h3 id="dailies">Dailies</h3>
+<p>While writing this document, I began envisioning replacing my <span><a href="https://orgmode.org/">Org-Mode</a></span> <small><a class="ref" rel="tag opener" aria-label="Other site-wide references of “Org-Mode”" title="Other site-wide references of “Org-Mode”" href="https://takeonrules.com/site-map/glossary/#abbr-dfn-ORG-MODE">&#128214;</a></small>
+ date macro with a <code>date</code> Org-Mode link protocol.  The benefits are:</p>
+<ol>
+<li>Replacing the kludge of a macro with something that works easier with exports.</li>
+<li>I would be creating a node that could provide a backlink.</li>
+</ol>
+<p>None of this requires <a href="https://protesilaos.com/emacs/denote">Denote</a> but which builds on some of my musings; namely should I have a monthly timesheet in <a href="https://protesilaos.com/emacs/denote">Denote</a>.  And the answer appears to be yes.</p>
+<pre><code class="language-emacs-lisp">(jf/denote-create-functions-for :domain &quot;dailies&quot;)
+</code></pre>
+<p>I want to continue using my timesheets as a single document; this makes both time reporting and personal timetracking easier.</p>
+<h3 id="employer">Employer</h3>
+<p>There are certain employer specific notes that I keep; timesheets being a distinct one.  I don’t envision a problem linking to other domains; a Scientist.com note could and would likely link to/reference a Glossary entry.</p>
+<p>The primary advantage is that I can easily segement my git repositories for employer and not-employer.</p>
+<p>I need a current timesheet function; this would help me jump to my time sheet and capture appropriate tasks, projects, merge requests and blockers.</p>
+<p>I also want my <code>org-agenda-files</code> to include:</p>
+<ul>
+<li>personal agenda</li>
+<li>work agenda (on work machine)</li>
+<li>this month and last month’s time sheet</li>
+</ul>
+<p>I’m okay with restarting <span><a href="https://en.wikipedia.org/wiki/Emacs">Emacs</a></span> <small><a class="ref" rel="tag opener" aria-label="Other site-wide references of “Emacs”" title="Other site-wide references of “Emacs”" href="https://takeonrules.com/site-map/glossary/#abbr-dfn-EMACS">&#128214;</a></small>
+ each month.</p>
+<pre><code class="language-emacs-lisp">(jf/denote-create-functions-for :domain &quot;scientist&quot;)
+</code></pre>
+<h3 id="epigraph">Epigraph</h3>
+<p>As mentioned, I collect phrases and like to reference them as epigraphs in my posts.</p>
+<p>Something in the <em>Epigraph</em> domain has the following properties:</p>
+<dl>
+<dt>AUTHOR_NAME (required)</dt>
+<dd>The name of the author</dd>
+<dt>AUTHOR_URL</dt>
+<dd>Where can you “find” this author?</dd>
+<dt>AUTHOR_KEY</dt>
+<dd>The GLOSSARY_KEY for the given author</dd>
+<dt>WORK_TITLE (required)</dt>
+<dd>What’s the title of the work?</dd>
+<dt>WORK_URL</dt>
+<dd>Where can you “get” this work?</dd>
+<dt>WORK_KEY</dt>
+<dd>The GLOSSARY_KEY for the given work</dd>
+<dt>POEM</dt>
+<dd>Indicates if this is a poem (or not)</dd>
+<dt>PAGE</dt>
+<dd>The page in which this passage appears in the given work.</dd>
+<dt>TRANSLATOR_NAME</dt>
+<dd>The name of the translator</dd>
+</dl>
+<p>As part of my blog build scripts, I lookup the <code>KEY</code> properties in the Glossary and write the names and URL.
+<small class="side-container">
+  <span class="side-label"><span class="hidden">(</span>Sidenote<span class="hidden">:</span></span>
+  <span class="side" role="note"> 
+With all of the changes I’ve made, I need to see if I’m still looking up the <code>KEY</code> properties when I build the script.
+<span class="hidden">)</span></span>
+</small>
+</p>
+<pre><code class="language-emacs-lisp">(bind-key &quot;H-d c e&quot; 'jf/denote-create-epigraph)
+(cl-defun jf/denote-create-epigraph (&amp;key
+				     (body (read-from-minibuffer &quot;Epigraph Text: &quot;))
+				     ;; Todo prompt for Author Name
+				     (author_name (read-from-minibuffer &quot;Author Name: &quot;))
+				     ;; Todo prompt for Work Title
+				     (work_title (read-from-minibuffer &quot;Work Title: &quot;))
+				     (nth-words 8))
+  &quot;Create an epigraph from the given BODY, AUTHOR_NAME, and WORK TITLE.
+
+Default the note’s title to the first NTH-WORDS of the BODY.&quot;
+  (interactive)
+  (let* ((body-as-list (s-split-words body))
+	 (title (s-join &quot; &quot; (if (&gt; (length body-as-list) nth-words)
+				(subseq body-as-list 0 nth-words)
+			      body-as-list)))
+	 (template (concat
+		    &quot;#+AUTHOR_NAME: &quot; author_name &quot;\n&quot;
+		    &quot;#+AUTHOR_URL:\n&quot;
+		    &quot;#+AUTHOR_KEY:\n&quot;
+		    &quot;#+WORK_TITLE: &quot; work_title &quot;\n&quot;
+		    &quot;#+WORK_URL:\n&quot;
+		    &quot;#+WORK_KEY:\n&quot;
+		    &quot;#+POEM:\n&quot;
+		    &quot;#+PAGE:\n&quot;
+		    &quot;#+TRANSLATOR_NAME:\n&quot;)))
+    (denote title
+	    nil
+	    'org
+	    (f-join (denote-directory) &quot;epigraphs&quot;)
+	    nil
+	    template)))
+
+(jf/denote-create-functions-for :domain &quot;epigraphs&quot;)
+</code></pre>
+<h3 id="glossary">Glossary</h3>
+<p>We’ll store glossary entries in the “glossary” subdirectory of <code>denote-directory</code>.</p>
+<p>An entry in the glossary requires a <code>KEY</code> property.  This <code>KEY</code> is used as the entry point for <a href="https://github.com/jeremyf/takeonrules-hugo-theme/blob/main/layouts/shortcodes/glossary.html">my blogging <code>glossary.html</code> shortcode</a>.</p>
+<p>All other properties, aside from <code>TITLE</code>, are optional.  In my writing there are two ways I directly refer to a glossary entry, when I:</p>
+<ul>
+<li>Reference a Game</li>
+<li>Use an Abbreviation</li>
+</ul>
+<p>I might create two or three glossary entries at a time; so the easiest approach is to include all of the properties with minimal prompting.</p>
+<pre><code class="language-emacs-lisp">(bind-key &quot;H-d c g&quot; 'jf/denote-create-glossary-entry)
+(cl-defun jf/denote-create-glossary-entry
+    (&amp;key
+     (title (read-from-minibuffer &quot;Name the Entry: &quot;))
+     (is-a-game (yes-or-no-p &quot;Is this a game?&quot;))
+     (abbr (read-from-minibuffer &quot;Abbreviation (empty to skip): &quot;)))
+  &quot;Create a `denote' entry for the given TITLE and ABBR.
+
+And if this IS-A-GAME then amend accordingly.
+
+      NOTE: At present there is no consideration for uniqueness.&quot;
+  (interactive)
+  (let* ((key (downcase (denote-sluggify (if (s-present? abbr) abbr title))))
+	 (template (concat &quot;#+GLOSSARY_KEY: &quot; key &quot;\n&quot;
+			   &quot;#+ABBR:&quot; (when (s-present? abbr) (concat &quot; &quot; abbr)) &quot;\n&quot;
+			   &quot;#+CONTENT_DISCLAIMER:\n&quot; ;; TODO: Include a prompt of existing disclaimers
+'			   &quot;#+DESCRIPTION:\n&quot;
+			   (when is-a-game &quot;#+GAME: &quot; key &quot;\n&quot;)
+			   &quot;#+ITEMID:\n&quot;
+			   &quot;#+ITEMTYPE:\n&quot;
+			   &quot;#+MENTION_AS:\n&quot;
+			   &quot;#+OFFER:\n&quot;
+			   &quot;#+PLURAL_ABBR:\n&quot;
+			   &quot;#+PLURAL_TITLE:\n&quot;
+			   &quot;#+SAME_AS:\n&quot;
+			   &quot;#+TAG:\n&quot; ;; TODO: Assert uniqueness
+			   &quot;#+VERBOSE_TITLE:\n&quot;))
+	 (keywords (list)))
+    ;; Add both &quot;abbr&quot; and the abbr to the keywords; both help in searching results
+    (when (s-present? abbr)
+      (progn (add-to-list 'keywords &quot;abbr&quot;) (add-to-list 'keywords abbr)))
+    (when is-a-game (add-to-list 'keywords &quot;game&quot;))
+    (denote title
+	    keywords
+	    'org
+	    (f-join (denote-directory) &quot;glossary&quot;)
+	    nil
+	    template)))
+
+(jf/denote-create-functions-for :domain &quot;glossary&quot;)
+;;; Testing jf/denote-org-property-from-id
+;; (message &quot;%s&quot; (jf/denote-org-property-from-id :id &quot;20220930T215235&quot;
+;; 					      :property &quot;ABBR&quot;))
+</code></pre>
+<p>This builds from <a href="https://takeonrules.com/2022/09/26/on-storing-glossary-terms-in-org-roam-nodes/">On Storing Glossary Terms in Org Roam Nodes</a>.</p>
+<h3 id="people">People</h3>
+<p>I do write notes about people I interact with.  Technically I have glossary entries for people.  But those entries are for folks I don’t interact with.</p>
+<pre><code class="language-emacs-lisp">(jf/denote-create-functions-for :domain &quot;people&quot;)
+</code></pre>
+<h2 id="custom-hyperlinks">Custom Hyperlinks</h2>
+<p>I have two custom hyperlinks to consider:</p>
+<ul>
+<li>Abbrevations (and their Plural)</li>
+<li>Date entries</li>
+</ul>
+<h3 id="abbreviations--and-their-plural">Abbreviations (and their Plural)</h3>
+
+<aside  role="note" class="margin">
+
+<p><small><time datetime="2022-09-26">Earlier</time> I wrote about <a href="https://takeonrules.com/2022/09/26/on-storing-glossary-terms-in-org-roam-nodes/">On Storing Glossary Terms in Org Roam Nodes</a>.  This builds from and supplants that prior work.</small></p>
+</aside>
+
+<p>As part of my writing I use of abbreviations.  I try to always provide the abbreviation’s title when I first introduce the abbrevation.  For most of those abbreviations I reference something in <a href="https://takeonrules.com/site-map/glossary/">my glossary</a>.</p>
+<p>When I export to <a href="https://takeonrules.com/">my blog</a>, I want those abbreviations to leverage what I have in my local glossary.  I expand those abbreviatinos to use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr#defining_an_abbreviation">ABBR-element</a>.  I do this via my <a href="https://github.com/jeremyf/takeonrules-hugo-theme/blob/main/layouts/shortcodes/glossary.html">glossary.html shortcode</a>.</p>
+<p>Below is the code that adds the <code>abbr</code> and <code>abbr-plural</code> link type into <a href="https://orgmode.org/manual/Handling-Links.html">Org-Mode’s link handler</a>; for more information checkout the documentation on <a href="https://orgmode.org/manual/Adding-Hyperlink-Types.html">Adding Hyperlink Types</a>.</p>
+<h4 id="building-the-complete-functionality">Building the Complete Functionality</h4>
+<p>First up is the functionality for completion.  Given that I have both <code>abbr</code> and <code>abbr-plural</code> link schemes, I’m going to create a generic function.</p>
+
+<aside  role="note" class="margin">
+
+<p><small>I prefer named parameters over positional parameters.  Which is why most of my Lisp functions leverage the <code>cl-defun</code> macro.</small></p>
+</aside>
+
+<p>The <code>jf/org-link-complete-link-for</code> function will pre-populate a search.  In the case of <code>abbr</code> and <code>abbr-plural</code> all entries will be in the <code>./glossary</code> subdirectory and have the keyword <code>_abbr</code>.</p>
+<pre><code class="language-emacs-lisp">(cl-defun jf/org-link-complete-link-for (parg &amp;key scheme keyword subdirectory))
+      &quot;Prompt for a SCHEME compatible `denote' with KEYWORD in the given SUBDIRECTORY.
+
+      Returns a string of format: \&quot;SCHEME:&lt;id&gt;\&quot; where &lt;id&gt; is
+      an `denote' identifier.&quot;
+      (concat scheme
+	      &quot;:&quot;
+	      (let ((denote-directory (if subdirectory
+					  (f-join (denote-directory)
+						  (concat subdirectory &quot;/&quot;))
+					(denote-directory))))
+		;; This leverages a post v1.0.0 parameter of Denote
+		;; See https://git.sr.ht/~protesilaos/denote/commit/c6c3fc95c66ba093a266c775f411c0c8615c14c7
+		(denote-file-prompt (concat &quot;_&quot; keyword &quot;*&quot;)))))
+</code></pre>
+<p>The above implementation assumes a post v1.0.0 implementation of Denote.  As of <time datetime="2022-10-07">October 7th</time> this is not part of a released version but is part of the <code>main</code> branch.</p>
+<p>I was preparing to send a suggestion for that feature when I noticed the change; it is always reassuring to see folks recommend functions that are identical to what you were going to suggest.</p>
+<h4 id="building-the-export-functionality">Building the Export Functionality</h4>
+<p>Next is the export functionality.  There are many similarities between <code>abbr</code> and <code>abbr-plural</code>; what follows is the general function.</p>
+<pre><code class="language-emacs-lisp">(cl-defun jf/denote-link-ol-link-with-property (link description format protocol
+						     &amp;key
+						     property-name
+						     additional-hugo-parameters
+						     (use_hugo_shortcode jf/exporting-org-to-tor))
+  &quot;Export a LINK with DESCRIPTION for the given PROTOCOL and FORMAT.
+
+      FORMAT is an Org export backend. We will discard the given
+      DESCRIPTION.  PROTOCOL is ignored.&quot;
+  (let* ((prop-list (jf/denote-org-properties-from-id
+		     :identifier link
+		     :properties (list &quot;TITLE&quot; property-name  &quot;GLOSSARY_KEY&quot;)))
+	 (title (alist-get &quot;TITLE&quot; prop-list nil nil #'string=))
+	' (property (alist-get property-name prop-list nil nil #'string=))
+	 (key (alist-get &quot;GLOSSARY_KEY&quot; prop-list property nil #'string=))
+	 (cond
+	  ((or (eq format 'html)
+	       (eq format 'md))
+	   (if use_hugo_shortcode
+	       (format &quot;\{\{&lt; glossary key=\&quot;%s\&quot; %s &gt;\}\}&quot;
+		       property
+		       additional-hugo-parameters)
+	     (format &quot;&lt;abbr title=\&quot;%s\&quot;&gt;%s&lt;/abbr&gt;&quot;
+		     title
+		     property))
+	   (_ (format &quot;%s (%s)&quot;
+		      title
+		      property)))))))
+</code></pre>
+<h4 id="registering-the-link-types">Registering the Link Types</h4>
+<p>With the above preliminaries, here are the two parameter types and their configurations.</p>
+<pre><code class="language-emacs-lisp">(org-link-set-parameters &quot;abbr&quot;
+			 :complete (lambda (&amp;optional parg) (jf/org-link-complete-link-for
+							     parg
+							     :scheme &quot;abbr&quot;
+							     :keyword &quot;abbr&quot;
+							     :subdirectory &quot;glossary&quot;))
+			 :export (lambda (link description format protocol)
+				   (jf/denote-link-ol-link-with-property link description format protocol
+									 :property-name &quot;ABBR&quot;
+									 :additional-hugo-parameters &quot;abbr=\&quot;t\&quot;&quot;))
+			 :face #'denote-faces-link
+			 :follow #'denote-link-ol-follow
+			     ;;; I'm unclear if/how I want to proceed with this
+			 ;; :store (lambda (jf/org-link-store-link-for :scheme &quot;abbr&quot;))
+			 )
+
+    (org-link-set-parameters &quot;abbr-plural&quot;
+			     :complete (lambda (&amp;optional parg) (jf/org-link-complete-link-for
+								 parg
+								 :scheme &quot;abbr-plural&quot;
+								 :keyword &quot;abbr_plural&quot;
+								 :subdirectory &quot;glossary&quot;))
+			     :export (lambda (link description format protocol)
+				       (jf/denote-link-ol-link-with-property link description format protocol
+					  :property-name &quot;ABBR_PLURAL&quot;
+					  :additional-hugo-parameters &quot;abbr=\&quot;t\&quot; plural=\&quot;t\&quot;&quot;)
+			     :face #'denote-faces-link
+			     :follow #'denote-link-ol-follow
+			     ;;; I'm unclear if/how I want to proceed with this
+			     ;; :store (lambda (jf/org-link-store-link-for :scheme &quot;abbr-plural&quot;))
+			     )
+</code></pre>
+<h3 id="date-entries">Date Entries</h3>
+<p>I want to register the <code>date</code> scheme for Org-Mode links.</p>
+<pre><code class="language-emacs-lisp">(org-link-set-parameters &quot;date&quot;
+			 :complete #'jf/denote-link-complete-date
+			 :export #'jf/denote-link-export-date
+			 :face #'denote-faces-link
+			 :follow #'jf/denote-link-follow-date
+			 ;; :store (lambda (jf/org-link-store-link-for :scheme &quot;abbr&quot;))
+			 )
+
+(cl-defun jf/denote-link-complete-date (&amp;optional parg)
+  &quot;Prompt for the given DATE.
+
+While we are prompting for a year, month, and day; a reminder
+that this is intended to be conformant with the TIME element.
+But for my typical use I write these as either years; years and
+months; and most often year, month, and days.&quot;
+  (format &quot;date:%s&quot; (org-read-date)))
+
+(cl-defun jf/denote-link-export-date (link description format protocol)
+  &quot;Export a date for the given LINK, DESCRIPTION, FORMAT, and PROTOCOL.&quot;
+  (cond
+   ((or (eq format 'html)
+	(eq format 'md))
+    (concat &quot;&lt;time datetime=\&quot;&quot; link &quot;\&quot;&gt;&quot; description &quot;&lt;/time&gt;&quot;))
+   (_ (format &quot;%s (%s)&quot; descirption link))))
+
+
+(cl-defun jf/denote-link-follow-date (date &amp;optional parg)
+  (message &quot;TODO, implement link for %s&quot; date))
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>I wrote this configuration with the intention of publishing to my blog.  I have locally tested things, a bit, but have not incorporated it into <a href="https://github.com/jeremyf/dotemacs">my dotemacs</a>.  That is a future concern.</p>
+
+  </section>
+  <footer aria-label="Article footer">
+    <p><a class="reply-by-email" href="mailto:reply-to@takeonrules.com?subject=RE: Denote%20Emacs%20Configuration">Reply by Email</a></p>
+
+    
+
+    <section aria-labelledby="heading-related-posts" role="complementary">
+  <h2 id="heading-related-posts">Related Posts</h2>
+  <ul aria-labelledby="heading-related-posts">
+    
+      <li aria-label="Walkthrough of my Project Workspace Functionality">
+        <cite><a href="https://takeonrules.com/2022/12/18/walkthrough-of-my-project-workspace-functionality/">Walkthrough of my Project Workspace Functionality</a></cite>
+      </li>
+    
+      <li aria-label="Project Dispatch Menu with Org Mode Metadata, Denote, and Transient">
+        <cite><a href="https://takeonrules.com/2022/11/19/project-dispatch-menu-with-org-mode-metadata-denote-and-transient/">Project Dispatch Menu with Org Mode Metadata, Denote, and Transient</a></cite>
+      </li>
+    
+      <li aria-label="Adding a Function to Carry Forward an Org-Mode Agenda Item">
+        <cite><a href="https://takeonrules.com/2022/10/24/adding-a-function-to-carry-forward-an-org-mode-agenda-item/">Adding a Function to Carry Forward an Org-Mode Agenda Item</a></cite>
+      </li>
+    
+      <li aria-label="Adding Another Function to My Workflow">
+        <cite><a href="https://takeonrules.com/2022/10/16/adding-another-function-to-my-workflow/">Adding Another Function to My Workflow</a></cite>
+      </li>
+    
+      <li aria-label="Revisiting the Principles of My Text Editor">
+        <cite><a href="https://takeonrules.com/2022/10/16/revisiting-the-principles-of-my-text-editor/">Revisiting the Principles of My Text Editor</a></cite>
+      </li>
+    
+  </ul>
+</section>
+
+    
+  </footer>
+</article>
+
+    </main>
+    <footer class="group">
+  <hr  />
+  <small class="copyright">
+    &copy;<time datetime="2024">2024</time>&nbsp;
+    <a class="h-card" rel="me" href="https://takeonrules.com/">
+      Jeremy Friesen
+    </a>
+  </small>
+  <br />
+  <nav aria-label="Site-wide footer">
+    <small role="menu" aria-label="Site-wide footer links">
+      <span role="menuitem" aria-label="Contact Me">
+	<a href="https://takeonrules.com/contact-me/">Contact Me</a>
+      </span>
+      <span aria-hidden=true>&middot;</span>
+      <span role="menuitem" aria-label="Changelog">
+	<a href="https://takeonrules.com/site-map/changelog/">Changelog</a>
+      </span>
+      <span aria-hidden=true>&middot;</span>
+      <span role="menuitem" aria-label="Colophon">
+	<a href="https://takeonrules.com/about/colophon/">Colophon</a>
+      </span>
+      <span aria-hidden=true>&middot;</span>
+      <span role="menuitem" aria-label="Content Disclaimers">
+	<a href="https://takeonrules.com/site-map/content-disclaimers/">Content Disclaimers</a>
+      </span>
+      <span aria-hidden=true>&middot;</span>
+      <span role="menuitem" aria-label="Privacy Policy">
+	<a href="https://takeonrules.com/privacy-policy/">Privacy Policy</a>
+      </span>
+    </small>
+  </nav>
+  <br />
+  
+<small class="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><cite property="dct:title" rel="dct:type">Denote Emacs Configuration</cite> by <a  href="https://takeonrules.com/about/" property="cc:attributionName" rel="cc:attributionURL">Jeremy Friesen</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+Based on a work at <a class="u-url"  href="https://takeonrules.com/2022/10/09/denote-emacs-configuration/" rel="dct:source,bookmark">https://takeonrules.com/2022/10/09/denote-emacs-configuration/</a>. Permissions beyond the scope of this license may be available at <a  href="https://takeonrules.com/more_permissions/" rel="cc:morePermissions">https://takeonrules.com/more_permissions/</a>.
+
+</small>
+
+</footer>
+
+  </body>
+</html>

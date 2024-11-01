@@ -1,0 +1,40 @@
+automatic writing, non-traditional uses of
+language and visual imagery, and the use of chance to create a nonsensical
+word order. The boundaries between oneiric fantasy and literary interpretation
+are fluid. The ambiguous juxtaposition of seemingly incongruous elements
+gives rise to many interpretations."""
+
+
+# In[ ]:
+
+
+# Convert text to lowercase: lower_text
+lower_text = surrealist_text.lower()
+
+# Print text converted to lowercase
+print(lower_text)
+
+
+# In[ ]:
+
+
+"""Word Tokenization with NLTK"""
+
+
+# In[ ]:
+
+
+import nltk  # import package for tokenization
+from nltk import word_tokenize  # import function
+
+
+# In[ ]:
+
+
+nltk.download('punkt')  # download required models
+
+
+# In[ ]:
+
+
+# Tokenize text into words using

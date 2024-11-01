@@ -1,0 +1,22 @@
+[[String]] -> IO ()
+tabularise rows = do
+  let cols = maximum (map length rows)
+  forM_ rows print
+EOD
+
+cat draft.haskell <<EOD
+  where
+    print row = mapM_ (\x -> putStrLn ("\t" ++ x)) row
+EOD
+
+cat draft.haskell <<EOD
+    -- The maximum number of columns in any row of the table.
+    maximum :: [Int] -> Int
+
+    -- Map a function over a list, and then reduce the resulting list using the given monoid.
+    mapM_ :: (a -> IO b) -> [a] -> IO ()
+
+    -- Tabulate a function over a list, and then print the results to stdout.
+    tabularise :: [[String]] -> IO ()
+
+    -- Read a value from stdin and decode it into a string.

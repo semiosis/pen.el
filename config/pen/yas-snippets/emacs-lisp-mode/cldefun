@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: define-function-common-lisp
+# group: define
+# key: dfcl
+# --
+(cl-defun sh/cut (stdin &key d &key f)
+(if (not d)
+(setq d " "))
+
+(if (not f)
+(setq f "1"))
+(sh-notty (concat "cut -d " (q d) " -f " (q f) " 2>/dev/null") stdin))

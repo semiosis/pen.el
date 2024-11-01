@@ -1,0 +1,2 @@
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" tmux attach -t 44a208ae-5040-11ee-a6d1-cfe5de54582e:\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "bash"
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\"export TERM=screen-2color;  tmux attach -t 4fe6f15c-5040-11ee-be9a-ff8ee0aeb888:\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "bash"

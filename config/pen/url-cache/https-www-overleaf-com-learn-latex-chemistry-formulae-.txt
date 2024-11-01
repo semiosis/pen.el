@@ -1,0 +1,639 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 16 May 2024 05:19:39 GMT
+Content-Type: text/html; charset=utf-8
+X-Served-By: web-prod-6b45d6bf8b-psfzw
+Content-Security-Policy: script-src 'nonce-Rg4gVF67buUcs5NkHCpf8g==' 'unsafe-inline' 'strict-dynamic' https: 'report-sample'; object-src 'none'; base-uri 'none'
+Content-Language: en
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Cross-Origin-Resource-Policy: same-origin
+X-Frame-Options: SAMEORIGIN
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin
+X-XSS-Protection: 0
+Permissions-Policy: accelerometer=(), attribution-reporting=(), browsing-topics=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), screen-wake-lock=(), serial=(), storage-access=(), usb=(), window-management=(), xr-spatial-tracking=(), autoplay=(self "https://videos.ctfassets.net")
+ETag: W/"13144-6rOy8Jy6lwhNfObcO5VTTTZxuqs"
+Set-Cookie: overleaf_session2=s%3ABxV8vHWrvTWUpfa5weIvXc_oQa-C5Glh.cjI9Gd1b4iC4JrgEtro%2FH0WpJRAn76FNc8WvtT%2FtFcM; Domain=.overleaf.com; Path=/; Expires=Tue, 21 May 2024 05:19:39 GMT; HttpOnly; Secure; SameSite=Lax
+strict-transport-security: max-age=15724800; includeSubDomains
+Via: 1.1 google
+Alt-Svc: clear
+Transfer-Encoding: chunked
+
+<!DOCTYPE html><html lang="en"><head><title>Chemistry formulae - Overleaf, Online LaTeX Editor</title><meta name="twitter:title" content="Chemistry formulae"><meta name="og:title" content="Chemistry formulae"><meta name="description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more."><meta itemprop="description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more."><meta itemprop="image" content="https://cdn.overleaf.com/img/ol-brand/overleaf_og_logo.png"><meta name="image" content="https://cdn.overleaf.com/img/ol-brand/overleaf_og_logo.png"><meta itemprop="name" content="Overleaf, the Online LaTeX Editor"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@overleaf"><meta name="twitter:description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more."><meta name="twitter:image" content="https://cdn.overleaf.com/img/ol-brand/overleaf_og_logo.png"><meta property="fb:app_id" content="400474170024644"><meta property="og:description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more."><meta property="og:image" content="https://cdn.overleaf.com/img/ol-brand/overleaf_og_logo.png"><meta property="og:type" content="website"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="icon" href="/favicon.ico"><link rel="icon" sizes="192x192" href="/touch-icon-192x192.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"><link rel="mask-icon" href="/mask-favicon.svg" color="#138A07"><link rel="canonical" href="https://www.overleaf.com/learn/latex/Chemistry_formulae"><link rel="stylesheet" href="https://cdn.overleaf.com/stylesheets/main-style-f7bf4fe3edeadbb2d744.css" id="main-stylesheet"><link rel="alternate" href="https://www.overleaf.com/learn/latex/Chemistry_formulae" hreflang="en"><link rel="alternate" href="https://cs.overleaf.com/learn/latex/Chemistry_formulae" hreflang="cs"><link rel="alternate" href="https://es.overleaf.com/learn/latex/Chemistry_formulae" hreflang="es"><link rel="alternate" href="https://pt.overleaf.com/learn/latex/Chemistry_formulae" hreflang="pt"><link rel="alternate" href="https://fr.overleaf.com/learn/latex/Chemistry_formulae" hreflang="fr"><link rel="alternate" href="https://de.overleaf.com/learn/latex/Chemistry_formulae" hreflang="de"><link rel="alternate" href="https://sv.overleaf.com/learn/latex/Chemistry_formulae" hreflang="sv"><link rel="alternate" href="https://tr.overleaf.com/learn/latex/Chemistry_formulae" hreflang="tr"><link rel="alternate" href="https://it.overleaf.com/learn/latex/Chemistry_formulae" hreflang="it"><link rel="alternate" href="https://cn.overleaf.com/learn/latex/Chemistry_formulae" hreflang="zh-CN"><link rel="alternate" href="https://no.overleaf.com/learn/latex/Chemistry_formulae" hreflang="no"><link rel="alternate" href="https://ru.overleaf.com/learn/latex/Chemistry_formulae" hreflang="ru"><link rel="alternate" href="https://da.overleaf.com/learn/latex/Chemistry_formulae" hreflang="da"><link rel="alternate" href="https://ko.overleaf.com/learn/latex/Chemistry_formulae" hreflang="ko"><link rel="alternate" href="https://ja.overleaf.com/learn/latex/Chemistry_formulae" hreflang="ja"><link rel="preload" href="https://cdn.overleaf.com/js/en-json-f5a475b69fefdf4fecba.js" as="script" nonce="Rg4gVF67buUcs5NkHCpf8g=="><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" id="ga-loader" data-ga-token="UA-112092690-1" data-ga-token-v4="G-RV4YBCCCWJ" data-cookie-domain=".overleaf.com">var gaSettings = document.querySelector('#ga-loader').dataset;
+var gaid = gaSettings.gaTokenV4;
+var gaToken = gaSettings.gaToken;
+var cookieDomain = gaSettings.cookieDomain;
+if(gaid) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', gaid, { 'anonymize_ip': true });
+}
+if (gaToken) {
+    window.ga = window.ga || function () {
+        (window.ga.q = window.ga.q || []).push(arguments);
+    }, window.ga.l = 1 * new Date();
+}
+var loadGA = window.olLoadGA = function() {
+    if (gaid) {
+        var s = document.createElement('script');
+        s.setAttribute('async', 'async');
+        s.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=' + gaid);
+        document.querySelector('head').append(s);
+    } 
+    if (gaToken) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', gaToken, cookieDomain.replace(/^\./, ""));
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+};
+// Check if consent given (features/cookie-banner)
+var oaCookie = document.cookie.split('; ').find(function(cookie) {
+    return cookie.startsWith('oa=');
+});
+if(oaCookie) {
+    var oaCookieValue = oaCookie.split('=')[1];
+    if(oaCookieValue === '1') {
+        loadGA();
+    }
+}
+</script><meta name="ol-csrfToken" content="hiwQK5bd-4z1B1czvn8EtsbE7d2RTE9netHE"><meta name="ol-baseAssetPath" content="https://cdn.overleaf.com/"><meta name="ol-mathJaxPath" content="/js/libs/mathjax-3.2.2/es5/tex-svg-full.js"><meta name="ol-usersEmail" content=""><meta name="ol-ab" data-type="json" content="{}"><meta name="ol-user_id"><meta name="ol-i18n" data-type="json" content="{&quot;currentLangCode&quot;:&quot;en&quot;}"><meta name="ol-ExposedSettings" data-type="json" content="{&quot;isOverleaf&quot;:true,&quot;appName&quot;:&quot;Overleaf&quot;,&quot;adminEmail&quot;:&quot;support@overleaf.com&quot;,&quot;dropboxAppName&quot;:&quot;Overleaf&quot;,&quot;ieeeBrandId&quot;:15,&quot;hasAffiliationsFeature&quot;:true,&quot;hasSamlFeature&quot;:true,&quot;samlInitPath&quot;:&quot;/saml/ukamf/init&quot;,&quot;hasLinkUrlFeature&quot;:true,&quot;hasLinkedProjectFileFeature&quot;:true,&quot;hasLinkedProjectOutputFileFeature&quot;:true,&quot;siteUrl&quot;:&quot;https://www.overleaf.com&quot;,&quot;emailConfirmationDisabled&quot;:false,&quot;maxEntitiesPerProject&quot;:2000,&quot;maxUploadSize&quot;:52428800,&quot;projectUploadTimeout&quot;:120000,&quot;recaptchaSiteKey&quot;:&quot;6LebiTwUAAAAAMuPyjA4pDA4jxPxPe2K9_ndL74Q&quot;,&quot;recaptchaDisabled&quot;:{&quot;invite&quot;:true,&quot;login&quot;:false,&quot;passwordReset&quot;:false,&quot;register&quot;:false,&quot;addEmail&quot;:false},&quot;textExtensions&quot;:[&quot;tex&quot;,&quot;latex&quot;,&quot;sty&quot;,&quot;cls&quot;,&quot;bst&quot;,&quot;bib&quot;,&quot;bibtex&quot;,&quot;txt&quot;,&quot;tikz&quot;,&quot;mtx&quot;,&quot;rtex&quot;,&quot;md&quot;,&quot;asy&quot;,&quot;lbx&quot;,&quot;bbx&quot;,&quot;cbx&quot;,&quot;m&quot;,&quot;lco&quot;,&quot;dtx&quot;,&quot;ins&quot;,&quot;ist&quot;,&quot;def&quot;,&quot;clo&quot;,&quot;ldf&quot;,&quot;rmd&quot;,&quot;lua&quot;,&quot;gv&quot;,&quot;mf&quot;,&quot;yml&quot;,&quot;yaml&quot;,&quot;lhs&quot;,&quot;mk&quot;,&quot;xmpdata&quot;,&quot;cfg&quot;,&quot;rnw&quot;,&quot;ltx&quot;,&quot;inc&quot;],&quot;editableFilenames&quot;:[&quot;latexmkrc&quot;,&quot;.latexmkrc&quot;,&quot;makefile&quot;,&quot;gnumakefile&quot;],&quot;validRootDocExtensions&quot;:[&quot;tex&quot;,&quot;Rtex&quot;,&quot;ltx&quot;,&quot;Rnw&quot;],&quot;fileIgnorePattern&quot;:&quot;**/{{__MACOSX,.git,.texpadtmp,.R}{,/**},.!(latexmkrc),*.{dvi,aux,log,toc,out,pdfsync,synctex,synctex(busy),fdb_latexmk,fls,nlo,ind,glo,gls,glg,bbl,blg,doc,docx,gz,swp}}&quot;,&quot;sentryAllowedOriginRegex&quot;:&quot;^(https://[a-z]+\\\\.overleaf.com|https://cdn.overleaf.com|https://compiles.overleafusercontent.com)/&quot;,&quot;sentryDsn&quot;:&quot;https://4f0989f11cb54142a5c3d98b421b930a@app.getsentry.com/34706&quot;,&quot;sentryEnvironment&quot;:&quot;production&quot;,&quot;sentryRelease&quot;:&quot;7a76903df81cd546e9e469f24c4f203ea6a61672&quot;,&quot;enableSubscriptions&quot;:true,&quot;gaToken&quot;:&quot;UA-112092690-1&quot;,&quot;gaTokenV4&quot;:&quot;G-RV4YBCCCWJ&quot;,&quot;cookieDomain&quot;:&quot;.overleaf.com&quot;,&quot;templateLinks&quot;:[{&quot;name&quot;:&quot;Academic Journal&quot;,&quot;url&quot;:&quot;/gallery/tagged/academic-journal&quot;,&quot;trackingKey&quot;:&quot;academic-journal&quot;},{&quot;name&quot;:&quot;Book&quot;,&quot;url&quot;:&quot;/gallery/tagged/book&quot;,&quot;trackingKey&quot;:&quot;book&quot;},{&quot;name&quot;:&quot;Formal Letter&quot;,&quot;url&quot;:&quot;/gallery/tagged/formal-letter&quot;,&quot;trackingKey&quot;:&quot;formal-letter&quot;},{&quot;name&quot;:&quot;Homework Assignment&quot;,&quot;url&quot;:&quot;/gallery/tagged/homework&quot;,&quot;trackingKey&quot;:&quot;homework-assignment&quot;},{&quot;name&quot;:&quot;Poster&quot;,&quot;url&quot;:&quot;/gallery/tagged/poster&quot;,&quot;trackingKey&quot;:&quot;poster&quot;},{&quot;name&quot;:&quot;Presentation&quot;,&quot;url&quot;:&quot;/gallery/tagged/presentation&quot;,&quot;trackingKey&quot;:&quot;presentation&quot;},{&quot;name&quot;:&quot;Project / Lab Report&quot;,&quot;url&quot;:&quot;/gallery/tagged/report&quot;,&quot;trackingKey&quot;:&quot;lab-report&quot;},{&quot;name&quot;:&quot;Résumé / CV &quot;,&quot;url&quot;:&quot;/gallery/tagged/cv&quot;,&quot;trackingKey&quot;:&quot;cv&quot;},{&quot;name&quot;:&quot;Thesis&quot;,&quot;url&quot;:&quot;/gallery/tagged/thesis&quot;,&quot;trackingKey&quot;:&quot;thesis&quot;},{&quot;name&quot;:&quot;view_all&quot;,&quot;url&quot;:&quot;/latex/templates&quot;,&quot;trackingKey&quot;:&quot;view-all&quot;}],&quot;labsEnabled&quot;:false,&quot;groupSSOEnabled&quot;:true,&quot;wikiEnabled&quot;:true,&quot;templatesEnabled&quot;:true}"><meta name="ol-splitTestVariants" data-type="json" content="{&quot;null-test-wiki&quot;:&quot;default&quot;}"><meta name="ol-splitTestInfo" data-type="json" content="{}"><meta name="ol-algolia" data-type="json" content="{&quot;appId&quot;:&quot;SK53GL4JLY&quot;,&quot;apiKey&quot;:&quot;9ac63d917afab223adbd2cd09ad0eb17&quot;,&quot;indexes&quot;:{&quot;wiki&quot;:&quot;learn-wiki&quot;,&quot;gallery&quot;:&quot;gallery-production&quot;}}"><meta name="ol-isManagedAccount" data-type="boolean"><meta name="ol-bootstrapVersion" data-type="json" content="3"></head><body ng-csp="no-unsafe-eval"><a class="skip-to-content" href="#main-content">Skip to content</a><nav class="navbar navbar-default navbar-main"><div class="container-fluid"><div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-label="Toggle Navigation"><i class="fa fa-bars" aria-hidden="true"></i></button><a class="navbar-brand" href="/" aria-label="Overleaf"></a></div><div class="navbar-collapse collapse" id="navbar-main-collapse"><ul class="nav navbar-nav navbar-right"><!-- loop over header_extras--><li class="dropdown subdued"><a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Features & Benefits<span class="caret"></span></a><ul class="dropdown-menu"><li><a href="/about/features-overview" event-tracking="menu-clicked-premium-features" event-tracking-mb="true" event-tracking-trigger="click">Features</a></li><li><a href="/for/enterprises" event-tracking="menu-clicked-enterprises" event-tracking-mb="true" event-tracking-trigger="click">For business</a></li><li><a href="/for/universities" event-tracking="menu-clicked-universities" event-tracking-mb="true" event-tracking-trigger="click">For universities</a></li><li><a href="/for/publishers" event-tracking="menu-clicked-publishers" event-tracking-mb="true" event-tracking-trigger="click">For publishers</a></li><li><a href="/for/edu" event-tracking="menu-clicked-edu" event-tracking-mb="true" event-tracking-trigger="click">For teaching</a></li></ul></li><li class="subdued"><a class="subdued" href="/latex/templates" event-tracking="menu-clicked-templates" event-tracking-mb="true" event-tracking-trigger="click">Templates</a></li><li class="subdued"><a class="subdued" href="/user/subscription/plans" event-tracking="menu-clicked-plans" event-tracking-mb="true" event-tracking-trigger="click">Plans &amp; Pricing</a></li><li class="dropdown subdued"><a class="dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Help<span class="caret"></span></a><ul class="dropdown-menu"><li><a href="/about/why-latex" event-tracking="menu-clicked-why-latex" event-tracking-mb="true" event-tracking-trigger="click">Why LaTeX?</a></li><li><a href="/learn" event-tracking="menu-clicked-learn" event-tracking-mb="true" event-tracking-trigger="click">Documentation</a></li><li><a data-ol-open-contact-form-modal="contact-us" href><span event-tracking="menu-clicked-contact" event-tracking-mb="true" event-tracking-trigger="click">Contact Us</span></a></li></ul></li><!-- logged out--><!-- register link--><li class="primary"><a href="/register" event-tracking="menu-clicked-register" event-tracking-action="clicked" event-tracking-trigger="click" event-tracking-mb="true" event-segmentation="{&quot;page&quot;:&quot;/learn/latex/Chemistry_formulae&quot;}">Sign up</a></li><!-- login link--><li><a href="/login" event-tracking="menu-clicked-login" event-tracking-action="clicked" event-tracking-trigger="click" event-tracking-mb="true" event-segmentation="{&quot;page&quot;:&quot;/learn/latex/Chemistry_formulae&quot;}">Log in</a></li><!-- projects link and account menu--></ul></div></div></nav><main class="content content-page content-alt" id="main-content"><div class="container wiki" ng-cloak><div class="row template-page-header"><div class="col-md-8" ng-cloak></div></div><div class="row"><div class="col-xs-12 col-sm-9 col-sm-push-3 page"><div class="wiki"><form class="project-search form-horizontal" role="search" data-ol-faq-search="data-ol-faq-search"><div class="form-group has-feedback has-feedback-left"><div class="col-sm-12"><input class="form-control" type="text" placeholder="Search help library…"/><i class="fa fa-search form-control-feedback-left" aria-hidden="true"></i><i class="fa fa-times form-control-feedback" style="cursor: pointer;" hidden="hidden" data-ol-clear-search="data-ol-clear-search" aria-hidden="true"></i><button class="sr-only" type="button" hidden="hidden" data-ol-clear-search="data-ol-clear-search" aria-label="clear search"></button></div></div><div class="row" role="region" aria-label="search results"><div class="col-md-12"><div data-ol-search-results-wrapper="data-ol-search-results-wrapper"><span class="sr-only" aria-live="polite" data-ol-search-sr-help-message="data-ol-search-sr-help-message"></span><div data-ol-search-results="data-ol-search-results"></div></div><div class="row-spaced-small search-result card card-thin" hidden="hidden" data-ol-search-no-results="data-ol-search-no-results"><p>No Search Results</p></div></div></div></form></div><div class="card row-spaced"><div class="page-header"><h1 ng-non-bindable>Chemistry formulae</h1></div><div data-ol-mathjax><div ng-non-bindable><div class="mw-parser-output"><p>This article highlights two LaTeX packages designed for typesetting chemical content and documentation:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://www.ctan.org/pkg/chemfig">chemfig</a>: a package to <a href="#Using_chemfig_to_draw_molecules_(structural_formulae)">draw structural formulae of molecules</a></li>
+<li><a rel="nofollow" class="external text" href="https://ctan.org/pkg/mhchem">mhchem</a>: a package to <a href="#Using_mhchem_to_typeset_chemical_formulae_and_equations">typeset chemical formulae and equations</a></li></ul>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Using_chemfig_to_draw_molecules_(structural_formulae)"><span class="tocnumber">1</span> <span class="toctext">Using chemfig to draw molecules (structural formulae)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Angles"><span class="tocnumber">1.1</span> <span class="toctext">Angles</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Rings"><span class="tocnumber">1.2</span> <span class="toctext">Rings</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Connected_rings"><span class="tocnumber">1.2.1</span> <span class="toctext">Connected rings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Branches"><span class="tocnumber">1.3</span> <span class="toctext">Branches</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Customizing_the_formulae"><span class="tocnumber">1.4</span> <span class="toctext">Customizing the formulae</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Reference_guide_(chemfig)"><span class="tocnumber">1.5</span> <span class="toctext">Reference guide (chemfig)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Using_mhchem_to_typeset_chemical_formulae_and_equations"><span class="tocnumber">2</span> <span class="toctext">Using mhchem to typeset chemical formulae and equations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#How_to_load_the_mhchem_package"><span class="tocnumber">2.1</span> <span class="toctext">How to load the mhchem package</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Some_examples"><span class="tocnumber">2.2</span> <span class="toctext">Some examples</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Visual_Editor’s_preview_of_chemical_formulae_and_equations"><span class="tocnumber">2.3</span> <span class="toctext">Visual Editor’s preview of chemical formulae and equations</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#The_“Unexpected_input_character”_mhchem_error"><span class="tocnumber">2.4</span> <span class="toctext">The “Unexpected input character” mhchem error</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Further_reading"><span class="tocnumber">3</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+
+<h2><span id="Using_chemfig_to_draw_molecules_.28structural_formulae.29"></span><span class="mw-headline" id="Using_chemfig_to_draw_molecules_(structural_formulae)">Using <code>chemfig</code> to draw molecules (structural formulae)</span></h2>
+<p>Drawing a molecule consists mainly of connecting groups of atoms with lines. Simple linear formulae can be easily drawn using the <code>chemfig</code> package, as shown in the following example:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>chemfig<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
+Writing chemical formulae with chemfig is straightforward.
+
+<span class="k">\chemfig</span><span class="nb">{</span>A=B<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Chemfig+example+1
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bchemfig%7D%0A%5Cbegin%7Bdocument%7D%0A%0A%5Csection%7BIntroduction%7D%0AWriting+chemical+formulae+with+chemfig+is+straightforward.%0A%0A%5Cchemfig%7BA%3DB%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>chemfig</code> example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following image shows the output produced by the example above:
+</p><p>
+<img src="https://images.ctfassets.net/nrgyaltdicpt/1ZW0Uuy4r8fLiITTPNAQOD/0931e9a460dc0349e1c2c71c91f3f4ec/ChemicalFormulaeNew1.svg" alt="A basic chemfig example" style="width:50%" />
+
+</p><p>The package is imported by <code>\usepackage{chemfig}</code> in the preamble. The command <code>\chemfig{A=B}</code> the draws the molecule. The symbol <code>=</code> determines the type of bond. See the <a href="#Reference_guide">reference guide</a> for a list of bond types.
+</p>
+<h3><span class="mw-headline" id="Angles">Angles</span></h3>
+<p>There are several ways to define angles between bonds in molecules.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span>To define chemical formulae you can use units that define the angles
+
+<span class="k">\chemfig</span><span class="nb">{</span>A-[1]B-[7]C<span class="nb">}</span>
+
+Absolute angles
+
+<span class="k">\chemfig</span><span class="nb">{</span>A-[:50]B-[:-25]C<span class="nb">}</span>
+
+Relative angles
+
+<span class="k">\chemfig</span><span class="nb">{</span>A-[::50]B-[::-25]C<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Chemfig+example+2
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bchemfig%7D%0A%5Cbegin%7Bdocument%7D%0ATo+define+chemical+formulae+you+can+use+units+that+define+the+angles%0A%0A%5Cchemfig%7BA-%5B1%5DB-%5B7%5DC%7D%0A%0AAbsolute+angles%0A%0A%5Cchemfig%7BA-%5B%3A50%5DB-%5B%3A-25%5DC%7D%0A%0ARelative+angles%0A%0A%5Cchemfig%7BA-%5B%3A%3A50%5DB-%5B%3A%3A-25%5DC%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>chemfig</code> example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following image shows the output produced by the example above:
+</p><p><img alt="Chemfig2OLV2.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/0/04/Chemfig2OLV2.png" decoding="async" width="600" height="288" />
+</p><p>Each one of the three commands in the example above uses a different method to determine the angle between bonds.
+</p>
+<ul><li><code>default units</code>: In the command <code>\chemfig{A-[1]B-[7]C}</code> the parameters inside brackets set the angle in special units, each unit equals 45°. Hence in the example the angles are 45° and 315°.</li>
+<li><code>absolute units</code>: The angles can be set in absolute units, in the command <code>\chemfig{A-[:50]B-[:-25]C}</code> the parameter inside the brackets represent the angle, in degrees, measured from the horizontal baseline. Negative angles are allowed.</li>
+<li><code>relative angles</code>: In the third example <code>\chemfig{A-[::50]B-[::-25]C}</code> the angles are measured from the previous bond, instead of the baseline.</li></ul>
+<h3><span class="mw-headline" id="Rings">Rings</span></h3>
+<p>The example below presents the syntax to draw regular polygons:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span>Regular polygons:
+
+<span class="k">\chemfig</span><span class="nb">{</span>A*5(-B=C-D-E=)<span class="nb">}</span>
+
+Incomplete rings are also possible:
+
+<span class="k">\chemfig</span><span class="nb">{</span>A*5(-B=C-D)<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Chemfig+example+3
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bchemfig%7D%0A%5Cbegin%7Bdocument%7D%0ARegular+polygons%3A%0A%0A%5Cchemfig%7BA%2A5%28-B%3DC-D-E%3D%29%7D%0A%0AIncomplete+rings+are+also+possible%3A%0A%0A%5Cchemfig%7BA%2A5%28-B%3DC-D%29%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>chemfig</code> example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following image shows the output produced by the example above:
+</p><p><img alt="Chemfig3OLV2.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/5/55/Chemfig3OLV2.png" decoding="async" width="300" height="263" />
+</p><p>The syntax of the command <code>\chemfig{A*5(-B=C-D-E=)}</code> is explained below:
+</p>
+<ul><li><code>A</code>: This is the first atom, the rest of the atoms will be drawn from here</li>
+<li><code>*5</code>: Number of sides of the polygon</li>
+<li><code>(-B=C-D-E=)</code>: The rest of the atoms and bonds. If not enough are passed to complete the polygon, an incomplete ring will be drawn.</li></ul>
+<p>There is an additional parameter that can be passed to this command: a double asterisk. For instance, if <code>**5</code> is set instead of <code>*5</code> a circle is drawn inside the polygon.
+</p>
+<h4><span class="mw-headline" id="Connected_rings">Connected rings</span></h4>
+<p>The next example draws the chemical structure of caffeine:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>chemfig<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\section</span><span class="nb">{</span>I need caffeine.<span class="nb">}</span>
+
+<span class="k">\chemfig</span><span class="nb">{</span>*6((=O)-N(-H)-(*5(-N=-N(-H)-))=-(=O)-N(-H)-)<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Drawing+caffeine+using+chemfig
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bchemfig%7D%0A%5Cbegin%7Bdocument%7D%0A%5Csection%7BI+need+caffeine.%7D%0A%0A%5Cchemfig%7B%2A6%28%28%3DO%29-N%28-H%29-%28%2A5%28-N%3D-N%28-H%29-%29%29%3D-%28%3DO%29-N%28-H%29-%29%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>chemfig</code> example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following graphic shows the output produced by the caffeine example: 
+</p><p>
+<img src="
+https://images.ctfassets.net/nrgyaltdicpt/7aHFxN6tjs7V7c3kGDIKqf/0b6aa5cdc4110e0839f0719e40b480e0/ChemicalFormulaeNew2.svg" alt="A drawing of the caffeine molecule produced using the chemfig LaTeX package" />
+
+</p>
+<h3><span class="mw-headline" id="Branches">Branches</span></h3>
+<p>Chemical formulae are not always linear, branched formulae are actually the most common type. Below an example on how to create them.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span>Branched molecule <span class="k">\vspace</span><span class="nb">{</span>.5cm<span class="nb">}</span>
+
+<span class="k">\chemfig</span><span class="nb">{</span>H-C(-[2]H)(-[6]H)-C(=[1]O)-[7]H<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Chemfig+example+4
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bchemfig%7D%0A%5Cbegin%7Bdocument%7D%0ABranched+molecule+%5Cvspace%7B.5cm%7D%0A%0A%5Cchemfig%7BH-C%28-%5B2%5DH%29%28-%5B6%5DH%29-C%28%3D%5B1%5DO%29-%5B7%5DH%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>chemfig</code> example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following image shows the output produced by the example above:
+</p><p><img alt="Chemfig4OLV2.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/d/d1/Chemfig4OLV2.png" decoding="async" width="250" height="257" />
+</p><p>Branches in each node are created by adding formulas inside parentheses. For instance, the code
+</p>
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span>C(-[2]H)(-[6]H)
+</pre></div>
+<p>creates two branches in "C", one with a 2 units angle (90°) and other with a 6 units angle (270°).
+</p><p>Branches can also be added to rings:
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span>Branched ring
+<span class="k">\vspace</span><span class="nb">{</span>.5cm<span class="nb">}</span>
+
+<span class="k">\chemfig</span><span class="nb">{</span>A*6(-B=C(-CH<span class="nb">_</span>3)-D-E-F(=G)=)<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Chemfig+example+5
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bchemfig%7D%0A%5Cbegin%7Bdocument%7D%0ABranched+ring%0A%5Cvspace%7B.5cm%7D%0A%0A%5Cchemfig%7BA%2A6%28-B%3DC%28-CH_3%29-D-E-F%28%3DG%29%3D%29%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>chemfig</code> example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following image shows the output produced by the example above:
+</p><p><img alt="Chemfig5OLV2.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/4/4f/Chemfig5OLV2.png" decoding="async" width="250" height="190" />
+</p><p>The syntax is similar, using parentheses a branch can be attached to a node (atom). For instance 
+</p>
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span>F(=G)
+</pre></div>
+<p>attaches a branch to the node "F". More complex examples can be created using nested branches and even attaching rings as branches.
+</p>
+<h3><span class="mw-headline" id="Customizing_the_formulae">Customizing the formulae</span></h3>
+<p>Several parameters such as colors and the node separation can be changed, also additional text to describe the formula can be added.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="nb">{</span><span class="k">\huge</span> 
+    <span class="k">\setchemfig</span><span class="nb">{</span>atom sep=2em,bond style=<span class="nb">{</span>line width=1pt,red,dash pattern=on 2pt off 2pt<span class="nb">}}</span>  
+    <span class="k">\chemname</span>
+    <span class="nb">{</span><span class="k">\chemfig</span><span class="nb">{</span>H-C(-[2]H)(-[6]H)-C(=[1]O)-[7]H<span class="nb">}}</span>    
+    <span class="nb">{</span>Acetaldehyde<span class="nb">}</span>
+<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=Chemfig+example+6
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%7Bchemfig%7D%0A%5Cbegin%7Bdocument%7D%0A%7B%5Chuge+%0A++++%5Csetchemfig%7Batom+sep%3D2em%2Cbond+style%3D%7Bline+width%3D1pt%2Cred%2Cdash+pattern%3Don+2pt+off+2pt%7D%7D++%0A++++%5Cchemname%0A++++%7B%5Cchemfig%7BH-C%28-%5B2%5DH%29%28-%5B6%5DH%29-C%28%3D%5B1%5DO%29-%5B7%5DH%7D%7D++++%0A++++%7BAcetaldehyde%7D%0A%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>chemfig</code> example in Overleaf</a>
+</p><p class="mw-empty-elt"></p>
+<p>The following image shows the output produced by the example above:
+</p><p>
+<img src="https://images.ctfassets.net/nrgyaltdicpt/2uAzlDKHK3AB5c4PaejGPl/cf4855be6db8d940e593961aa65bd8dc/ChemicalFormulaeNew3.svg" alt="Drawing Acetaldehyde in LaTeX using the chemfig package" />
+
+</p><p>There are two new commands here:
+</p>
+<ul><li><code>\setchemfig{}</code>: This command is used to configure settings for drawing chemical structures.</li></ul>
+<ul><li><code>\chem</code><code>name{}{}</code> : The first parameter in this command is a <code>chemfig</code> formula, the second one is some text that will be printed below the formula. In the example, the text is "Acetaldehyde".</li></ul>
+<p>Notice also that the font used is <code>huge</code>. You can use any other <a href="/learn/latex/Font_sizes_and_kinds" class="mw-redirect" title="Font sizes and kinds"> font size</a> and the formula will be scaled accordingly.
+</p>
+<h3><span id="Reference_guide_.28chemfig.29"></span><span class="mw-headline" id="Reference_guide_(chemfig)">Reference guide (chemfig)</span></h3>
+<p><b>Bond types</b>
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Bond type</th>
+<th>code</th>
+<th>output
+</th></tr>
+<tr>
+<td>single
+</td>
+<td><code>\chemfig{O - H}</code>
+</td>
+<td><img alt="Bond1.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/c/c4/Bond1.png" decoding="async" width="100" height="47" />
+</td></tr>
+<tr>
+<td>double
+</td>
+<td><code>\chemfig{O = H}</code>
+</td>
+<td><img alt="Bond2.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/9/9b/Bond2.png" decoding="async" width="95" height="43" />
+</td></tr>
+<tr>
+<td>triple
+</td>
+<td><code>\chemfig{O ~ H}</code>
+</td>
+<td><img alt="Bond3.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/1/16/Bond3.png" decoding="async" width="95" height="43" />
+</td></tr>
+<tr>
+<td>plain right cram
+</td>
+<td><code>\chemfig{O &gt; H}</code>
+</td>
+<td><img alt="Bond4.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/1/11/Bond4.png" decoding="async" width="95" height="43" />
+</td></tr>
+<tr>
+<td>plain left cram
+</td>
+<td><code>\chemfig{O &lt; H}</code>
+</td>
+<td><img alt="Bond5.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/a/a6/Bond5.png" decoding="async" width="95" height="43" />
+</td></tr>
+<tr>
+<td>dashed right cram
+</td>
+<td><code>\chemfig{O &gt;: H}</code>
+</td>
+<td><img alt="Bond6.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/7/7f/Bond6.png" decoding="async" width="95" height="43" />
+</td></tr>
+<tr>
+<td>dashed left cram
+</td>
+<td><code>\chemfig{O &lt;: H}</code>
+</td>
+<td><img alt="Bond7.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/2/2e/Bond7.png" decoding="async" width="95" height="43" />
+</td></tr>
+<tr>
+<td>hollow right cram
+</td>
+<td><code>\chemfig{O &gt;| H}</code>
+</td>
+<td><img alt="Bond8.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/1/1d/Bond8.png" decoding="async" width="95" height="43" />
+</td></tr>
+<tr>
+<td>hollow left cram
+</td>
+<td><code>\chemfig{O &lt;| H}</code>
+</td>
+<td><img alt="Bond9.png" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/b/b5/Bond9.png" decoding="async" width="95" height="43" />
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Using_mhchem_to_typeset_chemical_formulae_and_equations">Using <code>mhchem</code> to typeset chemical formulae and equations</span></h2>
+<p>The <code>mhchem</code> package’s versatile <code>\ce</code> command, which is <a href="#Visual_Editor’s_preview_of_chemical_formulae_and_equations">supported by Overleaf’s Visual Editor preview</a>, enables typesetting of chemical formulae and equations; for example, writing <code>\ce{H2O}</code> typesets \(\text{H}_2\text{O}\), the chemical formula for water.
+</p>
+<ul><li><strong>Note</strong>: Recent versions of the <code>mhchem</code> package can <a rel="nofollow" class="external text" href="https://www.overleaf.com/learn/how-to/Fixing_and_preventing_compile_timeouts#mhchemtimeout">increase the time needed for your project to compile</a>. Switching to the <a rel="nofollow" class="external text" href="https://ctan.org/pkg/chemformula?lang=en"><code>chemformula</code> package</a>, and using its <code>\ch</code> command, can decrease compilation time but the <code>\ch</code> command is not currently previewed by Visual Editor.</li></ul>
+<h3><span class="mw-headline" id="How_to_load_the_mhchem_package">How to load the <code>mhchem</code> package</span></h3>
+<p>To use the latest version of <code>mhchem</code>, currently version 4, add the following line to your document preamble: 
+</p>
+<p class="mw-empty-elt"></p><div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\usepackage</span><span class="na">[version=4]</span><span class="nb">{</span>mhchem<span class="nb">}</span>
+</pre></div><p class="mw-empty-elt"></p>
+<p>This loads <code>mhchem</code> with its default styles for formatting chemical formulae and equations. To change those defaults you can either use <code>mhchem</code> package options or the <code>\mhchemoptions</code> command. For example, to change the text mode font to sans serif and draw arrows using PGF/Ti<i>k</i>Z, you can load <code>mhchem</code> using              
+</p>
+<p class="mw-empty-elt"></p><div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\usepackage</span><span class="na">[version=4,arrows=pgf-filled,textfontname=sffamily]</span><span class="nb">{</span>mhchem<span class="nb">}</span>
+</pre></div>
+<p>or you can use the <code>\mhchemoptions</code> command within your document            
+</p>
+<p class="mw-empty-elt"></p><div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\mhchemoptions</span><span class="nb">{</span>arrows=pgf-filled,textfontname=sffamily<span class="nb">}</span>
+</pre></div>
+<p>The <a rel="nofollow" class="external text" href="http://mirrors.ctan.org/macros/latex/contrib/mhchem/mhchem.pdf"><code>mhchem</code> package documentation</a> provides further guidance on configuring <code>mhchem</code>, together with numerous examples of chemical formulae and equations, a few of which we reproduce here to help you get started. Note the use of space characters within more complex input to the <code>\ce</code> command. Those spaces are required to help <code>mhchem</code> correctly parse your chemical formulae and equations; omitting them can trigger the error <a href="#The_“Unexpected_input_character”_mhchem_error">Unexpected input character</a>.
+</p>
+<h3><span class="mw-headline" id="Some_examples">Some examples</span></h3>
+<p>The following Overleaf project loads <code>mhchem</code> using three package options:  
+</p>
+<ul><li><code>arrows=pgf-filled</code>: draws filled arrows using PGF</li>
+<li><code>textfontname=sffamily</code>: outside of math mode, chemical formulae and equations are typeset using using the default sans serif font</li>
+<li><code>mathfontname=mathsf</code>: in math mode use a sans serif font</li></ul>
+<p>The <code>\ce</code> command is used to typeset a range of examples.
+</p>
+<p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="c">%Load mhchem using some package options</span>
+<span class="k">\usepackage</span>[version=4,arrows=pgf-filled,
+textfontname=sffamily,
+mathfontname=mathsf]<span class="nb">{</span>mhchem<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\subsection*</span><span class="nb">{</span>Simple molecules<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\item</span> Water: <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>H2O<span class="nb">}</span>|, <span class="k">\ce</span><span class="nb">{</span>H2O<span class="nb">}</span>
+<span class="k">\item</span> Benzene: <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>C6H6<span class="nb">}</span>|, <span class="k">\ce</span><span class="nb">{</span>C6H6<span class="nb">}</span>
+<span class="k">\item</span> Hydrogen peroxide: <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>H2O2<span class="nb">}</span>|, <span class="k">\ce</span><span class="nb">{</span>H2O2<span class="nb">}</span>
+<span class="k">\item</span> Acetic acid: <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>C2H4O2<span class="nb">}</span>|, <span class="k">\ce</span><span class="nb">{</span>C2H4O2<span class="nb">}</span>
+<span class="k">\item</span> Glucose: <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>C6H12O6<span class="nb">}</span>|, <span class="k">\ce</span><span class="nb">{</span>C6H12O6<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+
+<span class="k">\subsection*</span><span class="nb">{</span>Chemical equations<span class="nb">}</span>
+
+Two basic examples:
+
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\item</span> <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>2H2 + O2 -&gt; 2H2O<span class="nb">}</span>| typesets <span class="k">\ce</span><span class="nb">{</span>2H2 + O2 -&gt; 2H2O<span class="nb">}</span>
+<span class="k">\item</span> <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>CO2 + C -&gt; 2 CO<span class="nb">}</span>| typesets <span class="k">\ce</span><span class="nb">{</span>CO2 + C -&gt; 2 CO<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+
+<span class="k">\subsection*</span><span class="nb">{</span>A more complex example<span class="nb">}</span>
+
+Writing <span class="k">\verb</span>|<span class="k">\ce</span><span class="nb">{</span>Hg<span class="nb">^</span>2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg<span class="nb">^{</span>II<span class="nb">}</span>I4]<span class="nb">^</span>2-<span class="nb">}</span>| typesets this:<span class="k">\vskip</span>10pt
+<span class="k">\noindent</span> <span class="k">\ce</span><span class="nb">{</span>Hg<span class="nb">^</span>2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg<span class="nb">^{</span>II<span class="nb">}</span>I4]<span class="nb">^</span>2-<span class="nb">}</span>.
+
+<span class="k">\subsection*</span><span class="nb">{</span>A math mode example<span class="nb">}</span>
+
+Chemical expressions can be typeset using math mode commands such as <span class="k">\verb</span>|<span class="k">\frac</span>|. <span class="k">\vskip</span>10pt
+
+<span class="k">\noindent</span> Writing <span class="k">\verb</span>|<span class="sb">\[</span><span class="nb">K</span><span class="o">=</span><span class="nv">\frac</span><span class="nb">{</span><span class="o">[</span><span class="nv">\ce</span><span class="nb">{Hg^</span><span class="m">2</span><span class="o">+</span><span class="nb">}</span><span class="o">][</span><span class="nv">\ce</span><span class="nb">{Hg}</span><span class="o">]</span><span class="nb">}{</span><span class="o">[</span><span class="nv">\ce</span><span class="nb">{Hg</span><span class="m">2</span><span class="nb">^</span><span class="m">2</span><span class="o">+</span><span class="nb">}</span><span class="o">]</span><span class="nb">}</span><span class="s">\]</span>| produces this:
+
+<span class="sb">\[</span><span class="nb">K</span><span class="o">=</span><span class="nv">\frac</span><span class="nb">{</span><span class="o">[</span><span class="nv">\ce</span><span class="nb">{Hg^</span><span class="m">2</span><span class="o">+</span><span class="nb">}</span><span class="o">][</span><span class="nv">\ce</span><span class="nb">{Hg}</span><span class="o">]</span><span class="nb">}{</span><span class="o">[</span><span class="nv">\ce</span><span class="nb">{Hg</span><span class="m">2</span><span class="nb">^</span><span class="m">2</span><span class="o">+</span><span class="nb">}</span><span class="o">]</span><span class="nb">}</span><span class="s">\]</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=mhchem+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%25Load+mhchem+using+some+package+options%0A%5Cusepackage%5Bversion%3D4%2Carrows%3Dpgf-filled%2C%0Atextfontname%3Dsffamily%2C%0Amathfontname%3Dmathsf%5D%7Bmhchem%7D%0A%5Cbegin%7Bdocument%7D%0A%5Csubsection%2A%7BSimple+molecules%7D%0A%0A%5Cbegin%7Bitemize%7D%0A%5Citem+Water%3A+%5Cverb%7C%5Cce%7BH2O%7D%7C%2C+%5Cce%7BH2O%7D%0A%5Citem+Benzene%3A+%5Cverb%7C%5Cce%7BC6H6%7D%7C%2C+%5Cce%7BC6H6%7D%0A%5Citem+Hydrogen+peroxide%3A+%5Cverb%7C%5Cce%7BH2O2%7D%7C%2C+%5Cce%7BH2O2%7D%0A%5Citem+Acetic+acid%3A+%5Cverb%7C%5Cce%7BC2H4O2%7D%7C%2C+%5Cce%7BC2H4O2%7D%0A%5Citem+Glucose%3A+%5Cverb%7C%5Cce%7BC6H12O6%7D%7C%2C+%5Cce%7BC6H12O6%7D%0A%5Cend%7Bitemize%7D%0A%0A%5Csubsection%2A%7BChemical+equations%7D%0A%0ATwo+basic+examples%3A%0A%0A%5Cbegin%7Bitemize%7D%0A%5Citem+%5Cverb%7C%5Cce%7B2H2+%2B+O2+-%3E+2H2O%7D%7C+typesets+%5Cce%7B2H2+%2B+O2+-%3E+2H2O%7D%0A%5Citem+%5Cverb%7C%5Cce%7BCO2+%2B+C+-%3E+2+CO%7D%7C+typesets+%5Cce%7BCO2+%2B+C+-%3E+2+CO%7D%0A%5Cend%7Bitemize%7D%0A%0A%5Csubsection%2A%7BA+more+complex+example%7D%0A%0AWriting+%5Cverb%7C%5Cce%7BHg%5E2%2B+-%3E%5BI-%5D+HgI2+-%3E%5BI-%5D+%5BHg%5E%7BII%7DI4%5D%5E2-%7D%7C+typesets+this%3A%5Cvskip10pt%0A%5Cnoindent+%5Cce%7BHg%5E2%2B+-%3E%5BI-%5D+HgI2+-%3E%5BI-%5D+%5BHg%5E%7BII%7DI4%5D%5E2-%7D.%0A%0A%5Csubsection%2A%7BA+math+mode+example%7D%0A%0AChemical+expressions+can+be+typeset+using+math+mode+commands+such+as+%5Cverb%7C%5Cfrac%7C.+%5Cvskip10pt%0A%0A%5Cnoindent+Writing+%5Cverb%7C%5C%5BK%3D%5Cfrac%7B%5B%5Cce%7BHg%5E2%2B%7D%5D%5B%5Cce%7BHg%7D%5D%7D%7B%5B%5Cce%7BHg2%5E2%2B%7D%5D%7D%5C%5D%7C+produces+this%3A%0A%0A%5C%5BK%3D%5Cfrac%7B%5B%5Cce%7BHg%5E2%2B%7D%5D%5B%5Cce%7BHg%7D%5D%7D%7B%5B%5Cce%7BHg2%5E2%2B%7D%5D%7D%5C%5D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <code>mhchem</code> example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p>This project produces the following output:</p>
+<p class="mw-empty-elt">
+</p><div class="example"><div class="output">
+<img src="https://images.ctfassets.net/nrgyaltdicpt/L8vsxaHm3H7iPgjksV3gd/be0de9d4188d145cf314a8524598329a/MHCHEMexamples.svg" alt="Graphic showing mhchem examples" style="width:80%;padding:20px" /> 
+</div></div>
+
+<p class="mw-empty-elt"></p><p>The <a rel="nofollow" class="external text" href="http://mirrors.ctan.org/macros/latex/contrib/mhchem/mhchem.pdf"><code>mhchem</code> package documentation</a> is well worth reading because it contains numerous examples of chemical formulae and equations in addition to information on package options and configuration.
+</p>
+<h3><span id="Visual_Editor.E2.80.99s_preview_of_chemical_formulae_and_equations"></span><span class="mw-headline" id="Visual_Editor’s_preview_of_chemical_formulae_and_equations">Visual Editor’s preview of chemical formulae and equations</span></h3>
+<p>Overleaf’s Visual Editor provides a preview of chemical formulae and equations typeset by the <code>\ce</code> command, as demonstrated in the following video clip:
+</p><p class="mw-empty-elt">
+</p><div style="max-width:800px">
+<video controls width="100%" height="100%" src="https://videos.ctfassets.net/nrgyaltdicpt/38RMpDdTIkwBhVo4Jh2s28/aac834f5d7f2676133f884e1c6b3d0cb/VisualEditorchem.mp4" type="video/mp4">
+</video>
+</div>
+
+<p class="mw-empty-elt"></p>
+<h3><span id="The_.E2.80.9CUnexpected_input_character.E2.80.9D_mhchem_error"></span><span class="mw-headline" id="The_“Unexpected_input_character”_mhchem_error">The “Unexpected input character” <code>mhchem</code> error</span></h3>
+<p>The <code>mhchem</code> package error <strong><code>Assertion failed: Unexpected input character</code></strong> often results from missing spaces in the <code>\ce</code> command input—spaces are essential for <code>mhchem</code> to accurately parse the more complex chemical expressions. This error can arise when copying and pasting examples from PDF documents, where spaces may not be accurately replicated.
+</p><p>
+The following example demonstrates this error:</p><p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\ce</span><span class="nb">{</span>CO2+C-&gt;2CO<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=mhchem+errors+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bversion%3D4%5D%7Bmhchem%7D+%0A%5Cbegin%7Bdocument%7D%0A%5Cce%7BCO2%2BC-%3E2CO%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this <strong>error-generating</strong> <code>mhchem</code> example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p><p>
+As a minimum, we need to put a space between the <code>C</code> and the <code>-&gt;</code> ; however, that approach might still not be sufficient to typeset our desired expression. With all spaces added correctly, it looks like this:</p><p class="mw-empty-elt"></p><p class="mw-empty-elt"></p><div class="example">
+<div class="code">
+<div class="mw-highlight mw-highlight-lang-latex mw-content-ltr" dir="ltr"><pre><span></span><span class="k">\ce</span><span class="nb">{</span>CO2 + C -&gt; 2 CO<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+
+<p><a class="open-in-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=pdflatex
+&amp;snip_name=mhchem+corrected+example
+&amp;snip=%5Cdocumentclass%7Barticle%7D%0A%5Cusepackage%5Bversion%3D4%5D%7Bmhchem%7D+%0A%5Cbegin%7Bdocument%7D%0A%5Cce%7BCO2+%2B+C+-%3E+2+CO%7D%0A%5Cend%7Bdocument%7D"><i class="fa fa-share"></i> Open this corrected <code>mhchem</code> example in Overleaf.</a>
+</p><p class="mw-empty-elt"></p>
+<p class="mw-empty-elt"></p>
+<p>This project produces the following output:</p>
+<p>
+<img src="https://images.ctfassets.net/nrgyaltdicpt/4pSvrdqGbV72epYYwuPcFJ/f259ba5c5c999d80231612c0fbdc4556/mchemexample2.svg" width="25%" />
+
+</p>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<p>For more information see
+</p>
+<ul><li><a href="/learn/latex/Molecular_orbital_diagrams" title="Molecular orbital diagrams">Molecular orbital diagrams</a></li>
+<li><a href="/learn/latex/Feynman_diagrams" title="Feynman diagrams">Feynman diagrams</a></li>
+<li><a href="/learn/latex/TikZ_package" title="TikZ package">TikZ package</a></li>
+<li><a href="/learn/latex/Inserting_Images" title="Inserting Images">Inserting Images</a></li>
+<li><a href="/learn/latex/List_of_Greek_letters_and_math_symbols" title="List of Greek letters and math symbols">List of Greek letters and math symbols</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ctan.org/pkg/chemfig">The <b>chemfig</b> package documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ctan.org/pkg/pgf">The <b>tikz/pgf</b> package documentation</a></li></ul>
+
+
+
+
+</div></div></div></div></div><div class="col-xs-12 col-sm-3 col-sm-pull-9 contents card" ng-non-bindable><div class="mw-parser-output"><ul><li><a href="/learn" title="Main Page">Documentation Home</a></li>
+<li><a href="/learn/latex/Learn_LaTeX_in_30_minutes" title="Learn LaTeX in 30 minutes">Learn LaTeX in 30 minutes</a></li></ul>
+<h2><span class="mw-headline">Overleaf guides</span></h2>
+<ul><li><a href="/learn/how-to/Creating_a_document_in_Overleaf" title="Kb/Creating a document in Overleaf">Creating a document in Overleaf</a></li>
+<li><a href="/learn/how-to/Uploading_a_project" title="Kb/Uploading a project">Uploading a project</a></li>
+<li><a href="/learn/how-to/Copying_a_project" title="Kb/Copying a project">Copying a project</a></li>
+<li><a href="/learn/how-to/Creating_a_project_from_a_template" title="Kb/Creating a project from a template">Creating a project from a template</a></li>
+<li><a href="/learn/how-to/Using_the_Overleaf_project_menu" title="Kb/Using the Overleaf project menu">Using the Overleaf project menu</a></li>
+<li><a href="/learn/how-to/Including_images_on_Overleaf" title="Kb/Including images on Overleaf">Including images in Overleaf</a></li>
+<li><a href="/learn/how-to/Exporting_your_work_from_Overleaf" title="Kb/Exporting your work from Overleaf">Exporting your work from Overleaf</a></li>
+<li><a href="/learn/how-to/Working_Offline_in_Overleaf" title="Kb/Working Offline in Overleaf">Working offline in Overleaf</a></li>
+<li><a href="/learn/how-to/Track_Changes_in_Overleaf" title="Kb/Track Changes in Overleaf">Using Track Changes in Overleaf</a></li>
+<li><a href="/learn/how-to/Using_bibliographies_on_Overleaf" title="Kb/Using bibliographies on Overleaf">Using bibliographies in Overleaf</a></li>
+<li><a href="/learn/how-to/Sharing_a_project" title="Kb/Sharing a project">Sharing your work with others</a></li>
+<li><a href="/learn/latex/Using_the_History_feature" title="Using the History feature">Using the History feature</a></li>
+<li><a href="/learn/how-to/Why_do_I_keep_getting_the_compile_timeout_error_message%3F" class="mw-redirect" title="Kb/Why do I keep getting the compile timeout error message?">Debugging Compilation timeout errors</a></li>
+<li><a href="/learn/how-to" class="mw-redirect" title="Kb/Knowledge Base">How-to guides</a></li>
+<li><a href="/learn/how-to/Overleaf_premium_features" title="Kb/Overleaf premium features">Guide to Overleaf’s premium features</a></li></ul>
+<h2><span class="mw-headline">LaTeX Basics</span></h2>
+<ul><li><a href="/learn/latex/Creating_a_document_in_LaTeX" class="mw-redirect" title="Creating a document in LaTeX">Creating your first LaTeX document</a></li>
+<li><a href="/learn/latex/Choosing_a_LaTeX_Compiler" title="Choosing a LaTeX Compiler">Choosing a LaTeX Compiler</a></li>
+<li><a href="/learn/latex/Paragraphs_and_new_lines" title="Paragraphs and new lines">Paragraphs and new lines</a></li>
+<li><a href="/learn/latex/Bold%2C_italics_and_underlining" title="Bold, italics and underlining">Bold, italics and underlining</a></li>
+<li><a href="/learn/latex/Lists" title="Lists">Lists</a></li>
+<li><a href="/learn/latex/Errors" title="Errors">Errors</a></li></ul>
+<h2><span class="mw-headline">Mathematics</span></h2>
+<ul><li><a href="/learn/latex/Mathematical_expressions" title="Mathematical expressions">Mathematical expressions</a></li>
+<li><a href="/learn/latex/Subscripts_and_superscripts" title="Subscripts and superscripts">Subscripts and superscripts</a></li>
+<li><a href="/learn/latex/Brackets_and_Parentheses" title="Brackets and Parentheses">Brackets and Parentheses</a></li>
+<li><a href="/learn/latex/Matrices" title="Matrices">Matrices</a></li>
+<li><a href="/learn/latex/Fractions_and_Binomials" title="Fractions and Binomials">Fractions and Binomials</a></li>
+<li><a href="/learn/latex/Aligning_equations_with_amsmath" title="Aligning equations with amsmath">Aligning equations</a></li>
+<li><a href="/learn/latex/Operators" title="Operators">Operators</a></li>
+<li><a href="/learn/latex/Spacing_in_math_mode" title="Spacing in math mode">Spacing in math mode</a></li>
+<li><a href="/learn/latex/Integrals%2C_sums_and_limits" title="Integrals, sums and limits">Integrals, sums and limits</a></li>
+<li><a href="/learn/latex/Display_style_in_math_mode" title="Display style in math mode">Display style in math mode</a></li>
+<li><a href="/learn/latex/List_of_Greek_letters_and_math_symbols" title="List of Greek letters and math symbols">List of Greek letters and math symbols</a></li>
+<li><a href="/learn/latex/Mathematical_fonts" title="Mathematical fonts">Mathematical fonts</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.overleaf.com/learn/how-to/Using_the_Symbol_Palette_in_Overleaf">Using the Symbol Palette in Overleaf</a></li></ul>
+<h2><span class="mw-headline">Figures and tables</span></h2>
+<ul><li><a href="/learn/latex/Inserting_Images" title="Inserting Images">Inserting Images</a></li>
+<li><a href="/learn/latex/Tables" title="Tables">Tables</a></li>
+<li><a href="/learn/latex/Positioning_images_and_tables" title="Positioning images and tables">Positioning Images and Tables</a></li>
+<li><a href="/learn/latex/Lists_of_tables_and_figures" title="Lists of tables and figures">Lists of Tables and Figures</a></li>
+<li><a href="/learn/latex/Picture_environment" title="Picture environment">Drawing Diagrams Directly in LaTeX</a></li>
+<li><a href="/learn/latex/TikZ_package" title="TikZ package">TikZ package</a></li></ul>
+<h2><span class="mw-headline">References and Citations</span></h2>
+<ul><li><a href="/learn/latex/Bibliography_management_with_bibtex" title="Bibliography management with bibtex">Bibliography management with bibtex</a></li>
+<li><a href="/learn/latex/Bibliography_management_with_natbib" title="Bibliography management with natbib">Bibliography management with natbib</a></li>
+<li><a href="/learn/latex/Bibliography_management_with_biblatex" title="Bibliography management with biblatex">Bibliography management with biblatex</a></li>
+<li><a href="/learn/latex/Bibtex_bibliography_styles" title="Bibtex bibliography styles">Bibtex bibliography styles</a></li>
+<li><a href="/learn/latex/Natbib_bibliography_styles" title="Natbib bibliography styles">Natbib bibliography styles</a></li>
+<li><a href="/learn/latex/Natbib_citation_styles" title="Natbib citation styles">Natbib citation styles</a></li>
+<li><a href="/learn/latex/Biblatex_bibliography_styles" title="Biblatex bibliography styles">Biblatex bibliography styles</a></li>
+<li><a href="/learn/latex/Biblatex_citation_styles" title="Biblatex citation styles">Biblatex citation styles</a></li></ul>
+<h2><span class="mw-headline">Languages</span></h2>
+<ul><li><a href="/learn/latex/Multilingual_typesetting_on_Overleaf_using_polyglossia_and_fontspec" title="Multilingual typesetting on Overleaf using polyglossia and fontspec">Multilingual typesetting on Overleaf using polyglossia and fontspec</a></li>
+<li><a href="/learn/latex/Multilingual_typesetting_on_Overleaf_using_babel_and_fontspec" title="Multilingual typesetting on Overleaf using babel and fontspec">Multilingual typesetting on Overleaf using babel and fontspec</a></li>
+<li><a href="/learn/latex/International_language_support" title="International language support">International language support</a></li>
+<li><a href="/learn/latex/Typesetting_quotations" title="Typesetting quotations">Quotations and quotation marks</a></li>
+<li><a href="/learn/latex/Arabic" title="Arabic">Arabic</a></li>
+<li><a href="/learn/latex/Chinese" title="Chinese">Chinese</a></li>
+<li><a href="/learn/latex/French" title="French">French</a></li>
+<li><a href="/learn/latex/German" title="German">German</a></li>
+<li><a href="/learn/latex/Greek" title="Greek">Greek</a></li>
+<li><a href="/learn/latex/Italian" title="Italian">Italian</a></li>
+<li><a href="/learn/latex/Japanese" title="Japanese">Japanese</a></li>
+<li><a href="/learn/latex/Korean" title="Korean">Korean</a></li>
+<li><a href="/learn/latex/Portuguese" title="Portuguese">Portuguese</a></li>
+<li><a href="/learn/latex/Russian" title="Russian">Russian</a></li>
+<li><a href="/learn/latex/Spanish" title="Spanish">Spanish</a></li></ul>
+<h2><span class="mw-headline">Document structure</span></h2>
+<ul><li><a href="/learn/latex/Sections_and_chapters" title="Sections and chapters">Sections and chapters</a></li>
+<li><a href="/learn/latex/Table_of_contents" title="Table of contents">Table of contents</a></li>
+<li><a href="/learn/latex/Cross_referencing_sections%2C_equations_and_floats" title="Cross referencing sections, equations and floats">Cross referencing sections, equations and floats</a></li>
+<li><a href="/learn/latex/Indices" title="Indices">Indices</a></li>
+<li><a href="/learn/latex/Glossaries" title="Glossaries">Glossaries</a></li>
+<li><a href="/learn/latex/Nomenclatures" title="Nomenclatures">Nomenclatures</a></li>
+<li><a href="/learn/latex/Management_in_a_large_project" title="Management in a large project">Management in a large project</a></li>
+<li><a href="/learn/latex/Multi-file_LaTeX_projects" title="Multi-file LaTeX projects">Multi-file LaTeX projects</a></li>
+<li><a href="/learn/latex/Hyperlinks" title="Hyperlinks">Hyperlinks</a></li></ul>
+<h2><span class="mw-headline">Formatting</span></h2>
+<ul><li><a href="/learn/latex/Lengths_in_LaTeX" title="Lengths in LaTeX">Lengths in <span class="texhtml" style="font-family:'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif">L<span style="text-transform:uppercase;font-size:70%;margin-left:-0.36em;vertical-align:0.3em;line-height:0;margin-right:-0.15em">a</span>T<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.125em">e</span>X</span></a></li>
+<li><a href="/learn/latex/Headers_and_footers" title="Headers and footers">Headers and footers</a></li>
+<li><a href="/learn/latex/Page_numbering" title="Page numbering">Page numbering</a></li>
+<li><a href="/learn/latex/Paragraph_formatting" class="mw-redirect" title="Paragraph formatting">Paragraph formatting</a></li>
+<li><a href="/learn/latex/Line_breaks_and_blank_spaces" title="Line breaks and blank spaces">Line breaks and blank spaces</a></li>
+<li><a href="/learn/latex/Text_alignment" title="Text alignment">Text alignment</a></li>
+<li><a href="/learn/latex/Page_size_and_margins" title="Page size and margins">Page size and margins</a></li>
+<li><a href="/learn/latex/Single_sided_and_double_sided_documents" title="Single sided and double sided documents">Single sided and double sided documents</a></li>
+<li><a href="/learn/latex/Multiple_columns" title="Multiple columns">Multiple columns</a></li>
+<li><a href="/learn/latex/Counters" title="Counters">Counters</a></li>
+<li><a href="/learn/latex/Code_listing" title="Code listing">Code listing</a></li>
+<li><a href="/learn/latex/Code_Highlighting_with_minted" title="Code Highlighting with minted">Code Highlighting with minted</a></li>
+<li><a href="/learn/latex/Using_colours_in_LaTeX" class="mw-redirect" title="Using colours in LaTeX">Using colours in LaTeX</a></li>
+<li><a href="/learn/latex/Footnotes" title="Footnotes">Footnotes</a></li>
+<li><a href="/learn/latex/Margin_notes" title="Margin notes">Margin notes</a></li></ul>
+<h2><span class="mw-headline">Fonts</span></h2>
+<ul><li><a href="/learn/latex/Font_sizes%2C_families%2C_and_styles" title="Font sizes, families, and styles">Font sizes, families, and styles</a></li>
+<li><a href="/learn/latex/Font_typefaces" title="Font typefaces">Font typefaces</a></li>
+<li><a href="/learn/latex/XeLaTeX" title="XeLaTeX">Supporting modern fonts with <span class="texhtml" style="font-family:'CMU Serif', cmr10, LMRoman10-Regular, 'Times New Roman', 'Nimbus Roman No9 L', Times, serif">X<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.075em">Ǝ</span>L<span style="text-transform:uppercase;font-size:70%;margin-left:-0.36em;vertical-align:0.3em;line-height:0;margin-right:-0.15em">a</span>T<span style="text-transform:uppercase;margin-left:-0.1667em;vertical-align:-0.5ex;line-height:0;margin-right:-0.125em">e</span>X</span></a></li></ul>
+<h2><span class="mw-headline">Presentations</span></h2>
+<ul><li><a href="/learn/latex/Beamer" title="Beamer">Beamer</a></li>
+<li><a href="/learn/latex/Powerdot" title="Powerdot">Powerdot</a></li>
+<li><a href="/learn/latex/Posters" title="Posters">Posters</a></li></ul>
+<h2><span class="mw-headline">Commands</span></h2>
+<ul><li><a href="/learn/latex/Commands" title="Commands">Commands</a></li>
+<li><a href="/learn/latex/Environments" title="Environments">Environments</a></li></ul>
+<h2><span class="mw-headline">Field specific</span></h2>
+<ul><li><a href="/learn/latex/Theorems_and_proofs" title="Theorems and proofs">Theorems and proofs</a></li>
+<li><a href="/learn/latex/Chemistry_formulae" title="Chemistry formulae">Chemistry formulae</a></li>
+<li><a href="/learn/latex/Feynman_diagrams" title="Feynman diagrams">Feynman diagrams</a></li>
+<li><a href="/learn/latex/Molecular_orbital_diagrams" title="Molecular orbital diagrams">Molecular orbital diagrams</a></li>
+<li><a href="/learn/latex/Chess_notation" title="Chess notation">Chess notation</a></li>
+<li><a href="/learn/latex/Knitting_patterns" title="Knitting patterns">Knitting patterns</a></li>
+<li><a href="/learn/latex/CircuiTikz_package" title="CircuiTikz package">CircuiTikz package</a></li>
+<li><a href="/learn/latex/Pgfplots_package" title="Pgfplots package">Pgfplots package</a></li>
+<li><a href="/learn/latex/Typesetting_exams_in_LaTeX" title="Typesetting exams in LaTeX">Typesetting exams in LaTeX</a></li>
+<li><a href="/learn/latex/Knitr" title="Knitr">Knitr</a></li>
+<li><a href="/learn/latex/Attribute_Value_Matrices" title="Attribute Value Matrices">Attribute Value Matrices</a></li></ul>
+<h2><span class="mw-headline">Class files</span></h2>
+<ul><li><a href="/learn/latex/Understanding_packages_and_class_files" title="Understanding packages and class files">Understanding packages and class files</a></li>
+<li><a href="/learn/latex/List_of_packages_and_class_files" class="mw-redirect" title="List of packages and class files">List of packages and class files</a></li>
+<li><a href="/learn/latex/Writing_your_own_package" title="Writing your own package">Writing your own package</a></li>
+<li><a href="/learn/latex/Writing_your_own_class" title="Writing your own class">Writing your own class</a></li></ul>
+<h2><span></span><span class="mw-headline">Advanced TeX/LaTeX</span></h2>
+<ul><li><a href="/learn/latex/Articles" title="Articles">In-depth technical articles on TeX/LaTeX</a></li></ul>
+
+
+
+
+</div></div></div></div></main><footer class="fat-footer hidden-print"><div class="fat-footer-container" role="navigation" aria-label="Footer navigation"><div class="fat-footer-sections"><div class="footer-section" id="footer-brand"><a class="footer-brand" href="/" aria-label="Overleaf"></a></div><div class="footer-section"><h2 class="footer-section-heading">About</h2><ul class="list-unstyled"><li><a href="/about">About us</a></li><li><a href="/about/values">Our values</a></li><li><a href="/about/careers">Careers</a></li><li><a href="/for/press">Press &amp; awards</a></li><li><a href="/blog">Blog</a></li></ul></div><div class="footer-section"><h2 class="footer-section-heading">Learn</h2><ul class="list-unstyled"><li><a href="/learn/latex/Learn_LaTeX_in_30_minutes">LaTeX in 30 minutes</a></li><li><a href="/latex/templates">Templates</a></li><li><a href="/events/webinars">Webinars</a></li><li><a href="/learn/latex/Tutorials">Tutorials</a></li><li><a href="/learn/latex/Inserting_Images">How to insert images</a></li><li><a href="/learn/latex/Tables">How to create tables</a></li></ul></div><div class="footer-section"><h2 class="footer-section-heading">Plans &amp; pricing</h2><ul class="list-unstyled"><li><a href="/learn/how-to/Overleaf_premium_features">Premium features</a></li><li><a href="/user/subscription/plans?itm_referrer=footer-for-indv-groups">For individuals &amp; groups</a></li><li><a href="/for/enterprises">For enterprise</a></li><li><a href="/for/universities">For universities</a></li><li><a href="/user/subscription/plans?itm_referrer=footer-for-students#view=student">For students</a></li></ul></div><div class="footer-section"><h2 class="footer-section-heading">Get involved</h2><ul class="list-unstyled"><li><a href="/for/community/advisors">Become an Overleaf advisor</a></li><li><a href="https://forms.gle/67PSpN1bLnjGCmPQ9">Let us know what you think</a></li></ul></div><div class="footer-section"><h2 class="footer-section-heading">Help</h2><ul class="list-unstyled"><li><a href="/about/why-latex">Why LaTeX?</a></li><li><a href="/learn">Documentation </a></li><li><a href="/contact">Contact us  </a></li><li><a href="https://status.overleaf.com/">Website status</a></li></ul></div></div><div class="fat-footer-base"><div class="fat-footer-base-section fat-footer-base-meta"><div class="fat-footer-base-item"> <div class="fat-footer-base-copyright">© 2024 Overleaf</div><a href="/legal">Privacy and Terms</a><a href="https://www.digital-science.com/security-certifications/">Compliance</a></div><ul class="fat-footer-base-item list-unstyled fat-footer-base-language"><li class="dropdown dropup subdued language-picker" dropdown><a class="dropdown-toggle" id="language-picker-toggle" href="#" dropdown-toggle data-ol-lang-selector-tooltip data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Select Language" tooltip="Language" title="Language"><i class="fa fa-fw fa-language"></i>
+English</a><ul class="dropdown-menu" role="menu" aria-labelledby="language-picker-toggle"><li class="dropdown-header">Language</li><li class="lngOption"><a class="menu-indent" href="https://www.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">English</a></li><li class="lngOption"><a class="menu-indent" href="https://cs.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Čeština</a></li><li class="lngOption"><a class="menu-indent" href="https://es.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Español</a></li><li class="lngOption"><a class="menu-indent" href="https://pt.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Português</a></li><li class="lngOption"><a class="menu-indent" href="https://fr.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Français</a></li><li class="lngOption"><a class="menu-indent" href="https://de.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Deutsch</a></li><li class="lngOption"><a class="menu-indent" href="https://sv.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Svenska</a></li><li class="lngOption"><a class="menu-indent" href="https://tr.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Türkçe</a></li><li class="lngOption"><a class="menu-indent" href="https://it.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Italiano</a></li><li class="lngOption"><a class="menu-indent" href="https://cn.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">简体中文</a></li><li class="lngOption"><a class="menu-indent" href="https://no.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Norsk</a></li><li class="lngOption"><a class="menu-indent" href="https://ru.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Русский</a></li><li class="lngOption"><a class="menu-indent" href="https://da.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">Dansk</a></li><li class="lngOption"><a class="menu-indent" href="https://ko.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">한국어</a></li><li class="lngOption"><a class="menu-indent" href="https://ja.overleaf.com/learn/latex/Chemistry_formulae" role="menuitem">日本語</a></li></ul></li></ul></div><div class="fat-footer-base-section fat-footer-base-social"><div class="fat-footer-base-item"><a class="fat-footer-social" href="https://twitter.com/overleaf"><i class="fa fa-twitter-square" aria-hidden="true"></i><div class="sr-only">Overleaf on Twitter</div></a><a class="fat-footer-social" href="https://www.facebook.com/overleaf.editor"><i class="fa fa-facebook-square" aria-hidden="true"></i><div class="sr-only">Overleaf on Facebook</div></a><a class="fat-footer-social" href="https://www.linkedin.com/company/writelatex-limited"><i class="fa fa-linkedin-square" aria-hidden="true"></i><div class="sr-only">Overleaf on LinkedIn</div></a></div></div></div></div></footer><div class="cookie-banner hidden-print hidden"><div class="cookie-banner-content">We only use cookies for essential purposes and to improve your experience on our site. You can find out more in our <a href="/legal#Cookies">cookie policy</a>.</div><div class="cookie-banner-actions"><button class="btn btn-link btn-sm" type="button" data-ol-cookie-banner-set-consent="essential">Essential cookies only</button><button class="btn btn-primary btn-sm" type="button" data-ol-cookie-banner-set-consent="all">Accept all cookies</button></div></div><div class="modal fade" tabindex="-1" role="dialog" data-ol-contact-form-modal="contact-us"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">Contact Us</h4></div><div class="modal-body contact-us-modal"><form data-ol-async-form data-ol-contact-form data-ol-contact-form-with-search name="contactForm" role="form" aria-label="Contact Us" action="/support"><input name="inbox" type="hidden" value="support"><span data-ol-not-sent><div data-ol-form-messages="" role="alert"></div><label>Subject</label><div class="form-group"><input class="field text medium span8 form-control" aria-label="Subject" name="subject" required autocomplete="off" maxlength="255"></div><div class="contact-suggestions" data-ol-search-results-wrapper hidden><p class="contact-suggestion-label" aria-live="polite">Have you checked our <a href="/learn/kb" target="_blank">knowledge base</a>?</p><ul class="contact-suggestion-list" data-ol-search-results aria-role="region" aria-label="Help articles matching your subject"></ul></div><label class="desc">Email</label><div class="form-group"><input class="field text medium span8 form-control" aria-label="Email" name="email" required type="email" spellcheck="false" value="" maxlength="255"></div><label class="desc" id="title12">Affected project URL (Optional)</label><div class="form-group"><input class="field text medium span8 form-control" name="projectUrl" aria-label="Affected project URL Optional"></div><label class="desc">Message</label><div class="form-group"><textarea class="field text medium span8 form-control" aria-label="Message" name="message" required type="text"></textarea></div><div class="form-group hidden"><input class="field text medium span8 form-control" aria-label="important message" name="important_message"></div><div class="form-group text-center"><button class="btn-primary btn btn-lg" type="submit" data-ol-disabled-inflight event-tracking="form-submitted-contact-us" event-tracking-mb="true" event-tracking-trigger="click" event-segmentation="{&quot;location&quot;:&quot;contact-us-form&quot;}"><span data-ol-inflight="idle" aria-label="Contact Us">Contact Us</span><span hidden data-ol-inflight="pending" aria-label="Sending">Sending&hellip;</span></button></div></span><span data-ol-sent hidden><p>Message sent! Our team will review it and reply by email.</p></span></form></div></div></div></div></body><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/8416-30beb6e18216e55cb335.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/1756-e57aaef334ad3d435b46.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/bootstrap-3-b963a88137b2dfb8e070.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/6708-bb0ec2a596e2d79e281e.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/1299-340aed457cf26db6735c.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/6355-7163e9bedb3c31a04d77.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/2450-b356853f41e99815b7e0.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/2570-27469efce30426390030.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/5071-4caa6fbe5a39e716483c.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/7604-4813a9465eb5181932ed.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/3365-67dd043ee7f7324df8a2.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/6770-44672ae0b83af232b559.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/9535-6e36c4b5b7399a7ad591.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/269-d3ada6538a1b07f9004a.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/8489-58002e7913f5e7202666.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==" src="https://cdn.overleaf.com/js/modules/learn/pages/learn-10595186a4b280b7eb7f.js"></script><script type="text/javascript" nonce="Rg4gVF67buUcs5NkHCpf8g==">window.addEventListener('DOMContentLoaded', function() {
+	//- Look for bundle
+	var cdnBlocked = typeof Frontend === 'undefined'
+	//- Prevent loops
+	var noCdnAlreadyInUrl = window.location.href.indexOf("nocdn=true") != -1
+	if (cdnBlocked && !noCdnAlreadyInUrl && navigator.userAgent.indexOf("Googlebot") == -1) {
+		//- Set query param, server will not set CDN url
+		window.location.search += "&nocdn=true";
+	}
+})</script></html>

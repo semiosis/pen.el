@@ -1,0 +1,79 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 24
+
+* D-Group weekly session notes
+Started working on it: <2024-06-10 Mon>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=YIBNUIhqyFI][youtube.com: 24/7 HYMNS: A Peaceful Morning With JESUS  - soft piano hymns + loop]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage |
+|---------------------+---------------+------------------------+---------------------+---------------|
+| [[sh:bible-read-passage nasb Matthew 6:1-2 ][Matthew 6:1-2]]       | [[sh:bible-study-passage nasb Romans 9-13 ][Romans 9-13]]   |                        | [[sh:bible-read-passage nasb Psalm 119:18 ][Psalm 119:18]]        | [[sh:bible-study-passage nasb Judges 4 ][Judges 4]]      |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Judges 6 ][Judges 6]]      |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Judges 8 ][Judges 8]]      |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Psalm 116-118 ][Psalm 116-118]] |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 6:1-2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 6:1
+‾‾‾‾‾‾‾‾‾‾‾
+“Beware of practicing your righteousness before
+men to be noticed by them; otherwise you have no
+reward with your Father who is in heaven.
+
+Matthew 6:2
+‾‾‾‾‾‾‾‾‾‾‾
+“So when you give to the poor, do not sound a
+trumpet before you, as the hypocrites do in the
+synagogues and in the streets, so that they may
+be honored by men. Truly I say to you, they have
+their reward in full.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Psalm 119:18
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Psalms 119:18
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+Open my eyes, that I may behold Wonderful things
+from Your law.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

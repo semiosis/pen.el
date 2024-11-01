@@ -1,0 +1,18 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: Populate Library
+  hosts: library
+  vars:
+    library_name: "Library"
+    library_description: "Library"
+    library_type: "LOCAL"
+    library_sync_type: "SRC_SYNC"
+    library_sync_destination: "SYNC_DESTINATION"
+    library_sync_schedule: "0 0 * * *"
+    library_sync_schedule_type: "MINUTES"
+    library_sync_schedule_duration: "1"
+    library_sync_schedule_duration_unit: "MINUTES"
+    library_sync_source: "SYNC_SOURCE"
+    library_sync_source_type: "SRC_SYNC"
+    library_sync_source_host: "SYNC_SOURCE_HOST"
+    library_sync_source_path: "

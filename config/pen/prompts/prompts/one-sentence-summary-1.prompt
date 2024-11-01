@@ -1,0 +1,18 @@
+title: One-sentence summary
+tags: prose summarisation nlp-task
+prompt: |
+  <1>
+
+  One-sentence summary:
+heading-name: This is a summary of the above text
+completion: true
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 400
+top-p: 1
+repeat-until: test -n <output>
+stop-sequences:
+- "\n"
+vars:
+- passage
+external: summarize-passage

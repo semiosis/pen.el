@@ -1,0 +1,5 @@
+ the use of sudo when updating the
+# shadow file, which is required for RedHat's default /etc/sudoers configuration
+sh-update: off
+
+# This is the maximum number of unsuccessful sh-shell account creations allowed before re

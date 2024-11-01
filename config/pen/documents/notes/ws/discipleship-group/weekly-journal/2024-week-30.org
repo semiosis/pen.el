@@ -1,0 +1,75 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 30
+
+* D-Group weekly session notes
+Started working on it: <2024-07-27 Sat>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=atM1QICvvtI][youtube.com: Praise - Elevation worship | Instrumental Worship | Soaking Music | Deep Prayer]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage  |
+|---------------------+---------------+------------------------+---------------------+----------------|
+| [[sh:bible-read-passage nasb Matthew 6:14-15 ][Matthew 6:14-15]]     | [[sh:bible-study-passage nasb Philippians 4 ][Philippians 4]] |                        | [[sh:bible-read-passage nasb Psalm 141:3 ][Psalm 141:3]]         | [[sh:bible-study-passage nasb I Samuel 28-31 ][I Samuel 28-31]] |
+|                     | [[sh:bible-study-passage nasb Philemon ][Philemon]]      |                        |                     | [[sh:bible-study-passage nasb II Samuel 1-5 ][II Samuel 1-5]]  |
+|                     | [[sh:bible-study-passage nasb Hebrews 1-3 ][Hebrews 1-3]]   |                        |                     | [[sh:bible-study-passage nasb Psalm 138-143 ][Psalm 138-143]]  |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 6:14-15
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 6:14
+‾‾‾‾‾‾‾‾‾‾‾‾
+For if you forgive others for their
+transgressions, your heavenly Father will also
+forgive you.
+
+Matthew 6:15
+‾‾‾‾‾‾‾‾‾‾‾‾
+But if you do not forgive others, then your
+Father will not forgive your transgressions.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Psalm 141:3
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Psalms 141:3
+‾‾‾‾‾‾‾‾‾‾‾‾
+Set a guard, O LORD, over my mouth; Keep watch
+over the door of my lips.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

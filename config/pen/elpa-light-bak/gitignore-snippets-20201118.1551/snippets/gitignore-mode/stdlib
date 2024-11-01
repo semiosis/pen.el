@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: StdLib
+# contributor: Toptal & contributors
+# key: stdlib
+# --
+
+### StdLib ###
+
+/node_modules
+env.json

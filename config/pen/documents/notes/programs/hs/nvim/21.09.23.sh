@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/config;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" cat '/tmp/tf_temp_1ac8cb4ac4.txt' | 'fzf' '--algo=v2' '-m' '--reverse' '--preview=p {} | pen-fzf-scope' '--preview-window=up:30%:hidden' > '/tmp/tf_tempbImhEkb.txt'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"
+cd ;  "nvim" "-u" "/root/.nvimrc" "-c" "-c" "-c" "-c" "#" "<==" "pen-nvc"
+cd ;  "nvim" "-u" "/root/.nvimrc" "-c" "-c" "-c" "-c" "#" "<==" "pen-nvc"
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" 'ncdu' '--exclude' '/volumes/*' '--exclude' '/media/*' '/'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" '/bin/nano' '-m' '/root/.emacs.d/host/pen.el/scripts/container/vim'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"
+cd /root/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" '/bin/nano' '-m' '/root/.emacs.d/host/pen.el/scripts/container/vim'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

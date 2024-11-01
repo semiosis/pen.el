@@ -1,0 +1,42 @@
+Step 1/5:
+    Task:
+        - Create a business
+    Required:
+        - Name
+        - Location
+        - Category
+    Optional:
+        - Description
+        - Website
+        - Logo
+        - Cover image
+        - Phone number
+        - Email
+        - Opening hours
+        - Social media links
+        - Payment methods
+        - Tags
+        - Address
+        - Coordinates
+        - Employees
+        - Products
+        - Services
+        - Reviews
+        - ...
+Step 2/5:
+    Task:
+        - Edit a business
+    Required:
+        - Name
+        - Location
+        - Category
+    Optional:
+        - Description
+        - Website
+        - Logo
+        - Cover image
+        - Phone number
+        - Email
+        - Opening hours
+        - Social media links
+

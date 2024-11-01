@@ -1,0 +1,5 @@
+http://www.lispworks.com/reference/HyperSpec/Body/s_flet_.htm
+
+
+(flet ((f1 (x) (+ x 1)) (f2 (x) (+ x 2)) (f3 (x) (+ x 3)) (f4 (x) (+ x 4))
+       (f5 (

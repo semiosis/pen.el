@@ -1,0 +1,35 @@
+task: "ghostwriter"
+doc: |-
+    Given the name of an author or some other
+    famous person or character, complete some text in their style.
+
+    A ghostwriter is hired to write literary or
+    journalistic works, speeches, or other texts
+    that are officially credited to another person
+    as the author.
+prompt-version: 1
+prompt: |+
+  # Author:
+  cat biography.txt <<EOD
+  <biography>
+  EOD
+
+  # The writings of <author>  
+  cat <sl:author>/writings.txt <<EOD
+engine: "OpenAI Codex"
+# force-engine: "OpenAI Davinci"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+inject-gen-start: "\n"
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- "author"
+examples:
+- "It was then that "
+filter: off
+completion: off
+insertion: on
+postprocessor: pen-pretty-paragraph

@@ -1,0 +1,31 @@
+holography
+    A technique that enables a wavefront to be
+    recorded and later re-constructed.
+    
+    Holography is best known as a method of
+    generating three-dimensional images, but
+    it also has a wide range of other
+    applications.
+    
+    In principle, it is possible to make a
+    hologram for any type of wave.
+    
+hologram
+    Made by superimposing a second wavefront
+    (normally called the reference beam) on
+    the wavefront of interest, thereby
+    generating an interference pattern which
+    is recorded on a physical medium.
+    
+    When only the second wavefront illuminates
+    the interference pattern, it is diffracted
+    to recreate the original wavefront.
+    
+    Holograms can also be computer-generated
+    by modelling the two wavefronts and adding
+    them together digitally.
+    
+    The resulting digital image is then
+    printed onto a suitable mask or film and
+    illuminated by a suitable source to
+    reconstruct the wavefront of interest.

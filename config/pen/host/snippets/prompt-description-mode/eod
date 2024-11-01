@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: eod
+# group: eod
+# key: eod
+# --
+cat file <<EOD

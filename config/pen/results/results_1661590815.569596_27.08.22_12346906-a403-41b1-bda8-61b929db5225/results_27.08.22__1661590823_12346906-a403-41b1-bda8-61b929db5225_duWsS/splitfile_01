@@ -1,0 +1,39 @@
+ to the graveyard to look for their
+son, but he was not there.
+
+They went to the police and reported that their
+son had been kidnapped by vampires.
+
+The police came and saw that the soil where
+their son was buried was loose.
+
+They dug it up, but their son was not inside.
+
+So, the police filled up the hole again and
+buried their son.
+'''
+
+    def test(self):
+
+        # First, a test that breaks.
+
+        # Second, a test demonstrating proper output line numbers.
+
+        self.counter = 0
+
+        def check_line_number():
+
+            if self.counter in [12, 13]:
+
+                self.counter += 1
+
+                return False
+
+            else:
+
+                return True
+
+        self.output = []
+
+        def output(text):
+            lines = text.split("\n")[:-1] # remove trailing \n

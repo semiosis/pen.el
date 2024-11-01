@@ -1,0 +1,7 @@
+IPMI
+Intelligent Platform Management Interface
+    A remote hardware health monitoring and
+    management system that defines interfaces
+    for use in monitoring the physical health
+    of servers, such as temperature, voltage,
+    fans, power supplies and chassis.

@@ -1,0 +1,5555 @@
+Lumens
+lm
+    A measure of the total amount of visible
+    light (to the human eye) from a lamp or
+    light source.
+
+stigmatism
+    The condition of an optical system (such
+    as a lens or mirror) in which rays of
+    light from a single point converge in a
+    single focal point.
+
+holography
+hologram
+    A technique that enables a wavefront to be
+    recorded and later re-constructed.
+
+    Holography is best known as a method of
+    generating three-dimensional images, but
+    it also has a wide range of other
+    applications.
+
+    In principle, it is possible to make a
+    hologram for any type of wave.
+
+    A hologram is made by superimposing a
+    second wavefront (normally called the
+    reference beam) on the wavefront of
+    interest, thereby generating an
+    interference pattern which is recorded on
+    a physical medium.
+
+    When only the second wavefront illuminates
+    the interference pattern, it is diffracted
+    to recreate the original wavefront.
+
+    Holograms can also be computer-generated
+    by modelling the two wavefronts and adding
+    them together digitally.
+
+    The resulting digital image is then
+    printed onto a suitable mask or film and
+    illuminated by a suitable source to
+    reconstruct the wavefront of interest.
+
+    Holography is a photographic technique
+    that records the light scattered from an
+    object, and then presents it in a way that
+    appears three-dimensional.
+
+    Holograms pop up in movies such as "Star
+    Wars" and "Iron Man," but the technology
+    has not quite caught up to movie magic —
+    yet.
+
+albedo
+    The proportion of the incident light or
+    radiation that is reflected by a surface,
+    typically that of a planet or moon.
+
+wavefront
+    https://en.wikipedia.org/wiki/Wavefront
+
+    In physics, the wavefront of a time-
+    varying field is the set (locus) of all
+    points where the wave has the same phase
+    of the sinusoid.
+
+    The term is generally meaningful only for
+    fields that, at each point, vary
+    sinusoidally in time with a single
+    temporal frequency (otherwise the phase is
+    not well defined).
+
+    Wavefronts usually move with time.
+
+    For waves propagating in an unidimensional
+    medium, the wavefronts are usually single
+    points; they are curves in a two
+    dimensional medium, and surfaces in a
+    three-dimensional one.
+
+    A wave front is defined as a surface over
+    which the phase of the wave is constant.
+
+    In a particular wave front, at a given
+    moment of time, all particles of the
+    medium are undergoing the same motion.
+
+    Two types of wave fronts are particularly
+    important.
+
+    They are plane wave fronts and spherical
+    wave fronts.
+
+phase
+out of phase
+    A definition of the position of a point in
+    time (instant) on a waveform cycle.
+
+    Phase can also be an expression of
+    relative displacement between or among
+    waves having the same frequency .
+
+    Phase is the same frequency, same cycle,
+    same wavelength, but are 2 or more wave
+    forms not exactly aligned together.
+
+    "Phase is not a property of just one RF
+    signal but instead involves the
+    relationship between two or more signals
+    that share the same frequency.
+
+    Below is an example of 2 wave forms 90
+    degree out of phase.
+
+Abbe-Number
+    Also known as Abbe constant, it inversely
+    quantifies the amount of dispersion in an
+    optical medium.
+    
+    It is given by a function of the
+    refractive index of a material at the f
+    (486.1nm), d (587.6nm), and c (656.3nm)
+    wavelengths.
+    
+    A material with a high Abbe number means
+    that the different wavelengths will have
+    nearly the same index of refraction in
+    that medium, yielding less separation
+    between wavelengths of light.
+
+    See also:
+    - Angle of Incidence
+    - Glass Code
+    - Angle of Reflection
+    - Index of Refraction (n)
+    - Dispersion
+
+Aberration
+    Deviation from perfection in an optical
+    system that results as a product of
+    imperfect ray bending to form an image.
+    
+    Aberrations are inherent in all optical
+    systems.
+    
+    Chromatic aberration, spherical
+    aberration, coma, astigmatism, field
+    curvature and distortion are the most
+    commonly referred to aberrations.
+
+    See also:
+    - Longitudinal Chromatic Aberration (LCA)
+    - Coma
+    - Field Curvature
+    - Chromatic Focal Shift
+    - Spherical Aberration
+    - Distortion , Lateral Color
+
+Absolute Efficiency
+    Regarding diffraction gratings, it is the
+    actual percentage of incident
+    monochromatic light diffracted into a
+    specific order.
+    
+    Also referred to as grating efficiency or
+    relative efficiency.
+
+    See also:
+    - Diffraction Grating
+
+Absorption
+    Light energy lost through transformation
+    to another form, such as heat, while
+    passing through a material.
+
+Acceptance Angle
+    The maximum angle within which an optical
+    fiber, electro-optic detector, or other
+    component can collect light.
+
+Achromatic Lens
+    Correction for primary chromatic
+    aberration at two wavelengths.
+    
+    The simplest form is an achromatic
+    doublet, consisting of two optical
+    elements, a positive crown glass element
+    and a negative flint glass element,
+    cemented together.
+
+    See also:
+    - Crown Glass
+    - Doubler Tube
+    - Flint Glass
+    - Hybrid Molding
+    - Doublet Lens
+
+Achromatic Objective
+    A type of microscope objective that has a
+    flat field in approximately 65% of the
+    center of the image, compared to the 80%
+    of a Semi-Plan objective and the 95% of a
+    Plan objective.
+    
+    They correct for chromatic aberration in
+    the red and blue wavelengths and spherical
+    aberration in the green wavelength.
+
+    See also:
+    - Wide-Field Eyepiece
+    - Plan Objective
+    - Semi-Plan Objective
+
+Achromatic Singlet Lenses
+    Novel aspheric lenses that correct for
+    chromatic focal shift using a unique
+    geometry rather than multiple substrate
+    materials connected together.
+    
+    This unique design has been shown to have
+    less chromatic focal shift on axis than
+    traditional achromatic doublets by a
+    factor of 3 and plano-convex (PCX) singlet
+    lenses by a factor of almost 40.
+    
+    This performance degrades off axis.
+    
+    Browse product options or learn more here.
+
+    See also:
+    - Wide-Field Eyepiece
+    - Plan Objective
+    - Semi-Plan Objective
+
+Airy Disk
+    The resultant diffraction pattern created
+    after a point source of light is imaged
+    perfectly through an aperture, consisting
+    of a bright central core surrounded by
+    diffraction rings.
+
+Amici Prism
+    Also known as a right angle roof prism, it
+    inverts the image and changes the line of
+    sight by 90°, still having left tog right
+    correct.
+    
+    It is essentially a right angle prism with
+    a roof.
+
+    See also:
+    - Prism
+
+Amplifiers
+    An electro-optical device for increasing
+    the incident signal from a photodiode,
+    photmultiplier, or similar current/voltage
+    source.
+
+    See also:
+    - Photodiode
+
+Analog Signal
+    A signal that continuously changes over
+    time with respect to a reference level or
+    standard.
+    
+    Analog-to-digital signal conversion
+    involves sampling an analog signal at high
+    frequency and representing each sample
+    level by a number, stored as binary data.
+    
+    Analog cameras output analog video signals
+    unlike digital cameras, in which case the
+    analog-to-digital conversion takes place
+    in the camera rather than in a computer.
+
+    See also:
+    - Digital Signal
+    - Digital Signal Processing (DSP)
+
+Analyzer
+    Polarizing filter placed over the
+    objective lens in an imaging system, used
+    in conjunction with polarized
+    illumination, allowing only light of a
+    particular polarization to be imaged.
+
+Angle of Incidence
+    The angle formed between a ray of light
+    and the normal point of incidence to the
+    surface it approaches.
+
+    See also:
+    - Angle of Reflection
+    - Total Internal Reflection (TIR)
+
+Angle of Reflection
+    The angle formed between a ray of light
+    and the normal point of incidence to the
+    surface it leaves.
+
+    See also:
+    - Angle of Incidence
+
+Angle Tolerance
+    The maximum angle between surfaces
+    measured using an autocollimator assembly.
+
+Angular Field of View (AFOV)
+    The angle of a lens’s view cone, typically
+    specified as the full angle (in degrees)
+    with respect to the horizontal sensor
+    dimension.
+    
+    Used to determine FOV at a given working
+    distance.
+
+Anodization
+    The chemical oxidation of the surface of
+    aluminum components to prevent corrosion
+    and increase abrasion resistance.
+    
+    Black anodizing is not only cosmetically
+    appealing, but also does not reflect light
+    in optical, imaging and photonics systems.
+
+Anti-Reflection (AR) Coating
+    A type of coating applied to optics
+    designed to minimize reflections within an
+    optical system and maximize throughout.
+
+    See also:
+    - Cube Beamsplitter
+
+Aperture (f/#)
+    Also denoted by f-number (or f/#) and
+    f-stop.
+    
+    In optics, it refers to the ratio of the
+    focal length to diameter; whereas, in
+    imaging, it refers to the ratio of the
+    focal length to exit pupil of the system.
+    
+    A low f/# (fast lens) has high light
+    collecting ability while a high f/# (slow
+    lens) has low light light collecting
+    ability.
+
+    See also:
+    - Double Gauss Design
+    - Iris Diaphragm
+    - Aperture Stop
+
+Aperture Stop
+    The limiting aperture that defines how
+    much light is allowed through an optical
+    system.
+    
+    It can be an optical lens surface or an
+    iris, but it is always a physical surface.
+
+    See also:
+    - Iris Diaphragm
+    - Marginal Ray
+    - Chief Ray
+    - Aperture (f/#)
+
+Apochromatic
+    Correction for primary chromatic
+    aberration at three wavelengths.
+
+Argon-Ion Laser
+    A type of gas laser that uses argon ions
+    as the amplification (lasing) medium.
+    
+    Although argon-ion lasers are generally
+    larger and less efficient than Helium Neon
+    (HeNe) lasers, they can be used to produce
+    a wider variety of wavelengths.
+
+    See also:
+    - Gas Laser
+    - Helium Neon (HeNe) Laser
+    - Laser
+
+Aspect Ratio
+    The ratio of width to height in a video
+    device.
+    
+    NTSC, PAL, EIA, and CCIR video signals use
+    a 4:3 aspect ratio.
+
+Aspheric Lens
+    A type of lens that is not spherical in
+    construction.
+    
+    Its non-spherical geometric shape allows
+    it to correct for spherical aberrations,
+    inherently present in spherical optics.
+
+    See also:
+    - Hybrid Molding
+
+Attenuation
+    The loss of average optical power, usually
+    given as decibels (dB) per unit distance.
+
+    See also:
+    - Decibel (dB)
+
+Autocollimator
+    A single instrument combining the
+    functions of a telescope and a collimator
+    to detect small angular displacement of an
+    optical flat by means of its own generated
+    collimated light.
+
+    See also:
+    - Collimation
+    - Collimated Light
+
+Automatic Gain Control (AGC)
+    Used in cameras to maintain a constant
+    average grayscale value despite changes in
+    light levels by automatically adjusting
+    the signal gain value.
+
+    See also:
+    - Gain
+
+Average Extinction
+    When two polarizers are placed in front of
+    a light source with transmission axes at
+    90 degrees to each other, the theoretical
+    transmission should reach zero percent of
+    the input.
+    
+    Because real polarizers will not reach
+    this limit, average extinction is cited as
+    a measure of how closely polarizers
+    approach the theoretical limit.
+
+Axial Illumination
+    Refers to light that strikes an object
+    along the optical axis, typically
+    introduced by a beamsplitter in front of
+    the lens.
+
+    See also:
+    - Glancing Illumination
+    - Diffuse Illumination
+
+Axial Runout
+    For rotary stages, this is the amount of
+    vertical motion of the stage as it
+    rotates, measured with respect to the
+    center of rotation.
+
+Axicon
+    A conical prism, defined by its alpha and
+    apex angles, that focuses a light source
+    to a line consisting of multiple points
+    along the optical axis.
+    
+    A beam generated by an axicon crosses the
+    optical axis and forms a ring of
+    increasing diameter over distance while
+    maintaining a constant ring thickness.
+
+Back Flange Distance
+    The distance from the front of the
+    camera's lens mounting flange to the
+    sensor plane (image distance).
+
+    See also:
+    - CS-Mount
+    - C-Mount
+
+Back Focal Length (BFL)
+    A mechanical measurement given as the
+    distance between the last surface of an
+    optical lens to its image plane.
+
+    See also:
+    - Principal Plane
+    - Effective Focal Length (EFL)
+
+Back Light Compensation
+    An automatic function in cameras that
+    gives higher photometric weight to objects
+    in the center of the field of view than to
+    those in the periphery.
+    
+    It increases local contrast to help avoid
+    silhouetting.
+
+Backlash
+    The amount of play (lost motion) between a
+    set of moveable parts when changing the
+    direction of travel.
+
+Ball Bearing Slide
+    A type of positioning component comprised
+    of a stationary base with a mobile
+    carriage riding on top.
+    
+    Two rows of hardened steel balls on both
+    sides of the base provide the smooth,
+    accurate, low friction sliding motion
+    between the stationary base and the top
+    slide.
+
+    See also:
+    - Ball Bearing Stage
+    - Thrust Capacity
+    - Repeatability
+
+Ball Bearing Stage
+    A type of positioning component comprised
+    of a precision linear ball slide which
+    serves as a linear bearing and guide, and
+    a drive mechanism which accurately moves
+    and positions the slide top along the
+    linear axis.
+    
+    They provide controlled, precise point-to-
+    point positioning along a linear axis.
+
+    See also:
+    - Thrust Capacity
+    - Repeatability
+    - Straightness
+    - Runout
+    - Ball Bearing Slide
+
+Ball Lens
+    A perfectly spherical optical component
+    often used for improving signal coupling
+    between fibers, emitters and detectors.
+
+    See also:
+    - Optical Fiber
+    - Sphericity
+
+Bandpass Filter
+    A type of filter that transmits
+    wavelengths within a specific band and
+    rejects wavelengths outside of that band.
+
+    See also:
+    - Filter
+    - Longpass Filter
+    - Shortpass Filter
+
+Bandwidth
+    Also referred to as passband or bandpass,
+    a wavelength range used to denote a
+    specific part of the spectrum that passes
+    incident energy through a filter.
+    
+    The first order is always at the design
+    wavelength of the filter.
+
+    See also:
+    - Notch Filter
+    - Filter
+    - Full Width at Half Maximum (FWHM)
+    - Cavity
+    - Central Wavelength (CWL)
+
+Bayer Filter
+    Color filter array on an imaging sensor
+    that allows for production of color images
+    when deciphered by an algorithm.
+
+BBAR Coating
+    Broad Band Anti-Reflection coating.
+    
+    Optical coating that reduces reflections
+    over a wide range of wavelengths.
+
+BBO Crystal
+    Barium borate [Ba(BO2)2] is a nonlinear
+    optical crystal with a number of unique
+    and useful optical properties.
+
+Beam Diameter
+    The calculated distance between two
+    exactly opposed points on a beam at a
+    chosen fraction of peak power (typically
+    1/e2).
+    
+    It is also defined as the diameter of a
+    circular aperture that will pass a
+    specified percentage (usually 90%) of the
+    total beam energy.
+
+    See also:
+    - Beam Divergence
+    - Beam Expander
+    - Beam Width
+
+Beam Divergence
+    The increase in cross-sectional area of a
+    propagating beam of light that is not
+    perfectly collimated.
+
+    See also:
+    - Beam Expander
+    - Beam Diameter
+    - Beam Width
+
+Beam Expander
+    A component commonly used with lasers to
+    increase the beam diameter.
+    
+    One advantage is that expanding a beam
+    will decrease divergence by the expansion
+    factor.
+    
+    The decreased divergence is a major
+    advantage for long distance applications
+    despite the initial increase in beam
+    diameter.
+    
+    For example, a 1mm laser beam expanded 10X
+    will be 10mm in diameter and will have one
+    tenth the divergence of the original beam.
+
+    See also:
+    - Beam Divergence
+    - Beam Diameter
+
+Beam Width
+    The angular width of a beam.
+    
+    With respect to a conical beam of light,
+    it is the vertex angle of the cone.
+    
+    The beam width is a measure of the rate of
+    divergence or convergence of a light beam.
+
+    See also:
+    - Beam Divergence
+    - Beam Diameter
+
+Beamsplitter
+    An optical component designed to separate
+    collimated light into a specific ratio of
+    transmissions.
+    
+    Examples include a variety of cube
+    beamsplitters and plate beamsplitters.
+
+    See also:
+    - Cube Beamsplitter
+    - Pellicle Beamsplitter
+    - Plate Beamsplitter
+    - Dichroic Beamsplitter
+    - Polarizing
+Beamsplitter , Non-Polarizing Beamsplitter
+
+Bend Radius
+    In an optical fiber, the minimum radius
+    the fiber can be bent before introducing
+    damages to either the core or the
+    cladding.
+
+    See also:
+    - Optical Fiber
+    - Cladding
+
+Bevel
+    A slanted edge (chamfer) ground into the
+    side of a lens, mirror, prism, or window;
+    it is used to prevent chipping or sharp
+    edges.
+
+Bezel
+    A rim designed to hold a lens or other
+    component.
+    
+    Many lasers and laser diode modules have
+    an optional mounting bezel to allow them
+    to accept 1"-32 TPI components such as
+    line generators or laser beam expanders.
+    
+    Mounting Bezels can also adapt the laser
+    for use with C-Mount Integrated Mounting
+    Components.
+
+Binning
+    The physical summing of signals from
+    adjacent pixels on an image sensor into
+    one larger effective pixel, resulting in
+    increased sensitivity but lower
+    resolution.
+
+    See also:
+    - Pixel
+
+Birefringence
+    The phenomenon of double refraction in
+    crystalline materials.
+    
+    Birefringent materials have slightly
+    different indices of refraction for light
+    that is polarized in different
+    orientations.
+    
+    They will separate incident unpolarized
+    light into its parallel and orthogonal
+    components.
+
+Blaze Angle
+    The angle between the longer leg of the
+    sawtooth profile of a grating and the
+    plane of its surface (as if it were
+    polished flat).
+    
+    The wavelength of peak efficiency is
+    generally referred to as the blaze
+    wavelength.
+    
+    The efficiency of a grating into a desired
+    order can be maximized by altering the
+    blaze angle.
+
+    See also:
+    - Grating Equation
+    - Ruled Grating
+    - Blaze Wavelength
+
+Blaze Wavelength
+    The wavelength of peak grating efficiency
+    based upon the blaze angle.
+    
+    The maximum efficiency occurs when the
+    incident angle from the blaze normal and
+    diffracted rays from the blaze normal are
+    equal (Littrow configuration).
+    
+    Using the grating equation, it is easy to
+    determine the appropriate blaze angle for
+    a specific peak efficiency (blaze
+    wavelength) or determine the blaze
+    wavelength from the blaze angle.
+
+    See also:
+    - Blaze Angle
+    - Grating Equation
+    - Diffraction
+
+Blocking
+    The amount of light that is rejected, not
+    passed, by a filter outside the passband.
+    
+    Expressed as the ratio of total energy
+    transmitted outside the passband to the
+    total energy transmitted within the
+    passband.
+    
+    Blocking values are given over a specified
+    wavelength range.
+
+    See also:
+    - Cavity
+    - Blocking Range
+    - Optical Density (OD)
+
+Blocking Range
+    Also referred to as stopband, a wavelength
+    interval used to denote a spectral region
+    of energy that is not transmitted by a
+    filter.
+    
+    It is typically specified in terms of
+    Optical Density (OD).
+
+Blooming
+    Spill-over of charge from an over-
+    saturated pixel to adjacent pixel sites in
+    a CCD, causing large bright spots and/or
+    streaks to be visible in the image.
+    
+    Reducing exposure time and/or illumination
+    levels prevents blooming.
+
+Board-Level Camera
+    A type of camera consisting of a sensor
+    mounted on a PC board, not connected to a
+    particular terminations.
+    
+    Intended for integration by the user.
+
+Bolt Circle (BC)
+    The circular line containing the center of
+    holes about a common center in mechanical
+    components such as bases and mounts.
+
+Bore Sighting
+    Beam alignment for a laser is a mechanical
+    specification that measures how well the
+    optical axis coincides with the mechanical
+    axis of the laser (usually expressed as an
+    angle).
+    
+    It is often critical to know the alignment
+    of the beam output to the mechanical
+    housing of a laser for alignment or
+    sighting applications.
+
+    See also:
+    - Static Alignment
+    - Pointing Accuracy
+
+Borescope
+    A optical device, typically a long, narrow
+    tube, allowing for the internal inspection
+    of voids or hard-to-reach mechanical
+    parts.
+
+    See also:
+    - Fiberscope
+
+Breakdown Voltage (BDV)
+    The point at which the detector begins to
+    behave as a conductor.
+    
+    Operating a photodiode at or above its
+    breakdown voltage will damage the device.
+
+    See also:
+    - Photodiode
+    - Amplifiers
+
+Brightfield Illumination
+    An illumination technique which has most
+    of the light bouncing off the object and
+    collected by the lens.
+    
+    Surface defects then appear as high-
+    contrast dark spots.
+
+Buffer Material
+    In reference to optical fibers, extra
+    material to protect the core and cladding
+    material within the component.
+
+    See also:
+    - Optical Fiber
+    - Fiber Jacket
+    - Cladding
+
+Candela
+    Unit of luminous intensity.
+    
+    1 candela is equal to 1 lumen per solid
+    angle.
+
+Capacitance
+    A property that measures the ability of a
+    conductor to hold electrical charge,
+    measured in farads (F).
+    
+    Junction capacitance is related to the
+    rise time of the photodiode.
+    
+    The smaller the capacitance, the shorter
+    the rise time, and vice versa.
+
+Cathode Ray Tube
+    Video display based on vacuum tube with
+    electron gun and annular anodes at one end
+    and a cathode and phosphor screen at the
+    other.
+    
+    Charged plates or electromagnets deflect
+    the electron beam such that the image is
+    scanned line by line across the face of
+    the tube.
+    
+    Signal response is nonlinear with input,
+    gamma usually between 2 and 3.
+
+    See also:
+    - Oscilloscope
+
+Cavity
+    With interference filters, a spacer layer
+    between two stacks of dielectric layers.
+    
+    The number of cavities determines the
+    overall shape of the transmittance curve.
+    
+    Typically, interference filters use three
+    cavities, resulting in steep slopes,
+    improved blocking near the bandwidth, and
+    relatively flat tops.
+
+    See also:
+    - Filter
+    - Bandwidth
+    - Interference Filter
+    - Blocking
+
+CDAR™ (Clear Display Anti-Reflection) Coating
+    A highly transmissive anti-reflection (AR)
+    coating with transmission of 96 - 99%
+    between 400 - 700nm.
+
+CDRH Laser Class
+    A laser class standard administered by the
+    Center for Devices and Radiological
+    Health, a division of the US FDA (Food and
+    Drug Administration).
+    
+    It is an alternative to the IEC laser
+    class standard used throughout Europe.
+
+    See also:
+    - IEC Laser Class
+
+CE Certified
+    A European proof of conformity that allows
+    manufacturers and exporters to circulate
+    products freely within the European Union.
+    
+    The letters "CE," French for "Conformite
+    Europeenne," indicate that the
+    manufacturer has satisfied all assessment
+    procedures specified by law for its
+    product.
+    
+    Products requiring the CE Mark in Europe
+    include, but are not limited to: high
+    voltage devices, toys, construction
+    products, equipment that generates
+    electromagnetic interference, personal
+    protection Equipment, and Medical Devices.
+
+Center Thickness (CT)
+    An optical measurement specified as the
+    distance from a primary principal plane
+    location to the end of an element.
+    
+    A PCX or PCV lens has a single principle
+    plane, yielding a single CT; a DCX or DCV
+    has two principle planes, yielding two CT
+    values.
+
+    See also:
+    - Principal Plane
+
+Centering
+    Also known by centration or decenter, it
+    is specified in terms of beam deviation.
+    
+    The amount of decenter is the physical
+    displacement of the mechanical axis from
+    the optical axis.
+
+Central Wavelength (CWL)
+    Typically used to denote the peak
+    transmitting wavelength of a filter, it is
+    the midpoint determined by the passband
+    wavelengths where the transmittance is 50%
+    of the peak (denoted by the Full-Width at
+    Half Maximum).
+
+    See also:
+    - Filter
+    - Bandwidth
+
+Charge-Coupled Device (CCD)
+    Silicon chip containing an array of
+    photosensitive sites.
+    
+    The imaging area consists of rows and
+    columns of photosensitive pixels that
+    accumulate and store electric charge.
+    
+    The term CCD refers to the way the
+    photoelectron packets are moved around on
+    the chip, the shift registers.
+    
+    Each column is separated by a shift
+    register, to which pixel charge is
+    transferred.
+    
+    Charge is read out from each pixel of the
+    device through the shift register
+    sequentially to an amplifier.
+    
+    The raw analog signal is either used
+    directly, or quantized by an A/D
+    converter.
+
+    See also:
+    - Complementary Metal Oxide Semiconductor (CMOS)
+    - Pixel
+
+Chief Ray
+    In geometric optics, the chief ray defines
+    the size of the paraxial object, location
+    of pupils, and size of the paraxial image.
+    
+    It begins at the edge of the object and
+    goes through the center of the entrance
+    pupil, exit pupil, and the aperture stop.
+
+    See also:
+    - Paraxial Rays
+    - Marginal Ray
+
+Chromatic Focal Shift
+    A measure of axial chromatic aberration,
+    quantifying the change in position along
+    the optical axis where different
+    wavelengths will focus.
+
+    See also:
+    - Longitudinal Chromatic Aberration (LCA)
+    - Transverse Chromatic Aberration (TCA)
+    - Aberration
+    - Pellicle
+Beamsplitter , Dispersion
+
+Circular Polarizer
+    A polarizing component that uses a linear
+    polarizer in combination with a retarder
+    (waveplate).
+    
+    The retarder is used to introduce a wave
+    shift between the orthogonal components of
+    the polarized light.
+    
+    In this way, two equal components of light
+    oscillating perpendicular to each other
+    with a relative phase difference add as
+    vectors to yield a rotating linear
+    polarization state.
+    
+    If the amplitude components of the
+    orthogonal states are not equal, the
+    vector addition of the two components will
+    produce an elliptical polarization.
+    
+    For this reason, the linearly polarized
+    light is input into the retarder at 45° to
+    the fast axis to ensure that both
+    components are of equal amplitude.
+
+    See also:
+    - Polarization
+    - Linear Polarizer
+    - Retarder (Waveplate)
+
+Cladding
+    A low refractive index material that
+    surrounds the core of an optical fiber.
+    
+    The difference in index between the core
+    and the cladding contains light traveling
+    through the core, while also serving to
+    protect the fiber against surface
+    contaminant scattering.
+
+    See also:
+    - Bend Radius
+    - Buffer Material
+    - Optical Fiber
+    - Index of Refraction (n)
+
+Clear Aperture (CA)
+    The unobscured portion of an optic or
+    mechanical component which has a limited
+    area through which light can pass.
+    
+    CA takes into account mounting rings, etc.
+    
+    on optics which reduce the usable area.
+
+C-Mount
+    A camera and lens standard with a 17.526mm
+    flange distance and mounting threads of 1"
+    x 32 TPI.
+
+    See also:
+    - CS-Mount
+    - T-Mount
+    - F-Mount
+    - Back Flange Distance
+    - S-Mount
+
+CNC Polished Aspheric Lenses
+    Computer numerically controlled (CNC)
+    polished aspheric lenses are ideal for
+    applications requiring the highest
+    precision performance.
+    
+    They are designed to offer high numerical
+    apertures while creating diffraction-
+    limited spot sizes.
+    
+    Browse available lenses here.
+
+Coefficient of Thermal Expansion (CTE)
+    A measure of the rate of change of the
+    material's size due to a change in
+    temperature.
+
+Coherent Light
+    With respect to lasers, the amplifying
+    laser medium produces coherent light
+    because the process of stimulated emission
+    produces additional photons with the same
+    phase as the originator.
+    
+    Noise within the laser output is the
+    result of spontaneous emissions which do
+    not have the same characteristics as the
+    stimulated emission.
+    
+    During oscillation, the spontaneous
+    emission component will also be amplified
+    and appear in the output as random noise.
+
+    See also:
+    - Laser
+
+Cold Mirror
+    A mirror-like filter which transmits
+    infrared light while reflecting visible
+    light.
+
+    See also:
+    - Filter
+    - Hot Mirror
+    - Dielectric Coating
+
+Collimated Light
+    A ray bundle, or beam of light, in which
+    every ray is parallel to every other ray
+    of light, which effectively originates
+    from an infinitely small point source
+    located at infinity.
+    
+    Note that light is never perfectly
+    collimated.
+
+    See also:
+    - Off-Set Angle
+    - Collimation
+    - Autocollimator
+
+Collimation
+    Converting a diverging or converging beam
+    of light into a parallel beam of light.
+
+    See also:
+    - Autocollimator
+    - Collimated Light
+
+Color Sensor
+    A camera sensor that uses a mosaic filter
+    to separate incoming light into a series
+    of colors.
+    
+    Each color is then directed by a different
+    set of pixels.
+    
+    In the filtering process some spatial
+    resolution is lost because the sensor is
+    not using every pixel for every color.
+
+    See also:
+    - Monochrome Sensor
+    - Bayer Filter
+
+Color Temperature
+    Colorimetric parameter associated with
+    light sources (compared with blackbodies)
+    that relates to apparent visual color.
+    
+    Expressed in degrees Kelvin.
+
+Colorimetry
+    A method used to measure color and to
+    define the results of the measurement.
+    
+    It includes many factors such as an
+    object's physical characteristics, the
+    surrounding colors, the light source, and
+    the sensor or viewer.
+
+Coma
+    An optical aberration that yields a
+    variation in magnification (and therefore
+    image size) across the FOV, causing an
+    asymmetric blur for features in the image.
+
+    See also:
+    - Aberration
+
+Complementary Metal Oxide Semiconductor (CMOS)
+    Complementary metal-oxide semiconductor
+    sensor.
+    
+    A type of imaging sensor in which the
+    charge-to-voltage conversion is done at
+    each individual pixel and the signal is
+    read out by a multiplexing to an A/D
+    converter.
+    
+    Can yield a less uniform output and very
+    low power dissipation compared to CCD, but
+    at much higher speeds due to lack of shift
+    registers.
+
+    See also:
+    - Binning
+    - Charge-Coupled Device (CCD)
+    - Pixel
+
+Compound Parabolic Concentrator (CPC)
+    An optical component which is designed to
+    collect and concentrate distant light
+    sources efficiently.
+    
+    CPCs are used in solar energy collection,
+    wireless communication, biomedical and
+    defense research among other applications
+    requiring condensing a divergent light
+    source.
+
+Computer Controlled Precision Polishing
+    Polishing technique for aspheric lenses
+    which automatically adjusts the tool dwell
+    parameters to polish away high spots where
+    more polishing is needed.
+
+Concentricity
+    For rotary stages, the maximum variance
+    between a perfect circle and the path that
+    the stage follows.
+
+Condenser Lens
+    A positive lens or set of lenses designed
+    to collect light and project it evenly
+    across an area.
+    
+    Commonly found in projector systems as
+    part of the condenser lens portion.
+
+Confocal Microscopy
+    Microscopy technique using spatial
+    filtering to eliminate out-of-focus light
+    in specimens that are thicker than the
+    plane of focus.
+    
+    Allows for controllable depth of field and
+    built-up 3D representations by
+    z-sectioning of an object.
+
+Conjugate Distance
+    The distance along the optical axis of a
+    lens from the principle plane of that lens
+    to either the image plane (for an image
+    conjugate) or the object plane (for an
+    object conjugate).
+    
+    Lenses designed to focus at infinity have
+    an infinite conjugate distance for the
+    object and a finite conjugate distance for
+    the image.
+
+    See also:
+    - Principal Plane
+    - Finite/Finite Conjugate
+    - Infinite/Finite Conjugate
+    - Infinite/Infinite Conjugate
+
+Continuously Variable Apodizing Filter
+    A type of neutral density filter with a
+    gradient of optical densities which vary
+    radially from the center.
+    
+    There are two configurations: high optical
+    density in the center that decreases
+    continuously to an uncoated edge, and high
+    optical density on the edge that
+    continuously decreases to an uncoated
+    center.
+
+    See also:
+    - Optical Density (OD)
+    - Neutral Density Filter (ND)
+
+Contrast
+    Comparison of shades of gray that define
+    an object and its background.
+
+    See also:
+    - Depth of Field (DOF)
+    - Modulation Transfer Function (MTF)
+    - Resolution
+
+Contrast, Optical
+    The quantified difference between adjacent
+    features of a specific size for an object,
+    as imaged through a lens.
+
+Counterbore (C'bore)
+    A cylindrically enlarged end of a hole.
+    
+    Typically used to accept the head of a
+    socket head cap screw, making the screw
+    head accessible but not obstructive.
+
+Crosstalk
+    Loss of optical energy between two optical
+    conductors.
+
+    See also:
+    - Optical Fiber
+
+Crown Glass
+    One of two types of optical glass used in
+    the manufacturing of achromatic lenses.
+    
+    Crown glass is harder than flint glass and
+    has a lower index of refraction and lower
+    dispersion.
+
+    See also:
+    - Achromatic Lens
+    - Flint Glass
+
+CS-Mount
+    A camera and lens standard with a 12.526mm
+    flange distance and mounting threads of 1"
+    x 32 TPI.
+    
+    CS-mount lenses will not work with C-mount
+    cameras.
+
+    See also:
+    - T-Mount
+    - F-Mount
+    - C-Mount
+    - Back Flange Distance
+    - S-Mount
+
+Cube Beamsplitter
+    A type of beamsplitter constructed of two
+    cemented right angle prisms, one with a
+    broadband multi-layer dielectric coating
+    on the hypotenuse.
+    
+    50% of incident light is transmitted, and
+    50% is reflected.
+    
+    Outside surfaces have an anti-reflection
+    coating to reduce back reflections.
+    
+    No beam displacement occurs between the
+    original and separated beams.
+    
+    The reflected and transmitted beams travel
+    through the same amount of glass, so
+    although the optical path length of each
+    arm is increased, both paths are increased
+    by the same amount.
+    
+    Their cubic shape makes cube beamsplitters
+    easy to mount, thus suffering less from
+    deformation due to mechanical stress.
+
+    See also:
+    - Beamsplitter
+    - Plate Beamsplitter
+    - Anti-Reflection (AR) Coating
+    - Dielectric Coating
+
+Cut-Off Wavelength
+    In filter terminology, the wavelength at
+    which the transmission decreases to 50%
+    throughput in a shortpass filter.
+    
+    In fiber optics, the shortest wavelength
+    at which a fiber transmits in single mode.
+    
+    Below the cut off several modes will
+    propagate and the fiber is no longer
+    single-, but multimode.
+    
+    In detector technology, the wavelength at
+    which the detector response falls to a set
+    percentage (usually 20 or 50 percent).
+
+    See also:
+    - Filter
+    - Cut-On Wavelength
+
+Cut-On Wavelength
+    In filter terminology, the wavelength at
+    which the transmission increases to 50%
+    throughput in a longpass filter.
+
+    See also:
+    - Cut-Off Wavelength
+
+Cylinder Lens
+    A type of lens that focuses light in only
+    one dimension.
+    
+    Its profile is similar to a PCX lens
+    (though PCV profiles also exist) and it
+    can transform a point of light into a line
+    image.
+
+    See also:
+    - Plano-Convex (PCX) Lens
+
+Dark Current
+    Thermal current produced in an operating
+    photodetector device when no optical
+    radiation impinges on the detector.
+
+    See also:
+    - Threshold Current
+
+Darkfield Illumination
+    In microscopy, refers to light that enters
+    a translucent object through the edge
+    perpendicular to the lens.
+    
+    In machine vision, an illumination
+    geometry which has most of the light
+    bounce off of the object; light from edges
+    and surface defects is scattered to the
+    detector yielding a high contrast bright
+    spot.
+
+    See also:
+    - Axial Illumination
+    - Glancing Illumination
+    - Diffuse Illumination
+    - Directional Illumination
+
+Decibel (dB)
+    A logarithmic measure of relative power
+    levels.
+    
+    It is used to specify the amount of
+    attenuation in optical fibers.
+
+    See also:
+    - Attenuation
+    - Optical Fiber
+
+Depth of Field (DOF)
+    The distance through which an object being
+    imaged may move in or out of the plane of
+    best focus while maintaining an acceptable
+    level of contrast at a particular spatial
+    frequency or resolution.
+
+    See also:
+    - Working Distance (WD)
+    - Contrast
+    - Resolution
+
+Depth of Focus
+    The image-space equivalent of depth of
+    field.
+    
+    For a fixed object distance, the maximum
+    displacement from the plane of best focus
+    through which the image maintains a
+    particular contrast at a specific spatial
+    frequency.
+
+Design Wavelength (DWL)
+    A common specification for optical
+    components describing the specific
+    wavelength of light at which the
+    components are intended to be used, or the
+    wavelength of light used in specifying or
+    testing an optical component for a
+    wavelength dependent specification such as
+    reflectivity or transmission.
+    
+    Optical components used over a range of
+    wavelengths will typically have optimal
+    performance at the DWL and decreasing
+    performance as the wavelength moves
+    further away from the design wavelength.
+    
+    DWL has units of length and is most
+    commonly reported in nanometers (nm) or
+    microns (μm).
+
+*
+ See also: Wavelength.
+
+Detectivity
+    A measure of the detecting ability or
+    sensitivity of a photodiode.
+    
+    The reciprocal of noise equivalent power
+    (NEP).
+
+    See also:
+    - Noise Equivalent Power (NEP)
+    - Photodiode
+    - Amplifiers
+
+Dichroic Beamsplitter
+    A type of plate beamsplitter that splits
+    incident light based on wavelength.
+
+    See also:
+    - Beamsplitter
+    - Plate Beamsplitter
+
+Dichroic Coating
+    A filter or mirror coating that transmits
+    or reflects light depending on wavelength
+    rather than polarization.
+    
+    The color varies with angle of incidence
+    and thickness of deposition material.
+    
+    Metallic coatings tend to be more
+    spectrally flat.
+
+    See also:
+    - Filter
+    - Plate Beamsplitter
+    - First Surface Mirror
+
+Dichroic Filter
+    A type of filter coated with thinfilms to
+    achieve a desired transmission and
+    reflection percentage across a given
+    spectrum.
+    
+    It is often used as a color filter (both
+    additive and subtractive).
+    
+    A dichroic filter is slightly angle
+    sensitive but is much more forgiving than
+    an interference filter.
+
+    See also:
+    - Filter
+
+Dielectric Coating
+    A type of coating consisting of materials
+    that are electrical insulators.
+    
+    The reflective coatings consist of
+    alternating layers of higher and lower
+    index materials (compared to the
+    substrate) in order to achieve a certain
+    reflectivity over a certain wavelength
+    region.
+
+    See also:
+    - Notch Filter
+    - Cold Mirror
+    - Cube Beamsplitter
+    - Hot Mirror
+    - Interference Filter
+
+Diffraction
+    The change in intensity distribution of
+    waves caused by constructive and
+    destructive interference as they contact
+    an obstruction, yielding a distribution
+    that differs from the incident wave-
+    front's.
+
+    See also:
+    - Diffraction Grating
+
+Diffraction Grating
+    An optical component used to disperse
+    light into its individual wavelengths.
+    
+    As incident light strikes a transmission
+    grating's groove spacing, it is dispersed
+    on the opposite side of the grating at a
+    fixed angle.
+    
+    As incident light strikes a reflective
+    grating's groove spacing, it is reflected
+    and dispersed on the same side of the
+    grating at a fixed angle.
+
+    See also:
+    - Absolute Efficiency
+    - Holographic Grating
+    - Spectrograph
+    - Blaze Angle
+    - Grating Equation
+    - Groove Density ,
+Ruled Grating , Relative Efficiency , Blaze Wavelength , Diffraction
+
+Diffraction Limit
+    A theoretical limiting factor governing
+    the maximum obtainable resolution of an
+    optical or imaging system, defined by the
+    inverse of the wavelength of light being
+    used multiplied by the f/# of the lens.
+
+    See also:
+    - Modulation Transfer Function (MTF)
+
+Diffuse Illumination
+    Diffuse, spatially uniform light from an
+    extended source.
+    
+    Used for even illumination of an object.
+
+    See also:
+    - Axial Illumination
+    - Glancing Illumination
+    - Darkfield Illumination
+    - Directional Illumination
+
+Diffusion
+    The effect of light scattering over a
+    large solid angle.
+    
+    Light is diffused by reflecting from or
+    transmitting through an irregular (rough)
+    surface.
+    
+    Typically, precautions are taken to remove
+    diffusion in applications; however,
+    diffusers can be utilized to introduce a
+    specific amount of diffusion in order to
+    create a desired effect (i.e.
+    
+    minimizing glare, homogenating a beam,
+    removing speckle in a laser application,
+    etc).
+
+Digital Signal
+     A signal that changes in regular steps.
+     
+     The signal level at each step is
+     represented by a number.
+
+    See also:
+    - Analog Signal
+    - Digital Signal Processing (DSP)
+    - Image Capture Board (Frame Grabber)
+
+Digital Signal Processing (DSP)
+    Found often in high-end industrial
+    cameras, it involves analog-to-digital
+    conversion of all or part of a standard
+    video signal to enhance/change the
+    resulting signal recovered upon digital-
+    to-analog conversion.
+    
+    Enhancements usually pertain to RGB
+    balancing for more accurate color
+    reproduction.
+
+    See also:
+    - Analog Signal
+    - Digital Signal
+
+DIN (Deutsche Industrie Norm)
+    An industry standard for the design of
+    microscope objectives and eyepieces.
+    
+    DIN standard microscopes have a 160mm tube
+    length.
+
+Diopter
+    Unit of optical measurement of a lens that
+    equals the inverse of the focal length of
+    the lens in meters.
+
+Directional Illumination
+    Point source illumination from single or
+    multiple sources.
+
+    See also:
+    - Ring Light Guide
+    - Axial Illumination
+    - Glancing Illumination
+    - Diffuse Illumination
+    - Darkfield Illumination
+
+Dispersion
+    A measure of how much the index of
+    refraction of a material changes with
+    respect to wavelength.
+    
+    It also determines the separation of
+    wavelengths known as chromatic aberration.
+    
+    Quantitatively, dispersion is inversely
+    given by the Abbe number.
+
+    See also:
+    - Abbe-Number
+    - Angle of Incidence
+    - Angle of Reflection
+    - Index of Refraction (n)
+    - Littrow Dispersion Prism ,
+Chromatic Focal Shift , Equilateral (Dispersing) Prism
+
+Distortion
+    Nonlinear geometrical aberration in which
+    magnification changes with field height
+    (i.e.
+    
+    no distortion at center), defined at
+    maximum field.
+    
+    If imaging a square grid, positive
+    distortion gives a pincushion effect while
+    negative distortion yields a barrel
+    effect.
+
+    See also:
+    - Magnification
+    - Aberration
+
+Distortion, Non-Monotonic
+    Distortion which changes sign, as well as
+    magnitude, across the image.
+    
+    Also called wave or mustache distortion.
+
+Divergence
+    A term that describes the degree to which
+    a light source expands as the distance
+    from the laser increases.
+    
+    Divergence is generally specified as a
+    full angle and can be used to predict spot
+    sizes at a given distance through tangent
+    calculation.
+    
+    Beam divergence can be reduced for long
+    distance uses by expanding the diameter of
+    the beam.
+
+    See also:
+    - Fan Angle
+    - Beam Divergence
+
+Double Gauss Design
+    An imaging lens design that employs low
+    f/# imaging lenses that provide superior
+    overall correction and produce less
+    distortion than standard fixed focal
+    length lenses.
+    
+    However, this design can be subject to
+    residual oblique spherical aberration.
+    
+    Two Gauss lenses, each comprised of a
+    negative doublet and a positive singlet,
+    are situated symmetrically in the design.
+    
+    Double Gauss lenses are commonly used in
+    machine vision applications.
+
+    See also:
+    - Singlet Lens
+    - Aperture (f/#)
+    - Doublet Lens
+    - Spherical Aberration
+
+Double-Concave (DCV) Lens
+    A type of singlet lens with two inward,
+    equally curved surfaces and a negative
+    focal length.
+    
+    Optimized for infinite/ infinite
+    conjugates and ideal for image reduction
+    and to spread light.
+
+    See also:
+    - Singlet Lens
+    - Infinite/Infinite Conjugate
+    - Plano-Concave (PCV) Lens
+
+Double-Convex (DCX) Lens
+    A type of singlet lens with two outward,
+    equally curved surfaces and a positive
+    focal length.
+    
+    Optimized for finite/ finite conjugate
+    imaging and ideal for electronic imaging,
+    relay systems and image projection.
+
+    See also:
+    - Plano-Convex (PCX) Lens
+    - Singlet Lens
+    - Finite/Finite Conjugate
+
+Doubler Tube
+    Also known as a doubler, an imaging lens
+    adapter that consists of a negative focal
+    length achromatic lens that doubles the
+    magnification for a specified working
+    distance by giving half the field of view.
+
+    See also:
+    - Magnification
+    - Achromatic Lens
+    - Working Distance (WD)
+    - Field of View (FOV)
+
+Doublet Lens
+    A lens with two optical components such as
+    an achromatic lens.
+
+    See also:
+    - Double Gauss Design
+    - Achromatic Lens
+
+Dove Prism
+    A type of prism that inverts an image by
+    rotating it by twice the prism rotation
+    angle.
+    
+    It is available in two versions: uncoated
+    and coated.
+    
+    An uncoated dove prism is used for image
+    rotation.
+    
+    A coated dove prism retroreflects an
+    image.
+
+    See also:
+    - Retroreflector
+
+Drive Ratio
+    In motorized stages, the ratio of motor
+    revolutions per leadscrew revolution.
+
+Dynamic Range
+    The difference between the lowest
+    detectable light level and the highest
+    detectable light level.
+    
+    Physically, this is determined by the
+    saturation capacity of each pixel, the
+    dark current or dark noise, the ADC
+    circuits, and gain settings.
+
+Eccentricity
+    The difference in alignment between the
+    optical axis and the mechanical axis of a
+    component, typically specified with a
+    mirror.
+
+Edge Thickness (ET)
+    A calculated value which depends on radii,
+    diameter, and center thickness of a lens.
+    
+    It is thus used as a reference to indicate
+    physical limitations for mounting
+    considerations.
+
+Effective Focal Length (EFL)
+    An optical measurement given as the
+    distance from the rear principal plane of
+    an optical system to its imaging plane,
+    with an object located at infinity.
+    
+    Determines angular field of view of a
+    lens.
+
+    See also:
+    - Principal Plane
+    - Back Focal Length (BFL)
+    - Radius of Curvature
+
+Electronic Shutter
+    Controls the amount of time a camera
+    collects light or charge during each
+    frame, also known as the exposure time.
+    
+    Standard signal formats employ
+    approximately 60 frames per second (fps),
+    indicating a collecting charge of 1/60
+    seconds for each frame.
+    
+    As light levels increase the sensor
+    overfills with charge, resulting in
+    blooming or streaking.
+    
+    Electronic shuttering circuits prevent
+    these effects by allowing the sensor to
+    collect charge for a shorter period during
+    each frame.
+
+Electrostatic Discharge (ESD)
+    Built up charge through the action of
+    static electricity that discharges into a
+    person or device after contact.
+    
+    While ESD voltages frequently exceed 3,000
+    volts, the current associated with ESD is
+    low making it safe, though at times
+    unpleasant, for humans.
+
+Ellipticity
+    The quality of asymmetrical intensity
+    distribution in a laser beam, as opposed
+    to a circular distribution.
+
+Encoder
+    Electromechanical device that creates
+    discrete electrical pulses directly
+    related to the angular position of the
+    input device (shaft).
+    
+    This allows for high resolution feedback
+    data on position.
+
+Entrance Pupil
+    The image of the aperture stop through the
+    lens elements preceding it into object
+    space.
+
+    See also:
+    - Marginal Ray
+    - Exit Pupil
+    - Chief Ray
+
+Equilateral (Dispersing) Prism
+    A dispersion prism used to separate white
+    light into its spectral components.
+    
+    It has three equal 60° angles.
+
+    See also:
+    - Dispersion
+
+Excitation Filter
+    A filter used in fluorescence microscopy
+    and spectroscopy to selectively pass a
+    band of wavelengths from a light source.
+
+    See also:
+    - Filter
+    - Fluorescent Filter
+    - Longpass Filter
+    - Shortpass Filter
+    - Notch Filter
+    - Bandpass Filter
+
+Exit Pupil
+    The image of the aperture stop through the
+    lens elements following it into image
+    space.
+
+    See also:
+    - Marginal Ray
+    - Entrance Pupil
+    - Chief Ray
+
+Extinction Ratio
+    The relationship between the intensity of
+    incident light to intensity of transmitted
+    light passing through an optic.
+    
+    It is used to categorize a polarizer or
+    laser's ability to pass a given
+    polarization state relative to another.
+
+    See also:
+    - Polarization
+
+Eccentricity
+    The difference in alignment between the
+    optical axis and the mechanical axis of a
+    component, typically specified with a
+    mirror.
+
+Edge Thickness (ET)
+    A calculated value which depends on radii,
+    diameter, and center thickness of a lens.
+    
+    It is thus used as a reference to indicate
+    physical limitations for mounting
+    considerations.
+
+Effective Focal Length (EFL)
+    An optical measurement given as the
+    distance from the rear principal plane of
+    an optical system to its imaging plane,
+    with an object located at infinity.
+    
+    Determines angular field of view of a
+    lens.
+
+    See also:
+    - Principal Plane
+    - Back Focal Length (BFL)
+    - Radius of Curvature
+
+Electronic Shutter
+    Controls the amount of time a camera
+    collects light or charge during each
+    frame, also known as the exposure time.
+    
+    Standard signal formats employ
+    approximately 60 frames per second (fps),
+    indicating a collecting charge of 1/60
+    seconds for each frame.
+    
+    As light levels increase the sensor
+    overfills with charge, resulting in
+    blooming or streaking.
+    
+    Electronic shuttering circuits prevent
+    these effects by allowing the sensor to
+    collect charge for a shorter period during
+    each frame.
+
+Electrostatic Discharge (ESD)
+    Built up charge through the action of
+    static electricity that discharges into a
+    person or device after contact.
+    
+    While ESD voltages frequently exceed 3,000
+    volts, the current associated with ESD is
+    low making it safe, though at times
+    unpleasant, for humans.
+
+Ellipticity
+    The quality of asymmetrical intensity
+    distribution in a laser beam, as opposed
+    to a circular distribution.
+
+Encoder
+    Electromechanical device that creates
+    discrete electrical pulses directly
+    related to the angular position of the
+    input device (shaft).
+    
+    This allows for high resolution feedback
+    data on position.
+
+Entrance Pupil
+    The image of the aperture stop through the
+    lens elements preceding it into object
+    space.
+
+    See also:
+    - Marginal Ray
+    - Exit Pupil
+    - Chief Ray
+
+Equilateral (Dispersing) Prism
+    A dispersion prism used to separate white
+    light into its spectral components.
+    
+    It has three equal 60° angles.
+
+    See also:
+    - Dispersion
+
+Excitation Filter
+    A filter used in fluorescence microscopy
+    and spectroscopy to selectively pass a
+    band of wavelengths from a light source.
+
+    See also:
+    - Filter
+    - Fluorescent Filter
+    - Longpass Filter
+    - Shortpass Filter
+    - Notch Filter
+    - Bandpass Filter
+
+Exit Pupil
+    The image of the aperture stop through the
+    lens elements following it into image
+    space.
+
+    See also:
+    - Marginal Ray
+    - Entrance Pupil
+    - Chief Ray
+
+Extinction Ratio
+    The relationship between the intensity of
+    incident light to intensity of transmitted
+    light passing through an optic.
+    
+    It is used to categorize a polarizer or
+    laser's ability to pass a given
+    polarization state relative to another.
+
+    See also:
+    - Polarization
+
+Fall Time
+    Measurement of the interval during which a
+    photodetector's signal and output current
+    drops from 90 to 10 percent.
+
+Fan Angle
+    The divergence angle of a laser of LED
+    line generator.
+    
+    Used to calculate the length of the
+    illumination line as a function of working
+    distance.
+
+    See also:
+    - Beam Divergence
+    - Line Width
+    - Divergence
+
+Fiber Jacket
+    The outer material that surrounds and
+    protects the buffered and unbuffered
+    fibers in an optical cable.
+
+    See also:
+    - Buffer Material
+    - Cladding
+    - Optical Fiber
+
+Fiberscope
+    An optical instrument consisting of an
+    objective lens, a coherent fiber bundle,
+    and an eyepiece to examine the output of
+    the fiber bundle.
+
+    See also:
+    - Borescope
+
+Field
+    Interlaced imaging devices produce "live"
+    video by scanning odd-numbered lines in
+    the first pass, then even-numbered lines
+    in the second pass, and so on.
+    
+    Two fields equal one frame.
+
+    See also:
+    - Frame
+    - Interlaced Scan
+    - Frame Rate
+    - Interline Transfer
+    - Progressive Scan
+
+Field Curvature
+    An optical aberration where focal position
+    changes with field height in a spherical
+    fashion, resulting in flat objects being
+    imaged onto a curved surfaces, as the
+    product of imaging through spherical lens
+    elements.
+    
+    Results in increasing defocus when moving
+    away from imaging axis.
+
+    See also:
+    - Aberration
+
+Field Efficiency
+    An imaging lens's ability to accommodate a
+    large sensor (image), source (object), or
+    angular field of view (in afocal systems).
+
+Field Height
+    Half the image circle.
+
+Field Number
+    The diameter of the image area seen under
+    an eyepiece or objective.
+    
+    The field number can be determined by the
+    following formula: Field Number (FN)=
+    (Field of View, FOV) X (Objective Lens
+    Magnification)*
+
+*In case of Stereo Microscope: Objective Lens Magnification X Zoom Ratio
+
+    See also:
+    - Field of View (FOV)
+    - Magnification
+    - Zoom
+
+Field of View (FOV)
+    The imaged area of an object under
+    inspection.
+    
+    This is the portion of the object that
+    fills the camera's sensor.
+
+    See also:
+    - Doubler Tube
+    - Magnification
+
+Figure Error (Form Error)
+    The imaged area of an object under
+    inspection.
+    
+    This is the portion of the object that
+    fills the camera's sensor.This
+    specification consists of low frequency or
+    larger errors usually peaking one to three
+    times across a part.
+    
+    Form errors are typically specified as
+    peak- to- valley error in waves or
+    fringes, but can also be specified as a
+    linear deviation in microns or as an RMS
+    deviation.
+    
+    These are typically the most common
+    surface specification for aspheric lenses.
+
+Filter
+    An optical component that allows certain
+    wavelengths or frequencies of light to
+    pass through while reflecting or absorbing
+    all others.
+    
+    Types of filters include bandpass,
+    longpass, shortpass, interference notch
+    and rugate notch, color, dichroic, and
+    neutral density.
+
+    See also:
+    - Cold Mirror
+    - Cavity
+    - Central Wavelength (CWL)
+    - Stopband
+    - Longpass Filter
+    - Neutral Density Filter (ND) ,
+Rugate Notch Filter , Heat Absorbing Glass , Notch Filter , Peak Transmittance , Shortpass Filter , Full Width at Half
+Maximum (FWHM) , Bandwidth , Fluorescent Filter , Hot Mirror , Dichroic Filter , Cut-Off Wavelength , WRATTEN Filter ,
+Cut-On Wavelength , Interference Filter , Dichroic Coating
+
+Filter, Colored Glass
+    An absorptive filter created by doping
+    glass materials with elements that
+    selectively change their absorption and
+    transmission spectra.
+
+Fine Screw Drive
+    A type of ball bearing stage drive
+    mechanism option.
+    
+    The 64 pitch screw is used for fine
+    resolution positioning, but the head is
+    not labeled for position readout.
+
+Finite/Finite Conjugate
+    A conjugate distance relationship in which
+    light is focused from a source located a
+    finite distance away.
+
+    See also:
+    - Conjugate Distance
+    - Double-Convex (DCX) Lens
+
+First Surface Mirror
+    A type of mirror featuring a high
+    reflectivity coating, deposited on the
+    front surface of the glass substrate.
+    
+    Light does not pass through any glass
+    before it is reflected, but the coating is
+    not protected and is more prone to
+    scratching and oxidization.
+
+    See also:
+    - Dielectric Coating
+
+Fixed Focal Length Lens
+    A lens with a fixed Angular Field of View
+    (AFOV), also known as a conventional or
+    entocentric lens.
+
+Fixed Focus Lens
+    A lens which is used at a single, specific
+    working distance and cannot be refocused
+    for different distances.
+
+Flatness
+    For ball bearing stages, it denotes error
+    in the vertical plane (up and down
+    movement in direction of travel).
+
+Flint Glass
+    One of two types of optical glass used in
+    the manufacturing of achromatic lenses.
+    
+    Flint glass has higher dispersion and
+    higher index of refraction than crown
+    glass.
+
+    See also:
+    - Crown Glass
+    - Achromatic Lens
+
+Float Glass
+    Glass manufactured by the float process,
+    which involves floating glass on liquid
+    tin as the glass cools.
+
+Fluorescence Microscopy
+    An optical microscopy technique that
+    utilizes fluorescence, which is induced
+    using fluorophores, as opposed to
+    absorption, scatter, or refraction.
+
+Fluorescent Filter
+    A type of filter that absorbs light at
+    short wavelengths (excitation
+    wavelengths), typically in the ultraviolet
+    (UV) spectrum, and emits light at long
+    wavelengths (emission wavelengths) in the
+    visible spectrum.
+
+    See also:
+    - Filter
+    - Visible Spectrum
+    - Ultraviolet (UV) Spectrum
+
+F-Mount
+    Also known as a Nikon-style F-mount
+    bayonet, it is a camera and lens standard
+    with a 46.5mm flange distance.
+
+    See also:
+    - CS-Mount
+    - T-Mount
+    - C-Mount
+
+Focal Length Extender
+    A negative group of lenses that
+    effectively changes the focal length (and
+    therefore the field of view) of the lens
+    being used, at a loss of brightness and
+    image quality.
+
+Focusing Range
+    The distance range through which a laser
+    diode module can be focused to achieve an
+    ideal spot size.
+    
+    Typically specified from the face of the
+    module to past collimation.
+    
+    Although a laser diode module can be used
+    at distances shorter than the minimum
+    focusing range, it's spot size will be
+    larger than the focused spot at this
+    minimum distance.
+    
+    It is important to note that the focused
+    spot size will increase with distance from
+    the module.
+    
+    At long distances, the optimum focus
+    condition is a collimated beam with
+    minimum divergence.
+
+Footcandle
+     Unit of illuminance equal to one lumen
+     per square foot.
+     
+     One footcandle (fc) equals 10.764 lux.
+
+    See also:
+    - Lux
+    - Minimum Sensitivity
+
+Frame
+    A single full image in a sequence of
+    video.
+
+    See also:
+    - Interlaced Scan
+    - Field
+    - Frame Rate
+    - Progressive Scan
+    - Interline Transfer
+
+Frame Rate
+    The number of full frames (which may
+    consist of two fields) composed in a
+    second.
+    
+    In high-speed applications, it may be
+    beneficial to choose a faster frame rate
+    to acquire more "images" of the object as
+    it moves.
+
+    See also:
+    - Frame
+
+Frequency
+    The number of wave crests that pass a
+    fixed point in a given unit of time.
+    
+    In electro-optics, it is expressed in
+    hertz or cycles per second.
+
+Frequency-Doubling
+    Also known as second-harmonic generation,
+    an input (pump) light wave can generate
+    another wave with twice the original’s
+    optical frequency in certain nonlinear
+    materials.
+
+Fresnel lens
+    A type of lens manufactured using a
+    molding process that results in annular
+    rings (or grooves) in thin plastic or
+    acrylic.
+    
+    Each groove refracts the light as if it
+    were a part of a whole conventional lens.
+    
+    The result is a lighter lens that can have
+    a lower f/# than a conventional glass lens
+    of the same focal length.
+    
+    The original design for this type of lens
+    was made by Augustin-Jean Fresnel for use
+    in lighthouses.
+
+F-Theta Scanning Lens
+    A type of optical lens assembly designed
+    to provide a flat field at the image plane
+    of the scanning system.
+    
+    It is commonly used in laser marking,
+    engraving, and cutting systems in
+    conjunction with a laser beam expander and
+    galvanometer.
+
+Full Width at Half Maximum (FWHM)
+    A specific wavelength region of the
+    bandwidth of a filter defined by the two
+    points of the passband where transmittance
+    is 50% of the peak.
+
+    See also:
+    - Filter
+    - Bandwidth
+    - Central Wavelength (CWL)
+
+Gain
+    The amount a signal increases while going
+    through an amplifier.
+    
+    Most cameras have optional automatic gain
+    (autogain or AGC).
+    
+    When possible, increased exposure or light
+    levels should be used in lieu of gain, as
+    gain reduces image quality by amplifying
+    noise as well as signals.
+
+    See also:
+    - Automatic Gain Control (AGC)
+
+Gamma
+    The exponent of the function relating
+    output signal to input signal in video
+    cameras and monitors.
+    
+    Industrial cameras naturally have a gamma
+    of 1, that is, they are linear in
+    response.
+    
+    Displays, however, can have a nonlinear
+    response corresponding to gamma values
+    between 2 and 3.
+    
+    When used together the camera may
+    incorporate gamma correction to linearize
+    the resulting system.
+
+Gas Laser
+    A laser using gas as the active medium.
+    
+    The pumping mechanism is an electric
+    discharge, although some high-power forms
+    employ chemical reaction or gas
+    compression and expansion to form
+    population inversion.
+
+    See also:
+    - Helium Neon (HeNe) Laser
+    - Argon-Ion Laser
+
+Gaussian Beam
+    A light beam where the electric field
+    profile in a plane perpendicular to the
+    beam axis can be described with a Gaussian
+    function, possibly with an added parabolic
+    phase profile.
+
+Gear Ratio
+    Ratio of the number of teeth on mating
+    gears (larger gear : smaller gear).
+    
+    For example, a ratio of 16:1 means that
+    the smaller gear (or pinion) makes sixteen
+    revolutions for every one revolution of
+    the larger mating gear.
+
+Ghost Image
+    In optics, a faint second image caused by
+    reflections within an optical component.
+    
+    In paranormal investigation, a picture of
+    a ghost, spectre, or phantom.
+
+    See also:
+    - Beamsplitter
+    - Spectrometer
+
+Gimbal
+    A type of mounting component that allows
+    for adjustable movement about two
+    perpendicular and intersecting axes (i.e.
+    
+    pitch and roll).
+    
+    Ideal for positioning applications where
+    the position of the center of the optic
+    must remain stationary as it is tilted.
+
+    See also:
+    - Pitch
+    - Roll
+
+Glancing Illumination
+    Point source illumination similar to
+    directional illumination, except at a
+    sharp angle of incidence.
+
+    See also:
+    - Axial Illumination
+    - Diffuse Illumination
+    - Darkfield Illumination
+    - Directional Illumination
+
+Glass Code
+    A reference code for a specific glass type
+    that is represented by three digits, then
+    a slash, then another three digits.
+    
+    It is always present in technical prints
+    to indicate the specifications of the
+    glass substrate used.
+    
+    The first three digits refer to the three
+    numbers after the decimal in the glass'
+    index of refraction.
+    
+    The second three digits refer to the first
+    three significant digits in the glass'
+    Abbe number.
+    
+    For instance, BK7, which has an index of
+    refraction of 1.517 and an Abbe number of
+    64.2, has a glass code of 517/642.
+
+    See also:
+    - Abbe-Number
+    - Angle of Incidence
+    - Angle of Reflection
+    - Index of Refraction (n)
+    - Dispersion
+
+Goniometer
+    A mechanical component that allows for
+    precise angular adjustment of an object
+    about a fixed point located above the
+    center of the mounting surface.
+
+Gradient Index
+    The variation in the index of refraction
+    of a medium as the temperature changes.
+    
+    This gradient index (dn/dT) can be
+    problematic when operating in unstable
+    environments, especially if the system is
+    designed to operate for one value of n.
+
+    See also:
+    - Index of Refraction (n)
+
+Gradient Index (GRIN) Lens
+    A lens whose material refractive index
+    varies continuously as a function of
+    spatial coordinates in the medium.
+
+Grating Equation
+    The relationship between diffracted order,
+    wavelength, groove spacing, and angles of
+    incidence and diffraction.
+    
+    It is used to determine the diffracted
+    angle for a given incident beam.
+
+    See also:
+    - Diffraction Grating
+    - Holographic Grating
+    - Blaze Angle
+    - Groove Density
+    - Ruled Grating
+    - Blaze Wavelength
+
+Groove Density
+    The number of grooves per area, specified
+    as grooves/ mm or grooves/ inch of a
+    grating.
+    
+    It is used to determine the groove spacing
+    and, with the grating equation, to obtain
+    information about the diffracted orders
+    and incident/ diffracted angles.
+
+    See also:
+    - Diffraction Grating
+    - Holographic Grating
+    - Grating Equation
+    - Ruled Grating
+    - Relative Efficiency
+
+Ground Edge
+    A type of bevel in which the edge of an
+    optical component is ground to remove
+    sharp corners.
+    
+    Compared to a seamed edge, it is used when
+    tighter tolerances are required.
+
+    See also:
+    - Seamed Edge
+
+Half-Wave Optical Thickness (HWOT)
+    The layer of optical coating that is equal
+    in optical thickness to one half the
+    design wavelength.
+    
+    No change in reflectance/transmittance
+    results from layers of this thickness.
+
+    See also:
+    - Quarter Wave Optical Thickness (QWOT)
+
+Heat Absorbing Glass
+    A type of glass filter that absorbs,
+    rather than reflects, energy associated
+    with heat.
+
+    See also:
+    - Filter
+
+Helical Gear
+    A gear with angled teeth used in helicoid
+    movement components.
+    
+    It is superior to a rack and pinion
+    because of the smoothness of operation due
+    to tightness of the mesh between gear and
+    rack.
+
+    See also:
+    - Rack and Pinion
+
+Helium Neon (HeNe) Laser
+    One of the most common types of lasers,
+    the HeNe laser uses a combination of
+    helium and neon gas as its laser medium.
+    
+    Although the most common output wavelength
+    is 632.8nm, HeNe lasers are available in
+    several different wavelengths.
+
+    See also:
+    - Gas Laser
+    - Argon-Ion Laser
+
+Holographic Grating
+    A type of grating in which a sinusoidal
+    "blaze" pattern is generated on the
+    surface by exposing the grating (covered
+    with photoresist) to an interference
+    pattern.
+    
+    The sinusoidal variations in the
+    interference pattern lead to the groove
+    profile for the holographic element.
+
+    See also:
+    - Diffraction Grating
+    - Grating Equation
+    - Groove Density
+    - Ruled Grating
+    - Relative Efficiency
+
+Horizontal Resolution
+    In analog imaging, the number of
+    individual pixels that can be
+    distinguished in a horizontal scanning
+    line.
+    
+    Expressed in terms of TV lines.
+
+Hot Mirror
+    A mirror-like filter which reflects
+    infrared light while transmitting visible
+    light.
+
+    See also:
+    - Cold Mirror
+    - Filter
+    - Dielectric Coating
+
+Huygenian Eyepiece
+    An eyepiece having two plano-convex lenses
+    of the same glass separated by half the
+    sum of their focal lengths.
+    
+    This eyepiece is free of lateral chromatic
+    aberration, but is not suitable for use
+    with reticles.
+
+    See also:
+    - Kellner Eyepiece
+    - Periplan Eyepiece
+    - Wide-Field Eyepiece
+
+Hybrid Molding
+    A type of manufacturing technique that
+    starts with a standard spherical surface,
+    such as an achromatic lens, which is
+    pressed onto a thin layer of photopolymer
+    in an aspheric mold to create an aspheric
+    surface.
+    
+    After the surfaces are compressed and UV
+    cured at room temperature, the end result
+    is an aspherized achromatic lens that has
+    chromatic and spherical aberration
+    correction properties.
+
+    See also:
+    - Aspheric Lens
+    - Achromatic Lens
+
+Hyperfocal Distance
+    The (usually long) working distance beyond
+    which all objects are at an acceptable
+    focus.
+
+    See also:
+    - Depth of Field (DOF)
+
+IEC Laser Class
+    A laser class standard administered by the
+    Commission Electrotechnique
+    Internationale, which pubishes
+    international standards for electronic
+    components.
+    
+    It is an an alternative to the CDRH laser
+    class standard used throughout North
+    America.
+
+    See also:
+    - CDRH Laser Class
+
+Image Capture Board (Frame Grabber)
+    A computer card that samples and digitizes
+    analog video signals so that the
+    information may be processed, stored, or
+    operated on by the computer.
+    
+    Ideal for analog cameras because they have
+    no computational software or digital
+    cameras to maximize bandwith by
+    transmitting data from large sensors at
+    high frame rates.
+
+    See also:
+    - Analog Signal
+    - Digital Signal
+
+Image Circle
+    The diameter of the maximum usable image
+    produced by an imaging lens.
+
+Index of Refraction (n)
+    The ratio of the speed of light in a
+    vacuum (c) to the speed of light in a
+    refractive material (v).
+    
+    The index of refraction of a given medium
+    varies with wavelength because the speed
+    of light varies with wavelength.
+    
+    Common indices of refraction include nd
+    (the yellow helium line at 587.6nm), nf
+    (the blue hydrogen line at 486.1nm) and nc
+    (the red hydrogen line at 656.3nm).
+
+    See also:
+    - Abbe-Number
+    - Birefringence
+    - Angle of Incidence
+    - Glass Code
+    - Angle of Reflection
+    - Dispersion
+    - Refraction
+, Gradient Index , Cladding
+
+Infinite/Finite Conjugate
+    A conjugate distance relationship that
+    combines two processes by focusing a
+    source placed at infinity down to a spot.
+    
+    In terms of imaging, the object is placed
+    at infinity (defined as the distance at
+    which light rays can be considered
+    collimated) in relation to the optical
+    elements and imaged a finite distance onto
+    a sensor or other image plane.
+
+    See also:
+    - Plano-Convex (PCX) Lens
+    - Meniscus Lens
+    - Conjugate Distance
+
+Infinite/Infinite Conjugate
+    A conjugate distance relationship that
+    takes collimated light, changes the beam
+    diameter according to the magnification,
+    and emits collimated light.
+    
+    In terms of imaging, the object is placed
+    at infinity (defined as the distance at
+    which light rays can be considered
+    collimated) in relation to the optical
+    elements and relayed an infinite distance.
+    
+    No image is formed, but can be with the
+    introduction of a secondary infinite/
+    finite conjugate design system.
+
+    See also:
+    - Conjugate Distance
+    - Double-Concave (DCV) Lens
+    - Plano-Concave (PCV) Lens
+
+Infrared (IR) Spectrum
+    The wavelength interval of the
+    electromagnetic spectrum that corresponds
+    to infrared light (light that is beyond
+    the visible red range).
+    
+    IR radiation is often divided into three
+    smaller regions: 0.750 - 3μm, 3 - 30μm,
+    and 30 - 1000μm – defined as near-infrared
+    (NIR), mid-wave infrared (MWIR), and far-
+    infrared (FIR), respectively.
+
+    See also:
+    - Visible Spectrum
+    - Ultraviolet (UV) Spectrum
+
+Integration Time
+    In an imaging device, the length of time
+    during which the sensing elements are
+    collecting charge between transfers to the
+    transport registers.
+    
+    Also known as exposure time.
+
+Interference Filter
+    A type of filter made up of several
+    metallic or dielectric layers of material,
+    typically composing a three-cavity design.
+    
+    The correct combination yields high
+    spectral transmittance over very narrow
+    wavelength ranges due to interference
+    effects between layers.
+
+    See also:
+    - Filter
+    - Dielectric Coating
+
+Interference Fringe
+    Alternating light and dark bands in an
+    intensity pattern due to the wave nature
+    of light.
+    
+    The phase difference remains constant
+    along one fringe.
+    
+    When using an optical flat, straight,
+    parallel, and evenly spaced interference
+    fringes indicate that the work surface
+    flatness is equal to or higher than that
+    of the reference surface.
+
+    See also:
+    - Power
+    - Irregularity
+    - Interferometry
+    - Optical Flat
+
+Interferometry
+    A family of techniques that utilizes the
+    interference of waves of light for precise
+    determinations of, wavelength, flatness,
+    or other attributes.
+
+    See also:
+    - Power
+    - Irregularity
+    - Optical Flat
+    - Interference Fringe
+
+Interlaced Scan
+    Interlaced imaging devices produce images
+    by scanning and reading out odd-numbered
+    lines in the first pass, then even-
+    numbered lines in the second pass, and so
+    on.
+    
+    Two fields are assembled into one full
+    frame.
+
+    See also:
+    - Field
+    - Progressive Scan
+
+Interline Transfer
+    Also referred to as 2:1 interlaced video,
+    it combines two fields to make up each
+    video.
+    
+    If each field is scanned at 60Hz, the
+    frame rate is necessarily 30Hz.
+
+    See also:
+    - Frame
+
+Inverted Load Capacity
+    The reverse, or inverse, or normal load
+    capacity whereby the load or force applied
+    to a mechanical component is directed
+    upward.
+
+    See also:
+    - Normal Load Capacity
+
+Ion-Beam Sputtering (IBS)
+    A physical vapor depostition technique to
+    increase the density of thin-film
+    coatings, thus creating "hard coated"
+    filters.
+    
+    The thin film is deposited by sputtering
+    (ejecting) material from a target by ion
+    bombardment which is then deposited onto
+    the filter substrate.
+
+Iris Diaphragm
+    A mechanical aperture designed to smoothly
+    change the aperture size.
+    
+    It can be used to control the amount of
+    light entering an optical system if used
+    as the aperture stop.
+
+    See also:
+    - Aperture (f/#)
+    - Aperture Stop
+
+Irradiance
+    Denoted by E, it is the incident power per
+    unit area, measured in W/m2.
+    
+    Also known as radiant flux density.
+
+Irregularity
+    A type of surface accuracy specification
+    that describes how the shape of a surface
+    deviates from the shape of a reference
+    surface.
+    
+    Regularity refers to the sphericity of the
+    circular fringes that are formed from the
+    comparison of the test surface to the
+    reference surface.
+    
+    When the power of a surface is more than 5
+    fringes, it is difficult to detect small
+    irregularities of less than 1 fringe.
+    
+    So surfaces are specified with a ratio of
+    power to irregularity of approximately
+    5:1.
+
+    See also:
+    - Power
+    - Interferometry
+    - Optical Flat
+    - Interference Fringe
+
+Jitter
+    An imaging phenomenon that limits the
+    accuracy of measurement to at least two
+    pixel separations because signals
+    impinging on the sensor may fall on a
+    pixel or on the space between pixels.
+    
+    Statistically speaking, the latter case
+    may cause a response in the pixel to the
+    immediate left or the immediate right of
+    the space.
+    
+    Due to the standard scan frequency of
+    60Hz, such a static image will exhibit
+    jitter between the two pixels in question
+    over time.
+
+    See also:
+    - Pixel
+
+Kellner Eyepiece
+    A type of eyepiece design consisting of a
+    plano-convex field lens and a cemented
+    doublet lens as the eye lens.
+
+    See also:
+    - Huygenian Eyepiece
+    - Periplan Eyepiece
+    - Wide-Field Eyepiece
+
+Kerr Cell
+    Electro-optical device constructed from a
+    crystal with attached electrodes used to
+    modulate a laser beam.
+    
+    A phase delay of a laser transmitting
+    through the crystal is modulated by
+    applying a variable electric voltage,
+    causing birefringence.
+    
+    The change is proportional to the square
+    of the field, which is known as the Kerr
+    effect.
+    
+    See also Pockels Cell, Q-Switching
+
+    See also:
+    - Huygenian Eyepiece
+    - Periplan Eyepiece
+    - Wide-Field Eyepiece
+
+Kinematic Mount
+    A type of optical mount capable of six
+    degrees of freedom that are singularly
+    constrained during alignment.
+    
+    It is designed to minimize stress to the
+    optics or optical assemblies it holds.
+
+Knoop Hardness
+    A measure of material hardness.
+    
+    A higher Knoop hardness corresponds to a
+    stronger material.
+
+Lagrange Invariant
+    It is a version of the optical invariant
+    that uses the chief ray and the marginal
+    ray as the two rays of interest for ray
+    tracing calculations.
+
+    See also:
+    - Optical Invariant
+
+Lambertian
+    A perfectly diffuse reflecting surface,
+    where light is scattered equally in all
+    directions.
+
+    See also:
+    - Specular
+
+Laser
+    Acronym that stands for light
+    amplification by stimulated emission of
+    radiation.
+    
+    The basic structure is based on an active
+    medium (either a gas or semiconductor)
+    contained between two reflectors.
+    
+    A laser's reflectors contain light by
+    oscillating it through a medium repeatedly
+    allowing the energy to build up with each
+    pass.
+    
+    Laser radiation escapes due to a partially
+    reflecting mirror in the assembly.
+
+    See also:
+    - Coherent Light
+    - Gas Laser
+    - Solid State Laser
+    - Power Density
+    - Spatial Mode
+    - Warm-Up Time
+    - Laser Damage
+Threshold , Modulation Bandwidth , Longitudinal Mode Spacing , Static Alignment
+
+Laser Damage Threshold
+    The maximum amount of laser power per area
+    that a surface can withstand before it is
+    damaged.
+    
+    For pulsed lasers, typically measured in
+    mJ/cm2; for continuous wave lasers,
+    typically in W/cm2.
+    
+    This measurement is very important for
+    mirrors or any other optical component
+    used in conjunction with laser products.
+
+    See also:
+    - Power Density
+    - Laser
+
+Lateral Color
+    The difference in image height as a
+    function of wavelength.
+
+    See also:
+    - Longitudinal Chromatic Aberration (LCA)
+    - Transverse Chromatic Aberration (TCA)
+    - Aberration
+
+LBO Crystal
+    Lithium triborate(LiB3O5) is a nonlinear
+    optical crystal with a number of unique
+    and useful optical properties.
+
+Light Pipe Homogenizing Rod
+    An optical component that utilizes total
+    internal reflection to turn a non-uniform
+    light source into uniform illumination.
+
+Line Pair (lp)
+    A pair of alternating black and white bars
+    at a specific frequency.
+
+Line Width
+    The width of the line created by a line
+    generating laser is equivalent to the beam
+    spot diameter at the target without the
+    line generating optic.
+    
+    The length of the line is defined by the
+    fan angle.
+
+    See also:
+    - Fan Angle
+
+Linear Polarizer
+    A type of filter used to limit the
+    polarization of light to a specific plane
+    by absorbing components oscillating in
+    planes other than the specified
+    polarization transmission axis.
+
+    See also:
+    - Polarization
+    - Wire Grid Polarizer
+    - S-Polarization
+    - Circular Polarizer
+    - P-Polarization
+
+Littrow Dispersion Prism
+    Also known as a 30-60-90 dispersion prism,
+    it is available in two versions: uncoated
+    and coated.
+    
+    An uncoated Littrow dispersion prism
+    disperses white light into its spectral
+    components, similar to an equilateral
+    prism; a coated Littrow dispersion prism
+    deviates the ray path by 60° without
+    inverting or reverting the image.
+    
+    The hypotenuse of the coated version is at
+    Brewster's angle for 514.5nm, resulting in
+    retroreflection at that wavelength.
+    
+    Rotating the prism changes the
+    retroreflected wavelength and makes this
+    prism suitable for line selection in a
+    laser.
+
+    See also:
+    - Dispersion
+
+Longitudinal Chromatic Aberration (LCA)
+    A type of chromatic aberration where
+    different wavelengths focus at different
+    points along the horizontal optical axis
+    as a result of dispersion properties of
+    the glass.
+    
+    The refractive index of a glass is
+    wavelength dependent, so it has a slightly
+    different effect on where each wavelength
+    of light focuses, resulting in separate
+    focal points for red, yellow, and blue
+    light along a horizontal plane.
+
+    See also:
+    - Transverse Chromatic Aberration (TCA)
+    - Aberration
+    - Chromatic Focal Shift
+    - Lateral Color
+
+Longitudinal Mode Spacing
+    The spacing between multiple frequencies
+    of oscillation within a laser that results
+    from a combination of the gain curve for a
+    laser and the resonance characteristics of
+    its cavity.
+    
+    Since the mode spacing is defined as the
+    speed of light divided by twice the cavity
+    length, short cavities can be used in
+    applications that require a minimal
+    frequency spread.
+    
+    A short cavity can extend the mode spacing
+    such that only one frequency experiences
+    gain during oscillation.
+
+    See also:
+    - Spatial Mode
+    - Laser
+
+Longpass Filter
+    A type of filter in which the transmission
+    band is a higher wavelength region as
+    compared to the region blocked
+
+    See also:
+    - Shortpass Filter
+
+Louver Angle
+    For light control film, the angle
+    orientation of the closely spaced micro-
+    louvers.
+    
+    The louvers simulate a tiny venetian blind
+    that blocks out unwanted ambient light and
+    controls the direction of display light.
+    
+    Unlike blinds, the film is a solid
+    material.
+
+    See also:
+    - Viewing Angle
+
+Luminous Flux
+    The perceived power of visible light or
+    the flow of this visible light past a
+    fixed point per unit of time, measured in
+    lumen.
+
+    See also:
+    - Minimum Sensitivity
+
+Lux
+    Unit of measure of luminous flux incident
+    per unit area.
+    
+    One lux (lx) equals one lumen per square
+    meter.
+
+    See also:
+    - Minimum Sensitivity
+    - Footcandle
+
+Magnesium Fluoride (MgF2)
+    BBAR coating with reflection minimized at
+    one specified wavelength, typically 550nm.
+    
+    Retains good transmission throughout
+    visible into the NIR.
+
+Magneto-Rheological Finishing (MRF)
+    Deterministic process using a precise
+    interferometrically documented sub
+    aperture tool to correct waveform errors
+    by selectively removing material under a
+    controlled and predicted process.
+    
+    It provides high performance finishing in
+    less time than standard polishing
+    techniques because of its precise control
+    of the removal location and high removal
+    rate.
+
+Magnification
+    Optical and imaging magnification is a
+    ratio of image angular subtense to object
+    angular subtense.
+    
+    Electronic, or linear, magnification is
+    the ratio of monitor size to sensor size.
+    
+    For example, 13" monitors are between 38
+    and 39 times as large as ½" size format
+    sensor cameras when comparing horizontal,
+    vertical, or diagonal measures.
+
+    See also:
+    - Sensing Area
+    - Doubler Tube
+    - Parfocality
+    - Telecentric Lens
+    - Field of View (FOV)
+    - Distortion
+
+Marginal Ray
+    In geometric optics, the marginal ray of
+    an optical system determines the paraxial
+    image location, and hits the edge of all
+    pupils in the optical system.
+    
+    Along with the chief ray, it describes the
+    entire paraxial image.
+
+    See also:
+    - Paraxial Rays
+    - Chief Ray
+
+Meniscus Lens
+    A type of singlet lens with one convex
+    (outwardly curved) surface and the other
+    concave (inwardly curved).
+    
+    It has a positive focal length.
+    
+    Shows less aberrations compared to a
+    plano-convex lens when used for
+    infinite/finite conjugate imaging.
+
+    See also:
+    - Singlet Lens
+    - Infinite/Finite Conjugate
+
+Microlithography
+    A technique for producing micron-size
+    structures on surfaces by using short-
+    wavelength light or electron beams.
+
+Mid-Spatial Frequency (MSF) Errors
+    Deviations in the surface form of an
+    optical surface relative to its ideal
+    shape at higher spatial frequencies than
+    Zernike polynomial aberrations but lower
+    frequencies than surface roughness.
+    
+    The mid-spatial frequency range is defined
+    somewhat ambiguously as the region which
+    causes optical blur or image degradation
+    in optical systems.
+    
+    These errors must be controlled for during
+    optical manufacturing, particularly when
+    fabricating aspheric lenses.
+
+Mil
+    Unit of measurement equal to 10-3 inches
+    (0.001") or 0.0254 mm.
+
+Minimum Sensitivity
+    The minimum level of illumination required
+    to produce a full video signal from a
+    camera, expressed as luminous flux per
+    unit area (lux or footcandles) through a
+    specified imaging lens.
+
+    See also:
+    - Lux
+    - Luminous Flux
+    - Footcandle
+
+Modulation Bandwidth
+    The pulse bandwidth of a modulatable
+    laser.
+
+    See also:
+    - Laser
+
+Modulation Frequency
+    Rate at which optical radiation or a
+    signal is varied through the use of a
+    mechanical or electronic chopper, also
+    called chopping frequency.
+
+Modulation Transfer Function (MTF)
+    A measure of contrast as a function of
+    spatial frequency.
+    
+    Defined as 100% at zero-frequency, MTF
+    continuously declines with increasing
+    spatial frequency to zero contrast at a
+    theoretical maximum resolution frequency
+    defined by the diffraction limit of the
+    optical system.
+
+    See also:
+    - Diffraction Limit
+    - Contrast
+    - Resolution
+
+Moment Load
+    The forces that are offset (cantilevered)
+    from the bearing centers of mechanical
+    components producing uneven loading on the
+    bearings.
+    
+    Uneven loading means that some bearings
+    are supporting more of the load than
+    others.
+    
+    Moment forces are categorized by the
+    direction in which they act: pitch, roll
+    or yaw.
+    
+    When loading results in moments acting in
+    only one of the moment directions, it is
+    called a single direction moment.
+    
+    If it is in more than one direction, it is
+    referred to as compound moment loading.
+
+    See also:
+    - Normal Load Capacity
+    - Yaw
+    - Roll
+    - Pitch
+
+Monochromatic
+    Refers to one specific wavelength or
+    color.
+
+    See also:
+    - Polychromatic
+
+Monochrome Sensor
+    A camera sensor that outputs grayscale
+    images.
+    
+    It is ideal for machine vision
+    applications due to the absence of Bayer
+    pattern color filters which reduce
+    sensitivity and spatial resolution.
+
+    See also:
+    - Color Sensor
+
+NIR (Near Infrared)
+    The portion of the electromagnetic
+    spectrum from 700 to 1100nm.
+    
+    Definition may differ by application.
+
+Neutral Density Filter (ND)
+    A type of filter that yields a constant
+    attenuation, or optical density, value
+    over a range of wavelengths (i.e.
+    
+    spectrally flat).
+    
+    It is useful for attenuating, or reducing,
+    the amount of light in a system.
+
+    See also:
+    - Filter
+    - Continuously Variable Apodizing Filter
+    - Optical Density (OD)
+
+Noise
+    Caused by the unwanted spontaneous
+    emission of light from a laser medium
+    resulting in reduced optical performance.
+
+    See also:
+    - Noise Equivalent Power (NEP)
+
+Noise Equivalent Power (NEP)
+    The incident light power required to
+    produce a signal on a detector that is
+    equal to the noise.
+    
+    In this case, the signal-to-noise ratio is
+    equal to one.
+
+    See also:
+    - Detectivity
+    - Noise
+    - Signal-to-Noise Ratio (SNR)
+
+Non-Polarizing Beamsplitter
+    A type of beamsplitter that splits the
+    incident light by a specific percentage
+    without altering the polarization state of
+    the transmitted or reflected light.
+
+    See also:
+    - Polarization
+    - Beamsplitter
+
+Normal Load Capacity
+    The maximum downward (compression) load or
+    force that can be applied to a mechanical
+    component perpendicular to the mounting
+    surface.
+    
+    The center of force, or the center of
+    gravity, of the load must be located in
+    the center of the mounting surface.
+
+    See also:
+    - Inverted Load Capacity
+    - Moment Load
+
+Notch Filter
+    A type of filter designed to block a pre-
+    selected bandwidth while transmitting all
+    other wavelengths within the design range
+    of the filter.
+    
+    Manufactured using the dielectric stack
+    method, which uses a series of thin layers
+    of dielectric materials of alternating
+    refractive index.
+
+    See also:
+    - Filter
+    - Bandwidth
+    - Dielectric Coating
+    - Rugate Notch Filter
+
+Nth Order
+    Multiple combinations of wavelength and
+    integer order values that will satisfy any
+    given groove spacing, angle of incidence,
+    and diffracted angle calculated from the
+    grating equation.
+    
+    Gratings are generally specified in terms
+    of first order diffraction since
+    efficiency decreases with higher orders.
+
+Numerical Aperture (NA)
+    The sine of the vertex angle of the
+    largest cone of meridional rays that can
+    enter or exit an optical system.
+    
+    In other words, it governs the amount of
+    light entering or exiting a system.
+    
+    It is inversely related to the f/#.
+
+Nyquist Limit
+    The theoretical limit of a camera's
+    resolution or sampling ability, defined as
+    the inverse of twice the pixel size.
+
+    See also:
+    - Pixel
+
+Off-Set Angle
+    The angle at which an off-axis mirror
+    directs and focuses incident collimated
+    light.
+
+    See also:
+    - Collimated Light
+
+Optical Density (OD)
+    Describes the amount of energy that can
+    pass through an optical material.
+    
+    It is directly related to the
+    transmittance of the material, which is
+    the ability of light to propagate through
+    a given medium.
+    
+    A large OD means more blocking.
+
+    See also:
+    - Continuously Variable Apodizing Filter
+    - Blocking
+    - Neutral Density Filter (ND)
+
+Optical Fiber
+    A type of optic comprised of a core
+    surrounded by a relatively thin cladding
+    layer of lower index material.
+    
+    This geometry causes internal reflection
+    of light inside the fiber and defines the
+    maximum angles accepted by the fiber.
+    
+    An optical fiber emits into a cone of
+    equal angle, not as a beam of light.
+    
+    Coherent fiber bundles can relay images
+    from one end to the other; whereas,
+    incoherent bundles are used for
+    propagation of light alone.
+
+    See also:
+    - Ball Lens
+    - Bend Radius
+    - Crosstalk
+    - Buffer Material
+    - Fiber Jacket
+    - Decibel (dB)
+    - Cladding
+    - Packing
+Fraction
+
+Optical Flat
+    A precisely polished flat surface, used as
+    a reference against which the flatness of
+    an unknown surface may be compared.
+
+    See also:
+    - Power
+    - Surface Flatness
+    - Irregularity
+    - Interferometry
+    - Reference Wavelength
+    - Interference Fringe
+
+Optical Invariant
+    A useful tool that allows optical
+    designers to determine various values
+    without having to completely ray trace a
+    system.
+    
+    It is obtained by comparing two rays
+    within a system at any axial point.
+    
+    It is constant for any two rays at every
+    point in the system.
+    
+    In other words, if the invariant for a set
+    of two rays is known, ray trace one of the
+    rays and then scale that by the invariant
+    to find the second.
+
+    See also:
+    - Lagrange Invariant
+
+Optical Path Difference
+    For a perfect optical system, the optical
+    path, or distance, from an object point to
+    a corresponding image point will be equal
+    for all rays.
+    
+    In near-perfect systems, slight
+    differences will exist between rays
+    resulting in an optical path difference,
+    usually expressed in fractions of the
+    wavelength being analyzed.
+
+Oscilloscope
+    A system in which a supplied signal causes
+    the deflection of the electron beam in a
+    cathode-ray tube, thus forming a visible
+    trace on the phosphor screen of the tube,
+    allowing for examination of signal
+    characteristics.
+
+    See also:
+    - Cathode Ray Tube
+
+Output Power
+    The power measured at the exit of a laser
+    cavity, commonly expressed as minimum
+    output or maximum output.
+    
+    The class designation of a laser is based
+    in part upon this characteristic.
+
+Packing Fraction
+    Considering a cross-section of an optical
+    fiber bundle, it is the ratio of the area
+    of the fibers to the space between the
+    fibers.
+    
+    Bundles comprised of smaller individual
+    fibers have larger packing fractions.
+
+    See also:
+    - Optical Fiber
+
+Parallax
+    Perspective distortion caused by the
+    change in magnification of an object with
+    distance from a lens, making objects
+    farther away seem smaller than those close
+    up.
+
+Parallelism
+    The specification for the deviation in
+    alignment of an optical surface relative
+    to another; it causes angular deviation in
+    optical or mechanical systems.
+
+Paraxial
+    In geometric optics, the design paradigm
+    in which small-angle approximations (e.g.
+    
+    Sinθ=θ) remain accurate.
+
+Paraxial Rays
+    The small bundle of rays that travel
+    through an optical system on- or nearly
+    on-axis.
+    
+    They are useful for first-order
+    approximations and for defining basic
+    system parameters.
+
+    See also:
+    - Marginal Ray
+    - Chief Ray
+
+Parfocality
+    The ability of an imaging or objective
+    lens to maintain focus as the focal length
+    or magnification is changed.
+
+    See also:
+    - Magnification
+
+Parity
+    The orientation of an image after
+    reflection from a surface or refraction
+    through the surface.
+    
+    Also referred to as image handedness.
+
+Peak Transmittance
+    The highest transmittance value for light
+    passed by a filter.
+
+    See also:
+    - Filter
+
+Peak Wavelength
+    The wavelength of light that has the
+    highest transmittance value.
+
+Pellicle Beamsplitter
+    A type of beamsplitter constructed of an
+    ultra-thin nitrocellulose membrane bonded
+    to the lapped edge of an aluminum ring.
+    
+    It neither adds distance to the optical
+    path length, nor creates ghost images due
+    to back reflections.
+    
+    Although a pellicle beamsplitter is more
+    sensitive to vibrations than a standard
+    glass substrate beamsplitter, it does not
+    add chromatic aberration or induce a focal
+    shift.
+
+    See also:
+    - Beamsplitter
+    - Chromatic Focal Shift
+
+Penta Prism
+    A five-sided prism that deviates the ray
+    path by 90°.
+    
+    Since incident light rays are reflected
+    twice to achieve a right angle turn, the
+    image from a penta prism is of the same
+    orientation as the object.
+    
+    It is useful for shortening the length of
+    an assembly.
+
+Periplan Eyepiece
+    An eyepiece consisting of one achromatic
+    doublet plus one plano-convex lens (plano
+    side facing the doublet) as the eye lens
+    and a second plano-convex lens (plano side
+    also facing the doublet) as the field
+    lens.
+    
+    Designed for use with Plan and Semi-Plan
+    objectives.
+
+    See also:
+    - Kellner Eyepiece
+    - Huygenian Eyepiece
+    - Wide-Field Eyepiece
+    - Plan Objective
+    - Semi-Plan Objective
+
+Photodiode
+    An electro-optic component comprised of
+    two electrodes in a semiconductor material
+    where the reverse current varies with
+    illumination.
+    
+    It detects optical power and converts
+    optical power to electrical power.
+
+    See also:
+    - Detectivity
+    - Quantum Efficiency (QE)
+    - Spectral Response
+    - Breakdown Voltage (BDV)
+    - Amplifiers
+    - Shunt
+Resistance
+
+Photosensitivity
+    The measure of how likely a material is to
+    react if exposed to light.
+
+Photovoltaic Effect
+    Light with enough energy excites electrons
+    from the valence to the conduction band,
+    creating a difference in electric
+    potential.
+    
+    This allows detectors to transform light
+    energy into an electrical current.
+
+Pitch
+    In relation to movement, it is the angular
+    rotation about the lateral axis, typically
+    the Y-axis for X-Y-Z configurations.
+    
+    In relation to mechanical components, it
+    is the spacing between consecutive threads
+    on a threaded part.
+    
+    It is the inverse of TPI.
+
+    See also:
+    - Gimbal
+    - Moment Load
+    - Yaw
+    - Roll
+
+Pixel
+    Photosites, or potential wells, on a
+    camera sensor.
+    
+    In a CCD, each pixel's charge is converted
+    to voltage, buffered, and transferred
+    through a single node as an analog signal.
+    
+    In a CMOS sensor, the charge-to-voltage
+    conversion is done at the pixel level.
+
+    See also:
+    - Complementary Metal Oxide Semiconductor (CMOS)
+    - Binning
+    - Jitter
+    - Nyquist Limit
+    - Charge-Coupled Device
+(CCD) , Pixel Clock
+
+Pixel Clock
+    In a CCD camera sensor, it describes the
+    speed of the complementary signals which
+    are used to move the charge packets
+    through the shift registers towards the
+    read out amplifiers.
+    
+    This determines how long it takes to read
+    out the entire sensor, but it is also
+    limited by noise and spillover issues
+    which occur when the packets are
+    transferred too quickly.
+
+    See also:
+    - Pixel
+    - Pixel Depth
+
+Pixel Depth
+    Often referred to as grayscale, the pixel
+    depth represents the number of steps of
+    gray in the image.
+    
+    It is closely related to the minimum
+    amount of contrast detectable by a sensor.
+
+    See also:
+    - Pixel
+    - Pixel Clock
+
+Plan Objective
+    A type of microscope objective that best
+    corrects for color and spherical
+    aberration.
+    
+    It has a flat field in approximately 95%
+    of the field of view.
+
+    See also:
+    - Achromatic Lens
+    - Periplan Eyepiece
+    - Semi-Plan Objective
+
+Plano-Concave (PCV) Lens
+    A type of singlet lens with one planar
+    (flat) surface and one inwardly curved
+    (concave) surface.
+    
+    It has a negative focal length.
+    
+    Optimized for infinite/ infinite
+    conjugates and ideal for image reduction
+    and to spread light.
+
+    See also:
+    - Singlet Lens
+    - Cylinder Lens
+    - Infinite/Infinite Conjugate
+    - Double-Concave (DCV) Lens
+
+Plano-Convex (PCX) Lens
+    A type of singlet lens with one planar
+    (flat) surface and one outwardly curved
+    (convex) surface.
+    
+    It has a positive focal length.
+    
+    Optimized for infinite/ finite conjugate
+    imaging and ideal for autocollimators,
+    light detection, laser collimation and
+    infinity-corrected objectives.
+
+    See also:
+    - Singlet Lens
+    - Cylinder Lens
+    - Infinite/Finite Conjugate
+    - Double-Convex (DCX) Lens
+
+Plastic Molded Aspheric Lenses
+    Lightweight lenses ideal for weight
+    sensitive applications such as wearable
+    devices.
+    
+    Plastic molded aspheres have a lower
+    scratch resistance and thermal stability
+    than molded glass aspheres.
+    
+    However, they are often lighter and less
+    expensive.
+    
+    Browse available lenses here.
+
+Plate Beamsplitter
+    A type of beamsplitter fabricated from
+    glass plates with a partially reflective
+    metallic or dichroic coating.
+    
+    The thin glass substrate means small beam
+    deviation and a very low absorption.
+
+    See also:
+    - Beamsplitter
+    - Cube Beamsplitter
+    - Dichroic Beamsplitter
+    - Anti-Reflection (AR) Coating
+    - Dichroic Coating
+
+Pockels Cell
+    Electro-optical device constructed from a
+    crystal with attached electrodes used to
+    modulate a laser beam.
+    
+    A phase delay of a laser transmitting
+    through the crystal is modulated by
+    applying a variable electric voltage,
+    which causes birefringence.
+    
+    The change is linearly proportional to the
+    electric field, which is known as the
+    Pockels effect.
+    
+    See also Kerr Cell
+
+Pointing Accuracy
+    Measure of the angular difference between
+    the propagating axis (where the laser
+    light is pointing) and the mechanical axis
+    (where the housing is pointing).
+    
+    To measure, spin the housing of the laser
+    and measure the distance and radius to
+    find the angle of error.
+
+    See also:
+    - Bore Sighting
+    - Static Alignment
+
+Poisson's Ratio
+    Ratio of the transverse strain to the
+    axial strain when a material is being
+    stretched.
+    
+    Measure of the Poisson effect.
+
+Polarization
+    A property arising from the wave nature of
+    light.
+    
+    Polarized light consists of waves which
+    oscillate in a defined and predictable
+    manner.
+    
+    The direction in which the electric field
+    vector points as it propagates through
+    space defines the polarization state.
+    
+    If it oscillates in a single plane, the
+    polarization state is linear.
+    
+    If it rotates about the axis of
+    propagation, the polarization state is
+    elliptical or circular.
+
+    See also:
+    - Polarizing Efficiency
+    - Linear Polarizer
+    - Unpolarized
+    - Wire Grid Polarizer
+    - S-Polarization
+    - Circular
+Polarizer , P-Polarization , Extinction Ratio , Non-Polarizing Beamsplitter
+
+Polarizer
+    Polarizing filter placed over the light
+    source in an imaging system to polarize
+    light, used in conjunction with an
+    analyzing filter.
+
+Polarizing Beamsplitter
+    A type of beamsplitter that splits
+    unpolarized light into S- and P-
+    Polarization states.
+
+    See also:
+    - Beamsplitter
+    - S-Polarization
+    - P-Polarization
+
+Polarizing Efficiency
+    A common measure of the polarizing
+    characteristics of a polarizer.
+    
+    100% efficiency is ideal though not
+    feasible due to manufacturing limitations.
+    
+    95 - 99% polarizing efficiency is typical.
+
+    See also:
+    - Polarization
+
+Polychromatic
+    Refers to multiple wavelengths as opposed
+    to monochromatic which refers to only one
+    specific wavelength.
+
+    See also:
+    - Monochromatic
+
+Porro prism
+    A 45-90-45 prism which inverts an image
+    using the hypotenuse face.
+    
+    This will maintain a right-handed image
+    because two reflections occur.
+
+Positional Repeatability
+    The precision with which a positioner can
+    reproduce a given movement or move
+    sequence over a number of attempts.
+    
+    For a repeatability curve, it is the width
+    of the dispersion about the mean value for
+    a large number of positioning trials.
+
+Power
+    A type of surface accuracy specification
+    that applies to curved optical surfaces.
+    
+    It is tested by comparing a curved surface
+    against a reference surface with a highly
+    calibrated radius of curvature.
+    
+    Using the same principle of interference
+    caused by the air gaps between the two
+    surfaces, the interferences pattern of
+    fringes is used to describe the deviation
+    of the test surface from the reference
+    surface.
+    
+    A deviation from the reference piece will
+    create a series of rings, known as
+    Newton’s Rings.
+
+    See also:
+    - Irregularity
+    - Interferometry
+    - Optical Flat
+    - Interference Fringe
+
+Power Density
+    Light intensity per unit area.
+    
+    This measurement is especially important
+    for lasers and high intensity illumination
+    sources.
+
+    See also:
+    - Laser
+    - Laser Damage Threshold
+
+P-Polarization
+    The linear polarization state which is
+    parallel to the plane of incidence.
+    
+    The plane of incidence is normal to the
+    surface or interface upon which light is
+    incident.
+    
+    If the light is incident upon the
+    interface at an angle, the light will be
+    oscillating in such a way as to appear to
+    be “plunging” into the surface.
+
+    See also:
+    - Polarization
+    - Linear Polarizer
+    - Wire Grid Polarizer
+    - S-Polarization
+    - Polarizing Beamsplitter
+
+Precision Glass Molded Aspheric Lenses
+    deal for volume applications, including
+    laser diode collimation, bar code
+    scanners, and optical data storage.
+    
+    They can be molded into small diameters as
+    low as 1mm.
+    
+    Browse available lenses here.
+
+Primary Magnification (PMAG)
+    Ratio of the sensor size on the camera
+    being used to the field of view that the
+    system produces.
+
+Principal Plane
+    A hypothetical plane where incident light
+    rays can be considered to bend due to
+    refraction.
+    
+    Effective Focal Length (EFL) is specified
+    from a principal plane location whereas
+    Back Focal Length (BFL) is specified from
+    the back surface of a lens.
+
+    See also:
+    - Center Thickness (CT)
+    - Back Focal Length (BFL)
+    - Effective Focal Length (EFL)
+    - Conjugate Distance
+
+Prism
+    A solid glass optic ground and polished
+    into geometrical and optically significant
+    shapes.
+    
+    A prism is used for "bending" light within
+    a system, "folding" the system into a
+    smaller space, changing the orientation of
+    an image, as well as combining or
+    splitting optical beams with partial
+    reflecting surfaces.
+
+    See also:
+    - Dove Prism
+    - Right Angle Prism
+    - Porro prism
+    - Penta Prism
+    - Amici Prism
+    - Littrow Dispersion Prism ,
+Trihedral Prism (Corner Cube Retroreflector) , Axicon , Equilateral (Dispersing) Prism , Parity
+
+Progressive Scan
+    A scanning method in which the sensor
+    scans each lines of the field sequentially
+    (rows 1, 2, 3, 4..., etc.).
+    
+    All image data is recorded in a single
+    exposure making this ideal for high speed
+    applications.
+
+    See also:
+    - Frame
+    - Interlaced Scan
+    - Field
+
+Pulse Duration
+    The time duration of an optical pulse
+    emitted from a laser.
+
+    See also:
+    - Frame
+    - Interlaced Scan
+    - Field
+
+Q-Switching
+    Technique for obtaining energetic short
+    (but not ultrashort) pulses from a laser
+    by modulating the intracavity losses.
+    
+    See also Kerr Cell
+
+    See also:
+    - Photodiode
+
+Quantum Efficiency (QE)
+    The intrinsic ability of a detector to
+    convert photons into electrons.
+    
+    It is the ratio of generated electrons to
+    incident photons expressed as a
+    percentage.
+
+    See also:
+    - Photodiode
+
+Quarter Wave Optical Thickness (QWOT)
+    The layer of optical coating that is equal
+    in optical thickness to one quarter the
+    design wavelength.
+    
+    Coating layers at this thickness result in
+    the maximum destructive interference of
+    reflected light, and consequently maximum
+    transmittance through the optic.
+
+    See also:
+    - Half-Wave Optical Thickness (HWOT)
+
+Rack and Pinion
+    A mating gear pair.
+    
+    The rack is a flat, straight bar (track)
+    with teeth to engage (mate) with the gear
+    teeth of the pinion gear, in order to move
+    in a straight-line orientation.
+    
+    Typically the gear teeth are parallel,
+    however for a helical rack the teeth are
+    angled.
+    
+    The pinion is the smaller gear of the two.
+
+    See also:
+    - Helical Gear
+
+Radiant Sensitivity
+    The electrical current generated per watt
+    of incident optical power.
+    
+    Expressed in A/W.
+
+Radius of Curvature
+    The directed distance from the vertex of a
+    surface to the center of curvature.
+
+    See also:
+    - Effective Focal Length (EFL)
+    - Sag
+
+Reference Wavelength
+    A wavelength, for example 632.8nm, for
+    measuring the accuracy of an optical flat.
+    
+    A 1/20λ flat will have a maximum peak to
+    valley deviation of 632.8/20 or 31.64nm.
+    
+    One wave is 632.8nm.
+
+    See also:
+    - Surface Accuracy
+    - Optical Flat
+
+Reflection
+    The change in direction of radiation by a
+    surface without a change in the
+    wavelength.
+
+    See also:
+    - Transmission
+    - Parity
+
+Reflection Factor (Pd)
+    Ratio of the directionally reflected flux
+    to that reflected in the same direction by
+    a perfect reflecting diffuser identically
+    irradiated or illuminated.
+
+Refraction
+    The term given for the bending of light
+    rays that occurs at the interface between
+    two materials with different indices of
+    refraction.
+    
+    A higher index of refraction results in a
+    lower refracted angle.
+
+    See also:
+    - Birefringence
+    - Index of Refraction (n)
+
+Refractometer
+    An instrument used to measure the
+    refractive index of solids and liquids.
+
+Relative Brightness
+    A figure of merit corresponding to the
+    amount of light seen by a viewer through
+    binoculars, obtained by squaring the
+    diameter of the exit pupil in millimeters.
+    
+    A higher number indicates a brighter image
+    in low-light situations.
+
+Relative Efficiency
+    Also referred to as groove efficiency of
+    diffraction gratings, it expresses the
+    energy diffracted into the required order
+    as compared to the efficiency of the
+    coating itself at the same wavelength.
+    
+    For example, a grating that yields 40%
+    diffraction into a specific order at 500nm
+    compared to a mirror with the same coating
+    that reflects 80% of light at 500nm would
+    have a relative efficiency of 50%.
+    
+    Theoretically, the relative efficiency for
+    a grating can appear very high, yet, the
+    actual piece could yield very low
+    diffraction into the desired order if the
+    coating reflectivity is low at the
+    wavelength region of interest.
+
+    See also:
+    - Diffraction Grating
+    - Holographic Grating
+    - Groove Density
+    - Ruled Grating
+
+Relative Illumination (RI)
+    A measure of a lens's uniformity of sensor
+    illumination across the lens's full image
+    circle for a uniform object illumination,
+    defined radially.
+
+Relay Lens
+    A lens or combination of lenses used to
+    transfer an image from one point to
+    another at a specified magnification
+    ratio.
+
+Repeatability
+    In positioning systems, the ability to
+    return to the same position by repeating
+    the same adjustments or by providing the
+    same inputs.
+
+    See also:
+    - Ball Bearing Slide
+
+Resolution
+    The ability to distinguish object detail.
+    
+    It is often expressed in terms of line
+    pairs per millimeter (lp/mm), or microns
+    (μm).
+
+    See also:
+    - Depth of Field (DOF)
+    - Modulation Transfer Function (MTF)
+    - Contrast
+
+Resolving Power
+    The measure of an optical system's ability
+    to produce an image which separates two
+    points or parallel lines on the object.
+
+Responsivity
+    A measure of the effectiveness of a
+    detector in producing an electrical
+    signal.
+    
+    The product of the light input in Watts
+    and the responsivity result in the
+    predicted output of the detector in Amps.
+    
+    It varies with temperature.
+
+Retardance
+    The degree of angular shift in the phase
+    of incoming polarized light.
+
+    See also:
+    - Retarder (Waveplate)
+
+Retarder (Waveplate)
+    A class of materials that exhibit the
+    characteristic of birefringence.
+    
+    Orthogonal components of light that enter
+    a retarder (or waveplate) will experience
+    a relative phase shift upon output.
+    
+    This phase shift is dependent upon the
+    thickness of the retarding medium and the
+    degree of birefringence.
+    
+    The axes of the material exhibit different
+    index characteristics and are generally
+    referred to as the fast (low index) and
+    slow (high index) axes.
+
+    See also:
+    - Circular Polarizer
+    - Retardance
+
+Reticle
+    A planar, or flat, element located at the
+    image plane of an optical system designed
+    to measure the object imaged.
+    
+    The element is typically made of glass,
+    and can have a wide variety of lines,
+    circles, or patterns either etched or
+    chrome deposited on it.
+    
+    Microscope eyepieces accept reticles while
+    magnifiers or comparators accept contact
+    reticles; the former must be placed close
+    to the eye or sensor, whereas, the latter
+    close to the object under inspection.
+
+Retroreflector
+    An optical component designed to reflect
+    light back in the direction from which it
+    originated.
+    
+    A trihedral prism is often used as a type
+    of retroreflector.
+
+    See also:
+    - Dove Prism
+    - Trihedral Prism (Corner Cube Retroreflector)
+
+Right Angle Prism
+    An image reflection prism that deviates
+    the ray path by 90&deg;.
+    
+    It is the most popular type of prism and
+    is often used for image/ beam
+    displacement.
+
+Ring Light Guide
+    An illumination component comprised of a
+    bundle of optical fibers that terminates
+    in a circular pattern, canted slightly
+    inward towards the axis of the circle.
+    
+    It provides intense, near on-axis
+    directional illumination for shadow-free
+    viewing through the ring.
+
+    See also:
+    - Directional Illumination
+
+Ripple
+    In relation to rugate notch filters, it is
+    a small variation in the transmission
+    flatness within a specified spectral
+    region.
+
+    See also:
+    - Rugate Notch Filter
+
+Rise Time
+    The time it takes for a signal to rise
+    from a defined minimum to a fraction of
+    the maximum signal.
+    
+    The low and high points are commonly
+    defined as 10% to 90% of the maximum
+    signal output.
+
+RMS Noise
+    The unwanted part of electrical output
+    that is not consistent with the radiation
+    signal.
+
+Roll
+    In relation to movement, it is the angular
+    rotation about the longitudinal axis
+    (plane of translation), typically the
+    X-axis for X-Y-Z configurations.
+
+    See also:
+    - Gimbal
+    - Moment Load
+    - Yaw
+    - Pitch
+
+Rotating Focusing Mechanism
+    A mechanical method of adjusting the focus
+    of an optical assembly, such as an imaging
+    lens or laser beam expander, in which
+    optical components are rotated during
+    translation.
+    
+    Rotating focusing mechanisms are simple
+    and inexpensive, but they can suffer from
+    image runout or beam wander due to the
+    rotation of the elements.
+    
+    Sliding focusing mechanisms, which
+    translate optical elements without
+    rotation, reduce image runout and beam
+    wander but are typically more expensive
+    due to their more complicated mechanics.
+    
+    Threaded focusing tubes are a common type
+    of rotating focusing mechanism.
+
+Rugate Notch Filter
+    A type of notch filter constructed with a
+    single layer of thin film in which the
+    refractive index varies continuously with
+    position in the direction perpendicular to
+    the substrate plane.
+
+    See also:
+    - Notch Filter
+    - Filter
+    - Ripple
+
+Ruled Grating
+    A type of diffraction grating with a
+    sawtooth profile that is generated by
+    precision mechanical ruling engines.
+    
+    Replicas are then generated by depositing
+    a coating, an epoxy layer, and polished
+    substrate onto the master.
+    
+    Although the gratings are generally cut
+    from larger pieces and have grooves across
+    the entire face, incident light should be
+    confined to 90% of the full face during
+    use.
+
+    See also:
+    - Diffraction Grating
+    - Holographic Grating
+    - Blaze Angle
+    - Grating Equation
+    - Groove Density
+    - Relative
+Efficiency
+
+Runout
+    In a linear stage, any deviation from the
+    desired translation across a flat,
+    straight line.
+
+    See also:
+    - Ball Bearing Stage
+
+Sag
+    The surface profile of a surface.
+    
+    For spherical surfaces, it is calculated
+    from diameter and radius of curvature.
+    
+    For aspheric surfaces, it is calculated
+    from radial distance from the optical
+    axis, curvature, conic constant, and
+    aspheric terms.
+
+    See also:
+    - Radius of Curvature
+
+Sagittal Plane
+    The radial component of the spot (or ray
+    bundle) in the z-plane (perpendicular to
+    image axis) at a given image height.
+
+Scheimpflug Condition
+    Condition wherein both image and object
+    planes are tilted with respect to the
+    optical axis, in order to focus over a
+    depth despite the camera being oblique to
+    the object.
+
+Seamed Edge
+    A type of bevel in which the edge of an
+    optical component is cut and conditioned
+    to remove sharp corners.
+    
+    It is less toleranced than a ground edge.
+
+    See also:
+    - Bevel
+    - Ground Edge
+
+Semi-Plan Objective
+    A type of microscope objective with a
+    semi-planar design where roughly 80% of
+    the objective's field of view appears
+    flat.
+
+    See also:
+    - Achromatic Objective
+    - Periplan Eyepiece
+    - Plan Objective
+
+Sensing Area
+    The size of a camera sensor's active area,
+    specified as the horizontal dimension by
+    the vertical dimension (H x V).
+    
+    It is important in determining the proper
+    lens magnification required to obtain a
+    desired field of view.
+
+    See also:
+    - Magnification
+
+Sensor Format
+    Refers to the horizontal nominal inch-
+    based dimension naming scheme for image
+    sensors, not the physical sensor
+    dimensions above 4/3".
+
+Short Wave Infrared (SWIR)
+    The portion of the electromagnetic
+    spectrum from 900 to 1800nm.
+    
+    Definition may differ by application.
+
+Shortpass Filter
+    A type of filter where the transmission
+    band is a low wavelength range, typically
+    lower than the region blocked.
+
+    See also:
+    - Filter
+    - Longpass Filter
+
+Shunt Resistance
+    The effective resistance of a photodiode.
+    
+    It represents the slope of the I-V curve
+    at the origin (V=0).
+
+    See also:
+    - Photodiode
+
+Shutter Speed
+    Corresponds to the "exposure time" of the
+    sensor chip that controls the amount of
+    light incident on it.
+
+Signal Format
+    The standardization of transmission and
+    reception of analog signals, typically
+    determined by geographical region.
+    
+    Signal parameters include synchronization,
+    number of scanlines, bandwidth, black and
+    blanking levels, frame rate, aspect ratio,
+    etc.
+    
+    Video components of one signal format are
+    not compatible with those of another.
+
+Signal-to-Noise Ratio (SNR)
+    Comparison of signal power to noise power,
+    including dark current and other
+    unwanted/unpredictable fluctuations.
+    
+    In imaging systems, it is expressed in
+    decibel values for analog systems, and
+    "bit" values for digital systems.
+    
+    Industrial cameras have no less than 46dB
+    SNR, yielding 256 steps of contrast in the
+    image.
+    
+    This corresponds to an 8 bit digital
+    signal (28 = 256).
+    
+    Every 6dB of an analog signal converts to
+    1 bit when digitized.
+
+    See also:
+    - Noise Equivalent Power (NEP)
+
+Silicon Detector
+    An electro-optic component that transforms
+    light energy into an electrical current
+    due to the photovoltaic effect.
+
+    See also:
+    - Spectral Response
+
+Singlet Lens
+    A lens with only one optical component
+    such as a PCX, DCX, PCV, or DCV lens.
+
+    See also:
+    - Double Gauss Design
+    - Plano-Convex (PCX) Lens
+    - Meniscus Lens
+    - Double-Concave (DCV) Lens
+    - Double-Convex
+(DCX) Lens , Plano-Concave (PCV) Lens
+
+Sliding Focusing Mechanism
+    Mechanical method of changing the focus of
+    an optical assembly, such as a laser beam
+    expander or imaging lens, in which optical
+    components are not rotated during
+    translation, which minimizes beam wander
+    and image runout.
+    
+    However, this requires more complex
+    mechanics than rotating focusing
+    mechanisms, which rotate the optical
+    elements during translation, typically
+    increasing the cost of sliding focusing
+    mechanisms.
+    
+    Helicoid barrels are a common type of
+    sliding focusing mechanism.
+
+S-Mount
+    A mounting thread denoted by M12 x 0.5mm,
+    with no specified flange distance.
+
+    See also:
+    - CS-Mount
+    - T-Mount
+    - C-Mount
+
+Snell's Law
+    Physical law governing the refraction
+    (bending) of light rays at an interface
+    between two regions of different index of
+    refraction.
+
+Solid State Laser
+    A laser using a transparent substance
+    (crystalline or glass) as the active
+    medium, doped to provide the energy states
+    necessary for lasing.
+    
+    The pumping mechanism is the radiation
+    from a powerful light source, such as a
+    flash lamp.
+
+    See also:
+    - Gas Laser
+    - Laser
+
+Spatial Filter
+    An assembly that is used in conjunction
+    with laser applications to eliminate
+    spatial noise.
+    
+    A pinhole is used to select only the
+    central peak of the intensity pattern from
+    a focused spot.
+    
+    The size of the pinhole is selected based
+    upon the wavelength, objective focal
+    length, and input beam diameter.
+
+Spatial Frequency
+    Method of quantifying object size by a
+    density (e.g.
+    
+    linepairs per millimeter) rather than a
+    size.
+    
+    Allows for more precise way of describing
+    resolution as it considers the necessary
+    space between defects that allows for
+    their detection, as well as describing
+    lens performance by way of a transfer
+    function.
+
+Spatial Mode
+    The configurations of energy storage,
+    relative to the structure of a laser
+    resonator, that define the relative
+    intensity distribution of the laser beam.
+
+    See also:
+    - Laser
+    - Longitudinal Mode Spacing
+
+Spectral Irradiance
+    Irradiance per unit wavelength interval at
+    a given wavelength, expressed in watts per
+    unit area per unit wavelength interval.
+
+Spectral Response
+    Measure of a detector's signal during
+    exposure to radiation of a constant power
+    level and varying wavelength.
+
+Spectrograph
+    An optical instrument for forming the
+    spectrum of a light source and recording
+    it on a film.
+    
+    The dispersing medium may be a prism or a
+    diffraction grating.
+
+    See also:
+    - Ghost Image
+
+Spectrometer
+    An optical instrument used to measure and
+    analyze the distribution of radiation in a
+    particular wavelength region.
+
+    See also:
+    - Ghost Image
+
+Specular
+    A reflection which comes from a surface at
+    an angle equal to the angle of incidence.
+    
+    An example is a high quality mirror.
+
+Spherical Aberration
+    A type of optical aberration in which
+    light rays from the outer portion of a
+    lens focus either in front of
+    (undercorrected) or behind (overcorrected)
+    the focus point of the rays from the
+    center portion of the lens.
+    
+    Unlike most other monochromatic
+    aberrations, spherical aberration appears
+    on-axis as well as off-axis.
+
+    See also:
+    - Double Gauss Design
+    - Aberration
+
+Sphericity
+    A manufacturing specification that
+    tolerances the roundness or deviation from
+    being a perfect sphere of a spherical
+    surface such as a ball lens.
+
+    See also:
+    - Ball Lens
+
+S-Polarization
+    The linear polarization state which is
+    perpendicular to the plane of incidence.
+    
+    The plane of incidence is normal to the
+    surface or interface upon which light is
+    incident.
+    
+    If the light is incident upon the
+    interface at an angle, the light will be
+    oscillating in such a way as to appear to
+    be “skipping” across the surface.
+
+    See also:
+    - Polarization
+    - Linear Polarizer
+    - Wire Grid Polarizer
+    - Polarizing Beamsplitter
+    - P-Polarization
+
+Static Alignment
+    The degree to which a laser beam is
+    aligned parallel to the axis of the
+    housing.
+
+    See also:
+    - Bore Sighting
+    - Pointing Accuracy
+
+Stopband
+    A wavelength interval used to denote a
+    spectral region of energy that is not
+    transmitted by a filter.
+
+    See also:
+    - Filter
+
+Straight Line Accuracy
+    For ball bearing stages, it denotes error
+    in the horizontal plane (left and right
+    movement in direction of travel).
+
+Straightness
+    A measure of linear deviation in a
+    translation stage in the two axes other
+    than the direction of travel.
+    
+    It can be thought of as unintended linear
+    travel in the two axes other than the
+    direction of travel.
+
+Stray Light
+    Energy outside of the field of view of an
+    optical system that scatters off of the
+    edges of an optical or mechanical
+    component and reaches the sensor in the
+    form of background noise.
+    
+    This can decrease an image's contrast by
+    lightening the background.
+
+Strehl Ratio
+    The ratio of the illuminance at the peak
+    of an aberrated diffraction pattern to
+    that at the peak of an aberration-free
+    system.
+
+Stress-Optical Coefficient
+    A proportionality constant used to
+    calculate stress birefringence that
+    depends on glass type, wavelength and
+    temperature.
+
+Surface Accuracy
+    An indication of the peak-to-valley
+    flatness of a surface given in terms of
+    waves (a multiple or part of a reference
+    wavelength).
+    
+    For example, a specification of 1/4 wave
+    means that the flatness of the surface
+    deviates by one quarter of the wavelength
+    used to test the surface.
+    
+    If the wavelength was 550nm, the flatness
+    would be held to within 140nm in order to
+    produce a surface accuracy of 1/4 wave.
+    
+    Also given in RMS (root mean squared)
+    where the peak-to-valley values are
+    squared and then the square root is taken
+    of their mean.
+
+    See also:
+    - Reference Wavelength
+
+Surface Flatness
+    A type of surface accuracy specification
+    that measures the deviation of a flat
+    surface such as that of a mirror, window,
+    prism, or plano-lens.
+    
+    This deviation can be measured using an
+    optical flat.
+    
+    The deviations in flatness are often
+    measured in values of waves (λ), which are
+    multiples of the wavelength of the testing
+    source.
+    
+    One fringe corresponds to ½ of a wave.
+    
+    1λ flatness is considered typical grade,
+    λ/4 flatness is considered to be precision
+    grade, and λ/20 is considered high
+    precision grade.
+
+    See also:
+    - Optical Flat
+
+Surface Quality
+    A specification of allowable flaws in the
+    surface on an optic indicated by a
+    hyphenated number (i.e.
+    
+    60-40).
+    
+    The first number is referred to as the
+    scratch number and quantifies defects of a
+    long nature, such as scratches; the second
+    number is the dig number and indicates
+    round defects such as pits and dents.
+    
+    Scratch-Dig numbers for surface quality
+    conform to the US government standards
+    MIL-PRF-13830B.
+
+Surface Roughness (Surface Finish)
+    Surface roughness, or high frequency
+    error, is a measure of smoothness, or the
+    quality of the polish on an optic’s
+    surface.
+    
+    Surface roughness can effect scatter and
+    the ability to withstand high laser power
+    on the surface.
+    
+    They are usually an unfortunate by-product
+    of the polishing process.
+    
+    Rough surfaces tend to wear faster than
+    smooth surfaces and may not be suitable
+    for some applications, especially those
+    with lasers or intense heat, due to
+    possible nucleation sites that can appear
+    in small cracks or imperfections.
+    
+    Manufacturing tolerances for surface
+    finish range from 50Å RMS for typical
+    quality, 20Å RMS for precision quality,
+    and 5Å RMS for high quality.
+
+Tangent Arm Drive
+    A type of drive mechanism for rotary
+    stages in which angular rotation is
+    controlled by three knobs.
+    
+    The release knob disengages the shaft from
+    the drive, freeing the stage to be rotated
+    by hand to a desired location.
+    
+    The release knob is then tightened to re-
+    engage the drive mechanism and transfer
+    control to the adjustment knob which, when
+    rotated, produces precise angular
+    positioning of the shaft and stage top.
+
+Tangential Plane
+    The component of the spot (or ray bundle)
+    that lies parallel to the tangent line of
+    a circle in the z-plane with diameter of
+    the image height at that field point.
+
+    See also:
+    - Sagittal Plane
+
+Telecentric Lens
+    A type of imaging lens in which the exit
+    pupil is located at infinity.
+    
+    As a result, within a certain range of
+    working distances there is no viewing
+    angle error or magnification error
+    associated with features in the image that
+    are at different heights or angles.
+
+    See also:
+    - Magnification
+
+Telecentricity
+    The ability of a lens to maintain a
+    constant magnification under changes in
+    working distance.
+    
+    Quantified by the maximum angular
+    deviation of a chief ray from parallel to
+    the optical axis.
+
+Tempered Glass
+    Glass that is heat treated after
+    fabrication in order to make it more
+    durable and resistant to heat and thermal
+    shock.
+    
+    Since heat absorbing filters are placed in
+    front of intense light sources, they are
+    typically tempered to increase their
+    resistance to breaking.
+
+Threshold Current
+    The minimum driving current corresponding
+    to lasing threshold at a specified
+    temperature.
+
+    See also:
+    - Dark Current
+
+Throughput
+    Determines the light collecting efficiency
+    of a lens or optical system.
+    
+    High throughput means high transmitted
+    intensity while low throughput means low
+    transmitted intensity.
+
+Thrust Capacity
+    For ball bearing stages, the maximum force
+    or load that can be applied in the
+    direction of travel without damage to
+    positioning stage components.
+    
+    The mounting surface (stage carriage) is
+    pressed against the drive mechanism by
+    means of a spring.
+    
+    As a result, the maximum thrust which the
+    stage assembly can maintain is different
+    when pressing towards the spring versus
+    away from it.
+    
+    When pressing towards the spring, the
+    force is taken up by the drive mechanism
+    (i.e.
+    
+    micrometer).
+    
+    While pulling away, the force is being
+    held in place by the spring.
+    
+    It is specified as Ta and Tb: Ta refers to
+    the load capacity against the micrometer
+    and Tb is the spring load capacity.
+
+    See also:
+    - Ball Bearing Stage
+    - Ball Bearing Slide
+
+Time Delay Integration (TDI)
+    A type of line scanning where multiple
+    linear arrays are placed side by side.
+    
+    After the first array is exposed, the
+    charge is transferred to the neighboring
+    line.
+    
+    When the object moves the distance of the
+    separation between lines, a second
+    exposure is taken on top of the first, and
+    so on.
+    
+    Thus, each line of the object is imaged
+    repeatedly, and the exposures are added to
+    each other.
+
+T-Mount
+    In terms of mechanical components, it is a
+    mounting thread denoted by M42 x 0.75mm.
+    
+    T-mount components have a 42mm diameter
+    screw thread and a 0.75mm thread pitch;
+    the outer diameter is 48mm.
+    
+    In terms of imaging, it is commonly called
+    a T2 thread or simply denoted by M42 x
+    0.75mm.
+    
+    The flange distance varies.
+
+    See also:
+    - CS-Mount
+    - F-Mount
+    - C-Mount
+    - S-Mount
+
+Total Internal Reflection (TIR)
+    The reflection that occurs within a
+    material because the angle of incidence of
+    light striking the boundary surface is in
+    excess of the critical angle.
+
+Transformation Temperature (Tg)
+    The temperature at which glass changes
+    from brittle to viscous-liquid due to
+    thermal stress.
+    
+    Within a well-defined operating
+    temperature, glass does not undergo major
+    changes to its mechanical structure;
+    however, after a specific transformation
+    temperature, it will deform to the point
+    where its original optical properties no
+    longer apply.
+
+Transistor-Transistor Logic (TTL)
+    Refers to a common digital logic family of
+    devices used for control in most modern
+    electronics.
+    
+    TTL signals have two distinct states;
+    "low" and "high." A logic "low"
+    corresponds to a maximum voltage threshold
+    of 0.8V; a "high" corresponds to a voltage
+    greater than 2.5V.
+
+Transmission
+    The amount of radiant energy that passes
+    through a medium; energy that is not
+    reflected or absorbed.
+
+    See also:
+    - Reflection
+
+Transverse Chromatic Aberration (TCA)
+    A type of chromatic aberration where the
+    size of the image changes with wavelength.
+    
+    In other words, when white light is used,
+    red, yellow, and blue wavelengths focus at
+    separate points in a vertical plane.
+
+    See also:
+    - Longitudinal Chromatic Aberration (LCA)
+    - Aberration
+    - Chromatic Focal Shift
+    - Lateral Color
+
+Trihedral Prism (Corner Cube Retroreflector)
+    Also known as a Corner Cube
+    Retroreflector, it has three total
+    internal reflections that reflect incident
+    light back onto itself (to the accuracy
+    specified), regardless of the direction
+    the beam is coming from or the tilt of the
+    prism.
+
+    See also:
+    - Retroreflector
+
+Trinocular Scope
+    A visual device, such as a stereo scope or
+    microscope, that incorporates two eyepiece
+    ports and a vertical third port for
+    alternative image pickup.
+
+Triplet Lens
+    A lens with three optical components such
+    as steinheil triplet or hastings triplet
+    lens.
+
+Tube Lens
+    A lens used to focus an infinity corrected
+    objective to a senor.
+    
+    Typically this is an achromatic lens with
+    a 200mm focal length.
+
+Ultraviolet (UV) Spectrum
+    The wavelength interval of the
+    electromagnetic spectrum that corresponds
+    to ultraviolet light (light that is beyond
+    the visible violet range).
+    
+    UV radiation is often divided into three
+    smaller regions: 320 - 400nm, 280 - 320nm,
+    and 100 - 280nm – defined as UV-A, UV-B,
+    and UV-C, respectively.
+
+    See also:
+    - Visible Spectrum
+    - Infrared (IR) Spectrum
+
+Unpolarized
+    Characterization of light that contains
+    random combinations of x and y components
+    of the electric field.
+    
+    Light from sources such as incandescent
+    and fluorescent bulbs, LED spotlights,
+    fiber optic illuminators and sunlight are
+    all examples of unpolarized light.
+
+    See also:
+    - Polarization
+
+Varifocal
+    Low magnification lens which has a
+    variable focal length, but which requires
+    refocus with adjustment.
+
+Vernier
+    For rotary stages, a scale measuring the
+    amount of angular movement by the drive.
+    
+    Vernier values of resolution are the
+    smallest angular movement that can be
+    measured by the scale.
+
+Vibration Rating
+    Measure of the vibrational durability of a
+    component within a certain range of
+    frequencies, expressed in units of
+    acceleration (G).
+
+Viewing Angle
+    For light control film, the full angle
+    through which the film will transmit
+    light.
+    
+    This value is centered about the louver
+    angle of the film.
+
+    See also:
+    - Louver Angle
+
+Vignetting
+    A fall-off in illumination of the image.
+    
+    This can occur when the sensor is larger
+    than the specified maximum sensor size of
+    the lens is used or can naturally occur
+    due to limitations of the geometry of the
+    system.
+
+VIS Coating
+    BBAR coating optimized for use in the
+    visible spectrum between 425 nm and 675nm.
+    
+    Does not transmit NIR efficiently.
+
+VIS/NIR Coating
+    BBAR coating optimized for use from 425nm
+    to 900nm with good transmission out to
+    1000nm.
+
+Viscosity
+    A measure of a fluid's resistance to flow,
+    or the ratio of shearing stress to the
+    velocity gradient.
+    
+    Water is a low viscosity fluid while
+    peanut butter has a high viscosity.
+
+Visible Spectrum
+    The part of the electromagnetic spectrum
+    from approximately 400 - 750nm.
+
+Warm-Up Time
+    The time required by a laser to reach a
+    designated percentage of the final output
+    power (typically 95%).
+
+    See also:
+    - Laser
+
+Wavelength
+    The peak to peak distance covered by one
+    cycle of an electromagnetic wave.
+    
+    It is inversely related to frequency.
+    
+    The longer the wavelength, the lower the
+    frequency; conversely, the shorter the
+    wavelength, the higher the frequency.
+
+Wedge Angle
+    A small angle of incline between two faces
+    in a wedge element.
+
+White Balance
+    A function in cameras that allows for
+    calibration of colors in different
+    lighting conditions using a reference
+    white.
+
+Wide-Field Eyepiece
+    A type of eyepiece design consisting of
+    one achromatic doublet lens and one plano-
+    convex lens whose convex surfaces face
+    each other.
+    
+    It creates a field of view greater than
+    50°, hence the wide-field denotation in
+    the name.
+    
+    It is designed for use with high power
+    achromatic objectives.
+
+    See also:
+    - Kellner Eyepiece
+    - Achromatic Objective
+    - Huygenian Eyepiece
+    - Periplan Eyepiece
+
+Wire Grid Polarizer
+    A type of polarizer consisting of a thin
+    layer of aluminum MicroWires&trade;
+    sandwiched between two glass windows.
+    
+    It reflects S-polarized light while
+    transmitting P-polarized light and offers
+    a higher transmission level and higher
+    maximum operating temperature compared to
+    glass and film linear polarizers.
+
+    See also:
+    - Polarization
+    - Linear Polarizer
+    - S-Polarization
+    - P-Polarization
+
+Wobble
+    Generally defined with reference to a
+    rotation stage, the measure of the tilting
+    of a rotation stage's platform frequently
+    caused by the axis of rotation not being
+    perpendicular to the platform.
+
+Working Distance (WD)
+    The distance from the front end of a lens
+    system to the object under inspection.
+
+    See also:
+    - Doubler Tube
+    - Depth of Field (DOF)
+
+Working f/#
+    The effective f/# of a lens, taking into
+    consideration the magnification at finite
+    working distances.
+    
+    Calculated by (1+lml)*Infinite f/#, where
+    m is lens magnification.
+
+Worm Gear Drive
+    A type of drive mechanism for rotary
+    stages in which a worm wheel (gear)
+    attached to the stage shaft meshes with
+    the worm drive, whose shaft extends out of
+    the housing.
+    
+    Controlled rotation of the worm shaft
+    creates precise angular rotation of the
+    worm wheel and stage shaft.
+    
+    The worm gear and shaft are matched sets
+    and are pre-loaded to remove backlash.
+
+WRATTEN Filter
+    A type of filter created by dissolving
+    organic dyes in a gelatin material to
+    achieve the desired spectral performance.
+    
+    The gelatin liquid and dye combination is
+    then coated onto a supportive substrate
+    until it has dried.
+    
+    After removal from the substrate, the film
+    is coated with laquer for protection.
+    
+    Although the filters are coated, they
+    should be handled only by the edges or in
+    the corners to avoid damage.
+
+    See also:
+    - Filter
+
+Yaw
+    In relation to movement, it is the angular
+    rotation about the the vertical axis,
+    typically the Z-axis for X-Y-Z
+    configurations.
+
+    See also:
+    - Moment Load
+    - Roll
+    - Pitch
+
+Young's Modulus
+    Unit stress divided by unit deformation,
+    specified as a constant.
+
+Zoom
+    Ability to change the magnification of a
+    lens at a specific working distance, with
+    no refocus in the case of parfocal.
+
+Z-Sectioning
+    Building up a 3D representation of an
+    object by taking multiple images with
+    incremental change in working distance.

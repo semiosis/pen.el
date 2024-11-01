@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes/ws/peniel;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.pen/documents/notes/ws/peniel; /root/.pen/tmp/nsfa--tm-init-pin-root-pen-documents-notes-ws.sh" "#" "<==" "pen-xt"

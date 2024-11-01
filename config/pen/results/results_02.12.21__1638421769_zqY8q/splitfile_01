@@ -1,0 +1,1 @@
+"$(( ($seconds - $(date -d "today" +%s)) / 86400 ))"; echo "$days"

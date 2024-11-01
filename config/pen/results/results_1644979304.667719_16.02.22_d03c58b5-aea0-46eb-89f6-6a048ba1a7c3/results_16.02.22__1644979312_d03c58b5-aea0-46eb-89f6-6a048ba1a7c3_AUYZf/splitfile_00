@@ -1,0 +1,3 @@
+"com.rpl/specter" is a library for creating and running acceptance tests
+for Clojure projects.
+

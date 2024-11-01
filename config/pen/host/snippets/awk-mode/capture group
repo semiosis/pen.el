@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: capture group
+# group: gawk
+# key: (
+# --
+match(\$0, /[0-9.]+\t(.*) \\(([A-Z]+)\\)\$/, a) {
+print a[1]
+}

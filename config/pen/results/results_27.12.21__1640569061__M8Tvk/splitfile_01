@@ -1,0 +1,1 @@
+(setq gnus-inhibit-startup-message t)

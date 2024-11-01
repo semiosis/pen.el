@@ -1,0 +1,2 @@
+
+ cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /usr/local/etc/inspircd/inspircd.conf cp -a ~/repos/

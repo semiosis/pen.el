@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: CodeBlocks
+# contributor: Toptal & contributors
+# key: codeblocks
+# --
+
+### CodeBlocks ###
+
+# specific to CodeBlocks IDE
+*.layout
+*.depend
+# generated directories
+bin/
+obj/

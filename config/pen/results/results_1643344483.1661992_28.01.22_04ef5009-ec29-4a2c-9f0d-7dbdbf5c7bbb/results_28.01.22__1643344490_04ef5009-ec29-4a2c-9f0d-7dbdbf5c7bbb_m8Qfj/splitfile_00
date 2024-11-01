@@ -1,0 +1,10 @@
+"async/go-loop" is a macro that takes a zero-or-more arguments.
+The first argument is a vector of channels.
+The second argument is a vector of transducers.
+The third argument is a vector of functions.
+The fourth argument is a vector of values.
+The fifth argument is a vector of channels.
+The sixth argument is a vector of transducers.
+The seventh argument is a vector of functions.
+The eighth argument is a vector of values.
+The ninth argument

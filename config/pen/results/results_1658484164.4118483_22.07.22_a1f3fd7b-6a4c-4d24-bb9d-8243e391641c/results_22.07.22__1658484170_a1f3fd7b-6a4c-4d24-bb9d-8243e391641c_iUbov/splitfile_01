@@ -1,0 +1,14 @@
+/git
+
+#!/bin/bash
+#export gdb
+
+#set -x
+
+#set -e
+
+#show-trace-vars
+
+#set follow-fork-mode child
+
+#break *

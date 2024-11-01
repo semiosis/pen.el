@@ -1,0 +1,83 @@
+HTTP/1.1 200 OK
+Date: Fri, 24 Mar 2023 20:13:01 GMT
+Server: Apache/2.4.38 (Debian) OpenSSL/1.1.1n
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+Content-Length: 1017
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>GPG keys</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link media="all" href="/common/stallman.css" type="text/css"
+	rel="stylesheet" />
+  <link rel="shortcut icon" href="/common/rms.png" />
+</head>
+
+<body>
+<h1>Richard Stallman's personal site.</h1>
+<h2><a href="/">https://stallman.org</a></h2>
+<p>
+For current political commentary, see
+the <a href="/archives/polnotes.html">daily
+political notes</a>.
+</p>
+<p>
+<a href="/biographies.html#serious">RMS's Bio</a> |
+<a href="http://gnu.org">The GNU Project</a>
+</p>
+
+<hr />
+
+
+<p>
+I'm told that key servers carry many phony keys claiming to be mine.
+Here is info about which keys are really mine.
+</p>
+
+<p>
+Old key (don't use it nowadays)
+</p>
+
+<pre>
+pub   1024D/135EA668 2001-03-05
+uid                  Richard Stallman (Chief GNUisance) &lt;rms@gnu.org&gt;
+sub   1024g/B1B10ED6 2001-03-05
+</pre>
+
+<p>
+<a href="/rms-pubkey.txt">New key</a>
+</p>
+
+<pre>
+pub   4096R/2C6464AF2A8E4C02 2013-07-20
+      Key fingerprint = 6781 9B34 3B2A B70D ED93  2087 2C64 64AF 2A8E 4C02
+uid                  Richard Stallman &lt;rms@gnu.org&gt;
+sub   4096R/2F30A2E162853425 2013-07-20
+</pre>
+
+<p>
+Of course, to be really sure which key is mine,
+you need to get my key fingerprint from me
+or follow a chain of signatures.  If a phony key
+appears to be signed by someone you trust, you should
+see what's up with that person.
+</p>
+
+<p>
+If you want an encrypted response, you must send me your key, because
+I don't use key servers.  I don't promise to keep it permanently if we
+don't talk often, so if you talk with me again a year later you should
+send it again.
+<p>
+Copyright (c) 2013 Richard Stallman
+Verbatim copying and redistribution of this entire page are
+permitted provided this notice is preserved.
+</p>
+</body>
+</html>

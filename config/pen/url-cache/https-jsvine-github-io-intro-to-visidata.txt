@@ -1,0 +1,385 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 5089
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-6a21"
+expires: Fri, 12 Apr 2024 09:24:33 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: D77E:189FA1:7706E0:7DC38B:6618FB78
+Accept-Ranges: bytes
+Date: Fri, 12 Apr 2024 09:16:24 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10330-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1712913385.566068,VS0,VE2
+Vary: Accept-Encoding
+X-Fastly-Request-ID: d595b8840454aa394cf6be57ca777a4960e1fc17
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>An Introduction to VisiData &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/index.html"/>
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="#" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex/" />
+    <link rel="search" title="Search" href="search/" />
+    <link rel="next" title="What Is VisiData?" href="the-big-picture/what-is-visidata/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced/configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>An Introduction to VisiData</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="an-introduction-to-visidata">
+<h1>An Introduction to VisiData<a class="headerlink" href="#an-introduction-to-visidata" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://visidata.org/">VisiData</a> is a free, open-source tool that lets you <strong>quickly open, explore, summarize, and analyze</strong> datasets in your computer’s terminal. VisiData works with CSV files, Excel spreadsheets, SQL databases, and <a class="reference external" href="basics/opening-files/#compatible-filetypes">many other data sources</a>. The interface looks like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv40"> OPERATOR           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">↓count♯</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> percent%</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> histogram                             ~</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                   
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv38-81 inv40"> UNKNOWN            </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║ 23076 │   31.42 │ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ║
+</span><span class="ansi1"></span><span class="ansi1 ansi38-81"></span><span class="ansi1 ansi38-81 ansi40"> SOUTHWEST AIRLINES </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  7752 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">   10.55 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■■■■</span><span class="ansi40">                           </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  5868 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    7.99 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■</span><span class="ansi40">                              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AMERICAN AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  4337 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    5.90 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■</span><span class="ansi40">                                </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2817 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    3.84 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> FEDEX EXPRESS      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2709 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    3.69 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■ </span><span class="ansi40">                                  </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UNITED AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2194 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    2.99 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">                                    </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> US AIRWAYS         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1885 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    2.57 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">                                    </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UPS AIRLINES       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1773 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    2.41 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■</span><span class="ansi40">                                     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> SKYWEST AIRLINES   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1769 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    2.41 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■</span><span class="ansi40">                                     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> JETBLUE AIRWAYS    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1740 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    2.37 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■</span><span class="ansi40">                                     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> EXPRESSJET AIRLINES</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1347 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.83 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■</span><span class="ansi40">                                     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AMERICAN EAGLE AIR…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1041 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.42 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■</span><span class="ansi40">                                      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ENVOY AIR          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   883 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.20 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■  </span><span class="ansi40">                                    </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ALASKA AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   835 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.14 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■</span><span class="ansi40">                                      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> REPUBLIC AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   804 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.09 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■</span><span class="ansi40">                                      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> MESA AIRLINES      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   693 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    0.94 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■</span><span class="ansi40">                                      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AIR WISCONSIN AIRL…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   623 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    0.85 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■</span><span class="ansi40">                                      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PSA AIRLINES       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   577 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    0.79 </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                                        </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PRIVATELY OWNED    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   516 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    0.70 </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                                        </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> PHI INC            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   491 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    0.67 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    </span><span class="ansi40">                                    </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">2› faa-wildlife-strikes_OPERATOR_freq</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                    </span><span class="ansi30 ansi48-68">              </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">Shift+F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">           282 bins </span>
+</pre>
+</div>
+<p>Very quickly, VisiData has become the tool I reach for first when I encounter a new dataset. I think you might enjoy it, too.</p>
+<div class="section" id="about-this-tutorial">
+<h2>About This Tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>This tutorial is not officially affiliated with VisiData, and is not intended as a comprehensive reference. You can learn more about VisiData from these official sources:</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://visidata.org/">VisiData.org</a></li>
+<li><a class="reference external" href="https://github.com/saulpw/visidata">VisiData’s GitHub repository</a></li>
+<li><a class="reference external" href="https://www.patreon.com/saulpw">Saul Pwanson’s Patreon page</a></li>
+<li><a class="reference external" href="https://www.youtube.com/playlist?list=PLxu7QdBkC7drrAGfYzatPGVHIpv4Et46W">Saul Pwanson’s case studies on YouTube</a></li>
+</ul>
+</div>
+<div class="section" id="tutorial-structure">
+<h3>Tutorial Structure<a class="headerlink" href="#tutorial-structure" title="Permalink to this headline">¶</a></h3>
+<p>This tutorial is divided into five sections:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="46%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Section</th>
+<th class="head">Description</th>
+<th class="head">Status</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>The Big Picture</td>
+<td>If you read nothing else …</td>
+<td>Draft complete</td>
+</tr>
+<tr class="row-odd"><td>Basic Usage</td>
+<td>All you need to know to get started</td>
+<td>Draft complete</td>
+</tr>
+<tr class="row-even"><td>Intermediate Usage</td>
+<td>Some of the handiest power-features</td>
+<td>Draft complete</td>
+</tr>
+<tr class="row-odd"><td>Advanced Usage</td>
+<td>How to bend VisiData to your whims</td>
+<td>Four chapters drafted</td>
+</tr>
+<tr class="row-even"><td>Practical Examples</td>
+<td>Step-by-step walkthroughs</td>
+<td>Two examples drafted</td>
+</tr>
+</tbody>
+</table>
+<p>To be notified of new material and/or major updates, <a class="reference external" href="https://buttondown.email/intro-to-visidata">sign up here</a>.</p>
+</div>
+<div class="section" id="tutorial-status">
+<h3>Tutorial Status<a class="headerlink" href="#tutorial-status" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="58%" />
+<col width="42%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Tutorial last updated</td>
+<td><code class="docutils literal notranslate"><span class="pre">2024-03-08</span></code></td>
+</tr>
+<tr class="row-even"><td>VisiData version</td>
+<td><code class="docutils literal notranslate"><span class="pre">3.0.2</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="about-the-author">
+<h2>About the author<a class="headerlink" href="#about-the-author" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.jsvine.com/">Jeremy Singer-Vine</a> is a journalist, computer programmer, and data editor based in New York City. From 2014 until early 2022, he served as the founding <a class="reference external" href="https://github.com/BuzzFeedNews/everything">data editor</a> for <a class="reference external" href="https://www.buzzfeednews.com/">BuzzFeed News</a>. He also publishes <a class="reference external" href="https://tinyletter.com/data-is-plural">Data Is Plural</a>, a weekly newsletter of useful/curious datasets.</p>
+</div>
+<div class="section" id="feedback-questions-corrections">
+<h2>Feedback / questions / corrections?<a class="headerlink" href="#feedback-questions-corrections" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/jsvine/intro-to-visidata/issues">File an issue on GitHub</a> or email the author at <a class="reference external" href="mailto:jsvine&#37;&#52;&#48;gmail&#46;com">jsvine<span>&#64;</span>gmail<span>&#46;</span>com</a>.</p>
+</div>
+<div class="section" id="acknowledgments">
+<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h2>
+<p>Many thanks to the following people for their feedback, suggestions, and fixes: <a class="reference external" href="http://saul.pw/">Saul Pwanson</a>, <a class="reference external" href="https://github.com/anjakefala">Anja Kefala</a>, <a class="reference external" href="https://twitter.com/jtemplon">John Templon</a>, <a class="reference external" href="https://twitter.com/scottpham">Scott Pham</a>, <a class="reference external" href="https://github.com/aborruso">Andrea Borruso</a>, <a class="reference external" href="https://github.com/frosencrantz">Felix Rosencrantz</a>, <a class="reference external" href="https://github.com/cool-RR">Ram Rachum</a>, <a class="reference external" href="https://github.com/ezequiel-garzon">Ezequiel Garzon</a>, <a class="reference external" href="https://github.com/reagle">Joseph Reagle</a>, <a class="reference external" href="https://github.com/daviewales">David Wales</a>, <a class="reference external" href="https://github.com/rschwiebert">&#64;rschwiebert</a>, <a class="reference external" href="https://github.com/dwt">Martin Häcker</a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="the-big-picture/what-is-visidata/" class="btn btn-neutral float-right" title="What Is VisiData?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

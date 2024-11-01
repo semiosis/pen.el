@@ -1,0 +1,5 @@
+
+  (reduce (fn [x [x y]] (cons x y)) [] l))
+
+(defn make-pensieve [coll]
+  (pensieve/make pensieve-state coll))

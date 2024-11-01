@@ -1,0 +1,1351 @@
+$NOTES/ws/ranking/glossary.txt
+
+uninformed search
+    Used when there is no information about
+    the cost of navigating between states.
+
+    Examples:
+    - DFS
+    - IDFS
+    - BFS
+
+informed search
+    Used when we know the cost or have a solid
+    estimate of the cost between states.
+
+    Examples:
+    - UCF
+    - A*
+    - IDA*
+
+Best-first search
+    [graph search algorithm]
+
+    - Orders all partial solutions (states)
+      according to some heuristic, then
+    - expands the most promising node chosen
+      according to a specified rule.
+
+    Examples
+    - A*
+
+full-text extraction
+    - Extracting entities
+      Such as companies, people, dollar
+      amounts, key initiatives, etc.
+
+    - Categorizing content
+      Positive or negative (e.g. sentiment
+      analysis), by function, intention or
+      purpose, or by industry or other
+      categories for analytics and trending.
+
+    - Clustering content
+      To identify main topics of discourse
+      and/or to discover new topics.
+
+    - Fact extraction
+      To fill databases with structured
+      information for analysis, visualization,
+      trending, or alerts.
+
+    - Relationship extraction
+      To fill out graph databases to explore
+      real-world relationships.
+
+semantic search
+    Not only find keywords, but to determine
+    the intent and contextual meaning of the
+    words a person is using for search.
+
+    For a given query sentence, find the most
+    similar sentence in the corpus.
+
+Dewey Decimal Classification
+Dewey Decimal System
+    A proprietary library classification
+    system first published in the United
+    States by Melvil Dewey in 1876.
+
+    Organises the contents of a library based
+    on the division of all knowledge into 10
+    groups, with each group assigned 100
+    numbers.
+
+content-addressable storage
+content-addressed storage
+CAS
+    A way to store information so it can be
+    retrieved based on its content, not its
+    location.
+
+information ordering
+    Order sentences by the date of the
+    document (for summarizing news).
+
+    For coherence:
+    - Choose orderings that make neighboring
+      sentences similar (by cosine).
+    - Choose orderings in which neighboring
+      sentences discuss the same en<ty
+      (Barzilay and Lapata 2007)
+
+sentence realization
+    [#summarization]
+
+    Basic:
+    - Keep the original sentence.
+
+cosine similarity
+    A metric used to measure how similar the
+    documents are irrespective of their size.
+
+    Mathematically, it measures the cosine of
+    the angle between two vectors projected in
+    a multi-dimensional space.
+
+    The smaller the angle, higher the cosine
+    similarity.
+
+search content processing
+    basics
+    - stemming root words,
+    - expanding words via lemmatization,
+    - implementing synonyms, and
+    - tokenization.
+
+    These techniques can be very powerful, but
+    they do not identify user intent.
+
+query tagging
+    https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/38276.pdf
+
+typeahead search
+autocomplete
+incremental search
+search-as-you-type
+inline search
+word wheeling
+    A method for progressively searching for
+    and filtering through text.
+
+    A method of database searching that
+    produces an instantly refreshed list of
+    results as the user enters each character
+    of the term.
+
+faceted classification
+    A classification scheme used in organizing
+    knowledge into a systematic order.
+
+    A faceted classification uses semantic
+    categories, either general or subject-
+    specific, that are combined to create the
+    full classification entry.
+
+facet
+dimension
+    Examples:
+    - paths,
+    - concepts,
+    - persons,
+    - locations, or
+    - organizations
+
+faceted
+faceted search
+interactive filters
+    A technique which involves augmenting
+    traditional search techniques with a
+    faceted navigation system, allowing users
+    to narrow down search results by applying
+    multiple filters based on faceted
+    classification of the items.
+
+    A faceted classification system classifies
+    each information element along multiple
+    explicit dimensions, called facets,
+    enabling the classifications to be
+    accessed and ordered in multiple ways
+    rather than in a single, pre-determined,
+    taxonomic order.
+
+    Facets correspond to properties of the
+    information elements.
+
+    They are often derived by analysis of the
+    text of an item using entity extraction
+    techniques or from pre-existing fields in
+    a database such as author, descriptor,
+    language, and format.
+
+    Thus, existing web-pages, product
+    descriptions or online collections of
+    articles can be augmented with
+    navigational facets.
+
+taxonomic
+    Concerned with the classification of
+    things, especially organisms.
+
+collection
+document collection
+
+corpus
+corpora
+text corpus
+    [#nlp]
+
+    A language resource consisting of a large
+    and structured set of texts (nowadays
+    usually electronically stored and
+    processed).
+
+    In corpus linguistics, they are used to do
+    statistical analysis and hypothesis
+    testing, checking occurrences or
+    validating linguistic rules within a
+    specific language territory.
+
+    It might just be a list of sentences.
+
+    Example:
+        sp +/"corpus = \['A man is eating food.'," "$HOME/var/smulliga/source/git/UKPLab/sentence-transformers/examples/applications/semantic-search/semantic_search.py"
+
+full-text search
+    [#text retrieval]
+
+    Refers to techniques for searching a
+    single computer-stored document or a
+    collection in a full-text database.
+
+    Full-text search is distinguished from
+    searches based on metadata or on parts of
+    the original texts represented in
+    databases.
+
+BTE
+Body Text Extraction
+    [algorithm]
+
+    For extracting the main body text of a web
+    page and avoiding the surrounding
+    irrelevant information.
+
+GLIMPSE
+GLobal IMPlicit SEarch
+    https://en.wikipedia.org/wiki/GLIMPSE
+
+    Open source search engine.
+    Very easy to use.
+    Has emacs integration.
+
+Xapian
+    Free and open-source probabilistic IR
+    library, released under the GNU General
+    Public License.
+
+    It is a full-text search engine library
+    for programmers.
+
+$NOTES/ws/neural-ir/glossary.txt
+
+https://nlp.stanford.edu/IR-book/html/htmledition/index-1.html
+
+contextual search
+    A form of optimizing web-based search
+    results based on context provided by the
+    user and the computer being used to enter
+    the query.
+
+discounted cumulative gain
+DCG
+    [#IR]
+    [measure of ranking quality]
+
+    It is often used to measure effectiveness
+    of web search engine algorithms or related
+    applications.
+
+    Using a graded relevance scale of
+    documents in a search-engine result set,
+    DCG measures the usefulness, or gain, of a
+    document based on its position in the
+    result list.
+
+    The gain is accumulated from the top of
+    the result list to the bottom, with the
+    gain of each result discounted at lower
+    ranks.
+
+Information retrieval
+IR
+    The science of searching for information
+    in documents, searching for documents
+    themselves, searching for metadata which
+    describe documents, or searching within
+    hypertext collections such as the Internet
+    or intranets.
+
+Symbolic Information Retrieval system
+Symbolic IR system
+    Examples
+        Solr/Elasticsearch
+
+    [[https://hanxiao.github.io/2018/01/10/Build-Cross-Lingual-End-to-End-Product-Search-using-Tensorflow/][Building Cross-Lingual End-to-End Product Search with Tensorflow  Han Xiao Tech Blog - Deep Learning, Tensorflow, Machine Learning and more!]]
+
+Query embeddings
+    An unsupervised deep learning based
+    system.
+
+distributional hypothesis
+    [#nlp]
+    [#ir]
+
+    Words that are close in meaning will occur
+    in similar pieces of text (the
+    distributional hypothesis).
+
+latent semantic analysis
+LSA
+    [#nlp]
+    [#distributional semantics]
+
+    Analyse relationships between a set of
+    documents and the terms they contain by
+    producing a set of concepts related to the
+    documents and terms.
+
+    Assumes the distributional hypothesis.
+
+    A matrix containing word counts per
+    paragraph (rows represent unique words and
+    columns represent each paragraph) is
+    constructed from a large piece of text and
+    a mathematical technique called SVD is
+    used to reduce the number of rows while
+    preserving the similarity structure among
+    columns.
+
+    Paragraphs are then compared by taking the
+    cosine of the angle between the two
+    vectors (or the dot product between the
+    normalizations of the two vectors) formed
+    by any two columns.
+
+    Values close to 1 represent very similar
+    paragraphs while values close to 0
+    represent very dissimilar paragraphs.
+
+Probabilistic latent semantic analysis
+PLSA
+probabilistic latent semantic indexing
+PLSI
+    [#information retrieval]
+
+    An IR technique using latent semantic
+    structure (see LSA).
+
+    Statistical technique for the analysis of
+    two-mode and co-occurrence data.
+
+    One can derive a low-dimensional
+    representation of the observed variables
+    in terms of their affinity to certain
+    hidden variables, just as in latent
+    semantic analysis, from which PLSA
+    evolved.
+
+    Compared to standard LSA which stems from
+    linear algebra and downsizes the
+    occurrence tables (usually via a SVD),
+    probabilistic LSA is based on a mixture
+    decomposition derived from a latent class
+    model.
+
+mixture model
+    [#ir]
+    [probabilistic model]
+
+    Represents the presence of subpopulations
+    within an overall population, without
+    requiring that an observed data set should
+    identify the sub-population to which an
+    individual observation belongs.
+
+    Formally a mixture model corresponds to
+    the mixture distribution that represents
+    the probability distribution of
+    observations in the overall population.
+
+    However, while problems associated with
+    "mixture distributions" relate to deriving
+    the properties of the overall population
+    from those of the sub-populations,
+    "mixture models" are used to make
+    statistical inferences about the
+    properties of the sub-populations given
+    only observations on the pooled
+    population, without sub-population
+    identity information.
+
+mixture decomposition
+    See "mixture model".
+
+learning to rank
+    [#paper]
+
+    https://medium.com/@nikhilbd/pointwise-vs-pairwise-vs-listwise-learning-to-rank-80a8fe8fadfd
+
+    vim +/"\*   Commonly used loss functions including pointwise, pairwise, and listwise" "$MYGIT/tensorflow/ranking/README.md"
+
+    loss functions
+        - pointwise
+        - pairwise
+        - listwise
+
+pointwise
+    [#learning to rank]
+    [approach of loss function]
+
+    Look at a single document at a time in the
+    loss function.
+
+    They essentially take a single document
+    and train a classifier / regressor on it
+    to predict how relevant it is for the
+    current query.
+
+    The final ranking is achieved by simply
+    sorting the result list by these document
+    scores.
+
+    The score for each document is independent
+    of the other documents that are in the
+    result list for the query.
+
+    All the standard regression and
+    classification algorithms can be directly
+    used for pointwise learning to rank.
+
+suffix tree
+PAT tree
+    A compressed trie containing all the
+    suffixes of the given text as their keys
+    and positions in the text as their values.
+
+    Suffix trees allow particularly fast
+    implementations of many important string
+    operations.
+
+    Primarily used for indexing and searching
+    strings, occupy a central position in text
+    compression, text algorithmics, and
+    applications in the realm of biological
+    sequence comparison, and motif discovery.
+
+    https://humanreadablemag.com/issues/0/articles/the-wonders-of-the-suffix-tree-through-the-lens-of-ukkonen’s-algorithm/
+
+universal code
+universal code for integers
+    [#data compression]
+    [prefix code]
+
+    Maps the positive integers onto binary
+    codewords, with the additional property
+    that whatever the true probability
+    distribution on integers, as long as the
+    distribution is monotonic (i.e., p(i)
+    ≥ p(i + 1) for all positive i) , the
+    expected lengths of the codewords are
+    within a constant factor of the expected
+    lengths that the optimal code for that
+    probability distribution would have
+    assigned.
+
+    Asymptotically optimal if the ratio
+    between actual and optimal expected
+    lengths is bounded by a function of the
+    information entropy of the code that, in
+    addition to being bounded, approaches 1 as
+    entropy approaches infinity.
+
+variable-length quantity
+VLQ
+    [universal code]
+
+    Uses an arbitrary number of binary octets
+    (eight-bit bytes) to represent an
+    arbitrarily large integer.
+
+    A VLQ is essentially a base-128
+    representation of an unsigned integer with
+    the addition of the eighth bit to mark
+    continuation of bytes.
+
+continuation bit
+continuing bit
+    See "variable-length quantity".
+
+inverted index
+inverted file
+    A dictionary of terms (sometimes also
+    referred to as a vocabulary or lexicon.
+
+    For each term there is a postings list.
+
+retrieval function
+    One of the most important components in an
+    IR system.
+
+    For a query submitted by the user,
+    retrieval function is used to measure the
+    similarity between query and each document
+    in the collection.
+
+Okapi BM25
+BM25
+    [bag-of-words retrieval function]
+
+    Ranks a set of documents based on the
+    query terms appearing in each document,
+    regardless of their proximity within the
+    document.
+
+    It is a family of scoring functions with
+    slightly different components and
+    parameters.
+
+    ewwlinks +/"BM25 The Next Generation of Lucene Relevance" "https://opensourceconnections.com/blog/2015/10/16/bm25-the-next-generation-of-lucene-relevation/"
+
+Query autocompletion
+    [#steps of search process]
+
+    Suggest query based on first characters
+    typed.
+
+Query filtering
+    [#steps of search process]
+
+    Token removal, stemming and lowering.
+
+Query augmentation
+    Adding synonyms and acronym
+    contraction/expansion.
+
+Document scoring
+    Score(document | query) as per scoring
+    mechanism which is mostly BM25.
+
+scoring function
+
+Scoring and ranking
+    - Assign a score to each doc
+    - Pick K highest scoring docs
+
+relevance feedback
+    Feature of some IR systems.
+
+    Take the results that are initially
+    returned from a given query, to gather
+    user feedback, and to use information
+    about whether or not those results are
+    relevant to perform a new query.
+
+    Three types of feedback:
+    - explicit feedback,
+    - implicit feedback, and
+    - blind feedback.
+
+explicit feedback
+    Obtained from assessors of relevance
+    indicating the relevance of a document
+    retrieved for a query.
+
+    This type of feedback is defined as
+    explicit only when the assessors (or other
+    users of a system) know that the feedback
+    provided is interpreted as relevance
+    judgments.
+
+    Users may indicate relevance explicitly
+    using a binary or graded relevance system.
+
+    Binary relevance feedback indicates that a
+    document is either relevant or irrelevant
+    for a given query.
+
+    Graded relevance feedback indicates the
+    relevance of a document to a query on a
+    scale using numbers, letters, or
+    descriptions (such as "not relevant",
+    "somewhat relevant", "relevant", or "very
+    relevant")
+
+implicit feedback
+    Inferred from user behavior, such as
+    noting which documents they do and do not
+    select for viewing, the duration of time
+    spent viewing a document, or page browsing
+    or scrolling actions .
+
+    There are many signals during the search
+    process that one can use for implicit
+    feedback and the types of information to
+    provide in response
+
+    The key differences of implicit relevance
+    feedback from that of explicit include :
+
+    - the user is not assessing relevance for
+      the benefit of the IR system, but only
+      satisfying their own needs and
+
+    - the user is not necessarily informed
+      that their behavior (selected documents)
+      will be used as relevance feedback
+
+pseudo feedback
+blind feedback
+    Algorithm:
+        Take the results returned by initial
+        query as relevant results (only top k
+        with k being between 10 and 50 in most
+        experiments).
+
+        Select top 20-30 (indicative number)
+        terms from these documents using for
+        instance tf-idf weights.
+
+        Do Query Expansion, add these terms to
+        query, and then match the returned
+        documents for this query and finally
+        return the most relevant documents.
+
+content selection technique
+    Examples:
+    - TFIDF
+
+tf-idf
+TFIDF
+TF*IDF
+    [content selection technique]
+
+    https://manticoresearch.com/2019/04/09/tf-idf-in-a-nutshell/
+
+    A rough way of approximating how users
+    value the relevance of a text match.
+
+    The intuition underlying TF*IDF is pretty
+    straight-forward and relies on the two
+    principal factors embedded in the name of
+    the scoring formula that tend to
+    correspond to how human minds tend to
+    evaluate search relevance.
+
+    Measures the relative concentration of a
+    term in a given piece of text.
+
+    If “dog” is common in this article, but
+    relatively rare elsewhere, then the TF*IDF
+    score will be high.
+
+    This article ought to be thought of as
+    very relevant to the search term “dog.”
+
+    If “dog” occurs once here, but very
+    prominently in many other docs, its score
+    will be relatively low.
+
+    Uses:
+    - Keyword extraction
+
+Term Frequency
+TF
+    How often does “dog” occur in the article?
+    3 times? 10 times?
+
+document frequency
+DF
+    Measures how many docs a term appears in.
+
+Inverse Document Frequency
+idf
+    Inverse document frequency (1/df) then
+    measures how special the term is.
+
+    Is the term “dog” very rare (occurs in
+    just one doc)?
+
+    Or relatively common (occurs in nearly all
+    the docs)?
+
+Okapi BM25
+    (BM is an abbreviation of best matching)
+
+    A ranking function used by search engines
+    to estimate the relevance of documents to
+    a given search query.
+
+    It is based on the probabilistic retrieval
+    framework developed in the 1970s and 1980s
+    by Stephen E. Robertson, Karen Spärck
+    Jones, and others.
+
+    BM25 is a bag-of-words retrieval function
+    that ranks a set of documents based on the
+    query terms appearing in each document,
+    regardless of their proximity within the
+    document.
+
+    It is a family of scoring functions with
+    slightly different components and
+    parameters.
+
+PageRank
+PR
+    [algorithm]
+
+    An algorithm used by Google Search to rank
+    web pages in their search engine results.
+
+    PageRank was named after Larry Page, one
+    of the founders of Google.
+
+    PageRank is a way of measuring the
+    importance of website pages.
+
+    Used to calculate the weight for web
+    pages.
+
+    We can take all web pages as a big
+    directed graph.
+
+    In this graph, a node is a webpage.
+
+    If webpage A has the link to web page B,
+    it can be represented as a directed edge
+    from A to B.
+
+    After we construct the whole graph, we can
+    assign weights for web pages.
+
+Posting
+    Document ID
+
+    Each item in a postings list is called a posting.
+
+Postings list
+    Set of document ids.
+
+    Each vocabulary term has a postings list
+    with the documents in the collection.
+
+    For each term there is a list that records
+    which documents the term occurs in.
+
+    It may also contain the positions in the
+    document.
+
+Inverted index
+    A dictionary of terms each of which is
+    associated with a postings list.
+
+    It goes without saying that an inverted
+    index is built in advance to support
+    future queries.
+
+Stop words
+    Most frequent words.
+
+    Semantically non-selective words.
+
+skip list
+    A data structure that allows fast search
+    within an ordered sequence of elements.
+    Fast search is made possible by
+    maintaining a linked hierarchy of
+    subsequences, with each successive
+    subsequence skipping over fewer elements
+    than the previous one
+
+task: Automatically ranking documents
+    Key problem in IR.
+
+Document Length normalisation
+Length normalisation
+    [#information retrieval]
+
+    Fairly rank documents over a collection
+    without biasing our results based upon the
+    attributes of a given document.
+
+    Penalise document ranks based upon their
+    attributes, such as length.
+
+    Automatic IR systems have to deal with
+    documents of varying lengths in a text
+    collection.
+
+    Document length normalization is used to
+    fairly retrieve documents of all lengths.
+
+VSM
+Vector space model
+    Represent (embed) words in a continuous
+    vector space where semantically similar
+    words are mapped to nearby points ('are
+    embedded nearby each other').
+
+    VSMs have a long, rich history in NLP, but
+    all methods depend in some way or another
+    on the Distributional Hypothesis.
+
+    The different approaches that leverage
+    this principle can be divided into two
+    categories:
+    1. count-based methods
+       e.g. Latent Semantic Analysis
+    2. predictive methods
+       e.g. neural probabilistic language
+       models
+
+relevance
+    Denotes how well a retrieved document or
+    set of documents meets the information
+    need of the user.
+
+    Relevance may include concerns such as
+    timeliness, authority or novelty of the
+    result.
+
+document retrieval
+    [IR problem]
+
+    The matching of some stated user query
+    against a set of free-text records.
+
+    These records could be any type of mainly
+    unstructured text, such as newspaper
+    articles, real estate records or
+    paragraphs in a manual.
+
+    User queries can range from multi-sentence
+    full descriptions of an information need
+    to a few words.
+
+    Sometimes referred to as, or as a branch
+    of, text retrieval.
+
+    Text retrieval is a branch of IR where the
+    information is stored primarily in the
+    form of text.
+
+    Text databases became decentralized thanks
+    to the personal computer and the CD-ROM.
+
+    Text retrieval is a critical area of study
+    today, since it is the fundamental basis
+    of all internet search engines.
+
+collaborative filtering
+    [IR problem]
+
+    A family of algorithms where there are
+    multiple ways to find similar users or
+    items and multiple ways to calculate
+    rating based on ratings of similar users.
+
+    Depending on the choices you make, you end
+    up with a type of collaborative filtering
+    approach.
+
+edit-distance
+    A parameterizable metric calculated with a
+    specific set of allowed edit operations,
+    and each operation is assigned a cost
+    (possibly infinite).
+
+    This is further generalized by DNA
+    sequence alignment algorithms such as the
+    SmithWaterman algorithm, which make an
+    operation's cost depend on where it is
+    applied.
+
+indexing latency
+    The amount of time it takes for new
+    information to become available in the
+    search index.
+
+    This metric is important because it
+    determines how quickly new results show
+    up.
+
+    Not all search systems need to update
+    their contents quickly.
+
+    In a warehouse inventory system, for
+    example, one daily update to its search
+    index might be acceptable.
+
+    At Twitter -- where people are constantly
+    looking for the answer to whats happening
+    -- real-time search is a must.
+
+Boolean retrieval
+Boolean model of information retrieval
+BIR
+Standard Boolean model of information retrieval
+    Retrieval is based on whether or not the
+    documents contain the query terms.
+
+    A classical IR model and, at the same
+    time, the first and most-adopted one.
+
+    It is used by many IR systems to this day.
+
+    The BIR is based on Boolean logic and
+    classical set theory in that both the
+    documents to be searched and the user's
+    query are conceived as sets of terms (a
+    bag-of-words model).
+
+skip pointers
+    Effectively shortcuts that allow us to
+    avoid processing parts of the postings
+    list that will not figure in the search
+    results.
+
+    The two questions are then where to place
+    skip pointers and how to do efficient
+    merging using skip pointers.
+
+    Postings lists with skip pointers.
+
+    https://nlp.stanford.edu/IR-book/html/htmledition/faster-postings-list-intersection-via-skip-pointers-1.html
+
+Phrase queries
+    The representation of documents as vectors
+    is fundamentally lossy: the relative order
+    of terms in a document is lost in the
+    encoding of a document as a vector.
+
+    Even if we were to try and somehow treat
+    every biword as a term (and thus an axis
+    in the vector space), the weights on
+    different axes not independent: for
+    instance the phrase German shepherd gets
+    encoded in the axis german shepherd, but
+    immediately has a non-zero weight on the
+    axes german and shepherd.
+
+    Further, notions such as idf would have to
+    be extended to such biwords.
+
+    Thus an index built for vector space
+    retrieval cannot, in general, be used for
+    phrase queries.
+
+    Moreover, there is no way of demanding a
+    vector space score for a phrase query --
+    we only know the relative weights of each
+    term in a document.
+
+tolerant retrieval
+    What to do if there is no exact match.
+    between query term and document term.
+
+    Robustness to typographical errors in the
+    query, as well as alternative spellings.
+
+    ewwlinks +/"Dictionaries and tolerant retrieval" "https://nlp.stanford.edu/IR-book/html/htmledition/dictionaries-and-tolerant-retrieval-1.html"
+
+imprecisely posed queries
+    - spelling errors
+      - phoenetic search
+
+permuterm index
+    Enables us to identify the original
+    vocabulary terms matching a wildcard
+    query, we look up these terms in the
+    standard inverted index to retrieve
+    matching documents.
+
+    We can thus handle any wildcard query with
+    a single * symbol.
+
+    The various rotations of each term
+    (augmented with $) all link to the
+    original vocabulary term.
+
+    for each term add $:
+      hello -> hello$
+    Then permute the terms.
+
+    Seeking n$m* (via a search tree) leads to
+    rotations of (among others) the terms man
+    and moron.
+
+Delta encoding
+    A way of storing or transmitting data in
+    the form of differences (deltas) between
+    sequential data rather than complete
+    files; more generally this is known as
+    data differencing.
+
+    Delta encoding is sometimes called delta
+    compression, particularly where archival
+    histories of changes are required (e.g.,
+    in revision control software).
+
+automatic query reformulation
+AQR
+
+query reformulation
+QR
+interactive query reformulation
+IQR
+    https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/aris.2011.1440450111
+
+    As opposed to "AQR".
+
+Query expansion
+QE
+    the process of reformulating a given query
+    to improve retrieval performance in IR
+    operations, particularly in the context of
+    query understanding.
+
+    In the context of search engines, query
+    expansion involves evaluating a user's
+    input (what words were typed into the
+    search query area, and sometimes other
+    types of data) and expanding the search
+    query to match additional documents.
+
+    Query expansion involves techniques such
+    as:
+    - Finding synonyms of words, and searching
+      for the synonyms as well.
+    - Finding semantically related words (e.g.
+      antonyms, meronyms, hyponyms,
+      hypernyms).
+    - Finding all the various morphological
+      forms of words by stemming each word in
+      the search query.
+    - Fixing spelling errors and automatically
+      searching for the corrected form or
+      suggesting it in the results.
+    - Re-weighting the terms in the original
+      query.
+
+need
+user need
+information need
+
+non-selective
+    Not useful for selecting documents
+    matching a user need.
+
+evaluate
+    To ascertain the value or amount of
+    something or to appraise it.
+
+    Involves identifying suitable success
+    criteria that can be measured in some way.
+
+    In IR systems, when evaluating a search
+    system one must also incorporate users and
+    user interaction into evaluation studies
+    and the relationship between results of
+    laboratory-based vs. operational tests
+
+token normalization
+    The process of canonicalizing tokens so
+    that matches occur despite superficial
+    differences in the character sequences of
+    the tokens.
+
+    The most standard way to normalize is to
+    implicitly create equivalence classes,
+    which are normally named after one member
+    of the set.
+
+qrel
+    A relevant document.
+
+    'qrels' is a list of relevant documents.
+
+test collection
+    Usually consists of:
+    - a document collection,
+    - a set of topics that describe a user's
+      information need, and
+    - a set of relevance judgments indicating
+      which documents in the collection are
+      relevant to each topic.
+
+    ewwlinks +/"test collections" "http://informationr.net/ir/18-2/paper582.html#.X64fep0zZQI"
+
+evaluation measure
+    - set-based
+
+set-based
+set-based measure
+    Examples:
+    - precision, and
+    - recall.
+
+    Documents in the ranking are treated as
+    unique and the ordering of results is
+    ignored.
+
+    See "precision vs recall".
+
+precision vs recall
+recall vs presicion
+    Precision and recall hold an approximate
+    inverse relationship: higher precision is
+    often coupled with lower recall.
+
+    However, this is not always the case as it
+    has been shown that precision is affected
+    by the retrieval of non-relevant
+    documents; recall is not.
+
+    Often preference is given to either
+    precision or recall.
+
+    For example, in Web search the focus is
+    typically on obtaining high precision by
+    finding as many relevant documents in the
+    top n results.
+
+    However, there are certain domains, such
+    as patent search, where the focus is on
+    finding all relevant documents through an
+    exhaustive search.
+
+precision
+    Measures the fraction of retrieved
+    documents that are relevant; recall
+    measures the fraction of relevant
+    documents that are retrieved.
+
+    Simple to compute because one only
+    considers the set of retrieved documents
+    (as long as relevance can be judged).
+
+recall
+    Harder to compute than precision because
+    it requires comparing the set of retrieved
+    documents with the entire collection,
+    which is impossible in many cases (e.g.,
+    for Web search).
+
+    In this situation techniques, such as
+    pooling, are used.
+
+    Scores for precision and recall are often
+    combined into a single measure to allow
+    the comparison of IR systems.
+
+    Example measures include the e and f
+    measures (van Rijsbergen 1979).
+
+pooling
+query pooling
+    [method]
+
+    A standard approach to extract a
+    query‐biased sample of documents.
+
+    In this method, each query is sent to
+    different search systems, and the
+    top‐ranked documents supplied by the
+    systems are merged into a pool of
+    documents.
+
+    The pooled documents become candidates to
+    be judged for relevance
+
+Maximal Margin Relevance
+Maximal Marginal Relevance
+MMR
+    Tries to reduce the redundancy of results
+    while at the same time maintaining query
+    relevance of results for already ranked
+    documents/phrases etc.
+
+    http://webcache.googleusercontent.com/search?q=cache:https://medium.com/tech-that-works/maximal-marginal-relevance-to-rerank-results-in-unsupervised-keyphrase-extraction-22d95015c7c5
+
+    Lets say your final keyPhrases are ranked
+    like Good Product, Great Product, Nice
+    Product, Excellent Product, Easy Install,
+    Nice UI, Light weight etc.
+
+    But there is an issue with this approach,
+    all the phrases like good product, nice
+    product, excellent product are similar and
+    define the same property of the product
+    and are ranked higher.
+
+    Suppose we have a space to show just 5
+    keyPhrases, in that case, we don't want to
+    show all these similar phrases.
+
+    You want to properly utilize this limited
+    space such that the information displayed
+    by the Keyphrases about the documents is
+    diverse enough.
+
+    Similar types of phrases should not
+    dominate the whole space and users can see
+    a variety of information about the
+    document.
+
+    MMR selects the phrase in the final
+    keyphrases list according to a combined
+    criterion of query relevance and novelty
+    of information.
+
+Probabilistic latent maximal marginal relevance
+
+KeyPhrase
+    Like a keyword, but a phrase.
+
+KeyPhrase extraction
+    Different approaches:
+    - TextRank,
+    - RAKE,
+    - POS tagging,
+    - etc.. (to name a few)
+    to extract keywords from the documents,
+    which provides phrases along with score.
+
+    This score is used as the ranking of the
+    phrases for that document.
+
+KeyBERT
+    Find the sub-phrases in a document that
+    are the most similar to the document
+    itself.
+
+lookahead
+    [backtracking algorithms]
+
+    The generic term for a subprocedure that
+    attempts to foresee the effects of
+    choosing a branching variable to evaluate
+    one of its values.
+
+lookahead search
+look-ahead search
+
+field boosting
+    https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-boost.html
+
+field retrieval
+
+BM25
+Okapi BM25
+    BM25 and its newer variants, e.g. BM25F (a
+    version of BM25 that can take document
+    structure and anchor text into account),
+    represent state-of-the-art TF-IDF-like
+    retrieval functions used in document
+    retrieval.
+
+Precision at n
+    The proportion of the top-n documents that
+    are relevant.
+
+top-n
+    In an IR system that retrieves a ranked
+    list, the top-n documents are the first n
+    in the ranking.
+
+graph-based ranking
+    [[https://ryanong.co.uk/2020/01/08/day-8/][Day 8: TextRank for Summarisation - Ryan Ong]]
+
+    In short, a graph-based ranking algorithm
+    is a way of deciding on the importance of
+    a vertex within a graph, by taking into
+    account global information recursively
+    computed from the entire graph, rather
+    than relying only on local vertex-specific
+    information.
+
+Search engine indexing
+    Search engine optimisation indexing is the
+    collecting, parsing, and storing of data
+    to facilitate fast and accurate IR.
+
+    Index design incorporates
+    interdisciplinary concepts from
+    linguistics, cognitive psychology,
+    mathematics, informatics, and CS.
+
+content match score
+    Measures how well a given document matches
+    a given query.
+
+    ewwlinks +/"content match score" "https://0x65.dev/blog/2019-12-05/a-new-search-engine.html"
+
+query log
+query/url pair
+    Typically referred to as query logs, are
+    often used by search engines to optimize
+    their ranking and for SEO to optimize
+    incoming traffic.
+
+    Here is a sample from
+    the AOL query logs dataset
+
+    Query                             	 Clicked Url
+    google                            	 http://www.google.com
+    wnmu                              	 http://www.wnmu.edu
+    wnmu webct                        	 https://western.checs.net:4443/wadmin/webct_logon.htm
+    ww.vibe.com                       	 http://www.vibe985.com
+    www.accuweather.com               	 http://www.accuweather.com
+    weather                           	 http://asp.usatoday.com
+    harry and david                   	 http://www.harryanddavid.com
+    college savings plan              	 http://www.collegesavings.org
+    pennsylvania college savings plan 	 http://www.patreasury.org
+    pennsylvania college savings plan 	 http://swz.salary.com
+    amc painter’s crossing            	 http://www.mrmovietimes.com
+
+query log dataset
+    Queries performed by people, if associated
+    to a web page, serve as even cleaner
+    summaries than anchor text.
+
+    This is because all the logic put in place
+    by the search engine, who resolved the
+    query with a list of web pages, and all
+    human understanding and experience that
+    led one to select the best page from the
+    offered result list end up embedded in the
+    association <query, url>.
+
+    These datasets exist in the wild, it is
+    possible to buy them from various
+    providers.
+
+    So we got our hands on a couple datasets
+    and got to work.
+
+indexing
+    Storing products in a database with
+    attributes as keys, e.g. brand, color,
+    category.
+
+parsing
+    Extracting attribute terms from the input
+    query, e.g.
+
+        red shirt -> {"color": "red", "category": "shirt"};
+
+matching
+    Filtering the product database by
+    attributes.

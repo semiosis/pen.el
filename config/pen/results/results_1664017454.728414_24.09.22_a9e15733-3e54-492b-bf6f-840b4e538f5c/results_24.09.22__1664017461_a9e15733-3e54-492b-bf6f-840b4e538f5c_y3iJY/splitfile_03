@@ -1,0 +1,2 @@
+
+  (loop [s (str/split (str/trim (str/upper-case (str/upper-case (str/reverse (str/split 				(str/trim (str/upper-

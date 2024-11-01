@@ -1,0 +1,12 @@
+Solidity support for lsp-mode using =solc=.
+
+- https://dev.to/christianparpart/builtin-solidity-language-server-267n
+
+- https://github.com/christianparpart/solidity-language-client-vscode/releases/download/TP_1/solc-linux64
+
+** Installation
+
+#+BEGIN_SRC emacs-lisp
+    (require 'lsp-mode)
+    (require 'lsp-solidity)
+#+END_SRC

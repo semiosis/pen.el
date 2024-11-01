@@ -1,0 +1,7 @@
+cd /root/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "zsh"
+cd /root/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "zsh"
+cd /root/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "shx"
+cd /root/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "zsh"
+cd /root/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "zsh"
+cd /root/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "readsubs"
+cd /root/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "readsubs"

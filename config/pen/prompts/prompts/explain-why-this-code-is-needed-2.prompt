@@ -1,0 +1,51 @@
+task: "Explain why this code is needed"
+tags: code explain
+doc: "Given some selected code, explain why it is needed. What is it used for?"
+prompt-version: 3
+# subprompts:
+# - metadata: |+
+#     File type: <language>
+#     File contents:
+#     <delim>
+# prompt: |+
+#     <metadata>
+#     `(pen-guess-major-mode-set "<language>")`<code>
+#     <:pp>The above code is needed so `(comment-line 1)`
+prompt: |+
+    Explain the purpose of this <language> snippet.
+    <delim>
+    cat "<language>_program" | sed -n '40,$p'
+    <delim>
+    `(pen-guess-major-mode-set "<language>")`<code>
+    <delim>
+    <:pp>The purpose of this code is 
+# prompt: |+
+#     <metadata>
+#     <code>
+#     <delim>
+#     Comments:
+#     <delim>
+#     <:pp>This code is needed so
+engine: "OpenAI Codex"
+temperature: 0.2
+max-generated-tokens: "150"
+top-p: 1.0
+yas: on
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- code
+- language
+# TODO In future, automatically escape the stop sequences from parameters
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+examples:
+- "import           System.Console.GetOpt"
+- "Haskell"
+filter: off
+completion: off
+insertion: off
+info: on
+# postprocessor: pen-pretty-paragraph

@@ -1,0 +1,10 @@
+covered a new type of neuron, which we call Multimodal Neurons (MMs).
+    MMs are a new type of neuron that can be used to build neural networks with
+    multiple input and output modalities.
+    https://arxiv.org/abs/1906.04199
+
+MADE: Masked Autoencoder for Distribution Estimation
+    https://arxiv.org/abs/1502.03509
+    https://github.com/rosinality/made-pytorch
+
+

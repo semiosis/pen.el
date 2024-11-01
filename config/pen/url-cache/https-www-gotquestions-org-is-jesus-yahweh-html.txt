@@ -1,0 +1,208 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/html
+Last-Modified: Tue, 20 Aug 2024 22:41:34 GMT
+Accept-Ranges: bytes
+ETag: "0e3ca1b52f3da1:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self' https://*.gotquestions.org
+Date: Sun, 25 Aug 2024 20:35:18 GMT
+Content-Length: 6164
+
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+<head>
+<title>Is Jesus Yahweh? Is Jesus Jehovah? | GotQuestions.org</title>
+<META name="keywords" itemprop="keywords" content="is Jesus Yahweh, is Jesus Jehovah"><META name="description" itemprop="description" property="og:description" content="Is Jesus Yahweh? Is Jesus Jehovah? How can Jesus be the Son of Yahweh and Yahweh at the same time?">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="image_src" itemprop="image" href="https://www.gotquestions.org/img/GQlogo.png"><link rel="canonical" itemprop="url mainEntityOfPage" href="https://www.gotquestions.org/is-Jesus-Yahweh.html">
+<meta itemprop="author" content="GotQuestions.org">
+<meta itemprop="datePublished" content="2020-02-26">
+<meta property="og:image" content="https://www.gotquestions.org/img/OG/is-Jesus-Yahweh.jpg">
+<meta property="og:site_name" content="GotQuestions.org">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.gotquestions.org/is-Jesus-Yahweh.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7EVHFDMSZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M7EVHFDMSZ');
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-site-theme="light">
+<div class="fixed-button settings box-shadow"><img src="img/cogwheel.svg" alt="settings icon" onclick="settingsMenu(this)"></div>
+<div class="fixed-button sharebutton box-shadow"><img src="img/share.svg" alt="share icon" onclick="shareMenu(this)"></div>
+<header class="gradient-to-b" style="--color-start: var(--bgcolor-header-start); --color-end: var(--bgcolor-header-end);">
+<div class="searchbox desktop-show"><div class="search"><div class='gq-ac-placeholder header'></div></div></div>
+<div class="logo-wrap"><a href="https://www.gotquestions.org" class="logo"><img src="img/logo_white.svg" alt="Bible Questions Answered"></a></div>
+<nav>
+<ul>
+<li><a href="whats-new.html">New</a></li>
+<li><a href="top20.html">Top 20</a></li>
+<li><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="extra-menu modal-menu box-shadow">
+<li class="mobile-show flex-half"><a href="whats-new.html">New</a></li>
+<li class="mobile-show flex-half"><a href="top20.html">Top 20</a></li>
+<li class="mobile-show flex-half"><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li class="mobile-show flex-half"><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="Gospel-presentations.html">The Gospel</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="Bible-Questions.html">Ask</a></li>
+<li><a href="crucial.html">Crucial Questions</a></li>
+<li><a href="content.html">Content Index</a></li>
+<li><a href="questweek.html">Question of the Week</a></li>
+<li><a href="free-Bible-study.html">Bible Studies</a></li>
+<li><a href="international.html">International</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li class="mobile-show donate"><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="settings-menu modal-menu box-shadow">
+<li>
+<div class="toggle-wrap">
+<span>Light</span><input type="checkbox" checked id="toggle" class="checkbox" onclick="toggleTheme(this)" /><label for="toggle" class="switch"></label><span>Dark</span>
+</div>
+</li>
+<li><div id="bibleRefLinkSettings"><label for="bibleRefLinkVersion">Bible Version</label><select id="bibleRefLinkVersion" name="bibleRefLinkVersion" onchange="changeVersion();BibleRefLink.brlSavePrefs();"><option value="ESV">ESV</option><option value="CSB">CSB</option><option value="KJV">KJV</option><option value="NASB">NASB</option><option value="NIV" selected="selected">NIV</option><option value="NKJV">NKJV</option><option value="NLT">NLT</option></select></div></li>
+<li><label for="font">Font Family</label><select name="font" id="font" onchange="changeFont()"><option value="system-ui">Default</option><option value="Arial">Arial</option><option value="Verdana">Verdana</option><option value="Helvetica">Helvetica</option><option value="Tahoma">Tahoma</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option></select></li>
+<li><label for="lineheight">Line Height</label><select name="lineheight" id="lineheight" onchange="changeLineHeight()"><option value="1.4">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+<li><label for="fontsize">Font Size</label><select name="fontsize" id="fontsize" onchange="changeFontSize()"><option value="1">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+</ul>
+<ul class="final-menu modal-menu box-shadow">
+<li><a href="https://www.facebook.com/sharer.php?u=https://www.gotquestions.org/" class="fb"><img src="img/logo-fb-simple.svg" alt="Facebook icon">Facebook</a></li>
+<li><a href="https://twitter.com/share?url=https://www.gotquestions.org/" class="tw"><img src="img/logo-twitter.svg" alt="Twitter icon">Twitter</a></li>
+<li><a href="https://pinterest.com/pin/create/link/?url=https://www.gotquestions.org/" class="pi"><img src="img/logo-pinterest.svg" alt="Pinterest icon">Pinterest</a></li>
+<li><a class="SendEmail" href=""><img src="img/letter.svg" alt="Email icon">Email</a></li>
+<li class="mobile-show"><a class="SendSMS" href=""><img src="img/sms-icon.svg" alt="SMS icon">Text/SMS</a></li>
+</ul>
+<img src="img/menu.svg" class="menu-icon" alt="Menu icon" onclick="extraMenu(this)">
+</nav>
+</header>
+<div class="featured gradient-to-tr" style="--color-start: var(--bgcolor-featured-start); --color-end: var(--bgcolor-featured-end)">
+<div class="featured-left">
+<h5>Find Out</h5>
+<h4><a href="going-to-heaven.html">How to go to Heaven</a></h4>
+<h4><a href="get-right-with-God.html">How to get right with God</a></h4>
+</div>
+<div class="featured-right">
+<div class="desktop-hide gq-YT"><a href="https://www.youtube.com/gotquestionsorg" target="_blank"><img src="img/GQ-YT.png"></a></div>
+</div>
+</div>
+<main><div class="breadcrumb-wrapper">
+<span class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org"><span itemprop="name"><span class="home-icon"></span>Home</span></a><meta itemprop="position" content="1"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content.html"><span itemprop="name">Content Index</span></a><meta itemprop="position" content="2"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_Jesus-Christ.html"><span itemprop="name">Jesus Christ</span></a><meta itemprop="position" content="3"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_Jesus_nature.html"><span itemprop="name">The Nature of Jesus</span></a><meta itemprop="position" content="4"></span> <span class="chevron-right"></span> Is Jesus Yahweh, is Jesus Jehovah</span></div>
+<section class="content-wrap gradient-to-b" style="--color-start: var(--bgcolor-content-start); --color-end: var(--bgcolor-content-end);" ><div class="content">
+<div class="label gradient-to-tr" style="--color-start: #96445a; --color-end: #6f637e;">Question</div>
+<div class="sponsor-sidebar"><div class="desktop-show" align="center"><div class="adManager-placeholder"></div></div></div>
+<h1><span itemprop="name headline" property="og:title">Is Jesus Yahweh?</span></h1>
+<div class="actions-wrap"><div class="actions">
+<a target="_blank" rel="noopener nofollow" href="INTL/is-Jesus-Yahweh.html" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'intl'});"><img src="img/translate-icon.svg" alt="translate"></a>
+<a target="_blank" rel="noopener" href="https://printer.gotquestions.net/GeneratePF?articleId=49354" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'print'});"><img src="img/print.svg" class="questionInteract" alt="is Jesus Yahweh, is Jesus Jehovah"></a>
+</div></div>
+<div itemprop="articleBody">
+<div class="label  gradient-to-tr" style="--color-start: #29a699; --color-end: #749c5a;">Answer</div><br><br>
+The third chapter of Exodus describes the encounter between Moses and God about the Lord’s name: “God said to Moses, ‘I AM WHO I AM’; and He said, ‘Thus you shall say to the sons of Israel, “I AM has sent me to you”’” (Exodus 3:13&ndash;14, NASB).<br><br>
+The phrase <em>I am who I am</em> in the Hebrew is <em>YHWH</em>, often translated as “LORD,” “Yahweh,” or “Jehovah,” and is referred to in theology as the <a href="YHWH-tetragrammaton.html">tetragrammaton</a> (“a word having four letters”). The literal translation of the term is “I be that I be,” a statement that makes reference to God’s self-existence&mdash;He is not dependent upon anything else for His existence.<br><br>
+One of the foundational Christian doctrines is that Jesus is God. He is the Jehovah/<em>YHWH</em>/Yahweh described in Exodus 3. This teaching can be difficult to grasp because the Bible also says there is only one God: “Hear, O Israel: The Lord our God, the Lord is one” (Deuteronomy 6:4).<br><br>
+The Bible’s claim that only a single God exists is called monotheism. The doctrine of Jesus being God does not mean that more than one God exists (<a href="polytheism.html">polytheism</a>) or that the Christian doctrine of the Trinity equates to there being three gods (<a href="Tritheism-Trinity.html">tritheism</a>) or that there is one God who represents Himself as one person in three different ways or modes (<a href="Modalistic-Monarchianism.html">modalism</a>).<br><br>
+Instead, Christianity teaches that there is one God who exists in triune fashion as three Persons within one God, i.e., one “what” but three “who’s”; a plurality of Persons who are one in essence. Referencing the depth of this doctrine, <a href="A-W-Tozer.html">A. W. Tozer</a> writes, “Our sincerest effort to grasp the incomprehensible mystery of the Trinity must remain forever futile, and only by deepest reverence can it be saved from actual presumption. We cover our deep ignorance with words, but we are ashamed to wonder, we are afraid to whisper ‘mystery’” (<em>The Knowledge of the Holy</em>, p. 18).<br><br>
+The Bible affirms the Son of God’s place in <a href="Godhead.html">the Godhead</a> in both the Old and New Testaments. One passage affirming the Son’s deity in the Old Testament is Psalm 2: “The kings of the earth take their stand and the rulers take counsel together against the Lord and against His Anointed, saying, ‘Let us tear their fetters apart and cast away their cords from us!’ . . . Do homage to the Son, that He not become angry, and you perish in the way, for His wrath may soon be kindled. How blessed are all who take refuge in Him!” (Psalm 2:1&ndash;3, 12, NASB).<br><br>
+In the New Testament, Jesus affirms His deity in many places. In His general teachings, He refers to Himself in the same way God is described in the Old Testament and does the same in twenty of His <a href="what-is-a-parable.html">parables</a>. Examples include the following:<br><br>
+<strong>God in the Old Testament</strong><br>
+I AM (Exodus 3:14&ndash;15; Isaiah 48:12)<br>
+The Shepherd (Psalm 23:1)<br>
+The Light (Psalm 27:1)<br>
+The Rock (Psalm 18:2)<br>
+Ruler of all (Isaiah 9:6)<br>
+Judge of all nations (Joel 3:12)<br>
+The Bridegroom (Isaiah 62:5; Hosea 2:16)<br>
+God’s Word never passes away (Isaiah 40:8)<br>
+The Sower (Jeremiah 31:27; Ezekiel 36:9)<br>
+First and the Last (Isaiah 48:12)<br><br>
+<strong>Jesus’ Reference to Himself</strong><br>
+I AM (John 8:58)<br>
+The Shepherd (John 10:11)<br>
+The Light (John 8:12)<br>
+The Rock (Matthew 7:24)<br>
+Ruler of all (Matthew 28:18)<br>
+Judge of all (John 5:22)<br>
+The Bridegroom (Matthew 25:1)<br>
+Jesus’ words never pass away (Mark 13:31)<br>
+The Sower (Matthew 13:3&ndash;9)<br>
+First and the Last (Revelation 1:17&ndash;18)<br><br>
+Jesus said many things that equated Himself with Yahweh: “Anyone who has seen Me has seen the Father” (John 14:9) and “I and the Father are one” (John 10:30). He asked God, “Glorify me in your presence with the glory I had with you before the world began” (John 17:5). He said, “My Father is always at His work to this very day, and I too am working” (John 5:17).<br><br>
+In addition, Jesus accepted worship nine times in the gospels, forgave sins, and commanded His disciples to pray in His name. Jesus never said&mdash;as other prophets did&mdash;“Thus says the Lord”; rather, Jesus said, “I say,” and commanded His disciples to baptize in His name.<br><br>
+The New Testament writers also refer to Jesus as God many times (e.g., Matthew 3:16&ndash;17; John 1:1&ndash;3,14; John 20:28; Romans 9:5; Philippians 2:5&ndash;8, 9&ndash;11; Colossians 1:16&ndash;19; 2:9&ndash;10; 1 Timothy 6:15; 2 Peter 1:1; Hebrews 1:8; 13:8; Revelation 1:8, 17; 2:8; 17:14; 19:16; 21:6; 22:13).<br><br>
+In conclusion, the teaching of Scripture is that Jesus is indeed Yahweh, the I AM, the God of the Old Testament.<br><br>
+</div>
+<section class="homepage-sponsor desktop-hide">
+<div class="desktop-hide" align="center"><div class="adManager-placeholder-mobile"></div></div>
+</section>
+<div class="related resources"><h4>For Further Study</h4>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'chrbook'});" href="https://www.christianbook.com/Christian/Books/product?event=AFF&amp;p=1011693&amp;item_no=346473">God the Son Incarnate: The Doctrine of Christ by Stephen Wellum</a><br><br>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'logos'});" href="https://www.logos.com/free-edition?utm_source=gotquestions&utm_medium=advertising_display&utm_content=more+insights+get+started&utm_campaign=promo-basic-fundamentals">More insights from your Bible study - Get Started with Logos Bible Software for Free!</a>
+</div>
+<div class="related topics"><h4>Related Articles</h4>
+<a href="is-Jesus-God.html">Is Jesus God? Why should I believe that Jesus is God?</a><br><br>
+<a href="humanity-of-Jesus.html">Why is the humanity of Jesus important?</a><br><br>
+<a href="Jesus-God-man.html">How can Jesus be both God and man at the same time?</a><br><br>
+<a href="God-incarnate.html">What does <i>incarnate</i> mean? How was Jesus God incarnate?</a><br><br>
+<a href="God-is-not-a-man.html">How can Jesus be God, when Numbers 23:19 says that God is not a man or a son of man?</a>
+</div>
+<center><strong class="return">Return to:<br><br>
+<a class="button-link box-shadow" href="questions_Jesus-Christ.html">Questions about Jesus Christ</a><br><br>
+Is Jesus Yahweh? Is Jesus Jehovah?</strong></center>
+</div>
+</section>
+<section class="subscribe gradient-to-br" style="--color-start: #153c59; --color-end: #1b537c">
+<div class="grid">
+<div class="gradient-to-br box-shadow" style="--color-start: #2c6482; --color-end: #64547b">
+<h5>Subscribe to the</h5>
+<h3>Question of the Week</h3>
+<p>Get our Question of the Week delivered right to your inbox!</p>
+<iframe src="scommon/qotw.htm" title="question of the week" frameborder="0" width="100%" height="100%"></iframe>
+</div></div>
+</section>
+<section class="share gradient-to-b" style="--color-start: #073D60; --color-end: #0A3652;">
+<span>Follow Us:</span>
+<a target="_blank" href="https://www.facebook.com/gotquestions.org"><img src="img/logo-fb-simple.svg" alt="Facebook icon"></a>
+<a target="_blank" href="https://twitter.com/gotquestions"><img src="img/logo-twitter.svg" alt="Twitter icon"></a>
+<a target="_blank" href="https://www.youtube.com/gotquestionsorg"><img src="img/logo-youtube.svg" alt="YouTube icon"></a>
+<a target="_blank" href="https://www.pinterest.com/gotquestionsmin/"><img src="img/logo-pinterest.svg" alt="Pinterest icon"></a>
+<a target="_blank" href="https://www.instagram.com/gotquestionsministries/"><img src="img/logo-instagram.svg" alt="Instagram icon"></a>
+</section>
+</main>
+<footer>
+<div class="grid"><div>
+<div class="logo"></div>
+<ul>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="citation.html">Citation</a></li>
+<li><a href="apply.html">Serve with Us</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="network">
+GotQuestions.org is the primary site of Got Questions Ministries <a target="_blank" href="https://www.gqm.one"><img src="img/gqm-one.png"></a>
+</div>
+<div class="apps">
+<a href="https://apps.apple.com/us/app/got-questions/id366553550" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'ios-app'});"><img src="img/apple-appstore.svg" class="appSource"></a>
+<a href="https://play.google.com/store/apps/details?id=com.gotquestions.gqandapp&hl=en" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'android-app'});"><img src="img/google-play.svg" class="appSource"></a>
+<a href="https://www.amazon.com/gp/product/B07VX73L12" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'alexa-skill'});"><img src="img/amazon-alexa.svg" class="appSource"></a>
+</div>
+</div>
+</footer>
+<center><div class="bottom">&copy; Copyright 2002-2024 Got Questions Ministries. All rights reserved.&nbsp;<a href="privacy.html">Privacy Policy</a></div>
+<div itemprop="dateModified" content="2022-01-04">This page last updated: January 4, 2022</div></center>
+<script src="scripts.js"></script>
+<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="GotQuestions.org"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="url" content="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="width" content="400"><meta itemprop="height" content="79">
+</div></div>
+</body>
+</html>

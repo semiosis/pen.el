@@ -1,0 +1,11 @@
+covered that multimodal neurons can be used to learn representations of
+    images and text in a way that is invariant to the order of the objects in the
+    image or the order of the words in the text.
+    https://arxiv.org/abs/1806.01861
+
+sparse transformer
+    https://openai.com/blog/sparse-transformer/
+
+sparse attention
+    v +/"Sparse Attention" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+

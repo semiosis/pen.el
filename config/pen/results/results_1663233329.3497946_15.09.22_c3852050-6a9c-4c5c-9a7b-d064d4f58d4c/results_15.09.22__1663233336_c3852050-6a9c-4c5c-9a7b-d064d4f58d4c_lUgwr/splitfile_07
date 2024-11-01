@@ -1,0 +1,7 @@
+import tensorflow as tf
+from tensorflow.python.framework import graph_util
+
+with tf.Graph().as_default():
+    a = tf.placeholder(tf.int32, name='a')
+    b = tf.placeholder(tf.int32, name='b')
+    c = tf.add(a, b)

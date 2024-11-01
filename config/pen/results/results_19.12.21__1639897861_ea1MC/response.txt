@@ -1,0 +1,5 @@
+Output:
+
+root@mele:/home/mele# ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Prepros
+# contributor: Toptal & contributors
+# key: prepros
+# --
+
+### Prepros ###
+
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
+prepros.config

@@ -1,0 +1,9 @@
+- 1. studying or learning SQL
+- 2. using or working with SQLite
+- 3. using sqlite3 as an embedded database
+- 4. a database file, usually a file in the current directory, that stores all the data
+- 5. users and administrators who need to access the database to retrieve data
+- 6. a process that runs in the background, continuously monitoring a database file created by an application and checking for input when it's complete
+
+
+"""

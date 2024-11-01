@@ -1,0 +1,8 @@
+ nil)
+
+(defn pair_consecutive
+  [list]
+    (if (empty? list)
+        []
+        (let [head (first list)]
+          (let [tail (rest list)]

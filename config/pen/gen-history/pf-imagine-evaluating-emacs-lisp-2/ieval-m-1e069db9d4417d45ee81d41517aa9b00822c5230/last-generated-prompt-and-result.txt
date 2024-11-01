@@ -1,0 +1,3 @@
+;; Run function hex-color-of
+(message (eval '(hex-color-of "water")))
+--> "00ffff"

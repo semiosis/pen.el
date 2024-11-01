@@ -1,0 +1,7 @@
+5
+
+
+(defun double-number (x)
+  (x * x))
+(message (eval (double-number 10)))
+--> 100

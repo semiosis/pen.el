@@ -1,0 +1,4 @@
+
+But to make it relevant to the context, let me first give a small
+background on haskell's "syntax", "data" and "newtype" constructs,
+and symblolic computation.

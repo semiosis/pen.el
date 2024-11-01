@@ -1,0 +1,11 @@
+"{-# LANGUAGE KindSignatures #-}" is a GHC extension that allows the use of kind signatures in types.
+
+The kind signature of a type specifies the kind of each type variable.
+
+The kind of a type variable is an arbitrary type-level expression.
+
+The kind signature of a type can be used in type-checking, type-inference, and type-application.
+
+A kind signature can be used in place of a type signature.
+
+A kind signature can be used in place of a type signature.

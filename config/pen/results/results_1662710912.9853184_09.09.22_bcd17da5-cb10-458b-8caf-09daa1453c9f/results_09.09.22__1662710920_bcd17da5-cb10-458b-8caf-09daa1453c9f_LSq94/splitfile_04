@@ -1,0 +1,1 @@
+aws_audit_get_role_policy --role-name <role-name> --policy-name <policy-name>

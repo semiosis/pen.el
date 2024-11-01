@@ -1,0 +1,36 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:05:57 GMT
+Content-Type: text/html
+Content-Length: 1281
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-501"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: The Next Stage</title>
+<p>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="arrays.html">back</a> <a href="index.html">top</a><hr>
+<p>
+<a name="sect14"></a>
+<h2>14<tt>&nbsp;&nbsp;</tt>The Next Stage</h2>
+A large collection of Haskell resources is available on the web at
+<tt>haskell.org</tt>.  Here you will find compilers, demos, papers, and much
+valuable information about Haskell and functional programming.
+Haskell compilers or interpreters run on almost all hardware and
+operating systems.  The Hugs system is both small and portable -- it
+is an excellent vehicle for learning Haskell. <p>
+<a name="sect15"></a>
+<h2>15<tt>&nbsp;&nbsp;</tt>Acknowledgements</h2><p>
+Thanks to Patricia Fasel and Mark Mundt at Los Alamos, and Nick
+Carriero, Charles Consel, Amir Kishon, Sandra Loosemore, Martin
+Odersky, and David Rochberg at Yale University for
+their quick readings of earlier drafts of this manuscript.  Special
+thanks to Erik Meijer for his extensive comments on the new material
+added for version 1.4 of this tutorial.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="arrays.html">back</a> <a href="index.html">top</a>
+<p>

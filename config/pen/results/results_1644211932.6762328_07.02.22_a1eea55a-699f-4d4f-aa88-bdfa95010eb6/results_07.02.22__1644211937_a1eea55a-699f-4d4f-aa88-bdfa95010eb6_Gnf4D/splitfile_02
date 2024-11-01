@@ -1,0 +1,9 @@
+read(char), !,print('A digram is ',integer_to_list(char),' characters long.').
+
+
+
+%% ------
+
+digram_count :-
+
+digram_count_loop(G,

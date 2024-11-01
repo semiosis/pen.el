@@ -1,0 +1,8 @@
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 27" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 28" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 29" "#" "<==" "emacs"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Isaiah" "26:3" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 934" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 934" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "StrongsGreek" "-o" "w" "-f" "internal" "-k" "4190" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 934" "#" "<==" "emacs"

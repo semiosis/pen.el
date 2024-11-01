@@ -1,0 +1,6 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-jaycar-co-nz-/www.jaycar.co.nz;  "ncdu" "." "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-jaycar-co-nz-/www.jaycar.co.nz;  "ncdu" "." "#" "<==" "nvim"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-jaycar-co-nz-/www.jaycar.co.nz;  "ncdu" "." "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-jaycar-co-nz-/www.jaycar.co.nz;  "ncdu" "." "#" "<==" "nvim"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-jaycar-co-nz-/www.jaycar.co.nz;  "ncdu" "." "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-jaycar-co-nz-/www.jaycar.co.nz;  "ncdu" "." "#" "<==" "nvim"

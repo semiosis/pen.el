@@ -1,0 +1,21 @@
+
+
+  -- The CSV file has a header, so we discard it.
+  records' = records !! 1
+
+  -- Parse each record into a list of fields.
+  fields <- map (T.words . T.unpack) records'
+
+  -- Map the fields into a list of values, one for each field.
+  values <- map (map (read)) fields
+
+  -- Map the values into a list of tuples, one for each record.
+  tuples <- map (zip [1..]) values
+
+  -- Convert the list of tuples into a list of lists.
+  lists <- map (map (\t -> t {-caret-})) tuples
+
+  -- Convert the list of lists into a list of maps, one for each record.
+  maps <- map (fromList . fmap (\l -> l {-caret-})) lists
+
+  -- Convert the list of maps into

@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "info" "-q" "emacsclient" "#" "<==" "man"
+cd /;  "info" "-q" "zshzle" "#" "<==" "man"
+cd /;  "info" "-q" "zshzle" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "---" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "grep" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "grep" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "grep" "#" "<==" "man"

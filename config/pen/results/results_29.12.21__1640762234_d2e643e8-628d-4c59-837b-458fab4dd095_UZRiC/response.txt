@@ -1,0 +1,1 @@
+PEN MODEL DummyModel prompt Glossary of terms n nossified nDefinition Turn into bone or bony tissue n nthermodynamic nDefinition n 1 top k 1 top p 1 log probs 10 stop sequences delim 1 delim 1 maximum tokens 127 temperature 0 5 presence penalty 0 frequency penalty 0 

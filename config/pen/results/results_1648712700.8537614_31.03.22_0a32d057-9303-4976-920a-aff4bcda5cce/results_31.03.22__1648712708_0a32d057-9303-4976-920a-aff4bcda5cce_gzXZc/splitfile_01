@@ -1,0 +1,15 @@
+The above code is a simple program that prints out "1 + 2 = 3".
+
+The sum2 function is defined as:
+
+sum2 x y = x + y
+
+The main function is defined as:
+
+main = do
+  putStrLn ("1 + 2 = " ++ show (sum2 1 2))
+
+The putStrLn function is defined as:
+
+putStrLn :: String -> IO ()\n
+putStrLn msg =

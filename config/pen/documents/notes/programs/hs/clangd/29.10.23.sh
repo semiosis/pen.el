@@ -1,0 +1,8 @@
+cd /root/repos/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /root/repos/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /root/repos/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /root/repos/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /root/repos/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "clangd" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs;  "clangd" "#" "<==" "emacs"

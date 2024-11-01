@@ -1,0 +1,1 @@
+scp ai21_api_key alphalpha_api_key cohere_api_key openai_api_key nohup.out pen.yaml root@10.0.0.18:~/107/.pen

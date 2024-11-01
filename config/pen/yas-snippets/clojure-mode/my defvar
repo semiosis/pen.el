@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: my defvar
+# group: learning
+# key: dva
+# --
+(def my-name "Daniel King")

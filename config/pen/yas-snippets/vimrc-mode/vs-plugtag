@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: vim-plug Plugin definition with { 'tag': '' }
+# group: vimsnippet
+# key: vs-plugtag
+# --
+Plug '${1}', { 'tag': '${0}' }

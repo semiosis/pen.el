@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "paged" "grep" "vim" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "paged" "grep" "vim" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "paged" "grep" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "paged" "grep" "fc" "-E" "-l" "1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "paged" "grep" "vim" "#" "<==" "zsh"

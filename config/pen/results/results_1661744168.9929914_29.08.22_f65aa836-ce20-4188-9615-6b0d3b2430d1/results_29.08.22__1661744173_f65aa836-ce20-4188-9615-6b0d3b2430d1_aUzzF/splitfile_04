@@ -1,0 +1,11 @@
+"multifile" is a directive that lets you define a predicate in multiple files.
+
+You can use it to define a predicate in multiple files, and have the system
+know that they all define the same predicate.  This is useful if you have a
+predicate that is used in multiple files, and you want to avoid duplicating
+the definition.  For example:
+
+:- multifile p/2.
+
+p(X, Y) :-
+        q(X, Y).

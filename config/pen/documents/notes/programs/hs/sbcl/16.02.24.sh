@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el/docs;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Genesis \"4:3e280935\"" "#" "<==" "sbcl-ql"

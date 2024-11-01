@@ -1,0 +1,66 @@
+task: "Explain BNF"
+doc: "Explain Backus-Naur form"
+tags: language parsers
+prompt-version: 1
+prompt: |+    
+    We specify the <language name> syntax using Backus–Naur form.
+
+    cat bnf-1 <<EOD
+    <program> ::= <v-decl> <v-decls> <p-decl> <p-decls>
+    <v-decls> ::= <v-decl> <v-decls> | ""
+    <p-decls> ::= <p-decl> <p-decls> | ""
+    EOD
+
+    Explanation 1:
+
+    cat explanation-1 <<EOD
+    A program is a sequence of one or more
+    variable declarations, followed by a
+    sequence of one or more procedure
+    declarations.
+    EOD
+
+    cat bnf-2 <<EOD
+    <bnf grammar>
+    EOD
+
+    Explanation 2:
+
+    cat explanation-2 <<EOD
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- bnf grammar
+- language name
+# var-defaults:
+# - "(read-string-hist \"Explain BNF (bnf grammar): \")"
+# - "\"program\""
+examples:
+- |-
+    <program> ::= <clause list> <query> | <query>
+    <clause list> ::= <clause> | <clause list> <clause>
+    <clause> ::= <predicate> . | <predicate> :- <predicate list>.
+    <predicate list> ::= <predicate> | <predicate list> , <predicate>
+    <predicate> ::= <atom> | <atom> ( <term list> )
+    <term list> ::= <term> | <term list> , <term>
+    <term> ::= <numeral> | <atom> | <variable> | <structure>
+    <structure> ::= <atom> ( <term list> )
+    <query> ::= ?- <predicate list>.
+    <atom> ::= <small atom> | ' <string> '
+    <small atom> ::= <lowercase letter> | <small atom> <character>
+    <variable> ::= <uppercase letter> | <variable> <character>
+    <lowercase letter> ::= a | b | c | ... | x | y | z
+    <uppercase letter> ::= A | B | C | ... | X | Y | Z | _
+    <numeral> ::= <digit> | <numeral> <digit>
+    <digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+    <character> ::= <lowercase letter> | <uppercase letter> | <digit> | <special>
+    <special> ::= + | - | * | / | \ | ^ | ~ | : | . | ? |  | # | $ | &
+    <string> ::= <character> | <string> <character>
+info: on
+completion: off
+insertion: off

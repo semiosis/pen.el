@@ -1,0 +1,8 @@
+do
+  let cols = maximum (map length rows)
+  forM_ rows $ \row -> do
+    let row' = map (\s -> if null s then "" else s) row
+    let colw = map (\c -> max 0 (length c)) (zip row' [0..])
+    let padded = map (\i -> pad (colw !! i) c) [0..]
+    putStrLn $ intercalate "\t" padded
+EOD

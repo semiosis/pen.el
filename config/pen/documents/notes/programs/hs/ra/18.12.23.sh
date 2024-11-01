@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ra" "pen-ace-popup-menu" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ra" "pen-ace-popup-menu" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "ra" "pen-ace-popup-menu" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "ra" "ace-popup-menu" "#" "<==" "run.sh"
+cd /root/.emacs.d/host/pen.el/src;  "ra" "pen-ace-popup-menu" "#" "<==" "zsh"

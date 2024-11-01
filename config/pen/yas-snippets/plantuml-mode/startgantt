@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: startgantt
+# group: start
+# key: g
+# --
+@startgantt
+
+`yas-selected-text`$0
+
+@endgantt

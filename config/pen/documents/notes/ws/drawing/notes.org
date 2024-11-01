@@ -1,0 +1,11 @@
+#+BEGIN_SRC sh -n :sps bash :async :results none :pak :lang text
+  pen-timg ~/.pen/elpa-light/plz-0.2/images/mascot.png
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :pak :lang text
+  pen-timg /usr/share/doc/asciidoc/doc/images/tiger.png
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :pak :lang text
+  show-pic /usr/share/doc/asciidoc/doc/images/tiger.png | cat
+#+END_SRC

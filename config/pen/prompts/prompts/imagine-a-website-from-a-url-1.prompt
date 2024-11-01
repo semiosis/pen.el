@@ -1,0 +1,84 @@
+task: "Imagine a website from a URL"
+doc: "Given a URL, imagine the HTML for that page"
+tags: web lookingglass
+prompt-version: 3
+# Do not run unless these are ALL true
+goahead-predicates:
+# If any of these are true, do not run
+abort-predicates:
+prompt: |+
+  Lynx, an ascii web browser.
+  <delim>
+  lynx --dump -nolist "http://google.com" | head -n 30 <<EOD
+  http://google.com
+
+  Search Images Maps Play YouTube News Gmail Drive More »
+  Web History | Settings | Sign in
+  To all doctors, nurses, and medical workers, thank you
+  
+  ________________________________________________________    Advanced search
+  [ Google Search ]   [ I'm Feeling Lucky ]
+  
+  Google offered in: Māori
+  Advertising Programs     Business Solutions     About Google     Google.co.nz
+  
+  (c) 2021 - Privacy - Terms
+  EOD
+
+  lynx --dump -nolist "https://www.apple.com/" | head -n 30 <<EOD
+  https://www.apple.com/
+
+                                       Apple
+
+     We look forward to welcoming you to our stores. Whether you shop in a
+     store or shop online, our Specialists can help you buy the products
+     you love. Shop with a Specialist, get credit with Apple Trade In,
+     choose free delivery or pickup, and more at the Apple Store Online.
+     Shop with a Specialist, get credit with Apple Trade In, choose free
+     delivery or pickup, and more at the Apple Store Online.
+  
+  
+  iPhone 12
+  
+  Blast past fast.
+  
+     From $29.12/mo. for 24 mo. or $699 before trade‑in^1
+  
+     Buy directly from Apple with special carrier offers
+     Learn more Learn more Buy
+  
+  
+  iPhone 12 Pro
+  
+  It’s a leap year.
+  
+     From $41.62/mo. for 24 mo. or $999 before trade‑in^1
+  
+     Buy directly from Apple with special carrier offers
+     Learn more Learn more Buy
+  EOD
+
+  # "<q:url>" rendered in ASCII:
+  lynx --dump -nolist "<q:url>" | head -n 30 <<EOD
+  <:pp><url>
+
+
+engine: "OpenAI Codex"
+n-collate: 1
+n-completions: 4
+temperature: 0.5
+max-generated-tokens: "50"
+top-p: 1.0
+stop-sequences:
+- EOD
+# more than 1 line
+validator: "wc -l | grep -v -qP '^1\\$'"
+cache: on
+postprocessor: "pen-str max-double-spaced-no-trailing"
+vars:
+- "url"
+examples:
+- "http://www.gprolog.org/"
+info: on
+completion: off
+insertion: off

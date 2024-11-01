@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: ATS
+# contributor: Toptal & contributors
+# key: ats
+# --
+
+### ATS ###
+
+# Compiled C Files
+*~
+*_?ats.c
+*_?ats.o
+
+# Compiled Javascript Files
+*_?ats.js

@@ -1,0 +1,59 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 14
+
+* D-Group weekly session notes
+Started working on it: <2024-04-03 Wed>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=9oVSJUk9wDg][The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano - YouTube]]
+
+| Scripture Memory | NT260 Passage     | Foundations260 Passage | OT260 Passage |
+|------------------+-------------------+------------------------+---------------|
+| [[sh:bible-read-passage nasb Matthew 5:27-28 ][Matthew 5:27-28]]  | [[sh:bible-study-passage nasb I Corinthians 4-8 ][I Corinthians 4-8]] | [[sh:bible-study-passage nasb Judges 6-7 ][Judges 6-7]]             | [[sh:bible-study-passage nasb Exodus 29-33 ][Exodus 29-33]]  |
+|                  |                   | [[sh:bible-study-passage nasb Judges 13-16 ][Judges 13-16]]           | [[sh:bible-study-passage nasb Psalm 66-70 ][Psalm 66-70]]   |
+|                  |                   | [[sh:bible-study-passage nasb Ruth 1-4 ][Ruth 1-4]]               |               |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:27-28
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:27
+‾‾‾‾‾‾‾‾‾‾‾‾
+“You have heard that it was said, ‘You shall
+not commit adultery’;
+
+Matthew 5:28
+‾‾‾‾‾‾‾‾‾‾‾‾
+but I say to you that everyone who looks at a
+woman with lust for her has already committed
+adultery with her in his heart.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

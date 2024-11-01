@@ -1,0 +1,356 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:05:52 GMT
+Content-Type: text/html
+Content-Length: 23793
+Last-Modified: Sun, 17 Feb 2019 03:57:23 GMT
+Connection: keep-alive
+ETag: "5c68dba3-5cf1"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Arrays</title>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="pitfalls.html">back</a> <a href="end.html">next</a> <a href="index.html">top</a><hr>
+<p>
+<a name="sect13"></a>
+<h2>13<tt>&nbsp;&nbsp;</tt>Arrays</h2>
+Ideally, arrays in a functional language would be regarded simply as
+functions from indices to values, but pragmatically, in order to
+assure efficient access to array elements, we need to
+be sure we can take advantage of the special properties of the domains
+of these functions, which are isomorphic to finite contiguous subsets
+of the integers.  Haskell, therefore, does not treat arrays as general
+functions with an application operation, but as abstract data types
+with a subscript operation.<p>
+Two main approaches to functional arrays may be discerned: 
+<I>incremental</I> and <I>monolithic</I> definition.  In the incremental
+case, we have a function that produces an empty array of a given size
+and another that takes an array, an index, and a value, producing a
+new array that differs from the old one only at the given index.
+Obviously, a naive implementation of such an array semantics would be
+intolerably inefficient, either requiring a new copy of an array for each
+incremental redefinition, or taking linear time for array lookup; thus, serious attempts at using this
+approach employ sophisticated static analysis and clever run-time
+devices to avoid excessive copying.  The monolithic approach, on the
+other hand, constructs an array all at once, without reference to
+intermediate array values.  Although Haskell has an incremental array
+update operator, the main thrust of the array facility is monolithic.<p>
+Arrays are not part of the Standard Prelude---the standard library
+contains the array operators.  Any module using 
+arrays must import the <tt>Array</tt> module.<p>
+<a name="sect13.1"></a>
+<h3>13.1<tt>&nbsp;&nbsp;</tt>Index types</h3>
+The <tt>Ix</tt> library defines a type class of array indices:
+<tt><br>
+
+<br>
+class&nbsp;&nbsp;(Ord&nbsp;a)&nbsp;=&gt;&nbsp;Ix&nbsp;a&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a,a)&nbsp;-&gt;&nbsp;[a]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a,a)&nbsp;a&nbsp;-&gt;&nbsp;Int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inRange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a,a)&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>Instance declarations are provided for <tt>Int</tt>, <tt>Integer</tt>, <tt>Char</tt>,
+<tt>Bool</tt>, and tuples of <tt>Ix</tt> types up to length 5; in addition, instances may be
+automatically derived for enumerated and tuple types.  We regard the
+primitive types as vector indices, and tuples as indices of
+multidimensional rectangular arrays.  Note that the first argument of
+each of the operations of class <tt>Ix</tt> is a pair of indices; these are
+typically the <I>bounds</I> (first and last indices) of an array.  For
+example, the bounds of a 10-element, zero-origin vector with <tt>Int
+</tt>indices would be <tt>(0,9)</tt>, while a 100 by 100 1-origin matrix might have
+the bounds <tt>((1,1),(100,100))</tt>.  (In many other languages, such bounds
+would be written in a form like <tt>1:100,&nbsp;1:100</tt>, but the present
+form fits the type system better, since each bound is of the same
+type as a general index.)<p>
+The <tt>range</tt> operation takes a bounds pair and produces the list of
+indices lying between those bounds, in index order.  For example,
+<p>
+<tt>range&nbsp;(0,4)</tt>    =&gt;    <tt>[0,1,2,3,4]</tt> <p>
+
+<p>
+<tt>range&nbsp;((0,0),(1,2))</tt>    =&gt;    <tt>[(0,0),&nbsp;(0,1),&nbsp;(0,2),&nbsp;(1,0),&nbsp;(1,1),&nbsp;(1,2)]</tt> <p>
+
+The <tt>inRange</tt> predicate determines whether an index lies between a given
+pair of bounds.  (For a tuple type, this test is performed
+component-wise.)  Finally, the <tt>index</tt> operation allows
+a particular element of an array to be addressed: given a bounds pair and an
+in-range index, the operation yields the zero-origin ordinal of the
+index within the range; for example:
+<p>
+<tt>index&nbsp;(1,9)&nbsp;2</tt>    =&gt;    <tt>1</tt> <p>
+
+<p>
+<tt>index&nbsp;((0,0),(1,2))&nbsp;(1,1)</tt>    =&gt;    <tt>4</tt> <p>
+<p>
+<a name="sect13.2"></a>
+<h3>13.2<tt>&nbsp;&nbsp;</tt>Array Creation</h3>
+Haskell's monolithic array creation function forms an array from a
+pair of bounds and a list of index-value pairs (an <I>association
+list</I>):
+<tt><br>
+
+<br>
+array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Ix&nbsp;a)&nbsp;=&gt;&nbsp;(a,a)&nbsp;-&gt;&nbsp;[(a,b)]&nbsp;-&gt;&nbsp;Array&nbsp;a&nbsp;b<br>
+
+<br>
+
+</tt>Here, for example, is a definition of an array of the squares
+of numbers from 1 to 100:
+<tt><br>
+
+<br>
+squares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;array&nbsp;(1,100)&nbsp;[(i,&nbsp;i*i)&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;[1..100]]<br>
+
+<br>
+
+</tt>This array expression is typical in using a list comprehension for
+the association list; in fact, this usage results in array expressions
+much like the <I>array comprehensions</I> of the language Id [<a href="haskell-tutorial.html#$id-manual">6</a>].<p>
+Array subscripting is performed with the infix operator <tt>!</tt>, and the
+bounds of an array can be extracted with the function <tt>bounds</tt>:
+<p>
+<tt>squares!7</tt>    =&gt;    <tt>49</tt> <p>
+
+<p>
+<tt>bounds&nbsp;squares</tt>    =&gt;    <tt>(1,100)</tt> <p>
+
+We might  generalize this example by parameterizing the bounds and the
+function to be applied to each index:
+<tt><br>
+
+<br>
+mkArray&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Ix&nbsp;a)&nbsp;=&gt;&nbsp;(a&nbsp;-&gt;&nbsp;b)&nbsp;-&gt;&nbsp;(a,a)&nbsp;-&gt;&nbsp;Array&nbsp;a&nbsp;b<br>
+mkArray&nbsp;f&nbsp;bnds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;array&nbsp;bnds&nbsp;[(i,&nbsp;f&nbsp;i)&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;range&nbsp;bnds]<br>
+
+<br>
+
+</tt>Thus, we could define <tt>squares</tt> as <tt>mkArray&nbsp;(\i&nbsp;-&gt;&nbsp;i&nbsp;*&nbsp;i)&nbsp;(1,100)</tt>.<p>
+Many arrays are defined recursively; that is, with the values of some
+elements depending on the values of others.  Here, for example, we
+have a function returning an array of Fibonacci numbers:
+<tt><br>
+
+<br>
+fibs&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Int&nbsp;-&gt;&nbsp;Array&nbsp;Int&nbsp;Int<br>
+fibs&nbsp;n&nbsp;&nbsp;=&nbsp;&nbsp;a&nbsp;&nbsp;where&nbsp;a&nbsp;=&nbsp;array&nbsp;(0,n)&nbsp;([(0,&nbsp;1),&nbsp;(1,&nbsp;1)]&nbsp;++&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(i,&nbsp;a!(i-2)&nbsp;+&nbsp;a!(i-1))&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;[2..n]])<br>
+
+<br>
+
+</tt>Another example of such a recurrence is the <I>n</I> by <I>n</I> <I>wavefront
+</I>matrix, in which elements of the first row and first column all have
+the value <I>1</I> and other elements are sums of their neighbors to the
+west, northwest, and north:
+<tt><br>
+
+<br>
+wavefront&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Int&nbsp;-&gt;&nbsp;Array&nbsp;(Int,Int)&nbsp;Int<br>
+wavefront&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;a&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;array&nbsp;((1,1),(n,n))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;([((1,j),&nbsp;1)&nbsp;|&nbsp;j&nbsp;&lt;-&nbsp;[1..n]]&nbsp;++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[((i,1),&nbsp;1)&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;[2..n]]&nbsp;++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[((i,j),&nbsp;a!(i,j-1)&nbsp;+&nbsp;a!(i-1,j-1)&nbsp;+&nbsp;a!(i-1,j))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;[2..n],&nbsp;j&nbsp;&lt;-&nbsp;[2..n]])<br>
+
+<br>
+
+</tt>The wavefront matrix is so called because in a parallel
+implementation, the recurrence dictates that the computation can begin
+with the first row and column in parallel and proceed as a
+wedge-shaped wave, traveling from northwest to southeast.  It is
+important to note, however, that no order of computation is specified
+by the association list.<p>
+In each of our examples so far, we have given a unique association for
+each index of the array and only for the indices within the bounds
+of the array, and indeed, we must do this in general for an array
+be fully defined.  An association with an out-of-bounds index results
+in an error; if an index is missing or appears more than once, however,
+there is no immediate error, but the value of the array at that index
+is then undefined, so that subscripting the array with such an index
+yields an error.<p>
+<a name="sect13.3"></a>
+<h3>13.3<tt>&nbsp;&nbsp;</tt>Accumulation</h3>
+We can relax the restriction that an index appear at most once in the
+association list by specifying how to combine multiple values
+associated with a single index; the result is called an <I>accumulated
+array</I>:
+<tt><br>
+
+<br>
+accumArray&nbsp;::&nbsp;(Ix&nbsp;a)&nbsp;-&gt;&nbsp;(b&nbsp;-&gt;&nbsp;c&nbsp;-&gt;&nbsp;b)&nbsp;-&gt;&nbsp;b&nbsp;-&gt;&nbsp;(a,a)&nbsp;-&gt;&nbsp;[Assoc&nbsp;a&nbsp;c]&nbsp;-&gt;&nbsp;Array&nbsp;a&nbsp;b<br>
+
+<br>
+
+</tt>The first argument of <tt>accumArray</tt> is the <I>accumulating function</I>,
+the second is an initial value (the same for each element of the array),
+and the remaining arguments are bounds and an association list, as with
+the <tt>array</tt> function.  Typically, the accumulating function is <tt>(+)</tt>, and
+the initial value, zero; for example, this function takes a pair of
+bounds and a list of values (of an index type) and yields a histogram;
+that is, a table of the number of occurrences of each value within the
+bounds:
+<tt><br>
+
+<br>
+hist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Ix&nbsp;a,&nbsp;Integral&nbsp;b)&nbsp;=&gt;&nbsp;(a,a)&nbsp;-&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;Array&nbsp;a&nbsp;b<br>
+hist&nbsp;bnds&nbsp;is&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;accumArray&nbsp;(+)&nbsp;0&nbsp;bnds&nbsp;[(i,&nbsp;1)&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;is,&nbsp;inRange&nbsp;bnds&nbsp;i]<br>
+
+<br>
+
+</tt>Suppose we have a collection of measurements on the interval <I>[a,b)</I>, and
+we want to divide the interval into decades and count the number of
+measurements within each:
+<tt><br>
+
+<br>
+decades&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(RealFrac&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;Array&nbsp;Int&nbsp;Int<br>
+decades&nbsp;a&nbsp;b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;hist&nbsp;(0,9)&nbsp;.&nbsp;map&nbsp;decade<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;decade&nbsp;x&nbsp;=&nbsp;floor&nbsp;((x&nbsp;-&nbsp;a)&nbsp;*&nbsp;s)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;10&nbsp;/&nbsp;(b&nbsp;-&nbsp;a)<br>
+
+<br>
+<p>
+</tt><a name="sect13.4"></a>
+<h3>13.4<tt>&nbsp;&nbsp;</tt>Incremental updates</h3>
+In addition to the monolithic array creation functions, Haskell also
+has an incremental array update function, written as the infix
+operator <tt>//</tt>; the simplest case, an array <tt>a</tt> with element <tt>i
+</tt>updated to <tt>v</tt>, is written <tt>a&nbsp;//&nbsp;[(i,&nbsp;v)]</tt>.  The reason for the square
+brackets is that the left argument of <tt>(//)</tt> is an association list,
+usually containing a proper subset of the indices of the array:
+<tt><br>
+
+<br>
+(//)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Ix&nbsp;a)&nbsp;=&gt;&nbsp;Array&nbsp;a&nbsp;b&nbsp;-&gt;&nbsp;[(a,b)]&nbsp;-&gt;&nbsp;Array&nbsp;a&nbsp;b<br>
+
+<br>
+
+</tt>As with the <tt>array</tt> function, the indices in the association list
+must be unique for the values to be defined.  For example, here
+is a function to interchange two rows of a matrix:
+<tt><br>
+
+<br>
+swapRows&nbsp;::&nbsp;(Ix&nbsp;a,&nbsp;Ix&nbsp;b,&nbsp;Enum&nbsp;b)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Array&nbsp;(a,b)&nbsp;c&nbsp;-&gt;&nbsp;Array&nbsp;(a,b)&nbsp;c<br>
+swapRows&nbsp;i&nbsp;i'&nbsp;a&nbsp;=&nbsp;&nbsp;a&nbsp;//&nbsp;([((i&nbsp;,j),&nbsp;a!(i',j))&nbsp;|&nbsp;j&nbsp;&lt;-&nbsp;[jLo..jHi]]&nbsp;++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[((i',j),&nbsp;a!(i&nbsp;,j))&nbsp;|&nbsp;j&nbsp;&lt;-&nbsp;[jLo..jHi]])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;((iLo,jLo),(iHi,jHi))&nbsp;=&nbsp;bounds&nbsp;a<br>
+
+<br>
+
+</tt>The concatenation here of two separate list comprehensions over the same
+list of <tt>j</tt> indices is, however, a slight inefficiency; it's like
+writing two loops where one will do in an imperative language.
+Never fear, we can perform the equivalent of a loop fusion optimization
+in Haskell:
+<tt><br>
+
+<br>
+swapRows&nbsp;i&nbsp;i'&nbsp;a&nbsp;=&nbsp;&nbsp;a&nbsp;//&nbsp;[assoc&nbsp;|&nbsp;j&nbsp;&lt;-&nbsp;[jLo..jHi],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assoc&nbsp;&lt;-&nbsp;[((i&nbsp;,j),&nbsp;a!(i',j)),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((i',j),&nbsp;a!(i,&nbsp;j))]&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;((iLo,jLo),(iHi,jHi))&nbsp;=&nbsp;bounds&nbsp;a<br>
+
+<br>
+<p>
+</tt><a name="sect13.5"></a>
+<h3>13.5<tt>&nbsp;&nbsp;</tt>An example: Matrix Multiplication</h3><p>
+We complete our introduction to Haskell arrays with the familiar
+example of matrix multiplication, taking advantage of overloading
+to define a fairly general function.  Since only multiplication and
+addition on the element type of the matrices is involved, we get
+a function that multiplies matrices of any numeric type unless we
+try hard not to.  Additionally, if we are careful to apply only
+<tt>(!)</tt> and the operations of <tt>Ix</tt> to indices, we get genericity over
+index types, and in fact, the four row and column index types need
+not all be the same.  For simplicity, however, we require that
+the left column indices and right row indices be of the same type, and
+moreover, that the bounds be equal:
+<tt><br>
+
+<br>
+matMult&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Ix&nbsp;a,&nbsp;Ix&nbsp;b,&nbsp;Ix&nbsp;c,&nbsp;Num&nbsp;d)&nbsp;=&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array&nbsp;(a,b)&nbsp;d&nbsp;-&gt;&nbsp;Array&nbsp;(b,c)&nbsp;d&nbsp;-&gt;&nbsp;Array&nbsp;(a,c)&nbsp;d<br>
+matMult&nbsp;x&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;array&nbsp;resultBounds<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[((i,j),&nbsp;sum&nbsp;[x!(i,k)&nbsp;*&nbsp;y!(k,j)&nbsp;|&nbsp;k&nbsp;&lt;-&nbsp;range&nbsp;(lj,uj)])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;range&nbsp;(li,ui),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j&nbsp;&lt;-&nbsp;range&nbsp;(lj',uj')&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;((li,lj),(ui,uj))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;bounds&nbsp;x<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((li',lj'),(ui',uj'))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;bounds&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBounds<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;(lj,uj)==(li',ui')&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;((li,lj'),(ui,uj'))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;otherwise&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;error&nbsp;"matMult:&nbsp;incompatible&nbsp;bounds"<br>
+
+<br>
+
+</tt>As an aside, we can also define <tt>matMult</tt> using <tt>accumArray</tt>,
+resulting in a presentation that more closely resembles the
+usual formulation in an imperative language:
+<tt><br>
+
+<br>
+matMult&nbsp;x&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;accumArray&nbsp;(+)&nbsp;0&nbsp;resultBounds<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[((i,j),&nbsp;x!(i,k)&nbsp;*&nbsp;y!(k,j))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;range&nbsp;(li,ui),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j&nbsp;&lt;-&nbsp;range&nbsp;(lj',uj')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k&nbsp;&lt;-&nbsp;range&nbsp;(lj,uj)&nbsp;&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;((li,lj),(ui,uj))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;bounds&nbsp;x<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((li',lj'),(ui',uj'))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;bounds&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBounds<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;(lj,uj)==(li',ui')&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;((li,lj'),(ui,uj'))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;otherwise&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;error&nbsp;"matMult:&nbsp;incompatible&nbsp;bounds"<br>
+
+<br>
+<p>
+</tt>We can generalize further by making the function higher-order,
+simply replacing <tt>sum</tt> and <tt>(*)</tt> by functional parameters:
+<tt><br>
+
+<br>
+genMatMult&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Ix&nbsp;a,&nbsp;Ix&nbsp;b,&nbsp;Ix&nbsp;c)&nbsp;=&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;([f]&nbsp;-&gt;&nbsp;g)&nbsp;-&gt;&nbsp;(d&nbsp;-&gt;&nbsp;e&nbsp;-&gt;&nbsp;f)&nbsp;-&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array&nbsp;(a,b)&nbsp;d&nbsp;-&gt;&nbsp;Array&nbsp;(b,c)&nbsp;e&nbsp;-&gt;&nbsp;Array&nbsp;(a,c)&nbsp;g<br>
+genMatMult&nbsp;sum'&nbsp;star&nbsp;x&nbsp;y&nbsp;&nbsp;=<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array&nbsp;resultBounds<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[((i,j),&nbsp;sum'&nbsp;[x!(i,k)&nbsp;`star`&nbsp;y!(k,j)&nbsp;|&nbsp;k&nbsp;&lt;-&nbsp;range&nbsp;(lj,uj)])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;i&nbsp;&lt;-&nbsp;range&nbsp;(li,ui),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j&nbsp;&lt;-&nbsp;range&nbsp;(lj',uj')&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;((li,lj),(ui,uj))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;bounds&nbsp;x<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((li',lj'),(ui',uj'))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;bounds&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultBounds<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;(lj,uj)==(li',ui')&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;((li,lj'),(ui,uj'))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;otherwise&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;error&nbsp;"matMult:&nbsp;incompatible&nbsp;bounds"<br>
+
+<br>
+
+</tt>APL fans will recognize the usefulness of functions like the following:
+<tt><br>
+
+<br>
+genMatMult&nbsp;maximum&nbsp;(-)<br>
+genMatMult&nbsp;and&nbsp;(==)<br>
+
+<br>
+
+</tt>With the first of these, the arguments are numeric matrices, and the
+<I>(i,j)</I>-th element of the result is the maximum difference between
+corresponding elements of the <I>i</I>-th row and <I>j</I>-th column of the
+inputs.  In the second case, the arguments are matrices of any equality
+type, and the result is a Boolean matrix in which element <I>(i,j)
+</I>is <tt>True</tt> if and only if the <I>i</I>-th row of the first argument and
+<I>j</I>-th column of the second are equal as vectors.<p>
+Notice that the element types of <tt>genMatMult</tt> need not be the same,
+but merely appropriate for the function parameter <tt>star</tt>.  We could
+generalize still further by dropping the requirement that the first
+column index and second row index types be the same; clearly, two
+matrices could be considered conformable as long as the lengths
+of the columns of the first and the rows of the second are equal.
+The reader may wish to derive this still more general version.
+(<B>Hint:</B>  Use the <tt>index</tt> operation to determine the lengths.)<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="pitfalls.html">back</a> <a href="end.html">next</a> <a href="index.html">top</a>
+<p>

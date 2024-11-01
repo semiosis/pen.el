@@ -1,0 +1,43 @@
+task: "Interpret a dream"
+doc: "Given a dream, provide an interpretation"
+tags: fun surrealism
+prompt-version: 1
+prompt: |+
+  I had a dream last night. In the dream:
+  <delim>
+  <1>
+  <delim>
+  This is my interpretation:
+  <delim>
+  <:pp>The
+engine: OpenAI Davinci
+force-engine: OpenAI Davinci
+# This was failing with 5 completions on Davinci, but worked for Codex
+# I must fix the splitting of results instead of set to 1 here
+# It was due to a timeout.
+n-completions: 3
+temperature: 0.6
+# max-generated-tokens: 500
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1
+stop-sequences:
+- "<delim>"
+- "\n\n"
+cache: on
+vars:
+- dream
+# var-defaults:
+# - "(detect-language)"
+# - "(pen-preceding-text)"
+examples:
+- "While hanging outside with friends at night, seeing vivid red constellations appearing in the sky and circular UFOs crashing into the ground."
+# preprocessors:
+# - "sed 's/^/- /'"
+# - "cat"
+info: on
+filter: off
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph

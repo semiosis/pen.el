@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/src;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Ezra" "#" "<==" "sbcl-ql"
+cd /root/.emacs.d/host/pen.el/src;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Ezra" "#" "<==" "sbcl-ql"
+cd /root/.emacs.d/host/pen.el/src;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Ezra" "#" "<==" "sbcl-ql"
+cd /root/.emacs.d/host/pen.el/src;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Ezra" "#" "<==" "sbcl-ql"
+cd /root/.emacs.d/host/pen.el/src;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Ezra" "#" "<==" "sbcl-ql"
+cd /;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "1 Timothy" "#" "<==" "sbcl-ql"
+cd /;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "I Timothy" "#" "<==" "sbcl-ql"

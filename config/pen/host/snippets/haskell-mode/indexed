@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: indexed
+# group: type
+# key: indexed
+# --
+-- https://www.youtube.com/watch?v=RtYWKG_zZrM&ab_channel=Tsoding
+type Indexed a = (Int, a)

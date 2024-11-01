@@ -1,0 +1,5 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org;  "ssh-host-run-or-local-run" "chrome" "" "#" "<==" "tclsh8.6"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org;  "ssh-host-run-or-local-run" "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/index.html" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el;  "ssh-host-run-or-local-run" "chrome" "https://www.youtube.com/watch?v=3oxpLJuryrc" "#" "<==" "tclsh8.6"
+cd /root/.pen/documents/agenda;  "ssh-host-run-or-local-run" "chrome" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "tclsh8.6"
+cd /root/.emacs.d/host/pen.el/src;  "ssh-host-run-or-local-run" "chrome" "https://www.davidjeremiah.org/radio/player" "#" "<==" "tclsh8.6"

@@ -1,0 +1,69 @@
+in-development: true
+task: "onelinerize Haskell"
+doc: "Given a chunk of Haskell code, onelinerize it"
+idea: |-
+  Haskell has alternative syntax for bypassing its whitespace syntax.
+  Attempt to use codex to perform this transformation.
+prompt-version: 1
+prompt: |+
+
+  let {a = 1; b = 2;}
+
+    module Main where {
+    main = do {
+    let {
+    a :: Int; a = 8;
+    b :: Int; b = 3;
+    };
+    let { c = a `quot` b } in print c;
+    }}
+
+    module Main where { main = do {let {a :: Int; a = 8; b :: Int; b = 3;}; let { c = a `quot` b }; print c}}
+  Transform Haskell 
+  data RGB = RGB 
+    { rgbRed   :: Word8 
+    , rgbGreen :: Word8 
+    , rgbBlue  :: Word8 
+    } deriving (Eq, Show) 
+prompt-bak: |+
+    module Main where {
+    main = do {
+    let {
+    a :: Int; a = 8;
+    b :: Int; b = 3;
+    };
+    let { c = a `quot` b } in print c;
+    }}
+
+    module Main where { main = do {let {a :: Int; a = 8; b :: Int; b = 3;}; let { c = a `quot` b }; print c}}
+  Transform Haskell 
+  data RGB = RGB 
+    { rgbRed   :: Word8 
+    , rgbGreen :: Word8 
+    , rgbBlue  :: Word8 
+    } deriving (Eq, Show) 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "###"
+cache: on
+vars:
+- "former"
+- "latter"
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+examples:
+- "boysenberries"
+- "strawberries"
+preprocessors:
+- "sed 's/^/- /'"
+- "cat"
+filter: on
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph

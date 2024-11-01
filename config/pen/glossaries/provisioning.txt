@@ -1,0 +1,67 @@
+Ansible
+    [red hat product]
+    
+    Open-source software provisioning,
+    configuration management, and application-
+    deployment tool.
+    
+    It runs on many Unix-like systems, and can
+    configure both Unix-like systems as well
+    as Microsoft Windows.
+
+    The simplest way to automate apps and IT
+    infrastructure.
+    
+    Application Deployment + Configuration
+    Management + Continuous Delivery.
+
+
+playbook
+    [#ansible]
+
+    A configuration for deployment and
+    orchestration, that allows you to describe
+    a set of tasks to be run on remote
+    machines.
+    
+    We will need to write a YAML file
+    describing the tasks of our deploy.
+
+packer
+    [hashicorp product]
+
+    https://www.packer.io/
+    https://github.com/hashicorp/packer
+
+    A tool for creating identical machine
+    images for multiple platforms from a
+    single source configuration.
+
+    Automates the creation of any type of
+    machine image.
+    
+    It embraces modern configuration
+    management by encouraging you to use
+    automated scripts to install and configure
+    the software within your Packer-made
+    images.
+    
+    Packer brings machine images into the
+    modern age, unlocking untapped potential
+    and opening new opportunities.
+
+    - azure
+    - aws
+    - gcp
+    - vbox
+    - docker
+    - vmware
+    - digitalocean
+
+Terraform
+    [hashicorp product]
+
+    Infrastructure as Code.
+
+    Provision and manage any cloud,
+    infrastructure, or service.

@@ -1,0 +1,2 @@
+;;; Generated package description from magit-gerrit.el  -*- no-byte-compile: t -*-
+(define-package "magit-gerrit" "20210831.1453" "Magit plugin for Gerrit Code Review" '((emacs "25.1") (magit "2.90.1") (transient "0.3.0")) :commit "9104713f6ea918e9faaf25f2cc182c65029db936" :authors '(("Brian Fransioli" . "assem@terranpro.org")) :maintainer '("Brian Fransioli" . "assem@terranpro.org") :url "https://github.com/emacsorphanage/magit-gerrit")

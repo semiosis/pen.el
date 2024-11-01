@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "fx" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "fx" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "fx" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "fx" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "fx" "package.json" "#" "<==" "zsh"

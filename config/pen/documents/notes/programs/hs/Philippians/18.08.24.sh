@@ -1,0 +1,6 @@
+cd /;  "Philippians" "3:14" "#" "<==" "zsh"
+cd //;  "Philippians" "3:13-14" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Philippians" "3:7" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Philippians" "3:7-8" "#" "<==" "zsh"
+cd /;  "Philippians" "3:20-21" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Philippians" "2:15" "#" "<==" "zsh"

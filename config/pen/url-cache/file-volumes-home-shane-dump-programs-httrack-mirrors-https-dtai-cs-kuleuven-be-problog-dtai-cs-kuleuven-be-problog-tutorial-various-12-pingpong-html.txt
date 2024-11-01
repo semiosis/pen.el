@@ -1,0 +1,270 @@
+Content-type: text/html
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Mirrored from dtai.cs.kuleuven.be/problog/tutorial/various/12_pingpong.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 Dec 2023 22:03:03 GMT -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ping Pong &#8212; ProbLog: Probabilistic Programming</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/problog.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/problog_editor_advanced.js"></script>
+    <script type="text/javascript" src="../../_static/ace.js"></script>
+    <script type="text/javascript" src="../../_static/mode-problog.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Incomplete Information" href="13_incomplete_info.html" />
+    <link rel="prev" title="Semantic Web" href="11_semweb.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div id="wrapper">
+
+
+  <nav id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index-2.html">
+          ProbLog</a>
+      </div>
+
+      <!-- Top menu -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav top-nav">
+            
+                <li><a href="../../index-2.html">Home</a></li>
+                <li><a href="../../index-2.html#download">Download</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../applications.html">Applications and Datasets</a></li>
+                <li><a href="../../index-2.html#help">Help</a></li>
+                <li><a href="../../index-2.html#people">People</a></li>
+                <li><a href="https://problog.readthedocs.io/">Documentation</a></li>
+                <li><a href="../../tutorial.html">Tutorial</a></li>
+                <li><a href="../../editor.html">Online</a></li>
+            
+            
+
+              
+            
+            
+            
+            
+            
+         </ul>
+
+          
+            
+          
+      </div>
+  </div><!-- /container-fluid -->
+</nav>
+
+<div id="page-wrapper">
+<div class="container">
+  <div class="row"> 
+    <div class="col-md-8 content">
+        
+<div class="row">
+<div class="col-xs-3">
+    <a href="11_semweb.html" title="Previous Chapter: Semantic Web"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Semantic Web</span>
+    </a>
+</div>
+<div class="col-xs-6">
+</div>
+<div class="col-xs-3">
+    <a href="13_incomplete_info.html" title="Next Chapter: Incomplete Information"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Incomplete In... &raquo;</span>
+    </a>
+</div>
+</div><!-- /row -->
+      
+  <div class="section" id="ping-pong">
+<h1>Ping Pong<a class="headerlink" href="#ping-pong" title="Permalink to this headline">¶</a></h1>
+<p>This example loosely follows <em>Gerstenberg and Goodman. Ping pong in Church: Productive use of concepts in human probabilistic inference. Proceedings of the 34th Annual Conference of the Cognitive Science Society, 2012.</em></p>
+<div class="col-md-12"><div class="problog-editor" data-width="100%" data-task="prob" data-advanced="false" data-trackurl="false" data-autosize="true">person(alice).
+person(bob).
+person(carla).
+person(dan).
+
+game(g1).
+game(g2).
+game(g3).
+game(g4).
+
+0.28::strength(P,10); 0.2::strength(P,8); 0.2::strength(P,12); 0.1::strength(P,6); 0.1::strength(P,14); 0.05::strength(P,4); 0.05::strength(P,16); 0.01::strength(P,2); 0.01::strength(P,18) :- person(P).
+0.1::lazy(P,G) :- person(P),game(G).
+
+strength(P,G,S) :- lazy(P,G), strength(P,RS), S is RS/2.
+strength(P,G,S) :- \+lazy(P,G), strength(P,S).
+
+team_strength([P],G,S) :- strength(P,G,S).
+team_strength([P,P2|L],G,S) :-
+     team_strength([P2|L],G,LS),
+     strength(P,G,PS),
+     min(LS,PS,S).
+min(A,B,C) :- C is min(A,B).
+
+wins(T1,T2,G,T1) :-
+     team_strength(T1,G,S1),
+     team_strength(T2,G,S2),
+     S1 &gt; S2.
+wins(T1,T2,G,T2) :-
+     \+wins(T1,T2,G,T1).
+
+evidence(wins([alice],[bob],g1,[alice]),true).
+evidence(wins([bob],[carla],g2,[carla]),true).
+evidence(wins([bob],[dan],g3,[dan]),true).
+evidence(lazy(bob,g1),true).
+query(wins([carla,alice],[bob,dan],g4,_)).</div></div></div>
+
+
+        
+<div class="row">
+<div class="col-xs-3">
+    <a href="11_semweb.html" title="Previous Chapter: Semantic Web"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Semantic Web</span>
+    </a>
+</div>
+<div class="col-xs-6">
+</div>
+<div class="col-xs-3">
+    <a href="13_incomplete_info.html" title="Next Chapter: Incomplete Information"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Incomplete In... &raquo;</span>
+    </a>
+</div>
+</div><!-- /row -->
+    </div>
+    <div class="col-md-4 menu">
+        <p class="caption"><span class="caption-text">Basic Inference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basic/01_coins.html">Tossing coins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/02_bayes.html">Bayesian networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/03_dice.html">Rolling dice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/08_rule_probs.html">Semantics of Rules with Probabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/04_pgraph.html">Probabilistic graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/05_smokers.html">Social networks (Friends &amp; Smokers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/06_more_features.html">Prolog built-ins and flexible probabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/09_higherorderfunctions.html">Higher-order functions / Meta-predicates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic/10_inhibitioneffects.html">Inhibition effects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Parameter learning</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../learning/01_bayes.html">Bayesian networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/02_smokers.html">Social networks (Friends &amp; Smokers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/03_naivebayes.html">Naive Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/04_noisyor.html">Noisy-or</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/05_structure_learning.html">Structure Learning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Sampling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sampling/02_arithmeticexpressions.html">Inferring an Arithmetic Expression</a></li>
+</ul>
+<p class="caption"><span class="caption-text">MPE Inference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mpe/01_bn.html">Bayesian network</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Decision-Theoretic ProbLog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dtproblog/01_umbrella.html">Umbrella</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dtproblog/02_viral.html">Viral Marketing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples from tutorial slides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/01_basic.html">Very basic examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/02_more.html">More examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/03_stochmem.html">Stochastic memoization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/04_bayesian_learning.html">Bayesian learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/05_complexity.html">Complexity of querying</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/06_smart_students.html">Smart students</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Various examples</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_montyhall.html">Monty Hall puzzle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_bousi.html">BousiProlog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_crowds.html">Crowd protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_nampally.html">Examples from PLP 2015</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_numberguessing.html">Nested Number Guessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_hmm.html">Hidden Markov Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_pcfg.html">Probabilistic Context Free Grammars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_slp.html">Stochastic Logic Programs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_ppdatalog.html">Probabilistic-Programming Datalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_bayesian_dataflow.html">Bayesian Dataflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_airflap.html">Aircraft Flap Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_causalpower.html">Estimating Causal Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_prism.html">PRISM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_semweb.html">Semantic Web</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ping Pong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_incomplete_info.html">Incomplete Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_robot_key.html">Do-Calculus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_spaghetti.html">Bounds for a Query with Infinite Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16_cplogic.html">Alternative view: CP-logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_taxonomy.html">Taxonomy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/01_python_interface.html">ProbLog as a Python library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/02_knowledgebases.html">Database/CSV knowledge base</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/03_aproblog.html">Algebraic ProbLog (semirings)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/04_prolog.html">Using the Prolog engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/10_urnballmodel.html">Urn-ball Model with Poisson Prior</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python recipes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/01-compile-once.html">Recipe: compile-once evaluate-many</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/02-calling_python_from_problog.html">Calling Python from ProbLog</a></li>
+</ul>
+
+    </div>
+    
+ 
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        problog.init();
+    });
+</script>
+</div>
+</div>
+<footer class="footer">
+
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; 2015-2020, KU Leuven · DTAI Research Group.<br/>
+    </p>
+  </div>
+</footer>
+    </div>  <!-- wrapper -->
+  </body>
+
+<!-- Mirrored from dtai.cs.kuleuven.be/problog/tutorial/various/12_pingpong.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 Dec 2023 22:03:03 GMT -->
+</html>

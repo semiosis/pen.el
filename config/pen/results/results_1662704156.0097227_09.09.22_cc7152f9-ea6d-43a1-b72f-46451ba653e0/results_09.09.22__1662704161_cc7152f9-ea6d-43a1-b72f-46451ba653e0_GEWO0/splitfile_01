@@ -1,0 +1,6 @@
+trap "echo 'Oh no, you are trapped!'" SIGINT SIGTERM
+while [ 1 ]
+do
+    echo "..."
+    sleep 1
+done

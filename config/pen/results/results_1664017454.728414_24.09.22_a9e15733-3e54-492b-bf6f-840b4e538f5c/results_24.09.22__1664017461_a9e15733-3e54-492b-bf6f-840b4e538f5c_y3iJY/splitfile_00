@@ -1,0 +1,10 @@
+
+  (let [out (atom [])]
+  (doseq [x out]
+  (swap! out conj x)))
+
+(defn resultset?
+
+([] true)
+
+(:a [coll

@@ -1,0 +1,8 @@
+cd /root/notes;  "hsqc" "pipexec" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "eval" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "eval" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "eval" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "eval" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "git" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "ved" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "hsqf" "# <==" "hsqc"

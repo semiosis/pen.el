@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "gc" "https://github.com/gohugoio/hugo" "#" "<==" "gc"
+cd /root/.pen/documents/notes;  "gc" "http://github.com/dzello/reveal-hugo" "#" "<==" "gc"
+cd /root/.emacs.d/host/pen.el/scripts;  "gc" "http://github.com/dzello/reveal-hugo" "#" "<==" "gc"
+cd /root/repos/dzello/reveal-hugo;  "gc" "https://github.com/gohugoio/hugo" "#" "<==" "gc"
+cd /root/programs/task-2.6.2;  "gc" "https://github.com/kdheepak/taskwarrior-tui" "#" "<==" "gc"

@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "John" "6:63" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "1:4" "#" "<==" "bash"
+cd /root/.pen/documents/agenda;  "John" "17" "#" "<==" "zsh"

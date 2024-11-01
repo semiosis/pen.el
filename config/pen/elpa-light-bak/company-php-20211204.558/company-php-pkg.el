@@ -1,0 +1,2 @@
+;;; Generated package description from company-php.el  -*- no-byte-compile: t -*-
+(define-package "company-php" "20211204.558" "A company back-end for PHP." '((cl-lib "0.5") (ac-php-core "2.0") (company "0.9")) :commit "92d559309d0c7614e2ccc982002b7ff963f3c9dd" :authors '(("jim" . "xcwenn@qq.com")) :maintainer '("jim") :keywords '("completion" "convenience" "intellisense") :url "https://github.com/xcwen/ac-php")

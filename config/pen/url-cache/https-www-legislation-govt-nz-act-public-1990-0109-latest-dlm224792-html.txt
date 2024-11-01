@@ -1,0 +1,6 @@
+HTTP/1.1 403 Forbidden
+X-Azure-Ref: 0fu0lZQAAAADQ2IbQ4D3BTKeAucVn2zVJU1lEMDNFREdFMTgyMAA1MjVhYzM3OS05NGNjLTQyYTQtYWM3Yy1hYjUxNzVmZTgzZjA=
+Date: Wed, 11 Oct 2023 00:34:05 GMT
+Connection: close
+
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'><head><meta content='text/html; charset=utf-8' http-equiv='content-type'/><style type='text/css'>body { font-family:Arial; margin-left:40px; }img  { border:0 none; }#content { margin-left: auto; margin-right: auto }#message h2 { font-size: 20px; font-weight: normal; color: #000000; margin: 34px 0px 0px 0px }#message p  { font-size: 13px; color: #000000; margin: 7px 0px 0px 0px }#errorref { font-size: 11px; color: #737373; margin-top: 41px }</style><title>Microsoft</title></head><body><div id='content'><div id='message'><h2>The request is blocked.</h2></div><div id='errorref'><span>0fu0lZQAAAADQ2IbQ4D3BTKeAucVn2zVJU1lEMDNFREdFMTgyMAA1MjVhYzM3OS05NGNjLTQyYTQtYWM3Yy1hYjUxNzVmZTgzZjA=</span></div></div></body></html>

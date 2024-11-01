@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: 12
+# group: fd
+# key: 12
+# --
+1>&2

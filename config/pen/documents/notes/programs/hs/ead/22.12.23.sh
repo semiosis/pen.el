@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "-i" "plsense" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bdap-hydra/body\\b" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "-i" "lay.*workers" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "counsel" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" "counsel" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "config" "#" "<==" "ead"

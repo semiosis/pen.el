@@ -1,0 +1,2 @@
+ for example: lazy_data <- L.readFile "some.big.file.name"
+- you: I was writing in haste. Could you help me with this? I know that I have to readFile from the L library,

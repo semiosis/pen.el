@@ -1,0 +1,551 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 9546
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 21 Feb 2021 00:01:02 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"6031a2be-a5bf"
+expires: Mon, 28 Oct 2024 10:31:43 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 8C0B:37DA99:35D781:37C664:671F65B2
+Accept-Ranges: bytes
+Date: Mon, 28 Oct 2024 10:21:46 GMT
+Via: 1.1 varnish
+Age: 3
+X-Served-By: cache-akl10334-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1730110907.790045,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: ebecb762767139b81dc5d2124281dc858e952c6a
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leonardo Borges  | Monads in small bites - Part I - Functors</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.67.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    
+
+    
+    
+    <meta property="og:title" content="Monads in small bites - Part I - Functors" />
+<meta property="og:description" content="Today I join the already bloated group of people who wrote monad tutorials. It&rsquo;s a bit of a ritual, really.
+Different than most tutorials though I aim to take a different approach. The good news is that I won&rsquo;t be comparing monads to burritos :)
+People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/" />
+<meta property="article:published_time" content="2012-11-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2012-11-30T00:00:00+00:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
+<meta itemprop="name" content="Monads in small bites - Part I - Functors">
+<meta itemprop="description" content="Today I join the already bloated group of people who wrote monad tutorials. It&rsquo;s a bit of a ritual, really.
+Different than most tutorials though I aim to take a different approach. The good news is that I won&rsquo;t be comparing monads to burritos :)
+People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that.">
+<meta itemprop="datePublished" content="2012-11-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2012-11-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1540">
+
+
+
+<meta itemprop="keywords" content="clojure,functional-programming,haskell," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Monads in small bites - Part I - Functors"/>
+<meta name="twitter:description" content="Today I join the already bloated group of people who wrote monad tutorials. It&rsquo;s a bit of a ritual, really.
+Different than most tutorials though I aim to take a different approach. The good news is that I won&rsquo;t be comparing monads to burritos :)
+People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+<header>
+    <div class="bg-black">
+        <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://leonardoborges.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Leonardo Borges
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/books/" title="Books page">
+              Books
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/writings/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/talks/" title="Projects &amp; Talks page">
+              Projects &amp; Talks
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/tags/" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+<a href="https://stackoverflow.com/users/910811/leonardoborges" target="_blank" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Stack Overflow link" rel="noopener" aria-label="follow on Stack Overflow——Opens in a new window">
+  <svg height="32px" 
+    style="enable-background:new 0 0 67 67;"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="32px"
+>
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.869 5.903l3.114 4.567-.975.665-3.115-4.567.976-.665zm-2.812 2.585l4.84 2.838-.6 1.017-4.842-2.838.602-1.017zm-1.276 2.724l5.413 1.521-.291 1.077-5.428-1.458.306-1.14zm-.588 2.461l5.687.569-.103 1.12-5.691-.513.107-1.176zm-.169 2.16h5.835v1.167h-5.835v-1.167zm7.976 3.167h-10v-6h1v5h8v-5h1v6zm.195-8.602l-.945-5.446 1.162-.202.947 5.446-1.164.202z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://twitter.com/theleoborges" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/theleoborges/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/theleoborges" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-2811271-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        WRITINGS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/&amp;text=Monads%20in%20small%20bites%20-%20Part%20I%20-%20Functors" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/&amp;title=Monads%20in%20small%20bites%20-%20Part%20I%20-%20Functors" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Monads in small bites - Part I - Functors</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2012-11-30T00:00:00Z">November 30, 2012</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Today I join the already bloated group of people who wrote monad tutorials. It&rsquo;s a bit of a ritual, really.</p>
+<p>Different than most tutorials though I aim to take a different approach. The good news is that I won&rsquo;t be comparing monads to burritos :)</p>
+<p>People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that.</p>
+<p>To that end, this tutorial will be split in four parts:</p>
+<ul>
+<li>
+<p>Part I   - Functors (this post)</p>
+</li>
+<li>
+<p><a href="/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/">Part II  - Applicative Functors</a></p>
+</li>
+<li>
+<p><a href="/2012/12/05/monads-in-small-bites-part-iii-monoids/">Part III - Monoids</a></p>
+</li>
+<li>
+<p><a href="/2012/12/08/monads-in-small-bites-part-iv-monads/">Part IV  - Monads</a></p>
+</li>
+</ul>
+<p>You might want to bookmark this page - once the other parts are up, I&rsquo;ll update the list above with the links to them.</p>
+<h3 id="before-we-start">Before we start</h3>
+<p>I know what you&rsquo;re thinking: Do I really need to know Applicative Functors just to grasp Monads?</p>
+<p>Well, no. However, I found that gradually building your knowledge from Parts I, II and III will allow you to fully grasp monads without the need for burritos or elephants.</p>
+<p>You should also be familiar with a functional programming language. Any language should be fine but you&rsquo;ll get the most out of this tutorial if you&rsquo;re familiar with Haskell and/or Clojure.</p>
+<p>If you&rsquo;re not familiar with Clojure, fear not - Clojure is a small language and the code snippets should still make sense if you put your mind to it - they&rsquo;re all short and sweet. I also encourage you to re-implement the examples in your language of choice to gain a deeper understanding on the subject.</p>
+<p>Ready then? Let&rsquo;s dive in.</p>
+<h2 id="just-enough-haskell">Just enough Haskell</h2>
+<p>This is not a Haskell tutorial but trust me when I tell you that learning just enough about its type signatures will make all the difference in the world in understanding the concepts I&rsquo;m about to present.</p>
+<p>Although I&rsquo;ll be using a little bit of Haskell syntax, I&rsquo;ll also provide implementations in Clojure. They are in order so you should be able to paste all code sample in the REPL and follow along if you wish.</p>
+<h3 id="type-signatures">Type signatures</h3>
+<p>I&rsquo;ll make this quick. Say you have a function called <code>mk-vec</code> that creates a 2D vector with <code>x</code> and <code>y</code> coordinates. Such function could easily be coded in Clojure like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>mk-vec [x y]
+  {<span style="color:#e6db74">:x</span> x <span style="color:#e6db74">:y</span> y})
+
+<span style="color:#75715e">;; using it</span>
+(<span style="color:#66d9ef">def </span>my-vec (<span style="color:#a6e22e">mk-vec</span> <span style="color:#ae81ff">10</span> <span style="color:#ae81ff">15</span>))
+(<span style="color:#e6db74">:x</span> my-vec) <span style="color:#75715e">;; 10</span>
+</code></pre></div><p>As you can see, this function takes two arguments - x and y - and returns a map - or hash if you come from Ruby - that wraps those values in it, providing an easy way to retrieve them.</p>
+<p>Now if this function had been implemented in haskell this would be its type signature - read the comments:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">import</span> <span style="color:#66d9ef">qualified</span> Data.Map <span style="color:#66d9ef">as</span> Map <span style="color:#75715e">-- just giving Data.Map an alias</span>
+<span style="color:#a6e22e">mkVec</span> <span style="color:#f92672">::</span> a <span style="color:#f92672">-&gt;</span> a <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Map</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Map</span> [<span style="color:#66d9ef">Char</span>] a <span style="color:#75715e">-- this is the type signature</span>
+
+<span style="color:#a6e22e">mkVec</span> x y <span style="color:#f92672">=</span> <span style="color:#66d9ef">Map</span><span style="color:#f92672">.</span>fromList [(<span style="color:#e6db74">&#34;x&#34;</span>, x), (<span style="color:#e6db74">&#34;y&#34;</span>, y)] <span style="color:#75715e">-- this is the implementation. You can ignore this part.</span>
+
+<span style="color:#75715e">-- using it</span>
+<span style="color:#a6e22e">myVec</span> <span style="color:#f92672">=</span> mkVec <span style="color:#ae81ff">10</span> <span style="color:#ae81ff">15</span>
+<span style="color:#66d9ef">Map</span><span style="color:#f92672">.</span>lookup <span style="color:#e6db74">&#34;x&#34;</span> myVec <span style="color:#75715e">-- Just 10 </span>
+<span style="color:#75715e">--</span>
+<span style="color:#75715e">-- ignore the actual value that is returned. Read it as 10 for now.</span>
+</code></pre></div><p>Whatever comes after the <code>::</code> is part of the function type signature. Read it like this:</p>
+<blockquote>
+<p>This is a function that receives two arguments of type <code>a</code> - which means any type - and returns a Map of key/value pairs where the key is of type <code>[Char]</code> - technically a list of <code>Char</code> values but for all effects and purposes just read it as <code>String</code> - and the value is of type <code>a</code> - the same type as its arguments.</p>
+</blockquote>
+<p>It might help to see the type signature in this light:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">mkVec</span> <span style="color:#f92672">::</span> a <span style="color:#f92672">-&gt;</span> a <span style="color:#f92672">-&gt;</span> (<span style="color:#66d9ef">Map</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Map</span> [<span style="color:#66d9ef">Char</span>] a)
+</code></pre></div><p>It highlights the return value in parenthesis.</p>
+<p>Now let&rsquo;s have a look at a built in function, <code>*</code>. As you know, it performs multiplication and this is its type signature:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">(<span style="color:#f92672">*</span>) <span style="color:#f92672">::</span> <span style="color:#66d9ef">Num</span> a <span style="color:#f92672">=&gt;</span> a <span style="color:#f92672">-&gt;</span> a <span style="color:#f92672">-&gt;</span> a
+</code></pre></div><p>Can you guess now what it means? I&rsquo;m sure you can. There&rsquo;s one small difference though: this function has a type constraint - it&rsquo;s that <strong>Num a =&gt; &hellip;</strong> part of the signature. Read it like this:</p>
+<blockquote>
+<p>This is a function that receives two arguments of type <code>a</code> and returns a value of the same type, as long as the type of <code>a</code> is an instance of <code>Num</code></p>
+</blockquote>
+<p>And that&rsquo;s it for now. Read it again to make sure it&rsquo;s fresh in your mind and then continue.</p>
+<p>As we encounter more type signatures, I&rsquo;ll walk you through each one of them - but if you got it up until now, you&rsquo;ll easily grasp the other type signatures.</p>
+<h3 id="functors">Functors</h3>
+<p>In a nutshell Functors are things that can be mapped over.</p>
+<p>Haskell defines Functors like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">class</span> <span style="color:#66d9ef">Functor</span> f <span style="color:#66d9ef">where</span>
+  fmap <span style="color:#f92672">::</span> (a <span style="color:#f92672">-&gt;</span> b) <span style="color:#f92672">-&gt;</span> f a <span style="color:#f92672">-&gt;</span> f b
+</code></pre></div><p>Let&rsquo;s dissect that type signature:</p>
+<blockquote>
+<p><strong>fmap</strong> is a function that receives two arguments: the first is a function that receives an argument of type <code>a</code> and returns a value of type <code>b</code> and the second is a Functor that contains a value of type <code>a</code> - represented by <code>f a</code>. The result of calling <code>fmap</code> is a Functor of same type - <code>f</code> - containing a value of type <strong>b</strong>, which is the result of applying the function to <strong>a</strong>.</p>
+</blockquote>
+<p>Too much? Let&rsquo;s have a look at an example: the <strong>List</strong> Functor.</p>
+<p>If we rewrite the <code>fmap</code> type signature as if it only worked on lists, this is what we&rsquo;d come up with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">  fmap <span style="color:#f92672">::</span> (a <span style="color:#f92672">-&gt;</span> b) <span style="color:#f92672">-&gt;</span> [a] <span style="color:#f92672">-&gt;</span> [b]
+</code></pre></div><p>This new type signature allows us to rewrite that last definition:</p>
+<blockquote>
+<p><strong>fmap</strong> is a function that receives two arguments: the first is a function that receives an argument of type <code>a</code> and returns a value of type <code>b</code> and the second is a List of zero or more values of type <strong>a</strong>. The result of calling <code>fmap</code> is a List of zero or more values of type <strong>b</strong>, each of which is the result of applying the function to each <code>a</code> element.</p>
+</blockquote>
+<p>Does this sound familiar to you? It should, because this is essentially what the <code>map</code> function available in most functional-<em>ish</em> languages does! It takes a function and a list, applies the function to every element in the list while putting the results into a new list, finally returning it.</p>
+<p>In fact, the <code>fmap</code> implementation of the List Functor from Haskell is implemented in terms of <code>map</code>.</p>
+<p>Let&rsquo;s see how that could be done in Clojure. I&rsquo;ll use <a href="http://clojure.org/protocols">protocols</a> and <a href="http://clojure.org/datatypes">records</a> but they are not strictly required for this.</p>
+<p>Here&rsquo;s our Functor protocol:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defprotocol </span>Functor 
+    (<span style="color:#a6e22e">fmap</span> [functor f] <span style="color:#e6db74">&#34;Maps fn over the functor f&#34;</span>))
+</code></pre></div><p>And now our List Functor:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defrecord </span>List [wrapped] 
+    Functor 
+    (<span style="color:#a6e22e">fmap</span> [functor f] 
+        (<span style="color:#a6e22e">List.</span> (map f (<span style="color:#e6db74">:wrapped</span> functor)))))
+</code></pre></div><p>In the snippet above all we&rsquo;re saying is that the List record must satisfy the Functor protocol, which makes sense. <code>fmap</code> then is responsible for <em>unwrapping</em> the value contained in the list functor and <em>mapping</em> <code>f</code> over it.</p>
+<p>Give it a go!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>my-list-functor (<span style="color:#a6e22e">List.</span> [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>])) <span style="color:#75715e">;; List{:wrapped (1 2 3)}</span>
+
+(<span style="color:#a6e22e">fmap</span> my-list-functor <span style="color:#f92672">#</span>(* <span style="color:#ae81ff">2</span> %)) <span style="color:#75715e">;; List{:wrapped (2 4 6)}</span>
+</code></pre></div><p>We can now <code>map</code> arbitrary functions over the values <code>wrapped</code> in a Functor! Awesome!</p>
+<blockquote>
+<p><strong>Note</strong>: In our Clojure version of the List Functor, it is implemented as a Record that wraps a primitive Clojure list/vector - <code>[]</code>. As I mentioned this is not necessary but I chose to do it here to explicitly show the relationship with the Haskell types.</p>
+</blockquote>
+<h3 id="dont-break-the-law">Don&rsquo;t break the law</h3>
+<p>Now that we got a feel for what Functors are, it&rsquo;s worth noting that they must obey a few laws to be considered full-fledged Functors.</p>
+<h4 id="identity">Identity</h4>
+<blockquote>
+<p>Mapping an identity function over a Functor is the same as applying identity to the Functor itself</p>
+</blockquote>
+<p>This is how Haskell puts this law:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">fmap</span> id functor <span style="color:#f92672">=</span> id functor
+</code></pre></div><p>Translating that to Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#75715e">;;This...</span>
+(<span style="color:#a6e22e">fmap</span> my-list-functor identity) <span style="color:#75715e">;; List{:wrapped (1 2 3)}</span>
+
+<span style="color:#75715e">;;is the same as:</span>
+(identity my-list-functor) <span style="color:#75715e">;; List{:wrapped [1 2 3]}</span>
+</code></pre></div><h4 id="composition">Composition</h4>
+<blockquote>
+<p>If you compose the functions <code>f</code> and <code>g</code> and map the resulting function over the Functor, that is the same as first mapping <code>g</code> over the Functor and <code>then</code> mapping <code>f</code> over the resulting Functor.</p>
+</blockquote>
+<p>From the description you can see that this law involves <a href="http://en.wikipedia.org/wiki/Function_composition">function composition</a>. In Clojure, that&rsquo;s achieved with the <a href="http://clojuredocs.org/clojure_core/clojure.core/comp">comp</a> function.</p>
+<p>Again, let&rsquo;s see how this law is defined in Haskell:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">fmap</span> (f <span style="color:#f92672">.</span> g) functor <span style="color:#f92672">=</span> fmap f (fmap g functor)
+</code></pre></div><blockquote>
+<p><strong>Note</strong>: The <code>.</code> operator denotes function composition in Haskell</p>
+</blockquote>
+<p>And the proof in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>f <span style="color:#f92672">#</span>(+ <span style="color:#ae81ff">10</span> %))
+(<span style="color:#66d9ef">def </span>g <span style="color:#f92672">#</span>(* <span style="color:#ae81ff">2</span> %))
+
+<span style="color:#75715e">;; given the above, this...</span>
+(<span style="color:#a6e22e">fmap</span> my-list-functor (comp  f g)) <span style="color:#75715e">;; List{:wrapped (12 14 16)}</span>
+
+<span style="color:#75715e">;; is the same as:</span>
+(-&gt; my-list-functor (<span style="color:#a6e22e">fmap</span> g) (<span style="color:#a6e22e">fmap</span> f)) <span style="color:#75715e">;; List{:wrapped (12 14 16)}</span>
+</code></pre></div><blockquote>
+<p><strong>Note</strong>: make sure you&rsquo;re familiar with <a href="http://clojuredocs.org/clojure_core/clojure.core/-%3E">Clojure&rsquo;s threading macro: <strong>-&gt;</strong> </a>. I&rsquo;ll be using it in most code snippets.</p>
+</blockquote>
+<p>Nice! All laws hold so we can sleep peacefully in the knowledge that our Functor works as expected.</p>
+<p>Now go get a drink and stay tuned for <a href="/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/">Part II</a>, where I&rsquo;ll introduce <em>Applicative Functors</em>.</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/clojure" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">clojure</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/functional-programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">functional-programming</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/haskell" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">haskell</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "leonardoborges" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/writings/2012/09/10/clojure-leiningen-heroku-aot-compilation-gotchas/">Clojure, leiningen 2 and Heroku: AOT compilation gotchas</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/08/23/sean-corfield-clojure-and-cfml-sitting-in-a-tree/">Sean Corfield: Clojure and CFML sitting in a tree</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/02/22/clj-syd-report-number-0/">clj syd report number 0</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/02/05/project-euler-problem-4-in-clojure/">project euler problem 4 in clojure</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/01/22/backlog-ola-bini-on-clojure-conj/">backlog ola bini on clojure conj</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/01/20/announcing-the-sydney-clojure-user-group/">announcing the sydney clojure user group</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2011/10/12/report-clojure-meetup-1/">Report: Clojure Meetup - 1</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
+    &copy;  Leonardo Borges 2021 
+  </a>
+    <div>
+
+
+<a href="https://stackoverflow.com/users/910811/leonardoborges" target="_blank" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Stack Overflow link" rel="noopener" aria-label="follow on Stack Overflow——Opens in a new window">
+  <svg height="32px" 
+    style="enable-background:new 0 0 67 67;"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="32px"
+>
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.869 5.903l3.114 4.567-.975.665-3.115-4.567.976-.665zm-2.812 2.585l4.84 2.838-.6 1.017-4.842-2.838.602-1.017zm-1.276 2.724l5.413 1.521-.291 1.077-5.428-1.458.306-1.14zm-.588 2.461l5.687.569-.103 1.12-5.691-.513.107-1.176zm-.169 2.16h5.835v1.167h-5.835v-1.167zm7.976 3.167h-10v-6h1v5h8v-5h1v6zm.195-8.602l-.945-5.446 1.162-.202.947 5.446-1.164.202z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://twitter.com/theleoborges" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/theleoborges/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/theleoborges" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

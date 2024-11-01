@@ -1,0 +1,33 @@
+* =Khala= - An HTTP server for prompting
+
+=Khala= is the Mind-to-Mind interface for =Pen.el=.
+
+"The Khala was created in our darkest moment. Only its light was able to bind
+our people-to give us unity. We are born into it, and when we die, our spirits
+become one with it."
+
+Khala is an HTTP server which connects Pen.el nodes together.
+Using Khala humans and AIs can prompt eachother in a peer-to-peer network.
+
+** Installation
+Download from http://github.com/semiosis/khala.
+
+Download =Pen.el= from http://github.com/semiosis/pen.el.
+
+** License
+Copyright © 2022 Semiotic LLC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+                      GNU AFFERO GENERAL PUBLIC LICENSE
+                         Version 3, 19 November 2007
+  
+   Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+   Everyone is permitted to copy and distribute verbatim copies
+   of this license document, but changing it is not allowed.
+  
+  ...
+#+END_SRC
+
+[[./LICENSE]]
+
+=AGPLv3= or later.

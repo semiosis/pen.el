@@ -1,0 +1,19 @@
+
+  (let ((n (- char ?a)))
+    (if (< n 0)
+        (error "number must be between 1 and 26")
+      (char-to-string (+ ?a n)))))
+
+(defun pen-modeline-name-short ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (s-replace-regexp
+            "pen-[^a-zA-Z0-9]*" "" dn))
+          (t
+           "emacs"))))
+
+  ;; TODO: this is a hack to get the pen daemon name in the modeline. we should use the actual daemon name.
+(defun pen-daemon-name ()
+  (let* ((

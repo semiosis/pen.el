@@ -1,0 +1,16 @@
+"toUpper" is a function from the "Data.Char" module.
+
+Documentation:
+
+"toUpper" is a function from the "Data.Char" module.
+
+Module Data.Char
+
+Data type Char
+
+data Char = C {
+    isUpper :: Bool
+    -- ^ True iff the character is in upper case
+    isLower :: Bool
+    -- ^ True iff the character is in lower case
+    isLetter :: B

@@ -1,0 +1,8 @@
+cd /root/notes;  "I" "John" "3:14-20" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "4:14-20" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "John" "1:6-9" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "John" "1:6-9" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "John" "2:9" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "Corinthians" "10:5-12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "Corinthians" "13:5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Corinthians" "15:51-54" "#" "<==" "withopts"

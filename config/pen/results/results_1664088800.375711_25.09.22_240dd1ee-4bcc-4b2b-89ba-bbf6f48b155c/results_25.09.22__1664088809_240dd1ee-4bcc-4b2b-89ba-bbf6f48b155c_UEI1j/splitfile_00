@@ -1,0 +1,3 @@
+ -name todo.org | xargs rm
+root@pen-mele:~/notes# find . -name *-lock.json | xargs rm
+root@pen-mele:~/notes# find .

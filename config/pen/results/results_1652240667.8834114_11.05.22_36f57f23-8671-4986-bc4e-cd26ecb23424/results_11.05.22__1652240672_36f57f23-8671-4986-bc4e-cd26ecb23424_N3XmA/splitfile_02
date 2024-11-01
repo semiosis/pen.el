@@ -1,0 +1,1 @@
+- Rich Hickey (1956-): Okay, sure. So in Clojure you can use either keys [path stat] or a map {:keys [path stat]}.

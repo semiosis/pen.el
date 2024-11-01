@@ -1,0 +1,32 @@
+RabbitMQ
+    An open-source message-broker software
+    that originally implemented the Advanced
+    Message Queuing Protocol and has since
+    been extended with a plug-in architecture
+    to support Streaming Text Oriented
+    Messaging Protocol, MQ Telemetry
+    Transport, and other protocols.
+
+    See "Amazon Simple Queue Service".
+
+cloud orchestration
+    The use of programming technology to
+    manage the interconnections and
+    interactions among workloads on public and
+    private cloud infrastructure.
+    
+    It connects automated tasks into a
+    cohesive workflow to accomplish a goal,
+    with permissions oversight and policy
+    enforcement.
+
+Nomad
+    A flexible workload orchestrator that
+    enables an organization to easily deploy
+    and manage any containerized or legacy
+    application using a single, unified
+    workflow.
+    
+    Nomad can run a diverse workload of
+    Docker, non-containerized, microservice,
+    and batch applications.

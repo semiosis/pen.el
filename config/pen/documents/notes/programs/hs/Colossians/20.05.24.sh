@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Colossians" "1:18" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Colossians" "1:18" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Colossians" "2:19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Colossians" "2:18-19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Colossians" "2" "#" "<==" "zsh"
+cd /;  "Colossians" "2:6" "#" "<==" "zsh"
+cd /;  "Colossians" "2:5-6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Colossians" "1:18" "#" "<==" "zsh"

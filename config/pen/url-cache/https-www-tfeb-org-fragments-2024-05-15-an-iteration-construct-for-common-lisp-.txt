@@ -1,0 +1,376 @@
+HTTP/1.1 200 OK
+Date: Fri, 17 May 2024 05:59:00 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Wed, 15 May 2024 07:36:39 GMT
+ETag: "4b62-618792ddd310a"
+Accept-Ranges: bytes
+Content-Length: 19298
+Keep-Alive: timeout=5, max=100
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Štar: an iteration construct for Common Lisp</title>
+    <meta name="description" content="Štar is a concise and extensible iteration construct for Common Lisp which aims to be pleasant to use, easy to understand, fast if needed, general, and not to look like Fortran....">
+    <meta name="author"      content="Tim Bradshaw">
+    <meta name="keywords"    content="programming, lisp">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="icon"      href="/images/tfb-icon.gif">
+    <link rel="canonical" href="https://www.tfeb.org/fragments/2024/05/15/an-iteration-construct-for-common-lisp/">
+    <link rel="next" href="/fragments/2024/05/04/the-tory-death-spiral/">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/fragments/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/fragments/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/fragments/css/scribble.css">
+    <link rel="stylesheet" type="text/css" href="/fragments/css/custom.css">
+    <!-- MathJax -->
+    <script type="text/javascript" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js">
+    </script>
+    <!-- Feeds -->
+    <link rel="alternate" type="application/atom+xml"
+          href="/fragments/feeds/all.atom.xml" title="Atom Feed">
+    <link rel="alternate" type="application/rss+xml"
+          href="/fragments/feeds/all.rss.xml" title="RSS Feed">
+  </head>
+  <body>
+    <!-- A standard Twitter Bootstrap nav bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+
+      <a href="/fragments/index.html" class="navbar-brand">Fragments</a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbar_collapse" aria-controls="navbar_collapse"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar_collapse">
+          <ul class="navbar-nav mr-auto">
+
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Tags <b class="caret"></b>
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/fragments/tags/climate.html">climate</a><a class="dropdown-item" href="/fragments/tags/computer.html">computer</a><a class="dropdown-item" href="/fragments/tags/correction.html">correction</a><a class="dropdown-item" href="/fragments/tags/doomed.html">doomed</a><a class="dropdown-item" href="/fragments/tags/economics.html">economics</a><a class="dropdown-item" href="/fragments/tags/guest.html">guest</a><a class="dropdown-item" href="/fragments/tags/history.html">history</a><a class="dropdown-item" href="/fragments/tags/language.html">language</a><a class="dropdown-item" href="/fragments/tags/lisp.html">lisp</a><a class="dropdown-item" href="/fragments/tags/maths.html">maths</a><a class="dropdown-item" href="/fragments/tags/meta.html">meta</a><a class="dropdown-item" href="/fragments/tags/music.html">music</a><a class="dropdown-item" href="/fragments/tags/orwell.html">orwell</a><a class="dropdown-item" href="/fragments/tags/photography.html">photography</a><a class="dropdown-item" href="/fragments/tags/physics.html">physics</a><a class="dropdown-item" href="/fragments/tags/pointers.html">pointers</a><a class="dropdown-item" href="/fragments/tags/politics.html">politics</a><a class="dropdown-item" href="/fragments/tags/programming.html">programming</a><a class="dropdown-item" href="/fragments/tags/science.html">science</a><a class="dropdown-item" href="/fragments/tags/security.html">security</a><a class="dropdown-item" href="/fragments/tags/stories.html">stories</a><a class="dropdown-item" href="/fragments/tags/tube.html">tube</a>
+              </div>
+            </li>
+
+            <li>
+              <a class="nav-link" href="/fragments/About.html">About</a>
+            </li> 
+
+            <li class="nav-item">
+              <a class="nav-link" href="/fragments/feeds/all.atom.xml">Atom</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/fragments/feeds/all.rss.xml">RSS</a>
+            </li>
+          </ul>
+      </div>
+
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Main column -->
+        <div id="content" class="col-md-12">
+
+
+
+
+
+          <article>
+  <header>
+    <h1>Štar: an iteration construct for Common Lisp</h1>
+    <p class='date-and-tags'>
+<time datetime="2024-05-15" pubdate="true">2024-05-15</time> :: <span class="tags"><a href="/fragments/tags/programming.html">programming</a>, <a href="/fragments/tags/lisp.html">lisp</a></span></p>
+  </header>
+
+<p>Štar is a concise and extensible iteration construct for Common Lisp which aims to be pleasant to use, easy to understand, fast if needed, general, and not to look like Fortran.</p>
+<!-- more-->
+
+<p>Common Lisp has multiple iteration constructs: mapping functions such as <code>mapcar</code>, special-purpose constructs such as <code>dotimes</code> and <code>dolist</code>, the general but somewhat clumsy construct which is <code>do</code> and <code>do*</code>, and finally the extended <code>loop</code> macro which aims to embed a &lsquo;more friendly&rsquo; iteration language into CL and succeeds in being so complex that it is often hard to know whether a given form is legal or not without poring over <code>loop</code>&rsquo;s grammar.</p>
+
+<p>None of these constructs manage to be all three of pleasant to use, easy to understand and general. <code>loop</code> somehow fails to be any of these things in many cases. None are extensible<sup><a href="#2024-05-15-an-iteration-construct-for-common-lisp-footnote-1-definition" name="2024-05-15-an-iteration-construct-for-common-lisp-footnote-1-return">1</a></sup>.</p>
+
+<p>But Common Lisp is a Lisp, and Lisp&rsquo;s huge advantage is that it is a programming language in which it is easy to write programming languages, or parts of them, like iteration constructs. That is, after all, how most or all of the existing constructs started life.</p>
+
+<p>Lots of these have been written, of course. Štar tries to distinguish itself by being as simple as possible: it has as little special syntax as I could work out how to give it – there is no special little language you need to learn. It also has no inherent knowledge about how to iterate over any particular structure: it doesn&rsquo;t know how to iterate over lists, or ranges of numbers. Rather it knows that iterating has to answer two questions:</p>
+
+<ul>
+ <li>is there more?</li>
+ <li>what is the next thing?</li></ul>
+
+<p>In addition it knows how to ask another question:</p>
+
+<ul>
+ <li>is there any information I can use to make asking the first two questions faster?</li></ul>
+
+<h2 id="what-it-looks-like">What it looks like</h2>
+
+<pre class="brush: lisp"><code>(for ((e (in-list l)))
+  (print e))
+
+(for (((k v) (in-hash-table h)))
+  ...)
+
+(for* ((entry (in-list entries))
+       (element (in-list entry)))
+  ...)
+
+(defun in-alist (alist)
+  (values
+    (lambda () (not (null alist)))
+    (lambda ()
+      (destructuring-bind ((k . v) . more) alist
+        (setf alist more)
+        (values k v)))))
+
+(for (((k v) (in-alist ...)))
+  ...)</code></pre>
+
+<p>These are some simple examples: the last shows how easy it is to teach Štar to iterate over new things, or over existing things in new ways. Not shown here is that it&rsquo;s also pretty easy to teach it how to optimize new iterators and to make various declarations about things.</p>
+
+<h2 id="what-štar-is-not">What Štar is not</h2>
+
+<p>Štar is an <em>iteration construct</em>: what it does is to iterate. It has nothing to do with collecting values. For Štar, iteration and value accumulation are orthogonal problems which should be solved by orthogonal constructs. In particular if you wanted to make a list of the even numbers from a list, you might to this by using Štar together with a value-collection macro:</p>
+
+<pre class="brush: lisp"><code>(collecting
+  (for ((e (in-list ...)))
+    (when (evenp e)
+      (collect e))))</code></pre>
+
+<p>This is yet another way in which Štar differs from <code>loop</code> and many other constructs. In particular Štar&rsquo;s point of view is that mixing together iteration and value accumulation results in a system that is not very good at either.</p>
+
+<p>Similarly, Štar doesn&rsquo;t contain a mass of syntax letting you select only certain values, or allowing you to terminate iteration early: you don&rsquo;t write</p>
+
+<pre class="brush: lisp"><code>(loop for x in l while (numberp x) do ...)</code></pre>
+
+<p>Instead you write</p>
+
+<pre class="brush: lisp"><code>(for ((x (in-list l)))
+  (unless (numberp x) (final))
+  ...)</code></pre>
+
+<p>The body of an iteration is exactly like the body of <code>defun</code>, except there are some local functions which you can call to skip to the next iteration or finish the iteration.</p>
+
+<p>Štar, of course, doesn&rsquo;t bundle some destructuring system which will inevitably be subtly incompatible with other destructuring systems while also not being usable independently. If you want destructuring, use a full-fat system of your choice.</p>
+
+<p>You probably get the idea: Štar is a tool whose job is to iterate: not some leaking bag of broken abstractions.</p>
+
+<h2 id="multiple-values">Multiple values</h2>
+
+<p>One thing that Štar <em>does</em> do is to take multiple values seriously. A clause which specifies a list of variables will bind them to the multiple values returned by the iterator. Multiple values, unlike destructuring, are something you really have to have in the iteration construct itself.</p>
+
+<h2 id="the-thing-that-doesnt-really-matter-but-everyone-cares-about">The thing that doesn&rsquo;t really matter but everyone cares about</h2>
+
+<p>So, OK, Štar is an extensible, general, iteration construct. Obviously it will have traded performance for all this. I mean, it&rsquo;s the old Lisp story, <a href="https://www.dreamsongs.com/WorseIsBetter.html" title="Worse is better">the one Gabriel told us</a> long ago. Right?</p>
+
+<pre><code>* Running benchmarks
+** lists of length 2000, nesting 3
+what                                                  seconds      ratio
+star                                                   30.312      1.000
+loop                                                   30.071      0.992
+dolist                                                 21.594      0.712
+** range 100000, nesting 2
+what                                                  seconds      ratio
+star/with-step                                          9.414      1.000
+star/no-step                                            9.406      0.999
+loop                                                   18.412      1.956
+dotimes                                                 9.469      1.006</code></pre>
+
+<h2 id="a-sketch-of-štar">A sketch of Štar</h2>
+
+<p>Štar has three parts, four if you count the iterators:</p>
+
+<ul>
+ <li>the iteration constructs themselves and bindings they make;</li>
+ <li>a protocol for defining new iterators;</li>
+ <li>a protocol for defining optimizers for iterators;</li>
+ <li>a collection of predefined iterators and optimizers for them.</li></ul>
+
+<p>The first three parts are much more finished than the fourth: most of the existing iterators were written as proofs of concept and may well change, get better, or go away.</p>
+
+<h3 id="iterators">Iterators</h3>
+
+<p>These are forms (usually, named function calls) which return two values, both functions of no arguments:</p>
+
+<ul>
+ <li>the first value is called and should return true if there is more to do;</li>
+ <li>the second value is called to return the next value or values of the iterator.</li></ul>
+
+<p>These functions answer the first two questions Štar needs to ask: is there more, and if there is, what is it? These two functions obviously share state in general.</p>
+
+<p>To answer the third question – how do I make things faster? – named iterator functions can have <em>optimizers</em>: these are functions called by Štar at macroexpansion time which tell it how to make things faster. It&rsquo;s up to an optimizer to ensure the semantics are the same for the optimized and unoptimized versions. Optimizers can specify a set of bindings to make, declarations for them, how to iterate, and some other things.</p>
+
+<p>It&rsquo;s possible to install and remove optimizers, and to dynamically bind sets of them. This might be useful, for instance, to compile a file where some particular assumptions (&lsquo;all vectors are vectors of floats&rsquo;) are true.</p>
+
+<h3 id="iteration-constructs">Iteration constructs</h3>
+
+<p>There are two:</p>
+
+<ul>
+ <li><code>for</code> iterates in parallel;</li>
+ <li><code>for*</code> defines nested loops: <code>(for* ((...) (...)) ...)</code> is like <code>(for ((...)) (for ((...)) ...))</code>.</li></ul>
+
+<p>Note that because of the way iterators work, sequential binding within one loop makes no sense.</p>
+
+<p>The first argument of <code>for</code> or <code>for*</code> specifies a number of clauses: each clause is of the form <code>&lt;var/s&gt; &lt;iterator&gt;)</code>. Multiple values are supported, and it is possible to make various declarations about variables: this matters for <code>for*</code>, where there is no room for declarations for other than the last (innermost) clause. Variables whose name is <code>"_"</code> are ignored by default.</p>
+
+<p>Within the body of an iteration there are four local functions:</p>
+
+<ul>
+ <li><code>next</code> skips to the next iteration;</li>
+ <li><code>next*</code> skips to the next outer-level iteration for <code>for*</code> and is the same as <code>next</code> for <code>for</code>;</li>
+ <li><code>final</code> returns zero or more values from the current iteration</li>
+ <li><code>final*</code> returns zero or more values for the outer-level iteration for <code>for*</code> and is the same as <code>final</code> for <code>for</code>.</li></ul>
+
+<h3 id="provided-iterators">Provided iterators</h3>
+
+<p>There are iterators which work for lists, vectors, general sequences, hash tables, ranges of reals, as well as some more interesting ones. Not all iterators currently have optimizers. You only need to care about writing optimizers if you need to make iterators very fast: they can be significantly fiddly to write.</p>
+
+<p>The iterator over ranges of reals has an optimizer which tries hard to make things pretty fast.</p>
+
+<p>As well as this there are some more interesting iterators. An example is <code>sequentially</code>:</p>
+
+<pre class="brush: lisp"><code>(for ((a (sequentially 1 2)))
+  ...)</code></pre>
+
+<p>will bind <code>a</code> sequentually to <code>1</code> and <code>2</code>. But this iterator is a macro which has the behaviour of a FEXPR, so it evaluates its arguments only when needed (and as many times as needed). A variant of <code>sequentially</code> is <code>sequentially*</code> which &lsquo;sticks&rsquo; on its last argument. So for instance:</p>
+
+<pre class="brush: lisp"><code>&gt; (let ((v 0))
+    (for ((a (sequentially* (incf v)))
+          (_ (in-range 3)))
+      (print a)))
+
+1 
+2 
+3 </code></pre>
+
+<p>Another way to write this is:</p>
+
+<pre class="brush: lisp"><code>&gt; (for ((a (let ((v 0)) (sequentially* (incf v))))
+        (_ (in-range 4)))
+    (print a))
+
+1 
+2 
+3 
+4 </code></pre>
+
+<p>And of course there is a meta-iterator (also implemented as a macro), <code>in-iterators</code>:</p>
+
+<pre class="brush: lisp"><code>&gt; (for ((a (in-iterators
+            (in-list '(1 2))
+            (in-list '(3 4)))))
+    (print a))
+
+1 
+2 
+3 
+4 </code></pre>
+
+<p>It&rsquo;s possible to construct very general iterators with tools like this.</p>
+
+<p>As I said above, Štar&rsquo;s current iterators are in a fairly rough state: a lot of this might change.</p>
+
+<hr />
+
+<h2 id="notes">Notes</h2>
+
+<h3 id="declarations">Declarations</h3>
+
+<p>A form like</p>
+
+<pre class="brush: lisp"><code>(for* ((a (in-range 10))
+       (b (in-range 10)))
+  ...)</code></pre>
+
+<p>corresponds roughly to</p>
+
+<pre class="brush: lisp"><code>(for ((a (in-range 10)))
+  (for ((b (in-range 10)))
+    ...)</code></pre>
+
+<p>The problem is now how to make declarations which apply to <code>a</code>. This is hard because CL doesn&rsquo;t provide the tools you need to know whether a declaration refers to a variable or not: to know whether <code>(declare (foo a))</code> refers to <code>a</code> or not you need to know, at least, whether <code>foo</code> names a type, which you can&rsquo;t do. You often can guess, but not always.</p>
+
+<p>So, rather than trying to solve an intractable problem, Štar lets you specify some properties of a variable in the clause that binds it: you can say</p>
+
+<pre class="brush: lisp"><code>(for* (((a :type fixnum) (in-range 10))
+       (b (in-range 10)))
+  ...)</code></pre>
+
+<p>for instance. This is a bit ugly, but it solves the problem. It is only useful for <code>for*</code>.</p>
+
+<h3 id="binding">Binding</h3>
+
+<p>Štar binds, rather than assigns:</p>
+
+<pre class="brush: lisp"><code>(collecting
+  (for ((a (in-list 1 2)))
+    (collect
+      (lambda (&amp;optional (v vp))
+        (if vp (setf a v) a)))))</code></pre>
+
+<p>will return two closures over independent bindings.</p>
+
+<h2 id="epilogue">Epilogue</h2>
+
+<p>Štar&rsquo;s source code is <a href="https://github.com/tfeb/star">here</a>. The manual is included with the source code but also <a href="https://tfeb.github.io/star/">here</a>.</p>
+
+<p>Štar is pronounced roughly &lsquo;shtar&rsquo;.</p>
+
+<p>Much of the inspiration for Štar came from my friend Zyni: thanks to her for the inspiration behind it, actually making me write it and for many other things.</p>
+
+<p>Štar is dedicated to her, and to Ian Anderson.</p>
+
+<hr />
+
+<div class="footnotes">
+ <ol>
+  <li id="2024-05-15-an-iteration-construct-for-common-lisp-footnote-1-definition" class="footnote-definition">
+   <p>Some implementations have mechanisms for extending <code>loop</code>.&nbsp;<a href="#2024-05-15-an-iteration-construct-for-common-lisp-footnote-1-return">↩</a></p></li></ol></div>
+  <footer>
+    <div class="row justify-content-center">
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="/fragments/2024/05/04/the-tory-death-spiral/"
+               aria-label="Previous">
+              <span aria-hidden="true">&larr; The tory death spiral</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</article>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <a href="//www.tfeb.org/">tfeb.org</a> /
+        <a href="//www.tfeb.org/fragments/">fragments</a>
+      </footer>
+    </div>
+    <!-- </body> JS -->
+    <script type="text/javascript" src="/fragments/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="/fragments/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

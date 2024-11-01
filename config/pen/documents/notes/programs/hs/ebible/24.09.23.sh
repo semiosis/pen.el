@@ -1,0 +1,6 @@
+cd /root/notes;  "ebible" "-m" "NASB" "Romans 1:1" "#" "<==" "fast"
+cd /root/notes;  "ebible" "-m" "NASB" "Romans 1:4" "#" "<==" "fast"
+cd /root/notes;  "ebible" "-m" "NASB" "Romans 1:5" "#" "<==" "fast"
+cd /root/notes;  "ebible" "-m" "NASB" "Romans 1:7" "#" "<==" "fast"
+cd /root/notes;  "ebible" "-m" "NASB" "Romans 1:9" "#" "<==" "fast"
+cd /root/notes;  "ebible" "-m" "NASB" "Romans 1:13" "#" "<==" "fast"

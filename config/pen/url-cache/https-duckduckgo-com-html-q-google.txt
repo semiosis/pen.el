@@ -1,0 +1,1655 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 15 Dec 2021 11:39:27 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Server-Timing: total;dur=152;desc="Backend Total"
+Strict-Transport-Security: max-age=31536000
+Permissions-Policy: interest-cohort=()
+Content-Security-Policy: default-src 'none' ; connect-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; manifest-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; media-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; script-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; font-src data:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; img-src data:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; style-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; object-src 'none' ; worker-src blob: ; child-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; frame-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; frame-ancestors 'self' ; base-uri 'self' ; block-all-mixed-content ;
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1;mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: origin
+Expect-CT: max-age=0
+Expires: Wed, 15 Dec 2021 11:39:28 GMT
+Cache-Control: max-age=1
+X-DuckDuckGo-Locale: en_US
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--[if IE 6]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 7]><html class="lt-ie8 lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
+  <meta name="referrer" content="origin" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>google at DuckDuckGo</title>
+  <link title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_html_v2.xml" />
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="//duckduckgo.com/assets/logo_icon128.v101.png"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/logo_homepage.normal.v101.png"/>
+  <link type="text/css" media="handheld, all" href="//duckduckgo.com/h2023.css" rel="stylesheet" />
+</head>
+
+<body class="body--html">
+  <a name="top" id="top"></a>
+
+  <form action="/html/" method="post">
+    <input type="text" name="state_hidden" id="state_hidden" />
+  </form>
+
+  <div>
+    <div class="site-wrapper-border"></div>
+
+    <div id="header" class="header cw header--html">
+        <a title="DuckDuckGo" href="/html/" class="header__logo-wrap"></a>
+
+
+    <form name="x" class="header__form" action="/html/" method="post">
+
+      <div class="search search--header">
+          <input name="q" autocomplete="off" class="search__input" id="search_form_input_homepage" type="text" value="google" />
+          <input name="b" id="search_button_homepage" class="search__button search__button--html" value="" title="Search" alt="Search" type="submit" />
+      </div>
+
+
+    
+    
+    
+    
+
+    <div class="frm__select">
+      <select name="kl">
+      
+        <option value="" >All Regions</option>
+      
+        <option value="ar-es" >Argentina</option>
+      
+        <option value="au-en" >Australia</option>
+      
+        <option value="at-de" >Austria</option>
+      
+        <option value="be-fr" >Belgium (fr)</option>
+      
+        <option value="be-nl" >Belgium (nl)</option>
+      
+        <option value="br-pt" >Brazil</option>
+      
+        <option value="bg-bg" >Bulgaria</option>
+      
+        <option value="ca-en" >Canada (en)</option>
+      
+        <option value="ca-fr" >Canada (fr)</option>
+      
+        <option value="ct-ca" >Catalonia</option>
+      
+        <option value="cl-es" >Chile</option>
+      
+        <option value="cn-zh" >China</option>
+      
+        <option value="co-es" >Colombia</option>
+      
+        <option value="hr-hr" >Croatia</option>
+      
+        <option value="cz-cs" >Czech Republic</option>
+      
+        <option value="dk-da" >Denmark</option>
+      
+        <option value="ee-et" >Estonia</option>
+      
+        <option value="fi-fi" >Finland</option>
+      
+        <option value="fr-fr" >France</option>
+      
+        <option value="de-de" >Germany</option>
+      
+        <option value="gr-el" >Greece</option>
+      
+        <option value="hk-tzh" >Hong Kong</option>
+      
+        <option value="hu-hu" >Hungary</option>
+      
+        <option value="in-en" >India (en)</option>
+      
+        <option value="id-en" >Indonesia (en)</option>
+      
+        <option value="ie-en" >Ireland</option>
+      
+        <option value="il-en" >Israel (en)</option>
+      
+        <option value="it-it" >Italy</option>
+      
+        <option value="jp-jp" >Japan</option>
+      
+        <option value="kr-kr" >Korea</option>
+      
+        <option value="lv-lv" >Latvia</option>
+      
+        <option value="lt-lt" >Lithuania</option>
+      
+        <option value="my-en" >Malaysia (en)</option>
+      
+        <option value="mx-es" >Mexico</option>
+      
+        <option value="nl-nl" >Netherlands</option>
+      
+        <option value="nz-en" >New Zealand</option>
+      
+        <option value="no-no" >Norway</option>
+      
+        <option value="pk-en" >Pakistan (en)</option>
+      
+        <option value="pe-es" >Peru</option>
+      
+        <option value="ph-en" >Philippines (en)</option>
+      
+        <option value="pl-pl" >Poland</option>
+      
+        <option value="pt-pt" >Portugal</option>
+      
+        <option value="ro-ro" >Romania</option>
+      
+        <option value="ru-ru" >Russia</option>
+      
+        <option value="xa-ar" >Saudi Arabia</option>
+      
+        <option value="sg-en" >Singapore</option>
+      
+        <option value="sk-sk" >Slovakia</option>
+      
+        <option value="sl-sl" >Slovenia</option>
+      
+        <option value="za-en" >South Africa</option>
+      
+        <option value="es-ca" >Spain (ca)</option>
+      
+        <option value="es-es" >Spain (es)</option>
+      
+        <option value="se-sv" >Sweden</option>
+      
+        <option value="ch-de" >Switzerland (de)</option>
+      
+        <option value="ch-fr" >Switzerland (fr)</option>
+      
+        <option value="tw-tzh" >Taiwan</option>
+      
+        <option value="th-en" >Thailand (en)</option>
+      
+        <option value="tr-tr" >Turkey</option>
+      
+        <option value="us-en" >US (English)</option>
+      
+        <option value="us-es" >US (Spanish)</option>
+      
+        <option value="ua-uk" >Ukraine</option>
+      
+        <option value="uk-en" >United Kingdom</option>
+      
+        <option value="vn-en" >Vietnam (en)</option>
+      
+      </select>
+    </div>
+
+    <div class="frm__select frm__select--last">
+      <select class="" name="df">
+      
+        <option value="" selected>Any Time</option>
+      
+        <option value="d" >Past Day</option>
+      
+        <option value="w" >Past Week</option>
+      
+        <option value="m" >Past Month</option>
+      
+        <option value="y" >Past Year</option>
+      
+      </select>
+    </div>
+
+    </form>
+
+    </div>
+
+
+
+
+
+<!-- Web results are present -->
+
+  <div>
+  <div class="serp__results">
+  <div id="links" class="results">
+
+      
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.com%2F&amp;rut=df8a89277204659dd4d161a3c409d93d66d0e4f7906198b4d8c5646b7ddb90df">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.com%2F&amp;rut=df8a89277204659dd4d161a3c409d93d66d0e4f7906198b4d8c5646b7ddb90df">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.com%2F&amp;rut=df8a89277204659dd4d161a3c409d93d66d0e4f7906198b4d8c5646b7ddb90df">
+                  www.google.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCK8sQmJBp8GCxrOtXWBpyEA&amp;rut=6944180f67a3742d61d76ef1bde277fb17b16ef2120e5ad5116935c3a5e3b124">Google - YouTube</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCK8sQmJBp8GCxrOtXWBpyEA&amp;rut=6944180f67a3742d61d76ef1bde277fb17b16ef2120e5ad5116935c3a5e3b124">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.youtube.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCK8sQmJBp8GCxrOtXWBpyEA&amp;rut=6944180f67a3742d61d76ef1bde277fb17b16ef2120e5ad5116935c3a5e3b124">
+                  www.youtube.com/channel/UCK8sQmJBp8GCxrOtXWBpyEA
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.instagram.com%2Fgoogle%2F&amp;rut=dcb21e6c247bc9d67b41d484803d453e259b77ea9ff2bcf7b90884489f167da2">instagram.com/google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.instagram.com%2Fgoogle%2F&amp;rut=dcb21e6c247bc9d67b41d484803d453e259b77ea9ff2bcf7b90884489f167da2">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.instagram.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.instagram.com%2Fgoogle%2F&amp;rut=dcb21e6c247bc9d67b41d484803d453e259b77ea9ff2bcf7b90884489f167da2">
+                  www.instagram.com/google/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fgoogle&amp;rut=0bf7f4d9216f54e7b9a3700a4b1f1db0ba9bbeaea827fcddc567b7560ea7a727">twitter.com/google | Твиттер</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fgoogle&amp;rut=0bf7f4d9216f54e7b9a3700a4b1f1db0ba9bbeaea827fcddc567b7560ea7a727">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/twitter.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fgoogle&amp;rut=0bf7f4d9216f54e7b9a3700a4b1f1db0ba9bbeaea827fcddc567b7560ea7a727">
+                  twitter.com/google
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fgoogle&amp;rut=0bf7f4d9216f54e7b9a3700a4b1f1db0ba9bbeaea827fcddc567b7560ea7a727">Learn about our recent €15 million <b>Google</b> for Education Support Fund, to help countries Using your Android phone, say: &quot;Hey <b>Google</b>, search Walmart for bicycles&quot; to find some wheelie awesome gifts...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2FGoogle&amp;rut=2dcc7ffbcc047e44b5c991e0f2c778ca500ff94a65a502f76a3a7771566e28cc">Google - Home | Facebook</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2FGoogle&amp;rut=2dcc7ffbcc047e44b5c991e0f2c778ca500ff94a65a502f76a3a7771566e28cc">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.facebook.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2FGoogle&amp;rut=2dcc7ffbcc047e44b5c991e0f2c778ca500ff94a65a502f76a3a7771566e28cc">
+                  www.facebook.com/Google
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2FGoogle&amp;rut=2dcc7ffbcc047e44b5c991e0f2c778ca500ff94a65a502f76a3a7771566e28cc"><b>Google</b>, Mountain View, CA. 28,160,602 likes · 54,472 talking about this. Organizing the world&#x27;s information and making it universally accessible and useful.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fhome.google.com%2F&amp;rut=2259480766e95362eb86e6e8045f5f4134f80c4846bde8b11a23fa2c055a0edb">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fhome.google.com%2F&amp;rut=2259480766e95362eb86e6e8045f5f4134f80c4846bde8b11a23fa2c055a0edb">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/home.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fhome.google.com%2F&amp;rut=2259480766e95362eb86e6e8045f5f4134f80c4846bde8b11a23fa2c055a0edb">
+                  home.google.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftranslate.google.com%2F&amp;rut=3d60179d1a16c7da24eff885f6463e39c22270fe3965fd5591a037a4f1e654e6">translate.google.com</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftranslate.google.com%2F&amp;rut=3d60179d1a16c7da24eff885f6463e39c22270fe3965fd5591a037a4f1e654e6">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/translate.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftranslate.google.com%2F&amp;rut=3d60179d1a16c7da24eff885f6463e39c22270fe3965fd5591a037a4f1e654e6">
+                  translate.google.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.so%2Fmaps&amp;rut=401cc21083323feb9ebd26f797a68972a9e69627213b85f4a117d3e9d3acde5b">google.so/maps</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.so%2Fmaps&amp;rut=401cc21083323feb9ebd26f797a68972a9e69627213b85f4a117d3e9d3acde5b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.google.so.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.so%2Fmaps&amp;rut=401cc21083323feb9ebd26f797a68972a9e69627213b85f4a117d3e9d3acde5b">
+                  www.google.so/maps
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2F&amp;rut=56d905a829a299deb2e995051811dbf5515677515fa606468e606caad0566ce8">Google Play</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2F&amp;rut=56d905a829a299deb2e995051811dbf5515677515fa606468e606caad0566ce8">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/play.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2F&amp;rut=56d905a829a299deb2e995051811dbf5515677515fa606468e606caad0566ce8">
+                  play.google.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fok.ru%2Fgooglerussia&amp;rut=1be7b6dc6c7a0c4df467b741ed54b4ba607f9da774941065fda9f025c3be978b">ok.ru/googlerussia</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fok.ru%2Fgooglerussia&amp;rut=1be7b6dc6c7a0c4df467b741ed54b4ba607f9da774941065fda9f025c3be978b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/ok.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fok.ru%2Fgooglerussia&amp;rut=1be7b6dc6c7a0c4df467b741ed54b4ba607f9da774941065fda9f025c3be978b">
+                  ok.ru/googlerussia
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Frussia.googleblog.com%2F&amp;rut=f35885fa3067d8a72bede5817e052481a02e43ab8533d973b1ca30d5b546ac3b">russia.googleblog.com</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Frussia.googleblog.com%2F&amp;rut=f35885fa3067d8a72bede5817e052481a02e43ab8533d973b1ca30d5b546ac3b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/russia.googleblog.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Frussia.googleblog.com%2F&amp;rut=f35885fa3067d8a72bede5817e052481a02e43ab8533d973b1ca30d5b546ac3b">
+                  russia.googleblog.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgoogle%2F&amp;rut=ec1d51340af00bfe97836d03a8b74845bb48ebdb0824d11aabd7c235bf40170b">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgoogle%2F&amp;rut=ec1d51340af00bfe97836d03a8b74845bb48ebdb0824d11aabd7c235bf40170b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.reddit.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgoogle%2F&amp;rut=ec1d51340af00bfe97836d03a8b74845bb48ebdb0824d11aabd7c235bf40170b">
+                  www.reddit.com/r/google/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgoogle%2F&amp;rut=ec1d51340af00bfe97836d03a8b74845bb48ebdb0824d11aabd7c235bf40170b">4) <b>Google</b> search glitches and amusing <b>Google</b> Assistant screenshots will be removed. 5) Please don&#x27;t submit promo codes as a new submission. Are you a Googler and want verified flair? Fill out this form...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fria.ru%2Forganization_Google_Inc%2F&amp;rut=6c068e3e07e3c73f6bf2841e9577dc1a1efa7216248588e153c8d3ef69fca23c">ria.ru/organization_Google_Inc</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fria.ru%2Forganization_Google_Inc%2F&amp;rut=6c068e3e07e3c73f6bf2841e9577dc1a1efa7216248588e153c8d3ef69fca23c">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/ria.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fria.ru%2Forganization_Google_Inc%2F&amp;rut=6c068e3e07e3c73f6bf2841e9577dc1a1efa7216248588e153c8d3ef69fca23c">
+                  ria.ru/organization_Google_Inc/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGoogle&amp;rut=d43058ede17336a628a73c4d3392dc0eab19d6ce21565a961d4b90e17550a2ac">Google - Wikipedia</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGoogle&amp;rut=d43058ede17336a628a73c4d3392dc0eab19d6ce21565a961d4b90e17550a2ac">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/en.wikipedia.org.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGoogle&amp;rut=d43058ede17336a628a73c4d3392dc0eab19d6ce21565a961d4b90e17550a2ac">
+                  en.wikipedia.org/wiki/Google
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGoogle&amp;rut=d43058ede17336a628a73c4d3392dc0eab19d6ce21565a961d4b90e17550a2ac"><b>Google</b> LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Faccounts.google.com%2FServiceLogin%3Felo%3D1&amp;rut=434e72e18e2e90707c9dfd9c4a657988ea8076742ffdd95879292ccc609c7cdb">accounts.google.com/ServiceLogin?elo=1</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Faccounts.google.com%2FServiceLogin%3Felo%3D1&amp;rut=434e72e18e2e90707c9dfd9c4a657988ea8076742ffdd95879292ccc609c7cdb">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/accounts.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Faccounts.google.com%2FServiceLogin%3Felo%3D1&amp;rut=434e72e18e2e90707c9dfd9c4a657988ea8076742ffdd95879292ccc609c7cdb">
+                  accounts.google.com/ServiceLogin?elo=1
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fabout.google%2F&amp;rut=37b262b1b6b5ad515eba5e63f061e009481572b7b8ecca5f18b94bd4c60f70dd">about.google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fabout.google%2F&amp;rut=37b262b1b6b5ad515eba5e63f061e009481572b7b8ecca5f18b94bd4c60f70dd">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/about.google.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fabout.google%2F&amp;rut=37b262b1b6b5ad515eba5e63f061e009481572b7b8ecca5f18b94bd4c60f70dd">
+                  about.google
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fdic.academic.ru%2Fdic.nsf%2Fruwiki%2F191&amp;rut=ce1056b8cef818750218b54a5290e64d8f383f8d6095e9cfee75d56dd5b681a3">dic.academic.ru/dic.nsf/ruwiki/191</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fdic.academic.ru%2Fdic.nsf%2Fruwiki%2F191&amp;rut=ce1056b8cef818750218b54a5290e64d8f383f8d6095e9cfee75d56dd5b681a3">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/dic.academic.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fdic.academic.ru%2Fdic.nsf%2Fruwiki%2F191&amp;rut=ce1056b8cef818750218b54a5290e64d8f383f8d6095e9cfee75d56dd5b681a3">
+                  dic.academic.ru/dic-nsf/ruwiki/191
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvk.com%2Fgooglerussia&amp;rut=a5f8061451f7f714386860a853dbc6027a327644dbc535909c8bd0320ea101fa">vk.com/googlerussia</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvk.com%2Fgooglerussia&amp;rut=a5f8061451f7f714386860a853dbc6027a327644dbc535909c8bd0320ea101fa">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/vk.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvk.com%2Fgooglerussia&amp;rut=a5f8061451f7f714386860a853dbc6027a327644dbc535909c8bd0320ea101fa">
+                  vk.com/googlerussia
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Dru&amp;rut=67210f385e5f4d03804e2c274c9a8cf7f66c385332fc259e43ef5bd851728ffc">policies.google.com/terms?hl=ru</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Dru&amp;rut=67210f385e5f4d03804e2c274c9a8cf7f66c385332fc259e43ef5bd851728ffc">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/policies.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Dru&amp;rut=67210f385e5f4d03804e2c274c9a8cf7f66c385332fc259e43ef5bd851728ffc">
+                  policies.google.com/terms?hl=ru
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fdeveloper%2Fgoogle%2Dllc%2Fid281956209&amp;rut=d08ed1b1d3e8041c03d5aa5457dc81b55bec74c4427302cd4518d3beb9fbf36b">Google LLC Apps on the App Store</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fdeveloper%2Fgoogle%2Dllc%2Fid281956209&amp;rut=d08ed1b1d3e8041c03d5aa5457dc81b55bec74c4427302cd4518d3beb9fbf36b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/apps.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fdeveloper%2Fgoogle%2Dllc%2Fid281956209&amp;rut=d08ed1b1d3e8041c03d5aa5457dc81b55bec74c4427302cd4518d3beb9fbf36b">
+                  apps.apple.com/us/developer/google-llc/id281956209
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fdeveloper%2Fgoogle%2Dllc%2Fid281956209&amp;rut=d08ed1b1d3e8041c03d5aa5457dc81b55bec74c4427302cd4518d3beb9fbf36b">‎Download apps by <b>Google</b> LLC, including YouTube TV, YouTube Kids, YouTube: Watch, Listen, Stream, and many more.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftranslate.yandex.ru%2Fdictionary%2Fen%2Dru%2Fgoogle&amp;rut=d7f505a6abcc3fdd0c98825e71caa621341cfb03b1d1b1aa9fd7461501c2f639">translate.yandex.ru/dictionary/en-ru/google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftranslate.yandex.ru%2Fdictionary%2Fen%2Dru%2Fgoogle&amp;rut=d7f505a6abcc3fdd0c98825e71caa621341cfb03b1d1b1aa9fd7461501c2f639">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/translate.yandex.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftranslate.yandex.ru%2Fdictionary%2Fen%2Dru%2Fgoogle&amp;rut=d7f505a6abcc3fdd0c98825e71caa621341cfb03b1d1b1aa9fd7461501c2f639">
+                  translate.yandex.ru/dictionary/en-ru/google
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fearth.google.com%2F&amp;rut=150b0181d59e7e476517dcf2de3648e2c712a8f2e8658ceb772a01e50e428435">Google Earth</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fearth.google.com%2F&amp;rut=150b0181d59e7e476517dcf2de3648e2c712a8f2e8658ceb772a01e50e428435">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/earth.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fearth.google.com%2F&amp;rut=150b0181d59e7e476517dcf2de3648e2c712a8f2e8658ceb772a01e50e428435">
+                  earth.google.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.rambler.ru%2Forganization%2Fgoogle%2F&amp;rut=9d4f7d7d2e0abd951f61c7d5499d2e63fd5a5c06133016b44d58417fcddb010c">news.rambler.ru/organization/google — Рамблер/новости</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.rambler.ru%2Forganization%2Fgoogle%2F&amp;rut=9d4f7d7d2e0abd951f61c7d5499d2e63fd5a5c06133016b44d58417fcddb010c">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/news.rambler.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.rambler.ru%2Forganization%2Fgoogle%2F&amp;rut=9d4f7d7d2e0abd951f61c7d5499d2e63fd5a5c06133016b44d58417fcddb010c">
+                  news.rambler.ru/organization/google/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fimage.google.az%2F&amp;rut=76a75c9bc47c6277bc407963bf48c8a494d0b73e4d75ec4aae02a9c8f1b281e9">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fimage.google.az%2F&amp;rut=76a75c9bc47c6277bc407963bf48c8a494d0b73e4d75ec4aae02a9c8f1b281e9">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/image.google.az.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fimage.google.az%2F&amp;rut=76a75c9bc47c6277bc407963bf48c8a494d0b73e4d75ec4aae02a9c8f1b281e9">
+                  image.google.az
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.mg%2F&amp;rut=b68c76d20038bbec6041ffa0bf23e3f56f478035a6f8f45aa0c7f0f292965b6e">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.mg%2F&amp;rut=b68c76d20038bbec6041ffa0bf23e3f56f478035a6f8f45aa0c7f0f292965b6e">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.google.mg.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.mg%2F&amp;rut=b68c76d20038bbec6041ffa0bf23e3f56f478035a6f8f45aa0c7f0f292965b6e">
+                  www.google.mg
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fimage.google.ge%2F&amp;rut=be9f7cd3bc24f940cdf7e3c3f4154d577dc0af624da1050222cf529999e7b43f">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fimage.google.ge%2F&amp;rut=be9f7cd3bc24f940cdf7e3c3f4154d577dc0af624da1050222cf529999e7b43f">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/image.google.ge.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fimage.google.ge%2F&amp;rut=be9f7cd3bc24f940cdf7e3c3f4154d577dc0af624da1050222cf529999e7b43f">
+                  image.google.ge
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.com.sg%2F&amp;rut=e53f9ea98ec41b15522e32364e294aea5c7f670b3f8fa0dc02df43c59dc0fcfa">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.com.sg%2F&amp;rut=e53f9ea98ec41b15522e32364e294aea5c7f670b3f8fa0dc02df43c59dc0fcfa">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.google.com.sg.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.com.sg%2F&amp;rut=e53f9ea98ec41b15522e32364e294aea5c7f670b3f8fa0dc02df43c59dc0fcfa">
+                  www.google.com.sg
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.ps%2F&amp;rut=503564a02dec5c0763bc05d49f3ec8295141a9d395063707f070eaf066eb42b7">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.ps%2F&amp;rut=503564a02dec5c0763bc05d49f3ec8295141a9d395063707f070eaf066eb42b7">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.google.ps.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.ps%2F&amp;rut=503564a02dec5c0763bc05d49f3ec8295141a9d395063707f070eaf066eb42b7">
+                  www.google.ps
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.cm%2F&amp;rut=b5de380b0519a1638f62d805148db8d45731653229c8330be37e7fb0028b030b">Google</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.cm%2F&amp;rut=b5de380b0519a1638f62d805148db8d45731653229c8330be37e7fb0028b030b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.google.cm.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.google.cm%2F&amp;rut=b5de380b0519a1638f62d805148db8d45731653229c8330be37e7fb0028b030b">
+                  www.google.cm
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+
+        
+        
+                <div class="nav-link">
+        <form action="/html/" method="post">
+          <input type="submit" class='btn btn--alt' value="Next" />
+          <input type="hidden" name="q" value="google" />
+          <input type="hidden" name="s" value="30" />
+          <input type="hidden" name="nextParams" value="" />
+          <input type="hidden" name="v" value="l" />
+          <input type="hidden" name="o" value="json" />
+          <input type="hidden" name="dc" value="30" />
+          <input type="hidden" name="api" value="d.js" />
+          <input type="hidden" name="vqd" value="3-18481825242701030410680771297769019375-144403998739352232697867178136957499275" />
+
+        
+        
+        
+          <input name="kl" value="wt-wt" type="hidden" />
+        
+        
+        
+        
+        </form>
+                </div>
+        
+
+
+
+        <div class=" feedback-btn">
+            <a rel="nofollow" href="//duckduckgo.com/feedback.html" target="_new">Feedback</a>
+        </div>
+        <div class="clear"></div>
+  </div>
+  </div> <!-- links wrapper //-->
+
+
+
+    </div>
+  </div>
+
+    <div id="bottom_spacing2"></div>
+
+    
+      <img src="//duckduckgo.com/t/sl_h"/>
+    
+</body>
+</html>

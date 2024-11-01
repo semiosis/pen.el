@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/src;  "jstate-jiq" "-db" "" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "jstate-jiq" "-db" "" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "jstate-jiq" "-db" "" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "jstate-jiq" "-db" "" "#" "<==" "bash"
+cd /root/notes;  "jstate-jiq" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "jstate-jiq" "-db" "" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "jstate-jiq" "-db" "" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "jstate-jiq" "-db" "" "#" "<==" "bash"

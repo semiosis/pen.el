@@ -1,0 +1,8 @@
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"
+cd /root/.pen/org-brain/people;  "chrome" "bipjeffers.bandcamp.com" "#" "<==" "zsh"

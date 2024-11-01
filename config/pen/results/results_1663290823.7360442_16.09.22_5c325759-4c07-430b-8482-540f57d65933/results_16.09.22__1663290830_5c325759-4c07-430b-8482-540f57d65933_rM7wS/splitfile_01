@@ -1,0 +1,1 @@
+ fib seq = 0 : 1 : zipWith (+) seq (tail seq)

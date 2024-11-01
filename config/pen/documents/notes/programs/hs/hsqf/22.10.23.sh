@@ -1,0 +1,8 @@
+cd /root/notes;  "hsqf" "o" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "o" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "sqlite" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "sqlite3" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "sqlite3" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "pin" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "in-ttty" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "in-tty" "#" "<==" "hsqf"

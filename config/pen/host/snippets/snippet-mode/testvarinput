@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: testvarinput
+# group: misc
+# key: varin
+# --
+_${1:$$(ignore-errors myvar)}_
+_${2:`myvar`}_

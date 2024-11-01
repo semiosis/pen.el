@@ -1,0 +1,3 @@
+;; Run function normal-number-of
+(message (eval '(normal-number-of "socks")))
+--> 

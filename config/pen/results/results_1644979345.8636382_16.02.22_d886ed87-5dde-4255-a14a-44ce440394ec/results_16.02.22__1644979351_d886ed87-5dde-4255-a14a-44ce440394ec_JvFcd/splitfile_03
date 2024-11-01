@@ -1,0 +1,4 @@
+"io.replikativ/datahike" is a clojure library for reading and writing
+data in a format that resembles the output of the
+"datahike" command line utility.
+

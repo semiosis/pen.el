@@ -1,0 +1,9 @@
+cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» ls
+ harry.txt  harry.txt.bak  harry.txt.bak2  harry.txt.bak3
+ harrys-adventures.txt  harrys-adventures.txt.bak
+» cd ..
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt

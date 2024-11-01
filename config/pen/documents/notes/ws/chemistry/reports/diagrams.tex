@@ -1,0 +1,280 @@
+\documentclass[twoside,12pt,english]{book}
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+
+%% https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends
+\usepackage{xcolor}
+\pagecolor{yellow!07}
+
+\definecolor{marron}{RGB}{60,30,10}
+\definecolor{darkblue}{RGB}{0,0,80}
+\definecolor{lightblue}{RGB}{80,80,80}
+\definecolor{darkgreen}{RGB}{0,80,0}
+\definecolor{darkgray}{RGB}{0,80,0}
+\definecolor{darkred}{RGB}{80,0,0}
+\definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
+\usepackage[demo]{graphicx}
+\usepackage{wallpaper}
+\usepackage{wrapfig,booktabs}
+
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\input Acorn.fd
+\newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
+
+\usepackage{geometry}
+\geometry{
+tmargin=5cm, 
+bmargin=5cm, 
+lmargin=5cm, 
+rmargin=3cm,
+headheight=1.5cm,
+headsep=0.8cm,
+footskip=0.5cm}
+
+
+% \usepackage[full]{textcomp}
+\renewcommand{\familydefault}{pplj} 
+\usepackage[
+final,
+stretch=10,
+protrusion=true,
+tracking=true,
+spacing=on,
+kerning=on,
+expansion=true]{microtype}
+
+\setlength{\parskip}{1.3ex plus 0.2ex minus 0.2ex}
+
+
+\usepackage{fourier-orns}
+
+\newcommand{\ornamento}{\vspace{2em}\noindent \textcolor{darkgray}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone   \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill \ \vspace{2em}}}
+\newcommand{\ornpar}{\noindent \textcolor{darkgray}{ \raisebox{-1.9pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone}}}
+\newcommand{\ornimpar}{\textcolor{darkgray}{\raisebox{-1.9pt}[10pt][10pt]{\decoone \floweroneright \decotwo \aldineleft \decothreeright \decofourright \leafleft} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafleft}}}
+
+\makeatletter
+\def\headrule{{\color{darkgray}\raisebox{-2.1pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{~~~\decofourleft \decotwo\decofourright~~~} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{ \leafleft}}}
+\makeatother
+
+\fancyhf{}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+\newcommand{\estcab}[1]{\itshape\textcolor{marron}{\nouppercase #1}}
+
+\fancyhead[LE]{\estcab{Fran Oldstyle}}
+\fancyhead[RE]{\estcab{History of taxonomy}}
+% \fancyhead[CE,CO]{\estcab{\decoone}}
+\fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
+\fancyhead[RO]{\estcab{\leftmark}}
+
+% \fancyhead[RO]{\bf\nouppercase{ \leftmark}}
+% \fancyfoot[LE]{\bf \thepage ~~ \leafNE}
+% \fancyfoot[RO]{ \leafNE  ~~ \bf \thepage}
+
+\fancyfoot[LO]{
+\ornimpar \ \large \hfill \sffamily\bf \textcolor{darkgray}{\leafNE ~~~ \thepage}
+}
+\fancyfoot[RE]{\ornpar   \ \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
+
+\newenvironment{Section}[1]
+{\section{\vspace{0ex}#1}}
+{\vspace{12pt}\centering ------- \decofourleft\decofourright ------- \par}
+
+
+
+\usepackage{lipsum}
+\setlength{\parindent}{1em} % Sangría española
+\pagestyle{fancy}
+
+\renewcommand{\footnoterule}{\vspace{-0.5em}\noindent\textcolor{marron}{\decosix \raisebox{2.9pt}{\line(1,0){100}} \lefthand} \vspace{.5em} }
+\usepackage[hang,splitrule]{footmisc}
+\addtolength{\footskip}{0.5cm}
+\setlength{\footnotemargin}{0.3cm}
+\setlength{\footnotesep}{0.4cm} 
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+
+%% https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends
+\usepackage{xcolor}
+\pagecolor{yellow!07}
+
+\definecolor{marron}{RGB}{60,30,10}
+\definecolor{darkblue}{RGB}{0,0,80}
+\definecolor{lightblue}{RGB}{80,80,80}
+\definecolor{darkgreen}{RGB}{0,80,0}
+\definecolor{darkgray}{RGB}{0,80,0}
+\definecolor{darkred}{RGB}{80,0,0}
+\definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
+\usepackage[demo]{graphicx}
+\usepackage{wallpaper}
+\usepackage{wrapfig,booktabs}
+
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\input Acorn.fd
+\newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
+
+\usepackage{geometry}
+\geometry{
+tmargin=5cm, 
+bmargin=5cm, 
+lmargin=5cm, 
+rmargin=3cm,
+headheight=1.5cm,
+headsep=0.8cm,
+footskip=0.5cm}
+
+
+% \usepackage[full]{textcomp}
+\renewcommand{\familydefault}{pplj} 
+\usepackage[
+final,
+stretch=10,
+protrusion=true,
+tracking=true,
+spacing=on,
+kerning=on,
+expansion=true]{microtype}
+
+\setlength{\parskip}{1.3ex plus 0.2ex minus 0.2ex}
+
+
+\usepackage{fourier-orns}
+
+\newcommand{\ornamento}{\vspace{2em}\noindent \textcolor{darkgray}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone   \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill \ \vspace{2em}}}
+\newcommand{\ornpar}{\noindent \textcolor{darkgray}{ \raisebox{-1.9pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone}}}
+\newcommand{\ornimpar}{\textcolor{darkgray}{\raisebox{-1.9pt}[10pt][10pt]{\decoone \floweroneright \decotwo \aldineleft \decothreeright \decofourright \leafleft} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafleft}}}
+
+\makeatletter
+\def\headrule{{\color{darkgray}\raisebox{-2.1pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{~~~\decofourleft \decotwo\decofourright~~~} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{ \leafleft}}}
+\makeatother
+
+\fancyhf{}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+\newcommand{\estcab}[1]{\itshape\textcolor{marron}{\nouppercase #1}}
+
+\fancyhead[LE]{\estcab{Fran Oldstyle}}
+\fancyhead[RE]{\estcab{History of taxonomy}}
+% \fancyhead[CE,CO]{\estcab{\decoone}}
+\fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
+\fancyhead[RO]{\estcab{\leftmark}}
+
+% \fancyhead[RO]{\bf\nouppercase{ \leftmark}}
+% \fancyfoot[LE]{\bf \thepage ~~ \leafNE}
+% \fancyfoot[RO]{ \leafNE  ~~ \bf \thepage}
+
+\fancyfoot[LO]{
+\ornimpar \ \large \hfill \sffamily\bf \textcolor{darkgray}{\leafNE ~~~ \thepage}
+}
+\fancyfoot[RE]{\ornpar   \ \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
+
+\newenvironment{Section}[1]
+{\section{\vspace{0ex}#1}}
+{\vspace{12pt}\centering ------- \decofourleft\decofourright ------- \par}
+
+
+
+\usepackage{lipsum}
+\setlength{\parindent}{1em} % Sangría española
+\pagestyle{fancy}
+
+\renewcommand{\footnoterule}{\vspace{-0.5em}\noindent\textcolor{marron}{\decosix \raisebox{2.9pt}{\line(1,0){100}} \lefthand} \vspace{.5em} }
+\usepackage[hang,splitrule]{footmisc}
+\addtolength{\footskip}{0.5cm}
+\setlength{\footnotemargin}{0.3cm}
+\setlength{\footnotesep}{0.4cm} 
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+
+\usepackage[mathletters]{ucs}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\author{Shane Mulligan}
+\date{\textit{<2024-04-15 Mon>}}
+\title{Chemistry diagrams}
+\hypersetup{
+ pdfauthor={Shane Mulligan},
+ pdftitle={Chemistry diagrams},
+ pdfkeywords={chemistry emacs},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1.50 (Org mode 9.6.8)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\begin{verbatim}
+1  
+2       ··
+3      :O :
+4   ··  |   ··
+5  :O =:S :-O :
+6       ··  ··
+7  
+\end{verbatim}
+
+Chemistry equations:
+\begin{itemize}
+\item Arrhenius equation
+\item Butler–Volmer equation
+\item Eyring equation
+\item Henderson–Hasselbalch equation
+\item Michaelis–Menten equation
+\item Nernst equation
+\item Schrödinger equation
+\item Urey–Bigeleisen–Mayer equation
+\end{itemize}
+
+\section{Arrhenius equation}
+\label{sec:orgca2303c}
+
+\url{https://en.wikipedia.org/wiki/Arrhenius\_equation}
+
+\begin{equation}
+  {\displaystyle k=Ae^{\frac {-E_{\text{a}}}{RT}},}
+\end{equation}
+
+\section{Butler–Volmer equation}
+\label{sec:org34cb50e}
+
+\url{https://en.wikipedia.org/wiki/Butler\%E2\%80\%93Volmer\_equation}
+
+\begin{equation}
+  {\displaystyle j=j_{0}\cdot \left\{\exp \left[{\frac {\alpha _{\rm {a}}zF}{RT}}(E-E_{\rm {eq}})\right]-\exp \left[-{\frac {\alpha _{\rm {c}}zF}{RT}}(E-E_{\rm {eq}})\right]\right\}}
+\end{equation}
+
+\begin{itemize}
+\item Eyring equation
+\item Henderson–Hasselbalch equation
+\item Michaelis–Menten equation
+\item Nernst equation
+\item Schrödinger equation
+\item Urey–Bigeleisen–Mayer equation
+\end{itemize}
+\end{document}

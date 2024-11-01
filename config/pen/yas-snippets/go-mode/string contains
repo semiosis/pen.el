@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: string contains
+# key: sc
+# --
+if strings.Contains(str, "{$1:pattern}") {
+   $0
+}

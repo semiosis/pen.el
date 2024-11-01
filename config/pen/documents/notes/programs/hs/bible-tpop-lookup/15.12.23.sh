@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 19:21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 19:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 19:4" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "bible-tpop-lookup" "-c" "-m" "NASB" "Luke 16:17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 7:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "bible-tpop-lookup" "-c" "-m" "NASB" "Romans 2:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "bible-tpop-lookup" "-c" "-m" "NASB" "Romans 2:5" "#" "<==" "zsh"

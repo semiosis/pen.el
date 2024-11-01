@@ -1,0 +1,6 @@
+* Project road map
+** Create a schema for prompt-description-mode in =schemastore=
+http://www.schemastore.org/json/
+
+* New prompts
+- Given some code, return the programming language

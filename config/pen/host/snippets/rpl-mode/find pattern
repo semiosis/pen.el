@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: find pattern
+# group: macro
+# key: find
+# --
+-- consumes characters until the string "ear" is found, and then match "ear"
+{ !"ear" . }* "ear"
+'{ find:"ear" $}' 

@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "pysplit" "." ":3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "pysplit" "." ":" "#" "<==" "zsh"
+cd /volumes/home/shane/scripts;  "pysplit" "/" "::-1" "#" "<==" "reversepath"
+cd /root/.emacs.d/host/pen.el/scripts;  "pysplit" "/" "::-1" "#" "<==" "reversepath"
+cd /root/.pen/documents/notes;  "pysplit" "/" "::-1" "#" "<==" "reversepath"
+cd /root/.pen/documents/notes;  "pysplit" "." "::-1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "pysplit" "::-1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "pysplit" "o" "::-1" "#" "<==" "zsh"

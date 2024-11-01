@@ -1,0 +1,4 @@
+http://beta.quicklisp.org/quicklisp.lisp"
+with swank-loader
+(load "~/quicklisp/setup.lisp")
+(ql:quickload :swank-clon

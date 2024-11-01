@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "netstat" "#" "<==" "slmenu"
+cd /root/.pen/documents/notes;  "netstat" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "netstat" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "netstat" "#" "<==" "slmenu"
+cd /root/.emacs.d/host/pen.el/config;  "netstat" "#" "<==" "slmenu"
+cd /root/.pen/documents/notes;  "netstat" "#" "<==" "slmenu"

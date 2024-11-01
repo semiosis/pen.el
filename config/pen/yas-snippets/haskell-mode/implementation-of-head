@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: implementation-of-head
+# group: implementations
+# key: ihead
+# --
+head' :: [a] -> a
+head' [] = error "No head for empty lists!"
+head' (x:_) = x

@@ -1,0 +1,8 @@
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://apostleibukun.medium.com/winning-the-battle-against-a-spirit-husband-wife-4806c55791bf" "#" "<==" "o"
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://www.christiantruthcenter.com/masturbation-sex-with-demons/" "#" "<==" "o"
+cd //;  "o" "#" "<==" "zsh"
+cd //;  "o" "https://www.christiantruthcenter.com/there-is-time-to-pray-and-time-to-run-physically-to-jesus/" "#" "<==" "o"
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://www.youtube.com/watch?v=_BObeTNJsG4&ab_channel=DerekPrinceWithSubtitles" "#" "<==" "o"

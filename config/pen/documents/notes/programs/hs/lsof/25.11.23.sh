@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "lsof" "-p" "2212232" "#" "<==" "pen-tm"
+cd /root/.emacs.d/host/pen.el/src;  "lsof" "-p" "2212233" "#" "<==" "pen-tm"
+cd /root/.emacs.d/host/pen.el/src;  "lsof" "-p" "2212578" "#" "<==" "pen-tm"
+cd /root/.emacs.d/host/pen.el/src;  "lsof" "-p" "2212579" "#" "<==" "pen-tm"
+cd /root/.emacs.d/host/pen.el/scripts;  "lsof" "pwd" "#" "<==" "zsh"

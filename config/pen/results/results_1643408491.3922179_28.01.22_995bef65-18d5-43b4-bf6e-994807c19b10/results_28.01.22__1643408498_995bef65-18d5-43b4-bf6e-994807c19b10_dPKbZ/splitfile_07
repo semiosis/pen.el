@@ -1,0 +1,10 @@
+cd 'harrys adventures'
+» ls
+ harry.txt   harry2.txt  harry3.txt  harry4.txt  harry5.txt
+» cat harry4.txt
+Harry Potter and the Prisoner of Azkaban
+» cat harry5.txt
+Harry Potter and the Order of the Phoenix
+» cd ../..
+» ls
+ notes  stop-reason.txt  'harrys adventures' 

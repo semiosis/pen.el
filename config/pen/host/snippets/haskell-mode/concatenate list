@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: concatenate list
+# group: list
+# key: ccli
+# --
+[1,2,3,4] ++ [9,10,11,12]

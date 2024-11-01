@@ -1,0 +1,5 @@
+cd /root/.pen/documents/devotionals;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/textmirror;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "/volumes" "#" "<==" "pen-r"
+cd /root/.pen/documents/textmirror;  "ranger" "#" "<==" "zsh"
+cd /root/notes;  "ranger" "#" "<==" "bash"

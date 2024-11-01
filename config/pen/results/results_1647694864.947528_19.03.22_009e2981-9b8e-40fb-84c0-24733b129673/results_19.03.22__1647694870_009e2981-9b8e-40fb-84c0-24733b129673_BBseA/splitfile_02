@@ -1,0 +1,15 @@
+
+
+echo -n "browser $url"
+
+exec $TTY "$@"
+
+#!/bin/bash
+
+browser() {
+
+browser $url
+
+exec $TTY "$@"
+
+}

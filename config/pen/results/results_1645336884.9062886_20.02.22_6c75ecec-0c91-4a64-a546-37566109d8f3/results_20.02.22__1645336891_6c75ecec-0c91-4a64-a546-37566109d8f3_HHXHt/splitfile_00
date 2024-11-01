@@ -1,0 +1,13 @@
+
+
+# print(text)
+
+# print(text.split())
+
+# print(text.split('was'))
+
+# print(text.split('was', 1))
+
+# print(text.split('was', 2))
+
+# print(text.split

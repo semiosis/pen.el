@@ -1,0 +1,4 @@
+"async/tap" "async/pipeline-tap" "async/merge" "async/notify"
+"async/notify-chan" "async/timeout" "async/timeout-chan" "async/future"
+"async/future-callback" "async/future-cancel" "async/future-cancelled?"
+"async/future-done?" "async/future-success"

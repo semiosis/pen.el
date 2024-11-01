@@ -1,0 +1,6 @@
+cd /root/notes;  "ebdb" "#" "<==" "zsh"
+cd /root/notes;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"
+cd /root/repos/ebdb;  "ebdb" "#" "<==" "zsh"
+cd /root/repos/ebdb;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"

@@ -1,0 +1,388 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Server: nginx/1.20.2
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Last-Modified: Mon, 02 May 2022 14:07:35 GMT
+Accept-Ranges: bytes
+Date: Sun, 14 Aug 2022 10:43:06 GMT
+Via: 1.1 varnish
+X-Served-By: cache-akl10324-AKL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1660473786.244543,VS0,VE542
+Vary: Accept-Encoding, Cookie
+transfer-encoding: chunked
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Monad - HaskellWiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Monad","wgTitle":"Monad","wgCurRevisionId":64650,"wgRevisionId":64650,"wgArticleId":1286,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Standard classes","Monad","Nondeterminism"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Monad","wgRelevantArticleId":1286,"wgRequestId":"35e6af831345df8c255524c6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[],"wgCollapsibleVectorEnabledModules":{"collapsiblenav":true,"experiments":true}});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.hawiki.styles":"ready"});mw.loader.implement("user.tokens@03tqtch",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.hawiki.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.hawiki.styles&amp;only=styles&amp;skin=hawiki"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hawiki"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=hawiki"/>
+<meta name="generator" content="MediaWiki 1.31.7"/>
+<link rel="shortcut icon" href="/wikistatic/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="HaskellWiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.haskell.org/api.php?action=rsd"/>
+<link rel="license" href="/HaskellWiki:Copyrights"/>
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=hawiki&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Monad rootpage-Monad skin-hawiki action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Monad</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From HaskellWiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><i>Hint: if you're just looking for an introduction to monads, see <a href="/Merely_monadic" title="Merely monadic">Merely monadic</a> or one of the other <a href="/Monad_tutorials_timeline" title="Monad tutorials timeline">monad tutorials</a>.</i>
+</p>
+<hr />
+<table border="1" align="right" cellpadding="4" cellspacing="0" style="margin: 0 0 1em 1em; background: white; border: 1px #aaa solid; border-collapse: collapse;">
+<caption style="height:3em"><big><big>Monad&#160;class&#160;(<a href="/Base_package" title="Base package">base</a>)</big></big>
+</caption>
+<tbody><tr>
+<td><tt>import <a rel="nofollow" class="external text" href="https://hackage.haskell.org/package/base/docs/Control-Monad.html#t%3AMonad">Control.Monad</a></tt>
+</td></tr></tbody></table>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Monad_class"><span class="tocnumber">1</span> <span class="toctext">The Monad class</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Common_monads"><span class="tocnumber">2</span> <span class="toctext">Common monads</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#do-notation"><span class="tocnumber">3</span> <span class="toctext">do-notation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Commutative_monads"><span class="tocnumber">4</span> <span class="toctext">Commutative monads</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Monad_tutorials"><span class="tocnumber">5</span> <span class="toctext">Monad tutorials</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Monad_reference_guides"><span class="tocnumber">6</span> <span class="toctext">Monad reference guides</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Monad_research"><span class="tocnumber">7</span> <span class="toctext">Monad research</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Monads_in_other_languages"><span class="tocnumber">8</span> <span class="toctext">Monads in other languages</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Interesting_monads"><span class="tocnumber">9</span> <span class="toctext">Interesting monads</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Fun"><span class="tocnumber">10</span> <span class="toctext">Fun</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">11</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="The_Monad_class">The <code>Monad</code> class</span></h2>
+<p>Monads can be viewed as a standard programming interface to various data or control structures, which is captured by Haskell's <code>Monad</code> class. All the common monads are members of it:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">class</span> <span class="kt">Monad</span> <span class="n">m</span> <span class="kr">where</span>
+  <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span>  <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="p">(</span>  <span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span>
+  <span class="p">(</span><span class="o">&gt;&gt;</span><span class="p">)</span>   <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">-&gt;</span>  <span class="n">m</span> <span class="n">b</span>         <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span>
+  <span class="n">return</span> <span class="ow">::</span>   <span class="n">a</span>                 <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">a</span>
+</pre></div>
+<p>In addition to implementing the class functions, all instances of <code>Monad</code> should satisfy the following equations, or <i>monad laws</i>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">return</span> <span class="n">a</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span>                  <span class="ow">=</span>  <span class="n">k</span> <span class="n">a</span>
+<span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="n">return</span>             <span class="ow">=</span>  <span class="n">m</span>
+<span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">k</span> <span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span><span class="p">)</span>  <span class="ow">=</span>  <span class="p">(</span><span class="n">m</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span><span class="p">)</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span>
+</pre></div>
+<p>For more information, including an intuitive explanation of why the monad laws should be satisfied, see <a href="/Monad_laws" title="Monad laws">Monad laws</a>.
+</p><p>As of GHC 7.10, the <code>Applicative</code> typeclass is a superclass of <code>Monad</code>, and the <code>Functor</code> typeclass is a superclass of <code>Applicative</code>. This means that all monads are applicatives, all applicatives are functors, and therefore all monads are also functors. For more information, see the <a href="/Functor_hierarchy_proposal" class="mw-redirect" title="Functor hierarchy proposal">Functor hierarchy proposal</a>.
+</p><p>If the <code>Monad</code> definitions are preferred, <code>Functor</code> and <code>Applicative</code> instances can be defined from them with:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">fmap</span> <span class="n">fab</span> <span class="n">ma</span>  <span class="ow">=</span>  <span class="kr">do</span> <span class="p">{</span> <span class="n">a</span> <span class="ow">&lt;-</span> <span class="n">ma</span> <span class="p">;</span> <span class="n">return</span> <span class="p">(</span><span class="n">fab</span> <span class="n">a</span><span class="p">)</span> <span class="p">}</span>
+            <span class="c1">--  ma &gt;&gt;= (return . fab)</span>
+<span class="nf">pure</span> <span class="n">a</span>       <span class="ow">=</span>  <span class="kr">do</span> <span class="p">{</span> <span class="n">return</span> <span class="n">a</span> <span class="p">}</span>
+            <span class="c1">--  return a</span>
+<span class="nf">mfab</span> <span class="o">&lt;*&gt;</span> <span class="n">ma</span>  <span class="ow">=</span>  <span class="kr">do</span> <span class="p">{</span> <span class="n">fab</span> <span class="ow">&lt;-</span> <span class="n">mfab</span> <span class="p">;</span> <span class="n">a</span> <span class="ow">&lt;-</span> <span class="n">ma</span> <span class="p">;</span> <span class="n">return</span> <span class="p">(</span><span class="n">fab</span> <span class="n">a</span><span class="p">)</span> <span class="p">}</span>
+            <span class="c1">--  mfab &gt;&gt;= (\ fab -&gt; ma &gt;&gt;= (return . fab)) </span>
+            <span class="c1">--  mfab `ap` ma</span>
+</pre></div>
+<p>although the recommended order is to define <code>return</code> as <code>pure</code> if the two would otherwise end up being the same. 
+</p>
+<h2><span class="mw-headline" id="Common_monads">Common monads</span></h2>
+<p>These include:
+</p>
+<ul><li>Representing failure using <code>Maybe</code> monad</li>
+<li>Nondeterminism using <code>List</code> monad to represent carrying multiple values</li>
+<li>State using <code>State</code> monad</li>
+<li>Read-only environment using <code>Reader</code> monad</li>
+<li>I/O using <code>IO</code> monad</li></ul>
+<h2><span class="mw-headline" id="do-notation"><code>do</code>-notation</span></h2>
+<p>In order to improve the look of code that uses monads, Haskell provides a special form of <a href="/Syntactic_sugar" title="Syntactic sugar">syntactic sugar</a> called <code>do</code>-notation. For example, the following expression:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">thing1</span> <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">func1</span> <span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">y</span> <span class="ow">-&gt;</span> <span class="n">thing2</span> 
+       <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="kr">_</span> <span class="ow">-&gt;</span> <span class="n">func2</span> <span class="n">y</span> <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">z</span> <span class="ow">-&gt;</span> <span class="n">return</span> <span class="n">z</span><span class="p">))))</span>
+</pre></div>
+<p>which can be written more clearly by breaking it into several lines and omitting parentheses:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">thing1</span>  <span class="o">&gt;&gt;=</span> <span class="nf">\</span><span class="n">x</span> <span class="ow">-&gt;</span>
+<span class="nf">func1</span> <span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="nf">\</span><span class="n">y</span> <span class="ow">-&gt;</span>
+<span class="nf">thing2</span>  <span class="o">&gt;&gt;=</span> <span class="nf">\</span><span class="kr">_</span> <span class="ow">-&gt;</span>
+<span class="nf">func2</span> <span class="n">y</span> <span class="o">&gt;&gt;=</span> <span class="nf">\</span><span class="n">z</span> <span class="ow">-&gt;</span>
+<span class="nf">return</span> <span class="n">z</span>
+</pre></div>
+<p>can also be written using <code>do</code>-notation:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">do</span> <span class="p">{</span>
+  <span class="n">x</span> <span class="ow">&lt;-</span> <span class="n">thing1</span> <span class="p">;</span>
+  <span class="n">y</span> <span class="ow">&lt;-</span> <span class="n">func1</span> <span class="n">x</span> <span class="p">;</span>
+  <span class="n">thing2</span> <span class="p">;</span>
+  <span class="n">z</span> <span class="ow">&lt;-</span> <span class="n">func2</span> <span class="n">y</span> <span class="p">;</span>
+  <span class="n">return</span> <span class="n">z</span>
+  <span class="p">}</span>
+</pre></div>
+<p>(the curly braces and the semicolons are optional when the indentation rules are observed).
+</p><p>Code written using <code>do</code>-notation is transformed by the compiler to ordinary expressions that use the functions from the <code>Monad</code> class (i.e. the two varieties of bind: <code>(&gt;&gt;=)</code> and <code>(&gt;&gt;)</code>).
+</p><p>When using <code>do</code>-notation and a monad like <code>State</code> or <code>IO</code>, programs in Haskell look very much like programs written in an imperative language as each line contains a statement that can change the simulated global state of the program and optionally binds a (local) variable that can be used by the statements later in the code block.
+</p><p>It is possible to intermix the <code>do</code>-notation with regular notation.
+</p><p>More on <code>do</code>-notation can be found in a section of <a href="/Monads_as_computation#Do_notation" title="Monads as computation">Monads as computation</a> and in other <a href="/Monad#Monad_tutorials" title="Monad">tutorials</a>.
+</p>
+<h2><span class="mw-headline" id="Commutative_monads">Commutative monads</span></h2>
+<p>For monads which are <i>commutative</i> the order of actions makes no difference (i.e. they <i>commute</i>), so the following code:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">do</span>
+  <span class="n">a</span> <span class="ow">&lt;-</span> <span class="n">actA</span>
+  <span class="n">b</span> <span class="ow">&lt;-</span> <span class="n">actB</span>
+  <span class="n">m</span> <span class="n">a</span> <span class="n">b</span>
+</pre></div>
+<p>is the same as:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">do</span>
+  <span class="n">b</span> <span class="ow">&lt;-</span> <span class="n">actB</span>
+  <span class="n">a</span> <span class="ow">&lt;-</span> <span class="n">actA</span>
+  <span class="n">m</span> <span class="n">a</span> <span class="n">b</span>
+</pre></div>
+<p>Examples of commutative monads include:
+</p>
+<ul><li><code>Reader</code> monad</li>
+<li><code>Maybe</code> monad</li></ul>
+<h2><span class="mw-headline" id="Monad_tutorials">Monad tutorials</span></h2>
+<p>Monads are known for being quite confusing to many people, so there are plenty of tutorials specifically related to monads. Each takes a different approach to monads, and hopefully everyone will find something useful.
+</p><p>See the <a href="/Monad_tutorials_timeline" title="Monad tutorials timeline">Monad tutorials timeline</a> for a comprehensive list of monad tutorials.
+</p>
+<h2><span class="mw-headline" id="Monad_reference_guides">Monad reference guides</span></h2>
+<p>An explanation of the basic <code>Monad</code> functions, with examples, can be found in the reference guide <a rel="nofollow" class="external text" href="http://members.chello.nl/hjgtuyl/tourdemonad.html">A tour of the Haskell Monad functions</a> by Henk-Jan van Tuyl.
+</p>
+<h2><span class="mw-headline" id="Monad_research">Monad research</span></h2>
+<p>A collection of <a href="/Research_papers/Monads_and_arrows" title="Research papers/Monads and arrows">research papers</a> about monads.
+</p>
+<h2><span class="mw-headline" id="Monads_in_other_languages">Monads in other languages</span></h2>
+<p>Implementations of monads in other languages.
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://www.reddit.com/r/programming/comments/1761q/monads_in_c_pt_ii/">C</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/clojure/algo.monads">Clojure</a></li>
+<li><a rel="nofollow" class="external text" href="http://cml.cs.uchicago.edu/pages/cml.html">CML.event</a>&#160;?</li>
+<li><a rel="nofollow" class="external text" href="http://www.st.cs.ru.nl/papers/2010/CleanStdEnvAPI.pdf">Clean</a> State monad</li>
+<li><a rel="nofollow" class="external text" href="http://cratylus.freewebspace.com/monads-in-javascript.htm">JavaScript</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/home/dherman/browse/code/monads/JavaMonads/">Java</a></li>
+<li><a rel="nofollow" class="external text" href="http://permalink.gmane.org/gmane.comp.lang.concatenative/1506">Joy</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20130522092554/http://research.microsoft.com/en-us/um/people/emeijer/Papers/XLinq%20XML%20Programming%20Refactored%20(The%20Return%20Of%20The%20Monoids).htm">LINQ</a></li>
+<li><a rel="nofollow" class="external text" href="http://common-lisp.net/project/cl-monad-macros/monad-macros.htm">Lisp</a></li>
+<li><a rel="nofollow" class="external text" href="http://lambda-the-ultimate.org/node/1136#comment-12448">Miranda</a></li>
+<li>OCaml:
+<ul><li><a rel="nofollow" class="external text" href="http://www.cas.mcmaster.ca/~carette/pa_monad/">OCaml</a></li>
+<li><a rel="nofollow" class="external text" href="https://mailman.rice.edu/pipermail/metaocaml-users-l/2005-March/000057.html">more</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cas.mcmaster.ca/~carette/metamonads/">MetaOcaml</a></li>
+<li><a rel="nofollow" class="external text" href="http://blog.enfranchisedmind.com/2007/08/a-monad-tutorial-for-ocaml/">A Monad Tutorial for Ocaml</a></li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.reddit.com/r/programming/comments/p66e/are_monads_actually_used_in_anything_except">Perl6&#160;?</a></li>
+<li><a rel="nofollow" class="external text" href="http://logic.csci.unt.edu/tarau/research/PapersHTML/monadic.html">Prolog</a></li>
+<li>Python
+<ul><li><a rel="nofollow" class="external text" href="http://code.activestate.com/recipes/439361/">Python</a></li>
+<li>Twisted's <a rel="nofollow" class="external text" href="http://www.reddit.com/r/programming/comments/p66e/are_monads_actually_used_in_anything_except/cp8eh">Deferred monad</a></li></ul></li>
+<li>Ruby:
+<ul><li><a rel="nofollow" class="external text" href="http://moonbase.rydia.net/mental/writings/programming/monads-in-ruby/00introduction.html">Ruby</a></li>
+<li><a rel="nofollow" class="external text" href="http://meta-meta.blogspot.com/2006/12/monads-in-ruby-part-1-identity.html">and other implementation</a></li></ul></li>
+<li>Scheme:
+<ul><li><a rel="nofollow" class="external text" href="http://okmij.org/ftp/Scheme/monad-in-Scheme.html">Scheme</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ccs.neu.edu/home/dherman/research/tutorials/monads-for-schemers.txt">also</a></li>
+<li>Monads &amp; Do notation: <a rel="nofollow" class="external text" href="https://el-tramo.be/blog/async-monad/">Part 1</a> <a rel="nofollow" class="external text" href="https://el-tramo.be/blog/scheme-monads/">Part 2</a></li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.javiersoto.me/post/106875422394">Swift</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.tcl.tk/13844">Tcl</a></li>
+<li><a rel="nofollow" class="external text" href="http://okmij.org/ftp/Computation/monadic-shell.html">The Unix Shell</a></li>
+<li><a rel="nofollow" class="external text" href="http://okmij.org/ftp/Computation/monads.html">More monads by Oleg</a></li>
+<li><a rel="nofollow" class="external text" href="http://lambda-the-ultimate.org/node/2322">CLL</a>: a concurrent language based on a first-order intuitionistic linear logic where all right synchronous connectives are restricted to a monad.</li>
+<li><a rel="nofollow" class="external text" href="http://lambda-the-ultimate.org/node/1136">Collection of links to monad implementations in various languages.</a> on <a rel="nofollow" class="external text" href="http://lambda-the-ultimate.org/">Lambda The Ultimate</a>.</li></ul>
+<p>Unfinished:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://wiki.tcl.tk/14295">Parsing</a>, <a rel="nofollow" class="external text" href="http://wiki.tcl.tk/13844">Maybe and Error</a> in Tcl</li></ul>
+<p>And possibly there exists:
+</p>
+<ul><li>Standard ML (via modules?)</li></ul>
+<p><i>(If you know of other implementations, please add them here.)</i>
+</p>
+<h2><span class="mw-headline" id="Interesting_monads">Interesting monads</span></h2>
+<p>A list of monads for various evaluation strategies and games:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/mtl/latest/doc/html/Control-Monad-Identity.html">Identity monad</a> - the trivial monad.</li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/ghc/docs/latest/html/libraries/base/Data-Maybe.html">Optional results from computations</a> - error checking without null.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/monad-mersenne-random/latest/doc/html/Control-Monad-Mersenne-Random.html">Random values</a> - run code in an environment with access to a stream of random numbers.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/mtl/latest/doc/html/Control-Monad-Reader.html">Read only variables</a> - guarantee read-only access to values.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/mtl/latest/doc/html/Control-Monad-Writer-Lazy.html">Writable state</a> - i.e. log to a state buffer</li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/New_monads/MonadSupply">A supply of unique values</a> - useful for e.g. guids or unique variable names</li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/ghc/docs/latest/html/libraries/base/Control-Monad-ST.html">ST - memory-only, locally-encapsulated mutable variables</a>. Safely embed mutable state inside pure functions.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/mtl/latest/doc/html/Control-Monad-State-Lazy.html">Global state</a> - a scoped, mutable state.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/Hedi/latest/doc/html/Undo.html">Undoable state effects</a> - roll back state changes</li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/ghc/docs/latest/html/libraries/base/Control-Monad-Instances.html#t:Monad">Function application</a> - chains of function application.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/mtl/latest/doc/html/Control-Monad-Error.html">Functions which may error</a> - track location and causes of errors.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/stm/latest/doc/html/Control-Monad-STM.html">Atomic memory transactions</a> - software transactional memory</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/mtl/latest/doc/html/Control-Monad-Cont.html">Continuations</a> - computations which can be interrupted and resumed.</li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/ghc/docs/latest/html/libraries/base/System-IO.html#t%3AIO">IO</a>  - unrestricted side effects on the world</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/level-monad/0.4.1/doc/html/Control-Monad-Levels.html">Search monad</a> - bfs and dfs search environments.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/stream-monad/latest/doc/html/Control-Monad-Stream.html">non-determinism</a> - interleave computations with suspension.</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/stepwise/latest/doc/html/Control-Monad-Stepwise.html">stepwise computation</a> - encode non-deterministic choices as stepwise deterministic ones</li>
+<li><a rel="nofollow" class="external text" href="http://logic.csci.unt.edu/tarau/research/PapersHTML/monadic.html">Backtracking computations</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.cornell.edu/people/fluet/research/rgn-monad/index.html">Region allocation effects</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/logict/0.5.0.2/doc/html/Control-Monad-Logic.html">LogicT</a> - backtracking monad transformer with fair operations and pruning</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/monad-task/latest/doc/html/Control-Monad-Task.html">concurrent events and threads</a> - refactor event and callback heavy programs into straight-line code via co-routines</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/QIO">QIO</a> - The Quantum computing monad</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/packages/archive/full-sessions/latest/doc/html/Control-Concurrent-FullSession.html">Pi calculus</a> - a monad for Pi-calculus style concurrent programming</li>
+<li><a rel="nofollow" class="external text" href="http://www-fp.dcs.st-and.ac.uk/~kh/papers/pasco94/subsubsectionstar3_3_2_3.html">Commutable monads for parallel programming</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/stream-monad">Simple, Fair and Terminating Backtracking Monad</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/control-monad-exception">Typed exceptions with call traces as a monad</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/control-monad-omega">Breadth first list monad</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/control-monad-queue">Continuation-based queues as monads</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/full-sessions">Typed network protocol monad</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/level-monad">Non-Determinism Monad for Level-Wise Search</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/monad-tx">Transactional state monad</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/monadiccp">A constraint programming monad</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/ProbabilityMonads">A probability distribution monad</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/set-monad">Sets</a> - Set computations</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/http-monad/">HTTP</a> - http connections as a monadic environment</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/monad-memo">Memoization</a> - add memoization to code</li></ul>
+<p>There are many more interesting instances of the monad abstraction out there. Please add them as you come across each species.
+</p>
+<h2><span class="mw-headline" id="Fun">Fun</span></h2>
+<ul><li>If you are tired of monads, you can easily <a rel="nofollow" class="external text" href="http://www.haskell.org.monadtransformer.parallelnetz.de/haskellwiki/Category:Monad">get rid of them</a>.</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="/What_a_Monad_is_not" title="What a Monad is not">What a Monad is not</a></li>
+<li><a href="/Monads_as_containers" title="Monads as containers">Monads as containers</a></li>
+<li><a href="/Monads_as_computation" title="Monads as computation">Monads as computation</a></li>
+<li><a href="/Monad/ST" title="Monad/ST">Monad/ST</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.haskellforall.com/2012/06/you-could-have-invented-free-monads.html">Why free monads matter</a> (blog article)</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20220813140301
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.027 seconds
+Real time usage: 0.257 seconds
+Preprocessor visited node count: 100/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 387/2097152 bytes
+Template argument size: 48/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 7037/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+
+-->
+</div>
+<!-- Saved in parser cache with key wikidb_haskell:pcache:idhash:1286-0!canonical and timestamp 20220813140300 and revision id 64650
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.haskell.org/index.php?title=Monad&amp;oldid=64650">https://wiki.haskell.org/index.php?title=Monad&amp;oldid=64650</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Category:Standard_classes" title="Category:Standard classes">Standard classes</a></li><li><a href="/Category:Monad" title="Category:Monad">Monad</a></li><li><a href="/Category:Nondeterminism" title="Category:Nondeterminism">Nondeterminism</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Monad" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="hawikiTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Monad"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Monad"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="hawikiTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Monad" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Monad&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Monad&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search HaskellWiki" title="Search HaskellWiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Haskell"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/Haskell" title="Visit the main page [z]" accesskey="z">Haskell</a></li><li id="n-portal"><a href="/HaskellWiki:Community" title="About the project, what you can do, where to find things">Wiki community</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Monad" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Monad" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Monad&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Monad&amp;oldid=64650" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Monad&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/index.php?title=Special:CiteThisPage&amp;page=Monad&amp;id=64650" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 1 August 2021, at 16:30.</li>
+											<li id="footer-info-copyright">Recent content is available under <a href="/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">simple permissive license</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+									<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.027","walltime":"0.257","ppvisitednodes":{"value":100,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":387,"limit":2097152},"templateargumentsize":{"value":48,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":7037,"limit":5000000},"timingprofile":[]},"cachereport":{"timestamp":"20220813140301","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":82});});</script>
+	</body>
+</html>

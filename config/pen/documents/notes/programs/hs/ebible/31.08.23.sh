@@ -1,0 +1,6 @@
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Deuteronomy 18:10-12" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Deuteronomy 18:10-12" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Deuteronomy 18:10-12" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Deuteronomy 18:10-12" "#" "<==" "bash"
+cd /root/notes;  "ebible" "-m" "NASB" "-nem" "Deuteronomy 18:10-12" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "-nem" "Deuteronomy 18:10-12" "#" "<==" "bash"

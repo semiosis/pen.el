@@ -1,0 +1,1943 @@
+HTTP/1.1 200 OK
+Date: Wed, 03 Jan 2024 03:06:37 GMT
+Server: Apache
+Last-Modified: Wed, 11 Jan 2023 14:06:08 GMT
+Accept-Ranges: bytes
+Content-Length: 57521
+X-Svr: cp1
+Keep-Alive: timeout=2, max=50
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<TITLE>Notes on the M4 Macro Language</TITLE>
+<style type="text/css"> html, body { background: white; color: black; font-family: Arial, Helvetica, sans-serif; max-width:730px; margin: 10px 15px 20px; } p, blockquote { text-align: justify; } a { text-decoration: none; } a:link { color: #660099 } a:visited { color: #660099 } a:hover { text-decoration: underline; } </style>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>Notes on the M4 Macro Language</H1>
+<FONT SIZE="4">
+<A href='http://mbreen.com/'>Michael Breen</A> &copy; 2008, 2023
+</FONT></CENTER>
+
+<P></P>
+<HR NOSHADE SIZE=1>
+<P></P>
+    <UL>
+    <LI><A HREF="#toc1">About this document</A>
+      <UL>
+      <LI><A HREF="#toc2">Which m4?</A>
+      <LI><A HREF="#toc3">Who should read this?</A>
+      <LI><A HREF="#toc4">How is this different from the manual?</A>
+      </UL>
+    <LI><A HREF="#toc5">What is m4?</A>
+    <LI><A HREF="#toc6">Basics: Simple macros, whitespace, quoting, comments</A>
+    <LI><A HREF="#toc7">How m4 works</A>
+    <LI><A HREF="#quotes">Quotes, escaping and non-ASCII characters</A>
+    <LI><A HREF="#toc9">Comments</A>
+    <LI><A HREF="#toc10">Alternatives to comments</A>
+    <LI><A HREF="#toc11">Conditionals</A>
+    <LI><A HREF="#toc12">Numbers</A>
+    <LI><A HREF="#strings">Strings</A>
+    <LI><A HREF="#recursion">Defining macros with arguments; a recursive macro</A>
+    <LI><A HREF="#toc15">Scope of macros; local variables</A>
+    <LI><A HREF="#pushpop">Pushing and popping macro definitions</A>
+    <LI><A HREF="#ignore_argless_macros">Macros that don't expand without arguments</A>
+    <LI><A HREF="#toc18">Name clashes: making macro names safe</A>
+    <LI><A HREF="#toc19">Loops</A>
+    <LI><A HREF="#redir">Suspending and discarding output: Buffers and redirection</A>
+    <LI><A HREF="#toc21">Including files</A>
+    <LI><A HREF="#toc22">Accessing the shell; creating temporary files</A>
+    <LI><A HREF="#toc23">Debugging</A>
+    <LI><A HREF="#renamingmacros">Aliasing and renaming macros (including builtins)</A>
+    <LI><A HREF="#builtin">Accessing internal builtins</A>
+    <LI><A HREF="#quotemacro">Macros for literal quotes</A>
+    <LI><A HREF="#indir">Indirect macro calls</A>
+    <LI><A HREF="#toc28">Recursion pitfall: nesting limits</A>
+    <LI><A HREF="#unexpandingmacros">Using unexpanding macros for arrays and hashes</A>
+    <LI><A HREF="#substrfix">String macro problem workaround</A>
+    <LI><A HREF="#assessment">M4: Assessment</A>
+    </UL>
+
+<P></P>
+<HR NOSHADE SIZE=1>
+<P></P>
+<A NAME="toc1"></A>
+<H2>About this document</H2>
+<A NAME="toc2"></A>
+<H3>Which m4?</H3>
+<P>
+This document describes GNU m4, as included with Linux;
+areas of potential incompatibility of which I am aware
+are mentioned as they arise and highlighted with a
+boldface &ldquo;<B>GNU</B>&rdquo;.
+</P>
+<P>
+This was originally based on GNU m4 version 1.4.5;
+it has been updated for version 1.4.10.
+</P>
+<A NAME="toc3"></A>
+<H3>Who should read this?</H3>
+<P>
+You may find this helpful if
+</P>
+<UL>
+<LI>you want to decide whether m4 is the tool you need
+for some task (once you get a rough idea of what the
+language is about, you might want to skip down to the
+<A HREF="#assessment">comparative assessment</A>)
+<LI>you need to quickly get up to speed on m4, or revise
+or (perhaps) learn more about the language
+</UL>
+
+<P></P>
+<P>
+You should already be familiar with fundamental
+programming concepts (e.g., recursion).
+</P>
+<A NAME="toc4"></A>
+<H3>How is this different from the manual?</H3>
+<P>
+There is a substantial overlap between the GNU m4 info pages
+and this document.
+The info pages are designed to be a comprehensive reference.
+This document is a much shorter &ldquo;m4 by example&rdquo;
+which is still &ldquo;practically&rdquo; complete &ndash;
+that is, I have tried to include:
+</P>
+<UL>
+<LI>everything helpful in using m4 effectively
+<LI>anything that might cause a problem if you weren't aware of it
+</UL>
+
+<P>
+Examples of the kind of details omitted are:
+</P>
+<UL>
+<LI>experimental features that may disappear in future versions
+<LI>the ways different versions of m4 handle the <CODE>changequote</CODE>
+macro (in practice, all you need to know are the restrictions
+to observe in order to ensure compatibility)
+<LI>details on the myriad debugging flags: effective debugging
+is possible using just two or three flags and macros
+</UL>
+
+<P>
+There is also some original material here:
+</P>
+<UL>
+<LI>tips, e.g., macros to protect unbalanced quote characters
+inside quotes
+<LI>different examples
+</UL>
+
+<P></P>
+<A NAME="toc5"></A>
+<H2>What is m4?</H2>
+<P>
+M4 can be called a &ldquo;template language&rdquo;, a &ldquo;macro language&rdquo;
+or a &ldquo;preprocessor language&rdquo;.
+The name &ldquo;m4&rdquo; also refers to the program which processes
+texts in this language:
+this &ldquo;preprocessor&rdquo; or &ldquo;macro processor&rdquo; takes as input
+an m4 template and sends this to the output,
+after acting on any embedded directives, called macros.
+</P>
+<P>
+At its most basic, it can be used for simple embedded text
+replacement.
+If m4 receives the input
+</P>
+<PRE>
+  define(AUTHOR, William Shakespeare)
+  A Midsummer Night's Dream
+  by AUTHOR
+</PRE>
+<P>
+then it outputs
+</P>
+<PRE>
+  A Midsummer Night's Dream
+  by William Shakespeare
+</PRE>
+<P></P>
+<P>
+While similar in principle to the better-known C preprocessor,
+it is a far more powerful, general-purpose tool.
+Some significant uses are:
+</P>
+<UL>
+<LI>sendmail: sendmail's rather cryptic configuration file
+(/etc/mail/sendmail.cf) is generated using m4 from a template
+file that is much easier to read and edit (/etc/mail/sendmail.mc).
+<LI>GNU Autoconf: m4 macros are used to produce &ldquo;configure&rdquo;
+scripts which make source code packages portable across different
+Unix-like platforms.
+<LI>Security Enhanced Linux: SELinux policy files are 
+(at time of writing) processed using m4.
+(In fact, m4 is the source of some difficulties here because
+its flexibility allows abuses
+and makes automated policy analysis difficult to apply.)
+</UL>
+
+<P></P>
+<A NAME="toc6"></A>
+<H2>Basics: Simple macros, whitespace, quoting, comments</H2>
+<P>
+M4 is a <B>Unix filter program</B>.
+Its arguments, if any, are the files it is to read;
+if none is specified then it reads from stdin.
+The resulting text is sent to stdout.
+</P>
+<P>
+M4 comes with an initial set of built-in macros,
+often simply called &ldquo;<B>builtins</B>&rdquo;.
+The most basic of these,
+<B><CODE>define</CODE></B>, is used to create new macros:
+</P>
+<PRE>
+  define(AUTHOR, W. Shakespeare)
+</PRE>
+<P>
+After this definition, the word &ldquo;AUTHOR&rdquo; is recognized
+as a macro that <B>expands</B> to &ldquo;W. Shakespeare&rdquo;.
+</P>
+<P>
+The <CODE>define</CODE> macro itself &ndash; including its two
+arguments &ndash; expands to an empty string, that is,
+it produces no output.
+However the <B>newline</B> at the end of the <CODE>AUTHOR</CODE> 
+definition above would be echoed to the output.
+If a blank line added to the output is a problem then
+you can suppress it using the &ldquo;<B>delete to newline</B>&rdquo;
+macro:
+</P>
+<PRE>
+  define(AUTHOR, W. Shakespeare)dnl
+</PRE>
+<P>
+There is no space between the end of the macro and the <CODE>dnl</CODE>:
+if there were then that space would be echoed to the output.
+</P>
+<P>
+No <B>whitespace</B> is allowed between a macro name and the
+opening parenthesis.
+Any whitespace before the beginning of
+a parameter is discarded.
+Thus the following definition is equivalent to the
+one above:
+</P>
+<PRE>
+  define(
+     AUTHOR,W. Shakespeare)dnl
+</PRE>
+<P></P>
+<P>
+It's also possible to pass <B>definitions on the command line</B>
+using the <CODE>-D</CODE> option, for example:
+</P>
+<PRE>
+  m4 -DAUTHOR="W. Shakespeare" -DYEAR=1587 input_file.m4
+</PRE>
+<P></P>
+<P>
+<B>Quoting</B> a string suppresses macro expansion.
+The default quote characters are the backtick (`)
+and apostrophe (').
+M4 strips off these delimiters before outputting
+the string.
+Thus
+</P>
+<PRE>
+  define(AUTHOR, W. Shakespeare)dnl
+  `AUTHOR' is AUTHOR
+</PRE>
+<P>
+produces the output
+</P>
+<PRE>
+  AUTHOR is W. Shakespeare
+</PRE>
+<P></P>
+<P>
+For conciseness, most examples will show
+m4's output in the following way:
+</P>
+<PRE>
+  `AUTHOR' is AUTHOR       # -&gt; AUTHOR is W. Shakespeare
+</PRE>
+<P>
+In m4, the hash character # is the default opening
+delimiter of a <B>comment</B>.
+A comment lasts up to and including the following
+newline character.
+The contents of a comment are not examined by m4;
+however, contrary to what you might expect,
+comments are echoed to the output.
+Thus, the previous line, if entered in full, would
+actually produce the output
+</P>
+<PRE>
+  AUTHOR is W. Shakespeare       # -&gt; AUTHOR is W. Shakespeare
+</PRE>
+<P>
+Opening comment delimiters can be protected by quotes:
+</P>
+<PRE>
+  `#' AUTHOR              # -&gt; # W. Shakespeare
+</PRE>
+<P></P>
+<P>
+<B>Nested quotes</B> are recognized as such:
+</P>
+<PRE>
+  ``AUTHOR'' is AUTHOR     # -&gt; `AUTHOR' is W. Shakespeare
+</PRE>
+<P></P>
+<P>
+Quoted strings can include newlines:
+</P>
+<PRE>
+  define(newline,`line
+  break')
+  a newline here
+</PRE>
+<P>
+outputs
+</P>
+<PRE>
+  a line
+  break here
+</PRE>
+<P></P>
+<P>
+Without a matching opening quote character (`), a
+closing quote (') is simply echoed to the output.
+Thus
+</P>
+<PRE>
+  `AUTHOR
+   ' is AUTHOR.''
+</PRE>
+<P>
+produces
+</P>
+<PRE>
+  AUTHOR
+    is W. Shakespeare.''
+</PRE>
+<P></P>
+<P>
+M4 also understands <B>nested parentheses</B> within
+a macro's argument list:
+</P>
+<PRE>
+  define(PARENS, ())
+  brackets: PARENS         # -&gt; brackets: ()
+</PRE>
+<P>
+Unbalanced parentheses can be quoted to protect them:
+</P>
+<PRE>
+  define(LPAREN,`(')
+  define(RPAREN,`)')
+  LPAREN bracketed RPAREN  # -&gt; ( bracketed )
+</PRE>
+<P>
+(Unbalanced quote characters are more problematic;
+a solution is given <A HREF="#quotemacro">later</A>.)
+</P>
+<P>
+<B>Pitfall</B>:
+In fact, quoting of the macro name is also recommended.
+Consider the following:
+</P>
+<PRE>
+  define(LEFT, [)
+  LEFT                     # -&gt; [
+  define(LEFT, {)
+  LEFT                     # -&gt; [
+</PRE>
+<P>
+Why didn't the second <CODE>define</CODE> work?
+The problem is that, within the second <CODE>define</CODE>, the
+macro <CODE>LEFT</CODE> was expanded before the define macro
+itself took effect:
+</P>
+<PRE>
+  define(LEFT, {)          # -&gt; define([, {) -&gt;
+</PRE>
+<P>
+That is, instead of redefining the macro <CODE>LEFT</CODE>,
+a new macro named <CODE>[</CODE> was defined.
+<B>GNU</B> m4 allows macros to have non-standard names,
+including punctuation characters like <CODE>[</CODE>.
+In fact, the new macro doesn't seem to work either:
+</P>
+<PRE>
+  [                        # -&gt; [
+</PRE>
+<P>
+That's because GNU m4 doesn't ordinarily recognize a
+macro as a macro unless it has a <B>valid name</B> &ndash; that is,
+a sequence of ASCII letters, underscores, or digits,
+beginning with an underscore or letter.
+For example,
+<CODE>my_macro1</CODE> and <CODE>_1stMacro</CODE> are both valid names;
+<CODE>my.macro1</CODE> and <CODE>1stMacro</CODE> are not.
+(We will see later how the ability to define
+<A HREF="#unexpandingmacros">macros with invalid names can be useful</A>.)
+</P>
+<P>
+Quoting the macro's arguments avoids this problem:
+</P>
+<PRE>
+  define(`LEFT',`[')
+  LEFT                     # -&gt; [
+  define(`LEFT',`{')
+  LEFT                     # -&gt; {
+</PRE>
+<P></P>
+<P>
+For the same reason, the <B><CODE>undefine</CODE></B> macro will
+normally work as expected only if its argument is quoted:
+</P>
+<PRE>
+  define(`RIGHT', `]')
+  undefine(RIGHT)          # -&gt; undefine(]) -&gt;
+  RIGHT                    # -&gt; ]
+  undefine(`RIGHT')
+  RIGHT                    # -&gt; RIGHT
+</PRE>
+<P>
+(Note that <CODE>undefine</CODE> does not complain if it is
+given the name of a non-existent macro, it simply
+does nothing.)
+</P>
+<A NAME="toc7"></A>
+<H2>How m4 works</H2>
+<P>
+M4's behaviour can be mystifying.
+It is best to get an early understanding of how it works.
+This should save you time figuring out what's going on
+when it doesn't do what you expect.
+</P>
+<P>
+First, m4 looks for <B>tokens</B> in its input &ndash; roughly speaking,
+it divides it into quoted strings, macro arguments,
+names (i.e., identifiers), numbers and other symbols
+(punctuation characters).
+Whitespace (including newlines), numbers and punctuation
+usually mark token boundaries;
+exceptions are when they appear within a quoted string
+or a macro argument.
+</P>
+<PRE>
+  define( `Version2', A &ndash; 1 )99Version2:Version2_   Version22
+  # -&gt; 99A &ndash; 1 :Version2_   Version22
+</PRE>
+<P>
+Above, since a valid name can include digits but cannot
+begin with one, the names seen after the definition are
+<CODE>Version2</CODE>, <CODE>Version2_</CODE>, and <CODE>Version22</CODE>;
+only the first of these corresponds to a defined macro.
+</P>
+<P>
+Continuing:
+</P>
+<PRE>
+  Version2(arg1, arg2) Version2 (junk) garbage(trash)Version2()
+  # -&gt; A &ndash; 1  A &ndash; 1  (junk) garbage(trash)A &ndash; 1
+</PRE>
+<P>
+If the name of a macro is followed immediately by a
+'(' then m4 reads in a list of arguments.
+The <CODE>Version2</CODE> macro we have defined ignores
+its arguments -- but that doesn't matter to m4:
+it swallows up the arguments and outputs only
+the macro's expansion &ldquo;A &ndash; 1 &rdquo;.
+</P>
+<P>
+In general, m4 passes input tokens and separators straight
+through to the output, making no change except to remove
+the quotes surrounding quoted string tokens.
+When it encounters a macro name, however, it stops
+echoing to the output.
+Instead:
+</P>
+<OL>
+<LI>it reads in the macro's arguments (if any)
+<LI>it determines the expansion of the macro and inserts this
+expansion at the beginning of its input
+<LI>m4 continues scanning the input, starting with the expansion
+</OL>
+
+<P>
+If while reading in a macro's arguments, m4 encounters
+another macro then it repeats this process for the
+nested macro.
+</P>
+<P>
+An example makes this clearer:
+</P>
+<PRE>
+  define(`definenum', `define(`num', `99')')
+  num                      # -&gt; num
+  definenum num            # -&gt; define(`num', `99') num -&gt;  99
+</PRE>
+<P>
+As soon as m4 gets to the end of &ldquo;definenum&rdquo; on the 
+last line above, it recognizes it as a macro and 
+replaces it with &ldquo;define(`num', 99)&rdquo; --
+however, instead of outputting this expansion,
+it sticks it back on the beginning of its input buffer
+and starts again from there.
+Thus, the next thing it reads in is &ldquo;define(`num', 99)&rdquo;.
+As the define macro expands to an empty string,
+nothing is output; however, the new macro <CODE>num</CODE> is
+now defined.
+Then m4 reads in a space which it echoes to the output,
+followed by the macro <CODE>num</CODE>, which it replaces with its
+expansion.
+The last line therefore results in the output &ldquo; 99&rdquo;.
+</P>
+<P>
+Unless a nested macro is quoted, it is expanded immediately:
+</P>
+<PRE>
+  define(`definenum', define(`num', `99'))
+  num                      # -&gt; 99
+  definenum                # -&gt;
+</PRE>
+<P>
+Here, when m4 reads in the nested <CODE>define</CODE> macro,
+it immediately defines <CODE>num</CODE>; it also replaces the macro
+&ldquo;define(`num', `99')&rdquo; with its expansion &ndash; an empty string.
+Thus, &ldquo;definenum&rdquo; ends up being defined as an empty string.
+</P>
+<P>
+Arbitrary nesting is possible -- with (ordinarily)
+an extra layer of protective quotes at each level
+of nesting:
+</P>
+<PRE>
+  define(`definedefineX',`define(`defineX',`define(`X',`xxx')')')
+  defineX X           # -&gt; defineX X
+  definedefineX X     # -&gt;  X
+  defineX X           # -&gt;  xxx
+</PRE>
+<P></P>
+<P>
+If rescanning of a macro's expansion is not what you
+want then just add more quotes:
+</P>
+<PRE>
+  define(`stmt',``define(`Y',`yyy')'')
+  stmt                # -&gt; define(`Y',`yyy')
+  Y                   # -&gt; Y
+</PRE>
+<P>
+Above, the outermost quotes are removed when the
+nested macro is being read in &ndash; so <CODE>stmt</CODE> expands
+first to <CODE>`define(`Y',`yyy')'</CODE>; m4 then rescans
+this as a string token and removes the second layer of
+quotes before sending it to the output.
+</P>
+<P>
+Now consider the definition
+</P>
+<PRE>
+  define(`plus', `+')
+</PRE>
+<P>
+Suppose we want to use this <CODE>plus</CODE> macro twice
+in succession with no intervening space.
+Clearly, <CODE>plusplus</CODE> doesn't work &ndash; it is read as
+a single token, <CODE>plusplus</CODE>, not two <CODE>plus</CODE> tokens:
+</P>
+<PRE>
+  plusplus       # -&gt; plusplus
+</PRE>
+<P>
+We can use an argument list as a separator:
+</P>
+<PRE>
+  plus()plus     # -&gt; ++
+</PRE>
+<P></P>
+<P>
+But watch what happens with an extra level of indirection:
+</P>
+<PRE>
+  define(`oper', `plus')
+  oper()oper     # -&gt; plusoper
+</PRE>
+<P>
+Here, <CODE>oper()</CODE> expands to <CODE>plus</CODE>; but then rescanning of
+the input starts from the beginning of the expansion.
+Thus, the next thing read in is the token <CODE>plusoper</CODE>.
+As it doesn't correspond to a macro, it is copied straight
+to the output.
+</P>
+<P>
+The problem can be solved by adding an
+<B>empty quote as a separator</B>:
+</P>
+<PRE>
+  oper`'oper     # -&gt; plus`'oper -&gt; +`'oper -&gt; ... -&gt; ++
+</PRE>
+<P>
+It is a good idea to include such a separator in
+macro definitions as a matter of policy:
+</P>
+<PRE>
+  define(`oper',`plus`'')
+  oper()oper     # -&gt; plus`'oper -&gt; +`'oper -&gt; +oper -&gt; ... -&gt; ++
+</PRE>
+<P></P>
+<P>
+If ever <B>m4 seems to hang or stop working</B>, it is probably
+because a faulty macro has sent it into an infinite loop:
+</P>
+<PRE>
+  define(`Bye', `Bye for now')
+  Hello.         # -&gt; Hello.
+  Bye.           # -&gt; Bye for now. -&gt; Bye for now for now. -&gt; ...
+</PRE>
+<P>
+Such an error is not always this obvious:
+the cycle may involve more than one macro.
+</P>
+<P>
+Finally, look at this example:
+</P>
+<PRE>
+  define(`args', ``NAME', `Marie'')
+  define(args)                   # -&gt; define(`NAME', `Marie') -&gt;
+  NAME                           # -&gt; Marie
+  
+  args(define(`args',`Rachel'))  # -&gt; args() -&gt; `NAME', `Marie' -&gt; NAME, Marie
+  args                           # -&gt; Rachel
+</PRE>
+<P>
+In the second part of the example, although <CODE>args</CODE>
+doesn't take an argument, we can still pass it one.
+In this case the argument redefines the macro that's
+currently being expanded.
+However, it is the expansion that was in force when the
+macro identifier was read in that is output.
+</P>
+<P>
+Similarly, it is possible to define a <B>self-modifying macro</B>
+or even a <B>self-destructing macro</B>:
+</P>
+<PRE>
+  define(`msg', `undefine(`msg')Secret message.')
+  msg            # -&gt; Secret message.
+  msg            # -&gt; msg
+</PRE>
+<P></P>
+<P>
+<B><A HREF="#recursion">Recursive macros</A></B> can also be defined.
+</P>
+<A NAME="quotes"></A>
+<H2>Quotes, escaping and non-ASCII characters</H2>
+<P>
+A deficiency of m4 is that there is <B>no escape character</B>.
+This means that if you want to use the backtick (`) for anything
+other than an opening quote delimiter you need to take care.
+Sometimes you can just add an extra layer of quotes:
+</P>
+<PRE>
+  I said, ``Quote me.''     # -&gt; I said, `Quote me.'
+</PRE>
+<P>
+However, in other cases, you might need an opening quote
+without m4 interpreting it as such.
+</P>
+<P>
+The general way around this problem is to use the
+<B><CODE>changequote</CODE></B> macro, e.g.,
+</P>
+<PRE>
+  changequote(&lt;!,!&gt;)
+  a `quo&lt;!ted str!&gt;ing'
+</PRE>
+<P>
+outputs
+</P>
+<PRE>
+  a `quoted string'
+</PRE>
+<P>
+Without parameters, <CODE>changequote</CODE> restores the default
+delimiters.
+</P>
+<P>
+In general, it is best to <B>avoid using changequote</B>.
+You can define
+<A HREF="#quotemacro">macros to insert literal quotes</A>
+should you need them.
+</P>
+<P>
+Sometimes, however, it is necessary to change the
+quote character globally, e.g., because the backtick
+character is not available on some keyboards or
+because the text being processed makes extensive use
+of the default quote characters.
+If you do use <CODE>changequote</CODE> then be aware of the
+pitfalls:
+</P>
+<P>
+<B>GNU</B> m4's <CODE>changequote</CODE> can differ from other
+implementations of m4 and from earlier versions of GNU m4.
+For portability,
+call <CODE>changequote</CODE> only with two arguments &ndash;
+or with no arguments, i.e.,
+</P>
+<PRE>
+  changequote`'    # (trailing `' is separator if needed)
+</PRE>
+<P></P>
+<P>
+Note that <CODE>changequote</CODE> changes how existing macros are
+interpreted, e.g.,
+</P>
+<PRE>
+  define(x,``xyz'')
+  x                    # -&gt; xyz
+  changequote({,})
+  x                    # -&gt; `xyz'
+</PRE>
+<P>
+Don't choose the same delimiter for the left and right quotes:
+doing so makes it impossible to have nested quotes.
+</P>
+<P>
+Don't change a quote delimiter to anything that
+begins with a letter or underscore or a digit; m4 won't
+complain but it only recognizes a delimiter if it starts
+with a punctuation character.
+A digit may be recognized as a delimiter but not if it
+is scanned as part of the preceding token.
+</P>
+<P>
+While later versions of <B>GNU</B> m4 have a greater
+tolerance for <B>non-ASCII characters</B> (e.g., the
+pound sign or an accented character) it is better
+to avoid them, certainly in macro names and preferably
+in delimiters too.
+If you do use 8-bit characters and m4 is not behaving
+quite as you expect, this may be the reason.
+Where <B>multibyte character encoding</B> is used,
+m4 should not be used at all.
+</P>
+<A NAME="toc9"></A>
+<H2>Comments</H2>
+<P>
+As mentioned above, <B>line comments</B> are echoed
+to the output, e.g.,
+</P>
+<PRE>
+  define(`VERSION',`A1')
+  VERSION # VERSION `quote' unmatched`
+</PRE>
+<P>
+expands to
+</P>
+<PRE>
+  A1 # VERSION `quote' unmatched`
+</PRE>
+<P></P>
+<P>
+Comments are not very useful.
+However, even if you don't use them you need to remember to
+quote any hash character in order to prevent it being 
+interpreted as the beginning of a comment:
+</P>
+<PRE>
+  `#' VERSION    -&gt; # A1
+</PRE>
+<P></P>
+<P>
+You can change the opening comment delimiter, e.g.,
+<B><CODE>changecom</CODE></B><CODE>(`@@')</CODE> &ndash; as with <CODE>changequote</CODE>,
+the new delimiter should start with a punctuation character.
+</P>
+<P>
+If you want <B>echoing block comments</B>,
+you can also change the closing delimiter, e.g.,
+for C-like comments,
+</P>
+<PRE>
+  changecom(/*,*/)
+  VERSION `quote' /* VERSION
+  `quote' ` */ VERSION
+  # -&gt;
+  # A1 quote /* VERSION
+  # `quote' ` */ A1
+</PRE>
+<P>
+Without arguments, <CODE>changecom</CODE> restores the default
+comment delimiters.
+</P>
+<A NAME="toc10"></A>
+<H2>Alternatives to comments</H2>
+<P>
+For a comment that should not be echoed to the output,
+use <CODE>dnl</CODE>: this macro not only prevents the following
+newline from being output (as we saw above), it also
+discards everything up to the newline.
+</P>
+<PRE>
+  dnl These two lines will not result
+  dnl in any output.
+</PRE>
+<P></P>
+<P>
+<B>Non-echoing block comments</B>:
+multiline comments that are not echoed to the output
+can be written like this
+</P>
+<PRE>
+  ifelse(`
+  This is a comment
+  spanning more than
+  one line.
+  ')dnl
+</PRE>
+<P>
+This is a hack which takes advantage of the fact that the
+<CODE>ifelse</CODE> macro (described below) has no effect if it is
+passed only one argument.
+Some versions of m4 may therefore issue a warning about
+insufficient arguments; <B>GNU</B> m4 doesn't.
+</P>
+<P>
+Be sure there are no unmatched quotes in the comment text.
+</P>
+<A NAME="toc11"></A>
+<H2>Conditionals</H2>
+<P>
+<B><CODE>ifdef</CODE></B><CODE>(`a',b)</CODE> outputs b if a is defined;
+<CODE>ifdef(`a',b,c)</CODE> outputs c if a is not defined.
+The definition being tested may be empty, e.g.,
+</P>
+<PRE>
+  define(`def')
+  `def' is ifdef(`def', , not )defined.
+  # -&gt; def is defined.
+</PRE>
+<P></P>
+<P>
+<B><CODE>ifelse</CODE></B><CODE>(a,b,c,d)</CODE> compares the strings a and b.
+If they match, the macro expands to string c;
+if not, string d.
+</P>
+<P>
+This can be extended to multiple else-ifs:
+</P>
+<PRE>
+  ifelse(a,b,c,d,e,f,g)
+</PRE>
+<P>
+means that if a matches b, then
+return (expand to) c; else if d matches e, then return f; 
+else return g.
+In other words, it's shorthand for
+</P>
+<PRE>
+  ifelse(a,b,c,ifelse(d,e,f,g))
+</PRE>
+<P></P>
+<A NAME="toc12"></A>
+<H2>Numbers</H2>
+<P>
+<B>M4 normally treats numbers as strings.</B>
+However, the <B><CODE>eval</CODE></B> macro allows access to
+<B>integer arithmetic</B>;
+expressions can include these operators (in order of precedence)
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>+ -</TD>
+<TD>unary plus and minus</TD>
+</TR>
+<TR>
+<TD>**</TD>
+<TD>exponent</TD>
+</TR>
+<TR>
+<TD>* / %</TD>
+<TD>multiplication, division, modulo (<CODE>eval(8/-5)</CODE> -&gt; <CODE>-1</CODE>)</TD>
+</TR>
+<TR>
+<TD>+ -</TD>
+<TD>addition and subtraction</TD>
+</TR>
+<TR>
+<TD>&lt;&lt; &gt;&gt;</TD>
+<TD>shift up or down (<CODE>eval(-8&gt;&gt;1)</CODE> -&gt; <CODE>-4</CODE>)</TD>
+</TR>
+<TR>
+<TD>== != &lt; &lt;= &gt;= &gt;</TD>
+<TD>relational</TD>
+</TR>
+<TR>
+<TD>!</TD>
+<TD>logical not (converts non-zero to 0, 0 to 1)</TD>
+</TR>
+<TR>
+<TD>~</TD>
+<TD>bitwise not (<CODE>eval(~0)</CODE> -&gt; <CODE>-1</CODE>)</TD>
+</TR>
+<TR>
+<TD>&amp;</TD>
+<TD>bitwise and (<CODE>eval(6&amp;5)</CODE> -&gt; <CODE>4</CODE>)</TD>
+</TR>
+<TR>
+<TD>^</TD>
+<TD>bitwise exclusive or (<CODE>eval(3^2)</CODE> -&gt; <CODE>1</CODE>)</TD>
+</TR>
+<TR>
+<TD><CODE>|</CODE></TD>
+<TD>bitwise or (<CODE>eval(1|2)</CODE> -&gt; <CODE>3</CODE>)</TD>
+</TR>
+<TR>
+<TD>&amp;&amp;</TD>
+<TD>logical and</TD>
+</TR>
+<TR>
+<TD><CODE>||</CODE></TD>
+<TD>logical or</TD>
+</TR>
+</TABLE>
+
+<P>
+The above table is for <B>GNU</B> m4; unfortunately,
+the operators and precedence are <B>version-dependent</B>.
+Some versions of m4 incorrectly treat <CODE>^</CODE> the same as <CODE>**</CODE>
+(exponent).
+For maximum compatibility, make liberal use of parentheses
+to enforce precedence.
+</P>
+<P>
+Should you need it, <B>octal</B>, <B>hexadecimal</B> and indeed
+<B>arbitrary radix</B> arithmetic are available.
+It's also possible to specify the width of <CODE>eval</CODE>'s output.
+(See the m4 info pages for details on these.)
+</P>
+<PRE>
+  eval(7*6)        # -&gt; 42
+  eval(7/3+100)    # -&gt; 102
+</PRE>
+<P></P>
+<P>
+There are also <B><CODE>incr</CODE></B> and <B><CODE>decr</CODE></B> builtins as shortcuts
+which expand to the argument plus or minus one, e.g.,
+<CODE>incr(x)</CODE> is equivalent to <CODE>eval(x+1)</CODE>:
+</P>
+<PRE>
+  define(`n', 0)
+  n # -&gt; 0
+  define(`n', incr(n))
+  n # -&gt; 1
+</PRE>
+<P></P>
+<P>
+Beware of silent <B>integer overflow</B>, e.g.,
+on my machine, the integer range is <CODE>-2**31</CODE> ... <CODE>2**31-1</CODE>;
+<CODE>eval(2**31)</CODE> erroneously expands to <CODE>-2147483648</CODE>.
+</P>
+<P>
+Logical conditions can be checked like this:
+</P>
+<PRE>
+  `n' is ifelse(eval(n &lt; 2), 1, less than ,
+     eval(n = 2), 1, , greater than )2
+</PRE>
+<P></P>
+<A NAME="strings"></A>
+<H2>Strings</H2>
+<P>
+<B><CODE>len</CODE></B>:
+</P>
+<PRE>
+  len(`hello')                     # -&gt; 5
+</PRE>
+<P></P>
+<P>
+<B><CODE>substr</CODE></B>:
+</P>
+<PRE>
+  substr(`hello', 1, 3)            # -&gt; ell
+  substr(`hello', 2)               # -&gt; llo
+</PRE>
+<P></P>
+<P>
+<B><CODE>index</CODE></B>:
+</P>
+<PRE>
+  index(`hello',`llo')             # -&gt; 2
+  index(`not in string', `xyz')    # -&gt; -1
+</PRE>
+<P></P>
+<P>
+<B><CODE>translit</CODE></B>:
+</P>
+<PRE>
+  define(`ALPHA', `abcdefghijklmnopqrstuvwxyz')
+  define(`ALPHA_UPR', `ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+  define(`ROT13', `nopqrstuvwxyzabcdefghijklm')
+  
+  translit(`abc ebg13', ALPHA, ALPHA_UPR)
+  # -&gt; ABC EBG13
+  
+  translit(`abc ebg13', ALPHA, ROT13)
+  # -&gt; nop rot13
+</PRE>
+<P></P>
+<P>
+<B>GNU</B> m4 includes some additional string macros:
+<B><CODE>regexp</CODE></B>, to search for a regular expression in a
+string, and <B><CODE>patsubst</CODE></B>, to do find and replace.
+</P>
+<P>
+Unfortunately, m4's usual approach of rescanning the
+expansion of a macro can be a problem with macros that
+operate on strings:
+</P>
+<PRE>
+  define(`eng',`engineering')
+  substr(`engineer',0,3)           # -&gt; eng -&gt; engineering
+  translit(`rat', ALPHA, ROT13)    # -&gt; eng -&gt; engineering
+</PRE>
+<P>
+This is not normally the desired behaviour and is
+arguably a <B>design bug</B> in m4:
+the builtins should at least provide some way to allow us
+to prevent the extracted or transformed substring from
+being expanded.
+A workaround is suggested <A HREF="#substrfix">below</A>.
+</P>
+<A NAME="recursion"></A>
+<H2>Defining macros with arguments; a recursive macro</H2>
+<P>
+In standard m4 (Unix), a macro can have up to 9 <B>arguments</B>;
+within the macro definition, these are referenced as
+<CODE>$1</CODE> ... <CODE>$9</CODE>.
+(<B>GNU</B> m4 has no fixed limit on the number of arguments.)
+Arguments default to the empty string, e.g., if 2
+arguments are passed then <CODE>$3</CODE> will be empty.
+</P>
+<P>
+Going in at the deep end, here is a reimplementation of the 
+<CODE>len</CODE> builtin (replacing it) as a <B>recursive</B> macro.
+</P>
+<PRE>
+  define(`len',`ifelse($1,,0,`eval(1+len(substr($1,1)))')')
+</PRE>
+<P></P>
+<P>
+In a macro definition, argument references like <CODE>$1</CODE>
+expand immediately, regardless of surrounding quotes.
+For example, <CODE>len(`xyz')</CODE> above would expand (at the
+first step) to
+</P>
+<PRE>
+  ifelse(xyz,,0,`eval(1+len(substr(xyz,1)))')')
+</PRE>
+<P>
+Where necessary, this immediate expansion can be prevented
+by breaking up the reference with
+<B>inside quotes</B>, e.g., <CODE>$`'1</CODE>.
+</P>
+<P>
+The name of the macro is given by <B><CODE>$0</CODE></B>;
+<B><CODE>$#</CODE></B> expands to the number of arguments.
+Note in the following example that
+<B>empty parentheses are treated as delimiting a single argument</B>:
+an empty string:
+</P>
+<PRE>
+  define(`count', ``$0': $# args')
+  count        # -&gt; count: 0 args
+  count()      # -&gt; count: 1 args
+  count(1)     # -&gt; count: 1 args
+  count(1,)    # -&gt; count: 2 args
+</PRE>
+<P></P>
+<P>
+<B><CODE>$*</CODE></B> expands to the list of arguments;
+<B><CODE>$@</CODE></B> does the same but protects each one with quotes
+to prevent them being expanded:
+</P>
+<PRE>
+  define(`list',`$`'*: $*; $`'@: $@')
+  list(len(`abc'),`len(`abc')')
+  # -&gt; $*: 3,3; $@: 3,len(`abc')
+</PRE>
+<P></P>
+<P>
+A common requirement is to process a list of arguments where
+we don't know in advance how long the list will be.
+Here, the <B><CODE>shift</CODE></B> macro comes in useful &ndash; it expands
+to the same list of arguments with the first one removed:
+</P>
+<PRE>
+  shift(1,2, `abc', 4)       # -&gt; 2,abc,4
+  shift(one)                 # -&gt;
+  define(`echolast',`ifelse(eval($#&lt;2),1,`$1`'',
+    `echolast(shift($@))')')
+  echolast(one,two,three)    # -&gt; three
+</PRE>
+<P></P>
+<A NAME="toc15"></A>
+<H2>Scope of macros; local variables</H2>
+<P>
+<B>All macros have global scope</B>.
+</P>
+<P>
+What if we want a &ldquo;local variable&rdquo; &ndash; a macro that
+is used only within the definition of another macro?
+In particular, suppose we want to avoid accidentally
+redefining a macro used somewhere else.
+</P>
+<P>
+One possibility is to prefix &ldquo;local&rdquo; macro names with the
+name of the containing macro.
+Unfortunately, this isn't entirely satisfactory &ndash; and
+it won't work at all in a recursive macro.
+A better approach is described in the <A HREF="#pushpop">next section</A>.
+</P>
+<A NAME="pushpop"></A>
+<H2>Pushing and popping macro definitions</H2>
+<P>
+For each macro, m4 actually creates a stack of definitions &ndash;
+the current definition is just the one on top of the stack.
+It's possible to temporarily redefine a macro by using
+<B><CODE>pushdef</CODE></B> to add a definition to the top of the stack
+and, later, <B><CODE>popdef</CODE></B> to destroy only the topmost
+definition:
+</P>
+<PRE>
+  define(`USED',1)
+  define(`proc',
+    `pushdef(`USED',10)pushdef(`UNUSED',20)dnl
+  `'`USED' = USED, `UNUSED' = UNUSED`'dnl
+  `'popdef(`USED',`UNUSED')')
+  proc     # -&gt; USED = 10, UNUSED = 20
+  USED     # -&gt; 1
+</PRE>
+<P>
+If the macro hasn't yet been defined then <CODE>pushdef</CODE> is
+equivalent to <CODE>define</CODE>.
+As with <CODE>undefine</CODE>, it is not an error to <CODE>popdef</CODE>
+a macro which isn't currently defined; it simply has
+no effect.
+</P>
+<P>
+In <B>GNU</B> m4, <CODE>define(X,Y)</CODE> works like
+<CODE>popdef(X)pushdef(X,Y)</CODE>, i.e., it replaces only the
+topmost definition on the stack;
+in some implementations, <CODE>define(X)</CODE> is equivalent to
+<CODE>undefine(X)define(X,Y)</CODE>, i.e., the new definition
+replaces the whole stack.
+</P>
+<A NAME="ignore_argless_macros"></A>
+<H2>Macros that don't expand without arguments</H2>
+<P>
+When <B>GNU</B> m4 encounters a word such as &ldquo;define&rdquo; that
+corresponds to a builtin that requires arguments,
+it leaves the word unchanged unless it is immediately
+followed by an opening parenthesis.
+</P>
+<PRE>
+  define(`MYMACRO',`text')    # -&gt;
+  define a macro              # -&gt; define a macro
+</PRE>
+<P>
+Actually, we can say that m4 <I>does</I> expand the macro &ndash;
+but that it expands only to the same literal string.
+We can make our own macros equally intelligent by adding an
+<CODE>ifelse</CODE> &ndash; or an extra clause to an existing &ldquo;ifelse&rdquo;:
+</P>
+<PRE>
+  define(`reverse',`ifelse($1,,,
+   `reverse(substr($1,1))`'substr($1,0,1)')')
+  reverse drawer: reverse(`drawer')     # -&gt;  drawer: reward
+  
+  define(`reverse',`ifelse($#,0,``$0'',$1,,,
+   `reverse(substr($1,1))`'substr($1,0,1)')')
+  reverse drawer: reverse(`drawer')     # -&gt; reverse drawer: reward
+</PRE>
+<P></P>
+<A NAME="toc18"></A>
+<H2>Name clashes: making macro names safe</H2>
+<P>
+Unfortunately, some macros do not require arguments
+and so m4 has no way of knowing whether a word corresponding
+to a macro name is intended to be a macro call or just
+accidentally present in the text being processed.
+</P>
+<P>
+Also, other versions of m4, and older versions of
+<B>GNU</B> m4, may expand macro names which are not followed
+by arguments even where GNU m4 does not:
+</P>
+<PRE>
+  # GNU m4 1.4.10
+  we shift the responsibility    # -&gt; we shift the responsibility
+  # GNU m4 1.4.5
+  we shift the responsibility    # -&gt; we  the responsibility
+</PRE>
+<P></P>
+<P>
+In general, the problem is dealt with by quoting any
+word that corresponds to a macro name:
+</P>
+<PRE>
+  we `shift' the responsibility  # -&gt; we shift the responsibility
+</PRE>
+<P></P>
+<P>
+However if you are not fully in control of the text
+being passed to m4 this can be troublesome.
+Many macro names, like &ldquo;changequote&rdquo;, are
+unlikely to occur in ordinary text.
+Potentially more problematic are dictionary words that
+are recognized as macros even without arguments:
+</P>
+<UL>
+<LI><CODE>divert</CODE>, <CODE>undivert</CODE> (covered <A HREF="#redir">below</A>)
+<LI><CODE>windows</CODE>
+</UL>
+
+<P>
+(&ldquo;windows&rdquo; &ndash; as well as &ldquo;unix&rdquo; and &ldquo;os2&rdquo; &ndash; is defined
+in some versions of m4 as a way of testing the platform on
+which m4 is running; by default it is not defined in GNU m4.)
+</P>
+<P>
+An alternative to quoting macro names is to change all
+m4's macro names so that they won't clash with anything.
+Invoking m4 with the <CODE>-P</CODE> command-line option prefixes
+all builtins with &ldquo;m4_&rdquo;:
+</P>
+<PRE>
+  define(`M1',`text1')M1          # -&gt; define(M1,text1)M1
+  m4_define(`M1',`text1')M1       # -&gt; text1
+</PRE>
+<P></P>
+<P>
+On the basis that unnecessary changes to a language are
+generally undesirable, I suggest not using <CODE>-P</CODE> option
+if you can comfortably avoid it.
+</P>
+<P>
+However, if you are writing a set of m4 macros that may be
+included by others as a module, do add some kind of prefix
+to your own macros to reduce the possibility of clashes.
+</P>
+<A NAME="toc19"></A>
+<H2>Loops</H2>
+<P>
+Although m4 provides no builtins for iteration, it is not
+difficult to create macros which use recursion to do this.
+Various implementations can be found on the web.
+This author's &ldquo;for&rdquo; loop is:
+</P>
+<PRE>
+  define(`for',`ifelse($#,0,``$0'',`ifelse(eval($2&lt;=$3),1,
+    `pushdef(`$1',$2)$4`'popdef(`$1')$0(`$1',incr($2),$3,`$4')')')')
+  
+  for n = for(`x',1,5,`x,')...      # -&gt; for n = 1,2,3,4,5,...
+  
+  for(`x',1,3,`for(`x',0,4,`eval(5-x)') ')
+  # -&gt; 54321 54321 54321
+</PRE>
+<P>
+Note the use of <CODE>pushdef</CODE> and <CODE>popdef</CODE> to prevent
+loop variables clobbering any existing variable;
+in the nested <CODE>for</CODE> loop, this causes the second <CODE>x</CODE> to
+hide (shadow) the first one during execution of the inner loop.
+</P>
+<P>
+A &ldquo;for each&rdquo; macro might be written:
+</P>
+<PRE>
+  define(`foreach',`ifelse(eval($#&gt;2),1,
+    `pushdef(`$1',`$3')$2`'popdef(`$1')dnl
+  `'ifelse(eval($#&gt;3),1,`$0(`$1',`$2',shift(shift(shift($@))))')')')
+  
+  foreach(`X',`Open the X. ',`door',`window')
+  # -&gt; Open the door. Open the window.
+  
+  foreach(`X',`foreach(`Y',`Y the X. ',`Open',`Close')',`door',`window')
+  # -&gt; Open the door. Close the door. Open the window. Close the window.
+  
+  define(`OPER',``$2 the $1'')
+  foreach(`XY',`OPER(XY). ', ``window',`Open'', ``door',`Close'')
+  # -&gt; Open the window. Close the door.
+</PRE>
+<P></P>
+<P>
+In a &ldquo;for&rdquo; loop of either kind, it can be useful to know
+when you've reached the last item in the sequence:
+</P>
+<PRE>
+  define(`foreach',`ifelse(eval($#&gt;2),1,
+    `pushdef(`last_$1',eval($#==3))dnl
+  `'pushdef(`$1',`$3')$2`'popdef(`$1')dnl
+  `'popdef(`last_$1')dnl
+  `'ifelse(eval($#&gt;3),1,`$0(`$1',`$2',shift(shift(shift($@))))')')')
+  
+  define(`everyone',``Tom',`Dick',`Harry'')
+  foreach(`one',`one`'ifelse(last_one,0,` and ')',everyone).
+  # -&gt; Tom and Dick and Harry.
+</PRE>
+<P></P>
+<P>
+Finally, a simple &ldquo;while&rdquo; loop macro:
+</P>
+<PRE>
+  define(`while',`ifelse($#,0,``$0'',eval($1+0),1,`$2`'$0($@)')')
+  
+  define(`POW2',2)
+  while(`POW2&lt;=1000',`define(`POW2',eval(POW2*2))')
+  POW2                             # -&gt; 1024
+</PRE>
+<P>
+Here, the apparently redundant <CODE>+0</CODE> in <CODE>eval($1+0)</CODE> does
+have a purpose: without it, a <CODE>while</CODE> without arguments
+expands to
+</P>
+<PRE>
+  ifelse(0,0,``while'',eval() ...
+</PRE>
+<P>
+whereupon <CODE>eval()</CODE> produces an empty argument warning.
+</P>
+<A NAME="redir"></A>
+<H2>Suspending and discarding output: Buffers and redirection</H2>
+<P>
+To discard output &ndash; in particular,
+to prevent newlines in a set of definitions being output &ndash; use
+<B><CODE>divert</CODE></B>:
+</P>
+<PRE>
+  divert(-1)
+  &lt;definitions...&gt;
+  divert(0)dnl
+</PRE>
+<P>
+Unlike the contents of a comment, the definitions
+(and any other macros) are still processed by m4;
+<CODE>divert(-1)</CODE> merely causes m4 to do this silently,
+without sending anything to the output.
+</P>
+<P>
+The last line above, with its <CODE>dnl</CODE> to prevent
+the following newline being echoed, could also have
+been written:
+</P>
+<PRE>
+  divert`'dnl
+</PRE>
+<P></P>
+<P>
+<B><CODE>divnum</CODE></B> expands to the number of the currently active
+diversion; 0, the default, means standard output (stdout);
+positive numbers are temporary buffers which are output in
+numeric order at the end of processing.
+Standard m4 has 9 buffers (1..9); in <B>GNU</B> m4 there is no
+fixed limit.
+</P>
+<P>
+<B><CODE>undivert</CODE></B><CODE>(num)</CODE> appends the contents of diversion <CODE>num</CODE>
+to the current diversion (normally stdout), emptying it; without
+arguments, <CODE>undivert</CODE> retrieves all diversions in numeric order.
+<B>Note</B> that <CODE>undivert()</CODE> is the same as <CODE>undivert(0)</CODE> and
+has no effect: diversion 0 is stdout which is effectively an
+empty buffer.
+</P>
+<P>
+The contents of the buffer are <B>not interpreted</B> when <CODE>undivert</CODE>
+is run, they are simply output as raw text, e.g., the following
+code results in <CODE>Z Z Z</CODE> being output (not <CODE>9 9 9</CODE>):
+</P>
+<PRE>
+  divert(1)
+  Z Z Z
+  divert
+  define(`Z',9)
+  undivert(1)
+</PRE>
+<P></P>
+<P>
+There is an <B>implicit <CODE>divert</CODE> and <CODE>undivert</CODE></B> when m4
+reaches the end of the input, i.e., all buffers are flushed to
+the standard output.
+If you want to avoid this for any reason, you can of course
+discard the contents of the buffers by putting the following
+line at the end of your input
+</P>
+<PRE>
+  divert(-1)undivert
+</PRE>
+<P>
+or by exiting using the <B><CODE>m4exit</CODE></B> builtin.
+</P>
+<A NAME="toc21"></A>
+<H2>Including files</H2>
+<P>
+<B><CODE>include</CODE></B><CODE>(filename.m4)</CODE> causes the contents of the
+named file to be read and interpreted as if it was part of
+the current file (just like <CODE>#include</CODE> in the C preprocessor).
+</P>
+<P>
+<B>GNU</B> m4 allows for an include file search path.
+To specify directories to be searched for include files use the
+<CODE>-I</CODE> option on the command line, e.g.,
+</P>
+<PRE>
+  m4 -I ~/mydir -Ilocaldir/subdir
+</PRE>
+<P>
+or use the environment variable <CODE>M4PATH</CODE>, e.g. (bash shell)
+</P>
+<PRE>
+  export M4PATH=~/mydir:localdir/subdir
+  m4 test.m4
+</PRE>
+<P></P>
+<P>
+<B><CODE>sinclude</CODE></B><CODE>(nonexistentfile)</CODE> (silent include) is a
+version of <CODE>include</CODE> that doesn't complain if the file
+doesn't exist.
+</P>
+<P>
+To include a file uninterpreted, <B>GNU</B> m4 allows
+<B><CODE>undivert</CODE></B> to be passed a filename argument.
+If <CODE>inc.m4</CODE> contains
+</P>
+<PRE>
+  define(`planet',`jupiter')
+</PRE>
+<P>
+then
+</P>
+<PRE>
+  undivert(`inc.m4')       # -&gt; define(`planet',`jupiter')
+  planet                   # -&gt; planet
+  include(`inc.m4')planet  # -&gt; jupiter
+</PRE>
+<P></P>
+<A NAME="toc22"></A>
+<H2>Accessing the shell; creating temporary files</H2>
+<P>
+A system command can be passed to the shell, e.g.,
+</P>
+<PRE>
+  syscmd(`date --iso-8601|sed s/-/./g')
+</PRE>
+<P>
+outputs something like <CODE>2007.10.16</CODE>.
+</P>
+<P>
+The output from the command sent to <B><CODE>syscmd</CODE></B> is not
+interpreted:
+</P>
+<PRE>
+  syscmd(`echo "define(\`AUTHOR',\`Orwell')"')
+                          # -&gt; define(`AUTHOR',`Orwell')
+  AUTHOR                  # -&gt; AUTHOR
+</PRE>
+<P>
+However <B>GNU</B> m4 provides another macro,
+<B><CODE>esyscmd</CODE></B>, that does process the output of the
+shell command:
+</P>
+<PRE>
+  esyscmd(`echo "define(\`AUTHOR',\`Orwell')"')
+                          # -&gt;
+  AUTHOR                  # -&gt; Orwell
+</PRE>
+<P>
+The macro <B><CODE>sysval</CODE></B> expands to the exit status of the
+last shell command issued (0 for success):
+</P>
+<PRE>
+  sysval                  # -&gt; 0
+  esyscmd(`ls /no-dir/')
+  sysval                  # -&gt; 2
+</PRE>
+<P></P>
+<P>
+Naturally, m4 can be used as a filter in shell scripts or
+interactively:
+</P>
+<PRE>
+  echo "eval(98/3)"|m4
+</PRE>
+<P>
+outputs 32.
+</P>
+<P>
+<B>Temporary files</B> can be created to store the output of shell
+commands:
+<B><CODE>maketemp</CODE></B><CODE>(prefixXXXXXX)</CODE> creates a temporary file and
+expands to the filename &ndash; this name will be the (optional) prefix
+with the six X's replaced by six random letters and digits.
+In older versions of <B>GNU</B> m4 and in other implementations
+of m4, the X's are generated from the process ID.
+In certain contexts, this may be a security hole.
+Another macro, <B><CODE>mkstemp</CODE></B>, is available in newer m4's
+which always generates a random filename extension.
+</P>
+<PRE>
+  define(`FILENAME',mkstemp(`/tmp/myscriptXXXXXX'))
+</PRE>
+<P></P>
+<P>
+The temporary file can be read in using <CODE>include</CODE> (perhaps
+in conjunction with <CODE>divert</CODE>).
+</P>
+<A NAME="toc23"></A>
+<H2>Debugging</H2>
+<P>
+Most bugs relate to problems with quoting so check that first.
+</P>
+<P>
+If you want to see step-by-step what m4 is doing, either
+invoke it with the <CODE>-dV</CODE> option or, to limit full debug output
+to one part of the file,
+</P>
+<PRE>
+  debugmode(V)
+  ...problematic section...
+  debugmode
+</PRE>
+<P>
+The <CODE>V</CODE> flag is for full debugging; other flags for finer
+control are described in the info pages.
+</P>
+<P>
+<B><CODE>dumpdef</CODE></B><CODE>(`macro', ...)</CODE> outputs to standard error
+the formatted definition of each argument &ndash; or just <CODE>&lt;macro&gt;</CODE>
+if <CODE>macro</CODE> is a builtin;
+<CODE>dumpdef</CODE> without arguments dumps all definitions to stderr.
+Nothing is sent to stdout.
+</P>
+<P>
+For user-defined macros, <B><CODE>defn</CODE></B><CODE>(`macro')</CODE> expands
+to the definition string (i.e., not prefixed by the macro name).
+</P>
+<P>
+<B><CODE>errprint</CODE></B><CODE>(`this message goes to standard error (stderr)')</CODE>
+</P>
+<A NAME="renamingmacros"></A>
+<H2>Aliasing and renaming macros (including builtins)</H2>
+<P>
+Suppose we want to allow <CODE>strlen</CODE> to be used instead of
+<CODE>len</CODE>.
+This won't work:
+</P>
+<PRE>
+  define(`strlen',`len')
+  strlen(`hello')           # -&gt; len
+</PRE>
+<P>
+because we forgot to relay the arguments:
+</P>
+<PRE>
+  define(`strlen',`len($@)')
+  strlen(`hello')           # -&gt; 5
+</PRE>
+<P>
+OK, but suppose we want to replace <CODE>len</CODE> altogether.
+Clearly, this doesn't work:
+</P>
+<PRE>
+  define(`strlen',`len($@)')undefine(`len')
+  strlen(`hello')           # -&gt; len(hello)
+</PRE>
+<P>
+since expansion now stops at <CODE>len</CODE>.
+</P>
+<P>
+However, using the builtin <B><CODE>defn</CODE></B> to access the definition
+of a macro, it's possible to alias or rename macros quite simply.
+For user-defined macros, <CODE>defn</CODE> expands to the text of the
+macro (protected with quotes before being output).
+The <CODE>defn</CODE> of a builtin expands in most contexts to the empty
+string &ndash; but when passed as an argument to &ldquo;define&rdquo; it expands
+to a special token that has the desired effect:
+</P>
+<PRE>
+  define(`rename', `define(`$2',defn(`$1'))undefine(`$1')')
+  rename(`define',`create')
+  create(`vehicle',`truck')
+  vehicle                   # -&gt; truck
+  define(`fuel',`diesel')   # -&gt; define(fuel,diesel)
+  fuel                      # -&gt; fuel
+</PRE>
+<P>
+And, because of the intelligence built into the original
+macro definition,
+m4 is smart enough not to expand the word &ldquo;create&rdquo;
+unless it is followed by parentheses.
+Compare the indirect approach, where <CODE>defn</CODE> is not used:
+</P>
+<PRE>
+  create(`new',`create($@)')
+  new(`wheels', 4)
+  define wheels             # -&gt; define 4
+  create wheels             # -&gt; create 4
+  create() wheels           # -&gt;  4
+  new wheels                # -&gt;  4
+</PRE>
+<P></P>
+<A NAME="builtin"></A>
+<H2>Accessing internal builtins</H2>
+<P>
+Even when you undefine a builtin or define another macro
+with the same name, <B>GNU</B> m4 still keeps the internal
+definition which can be called indirectly via the macro
+<B><CODE>builtin</CODE></B>:
+</P>
+<PRE>
+  define(`TREE',`maple')
+  undefine(`define',`undefine')
+  undefine(`TREE')             # -&gt; undefine(TREE)
+  TREE                         # -&gt; maple
+  builtin(`undefine',`TREE')
+  TREE                         # -&gt; TREE
+  builtin(`define',`create',`builtin'(``define'',$`'@))
+  create(`TREE',`ash')
+  TREE                         # -&gt; ash
+</PRE>
+<P></P>
+<P>
+(Note the judicious use of quotes for the last argument
+to the call to <CODE>builtin</CODE> which defines the <CODE>create</CODE>
+macro above.
+Because of the use of inner quotes, the usual approach
+of surrounding the whole argument with quotes, i.e.,
+</P>
+<PRE>
+  builtin(`define',`create',`builtin(`define',$`'@)')
+</PRE>
+<P>
+would not have worked as desired: instead, any
+call to the create macro would have ended up
+defining a macro called &ldquo;$@&rdquo;.)
+</P>
+<P>
+Because they can be accessed only indirectly and so
+don't need to be protected, the names of these 
+internal macros are not changed by the <CODE>-P</CODE> flag.
+</P>
+<A NAME="quotemacro"></A>
+<H2>Macros for literal quotes</H2>
+<P>
+The obvious way to prevent the characters ` and ' being
+interpreted as quotes is to change m4's quote delimiters
+as described <A HREF="#quotes">above</A>.
+This has some drawbacks, for example, to ensure the
+new delimiters don't accidentally occur anywhere else,
+more than one character may be used for each delimiter &ndash;
+and if there's a lot of quoting, the code will become more
+verbose and perhaps more difficult to read.
+</P>
+<P>
+Another approach is to keep m4's existing quote delimiters and
+define macros which hide the backtick and apostrophe from m4.
+The trick is to balance the quotes while m4 still sees them
+as nested quotes, temporarily change the quoting, and then
+prevent one of the quotes being output:
+</P>
+<PRE>
+  define(`LQ',`changequote(&lt;,&gt;)`dnl'
+  changequote`'')
+  define(`RQ',`changequote(&lt;,&gt;)dnl`
+  'changequote`'')
+  
+  define(myne, `It`'RQ()s mine!')
+  LQ()LQ()myne''                 # -&gt; ``It's mine!''
+</PRE>
+<P></P>
+<A NAME="indir"></A>
+<H2>Indirect macro calls</H2>
+<P>
+<B>GNU</B> m4 allows any macro to be called indirectly 
+using the macro <B><CODE>indir</CODE></B>:
+</P>
+<PRE>
+  indir(`define',`SIZE',78)
+  SIZE                           # -&gt; 78
+  indir(`SIZE')                  # -&gt; 78
+</PRE>
+<P>
+This is useful where the name of the macro to be called
+is derived dynamically or where it does not correspond
+to a token (i.e., a macro name with spaces or punctuation).
+</P>
+<P>
+Compared to an ordinary call, there are
+two differences to be aware of:
+</P>
+<UL>
+<LI>the called macro must exist, otherwise m4 issues an error
+<LI>the arguments are processed before the definition of
+the macro being called is retrieved
+</UL>
+
+<PRE>
+  indir(`define(`SIZE')',67)
+  # -&gt; m4: undefined macro `define(`SIZE')'
+  indir(`SIZE', indir(`define',`SIZE',53))    # -&gt; 53
+  indir(`SIZE', indir(`undefine',`SIZE'))
+  # -&gt; m4: undefined macro `SIZE'
+</PRE>
+<P></P>
+<P>
+We can of course define our own higher-order macros.
+For example, here is a macro, <CODE>do</CODE>, roughly similar to
+<CODE>indir</CODE> <A HREF="#indir">above</A>:
+</P>
+<PRE>
+  define(do, $1($2, $3, $4, $5))
+  do(`define', ``x'', 4)
+  x                              # -&gt; 4
+</PRE>
+<P>
+Since extra arguments are normally ignored, <CODE>do</CODE> works
+for any macro taking up to 4 arguments.
+Note however that the example here, which expands to
+<CODE>define(`x', 4, , , )</CODE>,
+does generate a warning:
+&ldquo;excess arguments to builtin `define' ignored&rdquo;.
+</P>
+<A NAME="toc28"></A>
+<H2>Recursion pitfall: nesting limits</H2>
+<P>
+Pretend we don't know that the sum <CODE>n + (n-1) + ... + 1</CODE>
+is given by <CODE>n*(n+1)/2</CODE> and so we define a recursive macro
+to calculate it:
+</P>
+<PRE>
+  define(`sigma',`ifelse(eval($1&lt;=1),1,$1,`eval($1+sigma(decr($1)))')')
+</PRE>
+<P>
+If too large a number is passed to this macro then
+m4 may crash with a message like
+</P>
+<PRE>
+  ERROR: recursion limit of 1024 exceeded
+</PRE>
+<P>
+(for GNU m4 1.4.10).
+In fact, the problem is not that <CODE>sigma</CODE> is recursive,
+it is the degree of nesting in the expansion,
+e.g., <CODE>sigma(1000)</CODE> will expand to
+</P>
+<PRE>
+  eval(1000 + eval(999 + eval(998 + eval(997 + ...
+</PRE>
+<P>
+The nesting limit could be increased using a command line
+option (<CODE>-L</CODE>).
+However, we do better to avoid the problem by performing
+the calculation as we go using an extra parameter as an
+accumulator:
+</P>
+<PRE>
+  define(`sigma',`ifelse(eval($1&lt;1),1,$2,`sigma(decr($1),eval($2+$1))')')
+</PRE>
+<P>
+Now, no matter how many steps in the expansion, the amount of
+nesting is limited at every step, e.g., <CODE>sigma(1000)</CODE>
+becomes
+</P>
+<PRE>
+  ifelse(eval(1000&lt;1),1,,`sigma(decr(1000),eval(+1000))')
+</PRE>
+<P>
+which becomes <CODE>sigma(999,1000)</CODE> which in turn expands to
+</P>
+<PRE>
+  ifelse(eval(999&lt;1),1,1000,`sigma(decr(999),eval(1000+999))')
+</PRE>
+<P>
+and so on.
+</P>
+<P>
+Here, the default value of the added parameter (an empty string)
+worked OK.
+In other cases, an auxiliary macro may be required:
+the auxiliary macro will then be the recursive one; the main macro
+will call it, passing the appropriate initial value for the
+extra parameter.
+</P>
+<A NAME="unexpandingmacros"></A>
+<H2>Using unexpanding macros for arrays and hashes</H2>
+<P>
+Although it is not standard, <B>GNU</B> m4 allows any text string
+to be defined as a macro.
+Since only valid identifiers are checked against macros,
+macros whose names include spaces or punctuation characters
+will not be expanded.
+However, they can still be accessed as variables using the
+<B><CODE>defn</CODE></B> macro:
+</P>
+<PRE>
+  define(`my var', `a strange one')
+  my var is defn(`my var').    # -&gt; my var is a strange one.
+</PRE>
+<P>
+This feature can be used to implement arrays and hashes
+(associative arrays):
+</P>
+<PRE>
+  define(`_set', `define(`$1[$2]', `$3')')
+  define(`_get', `defn(`$1[$2]')')
+  _set(`myarray', 1, `alpha')
+  _get(`myarray', 1)                  # -&gt; alpha
+  _set(`myarray', `alpha', `omega')
+  _get(`myarray', _get(`myarray',1))  # -&gt; omega
+  defn(`myarray[alpha]')              # -&gt; omega
+</PRE>
+<P></P>
+<A NAME="substrfix"></A>
+<H2>String macro problem workaround</H2>
+<P>
+<A HREF="#strings">Above</A>, we noted a problem with the string macros:
+it's not possible to prevent the string that's returned
+from being expanded.
+</P>
+<P>
+Steven Simpson wrote a
+<A HREF="http://www.comp.lancs.ac.uk/~ss/websitemgmt/tools#m4patch">patch for m4</A>
+which fixes the problem
+by allowing an extra parameter to be passed to string macros &ndash;
+however this of course means using a non-standard m4.
+</P>
+<P>
+A less radical fix is to redefine the
+<CODE>substr</CODE> macro as follows.
+It works by extracting the substring one letter at a time,
+thus avoiding any unwanted expansion (assuming, of course,
+that no one-letter macros have been defined):
+</P>
+<PRE>
+  define(`substr',`ifelse($#,0,``$0'',
+  $#,2,`substr($@,eval(len(`$1')-$2))',
+  `ifelse(eval($3&lt;=0),1,,
+  `builtin(`substr',`$1',$2,1)`'substr(
+  `$1',eval($2+1),eval($3-1))')')')dnl
+  
+  define(`eng',`engineering')
+  substr(`engineer',0,3)       # -&gt; eng
+</PRE>
+<P>
+To keep it simple, this definition assumes reasonably
+sensible arguments, e.g., it doesn't allow for
+<CODE>substr(`abcdef', -2)</CODE> or <CODE>substr(`abc')</CODE>.
+Note that, as with the corresponding builtin <CODE>substr</CODE>,
+you may have problems where a string contains quotes, e.g.,
+<CODE>substr(``quoted'',0,3)</CODE>
+</P>
+<P>
+The new version of <CODE>substr</CODE> can in turn be used to
+implement a new version of <CODE>translit</CODE>:
+</P>
+<PRE>
+  define(`translit',`ifelse($#,0,``$0'',
+  len(`$1'),0,,
+  `builtin(`translit',substr(`$1',0,1),`$2',`$3')`'translit(
+  substr(`$1',1),`$2',`$3')')')dnl
+  
+  define(`ALPHA', `abcdefghijklmnopqrstuvwxyz')
+  define(`ALPHA_UPR', `ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+  translit(`alpha', ALPHA, ALPHA_UPR)
+  # -&gt; ALPHA
+</PRE>
+<P></P>
+<A NAME="assessment"></A>
+<H2>M4: Assessment</H2>
+<P>
+M4's general character as a macro language can be seen
+by comparing it to another, very different macro language:
+<A HREF="http://freemarker.sourceforge.net/">FreeMarker</A>.
+</P>
+<P>
+GNU m4 and FreeMarker are both free in both senses of the
+word: FreeMarker is covered by a BSD-style license.
+They are more-or-less equally &ldquo;powerful&rdquo;, e.g.,
+both languages support recursive macros.
+</P>
+<P>
+In some respects, m4 has an edge over FreeMarker:
+</P>
+<UL>
+<LI>m4 is a standalone tool, FreeMarker requires Java.
+<LI>On Unix platforms, m4 is a standard tool with a long
+heritage &ndash; e.g., a Makefile can reasonably expect to be
+able invoke it as a filter in a processing sequence.
+<LI>m4 scripts can interact with the Unix shell.
+<LI>m4 is arguably a simpler, &ldquo;cleaner&rdquo;, macro language.
+</UL>
+
+<P></P>
+<P>
+The two languages are quite different in appearance and
+how they work.
+In m4, macros are ordinary identifiers; FreeMarker uses
+XML-like markup for the <CODE>&lt;#opening&gt;</CODE> and <CODE>&lt;/#closing&gt;</CODE>
+delimiters of macros.
+While m4's textual rescanning approach is conceptually
+elegant, it can be confusing in practice and demands
+careful attention to layers of nested quotes.
+FreeMarker, in comparison, works like a conventional
+structured programming language, making it much easier
+to read, write and debug.
+On the other hand, FreeMarker markup is more verbose and
+might seem intrusive in certain contexts, for example,
+where macros are used to extend an existing programming
+language.
+</P>
+<P>
+FreeMarker has several distinct advantages:
+</P>
+<UL>
+<LI>it has an associated tool, FMPP, which can read in data
+from different sources (e.g., in XML or CSV format) and
+incorporate it into the template output.
+<LI>FreeMarker has a comprehensive set of builtin macros
+and better data handling capabilities.
+<LI>No compatibility issues: there is a single, cross-platform
+implementation that is quite stable and mature (whereas
+differences even between recent GNU m4 versions are not
+strictly backwardly compatible).
+<LI>FreeMarker supports Unicode; m4 is generally limited to
+ASCII, or at best 8-bit character sets.
+</UL>
+
+<P></P>
+<P>
+Ultimately, which language is &ldquo;better&rdquo; depends on the
+importance of their relative advantages in different contexts.
+This author has very positive experience of using
+FreeMarker/FMPP for
+<A HREF="http://statestep.com/templates.html">automatic code generation</A>
+where, for several reasons, m4 was unsuitable.
+On the other hand, m4 is clearly a more sensible and
+appropriate choice for Unix sendmail's configuration
+macros.
+</P>
+
+<!-- html code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags -i ../notes/m4.t2t -o www/m4.html -->
+</BODY></HTML>

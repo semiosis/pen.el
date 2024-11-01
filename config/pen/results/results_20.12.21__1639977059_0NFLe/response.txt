@@ -1,0 +1,9 @@
+├── Pictures
+│   └── Photo
+└── wallpapers
+    ├── cat
+    │   ├── cat1.jpg
+    │   └── cat2.jpg
+    ├── nature
+    │   ├── nature1.jpg
+    │  

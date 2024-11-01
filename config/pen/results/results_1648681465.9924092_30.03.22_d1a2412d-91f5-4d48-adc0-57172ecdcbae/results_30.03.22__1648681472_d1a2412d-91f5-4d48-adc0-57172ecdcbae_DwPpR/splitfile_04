@@ -1,0 +1,12 @@
+"GeneralizedNewtypeDeriving" is a newtype deriving extension for Haskell.
+
+It provides a way to create newtypes that can be used in deriving instances.
+
+The main use case is to create newtypes that are instances of Eq, Ord,
+Enum, Bounded, Show, Read, and Num.
+
+The newtype must be defined in a separate module.
+
+The newtype must have a single field.
+
+The newtype must not be a member of a larger data

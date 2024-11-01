@@ -1,0 +1,44 @@
+ASDF
+asdf
+    It's like make.
+
+    Not a tool to build or run Common Lisp
+    software from the Unix command-line. For
+    that, you want cl-launch, buildapp, or
+    roswell.
+
+combinations
+    combinations.cl =(echo -n "hi\nyo") =(echo -n "1\n2")
+
+ensure-lisp
+    00:32 < makomo> libertyprime: your LIFT-TO-LIST is Alexandria's ENSURE-LIST
+
+apply
+    Use apply when I want to expand a list to be the arguments for another function.
+        ,@
+        apply
+
+cdr
+    Pronounced "could-er".
+
+dotted pair notation
+    '(1 2 3)
+    is written as:
+    '(1 . (2 . (3 . nil)))
+
+    They are equivalent.
+
+    `(1 2)
+    is written as:
+    '(1 . (2))
+
+elisp
+emacs lisp
+    A lisp-2 with user-defined macros. A
+    simple parser cannot detect if e.g.
+
+    `(foo (let ...))`
+
+    a function call with a `let` expression
+    argument, or a macro call where `let`
+    means something else.

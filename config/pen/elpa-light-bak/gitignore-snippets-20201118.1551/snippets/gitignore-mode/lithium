@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Lithium
+# contributor: Toptal & contributors
+# key: lithium
+# --
+
+### Lithium ###
+
+libraries/*
+resources/tmp/*

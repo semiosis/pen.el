@@ -1,0 +1,5 @@
+owing line must be without spaces (or generates an error)
+127.0.0.1 localhost
+fe80::1 localhost ip6-localhost ip6-loopback
+fe80::1%lo0 localhost
+#

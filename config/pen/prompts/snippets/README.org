@@ -1,0 +1,2 @@
+* =snippets/=
+This directory contains YASnippet templates for generating =.prompt= files

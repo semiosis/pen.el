@@ -1,0 +1,10 @@
+"async/go-loop" is a macro that takes a function and a channel as arguments.
+The function is called with the channel as an argument.
+The function is called repeatedly, passing the channel as an argument.
+The channel is closed when the function returns.
+The function is called repeatedly until it returns the symbol ":done".
+
+(async/go-loop
+   (fn [ch]
+      (async/put! ch "Hello world!")
+      (async/put

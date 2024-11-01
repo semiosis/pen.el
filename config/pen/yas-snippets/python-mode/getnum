@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: getnum
+# key: getnum
+# --
+age = eval(input('How old are you? '))

@@ -1,0 +1,2 @@
+progn (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t" "$modename" "$bufname") nil $extra_elisp))"
+if test "$elisp

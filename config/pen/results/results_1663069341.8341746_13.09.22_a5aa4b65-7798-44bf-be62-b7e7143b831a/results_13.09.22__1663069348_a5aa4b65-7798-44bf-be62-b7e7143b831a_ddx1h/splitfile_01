@@ -1,0 +1,2 @@
+"JSONParserCommon" is a module that contains code that is common to both the
+"JSONParser" and "JSONParserTypes" modules.

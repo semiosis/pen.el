@@ -1,0 +1,3 @@
+"io.replikativ/datahike" is a Clojure library for reading and writing
+datahike invoice files.
+

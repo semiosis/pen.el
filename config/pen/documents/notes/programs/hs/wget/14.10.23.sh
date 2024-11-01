@@ -1,0 +1,5 @@
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=7Ii46kW12Zo" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=7Ii46kW12Zo" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=7DT-vCKGeDg" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=A50yd3fbRHc" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=7Ii46kW12Zo" "#" "<==" "pen-ci"

@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=wR1V3IebL0w&ab_channel=PatristicNectarFilms" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=wR1V3IebL0w" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://youtube.com/watch?v=uSjiHHzQgks&t=157" "#" "<==" "o"

@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "2" "Chronicles" "31:15" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "2" "Corinthians" "13:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "2" "Corinthians" "6:17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "2" "Corinthians" "6:1-20" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "2" "Corinthians" "6:14" "#" "<==" "zsh"

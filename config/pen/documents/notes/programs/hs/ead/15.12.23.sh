@@ -1,0 +1,7 @@
+cd /root/repos/oh-my-zsh;  "ead" "#" "<==" "ead"
+cd /root/repos/oh-my-zsh;  "ead" "alias.*1" "#" "<==" "ead"
+cd /root/repos/oh-my-zsh;  "ead" "alias.*9" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "NOEMACS" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "BABEL" "#" "<==" "ead"
+cd /root/.emacs.d/elpa-light;  "ead" "b2b2b2" "#" "<==" "ead"
+cd /root/.emacs.d/elpa-light;  "ead" "b2b2b2" "#" "<==" "ead"

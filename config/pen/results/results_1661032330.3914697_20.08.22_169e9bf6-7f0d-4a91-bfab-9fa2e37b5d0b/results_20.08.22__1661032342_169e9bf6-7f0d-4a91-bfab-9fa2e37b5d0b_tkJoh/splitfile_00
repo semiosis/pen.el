@@ -1,0 +1,9 @@
+
+
+travelToSchool toSchool =
+
+do putStrLn $ " Enter a bus stop (example: 'central square') " ++
+
+" : "
+
+toSbus Stop <- fmap lines <$>

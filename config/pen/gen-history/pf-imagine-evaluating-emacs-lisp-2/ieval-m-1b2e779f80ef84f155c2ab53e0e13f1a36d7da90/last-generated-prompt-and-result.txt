@@ -1,0 +1,4 @@
+;; Quotes from the author. This function returns a string.
+;; arguments: (topic author)
+(message (eval '(personal-views "Freedom" "Isaac Asimov")))
+--> "Freedom by Isaac Asimov"

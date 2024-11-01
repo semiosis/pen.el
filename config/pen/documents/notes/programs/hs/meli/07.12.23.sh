@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "meli" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "meli" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "meli" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "meli" "#" "<==" "zsh"
+cd /root/notes;  "meli" "#" "<==" "sh"
+cd /root/.pen/documents/notes;  "meli" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "meli" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "meli" "#" "<==" "zsh"

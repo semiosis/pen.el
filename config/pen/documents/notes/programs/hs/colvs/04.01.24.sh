@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_158d3f824e_luke-1-5.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_158d3f824e_luke-1-5.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_32a960081e_luke-1-5.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_f74eed3adb_luke-1-5.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_462a900f6b_1-john-2-4-6.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_462a900f6b_1-john-2-4-6.txt" "#" "<==" "pen-xa"

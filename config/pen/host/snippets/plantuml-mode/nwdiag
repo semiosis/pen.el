@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: nwdiag
+# group: nwdiag
+# key: nwd
+# --
+nwdiag {
+`yas-selected-text`$0
+}

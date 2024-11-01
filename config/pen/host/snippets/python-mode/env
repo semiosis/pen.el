@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: env
+# group: unix
+# key: env
+# --
+API_BASE_URL = os.environ.get("API_URL")

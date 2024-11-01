@@ -1,0 +1,9 @@
+https://wiki.haskell.org/Memoization
+
+
+
+Memoization is the simple idea of remembering, or caching,
+the results of previous invocations of an expensive function.
+
+Memoization is a common strategy for algorithms that would otherwise
+repeat the same calculations over and over again

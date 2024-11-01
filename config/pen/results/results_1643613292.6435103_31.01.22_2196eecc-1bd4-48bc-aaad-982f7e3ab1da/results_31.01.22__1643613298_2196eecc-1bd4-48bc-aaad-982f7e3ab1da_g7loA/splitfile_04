@@ -1,0 +1,7 @@
+
+"logo files
+"load up logo files for you to use
+"digr logo-cli.lsp"
+digr logo-cli.lsp
+" Load logo programs
+(load "digr/logo-

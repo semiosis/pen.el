@@ -1,0 +1,800 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+Expires: -1
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+X-AspNetMvc-Version: 5.2
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Thu, 24 Mar 2022 03:09:24 GMT
+Content-Length: 9769
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <meta name="baidu-site-verification" content="yxyLMvJwcA" />
+        <meta name="google-site-verification" content="zXL2CVbtC_Krma8l8C6ZtsG0LYFNWiAR5ZI70hz4xAM" />
+        <meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
+        <meta name="yandex-verification" content="dd35362233c19552" />
+
+
+    <title>clojure Tutorial =&gt; basic channel operations: creating, putting,...</title>
+
+    <!-- icon !-->
+    <link rel="icon" type="image/png" href="/Images/logo_rip.png" width="55" height="55">
+
+    <!-- css !-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/master.min.css?v=1.0.0.18862">
+    
+    
+
+    
+    
+    
+
+    <!-- Open Graph Tags -->
+    <meta name="title" property="og:title" content="clojure Tutorial => basic channel operations: creating, putting,...">
+    <meta name="description" property="og:description" content="Learn clojure - basic channel operations: creating, putting, taking, closing, and buffers.">
+    <meta name="url" property="og:url" content="https://riptutorial.com/clojure/example/19536/basic-channel-operations--creating--putting--taking--closing--and-buffers-" />
+    <meta name="image" property="og:image" content="/Images/home.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="clojure Tutorial => basic channel operations: creating, putting,...">
+    <meta name="twitter:description" content="Learn clojure - basic channel operations: creating, putting, taking, closing, and buffers.">
+    <meta name="twitter:url" content="https://riptutorial.com/clojure/example/19536/basic-channel-operations--creating--putting--taking--closing--and-buffers-" />
+    <meta name="twitter:image" content="/Images/home.jpg" />
+    
+        <script>
+        function gtag() { dataLayer.push(arguments); }
+
+        window.pg=window.pg||[];pg.acq=pg.acq||[]; // build consent queue
+        pg.acq.push(function() {
+            // Global site tag (gtag.js)
+            pg.loadJS("https://www.googletagmanager.com/gtag/js?id=UA-55584370-17");
+            window.dataLayer = window.dataLayer || [];
+            gtag('js', new Date());
+            gtag('config', 'UA-55584370-17');
+        });
+        </script>
+
+    
+    
+
+    
+    
+    
+    
+<script src="//m2d.m2.ai/pghb.riptutorial.article.js" async> </script>    
+    
+</head>
+
+<body>
+<!-- facebook
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+-->
+<!-- twitter
+<script>
+    !function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+</script>
+-->
+<header class="site-header">
+    <nav class="container-fluid navbar navbar-light navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+            <img src="/Images/logo_rip_full_white.png" alt="logo rip"/>
+                <div>RIP <span class="text-z">Tutorial</span></div>
+
+        </a>
+        <div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-site-menu"
+                    aria-controls="nav-site-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="nav-site-menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/tag" class="nav-link">Tags</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/topic" class="nav-link">Topics</a>
+                </li>
+                    <li class="nav-item">
+                        <a href="/example" class="nav-link">Examples</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="/ebook" class="nav-link">eBooks</a>
+                    </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse justify-content-end" id="site-header-nav-site-menu">
+<div id="ript_desk_article_lb1" class="d-none d-lg-block"></div>        </div>
+    </nav>
+</header>
+
+<div class="container-fluid site-body">
+    
+
+<div class="nav-site">
+    <a href="/ebook/clojure" id="pdf-download-btn" class="btn btn-z bordered" onclick="gtag('event', 'click', {'event_action': 'button-aside-download'});"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download clojure (PDF)</a>
+    <nav class="navbar navbar-light navbar-expand-lg hidden-lg-up" style="padding-left: 0; padding-right: 0;">
+        <a class="nav-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-sidebar"
+                aria-controls="nav-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse justify-content-end" id="nav-sidebar">
+            <br />
+            <div class="section-sidebar">
+
+                <h2><span class="tag-title">clojure</span></h2>
+                <ul>
+                        <li>
+                            <a href="/clojure/topic/827/getting-started-with-clojure">Getting started with clojure</a>
+                        </li>
+                                <li><a href="/clojure/awesome-learning/book">Awesome Book</a></li>
+                                <li><a href="/clojure/awesome-learning/community">Awesome Community</a></li>
+                                <li><a href="/clojure/awesome-learning/course">Awesome Course</a></li>
+                                <li><a href="/clojure/awesome-learning/tutorial">Awesome Tutorial</a></li>
+                                <li><a href="/clojure/awesome-learning/youtube">Awesome YouTube</a></li>
+                        <li>
+                            <a href="/clojure/topic/7519/atom">Atom</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/9127/clj-time">clj-time</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/1786/clojure-destructuring">Clojure destructuring</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/9585/clojure-core">clojure.core</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/2325/clojure-spec">clojure.spec</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/1901/clojure-test">clojure.test</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/1389/collections-and-sequences">Collections and Sequences</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/5496/core-async">core.async</a>
+                        </li>
+                            <ul>
+                                    <li>
+                                        <a href="/clojure/example/19536/basic-channel-operations--creating--putting--taking--closing--and-buffers-" class="bold">basic channel operations: creating, putting, taking, closing, and buffers.</a>
+                                    </li>
+                            </ul>
+                        <li>
+                            <a href="/clojure/topic/8847/emacs-cider">Emacs CIDER</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/3922/file-operations">File Operations</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/3078/functions">Functions</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/2323/getting-started-with-web-development">Getting started with web development</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/4036/java-interop">Java interop</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/2322/macros">Macros</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/9822/parsing-logs-with-clojure">Parsing logs with clojure</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/2569/pattern-matching-with-core-match">Pattern Matching with core.match</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/8901/performing-simple-mathematical-operations">Performing Simple Mathematical Operations</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/1387/setting-up-your-development-environment">Setting up your development environment</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/9582/threading-macros">Threading Macros</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/10814/transducers">Transducers</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/4116/truthiness">Truthiness</a>
+                        </li>
+                        <li>
+                            <a href="/clojure/topic/4449/vars">Vars</a>
+                        </li>
+                </ul>
+
+            </div>
+            <br /><br />
+        </div>
+    </nav>
+</div>
+<div class="row whole-container">
+    <div class="col-xl-2 col-lg-3 section-sidebar desktop hidden-md-down">
+        <div class="section-sidebar-overflow custom-scrollbar" data-mcs-theme="dark">
+            <h2><span class="tag-title">clojure</span></h2>
+            <ul>
+                    <li>
+                        <a href="/clojure/topic/827/getting-started-with-clojure">Getting started with clojure</a>
+                    </li>
+                            <li><a href="/clojure/awesome-learning/book">Awesome Book</a></li>
+                            <li><a href="/clojure/awesome-learning/community">Awesome Community</a></li>
+                            <li><a href="/clojure/awesome-learning/course">Awesome Course</a></li>
+                            <li><a href="/clojure/awesome-learning/tutorial">Awesome Tutorial</a></li>
+                            <li><a href="/clojure/awesome-learning/youtube">Awesome YouTube</a></li>
+                    <li>
+                        <a href="/clojure/topic/7519/atom">Atom</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/9127/clj-time">clj-time</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/1786/clojure-destructuring">Clojure destructuring</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/9585/clojure-core">clojure.core</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/2325/clojure-spec">clojure.spec</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/1901/clojure-test">clojure.test</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/1389/collections-and-sequences">Collections and Sequences</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/5496/core-async">core.async</a>
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="/clojure/example/19536/basic-channel-operations--creating--putting--taking--closing--and-buffers-" class="bold active">basic channel operations: creating, putting, taking, closing, and buffers.</a>
+                                </li>
+                        </ul>
+                    <li>
+                        <a href="/clojure/topic/8847/emacs-cider">Emacs CIDER</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/3922/file-operations">File Operations</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/3078/functions">Functions</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/2323/getting-started-with-web-development">Getting started with web development</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/4036/java-interop">Java interop</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/2322/macros">Macros</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/9822/parsing-logs-with-clojure">Parsing logs with clojure</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/2569/pattern-matching-with-core-match">Pattern Matching with core.match</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/8901/performing-simple-mathematical-operations">Performing Simple Mathematical Operations</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/1387/setting-up-your-development-environment">Setting up your development environment</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/9582/threading-macros">Threading Macros</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/10814/transducers">Transducers</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/4116/truthiness">Truthiness</a>
+                    </li>
+                    <li>
+                        <a href="/clojure/topic/4449/vars">Vars</a>
+                    </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="col-xl-8 col-lg-9 section-article">
+        
+            <div class="row align-items-stretch h-100">
+                <div class="col-12">
+                    <div class="header-article">
+
+                        
+
+
+<h1 class="header-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/clojure" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="/clojure">
+                    <span itemprop="name">clojure</span>
+                </a>
+                <meta itemprop="position" content="1"/>
+            </span>
+            <i class="fas fa-angle-right nav-text"></i>
+            <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/clojure/topic/5496/core-async" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="/clojure/topic/5496/core-async">
+                    <span itemprop="name">core.async</span>
+                </a>
+                <meta itemprop="position" content="2"/>
+            </span>
+            <i class="fas fa-angle-right nav-text"></i>
+            <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">basic channel operations: creating, putting, taking, closing, and buffers.</span>
+                <meta itemprop="position" content="3"/>
+            </span>
+</h1>
+
+                            <div id="ript_desk_article_lb2" class="d-none d-lg-block"></div>
+                            <div id="ript_mob_mpu1" class="d-lg-none"></div>
+                            <br/>
+                        <!-- Horizontal-Responsive -->
+                        
+                        
+
+                    </div>
+
+                    <div class="body-article">
+                        
+
+                                <h2 id="example">Example</h2>
+<p><code>core.async</code> is about making <em>processes</em> that take values from and put values into <em>channels</em>.</p>
+<pre><code>(require [clojure.core.async :as a])
+</code></pre>
+<h2>Creating channels with <code>chan</code></h2>
+<p>You create a channel using the <code>chan</code> function:</p>
+<pre><code>(def chan-0 (a/chan)) ;; unbuffered channel: acts as a rendez-vous point.
+(def chan-1 (a/chan 3)) ;; channel with a buffer of size 3. 
+(def chan-2 (a/chan (a/dropping-buffer 3)) ;; channel with a *dropping* buffer of size 3
+(def chan-3 (a/chan (a/sliding-buffer 3)) ;; channel with a *sliding* buffer of size 3
+</code></pre>
+<h2>Putting values into channels with <code>&gt;!!</code> and <code>&gt;!</code></h2>
+<p>You put values into a channel with <code>&gt;!!</code>:</p>
+<pre><code>(a/&gt;!! my-channel :an-item)
+</code></pre>
+<p>You can put any value (Strings, numbers, maps, collections, objects, even other channels, etc.) into a channel, except <code>nil</code>:</p>
+<pre><code>;; WON'T WORK
+(a/&gt;!! my-channel nil)
+=&gt; IllegalArgumentException Can't put nil on channel
+</code></pre>
+<p>Depending on the channel's buffer, <code>&gt;!!</code> may block the current thread.</p>
+<pre><code>(let [ch (a/chan)] ;; unbuffered channel
+  (a/&gt;!! ch :item) 
+  ;; the above call blocks, until another process 
+  ;; takes the item from the channel.
+  )
+(let [ch (a/chan 3)] ;; channel with 3-size buffer
+  (a/&gt;!! ch :item-1) ;; =&gt; true
+  (a/&gt;!! ch :item-2) ;; =&gt; true
+  (a/&gt;!! ch :item-3) ;; =&gt; true
+  (a/&gt;!! ch :item-4) 
+  ;; now the buffer is full; blocks until :item-1 is taken from ch.
+  )
+</code></pre>
+<p>From inside a <code>(go ...)</code> block, you can - and should - use <code>a/&gt;!</code> instead of <code>a/&gt;!!</code>:</p>
+<pre><code> (a/go (a/&gt;! ch :item))
+</code></pre>
+<p>The logical behaviour will be the same as <code>a/&gt;!!</code>, but only the logical process of the goroutine will block instead of the actual OS thread.</p>
+<p>Using <code>a/&gt;!!</code> inside of a <code>(go ...)</code> block is an anti-pattern:</p>
+<pre><code>;; NEVER DO THIS
+(a/go 
+  (a/&gt;!! ch :item))
+</code></pre>
+<h2>Taking values from channels with <code>&lt;!!</code></h2>
+<p>You take a value from a channel using <code>&lt;!!</code>:</p>
+<pre><code>;; creating a channel
+(def ch (a/chan 3))
+;; putting some items in it
+(do 
+  (a/&gt;!! ch :item-1)
+  (a/&gt;!! ch :item-2)
+  (a/&gt;!! ch :item-3))
+;; taking a value
+(a/&lt;!! ch) ;; =&gt; :item-1
+(a/&lt;!! ch) ;; =&gt; :item-2
+</code></pre>
+<p>If no item is available in the channel, <code>a/&lt;!!</code> will block the current Thread until a value is put in the channel (or the channel is closed, see later):</p>
+<pre><code>(def ch (a/chan))
+(a/&lt;!! ch) ;; blocks until another process puts something into ch or closes it
+</code></pre>
+<p>From inside a <code>(go ...)</code> block, you can - and should - use <code>a/&lt;!</code> instead of <code>a/&lt;!!</code>:</p>
+<pre><code> (a/go (let [x (a/&lt;! ch)] ...))
+</code></pre>
+<p>The logical behaviour will be the same as <code>a/&lt;!!</code>, but only the logical process of the goroutine will block instead of the actual OS thread.</p>
+<p>Using <code>a/&lt;!!</code> inside of a <code>(go ...)</code> block is an anti-pattern:</p>
+<pre><code>;; NEVER DO THIS
+(a/go 
+  (a/&lt;!! ch))
+</code></pre>
+<h2>Closing channels</h2>
+<p>You <em>close</em> a channel with <code>a/close!</code>:</p>
+<pre><code>(a/close! ch)
+</code></pre>
+<p>Once a channel is closed, and the all data in the channel has been exhausted, takes will always return <code>nil</code>:</p>
+<pre><code>(def ch (a/chan 5))
+
+;; putting 2 values in the channel, then closing it
+(a/&gt;!! ch :item-1)
+(a/&gt;!! ch :item-2)
+(a/close! ch)
+
+;; taking from ch will return the items that were put in it, then nil
+(a/&lt;!! ch) ;; =&gt; :item-1
+(a/&lt;!! ch) ;; =&gt; :item-2
+(a/&lt;!! ch) ;; =&gt; nil
+(a/&lt;!! ch) ;; =&gt; nil
+(a/&lt;!! ch) ;; =&gt; nil
+
+;; once the channel is closed, &gt;!! will have no effect on the channel:
+(a/&gt;!! ch :item-3)
+=&gt; false ;; false means the put did not succeed
+(a/&lt;!! ch) ;; =&gt; nil
+</code></pre>
+<h2>Asynchronous puts with <code>put!</code></h2>
+<p>As an alternative to <code>a/&gt;!!</code> (which may block), you can call <code>a/put!</code> to put a value in a channel in another thread, with an optional callback.</p>
+<pre><code>(a/put! ch :item)
+(a/put! ch :item (fn once-put [closed?] ...)) ;; callback function, will receive 
+</code></pre>
+<p>In ClojureScript, since blocking the current Thread is not possible, <code>a/&gt;!!</code> is not supported, and <code>put!</code> is the only way to put data into a channel from outside of a <code>(go)</code> block.</p>
+<h2>Asynchronous takes with <code>take!</code></h2>
+<p>As an alternative to <code>a/&lt;!!</code> (which may block the current thread), you may use <code>a/take!</code> to take a value from a channel asynchronously, passing it to a callback.</p>
+<pre><code>(a/take! ch (fn [x] (do something with x)))
+</code></pre>
+<h2>Using dropping and sliding buffers</h2>
+<p>With dropping and sliding buffers, puts never block, however, when the buffer is full, you lose data. Dropping buffer lose the last data added, whereas sliding buffers lose the first data added.</p>
+<p><strong>Dropping buffer example:</strong></p>
+<pre><code>(def ch (a/chan (a/dropping-buffer 2)))
+
+;; putting more items than buffer size
+(a/&gt;!! ch :item-1)
+=&gt; true ;; put succeeded
+(a/&gt;!! ch :item-2)
+=&gt; true
+(a/&gt;!! ch :item-3)
+=&gt; false ;; put failed
+
+;; no we take from the channel
+(a/&lt;!! ch)
+=&gt; :item-1
+(a/&lt;!! ch)
+=&gt; :item-2
+(a/&lt;!! ch)
+;; blocks! :item-3 is lost
+</code></pre>
+<p><strong>Sliding buffer example:</strong></p>
+<pre><code>(def ch (a/chan (a/sliding-buffer 2)))
+
+;; putting more items than buffer size
+(a/&gt;!! ch :item-1)
+=&gt; true
+(a/&gt;!! ch :item-2)
+=&gt; true
+(a/&gt;!! ch :item-3)
+=&gt; true
+
+;; no when we take from the channel:
+(a/&lt;!! ch)
+=&gt; :item-2
+(a/&lt;!! ch)
+=&gt; :item-3
+;; :item-1 was lost
+</code></pre>
+
+
+
+
+                        <!-- Horizontal-Responsive -->
+                        
+                            <br/>
+                            <div id="ript_desk_article_lb3" class="d-none d-lg-block"></div>
+                            <div id="ript_mob_mpu2" class="d-lg-none"></div>
+                            <br/><br/>
+
+
+                            <div class="container-download-pdf-section">
+                                <img src="/Images/icon-pdf-2.png" alt="pdf">
+                                <a href="/ebook/clojure" class="" onclick="gtag('event', 'click', { 'event_action': 'button-footer-download' });">
+                                    <b>PDF</b> - Download <span>clojure</span> for free
+                                </a>
+                            </div>
+                        <br>
+                        <div class="addthis_inline_share_toolbox_oxub" data-url="https://riptutorial.com/clojure/example/19536/basic-channel-operations--creating--putting--taking--closing--and-buffers-" data-title="Learn clojure - Over 1000 Free Tutorial:" onclick="gtag('event', 'click', { 'event_action': 'button-share' });"></div>
+                        <br/>
+                        <div class="container-next-prev">
+                            <a href="/clojure/topic/5496/core-async" onclick="gtag('event', 'click', { 'event_action': 'button-previous' });"><i class="fas fa-angle-left"></i> Previous</a>
+                            <a href="/clojure/topic/8847/emacs-cider" class="text-right" onclick="gtag('event', 'click', { 'event_action': 'button-next' });"> Next <i class="fas fa-angle-right"></i> </a>
+                        </div>
+
+
+                        
+
+                        
+
+                        
+
+                    </div>
+
+
+
+        </div>
+            </div>
+        
+
+        
+
+       </div>
+
+        <div class="col-xl-2 section-aside">
+            <div id="stats-share">
+                
+
+                <div>
+                </div>
+                <br/>
+
+                    <div id="ript_desk_skyscraper" class="d-none d-lg-block"></div>
+                <br/>
+                
+                
+                <!-- Vertical-Responsive 
+                <ins class="adsbygoogle"
+                     style="display: block"
+                     data-ad-client="ca-pub-7869211898023730"
+                     data-ad-slot="2663230744"
+                     data-ad-format="auto"
+                     
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>-->
+
+                
+
+                
+
+                
+
+                <!-- Vertical-Responsive 
+                <ins class="adsbygoogle"
+                     style="display: block"
+                     data-ad-client="ca-pub-7869211898023730"
+                     data-ad-slot="9037067406"
+                     data-ad-format="auto"
+                     
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>-->
+
+                
+
+
+
+                
+
+
+
+
+                <!-- Vertical-Responsive 
+                <ins class="adsbygoogle"
+                     style="display: block"
+                     data-ad-client="ca-pub-7869211898023730"
+                     data-ad-slot="2886592024"
+                     data-ad-format="auto"
+                     
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>-->
+
+
+                
+            </div>
+            <br />
+            
+        </div>
+    </div>
+
+
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "computerLanguage",
+    "additionalType": "HowTo",
+    "name": "clojure",
+    "description": "basic channel operations: creating, putting, taking, closing, and buffers."
+    }
+</script>
+
+</div>
+
+<div class="site-footer">
+        <div class="site-footer-copyright">
+            <div class="container">
+                
+<div>This modified text is an extract of the original <a href="https://archive.org/details/documentation-dump.7z" target="_blank">Stack Overflow Documentation</a> created by following <a href="/contributor?exampleId=19536">contributors</a> and released under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="nofollow">CC BY-SA 3.0</a></div>
+<div>This website is not affiliated with <a href="https://stackoverflow.com/questions/tagged/clojure" target="_blank">Stack Overflow</a></div>
+
+            </div>
+        </div>
+
+    <div class="site-footer-link">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                    <br/>
+                    <img src="/Images/logo_rip_full_white.png" alt="logo rip" height="64" width="64">
+                </div>
+                <div class="col-lg-5">
+                    <div class="site-footer-header">SUPPORT & PARTNERS</div>
+                    <ul>
+                        <li><a href="/advertise-with-us">Advertise with us</a></li>
+                        <li><a href="/contact-us">Contact us</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                     <div class="site-footer-header">STAY CONNECTED</div>
+                     <p>Get monthly updates about new articles, cheatsheets, and tricks.</p>
+                     <form action="https://zzzprojects.us9.list-manage.com/subscribe/post?u=cecbc4775cf67bf1ff82018af&amp;id=98c3fcbe02" method="post" target="_blank">
+                        <input type="email" class="form-control" name="EMAIL" placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-z">
+                            <i class="far fa-newspaper"></i>&nbsp;Subscribe
+                         </button>
+                    </form>
+                    <div>
+                          <br>            
+                         <a href="https://www.facebook.com/RipTutorial/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                         <a href="https://twitter.com/riptutorial" target="_blank"><i class="fab fa-twitter fa-2x""></i></a>
+                         <a href="https://www.linkedin.com/company/rip-tutorial" target="_blank"><i class="fab fa-linkedin fa-2x""></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+
+<a href="#" id="scroll-to-top" class="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-550f227d1d434855" async="async"></script>
+
+<script>
+    $(document).ready(function() {
+        $('a').each(function() {
+            var a = new RegExp('/' + window.location.host + '/');
+            if (!a.test(this.href)) {
+                $(this).attr("target", "_blank");
+            }
+        });
+        $(".reader-mode-enabler").click(function() {
+            $("body").toggleClass("reader-mode");
+        });
+    });
+
+    $(document).ready(function() {
+        $('.body-article h2, .body-article h3, .body-article h4').each(function() {
+            $(this).html("<div>" + $(this).html() + "<a href=" + "#" + $(this).attr('id') + ">" + "#" + "</a></div>");
+        });
+    });
+</script>
+<script>
+    $(function() {
+        $("table").addClass("table table-bordered table-hover table-responsive-sm table-striped");
+        $("thead").addClass("thead-dark");
+
+        $('aside a').each(function() {
+            if ($(this).attr('href') == '/{{page.permalink}}' ||
+                $(this).attr('href') == '{{ site.github.url }}/{{page.permalink}}') {
+                $(this).addClass('font-weight-bold');
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        //$(".custom-scrollbar").mCustomScrollbar({ scrollInertia: 0 });
+        //scrollSidebar();
+        sideMenuMayweatherCalculator();
+    });
+
+    /*
+     TODO: Fix it (no longer defined) or remove
+    $(window).scroll(function () {
+        heightCalculator();
+    });*/
+
+
+    $(window).resize(function() {
+        sideMenuMayweatherCalculator();
+    });
+
+    function sideMenuMayweatherCalculator() {
+        var sideBarHeight = $("#stats-share").outerHeight();
+        var availableSpace = $(window).height() - 71;
+
+        if (availableSpace < sideBarHeight) {
+            $('.section-aside').css("position", "relative");
+            $('.section-aside').css("height", "auto");
+            $('.section-aside').css("top", "auto");
+        } else {
+            $('.section-aside').css("position", "sticky");
+            $('.section-aside').css("height", "calc(100vh - 4rem)");
+            $('.section-aside').css("top", "4rem");
+        }
+    }
+
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 600) {
+            $('#scroll-to-top').fadeIn(200);
+        } else {
+            $('#scroll-to-top').fadeOut(200);
+        }
+    });
+
+    function scrollSidebar() {
+        var activeItems = $(".section-sidebar-overflow .active");
+
+        if (activeItems.length > 0) {
+            var activeItem = $(activeItems[0]);
+            if (activeItem.offset().top > ($(window).height() / 3) * 2) {
+                $(".custom-scrollbar").mCustomScrollbar('scrollTo', activeItem.offset().top - 120);
+            }
+        }
+    }
+</script>
+
+    <script>
+       setTimeout(gaIsActive, 15000);
+
+        function gaIsActive() {
+            if (!document.hidden) gtag('event', 'pageview', { 'event_action': 'TimeOnPage' });            
+       }
+    </script>
+
+
+
+
+
+
+</body>
+</html>

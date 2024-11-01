@@ -1,0 +1,6 @@
+# key: hd
+# name: heredoc
+# --
+cat <<HEREDOC | runhaskell area-under-curves.hs
+`yas/selected-text`$0
+HEREDOC

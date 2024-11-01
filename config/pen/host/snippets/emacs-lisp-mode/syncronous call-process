@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: synchronous call-process
+# group: call
+# key: call-process
+# --
+(let ((buffer "*kubectl-logs*"))
+(call-process "kubectl" nil buffer nil "logs" "redis-64896b74dc-zrw7w")
+(switch-to-buffer buffer))

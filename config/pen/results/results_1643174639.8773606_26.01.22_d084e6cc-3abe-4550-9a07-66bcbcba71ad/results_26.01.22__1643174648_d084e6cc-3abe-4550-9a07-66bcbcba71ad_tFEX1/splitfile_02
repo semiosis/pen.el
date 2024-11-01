@@ -1,0 +1,14 @@
+Original language: English
+English translation:
+Perhaps I should change the hostname for the docker container. Good idea
+"""
+
+class TestTranslate(unittest.TestCase):
+    def test_translate(self):
+        self.assertEqual(translate_text(text, "en", "es"), text_spanish)
+
+    def test_translate_with_result_set(self):
+        self.assertEqual(translate_text(text, "en", "es", True), text_spanish)
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/src;  "hsqc" "diatheke" "# <==" "hsqc"
+cd /root/.emacs.d/host/pen.el/scripts;  "hsqc" "diatheke" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "diatheke" "# <==" "hsqc"
+cd /root/.emacs.d/host/pen.el/scripts;  "hsqc" "diatheke" "# <==" "hsqc"
+cd /root/.emacs.d/host/pen.el/scripts;  "hsqc" "emacsclient" "# <==" "hsqc"
+cd /root/.emacs.d/host/pen.el/scripts;  "hsqc" "emacsclient" "# <==" "hsqc"
+cd /root/.emacs.d/host/pen.el/scripts;  "hsqc" "toggle-tmux-popup" "# <==" "hsqc"

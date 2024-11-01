@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: product of list
+# group: list math
+# key: *
+# --
+product [6,2,1,2]

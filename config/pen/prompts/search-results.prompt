@@ -1,0 +1,13 @@
+# Use GPT-3
+# Make it translatable
+
+Respond in JSON as if it were the result of a Google search.
+The results should be informative, relevant, interesting, with 150 to 400 letters.
+"""
+Search: Chess
+
+{"title": "What is Chess?","text": "Chess is a board game for two opponents in which each player has 16 movable pieces that are placed on a board, divided into 64 squares or squares. In its competitive version, it is considered as a sport, although nowadays it clearly has a social, educational and therapeutic dimension ..."}
+
+{"title": "How to play Chess (rules)","text": "The rules of chess are not as complicated as they seem. More and more educational centers are paying special attention to chess for children. A game that improves creativity, enhances memory, increases reading speed and helps to solve problems, among other benefits ..."}
+"""
+Search: 

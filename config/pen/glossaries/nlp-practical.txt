@@ -1,0 +1,6 @@
+parquet
+    A file format for embeddings.
+
+    Efficient data compression built for
+    handling bulk data leads to less memory
+    issues.

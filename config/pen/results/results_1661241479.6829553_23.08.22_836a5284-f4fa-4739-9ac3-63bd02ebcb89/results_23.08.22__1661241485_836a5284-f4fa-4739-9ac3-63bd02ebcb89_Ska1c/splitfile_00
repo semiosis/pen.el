@@ -1,0 +1,11 @@
+">>=" is a monadic bind operator.
+
+It takes a monadic value and a function that takes the monadic value's type and returns a monadic value.
+
+It evaluates the function on the monadic value, and uses the result to get a monadic value of the same type.
+
+It then evaluates that monadic value.
+
+It returns the result of evaluating that monadic value.
+
+The above is a code snippet.

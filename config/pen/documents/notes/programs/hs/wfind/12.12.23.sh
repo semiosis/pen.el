@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/notmuch" "#" "<==" "wfind"
+cd /root/.pen/documents/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke-regex-search-multi" "#" "<==" "wfind"
+cd /root/.emacs.d/host/pen.el/src;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke-regex-search-multi" "#" "<==" "wfind"
+cd /root/.pen/documents/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/agi" "#" "<==" "wfind"

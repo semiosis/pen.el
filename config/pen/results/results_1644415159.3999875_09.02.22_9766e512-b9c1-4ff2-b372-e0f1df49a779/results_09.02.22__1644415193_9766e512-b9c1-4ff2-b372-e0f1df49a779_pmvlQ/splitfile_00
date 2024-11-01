@@ -1,0 +1,4 @@
+ so we can reuse it
+# Have an exit statement to close the conversation
+# TODO Search the first name and last name fields for multi-part names and use the last name if it's a match.
+# TODO Search the first

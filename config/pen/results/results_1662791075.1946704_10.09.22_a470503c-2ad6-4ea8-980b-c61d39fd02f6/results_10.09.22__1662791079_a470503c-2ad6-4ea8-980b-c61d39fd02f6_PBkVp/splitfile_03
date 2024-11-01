@@ -1,0 +1,1 @@
+(pprint (map (* 2) (range 1 10)))

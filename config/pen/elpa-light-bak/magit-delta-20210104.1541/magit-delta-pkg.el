@@ -1,0 +1,2 @@
+;;; Generated package description from magit-delta.el  -*- no-byte-compile: t -*-
+(define-package "magit-delta" "20210104.1541" "Use Delta when displaying diffs in Magit" '((emacs "25.1") (magit "20200426") (xterm-color "2.0")) :commit "56cdffd377279589aa0cb1df99455c098f1848cf" :authors '(("Dan Davison" . "dandavison7@gmail.com")) :maintainer '("Dan Davison" . "dandavison7@gmail.com") :url "https://github.com/dandavison/magit-delta")

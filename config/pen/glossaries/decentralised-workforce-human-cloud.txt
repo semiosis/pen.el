@@ -1,0 +1,25 @@
+asynchronous communication
+    https://doist.com/blog/asynchronous-communication/
+
+    When you send a message without expecting
+    an immediate response.
+    
+    For example, you send an email.
+    
+    I open and respond to the email several
+    hours later.
+
+synchronous communication
+    https://doist.com/blog/asynchronous-communication/
+
+    When you send a message and the recipient
+    processes the information and responds
+    immediately.
+    
+    In-person communication, like meetings,
+    are examples of purely synchronous
+    communication.
+    
+    You say something, I receive the
+    information as you say it, and respond to
+    the information right away.

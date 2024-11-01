@@ -1,0 +1,8 @@
+"Neural Radiance Fields" (NeRF) are a family of methods for reconstructing non-rigid 3D shapes from
+images. NeRFs are an extension of Neural Fields, which are a generalization of the Radial Basis
+Function (RBF) interpolation family. 
+
+NeRFs are a natural fit for the problem of 3D shape reconstruction from images, as they are a natural
+way to represent a family of shapes that are related by topology. 
+
+Ne

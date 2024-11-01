@@ -1,0 +1,1 @@
+main(agi, dir(agi), agi.__file__)

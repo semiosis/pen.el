@@ -1,0 +1,20 @@
+[(String, String)] -> IO ()
+tabularise = mapM_ print
+EOD
+
+# haskell files
+
+cat draft.haskell <<EOD
+port qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+import Data.Array (fromList, toList, fromIntegral)
+import Data.Map (fromList, fromListWith)
+import Data.Map.Strict (fromListWith)
+import Control.Monad (forM_)
+import Control.Monad.State (get, put)
+import Control.Monad.IO.Class (liftIO)
+import System.Random (randomRIO)
+
+  -- Read the CSV from stdin and decode it into a list of lines.
+  -- We use the Lazy version of ByteString to avoid reading the whole file into memory.

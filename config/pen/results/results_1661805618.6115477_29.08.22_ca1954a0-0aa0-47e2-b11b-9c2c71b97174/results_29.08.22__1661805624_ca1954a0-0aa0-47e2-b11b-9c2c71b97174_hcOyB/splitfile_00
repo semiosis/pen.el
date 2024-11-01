@@ -1,0 +1,10 @@
+"Pivot" is a command-line tool for manipulating CSV files.
+
+Usage:
+  pivot [options] [<input> [<output>]]
+
+Options:
+  -h --help             Show this screen.
+  --version             Show version.
+  -f --fields=<fields>  Comma separated list of fields to use in the pivot table.
+  -r --rows=<rows>      Comma separated list of fields to be used as rows.

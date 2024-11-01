@@ -1,0 +1,11 @@
+
+
+$ ghci Prelude> :l byte.lhs
+
+ghci> :load byte.lhs
+
+ghci> :type drop
+
+ghci> drop (10::Word8)
+
+Prelude.

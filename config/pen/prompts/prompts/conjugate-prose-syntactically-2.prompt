@@ -1,0 +1,47 @@
+title: Conjugate prose syntactically
+doc: Given two text snippets, join them together intelligently and syntactically
+tags: prose nlp-task english
+prompt-version: 2
+prompt: |
+  <delim>
+  Please provide me with a short brief
+  a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+  <delim>
+  Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+  <delim>
+  If I’m stressed out
+  something, I tend to have a problem falling asleep.
+  <delim>
+  If I’m stressed out about something, I
+  tend to have a problem falling asleep.
+  <delim>
+  There is plenty of fun things to do in the summer
+  in the summer when your able to go outside.
+  <delim>
+  There is plenty of fun things to do in the summer when your able to go outside.
+  <delim>
+  <first segment>
+  <second segment>
+  <delim>
+  <:pp><first segment>
+force-engine: OpenAI Davinci
+force-temperature: 0.1
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "<delim-1>"
+cache: true
+vars:
+- first segment
+- second segment
+examples:
+- Given a sentence which may have
+- may have incorrect spelling or grammar, correct it.
+test-output: Given a sentence which may have incorrect spelling or grammar, correct
+  it.
+postprocessor: pen-str join ' '
+prefer-external: true
+quality-script: my-quality-checker-for-this-prompt.sh
+validation-script: my-validator-for-this-prompt.sh
+n-test-runs: 5
+prettifier: pen-pretty-paragraph

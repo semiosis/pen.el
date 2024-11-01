@@ -1,0 +1,13 @@
+"awk -f"
+  prompt: "What is the command to run it?"
+#+END_SRC
+
+** Answer
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Imagine an awk linter"
+  code: "awk -f"
+  answer: |-
+    $ awk -f <file>
+#+END_SRC
+
+  6:   }

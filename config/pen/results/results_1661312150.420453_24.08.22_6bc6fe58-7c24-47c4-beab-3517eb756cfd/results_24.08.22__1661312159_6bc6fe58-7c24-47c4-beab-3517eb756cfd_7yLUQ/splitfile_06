@@ -1,0 +1,30 @@
+
+    Facts are values that Ansible infers from
+    the remote system's current state.
+
+    They are used to determine what the
+    remote system is doing and what it is
+    capable of doing.
+
+    The Ansible engine will collect Facts from
+    the remote system at startup and use them
+    to determine how it should act.
+
+    Facts are also used to provide information
+    about the remote system to other tasks.
+
+    The Ansible engine will also use Facts to
+    populate variables (see Variables).
+
+    The Ansible engine will use Facts to make
+    decisions about which modules to use for a
+    given task (see when:).
+
+    The Ansible engine will also use Facts to
+    populate variables (see Variables).
+
+    The Ansible engine will use Facts to make
+    decisions about which modules to use for a
+    given task (see when:).
+
+        - ansible_

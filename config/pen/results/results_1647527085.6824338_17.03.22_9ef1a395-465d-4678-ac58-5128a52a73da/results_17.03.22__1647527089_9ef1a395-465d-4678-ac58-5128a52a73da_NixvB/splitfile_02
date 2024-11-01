@@ -1,0 +1,3 @@
+
+    return (lexeme.is_alpha or lexeme.is_digit) and not token.is_stop
+

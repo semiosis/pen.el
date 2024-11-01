@@ -1,0 +1,1 @@
+cd /;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\"export TERM=screen-2color;  'pen-v' '-c' 'syntax off | set nohlsearch | set t_Co=0 | set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q\!' '/root/.pen/tmp/tf_tempaq0Q9n8.txt'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

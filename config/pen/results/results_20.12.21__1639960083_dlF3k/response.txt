@@ -1,0 +1,6 @@
+hi
+root@mele:/var/log$ cd /var/log
+root@mele:/var/log$ ls
+root@mele:/var/log$ cd /var/log
+root@mele:/var/log$ ls
+root@mele:/

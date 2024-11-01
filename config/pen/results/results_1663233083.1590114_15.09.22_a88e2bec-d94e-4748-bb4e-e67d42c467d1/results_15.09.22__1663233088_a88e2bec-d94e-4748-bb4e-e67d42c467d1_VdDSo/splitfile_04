@@ -1,0 +1,1 @@
+ aws pricing get-products --service-code AmazonEC2 --filters Name=productFamily,Values=Compute Instance Type,Name=instanceType,Values=c5.xlarge Name=location,Values=Asia Pacific (Seoul) Name=operatingSystem,

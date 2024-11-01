@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: termui resize
+# key: tuwinch
+# --
+/home/shane/go/src/github.com/gizak/termui/_example/grid.go

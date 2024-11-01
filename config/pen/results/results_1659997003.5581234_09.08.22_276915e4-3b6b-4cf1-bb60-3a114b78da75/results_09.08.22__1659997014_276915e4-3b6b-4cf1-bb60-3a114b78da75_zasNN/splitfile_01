@@ -1,0 +1,14 @@
+
+
+#+HUGO_CUSTOM_FRONT_MATTER: :tags "melee"
+#+HUGO_CUSTOM_FRONT_MATTER: :categories "melee"
+#+HUGO_CUSTOM_FRONT_MATTER: :date "2020-08-10"
+#+HUGO_CUSTOM_FRONT_MATTER: :draft true
+#+HUGO_CUSTOM_FRONT_MATTER: :title "Marry Me Melee"
+#+HUGO_CUSTOM_FRONT_MATTER: :description "I'd like to ask you to marry me."
+EOD
+
+
+cat draft.org <<EOD
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil

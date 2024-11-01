@@ -1,0 +1,9 @@
+""
+
+# This function will produce the business ideas
+def make_ideas(business_ideas):
+    ideas = business_ideas.split('-')
+    return ideas
+
+# This function will give us a random business idea
+def get_idea(ide

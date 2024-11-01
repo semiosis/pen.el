@@ -1,0 +1,6 @@
+cd /root/notes;  "Rev" "9:9" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "9:17" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "19:15" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "2:16" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "12:11" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "12:11" "#" "<==" "zsh"

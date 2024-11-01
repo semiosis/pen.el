@@ -1,0 +1,222 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=600
+Content-Length: 7826
+Content-Type: text/html; charset=utf-8
+Etag: "bfe527f07b8558b21e91c577d2f01b2e72be4f4aa00b2c05c5acfde899bdcce1"
+Expires: Thu, 28 Dec 2023 18:34:59 UTC
+Last-Modified: Thu, 28 Dec 2023 05:58:25 GMT
+Permissions-Policy: interest-cohort=()
+Vary: Origin
+Date: Thu, 28 Dec 2023 18:24:59 GMT
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Emacs: demonstration of my Denote package (simple note-taking) | Protesilaos Stavrou</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Emacs: demonstration of my Denote package (simple note-taking)" />
+<meta name="author" content="Protesilaos Stavrou" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Video demo of my Denote package for Emacs for a simple yet effective note-taking workflow." />
+<meta property="og:description" content="Video demo of my Denote package for Emacs for a simple yet effective note-taking workflow." />
+<link rel="canonical" href="https://protesilaos.com/codelog/2022-06-18-denote-demo/" />
+<meta property="og:url" content="https://protesilaos.com/codelog/2022-06-18-denote-demo/" />
+<meta property="og:site_name" content="Protesilaos Stavrou" />
+<meta property="og:image" content="https://protesilaos.com/assets/images/brand/protesilaos-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-18T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://protesilaos.com/assets/images/brand/protesilaos-logo.png" />
+<meta property="twitter:title" content="Emacs: demonstration of my Denote package (simple note-taking)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Protesilaos Stavrou"},"dateModified":"2022-06-18T00:00:00+00:00","datePublished":"2022-06-18T00:00:00+00:00","description":"Video demo of my Denote package for Emacs for a simple yet effective note-taking workflow.","headline":"Emacs: demonstration of my Denote package (simple note-taking)","image":"https://protesilaos.com/assets/images/brand/protesilaos-logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://protesilaos.com/codelog/2022-06-18-denote-demo/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://protesilaos.com/assets/images/brand/protesilaos-logo.png"},"name":"Protesilaos Stavrou"},"url":"https://protesilaos.com/codelog/2022-06-18-denote-demo/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Feeds -->
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/news.xml" title="Protesilaos Stavrou: News and Announcements" />
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/politics.xml" title="Protesilaos Stavrou: Political Writings" />
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/codelog.xml" title="Protesilaos Stavrou: Coding blog" />
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/books.xml" title="Protesilaos Stavrou: Books and Essays" />
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/commentary.xml" title="Protesilaos Stavrou: Comments on life" />
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/interpretations.xml" title="Protesilaos Stavrou: Interpretations and critiques" />
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/poems.xml" title="Protesilaos Stavrou: My poems" />
+  <link type="application/rss+xml" rel="alternate" href="https://protesilaos.com/master.xml" title="Protesilaos Stavrou: Master feed with all updates" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" sizes="16x16 32x32 64x64 128x128" href="https://protesilaos.com/favicon.ico?v=202008021026">
+
+  <!-- Style sheets -->
+  <link rel="stylesheet" href="https://protesilaos.com/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://protesilaos.com/assets/css/style-print.css" media="print">
+
+</head>
+
+
+  <body>
+
+    <div class="infobar">
+
+	<div class="infobar-inner">
+
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		
+		<div class="infobar-header">
+			<a href="https://protesilaos.com">Protesilaos Stavrou</a>
+			<br/>
+			<small></small>
+		</div>
+		
+
+		<div class="infobar-menu">
+			<nav id="infobar-main-menu" class="infobar-navigation" aria-label="Main menu">
+
+<ul>
+
+    <li>
+        <a href="https://protesilaos.com/about/">About</a>
+    </li>
+
+    <li>
+        <a href="https://protesilaos.com/contact/">Contact</a>
+    </li>
+
+    <li>
+        <a href="https://protesilaos.com/emacs/">Emacs packages</a>
+    </li>
+
+    <li>
+        <a href="https://protesilaos.com/publications/">Publications</a>
+    </li>
+
+    <li>
+        <a href="https://protesilaos.com/donations/">Donations</a>
+    </li>
+
+    <li>
+        <a href="https://protesilaos.com/feeds/">Feeds (RSS)</a>
+    </li>
+
+</ul>
+</nav>
+		</div>
+
+	</div>
+
+</div>
+
+
+    <main id="content" aria-label="Content">
+
+      <div class="container">
+
+        
+
+        <p class="info">
+          🏆 I provide private lessons on Emacs, Linux, and Life in
+          general: <a href="https://protesilaos.com/coach/">https://protesilaos.com/coach/</a>.
+          Lessons continue <strong>throughout the year</strong>.
+        </p>
+
+        
+
+        <article class="post">
+
+	<div class="post-inner">
+
+		<div class="post-header">
+			<h1>Emacs: demonstration of my Denote package (simple note-taking)</h1>
+			
+			<div class="post-header-meta">
+				<time datetime="2022-06-18T00:00:00+00:00">2022-06-18</time>
+			</div>
+		</div>
+
+		<div class="post-body">
+
+			<div class="medialayer">
+				<div class="mediaframe">
+					<div class="mediawrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/mLzFJcLpDFI?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+            <p>Raw link: <a href="https://www.youtube.com/watch?v=mLzFJcLpDFI">https://www.youtube.com/watch?v=mLzFJcLpDFI</a></p>
+
+			<p>Denote is a new package that I am developing for Emacs.  Its first
+stable release will be avaible in the coming days from the official GNU
+ELPA.</p>
+
+<p>Denote is the culmination of methods and code I have been relying for
+several years now (including from my pre-Emacs days).</p>
+
+<p>Here is the official manual which includes links to the Git sources and
+the mailing list: <a href="https://protesilaos.com/emacs/denote">https://protesilaos.com/emacs/denote</a>.</p>
+
+<p>And here is the page that outlines all my Emacs-related public work:
+<a href="https://protesilaos.com/emacs">https://protesilaos.com/emacs</a>.</p>
+
+		</div>
+
+	</div>
+
+</article>
+
+<div class="post-footer">
+
+	<div class="post-footer-inner">
+		<div class="nextprev">
+
+
+    <div class="nextprev-item">
+        <span class="nextprev-link">Next:</span><a class="next" rel="next" href="https://protesilaos.com/codelog/2022-06-27-denote-0-1-0/">Emacs: denote version 0.1.0</a>
+    </div>
+
+
+
+    <div class="nextprev-item">
+        <span class="nextprev-link">Previous:</span><a class="prev" rel="prev" href="https://protesilaos.com/codelog/2022-06-09-lin-0-4-0/">Emacs: lin version 0.4.0</a>
+    </div>
+
+
+
+    <div class="nextprev-item">
+        <span class="nextprev-link">See all:</span> <a href="https://protesilaos.com/codelog/">Code blog entries</a>
+    </div>
+
+
+</div>
+
+	</div>
+
+</div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+
+  <div class="footer-block">
+    <p>Copyright (c) 2011-2023 Protesilaos Stavrou. All original content is licensed under a free/libre <em>copyleft license</em> (GPL or CC BY-SA).
+
+      
+
+      Read the notice about the <a rel="license" href="https://protesilaos.com/license/">license and resources</a>.
+
+      
+    </p>
+  </div>
+
+</footer>
+
+
+  </body>
+</html>

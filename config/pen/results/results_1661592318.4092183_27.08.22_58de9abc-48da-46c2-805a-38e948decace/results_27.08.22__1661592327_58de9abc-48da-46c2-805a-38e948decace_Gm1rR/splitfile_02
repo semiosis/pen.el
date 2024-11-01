@@ -1,0 +1,25 @@
+.
+
+import Data.ByteString.Lazy
+import Data.Char
+import qualified Data.ByteString as B
+import qualified Data.ByteString.Lazy as BL
+import Data.Csv
+import qualified Data.Vector as V
+import qualified Data.Map as M
+import Control.Monad (forM_, unless)
+import System.Environment (getArgs)
+import System.Exit (exitSuccess)
+import System.IO (hGetContents, readFile, writeFile)
+
+
+main :: IO ()
+main = do
+
+  -- Read the CSV file from stdin and parse it into a vector of vectors of strings.
+
+  csv <- BL.fromStrict <$> hGetContents
+
+  let rows = V.fromList $ parseCsv csv
+
+  -- Build a map from column names to indices in the CSV file header row, and a map from column names to values in each row of the CSV

@@ -1,0 +1,9 @@
+ to the graveyard and checked
+through all the graves.
+
+They found him sleeping in one of the graves.
+
+He woke up and said, "Dad, I was busy doing
+some gardening."'''
+
+print(compare_files(filename, text))

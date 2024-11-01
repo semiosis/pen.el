@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Psalm" "130" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Psalm" "22:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Psalm" "22:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Psalm" "88" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Psalm" "88:18" "#" "<==" "zsh"

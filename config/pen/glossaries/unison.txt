@@ -1,0 +1,22 @@
+Unison codebase manager
+    ewwlinks +/"Unison codebase manager" "https://www.unisonweb.org/docs/tour/"
+
+term binding
+    Consists of:
+    - optional type signature
+    - term definition
+
+    sp +/"timesTwo : Nat -> Nat" "$HOME/source/git/unisonweb/unison/docs/LanguageReference.md"
+
+expression
+
+use clause
+
+hash reference
+
+Remote.transfer
+    [#function]
+
+    Introduces a "remote effect", where
+    computation may proceed on multiple Unison
+    nodes.

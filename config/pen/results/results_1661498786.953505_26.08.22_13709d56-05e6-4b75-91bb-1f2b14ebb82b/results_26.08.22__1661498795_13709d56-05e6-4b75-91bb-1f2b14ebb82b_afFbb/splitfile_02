@@ -1,0 +1,15 @@
+
+
+;;; elisp/my-transient-emacs.el
+;;;
+;;; ... Emacs Lisp source code for my-transient-emacs ...
+;;;
+
+(cl-defun my-eww-search (&key query)
+    "Search the web with eww."
+    (interactive)
+    (unless query (setq query (read-string "Search: ")))
+    (eww-browse-url (concat "https://duckduckgo.com/?q=" query)))
+
+   - you: Could you please write me a transient to play games? I would like to play the zork games in emacs. From Frotz. But I don't have the original z-machine code, so I will have to emulate it myself. Can you write me a transient to do that?
+   - transient emacs guru: sure. it will have a prefix,

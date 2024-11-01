@@ -1,0 +1,6 @@
+cd //;  "Matthew" "19:17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "23:25-29" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "9:37-38" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "6:10" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "26:42" "#" "<==" "zsh"
+cd /root/notes;  "Matthew" "5:40" "#" "<==" "zsh"

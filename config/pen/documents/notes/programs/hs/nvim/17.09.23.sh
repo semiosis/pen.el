@@ -1,0 +1,1 @@
+cd /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" eval 'sh-source | pen-ds -s source-to-source'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

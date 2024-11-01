@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: atoi
+# key: atoi
+# --
+x, err := strconv.Atoi(numstr)
+if x != num || err != nil {
+b.Error(err)
+}

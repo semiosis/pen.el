@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "defun" "tv" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bpen-fwfzf\\b" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "ead" ".*filters.sh" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/src;  "ead" ".*filters.sh" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bpen-fwfzf\\b" "#" "<==" "zsh"

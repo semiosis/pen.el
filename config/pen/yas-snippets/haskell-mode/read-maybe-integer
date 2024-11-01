@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: read-maybe-integer
+# group: maybe
+# key: rmi
+# --
+(readMaybe "1980" :: Maybe Integer)

@@ -1,0 +1,7 @@
+shell('date', R).
+Sun 13 Mar 2022 01:48:09 PM NZDT
+R = 0.
+
+?- shell('date', R).
+Sun 13 Mar 2022 01:48:09 PM NZDT
+R =

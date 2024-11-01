@@ -1,0 +1,9 @@
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "strawberry")))
+--> "strawberry: n. A large fleshy fruit with a green calyx and red juicy pulp."
+
+
+
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "apple")))
+--> 

@@ -1,0 +1,12 @@
+- 1. Marshall McLuhan (1911-1980)
+- 2. Noam Chomsky (1928-2018)
+# Create a corpus consisting of all documents in the `papers` folder
+from os import listdir
+from os.path import isfile, join
+
+from pprintpp import pprint as pprint
+papers = [f for f in listdir('papers') if isfile(join('papers', f))]
+pprint(papers)
+corpus = ' '.join([open('papers/' + paper).read() for paper in papers])
+len(corpus)
+# corpus = ' '.join([file for file in ['

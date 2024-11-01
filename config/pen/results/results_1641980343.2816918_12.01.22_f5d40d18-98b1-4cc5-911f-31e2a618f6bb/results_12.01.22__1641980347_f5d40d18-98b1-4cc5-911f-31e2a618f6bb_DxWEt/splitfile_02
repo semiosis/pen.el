@@ -1,0 +1,1 @@
+ youtube-dl -f bestaudio -x --audio-format mp3 --audio-quality 0 --embed-thumbnail --add-metadata --prefer-ffmpeg https://www.youtube.com/watch?v=hvSr1J6vGmM

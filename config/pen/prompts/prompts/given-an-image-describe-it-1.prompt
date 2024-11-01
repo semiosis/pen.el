@@ -1,0 +1,30 @@
+task: "Given an image, describe it"
+doc: "Given an image, describe it. For alttext"
+tags: vision prose web lookingglass
+prompt-version: 1
+payloads:
+- image: "<file path or url>"
+prompt: |+
+  Q: What is in this image? A:
+force-engine: "AlephAlpha EUTranMM"
+temperature: 0.0
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "Q:"
+cache: on
+info: on
+vars:
+- "file path or url"
+preprocessors:
+- "pen-convert-for-alephalpha"
+# filter: on
+completion: off
+insertion: off
+postprocessor: pen-str clean-alephalpha
+# this works after the prompt is run
+# return-postprocessor: ""
+# prettifier: pen-pretty-paragraph
+
+# Don't prettify without correcting grammar.
+# postprocessor: "pf-correct-english-spelling-and-grammar/1"

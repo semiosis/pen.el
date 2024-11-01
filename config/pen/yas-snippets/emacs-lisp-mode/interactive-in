@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: interactive-in
+# group: common
+# key: in
+# --
+(interactive)

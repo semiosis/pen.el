@@ -1,0 +1,9 @@
+
+
+import re
+
+def main():
+    with open("../data/text.txt", "r") as f:
+        text = f.read()
+        text = re.sub(r"\n", " ", text)
+        text = re.sub(r"

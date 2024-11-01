@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: utility
+# group: vimsnippet
+# key: vs-u
+# --
+utility(${1:dry}, ${2:60}).

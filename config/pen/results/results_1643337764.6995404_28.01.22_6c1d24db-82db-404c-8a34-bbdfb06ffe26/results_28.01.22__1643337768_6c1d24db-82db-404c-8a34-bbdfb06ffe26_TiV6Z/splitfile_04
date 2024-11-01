@@ -1,0 +1,1 @@
+ aws lambda list-functions --query 'Functions[?FunctionArn!=`null`] | [?contains(FunctionArn, `:lambda:`) == `true`].[FunctionName, FunctionArn, EventSourceMappings]' --output

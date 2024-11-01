@@ -1,0 +1,43 @@
+title: "Predict the outcome of an action"
+tags: world
+aliases:
+- guess outcome
+doc: "Given some prose expression some action of an individual, return the common-sense outcome"
+prompt-version: 2
+prompt: |+
+    Predict common sense results of the following actions.
+    <delim>
+    Action: I didn't water the plant for 3 weeks.
+    Result: The plant died.
+    <delim>
+    Action: I went to school.
+    Result: I got a diploma.
+    <delim>
+    Action: I left the AC on all day.
+    Result: I got a high utility bill.
+    <delim>
+    Action: I helped my neighbors when their car broke down.
+    Result: My neighbors were grateful.
+    <delim>
+    Action: <action>
+    Result:
+engine: "OpenAI Davinci"
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1.0
+cache: on
+stop-sequences:
+- "<delim>"
+vars:
+- "action"
+examples:
+- I put the ice cream outside for an hour.
+filter: off
+completion: off
+insertion: off
+info: on
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify
+issues:
+- "If I swap all stop sequences with -- instead of ##, it completely breaks. Find out why"

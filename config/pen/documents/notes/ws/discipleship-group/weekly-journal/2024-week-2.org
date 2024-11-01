@@ -1,0 +1,181 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 2
+
+* D-Group weekly session notes
+Started working on it: <2024-01-11 Thu>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=YiZdqotstAk][Lead Me Lord : Piano Instrumental Music With Scriptures & Autumn Scene d???CHRISTIAN piano - YouTube]]
+
+| Scripture Memory | HEAR Journals Passage |
+|------------------+-----------------------|
+| [[sh:bible-study-passage bible-read-passage nasb Matthew 5:3-4 ][Matthew 5:3-4]]    | [[sh:bible-study-passage nasb Luke 6-10 ][Luke 6-10]]             |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+Story bullet points (over entire reading):
+- On two separate Sabbaths
+  - Jesus was passing through some grainfields on a Sabbath and his disciples were eating from the grainfields. Jesus brought up how David and his followers ate from the consecrated bread
+  - Jesus healed a man with a withered right hand
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 6:9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 6:9
+‾‾‾‾‾‾‾‾
+And Jesus said to them, “I ask you, is it
+lawful to do good or to do harm on the
+Sabbath, to save a life or to destroy it?”
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:3-4
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:3
+‾‾‾‾‾‾‾‾‾‾‾
+“Blessed are the poor in spirit, for theirs is
+the kingdom of heaven.
+
+Matthew 5:4
+‾‾‾‾‾‾‾‾‾‾‾
+“Blessed are those who mourn, for they shall be
+comforted.
+
+(NASB)
+#+end_src
+
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
+** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Luke 6:9 ][Luke 6:9]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 6:9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 6:9
+‾‾‾‾‾‾‾‾
+And Jesus said to them, “I ask you, is it
+lawful to do good or to do harm on the
+Sabbath, to save a life or to destroy it?”
+
+(NASB)
+#+end_src
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+please help me to follow the law the way Jesus Christ did, in the spirit of the law; doing good and loving You and loving other people.
+Thank You God for justifying us through the righteousness of faith in Jesus.
+I believe You, Father God, that You sent Jesus Christ to die for my sins.
+I believe You, Father God, that Jesus Christ was raised the dead.
+Father God, I believe Jesus that I too may be raised from the dead, as Jesus was.
+Thank You that Jesus Christ, Your Son fulfilled the law at the prophets.
+In Jesus Christ's name I pray and thank You, God,
+AMEN!!
+
+* 
+e:/volumes/home/shane/notes/ws/bible-studies/my-testimony.org
+
+* 
+[[brain:agenda/Rudy::Review book for Rudy: And He Will]]
+
+** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Luke 6:26 ][Luke 6:26]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 6:26
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 6:26
+‾‾‾‾‾‾‾‾‾
+Woe to you when all men speak well of you, for
+their fathers used to treat the false prophets
+in the same way.
+
+(NASB)
+#+end_src
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Luke 6:31 ][Luke 6:31]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 6:31
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 6:31
+‾‾‾‾‾‾‾‾‾
+Treat others the same way you want them to
+treat you.
+
+(NASB)
+#+end_src
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Luke 6:37 ][Luke 6:37]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 6:37
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 6:37
+‾‾‾‾‾‾‾‾‾
+“Do not judge, and you will not be judged; and
+do not condemn, and you will not be condemned;
+pardon, and you will be pardoned.
+
+(NASB)
+#+end_src
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+Please forgive me for judging and condemning people.
+I do not judge, nor condemn.
+I'm thinking particularly of the situation this week with Cornerstone.
+Please, God, forgive me for getting angry.
+I do not condemn them, LORD.
+Please, God, they may simply have some error there.
+But I do not condemn them.
+You are the only just and righteous Judge, LORD God.
+In Jesus Christ's name I ask, pray and declare,
+AMEN!!

@@ -1,0 +1,4 @@
+Last login: Sat Nov 16 19:02:25 2019 from 192.168.1.2
+[+] Opening connection to 192.168.1.4 on port 22: Done
+[+] Closed connection to 192.168.1.4 port 22
+shane@

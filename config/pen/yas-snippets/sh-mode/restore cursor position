@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: restore cursor position
+# group: 
+# key: restorecursor
+# --
+trap func_trap EXIT
+func_trap() {
+tput rc # Restore cursor position
+}
+
+tput sc # Set curser position

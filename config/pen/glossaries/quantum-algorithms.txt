@@ -1,0 +1,20 @@
+Shor's aglorithm
+
+Grover's aglorithm
+    https://www.technologyreview.com/s/614259/an-important-quantum-algorithm-may-actually-be-a-property-of-nature/
+
+    Back in 1996, a quantum physicist at Bell
+    Labs in New Jersey published a new recipe
+    for searching through a database of N
+    entries.
+    
+    Computer scientists have long known that
+    this process takes around N steps because
+    in the worst case, the last item on the
+    list could be the one of interest.
+    
+    However, this physicist, Lov Grover,
+    showed how the strange rules of quantum
+    mechanics allowed the search to be done in
+    a number of steps equal to the square root
+    of N.

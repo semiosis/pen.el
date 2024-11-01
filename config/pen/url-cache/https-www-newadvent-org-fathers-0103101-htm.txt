@@ -1,0 +1,90 @@
+HTTP/1.1 200 OK
+Date: Fri, 01 Mar 2024 02:09:19 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Server: BunnyCDN-AUC1-1142
+CDN-PullZone: 1569362
+CDN-Uid: 49d7db18-1dfb-442a-ba45-885c787462bf
+CDN-RequestCountryCode: NZ
+Cache-Control: public, max-age=0
+X-Frame-Options: SAMEORIGIN
+X-Mod-Pagespeed: 1.13.35.2-0
+CDN-ProxyVer: 1.04
+CDN-RequestPullSuccess: True
+CDN-RequestPullCode: 200
+CDN-CachedAt: 03/01/2024 02:09:19
+CDN-EdgeStorageId: 1142
+CDN-Status: 200
+CDN-RequestId: d85ed1854794cadd2aaf2c2980a73f4e
+CDN-Cache: MISS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>CHURCH FATHERS: Against Heresies, I.1 (St. Irenaeus)</title><script src="https://dtyry4ejybx0.cloudfront.net/js/cmp/cleanmediacmp.js?ver=0104" async="true"></script><script defer data-domain="newadvent.org" src="https://plausible.io/js/script.js"></script><link rel="canonical" href="https://www.newadvent.org/fathers/0103101.htm">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Featuring the Church Fathers, Catholic Encyclopedia, Summa Theologica and more.">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.newadvent.org/bestoftheweb?format=xml"><link rel="icon" href="../images/icon1.ico" type="image/x-icon"><link rel="shortcut icon" href="../images/icon1.ico" type="image/x-icon"><meta name="robots" content="noodp"><link type="text/css" rel="stylesheet" href="../utility/screen6.css" media="screen"></head>
+
+<body class="fathers" id="0103101.htm">
+
+<!-- spacer-->&nbsp;<br/>
+
+
+
+<div id="capitalcity"><table summary="Logo" cellpadding=0 cellspacing=0 width="100%"><tr valign="bottom"><td align="left"><a href="../"><img height=36 width=153 border="0" alt="New Advent" src="../images/logo.gif"></a></td><td align="right"> <form id="searchbox_000299817191393086628:ifmbhlr-8x0" action="../utility/search.htm">
+  <!-- Hidden Inputs -->
+  <input type="hidden" name="safe" value="active">
+  <input type="hidden" name="cx" value="000299817191393086628:ifmbhlr-8x0"/>
+  <input type="hidden" name="cof" value="FORID:9"/>
+ 
+  <!-- Search Box -->
+  <label for="searchQuery" id="searchQueryLabel">Search:</label>
+  <input id="searchQuery" name="q" type="text" size="25" aria-labelledby="searchQueryLabel"/>
+ 
+  <!-- Submit Button -->
+  <label for="submitButton" id="submitButtonLabel" class="visually-hidden">Submit Search</label>
+  <input id="submitButton" type="submit" name="sa" value="Search" aria-labelledby="submitButtonLabel"/>
+</form> <table summary="Spacer" cellpadding=0 cellspacing=0><tr><td height="2"></td></tr></table> <table summary="Tabs" cellpadding=0 cellspacing=0><tr> <td bgcolor="#ffffff"></td> <td class="tab"><a class="tab_color_on_beige" href="../">&nbsp;Home&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../cathen/index.html">&nbsp;Encyclopedia&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../summa/index.html">&nbsp;Summa&nbsp;</a></td> <td class="tab"><a class="tab_white_on_color" href="../fathers/index.html">&nbsp;Fathers&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../bible/gen001.htm">&nbsp;Bible&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../library/index.html">&nbsp;Library&nbsp;</a></td> </tr></table> </td> </tr></table><table summary="Alphabetical index" width="100%" cellpadding=0 cellspacing=0><tr><td class="bar_white_on_color"> <a href="../cathen/a.htm">&nbsp;A&nbsp;</a><a href="../cathen/b.htm">&nbsp;B&nbsp;</a><a href="../cathen/c.htm">&nbsp;C&nbsp;</a><a href="../cathen/d.htm">&nbsp;D&nbsp;</a><a href="../cathen/e.htm">&nbsp;E&nbsp;</a><a href="../cathen/f.htm">&nbsp;F&nbsp;</a><a href="../cathen/g.htm">&nbsp;G&nbsp;</a><a href="../cathen/h.htm">&nbsp;H&nbsp;</a><a href="../cathen/i.htm">&nbsp;I&nbsp;</a><a href="../cathen/j.htm">&nbsp;J&nbsp;</a><a href="../cathen/k.htm">&nbsp;K&nbsp;</a><a href="../cathen/l.htm">&nbsp;L&nbsp;</a><a href="../cathen/m.htm">&nbsp;M&nbsp;</a><a href="../cathen/n.htm">&nbsp;N&nbsp;</a><a href="../cathen/o.htm">&nbsp;O&nbsp;</a><a href="../cathen/p.htm">&nbsp;P&nbsp;</a><a href="../cathen/q.htm">&nbsp;Q&nbsp;</a><a href="../cathen/r.htm">&nbsp;R&nbsp;</a><a href="../cathen/s.htm">&nbsp;S&nbsp;</a><a href="../cathen/t.htm">&nbsp;T&nbsp;</a><a href="../cathen/u.htm">&nbsp;U&nbsp;</a><a href="../cathen/v.htm">&nbsp;V&nbsp;</a><a href="../cathen/w.htm">&nbsp;W&nbsp;</a><a href="../cathen/x.htm">&nbsp;X&nbsp;</a><a href="../cathen/y.htm">&nbsp;Y&nbsp;</a><a href="../cathen/z.htm">&nbsp;Z&nbsp;</a> </td></tr></table></div>
+ <div id="mobilecity" style="text-align: center; "><a href="../"><img height=24 width=102 border="0" alt="New Advent" src="../images/logo.gif"></a></div>
+ <!--<div class="scrollmenu"> <a href="../utility/search.htm">SEARCH</a> <a href="../cathen/">Encyclopedia</a> <a href="../summa/">Summa</a> <a href="../fathers/">Fathers</a> <a href="../bible/">Bible</a> <a href="../library/">Library</a> </div> <br />-->
+
+<div id="mi5"><span class="breadcrumbs"><a href="../">Home</a> > <a href="../fathers/index.html">Fathers of the Church</a> > <a href="../fathers/0103.htm">Against Heresies (St. Irenaeus)</a> > Book I, Chapter 1</span></div>
+
+<div id="springfield2">
+
+<div class='catholicadnet-728x90' id='fathers-728x90-top' style='display: flex; height: 100px; align-items: center; justify-content: center; '></div>
+
+
+<h1>Against Heresies (Book I, Chapter 1)</h1>
+
+<p><em><a href="https://gumroad.com/l/na2"><strong>Please help support the mission of New Advent</strong> and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99...</a></em></p>
+
+
+
+<span class="h1a">Absurd ideas of the disciples of Valentinus as to the origin, name, order, and conjugal productions of their fancied &AElig;ons, with the passages of Scripture which they adapt to their opinions.</span>
+
+<p>1. They maintain, then, that in the invisible and ineffable heights above there exists a certain perfect, pre-existent <a href="../cathen/01173c.htm">&AElig;on</a>,  whom they call Proarche, Propator, and Bythus, and describe as being invisible and incomprehensible. Eternal and unbegotten, he remained throughout innumerable cycles of ages in profound serenity and quiescence. There <a href="../cathen/05543b.htm">existed</a> along with him Enn&oelig;a, whom they also call Charis and Sige.  At last this Bythus determined to send forth from himself the beginning of all things, and deposited this production (which he had resolved to bring forth) in his contemporary Sige, even as seed is deposited in the womb. She then, having received this seed, and becoming pregnant, gave birth to Nous, who was both similar and equal to him who had produced him, and was alone capable of comprehending his father's greatness. This Nous they call also Monogenes, and Father, and the Beginning of all Things. Along with him was also produced Aletheia; and these four constituted the first and first-begotten <a href="../cathen/12587b.htm">Pythagorean</a> Tetrad, which they also denominate the root of all things. For there are first Bythus and Sige, and then Nous and Aletheia. And Monogenes, perceiving for what purpose he had been produced, also himself sent forth <a href="../cathen/09328a.htm">Logos</a> and Zoe, being the father of all those who were to come after him, and the beginning and fashioning of the entire Pleroma. By the conjunction of <a href="../cathen/09328a.htm">Logos</a> and Zoe were brought forth Anthropos and Ecclesia; and thus was formed the first-begotten Ogdoad, the root and substance of all things, called among them by four names, viz., Bythus, and Nous, and <a href="../cathen/09328a.htm">Logos</a>, and Anthropos. For each of these is masculo-feminine, as follows: Propator was united by a conjunction with his Enn&oelig;a; then Monogenes, that is Nous, with Aletheia; <a href="../cathen/09328a.htm">Logos</a> with Zoe, and Anthropos with Ecclesia.</p>
+
+<div class="CMtag_300x250" style="display: flex; height: 300px; align-items: center; justify-content: center; "></div>
+
+<p>2. These <a href="../cathen/01173c.htm">&AElig;ons</a> having been produced for the <a href="../cathen/06585a.htm">glory</a> of the <a href="../cathen/06608a.htm">Father</a>, and wishing, by their own efforts, to effect this object, sent forth emanations by means of conjunction. <a href="../cathen/09328a.htm">Logos</a> and Zoe, after producing Anthropos and Ecclesia, sent forth other ten <a href="../cathen/01173c.htm">&AElig;ons</a>, whose names are the following: Bythius and Mixis, Ageratos and Henosis, Autophyes and Hedone, Acinetos and Syncrasis, Monogenes and Macaria.  These are  the ten <a href="../cathen/01173c.htm">&AElig;ons</a> whom they declare to have been produced by <a href="../cathen/09328a.htm">Logos</a> and Zoe. They then add that Anthropos himself, along with Ecclesia, produced twelve <a href="../cathen/01173c.htm">&AElig;ons</a>, to whom they give the following names: Paracletus and Pistis, Patricos and Elpis, Metricos and Agape, Ainos and Synesis, Ecclesiasticus and Macariotes, Theletos and Sophia.</p>
+
+<p>3. Such are the thirty <a href="../cathen/01173c.htm">&AElig;ons</a> in the erroneous system of these men; and they are described as being wrapped up, so to speak, in silence, and <a href="../cathen/08673a.htm">known</a> to none [except these professing teachers]. Moreover, they declare that this invisible and spiritual Pleroma of theirs is tripartite, being divided into an Ogdoad, a Decad, and a Duodecad. And for this reason they affirm it was that the <q>Saviour</q>&mdash; for they do not please to call Him <q>Lord</q>&mdash; did no work in public during the space of thirty years, <span class="stiki" id="note012667"><a href="../bible/luk003.htm#verse23">Luke&nbsp;3:23</a></span> thus setting forth the <a href="../cathen/10662a.htm">mystery</a> of these <a href="../cathen/01173c.htm">&AElig;ons</a>. They maintain also, that these thirty <a href="../cathen/01173c.htm">&AElig;ons</a> are most plainly indicated in the <a href="../cathen/11460a.htm">parable</a> <span class="stiki" id="note012668"><a href="../bible/mat020.htm#verse1">Matthew&nbsp;20:1-16</a></span> of the labourers sent into the vineyard. For some are sent about the first hour, others about the <a href="../cathen/14514c.htm">third hour</a>, others about the sixth hour, others about the ninth hour, and others about the eleventh hour. Now, if we add up the numbers of the hours here mentioned, the sum total will be thirty: for one, three, six, nine, and eleven, when added together, form thirty. And by the hours, they hold that the <a href="../cathen/01173c.htm">&AElig;ons</a> were pointed out; while they maintain that these are great, and wonderful, and hitherto unspeakable <a href="../cathen/10662a.htm">mysteries</a> which it is their special function to develop; and so they proceed when they find anything in the multitude  of things contained in the <a href="../bible/index.html">Scriptures</a> which they can adopt and accommodate to their baseless speculations.</p>
+
+<div class='catholicadnet-728x90' id='fathers-728x90-bottom' style='display: flex; height: 100px; align-items: center; justify-content: center; '></div>
+
+<div class="pub"> <h2>About this page</h2> <p id="src"><strong>Source.</strong> <span id="srctrans">Translated by Alexander Roberts and William Rambaut.</span> From <span id="srcwork">Ante-Nicene Fathers</span>, <span id="srcvolume">Vol. 1.</span> <span id="srced">Edited by Alexander Roberts, James Donaldson, and A. Cleveland Coxe.</span> (<span id="srcpublisher">Buffalo, NY: Christian Literature Publishing Co.,</span> <span id="srcyear">1885.</span>) <span id="kk">Revised and edited for New Advent by Kevin Knight.</span> <span id="srcurl">&lt;http://www.newadvent.org/fathers/0103101.htm&gt;.</span></p> <p id="contactus"><strong>Contact information.</strong> The editor of New Advent is Kevin Knight. My email address is feedback732 <em>at</em> newadvent.org. (To help fight spam, this address might change occasionally.) Regrettably, I can't reply to every letter, but I greatly appreciate your feedback &mdash; especially notifications about typographical errors and inappropriate ads.</p> </div>
+
+</div>
+
+<div id="ogdenville"><table summary="Bottom bar" width="100%" cellpadding=0 cellspacing=0><tr><td class="bar_white_on_color"><center><strong>Copyright &#169; 2023 by <a href="../utility/contactus.htm">New Advent LLC</a>. Dedicated to the Immaculate Heart of Mary.</strong></center></td></tr></table><p align="center"><a href="../utility/contactus.htm">CONTACT US</a>  | <a href="https://cleanmedia.net/p/?psid=491-308-20180429T2217479770">ADVERTISE WITH NEW ADVENT</a></p></div><!-- Sticky Footer --> <ins class="CANBMDDisplayAD" data-bmd-ad-unit="30849120210203T1734389107AB67D35C03D4A318731A4F337F60B3E" style="display:block"></ins> <script src="https://secureaddisplay.com/au/bmd/"></script> <!-- /Sticky Footer --> <!-- Hide Dynamic Ads --><ins class="CMAdExcludeArticles"></ins><!-- /Hide Dynamic Ads-->
+
+</body>
+</html>

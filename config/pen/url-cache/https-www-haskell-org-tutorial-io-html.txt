@@ -1,0 +1,482 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:04:19 GMT
+Content-Type: text/html
+Content-Length: 26300
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-66bc"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: IO</title>
+<p>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="moretypes.html">back</a> <a href="stdclasses.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-io"></a><p>
+<a name="sect7"></a>
+<h2>7<tt>&nbsp;&nbsp;</tt>Input/Output</h2>
+<p>
+The I/O system in Haskell is purely functional, yet has all of the
+expressive power found in conventional programming languages.  In
+imperative languages, programs proceed via <I>actions</I> which examine and
+modify the current state of the world.  Typical actions include
+reading and setting global variables, writing files, reading input,
+and opening windows.  Such actions are also a part of Haskell but are
+cleanly separated from the purely functional core of the language.<p>
+Haskell's I/O system is built around a somewhat daunting mathematical
+foundation: the <I>monad</I>.  However, understanding of the underlying
+monad theory is not necessary to program using the I/O system.
+Rather, monads are a conceptual structure into which I/O happens to fit.
+It is no more necessary to understand monad theory to perform Haskell
+I/O than it is to understand group theory to do simple arithmetic.  A
+detailed explanation of monads is found in Section <a href="monads.html#tut-monads">9</a>.<p>
+The monadic operators that the I/O system 
+is built upon are also used for other purposes; we will look
+more deeply into monads later.  For now, we will avoid the term monad
+and concentrate on the use of the I/O system.  It's best to think of
+the I/O monad as simply an abstract data type.   <p>
+Actions are defined rather than invoked within the expression
+language of Haskell.
+Evaluating the definition of an action doesn't actually
+cause the action to happen.  Rather, the invocation of actions takes
+place outside of the expression evaluation we have considered up to
+this point.<p>
+Actions are either atomic, as defined in system primitives, or
+are a sequential composition of other actions.  
+The I/O monad contains primitives which
+build composite actions, a process similar to joining
+statements in sequential order using `<tt>;</tt>' in other languages.  Thus
+the monad serves as the glue which binds together the actions in a
+program. <p>
+<a name="sect7.1"></a>
+<h3>7.1<tt>&nbsp;&nbsp;</tt>Basic I/O Operations</h3><p>
+Every I/O action returns a value.  In the type system, the return value is
+`tagged' with <tt>IO</tt> type, distinguishing actions from other
+values.  For example, the type 
+of the function <tt>getChar</tt> is:
+<tt><br>
+
+<br>
+getChar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;IO&nbsp;Char<br>
+
+<br>
+
+</tt>The <tt>IO&nbsp;Char</tt> indicates that <tt>getChar</tt>, when invoked, performs
+some action which returns a character.  Actions which return no
+interesting values use the unit type, <tt>()</tt>.  For example, the
+<tt>putChar</tt> function: 
+<tt><br>
+
+<br>
+putChar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;&nbsp;Char&nbsp;-&gt;&nbsp;IO&nbsp;()<br>
+
+<br>
+
+</tt>takes a character as an argument but returns nothing useful. 
+The unit type is similar to <tt>void</tt> in other languages.<p>
+Actions are sequenced using an operator that has a
+rather cryptic name: <tt>&gt;&gt;=</tt> (or `bind').   Instead of using this
+operator directly, we choose some syntactic sugar, the <tt>do
+</tt>notation,  to hide these sequencing operators under a syntax resembling
+more conventional languages.
+The <tt>do</tt> notation can be trivially expanded to <tt>&gt;&gt;=</tt>, 
+as described in <a href="../onlinereport/exps.html#do-expressions">&sect;3.14</a>.<p>
+The keyword <tt>do</tt> introduces a sequence of statements
+which are executed in order.  A statement is either an action,
+a pattern bound to the result of an action using <tt>&lt;-</tt>, or
+a set of local definitions introduced using <tt>let</tt>.  The <tt>do</tt> notation
+uses layout in the same manner as <tt>let</tt> or <tt>where</tt> so we
+can omit braces and semicolons with proper indentation.  Here is a
+simple program to read and then print a character:
+<tt><br>
+
+<br>
+main&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IO&nbsp;()<br>
+main&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;do&nbsp;c&nbsp;&lt;-&nbsp;getChar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putChar&nbsp;c<br>
+
+<br>
+
+</tt>The use of the name <tt>main</tt> is important: <tt>main</tt> 
+is defined to be the entry point of a Haskell program (similar
+to the <tt>main</tt> function in C), and
+must have an <tt>IO</tt> type, usually <tt>IO&nbsp;()</tt>.  (The name <tt>main</tt> is special
+only in the module <tt>Main</tt>; we will have more to say about modules
+later.)  This 
+program performs two actions in 
+sequence: first it reads in a character, binding the result to the
+variable c, and then prints the character.  Unlike a <tt>let</tt> expression
+where variables are scoped over all definitions, the
+variables defined by <tt>&lt;-</tt> are only in scope in the following statements.<p>
+There is still one missing piece.  We can invoke actions and examine
+their results using <tt>do</tt>, but how do we return a value from a sequence
+of actions?  For example, consider the <tt>ready</tt> function that reads a
+character and returns <tt>True</tt> if the character was a `y':
+<tt><br>
+
+<br>
+ready&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IO&nbsp;Bool<br>
+ready&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;do&nbsp;c&nbsp;&lt;-&nbsp;getChar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;==&nbsp;'y'&nbsp;&nbsp;--&nbsp;Bad!!!<br>
+
+<br>
+
+</tt>This doesn't work because the second statement in the `do' is just a
+boolean value, not an action.  We need to take this boolean and create
+an action that does nothing but return the boolean as its result.
+The <tt>return</tt> function does just that:
+<tt><br>
+
+<br>
+return&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;a&nbsp;-&gt;&nbsp;IO&nbsp;a<br>
+
+<br>
+
+</tt>The <tt>return</tt> function completes the set of sequencing primitives.  The
+last line of <tt>ready</tt> should read <tt>return&nbsp;(c&nbsp;==&nbsp;'y')</tt>.<p>
+We are now ready to look at more complicated I/O functions.  First,
+the function <tt>getLine</tt>:
+<tt><br>
+
+<br>
+getLine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IO&nbsp;String<br>
+getLine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;do&nbsp;c&nbsp;&lt;-&nbsp;getChar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;c&nbsp;==&nbsp;'\n'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then&nbsp;return&nbsp;""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;do&nbsp;l&nbsp;&lt;-&nbsp;getLine<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(c:l)<br>
+
+<br>
+
+</tt>Note the second <tt>do</tt> in the else clause.  Each <tt>do</tt> introduces a single
+chain of statements.   Any intervening
+construct, such as the <tt>if</tt>, must use a new <tt>do</tt> to initiate further
+sequences of actions.<p>
+The <tt>return</tt> function admits an ordinary value such as a boolean to
+the realm of I/O actions. 
+What about the other direction?  Can we invoke some I/O actions within an
+ordinary expression?  For example, how can we say <tt>x&nbsp;+&nbsp;print&nbsp;y</tt> 
+in an expression so that <tt>y</tt> is printed out as the
+expression evaluates?  The answer is that we can't!  It is <I>not</I> possible to
+sneak into the imperative universe while in the midst of purely
+functional code.  Any value `infected' by the imperative world must be
+tagged as such.  A function such as 
+<tt><br>
+
+<br>
+f&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;Int&nbsp;-&gt;&nbsp;Int&nbsp;-&gt;&nbsp;Int<br>
+
+<br>
+
+</tt>absolutely cannot do any I/O since <tt>IO</tt> does not
+appear in the returned type.
+This fact is often quite distressing to
+programmers used to placing print statements liberally throughout
+their code during debugging.  There are, in fact, some unsafe
+functions available to get around this problem but these are
+better left to advanced programmers.  Debugging packages (like <tt>Trace</tt>)
+often make liberal use of these `forbidden functions' in an entirely safe
+manner.  <p>
+<a name="sect7.2"></a>
+<h3>7.2<tt>&nbsp;&nbsp;</tt>Programming With Actions</h3>
+I/O actions are ordinary Haskell
+values: they may be passed to functions, placed in structures, and
+used as any other Haskell value.  Consider this list of actions:
+<tt><br>
+
+<br>
+todoList&nbsp;::&nbsp;[IO&nbsp;()]<br>
+<br>
+todoList&nbsp;=&nbsp;[putChar&nbsp;'a',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do&nbsp;putChar&nbsp;'b'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putChar&nbsp;'c',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do&nbsp;c&nbsp;&lt;-&nbsp;getChar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putChar&nbsp;c]<br>
+
+<br>
+
+</tt>This list doesn't actually invoke any actions---it simply holds them.
+To join these actions into a single action, a function such as
+<tt>sequence_</tt> is needed:
+<tt><br>
+
+<br>
+sequence_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;[IO&nbsp;()]&nbsp;-&gt;&nbsp;IO&nbsp;()<br>
+sequence_&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;return&nbsp;()<br>
+sequence_&nbsp;(a:as)&nbsp;=&nbsp;&nbsp;do&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence&nbsp;as<br>
+
+<br>
+
+</tt>This can be simplified by noting that <tt>do&nbsp;x;y</tt> is expanded to
+<tt>x&nbsp;&gt;&gt;&nbsp;y</tt> (see Section <a href="monads.html#tut-monadic-classes">9.1</a>).  This pattern of
+recursion is captured by the <tt>foldr</tt> function (see the Prelude for a
+definition of <tt>foldr</tt>); a better definition of <tt>sequence_</tt> is:
+<tt><br>
+
+<br>
+sequence_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;[IO&nbsp;()]&nbsp;-&gt;&nbsp;IO&nbsp;()<br>
+sequence_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;foldr&nbsp;(&gt;&gt;)&nbsp;(return&nbsp;())<br>
+
+<br>
+
+</tt>The <tt>do</tt> notation is a useful tool but in this case the underlying
+monadic operator, <tt>&gt;&gt;</tt>, is more appropriate.  An understanding of the
+operators upon which <tt>do</tt> is built is quite useful to the Haskell
+programmer. <p>
+The <tt>sequence_</tt> function can be used to construct <tt>putStr</tt> from
+<tt>putChar</tt>: 
+<tt><br>
+
+<br>
+putStr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;String&nbsp;-&gt;&nbsp;IO&nbsp;()<br>
+putStr&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;sequence_&nbsp;(map&nbsp;putChar&nbsp;s)<br>
+
+<br>
+
+</tt>One of the differences between Haskell and conventional
+imperative programming can be seen in <tt>putStr</tt>.  In an imperative
+language, mapping an imperative version of <tt>putChar</tt> over the string
+would be sufficient to print it.  In Haskell, however, the <tt>map
+</tt>function does not perform any action.  Instead it creates a list of
+actions, one for each character in the string.  The folding operation
+in <tt>sequence_
+</tt>uses the <tt>&gt;&gt;</tt> function to combine all of the individual actions into a
+single action.  The <tt>return&nbsp;()</tt> used here is  
+quite necessary -- <tt>foldr</tt> needs a null action at the end of the chain
+of actions it creates (especially if there are no characters in the
+string!). <p>
+The Prelude and the libraries  contains many functions which are
+useful for sequencing I/O actions.  These are usually generalized to
+arbitrary monads; any function with a context including <tt>Monad&nbsp;m&nbsp;=&gt;
+</tt>works with the <tt>IO</tt> type. <p>
+<a name="sect7.3"></a>
+<h3>7.3<tt>&nbsp;&nbsp;</tt>Exception Handling</h3><p>
+So far, we have avoided the issue of exceptions during I/O operations.
+What would happen if <tt>getChar</tt> encounters an end of
+file? (We use the term <I>error</I> for <I>_|_</I>: a condition which
+cannot be recovered from such as non-termination or pattern match
+failure.  Exceptions, on the other hand, can be caught and handled
+within the I/O monad.)
+To deal with exceptional conditions such as `file not found' within
+the I/O monad, a handling mechanism is used, similar in functionality
+to the one in standard ML. 
+No special syntax or semantics are used; exception handling is part of
+the definition of the I/O sequencing operations.<p>
+Errors are encoded using a special data type, <tt>IOError</tt>.  This type
+represents all possible exceptions that may occur within the I/O monad.
+This is an abstract type: no constructors for <tt>IOError</tt> are available
+to the user.  Predicates allow <tt>IOError</tt> values to be
+queried.  For example, the function
+<tt><br>
+
+<br>
+isEOFError&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IOError&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>determines whether an error was caused by an end-of-file condition.
+By making <tt>IOError</tt> abstract, new sorts of errors may be added to the
+system without a noticeable change to the data type.  The function
+<tt>isEOFError</tt> is defined in a separate library, <tt>IO</tt>, and must be
+explicitly imported into a program.<p>
+An <I>exception handler</I> has type <tt>IOError&nbsp;-&gt;&nbsp;IO&nbsp;a</tt>.
+The <tt>catch</tt> function associates an exception handler with an action or
+set of actions:
+<tt><br>
+
+<br>
+catch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IO&nbsp;a&nbsp;-&gt;&nbsp;(IOError&nbsp;-&gt;&nbsp;IO&nbsp;a)&nbsp;-&gt;&nbsp;IO&nbsp;a<br>
+
+<br>
+
+</tt>The arguments to <tt>catch</tt> are an action and a handler.  If the action
+succeeds, its result is returned without invoking the handler.  If an
+error occurs, it is passed to the handler as a value of type
+<tt>IOError</tt> and the action associated with the handler is then invoked.
+For example, this version of <tt>getChar</tt> returns a newline when an error
+is encountered:
+<tt><br>
+
+<br>
+getChar'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IO&nbsp;Char<br>
+getChar'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;getChar&nbsp;`catch`&nbsp;(\e&nbsp;-&gt;&nbsp;return&nbsp;'\n')<br>
+
+<br>
+
+</tt>This is rather crude since it treats all errors in the same manner.  If
+only end-of-file is to be recognized, the error value must be queried:
+<tt><br>
+
+<br>
+getChar'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IO&nbsp;Char<br>
+getChar'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;getChar&nbsp;`catch`&nbsp;eofHandler&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;eofHandler&nbsp;e&nbsp;=&nbsp;if&nbsp;isEofError&nbsp;e&nbsp;then&nbsp;return&nbsp;'\n'&nbsp;else&nbsp;ioError&nbsp;e<br>
+
+<br>
+
+</tt>The <tt>ioError</tt> function used here throws an exception on to the next
+exception handler.  The type of <tt>ioError</tt> is
+<tt><br>
+
+<br>
+ioError&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IOError&nbsp;-&gt;&nbsp;IO&nbsp;a<br>
+
+<br>
+
+</tt>It is similar to
+<tt>return</tt> except that it transfers control to the exception handler
+instead of proceeding to the next 
+I/O action.  Nested calls to <tt>catch</tt> are
+permitted, and produce nested exception handlers.<p>
+Using <tt>getChar'</tt>, we can redefine <tt>getLine</tt> to demonstrate the use of
+nested handlers:
+<tt><br>
+
+<br>
+getLine'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;IO&nbsp;String<br>
+getLine'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;catch&nbsp;getLine''&nbsp;(\err&nbsp;-&gt;&nbsp;return&nbsp;("Error:&nbsp;"&nbsp;++&nbsp;show&nbsp;err))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getLine''&nbsp;=&nbsp;do&nbsp;c&nbsp;&lt;-&nbsp;getChar'<br>
+&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;c&nbsp;==&nbsp;'\n'&nbsp;then&nbsp;return&nbsp;""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;do&nbsp;l&nbsp;&lt;-&nbsp;getLine'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(c:l)<br>
+
+<br>
+<p>
+</tt>The nested error handlers allow <tt>getChar'</tt> to catch end of file
+while any other error results in a string starting with <tt>"Error:&nbsp;"
+</tt>from <tt>getLine'</tt>.<p>
+For convenience, Haskell provides a default exception handler at the
+topmost level of a program that prints out the
+exception and terminates the program.<p>
+<a name="sect7.4"></a>
+<h3>7.4<tt>&nbsp;&nbsp;</tt>Files, Channels, and Handles</h3><p>
+Aside from the I/O monad and the exception handling mechanism it
+provides, I/O facilities in Haskell are for the most part quite
+similar to those in other languages.  Many of these functions are in
+the <tt>IO</tt> library instead of the Prelude and thus must be explicitly
+imported to be in scope (modules and importing are discussed in
+Section <a href="modules.html#tut-modules">11</a>).  Also, many of these functions are
+discussed in the Library Report instead of the main report.<p>
+Opening a file creates a <I>handle</I> (of type <tt>Handle</tt>) for use in I/O
+transactions.  Closing the handle closes the associated file:
+<tt><br>
+
+<br>
+type&nbsp;FilePath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;String&nbsp;&nbsp;--&nbsp;path&nbsp;names&nbsp;in&nbsp;the&nbsp;file&nbsp;system<br>
+openFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;FilePath&nbsp;-&gt;&nbsp;IOMode&nbsp;-&gt;&nbsp;IO&nbsp;Handle<br>
+hClose&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Handle&nbsp;-&gt;&nbsp;IO&nbsp;()&nbsp;<br>
+data&nbsp;IOMode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;ReadMode&nbsp;|&nbsp;WriteMode&nbsp;|&nbsp;AppendMode&nbsp;|&nbsp;ReadWriteMode<br>
+
+<br>
+
+</tt>Handles can also be associated with <I>channels</I>: communication ports
+not directly attached to files.  A few channel handles are predefined,
+including <tt>stdin</tt> (standard input), <tt>stdout</tt> (standard output), and
+<tt>stderr</tt> (standard error).  Character level I/O operations include
+<tt>hGetChar</tt> and <tt>hPutChar</tt>, which take a handle as an argument.  The
+<tt>getChar</tt> function used previously can be defined as:
+<tt><br>
+
+<br>
+getChar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;hGetChar&nbsp;stdin<br>
+
+<br>
+
+</tt>Haskell also allows the entire contents of a file or channel to be
+returned as a single string:
+<tt><br>
+
+<br>
+getContents&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Handle&nbsp;-&gt;&nbsp;IO&nbsp;String<br>
+
+<br>
+
+</tt>Pragmatically, it may seem that <tt>getContents</tt> must immediately read an
+entire file or channel, resulting in poor space and time performance
+under certain conditions.  However, this is not the case.  The key
+point is that <tt>getContents</tt> returns a "lazy" (i.e. non-strict) list
+of characters (recall that strings are just lists of characters in
+Haskell), whose elements are read "by demand" just like any other
+list.  An implementation can be expected to implement this
+demand-driven behavior by reading one character at a time from the
+file as they are required by the computation.<p>
+In this example, a Haskell program copies one file to another:
+<tt><br>
+
+<br>
+main&nbsp;=&nbsp;do&nbsp;fromHandle&nbsp;&lt;-&nbsp;getAndOpenFile&nbsp;"Copy&nbsp;from:&nbsp;"&nbsp;ReadMode<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toHandle&nbsp;&nbsp;&nbsp;&lt;-&nbsp;getAndOpenFile&nbsp;"Copy&nbsp;to:&nbsp;"&nbsp;WriteMode&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contents&nbsp;&nbsp;&nbsp;&lt;-&nbsp;hGetContents&nbsp;fromHandle<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hPutStr&nbsp;toHandle&nbsp;contents<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hClose&nbsp;toHandle<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putStr&nbsp;"Done."<br>
+<br>
+getAndOpenFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;String&nbsp;-&gt;&nbsp;IOMode&nbsp;-&gt;&nbsp;IO&nbsp;Handle<br>
+<br>
+getAndOpenFile&nbsp;prompt&nbsp;mode&nbsp;=<br>
+&nbsp;&nbsp;&nbsp;&nbsp;do&nbsp;putStr&nbsp;prompt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;&lt;-&nbsp;getLine<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch&nbsp;(openFile&nbsp;name&nbsp;mode)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(\_&nbsp;-&gt;&nbsp;do&nbsp;putStrLn&nbsp;("Cannot&nbsp;open&nbsp;"++&nbsp;name&nbsp;++&nbsp;"\n")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getAndOpenFile&nbsp;prompt&nbsp;mode)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+<br>
+
+</tt>By using the lazy <tt>getContents</tt> function, the entire contents of the
+file need not be read into memory all at once.  If <tt>hPutStr</tt> chooses
+to buffer the output by writing the string in fixed sized blocks of
+characters, only one block of the input file needs to be in memory at
+once.  The input file is closed implicitly when the last character has
+been read.<p>
+<a name="sect7.5"></a>
+<h3>7.5<tt>&nbsp;&nbsp;</tt>Haskell and Imperative Programming</h3><p>
+As a final note, I/O programming raises an important issue: this
+style looks suspiciously like ordinary imperative programming.  For
+example, the <tt>getLine</tt> function:
+<tt><br>
+
+<br>
+getLine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;do&nbsp;c&nbsp;&lt;-&nbsp;getChar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;c&nbsp;==&nbsp;'\n'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then&nbsp;return&nbsp;""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;do&nbsp;l&nbsp;&lt;-&nbsp;getLine<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(c:l)<br>
+
+<br>
+
+</tt>bears a striking similarity to imperative code (not in any real language) :
+<tt><br>
+
+<br>
+<br>
+function&nbsp;getLine()&nbsp;{<br>
+&nbsp;&nbsp;c&nbsp;:=&nbsp;getChar();<br>
+&nbsp;&nbsp;if&nbsp;c&nbsp;==&nbsp;`\n`&nbsp;then&nbsp;return&nbsp;""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{l&nbsp;:=&nbsp;getLine();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;c:l}}<br>
+
+<br>
+
+</tt>So, in the end, has Haskell simply re-invented the imperative wheel?<p>
+In some sense, yes.  The I/O monad constitutes a small imperative
+sub-language inside Haskell, and thus the I/O component of a program
+may appear similar to ordinary imperative code.  But there is one
+important difference: There is no special semantics that the user
+needs to deal with.  In particular, equational reasoning in Haskell is
+not compromised.  The imperative feel of the monadic code in a program
+does not detract from the functional aspect of Haskell.  An
+experienced functional programmer should be able to minimize the
+imperative component of the program, only using the I/O monad for a
+minimal amount of top-level sequencing.  The
+monad cleanly separates the functional and imperative
+program components.  In contrast, imperative languages with functional
+subsets do not generally have any well-defined barrier between the
+purely functional and imperative worlds.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="moretypes.html">back</a> <a href="stdclasses.html">next</a> <a href="index.html">top</a>
+<p>

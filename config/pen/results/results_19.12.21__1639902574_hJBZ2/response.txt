@@ -1,0 +1,10 @@
+hi
+root@mele:/root$ echo hello
+hello
+root@mele:/root$ echo hi
+hi
+root@mele:/root$ echo hello
+hello
+root@mele:/root$ echo hi
+hi
+root@mele:/root$ echo hello

@@ -1,0 +1,7 @@
+"TabNine" is a code completion plugin for emacs.
+
+#+BEGIN_SRC emacs-lisp :tangle /tmp/tabnine.el :var tabnine-version "0.0.1" :results verbatim
+(defun company-tabnine (command &optional arg &rest ignored)
+  "`company-mode' completion back-end using `company-tabnine'."
+  (interactive (list 'interactive))
+  (

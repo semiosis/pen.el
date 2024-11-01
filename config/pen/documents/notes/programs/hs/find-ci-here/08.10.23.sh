@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/KSneijders/AoE2ScenarioParser/AoE2ScenarioParser/objects/managers;  "find-ci-here" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/KSneijders/AoE2ScenarioParser;  "find-ci-here" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "find-ci-here" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/KSneijders/AoE2ScenarioParser;  "find-ci-here" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/KSneijders/AoE2ScenarioParser/AoE2ScenarioParser/datasets/sources;  "find-ci-here" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/crates/genie-cpx/src;  "find-ci-here" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/crates/genie-cpx;  "find-ci-here" "#" "<==" "bash"
+cd /root/repos/tmux/tmux;  "find-ci-here" "#" "<==" "bash"

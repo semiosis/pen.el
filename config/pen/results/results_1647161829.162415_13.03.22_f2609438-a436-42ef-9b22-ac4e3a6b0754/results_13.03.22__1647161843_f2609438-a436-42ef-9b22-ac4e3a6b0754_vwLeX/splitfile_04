@@ -1,0 +1,46 @@
+ialization(main).
+
+:- initialization(main).
+
+:- use_module(library(prolog_sys)).
+:- use_module(library(write)).
+:- use_module(library(dynamic)).
+:- use_module(library(strings)).
+:- use_module(library(lists)).
+:- use_module(library(between)).
+:- use_module(library(aggregates)).
+:- use_module(library(sort)).
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# prolog files

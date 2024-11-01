@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "https://www.gnu.org/software/emacs/manual/html_node/elisp/Standard-Hooks.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "https://www.gnu.org/software/emacs/manual/html_node/elisp/Standard-Hooks.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "https://www.gnu.org/software/emacs/manual/html_node/elisp/Standard-Hooks.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "https://www.gnu.org/software/emacs/manual/html_node/elisp/Standard-Hooks.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "https://www.gnu.org/software/emacs/manual/html_node/elisp/Standard-Hooks.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "-dump-width" "120" "--no-numbering" "--dump" "https://www.gnu.org/software/emacs/manual/html_node/elisp/Standard-Hooks.html" "#" "<==" "pen-ci"

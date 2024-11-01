@@ -1,0 +1,14 @@
+.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-elpa.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-package.el
+EOD
+
+cat draft.emacs-lisp <<EOD
+init-theme.el
+EOD

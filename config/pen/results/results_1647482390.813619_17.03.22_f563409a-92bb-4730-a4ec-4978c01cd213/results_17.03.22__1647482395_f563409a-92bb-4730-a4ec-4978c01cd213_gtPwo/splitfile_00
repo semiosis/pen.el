@@ -1,0 +1,6 @@
+pf-quick-fix-code/1 (arg)
+  (let ((symbol (thing-at-point 'symbol)))
+    (save-excursion
+      (let ((re-string (concat "\\($\\|\s\\|\\[\\ ()
+  (interactive)
+  (let ((pf (fz pen-common-prompt-functions nil nil "Common prompt function: ")))

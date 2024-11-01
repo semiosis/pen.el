@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Matthew" "11:11-13" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Matthew" "11" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "5:17-20" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "19:7-12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "19:7" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "19:7-8" "#" "<==" "zsh"

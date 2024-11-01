@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: filename from argument
+# key: fp
+# --
+argsWithProg := os.Args
+argsWithoutProg := os.Args[1:]
+
+var fp string
+if len(os.Args) == 2 {
+fp = os.Args[1]
+} else {
+fp = "./dump.json"
+}
+
+file, e := ioutil.ReadFile(fp)

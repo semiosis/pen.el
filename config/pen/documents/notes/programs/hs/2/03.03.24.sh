@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "2" "Timothy" "3:15" "#" "<==" "bash"
+cd /;  "2" "Tim" "2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "2" "Corinthians" "5:21" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "2" "Corinthians" "5:21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "2" "Corinthians" "5:21" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "2" "Corinthians" "2:12" "#" "<==" "bash"

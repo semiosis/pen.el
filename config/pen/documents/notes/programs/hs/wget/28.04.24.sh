@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=49JgVR30bLA" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=hbB2K7YP4zE" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=6_REv82Ogf8" "#" "<==" "pen-ci"
+cd /root/programs;  "wget" "https://github.com/latex-lsp/texlab/releases/download/v5.15.0/texlab-x86_64-linux.tar.gz" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://en.wikipedia.org/wiki/Nazarene_(sect)" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=LNZ-ZBsPpgk" "#" "<==" "pen-ci"

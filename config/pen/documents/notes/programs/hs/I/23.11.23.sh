@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "I" "John" "4:4" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "I" "John" "4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "I" "John" "4" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "I" "John" "2:4" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "I" "John" "2" "#" "<==" "zsh"

@@ -1,0 +1,16 @@
+"""
+
+# create a list of words in the poem.
+text_list = text.split()
+
+for n, i in enumerate(text_list):
+	text_list[n] = i.strip(",.-!?")
+
+# Use encoding to make sure that special latin characters are also included.
+text_tuples = nltk.pos_tag(text_list, lang='eng', tagset='universal')
+# Remove stopwords and punctuation marks.
+text_tuples = [(a, b) for a, b in text_tuples if (a.lower() not in stops) and (b != ".") and (b != ",")]
+
+
+for item in text_tuples:  # Format output as words/POS tags instead of just words or POS tags.
+	print('{0: <12}'.format(item[0]) + "/" + '

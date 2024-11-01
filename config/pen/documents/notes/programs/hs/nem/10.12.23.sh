@@ -1,0 +1,5 @@
+cd /root/notes/ws/bible-studies;  "nem" "bible-search" "eternal life" "#" "<==" "pen-ci"
+cd /root/notes/ws/bible-studies;  "nem" "bible-search" "where I am" "#" "<==" "pen-ci"
+cd /root/notes/ws/bible-studies;  "nem" "bible-search" "worshipped God" "#" "<==" "pen-ci"
+cd /root/notes/ws/bible-studies;  "nem" "bible-search" "worshiped God" "#" "<==" "pen-ci"
+cd /root/notes/ws/bible-studies;  "nem" "bible-search" "time has come" "#" "<==" "pen-ci"

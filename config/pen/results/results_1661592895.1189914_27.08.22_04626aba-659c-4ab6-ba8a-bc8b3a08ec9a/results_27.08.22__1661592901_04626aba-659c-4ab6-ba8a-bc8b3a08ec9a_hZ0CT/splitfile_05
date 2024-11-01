@@ -1,0 +1,8 @@
+
+  let maxWidths = maximumBy (compare `on` length) rows
+  mapM_ (\row -> do
+    mapM_ (\(x, w) -> putStrLn $ x ++ replicate w ' ') zip row maxWidths
+  ) rows
+EOD
+
+cat draft.haskell | ghci -e "main" > output.csv

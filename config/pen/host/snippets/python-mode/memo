@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: memo
+# group: memoization
+# key: memo
+# --
+@lru_cache(maxsize=None)

@@ -1,0 +1,16 @@
+|
+    awk '{
+      if ($1 == "print") {
+        print $2;
+      } else if ($1 == "exit") {
+        exit;
+      } else {
+        print "Syntax error";
+      }
+    }'
+#+END_SRC
+#+RESULTS: verbatim code
+
+  * TODO Implement a linter with Codex
+
+  * TODO Write a blog post about the linter with

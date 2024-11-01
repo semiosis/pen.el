@@ -1,0 +1,14 @@
+CRC-MACHINE-CLI(1)                     User Commands                    CRC-MACHINE-CLI(1)
+
+NAME
+       crc-machine-cli - CRC-MACHINE-CLI(1)
+
+SYNOPSIS
+       crc-machine-cli [OPTION]... [FILE]...
+
+DESCRIPTION
+       crc-machine-cli is a command line interface to the CRC-MACHINE-CLI(1)
+       program.
+
+OPTIONS
+       --help

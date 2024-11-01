@@ -1,0 +1,683 @@
+Monotone-Increasing Quantifier
+    A monotone increasing quantifier, like
+    `most`, is `monotone increasing` beacuse
+    when the predicate in the body of the
+    quantified expression is made less
+    restrictive, the truth value is preserved.
+
+    Thus,
+
+        Most men work hard.
+
+    entails:
+
+        Most men work,
+
+Monotone-Decreasing Quantifier
+    By contrast, for monotone decreasing
+    quantifiers, when the predicate in the
+    body of the quantified expression is made
+    less restrictive, the truth value is not
+    necessarily preserved. Quite the opposite.
+    It is preserved when the body is made more
+    restrictive.
+
+        Few men work.
+
+    entails:
+
+        Few men work hard.
+
+    Since `x works hard` entails `x works`, a
+    flat, scope-free representation for `few
+    men work hard` runs into problems, because
+    it would seem to allow the incorrect
+    inference `few men work`.
+
+monotonicity
+    https://sodocumentation.net/prolog/topic/3989/monotonicity
+
+logical purity
+pure
+    At the heart of each great Prolog program
+    is a property we call logical purity or
+    simply purity.
+    
+    Informally, this means that the program
+    has the properties we expect from a
+    relation.
+
+    https://www.metalevel.at/prolog/purity
+
+module
+    Can only be used as the first term of a
+    source file.
+
+    The second parameter is PublicList; It's a
+    list of predicate indicators (name/arity
+    or name//arity pairs) or operator
+    declarations using the format
+    op(Precedence, Type, Name), which are
+    available outside the module.
+
+    Example:
+      :- module(birds, [solve/0]).
+
+repeat
+    Use repeat to make an infinite number of
+    choice points here's repeat used to make
+    an interactive top loop.
+
+    https://asciinema.org/a/Rea5hlrgCQtS3Z7Jzr6v8GVv4
+
+        interactive_loop:-
+          repeat,
+          write('Enter command and . (type end. to exit): '),
+          read(X),
+          write(X), nl,
+          % usually we'd do something to parse here
+          X = end.
+
+mfs
+discontiguous
+    % Clauses are not bunched together in one place.
+    % They may be scattered across the file
+    :- discontiguous bird/1, wings/1.
+
+maplist
+    In this example, same_length takes 2
+    arguments.
+
+    Rows is a list of lists.
+
+    This is asserting that both dimension
+    sizes of the 2D Rows are equal:
+
+        maplist(same_length(Rows), Rows)
+
+append
+    First arg is list of lists and 2nd arg is
+    a list which is the flattened 1D
+    represesntation of the former.
+
+    Example:
+
+        % Make rows 1D and store in Vs. Assert
+        % that all values lie within the range
+        % 1..9.
+        append(Rows, Vs), Vs ins 1..9,
+
+transpose
+    This does a 2D matrix transpose.
+
+    When imagining the other value, picture
+    the square is unchanged (cells in the same
+    position), the first argument is the
+    square divided into rows and the second is
+    square divided into columns.
+
+    In the example, when picturing Ts, imagine
+    the square is unchanged but is divided
+    into Columns instead of rows.
+
+    https://www.swi-prolog.org/pldoc/man?predicate=transpose/2
+
+    Example:
+
+        transpose(Rows, Columns),
+
+        ?- transpose([[1,2,3],[4,5,6],[7,8,9]], Ts).
+        Ts = [[1, 4, 7], [2, 5, 8], [3, 6, 9]].
+
+backward chaining
+backward reasoning
+backward induction
+retrograde analysis
+    An inference method described colloquially
+    as working backward from the goal.
+    
+    It is used in automated theorem provers,
+    inference engines, proof assistants, and
+    other artificial intelligence
+    applications.
+    
+    In game theory, researchers apply it to
+    (simpler) subgames to find a solution to
+    the game, in a process called backward
+    induction.
+    
+    In chess, it is called retrograde
+    analysis, and it is used to generate table
+    bases for chess endgames for computer
+    chess.
+    
+    Backward chaining is implemented in logic
+    programming by SLD resolution.
+    
+    Both rules are based on the modus ponens
+    inference rule.
+    
+    It is one of the two most commonly used
+    methods of reasoning with inference rules
+    and logical implications – the other is
+    forward chaining.
+    
+    Backward chaining systems usually employ a
+    depth-first search strategy, e.g. Prolog.
+
+SLD resolution
+Selective Linear Definite clause resolution
+    The basic inference rule used in logic
+    programming.
+    
+    It is a refinement of resolution, which is
+    both sound and refutation complete for
+    Horn clauses.
+
+global constraint
+    https://www.swi-prolog.org/pldoc/man?section=clpfd-global
+
+pattern matching
+    https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc481/lecture-notes/ln481-012.pdf
+
+    Example:
+        % excess/1
+        excess(Limit) :- excess([skis,boots,helmet,gloves],Limit). % all possible items
+        % excess/2
+        excess([],Limit) :- Limit<0.
+        excess([I|R],Limit) :- pack(I), weight(I,W), L is Limit-W, excess(R,L).
+        excess([I|R],Limit) :- \+pack(I), excess(R,Limit).
+
+goal
+    Something that Prolog tries to satisfy by
+    finding values of the variables (in this
+    case Student and Subject ) that make the
+    goal succeed.
+    
+    These value(s) are then said to be bound
+    to the variable(s).
+    
+    If Prolog is unable to do this, the goal
+    fails (and Prolog will print "false" in
+    response to the query).
+
+is
+    http://www.cse.unsw.edu.au/~billw/dictionaries/prolog/is.html
+
+    The is built-in predicate is used in
+    Prolog to force the evaluation of
+    arithmetic expressions. If you just write
+    something like X = 2 + 4, the result is to
+    bind X to the unevaluated term 2 + 4, not
+    to 6.
+
+    Example:
+         ?- X = 2 + 4.
+         X = 2+4
+
+    If instead you write X is 2 + 4, Prolog
+    arranges for the second argument, the
+    arithmetic expression 2 + 4, to be
+    evaluated (giving the result 6) before
+    binding the result to X.
+
+         ?- X is 2 + 4.
+         X = 6
+
+    A common mistake, for people used to
+    procedural programming languages like C
+    and Java, is to try to change the binding
+    of a variable by using an goal like N is N
+    + 1. This goal will never succeed, as it
+    requires N to have the same value as N +
+    1, which is impossible. 
+
+not
+not provable
+\+
+    Because of the problems of
+    negation-as-failure, negation in Prolog is
+    represented in modern Prolog interpreters
+    using the symbol \+, which is supposed to
+    be a mnemonic for not provable with the \
+    standing for not and the + for provable. 
+
+    http://www.cse.unsw.edu.au/~billw/dictionaries/prolog/negation.html#:~:text=Because%20of%20the%20problems%20of,not%20and%20the%20%2B%20for%20provable.
+
+    not
+        The older operator.
+
+quoted text
+string
+    Prolog defines two forms of quoted text.
+    
+    Traditionally, single quoted text is
+    mapped to atoms while double quoted text
+    is mapped to a list of character codes
+    (integers) or characters (atoms of length
+    1).
+
+    Example:
+    - 'Shane'
+    - "Shane"
+      - This is mapped to [S,h,a,n,e]
+
+listing
+    List matching clauses. What is either a
+    plain specification or a list of
+    specifications.
+
+cut
+    The cut, in Prolog, is a goal, written as
+    !, which always succeeds, but cannot be
+    backtracked.
+    
+    It is best used to prevent unwanted
+    backtracking, including the finding of
+    extra solutions by Prolog and to avoid
+    unnecessary computations.
+    
+    The cut should be used sparingly.
+
+    https://www.youtube.com/watch?v=SykxWpFwMGs
+    47:45
+
+    e:$HOME/var/smulliga/source/git/mullikine/prolog-examples/cuttutorial.pl
+
+Green cut
+    [cut]
+
+    A use of a cut which only improves
+    efficiency is referred to as a green cut.
+    
+    Green cuts are used to make programs more
+    efficient without changing program output.
+    
+    For example:
+     gamble(X) :- gotmoney(X),!.
+     gamble(X) :- gotcredit(X), \+ gotmoney(X).
+
+    This is called a green cut operator.
+    
+    The ! tells the interpreter to stop
+    looking for alternatives; however, if
+    gotmoney(X) fails it will check the second
+    rule.
+    
+    Although checking for gotmoney(X) in the
+    second rule may appear redundant since
+    Prolog's appearance is dependent on
+    gotmoney(X) failing before, otherwise the
+    second rule would not be evaluated in the
+    first place.
+    
+    Adding \+ gotmoney(X) guarantees that the
+    second rule will always work, even if the
+    first rule is removed by accident or
+    changed, or moved after the second one.
+
+Red cut
+    [cut]
+
+    A cut that is not a green cut is referred
+    to as a red cut, for example:
+     gamble(X) :- gotmoney(X),!.
+     gamble(X) :- gotcredit(X).
+
+    Proper placement of the cut operator and
+    the order of the rules is required to
+    determine their logical meaning.
+    
+    If for any reason the first rule is
+    removed (e.g.
+    
+    by a cut-and-paste accident) or moved
+    after the second one, the second rule will
+    be broken, i.e., it will not guarantee the
+    rule \+ gotmoney(X).
+
+structure
+    An object that is made up of many other
+    objects or components.
+
+    Structures are going to allow us to add
+    context about what an object is to avoid
+    confusion.
+
+Contextual Logic Programming
+CxLP
+    http://ceur-ws.org/Vol-287/paper_10.pdf
+
+foreign predicate
+    https://www.swi-prolog.org/pldoc/man?section=foreign-register-predicate
+
+    Uses the FFI.
+
+=:=
+    [operator]
+
+    Expr1 =:= +Expr2
+
+    True if expression Expr1 evaluates to a
+    number equal to Expr2.
+
+    Example:
+        1 =:= sin(pi/2).
+
+term
+    https://www.metalevel.at/prolog/data
+
+    Each term is either:
+    - a variable,
+    - an atomic term or
+    - a compound term.
+
+help.
+    [query]
+
+    Show help.
+
+    x -sh swipl -e "?-" -s help. -c m -i
+
+halt.
+    [query]
+
+    Exit swipl.
+
+pwd.
+    [query]
+
+    See your active directory.
+
+cd('/home/shane').
+    [query]
+
+    Set your active directory.
+
+constraint logic programming
+CLP
+    https://youtu.be/G_eYTctGZw8?t=1394
+
+    A form of constraint programming, in which
+    logic programming is extended to include
+    concepts from constraint satisfaction.
+
+    A constraint logic program is a logic
+    program that contains constraints in the
+    body of clauses.
+
+clpfd
+CLP(FD)
+    https://www.swi-prolog.org/pldoc/doc/_SWI_/library/clp/clpfd.pl
+
+declarative reading
+concluding reading
+    [prolog reading method]
+
+    https://www.metalevel.at/prolog/reading
+
+    Declaratively, Prolog programs state what
+    holds.
+
+    A Prolog program consists of clauses, and
+    each clause is either a fact or a rule.
+
+    Facts state what is always true.
+
+    Rules state what is true under certain
+    conditions.
+
+    A method to reading/understanding prolog
+    programs.
+
+    It is easy to explain, understand and use.
+
+    You state what holds under what
+    conditions, and the Prolog engine finds
+    solutions for you.
+
+    A disadvantage of this approach is that it
+    does not explain why logically equivalent
+    program variants may exhibit different
+    performance or termination
+    characteristics.
+
+procedural reading
+    [prolog reading method]
+
+    https://www.metalevel.at/prolog/reading
+
+    To complement the declarative approach of
+    reading Prolog programs, we can also read
+    them procedurally.
+    
+    This means that we take into account the
+    actual computation strategy of the Prolog
+    engine.
+
+clause
+    A unit of information in a Prolog program
+    ending with a full stop (".").
+
+    Either:
+    - fact/unit clause
+    - rule
+
+    Examples:
+        % Unit clause
+        factorial(0,1).
+
+        % Rule
+        factorial(N,F) :-
+           N>0,
+           N1 is N-1,
+           factorial(N1,F1),
+           F is N * F1.
+
+fact
+unit clause
+    State what is always true.
+
+    Does not have a body.
+
+body
+    The part that comes after :- in a rule.
+
+program
+    Consists of:
+    - theorems
+    - axioms
+
+rule
+theorem
+    State what is true under certain
+    conditions. 
+
+axiom
+assertion
+
+condition
+
+Prolog
+    Extremely well suited for solving
+    combinatorial tasks like Sudoku.
+
+    https://www.metalevel.at/sudoku/
+
+predicate
+    [#prolog]
+
+    vimlinks +/"magicNumber(7)." "https://learnxinyminutes.com/docs/prolog/"
+
+assignment
+    [#prolog]
+    [operator]
+
+    5 is X+2.
+
+    Unlike =, the right hand side of IS must
+    always be bound, thus guaranteeing no
+    attempt to solve an equation.
+
+unification
+    [#prolog]
+    [operator]
+
+    Essentially a combination of assignment
+    and equality.
+
+    vimlinks +/"?- 2 = 3." "https://learnxinyminutes.com/docs/prolog/"
+
+    If both sides are bound (ie, defined),
+    check equality.
+    2 = 3
+
+    IMPORTANT (the essence of unification):
+    If one side is free (ie, undefined),
+    assign to match the other side.
+    X = 3
+
+    If both sides are free, the assignment is
+    remembered. With some luck, one of the two
+    sides will eventually be bound, but this
+    isn't necessary.
+    X = Y are both free, so Prolog remembers
+    it. Therefore assigning X will also assign
+    Y. IS is another assigment operator in prolog.
+    X = Y, X = 2, Z is Y + 3.
+
+    See:
+        vim +/"modus ponens" "$NOTES/ws/logic/glossary.txt"
+
+member
+    [predicate]
+
+    Fundamental Prolog tool for manipulating
+    lists.
+
+->
+    :Condition -> :Action
+
+    If -> Then; _Else :- If, !, Then.
+
+    X == Y -> write(X).
+
+    If X equals Y then write X to the
+    terminal.
+
+[]
+    [atom]
+    [list]
+
+    A list, denoting the empty list.
+    
+clean
+    When representing data with Prolog terms,
+    ask yourself the following question:     
+    - Can I distinguish the kind of each
+      component from its principal functor? 
+    
+    If this holds, your representation is
+    called clean.
+
+defaulty
+    If you cannot distinguish the elements by
+    their principal functor, your
+    representation is called defaulty.
+
+    A wordplay combining "default" and
+    "faulty".
+    
+    This is because reasoning about your data
+    will need a "default case", which is
+    applied if everything else fails.
+    
+    In addition, such a representation
+    prevents argument indexing, and is
+    considered faulty due to this shortcoming.
+    
+    Always aim to avoid defaulty
+    representations! Aim for cleaner
+    representations instead 
+
+standard operators
+    Several standard operators are predefined.
+
+    For example, you can write a+b and X=Y
+    instead of +(a,b) and =(X,Y),
+    respectively. 
+
+principal functor
+    Compound terms are defined inductively as
+    follows:
+
+    If T1, T2, ..., TN are terms, then F(T1,
+    T2, ..., TN) is also a term, where F is
+    called a functor name and adheres to the
+    same syntax rules as atoms.
+
+    F/N is called the principal functor of the
+    compound term, and N is called the arity.
+
+    Examples:
+    - f(a), g(f(X)) and
+    - + (a, f(X)).
+
+list
+    ewwlinks +/"^Lists are defined inductively: " "https://www.metalevel.at/prolog/data"
+
+mutation
+destructive modifications
+    Alien to logic programming.
+    
+    In Prolog, we describe relations between
+    entities, not destructive effects.
+    
+    To express a change in a Prolog data
+    structure, we define a predicate that
+    relates the state of the structure before
+    the change to a different structure after
+    the change.
+    
+    For this reason, pure modifications often
+    entail some copying of data and typically
+    lead to at least logarithmic overhead (for
+    example, to copy a subtree of a balanced
+    tree)
+
+argument indexing
+    The above is a clean representation: It
+    lets us distinguish the kinds of elements
+    by their principal functor.
+    
+    We can reason about such trees in a way
+    that keeps the code very general and
+    usable in all directions.
+    
+    Such a representation is also amenable to
+    argument indexing. 
+
+Term inspection
+    In Prolog, the most natural way to reason
+    about terms is to rely on unification.
+    
+    In addition, there are several predicates
+    that let you decompose and analyze terms.
+    
+    The most important of these term
+    inspection predicates are functor/3, arg/3
+    and (=..)/2 
+
+macro
+    Code is more than data.
+
+    Macros are a lot easier to write in Prolog
+    for several reasons.
+    
+    For example, you do not have to quote
+    Prolog code when reasoning about it or
+    generating it, and you cannot accidentally
+    run into name clashes with different
+    variables
+
+    https://www.metalevel.at/prolog/macros

@@ -1,0 +1,612 @@
+* Mu and Micro sign are almost identical.
+μ
+µ
+
+unicode "µ"
+unicode "μ"
+
+* 
+https://www.gotquestions.org/Lion-and-the-Lamb.html
+
+* 
+https://www.gtf.io/musings/why-haskell
+
+* 
+https://baptiststudiesonline.com/wp-content/uploads/2007/02/orthodox-creed.pdf
+
+* 
+https://wiki.tcl-lang.org/page/Tcl+Gems
+
+* 
+https://www.gotquestions.org/Bible-rape.html
+
+* 
+http://yummymelon.com/devnull/contextual-interfaces-in-casual-calc.html
+
+* 
+https://uniting.church/ourfaith/
+
+* 
+[[https://www.youtube.com/watch?v=N2aJ1q-SBr4][youtube.com: Let the Bible Smash Your Bad Theology]]
+[[https://www.youtube.com/watch?v=Xl4Xr7tAZPA][youtube.com: watch?v=Xl4Xr7tAZPA]]
+
+* 
+https://www.biblegateway.com/passage/?search=Acts%204&version=NIV
+
+* Listen to the Pilgrim's Progress, I guess. This is a good idea
+[[https://www.youtube.com/watch?v=36mSsYUAGoE][youtube.com: Pilgrim's Progress - Puritan John Bunyan / Full Classic Christian Audiobook]]
+
+#+BEGIN_QUOTE
+  *Matthew 7:13-14* - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. (ESV)
+#+END_QUOTE
+
+I should listen to this and take notes.
+Summarize little bits at a time.
+
+** Also, Don sugested
+
+The Holy War - Novel by John Bunyan
+
+** Pilgrim's Progress notes
+
+- "What should I do?"
+  - I'm undone because of this burden which lies heavily upon me.
+
+* 
+https://www.star.net.nz/the-word-for-today/-learn-to-listen-to-your-mate-2024_06_06
+
+* 
+- https://emdros.org/proventechnology.html
+- https://www.billposer.org/Linguistics/Computation/LectureNotes/Concordances.html
+- https://frdcsa.org/visual-aid/pdf/existing-capabilities.pdf
+
+* This looks interesting
+https://fathersofmercy.com/extraordinary-jubilee-year-of-mercy-pope-francis-jubilee-year-of-mercy-extraordinary-jubilee-year-of-mercy-mercy-fourteen-works-of-mercy-fourteen-corporal-works-of-mercy-fourteen-spiritual-work/
+
+* 
+http://hymnbook.igracemusic.com/hymns/i-asked-the-lord
+
+* 
+https://thekingdomglow.life/seeking-salvation/
+
+* 
+https://en.wikipedia.org/wiki/Polyatomic_ion
+
+* 
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  Pr 11:18: The wicked earns deceptive wages, but one who sows righteousness gets a sure reward.
+  Pr 13:13: Whoever despises the word brings destruction on himself, but he who reveres the commandment will be rewarded.
+  Pr 13:21: Disaster pursues sinners, but the righteous are rewarded with good.
+  Pr 22:4: The reward for humility and fear of the Lord is riches and honor and life.
+  Ps 18:20: The Lord dealt with me according to my righteousness; according to the cleanness of my hands he rewarded me.
+  Ps 18:24: So the Lord has rewarded me according to my righteousness, according to the cleanness of my hands in his sight.
+  Ps 28:4: Give to them according to their work and according to the evil of their deeds; give to them according to the work of their hands; render them their due reward.
+  Ps 58:11: Mankind will say, Surely there is a reward for the righteous; surely there is a God who judges on earth.
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  Pr 22:16: Whoever oppresses the poor to increase his own wealth, or gives to the rich, will only come to poverty.
+  Pr 21:26: All day long he craves and craves, but the righteous gives and does not hold back.
+  Pr 11:24: One gives freely, yet grows all the richer; another withholds what he should give, and only suffers want.
+#+END_SRC
+
+* Rust
+https://rust-exercises.com/
+
+* Common lisp
+https://www.tfeb.org/fragments/2024/05/15/an-iteration-construct-for-common-lisp/
+
+* 
+#+BEGIN_QUOTE
+  *Amos 9:11* - In that day I will raise up the booth of David that is fallen and repair its breaches, and raise up its ruins and rebuild it as in the days of old, (ESV)
+#+END_QUOTE
+
+* Spirit of the Lord
+** Freedom
+#+BEGIN_QUOTE
+  *II Corinthians 3:17* - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
+#+END_QUOTE
+
+* The royalty spoken of here simply means we are a people for God's possession
+#+BEGIN_QUOTE
+  *I Peter 2:9* - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Exodus 19:5-6* - Now therefore, if you will indeed obey my voice and keep my covenant, you shall be my treasured possession among all peoples, for all the earth is mine; and you shall be to me a kingdom of priests and a holy nation. These are the words that you shall speak to the people of Israel. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Deuteronomy 7:6* - For you are a people holy to the LORD your God. The LORD your God has chosen you to be a people for his treasured possession, out of all the peoples who are on the face of the earth. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Revelation of John 1:6* - and made us a kingdom, priests to his God and Father, to him be glory and dominion forever and ever. Amen. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Revelation of John 5:10* - and you have made them a kingdom and priests to our God, and they shall reign on the earth. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Isaiah 61:6* - but you shall be called the priests of the LORD; they shall speak of you as the ministers of our God; you shall eat the wealth of the nations, and in their glory you shall boast. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *II Timothy 1:9* - who saved us and called us to a holy calling, not because of our works but because of his own purpose and grace, which he gave us in Christ Jesus before the ages began, (ESV)
+#+END_QUOTE
+
+This one describes it well:
+
+#+BEGIN_QUOTE
+  *Deuteronomy 26:18-19* - And the LORD has declared today that you are a people for his treasured possession, as he has promised you, and that you are to keep all his commandments, and that he will set you in praise and in fame and in honor high above all nations that he has made, and that you shall be a people holy to the LORD your God, as he promised. (ESV)
+#+END_QUOTE
+
+We are supposed to live holy lives:
+
+#+BEGIN_QUOTE
+  *Ephesians 5:8-11* - for at one time you were darkness, but now you are light in the Lord. Walk as children of light (for the fruit of light is found in all that is good and right and true), and try to discern what is pleasing to the Lord. Take no part in the unfruitful works of darkness, but instead expose them. (ESV)
+#+END_QUOTE
+
+We are supposed to be zealous for good works:
+
+#+BEGIN_QUOTE
+  *Titus 2:14* - who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+#+END_QUOTE
+
+We are supposed to offer spiritual sacrifices acceptable to God through Jesus Christ:
+
+#+BEGIN_QUOTE
+  *I Peter 2:5* - you yourselves like living stones are being built up as a spiritual house, to be a holy priesthood, to offer spiritual sacrifices acceptable to God through Jesus Christ. (ESV)
+#+END_QUOTE
+
+We receive a place among those who are sanctified by faith in Jesus Christ:
+
+#+BEGIN_QUOTE
+  *Acts 26:18* - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
+#+END_QUOTE
+
+We are a righteous nation that keeps faith in God:
+
+#+BEGIN_QUOTE
+  *Isaiah 26:2* - Open the gates, that the righteous nation that keeps faith may enter in. (ESV)
+#+END_QUOTE
+
+Reigning priests of God and Christ;
+
+#+BEGIN_QUOTE
+  *Revelation of John 20:6* - Blessed and holy is the one who shares in the first resurrection! Over such the second death has no power, but they will be priests of God and of Christ, and they will reign with him for a thousand years. (ESV)
+#+END_QUOTE
+
+We are to give glory to Father God in heaven:
+
+#+BEGIN_QUOTE
+  *Matthew 5:16* - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. (ESV)
+#+END_QUOTE
+
+The kingdom belongs to Christ:
+
+#+BEGIN_QUOTE
+  *Colossians 1:13* - He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son, (ESV)
+#+END_QUOTE
+
+We are overseers to care for the church of God:
+
+#+BEGIN_QUOTE
+  *Acts 20:28* - Pay careful attention to yourselves and to all the flock, in which the Holy Spirit has made you overseers, to care for the church of God, which he obtained with his own blood. (ESV)
+#+END_QUOTE
+
+* Church's Lambda calculus
+http://www.cs.cmu.edu/~rwh/pfpl/supplements/ulc.pdf
+
+* Chemistry PDFs
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  cd "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-cerritos-edu-chemistry-"; tp find-here-path "*.pdf*" | pavs
+#+END_SRC
+
+** TODO Make a report in org-mode/Latex
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  z www.cerritos.edu/chemistry/chem_212/Documents/Lab/How to write a lab report.pdf
+#+END_SRC
+
+* 
+https://www.star.net.nz/the-word-for-today/your-personal-guide-2024_04_12
+
+* Ireland
+https://worksinprogress.co/issue/why-irelands-housing-bubble-burst/
+
+* Learn languages
+** Irish
+https://www3.smo.uhi.ac.uk/gaeilge/donncha/focal/features/irishsp.html
+
+[[https://www.youtube.com/watch?v=PJqk-d84jK0][How to read Irish - YouTube]]
+
+** Hebrews
+[[https://www.youtube.com/watch?v=tk1njVL723w][Learn How to Read Hebrew in ONE HOUR! Hebrew Jump Start by Rabbi Stuart Federow 1510 - YouTube]]
+
+* 
+https://boxbase.org/entries/2020/may/18/diy-io-monad/
+
+* Yes, because of what Jesus did on the cross, the Holy Spirit is convincing me of righteousness
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 16:8-13
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+John 16:8-13
+‾‾‾‾‾‾‾‾‾‾‾‾
+And when he comes, he will convict the world
+concerning sin and righteousness and judgment:
+concerning sin, because they do not believe in
+me; concerning righteousness, because I go to
+the Father, and you will see me no longer;
+concerning judgment, because the ruler of this
+world is judged.
+
+I still have many things to say to you, but
+you cannot bear them now.
+
+When the Spirit of truth comes, he will guide
+you into all the truth, for he will not speak
+on his own authority, but whatever he hears he
+will speak, and he will declare to you the
+things that are to come.
+
+(ESV)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Hebrews 8:10-13
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Hebrews 8:10-13
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+For this is the covenant that I will make with
+the house of Israel after those days, declares
+the Lord: I will put my laws into their minds,
+and write them on their hearts, and I will be
+their God, and they shall be my people.
+
+And they shall not teach, each one his
+neighbor and each one his brother, saying,
+Know the Lord, for they shall all know me,
+from the least of them to the greatest.
+
+For I will be merciful toward their
+iniquities, and I will remember their sins no
+more.
+
+In speaking of a new covenant, he makes the
+first one obsolete.
+
+And what is becoming obsolete and growing old
+is ready to vanish away.
+
+(ESV)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Hebrews 10:15-17
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Hebrews 10:15-17
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+And the Holy Spirit also bears witness to us;
+for after saying, This is the covenant that I
+will make with them after those days, declares
+the Lord: I will put my laws on their hearts,
+and write them on their minds, then he adds, I
+will remember their sins and their lawless
+deeds no more.
+
+(ESV)
+#+end_src
+
+* Be a sheep of Jesus
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  🐑🐑🐑 
+#+END_SRC
+
+* 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Psalms 81:3
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Psalms 81:3
+‾‾‾‾‾‾‾‾‾‾‾
+Blow the trumpet at the new moon, at the full
+moon, on our feast day.
+
+(ESV)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Isaiah 66:23
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Isaiah 66:23
+‾‾‾‾‾‾‾‾‾‾‾‾
+From new moon to new moon, and from Sabbath to
+Sabbath, all flesh shall come to worship
+before me, declares the LORD.
+
+(ESV)
+#+end_src
+
+* 
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  sed '
+    /\\begin{alltt}/,/\\end{alltt}/{
+      /~/ {
+        h; # save a copy
+        s/\(~\{1,\}\).*/\1/; # remove everything after the first sequence of ~s
+        s/~/ /g; # replace ~s with spaces
+        G; # append the saved copy
+        s/\n[^~]*~*//; # retain only what's past the first sequence of ~s
+                       # from the copy
+      }
+    }'
+#+END_SRC
+
+* 
+#+BEGIN_QUOTE
+  *James 1:21-22* - Therefore put away all filthiness and rampant wickedness and receive with meekness the implanted word, which is able to save your souls. But be doers of the word, and not hearers only, deceiving yourselves. (ESV)
+#+END_QUOTE
+
+* 
+https://www.buildtobloom.com/blog/is-salvation-a-process
+
+* 
+https://thewartburgwatch.com/2011/06/10/cheap-grace-and-cheap-platitudes-the-sbc-leading-the-way/
+
+* 
+https://archive.gci.org/articles/old-testament-laws-before-moses/
+
+* 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Isaiah 57:1
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Isaiah 57:1
+‾‾‾‾‾‾‾‾‾‾‾
+The righteous man perishes, and no one lays it
+to heart; devout men are taken away, while no
+one understands.
+
+For the righteous man is taken away from
+calamity;
+
+(ESV)
+#+end_src
+
+* 
+[[https://www.desiringgod.org/interviews/how-does-baptism-save-us][How Does Baptism Save Us? | Desiring God]]
+
+* 
+[[https://www.theparkwaychurch.com/blog/does-baptism-save-you][Does Baptism Save You? - The Parkway Church]]
+
+* 
+Faith = Believing-God × loving-obedience
+
+If God commands you to build an ark, and you build it exactly as specified, is that considered dead works? No, it's just doing exactly what God said. It's faith, but not without works.
+
+* 
+[[http://www.ntcanon.org/Irenaeus.shtml][The Development of the Canon of the New Testament - Irenaeus]]
+
+* For ascii-adventure / hypertext
+** Use this when editing areas
+| kb        | f                     |           |
+|-----------+-----------------------+-----------|
+| =M-m a k= | =toggle-picture-mode= | =pen-map= |
+
+* 
+[[https://www.iswasandwillbe.com/can-aionios-ever-mean-perpetual-or-eternal/][Is, Was and Will Be - The Unknown Character of Christ and His Word >> Revelation 1:8 "I am the Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty >> Can Aionios Ever Mean Perpetual or Eternal?]]
+
+* Meeting the requirement of the law, following the law by faith
+Yeah, that's right. A good response to grace is to obey God's statutes - go and sin no more, as Jesus commanded. But it's God's Spirit which enables us to obey His statutes and meet the requirement of the law, rather than trying to follow the law by works. But there's nothing wrong with following the law as a lot of people say. But it's faith that justifies, not the works of the law. I try and remain accountable to God. For example, God knows if I lie, or cheat, or steal, or commit adultery - God knows; He can see it occurring in my heart when it happens. Therefore, I try to be obedient to God's commandments from the heart, and in truth and reality, not like a lawyer,  but like someone who has a relationship with God and believes God exists and is a rewarder of those who seek Him. Also, God knows when I am faithful to Him by believing His word and obeying from the heart. I think following God's law in faith leads to meeting the requirement of the law. But following the law by works does not.
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  Ezekiel 11:19 - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, (ESV)
+  Ezekiel 11:20 - that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
+  Romans 7:22 - For I delight in the law of God, in my inner being, (ESV)
+  Romans 9:30-32 - What shall we say, then?  That Gentiles who did not pursue righteousness have attained it, that is, a righteousness that is by faith; but that Israel who pursued a law that would lead to righteousness did not succeed in reaching that law.  Why?  Because they did not pursue it by faith, but as if it were based on works.  They have stumbled over the stumbling stone, (ESV)
+  Romans 4:15-16 - For the law brings wrath, but where there is no law there is no transgression. That is why it depends on faith, in order that the promise may rest on grace and be guaranteed to all his offspring—not only to the adherent of the law but also to the one who shares the faith of Abraham, who is the father of us all, (ESV)
+#+END_SRC
+
+* This entire chapter rings true for me
+[[bible:John 15]]
+
+* 
+@AlanSanchez-ww9qb
+@AlanSanchez-ww9qb
+20 minutes ago
+The question really is... is this person loving Jesus and keeping his commandments, out of love for Jesus (John 14: 15), and not with a focus on law keeping? Loving Jesus in itself is a commandment from Jesus Himself.
+
+When we love Jesus first, and our focus is on Jesus, and are we loving others, we are walking in the Spirit; we are walking by faith, and we are certainly not walking in the flesh for loving Jesus and keeping his commandments.
+
+Loving Jesus (John 14: 15), believing in Jesus (John 14: 1; 1John 5: 13), trusting in Jesus, and depending on Jesus, will cause us to KEEP his commandments.
+When a person is loving Jesus and others (John 14: 15) they are walking by faith in the Spirit, and they will choose not to steal, or to lie, or to deceive, or to commit adultery with the heart or physically (Matthew 5: 27,28). This is why Jesus Himself told the 11 disciples, "If you love me, keep my commandments." The Holy Spirit does not break His own laws or God's laws. The Holy Spirit will not cause a person to lie or be unkind or to ignore God's words or laws.
+
+Now, if the person's focus is on law keeping without a focus on Jesus and dependence on Jesus first, then the person has it backwards and is walking in the flesh and is placing themself under the law.
+
+Jesus clearly said: "If you love me, KEEP my commandments."
+
+Jesus did not say: "KEEP my commandments, and love me."
+
+From the above, one can see again that the focus is on Jesus first, just like Abraham looked to Jesus first by faith as he looked up at the sky, believed the LORD, and was saved, and then, in general, walked a life of faith and kept God's commandments out of love for the LORD. Remember Abraham was before Moses ever penned the commandments or before Israel ever existed.
+
+And I will make THY SEED (Galatians 3: 16) to multiply as the stars of heaven, and will give unto THY SEED all these countries; and in THY SEED shall all the nations of the earth be blessed:
+BECAUSE that Abraham obeyed my voice (Genesis 15: 6; Romans 10: 16), and KEPT my charge, MY COMMANDMENTS (plural), my STATUES (plural), and my LAWS (plural).
+Genesis 26: 5
+
+So, from the above, faithful Abraham was exercising John 14: 15 in first and foremost loving Jesus, and out of love for Jesus, Abraham kept His commandments and was blessed for walking by faith.
+
+Jesus answered and said unto him (a believer),
+If a man love me, (John 14: 15)
+he WILL KEEP my words: (John 14: 15)
+and my Father will love him,
+and we will come unto him,
+and make our abode with him.
+John 14: 23
+
+In context, the above verse is only for a person who is already saved. It is a verse to those who are already a believer, and not for the lost. It is not a salvation verse, but a verse regarding the believer's walk.
+
+Said to a believer...
+
+Jesus saith unto him (Thomas, a believer), I AM the WAY (salvation & the walk), the truth, and the life:
+no man cometh unto the Father, but by me.
+John 14: 6
+🐑🐑🐑 
+
+* 
+And a person must abide in Christ Jesus, or Father God can graft the person out. Faith is walking with God. Faith is believing and faithful. Loving and abiding in Jesus is following His commandments. If people don't follow them they do not abide in him and do not produce good fruit. Where we are unfaithful, He is faithful. We make mistakes. But we confess our mistakes and ask for forgiveness. John 15:2-6 - Every branch of mine that does not bear fruit he takes away, and every branch that does bear fruit he prunes, that it may bear more fruit. Already you are clean because of the word that I have spoken to you. Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned. (ESV)  @AlanSanchez-ww9qb  
+
+* 
+https://www.youtube.com/watch?v=dETZokdyF5M&ab_channel=CristiJessee
+
+- Plead the blood of Jesus before I go to sleep
+- Put on the full armour of God before I go to bed
+- Psalm 91 protection.
+  - [[https://www.youtube.com/watch?v=l-uI6KFW2n0][Psalm 91 - My Refuge and My Fortress {With words - KJV} | God Our Protector | Prayer for Protection - YouTube]]
+  - [[bible:Psalm 91]]
+- Read Romans 8
+  - [[bible:Romans 8:32-39]]
+- Cancel the assignments of any incubus / succubus spirits, jezabel and spirit-spouses
+- Continue to speak out against the enemy, push him back, walk in holy fire, walk in my dominion
+  - Jesus gives us the authority to trample the enemy
+
+* This is epic
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (define-key global-map (kbd "s-F") 'select-font-lock-face-region)
+#+END_SRC
+
+* 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matthew 5:23-24
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:23-24
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Therefore if you are presenting your offering
+at the altar, and there remember that your
+brother has something against you, leave your
+offering there before the altar and go; first
+be reconciled to your brother, and then come
+and present your offering.
+
+(NASB)
+#+end_src
+
+* It certainly doesn't feel like it's rigged in my favour, but I will put my faith in Christ
+[[https://www.youtube.com/watch?v=O7aI0XA0F4k][Ita??s all rigged in your favor! d?JPY1d?JPY1d?JPY1~Prophetic Word~ - YouTube]]
+
+Hallelujah! At the end of the day I have a
+genuine relationship with Jesus Christ.
+
+People might slander me in public and the
+devil may send flaming arrows day and night, I
+might get bad and deceitful dreams, and my
+close friends might betray me.
+
+I might even be cast out of a church because
+people are listening to the world's slander
+against me and not to Jesus, and what Jesus
+says.
+
+But at the end of the day, I have a
+relationship with Jesus Christ and all my
+decicions do not make sense outside of Jesus
+now.
+
+So at the end of the day, all that matters is
+my relationship with God through Jesus Christ.
+
+He is my Lord (I follow His commandments) and
+Saviour (I believe He died for my sins) and He
+is the Son of the Living God, the Christ.
+
+Like Father, like Son, like disciple of Jesus
+(adopted son of God).
+
+Hallelujah.
+
+Looking forward to seeing Christ's words and
+my declaration vindicate me in judgement.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 14:27
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+John 14:27
+‾‾‾‾‾‾‾‾‾‾
+Peace I leave with you, my peace I give unto
+you: not as the world giveth, give I unto you.
+
+Let not your heart be troubled, neither let it
+be afraid.
+
+(RLT)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  I Peter 2:9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+1 Peter 2:9
+‾‾‾‾‾‾‾‾‾‾‾
+But ye are a chosen generation, a royal
+priesthood, an holy nation, a peculiar people;
+that ye should shew forth the praises of him
+who hath called you out of darkness into his
+marvellous light:
+
+(RLT)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Romans 8:28
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Romans 8:28
+‾‾‾‾‾‾‾‾‾‾‾
+And we know that all things work together for
+good to them that love God, to them who are
+the called according to his purpose.
+
+(RLT)
+#+end_src
+
+* FOX'S BOOK OF MARTYRS
+https://www.gutenberg.org/files/22400/22400-h/22400-h.htm
+
+* 
+https://joybible.wordpress.com/
+
+https://www.compellingtruth.org/law-of-Christ.html
+
+https://star.net.nz/the-word-for-today
+
+e:get-devotionals
+
+https://www.desiringgod.org/labs/how-to-make-decisions-biblically
+
+https://learnxinyminutes.com/docs/prolog/

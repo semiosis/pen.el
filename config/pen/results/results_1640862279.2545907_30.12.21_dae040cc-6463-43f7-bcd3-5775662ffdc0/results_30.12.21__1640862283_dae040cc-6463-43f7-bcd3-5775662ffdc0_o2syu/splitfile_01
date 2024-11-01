@@ -1,0 +1,7 @@
+
+You can do one of the following things:
+- Use "key binding" followed by "quit"
+- Use "emacs" followed by "key binding" followed by "quit"
+- Type ":quit"
+- Use "Control-x" and "Control-c" simultaneously
+

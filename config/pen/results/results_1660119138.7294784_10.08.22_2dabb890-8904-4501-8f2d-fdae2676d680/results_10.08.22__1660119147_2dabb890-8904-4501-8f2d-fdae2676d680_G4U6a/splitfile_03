@@ -1,0 +1,17 @@
+"""
+        self.assertEqual(expected, result)
+
+    def test_Processor_func(self):
+        # Test reading template
+        template_file = os.path.join(self.test_dir, "template.html")
+        with open(template_file) as f:
+            template = f.read().decode('utf-8')
+
+        # Test CSS path strip
+        html = '<link rel="stylesheet" href="/static/css/style.css" type="text/css">'
+        expected = '<link rel="stylesheet" href="style.css" type="text/css">'
+        result = Processor(template, html).process()
+        self.assertEqual(result, expected)
+
+        # Test without CSS path strip
+        html = '<link rel="stylesheet" href="/static/css/style.css" type="text

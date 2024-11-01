@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Systemd.service(5) - System and service manager</title>
+<style>
+body {
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+p {
+    margin: 0.67em 0;
+}
+ul {
+    list-style-type: disc;
+}
+li {
+    margin: 0.67em 0;  /* same as p */
+}
+
+  </style>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="https://www.freedesktop.org/software/systemd/man/systemd.css">
+
+  <script src="https://www.freedesktop.org/software/systemd/man/systemd.js"></script>
+
+  <script type="text/javascript">
+
+      function toggle_visibility(id) {
+
+          var e = document.getElementById(id);
+
+          if (e) {
+
+              if (e.style.display == 'block') {
+
+                  e.style.display = 'none';
+
+              } else {
+
+                  e.style.display = 'block';
+
+              }
+
+          } else { // no element found, so do nothing! }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} }} }} }} }} }} }} }} }}}}}} }}}}}} }}}}}} }}}}}} }}}}}} }}}}}} }}}}}} }{{{{{{{{{{{{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{ {{{{{{{{{{{{{{{{{{{{<br />\n\n\n\n\n\n\n\n\n\n<a id="top"></a><h1 class="title">Systemd</h1><p class="subtitle"><a href="/software/" title="Software home page">Software home page</a></p><hr />\n<div class="sectionbody">\n<ul class="sectlevel1"><li><p>Systemd is a system and service manager for Linux, compatible with SysV and LSB init scripts.</p></li><li><p>Systemd provides aggressive parallelism and

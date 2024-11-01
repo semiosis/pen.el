@@ -1,0 +1,5 @@
+
+EOD
+
+cat draft.markdown >> ./$1/index.md  
+rm -rf draft.markdown

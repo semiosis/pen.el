@@ -1,0 +1,10 @@
+cd 'harrys adventures'
+» ls
+ harry.txt        harrys-adventures.txt  harrys-adventures.txt.bak
+ harry.txt.bak    harrys-adventures.txt~  stop-reason.txt
+» cat harry.txt
+Harry Potter and the Sorcerer's Stone
+
+
+...
+

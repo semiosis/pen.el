@@ -1,0 +1,884 @@
+HTTP/1.1 200 
+date: Thu, 29 Feb 2024 23:58:49 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+server: Apache
+x-powered-by: PHP/7.4.33
+x-pingback: https://soveryblessed.com/xmlrpc.php
+content-security-policy: block-all-mixed-content
+link: <https://soveryblessed.com/wp-json/>; rel="https://api.w.org/", <https://soveryblessed.com/wp-json/wp/v2/posts/39888>; rel="alternate"; type="application/json", <https://soveryblessed.com/?p=39888>; rel=shortlink
+cache-control: public, s-maxage=216000
+x-stackcache-cacheable: yes
+x-cache-enabled: true
+x-provided-by: StackCDN
+cache-control: max-age=2592000
+expires: Thu, 28 Mar 2024 14:03:50 GMT
+vary: Accept-Encoding
+content-security-policy: block-all-mixed-content
+x-origin-cache-status: HIT
+x-via: LHR1
+x-cdn-node-is-at-origin: 1
+x-cdn-cache-status: HIT
+transfer-encoding: chunked
+
+<!DOCTYPE html><html lang="en-US">
+	<head>
+				<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href='//scripts.mediavine.com/' rel='preconnect' crossorigin><link href='//video.mediavine.com' rel='preconnect' crossorigin><link href='//exchange.mediavine.com' rel='preconnect' crossorigin><link href='//sync.srv.stackadapt.com' rel='preconnect' crossorigin><link href='//dmx.districtm.io' rel='preconnect' crossorigin><link href='//districtm-match.dotomi.com' rel='preconnect' crossorigin><link href='//u.acuityplatform.com' rel='preconnect' crossorigin><link href='//x.bidswitch.net' rel='preconnect' crossorigin><link href='//cdn.districtm.io' rel='preconnect' crossorigin><link href='//bam.nr-data.net' rel='preconnect' crossorigin><link href='//match.adsrvr.org' rel='preconnect' crossorigin><link href='https://i2.wp.com' rel='preconnect' crossorigin>
+<link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
+<link href='https://fonts.googleapis.com' rel='preconnect' crossorigin>
+<link href='https://www.google-analytics.com' rel='preconnect' crossorigin>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!-- Hubbub v.2.20.0 https://morehubbub.com/ -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="34 Scriptures on Hearing God’s Voice " />
+<meta property="og:description" content="God speaks to us through His Word, but how do you really hear what He says? Learn how to hear and listen to God&#039;s voice." />
+<meta property="og:url" content="https://soveryblessed.com/scriptures-on-hearing-gods-voice/" />
+<meta property="og:site_name" content="So Very Blessed" />
+<meta property="og:updated_time" content="2023-09-02T10:01:23+00:00" />
+<meta property="article:published_time" content="2023-08-17T17:29:34+00:00" />
+<meta property="article:modified_time" content="2023-09-02T10:01:23+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="34 Scriptures on Hearing God’s Voice " />
+<meta name="twitter:description" content="God speaks to us through His Word, but how do you really hear what He says? Learn how to hear and listen to God&#039;s voice." />
+<meta property="og:image" content="https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg" />
+<meta name="twitter:image" content="https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg" />
+<meta property="og:image:width" content="924" />
+<meta property="og:image:height" content="617" />
+<!-- Hubbub v.2.20.0 https://morehubbub.com/ -->
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>34 Scriptures on Hearing God’s Voice </title>
+	<meta name="description" content="God speaks to us through His Word, but how do you really hear what He says? Learn how to hear and listen to God&#039;s voice." />
+	<link rel="canonical" href="https://soveryblessed.com/scriptures-on-hearing-gods-voice/" />
+	<meta name="author" content="SVBeditor" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="SVBeditor" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="7 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/#article","isPartOf":{"@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/"},"author":{"name":"SVBeditor","@id":"https://soveryblessed.com/#/schema/person/15c21740c56654aea890dc1890acbf52"},"headline":"34 Scriptures on Hearing God’s Voice ","datePublished":"2023-08-17T23:29:34+00:00","dateModified":"2023-09-02T16:01:23+00:00","mainEntityOfPage":{"@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/"},"wordCount":1517,"commentCount":1,"publisher":{"@id":"https://soveryblessed.com/#organization"},"image":{"@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/#primaryimage"},"thumbnailUrl":"https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg","articleSection":["Bible Verse Collections","Bible Verses On Spiritual Disciplines","Bible Verses On The Fruit Of The Spirit","Faith"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://soveryblessed.com/scriptures-on-hearing-gods-voice/#respond"]}]},{"@type":"WebPage","@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/","url":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/","name":"34 Scriptures on Hearing God’s Voice ","isPartOf":{"@id":"https://soveryblessed.com/#website"},"primaryImageOfPage":{"@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/#primaryimage"},"image":{"@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/#primaryimage"},"thumbnailUrl":"https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg","datePublished":"2023-08-17T23:29:34+00:00","dateModified":"2023-09-02T16:01:23+00:00","description":"God speaks to us through His Word, but how do you really hear what He says? Learn how to hear and listen to God's voice.","breadcrumb":{"@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://soveryblessed.com/scriptures-on-hearing-gods-voice/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/#primaryimage","url":"https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg","contentUrl":"https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg","width":924,"height":617,"caption":"Black Bible with Black Large Headphones Around It"},{"@type":"BreadcrumbList","@id":"https://soveryblessed.com/scriptures-on-hearing-gods-voice/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://soveryblessed.com/"},{"@type":"ListItem","position":2,"name":"34 Scriptures on Hearing God’s Voice "}]},{"@type":"WebSite","@id":"https://soveryblessed.com/#website","url":"https://soveryblessed.com/","name":"So Very Blessed","description":"There&#039;s a Bible Verse For That 💜","publisher":{"@id":"https://soveryblessed.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://soveryblessed.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://soveryblessed.com/#organization","name":"So Very Blessed","url":"https://soveryblessed.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://soveryblessed.com/#/schema/logo/image/","url":"https://soveryblessed.com/wp-content/uploads/2019/01/So-Very-Blessed-Logo-Purple.png","contentUrl":"https://soveryblessed.com/wp-content/uploads/2019/01/So-Very-Blessed-Logo-Purple.png","width":924,"height":584,"caption":"So Very Blessed"},"image":{"@id":"https://soveryblessed.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/soveryblessedblog","https://twitter.com/so_very_blessed","https://www.instagram.com/soveryblessed/","https://www.pinterest.com/imsoveryblessed/"]},{"@type":"Person","@id":"https://soveryblessed.com/#/schema/person/15c21740c56654aea890dc1890acbf52","name":"SVBeditor","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://soveryblessed.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/b982fe0ebbbb694dc8e0fd1ad72f2bb1?s=96&d=identicon&r=g","contentUrl":"https://secure.gravatar.com/avatar/b982fe0ebbbb694dc8e0fd1ad72f2bb1?s=96&d=identicon&r=g","caption":"SVBeditor"},"url":"https://soveryblessed.com/author/svbeditor/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//scripts.mediavine.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="So Very Blessed &raquo; Feed" href="https://soveryblessed.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="So Very Blessed &raquo; Comments Feed" href="https://soveryblessed.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="So Very Blessed &raquo; 34 Scriptures on Hearing God’s Voice  Comments Feed" href="https://soveryblessed.com/scriptures-on-hearing-gods-voice/feed/" />
+<link rel="alternate" type="application/rss+xml" title="So Very Blessed &raquo; Stories Feed" href="https://soveryblessed.com/web-stories/feed/"><style type="text/css" id="mv-trellis-custom-css">:root{--mv-trellis-color-link:var(--mv-trellis-color-primary);--mv-trellis-color-link-hover:var(--mv-trellis-color-secondary);--mv-trellis-font-body:Tahoma,Verdana,Segoe,sans-serif;--mv-trellis-font-heading:Tahoma,Verdana,Segoe,sans-serif;--mv-trellis-font-size-ex-sm:0.83375rem;--mv-trellis-font-size-sm:1.09375rem;--mv-trellis-font-size:1.25rem;--mv-trellis-font-size-lg:1.40625rem;--mv-trellis-color-primary:#5e4593;--mv-trellis-color-secondary:#03737d;--mv-trellis-max-logo-size:100px;--mv-trellis-gutter-small:5px;--mv-trellis-gutter:10px;--mv-trellis-gutter-double:20px;--mv-trellis-gutter-large:25px;--mv-trellis-color-background-accent:#fafafa;--mv-trellis-h1-font-color:#5e4593;--mv-trellis-h1-font-size:2.25rem;}</style><style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='dpsp-frontend-style-pro-inline-css' type='text/css'>
+@media only screen and (max-width:600px) {.hide-featured-image-on-mobile #content .article-featured-img img{display: none;}}
+</style>
+<link rel="stylesheet" class="mvt-styles" href="https://soveryblessed.com/wp-content/mvt-critical/1/d278965569f7b2941bbd39344fd37ff7.0b56f0e4969718b109e90e2f6e356bcb.secondary.css" media="print" onload="this.media='all'"><noscript><link rel='stylesheet' id='mvt-uncritical-css' href='https://soveryblessed.com/wp-content/mvt-critical/1/d278965569f7b2941bbd39344fd37ff7.0b56f0e4969718b109e90e2f6e356bcb.secondary.css' type='text/css' media='all' />
+</noscript><style>@charset "UTF-8";.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image){margin:0;width:calc(50% - var(--wp--style--unstable-gallery-gap,16px)/ 2)}.wp-block-gallery.has-nested-images figure.wp-block-image{box-sizing:border-box;display:flex;flex-direction:column;flex-grow:1;justify-content:center;max-width:100%;position:relative}.wp-block-gallery.has-nested-images figure.wp-block-image>a,.wp-block-gallery.has-nested-images figure.wp-block-image>div{flex-direction:column;flex-grow:1;margin:0}.wp-block-gallery.has-nested-images figure.wp-block-image img{display:block;height:auto;max-width:100%!important;width:auto}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,transparent);bottom:0;box-sizing:border-box;color:#fff;font-size:13px;left:0;margin-bottom:0;max-height:60%;overflow:auto;padding:0 8px 8px;position:absolute;text-align:center;width:100%}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption img{display:inline}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption a{color:inherit}.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border>a,.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border>div,.wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded>a,.wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded>div{flex:1 1 auto}.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border figcaption,.wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded figcaption{background:0 0;color:inherit;flex:initial;margin:0;padding:10px 10px 9px;position:relative}.wp-block-gallery.has-nested-images:not(.is-cropped) figure.wp-block-image:not(#individual-image){margin-bottom:auto;margin-top:0}.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image){align-self:inherit}.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image)>a,.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image)>div:not(.components-drop-zone){display:flex}.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) a,.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img{flex:1 0 0%;height:100%;object-fit:cover;width:100%}.wp-block-gallery.has-nested-images.columns-1 figure.wp-block-image:not(#individual-image){width:100%}@media (min-width:600px){.wp-block-gallery.has-nested-images.columns-3 figure.wp-block-image:not(#individual-image){width:calc(33.33333% - var(--wp--style--unstable-gallery-gap,16px)*.66667)}.wp-block-gallery.has-nested-images.columns-4 figure.wp-block-image:not(#individual-image){width:calc(25% - var(--wp--style--unstable-gallery-gap,16px)*.75)}.wp-block-gallery.has-nested-images.columns-5 figure.wp-block-image:not(#individual-image){width:calc(20% - var(--wp--style--unstable-gallery-gap,16px)*.8)}.wp-block-gallery.has-nested-images.columns-6 figure.wp-block-image:not(#individual-image){width:calc(16.66667% - var(--wp--style--unstable-gallery-gap,16px)*.83333)}.wp-block-gallery.has-nested-images.columns-7 figure.wp-block-image:not(#individual-image){width:calc(14.28571% - var(--wp--style--unstable-gallery-gap,16px)*.85714)}.wp-block-gallery.has-nested-images.columns-8 figure.wp-block-image:not(#individual-image){width:calc(12.5% - var(--wp--style--unstable-gallery-gap,16px)*.875)}.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image){width:calc(33.33% - var(--wp--style--unstable-gallery-gap,16px)*.66667)}.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2),.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:calc(50% - var(--wp--style--unstable-gallery-gap,16px)*.5)}.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:last-child{width:100%}}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}ul{box-sizing:border-box}.entry-content{counter-reset:footnotes}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-text-align-center{text-align:center}.aligncenter{clear:both}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}.convertkit-broadcasts-list li time{display:inline-block;grid-area:date}.convertkit-broadcasts-list li .convertkit-broadcast-title{display:inline-block;grid-area:title}.convertkit-broadcasts-list li .convertkit-broadcast-image{display:inline-block;grid-area:image}.convertkit-broadcasts-list li .convertkit-broadcast-text{display:inline-block;grid-area:text;font-size:16px}.convertkit-broadcasts-pagination li.convertkit-broadcasts-pagination-prev{grid-area:prev;text-align:left}.convertkit-broadcasts-pagination li.convertkit-broadcasts-pagination-next{grid-area:next;text-align:right}#dpsp-content-top{margin-bottom:1.2em}.dpsp-share-text{margin-bottom:10px;font-weight:700}.dpsp-networks-btns-wrapper{margin:0!important;padding:0!important;list-style:none!important}.dpsp-networks-btns-wrapper:after{display:block;clear:both;height:0;content:""}.dpsp-networks-btns-wrapper li{float:left;margin:0;padding:0;border:0;list-style-type:none!important}.dpsp-networks-btns-wrapper li:before{display:none!important}.dpsp-networks-btns-wrapper li:first-child{margin-left:0!important}.dpsp-networks-btns-wrapper .dpsp-network-btn{display:flex;position:relative;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;min-width:40px;height:40px;max-height:40px;padding:0;border:2px solid;border-radius:0;box-shadow:none;font-family:Arial,sans-serif;font-size:14px;font-weight:700;line-height:36px;text-align:center;vertical-align:middle;text-decoration:none!important;text-transform:unset!important}.dpsp-networks-btns-wrapper.dpsp-column-auto .dpsp-network-btn.dpsp-no-label{width:40px}.dpsp-button-style-6 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon,.dpsp-button-style-7 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon,.dpsp-button-style-8 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon{left:-2px}.dpsp-networks-btns-wrapper .dpsp-network-btn:after{display:block;clear:both;height:0;content:""}.dpsp-networks-btns-wrapper.dpsp-column-auto .dpsp-network-btn.dpsp-no-label{padding-left:0!important}.dpsp-button-style-6 .dpsp-networks-btns-wrapper:not(.dpsp-networks-btns-sidebar):not(.dpsp-column-auto):not(.dpsp-column-6) .dpsp-network-btn.dpsp-has-count-only .dpsp-network-label-wrapper,.dpsp-button-style-7 .dpsp-networks-btns-wrapper:not(.dpsp-networks-btns-sidebar):not(.dpsp-column-auto):not(.dpsp-column-6) .dpsp-network-btn.dpsp-has-count-only .dpsp-network-label-wrapper{display:inline-block;text-indent:2em}.dpsp-networks-btns-wrapper.dpsp-column-1 li{width:100%;margin-left:0}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-1 li{margin-right:0}.dpsp-networks-btns-wrapper.dpsp-column-2 li{width:50%}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-2 li{width:49%}.dpsp-networks-btns-wrapper.dpsp-column-2 li:nth-child(2n){margin-right:0}.dpsp-networks-btns-wrapper.dpsp-column-3 li{width:33.3333%}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-3 li{width:32%}.dpsp-networks-btns-wrapper.dpsp-column-3 li:nth-child(3n){margin-right:0}.dpsp-networks-btns-wrapper.dpsp-column-4 li{width:25%}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-4 li{width:23.5%}.dpsp-networks-btns-wrapper.dpsp-column-4 li:nth-child(4n){margin-right:0}.dpsp-networks-btns-wrapper.dpsp-column-5 li{width:20%}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-5 li{width:18.4%}.dpsp-networks-btns-wrapper.dpsp-column-5 li:nth-child(5n){margin-right:0}.dpsp-networks-btns-wrapper.dpsp-column-6 li{width:16.6666%}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-6 li{width:15%}.dpsp-networks-btns-wrapper.dpsp-column-6 li:nth-child(6n){margin-right:0}.dpsp-networks-btns-wrapper.dpsp-column-7 li{width:14.285%}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-7 li{width:13%}.dpsp-networks-btns-wrapper.dpsp-column-7 li:nth-child(6n){margin-right:0}.dpsp-no-labels .dpsp-networks-btns-wrapper .dpsp-network-btn{padding:0!important;text-align:center}.dpsp-facebook{--networkAccent:#334d87;--networkColor:#3a579a;--networkHover:rgba(51,77,135,0.4)}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook{border-color:#3a579a;color:#3a579a;background:#3a579a}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook:not(:hover):not(:active){color:#3a579a}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook .dpsp-network-icon{border-color:#3a579a;color:#3a579a;background:#3a579a}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook .dpsp-network-icon .dpsp-network-icon-inner>svg{fill:var(--customNetworkColor,var(--networkColor,#3a579a))}.dpsp-x{--networkAccent:#000;--networkColor:#000;--networkHover:rgba(0,0,0,0.4)}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-x{border-color:#000;color:#000;background:#000}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-x:not(:hover):not(:active){color:#000}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-x .dpsp-network-icon{border-color:#000;color:#000;background:#000}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-x .dpsp-network-icon .dpsp-network-icon-inner>svg{fill:var(--customNetworkColor,var(--networkColor,#000))}.dpsp-pinterest{--networkAccent:#b31e24;--networkColor:#c92228;--networkHover:rgba(179,30,36,0.4)}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-pinterest{border-color:#c92228;color:#c92228;background:#c92228}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-pinterest:not(:hover):not(:active){color:#c92228}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-pinterest .dpsp-network-icon{border-color:#c92228;color:#c92228;background:#c92228}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-pinterest .dpsp-network-icon .dpsp-network-icon-inner>svg{fill:var(--customNetworkColor,var(--networkColor,#c92228))}.dpsp-instagram{--networkAccent:#a9257e;--networkColor:#bc2a8d;--networkHover:rgba(169,37,126,0.4)}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-instagram{border-color:#bc2a8d;color:#bc2a8d;background:#bc2a8d}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-instagram:not(:hover):not(:active){color:#bc2a8d}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-instagram .dpsp-network-icon{border-color:#bc2a8d;color:#bc2a8d;background:#bc2a8d}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-instagram .dpsp-network-icon .dpsp-network-icon-inner>svg{fill:var(--customNetworkColor,var(--networkColor,#bc2a8d))}.dpsp-shape-circle .dpsp-network-btn{border-radius:30px}.dpsp-shape-circle .dpsp-network-btn .dpsp-network-icon{overflow:hidden;border-radius:30px}.dpsp-has-spacing .dpsp-networks-btns-wrapper li{margin-right:2%;margin-bottom:10px;margin-left:0!important}.dpsp-size-small .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label{width:32px}.dpsp-size-small .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon{left:0}.dpsp-size-small.dpsp-button-style-6 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon,.dpsp-size-small.dpsp-button-style-7 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon,.dpsp-size-small.dpsp-button-style-8 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon{left:-2px}.dpsp-size-large .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label{width:46px}.dpsp-size-large .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon{left:0}.dpsp-size-large.dpsp-button-style-6 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon,.dpsp-size-large.dpsp-button-style-7 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon,.dpsp-size-large.dpsp-button-style-8 .dpsp-networks-btns-wrapper.dpsp-column-auto:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn.dpsp-no-label .dpsp-network-icon{left:-2px}.dpsp-networks-btns-wrapper.dpsp-networks-btns-pop-up.dpsp-column-auto{text-align:center}.dpsp-networks-btns-wrapper.dpsp-networks-btns-pop-up.dpsp-column-auto li{display:inline-block;float:none}.dpsp-shape-rounded.dpsp-has-spacing .dpsp-networks-btns-sidebar .dpsp-network-btn .dpsp-network-icon{border-radius:4px}.dpsp-shortcode-follow-wrapper>.dpsp-networks-btns-follow-widget{display:flex;flex-flow:row wrap}.dpsp-shortcode-follow-wrapper.dpsp-follow-align-center>.dpsp-networks-btns-follow-widget{justify-content:center}.dpsp-networks-btns-wrapper .dpsp-network-btn .dpsp-network-icon{display:block;position:relative;top:-2px;left:-2px;-moz-box-sizing:border-box;box-sizing:border-box;width:40px;height:40px;border:2px solid;font-size:14px;line-height:36px;text-align:center;align-self:start;flex:0 0 auto}.dpsp-icon-total-share svg,.dpsp-network-icon .dpsp-network-icon-inner svg{position:relative;overflow:visible;width:auto;max-height:14px}.dpsp-size-large .dpsp-icon-total-share svg{max-height:22px}.widget_dpsp_social_media_follow .dpsp-network-icon .dpsp-network-icon-inner svg{top:.05em}.dpsp-icon-total-share,.dpsp-network-icon-inner{display:flex;align-items:center;justify-content:center}.dpsp-network-icon-inner{height:36px}.dpsp-show-total-share-count{position:relative}.dpsp-total-share-wrapper{position:relative;margin-top:10px;color:#5d6368;font-family:Helvetica,Helvetica Neue,Arial,sans-serif;line-height:1.345}.dpsp-total-share-wrapper .dpsp-total-share-count{font-size:15px;line-height:18px;white-space:nowrap}.dpsp-total-share-wrapper .dpsp-icon-total-share{position:absolute;top:6px;left:0;margin-top:0;margin-left:0}.dpsp-total-share-wrapper .dpsp-icon-total-share svg{top:2px;width:auto;max-height:16px;fill:#5d6368}#dpsp-floating-sidebar .dpsp-total-share-wrapper{margin-bottom:10px}#dpsp-floating-sidebar .dpsp-total-share-wrapper .dpsp-icon-total-share{display:none}.dpsp-total-share-wrapper span{display:block;font-size:11px;font-weight:700;text-align:center;white-space:nowrap;text-transform:uppercase}.dpsp-content-wrapper .dpsp-total-share-wrapper,.dpsp-pop-up-buttons-wrapper .dpsp-total-share-wrapper,.dpsp-share-buttons-wrapper .dpsp-total-share-wrapper,.dpsp-shortcode-wrapper .dpsp-total-share-wrapper{position:absolute;top:50%;box-sizing:border-box;width:60px;height:40px;margin-top:-21px;padding-left:20px}#dpsp-sticky-bar .dpsp-total-share-wrapper{height:32px;margin-top:-16px}#dpsp-sticky-bar-wrapper.dpsp-is-mobile .dpsp-total-share-wrapper{display:none}.dpsp-content-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before,.dpsp-pop-up-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before,.dpsp-share-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before,.dpsp-shortcode-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before{padding-left:75px}.dpsp-content-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after,.dpsp-pop-up-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after,.dpsp-share-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after,.dpsp-shortcode-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after{padding-right:70px}.dpsp-content-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before .dpsp-total-share-wrapper,.dpsp-pop-up-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before .dpsp-total-share-wrapper,.dpsp-share-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before .dpsp-total-share-wrapper,.dpsp-shortcode-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-before .dpsp-total-share-wrapper{left:0}.dpsp-content-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after .dpsp-total-share-wrapper,.dpsp-pop-up-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after .dpsp-total-share-wrapper,.dpsp-share-buttons-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after .dpsp-total-share-wrapper,.dpsp-shortcode-wrapper.dpsp-show-total-share-count.dpsp-show-total-share-count-after .dpsp-total-share-wrapper{right:0}.dpsp-button-style-6 .dpsp-networks-btns-wrapper .dpsp-network-btn{border-color:transparent!important;background:0 0!important}.dpsp-button-style-6 .dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-no-label:not(.dpsp-has-count){max-width:40px}.dpsp-button-style-6 .dpsp-networks-btns-wrapper .dpsp-network-btn .dpsp-network-icon:not(.dpsp-network-icon-outlined) .dpsp-network-icon-inner>svg{fill:#fff!important}a,article,aside,body,div,em,figure,form,h1,h2,h3,header,html,img,label,li,nav,p,span,strong,ul{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,figure,header,nav{display:block}body{-webkit-box-sizing:border-box;box-sizing:border-box;color:#000;line-height:1;word-break:break-word;word-wrap:break-word;background:#fff}ul{list-style:none}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit;margin:0;padding:0}@media only screen and (min-width:960px){.wrapper{max-width:1200px;margin-right:auto;margin-left:auto}}.wrapper-content{padding-left:20px;padding-right:20px;margin-left:auto;margin-right:auto}@media (max-width:340px){.wrapper-content{padding-left:10px;padding-right:10px}}@media only screen and (min-width:1135px){.wrapper-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:nowrap;flex-wrap:nowrap}@supports (display:grid){.wrapper-content{-webkit-column-gap:50px;-moz-column-gap:50px;column-gap:50px;display:grid;grid-auto-flow:column;grid-template-areas:"content_before content_before" "main sidebar" "content_after content_after";grid-template-columns:1fr 300px}}}@media only screen and (min-width:1250px){.wrapper-content{padding-right:0;padding-left:0}}img{height:auto}img{max-width:100%}body{font-size:1.125rem;font-size:var(--mv-trellis-font-size,1.125rem);font-family:Helvetica Neue,Arial,Helvetica,sans-serif;font-family:var(--mv-trellis-font-body,"Helvetica Neue",Arial,Helvetica,sans-serif);font-weight:400;line-height:1.625}h1,h2,h3{font-family:Georgia,Times,Times New Roman,serif;font-family:var(--mv-trellis-font-heading,Georgia,Times,"Times New Roman",serif);display:block;margin-bottom:10px;margin-bottom:var(--mv-trellis-gutter-small,10px);font-weight:700}h1,h2,h3{color:#000;color:var(--mv-trellis-heading-font-color,#000)}h1{font-size:2.25rem;font-size:var(--mv-trellis-h1-font-size,2.25rem)}h1{color:#000;color:var(--mv-trellis-h1-font-color,#000)}h2{font-size:1.6875rem;font-size:var(--mv-trellis-h2-font-size,1.6875rem)}h3{font-size:1.4999625rem;font-size:var(--mv-trellis-h3-font-size,1.4999625rem)}p,ul{margin-bottom:1.75rem;margin-bottom:calc(18px + var(--mv-trellis-gutter-small,10px))}a{text-decoration:none}a,a:visited{color:#275f62;color:var(--mv-trellis-color-link,#275f62)}strong{font-weight:700}em{font-style:italic}ul{list-style:disc}li{margin-left:30px;margin-bottom:10px}li li:first-child{margin-top:10px}.sidebar{font-size:1.125rem;font-size:var(--mv-trellis-font-size,1.125rem)}.header{min-height:60px}.header-container{display:-ms-flexbox;display:-webkit-box;display:flex;position:relative;-ms-flex-align:center;-ms-flex-flow:row nowrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-flow:row nowrap}.header-container,.header-logo{-webkit-box-align:center;align-items:center}.header-logo{font-size:1rem;font-size:var(--mv-trellis-font-size,1rem);font-family:sans-serif;font-family:var(--mv-trellis-font-body,sans-serif);padding-bottom:10px;padding-bottom:var(--mv-trellis-gutter-small,10px);padding-top:10px;padding-top:var(--mv-trellis-gutter-small,10px);width:auto;margin:0 60px 0 0;font-weight:700;text-align:center;text-decoration:none;letter-spacing:.1em;text-transform:uppercase;word-break:normal;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;-webkit-box-flex:0;-ms-flex:0 0 calc(100% - 120px);flex:0 0 calc(100% - 120px);display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.header-logo,.header-logo:visited{color:#243746;color:var(--mv-trellis-color-heading,#243746)}.search-toggle~.header-logo{margin-right:0}@media only screen and (min-width:960px){.header-logo{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;padding-left:20px;padding-right:1rem;text-align:left;-webkit-box-flex:1;-ms-flex:1 1 25%;flex:1 1 25%;max-width:30%;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-ordinal-group:initial;-ms-flex-order:initial;order:0}}@media only screen and (min-width:1250px){.header-logo{padding-left:0}}.header-logo picture{height:75px;max-width:100%;-webkit-box-sizing:content-box;box-sizing:content-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media only screen and (min-width:600px){.header-logo picture{height:75px;height:var(--mv-trellis-max-logo-size,75px)}}@media only screen and (min-width:960px){.header-logo picture{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}}.header-logo-img{max-height:75px;margin:0 auto;width:auto}@media only screen and (min-width:600px){.header-logo-img{max-height:75px;max-height:var(--mv-trellis-max-logo-size,75px)}}@media only screen and (min-width:960px){.header-logo-img{margin:0}}.entry-header{padding:20px 0}@media only screen and (min-width:600px){.entry-header{padding:40px 0;padding:calc(var(--mv-trellis-gutter,20px)*2) 0}}h1.entry-title{font-size:2.25rem;font-size:var(--mv-trellis-h1-font-size,2.25rem);line-height:1.25;text-align:center}@media only screen and (min-width:600px){h1.entry-title{text-align:left}}.entry-header{background-color:#fafafa;background-color:var(--mv-trellis-color-background-accent,#fafafa);margin-bottom:50px;margin-bottom:var(--mv-trellis-gutter-large,50px);position:relative;width:100%}.entry-header:before{border-left:9999px solid #fafafa;border-left:9999px solid var(--mv-trellis-color-background-accent,#fafafa);bottom:0;-webkit-box-shadow:9999px 0 0 #fafafa;box-shadow:9999px 0 0 #fafafa;-webkit-box-shadow:9999px 0 0 var(--mv-trellis-color-background-accent,#fafafa);box-shadow:9999px 0 0 var(--mv-trellis-color-background-accent,#fafafa);content:"";left:-9999px;position:absolute;right:0;top:0;z-index:-1}.nav{-webkit-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px;min-height:60px;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:left}@media only screen and (min-width:960px){.nav{-ms-flex-item-align:stretch;align-self:stretch;-webkit-box-flex:1;-ms-flex:auto;flex:auto;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;text-align:right}.nav .wrapper{height:100%}.nav .menu-item{text-align:left}}.nav-list{list-style:none}.nav-list li{margin-left:0;margin-bottom:0}.nav li li:first-child{margin-top:0}.nav ul{list-style-type:disc;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-padding-start:0;padding-inline-start:0}.nav .menu-item{text-transform:uppercase}.nav .menu-item a{display:block;color:#000;font-size:.875rem;font-size:var(--mv-trellis-font-size-sm,.875rem);line-height:1.25;padding:20px;text-decoration:none;word-break:normal}.nav .menu-item a,.nav .menu-item a:visited{color:#000;color:var(--mv-trellis-color-link,#000)}@media only screen and (max-width:340px){.nav .menu-item a{padding:20px 10px;padding:var(--mv-trellis-gutter,20px) 10px}}li.menu-item{display:block;position:relative}.nav .menu-item a,.nav .sub-menu .menu-item a{line-height:1.25;letter-spacing:.1em}.nav .current-menu-parent>a,.nav .current-menu-parent>a:visited{color:#44a6ab;color:var(--mv-trellis-color-link-hover,#44a6ab)}.sub-menu{margin:0}.nav-toggle{display:block;width:100%;padding:20px;border-radius:0;color:#000;background:0 0;-webkit-box-shadow:none;box-shadow:none;text-align:left}@media only screen and (min-width:960px){.nav-toggle{display:none}}.nav-toggle svg{width:16px;height:16px;margin-top:3.2px;fill:#000}.nav-closed{display:none}@media only screen and (min-width:960px){.nav-container{padding:0;height:100%}.nav-toggle{display:none}.nav-closed{display:block}.nav-closed{-webkit-box-shadow:none;box-shadow:none}.nav-list{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;height:100%;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;position:relative}.nav-list .menu-item-has-children>.sub-menu{visibility:hidden;opacity:0;-webkit-transform:scale(.95);transform:scale(.95)}.nav-list>.menu-item>.sub-menu{min-width:100%}.nav-list .menu-item{line-height:2rem;position:relative}.nav .nav-list .menu-item a{border:none;padding:10px}.nav .nav-list .menu-item .menu-item>a{padding:10px 20px}.nav-list .sub-menu{background-color:#fff;margin:0 auto;position:absolute;top:calc(100% + 1px);right:0;max-width:250px;width:-webkit-max-content;width:-moz-max-content;width:max-content;z-index:999}.nav-list .sub-menu .menu-item,.nav-list .sub-menu .sub-menu{margin:0}.nav-list .sub-menu>.menu-item-has-children:after{color:#275f62;color:var(--mv-trellis-color-link,#275f62);bottom:0;content:"\25C2";font-size:1rem;left:0;right:auto;top:0;padding:0 5px;position:absolute}.nav-list>.menu-item:nth-child(-n+2):not(:nth-last-child(-n+3)) .sub-menu>.menu-item-has-children:after{content:"\25B8";right:0;left:auto}}@media only screen and (min-width:960px)and (min-width:960px)and (hover:none)and (any-pointer:coarse){.nav-list .sub-menu>.menu-item-has-children:after{font-size:2rem}}@media only screen and (min-width:960px)and (min-width:960px){.toggle-sub-menu{display:none}}@media only screen and (min-width:960px)and (min-width:960px)and (hover:none)and (any-pointer:coarse){.toggle-sub-menu{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}}@media (hover:none)and (any-pointer:coarse),(max-width:959px){.nav>.nav-wrapper>nav.nav-container>ul>li:not(.sub-menu-open)>ul.sub-menu,.nav>.nav-wrapper>nav.nav-container>ul>li>ul.sub-menu>li:not(.sub-menu-open)>ul.sub-menu{display:none}.nav>.nav-wrapper>nav.nav-container>ul>li>a{display:-webkit-box;display:-ms-flexbox;display:flex}.nav>.nav-wrapper>nav.nav-container>ul>li>a>span{display:block;-ms-flex-item-align:center;align-self:center}.nav>.nav-wrapper>nav.nav-container>ul>li.menu-item span.toggle-sub-menu{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;margin-left:.25em;padding:8px}li span.toggle-sub-menu svg{width:16px;height:16px}li span.toggle-sub-menu svg path{fill:#41a4a9;fill:var(--mv-trellis-color-primary,#41a4a9)}.sub-menu{position:relative}.sub-menu li{padding-left:30px}}.content-container-before-post{grid-area:content_before;margin-bottom:50px;margin-bottom:var(--mv-trellis-gutter-large,50px);max-width:100%}.content-container-after-post{grid-area:content_after;margin-top:50px;margin-top:var(--mv-trellis-gutter-large,50px);max-width:100%}#content{grid-area:main;max-width:728px;margin:0 auto;min-width:auto;padding-bottom:50px;padding-bottom:var(--mv-trellis-gutter-large,50px);width:100%}@media only screen and (min-width:960px)and (min-width:0\0){#content{width:calc(100% - 300px);padding-right:10px}}main img{margin-bottom:1em}.article-post{padding-bottom:50px;padding-bottom:var(--mv-trellis-gutter-large,50px)}.entry-content{margin-top:50px;margin-top:var(--mv-trellis-gutter-large,50px)}:root{--mv-trellis-featured-post-offset:calc(var(--mv-trellis-h1-font-size, 2.25rem)*1.625)}.sidebar{grid-area:sidebar;margin:50px auto 0;margin:var(--mv-trellis-gutter-large,50px) auto 0;padding:0;width:300px}@media only screen and (min-width:960px){.sidebar{padding-bottom:50px;padding-bottom:var(--mv-trellis-gutter-large,50px)}.sidebar .mv-sticky-slot{-ms-flex-item-align:end;align-self:flex-end;margin:0 auto;position:sticky;top:1rem}.admin-bar .sidebar .mv-sticky-slot{top:3rem}.sidebar .mv-sticky-slot #sidebar_btf_sticky_wrapper.stuck{position:static}}.sidebar .widget-container:first-of-type:not(.about-author){border:1px solid #e1e1e1;margin-top:50px;padding:10px}@media only screen and (min-width:1135px){:not(.hidden-page-title) .sidebar{margin-top:69.25px;margin-top:calc(var(--mv-trellis-gutter-double,40px) + var(--mv-trellis-h1-font-size,2.25rem)*1.625/2)}}.about-author{max-width:350px;padding:50px;padding:var(--mv-trellis-gutter-large,50px);border:1px solid #e1e1e1;margin-top:70px;margin-top:calc(50px + var(--mv-trellis-gutter,20px))}@media only screen and (max-width:340px){.about-author{margin:66.6666666667px 20px 0}}.about-author-photo{overflow:hidden;width:100px;height:auto;margin:-60px auto 20px;border-radius:50px}.about-author-photo img{display:block;margin:0}.about-author-title{border-bottom:1px solid #e1e1e1;margin-bottom:40px;margin-bottom:calc(var(--mv-trellis-gutter,20px)*2);padding-bottom:10px;padding-bottom:var(--mv-trellis-gutter-small,10px)}.about-author-content p:last-child{margin-bottom:0}button,input[type=submit]{font-size:1rem;font-size:var(--mv-trellis-font-size,1rem);background-color:#275f62;background-color:var(--mv-trellis-color-link,#275f62);display:block;width:100%;padding:10px 20px;border:none;border-radius:0;-webkit-box-shadow:none;box-shadow:none;font-weight:600;text-align:center;text-decoration:none;letter-spacing:.05em;text-transform:uppercase}button,button:visited,input[type=submit]{color:#fff}@media only screen and (min-width:600px){button,input[type=submit]{display:inline-block;width:auto}}@media only screen and (min-width:600px){button,input[type=submit]{padding:10px 20px}}.article-meta #comment-count{display:inline-block;text-decoration:none;vertical-align:middle}.article-meta #comment-count div{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:5px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.article-meta #comment-count div svg{margin-right:5px;height:20px}input[type=search],textarea{font-size:1rem;font-size:var(--mv-trellis-font-size,1rem);width:100%;margin:0 0 10px;margin:0 0 calc(var(--mv-trellis-gutter,20px)/ 2);padding:6.6666666667px;padding:calc(var(--mv-trellis-gutter,20px)/ 3);border:1px solid #e1e1e1;outline:0;background:#fff;-webkit-box-shadow:none;box-shadow:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}input,textarea{resize:vertical}::-webkit-input-placeholder{font-size:.875rem;font-size:var(--mv-trellis-font-size-sm,.875rem)}::-moz-placeholder{font-size:.875rem;font-size:var(--mv-trellis-font-size-sm,.875rem)}:-ms-input-placeholder{font-size:.875rem;font-size:var(--mv-trellis-font-size-sm,.875rem)}::-ms-input-placeholder{font-size:.875rem;font-size:var(--mv-trellis-font-size-sm,.875rem)}::placeholder{font-size:.875rem;font-size:var(--mv-trellis-font-size-sm,.875rem)}img:before{content:"";width:1px;margin-left:-1px;height:0;float:left}img:after{content:"";display:table;clear:both}.mvt-no-js .trellis-proxy-form{display:none}.article-meta,.post-meta-wrapper{color:#000;font-size:.75rem;font-size:var(--mv-trellis-font-size-ex-sm,.75rem);font-weight:700;text-align:center;width:100%}@media only screen and (min-width:600px){.article-meta,.post-meta-wrapper{text-align:left}}@media only screen and (min-width:960px){.article-meta,.post-meta-wrapper{margin-right:390px}}.article-meta.no-author-meta{border-top:1px solid #e1e1e1;padding-top:5px}#search-container{display:none;position:absolute;left:0;top:0;width:100%;height:100%;background:#fff;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#search-container .search-close{padding:20px;color:#275f62;color:var(--mv-trellis-color-link,#275f62);background-color:transparent;-webkit-box-flex:0;-ms-flex:0 0 50px;flex:0 0 50px}.searchform{max-width:450px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.searchform label{margin-right:10px;-webkit-box-flex:1;-ms-flex:1;flex:1}.searchform .search-field{border-color:#275f62;border-color:var(--mv-trellis-color-link,#275f62);border-radius:10px;line-height:1;margin-bottom:0;padding:10px 20px}.searchform .search-submit{display:none}.searchform input[type=submit]{width:60px;height:60px;padding:7px 20px;background:0 0;-webkit-box-shadow:none;box-shadow:none;line-height:60px;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}button.search-toggle{padding:10px;background:0 0;-webkit-box-shadow:none;box-shadow:none;-webkit-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}button.search-toggle .magnifying-glass{fill:#275f62;fill:var(--mv-trellis-color-link,#275f62)}.widget-container{background:#fff;display:block;margin-bottom:20px;margin-bottom:var(--mv-trellis-gutter,20px);margin-left:auto;margin-right:auto}.widget-container li{list-style:none;margin-left:0;text-align:left}.sidebar-primary .widget-container{padding:10px 20px}.widget-container.mv_trellis_mobile_hide{display:none}@media only screen and (min-width:1135px){.widget-container.mv_trellis_mobile_hide{display:inherit}}.aligncenter{display:block;margin:5px auto;margin:calc(var(--mv-trellis-gutter,20px)/ 4) auto;text-align:center}.screen-reader-text{overflow:hidden;clip:rect(1px,1px,1px,1px);position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;border:0;word-wrap:normal!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}</style>				<script id="mv-trellis-localModel" data-cfasync="false">
+					window.$adManagementConfig = window.$adManagementConfig || {};
+					window.$adManagementConfig.web = window.$adManagementConfig.web || {};
+					window.$adManagementConfig.web.localModel = {"optimize_mobile_pagespeed":true,"optimize_desktop_pagespeed":true,"content_selector":".mvt-content","footer_selector":"footer.footer","content_selector_mobile":".mvt-content","comments_selector":"","sidebar_atf_selector":"","sidebar_atf_position":"afterend","sidebar_btf_selector":".mv-sticky-slot","sidebar_btf_position":"beforeend","content_stop_selector":"","sidebar_btf_stop_selector":"footer.footer","custom_css":"","ad_box":true,"sidebar_minimum_width":"1135","native_html_templates":{"feed":"<aside class=\"mv-trellis-native-ad-feed\"><div class=\"native-ad-image\" style=\"min-height:240px;min-width:320px;\"><div style=\"display: none;\" data-native-size=\"[300, 250]\" data-native-type=\"video\"><\/div><div style=\"width:320px;height:240px;\" data-native-size=\"[320,240]\" data-native-type=\"image\"><\/div><\/div><div class=\"native-content\"><img class=\"native-icon\" data-native-type=\"icon\" style=\"max-height: 50px; width: auto;\"><h2 data-native-len=\"80\" data-native-d-len=\"120\" data-native-type=\"title\"><\/h2><div data-native-len=\"140\" data-native-d-len=\"340\" data-native-type=\"body\"><\/div><div class=\"cta-container\"><div data-native-type=\"sponsoredBy\"><\/div><a rel=\"nonopener sponsor\" data-native-type=\"clickUrl\" class=\"button article-read-more\"><span data-native-type=\"cta\"><\/span><\/a><\/div><\/div><\/aside>","content":"<aside class=\"mv-trellis-native-ad-content\"><div class=\"native-ad-image\"><div style=\"display: none;\" data-native-size=\"[300, 250]\" data-native-type=\"video\"><\/div><div data-native-size=\"[300,300]\" data-native-type=\"image\"><\/div><\/div><div class=\"native-content\"><img class=\"native-icon\" data-native-type=\"icon\" style=\"max-height: 50px; width: auto;\"><h2 data-native-len=\"80\" data-native-d-len=\"120\" data-native-type=\"title\"><\/h2><div data-native-len=\"140\" data-native-d-len=\"340\" data-native-type=\"body\"><\/div><div class=\"cta-container\"><div data-native-type=\"sponsoredBy\"><\/div><a data-native-type=\"clickUrl\" class=\"button article-read-more\"><span data-native-type=\"cta\"><\/span><\/a><\/div><\/div><\/aside>","sidebar":"<aside class=\"mv-trellis-native-ad-sidebar\"><div class=\"native-ad-image\"><div style=\"display: none;\" data-native-size=\"[300, 250]\" data-native-type=\"video\"><\/div><div data-native-size=\"[300,300]\" data-native-type=\"image\"><\/div><\/div><img class=\"native-icon\" data-native-type=\"icon\" style=\"max-height: 50px; width: auto;\"><h3 data-native-len=\"80\"><a rel=\"nonopener sponsor\" data-native-type=\"title\"><\/a><\/h3><div data-native-len=\"140\" data-native-d-len=\"340\" data-native-type=\"body\"><\/div><div data-native-type=\"sponsoredBy\"><\/div><a data-native-type=\"clickUrl\" class=\"button article-read-more\"><span data-native-type=\"cta\"><\/span><\/a><\/aside>","sticky_sidebar":"<aside class=\"mv-trellis-native-ad-sticky-sidebar\"><div class=\"native-ad-image\"><div style=\"display: none;\" data-native-size=\"[300, 250]\" data-native-type=\"video\"><\/div><div data-native-size=\"[300,300]\" data-native-type=\"image\"><\/div><\/div><img class=\"native-icon\" data-native-type=\"icon\" style=\"max-height: 50px; width: auto;\"><h3 data-native-len=\"80\" data-native-type=\"title\"><\/h3><div data-native-len=\"140\" data-native-d-len=\"340\" data-native-type=\"body\"><\/div><div data-native-type=\"sponsoredBy\"><\/div><a data-native-type=\"clickUrl\" class=\"button article-read-more\"><span data-native-type=\"cta\"><\/span><\/a><\/aside>","adhesion":"<aside class=\"mv-trellis-native-ad-adhesion\"><div data-native-size=\"[100,100]\" data-native-type=\"image\"><\/div><div class=\"native-content\"><img class=\"native-icon\" data-native-type=\"icon\" style=\"max-height: 50px; width: auto;\"><div data-native-type=\"sponsoredBy\"><\/div><h6 data-native-len=\"80\" data-native-d-len=\"120\" data-native-type=\"title\"><\/h6><\/div><div class=\"cta-container\"><a class=\"button article-read-more\" data-native-type=\"clickUrl\"><span data-native-type=\"cta\"><\/span><\/a><\/div><\/aside>"}};
+				</script>
+			<script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="https://scripts.mediavine.com/tags/so-very-blessed.js" id="mv-script-wrapper-js"></script>
+<script type="text/javascript" id="ga/js-js" class="mv-trellis-script" src="https://www.googletagmanager.com/gtag/js?id=UA-70790145-1" defer data-noptimize data-handle="ga/js"></script>
+<script type="text/javascript" id="mv-trellis-images/intersection-observer-js" class="mv-trellis-script" src="https://soveryblessed.com/wp-content/plugins/mediavine-trellis-images/assets/dist/IO.0.7.1.js" defer data-noptimize data-handle="mv-trellis-images/intersection-observer"></script>
+<script type="text/javascript" id="mv-trellis-images/webp-check-js" class="mv-trellis-script" src="https://soveryblessed.com/wp-content/mvt-js/1/6a76c27036f54bb48ed9bc3294c5d172.min.js" defer data-noptimize data-handle="mv-trellis-images/webp-check"></script>
+<link rel="https://api.w.org/" href="https://soveryblessed.com/wp-json/" /><link rel="alternate" type="application/json" href="https://soveryblessed.com/wp-json/wp/v2/posts/39888" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://soveryblessed.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://soveryblessed.com/?p=39888' />
+<link rel="alternate" type="application/json+oembed" href="https://soveryblessed.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsoveryblessed.com%2Fscriptures-on-hearing-gods-voice%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://soveryblessed.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsoveryblessed.com%2Fscriptures-on-hearing-gods-voice%2F&#038;format=xml" />
+		<style>
+			:root {
+				--mv-create-radius: 0;
+			}
+		</style>
+		<meta name="hubbub-info" description="Hubbub Pro 2.20.0"><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//soveryblessed.com/?wordfence_lh=1&hid=C7C010A21BE785D449793A36DAF1CD08');
+</script><style type="text/css" id="mv-trellis-native-ads-css">:root{--mv-trellis-color-native-ad-background: var(--mv-trellis-color-background-accent,#fafafa);}[class*="mv-trellis-native-ad"]{display:flex;flex-direction:column;text-align:center;align-items:center;padding:10px;margin:15px 0;border-top:1px solid #eee;border-bottom:1px solid #eee;background-color:var(--mv-trellis-color-native-ad-background,#fafafa)}[class*="mv-trellis-native-ad"] [data-native-type="image"]{background-repeat:no-repeat;background-size:cover;background-position:center center;}[class*="mv-trellis-native-ad"] [data-native-type="sponsoredBy"]{font-size:0.875rem;text-decoration:none;transition:color .3s ease-in-out,background-color .3s ease-in-out;}[class*="mv-trellis-native-ad"] [data-native-type="title"]{line-height:1;margin:10px 0;max-width:100%;text-decoration:none;transition:color .3s ease-in-out,background-color .3s ease-in-out;}[class*="mv-trellis-native-ad"] [data-native-type="title"],[class*="mv-trellis-native-ad"] [data-native-type="sponsoredBy"]{color:var(--mv-trellis-color-link)}[class*="mv-trellis-native-ad"] [data-native-type="title"]:hover,[class*="mv-trellis-native-ad"] [data-native-type="sponsoredBy"]:hover{color:var(--mv-trellis-color-link-hover)}[class*="mv-trellis-native-ad"] [data-native-type="body"]{max-width:100%;}[class*="mv-trellis-native-ad"] .article-read-more{display:inline-block;font-size:0.875rem;line-height:1.25;margin-left:0px;margin-top:10px;padding:10px 20px;text-align:right;text-decoration:none;text-transform:uppercase;}@media only screen and (min-width:600px){.mv-trellis-native-ad-feed,.mv-trellis-native-ad-content{flex-direction:row;padding:0;text-align:left;}.mv-trellis-native-ad-feed .native-content,.mv-trellis-native-ad-content{padding:10px}}.mv-trellis-native-ad-feed [data-native-type="image"]{max-width:100%;height:auto;}.mv-trellis-native-ad-feed .cta-container,.mv-trellis-native-ad-content .cta-container{display:flex;flex-direction:column;align-items:center;}@media only screen and (min-width:600px){.mv-trellis-native-ad-feed .cta-container,.mv-trellis-native-ad-content .cta-container{flex-direction:row;align-items: flex-end;justify-content:space-between;}}@media only screen and (min-width:600px){.mv-trellis-native-ad-content{padding:0;}.mv-trellis-native-ad-content .native-content{max-width:calc(100% - 300px);padding:15px;}}.mv-trellis-native-ad-content [data-native-type="image"]{height:300px;max-width:100%;width:300px;}.mv-trellis-native-ad-sticky-sidebar,.mv-trellis-native-ad-sidebar{font-size:var(--mv-trellis-font-size-sm,0.875rem);margin:20px 0;max-width:300px;padding:0 0 var(--mv-trellis-gutter,20px);}.mv-trellis-native-ad-sticky-sidebar [data-native-type="image"],.mv-trellis-native-ad-sticky-sidebar [data-native-type="image"]{height:300px;margin:0 auto;max-width:100%;width:300px;}.mv-trellis-native-ad-sticky-sidebar [data-native-type="body"]{padding:0 var(--mv-trellis-gutter,20px);}.mv-trellis-native-ad-sticky-sidebar [data-native-type="sponsoredBy"],.mv-trellis-native-ad-sticky-sidebar [data-native-type="sponsoredBy"]{display:inline-block}.mv-trellis-native-ad-sticky-sidebar h3,.mv-trellis-native-ad-sidebar h3 [data-native-type="title"]{margin:15px auto;width:300px;}.mv-trellis-native-ad-adhesion{background-color:transparent;flex-direction:row;height:90px;margin:0;padding:0 20px;}.mv-trellis-native-ad-adhesion [data-native-type="image"]{height:120px;margin:0 auto;max-width:100%;transform:translateY(-20px);width:120px;}.mv-trellis-native-ad-adhesion [data-native-type="sponsoredBy"],.mv-trellis-native-ad-adhesion  .article-read-more{font-size:0.75rem;}.mv-trellis-native-ad-adhesion [data-native-type="title"]{font-size:1rem;}.mv-trellis-native-ad-adhesion .native-content{display:flex;flex-direction:column;justify-content:center;padding:0 10px;text-align:left;}.mv-trellis-native-ad-adhesion .cta-container{display:flex;align-items:center;}</style>			<meta name="theme-color" content="#243746"/>
+			<link rel="manifest" href="https://soveryblessed.com/manifest">
+		
+<!-- Meta Pixel Code -->
+<script type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js?v=next');
+</script>
+<!-- End Meta Pixel Code -->
+
+      <script type='text/javascript'>
+        var url = window.location.origin + '?ob=open-bridge';
+        fbq('set', 'openbridge', '704747690180064', url);
+      </script>
+    <script type='text/javascript'>fbq('init', '704747690180064', {}, {
+    "agent": "wordpress-6.4.3-3.0.14"
+})</script><script type='text/javascript'>
+    fbq('track', 'PageView', []);
+  </script>
+<!-- Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+src="https://www.facebook.com/tr?id=704747690180064&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Meta Pixel Code -->
+<link rel="icon" href="https://soveryblessed.com/wp-content/uploads/2019/06/heart.png" sizes="32x32" />
+<link rel="icon" href="https://soveryblessed.com/wp-content/uploads/2019/06/heart.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://soveryblessed.com/wp-content/uploads/2019/06/heart.png" />
+<meta name="msapplication-TileImage" content="https://soveryblessed.com/wp-content/uploads/2019/06/heart.png" />
+		<style type="text/css" id="wp-custom-css">
+			.socialmedia-buttons.smw_center {display:flex!Important;
+justify-content:center!important;}
+
+.widget_nav_menu li {
+    text-align:center!important;
+}
+
+.widget_nav_menu {
+    padding:20px!important;
+}
+
+.widget-title {
+text-align:center!Important;}
+
+h1,h2,h3,h4,h5,h6,.excerpt-title a {
+	color: #5e4593!important;
+}
+
+.mv-sticky-slot {
+    top:90px!Important;
+}
+
+.tasty-recipes-ratings-buttons input:not([type=checkbox]) {
+    width:unset!important;
+    padding:unset!Important;
+    appearance: auto!Important;
+	    margin-left:1px!important;
+}
+
+.tasty-recipes-ratings-buttons > span {
+    display:inline-block!important;
+    position:relative!important;
+    width:1.1em!Important;
+    font-style:normal!Important;
+}
+
+.tasty-recipes-ratings-buttons .checked {
+    display:inline-block!Important;
+}
+
+.tasty-recipes-ratings-buttons .unchecked {
+    display:none!important;
+}
+
+.tasty-recipes-ratings-buttons  input:focus {
+    background:rgba(0, 0, 0, 0.1)!important;
+    color:rgba(0, 0, 0, 0.75)!important;
+    outline-offset: 2px;
+}
+
+.tasty-recipes-ratings-buttons {
+    unicode-bidi:bidi-override!important;
+    direction:rtl!Imporatnt;
+    text-align:center!Important;
+}
+
+
+.tasty-recipes-ratings-buttons > input {
+    margin-right:0px!Important;
+    margin-left:-1.1em!Important;
+    opacity:0!important;
+    transition: .3s ease!Important;
+    width:1.1em!Important;
+    height:1.1em!important;
+    z-index:10!important;
+    border-radius:3px!important;
+}
+
+.tasty-recipes-ratings-buttons > *:hover .checked, .tasty-recipes-ratings-buttons > *:hover ~ span .checked,.tasty-recipes-ratings-buttons:not(:hover) > input:checked ~ span .checked {
+    display:none!important;
+}
+
+.tasty-recipes-ratings-buttons > *:hover .unchecked, .tasty-recipes-ratings-buttons > *:hover ~ span .unchecked, .tasty-recipes-ratings-buttons:not(:hover) > input:checked ~ span .unchecked {
+    display:inline-block!important;
+}
+		</style>
+				<meta name="google-site-verification" content="ldNgMouxgUcwD-dkYAp_AOMMDlo6W2Weu4nPccCXX5M" />
+
+<script async src="https://so-very-blessed-llc.ck.page/41c70cc004/index.js"></script>	</head>
+	<body class="post-template-default single single-post postid-39888 single-format-standard mvt-no-js mediavine-trellis">
+				<a href="#content" class="screen-reader-text">Skip to Content</a>
+
+		<div class="before-content">
+						<header class="header">
+	<div class="wrapper wrapper-header">
+				<div class="header-container">
+			<button class="search-toggle">
+	<span class="screen-reader-text">Search</span>
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 12 12" class="magnifying-glass">
+		<path d="M10.37 9.474L7.994 7.1l-.17-.1a3.45 3.45 0 0 0 .644-2.01A3.478 3.478 0 1 0 4.99 8.47c.75 0 1.442-.24 2.01-.648l.098.17 2.375 2.373c.19.188.543.142.79-.105s.293-.6.104-.79zm-5.38-2.27a2.21 2.21 0 1 1 2.21-2.21A2.21 2.21 0 0 1 4.99 7.21z"></path>
+	</svg>
+</button>
+<div id="search-container">
+	<form role="search" method="get" class="searchform" action="https://soveryblessed.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field"
+			placeholder="Enter search keywords"
+			value="" name="s"
+			title="Search for:" />
+	</label>
+	<input type="submit" class="search-submit" value="Search" />
+</form>
+	<button class="search-close">
+		<span class="screen-reader-text">Close Search</span>
+		&times;
+	</button>
+</div>
+			<a href="https://soveryblessed.com/" title="So Very Blessed" class="header-logo"><picture><source srcset="https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color.png.webp, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color.png.webp 716w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-400x209.png.webp 400w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-335x175.png.webp 335w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-347x181.png.webp 347w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-520x272.png.webp 520w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-640x334.png.webp 640w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-150x78.png.webp 150w" type="image/webp"><img src="https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color.png" srcset="https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color.png 716w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-400x209.png 400w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-335x175.png 335w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-347x181.png 347w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-520x272.png 520w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-640x334.png 640w, https://soveryblessed.com/wp-content/uploads/2021/11/SVB-New-Logo-Color-150x78.png 150w" sizes="(max-width: 716px) 100vw, 716px" class="size-full size-ratio-full wp-image-37066 header-logo-img ggnoads" alt="So Very Blessed" data-pin-nopin="true" height="374" width="716"></picture></a>			<div class="nav">
+	<div class="wrapper nav-wrapper">
+						<button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px" height="32px">
+	<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"></path>
+</svg>
+</button>
+				<nav id="primary-nav" class="nav-container nav-closed"><ul id="menu-main-menu" class="nav-list"><li id="menu-item-41063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41063"><a href="https://soveryblessed.com/about-me/"><span>About</span></a></li>
+<li id="menu-item-23403" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-23403"><a href="https://soveryblessed.com/category/faith/"><span>Faith</span><span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-28647" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-28647"><a href="https://soveryblessed.com/category/faith/bible-verse-collections/">Bible Verses<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-39625" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39625"><a href="https://soveryblessed.com/category/faith/bible-verse-collections/bible-verses-about-hard-things/">Bible Verses About Hard Things</a></li>
+		<li id="menu-item-39627" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39627"><a href="https://soveryblessed.com/category/faith/bible-verse-collections/bible-verses-on-health-weight-loss/">Bible Verses On Health &amp; Weight Loss</a></li>
+		<li id="menu-item-39626" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39626"><a href="https://soveryblessed.com/category/faith/bible-verse-collections/bible-verses-for-holidays/">Bible Verses For Holidays</a></li>
+		<li id="menu-item-39628" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39628"><a href="https://soveryblessed.com/category/faith/bible-verse-collections/bible-verses-on-spiritual-disciplines/">Bible Verses On Spiritual Disciplines</a></li>
+		<li id="menu-item-39629" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-39629"><a href="https://soveryblessed.com/category/faith/bible-verse-collections/bible-verses-on-the-fruit-of-the-spirit/">Bible Verses On The Fruit Of The Spirit</a></li>
+	</ul>
+</li>
+	<li id="menu-item-37240" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37240"><a href="https://soveryblessed.com/category/faith/capturing-joy/">Capturing Joy</a></li>
+	<li id="menu-item-37241" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-37241"><a href="https://soveryblessed.com/category/faith/confidence-christ/">Confidence in Christ<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-37251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37251"><a href="https://soveryblessed.com/5-days-to-jump-start-your-confidence-in-christ/">Worthy &#8211; 5 Days of Devotions</a></li>
+	</ul>
+</li>
+	<li id="menu-item-37242" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37242"><a href="https://soveryblessed.com/category/faith/gratitude/">Gratitude</a></li>
+	<li id="menu-item-37243" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37243"><a href="https://soveryblessed.com/category/faith/prayer-journaling/">Prayer Journaling</a></li>
+</ul>
+</li>
+<li id="menu-item-23479" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-23479"><a href="https://soveryblessed.com/category/healthy-living/"><span>Healthy Living</span><span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2910"><a href="https://soveryblessed.com/my-weight-loss-journey/">My 100-Pound Weight Loss Journey</a></li>
+	<li id="menu-item-37252" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-37252"><a href="https://soveryblessed.com/category/healthy-living/christian-weight-loss/">Christian Weight Loss<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-37044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37044"><a href="https://soveryblessed.com/10-bible-verses-for-your-weight-loss-journey/">Bible Verses For Weight Loss</a></li>
+		<li id="menu-item-35896" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35896"><a href="https://faithfulfinishlines.lpages.co/grow-your-faith-lose-the-weight/">FREE 5-Day Grow Your Faith, Lose The Weight Challenge</a></li>
+		<li id="menu-item-36013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36013"><a href="https://faithfulfinishlines.lpages.co/jump-start-your-weight-loss/">Free 7-Day Jump Start Your Weight Loss Challenge</a></li>
+	</ul>
+</li>
+	<li id="menu-item-35346" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35346"><a href="https://soveryblessed.com/category/healthy-living/fitness/">Exercise</a></li>
+	<li id="menu-item-37338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-37338"><a href="https://soveryblessed.com/category/healthy-living/healthy-eating/">Healthy Eating<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-37533" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37533"><a href="https://soveryblessed.com/category/healthy-living/healthy-eating/food-cravings/">Food Cravings</a></li>
+		<li id="menu-item-37534" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37534"><a href="https://soveryblessed.com/category/healthy-living/healthy-eating/healthy-meal-prep/">Healthy Meal Prep</a></li>
+	</ul>
+</li>
+	<li id="menu-item-37280" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37280"><a href="https://soveryblessed.com/category/healthy-living/free-weight-loss-printables/">Free Weight Loss Printables</a></li>
+	<li id="menu-item-37254" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37254"><a href="https://soveryblessed.com/category/healthy-living/sleep/">Sleep</a></li>
+	<li id="menu-item-30900" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30900"><a href="https://soveryblessed.com/category/healthy-living/">Weight Loss Tips</a></li>
+</ul>
+</li>
+<li id="menu-item-24148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24148"><a href="https://soveryblessed.com/category/recipes/"><span>Recipes</span><span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-34002" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-34002"><a href="https://soveryblessed.com/category/recipes/">All Recipes</a></li>
+	<li id="menu-item-33754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-33754"><a href="https://soveryblessed.com/category/recipes/breakfast/">Breakfast<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-30914" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30914"><a href="https://soveryblessed.com/category/recipes/breakfast/bread/">Breads</a></li>
+		<li id="menu-item-23146" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23146"><a href="https://soveryblessed.com/category/recipes/breakfast/eggs/">Eggs</a></li>
+		<li id="menu-item-23147" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23147"><a href="https://soveryblessed.com/category/recipes/breakfast/smoothies/">Smoothies</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27320" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-27320"><a href="https://soveryblessed.com/category/recipes/lunch/">Lunch<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-33753" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33753"><a href="https://soveryblessed.com/category/recipes/quinoa-bites-recipes/">Quinoa Bites</a></li>
+		<li id="menu-item-21170" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21170"><a href="https://soveryblessed.com/category/recipes/lunch/salads/">Salads</a></li>
+		<li id="menu-item-21171" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21171"><a href="https://soveryblessed.com/category/recipes/lunch/sandwiches-burgers/">Sandwiches</a></li>
+		<li id="menu-item-21173" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21173"><a href="https://soveryblessed.com/category/recipes/lunch/soups/">Soups</a></li>
+		<li id="menu-item-23148" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23148"><a href="https://soveryblessed.com/category/recipes/lunch/other/">Other</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27315" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-27315"><a href="https://soveryblessed.com/category/recipes/dinner/">Dinner<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-21164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21164"><a href="https://soveryblessed.com/category/recipes/dinner/appetizers/">Appetizers</a></li>
+		<li id="menu-item-23138" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23138"><a href="https://soveryblessed.com/category/recipes/dinner/beef/">Beef</a></li>
+		<li id="menu-item-23139" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23139"><a href="https://soveryblessed.com/category/recipes/dinner/chicken-poultry/">Chicken &amp; Poultry</a></li>
+		<li id="menu-item-23140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23140"><a href="https://soveryblessed.com/category/recipes/dinner/meatless/">Meatless</a></li>
+		<li id="menu-item-21172" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21172"><a href="https://soveryblessed.com/category/recipes/dinner/sides/">Sides</a></li>
+		<li id="menu-item-23141" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23141"><a href="https://soveryblessed.com/category/recipes/dinner/slow-cooker/">Slow Cooker</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27318" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-27318"><a href="https://soveryblessed.com/category/recipes/dessert/">Dessert<span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-23142" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23142"><a href="https://soveryblessed.com/category/recipes/dessert/bars-brownies/">Bars &amp; Brownies</a></li>
+		<li id="menu-item-23143" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23143"><a href="https://soveryblessed.com/category/recipes/dessert/cakes/">Cakes</a></li>
+		<li id="menu-item-23144" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23144"><a href="https://soveryblessed.com/category/recipes/dessert/cookies/">Cookies</a></li>
+		<li id="menu-item-25794" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25794"><a href="https://soveryblessed.com/category/recipes/dessert/fun/">Fun</a></li>
+	</ul>
+</li>
+	<li id="menu-item-23035" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23035"><a href="https://soveryblessed.com/category/recipes/snacks/">Snacks</a></li>
+	<li id="menu-item-35680" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35680"><a href="https://soveryblessed.com/category/recipes/one-pot-meals/">One Pot Meals</a></li>
+</ul>
+</li>
+<li id="menu-item-33361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-33361"><a href="https://soveryblessed.com/shop/"><span>Shop</span><span class="toggle-sub-menu"><svg class="icon-arrow-down" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.5L0 0L6 0L3 3.5Z" fill="#41A4A9"></path></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-33362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33362"><a href="https://soveryblessed.com/shop/">So Very Blessed Shop</a></li>
+	<li id="menu-item-26526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26526"><a href="https://soveryblessed.com/weight-loss-devotional/">30-Day Weight Loss Devotional</a></li>
+	<li id="menu-item-37188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37188"><a href="https://soveryblessed.com/prayer-journal-bundle/">Prayer Journal Bundle</a></li>
+	<li id="menu-item-28686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28686"><a href="https://www.faithfulfinishlines.com/">Faithful Finish Lines</a></li>
+</ul>
+</li>
+</ul></nav>	</div>
+</div>
+		</div>
+			</div>
+</header>
+					</div>
+		
+	<!-- Main Content Section -->
+	<div class="content">
+		<div class="wrapper wrapper-content">
+						<main id="content" class="content-container">
+				
+		<article id="post-39888" class="article-post article post-39888 post type-post status-publish format-standard has-post-thumbnail hentry category-bible-verse-collections category-bible-verses-on-spiritual-disciplines category-bible-verses-on-the-fruit-of-the-spirit category-faith mv-content-wrapper grow-content-body">
+
+			<header class="entry-header header-singular wrapper">
+		<h1 class="entry-title article-heading">34 Scriptures on Hearing God’s Voice </h1>
+	<div class="article-meta post-meta-wrapper post-meta-single post-meta-single-top no-author-meta">
+			<div id="comment-count" class="meta-element meta-wrapper">
+			<div>
+				<svg color="primary" viewBox="0 0 26 30" xmlns="http://www.w3.org/2000/svg" class="Base__SVG-d3bqvy-0 iaVtqo" style="color: rgb(0, 0, 0); font-family: &quot;Proxima Nova&quot;, -apple-system, system-ui, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; height: 20px; transition: all 0.2s ease 0s; width: auto; word-break: break-word;">
+	<path d="M6.5 11.5h2.6V8.944H6.5V11.5zm5.2 0h2.6V8.944h-2.6V11.5zm5.2 0h2.6V8.944h-2.6V11.5zM13 0c7.15 0 13 4.574 13 10.222s-5.85 10.222-13 10.222c-1.612 0-3.159-.23-4.589-.638C4.615 23 0 23 0 23c3.029-2.977 3.51-4.983 3.575-5.75C1.365 15.423 0 12.944 0 10.222 0 4.574 5.85 0 13 0z" fill-rule="evenodd" class="" style="color: rgb(0, 0, 0); font-family: &quot;Proxima Nova&quot;, -apple-system, system-ui, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; word-break: break-word;"></path>
+</svg>				1 Comment			</div>
+		</div>
+		</div>
+
+</header>
+<aside><div class="content-container-after-post"><p style="font-size:14px"><em>This post may contain affiliate links, which means I may earn a small commission from purchased products at no additional cost to you. See my full disclosure <a href="https://staging.soveryblessed.com/disclosure-policy/">here.</a></em></p></div></aside>
+			<div class="entry-content mvt-content">
+				<style>img#mv-trellis-img-1::before{padding-top:66.774891774892%; }img#mv-trellis-img-1{display:block;}</style>
+<p class="has-text-align-center"><strong>God speaks to us through His Word, but how do you really hear what He says? Learn how to hear and listen to God&rsquo;s voice.</strong></p>
+
+
+
+<p>We serve a God who is personal and relational. Just like in any relationship communication is an important aspect through which we get to know each other, and how we remain connected. <strong>We speak to God through prayer, and though He can speak to us in different ways, the primary way God speaks to us today is through the Bible, His Holy Word.&nbsp;</strong></p>
+
+
+
+<p>When you feel as though you haven&rsquo;t &ldquo;heard from God,&rdquo; open His Word. The Word is described in 2 Timothy 3:16-17, saying, &ldquo;All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.&rdquo;</p>
+
+
+
+<p>This means that <strong>God is speaking through His Word, it is the recorded words of God.</strong> How wonderful is it that we have access to His Word, and sometimes even in many different translations and forms.&nbsp;</p>
+
+
+
+<p>These scriptures about hearing God&rsquo;s voice show how God has revealed Himself in history, and continues to speak to us today.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>34 Scriptures on Hearing God&rsquo;s Voice&nbsp;</strong></h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><noscript><img fetchpriority="high" decoding="async" width="924" height="617" src="https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-1024x684.jpg" alt="Black Bible with Black Large Headphones Around It" class="wp-image-39902" srcset="https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg 924w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-400x267.jpg 400w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-768x513.jpg 768w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-150x100.jpg 150w" sizes="(max-width: 760px) calc(100vw - 20px), 720px"></noscript><img fetchpriority="high" decoding="async" width="924" height="617" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20924%20617'%3E%3Crect%20width='924'%20height='617'%20style='fill:%23e3e3e3'/%3E%3C/svg%3E" alt="Black Bible with Black Large Headphones Around It" class="wp-image-39902 eager-load" sizes="(max-width: 760px) calc(100vw - 20px), 720px" data-pin-media="https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg" id="mv-trellis-img-1" loading="eager" data-src="https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-1024x684.jpg.webp" data-srcset="https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1.jpg.webp 924w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-400x267.jpg.webp 400w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-768x513.jpg.webp 768w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Scriptures-on-Hearing-Gods-Voice-1-150x100.jpg.webp 150w" data-svg="1" data-trellis-processed="1"></figure></div>
+
+
+<h3 class="wp-block-heading"><strong>1. </strong>Romans 10:17 &ndash; Faith Comes By Hearing the Message Of God&rsquo;s Word&nbsp;</h3>
+
+
+
+<p><em>Consequently, faith comes from hearing the message, and the message is heard through the word about Christ.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>2. </strong>John 10:27 &ndash; My Sheep Listen to My Voice&nbsp;</h3>
+
+
+
+<p><em>My sheep listen to my voice; I know them, and they follow me.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>3. </strong>Hebrews 3:15 &ndash; If You Hear His Voice Do Not Harden Your Hearts&nbsp;</h3>
+
+
+
+<p><em>As has just been said: &ldquo;Today, if you hear his voice, do not harden your hearts as you did in the rebellion.&rdquo;</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>4. </strong>2 Timothy 3:16-17 &ndash; All Scripture Is God-Breathed&nbsp;</h3>
+
+
+
+<p><em>All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>5. </strong>Hebrews 1:1-2. &ndash; In these Last Days He Has Spoken To Us By His Son</h3>
+
+
+
+<p><em>In the past God spoke to our ancestors through the prophets at many times and in various ways, but in these last days he has spoken to us by his Son, whom he appointed heir of all things, and through whom also he made the universe.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>6. </strong>Job 33:14 &ndash; God Does Speak&nbsp;</h3>
+
+
+
+<p><em>For God does speak &mdash; now one way, now another &mdash; though no one perceives it.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>7. </strong>John 8:47 &ndash; Whoever Belongs To God Hears What He Says&nbsp;</h3>
+
+
+
+<p><em>Whoever belongs to God hears what God says. The reason you do not hear is that you do not belong to God.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>8. </strong>1 Peter 3:12 &ndash; His Ears Are Attentive To The Prayer Of the Righteous</h3>
+
+
+
+<p><em>For the eyes of the Lord are on the righteous and his ears are attentive to their prayer, but the face of the Lord is against those who do evil.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>9. </strong>Isaiah 30:21 &ndash; You Will Hear A Voice Behind You</h3>
+
+
+
+<p><em>Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, &ldquo;This is the way; walk in it.&rdquo;</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>10. </strong>Deuteronomy 4:12 &ndash; The Lord Spoke Out Of the Fire&nbsp;</h3>
+
+
+
+<p><em>Then the Lord spoke to you out of the fire. You heard the sound of words but saw no form; there was only a voice.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>11. </strong>Revelation 3:22 &ndash; Hear What the Spirit Says To the Churches&nbsp;</h3>
+
+
+
+<p><em>Whoever has ears, let them hear what the Spirit says to the churches.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>12. </strong>Psalm 85:8 &ndash; Listen To What God the Lord Says&nbsp;</h3>
+
+
+
+<p><em>I will listen to what God the Lord says; he promises peace to his people, his faithful servants &mdash; but let them not turn to folly.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>13. </strong>Hebrews 4:7 &ndash; If You Hear His Voice Do Not Harden Your Heart</h3>
+
+
+
+<p><em>God again set a certain day, calling it &ldquo;Today.&rdquo; This he did when a long time later he spoke through David, as in the passage already quoted: &ldquo;Today, if you hear his voice, do not harden your hearts.&rdquo;</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>14. </strong>John 5:30 &ndash; I Judge Only As I Hear&nbsp;</h3>
+
+
+
+<p><em>By myself I can do nothing; I judge only as I hear, and my judgment is just, for I seek not to please myself but him who sent me.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>15. </strong>Luke 11:28 &ndash; Blessed Are Those Who Hear the Word of God and Obey It&nbsp;</h3>
+
+
+
+<p><em>He replied, &ldquo;Blessed rather are those who hear the word of God and obey it.&rdquo;</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>16. </strong>Revelation 3:20 &ndash; If Anyone Hears His Voice and Opens the Door</h3>
+
+
+
+<p><em>Here I am! I stand at the door and knock. If anyone hears my voice and opens the door, I will come in and eat with that person, and they with me.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>17. </strong>Psalm 29:3 &ndash; The Voice Of The Lord Is Over the Waters&nbsp;</h3>
+
+
+
+<p><em>The voice of the Lord is over the waters; the God of glory thunders, the Lord thunders over the mighty waters.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>18. </strong>John 10:2-4 &ndash; The Sheep Listen To His Voice</h3>
+
+
+
+<p><em>The one who enters by the gate is the shepherd of the sheep. The gatekeeper opens the gate for him, and the sheep listen to his voice.&nbsp;</em></p>
+
+
+
+<p><em>He calls his own sheep by name and leads them out. When he has brought out all his own, he goes on ahead of them, and his sheep follow him because they know his voice.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>19. </strong>Psalm 5:3 &ndash; You Hear My Voice In the Morning&nbsp;</h3>
+
+
+
+<p><em>In the morning, Lord, you hear my voice in the morning I lay my requests before you and wait expectantly.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>20. </strong>John 9:31 &ndash; He Listens To the Godly Person Who Does His Will</h3>
+
+
+
+<p><em>We know that God does not listen to sinners. He listens to the godly person who does his will.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>21. </strong>Isaiah 55:11 &ndash; His Word Does Not Return To Him Empty&nbsp;</h3>
+
+
+
+<p><em>So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire and achieve the purpose for which I sent it.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>22. </strong>Jeremiah 33:3 &ndash; I Will Answer You and Tell You Great Things&nbsp;</h3>
+
+
+
+<p><em>Call to me and I will answer you and tell you great and unsearchable things you do not know.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>23. </strong>Isaiah 41:13 &ndash; He Says To You, Do Not Fear; I Will Help You</h3>
+
+
+
+<p><em>For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>24. </strong>Deuteronomy 13:4 &ndash; Keep His Commands and Obey Him</h3>
+
+
+
+<p><em>It is the Lord your God you must follow, and him you must revere. Keep his commands and obey him; serve him and hold fast to him.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>25. </strong>Genesis 3:8 &ndash; They Heard the Sound of the Lord God&nbsp;</h3>
+
+
+
+<p><em>Then the man and his wife heard the sound of the Lord God as he was walking in the garden in the cool of the day, and they hid from the Lord God among the trees of the garden.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>26. </strong>Deuteronomy 28:1-2 &ndash; Carefully Follow All His Commands&nbsp;</h3>
+
+
+
+<p><em>&nbsp;If you fully obey the Lord your God and carefully follow all his commands I give you today, the Lord your God will set you high above all the nations on earth. All these blessings will come on you and accompany you if you obey the Lord your God.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>27. </strong>James 1:22 &ndash; Do Not Merely Listen To the Word&nbsp;</h3>
+
+
+
+<p><em>Do not merely listen to the word, and so deceive yourselves. Do what it says.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>28. </strong>Matthew 4:4 &ndash; Man Shall Live On Every Word That Comes From the Mouth of God&nbsp;</h3>
+
+
+
+<p><em>Jesus answered, &ldquo;It is written: &lsquo;Man shall not live on bread alone, but on every word that comes from the mouth of God.&rsquo;</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>29. </strong>Hebrews 4:2 &ndash; The Good News Proclaimed To Us&nbsp;</h3>
+
+
+
+<p><em>For we also have had the good news proclaimed to us, just as they did; but the message they heard was of no value to them, because they did not share the faith of those who obeyed.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>30. </strong>Matthew 7:24 &ndash; Hear His Words And Put Them Into Practice&nbsp;</h3>
+
+
+
+<p><em>Therefore everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>31. </strong>John 14:26 &ndash; The Holy Spirit Will Remind You Of Everything Jesus Has Said&nbsp;</h3>
+
+
+
+<p><em>But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all things and will remind you of everything I have said to you.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>32. </strong>Luke 8:21 &ndash; Hearers and Doers Of the Word&nbsp;</h3>
+
+
+
+<p><em>He replied, &ldquo;My mother and brothers are those who hear God&rsquo;s word and put it into practice.&rdquo;</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>33. </strong>Deuteronomy 5:27 &ndash; Listen To All That the Lord Our God Says</h3>
+
+
+
+<p><em>Go near and listen to all that the Lord our God says. Then tell us whatever the Lord our God tells you. We will listen and obey.</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>34. </strong>Ezekiel 3:27 &ndash; This Is What the Sovereign Lord Says</h3>
+
+
+
+<p><em>But when I speak to you, I will open your mouth and you shall say to them, &lsquo;This is what the Sovereign Lord says.&rsquo; Whoever will listen let them listen, and whoever will refuse let them refuse; for they are a rebellious people.</em></p>
+
+
+
+<h2 class="wp-block-heading">More Bible Verses You&rsquo;ll Love</h2>
+
+
+
+<p><a href="https://soveryblessed.com/15-bible-verses-thankfulness/">15 Bible Verses On Thankfulness</a></p>
+
+
+
+<p><a href="https://soveryblessed.com/bible-verses-for-renewing-your-mind/">Transform Your Thinking: 26 Powerful Bible Verses for Renewing Your Mind</a></p>
+
+
+
+<p><a href="https://soveryblessed.com/bible-verses-on-gods-love-for-us/">21 Encouraging Bible Verses On God&rsquo;s Love For Us</a></p>
+
+
+
+<p><a href="https://soveryblessed.com/bible-verses-for-intrusive-thoughts/">16 Bible Verses For Intrusive Thoughts</a></p>
+<script async data-uid="68b2d80308" src="https://so-very-blessed-llc.ck.page/68b2d80308/index.js" data-jetpack-boost="ignore"></script>			</div>
+						<footer class="entry-footer">
+				<div class="post-meta-wrapper post-meta-single post-meta-single-bottom">
+			<p class="meta-wrapper"><span class="posted-on"><span class="screen-reader-text">Posted on </span>Last updated: <time class="entry-date" datetime="2023-09-02T10:01:23-05:00">September 2, 2023</time></span></p>
+				<p class="meta-cats"><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://soveryblessed.com/category/faith/bible-verse-collections/" rel="category tag">Bible Verse Collections</a>, <a href="https://soveryblessed.com/category/faith/bible-verse-collections/bible-verses-on-spiritual-disciplines/" rel="category tag">Bible Verses On Spiritual Disciplines</a>, <a href="https://soveryblessed.com/category/faith/bible-verse-collections/bible-verses-on-the-fruit-of-the-spirit/" rel="category tag">Bible Verses On The Fruit Of The Spirit</a>, <a href="https://soveryblessed.com/category/faith/" rel="category tag">Faith</a></span></p>
+		</div>
+
+			</footer><!-- .entry-footer -->
+					</article>
+		
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://soveryblessed.com/bible-verses-for-mothers-day/" rel="prev" aria-hidden="true" tabindex="-1" class="post-thumbnail"><style>img#mv-trellis-img-2::before{padding-top:75%; }img#mv-trellis-img-2{display:block;}</style><noscript><img src="https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-320x240.jpg" srcset="https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-320x240.jpg 320w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-728x546.jpg 728w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-480x360.jpg 480w" sizes="(max-width: 599px) 320px, (max-width: 700px) calc(50vw - 30px), 320px" alt="" data-pin-nopin="true" class="size-mv_trellis_4x3_low_res size-ratio-mv_trellis_4x3 wp-image-40823 post-nav-img ggnoads" height="240" width="320"></noscript><img src="https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-320x240.jpg.webp" srcset="https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-320x240.jpg.webp 320w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-728x546.jpg.webp 728w, https://soveryblessed.com/wp-content/uploads/2023/08/34-Bible-verses-for-mothers-day-2-480x360.jpg.webp 480w" sizes="(max-width: 599px) 320px, (max-width: 700px) calc(50vw - 30px), 320px" alt="" data-pin-nopin="true" class="size-mv_trellis_4x3_low_res size-ratio-mv_trellis_4x3 wp-image-40823 post-nav-img ggnoads lazyload" height="240" width="320" id="mv-trellis-img-2" loading="lazy" data-trellis-processed="1"></a><a href="https://soveryblessed.com/bible-verses-for-mothers-day/" rel="prev"><p class="post-title-wrap"><span class="post-title h3">34 Bible Verses for Mother’s Day </span></p></a></div><div class="nav-next"><a href="https://soveryblessed.com/bible-verses-about-compassion/" rel="next" aria-hidden="true" tabindex="-1" class="post-thumbnail"><style>img#mv-trellis-img-3::before{padding-top:75%; }img#mv-trellis-img-3{display:block;}</style><noscript><img src="https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-320x240.jpg" srcset="https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-320x240.jpg 320w, https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-728x546.jpg 728w, https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-480x360.jpg 480w" sizes="(max-width: 599px) 320px, (max-width: 700px) calc(50vw - 30px), 320px" alt="" data-pin-nopin="true" class="size-mv_trellis_4x3_low_res size-ratio-mv_trellis_4x3 wp-image-39953 post-nav-img ggnoads" height="240" width="320"></noscript><img src="https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-320x240.jpg.webp" srcset="https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-320x240.jpg.webp 320w, https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-728x546.jpg.webp 728w, https://soveryblessed.com/wp-content/uploads/2023/08/31-Bible-Verses-About-Compassion-480x360.jpg.webp 480w" sizes="(max-width: 599px) 320px, (max-width: 700px) calc(50vw - 30px), 320px" alt="" data-pin-nopin="true" class="size-mv_trellis_4x3_low_res size-ratio-mv_trellis_4x3 wp-image-39953 post-nav-img ggnoads lazyload" height="240" width="320" id="mv-trellis-img-3" loading="lazy" data-trellis-processed="1"></a><a href="https://soveryblessed.com/bible-verses-about-compassion/" rel="next"><p class="post-title-wrap"><span class="post-title h3">31 Bible Verses About Compassion</span></p></a></div></div>
+	</nav><div id="mv-trellis-comments" class="mv-trellis-comments" data-post-id="39888" style="min-height:260px;">	<div id="respond" class="">
+		<a rel="nofollow" id="cancel-comment-reply-link" href="/scriptures-on-hearing-gods-voice/#respond" style="display:none;">Click here to cancel reply.</a><form action="" method="post" id="" class="trellis-proxy-form">
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="129e1925b1" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="108"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	
+	<div class="trellis-comments">
+
+		
+			<div class="trellis-comment trellis-comment-new ">
+				<div class="trellis-comment-header">
+					<div class="trellis-comment-text">
+						<p class="trellis-comment-author">Solomon Bassey Akpan</p>
+						<p class="trellis-comment-date">Friday 26th of January 2024</p>
+					</div>
+				</div>
+				<div class="trellis-comment-content">
+					<p>God is helping us
+There is no one like our God</p>
+				</div>
+
+				
+			</div>
+			
+	</div>
+
+	</div>			</main>
+			<aside class="sidebar sidebar-primary">
+	<style>img#mv-trellis-img-4::before{padding-top:100%; }img#mv-trellis-img-4{display:block;}img#mv-trellis-img-5::before{padding-top:56.2%; }img#mv-trellis-img-5{display:block;}</style><div id="dpsp_social_media_follow-2" class="widget-container widget_dpsp_social_media_follow"><h3 class="widget-title">Let's Connect!</h3><div class="dpsp-shortcode-follow-wrapper dpsp-shape-circle dpsp-size-medium dpsp-follow-align-center dpsp-column-auto dpsp-has-spacing dpsp-no-labels dpsp-show-on-mobile dpsp-button-style-6">
+	<ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-follow dpsp-networks-btns-follow-widget dpsp-column-auto ">
+<li class="dpsp-network-list-item dpsp-network-list-item-facebook">
+	<a rel="nofollow noopener" href="https://www.facebook.com/soveryblessedblog" class="dpsp-network-btn dpsp-facebook dpsp-no-label dpsp-first" target="_blank" aria-label="Follow on Facebook" title="Follow on Facebook">	<span class="dpsp-network-icon ">
+		<span class="dpsp-network-icon-inner"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 18 32"><path d="M17.12 0.224v4.704h-2.784q-1.536 0-2.080 0.64t-0.544 1.92v3.392h5.248l-0.704 5.28h-4.544v13.568h-5.472v-13.568h-4.544v-5.28h4.544v-3.904q0-3.328 1.856-5.152t4.96-1.824q2.624 0 4.064 0.224z"></path></svg></span>
+	</span>
+	</a></li>
+
+<li class="dpsp-network-list-item dpsp-network-list-item-x">
+	<a rel="nofollow noopener" href="https://x.com/so_very_blessed" class="dpsp-network-btn dpsp-x dpsp-no-label" target="_blank" aria-label="Follow on X" title="Follow on X">	<span class="dpsp-network-icon ">
+		<span class="dpsp-network-icon-inner"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 30"><path d="M30.3 29.7L18.5 12.4l0 0L29.2 0h-3.6l-8.7 10.1L10 0H0.6l11.1 16.1l0 0L0 29.7h3.6l9.7-11.2L21 29.7H30.3z M8.6 2.7 L25.2 27h-2.8L5.7 2.7H8.6z"></path></svg></span>
+	</span>
+	</a></li>
+
+<li class="dpsp-network-list-item dpsp-network-list-item-pinterest">
+	<a rel="nofollow noopener" href="https://pinterest.com/imsoveryblessed" class="dpsp-network-btn dpsp-pinterest dpsp-no-label" target="_blank" aria-label="Follow on Pinterest" title="Follow on Pinterest">	<span class="dpsp-network-icon ">
+		<span class="dpsp-network-icon-inner"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 23 32"><path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path></svg></span>
+	</span>
+	</a></li>
+
+<li class="dpsp-network-list-item dpsp-network-list-item-instagram">
+	<a rel="nofollow noopener" href="https://www.instagram.com/soveryblessed" class="dpsp-network-btn dpsp-instagram dpsp-no-label dpsp-last" target="_blank" aria-label="Follow on Instagram" title="Follow on Instagram">	<span class="dpsp-network-icon ">
+		<span class="dpsp-network-icon-inner"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 27 32"><path d="M18.272 16q0-1.888-1.312-3.232t-3.232-1.344-3.232 1.344-1.344 3.232 1.344 3.232 3.232 1.344 3.232-1.344 1.312-3.232zM20.736 16q0 2.912-2.048 4.992t-4.96 2.048-4.992-2.048-2.048-4.992 2.048-4.992 4.992-2.048 4.96 2.048 2.048 4.992zM22.688 8.672q0 0.672-0.48 1.152t-1.184 0.48-1.152-0.48-0.48-1.152 0.48-1.152 1.152-0.48 1.184 0.48 0.48 1.152zM13.728 4.736q-0.128 0-1.376 0t-1.888 0-1.728 0.064-1.824 0.16-1.28 0.352q-0.896 0.352-1.568 1.024t-1.056 1.568q-0.192 0.512-0.32 1.28t-0.192 1.856-0.032 1.696 0 1.888 0 1.376 0 1.376 0 1.888 0.032 1.696 0.192 1.856 0.32 1.28q0.384 0.896 1.056 1.568t1.568 1.024q0.512 0.192 1.28 0.352t1.824 0.16 1.728 0.064 1.888 0 1.376 0 1.344 0 1.888 0 1.728-0.064 1.856-0.16 1.248-0.352q0.896-0.352 1.6-1.024t1.024-1.568q0.192-0.512 0.32-1.28t0.192-1.856 0.032-1.696 0-1.888 0-1.376 0-1.376 0-1.888-0.032-1.696-0.192-1.856-0.32-1.28q-0.352-0.896-1.024-1.568t-1.6-1.024q-0.512-0.192-1.248-0.352t-1.856-0.16-1.728-0.064-1.888 0-1.344 0zM27.424 16q0 4.096-0.096 5.664-0.16 3.712-2.208 5.76t-5.728 2.208q-1.6 0.096-5.664 0.096t-5.664-0.096q-3.712-0.192-5.76-2.208t-2.208-5.76q-0.096-1.568-0.096-5.664t0.096-5.664q0.16-3.712 2.208-5.76t5.76-2.208q1.568-0.096 5.664-0.096t5.664 0.096q3.712 0.192 5.728 2.208t2.208 5.76q0.096 1.568 0.096 5.664z"></path></svg></span>
+	</span>
+	</a></li>
+</ul></div>
+</div>			<div id="mv_trellis_about_widget-2" class="mv_trellis_mobile_hide widget-container mv-trellis-about-author about-author">									<div class="about-author-photo">
+						<style>.about-author-photo::before{padding-top:100%;content:"";width:100%;height:100%;position:absolute;top:0;left:0;}.about-author-photo{display:block;position:relative;width:100px;height:100px;}</style><noscript><img src="https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-200x200.jpg" srcset="https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-200x200.jpg 200w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-150x150.jpg 150w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-300x300.jpg 300w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-768x768.jpg 768w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-1024x1024.jpg 1024w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-1080x1080.jpg 1080w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-440x440.jpg 440w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-320x320.jpg 320w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic.jpg 924w" sizes="100px" class="size-mv_trellis_1x1_low_res size-ratio-mv_trellis_1x1_low_res wp-image-30887 no-lazyload" data-pin-nopin="true" alt="" height="100" width="100"></noscript><img src="https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-200x200.jpg.webp" srcset="https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-200x200.jpg.webp 200w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-150x150.jpg.webp 150w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-300x300.jpg.webp 300w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-768x768.jpg.webp 768w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-1024x1024.jpg.webp 1024w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-1080x1080.jpg.webp 1080w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-440x440.jpg.webp 440w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic-320x320.jpg.webp 320w, https://soveryblessed.com/wp-content/uploads/2018/09/Profile-Pic.jpg.webp 924w" sizes="100px" class="size-mv_trellis_1x1_low_res size-ratio-mv_trellis_1x1_low_res wp-image-30887 no-lazyload" data-pin-nopin="true" alt="" height="100" width="100" id="mv-trellis-img-4" data-trellis-processed="1">					</div>
+								<h3 class="about-author-title">Welcome to So Very Blessed!</h3>
+				<div class="about-author-content">
+					<p>Hi! I'm Becky. I'm passionate about helping women find their confidence in Christ through Scripture, prayer journaling, and gratitude.</p>
+<p>I'm also an ACE- and IHF-certified health coach who uses my own 100-pound weight loss journey to help women lose weight one small change at a time in a faith-based, grace-focused way, keeping God at the center of their weight loss journey. </p>
+<p>I've led over 37,000 women through free weight loss challenges and I also run a Christian weight loss program. I eat a healthy balance of vegetables and Nutty Bars and rarely cook the same recipe twice.</p>
+<p>I live in Texas with my husband and 2 sons, who are the loves of my life.</p>
+				</div>
+			</div>					<div style="height:264px;width:300px;margin-left:auto;margin-right:auto;padding:0px;" class="mv_atf_ad_holder mv_trellis_mobile_hide widget-container">
+				<div class="mv_slot_target" data-slot="SidebarAtf" data-hint-slot-sizes="300x250"></div>
+			</div>
+		<div id="convertkit_form-3" class="widget-container convertkit widget_convertkit_form"><script async data-uid="d7dc43af6d" src="https://so-very-blessed-llc.ck.page/d7dc43af6d/index.js" data-jetpack-boost="ignore"></script></div><div id="text-13" class="widget-container widget_text"><h3 class="widget-title">Join Our Christian Weight Loss Program!</h3>			<div class="textwidget"><p><a href="https://faithfulfinishlines.lpages.co/ffl-20-svb/"><noscript><img loading="lazy" decoding="async" class="alignnone size-full wp-image-36012" src="https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2.jpg" alt="" width="500" height="281" srcset="https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2.jpg 500w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-400x225.jpg 400w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-480x270.jpg 480w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-320x180.jpg 320w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-335x188.jpg 335w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-347x195.jpg 347w" sizes="(max-width: 500px) 100vw, 500px"></noscript><img loading="lazy" decoding="async" class="alignnone size-full wp-image-36012 lazyload" src="https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2.jpg.webp" alt="" width="500" height="281" srcset="https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2.jpg.webp 500w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-400x225.jpg.webp 400w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-480x270.jpg.webp 480w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-320x180.jpg.webp 320w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-335x188.jpg.webp 335w, https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2-347x195.jpg.webp 347w" sizes="(max-width: 500px) 100vw, 500px" data-pin-media="https://soveryblessed.com/wp-content/uploads/2020/11/FFL-2.0-Main-Photo-Collage-2.jpg" id="mv-trellis-img-5" data-trellis-processed="1"></a></p>
+</div>
+		</div><div id="text-19" class="widget-container widget_text"><h3 class="widget-title">Amazon Affiliate Disclosure</h3>			<div class="textwidget"><p>So Very Blessed LLC is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+</div>
+		</div><div id="text-16" class="mv_trellis_mobile_hide widget-container widget_text">			<div class="textwidget"><p><a href="https://soveryblessed.com/disclaimer/">Disclaimer</a> &ndash; <a href="https://soveryblessed.com/terms-conditions/">Terms &amp; Conditions</a> &ndash; <a href="https://soveryblessed.com/disclosure-policy/">Disclosure</a> &ndash; <a href="https://soveryblessed.com/privacy-policy/">Privacy Policy</a></p>
+</div>
+		</div>		<div class="mv-sticky-slot"></div>
+		</aside>
+		</div>
+	</div>
+
+		<footer class="footer">
+			<div class="wrapper wrapper-footer">
+							<div class="footer-container">
+			<div class="left-footer footer-widget-area"><div id="custom_html-3" class="widget_text widget-container widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://soveryblessed.com/disclaimer/">Disclaimer</a>&nbsp;- <a href="https://soveryblessed.com/terms-conditions/">Terms &amp; Conditions</a>&nbsp;- <a href="https://soveryblessed.com/disclosure-policy/">Disclosure</a> - <a href="https://soveryblessed.com/privacy-policy/">Privacy Policy</a></div></div>				</div>
+			<div class="middle-footer footer-widget-area">				</div>
+			<div class="right-footer footer-widget-area">				</div>
+						</div>
+			<div class="footer-copy"><p>Copyright &#xA9;&nbsp;2024 So Very Blessed  |  Trellis Framework by <a href="https://www.mediavine.com/" target="_blank" rel="noopener nofollow">Mediavine</a></p></div>			</div>
+		</footer>
+		<div id="mv-grow-data" data-settings='{&quot;general&quot;:{&quot;contentSelector&quot;:false,&quot;show_count&quot;:{&quot;content&quot;:false,&quot;sidebar&quot;:false,&quot;pop_up&quot;:false,&quot;sticky_bar&quot;:false},&quot;isTrellis&quot;:true},&quot;post&quot;:{&quot;ID&quot;:39888,&quot;categories&quot;:[{&quot;ID&quot;:1037},{&quot;ID&quot;:1606},{&quot;ID&quot;:1607},{&quot;ID&quot;:640}]},&quot;shareCounts&quot;:[],&quot;shouldRun&quot;:true,&quot;utmParams&quot;:[],&quot;pinterest&quot;:{&quot;pinDescriptionSource&quot;:&quot;post_pinterest_description&quot;,&quot;pinDescription&quot;:null,&quot;pinTitle&quot;:null,&quot;pinImageURL&quot;:null,&quot;pinnableImages&quot;:&quot;all_images&quot;,&quot;postImageHidden&quot;:null,&quot;postImageHiddenMultiple&quot;:null,&quot;lazyLoadCompatibility&quot;:null,&quot;buttonPosition&quot;:&quot;top-left&quot;,&quot;buttonShape&quot;:&quot;rectangular&quot;,&quot;showButtonLabel&quot;:&quot;yes&quot;,&quot;buttonLabelText&quot;:&quot;Save&quot;,&quot;buttonShareBehavior&quot;:&quot;post_image&quot;,&quot;hoverButtonShareBehavior&quot;:&quot;hover_image&quot;,&quot;minimumImageWidth&quot;:&quot;200&quot;,&quot;minimumImageHeight&quot;:&quot;200&quot;,&quot;showImageOverlay&quot;:null,&quot;postTypeDisplay&quot;:[&quot;post&quot;,&quot;page&quot;,&quot;leadpages_post&quot;],&quot;imagePinIt&quot;:&quot;1&quot;,&quot;hasContent&quot;:&quot;1&quot;,&quot;shareURL&quot;:&quot;https:\/\/soveryblessed.com\/scriptures-on-hearing-gods-voice\/&quot;,&quot;bypassClasses&quot;:[&quot;mv-grow-bypass&quot;,&quot;no_pin&quot;],&quot;bypassDenyClasses&quot;:[&quot;dpsp-post-pinterest-image-hidden-inner&quot;,&quot;mv-create-pinterest&quot;],&quot;ignoreSelectors&quot;:[&quot;.mv-list-img-container&quot;],&quot;hoverButtonIgnoreClasses&quot;:[&quot;lazyloaded&quot;,&quot;lazyload&quot;,&quot;td-animation-stack&quot;,&quot;ezlazyloaded&quot;,&quot;penci-lazy&quot;,&quot;ut-lazy&quot;,&quot;ut-image-loaded&quot;,&quot;ut-animated-image&quot;],&quot;disableIframes&quot;:null},&quot;buttonSVG&quot;:{&quot;share&quot;:{&quot;height&quot;:32,&quot;width&quot;:26,&quot;paths&quot;:[&quot;M20.8 20.8q1.984 0 3.392 1.376t1.408 3.424q0 1.984-1.408 3.392t-3.392 1.408-3.392-1.408-1.408-3.392q0-0.192 0.032-0.448t0.032-0.384l-8.32-4.992q-1.344 1.024-2.944 1.024-1.984 0-3.392-1.408t-1.408-3.392 1.408-3.392 3.392-1.408q1.728 0 2.944 0.96l8.32-4.992q0-0.128-0.032-0.384t-0.032-0.384q0-1.984 1.408-3.392t3.392-1.408 3.392 1.376 1.408 3.424q0 1.984-1.408 3.392t-3.392 1.408q-1.664 0-2.88-1.024l-8.384 4.992q0.064 0.256 0.064 0.832 0 0.512-0.064 0.768l8.384 4.992q1.152-0.96 2.88-0.96z&quot;]},&quot;facebook&quot;:{&quot;height&quot;:32,&quot;width&quot;:18,&quot;paths&quot;:[&quot;M17.12 0.224v4.704h-2.784q-1.536 0-2.080 0.64t-0.544 1.92v3.392h5.248l-0.704 5.28h-4.544v13.568h-5.472v-13.568h-4.544v-5.28h4.544v-3.904q0-3.328 1.856-5.152t4.96-1.824q2.624 0 4.064 0.224z&quot;]},&quot;twitter&quot;:{&quot;height&quot;:30,&quot;width&quot;:32,&quot;paths&quot;:[&quot;M30.3 29.7L18.5 12.4l0 0L29.2 0h-3.6l-8.7 10.1L10 0H0.6l11.1 16.1l0 0L0 29.7h3.6l9.7-11.2L21 29.7H30.3z M8.6 2.7 L25.2 27h-2.8L5.7 2.7H8.6z&quot;]},&quot;pinterest&quot;:{&quot;height&quot;:32,&quot;width&quot;:23,&quot;paths&quot;:[&quot;M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z&quot;]},&quot;instagram&quot;:{&quot;height&quot;:32,&quot;width&quot;:27,&quot;paths&quot;:[&quot;M18.272 16q0-1.888-1.312-3.232t-3.232-1.344-3.232 1.344-1.344 3.232 1.344 3.232 3.232 1.344 3.232-1.344 1.312-3.232zM20.736 16q0 2.912-2.048 4.992t-4.96 2.048-4.992-2.048-2.048-4.992 2.048-4.992 4.992-2.048 4.96 2.048 2.048 4.992zM22.688 8.672q0 0.672-0.48 1.152t-1.184 0.48-1.152-0.48-0.48-1.152 0.48-1.152 1.152-0.48 1.184 0.48 0.48 1.152zM13.728 4.736q-0.128 0-1.376 0t-1.888 0-1.728 0.064-1.824 0.16-1.28 0.352q-0.896 0.352-1.568 1.024t-1.056 1.568q-0.192 0.512-0.32 1.28t-0.192 1.856-0.032 1.696 0 1.888 0 1.376 0 1.376 0 1.888 0.032 1.696 0.192 1.856 0.32 1.28q0.384 0.896 1.056 1.568t1.568 1.024q0.512 0.192 1.28 0.352t1.824 0.16 1.728 0.064 1.888 0 1.376 0 1.344 0 1.888 0 1.728-0.064 1.856-0.16 1.248-0.352q0.896-0.352 1.6-1.024t1.024-1.568q0.192-0.512 0.32-1.28t0.192-1.856 0.032-1.696 0-1.888 0-1.376 0-1.376 0-1.888-0.032-1.696-0.192-1.856-0.32-1.28q-0.352-0.896-1.024-1.568t-1.6-1.024q-0.512-0.192-1.248-0.352t-1.856-0.16-1.728-0.064-1.888 0-1.344 0zM27.424 16q0 4.096-0.096 5.664-0.16 3.712-2.208 5.76t-5.728 2.208q-1.6 0.096-5.664 0.096t-5.664-0.096q-3.712-0.192-5.76-2.208t-2.208-5.76q-0.096-1.568-0.096-5.664t0.096-5.664q0.16-3.712 2.208-5.76t5.76-2.208q1.568-0.096 5.664-0.096t5.664 0.096q3.712 0.192 5.728 2.208t2.208 5.76q0.096 1.568 0.096 5.664z&quot;]}}}'></div>		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<link rel="preconnect" href="https://www.google-analytics.com">
+		<link rel="preconnect" href="https://stats.g.doubleclick.net">
+		<script>
+							setTimeout(function(){
+						window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+							gtag('config', 'UA-70790145-1', {'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false});
+						
+							}, 3000);
+					</script>
+		    <!-- Meta Pixel Event Code -->
+    <script type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+    <!-- End Meta Pixel Event Code -->
+    <div id='fb-pxl-ajax-code'></div><script type="text/javascript" id="convertkit-broadcasts-js-extra">
+/* <![CDATA[ */
+var convertkit_broadcasts = {"ajax_url":"https:\/\/soveryblessed.com\/wp-admin\/admin-ajax.php","action":"convertkit_broadcasts_render","debug":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="convertkit-broadcasts-js" class="mv-trellis-script" src="https://soveryblessed.com/wp-content/mvt-js/1/0ff28cebd07d762307032a662c9b0d99.min.js" defer data-noptimize data-handle="convertkit-broadcasts"></script>
+<script type="text/javascript" id="convertkit-js-js-extra">
+/* <![CDATA[ */
+var convertkit = {"ajaxurl":"https:\/\/soveryblessed.com\/wp-admin\/admin-ajax.php","debug":"1","nonce":"3e2d0ac91f","subscriber_id":"","tag":"","post_id":"39888"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="convertkit-js-js" class="mv-trellis-script" src="https://soveryblessed.com/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js" defer data-noptimize data-handle="convertkit-js"></script>
+<script type="text/javascript" id="wpil-frontend-script-js-extra">
+/* <![CDATA[ */
+var wpilFrontend = {"ajaxUrl":"\/wp-admin\/admin-ajax.php","postId":"39888","postType":"post","openInternalInNewTab":"0","openExternalInNewTab":"0","disableClicks":"0","openLinksWithJS":"0","trackAllElementClicks":"0","clicksI18n":{"imageNoText":"Image in link: No Text","imageText":"Image Title: ","noText":"No Anchor Text Found"}};
+/* ]]> */
+</script>
+<script type="text/javascript" id="wpil-frontend-script-js" class="mv-trellis-script" src="https://soveryblessed.com/wp-content/plugins/link-whisper-premium/js/frontend.min.js" defer data-noptimize data-handle="wpil-frontend-script"></script>
+<script type="text/javascript" id="dpsp-frontend-js-pro-js-before">
+/* <![CDATA[ */
+		var dpsp_pin_button_data = {"pin_description_source":"post_pinterest_description","pinterest_pinnable_images":"all_images","pinterest_button_share_behavior":"post_image","button_position":"top_left","button_shape":"rectangular","minimum_image_width":"200","minimum_image_height":"200","show_button_text_label":"yes","button_text_label":"Save","button_share_behavior":"hover_image","post_type_display":["post","page","leadpages_post"]}
+	
+/* ]]> */
+</script>
+<script type="text/javascript" async data-noptimize src="https://soveryblessed.com/wp-content/plugins/social-pug/assets/dist/front-end-pro.js" id="dpsp-frontend-js-pro-js"></script>
+<script type="text/javascript" id="mv-trellis-js-extra">
+/* <![CDATA[ */
+var mvt = {"version":"0.18.1","options":{"register_pwa":true,"require_name_email":true},"rest_url":"https:\/\/soveryblessed.com\/wp-json\/","site_url":"https:\/\/soveryblessed.com","img_host":"soveryblessed.com","theme_directory":"https:\/\/soveryblessed.com\/wp-content\/themes\/mediavine-trellis","pwa_version":"97889","comments":{"order":"desc","per_page":50,"page_comments":false,"enabled":true,"has_comments":"1"},"i18n":{"COMMENTS":"Comments","REPLY":"Reply","COMMENT":"Comment","COMMENT_PLACEHOLDER":"Write your comment...","REPLY_PLACEHOLDER":"Write your reply...","NAME":"Name","EMAIL":"Email","AT":"at","SHOW_MORE":"Show More Comments","LOADING":"Loading...","PLEASE_WAIT":"Please wait...","COMMENT_POSTED":"Comment posted!","FLOOD_MESSAGE":"Please wait before posting another comment.","FLOOD_HEADER":"Slow down, you're commenting too quickly!","DUPLICATE_MESSAGE":"It looks as though you've already said that!","DUPLICATE_HEADER":"Duplicate comment detected","INVALID_PARAM_MESSAGE":"Please check your email address.","INVALID_PARAM_HEADER":"Invalid email address","INVALID_CONTENT_MESSAGE":"Please check your comment before sending it again.","INVALID_CONTENT_HEADER":"Invalid content","AUTHOR_REQUIRED_MESSAGE":"Creating a comment requires valid author name and email values.","AUTHOR_REQUIRED_HEADER":"Missing some fields","GENERIC_ERROR":"Something went wrong."}};
+/* ]]> */
+</script>
+<script id="mv-trellis-js" type="text/javascript" class="mv-trellis-script" src="https://soveryblessed.com/wp-content/themes/mediavine-trellis/assets/dist/main.0.18.1.js" defer data-noptimize data-handle="mv-trellis"></script><script defer type="text/javascript" src="https://soveryblessed.com/wp-content/plugins/akismet/_inc/akismet-frontend.js" id="akismet-frontend-js"></script>
+<script>ipInited=!1;
+function loadIP(){if(ipInited)return;ipInited=!0;console.log("load instant.page js");
+var s=document.createElement("script");s.onload=function(){};s.src="//instant.page/2.0.0";s.setAttribute("type","module");s.setAttribute("integrity","sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8");document.head.appendChild(s);}
+document.addEventListener("mousemove",loadIP);
+document.addEventListener("resize",loadIP);
+document.addEventListener("touchstart",loadIP)</script>	</body>
+</html>

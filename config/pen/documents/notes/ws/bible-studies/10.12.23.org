@@ -1,0 +1,154 @@
+* TODO Make a lisp version of bash (bpl) - simply generate bash with elisp macros
+
+Similar to this:
+- e:/root/.emacs.d/host/pen.el/src/pen-epl.el
+- e:/root/.emacs.d/host/pen.el/src/pen-epl-test.epl
+
+EBL:
+- e:/root/.emacs.d/host/pen.el/src/pen-ebl.el
+- e:/root/.emacs.d/host/pen.el/src/pen-ebl-test.el
+
+* DONE Make it so when I interact with the following link from my notes, properties are NOT added to all my notes org headings
+[[brain:agenda/agenda::Church]]
+
+Problematic code:
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  v +/"ensure-dir-is-idified" "$EMACSD/pen.el/src/pen-org-brain.el"
+#+END_SRC
+
+* ALC
+** Topic: Christmas
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matthew 11:29-30
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 11:29-30
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Take My yoke upon you and learn from Me, for I
+am gentle and humble in heart, and you will
+find rest for your souls.
+
+For My yoke is easy and My burden is light.”
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 2:10-14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 2:10-14
+‾‾‾‾‾‾‾‾‾‾‾‾
+But the angel said to them, “Do not be afraid;
+for behold, I bring you good news of great joy
+which will be for all the people; for today in
+the city of David there has been born for you
+a Savior, who is Christ the Lord.
+
+This will be a sign for you: you will find a
+baby wrapped in cloths and lying in a manger.”
+And suddenly there appeared with the angel a
+multitude of the heavenly host praising God
+and saying, “Glory to God in the highest, And
+on earth peace among men with whom He is
+pleased.”
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Rev 17:14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Revelation 17:14
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+These will wage war against the Lamb, and the
+Lamb will overcome them, because He is Lord of
+lords and King of kings, and those who are
+with Him are the called and chosen and
+faithful.”
+
+(NASB)
+#+end_src
+
+Please, LORD let me be called chosen and faithful to You.
+Thank You LORD!
+
+- Walk in greater joy and power, growing in love
+- allow His perfect plan to develop and unfold
+
+Ephesians:
+- Speaking the truth in love
+  - [[bible:Ephesians 4:15]]
+
+Grow and become more mature and developed in Christ.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 6:40
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+John 6:40
+‾‾‾‾‾‾‾‾‾
+For this is the will of My Father, that
+everyone who beholds the Son and believes in
+Him will have eternal life, and I Myself will
+raise him up on the last day.”
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 21:36
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 21:36
+‾‾‾‾‾‾‾‾‾‾
+But keep on the alert at all times, praying
+that you may have strength to escape all these
+things that are about to take place, and to
+stand before the Son of Man.”
+
+(NASB)
+#+end_src
+
+John 14:3
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Rev 19:4-6
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Revelation 19:4-6
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+And the twenty-four elders and the four living
+creatures fell down and worshiped God who sits
+on the throne saying, “Amen.
+
+Hallelujah!” And a voice came from the throne,
+saying, “Give praise to our God, all you His
+bond-servants, you who fear Him, the small and
+the great.” Then I heard something like the
+voice of a great multitude and like the sound
+of many waters and like the sound of mighty
+peals of thunder, saying, “Hallelujah! For the
+Lord our God, the Almighty, reigns.
+
+(NASB)
+#+end_src
+
+* 
+- For those who love Him
+- called, chosen and faithful

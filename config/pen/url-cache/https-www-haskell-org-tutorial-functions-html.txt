@@ -1,0 +1,392 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:03:47 GMT
+Content-Type: text/html
+Content-Length: 19305
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-4b69"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Functions</title>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="goodies.html">back</a> <a href="patterns.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-functions"></a><p>
+<a name="sect3"></a>
+<h2>3<tt>&nbsp;&nbsp;</tt>Functions</h2>
+<p>
+Since Haskell is a functional language, one would expect functions to
+play a major role, and indeed they do.  In this section, we look at
+several aspects of functions in Haskell.<p>
+First, consider this definition of a function which adds its two
+arguments:
+<tt><br>
+
+<br>
+add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Integer&nbsp;-&gt;&nbsp;Integer&nbsp;-&gt;&nbsp;Integer<br>
+add&nbsp;x&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;+&nbsp;y<br>
+
+<br>
+
+</tt>This is an example of a <I>curried</I> function. (The name 
+<I>curry</I> derives from the person who popularized the idea: Haskell
+Curry.  To get the effect of an <I>uncurried</I> function, we could use
+a <I>tuple</I>, as in:
+<tt><br>
+
+<br>
+add&nbsp;(x,y)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x&nbsp;+&nbsp;y<br>
+
+<br>
+
+</tt>But then we see that this version of <tt>add</tt> is really just a function
+of one argument!) An application of <tt>add</tt> has the form <tt>add&nbsp;</tt>e<sub>1</sub>
+e<sub>2</sub>, and is equivalent to <tt>(add&nbsp;</tt>e<sub>1</sub><tt>)&nbsp;</tt>e<sub>2</sub>, since function
+application associates to the <I>left</I>.  In other words, applying
+<tt>add</tt> to one argument yields a new function which is then applied to
+the second argument.  This is consistent with the type of <tt>add</tt>,
+<tt>Integer-&gt;Integer-&gt;Integer</tt>, which is equivalent to
+<tt>Integer-&gt;(Integer-&gt;Integer)</tt>; i.e. <tt>-&gt;</tt> 
+associates to the <I>right</I>.  Indeed, using <tt>add</tt>, we can define
+<tt>inc</tt> in a different way from earlier:
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;add&nbsp;1<br>
+
+<br>
+
+</tt>This is an example of the <I>partial application</I> of a curried
+function, and is one way that a function can be returned as a value.
+Let's consider a case in which it's useful to pass a function as an
+argument.  The well-known <tt>map</tt> function is a perfect example:
+<tt><br>
+
+<br>
+map&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a-&gt;b)&nbsp;-&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;[b]<br>
+map&nbsp;f&nbsp;&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[]<br>
+map&nbsp;f&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;f&nbsp;x&nbsp;:&nbsp;map&nbsp;f&nbsp;xs<br>
+
+<br>
+
+</tt>[Function application has higher precedence than any infix
+operator, and thus the right-hand side of the second equation parses
+as <tt>(f&nbsp;x)&nbsp;:&nbsp;(map&nbsp;f&nbsp;xs)</tt>.]   The <tt>map</tt> function is polymorphic and
+its type indicates clearly that its first argument is a function; note
+also that the two <tt>a</tt>'s must be instantiated with the same type
+(likewise for the <tt>b</tt>'s).  As an example of the use of <tt>map</tt>, we can
+increment the elements in a list:
+<p>
+
+<tt>map&nbsp;(add&nbsp;1)&nbsp;[1,2,3]</tt>    =&gt;    <tt>[2,3,4]
+<p>
+<p>
+</tt>These examples demonstrate the first-class nature of functions, which
+when used in this way are usually called <I>higher-order</I> functions.<a name="tut-lambda"></a><p>
+<a name="sect3.1"></a>
+<h3>3.1<tt>&nbsp;&nbsp;</tt>Lambda Abstractions</h3>
+<p>
+Instead of using equations to define functions, we can also define
+them "anonymously" via a <I>lambda abstraction</I>.  For example, a
+function equivalent to <tt>inc</tt> could be written as <tt>\x&nbsp;-&gt;&nbsp;x+1</tt>.
+Similarly, the function <tt>add</tt> is equivalent to <tt>\x&nbsp;-&gt;&nbsp;\y&nbsp;-&gt;&nbsp;x+y</tt>.
+Nested lambda abstractions such as this may be written using the
+equivalent shorthand notation <tt>\x&nbsp;y&nbsp;-&gt;&nbsp;x+y</tt>.  In fact, the equations:
+<tt><br>
+
+<br>
+inc&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x+1<br>
+add&nbsp;x&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x+y<br>
+
+<br>
+
+</tt>are really shorthand for:
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;\x&nbsp;&nbsp;&nbsp;-&gt;&nbsp;x+1<br>
+add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;\x&nbsp;y&nbsp;-&gt;&nbsp;x+y<br>
+
+<br>
+
+</tt>We will have more to say about such equivalences later.<p>
+In general, given that <tt>x</tt> has type t<sub>1</sub> and <tt>exp</tt> has type t<sub>2</sub>,
+then <tt>\x-&gt;exp</tt> has type t<sub>1</sub><tt>-&gt;</tt>t<sub>2</sub>.<a name="tut-infix-ops"></a><p>
+<a name="sect3.2"></a>
+<h3>3.2<tt>&nbsp;&nbsp;</tt>Infix Operators</h3>
+<p>
+Infix operators are really just functions, and can also be defined
+using equations.  For example, here is a definition of a
+list concatenation operator:
+<tt><br>
+
+<br>
+(++)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;[a]&nbsp;-&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;[a]<br>
+[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++&nbsp;ys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;ys<br>
+(x:xs)&nbsp;++&nbsp;ys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;:&nbsp;(xs++ys)<br>
+
+<br>
+
+</tt>[Lexically, infix operators consist entirely of "symbols," as
+opposed to normal identifiers which are alphanumeric (<a href="../onlinereport/lexemes.html#ids">&sect;2.4</a>).
+Haskell has no prefix operators, with the exception of minus (<tt>-</tt>),
+which is both infix and prefix.]<p>
+As another example, an important infix operator on functions is that
+for <I>function composition</I>:
+<tt><br>
+
+<br>
+(.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(b-&gt;c)&nbsp;-&gt;&nbsp;(a-&gt;b)&nbsp;-&gt;&nbsp;(a-&gt;c)<br>
+f&nbsp;.&nbsp;g&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;\&nbsp;x&nbsp;-&gt;&nbsp;f&nbsp;(g&nbsp;x)<br>
+
+<br>
+<a name="tut-sections"></a><p>
+</tt><a name="sect3.2.1"></a>
+<h4>3.2.1<tt>&nbsp;&nbsp;</tt>Sections</h4>
+<p>
+Since infix operators are really just functions, it makes sense to be
+able to partially apply them as well.  In Haskell the partial
+application of an infix operator is called a <I>section</I>.  For
+example:
+<p>
+<table >
+<tr><td align=center>
+<tt>(x+)</tt>    </td><td align=center>=</td><td align=center>    <tt>\y&nbsp;-&gt;&nbsp;x+y</tt>  </td></tr><tr><td align=center><tt>(+y)</tt>    </td><td align=center>=</td><td align=center>    <tt>\x&nbsp;-&gt;&nbsp;x+y</tt>  </td></tr><tr><td align=center><tt>(+)</tt>     </td><td align=center>=</td><td align=center>    <tt>\x&nbsp;y&nbsp;-&gt;&nbsp;x+y
+</tt></td></tr></table>
+<p>
+
+[The parentheses are mandatory.]<p>
+The last form of section given above essentially coerces an infix
+operator into an equivalent functional value, and is handy when
+passing an infix operator as an argument to a function, as in 
+<tt>map&nbsp;(+)&nbsp;[1,2,3]</tt> (the reader should verify that this returns a list
+of functions!).  It is also necessary when giving a function type
+signature, as in the examples of <tt>(++)</tt> and <tt>(.)</tt> given earlier.<p>
+We can now see that <tt>add</tt> defined earlier is just <tt>(+)</tt>, and <tt>inc</tt> is
+just <tt>(+1)</tt>!  Indeed, these definitions would do just fine:
+<tt><br>
+
+<br>
+inc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(+&nbsp;1)<br>
+add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(+)<br>
+
+<br>
+<p>
+</tt>We can coerce an infix operator into a functional value, but can we go
+the other way?  Yes---we simply enclose an identifier bound to a
+functional value in backquotes.  For example, <tt>x&nbsp;`add`&nbsp;y</tt> is the same
+as <tt>add&nbsp;x&nbsp;y</tt>. (Note carefully that <tt>add</tt> is enclosed in 
+<I>backquotes</I>, not <I>apostrophes</I> as used in the syntax of
+characters; i.e. <tt>'f'</tt> is a character, whereas <tt>`f`</tt> is an infix
+operator.  Fortunately, most ASCII terminals distinguish these much
+better than the font used in this manuscript.) Some functions read
+better this way.  An example is the predefined list membership
+predicate <tt>elem</tt>; the expression <tt>x&nbsp;`elem`&nbsp;xs</tt> can be read intuitively
+as "<tt>x</tt> is an element of <tt>xs</tt>."<p>
+[There are some special rules regarding sections involving
+the prefix/infix operator <tt>-</tt>; see (<a href="../onlinereport/exps.html#sections">&sect;3.5</a>,<a href="../onlinereport/exps.html#operators">&sect;3.4</a>).]<p>
+At this point, the reader may be confused at having so many ways to
+define a function!  The decision to provide these mechanisms partly
+reflects historical conventions, and partly reflects the desire for
+consistency (for example, in the treatment of infix vs. regular
+functions).<p>
+<a name="sect3.2.2"></a>
+<h4>3.2.2<tt>&nbsp;&nbsp;</tt>Fixity Declarations</h4><p>
+A <I>fixity declaration</I> can be given for any infix operator or
+constructor (including those made from ordinary identifiers, such as
+<tt>`elem`</tt>).
+This declaration specifies a precedence level from
+0 to 9 (with 9 being the strongest; normal application is assumed to
+have a precedence level of 10), and left-, right-, or
+non-associativity.  For example, the fixity declarations for <tt>++</tt> and
+<tt>.</tt> are:
+<tt><br>
+
+<br>
+infixr&nbsp;5&nbsp;++<br>
+infixr&nbsp;9&nbsp;.<br>
+
+<br>
+
+</tt>Both of these specify right-associativity, the first with a precedence
+level of 5, the other 9.  Left associativity is specified via
+<tt>infixl</tt>, and non-associativity by <tt>infix</tt>.  Also, the fixity of more
+than one operator may be specified with the same fixity declaration.
+If no fixity declaration is given for a particular operator, it
+defaults to <tt>infixl&nbsp;9</tt>.  (See <a href="../onlinereport/modules.html#fixity">&sect;4.4.2</a> for a detailed definition
+of the associativity rules.)<a name="tut-non-strict"></a><p>
+<a name="sect3.3"></a>
+<h3>3.3<tt>&nbsp;&nbsp;</tt>Functions are Non-strict</h3>
+<p>
+Suppose <tt>bot</tt> is defined by:
+<tt><br>
+
+<br>
+bot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;bot<br>
+
+<br>
+
+</tt>In other words, <tt>bot</tt> is a non-terminating expression.  Abstractly, we
+denote the <I>value</I> of a non-terminating expression as _|_ (read
+"bottom").  Expressions that result in some kind of a run-time
+error, such as <tt>1/0</tt>, also have this value.  Such an error is not
+recoverable: programs will not continue past these errors.  Errors
+encountered by the I/O system, such as an end-of-file error, are
+recoverable and are handled in a different manner.  (Such an I/O error
+is really not an error at all but rather an exception.  Much more will
+be said about exceptions in Section <a href="io.html#tut-io">7</a>.)<p>
+A function <tt>f</tt> is said to be <I>strict</I> if, when applied to a
+nonterminating expression, it also fails to terminate.  In other
+words, <tt>f</tt> is strict iff the value of <tt>f&nbsp;bot</tt> is _|_.  For most
+programming languages, <I>all</I> functions are strict.  But this is
+not so in Haskell.  As a simple example, consider <tt>const1</tt>, the
+constant 1 function, defined by:
+<tt><br>
+
+<br>
+const1&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1<br>
+
+<br>
+
+</tt>The value of <tt>const1&nbsp;bot</tt> in Haskell is <tt>1</tt>.  Operationally speaking,
+since <tt>const1</tt> does not "need" the value of its argument, it never
+attempts to evaluate it, and thus never gets caught in a
+nonterminating computation.  For this reason, non-strict functions are
+also called "lazy functions", and are said to evaluate their
+arguments "lazily", or "by need".<p>
+Since error and nonterminating values are semantically the same in
+Haskell, the above argument also holds for errors.  For example,
+<tt>const1&nbsp;(1/0)</tt> also evaluates properly to <tt>1</tt>.<p>
+Non-strict functions are extremely useful in a variety of contexts.
+The main advantage is that they free the programmer from many concerns
+about evaluation order.  Computationally expensive values may be
+passed as arguments to functions without fear of them being computed
+if they are not needed.  An important example of this is a possibly
+<I>infinite</I> data structure.<p>
+Another way of explaining non-strict functions is that Haskell
+computes using <I>definitions</I> rather than the <I>assignments</I> found in
+traditional languages.  Read a declaration such as 
+<tt><br>
+
+<br>
+v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+<br>
+
+</tt>as `define <tt>v</tt> as <tt>1/0</tt>' instead of `compute <tt>1/0</tt> and store the
+result in <tt>v</tt>'.  Only if the value (definition) of <tt>v</tt> is needed
+will the division by zero error occur.  By itself, this
+declaration does not imply any computation.   Programming using
+assignments requires careful attention to the ordering of the
+assignments: the meaning of the program depends on the order in which
+the assignments are executed.  Definitions, in contrast, are much
+simpler: they can be presented in any order without affecting the
+meaning of the program.  <a name="tut-infinite"></a><p>
+<a name="sect3.4"></a>
+<h3>3.4<tt>&nbsp;&nbsp;</tt>"Infinite" Data Structures</h3>
+<p>
+One advantage of the non-strict nature of Haskell is that data
+constructors are non-strict, too.  This should not be surprising,
+since constructors are really just a special kind of function (the
+distinguishing feature being that they can be used in pattern
+matching).  For example, the constructor for lists, <tt>(:)</tt>, is
+non-strict.<p>
+Non-strict constructors permit the definition of (conceptually) 
+<I>infinite</I> data structures.  Here is an infinite list of ones:
+<tt><br>
+
+<br>
+ones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1&nbsp;:&nbsp;ones<br>
+
+<br>
+
+</tt>Perhaps more interesting is the function <tt>numsFrom</tt>:
+<tt><br>
+
+<br>
+numsFrom&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;n&nbsp;:&nbsp;numsFrom&nbsp;(n+1)<br>
+
+<br>
+
+</tt>Thus <tt>numsFrom&nbsp;n</tt> is the infinite list of successive integers
+beginning with <tt>n</tt>.  From it we can construct an infinite list of
+squares:
+<tt><br>
+
+<br>
+squares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;map&nbsp;(^2)&nbsp;(numsfrom&nbsp;0)<br>
+
+<br>
+
+</tt>(Note the use of a section; <tt>^</tt> is the infix exponentiation operator.)<p>
+Of course, eventually we expect to extract some finite portion of the
+list for actual computation, and there are lots of predefined
+functions in Haskell that do this sort of thing: <tt>take</tt>, <tt>takeWhile</tt>,
+<tt>filter</tt>, and others.  The definition of Haskell includes a large set
+of built-in functions and types---this is called the "Standard
+Prelude".   The complete Standard Prelude is included in Appendix A of
+the Haskell report; see the portion named <tt>PreludeList</tt> for many
+useful functions involving lists.  For example, <tt>take</tt> removes the first <tt>n</tt> 
+elements from a list:
+<p>
+<tt>take&nbsp;5&nbsp;squares</tt>    =&gt;    <tt>[0,1,4,9,16]</tt> <p>
+<p>
+The definition of <tt>ones</tt> above is an example of a <I>circular list</I>.
+In most circumstances laziness has an important impact on efficiency,
+since an implementation can be expected to implement the list as a
+true circular structure, thus saving space.  <p>
+For another example of the use of circularity, the Fibonacci sequence
+can be computed efficiently as the following infinite sequence:
+<tt><br>
+
+<br>
+fib&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1&nbsp;:&nbsp;1&nbsp;:&nbsp;[&nbsp;a+b&nbsp;|&nbsp;(a,b)&nbsp;&lt;-&nbsp;zip&nbsp;fib&nbsp;(tail&nbsp;fib)&nbsp;]<br>
+
+<br>
+
+</tt>where <tt>zip</tt> is a Standard Prelude function that returns the pairwise
+interleaving of its two list arguments:
+<tt><br>
+
+<br>
+zip&nbsp;(x:xs)&nbsp;(y:ys)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(x,y)&nbsp;:&nbsp;zip&nbsp;xs&nbsp;ys<br>
+zip&nbsp;&nbsp;xs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[]<br>
+
+<br>
+
+</tt>Note how <tt>fib</tt>, an infinite list, is defined in terms of itself, as if
+it were "chasing its tail."  Indeed, we can draw a picture of this
+computation as shown in Figure 1.
+<div align=center><img src="fig1.gif" alt="Fib Example"> 
+<h4>Figure 1</h4> </div>
+<p>
+For another application of infinite lists, see Section <a href="patterns.html#tut-lazy-patterns">4.4</a>.<p>
+<a name="sect3.5"></a>
+<h3>3.5<tt>&nbsp;&nbsp;</tt>The Error Function</h3><p>
+Haskell has a built-in function called <tt>error</tt> whose type is
+<tt>String-&gt;a</tt>.  This is a somewhat odd function: From its type it looks
+as if it is returning a value of a polymorphic type about which it
+knows nothing, since it never receives a value of that type as an
+argument!<p>
+In fact, there <I>is</I> one value "shared" by all types: _|_.
+Indeed, semantically that is exactly what value is always returned by
+<tt>error</tt> (recall that all errors have value _|_).  However, we can
+expect that a reasonable implementation will print the string argument
+to <tt>error</tt> for diagnostic purposes.  Thus this function is useful when
+we wish to terminate a program when something has "gone wrong."  For
+example, the actual definition of <tt>head</tt> taken from the Standard
+Prelude is:
+<tt><br>
+
+<br>
+head&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x<br>
+head&nbsp;&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;error&nbsp;"head{PreludeList}:&nbsp;head&nbsp;[]"<br>
+
+<br>
+
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="goodies.html">back</a> <a href="patterns.html">next</a> <a href="index.html">top</a>
+<p>
+</tt> 

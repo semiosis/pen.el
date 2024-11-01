@@ -1,0 +1,10 @@
+
+
+incrementStateDefined :: State Int Int
+incrementStateDefined =
+
+decrementState :: State Int Int
+decrementState = do
+  n <- get
+ 
+-- same state monad, but

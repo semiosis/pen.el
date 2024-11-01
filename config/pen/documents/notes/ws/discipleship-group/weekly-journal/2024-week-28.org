@@ -1,0 +1,82 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 28
+
+* D-Group weekly session notes
+Started working on it: <2024-07-12 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=z6vR_FV7s7c][youtube.com: 4 Hours Best TOP 27 Worship Piano Instrumental for Prayer and Meditation e,?e??i??i??]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage  |
+|---------------------+---------------+------------------------+---------------------+----------------|
+| [[sh:bible-read-passage nasb Matthew 6:9-11 ][Matthew 6:9-11]]      | [[sh:bible-study-passage nasb Colossians 4 ][Colossians 4]]  | [[sh:bible-study-passage nasb Esther 5-7 ][Esther 5-7]]             | [[sh:bible-read-passage nasb 1 Samuel 16:7 ][1 Samuel 16:7]]       | [[sh:bible-study-passage nasb I Samuel 16-20 ][I Samuel 16-20]] |
+|                     | [[sh:bible-study-passage nasb Ephesians 1-4 ][Ephesians 1-4]] | [[sh:bible-study-passage nasb Esther 8-10 ][Esther 8-10]]            |                     | [[sh:bible-study-passage nasb Psalm 129-133 ][Psalm 129-133]]  |
+|                     |               | [[sh:bible-study-passage nasb Nehemiah 3-4 ][Nehemiah 3-4]]           |                     |                |
+|                     |               | [[sh:bible-study-passage nasb Nehemiah 5-6 ][Nehemiah 5-6]]           |                     |                |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 6:9-11
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 6:9
+‾‾‾‾‾‾‾‾‾‾‾
+“Pray, then, in this way: ‘Our Father who is
+in heaven, Hallowed be Your name.
+
+Matthew 6:10
+‾‾‾‾‾‾‾‾‾‾‾‾
+‘Your kingdom come. Your will be done, On earth
+as it is in heaven.
+
+Matthew 6:11
+‾‾‾‾‾‾‾‾‾‾‾‾
+‘Give us this day our daily bread.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  1 Samuel 16:7
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+I Samuel 16:7
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+But the LORD said to Samuel, “Do not look at
+his appearance or at the height of his stature,
+because I have rejected him; for God sees not as
+man sees, for man looks at the outward
+appearance, but the LORD looks at the heart.”
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

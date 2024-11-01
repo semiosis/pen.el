@@ -1,0 +1,6 @@
+title: j1-jumbo
+include: Generic completion 50 tokens/1
+tags: fundamental
+prompt-version: 1
+engine: AI21 J1-Jumbo
+max-generated-tokens: 100

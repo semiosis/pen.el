@@ -1,0 +1,12 @@
+loading"
+-"pokemon"
+-"movies"
+-"music"
+-"coding"
+-"gym"
+-"diet"
+-"health"
+"
+  sleep 2
+  echo "Which one do you want to start with?"
+  read idea

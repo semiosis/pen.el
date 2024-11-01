@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: case
+# key: case
+# --
+(pcase type
+("custom-id" (concat "#" path))
+("coderef" (format "(%s)" path))
+(_ path))
+
+(cond ((numberp x) x)
+((stringp x) x)
+((bufferp x)
+(setq temporary-hack x) ; multiple body-forms
+(buffer-name x))        ; in one clause
+((symbolp x) (symbol-value x)))
+
+(case (read-char)
+(?a (do-a-thing))
+(?b (do-b-thing))
+((?\r ?\n) (do-ret-thing))
+(t (do-other-thing)))

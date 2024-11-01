@@ -1,0 +1,24 @@
+VIM(1)                     User Commands                    VIM(1)
+
+NAME
+       vim - Vi IMproved, a programmers text editor
+
+SYNOPSIS
+       vim [option] [file ...]
+
+DESCRIPTION
+       Vim is a very powerful text editor. It is an improved version of the vi editor distributed with most UNIX systems.  Vim can
+       be used to edit both the command line and the shell command line.  It is an interactive editor that never stops editing.
+       You can be always in one of two states: insert mode or command mode.  In insert mode you can type text and in command mode
+       you can issue commands.  Commands are preceded by a colon (:).
+
+       Vim has a built-in help system.  If you are in command mode and type the command :help, you will be taken to the help screen.
+       If you are in insert mode and type the command :help, you will be taken to a help screen that describes the insert mode.
+       If you are in insert mode and type the command :help [topic], you will be taken to the help screen that describes the
+       topic.  If you are in command mode and type the command :help [topic], you will be taken to the help screen that describes
+       the topic in the command mode.
+
+       There are many other options and features.  For more information type :help and read the help file.
+
+       To read the manual, start Vim and type :help.  This manual is also available on the vim web site, http://www.vim.org/.
+       There is a mailing list for Vim users at http://vim.org/mail.html

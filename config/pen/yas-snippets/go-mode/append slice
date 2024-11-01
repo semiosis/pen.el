@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: append slice
+# key: as
+# --
+s = append(s, 2, 3, 4)

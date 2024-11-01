@@ -1,0 +1,12 @@
+CRC-MACHINE-CLI(1)                     User Commands                    CRC-MACHINE-CLI(1)
+
+NAME
+       crc-machine-cli -- command line interface to CRC-Machine
+
+SYNOPSIS
+       crc-machine-cli [OPTION]... [FILE]...
+
+DESCRIPTION
+       This is a command line interface to CRC-Machine. It is used to
+       calculate the CRC of a file, or to calculate the CRC of a file
+       and compare it to a given CRC

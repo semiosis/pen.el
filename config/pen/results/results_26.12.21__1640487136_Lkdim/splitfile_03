@@ -1,0 +1,2 @@
+"git/sha" is a function that returns the SHA of a git commit.
+

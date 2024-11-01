@@ -1,0 +1,5 @@
+cd /root/notes;  "nem" "pen-of-imagination" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "ead" "pen-company-filetype-if-prefix" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "todayfile" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Genesis 6:1" "#" "<==" "pen-ci"

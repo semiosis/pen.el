@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: se
+# group: vimsnippet
+# key: vs-se
+# --
+set ${1:setting};

@@ -1,0 +1,25 @@
+
+
+This is a summary of the post.
+
+** Motivation
+
+This is a motivation of the post.
+
+** Related Work
+
+This is a related work section.
+
+** Approach
+
+This is an approach section.
+
+    #+BEGIN_SRC python :results output :exports both
+
+    #+END_SRC
+
+    #+RESULTS:
+
+    #+BEGIN_SRC python :results output :exports both
+
+

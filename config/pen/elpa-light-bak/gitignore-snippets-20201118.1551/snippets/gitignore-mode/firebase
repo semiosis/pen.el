@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Firebase
+# contributor: Toptal & contributors
+# key: firebase
+# --
+
+### Firebase ###
+
+.idea
+**/node_modules/*
+**/.firebaserc

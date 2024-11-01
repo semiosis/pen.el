@@ -1,0 +1,15 @@
+|
+    #!/bin/bash
+    awk -f linter.awk $1
+#+END_SRC
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Imagine a python linter"
+  code: |
+    #!/usr/bin/env python3
+
+    import sys
+
+    def lint(filename):
+        with open(filename, 'r

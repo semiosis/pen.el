@@ -1,0 +1,978 @@
+HTTP/1.1 200 OK
+Date: Fri, 01 Mar 2024 01:58:28 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Tue, 17 Nov 2015 21:30:18 GMT
+Accept-Ranges: bytes
+Content-Length: 46555
+Keep-Alive: timeout=3, max=100
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Ignatius Epistle to Polycarp</title>
+<meta name="keywords" content="j.h. srawley,epistles,ignatius,polycarp,introduction">
+<meta name="description" content="The Epistles of St. Ignatius by J. H. Srawley: Online Book on the Early Christian Writings site.">
+<link rel="stylesheet" media="all" href="../finaldemo/layers.css" type="text/css">
+<style type="text/css">
+body {
+	behavior: url("csshover.txt");
+}
+
+body {
+  margin: 0px;
+	padding: 0px;
+}
+
+#menu ul, li, div {
+	margin: 0px;
+	padding: 0px;
+}
+LI:hover {
+	Z-INDEX: 15;
+}
+UL UL {
+  position: absolute;
+	display: none;
+}
+LI:hover UL UL {
+	DISPLAY: none;
+}
+LI:hover UL {
+	DISPLAY: block;
+}
+LI:hover LI:hover UL {
+	DISPLAY: block
+}
+li ul {
+	position: absolute;
+	display: none;
+}
+#menu ul, #menu li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul li {
+	position: relative;
+}
+#menu {
+  line-height: 1px;
+	font-size: 1px;
+}
+
+/* Styles for Menu Items */
+
+li.topli ul a {
+  display: block;
+	padding-top: 3px; padding-left: 3px; padding-bottom: 3px; padding-right: 0px;
+	margin: 0px;
+	text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+	line-height: 10px;
+  font-size: 10px;
+	color: rgb(246, 223, 190);
+}
+li.submenu a {
+  background-image: url("pic/arrow.gif"); background-position: right; background-repeat: no-repeat; z-index: 20;
+}
+li.submenu ul a {
+  background-image: url("pic/spacer.gif"); z-index: 25;
+}
+li.topli li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+li.topli li:hover ul li a {
+  color: rgb(246, 223, 190);
+	background-color: rgb(73, 63, 40);
+}
+#menu li.submenu ul li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+#menu li {
+  height: 16px;
+	margin: 0px; padding: 0px;
+  width: inherit;
+}
+
+/* Specific classes */
+
+ul.topul {
+  position: absolute;
+	left: 0px;
+	top: 20px;
+	background-color: black;
+}
+
+li.topli {
+  position: absolute;
+	top: 0px;
+}
+
+div.topdiv1 {
+  position: absolute;
+	top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.topdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(73, 63, 40);
+}
+
+ul.subul {
+  position: absolute;
+  top: -1px;
+  background-color: black;
+}
+
+div.subdiv1 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.subdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+	background-color: rgb(73, 63, 40);
+}
+
+/* Fix some stuff with lists in the body of the page. */
+#infolayer ul {
+  position: relative;
+  display: block;
+  list-style-type: disc;
+	list-style-position: outside;
+}
+#infolayer li {
+  position: relative;
+  display: list-item;
+}
+#infolayer ul li {
+	margin-left: -16px;
+}
+#infolayer ol li {
+  margin-left: -8px;
+}
+#infolayer a {
+  color: #990033;
+}
+#infolayer a:visited {
+  color: black;
+}
+#infolayer a:hover {
+  color: red;
+}
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4053514-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+
+<div id="whitetoplayer">
+  <div id="buythecd"><a href="http://earlywritings.com/buy/"><img src="../pic/textanim.gif" alt="Get the CD Now!" width="108" 
+height="39"></a></div>
+  <div id="breadcrumbs" style="position: absolute; top: 11px; left: 15px;"><a href="../">Home</a> <b>&gt;</b> <a href="index.html">The Epistles of St. Ignatius</a> <b>&gt;</b> The Epistle to the Philadelphians</div>
+  <form action="http://www.google.com/cse" id="cse-search-box" target="_blank" style="position: absolute; top: 0px; right: 118px; height: 39px; 
+font-family: Arial, Helvetica, sans-serif; margin: 5px;">
+    <div style="background-color: rgb( 174, 134, 64 ); text-align: right; -moz-border-radius: 5px;"><div style="padding: 3px;">
+    <input type="hidden" name="cx" value="partner-pub-2665675471425577:4654561773" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" width="40" />
+    <input type="submit" name="sa" value="Search" />
+	</div></div>
+  </form>
+</div>
+
+<style>
+#ataglance div.info {
+  margin-top: 6px;
+	margin-bottom: 6px;
+}
+</style>
+
+<div id="infolayer">
+  <div id="textboundingbox">
+
+  <h1 id="textname">The Epistles of St. Ignatius</h1>
+
+	<div id="toprightad" style="float: right;">
+	<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-2665675471425577";
+		/* Top Right Article */
+		google_ad_slot = "8302713982";
+		google_ad_width = 336;
+		google_ad_height = 280;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+</div>
+
+<p style="position: relative; display: inline; padding-top: 0px; margin-top: 5px;"></p>
+<p> 
+<p align="center">102 
+<P align="center">
+ VII. THE 
+		EPISTLE TO POLYCARP.
+        <blockquote>
+		<P style="background-color: #C0C0C0">
+ [This epistle was one of those which were written from 
+		Troas immediately before Ignatius and his guard set sail for Neapolis (c. 8), 
+		and probably accompanied the letter addressed to the Church at Smyrna. It is of 
+		a more personal character than any of the others, and reveals the affection 
+		entertained by Ignatius for Polycarp. Ignatius had stayed at Smyrna and had 
+		apparently received much kindness from its bishop, of whom he makes a grateful 
+		mention in the letters written from that city (Eph. 21, Magn. 15).<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; Whether 
+		Ignatius had been acquainted with Polycarp before this visit it is difficult to 
+		say. The Antiochene Acts speak of Polycarp as the 'fellow-student' of Ignatius, 
+		and add, 'for in old time they had been disciples of John' (c. 3). But the tone 
+		of the present epistle certainly indicates that Polycarp was considerably the 
+		younger of the two, and was in fact a comparatively young man. The disparity of 
+		age would thus render improbable the statement of the Acts. On the other hand, 
+		when Ignatius expresses his gratitude that he has been permitted to see 
+		Polycarp (Polyc. 1), this language is insufficient to justify us in assuming, 
+		as Pearson and Lightfoot do, that Ignatius had not seen him before his visit 
+		to Smyrna.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; The epistle was undoubtedly intended to be read also by the members 
+		of the Church at Smyrna, as in c. 6 he addresses them and enjoins them to obey 
+		their bishop. In the more directly personal part of the epistle he gives advice 
+		to Polycarp with reference to the various responsibilities of his office and 
+		his own personal conduct. He gives full instructions as to the choice of a 
+		delegate to represent the Church of Smyrna at Antioch, and makes a passing 
+		allusion to heresy. See c. 3.]&nbsp;
+        </blockquote>
+		<P>
+ I<span style="font-variant: small-caps">GNATIUS</span>, who is also Theophorus, to Polycarp, 
+		who is bishop of the Church in Smyrna, or rather, who has God the Father and 
+		Jesus Christ for his bishop,[1] abundant greeting.&nbsp;
+		<P>
+ I. I welcome your godly 
+		purpose which is firmly planted as on an immovable rock, and I render ex-&nbsp;
+        <blockquote>
+		<P style="background-color: #C0C0C0">
+ [1] Cf.
+        Magn. 3 ; Rom. 9 (notes).&nbsp;
+        </blockquote>
+		<P align="center">
+ 103
+		<P>
+ ceeding glory that I 
+		have been granted the sight of your blameless face—may I have joy of it in God. 
+		I urge you in the grace wherewith you are clothed to press on in your race, and 
+		to urge all men to be saved. Assert your office with all diligence of flesh and
+ spirit.[1]&nbsp; Give heed unto union, for there is nothing better. Bear all men, as 
+		the Lord also bears you.[2]&nbsp; Suffer all men in love, as indeed you do suffer them.&nbsp;
+ Devote yourself to unceasing prayers.&nbsp; Ask for greater understanding than you 
+		have. Be watchful, possessing a wakeful spirit.&nbsp; Speak to each man individually 
+		after God's way.[3] Bear the infirmities of all men, as a perfect
+ athlete.[4] Where 
+		there is more toil there is greater gain.&nbsp;
+		<P>
+ II. If you love good disciples, this 
+		does not win you favour.[5]&nbsp; Rather subdue by meekness the more pestilent. Not 
+		every wound is cured by the same salve. Ease sharp pains by fomentations.
+ <i> 
+		Become prudent as the serpent in all things, and harmless continually as the
+ dove.</i>[6] Therefore you are of flesh and spirit, that you may humour the things 
+		which are visibly present before your face.[7] But ask that the things which are 
+		unseen&nbsp;
+		<P style="background-color: #C0C0C0">
+ [1] Polycarp is urged to make the power and influence of his office felt 
+		by an attentive discharge of all its duties.<br>
+ [2] For the idea of this passage, cf. 
+		Gal. vi. 2. The latter part of the sentence is probably taken from Is.
+        liii. 4, 
+		following the version given in Matt. viii. 17, which differs from the LXX 
+		rendering. The influence of the same passage is also to be noticed a few lines 
+		below, where Ignatius says: 'Bear the infirmities of all men.'&nbsp;<br>
+ [3]<i> i. e</i>. in 
+		conformity with the character of God as revealed in the principles on which He 
+		acts. Cf. Matt. v. 45 ff., which probably suggested this passage.<br>
+ [4] Cf. for the 
+		figure 2 Tim. ii. 5 and Heb. x. 32.&nbsp; In later times the word 'athlete' became a 
+		common synonym for a martyr.<br>
+ [5] The spirit of this passage resembles that of 
+		Luke vi. 32 and 1 Pet. ii. 18.<br>
+ [6] A reference to Matt. x. 16.<br>
+ [7] By 'the things 
+		visibly present before your face' Ignatius means 'the visible, material world.'&nbsp;
+ This world is to be 'humoured' into obedience to God. The two elements of man's 
+		nature, flesh and spirit, render it possible for him to act as a mediator 
+		between the
+		<P align="center">
+ 104
+		<P>
+ may be manifested to you, that you may 
+		lack nothing and may abound in every gift. The season demands you, as pilots 
+		demand winds and the tempest-tossed man demands the haven, so as to attain unto
+ God.[1] Be temperate, as God's athlete. The prize is incorruption and life 
+		eternal, concerning which also you have been persuaded. In all things I devote 
+		myself for you, even I and my bonds which you have cherished.[2]
+		<P>
+ III. Let not 
+		those who seem to be specious and yet bring novel teaching dismay you. Stand 
+		firm as an anvil when it is smitten. It is the part of a great athlete to 
+		suffer blows and to conquer. And above all for God's sake we ought to endure 
+		all things, that He also may endure us. Become more zealous than you are. 
+		Consider the seasons.[3] Look for Him Who is above all seasons, Who is timeless, 
+		invisible, made visible for our sakes, Who is beyond the touch of our hands, 
+		beyond suffering, Who yet suffered for us, Who in every way endured for us.
+		<P>
+ IV. 
+		Let not widows be neglected.[4] Next to the Lord
+		<hr>
+        <blockquote>
+		<P style="background-color: #C0C0C0">
+ material and the spiritual 
+		world. The passage expresses in a somewhat homely way a truth which recalls the 
+		great saying of St. Paul, 'I am made all things to all men.'<br>
+ [1] The text here 
+		is probably in some confusion. The reading translated above represents the 
+		crisis as the pilot and Polycarp as the breeze, which gives an unnatural sense. 
+		Lightfoot suggests an emendation of the text which would yield the translation: 'The season demands you, as a ship demands a pilot, and as a tempest-tossed 
+		mariner the haven.'&nbsp; The metaphor of a ship to denote the Church is frequently 
+		found in later Christian writers. The abridged Syriac version contains a 
+		reading in this passage which indicates the presence of the word 'ship' in the 
+		text.<br>
+ [2] Or, as Zahn would translate it here, following Bunsen, 'kissed,' 
+		referring to a practice alluded to by Tertullian and the Acts of Paul and
+        Thecla.&nbsp; But, though &#945;&#947;&#945;&#960;&#945;&#957; is used of external demonstrations of affection, 
+		there seems no authority for this precise sense.<br>
+ [3] Cf. Matt. xvi. 3; Luke xii. 
+		56.<br>
+ [4] See note on Smyrn. 6.
+        </blockquote>
+		<P align="center">
+ 105
+		<P>
+ be yourself their guardian.[1] Let nothing be done without your approval, neither yourself do 
+		anything without God's approval, as indeed you do not. Be firm. Let
+ assemblies[2] 
+		be held more often. Search out all men by name. Treat not disdainfully bondmen 
+		or bondwomen, yet neither let them be puffed up, but let them serve the
+ more[3] 
+		to the glory of God, that they may obtain from God a better freedom. Let them 
+		not desire to gain their freedom out of the common fund,[4] that they may not be 
+		found the slaves of lust.&nbsp;
+		<P>
+ V. Flee evil arts,[5] or rather discourse upon them.[6]&nbsp; Charge my sisters to love the Lord and to be satisfied with their husbands in 
+		flesh and spirit. Likewise charge my brethren in the name of Jesus Christ to 
+		love their wives, <i> even as the Lord loved the Church</i>[7] If any one is able to 
+		abide in purity[8] to the honour of the flesh,
+        <blockquote>
+		<P style="background-color: #C0C0C0">
+ [1] Or 'trustee,' 'a semi-official 
+		term.'—L<span style="font-variant: small-caps">IGHTFOOT</span>.<br>
+ [2] &#963;&#965;&#957;&#945;&#947;&#969;&#947;&#945;&#953;, lit. 'synagogues,' a name derived from Jewish 
+		usage and applied in the N. T. to the meetings for worship held by Jewish 
+		Christians. See James ii. 2. Here, however, it is used quite generally. For the 
+		duty here enforced see Heb. x. 25.<br>
+ [3] Cf. 1 Tim. vi. 2.<br>
+ [4] For this custom of the 
+		early Church cf. the Apostolic Constitutions iv. 9, where the ransom of slaves 
+		is included among the objects to which the Church alms may be devoted.<br>
+ [5] Various interpretations have been given of this warning. Some have seen in
+ these 'evil arts' a reference to the 'black arts' of witchcraft, sorcery, etc. 
+		which we know to have been common in these regions. See Acts xix. 19. Others, 
+		as Zahn, take the phrase more generally to denote all improper ways of earning 
+		a living. Zahn rightly urges that it would be an easy transition for the 
+		writer, after speaking of slaves, to pass on to the other elements of life to 
+		be found in the great cities of the day, the disreputable callings of actors, 
+		mountebanks, wizards, etc.<br>
+ [6] Polycarp is urged to warn his hearers against the 
+		dangers alluded to by 'holding discourse' upon them, <i>i.e</i>. by making mention of 
+		them in his sermons in the Christian assemblies.<br>
+ [7] An echo of Eph. v. 25.<br>
+ [8] The 
+		word for 'purity,' &#945;&#947;&#957;&#949;&#953;&#945;, is used here in the strictest sense to denote 
+		'virginal chastity.' In the second and third centuries there grew up within the 
+		Church a widespread feeling upon this subject, which led many both married and 
+		unmarried to devote
+        </blockquote>
+		<P align="center">
+ 106
+		<P>
+ which is the Lord's [1] let him 
+		abide therein without boasting. If he boast, he has perished. And if it be 
+		known further than the bishop,[2] he is corrupted. It is fitting that those who 
+		marry, both men and women, should enter into the union with the approval of the 
+		bishop, that the marriage may be according to the Lord and not according to 
+		lust. Let all things be done to the honour of God.
+		<P>
+ VI. Give heed [3] unto the 
+		bishop, that God also may give heed unto you. I devote myself for those who 
+		submit to the bishop, presbyters, deacons. May it be mine to have my portion 
+		along with them in the presence of God. Share one another's toil,[4] contend 
+		together, run together, suffer together, alike in rest and rising be together, 
+		as stewards [5] and assessors and ministers of God. Please Him under Whom you
+ serve,[6] from Whom also you shall receive your pay. Let none of you be
+		<P align="center">
+ ------------------------------------
+        <blockquote>
+		<P style="background-color: #C0C0C0">
+ themselves to perpetual chastity. The starting-point for such a view was 
+		probably the words of St. Paul, 1 Cor. vii. 1 ff.<br>
+ [1] Cf. I Cor. vi. 15 sq. The 
+		words are especially applicable to those spoken of here.<br>
+ [2] Those who devote 
+		themselves to perpetual chastity are to make known their vow to the bishop, but 
+		to no one else. To parade their virtue would be an act of immodesty. Others, 
+		however, as Zahn, would translate here 'if he become better known than the 
+		bishop,' <i> i.e.</i> if his chastity win him greater fame than the bishop, supposing 
+		the latter to be married.<br>
+ [3] At this point Ignatius turns to the members of the 
+		Church of Smyrna. In the whole of this and the following chapter he is 
+		addressing them.<br>
+ [4] The phrase alludes to the hard course of training which 
+		athletes underwent. Cf. Phil. ii. 16; Col. i. 29 ; 1 Tim. iv. 10. The following 
+		passage continues the metaphor, and the words 'rest' and 'rising' refer to the 
+		hours of sleep and rising appointed by the trainer.<br>
+ [5] The word 'stewards' is 
+		used here of Christians generally. Cf. 1 Pet. iv. 10. The following word 'assessors' is a strong expression of the idea found in
+ 1 Cor. iii. 9.<br>
+ [6] Cf. 2 
+		Tim. ii. 4.
+        </blockquote>
+		<P align="center">
+ 107
+		<P>
+ found a deserter.[1] Let your baptism 
+		abide as your shield,[2] your faith as your helmet, your love as your spear your 
+		patience as body-armour. Let your works be your deposit,[3] that you may receive 
+		the sums credited to you as your due. So then be long-suffering with one 
+		another in meekness as God is with you. May I have joy of you continually.
+		<P>
+ VII. 
+		Since the Church which is at Antioch in Syria enjoys peace [4] through your 
+		prayer, as I have been informed, I also have been more greatly cheered, and God 
+		has set my mind at rest; if haply I may through suffering attain unto God, so 
+		that I may be found, through your entreaty, a disciple.[5]&nbsp; It is meet, most 
+		blessed Polycarp, that you should assemble a godly council and
+ appoint[6] some 
+		one of your number, who is greatly
+        <blockquote>
+		<P style="background-color: #C0C0C0">
+ [1] The word used here is the Latin word 'desertor'; similarly below the words translated 'deposit' and 'sums 
+		accredited to you ' are Latin words. The presence with Ignatius of an escort of 
+		Roman soldiers helps to explain the use of such words, and also the repeated 
+		reference to the details of a soldier's life and equipment.<br>
+ [2]&nbsp;<i> i. e</i>. your 
+		baptism into the privileges and blessings of the Christian life will be found 
+		your best defence against sin.&nbsp; The metaphor in this passage was undoubtedly 
+		suggested by Eph. vi. 13-17, though it is worked out differently.<br>
+ [3] Zahn 
+		compares for the general sentiment here Matt. vi. 20, xix. 21; Tobit iv. 8, 9. 
+		The metaphor is derived from the savings-bank attached to the cohorts of the 
+		Roman legions.&nbsp; The sums accumulated in this way were paid over to soldiers at 
+		their discharge. Deserters forfeited their savings.<br>
+ [4] Cf. Philad. 10, with 
+		note.<br>
+ [5] In the Greek there is a play of words which may have been intended to 
+		recall, as Lightfoot suggests, a Greek proverb, &#960;&#945;&#952;&#951;&#956;&#945;&#964;&#945;
+ &#956;&#945;&#952;&#951;&#956;&#945;&#964;&#945;, 
+		'suffering brings wisdom.'&nbsp; There is, however, some doubt about the text in this 
+		passage. Another reading, supported by some MSS. and adopted by Zahn, would 
+		yield the translation, 'so that I may be found at the resurrection your 
+		disciple.'&nbsp; Then the contrast would be between 'suffering' and 'resurrection.'&nbsp;
+ The expression 'your disciple' would find a parallel in Eph. 3, where his 
+		readers are spoken of as his trainers for the athletic contest.<br>
+ [6] Cf. Smyrn. 11, 
+		where the messenger is called 'God's ambassador.'
+        </blockquote>
+		<P align="center">
+ 108
+		<P>
+ beloved and full of zeal, that he may bear the name of God's messenger:—it is 
+		meet, I say, that you should commission him to go to Syria and glorify your 
+		untiring love to the glory of God.[1] A Christian has not power over himself, but 
+		devotes his time to God. For this is God's work and yours, when you have 
+		completed it. For I trust in God's grace that you are prepared to do a good 
+		work which is meet for God. I have exhorted you in a brief letter, because I 
+		know how earnest is your sincerity.
+		<P>
+ VIII. Seeing that I could not write unto 
+		all the churches, because I sail immediately from Troas to Neapolis,[2] as God's 
+		will commands, you shall write to the churches which lie in front,[3] as yourself 
+		possessing the mind of God, to bid them also do the same thing. Let those who 
+		can send messengers, the rest letters by the hands of the messengers whom you 
+		send, that you may be glorified, as you are worthy to be, by a work that will 
+		live for ever.
+		<P>
+ I salute all by name, as also the wife of Epitropus,[4] with all 
+		her household and her children's. I salute Attalus my beloved. I salute him who 
+		is to be commissioned to go to Syria. God's grace shall be with him 
+		continually, and with Polycarp who sends him. I bid you farewell continually in 
+		our God, Jesus Christ, in
+        <blockquote>
+		<P style="background-color: #C0C0C0">
+ [1] The purpose of this mission is more fully stated
+        Philad. 10 ; Smyrn. 11.<br>
+ [2] For Neapolis see Acts xvi. 11. It was the port of 
+		Philippi. From Philippi Ignatius would travel along the Via Egnatia to 
+		Dyrrhachium and thence by sea to Italy.<br>
+ [3] <i> i. e.</i> nearer to Syria.<br>
+ [4] Lightfoot 
+		thinks the passage may be translated 'the widow of the procurator.' His 
+		reasons are — (i) there is no mention of the husband in the following salutation; (2) the word 'Epitropus' may possibly be, not a proper name, but the title 
+		of an office, as inscriptions found at Smyrna mention an officer called 
+ &#949;&#960;&#953;&#964;&#961;&#959;&#960;&#959;&#962; &#963;&#964;&#961;&#945;&#964;&#951;&#947;&#959;&#962;.
+        </blockquote>
+		<P align="center">109<P>
+ Whom abide in the unity and under the governance[1] of 
+		God. I salute Alce, a name dear to me. Farewell in the Lord.
+        
+<blockquote> 
+  <P style="background-color: #C0C0C0"> [1] The word here is &#949;&#960;&#953;&#963;&#954;&#959;&#960;&#951;, 
+    the title of the bishop's office. Cf. the opening words of the epistle, where 
+    Polycarp is said to have God as his bishop. 
+</blockquote>
+
+</div>
+
+<hr width="50%">
+
+<p style="text-align: center">Go to the <a href="index.html">Table of Contents</a> for <i>The Epistles of St. Ignatius</i></p>
+
+<p style="text-align: center;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2665675471425577";
+/* Leaderboard-bot */
+google_ad_slot = "4364046558";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+
+<p style="text-align: center; font-size:135%;">Please <a href="http://earlywritings.com/buy/">buy the CD</a> to support the site, view it without 
+ads, and get bonus stuff!</p>
+
+
+  <div id="infoleft"></div>
+  <div id="inforight"></div>
+  <div id="footer">
+    <div id="footleft"></div>
+    <div id="footright"></div>
+  </div>
+
+  	<div id="whitebottomlayer">
+	<p id="copyrightnotice"><a href="index.html">Early Christian Writings</a> is copyright &copy; 
+  <script language="JavaScript">
+  <!--
+  var months=new Array(13);
+  months[1]="Jan.";
+  months[2]="Feb.";
+  months[3]="Mar.";
+  months[4]="Apr.";
+  months[5]="May";
+  months[6]="June";
+  months[7]="July";
+  months[8]="Aug.";
+  months[9]="Sept.";
+  months[10]="Oct.";
+  months[11]="Nov.";
+  months[12]="Dec.";
+  var time=new Date();
+  var lmonth=months[time.getMonth() + 1];
+  var date=time.getDate();
+  var year=time.getYear();
+  if (year < 2000)
+    year = year + 1900;
+  document.write("2001-" + year);
+  // -->
+  </script>
+Peter Kirby <code>&lt;<a href="http://www.peterkirby.com/">E-Mail</a>&gt</code>.</p>
+	  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fearlychristianwritingscom%2F121187514627340&amp;send=false&amp;layout=box_count&amp;width=55&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:65px; float: left; margin-left: 15px;" allowTransparency="true"></iframe>
+	  <div style="float: left; margin-right: 10px;">
+	<!-- Place this tag where you want the +1 button to render. -->
+	<div class="g-plusone"></div>
+	<!-- Place this tag after the last +1 button tag. -->
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	  <div><a href="https://twitter.com/mrpeterkirby" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @mrpeterkirby</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+	  </div>
+	<div id="buythecd"><a href="http://earlywritings.com/buy/"><img src="../pic/textanim.gif" alt="Get the CD Now!" width="108" 
+height="39"></a></div>
+  <div style="width: 500px; font-size: 12px; margin-top: 8px; margin-left: auto; margin-right: auto; padding-left: 50px;"><div style="position: 
+absolute; width: 40px; height: 40px;"><b>MLA<br>Style</b></div><div style="position: relative; left: 40px;"><p>Kirby, Peter. "Historical Jesus 
+Theories." <i>Early Christian Writings</i>.  
+  <script language="JavaScript">
+  <!--
+  document.write(year + ". " + date + " " + lmonth + " " + year);
+  // -->
+  </script>
+ &lt;http://www.earlychristianwritings.com/text/1clement-hoole.html&gt;.</p></div></div>
+  </div></div><div id="headlayer">
+  <div id="headleft"></div>
+  <div id="headright"></div>
+
+<ul id="menu" style="position: absolute; margin-left: -149px; left: 50%; top: 83px; width: 0px; height: 0px;">
+<li class="topli" style="left: 0px; width: 87px; height: 29px;"><a href="newtestament.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 87px; height: 29px; border: 0px;" alt="New Testament"></a>
+	<ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px"><div class="topdiv2" style="width: 130px; height: 96px;">
+		<li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 51px; height: 67px;">
+  		<div class="subdiv1" style="width: 49px; height: 65px;"><div class="subdiv2" style="width: 48px; height: 64px;">
+				<li><a href="matthew.html">Matthew</a></li> 
+				<li><a href="mark.html">Mark</a></li> 
+				<li><a href="luke.html">Luke</a></li> 
+				<li><a href="john.html">John</a></li>
+  		</div></div>
+			</ul>
+		</li>
+		<li><a href="acts.html"><span>Acts</span></a></li>
+		<li class="submenu"><a><span>Letters of Paul</span></a>
+			<ul class="subul" style="left: 129px; width: 88px; height: 211px;">
+			<div class="subdiv1" style="width: 86px; height: 209px;"><div class="subdiv2" style="width: 85px; height: 208px;">
+				<li><a href="romans.html">Romans</a></li> 
+				<li><a href="1corinthians.html">1 Corinthians</a></li> 
+				<li><a href="2corinthians.html">2 Corinthians</a></li> 
+				<li><a href="galatians.html">Galatians</a></li> 
+				<li><a href="ephesians.html">Ephesians</a></li> 
+				<li><a href="philippians.html">Philippians</a></li> 
+				<li><a href="colossians.html">Colossians</a></li> 
+				<li><a href="1thessalonians.html">1 Thessalonians</a></li> 
+				<li><a href="2thessalonians.html">2 Thessalonians</a></li> 
+				<li><a href="1timothy.html">1 Timothy</a></li> 
+				<li><a href="2timothy.html">2  Timothy</a></li> 
+				<li><a href="titus.html">Titus</a></li> 
+				<li><a href="philemon.html">Philemon</a></li> 
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="hebrews.html"><span>Letter to the Hebrews</span></a></li>
+		<li class="submenu"><a><span>General Letters</span></a>
+			<ul class="subul" style="left: 129px; width: 51px; height: 115px;">
+			<div class="subdiv1" style="width: 49px; height: 113px;"><div class="subdiv2" style="width: 48px; height: 112px;"> 
+				<li><a href="james.html">James</a></li> 
+				<li><a href="1peter.html">1 Peter</a></li> 
+				<li><a href="2peter.html">2 Peter</a></li> 
+				<li><a href="1john.html">1 John</a></li> 
+				<li><a href="2john.html">2 John</a></li> 
+				<li><a href="3john.html">3 John</a></li> 
+				<li><a href="jude.html">Jude</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="revelation.html"><span>Revelation</span></a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 87px; width: 62px; height: 29px;"><a href="apocrypha.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 29px; border: 0px;" alt="Apocrypha"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 131px; height: 163px;">
+			<div class="subdiv1" style="width: 129px; height: 161px;"><div class="subdiv2" style="width: 128px; height: 160px;">
+			  <li><a href="thomas.html">Gospel of Thomas</a></li>
+				<li><a href="egerton.html">Egerton Gospel</a></li>
+				<li><a href="gospelpeter.html">Gospel of Peter</a></li>
+				<li><a href="oxyrhynchus840.html">Oxyrhynchus 840</a></li>
+				<li><a href="gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="apostolorum.html">Epistula Apostolorum</a></li>
+				<li><a href="infancyjames.html">Infancy Gospel of James</a></li>
+				<li><a href="infancythomas.html">Infancy Gospel of Thomas</a></li>
+				<li><a href="actspilate.html">Acts of Pilate</a></li>
+				<li><a href="diatessaron.html">Diatessaron</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Gospel Fragments</a>
+		   <ul class="subul" style="left: 129px; width: 156px; height: 131px;">
+			 <div class="subdiv1" style="width: 154px; height: 129px;"><div class="subdiv2" style="width: 153px; height: 128px;">
+			   <li><a href="oxyrhynchus1224.html">Oxyrhynchus 1224</a></li>
+				 <li><a href="secretmark.html">Fayyum Fragment</a></li>
+				 <li><a href="gospelegyptians.html">Gospel of the Egyptians</a></li>
+				 <li><a href="gospelhebrews.html">Gospel of the Hebrews</a></li>
+				 <li><a href="gospelebionites.html">Gospel of the Ebionites</a></li>
+				 <li><a href="gospelnazoreans.html">Gospel of the Nazoreans</a></li>
+				 <li><a href="traditionsmatthias.html">Traditions of Matthias</a></li>
+				 <li><a href="dura.html">Dura-Europos Gospel Harmony</a></li>
+			 </div></div>
+			 </ul>
+		</li>
+		<li class="submenu"><a>Apostolic Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 131px;">
+			<div class="subdiv1" style="width: 156px; height: 129px;"><div class="subdiv2" style="width: 155px; height: 128px;">
+			  <li><a href="preachingpeter.html">Preaching of Peter</a></li>
+				<li><a href="actspeter.html">Acts of Peter</a></li>
+				<li><a href="actsjohn.html">Acts of John</a></li>
+				<li><a href="actspaul.html">Acts of Paul</a></li>
+				<li><a href="actsandrew.html">Acts of Andrew</a></li>
+				<li><a href="actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="actsthomas.html">Acts of Thomas</a></li>
+			</div></div>
+			</ul>
+		</li>
+    <li class="submenu"><a>Martyrologies</a>
+		  <ul class="subul" style="left: 129px; width: 203px; height: 115px;">
+			<div class="subdiv1" style="width: 201px; height: 113px;"><div class="subdiv2" style="width: 200px; height: 112px;">
+			  <li><a href="martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+				<li><a href="esra.html">Fifth and Sixth Books of Esra</a></li>
+				<li><a href="carpus.html">Acts of Carpus, Papylus, and Agathonice</a></li>
+				<li><a href="viennalyons.html">Letter from Vienna and Lyons</a></li>
+				<li><a href="scillitan.html">Passion of the Scillitan Martyrs</a></li>
+				<li><a href="actsapollonius-2.html">Acts of Apollonius</a></li>
+				<li><a href="actsperpetua.html">Acts of Perpetua and Felicitas</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="didache.html">Didache</a></li>
+	  <li><a href="apocalypsepeter.html">Apocalypse of Peter</a></li>
+		<li><a href="didascalia.html">Didascalia</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 149px; width: 52px; height: 29px;"><a href="gnostics.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 52px; height: 29px; border: 0px;" alt="Gnostics"></a>
+  <ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px;"><div class="topdiv2" style="width: 130px; height: 96px;">
+	  <li class="submenu"><a>Dialogues with Jesus</a>
+		  <ul class="subul" style="left: 129px; width: 116px; height: 115px;">
+			<div class="subdiv1" style="width: 114px; height: 113px;"><div class="subdiv2" style="width: 113px; height: 112px;">
+			  <li><a href="sophia.html">Sophia of Jesus Christ</a></li>
+				<li><a href="secretjames.html">Secret James</a></li>
+				<li><a href="gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="dialoguesavior.html">Dialogue of the Savior</a></li>
+				<li><a href="gospelsavior.html">Gospel of the Savior</a></li>
+				<li><a href="jeu.html">Books of Jeu</a></li>
+				<li><a href="pistis.html">Pistis Sophia</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Apocalypses</a>
+		  <ul class="subul" style="left: 129px; width: 138px; height: 67px;">
+			<div class="subdiv1" style="width: 136px; height: 65px;"><div class="subdiv2" style="width: 135px; height: 64px;">
+			  <li><a href="apocalypsejames2.html">2nd Apocalypse of James</a></li>
+				<li><a href="nhlapocalypsepaul.html">Coptic Apocalypse of Paul</a></li>
+				<li><a href="apocalypsejames1.html">1st Apocalypse of James</a></li>
+				<li><a href="nhlapocalypsepeter.html">Coptic Apocalypse of Peter</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 51px;">
+			<div class="subdiv1" style="width: 156px; height: 49px;"><div class="subdiv2" style="width: 155px; height: 48px;">
+			  <li><a href="actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="petertophilip.html">Letter of Peter to Philip</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>More Nag Hammadi</a>
+		  <ul class="subul" style="left: 129px; width: 189px; height: 131px;">
+			<div class="subdiv1" style="width: 187px; height: 129px;"><div class="subdiv2" style="width: 186px; height: 128px;">
+			  <li><a href="apocryphonjohn.html">Apocryphon of John</a></li>
+				<li><a href="gospeltruth.html">Gospel of Truth</a></li>
+				<li><a href="treatiseres.html">Treatise on the Resurrection</a></li>
+				<li><a href="gospelphilip.html">Gospel of Philip</a></li>
+			  <li><a href="trimorphic.html">Trimorphic Protennoia</a></li>
+				<li><a href="authoritative.html">Authoritative Teaching</a></li>
+				<li><a href="eighthninth.html">Discourse on the Eighth and the Ninth</a></li>
+				<li><a href="melchizedek.html">Melchizedek</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 115px;">
+			<div class="subdiv1" style="width: 109px; height: 113px;"><div class="subdiv2" style="width: 108px; height: 112px;">
+			  <li><a href="basilides.html">Basilides</a></li>
+				<li><a href="naassene.html">Naassene Fragments</a></li>
+				<li><a href="valentinus.html">Valentinus</a></li>
+				<li><a href="marcion.html">Marcion</a></li>
+				<li><a href="epiphanes.html">Epiphanes</a></li>
+				<li><a href="ophite.html">Ophite Diagrams</a></li>
+				<li><a href="gospeljudas.html">Gospel of Judas</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 99px;">
+			<div class="subdiv1" style="width: 109px; height: 97px;"><div class="subdiv2" style="width: 108px; height: 96px;">
+				<li><a href="ptolemy.html">Ptolemy</a></li>
+				<li><a href="isidore.html">Isidore</a></li>
+				<li><a href="theodotus.html">Theodotus</a></li>
+				<li><a href="heracleon.html">Heracleon</a></li>
+				<li><a href="apelles.html">Apelles</a></li>
+				<li><a href="cassianus.html">Julius Cassianus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 201px; width: 85px; height: 29px;"><a href="churchfathers.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Church Fathers"></a>
+  <ul class="topul" style="width: 133px; height: 147px;">
+	<div class="topdiv1" style="width: 131px; height: 145px;"><div class="topdiv2" style="width: 130px; height: 144px;">
+	  <li class="submenu"><a>Apostolic Fathers</a>
+		  <ul class="subul" style="left: 129px; width: 163px; height: 147px;">
+			<div class="subdiv1" style="width: 161px; height: 145px;"><div class="subdiv2" style="width: 160px; height: 144px;">
+			  <li><a href="didache.html">Didache</a></li>
+			  <li><a href="barnabas.html">Epistle of Barnabas</a></li>
+			  <li><a href="1clement.html">First Clement</a></li>
+			  <li><a href="shepherd.html">Shepherd of Hermas</a></li>
+			  <li><a href="ignatius.html">Ignatius of Antioch</a></li>
+			  <li><a href="polycarp.html">Polycarp to the Philippians</a></li>
+			  <li><a href="2clement.html">Second Clement</a></li>
+			  <li><a href="diognetus.html">Epistle of Mathetes to Diognetus</a></li>
+			  <li><a href="martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Apologists</a>
+		  <ul class="subul" style="left: 129px; width: 120px; height: 99px;">
+			<div class="subdiv1" style="width: 118px; height: 97px;"><div class="subdiv2" style="width: 117px; height: 96px;">
+			  <li><a href="aristides.html">Aristides</a></li>
+			  <li><a href="justin.html">Justin Martyr</a></li>
+			  <li><a href="tatian.html">Tatian</a></li>
+			  <li><a href="octavius.html">Minucius Felix</a></li>
+			  <li><a href="athenagoras.html">Athenagoras of Athens</a></li>
+			  <li><a href="theophilus.html">Theophilus of Antioch</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 123px; height: 147px;">
+			<div class="subdiv1" style="width: 121px; height: 145px;"><div class="subdiv2" style="width: 120px; height: 144px;">
+			  <li><a href="papias.html">Papias</a></li>
+			  <li><a href="quadratus.html">Quadratus</a></li>
+			  <li><a href="aristo.html">Aristo of Pella</a></li>
+			  <li><a href="apollinaris.html">Claudius Apollinaris</a></li>
+			  <li><a href="melito.html">Melito of Sardis</a></li>
+			  <li><a href="hegesippus.html">Hegesippus</a></li>
+			  <li><a href="dionysius.html">Dionysius of Corinth</a></li>
+			  <li><a href="rhodon.html">Rhodon</a></li>
+			  <li><a href="theophiluscaesarea.html">Theophilus of Caesarea</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 136px; height: 147px;">
+			<div class="subdiv1" style="width: 134px; height: 145px;"><div class="subdiv2" style="width: 133px; height: 144px;">
+			  <li><a href="bardesanes.html">Bardesanes</a></li>
+			  <li><a href="maximus.html">Maximus of Jerusalem</a></li>
+			  <li><a href="polycrates.html">Polycrates of Ephesus</a></li>
+			  <li><a href="victor.html">Victor I</a></li>
+			  <li><a href="pantaenus.html">Pantaenus</a></li>
+			  <li><a href="antimontanist.html">Anonymous Anti-Montanist</a></li>
+			  <li><a href="serapion.html">Serapion of Antioch</a></li>
+			  <li><a href="apollonius.html">Apollonius</a></li>
+			  <li><a href="caius.html">Caius</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="irenaeus.html">Irenaeus of Lyons</a></li>
+		<li><a href="hippolytus.html">Hippolytus of Rome</a></li>
+		<li><a href="clement.html">Clement of Alexandria</a></li>
+		<li><a href="tertullian.html">Tertullian</a></li>
+		<li><a href="origen.html">Origen</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 286px; width: 41px; height: 29px;"><a href="other.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Other"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Pagan and Jewish</a>
+		  <ul class="subul" style="left: 129px; width: 105px; height: 195px;">
+			<div class="subdiv1" style="width: 103px; height: 193px;"><div class="subdiv2" style="width: 102px; height: 192px;">
+			  <li><a href="mara.html">Mara bar Serapion</a></li>
+			  <li><a href="josephus.html">Josephus</a></li>
+			  <li><a href="pliny.html">Pliny the Younger</a></li>
+			  <li><a href="suetonius.html">Suetonius</a></li>
+			  <li><a href="tacitus.html">Tacitus</a></li>
+			  <li><a href="fronto.html">Fronto</a></li>
+			  <li><a href="lucian.html">Lucian of Samosata</a></li>
+			  <li><a href="aurelius.html">Marcus Aurelius</a></li>
+			  <li><a href="galen.html">Galen</a></li>
+			  <li><a href="celsus.html">Celsus</a></li>
+			  <li><a href="talmud.html">Talmud</a></li>
+			  <li><a href="philostratus.html">Philostratus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Jewish/Christian</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 83px;">
+			<div class="subdiv1" style="width: 115px; height: 81px;"><div class="subdiv2" style="width: 114px; height: 80px;">
+			  <li><a href="patriarchs.html">The Twelve Patriarchs</a></li>
+			  <li><a href="sibylline.html">Non-Pagan Sibyllines</a></li>
+			  <li><a href="odes.html">Odes of Solomon</a></li>
+			  <li><a href="elchasai.html">Book of Elchasai</a></li>
+			  <li><a href="ascension.html">Ascension of Isaiah</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Hypothesized Sources</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 51px;">
+			<div class="subdiv1" style="width: 115px; height: 49px;"><div class="subdiv2" style="width: 114px; height: 48px;">
+			  <li><a href="passion.html">Passion Narrative</a></li>
+			  <li><a href="q.html">Sayings Gospel Q</a></li>
+			  <li><a href="signs.html">Signs Gospel</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="antimarcion.html">Anti-Marcionite Prologues</a></li>
+		<li><a href="muratorian.html">Muratorian Canon</a></li>
+		<li><a href="kerygmatapetrou.html">Kerygmata Petrou</a></li>
+		<li><a href="abercius.html">Inscription of Abercias</a></li>
+	</div></div>
+	</ul>
+</li>
+</ul>	
+</div><![if !IE]><script language="JavaScript">  <!-- var view = document.defaultView; var symboltab = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8704,0,8707,0,0, 8715,0,0,8727,0,0,8722,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 
+0,0,0,0,8773,913,914,935,8710,917,934,915,919,921, 977,922,923,924,925,927,928,920,929,931,932,933,962, 
+8486,926,936,918,0,8756,0,8869,0,8254,945,946,967, 948,949,966,947,951,953,981,954,955,956,957,959,960, 
+952,961,963,964,965,982,969,958,968,950,0,0,0,8764,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 
+0,0,0,0,0,0,0,978,8242,8804,8725,8734,402,9827,9830, 9829,9824,8596,8592,8593,8594,8595,176,177,8243, 
+8805,215,8733,8706,8226,247,8800,8801,8776,8230,0, 0,8629,8501,8465,8476,8472,8855,8853,8709,8745,8746, 
+8835,8839,8836,8834,8838,8712,8713,8736,8711,174,169, 8482,8719,8730,8901,172,8743,8744,8660,8656,8657, 
+8658,8659,9674,9001,174,169,8482,8721,0,0,0,0,0,0,0, 0,0,0,0,9002,8747,8992,0,8993,0,0,0,0,0,0,0,0,0, 0]; function convNode(n) { var n1; if (n == 
+null) return; if (n.nodeType == 3) { elem = n.parentNode; var st = view.getComputedStyle(elem, null); var val = st.getPropertyValue('font-family'); 
+if (val.toLowerCase() == 'symbol') { var s0 = n.data, s1 = '', len = s0.length, ch; for (i = 0; i < len; i++) { ch = s0.charCodeAt(i); if (ch < 256 
+&& symboltab[ch] != 0) ch = symboltab[ch]; s1 += String.fromCharCode(ch); } n.data = s1; } } n1 = n.firstChild; while (n1 != null) { convNode(n1); 
+n1 = n1.nextSibling; } } convNode(document); // <![endif]--> </script><!--[if IE]> <script language="JavaScript">var sURL = unescape
+(window.location.pathname); function refresh() {window.location.href = sURL;}</script> <script language="JavaScript1.1">function refresh() 
+{window.location.replace( sURL );}</script> <script language="JavaScript1.2">function refresh() {window.location.reload( false );}</script> <script 
+language="JavaScript">window.onresize = refresh;</script> <![endif]-->
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="305"; var zflag_cid="39404/39401/1"; var zflag_sid="4519"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="15"; var zflag_click="[INSERT_CLICK_TRACKER_MACRO]";
+</script>
+<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/fo.js"></script>
+<!-- end ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+</body>  </html>

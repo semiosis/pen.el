@@ -1,0 +1,1 @@
+ import Graphics.UI.Gtk as Gtk import System.Time.Clock main :: IO () main = do let l = 24 :: Int setTime defaultTimeLocale "%Y-%m-%d %H:%M:%

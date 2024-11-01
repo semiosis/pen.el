@@ -1,0 +1,9 @@
+
+All the computer geniuses were now dead.
+Then they realized they both died.
+"""
+
+def menu():
+    var2 = ""
+    while var2 == "":
+        var1 = input("What would you

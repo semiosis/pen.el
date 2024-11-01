@@ -1,0 +1,978 @@
+HTTP/1.1 200 OK
+Date: Sun, 11 Sep 2022 08:01:24 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+x-amz-id-2: bkxYIA1FHq+sbIR0/Wqh4fTd7j9KBgis1iFM94wkiQ+5WRXKCEdBJnF8q6jjaI2EYSzYWJ9RzB8=
+x-amz-request-id: ASRNDMV2XHC4NCDV
+Last-Modified: Fri, 09 Sep 2022 19:39:01 GMT
+ETag: W/"f459ac9604b20554e1411df087a88b2c"
+X-Served: Nginx-Proxito-Sendfile
+X-Backend: web-i-0bb00f11ea6cd8c59
+X-RTD-Project: solidity
+X-RTD-Version: latest
+X-RTD-Path: /proxito/html/solidity/latest/introduction-to-smart-contracts.html
+X-RTD-Domain: docs.soliditylang.org
+X-RTD-Version-Method: path
+X-RTD-Project-Method: cname
+Referrer-Policy: no-referrer-when-downgrade
+CF-Cache-Status: HIT
+Age: 2
+Expires: Mon, 12 Sep 2022 08:01:24 GMT
+Cache-Control: public, max-age=86400
+Server: cloudflare
+CF-RAY: 748ee00da93ea43f-AKL
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to Smart Contracts &mdash; Solidity 0.8.18 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/a4_railroad_diagram.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/toggle.css" type="text/css" />
+    <link rel="canonical" href="https://docs.soliditylang.org/en/v0.8.17/introduction-to-smart-contracts.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="/_/static/javascript/readthedocs-doc-embed.js"></script>
+        <script src="_static/js/toggle.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing the Solidity Compiler" href="installing-solidity.html" />
+    <link rel="prev" title="Solidity" href="index.html" /> 
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="/_/static/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": true, "api_host": "https://readthedocs.org", "build_date": "2022-09-09T19:38:16Z", "builder": "sphinx", "canonical_url": null, "commit": "f8088553", "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": null, "language": "en", "page": "introduction-to-smart-contracts", "programming_language": "cpp", "project": "solidity", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="/_/static/javascript/readthedocs-analytics.js" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #65afff" >
+            <a href="index.html">
+            <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">Basics</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to Smart Contracts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-simple-smart-contract">A Simple Smart Contract</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#storage-example">Storage Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subcurrency-example">Subcurrency Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#blockchain-basics">Blockchain Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#transactions">Transactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#blocks">Blocks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#index-6">The Ethereum Virtual Machine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#accounts">Accounts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#index-8">Transactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gas">Gas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#storage-memory-and-the-stack">Storage, Memory and the Stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instruction-set">Instruction Set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#message-calls">Message Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delegatecall-and-libraries">Delegatecall and Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logs">Logs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create">Create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deactivate-and-self-destruct">Deactivate and Self-destruct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#precompiled-contracts">Precompiled Contracts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installing-solidity.html">Installing the Solidity Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solidity-by-example.html">Solidity by Example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Language Description</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="layout-of-source-files.html">Layout of a Solidity Source File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure-of-a-contract.html">Structure of a Contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types.html">Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="units-and-global-variables.html">Units and Globally Available Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control-structures.html">Expressions and Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contracts.html">Contracts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembly.html">Inline Assembly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grammar.html">Language Grammar</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compiler</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="using-the-compiler.html">Using the Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysing-compilation-output.html">Analysing the Compiler Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ir-breaking-changes.html">Solidity IR-based Codegen Changes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Internals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="internals/layout_in_storage.html">Layout of State Variables in Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/layout_in_memory.html">Layout in Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/layout_in_calldata.html">Layout of Call Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/variable_cleanup.html">Cleaning Up Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/source_mappings.html">Source Mappings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/optimizer.html">The Optimizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">Contract Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="abi-spec.html">Contract ABI Specification</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="050-breaking-changes.html">Solidity v0.5.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="060-breaking-changes.html">Solidity v0.6.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="070-breaking-changes.html">Solidity v0.7.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="080-breaking-changes.html">Solidity v0.8.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="natspec-format.html">NatSpec Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-considerations.html">Security Considerations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smtchecker.html">SMTChecker and Formal Verification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="path-resolution.html">Import Path Resolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yul.html">Yul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style-guide.html">Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-patterns.html">Common Patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">List of Known Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="brand-guide.html">Solidity Brand Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language-influences.html">Language Influences</a></li>
+</ul>
+
+    <ul>
+        <li>
+            <a href="genindex.html">Keyword Index</a>
+        </li>
+    </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #65afff" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Solidity</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Introduction to Smart Contracts</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ethereum/solidity/blob/develop/docs/introduction-to-smart-contracts.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction-to-smart-contracts">
+<h1>Introduction to Smart Contracts<a class="headerlink" href="#introduction-to-smart-contracts" title="Permalink to this heading"></a></h1>
+<section id="a-simple-smart-contract">
+<span id="simple-smart-contract"></span><h2>A Simple Smart Contract<a class="headerlink" href="#a-simple-smart-contract" title="Permalink to this heading"></a></h2>
+<p>Let us begin with a basic example that sets the value of a variable and exposes
+it for other contracts to access. It is fine if you do not understand
+everything right now, we will go into more details later.</p>
+<section id="storage-example">
+<h3>Storage Example<a class="headerlink" href="#storage-example" title="Permalink to this heading"></a></h3>
+<p class="remix-link-container"><a class="remix-link reference external" href="https://remix.ethereum.org/?language=solidity&amp;version=0.8.18&amp;code=Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEdQTC0zLjAKcHJhZ21hIHNvbGlkaXR5ID49MC40LjE2IDwwLjkuMDsKCmNvbnRyYWN0IFNpbXBsZVN0b3JhZ2UgewogICAgdWludCBzdG9yZWREYXRhOwoKICAgIGZ1bmN0aW9uIHNldCh1aW50IHgpIHB1YmxpYyB7CiAgICAgICAgc3RvcmVkRGF0YSA9IHg7CiAgICB9CgogICAgZnVuY3Rpb24gZ2V0KCkgcHVibGljIHZpZXcgcmV0dXJucyAodWludCkgewogICAgICAgIHJldHVybiBzdG9yZWREYXRhOwogICAgfQp9"><span class="link-icon"></span><span class="link-text">open in Remix</span></a></p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="c1">// SPDX-License-Identifier: GPL-3.0</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">&gt;=</span><span class="k">0.4.16</span><span class="w"> </span><span class="o">&lt;</span><span class="k">0.9.0</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">contract</span><span class="w"> </span><span class="ni">SimpleStorage</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint</span><span class="w"> </span><span class="nv">storedData</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">set</span><span class="p">(</span><span class="kt">uint</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span>storedData<span class="w"> </span><span class="o">=</span><span class="w"> </span>x<span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">get</span><span class="p">()</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span>storedData<span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The first line tells you that the source code is licensed under the
+GPL version 3.0. Machine-readable license specifiers are important
+in a setting where publishing the source code is the default.</p>
+<p>The next line specifies that the source code is written for
+Solidity version 0.4.16, or a newer version of the language up to, but not including version 0.9.0.
+This is to ensure that the contract is not compilable with a new (breaking) compiler version, where it could behave differently.
+<a class="reference internal" href="layout-of-source-files.html#pragma"><span class="std std-ref">Pragmas</span></a> are common instructions for compilers about how to treat the
+source code (e.g. <a class="reference external" href="https://en.wikipedia.org/wiki/Pragma_once">pragma once</a>).</p>
+<p>A contract in the sense of Solidity is a collection of code (its <em>functions</em>) and
+data (its <em>state</em>) that resides at a specific address on the Ethereum
+blockchain. The line <code class="docutils literal notranslate"><span class="pre">uint</span> <span class="pre">storedData;</span></code> declares a state variable called <code class="docutils literal notranslate"><span class="pre">storedData</span></code> of
+type <code class="docutils literal notranslate"><span class="pre">uint</span></code> (<em>u</em>nsigned <em>int</em>eger of <em>256</em> bits). You can think of it as a single slot
+in a database that you can query and alter by calling functions of the
+code that manages the database. In this example, the contract defines the
+functions <code class="docutils literal notranslate"><span class="pre">set</span></code> and <code class="docutils literal notranslate"><span class="pre">get</span></code> that can be used to modify
+or retrieve the value of the variable.</p>
+<p>To access a member (like a state variable) of the current contract, you do not typically add the <code class="docutils literal notranslate"><span class="pre">this.</span></code> prefix,
+you just access it directly via its name.
+Unlike in some other languages, omitting it is not just a matter of style,
+it results in a completely different way to access the member, but more on this later.</p>
+<p>This contract does not do much yet apart from (due to the infrastructure
+built by Ethereum) allowing anyone to store a single number that is accessible by
+anyone in the world without a (feasible) way to prevent you from publishing
+this number. Anyone could call <code class="docutils literal notranslate"><span class="pre">set</span></code> again with a different value
+and overwrite your number, but the number is still stored in the history
+of the blockchain. Later, you will see how you can impose access restrictions
+so that only you can alter the number.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be careful with using Unicode text, as similar looking (or even identical) characters can
+have different code points and as such are encoded as a different byte array.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All identifiers (contract names, function names and variable names) are restricted to
+the ASCII character set. It is possible to store UTF-8 encoded data in string variables.</p>
+</div>
+</section>
+<section id="subcurrency-example">
+<span id="index-0"></span><h3>Subcurrency Example<a class="headerlink" href="#subcurrency-example" title="Permalink to this heading"></a></h3>
+<p>The following contract implements the simplest form of a
+cryptocurrency. The contract allows only its creator to create new coins (different issuance schemes are possible).
+Anyone can send coins to each other without a need for
+registering with a username and password, all you need is an Ethereum keypair.</p>
+<p class="remix-link-container"><a class="remix-link reference external" href="https://remix.ethereum.org/?language=solidity&amp;version=0.8.18&amp;code=Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEdQTC0zLjAKcHJhZ21hIHNvbGlkaXR5IF4wLjguNDsKCmNvbnRyYWN0IENvaW4gewogICAgLy8gVGhlIGtleXdvcmQgInB1YmxpYyIgbWFrZXMgdmFyaWFibGVzCiAgICAvLyBhY2Nlc3NpYmxlIGZyb20gb3RoZXIgY29udHJhY3RzCiAgICBhZGRyZXNzIHB1YmxpYyBtaW50ZXI7CiAgICBtYXBwaW5nIChhZGRyZXNzID0+IHVpbnQpIHB1YmxpYyBiYWxhbmNlczsKCiAgICAvLyBFdmVudHMgYWxsb3cgY2xpZW50cyB0byByZWFjdCB0byBzcGVjaWZpYwogICAgLy8gY29udHJhY3QgY2hhbmdlcyB5b3UgZGVjbGFyZQogICAgZXZlbnQgU2VudChhZGRyZXNzIGZyb20sIGFkZHJlc3MgdG8sIHVpbnQgYW1vdW50KTsKCiAgICAvLyBDb25zdHJ1Y3RvciBjb2RlIGlzIG9ubHkgcnVuIHdoZW4gdGhlIGNvbnRyYWN0CiAgICAvLyBpcyBjcmVhdGVkCiAgICBjb25zdHJ1Y3RvcigpIHsKICAgICAgICBtaW50ZXIgPSBtc2cuc2VuZGVyOwogICAgfQoKICAgIC8vIFNlbmRzIGFuIGFtb3VudCBvZiBuZXdseSBjcmVhdGVkIGNvaW5zIHRvIGFuIGFkZHJlc3MKICAgIC8vIENhbiBvbmx5IGJlIGNhbGxlZCBieSB0aGUgY29udHJhY3QgY3JlYXRvcgogICAgZnVuY3Rpb24gbWludChhZGRyZXNzIHJlY2VpdmVyLCB1aW50IGFtb3VudCkgcHVibGljIHsKICAgICAgICByZXF1aXJlKG1zZy5zZW5kZXIgPT0gbWludGVyKTsKICAgICAgICBiYWxhbmNlc1tyZWNlaXZlcl0gKz0gYW1vdW50OwogICAgfQoKICAgIC8vIEVycm9ycyBhbGxvdyB5b3UgdG8gcHJvdmlkZSBpbmZvcm1hdGlvbiBhYm91dAogICAgLy8gd2h5IGFuIG9wZXJhdGlvbiBmYWlsZWQuIFRoZXkgYXJlIHJldHVybmVkCiAgICAvLyB0byB0aGUgY2FsbGVyIG9mIHRoZSBmdW5jdGlvbi4KICAgIGVycm9yIEluc3VmZmljaWVudEJhbGFuY2UodWludCByZXF1ZXN0ZWQsIHVpbnQgYXZhaWxhYmxlKTsKCiAgICAvLyBTZW5kcyBhbiBhbW91bnQgb2YgZXhpc3RpbmcgY29pbnMKICAgIC8vIGZyb20gYW55IGNhbGxlciB0byBhbiBhZGRyZXNzCiAgICBmdW5jdGlvbiBzZW5kKGFkZHJlc3MgcmVjZWl2ZXIsIHVpbnQgYW1vdW50KSBwdWJsaWMgewogICAgICAgIGlmIChhbW91bnQgPiBiYWxhbmNlc1ttc2cuc2VuZGVyXSkKICAgICAgICAgICAgcmV2ZXJ0IEluc3VmZmljaWVudEJhbGFuY2UoewogICAgICAgICAgICAgICAgcmVxdWVzdGVkOiBhbW91bnQsCiAgICAgICAgICAgICAgICBhdmFpbGFibGU6IGJhbGFuY2VzW21zZy5zZW5kZXJdCiAgICAgICAgICAgIH0pOwoKICAgICAgICBiYWxhbmNlc1ttc2cuc2VuZGVyXSAtPSBhbW91bnQ7CiAgICAgICAgYmFsYW5jZXNbcmVjZWl2ZXJdICs9IGFtb3VudDsKICAgICAgICBlbWl0IFNlbnQobXNnLnNlbmRlciwgcmVjZWl2ZXIsIGFtb3VudCk7CiAgICB9Cn0="><span class="link-icon"></span><span class="link-text">open in Remix</span></a></p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="c1">// SPDX-License-Identifier: GPL-3.0</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.4</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">contract</span><span class="w"> </span><span class="ni">Coin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// The keyword &quot;public&quot; makes variables</span>
+<span class="w">    </span><span class="c1">// accessible from other contracts</span>
+<span class="w">    </span><span class="kt">address</span><span class="w"> </span><span class="k">public </span><span class="nv">minter</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">mapping</span><span class="w"> </span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="kt">uint</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>balances<span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Events allow clients to react to specific</span>
+<span class="w">    </span><span class="c1">// contract changes you declare</span>
+<span class="w">    </span><span class="kt">event</span><span class="w"> </span><span class="nv">Sent</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">from</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">to</span><span class="p">,</span><span class="w"> </span><span class="kt">uint</span><span class="w"> </span><span class="nv">amount</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Constructor code is only run when the contract</span>
+<span class="w">    </span><span class="c1">// is created</span>
+<span class="w">    </span><span class="kt">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span>minter<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">msg.sender</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Sends an amount of newly created coins to an address</span>
+<span class="w">    </span><span class="c1">// Can only be called by the contract creator</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">mint</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">receiver</span><span class="p">,</span><span class="w"> </span><span class="kt">uint</span><span class="w"> </span><span class="nv">amount</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">require</span><span class="p">(</span><span class="k">msg.sender</span><span class="w"> </span><span class="o">==</span><span class="w"> </span>minter<span class="p">);</span><span class="w"></span>
+<span class="w">        </span>balances<span class="p">[</span>receiver<span class="p">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>amount<span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Errors allow you to provide information about</span>
+<span class="w">    </span><span class="c1">// why an operation failed. They are returned</span>
+<span class="w">    </span><span class="c1">// to the caller of the function.</span>
+<span class="w">    </span>error<span class="w"> </span>InsufficientBalance<span class="p">(</span><span class="kt">uint</span><span class="w"> </span><span class="nv">requested</span><span class="p">,</span><span class="w"> </span><span class="kt">uint</span><span class="w"> </span><span class="nv">available</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Sends an amount of existing coins</span>
+<span class="w">    </span><span class="c1">// from any caller to an address</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">send</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">receiver</span><span class="p">,</span><span class="w"> </span><span class="kt">uint</span><span class="w"> </span><span class="nv">amount</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">if</span><span class="w"> </span><span class="p">(</span>amount<span class="w"> </span><span class="o">&gt;</span><span class="w"> </span>balances<span class="p">[</span><span class="k">msg.sender</span><span class="p">])</span><span class="w"></span>
+<span class="w">            </span>revert<span class="w"> </span>InsufficientBalance<span class="p">({</span><span class="w"></span>
+<span class="w">                </span>requested<span class="p">:</span><span class="w"> </span>amount<span class="p">,</span><span class="w"></span>
+<span class="w">                </span>available<span class="p">:</span><span class="w"> </span>balances<span class="p">[</span><span class="k">msg.sender</span><span class="p">]</span><span class="w"></span>
+<span class="w">            </span><span class="p">});</span><span class="w"></span>
+
+<span class="w">        </span>balances<span class="p">[</span><span class="k">msg.sender</span><span class="p">]</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span>amount<span class="p">;</span><span class="w"></span>
+<span class="w">        </span>balances<span class="p">[</span>receiver<span class="p">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>amount<span class="p">;</span><span class="w"></span>
+<span class="w">        </span>emit<span class="w"> </span>Sent<span class="p">(</span><span class="k">msg.sender</span><span class="p">,</span><span class="w"> </span>receiver<span class="p">,</span><span class="w"> </span>amount<span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This contract introduces some new concepts, let us go through them one by one.</p>
+<p>The line <code class="docutils literal notranslate"><span class="pre">address</span> <span class="pre">public</span> <span class="pre">minter;</span></code> declares a state variable of type <a class="reference internal" href="types.html#address"><span class="std std-ref">address</span></a>.
+The <code class="docutils literal notranslate"><span class="pre">address</span></code> type is a 160-bit value that does not allow any arithmetic operations.
+It is suitable for storing addresses of contracts, or a hash of the public half
+of a keypair belonging to <a class="reference internal" href="#accounts"><span class="std std-ref">external accounts</span></a>.</p>
+<p>The keyword <code class="docutils literal notranslate"><span class="pre">public</span></code> automatically generates a function that allows you to access the current value of the state
+variable from outside of the contract. Without this keyword, other contracts have no way to access the variable.
+The code of the function generated by the compiler is equivalent
+to the following (ignore <code class="docutils literal notranslate"><span class="pre">external</span></code> and <code class="docutils literal notranslate"><span class="pre">view</span></code> for now):</p>
+<p class="remix-link-container"><a class="remix-link reference external" href="https://remix.ethereum.org/?language=solidity&amp;version=0.8.18&amp;code=ZnVuY3Rpb24gbWludGVyKCkgZXh0ZXJuYWwgdmlldyByZXR1cm5zIChhZGRyZXNzKSB7IHJldHVybiBtaW50ZXI7IH0="><span class="link-icon"></span><span class="link-text">open in Remix</span></a></p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="kt">function</span><span class="w"> </span><span class="nv">minter</span><span class="p">()</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">address</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kt">return</span><span class="w"> </span>minter<span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>You could add a function like the above yourself, but you would have a function and state variable with the same name.
+You do not need to do this, the compiler figures it out for you.</p>
+<p id="index-1">The next line, <code class="docutils literal notranslate"><span class="pre">mapping</span> <span class="pre">(address</span> <span class="pre">=&gt;</span> <span class="pre">uint)</span> <span class="pre">public</span> <span class="pre">balances;</span></code> also
+creates a public state variable, but it is a more complex datatype.
+The <a class="reference internal" href="types.html#mapping-types"><span class="std std-ref">mapping</span></a> type maps addresses to <a class="reference internal" href="types.html#integers"><span class="std std-ref">unsigned integers</span></a>.</p>
+<p>Mappings can be seen as <a class="reference external" href="https://en.wikipedia.org/wiki/Hash_table">hash tables</a> which are
+virtually initialised such that every possible key exists from the start and is mapped to a
+value whose byte-representation is all zeros. However, it is neither possible to obtain a list of all keys of
+a mapping, nor a list of all values. Record what you
+added to the mapping, or use it in a context where this is not needed. Or
+even better, keep a list, or use a more suitable data type.</p>
+<p>The <a class="reference internal" href="contracts.html#getter-functions"><span class="std std-ref">getter function</span></a> created by the <code class="docutils literal notranslate"><span class="pre">public</span></code> keyword
+is more complex in the case of a mapping. It looks like the
+following:</p>
+<p class="remix-link-container"><a class="remix-link reference external" href="https://remix.ethereum.org/?language=solidity&amp;version=0.8.18&amp;code=ZnVuY3Rpb24gYmFsYW5jZXMoYWRkcmVzcyBhY2NvdW50KSBleHRlcm5hbCB2aWV3IHJldHVybnMgKHVpbnQpIHsKICAgIHJldHVybiBiYWxhbmNlc1thY2NvdW50XTsKfQ=="><span class="link-icon"></span><span class="link-text">open in Remix</span></a></p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="kt">function</span><span class="w"> </span><span class="nv">balances</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">account</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">return</span><span class="w"> </span>balances<span class="p">[</span>account<span class="p">];</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>You can use this function to query the balance of a single account.</p>
+<p id="index-2">The line <code class="docutils literal notranslate"><span class="pre">event</span> <span class="pre">Sent(address</span> <span class="pre">from,</span> <span class="pre">address</span> <span class="pre">to,</span> <span class="pre">uint</span> <span class="pre">amount);</span></code> declares
+an <a class="reference internal" href="contracts.html#events"><span class="std std-ref">“event”</span></a>, which is emitted in the last line of the function
+<code class="docutils literal notranslate"><span class="pre">send</span></code>. Ethereum clients such as web applications can
+listen for these events emitted on the blockchain without much
+cost. As soon as it is emitted, the listener receives the
+arguments <code class="docutils literal notranslate"><span class="pre">from</span></code>, <code class="docutils literal notranslate"><span class="pre">to</span></code> and <code class="docutils literal notranslate"><span class="pre">amount</span></code>, which makes it possible to track
+transactions.</p>
+<p>To listen for this event, you could use the following
+JavaScript code, which uses <a class="reference external" href="https://github.com/ethereum/web3.js/">web3.js</a> to create the <code class="docutils literal notranslate"><span class="pre">Coin</span></code> contract object,
+and any user interface calls the automatically generated <code class="docutils literal notranslate"><span class="pre">balances</span></code> function from above:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">Coin</span><span class="p">.</span><span class="nx">Sent</span><span class="p">().</span><span class="nx">watch</span><span class="p">({},</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Coin transfer: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="nx">amount</span><span class="w"> </span><span class="o">+</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot; coins were sent from &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="kr">from</span><span class="w"> </span><span class="o">+</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot; to &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="nx">to</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Balances now:\n&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;Sender: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">Coin</span><span class="p">.</span><span class="nx">balances</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="kr">from</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;Receiver: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">Coin</span><span class="p">.</span><span class="nx">balances</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="nx">to</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+</pre></div>
+</div>
+<p id="index-3">The <a class="reference internal" href="contracts.html#constructor"><span class="std std-ref">constructor</span></a> is a special function that is executed during the creation of the contract and
+cannot be called afterwards. In this case, it permanently stores the address of the person creating the
+contract. The <code class="docutils literal notranslate"><span class="pre">msg</span></code> variable (together with <code class="docutils literal notranslate"><span class="pre">tx</span></code> and <code class="docutils literal notranslate"><span class="pre">block</span></code>) is a
+<a class="reference internal" href="units-and-global-variables.html#special-variables-functions"><span class="std std-ref">special global variable</span></a> that
+contains properties which allow access to the blockchain. <code class="docutils literal notranslate"><span class="pre">msg.sender</span></code> is
+always the address where the current (external) function call came from.</p>
+<p>The functions that make up the contract, and that users and contracts can call are <code class="docutils literal notranslate"><span class="pre">mint</span></code> and <code class="docutils literal notranslate"><span class="pre">send</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">mint</span></code> function sends an amount of newly created coins to another address. The <a class="reference internal" href="control-structures.html#assert-and-require"><span class="std std-ref">require</span></a> function call defines conditions that reverts all changes if not met. In this
+example, <code class="docutils literal notranslate"><span class="pre">require(msg.sender</span> <span class="pre">==</span> <span class="pre">minter);</span></code> ensures that only the creator of the contract can call
+<code class="docutils literal notranslate"><span class="pre">mint</span></code>. In general, the creator can mint as many tokens as they like, but at some point, this will
+lead to a phenomenon called “overflow”. Note that because of the default <a class="reference internal" href="control-structures.html#unchecked"><span class="std std-ref">Checked arithmetic</span></a>, the transaction would revert if the expression <code class="docutils literal notranslate"><span class="pre">balances[receiver]</span> <span class="pre">+=</span> <span class="pre">amount;</span></code>
+overflows, i.e., when <code class="docutils literal notranslate"><span class="pre">balances[receiver]</span> <span class="pre">+</span> <span class="pre">amount</span></code> in arbitrary precision arithmetic is larger
+than the maximum value of <code class="docutils literal notranslate"><span class="pre">uint</span></code> (<code class="docutils literal notranslate"><span class="pre">2**256</span> <span class="pre">-</span> <span class="pre">1</span></code>). This is also true for the statement
+<code class="docutils literal notranslate"><span class="pre">balances[receiver]</span> <span class="pre">+=</span> <span class="pre">amount;</span></code> in the function <code class="docutils literal notranslate"><span class="pre">send</span></code>.</p>
+<p><a class="reference internal" href="contracts.html#errors"><span class="std std-ref">Errors</span></a> allow you to provide more information to the caller about
+why a condition or operation failed. Errors are used together with the
+<a class="reference internal" href="control-structures.html#revert-statement"><span class="std std-ref">revert statement</span></a>. The <code class="docutils literal notranslate"><span class="pre">revert</span></code> statement unconditionally
+aborts and reverts all changes similar to the <code class="docutils literal notranslate"><span class="pre">require</span></code> function, but it also
+allows you to provide the name of an error and additional data which will be supplied to the caller
+(and eventually to the front-end application or block explorer) so that
+a failure can more easily be debugged or reacted upon.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">send</span></code> function can be used by anyone (who already
+has some of these coins) to send coins to anyone else. If the sender does not have
+enough coins to send, the <code class="docutils literal notranslate"><span class="pre">if</span></code> condition evaluates to true. As a result, the <code class="docutils literal notranslate"><span class="pre">revert</span></code> will cause the operation to fail
+while providing the sender with error details using the <code class="docutils literal notranslate"><span class="pre">InsufficientBalance</span></code> error.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you use
+this contract to send coins to an address, you will not see anything when you
+look at that address on a blockchain explorer, because the record that you sent
+coins and the changed balances are only stored in the data storage of this
+particular coin contract. By using events, you can create
+a “blockchain explorer” that tracks transactions and balances of your new coin,
+but you have to inspect the coin contract address and not the addresses of the
+coin owners.</p>
+</div>
+</section>
+</section>
+<section id="blockchain-basics">
+<span id="id1"></span><h2>Blockchain Basics<a class="headerlink" href="#blockchain-basics" title="Permalink to this heading"></a></h2>
+<p>Blockchains as a concept are not too hard to understand for programmers. The reason is that
+most of the complications (mining, <a class="reference external" href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">hashing</a>,
+<a class="reference external" href="https://en.wikipedia.org/wiki/Elliptic_curve_cryptography">elliptic-curve cryptography</a>,
+<a class="reference external" href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer networks</a>, etc.)
+are just there to provide a certain set of features and promises for the platform. Once you accept these
+features as given, you do not have to worry about the underlying technology - or do you have
+to know how Amazon’s AWS works internally in order to use it?</p>
+<section id="transactions">
+<span id="index-4"></span><h3>Transactions<a class="headerlink" href="#transactions" title="Permalink to this heading"></a></h3>
+<p>A blockchain is a globally shared, transactional database.
+This means that everyone can read entries in the database just by participating in the network.
+If you want to change something in the database, you have to create a so-called transaction
+which has to be accepted by all others.
+The word transaction implies that the change you want to make (assume you want to change
+two values at the same time) is either not done at all or completely applied. Furthermore,
+while your transaction is being applied to the database, no other transaction can alter it.</p>
+<p>As an example, imagine a table that lists the balances of all accounts in an
+electronic currency. If a transfer from one account to another is requested,
+the transactional nature of the database ensures that if the amount is
+subtracted from one account, it is always added to the other account. If due
+to whatever reason, adding the amount to the target account is not possible,
+the source account is also not modified.</p>
+<p>Furthermore, a transaction is always cryptographically signed by the sender (creator).
+This makes it straightforward to guard access to specific modifications of the
+database. In the example of the electronic currency, a simple check ensures that
+only the person holding the keys to the account can transfer money from it.</p>
+</section>
+<section id="blocks">
+<span id="index-5"></span><h3>Blocks<a class="headerlink" href="#blocks" title="Permalink to this heading"></a></h3>
+<p>One major obstacle to overcome is what (in Bitcoin terms) is called a “double-spend attack”:
+What happens if two transactions exist in the network that both want to empty an account?
+Only one of the transactions can be valid, typically the one that is accepted first.
+The problem is that “first” is not an objective term in a peer-to-peer network.</p>
+<p>The abstract answer to this is that you do not have to care. A globally accepted order of the transactions
+will be selected for you, solving the conflict. The transactions will be bundled into what is called a “block”
+and then they will be executed and distributed among all participating nodes.
+If two transactions contradict each other, the one that ends up being second will
+be rejected and not become part of the block.</p>
+<p>These blocks form a linear sequence in time and that is where the word “blockchain”
+derives from. Blocks are added to the chain in rather regular intervals - for
+Ethereum this is roughly every 17 seconds.</p>
+<p>As part of the “order selection mechanism” (which is called “mining”) it may happen that
+blocks are reverted from time to time, but only at the “tip” of the chain. The more
+blocks are added on top of a particular block, the less likely this block will be reverted. So it might be that your transactions
+are reverted and even removed from the blockchain, but the longer you wait, the less
+likely it will be.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Transactions are not guaranteed to be included in the next block or any specific future block,
+since it is not up to the submitter of a transaction, but up to the miners to determine in which block the transaction is included.</p>
+<p>If you want to schedule future calls of your contract, you can use
+a smart contract automation tool or an oracle service.</p>
+</div>
+<span class="target" id="the-ethereum-virtual-machine"></span></section>
+</section>
+<section id="index-6">
+<span id="id2"></span><h2>The Ethereum Virtual Machine<a class="headerlink" href="#index-6" title="Permalink to this heading"></a></h2>
+<section id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h3>
+<p>The Ethereum Virtual Machine or EVM is the runtime environment
+for smart contracts in Ethereum. It is not only sandboxed but
+actually completely isolated, which means that code running
+inside the EVM has no access to network, filesystem or other processes.
+Smart contracts even have limited access to other smart contracts.</p>
+</section>
+<section id="accounts">
+<span id="index-7"></span><span id="id3"></span><h3>Accounts<a class="headerlink" href="#accounts" title="Permalink to this heading"></a></h3>
+<p>There are two kinds of accounts in Ethereum which share the same
+address space: <strong>External accounts</strong> that are controlled by
+public-private key pairs (i.e. humans) and <strong>contract accounts</strong> which are
+controlled by the code stored together with the account.</p>
+<p>The address of an external account is determined from
+the public key while the address of a contract is
+determined at the time the contract is created
+(it is derived from the creator address and the number
+of transactions sent from that address, the so-called “nonce”).</p>
+<p>Regardless of whether or not the account stores code, the two types are
+treated equally by the EVM.</p>
+<p>Every account has a persistent key-value store mapping 256-bit words to 256-bit
+words called <strong>storage</strong>.</p>
+<p>Furthermore, every account has a <strong>balance</strong> in
+Ether (in “Wei” to be exact, <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">ether</span></code> is <code class="docutils literal notranslate"><span class="pre">10**18</span> <span class="pre">wei</span></code>) which can be modified by sending transactions that
+include Ether.</p>
+</section>
+<section id="index-8">
+<span id="id4"></span><h3>Transactions<a class="headerlink" href="#index-8" title="Permalink to this heading"></a></h3>
+<p>A transaction is a message that is sent from one account to another
+account (which might be the same or empty, see below).
+It can include binary data (which is called “payload”) and Ether.</p>
+<p>If the target account contains code, that code is executed and
+the payload is provided as input data.</p>
+<p>If the target account is not set (the transaction does not have
+a recipient or the recipient is set to <code class="docutils literal notranslate"><span class="pre">null</span></code>), the transaction
+creates a <strong>new contract</strong>.
+As already mentioned, the address of that contract is not
+the zero address but an address derived from the sender and
+its number of transactions sent (the “nonce”). The payload
+of such a contract creation transaction is taken to be
+EVM bytecode and executed. The output data of this execution is
+permanently stored as the code of the contract.
+This means that in order to create a contract, you do not
+send the actual code of the contract, but in fact code that
+returns that code when executed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While a contract is being created, its code is still empty.
+Because of that, you should not call back into the
+contract under construction until its constructor has
+finished executing.</p>
+</div>
+</section>
+<section id="gas">
+<span id="index-9"></span><h3>Gas<a class="headerlink" href="#gas" title="Permalink to this heading"></a></h3>
+<p>Upon creation, each transaction is charged with a certain amount of <strong>gas</strong>
+that has to be paid for by the originator of the transaction (<code class="docutils literal notranslate"><span class="pre">tx.origin</span></code>).
+While the EVM executes the
+transaction, the gas is gradually depleted according to specific rules.
+If the gas is used up at any point (i.e. it would be negative),
+an out-of-gas exception is triggered, which ends execution and reverts all modifications
+made to the state in the current call frame.</p>
+<p>This mechanism incentivizes economical use of EVM execution time
+and also compensates EVM executors (i.e. miners / stakers) for their work.
+Since each block has a maximum amount of gas, it also limits the amount
+of work needed to validate a block.</p>
+<p>The <strong>gas price</strong> is a value set by the originator of the transaction, who
+has to pay <code class="docutils literal notranslate"><span class="pre">gas_price</span> <span class="pre">*</span> <span class="pre">gas</span></code> up front to the EVM executor.
+If some gas is left after execution, it is refunded to the transaction originator.
+In case of an exception that reverts changes, already used up gas is not refunded.</p>
+<p>Since EVM executors can choose to include a transaction or not,
+transaction senders cannot abuse the system by setting a low gas price.</p>
+</section>
+<section id="storage-memory-and-the-stack">
+<span id="index-10"></span><h3>Storage, Memory and the Stack<a class="headerlink" href="#storage-memory-and-the-stack" title="Permalink to this heading"></a></h3>
+<p>The Ethereum Virtual Machine has three areas where it can store data:
+storage, memory and the stack.</p>
+<p>Each account has a data area called <strong>storage</strong>, which is persistent between function calls
+and transactions.
+Storage is a key-value store that maps 256-bit words to 256-bit words.
+It is not possible to enumerate storage from within a contract, it is
+comparatively costly to read, and even more to initialise and modify storage. Because of this cost,
+you should minimize what you store in persistent storage to what the contract needs to run.
+Store data like derived calculations, caching, and aggregates outside of the contract.
+A contract can neither read nor write to any storage apart from its own.</p>
+<p>The second data area is called <strong>memory</strong>, of which a contract obtains
+a freshly cleared instance for each message call. Memory is linear and can be
+addressed at byte level, but reads are limited to a width of 256 bits, while writes
+can be either 8 bits or 256 bits wide. Memory is expanded by a word (256-bit), when
+accessing (either reading or writing) a previously untouched memory word (i.e. any offset
+within a word). At the time of expansion, the cost in gas must be paid. Memory is more
+costly the larger it grows (it scales quadratically).</p>
+<p>The EVM is not a register machine but a stack machine, so all
+computations are performed on a data area called the <strong>stack</strong>. It has a maximum size of
+1024 elements and contains words of 256 bits. Access to the stack is
+limited to the top end in the following way:
+It is possible to copy one of
+the topmost 16 elements to the top of the stack or swap the
+topmost element with one of the 16 elements below it.
+All other operations take the topmost two (or one, or more, depending on
+the operation) elements from the stack and push the result onto the stack.
+Of course it is possible to move stack elements to storage or memory
+in order to get deeper access to the stack,
+but it is not possible to just access arbitrary elements deeper in the stack
+without first removing the top of the stack.</p>
+</section>
+<section id="instruction-set">
+<span id="index-11"></span><h3>Instruction Set<a class="headerlink" href="#instruction-set" title="Permalink to this heading"></a></h3>
+<p>The instruction set of the EVM is kept minimal in order to avoid
+incorrect or inconsistent implementations which could cause consensus problems.
+All instructions operate on the basic data type, 256-bit words or on slices of memory
+(or other byte arrays).
+The usual arithmetic, bit, logical and comparison operations are present.
+Conditional and unconditional jumps are possible. Furthermore,
+contracts can access relevant properties of the current block
+like its number and timestamp.</p>
+<p>For a complete list, please see the <a class="reference internal" href="yul.html#opcodes"><span class="std std-ref">list of opcodes</span></a> as part of the inline
+assembly documentation.</p>
+</section>
+<section id="message-calls">
+<span id="index-12"></span><h3>Message Calls<a class="headerlink" href="#message-calls" title="Permalink to this heading"></a></h3>
+<p>Contracts can call other contracts or send Ether to non-contract
+accounts by the means of message calls. Message calls are similar
+to transactions, in that they have a source, a target, data payload,
+Ether, gas and return data. In fact, every transaction consists of
+a top-level message call which in turn can create further message calls.</p>
+<p>A contract can decide how much of its remaining <strong>gas</strong> should be sent
+with the inner message call and how much it wants to retain.
+If an out-of-gas exception happens in the inner call (or any
+other exception), this will be signaled by an error value put onto the stack.
+In this case, only the gas sent together with the call is used up.
+In Solidity, the calling contract causes a manual exception by default in
+such situations, so that exceptions “bubble up” the call stack.</p>
+<p>As already said, the called contract (which can be the same as the caller)
+will receive a freshly cleared instance of memory and has access to the
+call payload - which will be provided in a separate area called the <strong>calldata</strong>.
+After it has finished execution, it can return data which will be stored at
+a location in the caller’s memory preallocated by the caller.
+All such calls are fully synchronous.</p>
+<p>Calls are <strong>limited</strong> to a depth of 1024, which means that for more complex
+operations, loops should be preferred over recursive calls. Furthermore,
+only 63/64th of the gas can be forwarded in a message call, which causes a
+depth limit of a little less than 1000 in practice.</p>
+</section>
+<section id="delegatecall-and-libraries">
+<span id="index-13"></span><h3>Delegatecall and Libraries<a class="headerlink" href="#delegatecall-and-libraries" title="Permalink to this heading"></a></h3>
+<p>There exists a special variant of a message call, named <strong>delegatecall</strong>
+which is identical to a message call apart from the fact that
+the code at the target address is executed in the context (i.e. at the address) of the calling
+contract and <code class="docutils literal notranslate"><span class="pre">msg.sender</span></code> and <code class="docutils literal notranslate"><span class="pre">msg.value</span></code> do not change their values.</p>
+<p>This means that a contract can dynamically load code from a different
+address at runtime. Storage, current address and balance still
+refer to the calling contract, only the code is taken from the called address.</p>
+<p>This makes it possible to implement the “library” feature in Solidity:
+Reusable library code that can be applied to a contract’s storage, e.g. in
+order to implement a complex data structure.</p>
+</section>
+<section id="logs">
+<span id="index-14"></span><h3>Logs<a class="headerlink" href="#logs" title="Permalink to this heading"></a></h3>
+<p>It is possible to store data in a specially indexed data structure
+that maps all the way up to the block level. This feature called <strong>logs</strong>
+is used by Solidity in order to implement <a class="reference internal" href="contracts.html#events"><span class="std std-ref">events</span></a>.
+Contracts cannot access log data after it has been created, but they
+can be efficiently accessed from outside the blockchain.
+Since some part of the log data is stored in <a class="reference external" href="https://en.wikipedia.org/wiki/Bloom_filter">bloom filters</a>, it is
+possible to search for this data in an efficient and cryptographically
+secure way, so network peers that do not download the whole blockchain
+(so-called “light clients”) can still find these logs.</p>
+</section>
+<section id="create">
+<span id="index-15"></span><h3>Create<a class="headerlink" href="#create" title="Permalink to this heading"></a></h3>
+<p>Contracts can even create other contracts using a special opcode (i.e.
+they do not simply call the zero address as a transaction would). The only difference between
+these <strong>create calls</strong> and normal message calls is that the payload data is
+executed and the result stored as code and the caller / creator
+receives the address of the new contract on the stack.</p>
+</section>
+<section id="deactivate-and-self-destruct">
+<span id="index-16"></span><h3>Deactivate and Self-destruct<a class="headerlink" href="#deactivate-and-self-destruct" title="Permalink to this heading"></a></h3>
+<p>The only way to remove code from the blockchain is when a contract at that
+address performs the <code class="docutils literal notranslate"><span class="pre">selfdestruct</span></code> operation. The remaining Ether stored
+at that address is sent to a designated target and then the storage and code
+is removed from the state. Removing the contract in theory sounds like a good
+idea, but it is potentially dangerous, as if someone sends Ether to removed
+contracts, the Ether is forever lost.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Even if a contract is removed by <code class="docutils literal notranslate"><span class="pre">selfdestruct</span></code>, it is still part of the
+history of the blockchain and probably retained by most Ethereum nodes.
+So using <code class="docutils literal notranslate"><span class="pre">selfdestruct</span></code> is not the same as deleting data from a hard disk.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Even if a contract’s code does not contain a call to <code class="docutils literal notranslate"><span class="pre">selfdestruct</span></code>,
+it can still perform that operation using <code class="docutils literal notranslate"><span class="pre">delegatecall</span></code> or <code class="docutils literal notranslate"><span class="pre">callcode</span></code>.</p>
+</div>
+<p>If you want to deactivate your contracts, you should instead <strong>disable</strong> them
+by changing some internal state which causes all functions to revert. This
+makes it impossible to use the contract, as it returns Ether immediately.</p>
+</section>
+<section id="precompiled-contracts">
+<span id="precompiledcontracts"></span><span id="index-17"></span><h3>Precompiled Contracts<a class="headerlink" href="#precompiled-contracts" title="Permalink to this heading"></a></h3>
+<p>There is a small set of contract addresses that are special:
+The address range between <code class="docutils literal notranslate"><span class="pre">1</span></code> and (including) <code class="docutils literal notranslate"><span class="pre">8</span></code> contains
+“precompiled contracts” that can be called as any other contract
+but their behaviour (and their gas consumption) is not defined
+by EVM code stored at that address (they do not contain code)
+but instead is implemented in the EVM execution environment itself.</p>
+<p>Different EVM-compatible chains might use a different set of
+precompiled contracts. It might also be possible that new
+precompiled contracts are added to the Ethereum main chain in the future,
+but you can reasonably expect them to always be in the range between
+<code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">0xffff</span></code> (inclusive).</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Solidity" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installing-solidity.html" class="btn btn-neutral float-right" title="Installing the Solidity Compiler" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2021, Ethereum.
+      <span class="commit">Revision <code>f8088553</code>.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+    <p>
+        <a href="credits-and-attribution.html">Credits and attribution</a>.
+    </p>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book fa-element"> RTD </span>
+
+    <span class="fa fa-element">
+    <input class="container_toggle" type="checkbox" id="switch" name="mode">
+    <label for="switch"></label>
+    </span>
+
+    <span class="fa fa-v fa-element"> v: latest <span class="fa fa-caret-down"></span></span>
+
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Downloads</dt> 
+            <dd><a href="//docs.soliditylang.org/_/downloads/en/latest/pdf/">pdf</a></dd>
+            
+            <dd><a href="//docs.soliditylang.org/_/downloads/en/latest/htmlzip/">html</a></dd>
+            
+            <dd><a href="//docs.soliditylang.org/_/downloads/en/latest/epub/">epub</a></dd>
+            
+        </dl>
+        <dl>
+            <dt>Versions</dt> 
+            <dd><a href="/en/latest/">latest</a></dd>
+            
+            <dd><a href="/en/stable/">stable</a></dd>
+            
+            <dd><a href="/en/v0.8.17/">v0.8.17</a></dd>
+            
+            <dd><a href="/en/v0.8.16/">v0.8.16</a></dd>
+            
+            <dd><a href="/en/v0.8.15/">v0.8.15</a></dd>
+            
+            <dd><a href="/en/v0.8.14/">v0.8.14</a></dd>
+            
+            <dd><a href="/en/v0.8.13/">v0.8.13</a></dd>
+            
+            <dd><a href="/en/v0.8.12/">v0.8.12</a></dd>
+            
+            <dd><a href="/en/v0.8.11/">v0.8.11</a></dd>
+            
+            <dd><a href="/en/v0.8.10/">v0.8.10</a></dd>
+            
+            <dd><a href="/en/v0.8.9/">v0.8.9</a></dd>
+            
+            <dd><a href="/en/v0.8.8/">v0.8.8</a></dd>
+            
+            <dd><a href="/en/v0.8.7/">v0.8.7</a></dd>
+            
+            <dd><a href="/en/v0.8.6/">v0.8.6</a></dd>
+            
+            <dd><a href="/en/v0.8.5/">v0.8.5</a></dd>
+            
+            <dd><a href="/en/v0.8.4/">v0.8.4</a></dd>
+            
+            <dd><a href="/en/v0.8.3/">v0.8.3</a></dd>
+            
+            <dd><a href="/en/v0.8.2/">v0.8.2</a></dd>
+            
+            <dd><a href="/en/v0.8.1/">v0.8.1</a></dd>
+            
+            <dd><a href="/en/v0.8.0/">v0.8.0</a></dd>
+            
+            <dd><a href="/en/v0.7.6/">v0.7.6</a></dd>
+            
+            <dd><a href="/en/v0.7.5/">v0.7.5</a></dd>
+            
+            <dd><a href="/en/v0.7.4/">v0.7.4</a></dd>
+            
+            <dd><a href="/en/v0.7.3/">v0.7.3</a></dd>
+            
+            <dd><a href="/en/v0.7.2/">v0.7.2</a></dd>
+            
+            <dd><a href="/en/v0.7.1/">v0.7.1</a></dd>
+            
+            <dd><a href="/en/v0.7.0/">v0.7.0</a></dd>
+            
+            <dd><a href="/en/v0.6.12/">v0.6.12</a></dd>
+            
+            <dd><a href="/en/v0.6.11/">v0.6.11</a></dd>
+            
+            <dd><a href="/en/v0.6.10/">v0.6.10</a></dd>
+            
+            <dd><a href="/en/v0.6.9/">v0.6.9</a></dd>
+            
+            <dd><a href="/en/v0.6.8/">v0.6.8</a></dd>
+            
+            <dd><a href="/en/v0.6.7/">v0.6.7</a></dd>
+            
+            <dd><a href="/en/v0.6.6/">v0.6.6</a></dd>
+            
+            <dd><a href="/en/v0.6.5/">v0.6.5</a></dd>
+            
+            <dd><a href="/en/v0.6.4/">v0.6.4</a></dd>
+            
+            <dd><a href="/en/v0.6.3/">v0.6.3</a></dd>
+            
+            <dd><a href="/en/v0.6.2/">v0.6.2</a></dd>
+            
+            <dd><a href="/en/v0.6.1/">v0.6.1</a></dd>
+            
+            <dd><a href="/en/v0.6.0/">v0.6.0</a></dd>
+            
+            <dd><a href="/en/v0.5.17/">v0.5.17</a></dd>
+            
+            <dd><a href="/en/v0.5.16/">v0.5.16</a></dd>
+            
+            <dd><a href="/en/v0.5.15/">v0.5.15</a></dd>
+            
+            <dd><a href="/en/v0.5.14/">v0.5.14</a></dd>
+            
+            <dd><a href="/en/v0.5.13/">v0.5.13</a></dd>
+            
+            <dd><a href="/en/v0.5.12/">v0.5.12</a></dd>
+            
+            <dd><a href="/en/v0.5.11/">v0.5.11</a></dd>
+            
+            <dd><a href="/en/v0.5.10/">v0.5.10</a></dd>
+            
+            <dd><a href="/en/v0.5.9/">v0.5.9</a></dd>
+            
+            <dd><a href="/en/v0.5.8/">v0.5.8</a></dd>
+            
+            <dd><a href="/en/v0.5.7/">v0.5.7</a></dd>
+            
+            <dd><a href="/en/v0.5.6/">v0.5.6</a></dd>
+            
+            <dd><a href="/en/v0.5.5/">v0.5.5</a></dd>
+            
+            <dd><a href="/en/v0.5.4/">v0.5.4</a></dd>
+            
+            <dd><a href="/en/v0.5.3/">v0.5.3</a></dd>
+            
+            <dd><a href="/en/v0.5.2/">v0.5.2</a></dd>
+            
+            <dd><a href="/en/v0.5.1/">v0.5.1</a></dd>
+            
+            <dd><a href="/en/v0.5.0/">v0.5.0</a></dd>
+            
+            <dd><a href="/en/v0.4.26/">v0.4.26</a></dd>
+            
+            <dd><a href="/en/v0.4.25/">v0.4.25</a></dd>
+            
+            <dd><a href="/en/v0.4.24/">v0.4.24</a></dd>
+            
+            <dd><a href="/en/v0.4.23/">v0.4.23</a></dd>
+            
+            <dd><a href="/en/v0.4.22/">v0.4.22</a></dd>
+            
+            <dd><a href="/en/v0.4.21/">v0.4.21</a></dd>
+            
+            <dd><a href="/en/v0.4.20/">v0.4.20</a></dd>
+            
+            <dd><a href="/en/v0.4.19/">v0.4.19</a></dd>
+            
+            <dd><a href="/en/v0.4.18/">v0.4.18</a></dd>
+            
+            <dd><a href="/en/v0.4.17/">v0.4.17</a></dd>
+            
+            <dd><a href="/en/v0.4.16/">v0.4.16</a></dd>
+            
+            <dd><a href="/en/v0.4.15/">v0.4.15</a></dd>
+            
+            <dd><a href="/en/v0.4.14/">v0.4.14</a></dd>
+            
+            <dd><a href="/en/v0.4.13/">v0.4.13</a></dd>
+            
+            <dd><a href="/en/v0.4.12/">v0.4.12</a></dd>
+            
+            <dd><a href="/en/v0.4.11/">v0.4.11</a></dd>
+            
+            <dd><a href="/en/v0.4.10/">v0.4.10</a></dd>
+            
+            <dd><a href="/en/v0.4.9/">v0.4.9</a></dd>
+            
+            <dd><a href="/en/v0.4.8/">v0.4.8</a></dd>
+            
+            <dd><a href="/en/v0.4.7/">v0.4.7</a></dd>
+            
+            <dd><a href="/en/v0.4.6/">v0.4.6</a></dd>
+            
+            <dd><a href="/en/v0.4.5/">v0.4.5</a></dd>
+            
+            <dd><a href="/en/v0.4.4/">v0.4.4</a></dd>
+            
+            <dd><a href="/en/v0.4.3/">v0.4.3</a></dd>
+            
+            <dd><a href="/en/v0.4.2/">v0.4.2</a></dd>
+            
+            <dd><a href="/en/v0.4.1/">v0.4.1</a></dd>
+            
+            <dd><a href="/en/v0.4.0/">v0.4.0</a></dd>
+            
+            <dd><a href="/en/v0.3.6/">v0.3.6</a></dd>
+            
+            <dd><a href="/en/v0.3.5/">v0.3.5</a></dd>
+            
+            <dd><a href="/en/v0.3.4/">v0.3.4</a></dd>
+            
+            <dd><a href="/en/v0.3.3/">v0.3.3</a></dd>
+            
+            <dd><a href="/en/v0.3.2/">v0.3.2</a></dd>
+            
+            <dd><a href="/en/v0.3.1/">v0.3.1</a></dd>
+            
+            <dd><a href="/en/v0.3.0/">v0.3.0</a></dd>
+            
+            <dd><a href="/en/v0.2.2/">v0.2.2</a></dd>
+            
+            <dd><a href="/en/v0.2.1/">v0.2.1</a></dd>
+            
+            <dd><a href="/en/v0.2.0/">v0.2.0</a></dd>
+            
+            <dd><a href="/en/v0.1.7/">v0.1.7</a></dd>
+            
+            <dd><a href="/en/v0.1.6/">v0.1.6</a></dd>
+            
+            <dd><a href="/en/v0.1.5/">v0.1.5</a></dd>
+            
+            <dd><a href="/en/v0.1.4/">v0.1.4</a></dd>
+            
+            <dd><a href="/en/v0.1.3/">v0.1.3</a></dd>
+            
+            <dd><a href="/en/v0.1.2/">v0.1.2</a></dd>
+            
+            <dd><a href="/en/develop/">develop</a></dd>
+            
+            <dd><a href="/en/breaking/">breaking</a></dd>
+            
+        </dl>
+        <dl>
+            
+            <dt>On Read the Docs</dt>
+            <dd>
+                <a href="//readthedocs.org/projects/solidity/?fromdocs=solidity">Project Home</a>
+            </dd>
+            <dd>
+                <a href="//readthedocs.org/builds/solidity/?fromdocs=solidity">Builds</a>
+            </dd>
+        </dl>
+    </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

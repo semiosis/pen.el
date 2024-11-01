@@ -1,0 +1,10 @@
+Output: hi
+
+root@mele:/root/notes$ echo hi | cat
+Output: hi
+
+root@mele:/root/notes$ echo hi | cat > file
+Output: hi
+
+root@mele:/root/notes$ cat file
+Output: hi

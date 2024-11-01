@@ -1,0 +1,24 @@
+https://www.freedesktop.org/software/systemd/man/systemd.service/how-to-use.html
+
+  Systemd.service(5) - System and service manager
+  Systemd.service(5)
+
+  1. Description
+
+  Systemd is a system and service manager for Linux, compatible with
+  SysV and LSB init scripts. systemd provides aggressive parallelism
+  and uses a micro-service approach, with systemd units as the basic
+  building blocks of an application.
+
+  Systemd is a replacement for sysvinit. It can be used to control the
+  systemd daemon itself (see systemd.service(5) for details) as well
+  as other system daemons and services.
+
+  The systemd daemon prepares the system for the root user and starts
+  the login manager, usually systemd-logind. This is the main PID 1.
+  See systemd.service(5) for details.
+
+  2. Usage
+
+  The systemd.service(5) manual page lists the supported init scripts
+ 

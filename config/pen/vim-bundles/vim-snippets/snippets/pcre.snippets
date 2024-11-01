@@ -1,0 +1,16 @@
+snippet nlb "negative look behind"
+	(?<!something)
+snippet nla "negative look ahead"
+	(?!something)
+snippet lb "look behind"
+	(?<=something)
+snippet la "look ahead"
+	(?=something)
+snippet pcre
+	pcrefiltercapgroup
+snippet pcrefiltercapgroup
+	perl -ne 'print if s/.*?(?<!::])([ A-Za-z0-9_-]+)?((\/[ A-Za-z0-9%\+._-]+)+)(.*)/\$1\$2/'
+snippet pcreextract
+	perl -ne 'print if s/(a)(b)/\$1\$2/'
+snippet pcrereplace
+	perl -p -e 's/^.*(?<=")([A-Za-z]+)?((/[ A-Za-z0-9%+._-]+)+):([0-9]+)".*$/ +$4 "$2"/'

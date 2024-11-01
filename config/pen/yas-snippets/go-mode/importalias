@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: importalias
+# key: importalias
+# --
+import ui "github.com/gizak/termui" // use ui as an alias

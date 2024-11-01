@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "o" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "o" "https://www.youtube.com/watch?v=SDuXlGSV7l4" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=SDuXlGSV7l4&ab_channel=GospelinLife" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=SDuXlGSV7l4&ab_channel=GospelinLife" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://youtu.be/SDuXlGSV7l4?t=1519" "#" "<==" "o"

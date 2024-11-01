@@ -1,0 +1,6 @@
+cd /root/.pen/glossaries;  "aws" "ec2" "describe-instances" "#" "<==" "emacs"
+cd /root/.pen/glossaries;  "aws" "ec2" "describe-instances" "#" "<==" "emacs"
+cd /root/.pen/glossaries;  "aws" "ec2" "describe-instances" "#" "<==" "emacs"
+cd /root/.pen/glossaries;  "aws" "ec2" "describe-instances" "#" "<==" "emacs"
+cd /root/notes;  "aws" "ec2" "describe-instances" "#" "<==" "emacs"
+cd /root/notes;  "aws" "ec2" "describe-instances" "#" "<==" "emacs"

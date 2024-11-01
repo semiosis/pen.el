@@ -1,0 +1,3 @@
+"http/post" is a function that takes a url and a map of parameters and returns a
+future of the response.
+

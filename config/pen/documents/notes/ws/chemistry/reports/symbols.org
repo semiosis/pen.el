@@ -1,0 +1,43 @@
+#+TITLE: Chemistry acronyms and symbols table
+#+DATE: <2024-05-15 Wed>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: chemistry emacs
+
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+https://www.overleaf.com/learn/latex/Chemistry_formulae
+
+# TODO Get a good font
+# fc-list :outline -f "%{family}\n"
+
+#+LATEX_COMPILER: xelatex
+#+LATEX_HEADER_EXTRA: \usepackage{fontspec}
+#+LATEX_HEADER_EXTRA: \setmainfont{DejaVu Sans}
+
+* Table
+
+Goals:
+- I want my own terminolgy and symbology for Chemistry that suits building my own reports.
+- I want it to match as closely as it can canonical symbols without losing intelligibility and consistency with my own format.
+- I want to be able to export into canonical symbols.
+
+The shortcodes may be used even programmatically, such as in latex.
+
+| Acronym    | Term                                  | Abbreviation | Shortcode | Glossary                 |
+|------------+---------------------------------------+--------------+-----------+--------------------------|
+| A.N.       | Atomic Number                         | AN.          | AN        | [[y:Atomic Number]]          |
+| E.N.       | Electronegativity                     | EN.          | EN        | y:Electronegativity      |
+| e.c.       | Electron configuration                | ec.          | ec        | [[y:Electron configuration]] |
+| I.E.       | Ionisation Energy                     | IE.          | IE        | [[y:Ionisation Energy]]      |
+| A.R.       | Atomic Radius                         | AR.          | AR        | [[y:Atomic Radius]]          |
+| I.R.       | Ionic Radius                          | IR.          | IR        | [[y:Ionic Radius]]           |
+| A⁻.R.      | Anion Radius                          | A⁻R.         | AnR       | [[y:Anion Radius]]           |
+| C⁺.R.      | Cation Radius                         | C⁺R.         | CaR       | [[y:Cation Radius]]          |
+| V.S.E.P.R. | Valence Shell Electron Pair Repulsion | VSEPR        | VSEPR     | y:VSEPR                  |
+| L180°      | Linear                                | 2sets        | 2se       | [[y:L180°]]                  |
+| TP120°     | Trigonal planar                       | 3sets        | 2se       | [[y:Trigonal Planar]]        |
+| TH109.5°   | Tetrahedral                           | 4sets        | 4se       | y:Tetrahedral            |
+| TBP120°90° | Trigonal bipyramidal                  | 5sets        | 5se       | [[y:Trigonal bipyramidal]]   |
+| OH90°90°   | Octahedral                            | 6sets        | 6se       | [[y:Octahedral]]             |
+| l.p.       | lone-pair                             | lp.          | lp        | [[y:lone pair]]              |

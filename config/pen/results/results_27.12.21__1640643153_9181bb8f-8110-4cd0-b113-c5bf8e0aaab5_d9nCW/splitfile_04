@@ -1,0 +1,55 @@
+CNC-MACHINE-CLI(1)                     User Commands                    CNC-MACHINE-CLI(1)
+
+NAME
+       cnc-machine-cli - Command line interface for CNC-Machine
+
+SYNOPSIS
+       cnc-machine-cli [OPTION]... [COMMAND]
+
+DESCRIPTION
+       CNC-Machine is a command line interface for CNC-Machine.
+
+COMMANDS
+       help, h
+              Prints this manual page.
+
+       version, v
+              Prints the version number of cnc-machine-cli.
+
+       start, s
+              Starts the CNC-Machine.
+
+       stop, t
+              Stops the CNC-Machine.
+
+       restart, r
+              Restarts the CNC-Machine.
+
+       status, stat, st
+              Prints the status of the CNC-Machine.
+
+       kill, k
+              Kills the CNC-Machine.
+
+       log, l
+              Prints the log of the CNC-Machine.
+
+       log-tail, lt
+              Prints the tail of the log of the CNC-Machine.
+
+       log-grep, lg
+              Prints the log of the CNC-Machine matching a pattern.
+
+       log-grep-tail, lgt
+              Prints the tail of the log of the CNC-Machine matching a pattern.
+
+       log-grep-follow, lgf
+              Prints the log of the CNC-Machine matching a pattern and following it.
+
+       log-grep-follow-tail, lgft
+              Prints the tail of the log of the CNC-Machine matching a pattern and following it.
+
+       log-grep-follow-backwards, lgfb
+              Prints the log of the CNC-Machine matching a pattern and following it backwards.
+
+       log-grep-follow-backwards-tail, lgf

@@ -1,0 +1,11 @@
+https://clojuredocs.org/clojure.core/swap/
+
+
+swap
+
+(fn f & args)
+
+Swaps the binding of two vars in a thread-local manner.
+
+(def ^:dynamic a true)
+(def ^:dynamic b false)

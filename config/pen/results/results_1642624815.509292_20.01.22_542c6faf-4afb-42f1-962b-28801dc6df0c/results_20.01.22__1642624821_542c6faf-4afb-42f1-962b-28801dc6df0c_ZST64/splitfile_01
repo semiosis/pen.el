@@ -1,0 +1,5 @@
+
+I need to change the map argument to a list, e.g. (list ...)
+
+The shell command needs to use sh-exec, not sh:
+  (sh-exec "command" :stdin ...

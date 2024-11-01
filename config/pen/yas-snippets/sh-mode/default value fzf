@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: default value fzf
+# group: 
+# key: dvz
+# --
+query="$1"
+
+test -n "$query" || query="$(rlwrap readln "docker search")"
+test -n "$query" || exit 1

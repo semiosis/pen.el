@@ -1,0 +1,5 @@
+
+putStrLn "Enter a line of text for test 2:"
+let upper1 = map toUpper <$> getLine
+let upper2 = map toUpper <$> getLine
+putStrLn "U

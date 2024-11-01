@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Acts" "2:38" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "5:32" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "19:1-7" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Acts" "13:48" "#" "<==" "zsh"
+cd /root/dump/tmp;  "Acts" "13" "#" "<==" "zsh"

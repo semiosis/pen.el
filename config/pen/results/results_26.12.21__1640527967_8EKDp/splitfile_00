@@ -1,0 +1,16 @@
+
+function grouper() {
+    local n=$1
+    local iterator=$2
+    while true; do
+        chunk=$(for i in $(seq 1 $n); do
+            read -r line
+            echo $line
+        done <<< "$(cat $iterator)")
+        if [ -z "$chunk" ]; then
+            return
+        fi
+        echo "$chunk"
+    done
+}
+

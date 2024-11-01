@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: Opa
+# contributor: Toptal & contributors
+# key: opa
+# --
+
+### Opa ###
+
+_build
+_tracks
+
+opa-debug-js
+
+*.opp
+*.opx
+*.opx.broken
+*.dump
+*.api
+*.api-txt
+*.exe
+*.log

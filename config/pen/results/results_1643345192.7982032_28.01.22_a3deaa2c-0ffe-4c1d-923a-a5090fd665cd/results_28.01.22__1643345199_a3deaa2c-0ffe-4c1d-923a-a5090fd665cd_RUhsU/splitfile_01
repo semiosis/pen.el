@@ -1,0 +1,4 @@
+"defroutes" is a macro that creates routes.
+
+The following example creates a route for "/" that returns "Hello world!"
+

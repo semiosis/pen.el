@@ -1,0 +1,7 @@
+"{-# LANGUAGE KindSignatures #-}" is a language extension that allows the use of kind signatures in types.
+
+A kind signature is a type signature that uses a kind variable in place of a type variable.
+
+A kind variable is an un-associated type variable.
+
+A kind signature can be used in the type signature of a data type, the type signature of a class, the type signature of a type class, the type signature of a type constructor, the type signature of a type family, the type signature of a data

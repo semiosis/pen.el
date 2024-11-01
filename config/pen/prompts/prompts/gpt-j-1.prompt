@@ -1,0 +1,6 @@
+title: gpt-j
+include: Generic completion 50 tokens/1
+prompt-version: 1
+tags: fundamental
+engine: AIx GPT-J-6B
+max-generated-tokens: 100

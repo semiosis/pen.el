@@ -1,0 +1,13 @@
+
+~~~~~~~~
+
+Here's a selection of snippets that I think will be fun to try:
+
+~~~~~~~~
+let betterCases = goodCases ++ badCases
+
+betterCases
+
+~~~~~~~~
+
+let betterCases =

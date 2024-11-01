@@ -1,0 +1,329 @@
+reality
+Θ
+    [#probability theory]
+    [#KL divergence]
+
+reality
+    https://en.wikipedia.org/wiki/Reality
+
+    The sum or aggregate of all that is real
+    or existent within a system, as opposed to
+    that which is only imaginary.
+    
+    The term is also used to refer to the
+    ontological status of things, indicating
+    their existence.
+    
+    In physical terms, reality is the totality
+    of a system, known and unknown.
+
+fact
+    https://en.wikipedia.org/wiki/Fact
+
+    A fact is an occurrence in the real world.
+    
+    The usual test for a statement of fact is
+    verifiability—that is whether it can be
+    demonstrated to correspond to experience.
+    
+    Standard reference works are often used to
+    check facts.
+    
+    Scientific facts are verified by
+    repeatable careful observation or
+    measurement by experiments or other means.
+
+object of the mind
+    An object that exists in the imagination,
+    but which, in the real world, can only be
+    represented or modeled.
+    
+    Some such objects are abstractions,
+    literary concepts, or fictional scenarios.
+
+figment
+    A thing that someone believes to be real
+    but that exists only in their imagination.
+    "it really was Ross and not a figment of
+    her overheated imagination"
+
+estimate
+ω
+    [#probability theory]
+    [#KL divergence]
+
+sense
+    [#linguistics]
+
+    A way in which an expression or a
+    situation can be interpreted; a meaning.
+    "it is not clear which sense of the word
+    ‘characters’ is intended in this passage"
+
+    [#mathematics]
+
+    A property (e.g. direction of motion)
+    distinguishing a pair of objects,
+    quantities, effects, etc. which differ
+    only in that each is the reverse of the
+    other.
+
+    "the cord does not become straight, but
+    forms a length of helix in the opposite
+    sense"
+
+truth sense
+sense
+    [#imaginary computing]
+
+    What constitutes as untrue when using a
+    language model as a basis for truth?
+
+    That depends on sense of the model for
+    this particular task.
+
+    The sense is the truth orientation, in a
+    similar way to the way the word sense is
+    used in the definition of a vector.
+
+    See:
+    - sense (mathematics)
+    - sense (linguistics)
+
+    [#star wars]
+
+    Truth sense was an ability that was
+    cultivated by the Jedi Order, which
+    allowed the individual to tap into the
+    Force in order to determine if another
+    being was telling the truth.
+
+imaginary reflection
+    This is where a program such as a complex
+    interpreter can access knowledge of its
+    holographic representation via a language
+    model.
+
+internal imaginary reflection
+    This is reflection but where the program
+    consults a LM for information on its own
+    source.
+
+external imaginary reflection
+    This is reflection but where the program
+    consults a LM for information on the way
+    the program is used in the real world.
+
+holographic representation
+    The embedding of the way software is used
+    within a language model that has been
+    trained on the usage of that software,
+    whether it is usage of the final program
+    or usage of its internal source code
+    within itself.
+
+    THe holographic representation of software
+    encompasses the way a program's source
+    code is used both within itself and also
+    in the real world as modelled by a
+    language model.
+
+complex interpreter
+    This is a real/ordinary interpreter with
+    an interactivity layer that solicits a
+    language model for imaginary reflection
+    capabilities to the real program.
+
+chimeric
+chimerism
+    NLG: Program that is not in any way
+    written in a language known to the
+    programmer
+    
+    chimerism is exhibited in other parts of
+    GPT generations. For example, generated
+    URLs. Generated URLs are usually not
+    correct due to chimerism. It would be
+    interesting to generate imaginary websites
+    using chimeric URLs.
+
+evaluator
+    Not every interpreter is an evaluator.
+
+interpreter
+    [evaluator]
+
+    https://youtu.be/OyfBQmvr2Hc?t=1843
+
+imaginarily
+    [#english]
+
+    Having existence only in the imagination;
+    unreal.
+
+complex terminal
+holographic terminal
+    A holographic terminal has a layer of
+    interactivity that queries a language
+    model, given the current state of the
+    terminal.
+
+    A complex terminal is slightly more
+    general definition, where there may not be
+    a clear boundary between the hologram
+    interactivity layer. Complex implies that
+    base operations may be part imaginary and
+    part real.
+
+complex
+complex programming
+    Complex programming is where real
+    instructions (completely independent of
+    language models) are intermixed with
+    imaginary (ones that are based on LM
+    output).
+
+    The word complex is suitable because it
+    describes this braiding along with the
+    mathematical connotations of complex
+    numbers.
+
+    It's just a programming style that
+    combines both real programming with
+    imaginary programming.
+
+imaginary programming
+IP
+    A programming paradigm in which a computer
+    program's behaviour exists in relativity to
+    language models.
+
+    To make an analogy, imaginary programming
+    is a type of programming, where much like
+    pure-functional, the code who's behaviour
+    depends on the output of a language model,
+    either pending or precomputed, stands
+    apart from the part that has no such
+    association.
+
+    What is deemed 'imaginary' is code that
+    uses or is waiting on output from a
+    language model and its behaviour is so
+    altered by it.
+
+    What is deemed 'ordinary' is code which is
+    not 'imaginary'.
+
+    A distinction is made between grounded and
+    non-grounded imaginary programming.
+    'Non-grounded imaginary programming' may
+    also be called 'pure imaginary
+    programming'.
+
+grounded
+grounded imaginary programming
+non-grounded
+pure imaginary programming
+tethered
+    If a function has a language model as a
+    parameter affecting its behaviour and
+    besides from that has no other imaginary
+    inputs then it is considered 'grounded'.
+
+    If a function has a language model as a
+    parameter affecting its behaviour and
+    contains other imaginary inputs then it is
+    considered 'tethered'.
+
+    If an imaginary function relies on the
+    output of functions that have in the past
+    used a language model as a parameter, but
+    does not contain a reference to specific
+    language model used then it is considered
+    'non-grounded' or 'pure imaginary'.
+
+    A function can be both tethered and pure
+    imaginary.
+
+    Pure imaginary code is still code in a
+    similar way to how pure functional code is
+    considered code and may be used to create
+    useful datastructures and algorithms.
+
+ordinary programming
+    Programming with functions that do not
+    have an imaginary dimension (they do not
+    take a language model as a parameter and
+    the result of ordinary code is not
+    polluted by a language model).
+
+holographic programming
+    [type of imaginary programming]
+
+    This is like imaginary programming but
+    where the language models are trained on
+    software.
+
+    Holographic code, therefore, may employ
+    associations made between elements of the
+    original code, how that code is used and
+    how it is described, to build
+    applications.
+
+    Holographic programming lets you use the
+    latent space of a language model as a kind
+    of hyperspace to enable things like:
+    - bridge the usage of an application with
+      the application's code
+    - imaginary reflection
+    - inference in place of computation
+
+literate programming
+    NLG: A programming paradigm that
+    emphasizes the importance of the reading
+    and writing of code over the importance of
+    the design of the code.
+
+imaginary multiplexing
+    When spawning a chatbot which is named,
+    for example, "All of the Mad Hatter's Tea
+    Party crew", the chatbot may have multiple
+    personalities.
+
+    In some sense, a group of chatbots has
+    been spawned, yet they chatter out of a
+    single, 'real' chatbot.
+
+    This isn't real multiplexing, but it could
+    be considered an example of imaginary
+    multiplexing.
+
+intention
+expectation
+    These are purely imaginary.
+
+utility
+utility of a pure imaginary function
+    For the conscious observer, it is the
+    intention behind invoking the command and
+    the expectation of what it does are both
+    subjective.
+
+thought prompt
+thought-prompt
+    A thought prompt is probably a multimodal
+    prompt (like a phantasmagoria) which
+    represents something like:
+    - A memory
+    - A dream
+    - An idea
+
+    A thought prompt is probably transmodal.
+
+transmodal
+transmodal style
+    'Transmodal' could be ascribed to a prompt
+    and in doing so would indicate that the
+    prompt transcends one or more modes.
+
+    The prompt might then be a thought prompt.

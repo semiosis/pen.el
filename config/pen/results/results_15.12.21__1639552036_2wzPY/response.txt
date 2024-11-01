@@ -1,0 +1,1 @@
+Out[3]: '#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\n"""\nagi\n~~~~\n\nThis module contains the class definition for the AGI protocol.\n\n

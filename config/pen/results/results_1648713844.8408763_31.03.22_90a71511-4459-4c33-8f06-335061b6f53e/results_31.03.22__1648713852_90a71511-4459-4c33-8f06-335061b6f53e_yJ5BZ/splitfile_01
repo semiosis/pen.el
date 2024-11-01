@@ -1,0 +1,6 @@
+The above code defines a new data type, GameState, with two fields, numberToGuess and numTries.
+The type is called GameState and the fields are numberToGuess and numTries.
+The data keyword tells Haskell that we're defining a new data type.
+The GameState keyword tells Haskell that this new data type is called GameState.
+The (Integer) following numberToGuess tells Haskell that the type of numberToGuess is Integer.
+The (

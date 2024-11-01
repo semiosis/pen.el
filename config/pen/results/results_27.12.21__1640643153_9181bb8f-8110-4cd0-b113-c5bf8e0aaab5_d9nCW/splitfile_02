@@ -1,0 +1,58 @@
+CNC-MACHINE-CLI(1)                     User Commands                    CNC-MACHINE-CLI(1)
+
+NAME
+       cnc-machine-cli - Command line interface for CNC-Machine
+
+SYNOPSIS
+       cnc-machine-cli [OPTION]... [COMMAND]
+
+DESCRIPTION
+       CNC-Machine is a command line interface for CNC-Machine.
+
+COMMANDS
+       help, h
+              Prints this manual page.
+
+       version, v
+              Prints the version of CNC-Machine.
+
+       start, s
+              Starts the CNC-Machine.
+
+       stop, t
+              Stops the CNC-Machine.
+
+       restart, r
+              Restarts the CNC-Machine.
+
+       status, u
+              Prints the status of the CNC-Machine.
+
+       update, u
+              Updates CNC-Machine to the latest version.
+
+       update-config, uc
+              Updates the configuration file to the latest version.
+
+       update-script, us
+              Updates the script to the latest version.
+
+       update-all, ua
+              Updates CNC-Machine, the configuration file and the script to the latest version.
+
+       update-script-config, usc
+              Updates the script and the configuration file to the latest version.
+
+       update-config-script, ucs
+              Updates the configuration file and the script to the latest version.
+
+       update-all-script, uas
+              Updates CNC-Machine, the configuration file, the script and the script to the latest version.
+
+       update-all-config, uac
+              Updates CNC-Machine, the configuration file and the configuration file to the latest version.
+
+       update-all-script-config, uasc
+              Updates CNC-Machine, the configuration file, the script and the configuration file to the latest version.
+
+       update-all-config-script,

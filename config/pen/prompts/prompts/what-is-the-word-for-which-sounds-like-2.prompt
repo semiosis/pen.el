@@ -1,0 +1,39 @@
+title: what is the word for which sounds like
+tags: prose fun writing
+design-patterns: 
+doc: Given a description of a word that you are looking for, list some possible candidates
+prompt-version: 2
+prompt: |
+  Given a description of a word that you are looking for, list some possible candidates.
+
+  <delim>
+  A list of words that mean "luxurious" and sound like "brush":
+  - plush
+  - push
+  - lush
+  <delim>
+  A list of words that mean <q:description> and sound like <q:sounds like>:
+  -
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- <delim-1>
+cache: true
+vars:
+- description
+- sounds like
+examples:
+- to do in excess
+- flout
+test-output: flaunt
+# preprocessors:
+# - pf-correct-grammar/1
+prefer-external: true
+n-test-runs: 5
+continuation-function: list-of <1> <g>
+postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
+split-patterns:
+- "\n"
+# prettifier: pen-pretty-paragraph

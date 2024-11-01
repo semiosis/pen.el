@@ -1,0 +1,8 @@
+The above code is a simple game that asks the user to guess a number between 1 and 4.
+The game will continue until the user guesses the correct number.
+We start by defining the main function.
+The main function is the entry point of the program.
+The main function is a do block.
+The do block is a function that takes a list of expressions and returns a value.
+The do block is a function that takes a list of expressions and returns a value.
+The do block

@@ -1,0 +1,15 @@
+"shift" is a bash builtin that removes the first positional parameter from the list of parameters.
+
+$ shift
+$ shift
+$ shift
+$ shift
+$ shift
+$ echo $#
+
+# Output:
+0
+1
+2
+3
+4

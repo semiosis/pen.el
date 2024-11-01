@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: puts (print representation of value)
+# group: 
+# key: puts
+# --
+print $ True

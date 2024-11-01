@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sideeffect
+# group: 
+# key: se
+# --
+wait\${1:\$\$(bp xargs sph eww "https://blog.miguelgrinberg.com/post/how-to-make-python-wait")}

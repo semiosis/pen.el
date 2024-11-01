@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "rifle" "perspective.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "README.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "README.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "README.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "files.txt" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "perspective.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "README.org" "#" "<==" "bash"

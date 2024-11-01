@@ -1,0 +1,11 @@
+
+stack exec DoLetExample3
+~~~~~~~~
+
+Some useful things to try (stack exec has been removed so you must use stack exec CommonWords ):
+
+-- show
+
+-- :t (+)
+
+-- :t flip (+)

@@ -1,0 +1,11 @@
+
+The five Impressions of the Great Light are the Supernal Mother, Supernal Father, Supernal
+Son, Supernal Mother, and the Supernal Daughter.
+The five Helpers are the Mother of Light, the Father of Light, the Son of Light, the
+Mother of Wisdom, and the Father of Wisdom.
+EOD
+
+cat draft.text | tr 'A-Z' 'a-z' > draft.lowercase.text
+cat draft.text | tr 'a-z' 'A-Z' > draft.uppercase.text
+cat draft.text | tr -d '[:punct:]' > draft.no_punctuation.text
+cat draft.text | tr -d '[:digit:]' > draft.no_digits.text

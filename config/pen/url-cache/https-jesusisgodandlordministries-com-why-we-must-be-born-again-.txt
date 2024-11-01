@@ -1,0 +1,865 @@
+HTTP/1.1 200 OK
+Date: Mon, 06 May 2024 01:07:05 GMT
+Server: Apache
+Link: <https://jesusisgodandlordministries.com/wp-json/>; rel="https://api.w.org/", <https://jesusisgodandlordministries.com/wp-json/wp/v2/pages/26>; rel="alternate"; type="application/json", <https://jesusisgodandlordministries.com/?p=26>; rel=shortlink
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Vary: Accept-Encoding
+X-Endurance-Cache-Level: 0
+X-nginx-cache: WordPress
+Keep-Alive: timeout=5, max=75
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="profile" href="https://gmpg.org/xfn/11"> 
+	 <title>Why we must be born again &#8211; Jesus is God and Lord Ministries</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Jesus is God and Lord Ministries &raquo; Feed" href="https://jesusisgodandlordministries.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Jesus is God and Lord Ministries &raquo; Comments Feed" href="https://jesusisgodandlordministries.com/comments/feed/" />
+<link rel="preconnect" href="https://assets.swarmcdn.com">		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.26.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-W2VX3YNKHB"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '8.26.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/jesusisgodandlordministries.com\/why-we-must-be-born-again\/"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-W2VX3YNKHB',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-W2VX3YNKHB', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/jesusisgodandlordministries.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='astra-theme-css-css' href='https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/css/minified/style.min.css?ver=4.6.12' media='all' />
+<style id='astra-theme-css-inline-css'>
+.ast-no-sidebar .entry-content .alignfull {margin-left: calc( -50vw + 50%);margin-right: calc( -50vw + 50%);max-width: 100vw;width: 100vw;}.ast-no-sidebar .entry-content .alignwide {margin-left: calc(-41vw + 50%);margin-right: calc(-41vw + 50%);max-width: unset;width: unset;}.ast-no-sidebar .entry-content .alignfull .alignfull,.ast-no-sidebar .entry-content .alignfull .alignwide,.ast-no-sidebar .entry-content .alignwide .alignfull,.ast-no-sidebar .entry-content .alignwide .alignwide,.ast-no-sidebar .entry-content .wp-block-column .alignfull,.ast-no-sidebar .entry-content .wp-block-column .alignwide{width: 100%;margin-left: auto;margin-right: auto;}.wp-block-gallery,.blocks-gallery-grid {margin: 0;}.wp-block-separator {max-width: 100px;}.wp-block-separator.is-style-wide,.wp-block-separator.is-style-dots {max-width: none;}.entry-content .has-2-columns .wp-block-column:first-child {padding-right: 10px;}.entry-content .has-2-columns .wp-block-column:last-child {padding-left: 10px;}@media (max-width: 782px) {.entry-content .wp-block-columns .wp-block-column {flex-basis: 100%;}.entry-content .has-2-columns .wp-block-column:first-child {padding-right: 0;}.entry-content .has-2-columns .wp-block-column:last-child {padding-left: 0;}}body .entry-content .wp-block-latest-posts {margin-left: 0;}body .entry-content .wp-block-latest-posts li {list-style: none;}.ast-no-sidebar .ast-container .entry-content .wp-block-latest-posts {margin-left: 0;}.ast-header-break-point .entry-content .alignwide {margin-left: auto;margin-right: auto;}.entry-content .blocks-gallery-item img {margin-bottom: auto;}.wp-block-pullquote {border-top: 4px solid #555d66;border-bottom: 4px solid #555d66;color: #40464d;}:root{--ast-post-nav-space:0;--ast-container-default-xlg-padding:6.67em;--ast-container-default-lg-padding:5.67em;--ast-container-default-slg-padding:4.34em;--ast-container-default-md-padding:3.34em;--ast-container-default-sm-padding:6.67em;--ast-container-default-xs-padding:2.4em;--ast-container-default-xxs-padding:1.4em;--ast-code-block-background:#EEEEEE;--ast-comment-inputs-background:#FAFAFA;--ast-normal-container-width:1200px;--ast-narrow-container-width:750px;--ast-blog-title-font-weight:normal;--ast-blog-meta-weight:inherit;}html{font-size:93.75%;}a,.page-title{color:#1e73be;}a:hover,a:focus{color:#1e73be;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Mandali',sans-serif;font-weight:400;font-size:15px;font-size:1rem;line-height:var(--ast-body-line-height,1.65em);}blockquote{color:#000000;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6,.site-title,.site-title a{font-family:'Mandali',sans-serif;font-weight:400;}.site-title{font-size:20px;font-size:1.3333333333333rem;display:block;}header .custom-logo-link img{max-width:58px;}.astra-logo-svg{width:58px;}.site-header .site-description{font-size:15px;font-size:1rem;display:block;}.entry-title{font-size:26px;font-size:1.7333333333333rem;}.archive .ast-article-post .ast-article-inner,.blog .ast-article-post .ast-article-inner,.archive .ast-article-post .ast-article-inner:hover,.blog .ast-article-post .ast-article-inner:hover{overflow:hidden;}h1,.entry-content h1{font-size:4em;font-family:'Mandali',sans-serif;line-height:1.4em;}h2,.entry-content h2{font-size:3em;font-family:'Mandali',sans-serif;line-height:1.3em;}h3,.entry-content h3{font-size:22px;font-size:1.4666666666667rem;font-family:'Mandali',sans-serif;line-height:1.3em;}h4,.entry-content h4{font-size:24px;font-size:1.6rem;line-height:1.2em;font-family:'Mandali',sans-serif;}h5,.entry-content h5{font-size:20px;font-size:1.3333333333333rem;line-height:1.2em;font-family:'Mandali',sans-serif;}h6,.entry-content h6{font-size:16px;font-size:1.0666666666667rem;line-height:1.25em;font-family:'Mandali',sans-serif;}::selection{background-color:#ffffff;color:#000000;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#000000;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#1e73be;background-color:#1e73be;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#1e73be;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#1e73be;background-color:#1e73be;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#1e73be;border-color:#1e73be;}.single .nav-links .nav-previous,.single .nav-links .nav-next{color:#1e73be;}.entry-meta,.entry-meta *{line-height:1.45;color:#1e73be;}.entry-meta a:not(.ast-button):hover,.entry-meta a:not(.ast-button):hover *,.entry-meta a:not(.ast-button):focus,.entry-meta a:not(.ast-button):focus *,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#1e73be;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#1e73be;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#1e73be;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#1e73be;border-color:#1e73be;}.calendar_wrap #today > a{color:#ffffff;}.page-links .page-link,.single .post-navigation a{color:#1e73be;}.ast-search-menu-icon .search-form button.search-submit{padding:0 4px;}.ast-search-menu-icon form.search-form{padding-right:0;}.ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-form,.ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-field:focus{transition:all 0.2s;}.search-form input.search-field:focus{outline:none;}.widget-title,.widget .wp-block-heading{font-size:21px;font-size:1.4rem;color:#000000;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:15px;font-size:1rem;}.ast-search-menu-icon.slide-search a:focus-visible:focus-visible,.astra-search-icon:focus-visible,#close:focus-visible,a:focus-visible,.ast-menu-toggle:focus-visible,.site .skip-link:focus-visible,.wp-block-loginout input:focus-visible,.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,.ast-header-navigation-arrow:focus-visible,.woocommerce .wc-proceed-to-checkout > .checkout-button:focus-visible,.woocommerce .woocommerce-MyAccount-navigation ul li a:focus-visible,.ast-orders-table__row .ast-orders-table__cell:focus-visible,.woocommerce .woocommerce-order-details .order-again > .button:focus-visible,.woocommerce .woocommerce-message a.button.wc-forward:focus-visible,.woocommerce #minus_qty:focus-visible,.woocommerce #plus_qty:focus-visible,a#ast-apply-coupon:focus-visible,.woocommerce .woocommerce-info a:focus-visible,.woocommerce .astra-shop-summary-wrap a:focus-visible,.woocommerce a.wc-forward:focus-visible,#ast-apply-coupon:focus-visible,.woocommerce-js .woocommerce-mini-cart-item a.remove:focus-visible,#close:focus-visible,.button.search-submit:focus-visible,#search_submit:focus,.normal-search:focus-visible{outline-style:dotted;outline-color:inherit;outline-width:thin;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,input[type="number"]:focus,textarea:focus,.wp-block-search__input:focus,[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal:focus,.ast-mobile-popup-drawer.active .menu-toggle-close:focus,.woocommerce-ordering select.orderby:focus,#ast-scroll-top:focus,#coupon_code:focus,.woocommerce-page #comment:focus,.woocommerce #reviews #respond input#submit:focus,.woocommerce a.add_to_cart_button:focus,.woocommerce .button.single_add_to_cart_button:focus,.woocommerce .woocommerce-cart-form button:focus,.woocommerce .woocommerce-cart-form__cart-item .quantity .qty:focus,.woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper > .input-text:focus,.woocommerce #order_comments:focus,.woocommerce #place_order:focus,.woocommerce .woocommerce-address-fields .woocommerce-address-fields__field-wrapper .woocommerce-input-wrapper > .input-text:focus,.woocommerce .woocommerce-MyAccount-content form button:focus,.woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm .woocommerce-form-row .woocommerce-Input.input-text:focus,.woocommerce .ast-woocommerce-container .woocommerce-pagination ul.page-numbers li a:focus,body #content .woocommerce form .form-row .select2-container--default .select2-selection--single:focus,#ast-coupon-code:focus,.woocommerce.woocommerce-js .quantity input[type=number]:focus,.woocommerce-js .woocommerce-mini-cart-item .quantity input[type=number]:focus,.woocommerce p#ast-coupon-trigger:focus{border-style:dotted;border-color:inherit;border-width:thin;}input{outline:none;}.woocommerce-js input[type=text]:focus,.woocommerce-js input[type=email]:focus,.woocommerce-js textarea:focus,input[type=number]:focus,.comments-area textarea#comment:focus,.comments-area textarea#comment:active,.comments-area .ast-comment-formwrap input[type="text"]:focus,.comments-area .ast-comment-formwrap input[type="text"]:active{outline-style:disable;outline-color:inherit;outline-width:thin;}.main-header-menu .menu-link,.ast-header-custom-item a{color:#000000;}.main-header-menu .menu-item:hover > .menu-link,.main-header-menu .menu-item:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu .menu-item.focus > .menu-link,.main-header-menu .menu-item.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > .menu-link,.main-header-menu .current-menu-ancestor > .menu-link,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle{color:#1e73be;}.header-main-layout-3 .ast-main-header-bar-alignment{margin-right:auto;}.header-main-layout-2 .site-header-section-left .ast-site-identity{text-align:left;}.ast-logo-title-inline .site-logo-img{padding-right:1em;}.site-logo-img img{ transition:all 0.2s linear;}body .ast-oembed-container *{position:absolute;top:0;width:100%;height:100%;left:0;}body .wp-block-embed-pocket-casts .ast-oembed-container *{position:unset;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#345be5;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #345be5;color:#345be5;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#345be5;color:#ffffff;}.ast-single-post-featured-section + article {margin-top: 2em;}.site-content .ast-single-post-featured-section img {width: 100%;overflow: hidden;object-fit: cover;}.site > .ast-single-related-posts-container {margin-top: 0;}@media (min-width: 769px) {.ast-desktop .ast-container--narrow {max-width: var(--ast-narrow-container-width);margin: 0 auto;}}#secondary {margin: 4em 0 2.5em;word-break: break-word;line-height: 2;}#secondary li {margin-bottom: 0.25em;}#secondary li:last-child {margin-bottom: 0;}@media (max-width: 768px) {.js_active .ast-plain-container.ast-single-post #secondary {margin-top: 1.5em;}}.ast-separate-container.ast-two-container #secondary .widget {background-color: #fff;padding: 2em;margin-bottom: 2em;}@media (min-width: 993px) {.ast-left-sidebar #secondary {padding-right: 60px;}.ast-right-sidebar #secondary {padding-left: 60px;}}@media (max-width: 993px) {.ast-right-sidebar #secondary {padding-left: 30px;}.ast-left-sidebar #secondary {padding-right: 30px;}}.ast-small-footer{color:#4e5768;}.ast-small-footer > .ast-footer-overlay{background-color:#f7f7f8;;}.ast-small-footer a{color:rgba(117,195,44,0.65);}.ast-small-footer a:hover{color:#75c32c;}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.wp-block-buttons.aligncenter{justify-content:center;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}.wp-block-image.aligncenter{margin-left:auto;margin-right:auto;}.wp-block-table.aligncenter{margin-left:auto;margin-right:auto;}.wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.wp-element-button,.ast-outline-button,.wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button{border-color:#1e73be;border-top-width:2px;border-right-width:2px;border-bottom-width:2px;border-left-width:2px;font-family:inherit;font-weight:inherit;line-height:1em;border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;}.wp-block-button.is-style-outline .wp-block-button__link:hover,.wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:focus,.wp-block-buttons .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover,.wp-block-buttons .wp-block-button.wp-block-button__link.is-style-outline:not(.has-text-color):hover,.ast-outline-button:hover,.ast-outline-button:focus,.wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button:hover,.wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button:focus{background-color:#4e5768;}.wp-block-button .wp-block-button__link.wp-element-button.is-style-outline:not(.has-background),.wp-block-button.is-style-outline>.wp-block-button__link.wp-element-button:not(.has-background),.ast-outline-button{background-color:#1e73be;}.entry-content[ast-blocks-layout] > figure{margin-bottom:1em;}@media (max-width:768px){.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-author-box img.avatar{margin:20px 0 0 0;}}@media (max-width:768px){#secondary.secondary{padding-top:0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary,.ast-page-builder-template #secondary{margin-top:1.5em;}}@media (max-width:768px){.ast-right-sidebar #primary{padding-right:0;}.ast-page-builder-template.ast-left-sidebar #secondary,.ast-page-builder-template.ast-right-sidebar #secondary{padding-right:20px;padding-left:20px;}.ast-right-sidebar #secondary,.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}}@media (min-width:769px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:769px){.ast-right-sidebar #primary{border-right:1px solid var(--ast-border-color);}.ast-left-sidebar #primary{border-left:1px solid var(--ast-border-color);}.ast-right-sidebar #secondary{border-left:1px solid var(--ast-border-color);margin-left:-1px;}.ast-left-sidebar #secondary{border-right:1px solid var(--ast-border-color);margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{color:#ffffff;border-color:#1e73be;background-color:#1e73be;border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;padding-top:10px;padding-right:25px;padding-bottom:10px;padding-left:25px;font-family:inherit;font-weight:inherit;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.ast-custom-button:hover .button:hover,.ast-custom-button:hover,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#4e5768;border-color:#4e5768;}@media (max-width:768px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.ast-comment-meta{padding:0 1.8888em 1.3333em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .comments-title,.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.site-branding img,.site-header .site-logo-img .custom-logo-link img{max-width:100%;}}body,.ast-separate-container{background-image:linear-gradient(to right,#ffffff,#ffffff),url(https://jesusisgodandlordministries.com/wp-content/uploads/2019/01/floral-divider-free-img.png);;background-repeat:repeat;background-position:center center;background-size:auto;background-attachment:scroll;}.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -6.67em;margin-right: -6.67em;width: auto;}@media (max-width: 1200px) {.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -2.4em;margin-right: -2.4em;}}@media (max-width: 768px) {.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -2.14em;margin-right: -2.14em;}}@media (max-width: 544px) {.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -1em;margin-right: -1em;}}.ast-no-sidebar.ast-separate-container .entry-content .alignwide {margin-left: -20px;margin-right: -20px;}.ast-no-sidebar.ast-separate-container .entry-content .wp-block-column .alignfull,.ast-no-sidebar.ast-separate-container .entry-content .wp-block-column .alignwide {margin-left: auto;margin-right: auto;width: 100%;}@media (max-width:768px){.site-title{display:block;}.site-header .site-description{display:block;}h1,.entry-content h1{font-size:3em;}h2,.entry-content h2{font-size:2.5em;}h3,.entry-content h3{font-size:20px;}.astra-logo-svg{width:60px;}header .custom-logo-link img,.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:60px;}}@media (max-width:544px){.site-title{font-size:20px;font-size:1.3333333333333rem;display:block;}.site-header .site-description{display:block;}h1,.entry-content h1{font-size:2em;}h2,.entry-content h2{font-size:2em;}h3,.entry-content h3{font-size:20px;}header .custom-logo-link img,.ast-header-break-point .site-branding img,.ast-header-break-point .custom-logo-link img{max-width:42px;}.astra-logo-svg{width:42px;}.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:42px;}}@media (max-width:768px){html{font-size:85.5%;}}@media (max-width:544px){html{font-size:85.5%;}}@media (min-width:769px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:921px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#ffffff;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu{border-top-width:2px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu{top:-2px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link,.ast-desktop .main-header-menu.submenu-with-border .children .menu-link{border-bottom-width:1px;border-style:solid;border-color:#eaeaea;}@media (min-width:769px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.ast-small-footer{border-top-style:solid;border-top-width:1px;border-top-color:#eaeaea;}.site .comments-area{padding-bottom:3em;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .main-header-bar-navigation .ast-search-icon {display: none;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-form {padding: 0;display: block;overflow: hidden;}.ast-header-break-point .ast-header-custom-item .widget:last-child {margin-bottom: 1em;}.ast-header-custom-item .widget {margin: 0.5em;display: inline-block;vertical-align: middle;}.ast-header-custom-item .widget p {margin-bottom: 0;}.ast-header-custom-item .widget li {width: auto;}.ast-header-custom-item-inside .button-custom-menu-item .menu-link {display: none;}.ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item .ast-custom-button-link {display: none;}.ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item .menu-link {display: block;}.ast-header-break-point.ast-header-custom-item-outside .main-header-bar .ast-search-icon {margin-right: 1em;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-field,.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon.ast-inline-search .search-field {width: 100%;padding-right: 5.5em;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-submit {display: block;position: absolute;height: 100%;top: 0;right: 0;padding: 0 1em;border-radius: 0;}.ast-header-break-point .ast-header-custom-item .ast-masthead-custom-menu-items {padding-left: 20px;padding-right: 20px;margin-bottom: 1em;margin-top: 1em;}.ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item {padding-left: 0;padding-right: 0;margin-top: 0;margin-bottom: 0;}.astra-icon-down_arrow::after {content: "\e900";font-family: Astra;}.astra-icon-close::after {content: "\e5cd";font-family: Astra;}.astra-icon-drag_handle::after {content: "\e25d";font-family: Astra;}.astra-icon-format_align_justify::after {content: "\e235";font-family: Astra;}.astra-icon-menu::after {content: "\e5d2";font-family: Astra;}.astra-icon-reorder::after {content: "\e8fe";font-family: Astra;}.astra-icon-search::after {content: "\e8b6";font-family: Astra;}.astra-icon-zoom_in::after {content: "\e56b";font-family: Astra;}.astra-icon-check-circle::after {content: "\e901";font-family: Astra;}.astra-icon-shopping-cart::after {content: "\f07a";font-family: Astra;}.astra-icon-shopping-bag::after {content: "\f290";font-family: Astra;}.astra-icon-shopping-basket::after {content: "\f291";font-family: Astra;}.astra-icon-circle-o::after {content: "\e903";font-family: Astra;}.astra-icon-certificate::after {content: "\e902";font-family: Astra;}blockquote {padding: 1.2em;}:root .has-ast-global-color-0-color{color:var(--ast-global-color-0);}:root .has-ast-global-color-0-background-color{background-color:var(--ast-global-color-0);}:root .wp-block-button .has-ast-global-color-0-color{color:var(--ast-global-color-0);}:root .wp-block-button .has-ast-global-color-0-background-color{background-color:var(--ast-global-color-0);}:root .has-ast-global-color-1-color{color:var(--ast-global-color-1);}:root .has-ast-global-color-1-background-color{background-color:var(--ast-global-color-1);}:root .wp-block-button .has-ast-global-color-1-color{color:var(--ast-global-color-1);}:root .wp-block-button .has-ast-global-color-1-background-color{background-color:var(--ast-global-color-1);}:root .has-ast-global-color-2-color{color:var(--ast-global-color-2);}:root .has-ast-global-color-2-background-color{background-color:var(--ast-global-color-2);}:root .wp-block-button .has-ast-global-color-2-color{color:var(--ast-global-color-2);}:root .wp-block-button .has-ast-global-color-2-background-color{background-color:var(--ast-global-color-2);}:root .has-ast-global-color-3-color{color:var(--ast-global-color-3);}:root .has-ast-global-color-3-background-color{background-color:var(--ast-global-color-3);}:root .wp-block-button .has-ast-global-color-3-color{color:var(--ast-global-color-3);}:root .wp-block-button .has-ast-global-color-3-background-color{background-color:var(--ast-global-color-3);}:root .has-ast-global-color-4-color{color:var(--ast-global-color-4);}:root .has-ast-global-color-4-background-color{background-color:var(--ast-global-color-4);}:root .wp-block-button .has-ast-global-color-4-color{color:var(--ast-global-color-4);}:root .wp-block-button .has-ast-global-color-4-background-color{background-color:var(--ast-global-color-4);}:root .has-ast-global-color-5-color{color:var(--ast-global-color-5);}:root .has-ast-global-color-5-background-color{background-color:var(--ast-global-color-5);}:root .wp-block-button .has-ast-global-color-5-color{color:var(--ast-global-color-5);}:root .wp-block-button .has-ast-global-color-5-background-color{background-color:var(--ast-global-color-5);}:root .has-ast-global-color-6-color{color:var(--ast-global-color-6);}:root .has-ast-global-color-6-background-color{background-color:var(--ast-global-color-6);}:root .wp-block-button .has-ast-global-color-6-color{color:var(--ast-global-color-6);}:root .wp-block-button .has-ast-global-color-6-background-color{background-color:var(--ast-global-color-6);}:root .has-ast-global-color-7-color{color:var(--ast-global-color-7);}:root .has-ast-global-color-7-background-color{background-color:var(--ast-global-color-7);}:root .wp-block-button .has-ast-global-color-7-color{color:var(--ast-global-color-7);}:root .wp-block-button .has-ast-global-color-7-background-color{background-color:var(--ast-global-color-7);}:root .has-ast-global-color-8-color{color:var(--ast-global-color-8);}:root .has-ast-global-color-8-background-color{background-color:var(--ast-global-color-8);}:root .wp-block-button .has-ast-global-color-8-color{color:var(--ast-global-color-8);}:root .wp-block-button .has-ast-global-color-8-background-color{background-color:var(--ast-global-color-8);}:root{--ast-global-color-0:#0170B9;--ast-global-color-1:#3a3a3a;--ast-global-color-2:#3a3a3a;--ast-global-color-3:#4B4F58;--ast-global-color-4:#F5F5F5;--ast-global-color-5:#FFFFFF;--ast-global-color-6:#E5E5E5;--ast-global-color-7:#424242;--ast-global-color-8:#000000;}:root {--ast-border-color : #dddddd;}.ast-single-entry-banner {-js-display: flex;display: flex;flex-direction: column;justify-content: center;text-align: center;position: relative;background: #eeeeee;}.ast-single-entry-banner[data-banner-layout="layout-1"] {max-width: 1200px;background: inherit;padding: 20px 0;}.ast-single-entry-banner[data-banner-width-type="custom"] {margin: 0 auto;width: 100%;}.ast-single-entry-banner + .site-content .entry-header {margin-bottom: 0;}.site .ast-author-avatar {--ast-author-avatar-size: ;}a.ast-underline-text {text-decoration: underline;}.ast-container > .ast-terms-link {position: relative;display: block;}a.ast-button.ast-badge-tax {padding: 4px 8px;border-radius: 3px;font-size: inherit;}header.entry-header > *:not(:last-child){margin-bottom:10px;}.ast-archive-entry-banner {-js-display: flex;display: flex;flex-direction: column;justify-content: center;text-align: center;position: relative;background: #eeeeee;}.ast-archive-entry-banner[data-banner-width-type="custom"] {margin: 0 auto;width: 100%;}.ast-archive-entry-banner[data-banner-layout="layout-1"] {background: inherit;padding: 20px 0;text-align: left;}body.archive .ast-archive-description{max-width:1200px;width:100%;text-align:left;padding-top:3em;padding-right:3em;padding-bottom:3em;padding-left:3em;}body.archive .ast-archive-description .ast-archive-title,body.archive .ast-archive-description .ast-archive-title *{font-size:40px;font-size:2.6666666666667rem;text-transform:capitalize;}body.archive .ast-archive-description > *:not(:last-child){margin-bottom:10px;}@media (max-width:768px){body.archive .ast-archive-description{text-align:left;}}@media (max-width:544px){body.archive .ast-archive-description{text-align:left;}}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;text-decoration:none;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:var(--ast-global-color-2);}.elementor-widget-heading .elementor-heading-title{margin:0;}.elementor-page .ast-menu-toggle{color:unset !important;background:unset !important;}.elementor-post.elementor-grid-item.hentry{margin-bottom:0;}.woocommerce div.product .elementor-element.elementor-products-grid .related.products ul.products li.product,.elementor-element .elementor-wc-products .woocommerce[class*='columns-'] ul.products li.product{width:auto;margin:0;float:none;}body .elementor hr{background-color:#ccc;margin:0;}.ast-left-sidebar .elementor-section.elementor-section-stretched,.ast-right-sidebar .elementor-section.elementor-section-stretched{max-width:100%;left:0 !important;}.elementor-posts-container [CLASS*="ast-width-"]{width:100%;}.elementor-template-full-width .ast-container{display:block;}.elementor-screen-only,.screen-reader-text,.screen-reader-text span,.ui-helper-hidden-accessible{top:0 !important;}@media (max-width:544px){.elementor-element .elementor-wc-products .woocommerce[class*="columns-"] ul.products li.product{width:auto;margin:0;}.elementor-element .woocommerce .woocommerce-result-count{float:none;}}.ast-header-break-point .main-header-bar{border-bottom-width:1px;}@media (min-width:769px){.main-header-bar{border-bottom-width:1px;}}@media (min-width:769px){#primary{width:70%;}#secondary{width:30%;}}.main-header-menu .menu-item, #astra-footer-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link, #astra-footer-menu > .menu-item > .menu-link{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items{flex:unset;}.header-main-layout-1 .ast-flex.main-header-container, .header-main-layout-3 .ast-flex.main-header-container{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}.main-header-menu .sub-menu .menu-item.menu-item-has-children > .menu-link:after{position:absolute;right:1em;top:50%;transform:translate(0,-50%) rotate(270deg);}.ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children > .ast-menu-toggle::before, .ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before, .ast-mobile-popup-drawer .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before, .ast-header-break-point .ast-mobile-header-wrap .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before{font-weight:bold;content:"\e900";font-family:Astra;text-decoration:inherit;display:inline-block;}.ast-header-break-point .main-navigation ul.sub-menu .menu-item .menu-link:before{content:"\e900";font-family:Astra;font-size:.65em;text-decoration:inherit;display:inline-block;transform:translate(0, -2px) rotateZ(270deg);margin-right:5px;}.widget_search .search-form:after{font-family:Astra;font-size:1.2em;font-weight:normal;content:"\e8b6";position:absolute;top:50%;right:15px;transform:translate(0, -50%);}.astra-search-icon::before{content:"\e8b6";font-family:Astra;font-style:normal;font-weight:normal;text-decoration:inherit;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;z-index:3;}.main-header-bar .main-header-bar-navigation .page_item_has_children > a:after, .main-header-bar .main-header-bar-navigation .menu-item-has-children > a:after, .menu-item-has-children .ast-header-navigation-arrow:after{content:"\e900";display:inline-block;font-family:Astra;font-size:.6rem;font-weight:bold;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-left:10px;line-height:normal;}.menu-item-has-children .sub-menu .ast-header-navigation-arrow:after{margin-left:0;}.ast-mobile-popup-drawer .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before{transform:rotateX(180deg);}.ast-header-break-point .main-header-bar-navigation .menu-item-has-children > .menu-link:after{display:none;}@media (min-width:769px){.ast-builder-menu .main-navigation > ul > li:last-child a{margin-right:0;}}.ast-separate-container .ast-article-inner{background-color:transparent;background-image:none;}.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);;}@media (max-width:768px){.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);;}}@media (max-width:544px){.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);;}}.ast-separate-container .ast-article-single:not(.ast-related-post), .woocommerce.ast-separate-container .ast-woocommerce-container, .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper,.ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .ast-archive-description, .ast-separate-container .comments-area .comment-respond, .ast-separate-container .comments-area .ast-comment-list li, .ast-separate-container .comments-area .comments-title{background-color:var(--ast-global-color-5);;}@media (max-width:768px){.ast-separate-container .ast-article-single:not(.ast-related-post), .woocommerce.ast-separate-container .ast-woocommerce-container, .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper,.ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .ast-archive-description{background-color:var(--ast-global-color-5);;}}@media (max-width:544px){.ast-separate-container .ast-article-single:not(.ast-related-post), .woocommerce.ast-separate-container .ast-woocommerce-container, .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper,.ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .ast-archive-description{background-color:var(--ast-global-color-5);;}}.ast-separate-container.ast-two-container #secondary .widget{background-color:var(--ast-global-color-5);;}@media (max-width:768px){.ast-separate-container.ast-two-container #secondary .widget{background-color:var(--ast-global-color-5);;}}@media (max-width:544px){.ast-separate-container.ast-two-container #secondary .widget{background-color:var(--ast-global-color-5);;}}:root{--e-global-color-astglobalcolor0:#0170B9;--e-global-color-astglobalcolor1:#3a3a3a;--e-global-color-astglobalcolor2:#3a3a3a;--e-global-color-astglobalcolor3:#4B4F58;--e-global-color-astglobalcolor4:#F5F5F5;--e-global-color-astglobalcolor5:#FFFFFF;--e-global-color-astglobalcolor6:#E5E5E5;--e-global-color-astglobalcolor7:#424242;--e-global-color-astglobalcolor8:#000000;}
+</style>
+<link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Mandali%3A400%2C&#038;display=fallback&#038;ver=4.6.12' media='all' />
+<link rel='stylesheet' id='sby_styles-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/feeds-for-youtube/css/sb-youtube.min.css?ver=2.2.1' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://jesusisgodandlordministries.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.2' media='all' />
+<link rel='stylesheet' id='smartvideo_guten-cgb-style-css-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/smartvideo/includes/page-builders/gutenberg/dist/blocks.style.build.css?ver=2.1.0' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--ast-global-color-0: var(--ast-global-color-0);--wp--preset--color--ast-global-color-1: var(--ast-global-color-1);--wp--preset--color--ast-global-color-2: var(--ast-global-color-2);--wp--preset--color--ast-global-color-3: var(--ast-global-color-3);--wp--preset--color--ast-global-color-4: var(--ast-global-color-4);--wp--preset--color--ast-global-color-5: var(--ast-global-color-5);--wp--preset--color--ast-global-color-6: var(--ast-global-color-6);--wp--preset--color--ast-global-color-7: var(--ast-global-color-7);--wp--preset--color--ast-global-color-8: var(--ast-global-color-8);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: var(--wp--custom--ast-content-width-size);--wp--style--global--wide-size: var(--wp--custom--ast-wide-width-size); }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: 24px; }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: 24px;margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: 24px;margin-block-end: 0;}:where(body .is-layout-flex) {gap: 24px;}:where(body .is-layout-grid) {gap: 24px;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: none;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-color{color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-color{color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-color{color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-color{color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-color{color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-color{color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-color{color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-color{color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-color{color: var(--wp--preset--color--ast-global-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-background-color{background-color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-background-color{background-color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-background-color{background-color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-background-color{background-color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-background-color{background-color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-background-color{background-color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-background-color{background-color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-background-color{background-color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-background-color{background-color: var(--wp--preset--color--ast-global-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-border-color{border-color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-border-color{border-color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-border-color{border-color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-border-color{border-color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-border-color{border-color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-border-color{border-color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-border-color{border-color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-border-color{border-color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-border-color{border-color: var(--wp--preset--color--ast-global-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-layout.min.css?ver=4.6.12' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-smallscreen.min.css?ver=4.6.12' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce.min.css?ver=4.6.12' media='all' />
+<style id='woocommerce-general-inline-css'>
+
+					.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count {
+						float: left;
+					}
+
+					.woocommerce .woocommerce-ordering {
+						float: right;
+						margin-bottom: 2.5em;
+					}
+				
+					.woocommerce-js a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit {
+						font-size: 100%;
+						line-height: 1;
+						text-decoration: none;
+						overflow: visible;
+						padding: 0.5em 0.75em;
+						font-weight: 700;
+						border-radius: 3px;
+						color: $secondarytext;
+						background-color: $secondary;
+						border: 0;
+					}
+					.woocommerce-js a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit:hover {
+						background-color: #dad8da;
+						background-image: none;
+						color: #515151;
+					}
+				#customer_details h3:not(.elementor-widget-woocommerce-checkout-page h3){font-size:1.2rem;padding:20px 0 14px;margin:0 0 20px;border-bottom:1px solid var(--ast-border-color);font-weight:700;}form #order_review_heading:not(.elementor-widget-woocommerce-checkout-page #order_review_heading){border-width:2px 2px 0 2px;border-style:solid;font-size:1.2rem;margin:0;padding:1.5em 1.5em 1em;border-color:var(--ast-border-color);font-weight:700;}.woocommerce-Address h3, .cart-collaterals h2{font-size:1.2rem;padding:.7em 1em;}.woocommerce-cart .cart-collaterals .cart_totals>h2{font-weight:700;}form #order_review:not(.elementor-widget-woocommerce-checkout-page #order_review){padding:0 2em;border-width:0 2px 2px;border-style:solid;border-color:var(--ast-border-color);}ul#shipping_method li:not(.elementor-widget-woocommerce-cart #shipping_method li){margin:0;padding:0.25em 0 0.25em 22px;text-indent:-22px;list-style:none outside;}.woocommerce span.onsale, .wc-block-grid__product .wc-block-grid__product-onsale{background-color:#ffffff;color:#000000;}.woocommerce-message, .woocommerce-info{border-top-color:#1e73be;}.woocommerce-message::before,.woocommerce-info::before{color:#1e73be;}.woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price, .widget_layered_nav_filters ul li.chosen a, .woocommerce-page ul.products li.product .ast-woo-product-category, .wc-layered-nav-rating a{color:#000000;}.woocommerce nav.woocommerce-pagination ul,.woocommerce nav.woocommerce-pagination ul li{border-color:#1e73be;}.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current{background:#1e73be;color:#ffffff;}.woocommerce-MyAccount-navigation-link.is-active a{color:#1e73be;}.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle{background-color:#1e73be;}.woocommerce .star-rating, .woocommerce .comment-form-rating .stars a, .woocommerce .star-rating::before{color:var(--ast-global-color-3);}.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before,  .woocommerce div.ast-product-tabs-layout-vertical .woocommerce-tabs ul.tabs li:hover::before{background:#1e73be;}.ast-site-header-cart a{color:#000000;}.ast-site-header-cart a:focus, .ast-site-header-cart a:hover, .ast-site-header-cart .current-menu-item a{color:#1e73be;}.ast-cart-menu-wrap .count, .ast-cart-menu-wrap .count:after{border-color:#1e73be;color:#1e73be;}.ast-cart-menu-wrap:hover .count{color:#ffffff;background-color:#1e73be;}.ast-site-header-cart .widget_shopping_cart .total .woocommerce-Price-amount{color:#1e73be;}.woocommerce a.remove:hover, .ast-woocommerce-cart-menu .main-header-menu .woocommerce-custom-menu-item .menu-item:hover > .menu-link.remove:hover{color:#1e73be;border-color:#1e73be;background-color:#ffffff;}.ast-site-header-cart .widget_shopping_cart .buttons .button.checkout, .woocommerce .widget_shopping_cart .woocommerce-mini-cart__buttons .checkout.wc-forward{color:#ffffff;border-color:#4e5768;background-color:#4e5768;}.site-header .ast-site-header-cart-data .button.wc-forward, .site-header .ast-site-header-cart-data .button.wc-forward:hover{color:#ffffff;}.below-header-user-select .ast-site-header-cart .widget, .ast-above-header-section .ast-site-header-cart .widget a, .below-header-user-select .ast-site-header-cart .widget_shopping_cart a{color:#000000;}.below-header-user-select .ast-site-header-cart .widget_shopping_cart a:hover, .ast-above-header-section .ast-site-header-cart .widget_shopping_cart a:hover, .below-header-user-select .ast-site-header-cart .widget_shopping_cart a.remove:hover, .ast-above-header-section .ast-site-header-cart .widget_shopping_cart a.remove:hover{color:#1e73be;}.woocommerce .woocommerce-cart-form button[name="update_cart"]:disabled{color:#ffffff;}.woocommerce #content table.cart .button[name="apply_coupon"], .woocommerce-page #content table.cart .button[name="apply_coupon"]{padding:10px 40px;}.woocommerce table.cart td.actions .button, .woocommerce #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button{line-height:1;border-width:1px;border-style:solid;}.woocommerce ul.products li.product .button, .woocommerce-page ul.products li.product .button{line-height:1.3;}.woocommerce-js a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce-js a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button,.woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link, .wc-block-grid__product-onsale{color:#ffffff;border-color:#1e73be;background-color:#1e73be;}.woocommerce-js a.button:hover, .woocommerce button.button:hover, .woocommerce .woocommerce-message a.button:hover,.woocommerce #respond input#submit:hover,.woocommerce #respond input#submit.alt:hover, .woocommerce-js a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce input.button:hover, .woocommerce button.button.alt.disabled:hover, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover{color:#ffffff;border-color:#4e5768;background-color:#4e5768;}.woocommerce-js a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce-js a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button,.woocommerce-cart table.cart td.actions .button, .woocommerce form.checkout_coupon .button, .woocommerce #respond input#submit, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link{border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;padding-top:10px;padding-right:25px;padding-bottom:10px;padding-left:25px;}.woocommerce ul.products li.product a, .woocommerce-js a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit:hover{text-decoration:none;}.woocommerce .up-sells h2, .woocommerce .related.products h2, .woocommerce .woocommerce-tabs h2{font-size:1.5rem;}.woocommerce h2, .woocommerce-account h2{font-size:1.625rem;}.woocommerce ul.product-categories > li ul li:before{content:"\e900";padding:0 5px 0 5px;display:inline-block;font-family:Astra;transform:rotate(-90deg);font-size:0.7rem;}.ast-site-header-cart i.astra-icon:before{font-family:Astra;}.ast-icon-shopping-cart:before{content:"\f07a";}.ast-icon-shopping-bag:before{content:"\f290";}.ast-icon-shopping-basket:before{content:"\f291";}.ast-icon-shopping-cart svg{height:.82em;}.ast-icon-shopping-bag svg{height:1em;width:1em;}.ast-icon-shopping-basket svg{height:1.15em;width:1.2em;}.ast-site-header-cart.ast-menu-cart-outline .ast-addon-cart-wrap, .ast-site-header-cart.ast-menu-cart-fill .ast-addon-cart-wrap {line-height:1;}.ast-site-header-cart.ast-menu-cart-fill i.astra-icon{ font-size:1.1em;}li.woocommerce-custom-menu-item .ast-site-header-cart i.astra-icon:after{ padding-left:2px;}.ast-hfb-header .ast-addon-cart-wrap{ padding:0.4em;}.ast-header-break-point.ast-header-custom-item-outside .ast-woo-header-cart-info-wrap{ display:none;}.ast-site-header-cart i.astra-icon:after{ background:#ffffff;}@media (min-width:545px) and (max-width:768px){.woocommerce.tablet-columns-6 ul.products li.product, .woocommerce-page.tablet-columns-6 ul.products li.product{width:calc(16.66% - 16.66px);}.woocommerce.tablet-columns-5 ul.products li.product, .woocommerce-page.tablet-columns-5 ul.products li.product{width:calc(20% - 16px);}.woocommerce.tablet-columns-4 ul.products li.product, .woocommerce-page.tablet-columns-4 ul.products li.product{width:calc(25% - 15px);}.woocommerce.tablet-columns-3 ul.products li.product, .woocommerce-page.tablet-columns-3 ul.products li.product{width:calc(33.33% - 14px);}.woocommerce.tablet-columns-2 ul.products li.product, .woocommerce-page.tablet-columns-2 ul.products li.product{width:calc(50% - 10px);}.woocommerce.tablet-columns-1 ul.products li.product, .woocommerce-page.tablet-columns-1 ul.products li.product{width:100%;}.woocommerce div.product .related.products ul.products li.product{width:calc(33.33% - 14px);}}@media (min-width:545px) and (max-width:768px){.woocommerce[class*="columns-"].columns-3 > ul.products li.product, .woocommerce[class*="columns-"].columns-4 > ul.products li.product, .woocommerce[class*="columns-"].columns-5 > ul.products li.product, .woocommerce[class*="columns-"].columns-6 > ul.products li.product{width:calc(33.33% - 14px);margin-right:20px;}.woocommerce[class*="columns-"].columns-3 > ul.products li.product:nth-child(3n), .woocommerce[class*="columns-"].columns-4 > ul.products li.product:nth-child(3n), .woocommerce[class*="columns-"].columns-5 > ul.products li.product:nth-child(3n), .woocommerce[class*="columns-"].columns-6 > ul.products li.product:nth-child(3n){margin-right:0;clear:right;}.woocommerce[class*="columns-"].columns-3 > ul.products li.product:nth-child(3n+1), .woocommerce[class*="columns-"].columns-4 > ul.products li.product:nth-child(3n+1), .woocommerce[class*="columns-"].columns-5 > ul.products li.product:nth-child(3n+1), .woocommerce[class*="columns-"].columns-6 > ul.products li.product:nth-child(3n+1){clear:left;}.woocommerce[class*="columns-"] ul.products li.product:nth-child(n), .woocommerce-page[class*="columns-"] ul.products li.product:nth-child(n){margin-right:20px;clear:none;}.woocommerce.tablet-columns-2 ul.products li.product:nth-child(2n), .woocommerce-page.tablet-columns-2 ul.products li.product:nth-child(2n), .woocommerce.tablet-columns-3 ul.products li.product:nth-child(3n), .woocommerce-page.tablet-columns-3 ul.products li.product:nth-child(3n), .woocommerce.tablet-columns-4 ul.products li.product:nth-child(4n), .woocommerce-page.tablet-columns-4 ul.products li.product:nth-child(4n), .woocommerce.tablet-columns-5 ul.products li.product:nth-child(5n), .woocommerce-page.tablet-columns-5 ul.products li.product:nth-child(5n), .woocommerce.tablet-columns-6 ul.products li.product:nth-child(6n), .woocommerce-page.tablet-columns-6 ul.products li.product:nth-child(6n){margin-right:0;clear:right;}.woocommerce.tablet-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce-page.tablet-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce.tablet-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce-page.tablet-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce.tablet-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce-page.tablet-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce.tablet-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce-page.tablet-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce.tablet-columns-6 ul.products li.product:nth-child(6n+1), .woocommerce-page.tablet-columns-6 ul.products li.product:nth-child(6n+1){clear:left;}.woocommerce div.product .related.products ul.products li.product:nth-child(3n), .woocommerce-page.tablet-columns-1 .site-main ul.products li.product{margin-right:0;clear:right;}.woocommerce div.product .related.products ul.products li.product:nth-child(3n+1){clear:left;}}@media (min-width:769px){.woocommerce form.checkout_coupon{width:50%;}.woocommerce #reviews #comments{float:left;}.woocommerce #reviews #review_form_wrapper{float:right;}}@media (max-width:768px){.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack.ast-no-menu-items .ast-site-header-cart, .ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-3.ast-mobile-header-stack.ast-no-menu-items .ast-site-header-cart{padding-right:0;padding-left:0;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack .main-header-bar{text-align:center;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack .ast-site-header-cart, .ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack .ast-mobile-menu-buttons{display:inline-block;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-2.ast-mobile-header-inline .site-branding{flex:auto;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-3.ast-mobile-header-stack .site-branding{flex:0 0 100%;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-3.ast-mobile-header-stack .main-header-container{display:flex;justify-content:center;}.woocommerce-cart .woocommerce-shipping-calculator .button{width:100%;}.woocommerce div.product div.images, .woocommerce div.product div.summary, .woocommerce #content div.product div.images, .woocommerce #content div.product div.summary, .woocommerce-page div.product div.images, .woocommerce-page div.product div.summary, .woocommerce-page #content div.product div.images, .woocommerce-page #content div.product div.summary{float:none;width:100%;}.woocommerce-cart table.cart td.actions .ast-return-to-shop{display:block;text-align:center;margin-top:1em;}}@media (max-width:544px){.ast-separate-container .ast-woocommerce-container{padding:.54em 1em 1.33333em;}.woocommerce-message, .woocommerce-error, .woocommerce-info{display:flex;flex-wrap:wrap;}.woocommerce-message a.button, .woocommerce-error a.button, .woocommerce-info a.button{order:1;margin-top:.5em;}.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering{float:none;margin-bottom:2em;}.woocommerce table.cart td.actions .button, .woocommerce #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button{padding-left:1em;padding-right:1em;}.woocommerce #content table.cart .button, .woocommerce-page #content table.cart .button{width:100%;}.woocommerce #content table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon{float:none;}.woocommerce #content table.cart td.actions .coupon .button, .woocommerce-page #content table.cart td.actions .coupon .button{flex:1;}.woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a{display:block;}.woocommerce ul.products a.button, .woocommerce-page ul.products a.button{padding:0.5em 0.75em;}.woocommerce div.product .related.products ul.products li.product, .woocommerce.mobile-columns-2 ul.products li.product, .woocommerce-page.mobile-columns-2 ul.products li.product{width:calc(50% - 10px);}.woocommerce.mobile-columns-6 ul.products li.product, .woocommerce-page.mobile-columns-6 ul.products li.product{width:calc(16.66% - 16.66px);}.woocommerce.mobile-columns-5 ul.products li.product, .woocommerce-page.mobile-columns-5 ul.products li.product{width:calc(20% - 16px);}.woocommerce.mobile-columns-4 ul.products li.product, .woocommerce-page.mobile-columns-4 ul.products li.product{width:calc(25% - 15px);}.woocommerce.mobile-columns-3 ul.products li.product, .woocommerce-page.mobile-columns-3 ul.products li.product{width:calc(33.33% - 14px);}.woocommerce.mobile-columns-1 ul.products li.product, .woocommerce-page.mobile-columns-1 ul.products li.product{width:100%;}}@media (max-width:544px){.woocommerce ul.products a.button.loading::after, .woocommerce-page ul.products a.button.loading::after{display:inline-block;margin-left:5px;position:initial;}.woocommerce.mobile-columns-1 .site-main ul.products li.product:nth-child(n), .woocommerce-page.mobile-columns-1 .site-main ul.products li.product:nth-child(n){margin-right:0;}.woocommerce #content div.product .woocommerce-tabs ul.tabs li, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li{display:block;margin-right:0;}.woocommerce[class*="columns-"].columns-3 > ul.products li.product, .woocommerce[class*="columns-"].columns-4 > ul.products li.product, .woocommerce[class*="columns-"].columns-5 > ul.products li.product, .woocommerce[class*="columns-"].columns-6 > ul.products li.product{width:calc(50% - 10px);margin-right:20px;}.woocommerce[class*="columns-"] ul.products li.product:nth-child(n), .woocommerce-page[class*="columns-"] ul.products li.product:nth-child(n){margin-right:20px;clear:none;}.woocommerce-page[class*=columns-].columns-3>ul.products li.product:nth-child(2n), .woocommerce-page[class*=columns-].columns-4>ul.products li.product:nth-child(2n), .woocommerce-page[class*=columns-].columns-5>ul.products li.product:nth-child(2n), .woocommerce-page[class*=columns-].columns-6>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-3>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-4>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-5>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-6>ul.products li.product:nth-child(2n){margin-right:0;clear:right;}.woocommerce[class*="columns-"].columns-3 > ul.products li.product:nth-child(2n+1), .woocommerce[class*="columns-"].columns-4 > ul.products li.product:nth-child(2n+1), .woocommerce[class*="columns-"].columns-5 > ul.products li.product:nth-child(2n+1), .woocommerce[class*="columns-"].columns-6 > ul.products li.product:nth-child(2n+1){clear:left;}.woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n){margin-right:20px;clear:none;}.woocommerce.mobile-columns-6 ul.products li.product:nth-child(6n), .woocommerce-page.mobile-columns-6 ul.products li.product:nth-child(6n), .woocommerce.mobile-columns-5 ul.products li.product:nth-child(5n), .woocommerce-page.mobile-columns-5 ul.products li.product:nth-child(5n), .woocommerce.mobile-columns-4 ul.products li.product:nth-child(4n), .woocommerce-page.mobile-columns-4 ul.products li.product:nth-child(4n), .woocommerce.mobile-columns-3 ul.products li.product:nth-child(3n), .woocommerce-page.mobile-columns-3 ul.products li.product:nth-child(3n), .woocommerce.mobile-columns-2 ul.products li.product:nth-child(2n), .woocommerce-page.mobile-columns-2 ul.products li.product:nth-child(2n), .woocommerce div.product .related.products ul.products li.product:nth-child(2n){margin-right:0;clear:right;}.woocommerce.mobile-columns-6 ul.products li.product:nth-child(6n+1), .woocommerce-page.mobile-columns-6 ul.products li.product:nth-child(6n+1), .woocommerce.mobile-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce-page.mobile-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce.mobile-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce-page.mobile-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce.mobile-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce-page.mobile-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce.mobile-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce-page.mobile-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce div.product .related.products ul.products li.product:nth-child(2n+1){clear:left;}}@media (min-width:769px){.ast-woo-shop-archive .site-content > .ast-container{max-width:1240px;}}@media (min-width:769px){.woocommerce #content .ast-woocommerce-container div.product div.images, .woocommerce .ast-woocommerce-container div.product div.images, .woocommerce-page #content .ast-woocommerce-container div.product div.images, .woocommerce-page .ast-woocommerce-container div.product div.images{width:50%;}.woocommerce #content .ast-woocommerce-container div.product div.summary, .woocommerce .ast-woocommerce-container div.product div.summary, .woocommerce-page #content .ast-woocommerce-container div.product div.summary, .woocommerce-page .ast-woocommerce-container div.product div.summary{width:46%;}.woocommerce.woocommerce-checkout form #customer_details.col2-set .col-1, .woocommerce.woocommerce-checkout form #customer_details.col2-set .col-2, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set .col-1, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set .col-2{float:none;width:auto;}}.widget_product_search button{flex:0 0 auto;padding:10px 20px;;}@media (min-width:769px){.woocommerce.woocommerce-checkout form #customer_details.col2-set, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set{width:55%;float:left;margin-right:4.347826087%;}.woocommerce.woocommerce-checkout form #order_review, .woocommerce.woocommerce-checkout form #order_review_heading, .woocommerce-page.woocommerce-checkout form #order_review, .woocommerce-page.woocommerce-checkout form #order_review_heading{width:40%;float:right;margin-right:0;clear:right;}}select, .select2-container .select2-selection--single{background-image:url("data:image/svg+xml,%3Csvg class='ast-arrow-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='26px' height='16.043px' fill='%234B4F58' viewBox='57 35.171 26 16.043' enable-background='new 57 35.171 26 16.043' xml:space='preserve' %3E%3Cpath d='M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z'%3E%3C/path%3E%3C/svg%3E");background-size:.8em;background-repeat:no-repeat;background-position-x:calc( 100% - 10px );background-position-y:center;-webkit-appearance:none;-moz-appearance:none;padding-right:2em;}
+						.woocommerce ul.products li.product.desktop-align-left, .woocommerce-page ul.products li.product.desktop-align-left {
+							text-align: left;
+						}
+						.woocommerce ul.products li.product.desktop-align-left .star-rating,
+						.woocommerce ul.products li.product.desktop-align-left .button,
+						.woocommerce-page ul.products li.product.desktop-align-left .star-rating,
+						.woocommerce-page ul.products li.product.desktop-align-left .button {
+							margin-left: 0;
+							margin-right: 0;
+						}
+					@media(max-width: 768px){
+						.woocommerce ul.products li.product.tablet-align-left, .woocommerce-page ul.products li.product.tablet-align-left {
+							text-align: left;
+						}
+						.woocommerce ul.products li.product.tablet-align-left .star-rating,
+						.woocommerce ul.products li.product.tablet-align-left .button,
+						.woocommerce-page ul.products li.product.tablet-align-left .star-rating,
+						.woocommerce-page ul.products li.product.tablet-align-left .button {
+							margin-left: 0;
+							margin-right: 0;
+						}
+					}@media(max-width: 544px){
+						.woocommerce ul.products li.product.mobile-align-left, .woocommerce-page ul.products li.product.mobile-align-left {
+							text-align: left;
+						}
+						.woocommerce ul.products li.product.mobile-align-left .star-rating,
+						.woocommerce ul.products li.product.mobile-align-left .button,
+						.woocommerce-page ul.products li.product.mobile-align-left .star-rating,
+						.woocommerce-page ul.products li.product.mobile-align-left .button {
+							margin-left: 0;
+							margin-right: 0;
+						}
+					}.ast-woo-active-filter-widget .wc-block-active-filters{display:flex;align-items:self-start;justify-content:space-between;}.ast-woo-active-filter-widget .wc-block-active-filters__clear-all{flex:none;margin-top:2px;}
+</style>
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='hfe-style-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.28' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.21.2' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='elementor-post-1325-css' href='https://jesusisgodandlordministries.com/wp-content/uploads/elementor/css/post-1325.css?ver=1698872796' media='all' />
+<link rel='stylesheet' id='sby-styles-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/feeds-for-youtube/css/sb-youtube-free.min.css?ver=2.2.1' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.21.2' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.21.2' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://jesusisgodandlordministries.com/wp-content/uploads/elementor/css/global.css?ver=1698872796' media='all' />
+<link rel='stylesheet' id='elementor-post-559-css' href='https://jesusisgodandlordministries.com/wp-content/uploads/elementor/css/post-559.css?ver=1698872796' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.5.2' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><!--[if IE]>
+<script src="https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.6.12" id="astra-flexibility-js"></script>
+<script id="astra-flexibility-js-after">
+flexibility(document.documentElement);
+</script>
+<![endif]-->
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.26.0" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/jesusisgodandlordministries.com","hash_tracking":"false","v4_id":"G-W2VX3YNKHB"};</script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.8.2" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/jesusisgodandlordministries.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.8.2" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.8.2" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.8.2" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.21.2" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="https://jesusisgodandlordministries.com/wp-json/" /><link rel="alternate" type="application/json" href="https://jesusisgodandlordministries.com/wp-json/wp/v2/pages/26" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jesusisgodandlordministries.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.2" />
+<meta name="generator" content="WooCommerce 8.8.2" />
+<link rel="canonical" href="https://jesusisgodandlordministries.com/why-we-must-be-born-again/" />
+<link rel='shortlink' href='https://jesusisgodandlordministries.com/?p=26' />
+<link rel="alternate" type="application/json+oembed" href="https://jesusisgodandlordministries.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjesusisgodandlordministries.com%2Fwhy-we-must-be-born-again%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://jesusisgodandlordministries.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjesusisgodandlordministries.com%2Fwhy-we-must-be-born-again%2F&#038;format=xml" />
+		<script>
+			( function() {
+				window.onpageshow = function( event ) {
+					// Defined window.wpforms means that a form exists on a page.
+					// If so and back/forward button has been clicked,
+					// force reload a page to prevent the submit button state stuck.
+					if ( typeof window.wpforms !== 'undefined' && event.persisted ) {
+						window.location.reload();
+					}
+				};
+			}() );
+		</script>
+			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.21.2; features: e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body data-rsssl=1 itemtype='https://schema.org/WebPage' itemscope='itemscope' class="page-template-default page page-id-26 wp-custom-logo theme-astra woocommerce-no-js ehf-template-astra ehf-stylesheet-astra ast-desktop ast-separate-container ast-right-sidebar astra-4.6.12 ast-header-custom-item-outside ast-single-post ast-woocommerce-cart-menu ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-normal-title-enabled elementor-default elementor-kit-1325 elementor-page elementor-page-26">
+
+<a
+	class="skip-link screen-reader-text"
+	href="#content"
+	role="link"
+	title="Skip to content">
+		Skip to content</a>
+
+<div
+class="hfeed site" id="page">
+			<header
+		class="site-header header-main-layout-1 ast-primary-menu-enabled ast-logo-title-inline ast-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead"		>
+			
+<div class="main-header-bar-wrap">
+	<div class="main-header-bar">
+				<div class="ast-container">
+
+			<div class="ast-flex main-header-container">
+				
+		<div class="site-branding">
+			<div
+			class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"			>
+				<span class="site-logo-img"><a href="https://jesusisgodandlordministries.com/" class="custom-logo-link" rel="home"><img width="60" height="56" src="https://jesusisgodandlordministries.com/wp-content/uploads/2019/01/LogoMakr_07HWEo-60x56.png" class="custom-logo" alt="Jesus is God and Lord Ministries" decoding="async" srcset="" sizes="(max-width: 60px) 100vw, 60px" /></a></span><div class="ast-site-title-wrap">
+						<span class="site-title" itemprop="name">
+				<a href="https://jesusisgodandlordministries.com/" rel="home" itemprop="url" >
+					Jesus is God and Lord Ministries
+				</a>
+			</span>
+						<p class="site-description" itemprop="description">
+				Ye Must Be Born Again
+			</p>
+				</div>			</div>
+		</div>
+
+		<!-- .site-branding -->
+				<div class="ast-mobile-menu-buttons">
+
+			
+					<div class="ast-button-wrap">
+			<button type="button" class="menu-toggle main-header-menu-toggle  ast-mobile-menu-buttons-fill "  aria-controls='primary-menu' aria-expanded='false'>
+				<span class="screen-reader-text">Main Menu</span>
+				<span class="ast-icon icon-menu-bars"><span class="menu-toggle-icon"></span></span>							</button>
+		</div>
+			
+			
+		</div>
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility" id="primary-site-navigation" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation"><ul id="primary-menu" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border"><li id="menu-item-547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-547"><a href="https://jesusisgodandlordministries.com/" class="menu-link">HOME</a></li>
+<li id="menu-item-548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-548"><a href="https://jesusisgodandlordministries.com/store/" class="menu-link">STORE</a></li>
+<li id="menu-item-872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-872"><a href="https://jesusisgodandlordministries.com/about-jesus-is-god-and-lord-ministries/" class="menu-link">ABOUT JESUS IS GOD AND LORD MINISTRIES</a></li>
+<li id="menu-item-1094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1094"><a href="https://jesusisgodandlordministries.com/beliefs/" class="menu-link">BELIEFS</a></li>
+<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a href="https://jesusisgodandlordministries.com/contact/" class="menu-link">CONTACT</a></li>
+<li id="menu-item-866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-866"><a href="https://jesusisgodandlordministries.com/king-james-bible/" class="menu-link">KING JAMES BIBLE TO READ AND LISTEN TO</a></li>
+<li id="menu-item-893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893"><a href="https://jesusisgodandlordministries.com/king-james-bible-words-defined/" class="menu-link">KING JAMES BIBLE WORDS AND PHRASES DEFINED</a></li>
+<li id="menu-item-873" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26 current_page_item menu-item-873"><a href="https://jesusisgodandlordministries.com/why-we-must-be-born-again/" aria-current="page" class="menu-link">WHY WE MUST BE BORN AGAIN</a></li>
+<li id="menu-item-874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-874"><a href="https://jesusisgodandlordministries.com/what-must-i-do-to-be-saved-have-eternal-life-and-go-to-heaven/" class="menu-link">WHAT MUST I DO TO BE SAVED (BE BORN AGAIN), HAVE ETERNAL LIFE AND GO TO HEAVEN?</a></li>
+<li id="menu-item-869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-869"><a href="https://jesusisgodandlordministries.com/now-that-i-am-a-born-again-christian-how-do-i-grow/" class="menu-link">NOW THAT I AM A BORN AGAIN CHRISTIAN, HOW DO I GROW (MATURE)?</a></li>
+<li id="menu-item-868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-868"><a href="https://jesusisgodandlordministries.com/proof-that-jesus-is-god-and-lord/" class="menu-link">PROOF THAT JESUS IS GOD AND LORD</a></li>
+<li id="menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-865"><a href="https://jesusisgodandlordministries.com/sermons-and-scripture-lessons/" class="menu-link">SERMONS AND SCRIPTURE LESSONS</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-1928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1928"><a href="https://jesusisgodandlordministries.com/316-verses/" class="menu-link">3:16 Verses</a></li>
+	<li id="menu-item-2449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2449"><a href="https://jesusisgodandlordministries.com/abraham-the-obedient-father-and-type-of-god-the-father/" class="menu-link">Abraham the obedient father and type of God the Father</a></li>
+	<li id="menu-item-1758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1758"><a href="https://jesusisgodandlordministries.com/according-to-the-word-of-the-lord/" class="menu-link">According to the word of the LORD</a></li>
+	<li id="menu-item-958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-958"><a href="https://jesusisgodandlordministries.com/alleged-contradictions-in-scripture/" class="menu-link">Alleged Contradictions in Scripture</a></li>
+	<li id="menu-item-2196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2196"><a href="https://jesusisgodandlordministries.com/angels-and-spiritual-beings/" class="menu-link">Angels and spiritual beings</a></li>
+	<li id="menu-item-2671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2671"><a href="https://jesusisgodandlordministries.com/animals-teaching-man/" class="menu-link">Animals Teaching Man  </a></li>
+	<li id="menu-item-1699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="https://jesusisgodandlordministries.com/be-like-jesus/" class="menu-link">Be like Jesus</a></li>
+	<li id="menu-item-2050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2050"><a href="https://jesusisgodandlordministries.com/be-thankful/" class="menu-link">Be Thankful</a></li>
+	<li id="menu-item-896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-896"><a href="https://jesusisgodandlordministries.com/bread-in-scripture/" class="menu-link">Bread in Scripture</a></li>
+	<li id="menu-item-1611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611"><a href="https://jesusisgodandlordministries.com/christian-martyrs-for-jesus/" class="menu-link">Christian Martyrs for Jesus</a></li>
+	<li id="menu-item-955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-955"><a href="https://jesusisgodandlordministries.com/colors-in-scripture/" class="menu-link">Colors in Scripture</a></li>
+	<li id="menu-item-1554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1554"><a href="https://jesusisgodandlordministries.com/curse-israel-and-you-will-be-cursed/" class="menu-link">Curse Israel and you will be cursed</a></li>
+	<li id="menu-item-2325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2325"><a href="https://jesusisgodandlordministries.com/dangers-of-calvinism/" class="menu-link">Dangers of Calvinism</a></li>
+	<li id="menu-item-2390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2390"><a href="https://jesusisgodandlordministries.com/deadliest-battles-in-scripture/" class="menu-link">Deadliest battles in scripture</a></li>
+	<li id="menu-item-1578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1578"><a href="https://jesusisgodandlordministries.com/deserts-in-scripture-and-in-our-lives/" class="menu-link">Deserts in scripture and in our lives</a></li>
+	<li id="menu-item-1959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1959"><a href="https://jesusisgodandlordministries.com/false-doctrines-of-jehovahs-witnesses/" class="menu-link">False Doctrines of Jehovah’s Witnesses</a></li>
+	<li id="menu-item-1747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1747"><a href="https://jesusisgodandlordministries.com/false-doctrines-of-mormonism/" class="menu-link">False Doctrines of Mormonism</a></li>
+	<li id="menu-item-2079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2079"><a href="https://jesusisgodandlordministries.com/false-doctrines-of-seventh-day-adventism/" class="menu-link">False Doctrines of Seventh-day Adventism</a></li>
+	<li id="menu-item-2219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2219"><a href="https://jesusisgodandlordministries.com/false-religion-of-buddhism/" class="menu-link">False Religion of Buddhism</a></li>
+	<li id="menu-item-2205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2205"><a href="https://jesusisgodandlordministries.com/false-religion-of-hinduism/" class="menu-link">False Religion of Hinduism</a></li>
+	<li id="menu-item-2176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2176"><a href="https://jesusisgodandlordministries.com/false-religion-of-islam/" class="menu-link">False Religion of Islam</a></li>
+	<li id="menu-item-2244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2244"><a href="https://jesusisgodandlordministries.com/false-religion-of-judaism/" class="menu-link">False Religion of Judaism</a></li>
+	<li id="menu-item-2496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a href="https://jesusisgodandlordministries.com/freedom-and-liberty-come-from-god/" class="menu-link">Freedom and Liberty come from God</a></li>
+	<li id="menu-item-2327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2327"><a href="https://jesusisgodandlordministries.com/freemasonry-is-satanism-in-disguise/" class="menu-link">Freemasonry is Satanism in Disguise</a></li>
+	<li id="menu-item-2389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2389"><a href="https://jesusisgodandlordministries.com/from-the-resurrection-to-the-ascension/" class="menu-link">From the resurrection to the ascension</a></li>
+	<li id="menu-item-2778" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2778"><a href="https://jesusisgodandlordministries.com/genealogies-of-jesus/" class="menu-link">Genealogies of Jesus</a></li>
+	<li id="menu-item-2829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2829"><a href="https://jesusisgodandlordministries.com/gifts-of-the-holy-ghost/" class="menu-link">Gifts of the Holy Ghost</a></li>
+	<li id="menu-item-2871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2871"><a href="https://jesusisgodandlordministries.com/god-is-light/" class="menu-link">God is Light</a></li>
+	<li id="menu-item-2907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2907"><a href="https://jesusisgodandlordministries.com/god-is-love/" class="menu-link">God is Love</a></li>
+	<li id="menu-item-1685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1685"><a href="https://jesusisgodandlordministries.com/god-the-holy-ghost/" class="menu-link">God the Holy Ghost</a></li>
+	<li id="menu-item-1914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1914"><a href="https://jesusisgodandlordministries.com/halloween-and-the-connection-to-satan/" class="menu-link">Halloween and the connection to Satan</a></li>
+	<li id="menu-item-1512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1512"><a href="https://jesusisgodandlordministries.com/honour-thy-mother/" class="menu-link">Honour Thy Mother</a></li>
+	<li id="menu-item-1597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597"><a href="https://jesusisgodandlordministries.com/isaiah-53/" class="menu-link">Isaiah 53</a></li>
+	<li id="menu-item-2245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2245"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-purim/" class="menu-link">Jesus in the feast of Purim</a></li>
+	<li id="menu-item-2273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2273"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feasts-of-passover-and-unleavened-bread/" class="menu-link">Jesus in the feasts of Passover and Unleavened Bread</a></li>
+	<li id="menu-item-2326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2326"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-firstfruits/" class="menu-link">Jesus in the feast of firstfruits</a></li>
+	<li id="menu-item-1513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1513"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-pentecost/" class="menu-link">Jesus in the feast of Pentecost</a></li>
+	<li id="menu-item-1772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1772"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-trumpets/" class="menu-link">Jesus in the feast of trumpets</a></li>
+	<li id="menu-item-1773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1773"><a href="https://jesusisgodandlordministries.com/jesus-in-the-day-of-atonement/" class="menu-link">Jesus in the day of atonement</a></li>
+	<li id="menu-item-957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-957"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-tabernacles/" class="menu-link">Jesus in the Feast of Tabernacles</a></li>
+	<li id="menu-item-2089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2089"><a href="https://jesusisgodandlordministries.com/jesus-in-hanukkah/" class="menu-link">Jesus in Hanukkah</a></li>
+	<li id="menu-item-1633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1633"><a href="https://jesusisgodandlordministries.com/jesus-in-the-tabernacle/" class="menu-link">Jesus in the Tabernacle</a></li>
+	<li id="menu-item-1676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1676"><a href="https://jesusisgodandlordministries.com/jesus-as-the-temple/" class="menu-link">Jesus as the Temple</a></li>
+	<li id="menu-item-1568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1568"><a href="https://jesusisgodandlordministries.com/jesus-is-the-door-that-all-must-enter-for-everlasting-life/" class="menu-link">Jesus is the door that all must enter for everlasting life</a></li>
+	<li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-950"><a href="https://jesusisgodandlordministries.com/jesus-is-the-light-of-the-world-and-christians-should-reflect-that-light/" class="menu-link">Jesus is the Light of the World and Christians Should Reflect that Light</a></li>
+	<li id="menu-item-2428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2428"><a href="https://jesusisgodandlordministries.com/jesus-in-the-lords-supper-or-communion/" class="menu-link">Jesus in the Lord’s supper or communion</a></li>
+	<li id="menu-item-1917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1917"><a href="https://jesusisgodandlordministries.com/jesus-represented-in-the-sabbath/" class="menu-link">Jesus represented in the sabbath</a></li>
+	<li id="menu-item-2955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2955"><a href="https://jesusisgodandlordministries.com/jesus-versus-mohammad/" class="menu-link">Jesus versus Mohammad</a></li>
+	<li id="menu-item-2533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2533"><a href="https://jesusisgodandlordministries.com/jewish-tragedies-on-the-9th-of-av/" class="menu-link">Jewish tragedies on the 9th of Av</a></li>
+	<li id="menu-item-2536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2536"><a href="https://jesusisgodandlordministries.com/jonah/" class="menu-link">Jonah</a></li>
+	<li id="menu-item-1665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1665"><a href="https://jesusisgodandlordministries.com/joseph-as-a-type-of-jesus/" class="menu-link">Joseph as a type of Jesus</a></li>
+	<li id="menu-item-2659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2659"><a href="https://jesusisgodandlordministries.com/jude/" class="menu-link">Jude</a></li>
+	<li id="menu-item-2695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2695"><a href="https://jesusisgodandlordministries.com/malachi/" class="menu-link">Malachi   </a></li>
+	<li id="menu-item-1514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://jesusisgodandlordministries.com/martyrs-in-the-lords-army/" class="menu-link">Martyrs in the Lord’s Army</a></li>
+	<li id="menu-item-1651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1651"><a href="https://jesusisgodandlordministries.com/moses-as-a-type-of-jesus/" class="menu-link">Moses as a type of Jesus</a></li>
+	<li id="menu-item-2610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2610"><a href="https://jesusisgodandlordministries.com/nahum/" class="menu-link">Nahum</a></li>
+	<li id="menu-item-1577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1577"><a href="https://jesusisgodandlordministries.com/nehemiah-3-and-the-ten-gates-of-the-jerusalem-wall/" class="menu-link">Nehemiah 3 and the ten gates of the Jerusalem wall</a></li>
+	<li id="menu-item-2632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2632"><a href="https://jesusisgodandlordministries.com/obadiah/" class="menu-link">Obadiah</a></li>
+	<li id="menu-item-1617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1617"><a href="https://jesusisgodandlordministries.com/our-nation-was-founded-upon-god/" class="menu-link">Our Nation Was Founded Upon God</a></li>
+	<li id="menu-item-2630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2630"><a href="https://jesusisgodandlordministries.com/philemon/" class="menu-link">Philemon</a></li>
+	<li id="menu-item-2029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2029"><a href="https://jesusisgodandlordministries.com/prayer/" class="menu-link">Prayer</a></li>
+	<li id="menu-item-1037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1037"><a href="https://jesusisgodandlordministries.com/pre-incarnate-appearances-of-jesus-theophanies/" class="menu-link">Pre-incarnate Appearances of Jesus (Theophanies)</a></li>
+	<li id="menu-item-2717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2717"><a href="https://jesusisgodandlordministries.com/proof-that-god-exists-in-two-words-the-jews/" class="menu-link">Proof that God exists in two words: the Jews</a></li>
+	<li id="menu-item-2137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2137"><a href="https://jesusisgodandlordministries.com/proof-that-jesus-is-god/" class="menu-link">Proof that Jesus is God</a></li>
+	<li id="menu-item-1039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1039"><a href="https://jesusisgodandlordministries.com/prophecies-fulfilled-by-jesus-at-his-first-coming/" class="menu-link">Prophecies Fulfilled by Jesus at his First Coming</a></li>
+	<li id="menu-item-1432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1432"><a href="https://jesusisgodandlordministries.com/prophecies-of-the-second-coming-of-jesus/" class="menu-link">Prophecies of the Second Coming of Jesus</a></li>
+	<li id="menu-item-2555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2555"><a href="https://jesusisgodandlordministries.com/psalm-23/" class="menu-link">Psalm 23</a></li>
+	<li id="menu-item-1736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1736"><a href="https://jesusisgodandlordministries.com/roman-catholicism-and-her-false-doctrines/" class="menu-link">Roman Catholicism and her False Doctrines</a></li>
+	<li id="menu-item-2061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2061"><a href="https://jesusisgodandlordministries.com/santa-is-satan-and-his-little-elves-are-devils/" class="menu-link">Santa is Satan and his little elves are devils</a></li>
+	<li id="menu-item-2035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2035"><a href="https://jesusisgodandlordministries.com/serve-in-the-lords-army/" class="menu-link">Serve in the Lord’s Army</a></li>
+	<li id="menu-item-1456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1456"><a href="https://jesusisgodandlordministries.com/seven-vial-judgments-of-revelation/" class="menu-link">Seven Vial Judgments of Revelation</a></li>
+	<li id="menu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2733"><a href="https://jesusisgodandlordministries.com/significant-events-that-happened-on-17-nisan/" class="menu-link">Significant events that happened on 17 Nisan  </a></li>
+	<li id="menu-item-2121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2121"><a href="https://jesusisgodandlordministries.com/star-of-bethlehem/" class="menu-link">Star of Bethlehem</a></li>
+	<li id="menu-item-2752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2752"><a href="https://jesusisgodandlordministries.com/thankful-people-in-scripture/" class="menu-link">Thankful people in scripture  </a></li>
+	<li id="menu-item-2399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2399"><a href="https://jesusisgodandlordministries.com/the-battle-of-gog-and-magog/" class="menu-link">The Battle of Gog and Magog</a></li>
+	<li id="menu-item-2857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2857"><a href="https://jesusisgodandlordministries.com/the-books-of-god/" class="menu-link">The Books of God</a></li>
+	<li id="menu-item-2897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2897"><a href="https://jesusisgodandlordministries.com/the-crucifixion-of-jesus/" class="menu-link">The Crucifixion of Jesus</a></li>
+	<li id="menu-item-895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-895"><a href="https://jesusisgodandlordministries.com/the-egyptian-gods-and-goddesses-of-the-ten-plagues-and-their-judgment-and-defeat-by-the-god-of-gods/" class="menu-link">The Egyptian gods and goddesses of the ten plagues and their judgment and defeat by the God of gods</a></li>
+	<li id="menu-item-2554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2554"><a href="https://jesusisgodandlordministries.com/the-exodus/" class="menu-link">The Exodus   </a></li>
+	<li id="menu-item-2512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2512"><a href="https://jesusisgodandlordministries.com/the-good-samaritan/" class="menu-link">The Good Samaritan</a></li>
+	<li id="menu-item-2583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2583"><a href="https://jesusisgodandlordministries.com/the-gospel-in-stone/" class="menu-link">The Gospel in Stone</a></li>
+	<li id="menu-item-2522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2522"><a href="https://jesusisgodandlordministries.com/the-gospel-in-the-stars/" class="menu-link">The Gospel in the Stars</a></li>
+	<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="https://jesusisgodandlordministries.com/the-greatest-father-anyone-can-have-and-everyone-needs/" class="menu-link">The Greatest Father Anyone Can Have And Everyone Needs</a></li>
+	<li id="menu-item-2366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2366"><a href="https://jesusisgodandlordministries.com/the-handwriting-of-god/" class="menu-link">The Handwriting of God</a></li>
+	<li id="menu-item-1040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1040"><a href="https://jesusisgodandlordministries.com/the-illegal-trial-of-jesus/" class="menu-link">The Illegal Trial of Jesus</a></li>
+	<li id="menu-item-3016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3016"><a href="https://jesusisgodandlordministries.com/the-king-james-bible-built-in-dictionary/" class="menu-link">The King James Bible Built-in Dictionary</a></li>
+	<li id="menu-item-952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-952"><a href="https://jesusisgodandlordministries.com/the-miracles-at-the-crucifixion-of-jesus/" class="menu-link">The Miracles at the Crucifixion of Jesus</a></li>
+	<li id="menu-item-2788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2788"><a href="https://jesusisgodandlordministries.com/the-new-years-resolutions-that-need-to-be-kept/" class="menu-link">The New Year’s resolutions that need to be kept</a></li>
+	<li id="menu-item-953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-953"><a href="https://jesusisgodandlordministries.com/the-number-seven-in-scripture/" class="menu-link">The Number Seven in Scripture</a></li>
+	<li id="menu-item-2601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2601"><a href="https://jesusisgodandlordministries.com/the-number-three-in-scripture/" class="menu-link">The Number Three in Scripture  </a></li>
+	<li id="menu-item-2993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2993"><a href="https://jesusisgodandlordministries.com/the-riotous-son/" class="menu-link">The Riotous Son</a></li>
+	<li id="menu-item-954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-954"><a href="https://jesusisgodandlordministries.com/the-true-creationism-of-the-scriptures-versus-false-theories/" class="menu-link">The True Creationism of the Scriptures versus False Theories</a></li>
+	<li id="menu-item-2600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2600"><a href="https://jesusisgodandlordministries.com/the-unscriptural-flat-earth-theory/" class="menu-link">The Unscriptural Flat Earth Theory</a></li>
+	<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="https://jesusisgodandlordministries.com/the-unscriptural-lucifer-flood/" class="menu-link">The Unscriptural Lucifer Flood  </a></li>
+	<li id="menu-item-2928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2928"><a href="https://jesusisgodandlordministries.com/the-widow-woman-and-the-oil/" class="menu-link">The Widow Woman and the Oil  </a></li>
+	<li id="menu-item-3099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3099"><a href="https://jesusisgodandlordministries.com/the-word-became-flesh/" class="menu-link">The Word Became Flesh</a></li>
+	<li id="menu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2687"><a href="https://jesusisgodandlordministries.com/types-of-the-holy-ghost-in-scripture/" class="menu-link">Types of the Holy Ghost in scripture</a></li>
+	<li id="menu-item-2102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2102"><a href="https://jesusisgodandlordministries.com/was-jesus-born-on-christmas/" class="menu-link">Was Jesus born on Christmas?</a></li>
+	<li id="menu-item-1038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1038"><a href="https://jesusisgodandlordministries.com/was-jesus-crucified-on-friday/" class="menu-link">Was Jesus Crucified on Friday?</a></li>
+	<li id="menu-item-951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-951"><a href="https://jesusisgodandlordministries.com/water-in-scripture/" class="menu-link">Water in Scripture</a></li>
+	<li id="menu-item-2631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2631"><a href="https://jesusisgodandlordministries.com/weather-in-scripture/" class="menu-link">Weather in scripture</a></li>
+	<li id="menu-item-1127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127"><a href="https://jesusisgodandlordministries.com/who-are-the-sons-of-god-of-genesis-6/" class="menu-link">Who are the sons of God of Genesis 6?</a></li>
+	<li id="menu-item-1791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1791"><a href="https://jesusisgodandlordministries.com/work-is-from-god/" class="menu-link">Work is from God</a></li>
+	<li id="menu-item-1543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1543"><a href="https://jesusisgodandlordministries.com/worshipping-god-in-psalms-hymns-and-spiritual-songs/" class="menu-link">Worshipping God in psalms, hymns, and spiritual songs</a></li>
+	<li id="menu-item-2353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2353"><a href="https://jesusisgodandlordministries.com/zephaniah/" class="menu-link">Zephaniah</a></li>
+</ul>
+</li>
+<li id="menu-item-1805" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1805"><a href="https://jesusisgodandlordministries.com/videos/" class="menu-link">VIDEOS</a></li>
+<li id="menu-item-867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-867"><a href="https://jesusisgodandlordministries.com/hymns/" class="menu-link">HYMNS</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-877"><a href="https://jesusisgodandlordministries.com/for-precious-jewish-souls/" class="menu-link">FOR PRECIOUS JEWISH SOULS</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-897"><a href="https://jesusisgodandlordministries.com/meet-the-jewish-messiah/" class="menu-link">Meet the Jewish Messiah</a></li>
+	<li id="menu-item-2246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2246"><a href="https://jesusisgodandlordministries.com/false-religion-of-judaism/" class="menu-link">False Religion of Judaism</a></li>
+	<li id="menu-item-1598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1598"><a href="https://jesusisgodandlordministries.com/isaiah-53/" class="menu-link">Isaiah 53</a></li>
+	<li id="menu-item-2274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2274"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feasts-of-passover-and-unleavened-bread/" class="menu-link">Jesus in the feasts of Passover and Unleavened Bread</a></li>
+	<li id="menu-item-2328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2328"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-firstfruits/" class="menu-link">Jesus in the feast of firstfruits</a></li>
+	<li id="menu-item-1515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1515"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-pentecost/" class="menu-link">Jesus in the feast of Pentecost</a></li>
+	<li id="menu-item-1774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1774"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-trumpets/" class="menu-link">Jesus in the feast of trumpets</a></li>
+	<li id="menu-item-1775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1775"><a href="https://jesusisgodandlordministries.com/jesus-in-the-day-of-atonement/" class="menu-link">Jesus in the day of atonement</a></li>
+	<li id="menu-item-959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-959"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-tabernacles/" class="menu-link">Jesus in the Feast of Tabernacles</a></li>
+	<li id="menu-item-2088" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2088"><a href="https://jesusisgodandlordministries.com/jesus-in-hanukkah/" class="menu-link">Jesus in Hanukkah</a></li>
+	<li id="menu-item-2243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2243"><a href="https://jesusisgodandlordministries.com/jesus-in-the-feast-of-purim/" class="menu-link">Jesus in the feast of Purim</a></li>
+	<li id="menu-item-2427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2427"><a href="https://jesusisgodandlordministries.com/jesus-in-the-lords-supper-or-communion/" class="menu-link">Jesus in the Lord’s supper or communion</a></li>
+	<li id="menu-item-1634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1634"><a href="https://jesusisgodandlordministries.com/jesus-in-the-tabernacle/" class="menu-link">Jesus in the Tabernacle</a></li>
+	<li id="menu-item-1675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675"><a href="https://jesusisgodandlordministries.com/jesus-as-the-temple/" class="menu-link">Jesus as the Temple</a></li>
+	<li id="menu-item-1915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1915"><a href="https://jesusisgodandlordministries.com/jesus-represented-in-the-sabbath/" class="menu-link">Jesus represented in the sabbath</a></li>
+	<li id="menu-item-2735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2735"><a href="https://jesusisgodandlordministries.com/jewish-tragedies-on-the-9th-of-av/" class="menu-link">Jewish tragedies on the 9th of Av</a></li>
+	<li id="menu-item-1664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1664"><a href="https://jesusisgodandlordministries.com/joseph-as-a-type-of-jesus/" class="menu-link">Joseph as a type of Jesus</a></li>
+	<li id="menu-item-1650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1650"><a href="https://jesusisgodandlordministries.com/moses-as-a-type-of-jesus/" class="menu-link">Moses as a type of Jesus</a></li>
+	<li id="menu-item-2716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2716"><a href="https://jesusisgodandlordministries.com/proof-that-god-exists-in-two-words-the-jews/" class="menu-link">Proof that God exists in two words: the Jews</a></li>
+	<li id="menu-item-2734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2734"><a href="https://jesusisgodandlordministries.com/significant-events-that-happened-on-17-nisan/" class="menu-link">Significant events that happened on 17 Nisan  </a></li>
+</ul>
+</li>
+<li id="menu-item-1311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1311"><a href="https://jesusisgodandlordministries.com/for-precious-roman-catholic-souls/" class="menu-link">FOR PRECIOUS ROMAN CATHOLIC SOULS</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-1312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1312"><a href="https://jesusisgodandlordministries.com/false-doctrines-of-roman-catholicism/" class="menu-link">False Doctrines of Roman Catholicism</a></li>
+	<li id="menu-item-1735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1735"><a href="https://jesusisgodandlordministries.com/roman-catholicism-and-her-false-doctrines/" class="menu-link">Roman Catholicism and her False Doctrines</a></li>
+</ul>
+</li>
+<li id="menu-item-1705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1705"><a href="https://jesusisgodandlordministries.com/cults/" class="menu-link">CULTS</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-1744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1744"><a href="https://jesusisgodandlordministries.com/roman-catholicism/" class="menu-link">Roman Catholicism</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"></span></button>
+	<ul class="sub-menu">
+		<li id="menu-item-1733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1733"><a href="https://jesusisgodandlordministries.com/roman-catholicism-and-her-false-doctrines/" class="menu-link">Roman Catholicism and her False Doctrines</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1734"><a href="https://jesusisgodandlordministries.com/false-doctrines-of-mormonism/" class="menu-link">False Doctrines of Mormonism</a></li>
+	<li id="menu-item-1958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1958"><a href="https://jesusisgodandlordministries.com/false-doctrines-of-jehovahs-witnesses/" class="menu-link">False Doctrines of Jehovah’s Witnesses</a></li>
+	<li id="menu-item-2080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2080"><a href="https://jesusisgodandlordministries.com/false-doctrines-of-seventh-day-adventism/" class="menu-link">False Doctrines of Seventh-day Adventism</a></li>
+</ul>
+</li>
+<li id="menu-item-2185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2185"><a href="https://jesusisgodandlordministries.com/false-religions/" class="menu-link">FALSE RELIGIONS</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-2218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2218"><a href="https://jesusisgodandlordministries.com/false-religion-of-buddhism/" class="menu-link">False Religion of Buddhism</a></li>
+	<li id="menu-item-2206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2206"><a href="https://jesusisgodandlordministries.com/false-religion-of-hinduism/" class="menu-link">False Religion of Hinduism</a></li>
+	<li id="menu-item-2186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2186"><a href="https://jesusisgodandlordministries.com/false-religion-of-islam/" class="menu-link">False Religion of Islam</a></li>
+	<li id="menu-item-2242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242"><a href="https://jesusisgodandlordministries.com/false-religion-of-judaism/" class="menu-link">False Religion of Judaism</a></li>
+	<li id="menu-item-2329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2329"><a href="https://jesusisgodandlordministries.com/freemasonry-is-satanism-in-disguise/" class="menu-link">Freemasonry is Satanism in Disguise</a></li>
+</ul>
+</li>
+<li id="menu-item-870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-870"><a href="https://jesusisgodandlordministries.com/recommended-books-for-reading/" class="menu-link">RECOMMENDED BOOKS FOR READING</a></li>
+<li id="menu-item-878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-878"><a href="https://jesusisgodandlordministries.com/links/" class="menu-link">LINKS</a></li>
+<li id="menu-item-875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-875"><a href="https://jesusisgodandlordministries.com/checkout/" class="menu-link">CHECKOUT</a></li>
+<li id="menu-item-2811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2811"><a href="https://jesusisgodandlordministries.com/new-items-are-available-in-the-store-for-purchase/" class="menu-link">New items are available in the store for purchase.</a></li>
+</ul></div></nav></div></div>			<div class="ast-masthead-custom-menu-items woocommerce-custom-menu-item">
+							<div class="ast-site-header-cart ast-menu-cart-with-border ">
+				<div class="ast-site-header-cart-li ">
+								<a href="https://jesusisgodandlordministries.com/cart/" class="cart-container ast-cart-desktop-position- ast-cart-mobile-position- ast-cart-tablet-position-" aria-label="View Shopping Cart, empty">
+
+													<div class="ast-cart-menu-wrap">
+								<span class="count">
+								<span class="ast-count-text">
+									0								</span>
+								</span>
+							</div>
+										</a>
+							</div>
+				<div class="ast-site-header-cart-data">
+
+					<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div>
+				</div>
+			</div>
+						</div>
+						</div><!-- Main Header Container -->
+		</div><!-- ast-row -->
+			</div> <!-- Main Header Bar -->
+</div> <!-- Main Header Bar Wrap -->
+		</header><!-- #masthead -->
+			<div id="content" class="site-content">
+		<div class="ast-container">
+		
+
+	<div id="primary" class="content-area primary">
+
+		
+					<main id="main" class="site-main">
+				<article
+class="post-26 page type-page status-publish ast-article-single" id="post-26" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+	
+	
+	<header class="entry-header ast-header-without-markup">
+		<h1 class="entry-title" itemprop="headline">Why we must be born again</h1>	</header> <!-- .entry-header -->
+
+
+<div class="entry-content clear"
+	itemprop="text">
+
+	
+			<div data-elementor-type="wp-page" data-elementor-id="26" class="elementor elementor-26">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-7dc24aea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7dc24aea" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7c00b96a" data-id="7c00b96a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7194746 elementor-widget elementor-widget-text-editor" data-id="7194746" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">     When God (Jesus) created man (Adam was the first man) from the dust of the earth and breathed life into him on day 6 of creation (a little less than 6,000 years ago), man was perfect and not in need of salvation. God provided Adam with a wife (Eve) made from one of his ribs. They walked with God and talked with him. This was how it was meant to be until sin entered into the world. They lived in the garden of Eden and were told they could eat of every tree in the garden except for the tree of knowledge of good and evil or they would surely die. (Genesis 2:17 But of the tree of the knowledge of good and evil, thou shalt not eat of it: for in the day that thou eatest thereof thou shalt surely die.) Satan tempted Eve (as a serpent) to eat of the tree of knowledge of good and evil by convincing her she would not die and that God did not want her to eat of the tree so as they would not be as gods. (Genesis 3:5 For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil.) Eve saw the tree was pleasing to the eye and thus ate of it. Today people are still trying to be gods. We see this today especially in cults such as the Mormons and David Koresh and his followers, et cetera. Eve then gave the fruit to her husband Adam. Adam knew better as God had told him about the tree and he then told Eve. Adam was not deceived, Eve was. (I Timothy 2:14 And Adam was not deceived, but the woman being deceived was in the transgression.) When Adam ate of the fruit, sin entered into the world. Unlike what old earth Christians teach, there was no death before Adam including dinosaurs. Death came about because of Adam&#8217;s sin. (I Corinthians 15:22 For as in Adam all die, even so in Christ shall all be made alive.) Just as God had said they would die the day they ate of the tree, they did. From that moment they were spiritually separated (dead) from God. They immediately knew they were naked and were ashamed and tried to cover themselves and hide from God when he called out to them. The link to talk directly to God and walk with him was broken thus man had to be born again to restore that link with God. (I Corinthians 15:45 And so it is written, The first man Adam was made a living soul; the last Adam <em>was made</em> a quickening spirit.) The last Adam is Jesus who gives us eternal life and restores the link with God the Father. Adam also died that day in the sense that in God&#8217;s eyes a day is as a thousand years and a thousand years as a day. (Psalm 90:4 For a thousand years in thy sight <em>are but</em> as yesterday when it is past, and <em>as</em> a watch in the night.) (II Peter 3:8 But, beloved, be not ignorant of this one thing, that one day <em>is</em> with the Lord as a thousand years, and a thousand years as one day.) Adam only lived to be 930 years old and Methuselah, the oldest person to ever live died at 969 years old thus man always died in one day in God&#8217;s eyes. From the moment of man&#8217;s sin, all people born after Adam and Eve are born with a sin nature (you do not have to teach a baby to lie or steal) and thus need a Saviour in Jesus Christ to wash away their sins. God is omniscient (all knowing) and thus knew man would sin before he ever created the world. God in his mercy had a plan to restore the relationship with man lost due to sin before the foundation of the earth and before time began. God created time. Time is for man, not God. (I Peter 1:18-21 18 Forasmuch as ye know that ye were not redeemed with corruptible things, <em>as</em> silver and gold, from your vain conversation <em>received</em> by tradition from your fathers;<a><br /></a>19 But with the precious blood of Christ, as of a lamb without blemish and without spot:<a><br /></a>20 Who verily was foreordained before the foundation of the world, but was manifest in these last times for you,<a><br /></a>21 Who by him do believe in God, that raised him up from the dead, and gave him glory; that your faith and hope might be in God.) (II timothy 1:8-10 8 Be not thou therefore ashamed of the testimony of our Lord, nor of me his prisoner: but be thou partaker of the afflictions of the gospel according to the power of God;<a><br /></a>9 Who hath saved us, and called <em>us</em> with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in Christ Jesus before the world began,<a><br /></a>10 But is now made manifest by the appearing of our Saviour Jesus Christ, who hath abolished death, and hath brought life and immortality to light through the gospel:)</p>
+<!-- /wp:paragraph --><!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">Revelation 13:8 And all that dwell upon the earth shall worship him, whose names are not written in the book of life of the Lamb slain from the foundation of the world.<a><br /></a>9 If any man have an ear, let him hear. ( Jesus was slain for us before man was even created. God knew in his omniscience that man would sin and he would need a way to restore the relationship with God and man. God loves us so much that he had already made a plan to sacrifice his Son Jesus for us before the foundation of the world.)</p>
+<!-- /wp:paragraph --><!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">     Man must call upon Jesus to save them (man cannot save himself) and restore the broken link from God due to sin in order to go to heaven and avoid the eternal stay in the lake of fire. See <a href="https://jesusisgodandlordministries.com/what-must-i-do-to-be-saved-have-eternal-life-and-go-to-heaven/">What must I do to be saved (be born again) have eternal life and go to heaven? </a>Genesis 3:15 And I will put enmity between thee and the woman, and between thy seed and her seed; it shall bruise thy head, and thou shalt bruise his heel. (shows us God&#8217;s plan through his son Jesus to defeat Satan which he did with his death on the cross and when he rose victoriously on the third day and then proclaimed his victory and Satan&#8217;s defeat when Jesus preached to the spirits locked in hell. (These are the evil angels that sinned by procreating with women and producing giants. See Genesis 6:1-4 (And it came to pass, when men began to multiply on the face of the earth, and daughters were born unto them,<a><br /></a>2 That the sons of God saw the daughters of men that they <em>were</em> fair; and they took them wives of all which they chose.<a><br /></a>3 And the LORD said, My spirit shall not always strive with man, for that he also <em>is</em> flesh: yet his days shall be an hundred and twenty years.<a><br /></a>4 There were giants in the earth in those days; and also after that, when the sons of God came in unto the daughters of men, and they bare <em>children</em> to them, the same <em>became</em> mighty men which <em>were</em> of old, men of renown.), I Peter 3:19-20 (By which also he went and preached unto the spirits in prison;<a><br /></a>20 Which sometime were disobedient, when once the longsuffering of God waited in the days of Noah, while the ark was a preparing, wherein few, that is, eight souls were saved by water.), II Peter 2:4 (For if God spared not the angels that sinned, but cast <em>them</em> down to hell, and delivered <em>them</em> into chains of darkness, to be reserved unto judgment;), Jude 6 (And the angels which kept not their first estate, but left their own habitation, he hath reserved in everlasting chains under darkness unto the judgment of the great day.), and other verses on this subject.))</p>
+<!-- /wp:paragraph --><!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">     God made all mankind (male and female) with a spirit, soul, and body. When Adam sinned, the link to communicate directly with God was broken. This was done with our spirit. We worship God with our spirit. (Philippians 3:3 For we are the circumcision, which worship God in the spirit, and rejoice in Christ Jesus, and have no confidence in the flesh.) (John 4:24 God <em>is</em> a Spirit: and they that worship him must worship <em>him</em> in spirit and in truth.) When a person is born again, their spirit is reactivated and the link is reconnected with God. (I Thessalonians 5:23 And the very God of peace sanctify you wholly; and <em>I pray God</em> your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ.) The word of God can reconnect that link if acted upon. (Hebrews 4:12 For the word of God <em>is</em> quick, and powerful, and sharper than any twoedged sword, piercing even to the dividing asunder of soul and spirit, and of the joints and marrow, and <em>is</em> a discerner of the thoughts and intents of the heart.) The body is dead without the spirit. Ye must be born again. (James 2:26 For as the body without the spirit is dead, so faith without works is dead also.) (I Corinthians 15:45 And so it is written, The first man Adam was made a living soul; the last Adam <em>was made</em> a quickening spirit.) Jesus is the last Adam who will quicken (make alive) our spirit when we receive him as our Saviour.</p>
+<!-- /wp:paragraph --><!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">     All of creation groaneth and waits for the new heavens and new earth under Jesus. Creation groans because of Adam&#8217;s sin. Let us help creation out by one getting saved and having fewer sin in the universe for creation to groan about.(Romans 8:22 For we know that the whole creation groaneth and travaileth in pain together until now.) The verses on the new heavens and new earth are found in (Isaiah 65:17 ¶ For, behold, I create new heavens and a new earth: and the former shall not be remembered, nor come into mind.), (Isaiah 66:22 For as the new heavens and the new earth, which I will make, shall remain before me, saith the LORD, so shall your seed and your name remain.), and (II Peter 3:13 Nevertheless we, according to his promise, look for new heavens and a new earth, wherein dwelleth righteousness.). Revelation chapter 21 also describes the new heaven and new earth.)</p>
+<!-- /wp:paragraph -->						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+	
+	
+</div><!-- .entry-content .clear -->
+
+	
+	
+</article><!-- #post-## -->
+
+			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+	<div class="widget-area secondary" id="secondary" itemtype="https://schema.org/WPSideBar" itemscope="itemscope">
+	<div class="sidebar-main" >
+		
+		<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://jesusisgodandlordministries.com/">
+	<label for="search-field">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="search-field" class="search-field"   placeholder="Search..." value="" name="s" tabindex="-1">
+			</label>
+			<input type="submit" class="search-submit" value="Search">
+	</form>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><nav aria-label="Recent Comments"><ul id="recentcomments"></ul></nav></aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+			<ul>
+							</ul>
+
+			</nav></aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2><nav aria-label="Categories">
+			<ul>
+				<li class="cat-item-none">No categories</li>			</ul>
+
+			</nav></aside><aside id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2><nav aria-label="Meta">
+		<ul>
+						<li><a href="https://jesusisgodandlordministries.com/wp-login.php">Log in</a></li>
+			<li><a href="https://jesusisgodandlordministries.com/feed/">Entries feed</a></li>
+			<li><a href="https://jesusisgodandlordministries.com/comments/feed/">Comments feed</a></li>
+
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</nav></aside>
+	</div><!-- .sidebar-main -->
+</div><!-- #secondary -->
+
+
+	</div> <!-- ast-container -->
+	</div><!-- #content -->
+		<div class="hfe-before-footer-wrap">
+			<div class='footer-width-fixer'>		<div data-elementor-type="wp-post" data-elementor-id="559" class="elementor elementor-559">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-d8615ff elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d8615ff" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5e0a423" data-id="5e0a423" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cb8a3a9 elementor-widget elementor-widget-icon-box" data-id="cb8a3a9" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+			
+						<div class="elementor-icon-box-content">
+
+				
+									<p class="elementor-icon-box-description">
+						Created my free logo at LogoMakr.com					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f4a848c" data-id="f4a848c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8944076 elementor-widget elementor-widget-image" data-id="8944076" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img width="400" height="163" src="https://jesusisgodandlordministries.com/wp-content/uploads/2019/01/LogoMakr_1JIg8D.png" class="attachment-full size-full wp-image-1244" alt="" srcset="https://jesusisgodandlordministries.com/wp-content/uploads/2019/01/LogoMakr_1JIg8D.png 400w, https://jesusisgodandlordministries.com/wp-content/uploads/2019/01/LogoMakr_1JIg8D-300x122.png 300w, https://jesusisgodandlordministries.com/wp-content/uploads/2019/01/LogoMakr_1JIg8D-60x24.png 60w" sizes="(max-width: 400px) 100vw, 400px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-e86cff2 elementor-widget elementor-widget-heading" data-id="e86cff2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Jesus is God and Lord Ministries</h2>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e652897" data-id="e652897" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>		</div>
+	
+		<footer
+		class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope" itemid="#colophon"		>
+
+			
+			
+<div class="ast-small-footer footer-sml-layout-2">
+	<div class="ast-footer-overlay">
+		<div class="ast-container">
+			<div class="ast-small-footer-wrap" >
+					<div class="ast-row ast-flex">
+
+											<div class="ast-small-footer-section ast-small-footer-section-1 ast-small-footer-section-equally ast-col-md-6" >
+							Copyright © 2024 <span class="ast-footer-site-title">Jesus is God and Lord Ministries</span> | <a href="#">Credits</a>						</div>
+				
+											<div class="ast-small-footer-section ast-small-footer-section-2 ast-small-footer-section-equally ast-col-md-6" >
+							Powered by <a href="#"><span class="ast-footer-site-title">Jesus is God and Lord Ministries</span></a>						</div>
+				
+					</div> <!-- .ast-row.ast-flex -->
+			</div><!-- .ast-small-footer-wrap -->
+		</div><!-- .ast-container -->
+	</div><!-- .ast-footer-overlay -->
+</div><!-- .ast-small-footer-->
+
+			
+		</footer><!-- #colophon -->
+			</div><!-- #page -->
+<!-- YouTube Feeds JS -->
+<script type="text/javascript">
+
+</script>
+	<script>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-8.8.2' media='all' />
+<link rel='stylesheet' id='hfe-widgets-style-css' href='https://jesusisgodandlordministries.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.28' media='all' />
+<script id="astra-theme-js-js-extra">
+var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"","is_scroll_to_top":"","is_header_footer_builder_active":""};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/themes/astra/assets/js/minified/style.min.js?ver=4.6.12" id="astra-theme-js-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.8.2" id="sourcebuster-js-js"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"ajaxurl":"https:\/\/jesusisgodandlordministries.com\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.8.2" id="wc-order-attribution-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script id="starter-templates-zip-preview-js-extra">
+var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-color-","AstEleColorPaletteVarPrefix":["ast-global-color-0","ast-global-color-1","ast-global-color-2","ast-global-color-3","ast-global-color-4","ast-global-color-5","ast-global-color-6","ast-global-color-7","ast-global-color-8"]};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_80f1d27c9a0865d6116966069750937a","fragment_name":"wc_fragments_80f1d27c9a0865d6116966069750937a","request_timeout":"5000"};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=8.8.2" id="wc-cart-fragments-js" defer data-wp-strategy="defer"></script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.2" id="elementor-webpack-runtime-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.2" id="elementor-frontend-modules-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.2","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"container_grid":true,"home_screen":true,"ai-layout":true,"landing-pages":true},"urls":{"assets":"https:\/\/jesusisgodandlordministries.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":26,"title":"Why%20we%20must%20be%20born%20again%20%E2%80%93%20Jesus%20is%20God%20and%20Lord%20Ministries","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.2" id="elementor-frontend-js"></script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-includes/js/wp-util.min.js?ver=6.5.2" id="wp-util-js"></script>
+<script id="wpforms-elementor-js-extra">
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src="https://jesusisgodandlordministries.com/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.8.8.2" id="wpforms-elementor-js"></script>
+			<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+				</body>
+</html>

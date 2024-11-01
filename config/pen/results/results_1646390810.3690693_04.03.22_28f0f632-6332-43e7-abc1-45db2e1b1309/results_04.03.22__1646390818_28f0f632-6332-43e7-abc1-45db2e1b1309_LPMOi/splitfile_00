@@ -1,0 +1,9 @@
+
+I am the Master of the Treasure.
+I am the Master of the Treasure.
+I am the Master of the Treasure.
+EOD
+
+# pdf files
+
+pdftk draft.pdf cat 1-3 output draft

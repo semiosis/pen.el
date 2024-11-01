@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "sqlite3" "/root/.pen/refs.db" "select \`To Verse\` from refstable where \`From Verse\` = \"Phil.4.8\" and \`Votes\` > 0 order by cast(\`Votes\` as unsigned) desc" "#" "<==" "bible-get-cross"

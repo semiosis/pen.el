@@ -1,0 +1,1 @@
+- Simon Peyton Jones: execState executes a state monad, but does not return its final state.

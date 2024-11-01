@@ -1,0 +1,7 @@
+ abort
+    wincmd q
+endfun
+noremap q :call QuitNvim('','')<CR>
+
+"  vim-airline配置
+let g:airline_powerline_

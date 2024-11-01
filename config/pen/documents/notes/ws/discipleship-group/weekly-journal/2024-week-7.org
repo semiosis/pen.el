@@ -1,0 +1,70 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 7
+
+* D-Group weekly session notes
+Started working on it: <2024-02-16 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s&ab_channel=CHRISTIANPiano][Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene 🍁CHRISTIAN piano]]
+
+| Scripture Memory | NT260 Passage | Foundations260 Readings |
+|-
+| [[sh:bible-read-passage nasb Matthew 5:13-14 ][Matthew 5:13-14]] | [[sh:bible-study-passage nasb Acts 7-11 ][Acts 7-11]] | [[sh:bible-study-passage nasb Exodus 8-17 ][Exodus 8-17]] |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- The 10 plagues
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:13-14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:13
+‾‾‾‾‾‾‾‾‾‾‾‾
+“You are the salt of the earth; but if the salt
+has become tasteless, how can it be made salty
+again? It is no longer good for anything, except
+to be thrown out and trampled under foot by men.
+
+Matthew 5:14
+‾‾‾‾‾‾‾‾‾‾‾‾
+“You are the light of the world. A city set on
+a hill cannot be hidden;
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+*** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Acts 7-11 ][Acts 7-11]]
+**** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Acts 7-11
+#+END_SRC
+
+**** E (explain)
+
+**** A (apply)
+
+**** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,

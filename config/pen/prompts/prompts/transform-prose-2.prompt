@@ -1,0 +1,76 @@
+task: "Transform prose"
+tags: prose writing
+doc: "Transform some prose given a transformation description"
+prompt-version: 7
+engine: OpenAI Davinci
+issues:
+- |+
+  This is ok and I'm not sure if there is a
+  known better way, but the LM could be better.
+not-working:
+- prompt: |+
+    I rephrased the passage <q:document> <transformation>, but without losing any meaning:
+    "
+working:
+- prompt: |+
+    Here is a passage:
+    <delim>
+    <q:document>.
+    <delim>
+    Here is the same passage but <transformation>:
+    <delim>
+    "
+prompt: |+
+    Here is a passage:
+    <delim>
+    <document>.
+    <delim>
+    Here is the same passage but <transformation>:
+    <delim>
+xlr-n-generate: 5
+temperature: 0.7
+# On each collated generation, rotate the temperature upwards by 0.1
+collation-temperature-stepper: "(pen-round-to-dec (+ 0.7 (mod (+ <temperature> 0.1) 0.3)))"
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+best-of: 1
+cache: on
+stop-sequences:
+# - "\""
+- "<delim>"
+vars:
+- document
+- transformation
+preprocessors:
+# - pen-str join ' '
+# - <tidy-prose-input> | pen-qne
+- <tidy-prose-input>
+- <tidy-prose-input>
+var-defaults:
+- "(pen-selected-text)"
+# Consider stripping code by correcting with GPT-3
+postprocessor: pen-pretty-paragraph
+examples:
+- "I want to ride my bicycle"
+# - "with empathy"
+- "in the 3rd person"
+n-test-runs: 5
+# n-collate is the min collations (requests)
+# while attempting to reach the target, go up to this point
+n-max-collate: 4
+# Try to generate this many results
+n-target: 10
+# The validator should be able to access the number of tokens in the prompt
+# TODO Test this. I only want results that match a particular length
+validator: "(< gen-length (* 2 prompt-length))"
+n-collate: 1
+n-completions: 5
+new-document: yes
+# pipelines, expressions are non-essential
+pipelines:
+- tidy-prose-input: pen-str tidy-prose-input | sed "s/\\.\$//"
+# these expressions are evaluated and the results are accessible
+# via the templating system
+expressions:
+# - tidy-prose-input: (pen-snc <q:tidy-prose-input> in)
+# - twice-prompt-length: "(* 2 prompt-length)"

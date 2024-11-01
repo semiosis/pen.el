@@ -1,0 +1,15 @@
+"async/alt!"
+(fn [alt1 alt2]
+  (async/alt! alt1 alt2
+    (fn [result] (println result)))))
+
+; Send a message to the channel
+(async/put-chan! main-chan "Hello world!")
+
+; Read the message from the channel
+(async/go!
+  (fn [result]
+    (println result)))
+
+; Close the channel
+(async/

@@ -1,0 +1,9 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "square-root" "20")))
+--> 4.47213595499958
+
+
+
+;; Run function -loop
+(message (eval '(-loop "-u" "distance-to" "moon")))
+--> 

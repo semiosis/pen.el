@@ -1,0 +1,27 @@
+
+Use the command "pip install <package-name>".
+###
+Human: How do I install a package?
+###
+AI: Use the command "pip install <package-name>" to install a package.
+###
+Human: What is the best terminal shell?
+###
+AI: I would be happy to answer your question.
+My favorite shell is zsh.
+What kind of shell do you use?
+###
+Human: I use zsh. Which one is your favorite?
+###
+AI: I would be happy to answer your question.
+I like zsh.
+What kind of shell do you use?
+###
+Human: What is the best text editor?
+###
+AI: I would be happy to answer your question.
+My favorite editor is vscode.
+What kind of editor do you use?
+###
+Human: I use vscode. Which one is your favorite?
+###

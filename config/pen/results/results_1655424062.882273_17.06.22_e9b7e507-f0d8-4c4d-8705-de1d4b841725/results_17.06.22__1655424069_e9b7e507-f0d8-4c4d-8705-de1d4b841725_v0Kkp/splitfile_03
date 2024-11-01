@@ -1,0 +1,9 @@
+
+I like Y. If Y is not present then all sorts of reasons are made for the relationship failing which are based on Y which are hard-to-define.
+"""
+
+def swap_x_and_y(text):
+    return re.sub(r'([a-zA-Z]+\s+){2}X\b',
+                  lambda m: m.group(0).replace('X', 'Y'),
+                  text)
+print(swap_x_and_

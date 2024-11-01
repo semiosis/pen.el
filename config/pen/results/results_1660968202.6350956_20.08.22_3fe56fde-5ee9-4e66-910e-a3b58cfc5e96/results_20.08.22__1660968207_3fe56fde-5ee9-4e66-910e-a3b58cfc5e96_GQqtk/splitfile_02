@@ -1,0 +1,12 @@
+
+
+::1	localhost
+fe80::1	localhost
+
+127.0.0.1	localhost
+
+::1	mele
+
+fe80::1	mele
+
+127.0.0.1

@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Psalms" "34:4" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "51:12" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "51:10-11" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "51:10-11" "#" "<==" "zsh"
+cd /root/notes;  "Psalms" "51:10-12" "#" "<==" "zsh"

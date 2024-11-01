@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: break
+# group: for
+# key: br
+# --
+;; seq is my own
+(dolist (n (seq 1 10))
+  (message (str n)))
+
+(catch 'bbb
+  (mapc
+   (lambda (x)
+     (message "%s" x)
+     (when (equal x 3) (throw 'bbb x)))
+   myList)
+  nil)

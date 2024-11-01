@@ -1,0 +1,1 @@
+ aws lambda get-function --function-name <function-name>

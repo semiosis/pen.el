@@ -1,0 +1,3 @@
+;; Run function middle-book-of
+(message (eval '(middle-book-of "bible")))
+--> 

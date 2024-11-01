@@ -1,0 +1,25 @@
+title: classification of item
+prompt-version: 3
+description: Classify items into categories via example
+tags: nlp-task comprehension
+prompt: |
+  The following is a list of companies and the categories they fall into
+
+  Jupiter: planet, gas giant
+  Facebook: Social media, Technology
+  LinkedIn: Social media, Technology, Enterprise, Careers
+  Uber: Transportation, Technology, Marketplace
+  cat: domesticated animal, mammal
+  Unilever: Conglomerate, Consumer Goods
+  Mcdonalds: Food, Fast Food, Logistics, Restaurants
+  <item to classify>:
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 6
+top-p: 1
+stop-sequences:
+- "\n"
+vars:
+- item to classify
+examples:
+- whale

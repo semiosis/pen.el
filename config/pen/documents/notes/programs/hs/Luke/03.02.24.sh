@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs;  "Luke" "7" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Luke" "7:8-9" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs;  "Luke" "7:47-50" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Luke" "14:25-27" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Luke" "14:25-34" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Luke" "14:25-34" "#" "<==" "zsh"

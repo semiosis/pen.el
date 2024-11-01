@@ -1,0 +1,27 @@
+ (\c -> read c) columns
+
+  -- Print the sum of all the numbers.
+  putStrLn $ sum numbers
+EOD
+
+# haskell files
+
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.IO as TIO
+import Data.Text.Encoding (decodeUtf8)
+import Data.List (foldl')
+
+  main = do
+
+    -- Read the CSV from stdin and decode it into a list of lines.
+    -- We use the Lazy version of ByteString to avoid reading the whole file into memory.
+    lines <- L.readFile "-"
+
+    -- Parse the CSV into a list of records, one for each line in

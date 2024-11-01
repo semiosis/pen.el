@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Eph" "1:7" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Eph" "1:7-8" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Eph" "1:7-9" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Eph" "1:7" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Eph" "1:7-9" "#" "<==" "zsh"

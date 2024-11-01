@@ -1,0 +1,24 @@
+# key: face
+# name: face
+# --
+;; both the var and the face need to be defined
+(defvar my-lang-phi-word		'my-lang-phi-word
+"Face name to use for things that should stand out.")
+
+;; examples of defining faces
+;; face name should not end in “-face”
+(defface my-lang-phi-word
+'((t :foreground "black"
+:background "aquamarine"
+:weight bold
+:underline t
+))
+"Face for function parameters."
+:group 'my-lang-mode )
+
+(defface my-lang-gamma-word
+'((t :foreground "red"
+:background "#f5f5f5"
+))
+"Face for global variables."
+:group 'my-lang-mode )

@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "acpi" "-b" "#" "<==" "zsh"

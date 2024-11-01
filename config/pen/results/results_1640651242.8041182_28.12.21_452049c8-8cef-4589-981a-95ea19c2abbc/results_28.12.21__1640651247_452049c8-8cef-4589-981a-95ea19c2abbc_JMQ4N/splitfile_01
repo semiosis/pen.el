@@ -1,0 +1,8 @@
+
+  stopinsert
+  execute "!q"
+endfun
+map \C-c \C-c \C-c :call QuitNvim()<CR>
+set backupcopy=yes
+set mouse=a
+"

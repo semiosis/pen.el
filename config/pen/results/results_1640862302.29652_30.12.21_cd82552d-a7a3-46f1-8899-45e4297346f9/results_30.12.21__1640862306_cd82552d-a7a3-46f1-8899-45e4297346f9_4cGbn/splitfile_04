@@ -1,0 +1,6 @@
+
+Keyboard shortcuts are available for almost everything in emacs.
+You may press "C-x" followed by "C-c" to quit the current emacs buffer.
+
+Follow this with the "ESC" key, the "x" key, and the "c" key, in that order.
+

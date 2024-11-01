@@ -1,0 +1,14 @@
+- 1. Josephus (c. 37 – c. 100)
+- 2. Martin Luther (1483-1546)
+- 3. Immanuel Kant (1724-1804)
+- 4. Immanuel Kant (1724-1804)
+- 5. Immanuel Kant (1724-1804)/Nietzsche (1844-1900)
+"""
+
+    term_index = {1: [1],
+                  2: [2, 3, 4, 5],
+                  3: [5],
+                  "something": [3, 4]}
+
+    def print_document(self, document):
+        print("

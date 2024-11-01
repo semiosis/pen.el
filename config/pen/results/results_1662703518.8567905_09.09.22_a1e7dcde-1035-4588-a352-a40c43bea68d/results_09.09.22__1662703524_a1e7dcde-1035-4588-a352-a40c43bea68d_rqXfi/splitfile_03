@@ -1,0 +1,4 @@
+import Control.Exception
+
+safeDiv 0 1
+safeDiv 1 0

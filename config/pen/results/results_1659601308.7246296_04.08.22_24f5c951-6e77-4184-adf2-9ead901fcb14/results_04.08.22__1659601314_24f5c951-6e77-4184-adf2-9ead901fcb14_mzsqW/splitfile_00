@@ -1,0 +1,6 @@
+""
+with open('business_ideas.txt', 'w') as file:
+    file.write(business_ideas)
+with open('business_ideas.txt', 'r') as file:
+    print(file.read())
+business_ideas =

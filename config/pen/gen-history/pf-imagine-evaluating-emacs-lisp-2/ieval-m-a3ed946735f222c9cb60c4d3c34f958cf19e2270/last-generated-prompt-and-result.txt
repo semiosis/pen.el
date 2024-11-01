@@ -1,0 +1,3 @@
+;; Run function book-of
+(message (eval '(book-of "bible")))
+--> "bible"

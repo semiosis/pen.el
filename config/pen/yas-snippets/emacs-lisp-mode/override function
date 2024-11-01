@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: override function
+# group: advice
+# key: letf
+# --
+(cl-letf (((symbol-function 'message) #'ignore))
+    (ignore-errors (aggressive-indent-indent-defun l r)))

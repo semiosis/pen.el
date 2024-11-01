@@ -1,0 +1,1 @@
+cd /;  "minesweeper" "#" "<==" "sh-games"

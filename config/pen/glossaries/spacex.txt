@@ -1,0 +1,13 @@
+fairing
+payload fairing
+    A nose cone used to protect a spacecraft
+    payload against the impact of dynamic
+    pressure and aerodynamic heating during
+    launch through an atmosphere.
+    
+    An additional function on some flights is
+    to maintain the cleanroom environment for
+    precision instruments.
+
+MECO
+Main Engine Cut Off

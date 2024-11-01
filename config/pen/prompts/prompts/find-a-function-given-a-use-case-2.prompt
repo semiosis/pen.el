@@ -1,0 +1,36 @@
+task: "Find a function given a use-case"
+tags: code
+doc: "Given a language and a use-case, find a function for that use-case"
+prompt-version: 1
+# Because we are using codex, we can take advantage of leaving
+# a space at the end of the prompt
+prompt: |+
+  Here is a list of the names of standard functions in <language> regarding "<use case>":
+  - 
+engine: "OpenAI Codex"
+temperature: 0.1
+max-generated-tokens: 50
+top-p: 1.0
+cache: on
+n-collate: 1
+n-completions: 3
+stop-sequences:
+- "A list of"
+- "\n\n"
+vars:
+- "language"
+- "use case"
+var-defaults:
+- "(pen-detect-language-ask)"
+examples:
+- "haskell"
+- "convert from int to double"
+# delete the last
+postprocessor: sed -e 's/^- //' -e '$d' | uniqnosort | sed -e 's/^`//' -e 's/`$//' | grep -oP "^[0-9a-z.A-Z_-]+"
+# The 'end' split patterns are used because
+# we want it to run 'after' the postprocessor
+end-split-patterns:
+- "\n"
+filter: no
+completion: on
+insertion: on

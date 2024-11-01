@@ -1,0 +1,41 @@
+https://developers.google.com/machine-learning/glossary/#l
+
+$HOME/notes/ws/machine-learning/concepts/glossary.org
+
+convnet
+convolving
+
+Gradient boosting
+    A machine learning technique for
+    regression and classification problems,
+    which produces a prediction model in the
+    form of an ensemble of weak prediction
+    models, typically decision trees.
+
+CNN
+convnet
+
+convolving
+    this is generally just creating feature maps
+
+convnets
+    start with input
+    then they convolve
+    then you do some pooling (usually max pooling)
+    then you might do more sets of (convolve => pooling)
+    then generally you will do one fully connected layer
+    then finally you output
+
+    summary:
+        input => (convolve => pooling)+ [ => full ]
+
+    legend:
+        (convolve => pooling) is a hidden layer
+        fully connected is also a hidden layer
+
+https://medium.com/google-cloud/a-tensorflow-glossary-cheat-sheet-382583b22932
+
+Core Categorical Feature Concepts
+Usually handling real-valued input functions in TF is significantly simpler than categorical features. We also usually treat free-form input like text as a categorical feature (for example, English input is categorical, with the possible values being the English language).
+
+One temptation is just to map words to numerical values, perhaps with a hash function or just ordering from 0 to N, where N is the number of features. There is a problem though. Given 3 categories, red, green, and blue, if we map red to 0, green to 1, and blue to 2, we are making green and blue “closer” in value to the network than red and blue, even if we didn’t mean to. There are a variety of tools to deal with that.

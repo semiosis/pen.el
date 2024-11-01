@@ -1,0 +1,2 @@
+declare -F: declare: not found
+root

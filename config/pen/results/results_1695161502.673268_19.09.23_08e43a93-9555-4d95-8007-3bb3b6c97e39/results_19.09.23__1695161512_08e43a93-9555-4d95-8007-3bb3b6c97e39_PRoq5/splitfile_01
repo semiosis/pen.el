@@ -1,0 +1,34 @@
+$ ls -a
+.
+..
+clipboard.txt
+core
+databases
+debugLog.txt
+directories.org
+errs.txt
+files.txt
+.git
+jot-vaults
+node_modules
+package.json
+package-lock.json
+picaso.ans
+programs
+puz-emacs.data
+README.org
+remember.org
+remember.txt
+
+$ ls -d */ # list directories here
+databases/
+jot-vaults/
+node_modules/
+programs/
+ws/
+
+$ ls **/*
+
+node_modules/ansi-regex:
+index.d.ts
+index

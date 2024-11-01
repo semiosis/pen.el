@@ -1,0 +1,17 @@
+"shift" is a bash builtin that shifts positional parameters.
+
+It is useful for removing options from the command line.
+
+"shift" is often used in scripts to remove options from the command line and pass the remaining arguments to another command.
+
+#!/bin/bash
+
+# shift all the parameters to the left
+while [ "$1" != "" ]; do
+    echo -n "$1 "
+    shift
+done
+echo
+
+# output:
+# file1 file

@@ -1,0 +1,17 @@
+Original language: English
+English translation:
+Perhaps I should change the hostname for the docker container. Good idea
+"""
+
+#------------------------------------------------------------------------------
+# CHANGELOG:
+# 2014-03-14  v0.01  initial version
+# 2014-03-15  v0.02  added lang2latin
+# 2014-03-16  v0.03  added lang2latin to __all__
+# 2014-03-17  v0.04  added __doc__ to all functions
+#                   fixed lang2latin, added latin2lang
+# 2014-03-21  v0.05  added get_lang
+# 2014-03-22  v0.06  added get_lang_dict
+# 2014-03-24  v0.07  added get_lang_info
+# 2014-03-28  v0.08  added get_lang_name
+#

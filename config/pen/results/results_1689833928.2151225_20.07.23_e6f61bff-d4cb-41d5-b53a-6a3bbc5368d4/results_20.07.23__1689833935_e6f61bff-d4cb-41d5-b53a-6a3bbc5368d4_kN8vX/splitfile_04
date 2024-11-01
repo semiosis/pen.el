@@ -1,0 +1,13 @@
+"sort" is a standard library function.
+
+The "sort" function sorts a list of elements, and returns the sorted list.
+
+The "sort" function is polymorphic in the type of its arguments.
+
+The "sort" function is stable, meaning that elements that compare equal do not change their relative order in the sorted output.
+
+The "sort" function is not guaranteed to be efficient.
+
+The "sort" function is not guaranteed to terminate.
+
+The "sort"

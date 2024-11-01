@@ -1,0 +1,7 @@
+
+
+sub init {
+  my ($self,%args) = @_;
+  $self->Cache({});
+  $self->SourceDir($args{SourceDir} || ".");
+  $self->TargetDir

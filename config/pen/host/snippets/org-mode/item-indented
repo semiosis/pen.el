@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: item-indented
+# group: mine
+# key: li
+# --
+  - [-] ${0:new item}

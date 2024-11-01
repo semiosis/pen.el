@@ -1,0 +1,5 @@
+cd /root/repos/gohugoio;  "ghb" "size"
+cd /root/repos/dzello;  "ghb" "size"
+cd /root/repos/dzello;  "ghb" "size"
+cd /root/repos/gohugoio;  "ghb" "size"
+cd /root/repos/kdheepak;  "ghb" "size"

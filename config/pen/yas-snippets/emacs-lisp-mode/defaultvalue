@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: defaultvalue
+# key: dv
+# --
+(setq ${1:arg} (or $1 ${2:1}))

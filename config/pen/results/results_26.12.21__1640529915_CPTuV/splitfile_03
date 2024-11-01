@@ -1,0 +1,20 @@
+- 1. Kant (1724-1804)
+- 2. Hegel (1770-1831)
+- 3. Schopenhauer (1788-1860)
+- 4. Kierkegaard (1813-1855)
+- 5. Heidegger(1889-1976)
+"""
+
+        self.assertEqual(result, expected)
+
+    def test_topics(self):
+        topics = self.result.topics()
+        n = len(topics)
+        expected = 3
+        self.assertEqual(n, expected)
+
+        for topic in topics:
+            name = topic['name']
+            docs = topic['docs']
+
+            if name

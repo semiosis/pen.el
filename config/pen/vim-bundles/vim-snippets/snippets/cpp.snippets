@@ -1,0 +1,1101 @@
+extends c
+extends cpptest
+extends cpp-doxygen
+
+# I should put defaults for all the arguments
+
+snippet s
+	std::${0}
+snippet b
+	boost::${0}
+snippet cf "class function"
+	void `system('basename "'.expand('%:p').'" | sed "s/\..*//"')`::${1:FuncName}(${2:args}) {
+	}
+	void $1($2);
+snippet sst
+	std::size_t${1}
+snippet t
+	this->
+snippet #
+	#include "${0}"
+snippet #"
+	#include "${0}"
+snippet i
+	#include "${0}"
+snippet iq
+	#include "${0}"
+snippet #<
+	#include <${0:cstring}>
+snippet i<
+	#include <${0:cstring}>
+snippet ia
+	#include <${0:cstring}>
+snippet ics
+	#include <${0:cstring}>
+snippet array
+	std::array<${1:T}, ${2:N}> ${3};
+snippet cb
+	boost::circular_buffer<${1:T}> ${2};
+snippet v
+	std::vector<${1:T}> ${2};
+snippet ve
+	std::vector<${1:T}> ${2};
+snippet sv
+	std::vector<${1:T}> ${2};
+snippet vector
+	std::vector<${1:T}> ${2};
+snippet dq
+	std::deque<${1:T}> ${2};
+snippet deque
+	std::deque<${1:T}> ${2};
+snippet flist
+	std::forward_list<${1:T}> ${2};
+snippet list
+	std::list<${1:T}> ${2};
+snippet set
+	std::set<${1:T}> ${2};
+snippet map
+	std::map<${1:Key}, ${2:T}> ${3};
+snippet mset
+	std::multiset<${1:T}> ${2};
+snippet mmap
+	std::multimap<${1:Key}, ${2:T}> ${3};
+snippet uset
+	std::unordered_set<${1:T}> ${2};
+snippet umap
+	std::unordered_map<${1:Key}, ${2:T}> ${3};
+snippet umset
+	std::unordered_multiset<${1:T}> ${2};
+snippet ummap
+	std::unordered_multimap<${1:Key}, ${2:T}> ${3};
+snippet stack
+	std::stack<${1:T}> ${2};
+snippet queue
+	std::queue<${1:T}> ${2};
+snippet pqueue
+	std::priority_queue<${1:T}> ${2};
+snippet pri
+	private
+snippet pro
+	protected
+snippet pub
+	public
+snippet fr
+	friend
+snippet mu
+	mutable
+snippet cl
+	class ${1:`vim_snippets#Filename('$1', 'name')`}
+	{
+	public:
+		$1(${2});
+		~$1();
+
+	private:
+		${0:/* data */}
+	};
+# member function implementation
+snippet mfun
+	${4:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}(${3}) {
+		${0}
+	}
+# namespace
+snippet ns
+	namespace ${1:`vim_snippets#Filename('', 'my')`} {
+		${0}
+	} /* namespace $1 */
+##
+## Input/Output
+# std::cout
+snippet cout
+	std::cout << ${1} << std::endl;
+snippet co
+	std::cout << ${1} << std::endl;
+# std::cin
+snippet cin
+	std::cin >> ${1};
+##
+## Casts
+# static
+snippet sc
+	static_cast<>()
+snippet sca
+	static_cast<${1:unsigned}>(${2:expr})
+# dynamic
+snippet dc
+	dynamic_cast<${0:char *}>()
+snippet dca
+	dynamic_cast<${1:unsigned}>(${2:expr})
+# reinterpret
+snippet rc
+	reinterpret_cast<${0:char *}>()
+snippet rca
+	reinterpret_cast<${1:unsigned}>(${2:expr})
+# const
+snippet cc
+	const_cast<>()
+snippet cca
+	const_cast<${1:unsigned}>(${2:expr})
+## Iteration
+snippet in
+	i14
+snippet i11 " this is how to iterate in newer
+	// fl std::next
+	// ;pack;;std::next&
+	std::advance(dataItr, headerSize);
+	boost::circular_buffer<uint8_t>::iterator chunkEnd;
+	if(static_cast<int>(dataSize) <= std::distance(dataItr, dataEndItr))
+	{
+		chunkEnd = std::next(dataItr, static_cast<int>(dataSize));
+	}
+	else
+	{
+		std::stringstream ss;
+		ss << "Chunk too small to parse. Chunk Type: "<< std::distance(dataItr, dataEndItr) << " " << dataSize;
+		throw ParseException(ss.str());
+	}
+	
+# for i
+snippet fi
+	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+	}
+# for j
+snippet fj
+	for (int ${2:j} = 0; $2 < ${1:count}; $2${3:++}) {
+	}
+# for i
+snippet fori
+	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+	}
+# foreach
+snippet fa
+	for (const ${1:auto}& ${2:i} : ${3:container}) {
+	}
+# foreach
+snippet fore
+	for (${1:auto} ${2:i} : ${3:container}) {
+	}
+# iterator
+snippet forit
+	for (${1:std::vector}<${2:type}>::${3:const_iterator} ${4:i} = ${5:container}.begin(); $4 != $5.end(); ++$4) {
+	}
+# iterator
+snippet iter
+	for (${1:std::vector}<${2:type}>::${3:const_iterator} ${4:i} = ${5:container}.begin(); $4 != $5.end(); ++$4) {
+	}
+# auto iterator
+snippet itera
+	for (auto ${1:i} = ${2:container}.begin(); $1 != $2.end(); ++$1) {
+		${3:std::cout << *$1 << std::endl;}
+	}
+snippet tle
+	throw std::logic_error("string");
+snippet ts "temp string"
+	auto tmp = ${1:ReturnsString()};
+snippet co
+	std::cout << "${1:string}" << std::endl;
+snippet cos
+	std::cout << "${1:string}" << std::endl;
+snippet co2
+	std::cout ${1:<< "halp" }${2:<< tmp.size()} << std::endl;
+snippet s5
+	usleep(5000);
+snippet tr
+	#include <SimpleLogger.h>
+	LOG_TRACE(GetEblLogger(), __PRETTY_FUNCTION__ << "${1:text}");
+snippet trs
+	#include <SimpleLogger.h>
+	LOG_TRACE(GetEblLogger(), __PRETTY_FUNCTION__ << "${1:text}");
+snippet lt
+	#include <SimpleLogger.h>
+	LOG_TRACE(GetEblLogger(), __PRETTY_FUNCTION__ << "${1:text}");
+snippet boilerplate
+	#include <stdlib.h>
+
+	int main(int argc, char** argv)
+	{
+		return 0;
+	}
+snippet main
+	#include <stdlib.h>
+
+	int main(int argc, char** argv)
+	{
+		return 0;
+	}
+snippet hello
+	#include <stdio.h>
+	printf("hello world\n");
+snippet sys ">= c++11"
+	#include <cstdio>
+	#include <iostream>
+	#include <memory>
+	#include <stdexcept>
+	#include <string>
+
+	std::string exec(const char* cmd) {
+		char buffer[128];
+		std::string result = "";
+		std::shared_ptr<FILE> pipe(popen(cmd, "r"), pclose);
+		if (!pipe) throw std::runtime_error("popen() failed!");
+		while (!feof(pipe.get())) {
+			if (fgets(buffer, 128, pipe.get()) != NULL)
+				result += buffer;
+		}
+		return result;
+	}
+snippet exec ">= c++11"
+	exec
+snippet sys98 "< c++11"
+	exec98
+snippet exec98 "< c++11"
+	#include <iostream>
+	#include <stdexcept>
+	#include <stdio.h>
+	#include <string>
+	
+	std::string exec(const char* cmd) {
+		char buffer[128];
+		std::string result = "";
+		FILE* pipe = popen(cmd, "r");
+		if (!pipe) throw std::runtime_error("popen() failed!");
+		try {
+			while (!feof(pipe)) {
+				if (fgets(buffer, 128, pipe) != NULL)
+					result += buffer;
+			}
+		} catch (...) {
+			pclose(pipe);
+			throw;
+		}
+		pclose(pipe);
+		return result;
+	}
+snippet sb
+	template<typename T>
+	void show_binrep(const T& a)
+	{
+		printf_log("binrep: ");
+		const char* beg = reinterpret_cast<const char*>(&a);
+		const char* end = beg + sizeof(a);
+		while(beg != end)
+			std::cout << std::bitset<CHAR_BIT>(*beg++) << ' ';
+		std::cout << '\n';
+	}
+   
+	show_binrep(len);
+snippet getopt
+	;pack;;options_description
+snippet ce
+	exception_custom
+snippet exception_custom
+	// $SENSING3D/src/imageCapture/TofException.h
+	
+	/**@class TofException
+	 * @brief Exception raised relating to Tof Devices.
+	 */
+	class TofException: public CrownException
+	{
+	public:
+		/** Constructor.
+		 * @param format Contains information pertaining to the cause of the exception.
+		 */
+		explicit TofException(const std::string& message)
+			: CrownException(message)
+		{
+		}
+	};
+	
+	/**@class ParseException
+	 * @brief Exception raised during message data parsing.
+	 */
+	class ParseException: public TofException
+	{
+	public:
+		/** Constructor.
+		 * @param format Contains information pertaining to the cause of the exception.
+		 */
+		explicit ParseException(const std::string& message)
+			: TofException(message)
+		{
+		}
+	};
+	
+	$SENSING3D/src/imageCapture/IfmO3DDeserializer.cpp
+	throw ParseException("Data header too small to parse");
+snippet try
+	#include <pylon/PylonBase.h>
+	# trys in cpp have scope
+	try {
+		m_Camera.OpenFirstCamera();
+		// Remember to try to use the correct exception and include
+		// the right header
+	}
+	catch (Pylon::GenericException &e)
+	{
+		printf("Pylon::GenericException %s\n", e.GetDescription());
+		// This is necessary if I want to see it in the unit tests
+		throw;
+	}
+	catch (const std::exception &e)
+	{
+		std::cout << "UNCAUGHT EXCEPTION at "
+			<< __PRETTY_FUNCTION__
+			<< e.what()
+			<< std::endl;
+
+		std::terminate();
+	}
+	catch (...)
+	{
+		std::cout << "UNKNOWN UNCAUGHT EXCEPTION at "
+			<< __PRETTY_FUNCTION__
+			<< std::endl;
+
+		std::terminate();
+	}
+snippet trytest
+	#include <pylon/PylonBase.h>
+	# trys in cpp have scope
+	try {
+		m_Camera.OpenFirstCamera();
+	}
+	catch (Pylon::GenericException &e)
+	{
+		printf("Pylon::GenericException %s\n", e.GetDescription());
+
+		// This is necessary if I want to see it in the unit tests
+		throw;
+	}
+	catch (const std::exception &e)
+	{
+		std::cout << "UNCAUGHT EXCEPTION at "
+			<< __PRETTY_FUNCTION__
+			<< e.what()
+			<< std::endl;
+
+		throw;
+	}
+	catch (...)
+	{
+		std::cout << "UNKNOWN UNCAUGHT EXCEPTION at "
+			<< __PRETTY_FUNCTION__
+			<< std::endl;
+
+		throw;
+	}
+snippet writepod
+	// readpod
+	template<typename T>
+	void write_pod(std::ofstream& out, T& t)
+	{
+		out.write(reinterpret_cast<char*>(&t), sizeof(T));
+	}
+snippet readpod
+	// writepod
+	template<typename T>
+	void read_pod(std::ifstream& in, T& t)
+	{
+		in.read(reinterpret_cast<char*>(&t), sizeof(T));
+	}
+snippet writepodexample
+	${1:writepod}
+	#include <vector>
+	#include <fstream>
+	#include <algorithm>
+	
+	// for a vector
+	int main()
+	{
+		std::vector<s> myStructs;
+		std::ofstream out("test.dat");
+	
+		// Fill vector here
+		std::for_each(myStructs.begin(), myStructs.end(), std::bind1st(write_pod<s>, out));
+	}
+	
+	// for a regular array
+	
+	#include <fstream>
+	#include <algorithm>
+	
+	int main()
+	{
+		s myStructs[20];
+		std::ofstream out("test.dat");
+	
+		// Fill array here
+		std::for_each(myStructs, myStructs + 20, std::bind1st(write_pod<s>, out));
+	}
+snippet bind
+	bindexample
+snippet bindexample
+	#include <iostream>
+	#include <string>
+	#include <vector>
+	#include <algorithm>
+	#include <functional>
+
+	void print_i(int t, std::string separator)
+	{
+		std::cout << t << separator;
+	}
+
+	int main()
+	{
+		std::vector<int> elements;
+		std::string delim = "\n";
+		for_each(elements.begin(),
+				 elements.end(),
+				 std::bind2nd(std::ptr_fun(&print_i),delim));
+		return 0;
+	}
+
+	// Normally you can get the same effect by simply doing the following:
+
+	#include <iostream>
+	#include <vector>
+	#include <algorithm>
+	#include <iterator>
+
+	int main()
+	{
+		std::vector<int> elements;
+		std::copy(elements.begin(),
+				  elements.end(),
+				  std::ostream_iterator<int>(std::cout,"\n"));
+		return 0;
+	}
+
+	// Also assuming you have access to TR1 in the STL you're using, its always best to revise/replace any uses of bind1st and bind2nd with std::bind
+snippet ofs
+	#include <fstream>
+	std::ofstream out("test.dat");
+snippet rwnonpod
+	// http://forums.codeguru.com/showthread.php?269648-C-Structure-How-do-I-write-a-structure-to-a-file
+	struct str
+	{
+		long  size;
+		char* s;
+	};
+	
+	#include <fstream>
+	
+	void write_str( std::ofstream& out, str& s )
+	{
+		out.write(reinterpret_cast<char*>(&s.size), sizeof(long));
+		out.write(s.s, s.size * sizeof(char));
+	}
+	
+	void read_str(std::ifstream& in, str& s)
+	{
+		in.read(reinterpret_cast<char*>(&s.size), sizeof(long));
+		s.s = new char[s.size];
+		in.read(s.s, s.size * sizeof(char));
+	}
+snippet exception_pylon
+	try {
+		m_Camera.OpenFirstCamera();
+	} catch (Pylon::GenericException &e) {
+		printf("%s %s\n", e.GetDescription());
+		// This is necessary if I want to see it in the unit tests
+		throw;
+	}
+
+snippet ifs ifstreamt
+	rf
+snippet rf
+	void ReadFile(std::vector<uint8_t>& inputVector, std::string filePath)
+	{
+		std::ifstream fileBuffer(filePath);
+		if (fileBuffer.is_open())
+		{
+			char newByte(0);
+			while (fileBuffer.get(newByte))
+			{
+				inputVector.push_back(static_cast<uint8_t>(newByte));
+			}
+			fileBuffer.close();
+		}
+	}
+
+	void Test_ReceiveData()
+	{
+		std::vector<uint8_t> testData(0);
+		ReadFile(testData, "packages/3dsensing/tests/resources/randomImage.data");
+	}
+snippet constructor_parameter_callback
+	// header
+	class Basler3D: public ITofCamera
+	{
+	public:
+		explicit Basler3D(std::function<void(const msg::TofDataMessage&&)> callback);
+	private:
+		const std::function<void(const msg::TofDataMessage&&)> outputCallback;
+	
+	// implementation
+	Basler3D::Basler3D(std::function<void(const msg::TofDataMessage&&)> callback)
+		: outputCallback(std::move(callback))
+	{
+snippet hw
+	#include <iostream>
+	
+	int main() {
+		std::cout << "Hello World!" << std::endl;
+		std::cout << "hello world!\n";
+		std::cin.get();
+		return 0;
+	}
+snippet bp boilerplate
+	#include<iostream>
+	#include<stdio.h>
+
+	using namespace std;
+
+	typedef long long int ll;
+
+	int main(void) {
+
+		return 0;
+	}
+snippet sizeof
+	#include <stdint.h>
+	std::cout << sizeof(uint16_t);
+snippet lamdaexample
+	#include <vector>
+	#include <iostream>
+	#include <algorithm>
+	#include <functional>
+
+
+	int main()
+	{
+		std::vector<int> c { 1,2,3,4,5,6,7 };
+		int x = 5;
+		c.erase(std::remove_if(c.begin(), c.end(), [x](int n) { return n < x; } ), c.end());
+
+		std::cout << "c: ";
+		for (auto i: c) {
+			std::cout << i << ' ';
+		}
+		std::cout << '\n';
+
+		std::function<int (int)> func = [](int i) { return i+4; };
+		std::cout << "func: " << func(6) << '\n';
+	}
+#
+# Lambdas
+#
+snippet ld
+	auto println = [](const char  *message){ std::cout << message << std::endl;};
+snippet lambda
+	auto println = [](const char  *message){ std::cout << message << std::endl;};
+snippet lds
+	// [capture clause, & means allow external variables inside body] (parameters) (body)
+	[${1:&}](${2}){${3}};
+snippet ld-single-line
+	// [capture clause, & means allow external variables inside body] (parameters) (body)
+	[${1:&}](${2}){${3}};
+snippet ldm
+	[${1:&}](${2}){
+		${3}
+	};
+snippet ld-multi-line
+	[${1:&}](${2}){
+		${3}
+	};
+snippet ldv "lamda with variable capture"
+   // read in the name from a user, which we want to search
+   string name;
+   cin>> name;
+   return global_address_book.findMatchingAddresses(
+	   // notice that the lambda function uses the the variable 'name'
+	   [&] (const string& addr) { return addr.find( name ) != string::npos; }
+   );
+snippet ld-variable "lamda with variable capture"
+   // read in the name from a user, which we want to search
+   string name;
+   cin>> name;
+   return global_address_book.findMatchingAddresses(
+	   // notice that the lambda function uses the the variable 'name'
+	   [&] (const string& addr) { return addr.find( name ) != string::npos; }
+   );
+snippet rw
+	http://www.cplusplus.com/doc/tutorial/files/
+snippet io
+	http://www.cplusplus.com/doc/tutorial/files/
+snippet templatecondition
+	#include <iostream>
+	#include <type_traits> // C++0x
+	//#include <tr1/type_traits> // C++03, use std::tr1
+
+	template<typename T>
+	void printType(T param)
+	{
+		if(std::is_same<T,char*>::value)
+			std::cout << "char*" << endl;
+		else if(std::is_same<T,int>::value)
+			std::cout << "int" << endl;
+		else
+			std::cout << "???" << endl;
+	}
+
+	// Or even better yet, just overload the function:
+
+	template<class T>
+	void printType(T partam){
+		std::cout << "???" << endl;
+	}
+
+	void printType(char* partam){
+		std::cout << "char*" << endl;
+	}
+
+	void printType(int partam){
+		std::cout << "int" << endl;
+	}
+snippet tdsword
+	typedef signed int sword;
+snippet sff
+	%[a-zA-Z0-9 ]%[=] %[a-zA-Z0-9 ]
+snippet sf
+	${1:sword swNumFields} = sscanf(${2:szBuffer}, "${3:sff}", ${0:sz, szEqual, szValue});
+snippet scanf
+	// szBuffer -- thing to scan
+	// "%[a-zA-Z0-9 ]%[=] %[a-zA-Z0-9 ]" -- format
+	// , sz, szEqual, szValue -- char sz[128]; Buffer to hold string
+	swNumFields = sscanf(szBuffer, "%[a-zA-Z0-9 ]%[=] %[a-zA-Z0-9 ]", sz, szEqual, szValue);
+snippet op= "The class &apos;checklist_question&apos; has &apos;copy constructor&apos; but lack of &apos;operator=&apos;."
+	// cpp
+	/** Copy assignment operator */
+	${0:InspQuestion}& $0::operator=($0 const& rhs)
+	{
+		auto tmp(rhs);    // re-use copy-constructor
+		*this = std::move(tmp);
+
+		return *this;
+	}
+
+	// h
+		$0& operator=($0 const& r);
+snippet copyctorandeqoperator "The class &apos;checklist_question&apos; has &apos;copy constructor&apos; but lack of &apos;operator=&apos;."
+	// cpp
+	/** Copy assignment operator */
+	${0:InspQuestion}& $0::operator=($0 const& rhs)
+	{
+		auto tmp(rhs);    // re-use copy-constructor
+		*this = std::move(tmp);
+
+		return *this;
+	}
+
+	// h
+		$0& operator=($0 const& r);
+snippet useinitializationlist
+	${0}
+snippet nocopyconstructor
+	// cpp
+	${0:checklist_question}::$0(const $0& rhs)
+	: locale(q.locale),
+	  line1(q.line1)
+	{
+		/* Not a great way to do it. Use Copy Constructors for
+		 * data-members instead. You don't have to define them.
+		 * implicitly defined copy constructors already exist. */
+		//Allocate the memory first
+		application = new application_handler;
+
+		//Then copy the value from the passed object
+		*application = *rhs.application;
+	}
+
+	// h
+	class $0
+	{
+	public:
+		$0(const $0& rhs);
+snippet strncpy
+	char time_string[128];
+	strncpy(time_string, get_time_string(), sizeof(time_string));
+snippet uninitmembervar
+	// examples:
+	strncpy(app_name, rhs.app_name, sizeof(app_name));
+snippet operatoreqvarerror "Member variable 'SlaveClass::exit_ports' is not assigned a value in 'SlaveClass::operator='."
+	// Originally:
+	/** - Making copy constructor private so that a copy of object cannot be created */
+	private:
+		SlaveClass(const SlaveClass &obj)
+		{
+			/** - Avoid making copy of same object */
+		}
+		SlaveClass& operator = (const SlaveClass &obj)
+		{
+			/** - Avoid making copy of same object */
+			return *this;
+		}
+
+	// Change to:
+	SlaveClass(const SlaveClass &obj) = delete;
+	SlaveClass& operator = (const SlaveClass &obj) = delete;
+snippet bl
+	boolean
+snippet i16
+	int16_t
+snippet i32
+	int32_t
+snippet u16
+	uint16_t
+snippet u32
+	uint32_t
+snippet =
+	 = 
+snippet =n
+	 = NULL;
+snippet =0c
+	 = '\0';
+snippet ='0
+	 = '\0';
+snippet =0
+	 = 0;
+snippet (n "initialization list"
+	(NULL),
+	${0}
+snippet (t "initialization list"
+	(true),
+	${0}
+snippet (f "initialization list"
+	(false),
+	${0}
+snippet ('0 "initialization list"
+	('\0'),
+	${0}
+snippet (0c "initialization list"
+	('\0'),
+	${0}
+snippet (0 "initialization list"
+	(0),
+	${0}
+snippet (00 "initialization list"
+	(0.0),
+	${0}
+snippet =00
+	 = 0.0;
+snippet =0.
+	 = 0.0;
+snippet =f
+	 = false;
+snippet =t
+	 = true;
+snippet memsetclassfloat
+	// $NOTES/ws/cpp-c++/pod.txt
+snippet is_pod "test if something is a pod"
+	#include <type_traits>
+	typedef struct icon_urgency_data
+	{
+	} icon_urgency_data_t;
+	static assert(std::is_pod<icon_column_t>::value, "why am i not a pod");
+snippet invalidprintfargtype_uint
+	%lu -> %zu
+snippet memsetClassFloat "Using memset() on struct which contains a floating point number."
+	// removed this
+	memset(&leaf_data, 0, sizeof(leaf_data));
+
+	// made this
+	leaf_data = leaf_screen_t();
+snippet %d
+	%" PRId32 "`Xcp("#include <cinttypes>")`
+snippet %ld
+	%" PRId64 "`Xcp("#include <cinttypes>")`
+snippet %u
+	%" PRIu32 "`Xcp("#include <cinttypes>")`
+snippet %lu
+	%" PRIu64 "`Xcp("#include <cinttypes>")`
+# snippet e
+# 	printf("%s\n", "${0:The string of your choice.}");
+snippet e
+	fprintf(stdout, "${1:The string of your choice}${0:%s\n", ".}");
+# This one stopped working:
+#snippet e
+#	printf("${1:The string of your choice}${0:%s\n", ".}");
+snippet d64-print
+	printf("%" PRId64 "\n",n);`Xcp("#include <cinttypes>")`
+snippet u64-print
+	printf("%" PRIu64 "\n",n);`Xcp("#include <cinttypes>")`
+snippet ns
+	struct timespec ts = {
+		0,
+		(decltype(ts.tv_nsec))(${0:(__useconds_t)duration * 1000} * 1000)
+	};
+
+	nanosleep(&ts, NULL);
+snippet nanosleep 
+	struct timespec ts = {
+		0,
+		(decltype(ts.tv_nsec))(${0:(__useconds_t)duration * 1000} * 1000)
+	};
+
+	nanosleep(&ts, NULL);
+snippet nanosleep-old
+	nanosleep((const struct timespec[]){{0, (__syscall_slong_t)(${0:this->SUSPEND_TIME_US} * 1000)}}, NULL);
+snippet gmtime
+	#include <cstring>
+	// struct tm *${1:tm_info};
+	time_t ${0:now};
+	$0 = time(0);
+	struct tm $1;
+	memset(&$1, 0, sizeof($1));
+	// $1 = gmtime(&$0);
+	struct tm *$1_ptr = gmtime_r(&$0, &$1);
+	if (nullptr == $1_ptr) {
+	exit(1);
+	}
+	// $1->tm_min
+	$1.tm_min
+snippet gmtime_r
+	#include <cstring>
+	// struct tm *${1:tm_info};
+	time_t ${0:now};
+	$0 = time(0);
+	struct tm $1;
+	memset(&$1, 0, sizeof($1));
+	// $1 = gmtime(&$0);
+	struct tm *$1_ptr = gmtime_r(&$0, &$1);
+	if (nullptr == $1_ptr) {
+		exit(1);
+	}
+	// $1->tm_min
+	$1.tm_min
+snippet localtime
+	#include <cstring>
+	// struct tm *${1:tm_info};
+	time_t ${0:now};
+	$0 = time(0);
+	struct tm $1;
+	memset(&$1, 0, sizeof($1));
+	// $1 = localtime(&$0);
+	struct tm *$1_ptr = localtime_r(&$0, &$1);
+	if (nullptr == $1_ptr) {
+	exit(1);
+	}
+	// $1->tm_min
+	$1.tm_min
+snippet localtime_r
+	#include <cstring>
+	// struct tm *${1:tm_info};
+	time_t ${0:now};
+	$0 = time(0);
+	struct tm $1;
+	memset(&$1, 0, sizeof($1));
+	// $1 = localtime(&$0);
+	struct tm *$1_ptr = localtime_r(&$0, &$1);
+	if (nullptr == $1_ptr) {
+		exit(1);
+	}
+	// $1->tm_min
+	$1.tm_min
+snippet cppcheck-suppress "For false positives"
+	// cppcheck-suppress ${0:wrongPrintfScanfArgNum}
+snippet el
+	} else {
+snippet -c
+	->c_str()
+snippet .c
+	.c_str()
+snippet =d
+	 = delete
+snippet readtoeofwithnlonly
+	while (instream.good())
+	{
+		instream.getline(buffer,sizeof(buffer));
+		if (instream.good())
+snippet readtoeof
+	while (instream.good())
+	{
+		instream.getline(buffer,sizeof(buffer));
+		// Allow reading eof for files that don't end with newlines
+		if (!instream.bad() && !instream.fail())
+		{
+snippet rawstringliteral
+	R"JSON({${0:"ScreenType"}})JSON"
+snippet v-rawstringliteral
+	R"JSON({VISUAL})JSON"
+snippet null_ptr
+	nullptr
+snippet str
+	const std::string INSTALL_ROOT = "/mnt/dom/";
+snippet for-in-list
+	for ( const auto &table : std::initializer_list<std::array<std::string, 2>> {
+		{"AssocConfig",""},
+		{"BattHealthMonitor",""},
+		{"ChecklistConfig", ""},
+		{"ChecklistQuestions", ""},
+		{"ChkRecord", ""},
+		{"ChkResults", ""},
+		{"DwnldFile",""},
+		{"Events",""},
+		{"ImpactSensor", ""},
+		{"MaintModeReason",""},
+		{"MaintModeTranslations",""},
+		{"Simp",""},
+		{"Users", "where IsServerUser=1"},
+		{"UserSettings", ""}})
+	{
+		string sql = "delete from " + table[0] + " " + table[1];
+	}
+snippet mutex
+	#include<mutex>
+
+	{
+		// When lock constructs, my_mutex.lock() is called. When lock
+		// destructs, my_mutex.unlock() is called. mutex is released,
+		// even if there is an exception.
+		std::unique_lock<mutex> lock(my_mutex);
+	}
+snippet sort
+	#include <algorithm>
+	std::stable_sort(messages.begin(), messages.end());
+snippet vector-truncate
+	messages.resize(count);
+# This is a bad practice
+snippet :
+	((void)0)
+snippet noop
+	((void)0)
+snippet vp
+	(void*)
+snippet deletion_pointer
+	std::unique_ptr<decltype buffer> deletion_ptr(buffer);
+snippet lst
+	(size_t)0
+snippet size_t-literal
+	size_t foo = (size_t)0;
+	size_t foo = 0U;
+snippet buffer_to_hex
+	/**
+	 * @brief   Helper function for converting a buffer to a hexadecimal string. Useful for debugging.
+	 * @param   buffer Pointer to the buffer to convert
+	 * @param   size Number of bytes to convert
+	 * @return  Hexadecimal string representation of the buffer.
+	 */
+	std::string HexDump(const char *buffer, size_t size)
+	{
+		std::ostringstream str;
+		str.fill('0');
+		for ( auto ii = 0u; ii < size; ++ii )
+		{
+			str << std::hex << std::setw(2) << static_cast<int>(buffer[ii]) << " ";
+		}
+		return str.str();
+	}
+
+	} /* namespace test */
+snippet char*
+	char cmd [100];
+	sprintf(cmd, "echo 'triggered %s' >> /tmp/dashboard.txt", program_bus_command);
+snippet cmd
+	char cmd [100];
+	sprintf(cmd, "echo 'triggered %s' >> /tmp/dashboard.txt", program_bus_command);
+snippet sprintf
+	char cmd [100];
+	sprintf(cmd, "echo 'triggered %s' >> /tmp/dashboard.txt", program_bus_command);
+snippet read
+	#include <string>
+	#include <iostream>
+	#include <sstream>
+	std::string name;
+	std::cout << "What is your name? ";
+	std::getline(std::cin, name);
+	std::cout << "Hello " << name << ", nice to meet you.\n";
+snippet readfile
+	#include <string>
+	#include <iostream>
+	#include <sstream>
+	// read file line by line
+	std::istringstream input;
+	input.str("1\n2\n3\n4\n5\n6\n7\n");
+	int sum = 0;
+	for (std::string line; std::getline(input, line); ) {
+		sum += std::stoi(line);
+	}
+snippet f
+	void ${0:function_name}() {
+	}
+snippet do
+	do {
+		getline(std::cin,line);
+		content += line + '\n';
+	} while (!line.empty());
+snippet dw "do while"
+	do {
+		getline(std::cin,line);
+		content += line + '\n';
+	} while (!line.empty());
+snippet sne "string not empty"
+	!line.empty()
+snippet string-empty "string empty"
+	line.empty()
+snippet ~
+	ProgramBusClass::~ProgramBusClass(void)
+	{
+		pb_intf.close_ports();
+	}
+snippet destructor
+	ProgramBusClass::~ProgramBusClass(void)
+	{
+		pb_intf.close_ports();
+	}
+snippet popen-log
+	char cmd [100];
+	FILE* fh;
+
+	sprintf(cmd, "echo 'get widget select' >> /tmp/dashboard.txt");
+
+	if ((fh = popen(cmd, "r")) == NULL) {
+		printf("Error opening pipe!\n");
+	}
+	pclose(fh);
+snippet fprintf
+	printf("map service_name: %s, topic: %s", (char *)(it->second.service_name), (char *)it->second.topic);
+snippet pf
+	printf("${0}");
+snippet printf
+	printf("${0}");
+snippet str 
+	#include <string>
+	char cmd[100];
+	char buffer[128];
+	std::string result = "";
+snippet stds
+	std::string
+#snippet lap "Used in ControlProcess"
+#	#include <sstream>
+#	stringstream buffer;
+#	buffer << "Screenflow State: " << endl;
+#	log_and_print(LOG_DEBUG, TRUE, stderr, buffer.str().c_str());
+snippet lap "Used in ControlProcess. I should put \n before and after."
+	log_and_print(LOG_DEBUG, TRUE, stderr, "\n${0:hi}\n");
+snippet logit "Used in InfolinkClient"
+	logit(LogLevel::Trace, "Shane: ${0:Configuring Impact}%s\n", ".");
+# This is defined in c.snippets
+#snippet el
+#	} else {
+snippet memcmp "compare raw memory"
+	REQUIRE(memcmp(&data.powerDisconnectTimestamp, &disconnectTimestamp, sizeof(TIMESTAMP)) == 0);
+snippet uint16_t
+	constexpr uint16_t subcategory = UINT16_C(1);
+snippet redecl
+	auto ${1:fn} = reinterpret_cast<decltype(${2:&GetDefaultUserProfileDirectory})>(${0:farproc});
+snippet wf "write file"
+	#include <fstream>
+	#include <string>
+	#include <iostream>
+
+	int main()
+	{
+		std::string input;
+		std::cin >> input;
+		std::ofstream out("output.txt");
+		out << input;
+		out.close();
+		return 0;
+	}

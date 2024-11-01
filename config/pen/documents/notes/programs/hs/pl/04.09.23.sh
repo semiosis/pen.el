@@ -1,0 +1,15 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "run.sh(1)---emacs(19524)---sh(1269202)-+-awk(1269205)
+                                       |-man(1269203)---pstree(1269281)
+                                       \`-sed(1269204)" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "text/x-shellscript" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "text/x-shellscript" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "text/x-shellscript" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "text/x-shellscript" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "text/x-shellscript" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "text/x-shellscript" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "-ft" "#" "<==" "pen-cr"
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "." "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "/root/.emacs.d/host/pen.el/scripts" "#" "<==" "pen-ux"
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "/root/.emacs.d/host/pen.el/scripts/" "#" "<==" ""
+cd /root/.emacs.d/host/pen.el/scripts;  "pl" "run.sh(1)---tmux: server(2836)---bash(1271943)---zsh(1271948)---man(1272035)---pstree(1272109)" "#" "<==" ""
+cd /root/notes;  "pl" "run.sh(1)---tmux: server(2836)---bash(1333906)---zsh(1333911)---man(1336674)---pstree(1336839)" "#" "<==" ""

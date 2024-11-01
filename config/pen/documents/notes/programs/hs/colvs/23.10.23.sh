@@ -1,0 +1,5 @@
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"
+cd /volumes/home/shane/notes;  "colvs" "#" "<==" "pen-pa"
+cd /root/.emacs.d/host/pen.el/src;  "colvs" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "colvs" "#" "<==" "bash"
+cd /root/notes;  "colvs" "-nls" "#" "<==" "pen-pa"

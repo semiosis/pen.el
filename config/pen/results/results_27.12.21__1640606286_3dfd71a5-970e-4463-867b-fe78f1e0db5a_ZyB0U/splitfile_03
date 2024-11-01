@@ -1,0 +1,8 @@
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
+
+                                      EC2 Instance Metadata
+
+  Instance Metadata
+  The EC2 metadata service provides information about your EC2 instance.
+  You can use the metadata service to obtain information about your
+  instance, such as the instance

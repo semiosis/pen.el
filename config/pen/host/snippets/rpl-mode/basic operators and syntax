@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: basic operators and syntax
+# group: operators and syntax
+# key: bops
+# --
+pat?
+pat+
+pat*
+pat{n}
+pat{n,m}
+[:name:]
+[list]
+[a-z]
+[^...]
+[cs1 cs2 ...]

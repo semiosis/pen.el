@@ -1,0 +1,4 @@
+
+]
+arguments = ["--egg-info"]
+platforms = {'any': ['linux', 'osx', 'win32'], 'linux-i686': ['embedded'], 'linux-x86_64

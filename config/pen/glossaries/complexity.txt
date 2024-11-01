@@ -1,0 +1,22 @@
+Space complexity
+Space complexity [of an algorithm]
+    The amount of space (or memory) taken by
+    the algorithm to run as a function of its
+    input length, n. Space complexity includes
+    both auxiliary space and space used by the
+    input.
+
+Auxiliary space
+    Temporary or extra space used by an
+    algorithm.
+    
+    This temporary space allocated in order to
+    solve the problem.
+    
+    Space complexity is total space taken by
+    the algorithm with respect to the input
+    size.
+
+Order 1
+Constant time
+O(1)

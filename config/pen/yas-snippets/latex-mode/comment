@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: comment
+# group: syntax
+# key: comment
+# --
+\iffalse
+`yas-selected-text`$0
+\fi

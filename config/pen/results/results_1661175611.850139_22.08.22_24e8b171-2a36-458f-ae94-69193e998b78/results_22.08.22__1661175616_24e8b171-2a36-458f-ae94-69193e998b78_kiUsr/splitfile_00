@@ -1,0 +1,2 @@
+"T.send sock" is a function that takes a socket and a byte string,
+and sends the byte string to the socket.

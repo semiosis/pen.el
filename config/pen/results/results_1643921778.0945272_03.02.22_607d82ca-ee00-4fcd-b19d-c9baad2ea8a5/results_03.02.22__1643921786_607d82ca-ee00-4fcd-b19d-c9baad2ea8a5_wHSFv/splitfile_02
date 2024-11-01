@@ -1,0 +1,10 @@
+- 1. /usr/bin/file
+- 2. /usr/bin/find
+- 3. /usr/bin/grep
+- 4. /usr/bin/gzip
+
+Answer: 3
+Explanation:
+
+The code is a part of the gzip binary.
+

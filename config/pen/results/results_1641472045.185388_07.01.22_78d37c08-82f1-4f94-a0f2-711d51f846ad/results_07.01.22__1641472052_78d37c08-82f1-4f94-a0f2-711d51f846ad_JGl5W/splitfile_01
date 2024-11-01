@@ -1,0 +1,25 @@
+
+There was a table set out under a tree in
+front of the house, and the March Hare and the
+Hatter were having tea at it : a Dormouse was
+sitting between them, almost awake, and the
+other two we're resting their elbows on it, and
+talking over its head.
+"""
+import re
+
+
+def replace_words(filepath):
+    with open(filepath) as fp:
+        content = fp.readline()
+        while content:
+            print(replace_word(content))
+            content = fp.readline()
+
+
+def replace_word(line):
+    return re.compile(r'(?<=\b)a ([aeiou])').sub(r'an \1', line)
+
+
+if __name__ == "__main__":
+    replace_words('chinese_whispers.txt')

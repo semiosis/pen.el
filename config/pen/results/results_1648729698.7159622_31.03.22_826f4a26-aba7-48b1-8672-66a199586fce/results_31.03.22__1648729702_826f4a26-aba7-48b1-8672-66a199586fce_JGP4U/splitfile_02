@@ -1,0 +1,1 @@
+- Simon Peyton Jones: Alright. The State monad is a monad which allows you to make a stateful computation.

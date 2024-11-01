@@ -1,0 +1,1120 @@
+HTTP/1.1 200 OK
+date: Sat, 02 Mar 2024 06:55:07 GMT
+server: mw-web.codfw.main-7cd95bf57f-f9cxb
+x-content-type-options: nosniff
+content-language: en
+accept-ch: 
+vary: Accept-Encoding,Cookie
+last-modified: Sat, 24 Feb 2024 16:08:23 GMT
+content-type: text/html; charset=UTF-8
+age: 42
+x-cache: cp4043 miss, cp4043 hit/3
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp4043"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+set-cookie: WMF-Last-Access=02-Mar-2024;Path=/;HttpOnly;secure;Expires=Wed, 03 Apr 2024 00:00:00 GMT
+set-cookie: WMF-Last-Access-Global=02-Mar-2024;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Wed, 03 Apr 2024 00:00:00 GMT
+set-cookie: WMF-DP=e6a;Path=/;HttpOnly;secure;Expires=Sat, 02 Mar 2024 00:00:00 GMT
+x-client-ip: 2407:7000:8257:5800:5046:6c61:696b:90cc
+cache-control: private, s-maxage=0, max-age=0, must-revalidate
+set-cookie: GeoIP=NZ:OTA:Dunedin:-45.84:170.50:v4; Path=/; secure; Domain=.wikipedia.org
+set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600
+accept-ranges: bytes
+content-length: 32400
+
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-feature-night-mode-disabled skin-night-mode-clientpref-0 vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Corporate election - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-feature-night-mode-disabled skin-night-mode-clientpref-0 vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],
+"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"3e68a432-22bd-409c-b46d-ab70919b96db","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Corporate_election","wgTitle":"Corporate election","wgCurRevisionId":1195942375,"wgRevisionId":1195942375,"wgArticleId":3743642,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing rewrite from November 2021","All articles needing rewrite","Arminianism","Salvation in Protestantism","Christian terminology"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Corporate_election","wgRelevantArticleId":3743642,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":50000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q5172455","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,
+"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents",
+"ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.20">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Corporate election - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Corporate_election">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Corporate_election&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Corporate_election">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Corporate_election rootpage-Corporate_election skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert vector-main-menu-action-lang-alert-empty">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools" role="navigation" >
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-client-prefs-landmark" aria-label="Appearance">
+		
+		
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Corporate+election" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Corporate+election" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Corporate+election" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Corporate+election" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Summary_of_the_corporate_view_of_election"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Summary_of_the_corporate_view_of_election">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Summary of the corporate view of election</div>
+		</a>
+		
+			<button aria-controls="toc-Summary_of_the_corporate_view_of_election-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Summary of the corporate view of election subsection</span>
+			</button>
+		
+		<ul id="toc-Summary_of_the_corporate_view_of_election-sublist" class="vector-toc-list">
+			<li id="toc-Election_is_Christocentric"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Election_is_Christocentric">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.1</span>Election is Christocentric</div>
+			</a>
+			
+			<ul id="toc-Election_is_Christocentric-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Election_is_primarily_corporate"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Election_is_primarily_corporate">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.2</span>Election is primarily corporate</div>
+			</a>
+			
+			<ul id="toc-Election_is_primarily_corporate-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Election_has_an_eternal_purpose"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Election_has_an_eternal_purpose">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.3</span>Election has an eternal purpose</div>
+			</a>
+			
+			<ul id="toc-Election_has_an_eternal_purpose-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Election_is_offered_to_all_people"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Election_is_offered_to_all_people">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.4</span>Election is offered to all people</div>
+			</a>
+			
+			<ul id="toc-Election_is_offered_to_all_people-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Historical_perspectives_on_election"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Historical_perspectives_on_election">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Historical perspectives on election</div>
+		</a>
+		
+		<ul id="toc-Historical_perspectives_on_election-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Arguments_in_support_of_corporate_election"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Arguments_in_support_of_corporate_election">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Arguments in support of corporate election</div>
+		</a>
+		
+			<button aria-controls="toc-Arguments_in_support_of_corporate_election-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Arguments in support of corporate election subsection</span>
+			</button>
+		
+		<ul id="toc-Arguments_in_support_of_corporate_election-sublist" class="vector-toc-list">
+			<li id="toc-The_Old_Testament_concept_of_election"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#The_Old_Testament_concept_of_election">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.1</span>The Old Testament concept of election</div>
+			</a>
+			
+			<ul id="toc-The_Old_Testament_concept_of_election-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-New_Testament_language_on_election"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#New_Testament_language_on_election">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.2</span>New Testament language on election</div>
+			</a>
+			
+			<ul id="toc-New_Testament_language_on_election-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Cultural_and_religious_setting_for_the_New_Testament"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Cultural_and_religious_setting_for_the_New_Testament">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.3</span>Cultural and religious setting for the New Testament</div>
+			</a>
+			
+			<ul id="toc-Cultural_and_religious_setting_for_the_New_Testament-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Arguments_against_corporate_election"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Arguments_against_corporate_election">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Arguments against corporate election</div>
+		</a>
+		
+			<button aria-controls="toc-Arguments_against_corporate_election-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Arguments against corporate election subsection</span>
+			</button>
+		
+		<ul id="toc-Arguments_against_corporate_election-sublist" class="vector-toc-list">
+			<li id="toc-Corporate_election_excludes_individuals"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Corporate_election_excludes_individuals">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.1</span>Corporate election excludes individuals</div>
+			</a>
+			
+			<ul id="toc-Corporate_election_excludes_individuals-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Corporate_election_is_not_the_election_of_people,_but_merely_the_election_of_an_empty_set"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Corporate_election_is_not_the_election_of_people,_but_merely_the_election_of_an_empty_set">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">4.2</span>Corporate election is not the election of people, but merely the election of an empty set</div>
+			</a>
+			
+			<ul id="toc-Corporate_election_is_not_the_election_of_people,_but_merely_the_election_of_an_empty_set-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Relation_to_other_theological_issues"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Relation_to_other_theological_issues">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>Relation to other theological issues</div>
+		</a>
+		
+			<button aria-controls="toc-Relation_to_other_theological_issues-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Relation to other theological issues subsection</span>
+			</button>
+		
+		<ul id="toc-Relation_to_other_theological_issues-sublist" class="vector-toc-list">
+			<li id="toc-Predestination"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Predestination">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.1</span>Predestination</div>
+			</a>
+			
+			<ul id="toc-Predestination-sublist" class="vector-toc-list">
+				<li id="toc-Analogy_for_corporate_election_and_predestination"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Analogy_for_corporate_election_and_predestination">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.1.1</span>Analogy for corporate election and predestination</div>
+			</a>
+			
+			<ul id="toc-Analogy_for_corporate_election_and_predestination-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-Corporate_election_as_it_relates_to_perseverance_and_apostasy"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Corporate_election_as_it_relates_to_perseverance_and_apostasy">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.2</span>Corporate election as it relates to perseverance and apostasy</div>
+			</a>
+			
+			<ul id="toc-Corporate_election_as_it_relates_to_perseverance_and_apostasy-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Notes"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Notes">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>Notes</div>
+		</a>
+		
+		<ul id="toc-Notes-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>References</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>External links</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Corporate election</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="This article exist only in this language. Add the article for other languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-0" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">Add languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="uls-after-portlet-link"></span><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5172455#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Corporate_election" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Corporate_election" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Corporate_election"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Corporate_election&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Corporate_election&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Corporate_election"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Corporate_election&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Corporate_election&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Corporate_election" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Corporate_election" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Corporate_election&amp;oldid=1195942375" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Corporate_election&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Corporate_election&amp;id=1195942375&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCorporate_election"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCorporate_election"><span>Download QR code</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5172455" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Corporate_election&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Corporate_election&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-client-prefs-landmark" aria-label="Appearance">
+						</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For votes taken within incorporated organizations, see <a href="/wiki/Corporate_governance" title="Corporate governance">Corporate governance</a>.</div>
+<style data-mw-deduplicate="TemplateStyles:r1097763485">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="box-Cleanup_rewrite plainlinks metadata ambox ambox-content" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Crystal_Clear_app_kedit.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Crystal_Clear_app_kedit.svg/40px-Crystal_Clear_app_kedit.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Crystal_Clear_app_kedit.svg/60px-Crystal_Clear_app_kedit.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Crystal_Clear_app_kedit.svg/80px-Crystal_Clear_app_kedit.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>may need to be rewritten</b> to comply with Wikipedia's <a href="/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style">quality standards</a>, as The article doesn't come close to explaining even the basics of the concept to anyone but an expert.<span class="hide-when-compact"> <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Corporate_election&amp;action=edit">You can help</a>. The <a href="/wiki/Talk:Corporate_election" title="Talk:Corporate election">talk page</a> may contain suggestions.</span>  <span class="date-container"><i>(<span class="date">November 2021</span>)</i></span></div></td></tr></tbody></table>
+<p>The idea of <b>corporate election</b> expresses a <a href="/wiki/Christian_soteriology" class="mw-redirect" title="Christian soteriology">Christian soteriological</a> view that understands <a href="/wiki/Christian_salvation" class="mw-redirect" title="Christian salvation">Christian salvation</a> as based on "God choosing in Christ a people whom he destines to be holy and blameless in his sight".<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> Put another way, "Election is the corporate choice of the church 'in Christ.'"<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> Paul Marston and <a href="/wiki/Roger_T._Forster" title="Roger T. Forster"> Roger Forster</a> state that the "central idea in the election of the church may be seen from <a href="/wiki/Ephesians" class="mw-redirect" title="Ephesians">Ephesians</a> 1:4":<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> "For he [God] chose us [the Church] in him [Christ], before the creation of the world to be holy and blameless in his sight." William Klein adds:
+</p>
+<blockquote>
+<p>Here [in Ephesians 1:3-4] Paul states that God chose Christians in Christ before the creation of the world to be holy and blameless in his sight. The "chosen ones" designate the corporate group to whom Paul writes with himself (and presumably all Christians) included: God chose us. The focus is not on the selection of individuals, but the group of those chosen. As Westcott notes, "<i>He chose us</i> (i.e. Christians as a body, v. 4) for Himself out of the world." Paul specifies the timing of this choice—it was pretemporal, before the world was created. God made the choice "in him" (that is, "in Christ"). In other words, Christ is the principal elected one,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> and God has chosen a corporate body to be <i>included in him</i>."<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+</blockquote>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Summary_of_the_corporate_view_of_election">Summary of the corporate view of election</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=1" title="Edit section: Summary of the corporate view of election"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Election_is_Christocentric">Election is Christocentric</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=2" title="Edit section: Election is Christocentric"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Election is first and foremost centered in Christ: "He chose us in him" (Ephesians 1:4a).<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> Christ himself is the elect of God.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> Regarding Christ, God states, "Here is my servant whom I have chosen" (Matthew 12:18; cf. Isaiah 42:1, 6).<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> God audibly declared to Christ's disciples, "This is My Son, My Chosen One; listen to Him!" (Luke 9:35)<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> The Gospel writer John says, "I have seen and I testify that this is God’s Chosen One" (John 1:34, Today's New International Version).<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> The apostle Peter refers to Christ as "the Living Stone . . . chosen by God and precious to Him" (1 Peter 2:4; cf. v. 6).<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> Therefore, Christ, as the elect of God, is the foundation of our election.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> Through union with Christ believers become members of the elect (Ephesians 1:4, 6-7, 9-10, 12-13).<sup id="cite_ref-StampsLife_a_13-0" class="reference"><a href="#cite_note-StampsLife_a-13">&#91;13&#93;</a></sup> No one is among the elect unless they are in a living faith union with Christ.<sup id="cite_ref-AdamsStamps_14-0" class="reference"><a href="#cite_note-AdamsStamps-14">&#91;14&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Election_is_primarily_corporate">Election is primarily corporate</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=3" title="Edit section: Election is primarily corporate"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>New Testament theologian Ben Witherington remarks that apart from the word election (<i>eklektos</i>) occasionally being used to apply to the king in the Old Testament, election in the Old Testament is predominantly applied corporately to a people, not to individuals. The Hebrew word for "elect" (<i>bahir</i>) is normally used in the plural, and thus refers collectively of Israel. While there are times in Scripture where God chooses individuals for a specific historical task or purpose (e.g. Cyrus in Isaiah 45:1), these are passages that have nothing to do with God deciding who will be saved, thus, they are of no relevance to this topic. The corporate concept of election in the Old Testament is the context which one must view the references to election in the New Testament.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup>
+</p><p>Professor William Klein concluded that the New Testament writers "address salvific election in primarily, if not exclusively, corporate terms. In other words, God has chosen an elect body to save."<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup> The elect are identified corporately as: "the body of Christ" (Ephesians 4:12; cf. 1:22-23; 2:16; 3:6; 5:23, 30), "members of God's household" (Ephesians 2:19),<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup> "a chosen race, a royal priesthood, a holy nation, a people for his own possession" (1 Peter 2:9; cf. 2:10).<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup> Thus, election is primarily corporate and only embraces individuals (secondarily) who identify and associate themselves with the body of Christ, the church—God's new covenant community.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup>
+</p><p>New Testament scholar Brian Abasciano says that the Bible's teaching regarding "corporate election unto salvation is even more nuanced than simply saying that the group is elected primarily and the individual secondarily."<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup>
+</p>
+<blockquote>
+<p>More precisely, it refers to the election of a group as a consequence of the choice of an individual who represents the group, the corporate head and representative. That is, the group is elected as a consequence of its identification with this corporate representative. The same may be said of individuals. They are chosen as a consequence of their identification with the people, and more fundamentally, with the individual corporate head. Thus,
+</p>
+<dl><dd>God chose the people of Israel in Abraham, Isaac, and Jacob/Israel (Deuteronomy 4:37; 7:6-8). That is, by choosing Jacob/Israel, the corporate/covenant representative, God also chose his descendants as his covenant people. . . . The covenant representative on the one hand and the people/nation of Israel on the other hand are the focus of the divine covenantal election, and individuals are elect only as members of the elect people. Moreover, in principle, foreign individuals who were not originally members of the elect people could join the chosen people and become part of the elect, demonstrating again that the locus of election was the covenant community and that individuals found their election through membership in the elect people.</dd></dl>
+<p>This notion of election is rooted in the Old Testament concept of corporate solidarity or representation, which views the individual as representing the community and identified with it and vice versa.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup>
+</p>
+</blockquote>
+<h3><span class="mw-headline" id="Election_has_an_eternal_purpose">Election has an eternal purpose</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=4" title="Edit section: Election has an eternal purpose"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>God has chosen a people so that they "may declare the praises of him" who called them out of darkness and into his wonderful light (1 Peter 2:9). Furthermore, God has purposed in Christ that His people will "be holy and blameless before Him" (Ephesians 1:4).<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup> This purpose is repeatedly emphasized by Paul in Ephesians (see 2:21; 3:14-19; 4:1-3, 13-32; 5:1-18; cf. 1 Peter 1:2, 14-16).<sup id="cite_ref-AdamsStamps_14-1" class="reference"><a href="#cite_note-AdamsStamps-14">&#91;14&#93;</a></sup> The fulfillment of this purpose for the church corporately is <i>certain</i> (Ephesians 5:27).<sup id="cite_ref-StampsLife_23-0" class="reference"><a href="#cite_note-StampsLife-23">&#91;23&#93;</a></sup> But the fulfillment of this purpose for individuals in the church is <i>conditional</i> upon remaining in the Christian faith (Colossians 1:22-23).<sup id="cite_ref-StampsLife_23-1" class="reference"><a href="#cite_note-StampsLife-23">&#91;23&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Election_is_offered_to_all_people">Election is offered to all people</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=5" title="Edit section: Election is offered to all people"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Abasciano believes that one of the theological advantages of corporate election is how it beautifully coincides with the Bible's teaching that God loves everyone, calls everyone to trust in him and be saved, and genuinely desires all to come into a saving relationship with him (e.g., Luke 19:10; John 3:16; Acts 17:30-31; 1 Timothy 2:4; 2 Peter 3:9).<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup> However, only those persons who repent of their sin and place their faith in Christ enter into a saving relationship with God and are "incorporated into Christ's elect body (the church) by the Holy Spirit (1 Corinthians 12:13), thereby becoming one of the elect."<sup id="cite_ref-StampsLife_a_13-1" class="reference"><a href="#cite_note-StampsLife_a-13">&#91;13&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Historical_perspectives_on_election">Historical perspectives on election</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=6" title="Edit section: Historical perspectives on election"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Historically, both <a href="/wiki/Calvinist" class="mw-redirect" title="Calvinist">Calvinists</a> and <a href="/wiki/Arminian" class="mw-redirect" title="Arminian">Arminians</a> have predominantly understood election unto salvation as individual.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup> That is, each individual is elected/selected to enter into a saving relationship with God through Christ.<sup id="cite_ref-AbascianoClearing_26-0" class="reference"><a href="#cite_note-AbascianoClearing-26">&#91;26&#93;</a></sup> The central difference between the two views is that Calvinists see election as unconditional<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">&#91;27&#93;</a></sup> and Arminians see election as conditional on divine foreknowledge of human faith.<sup id="cite_ref-28" class="reference"><a href="#cite_note-28">&#91;28&#93;</a></sup> While corporate election is not the traditional Arminian position, it is totally consistent with Arminian theology because it is a conditional election—conditional upon union with Christ through faith.<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">&#91;29&#93;</a></sup> According to Abasciano, the corporate view of election "has come to command a great deal of scholarly support," and its popularity is likely due to the increased sensitivity of the scholarly community to "the Jewish matrix of early Christianity and the profound indebtedness to the Old Testament on the part of the New Testament authors."<sup id="cite_ref-AbascianoClearing_26-1" class="reference"><a href="#cite_note-AbascianoClearing-26">&#91;26&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Arguments_in_support_of_corporate_election">Arguments in support of corporate election</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=7" title="Edit section: Arguments in support of corporate election"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="The_Old_Testament_concept_of_election">The Old Testament concept of election</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=8" title="Edit section: The Old Testament concept of election"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Advocates of a corporate view of election argue that the Old Testament concept of election is definitely corporate.  James Daane wrote, "Divine election in its basic Old Testament form is collective, corporate, national. It encompasses a community of which the individual Israelite is an integral part."<sup id="cite_ref-30" class="reference"><a href="#cite_note-30">&#91;30&#93;</a></sup> The dominant use of election terminology in the Old Testament applies to the people of Israel as a body or nation.<sup id="cite_ref-31" class="reference"><a href="#cite_note-31">&#91;31&#93;</a></sup> The Old Testament writers repeatedly declare that God "has chosen Israel out of all the nations of the world to be his own people."<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">&#91;32&#93;</a></sup>
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1210016689">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 32px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote">
+<dl><dd>For you are a people holy to the LORD your God. The LORD your God has <i>chosen</i> you out of all the peoples on the face of the earth to be his people, his treasured possession. (Deuteronomy 7:6)</dd>
+<dd>Yet the LORD set his affection on your ancestors and loved them, and he <i>chose</i> you, their descendants, above all the nations. (Deuteronomy 10:15)</dd>
+<dd>Out of all the peoples on the face of the earth, the LORD has <i>chosen</i> you to be his treasured possession. (Deuteronomy 14:2)</dd>
+<dd>But you, Israel, my servant, Jacob, whom I have <i>chosen</i>, you descendants of Abraham my friend, I took you from the ends of the earth, from its farthest corners I called you. I said, "You are my servant"; I have <i>chosen</i> you and have not rejected you. (Isaiah 41:8-9)<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">&#91;33&#93;</a></sup></dd></dl>
+</blockquote>
+<p>According to Klein, the Old Testament writers used the following corporate terms to express Israel's collective unity: <i>bride</i>; <i>congregation</i>; <i>flock</i>, <i>house</i>; and <i>vine</i>. Furthermore, the term <i>people</i> is used throughout the Old Testament as a collective term for Israel. The writers of the Old Testament used these various terms because they conceived Israel as a people, a corporate entity.<sup id="cite_ref-34" class="reference"><a href="#cite_note-34">&#91;34&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="New_Testament_language_on_election">New Testament language on election</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=9" title="Edit section: New Testament language on election"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Supporters of the corporate view of election point to the New Testament language that explicitly discusses election, which they say is always corporate.  Abasciano says "one will look in vain for an overt use of the language of election unto salvation in reference to an individual."<sup id="cite_ref-35" class="reference"><a href="#cite_note-35">&#91;35&#93;</a></sup>  Klein concluded, "Our study of the New Testament documents demands that we view election to salvation corporately. We found in the synoptics, John, Peter, James, and Paul evidence that God has chosen a people—a community."<sup id="cite_ref-TheNew_36-0" class="reference"><a href="#cite_note-TheNew-36">&#91;36&#93;</a></sup> The apostle Paul calls believers in Rome "the elect ones of God" (Romans 8:33), and speaks of the Church as being chosen in Christ (Ephesians 1:4) and of "your [plural] election" (1 Thessalonians 1:4), "but never with individual language. . . ."<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">&#91;37&#93;</a></sup> Klein says, "Plural language dominates election texts."<sup id="cite_ref-TheNew_36-1" class="reference"><a href="#cite_note-TheNew-36">&#91;36&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Cultural_and_religious_setting_for_the_New_Testament">Cultural and religious setting for the New Testament</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=10" title="Edit section: Cultural and religious setting for the New Testament"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Supporters of a corporate understanding of election say that the first century Mediterranean culture and Judaism was corporate rather than individualistic in outlook.  According to Abasciano, the corporate character of the New Testament 1st-century culture is firmly supported by the scholarly consensus.<sup id="cite_ref-38" class="reference"><a href="#cite_note-38">&#91;38&#93;</a></sup> Bruce Malina argues persuasively in his book, <i>The New Testament World</i>, that the first-century Mediterranean person did not share our idea of an individual. People in the New Testament world conceived of themselves in relation to others, not as separate entities. They viewed people in terms of their family, village, city, or nation. Thus, while individualism dominates our Western thinking, it would have been extremely foreign to the world of the writers of the New Testament.<sup id="cite_ref-39" class="reference"><a href="#cite_note-39">&#91;39&#93;</a></sup>
+</p><p>When you consider the Jewish writers of the Old Testament, you will always find that the "individual's very self-understanding was derived from his or her relationship to the community."<sup id="cite_ref-40" class="reference"><a href="#cite_note-40">&#91;40&#93;</a></sup> The emphasis lies on the individual as a member of the community, not on the individual as an independent being before God. Salvation concerned both the individual and the community of the people of God. One would partake of the salvation which God had provided for his people by living as part of the covenant people. Only through persistent and unrepentant sin could one become apostate and be considered outside the covenant and therefore outside of salvation. Salvation was generally seen as concerning the nation (or a specific group within the nation), and something in which an individual would participate in provided that he kept within covenantal boundaries. Thus, within Judaism we find an interdependence of both the individual and the covenant community.<sup id="cite_ref-41" class="reference"><a href="#cite_note-41">&#91;41&#93;</a></sup>
+</p><p>This means that the dominant perspective of the New Testament culture "was that the group was primary and the individual secondary. The individual, while important, was not thought of as standing on his own, but as embedded in the group of which he was a member. Personal identity was derived from the group rather than the group drawing its identity from the individuals contained in it."<sup id="cite_ref-42" class="reference"><a href="#cite_note-42">&#91;42&#93;</a></sup> Thus, Judaism's and the Old Testament's corporate view of election, the exclusive use of corporate language in connection with election unto salvation, and the corporate orientation of the New Testament writers' socio-historical context all combine to provide a very strong case for seeing election as primarily corporate.<sup id="cite_ref-43" class="reference"><a href="#cite_note-43">&#91;43&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Arguments_against_corporate_election">Arguments against corporate election</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=11" title="Edit section: Arguments against corporate election"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Despite the growing popularity of corporate election, this doctrine has been criticized by some who hold to individual election, "particularly <a href="/wiki/Calvinism" title="Calvinism">Calvinists</a>, whose position it directly contradicts."<sup id="cite_ref-AbascianoClearing_a_44-0" class="reference"><a href="#cite_note-AbascianoClearing_a-44">&#91;44&#93;</a></sup> Supporters of the corporate view of election say that these criticisms appear to be misguided and based upon "misunderstandings of the biblical concept of corporate election."<sup id="cite_ref-AbascianoClearing_a_44-1" class="reference"><a href="#cite_note-AbascianoClearing_a-44">&#91;44&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Corporate_election_excludes_individuals">Corporate election excludes individuals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=12" title="Edit section: Corporate election excludes individuals"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are many scholars who believe that corporate election excludes individuals from election, and therefore, in order to counter the view, proceed to show how individuals are obviously elect and partakers of election's blessings if the group they belong to is elect.<sup id="cite_ref-AbascianoClearing_b_45-0" class="reference"><a href="#cite_note-AbascianoClearing_b-45">&#91;45&#93;</a></sup> Proponents of corporate election state that this can be shown as a mere assumption through evaluating the descriptions of corporate election. According to Abasciano, corporate election does not exclude individuals because,
+</p>
+<blockquote>
+<p>it includes individuals, but only insofar as they are part of the group. That is, it includes individuals based on their participation in the group/identification with the corporate representative. Another way of saying this would be that the group is elected primarily and individuals secondarily. Corporate election begins with the individual corporate head and the group, and then moves to the individual. But it does arrive at the individual and allots a full and vigorous role to him in the context of community. It is true that corporate election does not refer to the election of each individual separately from Christ or the group, but this does not in any way nullify the election of each individual member of the group as a result of the group's election. It is also true that corporate election does not refer to the choice of anyone to join the elect people. The concept of covenantal election or election unto eternal salvation simply does not apply to entrance into the elect people. It actually refers to a people being chosen to belong to God, to receive the benefits of his covenant promises (ideally), and to live according to his covenant commands (Genesis 18:19; Deuteronomy 4:20; 7:6-9; 14:2; Psalm 135:4; Ephesians 1:4ff.; 1 Peter 2:9-10). All of this applies to each individual in the New Covenant as a consequence of membership in the elect people, and more profoundly, of being in Christ by faith, which is what makes someone a part of God's people.<sup id="cite_ref-AbascianoClearing_b_45-1" class="reference"><a href="#cite_note-AbascianoClearing_b-45">&#91;45&#93;</a></sup>
+</p>
+</blockquote>
+<h3><span id="Corporate_election_is_not_the_election_of_people.2C_but_merely_the_election_of_an_empty_set"></span><span class="mw-headline" id="Corporate_election_is_not_the_election_of_people,_but_merely_the_election_of_an_empty_set">Corporate election is not the election of people, but merely the election of an empty set</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=13" title="Edit section: Corporate election is not the election of people, but merely the election of an empty set"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>It has been suggested that corporate election is the election of an empty set if individuals are not explicitly elected in addition to a corporate model. It has been said that by proponents of this view that this is a misunderstanding that flows naturally out of the first and is not true for the following reasons:<sup id="cite_ref-46" class="reference"><a href="#cite_note-46">&#91;46&#93;</a></sup>
+</p>
+<blockquote>
+<p>God first chooses the corporate head/representative so that there is never an empty set. Indeed, the corporate head is the foundation of the group and embodies the group in himself. To put it bluntly and in a way that undoubtedly rubs against individualistic sensibilities, the corporate head is the group, in accordance with the biblical principle of corporate solidarity. As 1 Corinthians 12:12 puts it in relation to Christ, "For just as the body is one and has many members, and all the members of the body, though being many, are one body, <i>so also is Christ</i>." Christ is both an individual and corporate figure. The group is chosen because of its association with him and because it shares in his election. His election extends to all those who are associated with him because they are <i>in him</i>. With the corporate head as the locus of election, there is never a time that the elect people is an empty set.<sup id="cite_ref-AbascianoClearing_c_47-0" class="reference"><a href="#cite_note-AbascianoClearing_c-47">&#91;47&#93;</a></sup>
+</p>
+</blockquote>
+<p>Another reason given to reject that corporate election is an election of an empty set is seen in the election of a corporate representative in the Old Testament.<sup id="cite_ref-AbascianoClearing_c_47-1" class="reference"><a href="#cite_note-AbascianoClearing_c-47">&#91;47&#93;</a></sup>
+</p>
+<blockquote>
+<p>For God's Old Testament people were chosen in Abraham, Isaac, and Jacob/Israel. Jacob was chosen in the womb, and at the very same time his descendants were chosen; they were chosen in him. "And the Lord said to her, 'Two nations are in your womb. And two peoples from your belly will be divided. And one people will be stronger than the other people. And the older will serve the younger' (Genesis 25:23). Notice how Jacob is wholly identified with his people before they exist. His election is their election; his destiny is their destiny. Indeed, they will be called by his personal name, whether Jacob or Israel. Both are designations for the nation of Israel in the Old Testament.
+Was Israel an empty set when Jacob was chosen? One might argue so. But then that would prove too much. It would constitute an argument against the concept of the election of God's people found in the Old Testament as somehow not really the election of people. For Israel was chosen in Jacob. That is, the people Israel was chosen as a consequence of the man Israel's election. When he was chosen, they were chosen. As Gen. 25:23 indicates, it could be said that the nation was in Rebekah's womb because Jacob was. And as Malachi 1:2-3 affirms, God loved/chose the people Israel by loving/choosing Jacob. . . .<sup id="cite_ref-48" class="reference"><a href="#cite_note-48">&#91;48&#93;</a></sup>
+</p>
+</blockquote>
+<p>Thus, Abasciano argues that while it might be the tendency of people with an individualistic viewpoint to regard the people of God as an empty set when only the corporate representative of the people is actually in the covenant, it is not the view found in the Scriptures.<sup id="cite_ref-49" class="reference"><a href="#cite_note-49">&#91;49&#93;</a></sup> It is also unlikely that such a view would be held in a collectivist culture, the very one in which the Old and New Testaments were written, which viewed the group as primary and the individual as secondary. The individualistic viewpoint is not able to account for the principle of corporate solidarity that, according to Abasciano, fits so well in the Bible and collectivist thought. The biblical world saw the corporate representative as embodying the people he represents from the beginning of his representative role or election.<sup id="cite_ref-50" class="reference"><a href="#cite_note-50">&#91;50&#93;</a></sup> If there is never an empty set in the Old Testament's corporate election of Israel in their chosen corporate representative, then this would likewise be true of "the church's election before the foundation of the world because that election was in Christ, consequent on his election, which is foundational to the election of his people in his capacity as their corporate representative (Ephesians 1:4)."<sup id="cite_ref-51" class="reference"><a href="#cite_note-51">&#91;51&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Relation_to_other_theological_issues">Relation to other theological issues</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=14" title="Edit section: Relation to other theological issues"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Predestination">Predestination</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=15" title="Edit section: Predestination"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Predestination (Greek: <i>prooizo</i>) means 'to decide beforehand' and refers to God's purposes encompassed in election. Election is God's choice 'in Christ' of a people (the true church) for himself. Predestination encompasses what will happen to God's people (all genuine believers in union with Christ).<sup id="cite_ref-StampsLife_b_52-0" class="reference"><a href="#cite_note-StampsLife_b-52">&#91;52&#93;</a></sup> Paul uses the word predestination in five of its six occurrences in the New Testament.<sup id="cite_ref-53" class="reference"><a href="#cite_note-53">&#91;53&#93;</a></sup> For Paul, predestination has emphasis on Christians corporately and on the future and final goals God has prepared for those in union with Christ.<sup id="cite_ref-54" class="reference"><a href="#cite_note-54">&#91;54&#93;</a></sup> Predestination is concerned with what God has determined beforehand on behalf of those who <i>are</i> (or <i>will be</i>) Christians, not <i>how</i> certain people become Christians nor <i>who</i> will become Christians.<sup id="cite_ref-55" class="reference"><a href="#cite_note-55">&#91;55&#93;</a></sup> No one is predestined to <i>become</i> a Christian, but rather, <i>as</i> Christians (collectively) we have a glorious future destiny awaiting us.<sup id="cite_ref-56" class="reference"><a href="#cite_note-56">&#91;56&#93;</a></sup> God has predestined his elect ones "to be conformed to the image of his Son" (Romans 8:29);<sup id="cite_ref-57" class="reference"><a href="#cite_note-57">&#91;57&#93;</a></sup> to "adoption as sons through Jesus Christ to Himself" (Ephesians 1:5);<sup id="cite_ref-58" class="reference"><a href="#cite_note-58">&#91;58&#93;</a></sup> and to "bring praise to His glory" (Ephesians 1:11-12).<sup id="cite_ref-59" class="reference"><a href="#cite_note-59">&#91;59&#93;</a></sup> Like election, predestination refers to the corporate body of Christ and encompasses individuals only in connection with that body through an abiding faith in Jesus Christ (Ephesians 1:5, 7, 13; cf. Acts 2:38-41; 16:31).<sup id="cite_ref-StampsLife_b_52-1" class="reference"><a href="#cite_note-StampsLife_b-52">&#91;52&#93;</a></sup>
+</p>
+<h4><span class="mw-headline" id="Analogy_for_corporate_election_and_predestination">Analogy for corporate election and predestination</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=16" title="Edit section: Analogy for corporate election and predestination"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The relationship of corporate election and predestination could be compared to a ship (i.e., the church, the body of Christ) on its way to its future and final destination (i.e., conformity to the image of Christ). The ship is chosen by God to be his very own vessel. Christ is the chosen Captain and Pilot of this chosen ship. God desires that everyone would come aboard this ship and has graciously made provisions for them to do so through its Captain. Only those who place their trust in the Captain of the ship are welcomed to come on board. As long as they remain on the ship, through a living faith in the ship's Captain, they are among the elect. If they choose to abandon the ship and its Captain through unbelief, they cease to be among the elect. Election is experienced only in union with the Captain and his ship. Predestination tells us about the ship's future direction and final destination that God has prepared for those remaining on it. God, out of his immense love, invites everyone to come aboard the ship through faith in the ship's Captain, Jesus Christ.<sup id="cite_ref-60" class="reference"><a href="#cite_note-60">&#91;60&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Corporate_election_as_it_relates_to_perseverance_and_apostasy">Corporate election as it relates to perseverance and apostasy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=17" title="Edit section: Corporate election as it relates to perseverance and apostasy"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Ben Witherington sees the concept of election being inter-connected with the concepts of predestination and perseverance. One's view of election will affect, if not determine, how one views the saint's perseverance.<sup id="cite_ref-61" class="reference"><a href="#cite_note-61">&#91;61&#93;</a></sup> If one believes that God chose some individuals before the foundation of the world to be saved, then it necessarily follows that one has to believe that apostasy is impossible for a genuine Christian person, someone who is truly one of the elect. But there are just too many warnings in the New Testament that warn Christians about falling prey to temptation, or about making a shipwreck of their faith, about grieving or quenching the Holy Spirit in their lives, or about committing apostasy or the unforgivable sin. If this can happen to real Christians who have been indwelt by the Holy Spirit, and who have been destined in advance to be conformed to the image of Christ, but these sins can be committed and would result in a fall from salvation, then something is wrong with the Calvinist concept of election. For Paul, election is a corporate thing. It was in ethnic Israel, but now it is in union with Christ. Paul’s viewpoint of election is simply, according to Witherington, an adaptation of the view found in early Judaism, where one's "election" does not guarantee the final salvation of an individual Christian any more than it guaranteed the final salvation of an individual Israelite in the past. Since "apostasy was and could be committed by individual Israelites, whom God then broke off from the people of God, at least temporarily (see <a href="/wiki/Epistle_to_the_Romans" title="Epistle to the Romans">Romans</a> 11:11-24), so there was also the same danger for individual Christians, hence all the warnings about falling away . . . ."<sup id="cite_ref-62" class="reference"><a href="#cite_note-62">&#91;62&#93;</a></sup>
+Robert Shank argues that the certainty of election and perseverance is not given to individual men <i>unconditionally</i>, but rather to the church (<i>ekklēsia</i>), the corporate body of all who are in a faith union with Christ, God's Chosen and righteous Servant (<a href="/wiki/Isaiah" title="Isaiah">Isaiah</a> 42:1-7; 49:1-12; 52:13–53:12; 61:1, 2).<sup id="cite_ref-63" class="reference"><a href="#cite_note-63">&#91;63&#93;</a></sup>
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1210016689"><blockquote class="templatequote">
+<p><b>God's Eternal Purpose in Grace:</b>
+</p>
+<dl><dd>Ephesians 1:3-4. Praise be to the God and Father of our Lord Jesus Christ, who has blessed us in the heavenly realms with every spiritual blessing in Christ. For he chose us in him before the creation of the world to be <i>holy and blameless</i> in his sight. (NIV)</dd></dl>
+<p><b>Corporate Fulfillment (<i>certain</i>):</b>
+</p>
+<dl><dd>Ephesians 5:25-27. Husbands, love your wives, just as Christ loved the church and gave himself up for her to make her holy, cleansing her by the washing with water through the word, and to present her to himself as a radiant church, without stain or wrinkle or any other blemish, but <i>holy and blameless</i>. (NIV)</dd></dl>
+<p><b>Individual Fulfillment (<i>conditional</i>):</b>
+</p>
+<dl><dd>Colossians 1:21-23. And you, who once were alienated and hostile in mind, doing evil deeds, he has now reconciled in his body of flesh by his death, in order to present you <i>holy and blameless</i> and above reproach before him, if indeed you continue in the faith, stable and steadfast, not shifting from the hope of the gospel that you heard, which has been proclaimed in all creation under heaven, and of which I, Paul, became a minister. (ESV)<sup id="cite_ref-64" class="reference"><a href="#cite_note-64">&#91;64&#93;</a></sup></dd></dl></blockquote>
+<p>For Shank it was faulty to assume that final salvation with God is inevitable for everyone who has once entered into a saving relationship with Christ since this ignores the many explicit warnings found not only elsewhere in the Scriptures, but in the Colossians passage just quoted.<sup id="cite_ref-65" class="reference"><a href="#cite_note-65">&#91;65&#93;</a></sup>
+</p><p><a href="/wiki/B._J._Oropeza" title="B. J. Oropeza">B.J. Oropeza</a> argues in a similar manner but from different passages. Based on his understanding of what Paul is communicating to his readers in 1 Corinthians 10 and Romans 9-11, Oropeza questions the assumption that unconditional election unto final salvation is guaranteed for the individual Christian, as is argued by some in Romans 8:28-39. Since Paul seems to consider both Israel and Christians as corporately elect in Romans 9-11, then, when election with the goal of final salvation is in view, Paul seems to be speaking of communities rather than individuals. The predestination and election of Christians in Romans 8:29-30 appears to rest on Paul's assumption that election unto final salvation concerns the election of a community rather than individuals. Paul uses plural and collective words such as "those," "many," and so forth to refer to the Christians in 8:28-39. Like the Christian community, Israel itself is called, elect, and beloved of God (Romans 11:28-29; cf. 11:2), yet many in Israel committed apostasy so that in the present age, they do not partake of God's salvation. The corporate election of Israel is definitely in view when Paul states that all Israel will be saved in the "not yet" future (Rom. 11:26). Nevertheless, right now, in this present age, as Romans 11 and 1 Corinthians 10 suggests, individuals and subgroups who are part of the elect community (whether Jews or Gentiles) can fall into unbelief (i.e., commit apostasy) and be cut off from salvation (cf. Romans 11:22).<sup id="cite_ref-66" class="reference"><a href="#cite_note-66">&#91;66&#93;</a></sup>
+</p><p>Oropeza goes on to add that if Paul is addressing the assurance of election to final salvation in Romans 8:28-39, then this promise appears to be tied to a community rather than individuals per se. First, as in 1 Corinthians 10, Paul's employs the Deuteronomic tradition as a background for his arguments in Romans chapters 9-11. In this tradition, Paul appears to hold to a corporate view of election (cf. Deuteronomy 7:6ff) while at the same time believing that apostasy can happen to individuals and sub-groups (cf. Deuteronomy 13:1ff; 29:18-20). This is evident in Romans 8 where Paul warns believers that if they live after the flesh they must die (i.e., become eternally separated from God; see Romans 8:12-13 cf. 11:22; 14:13, 15, 23). But in 8:28-39, Paul does not contemplate whether personal sin or unbelief could finally sever a Christian from their saving relationship with God. Therefore, the promise of final salvation in this passage does not necessarily apply to those Christians who are living according to flesh. In other words, Paul seems to affirm in 8:28-39 that the corporate community is foreknown, predestined and elect in the eternal plan of God and will persevere to final glorification. This would provide a great source of comfort to Paul’s readers when he mentions the various trials that the Christians in Rome may face. The readers, as individuals, can find comfort in the promises of this passage, but only if they remain members of the Christian community. This passage focuses on the Christian community as elect, rather than on the Christian individual. A person who is not residing in this community has no claim to partake of its promises.<sup id="cite_ref-67" class="reference"><a href="#cite_note-67">&#91;67&#93;</a></sup>
+</p><p>Oropeza concludes that Paul's use of the terms predestination and election in Romans 8:28-39 give no necessary indication that genuinely elect individuals cannot commit apostasy. Paul believed that God can choose, foreknow, and predestine an elect people to final salvation even though individual members can fall away due to unbelief (cf. Romans 11). Some elect may apostatize, perhaps even most, but never all.<sup id="cite_ref-68" class="reference"><a href="#cite_note-68">&#91;68&#93;</a></sup>
+</p>
+<blockquote>
+<p>Paul's thought here is consistent with many ancient Israelite traditions which portray the reality of individual and sub-group apostasies within the elect community while at the same time maintaining the continuity of that community as a whole. In every episode of Israel's tradition history, a faithful remnant survives after apostasy and judgment/expulsion occur (e.g., Deuteronomy 4:23-31). Paul habitually cites or echoes the Jewish traditions for authoritative support of his arguments, and for him, there is an analogy between Israel and Christians in relation to election (Romans 11; 1 Corinthians 10). It seems implausible that he would have divorced himself so completely from the presuppositions of his Jewish heritage that he now teaches that individuals which make up the elect body are each unconditionally preserved so as to never be able to completely fall away.<sup id="cite_ref-69" class="reference"><a href="#cite_note-69">&#91;69&#93;</a></sup>
+</p>
+</blockquote>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=18" title="Edit section: Notes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width reflist-columns-2">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Donald C. Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Brian Abasciano: "Most simply, corporate election refers to the choice of a group, which entails the choice of its individual members by virtue of their membership in the group. Thus, individuals are not elected as individuals directly, but secondarily as members of the elect group. Nevertheless, corporate election necessarily entails a type of individual election because of the inextricable connection between any group and the individuals who belong to it. Individuals are elect as a consequence of their membership in the group." ("Clearing Up Misconceptions About Corporate Election," <i>Ashland Theological Journal</i> 41 (2009):60.</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">William Klein, <i>The New Chosen People: A Corporate View of Election</i>, 180.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><i>God's Strategy in Human History</i>, 180.</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Abasciano notes: "And as F.F. Bruce succinctly states in relation to the 'in Christ' phrase of 1:4, Christ 'is the Chosen One of God par excellence.' The point is confirmed in Ephesians 1:6, which refers to Christ as the Beloved in whom God's grace has been lavished on us (the Church/believers), a term that signifies Christ as the Chosen One, most likely grounded in the title's use as a designation of God's chosen people in the Old Testament (LXX Deuteronomy 32:15; 33:5, 12, 26; Isaiah 5:1, 7; 44:2; Jeremiah 11:15; 12:7) and in the elective significance of love terminology in the Old Testament (e.g., Malachi 1:2), terminology that carries over into the New Testament in application to Christ (Colossians 1:13; Mark 1:11; 9:7 and parallels; Mark 12:6; Luke 20:13) and the Church (1 Thessalonians 1:4; 2 Thessalonians 2:13; Romans 9:25; Colossian 3:12) in various texts" ("Clearing Up Misconceptions About Corporate Election," 60).</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">
+Klein, <i>The New Chosen People</i>, 179-180. <i>So</i> Paul Marston and Roger Forster: "The church is elect because it is in Christ and <i>he</i> is elect. . . . The Bible does <i>not</i> say that we are chosen <i>to be put into</i> Christ, but that we were chosen <i>in</i> Christ. Our election is not separate from his election. . . . The prime point is that the election of the church is a corporate rather than an individual thing. It is not that individuals are in the church because they are elect, it is rather that they are elect because they are in the church, which is the body of the elect One" (<i>God's Strategy in Human History</i>, 149, 150, 155).</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Robert Shank, <i>Elect in the Son: A Study of the Doctrine of Election</i>, 27. Stamps, <i>Life in the Spirit Study Bible</i>, 1854. J. Wesley Adams with Donald C. Stamps (posthumously), "Ephesians," in <i>Life in the Spirit New Testament Commentary</i>, 1027. Arminians who hold to individual election unto salvation (i.e., Jacobus Arminius himself) affirm that it is Christocentric as well (see Robert Picirilli, <i>Grace, Faith, Free Will. Contrasting Views of Salvation: Calvinism and Arminianism</i>, 49).</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1027.</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Shank, <i>Elect in the Son</i>, 28. Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028.</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1027. William Klein, <i>The New Chosen People</i>, 97-98.</span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028. More translations have the words "the Son of God" rather than "the Chosen One of God" in John 1:34. However, D. A. Carson says: "A very good case can be made for the view that the best reading here is 'this is the Chosen One of God' (<i>ho eklektos</i> instead of <i>ho huios</i>). Textual support for 'Chosen One' is significant . . . . 'Son' is a common designation for Jesus in the Fourth Gospel (1:49; 5:16-30); 'the Elect One' in not elsewhere attested in this book. Copyists were therefore more likely, on balance, to change 'the Elect One of God' into 'the Son of God' than the reverse, especially since the former could be construed to support adoptionism. If so, 'the Elect One of God' is original, and John is probably making a direct reference to Isaiah 42:1, where God promises to pour out his Spirit on his servant, his 'chosen one' (LXX <i>ho eklektos</i>). . . . Jesus himself is God's chosen one <i>par excellence</i> – chosen as the suffering servant, the Lamb of God who takes away the sin of the world" (<i>The Gospel According to John</i>, 152). Gary M. Burge holds to the same view in the <i>NIV Application Commentary: John</i> (Grand Rapids: Zondervan, 2000), 74.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 245. Shank, <i>Elect in the Son</i>, 30. Stamps, <i>Life in the Spirit Study Bible</i>, 1854.</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Shank, <i>Elect in the Son</i>, 31. Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028.</span>
+</li>
+<li id="cite_note-StampsLife_a-13"><span class="mw-cite-backlink">^ <a href="#cite_ref-StampsLife_a_13-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-StampsLife_a_13-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1854.</span>
+</li>
+<li id="cite_note-AdamsStamps-14"><span class="mw-cite-backlink">^ <a href="#cite_ref-AdamsStamps_14-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-AdamsStamps_14-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028.</span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><i>The Problem with Evangelical Theology: Testing the Exegetical Foundations of Calvinism, Dispensationalism and Wesleyanism</i>, 63-64.</span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><i>The New Chosen People</i>, 257-258. In another place he says the New Testament writers "<i>present 'election to salvation' as corporate</i>. . . . Election concerns the church—the corporate body of Christians. The church finds her election in her union with Christ. On this point both the Arminian and the Calvinist deviate from the biblical perspective when they try to explain salvific election as God's choice of individuals. The biblical perspective is corporate. God has chosen a people to save." (Klein, <i>The New Chosen People</i>, 21). <i>So</i> also Shank, <i>Elect in the Son</i>, 45; Stamps, <i>Life in the Spirit Study Bible</i>, 1854; Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028.</span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028.</span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 243. After these descriptions Klein writes: "There can be no doubt that Peter pictures the church in corporate terms" (<i>The New Chosen People</i>, 243).</span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Klein, <i>The New Chosen People</i>, 211. Shank, <i>Elect in the Son</i>, 48, 50. Adams and Stamps note: "We become one of the elect when, by faith, Christ's redemptive death on cross becomes the basis for our 'forgiveness of sins, in accordance with the riches of God's grace' (Ephesians 1:7)" (<i>Life in the Spirit New Testament Commentary</i>, 1028). Paul Marston and Roger Forster say, "The prime point is that the election of the church is a corporate rather than an individual thing. It is not that individuals are in the church because they are elect, it is rather that they are elect because they are in the church, which is the body of the elect One" (<i>God's Strategy in Human History</i>, 155).</span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text">"Clearing Up Misconceptions About Corporate Election," 61.</span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text">"Clearing Up Misconceptions About Corporate Election," 61-62. O. Eissfeldt notes: "To Israelite thought, which in this connection is quite in harmony with Semitic thought in general and also has parallels outside the Semitic world, unity is prior to diversity, the community prior to the individual; the real entity is the community, and the individuals belonging to it have their origin therein. He argues that this applies particularly to blood-communities who owe their being and destiny to a particular ancestor" (as quoted in Klein, <i>The New Chosen People</i>, 36-37).</span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 180; Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Shank, <i>Elect in the Son</i>, 49, 206. Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028.</span>
+</li>
+<li id="cite_note-StampsLife-23"><span class="mw-cite-backlink">^ <a href="#cite_ref-StampsLife_23-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-StampsLife_23-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1854. Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1028. Shank, <i>Elect in the Son</i>, 49, 207.</span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text">"Clearing Up Misconceptions About Corporate Election," 77. <i>So</i> also Klein, <i>The New Chosen People</i>, 281-282. Stamps, <i>Life in the Spirit Study Bible</i>, 1854; Shank, <i>Elect in the Son</i>, 99.</span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 59. Klein, <i>The New Chosen People</i>, 21.</span>
+</li>
+<li id="cite_note-AbascianoClearing-26"><span class="mw-cite-backlink">^ <a href="#cite_ref-AbascianoClearing_26-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-AbascianoClearing_26-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 59.</span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 59. C. Samuel Storms is representative of the Traditional Calvinist position: "Divine election may be defined as that loving and merciful decision by God the Father to bestow eternal life upon some, but not all, hell-deserving sinners. . . . One does not enter the ranks of the elect by meeting a condition, be it faith or repentance. One enters the ranks of the elect by virtue of God's free and altogether gracious choice, as a result of which he enables us to repent and believe." (<i>Chosen For Life. An Introductory Guide to the Doctrine of Divine Election</i>, 30-31).</span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 59. Robert Picirilli is representative of the Arminian position: "1. God, in eternity, elected some to be saved. Ephesians 1:4 uses the word 'elected.' . . . 2. this election is 'in Christ' (Ephesians 1:4). . . . 3. this election is election <i>of believers</i> (1 Corinthians 1:21). John 6:39, 40 (along with 5:21, 24) indicates that the will of God in eternity, as revealed by His Son in time, is that <i>believers</i> be saved. Romans 9-11 indicates that God shows saving mercy to whom he pleases and that He pleases to show this saving mercy to those who put faith in Jesus Christ. Thus election is conditional and faith is the condition. 4. This election is 'according to foreknowledge' (1 Peter 1:2), where 'foreknowledge' may mean either prescience, foresight, or foreplanning—or a blending of all three. 5. For the elect God has 'foreordained' (KJV, 'predestinated') certain salvation blessings (Romans 8:29, 30, Ephesians 1:3-14). 6. In election and foreordination, everything is grounded on, and in accord with, the sovereign will (= good pleasure, purpose, counsel) of God (Ephesians 1:3-14)." (<i>Grace, Faith, Free Will. Contrasting Views of Salvation: Calvinism and Arminianism</i>, 83-84)</span>
+</li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 62. Shank, <i>Elect in the Son</i>, 49.</span>
+</li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text">As quoted in Klein, <i>The New Chosen People</i>, 36. <i>So</i> Abasciano, "Corporate Election in Romans 9: A Reply to Thomas Schreiner," 353. Klein says, "The Old Testament data concerning God's election naturally leads to a major conclusion—<i>election is primarily a corporate concept</i>" (<i>The New Chosen People</i>, 35). Klein mentions that "R. P. Shedd convincingly marshals six kinds of data that show the extent of corporateness in the Old Testament" (<i>The New Chosen People</i>, 37; see Klein's summary of these points on the page 37).</span>
+</li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 28.</span>
+</li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 25.</span>
+</li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 28. Many other texts assert God's choice of Israel: Deuteronomy 4:37-38; 7:7; 14:2; 1 Kings 3:8; 1 Chronicles 16:13; Psalm 105:6, 43; 132:13-14; Isaiah 43:20-21; 44:1-2; 49;7; 65:9, 15, 22; Ezekiel 20:5 (Klein, <i>The New Chosen People</i>, 28). "Israel could not attribute her election to anything within the nation herself. Beginning with God's selection of the patriarch Abraham (Genesis 18:18-19; cf. 12:1-4; 17:1-8; Deuteronomy 4:37), Israel owes its existence as God's people solely to his gracious, unmerited choice. The writer of Deuteronomy make this clear: The LORD did not set his affection on you and choose you because you were more numerous than other peoples, for you were the fewest of all peoples. But it was because the LORD loved you and kept the oath he swore to your ancestors that he brought you out with a mighty hand and redeemed you from the land of slavery . . . . (Deuteronomy 7:7-8)" (Klein, <i>The New Chosen People</i>, 29-30).</span>
+</li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 37-38. Klein remarks that God's choice of Israel was for the purpose that she would "serve him and reflect his character and ways to the nations . . . . Thus Israel's election does not mean that God has rejected the other nations. Rather, election creates for Israel the task of representing God among the nations so salvation might come to them" (<i>The New Chosen People</i>, 43). For an extensive discussion on the corporate concept of election in the Old Testament see Klein, <i>The New Chosen People</i>, 25-44; and the article by A. Philip Brown, II, "Election in the Old Testament," in the External link.</span>
+</li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text">"Corporate Election in Romans 9: A Reply to Thomas Schreiner," 356.</span>
+</li>
+<li id="cite_note-TheNew-36"><span class="mw-cite-backlink">^ <a href="#cite_ref-TheNew_36-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-TheNew_36-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><i>The New Chosen People</i>, 258.</span>
+</li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text">Abasciano, "Corporate Election in Romans 9: A Reply to Thomas Schreiner," 356.</span>
+</li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text">"Corporate Election in Romans 9: A Reply to Thomas Schreiner," 353.</span>
+</li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-39">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 260-261)</span>
+</li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text">Abasciano quoting Gary Burnett in "Corporate Election in Romans 9: A Reply to Thomas Schreiner," 357.</span>
+</li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text">Abasciano, "Corporate Election in Romans 9: A Reply to Thomas Schreiner," 357-358.</span>
+</li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text">Abasciano, "Corporate Election in Romans 9: A Reply to Thomas Schreiner," 356-357.</span>
+</li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text">Abasciano, "Corporate Election in Romans 9: A Reply to Thomas Schreiner," 358.</span>
+</li>
+<li id="cite_note-AbascianoClearing_a-44"><span class="mw-cite-backlink">^ <a href="#cite_ref-AbascianoClearing_a_44-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-AbascianoClearing_a_44-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 60.</span>
+</li>
+<li id="cite_note-AbascianoClearing_b-45"><span class="mw-cite-backlink">^ <a href="#cite_ref-AbascianoClearing_b_45-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-AbascianoClearing_b_45-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 63.</span>
+</li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b><a href="#cite_ref-46">^</a></b></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 64</span>
+</li>
+<li id="cite_note-AbascianoClearing_c-47"><span class="mw-cite-backlink">^ <a href="#cite_ref-AbascianoClearing_c_47-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-AbascianoClearing_c_47-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 64.</span>
+</li>
+<li id="cite_note-48"><span class="mw-cite-backlink"><b><a href="#cite_ref-48">^</a></b></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 64-65.</span>
+</li>
+<li id="cite_note-49"><span class="mw-cite-backlink"><b><a href="#cite_ref-49">^</a></b></span> <span class="reference-text">Abasciano, "Clearing Up Misconceptions About Corporate Election," 65.</span>
+</li>
+<li id="cite_note-50"><span class="mw-cite-backlink"><b><a href="#cite_ref-50">^</a></b></span> <span class="reference-text">"Clearing Up Misconceptions About Corporate Election," 65.</span>
+</li>
+<li id="cite_note-51"><span class="mw-cite-backlink"><b><a href="#cite_ref-51">^</a></b></span> <span class="reference-text">"Clearing Up Misconceptions About Corporate Election," 65. Abasciano goes on to note "that the church's election is the fulfillment of Israel's election. More specifically, in the New Testament Christ is viewed as the true Israel, and therefore the Church is also considered to be the true Israel because it is in Christ" ("Clearing Up Misconceptions About Corporate Election," 65).</span>
+</li>
+<li id="cite_note-StampsLife_b-52"><span class="mw-cite-backlink">^ <a href="#cite_ref-StampsLife_b_52-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-StampsLife_b_52-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1855.</span>
+</li>
+<li id="cite_note-53"><span class="mw-cite-backlink"><b><a href="#cite_ref-53">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 184. Klein adds, "In some uses the verbs <i>proetomimazo</i> and <i>tithemi</i> portray God as the Predestiner" (<i>The New Chosen People</i>, 184).</span>
+</li>
+<li id="cite_note-54"><span class="mw-cite-backlink"><b><a href="#cite_ref-54">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 184-185.</span>
+</li>
+<li id="cite_note-55"><span class="mw-cite-backlink"><b><a href="#cite_ref-55">^</a></b></span> <span class="reference-text">Klein, <i>The New Chosen People</i>, 185. <i>So</i> Marston and Forster: "The most important point to grasp about predestination is that it concerns man's future destiny. It does <i>not</i> concern who should, or should not, <i>become</i> Christians, but rather their destiny <i>as</i> Christians. The word is used only four times with reference to the church, twice in Romans 8 and twice in Ephesians 1. Both of these passages are concerned with the future destiny and tasks of the church. They are not concerned with how anyone <i>came to be</i> a Christian" (<i>God's Strategy in Human History</i>, 93).</span>
+</li>
+<li id="cite_note-56"><span class="mw-cite-backlink"><b><a href="#cite_ref-56">^</a></b></span> <span class="reference-text">Marston and Forster, <i>God's Strategy in Human History</i>, 93.</span>
+</li>
+<li id="cite_note-57"><span class="mw-cite-backlink"><b><a href="#cite_ref-57">^</a></b></span> <span class="reference-text">Klein says, "This conformation to Christ refers not only to the final transformation to occur at Christ's return, but also to the lifelong process of change that God effects in the lives of believers. God determined that those in the foreknown group would become like Christ" (<i>The New Chosen People</i>, 185).</span>
+</li>
+<li id="cite_note-58"><span class="mw-cite-backlink"><b><a href="#cite_ref-58">^</a></b></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1855. Paul goes on to say that predestination to adoption as sons "is according to the kind intention of His will, to the praise of the glory of His grace, which He freely bestowed on us in the Beloved" (Ephesians 1:5-6). Klein says, "Paul identifies God's pleasurable will as the impetus behind what God predetermined for his people. Predestination is not capricious, arbitrary, or accidental; rather it is purposeful and pleasurable. God has marked out or predetermined a goal for the ones chosen in Christ. He purposed to mark out for them the most desirable of all gifts: adoption into his family as his children" (<i>The New Chosen People</i>, 186-187).</span>
+</li>
+<li id="cite_note-59"><span class="mw-cite-backlink"><b><a href="#cite_ref-59">^</a></b></span> <span class="reference-text">Stamps, <i>Life in the Spirit Study Bible</i>, 1855. Based on Ephesians 1:11-12, "Predestination results in the praise of God's glory. God has determined beforehand that the body that becomes his inheritance will sing the praises of his glory. Clearly, this parallels a remote goal of predestination in 1:5-6: 'to the praise of his glorious grace'" (<i>The New Chosen People</i>, 187).</span>
+</li>
+<li id="cite_note-60"><span class="mw-cite-backlink"><b><a href="#cite_ref-60">^</a></b></span> <span class="reference-text">Adapted from Stamps, <i>Life in the Spirit Study Bible</i>, 1855; and Adams and Stamps, <i>Life in the Spirit New Testament Commentary</i>, 1029.</span>
+</li>
+<li id="cite_note-61"><span class="mw-cite-backlink"><b><a href="#cite_ref-61">^</a></b></span> <span class="reference-text">Calvinist Millard J. Erickson writes, "The Calvinist affirms that since God has elected certain individuals out of the mass of fallen humanity to receive eternal life, and those so chosen will necessarily come to receive eternal life, it follows that there must be a permanence to their salvation. If the elect could at some point lose their salvation, God's election of them to eternal life would not be truly effectual. Thus, the doctrine of election as understood by the Calvinist requires perseverance as well" (<i>Introducing Christian Doctrine</i>, 329).</span>
+</li>
+<li id="cite_note-62"><span class="mw-cite-backlink"><b><a href="#cite_ref-62">^</a></b></span> <span class="reference-text"><i>The Problem with Evangelical Theology</i>, 62-63.</span>
+</li>
+<li id="cite_note-63"><span class="mw-cite-backlink"><b><a href="#cite_ref-63">^</a></b></span> <span class="reference-text"><i>Life in the Son: A Study of the Doctrine of Perseverance</i>, 366. <i>So</i> also in Shank, <i>Elect in the Son</i>, 206.</span>
+</li>
+<li id="cite_note-64"><span class="mw-cite-backlink"><b><a href="#cite_ref-64">^</a></b></span> <span class="reference-text">Adapted from Shank, <i>Life in the Son</i>, 366. <i>So</i> also Shank, <i>Elect in the Son</i>, 206-207</span>
+</li>
+<li id="cite_note-65"><span class="mw-cite-backlink"><b><a href="#cite_ref-65">^</a></b></span> <span class="reference-text">Shank, <i>Life in the Son</i>, 366. Shank, <i>Elect in the Son</i>, 207.</span>
+</li>
+<li id="cite_note-66"><span class="mw-cite-backlink"><b><a href="#cite_ref-66">^</a></b></span> <span class="reference-text"><i>Paul and Apostasy</i>, 206-208.</span>
+</li>
+<li id="cite_note-67"><span class="mw-cite-backlink"><b><a href="#cite_ref-67">^</a></b></span> <span class="reference-text"><i>Paul and Apostasy</i>, 208-209.</span>
+</li>
+<li id="cite_note-68"><span class="mw-cite-backlink"><b><a href="#cite_ref-68">^</a></b></span> <span class="reference-text"><i>Paul and Apostasy</i>, 209; on Romans 8:28-11:36 see Oropeza <i>Jews, Gentiles, and the Opponents of Paul</i>, 171-199.</span>
+</li>
+<li id="cite_note-69"><span class="mw-cite-backlink"><b><a href="#cite_ref-69">^</a></b></span> <span class="reference-text"><i>Paul and Apostasy</i>, 209-210.</span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=19" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1054258005">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin refbegin-columns references-column-width" style="column-width: 30em">
+<ul><li>Abasciano, Brian J. "Corporate Election in Romans 9: A Reply to Thomas Schreiner," <i>JETS</i> 49/2 (June 2006) 351-71.</li>
+<li>Abasciano, Brian J. "Clearing Up Misconceptions about Corporate Election," <i>Ashland Theological Journal</i> 41 (2009) 67-102.</li>
+<li>Arrington, French L. and Stronstand, Roger, editors. "Ephesians," J. Wesley Adams with Donald C. Stamps (posthumously), <i>Life in the Spirit New Testament Commentary</i> (Grand Rapids: Zondervan, 1999).</li>
+<li>Brand, Chad Owen, editor. <i>Perspectives on Election: Five Views</i> (Nashville: Broadman &amp; Holman Publishers, 2006).</li>
+<li>Burge, Gary M. <i>NIV Application Commentary: John</i> (Grand Rapids: Zondervan, 2000).</li>
+<li>Carson, D. A. <i>The Gospel According to John</i> (Grand Rapids: William B. Eerdmans Publishing Company, 1991).</li>
+<li>Erickson, Millard J. <i>Introducing Christian Doctrine</i>, edited by L. Arnold Hustad (Grand Rapids: Baker Academic, 2005).</li>
+<li>Klein, William W. <i>The New Chosen People: A Corporate View of Election</i> (Grand Rapids: Academie Books/Zondervan, 1990). Second revised and updated edition, Eugene: Wipf and Stock, 2017.</li>
+<li>Marston, Paul and Forster, Roger. <i>God's Strategy in Human History</i>, expanded edition (Eugene: Wipf and Stock Publishers, 2000).</li>
+<li>Oropeza, B. J. <i>Paul and Apostasy: Eschatology, Perseverance, and Falling Away in the Corinthian Congregation</i> (Tübingen: Mohr Siebeck, 2000).</li>
+<li>Oropeza, B. J. <i>Jews, Gentiles, and the Opponents of Paul: The Pauline Letters.</i> Apostasy in the New Testament Communities, volume 2 (Eugene: Cascade, 2012).</li>
+<li>Picirilli, Robert. <i>Grace, Faith, Free Will. Contrasting Views of Salvation: Calvinism and Arminianism</i> (Nashville: Randall House Publications, 2002).</li>
+<li>Shank, Robert. <i>Elect in the Son: A Study of the Doctrine of Election</i> (Minneapolis: Bethany House Publishers, 1970).</li>
+<li>Shank, Robert. <i>Life in the Son: A Study of the Doctrine of Perseverance</i> (Minneapolis: Bethany House Publishers, 1960).</li>
+<li>Snodgrass, Kyle. <i>NIV Application Commentary: Ephesians</i> (Grand Rapids: Zondervan, 1996).</li>
+<li>Stamps, Donald C., General Editor, <i>Life in the Spirit Study Bible</i> (Grand Rapids, Zondervan, 1992, 2003).</li>
+<li>Storms, C. Samuel. <i>Chosen For Life: An Introductory Guide to the Doctrine of Divine Election</i> (Grand Rapids: Baker, 1987).</li>
+<li>Thornhill, A. Chadwick. <i>The Chosen People: Election, Paul and Second Temple Judaism</i> (Downers Grove: IVP Academic, 2015).</li>
+<li>Witherington, Ben. <i>The Problem with Evangelical Theology: Testing the Exegetical Foundations of Calvinism, Dispensationalism and Wesleyanism</i> (Waco: Baylor University Press, 2005).</li></ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Corporate_election&amp;action=edit&amp;section=20" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl><dt>Calvinist views on corporate election</dt></dl>
+<ul><li><a rel="nofollow" class="external text" href="https://archive.org/details/ExcerptFromMichaelBrownesTheBiblicalDoctrineOfSubstitutionAnd">Excursus on Election – Is it Corporate or Individual? by Michael Browne</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.theopedia.com/Election#Corporate_election">Corporate Election</a> - Article from Theopedia.com</li></ul>
+<dl><dt>Arminian views on corporate election<b></b></dt></dl>
+<ul><li><a rel="nofollow" class="external text" href="http://evangelicalarminians.org/A-Concise-Summary-of-the-Corporate-View-of-Election-and-Predestination">"A Concise Summary of the Corporate View of Election and Predestination from an Arminian Perspective"</a></li>
+<li><a rel="nofollow" class="external text" href="http://evangelicalarminians.org/files/Klein.%20Is%20Corporate%20Election%20Merely%20Virtual%20Election.pdf">"Is Corporate Election Merely Virtual Election? A Case Study in Contextualization"</a> by William W. Klein</li>
+<li><a rel="nofollow" class="external text" href="http://evangelicalarminians.org/files/Abasciano%20On%20the%20Corporate%20Perepsective%20of%20Paul%20and%20His%20Culture%20the%20Tarnslation%20of%20Rom.%209_6b,%20and%20Corporate%20Election%20in%20Romans%209.pdf">"On the Corporate Perspective of Paul and His Culture, the Translation of Rom 9:6b, and Corporate Election in Romans 9"</a> by Brian J. Abasciano</li>
+<li><a rel="nofollow" class="external text" href="http://evangelicalarminians.org/files/Article.%20CORPORATE%20ELECTION%20IN%20ROMANS%209.%20Final%20JETS%20Version.pdf">"Corporate Election in Romans 9: A Reply to Thomas Schreiner," <i>Journal of the Evangelical Theological Society</i> 42 (2006): 351-71</a> by Brian J. Abasciano</li>
+<li><a rel="nofollow" class="external text" href="http://evangelicalarminians.org/files/Abasciano.%20Clearing%20Up%20Misconceptions%20about%20Corporate%20Election.%20ATJ.pdf">Brian J. Abasciano, "Clearing Up Misconceptions about Corporate Election", <i>Ashland Theological Journal</i> 41 (2009): 67-102</a> by Brian J. Abasciano</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐int.codfw.main‐88f565f49‐7kw9p
+Cached time: 20240224162524
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.210 seconds
+Real time usage: 0.268 seconds
+Preprocessor visited node count: 1170/1000000
+Post‐expand include size: 7638/2097152 bytes
+Template argument size: 2459/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 40010/5000000 bytes
+Lua time usage: 0.051/10.000 seconds
+Lua memory usage: 1155301/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  207.022      1 -total
+ 25.51%   52.819      1 Template:Cleanup_rewrite
+ 23.09%   47.808      1 Template:Ambox
+ 22.44%   46.454      1 Template:Reflist
+ 21.80%   45.124      1 Template:For
+  8.43%   17.451      2 Template:Quotation
+  4.27%    8.843      1 Template:Refbegin
+  1.06%    2.194      3 Template:Main_other
+  0.58%    1.197      1 Template:Refend
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3743642-0!canonical and timestamp 20240224162524 and revision id 1195942375. Rendering was triggered because: api-parse
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Corporate_election&amp;oldid=1195942375">https://en.wikipedia.org/w/index.php?title=Corporate_election&amp;oldid=1195942375</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Arminianism" title="Category:Arminianism">Arminianism</a></li><li><a href="/wiki/Category:Salvation_in_Protestantism" title="Category:Salvation in Protestantism">Salvation in Protestantism</a></li><li><a href="/wiki/Category:Christian_terminology" title="Category:Christian terminology">Christian terminology</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_rewrite_from_November_2021" title="Category:Wikipedia articles needing rewrite from November 2021">Wikipedia articles needing rewrite from November 2021</a></li><li><a href="/wiki/Category:All_articles_needing_rewrite" title="Category:All articles needing rewrite">All articles needing rewrite</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 15 January 2024, at 21:45<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Corporate_election&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-7cd95bf57f-f9cxb","wgBackendResponseTime":152,"wgPageParseReport":{"limitreport":{"cputime":"0.210","walltime":"0.268","ppvisitednodes":{"value":1170,"limit":1000000},"postexpandincludesize":{"value":7638,"limit":2097152},"templateargumentsize":{"value":2459,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":40010,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  207.022      1 -total"," 25.51%   52.819      1 Template:Cleanup_rewrite"," 23.09%   47.808      1 Template:Ambox"," 22.44%   46.454      1 Template:Reflist"," 21.80%   45.124      1 Template:For","  8.43%   17.451      2 Template:Quotation","  4.27%    8.843      1 Template:Refbegin","  1.06%    2.194      3 Template:Main_other","  0.58%    1.197      1 Template:Refend"]},"scribunto":{"limitreport-timeusage":{"value":"0.051","limit":"10.000"},"limitreport-memusage":{"value":1155301,"limit":52428800}},"cachereport":{"origin":"mw-api-int.codfw.main-88f565f49-7kw9p","timestamp":"20240224162524","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Corporate election","url":"https:\/\/en.wikipedia.org\/wiki\/Corporate_election","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5172455","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5172455","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-01-16T22:20:47Z","dateModified":"2024-01-15T21:45:27Z","headline":"Christian theological doctrine"}</script>
+</body>
+</html>

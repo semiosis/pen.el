@@ -1,0 +1,7 @@
+cd /;  "ebible" "-m" "NASB" "Deuteronomy 30:10-14" "#" "<==" "Deuteronomy"
+cd /;  "ebible" "-m" "NASB" "Deuteronomy 30:10-14" "#" "<==" "Deuteronomy"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "ebible" "-m" "NASB" "Luke 8:21" "#" "<==" "Luke"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "ebible" "-m" "NASB" "-nem" "Luke 6-10" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "ebible" "-m" "NASB" "-nem" "Luke 6-10" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Romans 12:17-19" "#" "<==" "Romans"
+cd /root/.pen/documents/notes;  "ebible" "-m" "NASB" "Hebrews 11:6" "#" "<==" "Hebrews"

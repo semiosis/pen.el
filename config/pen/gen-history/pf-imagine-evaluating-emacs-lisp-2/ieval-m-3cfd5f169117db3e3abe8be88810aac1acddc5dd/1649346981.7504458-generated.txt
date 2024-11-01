@@ -1,0 +1,3 @@
+;; Run function tell-me-a-joke
+(message (eval '(tell-me-a-joke)))
+--> 

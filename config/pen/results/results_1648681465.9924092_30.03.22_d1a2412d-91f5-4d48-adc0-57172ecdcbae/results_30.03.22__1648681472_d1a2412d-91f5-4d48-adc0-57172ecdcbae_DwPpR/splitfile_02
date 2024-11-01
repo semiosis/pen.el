@@ -1,0 +1,4 @@
+"GeneralizedNewtypeDeriving" is a Haskell library that allows you to
+derive instances of Eq, Ord, Show, Read, and Bounded for newtypes.
+
+This is a code example:

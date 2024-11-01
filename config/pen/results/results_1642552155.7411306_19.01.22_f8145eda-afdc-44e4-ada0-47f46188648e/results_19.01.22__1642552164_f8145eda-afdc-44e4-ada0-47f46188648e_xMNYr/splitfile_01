@@ -1,0 +1,5 @@
+The above code is equivalent to:
+def fn(sym):
+    return 'quote ' + str(keyword(sym))
+
+

@@ -1,0 +1,44 @@
+task: "clean prose"
+doc: "Given some prose, clean it to remove things like references, and annotations"
+tags: prose grammar preprocessing nlp-task
+prompt-version: 2
+issues:
+- "Appears to keep the numerical annotations. Not with 1-shot"
+prompt: |+
+  Copy the following passage.
+  Original raw text:
+  <delim>
+  11 The Lord said, “Go out and stand on the mountain(T) in the presence of
+  the Lord, for the Lord is about to pass by.”(U)
+  <delim>
+  The exact same passage, cleaned up:
+  <delim>
+  The Lord said, “Go out and stand on the mountain in the presence of
+  the Lord, for the Lord is about to pass by.”
+  <delim>
+  Copy the following passage.
+  Original raw text:
+  <delim>
+  <passage>
+  <delim>
+  The exact same passage, cleaned up:
+  <delim>
+engine: "OpenAI Davinci"
+temperature: 0.1
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "passage"
+examples:
+- |-
+    19 Now Ahab told Jezebel(A) everything Elijah had done and how he had killed(B) all the
+    prophets with the sword. 2 So Jezebel sent a messenger to Elijah to say, “May the gods
+    deal with me, be it ever so severely,(C) if by this time tomorrow I do not make your life
+    like that of one of them.”(D) 
+filter: on
+completion: off
+insertion: off
+prettifier: pen-pretty-paragraph

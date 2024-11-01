@@ -1,0 +1,7 @@
+ we may want to use a different database for the cache
+# sh-cache: /tmp/sh-cache.db
+
+# The default shell to use when none is specified
+default: /bin/sh
+
+# The default

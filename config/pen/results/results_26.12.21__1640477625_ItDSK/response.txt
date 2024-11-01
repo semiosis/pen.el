@@ -1,0 +1,2 @@
+  declare -f
+root

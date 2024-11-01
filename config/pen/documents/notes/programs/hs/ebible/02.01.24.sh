@@ -1,0 +1,7 @@
+cd /root/.pen/documents/bible-notes;  "ebible" "-m" "RLT" "Matthew 7:6" "#" "<==" "Matthew"
+cd /root/.pen/documents/bible-notes;  "ebible" "-c" "-m" "KJV" "Luke 12:15" "#" "<==" "withopts"
+cd /root/.pen/documents/bible-notes;  "ebible" "-c" "-m" "KJV" "Matthew 5:37" "#" "<==" "withopts"
+cd /root/.pen/documents/bible-notes;  "ebible" "-c" "-m" "KJV" "Matthew 5:40-42" "#" "<==" "withopts"
+cd /root/.pen/documents/bible-notes;  "ebible" "-c" "-m" "KJV" "Matthew 6:1-18" "#" "<==" "withopts"
+cd /root/.pen/documents/bible-notes;  "ebible" "-m" "RLT" "Matthew 6:1-18" "#" "<==" "Matthew"
+cd /root/.pen/documents/notes;  "ebible" "-m" "RLT" "Galatians 1:6-9" "#" "<==" "Galatians"

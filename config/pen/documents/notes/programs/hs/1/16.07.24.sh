@@ -1,0 +1,6 @@
+cd /;  "1" "Corinthians" "7:30-31" "#" "<==" "zsh"
+cd /;  "1" "Corinthians" "7:30-31" "#" "<==" "zsh"
+cd /;  "1" "Corinthians" "7:29-31" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Corinthians" "7:29-31" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Corinthians" "15:25-28" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "John" "2:4" "#" "<==" "zsh"

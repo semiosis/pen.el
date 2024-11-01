@@ -1,0 +1,46 @@
+{
+  "emacs-properties": [
+    {
+      "after-init-hook": "(pen-delay-memoise pen-acolyte-scratch pen-delay-add-keys global-company-mode #[0 \\303\\211\b\\235\\203\u0010\u0000\\304\u0001\b\"\u0010\\301\\305!\\210\\210\t\\205\u001b\u0000\\306 \\210\\307\\211\u0012\\207 [command-line-args desktop-save-mode inhibit-startup-screen --no-desktop delete 0 desktop-read t] 4] global-auto-revert-mode delete-selection-mode pen-set-faces session-initialize-do tramp-register-archive-file-name-handler magit-maybe-define-global-key-bindings magit-auto-revert-mode--init-kludge magit-startup-asserts magit-version forge-startup-asserts table--make-cell-map pen-load-config)",
+      "daemon/server name": "DEFAULT"
+    }
+  ],
+  "pen-buffer-properties ": [
+    {
+      "buffer-name": "*slime-description*",
+      "company-backends": [
+        "dante-company"
+      ],
+      "completion-at-point-functions": [
+        "lispy-clojure-complete-at-point",
+        "cider-complete-at-point"
+      ],
+      "current-major-mode-string": "fundamental-mode",
+      "current-minor-modes-string": [
+        "org-indent-mode",
+        "jump-tree-mode",
+        "global-gumshoe-mode",
+        "apheleia-mode",
+        "dired-async-mode",
+        "cyphejor-mode",
+        "pen-mydefaults-minor-mode",
+        "dap-mode",
+        "pen",
+        "openwith-mode",
+        "slime-popup-buffer-mode",
+        "selected-minor-mode",
+        "company-mode",
+        "semantic-minor-modes-format",
+        "which-key-mode",
+        "ivy-mode",
+        "yas-minor-mode",
+        "projectile-mode",
+        "right-click-context-mode",
+        "global-auto-revert-mode",
+        "override-global-mode",
+        "visual-line-mode"
+      ],
+      "current-mode-hook": null
+    }
+  ]
+}

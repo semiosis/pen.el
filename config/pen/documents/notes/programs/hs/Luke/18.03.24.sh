@@ -1,0 +1,8 @@
+cd /root/notes;  "Luke" "9:23" "#" "<==" "zsh"
+cd /root/notes;  "Luke" "9:59-62" "#" "<==" "zsh"
+cd /root/notes;  "Luke" "18:22" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness;  "Luke" "16:13" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness;  "Luke" "12:33" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness;  "Luke" "9:3" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness;  "Luke" "14:26" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Luke" "18:25" "#" "<==" "zsh"

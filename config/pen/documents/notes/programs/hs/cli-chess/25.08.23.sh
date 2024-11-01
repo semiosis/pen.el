@@ -1,0 +1,5 @@
+cd /;  "cli-chess" "#" "<==" "sh"
+cd /;  "cli-chess" "#" "<==" "sh"
+cd /;  "cli-chess" "#" "<==" "tmux: server"
+cd /;  "cli-chess" "#" "<==" "tmux: server"
+cd /root/notes;  "cli-chess" "#" "<==" "emacs"

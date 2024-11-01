@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: current-prefix-arg
+# group: prefix
+# key: prefix
+# --
+current-prefix-arg

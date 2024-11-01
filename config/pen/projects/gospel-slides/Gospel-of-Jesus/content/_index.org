@@ -1,0 +1,160 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /root/.pen/projects/gospel-slides/Gospel-of-Jesus
+#+HUGO_SECTION: ./
+
+#+TITLE: Gospel of Jesus
+#+DATE: <2023-11-18>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gospel-slides
+
++++ title = "Gospel slides" outputs = ["Reveal"] +++
+
+* Hello world!
+
+This is my first slide.
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  John 3:16
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| John 3:16
+| ‾‾‾‾‾‾‾‾‾
+| “For God so loved the world, that He gave His
+| only begotten Son, that whoever believes in
+| Him shall not perish, but have eternal life.
+| 
+| (NASB)
+#+end_src
+
+AMEN!!
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  John 11:25-26
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| John 11:25-26
+| ‾‾‾‾‾‾‾‾‾‾‾‾‾
+| Jesus said to her, “I am the resurrection and
+| the life; he who believes in Me will live even
+| if he dies, and everyone who lives and
+| believes in Me will never die.
+| 
+| Do you believe this?”
+| 
+| (NASB)
+#+end_src
+
+AMEN!!
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  Romans 3:23
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| Romans 3:23
+| ‾‾‾‾‾‾‾‾‾‾‾
+| for all have sinned and fall short of the
+| glory of God,
+| 
+| (NASB)
+#+end_src
+
+AMEN!!
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  John 15:5
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| John 15:5
+| ‾‾‾‾‾‾‾‾‾
+| I am the vine, you are the branches; he who
+| abides in Me and I in him, he bears much
+| fruit, for apart from Me you can do nothing.
+| 
+| (NASB)
+#+end_src
+
+AMEN!!
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  Psalms 97:10
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| Psalms 97:10
+| ‾‾‾‾‾‾‾‾‾‾‾‾
+| Hate evil, you who love the LORD, Who
+| preserves the souls of His godly ones; He
+| delivers them from the hand of the wicked.
+| 
+| (NASB)
+#+end_src
+
+AMEN!!
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  Matthew 7:13-14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| Matthew 7:13-14
+| ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+| “Enter through the narrow gate; for the gate
+| is wide and the way is broad that leads to
+| destruction, and there are many who enter
+| through it.
+| 
+| For the gate is small and the way is narrow
+| that leads to life, and there are few who find
+| it.
+| 
+| (NASB)
+#+end_src
+
+AMEN!!
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  Luke 20:35
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| Luke 20:35
+| ‾‾‾‾‾‾‾‾‾‾
+| but those who are considered worthy to attain
+| to that age and the resurrection from the
+| dead, neither marry nor are given in marriage;
+| 
+| (NASB)
+#+end_src
+
+AMEN!!
+
+#+BEGIN_SRC bash -n :async :results verbatim code
+  Acts 13:47
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+| Acts 13:47
+| ‾‾‾‾‾‾‾‾‾‾
+| For so the Lord has commanded us, ‘I have
+| placed You as a light for the Gentiles, That
+| You may bring salvation to the end of the
+| earth.’”
+| 
+| (NASB)
+#+end_src
+
+AMEN!!

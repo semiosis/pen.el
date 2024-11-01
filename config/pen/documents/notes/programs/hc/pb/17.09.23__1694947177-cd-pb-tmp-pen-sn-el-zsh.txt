@@ -1,0 +1,7 @@
+cd ; pb /tmp/pen-sn.el # "<==" zsh
+http://ix.io/4GCt/el
+ (defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
+  "Runs command in shell and return the result.
+This appears to strip ansi codes.
+\(sh) does not.
+This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .prompt files"

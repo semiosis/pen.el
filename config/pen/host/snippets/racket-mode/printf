@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: printf
+# group: p
+# key: pf
+# --
+(printf "~a~%" (sum-of-two-integers a b))

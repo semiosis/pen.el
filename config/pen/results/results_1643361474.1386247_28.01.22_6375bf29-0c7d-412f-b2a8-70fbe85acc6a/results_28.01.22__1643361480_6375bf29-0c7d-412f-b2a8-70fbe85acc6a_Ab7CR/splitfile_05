@@ -1,0 +1,18 @@
+|
+    awk '{
+    print "Hello, world!"
+    }'
+#+END_SRC
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Imagine an awk linter"
+  code: |
+    awk '{
+    print "Hello, world!"
+    }'
+
+  output: |
+    Hello, world!
+
+  status

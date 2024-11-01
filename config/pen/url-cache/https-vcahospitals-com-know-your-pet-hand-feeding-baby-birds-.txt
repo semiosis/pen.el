@@ -1,0 +1,1668 @@
+HTTP/1.1 200 OK
+Date: Sat, 16 Dec 2023 00:23:40 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 8362c766dbdd508c-AKL
+CF-Cache-Status: DYNAMIC
+Cache-Control: no-cache, no-store
+Expires: -1
+Set-Cookie: shell#lang=en; path=/; secure; SameSite=None
+Strict-Transport-Security: max-age=31536000;includeSubDomains
+Pragma: no-cache
+Referrer-Policy: strict-origin
+Set-Cookie: ASP.NET_SessionId=hsad2x1ygi304tcaomdsirqi; path=/; secure; HttpOnly; SameSite=None
+Set-Cookie: SC_ANALYTICS_GLOBAL_COOKIE=9afc32d8c0374d258cc192033d941311|False; expires=Tue, 13-Dec-2033 00:23:39 GMT; path=/; secure; HttpOnly; SameSite=None
+X-Azure-Ref: 0C+58ZQAAAABc6QtBuylNQ6WbvodWodr7QUtMMzBFREdFMDMxMQA0N2MyOWYxMS01YTUyLTRhM2YtYTU5YS1kZDc4MTMwYzRjYTA=
+X-Cache: CONFIG_NOCACHE
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Content-Security-Policy: default-src https: data: 'unsafe-inline' 'unsafe-eval' 'self' https://*.eqads.com https://*.msecnd.net https://*.cookielaw.org https://*.cloudflare.com https://*.facebook.net https://*.googleapis.com https://*.gstatic.com https://*.crazyegg.com https://*.facebook.com https://*.google-analytics.com https://*.google.com https://*.googletagmanager.com https://*.googlesyndication.com https://*.doubleclick.net https://*.vimeo.com https://*.secure.payconex.net; worker-src * blob:; worker-src blob:; img-src * blob: data:;
+Server: cloudflare
+
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="en" class="ie9 no-js"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+    <!--Switch OneTrust Domain if a Canada site -->
+
+
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-44585c5de0cd3ad077b","applicationID":"1126933456","transactionName":"NlRVYEsCVxBUAEZQWg8eemJ6TGoKQQZRVkcEclhaTRFWD1kGQBZ8D1VSTA==","queueTime":0,"applicationTime":1331,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:[]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1134281396",accountID:"3753628",trustKey:"3439317",xpid:"VwECUlBRABABVVNUDgIEUlEH",licenseKey:"NRJS-44585c5de0cd3ad077b",applicationID:"1126933456"};;/*! For license information please see nr-loader-spa-1.249.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>A,OP:()=>N,lF:()=>j,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},w={};function A(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!w[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return w[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");w[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=w[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},D={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=D[e])}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.249.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>D,QU:()=>j,_L:()=>I,Gm:()=>H,Lg:()=>L,BV:()=>G,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function D(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,A),r(_[T],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const N={},R=["pushState","replaceState"];function j(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||N[t.debugId]++||(N[t.debugId]=1,c(t).inPlace(window.history,R,"-")),t}var C=r(3239);const O={},P=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||O[t.debugId])return t;O[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,P,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,C.m$)(!1)),e.removeEventListener("error",f,(0,C.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,C.m$)(!1)),e.removeEventListener("error",f,(0,C.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,C.m$)(!1)),e.addEventListener("error",f,(0,C.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function H(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const M={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(M[t.debugId])return t;M[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},B="setTimeout",F="setInterval",U="clearTimeout",Z="-start",V="-",q=[B,"setImmediate",F,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),B+V),r.inPlace(f._A,q.slice(2,3),F+V),r.inPlace(f._A,q.slice(3),U+V),t.on(F+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(B+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,C.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.sessionReplay},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2825);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();A||(w=T.init,A=T.info,x=T.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const S=(0,i.P_)(e.agentIdentifier),D=[A.beacon,A.errorBeacon];v||(S.proxy.assets&&(m(S.proxy.assets),D.push(S.proxy.assets)),S.proxy.beacon&&D.push(S.proxy.beacon),p(),(0,h.EZ)("activatedFeatures",g.T)),E.denyList=[...S.ajax.deny_list||[],...S.ajax.block_internal?D:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),h}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=_),v=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.249.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.249.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-rcwC3TQKAe2v/8lLef/QtCPf7aXHaINQK4rrQfRSqEniSzjfHKp2puNRiDg83LlvldPaSMD6aDSwKPMP36tEEg==",433:"sha512-JeWgZm97pm4zAk+MvNNodtuNUNFe082xN5Zj2RU/N/yCAq3qZMnaiENIF3swHo/Ae+Ju06jx3VeGAH/rqoAEoA==",164:"sha512-yrd1XMobAelLE0xAoM/hP3axL+jcB+V8KhqdTQItU7063qODLZOtgHB/y5KPY0H0Cev/2f7LVwp1KY0//grUmg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.249.0.PROD"]=self["webpackChunk:NRBA-1.249.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(e){return"Call to agent api ".concat(e," failed. The agent is not currently initialized.")}addPageAction(t,r){(0,e.Z)(this.#e("addPageAction"))}setPageViewName(t,r){(0,e.Z)(this.#e("setPageViewName"))}setCustomAttribute(t,r,n){(0,e.Z)(this.#e("setCustomAttribute"))}noticeError(t,r){(0,e.Z)(this.#e("noticeError"))}setUserId(t){(0,e.Z)(this.#e("setUserId"))}setApplicationVersion(t){(0,e.Z)(this.#e("setApplicationVersion"))}setErrorHandler(t){(0,e.Z)(this.#e("setErrorHandler"))}finished(t){(0,e.Z)(this.#e("finished"))}addRelease(t,r){(0,e.Z)(this.#e("addRelease"))}start(t){(0,e.Z)(this.#e("start"))}recordReplay(){(0,e.Z)(this.#e("recordReplay"))}pauseReplay(){(0,e.Z)(this.#e("pauseReplay"))}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,m.D)(e,A)}function A(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),D=i(3239),N=i(7894),R=i(9251);class j extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,N.z)()],void 0,R.t,this.ee)),!0),(0,D.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,N.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var C=i(3081);class O extends f{static featureName=C.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,r),this.importAggregator()}}var P=i(6660);class I{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=P.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,N.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,N.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,N.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,D.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,N.z)()],void 0,r.D.jserrors,this.ee))}),(0,D.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new I(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new I("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new I(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){return e.error instanceof Error?e.error:new I(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let M=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,L,(function(){return M++}))}function B(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var F=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,F.u5)(this.ee),(0,F.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,D.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,D.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=B(i);a&&(n.txSize=a)}this.startTime=(0,N.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,D.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,N.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,N.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,N.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,N.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=B(n.body)||0}function A(e,t){var n;this.endTime=(0,N.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,N.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,N.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?B(e.response):"text"===r||""===r||void 0===r?B(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",w),t.on("fn-start",v),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7144);class ce extends f{static featureName=se.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,se.t,r),this.importAggregator()}}var ue=i(7836);const{FEATURE_NAME:de,START:le,END:fe,BODY:he,CB_END:pe,JS_TIME:ge,FETCH:me,FN_START:ve,CB_START:be,FN_END:ye}=ue;var we=i(4649);class Ae extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[K,p,j,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,F.QU)(n),this.eventsEE=(0,F.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,N.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,N.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,N.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ce,O,Ae,k,class extends f{static featureName=de;constructor(e,t){if(super(e,t,de,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,F._L)(this.ee),s=(0,F.Lg)(this.ee),c=(0,F.BV)(this.ee),u=(0,F.Kf)(this.ee),d=this.ee.get("events"),f=(0,F.u5)(this.ee),h=(0,F.QU)(this.ee),p=(0,F.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[ve]=(0,N.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,N.z)();this[ge]=~~this[ge]+e-this[ve],this[ye]=e}function b(e,t){e.on(t,(function(){this[t]=(0,N.z)()}))}this.ee.on(ve,m),s.on(be,m),a.on(be,m),this.ee.on(ye,v),s.on(pe,v),a.on(pe,v),this.ee.buffer([ve,ye,"xhr-resolved"],this.featureName),d.buffer([ve],this.featureName),c.buffer(["setTimeout"+fe,"clearTimeout"+le,ve],this.featureName),u.buffer([ve,"new-xhr","send-xhr"+le],this.featureName),f.buffer([me+le,me+"-done",me+he+le,me+he+fe],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([ve],this.featureName),s.buffer(["propagate",be,pe,"executor-err","resolve"+le],this.featureName),o.buffer([ve,"no-"+ve],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,me+le),b(f,me+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,D.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    <title>| VCA Animal Hospitals</title>
+
+
+<!-- Open Graph data: fallback for most social media service basic tags -->
+<meta property="og:url" content="https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/"/>
+<meta property="og:site_name" content="Vca"/>
+    <meta property="og:title" content="| VCA Animal Hospitals"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="-/media/2/vca/images/global/vca-logo_alert-banner3.jpg"/>
+
+
+<link hreflang="en-ca" rel="alternate" href="https://vcacanada.com/know-your-pet/hand-feeding-baby-birds/" />
+<link hreflang="en-us" rel="alternate" href="https://vcahospitals.com/know-your-pet/hand-feeding-baby-birds/" />
+    <!-- preload fonts to prevent layout shifiting and flashes -->
+    <link rel="preload" href="/fonts-2/AvenirLTPro-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-BlackOblique.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-HeavyOblique.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-Heavy.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-Book.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-BookOblique.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-LightOblique.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-MediumOblique.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-Oblique.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts-2/AvenirLTPro-Roman.woff2" as="font" type="font/woff2" crossorigin>
+
+
+    
+
+        <link href="/Content-2/css/vca-main.css" rel="stylesheet" />
+
+        <link rel="icon" type="image/x-icon" href="/images-2/favicon.ico">
+
+    
+<meta name="VIcurrentDateTime" content="638382830195006383" />
+<meta name="VirtualFolder" content="/" />
+<script type="text/javascript" src="/vcaLayouts/system/VcaVisitorIdentification.js"></script>
+
+
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGK9DQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PGK9DQ');
+    </script>
+    
+
+    
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        'event': 'dataLayer-loaded',
+        'page': {
+            'hospital-name': '',
+            'hospital-au': '',
+            'hospital-type': 'Main',
+            'region-id': '',
+            'group-id': '',
+            'page-type': 'pet health detail page',
+            'page-variant': 'corporate',
+            'appt-tool': '',
+            'offer-variant': '',
+            'myvca-enabled': 'false',
+            'ccde-enabled':  'false'
+        },
+        'user': {
+            'contactid': '9afc32d8c0374d258cc192033d941311',
+            'userid': undefined,
+            'clientid': undefined,
+            'pet-profiles': '0',
+            'loginStatus': 'False'
+        }
+
+    });
+</script>
+
+<meta name="google-site-verification" content="jqs-fRo4EId4nzdpkiG54rqTvw9OluFUDL7GM2TUFvo" />
+
+
+    
+
+    <!-- datalayer push for myVCA successful login -->
+</head>
+<body>
+    <input type="hidden" name="server" value="vca-prd101-cd4" />
+    
+    
+
+
+    
+
+
+    <div class="alert__banner js-alert-banner">
+        <div class="fluid-container">
+            <div class="alert__banner__slider js-alert__banner__slider">
+                    <div class="alert__banner__item ">
+                        <div class="alert__banner__content">
+                            <div class="alert__banner__item__text collapsed js-alert-banner-text">
+                                <div class="alert__banner__alert-msg-copy" style="display:none">Nationwide, there has been an increase in dogs being affected with Canine Infectious Respiratory Disease Complex (CIRDC), also known as Kennel Cough Complex. For more information, <a href="https://vcahospitals.com/-/media/2/vca/documents/cirdc-outbreak/notice-of-canine-respiratory-illness.ashx" target="_self">click here</a>.</div>
+                                <div class="alert__banner__item__text__message">Nationwide, there has been an increase in dogs being affected with Canine Infectious Respiratory Disease Complex (CIRDC), also known as Kennel Cough Complex. For more information, <a href="https://vcahospitals.com/-/media/2/vca/documents/cirdc-outbreak/notice-of-canine-respiratory-illness.ashx" target="_self">click here</a>.</div>
+                                <button data-id="5e9feda399a442ebbec2fabaf1cd9d1f-Home" class="alert__banner__close-btn close-btn js-alertbanner-alert__banner__close-btn close-btn" aria-label="Close"><i class="fal fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Read More Modal -->
+    <div class="modal-alert__modal read-more modal fade" id="ReadMoreModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-alert__modal-dialog modal-dialog" role="document">
+            <div class="modal-alert__modal-content modal-content">
+                <div class="modal-alert__modal-header modal-header">
+                    <button type="button" class="modal-alert__close-btn close" data-dismiss="modal" aria-label="Close">
+                        <i class="fal fa-times icon"></i>
+                    </button>
+                </div>
+                <div class="modal-alert__modal-body modal-body">
+                    <p class="modal-message"></p> <!-- Note: Message will be filled dynamically" -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="hospital-header header usa-header">
+    <div class="header-wrapper">
+        <div class="row justify-content-center hospital-header__row">
+            <nav class="col column-right d-flex flex-column">
+                <button type="button" class="icon-button mobile-menu-toggler hidden-md hidden-lg js-mega-nav-toggler">
+                    <img src="/images-2/menu.png" alt="Menu">
+                </button>
+
+
+
+<div class="mega-nav js-mega-nav mt-lg-auto" data-id="megaNavData">
+    <div class="mega-nav__inner" data-region="inner">
+        <div class="mega-nav__header mobile">
+            <button type="button" class="mega-nav__close" data-control="mobileClose">
+                <span class="sr-only">Close</span>
+                <span class="fal fa-times"></span>
+            </button>
+                <div class="mobile-sitesearch__wrapper">
+                    <div class="mobile-sitesearch__container  header-sitesearch__container mobile">
+                        <input id="MobileSiteSearchTextMegaNav" class="header-sitesearch__search-input" placeholder="What can we help you with?" value="">
+                        <button class="header-sitesearch__search-btn btn btn-sky-outline-alt active" data-redirect="/search-results">
+                            <span class="d-block d-sm-none"><img src="/images-2/icon_search-default.svg" alt="Search Icon"></span>
+                            <span class="d-none d-sm-block">Search</span>
+                        </button>
+                    </div>
+                </div>
+        </div>
+
+
+        <ul class="hospital-nav mega-nav__nav ">
+                    <li class="mega-nav__item"
+                        data-placeholder="navItem"
+                        data-property="AboutUsNav">
+
+                        <a class="mega-nav__link" href="/about-us" target="|Custom">About Us</a>
+                    </li>
+            <li class="mega-nav__item">
+                    <button type="button" class="hospital-nav mega-nav__link -subnav " data-control="toggle" data-top-level="true">
+Everyday Care                    </button>
+                    <div>
+                        <div class="hospital-nav mega-nav__subnav -l1" data-region="menu">
+                            <ul class="mega-nav__subnav__sidebar-list">
+                                
+                                <li class="mega-nav__header -subnav">
+                                    <button type="button" class="mega-nav__back" data-control="back">
+                                        Main Menu
+                                    </button>
+                                </li>
+                                                                        <li class="mega-nav__item">
+                                            <a href="/careclub" class="mega-nav__link -l2 ">CareClub</a>
+                                        </li>
+                                        <li class="mega-nav__item">
+                                            <a href="/know-your-pet" class="mega-nav__link -l2 ">Know Your Pet</a>
+                                        </li>
+                                        <li class="mega-nav__item">
+                                            <a href="/know-your-pet/dog-breeds" class="mega-nav__link -l2 ">Breed Information</a>
+                                        </li>
+                            </ul>
+                        </div>
+                    </div>
+            </li>
+            <li class="mega-nav__item">
+                    <button type="button" class="hospital-nav mega-nav__link -subnav " data-control="toggle" data-top-level="true">
+Press Center                    </button>
+                    <div>
+                        <div class="hospital-nav mega-nav__subnav -l1" data-region="menu">
+                            <ul class="mega-nav__subnav__sidebar-list">
+                                
+                                <li class="mega-nav__header -subnav">
+                                    <button type="button" class="mega-nav__back" data-control="back">
+                                        Main Menu
+                                    </button>
+                                </li>
+                                                                        <li class="mega-nav__item">
+                                            <a href="/press-center" class="mega-nav__link -l2 ">Press Center</a>
+                                        </li>
+                                        <li class="mega-nav__item">
+                                            <a href="/press-center/vca-events" class="mega-nav__link -l2 ">Events</a>
+                                        </li>
+                            </ul>
+                        </div>
+                    </div>
+            </li>
+            <li class="mega-nav__item">
+<a class="mega-nav__link" rel="noopener noreferrer" href="https://www.vcacareers.com/" target="_blank">Careers</a>            </li>
+            <li class="mega-nav__item">
+                    <button type="button" class="hospital-nav mega-nav__link -subnav " data-control="toggle" data-top-level="true">
+Shop                    </button>
+                    <div>
+                        <div class="hospital-nav mega-nav__subnav -l1" data-region="menu">
+                                <div class="mega-nav__title-container">
+                                    <a href="/shop"
+                                       class="mega-nav__subnav-title"
+                                       alt="SubMenu Title">
+                                        Explore Shop
+                                    </a>
+                                </div>
+                            <ul class="mega-nav__subnav__sidebar-list">
+                                
+                                <li class="mega-nav__header -subnav">
+                                    <button type="button" class="mega-nav__back" data-control="back">
+                                        Main Menu
+                                    </button>
+                                </li>
+                                    <li class="mega-nav__item mobile-only -heading" aria-hidden="true">
+
+                                        <a href="/shop" class="mega-nav__link -l1">
+                                            
+                                            Explore Shop
+                                        </a>
+
+                                    </li>
+                                                                        <li class="mega-nav__item">
+                                            <button type="button"
+                                                    class="hospital-nav mega-nav__link -l1 -subnav "
+                                                    data-control="toggle"
+                                                    data-match-height="true">
+                                                All Products
+                                            </button>
+                                            <div class="hospital-nav mega-nav__subnav -l2" data-region="menu">
+                                                <ul>
+                                                    
+                                                    <li class="mega-nav__header -subnav">
+                                                        <button type="button" class="mega-nav__back" data-control="back">
+                                                            All Products
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="mega-nav__item submenu-list">
+                                                        <ul class="mega-nav__item mega-nav__item-ul">
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-arthritispain" class="mega-nav__item-l3 " >Arthritis &amp; Pain</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-arthritispain-bonejointsupport" class="mega-nav__item-l4 " >Bone &amp; Joint Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-arthritispain-painmedication" class="mega-nav__item-l4 " >Pain Medication</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-arthritispain-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-arthritispain-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-dentalcare" class="mega-nav__item-l3 " >Dental Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-dentalcare-chews" class="mega-nav__item-l4 " >Chews</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-dentalcare-hygiene" class="mega-nav__item-l4 " >Hygiene</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-dentalcare-theraputicdiet" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-earcare" class="mega-nav__item-l3 " >Ear Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-earcare-prevention" class="mega-nav__item-l4 " >Prevention</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-earcare-treatment" class="mega-nav__item-l4 " >Treatment</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-eyecare" class="mega-nav__item-l3 " >Eye Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-eyecare-dryeye" class="mega-nav__item-l4 " >Dry Eye</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-eyecare-glaucoma" class="mega-nav__item-l4 " >Glaucoma</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-eyecare-medication" class="mega-nav__item-l4 " >Medication</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-fleatickprevention" class="mega-nav__item-l3 " >Flea &amp; Tick Prevention</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-fleatickprevention-chewstablets" class="mega-nav__item-l4 " >Chews &amp; Tablets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-fleatickprevention-collarswipessprays" class="mega-nav__item-l4 " >Collars, Wipes &amp; Sprays</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-fleatickprevention-topicalsolutions" class="mega-nav__item-l4 " >Topical Solutions</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-food" class="mega-nav__item-l3 " >Food</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-food-dry" class="mega-nav__item-l4 " >Dry</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-food-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-food-treats" class="mega-nav__item-l4 " >Treats</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-food-wellnessfood" class="mega-nav__item-l4 " >Wellness Food</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-food-wet" class="mega-nav__item-l4 " >Wet</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-heartwormprevention" class="mega-nav__item-l3 " >Heartworm Prevention</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-heartwormprevention-chewstablets" class="mega-nav__item-l4 " >Chews &amp; Tablets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-heartwormprevention-topicalsolutions" class="mega-nav__item-l4 " >Topical Solutions</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-medications" class="mega-nav__item-l3 " >Medications</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-allergysupport" class="mega-nav__item-l4 " >Allergy Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-antibiotics" class="mega-nav__item-l4 " >Antibiotics</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-anxietysupport" class="mega-nav__item-l4 " >Anxiety Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-arthritispain" class="mega-nav__item-l4 " >Arthritis &amp; Pain</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-dewormers" class="mega-nav__item-l4 " >Dewormers</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-diabetescare" class="mega-nav__item-l4 " >Diabetes Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-endocrinesupport" class="mega-nav__item-l4 " >Endocrine Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-gastrointestinalsupport" class="mega-nav__item-l4 " >Gastrointestinal Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-glaucoma" class="mega-nav__item-l4 " >Glaucoma</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-heartcare" class="mega-nav__item-l4 " >Heart Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-respiratorysupport" class="mega-nav__item-l4 " >Respiratory Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-seizuredisorder" class="mega-nav__item-l4 " >Seizure Disorder</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-thyroidsupport" class="mega-nav__item-l4 " >Thyroid Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-medications-urinarytractkidneysupport" class="mega-nav__item-l4 " >Urinary Tract &amp; Kidney Support</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-skincare" class="mega-nav__item-l3 " >Skin Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-skincare-conditioners" class="mega-nav__item-l4 " >Conditioners</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-skincare-leaveintreatments" class="mega-nav__item-l4 " >Leave-In Treatments</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-skincare-medications" class="mega-nav__item-l4 " >Medications</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-skincare-shampoos" class="mega-nav__item-l4 " >Shampoos</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-skincare-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-skincare-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-supplements" class="mega-nav__item-l3 " >Supplements</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-behaviorsupport" class="mega-nav__item-l4 " >Behavior Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-bonejointsupport" class="mega-nav__item-l4 " >Bone &amp; Joint Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-gitractprobiotics" class="mega-nav__item-l4 " >GI Tract &amp; Probiotics</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-heartcare" class="mega-nav__item-l4 " >Heart Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-immuneantioxidantsupport" class="mega-nav__item-l4 " >Immune &amp; Antioxidant Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-livercare" class="mega-nav__item-l4 " >Liver Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-skincoatsupport" class="mega-nav__item-l4 " >Skin &amp; Coat Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplements-utbladderrenal" class="mega-nav__item-l4 " >UT, Bladder &amp; Renal</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-supplies" class="mega-nav__item-l3 " >Supplies</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplies-medicalsupplies" class="mega-nav__item-l4 " >Medical Supplies</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplies-needlessyringes" class="mega-nav__item-l4 " >Needles &amp; Syringes</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-supplies-woundcare" class="mega-nav__item-l4 " >Wound Care</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcategories-urinarycare" class="mega-nav__item-l3 " >Urinary Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-urinarycare-medications" class="mega-nav__item-l4 " >Medications</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-urinarycare-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcategories-urinarycare-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                                                                    </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="hospital-nav mega-nav__view-all-container p-0 pl-lg-3">
+                                                        <a class="ml-lg-3" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mega-nav__item">
+                                            <button type="button"
+                                                    class="hospital-nav mega-nav__link -l1 -subnav "
+                                                    data-control="toggle"
+                                                    data-match-height="true">
+                                                For Dogs
+                                            </button>
+                                            <div class="hospital-nav mega-nav__subnav -l2" data-region="menu">
+                                                <ul>
+                                                    
+                                                    <li class="mega-nav__header -subnav">
+                                                        <button type="button" class="mega-nav__back" data-control="back">
+                                                            For Dogs
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="mega-nav__item submenu-list">
+                                                        <ul class="mega-nav__item mega-nav__item-ul">
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-arthritispain" class="mega-nav__item-l3 " >Arthritis &amp; Pain</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-arthritispain-bonejointsupport" class="mega-nav__item-l4 " >Bone &amp; Joint Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-arthritispain-painmedication" class="mega-nav__item-l4 " >Pain Medication</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-arthritispain-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-arthritispain-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-dentalcare" class="mega-nav__item-l3 " >Dental Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-dentalcare-chews" class="mega-nav__item-l4 " >Chews</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-dentalcare-hygiene" class="mega-nav__item-l4 " >Hygiene</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-dentalcare-theraputicdiet" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-earcare" class="mega-nav__item-l3 " >Ear Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-earcare-prevention" class="mega-nav__item-l4 " >Prevention</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-earcare-treatment" class="mega-nav__item-l4 " >Treatment</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-eyecare" class="mega-nav__item-l3 " >Eye Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-eyecare-dryeye" class="mega-nav__item-l4 " >Dry Eye</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-eyecare-glaucoma" class="mega-nav__item-l4 " >Glaucoma</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-eyecare-medication" class="mega-nav__item-l4 " >Medication</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-fleatickprevention" class="mega-nav__item-l3 " >Flea &amp; Tick Prevention</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-fleatickprevention-chewstablets" class="mega-nav__item-l4 " >Chews &amp; Tablets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-fleatickprevention-collarswipessprays" class="mega-nav__item-l4 " >Collars, Wipes &amp; Sprays</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-fleatickprevention-topicalsolutions" class="mega-nav__item-l4 " >Topical Solutions</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-food" class="mega-nav__item-l3 " >Food</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-food-dry" class="mega-nav__item-l4 " >Dry</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-food-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-food-treats" class="mega-nav__item-l4 " >Treats</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-food-wellnessfood" class="mega-nav__item-l4 " >Wellness Food</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-food-wet" class="mega-nav__item-l4 " >Wet</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-heartwormprevention" class="mega-nav__item-l3 " >Heartworm Prevention</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-heartwormprevention-chewstablets" class="mega-nav__item-l4 " >Chews &amp; Tablets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-heartwormprevention-topicalsolutions" class="mega-nav__item-l4 " >Topical Solutions</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-medications" class="mega-nav__item-l3 " >Medications</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-allergysupport" class="mega-nav__item-l4 " >Allergy Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-antibiotics" class="mega-nav__item-l4 " >Antibiotics</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-anxietysupport" class="mega-nav__item-l4 " >Anxiety Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-arthritispain" class="mega-nav__item-l4 " >Arthritis &amp; Pain</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-dewormers" class="mega-nav__item-l4 " >Dewormers</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-diabetescare" class="mega-nav__item-l4 " >Diabetes Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-endocrinesupport" class="mega-nav__item-l4 " >Endocrine Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-gastrointestinalsupport" class="mega-nav__item-l4 " >Gastrointestinal Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-glaucoma" class="mega-nav__item-l4 " >Glaucoma</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-heartcare" class="mega-nav__item-l4 " >Heart Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-respiratorysupport" class="mega-nav__item-l4 " >Respiratory Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-seizuredisorder" class="mega-nav__item-l4 " >Seizure Disorder</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-thyroidsupport" class="mega-nav__item-l4 " >Thyroid Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-medications-urinarytractkidneysupport" class="mega-nav__item-l4 " >Urinary Tract &amp; Kidney Support</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-skincare" class="mega-nav__item-l3 " >Skin Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-skincare-conditioners" class="mega-nav__item-l4 " >Conditioners</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-skincare-leaveintreatments" class="mega-nav__item-l4 " >Leave-In Treatments</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-skincare-medications" class="mega-nav__item-l4 " >Medications</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-skincare-shampoos" class="mega-nav__item-l4 " >Shampoos</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-skincare-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-skincare-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-supplements" class="mega-nav__item-l3 " >Supplements</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplements-behaviorsupport" class="mega-nav__item-l4 " >Behavior Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplements-bonejointsupport" class="mega-nav__item-l4 " >Bone &amp; Joint Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplements-gitractprobiotics" class="mega-nav__item-l4 " >GI Tract &amp; Probiotics</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplements-immuneantioxidantsupport" class="mega-nav__item-l4 " >Immune &amp; Antioxidant Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplements-livercare" class="mega-nav__item-l4 " >Liver Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplements-skincoatsupport" class="mega-nav__item-l4 " >Skin &amp; Coat Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplements-utbladderrenal" class="mega-nav__item-l4 " >UT, Bladder &amp; Renal</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-supplies" class="mega-nav__item-l3 " >Supplies</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplies-medicalsupplies" class="mega-nav__item-l4 " >Medical Supplies</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplies-needlessyringes" class="mega-nav__item-l4 " >Needles &amp; Syringes</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-supplies-woundcare" class="mega-nav__item-l4 " >Wound Care</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-alldog-urinarycare" class="mega-nav__item-l3 " >Urinary Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-urinarycare-medications" class="mega-nav__item-l4 " >Medications</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-urinarycare-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-alldog-urinarycare-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                                                                    </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="hospital-nav mega-nav__view-all-container p-0 pl-lg-3">
+                                                        <a class="ml-lg-3" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mega-nav__item">
+                                            <button type="button"
+                                                    class="hospital-nav mega-nav__link -l1 -subnav "
+                                                    data-control="toggle"
+                                                    data-match-height="true">
+                                                For Cats
+                                            </button>
+                                            <div class="hospital-nav mega-nav__subnav -l2" data-region="menu">
+                                                <ul>
+                                                    
+                                                    <li class="mega-nav__header -subnav">
+                                                        <button type="button" class="mega-nav__back" data-control="back">
+                                                            For Cats
+                                                        </button>
+                                                    </li>
+
+                                                    <li class="mega-nav__item submenu-list">
+                                                        <ul class="mega-nav__item mega-nav__item-ul">
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-arthritispain" class="mega-nav__item-l3 " >Arthritis &amp; Pain</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-arthritispain-bonejointsupport" class="mega-nav__item-l4 " >Bone &amp; Joint Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-arthritispain-painmedication" class="mega-nav__item-l4 " >Pain Medication</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-arthritispain-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-arthritispain-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-dentalcare" class="mega-nav__item-l3 " >Dental Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-dentalcare-chews" class="mega-nav__item-l4 " >Chews</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-dentalcare-hygiene" class="mega-nav__item-l4 " >Hygiene</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-dentalcare-theraputicdiet" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-earcare" class="mega-nav__item-l3 " >Ear Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-earcare-prevention" class="mega-nav__item-l4 " >Prevention</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-earcare-treatment" class="mega-nav__item-l4 " >Treatment</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-eyecare" class="mega-nav__item-l3 " >Eye Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-eyecare-dryeye" class="mega-nav__item-l4 " >Dry Eye</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-eyecare-glaucoma" class="mega-nav__item-l4 " >Glaucoma</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-eyecare-medication" class="mega-nav__item-l4 " >Medication</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-fleatickprevention" class="mega-nav__item-l3 " >Flea &amp; Tick Prevention</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-fleatickprevention-chewstablets" class="mega-nav__item-l4 " >Chews &amp; Tablets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-fleatickprevention-collarswipessprays" class="mega-nav__item-l4 " >Collars, Wipes &amp; Sprays</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-fleatickprevention-topicalsolutions" class="mega-nav__item-l4 " >Topical Solutions</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-food" class="mega-nav__item-l3 " >Food</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-food-dry" class="mega-nav__item-l4 " >Dry</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-food-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-food-treats" class="mega-nav__item-l4 " >Treats</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-food-wellnessfood" class="mega-nav__item-l4 " >Wellness Food</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-food-wet" class="mega-nav__item-l4 " >Wet</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-heartwormprevention" class="mega-nav__item-l3 " >Heartworm Prevention</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-heartwormprevention-chewstablets" class="mega-nav__item-l4 " >Chews &amp; Tablets</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-heartwormprevention-topicalsolutions" class="mega-nav__item-l4 " >Topical Solutions</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-medications" class="mega-nav__item-l3 " >Medications</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-allergysupport" class="mega-nav__item-l4 " >Allergy Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-antibiotics" class="mega-nav__item-l4 " >Antibiotics</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-anxietysupport" class="mega-nav__item-l4 " >Anxiety Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-arthritispain" class="mega-nav__item-l4 " >Arthritis &amp; Pain</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-dewormers" class="mega-nav__item-l4 " >Dewormers</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-diabetescare" class="mega-nav__item-l4 " >Diabetes Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-endocrinesupport" class="mega-nav__item-l4 " >Endocrine Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-gastrointestinalsupport" class="mega-nav__item-l4 " >Gastrointestinal Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-glaucoma" class="mega-nav__item-l4 " >Glaucoma</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-heartcare" class="mega-nav__item-l4 " >Heart Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-respiratorysupport" class="mega-nav__item-l4 " >Respiratory Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-seizuredisorder" class="mega-nav__item-l4 " >Seizure Disorder</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-thyroidsupport" class="mega-nav__item-l4 " >Thyroid Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-medications-urinarytractkidneysupport" class="mega-nav__item-l4 " >Urinary Tract &amp; Kidney Support</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-skincare" class="mega-nav__item-l3 " >Skin Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-skincare-conditioners" class="mega-nav__item-l4 " >Conditioners</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-skincare-leaveintreatments" class="mega-nav__item-l4 " >Leave-In Treatments</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-skincare-medications" class="mega-nav__item-l4 " >Medications</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-skincare-shampoos" class="mega-nav__item-l4 " >Shampoos</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-skincare-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-skincare-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-supplements" class="mega-nav__item-l3 " >Supplements</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-behaviorsupport" class="mega-nav__item-l4 " >Behavior Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-bonejointsupport" class="mega-nav__item-l4 " >Bone &amp; Joint Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-gitractprobiotics" class="mega-nav__item-l4 " >GI Tract &amp; Probiotics</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-heartcare" class="mega-nav__item-l4 " >Heart Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-immuneantioxidantsupport" class="mega-nav__item-l4 " >Immune &amp; Antioxidant Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-livercare" class="mega-nav__item-l4 " >Liver Care</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-skincoatsupport" class="mega-nav__item-l4 " >Skin &amp; Coat Support</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplements-utbladderrenal" class="mega-nav__item-l4 " >UT, Bladder &amp; Renal</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-supplies" class="mega-nav__item-l3 " >Supplies</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplies-medicalsupplies" class="mega-nav__item-l4 " >Medical Supplies</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplies-needlessyringes" class="mega-nav__item-l4 " >Needles &amp; Syringes</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-supplies-woundcare" class="mega-nav__item-l4 " >Wound Care</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="mega-nav__submenu-item">
+                                                                        <a href="/shop/category/vca_master-vca-allcat-urinarycare" class="mega-nav__item-l3 " >Urinary Care</a>
+                                                                    <ul>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-urinarycare-medications" class="mega-nav__item-l4 " >Medications</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-urinarycare-supplements" class="mega-nav__item-l4 " >Supplements</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/shop/category/vca_master-vca-allcat-urinarycare-therapeuticdiets" class="mega-nav__item-l4 " >Therapeutic Diets</a>
+                                                                            </li>
+                                                                    </ul>
+                                                                </li>
+                                                                                                                    </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="hospital-nav mega-nav__view-all-container p-0 pl-lg-3">
+                                                        <a class="ml-lg-3" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                            </ul>
+                        </div>
+                    </div>
+            </li>
+
+            <li class="mega-nav__item mobile-only">
+                
+            </li>            
+        </ul>
+        
+                <ul class="hospital-nav mobile-zero-nav">
+                        <li class="mega-nav__item -cta">
+                            <a href="/find-a-hospital" target="|Custom" class="mega-nav__link ">
+                                    <span class="mega-nav__cta-icon">
+                                        <img src="/-/media/2/project/common/hospital-regular.ashx?iar=0&amp;mh=40&amp;mw=40&amp;hash=14FDE6758DA1C9DD29AEF46FE90C5591" alt="" DisableWebEdit="False" />
+                                    </span>
+                                                                    <span>
+                                        Find Care
+                                    </span>
+                            </a>
+                        </li>
+                </ul>
+
+        <div class="hospital-nav lower-btns">
+            
+
+
+
+            
+
+        </div>
+    </div>
+</div>
+
+<script type="application/json" id="megaNavData">
+    {
+        "Labels": {
+            "MainMenu": "Main Menu"
+        },
+        "Data": {
+            "AboutUsNav": {"DisplayName":"About Us","Url":null,"Target":"|Custom","Children":[{"DisplayName":"Our Story","Url":"/about-us#our-story","Target":"","Children":[{"DisplayName":"VCA Voice","Url":"/vca-voice","Target":"","Children":null}]},{"DisplayName":"Our Network","Url":"/about-us#our-network","Target":"","Children":null},{"DisplayName":"Our Leadership","Url":"/about-us#our-leadership","Target":"","Children":null},{"DisplayName":"Our Medicine","Url":"/about-us#our-medicine","Target":"","Children":null},{"DisplayName":"How We Work","Url":"/about-us#how-we-work","Target":"","Children":null},{"DisplayName":"Join Us","Url":"/about-us#join-us","Target":"","Children":[{"DisplayName":"Career Opportunities","Url":"https://www.vcacareers.com/","Target":"_blank","Children":null},{"DisplayName":"Grow Your Hospital","Url":"/acquisitions","Target":"","Children":null}]},{"DisplayName":"Social Responsibility","Url":"/about-us#social-responsibility","Target":"","Children":[{"DisplayName":"Pets","Url":"/about-us#social-responsibility","Target":"","Children":[{"DisplayName":"Shelter Partnerships","Url":"/vca-shelter-partnerships","Target":"","Children":null}]},{"DisplayName":"People","Url":"/about-us#social-responsibility","Target":"","Children":null},{"DisplayName":"Planet","Url":"/about-us#social-responsibility","Target":"","Children":null}]},{"DisplayName":"Contact Us","Url":"/contact-us","Target":"","Children":null}]}
+        }
+    }
+</script>
+            </nav>
+
+
+
+
+<div id="myVCALoginModal"
+     class="header-modal myvca-login-corp header-btn-modals mobile bg-color-vca-blue"
+     data-modal_id="myVCALoginModal"
+     style="display: none; background-image: url(../../../images-2/parallax-brand-arrow-overlay.svg);"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myVCALoginBtn"
+     aria-hidden="true">
+
+    <div class="myvca-login-modal-corp">
+        <div class="myvca-login-modal-corp__section section-left">
+            <div class="myvca-login-modal-corp__section__title">
+                Welcome to
+            </div>
+            <img src="/-/media/2/feature/myvca/vca-myvca-logo-white.ashx?iar=0&amp;hash=4A3BD003A49A90F37885B4D765E2BD2B" class="myvca-login-modal__logo" alt="MyVCA Logo" DisableWebEdit="False" />
+        </div>
+        <div class="myvca-login-modal-corp__section section-center">
+            <div class="myvca-login-modal-corp__section__title">
+                Existing Account
+            </div>
+            <div class="myvca-login-modal-corp__section__copy">
+                Already have a myVCA account? Log in 24/7 to access your pet’s health care information.
+            </div>
+                <a href="/login?r=/myvca" target="" class="btn btn-bright-alt-outline myvca-login-modal__btn">Log In Now</a>
+        </div>
+        <div class="myvca-login-modal-corp__section section-right">
+            <div class="myvca-login-modal-corp__section__title">
+                Activate Your Account
+            </div>
+            <div class="myvca-login-modal-corp__section__copy">
+                Looking for a convenient way to access your pet’s health records, refill prescriptions, view upcoming appointments and more? Set up your myVCA account today.
+            </div>
+                <a href="/signup/activate" target="" class="btn btn-bright-alt-outline myvca-login-modal-corp__section__btn myvca-login-modal__btn">Activate Account</a>
+        </div>
+    </div>
+</div>
+
+            <div class="col column-center">
+                <div class="header__logo d-flex justify-content-center align-items-end">
+                        <div class="vca__logo">
+                            <a href="/" class="no-underline">
+                                <img src="/-/media/2/vca/images/global/vca-animal-hospital-logo.ashx" alt="VCA Logo" />
+                            </a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col column-left">
+                
+
+
+
+<div class="utility-nav zero-nav d-flex justify-content-center justify-content-lg-end align-items-end flex-column h-100">
+    <div class="action-btn d-flex">
+        <ul class="zero-nav">
+                    </ul>
+    </div>
+    <nav class="action-nav">
+        <ul class="action-nav__menu d-flex">
+                    <li class="d-none d-lg-flex">
+                        <a href="/find-a-hospital" target="|Custom" class="">
+                            <div class="icon-button icon-button__appointment align-center">
+                                <img src="/-/media/2/project/common/hospital-regular.ashx?iar=0&amp;mh=40&amp;mw=40&amp;hash=14FDE6758DA1C9DD29AEF46FE90C5591" alt="" DisableWebEdit="False" />
+                                    <span>
+                                        Find Care
+                                    </span>
+
+                            </div>
+                        </a>
+                    </li>
+                            <li>
+                                <button type="button" id="myVCALoginBtn" class="action-nav__btn header-btn-modals mr-2 mobile-no-margin" data-modal_id="myVCALoginModal">
+                                    <div class="icon-button">
+                                        <img src="/-/media/2/project/common/circle-user-regular.ashx?iar=0&amp;mh=40&amp;mw=40&amp;hash=21DC3172ECC0653F12C51A65D0333E74" class="login-icon" alt="" DisableWebEdit="False" />
+                                        <span class="d-none d-lg-block">myVCA</span>
+                                    </div>
+                                </button>
+
+                                
+                            </li>
+                    <!-- Site Search -->
+                    <li class="d-none d-lg-flex">
+                        <button id="SiteSearchDesktopIcon" type="button" class="action-nav__btn no-hover px-0 ml-3">
+                            <div class="icon-button">
+                                <!-- Non-active search icon -->
+                                <div class="site-search-icon">
+                                    <img src="/-/media/2/system/page-event-images/search.ashx?iar=0&amp;mh=20&amp;mw=20&amp;hash=DBA8E37764F1152ABA2A77E556C4A696" alt="Search" DisableWebEdit="False" />
+                                </div>
+                                <!-- On click, active search icon -->
+                                <div class="site-search-icon-active" style="display: none;">
+                                    <img src="/-/media/2/system/page-event-images/search-active.ashx?iar=0&amp;mh=38&amp;mw=38&amp;hash=FB79D87361B52BAD52F8DC51CB04446C" alt="Search Active" DisableWebEdit="False" />
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Desktop - Site Search Bar -->
+                        <div id="HeaderSiteSearchDesktop" class="header-sitesearch__desktop" style="display: none;">
+                            <div class="header-sitesearch__arrow"></div>
+                            <div class="header-sitesearch__container">
+                                <input id="DesktopSiteSearchText" class="header-sitesearch__search-input" placeholder="What can we help you with?" value="">
+                                <button class="header-sitesearch__search-btn btn btn-sky-outline-alt active" data-redirect="/search-results">Search</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="SiteSearchMobileIcon" class="icon-button hidden-md hidden-lg">
+                            <img src="/-/media/2/system/page-event-images/search.ashx?iar=0&amp;mh=20&amp;mw=20&amp;hash=DBA8E37764F1152ABA2A77E556C4A696" class="search-icon" alt="Search" DisableWebEdit="False" />
+                        </button>
+                    </li>
+                    <!-- Site Search -->
+                        <li>
+                            <div class="mini-cart-toggle js-mini-cart-toggle -adapt" data-context-id="miniCartRenderingModel">
+                                <button type="button" class="mini-cart-toggle__btn" data-control="toggle" id="miniCartToggle_kzybq43z" aria-expanded="false">
+                                    <span class="sr-only">Shopping Cart</span>
+                                    <img src="/images-2/icon_cart-default.svg" alt="cart default icon" aria-hidden="true">
+                                </button>
+
+                                <div class="mini-cart-toggle__menu" data-region="menu">
+                                    <div data-placeholder="miniCart"></div>
+                                </div>
+                            </div>
+
+                        </li>
+        </ul>
+    </nav>
+</div>
+
+<script type="application/json" id="miniCartRenderingModel">
+
+    {
+        "AutoshipIcon":"/-/media/2/vca/svg/svg/autoship-dark.ashx",
+        "CartSubtotal": "Cart Subtotal",
+        "CheckoutLink": {
+            "Url": "/shop/cart",
+            "Text": "Checkout"
+        },
+        "Flavor": "Flavor:",
+        "Items": "({0} items)",
+        "Packaging": "Packaging:",
+        "Quantity": "Qty",
+        "Remove": "Remove",
+        "RxForm": "Rx Form:",
+        "StrengthSize": "Strength / Size:",
+        "StrengthSizeSupplies": "Strength / Size Supplies:",
+        "Subscribe": "Subscribe With Never Forget®",
+        "Upsell": "You're only <span class=\"font-weight-bold\">{0}</span> away from<br /> <span class=\"font-weight-bold\">FREE SHIPPING!</span>",
+        "OutOfStock": "Temporarily Out Of Stock",
+        "OutOfStockIcon": "/-/media/2/vca/alert.ashx"
+    }
+
+
+</script>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Mobile - Site Search Bar -->
+    <div id="HeaderSiteSearchMobile" class="header-sitesearch__mobile" style="display: none;">
+        <button type="button" class="header-sitesearch__close-btn" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="header-sitesearch__container mobile">
+            <input id="MobileSiteSearchText" class="header-sitesearch__search-input" placeholder="What can we help you with?" value="">
+            <button class="header-sitesearch__search-btn btn btn-sky-outline-alt active" data-redirect="/search-results">Search</button>
+        </div>
+    </div>
+
+ 
+
+<div class="container">
+    <div class="breadcrumbs">
+        <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/know-your-pet">Know Your Pet</a>
+                    </li>
+                    <li>*</li>
+        </ul>
+
+            <script type="application/ld+json">
+            {
+  "itemListElement": [
+    {
+      "item": "https://vcahospitals.com/",
+      "name": "Home",
+      "position": "1",
+      "@type": "ListItem"
+    },
+    {
+      "item": "https://vcahospitals.com/know-your-pet",
+      "name": "Know Your Pet",
+      "position": "2",
+      "@type": "ListItem"
+    },
+    {
+      "item": "https://vcahospitals.com/know-your-pet/,-w-,",
+      "name": "*",
+      "position": "3",
+      "@type": "ListItem"
+    }
+  ],
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList"
+}
+            </script>
+    </div>
+</div>
+
+    
+    
+
+    <span id="is-urgent-care" data-is-uc="False"></span>
+
+    
+    
+
+
+<div class="container kypRelatedArticleContainer">
+    <div class="row">
+        
+<div class="coveo-recommendation-column">
+    <div class="">
+
+    
+    
+
+    <script>
+    document.addEventListener("CoveoSearchEndpointInitialized", function() {
+            var recommendationElement = document.getElementById("coveo8bf22a73");
+            recommendationElement.addEventListener("CoveoComponentInitialized", function() {
+                         CoveoForSitecore.initContextOnElement(recommendationElement);
+                         Coveo.initRecommendation(recommendationElement);
+                });
+        });
+</script>
+
+
+<script type="text/javascript">
+    document.addEventListener("CoveoSearchEndpointInitialized", function() {
+        var componentId = "coveo8bf22a73";
+        var componentElement = document.getElementById(componentId);
+
+        function showError(error) {
+                console.error(error);
+        }
+
+        function areCoveoResourcesIncluded() {
+            return typeof (Coveo) !== "undefined";
+        }
+
+        if (areCoveoResourcesIncluded()) {
+            var event = document.createEvent("CustomEvent");
+            event.initEvent("CoveoComponentInitialized", false, true);
+            
+            setTimeout(function() {
+                componentElement.dispatchEvent(event);
+            }, 0);
+        } else {
+            componentElement.classList.add("invalid");
+            showError("The Coveo Resources component must be included in this page.");
+        }
+    });
+</script>        <div id="coveo8bf22a73"
+             class="CoveoRecommendation "
+                            data-results-per-page='3'
+                data-prebind-maximum-age='currentMaximumAge'
+                data-pipeline='KYP Related Articles'
+                data-title='Related Articles'
+>
+            
+            <div class="CoveoForSitecoreBindWithUserContext"></div>
+            <div class="CoveoForSitecoreExpressions"></div>
+            <div>
+    
+    
+
+    <div class="CoveoForSitecoreLocalExpression"
+                    data-sc-filter-on-sitecore-context-database='true'
+            data-sc-filter-on-current-language='true'
+            data-sc-filter-on-latest-version='true'
+>
+    </div>
+</div>
+
+            <div class="coveo-recommendations-components">
+                <div>
+    
+    
+
+        <div class="CoveoForSitecoreFilterExpression"
+                                         data-sc-filter-scope-node='{&quot;advanced&quot; : {&quot;type&quot; : &quot;and&quot; , &quot;left&quot; : {&quot;type&quot; : &quot;and&quot; , &quot;left&quot; : {&quot;type&quot; : &quot;and&quot; , &quot;left&quot; : {&quot;type&quot; : &quot;field&quot; , &quot;fieldName&quot; : &quot;_path&quot; , &quot;operator&quot; : {&quot;name&quot; : &quot;=&quot; , &quot;value&quot; : 0},&quot;fieldValueType&quot; : {&quot;name&quot; : &quot;string&quot; , &quot;value&quot; : 3},&quot;fieldValues&quot; : [&quot;373D3F55606A4A79A90639CB95E1A539&quot;]},&quot;right&quot; : {&quot;type&quot; : &quot;field&quot; , &quot;fieldName&quot; : &quot;_id&quot; , &quot;operator&quot; : {&quot;name&quot; : &quot;\u003c\u003e&quot; , &quot;value&quot; : 2},&quot;fieldValueType&quot; : {&quot;name&quot; : &quot;string&quot; , &quot;value&quot; : 3},&quot;fieldValues&quot; : [&quot;373D3F55606A4A79A90639CB95E1A539&quot;]}},&quot;right&quot; : {&quot;type&quot; : &quot;field&quot; , &quot;fieldName&quot; : &quot;_template&quot; , &quot;operator&quot; : {&quot;name&quot; : &quot;==&quot; , &quot;value&quot; : 1},&quot;fieldValueType&quot; : {&quot;name&quot; : &quot;string&quot; , &quot;value&quot; : 3},&quot;fieldValues&quot; : [&quot;0956EA273FA046DF9BA6839310A4D5D9&quot;]}},&quot;right&quot; : {&quot;type&quot; : &quot;not&quot; , &quot;operand&quot; : {&quot;type&quot; : &quot;field&quot; , &quot;fieldName&quot; : &quot;_template&quot; , &quot;operator&quot; : {&quot;name&quot; : &quot;==&quot; , &quot;value&quot; : 1},&quot;fieldValueType&quot; : {&quot;name&quot; : &quot;string&quot; , &quot;value&quot; : 3},&quot;fieldValues&quot; : [&quot;ADB6CA4F03EF4F47B9AC9CE2BA53FF97&quot; , &quot;FE5DD82648C6436DB87A7C4210C7413B&quot;]}}}}'
+>
+        </div>
+</div>
+
+    <div class="CoveoForSitecoreAnalytics"
+        >
+    </div>
+<div>
+    
+
+        <div class="CoveoAnalytics"
+                            data-prebind-endpoint='coveoForSitecoreAnalyticsEndpoint'
+                data-prebind-anonymous='isAnonymous'
+                data-prebind-search-hub='currentPageName'
+                data-search-hub='USKYPRelatedArticles'
+                data-prebind-send-to-cloud='analyticsEnabled'
+>
+        </div>
+</div>
+            </div>
+                <div class="coveo-recommendation-header">
+                    <div class="coveo-recommendation-title">Related Articles</div>
+                </div>
+            <div class="coveo-recommendation-body">
+                
+
+<div>
+        <div id="coveofa66f3ab"
+            class="CoveoResultList"
+                            data-layout='card'
+                data-wait-animation='none'
+                data-auto-select-fields-to-include='false'
+>
+            
+
+    <div>
+        <script id="coveo3180db3f"
+                class="result-template"
+                type="text/x-underscore-template"
+               >
+            <!-- If you get an "Unexpected Token <" issue on this line with SXA, refer to: https://docs.coveo.com/en/2098/ -->
+            
+<div class="articles__info bg-color-vca-whisper">
+    <div class="articles__image align-self-stretch flex-grow-1">
+        <img src="{{= coveoFieldValue("thumbnailurl") }}" alt="{{= coveoFieldValue("articletitle") }}">
+    </div>
+</div>
+<div class="articles__wrapper" style="max-height:350px">
+    <a class="CoveoResultLink articles__item-title h3" data-attr-hospitalName="" href="<%= clickUri.toLowerCase()%>">
+        {{= coveoFieldValue("articletitle") }}
+    </a>
+    <p class="articles__item-desc">
+        {{= coveoFieldValue("summary") }}
+    </p>
+</div>
+        </script>
+    </div>
+
+        </div>
+</div>
+            </div>
+        </div>
+</div>
+</div>
+    </div>
+</div>
+
+    
+
+<footer class="footer-wrapper">
+    
+    <div class="footer-links">
+        <div class="container">
+            <div class="row flex-column flex-md-row">
+
+
+
+<div class="col">
+    <button class="footer-links__title js-footer-links-title">
+        VCA ANIMAL HOSPITALS
+    </button>
+    <ul class="footer-links__list js-footer-link-list">
+                <li>
+                    <a href="/about-us" target="">About Us</a>
+                </li>
+                <li>
+                    <a href="/contact-us" target="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="/find-a-hospital" target="">Find a Hospital</a>
+                </li>
+                <li>
+                    <a href="/find-a-hospital/location-directory" target="">Location Directory</a>
+                </li>
+                <li>
+                    <a href="/press-center" target="">Press Center</a>
+                </li>
+                <li>
+                    <a href="/about-us#social-responsibility" target="">Social Responsibility</a>
+                </li>
+                <li>
+                    <a href="https://www.vcacareers.com/" target="_blank">Career Opportunities</a>
+                </li>
+                <li>
+                    <a href="/acquisitions" target="">Grow Your Hospital</a>
+                </li>
+                <li>
+                    <a href="/sitemap" target="">Sitemap</a>
+                </li>
+    </ul>
+</div>                
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row flex-column flex-md-row align-content-center">
+                <div class="footer-lower col flex-grow-1">
+                    <div class="footer-copyright">
+                        Affiliate of Mars Inc. 2023 | &#169; Copyright VCA Animal Hospitals all rights reserved.
+                    </div>
+                    <div class="footer-bottom-links">
+                                <a href="https://www.mars.com/privacy" target="_blank">Privacy Policy</a> <span>|</span>
+                                <a href="/terms-and-conditions" target="">Terms &amp; Conditions</a> <span>|</span>
+                                <a href="/web-accessibility" target="">Web Accessibility</a> <span>|</span>
+                                <a href="https://www.mars.com/mars-incorporated-adchoices-united-states" target="">AdChoices</a> <span>|</span>
+                                <a href="https://www.mars.com/cookies-english" target="_blank">Cookie Notice</a> <span>|</span>
+                        <!-- OneTrust Cookies Settings button start -->
+                        <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
+                        <!-- OneTrust Cookies Settings button end -->
+                        <span>|</span>
+                        <a href="https://privacyportal-eu.onetrust.com/webform/5f2759ff-9efe-412c-a3be-f13092d2c945/98373dac-6247-48a6-a190-f0094af43ee8" target="_blank" aria-label="Your Privacy Choices">Your Privacy Choices <img src="/images-2/privacyoptions29x14.png" alt="California Consumer Privacy Act (CCPA) Opt-Out Icon" /></a>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-soical">
+                        <ul>
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/VCAAnimalHospitals">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.instagram.com/vca">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.linkedin.com/company/vcaanimalhospitals">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://twitter.com/VCAPetHealth">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/askVCA">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="382655f3-0222-41d6-8964-5c2f9c1ee5ff"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end -->
+
+    <script src="/Content-2/js/vendor.js"></script>
+    <script src="/Content-2/js/vca-scripts.js"></script>
+    <script src="/Content-2/js/vca-ada-autofix.js"></script>
+    
+
+<script type="text/javascript" src="/Coveo/Hive/js/CoveoForSitecoreUserContext.js"></script>
+
+
+
+
+<script>
+    if (!!window.CoveoForSitecoreUserContext) {
+        CoveoForSitecoreUserContext.handler.initializeContext({"device":"Default","isAnonymous":"true","country":"NZ"});
+    }
+</script><link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10089/css/CoveoFullSearch.css" />
+<link rel="stylesheet" href="https://static.cloud.coveo.com/coveoforsitecore/ui/v0.55.8/css/CoveoForSitecore.css" />
+<script class="coveo-script" type="text/javascript" src='https://static.cloud.coveo.com/searchui/v2.10089/js/CoveoJsSearch.Lazy.min.js'></script>
+<script class="coveo-for-sitecore-script" type="text/javascript" src='https://static.cloud.coveo.com/coveoforsitecore/ui/v0.55.8/js/CoveoForSitecore.Lazy.min.js'></script>
+<script type="text/javascript" src="https://static.cloud.coveo.com/searchui/v2.10089/js/cultures/en.js"></script>
+
+<div>
+
+
+    
+    
+    <!-- Resources -->
+    <div id="coveo3a949f41"
+         class="CoveoForSitecoreContext"
+                    data-sc-should-have-analytics-component='true'
+            data-sc-analytics-enabled='true'
+            data-sc-current-language='en'
+            data-prebind-sc-language-field-name='fieldTranslator'
+            data-sc-language-field-name='_language'
+            data-sc-labels='{&quot;Created&quot; : &quot;Created&quot; , &quot;Created By&quot; : &quot;Created by&quot; , &quot;Creation Time&quot; : &quot;Creation time.&quot; , &quot;Language&quot; : &quot;Language&quot; , &quot;Last Time Modified&quot; : &quot;Last time modified.&quot; , &quot;Template&quot; : &quot;Template&quot; , &quot;Uniform resource identifier&quot; : &quot;URI&quot; , &quot;Updated By&quot; : &quot;Updated by&quot; , &quot;Descending&quot; : &quot;Descending&quot; , &quot;Ascending&quot; : &quot;Ascending&quot; , &quot;If the problem persists contact the administrator.&quot; : &quot;If the problem persists contact the administrator.&quot; , &quot;Search is currently unavailable&quot; : &quot;Oops! Something went wrong on the server.&quot;}'
+            data-sc-maximum-age='900000'
+            data-sc-page-name='*'
+            data-sc-page-name-full-path='/sitecore/content/Vca/Home/Know Your Pet/*'
+            data-sc-index-source-name='Coveo_web_index - prd.vcahospitals.com'
+            data-sc-is-in-experience-editor='false'
+            data-sc-is-user-anonymous='true'
+            data-sc-item-uri='sitecore://web/{8755658E-9839-4592-B22F-080E1E82BD9E}?lang=en&amp;ver=1'
+            data-sc-item-id='8755658e-9839-4592-b22f-080e1e82bd9e'
+            data-prebind-sc-latest-version-field-name='fieldTranslator'
+            data-sc-latest-version-field-name='_latestversion'
+            data-sc-rest-endpoint-uri='/coveo/rest'
+            data-sc-analytics-endpoint-uri='/coveo/rest/ua'
+            data-sc-site-name='Vca'
+            data-sc-field-prefix='f'
+            data-sc-field-suffix='22237'
+            data-sc-prefer-source-specific-fields='false'
+            data-sc-external-fields='[{&quot;fieldName&quot;:&quot;permanentid&quot;,&quot;shouldEscape&quot;:false}]'
+            data-sc-source-specific-fields='[{&quot;fieldName&quot;:&quot;attachmentparentid&quot;},{&quot;fieldName&quot;:&quot;author&quot;},{&quot;fieldName&quot;:&quot;clickableuri&quot;},{&quot;fieldName&quot;:&quot;collection&quot;},{&quot;fieldName&quot;:&quot;concepts&quot;},{&quot;fieldName&quot;:&quot;date&quot;},{&quot;fieldName&quot;:&quot;filetype&quot;},{&quot;fieldName&quot;:&quot;indexeddate&quot;},{&quot;fieldName&quot;:&quot;isattachment&quot;},{&quot;fieldName&quot;:&quot;language&quot;},{&quot;fieldName&quot;:&quot;printableuri&quot;},{&quot;fieldName&quot;:&quot;rowid&quot;},{&quot;fieldName&quot;:&quot;size&quot;},{&quot;fieldName&quot;:&quot;title&quot;},{&quot;fieldName&quot;:&quot;topparent&quot;},{&quot;fieldName&quot;:&quot;topparentid&quot;},{&quot;fieldName&quot;:&quot;transactionid&quot;},{&quot;fieldName&quot;:&quot;uri&quot;},{&quot;fieldName&quot;:&quot;urihash&quot;}]'
+>
+    </div>
+    <script type="text/javascript">
+        var endpointConfiguration = {
+            itemUri: "sitecore://web/{8755658E-9839-4592-B22F-080E1E82BD9E}?lang=en&amp;ver=1",
+            siteName: "Vca",
+            restEndpointUri: "/coveo/rest"
+        };
+        if (typeof (CoveoForSitecore) !== "undefined") {
+            CoveoForSitecore.SearchEndpoint.configureSitecoreEndpoint(endpointConfiguration);
+            CoveoForSitecore.version = "5.0.1039.1";
+            var context = document.getElementById("coveo3a949f41");
+            if (!!context) {
+                CoveoForSitecore.Context.configureContext(context);
+            }
+        }
+    </script>
+</div>
+
+        <script>
+            // Code snippet to load and log page view analytics.
+            // Imported from https://github.com/coveo/coveo.analytics.js
+            (function (c, o, v, e, O, u, a) {
+                a = 'coveoua'; c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                c[a].t = Date.now(); u = o.createElement(v); u.async = 1; u.src = e;
+                O = o.getElementsByTagName(v)[0]; O.parentNode.insertBefore(u, O)
+            })(window, document, 'script', 'https://static.cloud.coveo.com/coveo.analytics.js/1.0/coveoua.js');
+
+            document.addEventListener("CoveoSearchEndpointInitialized", function () {
+                var accessToken = Coveo && Coveo.SearchEndpoint && Coveo.SearchEndpoint.defaultEndpoint && Coveo.SearchEndpoint.defaultEndpoint.accessToken
+                    ? Coveo.SearchEndpoint.defaultEndpoint.accessToken.token
+                    : "";
+
+                 var customMetadata = {
+                        "contentIdKey": "permanentid", "contentType": "KYPRelatedArticles", "contentLanguage": "en", "contentIdValue": "", "anonymous": true };
+
+
+                if (typeof (CoveoForSitecoreUserContext) !== "undefined") {
+                    var currentContext = CoveoForSitecoreUserContext.handler.getContext();
+                    Object.keys(currentContext).forEach(function(key) {
+                        customMetadata["c_context_" + key] = currentContext[key];
+                    });
+                }
+
+                coveoua('onLoad', function() {
+                    // Completely overrides the way the base URL is resolved since the default implementation appends a `/rest` that we do not want.
+                    // Remove when migrating to version 2+
+                    Object.defineProperty(coveoanalytics.CoveoAnalyticsClient.prototype, 'baseUrl', { get() { return "/coveo/rest/ua" + "/v15" }});
+                    coveoua('init', accessToken);
+                    coveoua('send', 'view', customMetadata);
+                });
+            });
+
+        </script>
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8362c766dbdd508c","b":1,"version":"2023.10.0","token":"a40f7282488e4674b7374413fb5a1254"}' crossorigin="anonymous"></script>
+</body>
+</html>

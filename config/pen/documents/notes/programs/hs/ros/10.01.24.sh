@@ -1,0 +1,5 @@
+cd /root/notes;  "ros" "-L" "sbcl" "-Q" "-l" "/root/.sbclrc" "run" "--" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Deuteronomy" "#" "<==" "sbcl"
+cd /root/notes;  "ros" "-L" "sbcl" "-Q" "-l" "/root/.sbclrc" "run" "--" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Deuteronomy" "#" "<==" "sbcl"
+cd /root/.pen/documents/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "tmux-shell"

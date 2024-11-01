@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sizeof
+# key: so
+# --
+sys.getsizeof($0)

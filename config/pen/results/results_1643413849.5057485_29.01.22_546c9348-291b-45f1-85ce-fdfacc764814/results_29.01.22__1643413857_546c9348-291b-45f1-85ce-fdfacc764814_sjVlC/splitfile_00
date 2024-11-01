@@ -1,0 +1,11 @@
+
+      (pen-complete-region preceding-text)
+    (pen-complete-line preceding-text tv)))
+
+(defun pen-complete-buffer (preceding-text &optional tv)
+  "Buffer completion"
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-buffer-complete
+          (pen-complete-function preceding-text))))
+    (if

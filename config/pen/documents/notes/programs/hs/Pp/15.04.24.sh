@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Pp" "3:8-17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Pp" "3:2-3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Pp" "3:4-7" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Pp" "3:8-11" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Pp" "3:20-21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Pp" "3:12-21" "#" "<==" "zsh"

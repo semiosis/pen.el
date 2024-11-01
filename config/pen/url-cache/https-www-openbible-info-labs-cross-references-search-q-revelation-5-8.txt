@@ -1,0 +1,182 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 6075
+Connection: keep-alive
+Date: Sat, 26 Aug 2023 01:50:12 GMT
+Server: Apache
+Content-Location: search.php
+TCN: choice
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 ee71cd8922eab5657dc27cac15f87d5a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD1-C2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: lUITMVzAlzrrXAdduCCYCQaUdwEcpN3IwLNll7zZ6jMnx4PsUu6MsA==
+Age: 2
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Rev 5:8 Cross References (20 Verses)</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/labs/cross-references/search?q=Revelation+5%3A8" />
+<style type="text/css">
+	.votes-1 { background: #fee; }
+	.votes-2 { background: #fdd; }
+	.votes-3 { background: #fcc; }
+	.votes-4 { background: #fbb; }
+	.votes-5 { background: #faa; }
+	div.crossrefs { clear: right; }
+	div.crossrefs div { width:300px; height:200px; float:left; margin:auto 10px 10px auto; padding:5px; overflow:auto; }
+	div.crossrefs div h3 {color:#000; margin-top:0; margin-bottom:1em; }
+	div.crossrefs div h3 a {color:#000; }
+	div.crossrefs p {margin-bottom:0;}
+	div.crossrefs div.crossref-verse { background: #f77; border: 2px solid #000; width: 296px; height: 196px;}
+	span.vote { font-size:80%; float:right; font-weight:normal; padding-top:2px;}
+	span.vote a {background: #fee; border:1px solid #000; padding:2px; color:#000; text-decoration:none;}
+	@media print {
+		div.crossrefs div, div.crossrefs div.crossref-verse { width:auto; height:auto; float:none; margin:auto; padding:auto; }
+		form, span.vote, span.links, #head { display:none; }
+		h1 { font-size: 100%; }
+	}
+</style>
+</head>
+<body class="labs inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<h1>Revelation 5:8 Cross References</h1>
+<form action="/labs/cross-references/search">
+<p><input type="text" name="q" size="20" value="Revelation 5:8" /> <input type="submit" value="Go to Bible verse" />
+		<br />
+						<a href="/labs/cross-references/search?q=Revelation+5%3A7">&laquo; Revelation 5:7</a>
+			 |							<a href="/labs/cross-references/search?q=Revelation+5%3A9">Revelation 5:9 &raquo;</a>
+				| Compare: <a href="https://www.biblegateway.com/passage/?search=Rev+5%3A8%2CPs+141%3A2%2CRev+8%3A3-4%2CPhil+2%3A9-11%2CRev+5%3A14%2CRev+4%3A10%2CRev+4%3A4%2CRev+14%3A2-3%2CRev+19%3A4%2CRev+7%3A10-12%2CRev+5%3A6%2CPs+33%3A2%2CRev+15%3A7%2CRev+15%3A2%2CRev+4%3A8%2CRom+14%3A10-12%2CJohn+5%3A23%2CPs+81%3A2%2CPs+43%3A4%2CPs+150%3A3%2CHeb+1%3A6&amp;version=NIV">NIV</a>, <a href="https://www.biblegateway.com/passage/?search=Rev+5%3A8%2CPs+141%3A2%2CRev+8%3A3-4%2CPhil+2%3A9-11%2CRev+5%3A14%2CRev+4%3A10%2CRev+4%3A4%2CRev+14%3A2-3%2CRev+19%3A4%2CRev+7%3A10-12%2CRev+5%3A6%2CPs+33%3A2%2CRev+15%3A7%2CRev+15%3A2%2CRev+4%3A8%2CRom+14%3A10-12%2CJohn+5%3A23%2CPs+81%3A2%2CPs+43%3A4%2CPs+150%3A3%2CHeb+1%3A6&amp;version=KJV">KJV</a>, <a href="https://www.biblegateway.com/passage/?search=Rev+5%3A8%2CPs+141%3A2%2CRev+8%3A3-4%2CPhil+2%3A9-11%2CRev+5%3A14%2CRev+4%3A10%2CRev+4%3A4%2CRev+14%3A2-3%2CRev+19%3A4%2CRev+7%3A10-12%2CRev+5%3A6%2CPs+33%3A2%2CRev+15%3A7%2CRev+15%3A2%2CRev+4%3A8%2CRom+14%3A10-12%2CJohn+5%3A23%2CPs+81%3A2%2CPs+43%3A4%2CPs+150%3A3%2CHeb+1%3A6&amp;version=NLT">NLT</a>, <a href="https://www.biblegateway.com/passage/?search=Rev+5%3A8%2CPs+141%3A2%2CRev+8%3A3-4%2CPhil+2%3A9-11%2CRev+5%3A14%2CRev+4%3A10%2CRev+4%3A4%2CRev+14%3A2-3%2CRev+19%3A4%2CRev+7%3A10-12%2CRev+5%3A6%2CPs+33%3A2%2CRev+15%3A7%2CRev+15%3A2%2CRev+4%3A8%2CRom+14%3A10-12%2CJohn+5%3A23%2CPs+81%3A2%2CPs+43%3A4%2CPs+150%3A3%2CHeb+1%3A6&amp;version=NKJV">NKJV</a>, <a href="https://www.biblegateway.com/passage/?search=Rev+5%3A8%2CPs+141%3A2%2CRev+8%3A3-4%2CPhil+2%3A9-11%2CRev+5%3A14%2CRev+4%3A10%2CRev+4%3A4%2CRev+14%3A2-3%2CRev+19%3A4%2CRev+7%3A10-12%2CRev+5%3A6%2CPs+33%3A2%2CRev+15%3A7%2CRev+15%3A2%2CRev+4%3A8%2CRom+14%3A10-12%2CJohn+5%3A23%2CPs+81%3A2%2CPs+43%3A4%2CPs+150%3A3%2CHeb+1%3A6&amp;version=NRSVUE">NRSVue</a>, <a href="https://www.biblegateway.com/passage/?search=Rev+5%3A8%2CPs+141%3A2%2CRev+8%3A3-4%2CPhil+2%3A9-11%2CRev+5%3A14%2CRev+4%3A10%2CRev+4%3A4%2CRev+14%3A2-3%2CRev+19%3A4%2CRev+7%3A10-12%2CRev+5%3A6%2CPs+33%3A2%2CRev+15%3A7%2CRev+15%3A2%2CRev+4%3A8%2CRom+14%3A10-12%2CJohn+5%3A23%2CPs+81%3A2%2CPs+43%3A4%2CPs+150%3A3%2CHeb+1%3A6&amp;version=ESV">ESV</a>
+		|
+		<a href="/labs/cross-references/">Cross references home</a>
+</p>
+</form>
+	<div class="crossrefs">
+		<div class="crossref-verse">
+		<h3>Revelation 5:8</h3>
+		<p>And when he had taken the scroll, the four living creatures and the twenty-four elders fell down before the Lamb, each holding a harp, and golden bowls full of incense, which are the prayers of the saints.</p>
+		</div>
+									<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+141%3A2">Psalm 141:2</a> <span id="c66005008.19141002-19141002" class="vote"></span></h3>
+				<p>Let my prayer be counted as incense before you, and the lifting up of my hands as the evening sacrifice!</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+8%3A3-4">Revelation 8:3-4</a> <span id="c66005008.66008003-66008004" class="vote"></span></h3>
+				<p><span class="votes-4">And another angel came and stood at the altar with a golden censer, and he was given much incense to offer with the prayers of all the saints on the golden altar before the throne,</span> and the smoke of the incense, with the prayers of the saints, rose before God from the hand of the angel.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Philippians+2%3A9-11">Philippians 2:9-11</a> <span id="c66005008.50002009-50002011" class="vote"></span></h3>
+				<p>Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+5%3A14">Revelation 5:14</a> <span id="c66005008.66005014-66005014" class="vote"></span></h3>
+				<p>And the four living creatures said, &#8220;Amen!&#8221; and the elders fell down and worshiped.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+4%3A10">Revelation 4:10</a> <span id="c66005008.66004010-66004010" class="vote"></span></h3>
+				<p>the twenty-four elders fall down before him who is seated on the throne and worship him who lives forever and ever. They cast their crowns before the throne, saying,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+4%3A4">Revelation 4:4</a> <span id="c66005008.66004004-66004004" class="vote"></span></h3>
+				<p>Around the throne were twenty-four thrones, and seated on the thrones were twenty-four elders, clothed in white garments, with golden crowns on their heads.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+14%3A2-3">Revelation 14:2-3</a> <span id="c66005008.66014002-66014003" class="vote"></span></h3>
+				<p><span class="votes-5">And I heard a voice from heaven like the roar of many waters and like the sound of loud thunder. The voice I heard was like the sound of harpists playing on their harps,</span> and they were singing a new song before the throne and before the four living creatures and before the elders. No one could learn that song except the 144,000 who had been redeemed from the earth.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+19%3A4">Revelation 19:4</a> <span id="c66005008.66019004-66019004" class="vote"></span></h3>
+				<p>And the twenty-four elders and the four living creatures fell down and worshiped God who was seated on the throne, saying, &#8220;Amen. Hallelujah!&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+7%3A10-12">Revelation 7:10-12</a> <span id="c66005008.66007010-66007012" class="vote"></span></h3>
+				<p>and crying out with a loud voice, &#8220;Salvation belongs to our God who sits on the throne, and to the Lamb!&#8221; And all the angels were standing around the throne and around the elders and the four living creatures, and they fell on their faces before the throne and worshiped God, saying, &#8220;Amen! Blessing and glory and wisdom and thanksgiving and honor and power and might be to our God forever and ever! Amen.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+5%3A6">Revelation 5:6</a> <span id="c66005008.66005006-66005006" class="vote"></span></h3>
+				<p>And between the throne and the four living creatures and among the elders I saw a Lamb standing, as though it had been slain, with seven horns and with seven eyes, which are the seven spirits of God sent out into all the earth.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+33%3A2">Psalm 33:2</a> <span id="c66005008.19033002-19033002" class="vote"></span></h3>
+				<p>Give thanks to the <span class="sc">Lord</span> with the lyre; make melody to him with the harp of ten strings!</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+15%3A7">Revelation 15:7</a> <span id="c66005008.66015007-66015007" class="vote"></span></h3>
+				<p>And one of the four living creatures gave to the seven angels seven golden bowls full of the wrath of God who lives forever and ever,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+15%3A2">Revelation 15:2</a> <span id="c66005008.66015002-66015002" class="vote"></span></h3>
+				<p>And I saw what appeared to be a sea of glass mingled with fire&#8212;and also those who had conquered the beast and its image and the number of its name, standing beside the sea of glass with harps of God in their hands.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+4%3A8">Revelation 4:8</a> <span id="c66005008.66004008-66004008" class="vote"></span></h3>
+				<p>And the four living creatures, each of them with six wings, are full of eyes all around and within, and day and night they never cease to say, &#8220;Holy, holy, holy, is the Lord God Almighty, who was and is and is to come!&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Romans+14%3A10-12">Romans 14:10-12</a> <span id="c66005008.45014010-45014012" class="vote"></span></h3>
+				<p>Why do you pass judgment on your brother? Or you, why do you despise your brother? For we will all stand before the judgment seat of God; for it is written, &#8220;As I live, says the Lord, every knee shall bow to me, and every tongue shall confess to God.&#8221; So then each of us will give an account of himself to God.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+5%3A23">John 5:23</a> <span id="c66005008.43005023-43005023" class="vote"></span></h3>
+				<p>that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+81%3A2">Psalm 81:2</a> <span id="c66005008.19081002-19081002" class="vote"></span></h3>
+				<p>Raise a song; sound the tambourine, the sweet lyre with the harp.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+43%3A4">Psalm 43:4</a> <span id="c66005008.19043004-19043004" class="vote"></span></h3>
+				<p>Then I will go to the altar of God, to God my exceeding joy, and I will praise you with the lyre, O God, my God.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+150%3A3">Psalm 150:3</a> <span id="c66005008.19150003-19150003" class="vote"></span></h3>
+				<p>Praise him with trumpet sound; praise him with lute and harp!</p>
+				</div>
+							<div class="votes-3"><h3><a href="/labs/cross-references/search?q=Hebrews+1%3A6">Hebrews 1:6</a> <span id="c66005008.58001006-58001006" class="vote"></span></h3>
+				<p>And again, when he brings the firstborn into the world, he says, &#8220;Let all God's angels worship him.&#8221;</p>
+				</div>
+					</div>
+<script type="text/javascript">
+var votes = document.querySelectorAll("span.vote");
+for (var i = 0, j = votes.length; i < j; i++) {
+	var node = votes[i];
+	var id = node.id.substr(1)
+	node.innerHTML = 'Helpful? <a id="u' + id + '" href="#u">Yes</a> <a id="d' + id + '" href="#d">No</a>';
+};
+var voteLinks = document.querySelectorAll("span.vote a");
+for (var i = 0, j = voteLinks.length; i < j; i++) {
+	voteLinks[i].addEventListener("click", voteCallback, false);
+}
+
+function voteCallback(e) {
+	e.preventDefault();
+	var node = e.target;
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "/labs/cross-references/vote");
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send("vote=" + node.id);
+	node.parentNode.innerHTML = "Thanks for voting";
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

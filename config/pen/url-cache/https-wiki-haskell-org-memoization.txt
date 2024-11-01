@@ -1,0 +1,450 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Server: nginx/1.20.2
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-language: en
+X-UA-Compatible: IE=Edge
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Last-Modified: Mon, 02 May 2022 14:07:35 GMT
+Accept-Ranges: bytes
+Date: Sun, 14 Aug 2022 09:04:07 GMT
+Via: 1.1 varnish
+X-Served-By: cache-akl10335-AKL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1660467848.698053,VS0,VE237
+Vary: Accept-Encoding, Cookie
+transfer-encoding: chunked
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Memoization - HaskellWiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Memoization","wgTitle":"Memoization","wgCurRevisionId":57978,"wgRevisionId":57978,"wgArticleId":3155,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Idioms"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Memoization","wgRelevantArticleId":3155,"wgRequestId":"b55be3e9c5e75ff34d88e2ec","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[],"wgCollapsibleVectorEnabledModules":{"collapsiblenav":true,"experiments":true}});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.hawiki.styles":"ready"});mw.loader.implement("user.tokens@03tqtch",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.hawiki.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.hawiki.styles&amp;only=styles&amp;skin=hawiki"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hawiki"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=hawiki"/>
+<meta name="generator" content="MediaWiki 1.31.7"/>
+<link rel="shortcut icon" href="/wikistatic/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="HaskellWiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.haskell.org/api.php?action=rsd"/>
+<link rel="license" href="/HaskellWiki:Copyrights"/>
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=hawiki&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Memoization rootpage-Memoization skin-hawiki action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Memoization</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From HaskellWiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+<b>Memoization</b> is a technique for storing values of a function instead of recomputing them each time the function is called.
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Memoization_without_recursion"><span class="tocnumber">1</span> <span class="toctext">Memoization without recursion</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Memoization_with_recursion"><span class="tocnumber">2</span> <span class="toctext">Memoization with recursion</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Memoizing_fix_point_operator"><span class="tocnumber">2.1</span> <span class="toctext">Memoizing fix point operator</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Efficient_tree_data_structure_for_maps_from_Int_to_somewhere"><span class="tocnumber">3</span> <span class="toctext">Efficient tree data structure for maps from Int to somewhere</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Memoising_CAFS"><span class="tocnumber">4</span> <span class="toctext">Memoising CAFS</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Memoizing_polymorphic_functions"><span class="tocnumber">5</span> <span class="toctext">Memoizing polymorphic functions</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Memoization_without_recursion">Memoization without recursion</span></h2>
+<p>You can just write a memoization function using a data structure that is suitable for your application.
+We don't go into the details of this case.
+If you want a general solution for several types,
+you need a type class, say <code>Memoizable</code>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">memoize</span> <span class="ow">::</span> <span class="kt">Memoizable</span> <span class="n">a</span> <span class="ow">=&gt;</span> <span class="p">(</span><span class="n">a</span><span class="ow">-&gt;</span><span class="n">b</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a</span><span class="ow">-&gt;</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+<p>Now, how to implement something like this? Of course, one needs a finite
+map that stores values <code>b</code> for keys of type <code>a</code>.
+It turns out that such a map can be constructed recursively based on the structure of <code>a</code>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>  <span class="kt">Map</span> <span class="nb">()</span>            <span class="n">b</span>  <span class="kt">:=</span> <span class="n">b</span>
+  <span class="kt">Map</span> <span class="p">(</span><span class="kt">Either</span> <span class="n">a</span> <span class="n">a&#39;</span><span class="p">)</span> <span class="n">b</span>  <span class="kt">:=</span> <span class="p">(</span><span class="kt">Map</span> <span class="n">a</span> <span class="n">b</span><span class="p">,</span> <span class="kt">Map</span> <span class="n">a&#39;</span> <span class="n">b</span><span class="p">)</span>
+  <span class="kt">Map</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">a&#39;</span><span class="p">)</span>        <span class="n">b</span>  <span class="kt">:=</span> <span class="kt">Map</span> <span class="n">a</span> <span class="p">(</span><span class="kt">Map</span> <span class="n">a&#39;</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+<p>Here, <code>Map a b</code> is the type of a finite map from keys <code>a</code> to values <code>b</code>.
+Its construction is based on the following laws for functions
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>        <span class="nb">()</span> <span class="ow">-&gt;</span> <span class="n">b</span>  <span class="o">=~=</span>  <span class="n">b</span>
+  <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">a&#39;</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">b</span>  <span class="o">=~=</span>  <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="err">×</span> <span class="p">(</span><span class="n">a&#39;</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="c1">-- = case analysis</span>
+  <span class="p">(</span><span class="n">a</span> <span class="err">×</span> <span class="n">a&#39;</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">b</span>  <span class="o">=~=</span>  <span class="n">a</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a&#39;</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span>       <span class="c1">-- = currying</span>
+</pre></div>
+<p>For further and detailed explanations, see
+</p>
+<ul><li>Ralf Hinze: <a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.3272">Memo functions, polytypically!</a></li>
+<li>Ralf Hinze: <a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.8.4069">Generalizing generalized tries</a></li>
+<li>Conal Elliott: <a rel="nofollow" class="external text" href="http://conal.net/blog/posts/elegant-memoization-with-functional-memo-tries/">Elegant memoization with functional memo tries</a> and other <a rel="nofollow" class="external text" href="http://conal.net/blog/tag/memoization/">posts on memoization</a>.</li>
+<li>Conal Elliott <a rel="nofollow" class="external text" href="http://conal.net/papers/type-class-morphisms/">Denotational design with type class morphisms</a>, section 9 (Memo tries).</li></ul>
+<h2><span class="mw-headline" id="Memoization_with_recursion">Memoization with recursion</span></h2>
+<p>Things become more complicated if the function is recursively defined
+and it should use memoized calls to itself.
+A classic example is the recursive computation of <a href="/The_Fibonacci_sequence" title="The Fibonacci sequence">Fibonacci numbers</a>.
+</p><p>The naive implementation of Fibonacci numbers without memoization is horribly slow.
+Try <code>slow_fib 30</code>, not too much higher than that and it hangs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">slow_fib</span> <span class="ow">::</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">slow_fib</span> <span class="mi">0</span> <span class="ow">=</span> <span class="mi">0</span>
+<span class="nf">slow_fib</span> <span class="mi">1</span> <span class="ow">=</span> <span class="mi">1</span>
+<span class="nf">slow_fib</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">slow_fib</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">slow_fib</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<p>The memoized version is much faster.
+Try <code>memoized_fib 10000</code>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">memoized_fib</span> <span class="ow">::</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">memoized_fib</span> <span class="ow">=</span> <span class="p">(</span><span class="n">map</span> <span class="n">fib</span> <span class="p">[</span><span class="mi">0</span> <span class="o">..</span><span class="p">]</span> <span class="o">!!</span><span class="p">)</span>
+   <span class="kr">where</span> <span class="n">fib</span> <span class="mi">0</span> <span class="ow">=</span> <span class="mi">0</span>
+         <span class="n">fib</span> <span class="mi">1</span> <span class="ow">=</span> <span class="mi">1</span>
+         <span class="n">fib</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">memoized_fib</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">memoized_fib</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Memoizing_fix_point_operator">Memoizing fix point operator</span></h3>
+<p>We can divide the functionality of <code>memoized_fib</code> into the actual calculation and the memoization.
+To recombine the functionality, we will use ordinary function composition <code>(.)</code> and the fix point operator <code>fix</code> (cf. <code>Data.Function</code>):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="p">)</span> <span class="ow">::</span> <span class="p">(</span><span class="n">b</span> <span class="ow">-&gt;</span> <span class="n">c</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">c</span>
+<span class="p">(</span><span class="o">.</span><span class="p">)</span> <span class="n">f</span> <span class="n">g</span> <span class="ow">=</span> <span class="nf">\</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="p">(</span><span class="n">g</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="nf">fix</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">a</span>
+<span class="nf">fix</span> <span class="n">f</span> <span class="ow">=</span> <span class="kr">let</span> <span class="n">x</span> <span class="ow">=</span> <span class="n">f</span> <span class="n">x</span> <span class="kr">in</span> <span class="n">x</span>
+</pre></div>
+<p>For the calculation, we define the function <code>fib</code>, such that <code>fix fib&#160;:: Int -&gt; Integer</code> computes the fibonacci numbers.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">fib</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">fib</span> <span class="n">f</span> <span class="mi">0</span> <span class="ow">=</span> <span class="mi">1</span>
+<span class="nf">fib</span> <span class="n">f</span> <span class="mi">1</span> <span class="ow">=</span> <span class="mi">1</span>
+<span class="nf">fib</span> <span class="n">f</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">f</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+<p>Note, that the recursion is factored out to <code>fix</code>.
+For the memoization, we write the function <code>memoize</code>.
+We could also use the function <code>memoizeInt</code> from the next section for this purpose.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">memoize</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span>
+<span class="nf">memoize</span> <span class="n">f</span> <span class="ow">=</span> <span class="p">(</span><span class="n">map</span> <span class="n">f</span> <span class="p">[</span><span class="mi">0</span> <span class="o">..</span><span class="p">]</span> <span class="o">!!</span><span class="p">)</span>
+</pre></div>
+<p>Now, we have all the tools we need to build a memoizing fibonacci function.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">fibMemo</span> <span class="ow">::</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">fibMemo</span> <span class="ow">=</span> <span class="n">fix</span> <span class="p">(</span><span class="n">memoize</span> <span class="o">.</span> <span class="n">fib</span><span class="p">)</span>
+</pre></div>
+<p>Let us replace <code>fix</code> by its definition, to see, why this works.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">fibMemo</span> <span class="ow">=</span> <span class="n">fix</span> <span class="p">(</span><span class="n">memoize</span> <span class="o">.</span> <span class="n">fib</span><span class="p">)</span>
+        <span class="ow">=</span> <span class="kr">let</span> <span class="n">x</span> <span class="ow">=</span> <span class="p">(</span><span class="n">memoize</span> <span class="o">.</span> <span class="n">fib</span><span class="p">)</span> <span class="n">x</span> <span class="kr">in</span> <span class="n">x</span>
+        <span class="ow">=</span> <span class="p">(</span><span class="n">memoize</span> <span class="o">.</span> <span class="n">fib</span><span class="p">)</span> <span class="n">fibMemo</span>
+        <span class="ow">=</span> <span class="n">memoize</span> <span class="p">(</span><span class="n">fib</span> <span class="n">fibMemo</span><span class="p">)</span>
+</pre></div>
+<p>Assuming, <code>fibMemo</code> does indeed calculate the fibonacci numbers, it is a perfect candidate to be plugged into <code>fib</code>.
+So, <code>fib fibMemo&#160;:: Int -&gt; Integer</code> also calculates the fibonacci numbers, but the first calculation step is done by <code>fib</code> instead of <code>fibMemo</code> itself.
+Additionally, <code>memoize</code> is applied to introduce memoization.
+Let us look at a small example to make the functionality more clear.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>  <span class="n">fibMemo</span> <span class="mi">3</span>
+<span class="ow">=</span> <span class="n">memoize</span> <span class="p">(</span><span class="n">fib</span> <span class="n">fibMemo</span><span class="p">)</span> <span class="mi">3</span>
+<span class="ow">=</span> <span class="n">map</span> <span class="p">(</span><span class="n">fib</span> <span class="n">fibMemo</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span> <span class="o">..</span><span class="p">]</span> <span class="o">!!</span> <span class="mi">3</span>
+<span class="c1">-- Note: The following step does not exactly follow lazy evaluation.</span>
+<span class="ow">=</span> <span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">0</span> <span class="kt">:</span> <span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">1</span> <span class="kt">:</span> <span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">2</span> <span class="kt">:</span> <span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">3</span> <span class="kt">:</span> <span class="n">map</span> <span class="p">(</span><span class="n">fib</span> <span class="n">fibMemo</span><span class="p">)</span> <span class="p">[</span><span class="mi">4</span> <span class="o">..</span><span class="p">]</span> <span class="o">!!</span> <span class="mi">3</span>
+<span class="ow">=</span> <span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">3</span>
+<span class="ow">=</span> <span class="n">fibMemo</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="ow">=</span> <span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="ow">=</span> <span class="p">(</span><span class="n">fibMemo</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="c1">-- Note: Because of the memoization, both “fibMemo 1” terms refer to the same thunk,</span>
+<span class="c1">--       so it will only be evaluated once.</span>
+<span class="ow">=</span> <span class="p">(</span><span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="ow">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="ow">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">fib</span> <span class="n">fibMemo</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="ow">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">fibMemo</span> <span class="mi">1</span>
+<span class="c1">-- Remember: “fibMemo 1” was already evaluated, so we can directly replace it by its value.</span>
+<span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="ow">=</span> <span class="mi">2</span>
+</pre></div>
+<p>As we can see, the whole calculation boils down to the definition of <code>fib</code>, while <code>memoize</code> introduces sharing of thunks.
+</p>
+<h2><span class="mw-headline" id="Efficient_tree_data_structure_for_maps_from_Int_to_somewhere">Efficient tree data structure for maps from Int to somewhere</span></h2>
+<p>Here we present a special tree data type
+(<a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/data-inttrie">data-inttrie</a>)
+which is useful as memoizing data structure e.g. for the Fibonacci function.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">memoizeInt</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span>
+<span class="nf">memoizeInt</span> <span class="n">f</span> <span class="ow">=</span> <span class="p">(</span><span class="n">fmap</span> <span class="n">f</span> <span class="p">(</span><span class="n">naturals</span> <span class="mi">1</span> <span class="mi">0</span><span class="p">)</span> <span class="o">!!!</span><span class="p">)</span>
+</pre></div>
+<p>A data structure with a node corresponding to each natural number to use as a memo.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">data</span> <span class="kt">NaturalTree</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">Node</span> <span class="n">a</span> <span class="p">(</span><span class="kt">NaturalTree</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">NaturalTree</span> <span class="n">a</span><span class="p">)</span>
+</pre></div>
+<p>Map the nodes to the naturals in this order:
+</p><p><code>
+</code></p><code><pre>     0
+   1   2
+  3 5 4 6
+ 7  ...
+</pre></code><code></code><p><code></code>
+</p><p>Look up the node for a particular number
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">Node</span> <span class="n">a</span> <span class="n">tl</span> <span class="n">tr</span> <span class="o">!!!</span> <span class="mi">0</span> <span class="ow">=</span> <span class="n">a</span> 
+<span class="kt">Node</span> <span class="n">a</span> <span class="n">tl</span> <span class="n">tr</span> <span class="o">!!!</span> <span class="n">n</span> <span class="ow">=</span>
+   <span class="kr">if</span> <span class="n">odd</span> <span class="n">n</span>
+     <span class="kr">then</span> <span class="n">tl</span> <span class="o">!!!</span> <span class="n">top</span>
+     <span class="kr">else</span> <span class="n">tr</span> <span class="o">!!!</span> <span class="p">(</span><span class="n">top</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="kr">where</span> <span class="n">top</span> <span class="ow">=</span> <span class="n">n</span> <span class="p">`</span><span class="n">div</span><span class="p">`</span> <span class="mi">2</span>
+</pre></div>
+<p>We surely want to be able to map on these things...
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">instance</span> <span class="kt">Functor</span> <span class="kt">NaturalTree</span> <span class="kr">where</span>
+   <span class="n">fmap</span> <span class="n">f</span> <span class="p">(</span><span class="kt">Node</span> <span class="n">a</span> <span class="n">tl</span> <span class="n">tr</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Node</span> <span class="p">(</span><span class="n">f</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="n">fmap</span> <span class="n">f</span> <span class="n">tl</span><span class="p">)</span> <span class="p">(</span><span class="n">fmap</span> <span class="n">f</span> <span class="n">tr</span><span class="p">)</span>
+</pre></div>
+<p>If only so that we can write cute,
+but inefficient things like the below,
+which is just a <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="kt">NaturalTree</span></code></span>
+such that <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="nf">naturals</span><span class="o">!!!</span><span class="n">n</span> <span class="o">==</span> <span class="n">n</span></code></span>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">naturals</span> <span class="ow">=</span> <span class="kt">Node</span> <span class="mi">0</span>  <span class="p">(</span><span class="n">fmap</span> <span class="p">((</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="p">(</span><span class="o">*</span><span class="mi">2</span><span class="p">))</span> <span class="n">naturals</span><span class="p">)</span> <span class="p">(</span><span class="n">fmap</span> <span class="p">((</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span> <span class="n">naturals</span><span class="p">)</span>
+</pre></div>
+<p>The following is probably more efficient
+(and, having arguments won't hang around at top level, I think)
+-- have I put more <span class="inline-code"><code class="mw-highlight" dir="ltr"><span class="o">$!</span></code></span>s than necessary?
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">naturals</span> <span class="n">r</span> <span class="n">n</span> <span class="ow">=</span>
+   <span class="kt">Node</span> <span class="n">n</span>
+     <span class="p">((</span><span class="n">naturals</span> <span class="o">$!</span> <span class="n">r2</span><span class="p">)</span> <span class="o">$!</span> <span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="n">r</span><span class="p">))</span>
+     <span class="p">((</span><span class="n">naturals</span> <span class="o">$!</span> <span class="n">r2</span><span class="p">)</span> <span class="o">$!</span> <span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="n">r2</span><span class="p">))</span>
+        <span class="kr">where</span> <span class="n">r2</span> <span class="ow">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">r</span>
+</pre></div>
+<h2><span class="mw-headline" id="Memoising_CAFS">Memoising CAFS</span></h2>
+<p><b>Note: This is migrated from the old wiki.</b>
+</p><p>Memoising constructor functions gives you HashConsing, and you can sometimes use MemoisingCafs (<a href="/Constant_applicative_form" title="Constant applicative form">constant applicative forms</a>) to implement that.
+</p><p>The MemoisingCafs idiom also supports recursion.
+</p><p>Consider, for example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">wonderous</span> <span class="ow">::</span> <span class="kt">Integer</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">wonderous</span> <span class="mi">1</span> <span class="ow">=</span> <span class="mi">0</span>
+<span class="nf">wonderous</span> <span class="n">x</span>
+  <span class="o">|</span> <span class="n">even</span> <span class="n">x</span>    <span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">wonderous</span> <span class="p">(</span><span class="n">x</span> <span class="p">`</span><span class="n">div</span><span class="p">`</span> <span class="mi">2</span><span class="p">)</span>
+  <span class="o">|</span> <span class="n">otherwise</span> <span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">wonderous</span> <span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<p>This function is not at all understood by mathematicians and has a surprisingly complex recursion pattern, so if you need to call it many times with different values, optimising it would not be easy.
+</p><p>However, we can memoise some of the domain using an array CAF:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nf">wonderous2</span> <span class="ow">::</span> <span class="kt">Integer</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">wonderous2</span> <span class="n">x</span>
+  <span class="o">|</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">maxMemo</span> <span class="ow">=</span> <span class="n">memoArray</span> <span class="o">!</span> <span class="n">x</span>
+  <span class="o">|</span> <span class="n">otherwise</span>    <span class="ow">=</span> <span class="n">wonderous2&#39;</span> <span class="n">x</span>
+  <span class="kr">where</span>
+        <span class="n">maxMemo</span> <span class="ow">=</span> <span class="mi">100</span>
+        <span class="n">memoArray</span> <span class="ow">=</span> <span class="n">array</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">maxMemo</span><span class="p">)</span>
+                        <span class="p">[</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">wonderous2&#39;</span> <span class="n">x</span><span class="p">)</span> <span class="o">|</span> <span class="n">x</span> <span class="ow">&lt;-</span> <span class="p">[</span><span class="mi">1</span><span class="o">..</span><span class="n">maxMemo</span><span class="p">]</span> <span class="p">]</span>
+  
+        <span class="n">wonderous2&#39;</span> <span class="mi">1</span> <span class="ow">=</span> <span class="mi">0</span>
+        <span class="n">wonderous2&#39;</span> <span class="n">x</span>
+          <span class="o">|</span> <span class="n">even</span> <span class="n">x</span>    <span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">wonderous2</span> <span class="p">(</span><span class="n">x</span> <span class="p">`</span><span class="n">div</span><span class="p">`</span> <span class="mi">2</span><span class="p">)</span>
+          <span class="o">|</span> <span class="n">otherwise</span> <span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">wonderous2&#39;</span> <span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<p>When using this pattern in your own code, note carefully when to call the memoised version (wonderous2 in the above example) and when not to. In general, the partially memoised version (wonderous2' in the above example) should call the memoised version if it needs to perform a recursive call. However, in this instance, we only memoize for small values of x, so the branch of the recursion that passes a larger argument need not bother checking the memo table. (This does slow the array initialization, however.)
+Thanks to <a href="/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a>, we can even memoise an infinite domain, though we lose constant time lookup. This data structure is O(log N):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">type</span> <span class="kt">MemoTable</span> <span class="n">a</span> <span class="ow">=</span> <span class="p">[(</span><span class="kt">Integer</span><span class="p">,</span> <span class="kt">BinTree</span> <span class="n">a</span><span class="p">)]</span>
+<span class="kr">data</span> <span class="kt">BinTree</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">Leaf</span> <span class="n">a</span> <span class="o">|</span> <span class="kt">Node</span> <span class="kt">Integer</span> <span class="p">(</span><span class="kt">BinTree</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">BinTree</span> <span class="n">a</span><span class="p">)</span>
+ 
+<span class="nf">wonderous3</span> <span class="ow">::</span> <span class="kt">Integer</span> <span class="ow">-&gt;</span> <span class="kt">Integer</span>
+<span class="nf">wonderous3</span> <span class="n">x</span>
+  <span class="ow">=</span> <span class="n">searchMemoTable</span> <span class="n">x</span> <span class="n">memoTable</span>
+  <span class="kr">where</span>
+        <span class="n">memoTable</span> <span class="ow">::</span> <span class="kt">MemoTable</span> <span class="kt">Integer</span>
+        <span class="n">memoTable</span> <span class="ow">=</span> <span class="n">buildMemoTable</span> <span class="mi">1</span> <span class="mi">5</span>
+
+        <span class="n">buildMemoTable</span> <span class="n">n</span> <span class="n">i</span>
+            <span class="ow">=</span> <span class="p">(</span><span class="n">nextn</span><span class="p">,</span> <span class="n">buildMemoTable&#39;</span> <span class="n">n</span> <span class="n">i</span><span class="p">)</span> <span class="kt">:</span> <span class="n">buildMemoTable</span> <span class="n">nextn</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+            <span class="kr">where</span>
+                <span class="n">nextn</span> <span class="ow">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">2</span><span class="o">^</span><span class="n">i</span>
+
+                <span class="n">buildMemoTable&#39;</span> <span class="n">base</span> <span class="mi">0</span>
+                    <span class="ow">=</span> <span class="kt">Leaf</span> <span class="p">(</span><span class="n">wonderous3&#39;</span> <span class="n">base</span><span class="p">)</span>
+                <span class="n">buildMemoTable&#39;</span> <span class="n">base</span> <span class="n">i</span>
+                    <span class="ow">=</span> <span class="kt">Node</span> <span class="p">(</span><span class="n">base</span> <span class="o">+</span> <span class="n">midSize</span><span class="p">)</span>
+                           <span class="p">(</span><span class="n">buildMemoTable&#39;</span> <span class="n">base</span> <span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+                           <span class="p">(</span><span class="n">buildMemoTable&#39;</span> <span class="p">(</span><span class="n">base</span> <span class="o">+</span> <span class="n">midSize</span><span class="p">)</span> <span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+                    <span class="kr">where</span>
+                        <span class="n">midSize</span> <span class="ow">=</span> <span class="mi">2</span> <span class="o">^</span> <span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+ 
+        <span class="n">searchMemoTable</span> <span class="n">x</span> <span class="p">((</span><span class="n">x&#39;</span><span class="p">,</span><span class="n">tree</span><span class="p">)</span><span class="kt">:</span><span class="n">ms</span><span class="p">)</span>
+            <span class="o">|</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">x&#39;</span>    <span class="ow">=</span> <span class="n">searchMemoTree</span> <span class="n">x</span> <span class="n">tree</span>
+            <span class="o">|</span> <span class="n">otherwise</span> <span class="ow">=</span> <span class="n">searchMemoTable</span> <span class="n">x</span> <span class="n">ms</span>
+
+        <span class="n">searchMemoTree</span> <span class="n">x</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="n">y</span><span class="p">)</span> <span class="ow">=</span> <span class="n">y</span>
+        <span class="n">searchMemoTree</span> <span class="n">x</span> <span class="p">(</span><span class="kt">Node</span> <span class="n">mid</span> <span class="n">l</span> <span class="n">r</span><span class="p">)</span>
+            <span class="o">|</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">mid</span>   <span class="ow">=</span> <span class="n">searchMemoTree</span> <span class="n">x</span> <span class="n">l</span>
+            <span class="o">|</span> <span class="n">otherwise</span> <span class="ow">=</span> <span class="n">searchMemoTree</span> <span class="n">x</span> <span class="n">r</span>
+ 
+        <span class="n">wonderous3&#39;</span> <span class="mi">1</span> <span class="ow">=</span> <span class="mi">0</span>
+        <span class="n">wonderous3&#39;</span> <span class="n">x</span>
+          <span class="o">|</span> <span class="n">even</span> <span class="n">x</span>    <span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">wonderous3</span> <span class="p">(</span><span class="n">x</span> <span class="p">`</span><span class="n">div</span><span class="p">`</span> <span class="mi">2</span><span class="p">)</span>
+          <span class="o">|</span> <span class="n">otherwise</span> <span class="ow">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">wonderous3</span> <span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<p>Naturally, these techniques can be combined, say, by using a fast CAF data structure for the most common part of the domain and an infinite CAF data structure for the rest.
+</p><p>-- <a href="/index.php?title=AndrewBromage&amp;action=edit&amp;redlink=1" class="new" title="AndrewBromage (page does not exist)">AndrewBromage</a>
+</p>
+<h2><span class="mw-headline" id="Memoizing_polymorphic_functions">Memoizing polymorphic functions</span></h2>
+<p>What about memoizing polymorphic functions defined with polymorphic recursion?
+How can such functions be memoized?
+The caching data structures used in memoization typically handle only one type of argument at a time.
+For instance, one can have finite maps of differing types, but each concrete finite map holds just one type of key and one type of value.
+</p><p>See the discussion on <i>Memoizing polymorphic functions</i>, <a rel="nofollow" class="external text" href="http://conal.net/blog/posts/memoizing-polymorphic-functions-part-one/">part one</a> and <a rel="nofollow" class="external text" href="http://conal.net/blog/posts/memoizing-polymorphic-functions-part-two/">part two</a>, as well as <a rel="nofollow" class="external text" href="http://conal.net/blog/posts/memoizing-polymorphic-functions-via-unmemoization/"><i>Memoizing polymorphic functions via unmemoization</i></a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.haskell.org/pipermail/haskell-cafe/2007-February/021288.html">Haskell-Cafe "speeding up fibonacci with memoizing"</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/pipermail/haskell-cafe/2007-May/024689.html">Haskell-Cafe about memoization utility function</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/pipermail/haskell-cafe/2007-February/021563.html">Haskell-Cafe "memoisation"</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.haskell.org/pipermail/haskell-cafe/2005-October/010287.html">Haskell-Cafe about Memoization and Data.Map</a></li>
+<li><a rel="nofollow" class="external free" href="http://programming.reddit.com/info/16ofr/comments">http://programming.reddit.com/info/16ofr/comments</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/~wcook/Drafts/2006/MemoMixins.pdf">Monadic Memoization Mixins</a> by Daniel Brown and William R. Cook</li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/cgi-bin/hackage-scripts/package/data-memocombinators">data-memocombinators: Combinators for building memo tables.</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/cgi-bin/hackage-scripts/package/MemoTrie">MemoTrie: Trie-based memo functions</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/monad-memo">monad-memo: memoization monad transformer</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/memoize">memoize: uses Template Haskell to derive memoization code</a></li>
+<li><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/array-memoize">array-memoize: memoize finite (and/or discrete) sub-domains of a function using arrays</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20220814050926
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.044 seconds
+Real time usage: 0.976 seconds
+Preprocessor visited node count: 148/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 62/2097152 bytes
+Template argument size: 24/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 29710/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+
+-->
+</div>
+<!-- Saved in parser cache with key wikidb_haskell:pcache:idhash:3155-0!canonical and timestamp 20220814050925 and revision id 57978
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.haskell.org/index.php?title=Memoization&amp;oldid=57978">https://wiki.haskell.org/index.php?title=Memoization&amp;oldid=57978</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Category:Idioms" title="Category:Idioms">Idioms</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Memoization" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="hawikiTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Memoization"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Memoization"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="hawikiTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Memoization" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Memoization&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Memoization&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="hawikiMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search HaskellWiki" title="Search HaskellWiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Haskell"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/Haskell" title="Visit the main page [z]" accesskey="z">Haskell</a></li><li id="n-portal"><a href="/HaskellWiki:Community" title="About the project, what you can do, where to find things">Wiki community</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Memoization" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Memoization" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Memoization&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Memoization&amp;oldid=57978" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Memoization&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/index.php?title=Special:CiteThisPage&amp;page=Memoization&amp;id=57978" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 28 April 2014, at 16:05.</li>
+											<li id="footer-info-copyright">Recent content is available under <a href="/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">simple permissive license</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+									<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.044","walltime":"0.976","ppvisitednodes":{"value":148,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":62,"limit":2097152},"templateargumentsize":{"value":24,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":29710,"limit":5000000},"timingprofile":[]},"cachereport":{"timestamp":"20220814050926","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":81});});</script>
+	</body>
+</html>

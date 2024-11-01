@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes/ws/peniel;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/A_Lamb_Goes_Uncomplaining_Forth-An_Wasserfluessen_Babylon.mp3" "#" "<==" "rpt"

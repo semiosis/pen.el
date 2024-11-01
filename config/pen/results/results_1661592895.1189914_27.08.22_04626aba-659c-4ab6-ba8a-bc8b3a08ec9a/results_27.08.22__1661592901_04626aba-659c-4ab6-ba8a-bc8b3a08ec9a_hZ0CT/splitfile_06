@@ -1,0 +1,12 @@
+
+  -- Print the column headers.
+  print $ map head $ head rows
+
+  -- Print the column delimiter.
+  print $ replicate (length (head rows)) '-'
+
+  -- Print the rows.
+  mapM_ print $ tail rows
+EOD
+
+# vim: set ft=sh :

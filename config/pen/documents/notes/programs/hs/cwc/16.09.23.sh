@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "cwc" "#" "<==" "zsh"
+cd /root/repos/cwc;  "cwc" "-p" "patterns/5x5" "#" "<==" "zsh"
+cd /root/repos/cwc;  "cwc" "-p" "patterns/5x5" "-f" "simple" "#" "<==" "zsh"
+cd /root/repos/cwc;  "cwc" "-p" "patterns/heart" "-f" "simple" "#" "<==" "zsh"
+cd /root/notes;  "cwc" "#" "<==" "zsh"
+cd /root/repos/cwc;  "cwc" "-p" "patterns/heart" "-f" "simple" "#" "<==" "zsh"

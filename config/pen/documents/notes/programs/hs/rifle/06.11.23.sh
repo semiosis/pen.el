@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "rifle" "remember.txt" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "remember.txt" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "perspective.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "clipboard.txt" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "todo.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "todo.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rifle" "todo.org" "#" "<==" "bash"

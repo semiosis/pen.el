@@ -1,0 +1,8 @@
+cd /root/pen_python_modules/shanepy;  "xdg-open" "/root/pen_python_modules/shanepy/Makefile" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el/src;  "xdg-open" "/root/.emacs.d/host/pen.el/src/pen-browser.el" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el/src;  "xdg-open" "/root/.emacs.d/host/pen.el/src/pen-ace-link.el" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el/src;  "xdg-open" "/root/.emacs.d/host/pen.el/src/pen-comint.el" "#" "<==" "broot"
+cd /root/.emacs.d;  "xdg-open" "/root/.emacs.d/packages.txt" "#" "<==" "broot"
+cd /root/.emacs.d;  "xdg-open" "/root/.emacs.d/packages.txt" "#" "<==" "broot"
+cd /root/.emacs.d;  "xdg-open" "/root/.emacs.d/pen.el/glossary.txt" "#" "<==" "broot"
+cd /root/.emacs.d;  "xdg-open" "/root/.emacs.d/pen.el/scripts/container/list-glossary-terms" "#" "<==" "broot"

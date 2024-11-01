@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/typesense/typesense;  "library-search" "Snappy" "#" "<==" "acs"
+cd /volumes/home/shane/var/smulliga/source/git/typesense/typesense;  "library-search" "cmake" "#" "<==" "acs"
+cd /root/.pen/documents/notes;  "library-search" "glog" "#" "<==" "acs"
+cd /volumes/home/shane/var/smulliga/source/git/fwilliams/unwind;  "library-search" "libqt5core" "#" "<==" "acs"
+cd /volumes/home/shane/var/smulliga/source/git/fwilliams/unwind;  "library-search" "libqt5core" "#" "<==" "acs"
+cd /root/.pen/documents/notes;  "library-search" "qt5core" "#" "<==" "acs"
+cd /volumes/home/shane/var/smulliga/source/git/fwilliams/unwind;  "library-search" "qtbase" "#" "<==" "acs"
+cd /root/.pen/documents/notes;  "library-search" "apt-file" "#" "<==" "acs"

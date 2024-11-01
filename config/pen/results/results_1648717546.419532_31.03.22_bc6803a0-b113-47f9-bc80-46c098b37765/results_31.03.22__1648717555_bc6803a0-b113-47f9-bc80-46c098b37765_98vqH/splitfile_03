@@ -1,0 +1,3 @@
+
+The braces are used when you want the data keyword to take up an entire line.
+If you don't use the braces, then the data is assumed to continue on the line below.

@@ -1,0 +1,15 @@
+"undef" is a special scalar value that is returned by a function when no value is returned.
+
+The following code will return a value of undef.
+
+sub edbi_get_data {
+
+The following code will return a value of undef.
+
+sub edbi_get_data {
+
+The following code will return a value of undef.
+
+sub edbi_get_data {
+
+The following code will return a value of undef.

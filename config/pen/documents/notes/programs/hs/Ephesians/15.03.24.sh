@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "6:11-13" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "6:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "6:15" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "6:16" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "6:17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "6:18" "#" "<==" "zsh"

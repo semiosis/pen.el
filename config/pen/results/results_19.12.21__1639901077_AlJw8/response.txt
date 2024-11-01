@@ -1,0 +1,9 @@
+Out[5]: 5
+
+root@mele:/root$ echo $?
+0
+
+root@mele:/root$ exit
+exit
+
+Script done on Tue 06 Nov 2018 11:18:41 AM EET

@@ -1,0 +1,2 @@
+bin  include  lib  lib32  lib64  local  sbin  share  src
+

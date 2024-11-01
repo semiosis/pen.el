@@ -1,0 +1,11 @@
+
+      (pen-complete-region preceding-text)
+    (pen-complete-line preceding-text tv)))
+
+(defun pen-complete-line-maybe-tv (preceding-text)
+  (interactive (list (pen-preceding-text)))
+  (if mark-active
+      (pen-complete-region preceding-text)
+    (pen-complete-line preceding-text t)))
+
+(defun

@@ -1,0 +1,5 @@
+ GY_GITHUB_ID
+# python script
+
+if [ $# -lt 2 ] || [ $1 == "-h" ] || [ $1 == "--help" ]; then
+$3 # the id of the

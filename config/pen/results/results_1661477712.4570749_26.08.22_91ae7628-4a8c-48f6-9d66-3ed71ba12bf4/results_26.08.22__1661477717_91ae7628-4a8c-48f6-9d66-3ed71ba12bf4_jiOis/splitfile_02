@@ -1,0 +1,12 @@
+"Clavier" is a command line interface for typing notes.
+
+Usage:
+    clavier [options] [<file>]
+
+Options:
+    -h --help       Show this screen.
+    --version       Show version.
+    -v --verbose    Show more output.
+    -q --quiet      Show less output.
+    -f --force      Overwrite files without confirmation.
+    -i --interactive  Open an interactive Python console after running.

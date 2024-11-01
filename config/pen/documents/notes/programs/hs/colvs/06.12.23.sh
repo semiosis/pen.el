@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/agenda;  "colvs" "#" "<==" "pa"
+cd /etc/apt;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"

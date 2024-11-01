@@ -1,0 +1,471 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 6768
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+x-origin-cache: HIT
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-f338"
+expires: Fri, 12 Apr 2024 09:03:21 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 0F0A:1973AA:721E3D:786F76:6618F680
+Accept-Ranges: bytes
+Date: Fri, 12 Apr 2024 08:53:22 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10326-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1712912003.907587,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 3e141942f1402a85cfa8cd24ce6d62429724402c
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Working With Large Cells &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/intermediate/large-cells.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Working With Large Files" href="../large-files/" />
+    <link rel="prev" title="Reshaping Data" href="../reshaping-data/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working With Large Cells</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#enabling-multiline-mode">Enabling multiline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scrolling-within-cells">Scrolling within cells</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diving-into-cells">Diving into cells</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Working With Large Cells</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="working-with-large-cells">
+<h1>Working With Large Cells<a class="headerlink" href="#working-with-large-cells" title="Permalink to this headline">¶</a></h1>
+<p>Sometimes, values in a dataset are too large to display entirely in a single row. VisiData provides a few ways to view these large cells:</p>
+<ul class="simple">
+<li>Multiline mode</li>
+<li>Scrolling within cells</li>
+<li>Diving into cells</li>
+</ul>
+<p>In the examples below, we’ll examine the <code class="docutils literal notranslate"><span class="pre">REMARKS</span></code> column of the FAA dataset:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">&lt;</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">PERSON </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> REMAINS_COLLECTED </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 inv38-246 inv40"></span><span class="ansi1 ansi4 inv37 inv40"> REMARKS                                                              
+</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40"> Tower  │ 0                 │</span><span class="ansi1 inv37 inv40"> N9240F was right base to final on Runway 4, and he reported a bird s…</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║
+</span><span class="ansi37"></span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ON FINAL, PILOT REPORTED HEARING IMPACT. AFTER LANDING AND INSPECTIN…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> N952G, P46T/G, bird strike, no injuries reported, damage to vortex g…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> NO EMERGENCY: AFTER THE AIRCRAFT WAS AT THE GATE THE PILOT OF DAL939…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> MEDFLY1, A BE9L, VFR, LANDED RY 15. UPON CONTACTING GC, PILOT ADVISE…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DAL571 EXPERIENCED A BIRD INGESTION ON ARRIVAL TO STT ON JULY 17. TH…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DAL1356 ADVISED LOCAL CONTROL OF A BIRD STRIKE SHORT FINAL/OVER THE …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> N999RK WAS DEPARTING TO 87I AND ON DEPARTURE STRUCK A BIRD AND IT WA…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AAY843,MD80, ADVSD TPA APCH HE ENCOUNTERED BIRD STRIKE ON RADOME, BE…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> LOF3351 hit a large bird, thought it was an owl, over the threshold,…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> N5352K EXPERIENCED A BIRD STRIKE ON A 3-MILE FINAL FOR RWY 9R. THE A…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> POLICE1 reported being struck by a seagull on the left front side of…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> PILOT OF AAL1702 REPORTED BIRD STRIKE ON FINAL FOR RUNWAY 10L AT 150…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ASQ2607 REPORTED A BIRD STRIKE DURING TAKE OFF. PILOT STATED IT WAS …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ASH5753 WAS CLEARED TO LAND ON RY22L WHEN THEY HIT A BIRD IN THE FLA…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> CMD8 BIRD STRIKE.  NEGATIVE EMERGENCY. MAKING PRECAUTIONARY LANDING …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DAL 1253-BIRD STRIKE REPORTED AFTER LANDING.</span><span class="ansi40">                         </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> Delta Airlines called to report a birdstrike on DAL2384 who had arri…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DLH441 reported receiving bird strikes climbing through 100 approxim…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AIRCRAFT ENCOUNTERED BIRD STRIKE OUTSIDE 5 MILES OF SFB WHILE ON APP…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> Aircraft reported bird strike climbing out of 12000ft and requested …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                     </span><span class="ansi30 ansi48-68">         </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">l</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">go-right</span><span class="ansi30"></span><span class="ansi30 ansi48-68">      73448 rows </span>
+</pre>
+</div>
+<div class="section" id="enabling-multiline-mode">
+<h2>Enabling multiline mode<a class="headerlink" href="#enabling-multiline-mode" title="Permalink to this headline">¶</a></h2>
+<p>By default, VisiData displays each row on a single line. You can switch to multiline mode (and toggle back out of it) by pressing <kbd class="kbd docutils literal notranslate">v</kbd>. Here’s what that looks like:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">&lt;</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">PERSON </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> REMAINS_COLLECTED </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 inv38-246 inv40"></span><span class="ansi1 ansi4 inv37 inv40"> REMARKS                                                              
+</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40"> Tower  │ 0                 │</span><span class="ansi1 inv37 inv40"> N9240F was right base to final on Runway 4, and he reported a bird   </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║
+                             </span><span class="ansi1 inv37 inv40"> strike to the left wing.  He did not need any assistance.  He landed </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║
+                             </span><span class="ansi1 inv37 inv40"> and taxied to the ramp, and said there was only minor damage done to </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║
+                             </span><span class="ansi1 inv37 inv40"> the left wing.                                                       </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║
+</span><span class="ansi37"></span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ON FINAL, PILOT REPORTED HEARING IMPACT. AFTER LANDING AND           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> INSPECTING AIRCRAFT, PILOT DISCOVERED DENT IN TIRE BOOT. UPON RUNWAY </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> INSPECTION A BIRD CARCASS WAS FOUND ON RUNWAY NORTH OF TAXIWAY       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA.</span><span class="ansi40">                                                               </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> N952G, P46T/G, bird strike, no injuries reported, damage to vortex   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> generator, pilot's name is Robert Nipper, 713-539-0797.</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi40">                                                                      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi40">                                                                      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> NO EMERGENCY: AFTER THE AIRCRAFT WAS AT THE GATE THE PILOT OF DAL939 </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ADVISED THAT THEY HAD A BIRD STRIKE ON A 2 MILE FINAL TO RWY30R. A   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BIRD STRUCK THE RIGHT WING AND THE LANDING LIGHT. THE LANDING LIGHT  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> WAS SHATTERED AND THERE WAS NO DAMAGE ON THE RIGHT</span><span class="ansi40">                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> MEDFLY1, A BE9L, VFR, LANDED RY 15. UPON CONTACTING GC, PILOT</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ADVISED HE HAD EXPERIENCED A BIRD STRIKE AND REQUESTED INSTRUCTIONS  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> TO TAXI TO THE RAMP TO INSPECT THE ACFT. THE PILOT CALLED THE TOWER  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">       </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40"> </span><span class="ansi37 ansi40">  </span><span class="ansi40">                 </span><span class="ansi38-246 ansi40"> </span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AND ADVISED THE THAT THE AIRCRAFT HAD LIGHT DAMAGE TO THE            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DAL571 EXPERIENCED A BIRD INGESTION ON ARRIVAL TO STT ON JULY 17.    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                     </span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">v</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">toggle-multiline</span><span class="ansi30"></span><span class="ansi30 ansi48-68">      73448 rows </span>
+</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The default row height in multiline mode is 4 lines, but you can adjust this through VisiData’s <code class="docutils literal notranslate"><span class="pre">default_height</span></code> setting.</p>
+</div>
+</div>
+<div class="section" id="scrolling-within-cells">
+<h2>Scrolling within cells<a class="headerlink" href="#scrolling-within-cells" title="Permalink to this headline">¶</a></h2>
+<p>To see more of a cell in single-line mode, you can scroll back and forth within a column using the following commands:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Keystrokes</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">zh</kbd></td>
+<td>Scroll text left</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">zl</kbd></td>
+<td>Scroll text right</td>
+</tr>
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">zj</kbd></td>
+<td>Scroll text down</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">zk</kbd></td>
+<td>Scroll text up</td>
+</tr>
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">gzh</kbd></td>
+<td>Scroll back to leftmost character</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">gzk</kbd></td>
+<td>Scroll back to topmost character</td>
+</tr>
+</tbody>
+</table>
+<p>Here’s how it looks in practice, starting with the same view as above:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">&lt;</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">PERSON </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> REMAINS_COLLECTED </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 inv38-246 inv40"></span><span class="ansi1 ansi4 inv37 inv40"> REMARKS                                                              
+</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40"> Tower  │ 0                 │</span><span class="ansi1 inv37 inv40"> N9240F was right base to final on Runway 4, and he reported a bird s…</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║
+</span><span class="ansi37"></span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ON FINAL, PILOT REPORTED HEARING IMPACT. AFTER LANDING AND INSPECTIN…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> N952G, P46T/G, bird strike, no injuries reported, damage to vortex g…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> NO EMERGENCY: AFTER THE AIRCRAFT WAS AT THE GATE THE PILOT OF DAL939…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> MEDFLY1, A BE9L, VFR, LANDED RY 15. UPON CONTACTING GC, PILOT ADVISE…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DAL571 EXPERIENCED A BIRD INGESTION ON ARRIVAL TO STT ON JULY 17. TH…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DAL1356 ADVISED LOCAL CONTROL OF A BIRD STRIKE SHORT FINAL/OVER THE …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> N999RK WAS DEPARTING TO 87I AND ON DEPARTURE STRUCK A BIRD AND IT WA…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AAY843,MD80, ADVSD TPA APCH HE ENCOUNTERED BIRD STRIKE ON RADOME, BE…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> LOF3351 hit a large bird, thought it was an owl, over the threshold,…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> N5352K EXPERIENCED A BIRD STRIKE ON A 3-MILE FINAL FOR RWY 9R. THE A…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> POLICE1 reported being struck by a seagull on the left front side of…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> PILOT OF AAL1702 REPORTED BIRD STRIKE ON FINAL FOR RUNWAY 10L AT 150…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ASQ2607 REPORTED A BIRD STRIKE DURING TAKE OFF. PILOT STATED IT WAS …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ASH5753 WAS CLEARED TO LAND ON RY22L WHEN THEY HIT A BIRD IN THE FLA…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> CMD8 BIRD STRIKE.  NEGATIVE EMERGENCY. MAKING PRECAUTIONARY LANDING …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DAL 1253-BIRD STRIKE REPORTED AFTER LANDING.</span><span class="ansi40">                         </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> Delta Airlines called to report a birdstrike on DAL2384 who had arri…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DLH441 reported receiving bird strikes climbing through 100 approxim…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AIRCRAFT ENCOUNTERED BIRD STRIKE OUTSIDE 5 MILES OF SFB WHILE ON APP…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> Aircraft reported bird strike climbing out of 12000ft and requested …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                     </span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">v</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">toggle-multiline</span><span class="ansi30"></span><span class="ansi30 ansi48-68">      73448 rows </span>
+</pre>
+</div>
+<p>After typing <kbd class="kbd docutils literal notranslate">zh</kbd>, the <code class="docutils literal notranslate"><span class="pre">REMARKS</span></code> column now looks like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">&lt;</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">PERSON </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> REMAINS_COLLECTED </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 inv38-246 inv40"></span><span class="ansi1 ansi4 inv37 inv40"> REMARKS                                                              
+</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40"> Tower  │ 0                 │</span><span class="ansi1 inv37 inv40">…trike to the left wing.  He did not need any assistance.  He landed …</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║
+</span><span class="ansi37"></span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…G AIRCRAFT, PILOT DISCOVERED DENT IN TIRE BOOT. UPON RUNWAY INSPECTI…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…enerator, pilot's name is Robert Nipper, 713-539-0797.</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">… ADVISED THAT THEY HAD A BIRD STRIKE ON A 2 MILE FINAL TO RWY30R. A …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…D HE HAD EXPERIENCED A BIRD STRIKE AND REQUESTED INSTRUCTIONS TO TAX…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…E PILOT DID NOT REPORT A BIRD STRIKE TO THE ATCT. THE ATCT DID NOT F…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…NUMBERS TO RY12R.  THE B717 LANDED WITHOUT INCIDENT.  PILOT ADVISED …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…S INJESTED INTO THE RIGHT ENGINE. THE AIRCRAFT HAD MADE A PRECAUTION…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…LOW 1ST OFFICERS' WINDOW, 30 NNE PIE AT 6,000 FT. PILOT KEVIN VAN TA…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">… taxied in and his taxi light was not working.</span><span class="ansi40">                       </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…IRCRAFT LANDED WITHOUT INCIDENT. THE STUDENT THINKS IT WAS A LARGER …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">… the windshield. Pilot: Chris Dominguez, (408) 219-8588, Moderate to…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…0FT. NO DAMAGE REPORTED. SMALL BIRD ON WINDSHIELD.</span><span class="ansi40">                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…A SMALL BIRD. NO DAMAGE WAS REPORTED. ASQ2607 CLIMB WITHOUT ISSUE AN…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…RE OVER THE RUNWAY.  BIRD WAS DESCRIBED AS SMALL AND BLACK.  RY OPS …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…AT OAK.</span><span class="ansi40">                                                              </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…</span><span class="ansi40">                                                                     </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…ved RWY16R.</span><span class="ansi40">                                                          </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…ately 13 miles east of IAH. The aircraft was IMC and unable to deter…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40"> </span><span class="ansi37 ansi40">Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…ROACH CONTROL FREQUENCY. AIRCRAFT RETURNED BACK TO SFB AND LANDED RW…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi37 ansi40"> Tower  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 0</span><span class="ansi40">                 </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">…leveling at 13000. Declared emergency with stall indication in one e…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                   </span><span class="ansi1 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">zl</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">scroll-cells-right</span><span class="ansi30"></span><span class="ansi30 ansi48-68">      73448 rows </span>
+</pre>
+</div>
+</div>
+<div class="section" id="diving-into-cells">
+<h2>Diving into cells<a class="headerlink" href="#diving-into-cells" title="Permalink to this headline">¶</a></h2>
+<p>Pressing <kbd class="kbd docutils literal notranslate">z</kbd> + <kbd class="kbd docutils literal notranslate">Enter</kbd> “dives” into your current cell, opening a “Text Sheet” that contains only that cell’s value:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv37 inv48-68"></span><span class="ansi1 ansi4 inv37 inv40"> text                                                                                              
+</span><span class="ansi1 inv_background inv_foreground"></span><span class="ansi1 inv37 inv_foreground"></span><span class="ansi1 inv37 inv40"> N9240F was right base to final on Runway 4, and he reported a bird strike to the left wing.  He d…</span><span class="ansi40"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span><span class="ansi4 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">2› faa-wildlife-strikes[0].REMARKS</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                     </span><span class="ansi1 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">zEnter</span><span class="ansi30"></span><span class="ansi30 ansi48-68">             1 lines </span>
+</pre>
+</div>
+<p>If your cell’s value contains newlines, they’ll appear as such in the Text Sheet. From a Text Sheet, you also can press <kbd class="kbd docutils literal notranslate">Control-o</kbd> to open the cell in your terminal’s default text editor.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Similarly, whenever you’re editing a cell within VisiData (i.e., via the <kbd class="kbd docutils literal notranslate">e</kbd> command), you can also run <kbd class="kbd docutils literal notranslate">Control-o</kbd> to open that cell in your terminal’s default text editor.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../large-files/" class="btn btn-neutral float-right" title="Working With Large Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../reshaping-data/" class="btn btn-neutral float-left" title="Reshaping Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

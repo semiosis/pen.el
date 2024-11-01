@@ -1,0 +1,966 @@
+function machine metaphor
+    We can view a function as something that
+    can take an object (as long as the object
+    is in its domain) and turn it into (or map
+    it to) a different object. We can imagine
+    it is some machine that does this
+    transformation.
+
+codomain
+set of destination of a function
+codomain of a function
+    The set of its possible outputs. In the
+    function machine metaphor, the codomain is
+    the set of objects that might possible
+    come out of the machine. For example, when
+    we use the function notation f:R→R, we
+    mean that f is a function from the real
+    numbers to the real numbers.
+
+    The set into which all of the output of
+    the function is constrained to fall. It is
+    the set Y in the notation f: X → Y. The
+    term range is sometimes ambiguously used
+    to refer to either the codomain or image
+    of a function.
+
+identity morphism
+    A unique morphism corresponding to each
+    object of a category, which has its domain
+    equal to its codomain, and which composed
+    with any morphism (with which it is
+    composable) gives that same morphism.
+
+isomorphic
+isomorphism
+    [retaining structure bijective]
+
+    One morphism and another morphism, so that
+    the recombination of the two is an
+    identity morphism.
+
+    It indicates a structure preserving map
+    between two sets containing the same
+    number of elements.
+
+diffeomorphism
+    [mathematics]
+
+    An isomorphism of smooth manifolds.
+
+    It is an invertible function that maps one
+    differentiable manifold to another such
+    that both the function and its inverse are
+    smooth.
+
+binomial distribution
+    Only 2 possible outcomes on any one
+    individual trial; typically,
+    - success
+    - failure
+
+homomorphism
+    Like an isomorphism but instead is when
+    the map is from a larger set to a smaller
+    one.
+
+poincare duality [theorem]
+    A basic result on the structure of the
+    homology and cohomology groups of
+    manifolds. It states that if M is an
+    n-dimensional oriented closed manifold
+    (compact and without boundary), then the
+    kth cohomology Group of M is isomorphic to
+    the (n − k)th homology Group of M, for all
+    integers k
+
+    Holds for any coefficient Ring, so long as
+    one has taken an orientation with respect
+    to that coefficient Ring;
+        in particular, since every manifold
+        has a unique orientation mod 2,
+        Poincaré duality holds mod 2 without
+        any assumption of orientation.
+
+Algebraic Structures
+    Example types:
+    - Group-like Structures
+    - Ring-like Structures
+    - Lattice-like Structures
+
+    https://argumatronic.com/posts/2019-06-21-algebra-cheatsheet.html#Group-like-structures
+
+Group-like Structures
+    Examples:
+    - Magma
+    - Semigroup
+    - Monoid
+    - Group
+    - Abelian group
+    - Idempotent group
+
+Magma
+    [Group-like structure]
+
+    A set with a (closed) binary operation.
+
+    (A, *)
+
+    Structure:
+    * : A × A → A
+
+Semigroup
+    [Group-like structure]
+
+    A Magma where the operation is
+    associative.
+
+    (A, *)
+
+    Structure:
+    * : A × A → A
+
+    Laws:
+    ∀x, y, z ∈ A; x * (y * z) = (x * y) * z
+
+Monoid
+    [Group-like structure]
+
+    A Semigroup with an identity element.
+
+    (A, *,u)
+
+    Structure:
+    * : A × A → A
+    u : A
+
+    Laws:
+    (A, *) is a Semigroup
+    ∀x ∈ A; x * u = u * x = x
+
+Group
+    [Group-like structure]
+
+    A Monoid that has inverses relative to the
+    operation.
+
+    (A, *,u, ′)
+
+    Structure:
+    * : A × A → A
+    u : A
+    ′ : A → A
+
+    Laws:
+    (A, *,u) is a Monoid
+    ∀x ∈ A; x * x′ = x′ * x = u
+
+    Laws:
+    1. Closure:
+       If A and B are two elements in G, then
+       the product AB is also in G.
+    2. Associativity:
+       The defined multiplication is
+       associative, i.e., for all A,B,C in G,
+       (AB)C=A(BC).
+    3. Identity:
+       There is an identity element I (a.k.a.
+       1, E, or e) such that IA=AI=A for every
+       element A in G.
+    4. Inverse:
+       There must be an inverse (a.k.a.
+       reciprocal) of each element. Therefore,
+       for each element A of G, the set
+       contains an element B=A^(-1) such that
+       AA^(-1)=A^(-1)A=I.
+
+abelian group
+commutative group
+    [a type of group]
+    [Group-like structure]
+
+    A group that obeys the axiom of
+    commutativity.
+
+    Applying the group operation to two group
+    elements results in the same thing no
+    matter the order in which they are
+    written.
+
+    A Group where the operation is also
+    commutative.
+    
+    You may also see the term abelian applied
+    to semigroups and monoids whose operations
+    are commutative.
+
+    Laws:
+    ∀x, y ∈ A; x * y = y * x
+
+    This is in addition to the laws for
+    Semigroup, Monoid, or Group (whichever
+    abelian structure you’re dealing with)
+    that already pertain.
+
+non-Abelian group
+noncommutative group
+    A Group for which the commutativity axiom
+    does not hold, i.e. for arbitrary two
+    elements m and n of the Group (G, *) the
+    equation m*n = n*m does not hold.
+
+Idempotent group
+    [Group-like structure]
+
+    A Group whose operation is idempotent.
+    
+    Strictly speaking, an Idempotent group is
+    necessarily trivial – that is, it is
+    necessarily a Group with only one element.
+    
+    As with abelian, idempotent may apply to
+    semigroups or monoids as well when the
+    operation is idempotent.
+
+    Laws:
+    ∀x ∈ A; x * x = x
+
+Ring-like Structures
+    Examples:
+    - Quasiring
+    - Nearring
+    - Semiring
+    - Rng
+    - Ring
+    - Division algebra
+    - Field
+
+Quasiring
+    [Ring-like structure]
+
+    Two monoids over the same set whose Monoid
+    structures are compatible, in the sense
+    that:
+    - one operation (called multiplication)
+      distributes over the other (called
+      addition), and
+    - the additive identity is a
+      multiplicative annihilator.
+
+    (A, +,⋅,0, 1)
+
+    Structure:
+    + : A × A → A
+    ⋅ : A × A → A
+    0 : A
+    1 : A
+
+    Laws:
+    (A, +,0) is a Monoid
+    (A, ⋅,1) is a Monoid
+    ∀x ∈ A; 0 ⋅ x = x ⋅ 0 = 0
+    ∀x, y, z ∈ A; x ⋅ (y + z) = x ⋅ y + x ⋅ z
+    ∀x, y, z ∈ A; (x + y) ⋅ z = x ⋅ z + y ⋅ z
+
+Nearring
+    [Ring-like structure]
+
+    A Quasiring with additive inverses.
+
+    (A, +,⋅,0, 1,  − )
+
+    Structure:
+    + : A × A → A
+    ⋅ : A × A → A
+    0 : A
+    1 : A
+     −  : A → A
+
+    Laws:
+    (A, +,0,  − ) is a Group
+
+Semiring
+rig
+    [Ring-like structure]
+
+    A Quasiring with commutative addition.
+    
+    Alternatively, a Ring without inverses,
+    hence also sometimes called a rig, i.e., a
+    Ring without negatives.
+
+    Quasiring (A, +,⋅,0, 1)
+
+    Laws:
+    (A, +,0) is abelian
+
+    The term rig is also used
+    occasionally - this originated as a joke,
+    suggesting that rigs are rings without
+    negative elements.
+
+rng
+    [Ring-like structure]
+
+    A Ring without identities.
+
+    A Ring without a multiplicative identity.
+
+    If we may speak frankly, the rig and rng
+    nomenclatures are abominations.
+    
+    Nevertheless, you may see them sometimes,
+    but we will speak of them no more.
+
+Ring
+    [Ring-like structure]
+
+    A Quasiring that is both a Nearring and a
+    Semiring.
+    
+    Alternatively, Abelian group plus a Monoid
+    (over the same set) where the Monoid
+    operation is distributive over the Group
+    operation.
+
+    Nearring (A, +,⋅,0, 1,  − )
+
+    Laws:
+    (A, +,0,  − ) is an Abelian group
+
+    Rings, semirings, and the lot can also be
+    commutative rings, commutative semirings,
+    etc., but, unlike the Group-like
+    structures, they are not usually described
+    as, e.g., “abelian rings.”
+
+Division algebra
+    [Ring-like structure]
+
+    A Ring with multiplicative inverses.
+
+    (A, +,⋅,0, 1, −,′)
+
+    Structure:
+    + : A × A → A
+    ⋅ : A × A → A
+    0 : A
+    1 : A
+    − : A → A
+    ′ : A \ {0} → A \ {0}
+
+    The notation A \ {0}, sometimes
+    alternatively given as A − {0}, means
+    “everything in A except 0.”
+
+    Laws:
+    (A, +,⋅,0, 1,  − ) is a Ring
+    (A \ {0}, 1, ′) is a Group
+
+Field
+    [Ring-like structure]
+
+    A Division algebra with commutative
+    multiplication.
+
+    Division algebra (A, +,⋅,0, 1, −,′)
+
+    Laws:
+    (A, +,⋅,0, 1) is commutative
+
+Lattice-like Structures
+    Examples:
+    - Semilattice
+    - Lattice
+    - Bounded lattice
+    - Complemented lattice
+    - Distributive lattice
+    - Heyting algebra
+    - Boolean algebra
+
+Semilattice
+    [Lattice-like structure]
+
+    A Magma where the operation is
+    commutative, associative, and idempotent.
+    
+    It could refer to either of the abelian
+    semigroups of a Lattice, written ∨ and
+    often called join or Boolean or, and ∧
+    often called meet or Boolean and.
+    
+    We define the term here for reasons
+    related to its usage in Haskell, but it is
+    best understood in context of lattices,
+    rather than independently.
+
+Lattice
+    [Lattice-like structure]
+
+    Two idempotent abelian semigroups over the
+    same set whose Semigroup structures are
+    compatible, in the sense that the
+    operations satisfy absorption laws.
+    
+    Interestingly, it’s sort of two
+    semilattices in the same way that a
+    Semiring is two monoids, with laws tying
+    them together (distributivity in the case
+    of semirings, absorption laws in the case
+    of lattices).
+
+    (A, ∨, ∧ )
+
+    Structure:
+
+     ∨  : A × A → A
+     ∧  : A × A → A
+
+    Laws:
+
+    (A,  ∨ ) is an idempotent abelian Semigroup
+    (A,  ∧ ) is an idempotent abelian Semigroup
+    ∀x, y ∈ A; x ∨ (x ∧ y) = x
+    ∀x, y ∈ A; x ∧ (x ∨ y) = x
+
+    The last pair of laws is called
+    absorption.
+    
+    Since absorption laws are unique to
+    lattices, we discuss them here instead of
+    in the glossary.
+    
+    The absorption laws link a pair of
+    semilattices in a kind of distributive
+    relationship, so that a Lattice is not
+    just any two semilattices that happen to
+    be over the same set, but only
+    semilattices that are linked in this way.
+    
+    In particular, the absorption laws ensure
+    that the two semilattices are dual of each
+    other.
+    
+    It can take a moment to see what it means,
+    so let’s pause and look at concrete
+    examples.
+
+    Consider a Boolean Lattice with two
+    elements, True and False, where ||
+    corresponds to ∨ and && corresponds to ∧:
+
+        λ> False || (False && True)
+        False
+
+        λ> False && (False || True)
+        False
+
+    But it’s important to note that these hold
+    for all x and y in the set. So, if we swap
+    them, the absorption laws still hold:
+
+        λ> True || (True && False)
+        True
+
+        λ> True && (True || False) 
+        True
+
+    Positive integers form a Lattice under the
+    operations min and max, and we can see the
+    absorption law in action here, too.
+
+        λ> 5 `min` (5 `max` 9)
+        5
+
+        λ> 5 `max` (5 `min` 9)
+        5
+
+    The absorption laws are sometimes called a
+    special case of identity, and they’re also
+    related to idempotence in that the
+    idempotence laws can be derived from the
+    absorption laws taken together.
+
+Bounded lattice
+    [Lattice-like structure]
+
+    A Lattice whose Semigroup structures are
+    monoids.
+
+    (A, ∨,∧,0, 1)
+
+    Structure:
+    ∨ : A × A → A
+    ∧ : A × A → A
+    0 : A
+    1 : A
+
+    Laws:
+    (A, ∨, ∧ ) is a Lattice
+    (A, ∨,0) is a Monoid
+    (A, ∧,1) is a Monoid
+
+Complemented lattice
+    [Lattice-like structure]
+
+    A Bounded lattice where each element has a
+    complement.
+
+    (A, ∨,∧,0, 1, ′)
+
+    Structure:
+    ∨ : A × A → A
+    ∧ : A × A → A
+    0 : A
+    1 : A
+    ′ : A → A
+
+    Laws:
+    (A, ∨,∧,0, 1) is a Bounded lattice
+    ∀x ∈ A; x ∨ x′ = 1
+    ∀x ∈ A; x ∧ x′ = 0
+
+    Nota bene:
+    
+    Although ′ defines a particular choice of
+    complements (i.e., each element x ∈ A has
+    exactly one corresponding x′ ∈ A), there
+    may additionally be other elements y ∈ A
+    such that x ∨ y = 1 and x ∧ y = 0.
+    
+    In particular, there may be other suitable
+    ′ functions, and x″ is not necessarily x.
+
+Distributive lattice
+    [Lattice-like structure]
+
+    A Lattice where the operations distribute
+    over each other.
+
+    Lattice (A, ∨, ∧ )
+
+    Laws:
+
+    ∀x, y, z ∈ A; x ∧ (y ∨ z) = (x ∧ y) ∨ (x ∧ z)
+    ∀x, y, z ∈ A; x ∨ (y ∧ z) = (x ∨ y) ∧ (x ∨ z)
+
+    Strictly speaking, the second law can be
+    derived from the first law and the Lattice
+    laws, and as such is redundant.
+    
+    Every totally ordered set, such as the
+    real numbers and subsets of the reals
+    including the naturals and integers, form
+    distributive lattices with max as ∨ (join)
+    and min as ∧ (meet).
+
+Heyting algebra
+    [Lattice-like structure]
+
+    A bounded, Distributive lattice with an
+    implication operation.
+
+    (A, ∨,∧,0, 1,  ⇒ )
+
+    Structure:
+    ∨ : A × A → A
+    ∧ : A × A → A
+    0 : A
+    1 : A
+    ⇒ : A × A → A
+
+    Laws:
+    (A, ∨,∧,0, 1) is a bounded, Distributive lattice.
+    ∀x ∈ A; x ⇒ x = 1
+    ∀x, y ∈ A; x ∧ (x ⇒ y) = x ∧ y
+    ∀x, y ∈ A; y ∧ (x ⇒ y) = y
+    ∀x, y, z ∈ A; x ⇒ (y ∧ z) = (x ⇒ y) ∧ (x ⇒ z)
+
+Boolean algebra
+    [Lattice-like structure]
+
+    A complemented Heyting algebra.
+
+    Complemented lattice (A, ∨,∧,0, 1, ′)
+
+    Laws:
+    (A, ∨,∧,0, 1,  ⇒ ) is a Heyting algebra
+    where  ⇒  : A × A → A by x ⇒ y = x′ ∨ y.
+
+topological group
+    [Group]
+
+    A Group G together with a topology on G
+    such that both the group's binary
+    operation and the function mapping Group
+    elements to their respective inverses are
+    continuous functions with respect to the
+    topology.
+    
+    A topological group is a mathematical
+    object with both an algebraic structure
+    and a topological structure.
+    
+    Thus, one may perform algebraic
+    operations, because of the Group
+    structure, and one may talk about
+    continuous functions, because of the
+    topology.
+    
+    Topological groups, along with continuous
+    Group actions, are used to study
+    continuous symmetries, which have many
+    applications, for example, in physics.
+
+amenable group
+    [topological group]
+
+    A locally compact topological group G
+    carrying a kind of averaging operation on
+    bounded functions that is invariant under
+    translation by Group elements.
+
+bijection
+bijective function
+one-to-one correspondence
+invertible function
+    A function between the elements of two
+    sets, where each element of one set is
+    paired with exactly one element of the
+    other set, and each element of the other
+    set is paired with exactly one element of
+    the first set.
+
+Absorption
+    See lattices.
+
+Annihilator
+    We have to include this term because it is
+    such a metal thing to call zeroes.
+    
+    Annihilation is a property of some
+    structures, such that there is an element
+    of a set that always annihilates the other
+    input to a binary operation, sort of the
+    opposite of an identity element (see
+    below).
+    
+    If (S, *) is a set S with a binary
+    operation * on it, the annihilator, or
+    zero element, is an element z such that
+    for all a in S, z * a = a * z = z.
+    
+    In the monoid of integer multiplication,
+    the annihilator is zero, while in the
+    monoid of set intersection, the
+    annihilator is the empty set; notice that
+    the monoids of integer addition and set
+    union do not have annihilators.
+
+Associative
+Associativity
+    Associativity may be familiar from
+    elementary arithmetic, even if the name
+    isn’t.
+    
+    For example, you may recall that 2* (3 *
+    4) and (2 * 3) * 4 always evaluate to the
+    same result, even though you simplify the
+    parts in parentheses first so the
+    parentheses change the order in which you
+    evaluate the expression.
+    
+    When the result never depends on the order
+    of simplification, we say that a binary
+    operation is associative.
+    
+    More formally, an operation * on a set S
+    is associative when for all x, y, and z in
+    S, x * (y * z) = (x * y) * z.
+
+    See:
+    - "Commutativity, Associativity, Distributivity"
+
+Commutativity, Associativity, Distributivity
+    Commutative Laws
+        a + b  =  b + a
+        a × b  =  b × a
+
+    Associative Laws
+        (a + b) + c  =  a + (b + c)
+        (a × b) × c  =  a × (b × c)
+
+    Distributive Law
+        a × (b + c)  =  a × b  +  a × c
+
+Binary operation
+    A binary operation * on a set S is a
+    function * : (S, S) -> S. Notice that *
+    maps (S, S) back into S. Because of an
+    historical quirk, this fact is sometimes
+    called closure (see below). In Haskell,
+    that looks like a type signature such as a
+    -> a -> a because Haskell is curried by
+    default. All functions in Haskell are …
+    actually unary functions, taking one input
+    and returning one result (which may itself
+    be a function). The final parameter of a
+    Haskell type signature is the return type;
+    all others are input types.
+
+Closed
+    By definition, a binary operation over a
+    set implies that the operation is closed,
+    that is, for all a, b, in set S, the
+    result of the binary operation a * b is
+    also an element in S. This coincides
+    exactly with the definition of a function
+    (S, S) -> S (see above). Also, sometimes
+    called the property of closure. While this
+    is definitionally a property of binary
+    operations and, thus, not independently
+    important, we mention it here because it
+    comes up in the Haskell literature. 
+
+Commutative
+Commutativity
+    Commutativity is not the same as
+    associativity, although most commutative
+    operations are also associative. The
+    commutative property of some binary
+    operations holds that changing the order
+    of the inputs does not affect the result.
+    More formally, an operation * on a set S
+    is commutative when for all x and y in S,
+    x * y = y * x.
+
+    See:
+    - "Commutativity, Associativity, Distributivity"
+
+Complement
+    You may have learned about complements in
+    geometry or with sets: two angles are
+    complementary when they add up to 90
+    degrees; and two subsets of a set S -
+    let's call the subsets A and B - are
+    complements when A ∪ B = S and A ∩ B = ∅
+    (where ∪ is for union and ∩ is for
+    intersection). Simply put, a complement is
+    what you combine with something to make it
+    "whole". In a complemented lattice, every
+    element a has a complement b satisfying
+    a ∨ b = 1 and a ∧ b = 0 where 1 and 0 are
+    the greatest and least elements of the
+    set, respectively. Complements need not be
+    unique, except in distributive lattices.
+
+Distributive
+Distributivity
+    The distributive property in arithmetic
+    states that multiplication distributes
+    over addition such that 2 * (1 + 3) = (2 *
+    1) + (2 * 3). Some algebraic structures
+    generalize this with their own
+    distributive law.  Suppose we have a set S
+    with two binary operations, <> and ><. We
+    say >< distributes over <> when
+
+        * for all x, y, and z in S,
+        * x >< (y <> z) = (x >< y) <> (y >< z) (left distributive) and
+        * (y <> z) >< x = (y >< x) <> (z >< x) (right distributive).
+
+    Note that if * is commutative and left distributive, it follows that it is also
+    right distributive (and therefore distributive).
+
+    See:
+    - "Commutativity, Associativity, Distributivity"
+
+Dual
+    This principle can also be somewhat tricky
+    to understand, and discussions of what it
+    means tend to get into the mathematical
+    weeds quickly.  Roughly, for our purposes
+    (but perhaps not all purposes) it’s a
+    “mirror-like” relationship between
+    operations such that one “reflects” the
+    other. Somewhat more formally, it means
+    that there is a mapping between A and B
+    that involutes, so f(A) = B and f(B) = A.
+    Understanding duality is important because
+    if you prove things in f(A), you can prove
+    things about B, and if you prove things
+    about f(B), then you can prove them about
+    A. So, A and B are related but it’s a bit
+    more complicated than a standard function
+    mapping. An involution is a function that
+    equals its inverse, so applying it to
+    itself give the identity; that is, if f(A)
+    = B and f(B) = A then f(f(A))=A. Some
+    examples:
+
+    In Haskell
+        Sum types and product types are dual
+        (as are products and coproducts in
+        category theory). You can demonstrate
+        this by implementing f :: (a, b) ->
+        (Either (a -> c) (b -> c) -> c)
+        (mapping a product type to a sum) and
+        f' :: (Either a b) -> ((a -> c, b ->
+        c) -> c) (mapping a sum type to a
+        product) and trying it out.
+
+    In classical logic
+        Universal (“for all x in A…”) and
+        existential quantification (“there
+        exists an x in A…”) are dual because
+        ∃x : ¬P(x) and ¬∀x : P(x) are
+        equivalent for all predicates P : if
+        there exists an x for which P does not
+        hold, then it is not the case that P
+        holds for all x (but the converse does
+        not hold constructively).
+
+Idempotence
+    The idempotence we care about for our
+    algebraic structures is a property of some
+    binary operations under which applying the
+    operation multiple times doesn’t change
+    the result after the first application.
+    However, it can be a bit tricky to
+    understand, so let’s consider idempotence
+    with regard to unary functions to get a
+    sense of the meaning first. Consider a
+    device where there are separate buttons
+    for turning the device on and off; pushing
+    the on button doesn’t turn it “more on”,
+    so the on button is idempotent (and so is
+    the off button). Similarly, taking the
+    absolute value of integers is an
+    idempotent unary function; you can keep
+    taking the absolute value of a number and
+    after the first time, the answer won’t
+    change.
+
+    We say an element of a set is idempotent
+    with respect to some operation * if x
+    * x = x. We say an operation is idempotent
+    * if every element in the set is
+    idempotent with respect to the operation.
+    Both the annihilator and identity
+    elements, if present in a given structure,
+    are idempotent elements. For the natural
+    numbers under multiplication, both 1 and 0
+    are idempotent; for the naturals under
+    addition, only 0 is. Hence neither
+    addition nor multiplication of the natural
+    numbers is itself idempotent. Furthermore,
+    the set operations of union and
+    intersection are both idempotent
+    operations.
+
+Identity
+    An identity element is an element of a set
+    that is neutral with respect to some
+    binary operation on that set; that is, it
+    leaves any other element of that set
+    unchanged when combined with it. An
+    identity value is unique with respect to
+    the given set and operation. More
+    formally, for a set S with a binary
+    operation * on it, x is the identity value
+    when x * a = a * x = a for all a in S. In
+    Haskell, mempty is a return-type
+    polymorphic identity value for monoids and
+    empty is the same but for Alternatives,
+    but identity values are also often called
+    one and zero on analogy with the
+    identities for addition and
+    multiplication, respectively. Often, the
+    identity called “zero” will also be an
+    annihilator for the dual operation, e.g.,
+    the empty set or empty list (identity of
+    concatenation, annihilator of zip), False,
+    and the like are in their respective
+    structures.
+
+Invertibility
+    This is also familiar to many of us from
+    basic arithmetic, even if the name is not.
+    Zero can serve as an identity element for
+    addition of integers or of the natural
+    (“counting”) numbers assuming we include
+    zero in those. The set of integers
+    includes numbers that we can add to each
+    other to get back to zero, e.g., (-3) + 3
+    = 0; there aren’t any such natural numbers
+    because the set of natural numbers does
+    not include negatives. This property of
+    the integers under addition is
+    invertibility. Given a binary operation *
+    on S with identity e, an element b in S is
+    said to be an inverse of an element a in S
+    if a * b = e = b * a, in which case a (as
+    well as b, simply by the symmetry in the
+    definition) is said to be invertible in S
+    relative to *. If every element of S is
+    invertible in S relative to *, then we say
+    S has inverses relative to *.
+
+Unit
+    The idea of being a unit is related to
+    invertibility. A unit is an element of a
+    ring structure that is its own inverse.
+    The number 1 is its own multiplicative
+    inverse, as is (-1) because (-1) * (-1) =
+    1. In Haskell, there is a type called
+    “unit”, written () (an empty tuple, if you
+    will); while types in Haskell do not form
+    a ring, the unit type plays the same role
+    in the semiring of types as the number 1
+    plays in the semiring of natural numbers
+    (the zero is represented by the Void type,
+    which has no values).
+
+Left and right
+    You may sometimes hear about left or right
+    associativity or identity. For example,
+    exponentiation is only right-associative.
+    That is, in a chain of such operations,
+    they group for evaluation purposes from
+    the right.
+
+        λ> 2^3^2 
+        512 
+        -- is the same as 
+        λ> 2^(3^2) 
+        512 
+        -- but not 
+        λ> (2^3)^2 
+        64 
+
+    This is more of a convention than a
+    property of the function, though, and it
+    is often preferable to use parentheses to
+    make associativity explicit when it is
+    one-sided (i.e., when something is right
+    associative but not associative). We call
+    something associative when it is both
+    left- and right-associative. We call
+    something distributive when it is both
+    left- and right-distributive. We call
+    something an identity if it is both a left
+    and right identity.
+
+cochain complex
+    Similar to a chain complex, except that
+    its homomorphisms follow a different
+    convention.
+
+    The homology of a cochain complex is
+    called its cohomology.
+
+involution
+    A function that equals its inverse, so
+    applying it to itself give the identity;
+    that is, if f(A) = B and f(B) = A then
+    f(f(A))=A.

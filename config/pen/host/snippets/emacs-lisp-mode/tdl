@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: todo-list
+# group: learning
+# key: tdl
+# --
+* TODO read and understand these
+** done
+** left todo
+`yas-selected-text`${0:
+$MYGIT/ines/spacy-course/exercises/solution_01_02_01.py
+$MYGIT/ines/spacy-course/exercises/solution_01_02_02.py
+$MYGIT/ines/spacy-course/exercises/solution_01_02_03.py
+$MYGIT/ines/spacy-course/exercises/solution_01_03_01.py
+$MYGIT/ines/spacy-course/exercises/solution_01_03_02.py
+$MYGIT/ines/spacy-course/exercises/solution_01_04.py
+$MYGIT/ines/spacy-course/exercises/solution_01_07.py
+}

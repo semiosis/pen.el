@@ -1,0 +1,6 @@
+
+Since emacs has so many commands, you can always get to any command by typing "Control-h t" to enter the "Help" screen.
+Then you can use the arrow keys to highlight the command you want to see in the help screen and press Return to enter it.
+By default, "Control-h t" will open the "Info" screen and enter "emacs tutorial".
+At any time, you can hit "Control-h m" to get back to the mini-buffer.
+

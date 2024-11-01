@@ -1,0 +1,19 @@
+thrift
+    https://engineering.fb.com/2021/02/05/open-source/hsthrift/?utm_content=
+
+    https://thrift.apache.org/static/files/thrift-20070401.pdf
+
+    https://github.com/facebook/fbthrift
+    https://github.com/facebookincubator/hsthrift
+
+    A serialization and remote procedure call
+    (RPC) framework used for cross-service
+    communication.
+    
+    Most services at Facebook communicate via
+    Thrift because it provides a simple,
+    language-agnostic protocol for
+    communicating with structured data.
+    
+    Thrift can already be used in programming
+    languages such as C++, Python, and Java.

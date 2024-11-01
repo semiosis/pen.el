@@ -1,0 +1,63 @@
+title: explain some code with steps
+tags: code explain
+issues: 
+design-patterns: 
+doc: Explain some code with steps
+prompt-version: 3
+prompt: |
+    Code excerpts and explanations.
+    <delim>
+    Excerpt 1:
+    <delim>
+    function saveImageToDisk(url, localPath) {
+        const file = fs.createWriteStream(localPath);
+        const request = https.get(url, function
+        (response) {
+            response.pipe(file);
+        });
+    }
+    <delim>
+    Explanation of 1:
+    <delim>
+    1. This function takes two arguments, url and localPath
+    2. It then creates a new file called localPath
+    3. It then creates a new request that gets the image from the url
+    4. It then pipes the response to the file
+    <delim>
+    Excerpt 2:
+    <delim>
+    <code>
+    Explanation of 2:
+    <delim>
+    <:pp>1.
+issues: 
+engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 100
+# max-generated-tokens: "prompt-length"
+top-p: 1
+stop-sequences:
+- "<delim>"
+- "\n\n"
+cache: true
+vars:
+- code
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- |+
+    data RGB = RGB
+      { rgbRed   :: Word8
+      , rgbGreen :: Word8
+      , rgbBlue  :: Word8
+      } deriving (Eq, Show)
+    <delim>
+prefer-external: true
+external-related:
+- https://explainshell.com/
+n-test-runs: 5
+related-prompts:
+- annotate-with-commentary.prompt
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify

@@ -1,0 +1,12 @@
+xRy
+R(x,y)
+Rxy
+    A relation R on a set x is a subset of x*x.
+    If (a,b) ∈ R, we write xRy.
+
+    "x i srelated to y".
+
+    https://www.youtube.com/watch?v=FI6j5QZNVx0
+
+    Predicate logic:
+        Rxy

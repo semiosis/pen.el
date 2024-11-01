@@ -1,0 +1,24 @@
+mutation
+    Adding or removing data in Dgraph.
+
+    https://docs.dgraph.io/mutations/
+
+GraphQL+-
+    Dgraph’s "GraphQL+-" is based on
+    Facebook’s GraphQL. GraphQL wasn’t
+    developed for Graph databases, but its
+    graph-like query syntax, schema validation
+    and subgraph shaped response make it a
+    great language choice. 
+
+Cypher
+    Most widely adopted graph database query
+    language.
+    
+    Example:
+        MATCH (d:Database)-[:USES]->(Cypher)-[:QUERIES]->(:Model:Graph)
+        WHERE d.name IN ['SAP HANA Graph','Redis','AgensGraph', 'Neo4j',...]
+        RETURN Cypher.features
+
+openCypher
+    A full and open specification of Cypher.

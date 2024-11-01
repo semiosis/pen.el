@@ -1,0 +1,62 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 15
+
+* D-Group weekly session notes
+Started working on it: <2024-04-12 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=atM1QICvvtI][Praise - Elevation worship | Instrumental Worship | Soaking Music | Deep Prayer - YouTube]]
+
+| Scripture Memory NT | NT260 Passage      | Foundations260 Passage | Scripture Memory OT | OT260 Passage |
+|---------------------+--------------------+------------------------+---------------------+---------------|
+| [[sh:bible-read-passage nasb Matthew 5:29-30 ][Matthew 5:29-30]]     | [[sh:bible-study-passage nasb I Corinthians 9-13 ][I Corinthians 9-13]] | [[sh:bible-study-passage nasb I Samuel 1-3 ][I Samuel 1-3]]           | [[sh:bible-study-passage nasb Psalm 71:5-6 ][Psalm 71:5-6]]        | [[sh:bible-study-passage nasb Exodus 34-40 ][Exodus 34-40]]  |
+|                     |                    | [[sh:bible-study-passage nasb I Samuel 8-10 ][I Samuel 8-10]]          |                     | [[sh:bible-study-passage nasb Leviticus 8-9 ][Leviticus 8-9]] |
+|                     |                    | [[sh:bible-study-passage nasb I Samuel 13-16 ][I Samuel 13-16]]         |                     | [[sh:bible-study-passage nasb Psalm 71-75 ][Psalm 71-75]]   |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:29-30
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:29
+‾‾‾‾‾‾‾‾‾‾‾‾
+If your right eye makes you stumble, tear it out
+and throw it from you; for it is better for you
+to lose one of the parts of your body, than for
+your whole body to be thrown into hell.
+
+Matthew 5:30
+‾‾‾‾‾‾‾‾‾‾‾‾
+If your right hand makes you stumble, cut it off
+and throw it from you; for it is better for you
+to lose one of the parts of your body, than for
+your whole body to go into hell.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

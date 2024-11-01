@@ -1,0 +1,6 @@
+[[String]] -> IO ()
+tabularise [] = putStrLn ""
+tabularise (row:rows) = do
+  putStrLn $ map (\(x, y) -> "| " ++ x ++ " | " ++ y ++ " |") row
+  tabularise rows
+EOD

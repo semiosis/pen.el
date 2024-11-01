@@ -1,0 +1,13 @@
+"StrictHostKeyChecking" is a parameter in the ssh config file.
+
+It can be set to "yes", "no", or "ask".
+
+It is set to "no" by default.
+
+"StrictHostKeyChecking" is a parameter in the ssh config file.
+
+It can be set to "yes", "no", or "ask".
+
+It is set to "no" by default.
+
+"StrictHostKeyChecking" is a parameter in the

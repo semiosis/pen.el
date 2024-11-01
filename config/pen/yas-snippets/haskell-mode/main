@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: main
+# key: main
+# --
+main :: IO ()
+main = putStrLn "hello world"

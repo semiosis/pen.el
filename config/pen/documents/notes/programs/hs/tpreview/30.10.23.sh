@@ -1,0 +1,6 @@
+cd /root/.pen/documents;  "tpreview" "/root/.pen/documents/adventures-in-new-zealand.txt" "#" "<==" "tpreview"
+cd /root/.pen/documents;  "tpreview" "/root/.pen/documents/aeonology.org" "#" "<==" "tpreview"
+cd /root/.pen/documents;  "tpreview" "/root/.pen/documents/The Complete Sayings of Jesus - tom.pdf" "#" "<==" "tpreview"
+cd /root/.pen/documents;  "tpreview" "/root/.pen/documents/Cheshire-cattree.jpg" "#" "<==" "tpreview"
+cd /root/.pen/documents;  "tpreview" "/root/.pen/documents/adventures-in-new-zealand.txt" "#" "<==" "tpreview"
+cd /root/.pen/documents;  "tpreview" "/root/.pen/documents/Cheshire-cattree.jpg" "#" "<==" "tpreview"

@@ -1,0 +1,14 @@
+- 1. Adorno (1903-1969)
+- 2. Adorno (1903-1969)
+- 3. Adorno (1903-1969)
+- 4. Adorno (1903-1969)
+- 5. Adorno (1903-1969)
+- 6. Adorno (1903-1969)
+"""
+
+    assert_equal(docs, docs_expected)
+
+    # Test with stopwords=['and']
+    docs = summarize(txt, words=10, topics=3, additional_stopwords='and')
+
+    docs_expected = """

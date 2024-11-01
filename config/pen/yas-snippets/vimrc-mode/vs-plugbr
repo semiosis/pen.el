@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: vim-plug Plugin definition with { 'branch': '' }
+# group: vimsnippet
+# key: vs-plugbr
+# --
+Plug '${1}', { 'branch': '${0}' }

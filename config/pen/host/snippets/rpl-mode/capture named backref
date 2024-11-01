@@ -1,0 +1,36 @@
+# -*- mode: snippet -*-
+# name: capture named backref
+# group: regex
+# key: cbr
+# --
+--------------------------------------------------------------------------------
+-- Capturing backreference matches
+--------------------------------------------------------------------------------
+
+-- The pattern `backref:foo` does not capture anything.  It only matches
+-- (consumes input). Just like with any non-capturing RPL pattern (e.g. any
+-- alias, or `.`), you can capture it by giving it a name.
+
+secondword = backref:word
+sameword2 = word secondword
+
+-- test sameword2 accepts "foo foo", "bar bar", "a a", "/foobar/ /foobar/"
+-- test sameword2 rejects "foo", "foo f00", "foo bar"
+
+-- test sameword2 includes word "baz baz"
+-- test sameword2 includes secondword "baz baz"--------------------------------------------------------------------------------
+-- Capturing backreference matches
+--------------------------------------------------------------------------------
+
+-- The pattern `backref:foo` does not capture anything.  It only matches
+-- (consumes input). Just like with any non-capturing RPL pattern (e.g. any
+-- alias, or `.`), you can capture it by giving it a name.
+
+secondword = backref:word
+sameword2 = word secondword
+
+-- test sameword2 accepts "foo foo", "bar bar", "a a", "/foobar/ /foobar/"
+-- test sameword2 rejects "foo", "foo f00", "foo bar"
+
+-- test sameword2 includes word "baz baz"
+-- test sameword2 includes secondword "baz baz"

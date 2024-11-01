@@ -1,0 +1,7 @@
+
+
+mapM_ (putStrLn . fullDesc) [schoolBus,taxi,bike]
+
+-- esqueleto 0.2.0.0
+
+-- https://github.com/ekmett/

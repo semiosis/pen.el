@@ -1,0 +1,42 @@
+,
+        "The iPhone 12 is Apple's latest smartphone.",
+        "The iPhone 12 costs $800. It has dual SIM cards.",
+        "The iPhone 12 has a single camera.",
+        "The iPhone 12 has a touchscreen.",
+        "The company was founded in 2007.",
+        "The company's CEO is Tim Cook.",
+        "The company's HQ is located in Cupertino.",
+        "The company's CTO is WIRED."
+    ]
+    return text
+
+
+@pytest.fixture
+def texts():
+    return [
+        "The iPhone 12 is Apple's latest smartphone.",
+        "The iPhone 12 costs $800. It has dual SIM cards.",
+        "The iPhone 12 has a single camera.",
+        "The iPhone 12 has a touchscreen.",
+        "The company was founded in 2007.",
+        "The company's CEO is Tim Cook.",
+        "The company's HQ is located in Cupertino.",
+        "The company's CTO is WIRED."
+    ]
+
+
+@pytest.fixture
+def marked_text():
+    text = [
+        ("The iPhone 12 is Apple's latest smartphone.",
+            {"entities": [(0, 5, "ORG")]}),
+        ("The iPhone 12 costs $800. It has dual SIM cards.",
+            {"entities": [(11, 13, "PRODUCT"), (37, 47, "MONEY")]}),
+        ("The iPhone 12 has a single camera.",
+            {"entities": [(0, 5, "ORG")]}),
+        ("The iPhone 12 has a touchscreen.",
+            {"entities": [(0, 5, "ORG")]}),
+        ("The company was founded in 2007.",
+            {"entities": [(0, 5, "ORG")]}),
+        ("The company's CEO is Tim Cook.",
+            {"entities":

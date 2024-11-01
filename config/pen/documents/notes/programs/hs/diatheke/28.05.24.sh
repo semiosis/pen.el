@@ -1,0 +1,7 @@
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "2 Cor: 5:18-19" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "II Corinthians 5:18-19" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Philippians 3:18-21" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "John 15:20" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "John 10:27-28" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "John 18:37" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "I John 4:6" "#" "<==" "in-pen"

@@ -1,0 +1,8 @@
+Application: com.apple.mobile.battery_info
+UID: 1000
+Version: 1.0
+Build: 15F34
+Path: /System/Library/PrivateFrameworks/BatteryInfo.framework/BatteryInfo
+Name: BatteryInfo
+Root: /
+Data: /

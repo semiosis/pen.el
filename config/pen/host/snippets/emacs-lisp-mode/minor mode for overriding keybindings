@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: minor mode for overriding keybindings
+# group: 
+# key: mm
+# --
+(defvar ${1:my}-minor-mode-map (make-sparse-keymap)
+  "Keymap for \`$1-minor-mode'.")
+;; (makunbound '$1-minor-mode)
+(defvar-local $1-minor-mode nil)
+
+(define-minor-mode $1-minor-mode
+  "A minor mode so that my key settings override annoying major modes."
+  :global nil
+  :init-value nil
+  :lighter " $1-minor-mode"
+  :keymap $1-minor-mode-map)
+
+;; We don't want a global mode
+;; (define-globalized-minor-mode global-$1-minor-mode $1-minor-mode $1-minor-mode)
+
+;; This is definitely a bad solution
+(define-key $1-minor-mode-map (kbd "<up>") (lm (tsk "C-p")))
+(define-key $1-minor-mode-map (kbd "<down>") (lm (tsk "C-n")))
+(define-key $1-minor-mode-map (kbd "<right>") (lm (tsk "M-3")))
+$0
+(provide '$1-minor-mode)

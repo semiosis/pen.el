@@ -1,0 +1,7 @@
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/.emacs.d/host/pen.el/scripts;  "rl" "/root/repos/flk/docs/flk" "#" "<==" "bash"
+cd /root/notes;  "rl" "/root/repos/flk/docs/flk" "/root/repos/flk/mal/examples/exercises.mal" "#" "<==" "flk"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"

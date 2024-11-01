@@ -1,0 +1,6 @@
+ you need
+to add one more case:
+case time.Time:
+	var tmp time.Time
+	if err := time.UnmarshalJSON(b, &tmp); err != nil {
+		return err

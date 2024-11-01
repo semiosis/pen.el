@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "htop" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "htop" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "htop" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "htop" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "htop" "#" "<==" "tmux-shell"

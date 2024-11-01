@@ -1,0 +1,1 @@
+The above code is an excerpt from the GameState data type. The data type is a record data type with two fields, numberToGuess and numTries.

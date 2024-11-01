@@ -1,0 +1,7 @@
+there were 3 little sisters; and their names were'
+    '\n'
+    'Lacie and\nTillie;\nand they lived at the bottom of a well.'
+)
+#%%
+'''
+String类中提供了大量方法，可以直接调用，来对指定

@@ -1,0 +1,8 @@
+
+EOD
+
+cat draft.text | tr 'A-Z' 'a-z' > draft.lower.text
+cat draft.text | tr 'a-z' 'A-Z' > draft.upper.text
+cat draft.text | tr -c '[:alnum:]' '[\n*]' > draft.punctuated.text
+cat draft.text | tr -c '[:alnum:]' '[\n*]' | sort > draft.sorted.punctuated.text
+cat draft.text | tr -c '[:alnum:]' '[\n*]' | sort | uniq -c > draft.uniqcountsortedpunctuated.text

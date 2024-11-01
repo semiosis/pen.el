@@ -1,0 +1,44 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: interpreter
+language: ruby
+subprompts:
+- kickstarter: |+
+    $ ruby -v
+    ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]
+    $ irb
+    2.7.0 :001 > RUBY_VERSION
+    => "2.7.0"
+    2.7.0 :002 > 
+prompt: |+
+    <history><expression>
+# Because the prompt generates from at the end of the user expression
+# The generation will contain a starting newline.
+# Want to trim that with =ii=, but not in the prompt function because a better harness could be made.
+user-prompt: "^2.7.0 :[0-9]* > "
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
+stop-sequences:
+# This isn't ideal but ruby-gen-next-user-prompt needs to see a full prompt
+# So it can generate the next user prompt.
+- " > "
+# - "2.7.0 :"
+# - "(pen-next-user-prompt)"
+# Create a user prompt with the number incremented.
+# This is like postprocessor but happens even later.
+# It is used in special circumstances when the prompt history is also required.
+postpostprocessor: pen-str ruby-gen-next-user-prompt
+vars:
+- history
+- expression
+var-defaults:
+- kickstarter
+# We only want outputs that start with an empty line
+validator: sed -n 1p | grep -qP "^$"
+n-attempts: 10
+# validator: ! awk 1 | tac | sed -n 1p | grep -qP "^2\\.7\\.0 :"
+n-completions: 10
+examples:
+- "2.7.0 :002 > "
+- "puts \"Hi\""

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: define key binding for current map
+# group: 
+# key: dkc
+# --
+(define-key-current ${1:inf-messer-mode}-map "${2:r}" ${3:'inf-messer-reply})

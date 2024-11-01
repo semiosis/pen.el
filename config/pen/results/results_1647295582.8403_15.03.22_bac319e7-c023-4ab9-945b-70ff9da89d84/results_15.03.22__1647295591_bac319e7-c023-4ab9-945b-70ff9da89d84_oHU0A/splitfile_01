@@ -1,0 +1,15 @@
+"use Data::Dumper;" is a perl module that allows you to dump
+data structures to a file.
+
+"Dumper" is the name of the subroutine that is exported by
+Data::Dumper.
+
+"Dumper" takes a reference to a perl data structure as its
+argument.
+
+"Dumper" returns a string that is a representation of the
+data structure.
+
+"Dumper" is useful for debugging.
+
+"Dumper" is also useful for learning how

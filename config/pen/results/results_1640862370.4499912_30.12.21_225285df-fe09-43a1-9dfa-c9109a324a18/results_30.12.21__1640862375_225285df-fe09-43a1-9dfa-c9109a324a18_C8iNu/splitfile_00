@@ -1,0 +1,11 @@
+
+The question can be short or long.
+The short answer to your question is "M-x save-buffers-kill-emacs"
+The long answer to your question is "Go to the *scratch* buffer,
+type C-x C-e
+M-: (save-buffers-kill-emacs)
+<RET>
+then type C-x C-c
+and then type C-g
+"
+

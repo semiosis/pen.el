@@ -1,0 +1,87 @@
+task: "Who is the subject matter expert for?"
+doc: "Given a prompt, be told of a subject-matter-expert."
+prompt-version: 1
+todo:
+- |-
+    Instead of having a document, have an
+    entire multi-modal prompts array (time-
+    wise)? The document should be 'multi-modal
+    prompt format', whatever that is.
+
+# TODO Make a list of scholars and qualifications relating to a document
+
+prompt: |+
+  Document 1:
+  ###
+  Truth is the property of being in accord
+  with fact or reality.[1] In everyday
+  language, truth is typically ascribed to
+  things that aim to represent reality or
+  otherwise correspond to it, such as beliefs,
+  propositions, and declarative sentences.[2]
+  ###
+  Document 1 scholars:
+  - 1. Kant (1724-1804)
+  - 2. Hegel (1770-1831)
+  - 3. Schopenhauer (1788-1860)
+  - 4. Kierkegaard (1813-1855)
+  - 5. Nietzsche (1844-1900)
+  ###
+  Document 2:
+  ###
+  Rock and Roll.
+  ###
+  Document 2 artists:
+  - 1. Chuck Berry (1953–2017)
+  - 2. Evlis Presley (1935-1977)
+  - 3. Kurt Cobain (1982-1994)
+  ###
+  Document 3:
+  ###
+  <document>
+  ###
+  Document 3 scholars:
+  <:pp>- 1. 
+force-engine: "OpenAI Codex"
+force-temperature: 0.8
+max-generated-tokens: 150
+top-p: 1.0
+delimiter: "###"
+frequency-penalty: 0.3
+stop-sequences:
+- "<delim>"
+- Document
+cache: on
+vars:
+- document
+# - caste
+var-defaults:
+- "(pen-screen-or-selection)"
+# no EOD? needed or default?
+preprocessors:
+- pen-str garbify | sed 's/^/  /'
+examples:
+- |-
+    In Abrahamic religions, the Garden of Eden
+    (Hebrew: גַּן־עֵדֶן‎ – gan-ʿḖḏen) or Garden of
+    God (גַּן־יְהֹוָה‎ – gan-Yhwh), also called
+    the Terrestrial Paradise, is the biblical
+    paradise described in Genesis 2-3 and Ezekiel
+    28 and 31.[1][2] The location of Eden is
+    described in the Book of Genesis as the source
+    of four tributaries. Among scholars who
+    consider it to have been real, there have been
+    various suggestions for its location:[3] at
+    the head of the Persian Gulf, in southern
+    Mesopotamia (now Iraq) where the Tigris and
+    Euphrates rivers run into the sea;[4] and in
+    Armenia.
+# - scholars
+validator: "grep -qP '^[^0-9_(]+ \\([0-9]+-[0-9]*\\)$'"
+postprocessor: "sed 's/^- [0-9]*. //' | sed 's/^\\s\\+/ /g' | sed 's/ *)/)/' | tr -d ' ' | uniqnosort | chomp"
+info: on
+filter: off
+completion: off
+insertion: off
+split-patterns:
+- "\n"

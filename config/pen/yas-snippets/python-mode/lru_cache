@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: lru_cache
+# group: memoization
+# key: lru
+# --
+@lru_cache(maxsize=None)  # Boundless cache
+def fibonacci(n):
+    if n < 2:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)

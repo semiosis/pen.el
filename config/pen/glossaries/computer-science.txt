@@ -1,0 +1,381 @@
+posit
+    [number data type]
+
+    http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf
+
+    Similar to floating point.
+
+continuation
+    An abstract representation of the control
+    state of a computer program.
+
+    A data structure that represents the
+    computational process at a given point in
+    the process's execution
+
+control flow
+    The order in which individual statements,
+    instructions or function calls of an
+    imperative program are executed or
+    evaluated.
+
+    Explicit control flow distinguishes an
+    imperative programming language from a
+    declarative programming language.
+
+control state
+
+
+
+bloom filter
+    [space-efficient probabilistic data structure]
+
+    Test whether an element is a member of a
+    set.
+
+    space-efficient.
+
+correctness [of an algorithm]
+    asserted when it is said that the
+    algorithm is correct with respect to a
+    specification.
+
+Functional correctness
+    for each input it produces the expected output.
+
+partial correctness vs total correctness
+    They both mean if an answer is returned it will be correct.
+
+    Total means the algorithm also terminates.
+
+    ∵ No general solution to the halting
+    problem, a total correctness assertion may
+    lie much deeper.
+
+termination proof
+    A type of mathematical proof that plays a
+    critical role in formal verification
+    because total correctness of an algorithm
+    depends on termination.
+
+finite map
+associative array
+    A finite map is a synonym for an
+    associative array.
+
+affine
+
+
+transclusion
+    The inclusion of part or all of an
+    electronic document into one or more other
+    documents by hypertext reference.
+    
+    Transclusion is usually performed when the
+    referencing document is displayed, and is
+    normally automatic and transparent to the
+    end user.
+    
+    The result of transclusion is a single
+    integrated document made of parts
+    assembled dynamically from separate
+    sources, possibly stored on different
+    computers in disparate places.
+
+Church encoding
+    A means of representing data and operators
+    in the lambda calculus.
+    
+    The Church numerals are a representation
+    of the natural numbers using lambda
+    notation.
+    
+    The method is named for Alonzo Church, who
+    first encoded data in the lambda calculus
+    this way.
+
+Parigot encoding
+    https://homepage.divms.uiowa.edu/~astump/talks/colloq-10-24-2014.pdf
+
+Scott encoding
+    A way to represent (recursive) data types
+    in the lambda calculus.
+    
+    Church encoding performs a similar
+    function.
+    
+    The data and operators form a mathematical
+    structure which is embedded in the lambda
+    calculus.
+    
+    Whereas Church encoding starts with
+    representations of the basic data types,
+    and builds up from it, Scott encoding
+    starts from the simplest method to compose
+    algebraic data types.
+    
+Mogensen–Scott encoding
+    Extends and slightly modifies Scott
+    encoding by applying the encoding to
+    Metaprogramming.
+    
+    This encoding allows the representation of
+    lambda calculus terms, as data, to be
+    operated on by a meta program.
+
+covariance
+contravariance
+covariant
+contravariant
+covariance vs contravariance
+    [#computer science]
+
+    https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)
+
+variance
+    [#computer science]
+
+    Refers to how subtyping between more
+    complex types relates to subtyping between
+    their components.
+    
+    For example, how should a list of Cats
+    relate to a list of Animals? Or how should
+    a function that returns Cat relate to a
+    function that returns Animal?
+
+contravariant
+contravariance
+    On the other hand, "function from Animal
+    to String" is a subtype of "function from
+    Cat to String" because the function type
+    constructor is contravariant in the
+    parameter type.
+    
+    Here the subtyping relation of the simple
+    types is reversed for the complex types.
+
+universally unique identifier
+UUID
+    A 128-bit number used to identify
+    information in computer systems.
+    
+    The term globally unique identifier (GUID)
+    is also used, typically in software
+    created by Microsoft.
+    
+    When generated according to the standard
+    methods, UUIDs are, for practical
+    purposes, unique.
+    
+    Their uniqueness does not depend on a
+    central registration authority or
+    coordination between the parties
+    generating them, unlike most other
+    numbering schemes.
+    
+    While the probability that a UUID will be
+    duplicated is not zero, it is close enough
+    to zero to be negligible.
+
+Solution architecture
+    A practice of defining and describing an
+    architecture of a system delivered in
+    context of a specific solution and as such
+    it may encompass description of an entire
+    system or only its specific parts.
+
+    Definition of a solution architecture is
+    typically led by a solution architect. 
+
+mutual recursion
+    Two functions are called mutually
+    recursive if the first function makes a
+    recursive call to the second function and
+    the second function, in turn, calls the
+    first one.
+
+marshalling
+marshaling
+    The process of transforming the memory
+    representation of an object to a data
+    format suitable for storage or
+    transmission, and it is typically used
+    when data must be moved between different
+    parts of a computer program or from one
+    program to another
+
+Software Transactional Memory
+STM
+    A concurrency control mechanism analogous
+    to database transactions for controlling
+    access to shared memory in concurrent
+    computing.
+    
+    It is an alternative to lock-based
+    synchronization.
+    
+    STM is a strategy implemented in software,
+    rather than as a hardware component.
+    
+    A transaction in this context occurs when
+    a piece of code executes a series of reads
+    and writes to shared memory.
+    
+    These reads and writes logically occur at
+    a single instant in time; intermediate
+    states are not visible to other
+    (successful) transactions.
+
+data validation
+    The process of ensuring data have
+    undergone data cleansing to ensure they
+    have data quality, that is, that they are
+    both correct and useful.
+
+program analysis
+    The process of automatically analyzing the
+    behavior of computer programs regarding a
+    property such as correctness, robustness,
+    safety and liveness.
+    
+    Program analysis focuses on two major
+    areas:
+    - program optimization, and
+    - program correctness.
+
+halting problem
+    [#computability theory]
+
+    The primary obstacle preventing the
+    bridging of expressiveness and
+    performance.
+
+    The problem of determining, from a
+    description of an arbitrary computer
+    program and an input, whether the program
+    will finish running, or continue to run
+    forever.
+
+    Halting problem in reverse:
+    https://www.youtube.com/watch?v=er_lLvkklsk
+
+c
+    Ultimately, C is a competing style more
+    than it is a competing language.
+    
+    It is something
+    
+    other higher level languages regress to
+    once they start worrying about
+    performance.
+
+skew heap
+self-adjusting heap
+    [heap]
+
+    A heap data structure implemented as a
+    binary tree.
+    
+    Advantageous because of their ability to
+    merge more quickly than binary heaps.
+    
+    In contrast with binary heaps, there are
+    no structural constraints, so there is no
+    guarantee that the height of the tree is
+    logarithmic.
+    
+    Only two conditions must be satisfied:
+    - The general heap order must be enforced.
+    - Every operation (add, remove_min, merge)
+      on two skew heaps must be done using a
+      special skew heap merge.
+
+top-k filtering
+    Only keep/deliver to the cream of the crop, the top-k.
+
+    Example:
+    - Keep tokens with highest probability.
+    - Deliver only to the k best ranked
+      subscribers.
+
+Polling
+    The process where the computer or
+    controlling device waits for an external
+    device to check for its readiness or
+    state, often with low-level hardware.
+    
+    For example, when a printer is connected
+    via a parallel port, the computer waits
+    until the printer has received the next
+    character.
+
+interrupt
+    The device notifies the CPU that it needs
+    servicing whereas, in polling CPU
+    repeatedly checks whether a device needs
+    servicing.
+    
+    Interrupt is a hardware mechanism as CPU
+    has a wire, interrupt-request line which
+    signal that interrupt has occurred.
+
+separation of concerns
+    A design principle for separating a
+    computer program into distinct sections
+    such that each section addresses a
+    separate concern.
+
+palindrome
+    A word, phrase, or sequence that reads the
+    same backward as forward, e.g., madam or
+    nurses run.
+
+asynchony
+    The quality or state of being asynchronous
+
+    Absence or lack of concurrence in time.
+
+arbitrary-precision
+bignum
+multiple-precision
+infinite-precision
+    [arithmetic]
+
+    Calculations are performed on numbers
+    whose digits of precision are limited only
+    by the available memory of the host
+    system.
+
+reification
+    The process by which an abstract idea
+    about a computer program is turned into an
+    explicit data model or other object
+    created in a programming language.
+    
+    A computable/addressable object—a
+    resource—is created in a system as a proxy
+    for a non computable/addressable object.
+    
+    By means of reification, something that
+    was previously implicit, unexpressed, and
+    possibly inexpressible is explicitly
+    formulated and made available to
+    conceptual (logical or computational)
+    manipulation.
+    
+    Informally, reification is often referred
+    to as "making something a first-class
+    citizen" within the scope of a particular
+    system.
+    
+    Some aspect of a system can be reified at
+    language design time, which is related to
+    reflection in programming languages.
+    
+    It can be applied as a stepwise refinement
+    at system design time.
+    
+    Reification is one of the most frequently
+    used techniques of conceptual analysis and
+    knowledge representation.

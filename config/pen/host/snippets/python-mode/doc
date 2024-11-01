@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: doc
+# group: syntax
+# key: doc
+# --
+"""$0"""

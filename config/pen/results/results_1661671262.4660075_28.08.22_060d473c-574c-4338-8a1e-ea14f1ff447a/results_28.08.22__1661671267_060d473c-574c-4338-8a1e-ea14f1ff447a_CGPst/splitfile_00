@@ -1,0 +1,12 @@
+ it is a function which cuts a
+   DataFrame into groups of rows
+
+dict
+
+module
+
+Strictly, these are two distinct things, however
+
+it is very common to use dict to name packages
+
+and

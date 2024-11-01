@@ -1,0 +1,8 @@
+## The AI's Structure
+The AI is divided into a number of separate _cells_. Each cell is
+small and simple, but interacts with other cells in the AI. The cells
+are grouped into three separate levels or _layers_, each forming an
+inverted pyramid:
+* The first layer contains the _cells_ that form the AI's _core_.
+* The second layer contains the _cells_ used to analyze the data given
+  by the second and third

@@ -1,0 +1,5 @@
+cd /root/dump/tmp;  "pen-zh" "/root/dump/tmp/scratchj8IcWm.txt" "#" "<==" "zh"
+cd /root/dump/tmp;  "pen-zh" "#" "<==" "zh"
+cd /root/dump/tmp;  "pen-zh" "#" "<==" "zh"
+cd /root/dump/tmp;  "pen-zh" "/root/dump/tmp/scratchj8IcWm.txt" "#" "<==" "zh"
+cd /root/dump/tmp;  "pen-zh" "/root/dump/tmp/scratch0JO8Bu.txt" "#" "<==" "zh"

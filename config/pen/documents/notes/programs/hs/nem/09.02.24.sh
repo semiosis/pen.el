@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "nem" "Matthew" "5:11-12" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "Matthew" "5:11-12" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-ca" "-m" "NASB" "John 6:51" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "Matthew" "5:11-12" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el;  "nem" "ead" "config/filters.sh" "#" "<==" "zsh"

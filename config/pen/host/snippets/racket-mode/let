@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: let
+# group: control structures
+# key: let
+# --
+(let ([a (read)]
+[b (read)])
+(printf "~a~%" (sum-of-two-integers a b)))

@@ -1,0 +1,498 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Sat, 30 Mar 2024 06:28:18 GMT
+Content-Type: text/html
+Last-Modified: Sat, 22 Apr 2023 04:08:37 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"64435dc5-6699"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Henri Tuhola" name="author"/>
+<meta content="This post hopefully well explains what an IO monad is. It starts simple and gets progressively more advanced." name="description"/>
+<title>Understand IO Monad and implement it yourself in Haskell</title>
+<meta content="website" property="og:type"/>
+<meta content="Understand IO Monad and implement it yourself in Haskell" property="og:title"/>
+<meta content="This post hopefully well explains what an IO monad is. It starts simple and gets progressively more advanced." property="og:description"/>
+<meta content="https://boxbase.org/style/boxbase.svg" property="og:image"/>
+<meta content="https://boxbase.org//entries/2020/may/18/diy-io-monad" property="og:url"/>
+<link href="/style/screen.css" rel="stylesheet"/>
+<link href="//boxbase.org/feed.rss" rel="alternate" title="Boxbase Feed" type="application/rss+xml"/>
+</head>
+<body>
+<article><h1>Understand IO Monad and implement it yourself in Haskell</h1>
+<p>This post is a rewrite of a message I wrote last week.
+It's a filler to cap an otherwise empty weekend slot.</p>
+<p>I'm going to explain
+what distinguishes purely functional programming languages
+and why they need an IO monad.
+This post for anybody who is curious about what an IO monad is.
+I try to explain things on detail,
+such that it could be understood with basic education.
+No programming knowledge needed.</p>
+<p>Contents of the post aren't new.
+In fact the post I responded to referenced
+<a href="https://chrisdone.com/posts/pure-io-tryhaskell/">Chris Done's post about pure-io</a>.
+There should be nothing here that wouldn't be already explained elsewhere.</p>
+<p>IO monad solves a problem of
+how a purely functional programming language
+can represent communication with its environment.</p>
+<h2>Informal explanation</h2>
+<p>You should be able to understand what's going on below.</p>
+<pre><code>  5 * 4
+</code><code>= 5 * 2 * 2
+</code><code>= 10 * 2
+</code><code>= 20</code></pre>
+<p>Computation is similar to rewriting expressions like this,
+such that the meaning of expression remains same.</p>
+<p>Mathematical expressions can name interactions.
+For example, we can describe mathematically a desire to print something.
+Or get a line from the user.</p>
+<pre><code>print abcd
+</code><code>getline</code></pre>
+<p>Then we come up with rewriting rules that match what we expect.</p>
+<pre><code>print abcd » ()      {you must write abcd to the paper after this}
+</code><code>getline    » y       {you must take the 'y' from the user}</code></pre>
+<p>Now if you try to build programs with these rules,
+you quickly notice that you have to introduce an order
+for how you apply these rewriting rules.</p>
+<p>If a programming language is purely functional it forbids such side conditions.
+Though, how do you represent programs that interact then?</p>
+<p>Side conditions in computation aren't needed for interaction.
+That is, we can take every computation rule with a side condition
+and turn them into an interaction rule.</p>
+<p>Instead of doing the thing above, you can introduce sequencing.
+We can take <code>(x;y)</code> to mean that <code>x</code> is sequenced before <code>y</code>.</p>
+<pre><code>x := getline; print ("hello" + x)</code></pre>
+<p>Now the interaction of this program has been separated from the rewriting rules.
+To interpret this program as interaction with user,
+Take the item from the left, in this case it's <code>x := getline</code>.
+Do what it's supposed to do. 
+Replace 'x' with result you get.
+Then continue with the remaining expression.
+The remaining expression is.</p>
+<pre><code>print ("hello" + "you.")</code></pre>
+<p>And I would be mandated to say "helloyou." to complete the interaction.</p>
+<p>Now it's your turn. Let me give you a program.</p>
+<pre><code>5 + print "hello"</code></pre>
+<p>I haven't told you how to interpret this, though.</p>
+<p>You may invent several ways to interpret this program.
+But if no rule has been specified there, none of them is correct.
+What should we do?
+The answer is to ask what we should take as a valid expression.</p>
+<p>But then we should ask what's valid for <code>x;y</code>, or what's valid with <code>getline</code>.
+Do this for every expression that you have.</p>
+<p>Lets start with describing numbers.
+We can denote that we have numbers, starting from zero.</p>
+<pre><code>0 : number
+</code><code>1 : number
+</code><code>2 : number
+</code><code>3 : number
+</code><code>...</code></pre>
+<p>How do you state what is a valid addition?
+Well we could continue with the same way.
+The arrow is implication here,
+it means that if the things on left side hold,
+then the thing on the right side holds.</p>
+<pre><code>(x : number), (y : number) → (x + y : number)</code></pre>
+<p>We can remove the terms and arrive to this concise presentation.</p>
+<pre><code>(+) : (number, number) → number</code></pre>
+<p>If you fiddle around you may notice
+I used addition to mean at text concatenation earlier on.
+That expression would be valid no longer.
+Don't worry about that for now because it's a hard aesthetical question
+far outside of the scope of this text.
+We can use a different symbol for putting text together.</p>
+<p>Lets move on denoting what we take as a valid <code>getline</code>, <code>print</code>,
+and composition <code>;</code>.</p>
+<p>We could start with these:</p>
+<pre><code>getline : command
+</code><code>print : text → command
+</code><code>(;) : (command, command) → command</code></pre>
+<p>If you're sharp person or you already know the subject,
+you're asking "where's the result that's given by the getline?"
+These aren't complete because we have to introduce parameters to our types.</p>
+<pre><code>getline : io text
+</code><code>print : text → io 1 
+</code><code>(;) : ∀a,b. (io a, io b) → io b</code></pre>
+<p>The <code>∀</code> stands for "for all", so <code>a</code> and <code>b</code> refer to any type here
+and <code>1</code> can be only filled by a specific constant.</p>
+<p>These are correct, but you may be wondering where's this one thing?
+How do you access the value <code>getline</code> returns?
+Well, we introduce some syntactic sugar.
+This equation:</p>
+<pre><code>x := f; g</code></pre>
+<p>Is same as this equation:</p>
+<pre><code>f »= λx. g</code></pre>
+<p>If you meet the <code>λ</code> for the first time here.
+It just constructs the <code>a → b</code>
+and makes the <code>a</code> available for construction of <code>b</code>.
+To supply the value to the construct you apply it to a value.</p>
+<pre><code>(λx.g) v = g   {replace 'x' with 'v',
+</code><code>                following some rules related to variables}</code></pre>
+<p>There are few rules for variables inside <code>λ</code>.
+First of all, we should consider <code>x</code> to be present only when reading <code>g</code>.
+It's not available for use outside of its scope.
+Second, when you have stacks of these expressions, eg. <code>λx.λy.λz.g</code>,
+they should come with different variables
+so that you can distinguish between them.</p>
+<p>Now we can describe when assignment is valid.</p>
+<pre><code>(»=) : ∀a,b. (io a, (a → io b)) → io b</code></pre>
+<p>So we've provided the constructs you need to describe interactions.
+There's perhaps still an one thing you might like to have.</p>
+<pre><code>pure : ∀a. a → io a</code></pre>
+<p>I've explained how <code>getline</code> and <code>print</code> should be interpreted.
+The <code>pure</code> needs a little bit of explanation.</p>
+<pre><code>pure x » x          {do nothing}</code></pre>
+<p>Now we have some simple rules
+for constructing programs that we deem computable.
+Lets collect them together.
+I took a freedom to add some rules for text processing.</p>
+<pre><code>0, 1, 2, 3.. : number
+</code><code>(+) : (number, number) → number
+</code><code>
+</code><code>"a", "b", "c".. : text
+</code><code>(++) : (text, text) → text
+</code><code>
+</code><code>getline : io text
+</code><code>print : text → io 1 
+</code><code>
+</code><code>(;)  : ∀a,b. (io a, io b) → io b
+</code><code>(»=) : ∀a,b. (io a, (a → io b)) → io b
+</code><code>pure : ∀a.   a → io a</code></pre>
+<p>These last three rules define the IO monad.
+Monad is a certain kind of commonly appearing structure
+that describes many such structures
+that we can modify without changing it's meaning.</p>
+<p>Something being a monad means that
+it has <code>(»=)</code> that is associative,
+and it has an unit called <code>pure</code>.</p>
+<p>The <code>(;)</code> is same as <code>(»=)</code>,
+except that it discards the value produced from the computation.</p>
+<p>We can convey the rules that monads have to satisfy like this:</p>
+<pre><code>(x;y);z = x;(y;z) = x;y;z
+</code><code>a := pure a;x = x
+</code><code>a := x;pure a = x</code></pre>
+<p>Associativity allows to drop the parentheses from a sequence.
+These are similar to what we'd have available
+for mathematical manipulation of expressions.
+You could compare them to these equations that are for numbers:</p>
+<pre><code>a+(b+c) = (a+b)+c = a+b+c
+</code><code>0+a = a
+</code><code>a+0 = a</code></pre>
+<p>We introduced a lot of structure
+by describing what stands as a valid equation.
+But it should be clear why we need it.
+These rules help with reasoning about programs.</p>
+<p>Now we can try interpreting programs again. I can give you the same program.</p>
+<pre><code>5 + print "hello"</code></pre>
+<p>Now you can ask me: "How is this valid exactly?"</p>
+<p>I would not be able to present you a type that makes it a valid equation.
+This means that you don't need to do anything to that program.</p>
+<p>However, I can still give you a valid program:</p>
+<pre><code>print ("Hi I'm Santa, tell me your name? ");
+</code><code>name := getline;
+</code><code>print ("Hello " ++ name ++ ", and what do you wish for Christmas this year?");
+</code><code>item := getline;
+</code><code>print ("Ok.")</code></pre>
+<p>Now if you ask me "How is this valid?" I'm going to tell you it's <code>io 1</code>.
+You can verify that by following the rules that were laid out.
+We got sequences of commands,
+and you can verify that the "getline" produces text,
+which is then used in a context that is valid with text.</p>
+<p>IO monads aren't the only solution to representing communication.
+Though they are excellent for conveying behavior
+where the next step taken would depend on the previous step taken.</p>
+<h2>Rationale</h2>
+<p>This pure functional programming would seem to be a whole lot of trouble.
+Or then you think "Oh I I know how to write programs now!".</p>
+<p>The way pure functional languages simplify reasoning
+may be taken as constraining.
+I can show you how to do this because I've been good at it.
+First take a type, for example this type:</p>
+<pre><code>number → number</code></pre>
+<p>Now if you've been following,
+you know this describes a program that gets a number
+and must construct a number.
+Simplest program that fills the type would be:</p>
+<pre><code>λn. n</code></pre>
+<p>But you could also produce a number that is multiplied,
+something added to it, etc.</p>
+<p>Now start complaining that you can't write to a memory address,
+or read from some memory address to fill this type.</p>
+<p>That's how you can see this as constraining.</p>
+<p>But in other hand you don't need to worry about anything like that.
+If you rewrite something in the program,
+you don't need to worry that its meaning would change
+because you cause interference in something
+that's happening behind the curtains.
+In fact well written purely functional programs
+don't depend on how the computer is structured.
+You can already see it in the examples given so far.
+The earlier 'getline' and 'print'.
+They never talk about keyboards, printers, speech recognition
+or anything like that.
+By leaving away details you're freed to fill them in later on.</p>
+<p>This concludes the easy parts of the blog post.
+Next we discuss why these structures come out like they do.</p>
+<h2>Technical details</h2>
+<p>If you'd like to understand what the IO monad exactly solves.
+You need to read this part.
+It's possibly still accessible.</p>
+<p>The illustrations aren't too much different from the earlier.
+There's <code>let x in y</code> -expression in here used for taking apart pairs.</p>
+<p>It's easiest to illustrate with a counterexample of a system that
+is slightly weaker than IO monads, and fails for that reason.</p>
+<p>Here's an alternative weaker way to represent communication:</p>
+<pre><code>getline : channel → (channel, text)
+</code><code>print : (channel, text) → channel</code></pre>
+<p>To represent a communication,
+instead of <code>io 1</code> you now fill a type <code>channel → channel</code>.</p>
+<p>With this system you can fill a type <code>channel → (channel, channel)</code>
+An example of that would be:</p>
+<pre><code>λch. (print(ch, "hello"), print(ch, "Hello"))</code></pre>
+<p>To convert <code>(channel, channel)</code> into <code>channel</code>,
+you select either side.
+This means that the other interaction from these two
+ends up being speculation.</p>
+<p>Now lets pick an example of how this representation of communication fails:</p>
+<pre><code>λch0. let (x, ch1) = read (print("input?", ch0))
+</code><code>      in print("hello " ++ x, ch0)</code></pre>
+<p>Two interactions are described here and the second one is chosen.
+But the second interaction is constructed
+with the results from the first interaction.
+It means that if you try to interpret this program you're going to get stuck.</p>
+<p>IO monad prevents the production of results such that you can only read
+those results that you actually chained to be part of the interaction.
+Examine the <code>(»=)</code> signature,
+I cleaned off the quantifiers for you so it's a bit easier to read:</p>
+<pre><code>(»=) : (io a, (a → io b)) → io b</code></pre>
+<p>Here's an "implementation" for this bind, in terms of channels:</p>
+<pre><code>io a = (ch → (a, ch))
+</code><code>(r »= f) = λch0. let (x, ch1) = r ch0
+</code><code>                 in  f x ch1</code></pre>
+<p>Now if you don't tell the user what <code>io a</code> is exactly.
+The outcome is that he can't speculate with values that weren't produced.
+If he uses results of some interaction it forces to prepend that interaction
+to be the part of the interaction that is being produced with the result.</p>
+<p>Note that the signature of the <code>(»=)</code> allows you
+to guess what is going on there.
+Why is it taking prior interaction as input?
+Why is it taking subsequent interaction as input
+and then give similar interaction back afterwards?</p>
+<p>There's a short jump
+from this kind of typed purely functional programming
+to proving theorems.
+It's possible to write types that constrain the implementation so much
+that it can be only filled with implementations that are correct. 
+It's not even that difficult.</p>
+<p>Next we go and implement IO monads in Haskell.
+I won't explain Haskell in the same detail I explained
+the expressions presented earlier.
+You may need some knowledge of Haskell to understand what you read.</p>
+<h2>Haskell implementations</h2>
+<p>I'm going to present several implementations,
+but they all go into the same module.</p>
+<pre><code>{-# LANGUAGE GADTs #-}
+</code><code>
+</code><code>module MY_IO where</code></pre>
+<p>This next data structure is a generic algebraic data structure.
+It allows me to describe nearly arbitrary expressions as "constructors"
+that I can pattern match on later.</p>
+<pre><code>data MyIo a where
+</code><code>    M_print :: String -&gt; MyIo ()
+</code><code>    M_getLine :: MyIo String
+</code><code>    M_bind :: MyIo a -&gt; (a -&gt; MyIo b) -&gt; MyIo b</code></pre>
+<p>Here's a simple interaction expressed with the constructs:</p>
+<pre><code>m_hello :: MyIo ()
+</code><code>m_hello = M_getLine `M_bind` \name -&gt; M_print ("Hello " ++ name)</code></pre>
+<p>We can interpret the interaction through Haskell's own IO monad.</p>
+<pre><code>io_interpret :: MyIo a -&gt; IO a
+</code><code>io_interpret (M_print s) = print s
+</code><code>io_interpret (M_getLine) = getLine
+</code><code>io_interpret (M_bind x f) = io_interpret x &gt;&gt;= io_interpret . f</code></pre>
+<p>But we could also interpret such interaction in a more abstract way.
+For example, we could pass in a list of strings as input,
+and examine how the program reacts to that.</p>
+<pre><code>l_interpret :: MyIo a -&gt; [String]
+</code><code>    -&gt; Either [String] (a, [String], [String])
+</code><code>l_interpret (M_print s) x      = Right ((), x, [s])
+</code><code>l_interpret (M_getLine) (x:xs) = Right (x, xs, []) 
+</code><code>l_interpret (M_getLine) []     = Left []
+</code><code>l_interpret (M_bind x f) xs = case l_interpret x xs of
+</code><code>    Left ys1 -&gt; Left ys1
+</code><code>    Right (z,xs1,ys1) -&gt; case l_interpret (f z) xs1 of
+</code><code>        Left ys2 -&gt; Left (ys1 ++ ys2)
+</code><code>        Right (q,xs2,ys2) -&gt; Right (q, xs2, ys1 ++ ys2)</code></pre>
+<p>The <code>l_interpret</code> turns the interaction into a function
+that gets a list of inputs and either returns partial or completed result.</p>
+<pre><code>*MY_IO&gt; l_interpret m_hello []
+</code><code>Left []
+</code><code>*MY_IO&gt; l_interpret m_hello ["foo"]
+</code><code>Right ((),[],["Hello foo"])
+</code><code>*MY_IO&gt; l_interpret m_hello ["foo", "bar"]
+</code><code>Right ((),["bar"],["Hello foo"])</code></pre>
+<p>It may seem impractical to examine the program
+by running it over again after every interaction.</p>
+<pre><code>data Cnt a = Cnt [String] (String -&gt; Cnt a)
+</code><code>           | Ret [String] a
+</code><code>
+</code><code>outp :: Cnt a -&gt; [String]
+</code><code>outp (Cnt out _) = out
+</code><code>outp (Ret out _) = out
+</code><code>
+</code><code>nextp :: Cnt a -&gt; String -&gt; Cnt a
+</code><code>nextp (Cnt _ fn) = fn 
+</code><code>nextp (Ret out x) = const (Ret [] x)
+</code><code>
+</code><code>c_interpret :: MyIo a -&gt; [String] -&gt; Cnt a
+</code><code>c_interpret (M_print s)  out = Ret (out++[s]) ()
+</code><code>c_interpret (M_getLine)  out = Cnt out (\x -&gt; Ret [] x)
+</code><code>c_interpret (M_bind m f) out 
+</code><code>    = let rep (Ret out x)   = c_interpret (f x) out
+</code><code>          rep (Cnt out nxt) = Cnt out (\i -&gt; rep (nxt i))
+</code><code>      in rep (c_interpret m out)</code></pre>
+<p>Now we don't need to recompute so that we can continue interaction.
+We get a "continuation" along the output that we can dig up.</p>
+<pre><code>*MY_IO&gt; let a = c_interpret m_hello []
+</code><code>*MY_IO&gt; outp a
+</code><code>[]
+</code><code>*MY_IO&gt; let a' = nextp a "foo"
+</code><code>*MY_IO&gt; outp a'
+</code><code>["Hello foo"]
+</code><code>*MY_IO&gt; let a'' = nextp a' "bar"
+</code><code>*MY_IO&gt; outp a''
+</code><code>[]
+</code><code>*MY_IO&gt; outp $ c_interpret (M_print "hello" `M_bind` const (M_print "hello")) []
+</code><code>["hello","hello"]</code></pre>
+<p>Now this may seem quite restrictive way to implement an IO monad.
+You have to describe every command in the GADT
+and you can't mix different command sets.
+Or how about you'd like to represent a program that can only print out results?</p>
+<p>We can do that.
+We could do it <a href="http://okmij.org/ftp/tagless-final/index.html">"Tagless-final style"</a>.</p>
+<pre><code>class PIn m where
+</code><code>    g_getLine :: m String
+</code><code>
+</code><code>class POut m where
+</code><code>    g_print :: String -&gt; m ()
+</code><code>
+</code><code>instance PIn IO where
+</code><code>    g_getLine = getLine
+</code><code>
+</code><code>instance POut IO where
+</code><code>    g_print = print</code></pre>
+<p>It should be clear that you can now describe different kind of interfaces
+here and they don't do anything with each other.</p>
+<p>Now try these:</p>
+<pre><code>*MY_IO&gt; g_print "hello" &gt;&gt; g_print "hello"
+</code><code>"hello"
+</code><code>"hello"</code></pre>
+<p>So that looks like nothing exciting.
+But perhaps something interesting still happened?
+Lets examine the type it infers.</p>
+<pre><code>*MY_IO&gt; :t g_print "hello" &gt;&gt; g_print "hello"
+</code><code>g_print "hello" &gt;&gt; g_print "hello" :: (POut m, Monad m) =&gt; m ()</code></pre>
+<p>So the type is this weird..</p>
+<pre><code>(POut m, Monad m) =&gt; m ()</code></pre>
+<p>Now do you think that a program typed like this could ask for input?</p>
+<pre><code>test_program :: (POut m, Monad m) =&gt; m ()
+</code><code>test_program = do
+</code><code>    a &lt;- g_getLine
+</code><code>    g_print ("hello" ++ a)
+</code><code>
+</code><code>[1 of 1] Compiling MY_IO            ( MY_IO.hs, interpreted )
+</code><code>
+</code><code>MY_IO.hs:63:10: error:
+</code><code>    • Could not deduce (PIn m) arising from a use of ‘g_getLine’
+</code><code>      from the context: (POut m, Monad m)
+</code><code>        bound by the type signature for:
+</code><code>                   test_program :: (POut m, Monad m) =&gt; m ()
+</code><code>        at MY_IO.hs:61:1-41
+</code><code>      Possible fix:
+</code><code>        add (PIn m) to the context of
+</code><code>          the type signature for:
+</code><code>            test_program :: (POut m, Monad m) =&gt; m ()
+</code><code>    • In a stmt of a 'do' block: a &lt;- g_getLine
+</code><code>      In the expression:
+</code><code>        do { a &lt;- g_getLine;
+</code><code>             g_print ("hello" ++ a) }
+</code><code>      In an equation for ‘test_program’:
+</code><code>          test_program
+</code><code>            = do { a &lt;- g_getLine;
+</code><code>                   g_print ("hello" ++ a) }
+</code><code>Failed, modules loaded: none.</code></pre>
+<p>How about we try to cheat? We know it's implemented as IO anyway..</p>
+<pre><code>test_program2 :: (POut m, Monad m) =&gt; m ()
+</code><code>test_program2 = do
+</code><code>    a &lt;- getLine
+</code><code>    g_print ("hello" ++ a)
+</code><code>
+</code><code>[1 of 1] Compiling MY_IO            ( MY_IO.hs, interpreted )
+</code><code>
+</code><code>MY_IO.hs:63:10: error:
+</code><code>    • Couldn't match type ‘m’ with ‘IO’
+</code><code>      ‘m’ is a rigid type variable bound by
+</code><code>        the type signature for:
+</code><code>          test_program2 :: forall (m :: * -&gt; *). (POut m, Monad m) =&gt; m ()
+</code><code>        at MY_IO.hs:61:18
+</code><code>      Expected type: m String
+</code><code>        Actual type: IO String
+</code><code>    • In a stmt of a 'do' block: a &lt;- getLine
+</code><code>      In the expression:
+</code><code>        do { a &lt;- getLine;
+</code><code>             g_print ("hello" ++ a) }
+</code><code>      In an equation for ‘test_program2’:
+</code><code>          test_program2
+</code><code>            = do { a &lt;- getLine;
+</code><code>                   g_print ("hello" ++ a) }
+</code><code>    • Relevant bindings include
+</code><code>        test_program2 :: m () (bound at MY_IO.hs:62:1)
+</code><code>Failed, modules loaded: none.</code></pre>
+<p>Types now seem to convey what the program can do,
+despite that they didn't do so before.</p>
+<pre><code>test_program3 :: (POut m, Monad m) =&gt; m ()
+</code><code>test_program3 = do
+</code><code>    g_print ("hello")</code></pre>
+<p>You can also hide the "Monad m" by adding constraints into typeclasses.
+Like this: <code>class Monad m =&gt; PIn m</code> instead of the simpler <code>class PIn m</code>
+because it being a monad is a bit of implied from the context.</p>
+<p>You may have already guessed that implementing IO monad yourself
+isn't just a fun exercise.
+You can do it to write better, more abstract programs.</p>
+<h3>Similar posts</h3><ul><li><a href="/entries/2018/dec/3/session-types-and-computability-logic">Session types and computability logic</a></li><li><a href="/entries/2019/may/27/from-open-deduction-to-interaction-nets">From open deduction into interaction nets</a></li><li><a href="/entries/2019/aug/5/alonzo_nbe">Writing STLC Evaluator to explore into structure of proof assistants</a></li><li><a href="/entries/2020/jun/16/this-is-not-a-monad-tutorial">This is not a monad tutorial</a></li><li><a href="/entries/2020/jun/29/hierarchical-free-monads-criticism">Hierarchical Free Monads: Myopic alternative to Tagless Final</a></li></ul></article>
+<nav id="article-nav">
+<a href="/">index</a>
+<a href="/entries/2020/jun/22/partial-evaluation-with-expansion-and-contraction">prev</a>
+<a href="/entries/2020/jul/6/how-to-read-code">next</a>
+</nav>
+<nav id="page-nav">
+<a href="feed://boxbase.org/feed.rss">rss</a>
+<a href="//boxbase.org/catalog/">catalog</a>
+<a href="//github.com/cheery/">github</a>
+<a href="//boxbase.org/trash/mailchimp.html">subscription-list</a>
+</nav>
+<footer>
+<p>Blog author: <a href="/entries/2020/jul/30/about-the-author/">Henri Tuhola</a>, a Finnish self-taught programmer and an electronics enthusiast.</p>
+<p>I enjoy programming, program design, programming language design, algorithms, steam OS,
+        game programming, Vulkan, virtual reality, WebGL, DIY electronics, Internet,
+        gardening, fitness. This blog represents a cross-section of all of my interests.
+        (It's mostly programming language studies and occassional programming guides in middle)</p>
+<p>I am also the author of <a href="//leverlanguage.com">Lever programming language</a>.
+           This is a programming language I made,
+           but since then figured out I could make a better one that's not dynamically typed.</p>
+<p>I usually update the blog every week or two.
+           You may feedback me with an <a href="mailto:henri.tuhola@gmail.com">email</a>
+           or <a href="https://twitter.com/HenriTuhola">twitter</a>.
+           I appreciate corrections and improvements to texts.</p>
+<div id="license">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0"/></a><br/>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.
+        </div>
+</footer>
+</body>
+</html>

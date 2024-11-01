@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/derek-benes;  "acpi" "-b" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/derek-benes;  "acpi" "-b" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/derek-benes;  "acpi" "-b" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts;  "acpi" "-b" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "acpi" "-b" "#" "<==" "zsh"

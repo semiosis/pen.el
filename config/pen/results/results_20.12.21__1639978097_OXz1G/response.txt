@@ -1,0 +1,1 @@
+2019-01-07 16:24:58,828 INFO  [falcon9.launch.trajectory_manager.trajectory_manager] (falcon9.launch.stage.main:42) [falcon9.launch.stage.main] Current

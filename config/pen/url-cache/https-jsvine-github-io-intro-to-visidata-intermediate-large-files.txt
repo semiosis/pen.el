@@ -1,0 +1,305 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 3577
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-32d3"
+expires: Fri, 12 Apr 2024 09:03:29 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: C9E6:3F6FF9:FBFE9B:10A39A4:6618F688
+Accept-Ranges: bytes
+Date: Fri, 12 Apr 2024 08:53:31 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10326-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1712912011.999547,VS0,VE2
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 640ef6e5ee96243180f43696962440024ff6284d
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Working With Large Files &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/intermediate/large-files.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Configuring VisiData" href="../../advanced/configuring-visidata/" />
+    <link rel="prev" title="Working With Large Cells" href="../large-cells/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working With Large Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#select-a-random-sample-of-rows">Select a random sample of rows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#only-load-part-of-the-file">Only load part of the file</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#from-the-command-line">From the command-line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#by-halting-the-loading-process">By halting the loading process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#caching-dynamic-columns">Caching dynamic columns</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Working With Large Files</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="working-with-large-files">
+<h1>Working With Large Files<a class="headerlink" href="#working-with-large-files" title="Permalink to this headline">¶</a></h1>
+<p>VisiData handles moderately large files reasonably well. But if a particularly large file is slowing VisiData down, the tips and tricks below can help.</p>
+<div class="section" id="select-a-random-sample-of-rows">
+<h2>Select a random sample of rows<a class="headerlink" href="#select-a-random-sample-of-rows" title="Permalink to this headline">¶</a></h2>
+<p>In VisiData, you can create a randomly-sampled copy of any sheet. To create a random-sample sheet, press <kbd class="kbd docutils literal notranslate">Space</kbd> to initiate the longname-command prompt, and type <code class="docutils literal notranslate"><span class="pre">random-rows</span></code>. At the prompt, type the number of rows you’d like to include, and then press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
+</div>
+<div class="section" id="only-load-part-of-the-file">
+<h2>Only load part of the file<a class="headerlink" href="#only-load-part-of-the-file" title="Permalink to this headline">¶</a></h2>
+<p>If you’re only using VisiData to preview a dataset, consider loading just the beginning of the file.</p>
+<div class="section" id="from-the-command-line">
+<h3>From the command-line<a class="headerlink" href="#from-the-command-line" title="Permalink to this headline">¶</a></h3>
+<p>If you’re working with a simple CSV file, you can accomplish this by using <code class="docutils literal notranslate"><span class="pre">head</span></code> on the command-line, combined with <code class="docutils literal notranslate"><span class="pre">vd</span> <span class="pre">-f</span> <span class="pre">csv</span></code> e.g.,:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>head -n <span class="m">1000</span> faa-wildlife-strikes.csv <span class="p">|</span> vd -f csv
+</pre></div>
+</div>
+<p>That will load the first 1,000 lines of the file. (Because the <code class="docutils literal notranslate"><span class="pre">REMARKS</span></code> column contains some newline characters, the 1,000 lines correspond to slightly fewer than 1,000 rows.)</p>
+<p>Alternatively, you can use a written-for-speed tool, such as <a class="reference external" href="https://github.com/BurntSushi/xsv">xsv</a>, to slice or filter the file before loading it into VisiData. E.g.,:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>xsv search <span class="s2">&quot;CHICAGO&quot;</span> faa-wildlife-strikes.csv <span class="p">|</span> vd -f csv
+</pre></div>
+</div>
+</div>
+<div class="section" id="by-halting-the-loading-process">
+<h3>By halting the loading process<a class="headerlink" href="#by-halting-the-loading-process" title="Permalink to this headline">¶</a></h3>
+<p>You can also just press <kbd class="kbd docutils literal notranslate">Control-c</kbd> while the data is loading, which will halt the loading process. VisiData handles this gracefully, and you can continue using the program just as you would if you hadn’t halted the loading proces.</p>
+<p>This approach works well if you’re using a data source that’s more complex than a CSV file, and if you don’t care exactly how many lines are loaded.</p>
+</div>
+</div>
+<div class="section" id="caching-dynamic-columns">
+<h2>Caching dynamic columns<a class="headerlink" href="#caching-dynamic-columns" title="Permalink to this headline">¶</a></h2>
+<p>Dynamic columns (for instance, those created with the <kbd class="kbd docutils literal notranslate">=</kbd> command) are calculated “lazily” — i.e., only when they’re needed.</p>
+<p>If you’re running a lot of operations on a dynamic column — perhaps calculating its average, median, and sum — you can save some time by first “caching” it. When you cache a dynamic column, VisiData calculates its current state and never recomputes it.</p>
+<p>To cache (or re-cache) a column, navigate to it in your sheet and type <kbd class="kbd docutils literal notranslate">z'</kbd>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../advanced/configuring-visidata/" class="btn btn-neutral float-right" title="Configuring VisiData" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../large-cells/" class="btn btn-neutral float-left" title="Working With Large Cells" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

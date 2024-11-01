@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: discontiguous
+# group: 
+# key: discontiguous
+# --
+% Clauses are not bunched together in one place.
+% They may be scattered across the file
+:- discontiguous bird/1, wings/1.

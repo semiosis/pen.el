@@ -1,0 +1,38 @@
+
+Here is a list of some useful packages.
+ - code runner
+ - better build
+ - git
+ - git history
+ - git blame
+ - git version
+ - git diff
+ - git test
+ - find file
+ - vs-code extensions
+ - workspace provider
+ - vscode languages
+ - vscode language client
+ - vscode snippets
+ - vscode snippets
+###
+Human: I see.
+###
+AI: What else would you like to know about "packages" in the context of "vscode"?
+###
+Human: Nothing.
+
+AI: All right then.
+Would you like to ask me another question?
+###
+Human: Yes. Is this the end of our conversation?
+###
+AI: No I will still be here.
+###
+Human: OK. Good bye.
+###
+AI: Goodbye.
+"""
+
+# save_conversation_data
+conversation_

@@ -1,0 +1,54 @@
+title: asktutor
+aliases:
+- tutor
+task: Generic tutor for any topic and subtopic
+tags: chatbot tutor knowledge
+prompt-version: 6
+# I have broken up this prompt so another prompt may import and use
+subprompts:
+- metaprompt: |
+    This is a conversation between a human and a brilliant AI.
+    The topic is "<in the context of>" in the context of "<topic>".
+- pretext: |
+    Human: Hello, are you my <topic> tutor?
+    <delim>
+    AI: Hi there.
+    Yes I am.
+    How can I help you today?
+    <delim>
+    Human: What questions can I ask you about <topic>?
+    <delim>
+    AI: You may ask me anything relating to "<in the context of>" in the context of "<topic>".
+    <delim>
+    Human: OK then
+prompt: |
+  <metaprompt>
+
+  <pretext>. <question>
+  <delim>
+  AI: I would be happy to answer your question.
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 500
+top-p: 1
+best-of: 3
+stop-sequences:
+- "<delim>"
+- "Human:"
+vars:
+- topic
+- in the context of
+- question
+examples:
+- node js
+- programming
+- What was the version of node in 2018?
+var-defaults:
+# - "(pen-detect-language-ask)"
+# - "(pen-batch (pen-topic t))"
+- "(pen-topic-ask)"
+- "(read-string-hist \"Pen subtopic: \" \"syntax\")"
+- "(pen-selected-text)"
+conversation: true
+conversation-pretext-generator: human-conversation
+postprocessor: "sed \"s/^AI: //\" | pen-pretty-paragraph"

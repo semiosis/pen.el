@@ -1,0 +1,4 @@
+
+An atom is a datatype in clojure.
+And @ is used to dereference an atom.
+

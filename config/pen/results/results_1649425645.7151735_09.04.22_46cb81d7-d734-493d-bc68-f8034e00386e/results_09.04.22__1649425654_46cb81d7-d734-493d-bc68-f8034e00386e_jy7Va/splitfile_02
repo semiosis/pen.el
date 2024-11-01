@@ -1,0 +1,9 @@
+
+shane@mele:~/notes$ while :; do date; sleep 2; clear; done
+shane@mele:~/notes$ echo hi
+hi
+shane@mele:~/notes$ while :; do date; sleep 2; clear; done
+shane@mele:~/notes$ while :; do date; sleep 2; clear; done
+shane@mele:~/notes$ while :; do date; sleep 2; clear; done
+shane@mele:~/notes$ while :; do date; sleep 2; clear; done
+shane@mele:~/notes$ while :; do date;

@@ -1,0 +1,7 @@
+
+shane@mele:~/notes$ date
+Mon Jul  1 13:35:18 PDT 2019
+shane@mele:~/notes$ tmux send-keys -t 0 C-c
+shane@mele:~/notes$ tmux send-keys -t 0 C-z
+shane@mele:~/notes$ tmux send-keys -t 0 C-z
+shane@mele:~/notes$ tmux send-keys -

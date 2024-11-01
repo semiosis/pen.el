@@ -1,0 +1,77 @@
+Space
+    A special kind of repository that hosts
+    application code for ML demos Those
+    applications can be written using Python
+    libraries like Streamlit or Gradio.
+
+    Or you can just host a static web page.
+
+huggingface
+🤗
+Hugging Face
+HF-NLP
+    The AI community building the future.
+
+    Build, train and deploy state of the art
+    models powered by the reference open
+    source in natural language processing.
+
+    https://huggingface.co/
+
+AutoNLP
+    https://huggingface.co/autonlp
+
+    An automatic way to train, evaluate and
+    deploy SOTA NLP models for different
+    tasks.
+
+Inference API
+Accelerated Inference API
+    [[egr:Inference API]]
+
+    Integrate into your apps over 10,000 pre-
+    trained SOTA models, or your own private
+    models, via simple HTTP requests, with 2x
+    to 10x faster inference than built-in
+    deployment, and scalability built-in.
+
+mixed precision
+    The use of both 16-bit and 32-bit
+    floating-point types in a model during
+    training to make it run faster and use
+    less memory. 
+
+Accelerate
+    Provides an easy API to make your scripts
+    run with mixed precision and on any kind
+    of distributed setting (multi-GPUs, TPUs
+    etc.) while still letting you write your
+    own training loop.
+
+    The same code can then runs seamlessly on
+    your local machine for debugging or your
+    training environment.
+
+    Also provides a CLI tool that allows you
+    to quickly configure and test your
+    training environment then launch the
+    scripts.
+
+streaming mode
+    When a dataset is in streaming mode, you
+    can iterate over it directly without
+    having to download the entire dataset.
+    
+    The data are downloaded progressively as
+    you iterate over the dataset.
+    
+    You can enable dataset streaming by
+    passing streaming=True in the
+    load_dataset() function to get an iterable
+    dataset.
+    
+    This is useful if you don’t have enough
+    space on your disk to download the
+    dataset, or if you don’t want to wait for
+    your dataset to be downloaded before using
+    it.

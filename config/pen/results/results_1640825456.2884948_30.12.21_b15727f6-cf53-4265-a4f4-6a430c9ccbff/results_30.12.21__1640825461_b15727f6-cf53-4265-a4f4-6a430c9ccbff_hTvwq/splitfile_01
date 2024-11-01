@@ -1,0 +1,6 @@
+
+The short answer is that:
+"M-x" "quit" - this is the right answer.
+"kill emacs" will also work.
+Pretty much anything else will NOT work.
+

@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: spew
+# key: spew
+# --
+package main
+
+import (
+"go/parser"
+"go/token"
+"log"
+
+"github.com/davecgh/go-spew/spew"
+)
+
+func main() {
+fs := token.NewFileSet()
+f, err := parser.ParseFile(fs, "", "package main; var a = 3", parser.AllErrors)
+if err != nil {
+log.Fatal(err)
+}
+spew.Dump(f)
+}

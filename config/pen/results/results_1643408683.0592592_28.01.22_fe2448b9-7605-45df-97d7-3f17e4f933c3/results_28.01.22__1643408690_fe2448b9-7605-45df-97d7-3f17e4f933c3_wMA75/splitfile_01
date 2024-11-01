@@ -1,0 +1,9 @@
+cd 'harrys adventures'
+» ls
+ harry-potter.txt  harry-potter.txt~  harry-potter.txt.bak
+» cd ..
+» cd 'harrys adventures'
+» mv harry-potter.txt harry-potter.txt~
+» ls
+ harry-potter.txt~  harry-potter.txt.bak
+» mv harry-

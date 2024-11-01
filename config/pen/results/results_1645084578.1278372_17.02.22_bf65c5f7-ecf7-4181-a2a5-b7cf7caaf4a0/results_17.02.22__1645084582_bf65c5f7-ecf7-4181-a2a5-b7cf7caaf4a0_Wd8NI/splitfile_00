@@ -1,0 +1,4 @@
+"org.clojure/clojure" is a library that provides a Clojure language
+interpreter in Java. It is a good example of how to use clojure.main
+and how to use clojure.java.io.
+

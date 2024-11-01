@@ -1,0 +1,615 @@
+HTTP/1.1 200 OK
+Server: openresty/1.19.9.1
+Date: Sun, 04 Feb 2024 01:53:25 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Last-Modified: Thu, 24 May 2018 14:21:29 GMT
+ETag: W/"6885-56cf45e0db182"
+X-Webcom-Cache-Status: BYPASS
+
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+	<TITLE>Exodus 25-40 The Tabernacle as a Type of Jesus Christ  </TITLE>
+<meta NAME="keywords"
+CONTENT="Exodus, Leviticus,tabernacle, temple,type,symbols,God,Jehovah,JHVH,YHWH,LORD,Lord,messiah,prophets,types,prophesies,salvation,abide,confess,repent,key word studies,study,abide,free,sermons,sermon outlines,doctrines,jesus,christ,dictionary,vocabulary,bible studies,teachings">  
+<meta name="description" content="The Tabernacle and Temple were a type of the Incarnate Christ and His ministry for men. This is a study on the main types in the Old Testament Tabernacle.">
+<SCRIPT src="http://www.google-analytics.com/urchin.js" type=text/javascript>
+</script><script type="text/javascript">
+_uacct = "UA-208700-1";
+urchinTracker();
+</script>
+
+	<link rel="shortcut icon" type="image/x-icon" href="../favoicon.ico"/>
+
+	<link rel="stylesheet" href="../css/style3.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css' />
+	
+	<script src="../js/jquery-1.8.0.min.js" type="text/javascript"></script>
+	<!--[if lt IE 9]>
+		<script src="../js/modernizr.custom.js"></script>
+	<![endif]-->
+	<script src="../js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="../js/functions.js" type="text/javascript"></script>
+	<style type="text/css"> 
+	
+	body {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.small {
+  font-size: 14px; /* 75% of the baseline */
+}
+.medium {
+	font-size: 18px; /* 75% of the baseline */
+
+}
+
+.large {
+  font-size: 20px; /* 125% of the baseline */
+}
+	
+	h1
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	page-break-after:avoid;
+	font-size:large;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+	
+	h2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+	
+	h3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style:italic;
+	}
+
+
+h4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.0in;
+	text-indent:-.5in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight:normal;
+	}	
+	
+	
+	
+	.auto-style1 {
+		color: #FF0000;
+	}
+	.auto-style2 {
+		text-align: left;
+	}
+	
+	
+	
+	.auto-style3 {
+		font-family: Verdana;
+	}
+	
+	
+	
+	.auto-style6 {
+	font-size: medium;
+}
+.auto-style7 {
+	color: #0000FF;
+}
+	
+	
+	
+	.auto-style9 {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.auto-style10 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+		
+	
+	
+	.auto-style15 {
+	text-align: center;
+}
+.auto-style16 {
+	text-align: left;
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+}
+	
+	
+	
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		
+		<!-- top-nav -->
+		<nav class="top-nav">
+			<div class="shell">
+				<a href="#" class="nav-btn">DEVOTIONS<span></span></a>
+				<span class="top-nav-shadow"></span>
+				<ul>
+					<li class="active"><span><a href="http://www.abideinchrist.com/index.html">
+					home</a></span></li>
+					<li><span lang="es-ec"><a href="http://www.abideinchrist.com/messages/index.html">
+					bible studies</a></span></li>
+					<li><span><a href="http://www.abideinchrist.com/selah/calcode.html">
+					devotions</a></span></li>
+					<li><span><a href="http://www.abideinchrist.com/missions/index.html">
+					missions</a></span></li>
+					<li><span><a href="http://www.abideinchrist.com/messages/devotion.html">
+					Christ in O.T.</a></span></li>
+					<li><span><a href="http://www.abideinchrist.com/keys/index.html">
+					Word Study</a></span></li>
+					
+				</ul>
+			</div>
+		</nav>
+		<!-- end of top-nav -->
+			<!-- header -->
+			<header id="header">
+				
+				<div class="header-center">
+					<div class="auto-style34" style="left: 0; right: 0; top: 0"></div>
+					<!-- shell -->
+					<div class="shell">
+							<!-- end of header-cnt -->
+							
+							
+					<!-- end of shell -->	
+				</div>
+			</header>
+			<!-- end of header -->
+			<!-- main -->
+			<div class="main">
+				<!-- shell -->
+				<div class="shell">
+					<div class="container">
+						<!-- testimonial -->
+						<section class="testimonial">
+							<h2>
+							<img alt="Abide in Christ Sermons and Bible Studies" height="130" longdesc="../Abide in Christ sermon starters and daily devotions" src="../gra/jn15v5b.gif" style="float: left" width="193"></h2>
+							<p class="MsoNormal"><span>
+							<!-- RefTagger Control Panel --><LINK 
+      href="../css/logosreftag1.css" type=text/css rel=stylesheet>
+      <DIV id=lbsRefTaggerCP><A href="http://www.logos.com/reftagger" 
+target=new>
+      <DIV id=lbsHeader><br><br>MouseOver Bible Options</DIV></A>
+      <DIV id=lbsVersionContainer><SELECT id=lbsVersion> <OPTION value=NASB 
+        selected>NASB</OPTION> <OPTION value=KJV>KJV</OPTION> <OPTION 
+        value=ESV>ESV</OPTION> <OPTION value=ASV>ASV</OPTION> <OPTION 
+        value=NIV>NIV</OPTION> <OPTION value=MESSAGE>MSG</OPTION> <OPTION 
+        value=AB>AMP</OPTION> <OPTION value=NLT>NLT</OPTION> <OPTION 
+        value=LEB>LEXB</OPTION> <OPTION value=NKJV>NKJV</OPTION> <OPTION 
+        value=NCV>NCV</OPTION> <OPTION value=YLT>YLT</OPTION> 
+        <OPTION value=DAR>DARBY</OPTION> <OPTION value=HCSB>HCSB</OPTION> <OPTION 
+        value=NIRV>NIRV</OPTION> <OPTION value=NIVUK>NIVUK</OPTION> <OPTION 
+        value=DOUAYRHEIMS>DouRH</OPTION></SELECT> </DIV>
+      <DIV id=lbsLibronixContainer><INPUT id=lbsUseLibronixLinks type=checkbox 
+      value=ON> <LABEL for=lbsUseLibronixLinks>Libronix</LABEL> </DIV>
+      <DIV id=lbsSaveContainer><INPUT id=lbsSave onclick=javascript:Logos.ReferenceTagging.lbsSavePrefs() type=button value=Save> 
+      </DIV>
+      <DIV id=lbsFooter style="WIDTH: 284px; HEIGHT: 20px">
+      <DIV id=lbsLogo><A href="http://www.logos.com/ target=" new??><IMG 
+      title="Logos Bible Software" height=19 alt="Logos Bible Software" 
+      src="../gra/transparent.gif" width=64 border=0></A></DIV>
+      <P><A href="http://www.logos.com/demo" target=new>Bible Study 
+      Software</A></P></DIV></DIV><!-- End RefTagger Control Panel --></span>
+							<h1 class="auto-style1">&nbsp;</h1>
+							<h1>Study the Master Theme of the Bible</h1>
+							<a class="auto-style7" href="../messages/devotion.html">Christ in Old Testament Index</a>
+							<br>
+							<img alt="Christ in the Old Testament" height="106" longdesc="www.abideinchrist.com/messages/devotion.html" src="../gra/lionlamb2.jpg" style="float: left" width="141">&nbsp;
+							<h1 class="auto-style16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+							Exodus 25-40 The Tabernacle as a Type of Jesus Christ </h1>
+							<p><br></p>
+							<p class="auto-style15"><span><o:p>&nbsp;</o:p></span></p>
+
+							<p class="MsoNormal">Dr. John R. Sampey said, "A 
+							type may properly be defined as a person, 
+							institution, or event in the old dispensation which 
+							was designed to prefigure a corresponding person, 
+							institution, or event in the New."<o:p></o:p></p>
+							<p class="MsoNormal">The Old Testament institutions 
+							and ceremonies were powerless to save the souls of 
+							men. They were devised as types of Christ and the 
+							different phases of effectual salvation (Cf. Hebrews 
+							7, 8, 9, 10). The Tabernacle and later the Temple 
+							typified the places and the manner in which Jehovah 
+							met with His people and dealt with their sins. They 
+							were a type of the Incarnate Christ and His ministry 
+							for men. The priesthood typified the one and only 
+							perfect priest, the Lord Jesus Christ. The 
+							Offerings, Feasts, and Ceremonies all typified 
+							things having to do with redemption through the 
+							Messiah and the life of the redeemed. The Old 
+							Testament people were a type of the New Testament 
+							people of faith. The places of the Old Covenant were 
+							typical of spiritual places or conditions. Even the 
+							land was a type of salvation to come through the 
+							Christ. The following are some of the main types 
+							found in the Tabernacle. <o:p></o:p></p>
+							<p class="MsoNormal"><b>The HIGH PRIEST</b> was by divine 
+							appointment (Exodus 28:1; Heb. 5:4-6; 7:20-24). Only 
+							the High Priest could make atonement (Lev. 16:1Â­3; 
+							Heb. 7:27; 6:20; 8:3; 9:7, 12, 24-28; 10:12; 13:20; 
+							2:9; 1 Cor. 6:20; 1 Pet. 1:18-19; Ex. 28, 29; Lev. 
+							8; Num. 3, 8; cf. Heb. 5, 7, 9). Jesus was the Great 
+							High Priest offering up Himself as the perfect 
+							sacrifice for our sin debt.<o:p></o:p></p>
+							<p class="MsoNormal"><b>The key to the TABERNACLE is 
+							Christ</b> (Exodus 25-27). It symbolized the dwelling 
+							place of God in the midst of His people. As a type 
+							of Christ, it symbolized the meeting between God and 
+							man (Heb. 9:21-24; 2 Cor. 5:19; Col. 2:9; Heb. 10:5; 
+							Rev. 21:3; Jn. 1:14 2:13-22). The tabernacle is a 
+							symbol, picture and prophecy of the man in whom God 
+							should become incarnate. It is also a symbol of the 
+							Body of Christ, the Church (Col. 1:26-27; 1 Cor. 
+							12:13; Rom. 12:5; Eph. 2:21, 22).<o:p></o:p></p>
+							<p class="MsoNormal"><b>The GOAT HAIR TENT COVER</b> 
+							(Exodus 26:7ff) completely covered the Tabernacle. 
+							It is a symbol of the complete way in which the 
+							sacrificial death of Jesus covers the Body of 
+							Christ. Because of the death of Christ, and our 
+							acceptance of it, God cannot see our sins (Lev. 
+							9:15; Num. 28:22; Isa. 53:10; Heb. 9:10, 14, 26, 28; 
+							Eph. 5:2; 2 Cor. 5:21; 1 Jn. 1:9; Ps. 32:1).<o:p></o:p></p>
+							<p class="MsoNormal"><b>Two COVERINGS OF THE TABERNACLE 
+							</b>consisted of (1) ram's skins dyed red, and (2) a 
+							covering of porpoise or badger which was dull 
+							bluish, or gray in color and had no comeliness or 
+							beauty. It was nothing to be desired and was 
+							despised and rejected for coverings by men. It is a 
+							picture of Christ to all who do not come by way of 
+							the Cross (Isa. 53:2, 3).<o:p></o:p></p>
+							<p class="MsoNormal"><b>The GATE to the Tabernacle was 
+							the only entrance.</b> It was accessible, attractive and 
+							well supported. Christ is the only gate into the 
+							presence of God (John 10:7, 9; 14:6; Eph. 2:13; 1 
+							Cor. 2:2; Heb. 10:19-20).<o:p></o:p></p>
+							<p class="MsoNormal"><b>The BRAZEN ALTAR</b> (Exodus 
+							27:1-8) is a type of Christ our sacrifice (Jn. 
+							1:29). The sacrifice stands at the entrance of man's 
+							approach to God. Man has no access to God except as 
+							a sinner atoned for by blood. All who pass through 
+							the door must pass by the bloodstained altar or not 
+							at all. The Mizbeach - "slaughter place," just 
+							within the gate was easily accessible, unavoidable 
+							and unmistakable.<o:p></o:p></p>
+							<p class="MsoNormal"><b>LAVER OF BRONZE</b> (Exodus 
+							30:17-21) symbolizes Christ our cleanser which 
+							cleanses from defilement (Eph. 5:25-26; Jn. 17:17). 
+							It denotes spiritual renewal. We have daily 
+							cleansing from defilements of life, and it is 
+							accessible only through our Priest. We are 
+							continually cleansed by Christ through the Spirit 
+							and the Word (Jn. 15:3; 1 Jn. 1:6-9).<o:p></o:p></p>
+							<p class="MsoNormal"><b>HOLY PLACE</b> was the first room 
+							the priest entered and contained three pieces of 
+							furniture: Table of Presence, Menorah or Golden 
+							Lampstand, and Altar of Incense.<o:p></o:p></p>
+							<p class="MsoNormal"><b>The MENORAH or LAMP STAND OF 
+							PURE GOLD</b> symbolizes the presence of Jehovah as the 
+							source of life's entertainment, and God's 
+							leadership. Christ is our Light (Jn. 8:12), and 
+							denotes spiritual illumination (Exo. 30:7-8; 27:20; 
+							Phil. 2:15-16; Prov. 4:18; 2 Cor. 4:6; Eph. 1:18; 
+							5:13; Matt. 5:14-16). The Holy Spirit gives 
+							illumination to the believer.<o:p></o:p></p>
+							<p class="MsoNormal"><b>BREAD OF THE PRESENCE</b> lit. 
+							"face-bread," symbolizes the presence of the LORD as 
+							food of life. Jesus is the "Bread of Life" for every 
+							believer (Jn. 6:35). He is our spiritual sustenance.<o:p></o:p></p>
+							<p class="MsoNormal"><b>ALTAR OF INCENSE</b> (Exodus 
+							30:1-10) was a perpetual adoration of the LORD. 
+							Christ is our intercessor who is always making 
+							intercession for us (Jn. 17; Heb. 7:25; Rev. 8:3-5). 
+							It also symbolizes the worship of the believer (Jn. 
+							4:21, 23); and prayer of the saints (Rev. 8:3, 4; 
+							Ps. 141:2; 1 Tim. 2:1-5).<o:p></o:p></p>
+							<p class="MsoNormal"><b>The VEIL in the Temple</b> (Exodus 
+							26:31-35) separated the Holy of Holies, or Most Holy 
+							Place, and the Holy Place. It is a type of Christ's 
+							body (Heb. 10:20; Matt. 27:51). The door into God's 
+							presence was opened to man when Christ died and rent 
+							the veil (Jn. 10:9). The unrent veil shut man out 
+							from the typical presence of God. The rent veil 
+							changed at once from a barrier to an open way into 
+							the Holy of Holies (Heb. 9:20, 26; 10:10, 12, 14; 
+							Eph. 2:4-6; Heb. 4:15, 15).<o:p></o:p></p>
+							<p class="MsoNormal"><b>HOLY OF HOLIES </b>was entered only 
+							one day of the year on Yom Kippur, the Day of 
+							Atonement. It represented God's dwelling place (Heb. 
+							9:24). It symbolized the human body of Jesus (Jn. 
+							2:19-21), and the body of believers (1 Cor. 3:16-17; 
+							6:19). In 2 Corinthians 6:16 it symbolizes the local 
+							church, and Ephesians 2:21 the universal church 
+							consisting of all believers in Christ.<o:p></o:p></p>
+							<p class="MsoNormal"><b>The ARK OF THE COVENANT </b>(Exodus 
+							25:10-16) contained the Law, manna and Aaron's 
+							budded rod. Christ had the Law in His heart and came 
+							to fulfill it (Matt. 5:17, 18). It is another symbol 
+							of God being with His people. Just as the Ark of the 
+							Covenant contained God's testimony to Israel, Christ 
+							is God's testimony of man.<o:p></o:p></p>
+							<p class="MsoNormal"><b>The MERCY SEAT</b> was the gold lid 
+							or cover on top of the ARK of COVENANT (Exodus 
+							25:17-21; Lev. 16:13-16). The Mercy Seat is the 
+							cover, the covering or removal of sin by means of 
+							expiatory sacrifice. It is the Old Testament throne 
+							of grace. Justice and mercy met there, and the blood 
+							of the innocent sacrifice cleanses away all sin. 
+							Christ is that covering for sin (Heb. 9:5; Rom. 
+							3:25; 1 Jn. 2:2). He is the Mercy Seat.<o:p></o:p></p>
+							<p class="MsoNormal"><b>THE GLORY, MY GLORY is the 
+							Shekinah</b>. "Glory" describes Yahweh's 
+							self-manifestation, His transcendence, or His 
+							presence with men (Ex. 33:18-20; 34:5-7; 14:19; 
+							40:34, etc.). It is a type of His dwelling in heaven 
+							(Heb. 9:24; Ex. 40:34-35). He is looking down upon 
+							the Mercy Seat, seen guiding Israel, was not in the 
+							second temple, and reappeared with Christ (Matt. 
+							17:5; Lk. 2:9; Jn. 1:14; Rev. 21:3; Heb. 1:3; Jn. 
+							17:5; 2 Pet. 1:16, 17; Acts 1:9; Mk. 14:62; Rev. 
+							14:14).<o:p></o:p></p>
+							<p class="MsoNormal">Title:<span>&nbsp; </span>
+							Tabernacle as a Type<o:p></o:p></p>
+							<p class="MsoNormal">Series:<span>&nbsp; </span>
+							Christ in the Old Testament<o:p></o:p></p>
+
+							<p class="MsoNormal">&nbsp;</p>
+							<p class="MsoNormal">If you need help in becoming a 
+							Christian here is <b>
+							<a class="auto-style7" href="peacegod.html">A Free Gift for You</a></b>.<o:p></o:p></p>
+							<br>Message by Wil Pounds (c) 2006<o:p><br></o:p><p class="auto-style31"><span><o:p>&nbsp;</o:p></span></p>
+							</span><span class="auto-style10">
+							<p class="auto-style2" style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+							Anyone is free to 
+							use this material and distribute it, but it may not 
+							be sold under any circumstances whatsoever without 
+							the author's written consent.</p>
+							<span class="auto-style3" style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+							<p class="auto-style2">Unless otherwise noted 
+							"Scripture quotations taken from the<span class="Apple-converted-space">&nbsp;</span><a href="http://www.lockman.org/">NASB</a>."<span class="Apple-converted-space">&nbsp;</span></span><font class="auto-style6" size="2"><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;" class="auto-style3">"Scripture 
+							taken from the<span class="Apple-converted-space">&nbsp;</span><b><i>NEW 
+							AMERICAN STANDARD BIBLE"</i></b> © Copyright 1960, 
+							1962, 1963, 1968, 1971, 1972, 1973, 1975, 1977, 1995 
+							by The Lockman Foundation Used by permission." (<a href="http://www.lockman.org/" style="text-decoration: none;">www.Lockman.org</a></span><span style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">)</span></font></p>
+							<span class="auto-style6" style="color: rgb(0, 0, 0); font-size: 12pt; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+							<p class="auto-style2">Scripture quoted by 
+							permission. Quotations designated (NET) are from the 
+							NET Bible copyright ©1996-2006 by Biblical Studies 
+							Press, L.L.C.<span class="Apple-converted-space">&nbsp;</span><a href="http://www.bible.org/default.asp" style="text-decoration: underline; color: blue;">http://www.bible.org/</a>. 
+							All rights reserved.</p>
+							<p class="auto-style2">Wil is a graduate of William 
+							Carey University, B. A.; New Orleans Baptist 
+							Theological Seminary, Th. M.; and Azusa Pacific 
+							University, M. A. He has pastored in Panama, Ecuador 
+							and the U. S, and served for over 20 years as 
+							missionary in Ecuador and Honduras. He had a daily 
+							expository Bible teaching ministry head in over 100 
+							countries from 1972-2005. He continues to seek 
+							opportunities to be personally involved in world 
+							missions. Wil and his wife Ann have three grown 
+							daughters. He currently serves as a Baptist pastor 
+							and teaches seminary extension courses in Ecuador.</p>
+							</span>
+							<p class="auto-style22">&nbsp;</p>
+							</span>
+							<p class="auto-style2"> 
+							<!-- SiteSearch Google --><!-- SiteSearch Google -->Bible 
+							word studies for sermon preparation, messages, 
+							devotions and personal Bible studies with abiding 
+							principles and practical applications.&nbsp; <h3 class="auto-style7">
+							<a href="http://www.abideinchrist.com/keys/index.html">
+							Key Word Studies on Bible Doctrines&nbsp;&nbsp; </a>&nbsp;&nbsp;</h3>
+							<h3 class="auto-style7">
+							&nbsp;&nbsp;
+							<a href="http://www.abideinchrist.com/messages/statementoffaith.htm">
+							Statement&nbsp; of Faith
+							</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+							
+							<a href="http://www.abideinchrist.org/"><span lang="es">
+							
+							Se Habla Español </span></a>
+							</h3>
+						</section>
+						<!-- testimonial -->
+
+						<section class="blog">
+							<!-- content -->
+							<div class="content">
+								&nbsp;<bk><bk></bk><div class="cnt">
+									<h3><span lang="es-ec">
+									<span class="auto-style2">
+									<a href="http://www.abideinchrist.com/missions/index.html">
+									"I Saw God Do it!"</a></span><a href="http://www.abideinchrist.com/missions/index.html"> 
+									Mission Reports with Wil &amp; Ann Pounds</a></span></h3>
+									<p><span lang="es-ec" class="auto-style9">
+									Reports on what God is doing through Bible 
+									believing evangelical Christians in 
+									Honduras, Nicaragua, Peru</span><span class="auto-style9">, 
+									India</span><span lang="es-ec" class="auto-style9"> 
+									and Ecuador. Jesus said, "If you abide in 
+									Me, and My words abide in you, ask whatever 
+									you wish, and it shall be done for you" 
+									(John 15:7). </span></p>
+									<ul>
+										<span class="auto-style2">
+										<li class="auto-style10">
+										<a href="http://www.abideinchrist.com/messages/celebrating50yearsministry.html">
+										I Saw God Do It! Celebrating 57 Years of 
+										Gospel Ministry </a>&nbsp;&nbsp;
+										
+										<a href="../messages/celebrating50yearsministry.pdf">
+										PDF&nbsp;</a> &nbsp;<a href="../messages/Celebrating%2050%20Years%20of%20Ministry.mp3">MP3&nbsp;</a></li>
+										<li>
+    <!-- SiteSearch Google -->
+<FORM method=GET action='http://www.google.com/custom'>
+<TABLE bgcolor='#FFFFFF'>
+<tr><td nowrap='nowrap' valign='top' align='center' height='32'>
+<A HREF='http://www.google.com/'>
+<IMG SRC='http://www.google.com/logos/Logo_25wht.gif'
+border='0' ALT='Google' width="75" height="32"></A>
+</td>
+<td>
+<input type=hidden name=domains value='www.AbideInChrist.com'><INPUT TYPE=text name=q size=31 maxlength=255 value=''>
+<INPUT type=submit name=sa VALUE='SearchMe!'>
+</td></tr>
+<tr><td>&nbsp;</td>
+<td>
+<font size=-1>
+<input type=radio name=sitesearch value=''> <font face="Arial">Web
+<input type=radio name=sitesearch value='www.AbideInChrist.com' checked><font color="#FF0000"><b> 
+www.AbideInChrist.com
+</b></font>
+<br/>
+</font>
+</font>
+
+
+<font face="Arial">
+
+</font>
+
+</td></tr></TABLE>
+</FORM>
+<!-- SiteSearch Google --></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end of content -->
+
+							<!-- sidebar -->
+							<!-- end of sidebar -->
+							<div class="cl">&nbsp;</div>
+						</section>	
+						
+						<!-- cols -->
+						<section class="cols">
+							<div class="col">
+								<h3><span lang="es-ec"><a href="http://www.abideinchrist.com/selah/index.html">
+								SELAH 365 Daily Devotions</span></h3>
+								
+								<img src="../css/images/selah6.gif" alt="" class="alignleft" height="72" width="196"/></a>
+								<div class="col-cnt">
+									<p class="auto-style9"><span lang="es-ec">
+									Index of 365 devotions and sermon starters</span>.</p>
+								</div>
+								&nbsp;</div>
+							<div class="col">
+								<h3><span lang="es-ec">
+								<a href="http://www.abideinchrist.com/messages/devotion.html">
+								Christ in the Old Testament</a></span></h3>
+								<a href="http://www.abideinchrist.com/messages/devotion.html">
+								<img src="../css/images/lionlamb.jpg" alt="" class="alignleft" height="95" width="128"/></a>
+								</span></span><span class="auto-style9">
+								<div class="col-cnt">
+									<p>Study the master theme of the Bible with 
+									these prophecies and types in</span><span lang="es-ec" class="auto-style9">
+									</span><span class="auto-style9">
+										the Old Testament of the coming of the 
+									Messiah, Jesus Christ.</p>
+								</div>
+								
+							</div>
+							</span><span class="auto-style2">
+							<div class="col">
+								<h3>
+								<a href="http://www.abideinchrist.com/messages/index.html">
+								Expository Sermons</a></h3>
+								<a href="http://www.abideinchrist.com/messages/index.html">
+								<img src="../css/images/bible.gif" alt="" class="alignleft" height="90" width="132"/></a>
+								</span><span class="auto-style9">
+								<div class="col-cnt">
+									<p>Free Sermons and Bible studies indexed by 
+									Scripture reference</span><span lang="es-ec" class="auto-style9"> 
+									and </span><span class="auto-style9">
+										&nbsp; doctrinal studies .</p>
+								</div>
+								</span><span class="auto-style2">
+								&nbsp;</div>
+							<div class="cl">&nbsp;</div>
+						</section>
+						<!-- end of cols -->
+					</div>
+				<!-- end of shell -->
+				</div>
+				<!-- end of container -->
+			</div>
+			<!-- end of main -->
+		</div>	
+		<!-- footer-push -->
+		<div id="footer-push"></div>
+		<!-- end of footer-push -->
+	
+	<!-- end of wrapper -->
+	<!-- footer -->
+	<div  id="footer">
+		<span class="shadow-bottom"></span>
+		<!-- footer-cols -->
+		<div class="footer-cols">
+			<!-- shell -->
+			
+			<!-- end of shell -->
+		</div>
+		<!-- end of footer-cols -->
+		<div class="footer-bottom">
+		</div>
+	</div>
+	<!-- end of footer -->
+	<SCRIPT src="http://www.google-analytics.com/urchin.js" type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+_uacct = "UA-208700-1";
+urchinTracker();
+</SCRIPT>
+<!-- RefTagger from Logos. Visit http://www.logos.com/reftagger. This code should appear directly before the </body> tag. -->
+<SCRIPT src="http://bible.logos.com/jsapi/referencetagging.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+    Logos.ReferenceTagging.lbsBibleVersion = "ESV";
+    Logos.ReferenceTagging.lbsLinksOpenNewWindow = true;
+    Logos.ReferenceTagging.lbsLibronixLinkIcon = "dark";
+    Logos.ReferenceTagging.lbsNoSearchTagNames = [ "h1", "h2", "h3" ];
+    Logos.ReferenceTagging.tag();
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,22 @@
+title: Python from natural language
+tags: code hci
+prompt: |
+  Generate a python one-liner from a description.
+  <delim>
+  # Print hello world
+  print("Hello world!")
+  <delim>
+  # Swap two variables
+  a,b = b,a
+  <delim>
+  # <1>
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 50
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- description
+examples:
+- match the date in syslog

@@ -1,0 +1,15 @@
+"undef" is a special value that is used to indicate the absence of a value.
+
+The following example shows how to use the "undef" value in a function:
+
+sub edbi_prepare {
+
+return undef unless $dbh;
+
+my ($sql) = @_;
+
+our $sth = $dbh->prepare($sql) or return undef;
+
+$sth->finish() if $sth;
+
+}

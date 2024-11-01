@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Revelation" "2:10" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Revelation" "3:19" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Revelation" "of" "John" "22:11" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Revelation" "2:10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Revelation" "2:10" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Revelation" "3:8" "#" "<==" "bash"

@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 5:5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 5:6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 5:10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 5:11" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 5:12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 5:13" "#" "<==" "zsh"

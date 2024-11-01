@@ -1,0 +1,9 @@
+
+stack exec DoLetExample3
+stack exec GoToExample
+stack exec TryHaskell
+stack exec ReadEvalPrintLoop
+
+~~~~~~~~
+
+You can run either the Pure Haskell or the No-re-strict Haskell examples,

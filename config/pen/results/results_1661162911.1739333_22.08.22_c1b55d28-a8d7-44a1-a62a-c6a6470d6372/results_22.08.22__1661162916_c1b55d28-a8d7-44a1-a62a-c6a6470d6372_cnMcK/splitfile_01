@@ -1,0 +1,11 @@
+
+
+stdout.putStrLn "Hello, world"
+
+...
+
+Example2: This is less good, because the compiler doesn't complain if there is a missing semicolon.
+
+module Main where
+
+example

@@ -1,0 +1,3 @@
+\n','\n')
+sys.stdout.write(data)
+

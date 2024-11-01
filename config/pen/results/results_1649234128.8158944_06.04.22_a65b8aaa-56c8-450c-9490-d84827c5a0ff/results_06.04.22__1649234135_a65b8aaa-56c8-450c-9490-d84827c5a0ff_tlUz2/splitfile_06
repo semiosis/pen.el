@@ -1,0 +1,1 @@
+""personality prompt" refers to a phrase in which a user is prompted to type a word that is consistent with the personality of the user. For example, if the user's personality is "sarcastic", then when the user types a word, the word is compared to a list of sarcastic words. If the word is found in the list, the word is accepted as being typed by the user. If the word is

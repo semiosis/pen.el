@@ -1,0 +1,767 @@
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+x-powered-by: PHP/7.1.33
+content-type: text/html; charset=UTF-8
+content-length: 11405
+vary: Accept-Encoding
+date: Sun, 18 Feb 2024 21:53:52 GMT
+server: LiteSpeed
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="copyright" content="Injosoft AB" />
+    <meta name="abstract" content="ASCII Art" />
+    <meta name="revisit-after" content="20 Days" />
+
+    <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+    <script type="text/javascript" async=true>
+        (function() {
+            var host = 'www.asciiart.eu';
+            var element = document.createElement('script');
+            var firstScript = document.getElementsByTagName('script')[0];
+            var url = 'https://cmp.quantcast.com'
+                .concat('/choice/', 'teAXvqeG-gqVs', '/', host, '/choice.js?tag_version=V2');
+            var uspTries = 0;
+            var uspTriesLimit = 3;
+            element.async = true;
+            element.type = 'text/javascript';
+            element.src = url;
+
+            firstScript.parentNode.insertBefore(element, firstScript);
+
+            function makeStub() {
+                var TCF_LOCATOR_NAME = '__tcfapiLocator';
+                var queue = [];
+                var win = window;
+                var cmpFrame;
+
+                function addFrame() {
+                    var doc = win.document;
+                    var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+                    if (!otherCMP) {
+                        if (doc.body) {
+                            var iframe = doc.createElement('iframe');
+                            iframe.style.cssText = 'display:none';
+                            iframe.name = TCF_LOCATOR_NAME;
+                            doc.body.appendChild(iframe);
+                        } else {
+                            setTimeout(addFrame, 5);
+                        }
+                    }
+                    return !otherCMP;
+                }
+
+                function tcfAPIHandler() {
+                    var gdprApplies;
+                    var args = arguments;
+
+                    if (!args.length) {
+                        return queue;
+                    } else if (args[0] === 'setGdprApplies') {
+                        if (
+                            args.length > 3 &&
+                            args[2] === 2 &&
+                            typeof args[3] === 'boolean'
+                        ) {
+                            gdprApplies = args[3];
+                            if (typeof args[2] === 'function') {
+                                args[2]('set', true);
+                            }
+                        }
+                    } else if (args[0] === 'ping') {
+                        var retr = {
+                            gdprApplies: gdprApplies,
+                            cmpLoaded: false,
+                            cmpStatus: 'stub'
+                        };
+
+                        if (typeof args[2] === 'function') {
+                            args[2](retr);
+                        }
+                    } else {
+                        if(args[0] === 'init' && typeof args[3] === 'object') {
+                            args[3] = Object.assign(args[3], { tag_version: 'V2' });
+                        }
+                        queue.push(args);
+                    }
+                }
+
+                function postMessageEventHandler(event) {
+                    var msgIsString = typeof event.data === 'string';
+                    var json = {};
+
+                    try {
+                        if (msgIsString) {
+                            json = JSON.parse(event.data);
+                        } else {
+                            json = event.data;
+                        }
+                    } catch (ignore) {}
+
+                    var payload = json.__tcfapiCall;
+
+                    if (payload) {
+                        window.__tcfapi(
+                            payload.command,
+                            payload.version,
+                            function(retValue, success) {
+                                var returnMsg = {
+                                    __tcfapiReturn: {
+                                        returnValue: retValue,
+                                        success: success,
+                                        callId: payload.callId
+                                    }
+                                };
+                                if (msgIsString) {
+                                    returnMsg = JSON.stringify(returnMsg);
+                                }
+                                if (event && event.source && event.source.postMessage) {
+                                    event.source.postMessage(returnMsg, '*');
+                                }
+                            },
+                            payload.parameter
+                        );
+                    }
+                }
+
+                while (win) {
+                    try {
+                        if (win.frames[TCF_LOCATOR_NAME]) {
+                            cmpFrame = win;
+                            break;
+                        }
+                    } catch (ignore) {}
+
+                    if (win === window.top) {
+                        break;
+                    }
+                    win = win.parent;
+                }
+                if (!cmpFrame) {
+                    addFrame();
+                    win.__tcfapi = tcfAPIHandler;
+                    win.addEventListener('message', postMessageEventHandler, false);
+                }
+            };
+
+            makeStub();
+
+            var uspStubFunction = function() {
+                var arg = arguments;
+                if (typeof window.__uspapi !== uspStubFunction) {
+                    setTimeout(function() {
+                        if (typeof window.__uspapi !== 'undefined') {
+                            window.__uspapi.apply(window.__uspapi, arg);
+                        }
+                    }, 500);
+                }
+            };
+
+            var checkIfUspIsReady = function() {
+                uspTries++;
+                if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                    console.warn('USP is not accessible');
+                } else {
+                    clearInterval(uspInterval);
+                }
+            };
+
+            if (typeof window.__uspapi === 'undefined') {
+                window.__uspapi = uspStubFunction;
+                var uspInterval = setInterval(checkIfUspIsReady, 6000);
+            }
+        })();
+    </script>
+    <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+    <script async src="https://cdn.fuseplatform.net/publift/tags/2/3083/fuse.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="preload" as="font" href="/css/fonts/icomoon.woff2?1o2951" type="font/woff2" crossorigin="anonymous">
+    <style>
+        @font-face {font-family: 'icomoon';font-display: swap;font-weight: normal;font-style: normal;src: url('/css/fonts/icomoon.woff2?1o2951') format('woff2'),url('/css/fonts/icomoon.woff?1o2951') format('woff'),url('/css/fonts/icomoon.ttf?1o2951') format('truetype'),url('/css/fonts/icomoon.svg?1o2951#icomoon') format('svg');}
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68824650-9"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        //gtag('config', 'UA-68824650-9', { 'anonymize_ip': true });
+    </script>
+
+    <link rel="stylesheet" href="/css/custom.css?v=1.7">
+    <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d47a1">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="A large collection of ASCII art drawings of christianity and other related religion ASCII art pictures.">
+    
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ASCII Art Christianity - asciiart.eu" />
+    <meta property="og:description" content="A large collection of ASCII art drawings of christianity and other related religion ASCII art pictures." />
+    <meta property="og:url" content="https://www.asciiart.eu" />
+    <meta property="og:site_name" content="ASCII Art Christianity - asciiart.eu" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="www.asciiart.eu">
+    <meta name="twitter:description" content="A large collection of ASCII art drawings of christianity and other related religion ASCII art pictures." />
+    <meta name="twitter:title" content="ASCII Art Christianity - asciiart.eu" />
+    <meta name="twitter:site" content="@ASCIIArtArchive">
+    <meta name="twitter:creator" content="@ASCIIArtArchive">
+
+    <style>
+        .content {color:#000000;background-color:#ffffff;}.border-content {border-color: #8DA6CD !important;}.content a {color: #007bff;}.content a:hover {color: #0056b3;}.breadcrumb a {color: #007bff;}.content pre {color:#000000;}footer .social a {color:#b7b7b7;}.bg-header {background-color:#e8f1ff;}.border-header {border-color: #8DA6CD !important;}    </style>
+
+    <title>ASCII Art Christianity - asciiart.eu</title>
+        </head>
+<body>
+<nav class="navbar fixed-top navbar-expand navbar-dark bg-darkblue px-2 px-sm-3">
+    <a class="sidebar-toggle text-light mr-3"><i class="icon-bars"></i></a>
+
+    <a class="navbar-brand py-0 text-truncate" href="/">ASCII Art Archive</a>
+
+    <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown" style="min-width: 50px;">
+                <a class="nav-link dropdown-toggle pr-1" href="/" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-paint-brush"></i> <span class="d-none d-sm-inline">Color Themes</span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <button class="dropdown-item" onclick="changeColors('default');">Default</button>
+                    <button class="dropdown-item" onclick="changeColors('green-black');">Green/Black</button>
+                    <button class="dropdown-item" onclick="changeColors('yellow-black');">Yellow/Black</button>
+                    <button class="dropdown-item" onclick="changeColors('white-black');">White/Black</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="d-flex">
+    <nav class="sidebar border-content border-right bg-darkblue">
+        <ul class="list-unstyled">
+            <li class="pt-3 pl-2"><span class="text-white" style="font-family: 'Rationale', sans-serif; font-size: 120%;"><b>ASCII Art Menu</b></span></li>
+            <li><a href="/faq" id="faq">ASCII Art FAQ</a></li>
+            <li><a href="/glossary" id="glossary">ASCII Art Glossary</a></li>
+            <li><a href="/ascii-artists" id="artists">ASCII Artists</a></li>
+            <li><a href="/ascii-one-line" id="one-line">ASCII One Line</a></li>
+            <li><a href="https://www.ascii-code.com" title="ASCII Code - The extended ASCII table">ASCII Table <i class="fas fa-external-link-alt fa-xs"></i></a></li>
+            <li class="pt-3 pl-0"><span style="font-family: 'Rationale', sans-serif; font-size: 120%;"><b><a href="/ascii-art-tools" class="text-white pl-2">ASCII Art Tools</a></b></span></li>
+            <li><a href="/ascii-draw-studio" id="ascii-draw-studio">ASCII Draw Studio</a></li>
+            <li><a href="/image-to-ascii" id="image-to-ascii">Image to ASCII Art</a></li>
+            <li><a href="/text-to-ascii-art" id="text-to-ascii">Text to ASCII Art</a></li>
+            <li><a href="/webcam-to-ascii-art" id="webcam-to-ascii">Webcam to ASCII Art</a></li>
+            <li class="pt-3 pl-2"><span class="text-white" style="font-family: 'Rationale', sans-serif; font-size: 120%;"><b>Categories</b></span></li>
+            <li><a href="/animals" id="animals">Animals</a></li><li><a href="/art-and-design" id="art-and-design">Art and design</a></li><li><a href="/books" id="books">Books</a></li><li><a href="/buildings-and-places" id="buildings-and-places">Buildings & places</a></li><li><a href="/cartoons" id="cartoons">Cartoons</a></li><li><a href="/clothing-and-accessories" id="clothing-and-accessories">Clothing & accessories</a></li><li><a href="/comics" id="comics">Comics</a></li><li><a href="/computers" id="computers">Computers</a></li><li><a href="/electronics" id="electronics">Electronics</a></li><li><a href="/food-and-drinks" id="food-and-drinks">Food and drinks</a></li><li><a href="/holiday-and-events" id="holiday-and-events">Holiday & events</a></li><li><a href="/logos" id="logos">Logos</a></li><li><a href="/miscellaneous" id="miscellaneous">Miscellaneous</a></li><li><a href="/movies" id="movies">Movies</a></li><li><a href="/music" id="music">Music</a></li><li><a href="/mythology" id="mythology">Mythology</a></li><li><a href="/nature" id="nature">Nature</a></li><li><a href="/people" id="people">People</a></li><li><a href="/plants" id="plants">Plants</a></li><li><a href="/religion" id="religion">Religion</a></li><li><a href="/space" id="space">Space</a></li><li><a href="/sports-and-outdoors" id="sports-and-outdoors">Sports & outdoors</a></li><li><a href="/television" id="television">Television</a></li><li><a href="/toys" id="toys">Toys</a></li><li><a href="/vehicles" id="vehicles">Vehicles</a></li><li><a href="/video-games" id="video-games">Video games</a></li><li><a href="/weapons" id="weapons">Weapons</a></li>
+        </ul>
+                    <!-- 71161633/art_vrec_1/art_vrec_1 -->
+            <div data-fuse="22882377973"></div>
+        
+        <div class="mb-5"></div>
+    </nav>
+
+    <div class="content">
+        <div class="content header-line border-content border-top"></div>
+        <div class="workarea p-2 px-sm-4 pb-sm-4">
+            <div class="ascii-art-label" align="center">
+                <div class="text-truncate"><span>A large collection of ASCII art drawings of christianity and other related religion ASCII art pictures.</span></div>
+                <div class="bg-header border border-header rounded m-0 pb-2">
+                    <pre class="p-0 m-0 text-dark">       _          _     _   _             _ _         
+   ___| |__  _ __(_)___| |_(_) __ _ _ __ (_) |_ _   _ 
+  / __| '_ \| '__| / __| __| |/ _` | '_ \| | __| | | |
+ | (__| | | | |  | \__ \ |_| | (_| | | | | | |_| |_| |
+  \___|_| |_|_|  |_|___/\__|_|\__,_|_| |_|_|\__|\__, |
+                                                |___/ </pre>
+                    <pre class="mt-1 mb-0 text-dark d-none d-sm-block">Jesus Christ - christendom</pre>                </div>
+            </div>
+<nav aria-label="breadcrumb">    <ol class="breadcrumb py-1 mt-2 bg-header border border-header">        <li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/religion">Religion</a></li><li class="breadcrumb-item active" aria-current="page">Christianity</li>    </ol></nav>    <div class="text-left">                    <!-- 71161633/art_header/art_header -->            <div data-fuse="22882339590"></div>            </div>    <div class="asciiarts mt-3">        <div class="border-header border-top p-3"><pre class="">     .========.        .========.
+    // I .'..' \      // VI.'.,".\
+    || II .'..'|      || VII..'..|
+    || III .'."|      || VIII,'.'|
+    || IV ,','.|      || IX.'".'.|
+    || V '..'.'|      || X .'..',|
+jgs .\_________/      .\_________/</pre></div><div class="border-header border-top p-3"><pre class="">     .-.
+   __| |__
+  [__   __]
+     | |
+     | |
+jgs  | |
+     '-'</pre></div><div class="border-header border-top p-3"><pre class="">      |V|
+   .::| |::.
+  ::__| |__::
+ >____   ____<
+  ::  | |  ::
+   '::| |::'
+      | |
+      | |
+jgs   |A|</pre></div><div class="border-header border-top p-3"><strong>Praying hands</strong><pre class="">       _.-._
+     /| | | |_
+     || | | | |
+     || | | | |
+    _||     ` |
+   \\`\       ;
+    \\        |
+     \\      /
+jgs  | |    |
+     | |    |</pre></div><div class="border-header border-top p-3"><strong>Praying hands</strong><pre class="">          _.-/`)
+         // / / )
+      .=// / / / )
+     //`/ / / / /
+    // /     ` /
+   ||         /
+    \\       /
+     ))    .'
+jgs //    /
+         /</pre></div><div class="border-header border-top p-3"><pre class="">         ,   ,
+        /////|
+       ///// |
+      /////  |
+     |~~~| | |
+     |===| |/|
+     | B |/| |
+     | I | | |
+     | B | | |
+     | L |  / 
+     | E | /
+     |===|/
+jgs  '---'</pre></div><div class="border-header border-top p-3"><pre class="">         .:.:.:.
+        / .***. \
+       | / ,,, \ |
+       | \/6.6\/ |
+       | (  _  ) |
+      /  /`"""`\  \
+    .:.:( (/|\) ):.:.
+     ':'/':_A_:'\':'
+       /         \
+      /           \
+jgs  /             \
+    .:.:.:.:.:.:.:.:.
+   ':':':':':':':':':'</pre></div><div class="border-header border-top p-3"><!-- 71161633/cats_incontent_1/cats_incontent_1 --><div data-fuse="22882339596"></div></div><div class="border-header border-top p-3"><strong>Crucified Jesus</strong><pre class=""> _      xxxx      _
+/_;-.__ / _\  _.-;_\
+   `-._`'`_/'`.-'
+       `\   /`
+        |  /
+       /-.(
+       \_._\
+        \ \`;
+         > |/
+        / //
+        |//
+ jgs    \(\
+         ``</pre></div><div class="border-header border-top p-3"><strong>Crosses at Calvary</strong><pre class="">               |
+           \       /
+             .---. 
+        '-.  |   |  .-'
+          ___|   |___
+     -=  [           ]  =-
+         `---.   .---' 
+      __||__ |   | __||__
+      '-..-' |   | '-..-'
+        ||   |   |   ||
+        ||_.-|   |-,_||
+      .-"`   `"`'`   `"-.
+jgs .'                   '.</pre></div><div class="border-header border-top p-3">Art by Nobody<pre class="pre-LG">                                         ________________________
+   /\    /\                             /                        \
+   \ \  / /                            /                          \
+    \ \/ /~~.                         /                            \
+     \  //_/                         /                              \
+     /  \/                          /                                \
+    / /\ \                         /
+   / /| \/                       _/
+  / / --/                       /
+ / / /  |                   ___/
+/ / /   |                 _/
+\/  \   \_      _________/
+---------------/</pre></div><div class="border-header border-top p-3"><strong>praying</strong><pre class="">            .---.
+           /-====)
+           | / '(
+          / /  _/
+          | |-(    _
+          / |  \  //|
+         /  \   \/\/
+        |    |\   /
+        `-;./ ;-'
+          |    \
+          |     \
+        _/       |
+jgs .--/         /
+    `''---`-----`</pre></div><div class="border-header border-top p-3"><pre class="pre-SM">        ,,,,,                    
+       ////""\               .  
+      (((/ m m              -|-                        __
+      )))c  = )              |                        (__)
+     ////-./~`    .                                    []
+    (((( `.`\    ::                                    []
+     )))`\ \)).-;.'                           .------, []
+      (() `._.-'`                           _(        )[]
+      )/ `. |  .'`^^^^^^^^^^^^^^^^^^^^^^^^^^))\`.----'`[]
+jgs   (    \' { ~ - ~~ _  ~  -  ~~  - ~  - ((  | |     []
+  .-.--\    \ {                             )) | |     []
+  |_;_._`\   |{                            ((__|_|-----[]
+ |  ;   ```  ;{                             ))         []
+ | /``-.____/ `~~~[]~~~~~~~~~~~~~~~~~~~~~~~'-'         []
+ `'              (__)                                 (__)</pre></div><div class="border-header border-top p-3"><pre class="pre-LG">                              |~~~~~|        _____       _____
+         _____                  \~~~/ /~~~~\ /   __|     /   __|
+        |  =  |\                 | | |  o  / \  /  _  _  \  /
+        |  =  | \           |~|  | | | /~~~   \ \  || ||  \ \
+        |  =  |  |          \ \_/  / | |___    \ \ ||_||   \ \
+ _______|  =  |__|____       \____/  |_____||\__| ||___||\__| |
+|          =          |\                    \____/      \____/
+| =================== | \
+|_______   =   _______|  |
+ \      |  =  |\       \ |
+  \_____|  =  | \_______\|
+        |  =  |  |
+        |  =  |  |
+        |  =  |  |
+        |  =  |  |
+        |  =  |  |
+        |  =  |  |
+        |_____|  | dan greuel
+        \      \ |      1999
+         \______\|</pre></div><div class="border-header border-top p-3"><!-- 71161633/cats_incontent_2/cats_incontent_2 --><div data-fuse="22882339842"></div></div><div class="border-header border-top p-3"><strong>Virgin Mary</strong> by Joan Stark<pre class="">       * * *
+     *       *
+    *  ,;;;,  *
+     */;;-;;\*
+     /;/   \;\
+    /);|)-(|;;\
+   ;;;/ `"` \;(;
+   |(|\_/|\_/|;|
+   |;|_|/^\|_|;|
+   |;;\=:=:=/;)|
+   |:;| : : |;:|
+   |);\ : : /;;|
+   ;;;| _:_ |;(;
+   \;;\  |  /;;/
+    |(;\   /;;|
+     \;;| |;;/
+      |;| |;|
+     .'`-.-''.
+jgs /   .-.  (\
+   |   Q   \__)|
+   '-.__   __.-'
+        ```</pre></div><div class="border-header border-top p-3"><pre class="pre-SM">   __________________________
+  /\                         \
+ /  \            ____         \
+/ \/ \          /\   \         \
+\ /\  \         \ \   \         \
+ \  \  \     ____\_\   \______   \
+  \   /\\   /\                \   \
+   \ /\/ \  \ \_______    _____\   \
+    \\/ / \  \/______/\   \____/    \
+     \ / /\\         \ \   \         \
+      \ /\/ \         \ \   \         \
+       \\/ / \         \ \   \         \
+  May   \ /   \         \ \   \         \
+         \\  /\\         \ \   \         \
+God Bless \ /\  \         \ \___\         \
+           \\    \         \/___/          \
+  you in    \  \/ \                         \
+             \ /\  \_________________________\
+ all  your    \  \ / ______________________  /
+               \  / ______________________  /
+Endeavors!!!    \/_________________________/
+                                             LAW</pre></div><div class="border-header border-top p-3"><pre class="">             .======.
+             | INRI |
+             |      |
+             |      |
+    .========'      '========.
+    |   _      xxxx      _   |
+    |  /_;-.__ / _\  _.-;_\  |
+    |     `-._`'`_/'`.-'     |
+    '========.`\   /`========'
+             | |  / |
+             |/-.(  |
+             |\_._\ |
+             | \ \`;|
+             |  > |/|
+             | / // |
+             | |//  |
+             | \(\  |
+             |  ``  |
+             |      |
+             |      |
+             |      |
+             |      |
+ \\jgs _  _\\| \//  |//_   _ \// _
+^ `^`^ ^`` `^ ^` ``^^`  `^^` `^ `^</pre></div><div class="border-header border-top p-3"><strong>The Four Horsemen of the Apocalypse</strong> by Joris Bellenger<pre class="pre-LG">                           __o__
+                          /\ | /\  ,__,             \
+                         /__\|/__\o/o /             /,
+         __(\          ,   , |    `7 /              \_/)
+     _.-'   \\        _)\_/) |    __||___,     <----)_)---<<        //
+  ,-'  _.---'\\      (/ (6\> |___// /_ /_\ ,_,_,   / )\            //
+,'_.--'       \\    /`  _ /\>/._\/\/__/\ | =/= /  / /  \_         //
+               \\  / ,_//\  \>' , / ,/ / ) `0 /  / /,__, \       //
+                \\ \_('o  | )> _)\_/) |\/  __\\_/ /o/o /-       //
+            ,   ,\\  `7 / /   (/ (0\>  , _/,/ /_'/ \j /      o<\>>o
+           _)\_/) \\,__\\_\' /`  _ /\>_)\_/)|_|_/ __//___,____/_\
+          (/ (9\>  \\_) | / / ,_//\  (/ (6\> )_/_// /_ /__\_/_/
+         /`  _ /\> /\\\/_/ '\_('  | /`  _ /\>/._\/\/__/
+        / ,_//\  \>' \_)/  \_|  _/// ,_//\  \>    _)_/
+        \_('  |  )>  x / _/ / _/  \\_('\||  )>   x)_::\       ______,
+              /  \>_//( (  / /--.,/     +/  \>__//  o /----.,/(  )\\))
+              \'  \| ) \| / /    / '     \'  \|  )___/ \     \/  \\\\\
+              /    +-/</\/ /    /  \_|   /    +-/o/----+      |
+             / '     \ _/,/  _ / _/ / _// '     \_\,  ___     /
+            /  \_|  _// ( __,/( (  / / /  \_|  _/\_|-" /,    /
+           / _/ / _/  ^-' |  | \| / / / _/ / _/   )\|  |   _/
+          ( (  / /    /_/  \_ \_\/ / ( (  / /    /_/ \_ \_(__
+           \| / /           / /_/,/   \| / /           / /  /
+            \/ /           / // (      \/ /           / / _/
+           _/,/          _/_/,^-'     _/,/          _/_/,/
+          / (           /_/ (        / (    b'ger  /_/ (
+          ^-'             ^-'        ^-'             ^-'</pre></div><div class="border-header border-top p-3"><strong>The Virgin Mary</strong> by Joan Stark<pre class="">        .***.
+       <.:::.>
+       /:::::\
+       |/_ _\|
+       || / ||
+       ||\'/||
+      /:|~=~|:\
+     /::|  :|::\
+    /:::|:  |:::\
+   ,::::| : |::::,
+   ;::::|: :|::::;
+  ,:::::|~~~|:::::,
+  ;:::::\ : /:::::;
+ /:=:::::|:|:::::=:\
+//- |\:::/ \:::/| -\\
+|^|||: `-' ::`-'|||^|
+|; ' : : :   : : ' ;|
+||: ::  : :: : :: :||
+|| : :: :: :: : : :||
+||::   :  :  :: : :||
+| \ ::  :: : : :: / |
+ \/: :  :    :  : \/
+  \ :  :: ::  :  _/
+   \  :  :  :: :\/
+    `\ :: :  : /`
+  jgs \ : :: :/
+     .-"(___)"-.
+    /"=,   ,=, '\
+   |    "="  {}  |</pre></div><div class="border-header border-top p-3"><strong>Grail</strong><pre class="">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ : : : : : : : : : : : : : : : @
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ |                             |
+ |  \|/        %%%        \|/  |
+ |  -t-     %%%%%%%%%     -t-  |
+ |  /|\     \  %%%  /     /|\  |
+ |         \ / %%% \ /         |
+ \        - |  %%%  | -        /
+  \       - |  %%%  | -       /
+   \       / \     / \       /
+    \        / --- \        /
+     \         ! !         /
+      \ __ ___ __ ___ ___ /
+      ( ___ ___ __ _ ___  )
+       (88888888888888888)
+        --\ --------- /--
+          ((((((o))))))
+           \         /
+            | | | | |
+            | | | | |
+            | | | | |
+            | | | | |
+            | | | | |
+            | | | | |
+            | | | | |
+            | | | | |
+          _(IIIIIIIII)_
+       __/_____________\__
+  ____/___________________\____
+ /_____________________________\
+(_______________________________)</pre></div><div class="border-header border-top p-3"><!-- 71161633/cats_incontent_2/cats_incontent_2 --><div data-fuse="22882339842"></div></div><div class="border-header border-top p-3"><pre class="pre-LG">                           |~~~~~~~|
+                           |       |
+                         |~~~~~~~~~~~| 
+                         |  I N R I  |
+                         |___________|
+                           |       |                             
+|~.\\\_\~~~~~~~~~~~~~~xx~~~         ~~~~~~~~~~~~~~~~~~~~~/_//;~|
+|  \  o \_         ,XXXXX),                         _..-~ o /  |
+|    ~~\  ~-.     XXXXX`)))),                 _.--~~   .-~~~   |
+ ~~~~~~~`\   ~\~~~XXX' _/ ';))     |~~~~~~..-~     _.-~ ~~~~~~~ 
+          `\   ~~--`_\~\, ;;;\)__.---.~~~      _.-~
+            ~-.       `:;;/;; \          _..-~~
+               ~-._      `''        /-~-~ 
+                   `\              /  /
+                     |         ,   | |
+                      |  '        /  |
+                       \/;          |
+                        ;;          |
+                        `;   .       |
+                        |~~~-----.....|
+                       | \             \
+                      | /\~~--...__    |
+                      (|  `\       __-\|  -Tua Xiong
+                      ||    \_   /~    |
+                      |)     \~-'      |
+                       |      | \      '
+                       |      |  \    :
+                        \     |  |    |
+                         |    )  (    ) 
+                          \  /;  /\  |
+                          |    |/   |
+                          |    |   |
+                           \  .'  ||
+                           |  |  | |
+                           (  | |  |
+                           |   \ \ |
+                           || o `.)|
+                           |`\\\\) |
+                           |       |
+                           |       |
+                           |       |</pre></div><div class="border-header border-top p-3"><pre class="pre-SM">                    .-=====-.
+                    | .""". |
+                    | |   | |
+                    | |   | |
+                    | '---' |
+                    |       |
+                    |       |
+ .-================-'       '-================-.
+j|  _                                          |
+g|.'o\                                    __   |
+s| '-.'.                                .'o.`  |
+ '-==='.'.=========-.       .-========.'.-'===-'
+        '.`'._    .===,     |     _.-' /
+          '._ '-./  ,//\   _| _.-'  _.'
+             '-.| ,//   \-'  `   .-'
+                `// _`--;    ;.-'
+                  `\._ ;|    |
+                     \`-'  . |
+                     |_.-'-._|
+                     \  _'_  /
+                     |; -:- | 
+                     || -.- \ 
+                     |;     .\
+                     / `'\'`\-;
+                    ;    '. `_/
+                    |,`-._;  .`|
+                    `;\  `.-'-;
+                     | \   \  |
+                     |  `\  \ |
+                     |   )  | |
+                     |  /  /` /
+                     | |  /|  |
+                     | | / | /
+                     | / |/ /|
+                     | \ / / |
+                     |  /o | |
+                     |  |_/  |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     '-=====-'</pre></div><div class="border-header border-top p-3">Art by Joan Stark<pre class="pre-SM">                    .-=====-.
+                    | .""". |
+                    | |   | |
+                    | |   | |
+                    | '---' |
+                    |       |
+                    |       |
+ .-================-'       '-================-.
+j|  _                                          |
+g|.'o\                                    __   |
+s| '-.'.                                .'o.`  |
+ '-==='.'.=========-.       .-========.'.-'===-'
+        '.`'._    .===,     |     _.-' /
+          '._ '-./  ,//\   _| _.-'  _.'
+             '-.| ,//'  \-'  `   .-'
+                `//'_`--;    ;.-'
+                  `\._ ;|    |
+                     \`-'  . |
+                     |_.-'-._|
+                     \  _'_  /
+                     |; -:- | 
+                     || -.- \ 
+                     |;     .\
+                     / `'\'`\-;
+                    ;`   '. `_/
+                    |,`-._;  .;
+                    `;\  `.-'-;
+                     | \   \  |
+                     |  `\  \ |
+                     |   )  | |
+                     |  /  /` /
+                     | |  /|  |
+                     | | / | /
+                     | / |/ /|
+                     | \ / / |
+                     |  /o | |
+                     |  |_/  |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     '-=====-'</pre></div><div class="border-header border-top p-3"><pre class="pre-LG">           +      ,WWWWW,  WW   WW  WWWWWW,  WW  ,WWWWW, WWWWWWWW
+           +      WW'  WW  WW   WW  WW  'WW  WW  WW'  ''    WW
+           +      WW       WWWWWWW+ WWWWWW'  WW  'WWWWW,    WW
+ +         +      WW.  WW  WW  +WW  WW+'WW.  WW  ,,  'WW    WW
+   ++     +++     'WWWWW'  WW   WW +WW  'WW. WW  'WWWWW'    WW
+     ++   +++   ++
+ ++   +++ +++ +++   ++   +        +
++   ++  +++++++  ++   ++   ++                      WW  ,WWWWW,
+ + +  +++ +++ +++  + +                             WW  WW'
+++ +++++++++++++++++ +++++ +++  ++                 WW  'WWWWW,
+ + +  +++ +++ +++  + +                             WW  ,   'WW
++   ++  +++++++  ++   ++   ++                      WW  'WWWWW'
+ ++   +++ +++ +++   ++   +        +
+     ++   +++   ++
+   ++     +++      ++        WWWWWW,  ,WWWWW,  WWWWWW,  WW.  WW
+ +         +          +      WW   WW  WW   WW  WW  .WW  WWW. WW
+           +                 WWWWWW,  WW   WW  WWWWWW'  WW'W,WW
+           +                 WW   WW  WW   WW  WW 'WW.  WW 'WWW
+           +                 WWWWWW'  'WWWWW'  WW  'WW. WW  'WW
+
+           +
+
+           +
+
+           +                              + + + + + +  I I I I I I
+                                          H H H H H H  ++++++++++++
+                                          HHHHHHHHHHH  ++++++++++++
+           +                   X X X X X   :  BBBBBBB  (  'BBBBBBBB
+                                XXXXXXX   / Q' BBBBBBB  ==  'BBBBBB,
+                                (   BBB, (.    B )BBBB / U. ,BBBBBB,
+           +                   / V BBBBB  ''''// BBBB (    ,BB )BBB
+                              (   ,B )BB  (///// /BB'  'BBBBBBB BB'
+                        ::::::.BBBB',I..     :,,,I      :- BBB' B,
+           .,           :::(')'' ,HHH(  )   .VVVVVV.  .BBBBBB' (
+        .XX////.        :::(/H, ,HHHH(  .,V.VVVVVVVV  :BBB )WWWW,
+     .XX'''''''//,.        'HHHHHHH/HH'VVV:::V(  )::      .WWWWWW,
+---.XXX(       )'///.-------':HHH/HHHH'VVV:V::(   ):------WWWWWWW:--
+------M!       !MM-----  ------''HHHHHH'VVV:::V( ,WW,--,WWWWWWWWW:--
+--- --MM,,,,,,,MMM- ----- ------ 'HHHHH.'VVV/VV ,WWWWW,WWWWWW'WWWW--
+ - -----------------  - -- ----  -HHHHHH:--VVVVV':WWWWWWWWW',:WWWW--
+ --- ---- - - - - ------ - - --  :HHHHHH:--VVVVVVV':WWWWW',:WWWWW: -
+--   ----- -- - ---  - - - - - -.HHHHHHH'--VVVVVVVVV':W',:WWWWWWW'--
+                                :HHHHHHH  ,VVVVVVVVV  'WWWWWWWWWW
+--  - - -- -  ---   -  -  - -  -HHHHHHHH -VVVVVVVVVV-- WWWWWWWWWW,--
+                               .HHHHHHHH, VVVVVVVVVV,  WWWWWWWWWWW
+                               :HHHHHHHHH,VVVVVVVVVV:  WWWWWWWWWWW
+  - - --  --  - -  -  -- -  -.:HHHHHHHHHHHVVVVVVVVVVV-,WWWWWWWWWWW--
+                            '''HHHHHHHHHHHVVVVVVVVVVV,WWWWWWWWWWW:
+                                  '''HHHH.VVVVVVVVVVVVWWWWWWWWWWW
+                                        .VVVVVVVVVVVVWWWWWWWWWWWW
+                                       .VVVVVVVVVVVVVWWWWWWWWWWWW
+-  --  -  - -  -  - -  -   --  - - - -  '';VVVVVVVVVVWWWWWWWWWWWW,--
+                                              ''''''WWWWWWWWWWWWWW
+                                                   :WWWWWWWWWWWWWW,
+                                                   WWWWWWWWWWWWWWWW
+                                                  :WWWWWWWWWWWWWWWW
+                                                 .WWWWWWWWWWWWWWWWW,
+  - --- - - -  - - -   - -  -- - - -  - -  - -- - - -   '''::WWWWWWW</pre></div>    </div>    <div class="text-center"><a href="/religion">&lt;&lt; Back to religion</a></div><div class="text-center mt-4"><a href="/ascii-draw-studio" class="btn btn-primary text-white px-4">Create your own ASCII Art</a></div><div class="text-center mt-3"><a href="/image-to-ascii" class="btn btn-primary text-white px-4">Convert Images to ASCII Art</a></div><div class="text-center mt-3"><a href="/text-to-ascii-art" class="btn btn-primary text-white px-4">Create ASCII Art from Text</a></div><footer class="footer text-center mt-5">    <hr class="border-header border-top my-1" style="max-width: 800px;">    <small class="d-inline d-lg-block">The ASCII art of this website has been created by many different artists and credit has been given where the artist is known.</small>    <small>If you use ASCII artwork from here, please do not remove the artists name/initials if they are present.</small>    <nav class="nav justify-content-center flex-column flex-md-row mt-4">        <a class="nav-item nav-link" href="/ascii-art-links">ASCII Art Links</a>        <a class="nav-item nav-link" href="/link-to-us">Link To Us</a>        <a class="nav-item nav-link" href="/cookie-policy">Cookie policy</a>        <a class="nav-item nav-link" href="/privacy-policy">Privacy policy</a>        <a class="nav-item nav-link" href="/terms-of-use">Terms of Use</a>        <a class="nav-item nav-link change-consent" href="#" onclick="window.__tcfapi('displayConsentUi', 2, function() {} );return false;" tabindex="0" href="#">Consent</a>'    </nav>    <div class="mt-4">        Copyright &copy; 2024 <a href="http://www.injosoft.se/">Injosoft</a><span class="d-none d-sm-inline">. All Rights Reserved.</span>    </div>    <div class="social mt-4">        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.asciiart.eu%2F" class="facebook"><span class="fa-layers fa-2x"><i class="fa fa-circle"></i><i class="fab fa-facebook-f fa-inverse" data-fa-transform="shrink-3.5 down-1.6 right-1.25"></i></span></a>        <a href="http://twitter.com/share?url=https%3A%2F%2Fwww.asciiart.eu%2F&hashtags=ascii art" class="twitter"><span class="fa-layers fa-2x"><i class="fa fa-circle"></i><i class="fab fa-twitter fa-inverse" data-fa-transform="shrink-6 down-.25 right-.25"></i></span></a>        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.asciiart.eu%2F" class="linkedin"><span class="fa-layers fa-2x"><i class="fa fa-circle"></i><i class="fab fa-linkedin-in fa-inverse" data-fa-transform="shrink-7 right-.25"></i></span></a>    </div>    <div class="mt-4"><small>Be kind!</small></div></footer></div></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script><script src="/js/bsadmin.js"></script><script>    $(document).ready(function() {        $('#religion').addClass('sel');    });</script></body></html>

@@ -1,0 +1,1 @@
+ echo "take beer out of fridge in 30 mins" | at now + 30 minutes

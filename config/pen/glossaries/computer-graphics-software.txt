@@ -1,0 +1,10 @@
+Houdini
+    A 3D animation software application
+    developed by Toronto-based SideFX, who
+    adapted it from the PRISMS suite of
+    procedural generation software tools.
+    
+    The procedural tools are used to produce
+    different effects such as complex
+    reflections, animations and particles
+    system.

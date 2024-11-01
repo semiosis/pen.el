@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "nem" "Matthew" "22:23-33" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "Matthew" "22:23-33" "#" "<==" "bash"
+cd /root/.pen/documents/agenda;  "nem" "zsh" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "nem" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs;  "nem" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs;  "nem" "zsh" "#" "<==" "bash"

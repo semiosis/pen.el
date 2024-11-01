@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: math upright sans serif letters
+# group: math
+# key: msans
+# --
+\mathsf{`yas-selected-text`$0}

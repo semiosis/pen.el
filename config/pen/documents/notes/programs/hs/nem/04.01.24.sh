@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "nem" "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/messages" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "nem" "Luke" "1-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "nem" "Luke" "1-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "nem" "nasb" "Luke" "1-5" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "nem" "I" "John" "2:4-6" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/hear-journal;  "nem" "I" "John" "2:4-6" "#" "<==" "bash"

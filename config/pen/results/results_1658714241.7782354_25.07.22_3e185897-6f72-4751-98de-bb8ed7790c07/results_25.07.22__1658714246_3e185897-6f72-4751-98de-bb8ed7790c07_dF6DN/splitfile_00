@@ -1,0 +1,1 @@
+do print "What should I do?"; task <- getLine; print (task)

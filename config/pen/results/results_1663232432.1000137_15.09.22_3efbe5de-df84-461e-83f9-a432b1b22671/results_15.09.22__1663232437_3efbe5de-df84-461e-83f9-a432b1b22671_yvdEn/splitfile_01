@@ -1,0 +1,5 @@
+root@nsa.gov's password:
+Last login: Wed Apr 10 13:18:55 2019 from 1.1.1.1
+root@nsa.gov:/# cd seafile
+root@nsa.gov:/seafile# ls
+seafile

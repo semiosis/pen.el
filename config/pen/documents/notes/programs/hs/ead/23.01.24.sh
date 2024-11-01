@@ -1,0 +1,5 @@
+cd /usr/local/share/emacs/29.1.50/lisp/emacs-lisp;  "ead" "-z" "eldoc-highlight-function-argument" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "-z" "eldoc-highlight-function-argument" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "-z" "elisp-get-fnsym-args-string" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp;  "ead" "-z" "transient-prefix-object" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50;  "ead" "-z" "transient-prefix-object" "#" "<==" "ead"

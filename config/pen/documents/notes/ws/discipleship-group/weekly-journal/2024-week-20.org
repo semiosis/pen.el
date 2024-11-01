@@ -1,0 +1,86 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 20
+
+* D-Group weekly session notes
+Started working on it: <2024-05-13 Mon>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s][Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene d???CHRISTIAN piano - YouTube]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage   |
+|---------------------+---------------+------------------------+---------------------+-----------------|
+| [[sh:bible-read-passage nasb Matthew 5:40-42 ][Matthew 5:40-42]]     | [[sh:bible-study-passage nasb Mark 5-9 ][Mark 5-9]]      | [[sh:bible-study-passage nasb Proverbs 1-4 ][Proverbs 1-4]]           | [[sh:bible-read-passage nasb Deuteronomy 6:4-5 ][Deuteronomy 6:4-5]]   | [[sh:bible-study-passage nasb Deuteronomy 6-9 ][Deuteronomy 6-9]] |
+|                     |               | [[sh:bible-study-passage nasb Proverbs 16-18 ][Proverbs 16-18]]         |                     | [[sh:bible-study-passage nasb Deuteronomy 30 ][Deuteronomy 30]]  |
+|                     |               | [[sh:bible-study-passage nasb Proverbs 31 ][Proverbs 31]]            |                     | [[sh:bible-study-passage nasb Psalm 96-100 ][Psalm 96-100]]    |
+|                     |               | [[sh:bible-study-passage nasb I Kings 11-12 ][I Kings 11-12]]          |                     |                 |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:40-42
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:40
+‾‾‾‾‾‾‾‾‾‾‾‾
+If anyone wants to sue you and take your shirt,
+let him have your coat also.
+
+Matthew 5:41
+‾‾‾‾‾‾‾‾‾‾‾‾
+Whoever forces you to go one mile, go with him
+two.
+
+Matthew 5:42
+‾‾‾‾‾‾‾‾‾‾‾‾
+Give to him who asks of you, and do not turn away
+from him who wants to borrow from you.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Deuteronomy 6:4-5
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Deuteronomy 6:4
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+“Hear, O Israel! The LORD is our God, the LORD
+is one!
+
+Deuteronomy 6:5
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+You shall love the LORD your God with all your
+heart and with all your soul and with all your
+might.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

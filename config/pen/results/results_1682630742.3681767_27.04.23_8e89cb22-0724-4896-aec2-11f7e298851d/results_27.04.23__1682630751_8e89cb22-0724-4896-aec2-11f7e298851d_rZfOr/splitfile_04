@@ -1,0 +1,5 @@
+"{-# LANGUAGE KindSignatures #-}" is a language extension that allows the use of kind signatures in function definitions. Kind signatures are similar to type signatures, but they also include information about the "shape" of the type. For example, the type of the function above is:
+
+temp :: forall (u :: TempUnits). Temp u -> Temp u
+
+The kind signature is a type signature for the function, but with an additional argument, u, which is a kind variable. The kind variable indicates the kind of the type

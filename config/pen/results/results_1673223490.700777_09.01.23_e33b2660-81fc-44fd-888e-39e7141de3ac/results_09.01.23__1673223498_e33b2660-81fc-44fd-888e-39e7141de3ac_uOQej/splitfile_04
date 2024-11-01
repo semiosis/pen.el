@@ -1,0 +1,13 @@
+"sable" is a Python package for converting text to speech using Amazon Polly.
+
+The following example converts the contents of the "terminal contents" section above to speech.
+
+import sable
+
+# Create a SableMark object from the text.
+sableMark = sable.SableMark(text)
+
+# Create a Sable object from the SableMark object.
+sable = sable.Sable(sableMark)
+
+# Create a Speech object

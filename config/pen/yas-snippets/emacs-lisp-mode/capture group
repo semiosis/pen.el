@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: capture group
+# group: re
+# key: recg
+# --
+(s-replace-regexp "^(\\(.*\\))$" "\\1" (plist-get (link-hint--get-link-at-point) :args))

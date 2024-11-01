@@ -1,0 +1,4 @@
+1. This is the main function, it takes in the port number
+2. It then creates a new server with the port number, 8 threads and a max body size
+3. It then runs the server and prints out the port number
+

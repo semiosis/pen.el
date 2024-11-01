@@ -1,0 +1,31 @@
+task: "extract thing from text"
+tags: prose code nlp-task
+doc: "Given some text and a description of what you want to extract, extract it"
+prompt-version: 1
+prompt: |+
+    import re
+    
+    text = <q:text>
+    
+    # regular expression to find and print <thing>
+    print(thing_regex.findall(text))
+    
+    # the result is: 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "text"
+- "thing"
+examples:
+- "This bottle of water is $8.21 and that is absurd!"
+- "the price"
+external-related:
+- "https://asciinema.org/a/DIXOJocUPseBEVUjdXvUra8Tq"
+filter: on
+completion: off
+insertion: off

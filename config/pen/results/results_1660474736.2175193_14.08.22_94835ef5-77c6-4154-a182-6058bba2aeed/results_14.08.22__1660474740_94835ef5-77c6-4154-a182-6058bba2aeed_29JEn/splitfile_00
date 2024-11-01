@@ -1,0 +1,7 @@
+https://wiki.haskell.org/Memoization
+
+                                            Memoization
+
+Memoization is a technique in which you cache the results of a function so
+that the next time the function is called with the same arguments, you can
+just look up the answer in the cache.

@@ -1,0 +1,3 @@
+":db/cardinality" is a special attribute that defines the cardinality of a
+datom.
+

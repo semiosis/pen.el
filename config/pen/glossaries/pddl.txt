@@ -1,0 +1,21 @@
+state
+    Each state is represented as a conjunction
+    of fluent that are ground, functionless
+    atoms.
+    
+    For example, a state in a package delivery
+    proble might be:
+        At(Truck1, Melbourne) ∧ At(Truck2, Sydney).
+
+conjunction
+logical conjuction
+    [#logic]
+
+    AND.
+
+action
+    Actions are described
+
+Actions are described by a set of action schemas that implicitly define the ACTIONS(s) and
+RESULT(s, a) functions needed to do a problem-solving search. Classical planning concentrates
+on problems where most actions leave most things unchanged.

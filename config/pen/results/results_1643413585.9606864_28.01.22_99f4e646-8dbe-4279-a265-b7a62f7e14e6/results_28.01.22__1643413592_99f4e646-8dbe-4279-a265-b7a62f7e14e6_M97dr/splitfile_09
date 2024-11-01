@@ -1,0 +1,9 @@
+git diff --cached
+diff --git a/stop-reason.txt b/stop-reason.txt
+index d9a0b9d..b7d1e0e 100644
+--- a/stop-reason.txt
++++ b/stop-reason.txt
+@@ -1,3 +1,3 @@
+-# stop reason: 
++# stop reason: 
+

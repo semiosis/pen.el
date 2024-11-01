@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=visidata+sort+numeric+column"
+cd /root/.pen/documents/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=visidata sort numeric column"
+cd /root/.pen/documents/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=visidata sort numeric column"
+cd /root/.pen/documents/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=visidata sort numeric column"
+cd /root/.pen/documents/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=visidata+sort+numeric+column"

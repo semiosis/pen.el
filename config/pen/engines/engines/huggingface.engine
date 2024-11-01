@@ -1,0 +1,9 @@
+vendor: HuggingFace
+engine-title: HuggingFace
+lm-command: "hf-complete.sh"
+model: gpt2
+# engine-min-tokens: 64
+# engine-max-tokens: 2048
+# That's a stretch haha
+foundation: true
+libre: true

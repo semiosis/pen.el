@@ -1,0 +1,3 @@
+runTestTT (Test (notElem 'a' [])
+          (Test (notElem 'a' [])
+          (Test (notElem 'a' [])

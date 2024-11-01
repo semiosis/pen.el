@@ -1,0 +1,8 @@
+cd 'harrys adventures'
+» ls
+ harry.txt       harry.txt.bak  harry.txt.bak1  harry.txt.bak2
+ harry.txt.old1  harry.txt.old2  harry.txt~       stop-reason.txt
+» cat harry.txt
+Harry Potter and the Prisoner of Azkaban
+
+

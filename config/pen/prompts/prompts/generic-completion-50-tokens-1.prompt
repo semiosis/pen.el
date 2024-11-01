@@ -1,0 +1,21 @@
+title: Generic completion 50 tokens
+prompt-version: 3
+tags: fundamental
+doc: This is a generic completer.
+prompt: "<1>"
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 50
+top-p: 1
+# Cache absolutely works, but it caches, regardless of parameters
+cache: false
+no-trim-start: on
+stop-sequences:
+- "<delim>"
+vars:
+- text
+examples:
+- Recycling is good for the world, no, you could not be more wrong
+completion: true
+var-defaults:
+- "(pen-selected-or-preceding-context 1000)"

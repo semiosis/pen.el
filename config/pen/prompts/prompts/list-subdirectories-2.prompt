@@ -1,0 +1,55 @@
+title: "list subdirectories"
+tags: filesystem
+doc: "imaginarily list subdirectories"
+prompt-version: 3
+todo:
+- Make a more general version of this
+notes:
+- parent was removed because for short listings, it was interfering
+# Don't include this necessarily
+subprompts:
+  - dirs: |-
+        $ find . -type d -maxdepth 1 # list directories here
+        <find dirs here output>
+        
+prompt: |+
+  <dirs>
+  
+  $ pwd
+  <working directory>
+
+  # There are 10 files in the <working directory> directory. Here they are:
+  $ find . -type d -maxdepth 1 # list directories here, including new ones that were just added
+  <:pp>./
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "\n\n"
+cache: on
+n-completions: 10
+vars:
+- "working directory"
+- "find dirs here output"
+var-defaults:
+- "(pen-snc \"pwd\")"
+- "(pen-snc \"find . -type d -maxdepth 1\")"
+examples:
+- "/home/shane/source/git/mobile-shell/mosh"
+- |-
+    .
+    ./.git/
+    ./.github
+    ./src/
+    ./test/
+info: on
+completion: off
+insertion: off
+validator: grep -qP "^\\./"
+# must come after validator
+postpostprocessor: sed 's/^\.\///' | sed -e '/^$/d' -e '/^\.$/d' | sed -z '/^$/d'
+split-patterns:
+- "\n"
+# These are defined after the prompt has executed
+action: pen-find-file

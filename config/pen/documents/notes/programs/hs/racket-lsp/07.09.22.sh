@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans;  "racket-lsp" "#" "<==" "racket-lsp"
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans;  "racket-lsp" "#" "<==" "racket-lsp"

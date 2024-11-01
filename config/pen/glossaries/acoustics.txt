@@ -1,0 +1,9 @@
+Phase cancellation
+    Occurs when two signals of the same
+    frequency are out of phase with each other
+    resulting in a net reduction in the
+    overall level of the combined signal.
+
+    If two identical signals are 100% or 180
+    degrees out of phase they will completely
+    cancel one another if combined.

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: probabilistic facts
+# group: vimsnippet
+# key: vs-pf
+# --
+${1:0.3}::${2:rain}.

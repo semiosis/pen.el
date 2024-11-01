@@ -1,0 +1,465 @@
+HTTP/1.1 200 OK
+Date: Tue, 02 Apr 2024 11:25:59 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 86e0761bcc611c56-AKL
+CF-Cache-Status: HIT
+Access-Control-Allow-Origin: *
+Age: 6
+Cache-Control: max-age=1200
+ETag: W/"5d6467fb67904e367678b06cdb240ce3"
+Last-Modified: Thu, 15 Jun 2023 14:57:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Accept-Encoding
+access-control-allow-methods: HEAD, OPTIONS, GET
+cdn-cache-control: public
+referrer-policy: no-referrer-when-downgrade
+x-amz-id-2: vKx+l48AIZVex5trplwb/HUerWsjU6SFimFy64nBM1DPERKAuKmN6nhlNKj52K+vM+7565H5mJo=
+x-amz-meta-mtime: 1686840988.008747923
+x-amz-request-id: W5Q59K742FV2VJZD
+x-amz-server-side-encryption: AES256
+x-backend: web-i-09e6cfbd062f2ce7e
+x-content-type-options: nosniff
+x-rtd-domain: problog.readthedocs.io
+x-rtd-path: /proxito/html/problog/latest/modeling_basic.html
+x-rtd-project: problog
+x-rtd-project-method: public_domain
+x-rtd-resolver-filename: /modeling_basic.html
+x-rtd-version: latest
+x-rtd-version-method: path
+x-served: Nginx-Proxito-Sendfile
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2. ProbLog models &#8212; ProbLog 2.2 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="/_/static/css/badge_only.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="/_/static/javascript/readthedocs-doc-embed.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Using ProbLog as a standalone tool" href="cli.html" />
+    <link rel="prev" title="1. Installing ProbLog" href="install.html" /> 
+  
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="/_/static/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "builder": "sphinx", "canonical_url": null, "docroot": "/docs/source/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "modeling_basic", "programming_language": "py", "project": "problog", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "nature", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="/_/static/javascript/readthedocs-analytics.js" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+</head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="cli.html" title="3. Using ProbLog as a standalone tool"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="1. Installing ProbLog"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProbLog 2.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="problog-models">
+<h1>2. ProbLog models<a class="headerlink" href="#problog-models" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prolog">
+<h2>2.1. Prolog<a class="headerlink" href="#prolog" title="Permalink to this headline">¶</a></h2>
+<p>The ProbLog modeling language is based on Prolog.</p>
+<p>For a very quick introduction to Prolog you can check the <a class="reference external" href="https://en.wikipedia.org/wiki/Prolog">Wikipedia page</a>.</p>
+<p>For a more in-depth introduction you can check the
+<a class="reference external" href="http://lpn.swi-prolog.org/lpnpage.php?pagetype=html&amp;pageid=lpn-htmlch1">Learn Prolog Now!</a>
+tutorial or the book <a class="reference external" href="https://book.simply-logical.space">Simply Logical by Peter Flach</a>.</p>
+</div>
+<div class="section" id="problog">
+<h2>2.2. ProbLog<a class="headerlink" href="#problog" title="Permalink to this headline">¶</a></h2>
+<p>ProbLog extends Prolog syntax by introducing few new operators to allow for probabilistic modeling.
+The following table provides a simple overview.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Definition</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>fact</td>
+<td><code class="docutils literal notranslate"><span class="pre">a.</span></code></td>
+</tr>
+<tr class="row-odd"><td>probabilistic fact</td>
+<td><code class="docutils literal notranslate"><span class="pre">0.5::a.</span></code></td>
+</tr>
+<tr class="row-even"><td>clause</td>
+<td><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">:-</span> <span class="pre">x.</span></code></td>
+</tr>
+<tr class="row-odd"><td>probabilistic clause</td>
+<td><code class="docutils literal notranslate"><span class="pre">0.5::a</span> <span class="pre">:-</span> <span class="pre">x.</span></code></td>
+</tr>
+<tr class="row-even"><td>annotated disjunction</td>
+<td><code class="docutils literal notranslate"><span class="pre">0.5::a;</span> <span class="pre">0.5::b.</span></code></td>
+</tr>
+<tr class="row-odd"><td>annotated disjunction</td>
+<td><code class="docutils literal notranslate"><span class="pre">0.5::a;</span> <span class="pre">0.5::b</span> <span class="pre">:-</span> <span class="pre">x.</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>In addition, Problog introduces also two predicates <code class="docutils literal notranslate"><span class="pre">query</span></code> and <code class="docutils literal notranslate"><span class="pre">evidence</span></code> for querying a probabilistic program or to condition
+it to some pieces of evidence.</p>
+<div class="section" id="probabilistic-facts">
+<h3>2.2.1. Probabilistic facts<a class="headerlink" href="#probabilistic-facts" title="Permalink to this headline">¶</a></h3>
+<p>The main difference between Prolog and ProbLog is that ProbLog support probabilistic
+facts. In the language, this extension is realized by the addition of a single operator <code class="docutils literal notranslate"><span class="pre">::</span></code>.</p>
+<p>In an example program involving coin tosses, we could have the following statement.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::heads</span><span class="p">.</span>
+</pre></div>
+</div>
+<p>This indicates that the fact <cite>heads</cite> is true with probability 0.5 and false with probability 1-0.5.</p>
+<p>This statement introduces <em>one</em> probabilistic choice.
+If we want to model two coins, we need two separate facts:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::heads1</span><span class="p">.</span>
+<span class="mf">0.5</span><span class="s s-Atom">::heads2</span><span class="p">.</span>
+</pre></div>
+</div>
+<p>We can generalize this to an unbound number of coins by using a variable argument:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">heads</span><span class="p">(</span><span class="nv">C</span><span class="p">).</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="annotated-disjunctions">
+<h3>2.2.2. Annotated disjunctions<a class="headerlink" href="#annotated-disjunctions" title="Permalink to this headline">¶</a></h3>
+<p>ProbLog also supports non-binary choices.
+For example, we can model the throw of die as follows.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="s s-Atom">::</span><span class="nf">die</span><span class="p">(</span><span class="nv">D</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="s s-Atom">::</span><span class="nf">die</span><span class="p">(</span><span class="nv">D</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="s s-Atom">::</span><span class="nf">die</span><span class="p">(</span><span class="nv">D</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+<span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="s s-Atom">::</span><span class="nf">die</span><span class="p">(</span><span class="nv">D</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="s s-Atom">::</span><span class="nf">die</span><span class="p">(</span><span class="nv">D</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span><span class="s s-Atom">::</span><span class="nf">die</span><span class="p">(</span><span class="nv">D</span><span class="p">,</span> <span class="mi">6</span><span class="p">).</span>
+</pre></div>
+</div>
+<p>This type of statement is called an <em>annotated disjunction</em>.
+It expresses that at most one of these choices is true.
+There is always an implicit <em>null</em> choice which states that none of the options is taken.
+In this example, however, that extra state has zero probability because the probabilities of the
+other states sum to one.</p>
+</div>
+<div class="section" id="probabilistic-clauses">
+<h3>2.2.3. Probabilistic clauses<a class="headerlink" href="#probabilistic-clauses" title="Permalink to this headline">¶</a></h3>
+<p>ProbLog also supports probabilities in the head of clauses.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.1</span><span class="s s-Atom">::burglary</span><span class="p">.</span>
+<span class="mf">0.9</span><span class="s s-Atom">::</span><span class="nf">alarm</span> <span class="o">:-</span> <span class="s s-Atom">burglary</span><span class="p">.</span>
+</pre></div>
+</div>
+<p>This means that if burglary is true, alarm will be true as well with 90% probability.
+Such a program can always be transformed into a program with just probabilistic facts.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.1</span><span class="s s-Atom">::burglary</span><span class="p">.</span>
+<span class="mf">0.9</span><span class="s s-Atom">::alarm_on_burglary</span><span class="p">.</span>
+
+<span class="nf">alarm</span> <span class="o">:-</span> <span class="s s-Atom">burglary</span><span class="p">,</span> <span class="s s-Atom">alarm_on_burglary</span><span class="p">.</span>
+</pre></div>
+</div>
+<p>Similarly, annotated disjunctions can also be used as head of a clause.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s s-Atom">sun</span><span class="p">);</span> <span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s s-Atom">rain</span><span class="p">).</span>
+<span class="mf">0.8</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">sun</span><span class="p">);</span> <span class="mf">0.2</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">rain</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">T</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">T1</span> <span class="o">is</span> <span class="nv">T</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nf">weather</span><span class="p">(</span><span class="nv">T1</span><span class="p">,</span> <span class="s s-Atom">sun</span><span class="p">).</span>
+<span class="mf">0.4</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">sun</span><span class="p">);</span> <span class="mf">0.6</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">rain</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">T</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">T1</span> <span class="o">is</span> <span class="nv">T</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nf">weather</span><span class="p">(</span><span class="nv">T1</span><span class="p">,</span> <span class="s s-Atom">rain</span><span class="p">).</span>
+</pre></div>
+</div>
+<p>This program can also be transformed into an equivalent program with only annotated
+disjunctive facts.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s s-Atom">sun</span><span class="p">);</span> <span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">weather</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s s-Atom">rain</span><span class="p">).</span>
+
+<span class="mf">0.8</span><span class="s s-Atom">::</span><span class="nf">weather_after_sun</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">sun</span><span class="p">);</span> <span class="mf">0.2</span><span class="s s-Atom">::</span><span class="nf">weather_after_sun</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">rain</span><span class="p">).</span>
+<span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">sun</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">T</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">T1</span> <span class="o">is</span> <span class="nv">T</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nf">weather</span><span class="p">(</span><span class="nv">T1</span><span class="p">,</span> <span class="s s-Atom">sun</span><span class="p">),</span> <span class="nf">weather_after_sun</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">sun</span><span class="p">).</span>
+<span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">rain</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">T</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">T1</span> <span class="o">is</span> <span class="nv">T</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nf">weather</span><span class="p">(</span><span class="nv">T1</span><span class="p">,</span> <span class="s s-Atom">sun</span><span class="p">),</span> <span class="nf">weather_after_sun</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">rain</span><span class="p">).</span>
+
+<span class="mf">0.4</span><span class="s s-Atom">::</span><span class="nf">weather_after_rain</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">sun</span><span class="p">);</span> <span class="mf">0.6</span><span class="s s-Atom">::</span><span class="nf">weather_after_rain</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span><span class="s s-Atom">rain</span><span class="p">).</span>
+<span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">sun</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">T</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">T1</span> <span class="o">is</span> <span class="nv">T</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nf">weather</span><span class="p">(</span><span class="nv">T1</span><span class="p">,</span> <span class="s s-Atom">rain</span><span class="p">),</span> <span class="nf">weather_after_rain</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">sun</span><span class="p">).</span>
+<span class="nf">weather</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">rain</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">T</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">T1</span> <span class="o">is</span> <span class="nv">T</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nf">weather</span><span class="p">(</span><span class="nv">T1</span><span class="p">,</span> <span class="s s-Atom">rain</span><span class="p">),</span> <span class="nf">weather_after_rain</span><span class="p">(</span><span class="nv">T</span><span class="p">,</span> <span class="s s-Atom">rain</span><span class="p">).</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="queries">
+<h3>2.2.4. Queries<a class="headerlink" href="#queries" title="Permalink to this headline">¶</a></h3>
+<p>A query indicates for which entity we want to compute the probability.</p>
+<p>Queries are specified by adding a fact <code class="docutils literal notranslate"><span class="pre">query(Query)</span></code>:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">heads</span><span class="p">(</span><span class="nv">C</span><span class="p">).</span>
+<span class="nf">two_heads</span> <span class="o">:-</span> <span class="nf">heads</span><span class="p">(</span><span class="s s-Atom">c1</span><span class="p">),</span> <span class="nf">heads</span><span class="p">(</span><span class="s s-Atom">c2</span><span class="p">).</span>
+<span class="nf">query</span><span class="p">(</span><span class="s s-Atom">two_heads</span><span class="p">).</span>
+</pre></div>
+</div>
+<p>Queries can also be added in batch.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">heads</span><span class="p">(</span><span class="nv">C</span><span class="p">).</span>
+<span class="nf">query</span><span class="p">(</span><span class="nf">heads</span><span class="p">(</span><span class="nv">C</span><span class="p">))</span> <span class="p">:-</span> <span class="nf">between</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="nv">C</span><span class="p">).</span>
+</pre></div>
+</div>
+<p>This will add the queries <code class="docutils literal notranslate"><span class="pre">heads(1)</span></code>, <code class="docutils literal notranslate"><span class="pre">heads(2)</span></code>, <code class="docutils literal notranslate"><span class="pre">heads(3)</span></code> and <code class="docutils literal notranslate"><span class="pre">heads(4)</span></code>.</p>
+<p>It is also possible to give a non-ground query, on the condition that the program itself contains
+sufficient information to ground the probabilistic parts.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">heads</span><span class="p">(</span><span class="nv">C</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">between</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="nv">C</span><span class="p">).</span>
+<span class="nf">query</span><span class="p">(</span><span class="nf">heads</span><span class="p">(</span><span class="nv">C</span><span class="p">)).</span>
+</pre></div>
+</div>
+<p>This has the same effect as the previous program.</p>
+</div>
+<div class="section" id="evidence">
+<h3>2.2.5. Evidence<a class="headerlink" href="#evidence" title="Permalink to this headline">¶</a></h3>
+<p>Evidence specifies any observations on which we want to condition this probability.
+Evidence conditions a part of the program to be true or false.</p>
+<p>It can be specified using a fact <code class="docutils literal notranslate"><span class="pre">evidence(Literal)</span></code>.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="mf">0.5</span><span class="s s-Atom">::</span><span class="nf">heads</span><span class="p">(</span><span class="nv">C</span><span class="p">).</span>
+<span class="nf">two_heads</span> <span class="o">:-</span> <span class="nf">heads</span><span class="p">(</span><span class="s s-Atom">c1</span><span class="p">),</span> <span class="nf">heads</span><span class="p">(</span><span class="s s-Atom">c2</span><span class="p">).</span>
+<span class="nf">evidence</span><span class="p">(</span><span class="s s-Atom">\+</span> <span class="s s-Atom">two_heads</span><span class="p">).</span>
+<span class="nf">query</span><span class="p">(</span><span class="nf">heads</span><span class="p">(</span><span class="s s-Atom">c1</span><span class="p">)).</span>
+</pre></div>
+</div>
+<p>This program computes the probability that the first coin toss produces heads when we know
+that the coin tosses did not both produce heads.
+You can try it out in the <a class="reference external" href="https://dtai.cs.kuleuven.be/problog/editor.html#task=prob&amp;hash=aeb6af5c90ea198a9f933516e5710fbe">online editor</a>.</p>
+<p>Evidence can also be specified using the binary predicate <code class="docutils literal notranslate"><span class="pre">evidence(Positive,</span> <span class="pre">true)</span></code> and
+<code class="docutils literal notranslate"><span class="pre">evidence(Positive,</span> <span class="pre">false)</span></code>.</p>
+</div>
+<div class="section" id="tabling">
+<h3>2.2.6. Tabling<a class="headerlink" href="#tabling" title="Permalink to this headline">¶</a></h3>
+<p>In ProbLog everything is tabled (or memoized).
+Tabling is an advanced form of caching that is used to speed-up the execution of logic programs and
+that allows certain types of cyclic programs.</p>
+<p>Consider for example the following program that computes Fibonacci numbers.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="nf">fib</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">).</span>
+<span class="nf">fib</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">).</span>
+<span class="nf">fib</span><span class="p">(</span><span class="nv">N</span><span class="p">,</span> <span class="nv">F</span><span class="p">)</span> <span class="p">:-</span>
+    <span class="nv">N</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="nv">N1</span> <span class="o">is</span> <span class="nv">N</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nv">N2</span> <span class="o">is</span> <span class="nv">N</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="nf">fib</span><span class="p">(</span><span class="nv">N1</span><span class="p">,</span> <span class="nv">F1</span><span class="p">),</span>
+    <span class="nf">fib</span><span class="p">(</span><span class="nv">N2</span><span class="p">,</span> <span class="nv">F2</span><span class="p">),</span>
+    <span class="nv">F</span> <span class="o">is</span> <span class="nv">F1</span> <span class="o">+</span> <span class="nv">F2</span><span class="p">.</span>
+</pre></div>
+</div>
+<p>In standard Prolog the execution time of this program is exponential in the size of N because
+computations are not reused between recursive calls.
+In tabled Prolog, the results of each computation is stored and reused when possible.
+In this way, the above program becomes linear.</p>
+<p>The previous example shows the power of caching, but tabling goes further than that.
+Consider the following program that defines the ancestor relation in a family tree.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="nf">parent</span><span class="p">(</span><span class="s s-Atom">ann</span><span class="p">,</span> <span class="s s-Atom">bob</span><span class="p">).</span>
+<span class="nf">parent</span><span class="p">(</span><span class="s s-Atom">ann</span><span class="p">,</span> <span class="s s-Atom">chris</span><span class="p">).</span>
+<span class="nf">parent</span><span class="p">(</span><span class="s s-Atom">bob</span><span class="p">,</span> <span class="s s-Atom">derek</span><span class="p">).</span>
+
+<span class="nf">ancestor</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">ancestor</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Z</span><span class="p">),</span> <span class="nf">parent</span><span class="p">(</span><span class="nv">Z</span><span class="p">,</span> <span class="nv">Y</span><span class="p">).</span>
+<span class="nf">ancestor</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">parent</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span><span class="p">).</span>
+</pre></div>
+</div>
+<p>We want to find out the descendents of Ann (i.e. the query <cite>ancestor(ann, X)</cite>).
+In standard Prolog this program goes into an infinite recursion because the call to
+<cite>ancestor(ann, X)</cite> leads immediately back to the equivalent call <cite>ancestor(ann, Z)</cite>.</p>
+<p>In tabled Prolog, the identical call is detected and postponed,
+and the correct results are produced.</p>
+<p>Another example is that of finding a path in a (possibly cyclic) graph.
+In ProbLog (or any other tabled Prolog) you can simply write.</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="nf">path</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">edge</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span><span class="p">).</span>
+<span class="nf">path</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">edge</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Z</span><span class="p">),</span> <span class="nf">path</span><span class="p">(</span><span class="nv">Z</span><span class="p">,</span> <span class="nv">Y</span><span class="p">).</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="control-predicates">
+<h3>2.2.7. Control predicates<a class="headerlink" href="#control-predicates" title="Permalink to this headline">¶</a></h3>
+<p>ProbLog uses Prolog to generate a ground version of a probabilistic logic program.
+However, it does not support certain features that have no meaning in a probabilistic setting.
+This includes cuts (<code class="docutils literal notranslate"><span class="pre">!</span></code>) and any other mechanism that breaks the pure logic interpretation of the
+program.</p>
+<p>For a full list of features that ProbLog does (not) support, please check <a class="reference internal" href="prolog.html"><span class="doc">this section</span></a>.</p>
+</div>
+<div class="section" id="findall">
+<h3>2.2.8. Findall<a class="headerlink" href="#findall" title="Permalink to this headline">¶</a></h3>
+<p>ProbLog supports the meta-predicate <code class="docutils literal notranslate"><span class="pre">findall/3</span></code> for collecting all results to a query.
+It is similar to <code class="docutils literal notranslate"><span class="pre">findall/3</span></code> in Prolog, but it eliminates duplicate solutions
+(so it corresponds to <code class="docutils literal notranslate"><span class="pre">all/3</span></code> in YAP Prolog).</p>
+<p>Note that the use of findall can lead to a combinatorial explosion when used in a probabilistic
+context.</p>
+</div>
+</div>
+<div class="section" id="other-modes-syntax">
+<h2>2.3. Other modes syntax<a class="headerlink" href="#other-modes-syntax" title="Permalink to this headline">¶</a></h2>
+<p>When ProbLog is executed in modes that are different from standard inference, new specific notation is available.</p>
+<div class="section" id="learning-from-interpretations-lfi-mode">
+<h3>2.3.1. Learning from interpretations (LFI) mode<a class="headerlink" href="#learning-from-interpretations-lfi-mode" title="Permalink to this headline">¶</a></h3>
+<p>ProbLog programs can be used in a learning setting, where some or all the probabilities are unkonwn.
+In this case, the probability annotation in a probabilistic fact can be one of three possible forms:</p>
+<ul class="simple">
+<li>Of the form <code class="docutils literal notranslate"><span class="pre">t(_)</span></code>, as in for instance <code class="docutils literal notranslate"><span class="pre">t(_)::p_alarm1</span></code>. This indicates that the probability of this fact is to be learned from data.</li>
+<li>Of the form <code class="docutils literal notranslate"><span class="pre">t(p)</span></code>, with <code class="docutils literal notranslate"><span class="pre">p</span></code> a probability, as in for instance <code class="docutils literal notranslate"><span class="pre">t(0.5)::burglary</span></code>. This again indicates that the probability of this fact is to be learned from data, but instead of initializing this probability randomly, it will be set to the value <code class="docutils literal notranslate"><span class="pre">p</span></code> in the first iteration of EM.</li>
+<li>Of the form <code class="docutils literal notranslate"><span class="pre">p</span></code>, with <code class="docutils literal notranslate"><span class="pre">p</span></code> a probability, as in for instance <code class="docutils literal notranslate"><span class="pre">0.2::earthquake</span></code>. This indicates that the probability of this fact is fixed (not learned), and it correspond to the standard annotation of probabilistic facts.</li>
+</ul>
+<p>In a learning setting, the ProbLog model is usually accompanied with a set of examples to learn from.
+Examples are provided using the <code class="docutils literal notranslate"><span class="pre">evidence</span></code> predicate for each atom in an example.
+Examples are separated using dashes <code class="docutils literal notranslate"><span class="pre">---</span></code>.</p>
+<p>An example of learning model:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="nf">t</span><span class="p">(</span><span class="k">_</span><span class="p">)</span><span class="s s-Atom">::heads1</span><span class="p">.</span>
+<span class="nf">t</span><span class="p">(</span><span class="k">_</span><span class="p">)</span><span class="s s-Atom">::heads2</span><span class="p">.</span>
+<span class="nf">someHeads</span> <span class="o">:-</span> <span class="s s-Atom">heads1</span><span class="p">.</span>
+<span class="nf">someHeads</span> <span class="o">:-</span> <span class="s s-Atom">heads2</span><span class="p">.</span>
+</pre></div>
+</div>
+<p>An example of how to provide examples:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="nf">evidence</span><span class="p">(</span><span class="s s-Atom">someHeads</span><span class="p">,</span><span class="s s-Atom">false</span><span class="p">).</span>
+<span class="nf">evidence</span><span class="p">(</span><span class="s s-Atom">heads1</span><span class="p">,</span><span class="s s-Atom">false</span><span class="p">).</span>
+<span class="s s-Atom">----------------</span>
+<span class="nf">evidence</span><span class="p">(</span><span class="s s-Atom">someHeads</span><span class="p">,</span><span class="s s-Atom">true</span><span class="p">).</span>
+<span class="nf">evidence</span><span class="p">(</span><span class="s s-Atom">heads1</span><span class="p">,</span><span class="s s-Atom">true</span><span class="p">).</span>
+<span class="s s-Atom">----------------</span>
+<span class="nf">evidence</span><span class="p">(</span><span class="s s-Atom">someHeads</span><span class="p">,</span><span class="s s-Atom">true</span><span class="p">).</span>
+<span class="nf">evidence</span><span class="p">(</span><span class="s s-Atom">heads1</span><span class="p">,</span><span class="s s-Atom">false</span><span class="p">).</span>
+<span class="s s-Atom">----------------</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="decision-theoretic-mode">
+<h3>2.3.2. Decision-theoretic mode<a class="headerlink" href="#decision-theoretic-mode" title="Permalink to this headline">¶</a></h3>
+<p>DTProbLog is a decision-theoretic extension of ProbLog.</p>
+<p>A model in DTProbLog differs from standard ProbLog models in a number of ways:</p>
+<blockquote>
+<div><ul class="simple">
+<li>There are no queries and evidence.</li>
+<li>Certain facts are annotated as being a decision fact for which the optimal choice must be determined.</li>
+<li>Certain atoms are annotated with an utility, indicating their contribution to the final score.</li>
+</ul>
+</div></blockquote>
+<p>Decision facts can be annotated in any of the following ways:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="s s-Atom">?::a</span><span class="p">.</span>
+<span class="nf">decision</span><span class="p">(</span><span class="s s-Atom">a</span><span class="p">).</span>
+</pre></div>
+</div>
+<p>Utilities can be defined using the <code class="docutils literal notranslate"><span class="pre">utility/2</span></code> predicate:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="nf">utility</span><span class="p">(</span><span class="s s-Atom">win</span><span class="p">,</span> <span class="mi">10</span><span class="p">).</span>
+<span class="nf">utility</span><span class="p">(</span><span class="s s-Atom">buy</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">).</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="libraries-and-builtins">
+<h2>2.4. Libraries and Builtins<a class="headerlink" href="#libraries-and-builtins" title="Permalink to this headline">¶</a></h2>
+<p>ProbLog has a number of builtins and libraries available that simplify modeling.
+An overview can be found on the page <a class="reference internal" href="prolog.html"><span class="doc">Builtins and Libraries</span></a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">2. ProbLog models</a><ul>
+<li><a class="reference internal" href="#prolog">2.1. Prolog</a></li>
+<li><a class="reference internal" href="#problog">2.2. ProbLog</a><ul>
+<li><a class="reference internal" href="#probabilistic-facts">2.2.1. Probabilistic facts</a></li>
+<li><a class="reference internal" href="#annotated-disjunctions">2.2.2. Annotated disjunctions</a></li>
+<li><a class="reference internal" href="#probabilistic-clauses">2.2.3. Probabilistic clauses</a></li>
+<li><a class="reference internal" href="#queries">2.2.4. Queries</a></li>
+<li><a class="reference internal" href="#evidence">2.2.5. Evidence</a></li>
+<li><a class="reference internal" href="#tabling">2.2.6. Tabling</a></li>
+<li><a class="reference internal" href="#control-predicates">2.2.7. Control predicates</a></li>
+<li><a class="reference internal" href="#findall">2.2.8. Findall</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#other-modes-syntax">2.3. Other modes syntax</a><ul>
+<li><a class="reference internal" href="#learning-from-interpretations-lfi-mode">2.3.1. Learning from interpretations (LFI) mode</a></li>
+<li><a class="reference internal" href="#decision-theoretic-mode">2.3.2. Decision-theoretic mode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#libraries-and-builtins">2.4. Libraries and Builtins</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="install.html"
+                        title="previous chapter">1. Installing ProbLog</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="cli.html"
+                        title="next chapter">3. Using ProbLog as a standalone tool</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/modeling_basic.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="cli.html" title="3. Using ProbLog as a standalone tool"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="1. Installing ProbLog"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProbLog 2.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, KU Leuven, DTAI Research Group.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.6.
+    </div>
+  </body>
+</html>

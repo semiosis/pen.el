@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "KJV" "Jeremiah 35:1" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "bible-tpop-lookup" "-c" "-m" "KJV" "2Cor 4:18" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "bible-tpop-lookup" "-c" "-m" "KJV" "Rom 8:24-25" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "bible-tpop-lookup" "-c" "-m" "KJV" "1Pet 1:8" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "bible-tpop-lookup" "-c" "-m" "KJV" "Heb 10:38" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "bible-tpop-lookup" "-c" "-m" "KJV" "Gal 2:20" "#" "<==" "bash"

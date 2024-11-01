@@ -1,0 +1,8 @@
+
+return @s
+endf
+
+" Reselect visual block around yank/change
+fun! ReselectVisual()
+    let l:l = line('.')
+let l:c = col('.')

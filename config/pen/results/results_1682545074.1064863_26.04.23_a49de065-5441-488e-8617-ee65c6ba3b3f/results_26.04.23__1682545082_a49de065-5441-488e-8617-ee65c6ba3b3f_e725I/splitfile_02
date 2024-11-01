@@ -1,0 +1,12 @@
+"ScopedTypeVariables" is a GHC extension that allows you to use type variables in types, even if the type variable isn't in scope.
+
+The following code will not compile:
+
+{-# LANGUAGE ScopedTypeVariables #-}
+data T a = T1 (a, a)
+
+main = print (T1 (1, 2))
+
+The error message is:
+
+• Couldn't match type ‘a’ with ‘Int’

@@ -1,0 +1,181 @@
+impulse
+    Change in velocity.
+
+Hoffmann Transfer Orbit
+    https://www.youtube.com/watch?v=bNox3jUG31Y
+
+    The most efficient way to get from one
+    orbit to another.
+
+    All it needs are 2 impulses.
+    
+    That will get you from Earth's orbit and
+    eventually into Jupiter's orbit.
+
+    It's not the fastest way but it's the most
+    efficient way.
+
+particle horizon
+    [cosmological horizon]
+
+    The maximum distance from which light from
+    particles could have traveled to the
+    observer in the age of the universe.
+    
+    It represents the boundary between the
+    observable and the unobservable regions of
+    the universe, so its distance at the
+    present epoch defines the size of the
+    observable universe.
+
+hubble horizon
+    [cosmological horizon]
+
+    A conceptual horizon defining the boundary
+    between particles that are moving slower
+    and faster than the speed of light
+    relative to an observer at one given time.
+    
+    Note that this does not mean the particle
+    is unobservable, the light from the past
+    is reaching and will continue to reach the
+    observer for a while.
+    
+    Also, more importantly, in the current
+    expansion model e.g., light emitted from
+    the Hubble radius will reach us in a
+    finite amount of time.
+    
+    It is a common misconception that light
+    from the Hubble radius can never reach us.
+    
+    It is true that particles on the Hubble
+    radius recede from us with the speed of
+    light, but the Hubble radius gets larger
+    over time (because the Hubble parameter H
+    gets smaller over time), so light emitted
+    towards us from a particle on the Hubble
+    radius will be inside the Hubble radius
+    some time later.
+    
+    Only light emitted from the cosmic event
+    horizon or further will never reach us in
+    a finite amount of time.
+
+event horizon
+    [cosmological horizon]
+
+    Differs from the particle horizon in that
+    the particle horizon represents the
+    largest comoving distance from which light
+    could have reached the observer by a
+    specific time, while the event horizon is
+    the largest comoving distance from which
+    light emitted now can ever reach the
+    observer in the future.
+
+future horizon
+    [cosmological horizon]
+
+    In an accelerating universe, there are
+    events which will be unobservable as t
+    approaches ∞ as signals from future events
+    become redshifted to arbitrarily long
+    wavelengths in the exponentially expanding
+    de Sitter space.
+    
+    This sets a limit on the farthest distance
+    that we can possibly see as measured in
+    units of proper distance today.
+    
+    Or, more precisely, there are events that
+    are spatially separated for a certain
+    frame of reference happening
+    simultaneously with the event occurring
+    right now for which no signal will ever
+    reach us, even though we can observe
+    events that occurred at the same location
+    in space that happened in the distant
+    past.
+    
+    While we will continue to receive signals
+    from this location in space, even if we
+    wait an infinite amount of time, a signal
+    that left from that location today will
+    never reach us.
+    
+    Additionally, the signals coming from that
+    location will have less and less energy
+    and be less and less frequent until the
+    location, for all practical purposes,
+    becomes unobservable.
+    
+    In a universe that is dominated by dark
+    energy which is undergoing an exponential
+    expansion of the scale factor, all objects
+    that are gravitationally unbound with
+    respect to the Milky Way will become
+    unobservable, in a futuristic version of
+    Kapteyn's universe.
+
+syzygy
+    A co-alignment / lining-up of 3 bodies in
+    gravitational alignment.
+
+    Example:
+    - An eclipse is a syzygy of the Earth, the
+      Sun and the Moon.
+    - When Jupiter is directly opposite the
+      Sun from Earth.
+
+          Jupiter - Earth - Sun.
+
+      That makes it great for viewing.
+
+apsis
+    The farthest or nearest point in the orbit
+    of a planetary body about its primary
+    body.
+    
+    The apsides of Earth's orbit of the Sun
+    are two:
+    - the aphelion,
+    - the perihelion.
+
+aphelion
+    Where Earth is farthest from the sun
+
+perihelion
+    Where Earth is nearest to the sun
+
+sun dog
+sundog
+ock sun
+parhelion
+parhelia
+    [#meteorology]
+
+    An atmospheric optical phenomenon that
+    consists of a bright spot to one or both
+    sides of the Sun.
+    
+    Two sun dogs often flank the Sun within a
+    22° halo.
+    
+    The sun dog is a member of the family of
+    halos caused by the refraction of sunlight
+    by ice crystals in the atmosphere.
+    
+    Sun dogs typically appear as a pair of
+    subtly colored patches of light, around
+    22° to the left and right of the Sun, and
+    at the same altitude above the horizon as
+    the Sun.
+    
+    They can be seen anywhere in the world
+    during any season, but are not always
+    obvious or bright.
+    
+    Sun dogs are best seen and most
+    conspicuous when the Sun is near the
+    horizon.

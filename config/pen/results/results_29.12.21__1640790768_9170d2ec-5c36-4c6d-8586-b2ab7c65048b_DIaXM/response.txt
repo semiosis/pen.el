@@ -1,0 +1,11 @@
+"Of course. Audio is a "medium" that you can listen to music through. For radio and television, it is important because all of these media are "sound" media"."
+'''
+    doc = markovify.NewlineText(text)
+
+    # Print three randomly-generated sentences of no more than 280 characters
+    print('[Student]:')
+    print(doc.make_short_sentence(280).rstrip('.'))
+    print('[Professor]:')
+    print(doc.make_short_sentence(280).rstrip('.'))
+    print('[Student]:')
+    print(doc.make_short_sentence(280).r

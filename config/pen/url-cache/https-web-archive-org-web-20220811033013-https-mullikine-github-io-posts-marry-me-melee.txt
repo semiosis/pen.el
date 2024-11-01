@@ -1,0 +1,816 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 17 Jan 2024 10:34:06 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-archive-orig-connection: keep-alive
+x-archive-orig-content-length: 30527
+x-archive-orig-server: GitHub.com
+x-archive-orig-permissions-policy: interest-cohort=()
+x-archive-orig-last-modified: Wed, 10 Aug 2022 05:47:28 GMT
+x-archive-orig-access-control-allow-origin: *
+x-archive-orig-etag: "62f34670-773f"
+x-archive-orig-expires: Thu, 11 Aug 2022 03:40:13 GMT
+x-archive-orig-cache-control: max-age=600
+x-archive-orig-x-proxy-cache: MISS
+x-archive-orig-x-github-request-id: FF7C:12326:8EC3F4:957B0E:62F477C5
+x-archive-orig-accept-ranges: bytes
+x-archive-orig-date: Thu, 11 Aug 2022 03:30:13 GMT
+x-archive-orig-via: 1.1 varnish
+x-archive-orig-age: 0
+x-archive-orig-x-served-by: cache-hel1410027-HEL
+x-archive-orig-x-cache: MISS
+x-archive-orig-x-cache-hits: 0
+x-archive-orig-x-timer: S1660188613.185638,VS0,VE115
+x-archive-orig-vary: Accept-Encoding
+x-archive-orig-x-fastly-request-id: 691330898caef833e7c3a864914677dffa404ba5
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: utf-8
+memento-datetime: Thu, 11 Aug 2022 03:30:13 GMT
+link: <https://mullikine.github.io/posts/marry-me-melee/>; rel="original", <https://web.archive.org/web/timemap/link/https://mullikine.github.io/posts/marry-me-melee/>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/https://mullikine.github.io/posts/marry-me-melee/>; rel="timegate", <https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/marry-me-melee/>; rel="first memento"; datetime="Thu, 11 Aug 2022 03:30:13 GMT", <https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/marry-me-melee/>; rel="memento"; datetime="Thu, 11 Aug 2022 03:30:13 GMT", <https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/marry-me-melee/>; rel="last memento"; datetime="Thu, 11 Aug 2022 03:30:13 GMT"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org analytics.archive.org pragma.archivelab.org
+x-archive-src: archiveteam_urls_20220811033112_454d8c26/urls_20220811033112_454d8c26.1650286618.megawarc.warc.zst
+server-timing: captures_list;dur=211.441168, exclusion.robots;dur=0.197123, exclusion.robots.policy;dur=0.187971, cdx.remote;dur=0.063612, esindex;dur=0.008969, LoadShardBlock;dur=180.289535, PetaboxLoader3.datanode;dur=190.085974, load_resource;dur=148.353737, PetaboxLoader3.resolve;dur=92.675123, loaddict;dur=41.103808
+x-app-server: wwwb-app223
+x-ts: 200
+x-tr: 809
+X-location: All
+X-RL: 0
+X-NA: 0
+X-Page-Cache: HIT
+X-NID: -
+Referrer-Policy: no-referrer-when-downgrade
+Permissions-Policy: interest-cohort=()
+
+<!doctype html>
+<html lang="en-us">
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app223.us.archive.org';v.server_ms=370;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=t1Bf4PY_" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle.js"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://mullikine.github.io/posts/marry-me-melee/","20220811033013","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1660188613");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>Marry Me Melee // Bodacious Blog</title>
+    <meta charset="utf-8"/>
+    <meta name="generator" content="Hugo 0.102.0-DEV"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Shane Mulligan"/>
+    <meta name="description" content=""/>
+
+    
+
+    <link rel="stylesheet" href="https://web.archive.org/web/20220811033013cs_/https://mullikine.github.io/css/main.min.dd60c47f88751978c982b4cc88c3d948f818eac83967b7964873af6ad38cb689.css"/>
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Marry Me Melee"/>
+<meta name="twitter:description" content="Proposal: Marry Me Melee It’s the 222nd day of the year 2022; It has to be done; At 2pm ideally.
+Precedence TODO DONE Description 0 Find out last name. ✓ To suitably ask a girl to marry one, one must first know her last name. 0 Find social media profile. ✓ Once you know her last name, it is possible to know her social media profile. 0 Ask phone number Once you have her phone number, it is possible to contact her."/>
+
+    <meta property="og:title" content="Marry Me Melee"/>
+<meta property="og:description" content="Proposal: Marry Me Melee It’s the 222nd day of the year 2022; It has to be done; At 2pm ideally.
+Precedence TODO DONE Description 0 Find out last name. ✓ To suitably ask a girl to marry one, one must first know her last name. 0 Find social media profile. ✓ Once you know her last name, it is possible to know her social media profile. 0 Ask phone number Once you have her phone number, it is possible to contact her."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/marry-me-melee/"/><meta property="article:section" content="posts"/>
+<meta property="article:published_time" content="2022-08-10T00:00:00+12:00"/>
+<meta property="article:modified_time" content="2022-08-10T00:00:00+12:00"/><meta property="og:site_name" content="Bodacious Blog"/>
+
+
+
+    <script async defer src="https://web.archive.org/web/20220811033013js_/https://tools.luckyorange.com/core/lo.js?site-id=78a0d1b0"></script>
+  </head>
+  <body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20220811033013/https%3A//mullikine.github.io/posts/marry-me-melee/"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-100.png, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://mullikine.github.io/posts/marry-me-melee/" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20220811033013" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;">
+                    <a class="t" href="/web/20220811033013*/https://mullikine.github.io/posts/marry-me-melee/" title="See a list of every capture for this URL">1 capture</a>
+          <div class="r" title="Timespan for captures of this URL">11 Aug 2022</div>
+          </div>
+        <div class="k">
+          <a href="" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="725" height="27" border="0"></canvas>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap">Jul</td>
+            <td class="c" id="displayMonthEl" title="You are here: 03:30:13 Aug 11, 2022">AUG</td>
+            <td class="f" nowrap="nowrap">Sep</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><img src="https://web-static.archive.org/_static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" /></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 03:30:13 Aug 11, 2022">11</td>
+            <td class="f" nowrap="nowrap"><img src="https://web-static.archive.org/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap">2021</td>
+            <td class="c" id="displayYearEl" title="You are here: 03:30:13 Aug 11, 2022">2022</td>
+            <td class="f" nowrap="nowrap">2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#" title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20220811033013/http://web.archive.org/screenshot/https://mullikine.github.io/posts/marry-me-melee/"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/marry-me-melee/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/marry-me-melee/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archiveteam);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/archiveteam" target="_new"><span class="wm-title">Archive Team</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  <img align=right src="http://archiveteam.org/images/e/e6/Archiveteam.jpg" width=200> Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copies of rapidly dying or deleted websites for the sake of history and digital heritage. The group is 100% composed of volunteers and interested parties, and has expanded into a large amount of related projects for saving online and digital history.
+<p>
+History is littered with hundreds of conflicts over the future of a community, group, location or business that were "resolved" when one of the parties stepped ahead and destroyed what was there. With the original point of contention destroyed, the debates would fall to the wayside. Archive Team believes that by duplicated condemned data, the conversation and debate can continue, as well as the richness and insight gained by keeping the materials. Our projects have ranged in size from a single volunteer downloading the data to a small-but-critical site, to over 100 volunteers stepping forward to acquire terabytes of user-created data to save for future generations.
+<p>
+The main site for Archive Team is at <a href="http://www.archiveteam.org">archiveteam.org</a> and contains up to the date information on various projects, manifestos, plans and walkthroughs.
+<p>
+This collection contains the output of many Archive Team projects, both ongoing and completed. Thanks to the generous providing of disk space by the Internet Archive, multi-terabyte datasets can be made available, as well as in use by the <a href="http://archive.org/web/web.php">Wayback Machine</a>, providing a path back to lost websites and work. 
+<p>
+Our collection has grown to the point of having sub-collections for the type of data we acquire. If you are seeking to browse the contents of these collections, the Wayback Machine is the best first stop. Otherwise, you are free to dig into the stacks to see what you may find.
+<p>
+<b>The Archive Team Panic Downloads</b> are full pulldowns of currently extant websites, meant to serve as emergency backups for needed sites that are in danger of closing, or which will be missed dearly if suddenly lost due to hard drive crashes or server failures. 
+<p>
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archiveteam_urls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/archiveteam_urls" target="_new"><span class="wm-title">Archive Team: URLs</span></a></div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web-static.archive.org/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/marry-me-melee/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(725,27,25,2,"web","https://mullikine.github.io/posts/marry-me-melee/","20220811033013",1996,"https://web-static.archive.org/_static/",["https://web-static.archive.org/_static/css/banner-styles.css?v=S1zqJCYt","https://web-static.archive.org/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+
+    <header class="app-header">
+
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/"><img class="app-header-avatar" src="https://web.archive.org/web/20220811033013im_/http://mullikine.github.io/fievel.png" alt="Shane Mulligan"/></a>
+      <h1>Bodacious Blog</h1>
+      
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://web.archive.org/web/20220811033013/https://github.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://web.archive.org/web/20220811033013/https://linkedin.com/in/shane-mulligan-811b942b/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+          <a target="_blank" href="https://web.archive.org/web/20220811033013/https://gitlab.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gitlab">
+  <title>gitlab</title>
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://web.archive.org/web/20220811033013/https://twitter.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/cv/">CV</a>
+      </div>
+<div class="highlights">
+<a href="https://web.archive.org/web/20220811033013/https://semiosis.github.io/">Semiosis</a>
+
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/parables-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Papables of Jesus</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/gospel-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Glorious Gospel</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/the-tapestry-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Tapestry of Truth</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/gospel-of-thomas/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Thomas</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/gospel-of-matthew/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Matthew</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/gospel-of-philip/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Philip</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/the-gospel-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Truth</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/gospel-of-john/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of John</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/living-water/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Living Water of Truth</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/generating-hyperlinks-for-glossaries-and-other-parsers-in-emacs/">Hyperlink generation in emacs</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/github-search-with-bigquery/">Searching GitHub with BigQuery</a>
+
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/review-of-the-case-for-learned-index-structures/">Case for Learned Index Structures</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/arbitrary-interpreters-for-babel/">Arbitrary Interpreters for Babel</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/glossary.html">Glossary A-Z (502 topics)</a> <a href="https://web.archive.org/web/20220811033013/https://github.com/mullikine/glossaries-gh">code</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/pen/">Prompt Engineering in Emacs</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/dwarf-fortress-macros-with-emacs-and-tmux/">Automating Dwarf Fortress</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/review-of-the-illustrated-transformer/">The Illustrated Transformer</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/practical-macros-in-racket-and-how-to-work-with-them/">Practical macros in Racket</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/imaginary-programming-with-gpt-3/">Imaginary Programming</a>
+<br/>
+<a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/codelingo-vs-linters/summary/">CodeLingo vs Linters</a>
+<br/>
+
+<div class="taglist">
+  
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/astral/">astral</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/ethereum/">Ethereum</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/imaginary/">Imaginary</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/אα/">אα</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/alethiology/">alethiology</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/epistemology/">epistemology</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/janus/">𔒯</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/reversible/">⇌</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/𝑖λ/">𝑖λ</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/𝑖web/">𝑖web</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/semiosis/">࿋ Semiosis</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/𝑖i/">𝑖i</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/pen/">Pen.el</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/gpt/">GPT (Generative Pre-trained Transformer)</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/biosemiotics/">biosemiotics</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/xenolinguistics/">xenolinguistics</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/emacs/">emacs</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/elisp/">elisp</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/racket/">racket</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/haskell/">haskell</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/nlp/">NLP</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/docker/">docker</a>
+
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/ir/">IR</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/dalle/">dalle</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/games/">games</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/data/">data</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/info/">info theory</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/probability/">probability</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/problog/">problog</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/shell/">shell</a>
+
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/tooling/">tooling</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/iac/">IaC</a>
+
+
+
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/babel/">babel</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/journal/">journal</a>
+
+
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/parsers/">parsers</a>
+
+
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/review/">review</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/dl/">deep learning</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/dsl/">DSL</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/music/">music</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/surreal/">surreal</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/df/">dwarf fortress</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/spacy/">spacy</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/latex/">latex</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/nix/">Nix</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/diagrams/">diagrams</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/faith/">faith</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/valentinianism/">valentinianism</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/gnostic/">gnostic</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/python/">python</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/vim/">vim</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/journal/">journal</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/neural-engineering/">neural-engineering</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/golang/">golang</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/perl/">perl</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/telco/">telco</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/automation/">automation</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/elasticsearch/">ELK</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/optimisation/">optimisation</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/release/">release</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/dotnet/">.NET</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/csharp/">csharp</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/math/">math</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/terminals/">term</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/terminals/">poetry</a>
+<a class="tag big" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/codegen/">code-gen</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/rosie/">rosie</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/terraform/">Terraform</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/semmle/">Semmle</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/expect/">tcl/expect</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/solr/">solr</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/transformer/">transformer</a>
+
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/microsoft/">Microsoft</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/neuralink/">Neuralink</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/openai/">OpenAI</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/uber/">Uber</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/aws/">Amazon</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/github/">GitHub</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/facebook/">Facebook</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/kaggle/">Kaggle</a>
+<a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/kaggle/">EleutherAI</a>
+
+</div>
+
+
+
+</div>
+<div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <div class="post-footer phone">
+      <p>
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/">Latest articles</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://github.com/semiosis/pen.el">Pen.el</a>
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/">Site Map</a>
+      </p>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title">Marry Me Melee</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 10, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          6 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/melee/">melee</a></div></div>
+    </header>
+    
+
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20220811033013cs_/https://mullikine.github.io/css/magit.css"/>
+
+<script src="https://web.archive.org/web/20220811033013js_/https://mullikine.github.io/js/mathjax-config.js"></script>
+ 
+<script type="text/javascript" src="https://web.archive.org/web/20220811033013js_/https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+    <div class="post-content">
+      <h2 id="proposal-marry-me-melee">Proposal: Marry Me Melee</h2>
+<p>It&rsquo;s the 222nd day of the year 2022; It has to be done; At 2pm ideally.</p>
+<table>
+<thead>
+<tr>
+<th>Precedence</th>
+<th>TODO</th>
+<th>DONE</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Find out last name.</td>
+<td>✓</td>
+<td>To suitably ask a girl to marry one, one must first know her last name.</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Find social media profile.</td>
+<td>✓</td>
+<td>Once you know her last name, it is possible to know her social media profile.</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Ask phone number</td>
+<td></td>
+<td>Once you have her phone number, it is possible to contact her.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>You may say, &ldquo;Marry me.&rdquo;</td>
+<td>✓</td>
+<td>Use the word “proposal.” While the proposal may be made in writing, it is generally accepted that asking a girl to marry you is a verbal act. This is followed by a physical gesture.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Mutual friend</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Written proposal</td>
+<td>✓</td>
+<td>Wait days, or weeks, or months years. See: &lsquo;Exponential/linear backoff&rsquo;</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/ox-hugo/marry-me-melee-letter.pdf">Letter</a> / Job application (Work in progress)</td>
+<td>✓  <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/ox-hugo/marry-me-melee-letter.pdf">marry-me-melee-letter.pdf</a></td>
+<td>a detailed and thoughtful explanation of why you feel that way</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Meet girl</td>
+<td></td>
+<td>If you have a great time talking with her and are interested in her, you may ask her on a date.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>inflate 50+% of the olfactory receptors</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>make eye contact and say I love you</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>parents’ permission</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Date</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Engagement</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Ring</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Marry</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="poem">Poem</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Remember how the shadow falls from her chin or her cheekbones.
+</span></span><span style="display:flex;"><span>How light reflects from her hair.
+</span></span><span style="display:flex;"><span>Her smile is in her eyes and her cheeks.
+</span></span><span style="display:flex;"><span>So beautiful.
+</span></span><span style="display:flex;"><span>She&#39;s incredibly modest in a way.</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="promise">Promise</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>I will absolutely plaster my website with anything that Melee will give me.
+</span></span><span style="display:flex;"><span>Asides from that I will love her to infinity.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>I&#39;m never ever going to leave Melee
+</span></span><span style="display:flex;"><span>She&#39;s part of me that can&#39;t be removed.
+</span></span><span style="display:flex;"><span>I look at her and I know I need to protect her and keep her happy.
+</span></span><span style="display:flex;"><span>&#39;And be with her imagining far horizons so as not to become enclosed.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>I will absolutely plaster my website with anything that Melee will give me.
+</span></span><span style="display:flex;"><span>Asides from that I will love her to infinity.</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="learning-the-ritual-of-engagement">Learning the ritual of engagement</h2>
+<p><code>Part 1:</code></p>
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/BDYOjJEXGj2bFtEIlny5NZ5Ce" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/BDYOjJEXGj2bFtEIlny5NZ5Ce.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://web.archive.org/web/20220811033013js_/https://asciinema.org/a/BDYOjJEXGj2bFtEIlny5NZ5Ce.js" id="asciicast-BDYOjJEXGj2bFtEIlny5NZ5Ce" async></script>
+<p><code>Part 2:</code></p>
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/nka3jwNk9EqESAE0b4LzBIQV4" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/nka3jwNk9EqESAE0b4LzBIQV4.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://web.archive.org/web/20220811033013js_/https://asciinema.org/a/nka3jwNk9EqESAE0b4LzBIQV4.js" id="asciicast-nka3jwNk9EqESAE0b4LzBIQV4" async></script>
+<h2 id="tweet"><a href="https://web.archive.org/web/20220811033013/https://twitter.com/mullikine/status/1557151944271339520">Tweet</a></h2>
+<p>The reality of AI forces us to take a side:</p>
+<ul>
+<li>a) Conform to society and the AI that governs it, losing autonomy but fitting in.</li>
+<li>b) Make decisions yourself about how you think and act; To the outside looks like becoming delusional, but in reality there is rest and identity.</li>
+</ul>
+<p>I just want to remain at rest and truth.</p>
+<p><code>Process</code>:</p>
+<h2 id="letter">Letter</h2>
+<p>To do so, compose a letter expressing your
+desire to wed.</p>
+<p>The letter should include a detailed and
+thoughtful explanation of why you feel that
+way.</p>
+<p>After this letter is presented and approved,
+convince your specified love interest that
+you are sincere.</p>
+<p>Then, if the other party is willing, attempt
+to secure a response through a series of
+meetings.</p>
+<p>Once the other party is willing, convince
+them that the relationship would be
+functional and beneficial.</p>
+<p>Be sure to present an outcome in which
+neither party will have to give</p>
+<h3 id="letter-job-application--work-in-progress">Letter / Job application (Work in progress)</h3>
+<p><a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/ox-hugo/marry-me-melee-letter.pdf">marry-me-melee-letter.pdf</a></p>
+<h2 id="series-of-meetings">Series of meetings</h2>
+<p>To do so, have a series of meetings with
+your love interest.</p>
+<p>During these meetings, you should attempt
+to convince your love interest that you are
+sincere and that the relationship would be
+beneficial for all parties involved.</p>
+<p>If the other party is willing, attempt to
+secure a response through a series of meetings.</p>
+<h2 id="response-to-proposal-of-marriage">Response to proposal of marriage</h2>
+<p>To do so, have a response to your proposal.
+This response can be positive or negative. If
+positive, continue with the process of
+convincing your love interest that the
+relationship would be functional and
+beneficial. If negative, end the process and
+return to the state of being unmarried.</p>
+<h2 id="verbal-proposal">Verbal proposal</h2>
+<ul>
+<li>formulate a valentine</li>
+<li>locate flowershop (already got this sufficiently sorted)</li>
+<li>down on one knee</li>
+<li>a flower must be transacted</li>
+<li>introduced to girl&rsquo;s family</li>
+<li>must maintain eye contact</li>
+<li>assess Melee&rsquo;s body language</li>
+<li>sincere; no irony</li>
+<li>steady income; job</li>
+<li>personal hygiene</li>
+</ul>
+<h3 id="no-more-than-7-attempts">No more than 7 attempts</h3>
+<p>The number of attempts one should make when
+attempting to obtain a positive response from
+a member of the opposite sex should not
+exceed seven.</p>
+<p>As a result, it is not recommended that one
+attempt to repeatedly ask the same member of
+the opposite sex to marry them with excessive
+frequency.</p>
+<p>One should ask only once a day, and only when
+the feeling of love is confident and stable.</p>
+<h3 id="bending-knee">Bending knee</h3>
+<p>The marriage proposal usually goes along the
+lines of asking for the recipient of your
+proposal to come over to your side of the
+field, take a knee, and ask for your hand.</p>
+<p>But at the end of the day it&rsquo;s still pretty
+straightforward - you need a fully-grown
+human female, who accepts your proposal and
+wants to marry you.</p>
+<h2 id="exponential-linear-backoff">Exponential/linear backoff :&rsquo;(</h2>
+<p>Ask if she wants to get married.</p>
+<p>If she says yes, wait three days, if she says
+no, ask again in one day.</p>
+<p>If she says yes the second time, wait one
+year, if she says no, ask again in one day.</p>
+<p>If she says yes the third time, wait two
+years, if she says no the third time, wait
+five years.</p>
+<p>If she says yes the fourth time, wait ten
+years, if she said no the fourth time, wait
+twenty years.</p>
+<h2 id="permission">Permission</h2>
+<p>To make a proposal at a time that a girl is
+likely to say yes to the marriage proposal,
+ask her for her parents’ permission.</p>
+<p>This is an instance of a ritualistic behaviour
+in human culture.</p>
+<p>It has been observed that courtship behaviours
+are repeated over time.</p>
+<p>It is reasonable to conclude that this is
+done to achieve an optimal outcome.</p>
+<h2 id="mutual-friend"><span class="org-todo done DONE">DONE</span> Mutual friend</h2>
+<p>To ask a girl to marry you, identify a mutual
+friend of yours who has known both you and
+the girl for a length of time, and arrange to
+have that mutual friend introduce the two of
+you together to one another.</p>
+<p>This is done in order to preserve a non-
+romantic relationship between the two parties
+with minimal conflict, and the introduction
+is done via text message.</p>
+<p>The introduction will occur in two stages,
+with the introduction of the two parties
+occurring in the first stage.</p>
+<h2 id="timeline">Timeline</h2>
+<h3 id="ritual-of-engagement">Ritual of engagement</h3>
+<p>Consent via the &lsquo;ritual of engagement&rsquo;</p>
+<ul>
+<li>design a ring</li>
+<li>engraved</li>
+</ul>
+<h3 id="engagement-marriage">Engagement -&gt;  Marriage</h3>
+<p>Once engaged, continue to keep this goal in
+sight, and eventually become married.</p>
+<h3 id="actual-ceremony">Actual ceremony</h3>
+<ul>
+<li>bride places hand in the groom&rsquo;s hand</li>
+<li>groom places hand on the bride&rsquo;s shoulder</li>
+</ul>
+<h3 id="after-married">After married</h3>
+<ul>
+<li>continued periodic flowers</li>
+<li>guy is questioned periodically</li>
+</ul>
+
+    </div>
+    <div class="post-colophon">
+        Thanks for reading!
+        <br/>
+        If this article appears incomplete, it may be intentional. Try prompting for a continuation.
+    </div>
+    <div class="post-footer">
+        <p>
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/">Latest articles</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/about/">About this weblog</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://asciinema.org/~mullikine">Recordings</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/posts/blogs-and-vlogs/">Blogs and Vlogs</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/cv/">CV</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://github.com/semiosis/pen.el">Pen.el</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/imaginary-programming">Im λ</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://web.archive.org/web/20220811033013/https://mullikine.github.io/tags/">Site Map</a>
+        </p>
+    </div>
+  </article>
+
+    </main>
+
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//web.archive.org/web/20220811033013/https://cdn.mouseflow.com/projects/af7068a2-df42-4f2c-a3bb-688311904992.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:30:13 Aug 11, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:33:45 Jan 17, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 211.426 (10)
+  exclusion.robots: 0.197
+  exclusion.robots.policy: 0.187
+  cdx.remote: 0.063
+  esindex: 0.008
+  LoadShardBlock: 180.289 (3)
+  PetaboxLoader3.datanode: 190.085 (5)
+  load_resource: 148.353
+  PetaboxLoader3.resolve: 92.675
+  loaddict: 41.103
+-->

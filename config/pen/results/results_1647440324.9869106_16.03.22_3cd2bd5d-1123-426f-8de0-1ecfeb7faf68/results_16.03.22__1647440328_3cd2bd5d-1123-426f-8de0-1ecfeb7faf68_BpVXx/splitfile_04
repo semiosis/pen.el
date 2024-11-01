@@ -1,0 +1,6 @@
+ng module
+input-method: free-text
+input-examples: |
+  Get me a tutorfor any topic and subtopic
+in-development: true
+prompt-version: 6

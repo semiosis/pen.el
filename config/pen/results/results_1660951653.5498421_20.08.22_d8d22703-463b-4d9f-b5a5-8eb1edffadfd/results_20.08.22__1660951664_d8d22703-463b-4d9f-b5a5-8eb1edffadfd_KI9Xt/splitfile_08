@@ -1,0 +1,23 @@
+
+#
+# This playbook is used to populate a Library with content from a sync source.
+# It can be run on any host that has access to the Library.
+#
+# The sync source is specified in the 'sync_source' variable.
+# The path to the Library is specified in the 'library_path' variable.
+
+---
+- hosts: all
+  vars:
+    library_path: /content/library/path/to/library/root
+    sync_source: "https://example.com/sync-source"
+
+  tasks:
+
+  - name: Create the library if it does not exist.
+    file: path="{{ library_path }}" state=directory
+
+  - name: Sync content from the sync source into the library.
+    synchronize: src={{ sync_source }} dest="{{ library_path }}"
+
+  - name: List all files in the library.

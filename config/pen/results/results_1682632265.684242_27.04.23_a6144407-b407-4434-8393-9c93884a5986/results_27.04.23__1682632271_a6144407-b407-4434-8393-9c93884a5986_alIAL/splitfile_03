@@ -1,0 +1,7 @@
+ | K
+data TempResult = Ok Int | Error
+deriving ( Eq , Show )
+
+instance Num TempResult where
+fromInteger = pure . fromInteger
+negate = error "TempResult is bounded and cannot be negated

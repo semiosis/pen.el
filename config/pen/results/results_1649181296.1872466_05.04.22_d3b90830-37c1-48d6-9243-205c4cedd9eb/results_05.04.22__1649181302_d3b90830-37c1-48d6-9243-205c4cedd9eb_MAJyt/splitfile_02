@@ -1,0 +1,8 @@
+
+
+instance Num Natural where
+
+This means that Natural is a successor of Integer, and so arithmetic operations on Natural numbers are
+treated in the same way as those on Integer numbers:
+
+x + y

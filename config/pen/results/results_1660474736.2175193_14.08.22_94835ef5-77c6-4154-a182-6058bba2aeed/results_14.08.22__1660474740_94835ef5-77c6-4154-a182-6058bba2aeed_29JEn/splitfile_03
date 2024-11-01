@@ -1,0 +1,8 @@
+https://wiki.haskell.org/Memoization
+
+
+                                                               Memoization in Haskell
+
+Memoization is a technique for speeding up programs by storing the results of
+computations and returning the cached result when the same input occurs again.
+Memoization is not a

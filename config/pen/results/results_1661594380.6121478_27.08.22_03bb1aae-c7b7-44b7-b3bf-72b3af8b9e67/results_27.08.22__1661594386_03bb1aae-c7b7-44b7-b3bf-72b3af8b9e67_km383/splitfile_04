@@ -1,0 +1,1 @@
+- haskell guru: You want to read a file and lazily tokenize it. You can do that with L.words.fmap XXX

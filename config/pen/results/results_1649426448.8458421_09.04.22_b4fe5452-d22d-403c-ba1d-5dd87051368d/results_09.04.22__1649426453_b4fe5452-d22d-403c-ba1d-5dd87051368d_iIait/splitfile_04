@@ -1,0 +1,5 @@
+
+:top
+show i
+=> 4
+loop from top

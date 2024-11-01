@@ -1,0 +1,28 @@
+
+    A fact is a piece of information
+    that is inferred from the remote system's
+    current state or nature.
+
+    Facts are used to determine if a task
+    should run or not.
+
+Playbook
+    A playbook is a set of tasks that are
+    executed against a remote system.
+
+    Playbooks are written in YAML, and can
+    be executed using the ansible-playbook
+    command.
+
+    Playbooks are composed of plays, which are
+    sets of tasks that are executed against a
+    remote system.
+
+    Playbooks can be run locally, or they can
+    be run on a remote system using the ansible-playbook command.
+
+    Playbooks can be composed of roles, which are directories that contain:
+
+        - tasks/: directory containing tasks to execute on the remote system.
+
+        - handlers/: directory containing handlers to execute when certain events occur (e.

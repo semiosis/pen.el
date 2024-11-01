@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Acts" "17:29" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "11:16-17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "8:36-38" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "1:4-5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "10:45" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "15:8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Acts" "10:44-48" "#" "<==" "zsh"

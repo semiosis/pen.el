@@ -1,0 +1,7 @@
+"coerce" is a function that can be used to convert between types in Haskell.
+
+The "coerce" function is a polymorphic function, meaning that it can be used to convert between types of different kinds. It can be used to convert between types that are instances of the same class, or between types that are not instances of the same class.
+
+The "coerce" function is a higher-order function, meaning that it takes functions as arguments.
+
+The "coerce

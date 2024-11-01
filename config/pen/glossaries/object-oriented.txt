@@ -1,0 +1,4 @@
+Dynamic method dispatch
+    The mechanism by which a call to an
+    overridden method is resolved at run time,
+    rather than compile time.

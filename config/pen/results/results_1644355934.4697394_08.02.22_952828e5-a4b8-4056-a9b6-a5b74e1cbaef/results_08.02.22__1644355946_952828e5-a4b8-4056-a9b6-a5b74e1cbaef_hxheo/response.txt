@@ -1,0 +1,9 @@
+, John
+role: President of the United States
+role-link: https://en.wikipedia.org/wiki/Liberty_Hall_%28Libertarianism%29
+role-link: https://www.whitehouse.gov/briefings-statements/statement-president-liberty-hall/
+EOD
+
+cat draft.person-description <<EOD
+full-name: Trump, Donald J.
+role: President of the United States

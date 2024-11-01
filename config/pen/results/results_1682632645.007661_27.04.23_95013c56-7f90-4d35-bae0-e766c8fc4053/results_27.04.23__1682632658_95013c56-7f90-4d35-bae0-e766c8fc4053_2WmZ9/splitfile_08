@@ -1,0 +1,10 @@
+#if FIRST_MAKEFILE
+import Control.Applicative ((<$>))
+import Control.Monad (forM, forever)
+import Control.Monad.Error (ErrorT, MonadError)
+import Control.Monad.State (StateT, evalStateT, gets)
+import Control.Monad.Trans.Class ((<$>))
+import Generics
+import System.FilePath ((</>))
+#endif // FIRST_MAKEFILE
+data GrmTable = GrmTable { key :: !Text, ckey :: !Text, gkey :: !Text } deriving (Show, Generic) instance Error ErrorMsg where noMsg = Error noMsg data Val = Val Text deriving (Show, Generic) data Valu = Valu{valuProject :: !(Val Project), valuDb :: !(Val DB)} deriving (Show, Generic) data ValuConfig = ValuConfig {

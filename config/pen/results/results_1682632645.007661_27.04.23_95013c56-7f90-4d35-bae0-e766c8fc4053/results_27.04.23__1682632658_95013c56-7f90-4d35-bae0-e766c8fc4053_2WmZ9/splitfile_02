@@ -1,0 +1,10 @@
+#include "../containers/Data/Map/Lazy.hs"
+#include "../containers/Data/Bits/ByteArray#.hs"
+ -- ...
+module Data.ByteArray( -- ... ) where
+EOD
+
+and send it to Markdown with the "--columns" option to Pandoc:
+$ pandoc -f markdown+lhs --columns draft.lhs > draft.html $ pandoc -f markdown+lhs --columns draft.lhs > draft.pdf
+As you can see, Racket #lang and Haskell #include work here as well . You can also include Haskell or Racket module contents in a Markdown document, as in this example.
+Note that the "--columns" option does not apply to plain Markdown input, nor does it apply if you invoke Pandoc with its standard input and output, which is the case if you pipe to or from

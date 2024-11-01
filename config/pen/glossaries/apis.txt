@@ -1,0 +1,34 @@
+Swagger
+    An open-source software framework backed
+    by a large ecosystem of tools that helps
+    developers design, build, document, and
+    consume RESTful web services.
+
+OpenAPI Specification
+Swagger Specification (originally)
+    A specification for machine-readable
+    interface files for describing, producing,
+    consuming, and visualizing RESTful web
+    services.
+
+Twilio
+    American cloud communications platform as
+    a service company based in San Francisco,
+    California.
+    
+    Twilio allows software developers to
+    programmatically make and receive phone
+    calls, send and receive text messages, and
+    perform other communication functions
+    using its web service APIs.
+
+openweathermap
+    https://openweathermap.org/api/one-call-api
+
+    Via RapidAPI:
+        https://rapidapi.com/blog/lp/openweathermap/?utm_term=%2Bopenweathermap+%2Bapi_b
+
+RapidAPI
+    https://rapidapi.com/
+
+    Find and Connect to Thousands of APIs.

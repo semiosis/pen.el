@@ -1,0 +1,4 @@
+root@mele:/var/log$ ls
+auth.log  boot.log  daemon.log  dmesg  faillog  kern.log  lastlog  messages  syslog  wtmp
+root@mele:/var/log$ cd ..
+

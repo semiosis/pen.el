@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: args
+# group: getopts
+# key: args
+# --
+arg_names = ['command', 'x', 'y', 'operation', 'option']
+args = dict(zip(arg_names, sys.argv))

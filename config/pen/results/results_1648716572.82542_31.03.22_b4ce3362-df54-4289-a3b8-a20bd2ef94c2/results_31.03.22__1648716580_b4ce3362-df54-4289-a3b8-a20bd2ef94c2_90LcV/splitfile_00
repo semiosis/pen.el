@@ -1,0 +1,7 @@
+The above code is a simple game that asks the user to guess a number between 1 and 4. The game
+keeps track of the number of guesses and the time of the last guess. The game ends when the user
+guesses the correct number or when the user has made 5 incorrect guesses.
+
+The game state is a pair containing the number of guesses and the time of the last guess.
+
+The game loop is a function that takes a game state and returns a new game state.

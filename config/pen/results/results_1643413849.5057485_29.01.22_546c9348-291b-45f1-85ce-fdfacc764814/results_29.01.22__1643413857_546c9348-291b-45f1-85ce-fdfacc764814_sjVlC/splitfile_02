@@ -1,0 +1,12 @@
+
+      (pen-complete-region preceding-text)
+    (pen-complete-line preceding-text tv)))
+
+(defun pen-complete-region (preceding-text)
+  "Region completion"
+  (interactive (list (pen-preceding-text)))
+  (let ((response
+         (pen-region-complete
+          (pen-complete-function preceding-text))))
+    (if tv
+        (pen

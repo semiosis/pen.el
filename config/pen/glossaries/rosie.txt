@@ -1,0 +1,26 @@
+character set syntax
+bracket expressions
+    [character set]
+
+    Examples:
+    - [0-9]
+    - [+-=*/]
+    - [:space:]
+
+character range
+    [character set]
+
+    Example:
+    - [0-9]
+
+character list
+    [character set]
+
+    Example:
+    - [+-=*/]
+
+named character set
+    [character set]
+
+    Example:
+    - [:space:]

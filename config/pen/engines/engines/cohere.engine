@@ -1,0 +1,23 @@
+# see: /usr/local/lib/python3.8/dist-packages/cohere/__init__.py
+vendor: Cohere
+engine-title: Cohere
+lm-command: "cohere-complete.sh"
+model: large
+engine-delimiter: "###"
+# engine-delimiter: "--SEPARATOR--"
+# TODO Check this value. It may be 0
+# engine-min-tokens: 64
+api-endpoint: "https://api.cohere.ai"
+default-tokens: 256
+approximate-token-char-length: 2.5
+engine-max-n-completions: 16
+engine-max-tokens: 2048
+engine-max-generated-tokens: 256
+engine-whitespace-support: no
+foundation: true
+libre-dataset: no
+libre-model: no
+local: no
+defer:
+- code: OpenAI Codex
+- speed: OpenAI Curie

@@ -1,0 +1,13 @@
+/* Color scheme B: USA */
+.b-primary {
+background-color: #D7191C;
+}
+.b-secondary {
+background-color: #FDAE61;
+}
+.b-ternary {
+background-color: #FFFFBF;
+}
+.b-quaternary {
+background-color: #A6D96A;
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: cat
+# group: basic
+# key: cat
+# --
+import sys
+data = sys.stdin.read()
+sys.stdin = open('/dev/tty') # not idempotent. only works for import code
+
+contents=""
+with open(filename) as f:
+contents = f.read()

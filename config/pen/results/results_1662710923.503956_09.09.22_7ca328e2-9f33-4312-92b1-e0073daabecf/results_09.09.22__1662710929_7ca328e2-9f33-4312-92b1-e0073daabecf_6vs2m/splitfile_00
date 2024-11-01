@@ -1,0 +1,1 @@
+aws iam create-user --user-name my-user

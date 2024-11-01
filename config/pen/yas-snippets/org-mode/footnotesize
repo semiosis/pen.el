@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: footnotesize
+# group: 
+# key: footnotesize
+# --
+#+latex: {\\footnotesize
+`yas-selected-text`$0
+#+latex: }

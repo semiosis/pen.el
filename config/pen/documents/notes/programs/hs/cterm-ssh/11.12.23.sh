@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes/ws/peniel;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/A_Lamb_Goes_Uncomplaining_Forth-An_Wasserfluessen_Babylon.mp3" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "nmtui" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "i" "scan" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "nmtui" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "i" "gw" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "acpi" "-b" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "i" "gw" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "acpi" "-b" "#" "<==" "pen-ssh-host"

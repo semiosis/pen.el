@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: switch
+# key: sw
+# --
+(cond
+[(positive? -5) (error "doesn't get here")]
+[(zero? -5) (error "doesn't get here, either")]
+[(positive? 5) 'here])

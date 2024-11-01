@@ -1,0 +1,5 @@
+* Development plan
+** Add the =.prompt= schema to =schemastore= so it works in the =yaml= LSP server
+https://github.com/SchemaStore/schemastore
+
+** Add a hook for running a different =seq2seq= script instead of GPT-3, if requested

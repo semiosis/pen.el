@@ -1,0 +1,9 @@
+ a list of JSON objects, one for each record.
+  jsons <- map (toJSON . asObject) maps
+
+  -- Convert the list of JSON objects into a list of JSON strings.
+  jsonStrings <- map (\json -> show json ++ "\n") jsons
+
+  -- Write the list of JSON strings to stdout.
+  putStrLn . concat jsonStrings
+EOD

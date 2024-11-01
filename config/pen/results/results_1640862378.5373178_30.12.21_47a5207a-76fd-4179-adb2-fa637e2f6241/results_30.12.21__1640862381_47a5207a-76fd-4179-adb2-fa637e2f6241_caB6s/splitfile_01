@@ -1,0 +1,4 @@
+
+By default, the "Command" key is mapped to the "Control" modifier.
+So when you press "Command" and "q", this will quit "emacs".
+

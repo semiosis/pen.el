@@ -1,0 +1,14 @@
+"sysstat" is a system activity viewer and logger.
+
+It is used to monitor system performance and usage activity.
+
+It collects information from /proc, the kernel, and/or
+external utilities, and displays summary information,
+as well as log files of past activity.
+
+The package also collects information from the cpufreq
+module, even without being loaded, if there is such a
+module on the system.
+
+The package also monitors CPU frequency scaling,
+acpi

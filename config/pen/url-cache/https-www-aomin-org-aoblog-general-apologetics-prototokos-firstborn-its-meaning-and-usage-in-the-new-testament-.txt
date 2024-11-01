@@ -1,0 +1,1933 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 06 Dec 2023 04:53:15 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/7.4.19
+Last-Modified: Wed, 06 Dec 2023 04:53:15 GMT
+ETag: "cfc4bf88dd8510b10cc2f4de30b66d6b"
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html
+class="no-js lt-ie9 lt-ie8 lt-ie7" lang=en-US><![endif]-->
+<!--[if IE 7]><html
+class="no-js lt-ie9 lt-ie8" lang=en-US><![endif]-->
+<!--[if IE 8]><html
+class="no-js lt-ie9" lang=en-US><![endif]-->
+<!--[if IE 9]><html
+class="no-js lt-ie10" lang=en-US><![endif]-->
+<!--[if gt IE 9]><!--><html
+class=no-js lang=en-US>
+<!--<![endif]--><head><link
+rel=stylesheet href=https://www.aomin.org/aoblog/wp-content/cache/minify/8a1b7.default.include.dddfbb.css media=all> <script defer src=https://www.aomin.org/aoblog/wp-content/cache/minify/8a1b7.default.include.8556fd.js></script> <meta
+http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width, initial-scale=1.0"><link
+rel=profile href=http://gmpg.org/xfn/11><link
+rel=pingback href=https://www.aomin.org/aoblog/xmlrpc.php><link
+rel="shortcut icon" href=https://www.aomin.org/aoblog/wp-content/uploads/2020/06/Logo-red-e1591639042841.png>
+<!--[if lt IE 9]> <script src=https://www.aomin.org/aoblog/wp-content/themes/kleo/assets/js/html5shiv.js></script> <![endif]--><!--[if IE 7]><link
+rel=stylesheet href=https://www.aomin.org/aoblog/wp-content/themes/kleo/assets/css/fontello-ie7.css>
+<![endif]--><meta
+name="twitter:card" content="summary"><meta
+name="twitter:creator" content="@DrOakley1689"><meta
+name="twitter:site" content="@DrOakley1689"><meta
+name="twitter:title" content="PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament"><meta
+name="twitter:description" content="PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New TestamentThe Apostle Paul left us two great passages expressing his teaching concerning the person of Christ in His pre-incarnate sta"><meta
+name="twitter:image" content="https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png"><meta
+name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'><meta
+property="og:title" content="PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament"><meta
+property="og:description" content="PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament  The Apostle Paul left us two great passages expressing his teaching concerning the p"><meta
+property="og:image" content="https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png"><meta
+property="og:image:width" content="230"><meta
+property="og:image:height" content="165"><meta
+property="og:type" content="article"><meta
+property="og:article:published_time" content="1986-01-01 00:15:10"><meta
+property="og:article:modified_time" content="2018-04-19 15:17:57"><meta
+name="twitter:card" content="summary"><meta
+name="twitter:title" content="PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament"><meta
+name="twitter:description" content="PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament  The Apostle Paul left us two great passages expressing his teaching concerning the p"><meta
+name="twitter:image" content="https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png"><meta
+name="author" content="James White"><title>PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament - Alpha and Omega Ministries</title><link
+rel=canonical href=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/ ><meta
+property="og:url" content="https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/"><meta
+property="og:site_name" content="Alpha and Omega Ministries"><meta
+property="article:publisher" content="https://www.facebook.com/aomin.org"><meta
+property="article:published_time" content="1986-01-01T05:15:10+00:00"><meta
+property="article:modified_time" content="2018-04-19T20:17:57+00:00"><meta
+property="og:image" content="https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png"><meta
+property="og:image:width" content="230"><meta
+property="og:image:height" content="165"><meta
+property="og:image:type" content="image/png"><meta
+name="author" content="James White"><meta
+name="twitter:label1" content="Written by"><meta
+name="twitter:data1" content="James White"><meta
+name="twitter:label2" content="Est. reading time"><meta
+name="twitter:data2" content="13 minutes"> <script type=application/ld+json class=yoast-schema-graph>{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#article","isPartOf":{"@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/"},"author":{"name":"James White","@id":"https://www.aomin.org/aoblog/#/schema/person/ae536bcc768adace3c384b380f52ce6f"},"headline":"PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament","datePublished":"1986-01-01T05:15:10+00:00","dateModified":"2018-04-19T20:17:57+00:00","mainEntityOfPage":{"@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/"},"wordCount":2651,"commentCount":0,"publisher":{"@id":"https://www.aomin.org/aoblog/#organization"},"image":{"@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#primaryimage"},"thumbnailUrl":"https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png","articleSection":["General Apologetics","Jehovah's Witnesses","Mormonism","Theology Matters"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#respond"]}]},{"@type":"WebPage","@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/","url":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/","name":"PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament - Alpha and Omega Ministries","isPartOf":{"@id":"https://www.aomin.org/aoblog/#website"},"primaryImageOfPage":{"@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#primaryimage"},"image":{"@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#primaryimage"},"thumbnailUrl":"https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png","datePublished":"1986-01-01T05:15:10+00:00","dateModified":"2018-04-19T20:17:57+00:00","breadcrumb":{"@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#primaryimage","url":"https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png","contentUrl":"https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png","width":230,"height":165},{"@type":"BreadcrumbList","@id":"https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.aomin.org/aoblog/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.aomin.org/aoblog/blog/"},{"@type":"ListItem","position":3,"name":"PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament"}]},{"@type":"WebSite","@id":"https://www.aomin.org/aoblog/#website","url":"https://www.aomin.org/aoblog/","name":"Alpha and Omega Ministries","description":"Toward a Defense of the Faith","publisher":{"@id":"https://www.aomin.org/aoblog/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.aomin.org/aoblog/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.aomin.org/aoblog/#organization","name":"Alpha and Omega Ministries","url":"https://www.aomin.org/aoblog/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.aomin.org/aoblog/#/schema/logo/image/","url":"https://www.aomin.org/aoblog/wp-content/uploads/2020/06/Logo-red-e1591639042841.png","contentUrl":"https://www.aomin.org/aoblog/wp-content/uploads/2020/06/Logo-red-e1591639042841.png","width":257,"height":234,"caption":"Alpha and Omega Ministries"},"image":{"@id":"https://www.aomin.org/aoblog/#/schema/logo/image/"},"sameAs":["https://www.youtube.com/user/AominOrg","https://www.facebook.com/aomin.org","https://twitter.com/AominOrg"]},{"@type":"Person","@id":"https://www.aomin.org/aoblog/#/schema/person/ae536bcc768adace3c384b380f52ce6f","name":"James White","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.aomin.org/aoblog/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/65bd694048f75f36c8df28dfc0b4d53a?s=96&d=mm&r=pg","contentUrl":"https://secure.gravatar.com/avatar/65bd694048f75f36c8df28dfc0b4d53a?s=96&d=mm&r=pg","caption":"James White"},"description":"James White is the director of Alpha and Omega Ministries, a Christian apologetics organization based in Phoenix, Arizona. He is the author of more than twenty four books, a professor, an accomplished debater.","sameAs":["http://www.aomin.org/"],"url":"https://www.aomin.org/aoblog/author/droakley/"}]}</script> <link
+rel=dns-prefetch href=//fonts.googleapis.com><link
+rel=dns-prefetch href=//s.w.org><link
+rel=alternate type=application/rss+xml title="Alpha and Omega Ministries &raquo; Feed" href=https://www.aomin.org/aoblog/feed/ ><link
+rel=alternate type=application/rss+xml title="Alpha and Omega Ministries &raquo; Comments Feed" href=https://www.aomin.org/aoblog/comments/feed/ ><link
+rel=alternate type=application/rss+xml title="Alpha and Omega Ministries &raquo; PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament Comments Feed" href=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/feed/ > <script>window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.aomin.org\/aoblog\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style>img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-shadow:none !important;height:1em !important;width:1em !important;margin:0
+0.07em !important;vertical-align:-0.1em !important;background:none !important;padding:0
+!important}</style><link
+rel=stylesheet id=tablepresstable-buildindexcss-css  href=https://www.aomin.org/aoblog/wp-content/plugins/tablepress/blocks/table/build/index.css type=text/css media=all><style id=global-styles-inline-css>/*<![CDATA[*/body{--wp--preset--color--black:#000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#fff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale:url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale:url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow:url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red:url('#wp-duotone-blue-red');--wp--preset--duotone--midnight:url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow:url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green:url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange:url('#wp-duotone-blue-orange');--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px}.has-black-color{color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-color{color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-color{color:var(--wp--preset--color--white) !important}.has-pale-pink-color{color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-color{color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-color{color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-color{color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-color{color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-color{color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-color{color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-color{color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-color{color:var(--wp--preset--color--vivid-purple) !important}.has-black-background-color{background-color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-background-color{background-color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-background-color{background-color:var(--wp--preset--color--white) !important}.has-pale-pink-background-color{background-color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-background-color{background-color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-background-color{background-color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-background-color{background-color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-background-color{background-color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-background-color{background-color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-background-color{background-color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-background-color{background-color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-background-color{background-color:var(--wp--preset--color--vivid-purple) !important}.has-black-border-color{border-color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-border-color{border-color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-border-color{border-color:var(--wp--preset--color--white) !important}.has-pale-pink-border-color{border-color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-border-color{border-color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-border-color{border-color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-border-color{border-color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-border-color{border-color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-border-color{border-color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-border-color{border-color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-border-color{border-color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-border-color{border-color:var(--wp--preset--color--vivid-purple) !important}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important}.has-cool-to-warm-spectrum-gradient-background{background:var(--wp--preset--gradient--cool-to-warm-spectrum) !important}.has-blush-light-purple-gradient-background{background:var(--wp--preset--gradient--blush-light-purple) !important}.has-blush-bordeaux-gradient-background{background:var(--wp--preset--gradient--blush-bordeaux) !important}.has-luminous-dusk-gradient-background{background:var(--wp--preset--gradient--luminous-dusk) !important}.has-pale-ocean-gradient-background{background:var(--wp--preset--gradient--pale-ocean) !important}.has-electric-grass-gradient-background{background:var(--wp--preset--gradient--electric-grass) !important}.has-midnight-gradient-background{background:var(--wp--preset--gradient--midnight) !important}.has-small-font-size{font-size:var(--wp--preset--font-size--small) !important}.has-medium-font-size{font-size:var(--wp--preset--font-size--medium) !important}.has-large-font-size{font-size:var(--wp--preset--font-size--large) !important}.has-x-large-font-size{font-size:var(--wp--preset--font-size--x-large) !important}/*]]>*/</style><link
+rel=stylesheet id=kleo-google-fonts-css  href='//fonts.googleapis.com/css?family=Roboto+Condensed%3A300%7CRoboto%3A400&#038;ver=6.0.2' type=text/css media=all><link
+rel=stylesheet id=tablepress-responsive-tables-css  href=https://www.aomin.org/aoblog/wp-content/plugins/tablepress-responsive-tables/css/tablepress-responsive.min.css type=text/css media=all><link
+rel=stylesheet id=simcal-qtip-css  href=https://www.aomin.org/aoblog/wp-content/plugins/google-calendar-events/assets/generated/vendor/jquery.qtip.min.css type=text/css media=all><link
+rel=stylesheet id=simcal-default-calendar-grid-css  href=https://www.aomin.org/aoblog/wp-content/plugins/google-calendar-events/assets/generated/default-calendar-grid.min.css type=text/css media=all><link
+rel=stylesheet id=simcal-default-calendar-list-css  href=https://www.aomin.org/aoblog/wp-content/plugins/google-calendar-events/assets/generated/default-calendar-list.min.css type=text/css media=all><link
+rel=stylesheet id=kleo-combined-css  href=https://www.aomin.org/aoblog/wp-content/uploads/custom_styles/combined.css type=text/css media=all><link
+rel=stylesheet id=kleo-colors-css  href=https://www.aomin.org/aoblog/wp-content/uploads/custom_styles/dynamic.css type=text/css media=all><link
+rel=stylesheet id=kleo-fonts-css  href=https://www.aomin.org/aoblog/wp-content/themes/kleo/assets/css/fontello.css type=text/css media=all><link
+rel=stylesheet id=kleo-style-css  href=https://www.aomin.org/aoblog/wp-content/themes/kleo-child/style.css type=text/css media=all> <script src=https://www.aomin.org/aoblog/wp-includes/js/jquery/jquery.min.js id=jquery-core-js></script> <script src=https://www.aomin.org/aoblog/wp-includes/js/jquery/jquery-migrate.min.js id=jquery-migrate-js></script> <script src=https://www.aomin.org/aoblog/wp-content/plugins/turbo-widgets/public/js/turbo-widgets-public.js id=turbo-widgets-js></script> <script></script><link
+rel=https://api.w.org/ href=https://www.aomin.org/aoblog/wp-json/ ><link
+rel=alternate type=application/json href=https://www.aomin.org/aoblog/wp-json/wp/v2/posts/17345><link
+rel=EditURI type=application/rsd+xml title=RSD href=https://www.aomin.org/aoblog/xmlrpc.php?rsd><link
+rel=wlwmanifest type=application/wlwmanifest+xml href=https://www.aomin.org/aoblog/wp-includes/wlwmanifest.xml><meta
+name="generator" content="WordPress 6.0.2"><link
+rel=shortlink href='https://www.aomin.org/aoblog/?p=17345'><link
+rel=alternate type=application/json+oembed href="https://www.aomin.org/aoblog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.aomin.org%2Faoblog%2Fgeneral-apologetics%2Fprototokos-firstborn-its-meaning-and-usage-in-the-new-testament%2F"><link
+rel=alternate type=text/xml+oembed href="https://www.aomin.org/aoblog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.aomin.org%2Faoblog%2Fgeneral-apologetics%2Fprototokos-firstborn-its-meaning-and-usage-in-the-new-testament%2F&#038;format=xml"><style>/*<![CDATA[*/.aawp .aawp-tb__row--highlight{background-color:#256aaf}.aawp .aawp-tb__row--highlight{color:#256aaf}.aawp .aawp-tb__row--highlight
+a{color:#256aaf}/*]]>*/</style><meta
+name="verify-v1" content="3KNihrY2BMexeoPkoB/OxhbLUKC1HOzZJkJ9PzLCGMk="> <script>var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-11234494-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script> <meta
+name="theme-color" content="#212121"><meta
+name="msapplication-navbutton-color" content="#212121"><meta
+name="apple-mobile-web-app-status-bar-style" content="#212121"> <script>"use strict";document.documentElement.className+=' js-active ';document.documentElement.className+='ontouchstart'in document.documentElement?' kleo-mobile ':' kleo-desktop ';var prefix=['-webkit-','-o-','-moz-','-ms-',""];for(var i in prefix){if(prefix[i]+'transform'in document.documentElement.style)document.documentElement.className+=" kleo-transform ";break;}</script> <meta
+name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."><meta
+name="generator" content="Powered by Slider Revolution 6.6.18 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."><style>.widget_tag_cloud
+a{font-size:small !important}</style> <script>function setREVStartSize(e){window.RSIW=window.RSIW===undefined?window.innerWidth:window.RSIW;window.RSIH=window.RSIH===undefined?window.innerHeight:window.RSIH;try{var pw=document.getElementById(e.c).parentNode.offsetWidth,newh;pw=pw===0||isNaN(pw)||(e.l=="fullwidth"||e.layout=="fullwidth")?window.RSIW:pw;e.tabw=e.tabw===undefined?0:parseInt(e.tabw);e.thumbw=e.thumbw===undefined?0:parseInt(e.thumbw);e.tabh=e.tabh===undefined?0:parseInt(e.tabh);e.thumbh=e.thumbh===undefined?0:parseInt(e.thumbh);e.tabhide=e.tabhide===undefined?0:parseInt(e.tabhide);e.thumbhide=e.thumbhide===undefined?0:parseInt(e.thumbhide);e.mh=e.mh===undefined||e.mh==""||e.mh==="auto"?0:parseInt(e.mh,0);if(e.layout==="fullscreen"||e.l==="fullscreen")
+newh=Math.max(e.mh,window.RSIH);else{e.gw=Array.isArray(e.gw)?e.gw:[e.gw];for(var i in e.rl)if(e.gw[i]===undefined||e.gw[i]===0)e.gw[i]=e.gw[i-1];e.gh=e.el===undefined||e.el===""||(Array.isArray(e.el)&&e.el.length==0)?e.gh:e.el;e.gh=Array.isArray(e.gh)?e.gh:[e.gh];for(var i in e.rl)if(e.gh[i]===undefined||e.gh[i]===0)e.gh[i]=e.gh[i-1];var nl=new Array(e.rl.length),ix=0,sl;e.tabw=e.tabhide>=pw?0:e.tabw;e.thumbw=e.thumbhide>=pw?0:e.thumbw;e.tabh=e.tabhide>=pw?0:e.tabh;e.thumbh=e.thumbhide>=pw?0:e.thumbh;for(var i in e.rl)nl[i]=e.rl[i]<window.RSIW?0:e.rl[i];sl=nl[0];for(var i in nl)if(sl>nl[i]&&nl[i]>0){sl=nl[i];ix=i;}
+var m=pw>(e.gw[ix]+e.tabw+e.thumbw)?1:(pw-(e.tabw+e.thumbw))/(e.gw[ix]);newh=(e.gh[ix]*m)+(e.tabh+e.thumbh);}
+var el=document.getElementById(e.c);if(el!==null&&el)el.style.height=newh+"px";el=document.getElementById(e.c+"_wrapper");if(el!==null&&el){el.style.height=newh+"px";el.style.display="block";}}catch(e){console.log("Failure at Presize of Slider:"+e)}};</script> <style id=wp-custom-css>.post-meta
+a{color:#606060 !important}</style><noscript><style>.wpb_animate_when_almost_visible{opacity:1}</style></noscript></head><body
+class="post-template-default single single-post postid-17345 single-format-standard wp-embed-responsive aawp-custom kleo-navbar-fixed navbar-resize header-overflow header-flexmenu wpb-js-composer js-comp-ver-7.2 vc_responsive"><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-dark-grayscale><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0 0.49803921568627"/><feFuncG
+type="table" tableValues="0 0.49803921568627"/><feFuncB
+type="table" tableValues="0 0.49803921568627"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-grayscale><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0 1"/><feFuncG
+type="table" tableValues="0 1"/><feFuncB
+type="table" tableValues="0 1"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-purple-yellow><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0.54901960784314 0.98823529411765"/><feFuncG
+type="table" tableValues="0 1"/><feFuncB
+type="table" tableValues="0.71764705882353 0.25490196078431"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-blue-red><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0 1"/><feFuncG
+type="table" tableValues="0 0.27843137254902"/><feFuncB
+type="table" tableValues="0.5921568627451 0.27843137254902"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-midnight><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0 0"/><feFuncG
+type="table" tableValues="0 0.64705882352941"/><feFuncB
+type="table" tableValues="0 1"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-magenta-yellow><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0.78039215686275 1"/><feFuncG
+type="table" tableValues="0 0.94901960784314"/><feFuncB
+type="table" tableValues="0.35294117647059 0.47058823529412"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-purple-green><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0.65098039215686 0.40392156862745"/><feFuncG
+type="table" tableValues="0 1"/><feFuncB
+type="table" tableValues="0.44705882352941 0.4"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><svg
+xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter
+id=wp-duotone-blue-orange><feColorMatrix
+color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/><feComponentTransfer
+color-interpolation-filters="sRGB" ><feFuncR
+type="table" tableValues="0.098039215686275 1"/><feFuncG
+type="table" tableValues="0 0.66274509803922"/><feFuncB
+type="table" tableValues="0.84705882352941 0.41960784313725"/><feFuncA
+type="table" tableValues="1 1"/></feComponentTransfer><feComposite
+in2="SourceGraphic" operator="in"/></filter></defs></svg><div
+class=kleo-page><div
+id=header class=header-color><div
+class=navbar role=navigation><div
+class="kleo-main-header header-normal"><div
+class=container><div
+class=navbar-header><div
+class=kleo-mobile-switch><button
+type=button class=navbar-toggle data-toggle=collapse data-target=.nav-b07deaf9>
+<span
+class=sr-only>Toggle navigation</span>
+<span
+class=icon-bar></span>
+<span
+class=icon-bar></span>
+<span
+class=icon-bar></span>
+</button></div><div
+class=kleo-mobile-icons></div><strong
+class=logo>
+<a
+href=https://www.aomin.org/aoblog>
+<img
+id=logo_img title="Alpha and Omega Ministries" src=https://www.aomin.org/aoblog/wp-content/uploads/2020/06/Logo-red-e1591639042841.png
+alt="Alpha and Omega Ministries">
+</a>
+</strong></div><div
+class="primary-menu collapse navbar-collapse nav-collapse nav-b07deaf9"><ul
+id=menu-main-menu class="nav navbar-nav"><li
+id=menu-item-9587 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9587"><a
+title=Home href=/ >Home</a></li>
+<li
+id=menu-item-9580 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9580"><a
+title="James White" href=https://www.aomin.org/aoblog/about/ >James White</a></li>
+<li
+id=menu-item-9585 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9585"><a
+title="Statement of Faith" href=https://www.aomin.org/aoblog/statement-of-faith/ >Statement of Faith</a></li>
+<li
+id=menu-item-9584 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9584"><a
+title=Webcast href=https://www.aomin.org/aoblog/webcast/ >Webcast</a></li>
+<li
+id=menu-item-27024 class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-27024"><a
+title=Blog href=https://www.aomin.org/aoblog/blog/ >Blog</a></li>
+<li
+id=menu-item-34340 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34340"><a
+title=Transcripts href=https://www.aomin.org/aoblog/transcripts/ >Transcripts</a></li>
+<li
+id=menu-item-31860 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31860"><a
+title=Donate href=https://www.aomin.org/aoblog/support-us/ >Donate</a></li>
+<li
+id=menu-item-16714 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16714 dropdown mega-14-cols"><a
+title=Bookstore href=https://www.aomin.org/aoblog/store/ class=js-activated>Bookstore <span
+class=caret></span></a><ul
+role=menu class="dropdown-menu sub-menu pull-left">
+<li
+id=menu-item-16827 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16827"><a
+title="Attributes of God" href=https://www.aomin.org/aoblog/store/attributes-of-god/ >Attributes of God</a></li>
+<li
+id=menu-item-16787 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16787"><a
+title="Basic Training" href=https://www.aomin.org/aoblog/store/basic-training/ >Basic Training</a></li>
+<li
+id=menu-item-16715 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16715"><a
+title="Church History" href=https://www.aomin.org/aoblog/store/church-history/ >Church History</a></li>
+<li
+id=menu-item-16831 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16831"><a
+title="How We Got the Bible" href=https://www.aomin.org/aoblog/store/how-we-got-the-bible/ >How We Got the Bible</a></li>
+<li
+id=menu-item-16719 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16719"><a
+title=Calvinism href=https://www.aomin.org/aoblog/store/reformed-theology/ >Reformed Theology</a></li>
+<li
+id=menu-item-16717 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16717"><a
+title="Roman Catholicism" href=https://www.aomin.org/aoblog/store/roman-catholicism/ >Roman Catholicism</a></li>
+<li
+id=menu-item-16725 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16725"><a
+title=Mormonism href=https://www.aomin.org/aoblog/store/mormonism/ >Mormonism</a></li>
+<li
+id=menu-item-16857 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16857"><a
+title="Christian Controversy" href=https://www.aomin.org/aoblog/store/christian-controversy-2/ >Christian Controversy</a></li>
+<li
+id=menu-item-16729 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16729"><a
+title=Islam href=https://www.aomin.org/aoblog/store/islam/ >Islam</a></li>
+<li
+id=menu-item-16718 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16718"><a
+title="Culture &#038; Ethics" href=https://www.aomin.org/aoblog/store/culture-ethics/ >Culture &#038; Ethics</a></li>
+<li
+id=menu-item-16792 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16792"><a
+title="Grief &#038; Loss" href=https://www.aomin.org/aoblog/store/grief-loss/ >Grief &#038; Loss</a></li>
+<li
+id=menu-item-16807 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16807"><a
+title="Learn Greek &#038; Hebrew" href=https://www.aomin.org/aoblog/store/learn-greek-hebrew/ >Learn Greek &#038; Hebrew</a></li>
+<li
+id=menu-item-16987 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16987"><a
+title=Commentaries href=https://www.aomin.org/aoblog/store/commentaries/ >Commentaries</a></li>
+<li
+id=menu-item-16988 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16988"><a
+title="Systematic Theology" href=https://www.aomin.org/aoblog/store/systematic-theology/ >Systematic Theology</a></li></ul>
+</li>
+<li
+id=menu-item-30013 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30013"><a
+title=Store href=https://doctrineandlife.co/ >Store</a></li>
+<li
+id=menu-item-16892 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16892"><a
+title="AOMIN App" href=https://www.aomin.org/aoblog/aomin-app/ >AOMIN App</a></li>
+<li
+id=menu-item-27019 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27019"><a
+title="Contact Us" href=https://www.aomin.org/aoblog/contact-us/ >Contact Us</a></li>
+<li
+id=menu-item-27020 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27020"><a
+title=Twitter href=https://twitter.com/AominOrg><i
+class=icon-twitter></i></a></li>
+<li
+id=menu-item-27021 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27021"><a
+title=YouTube href=https://www.youtube.com/user/AominOrg><i
+class=icon-youtube-play></i></a></li>
+<li
+id=menu-item-27023 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27023"><a
+title=FaceBook href=https://www.facebook.com/aomin.org><i
+class=icon-facebook-squared></i></a></li>
+<li
+id=nav-menu-item-search class="menu-item kleo-search-nav">  <a
+class=search-trigger href=#><i
+class="icon icon-search"></i></a><div
+class="kleo-search-wrap searchHidden" id=ajax_search_container><form
+class=form-inline id=ajax_searchform action=https://www.aomin.org/aoblog/
+data-context>
+<input
+type=hidden name=post_type[] value>  <input
+name=s class="ajax_s form-control" autocomplete=off
+type=text
+value placeholder="Start typing to search..."
+required>
+<span
+class=kleo-ajax-search-loading><i
+class="icon-spin6 animate-spin"></i></span></form><div
+class=kleo_ajax_results></div></div></li></ul></div></div></div></div></div><div
+id=main><section
+class='container-wrap main-title alternate-color  border-bottom breadcrumbs-container'><div
+class=container><h1 class="page-title">PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament</h1><div
+class=breadcrumb-extra><div
+class="kleo_framework breadcrumb"><span><span><a
+href=https://www.aomin.org/aoblog/ >Home</a> » <span><a
+href=https://www.aomin.org/aoblog/blog/ >Blog</a> » <span
+class=breadcrumb_last aria-current=page>PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament</span></span></span></span></div></div></div></section><section
+class="container-wrap main-color"><div
+id=main-container class=container><div
+class=row><div
+class="template-page col-sm-9 tpl-right with-meta"><div
+class=wrap-content><article
+id=post-17345 class="clearfix post-17345 post type-post status-publish format-standard has-post-thumbnail hentry category-general-apologetics category-jehovahs-witnesses category-mormonism category-theology-matters"><div
+class=article-meta>
+<span
+class=post-meta>
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/droakley/ title="View all POSTS by James White" rel=author> <span
+class=author-name>James White</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/ rel=bookmark class=post-time><time
+class=entry-date datetime=1986-01-01T00:15:10-07:00>January 1, 1986</time><time
+class="modify-date hide hidden updated" datetime=2018-04-19T15:17:57-07:00>April 19, 2018</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ rel="category tag">General Apologetics</a>, <a
+href=https://www.aomin.org/aoblog/category/jehovahs-witnesses/ rel="category tag">Jehovah's Witnesses</a>, <a
+href=https://www.aomin.org/aoblog/category/mormonism/ rel="category tag">Mormonism</a>, <a
+href=https://www.aomin.org/aoblog/category/theology-matters/ rel="category tag">Theology Matters</a></small>		</span></div><div
+class=article-media>
+<img
+width=230 height=165 src=https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png class="attachment-kleo-full-width size-kleo-full-width wp-post-image" alt loading=lazy srcset="https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png 230w, https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847-150x108.png 150w" sizes="(max-width: 230px) 100vw, 230px"></div><div
+class=article-content><p
+style="text-align: center;"><strong>PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament </strong></p><p>The Apostle Paul left us two great passages expressing his teaching concerning the person of Christ in His pre-incarnate state: Philippians 2:5-7 and Colossians 1:15-17. It is interesting that both passages provide quite a challenge to the translator, though their meaning undoubtedly was clear to their original audiences. In the Colossians passage, Paul describes the Lord Christ as “the image of the invisible God, the first-born of all creation.” (New American Standard Bible). He then goes on to ascribe to Jesus the creation of ta panta, all things, i. e., the universe and all that is in it.<sup>1</sup> How, then, are we to understand Paul’s use of the phrase, “first-born”? What does this word tell us about Jesus Christ? How is it used in the New Testament?</p><p>The word under consideration is <em>prototokos</em>. It is made up of two words, <em>protos</em>, meaning first,<sup>2</sup> and <em>tokos</em> from <em>tikto</em>, “to give birth.”<sup>3</sup> There is little evidence that the word <em>prototokos</em> was used extensively before the time of the Septuagint.<sup>4</sup> Its basic meaning is the first one born, the first born child. However, it must be examined in its context to determine its true meaning.</p><p><strong>Usage in the Septuagint </strong></p><p>The word <em>prototokos</em> is used approximately 130 times in the Septuagint (LXX). About 70 of those instances will be found in the genealogical lists of * Genesis and Chronicles, and here it retains its literal meaning of “firstborn.” <sup>5</sup> The Hebrew word <em>bekor</em> is consistently translated by <em>prototokos</em> in the LXX. It must be remembered that the <em>bekor</em>, the first-born, was entitled to the double portion (Deuteronomy 21:17), to the blessing (Genesis 27), and to special treatment (Genesis 43:33).<sup>6</sup> <a
+id=bookmark></a>An etymological study of <em>bekor</em> reveals that it is not related in its root meaning to either the ideas of <em>protos</em> or <em>tokos</em>, and hence the meanings might have become “detached altogether from the idea of birth or the whole question of origin.”<sup>7</sup></p><p>This idea of <em>prototokos</em> is seen clearly in the Old Testament. For example, the Septuagint translators utilized <em>prototokos</em> in their rendition of Exodus 4:22: “Then you shall say to Pharaoh, &#8216;Thus says the LORD, “Israel is My son, My first-born.” ’ ” (LXX: <em>prototokos</em>). Obviously here the emphasis is on the primacy of Israel’s relation to God. Of all nations, Israel is chosen specially by God to occupy a place of high honor and esteem. In 1 Chronicles 5:1-2 we read of Reuben, the first-born of Israel, losing his birthright for his sin. Here the idea of first-born carries with it much more than just temporal ascendancy.</p><p>In Jeremiah 31:9 the Scriptures record God as saying, “I am a father to Israel, and Ephraim is My first-born.” Passages such as this provided a basis for the later Rabbinic interpretation that referred to the nation of Israel as God’s “first-born” in the special sense of Israel’s superiority and exaltation above the nations of the earth. Seemingly the most significant passage is to be found at Psalm 89:27: “I shall also make him My first-born, the highest of the kings of the earth.” This highly Messianic passage paves the way for a solid understanding of the use of <em>prototokos</em> in the New Testament, especially in relation to the Messiah, Jesus. In this passage, a clear emphasis on the pre-eminence and superiority of the coming Messiah is emphasized.</p><p><strong>New Testament Usage </strong></p><p>In the New Testament we find the word <em>prototokos</em> used a total of eight times. Six of these instances are in the singular and refer to the Lord Christ, two are in the plural form.<sup>8</sup> These passages are: Luke 2:7, Romans 8:29, Colossians 1:15 and 1:18, Hebrews 1:6, 11:28, 12:23, and Revelation 1:5. The first passage, Luke 2:7 of the Christmas narrative, refers to the basic meaning of the word as it is used in the genealogy lists of the Old Testament. The other references, however, take on a far greater meaning.</p><p>In the New Testament usage, the emphasis is placed not on the <em>tokos</em> but instead upon the <em>protos</em>. The word stresses superiority and priority rather than origin or birth. This can be seen as early as the LXX usage, where it has been pointed out that Israel, as God’s first-born, certainly can not be seen as the first creation of God, but rather His special choice and preeminent people. The Bauer, Arndt, Gingrich, Danker Lexicon says, “This expression&#8230;is also used in some instances where it is uncertain whether the force of the element <em>-tokos</em> is still felt at all&#8230;Col. 1:15.”<sup>9</sup></p><p>In Romans 8:29, the Lord Christ is described as “the first-born among many brethren.” These brethren are, of course, the glorified Christians. Here the Lord’s superiority and sovereignty over “the brethren” is acknowledged, as well as His leadership in their salvation. “As the <u>brethren</u> of Christ, all Christians will share his destiny (c.f. Heb. 2:10-17), and Christ is the pre-eminent Son among the sons of God (c.f. 1:3).”<sup>10</sup> In Hebrews 1:6 we read, “And when He again brings the first-born into the world, He says, “And let all the angels of God worship Him.” Here the idea of pre-eminence is obvious, as all of God’s angels are instructed to worship Him, a privilege rightly reserved only for God (Luke 4:8). The term prototokos is used here as a title, and no idea of birth or origin is<br>
+seen.</p><p>In both Colossians 1:18 and Revelation 1:5, Christ Jesus is called the first-born of the dead (or <strong>from</strong> the dead). These would refer especially to the leadership of Christ in bringing about the resurrection of the dead and inauguration of a new, eternal life. Some think that Colossians 1:15-20 is an ancient Christian hymn, and the Greek words <em>prototokos</em> and <em>proteouon</em> are a play on sound.<sup>11</sup></p><p>The greatest amount of discussion and exegesis has centered around Paul’s use of <em>prototokos pases ktiseos</em> of Christ in Colossians 1:15. The early Church Fathers argued it, and modern scholars have spent more time discussing this use than all seven other instances combined.</p><p>In commenting on this passage, Kenneth Wuest said:</p><blockquote><p>The Greek word implied two things, priority to all creation and sovereignty over all creation. In the first meaning we see the absolute pre-existence of the Logos. Since our Lord existed before all created things, He must be uncreated. Since He is uncreated, He is eternal. Since He is eternal, He is God. Since He is God, He cannot be one of the emanations from deity of which the Gnostic speaks&#8230;In the second meaning we see that He is the natural ruler, the acknowledged head of God’s household&#8230;He is Lord of creation.<sup>12</sup></p></blockquote><p>It seems the eminent Greek scholar J. B. Lightfoot was behind at least the outline of Wuest’s comments, as he provides much the same information in his commentary on the usage of <em>prototokos</em> in Colossians 1:15. He would opt for interpreting the phrase in which the word appears as a genitive of relation.<sup>13</sup> He sees a definite connection between Paul’s use of <em>prototokos</em> here and its LXX usage at Psalm 89:27. He discusses both the aspects of priority to all creation as well as sovereignty over all creation. Lightfoot quotes one Rabbi Bechai, who gives us an example of how some of the Jewish Rabbis viewed <em>prototokos</em>. R. Bechai described God as the <u>primogenitus</u> <u>mundi</u>, i.e., <em>hos estin prototokos tou kosmou</em> as translated into Greek. Certainly R. Bechai did not mean that God had a beginning or origin, but that He was supreme over all the world.. Hence Lightfoot says, “God’s first-born, is the natural ruler, the acknowledged head, of God’s household.”<sup>14</sup></p><p><strong>The Expositor’s Greek Testament</strong> defines <em>prototokos</em> in this way:</p><blockquote><p>&#8230;<em>prototokos</em> in its primary sense expresses temporal priority, and then, on account of the privileges of the firstborn, it gains the further sense of dominion.<sup>15</sup></p></blockquote><p>R. M. Clark put it succinctly:</p><blockquote><p><em>Prototokos</em>, first-born&#8230;The original meaning of the word is giving birth for the first time. Later it came to mean the first-born or first in rank. This is the N. T. meaning. In the N. T. the <em>-tokos</em> element is clearly implied only in Luke 2:7, in other places it tends to recede into the background.<sup>16</sup></p></blockquote><p><strong>The Linguistic Key to the Greek New Testament</strong> by Fritz Reinecker and Cleon Rogers, distills down the scholastic information and says, “The word emphasizes the preexistence and uniqueness of Christ as well as His superiority over creation. The term does not indicate that Christ was a creation or a created being.”<sup>17</sup></p><p><strong>Contextual Considerations</strong></p><p>The context of Colossians 1:15, and the phrase in which we encounter <em>prototokos</em> should weigh heavily in our interpretation of the word. Many would disagree with the interpretation and above definition due to the connection of <em>prototokos</em> with <em>pases ktiseos</em>. These would interpret this phrase as being a partitive genitive, making the <em>prototokos </em>a part of creation, a created thing, rather than superior over all things. It is admitted that this could be construed as a partitive genitive, but “this is excluded by the context, which sharply distinguishes between the Son and <em>ta panta</em>, and for this idea Paul would probably have used <em>protoktistos</em>.<sup>18</sup> The well-known scholar, A. T. Robertson, wrote:</p><blockquote><p>The use of this word does not show what Arius argued that Paul regarded Christ as a creature like “all creation (<em>pases ktiseos</em>&#8230;) It is rather the comparative (superlative) force of <em>protos</em> that is used&#8230;Paul is here refuting the Gnostics who pictured Christ as one of the aeons by placing Him before “all creation” (angels and men)&#8230;Paul takes both words to help express the deity of Jesus Christ in his relation to the Father as <em>eikon</em> (Image) and to the universe as <em>prototokos</em> (First-born).<sup>19</sup></p></blockquote><p>It does sound strange to the mind accustomed to reading Paul to imagine him thinking of the One Whom he called <em>kurios</em>, Lord, as a creature &#8211; a mere creation. For no matter how exalted or glorified a creature might be, it is still as far removed from the glory of God Almighty as can be imagined.</p><p><img
+loading=lazy class="attachment-266x266  alignleft" src=http://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png sizes="(max-width: 230px) 100vw, 230px" srcset="http://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png 230w, http://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847-150x108.png 150w" alt width=165 height=118>One of the most telling contextual clues to Paul’s use of <em>prototokos</em> is the ascription of the creation of all things to Christ in the following two verses. The phrase used in these verses, <em>ta panta</em>, is quite revealing. Paul used this term as a synonym for the universe and all it contains. It has been well said, “In Him <em>ta panta</em> were created. From this it follows that the Son cannot be a creature, for creation is exhausted by the “all things” which were created in Him.”<sup>20</sup></p><p>Hence it is seen that the great majority of modern scholarship sees <em>prototokos</em> in the New Testament pointing to the superiority of the Christ above and over all creation. This is not only the background of the word from the Old Testament, but it is also demanded by the contexts in which it is found. Only Colossians 1:15 could be seen to allow any other kind of interpretation whatsoever, and this passage safeguards itself through the immediate context, by ascribing to the <em>prototokos</em> all creation.</p><p><strong>Patristic Usage</strong></p><p>Another clear clue as to the meaning of <em>prototokos</em> in the days of the New Testament is the manner in which the early church Fathers used and interpreted it. Since these Fathers spoke and read Greek, and lived in the same culture to which Paul and the Apostles wrote their letters, their interpretation and understanding of <em>prototokos</em> is important. How did they understand the Pauline passage at Colossians 1:15?</p><p>Justin Martyr, in his <strong>Dialogue with Trypho</strong>, wrote, “&#8230;so that we know Him to be the first-begotten of God, and to be before all creatures.”<sup>21</sup> Notice that Justin was very careful to make sure that his readers knew that Christ was “before all creatures.” It should also be recalled that at this early time, the Fathers were not exceedingly interested in discussing the relationship between the Father and the Son, due to the absence of a great deal of Christological heresy in the Church.</p><p>The most complete discussion of <em>prototokos</em> in the early Fathers comes a number of years after Justin, in the writings of Tertullian as he battled the early heretic Marcion. Here are his comments:</p><blockquote><p>If Christ is not “the first-begotten before every creature,” as that “Word of God by whom all things were made, and without whom nothing was made;” if “all things were” not “in Him created, whether in heaven or on earth, visible and invisible, whether they be thrones or dominions, or principalities, or powers;” if “all things were” not “created by Him and for Him” (for these truths Marcion ought not to allow concerning Him), then the apostle could not have so positively laid it down, that “He is before all.” For how is He before all, if He is not before all things? How, again, is He before all things, if He is not “the first-born of every creature” &#8211; if He is not the Word of the Creator?<sup>22</sup></p></blockquote><p>A later Church Father, Dionysius of Rome, said this:</p><blockquote><p>Oh reckless and rash men! was then “the first-born of every creature” something made?&#8230;Finally, any one may read in many parts of the divine utterances that the Son is said to have been begotten, but never that He was made.<sup>23</sup></p></blockquote><p>Lightfoot gives a list of the Fathers that support this view, and says, “All the fathers of the second and third centuries <u>without</u> <u>exception</u>, so far as I have noticed, correctly refer it to the Eternal Word and not to the Incarnate Christ, to the Deity and not to the humanity of our Lord.”<sup>24</sup> It was only after the Arians latched onto this verse to attempt to teach their doctrines that the Church leaders began to change their exegesis of this passage.</p><p>We have seen that the use of <em>prototokos</em> in the Septuagint, in the New Testament, and in later Patristic writings refers to 1) the first-born, as in Luke 2:7, and, 2) the one who is pre-eminent and sovereign, always in relation to the Lord Jesus Christ. Truly, the Lord of Glory is the Sovereign of all the Universe, the First-born of all Creation.</p><h6><strong>Footnotes:</strong><br>
+1. A. T. Robertson, <strong>Word Pictures in the New Testament</strong>, (Grand Rapids: Baker Book House, 1931), 4:478. See<br>
+also, W. Robertson Nicoll, <strong>The Expositor’s Greek Testament</strong>, (Grand Rapids: Wm. B. Eerdmans Publishing Company,<br>
+1983), 3:502-503.<br>
+2. F. W. Gingrich, “Leads from a Lexicon,’* <strong>Bible Translator</strong>, 10 (January 1959) :84 also mentions that <strong>protos </strong>can<br>
+also mean “of greatest importance, rather than first.”<br>
+3. Walter Bauer, <strong>A Greek English Lexicon of the New Testament and Other Early Christian Literature</strong>, 2nd ed.,<br>
+(Chicago: University of Chicago Press, 1979) p. 816.<br>
+4. Gerhard Kittel and Gerhard Friedrich, <strong>Theological Dictionary of the New Testament</strong>, trans. Geoffrey W. Bromiley<br>
+(Grand Rapids: Wm. B. Eerdmans Publishing Company, 1982), 6:872.<br>
+5. Ibid.<br>
+6. R. Laird Harris, Gleason L. Archer. Bruce K. Waltke, <strong>Theological Wordbook of the Old Testament</strong>, (Chicago:<br>
+Moody Press, 1980) 2:109.<br>
+7. Ibid., p. 873.<br>
+8. Moulton, Geden, Moulton, <strong>Concordance to the Greek Testament</strong>, (Edinburgh: T &amp; T Clark, 1978) p. 875.<br>
+9. Walter Bauer, <strong>A Greek English Lexicon of the New Testament and Other Early Christian Literature</strong>, p. 726.<br>
+10. Dale Moody, “Romans.” <strong>The Broadman Bible Commentary</strong>, (Nashville: Broadman Press, 1970) 10:223.<br>
+11. Ibid.<br>
+12. Kenneth Wuest, <strong>Wuest’s Word Studies in the Greek New Testament</strong>, (Grand Rapids: Wm. B. Eerdmans Publishing<br>
+Company, 1981) Ephesians and Colossians: p. 183.<br>
+13. J. B. Lightfoot, <strong>Saint Paul’s Epistles to the Colossians and to Philemon</strong>. (Grand Rapids: Zondervan Publishing<br>
+House, 1978) p. 148.<br>
+14. Ibid., p. 147.<br>
+15. W. Robertson Nicoll, ed., <strong>The Expositor’s Greek Testament</strong>, p. 502.<br>
+16. R. M. Clark, “Words Relating to the Lord Jesus Christ,” <strong>Bible Translator</strong>, 13 (April 1962) :84.<br>
+17. Fritz Reinecker, Cleon Rogers, <strong>Linguistic Key to the Greek New Testament</strong>. (Grand Rapids: Zondervan Publishing<br>
+House, 1982). p. 567.<br>
+18. Nicoll, <strong>The Expositor’s Greek Testament</strong>, p. 502.<br>
+19. Robertson, <strong>Word Pictures in the Greek New Testament,</strong> p. 478.<br>
+20. Nicoll, <strong>The Expositor’s Greek Testament</strong>, p. 503.<br>
+21. Alexander Roberts, James Donaldson, ed. <strong>The Ante-Nicene Fathers</strong>, 10 vols. (Grand Rapids: Wm. B. Eerdmans<br>
+Publishing Company, 1981; 1:249.<br>
+22. Ibid.. 3:470. See also Tertullian, <u>Against</u> <u>Praxeas</u>, volume 3:601.<br>
+23. Ibid., 7:365.<br>
+24. Lightfoot, <strong>Saint Paul’s Epistles to Philemon and Colossians</strong>, p. 148.</h6></div></article><section
+class="main-color container-wrap social-share-wrap"><div
+class=container><div
+class=share-links><div
+class="hr-title hr-long"><abbr>Share this</abbr></div>
+<span
+class=kleo-love>
+<a
+href=# class=item-likes id=item-likes-17345 title="Like this"><span
+class=item-likes-count>2</span> <span
+class=item-likes-postfix>likes</span></a>  </span>
+<span
+class=kleo-facebook>
+<a
+href="http://www.facebook.com/sharer.php?u=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/" class=post_share_facebook
+onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=220,width=600');return false;">
+<i
+class=icon-facebook></i>
+</a>
+</span>
+<span
+class=kleo-twitter>
+<a
+href="https://twitter.com/share?url=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/" class=post_share_twitter
+onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600');return false;">
+<i
+class=icon-twitter></i>
+</a>
+</span>
+<span
+class=kleo-googleplus>
+<a
+href="https://plus.google.com/share?url=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/"
+onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+<i
+class=icon-gplus></i>
+</a>
+</span>
+<span
+class=kleo-pinterest>
+<a
+href="http://pinterest.com/pin/create/button/?url=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/&media=https://www.aomin.org/aoblog/wp-content/uploads/1986/01/prototokos-e1524169043847.png&description=PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament"
+onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+<i
+class=icon-pinterest-circled></i>
+</a>
+</span>
+<span
+class=kleo-linkedin>
+<a
+href="https://www.linkedin.com/shareArticle?url=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/"
+class=post_share_linkedin
+onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+<i
+class=icon-linkedin></i>
+</a>
+</span>
+<span
+class="kleo-whatsapp visible-xs-inline visible-sm-inline">
+<a
+href="whatsapp://send?text=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/" data-action=share/whatsapp/share>
+<i
+class=icon-whatsapp></i>
+</a>
+</span><span
+class=kleo-mail>
+<a
+href="mailto:?subject=PROTOTOKOS (“Firstborn”): Its Meaning and Usage In the New Testament&body=https://www.aomin.org/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/"
+class=post_share_email>
+<i
+class=icon-mail></i>
+</a>
+</span></div></div></section><section
+class=container-wrap><div
+class=container><div
+class=related-wrap><div
+class="hr-title hr-long"><abbr>Related Articles</abbr></div><div
+class="kleo-carousel-container dot-carousel"><div
+class="kleo-carousel-items kleo-carousel-post" data-min-items=1 data-max-items=6><ul
+class=kleo-carousel>
+<li
+id=post-10746 class="post-item col-sm-4 post-10746 post type-post status-publish format-standard hentry category-general-apologetics category-jehovahs-witnesses category-mormonism"><article><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/general-apologetics/whats-with-the-dudes-at-the-door/ >What’s With the Dudes at the Door?</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/jdowns/ title="View all POSTS by Jeff Downs" rel=author> <span
+class=author-name>Jeff Downs</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/general-apologetics/whats-with-the-dudes-at-the-door/ rel=bookmark class=post-time><time
+class=entry-date datetime=2014-01-13T11:42:09-07:00>January 13, 2014</time><time
+class="modify-date hide hidden updated" datetime=2018-08-23T22:25:18-07:00>August 23, 2018</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ rel="category tag">General Apologetics</a>, <a
+href=https://www.aomin.org/aoblog/category/jehovahs-witnesses/ rel="category tag">Jehovah's Witnesses</a>, <a
+href=https://www.aomin.org/aoblog/category/mormonism/ rel="category tag">Mormonism</a></small>  </span><hr><div
+class=entry-summary><p>This is a bit dated at this point (Sept. of 2013), but Aimee Bird (aka, Housewife Theologian) posted a short review of What’s With the Dudes at the Door?. You can check it out by clicking here. Purchase Aimee Bird&#8217;s book Housewife Theologian: How the Gospel Interrupts the Ordinary by clicking here</p></div></div></article>
+</li>
+<li
+id=post-2942 class="post-item col-sm-4 post-2942 post type-post status-publish format-standard hentry category-general-apologetics"><article><div
+class=post-image><a
+href=https://www.aomin.org/aoblog/general-apologetics/james-white-vs-harold-camping-on-iron-sharpens-iron/ class=element-wrap><img
+src=http://mp3.aomin.org/images/jpeg/camping1.jpg alt="James White vs. Harold Camping on Iron Sharpens Iron!"><span
+class=hover-element><i>+</i></span></a></div><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/general-apologetics/james-white-vs-harold-camping-on-iron-sharpens-iron/ >James White vs. Harold Camping on Iron Sharpens Iron!</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/droakley/ title="View all POSTS by James White" rel=author> <span
+class=author-name>James White</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/general-apologetics/james-white-vs-harold-camping-on-iron-sharpens-iron/ rel=bookmark class=post-time><time
+class=entry-date datetime=2009-07-20T12:04:39-07:00>July 20, 2009</time><time
+class="modify-date hide hidden updated" datetime=2011-08-27T02:04:11-07:00>August 27, 2011</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ rel="category tag">General Apologetics</a></small>  </span><hr><div
+class=entry-summary><p>&nbsp;&nbsp;&nbsp;We just confirmed that next Tuesday and Wednesday, July 28th and 29th, I will be debating Harold Camping on the Iron Sharpens Iron radio program on the topic of Camping&#8217;s teaching that the church has ceased to exist. As some of you may know, Harold Camping has been teaching for years now that the church age has ended; that no</p></div></div></article>
+</li>
+<li
+id=post-14351 class="post-item col-sm-4 post-14351 post type-post status-publish format-standard hentry category-christian-worldview category-exegesis category-reformed-apologetics category-textual-issues category-the-dividing-line category-theology-matters"><article><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/reformed-apologetics/hijacking-scriptures-part-iii-romans-9-debate-rightly-dividing-word/ >Hijacking the Scriptures Part III: The Romans 9 Debate &#8211; Rightly Dividing the Word?</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/richpierce/ title="View all POSTS by Rich Pierce" rel=author> <span
+class=author-name>Rich Pierce</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/reformed-apologetics/hijacking-scriptures-part-iii-romans-9-debate-rightly-dividing-word/ rel=bookmark class=post-time><time
+class=entry-date datetime=2016-01-21T18:53:06-07:00>January 21, 2016</time><time
+class="modify-date hide hidden updated" datetime=2016-01-21T18:53:06-07:00>January 21, 2016</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/christian-worldview/ rel="category tag">Christian Worldview</a>, <a
+href=https://www.aomin.org/aoblog/category/exegesis/ rel="category tag">Exegesis</a>, <a
+href=https://www.aomin.org/aoblog/category/reformed-apologetics/ rel="category tag">Reformed Apologetics</a>, <a
+href=https://www.aomin.org/aoblog/category/textual-issues/ rel="category tag">Textual Issues</a>, <a
+href=https://www.aomin.org/aoblog/category/the-dividing-line/ rel="category tag">The Dividing Line</a>, <a
+href=https://www.aomin.org/aoblog/category/theology-matters/ rel="category tag">Theology Matters</a></small>  </span><hr><div
+class=entry-summary><p>My very first jumbo show today as I continue my review of James&#8217; debate with Prof. Leighton Flowers on Romans 9. James gets more time today and gives a clinic in &#8216;rightly dividing.&#8217; Sadly we will see more misrepresentations from Mr. Flowers as he uses verses out of context and in one case we see where he ended the verse</p></div></div></article>
+</li>
+<li
+id=post-1745 class="post-item col-sm-4 post-1745 post type-post status-publish format-standard hentry category-jehovahs-witnesses"><article><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/jehovahs-witnesses/the-watchtower-tightens-the-leash-on-jw-apologists-once-more/ >The Watchtower Tightens the Leash on &#8220;JW Apologists&#8221; Once More</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/droakley/ title="View all POSTS by James White" rel=author> <span
+class=author-name>James White</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/jehovahs-witnesses/the-watchtower-tightens-the-leash-on-jw-apologists-once-more/ rel=bookmark class=post-time><time
+class=entry-date datetime=2007-08-04T18:48:20-07:00>August 4, 2007</time><time
+class="modify-date hide hidden updated" datetime=2018-08-19T19:52:50-07:00>August 19, 2018</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/jehovahs-witnesses/ rel="category tag">Jehovah's Witnesses</a></small>  </span><hr><div
+class=entry-summary><p>&nbsp;&nbsp;&nbsp;Almost a decade ago I presented a paper at the national meeting of the Evangelical Theological Society in Orlando, Florida, on the topic of Greg Stafford and the relationship that exists between the Society and those who seek, outside of her official publications, to give a defense of her beliefs. Back in the 1970s the Watchtower Society disfellowshipped an early</p></div></div></article>
+</li>
+<li
+id=post-18154 class="post-item col-sm-4 post-18154 post type-post status-publish format-standard hentry category-christian-worldview category-exegesis category-general-apologetics category-islam category-jehovahs-witnesses category-mormonism category-reformed-apologetics category-reformed-baptist-issues category-the-dividing-line"><article><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/general-apologetics/church-membership-adding-p-to-lgbt-matt-chandler-prophecy-open-phones/ >Church Membership, Adding &#8220;P&#8221; to LGBT, Matt Chandler &#038; Prophecy, Open Phones</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/droakley/ title="View all POSTS by James White" rel=author> <span
+class=author-name>James White</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/general-apologetics/church-membership-adding-p-to-lgbt-matt-chandler-prophecy-open-phones/ rel=bookmark class=post-time><time
+class=entry-date datetime=2018-07-19T17:35:18-07:00>July 19, 2018</time><time
+class="modify-date hide hidden updated" datetime=2018-07-19T17:35:18-07:00>July 19, 2018</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/christian-worldview/ rel="category tag">Christian Worldview</a>, <a
+href=https://www.aomin.org/aoblog/category/exegesis/ rel="category tag">Exegesis</a>, <a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ rel="category tag">General Apologetics</a>, <a
+href=https://www.aomin.org/aoblog/category/islam/ rel="category tag">Islam</a>, <a
+href=https://www.aomin.org/aoblog/category/jehovahs-witnesses/ rel="category tag">Jehovah's Witnesses</a>, <a
+href=https://www.aomin.org/aoblog/category/mormonism/ rel="category tag">Mormonism</a>, <a
+href=https://www.aomin.org/aoblog/category/reformed-apologetics/ rel="category tag">Reformed Apologetics</a>, <a
+href=https://www.aomin.org/aoblog/category/reformed-baptist-issues/ rel="category tag">Reformed Baptist Issues</a>, <a
+href=https://www.aomin.org/aoblog/category/the-dividing-line/ rel="category tag">The Dividing Line</a></small>  </span><hr><div
+class=entry-summary><p>Another Skype-based program from Evergreen, Colorado.  Looked briefly at the reaction to a church pruning its membership rolls, then read a portion of Douglas Wilson&#8217;s article on adding &#8220;P&#8221; to LGBT. Then considered the concept of &#8220;prophecy&#8221; in Matt Chandler&#8217;s recent sermon, and then took calls on various topics such as the resurrection of the saints in Matthew 27 and</p></div></div></article>
+</li>
+<li
+id=post-6868 class="post-item col-sm-4 post-6868 post type-post status-publish format-standard hentry category-mormonism"><article><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/mormonism/f-a-r-m-s-strikes-again/ >F.A.R.M.S. Strikes Again</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/droakley/ title="View all POSTS by James White" rel=author> <span
+class=author-name>James White</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/mormonism/f-a-r-m-s-strikes-again/ rel=bookmark class=post-time><time
+class=entry-date datetime=2000-08-30T12:00:33-07:00>August 30, 2000</time><time
+class="modify-date hide hidden updated" datetime=2018-08-17T14:28:50-07:00>August 17, 2018</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/mormonism/ rel="category tag">Mormonism</a></small>  </span><hr><div
+class=entry-summary><p>The evidence continues to pile in. We began exposing the double-standards and downright childish behavior of the Foundation for Ancient Research and Mormon Studies (F.A.R.M.S.), now based out of Brigham Young University, many years ago when they first wrote a review of my book, Letters to a Mormon Elder in 1993 (click here for that first response). In that instance,</p></div></div></article>
+</li>
+<li
+id=post-1302 class="post-item col-sm-4 post-1302 post type-post status-publish format-standard hentry category-general-apologetics"><article><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/general-apologetics/why-am-i-a-christian/ >Why Am I a Christian?</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/droakley/ title="View all POSTS by James White" rel=author> <span
+class=author-name>James White</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/general-apologetics/why-am-i-a-christian/ rel=bookmark class=post-time><time
+class=entry-date datetime=2007-01-22T11:10:08-07:00>January 22, 2007</time><time
+class="modify-date hide hidden updated" datetime=2020-10-04T12:21:40-07:00>October 4, 2020</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ rel="category tag">General Apologetics</a></small>  </span><hr><div
+class=entry-summary><p>This 27 minute presentation, unscripted, with no notes, no outline, is an explanation of my faith meant for those without any pre-existing theological vocabulary. No, it is not meant as a &#8220;response&#8221; to any other presentations floating about out there. I had been asked to address this topic many months before any current controversies erupted. Please feel free to copy</p></div></div></article>
+</li>
+<li
+id=post-12232 class="post-item col-sm-4 post-12232 post type-post status-publish format-standard hentry category-general-apologetics category-pastoral-theology category-reformed-apologetics category-theology-matters"><article><div
+class=entry-content><h4 class="post-title entry-title"><a
+href=https://www.aomin.org/aoblog/general-apologetics/a-response-to-southern-seminary-and-dr-mark-seifrid/ >A Response to Southern Seminary and Dr. Mark Seifrid</a></h4><span
+class="post-meta hidden hide">
+<small
+class="meta-author author vcard"><a
+class="url fn n" href=https://www.aomin.org/aoblog/author/droakley/ title="View all POSTS by James White" rel=author> <span
+class=author-name>James White</span></a></small>, <small><a
+href=https://www.aomin.org/aoblog/general-apologetics/a-response-to-southern-seminary-and-dr-mark-seifrid/ rel=bookmark class=post-time><time
+class=entry-date datetime=2004-09-04T14:42:02-07:00>September 4, 2004</time><time
+class="modify-date hide hidden updated" datetime=2018-08-26T18:19:02-07:00>August 26, 2018</time></a></small>, <small
+class=meta-category><a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ rel="category tag">General Apologetics</a>, <a
+href=https://www.aomin.org/aoblog/category/pastoral-theology/ rel="category tag">Pastoral Theology</a>, <a
+href=https://www.aomin.org/aoblog/category/reformed-apologetics/ rel="category tag">Reformed Apologetics</a>, <a
+href=https://www.aomin.org/aoblog/category/theology-matters/ rel="category tag">Theology Matters</a></small>  </span><hr><div
+class=entry-summary><p>In early September, 2004, Southern Seminary posted an official statement regarding Dr. Mark Seifrid’s views on justification.  The statement was clearly prompted by the blog entries that have appeared on my blog beginning in July of this year. Allow me to begin my response by stating once again: I began my review of Dr. Seifrid’s book for purely theological, pastoral,</p></div></div></article>
+</li></ul></div><div
+class=carousel-arrow>
+<a
+class=carousel-prev href=#><i
+class=icon-angle-left></i></a>
+<a
+class=carousel-next href=#><i
+class=icon-angle-right></i></a></div><div
+class="kleo-carousel-post-pager carousel-pager"></div></div></div></div></section><nav
+class="pagination-sticky member-navigation" role=navigation>
+<a
+href=https://www.aomin.org/aoblog/general-apologetics/son-of-god-lord-of-glory-the-biblical-doctrine-of-the-deity-of-christ/ rel=prev><span
+id=older-nav><span
+class=outter-title><span
+class=entry-title>Son of God, Lord of Glory - The Biblical Doctrine of the Deity of Christ</span></span></span></a><a
+href=https://www.aomin.org/aoblog/jehovahs-witnesses/goodspeed-and-the-deity-of-christ/ rel=next><span
+id=newer-nav><span
+class=outter-title><span
+class=entry-title>Goodspeed and The Deity of Christ</span></a></nav><section
+class=container-wrap><div
+class=container><div
+id=comments class=comments-area><div
+class="hr-title hr-long"><abbr>0 Comments</abbr></div><div
+id=respond-wrap><div
+id=respond class=comment-respond><h3 id="reply-title" class="comment-reply-title">Leave a reply <small><a
+rel=nofollow id=cancel-comment-reply-link href=/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/#respond style=display:none;>Click here to cancel the reply</a></small></h3><p
+class=must-log-in>You must be <a
+href="https://www.aomin.org/aoblog/wp-login.php?redirect_to=https%3A%2F%2Fwww.aomin.org%2Faoblog%2Fgeneral-apologetics%2Fprototokos-firstborn-its-meaning-and-usage-in-the-new-testament%2F">logged in</a> to post a comment.</p></div></div></div></div></section></div></div><div
+class="sidebar sidebar-main col-sm-3 sidebar-right"><div
+class="inner-content widgets-container"><div
+id=search-6 class="widget widget_search"><form
+role=search method=get class=searchform action=https://www.aomin.org/aoblog/ ><div
+class=input-group>
+<input
+name=s autocomplete=off type=text class="ajax_s form-control input-sm" value>
+<span
+class=input-group-btn>
+<input
+type=submit value=Search class="searchsubmit button">
+</span></div></form></div><div
+id=archives-4 class="widget widget_archive"><h4 class="widget-title">Archives</h4>		<label
+class=screen-reader-text for=archives-dropdown-4>Archives</label>
+<select
+id=archives-dropdown-4 name=archive-dropdown><option
+value>Select Month</option><option
+value=https://www.aomin.org/aoblog/2023/12/ > December 2023</option><option
+value=https://www.aomin.org/aoblog/2023/11/ > November 2023</option><option
+value=https://www.aomin.org/aoblog/2023/10/ > October 2023</option><option
+value=https://www.aomin.org/aoblog/2023/09/ > September 2023</option><option
+value=https://www.aomin.org/aoblog/2023/08/ > August 2023</option><option
+value=https://www.aomin.org/aoblog/2023/07/ > July 2023</option><option
+value=https://www.aomin.org/aoblog/2023/06/ > June 2023</option><option
+value=https://www.aomin.org/aoblog/2023/05/ > May 2023</option><option
+value=https://www.aomin.org/aoblog/2023/04/ > April 2023</option><option
+value=https://www.aomin.org/aoblog/2023/03/ > March 2023</option><option
+value=https://www.aomin.org/aoblog/2023/02/ > February 2023</option><option
+value=https://www.aomin.org/aoblog/2023/01/ > January 2023</option><option
+value=https://www.aomin.org/aoblog/2022/12/ > December 2022</option><option
+value=https://www.aomin.org/aoblog/2022/11/ > November 2022</option><option
+value=https://www.aomin.org/aoblog/2022/10/ > October 2022</option><option
+value=https://www.aomin.org/aoblog/2022/09/ > September 2022</option><option
+value=https://www.aomin.org/aoblog/2022/08/ > August 2022</option><option
+value=https://www.aomin.org/aoblog/2022/07/ > July 2022</option><option
+value=https://www.aomin.org/aoblog/2022/06/ > June 2022</option><option
+value=https://www.aomin.org/aoblog/2022/05/ > May 2022</option><option
+value=https://www.aomin.org/aoblog/2022/04/ > April 2022</option><option
+value=https://www.aomin.org/aoblog/2022/03/ > March 2022</option><option
+value=https://www.aomin.org/aoblog/2022/02/ > February 2022</option><option
+value=https://www.aomin.org/aoblog/2022/01/ > January 2022</option><option
+value=https://www.aomin.org/aoblog/2021/12/ > December 2021</option><option
+value=https://www.aomin.org/aoblog/2021/11/ > November 2021</option><option
+value=https://www.aomin.org/aoblog/2021/10/ > October 2021</option><option
+value=https://www.aomin.org/aoblog/2021/09/ > September 2021</option><option
+value=https://www.aomin.org/aoblog/2021/08/ > August 2021</option><option
+value=https://www.aomin.org/aoblog/2021/07/ > July 2021</option><option
+value=https://www.aomin.org/aoblog/2021/06/ > June 2021</option><option
+value=https://www.aomin.org/aoblog/2021/05/ > May 2021</option><option
+value=https://www.aomin.org/aoblog/2021/04/ > April 2021</option><option
+value=https://www.aomin.org/aoblog/2021/03/ > March 2021</option><option
+value=https://www.aomin.org/aoblog/2021/02/ > February 2021</option><option
+value=https://www.aomin.org/aoblog/2021/01/ > January 2021</option><option
+value=https://www.aomin.org/aoblog/2020/12/ > December 2020</option><option
+value=https://www.aomin.org/aoblog/2020/11/ > November 2020</option><option
+value=https://www.aomin.org/aoblog/2020/10/ > October 2020</option><option
+value=https://www.aomin.org/aoblog/2020/09/ > September 2020</option><option
+value=https://www.aomin.org/aoblog/2020/08/ > August 2020</option><option
+value=https://www.aomin.org/aoblog/2020/07/ > July 2020</option><option
+value=https://www.aomin.org/aoblog/2020/06/ > June 2020</option><option
+value=https://www.aomin.org/aoblog/2020/05/ > May 2020</option><option
+value=https://www.aomin.org/aoblog/2020/04/ > April 2020</option><option
+value=https://www.aomin.org/aoblog/2020/03/ > March 2020</option><option
+value=https://www.aomin.org/aoblog/2020/02/ > February 2020</option><option
+value=https://www.aomin.org/aoblog/2020/01/ > January 2020</option><option
+value=https://www.aomin.org/aoblog/2019/12/ > December 2019</option><option
+value=https://www.aomin.org/aoblog/2019/11/ > November 2019</option><option
+value=https://www.aomin.org/aoblog/2019/10/ > October 2019</option><option
+value=https://www.aomin.org/aoblog/2019/09/ > September 2019</option><option
+value=https://www.aomin.org/aoblog/2019/08/ > August 2019</option><option
+value=https://www.aomin.org/aoblog/2019/07/ > July 2019</option><option
+value=https://www.aomin.org/aoblog/2019/06/ > June 2019</option><option
+value=https://www.aomin.org/aoblog/2019/05/ > May 2019</option><option
+value=https://www.aomin.org/aoblog/2019/04/ > April 2019</option><option
+value=https://www.aomin.org/aoblog/2019/03/ > March 2019</option><option
+value=https://www.aomin.org/aoblog/2019/02/ > February 2019</option><option
+value=https://www.aomin.org/aoblog/2019/01/ > January 2019</option><option
+value=https://www.aomin.org/aoblog/2018/12/ > December 2018</option><option
+value=https://www.aomin.org/aoblog/2018/11/ > November 2018</option><option
+value=https://www.aomin.org/aoblog/2018/10/ > October 2018</option><option
+value=https://www.aomin.org/aoblog/2018/09/ > September 2018</option><option
+value=https://www.aomin.org/aoblog/2018/08/ > August 2018</option><option
+value=https://www.aomin.org/aoblog/2018/07/ > July 2018</option><option
+value=https://www.aomin.org/aoblog/2018/06/ > June 2018</option><option
+value=https://www.aomin.org/aoblog/2018/05/ > May 2018</option><option
+value=https://www.aomin.org/aoblog/2018/04/ > April 2018</option><option
+value=https://www.aomin.org/aoblog/2018/03/ > March 2018</option><option
+value=https://www.aomin.org/aoblog/2018/02/ > February 2018</option><option
+value=https://www.aomin.org/aoblog/2018/01/ > January 2018</option><option
+value=https://www.aomin.org/aoblog/2017/12/ > December 2017</option><option
+value=https://www.aomin.org/aoblog/2017/11/ > November 2017</option><option
+value=https://www.aomin.org/aoblog/2017/10/ > October 2017</option><option
+value=https://www.aomin.org/aoblog/2017/09/ > September 2017</option><option
+value=https://www.aomin.org/aoblog/2017/08/ > August 2017</option><option
+value=https://www.aomin.org/aoblog/2017/07/ > July 2017</option><option
+value=https://www.aomin.org/aoblog/2017/06/ > June 2017</option><option
+value=https://www.aomin.org/aoblog/2017/05/ > May 2017</option><option
+value=https://www.aomin.org/aoblog/2017/04/ > April 2017</option><option
+value=https://www.aomin.org/aoblog/2017/03/ > March 2017</option><option
+value=https://www.aomin.org/aoblog/2017/02/ > February 2017</option><option
+value=https://www.aomin.org/aoblog/2017/01/ > January 2017</option><option
+value=https://www.aomin.org/aoblog/2016/12/ > December 2016</option><option
+value=https://www.aomin.org/aoblog/2016/11/ > November 2016</option><option
+value=https://www.aomin.org/aoblog/2016/10/ > October 2016</option><option
+value=https://www.aomin.org/aoblog/2016/09/ > September 2016</option><option
+value=https://www.aomin.org/aoblog/2016/08/ > August 2016</option><option
+value=https://www.aomin.org/aoblog/2016/07/ > July 2016</option><option
+value=https://www.aomin.org/aoblog/2016/06/ > June 2016</option><option
+value=https://www.aomin.org/aoblog/2016/05/ > May 2016</option><option
+value=https://www.aomin.org/aoblog/2016/04/ > April 2016</option><option
+value=https://www.aomin.org/aoblog/2016/03/ > March 2016</option><option
+value=https://www.aomin.org/aoblog/2016/02/ > February 2016</option><option
+value=https://www.aomin.org/aoblog/2016/01/ > January 2016</option><option
+value=https://www.aomin.org/aoblog/2015/12/ > December 2015</option><option
+value=https://www.aomin.org/aoblog/2015/11/ > November 2015</option><option
+value=https://www.aomin.org/aoblog/2015/10/ > October 2015</option><option
+value=https://www.aomin.org/aoblog/2015/09/ > September 2015</option><option
+value=https://www.aomin.org/aoblog/2015/08/ > August 2015</option><option
+value=https://www.aomin.org/aoblog/2015/07/ > July 2015</option><option
+value=https://www.aomin.org/aoblog/2015/06/ > June 2015</option><option
+value=https://www.aomin.org/aoblog/2015/05/ > May 2015</option><option
+value=https://www.aomin.org/aoblog/2015/04/ > April 2015</option><option
+value=https://www.aomin.org/aoblog/2015/03/ > March 2015</option><option
+value=https://www.aomin.org/aoblog/2015/02/ > February 2015</option><option
+value=https://www.aomin.org/aoblog/2015/01/ > January 2015</option><option
+value=https://www.aomin.org/aoblog/2014/12/ > December 2014</option><option
+value=https://www.aomin.org/aoblog/2014/11/ > November 2014</option><option
+value=https://www.aomin.org/aoblog/2014/10/ > October 2014</option><option
+value=https://www.aomin.org/aoblog/2014/09/ > September 2014</option><option
+value=https://www.aomin.org/aoblog/2014/08/ > August 2014</option><option
+value=https://www.aomin.org/aoblog/2014/07/ > July 2014</option><option
+value=https://www.aomin.org/aoblog/2014/06/ > June 2014</option><option
+value=https://www.aomin.org/aoblog/2014/05/ > May 2014</option><option
+value=https://www.aomin.org/aoblog/2014/04/ > April 2014</option><option
+value=https://www.aomin.org/aoblog/2014/03/ > March 2014</option><option
+value=https://www.aomin.org/aoblog/2014/02/ > February 2014</option><option
+value=https://www.aomin.org/aoblog/2014/01/ > January 2014</option><option
+value=https://www.aomin.org/aoblog/2013/12/ > December 2013</option><option
+value=https://www.aomin.org/aoblog/2013/11/ > November 2013</option><option
+value=https://www.aomin.org/aoblog/2013/10/ > October 2013</option><option
+value=https://www.aomin.org/aoblog/2013/09/ > September 2013</option><option
+value=https://www.aomin.org/aoblog/2013/08/ > August 2013</option><option
+value=https://www.aomin.org/aoblog/2013/07/ > July 2013</option><option
+value=https://www.aomin.org/aoblog/2013/06/ > June 2013</option><option
+value=https://www.aomin.org/aoblog/2013/05/ > May 2013</option><option
+value=https://www.aomin.org/aoblog/2013/04/ > April 2013</option><option
+value=https://www.aomin.org/aoblog/2013/03/ > March 2013</option><option
+value=https://www.aomin.org/aoblog/2013/02/ > February 2013</option><option
+value=https://www.aomin.org/aoblog/2013/01/ > January 2013</option><option
+value=https://www.aomin.org/aoblog/2012/12/ > December 2012</option><option
+value=https://www.aomin.org/aoblog/2012/11/ > November 2012</option><option
+value=https://www.aomin.org/aoblog/2012/10/ > October 2012</option><option
+value=https://www.aomin.org/aoblog/2012/09/ > September 2012</option><option
+value=https://www.aomin.org/aoblog/2012/08/ > August 2012</option><option
+value=https://www.aomin.org/aoblog/2012/07/ > July 2012</option><option
+value=https://www.aomin.org/aoblog/2012/06/ > June 2012</option><option
+value=https://www.aomin.org/aoblog/2012/05/ > May 2012</option><option
+value=https://www.aomin.org/aoblog/2012/04/ > April 2012</option><option
+value=https://www.aomin.org/aoblog/2012/03/ > March 2012</option><option
+value=https://www.aomin.org/aoblog/2012/02/ > February 2012</option><option
+value=https://www.aomin.org/aoblog/2012/01/ > January 2012</option><option
+value=https://www.aomin.org/aoblog/2011/12/ > December 2011</option><option
+value=https://www.aomin.org/aoblog/2011/11/ > November 2011</option><option
+value=https://www.aomin.org/aoblog/2011/10/ > October 2011</option><option
+value=https://www.aomin.org/aoblog/2011/09/ > September 2011</option><option
+value=https://www.aomin.org/aoblog/2011/08/ > August 2011</option><option
+value=https://www.aomin.org/aoblog/2011/07/ > July 2011</option><option
+value=https://www.aomin.org/aoblog/2011/06/ > June 2011</option><option
+value=https://www.aomin.org/aoblog/2011/05/ > May 2011</option><option
+value=https://www.aomin.org/aoblog/2011/04/ > April 2011</option><option
+value=https://www.aomin.org/aoblog/2011/03/ > March 2011</option><option
+value=https://www.aomin.org/aoblog/2011/02/ > February 2011</option><option
+value=https://www.aomin.org/aoblog/2011/01/ > January 2011</option><option
+value=https://www.aomin.org/aoblog/2010/12/ > December 2010</option><option
+value=https://www.aomin.org/aoblog/2010/11/ > November 2010</option><option
+value=https://www.aomin.org/aoblog/2010/10/ > October 2010</option><option
+value=https://www.aomin.org/aoblog/2010/09/ > September 2010</option><option
+value=https://www.aomin.org/aoblog/2010/08/ > August 2010</option><option
+value=https://www.aomin.org/aoblog/2010/07/ > July 2010</option><option
+value=https://www.aomin.org/aoblog/2010/06/ > June 2010</option><option
+value=https://www.aomin.org/aoblog/2010/05/ > May 2010</option><option
+value=https://www.aomin.org/aoblog/2010/04/ > April 2010</option><option
+value=https://www.aomin.org/aoblog/2010/03/ > March 2010</option><option
+value=https://www.aomin.org/aoblog/2010/02/ > February 2010</option><option
+value=https://www.aomin.org/aoblog/2010/01/ > January 2010</option><option
+value=https://www.aomin.org/aoblog/2009/12/ > December 2009</option><option
+value=https://www.aomin.org/aoblog/2009/11/ > November 2009</option><option
+value=https://www.aomin.org/aoblog/2009/10/ > October 2009</option><option
+value=https://www.aomin.org/aoblog/2009/09/ > September 2009</option><option
+value=https://www.aomin.org/aoblog/2009/08/ > August 2009</option><option
+value=https://www.aomin.org/aoblog/2009/07/ > July 2009</option><option
+value=https://www.aomin.org/aoblog/2009/06/ > June 2009</option><option
+value=https://www.aomin.org/aoblog/2009/05/ > May 2009</option><option
+value=https://www.aomin.org/aoblog/2009/04/ > April 2009</option><option
+value=https://www.aomin.org/aoblog/2009/03/ > March 2009</option><option
+value=https://www.aomin.org/aoblog/2009/02/ > February 2009</option><option
+value=https://www.aomin.org/aoblog/2009/01/ > January 2009</option><option
+value=https://www.aomin.org/aoblog/2008/12/ > December 2008</option><option
+value=https://www.aomin.org/aoblog/2008/11/ > November 2008</option><option
+value=https://www.aomin.org/aoblog/2008/10/ > October 2008</option><option
+value=https://www.aomin.org/aoblog/2008/09/ > September 2008</option><option
+value=https://www.aomin.org/aoblog/2008/08/ > August 2008</option><option
+value=https://www.aomin.org/aoblog/2008/07/ > July 2008</option><option
+value=https://www.aomin.org/aoblog/2008/06/ > June 2008</option><option
+value=https://www.aomin.org/aoblog/2008/05/ > May 2008</option><option
+value=https://www.aomin.org/aoblog/2008/04/ > April 2008</option><option
+value=https://www.aomin.org/aoblog/2008/03/ > March 2008</option><option
+value=https://www.aomin.org/aoblog/2008/02/ > February 2008</option><option
+value=https://www.aomin.org/aoblog/2008/01/ > January 2008</option><option
+value=https://www.aomin.org/aoblog/2007/12/ > December 2007</option><option
+value=https://www.aomin.org/aoblog/2007/11/ > November 2007</option><option
+value=https://www.aomin.org/aoblog/2007/10/ > October 2007</option><option
+value=https://www.aomin.org/aoblog/2007/09/ > September 2007</option><option
+value=https://www.aomin.org/aoblog/2007/08/ > August 2007</option><option
+value=https://www.aomin.org/aoblog/2007/07/ > July 2007</option><option
+value=https://www.aomin.org/aoblog/2007/06/ > June 2007</option><option
+value=https://www.aomin.org/aoblog/2007/05/ > May 2007</option><option
+value=https://www.aomin.org/aoblog/2007/04/ > April 2007</option><option
+value=https://www.aomin.org/aoblog/2007/03/ > March 2007</option><option
+value=https://www.aomin.org/aoblog/2007/02/ > February 2007</option><option
+value=https://www.aomin.org/aoblog/2007/01/ > January 2007</option><option
+value=https://www.aomin.org/aoblog/2006/12/ > December 2006</option><option
+value=https://www.aomin.org/aoblog/2006/11/ > November 2006</option><option
+value=https://www.aomin.org/aoblog/2006/10/ > October 2006</option><option
+value=https://www.aomin.org/aoblog/2006/09/ > September 2006</option><option
+value=https://www.aomin.org/aoblog/2006/08/ > August 2006</option><option
+value=https://www.aomin.org/aoblog/2006/07/ > July 2006</option><option
+value=https://www.aomin.org/aoblog/2006/06/ > June 2006</option><option
+value=https://www.aomin.org/aoblog/2006/05/ > May 2006</option><option
+value=https://www.aomin.org/aoblog/2006/04/ > April 2006</option><option
+value=https://www.aomin.org/aoblog/2006/03/ > March 2006</option><option
+value=https://www.aomin.org/aoblog/2006/02/ > February 2006</option><option
+value=https://www.aomin.org/aoblog/2006/01/ > January 2006</option><option
+value=https://www.aomin.org/aoblog/2005/12/ > December 2005</option><option
+value=https://www.aomin.org/aoblog/2005/11/ > November 2005</option><option
+value=https://www.aomin.org/aoblog/2005/10/ > October 2005</option><option
+value=https://www.aomin.org/aoblog/2005/09/ > September 2005</option><option
+value=https://www.aomin.org/aoblog/2005/08/ > August 2005</option><option
+value=https://www.aomin.org/aoblog/2005/07/ > July 2005</option><option
+value=https://www.aomin.org/aoblog/2005/06/ > June 2005</option><option
+value=https://www.aomin.org/aoblog/2005/05/ > May 2005</option><option
+value=https://www.aomin.org/aoblog/2005/04/ > April 2005</option><option
+value=https://www.aomin.org/aoblog/2005/03/ > March 2005</option><option
+value=https://www.aomin.org/aoblog/2005/02/ > February 2005</option><option
+value=https://www.aomin.org/aoblog/2005/01/ > January 2005</option><option
+value=https://www.aomin.org/aoblog/2004/12/ > December 2004</option><option
+value=https://www.aomin.org/aoblog/2004/11/ > November 2004</option><option
+value=https://www.aomin.org/aoblog/2004/10/ > October 2004</option><option
+value=https://www.aomin.org/aoblog/2004/09/ > September 2004</option><option
+value=https://www.aomin.org/aoblog/2004/08/ > August 2004</option><option
+value=https://www.aomin.org/aoblog/2004/07/ > July 2004</option><option
+value=https://www.aomin.org/aoblog/2004/06/ > June 2004</option><option
+value=https://www.aomin.org/aoblog/2004/05/ > May 2004</option><option
+value=https://www.aomin.org/aoblog/2004/04/ > April 2004</option><option
+value=https://www.aomin.org/aoblog/2004/03/ > March 2004</option><option
+value=https://www.aomin.org/aoblog/2004/02/ > February 2004</option><option
+value=https://www.aomin.org/aoblog/2004/01/ > January 2004</option><option
+value=https://www.aomin.org/aoblog/2003/12/ > December 2003</option><option
+value=https://www.aomin.org/aoblog/2003/11/ > November 2003</option><option
+value=https://www.aomin.org/aoblog/2003/10/ > October 2003</option><option
+value=https://www.aomin.org/aoblog/2003/09/ > September 2003</option><option
+value=https://www.aomin.org/aoblog/2003/08/ > August 2003</option><option
+value=https://www.aomin.org/aoblog/2003/07/ > July 2003</option><option
+value=https://www.aomin.org/aoblog/2003/06/ > June 2003</option><option
+value=https://www.aomin.org/aoblog/2003/05/ > May 2003</option><option
+value=https://www.aomin.org/aoblog/2003/04/ > April 2003</option><option
+value=https://www.aomin.org/aoblog/2003/03/ > March 2003</option><option
+value=https://www.aomin.org/aoblog/2003/02/ > February 2003</option><option
+value=https://www.aomin.org/aoblog/2003/01/ > January 2003</option><option
+value=https://www.aomin.org/aoblog/2002/12/ > December 2002</option><option
+value=https://www.aomin.org/aoblog/2002/11/ > November 2002</option><option
+value=https://www.aomin.org/aoblog/2002/10/ > October 2002</option><option
+value=https://www.aomin.org/aoblog/2002/09/ > September 2002</option><option
+value=https://www.aomin.org/aoblog/2002/08/ > August 2002</option><option
+value=https://www.aomin.org/aoblog/2002/07/ > July 2002</option><option
+value=https://www.aomin.org/aoblog/2002/06/ > June 2002</option><option
+value=https://www.aomin.org/aoblog/2002/05/ > May 2002</option><option
+value=https://www.aomin.org/aoblog/2002/04/ > April 2002</option><option
+value=https://www.aomin.org/aoblog/2002/03/ > March 2002</option><option
+value=https://www.aomin.org/aoblog/2002/02/ > February 2002</option><option
+value=https://www.aomin.org/aoblog/2002/01/ > January 2002</option><option
+value=https://www.aomin.org/aoblog/2001/12/ > December 2001</option><option
+value=https://www.aomin.org/aoblog/2001/11/ > November 2001</option><option
+value=https://www.aomin.org/aoblog/2001/10/ > October 2001</option><option
+value=https://www.aomin.org/aoblog/2001/09/ > September 2001</option><option
+value=https://www.aomin.org/aoblog/2001/08/ > August 2001</option><option
+value=https://www.aomin.org/aoblog/2001/07/ > July 2001</option><option
+value=https://www.aomin.org/aoblog/2001/06/ > June 2001</option><option
+value=https://www.aomin.org/aoblog/2001/05/ > May 2001</option><option
+value=https://www.aomin.org/aoblog/2001/04/ > April 2001</option><option
+value=https://www.aomin.org/aoblog/2001/03/ > March 2001</option><option
+value=https://www.aomin.org/aoblog/2001/02/ > February 2001</option><option
+value=https://www.aomin.org/aoblog/2001/01/ > January 2001</option><option
+value=https://www.aomin.org/aoblog/2000/12/ > December 2000</option><option
+value=https://www.aomin.org/aoblog/2000/11/ > November 2000</option><option
+value=https://www.aomin.org/aoblog/2000/10/ > October 2000</option><option
+value=https://www.aomin.org/aoblog/2000/09/ > September 2000</option><option
+value=https://www.aomin.org/aoblog/2000/08/ > August 2000</option><option
+value=https://www.aomin.org/aoblog/2000/07/ > July 2000</option><option
+value=https://www.aomin.org/aoblog/2000/06/ > June 2000</option><option
+value=https://www.aomin.org/aoblog/2000/05/ > May 2000</option><option
+value=https://www.aomin.org/aoblog/2000/04/ > April 2000</option><option
+value=https://www.aomin.org/aoblog/2000/03/ > March 2000</option><option
+value=https://www.aomin.org/aoblog/2000/02/ > February 2000</option><option
+value=https://www.aomin.org/aoblog/2000/01/ > January 2000</option><option
+value=https://www.aomin.org/aoblog/1999/12/ > December 1999</option><option
+value=https://www.aomin.org/aoblog/1999/11/ > November 1999</option><option
+value=https://www.aomin.org/aoblog/1999/10/ > October 1999</option><option
+value=https://www.aomin.org/aoblog/1999/09/ > September 1999</option><option
+value=https://www.aomin.org/aoblog/1999/08/ > August 1999</option><option
+value=https://www.aomin.org/aoblog/1999/06/ > June 1999</option><option
+value=https://www.aomin.org/aoblog/1999/05/ > May 1999</option><option
+value=https://www.aomin.org/aoblog/1999/04/ > April 1999</option><option
+value=https://www.aomin.org/aoblog/1999/03/ > March 1999</option><option
+value=https://www.aomin.org/aoblog/1999/02/ > February 1999</option><option
+value=https://www.aomin.org/aoblog/1999/01/ > January 1999</option><option
+value=https://www.aomin.org/aoblog/1998/12/ > December 1998</option><option
+value=https://www.aomin.org/aoblog/1998/11/ > November 1998</option><option
+value=https://www.aomin.org/aoblog/1998/10/ > October 1998</option><option
+value=https://www.aomin.org/aoblog/1998/09/ > September 1998</option><option
+value=https://www.aomin.org/aoblog/1998/07/ > July 1998</option><option
+value=https://www.aomin.org/aoblog/1998/06/ > June 1998</option><option
+value=https://www.aomin.org/aoblog/1998/05/ > May 1998</option><option
+value=https://www.aomin.org/aoblog/1998/04/ > April 1998</option><option
+value=https://www.aomin.org/aoblog/1998/01/ > January 1998</option><option
+value=https://www.aomin.org/aoblog/1997/10/ > October 1997</option><option
+value=https://www.aomin.org/aoblog/1997/09/ > September 1997</option><option
+value=https://www.aomin.org/aoblog/1997/07/ > July 1997</option><option
+value=https://www.aomin.org/aoblog/1997/06/ > June 1997</option><option
+value=https://www.aomin.org/aoblog/1997/05/ > May 1997</option><option
+value=https://www.aomin.org/aoblog/1997/04/ > April 1997</option><option
+value=https://www.aomin.org/aoblog/1997/02/ > February 1997</option><option
+value=https://www.aomin.org/aoblog/1997/01/ > January 1997</option><option
+value=https://www.aomin.org/aoblog/1996/11/ > November 1996</option><option
+value=https://www.aomin.org/aoblog/1996/09/ > September 1996</option><option
+value=https://www.aomin.org/aoblog/1996/08/ > August 1996</option><option
+value=https://www.aomin.org/aoblog/1996/07/ > July 1996</option><option
+value=https://www.aomin.org/aoblog/1996/06/ > June 1996</option><option
+value=https://www.aomin.org/aoblog/1996/05/ > May 1996</option><option
+value=https://www.aomin.org/aoblog/1996/02/ > February 1996</option><option
+value=https://www.aomin.org/aoblog/1996/01/ > January 1996</option><option
+value=https://www.aomin.org/aoblog/1995/11/ > November 1995</option><option
+value=https://www.aomin.org/aoblog/1995/07/ > July 1995</option><option
+value=https://www.aomin.org/aoblog/1995/06/ > June 1995</option><option
+value=https://www.aomin.org/aoblog/1995/04/ > April 1995</option><option
+value=https://www.aomin.org/aoblog/1995/03/ > March 1995</option><option
+value=https://www.aomin.org/aoblog/1994/11/ > November 1994</option><option
+value=https://www.aomin.org/aoblog/1994/07/ > July 1994</option><option
+value=https://www.aomin.org/aoblog/1994/03/ > March 1994</option><option
+value=https://www.aomin.org/aoblog/1993/11/ > November 1993</option><option
+value=https://www.aomin.org/aoblog/1993/09/ > September 1993</option><option
+value=https://www.aomin.org/aoblog/1993/08/ > August 1993</option><option
+value=https://www.aomin.org/aoblog/1993/05/ > May 1993</option><option
+value=https://www.aomin.org/aoblog/1993/04/ > April 1993</option><option
+value=https://www.aomin.org/aoblog/1993/03/ > March 1993</option><option
+value=https://www.aomin.org/aoblog/1993/01/ > January 1993</option><option
+value=https://www.aomin.org/aoblog/1992/11/ > November 1992</option><option
+value=https://www.aomin.org/aoblog/1992/01/ > January 1992</option><option
+value=https://www.aomin.org/aoblog/1991/12/ > December 1991</option><option
+value=https://www.aomin.org/aoblog/1991/05/ > May 1991</option><option
+value=https://www.aomin.org/aoblog/1991/01/ > January 1991</option><option
+value=https://www.aomin.org/aoblog/1990/12/ > December 1990</option><option
+value=https://www.aomin.org/aoblog/1990/03/ > March 1990</option><option
+value=https://www.aomin.org/aoblog/1990/01/ > January 1990</option><option
+value=https://www.aomin.org/aoblog/1989/10/ > October 1989</option><option
+value=https://www.aomin.org/aoblog/1989/03/ > March 1989</option><option
+value=https://www.aomin.org/aoblog/1989/01/ > January 1989</option><option
+value=https://www.aomin.org/aoblog/1988/12/ > December 1988</option><option
+value=https://www.aomin.org/aoblog/1988/04/ > April 1988</option><option
+value=https://www.aomin.org/aoblog/1988/02/ > February 1988</option><option
+value=https://www.aomin.org/aoblog/1988/01/ > January 1988</option><option
+value=https://www.aomin.org/aoblog/1987/12/ > December 1987</option><option
+value=https://www.aomin.org/aoblog/1987/01/ > January 1987</option><option
+value=https://www.aomin.org/aoblog/1986/09/ > September 1986</option><option
+value=https://www.aomin.org/aoblog/1986/01/ > January 1986</option><option
+value=https://www.aomin.org/aoblog/1985/07/ > July 1985</option><option
+value=https://www.aomin.org/aoblog/1985/01/ > January 1985</option><option
+value=https://www.aomin.org/aoblog/1984/03/ > March 1984</option><option
+value=https://www.aomin.org/aoblog/1983/10/ > October 1983</option></select> <script>(function(){var dropdown=document.getElementById("archives-dropdown-4");function onSelectChange(){if(dropdown.options[dropdown.selectedIndex].value!==''){document.location.href=this.options[this.selectedIndex].value;}}
+dropdown.onchange=onSelectChange;})();</script> </div><div
+id=kleo_recent_posts-4 class="widget widget_kleo_recent_posts"><h4 class="widget-title">Recent Posts</h4><div><ul
+class=news-widget-wrap><li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/church-history/a-little-francis-but-mainly-responding-to-jared-longshore/ >
+<span>A Little Francis, But Mainly Responding to Jared Longshore	<small
+class=news-time>December 4, 2023</small></span>
+</a></li>
+<li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/musings/road-trip-dividing-line-only-45-minutes-today/ >
+<span>Road Trip Dividing Line: Only 45 Minutes Today	<small
+class=news-time>December 4, 2023</small></span>
+</a></li>
+<li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/the-dividing-line/road-trip-dividing-line-eric-holmbergs-conversion-syndrome-joel-beeke-on-the-kjv/ >
+<span>Road Trip Dividing Line: Eric Holmberg&#8217;s Conversion Syndrome, Joel Beeke on the KJV	<small
+class=news-time>November 29, 2023</small></span>
+</a></li></ul></div></div><div
+id=categories-4 class="widget widget_categories"><h4 class="widget-title">Categories</h4><ul>
+<li
+class="cat-item cat-item-157"><a
+href=https://www.aomin.org/aoblog/category/abortion/ >Abortion</a>
+</li>
+<li
+class="cat-item cat-item-29"><a
+href=https://www.aomin.org/aoblog/category/atheism/ >Atheism</a>
+</li>
+<li
+class="cat-item cat-item-1903"><a
+href=https://www.aomin.org/aoblog/category/baptism/ >Baptism</a>
+</li>
+<li
+class="cat-item cat-item-22"><a
+href=https://www.aomin.org/aoblog/category/blog-stuff/ title="Stuff about the Blog!">Blog Stuff</a>
+</li>
+<li
+class="cat-item cat-item-224"><a
+href=https://www.aomin.org/aoblog/category/cbgm/ >CBGM</a>
+</li>
+<li
+class="cat-item cat-item-12"><a
+href=https://www.aomin.org/aoblog/category/christian-worldview/ >Christian Worldview</a>
+</li>
+<li
+class="cat-item cat-item-254"><a
+href=https://www.aomin.org/aoblog/category/church-fathers/ >Church Fathers</a>
+</li>
+<li
+class="cat-item cat-item-218"><a
+href=https://www.aomin.org/aoblog/category/church-history/ >Church History</a>
+</li>
+<li
+class="cat-item cat-item-320"><a
+href=https://www.aomin.org/aoblog/category/debate/ >Debate</a>
+</li>
+<li
+class="cat-item cat-item-1759"><a
+href=https://www.aomin.org/aoblog/category/dl-shorts/ >DL Shorts</a>
+</li>
+<li
+class="cat-item cat-item-213"><a
+href=https://www.aomin.org/aoblog/category/eastern-orthodoxy/ >Eastern Orthodoxy</a>
+</li>
+<li
+class="cat-item cat-item-1881"><a
+href=https://www.aomin.org/aoblog/category/eschatology/ >Eschatology</a>
+</li>
+<li
+class="cat-item cat-item-10"><a
+href=https://www.aomin.org/aoblog/category/exegesis/ >Exegesis</a>
+</li>
+<li
+class="cat-item cat-item-241"><a
+href=https://www.aomin.org/aoblog/category/federal-vision/ >Federal Vision</a>
+</li>
+<li
+class="cat-item cat-item-4"><a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ >General Apologetics</a>
+</li>
+<li
+class="cat-item cat-item-20"><a
+href=https://www.aomin.org/aoblog/category/godly-disciplines/ title="Scripture Memorization etc.">Godly Disciplines</a>
+</li>
+<li
+class="cat-item cat-item-184"><a
+href=https://www.aomin.org/aoblog/category/gospeljesus-studies/ >Gospel/Jesus Studies</a>
+</li>
+<li
+class="cat-item cat-item-186"><a
+href=https://www.aomin.org/aoblog/category/hebrew-israelism/ >Hebrew Israelism</a>
+</li>
+<li
+class="cat-item cat-item-46"><a
+href=https://www.aomin.org/aoblog/category/homosexuality/ >Homosexuality</a>
+</li>
+<li
+class="cat-item cat-item-214"><a
+href=https://www.aomin.org/aoblog/category/iglesia-ni-christo/ >Iglesia Ni Christo</a>
+</li>
+<li
+class="cat-item cat-item-13"><a
+href=https://www.aomin.org/aoblog/category/islam/ >Islam</a>
+</li>
+<li
+class="cat-item cat-item-5"><a
+href=https://www.aomin.org/aoblog/category/jehovahs-witnesses/ >Jehovah&#039;s Witnesses</a>
+</li>
+<li
+class="cat-item cat-item-1892"><a
+href=https://www.aomin.org/aoblog/category/ken-wilson/ >Ken Wilson</a>
+</li>
+<li
+class="cat-item cat-item-8"><a
+href=https://www.aomin.org/aoblog/category/king-james-onlyism/ >King James Onlyism</a>
+</li>
+<li
+class="cat-item cat-item-16"><a
+href=https://www.aomin.org/aoblog/category/mail-bag/ title="Responses to E-mails">Mail Bag</a>
+</li>
+<li
+class="cat-item cat-item-3"><a
+href=https://www.aomin.org/aoblog/category/misc/ title="Items that do not fit in other categories">Misc</a>
+</li>
+<li
+class="cat-item cat-item-1743"><a
+href=https://www.aomin.org/aoblog/category/molinism/ >Molinism</a>
+</li>
+<li
+class="cat-item cat-item-7"><a
+href=https://www.aomin.org/aoblog/category/mormonism/ >Mormonism</a>
+</li>
+<li
+class="cat-item cat-item-166"><a
+href=https://www.aomin.org/aoblog/category/musings/ >Musings</a>
+</li>
+<li
+class="cat-item cat-item-242"><a
+href=https://www.aomin.org/aoblog/category/new-perspectivism/ >New Perspectivism</a>
+</li>
+<li
+class="cat-item cat-item-228"><a
+href=https://www.aomin.org/aoblog/category/offense/ >Offense</a>
+</li>
+<li
+class="cat-item cat-item-30"><a
+href=https://www.aomin.org/aoblog/category/oneness-pentecostalism/ >Oneness Pentecostalism</a>
+</li>
+<li
+class="cat-item cat-item-117"><a
+href=https://www.aomin.org/aoblog/category/open-theism/ >Open Theism</a>
+</li>
+<li
+class="cat-item cat-item-17"><a
+href=https://www.aomin.org/aoblog/category/pastoral-theology/ >Pastoral Theology</a>
+</li>
+<li
+class="cat-item cat-item-177"><a
+href=https://www.aomin.org/aoblog/category/pauline-studies/ >Pauline Studies</a>
+</li>
+<li
+class="cat-item cat-item-25"><a
+href=https://www.aomin.org/aoblog/category/persecution/ title="Persecution of Christians Around the World">Persecution</a>
+</li>
+<li
+class="cat-item cat-item-11"><a
+href=https://www.aomin.org/aoblog/category/personal/ >Personal</a>
+</li>
+<li
+class="cat-item cat-item-26"><a
+href=https://www.aomin.org/aoblog/category/post-evangelicalism/ >Post-Evangelicalism</a>
+</li>
+<li
+class="cat-item cat-item-253"><a
+href=https://www.aomin.org/aoblog/category/provisionism/ >Provisionism</a>
+</li>
+<li
+class="cat-item cat-item-225"><a
+href=https://www.aomin.org/aoblog/category/racialism/ >Racialism</a>
+</li>
+<li
+class="cat-item cat-item-219"><a
+href=https://www.aomin.org/aoblog/category/radio-free-geneva/ >Radio Free Geneva</a>
+</li>
+<li
+class="cat-item cat-item-6"><a
+href=https://www.aomin.org/aoblog/category/reformed-apologetics/ >Reformed Apologetics</a>
+</li>
+<li
+class="cat-item cat-item-19"><a
+href=https://www.aomin.org/aoblog/category/reformed-baptist-issues/ title="Issues Relating to Reformed Baptists">Reformed Baptist Issues</a>
+</li>
+<li
+class="cat-item cat-item-28"><a
+href=https://www.aomin.org/aoblog/category/materials-in-the-bookstore/ >Resources</a>
+</li>
+<li
+class="cat-item cat-item-1654"><a
+href=https://www.aomin.org/aoblog/category/road-trip/ >Road Trip</a>
+</li>
+<li
+class="cat-item cat-item-9"><a
+href=https://www.aomin.org/aoblog/category/roman-catholicism/ >Roman Catholicism</a>
+</li>
+<li
+class="cat-item cat-item-18"><a
+href=https://www.aomin.org/aoblog/category/simply-silly/ title="Silly Stuff">Simply Silly</a>
+</li>
+<li
+class="cat-item cat-item-1856"><a
+href=https://www.aomin.org/aoblog/category/speaking-engagements/ >Speaking Engagements</a>
+</li>
+<li
+class="cat-item cat-item-1854"><a
+href=https://www.aomin.org/aoblog/category/sweater-vest-dialogues/ >Sweater Vest Dialogues</a>
+</li>
+<li
+class="cat-item cat-item-15"><a
+href=https://www.aomin.org/aoblog/category/technology/ title="Using technology to God&#039;s glory">Technology</a>
+</li>
+<li
+class="cat-item cat-item-27"><a
+href=https://www.aomin.org/aoblog/category/testimonies/ >Testimonies</a>
+</li>
+<li
+class="cat-item cat-item-21"><a
+href=https://www.aomin.org/aoblog/category/textual-issues/ title="Issues Relating to the Text of the Bible">Textual Issues</a>
+</li>
+<li
+class="cat-item cat-item-14"><a
+href=https://www.aomin.org/aoblog/category/the-dividing-line/ >The Dividing Line</a>
+</li>
+<li
+class="cat-item cat-item-24"><a
+href=https://www.aomin.org/aoblog/category/theology-matters/ title="Well, Theology Matters">Theology Matters</a>
+</li>
+<li
+class="cat-item cat-item-1814"><a
+href=https://www.aomin.org/aoblog/category/thomism/ >Thomism</a>
+</li>
+<li
+class="cat-item cat-item-23"><a
+href=https://www.aomin.org/aoblog/category/tomb-issues/ >Tomb Issues</a>
+</li>
+<li
+class="cat-item cat-item-1882"><a
+href=https://www.aomin.org/aoblog/category/transinsanity/ >Transinsanity</a>
+</li>
+<li
+class="cat-item cat-item-237"><a
+href=https://www.aomin.org/aoblog/category/tronlyism/ >TROnlyism</a>
+</li>
+<li
+class="cat-item cat-item-1"><a
+href=https://www.aomin.org/aoblog/category/uncategorized/ >Uncategorized</a>
+</li>
+<li
+class="cat-item cat-item-1883"><a
+href=https://www.aomin.org/aoblog/category/unitarianism/ >Unitarianism</a>
+</li></ul></div><div
+id=recent-posts-3 class="widget widget_recent_entries"><h4 class="widget-title">Recent Posts</h4><ul>
+<li>
+<a
+href=https://www.aomin.org/aoblog/church-history/a-little-francis-but-mainly-responding-to-jared-longshore/ >A Little Francis, But Mainly Responding to Jared Longshore</a>
+</li>
+<li>
+<a
+href=https://www.aomin.org/aoblog/musings/road-trip-dividing-line-only-45-minutes-today/ >Road Trip Dividing Line: Only 45 Minutes Today</a>
+</li>
+<li>
+<a
+href=https://www.aomin.org/aoblog/the-dividing-line/road-trip-dividing-line-eric-holmbergs-conversion-syndrome-joel-beeke-on-the-kjv/ >Road Trip Dividing Line: Eric Holmberg&#8217;s Conversion Syndrome, Joel Beeke on the KJV</a>
+</li>
+<li>
+<a
+href=https://www.aomin.org/aoblog/reformed-baptist-issues/on-the-origin-of-the-term-biblicism/ >On The Origin of the Term &#8220;Biblicism&#8221;</a>
+</li>
+<li>
+<a
+href=https://www.aomin.org/aoblog/the-dividing-line/a-non-road-trip-road-trip-dl/ >A Non-Road Trip Road Trip DL</a>
+</li></ul></div><div
+id=archives-2 class="widget widget_archive"><h4 class="widget-title">Archives</h4>		<label
+class=screen-reader-text for=archives-dropdown-2>Archives</label>
+<select
+id=archives-dropdown-2 name=archive-dropdown><option
+value>Select Month</option><option
+value=https://www.aomin.org/aoblog/2023/12/ > December 2023</option><option
+value=https://www.aomin.org/aoblog/2023/11/ > November 2023</option><option
+value=https://www.aomin.org/aoblog/2023/10/ > October 2023</option><option
+value=https://www.aomin.org/aoblog/2023/09/ > September 2023</option><option
+value=https://www.aomin.org/aoblog/2023/08/ > August 2023</option><option
+value=https://www.aomin.org/aoblog/2023/07/ > July 2023</option><option
+value=https://www.aomin.org/aoblog/2023/06/ > June 2023</option><option
+value=https://www.aomin.org/aoblog/2023/05/ > May 2023</option><option
+value=https://www.aomin.org/aoblog/2023/04/ > April 2023</option><option
+value=https://www.aomin.org/aoblog/2023/03/ > March 2023</option><option
+value=https://www.aomin.org/aoblog/2023/02/ > February 2023</option><option
+value=https://www.aomin.org/aoblog/2023/01/ > January 2023</option><option
+value=https://www.aomin.org/aoblog/2022/12/ > December 2022</option><option
+value=https://www.aomin.org/aoblog/2022/11/ > November 2022</option><option
+value=https://www.aomin.org/aoblog/2022/10/ > October 2022</option><option
+value=https://www.aomin.org/aoblog/2022/09/ > September 2022</option><option
+value=https://www.aomin.org/aoblog/2022/08/ > August 2022</option><option
+value=https://www.aomin.org/aoblog/2022/07/ > July 2022</option><option
+value=https://www.aomin.org/aoblog/2022/06/ > June 2022</option><option
+value=https://www.aomin.org/aoblog/2022/05/ > May 2022</option><option
+value=https://www.aomin.org/aoblog/2022/04/ > April 2022</option><option
+value=https://www.aomin.org/aoblog/2022/03/ > March 2022</option><option
+value=https://www.aomin.org/aoblog/2022/02/ > February 2022</option><option
+value=https://www.aomin.org/aoblog/2022/01/ > January 2022</option><option
+value=https://www.aomin.org/aoblog/2021/12/ > December 2021</option><option
+value=https://www.aomin.org/aoblog/2021/11/ > November 2021</option><option
+value=https://www.aomin.org/aoblog/2021/10/ > October 2021</option><option
+value=https://www.aomin.org/aoblog/2021/09/ > September 2021</option><option
+value=https://www.aomin.org/aoblog/2021/08/ > August 2021</option><option
+value=https://www.aomin.org/aoblog/2021/07/ > July 2021</option><option
+value=https://www.aomin.org/aoblog/2021/06/ > June 2021</option><option
+value=https://www.aomin.org/aoblog/2021/05/ > May 2021</option><option
+value=https://www.aomin.org/aoblog/2021/04/ > April 2021</option><option
+value=https://www.aomin.org/aoblog/2021/03/ > March 2021</option><option
+value=https://www.aomin.org/aoblog/2021/02/ > February 2021</option><option
+value=https://www.aomin.org/aoblog/2021/01/ > January 2021</option><option
+value=https://www.aomin.org/aoblog/2020/12/ > December 2020</option><option
+value=https://www.aomin.org/aoblog/2020/11/ > November 2020</option><option
+value=https://www.aomin.org/aoblog/2020/10/ > October 2020</option><option
+value=https://www.aomin.org/aoblog/2020/09/ > September 2020</option><option
+value=https://www.aomin.org/aoblog/2020/08/ > August 2020</option><option
+value=https://www.aomin.org/aoblog/2020/07/ > July 2020</option><option
+value=https://www.aomin.org/aoblog/2020/06/ > June 2020</option><option
+value=https://www.aomin.org/aoblog/2020/05/ > May 2020</option><option
+value=https://www.aomin.org/aoblog/2020/04/ > April 2020</option><option
+value=https://www.aomin.org/aoblog/2020/03/ > March 2020</option><option
+value=https://www.aomin.org/aoblog/2020/02/ > February 2020</option><option
+value=https://www.aomin.org/aoblog/2020/01/ > January 2020</option><option
+value=https://www.aomin.org/aoblog/2019/12/ > December 2019</option><option
+value=https://www.aomin.org/aoblog/2019/11/ > November 2019</option><option
+value=https://www.aomin.org/aoblog/2019/10/ > October 2019</option><option
+value=https://www.aomin.org/aoblog/2019/09/ > September 2019</option><option
+value=https://www.aomin.org/aoblog/2019/08/ > August 2019</option><option
+value=https://www.aomin.org/aoblog/2019/07/ > July 2019</option><option
+value=https://www.aomin.org/aoblog/2019/06/ > June 2019</option><option
+value=https://www.aomin.org/aoblog/2019/05/ > May 2019</option><option
+value=https://www.aomin.org/aoblog/2019/04/ > April 2019</option><option
+value=https://www.aomin.org/aoblog/2019/03/ > March 2019</option><option
+value=https://www.aomin.org/aoblog/2019/02/ > February 2019</option><option
+value=https://www.aomin.org/aoblog/2019/01/ > January 2019</option><option
+value=https://www.aomin.org/aoblog/2018/12/ > December 2018</option><option
+value=https://www.aomin.org/aoblog/2018/11/ > November 2018</option><option
+value=https://www.aomin.org/aoblog/2018/10/ > October 2018</option><option
+value=https://www.aomin.org/aoblog/2018/09/ > September 2018</option><option
+value=https://www.aomin.org/aoblog/2018/08/ > August 2018</option><option
+value=https://www.aomin.org/aoblog/2018/07/ > July 2018</option><option
+value=https://www.aomin.org/aoblog/2018/06/ > June 2018</option><option
+value=https://www.aomin.org/aoblog/2018/05/ > May 2018</option><option
+value=https://www.aomin.org/aoblog/2018/04/ > April 2018</option><option
+value=https://www.aomin.org/aoblog/2018/03/ > March 2018</option><option
+value=https://www.aomin.org/aoblog/2018/02/ > February 2018</option><option
+value=https://www.aomin.org/aoblog/2018/01/ > January 2018</option><option
+value=https://www.aomin.org/aoblog/2017/12/ > December 2017</option><option
+value=https://www.aomin.org/aoblog/2017/11/ > November 2017</option><option
+value=https://www.aomin.org/aoblog/2017/10/ > October 2017</option><option
+value=https://www.aomin.org/aoblog/2017/09/ > September 2017</option><option
+value=https://www.aomin.org/aoblog/2017/08/ > August 2017</option><option
+value=https://www.aomin.org/aoblog/2017/07/ > July 2017</option><option
+value=https://www.aomin.org/aoblog/2017/06/ > June 2017</option><option
+value=https://www.aomin.org/aoblog/2017/05/ > May 2017</option><option
+value=https://www.aomin.org/aoblog/2017/04/ > April 2017</option><option
+value=https://www.aomin.org/aoblog/2017/03/ > March 2017</option><option
+value=https://www.aomin.org/aoblog/2017/02/ > February 2017</option><option
+value=https://www.aomin.org/aoblog/2017/01/ > January 2017</option><option
+value=https://www.aomin.org/aoblog/2016/12/ > December 2016</option><option
+value=https://www.aomin.org/aoblog/2016/11/ > November 2016</option><option
+value=https://www.aomin.org/aoblog/2016/10/ > October 2016</option><option
+value=https://www.aomin.org/aoblog/2016/09/ > September 2016</option><option
+value=https://www.aomin.org/aoblog/2016/08/ > August 2016</option><option
+value=https://www.aomin.org/aoblog/2016/07/ > July 2016</option><option
+value=https://www.aomin.org/aoblog/2016/06/ > June 2016</option><option
+value=https://www.aomin.org/aoblog/2016/05/ > May 2016</option><option
+value=https://www.aomin.org/aoblog/2016/04/ > April 2016</option><option
+value=https://www.aomin.org/aoblog/2016/03/ > March 2016</option><option
+value=https://www.aomin.org/aoblog/2016/02/ > February 2016</option><option
+value=https://www.aomin.org/aoblog/2016/01/ > January 2016</option><option
+value=https://www.aomin.org/aoblog/2015/12/ > December 2015</option><option
+value=https://www.aomin.org/aoblog/2015/11/ > November 2015</option><option
+value=https://www.aomin.org/aoblog/2015/10/ > October 2015</option><option
+value=https://www.aomin.org/aoblog/2015/09/ > September 2015</option><option
+value=https://www.aomin.org/aoblog/2015/08/ > August 2015</option><option
+value=https://www.aomin.org/aoblog/2015/07/ > July 2015</option><option
+value=https://www.aomin.org/aoblog/2015/06/ > June 2015</option><option
+value=https://www.aomin.org/aoblog/2015/05/ > May 2015</option><option
+value=https://www.aomin.org/aoblog/2015/04/ > April 2015</option><option
+value=https://www.aomin.org/aoblog/2015/03/ > March 2015</option><option
+value=https://www.aomin.org/aoblog/2015/02/ > February 2015</option><option
+value=https://www.aomin.org/aoblog/2015/01/ > January 2015</option><option
+value=https://www.aomin.org/aoblog/2014/12/ > December 2014</option><option
+value=https://www.aomin.org/aoblog/2014/11/ > November 2014</option><option
+value=https://www.aomin.org/aoblog/2014/10/ > October 2014</option><option
+value=https://www.aomin.org/aoblog/2014/09/ > September 2014</option><option
+value=https://www.aomin.org/aoblog/2014/08/ > August 2014</option><option
+value=https://www.aomin.org/aoblog/2014/07/ > July 2014</option><option
+value=https://www.aomin.org/aoblog/2014/06/ > June 2014</option><option
+value=https://www.aomin.org/aoblog/2014/05/ > May 2014</option><option
+value=https://www.aomin.org/aoblog/2014/04/ > April 2014</option><option
+value=https://www.aomin.org/aoblog/2014/03/ > March 2014</option><option
+value=https://www.aomin.org/aoblog/2014/02/ > February 2014</option><option
+value=https://www.aomin.org/aoblog/2014/01/ > January 2014</option><option
+value=https://www.aomin.org/aoblog/2013/12/ > December 2013</option><option
+value=https://www.aomin.org/aoblog/2013/11/ > November 2013</option><option
+value=https://www.aomin.org/aoblog/2013/10/ > October 2013</option><option
+value=https://www.aomin.org/aoblog/2013/09/ > September 2013</option><option
+value=https://www.aomin.org/aoblog/2013/08/ > August 2013</option><option
+value=https://www.aomin.org/aoblog/2013/07/ > July 2013</option><option
+value=https://www.aomin.org/aoblog/2013/06/ > June 2013</option><option
+value=https://www.aomin.org/aoblog/2013/05/ > May 2013</option><option
+value=https://www.aomin.org/aoblog/2013/04/ > April 2013</option><option
+value=https://www.aomin.org/aoblog/2013/03/ > March 2013</option><option
+value=https://www.aomin.org/aoblog/2013/02/ > February 2013</option><option
+value=https://www.aomin.org/aoblog/2013/01/ > January 2013</option><option
+value=https://www.aomin.org/aoblog/2012/12/ > December 2012</option><option
+value=https://www.aomin.org/aoblog/2012/11/ > November 2012</option><option
+value=https://www.aomin.org/aoblog/2012/10/ > October 2012</option><option
+value=https://www.aomin.org/aoblog/2012/09/ > September 2012</option><option
+value=https://www.aomin.org/aoblog/2012/08/ > August 2012</option><option
+value=https://www.aomin.org/aoblog/2012/07/ > July 2012</option><option
+value=https://www.aomin.org/aoblog/2012/06/ > June 2012</option><option
+value=https://www.aomin.org/aoblog/2012/05/ > May 2012</option><option
+value=https://www.aomin.org/aoblog/2012/04/ > April 2012</option><option
+value=https://www.aomin.org/aoblog/2012/03/ > March 2012</option><option
+value=https://www.aomin.org/aoblog/2012/02/ > February 2012</option><option
+value=https://www.aomin.org/aoblog/2012/01/ > January 2012</option><option
+value=https://www.aomin.org/aoblog/2011/12/ > December 2011</option><option
+value=https://www.aomin.org/aoblog/2011/11/ > November 2011</option><option
+value=https://www.aomin.org/aoblog/2011/10/ > October 2011</option><option
+value=https://www.aomin.org/aoblog/2011/09/ > September 2011</option><option
+value=https://www.aomin.org/aoblog/2011/08/ > August 2011</option><option
+value=https://www.aomin.org/aoblog/2011/07/ > July 2011</option><option
+value=https://www.aomin.org/aoblog/2011/06/ > June 2011</option><option
+value=https://www.aomin.org/aoblog/2011/05/ > May 2011</option><option
+value=https://www.aomin.org/aoblog/2011/04/ > April 2011</option><option
+value=https://www.aomin.org/aoblog/2011/03/ > March 2011</option><option
+value=https://www.aomin.org/aoblog/2011/02/ > February 2011</option><option
+value=https://www.aomin.org/aoblog/2011/01/ > January 2011</option><option
+value=https://www.aomin.org/aoblog/2010/12/ > December 2010</option><option
+value=https://www.aomin.org/aoblog/2010/11/ > November 2010</option><option
+value=https://www.aomin.org/aoblog/2010/10/ > October 2010</option><option
+value=https://www.aomin.org/aoblog/2010/09/ > September 2010</option><option
+value=https://www.aomin.org/aoblog/2010/08/ > August 2010</option><option
+value=https://www.aomin.org/aoblog/2010/07/ > July 2010</option><option
+value=https://www.aomin.org/aoblog/2010/06/ > June 2010</option><option
+value=https://www.aomin.org/aoblog/2010/05/ > May 2010</option><option
+value=https://www.aomin.org/aoblog/2010/04/ > April 2010</option><option
+value=https://www.aomin.org/aoblog/2010/03/ > March 2010</option><option
+value=https://www.aomin.org/aoblog/2010/02/ > February 2010</option><option
+value=https://www.aomin.org/aoblog/2010/01/ > January 2010</option><option
+value=https://www.aomin.org/aoblog/2009/12/ > December 2009</option><option
+value=https://www.aomin.org/aoblog/2009/11/ > November 2009</option><option
+value=https://www.aomin.org/aoblog/2009/10/ > October 2009</option><option
+value=https://www.aomin.org/aoblog/2009/09/ > September 2009</option><option
+value=https://www.aomin.org/aoblog/2009/08/ > August 2009</option><option
+value=https://www.aomin.org/aoblog/2009/07/ > July 2009</option><option
+value=https://www.aomin.org/aoblog/2009/06/ > June 2009</option><option
+value=https://www.aomin.org/aoblog/2009/05/ > May 2009</option><option
+value=https://www.aomin.org/aoblog/2009/04/ > April 2009</option><option
+value=https://www.aomin.org/aoblog/2009/03/ > March 2009</option><option
+value=https://www.aomin.org/aoblog/2009/02/ > February 2009</option><option
+value=https://www.aomin.org/aoblog/2009/01/ > January 2009</option><option
+value=https://www.aomin.org/aoblog/2008/12/ > December 2008</option><option
+value=https://www.aomin.org/aoblog/2008/11/ > November 2008</option><option
+value=https://www.aomin.org/aoblog/2008/10/ > October 2008</option><option
+value=https://www.aomin.org/aoblog/2008/09/ > September 2008</option><option
+value=https://www.aomin.org/aoblog/2008/08/ > August 2008</option><option
+value=https://www.aomin.org/aoblog/2008/07/ > July 2008</option><option
+value=https://www.aomin.org/aoblog/2008/06/ > June 2008</option><option
+value=https://www.aomin.org/aoblog/2008/05/ > May 2008</option><option
+value=https://www.aomin.org/aoblog/2008/04/ > April 2008</option><option
+value=https://www.aomin.org/aoblog/2008/03/ > March 2008</option><option
+value=https://www.aomin.org/aoblog/2008/02/ > February 2008</option><option
+value=https://www.aomin.org/aoblog/2008/01/ > January 2008</option><option
+value=https://www.aomin.org/aoblog/2007/12/ > December 2007</option><option
+value=https://www.aomin.org/aoblog/2007/11/ > November 2007</option><option
+value=https://www.aomin.org/aoblog/2007/10/ > October 2007</option><option
+value=https://www.aomin.org/aoblog/2007/09/ > September 2007</option><option
+value=https://www.aomin.org/aoblog/2007/08/ > August 2007</option><option
+value=https://www.aomin.org/aoblog/2007/07/ > July 2007</option><option
+value=https://www.aomin.org/aoblog/2007/06/ > June 2007</option><option
+value=https://www.aomin.org/aoblog/2007/05/ > May 2007</option><option
+value=https://www.aomin.org/aoblog/2007/04/ > April 2007</option><option
+value=https://www.aomin.org/aoblog/2007/03/ > March 2007</option><option
+value=https://www.aomin.org/aoblog/2007/02/ > February 2007</option><option
+value=https://www.aomin.org/aoblog/2007/01/ > January 2007</option><option
+value=https://www.aomin.org/aoblog/2006/12/ > December 2006</option><option
+value=https://www.aomin.org/aoblog/2006/11/ > November 2006</option><option
+value=https://www.aomin.org/aoblog/2006/10/ > October 2006</option><option
+value=https://www.aomin.org/aoblog/2006/09/ > September 2006</option><option
+value=https://www.aomin.org/aoblog/2006/08/ > August 2006</option><option
+value=https://www.aomin.org/aoblog/2006/07/ > July 2006</option><option
+value=https://www.aomin.org/aoblog/2006/06/ > June 2006</option><option
+value=https://www.aomin.org/aoblog/2006/05/ > May 2006</option><option
+value=https://www.aomin.org/aoblog/2006/04/ > April 2006</option><option
+value=https://www.aomin.org/aoblog/2006/03/ > March 2006</option><option
+value=https://www.aomin.org/aoblog/2006/02/ > February 2006</option><option
+value=https://www.aomin.org/aoblog/2006/01/ > January 2006</option><option
+value=https://www.aomin.org/aoblog/2005/12/ > December 2005</option><option
+value=https://www.aomin.org/aoblog/2005/11/ > November 2005</option><option
+value=https://www.aomin.org/aoblog/2005/10/ > October 2005</option><option
+value=https://www.aomin.org/aoblog/2005/09/ > September 2005</option><option
+value=https://www.aomin.org/aoblog/2005/08/ > August 2005</option><option
+value=https://www.aomin.org/aoblog/2005/07/ > July 2005</option><option
+value=https://www.aomin.org/aoblog/2005/06/ > June 2005</option><option
+value=https://www.aomin.org/aoblog/2005/05/ > May 2005</option><option
+value=https://www.aomin.org/aoblog/2005/04/ > April 2005</option><option
+value=https://www.aomin.org/aoblog/2005/03/ > March 2005</option><option
+value=https://www.aomin.org/aoblog/2005/02/ > February 2005</option><option
+value=https://www.aomin.org/aoblog/2005/01/ > January 2005</option><option
+value=https://www.aomin.org/aoblog/2004/12/ > December 2004</option><option
+value=https://www.aomin.org/aoblog/2004/11/ > November 2004</option><option
+value=https://www.aomin.org/aoblog/2004/10/ > October 2004</option><option
+value=https://www.aomin.org/aoblog/2004/09/ > September 2004</option><option
+value=https://www.aomin.org/aoblog/2004/08/ > August 2004</option><option
+value=https://www.aomin.org/aoblog/2004/07/ > July 2004</option><option
+value=https://www.aomin.org/aoblog/2004/06/ > June 2004</option><option
+value=https://www.aomin.org/aoblog/2004/05/ > May 2004</option><option
+value=https://www.aomin.org/aoblog/2004/04/ > April 2004</option><option
+value=https://www.aomin.org/aoblog/2004/03/ > March 2004</option><option
+value=https://www.aomin.org/aoblog/2004/02/ > February 2004</option><option
+value=https://www.aomin.org/aoblog/2004/01/ > January 2004</option><option
+value=https://www.aomin.org/aoblog/2003/12/ > December 2003</option><option
+value=https://www.aomin.org/aoblog/2003/11/ > November 2003</option><option
+value=https://www.aomin.org/aoblog/2003/10/ > October 2003</option><option
+value=https://www.aomin.org/aoblog/2003/09/ > September 2003</option><option
+value=https://www.aomin.org/aoblog/2003/08/ > August 2003</option><option
+value=https://www.aomin.org/aoblog/2003/07/ > July 2003</option><option
+value=https://www.aomin.org/aoblog/2003/06/ > June 2003</option><option
+value=https://www.aomin.org/aoblog/2003/05/ > May 2003</option><option
+value=https://www.aomin.org/aoblog/2003/04/ > April 2003</option><option
+value=https://www.aomin.org/aoblog/2003/03/ > March 2003</option><option
+value=https://www.aomin.org/aoblog/2003/02/ > February 2003</option><option
+value=https://www.aomin.org/aoblog/2003/01/ > January 2003</option><option
+value=https://www.aomin.org/aoblog/2002/12/ > December 2002</option><option
+value=https://www.aomin.org/aoblog/2002/11/ > November 2002</option><option
+value=https://www.aomin.org/aoblog/2002/10/ > October 2002</option><option
+value=https://www.aomin.org/aoblog/2002/09/ > September 2002</option><option
+value=https://www.aomin.org/aoblog/2002/08/ > August 2002</option><option
+value=https://www.aomin.org/aoblog/2002/07/ > July 2002</option><option
+value=https://www.aomin.org/aoblog/2002/06/ > June 2002</option><option
+value=https://www.aomin.org/aoblog/2002/05/ > May 2002</option><option
+value=https://www.aomin.org/aoblog/2002/04/ > April 2002</option><option
+value=https://www.aomin.org/aoblog/2002/03/ > March 2002</option><option
+value=https://www.aomin.org/aoblog/2002/02/ > February 2002</option><option
+value=https://www.aomin.org/aoblog/2002/01/ > January 2002</option><option
+value=https://www.aomin.org/aoblog/2001/12/ > December 2001</option><option
+value=https://www.aomin.org/aoblog/2001/11/ > November 2001</option><option
+value=https://www.aomin.org/aoblog/2001/10/ > October 2001</option><option
+value=https://www.aomin.org/aoblog/2001/09/ > September 2001</option><option
+value=https://www.aomin.org/aoblog/2001/08/ > August 2001</option><option
+value=https://www.aomin.org/aoblog/2001/07/ > July 2001</option><option
+value=https://www.aomin.org/aoblog/2001/06/ > June 2001</option><option
+value=https://www.aomin.org/aoblog/2001/05/ > May 2001</option><option
+value=https://www.aomin.org/aoblog/2001/04/ > April 2001</option><option
+value=https://www.aomin.org/aoblog/2001/03/ > March 2001</option><option
+value=https://www.aomin.org/aoblog/2001/02/ > February 2001</option><option
+value=https://www.aomin.org/aoblog/2001/01/ > January 2001</option><option
+value=https://www.aomin.org/aoblog/2000/12/ > December 2000</option><option
+value=https://www.aomin.org/aoblog/2000/11/ > November 2000</option><option
+value=https://www.aomin.org/aoblog/2000/10/ > October 2000</option><option
+value=https://www.aomin.org/aoblog/2000/09/ > September 2000</option><option
+value=https://www.aomin.org/aoblog/2000/08/ > August 2000</option><option
+value=https://www.aomin.org/aoblog/2000/07/ > July 2000</option><option
+value=https://www.aomin.org/aoblog/2000/06/ > June 2000</option><option
+value=https://www.aomin.org/aoblog/2000/05/ > May 2000</option><option
+value=https://www.aomin.org/aoblog/2000/04/ > April 2000</option><option
+value=https://www.aomin.org/aoblog/2000/03/ > March 2000</option><option
+value=https://www.aomin.org/aoblog/2000/02/ > February 2000</option><option
+value=https://www.aomin.org/aoblog/2000/01/ > January 2000</option><option
+value=https://www.aomin.org/aoblog/1999/12/ > December 1999</option><option
+value=https://www.aomin.org/aoblog/1999/11/ > November 1999</option><option
+value=https://www.aomin.org/aoblog/1999/10/ > October 1999</option><option
+value=https://www.aomin.org/aoblog/1999/09/ > September 1999</option><option
+value=https://www.aomin.org/aoblog/1999/08/ > August 1999</option><option
+value=https://www.aomin.org/aoblog/1999/06/ > June 1999</option><option
+value=https://www.aomin.org/aoblog/1999/05/ > May 1999</option><option
+value=https://www.aomin.org/aoblog/1999/04/ > April 1999</option><option
+value=https://www.aomin.org/aoblog/1999/03/ > March 1999</option><option
+value=https://www.aomin.org/aoblog/1999/02/ > February 1999</option><option
+value=https://www.aomin.org/aoblog/1999/01/ > January 1999</option><option
+value=https://www.aomin.org/aoblog/1998/12/ > December 1998</option><option
+value=https://www.aomin.org/aoblog/1998/11/ > November 1998</option><option
+value=https://www.aomin.org/aoblog/1998/10/ > October 1998</option><option
+value=https://www.aomin.org/aoblog/1998/09/ > September 1998</option><option
+value=https://www.aomin.org/aoblog/1998/07/ > July 1998</option><option
+value=https://www.aomin.org/aoblog/1998/06/ > June 1998</option><option
+value=https://www.aomin.org/aoblog/1998/05/ > May 1998</option><option
+value=https://www.aomin.org/aoblog/1998/04/ > April 1998</option><option
+value=https://www.aomin.org/aoblog/1998/01/ > January 1998</option><option
+value=https://www.aomin.org/aoblog/1997/10/ > October 1997</option><option
+value=https://www.aomin.org/aoblog/1997/09/ > September 1997</option><option
+value=https://www.aomin.org/aoblog/1997/07/ > July 1997</option><option
+value=https://www.aomin.org/aoblog/1997/06/ > June 1997</option><option
+value=https://www.aomin.org/aoblog/1997/05/ > May 1997</option><option
+value=https://www.aomin.org/aoblog/1997/04/ > April 1997</option><option
+value=https://www.aomin.org/aoblog/1997/02/ > February 1997</option><option
+value=https://www.aomin.org/aoblog/1997/01/ > January 1997</option><option
+value=https://www.aomin.org/aoblog/1996/11/ > November 1996</option><option
+value=https://www.aomin.org/aoblog/1996/09/ > September 1996</option><option
+value=https://www.aomin.org/aoblog/1996/08/ > August 1996</option><option
+value=https://www.aomin.org/aoblog/1996/07/ > July 1996</option><option
+value=https://www.aomin.org/aoblog/1996/06/ > June 1996</option><option
+value=https://www.aomin.org/aoblog/1996/05/ > May 1996</option><option
+value=https://www.aomin.org/aoblog/1996/02/ > February 1996</option><option
+value=https://www.aomin.org/aoblog/1996/01/ > January 1996</option><option
+value=https://www.aomin.org/aoblog/1995/11/ > November 1995</option><option
+value=https://www.aomin.org/aoblog/1995/07/ > July 1995</option><option
+value=https://www.aomin.org/aoblog/1995/06/ > June 1995</option><option
+value=https://www.aomin.org/aoblog/1995/04/ > April 1995</option><option
+value=https://www.aomin.org/aoblog/1995/03/ > March 1995</option><option
+value=https://www.aomin.org/aoblog/1994/11/ > November 1994</option><option
+value=https://www.aomin.org/aoblog/1994/07/ > July 1994</option><option
+value=https://www.aomin.org/aoblog/1994/03/ > March 1994</option><option
+value=https://www.aomin.org/aoblog/1993/11/ > November 1993</option><option
+value=https://www.aomin.org/aoblog/1993/09/ > September 1993</option><option
+value=https://www.aomin.org/aoblog/1993/08/ > August 1993</option><option
+value=https://www.aomin.org/aoblog/1993/05/ > May 1993</option><option
+value=https://www.aomin.org/aoblog/1993/04/ > April 1993</option><option
+value=https://www.aomin.org/aoblog/1993/03/ > March 1993</option><option
+value=https://www.aomin.org/aoblog/1993/01/ > January 1993</option><option
+value=https://www.aomin.org/aoblog/1992/11/ > November 1992</option><option
+value=https://www.aomin.org/aoblog/1992/01/ > January 1992</option><option
+value=https://www.aomin.org/aoblog/1991/12/ > December 1991</option><option
+value=https://www.aomin.org/aoblog/1991/05/ > May 1991</option><option
+value=https://www.aomin.org/aoblog/1991/01/ > January 1991</option><option
+value=https://www.aomin.org/aoblog/1990/12/ > December 1990</option><option
+value=https://www.aomin.org/aoblog/1990/03/ > March 1990</option><option
+value=https://www.aomin.org/aoblog/1990/01/ > January 1990</option><option
+value=https://www.aomin.org/aoblog/1989/10/ > October 1989</option><option
+value=https://www.aomin.org/aoblog/1989/03/ > March 1989</option><option
+value=https://www.aomin.org/aoblog/1989/01/ > January 1989</option><option
+value=https://www.aomin.org/aoblog/1988/12/ > December 1988</option><option
+value=https://www.aomin.org/aoblog/1988/04/ > April 1988</option><option
+value=https://www.aomin.org/aoblog/1988/02/ > February 1988</option><option
+value=https://www.aomin.org/aoblog/1988/01/ > January 1988</option><option
+value=https://www.aomin.org/aoblog/1987/12/ > December 1987</option><option
+value=https://www.aomin.org/aoblog/1987/01/ > January 1987</option><option
+value=https://www.aomin.org/aoblog/1986/09/ > September 1986</option><option
+value=https://www.aomin.org/aoblog/1986/01/ > January 1986</option><option
+value=https://www.aomin.org/aoblog/1985/07/ > July 1985</option><option
+value=https://www.aomin.org/aoblog/1985/01/ > January 1985</option><option
+value=https://www.aomin.org/aoblog/1984/03/ > March 1984</option><option
+value=https://www.aomin.org/aoblog/1983/10/ > October 1983</option></select> <script>(function(){var dropdown=document.getElementById("archives-dropdown-2");function onSelectChange(){if(dropdown.options[dropdown.selectedIndex].value!==''){document.location.href=this.options[this.selectedIndex].value;}}
+dropdown.onchange=onSelectChange;})();</script> </div><div
+id=tag_cloud-3 class="widget widget_tag_cloud"><h4 class="widget-title">Categories</h4><div
+class=tagcloud><a
+href=https://www.aomin.org/aoblog/category/abortion/ class="tag-cloud-link tag-link-157 tag-link-position-1" style="font-size: 11.724137931034pt;" aria-label="Abortion (79 items)">Abortion</a>
+<a
+href=https://www.aomin.org/aoblog/category/atheism/ class="tag-cloud-link tag-link-29 tag-link-position-2" style="font-size: 11.448275862069pt;" aria-label="Atheism (71 items)">Atheism</a>
+<a
+href=https://www.aomin.org/aoblog/category/cbgm/ class="tag-cloud-link tag-link-224 tag-link-position-3" style="font-size: 9.3793103448276pt;" aria-label="CBGM (35 items)">CBGM</a>
+<a
+href=https://www.aomin.org/aoblog/category/christian-worldview/ class="tag-cloud-link tag-link-12 tag-link-position-4" style="font-size: 18.413793103448pt;" aria-label="Christian Worldview (737 items)">Christian Worldview</a>
+<a
+href=https://www.aomin.org/aoblog/category/church-fathers/ class="tag-cloud-link tag-link-254 tag-link-position-5" style="font-size: 12.896551724138pt;" aria-label="Church Fathers (117 items)">Church Fathers</a>
+<a
+href=https://www.aomin.org/aoblog/category/church-history/ class="tag-cloud-link tag-link-218 tag-link-position-6" style="font-size: 15.103448275862pt;" aria-label="Church History (246 items)">Church History</a>
+<a
+href=https://www.aomin.org/aoblog/category/debate/ class="tag-cloud-link tag-link-320 tag-link-position-7" style="font-size: 15.586206896552pt;" aria-label="Debate (286 items)">Debate</a>
+<a
+href=https://www.aomin.org/aoblog/category/eastern-orthodoxy/ class="tag-cloud-link tag-link-213 tag-link-position-8" style="font-size: 10.137931034483pt;" aria-label="Eastern Orthodoxy (46 items)">Eastern Orthodoxy</a>
+<a
+href=https://www.aomin.org/aoblog/category/exegesis/ class="tag-cloud-link tag-link-10 tag-link-position-9" style="font-size: 17.379310344828pt;" aria-label="Exegesis (525 items)">Exegesis</a>
+<a
+href=https://www.aomin.org/aoblog/category/general-apologetics/ class="tag-cloud-link tag-link-4 tag-link-position-10" style="font-size: 18.344827586207pt;" aria-label="General Apologetics (731 items)">General Apologetics</a>
+<a
+href=https://www.aomin.org/aoblog/category/godly-disciplines/ class="tag-cloud-link tag-link-20 tag-link-position-11" style="font-size: 12.827586206897pt;" aria-label="Godly Disciplines (113 items)">Godly Disciplines</a>
+<a
+href=https://www.aomin.org/aoblog/category/gospeljesus-studies/ class="tag-cloud-link tag-link-184 tag-link-position-12" style="font-size: 10.137931034483pt;" aria-label="Gospel/Jesus Studies (46 items)">Gospel/Jesus Studies</a>
+<a
+href=https://www.aomin.org/aoblog/category/homosexuality/ class="tag-cloud-link tag-link-46 tag-link-position-13" style="font-size: 15.310344827586pt;" aria-label="Homosexuality (262 items)">Homosexuality</a>
+<a
+href=https://www.aomin.org/aoblog/category/islam/ class="tag-cloud-link tag-link-13 tag-link-position-14" style="font-size: 17.793103448276pt;" aria-label="Islam (601 items)">Islam</a>
+<a
+href=https://www.aomin.org/aoblog/category/jehovahs-witnesses/ class="tag-cloud-link tag-link-5 tag-link-position-15" style="font-size: 11.931034482759pt;" aria-label="Jehovah&#039;s Witnesses (84 items)">Jehovah&#039;s Witnesses</a>
+<a
+href=https://www.aomin.org/aoblog/category/king-james-onlyism/ class="tag-cloud-link tag-link-8 tag-link-position-16" style="font-size: 14.137931034483pt;" aria-label="King James Onlyism (178 items)">King James Onlyism</a>
+<a
+href=https://www.aomin.org/aoblog/category/mail-bag/ class="tag-cloud-link tag-link-16 tag-link-position-17" style="font-size: 10.620689655172pt;" aria-label="Mail Bag (54 items)">Mail Bag</a>
+<a
+href=https://www.aomin.org/aoblog/category/misc/ class="tag-cloud-link tag-link-3 tag-link-position-18" style="font-size: 18.413793103448pt;" aria-label="Misc (738 items)">Misc</a>
+<a
+href=https://www.aomin.org/aoblog/category/molinism/ class="tag-cloud-link tag-link-1743 tag-link-position-19" style="font-size: 8pt;" aria-label="Molinism (22 items)">Molinism</a>
+<a
+href=https://www.aomin.org/aoblog/category/mormonism/ class="tag-cloud-link tag-link-7 tag-link-position-20" style="font-size: 15.724137931034pt;" aria-label="Mormonism (302 items)">Mormonism</a>
+<a
+href=https://www.aomin.org/aoblog/category/musings/ class="tag-cloud-link tag-link-166 tag-link-position-21" style="font-size: 10pt;" aria-label="Musings (44 items)">Musings</a>
+<a
+href=https://www.aomin.org/aoblog/category/oneness-pentecostalism/ class="tag-cloud-link tag-link-30 tag-link-position-22" style="font-size: 8.1379310344828pt;" aria-label="Oneness Pentecostalism (23 items)">Oneness Pentecostalism</a>
+<a
+href=https://www.aomin.org/aoblog/category/pastoral-theology/ class="tag-cloud-link tag-link-17 tag-link-position-23" style="font-size: 15.586206896552pt;" aria-label="Pastoral Theology (288 items)">Pastoral Theology</a>
+<a
+href=https://www.aomin.org/aoblog/category/pauline-studies/ class="tag-cloud-link tag-link-177 tag-link-position-24" style="font-size: 11.655172413793pt;" aria-label="Pauline Studies (76 items)">Pauline Studies</a>
+<a
+href=https://www.aomin.org/aoblog/category/persecution/ class="tag-cloud-link tag-link-25 tag-link-position-25" style="font-size: 13.51724137931pt;" aria-label="Persecution (143 items)">Persecution</a>
+<a
+href=https://www.aomin.org/aoblog/category/personal/ class="tag-cloud-link tag-link-11 tag-link-position-26" style="font-size: 16.827586206897pt;" aria-label="Personal (438 items)">Personal</a>
+<a
+href=https://www.aomin.org/aoblog/category/post-evangelicalism/ class="tag-cloud-link tag-link-26 tag-link-position-27" style="font-size: 16pt;" aria-label="Post-Evangelicalism (331 items)">Post-Evangelicalism</a>
+<a
+href=https://www.aomin.org/aoblog/category/provisionism/ class="tag-cloud-link tag-link-253 tag-link-position-28" style="font-size: 11.655172413793pt;" aria-label="Provisionism (76 items)">Provisionism</a>
+<a
+href=https://www.aomin.org/aoblog/category/racialism/ class="tag-cloud-link tag-link-225 tag-link-position-29" style="font-size: 13.931034482759pt;" aria-label="Racialism (165 items)">Racialism</a>
+<a
+href=https://www.aomin.org/aoblog/category/radio-free-geneva/ class="tag-cloud-link tag-link-219 tag-link-position-30" style="font-size: 9.7931034482759pt;" aria-label="Radio Free Geneva (41 items)">Radio Free Geneva</a>
+<a
+href=https://www.aomin.org/aoblog/category/reformed-apologetics/ class="tag-cloud-link tag-link-6 tag-link-position-31" style="font-size: 19.103448275862pt;" aria-label="Reformed Apologetics (928 items)">Reformed Apologetics</a>
+<a
+href=https://www.aomin.org/aoblog/category/reformed-baptist-issues/ class="tag-cloud-link tag-link-19 tag-link-position-32" style="font-size: 14.413793103448pt;" aria-label="Reformed Baptist Issues (194 items)">Reformed Baptist Issues</a>
+<a
+href=https://www.aomin.org/aoblog/category/materials-in-the-bookstore/ class="tag-cloud-link tag-link-28 tag-link-position-33" style="font-size: 12.275862068966pt;" aria-label="Resources (94 items)">Resources</a>
+<a
+href=https://www.aomin.org/aoblog/category/road-trip/ class="tag-cloud-link tag-link-1654 tag-link-position-34" style="font-size: 13.862068965517pt;" aria-label="Road Trip (163 items)">Road Trip</a>
+<a
+href=https://www.aomin.org/aoblog/category/roman-catholicism/ class="tag-cloud-link tag-link-9 tag-link-position-35" style="font-size: 19.931034482759pt;" aria-label="Roman Catholicism (1,224 items)">Roman Catholicism</a>
+<a
+href=https://www.aomin.org/aoblog/category/simply-silly/ class="tag-cloud-link tag-link-18 tag-link-position-36" style="font-size: 11.586206896552pt;" aria-label="Simply Silly (75 items)">Simply Silly</a>
+<a
+href=https://www.aomin.org/aoblog/category/technology/ class="tag-cloud-link tag-link-15 tag-link-position-37" style="font-size: 9.1724137931034pt;" aria-label="Technology (33 items)">Technology</a>
+<a
+href=https://www.aomin.org/aoblog/category/testimonies/ class="tag-cloud-link tag-link-27 tag-link-position-38" style="font-size: 10.896551724138pt;" aria-label="Testimonies (59 items)">Testimonies</a>
+<a
+href=https://www.aomin.org/aoblog/category/textual-issues/ class="tag-cloud-link tag-link-21 tag-link-position-39" style="font-size: 15.103448275862pt;" aria-label="Textual Issues (246 items)">Textual Issues</a>
+<a
+href=https://www.aomin.org/aoblog/category/the-dividing-line/ class="tag-cloud-link tag-link-14 tag-link-position-40" style="font-size: 22pt;" aria-label="The Dividing Line (2,464 items)">The Dividing Line</a>
+<a
+href=https://www.aomin.org/aoblog/category/theology-matters/ class="tag-cloud-link tag-link-24 tag-link-position-41" style="font-size: 17.379310344828pt;" aria-label="Theology Matters (528 items)">Theology Matters</a>
+<a
+href=https://www.aomin.org/aoblog/category/thomism/ class="tag-cloud-link tag-link-1814 tag-link-position-42" style="font-size: 11.379310344828pt;" aria-label="Thomism (70 items)">Thomism</a>
+<a
+href=https://www.aomin.org/aoblog/category/tomb-issues/ class="tag-cloud-link tag-link-23 tag-link-position-43" style="font-size: 9.8620689655172pt;" aria-label="Tomb Issues (42 items)">Tomb Issues</a>
+<a
+href=https://www.aomin.org/aoblog/category/tronlyism/ class="tag-cloud-link tag-link-237 tag-link-position-44" style="font-size: 10.137931034483pt;" aria-label="TROnlyism (46 items)">TROnlyism</a>
+<a
+href=https://www.aomin.org/aoblog/category/uncategorized/ class="tag-cloud-link tag-link-1 tag-link-position-45" style="font-size: 15.310344827586pt;" aria-label="Uncategorized (262 items)">Uncategorized</a></div></div></div></div></div></div></section></div><div
+id=footer class="footer-color border-top"><div
+class=container><div
+class="template-page tpl-no"><div
+class=wrap-content><div
+class=row><div
+class=col-sm-3><div
+id=footer-sidebar-1 class="footer-sidebar widget-area" role=complementary><div
+id=media_image-3 class="widget widget_media_image"><img
+width=156 height=88 src=https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-300x169.png class="image wp-image-27048  attachment-156x88 size-156x88" alt loading=lazy style="max-width: 100%; height: auto;" srcset="https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-300x169.png 300w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-1024x576.png 1024w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-768x432.png 768w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-1536x864.png 1536w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-150x84.png 150w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-672x378.png 672w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-1038x584.png 1038w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW-480x270.png 480w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/AOMIN-Logo-NEW.png 1920w" sizes="(max-width: 156px) 100vw, 156px"></div><div
+id=text-8 class="widget widget_text"><div
+class=textwidget><div
+class="kleo_text_column wpb_text_column wpb_content_element "><div
+class=wpb_wrapper><p>Alpha and Omega Ministries is a Christian apologetics organization based in Phoenix, Arizona. James White, director, is a professor, having taught Greek, Systematic Theology, and various topics in the field of apologetics for numerous schools.</p></div></div><h4 id="" class="vc_custom_heading"><a
+title="About Us" href=https://www.aomin.org/aoblog/about/ >Learn More About Us &gt;</a></h4></div></div><div
+id=text-9 class="widget widget_text"><h4 class="widget-title">Contact Us</h4><div
+class=textwidget><div
+class="kleo_text_column wpb_text_column wpb_content_element "><div
+class=wpb_wrapper><p>Alpha and Omega Ministries<br>
+P.O. Box 37106<br>
+Phoenix, AZ 85069<br>
+Office Hours<br>
+8am to 5pm MST<br>
+602-973-4602<br>
+877-753-3341 (US Callers Only)</p></div></div></div></div></div></div><div
+class=col-sm-3><div
+id=footer-sidebar-2 class="footer-sidebar widget-area" role=complementary><div
+id=media_image-4 class="widget widget_media_image"><img
+width=88 height=88 src=https://www.aomin.org/aoblog/wp-content/uploads/2020/06/JW-3.2.png class="image wp-image-27009  attachment-88x88 size-88x88" alt loading=lazy style="max-width: 100%; height: auto;" srcset="https://www.aomin.org/aoblog/wp-content/uploads/2020/06/JW-3.2.png 150w, https://www.aomin.org/aoblog/wp-content/uploads/2020/06/JW-3.2-44x44.png 44w" sizes="(max-width: 88px) 100vw, 88px"></div><div
+id=text-10 class="widget widget_text"><div
+class=textwidget><div
+class="kleo_text_column wpb_text_column wpb_content_element "><div
+class=wpb_wrapper><p>James White is the director of Alpha and Omega Ministries, a Christian apologetics organization based in Phoenix, Arizona. He is the author of more than twenty books, a professor and an accomplished debater.</p></div></div><h4 id="" class="vc_custom_heading"><a
+title="About James" href=https://www.aomin.org/aoblog/about/ >Learn More About Us &gt;</a></h4></div></div><div
+id=text-13 class="widget widget_text"><h4 class="widget-title">Shop for Resources</h4><div
+class=textwidget><h4><a
+href=https://www.aomin.org/aoblog/store/ >Alpha &amp; Omega Store</a></h4></div></div></div></div><div
+class=col-sm-3><div
+id=footer-sidebar-3 class="footer-sidebar widget-area" role=complementary><div
+id=search-5 class="widget widget_search"><h4 class="widget-title">Search AOMIN</h4><form
+role=search method=get class=searchform action=https://www.aomin.org/aoblog/ ><div
+class=input-group>
+<input
+name=s autocomplete=off type=text class="ajax_s form-control input-sm" value>
+<span
+class=input-group-btn>
+<input
+type=submit value=Search class="searchsubmit button">
+</span></div></form></div><div
+id=kleo_recent_posts-3 class="widget widget_kleo_recent_posts"><h4 class="widget-title">Recent Posts</h4><div><ul
+class=news-widget-wrap><li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/church-history/a-little-francis-but-mainly-responding-to-jared-longshore/ >
+<span>A Little Francis, But Mainly Responding to Jared Longshore	<small
+class=news-time>December 4, 2023</small></span>
+</a></li>
+<li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/musings/road-trip-dividing-line-only-45-minutes-today/ >
+<span>Road Trip Dividing Line: Only 45 Minutes Today	<small
+class=news-time>December 4, 2023</small></span>
+</a></li>
+<li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/the-dividing-line/road-trip-dividing-line-eric-holmbergs-conversion-syndrome-joel-beeke-on-the-kjv/ >
+<span>Road Trip Dividing Line: Eric Holmberg&#8217;s Conversion Syndrome, Joel Beeke on the KJV	<small
+class=news-time>November 29, 2023</small></span>
+</a></li>
+<li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/reformed-baptist-issues/on-the-origin-of-the-term-biblicism/ >
+<span>On The Origin of the Term &#8220;Biblicism&#8221;	<small
+class=news-time>November 25, 2023</small></span>
+</a></li>
+<li
+class=news-content>
+<a
+class=news-link href=https://www.aomin.org/aoblog/the-dividing-line/a-non-road-trip-road-trip-dl/ >
+<span>A Non-Road Trip Road Trip DL	<small
+class=news-time>November 22, 2023</small></span>
+</a></li></ul></div></div></div></div><div
+class=col-sm-3><div
+id=footer-sidebar-4 class="footer-sidebar widget-area" role=complementary><div
+id=text-12 class="widget widget_text"><h4 class="widget-title">Links</h4><div
+class=textwidget><p><a
+href=https://www.aomin.org/aoblog/ >Home</a><br>
+<a
+href=https://www.aomin.org/aoblog/about/ >About</a><br>
+<a
+href=https://www.aomin.org/aoblog/statement-of-faith/ >Statement of Faith</a><br>
+<a
+href=https://www.aomin.org/aoblog/blog/ >Blog</a><br>
+<a
+href=https://www.aomin.org/aoblog/webcast/ >Webcast</a><br>
+<a
+href=https://www.aomin.org/aoblog/support-us/ >Donate</a><br>
+<a
+href=https://www.aomin.org/aoblog/store/ >Store</a><br>
+<a
+href=https://www.aomin.org/aoblog/aomin-app>AOMIN App</a><br>
+<a
+href=https://www.aomin.org/aoblog/contact-us/ >Contact</a></p></div></div></div></div></div></div></div></div></div><a
+class=kleo-go-top href=#><i
+class=icon-up-open-big></i></a><div
+id=socket class=socket-color><div
+class=container><div
+class="template-page tpl-no col-xs-12 col-sm-12"><div
+class=wrap-content><div
+class=row><div
+class=col-sm-12><div
+class=gap-10></div></div><div
+class=col-sm-12><p
+style="text-align: center;"><strong>©2023</strong> Alpha and Omega Ministries. All Rights Reserved.</p></div><div
+class=col-sm-12><div
+class=gap-10></div></div></div></div></div></div></div></div>
+ <script>window.RS_MODULES=window.RS_MODULES||{};window.RS_MODULES.modules=window.RS_MODULES.modules||{};window.RS_MODULES.waiting=window.RS_MODULES.waiting||[];window.RS_MODULES.defered=true;window.RS_MODULES.moduleWaiting=window.RS_MODULES.moduleWaiting||{};window.RS_MODULES.type='compiled';</script> <div
+id=kleo-login-modal class="kleo-form-modal main-color mfp-hide"><div
+class=row><div
+class="col-sm-12 text-center"><div
+class="kleo-pop-title-wrap main-color"><h3 class="kleo-pop-title">Log in with your credentials</h3></div><form
+action=https://www.aomin.org/aoblog/wp-login.php name=login_form method=post
+class="kleo-form-signin sq-login-form">
+<input
+type=hidden id=sq-login-security name=sq-login-security value=04aada50d9><input
+type=hidden name=_wp_http_referer value=/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/ >  <input
+type=text required name=log class="form-control sq-username" value
+placeholder=Username>
+<input
+type=password required spellcheck=false autocomplete=off value name=pwd class="sq-password form-control"
+placeholder=Password><div
+id=kleo-login-result></div>
+<button
+class="btn btn-lg btn-default btn-block"
+type=submit>Sign in</button>
+<label
+class="checkbox pull-left">
+<input
+class=sq-rememberme name=rememberme type=checkbox
+value=forever> Remember me </label>
+<a
+href=#kleo-lostpass-modal
+class="kleo-show-lostpass kleo-other-action pull-right">Lost your password?</a>
+<span
+class=clearfix></span></form></div></div></div><div
+id=kleo-lostpass-modal class="kleo-form-modal main-color mfp-hide"><div
+class=row><div
+class="col-sm-12 text-center"><div
+class="kleo-pop-title-wrap alternate-color"><h3 class="kleo-pop-title">Forgot your details?</h3></div><form
+name=forgot_form action method=post class="sq-forgot-form kleo-form-signin">
+<input
+type=hidden id=security-pass name=security-pass value=04aada50d9><input
+type=hidden name=_wp_http_referer value=/aoblog/general-apologetics/prototokos-firstborn-its-meaning-and-usage-in-the-new-testament/ >  <input
+type=text required name=user_login class="sq-forgot-email form-control"
+placeholder="Username or Email"><div
+id=kleo-lost-result></div>
+<button
+class="btn btn-lg btn-default btn-block"
+type=submit>Reset Password</button>
+<a
+href=#kleo-login-modal
+class="kleo-show-login kleo-other-action pull-right">I remember my details</a>
+<span
+class=clearfix></span></form></div></div></div><link
+rel=stylesheet id=rs-plugin-settings-css  href=https://www.aomin.org/aoblog/wp-content/plugins/revslider/public/assets/css/rs6.css type=text/css media=all><style id=rs-plugin-settings-inline-css>#rs-demo-id{}</style> <script src=https://www.aomin.org/aoblog/wp-content/plugins/revslider/public/assets/js/rbtools.min.js defer async id=tp-tools-js></script> <script src=https://www.aomin.org/aoblog/wp-content/plugins/revslider/public/assets/js/rs6.min.js defer async id=revmin-js></script> <script src=https://www.aomin.org/aoblog/wp-content/themes/kleo/assets/js/combined.min.js id=kleo-combined-js></script> <script id=mediaelement-core-js-before>var mejsL10n={"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};</script> <script src=https://www.aomin.org/aoblog/wp-includes/js/mediaelement/mediaelement-and-player.min.js id=mediaelement-core-js></script> <script src=https://www.aomin.org/aoblog/wp-includes/js/mediaelement/mediaelement-migrate.min.js id=mediaelement-migrate-js></script> <script id=mediaelement-js-extra>var _wpmejsSettings={"pluginPath":"\/aoblog\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};</script> <script id=app-js-extra>/*<![CDATA[*/var kleoFramework={"ajaxurl":"https:\/\/www.aomin.org\/aoblog\/wp-admin\/admin-ajax.php","themeUrl":"https:\/\/www.aomin.org\/aoblog\/wp-content\/themes\/kleo","loginUrl":"https:\/\/www.aomin.org\/aoblog\/wp-login.php","goTop":"1","ajaxSearch":"1","alreadyLiked":"You already like this","logo":"https:\/\/www.aomin.org\/aoblog\/wp-content\/uploads\/2020\/06\/Logo-red-e1591639042841.png","retinaLogo":"https:\/\/www.aomin.org\/aoblog\/wp-content\/uploads\/2020\/06\/Logo-red-e1591639042841.png","headerHeight":"50","headerHeightScrolled":"40","headerTwoRowHeight":"88","headerTwoRowHeightScrolled":"0","headerResizeOffset":"","loadingmessage":"<i class=\"icon icon-spin5 animate-spin\"><\/i> Sending info, please wait...","DisableMagnificGallery":"0","flexMenuEnabled":"1","errorOcurred":"Sorry, an error occurred"};/*]]>*/</script> <script src=https://www.aomin.org/aoblog/wp-content/themes/kleo/assets/js/app.min.js id=app-js></script> <script src=https://www.aomin.org/aoblog/wp-includes/js/comment-reply.min.js id=comment-reply-js></script> <script src=https://www.aomin.org/aoblog/wp-content/plugins/page-links-to/dist/new-tab.js id=page-links-to-js></script> <script src=https://www.aomin.org/aoblog/wp-content/plugins/google-calendar-events/assets/generated/vendor/jquery.qtip.min.js id=simcal-qtip-js></script> <script id=simcal-default-calendar-js-extra>var simcal_default_calendar={"ajax_url":"\/aoblog\/wp-admin\/admin-ajax.php","nonce":"aa4c9785c2","locale":"en_US","text_dir":"ltr","months":{"full":["January","February","March","April","May","June","July","August","September","October","November","December"],"short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"days":{"full":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},"meridiem":{"AM":"AM","am":"am","PM":"PM","pm":"pm"}};</script> <script src=https://www.aomin.org/aoblog/wp-content/plugins/google-calendar-events/assets/generated/default-calendar.min.js id=simcal-default-calendar-js></script> <script src=https://www.aomin.org/aoblog/wp-content/plugins/google-calendar-events/assets/generated/vendor/imagesloaded.pkgd.min.js id=simplecalendar-imagesloaded-js></script> <script></script> </body></html>

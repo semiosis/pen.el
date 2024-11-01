@@ -1,0 +1,22 @@
+
+  (let ((base 26))
+    (mod char base)))
+
+(defun pen-modeline-name-ascii ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (let* ((num (string-to-number dn))
+                  (num-ascii (ascii-letter-from-int num)))
+             num-ascii))
+          (t
+           "emacs"))))
+
+
+(defun pen--modeline ()
+  "Return the modeline for the current daemon."
+
+  ;; the default modeline is a simple indicator of the daemon name, but if we're in a pen session, we can use a more sophisticated modeline.
+
+  ;; TODO: this

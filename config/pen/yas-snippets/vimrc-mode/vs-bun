@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Vundle.vim Plugin definition
+# group: vimsnippet
+# key: vs-bun
+# --
+Plugin '${0}'

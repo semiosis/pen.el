@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://github.com/flonatel/pipexec" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "http://github.com/writecrow/ocr2text" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://github.com/ocrmypdf/OCRmyPDF" "#" "<==" "o"

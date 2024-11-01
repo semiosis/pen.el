@@ -1,0 +1,47 @@
+GraphQL
+    NLG: A query language for APIs and a
+    runtime for fulfilling those queries with
+    your existing data.
+
+graphql edge
+    Some objects in Github's GraphQL API have
+    so called connections. Think of these as
+    lists of other objects related to the
+    object in question. As Github's
+    documentation says, "It's helpful to
+    picture a graph: dots connected by lines.
+    The dots are nodes, the lines are edges. A
+    connection defines a relationship between
+    nodes".
+
+GraphQL query language
+    Basically all about selecting fields on
+    objects.
+
+    - fragment
+      Let you construct a set of fields, and
+      then include them in queries where you
+      need to.
+
+    - spread operator (...)
+      Fragments are consumed by using the
+      spread operator (...). All fields
+      selected by the fragment will be added
+      to the query field selection at the same
+      level as the fragment invocation. This
+      happens through multiple levels of
+      fragment spreads.
+
+GraphQL schema language
+Type language
+    Similar to the query language.
+
+    Use it to define GraphQL APIs.
+
+    GraphQL services can be written in any
+    language, so we use the schema language as
+    an abstraction.
+
+    - String!
+      The exclamation mark means that the
+      field is non-nullable.

@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: heredoc
+# group: 
+# key: hd
+# --
+config.vm.provision "docker", type: "shell", inline: <<-SHELL
+sudo docker pull #{IMAGE_NAMESPACE}/puppet-agent-ubuntu
+sudo docker pull #{IMAGE_NAMESPACE}/facter
+sudo docker pull #{IMAGE_NAMESPACE}/puppetserver-standalone
+sudo docker run -d --hostname puppet --name puppet #{IMAGE_NAMESPACE}/puppetserver-standalone
+sleep 70
+SHELL<<-SHELL
+sudo docker pull #{IMAGE_NAMESPACE}/puppet-agent-ubuntu
+sudo docker pull #{IMAGE_NAMESPACE}/facter
+sudo docker pull #{IMAGE_NAMESPACE}/puppetserver-standalone
+sudo docker run -d --hostname puppet --name puppet #{IMAGE_NAMESPACE}/puppetserver-standalone
+sleep 70
+SHELL

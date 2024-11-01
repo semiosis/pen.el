@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: remove-from-path
+# group: path
+# key: rfp
+# --
+. $HOME/scripts/libraries/bash-library.sh
+export PATH="$(remove_from_path "$HOME/scripts")"

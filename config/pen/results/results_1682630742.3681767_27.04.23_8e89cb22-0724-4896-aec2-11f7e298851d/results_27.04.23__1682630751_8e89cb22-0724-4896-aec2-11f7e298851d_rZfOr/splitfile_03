@@ -1,0 +1,5 @@
+"{-# LANGUAGE KindSignatures #-}" is a language extension that allows you to specify the kind of a type constructor. In the example, the kind of the type constructor "Temp" is "TempUnits", which is either "F" or "C".
+
+The "deriving(Num,Frac)" part is a language extension that allows you to derive the Num and Frac instances for the type constructor "Temp".
+
+The "newtype Temp (u :: TempUnits) = Temp Double" part is a declaration

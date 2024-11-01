@@ -1,0 +1,22 @@
+vendor: Goose
+engine-title: Goose
+lm-command: "goose-complete.sh"
+model: gpt-neo-20b
+engine-delimiter: "###"
+# engine-delimiter: "--SEPARATOR--"
+# TODO Check this value. It may be 0
+# engine-min-tokens: 64
+api-endpoint: "https://api.goose.ai"
+default-tokens: 256
+approximate-token-char-length: 2.5
+# Currently only 1 supported
+engine-max-n-completions: 1
+engine-max-n-completions: 5
+engine-max-tokens: 2048
+engine-max-generated-tokens: 256
+engine-whitespace-support: yes
+# engine-strips-gen-starting-whitespace: yes
+foundation: true
+libre-dataset: yes
+libre-model: yes
+local: no

@@ -1,0 +1,332 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 3356
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+x-origin-cache: HIT
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-30ad"
+expires: Fri, 12 Apr 2024 09:02:44 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 3B7E:1973AA:7218FE:7869EC:6618F65B
+Accept-Ranges: bytes
+Date: Fri, 12 Apr 2024 08:52:45 GMT
+Via: 1.1 varnish
+Age: 2
+X-Served-By: cache-akl10326-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1712911966.891752,VS0,VE2
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 00b1b745b386ae092a7e1d5db59d46750a9bcd46
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Joining Sheets &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/intermediate/joining-sheets.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Reshaping Data" href="../reshaping-data/" />
+    <link rel="prev" title="Creating New Columns" href="../creating-new-columns/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Joining Sheets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-sheet-joining-three-step">The sheet-joining three-step</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#practical-example">Practical example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Joining Sheets</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joining-sheets">
+<h1>Joining Sheets<a class="headerlink" href="#joining-sheets" title="Permalink to this headline">¶</a></h1>
+<p>Much like in SQL, VisiData lets you join multiple sheets together.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If this concept is unfamiliar, you can read more about joins <a class="reference external" href="https://www.w3schools.com/sql/sql_join.asp">here</a> and <a class="reference external" href="https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/">also here</a>.</p>
+</div>
+<div class="section" id="the-sheet-joining-three-step">
+<h2>The sheet-joining three-step<a class="headerlink" href="#the-sheet-joining-three-step" title="Permalink to this headline">¶</a></h2>
+<p>To join two or more sheets in VisiData, you’ll do the following:</p>
+<ol class="arabic simple">
+<li>In the sheets you want to join, <strong>mark the shared columns as “keys”</strong></li>
+<li>In the Sheets Sheet, <strong>select the sheets you want to join</strong></li>
+<li>Press <kbd class="kbd docutils literal notranslate">&amp;</kbd> to open the join-choice prompt, <strong>type your desired join type</strong> (or press <kbd class="kbd docutils literal notranslate">Control-x</kbd> to open the interactive chooser) and press <kbd class="kbd docutils literal notranslate">Enter</kbd></li>
+</ol>
+<p>VisiData supports seven types of joins:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="6%" />
+<col width="7%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Join command</th>
+<th class="head">SQL equivalent</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>inner</td>
+<td><code class="docutils literal notranslate"><span class="pre">LEFT</span> <span class="pre">INNER</span> <span class="pre">JOIN</span></code></td>
+<td>Keeps only rows which match keys on all sheets</td>
+</tr>
+<tr class="row-odd"><td>outer</td>
+<td><code class="docutils literal notranslate"><span class="pre">LEFT</span> <span class="pre">OUTER</span> <span class="pre">JOIN</span></code></td>
+<td>Keeps all rows from first selected sheet</td>
+</tr>
+<tr class="row-even"><td>full</td>
+<td><code class="docutils literal notranslate"><span class="pre">FULL</span> <span class="pre">OUTER</span> <span class="pre">JOIN</span></code></td>
+<td>Keeps all rows from all sheets (union)</td>
+</tr>
+<tr class="row-odd"><td>diff</td>
+<td>&#160;</td>
+<td>Keeps only rows NOT in all sheets</td>
+</tr>
+<tr class="row-even"><td>append</td>
+<td><code class="docutils literal notranslate"><span class="pre">UNION</span> <span class="pre">ALL</span></code></td>
+<td>Keeps all rows from all sheets (concatenation)</td>
+</tr>
+<tr class="row-odd"><td>extend</td>
+<td>&#160;</td>
+<td>Copies first selected sheet, keeping all rows and sheet type, and extends with columns from other sheets</td>
+</tr>
+<tr class="row-even"><td>merge</td>
+<td>&#160;</td>
+<td>Merges differences from other sheets into first sheet; keeps all rows from first sheet, updating any False-y values (e.g., <code class="docutils literal notranslate"><span class="pre">False</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">[]</span></code>) with non-False-y values from subsequent sheets, and adds unique rows from subsequent sheets</td>
+</tr>
+</tbody>
+</table>
+<p>(Descriptions above come from VisiData’s <a class="reference external" href="http://visidata.org/man/">Quick Reference</a>.)</p>
+</div>
+<div class="section" id="practical-example">
+<h2>Practical example<a class="headerlink" href="#practical-example" title="Permalink to this headline">¶</a></h2>
+<p>To see an example of joining in action, see the <a class="reference external" href="../../practical/distinctive-birds/">Distinctive Birds</a> chapter.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../reshaping-data/" class="btn btn-neutral float-right" title="Reshaping Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../creating-new-columns/" class="btn btn-neutral float-left" title="Creating New Columns" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

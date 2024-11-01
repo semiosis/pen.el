@@ -1,0 +1,134 @@
+HTTP/1.1 200 OK
+Server: nginx/1.19.5
+Date: Thu, 27 Jul 2023 22:51:29 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-archive-orig-date: Mon, 24 Jan 2005 05:54:25 GMT
+x-archive-orig-server: Apache
+x-archive-orig-connection: close
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: maccentraleurope
+memento-datetime: Mon, 24 Jan 2005 05:54:35 GMT
+link: <http://bluewaterisland.com:80/>; rel="original", <http://web.archive.org/web/timemap/link/http://bluewaterisland.com:80/>; rel="timemap"; type="application/link-format", <http://web.archive.org/web/http://bluewaterisland.com:80/>; rel="timegate", <http://web.archive.org/web/20031015044745/http://www.bluewaterisland.com:80/>; rel="first memento"; datetime="Wed, 15 Oct 2003 04:47:45 GMT", <http://web.archive.org/web/20041202102330/http://www.bluewaterisland.com:80/>; rel="prev memento"; datetime="Thu, 02 Dec 2004 10:23:30 GMT", <http://web.archive.org/web/20050124055435/http://bluewaterisland.com:80/>; rel="memento"; datetime="Mon, 24 Jan 2005 05:54:35 GMT", <http://web.archive.org/web/20050207102558/http://www.bluewaterisland.com:80/>; rel="next memento"; datetime="Mon, 07 Feb 2005 10:25:58 GMT", <http://web.archive.org/web/20211128001714/http://bluewaterisland.com/>; rel="last memento"; datetime="Sun, 28 Nov 2021 00:17:14 GMT"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org wayback-api.archive.org analytics.archive.org pragma.archivelab.org
+x-archive-src: EB_slash_crawl32.20050215222731-c/EB_slash_crawl33.20050124055406.arc.gz
+server-timing: captures_list;dur=436.366395, exclusion.robots;dur=0.344701, exclusion.robots.policy;dur=0.324678, RedisCDXSource;dur=1.902463, esindex;dur=0.020645, LoadShardBlock;dur=401.555735, PetaboxLoader3.datanode;dur=138.736100, load_resource;dur=186.661984, PetaboxLoader3.resolve;dur=116.666144
+x-app-server: wwwb-app220
+x-ts: 200
+x-tr: 666
+X-location: All
+X-RL: 0
+X-NA: 0
+X-Page-Cache: HIT
+X-NID: -
+Referrer-Policy: no-referrer-when-downgrade
+Permissions-Policy: interest-cohort=()
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+<head><script type="text/javascript" src="/_static/js/bundle-playback.js?v=1WaXNDFE" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://bluewaterisland.com:80/","20050124055435","http://web.archive.org/","web","/_static/",
+	      "1106546075");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<title>Blue Water Island Resort &raquo; Welcome	</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="googlebot" content="index, follow"/>
+	<meta name="Description" content="Blue Water Island Resort, located on Efate Vanuatu, this tropical resort is as close as it gets to paradise."/>
+	<meta name="Keywords" content="blue water island resort,bluewater island resort,blue water island,bluewater island,sharks,shark aquarium,tropical resort,vanuatu,south pacific,south pacific islands,efate,port vila,vacation,island vacation,accomodation,facilities,dining,nightlife,beach,resort,holliday,tropical island,survivor vanuatu, survivor 9"/>
+
+ <link rel="stylesheet" type="text/css" href="/web/20050124055435cs_/http://bluewaterisland.com/style.css"/> </head>
+
+<body>
+
+<div id="wrapperall">
+<div id="wrapper">
+
+<div id="wrapperside">
+<div id="sidebar">
+<div id="logo"><a href="index.php">.</a></div>
+<div id="logo-b"><img alt="index" src="/web/20050124055435im_/http://bluewaterisland.com/images/logo-index.jpg"/></div>
+
+
+<div id="sidenav">
+<ul id="sidelist">
+
+ <li class="dummy_class"><a href="index.php?category=index&amp;subcategory=accomodation" title="Accomodation">Accomodation</a></li>
+ <li class="dummy_class"><a href="index.php?category=index&amp;subcategory=dining" title="Dining">dining</a></li>
+ <li class="dummy_class"><a href="index.php?category=index&amp;subcategory=facilities" title="Facilities">facilities</a></li>
+ <li class="dummy_class"><a href="index.php?category=index&amp;subcategory=sharks" title="Sharks">sharks</a></li>
+ <li class="dummy_class"><a href="index.php?category=index&amp;subcategory=rates" title="Rates">rates</a></li>
+ <li class="dummy_class"><a href="index.php?category=index&amp;subcategory=news" title="Recent News">news</a></li>
+ <li class="dummy_class"><a href="index.php?category=index&amp;subcategory=staff" title="Our Staff">Our Staff</a></li>
+</ul>
+</div>
+<p></p>
+
+<p><strong>Recent news:</strong><br/>Blue Water Island’s Turtles were noticed to be swimming with their backsides in the air. Not knowing what caused this strange swimming pattern and asking every knowledgeable person we could find really made us scratch our heads. Read more in the <a href="index.php?category=index&amp;subcategory=news" title="Recent News">news section</a>...</p>
+</div>
+</div><div id="main">
+<div id="globalnav">
+<ul id="navlist">
+
+ <li class="current"><a href="index.php?category=index&amp;subcategory=index " title="Welcome to Blue Water Island!">Resort</a></li>
+
+ <li class="dummy_class"><a href="index.php?category=recreation&amp;subcategory=index " title="Recreation &amp; Activities">Recreation</a></li>
+
+ <li class="dummy_class"><a href="index.php?category=vanuatu&amp;subcategory=index " title="All about the island">Vanuatu</a></li>
+
+ <li class="dummy_class"><a href="index.php?category=reservations&amp;subcategory=index " title="Make an online reservation">Reservations</a></li>
+
+ <li class="dummy_class"><a href="index.php?category=gallery&amp;subcategory=index " title="Gallery">Gallery</a></li>
+</ul>
+</div>
+
+<div id="header"><img alt="Header image for index-index" src="/web/20050124055435im_/http://bluewaterisland.com/images/head/index-index.jpg"/></div>
+
+<div id="content">
+
+<h1>Welcome to blue water island resort</h1>
+<p>The Blue Water Island Resort is located at about twenty kilometers from Port Vila, at the mouth of the Rentapao river. This resort extends over 40 hectares of tropical gardens dotted with dwarf coconut palms and multicolored bougainvillea, with a private island on the edge of the lagoon.</p>
+<div class="img-ilus">  <img alt="Blue water island overhead shot" src="/web/20050124055435im_/http://bluewaterisland.com/images/resort/bluewaterisland.jpg"/></div>
+<p>The Resort includes a restaurant overlooking the ocean on all sides and is renowned for the quality of its meat, the freshness of its fish and seafood (lobster, coconut crab, prawns etc...). In addition, it has a vast conference / ball-room and a traditional kava nakamal built of local materials. The resort offers a wide range of facilities for the active leisure-seeker from tennis to petanque, windsurfing to game fishing (on request) and a great deal more as well.</p></div>
+<br clear="all"/>
+</div><!-- main -->
+
+<br clear="all"/>
+<div id="footer"><strong>&copy; Blue Water Island Resort</strong></div>
+
+</div>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:54:35 Jan 24, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:51:19 Jul 27, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 436.331
+  exclusion.robots: 0.344
+  exclusion.robots.policy: 0.324
+  RedisCDXSource: 1.902
+  esindex: 0.02
+  LoadShardBlock: 401.555 (3)
+  PetaboxLoader3.datanode: 138.736 (4)
+  load_resource: 186.661
+  PetaboxLoader3.resolve: 116.666
+-->

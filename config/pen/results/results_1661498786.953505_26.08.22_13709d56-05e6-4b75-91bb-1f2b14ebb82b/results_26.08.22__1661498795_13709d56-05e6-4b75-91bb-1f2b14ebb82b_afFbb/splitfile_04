@@ -1,0 +1,18 @@
+
+- you: Thanks!!
+- transient emacs guru: welcome. to chat about another topic, prefix the line with \\[universal-argument]
+- you: Sure, I would love to hear your thoughts about the Emacs design.")))
+    (test-transient-guru)))
+
+(ert-deftest test-transient/inactive-arguments ()
+  (transient-test '((arguments
+                     ("-e" "Comment" comment)
+                     ("-f" "Force" force))
+                    (handler transient-test--force))
+    (should (equal (transient-get 'transient-test 'force) nil))
+    (transient--show)
+    (with-current-buffer transient--helpp
+      (goto-char (point-min))
+      (forward-line) ; skip help text and `[use for more info]'.
+
+      ;;

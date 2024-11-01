@@ -1,0 +1,43 @@
+task: "add figurative imagery"
+doc: "Given some prose, add descriptive imagery to it"
+tags: language grammar literature prose
+prompt-version: 1
+prompt: |+
+    Add figurative imagery to the following prose:
+    <delim>
+    Autumn leaves cover the ground.
+    <delim>
+    The autumn leaves are a blanket on the
+    ground.
+    <delim>
+    Add figurative imagery to the following prose:
+    <delim>
+    He liked kissing her.
+    <delim>
+    Her lips tasted as sweet as sugar.
+    <delim>
+    Add figurative imagery to the following prose:
+    <delim>
+    I was hurt by his words. I have a headache.
+    <delim>
+    His words felt like a dagger in my heart.
+    My head is pounding like a drum.
+    <delim>
+    Add figurative imagery to the following prose:
+    <delim>
+    <passage>
+    <delim>
+force-engine: "OpenAI Davinci"
+force-temperature: 0.8
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "passage"
+examples:
+- "There was a table set out under a tree in front of the house"
+filter: on
+completion: off
+insertion: off

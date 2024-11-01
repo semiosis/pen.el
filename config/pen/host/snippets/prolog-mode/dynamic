@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: dynamic
+# group: 
+# key: dynamic
+# --
+% Declaring dynamic methods
+
+:- dynamic ([
+agent_location/1,
+gold_location/1,
+pit_location/1,
+time_taken/1,
+score/1,
+visited/1,
+visited_cells/1,
+world_size/1,
+wumpus_location/1,
+isPit/2,
+isWumpus/2,
+isGold/2
+]).

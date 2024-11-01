@@ -1,0 +1,16 @@
+* fst
+Access first element of a pair.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  sp +/"fst (\"haskell\", 1) -- \"haskell\"" "$MYGIT/adambard/learnxinyminutes-docs/haskell.html.markdown"
+#+END_SRC
+
+#+BEGIN_SRC haskell -n :i "babel-ghci -norc" :async :results verbatim code
+  -- pair element accessing does not work on n-tuples (i.e. triple, quadruple, etc)
+  snd ("snd", "can't touch this", "da na na na") -- error! see function below
+#+END_SRC
+
+* snd
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  sp +/"snd (\"haskell\", 1) -- 1" "$MYGIT/adambard/learnxinyminutes-docs/haskell.html.markdown"
+#+END_SRC

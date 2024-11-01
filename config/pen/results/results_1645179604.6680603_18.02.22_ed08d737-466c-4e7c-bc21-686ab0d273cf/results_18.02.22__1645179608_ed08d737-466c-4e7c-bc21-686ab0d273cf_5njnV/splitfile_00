@@ -1,0 +1,1 @@
+agi_init(agi.AGI_INIT_FLAG_NO_DEV | agi.AGI_INIT_FLAG_NO_STDIO)

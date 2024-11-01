@@ -1,0 +1,5 @@
+
+    append(Rows, Vs), Vs ins 1..9,
+    maplist(all_distinct, Rows),
+    transpose(Rows, Columns),
+    maplist(all_

@@ -1,0 +1,368 @@
+composability
+    A system design principle that deals with
+    the inter-relationships of components.
+    
+    A highly composable system provides
+    components that can be selected and
+    assembled in various combinations to
+    satisfy specific user requirements.
+
+    In information systems, the essential
+    features that make a component composable
+    are that it be:
+    - self-contained (modular)
+        It can be deployed independently –
+        note that it may cooperate with other
+        components, but dependent components
+        are replaceable
+
+    - stateless
+        It treats each request as an
+        independent transaction, unrelated to
+        any previous request. Stateless is
+        just one technique; managed state and
+        transactional systems can also be
+        composable, but with greater
+        difficulty.
+
+Pluggable authentication module
+    A pluggable authentication module is a
+    mechanism to integrate multiple low-level
+    authentication schemes into a high-level
+    application programming interface.
+    
+    It allows programs that rely on
+    authentication to be written independent
+    of the underlying authentication scheme.
+
+Systems engineering
+    An interdisciplinary field of engineering
+    and engineering management that focuses on
+    how to design, integrate, and manage
+    complex systems over their life cycles.
+    
+    At its core, systems engineering utilizes
+    systems thinking principles to organize
+    this body of knowledge.
+
+Hyperpersonalization
+Hyperpersonalization Pattern
+    [AI pattern]
+
+    Treat each customer as an individual 
+
+    ewwlinks +/"The Hyperpersonalization Pattern: Treat each customer as an individual" "https://www.forbes.com/sites/cognitiveworld/2019/09/17/the-seven-patterns-of-ai/"
+
+    Using ML to develop a profile of each
+    individual, and then having that profile
+    learn and adapt over time for a wide
+    variety of purposes including displaying
+    relevant content, recommend relevant
+    products, provide personalized
+    recommendations and so on.
+    
+    The objective of this pattern is to treat
+    each individual as an individual.
+
+    Implementations of the
+    hyperpersonalization particular pattern
+    include creating personalized
+    recommendations based off of browsing
+    patterns and searches.
+    
+    A company that is currently utilizing a
+    technology of this nature would be
+    Netflix.
+    
+    They use AI to help recommend shows and
+    movies to viewers based off of personal
+    choices.
+    
+    Another example is Starbucks, who is using
+    hyperpersonalization to connect with their
+    customer base.
+    
+    The implementation of hyperpersonalization
+    isn’t only limited to the marketing
+    industry.
+    
+    It’s also popping up in industries such as
+    finance, healthcare, or personalized
+    fitness and wellness applications.
+    
+    For example, one common application of
+    where hyperpersonalization can make a huge
+    impact is in finance and loans.
+    
+    In the US the FICO credit score is used to
+    lump individuals together who might
+    otherwise have vastly different amounts of
+    credit worthiness and penalizes groups of
+    individuals who lack credit history.
+    
+    By moving away from using the traditional
+    FICO score into something that treats each
+    individual as an individual we might get
+    more accurate pictures of individuals to
+    see just how likely they are to pay back
+    loans.
+
+Autonomous Systems
+Autonomous Systems Pattern
+    [AI pattern]
+
+    Reducing the need for manual labor
+
+    ewwlinks +/"The Autonomous Systems Pattern Of AI" "https://www.forbes.com/sites/cognitiveworld/2020/05/30/the-autonomous-systems-pattern-of-ai/#5f0851fc6a6b"
+
+    Autonomous systems are physical and
+    virtual software and hardware systems that
+    are able to accomplish a task, reach a
+    goal, interact with their surroundings,
+    and achieve an objective with minimal
+    human involvement.
+    
+    Where the primary objective of hyper-
+    personalization is to treat people as
+    individuals, the goal of autonomous
+    systems is to streamline things with as
+    little human interaction as possible.
+    
+    The autonomous pattern requires ML
+    capability that can independently perceive
+    the outside world, predict the future
+    behavior of external elements, and plan
+    for how to deal with those changes.
+    
+    Obvious applications of this pattern
+    include autonomous machines and vehicles
+    of all sorts includes cars, boats, trains,
+    airplanes, and more.
+    
+    However this pattern also includes
+    autonomous systems including autonomous
+    documentation and knowledge generation,
+    autonomous business processes, and
+    cognitive autonomation.
+    
+    These include systems that can operate in
+    close proximity to humans, including
+    preferential decision making.
+
+Predictive Analytics
+Predictive Analytics Pattern
+    [AI pattern]
+
+    ewwlinks +/"AI powered predictive analytics" "https://www.forbes.com/sites/cognitiveworld/2019/09/17/the-seven-patterns-of-ai/"
+
+    Another pattern of AI is predictive
+    analytics and decision support.
+    
+    This is defined as using ML and other
+    cognitive approaches to understand how
+    past or existing behaviors can help
+    predict future outcomes or help humans
+    make decisions about future outcomes based
+    on these patterns.
+    
+    The objective of this pattern is helping
+    humans make better decisions.
+    
+    Some uses of this pattern include assisted
+    search and retrieval, predicting some
+    future value for data, predicting
+    behavior, predicting failure, assisted
+    problem resolution, identifying and
+    selecting best fit, identifying matches in
+    data, optimization activities, giving
+    advice, and intelligent navigation.
+    
+    The idea is that it helps to make better
+    decisions, providing augmented
+    intelligence capabilities.
+    
+    ML is what is helping to make the
+    decision, adapting over time to provide
+    better results.
+
+Conversational
+Conversational Pattern
+    [AI pattern]
+
+    Machines that can communicate as humans do
+
+    ewwlinks +/"The Conversational Pattern: Machines that can communicate as humans do" "https://www.forbes.com/sites/cognitiveworld/2019/09/17/the-seven-patterns-of-ai/"
+
+    Another pattern of AI is the
+    conversational/human interaction pattern.
+    
+    This is defined as machines and humans
+    interacting with each other through
+    conversational forms of interaction and
+    content across a variety of methods
+    including voice, text, and image forms.
+    
+    This includes machine to human, human to
+    machine, and back and forth human and
+    machine interaction.
+    
+    The objective of this pattern is enabling
+    machines to interact with humans how
+    humans interact with each other.
+    
+    The most obvious examples of this include
+    pattern include chatbots, voice
+    assistants, and sentiment, mood and intent
+    analysis.
+    
+    The point is that it is trying to
+    understand the intent behind human
+    interactions.
+    
+    It can also be used to facilitate human to
+    human interaction through translation.
+    
+    The big thing to remember is that this
+    pattern is used to create an easier way
+    for humans to interact with each other and
+    machines through methods that are natural
+    or comfortable for humans.
+
+Patterns and anomalies 
+Patterns and anomalies pattern
+    [AI pattern]
+
+    Identifying Patterns and anomalies with
+    AI.
+
+    ML is particularly good at identifying
+    patterns and finding anomalies or
+    outliers.
+    
+    The “pattern-matching pattern” is one of
+    the repeating approaches to AI projects
+    that has seen wide and increasing
+    adoption.
+    
+    The goal of the Patterns and Anomalies
+    pattern of AI is to use ML and other
+    cognitive approaches to learn patterns in
+    the data and learn higher order
+    connections between data points to see if
+    it fits an existing pattern or if it is an
+    outlier or anomaly.
+    
+    The object of this pattern is to find what
+    fits with existing data and what doesn’t.
+    
+    Applications of this pattern include fraud
+    and risk detection to see if things are
+    out of the ordinary or expectations are
+    happening.
+    
+    Another application is finding patterns
+    among data, and helping to minimize or fix
+    human mistakes.
+    
+    This pattern also includes predictive
+    text, where it can analyze patterns in
+    speech and grammar to help suggest words
+    to choose to speed up the writing process.
+
+Recognition
+Recognition Pattern
+    [AI pattern]
+
+    Machines that can recognize the world.
+
+    One of the big advancements in ML is the
+    use of DL to greatly improve the accuracy
+    of recognition-related tasks such as
+    image, video, audio, and object
+    recognition, classification, and
+    identification.
+    
+    The recognition pattern is defined as
+    using ML and other cognitive approaches to
+    identify and determine objects or other
+    desired things to be identified within
+    image, video, audio, text, or other
+    primarily unstructured data formarily.
+    
+    The objective of this pattern is to have
+    machines identify and understand things.
+    
+    Examples include image and object
+    recognition, facial recognition, audio and
+    sound recognition, handwriting and text
+    recognition, and gesture detection.
+    
+    This is a well developed pattern that
+    computers are really good at and is fairly
+    widely used.
+    
+    There are many companies who are investing
+    heavily in recognition systems.
+    
+    In fact, one of the most well funded AI
+    companies, Sensetime, is focused on facial
+    recognition applications and the Chinese
+    government is investing heavily in the use
+    and adoption of this pattern.
+
+Goal-Driven Systems
+Goal-Driven Systems Pattern
+    [AI pattern]
+
+    Solving puzzles.
+
+    Machines have proven to be particularly
+    adept at learning the rules of games, and
+    beating humans at their own games.
+    
+    In the past, machines have easily
+    conquered the games of checkers, chess,
+    and finding solutions to mazes.
+    
+    Through the power of RL and much more
+    advanced computation capabilities,
+    machines are now able to win at Go, multi-
+    player games such as DoTA, and much more
+    complicated games.
+    
+    Alpha Go and Alpha Zero were created by
+    Google’s DeepMind division under the
+    theory that through goals, computers could
+    learn anything through game play.
+    
+    Games are just the beginning to solutions
+    that could potentially even lead to
+    breakthroughs in solving long-hoped for
+    goals in Artificial General Intelligence
+    (AGI).
+    
+    Games are not the only possibility for
+    goal-driven systems.
+    
+    With the power of RL and other ML
+    techniques, organizations can apply ML and
+    other cognitive approaches to give their
+    systems the ability to learn through trial
+    and error.
+    
+    This is useful for any situation where you
+    want to have the system find the optimal
+    solution to a problem.
+    
+    The main learning approach for this
+    pattern is through RL.
+    
+    Examples in the pattern can include game
+    playing, resource optimization, iterative
+    problem solving, and bidding and real-time
+    auctions.
+    
+    While the goal-driven systems pattern is
+    not yet as widely implemented as some of
+    the other patterns, it is gaining rapid
+    adoption.

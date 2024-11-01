@@ -1,0 +1,7 @@
+
+  (interactive)
+  (pen-nuke-all))
+
+(defun pen-nuke-all ()
+  (interactive)
+  (mapcar 'pen-nuke-file (pen-

@@ -1,0 +1,6 @@
+cd /root/notes;  "Rom" "1:23" "#" "<==" "zsh"
+cd /root/notes;  "Rom" "13:9" "#" "<==" "zsh"
+cd /root/notes;  "Rom" "7:2-3" "#" "<==" "zsh"
+cd /root/notes;  "Rom" "13:9" "#" "<==" "zsh"
+cd /root/notes;  "Rom" "7:7" "#" "<==" "zsh"
+cd /root/notes;  "Rom" "7:7-8" "#" "<==" "zsh"

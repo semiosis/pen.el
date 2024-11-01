@@ -1,0 +1,11 @@
+
+
+travelToSchool dest = do
+
+-- import Options.Applicative ((<|>))
+
+case dest of
+
+-- "school" -> print "You are already at school!"
+
+"home" -> print "You

@@ -1,0 +1,3 @@
+ ...
+- you: I have one more question: can i reverse a file (not a string) in constant memory? Or is it not possible?
+- haskell guru: I understand. It is indeed possible. Have you tried reversing a

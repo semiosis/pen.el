@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "preview" "prayers.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "preview" "todo.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "preview" "prayers.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "preview" "todo.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "preview" "prayers.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "preview" "todo.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "preview" "perspective.org" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "preview" "todo.org" "#" "<==" "bash"

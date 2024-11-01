@@ -1,0 +1,8 @@
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "thread:0000000000003d25" "and (" "tag:inbox" ")" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=3" "--decrypt=true" "id:CAP6sTSALZy1LYMvVAeE+0jRevQN7pj2w-k+qV_+2EG=_1DBFQA@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=4" "--decrypt=true" "id:CACT87Jrf+dCLjQm6W73cmvi_TVjGHFBFPgVA_-+7eqNTDXX5Jw@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=3" "--decrypt=true" "id:CAP6sTSA9dicT0rfQeXo5RnPcKRRS6D4cdaNraaCrbHjGRaPQgw@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=3" "--decrypt=true" "id:CACT87JrLudCz=bB0_2JYJtX83Ziu37JU6d-OtvhSwB-8z3CrXQ@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"
+cd /root;  "notmuch" "tag" "--batch" "#" "<==" "emacs"

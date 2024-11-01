@@ -1,0 +1,153 @@
+Multi-document summarization
+    An automatic procedure aimed at extraction
+    of information from multiple texts written
+    about the same topic.
+    
+    The resulting summary report allows
+    individual users, such as professional
+    information consumers, to quickly
+    familiarize themselves with information
+    contained in a large cluster of documents.
+    
+    In such a way, multi-document
+    summarization systems are complementing
+    the news aggregators performing the next
+    step down the road of coping with
+    information overload.
+
+Neural machine translation
+NMT
+    One approach to machine translation.
+
+    The use of NN models to
+    - learn a statistical model for machine
+      translation.
+
+      i.e. predict the likelihood of a
+      sequence of words, typically modeling
+      entire sentences in a single integrated
+      model.
+
+    Key benefit:
+        A single system can be trained
+        directly on source and target text, no
+        longer requiring the pipeline of
+        specialized systems used in
+        statistical machine learning.
+
+    Unlike the traditional phrase-based
+    translation system which consists of many
+    small sub-components that are tuned
+    separately, neural machine translation
+    attempts to build and train a single,
+    large neural network that reads a sentence
+    and outputs a correct translation.
+
+    Widely used to translate natural langugae
+    text.
+
+NMT with code2vec
+    Learn from the previous code changes and
+    suggest the future edits.
+
+    For modeling code changes, NMT seem to be
+    a natural fit as they can learn the
+    translation (i.e. edits) from an original
+    to the changed version of the code.
+
+    Essentially, these models learn the
+    probability distribution of changes and
+    assign higher probabilities to plausible
+    code edits and lower probabilities to less
+    plausible ones.
+
+    In fact, Tufano et al. shows the
+    initial promise of using a
+    sequence-to-sequence translation model
+    (seq2seq) for fixing bugs in their new
+    idea paper.
+
+    In this work, we design an
+    encoder-decoder-based machin.
+
+Cross-lingual Language Model
+XLM
+
+XLM pretraining
+    Allows the seq2seq model to generate
+    high quality representations of input
+    sequences.
+
+Pretraining
+    A key ingredient of unsupervised machine
+    translation.
+    
+    It ensures that sequences with a similar
+    meaning are mapped to the same latent
+    representation, regardless of their
+    languages.
+
+three principles of unsupervised machine translation
+  - initialization,
+  - LMing, and
+  - back-translation.
+
+back-translation
+    https://www.technitrad.com/back-translation-what-is-it-and-how-is-it-done/
+    
+    Helps to identify any confusion,
+    ambiguities or errors that may arise from
+    the nuances of language and helps to
+    evaluate the equivalence of meaning
+    between the source and target texts.
+
+    By comparing the back translation to the
+    original text, the quality and accuracy of
+    the translation into another language can
+    be confirmed.
+    
+    This is especially important when every
+    small detail counts and a guarantee of
+    quality, precision and accuracy is
+    required.
+
+embedding
+    A relatively low-dimensional space into
+    which you can translate high-dimensional
+    vectors.
+    
+    Embeddings make it easier to do ML on
+    large inputs like sparse vectors
+    representing words.
+    
+    An embedding can be learned and reused
+    across models.
+
+Monolingual word embeddings vs cross-lingual word embeddings
+    Monolingual word embeddings are pervasive
+    in NLP.
+    
+    To represent meaning and transfer
+    knowledge across different languages,
+    cross-lingual word embeddings can be used.
+    
+    Such methods learn representations of
+    words in a joint embedding space.
+
+masked language modeling
+    https://www.quora.com/What-is-a-masked-language-model-and-how-is-it-related-to-BERT
+
+    An example of autoencoding LMing (the
+    output is reconstructed from corrupted
+    input) - we typically mask one or more of
+    words in a sentence and have the model
+    predict those masked words given the other
+    words in sentence.
+    
+    By training the model with such an
+    objective, it can essentially learn
+    certain (but not all) statistical
+    properties of word sequences.
+    
+    BERT is a model that is trained on a
+    masked LMing objective.

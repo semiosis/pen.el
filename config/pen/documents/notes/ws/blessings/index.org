@@ -1,0 +1,214 @@
+* 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  2 Corinthians 1:8-11
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+2 Corinthians 1:8-11
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+For we do not want you to be unaware,
+brethren, of our affliction which came to us
+in Asia, that we were burdened excessively,
+beyond our strength, so that we despaired even
+of life; indeed, we had the sentence of death
+within ourselves so that we would not trust in
+ourselves, but in God who raises the dead; who
+delivered us from so great a peril of death,
+and will deliver us, He on whom we have set
+our hope.
+
+And He will yet deliver us, you also joining
+in helping us through your prayers, so that
+thanks may be given by many persons on our
+behalf for the favor bestowed on us through
+the prayers of many.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 4:50
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+John 4:50
+‾‾‾‾‾‾‾‾‾
+Jesus said to him, “Go; your son lives.” The
+man believed the word that Jesus spoke to him
+and started off.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Jeremiah 15:19
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+Jeremiah 15:19
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Therefore, thus says the LORD, “If you return,
+then I will restore you-- Before Me you will
+stand; And if you extract the precious from
+the worthless, You will become My spokesman.
+
+They for their part may turn to you, But as
+for you, you must not turn to them.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  James 3:10
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+James 3:10
+‾‾‾‾‾‾‾‾‾‾
+from the same mouth come both blessing and
+cursing.
+
+My brethren, these things ought not to be this
+way.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Revelation 1:6
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+Revelation 1:6
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+and He has made us to be a kingdom, priests to
+His God and Father--to Him be the glory and
+the dominion forever and ever.
+
+Amen.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Numbers 6:23-27
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+Numbers 6:23-27
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+“Speak to Aaron and to his sons, saying, ‘Thus
+you shall bless the sons of Israel.
+
+You shall say to them: The LORD bless you, and
+keep you; The LORD make His face shine on you,
+And be gracious to you; The LORD lift up His
+countenance on you, And give you peace.’ So
+they shall invoke My name on the sons of
+Israel, and I then will bless them.”
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 24:50-51
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+Luke 24:50-51
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+And He led them out as far as Bethany, and He
+lifted up His hands and blessed them.
+
+While He was blessing them, He parted from
+them and was carried up into heaven.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  1 Peter 3:8-9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+1 Peter 3:8-9
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+To sum up, all of you be harmonious,
+sympathetic, brotherly, kindhearted, and
+humble in spirit; not returning evil for evil
+or insult for insult, but giving a blessing
+instead; for you were called for the very
+purpose that you might inherit a blessing.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  upd Proverbs 18:21
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+Proverbs 18:21
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Death and life are in the power of the tongue,
+And those who love it will eat its fruit.
+
+(NASB)
+#+end_src
+
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matthew 12:34-35
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+Matthew 12:34-35
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+You brood of vipers, how can you, being evil,
+speak what is good?
+
+For the mouth speaks out of that which fills
+the heart.
+
+The good man brings out of his good treasure
+what is good; and the evil man brings out of
+his evil treasure what is evil.
+
+(NASB)
+#+end_src
+
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  2 Corinthians 5:17
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+resize:  can't open terminal /dev/tty
+2 Corinthians 5:17
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Therefore if anyone is in Christ, he is a new
+creature; the old things passed away; behold,
+new things have come.
+
+(NASB)
+#+end_src

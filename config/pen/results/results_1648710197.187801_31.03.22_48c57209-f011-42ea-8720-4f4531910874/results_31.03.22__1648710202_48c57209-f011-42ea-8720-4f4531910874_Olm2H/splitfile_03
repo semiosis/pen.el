@@ -1,0 +1,5 @@
+instance Functor []
+instance Functor (->)
+instance Functor ((->) r)
+instance Functor ((->) r) where
+  fmap f g x = g (f x)

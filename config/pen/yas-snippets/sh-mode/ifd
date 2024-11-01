@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ifd
+# key: ifd
+# --
+if [ -d "${0:string}" ]; then
+:
+fi

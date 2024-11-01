@@ -1,0 +1,13 @@
+"toUpper" is a function from the module "Data.Char".
+
+Documentation:
+
+"toUpper" :: Char -> Char
+
+Converts a character to upper case.
+
+"toUpper" is derived from "toLocaleUpper" in "System.Char".
+
+"toLocaleUpper" is a wrapper around "Char.ToUpperInvariant" in "System.Core".
+
+"Char.ToUpperInvariant"

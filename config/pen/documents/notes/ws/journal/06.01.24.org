@@ -1,0 +1,59 @@
+* Amen, Hallellujah! <2024-01-06 Sat>
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Ezekiel 12:24
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Ezekiel 12:24
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+For there will no longer be any false vision
+or flattering divination within the house of
+Israel.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Ezekiel 12:21-28
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Ezekiel 12:21-28
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Then the word of the LORD came to me, saying,
+“Son of man, what is this proverb you people
+have concerning the land of Israel, saying,
+‘The days are long and every vision fails’?
+
+Therefore say to them, ‘Thus says the Lord
+GOD, “I will make this proverb cease so that
+they will no longer use it as a proverb in
+Israel.” But tell them, “The days draw near as
+well as the fulfillment of every vision.
+
+For there will no longer be any false vision
+or flattering divination within the house of
+Israel.
+
+For I the LORD will speak, and whatever word I
+speak will be performed.
+
+It will no longer be delayed, for in your
+days, O rebellious house, I will speak the
+word and perform it,” declares the Lord GOD.’”
+Furthermore, the word of the LORD came to me,
+saying, “Son of man, behold, the house of
+Israel is saying, ‘The vision that he sees is
+for many years from now, and he prophesies of
+times far off.’ Therefore say to them, ‘Thus
+says the Lord GOD, “None of My words will be
+delayed any longer.
+
+Whatever word I speak will be performed,”’”
+declares the Lord GOD.
+
+(NASB)
+#+end_src
+

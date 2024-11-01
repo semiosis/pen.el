@@ -1,0 +1,7 @@
+
+def __init__(self):
+self.prompts = [ImagePrompt() for _ in range(3)]
+def get(self, url):
+return self.prompts[0].get(url)
+
+

@@ -1,0 +1,7 @@
+
+   resources. The metadata is available as both a set of HTTP headers
+   and a JSON document.
+
+   Instance Metadata
+   Amazon EC2 provides metadata about your EC2 instances and resources.
+   You can use the

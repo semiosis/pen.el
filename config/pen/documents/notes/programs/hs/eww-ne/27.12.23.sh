@@ -1,0 +1,1 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-earlychristianwritings-com/www.earlychristianwritings.com;  "eww-ne" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-earlychristianwritings-com/www.earlychristianwritings.com/didache.html" "#" "<==" "ff"

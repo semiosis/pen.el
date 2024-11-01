@@ -1,0 +1,3 @@
+
+penl :: IO [String]
+penl = readProcess "myeval" ["unbuffer", "penl"] ""

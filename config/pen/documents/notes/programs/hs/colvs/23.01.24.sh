@@ -1,0 +1,1 @@
+cd /root;  "colvs" "#" "<==" "pa"

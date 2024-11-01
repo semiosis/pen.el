@@ -1,0 +1,11 @@
+"table.iloc" is a pandas function that allows you to select rows and columns by number, in the order that they appear in the data frame.
+
+You can also select multiple rows and columns using ":" for a range of values.
+
+For example, to select the first row and first column of a data frame:
+
+table.iloc[0, 0]
+
+Or to select the first two rows and all of the columns:
+
+table.iloc[0:2,

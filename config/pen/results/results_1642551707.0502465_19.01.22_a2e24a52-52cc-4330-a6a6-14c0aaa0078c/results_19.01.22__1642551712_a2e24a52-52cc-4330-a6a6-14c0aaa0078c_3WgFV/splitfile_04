@@ -1,0 +1,4 @@
+1. This is a function that takes two arguments, s and col
+2. It then returns a function that takes one argument
+3. It then returns a boolean value depending on whether the first argument is in the second argument
+

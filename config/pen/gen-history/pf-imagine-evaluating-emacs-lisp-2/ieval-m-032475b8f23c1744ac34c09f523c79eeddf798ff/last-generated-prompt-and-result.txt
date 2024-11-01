@@ -1,0 +1,4 @@
+;; summary from wiki
+;; arguments: (topic author)
+(message (eval '(summary-from-wiki "Life" "Isaac Asimov")))
+--> "Isaac Asimov"

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: define function
+# group: 
+# key: f
+# --
+(define (sum-of-two-integers a b)
+(+ a b))

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: yas-region-selected-text-0
+# group: yas-special
+# key: 0
+# \`yas-selected-text\`\${0:${0(remove-hook 'haskell-mode-hook 'stack-exec-path-mode)}}
+# --
+\`yas-selected-text\`\$0

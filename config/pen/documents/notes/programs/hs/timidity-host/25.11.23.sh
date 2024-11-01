@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "timidity-host" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Midi/A_Child_of_The_King-Binghamton.mid" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "timidity-host" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Midi/A_Lamb_Goes_Uncomplaining_Forth-An_Wasserfluessen_Babylon.mid" "#" "<==" "timidity"
+cd /root/.emacs.d/host/pen.el/src;  "timidity-host" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Midi/A_Child_of_The_King-Binghamton.mid" "#" "<==" "timidity"
+cd /root/.pen/documents/notes;  "timidity-host" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Midi/Praise_God_From_Whom_All_Blessings_Flow-Old_100th.mdi" "#" "<==" "timidity"
+cd /root/.pen/documents/notes;  "timidity-host" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Midi/Praise_God_From_Whom_All_Blessings_Flow-Old_100th.mid" "#" "<==" "timidity"

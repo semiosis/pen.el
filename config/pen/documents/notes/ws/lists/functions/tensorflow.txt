@@ -1,0 +1,6 @@
+global_variables_initializer
+
+max_num.numpy()
+    This converts a tensorflow tensor into numpy format.
+    May only work for EagerTensor, which is the default in TF2.
+[+]

@@ -1,0 +1,10 @@
+.
+
+I wrote it down.
+
+I let it go.
+
+EOD
+
+cat draft.org <<EOD
+#+TITLE: A Butterfly Flies into the Blue Sky, and the Child is Born Again

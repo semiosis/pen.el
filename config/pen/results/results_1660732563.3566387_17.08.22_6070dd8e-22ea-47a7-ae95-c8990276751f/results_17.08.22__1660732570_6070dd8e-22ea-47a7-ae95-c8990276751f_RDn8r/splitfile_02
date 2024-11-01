@@ -1,0 +1,17 @@
+"Functor" is a type class that defines a mapping operation over a type.
+
+The Functor class is defined in the standard library as:
+
+class Functor f where
+  fmap :: (a -> b) -> f a -> f b
+
+Functors are often called functors because they are functors.
+
+The standard library defines functors for a number of types, including:
+
+* Maybe
+* Either
+* IO
+* State
+* Writer
+* Reader

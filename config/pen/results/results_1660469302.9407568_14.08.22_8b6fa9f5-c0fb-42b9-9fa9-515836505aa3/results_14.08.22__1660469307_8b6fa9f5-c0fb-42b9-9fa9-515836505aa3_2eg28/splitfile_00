@@ -1,0 +1,1 @@
+(\x -> map Prelude.print x) $ Just ["Full house", "Shane"]

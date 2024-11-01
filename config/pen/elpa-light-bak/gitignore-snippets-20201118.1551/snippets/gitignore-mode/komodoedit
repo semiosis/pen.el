@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: KomodoEdit
+# contributor: Toptal & contributors
+# key: komodoedit
+# --
+
+### KomodoEdit ###
+
+*.komodoproject
+.komodotools

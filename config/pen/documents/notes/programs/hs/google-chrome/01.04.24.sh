@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "google-chrome" "/root/.pen/file-store-by-hash/2547ac3a92/mm.0uvQjS.html" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "google-chrome" "/root/.pen/file-store-by-hash/2547ac3a92/mm.jhL1mD.html" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "google-chrome" "/root/.pen/file-store-by-hash/484e8301c0/mm.iVlnKT.html" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "google-chrome" "/root/.pen/file-store-by-hash/188b9b4e60/mm.NXyklK.html" "#" "<==" "run.sh"
+cd /root/.pen/documents/notes;  "google-chrome" "/root/.pen/file-store-by-hash/2547ac3a92/mm.5wGqc6.html" "#" "<==" "run.sh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "google-chrome" "/root/.pen/file-store-by-hash/e876e76f48/mm.PVKeHz.html" "#" "<==" "run.sh"

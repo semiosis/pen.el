@@ -1,0 +1,1975 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Age: 433
+cache-control: max-age=3600
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 29 Aug 2023 10:20:52 GMT
+Expires: Tue, 29 Aug 2023 11:20:52 GMT
+Last-Modified: Tue, 29 Aug 2023 10:13:40 GMT
+link: <https://www.patheos.com/blogs/keithgiles/wp-json/>; rel="https://api.w.org/"
+link: <https://www.patheos.com/blogs/keithgiles/wp-json/wp/v2/posts/2572>; rel="alternate"; type="application/json"
+link: <https://www.patheos.com/blogs/keithgiles/?p=2572>; rel=shortlink
+Server: ECS (akl/76E6)
+Vary: Accept-Encoding
+X-Cache: HIT
+Content-Length: 29783
+
+<!DOCTYPE html>
+<html lang="en" data-page-type="post" 
+	data-content-channel="progressive-christian" 
+	data-blog-name="keithgiles" 
+	data-dormant-blog="" 
+	data-premium-blog=""
+	data-faiths="progressive christian"
+	data-topics=""
+	data-is-metered="">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="origin" />
+    
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+    <script type="text/javascript">
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/pt-cache-sw.min.js');
+            });
+        }
+    </script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preconnect" href="https://wp-media.patheos.com" crossorigin /><link rel="preconnect" href="https://keithgiles.disqus.com" crossorigin /><link rel="dns-prefetch" href="https://fonts.gstatic.com" /><link rel="dns-prefetch" href="https://wp-media.patheos.com" /><link rel="dns-prefetch" href="https://keithgiles.disqus.com" /><link rel="preload" href="https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-bg.jpg" as="image" type="image/jpg" fetchpriority="high" media="(min-width: 771px)" /><link rel="preload" href="https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-logo.png" as="image"   media="(min-width: 771px)" /><link rel="preload" href="https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-header-m.png" as="image"   media="(max-width: 770px)" /><link rel="preload" href="https://wp-media.patheos.com/blogs/sites/833/2019/01/heart-3147976_640.jpg" as="image"    /><link rel="preload" href="https://fonts.gstatic.com/s/opensanscondensed/v23/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMR7eS2Ao.woff2" as="font" type="font/woff2" crossorigin  /><link rel="preload" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700|Open+Sans+Condensed:300,700|Vollkorn:400,400i,700,700i&display=optional" as="style" type="text/css" crossorigin  />    <!-- Critical Styles -->
+    <style type="text/css">
+        @font-face{font-family:'Open Sans Condensed';font-style:normal;font-weight:300;font-display:optional;src:url(https://fonts.gstatic.com/s/opensanscondensed/v23/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype')}@font-face{font-family:'Open Sans Condensed';font-style:normal;font-weight:700;font-display:optional;src:url(https://fonts.gstatic.com/s/opensanscondensed/v23/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype')}@font-face{font-family:'Glyphicons Halflings';font-display:swap;src:url("https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");src:url("https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),url("https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"),url("https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"),url("https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"),url("https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")}.col-lg-9,.col-md-6,.col-md-8,.col-sm-10,.col-sm-12,.col-sm-2{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@-ms-viewport{width:device-width}#site-footer-2022 .footer-social-icons span{padding:13px}@media (max-width:999px) and (max-width:999px){#patheos-dropdown-mega-nav .ad-free-container{text-align:center}}.davearmstrong{background-image:url(https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/davearmstrong/davearmstrong-theme-bg.jpg);background-color:#cbcac8;background-repeat:no-repeat}.davearmstrong .writer-theme-nav-block{height:113px}.davearmstrong .writer-theme-logo img{width:483px;height:48px}@media (max-width:770px){.davearmstrong{background-image:url(https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/davearmstrong/davearmstrong-theme-bg-m.jpg)}.davearmstrong .writer-theme-nav-block{height:70px}.davearmstrong .writer-theme-logo img{width:auto;height:auto;max-height:50px}}.davearmstrong .white-solid{box-shadow:0 10px 60px rgba(0,0,0,.25)}a.decorated-link{border-bottom:1px solid rgba(161,37,37,.5)}.sticky-ad{position:fixed;bottom:10px;width:768px;height:90px;left:50%;transform:translateX(-50%);z-index:999;text-align:right}.sticky-ad-close{position:absolute;left:686px;top:-16px;background:rgba(0,0,0,.4);padding:2px 5px;border-radius:10px 10px 0 0;color:#fff;font-family:serif;font-size:.7em;z-index:999}@media screen and (max-width:600px){.sticky-ad{visibility:hidden}}@media (max-width:420px){.davearmstrong{background-image:none}}.cls-1{fill-rule:evenodd}rad-newsletters-wordpress-collapsable{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}nav,section{display:block}a{background-color:transparent}h1{font-size:2em;margin:.67em 0}img{border:0}svg:not(:root){overflow:hidden}input{color:inherit;font:inherit;margin:0}input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.glyphicon-calendar:before{content:"\e109"}.glyphicon-comment:before{content:"\e111"}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:20px;line-height:1.6;color:#000;background-color:#fff}input{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#000;text-decoration:none}img{vertical-align:middle}h1{font-family:"Open Sans Condensed",sans-serif;font-weight:700;line-height:1.1;color:#000}h1{margin-top:32px;margin-bottom:16px}h1{font-size:48px}ul{margin-top:0;margin-bottom:16px}ul ul{margin-bottom:0}.list-unstyled{padding-left:0;list-style:none}@media (min-width:768px){.container{width:750px}}@media (min-width:1000px){.container{width:1030px}}@media (min-width:1300px){.container{width:1330px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.container-fluid:after,.container-fluid:before{content:" ";display:table}.container-fluid:after{clear:both}.row{margin-left:-15px;margin-right:-15px}.row:after,.row:before{content:" ";display:table}.row:after{clear:both}.col-lg-3,.col-lg-9,.col-md-4,.col-md-6,.col-md-8,.col-sm-10,.col-sm-12,.col-sm-2,.col-xs-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-12{float:left}.col-xs-12{width:100%}@media (min-width:768px){.col-sm-10,.col-sm-12,.col-sm-2{float:left}.col-sm-2{width:16.6666666667%}.col-sm-10{width:83.3333333333%}.col-sm-12{width:100%}}@media (min-width:1000px){.col-md-4,.col-md-6,.col-md-8{float:left}.col-md-4{width:33.3333333333%}.col-md-6{width:50%}.col-md-8{width:66.6666666667%}}@media (min-width:1300px){.col-lg-3,.col-lg-9{float:left}.col-lg-3{width:25%}.col-lg-9{width:75%}}.btn{display:inline-block;margin-bottom:0;font-weight:700;text-align:center;vertical-align:middle;touch-action:manipulation;background-image:none;border:1px solid transparent;white-space:nowrap;padding:6px 20px;font-size:20px;line-height:1.6;border-radius:5px}.btn-xs{padding:2px 7px;font-size:17px;line-height:1.2;border-radius:3px}.collapse{display:none}.caret{display:inline-block;width:0;height:0;margin-left:2px;vertical-align:middle;border-top:4px dashed;border-right:4px solid transparent;border-left:4px solid transparent}.dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;list-style:none;font-size:20px;text-align:left;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:5px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175);background-clip:padding-box}.dropdown-menu>li>a{display:block;padding:3px 20px;clear:both;font-weight:400;line-height:1.6;color:#8e82b5;white-space:nowrap}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav:after,.nav:before{content:" ";display:table}.nav:after{clear:both}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:32px;border:1px solid transparent}.navbar:after,.navbar:before{content:" ";display:table}.navbar:after{clear:both}.navbar-collapse{overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}.navbar-collapse:after,.navbar-collapse:before{content:" ";display:table}.navbar-collapse:after{clear:both}.container-fluid>.navbar-collapse{margin-right:-15px;margin-left:-15px}.navbar-nav{margin:4.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:32px}@media (min-width:768px){.navbar{border-radius:5px}.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.container-fluid>.navbar-collapse{margin-right:0;margin-left:0}.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:9px;padding-bottom:9px}.container{width:750px!important}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0}.navbar-default{background-color:#f8f8f8;border-color:#e7e7e7}.navbar-default .navbar-nav>li>a{color:#777}.navbar-default .navbar-collapse{border-color:#e7e7e7}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.pull-left{float:left!important}.hide{display:none!important}.hidden{display:none!important}.visible-xs{display:none!important}.visible-xs-block{display:none!important}@media (max-width:767px){.visible-xs{display:block!important}.visible-xs-block{display:block!important}.hidden-xs{display:none!important}}@media (min-width:768px) and (max-width:999px){.hidden-sm{display:none!important}}@media (min-width:1000px) and (max-width:1299px){.hidden-md{display:none!important}}@media (min-width:1300px){.hidden-lg{display:none!important}}nav.navbar{margin-bottom:0}nav.navbar-default{background:0 0;border:none}nav .navbar-nav>li{clear:both}nav .navbar-nav>li>a{float:left}nav .navbar-nav>li.dropdown>a{padding-right:0}nav .navbar-nav>li .dropdown-menu{padding-left:0;padding-right:0}@media only screen and (min-width:0){nav .navbar-nav>li{clear:both}nav .navbar-nav>li .dropdown-menu{position:inherit}}@media only screen and (min-width:768px){nav .navbar-nav>li{clear:none}nav .navbar-nav>li .dropdown-menu{position:absolute}}.navbar-collapse{max-height:initial}body{position:relative}.btn{display:inline-block;margin-bottom:0;font-weight:700;text-align:center;vertical-align:middle;touch-action:manipulation;letter-spacing:2px;font-size:14px;font-weight:700;text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";background-image:none;border:1px solid transparent;white-space:nowrap;padding:6px 20px;font-size:20px;line-height:1.6;border-radius:5px}.btn-prime-3{color:#fff!important;background-color:#96959a;border-color:#89888e}.btn{font-size:14px}.btn-xs{padding:2px 7px;font-size:10px;line-height:1.2;border-radius:3px;font-size:11px}a img{-moz-transform:scale(1);-webkit-transform:scale(1);transform:scale(1);opacity:1}body,html{-webkit-font-smoothing:antialiased;font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}.buffer-top{margin-top:50px}@media (max-width:1299px){#site-footer-2022 .footer-social-icons span{display:none}.buffer-top{margin-top:30px}h1{font-size:40px;line-height:42px}}@media (max-width:999px){.buffer-top{margin-top:24px}}.white-solid{background-color:#fff}@media (max-width:767px){.btn-xs{letter-spacing:1px}body,html{overflow-x:hidden;max-width:100%}.remove-padding-mobile{padding:0!important}.row{margin:0}.single-post .container .col-sm-10,.single-post .container .col-sm-12{padding-left:0;padding-right:0}}h1{font-weight:700;letter-spacing:-1px}h1{color:#000}.over-dark{color:#fff!important}a{color:#000;text-decoration:none;font-weight:700}a.decorated-link{border-bottom:3px solid #7cb4a6}a:visited{color:#000}p{margin:0 0 16px}.list-unstyled li{margin-bottom:10px;line-height:normal}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}@media (min-width:1000px){.container{width:1030px!important}}@media (min-width:1300px){.container{width:1330px!important}}.writer-theme{background-attachment:fixed;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;padding-bottom:40px}.writer-theme .writer-theme-logo{font-family:"Open Sans Condensed",sans-serif;text-transform:uppercase;padding:20px 0;min-height:90px}.writer-theme .writer-theme-logo img{max-width:100%}.writer-theme .navbar-default .navbar-nav>li>a{border-bottom:4px solid #fff}.writer-theme nav .navbar-nav>li.dropdown>a{padding-right:10px}.tagged-with-include-rss{font-size:11px;font-weight:700;text-align:left;font-family:"Open Sans Condensed",sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:1px;margin:30px auto}.tagged-with-include-rss a{color:#000;opacity:.8}.tagged-with-include-rss li{padding:5px 12px;margin:3px 1px;border:1px solid #96959a}.tagged-with-include-rss li:nth-child(-n+2){background-color:#000;color:#fff;padding:6px 12px;border:0}.tagged-with-include-rss li:nth-child(-n+2) a{color:#fff;opacity:1}@media (max-width:767px){.writer-theme{padding:0;background-size:100%;background-repeat:repeat}.writer-theme .writer-theme-logo{padding:0;min-height:50px}.writer-theme .writer-theme-logo img{width:100%;height:auto;max-height:none}.writer-theme .navbar-default .navbar-nav>li>a{color:#777;width:100%}.tagged-with-include-rss{padding:10px}.main-post .DFPAdSlot{height:100%!important;max-height:300px}}.wide-heading{padding:0 15px 30px}@media (max-width:999px){h1{font-size:34px;line-height:36px}.wide-heading{padding:0 0 20px}}.DFPAdSlot{display:inline-block;overflow-y:hidden}@media (max-width:767px){.DFPAdSlot{padding:0;margin:0 -30px;min-width:100%;max-width:320px}}.DFPAdSlot::after{clear:both;content:"";display:block}.ad{padding:10px 0}.ad-container{width:100%;position:relative;text-align:center;clear:both}.ad-container.top-ad{border-bottom:1px solid #e8e5f0;padding:20px}.ad-container .ad-label{font-size:11px;color:#96959a;font-family:"Open Sans Condensed",sans-serif;font-weight:700;width:100%;height:20px;line-height:20px}.ad-container .ad-label::after{content:"ADVERTISEMENT"}.ad-container .ad-label.alt-text::after{content:"ADVERTISEMENT – feature continues below"}.ad-container .ad-label.alt-text.alt-pos-above::after{content:""}.ad-container .ad-label.alt-text.alt-pos-above::before{content:"ADVERTISEMENT – feature continues below"}@media (max-width:767px){.ad{margin:20px 0;padding:0}.ad-container .ad-label{bottom:40px}.ad-container{min-height:auto}}.out-of-page-container{display:none!important}.by-line{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:11px;letter-spacing:3px;color:#96959a;text-transform:uppercase;padding:9px 0;font-weight:700}@media (max-width:999px){.by-line{letter-spacing:normal}}.by-line .glyphicon{padding:0 6px}.by-line a{color:#96959a}.by-line .divide-byline{content:"|";display:inline-block}input{font-family:inherit;font-size:inherit;line-height:inherit;background-color:#fff;border:1px solid #ccc;padding:6px 16px}input{border-radius:4px}.main-post{line-height:1.6em}.main-post img{max-width:100%!important;height:auto;margin:30px auto;display:block}.main-post .alignnone{float:none}.channel-breadcrumb{margin:20px 0 -5px -7px}.social-sharing{position:relative;width:100%;display:block;text-align:center}.navbar{font-family:"Open Sans Condensed",sans-serif;text-transform:uppercase;letter-spacing:2px;font-size:14px;font-weight:700}.navbar.nav-writer-theme .dropdown{background:0 0}.navbar .nav>li.dropdown{position:relative}.writer-theme-nav-block{border-bottom:1px solid #e8e5f0;border-top:4px solid #fff}@media (max-width:767px){.by-line .glyphicon{padding:0 6px 0 0}.by-line .divide-byline{content:"";display:block;clear:both}.writer-theme-nav-block{height:70px}img.size-full{width:100%;height:auto}}.dropdown-menu{font-size:inherit}.dropdown-menu{border-radius:4px}.dropdown-menu>li>a{color:#96959a;font-weight:700}nav.navbar-default{background:#fff;z-index:1}#patheos-nav{height:100px}#patheos-page-content{width:100%;position:relative;top:0;right:0}@media (max-width:999px){.navbar-collapse{border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}.navbar-collapse.collapse{display:none!important}.navbar-nav{float:none!important;margin-top:7.5px}.navbar-nav>li{float:none}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px}nav .navbar-nav>li{clear:both}#patheos-nav{height:60px}#patheos-page-content{position:relative}}.rail-nl-signup{min-height:400px;width:100%}.breadcrumbs{width:100%;display:flex;flex-direction:row;gap:10px;margin-top:5px}.breadcrumbs .breadcrumb-faith,.breadcrumbs .breadcrumb-topic{display:inline-block}.breadcrumbs .breadcrumb-faith .channel-breadcrumb,.breadcrumbs .breadcrumb-topic .channel-breadcrumb{margin:0}.trending-topics{font-size:15px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}.trending-topics ul{list-style:none;padding:0;margin:0}.trending-topics li{display:inline-block;padding:6px 10px}.trending-topics li:nth-child(1){background-color:#7cb4a6;color:#fff;font-weight:700}.trending-topics a{font-weight:400}.trending-topics .list-divider{color:#7cb4a6;padding:6px 0}#site-footer-2022 .extras-block{float:right;margin-top:36px;position:relative}#site-footer-2022 .extras-block.mobile{display:none;float:none;text-align:center}#site-footer-2022 .extras-block.mobile .footer-social-icons{border-left:0;padding-left:0;margin:auto;display:block;text-align:center}@media (max-width:999px){.breadcrumbs{flex-direction:column;gap:0}.trending-topics li{display:inline;line-height:30px;line-break:auto}.trending-topics{margin-top:0;max-height:30px;overflow:hidden}#site-footer-2022 .extras-block{display:none}#site-footer-2022 .extras-block.mobile{display:block}}#site-footer-2022 .extras-block.mobile a.subscription-support{bottom:32px;left:auto;display:block}#site-footer-2022 .extras-block a.subscription-support{text-decoration:underline;font-size:13px;position:relative;bottom:-38px;left:281px;color:#cbcbcb}#site-footer-2022 .footer-social-icons{border-left:1px solid #3d3d3d;padding-left:30px;margin-left:30px;display:inline-block;font-size:15px;color:#cbcbcb;font-weight:700}#site-footer-2022 .footer-social-icons img.icon{width:35px;height:35px;margin:0 5px}@media (max-width:1299px){#site-footer-2022 .footer-social-icons{padding-left:20px;margin-left:20px}}#site-footer-2022 a{color:#fff;font-weight:400}#site-footer-2022 a:visited{color:#fff}#patheos-header-bar-mega-nav{width:100%;height:72px;position:relative;z-index:1000;background-color:#000;background:-webkit-linear-gradient(#000,#262626);background:-o-linear-gradient(#000,#262626);background:linear-gradient(#000,#262626)}#patheos-header-bar-mega-nav .patheos-logo-container{margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;padding-top:17px;width:127px}@media (max-width:999px){#patheos-header-bar-mega-nav{height:60px}#patheos-header-bar-mega-nav .header-logo img{width:100px;height:30px}#patheos-header-bar-mega-nav .patheos-logo-container{width:100px;padding-left:13px;padding-top:15px}#patheos-channel-mega-nav .subnav-bar{display:none}}#patheos-channel-mega-nav{text-align:center}#patheos-channel-mega-nav .subnav-bar{position:relative;z-index:999;background-color:#000;width:100%;padding:15px!important;position:absolute}#patheos-channel-mega-nav .subnav-channels-container{margin:auto!important;text-align:center;font-size:15px;text-decoration:none;position:relative;z-index:1001;top:4px;padding:0}#patheos-channel-mega-nav .subnav-channels-container a{font-weight:400}#patheos-channel-mega-nav .subnav-channels-container .channel{color:#d4d4d4!important;margin-left:5px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}#patheos-channel-mega-nav .subnav-channels-container .channel::after{content:'|';color:#7ea198;margin-left:10px}@media (max-width:1299px){#patheos-channel-mega-nav .subnav-channels-container{font-size:13px;padding:0}#patheos-channel-mega-nav .subnav-channels-container .channel{margin-left:3px}#patheos-channel-mega-nav .subnav-channels-container .channel::after{margin-left:5px}}#patheos-channel-mega-nav .megamenuCollapse-container{position:relative;z-index:998;padding:0 6px;display:inline-block;color:#fff;text-transform:uppercase;font-weight:600}@media (max-width:1299px){#patheos-channel-mega-nav .megamenuCollapse-container{padding:0 4px}}@media (max-width:999px){#patheos-channel-mega-nav .subnav-channels-container .channel{display:none}#patheos-channel-mega-nav .megamenuCollapse-container{height:60px;width:60px;padding:20px 0 0 22px;position:absolute;right:0;top:-65px}}#patheos-channel-mega-nav .megamenuCollapse-container .megamenuCollapse-icon{background:url(https://media.patheos.com/~/media/patheos-images/images/components/icons/patheos-menu-icon.svg) center center no-repeat;width:16px;height:12px;background-size:16px 12px;border:0;margin:4px 13px 0 0;display:inline-block;float:left}@media (max-width:999px){#patheos-channel-mega-nav .megamenuCollapse-container .megamenuCollapse-icon{height:20px;width:23px;background-size:20px 23px;margin:1px 13px 0 0}}#patheos-dropdown-mega-nav{width:100%;z-index:998;background:#000;color:#fff;text-align:left;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;font-size:14px;border-bottom:5px solid #88b2a6;margin:auto!important;position:absolute}#patheos-dropdown-mega-nav .menu-content{padding:20px 0;margin:auto;position:relative;top:12px;z-index:999;display:flex}#patheos-dropdown-mega-nav .menu-content.first{border-top:1px solid #3d3d3d;padding:20px 0 0;margin-bottom:20px}@media (max-width:999px){#patheos-dropdown-mega-nav .menu-content.first{padding:0}#patheos-dropdown-mega-nav .menu-content{display:block;padding:0 0 20px}}#patheos-dropdown-mega-nav .menu-column{text-align:left;font-size:15px;flex-basis:25%;padding-right:20px}#patheos-dropdown-mega-nav .menu-column.wide{flex-basis:40%}#patheos-dropdown-mega-nav .remove-indent{margin-left:-15px}#patheos-dropdown-mega-nav li{margin:10px auto}#patheos-dropdown-mega-nav li a{text-decoration:none;color:#cbcbcb;font-weight:400}#patheos-dropdown-mega-nav .header a{text-decoration:none;color:#fff;font-weight:600;margin:15px auto;border-bottom:0;text-align:left;font-size:17px;display:block}@media (max-width:999px){#patheos-dropdown-mega-nav .menu-column{padding-right:0;text-align:center}#patheos-dropdown-mega-nav li{margin:13px auto}#patheos-dropdown-mega-nav .header a{text-align:center;display:inline-block}#patheos-dropdown-mega-nav .menu-footer .items-right .foot-item{text-align:center}}#patheos-dropdown-mega-nav .menu-footer{border-top:1px solid #3d3d3d;padding:36px 0 50px;display:block;top:0;margin-top:40px}#patheos-dropdown-mega-nav .menu-footer .items-right{float:right}#patheos-dropdown-mega-nav .menu-footer .items-right .foot-item{display:inline-block;position:relative}#patheos-dropdown-mega-nav .menu-footer .items-right .foot-item a.subscription-support{text-decoration:underline;font-size:13px;position:absolute;bottom:-24px;left:0;color:#cbcbcb;font-weight:400}#patheos-dropdown-mega-nav .menu-footer .items-left{float:left}#patheos-dropdown-mega-nav .menu-footer .social-icons{border-left:1px solid #3d3d3d;padding-left:20px;margin-left:30px;display:inline-block;font-size:15px;color:#cbcbcb;font-weight:700}#patheos-dropdown-mega-nav .menu-footer .social-icons span{padding:13px}#patheos-dropdown-mega-nav .menu-footer .social-icons img.icon{width:35px;height:35px;margin:0 5px}@media (max-width:1299px){#patheos-dropdown-mega-nav .menu-column.wide{flex-basis:38%}#patheos-dropdown-mega-nav .menu-footer .social-icons span{display:none}#patheos-dropdown-mega-nav .menu-footer .social-icons{padding-left:20px;margin-left:20px}}@media (max-width:999px){#patheos-dropdown-mega-nav .menu-footer .social-icons{padding:0;margin:auto;border-left:0}#patheos-dropdown-mega-nav{position:absolute;top:40px;padding-top:50px}#patheos-dropdown-mega-nav .menu-footer{border-top:0;margin:auto}#patheos-dropdown-mega-nav .items-right{float:none;width:100%;margin:auto}#patheos-dropdown-mega-nav .foot-item{width:100%}#patheos-dropdown-mega-nav .menu-content.first{border:0;margin-bottom:0}#patheos-dropdown-mega-nav .header{border-top:1px solid #292929;padding:8px 15px;text-align:center;margin:0 auto}#patheos-dropdown-mega-nav .header::after{content:url(https://media.patheos.com/~/media/patheos-images/images/components/icons/patheos-megamenuCarat2.svg);width:12px;height:12px;margin-left:10px;display:inline-block}#patheos-dropdown-mega-nav .header.no-carat:after{content:"";width:0;height:0;margin-left:0}#patheos-dropdown-mega-nav .ad-free-container{position:relative}#patheos-dropdown-mega-nav .ad-free-container a.subscription-support{text-decoration:underline;font-size:13px;position:relative;bottom:17px;left:auto;color:#cbcbcb;font-weight:400}#patheos-dropdown-mega-nav .genericAccordion{display:block;max-height:0;overflow:hidden}}.patheos-search-bar{border-radius:100px;height:36px}.patheos-search-bar.in-header{position:relative;float:right;min-width:42px;top:18px;right:23px}.patheos-search-bar.in-header .searchbar{height:36px;width:260px}.patheos-search-bar.in-dropdown{float:none;margin:auto!important;position:inherit;width:80%;max-width:300px;position:relative}.patheos-search-bar.in-dropdown .searchbar{text-align:center;height:36px;width:100%;right:0}@media (max-width:999px){.patheos-search-bar.in-dropdown{max-width:none}}.patheos-search-bar .searchbar{margin-bottom:auto;margin-top:auto;background-color:transparent;border-radius:30px;padding:10px;overflow:hidden;position:relative;top:1px;background-color:#fff;line-height:1.2;font-size:16px}.patheos-search-bar .search_input{color:#383838;border:0;outline:0;background:0 0;line-height:18px;position:relative;top:-7px;left:10px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:15px;font-weight:400;opacity:1;width:100%}.patheos-search-bar .search_icon{position:absolute;top:10px;left:12px;opacity:1}.patheos-search-bar .search_icon svg{width:16px}.pull-left{float:left}    </style>
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Love Is A Person | Keith Giles</title>
+	<meta name="description" content="&nbsp; Love isn’t a concept. It’s not a feeling. According to the Bible, love is a person, and that person is God. In the first epistle of John we" />
+	<link rel="canonical" href="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Love Is A Person" />
+	<meta property="og:description" content="&nbsp; Love isn’t a concept. It’s not a feeling. According to the Bible, love is a person, and that person is God. In the first epistle of John we" />
+	<meta property="og:url" content="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/" />
+	<meta property="og:site_name" content="Keith Giles" />
+	<meta property="article:author" content="https://www.facebook.com/keithagiles" />
+	<meta property="article:published_time" content="2019-01-06T21:51:37+00:00" />
+	<meta property="og:image" content="https://wp-media.patheos.com/blogs/sites/833/2019/01/heart-3147976_640.jpg" />
+	<meta property="og:image:width" content="640" />
+	<meta property="og:image:height" content="426" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@keithgiles" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Keith Giles" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="3 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.patheos.com/blogs/keithgiles/#website","url":"https://www.patheos.com/blogs/keithgiles/","name":"Keith Giles","description":"This former pastor left the pulpit to follow Jesus and started a church where 100% of the offering goes to the poor.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.patheos.com/blogs/keithgiles/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/#primaryimage","inLanguage":"en-US","url":"https://wp-media.patheos.com/blogs/sites/833/2019/01/heart-3147976_640.jpg","contentUrl":"https://wp-media.patheos.com/blogs/sites/833/2019/01/heart-3147976_640.jpg","width":640,"height":426,"caption":"Image: Pixabay"},{"@type":"WebPage","@id":"https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/#webpage","url":"https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/","name":"Love Is A Person","isPartOf":{"@id":"https://www.patheos.com/blogs/keithgiles/#website"},"primaryImageOfPage":{"@id":"https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/#primaryimage"},"datePublished":"2019-01-06T21:51:37+00:00","dateModified":"2019-01-06T21:51:37+00:00","author":{"@id":"https://www.patheos.com/blogs/keithgiles/#/schema/person/c026ed8e596e36501a693dc33b7053be"},"description":"&nbsp; Love isn\u2019t a concept. It\u2019s not a feeling. According to the Bible, love is a person, and that person is God. In the first epistle of John we","breadcrumb":{"@id":"https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/"]}]},{"@type":"BreadcrumbList","@id":"https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.patheos.com/blogs/keithgiles/"},{"@type":"ListItem","position":2,"name":"Love Is A Person"}]},{"@type":"Person","@id":"https://www.patheos.com/blogs/keithgiles/#/schema/person/c026ed8e596e36501a693dc33b7053be","name":"Keith Giles","image":{"@type":"ImageObject","@id":"https://www.patheos.com/blogs/keithgiles/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/e8627889b20205ea8636cd77bad9d415?s=96&d=identicon&r=g","contentUrl":"https://secure.gravatar.com/avatar/e8627889b20205ea8636cd77bad9d415?s=96&d=identicon&r=g","caption":"Keith Giles"},"description":"This former pastor left the pulpit to follow Jesus in Orange County, California and started a house church where 100% of the offerings go to help the poor in their community.","sameAs":["https://www.facebook.com/keithagiles","https://twitter.com/keithgiles"],"url":"https://www.patheos.com/blogs/keithgiles/author/kgiles/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Keith Giles &raquo; Feed" href="https://www.patheos.com/blogs/keithgiles/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Keith Giles &raquo; Comments Feed" href="https://www.patheos.com/blogs/keithgiles/comments/feed/" />
+    <!-- Pushly -->
+    <script src="https://cdn.p-n.io/pushly-sdk.min.js?domain_key=wuaocSunBfjwow8IRkbtgAiZYpxTzpgcwe2W" async></script>
+    <script>
+        window.PushlySDK = window.PushlySDK || [];
+        function pushly() { window.PushlySDK.push(arguments) }
+        pushly('load', {
+            domainKey: 'wuaocSunBfjwow8IRkbtgAiZYpxTzpgcwe2W',
+            sw: '/assets/pushly/pushly-sdk-worker.js',
+        });
+
+        // include channel data in profile
+        let html = document.querySelector('html');
+        if (html.hasAttribute('data-content-channel')) {
+            let channel = html.getAttribute('data-content-channel');
+            pushly('profile_append', {
+                'channel': [ channel ]
+            });
+        }
+
+		//include faith data in profile
+        if (html.hasAttribute('data-faiths') && html.getAttribute('data-faiths')) {
+            let faiths = html.getAttribute('data-faiths');
+            pushly('profile_append', {
+                'faiths': faiths.split(',')
+            });
+        }
+
+        //include topic data in profile
+        if (html.hasAttribute('data-topics') && html.getAttribute('data-topics')) {
+            let topics = html.getAttribute('data-topics');
+            pushly('profile_append', {
+                'topics': topics.split(',')
+            });
+        }
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="Keith Giles &raquo; Love Is A Person Comments Feed" href="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/feed/" />
+<link rel="https://api.w.org/" href="https://www.patheos.com/blogs/keithgiles/wp-json/" /><link rel="alternate" type="application/json" href="https://www.patheos.com/blogs/keithgiles/wp-json/wp/v2/posts/2572" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.patheos.com/blogs/keithgiles/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.patheos.com/blogs/keithgiles/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8" />
+<link rel='shortlink' href='https://www.patheos.com/blogs/keithgiles/?p=2572' />
+<link rel="alternate" type="application/json+oembed" href="https://www.patheos.com/blogs/keithgiles/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.patheos.com%2Fblogs%2Fkeithgiles%2F2019%2F01%2Flove-is-a-person%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.patheos.com/blogs/keithgiles/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.patheos.com%2Fblogs%2Fkeithgiles%2F2019%2F01%2Flove-is-a-person%2F&#038;format=xml" />
+
+<!-- Twitter Cards Meta - V 2.5.4 -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@WPDevTeam" />
+<meta name="twitter:creator" content="@WPDevTeam" />
+<meta name="twitter:url" content="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/" />
+<meta name="twitter:title" content="Love Is A Person" />
+<meta name="twitter:description" content="  Love isn’t a concept. It’s not a feeling. According to the Bible, love is a person, and that person is God. In the first epistle of John we read:   “The [...]" />
+<meta name="twitter:image" content="https://wp-media.patheos.com/blogs/sites/833/2019/01/heart-3147976_640.jpg" />
+<!-- Twitter Cards Meta By WPDeveloper.net -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM63HCXXTB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TM63HCXXTB');
+    </script>
+ 		<!--- START FBCONV PRECONNECTS ---><link rel="preconnect" href="https://connect.facebook.net" crossorigin /><link rel="dns-prefetch" href="https://connect.facebook.net" crossorigin /><!--- END FBCONV PRECONNECTS ---><!--- START FBCONV PRELOADS ---><link rel="preload" href="https://connect.facebook.net/en_US/fbevents.js" as="script" /><!--- END FBCONV PRELOADS --->        <link rel="modulepreload" as="script" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/app/dist/js/chunk-vendors.769fe3d9.js" />
+        <link rel="modulepreload" as="script" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/app/dist/js/app.f5a30458.js" />
+    <!-- Favicon Data -->
+<link rel="apple-touch-icon" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/images/favicons/mstile-150x150.png?v=00rbb46rd6">
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes"><meta name="author" content="Keith Giles"/><meta property="article:publisher" content="https://www.facebook.com/keithagiles"/><meta property="article:author" content="https://www.facebook.com/keithagiles"/><meta property="og:title" content="Love Is A Person"/><meta property="og:image" content="https://wp-media.patheos.com/blogs/sites/833/2019/01/heart-3147976_640.jpg"/><meta property="og:site_name" content="Keith Giles"/><meta property="audience" content="Theology_Students"/>
+	<script> 
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+	ga('create', 'UA-6605286-6', 'auto');
+
+	
+	var type = null;
+	var metas = document.getElementsByTagName("meta");
+	for (var i=0; i<metas.length; i++) { 
+		if (metas[i].getAttribute("property") == "og:type") { 
+			type = metas[i].getAttribute("content"); 
+		} 
+	} 
+	
+	var tag = null;
+	var metas = document.getElementsByTagName("meta");
+	for (var i=0; i<metas.length; i++) { 
+		if (metas[i].getAttribute("property") == "article:section") { 
+			tag = metas[i].getAttribute("content"); 
+			if (tag != "Uncategorized")
+			{
+				break;
+			}
+			else
+			{
+				tag = null;
+			}
+		} 
+	} 
+
+	if(tag == null) {
+		var metas = document.getElementsByTagName("meta");
+		for (var i=0; i<metas.length; i++) { 
+			if (metas[i].getAttribute("property") == "article:tag") { 
+				tag = metas[i].getAttribute("content"); 
+				break;
+			} 
+		} 
+	}
+	ga("send", "pageview", 
+	{
+		dimension1: "none",
+		dimension2: "none",
+		dimension3: "none",
+		dimension4: "Progressive Christian",				//Channel
+		dimension5: type,						//Content Type
+		dimension6: tag,						//Keyword
+		dimension7: "Theology_Students",			//Audience
+		dimension8: "",		//Political
+        dimension9: "", 	//Content Age Identifier for Willis Blogs
+        dimension10: "active",       //Active Status
+	});
+	</script>
+	        <style type="text/css">
+        /* Scss Document */
+.keithgiles {
+  background-image: url(//media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-bg.jpg);
+  background-color: #bd9167;
+  background-repeat: no-repeat; }
+  @media (max-width: 420px) {
+    .keithgiles {
+      background-image: url(//media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-bg-m.jpg); } }
+  .keithgiles .navbar-default .navbar-nav > .active > a, .keithgiles .navbar-default .navbar-nav > .active > a:hover, .keithgiles .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #ffffff;
+    border-bottom: 4px solid #be5642; }
+  .keithgiles .decorated-divider {
+    border-bottom: 2px solid #bd9167; }
+    .keithgiles .writer-theme-logo img {
+    width: 250px;
+    height: 44px; }
+    @media (max-width: 770px) {
+      .keithgiles .writer-theme-logo img {
+        width: auto;
+        height: 38px;
+        min-height: 38px; } }
+  .keithgiles .about-us .blurb {
+    border-top: 4px solid #bd9167; }
+  .keithgiles .color-grad {
+    background: #be5642;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #be5642 0%, #1e1e1e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #be5642 0%, #1e1e1e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #be5642 0%, #1e1e1e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-1', endColorstr='#1e1e1e',GradientType=1 );
+    /* IE6-9 */ }
+    .keithgiles .color-grad.thin-stripe {
+      height: 4px;
+      padding: 0;
+      clear: both; }
+    .keithgiles .color-grad .newsletter-su-mod {
+      margin: 0; }
+
+a.decorated-link {
+  border-bottom: 1px solid rgba(190, 86, 66, 0.5); }
+a:hover {
+  color: #be5642; }
+
+a.decorated-link {
+  border-bottom: 1px solid rgba(190, 86, 66, 0.5); }
+
+.related-content .by-line a {
+  color: #be5642; }
+  .related-content .by-line a:hover {
+    color: #bd9167; }
+
+.tag-decorated a {
+  background-color: #be5642; }
+  .tag-decorated a:hover {
+    color: #be5642;
+    border: 2px solid #be5642; }
+
+.next-feature time {
+  color: #be5642; }
+
+.previous-feature time {
+  color: #be5642; }
+
+.btn-prime-1 {
+  background-color: #be5642;
+  border-color: #ac4d3b; }
+  .btn-prime-1:hover {
+    background-color: #994534;
+    border-color: #4d221a; }
+
+.btn-prime-2 {
+  background-color: #be5642;
+  border-color: #ac4d3b; }
+  .btn-prime-2:hover {
+    background-color: #994534;
+    border-color: #4d221a; }
+
+.btn-accent-1 {
+  background-color: #bd9167;
+  border-color: #b58455; }
+  .btn-accent-1:hover {
+    background-color: #a87749;
+    border-color: #61452a; }
+
+.btn-accent-2 {
+  background-color: #bd9167;
+  border-color: #b58455; }
+  .btn-accent-2:hover {
+    background-color: #a87749;
+    border-color: #61452a; }
+
+.newsletter-su-mod:before {
+  background-image: url(//media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-bg.jpg); }
+        </style>
+	      <script>
+			ga('create', 'UA-110870606-1', 'auto', 'clientTracker');
+			ga('clientTracker.send', 'pageview');
+      </script>
+		        <script type="application/ld+json">
+            {"@context":"https:\/\/schema.org","@type":"Article","headline":"Love Is A Person","url":"https:\/\/www.patheos.com\/blogs\/keithgiles\/2019\/01\/love-is-a-person\/","thumbnailUrl":"https:\/\/wp-media.patheos.com\/blogs\/sites\/833\/2019\/01\/heart-3147976_640.jpg","datePublished":"2019-01-06T21:51:37+00:00","articleSection":"Progressive Christian","creator":["Keith Giles"],"keywords":["God's Love","Gospel of the Kingdom","Preemptive Love","Theology"]}        </script>
+    <!-- Admiral Ad-Free -->
+<script type="text/javascript">
+    window.admiral =
+        window.admiral ||
+        function () {
+            (admiral.q = admiral.q || []).push(arguments);
+        };
+
+    window.admiral('targeting', 'pause', 5e3);
+
+    (function() {
+        console.info('checking premium post');
+        if (document.querySelector('html').getAttribute('data-page-type') == 'post') {
+            console.info('page type is post, checking premium post');
+
+            var premiumBlog = document.querySelector('html').getAttribute('data-premium-blog');
+            
+            // if front end runs first, use this selector
+            var tagList = Array.from(document.querySelectorAll('.tagged-with-include-rss li')).map(tag => tag.innerText.toLowerCase());
+            // if nothing found, try running this selector which would work if front end hasn't run yet
+            if (tagList.length == 0) {
+                tagList = Array.from(document.querySelectorAll('rad-tagged-with li')).map(tag => tag.innerText.toLowerCase());
+            }
+            if ((premiumBlog || tagList.includes("premium")) && !tagList.includes("free")) {
+                console.debug('Calling Admiral to set premium flag');
+                window.admiral('targeting', 'set', 'premium', 'true');
+            
+                // check if user is logged in and subscribed with an offer id. if so, add to targeting
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var keyvalues = cookies[i].split('=');
+                    var key = keyvalues[0].trim();
+                    if ('offerID' === key) {
+                        window.admiral('targeting', 'set', 'offerId', keyvalues[1].trim());                        
+                        // Unhide content
+                        document.getElementById('premium-content').classList.remove('blur');
+                        document.getElementById('premium-content').classList.remove('fade-out');
+                    }
+                }
+
+                console.debug('premium flag set');
+            } else {
+                console.info('not a premium post.');
+            }
+        } else {
+            console.info('not a premium post');
+        }
+
+        console.debug('checking metered content');
+        if (document.querySelector('html').getAttribute('data-is-metered') == '1') {
+            window.admiral('targeting', 'set', 'metered', 'true');
+            console.debug('metered content flag set');
+        }
+    })();
+</script>
+<script type="text/javascript">!(function(o,n,t){t=o.createElement(n),o=o.getElementsByTagName(n)[0],t.async=1,t.src="https://enviousshape.com/v2/0/wgwWCDdb2NiW1gz9y7pvfYreSsK5spr2b4pkfdg26e6IIxv4lclET_lRg68kIm2kwgg",o.parentNode.insertBefore(t,o)})(document,"script"),(function(o,n){o[n]=o[n]||function(){(o[n].q=o[n].q||[]).push(arguments)}})(window,"admiral");!(function(n,e,r,t){function o(){if((function o(t){try{return(t=localStorage.getItem("v4ac1eiZr0"))&&0<t.split(",")[4]}catch(n){}return!1})()){var t=n[e].pubads();typeof t.setTargeting===r&&t.setTargeting("admiral-engaged","true")}}(t=n[e]=n[e]||{}).cmd=t.cmd||[],typeof t.pubads===r?o():typeof t.cmd.unshift===r?t.cmd.unshift(o):t.cmd.push(o)})(window,"googletag","function");;;;;</script>
+<!-- End Admiral Ad-Free --><!-- CookiePro Cookies Consent Notice start for patheos.com -->
+<script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="3f93598f-6412-4eae-a452-60ccd114b1eb" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- CookiePro Cookies Consent Notice end for patheos.com --><link rel="preconnect" href="https://01.cdn.mediatradecraft.com/" crossorigin=""/>
+<link rel="dns-prefetch" href="https://01.cdn.mediatradecraft.com/"/>
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossorigin=""/>
+<link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net/"/>
+<link rel="preconnect" href="https://c.amazon-adsystem.com/" crossorigin=""/>
+<link rel="dns-prefetch" href="https://c.amazon-adsystem.com/"/>
+<link rel="preconnect" href="https://micro.rubiconproject.com/" crossorigin=""/>
+<link rel="dns-prefetch" href="https://micro.rubiconproject.com/"/>
+<script src="https://c.amazon-adsystem.com/aax2/apstag.js" async="true"></script>
+<script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" async="true"></script>
+<script src="https://01.cdn.mediatradecraft.com/patheos/main/main.js?template=blog-article" async="true"></script>
+<link href="https://01.cdn.mediatradecraft.com/patheos/main/main.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+
+	<style type="text/css">
+        .sticky-ad {
+            position: fixed;
+            bottom: 10px;
+            width: 768px;
+			height: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            text-align: right;
+        }
+        .sticky-ad-close {
+            position:absolute;
+            cursor: pointer;
+            left: 686px;
+            top: -16px;
+            background: rgba(0,0,0,0.4);
+            padding: 2px 5px 2px 5px;
+            border-radius: 10px 10px 0 0;
+            color: #ffffff;
+			font-family: serif;
+            font-size: 0.7em;
+            z-index: 999;
+        }
+        @media screen and (max-width: 600px) {
+            .sticky-ad {
+                visibility: hidden;
+            }
+        }
+
+				@media (max-width: 420px) {
+			.keithgiles {
+				background-image: none;
+			}
+		}
+	</style>
+</head>
+<body class="post-template-default single single-post postid-2572 single-format-standard">
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-W3V8F2');</script>
+	<!-- End Google Tag Manager -->
+
+<div id="patheos-nav">
+
+    <div class="wrapper">
+
+
+
+        <!-- Page Content Holder -->
+
+        <div id="patheos-page-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Header Bar -->
+
+            <div id="patheos-header-bar-mega-nav">
+                <div class="patheos-logo-container"> <a href="https://www.patheos.com/" class="header-logo"><img src="https://www.patheos.com/~/media/images/components/navigation/patheos/patheos-logo-header.png" alt="Patheos" width="127" height="38"></a> </div>
+
+
+                <div class="patheos-search-bar in-header hidden-sm hidden-xs">
+                    <div class="searchbar ">
+                        <form name="search" class="desktop-search-form" method="get" action="/search">
+                            <input class="search_input" type="text" name="q" placeholder="Search Patheos">
+                            <a href="#" class="search_icon" onclick="document.getElementsByClassName('desktop-search-form')[0].submit(); return false;">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.41 32.19">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill-rule: evenodd;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1" d="M32,31.9a2,2,0,0,1-2.9.1l-8.4-8.5A12.38,12.38,0,0,1,13.1,26,12.8,12.8,0,0,1,13.1.4,12.91,12.91,0,0,1,26,13.2a12.42,12.42,0,0,1-2.3,7.3L32.2,29A2.06,2.06,0,0,1,32,31.9ZM13.2,3.5A9.8,9.8,0,1,0,23,13.3,9.82,9.82,0,0,0,13.2,3.5Z" transform="translate(-0.3 -0.4)" />
+                                </svg>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <!-- Channel Subnav -->
+
+            <div id="patheos-channel-mega-nav">
+                <div class="subnav-bar"></div>
+                <div class="subnav-channels-container container">
+                    <a
+ href="https://www.patheos.com/buddhist" class="channel">Buddhist</a><a
+ href="https://www.patheos.com/catholic" class="channel">Catholic</a><a
+ href="https://www.patheos.com/contemplative" class="channel">Contemplative</a><a
+ href="https://www.patheos.com/evangelical" class="channel">Evangelical</a><a
+ href="https://www.patheos.com/general-christian" class="channel">General Christian</a><a
+ href="https://www.patheos.com/hindu" class="channel">Hindu</a><a
+ href="https://www.patheos.com/jewish" class="channel">Jewish</a><a
+ href="https://www.patheos.com/latter-day-saint" class="channel">Latter-day Saint</a><a
+ href="https://www.patheos.com/muslim" class="channel">Muslim</a><a
+ href="https://www.patheos.com/new-visions" class="channel">New Visions</a><a
+ href="https://www.patheos.com/progressive-christian" class="channel">Progressive Christian</a>
+                    <rad-toggle-button target-div="patheos-dropdown-mega-nav" toggle-div="megamenuCollapse" toggle-message="close menu"> 
+                        <div id="megamenuCollapse" class="megamenuCollapse-container">
+                            <div class="megamenuCollapse-icon"></div>
+                        </div>
+                    </rad-toggle-button>
+                </div>
+            </div>
+
+
+
+
+            <!--sliding nav -->
+            <nav id="patheos-dropdown-mega-nav" class="collapse">
+                <div class="container menu-content first">
+                    
+
+    <div class="menu-column">
+        <rad-toggle-button target-div="accordion207579c5-0994-4b26-86d1-0695d27efd0a" added-class="open" :disable-desktop="true">
+            <div class="header">
+<a
+ href="javascript:void(0);">Beliefs</a></div>
+
+        </rad-toggle-button>
+        <div id="accordion207579c5-0994-4b26-86d1-0695d27efd0a" class="genericAccordion">
+            <ul class="list-unstyled">
+                <li>
+<a
+ href="https://www.patheos.com/buddhist">Buddhist</a></li>
+<li>
+<a
+ href="https://www.patheos.com/catholic">Catholic</a></li>
+<li>
+<a
+ href="https://www.patheos.com/contemplative">Contemplative</a></li>
+<li>
+<a
+ href="https://www.patheos.com/evangelical">Evangelical</a></li>
+<li>
+<a
+ href="https://www.patheos.com/general-christian">General Christian</a></li>
+<li>
+<a
+ href="https://www.patheos.com/hindu">Hindu</a></li>
+<li>
+<a
+ href="https://www.patheos.com/jewish">Jewish</a></li>
+<li>
+<a
+ href="https://www.patheos.com/latter-day-saint">Latter-day Saint</a></li>
+<li>
+<a
+ href="https://www.patheos.com/more-voices">More Voices</a></li>
+<li>
+<a
+ href="https://www.patheos.com/muslim">Muslim</a></li>
+<li>
+<a
+ href="https://www.patheos.com/new-visions">New Visions</a></li>
+<li>
+<a
+ href="https://www.patheos.com/pagan">Pagan</a></li>
+<li>
+<a
+ href="https://www.patheos.com/progressive-christian">Progressive Christian</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-column">
+        <rad-toggle-button target-div="accordion4144e80c-4bae-4287-ad44-98e94d0877ce" added-class="open" :disable-desktop="true">
+            <div class="header">
+<a
+ href="javascript:void(0);">Topics</a></div>
+
+        </rad-toggle-button>
+        <div id="accordion4144e80c-4bae-4287-ad44-98e94d0877ce" class="genericAccordion">
+            <ul class="list-unstyled">
+                <li>
+<a
+ href="https://www.patheos.com/topic/religion-news">Religion News</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/food-and-religion">Food and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/sports-and-religion">Sports and Religion</a></li>
+
+    <li class="" style="z-index: 1;"><a href="https://www.patheos.com/topic/religious-art">Religious Art</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/religious-music-and-entertainment">Religious Music and Entertainment</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/religious-events">Religious Events</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/history-and-religion">History and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/style-and-religion">Style and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/politics-and-religion">Politics and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/women-in-religion">Women in Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/recreation-outdoors-and-religion">Recreation Outdoors and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/business-finance-and-religion">Business Finance and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/careers-workplace-and-religion">Careers Workplace and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/education-and-religion">Education and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/family-parenting-and-religion">Family Parenting and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/health-fitness-and-religion">Health Fitness and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/home-and-religion">Home and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/relationships-and-religion">Relationships and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/technology-and-religion">Technology and Religion</a></li>
+<li>
+<a
+ href="https://www.patheos.com/topic/travel-and-religion">Travel and Religion</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-column">
+        <rad-toggle-button target-div="accordioneba06e0f-bf3e-458e-83ef-dca482edf3be" added-class="open" :disable-desktop="true">
+            <div class="header">
+<a
+ href="javascript:void(0);">Columnists</a></div>
+
+        </rad-toggle-button>
+        <div id="accordioneba06e0f-bf3e-458e-83ef-dca482edf3be" class="genericAccordion">
+            <ul class="list-unstyled">
+                <li>
+<a
+ href="https://www.patheos.com/buddhist-blogs">Buddhist Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/business-finance-and-religion-blogs">Business Finance and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/careers-workplace-and-religion-blogs">Careers Workplace and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/catholic-blogs">Catholic Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/contemplative-blogs">Contemplative Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/education-and-religion-blogs">Education and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/evangelical-blogs">Evangelists Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/family-parenting-and-religion-blogs">Family Parenting and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/general-christian-blogs">General Christian Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/health-fitness-and-religion-blogs">Health Fitness and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/hindu-blogs">Hindu Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/history-and-religion-blogs">History and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/home-and-religion-blogs">Home and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/jewish-blogs">Jewish Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/more-voices-blogs">More Voices Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/latter-day-saint-blogs">Latter Day Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/muslim-blogs">Muslim Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/new-visions-blogs">New Visions Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/nonreligious-blogs">Nonreligious Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/pagan-blogs">Pagan Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/politics-and-religion-blogs">Politics and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/progressive-christian-blogs">Progressive Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/recreation-outdoors-and-religion-blogs">Recreation Outdoors and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/relationships-and-religion-blogs">Relationships and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/religion-news-blogs">Religion News Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/religious-art-blogs">Religious Art Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/religious-events-blogs">Religious Events Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/religious-music-and-entertainment-blogs">Religious Music and Entertainment Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/sports-and-religion-blogs">Sports and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/style-and-religion-blogs">Style and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/technology-and-religion-blogs">Technology and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/travel-and-religion-blogs">Travel and Religion Columnists</a></li>
+<li>
+<a
+ href="https://www.patheos.com/women-in-religion-blogs">Women in Religion Columnists</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-column wide">
+        <rad-toggle-button target-div="accordiona819f6e6-c7f9-4efc-9d08-542518a501bc" added-class="open" :disable-desktop="true">
+            <div class="header">
+<a
+ href="javascript:void(0);">Resource Library</a></div>
+
+        </rad-toggle-button>
+        <div id="accordiona819f6e6-c7f9-4efc-9d08-542518a501bc" class="genericAccordion">
+            <ul class="list-unstyled remove-indent col-md-6">
+                <li>
+<a
+ href="https://www.patheos.com/library">Library of World Religions</a></li>
+<li>
+<a
+ href="https://www.patheos.com/sacred-spaces/overview">The 100 Most Holy Places on Earth</a></li>
+<li>
+<a
+ href="https://www.patheos.com/answers">Patheos Answers</a></li>
+
+    <li class="" style="z-index: 1;"><a href="https://www.patheos.com/editorial/podcasts">Podcasts</a></li>
+
+    <li class="" style="z-index: 1;"><a href="https://www.patheos.com/editorial/videos/answers">Videos</a></li>
+<li>
+<a
+ href="https://www.patheos.com/faith-figures-database">Faith Leaders Database</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/anglican">Anglican Episcopalian</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/bahai">Bahai</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/baptist">Baptist</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/buddhism">Buddhism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/christianity">Christianity</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/confucianism">Confucianism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/eastern-orthodoxy">Eastern Orthodoxy</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/hinduism">Hinduism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/pentecostal">Holiness and Pentecostal</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/iskcon-hare-krishna">ISKCON</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/islam">Islam</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/judaism">Judaism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/lutheran">Lutheran</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/methodist">Methodist</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/mormonism">The Church of Jesus Christ of Latter-day Saints</a></li>
+
+            </ul>
+
+            <ul class="list-unstyled remove-indent col-md-6">
+                <li>
+<a
+ href="https://www.patheos.com/library/new-age">New Age</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/pagan">Paganism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/presbyterian">Presbytarian and Reformed</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/protestantism">Protestantism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/religion-behind-the-scenes" class="tier-2">Religion Behind the Scenes</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/roman-catholicism">Roman Catholic</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/scientology">Scientology</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/shia-islam">Shia Islam</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/sikhism">Sikhism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/sufism">Sufism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/sunni-islam">Sunni Islam</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/taoism">Taoism</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library/zen">Zen</a></li>
+<li>
+<a
+ href="https://www.patheos.com/library">See all religions</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="container menu-content">
+                    
+
+    <div class="menu-column">
+        <rad-toggle-button target-div="accordion7bb61afc-8aff-4521-ba1f-6daea30a74cf" added-class="open" :disable-desktop="true">
+            <div class="header">
+<a
+ href="javascript:void(0);">Research Tools</a></div>
+
+        </rad-toggle-button>
+        <div id="accordion7bb61afc-8aff-4521-ba1f-6daea30a74cf" class="genericAccordion">
+            <ul class="list-unstyled">
+                <li>
+<a
+ href="https://www.patheos.com/library/lenses/side-by-side">Comparison Lens</a></li>
+<li>
+<a
+ href="https://www.patheos.com/preachers">Preacher Resources</a></li>
+<li>
+<a
+ href="https://www.patheos.com/teachers">Teacher Resources</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-column">
+        <div class="header no-carat">
+<a
+ href="https://www.patheos.com/editorial/videos">Video</a></div>
+<div class="header no-carat">
+<a
+ href="https://www.patheos.com/editorial/podcasts">Podcasts</a></div>
+<div class="header no-carat">
+<a
+ href="https://www.patheos.com/articles-and-essays">Thought Readers</a></div>
+
+    </div>
+
+    <div class="menu-column">
+        <rad-toggle-button target-div="accordion840762aa-2d1c-49a0-a021-dbea723182e0" added-class="open" :disable-desktop="true">
+            <div class="header">
+<a
+ href="javascript:void(0);">E-Books and Other Special Offers</a></div>
+
+        </rad-toggle-button>
+        <div id="accordion840762aa-2d1c-49a0-a021-dbea723182e0" class="genericAccordion">
+            <ul class="list-unstyled">
+                <li>
+<a
+ href="https://cr.patheos.com/path-gods-cheat-sheet-to-finance">God's Cheat Sheet to Finances</a></li>
+<li>
+<a
+ href="https://cr.patheos.com/path-books-of-bible-signup?track1=HouseNav_BooksBible_P">Books of the Bible Study series</a></li>
+<li>
+<a
+ href="https://l.patheos.com/excavating-the-history-of-the-bible-la/">History of the Bible</a></li>
+<li>
+<a
+ href="https://cr.patheos.com/path-marriage-prayer-challenge-signup?track1=HouseNav_Marriage_P">7 Day Prayer Challenge for Spouses</a></li>
+<li>
+<a
+ href="https://cr.patheos.com/path-different-christian-signup/?sourceid=101&track1=HouseNav_DKoC_P">A Different Kind of Christian</a></li>
+<li>
+<a
+ href="https://cr.patheos.com/path-jesusislove-signup/?sourceid=97&track1=HouseNav_JIL_P">Jesus is Love</a></li>
+<li>
+<a
+ href="https://cr.patheos.com/path-devotional-signup?track1=HouseNav_Dev_P&sourceid=176">Prayer Devotional</a></li>
+<li>
+<a
+ href="https://cr.patheos.com/path-catholic-coloringbook-signup?track1=HouseNav_CCB_P&sourceid=111">The Saints We Love</a></li>
+<li>
+<a
+ href="https://cr.patheos.com/path-conversation-cards?track1=HouseNav_Convo_P">FaithChatter Conversation Cards</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-column wide">
+        <div class="header no-carat">
+<a
+ href="https://www.patheos.com/subscribe/newsletters">Newsletters</a></div>
+
+    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="clearfix"></div>
+
+
+                <!--BUTTON AND SEACH HIDDEN ON DESKTOP-->
+                <div class="patheos-search-bar in-dropdown hidden-md hidden-lg">
+                    <div class="searchbar ">
+                        <form name="search" class="desktop-search-form" method="get" action="/search">
+                            <input class="search_input" type="text" name="q" placeholder="Search Patheos">
+                            <a href="#" class="search_icon" onclick="document.getElementsByClassName('desktop-search-form')[0].submit(); return false;">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.41 32.19">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill-rule: evenodd;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1" d="M32,31.9a2,2,0,0,1-2.9.1l-8.4-8.5A12.38,12.38,0,0,1,13.1,26,12.8,12.8,0,0,1,13.1.4,12.91,12.91,0,0,1,26,13.2a12.42,12.42,0,0,1-2.3,7.3L32.2,29A2.06,2.06,0,0,1,32,31.9ZM13.2,3.5A9.8,9.8,0,1,0,23,13.3,9.82,9.82,0,0,0,13.2,3.5Z" transform="translate(-0.3 -0.4)" />
+                                </svg>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ad-free-container hidden-md hidden-lg">
+                    <rad-admiral-login anchor-class="ad-free-login">
+                        <img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/profile-icon.svg" alt="" width="29" height="29" />Ad-Free &amp; Subscriber Log-In
+                    </rad-admiral-login>
+                    <a href="mailto:support@getadmiral.com?subject=Patheos Subscription Support" class="subscription-support">Subscription Support</a>
+                </div>
+
+                <div class="container menu-content menu-footer">
+                    <div class="items-left hidden-sm hidden-xs">
+                        <a href="https://www.patheos.com/" class="header-logo"><img src="https://www.patheos.com/~/media/images/components/navigation/patheos/patheos-logo-header.png" alt="Patheos" width="130" height="39"></a>
+                    </div>
+
+                    <div class="items-right">
+
+                        <div class="foot-item hidden-sm hidden-xs">
+                            <rad-admiral-login anchor-class="ad-free-login">
+                                <img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/profile-icon.svg" alt="" width="29" height="29" />Ad-Free &amp; Subscriber Log-In
+                            </rad-admiral-login>
+                            <a href="mailto:support@getadmiral.com?subject=Patheos Subscription Support" class="subscription-support">Subscription Support</a>
+                        </div>
+
+                        <div class="foot-item">
+
+
+                            <div class="social-icons">
+                                <span>Follow Patheos</span>
+                                <a href="https://www.facebook.com/Patheos/"><img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/Patheos-Facebook-Icon.svg" alt="Patheos on Facebook" class="icon"></a>
+                                <a href="https://www.youtube.com/channel/UC5u2f85lX38wm6NEne5pXFw"><img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/Patheos-YouTube-Icon.svg" alt="Patheos on YouTube" class="icon"></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- The Rest Of The Page -->
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="score-column1 ">
+        <div class="score-center">
+            
+<div class="row ">
+    
+    <div class="container full-width remove-padding-mobile">
+
+        <div class="trending-topics">
+            <ul>
+                <li>Trending:</li>
+
+                    <li><a href="https://www.patheos.com/trending-topics/m/marriage">Marriage</a></li>
+                        <li class="list-divider">|</li>
+                    <li><a href="https://www.patheos.com/trending-topics/p/parenting">Parenting</a></li>
+                        <li class="list-divider">|</li>
+                    <li><a href="https://www.patheos.com/trending-topics/s/suffering">Suffering</a></li>
+                        <li class="list-divider">|</li>
+                    <li><a href="https://www.patheos.com/trending-topics/r/resurrection">Resurrection</a></li>
+                        <li class="list-divider">|</li>
+                    <li><a href="https://www.patheos.com/trending-topics/c/chatgpt">ChatGPT</a></li>
+                        <li class="list-divider">|</li>
+                    <li><a href="https://www.patheos.com/trending-topics/s/spirituality">Spirituality</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+        </div>
+    </div>
+</div>
+
+<div class="writer-theme keithgiles">
+	<div id="writer-theme-logo" class="container writer-theme-logo">
+		<a href="https://www.patheos.com/blogs/keithgiles">
+<picture>
+    <!--[if IE 9]><video style='display: none;'><![endif]-->
+    <source media="(min-width: 768px)" srcset="https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-logo.png" height="50">
+        <source srcset="https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-header-m.png" height="116" width="828">
+        <!--[if IE 9]></video><![endif]-->
+    <img src="https://media.patheos.com/~/media/patheos-images/wordpress/writer-themes/keithgiles/keithgiles-theme-logo.png" alt="keithgiles" height="50">
+</picture>
+</a>	</div>
+	
+	<div class="container white-solid">
+		
+		<div class="row writer-theme-nav-block">
+			<style type="text/css">rad-newsletters-wordpress-collapsable { display: none; }</style>
+<rad-newsletters-wordpress-collapsable
+    blog-name="Keith Giles"
+    channel-name="Progressive Christian"
+    source-desc="52"
+    blog-list-id="781"
+    channel-list-id="43"
+    :is-default-channel="false">
+</rad-newsletters-wordpress-collapsable>
+			<nav class="navbar navbar-default nav-writer-theme">
+    <div class="container-fluid"> 
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <rad-navigation-subnav-button></rad-navigation-subnav-button>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="defaultNavbar1">
+            <div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav navbar-nav"><li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-home'><a href='http://www.patheos.com/blogs/keithgiles/'>Home</a></li><li class=' menu-item menu-item-type-post_type menu-item-object-page'><a href='https://www.patheos.com/blogs/keithgiles/about/'>About</a></li><li class=' menu-item menu-item-type-post_type menu-item-object-page'><a href='https://www.patheos.com/blogs/keithgiles/publications/'>Publications</a></li><li class=' menu-item menu-item-type-custom menu-item-object-custom'><a href='https://www.youtube.com/user/kgilesify/'>Videos by Keith Giles</a></li><li class=' menu-item menu-item-type-custom menu-item-object-custom'><a href='https://heretichappyhour.podbean.com/'>Heretic Happy Hour Podcast</a></li><li class=' menu-item menu-item-type-post_type menu-item-object-page'><a href='https://www.patheos.com/blogs/keithgiles/archives/'>Archives</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page">
+						<a href="https://www.patheos.com/blogs/keithgiles/newsletter">FREE NEWSLETTER</a>
+					</li></ul></div>        </div>
+        <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+</nav>	
+		</div>
+    
+		<div class="row">
+			<div class="ad ad-container hidden-xs above-the-fold-unit-desktop top-ad" id="top-banner" style="height: 320px !important;"></div>		</div>
+  
+		<div class="row">
+			<div class="col-sm-12">
+			<div class="breadcrumbs">
+            <div class="breadcrumb-faith">
+            <div class="btn btn-xs btn-prime-3 channel-breadcrumb">
+                <a href="//www.patheos.com/progressive-christian"  class="over-dark">Progressive Christian</a>
+            </div>
+        </div>
+        </div>			</div>
+		</div>
+  	<div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="wide-heading">
+					<h1 class="entry-title" itemprop="headline">Love Is A Person</h1>
+					<div class="by-line clearfix post-meta">
+    <div class="pull-left"><i class="glyphicon glyphicon-calendar"></i> January 6, 2019 by <a href="https://www.patheos.com/blogs/keithgiles/author/kgiles/"><span itemprop="author">Keith Giles</span></a></div>
+            <div class="comments">
+            <div class="divide-byline"></div>
+            <i class="glyphicon glyphicon-comment"></i>
+                            <a href="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/#comments-section">
+                    <span class="dsq-postid" data-dsqidentifier="2572 https://admin.patheos.com/blogs/keithgiles/?p=2572">2 Comments</span>                </a>
+                    </div>
+    </div>				</div>
+			</div>
+		</div>
+		<div class="row flex-row">
+			<div class="col-sm-12 col-md-8 col-lg-9">
+				<div class="col-sm-2 hidden-xs">
+					<div class="social-sharing hidden-xs" data-link="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/?utm_medium=social&utm_source=share_bar">
+    
+
+<rad-share-v1 page-url="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/" twitter-url="https://twitter.com/intent/tweet?text=Love Is A Person%20-%20https%3A%2F%2Fwww.patheos.com%2Fblogs%2Fkeithgiles%2F2019%2F01%2Flove-is-a-person%2F%3Futm_medium%3Dsocial%26utm_source%3Dshare_bar" facebook-url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.patheos.com%2Fblogs%2Fkeithgiles%2F2019%2F01%2Flove-is-a-person%2F%3Futm_medium%3Dsocial%26utm_source%3Dshare_bar" data-link="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/?utm_medium=social&utm_source=share_bar"></rad-share-v1>
+</div><div class="nativo-thin-container"></div>
+				</div>
+
+				<section>
+					<div class="col-sm-10">
+						<div class="main-post" itemscope itemtype="http://schema.org/BlogPosting">
+							<span class="hide" itemprop="headline">Love Is A Person</span>
+							<span class="hide" itemprop="datePublished dateModified">January 6, 2019</span>
+							<span class="hide" itemprop="author">Keith Giles</span>
+							<link itemprop="mainEntityOfPage" href="https://www.patheos.com/blogs/keithgiles/blogs/keithgiles/2019/01/love-is-a-person/" />
+							<div class="hide" itemprop="publisher" itemscope id="patheos" itemtype="https://schema.org/Organization">
+								<a itemprop="url" href="//www.patheos.com/">
+									<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+										<img itemprop="url" src="//www.patheos.com/~/media/images/components/navigation/patheos/patheos-logo-header.png" alt="LOGO">
+										<meta itemprop="width" content="127">
+										<meta itemprop="height" content="38">
+									</span>
+									<span itemprop="name">Patheos</span>
+									<span itemprop="description">Explore the world's faith through different perspectives on religion and spirituality! Patheos has the views of the prevalent religions and spiritualities of the world.</span>
+								</a>
+							</div>
+							<div class="story-block">
+								<div id="main-content" class="entry-content clearfix" itemprop="about">
+									<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body><p><img class="aligncenter size-full wp-image-2578" src="https://wp-media.patheos.com/blogs/sites/833/2019/01/heart-3147976_640.jpg" alt="" width="640" height="426"></p>
+<div class="ad__h250">
+<div class="ad__h250-inner" id="incontent1"> </div>
+</div>
+<p> </p>
+<p><span style="font-weight: 400;">Love isn’t a concept. It’s not a feeling. According to the Bible, love is a person, and that person is God.</span><br style="font-weight: 400;"><br style="font-weight: 400;"></p>
+<p style="font-weight: 400;">In the first epistle of John we read:</p>
+<p> </p>
+<p style="font-weight: 400;"><em>“The one who does not love does not know God, <strong>for God is love</strong>.” (1 John 4:7-9)</em></p>
+<p> </p>
+<p style="font-weight: 400;"><em>“<strong>God is love</strong>, and the one who abides (lives) in love abides in God, and God abides in him.” (1 John 4:15-17)</em></p>
+<p> </p>
+<p style="font-weight: 400;">As I was reading through the first epistle of John recently I realized that there’s not much debate about the topic of love. See, once you establish that God is love and then you point out that we are commanded by Jesus to love one another, and to love those who do not love us in return, there’s only one thing left to do – love others.</p>
+<p> </p>
+<p style="font-weight: 400;">Debating love and analyzing love and creating a strategy for love is mostly useless. Other than actually practicing love, there’s not much else to do about it. Maybe that’s why there are so few debates about these little epistles by the Apostle John?</p>
+<p> </p>
+<p style="font-weight: 400;">So, God is love. This means that love’s origin is God. Apart from God there is no love. And by “love” here we do not mean the earthly, selfish, conditional love that most of us have grown up with. No, we mean the ultimate expression of love that is expressed in the Greek language as “Agape”. It is a love that is unconditional. It is a love that is based on the character and nature of the One who is loving, not on the one who receives that love.</p>
+<p> </p>
+<p style="font-weight: 400;">In the Gospel of John, we read where Jesus proclaimed:</p>
+<p> </p>
+<p style="font-weight: 400;"><em>“If you have seen me, you have seen the Father.” (John 14:9)</em></p>
+<p> </p>
+<p style="font-weight: 400;">Paul places an exclamation point on that by saying:</p>
+<p> </p>
+<p style="font-weight: 400;"><em>“For in Christ all the fullness of the Deity lives in bodily form.” (Colossians 2:8-10)</em></p>
+<p> </p>
+<p style="font-weight: 400;">That means that if God is love, then Jesus is also love.</p>
+<p> </p>
+<p style="font-weight: 400;">So, to know “love” we have to get to know the person, Jesus, who is love incarnate.</p>
+<p> </p>
+<p style="font-weight: 400;">It also means that if we are like Jesus, then we will be loving as He is loving. That’s why He said, <em>“They will know that you are my disciples (followers) if you love one another.” (John 13:35)</em></p>
+<p> </p>
+<p style="font-weight: 400;">When we obey Jesus in this area of love we declare that we belong to Him, and we also express to Jesus that we love Him in return.</p>
+<p> </p>
+<p style="font-weight: 400;">Love is not an emotion. It is not a feeling. It is a person. His name is Jesus. Get to know Him.</p>
+<p>**</p>
+<p><em>Keith Giles was formerly a licensed and ordained minister who walked away from organized church 11 years ago, to start a home fellowship that gave away 100% of the offering to the poor in the community. </em></p>
+<p><em>Today, He and his wife live in Meridian, Idaho, awaiting their next adventure.</em></p>
+<p><em>His new book “<a class="decorated-link decorated-link" href="https://eur04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.amazon.com%2FJesus-Unbound-Liberating-Word-Bible%2Fdp%2F1938480325%2Fref%3Dsr_1_1%3Fie%3DUTF8%26qid%3D1539823337%26sr%3D8-1%26keywords%3Djesus%2Bunbound&amp;data=02%7C01%7C%7C242e12b047bf41599e4708d6468f7fb0%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636773979464446529&amp;sdata=%2Bs5gpuoQzgFQoPK7xx998IZ5dX%2BqqrWdDcBzgJS2gVA%3D&amp;reserved=0" data-auth="Verified" target="_blank"><strong>Jesus Unbound: Liberating the Word of God from the Bible</strong></a>”, is available now on Amazon and features a Foreword by author Brian Zahnd.</em></p>
+<p><em>He is also the author of the Amazon best-seller, “<a class="decorated-link decorated-link" href="https://eur04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.amazon.com%2FJesus-Untangled-Crucifying-Politics-Allegiance%2Fdp%2F193848021X%2Fref%3Dpd_sim_14_1%3F_encoding%3DUTF8%26pd_rd_i%3D193848021X%26pd_rd_r%3Dac14a6cf-d26e-11e8-887f-75e7a3fde4c5%26pd_rd_w%3DT4V7m%26pd_rd_wg%3DzQkQ6%26pf_rd_i%3Ddesktop-dp-sims%26pf_rd_m%3DATVPDKIKX0DER%26pf_rd_p%3D18bb0b78-4200-49b9-ac91-f141d61a1780%26pf_rd_r%3D7MPH4R45PHWWRG01E4VJ%26pf_rd_s%3Ddesktop-dp-sims%26pf_rd_t%3D40701%26psc%3D1%26refRID%3D7MPH4R45PHWWRG01E4VJ&amp;data=02%7C01%7C%7C242e12b047bf41599e4708d6468f7fb0%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636773979464446529&amp;sdata=TbkB2qZu8mtymjq9cUl22QIyDeIXjngt%2F0nC%2BLvXMj8%3D&amp;reserved=0" data-auth="Verified" target="_blank"><strong>Jesus Untangled: Crucifying Our Politics To Pledge Allegiance To The Lamb</strong></a>” with a Foreword by Greg Boyd.</em></p>
+<p><em>Keith also co-hosts the <a class="decorated-link decorated-link" href="https://eur04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fheretichappyhour.com%2F&amp;data=02%7C01%7C%7C242e12b047bf41599e4708d6468f7fb0%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636773979464446529&amp;sdata=j98Y2xmS3jYVc2AqQDrPiQfkEcscWx71vmmTij5xfoo%3D&amp;reserved=0" data-auth="Verified" target="_blank"><strong>Heretic Happy Hour Podcast</strong></a> on iTunes and Podbean. </em></p>
+<p><strong><em>BONUS</em></strong><em>: Want to unlock exclusive content including blog articles, short stories, music, podcasts, videos and more? Visit my <a class="decorated-link decorated-link" href="https://eur04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.patreon.com%2FKeithGiles&amp;data=02%7C01%7C%7C242e12b047bf41599e4708d6468f7fb0%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636773979464602780&amp;sdata=jbzTM8W5Pu%2BQpMD1pH4Aa5%2B6uiUsf147SgLBLDZfH70%3D&amp;reserved=0" data-auth="Verified" target="_blank"><strong>Patreon page</strong></a>.</em></p></body></html><!-- START PAGINATED POST CONTROLS --><!-- END PAGINATED POST CONTROLS -->
+								</div>
+							</div>
+						</div>
+
+
+						<div class="social-sharing mobile-share visible-xs buffer-top" data-link="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/?utm_medium=social&amp;utm_source=share_bar">
+							
+
+<rad-share-v1 page-url="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/" twitter-url="https://twitter.com/intent/tweet?text=Love Is A Person%20-%20https%3A%2F%2Fwww.patheos.com%2Fblogs%2Fkeithgiles%2F2019%2F01%2Flove-is-a-person%2F%3Futm_medium%3Dsocial%26utm_source%3Dshare_bar" facebook-url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.patheos.com%2Fblogs%2Fkeithgiles%2F2019%2F01%2Flove-is-a-person%2F%3Futm_medium%3Dsocial%26utm_source%3Dshare_bar" data-link="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/?utm_medium=social&utm_source=share_bar"></rad-share-v1>
+						</div>
+
+							<div class="post-meta">
+		<div class="row">
+			<div class="tagged-with-include-rss hidden">
+				<rad-tagged-with channel-name=Progressive Christian channel-link=https://www.patheos.com/Columns#PROGRESSIVECHRISTIAN>
+											<li><a href="https://www.patheos.com/blogs/keithgiles/category/gods-love">God's Love</a></li>
+											<li><a href="https://www.patheos.com/blogs/keithgiles/category/gospel-of-the-kingdom">Gospel of the Kingdom</a></li>
+											<li><a href="https://www.patheos.com/blogs/keithgiles/category/preemptive-love">Preemptive Love</a></li>
+											<li><a href="https://www.patheos.com/blogs/keithgiles/category/theology">Theology</a></li>
+									</rad-tagged-with>
+			</div>
+		</div>
+	</div>
+
+												<div class="row">
+													</div>
+
+												<div class="row">
+							
+<body>					
+	<div class="row">			
+		
+		<!-- START PREVIOUS NEXT BUTTONS -->        		
+		<div class="previous-next clearfix">
+				
+						<a href="https://www.patheos.com/blogs/keithgiles/2019/01/why-i-prefer-to-rock-the-boat/" class="less-spacing col-sm-6">
+				<div class="btn-prime-2 arrow-box text-left">
+					<i class="glyphicon glyphicon-chevron-left pull-left"></i> Previous Post
+				</div>					
+				<div class="previous-feature clearfix">
+					<div class="image-container pull-left">
+						<img src="https://wp-media.patheos.com/blogs/sites/833/2019/01/rafting-444743_640-150x150.jpg" alt=""/></div>
+					<div>
+						<time datetime="2019-01-05 03:22">January 5, 2019</time>
+						<div>Why I Prefer To Rock the Boat</div>
+					</div>
+				</div>
+			</a>
+						
+						<a href="https://www.patheos.com/blogs/keithgiles/2019/01/the-beautiful-freedom-from-religion/" class="col-sm-6 less-spacing ">
+				<div class="btn-prime-2 arrow-box text-right">
+					<i class="glyphicon glyphicon-chevron-right pull-right"></i> Next Post
+				</div>					
+				<div class="next-feature clearfix">
+					<div class="image-container pull-right add-left-margin">
+						<img src="https://wp-media.patheos.com/blogs/sites/833/2019/01/sky-2667455_640-2-150x150.jpg" alt=""/>
+					</div>
+					<div>
+						<time datetime="2019-01-10 03:00">January 10, 2019</time>
+						The Beautiful Freedom From Religion					</div>
+				</div>
+			</a>
+			
+		</div>
+		<!-- END PREVIOUS NEXT BUTTONS -->
+
+	</div>     
+</body>						</div>
+
+						
+    <div class="by-line clearfix pull-left wide-decorated">
+        <div class="pull-left">Recent Comments</div>
+        <div class="comments">
+            <i class="glyphicon glyphicon-comment"></i>
+                            <a href="https://www.patheos.com/blogs/keithgiles/2019/01/love-is-a-person/#comments-section">
+                    <span class="dsq-postid" data-dsqidentifier="2572 https://admin.patheos.com/blogs/keithgiles/?p=2572">2 Comments</span>&nbsp;|&nbsp;Leave a Comment
+                </a>
+                    </div>
+    </div>
+
+
+						<div class="recent-comments">
+	
+	<div class="row">		<div class="col-sm-6 comment">	
+			<div>"Oh, I agree it is non-negotiable; but why is that so? That is what Keith ..."</div>
+			<a href="https://disqus.com/by/andreaflamefox/" class="by-line"><i class="glyphicon glyphicon-comment"></i> AndreaFlameFox</a>
+			<hr>
+			<a href="https://www.patheos.com/blogs/keithgiles/2023/08/what-if-god-isnt-love/#comment-6265915061" class="post-title">What If God Isn’t Love?</a>		
+		</div>    
+	    
+			<div class="col-sm-6 comment">	
+			<div>"In 2nd John 9. he who abides in the teaching, he has both the Father ..."</div>
+			<a href="https://disqus.com/by/d_m_s/" class="by-line"><i class="glyphicon glyphicon-comment"></i> D.M.S.</a>
+			<hr>
+			<a href="https://www.patheos.com/blogs/keithgiles/2019/11/7-things-christians-need-to-know-about-hell/#comment-6265880974" class="post-title">7 Things Every Christian Needs To ..."</a>		
+		</div>    
+	</div>    
+	<div class="row">		<div class="col-sm-6 comment">	
+			<div>"Recognizes woke?"</div>
+			<a href="https://disqus.com/by/d_m_s/" class="by-line"><i class="glyphicon glyphicon-comment"></i> D.M.S.</a>
+			<hr>
+			<a href="https://www.patheos.com/blogs/keithgiles/2019/11/7-things-christians-need-to-know-about-hell/#comment-6265879456" class="post-title">7 Things Every Christian Needs To ..."</a>		
+		</div>    
+	    
+			<div class="col-sm-6 comment">	
+			<div>"First, the word hell does not occur in the original language texts. Lake of fire, ..."</div>
+			<a href="https://disqus.com/by/disqus_G82YS1lSpE/" class="by-line"><i class="glyphicon glyphicon-comment"></i> an old scribe</a>
+			<hr>
+			<a href="https://www.patheos.com/blogs/keithgiles/2019/11/7-things-christians-need-to-know-about-hell/#comment-6265682004" class="post-title">7 Things Every Christian Needs To ..."</a>		
+		</div>    
+	</div>    		
+</div>
+						<div class="">
+	<hr>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="section-title lined-title text-center type-color-prime-1"><span>Browse Our Archives</span></div>
+			<div class="col-sm-3"></div>
+		</div>
+		
+		<div class="row">
+            <div class="col-sm-6 add-padding clearfix less-spacing">
+                <select name="cat" class="col-xs-12 type-color-prime-1 browse-archives" onChange="document.location.href=this.options[this.selectedIndex].value;">
+                    <option selected disabled>Select a Category</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=396">Art</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=14">Biblicism</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=3">Christian Politics</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=260">Cosmic Christ</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=408">Deconstruction</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=399">Discipleship</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=42">Dispensationalism</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=13">Ekklesia</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=414">End Time Stuff</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=101">Eschatology</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=133">Evergreen</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=4">Following Jesus</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=16">Gender</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=11">General Christian Topics</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=419">Gnostics</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=87">God's Love</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=402">Gospel of the Kingdom</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=424">Gospel of Thomas</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=62">Hell</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=426">Historical Jesus</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=420">Inner Circle</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=393">Islam</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=94">LGBTQ Issues</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=18">Marriage</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=412">Mental/Emotional Health</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=416">Non-Duality</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=507">Politics</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=512">Poverty</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=10">Preemptive Love</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=162">Prophecy</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=404">Racism</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=411">Reconstruction</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=17">Sex</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=504">Technology</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=12">Theology</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=1">Uncategorized</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles?cat=403">Universalism</option>
+                                    </select>
+            </div>
+            
+            <div class="col-sm-6 add-padding clearfix less-spacing">
+                <select class="col-xs-12 type-color-prime-1 browse-archives" onChange="document.location.href=this.options[this.selectedIndex].value;">
+                    <option selected disabled>Select a Month</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/08/">August 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/07/">July 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/06/">June 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/05/">May 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/04/">April 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/03/">March 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/02/">February 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2023/01/">January 2023</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/12/">December 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/11/">November 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/10/">October 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/09/">September 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/08/">August 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/07/">July 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/06/">June 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/05/">May 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/04/">April 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/03/">March 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/02/">February 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2022/01/">January 2022</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/12/">December 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/11/">November 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/10/">October 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/09/">September 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/08/">August 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/07/">July 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/06/">June 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/05/">May 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/04/">April 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/03/">March 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/02/">February 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2021/01/">January 2021</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/12/">December 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/11/">November 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/10/">October 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/09/">September 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/08/">August 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/07/">July 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/06/">June 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/05/">May 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/04/">April 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/03/">March 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/02/">February 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2020/01/">January 2020</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/12/">December 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/11/">November 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/10/">October 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/09/">September 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/08/">August 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/07/">July 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/06/">June 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/05/">May 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/04/">April 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/03/">March 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/02/">February 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2019/01/">January 2019</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/12/">December 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/11/">November 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/10/">October 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/09/">September 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/08/">August 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/07/">July 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/06/">June 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/05/">May 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/04/">April 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/03/">March 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/02/">February 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2018/01/">January 2018</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2017/12/">December 2017</option>
+                                        <option value="https://www.patheos.com/blogs/keithgiles/2017/11/">November 2017</option>
+                                    </select>
+            </div>
+		</div>
+	<hr>		  
+</div>					</div>
+				</section>
+			</div>
+
+									<div class="col-sm-12 col-md-4 col-lg-3 flex-right-rail">
+				<div id="mtc-rail" class="mtc-rail"></div>
+				<div >
+					
+
+
+<div class="rail-nl-signup">
+<rad-newsletters-wordpress-simple
+    blog-name="Keith Giles"
+    channel-name="Progressive Christian"
+    blog-list-id="781"
+    channel-list-id="43"
+    source-desc="52"
+    :is-default-channel="false">
+
+</rad-newsletters-wordpress-simple>
+</div><div class="widget-wrap simple-follow add-top-margin add-bottom-margin">
+    <div class="title fc-preview-contextmenu">Follow Us!</div>
+    <div class="socialmedia-buttons">
+                <a href="https://www.facebook.com/keithagiles" rel="nofollow external" title="" class="ext-link" target="_blank"><img width="32" height="32" src="//media.patheos.com/~/media/patheos-images/images/components/social/facebook.png" alt="Follow Us on Facebook" title="Follow Us on Facebook" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a>
+                        <a href="https://twitter.com/keithgiles" rel="nofollow external" title="" class="ext-link" target="_blank"><img width="32" height="32" src="//media.patheos.com/~/media/patheos-images/images/components/social/twitter.png" alt="Follow Us on Twitter" title="Follow Us on Twitter" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a>
+                
+    </div>
+</div>
+<hr>
+    <form action="https://www.patheos.com/blogs/keithgiles" method="get">  
+        <div class="input-group">
+            <input type="text" name="s" class="form-control" placeholder="Search this blog...">
+            <span class="input-group-btn">
+                <input type="submit" value="Go!" class="btn btn-lg btn-prime-1" />
+            </span>
+        </div>
+    </form>
+<hr>
+<div class="related-content most-popular-container">
+	<div class="bold-section-title-smaller">
+		<span>OTHER</span> RELATED CONTENT
+	</div>
+	<div class="row col-sm-6 col-xs-12 col-md-12">
+	<div class="related-content clearfix most-pop">
+		<div class="frame">
+			<div class="circle">1</div>
+			<div class="image-container">                    	
+				<a href="https://www.patheos.com/blogs/rogerwolsey/2015/06/why-they-killed-jesus-2/"><img src="https://wp-media.patheos.com/blogs/sites/396/2015/06/11091217_1063126900383380_2131550567181689786_n-150x150.jpg" alt=""/></a>
+			</div>
+		</div>
+		<div class="title">
+			<a href="https://www.patheos.com/blogs/rogerwolsey/2015/06/why-they-killed-jesus-2/">Why they killed Jesus.</a>
+		</div>
+		<div class="by-line">
+			<a href="https://www.patheos.com/blogs/rogerwolsey/2015/06/why-they-killed-jesus-2/">The Holy Kiss</a>
+		</div>
+	</div>
+
+	
+	<div class="related-content clearfix most-pop">
+		<div class="frame">
+			<div class="circle">2</div>
+			<div class="image-container">                    	
+				<a href="https://www.patheos.com/blogs/slacktivist/2023/08/22/the-anointed-crime-pages/"><img src="https://wp-media.patheos.com/blogs/sites/52/2023/08/Dell-250x250.jpg" alt=""/></a>
+			</div>
+		</div>
+		<div class="title">
+			<a href="https://www.patheos.com/blogs/slacktivist/2023/08/22/the-anointed-crime-pages/">The Anointed Crime Pages</a>
+		</div>
+		<div class="by-line">
+			<a href="https://www.patheos.com/blogs/slacktivist/2023/08/22/the-anointed-crime-pages/">slacktivist</a>
+		</div>
+	</div>
+
+	</div><div class="row col-sm-6 col-xs-12 col-md-12">
+	<div class="related-content clearfix most-pop">
+		<div class="frame">
+			<div class="circle">3</div>
+			<div class="image-container">                    	
+				<a href="https://www.patheos.com/blogs/slacktivist/2023/08/25/the-whole-world-looks-upon-the-sight/"><img src="https://wp-media.patheos.com/blogs/sites/52/2023/08/Karens-250x250.jpg" alt=""/></a>
+			</div>
+		</div>
+		<div class="title">
+			<a href="https://www.patheos.com/blogs/slacktivist/2023/08/25/the-whole-world-looks-upon-the-sight/">The whole world looks upon the...</a>
+		</div>
+		<div class="by-line">
+			<a href="https://www.patheos.com/blogs/slacktivist/2023/08/25/the-whole-world-looks-upon-the-sight/">slacktivist</a>
+		</div>
+	</div>
+
+	
+	<div class="related-content clearfix most-pop">
+		<div class="frame">
+			<div class="circle">4</div>
+			<div class="image-container">                    	
+				<a href="https://www.patheos.com/blogs/rogerwolsey/2015/04/jesus-isisnt-the-only-way-they-cant-all-be-true-except-when-they-are/"><img src="https://wp-media.patheos.com/blogs/sites/396/2015/04/1464687_868410026565489_8439102014607224508_n-150x150.jpg" alt=""/></a>
+			</div>
+		</div>
+		<div class="title">
+			<a href="https://www.patheos.com/blogs/rogerwolsey/2015/04/jesus-isisnt-the-only-way-they-cant-all-be-true-except-when-they-are/">Jesus is/isn't the only way. -...</a>
+		</div>
+		<div class="by-line">
+			<a href="https://www.patheos.com/blogs/rogerwolsey/2015/04/jesus-isisnt-the-only-way-they-cant-all-be-true-except-when-they-are/">The Holy Kiss</a>
+		</div>
+	</div>
+
+	</div></div>
+        <aside id="secondary" class="sidebar widget-area" role="complementary">
+            <div class="widget-area">
+                <div class="related-content clearfix decorated add-padding">
+    <div class="bold-section-title">
+        <span>Books by This Author</span> Books by Keith Giles    </div>
+
+    <!-- START Carousel -->
+    <rad-carousel-book :number-of-slides="3">
+                        <rad-carousel-book-card 
+                    book-title="Jesus Undefeated: Condemning the False Doctrine of Eternal Torment"
+                    book-image="https://wp-media.patheos.com/blogs/sites/833/2020/04/FINAL-JESUS-UNDEFEATED-COVER.png"
+                    book-url="https://www.amazon.com/dp/B07ZHP2T6G/ref=cm_sw_em_r_mt_dp_U_yqgLEbAH7KVN6">
+                </rad-carousel-book-card>
+                            <rad-carousel-book-card 
+                    book-title="Jesus Untangled: Crucifying Our Politics to Pledge Allegiance to the Lamb "
+                    book-image="https://wp-media.patheos.com/blogs/keithgiles/files/2017/11/Jesus-Untangled.jpg"
+                    book-url="http://a.co/3gdfQLn">
+                </rad-carousel-book-card>
+                            <rad-carousel-book-card 
+                    book-title="Jesus Unbound: Liberating the Word of God from the Bible"
+                    book-image="https://wp-media.patheos.com/blogs/sites/833/2019/01/jesus-unbound.jpg"
+                    book-url="https://www.amazon.com/Jesus-Unbound-Liberating-Word-Bible/dp/1938480325/ref=pd_bxgy_14_2?_encoding=UTF8&pd_rd_i=1938480325&pd_rd_r=3d874a70-233b-11e9-b04a-3f2a1e218ea4&pd_rd_w=p9dcO&pd_rd_wg=BskEf&pf_rd_p=6725dbd6-9917-451d-beba-16af7874e407&pf_rd_r=32Q8FK9EH0RFKY5AXT8M&psc=1&refRID=32Q8FK9EH0RFKY5AXT8M">
+                </rad-carousel-book-card>
+                </rad-carousel-book>
+            <div>
+            <div class="pull-right add-top-margin">
+                <a href="https://www.patheos.com/blogs/keithgiles/publications/">See All Titles »</a>
+            </div>
+        </div>
+            
+</div>            </div>
+        </aside>
+    				</div>
+			</div>
+					</div>
+	</div>
+
+<!-- MOBILE AD -->
+<div class="col-xs-12 visible-xs-block">
+	</div>
+
+<!-- RELATED CONTENT -->
+<div class="row buffer-top">
+	<section>
+	<div class="bold-section-title clearfix">
+		<span>Related posts from</span> Keith Giles	</div>
+    <div class="clearfix">	
+                <div class="col-xs-6 col-sm-3">
+            <div class="related-content clearfix default">
+                <div class="image-container four-three">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/08/what-if-god-isnt-love/"><img src="https://wp-media.patheos.com/blogs/sites/833/2023/08/IS-GOD-LOVE-350x350.jpg" alt=""></a>
+                </div>
+                <div class="tag-decorated">
+                    <a href="https://www.patheos.com/Columns#PROGRESSIVECHRISTIAN">Progressive Christian</a>
+                </div>
+                <div class="title">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/08/what-if-god-isnt-love/">What If God Isn't Love?</a>
+                </div>
+                <div class="decorated-divider"></div>
+                <div class="by-line">
+                    <a href="https://www.patheos.com/blogs/keithgiles">Keith Giles</a>
+                </div>
+            </div>
+        </div>
+                    <div class="col-xs-6 col-sm-3">
+            <div class="related-content clearfix default">
+                <div class="image-container four-three">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/08/why-jacob-is-a-metaphor-for-the-religious-mind/"><img src="https://wp-media.patheos.com/blogs/sites/833/2023/08/HAMSTER-WHEEL-350x350.png" alt=""></a>
+                </div>
+                <div class="tag-decorated">
+                    <a href="https://www.patheos.com/Columns#PROGRESSIVECHRISTIAN">Progressive Christian</a>
+                </div>
+                <div class="title">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/08/why-jacob-is-a-metaphor-for-the-religious-mind/">Why Jacob Is A Metaphor For The Religious...</a>
+                </div>
+                <div class="decorated-divider"></div>
+                <div class="by-line">
+                    <a href="https://www.patheos.com/blogs/keithgiles">Keith Giles</a>
+                </div>
+            </div>
+        </div>
+                    <div class="col-xs-6 col-sm-3">
+            <div class="related-content clearfix default">
+                <div class="image-container four-three">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/08/why-american-christians-cant-solve-child-trafficking-overseas/"><img src="https://wp-media.patheos.com/blogs/sites/833/2023/08/pexels-arvind-shakya-796557-350x350.jpg" alt=""></a>
+                </div>
+                <div class="tag-decorated">
+                    <a href="https://www.patheos.com/Columns#PROGRESSIVECHRISTIAN">Progressive Christian</a>
+                </div>
+                <div class="title">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/08/why-american-christians-cant-solve-child-trafficking-overseas/">Why American Christians Can't Solve Child Trafficking Overseas</a>
+                </div>
+                <div class="decorated-divider"></div>
+                <div class="by-line">
+                    <a href="https://www.patheos.com/blogs/keithgiles">Keith Giles</a>
+                </div>
+            </div>
+        </div>
+                    <div class="col-xs-6 col-sm-3">
+            <div class="related-content clearfix default">
+                <div class="image-container four-three">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/07/why-the-world-and-the-church-rejects-the-message-of-jesus/"><img src="https://wp-media.patheos.com/blogs/sites/833/2023/07/pexels-nifeysi-12922662-350x350.jpg" alt=""></a>
+                </div>
+                <div class="tag-decorated">
+                    <a href="https://www.patheos.com/Columns#PROGRESSIVECHRISTIAN">Progressive Christian</a>
+                </div>
+                <div class="title">
+                    <a href="https://www.patheos.com/blogs/keithgiles/2023/07/why-the-world-and-the-church-rejects-the-message-of-jesus/">Why The World, and the Church, Rejects The...</a>
+                </div>
+                <div class="decorated-divider"></div>
+                <div class="by-line">
+                    <a href="https://www.patheos.com/blogs/keithgiles">Keith Giles</a>
+                </div>
+            </div>
+        </div>
+                </div>
+</section></div>
+
+<!-- MOBILE AD -->
+<div class="row visible-xs-block">
+	</div>
+
+<!-- TRENDING POSTS (Test with Comments) -->
+<div class="row">
+	<div class="col-sm-2 hidden-xs">
+			</div>
+	<div class="col-xs-12 col-md-10">
+		<section>
+			<div class="row">
+    <div class="section-title decorated">TRENDING AT  PATHEOS Progressive Christian</div>
+</div>
+
+    
+<div class="row">
+    <div class="col-sm-6">
+        <div class="related-content related-content-md">
+            <div class="image-container"><a href="https://www.patheos.com/blogs/freelancechristianity/asking-the-right-question-2/"><img src="https://wp-media.patheos.com/blogs/sites/766/2017/08/Ruane-new-150x150.jpg" alt=""></a></div>
+            <div class="title"><a href="https://www.patheos.com/blogs/freelancechristianity/asking-the-right-question-2/">Asking the Right Question</a></div>
+            <div class="decorated-divider"></div>
+            <div><a href="https://www.patheos.com/blogs/freelancechristianity/asking-the-right-question-2/" class="no-effect">Several years ago during my four-year stint as chair of the Providence...</a></div>
+        </div>
+    </div>
+
+
+        
+
+    <div class="col-sm-6">
+        <div class="related-content related-content-md">
+            <div class="image-container"><a href="https://www.patheos.com/blogs/snarkyfaith/2023/08/the-uncharted-intersection-of-viktor-frankl-and-dietrich-bonhoeffer-a-guide-to-meaningful-community-living/"><img src="https://wp-media.patheos.com/blogs/sites/1907/2023/08/BNF-1-150x150.jpg" alt=""></a></div>
+            <div class="title"><a href="https://www.patheos.com/blogs/snarkyfaith/2023/08/the-uncharted-intersection-of-viktor-frankl-and-dietrich-bonhoeffer-a-guide-to-meaningful-community-living/">The Uncharted Intersection of Viktor Frankl and Dietrich...</a></div>
+            <div class="decorated-divider"></div>
+            <div><a href="https://www.patheos.com/blogs/snarkyfaith/2023/08/the-uncharted-intersection-of-viktor-frankl-and-dietrich-bonhoeffer-a-guide-to-meaningful-community-living/" class="no-effect">In a world increasingly fractured by ideological divides and existential crises, the...</a></div>
+        </div>
+    </div>
+
+</div>
+        
+<div class="row">
+    <div class="col-sm-6">
+        <div class="related-content related-content-md">
+            <div class="image-container"><a href="https://www.patheos.com/blogs/gloriouslife/2023/08/contemplating-a-great-blue-heron/"><img src="https://wp-media.patheos.com/blogs/sites/1304/2020/04/100_0149-2-150x150.jpg" alt=""></a></div>
+            <div class="title"><a href="https://www.patheos.com/blogs/gloriouslife/2023/08/contemplating-a-great-blue-heron/">Contemplating A Great Blue Heron</a></div>
+            <div class="decorated-divider"></div>
+            <div><a href="https://www.patheos.com/blogs/gloriouslife/2023/08/contemplating-a-great-blue-heron/" class="no-effect">A lot of my early ministry was filled with either/or thinking. The...</a></div>
+        </div>
+    </div>
+
+
+        
+
+    <div class="col-sm-6">
+        <div class="related-content related-content-md">
+            <div class="image-container"><a href="https://www.patheos.com/blogs/slacktivist/2023/08/28/recent-reads/"><img src="https://wp-media.patheos.com/blogs/sites/52/2023/08/RecentReads-150x150.jpg" alt=""></a></div>
+            <div class="title"><a href="https://www.patheos.com/blogs/slacktivist/2023/08/28/recent-reads/">Recent reads</a></div>
+            <div class="decorated-divider"></div>
+            <div><a href="https://www.patheos.com/blogs/slacktivist/2023/08/28/recent-reads/" class="no-effect">I read these things. And now I am sharing them with you...</a></div>
+        </div>
+    </div>
+
+</div>
+        
+<div class="row">
+    <div class="col-sm-6">
+        <div class="related-content related-content-md">
+            <div class="image-container"><a href="https://www.patheos.com/blogs/womantowoman/2023/08/isaac-ishmael-jacob-esau-rachel-leah-can-tell-us-about-family-conflicts-in-the-bible/"><img src="https://wp-media.patheos.com/blogs/sites/1491/2023/08/old-testament-519668_1280-150x150.jpg" alt=""></a></div>
+            <div class="title"><a href="https://www.patheos.com/blogs/womantowoman/2023/08/isaac-ishmael-jacob-esau-rachel-leah-can-tell-us-about-family-conflicts-in-the-bible/">Isaac-Ishmael, Jacob-Esau & Rachel-Leah Can Tell Us about...</a></div>
+            <div class="decorated-divider"></div>
+            <div><a href="https://www.patheos.com/blogs/womantowoman/2023/08/isaac-ishmael-jacob-esau-rachel-leah-can-tell-us-about-family-conflicts-in-the-bible/" class="no-effect">A Triangle of Biblical Proportions, Murderous Intentions &amp; A Tangled Tale of...</a></div>
+        </div>
+    </div>
+
+
+        
+
+    <div class="col-sm-6">
+        <div class="related-content related-content-md">
+            <div class="image-container"><a href="https://www.patheos.com/blogs/kermitzarleyblog/2023/08/viktor-hovland-wins-tour-championship-and-fedexcup/"><img src="https://wp-media.patheos.com/blogs/sites/347/2023/08/VictorHovland-150x150.jpg" alt=""></a></div>
+            <div class="title"><a href="https://www.patheos.com/blogs/kermitzarleyblog/2023/08/viktor-hovland-wins-tour-championship-and-fedexcup/">Viktor Hovland Wins Tour Championship and FedExCup</a></div>
+            <div class="decorated-divider"></div>
+            <div><a href="https://www.patheos.com/blogs/kermitzarleyblog/2023/08/viktor-hovland-wins-tour-championship-and-fedexcup/" class="no-effect">Twenty-five year old Viktor Hovland of Norway dominated the PGA Tour's season-ending...</a></div>
+        </div>
+    </div>
+
+</div>
+            <div class="row col-sm-12">
+        <a href="https://www.patheos.com/Columns#PROGRESSIVECHRISTIAN" class="btn btn-sm btn-prime-2">view all Progressive Christian blogs</a>
+    </div>
+		</section>
+
+		<!-- COMMENTS -->
+						<div class="buffer-top">
+					<div class="bold-section-title">
+						What Are Your Thoughts?<span>leave a comment</span>
+					</div>
+					<section class="buffer-top" id="comments-section">
+						
+<div id="disqus_thread"></div>
+					</section>
+				</div>
+			 
+	</div>
+</div>
+
+
+	<div class="row">
+		<div id="mtc-footer"></div>
+	</div>
+
+<div class="row">
+	</div>
+
+	</div><!-- END WHITE SOLID -->
+	
+</div><!-- END THEME -->
+
+ 
+        <script type="text/javascript">
+            window.bnm = window.bnm || {};
+            window.bnm.performance = window.bnm.performance || {};
+            window.bnm.performance.domReady = new Date();
+        </script>
+    
+
+<div id="site-footer-2022">
+    <div class="container">
+
+
+        <div class="extras-block mobile">
+
+            <div class="footer-social-icons">
+                <a href="https://www.facebook.com/Patheos/"><img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/Patheos-Facebook-Icon.svg" alt="Patheos on Facebook" class="icon"></a>
+                <a href="https://www.youtube.com/channel/UC5u2f85lX38wm6NEne5pXFw"><img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/Patheos-YouTube-Icon.svg" alt="Patheos on YouTube" class="icon"></a>
+            </div>
+
+            <rad-admiral-login anchor-class="ad-free-login">
+                <img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/profile-icon.svg" alt="" width="29" height="29">Ad-Free &amp; Subscriber Log-In
+            </rad-admiral-login>
+            <a href="mailto:support@getadmiral.com?subject=Patheos Subscription Support" class="subscription-support">Subscription Support</a>
+        </div>
+
+
+
+        
+<div class="footer-nav-links">
+
+    <ul>
+        <li><a class="dropdown-Item" href="https://www.patheos.com/about-patheos">About Us</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/editorial/videos">Videos</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/editorial/podcasts">Podcasts</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/library">Library of World Religions</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/about-patheos/advertising">Advertise With Us</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/write-for-us">Write for Us</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/privacy-policy">Privacy Policy</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/terms-of-use">Terms of Service</a></li><li><a class="dropdown-Item" href="https://privacyportal.cookiepro.com/webform/8becd7f7-c923-4cd4-814a-e08c34baf60b/draft/f9dd159d-d007-43b0-a267-2b05605a52c3">Do Not Sell My Data</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/about-patheos">Contact Us</a></li><li><a class="dropdown-Item" href="https://www.radiantdigital.com/">Radiant</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/subscribe/preference-center">Manage Newsletter Subscriptions</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/push-notifications">Unsubscribe From Notifications</a></li><li><a class="dropdown-Item" href="https://www.patheos.com/sitemaps">Sitemap</a></li>
+    </ul>
+
+</div>
+
+
+
+        <div class="logo-block">
+            <div class="footer-logo"></div>
+            Copyright 2008-2022, Patheos. All rights reserved.
+        </div>
+
+
+
+
+        <div class="extras-block">
+            <a href="mailto:support@getadmiral.com?subject=Patheos Subscription Support" class="subscription-support">Subscription Support</a>
+
+            <rad-admiral-login anchor-class="ad-free-login">
+                <img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/profile-icon.svg" alt="" width="29" height="29">Ad-Free &amp; Subscriber Log-In
+            </rad-admiral-login>
+
+            <div class="footer-social-icons">
+                <span>Follow Patheos</span>
+                <a href="https://www.facebook.com/Patheos/"><img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/Patheos-Facebook-Icon.svg" alt="Patheos on Facebook" class="icon"></a>
+                <a href="https://www.youtube.com/channel/UC5u2f85lX38wm6NEne5pXFw"><img src="https://media.patheos.com/~/media/patheos-images/images/components/icons/Patheos-YouTube-Icon.svg" alt="Patheos on YouTube" class="icon"></a>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+	<!-- Font Imports -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700|Open+Sans+Condensed:300,700|Vollkorn:400,400i,700,700i&display=optional" crossorigin />
+	<!-- End Font Imports -->
+	<!-- Begin Load JavaScript -->    
+	<script type="text/javascript">
+    bnm = bnm || {};
+    bnm.ready = bnm.ready || false;
+    
+    if(bnm.ready === false) {
+        // Set value to true
+        bnm.ready = true;
+        
+        // Create the event
+        var event = new CustomEvent("patheos.documentready");
+
+        // Dispatch/Trigger/Fire the event
+        document.dispatchEvent(event);
+    }
+</script>	<!-- End Load JavaScript -->
+    
+            <script type="text/javascript">
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1510929182549648');
+            fbq('track', 'PageView', { fbc: '', fbp: ''}, { eventID: '64edc4d44198c' });
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1510929182549648&ev=PageView&eid=64edc4d44198c&ud[fbp]=&ud[fbc]=&noscript=1" />
+        </noscript>
+        <script type="text/javascript">
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("POST", "https://www.patheos.com/ptapi/pageload/event", true);
+            xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xmlHttp.send(JSON.stringify({ "Referer": window.location.href, "EventID": "64edc4d44198c" }));
+        </script>
+            <link rel="preload" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/css/main.min.css?v=85288c7cec923686c61baa6d33b9ba38" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/css/main.min.css?v=85288c7cec923686c61baa6d33b9ba38"></noscript>
+        <link rel="stylesheet" href="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/css/fontawesome.min.css" as="style">
+    <link rel='stylesheet' id='popular-posts-css-css'  href='https://www.patheos.com/blogs/keithgiles/wp-content/plugins/patheos-info/assets/css/popular-posts.css?ver=5.8' type='text/css' media='all' />
+<script type='text/javascript' id='disqus_count-js-extra'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"keithgiles"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.patheos.com/blogs/keithgiles/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.17' id='disqus_count-js'></script>
+<script type='text/javascript' id='disqus_embed-js-extra'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.17"},"disqusIdentifier":"2572 https:\/\/admin.patheos.com\/blogs\/keithgiles\/?p=2572","disqusShortname":"keithgiles","disqusTitle":"Love Is A Person","disqusUrl":"https:\/\/www.patheos.com\/blogs\/keithgiles\/2019\/01\/love-is-a-person\/","postId":"2572"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.patheos.com/blogs/keithgiles/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.0.17' id='disqus_embed-js'></script>
+<script type='text/javascript' src='https://www.patheos.com/blogs/keithgiles/wp-includes/js/wp-embed.min.js?ver=5.8' id='wp-embed-js'></script>
+
+	<script type="module" src="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/app/dist/js/chunk-vendors.769fe3d9.js"></script>
+	<script type="module" src="https://www.patheos.com/blogs/wp-content/themes/Patheos%20TwentySeventeen/assets/app/dist/js/app.f5a30458.js"></script>
+	<script>
+		! function() {
+			var e = document,
+				t = e.createElement("script");
+			if (!("noModule" in t) && "onbeforeload" in t) {
+				var n = !1;
+				e.addEventListener("beforeload", function(e) {
+					if (e.target === t) n = !0;
+					else if (!e.target.hasAttribute("nomodule") || !n) return;
+					e.preventDefault()
+				}, !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove()
+			}
+		}();
+	</script>
+	<script src="" nomodule></script>
+	<script src="" nomodule></script>
+        <script type='text/javascript'>
+            window.rad = window.rad || {}; 
+            window.rad.ads = window.rad.ads || {};
+            window.rad.ads.preload = {"pageConfig":{"hierarchy":"\/29966721\/PATH\/progressive-christian\/keithgiles","tags":null,"contentid":"833X572","title":"Love Is A Person","type":"other","channel":"Progressive Christian","audience":[],"ministry":null,"political":"","category":"","disabled":false,"enableHeaderBidding":true,"enableAdmiral":true,"enableOptimera":true,"admiralAdFreeOfferIds":["5d3f6796da6fa95e8589a652","5e45c46f0cb01b0d8a4a3a1a","5d3f66970cb01b379f35f8df","5e45c42d5c443b73b53cc7a5","623b4296cf541f46827b865d"],"cookieConsentDomainId":"3f93598f-6412-4eae-a452-60ccd114b1eb","creativeConfigInsertLocationIds":["writer-theme-logo","patheos-main-nav"],"creativeConfigNavId":"patheos-main-nav","creativeConfigEnableScrollingNav":false,"analyticsTrackingId":"UA-6605286-6","customTargeting":[{"key":"p_channel","value":"Progressive Christian"},{"key":"faiths","value":[]},{"key":"topics","value":[]}],"prebidAdapters":{"pubmatic":{"publisherId":"159758","pubmaticAdSlots":[{"id":"3214316","size":[300,250],"mobile":false},{"id":"3214317","size":[728,90],"mobile":false},{"id":"3214318","size":[300,600],"mobile":false},{"id":"3214319","size":[970,250],"mobile":false},{"id":"3214320","size":[300,100],"mobile":true},{"id":"3214321","size":[320,50],"mobile":true},{"id":"3214322","size":[300,250],"mobile":true}]},"appnexus":{"placementId":26373425,"adSizes":[[970,250],[300,600],[300,250],[320,50],[160,600],[728,90],[300,100],[468,60]]},"rubicon":{"accountId":24710,"siteId":432530,"zoneId":2474518}},"ipApiKey":"oQJeoTOiJjO6efS"}};
+        </script>
+        <script id="parsely-cfg" src="//cdn.parsely.com/keys/patheos.com/p.js" async></script>
+    
+    </body>
+</html>

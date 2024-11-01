@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: XamarinStudio
+# contributor: Toptal & contributors
+# key: xamarinstudio
+# --
+
+### XamarinStudio ###
+
+bin/
+obj/
+*.userprefs
+.packages

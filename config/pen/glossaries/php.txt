@@ -1,0 +1,43 @@
+closure
+    function ($quantity) use ($tax, &$total) { .. };
+
+Xdebug
+    [PHP extension]
+
+    Provides debugging and profiling
+    capabilities.
+    
+    It uses the DBGp debugging protocol.
+
+function traces
+    [#Xdebug]
+
+    Xdebug allows you to log all function
+    calls, including parameters and return
+    values to a file in different formats.
+    
+    Those so-called "function traces" can be a
+    help for when you are new to an
+    application or when you are trying to
+    figure out what exactly is going on when
+    your application is running.
+
+    boolean xdebug.auto_trace = false
+
+    When this setting is set to on, the
+    tracing of function calls will be enabled
+    just before the script is run.
+    
+    This makes it possible to trace code in
+    the auto_prepend_file.
+
+opcode cache
+    A system to cache the result of the PHP
+    code compilation to bytecode.
+    
+    This allows to use the bytecode instead of
+    compiling on every request.
+    
+    Different opcode cache systems are
+    available, mostly depending on used PHP
+    version.

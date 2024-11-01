@@ -1,0 +1,5 @@
+cd //;  "unison" "/root/.emacs.d/elpa-full" "/root/.pen/elpa-full" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unison" "/root/.emacs.d/elpa-full" "/root/.pen/elpa-full" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unison" "-batch=true" "/root/.emacs.d/elpa-full" "/root/.pen/elpa-full" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unison" "-batch=true" "/root/.emacs.d/elpa-full" "/root/.pen/elpa-full" "#" "<==" "sync-elpa-to-ho"
+cd /root/.emacs.d/host/pen.el/scripts;  "unison" "-batch=true" "/root/.emacs.d/elpa-full" "/root/.pen/elpa-full" "#" "<==" "bash"

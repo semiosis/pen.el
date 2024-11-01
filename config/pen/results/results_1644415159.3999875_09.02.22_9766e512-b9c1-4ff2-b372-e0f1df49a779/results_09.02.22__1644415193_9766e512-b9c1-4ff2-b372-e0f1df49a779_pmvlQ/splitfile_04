@@ -1,0 +1,4 @@
+, with is completed as the user types.
+# Wait until the user presses enter before proceeding.
+# TODO Wait for the person to say their name.
+# TODO Send a message to the moderator in the channel to give the list

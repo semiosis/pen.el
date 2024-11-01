@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-17 Mon 16:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>cplint learning Day 1</title>
+<meta name="author" content="Fani" />
+<meta name="keywords" content="cplint prolog" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">cplint learning Day 1</h1>
+
+<div id="outline-container-org09546e4" class="outline-2">
+<h2 id="org09546e4"><span class="section-number-2">1.</span> Installation</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org31eb6bf" class="outline-3">
+<h3 id="org31eb6bf"><span class="section-number-3">1.1.</span> 1) Install SWI prolog</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<a href="https://www.swi-prolog.org/download/stable">https://www.swi-prolog.org/download/stable</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org113673c" class="outline-3">
+<h3 id="org113673c"><span class="section-number-3">1.2.</span> 2) Install cplint</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+It is explained here:
+</p>
+<ul class="org-ul">
+<li><a href="http://friguzzi.github.io/cplint/_build/html/index.html">http://friguzzi.github.io/cplint/_build/html/index.html</a></li>
+</ul>
+
+<p>
+I also had to make sure this runs, after installing cplint.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr">1: </span>pack_rebuild(bddem).
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbcf62de" class="outline-2">
+<h2 id="orgbcf62de"><span class="section-number-2">2.</span> cplint Documentation</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<a href="http://friguzzi.github.io/cplint/_build/html/index.html">http://friguzzi.github.io/cplint/_build/html/index.html</a>
+</p>
+
+<p>
+It looks like it's possible to use R with cplint:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr"> 1: </span>Using R¶
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span>You have to load library cplint_r (a SWI-Prolog pack) with
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span>:- use_module(library(cplint_r)).
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span>Then you can use predicates
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>bar_r/1
+<span class="linenr">10: </span>bar_r/2
+<span class="linenr">11: </span>argbar_r/1
+<span class="linenr">12: </span>
+<span class="linenr">13: </span>that work as their C3.js counterpart but do not return the graph as an
+<span class="linenr">14: </span>argument as the graph is printed with a different mechanism.
+<span class="linenr">15: </span>
+<span class="linenr">16: </span>You also have
+<span class="linenr">17: </span>
+<span class="linenr">18: </span>histogram_r(+List:list,+Options:list) is det
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgad3524f" class="outline-2">
+<h2 id="orgad3524f"><span class="section-number-2">3.</span> Learning:</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<a href="https://www.youtube.com/watch?v=SykxWpFwMGs&amp;pp=ygUSZGVyZWsgYmFuYXMgcHJvbG9n">youtube.com: Prolog Tutorial</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-prolog"><span class="linenr">  1: </span>% Prolog programs are a collection of Facts, and Rules that we can
+<span class="linenr">  2: </span>% Query.
+<span class="linenr">  3: </span>
+<span class="linenr">  4: </span>% Prolog focuses on describing facts and relationships about problems
+<span class="linenr">  5: </span>% rather then on creating a series of steps to solve that problem.
+<span class="linenr">  6: </span>
+<span class="linenr">  7: </span>% These Facts and Rules are stored in a file called a Database
+<span class="linenr">  8: </span>% or Knowledge Base
+<span class="linenr">  9: </span>
+<span class="linenr"> 10: </span>% You load a knowledge base like this [knowledge]. or this
+<span class="linenr"> 11: </span>% consult('knowledge.pl').
+<span class="linenr"> 12: </span>% halt. exits the prolog system
+<span class="linenr"> 13: </span>% listing. Displays the contents of the database
+<span class="linenr"> 14: </span>% All these commands are called predicates
+<span class="linenr"> 15: </span>
+<span class="linenr"> 16: </span>% ---------- INTRODUCTION ----------
+<span class="linenr"> 17: </span>% write prints text between quotes to the screen
+<span class="linenr"> 18: </span>% nl stands for new line and \'s allows you to use quotes
+<span class="linenr"> 19: </span>% write('Hello World'),nl,write('Let\'s Program').
+<span class="linenr"> 20: </span>
+<span class="linenr"> 21: </span>% This is a fact where loves is a predicate and romeo and
+<span class="linenr"> 22: </span>% juliet are atoms (constants) and loves arguments
+<span class="linenr"> 23: </span>loves(romeo, juliet).
+<span class="linenr"> 24: </span>
+<span class="linenr"> 25: </span>% This is a rule where :- (if) says if the item on the right is
+<span class="linenr"> 26: </span>% true, then so is the item on the left
+<span class="linenr"> 27: </span>loves(juliet, romeo) :- loves(romeo, juliet).
+<span class="linenr"> 28: </span>
+<span class="linenr"> 29: </span>% Evaluating whether the goal was met in the terminal
+<span class="linenr"> 30: </span>% loves(juliet, romeo). = yes
+<span class="linenr"> 31: </span>
+<span class="linenr"> 32: </span>% Facts and Rules are called clauses
+<span class="linenr"> 33: </span>
+<span class="linenr"> 34: </span>% A Variable is an object we can't name at the time of execution
+<span class="linenr"> 35: </span>% Variables are uppercase while atoms are lowercase
+<span class="linenr"> 36: </span>% loves(romeo, X). = X = juliet
+<span class="linenr"> 37: </span>
+<span class="linenr"> 38: </span>% ---------- FACTS ----------
+<span class="linenr"> 39: </span>% Write the relationship first followed by the objects between
+<span class="linenr"> 40: </span>% parenthese followed by a dot
+<span class="linenr"> 41: </span>
+<span class="linenr"> 42: </span>% albert, male, female are atom constants that must begin with a
+<span class="linenr"> 43: </span>% lowercase letter unless they are between single quotes
+<span class="linenr"> 44: </span>% An atom can contain letters, numbers, +, -, _, *, /, &lt;, &gt;, :, ., ~, &amp;
+<span class="linenr"> 45: </span>% AN ATOM CANNOT START WITH _
+<span class="linenr"> 46: </span>
+<span class="linenr"> 47: </span>% The name before parenthese is called the predicate
+<span class="linenr"> 48: </span>% The names in parenthese are called arguments
+<span class="linenr"> 49: </span>
+<span class="linenr"> 50: </span>% Let's define information about the people above
+<span class="linenr"> 51: </span>
+<span class="linenr"> 52: </span>male(albert).
+<span class="linenr"> 53: </span>male(bob).
+<span class="linenr"> 54: </span>male(bill).
+<span class="linenr"> 55: </span>male(carl).
+<span class="linenr"> 56: </span>male(charlie).
+<span class="linenr"> 57: </span>male(dan).
+<span class="linenr"> 58: </span>male(edward).
+<span class="linenr"> 59: </span>
+<span class="linenr"> 60: </span>female(alice).
+<span class="linenr"> 61: </span>female(betsy).
+<span class="linenr"> 62: </span>female(diana).
+<span class="linenr"> 63: </span>
+<span class="linenr"> 64: </span>% We can find out if alice is a woman with
+<span class="linenr"> 65: </span>% female(alice). = yes
+<span class="linenr"> 66: </span>% listing(male). = list all clauses defining the predicate male
+<span class="linenr"> 67: </span>% male(X), female(Y). = Show all combinations of male and female
+<span class="linenr"> 68: </span>
+<span class="linenr"> 69: </span>% ---------- RULES ----------
+<span class="linenr"> 70: </span>% Rules are used when you want to say that a fact depends on a group of facts
+<span class="linenr"> 71: </span>
+<span class="linenr"> 72: </span>% NOTE : You'll get the discontiguous predicate warning if you
+<span class="linenr"> 73: </span>% don't keep your predicates together
+<span class="linenr"> 74: </span>
+<span class="linenr"> 75: </span>happy(albert).
+<span class="linenr"> 76: </span>happy(alice).
+<span class="linenr"> 77: </span>happy(bob).
+<span class="linenr"> 78: </span>happy(bill).
+<span class="linenr"> 79: </span>with_albert(alice).
+<span class="linenr"> 80: </span>
+<span class="linenr"> 81: </span>% We can define the Fact that when Bob is happy he runs
+<span class="linenr"> 82: </span>% :- stands for if
+<span class="linenr"> 83: </span>runs(albert) :- happy(albert).
+<span class="linenr"> 84: </span>% runs(albert). = yes
+<span class="linenr"> 85: </span>
+<span class="linenr"> 86: </span>% We can check if 2 conditions are true by putting a comma (and)
+<span class="linenr"> 87: </span>% between questions (CONJUCTIONS)
+<span class="linenr"> 88: </span>dances(alice) :-
+<span class="linenr"> 89: </span>  happy(alice),
+<span class="linenr"> 90: </span>  with_albert(alice).
+<span class="linenr"> 91: </span>
+<span class="linenr"> 92: </span>% We can define predicates to keep commands brief
+<span class="linenr"> 93: </span>does_alice_dance :- dances(alice),
+<span class="linenr"> 94: </span>       write('When Alice is happy and with Albert she dances').
+<span class="linenr"> 95: </span>% Just type does_alice_dance. in the terminal
+<span class="linenr"> 96: </span>
+<span class="linenr"> 97: </span>% Both rules must be true to get a yes result
+<span class="linenr"> 98: </span>swims(bob) :-
+<span class="linenr"> 99: </span>  happy(bob),
+<span class="linenr">100: </span>  near_water(bob).
+<span class="linenr">101: </span>% swims(bob). = no
+<span class="linenr">102: </span>
+<span class="linenr">103: </span>% We can create 2 instances and if either comes back true the result
+<span class="linenr">104: </span>% will be yes
+<span class="linenr">105: </span>swims(bill) :-
+<span class="linenr">106: </span>  happy(bill).
+<span class="linenr">107: </span>
+<span class="linenr">108: </span>swims(bill) :-
+<span class="linenr">109: </span>  near_water(bill).
+<span class="linenr">110: </span>% swims(bill). = yes
+<span class="linenr">111: </span>
+<span class="linenr">112: </span>% ---------- VARIABLES ----------
+<span class="linenr">113: </span>% A variable is an object we are unable to name when writing a program.
+<span class="linenr">114: </span>% An instantiated variable is one that stands for an object.
+<span class="linenr">115: </span>% A variable begins with an uppercase letter or _ and can contain
+<span class="linenr">116: </span>% the same symbols as atoms.
+<span class="linenr">117: </span>% The same variable name used in 2 different questions represents 2
+<span class="linenr">118: </span>% completely different variables.
+<span class="linenr">119: </span>
+<span class="linenr">120: </span>% An uninstantiated variable can be used to search for any match.
+<span class="linenr">121: </span>
+<span class="linenr">122: </span>% Return all females (Type ; to cycle through them)
+<span class="linenr">123: </span>% female(X). X = alice X = betsy X = diana
+<span class="linenr">124: </span>
+<span class="linenr">125: </span>parent(albert, bob).
+<span class="linenr">126: </span>parent(albert, betsy).
+<span class="linenr">127: </span>parent(albert, bill).
+<span class="linenr">128: </span>
+<span class="linenr">129: </span>parent(alice, bob).
+<span class="linenr">130: </span>parent(alice, betsy).
+<span class="linenr">131: </span>parent(alice, bill).
+<span class="linenr">132: </span>
+<span class="linenr">133: </span>parent(bob, carl).
+<span class="linenr">134: </span>parent(bob, charlie).
+<span class="linenr">135: </span>
+<span class="linenr">136: </span>% When you are cycling through the results the no at the end signals
+<span class="linenr">137: </span>% that there are no more results
+<span class="linenr">138: </span>% parent(X, bob). X = albert, X = alice
+<span class="linenr">139: </span>
+<span class="linenr">140: </span>% parent(X, bob), dances(X). X = alice
+<span class="linenr">141: </span>
+<span class="linenr">142: </span>% Who is Bobs parent? Does he have parents?
+<span class="linenr">143: </span>% parent(Y, carl), parent(X, Y). = X = albert, Y = bob, X = alice
+<span class="linenr">144: </span>% Y = bob
+<span class="linenr">145: </span>
+<span class="linenr">146: </span>% Find Alberts grandchildren
+<span class="linenr">147: </span>% Is Albert a father? Does his children have any children?
+<span class="linenr">148: </span>% parent(albert, X), parent(X, Y). = X = bob, Y = carl, X = bob,
+<span class="linenr">149: </span>% Y = charlie
+<span class="linenr">150: </span>
+<span class="linenr">151: </span>% Use custom predicate for multiple results
+<span class="linenr">152: </span>get_grandchild :- parent(albert, X), parent(X, Y),
+<span class="linenr">153: </span>              write('Alberts grandchild is '),
+<span class="linenr">154: </span>              write(Y), nl.
+<span class="linenr">155: </span>
+<span class="linenr">156: </span>% Do Carl and Charlie share a parent
+<span class="linenr">157: </span>% Who is Carls parent? Is this same X a parent of Charlie
+<span class="linenr">158: </span>% parent(X, carl), parent(X, charlie). = X = bob
+<span class="linenr">159: </span>
+<span class="linenr">160: </span>% Use format to get the results
+<span class="linenr">161: </span>% ~w represents where to put each value in the list at the end
+<span class="linenr">162: </span>% ~n is a newline
+<span class="linenr">163: </span>% ~s is used to input strings
+<span class="linenr">164: </span>get_grandparent :- parent(X, carl),
+<span class="linenr">165: </span>                parent(X, charlie),
+<span class="linenr">166: </span>                format('~w ~s grandparent~n', [X, "is the"]).
+<span class="linenr">167: </span>
+<span class="linenr">168: </span>% Does Carl have an Uncle?
+<span class="linenr">169: </span>% Who is Carls parent? Who is Carls fathers brother?
+<span class="linenr">170: </span>brother(bob, bill).
+<span class="linenr">171: </span>% parent(X, carl), brother(X, Y). = X = bob, Y = bill
+<span class="linenr">172: </span>
+<span class="linenr">173: </span>% Demonstrate axioms and derived facts
+<span class="linenr">174: </span>% We can also use variables in the database
+<span class="linenr">175: </span>% If you get the singleton warning, that means you defined a variable
+<span class="linenr">176: </span>% that you didn't do anything with. (This is ok sometimes)
+<span class="linenr">177: </span>grand_parent(X, Y) :-
+<span class="linenr">178: </span>  parent(Z, X),
+<span class="linenr">179: </span>  parent(Y, Z).
+<span class="linenr">180: </span>% grand_parent(carl, A). = A = albert, A = alice
+<span class="linenr">181: </span>
+<span class="linenr">182: </span>% X blushes if X is human
+<span class="linenr">183: </span>blushes(X) :- human(X).
+<span class="linenr">184: </span>human(derek).
+<span class="linenr">185: </span>
+<span class="linenr">186: </span>% If we say one thing is true when somehing else is true, we can also
+<span class="linenr">187: </span>% find that match if we only assign one thing to be true here.
+<span class="linenr">188: </span>% blushes(derek). = yes
+<span class="linenr">189: </span>
+<span class="linenr">190: </span>% Another example on cause and effect
+<span class="linenr">191: </span>stabs(tybalt,mercutio,sword).
+<span class="linenr">192: </span>hates(romeo, X) :- stabs(X, mercutio, sword).
+<span class="linenr">193: </span>% hates(romeo, X). = X = tybalt
+<span class="linenr">194: </span>
+<span class="linenr">195: </span>% We can use _ (anonymous variable) if we won't use the variable
+<span class="linenr">196: </span>% more than once
+<span class="linenr">197: </span>% The value of an anonymous var is not output
+<span class="linenr">198: </span>% Check if any males exist in the database : male(_). = yes
+<span class="linenr">199: </span>
+<span class="linenr">200: </span>% ---------- WHERE IS IF? ----------
+<span class="linenr">201: </span>% You can use a type of case statement instead
+<span class="linenr">202: </span>
+<span class="linenr">203: </span>what_grade(5) :-
+<span class="linenr">204: </span>  write('Go to kindergarten').
+<span class="linenr">205: </span>what_grade(6) :-
+<span class="linenr">206: </span>  write('Go to first grade').
+<span class="linenr">207: </span>what_grade(Other) :-
+<span class="linenr">208: </span>  Grade is Other - 5,
+<span class="linenr">209: </span>  format('Go to grade ~w', [Grade]).
+<span class="linenr">210: </span>
+<span class="linenr">211: </span>% ---------- COMPLEX TERMS / STRUCTURES ----------
+<span class="linenr">212: </span>% A Structure is an object made up from many other objects (components)
+<span class="linenr">213: </span>% Structures allow us to add context about what an object is to avoid
+<span class="linenr">214: </span>% confusion. has(albert,olive) Does Albert have a pet named Olive?
+<span class="linenr">215: </span>% Does Albert have the food named Olive?
+<span class="linenr">216: </span>
+<span class="linenr">217: </span>% Structures have a functor followed by a list of arguments
+<span class="linenr">218: </span>% The number of arguments a Structure has is its arity
+<span class="linenr">219: </span>% female(alice). has an arity of one
+<span class="linenr">220: </span>
+<span class="linenr">221: </span>% Albert owns a pet cat named Olive
+<span class="linenr">222: </span>% This is a recursive definition
+<span class="linenr">223: </span>
+<span class="linenr">224: </span>owns(albert, pet(cat, olive)).
+<span class="linenr">225: </span>
+<span class="linenr">226: </span>% owns(albert, pet(cat, X)). : X = olive
+<span class="linenr">227: </span>
+<span class="linenr">228: </span>customer(tom, smith, 20.55).
+<span class="linenr">229: </span>customer(sally, smith, 120.55).
+<span class="linenr">230: </span>
+<span class="linenr">231: </span>% An anonymous variable is used when we don't want a value returned
+<span class="linenr">232: </span>% Is there a customer named sally and what is her balance
+<span class="linenr">233: </span>% customer(sally,_,Bal).
+<span class="linenr">234: </span>
+<span class="linenr">235: </span>% tab puts the defined number of spaces on the screen
+<span class="linenr">236: </span>% ~2f says we want a float with 2 decimals
+<span class="linenr">237: </span>get_cust_bal(FName, LName) :- customer(FName, LName, Bal),
+<span class="linenr">238: </span>  write(FName), tab(1),
+<span class="linenr">239: </span>  format('~w owes us $~2f ~n', [LName, Bal]).
+<span class="linenr">240: </span>
+<span class="linenr">241: </span>% Use a complex term to define what it means to be a vertical
+<span class="linenr">242: </span>% versus a horizontal line
+<span class="linenr">243: </span>vertical(line(point(X, Y), point(X, Y2))).
+<span class="linenr">244: </span>horizontal(line(point(X, Y), point(X2, Y))).
+<span class="linenr">245: </span>
+<span class="linenr">246: </span>% vertical(line(point(5, 10), point(5, 20))). = yes
+<span class="linenr">247: </span>% horizontal(line(point(10, 20), point(30, 20))).
+<span class="linenr">248: </span>
+<span class="linenr">249: </span>% We can also ask what the value of a point should be to be vertical
+<span class="linenr">250: </span>% vertical(line(point(5, 10), point(X, 20))). = X = 5
+<span class="linenr">251: </span>
+<span class="linenr">252: </span>% We could also ask for the X and Y points
+<span class="linenr">253: </span>% vertical(line(point(5, 10), X)). = X = point(5,_)
+<span class="linenr">254: </span>
+<span class="linenr">255: </span>% ---------- COMPARISON ----------
+<span class="linenr">256: </span>% alice = alice. = yes
+<span class="linenr">257: </span>% 'alice' = alice. = yes (Prolog considers these to be the same)
+<span class="linenr">258: </span>% \+ (alice = albert). = yes (How to check for not equal)
+<span class="linenr">259: </span>
+<span class="linenr">260: </span>% 3 &gt; 15. = no
+<span class="linenr">261: </span>% 3 &gt;= 15. = no
+<span class="linenr">262: </span>% 3 =&lt; 15. = yes
+<span class="linenr">263: </span>
+<span class="linenr">264: </span>% W = alice. = yes
+<span class="linenr">265: </span>% This says that we can assign the value of alice to W and not that
+<span class="linenr">266: </span>% W is equal to alice
+<span class="linenr">267: </span>
+<span class="linenr">268: </span>% Rand1 = Rand2. = yes
+<span class="linenr">269: </span>% This says that any variable can be assigned anything and one of
+<span class="linenr">270: </span>% those things is another variable
+<span class="linenr">271: </span>
+<span class="linenr">272: </span>% If variables can be matched up between 2 complex terms and the
+<span class="linenr">273: </span>% functors are equal then the complex terms are equal
+<span class="linenr">274: </span>% rich(money, X) = rich(Y, no_debt).
+<span class="linenr">275: </span>
+<span class="linenr">276: </span>% ---------- TRACE ----------
+<span class="linenr">277: </span>% Using trace we can see how Prolog evaluates queries one at a time
+<span class="linenr">278: </span>
+<span class="linenr">279: </span>warm_blooded(penguin).
+<span class="linenr">280: </span>warm_blooded(human).
+<span class="linenr">281: </span>
+<span class="linenr">282: </span>produce_milk(penguin).
+<span class="linenr">283: </span>produce_milk(human).
+<span class="linenr">284: </span>
+<span class="linenr">285: </span>have_feathers(penguin).
+<span class="linenr">286: </span>have_hair(human).
+<span class="linenr">287: </span>
+<span class="linenr">288: </span>mammal(X) :-
+<span class="linenr">289: </span>  warm_blooded(X),
+<span class="linenr">290: </span>  produce_milk(X),
+<span class="linenr">291: </span>  have_hair(X).
+<span class="linenr">292: </span>
+<span class="linenr">293: </span>
+<span class="linenr">294: </span>% trace.
+<span class="linenr">295: </span>% mammal(human).
+<span class="linenr">296: </span>%       1    1  Call: mammal(human) ?
+<span class="linenr">297: </span>%       2    2  Call: warm_blooded(human) ?
+<span class="linenr">298: </span>%       2    2  Exit: warm_blooded(human) ?
+<span class="linenr">299: </span>%       3    2  Call: produce_milk(human) ?
+<span class="linenr">300: </span>%       3    2  Exit: produce_milk(human) ?
+<span class="linenr">301: </span>%       4    2  Call: have_hair(human) ?
+<span class="linenr">302: </span>%       4    2  Exit: have_hair(human) ?
+<span class="linenr">303: </span>%       1    1  Exit: mammal(human) ?
+<span class="linenr">304: </span>% yes
+<span class="linenr">305: </span>
+<span class="linenr">306: </span>% mammal(penguin).
+<span class="linenr">307: </span>%       1    1  Call: mammal(penguin) ?
+<span class="linenr">308: </span>%       2    2  Call: warm_blooded(penguin) ?
+<span class="linenr">309: </span>%       2    2  Exit: warm_blooded(penguin) ?
+<span class="linenr">310: </span>%       3    2  Call: produce_milk(penguin) ?
+<span class="linenr">311: </span>%       3    2  Exit: produce_milk(penguin) ?
+<span class="linenr">312: </span>%       4    2  Call: have_hair(penguin) ?
+<span class="linenr">313: </span>%       4    2  Fail: have_hair(penguin) ?
+<span class="linenr">314: </span>%       1    1  Fail: mammal(penguin) ?
+<span class="linenr">315: </span>% no
+<span class="linenr">316: </span>%
+<span class="linenr">317: </span>% notrace. Turns off trace
+<span class="linenr">318: </span>
+<span class="linenr">319: </span>% Output what ever matches the clauses
+<span class="linenr">320: </span>% warm_blooded(X), produce_milk(X), write(X),nl.
+<span class="linenr">321: </span>
+<span class="linenr">322: </span>% ---------- RECURSION ----------
+<span class="linenr">323: </span>
+<span class="linenr">324: </span>/*
+<span class="linenr">325: </span>parent(albert, bob).
+<span class="linenr">326: </span>parent(albert, betsy).
+<span class="linenr">327: </span>parent(albert, bill).
+<span class="linenr">328: </span>
+<span class="linenr">329: </span>parent(alice, bob).
+<span class="linenr">330: </span>parent(alice, betsy).
+<span class="linenr">331: </span>parent(alice, bill).
+<span class="linenr">332: </span>
+<span class="linenr">333: </span>parent(bob, carl).
+<span class="linenr">334: </span>parent(bob, charlie).
+<span class="linenr">335: </span>*/
+<span class="linenr">336: </span>
+<span class="linenr">337: </span>% Works for exact matches
+<span class="linenr">338: </span>related(X, Y) :- parent(X, Y).
+<span class="linenr">339: </span>% related(albert, bob). = true
+<span class="linenr">340: </span>
+<span class="linenr">341: </span>% Cycles through possible results until related returns a true
+<span class="linenr">342: </span>related(X, Y) :-
+<span class="linenr">343: </span>  parent(X, Z),
+<span class="linenr">344: </span>  related(Z, Y).
+<span class="linenr">345: </span>
+<span class="linenr">346: </span>% related(albert,carl). = true
+<span class="linenr">347: </span>
+<span class="linenr">348: </span>% 1. parent(albert, Z). = true = Z = bob, betsy, bill
+<span class="linenr">349: </span>% 2. related(Z, carl). = true when Z = bob
+<span class="linenr">350: </span>
+<span class="linenr">351: </span>% ---------- MATH ----------
+<span class="linenr">352: </span>% Prolog provides 'is' to evaluate mathematical expressions
+<span class="linenr">353: </span>% X is 2 + 2. = X = 4
+<span class="linenr">354: </span>
+<span class="linenr">355: </span>% You can use parenthese
+<span class="linenr">356: </span>% X is 3 + (2 * 10). =  X = 23
+<span class="linenr">357: </span>
+<span class="linenr">358: </span>% You can also make comparisons
+<span class="linenr">359: </span>% 50 &gt; 30. = yes
+<span class="linenr">360: </span>% (3*10) &gt;= (50/2). = yes
+<span class="linenr">361: </span>% \+ (3 = 10). = yes (How to check for not equal)
+<span class="linenr">362: </span>% 5+4 =:= 4+5. = yes (Check for equality between expressions)
+<span class="linenr">363: </span>% 5+4 =\= 4+5. = yes (Check for non-equality between expressions)
+<span class="linenr">364: </span>% 5 &gt; 10 ; 10 &lt; 100. (Checks if 1 OR the other is true)
+<span class="linenr">365: </span>
+<span class="linenr">366: </span>% X is mod(7,2). = X = 1 (Modulus)
+<span class="linenr">367: </span>
+<span class="linenr">368: </span>double_digit(X,Y) :- Y is X*2.
+<span class="linenr">369: </span>% double_digit(4,Y). = Y = 8
+<span class="linenr">370: </span>% Take the 1st argument, multiply it times 2 and return it as the
+<span class="linenr">371: </span>% 2nd argument
+<span class="linenr">372: </span>
+<span class="linenr">373: </span>% Get random value between 0 and 10
+<span class="linenr">374: </span>% random(0,10,X).
+<span class="linenr">375: </span>
+<span class="linenr">376: </span>% Get all values between 0 and 10
+<span class="linenr">377: </span>% between(0,10,X).
+<span class="linenr">378: </span>
+<span class="linenr">379: </span>% Add 1 and assign it to X
+<span class="linenr">380: </span>% succ(2,X).
+<span class="linenr">381: </span>
+<span class="linenr">382: </span>% Get absolute value of -8
+<span class="linenr">383: </span>% X is abs(-8).
+<span class="linenr">384: </span>
+<span class="linenr">385: </span>% Get largest value
+<span class="linenr">386: </span>% X is max(10,5).
+<span class="linenr">387: </span>
+<span class="linenr">388: </span>% Get smallest value
+<span class="linenr">389: </span>% X is min(10,5).
+<span class="linenr">390: </span>
+<span class="linenr">391: </span>% Round a value
+<span class="linenr">392: </span>% X is round(10.56).
+<span class="linenr">393: </span>
+<span class="linenr">394: </span>% Convert float to integer
+<span class="linenr">395: </span>% X is truncate(10.56).
+<span class="linenr">396: </span>
+<span class="linenr">397: </span>% Round down
+<span class="linenr">398: </span>% X is floor(10.56).
+<span class="linenr">399: </span>
+<span class="linenr">400: </span>% Round up
+<span class="linenr">401: </span>% X is ceiling(10.56).
+<span class="linenr">402: </span>
+<span class="linenr">403: </span>% 2^3
+<span class="linenr">404: </span>% X is 2** 3.
+<span class="linenr">405: </span>
+<span class="linenr">406: </span>% Check if a number is even
+<span class="linenr">407: </span>% 10//2 = 5 (is 10 = 2 * 5)
+<span class="linenr">408: </span>is_even(X) :- Y is X//2, X =:= 2 * Y.
+<span class="linenr">409: </span>
+<span class="linenr">410: </span>% sqrt, sin, cos, tan, asin, acos, atan, atan2, sinh, cosh, tanh,
+<span class="linenr">411: </span>% asinh, acosh, atanh, log, log10, exp, pi, e
+<span class="linenr">412: </span>
+<span class="linenr">413: </span>% ---------- INPUT / OUTPUT ----------
+<span class="linenr">414: </span>% write('You saw me'), nl.
+<span class="linenr">415: </span>
+<span class="linenr">416: </span>% writeq('I show quotes'), nl.
+<span class="linenr">417: </span>
+<span class="linenr">418: </span>% You can read data with read
+<span class="linenr">419: </span>say_hi :-
+<span class="linenr">420: </span>  write('What is your name? '),
+<span class="linenr">421: </span>  read(X),
+<span class="linenr">422: </span>  write('Hi '),
+<span class="linenr">423: </span>  write(X).
+<span class="linenr">424: </span>
+<span class="linenr">425: </span>% say_hi.
+<span class="linenr">426: </span>% What is your name 'Derek'.
+<span class="linenr">427: </span>% Hi Derek
+<span class="linenr">428: </span>
+<span class="linenr">429: </span>fav_char :-
+<span class="linenr">430: </span>  write('What is your favorite character? '),
+<span class="linenr">431: </span>
+<span class="linenr">432: </span>  % Receives a char and saves its ascii value to X
+<span class="linenr">433: </span>  get(X),
+<span class="linenr">434: </span>  format('The Ascii value ~w is ', [X]),
+<span class="linenr">435: </span>
+<span class="linenr">436: </span>  % Outputs Ascii value as the char
+<span class="linenr">437: </span>  put(X),nl.
+<span class="linenr">438: </span>
+<span class="linenr">439: </span>% Write to a file by defining the file, text to write, connection
+<span class="linenr">440: </span>% to the file (Stream)
+<span class="linenr">441: </span>write_to_file(File, Text) :-
+<span class="linenr">442: </span>  open(File, write, Stream),
+<span class="linenr">443: </span>  write(Stream, Text), nl,
+<span class="linenr">444: </span>  close(Stream).
+<span class="linenr">445: </span>
+<span class="linenr">446: </span>% Read from a file
+<span class="linenr">447: </span>read_file(File) :-
+<span class="linenr">448: </span>        open(File, read, Stream),
+<span class="linenr">449: </span>
+<span class="linenr">450: </span>        % Get char from the stream
+<span class="linenr">451: </span>        get_char(Stream, Char1),
+<span class="linenr">452: </span>
+<span class="linenr">453: </span>        % Outputs the characters until end_of_file
+<span class="linenr">454: </span>        process_stream(Char1, Stream),
+<span class="linenr">455: </span>        close(Stream).
+<span class="linenr">456: </span>
+<span class="linenr">457: </span>% Continue getting characters until end_of_file
+<span class="linenr">458: </span>% ! or cut is used to end backtracking or this execution
+<span class="linenr">459: </span>process_stream(end_of_file, _) :- !.
+<span class="linenr">460: </span>
+<span class="linenr">461: </span>process_stream(Char, Stream) :-
+<span class="linenr">462: </span>        write(Char),
+<span class="linenr">463: </span>        get_char(Stream, Char2),
+<span class="linenr">464: </span>        process_stream(Char2, Stream).
+<span class="linenr">465: </span>
+<span class="linenr">466: </span>% ---------- HOW TO LOOP ----------
+<span class="linenr">467: </span>
+<span class="linenr">468: </span>% Use recursion to loop
+<span class="linenr">469: </span>count_to_10(10) :- write(10), nl.
+<span class="linenr">470: </span>
+<span class="linenr">471: </span>count_to_10(X) :-
+<span class="linenr">472: </span>  write(X),nl,
+<span class="linenr">473: </span>  Y is X + 1,
+<span class="linenr">474: </span>  count_to_10(Y).
+<span class="linenr">475: </span>
+<span class="linenr">476: </span>% Receives Low (lowest value) and High (highest value)
+<span class="linenr">477: </span>count_down(Low, High) :-
+<span class="linenr">478: </span>  % Assigns values between Low and High to Y
+<span class="linenr">479: </span>  between(Low, High, Y),
+<span class="linenr">480: </span>  % Assigns the difference to Z
+<span class="linenr">481: </span>  Z is High - Y,
+<span class="linenr">482: </span>  write(Z),nl,
+<span class="linenr">483: </span>  % Continue looping until Y = 10
+<span class="linenr">484: </span>  Y = 10.
+<span class="linenr">485: </span>
+<span class="linenr">486: </span>count_up(Low, High) :-
+<span class="linenr">487: </span>  between(Low, High, Y),
+<span class="linenr">488: </span>  Z is Y + Low,
+<span class="linenr">489: </span>  write(Z), nl,
+<span class="linenr">490: </span>  Y = 10.
+<span class="linenr">491: </span>
+<span class="linenr">492: </span>% Loop until they guess a number
+<span class="linenr">493: </span>% start is a dummy value used to start the looping
+<span class="linenr">494: </span>guess_num :- loop(start).
+<span class="linenr">495: </span>
+<span class="linenr">496: </span>% When they guess 15 they execute this message and exit
+<span class="linenr">497: </span>loop(15) :- write('You guessed it!').
+<span class="linenr">498: </span>
+<span class="linenr">499: </span>loop(X) :-
+<span class="linenr">500: </span>  x \= 15,
+<span class="linenr">501: </span>  write('Guess Number '),
+<span class="linenr">502: </span>  read(Guess),
+<span class="linenr">503: </span>  write(Guess),
+<span class="linenr">504: </span>  write(' is not the number'), nl,
+<span class="linenr">505: </span>  loop(Guess).
+<span class="linenr">506: </span>
+<span class="linenr">507: </span>% guess_num.
+<span class="linenr">508: </span>% Guess Number 12.
+<span class="linenr">509: </span>% 12 is not the number
+<span class="linenr">510: </span>% Guess Number 15.
+<span class="linenr">511: </span>% 15 is not the number
+<span class="linenr">512: </span>% You guessed it!
+<span class="linenr">513: </span>
+<span class="linenr">514: </span>% ---------- CHANGING THE DATABASE ----------
+<span class="linenr">515: </span>% Any predicate you plan to motify should be marked as dynamic before
+<span class="linenr">516: </span>% this predicate is used in any way
+<span class="linenr">517: </span>:- dynamic(father/2).
+<span class="linenr">518: </span>:- dynamic(likes/2).
+<span class="linenr">519: </span>:- dynamic(friend/2).
+<span class="linenr">520: </span>:- dynamic(stabs/3).
+<span class="linenr">521: </span>
+<span class="linenr">522: </span>father(lord_montague,romeo).
+<span class="linenr">523: </span>father(lord_capulet,juliet).
+<span class="linenr">524: </span>
+<span class="linenr">525: </span>likes(mercutio,dancing).
+<span class="linenr">526: </span>likes(benvolio,dancing).
+<span class="linenr">527: </span>likes(romeo,dancing).
+<span class="linenr">528: </span>likes(romeo,juliet).
+<span class="linenr">529: </span>likes(juliet,romeo).
+<span class="linenr">530: </span>likes(juliet,dancing).
+<span class="linenr">531: </span>
+<span class="linenr">532: </span>friend(romeo,mercutio).
+<span class="linenr">533: </span>friend(romeo,benvolio).
+<span class="linenr">534: </span>% friend(X, romeo) :- friend(romeo, X).
+<span class="linenr">535: </span>
+<span class="linenr">536: </span>stabs(tybalt,mercutio,sword).
+<span class="linenr">537: </span>stabs(romeo,tybalt,sword).
+<span class="linenr">538: </span>
+<span class="linenr">539: </span>% Add new clause to the database at the end of the list for the same
+<span class="linenr">540: </span>% predicate
+<span class="linenr">541: </span>% assertz(friend(benvolio, mercutio)).
+<span class="linenr">542: </span>% friend(benvolio, mercutio). = yes
+<span class="linenr">543: </span>
+<span class="linenr">544: </span>% Add clause at the start of the predicate list
+<span class="linenr">545: </span>% asserta(friend(mercutio, benvolio)).
+<span class="linenr">546: </span>% friend(mercutio, benvolio). = yes
+<span class="linenr">547: </span>
+<span class="linenr">548: </span>% Delete a clause
+<span class="linenr">549: </span>% retract(likes(mercutio,dancing)).
+<span class="linenr">550: </span>% likes(mercutio,dancing). = no
+<span class="linenr">551: </span>
+<span class="linenr">552: </span>% Delete all clauses that match
+<span class="linenr">553: </span>% retractall(father(_,_)).
+<span class="linenr">554: </span>% father(lord_montague,romeo). = no
+<span class="linenr">555: </span>
+<span class="linenr">556: </span>% Delete all matching clauses
+<span class="linenr">557: </span>% retractall(likes(_,dancing)).
+<span class="linenr">558: </span>% likes(_,dancing). = no
+<span class="linenr">559: </span>
+<span class="linenr">560: </span>% ---------- LISTS ----------
+<span class="linenr">561: </span>% You can store atoms, complex terms, variables, numbers and other
+<span class="linenr">562: </span>% lists in a list
+<span class="linenr">563: </span>% They are used to store data that has an unknown number of elements
+<span class="linenr">564: </span>
+<span class="linenr">565: </span>% We can add items to a list with the | (List Constructor)
+<span class="linenr">566: </span>% write([albert|[alice, bob]]), nl.
+<span class="linenr">567: </span>
+<span class="linenr">568: </span>% Get the length of a list
+<span class="linenr">569: </span>% length([1,2,3], X).
+<span class="linenr">570: </span>
+<span class="linenr">571: </span>% We can divide a list into its head and tail with |
+<span class="linenr">572: </span>% [H|T] = [a,b,c].
+<span class="linenr">573: </span>
+<span class="linenr">574: </span>% H = a
+<span class="linenr">575: </span>% T = [b,c]
+<span class="linenr">576: </span>
+<span class="linenr">577: </span>% We can get additional values by adding more variables to the left
+<span class="linenr">578: </span>% of |
+<span class="linenr">579: </span>
+<span class="linenr">580: </span>%[X1, X2, X3, X4|T] = [a,b,c,d].
+<span class="linenr">581: </span>
+<span class="linenr">582: </span>% We can use the anonymous variable _ when we need to reference a
+<span class="linenr">583: </span>% variable, but we don't want its value
+<span class="linenr">584: </span>% Let's get the second value in the list
+<span class="linenr">585: </span>% [_, X2, _, _|T] = [a,b,c,d].
+<span class="linenr">586: </span>
+<span class="linenr">587: </span>% We can use | to access values of lists in lists
+<span class="linenr">588: </span>% [_, _, [X|Y], _, Z|T] = [a, b, [c, d, e], f, g, h].
+<span class="linenr">589: </span>
+<span class="linenr">590: </span>% Find out if a value is in a list with member
+<span class="linenr">591: </span>% List1 = [a,b,c].
+<span class="linenr">592: </span>% member(a, List1). = yes
+<span class="linenr">593: </span>
+<span class="linenr">594: </span>% We could also get all members of a list with a variable
+<span class="linenr">595: </span>% member(X, [a, b, c, d]).
+<span class="linenr">596: </span>
+<span class="linenr">597: </span>% Reverse a list
+<span class="linenr">598: </span>% reverse([1,2,3,4,5], X).
+<span class="linenr">599: </span>
+<span class="linenr">600: </span>% Concatenate 2 lists
+<span class="linenr">601: </span>% append([1,2,3], [4,5,6], X).
+<span class="linenr">602: </span>
+<span class="linenr">603: </span>% Write items in list on separate line
+<span class="linenr">604: </span>write_list([]).
+<span class="linenr">605: </span>
+<span class="linenr">606: </span>write_list([Head|Tail]) :-
+<span class="linenr">607: </span>  write(Head), nl,
+<span class="linenr">608: </span>  write_list(Tail).
+<span class="linenr">609: </span>% write_list([1,2,3,4,5]). = Outputs the list
+<span class="linenr">610: </span>
+<span class="linenr">611: </span>% ---------- STRINGS ----------
+<span class="linenr">612: </span>% Convert a string into an Ascii character list
+<span class="linenr">613: </span>% name('A random string', X).
+<span class="linenr">614: </span>
+<span class="linenr">615: </span>% Convert a Ascii character list into a string
+<span class="linenr">616: </span>% name(X, [65,32,114,97,110,100,111,109,32,115,116,114,105,110,103]).
+<span class="linenr">617: </span>
+<span class="linenr">618: </span>% Append can join strings
+<span class="linenr">619: </span>join_str(Str1, Str2, Str3) :-
+<span class="linenr">620: </span>
+<span class="linenr">621: </span>  % Convert strings into lists
+<span class="linenr">622: </span>  name(Str1, StrList1),
+<span class="linenr">623: </span>  name(Str2, StrList2),
+<span class="linenr">624: </span>
+<span class="linenr">625: </span>  % Combine string lists into new string list
+<span class="linenr">626: </span>  append(StrList1, StrList2, StrList3),
+<span class="linenr">627: </span>
+<span class="linenr">628: </span>  % Convert list into a string
+<span class="linenr">629: </span>  name(Str3, StrList3).
+<span class="linenr">630: </span>
+<span class="linenr">631: </span>% join_str('Another ', 'Random String', X). = X = 'Another Random String'
+<span class="linenr">632: </span>
+<span class="linenr">633: </span>% get the 1st char from a string
+<span class="linenr">634: </span>/*
+<span class="linenr">635: </span>name('Derek', List),
+<span class="linenr">636: </span>nth0(0, List, FChar),
+<span class="linenr">637: </span>put(FChar).
+<span class="linenr">638: </span>*/
+<span class="linenr">639: </span>
+<span class="linenr">640: </span>% Get length of the string
+<span class="linenr">641: </span>atom_length('Derek',X).
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaf5a4ef" class="outline-2">
+<h2 id="orgaf5a4ef"><span class="section-number-2">4.</span> Example</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org25456ff" class="outline-3">
+<h3 id="org25456ff"><span class="section-number-3">4.1.</span> <code>epidemic.cpl</code></h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+<a href="http://github.com/friguzzi/cplint/blob/master/prolog/examples/epidemic.cpl">http://github.com/friguzzi/cplint/blob/master/prolog/examples/epidemic.cpl</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-prolog"><span class="linenr"> 1: </span>/*
+<span class="linenr"> 2: </span>Model of the development of an epidemic or a pandemic.
+<span class="linenr"> 3: </span>From
+<span class="linenr"> 4: </span>E. Bellodi and F. Riguzzi. Expectation Maximization over binary decision
+<span class="linenr"> 5: </span>diagrams for probabilistic logic programs. Intelligent Data Analysis,
+<span class="linenr"> 6: </span>17(2):343-363, 2013.
+<span class="linenr"> 7: </span>*/
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>
+<span class="linenr">10: </span>epidemic : 0.6; pandemic : 0.3 :- flu(_), cold.
+<span class="linenr">11: </span>% if somebody has the flu and the climate is cold, there is the possibility
+<span class="linenr">12: </span>% that an epidemic arises with probability 0.6 and the possibility that a
+<span class="linenr">13: </span>% pandemic arises with probability 0.3
+<span class="linenr">14: </span>
+<span class="linenr">15: </span>cold : 0.7.
+<span class="linenr">16: </span>% it is cold with probability 0.7
+<span class="linenr">17: </span>
+<span class="linenr">18: </span>flu(david).
+<span class="linenr">19: </span>flu(robert).
+<span class="linenr">20: </span>% david and robert have the flu for sure
+<span class="linenr">21: </span>
+<span class="linenr">22: </span>/** &lt;examples&gt;
+<span class="linenr">23: </span>
+<span class="linenr">24: </span>?- epidemic.  % what is the probability that an epidemic arises?
+<span class="linenr">25: </span>% expected result 0.588
+<span class="linenr">26: </span>?- pandemic.  % what is the probability that a pandemic arises?
+<span class="linenr">27: </span>% expected result 0.357
+<span class="linenr">28: </span>
+<span class="linenr">29: </span>*/
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc0b0cb2" class="outline-3">
+<h3 id="orgc0b0cb2"><span class="section-number-3">4.2.</span> Load the library</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgaedacef" class="outline-4">
+<h4 id="orgaedacef"><span class="section-number-4">4.2.1.</span> Step 1</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<p>
+Start swipl in the same directory where <code>epidemic.cpl</code> lives
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr">1: </span>swipl
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc1539d4" class="outline-4">
+<h4 id="orgc1539d4"><span class="section-number-4">4.2.2.</span> Step 2</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<p>
+Then type into the <code>swipl</code> console "<code>[epidemic].</code>" and press enter.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr">1: </span>[epidemic].
+</pre>
+</div>
+
+<p>
+This should load the <code>epidemic.cpl</code> program.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4eae7ef" class="outline-4">
+<h4 id="org4eae7ef"><span class="section-number-4">4.2.3.</span> Step 3</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<p>
+Then to calculate the probability of an epidemic, type the following into the console and press enter:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-prolog"><span class="linenr">1: </span>prob(epidemic,P).
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0b70bb1" class="outline-4">
+<h4 id="org0b70bb1"><span class="section-number-4">4.2.4.</span> Output</h4>
+<div class="outline-text-4" id="text-4-2-4">
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr"> 1: </span>Welcome to SWI-Prolog (threaded, 64 bits, version 8.0.2)
+<span class="linenr"> 2: </span>SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+<span class="linenr"> 3: </span>Please run ?- license. for legal details.
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span>For online help and background, visit http://www.swi-prolog.org
+<span class="linenr"> 6: </span>For built-in help, use ?- help(Topic). or ?- apropos(Word).
+<span class="linenr"> 7: </span>
+<span class="linenr"> 8: </span>?- [epidemic].
+<span class="linenr"> 9: </span>true.
+<span class="linenr">10: </span>
+<span class="linenr">11: </span>?- prob(epidemic,P).
+<span class="linenr">12: </span>P = 0.42 .
+<span class="linenr">13: </span>
+<span class="linenr">14: </span>?-
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc0ea904" class="outline-2">
+<h2 id="orgc0ea904"><span class="section-number-2">5.</span> cplint Glossary</h2>
+<div class="outline-text-2" id="text-5">
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr"> 1: </span>cpl
+<span class="linenr"> 2: </span>cplint
+<span class="linenr"> 3: </span>    [#prolog]
+<span class="linenr"> 4: </span>    [prolog package]
+<span class="linenr"> 5: </span>
+<span class="linenr"> 6: </span>    cplint is a package for prolog that is
+<span class="linenr"> 7: </span>    used for probabilistic logic programming.
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>prob/2
+<span class="linenr">10: </span>    [#cplint]
+<span class="linenr">11: </span>    [predicate]
+<span class="linenr">12: </span>
+<span class="linenr">13: </span>    prob is a predicate for the cplint that
+<span class="linenr">14: </span>    takes 2 arguments.
+<span class="linenr">15: </span>
+<span class="linenr">16: </span>    Computes the probability of an atom.
+<span class="linenr">17: </span>
+<span class="linenr">18: </span>        a:0.2:-
+<span class="linenr">19: </span>            prob(b,P),
+<span class="linenr">20: </span>            P &gt; 0.2.
+<span class="linenr">21: </span>
+<span class="linenr">22: </span>    Read about it:
+<span class="linenr">23: </span>    - http://friguzzi.github.io/cplint/_build/html/index.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2024-06-17 Mon 00:00</p>
+<p class="author">Author: Fani</p>
+<p class="date">Created: 2024-06-17 Mon 16:21</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+title: Conversation with a famous person
+prompt-version: 1
+tags: chatbot social-media
+prompt: |+
+    The following is a transcript of a conversation between Mark, a
+    computer science student, and <person>.
+
+    <blurb>
+
+    Mark: Hi there, <1>. Honored to meet you.
+    <1>: 
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 300
+top-p: 1
+best-of: 3
+stop-sequences:
+# This wouldn't appear, so it would keep going, which is what we want
+- "<delim>"
+vars:
+- person
+- blurb
+var-defaults:
+- ~
+# Not sure why, but force-interactive is not working currently in the case of embedding
+# prompt functions into var-defaults
+# - "(apostrophe-generate-blurb person)"
+- "(fz (apostrophe-generate-blurb person) nil \"Select blurb: \")"
+examples:
+- "Jason Momoa"
+conversation: true
+conversation-pretext-generator: human-conversation
+postprocessor: pen-pretty-paragraph
+external-related:
+- "https://github.com/maraoz/gpt-scrolls"

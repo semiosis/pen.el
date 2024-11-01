@@ -1,0 +1,4709 @@
+HTTP/1.1 200 OK
+content-security-policy: object-src 'none'; base-uri 'none'; script-src 'unsafe-inline' 'strict-dynamic' https: http: 'sha256-DVdvl49HC0iGx/YKQq/kVNATnEdzGfExbJVTHqT95l8=' 'sha256-CoGrkqEM1Kjjf5b1bpcnDLl8ZZLAsVX+BoAzZ5+AOmc=' 'sha256-QqhlxKosyquihHG/Jahbski3BB1pDss2/CDgLzKKbmE=' 'sha256-karKh1IrXOF1g+uoSxK+k9BuciCwYY/ytGuQVUiRzcM=' 'sha256-mxm3e8M0u3nPPBmLIBgGuMvGUIL5LGv+HzV3bLAIBgw=' 'sha256-+iS8jRq15Ez/Kzz0/G+SNc0geLNvTyf2NZC7MyJgpRE=' 'sha256-bL+cN9GtUg5dqjPwDiPJq4yfiEvOyEJ3rfw/YkNIAWc=' 'sha256-UiVwSVJIK9udADqG5GZe+nRUXWK9wEot2vrxL4D2pQs=' 'sha256-cB+y/oSfWGFf7lHk8KX+ZX2CZQz/dPamIICuPvHcB6w=' 'sha256-7mi5SPcD1cogj2+ju8J/+/qJG99F6Qo+3pO4xQkRf6Q=' 'sha256-rEbn/zvLCsDDvDrVWQuUkKGEQsjQjFvIvJK4NVIMqZ4='
+x-content-type-options: nosniff
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Date: Fri, 06 Oct 2023 10:10:59 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+<!DOCTYPE html>
+<html lang="en" data-layout="responsive" data-local="">
+  <head>
+    
+    <script>
+      window.addEventListener('error', window.__err=function f(e){f.p=f.p||[];f.p.push(e)});
+    </script>
+    <script>
+      (function() {
+        const theme = document.cookie.match(/prefers-color-scheme=(light|dark|auto)/)?.[1]
+        if (theme) {
+          document.querySelector('html').setAttribute('data-theme', theme);
+        }
+      }())
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Package tea provides a framework for building rich terminal user interfaces based on the paradigms of The Elm Architecture.">
+    
+    <meta class="js-gtmID" data-gtmid="GTM-W8MVQXG">
+    <link rel="shortcut icon" href="/static/shared/icon/favicon.ico">
+    
+  
+    <link rel="canonical" href="https://pkg.go.dev/github.com/charmbracelet/bubbletea">
+  
+
+    <link href="/static/frontend/frontend.min.css?version=prod-frontend-00083-xup" rel="stylesheet">
+    
+  <title>tea package - github.com/charmbracelet/bubbletea - Go Packages</title>
+
+    
+  <link href="/static/frontend/unit/unit.min.css?version=prod-frontend-00083-xup" rel="stylesheet">
+  
+  <link href="/static/frontend/unit/main/main.min.css?version=prod-frontend-00083-xup" rel="stylesheet">
+
+
+  </head>
+  <body>
+    
+    <script>
+      function loadScript(src, mod = true) {
+        let s = document.createElement('script');
+        s.src = src;
+        if (mod) {
+          s.type = 'module';
+          s.async = true;
+          s.defer = true
+        }
+        document.head.appendChild(s);
+      }
+      loadScript("/third_party/dialog-polyfill/dialog-polyfill.js", false)
+      loadScript("/static/frontend/frontend.js");
+    </script>
+    
+  <header class="go-Header go-Header--full js-siteHeader">
+    <div class="go-Header-inner go-Header-inner--dark">
+      <nav class="go-Header-nav">
+        <a href="https://go.dev/" class="js-headerLogo" data-gtmc="nav link"
+            data-test-id="go-header-logo-link">
+          <img class="go-Header-logo" src="/static/shared/logo/go-white.svg" alt="Go">
+        </a>
+         <div class="skip-navigation-wrapper">
+            <a class="skip-to-content-link" aria-label="Skip to main content" href="#main-content"> Skip to Main Content </a>
+          </div>
+        <div class="go-Header-rightContent">
+          
+<div class="go-SearchForm js-searchForm">
+  <form
+    class="go-InputGroup go-ShortcutKey go-SearchForm-form"
+    action="/search"
+    data-shortcut="/"
+    data-shortcut-alt="search"
+    data-gtmc="search form"
+    aria-label="Search for a package"
+    role="search"
+  >
+    <input name="q" class="go-Input js-searchFocus" aria-label="Search for a package" type="search"
+        autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
+        placeholder="Search packages or symbols"
+        value="" />
+    <input name="m" value="" hidden>
+    <button class="go-Button go-Button--inverted" aria-label="Submit search">
+      <img
+        class="go-Icon"
+        height="24"
+        width="24"
+        src="/static/shared/icon/search_gm_grey_24dp.svg"
+        alt=""
+      />
+    </button>
+  </form>
+  <button class="go-SearchForm-expandSearch js-expandSearch" data-gtmc="nav button"
+      aria-label="Open search" data-test-id="expand-search">
+    <img class="go-Icon go-Icon--inverted" height="24" width="24"
+        src="/static/shared/icon/search_gm_grey_24dp.svg" alt="">
+
+  </button>
+</div>
+
+          <ul class="go-Header-menu">
+            <li class="go-Header-menuItem">
+              <a class="js-desktop-menu-hover" href="#" data-gtmc="nav link">
+                Why Go
+                <img class="go-Icon" height="24" width="24" src="/static/shared/icon/arrow_drop_down_gm_grey_24dp.svg" alt="submenu dropdown icon">
+              </a>
+              <ul class="go-Header-submenu go-Header-submenu--why js-desktop-submenu-hover" aria-label="submenu">
+                  <li class="go-Header-submenuItem">
+                    <div>
+                      <a href="https://go.dev/solutions#case-studies">
+                        </span>Case Studies</span>
+                      </a>
+                    </div>
+                    <p>Common problems companies solve with Go</p>
+                  </li>
+                  <li class="go-Header-submenuItem">
+                    <div>
+                      <a href="https://go.dev/solutions#use-cases">
+                        </span>Use Cases</span>
+                      </a>
+                    </div>
+                    <p>Stories about how and why companies use Go</p>
+                  </li>
+                  <li class="go-Header-submenuItem">
+                    <div>
+                      <a href="https://go.dev/security/policy/">
+                        </span>Security Policy</span>
+                      </a>
+                    </div>
+                    <p>How Go can help keep you secure by default</p>
+                  </li>
+              </ul>
+            </li>
+            <li class="go-Header-menuItem">
+              <a href="https://go.dev/learn/" data-gtmc="nav link">Learn</a>
+            </li>
+            <li class="go-Header-menuItem">
+              <a class="js-desktop-menu-hover" href="#" data-gtmc="nav link">
+                Docs
+                <img class="go-Icon" height="24" width="24" src="/static/shared/icon/arrow_drop_down_gm_grey_24dp.svg" alt="submenu dropdown icon">
+              </a>
+              <ul class="go-Header-submenu go-Header-submenu--docs js-desktop-submenu-hover" aria-label="submenu">
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/doc/effective_go">
+                      <span>Effective Go</span>
+                    </a>
+                  </div>
+                  <p>Tips for writing clear, performant, and idiomatic Go code</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/doc/">
+                      <span>Go User Manual</span>
+                    </a>
+                  </div>
+                  <p>A complete introduction to building software with Go</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://pkg.go.dev/std">
+                      <span>Standard library</span>
+                    </a>
+                  </div>
+                  <p>Reference documentation for Go's standard library</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/doc/devel/release">
+                      <span>Release Notes</span>
+                    </a>
+                  </div>
+                  <p>Learn what's new in each Go release</p>
+                </li>
+              </ul>
+            </li>
+            <li class="go-Header-menuItem go-Header-menuItem--active">
+              <a href="/" data-gtmc="nav link">Packages</a>
+            </li>
+            <li class="go-Header-menuItem">
+              <a class="js-desktop-menu-hover" href="#" data-gtmc="nav link">
+                Community
+                <img class="go-Icon" height="24" width="24" src="/static/shared/icon/arrow_drop_down_gm_grey_24dp.svg" alt="submenu dropdown icon">
+              </a>
+              <ul class="go-Header-submenu go-Header-submenu--community js-desktop-submenu-hover" aria-label="submenu">
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/talks/">
+                      <span>Recorded Talks</span>
+                    </a>
+                  </div>
+                  <p>Videos from prior events</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://www.meetup.com/pro/go">
+                      <span>Meetups</span>
+                      <i class="material-icons">
+                        <img class="go-Icon" height="24" width="24"
+                            src="/static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </div>
+                  <p>Meet other local Go developers</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://github.com/golang/go/wiki/Conferences">
+                      <span>Conferences</span>
+                      <i class="material-icons">
+                        <img class="go-Icon" height="24" width="24"
+                            src="/static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </div>
+                  <p>Learn and network with Go developers from around the world</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/blog">
+                      <span>Go blog</span>
+                    </a>
+                  </div>
+                  <p>The Go project's official blog.</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/help">
+                      <span>Go project</span>
+                    </a>
+                  </div>
+                  <p>Get help and stay informed from Go</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    Get connected
+                  </div>
+                  <p></p>
+                  <div class="go-Header-socialIcons">
+                      <a class="go-Header-socialIcon" href="https://groups.google.com/g/golang-nuts"><img src="/static/shared/logo/social/google-groups.svg" /></a>
+                      <a class="go-Header-socialIcon" href="https://github.com/golang"><img src="/static/shared/logo/social/github.svg" /></a>
+                      <a class="go-Header-socialIcon" href="https://twitter.com/golang"><img src="/static/shared/logo/social/twitter.svg" /></a>
+                      <a class="go-Header-socialIcon" href="https://www.reddit.com/r/golang/"><img src="/static/shared/logo/social/reddit.svg" /></a>
+                      <a class="go-Header-socialIcon" href="https://invite.slack.golangbridge.org/"><img src="/static/shared/logo/social/slack.svg" /></a>
+                      <a class="go-Header-socialIcon" href="https://stackoverflow.com/collectives/go"><img src="/static/shared/logo/social/stack-overflow.svg" /></a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="go-Header-navOpen js-headerMenuButton go-Header-navOpen--white" data-gtmc="nav button" aria-label="Open navigation">
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <aside class="go-NavigationDrawer js-header">
+    <nav class="go-NavigationDrawer-nav">
+      <div class="go-NavigationDrawer-header">
+        <a href="https://go.dev/">
+          <img class="go-NavigationDrawer-logo" src="/static/shared/logo/go-blue.svg" alt="Go.">
+        </a>
+      </div>
+      <ul class="go-NavigationDrawer-list">
+          <li class="go-NavigationDrawer-listItem js-mobile-subnav-trigger go-NavigationDrawer-hasSubnav">
+            <a href="#">
+              <span>Why Go</span>
+              <i class="material-icons">
+                <img class="go-Icon" height="24" width="24"
+                  src="/static/shared/icon/navigate_next_gm_grey_24dp.svg" alt="">
+              </i>
+            </a>
+
+            <div class="go-NavigationDrawer go-NavigationDrawer-submenuItem">
+              <div class="go-NavigationDrawer-nav">
+                <div class="go-NavigationDrawer-header">
+                  <a href="#">
+                    <i class="material-icons">
+                      <img class="go-Icon" height="24" width="24"
+                        src="/static/shared/icon/navigate_before_gm_grey_24dp.svg" alt="">
+                      </i>
+                      Why Go
+                  </a>
+                </div>
+                <ul class="go-NavigationDrawer-list">
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/solutions#case-studies">
+                      Case Studies
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/solutions#use-cases">
+                      Use Cases
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/security/policy/">
+                      Security Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="go-NavigationDrawer-listItem">
+            <a href="https://go.dev/learn/">Learn</a>
+          </li>
+          <li class="go-NavigationDrawer-listItem js-mobile-subnav-trigger go-NavigationDrawer-hasSubnav">
+            <a href="#">
+              <span>Docs</span>
+              <i class="material-icons">
+                <img class="go-Icon" height="24" width="24"
+                  src="/static/shared/icon/navigate_next_gm_grey_24dp.svg" alt="">
+              </i>
+            </a>
+
+            <div class="go-NavigationDrawer go-NavigationDrawer-submenuItem">
+              <div class="go-NavigationDrawer-nav">
+                <div class="go-NavigationDrawer-header">
+                  <a href="#"><i class="material-icons">
+                    <img class="go-Icon" height="24" width="24"
+                      src="/static/shared/icon/navigate_before_gm_grey_24dp.svg" alt="">
+                    </i>
+                    Docs
+                  </a>
+                </div>
+                <ul class="go-NavigationDrawer-list">
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/doc/effective_go">
+                      Effective Go
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/doc/">
+                      Go User Manual
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://pkg.go.dev/std">
+                      Standard library
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/doc/devel/release">
+                      Release Notes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="go-NavigationDrawer-listItem go-NavigationDrawer-listItem--active">
+            <a href="/">Packages</a>
+          </li>
+          <li class="go-NavigationDrawer-listItem js-mobile-subnav-trigger go-NavigationDrawer-hasSubnav">
+            <a href="#">
+              <span>Community</span>
+              <i class="material-icons">
+                <img class="go-Icon" height="24" width="24"
+                  src="/static/shared/icon/navigate_next_gm_grey_24dp.svg" alt="">
+              </i>
+            </a>
+            <div class="go-NavigationDrawer go-NavigationDrawer-submenuItem">
+              <div class="go-NavigationDrawer-nav">
+                <div class="go-NavigationDrawer-header">
+                  <a href="#">
+                    <i class="material-icons">
+                      <img class="go-Icon" height="24" width="24"
+                        src="/static/shared/icon/navigate_before_gm_grey_24dp.svg" alt="">
+                    </i>
+                    Community
+                  </a>
+                </div>
+                <ul class="go-NavigationDrawer-list">
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/talks/">
+                      Recorded Talks
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://www.meetup.com/pro/go">
+                      Meetups
+                      <i class="material-icons">
+                      <img class="go-Icon" height="24" width="24"
+                          src="/static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://github.com/golang/go/wiki/Conferences">
+                      Conferences
+                      <i class="material-icons">
+                        <img class="go-Icon" height="24" width="24" src="/static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/blog">
+                      Go blog
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/help">
+                      Go project
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <div>Get connected</div>
+                    <div class="go-Header-socialIcons">
+                        <a class="go-Header-socialIcon" href="https://groups.google.com/g/golang-nuts"><img src="/static/shared/logo/social/google-groups.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://github.com/golang"><img src="/static/shared/logo/social/github.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://twitter.com/golang"><img src="/static/shared/logo/social/twitter.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://www.reddit.com/r/golang/"><img src="/static/shared/logo/social/reddit.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://invite.slack.golangbridge.org/"><img src="/static/shared/logo/social/slack.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://stackoverflow.com/collectives/go"><img src="/static/shared/logo/social/stack-overflow.svg" /></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="go-NavigationDrawer-scrim js-scrim" role="presentation"></div>
+
+    
+  <main class="go-Main" id="main-content">
+    <div class="go-Main-banner" role="alert"></div>
+    <header class="go-Main-header js-mainHeader">
+  
+  
+  <nav class="go-Main-headerBreadcrumb go-Breadcrumb" aria-label="Breadcrumb" data-test-id="UnitHeader-breadcrumb">
+    <ol>
+      
+        
+          <li data-test-id="UnitHeader-breadcrumbItem">
+            <a href="/" data-gtmc="breadcrumb link">Discover Packages</a>
+          </li>
+        
+        <li>
+          <a href="/github.com/charmbracelet/bubbletea@v0.24.2" data-gtmc="breadcrumb link" aria-current="location"
+              data-test-id="UnitHeader-breadcrumbCurrent">
+            github.com/charmbracelet/bubbletea
+          </a>
+          
+            <button
+              class="go-Button go-Button--inline go-Clipboard js-clipboard"
+              title="Copy path to clipboard.&#10;&#10;github.com/charmbracelet/bubbletea"
+              aria-label="Copy Path to Clipboard"
+              data-to-copy="github.com/charmbracelet/bubbletea"
+              data-gtmc="breadcrumbs button"
+            >
+              <img
+                class="go-Icon go-Icon--accented"
+                height="24"
+                width="24"
+                src="/static/shared/icon/content_copy_gm_grey_24dp.svg"
+                alt=""
+              >
+            </button>
+          
+        
+      </li>
+    </ol>
+  </nav>
+
+  <div class="go-Main-headerContent">
+    
+  <div class="go-Main-headerTitle js-stickyHeader">
+    <a class="go-Main-headerLogo" href="https://go.dev/" aria-hidden="true" tabindex="-1" data-gtmc="header link" aria-label="Link to Go Homepage">
+      <img height="78" width="207" src="/static/shared/logo/go-blue.svg" alt="Go">
+    </a>
+    <h1 class="UnitHeader-titleHeading" data-test-id="UnitHeader-title">tea</h1>
+    
+      <span class="go-Chip go-Chip--inverted">package</span>
+    
+      <span class="go-Chip go-Chip--inverted">module</span>
+    
+    
+      
+        <button
+          class="go-Button go-Button--inline go-Clipboard js-clipboard"
+          title="Copy path to clipboard.&#10;&#10;github.com/charmbracelet/bubbletea"
+          aria-label="Copy Path to Clipboard"
+          data-to-copy="github.com/charmbracelet/bubbletea"
+          data-gtmc="title button"
+          tabindex="-1"
+        >
+          <img
+            class="go-Icon go-Icon--accented"
+            height="24"
+            width="24"
+            src="/static/shared/icon/content_copy_gm_grey_24dp.svg"
+            alt=""
+          />
+        </button>
+      
+    
+  </div>
+
+    
+  <div class="go-Main-headerDetails">
+    
+      
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-version">
+    <a href="?tab=versions" aria-label="Go to Versions" data-gtmc="header link"><span class="go-textSubtle">Version: </span>v0.24.2</a>
+    
+    <span class="DetailsHeader-badge--latest" data-test-id="UnitHeader-minorVersionBanner">
+      <span class="go-Chip DetailsHeader-span--latest">Latest</span>
+      <span class="go-Chip DetailsHeader-span--notAtLatest">
+        Latest
+        
+  <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+    <summary>
+      <img class="go-Icon go-Icon--inverted" height="24" width="24" src="/static/shared/icon/alert_gm_grey_24dp.svg" alt="Warning">
+    </summary>
+    <p>This package is not in the latest version of its module.</p>
+  </details>
+
+      </span>
+      <a href="/github.com/charmbracelet/bubbletea" aria-label="Go to Latest Version" data-gtmc="header link">
+        <span class="go-Chip go-Chip--alert DetailsHeader-span--goToLatest">Go to latest</span>
+      </a>
+    </span>
+  </span>
+
+      
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-commitTime">
+    Published: Jun  5, 2023
+  </span>
+
+      
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-licenses">
+    License: <a href="/github.com/charmbracelet/bubbletea?tab=licenses" data-test-id="UnitHeader-license"
+            aria-label="Go to Licenses" data-gtmc="header link">MIT</a>
+      
+    
+  </span>
+
+      
+        
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-imports">
+    <a href="/github.com/charmbracelet/bubbletea?tab=imports" aria-label="Go to Imports"
+        data-gtmc="header link">
+      <span class="go-textSubtle">Imports: </span>25
+    </a>
+  </span>
+
+        
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-importedby">
+    <a href="/github.com/charmbracelet/bubbletea?tab=importedby" aria-label="Go to Imported By"
+        data-gtmc="header link">
+       <span class="go-textSubtle">Imported by: </span>1,944
+    </a>
+  </span>
+
+      
+    
+  </div>
+  
+  <div class="UnitHeader-overflowContainer">
+    <svg class="UnitHeader-overflowImage" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+    </svg>
+    <select class="UnitHeader-overflowSelect js-selectNav" tabindex="-1">
+      <option value="/">Main</option>
+      <option value="/github.com/charmbracelet/bubbletea?tab=versions">
+        Versions
+      </option>
+      <option value="/github.com/charmbracelet/bubbletea?tab=licenses">
+        Licenses
+      </option>
+      
+        <option value="/github.com/charmbracelet/bubbletea?tab=imports">
+          Imports
+        </option>
+        <option value="/github.com/charmbracelet/bubbletea?tab=importedby">
+          Imported By
+        </option>
+      
+    </select>
+  </div>
+
+
+  </div>
+
+</header>
+    <aside class="go-Main-aside  js-mainAside">
+  
+  <div class="UnitMeta">
+    <h2 class="go-textLabel">Details</h2>
+    
+  <ul class="UnitMeta-details">
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon go-Icon--accented"src="/static/shared/icon/check_circle_gm_grey_24dp.svg" alt="checked"height="24" width="24">
+
+          Valid <a href="https://github.com/charmbracelet/bubbletea/tree/v0.24.2/go.mod" target="_blank" rel="noopener">go.mod</a> file
+          <img class="go-Icon" src="/static/shared/icon/help_gm_grey_24dp.svg" alt="" height="24" width="24">
+        </summary>
+        <p>
+          The Go module system was introduced in Go 1.11 and is the official dependency management
+          solution for Go.
+        </p>
+      </details>
+    </li>
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon go-Icon--accented"src="/static/shared/icon/check_circle_gm_grey_24dp.svg" alt="checked"height="24" width="24">
+
+          Redistributable license
+          <img class="go-Icon" src="/static/shared/icon/help_gm_grey_24dp.svg" alt="" height="24" width="24">
+        </summary>
+        <p>
+          Redistributable licenses place minimal restrictions on how software can be used,
+          modified, and redistributed.
+        </p>
+      </details>
+    </li>
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon go-Icon--accented"src="/static/shared/icon/check_circle_gm_grey_24dp.svg" alt="checked"height="24" width="24">
+
+          Tagged version
+          <img class="go-Icon" src="/static/shared/icon/help_gm_grey_24dp.svg" alt="" height="24" width="24">
+        </summary>
+        <p>Modules with tagged versions give importers more predictable builds.</p>
+      </details>
+    </li>
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon"src="/static/shared/icon/cancel_gm_grey_24dp.svg" alt="unchecked"height="24" width="24">
+
+          Stable version
+          <img class="go-Icon" src="/static/shared/icon/help_gm_grey_24dp.svg" alt="" height="24" width="24">
+        </summary>
+        <p>When a project reaches major version v1 it is considered stable.</p>
+      </details>
+    </li>
+    <li class="UnitMeta-detailsLearn">
+      <a href="/about#best-practices" data-gtmc="meta link">Learn more about best practices</a>
+    </li>
+  </ul>
+
+    <h2 class="go-textLabel">Repository</h2>
+    <div class="UnitMeta-repo">
+      
+        <a href="https://github.com/charmbracelet/bubbletea" title="https://github.com/charmbracelet/bubbletea" target="_blank" rel="noopener">
+          github.com/charmbracelet/bubbletea
+        </a>
+      
+    </div>
+    
+      <h2 class="go-textLabel">Links</h2>
+      <ul class="UnitMeta-links">
+        
+        
+          <li>
+            <a href="https://deps.dev/go/github.com%2Fcharmbracelet%2Fbubbletea/v0.24.2" title="View this module on Open Source Insights"
+              target="_blank" rel="noopener" data-test-id="meta-link-depsdev">
+              <img class="depsdev-Icon" src="/static/shared/icon/depsdev-logo.svg"
+                alt="Open Source Insights Logo" />
+              Open Source Insights
+            </a>
+          </li>
+        
+        
+  
+
+        
+  
+
+        
+  
+
+      </ul>
+    
+  </div>
+
+</aside>
+    <nav class="go-Main-nav go-Main-nav--sticky js-mainNav" aria-label="Outline">
+  <div class="go-Main-navDesktop">
+    
+  <div class="UnitOutline-jumpTo">
+    <button class="UnitOutline-jumpToInput go-ShortcutKey js-jumpToInput"
+        aria-controls="jump-to-modal"
+        aria-label="Open Jump to Identifier"
+        data-shortcut="f"
+        data-shortcut-alt="find"
+        data-test-id="jump-to-button" data-gtmc="outline button">
+      Jump to ...
+    </button>
+  </div>
+  <ul class="go-Tree js-tree" role="tree" aria-label="Outline">
+    
+      <li class="js-readmeOutline">
+        <a href="#section-readme" data-gtmc="outline link">
+          README
+        </a>
+        
+  <ul id="readme-outline">
+    
+      <li>
+        <a href="#readme-by-the-way" data-gtmc="readme outline link">
+          By the way
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-tutorial" data-gtmc="readme outline link">
+          Tutorial
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="#readme-enough-let-s-get-to-it" data-gtmc="readme outline link">
+                  Enough! Let&#39;s get to it.
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="#readme-the-model" data-gtmc="readme outline link">
+                  The Model
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="#readme-initialization" data-gtmc="readme outline link">
+                  Initialization
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="#readme-the-update-method" data-gtmc="readme outline link">
+                  The Update Method
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="#readme-the-view-method" data-gtmc="readme outline link">
+                  The View Method
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="#readme-all-together-now" data-gtmc="readme outline link">
+                  All Together Now
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-what-s-next" data-gtmc="readme outline link">
+          What’s Next?
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-debugging" data-gtmc="readme outline link">
+          Debugging
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="#readme-debugging-with-delve" data-gtmc="readme outline link">
+                  Debugging with Delve
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="#readme-logging-stuff" data-gtmc="readme outline link">
+                  Logging Stuff
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-libraries-we-use-with-bubble-tea" data-gtmc="readme outline link">
+          Libraries we use with Bubble Tea
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-bubble-tea-in-the-wild" data-gtmc="readme outline link">
+          Bubble Tea in the Wild
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-feedback" data-gtmc="readme outline link">
+          Feedback
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-acknowledgments" data-gtmc="readme outline link">
+          Acknowledgments
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="#readme-license" data-gtmc="readme outline link">
+          License
+        </a>
+         
+      </li>
+     
+  </ul>
+
+      </li>
+    
+    
+      <li>
+        <a href="#section-documentation" data-gtmc="outline link">
+          Documentation
+        </a>
+        
+<ul>
+  
+    <li>
+      <a href="#pkg-overview" data-gtmc="doc outline link">Overview</a>
+    </li>
+  <li class="DocNav-overview">
+      <a href="#pkg-index" data-gtmc="doc outline link">
+        Index
+      </a>
+      
+    </li>
+    <li class="DocNav-constants">
+      <a href="#pkg-constants" data-gtmc="doc outline link">
+        Constants
+      </a>
+    </li>
+    <li class="DocNav-variables">
+      <a href="#pkg-variables" data-gtmc="doc outline link">
+        Variables
+      </a>
+    </li>
+    <li class="DocNav-functions">
+      <a href="#pkg-functions" data-gtmc="doc outline link">
+        Functions
+      </a>
+      
+        <ul>
+          
+            <li>
+              <a href="#LogToFile" title="LogToFile(path, prefix)" data-gtmc="doc outline link">
+                LogToFile(path, prefix)
+              </a>
+            </li>
+          
+            <li>
+              <a href="#LogToFileWith" title="LogToFileWith(path, prefix, log)" data-gtmc="doc outline link">
+                LogToFileWith(path, prefix, log)
+              </a>
+            </li>
+          
+        </ul>
+      
+    </li>
+    <li class="DocNav-types">
+      <a href="#pkg-types" data-gtmc="doc outline link">
+        Types
+      </a>
+      <ul>
+        
+          
+          <li>
+            <a href="#BatchMsg" title="type BatchMsg" data-gtmc="doc outline link">
+              type BatchMsg
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#Cmd" title="type Cmd" data-gtmc="doc outline link">
+              type Cmd
+            </a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="#Batch" title="Batch(cmds)"
+                        data-gtmc="doc outline link">
+                      Batch(cmds)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Every" title="Every(duration, fn)"
+                        data-gtmc="doc outline link">
+                      Every(duration, fn)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Exec" title="Exec(c, fn)"
+                        data-gtmc="doc outline link">
+                      Exec(c, fn)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#ExecProcess" title="ExecProcess(c, fn)"
+                        data-gtmc="doc outline link">
+                      ExecProcess(c, fn)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Printf" title="Printf(template, args)"
+                        data-gtmc="doc outline link">
+                      Printf(template, args)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Println" title="Println(args)"
+                        data-gtmc="doc outline link">
+                      Println(args)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#ScrollDown" title="ScrollDown(newLines, topBoundary, bottomBoundary)"
+                        data-gtmc="doc outline link">
+                      ScrollDown(newLines, topBoundary, bottomBoundary)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#ScrollUp" title="ScrollUp(newLines, topBoundary, bottomBoundary)"
+                        data-gtmc="doc outline link">
+                      ScrollUp(newLines, topBoundary, bottomBoundary)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Sequence" title="Sequence(cmds)"
+                        data-gtmc="doc outline link">
+                      Sequence(cmds)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Sequentially" title="Sequentially(cmds)"
+                        data-gtmc="doc outline link">
+                      Sequentially(cmds)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#SyncScrollArea" title="SyncScrollArea(lines, topBoundary, bottomBoundary)"
+                        data-gtmc="doc outline link">
+                      SyncScrollArea(lines, topBoundary, bottomBoundary)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Tick" title="Tick(d, fn)"
+                        data-gtmc="doc outline link">
+                      Tick(d, fn)
+                    </a>
+                  </li>
+                
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#ExecCallback" title="type ExecCallback" data-gtmc="doc outline link">
+              type ExecCallback
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#ExecCommand" title="type ExecCommand" data-gtmc="doc outline link">
+              type ExecCommand
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#Key" title="type Key" data-gtmc="doc outline link">
+              type Key
+            </a>
+            
+              <ul>
+                
+                
+                  <li>
+                    <a href="#Key.String" title="(k) String()"
+                        data-gtmc="doc outline link">
+                      (k) String()
+                    </a>
+                  </li>
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#KeyMsg" title="type KeyMsg" data-gtmc="doc outline link">
+              type KeyMsg
+            </a>
+            
+              <ul>
+                
+                
+                  <li>
+                    <a href="#KeyMsg.String" title="(k) String()"
+                        data-gtmc="doc outline link">
+                      (k) String()
+                    </a>
+                  </li>
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#KeyType" title="type KeyType" data-gtmc="doc outline link">
+              type KeyType
+            </a>
+            
+              <ul>
+                
+                
+                  <li>
+                    <a href="#KeyType.String" title="(k) String()"
+                        data-gtmc="doc outline link">
+                      (k) String()
+                    </a>
+                  </li>
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#LogOptionsSetter" title="type LogOptionsSetter" data-gtmc="doc outline link">
+              type LogOptionsSetter
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#Model" title="type Model" data-gtmc="doc outline link">
+              type Model
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#MouseEvent" title="type MouseEvent" data-gtmc="doc outline link">
+              type MouseEvent
+            </a>
+            
+              <ul>
+                
+                
+                  <li>
+                    <a href="#MouseEvent.String" title="(m) String()"
+                        data-gtmc="doc outline link">
+                      (m) String()
+                    </a>
+                  </li>
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#MouseEventType" title="type MouseEventType" data-gtmc="doc outline link">
+              type MouseEventType
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#MouseMsg" title="type MouseMsg" data-gtmc="doc outline link">
+              type MouseMsg
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#Msg" title="type Msg" data-gtmc="doc outline link">
+              type Msg
+            </a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="#ClearScreen" title="ClearScreen()"
+                        data-gtmc="doc outline link">
+                      ClearScreen()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#ClearScrollArea" title="ClearScrollArea()"
+                        data-gtmc="doc outline link">
+                      ClearScrollArea()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#DisableMouse" title="DisableMouse()"
+                        data-gtmc="doc outline link">
+                      DisableMouse()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#EnableMouseAllMotion" title="EnableMouseAllMotion()"
+                        data-gtmc="doc outline link">
+                      EnableMouseAllMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#EnableMouseCellMotion" title="EnableMouseCellMotion()"
+                        data-gtmc="doc outline link">
+                      EnableMouseCellMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#EnterAltScreen" title="EnterAltScreen()"
+                        data-gtmc="doc outline link">
+                      EnterAltScreen()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#ExitAltScreen" title="ExitAltScreen()"
+                        data-gtmc="doc outline link">
+                      ExitAltScreen()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#HideCursor" title="HideCursor()"
+                        data-gtmc="doc outline link">
+                      HideCursor()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Quit" title="Quit()"
+                        data-gtmc="doc outline link">
+                      Quit()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#ShowCursor" title="ShowCursor()"
+                        data-gtmc="doc outline link">
+                      ShowCursor()
+                    </a>
+                  </li>
+                
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#Program" title="type Program" data-gtmc="doc outline link">
+              type Program
+            </a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="#NewProgram" title="NewProgram(model, opts)"
+                        data-gtmc="doc outline link">
+                      NewProgram(model, opts)
+                    </a>
+                  </li>
+                
+                
+                  <li>
+                    <a href="#Program.DisableMouseAllMotion" title="(p) DisableMouseAllMotion()"
+                        data-gtmc="doc outline link">
+                      (p) DisableMouseAllMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.DisableMouseCellMotion" title="(p) DisableMouseCellMotion()"
+                        data-gtmc="doc outline link">
+                      (p) DisableMouseCellMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.EnableMouseAllMotion" title="(p) EnableMouseAllMotion()"
+                        data-gtmc="doc outline link">
+                      (p) EnableMouseAllMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.EnableMouseCellMotion" title="(p) EnableMouseCellMotion()"
+                        data-gtmc="doc outline link">
+                      (p) EnableMouseCellMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.EnterAltScreen" title="(p) EnterAltScreen()"
+                        data-gtmc="doc outline link">
+                      (p) EnterAltScreen()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.ExitAltScreen" title="(p) ExitAltScreen()"
+                        data-gtmc="doc outline link">
+                      (p) ExitAltScreen()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Kill" title="(p) Kill()"
+                        data-gtmc="doc outline link">
+                      (p) Kill()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Printf" title="(p) Printf(template, args)"
+                        data-gtmc="doc outline link">
+                      (p) Printf(template, args)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Println" title="(p) Println(args)"
+                        data-gtmc="doc outline link">
+                      (p) Println(args)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Quit" title="(p) Quit()"
+                        data-gtmc="doc outline link">
+                      (p) Quit()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.ReleaseTerminal" title="(p) ReleaseTerminal()"
+                        data-gtmc="doc outline link">
+                      (p) ReleaseTerminal()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.RestoreTerminal" title="(p) RestoreTerminal()"
+                        data-gtmc="doc outline link">
+                      (p) RestoreTerminal()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Run" title="(p) Run()"
+                        data-gtmc="doc outline link">
+                      (p) Run()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Send" title="(p) Send(msg)"
+                        data-gtmc="doc outline link">
+                      (p) Send(msg)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Start" title="(p) Start()"
+                        data-gtmc="doc outline link">
+                      (p) Start()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.StartReturningModel" title="(p) StartReturningModel()"
+                        data-gtmc="doc outline link">
+                      (p) StartReturningModel()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#Program.Wait" title="(p) Wait()"
+                        data-gtmc="doc outline link">
+                      (p) Wait()
+                    </a>
+                  </li>
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#ProgramOption" title="type ProgramOption" data-gtmc="doc outline link">
+              type ProgramOption
+            </a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="#WithANSICompressor" title="WithANSICompressor()"
+                        data-gtmc="doc outline link">
+                      WithANSICompressor()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithAltScreen" title="WithAltScreen()"
+                        data-gtmc="doc outline link">
+                      WithAltScreen()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithContext" title="WithContext(ctx)"
+                        data-gtmc="doc outline link">
+                      WithContext(ctx)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithFilter" title="WithFilter(filter)"
+                        data-gtmc="doc outline link">
+                      WithFilter(filter)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithInput" title="WithInput(input)"
+                        data-gtmc="doc outline link">
+                      WithInput(input)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithInputTTY" title="WithInputTTY()"
+                        data-gtmc="doc outline link">
+                      WithInputTTY()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithMouseAllMotion" title="WithMouseAllMotion()"
+                        data-gtmc="doc outline link">
+                      WithMouseAllMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithMouseCellMotion" title="WithMouseCellMotion()"
+                        data-gtmc="doc outline link">
+                      WithMouseCellMotion()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithOutput" title="WithOutput(output)"
+                        data-gtmc="doc outline link">
+                      WithOutput(output)
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithoutCatchPanics" title="WithoutCatchPanics()"
+                        data-gtmc="doc outline link">
+                      WithoutCatchPanics()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithoutRenderer" title="WithoutRenderer()"
+                        data-gtmc="doc outline link">
+                      WithoutRenderer()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithoutSignalHandler" title="WithoutSignalHandler()"
+                        data-gtmc="doc outline link">
+                      WithoutSignalHandler()
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#WithoutSignals" title="WithoutSignals()"
+                        data-gtmc="doc outline link">
+                      WithoutSignals()
+                    </a>
+                  </li>
+                
+                
+              </ul>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#QuitMsg" title="type QuitMsg" data-gtmc="doc outline link">
+              type QuitMsg
+            </a>
+             
+          </li>
+        
+          
+          <li>
+            <a href="#WindowSizeMsg" title="type WindowSizeMsg" data-gtmc="doc outline link">
+              type WindowSizeMsg
+            </a>
+             
+          </li>
+         
+      </ul>
+    </li>
+  
+  
+</ul>
+
+      </li>
+    
+    
+      <li>
+        <a href="#section-sourcefiles" data-gtmc="outline link">
+          Source Files
+        </a>
+      </li>
+    
+    
+  </ul>
+
+  </div>
+  <div class="go-Main-navMobile js-mainNavMobile">
+    <label class="go-Label">
+      <select class="go-Select">
+        
+          <option selected disabled>README</option>
+        
+      </select>
+    </label>
+  </div>
+</nav>
+    <article class="go-Main-article js-mainContent">
+  <div class="UnitDetails" data-test-id="UnitDetails" style="display: block;">
+    <div class="UnitDetails-content js-unitDetailsContent" data-test-id="UnitDetails-content">
+      
+        
+  <div class="UnitReadme UnitReadme--expanded js-readme">
+    <h2 class="UnitReadme-title" id="section-readme">
+      <img class="go-Icon" height="24" width="24" src="/static/shared/icon/chrome_reader_mode_gm_grey_24dp.svg" alt="">
+      README
+      <a class="UnitReadme-idLink" href="#section-readme">¶</a>
+    </h2>
+    
+      <div class="UnitReadme-content" data-test-id="Unit-readmeContent">
+        <div class="Overview-readmeContent js-readmeContent"><h3 class="h1" id="readme-bubble-tea">Bubble Tea</h3>
+<p>
+    <img src="https://stuff.charm.sh/bubbletea/bubbletea-github-header-simple.png" width="313" alt="Bubble Tea Title Treatment"><br>
+    <a href="https://github.com/charmbracelet/bubbletea/releases" rel="nofollow"><img src="https://img.shields.io/github/release/charmbracelet/bubbletea.svg" alt="Latest Release"></a>
+    <a href="https://pkg.go.dev/github.com/charmbracelet/bubbletea?tab=doc" rel="nofollow"><img src="https://godoc.org/github.com/golang/gddo?status.svg" alt="GoDoc"></a>
+    <a href="https://github.com/charmbracelet/bubbletea/actions" rel="nofollow"><img src="https://github.com/charmbracelet/bubbletea/workflows/build/badge.svg" alt="Build Status"></a>
+</p>
+<p>The fun, functional and stateful way to build terminal apps. A Go framework
+based on <a href="https://guide.elm-lang.org/architecture/" rel="nofollow">The Elm Architecture</a>. Bubble Tea is well-suited for simple and
+complex terminal applications, either inline, full-window, or a mix of both.</p>
+<p>
+    <img src="https://stuff.charm.sh/bubbletea/bubbletea-example.gif" width="100%" alt="Bubble Tea Example">
+</p>
+<p>Bubble Tea is in use in production and includes a number of features and
+performance optimizations we’ve added along the way. Among those is a standard
+framerate-based renderer, a renderer for high-performance scrollable
+regions which works alongside the main renderer, and mouse support.</p>
+<p>To get started, see the tutorial below, the <a href="http://github.com/charmbracelet/bubbletea/tree/master/examples" rel="nofollow">examples</a>, the
+<a href="https://pkg.go.dev/github.com/charmbracelet/bubbletea?tab=doc" rel="nofollow">docs</a>, the <a href="https://charm.sh/yt" rel="nofollow">video tutorials</a> and some common <a href="#readme-libraries-we-use-with-bubble-tea" rel="nofollow">resources</a>.</p>
+<h4 class="h2" id="readme-by-the-way">By the way</h4>
+<p>Be sure to check out <a href="https://github.com/charmbracelet/bubbles" rel="nofollow">Bubbles</a>, a library of common UI components for Bubble Tea.</p>
+<p>
+    <a href="https://github.com/charmbracelet/bubbles" rel="nofollow"><img src="https://stuff.charm.sh/bubbles/bubbles-badge.png" width="174" alt="Bubbles Badge"></a>  
+    <a href="https://github.com/charmbracelet/bubbles" rel="nofollow"><img src="https://stuff.charm.sh/bubbles-examples/textinput.gif" width="400" alt="Text Input Example from Bubbles"></a>
+</p>
+<hr/>
+<h4 class="h2" id="readme-tutorial">Tutorial</h4>
+<p>Bubble Tea is based on the functional design paradigms of <a href="https://guide.elm-lang.org/architecture/" rel="nofollow">The Elm
+Architecture</a>, which happens to work nicely with Go. It&#39;s a delightful way
+to build applications.</p>
+<p>This tutorial assumes you have a working knowledge of Go.</p>
+<p>By the way, the non-annotated source code for this program is available
+<a href="https://github.com/charmbracelet/bubbletea/tree/master/tutorials/basics" rel="nofollow">on GitHub</a>.</p>
+<h5 class="h3" id="readme-enough-let-s-get-to-it">Enough! Let&#39;s get to it.</h5>
+<p>For this tutorial, we&#39;re making a shopping list.</p>
+<p>To start we&#39;ll define our package and import some libraries. Our only external
+import will be the Bubble Tea library, which we&#39;ll call <code>tea</code> for short.</p>
+<pre><code>package main
+
+import (
+    &#34;fmt&#34;
+    &#34;os&#34;
+
+    tea &#34;github.com/charmbracelet/bubbletea&#34;
+)
+</code></pre>
+<p>Bubble Tea programs are comprised of a <strong>model</strong> that describes the application
+state and three simple methods on that model:</p>
+<ul>
+<li><strong>Init</strong>, a function that returns an initial command for the application to run.</li>
+<li><strong>Update</strong>, a function that handles incoming events and updates the model accordingly.</li>
+<li><strong>View</strong>, a function that renders the UI based on the data in the model.</li>
+</ul>
+<h5 class="h3" id="readme-the-model">The Model</h5>
+<p>So let&#39;s start by defining our model which will store our application&#39;s state.
+It can be any type, but a <code>struct</code> usually makes the most sense.</p>
+<pre><code>type model struct {
+    choices  []string           // items on the to-do list
+    cursor   int                // which to-do list item our cursor is pointing at
+    selected map[int]struct{}   // which to-do items are selected
+}
+</code></pre>
+<h5 class="h3" id="readme-initialization">Initialization</h5>
+<p>Next, we’ll define our application’s initial state. In this case, we’re defining
+a function to return our initial model, however, we could just as easily define
+the initial model as a variable elsewhere, too.</p>
+<pre><code>func initialModel() model {
+	return model{
+		// Our to-do list is a grocery list
+		choices:  []string{&#34;Buy carrots&#34;, &#34;Buy celery&#34;, &#34;Buy kohlrabi&#34;},
+
+		// A map which indicates which choices are selected. We&#39;re using
+		// the  map like a mathematical set. The keys refer to the indexes
+		// of the `choices` slice, above.
+		selected: make(map[int]struct{}),
+	}
+}
+</code></pre>
+<p>Next, we define the <code>Init</code> method. <code>Init</code> can return a <code>Cmd</code> that could perform
+some initial I/O. For now, we don&#39;t need to do any I/O, so for the command,
+we&#39;ll just return <code>nil</code>, which translates to &#34;no command.&#34;</p>
+<pre><code>func (m model) Init() tea.Cmd {
+    // Just return `nil`, which means &#34;no I/O right now, please.&#34;
+    return nil
+}
+</code></pre>
+<h5 class="h3" id="readme-the-update-method">The Update Method</h5>
+<p>Next up is the update method. The update function is called when ”things
+happen.” Its job is to look at what has happened and return an updated model in
+response. It can also return a <code>Cmd</code> to make more things happen, but for now
+don&#39;t worry about that part.</p>
+<p>In our case, when a user presses the down arrow, <code>Update</code>’s job is to notice
+that the down arrow was pressed and move the cursor accordingly (or not).</p>
+<p>The “something happened” comes in the form of a <code>Msg</code>, which can be any type.
+Messages are the result of some I/O that took place, such as a keypress, timer
+tick, or a response from a server.</p>
+<p>We usually figure out which type of <code>Msg</code> we received with a type switch, but
+you could also use a type assertion.</p>
+<p>For now, we&#39;ll just deal with <code>tea.KeyMsg</code> messages, which are automatically
+sent to the update function when keys are pressed.</p>
+<pre><code>func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+    switch msg := msg.(type) {
+
+    // Is it a key press?
+    case tea.KeyMsg:
+
+        // Cool, what was the actual key pressed?
+        switch msg.String() {
+
+        // These keys should exit the program.
+        case &#34;ctrl+c&#34;, &#34;q&#34;:
+            return m, tea.Quit
+
+        // The &#34;up&#34; and &#34;k&#34; keys move the cursor up
+        case &#34;up&#34;, &#34;k&#34;:
+            if m.cursor &gt; 0 {
+                m.cursor--
+            }
+
+        // The &#34;down&#34; and &#34;j&#34; keys move the cursor down
+        case &#34;down&#34;, &#34;j&#34;:
+            if m.cursor &lt; len(m.choices)-1 {
+                m.cursor++
+            }
+
+        // The &#34;enter&#34; key and the spacebar (a literal space) toggle
+        // the selected state for the item that the cursor is pointing at.
+        case &#34;enter&#34;, &#34; &#34;:
+            _, ok := m.selected[m.cursor]
+            if ok {
+                delete(m.selected, m.cursor)
+            } else {
+                m.selected[m.cursor] = struct{}{}
+            }
+        }
+    }
+
+    // Return the updated model to the Bubble Tea runtime for processing.
+    // Note that we&#39;re not returning a command.
+    return m, nil
+}
+</code></pre>
+<p>You may have noticed that ctrl+c and q above return
+a <code>tea.Quit</code> command with the model. That’s a special command which instructs
+the Bubble Tea runtime to quit, exiting the program.</p>
+<h5 class="h3" id="readme-the-view-method">The View Method</h5>
+<p>At last, it’s time to render our UI. Of all the methods, the view is the
+simplest. We look at the model in its current state and use it to return
+a <code>string</code>. That string is our UI!</p>
+<p>Because the view describes the entire UI of your application, you don’t have to
+worry about redrawing logic and stuff like that. Bubble Tea takes care of it
+for you.</p>
+<pre><code>func (m model) View() string {
+    // The header
+    s := &#34;What should we buy at the market?\n\n&#34;
+
+    // Iterate over our choices
+    for i, choice := range m.choices {
+
+        // Is the cursor pointing at this choice?
+        cursor := &#34; &#34; // no cursor
+        if m.cursor == i {
+            cursor = &#34;&gt;&#34; // cursor!
+        }
+
+        // Is this choice selected?
+        checked := &#34; &#34; // not selected
+        if _, ok := m.selected[i]; ok {
+            checked = &#34;x&#34; // selected!
+        }
+
+        // Render the row
+        s += fmt.Sprintf(&#34;%s [%s] %s\n&#34;, cursor, checked, choice)
+    }
+
+    // The footer
+    s += &#34;\nPress q to quit.\n&#34;
+
+    // Send the UI for rendering
+    return s
+}
+</code></pre>
+<h5 class="h3" id="readme-all-together-now">All Together Now</h5>
+<p>The last step is to simply run our program. We pass our initial model to
+<code>tea.NewProgram</code> and let it rip:</p>
+<pre><code>func main() {
+    p := tea.NewProgram(initialModel())
+    if _, err := p.Run(); err != nil {
+        fmt.Printf(&#34;Alas, there&#39;s been an error: %v&#34;, err)
+        os.Exit(1)
+    }
+}
+</code></pre>
+<h4 class="h2" id="readme-what-s-next">What’s Next?</h4>
+<p>This tutorial covers the basics of building an interactive terminal UI, but
+in the real world you&#39;ll also need to perform I/O. To learn about that have a
+look at the <a href="http://github.com/charmbracelet/bubbletea/tree/master/tutorials/commands/" rel="nofollow">Command Tutorial</a>. It&#39;s pretty simple.</p>
+<p>There are also several <a href="http://github.com/charmbracelet/bubbletea/tree/master/examples" rel="nofollow">Bubble Tea examples</a> available and, of course,
+there are <a href="https://pkg.go.dev/github.com/charmbracelet/bubbletea?tab=doc" rel="nofollow">Go Docs</a>.</p>
+<h4 class="h2" id="readme-debugging">Debugging</h4>
+<h5 class="h3" id="readme-debugging-with-delve">Debugging with Delve</h5>
+<p>Since Bubble Tea apps assume control of stdin and stdout, you’ll need to run
+delve in headless mode and then connect to it:</p>
+<pre><code># Start the debugger
+$ dlv debug --headless .
+API server listening at: 127.0.0.1:34241
+
+# Connect to it from another terminal
+$ dlv connect 127.0.0.1:34241
+</code></pre>
+<p>Note that the default port used will vary on your system and per run, so
+actually watch out what address the first <code>dlv</code> run tells you to connect to.</p>
+<h5 class="h3" id="readme-logging-stuff">Logging Stuff</h5>
+<p>You can’t really log to stdout with Bubble Tea because your TUI is busy
+occupying that! You can, however, log to a file by including something like
+the following prior to starting your Bubble Tea program:</p>
+<pre><code>if len(os.Getenv(&#34;DEBUG&#34;)) &gt; 0 {
+	f, err := tea.LogToFile(&#34;debug.log&#34;, &#34;debug&#34;)
+	if err != nil {
+		fmt.Println(&#34;fatal:&#34;, err)
+		os.Exit(1)
+	}
+	defer f.Close()
+}
+</code></pre>
+<p>To see what’s being logged in real time, run <code>tail -f debug.log</code> while you run
+your program in another window.</p>
+<h4 class="h2" id="readme-libraries-we-use-with-bubble-tea">Libraries we use with Bubble Tea</h4>
+<ul>
+<li><a href="https://github.com/charmbracelet/bubbles" rel="nofollow">Bubbles</a>: Common Bubble Tea components such as text inputs, viewports, spinners and so on</li>
+<li><a href="https://github.com/charmbracelet/lipgloss" rel="nofollow">Lip Gloss</a>: Style, format and layout tools for terminal applications</li>
+<li><a href="https://github.com/charmbracelet/harmonica" rel="nofollow">Harmonica</a>: A spring animation library for smooth, natural motion</li>
+<li><a href="https://github.com/lrstanley/bubblezone" rel="nofollow">BubbleZone</a>: Easy mouse event tracking for Bubble Tea components</li>
+<li><a href="https://github.com/muesli/termenv" rel="nofollow">Termenv</a>: Advanced ANSI styling for terminal applications</li>
+<li><a href="https://github.com/muesli/reflow" rel="nofollow">Reflow</a>: Advanced ANSI-aware methods for working with text</li>
+</ul>
+<h4 class="h2" id="readme-bubble-tea-in-the-wild">Bubble Tea in the Wild</h4>
+<p>For some Bubble Tea programs in production, see:</p>
+<ul>
+<li><a href="https://github.com/daskycodes/at_cli" rel="nofollow">AT CLI</a>: execute AT Commands via serial port connections</li>
+<li><a href="https://github.com/Azure/aztfy" rel="nofollow">Aztify</a>: bring Microsoft Azure resources under Terraform</li>
+<li><a href="https://github.com/rubysolo/brows" rel="nofollow">brows</a>: a GitHub release browser</li>
+<li><a href="https://github.com/mrusme/canard" rel="nofollow">Canard</a>: an RSS client</li>
+<li><a href="https://github.com/charmbracelet/charm" rel="nofollow">charm</a>: the official Charm user account manager</li>
+<li><a href="https://github.com/twpayne/chezmoi" rel="nofollow">chezmoi</a>: securely manage your dotfiles across multiple machines</li>
+<li><a href="https://github.com/chhetripradeep/chtop" rel="nofollow">chtop</a>: monitor your ClickHouse node without leaving terminal</li>
+<li><a href="https://github.com/bensadeh/circumflex" rel="nofollow">circumflex</a>: read Hacker News in the terminal</li>
+<li><a href="https://github.com/ajeetdsouza/clidle" rel="nofollow">clidle</a>: a Wordle clone</li>
+<li><a href="https://github.com/koki-develop/clive" rel="nofollow">cLive</a>: automate terminal operations and view them live in a browser</li>
+<li><a href="https://github.com/NVIDIA/container-canary" rel="nofollow">container-canary</a>: a container validator</li>
+<li><a href="https://github.com/aldernero/countdown" rel="nofollow">countdown</a>: a multi-event countdown timer</li>
+<li><a href="https://github.com/purpleclay/dns53" rel="nofollow">dns53</a>: dynamic DNS with Amazon Route53. Expose your EC2 quickly, securely and privately</li>
+<li><a href="https://github.com/awslabs/eks-node-viewer" rel="nofollow">eks-node-viewer</a>: a tool for visualizing dynamic node usage within an eks cluster</li>
+<li><a href="https://github.com/sherlock-project/enola" rel="nofollow">enola</a>: hunt down social media accounts by username across social networks</li>
+<li><a href="https://github.com/kbrgl/flapioca" rel="nofollow">flapioca</a>: Flappy Bird on the CLI!</li>
+<li><a href="https://github.com/knipferrc/fm" rel="nofollow">fm</a>: a terminal-based file manager</li>
+<li><a href="https://github.com/caarlos0/fork-cleaner" rel="nofollow">fork-cleaner</a>: clean up old and inactive forks in your GitHub account</li>
+<li><a href="https://github.com/jon4hz/fztea" rel="nofollow">fztea</a>: a Flipper Zero TUI</li>
+<li><a href="https://github.com/maaslalani/gambit" rel="nofollow">gambit</a>: chess in the terminal</li>
+<li><a href="https://git.sr.ht/~rafael/gembro" rel="nofollow">gembro</a>: a mouse-driven Gemini browser</li>
+<li><a href="https://github.com/joaom00/gh-b" rel="nofollow">gh-b</a>: a GitHub CLI extension for managing branches</li>
+<li><a href="https://www.github.com/dlvhdr/gh-dash" rel="nofollow">gh-dash</a>: a GitHub CLI extension for PRs and issues</li>
+<li><a href="https://github.com/mritd/gitflow-toolkit" rel="nofollow">gitflow-toolkit</a>: a GitFlow submission tool</li>
+<li><a href="https://github.com/charmbracelet/glow" rel="nofollow">Glow</a>: a markdown reader, browser, and online markdown stash</li>
+<li><a href="https://github.com/orlangure/gocovsh" rel="nofollow">gocovsh</a>: explore Go coverage reports from the CLI</li>
+<li><a href="https://github.com/fedeztk/got" rel="nofollow">got</a>: a simple translator and text-to-speech app build on top of simplytranslate&#39;s APIs</li>
+<li><a href="https://github.com/gonetx/httpit" rel="nofollow">httpit</a>: a rapid http(s) benchmark tool</li>
+<li><a href="https://github.com/r-darwish/idnt" rel="nofollow">IDNT</a>: a batch software uninstaller</li>
+<li><a href="https://github.com/CamiloGarciaLaRotta/kboard" rel="nofollow">kboard</a>: a typing game</li>
+<li><a href="https://github.com/MicheleFiladelfia/mandelbrot-cli" rel="nofollow">mandelbrot-cli</a>: a multiplatform terminal mandelbrot set explorer</li>
+<li><a href="https://github.com/minio/mc" rel="nofollow">mc</a>: the official <a href="https://min.io" rel="nofollow">MinIO</a> client</li>
+<li><a href="https://github.com/mergestat/mergestat" rel="nofollow">mergestat</a>: run SQL queries on git repositories</li>
+<li><a href="https://github.com/mrusme/neonmodem" rel="nofollow">Neon Modem Overdrive</a>: a BBS-style TUI client for Discourse, Lemmy, Lobste.rs and Hacker News</li>
+<li><a href="https://github.com/torbratsberg/noted" rel="nofollow">Noted</a>: a note viewer and manager</li>
+<li><a href="https://github.com/chip/pathos" rel="nofollow">pathos</a>: a PATH env variable editor</li>
+<li><a href="https://github.com/ZinoKader/portal" rel="nofollow">portal</a>: secure transfers between computers</li>
+<li><a href="https://github.com/SaltFishPr/redis-viewer" rel="nofollow">redis-viewer</a>: a Redis databases browser</li>
+<li><a href="https://github.com/fedeztk/sku" rel="nofollow">sku</a>: Sudoku on the CLI</li>
+<li><a href="https://github.com/maaslalani/slides" rel="nofollow">Slides</a>: a markdown-based presentation tool</li>
+<li><a href="https://github.com/CLIP-HPC/SlurmCommander" rel="nofollow">SlurmCommander</a>: a Slurm workload manager TUI</li>
+<li><a href="https://github.com/charmbracelet/soft-serve" rel="nofollow">Soft Serve</a>: a command-line-first Git server that runs a TUI over SSH</li>
+<li><a href="https://github.com/brianstrauch/solitaire-tui" rel="nofollow">solitaire-tui</a>: Klondike Solitaire for the terminal</li>
+<li><a href="https://github.com/thestormforge/optimize-controller" rel="nofollow">StormForge Optimize Controller</a>: a tool for experimenting with application configurations in Kubernetes</li>
+<li><a href="https://github.com/wille1101/sttg" rel="nofollow">STTG</a>: a teletext client for SVT, Sweden’s national public television station</li>
+<li><a href="https://github.com/abhimanyu003/sttr" rel="nofollow">sttr</a>: a general-purpose text transformer</li>
+<li><a href="https://github.com/caarlos0/tasktimer" rel="nofollow">tasktimer</a>: a dead-simple task timer</li>
+<li><a href="https://github.com/mathaou/termdbms" rel="nofollow">termdbms</a>: a keyboard and mouse driven database browser</li>
+<li><a href="https://github.com/achannarasappa/ticker" rel="nofollow">ticker</a>: a terminal stock viewer and stock position tracker</li>
+<li><a href="https://github.com/abdfnx/tran" rel="nofollow">tran</a>: securely transfer stuff between computers (based on <a href="https://github.com/ZinoKader/portal" rel="nofollow">portal</a>)</li>
+<li><a href="https://github.com/maaslalani/typer" rel="nofollow">Typer</a>: a typing test</li>
+<li><a href="https://github.com/oz/tz" rel="nofollow">tz</a>: an aid for scheduling across multiple time zones</li>
+<li><a href="https://github.com/ariasmn/ugm" rel="nofollow">ugm</a>: a unix user and group browser</li>
+<li><a href="https://github.com/robinovitch61/wander" rel="nofollow">wander</a>: a HashiCorp Nomad terminal client</li>
+<li><a href="https://github.com/AndrianBdn/wg-cmd" rel="nofollow">WG Commander</a>: a TUI for a simple WireGuard VPN setup</li>
+<li><a href="https://github.com/charmbracelet/wishlist" rel="nofollow">wishlist</a>: an SSH directory</li>
+</ul>
+<h4 class="h2" id="readme-feedback">Feedback</h4>
+<p>We&#39;d love to hear your thoughts on this project. Feel free to drop us a note!</p>
+<ul>
+<li><a href="https://twitter.com/charmcli" rel="nofollow">Twitter</a></li>
+<li><a href="https://mastodon.social/@charmcli" rel="nofollow">The Fediverse</a></li>
+<li><a href="https://charm.sh/chat" rel="nofollow">Discord</a></li>
+</ul>
+<h4 class="h2" id="readme-acknowledgments">Acknowledgments</h4>
+<p>Bubble Tea is based on the paradigms of <a href="https://guide.elm-lang.org/architecture/" rel="nofollow">The Elm Architecture</a> by Evan
+Czaplicki et alia and the excellent <a href="https://github.com/tj/go-tea" rel="nofollow">go-tea</a> by TJ Holowaychuk. It’s
+inspired by the many great <a href="https://de.wikipedia.org/wiki/Zeichenorientierte_Benutzerschnittstelle" rel="nofollow"><em>Zeichenorientierte Benutzerschnittstellen</em></a>
+of days past.</p>
+<h4 class="h2" id="readme-license">License</h4>
+<p><a href="https://github.com/charmbracelet/bubbletea/raw/master/LICENSE" rel="nofollow">MIT</a></p>
+<hr/>
+<p>Part of <a href="https://charm.sh" rel="nofollow">Charm</a>.</p>
+<p><a href="https://charm.sh/" rel="nofollow"><img alt="The Charm logo" src="https://stuff.charm.sh/charm-badge.jpg" width="400"></a></p>
+<p>Charm热爱开源 • Charm loves open source • نحنُ نحب المصادر المفتوحة</p>
+</div>
+      </div>
+      <button class="UnitReadme-expandLink js-readmeExpand"
+          data-test-id="readme-expand" data-gtmc="readme button"
+          aria-label="Expand Readme">Expand ▾</button>
+      <button class="UnitReadme-collapseLink js-readmeCollapse"
+          data-test-id="readme-collapse" data-gtmc="readme button"
+          aria-label="Expand Readme">Collapse ▴</button>
+    
+  </div>
+
+      
+      
+        
+          
+  <div class="UnitDoc">
+    <h2 class="UnitDoc-title" id="section-documentation">
+      <img class="go-Icon" height="24" width="24" src="/static/shared/icon/code_gm_grey_24dp.svg" alt="">
+      Documentation
+      <a class="UnitDoc-idLink" href="#section-documentation">¶</a>
+    </h2>
+    
+  
+    
+      <div class="UnitBuildContext-titleContext">
+        <label>
+          <a href="https://go.dev/about#build-context" class="UnitBuildContext-link">Rendered for</a>
+          <select class="go-Select js-buildContextSelect">
+            
+              <option value="linux">linux/amd64</option>
+            
+              <option value="windows">windows/amd64</option>
+            
+              <option value="darwin">darwin/amd64</option>
+            
+              <option value="js">js/wasm</option>
+            
+          </select>
+        </label>
+      </div>
+    
+  
+
+    <div class="Documentation js-documentation">
+      
+        
+
+<div class="Documentation-content js-docContent"> <section class="Documentation-overview">
+    <h3 tabindex="-1" id="pkg-overview" class="Documentation-overviewHeader">Overview <a href="#pkg-overview">¶</a></h3>
+
+<p>Package tea provides a framework for building rich terminal user interfaces
+based on the paradigms of The Elm Architecture. It&#39;s well-suited for simple
+and complex terminal applications, either inline, full-window, or a mix of
+both. It&#39;s been battle-tested in several large projects and is
+production-ready.
+</p><p>A tutorial is available at <a href="https://github.com/charmbracelet/bubbletea/tree/master/tutorials">https://github.com/charmbracelet/bubbletea/tree/master/tutorials</a>
+</p><p>Example programs can be found at <a href="https://github.com/charmbracelet/bubbletea/tree/master/examples">https://github.com/charmbracelet/bubbletea/tree/master/examples</a>
+</p>
+</section><section class="Documentation-index">
+    <h3 id="pkg-index" class="Documentation-indexHeader">Index <a href="#pkg-index">¶</a></h3>
+
+<ul class="Documentation-indexList">
+<li class="Documentation-indexVariables"><a href="#pkg-variables">Variables</a></li>
+<li class="Documentation-indexFunction">
+        <a href="#LogToFile">func LogToFile(path string, prefix string) (*os.File, error)</a></li>
+<li class="Documentation-indexFunction">
+        <a href="#LogToFileWith">func LogToFileWith(path string, prefix string, log LogOptionsSetter) (*os.File, error)</a></li>
+<li class="Documentation-indexType">
+          <a href="#BatchMsg">type BatchMsg</a></li>
+<li class="Documentation-indexType">
+          <a href="#Cmd">type Cmd</a></li>
+<li><ul class="Documentation-indexTypeFunctions">
+<li>
+            <a href="#Batch">func Batch(cmds ...Cmd) Cmd</a></li>
+<li>
+            <a href="#Every">func Every(duration time.Duration, fn func(time.Time) Msg) Cmd</a></li>
+<li>
+            <a href="#Exec">func Exec(c ExecCommand, fn ExecCallback) Cmd</a></li>
+<li>
+            <a href="#ExecProcess">func ExecProcess(c *exec.Cmd, fn ExecCallback) Cmd</a></li>
+<li>
+            <a href="#Printf">func Printf(template string, args ...interface{}) Cmd</a></li>
+<li>
+            <a href="#Println">func Println(args ...interface{}) Cmd</a></li>
+<li>
+            <a href="#ScrollDown">func ScrollDown(newLines []string, topBoundary, bottomBoundary int) Cmd</a></li>
+<li>
+            <a href="#ScrollUp">func ScrollUp(newLines []string, topBoundary, bottomBoundary int) Cmd</a></li>
+<li>
+            <a href="#Sequence">func Sequence(cmds ...Cmd) Cmd</a></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Sequentially">func Sequentially(cmds ...Cmd) Cmd</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a href="#SyncScrollArea">func SyncScrollArea(lines []string, topBoundary int, bottomBoundary int) Cmd</a></li>
+<li>
+            <a href="#Tick">func Tick(d time.Duration, fn func(time.Time) Msg) Cmd</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#ExecCallback">type ExecCallback</a></li>
+<li class="Documentation-indexType">
+          <a href="#ExecCommand">type ExecCommand</a></li>
+<li class="Documentation-indexType">
+          <a href="#Key">type Key</a></li>
+<li><ul class="Documentation-indexTypeMethods">
+<li>
+            <a href="#Key.String">func (k Key) String() (str string)</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#KeyMsg">type KeyMsg</a></li>
+<li><ul class="Documentation-indexTypeMethods">
+<li>
+            <a href="#KeyMsg.String">func (k KeyMsg) String() (str string)</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#KeyType">type KeyType</a></li>
+<li><ul class="Documentation-indexTypeMethods">
+<li>
+            <a href="#KeyType.String">func (k KeyType) String() (str string)</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#LogOptionsSetter">type LogOptionsSetter</a></li>
+<li class="Documentation-indexType">
+          <a href="#Model">type Model</a></li>
+<li class="Documentation-indexType">
+          <a href="#MouseEvent">type MouseEvent</a></li>
+<li><ul class="Documentation-indexTypeMethods">
+<li>
+            <a href="#MouseEvent.String">func (m MouseEvent) String() (s string)</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#MouseEventType">type MouseEventType</a></li>
+<li class="Documentation-indexType">
+          <a href="#MouseMsg">type MouseMsg</a></li>
+<li class="Documentation-indexType">
+          <a href="#Msg">type Msg</a></li>
+<li><ul class="Documentation-indexTypeFunctions">
+<li>
+            <a href="#ClearScreen">func ClearScreen() Msg</a></li>
+<li>
+            <a href="#ClearScrollArea">func ClearScrollArea() Msg</a></li>
+<li>
+            <a href="#DisableMouse">func DisableMouse() Msg</a></li>
+<li>
+            <a href="#EnableMouseAllMotion">func EnableMouseAllMotion() Msg</a></li>
+<li>
+            <a href="#EnableMouseCellMotion">func EnableMouseCellMotion() Msg</a></li>
+<li>
+            <a href="#EnterAltScreen">func EnterAltScreen() Msg</a></li>
+<li>
+            <a href="#ExitAltScreen">func ExitAltScreen() Msg</a></li>
+<li>
+            <a href="#HideCursor">func HideCursor() Msg</a></li>
+<li>
+            <a href="#Quit">func Quit() Msg</a></li>
+<li>
+            <a href="#ShowCursor">func ShowCursor() Msg</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#Program">type Program</a></li>
+<li><ul class="Documentation-indexTypeFunctions">
+<li>
+            <a href="#NewProgram">func NewProgram(model Model, opts ...ProgramOption) *Program</a></li>
+</ul></li>
+<li><ul class="Documentation-indexTypeMethods">
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.DisableMouseAllMotion">func (p *Program) DisableMouseAllMotion()</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.DisableMouseCellMotion">func (p *Program) DisableMouseCellMotion()</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.EnableMouseAllMotion">func (p *Program) EnableMouseAllMotion()</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.EnableMouseCellMotion">func (p *Program) EnableMouseCellMotion()</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.EnterAltScreen">func (p *Program) EnterAltScreen()</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.ExitAltScreen">func (p *Program) ExitAltScreen()</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a href="#Program.Kill">func (p *Program) Kill()</a></li>
+<li>
+            <a href="#Program.Printf">func (p *Program) Printf(template string, args ...interface{})</a></li>
+<li>
+            <a href="#Program.Println">func (p *Program) Println(args ...interface{})</a></li>
+<li>
+            <a href="#Program.Quit">func (p *Program) Quit()</a></li>
+<li>
+            <a href="#Program.ReleaseTerminal">func (p *Program) ReleaseTerminal() error</a></li>
+<li>
+            <a href="#Program.RestoreTerminal">func (p *Program) RestoreTerminal() error</a></li>
+<li>
+            <a href="#Program.Run">func (p *Program) Run() (Model, error)</a></li>
+<li>
+            <a href="#Program.Send">func (p *Program) Send(msg Msg)</a></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.Start">func (p *Program) Start() error</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a class="js-deprecatedTagLink" href="#Program.StartReturningModel">func (p *Program) StartReturningModel() (Model, error)</a><span class="Documentation-indexDeprecated Documentation-deprecatedTag">deprecated</span></li>
+<li>
+            <a href="#Program.Wait">func (p *Program) Wait()</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#ProgramOption">type ProgramOption</a></li>
+<li><ul class="Documentation-indexTypeFunctions">
+<li>
+            <a href="#WithANSICompressor">func WithANSICompressor() ProgramOption</a></li>
+<li>
+            <a href="#WithAltScreen">func WithAltScreen() ProgramOption</a></li>
+<li>
+            <a href="#WithContext">func WithContext(ctx context.Context) ProgramOption</a></li>
+<li>
+            <a href="#WithFilter">func WithFilter(filter func(Model, Msg) Msg) ProgramOption</a></li>
+<li>
+            <a href="#WithInput">func WithInput(input io.Reader) ProgramOption</a></li>
+<li>
+            <a href="#WithInputTTY">func WithInputTTY() ProgramOption</a></li>
+<li>
+            <a href="#WithMouseAllMotion">func WithMouseAllMotion() ProgramOption</a></li>
+<li>
+            <a href="#WithMouseCellMotion">func WithMouseCellMotion() ProgramOption</a></li>
+<li>
+            <a href="#WithOutput">func WithOutput(output io.Writer) ProgramOption</a></li>
+<li>
+            <a href="#WithoutCatchPanics">func WithoutCatchPanics() ProgramOption</a></li>
+<li>
+            <a href="#WithoutRenderer">func WithoutRenderer() ProgramOption</a></li>
+<li>
+            <a href="#WithoutSignalHandler">func WithoutSignalHandler() ProgramOption</a></li>
+<li>
+            <a href="#WithoutSignals">func WithoutSignals() ProgramOption</a></li>
+</ul></li>
+<li class="Documentation-indexType">
+          <a href="#QuitMsg">type QuitMsg</a></li>
+<li class="Documentation-indexType">
+          <a href="#WindowSizeMsg">type WindowSizeMsg</a></li>
+</ul>
+</section><h3 tabindex="-1" id="pkg-constants" class="Documentation-constantsHeader">Constants <a href="#pkg-constants">¶</a></h3>
+
+  <section class="Documentation-constants"><p class="Documentation-empty">This section is empty.</p></section>
+
+  <h3 tabindex="-1" id="pkg-variables" class="Documentation-variablesHeader">Variables <a href="#pkg-variables">¶</a></h3>
+
+  <section class="Documentation-variables">
+    <div class="Documentation-declaration">
+      <span class="Documentation-declarationLink"><a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L31">View Source</a></span>
+      <pre><span id="ErrProgramKilled" data-kind="variable">var ErrProgramKilled = <a href="/errors">errors</a>.<a href="/errors#New">New</a>(&#34;program was killed&#34;)</span></pre>
+    </div>
+  <p>ErrProgramKilled is returned by <a href="#Program.Run">Program.Run</a> when the program got killed.
+</p>
+</section>
+
+  <h3 tabindex="-1" id="pkg-functions" class="Documentation-functionsHeader">Functions <a href="#pkg-functions">¶</a></h3>
+
+  <section class="Documentation-functions"><div class="Documentation-function">
+	  
+  
+  
+    <h4 tabindex="-1" id="LogToFile" data-kind="function" class="Documentation-functionHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/logging.go#L22">LogToFile</a> <a class="Documentation-idLink" href="#LogToFile">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func LogToFile(path <a href="/builtin#string">string</a>, prefix <a href="/builtin#string">string</a>) (*<a href="/os">os</a>.<a href="/os#File">File</a>, <a href="/builtin#error">error</a>)</pre>
+    </div>
+  <p>LogToFile sets up default logging to log to a file. This is helpful as we
+can&#39;t print to the terminal since our TUI is occupying it. If the file
+doesn&#39;t exist it will be created.
+</p><p>Don&#39;t forget to close the file when you&#39;re done with it.
+</p><pre>  f, err := LogToFile(&#34;debug.log&#34;, &#34;debug&#34;)
+  if err != nil {
+		fmt.Println(&#34;fatal:&#34;, err)
+		os.Exit(1)
+  }
+  defer f.Close()
+</pre>
+
+  
+
+        </div><div class="Documentation-function">
+	  
+  
+  
+    <h4 tabindex="-1" id="LogToFileWith" data-kind="function" class="Documentation-functionHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/logging.go#L34">LogToFileWith</a> <a class="Documentation-idLink" href="#LogToFileWith">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.24.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func LogToFileWith(path <a href="/builtin#string">string</a>, prefix <a href="/builtin#string">string</a>, log <a href="#LogOptionsSetter">LogOptionsSetter</a>) (*<a href="/os">os</a>.<a href="/os#File">File</a>, <a href="/builtin#error">error</a>)</pre>
+    </div>
+  <p>LogToFileWith does allows to call LogToFile with a custom LogOptionsSetter.
+</p>
+
+  
+
+        </div></section>
+
+  <h3 tabindex="-1" id="pkg-types" class="Documentation-typesHeader">Types <a href="#pkg-types">¶</a></h3>
+
+  <section class="Documentation-types"><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="BatchMsg" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/commands.go#L33">BatchMsg</a> <a class="Documentation-idLink" href="#BatchMsg">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.23.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type BatchMsg []<a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>BatchMsg is a message used to perform a bunch of commands concurrently with
+no ordering guarantees. You can send a BatchMsg with Batch.
+</p>
+
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="Cmd" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L59">Cmd</a> <a class="Documentation-idLink" href="#Cmd">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type Cmd func() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>Cmd is an IO operation that returns a message when it&#39;s complete. If it&#39;s
+nil it&#39;s considered a no-op. Use it for things like HTTP requests, timers,
+saving and loading from disk, and so on.
+</p><p>Note that there&#39;s almost never a reason to use a command to send a message
+to another part of your program. That can almost always be done in the
+update function.
+</p>
+<div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Batch" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/commands.go#L15">Batch</a> <a class="Documentation-idLink" href="#Batch">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Batch(cmds ...<a href="#Cmd">Cmd</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Batch performs a bunch of commands concurrently with no ordering guarantees
+about the results. Use a Batch to return several commands.
+</p><p>Example:
+</p><pre>    func (m model) Init() Cmd {
+	       return tea.Batch(someCommand, someOtherCommand)
+    }
+</pre>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Every" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/commands.go#L92">Every</a> <a class="Documentation-idLink" href="#Every">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Every(duration <a href="/time">time</a>.<a href="/time#Duration">Duration</a>, fn func(<a href="/time">time</a>.<a href="/time#Time">Time</a>) <a href="#Msg">Msg</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Every is a command that ticks in sync with the system clock. So, if you
+wanted to tick with the system clock every second, minute or hour you
+could use this. It&#39;s also handy for having different things tick in sync.
+</p><p>Because we&#39;re ticking with the system clock the tick will likely not run for
+the entire specified duration. For example, if we&#39;re ticking for one minute
+and the clock is at 12:34:20 then the next tick will happen at 12:35:00, 40
+seconds later.
+</p><p>To produce the command, pass a duration and a function which returns
+a message containing the time at which the tick occurred.
+</p><pre>type TickMsg time.Time
+
+cmd := Every(time.Second, func(t time.Time) Msg {
+   return TickMsg(t)
+})
+</pre><p>Beginners&#39; note: Every sends a single message and won&#39;t automatically
+dispatch messages at an interval. To do that, you&#39;ll want to return another
+Every command after receiving your tick message. For example:
+</p><pre>type TickMsg time.Time
+
+// Send a message every second.
+func tickEvery() Cmd {
+    return Every(time.Second, func(t time.Time) Msg {
+        return TickMsg(t)
+    })
+}
+
+func (m model) Init() Cmd {
+    // Start ticking.
+    return tickEvery()
+}
+
+func (m model) Update(msg Msg) (Model, Cmd) {
+    switch msg.(type) {
+    case TickMsg:
+        // Return your Every command again to loop.
+        return m, tickEvery()
+    }
+    return m, nil
+}
+</pre><p>Every is analogous to Tick in the Elm Architecture.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Exec" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/exec.go#L22">Exec</a> <a class="Documentation-idLink" href="#Exec">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.21.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Exec(c <a href="#ExecCommand">ExecCommand</a>, fn <a href="#ExecCallback">ExecCallback</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Exec is used to perform arbitrary I/O in a blocking fashion, effectively
+pausing the Program while execution is running and resuming it when
+execution has completed.
+</p><p>Most of the time you&#39;ll want to use ExecProcess, which runs an exec.Cmd.
+</p><p>For non-interactive i/o you should use a Cmd (that is, a tea.Cmd).
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="ExecProcess" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/exec.go#L50">ExecProcess</a> <a class="Documentation-idLink" href="#ExecProcess">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.21.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func ExecProcess(c *<a href="/os/exec">exec</a>.<a href="/os/exec#Cmd">Cmd</a>, fn <a href="#ExecCallback">ExecCallback</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>ExecProcess runs the given *exec.Cmd in a blocking fashion, effectively
+pausing the Program while the command is running. After the *exec.Cmd exists
+the Program resumes. It&#39;s useful for spawning other interactive applications
+such as editors and shells from within a Program.
+</p><p>To produce the command, pass an *exec.Cmd and a function which returns
+a message containing the error which may have occurred when running the
+ExecCommand.
+</p><pre>type VimFinishedMsg struct { err error }
+
+c := exec.Command(&#34;vim&#34;, &#34;file.txt&#34;)
+
+cmd := ExecProcess(c, func(err error) Msg {
+    return VimFinishedMsg{err: err}
+})
+</pre><p>Or, if you don&#39;t care about errors, you could simply:
+</p><pre>cmd := ExecProcess(exec.Command(&#34;vim&#34;, &#34;file.txt&#34;), nil)
+</pre><p>For non-interactive i/o you should use a Cmd (that is, a tea.Cmd).
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Printf" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/standard_renderer.go#L655">Printf</a> <a class="Documentation-idLink" href="#Printf">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.22.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Printf(template <a href="/builtin#string">string</a>, args ...interface{}) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Printf prints above the Program. It takes a format template followed by
+values similar to fmt.Printf. This output is unmanaged by the program and
+will persist across renders by the Program.
+</p><p>Unlike fmt.Printf (but similar to log.Printf) the message will be print on
+its own line.
+</p><p>If the altscreen is active no output will be printed.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Println" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/standard_renderer.go#L639">Println</a> <a class="Documentation-idLink" href="#Println">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.22.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Println(args ...interface{}) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Println prints above the Program. This output is unmanaged by the program and
+will persist across renders by the Program.
+</p><p>Unlike fmt.Println (but similar to log.Println) the message will be print on
+its own line.
+</p><p>If the altscreen is active no output will be printed.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="ScrollDown" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/standard_renderer.go#L618">ScrollDown</a> <a class="Documentation-idLink" href="#ScrollDown">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.9.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func ScrollDown(newLines []<a href="/builtin#string">string</a>, topBoundary, bottomBoundary <a href="/builtin#int">int</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>ScrollDown adds lines to the bottom of the scrollable region, pushing
+existing lines above up. Lines that are pushed out of the scrollable region
+disappear from view.
+</p><p>For high-performance, scroll-based rendering only.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="ScrollUp" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/standard_renderer.go#L597">ScrollUp</a> <a class="Documentation-idLink" href="#ScrollUp">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.9.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func ScrollUp(newLines []<a href="/builtin#string">string</a>, topBoundary, bottomBoundary <a href="/builtin#int">int</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>ScrollUp adds lines to the top of the scrollable region, pushing existing
+lines below down. Lines that are pushed out the scrollable region disappear
+from view.
+</p><p>For high-performance, scroll-based rendering only.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Sequence" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/commands.go#L37">Sequence</a> <a class="Documentation-idLink" href="#Sequence">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.23.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Sequence(cmds ...<a href="#Cmd">Cmd</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Sequence runs the given commands one at a time, in order. Contrast this with
+Batch, which runs commands concurrently.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Sequentially" data-kind="function" class="Documentation-typeFuncHeader">
+          <span class="Documentation-deprecatedTitle">
+            func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/commands.go#L160">Sequentially</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.12.4</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func Sequentially(cmds ...<a href="#Cmd">Cmd</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Sequentially produces a command that sequentially executes the given
+commands.
+The Msg returned is the first non-nil message returned by a Cmd.
+</p><pre>func saveStateCmd() Msg {
+   if err := save(); err != nil {
+       return errMsg{err}
+   }
+   return nil
+}
+
+cmd := Sequentially(saveStateCmd, Quit)
+</pre><p>Deprecated: use Sequence instead.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="SyncScrollArea" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/standard_renderer.go#L566">SyncScrollArea</a> <a class="Documentation-idLink" href="#SyncScrollArea">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.9.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func SyncScrollArea(lines []<a href="/builtin#string">string</a>, topBoundary <a href="/builtin#int">int</a>, bottomBoundary <a href="/builtin#int">int</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>SyncScrollArea performs a paint of the entire region designated to be the
+scrollable area. This is required to initialize the scrollable region and
+should also be called on resize (WindowSizeMsg).
+</p><p>For high-performance, scroll-based rendering only.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Tick" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/commands.go#L139">Tick</a> <a class="Documentation-idLink" href="#Tick">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Tick(d <a href="/time">time</a>.<a href="/time#Duration">Duration</a>, fn func(<a href="/time">time</a>.<a href="/time#Time">Time</a>) <a href="#Msg">Msg</a>) <a href="#Cmd">Cmd</a></pre>
+    </div>
+  <p>Tick produces a command at an interval independent of the system clock at
+the given duration. That is, the timer begins precisely when invoked,
+and runs for its entire duration.
+</p><p>To produce the command, pass a duration and a function which returns
+a message containing the time at which the tick occurred.
+</p><pre>type TickMsg time.Time
+
+cmd := Tick(time.Second, func(t time.Time) Msg {
+   return TickMsg(t)
+})
+</pre><p>Beginners&#39; note: Tick sends a single message and won&#39;t automatically
+dispatch messages at an interval. To do that, you&#39;ll want to return another
+Tick command after receiving your tick message. For example:
+</p><pre>type TickMsg time.Time
+
+func doTick() Cmd {
+    return Tick(time.Second, func(t time.Time) Msg {
+        return TickMsg(t)
+    })
+}
+
+func (m model) Init() Cmd {
+    // Start ticking.
+    return doTick()
+}
+
+func (m model) Update(msg Msg) (Model, Cmd) {
+    switch msg.(type) {
+    case TickMsg:
+        // Return your Tick command again to loop.
+        return m, doTick()
+    }
+    return m, nil
+}
+</pre>
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="ExecCallback" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/exec.go#L56">ExecCallback</a> <a class="Documentation-idLink" href="#ExecCallback">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.21.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type ExecCallback func(<a href="/builtin#error">error</a>) <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>ExecCallback is used when executing an *exec.Command to return a message
+with an error, which may or may not be nil.
+</p>
+
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="ExecCommand" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/exec.go#L60">ExecCommand</a> <a class="Documentation-idLink" href="#ExecCommand">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.21.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type ExecCommand interface {
+<span id="ExecCommand.Run" data-kind="method">	Run() <a href="/builtin#error">error</a>
+</span><span id="ExecCommand.SetStdin" data-kind="method">	SetStdin(<a href="/io">io</a>.<a href="/io#Reader">Reader</a>)
+</span><span id="ExecCommand.SetStdout" data-kind="method">	SetStdout(<a href="/io">io</a>.<a href="/io#Writer">Writer</a>)
+</span><span id="ExecCommand.SetStderr" data-kind="method">	SetStderr(<a href="/io">io</a>.<a href="/io#Writer">Writer</a>)
+</span>}</pre>
+    </div>
+  <p>ExecCommand can be implemented to execute things in a blocking fashion in
+the current terminal.
+</p>
+
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="Key" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/key.go#L53">Key</a> <a class="Documentation-idLink" href="#Key">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type Key struct {
+<span id="Key.Type" data-kind="field">	Type  <a href="#KeyType">KeyType</a>
+</span><span id="Key.Runes" data-kind="field">	Runes []<a href="/builtin#rune">rune</a>
+</span><span id="Key.Alt" data-kind="field">	Alt   <a href="/builtin#bool">bool</a>
+</span>}</pre>
+    </div>
+  <p>Key contains information about a keypress.
+</p>
+<div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Key.String" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (Key) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/key.go#L65">String</a> <a class="Documentation-idLink" href="#Key.String">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.13.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (k <a href="#Key">Key</a>) String() (str <a href="/builtin#string">string</a>)</pre>
+    </div>
+  <p>String returns a friendly string representation for a key. It&#39;s safe (and
+encouraged) for use in key comparison.
+</p><pre>k := Key{Type: KeyEnter}
+fmt.Println(k)
+// Output: enter
+</pre>
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="KeyMsg" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/key.go#L44">KeyMsg</a> <a class="Documentation-idLink" href="#KeyMsg">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type KeyMsg <a href="#Key">Key</a></pre>
+    </div>
+  <p>KeyMsg contains information about a keypress. KeyMsgs are always sent to
+the program&#39;s update function. There are a couple general patterns you could
+use to check for keypresses:
+</p><pre>// Switch on the string representation of the key (shorter)
+switch msg := msg.(type) {
+case KeyMsg:
+    switch msg.String() {
+    case &#34;enter&#34;:
+        fmt.Println(&#34;you pressed enter!&#34;)
+    case &#34;a&#34;:
+        fmt.Println(&#34;you pressed a!&#34;)
+    }
+}
+
+// Switch on the key type (more foolproof)
+switch msg := msg.(type) {
+case KeyMsg:
+    switch msg.Type {
+    case KeyEnter:
+        fmt.Println(&#34;you pressed enter!&#34;)
+    case KeyRunes:
+        switch string(msg.Runes) {
+        case &#34;a&#34;:
+            fmt.Println(&#34;you pressed a!&#34;)
+        }
+    }
+}
+</pre><p>Note that Key.Runes will always contain at least one character, so you can
+always safely call Key.Runes[0]. In most cases Key.Runes will only contain
+one character, though certain input method editors (most notably Chinese
+IMEs) can input multiple runes at once.
+</p>
+<div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="KeyMsg.String" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (KeyMsg) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/key.go#L48">String</a> <a class="Documentation-idLink" href="#KeyMsg.String">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (k <a href="#KeyMsg">KeyMsg</a>) String() (str <a href="/builtin#string">string</a>)</pre>
+    </div>
+  <p>String returns a string representation for a key message. It&#39;s safe (and
+encouraged) for use in key comparison.
+</p>
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="KeyType" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/key.go#L93">KeyType</a> <a class="Documentation-idLink" href="#KeyType">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type KeyType <a href="/builtin#int">int</a></pre>
+    </div>
+  <p>KeyType indicates the key pressed, such as KeyEnter or KeyBreak or KeyCtrlC.
+All other keys will be type KeyRunes. To get the rune value, check the Rune
+method on a Key struct, or use the Key.String() method:
+</p><pre>k := Key{Type: KeyRunes, Runes: []rune{&#39;a&#39;}, Alt: true}
+if k.Type == KeyRunes {
+
+    fmt.Println(k.Runes)
+    // Output: a
+
+    fmt.Println(k.String())
+    // Output: alt+a
+
+}
+</pre>
+<div class="Documentation-typeConstant">
+    <div class="Documentation-declaration">
+      <pre>const (
+<span id="KeyNull" data-kind="constant">	KeyNull      <a href="#KeyType">KeyType</a> = keyNUL
+</span><span id="KeyBreak" data-kind="constant">	KeyBreak     <a href="#KeyType">KeyType</a> = keyETX
+</span><span id="KeyEnter" data-kind="constant">	KeyEnter     <a href="#KeyType">KeyType</a> = keyCR
+</span><span id="KeyBackspace" data-kind="constant">	KeyBackspace <a href="#KeyType">KeyType</a> = keyDEL
+</span><span id="KeyTab" data-kind="constant">	KeyTab       <a href="#KeyType">KeyType</a> = keyHT
+</span><span id="KeyEsc" data-kind="constant">	KeyEsc       <a href="#KeyType">KeyType</a> = keyESC
+</span><span id="KeyEscape" data-kind="constant">	KeyEscape    <a href="#KeyType">KeyType</a> = keyESC
+</span>
+<span id="KeyCtrlAt" data-kind="constant">	KeyCtrlAt           <a href="#KeyType">KeyType</a> = keyNUL <span class="comment">// ctrl+@</span>
+</span><span id="KeyCtrlA" data-kind="constant">	KeyCtrlA            <a href="#KeyType">KeyType</a> = keySOH
+</span><span id="KeyCtrlB" data-kind="constant">	KeyCtrlB            <a href="#KeyType">KeyType</a> = keySTX
+</span><span id="KeyCtrlC" data-kind="constant">	KeyCtrlC            <a href="#KeyType">KeyType</a> = keyETX
+</span><span id="KeyCtrlD" data-kind="constant">	KeyCtrlD            <a href="#KeyType">KeyType</a> = keyEOT
+</span><span id="KeyCtrlE" data-kind="constant">	KeyCtrlE            <a href="#KeyType">KeyType</a> = keyENQ
+</span><span id="KeyCtrlF" data-kind="constant">	KeyCtrlF            <a href="#KeyType">KeyType</a> = keyACK
+</span><span id="KeyCtrlG" data-kind="constant">	KeyCtrlG            <a href="#KeyType">KeyType</a> = keyBEL
+</span><span id="KeyCtrlH" data-kind="constant">	KeyCtrlH            <a href="#KeyType">KeyType</a> = keyBS
+</span><span id="KeyCtrlI" data-kind="constant">	KeyCtrlI            <a href="#KeyType">KeyType</a> = keyHT
+</span><span id="KeyCtrlJ" data-kind="constant">	KeyCtrlJ            <a href="#KeyType">KeyType</a> = keyLF
+</span><span id="KeyCtrlK" data-kind="constant">	KeyCtrlK            <a href="#KeyType">KeyType</a> = keyVT
+</span><span id="KeyCtrlL" data-kind="constant">	KeyCtrlL            <a href="#KeyType">KeyType</a> = keyFF
+</span><span id="KeyCtrlM" data-kind="constant">	KeyCtrlM            <a href="#KeyType">KeyType</a> = keyCR
+</span><span id="KeyCtrlN" data-kind="constant">	KeyCtrlN            <a href="#KeyType">KeyType</a> = keySO
+</span><span id="KeyCtrlO" data-kind="constant">	KeyCtrlO            <a href="#KeyType">KeyType</a> = keySI
+</span><span id="KeyCtrlP" data-kind="constant">	KeyCtrlP            <a href="#KeyType">KeyType</a> = keyDLE
+</span><span id="KeyCtrlQ" data-kind="constant">	KeyCtrlQ            <a href="#KeyType">KeyType</a> = keyDC1
+</span><span id="KeyCtrlR" data-kind="constant">	KeyCtrlR            <a href="#KeyType">KeyType</a> = keyDC2
+</span><span id="KeyCtrlS" data-kind="constant">	KeyCtrlS            <a href="#KeyType">KeyType</a> = keyDC3
+</span><span id="KeyCtrlT" data-kind="constant">	KeyCtrlT            <a href="#KeyType">KeyType</a> = keyDC4
+</span><span id="KeyCtrlU" data-kind="constant">	KeyCtrlU            <a href="#KeyType">KeyType</a> = keyNAK
+</span><span id="KeyCtrlV" data-kind="constant">	KeyCtrlV            <a href="#KeyType">KeyType</a> = keySYN
+</span><span id="KeyCtrlW" data-kind="constant">	KeyCtrlW            <a href="#KeyType">KeyType</a> = keyETB
+</span><span id="KeyCtrlX" data-kind="constant">	KeyCtrlX            <a href="#KeyType">KeyType</a> = keyCAN
+</span><span id="KeyCtrlY" data-kind="constant">	KeyCtrlY            <a href="#KeyType">KeyType</a> = keyEM
+</span><span id="KeyCtrlZ" data-kind="constant">	KeyCtrlZ            <a href="#KeyType">KeyType</a> = keySUB
+</span><span id="KeyCtrlOpenBracket" data-kind="constant">	KeyCtrlOpenBracket  <a href="#KeyType">KeyType</a> = keyESC <span class="comment">// ctrl+[</span>
+</span><span id="KeyCtrlBackslash" data-kind="constant">	KeyCtrlBackslash    <a href="#KeyType">KeyType</a> = keyFS  <span class="comment">// ctrl+\</span>
+</span><span id="KeyCtrlCloseBracket" data-kind="constant">	KeyCtrlCloseBracket <a href="#KeyType">KeyType</a> = keyGS  <span class="comment">// ctrl+]</span>
+</span><span id="KeyCtrlCaret" data-kind="constant">	KeyCtrlCaret        <a href="#KeyType">KeyType</a> = keyRS  <span class="comment">// ctrl+^</span>
+</span><span id="KeyCtrlUnderscore" data-kind="constant">	KeyCtrlUnderscore   <a href="#KeyType">KeyType</a> = keyUS  <span class="comment">// ctrl+_</span>
+</span><span id="KeyCtrlQuestionMark" data-kind="constant">	KeyCtrlQuestionMark <a href="#KeyType">KeyType</a> = keyDEL <span class="comment">// ctrl+?</span>
+</span>)</pre>
+    </div>
+  <p>Control key aliases.
+</p>
+</div><div class="Documentation-typeConstant">
+    <div class="Documentation-declaration">
+      <pre>const (
+<span id="KeyRunes" data-kind="constant">	KeyRunes <a href="#KeyType">KeyType</a> = -(<a href="/builtin#iota">iota</a> + 1)
+</span><span id="KeyUp" data-kind="constant">	KeyUp
+</span><span id="KeyDown" data-kind="constant">	KeyDown
+</span><span id="KeyRight" data-kind="constant">	KeyRight
+</span><span id="KeyLeft" data-kind="constant">	KeyLeft
+</span><span id="KeyShiftTab" data-kind="constant">	KeyShiftTab
+</span><span id="KeyHome" data-kind="constant">	KeyHome
+</span><span id="KeyEnd" data-kind="constant">	KeyEnd
+</span><span id="KeyPgUp" data-kind="constant">	KeyPgUp
+</span><span id="KeyPgDown" data-kind="constant">	KeyPgDown
+</span><span id="KeyCtrlPgUp" data-kind="constant">	KeyCtrlPgUp
+</span><span id="KeyCtrlPgDown" data-kind="constant">	KeyCtrlPgDown
+</span><span id="KeyDelete" data-kind="constant">	KeyDelete
+</span><span id="KeyInsert" data-kind="constant">	KeyInsert
+</span><span id="KeySpace" data-kind="constant">	KeySpace
+</span><span id="KeyCtrlUp" data-kind="constant">	KeyCtrlUp
+</span><span id="KeyCtrlDown" data-kind="constant">	KeyCtrlDown
+</span><span id="KeyCtrlRight" data-kind="constant">	KeyCtrlRight
+</span><span id="KeyCtrlLeft" data-kind="constant">	KeyCtrlLeft
+</span><span id="KeyCtrlHome" data-kind="constant">	KeyCtrlHome
+</span><span id="KeyCtrlEnd" data-kind="constant">	KeyCtrlEnd
+</span><span id="KeyShiftUp" data-kind="constant">	KeyShiftUp
+</span><span id="KeyShiftDown" data-kind="constant">	KeyShiftDown
+</span><span id="KeyShiftRight" data-kind="constant">	KeyShiftRight
+</span><span id="KeyShiftLeft" data-kind="constant">	KeyShiftLeft
+</span><span id="KeyShiftHome" data-kind="constant">	KeyShiftHome
+</span><span id="KeyShiftEnd" data-kind="constant">	KeyShiftEnd
+</span><span id="KeyCtrlShiftUp" data-kind="constant">	KeyCtrlShiftUp
+</span><span id="KeyCtrlShiftDown" data-kind="constant">	KeyCtrlShiftDown
+</span><span id="KeyCtrlShiftLeft" data-kind="constant">	KeyCtrlShiftLeft
+</span><span id="KeyCtrlShiftRight" data-kind="constant">	KeyCtrlShiftRight
+</span><span id="KeyCtrlShiftHome" data-kind="constant">	KeyCtrlShiftHome
+</span><span id="KeyCtrlShiftEnd" data-kind="constant">	KeyCtrlShiftEnd
+</span><span id="KeyF1" data-kind="constant">	KeyF1
+</span><span id="KeyF2" data-kind="constant">	KeyF2
+</span><span id="KeyF3" data-kind="constant">	KeyF3
+</span><span id="KeyF4" data-kind="constant">	KeyF4
+</span><span id="KeyF5" data-kind="constant">	KeyF5
+</span><span id="KeyF6" data-kind="constant">	KeyF6
+</span><span id="KeyF7" data-kind="constant">	KeyF7
+</span><span id="KeyF8" data-kind="constant">	KeyF8
+</span><span id="KeyF9" data-kind="constant">	KeyF9
+</span><span id="KeyF10" data-kind="constant">	KeyF10
+</span><span id="KeyF11" data-kind="constant">	KeyF11
+</span><span id="KeyF12" data-kind="constant">	KeyF12
+</span><span id="KeyF13" data-kind="constant">	KeyF13
+</span><span id="KeyF14" data-kind="constant">	KeyF14
+</span><span id="KeyF15" data-kind="constant">	KeyF15
+</span><span id="KeyF16" data-kind="constant">	KeyF16
+</span><span id="KeyF17" data-kind="constant">	KeyF17
+</span><span id="KeyF18" data-kind="constant">	KeyF18
+</span><span id="KeyF19" data-kind="constant">	KeyF19
+</span><span id="KeyF20" data-kind="constant">	KeyF20
+</span>)</pre>
+    </div>
+  <p>Other keys.
+</p>
+</div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="KeyType.String" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (KeyType) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/key.go#L95">String</a> <a class="Documentation-idLink" href="#KeyType.String">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.13.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (k <a href="#KeyType">KeyType</a>) String() (str <a href="/builtin#string">string</a>)</pre>
+    </div>
+  
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="LogOptionsSetter" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/logging.go#L28">LogOptionsSetter</a> <a class="Documentation-idLink" href="#LogOptionsSetter">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.24.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type LogOptionsSetter interface {
+<span id="LogOptionsSetter.SetOutput" data-kind="method">	SetOutput(<a href="/io">io</a>.<a href="/io#Writer">Writer</a>)
+</span><span id="LogOptionsSetter.SetPrefix" data-kind="method">	SetPrefix(<a href="/builtin#string">string</a>)
+</span>}</pre>
+    </div>
+  <p>LogOptionsSetter is an interface implemented by stdlib&#39;s log and charm&#39;s log
+libraries.
+</p>
+
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="Model" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L38">Model</a> <a class="Documentation-idLink" href="#Model">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type Model interface {
+<span id="Model.Init" data-kind="method">	<span class="comment">// Init is the first function that will be called. It returns an optional</span>
+</span>	<span class="comment">// initial command. To not perform an initial command return nil.</span>
+	Init() <a href="#Cmd">Cmd</a>
+
+<span id="Model.Update" data-kind="method">	<span class="comment">// Update is called when a message is received. Use it to inspect messages</span>
+</span>	<span class="comment">// and, in response, update the model and/or send a command.</span>
+	Update(<a href="#Msg">Msg</a>) (<a href="#Model">Model</a>, <a href="#Cmd">Cmd</a>)
+
+<span id="Model.View" data-kind="method">	<span class="comment">// View renders the program&#39;s UI, which is just a string. The view is</span>
+</span>	<span class="comment">// rendered after every Update.</span>
+	View() <a href="/builtin#string">string</a>
+}</pre>
+    </div>
+  <p>Model contains the program&#39;s state as well as its core functions.
+</p>
+
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="MouseEvent" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/mouse.go#L15">MouseEvent</a> <a class="Documentation-idLink" href="#MouseEvent">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type MouseEvent struct {
+<span id="MouseEvent.X" data-kind="field">	X    <a href="/builtin#int">int</a>
+</span><span id="MouseEvent.Y" data-kind="field">	Y    <a href="/builtin#int">int</a>
+</span><span id="MouseEvent.Type" data-kind="field">	Type <a href="#MouseEventType">MouseEventType</a>
+</span><span id="MouseEvent.Alt" data-kind="field">	Alt  <a href="/builtin#bool">bool</a>
+</span><span id="MouseEvent.Ctrl" data-kind="field">	Ctrl <a href="/builtin#bool">bool</a>
+</span>}</pre>
+    </div>
+  <p>MouseEvent represents a mouse event, which could be a click, a scroll wheel
+movement, a cursor movement, or a combination.
+</p>
+<div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="MouseEvent.String" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (MouseEvent) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/mouse.go#L24">String</a> <a class="Documentation-idLink" href="#MouseEvent.String">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (m <a href="#MouseEvent">MouseEvent</a>) String() (s <a href="/builtin#string">string</a>)</pre>
+    </div>
+  <p>String returns a string representation of a mouse event.
+</p>
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="MouseEventType" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/mouse.go#L36">MouseEventType</a> <a class="Documentation-idLink" href="#MouseEventType">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.5</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type MouseEventType <a href="/builtin#int">int</a></pre>
+    </div>
+  <p>MouseEventType indicates the type of mouse event occurring.
+</p>
+<div class="Documentation-typeConstant">
+    <div class="Documentation-declaration">
+      <pre>const (
+<span id="MouseUnknown" data-kind="constant">	MouseUnknown <a href="#MouseEventType">MouseEventType</a> = <a href="/builtin#iota">iota</a>
+</span><span id="MouseLeft" data-kind="constant">	MouseLeft
+</span><span id="MouseRight" data-kind="constant">	MouseRight
+</span><span id="MouseMiddle" data-kind="constant">	MouseMiddle
+</span><span id="MouseRelease" data-kind="constant">	MouseRelease
+</span><span id="MouseWheelUp" data-kind="constant">	MouseWheelUp
+</span><span id="MouseWheelDown" data-kind="constant">	MouseWheelDown
+</span><span id="MouseMotion" data-kind="constant">	MouseMotion
+</span>)</pre>
+    </div>
+  <p>Mouse event types.
+</p>
+</div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="MouseMsg" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/mouse.go#L11">MouseMsg</a> <a class="Documentation-idLink" href="#MouseMsg">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type MouseMsg <a href="#MouseEvent">MouseEvent</a></pre>
+    </div>
+  <p>MouseMsg contains information about a mouse event and is sent to a program&#39;s
+update function when mouse activity occurs. Note that the mouse must first
+be enabled in order for the mouse events to be received.
+</p>
+
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="Msg" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L35">Msg</a> <a class="Documentation-idLink" href="#Msg">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type Msg interface{}</pre>
+    </div>
+  <p>Msg contain data from the result of a IO operation. Msgs trigger the update
+function and, henceforth, the UI.
+</p>
+<div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="ClearScreen" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L18">ClearScreen</a> <a class="Documentation-idLink" href="#ClearScreen">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.23.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func ClearScreen() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>ClearScreen is a special command that tells the program to clear the screen
+before the next update. This can be used to move the cursor to the top left
+of the screen and clear visual clutter when the alt screen is not in use.
+</p><p>Note that it should never be necessary to call ClearScreen() for regular
+redraws.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="ClearScrollArea" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/standard_renderer.go#L582">ClearScrollArea</a> <a class="Documentation-idLink" href="#ClearScrollArea">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.9.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func ClearScrollArea() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>ClearScrollArea deallocates the scrollable region and returns the control of
+those lines to the main rendering routine.
+</p><p>For high-performance, scroll-based rendering only.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="DisableMouse" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L89">DisableMouse</a> <a class="Documentation-idLink" href="#DisableMouse">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.13.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func DisableMouse() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>DisableMouse is a special command that stops listening for mouse events.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="EnableMouseAllMotion" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L79">EnableMouseAllMotion</a> <a class="Documentation-idLink" href="#EnableMouseAllMotion">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.13.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func EnableMouseAllMotion() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>EnableMouseAllMotion is a special command that enables mouse click, release,
+wheel, and motion events, which are delivered regardless of whether a mouse
+button is pressed, effectively enabling support for hover interactions.
+</p><p>Many modern terminals support this, but not all. If in doubt, use
+EnableMouseCellMotion instead.
+</p><p>Because commands run asynchronously, this command should not be used in your
+model&#39;s Init function. Use the WithMouseAllMotion ProgramOption instead.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="EnableMouseCellMotion" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L61">EnableMouseCellMotion</a> <a class="Documentation-idLink" href="#EnableMouseCellMotion">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.13.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func EnableMouseCellMotion() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>EnableMouseCellMotion is a special command that enables mouse click,
+release, and wheel events. Mouse movement events are also captured if
+a mouse button is pressed (i.e., drag events).
+</p><p>Because commands run asynchronously, this command should not be used in your
+model&#39;s Init function. Use the WithMouseCellMotion ProgramOption instead.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="EnterAltScreen" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L32">EnterAltScreen</a> <a class="Documentation-idLink" href="#EnterAltScreen">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.13.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func EnterAltScreen() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>EnterAltScreen is a special command that tells the Bubble Tea program to
+enter the alternate screen buffer.
+</p><p>Because commands run asynchronously, this command should not be used in your
+model&#39;s Init function. To initialize your program with the altscreen enabled
+use the WithAltScreen ProgramOption instead.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="ExitAltScreen" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L47">ExitAltScreen</a> <a class="Documentation-idLink" href="#ExitAltScreen">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func ExitAltScreen() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>ExitAltScreen is a special command that tells the Bubble Tea program to exit
+the alternate screen buffer. This command should be used to exit the
+alternate screen buffer while the program is running.
+</p><p>Note that the alternate screen buffer will be automatically exited when the
+program quits.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="HideCursor" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L101">HideCursor</a> <a class="Documentation-idLink" href="#HideCursor">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.12.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func HideCursor() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>HideCursor is a special command for manually instructing Bubble Tea to hide
+the cursor. In some rare cases, certain operations will cause the terminal
+to show the cursor, which is normally hidden for the duration of a Bubble
+Tea program&#39;s lifetime. You will most likely not need to use this command.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="Quit" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L150">Quit</a> <a class="Documentation-idLink" href="#Quit">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func Quit() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>Quit is a special command that tells the Bubble Tea program to exit.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="ShowCursor" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L111">ShowCursor</a> <a class="Documentation-idLink" href="#ShowCursor">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.23.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func ShowCursor() <a href="#Msg">Msg</a></pre>
+    </div>
+  <p>ShowCursor is a special command for manually instructing Bubble Tea to show
+the cursor.
+</p>
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="Program" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L106">Program</a> <a class="Documentation-idLink" href="#Program">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type Program struct {
+	<span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+    </div>
+  <p>Program is a terminal user interface.
+</p>
+<div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="NewProgram" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L159">NewProgram</a> <a class="Documentation-idLink" href="#NewProgram">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func NewProgram(model <a href="#Model">Model</a>, opts ...<a href="#ProgramOption">ProgramOption</a>) *<a href="#Program">Program</a></pre>
+    </div>
+  <p>NewProgram creates a new Program.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.DisableMouseAllMotion" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L167">DisableMouseAllMotion</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) DisableMouseAllMotion()</pre>
+    </div>
+  <p>DisableMouseAllMotion disables All Motion mouse tracking. This will be
+called automatically when exiting a Bubble Tea program.
+</p><p>Deprecated: The mouse will automatically be disabled when the program exits.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.DisableMouseCellMotion" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L150">DisableMouseCellMotion</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) DisableMouseCellMotion()</pre>
+    </div>
+  <p>DisableMouseCellMotion disables Mouse Cell Motion tracking. This will be
+called automatically when exiting a Bubble Tea program.
+</p><p>Deprecated: The mouse will automatically be disabled when the program exits.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.EnableMouseAllMotion" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L159">EnableMouseAllMotion</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) EnableMouseAllMotion()</pre>
+    </div>
+  <p>EnableMouseAllMotion enables mouse click, release, wheel and motion events,
+regardless of whether a mouse button is pressed. Many modern terminals
+support this, but not all.
+</p><p>Deprecated: Use the WithMouseAllMotion ProgramOption instead.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.EnableMouseCellMotion" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L142">EnableMouseCellMotion</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) EnableMouseCellMotion()</pre>
+    </div>
+  <p>EnableMouseCellMotion enables mouse click, release, wheel and motion events
+if a mouse button is pressed (i.e., drag events).
+</p><p>Deprecated: Use the WithMouseCellMotion ProgramOption instead.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.EnterAltScreen" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L123">EnterAltScreen</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) EnterAltScreen()</pre>
+    </div>
+  <p>EnterAltScreen enters the alternate screen buffer, which consumes the entire
+terminal window. ExitAltScreen will return the terminal to its former state.
+</p><p>Deprecated: Use the WithAltScreen ProgramOption instead.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.ExitAltScreen" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L132">ExitAltScreen</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.10.0</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) ExitAltScreen()</pre>
+    </div>
+  <p>ExitAltScreen exits the alternate screen buffer.
+</p><p>Deprecated: The altscreen will exited automatically when the program exits.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.Kill" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L580">Kill</a> <a class="Documentation-idLink" href="#Program.Kill">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.20.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Kill()</pre>
+    </div>
+  <p>Kill stops the program immediately and restores the former terminal state.
+The final render that you would normally see when quitting will be skipped.
+[program.Run] returns a <a href="#ErrProgramKilled">ErrProgramKilled</a> error.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.Printf" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L672">Printf</a> <a class="Documentation-idLink" href="#Program.Printf">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.22.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Printf(template <a href="/builtin#string">string</a>, args ...interface{})</pre>
+    </div>
+  <p>Printf prints above the Program. It takes a format template followed by
+values similar to fmt.Printf. This output is unmanaged by the program and
+will persist across renders by the Program.
+</p><p>Unlike fmt.Printf (but similar to log.Printf) the message will be print on
+its own line.
+</p><p>If the altscreen is active no output will be printed.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.Println" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L658">Println</a> <a class="Documentation-idLink" href="#Program.Println">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.22.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Println(args ...interface{})</pre>
+    </div>
+  <p>Println prints above the Program. This output is unmanaged by the program
+and will persist across renders by the Program.
+</p><p>If the altscreen is active no output will be printed.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.Quit" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L573">Quit</a> <a class="Documentation-idLink" href="#Program.Quit">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.18.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Quit()</pre>
+    </div>
+  <p>Quit is a convenience function for quitting Bubble Tea programs. Use it
+when you need to shut down a Bubble Tea program from the outside.
+</p><p>If you wish to quit from within a Bubble Tea program use the Quit command.
+</p><p>If the program is not running this will be a no-op, so it&#39;s safe to call
+if the program is unstarted or has already exited.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.ReleaseTerminal" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L609">ReleaseTerminal</a> <a class="Documentation-idLink" href="#Program.ReleaseTerminal">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.21.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) ReleaseTerminal() <a href="/builtin#error">error</a></pre>
+    </div>
+  <p>ReleaseTerminal restores the original terminal state and cancels the input
+reader. You can return control to the Program with RestoreTerminal.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.RestoreTerminal" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L625">RestoreTerminal</a> <a class="Documentation-idLink" href="#Program.RestoreTerminal">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.21.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) RestoreTerminal() <a href="/builtin#error">error</a></pre>
+    </div>
+  <p>RestoreTerminal reinitializes the Program&#39;s input reader, restores the
+terminal to the former state when the program was running, and repaints.
+Use it to reinitialize a Program after running ReleaseTerminal.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.Run" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L383">Run</a> <a class="Documentation-idLink" href="#Program.Run">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.23.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Run() (<a href="#Model">Model</a>, <a href="/builtin#error">error</a>)</pre>
+    </div>
+  <p>Run initializes the program and runs its event loops, blocking until it gets
+terminated by either <a href="#Program.Quit">Program.Quit</a>, <a href="#Program.Kill">Program.Kill</a>, or its signal handler.
+Returns the final model.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.Send" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L559">Send</a> <a class="Documentation-idLink" href="#Program.Send">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.15.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Send(msg <a href="#Msg">Msg</a>)</pre>
+    </div>
+  <p>Send sends a message to the main update function, effectively allowing
+messages to be injected from outside the program for interoperability
+purposes.
+</p><p>If the program hasn&#39;t started yet this will be a blocking operation.
+If the program has already been terminated this will be a no-op, so it&#39;s safe
+to send messages after the program has exited.
+</p>
+
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.Start" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L547">Start</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Start() <a href="/builtin#error">error</a></pre>
+    </div>
+  <p>Start initializes the program and runs its event loops, blocking until it
+gets terminated by either <a href="#Program.Quit">Program.Quit</a>, <a href="#Program.Kill">Program.Kill</a>, or its signal
+handler.
+</p><p>Deprecated: please use <a href="#Program.Run">Program.Run</a> instead.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <details class="Documentation-deprecatedDetails js-deprecatedDetails">
+      <summary>
+        <h4 tabindex="-1" id="Program.StartReturningModel" data-kind="method" class="Documentation-typeMethodHeader">
+          <span class="Documentation-deprecatedTitle">
+            func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L538">StartReturningModel</a>
+            <span class="Documentation-deprecatedTag">deprecated</span>
+            <span class="Documentation-deprecatedBody"></span>
+          </span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.19.0</span>
+    
+  </span>
+</h4>
+
+      </summary>
+      <div class="go-Message go-Message--warning Documentation-deprecatedItemBody">
+        
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) StartReturningModel() (<a href="#Model">Model</a>, <a href="/builtin#error">error</a>)</pre>
+    </div>
+  <p>StartReturningModel initializes the program and runs its event loops,
+blocking until it gets terminated by either <a href="#Program.Quit">Program.Quit</a>, <a href="#Program.Kill">Program.Kill</a>,
+or its signal handler. Returns the final model.
+</p><p>Deprecated: please use <a href="#Program.Run">Program.Run</a> instead.
+</p>
+
+      </div>
+    </details>
+  
+
+  </div><div class="Documentation-typeMethod">
+    
+  
+  
+    <h4 tabindex="-1" id="Program.Wait" data-kind="method" class="Documentation-typeMethodHeader">
+      <span>func (*Program) <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L585">Wait</a> <a class="Documentation-idLink" href="#Program.Wait">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.24.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func (p *<a href="#Program">Program</a>) Wait()</pre>
+    </div>
+  <p>Wait waits/blocks until the underlying Program finished shutting down.
+</p>
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="ProgramOption" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L16">ProgramOption</a> <a class="Documentation-idLink" href="#ProgramOption">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.12.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type ProgramOption func(*<a href="#Program">Program</a>)</pre>
+    </div>
+  <p>ProgramOption is used to set options when initializing a Program. Program can
+accept a variable number of options.
+</p><p>Example usage:
+</p><pre>p := NewProgram(model, WithInput(someInput), WithOutput(someOutput))
+</pre>
+<div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithANSICompressor" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L163">WithANSICompressor</a> <a class="Documentation-idLink" href="#WithANSICompressor">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.19.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithANSICompressor() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithANSICompressor removes redundant ANSI sequences to produce potentially
+smaller output, at the cost of some processing overhead.
+</p><p>This feature is provisional, and may be changed or removed in a future version
+of this package.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithAltScreen" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L97">WithAltScreen</a> <a class="Documentation-idLink" href="#WithAltScreen">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.14.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithAltScreen() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithAltScreen starts the program with the alternate screen buffer enabled
+(i.e. the program starts in full window mode). Note that the altscreen will
+be automatically exited when the program quits.
+</p><p>Example:
+</p><pre>p := tea.NewProgram(Model{}, tea.WithAltScreen())
+if _, err := p.Run(); err != nil {
+    fmt.Println(&#34;Error running program:&#34;, err)
+    os.Exit(1)
+}
+</pre><p>To enter the altscreen once the program has already started running use the
+EnterAltScreen command.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithContext" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L21">WithContext</a> <a class="Documentation-idLink" href="#WithContext">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.23.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithContext(ctx <a href="/context">context</a>.<a href="/context#Context">Context</a>) <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithContext lets you specify a context in which to run the Program. This is
+useful if you want to cancel the execution from outside. When a Program gets
+cancelled it will exit with an error ErrProgramKilled.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithFilter" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L198">WithFilter</a> <a class="Documentation-idLink" href="#WithFilter">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.24.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithFilter(filter func(<a href="#Model">Model</a>, <a href="#Msg">Msg</a>) <a href="#Msg">Msg</a>) <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithFilter supplies an event filter that will be invoked before Bubble Tea
+processes a tea.Msg. The event filter can return any tea.Msg which will then
+get handled by Bubble Tea instead of the original event. If the event filter
+returns nil, the event will be ignored and Bubble Tea will not process it.
+</p><p>As an example, this could be used to prevent a program from shutting down if
+there are unsaved changes.
+</p><p>Example:
+</p><pre>func filter(m tea.Model, msg tea.Msg) tea.Msg {
+	if _, ok := msg.(tea.QuitMsg); !ok {
+		return msg
+	}
+
+	model := m.(myModel)
+	if model.hasChanges {
+		return nil
+	}
+
+	return msg
+}
+
+p := tea.NewProgram(Model{}, tea.WithFilter(filter));
+
+if _,err := p.Run(); err != nil {
+	fmt.Println(&#34;Error running program:&#34;, err)
+	os.Exit(1)
+}
+</pre>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithInput" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L43">WithInput</a> <a class="Documentation-idLink" href="#WithInput">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.12.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithInput(input <a href="/io">io</a>.<a href="/io#Reader">Reader</a>) <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithInput sets the input which, by default, is stdin. In most cases you
+won&#39;t need to use this. To disable input entirely pass nil.
+</p><pre>p := NewProgram(model, WithInput(nil))
+</pre>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithInputTTY" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L51">WithInputTTY</a> <a class="Documentation-idLink" href="#WithInputTTY">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.15.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithInputTTY() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithInputTTY opens a new TTY for input (or console input device on Windows).
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithMouseAllMotion" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L137">WithMouseAllMotion</a> <a class="Documentation-idLink" href="#WithMouseAllMotion">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.14.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithMouseAllMotion() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithMouseAllMotion starts the program with the mouse enabled in &#34;all motion&#34;
+mode.
+</p><p>EnableMouseAllMotion is a special command that enables mouse click, release,
+wheel, and motion events, which are delivered regardless of whether a mouse
+button is pressed, effectively enabling support for hover interactions.
+</p><p>Many modern terminals support this, but not all. If in doubt, use
+EnableMouseCellMotion instead.
+</p><p>To enable the mouse once the program has already started running use the
+EnableMouseAllMotion command. To disable the mouse when the program is
+running use the DisableMouse command.
+</p><p>The mouse will be automatically disabled when the program exits.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithMouseCellMotion" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L115">WithMouseCellMotion</a> <a class="Documentation-idLink" href="#WithMouseCellMotion">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.14.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithMouseCellMotion() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithMouseCellMotion starts the program with the mouse enabled in &#34;cell
+motion&#34; mode.
+</p><p>Cell motion mode enables mouse click, release, and wheel events. Mouse
+movement events are also captured if a mouse button is pressed (i.e., drag
+events). Cell motion mode is better supported than all motion mode.
+</p><p>To enable mouse cell motion once the program has already started running use
+the EnableMouseCellMotion command. To disable the mouse when the program is
+running use the DisableMouse command.
+</p><p>The mouse will be automatically disabled when the program exits.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithOutput" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L29">WithOutput</a> <a class="Documentation-idLink" href="#WithOutput">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.12.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithOutput(output <a href="/io">io</a>.<a href="/io#Writer">Writer</a>) <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithOutput sets the output which, by default, is stdout. In most cases you
+won&#39;t need to use this.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithoutCatchPanics" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L69">WithoutCatchPanics</a> <a class="Documentation-idLink" href="#WithoutCatchPanics">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.12.3</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithoutCatchPanics() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithoutCatchPanics disables the panic catching that Bubble Tea does by
+default. If panic catching is disabled the terminal will be in a fairly
+unusable state after a panic because Bubble Tea will not perform its usual
+cleanup on exit.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithoutRenderer" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L152">WithoutRenderer</a> <a class="Documentation-idLink" href="#WithoutRenderer">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.13.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithoutRenderer() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithoutRenderer disables the renderer. When this is set output and log
+statements will be plainly sent to stdout (or another output if one is set)
+without any rendering and redrawing logic. In other words, printing and
+logging will behave the same way it would in a non-TUI commandline tool.
+This can be useful if you want to use the Bubble Tea framework for a non-TUI
+application, or to provide an additional non-TUI mode to your Bubble Tea
+programs. For example, your program could behave like a daemon if output is
+not a TTY.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithoutSignalHandler" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L59">WithoutSignalHandler</a> <a class="Documentation-idLink" href="#WithoutSignalHandler">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.23.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithoutSignalHandler() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithoutSignalHandler disables the signal handler that Bubble Tea sets up for
+Programs. This is useful if you want to handle signals yourself.
+</p>
+
+  
+
+  </div><div class="Documentation-typeFunc">
+    
+  
+  
+    <h4 tabindex="-1" id="WithoutSignals" data-kind="function" class="Documentation-typeFuncHeader">
+      <span>func <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go#L77">WithoutSignals</a> <a class="Documentation-idLink" href="#WithoutSignals">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.24.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>func WithoutSignals() <a href="#ProgramOption">ProgramOption</a></pre>
+    </div>
+  <p>WithoutSignals will ignore OS signals.
+This is mainly useful for testing.
+</p>
+
+  
+
+  </div>
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="QuitMsg" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go#L156">QuitMsg</a> <a class="Documentation-idLink" href="#QuitMsg">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.24.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type QuitMsg struct{}</pre>
+    </div>
+  <p>QuitMsg signals that the program should quit. You can send a QuitMsg with
+Quit.
+</p>
+
+  
+
+    </div><div class="Documentation-type">
+      
+  
+  
+    <h4 tabindex="-1" id="WindowSizeMsg" data-kind="type" class="Documentation-typeHeader">
+      <span>type <a class="Documentation-source" href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go#L7">WindowSizeMsg</a> <a class="Documentation-idLink" href="#WindowSizeMsg">¶</a></span>
+  <span class="Documentation-sinceVersion">
+    
+      <span class="Documentation-sinceVersionLabel">added in</span>
+      <span class="Documentation-sinceVersionVersion">v0.9.0</span>
+    
+  </span>
+</h4>
+
+    
+    <div class="Documentation-declaration">
+      <pre>type WindowSizeMsg struct {
+<span id="WindowSizeMsg.Width" data-kind="field">	Width  <a href="/builtin#int">int</a>
+</span><span id="WindowSizeMsg.Height" data-kind="field">	Height <a href="/builtin#int">int</a>
+</span>}</pre>
+    </div>
+  <p>WindowSizeMsg is used to report the terminal size. It&#39;s sent to Update once
+initially and then on every terminal resize. Note that Windows does not
+have support for reporting when resizes occur as it does not support the
+SIGWINCH signal.
+</p>
+
+  
+
+    </div></section></div> 
+
+
+
+
+
+
+      
+    </div>
+  </div>
+
+        
+      
+      
+        
+  <div class="UnitFiles js-unitFiles">
+    <h2 class="UnitFiles-title" id="section-sourcefiles">
+      <img class="go-Icon" height="24" width="24" src="/static/shared/icon/insert_drive_file_gm_grey_24dp.svg" alt="">
+      Source Files
+      <a class="UnitFiles-idLink" href="#section-sourcefiles">¶</a>
+    </h2>
+    <div class="UnitFiles-titleLink">
+      <a href="https://github.com/charmbracelet/bubbletea/tree/v0.24.2" target="_blank" rel="noopener">View all Source files</a>
+    </div>
+    <div>
+      <ul class="UnitFiles-fileList"><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/commands.go" target="_blank" rel="noopener" title="commands.go">commands.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/exec.go" target="_blank" rel="noopener" title="exec.go">exec.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/key.go" target="_blank" rel="noopener" title="key.go">key.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/logging.go" target="_blank" rel="noopener" title="logging.go">logging.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/mouse.go" target="_blank" rel="noopener" title="mouse.go">mouse.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/nil_renderer.go" target="_blank" rel="noopener" title="nil_renderer.go">nil_renderer.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/options.go" target="_blank" rel="noopener" title="options.go">options.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/renderer.go" target="_blank" rel="noopener" title="renderer.go">renderer.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/screen.go" target="_blank" rel="noopener" title="screen.go">screen.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/signals_unix.go" target="_blank" rel="noopener" title="signals_unix.go">signals_unix.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/standard_renderer.go" target="_blank" rel="noopener" title="standard_renderer.go">standard_renderer.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tea.go" target="_blank" rel="noopener" title="tea.go">tea.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tty.go" target="_blank" rel="noopener" title="tty.go">tty.go</a>
+          </li><li>
+            <a href="https://github.com/charmbracelet/bubbletea/blob/v0.24.2/tty_unix.go" target="_blank" rel="noopener" title="tty_unix.go">tty_unix.go</a>
+          </li></ul>
+    </div>
+  </div>
+
+      
+      
+    </div>
+  </div>
+  <div id="showInternal-description" hidden> Click to show internal directories. </div>
+  <div id="hideInternal-description" hidden> Click to hide internal directories. </div>
+</article>
+    <footer class="go-Main-footer"></footer>
+  </main>
+
+    
+  <footer class="go-Footer">
+    
+    <div class="go-Footer-links">
+      <div class="go-Footer-linkColumn">
+        <a href="https://go.dev/solutions" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Why Go
+        </a>
+        <a href="https://go.dev/solutions#use-cases" class="go-Footer-link"
+            data-gtmc="footer link">
+          Use Cases
+        </a>
+        <a href="https://go.dev/solutions#case-studies" class="go-Footer-link"
+            data-gtmc="footer link">
+          Case Studies
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://learn.go.dev/" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Get Started
+        </a>
+        <a href="https://play.golang.org" class="go-Footer-link" data-gtmc="footer link">
+          Playground
+        </a>
+        <a href="https://tour.golang.org" class="go-Footer-link" data-gtmc="footer link">
+          Tour
+        </a>
+        <a href="https://stackoverflow.com/questions/tagged/go?tab=Newest" class="go-Footer-link"
+            data-gtmc="footer link">
+          Stack Overflow
+        </a>
+        <a href="https://go.dev/help" class="go-Footer-link"
+            data-gtmc="footer link">
+          Help
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://pkg.go.dev" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Packages
+        </a>
+        <a href="/std" class="go-Footer-link" data-gtmc="footer link">
+          Standard Library
+        </a>
+        <a href="/golang.org/x" class="go-Footer-link" data-gtmc="footer link">
+          Sub-repositories
+        </a>
+        <a href="https://pkg.go.dev/about" class="go-Footer-link" data-gtmc="footer link">
+          About Go Packages
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://go.dev/project" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          About
+        </a>
+        <a href="https://go.dev/dl/" class="go-Footer-link" data-gtmc="footer link">Download</a>
+        <a href="https://go.dev/blog" class="go-Footer-link" data-gtmc="footer link">Blog</a>
+        <a href="https://github.com/golang/go/issues" class="go-Footer-link" data-gtmc="footer link">
+          Issue Tracker
+        </a>
+        <a href="https://go.dev/doc/devel/release.html" class="go-Footer-link"
+            data-gtmc="footer link">
+          Release Notes
+        </a>
+        <a href="https://blog.golang.org/go-brand" class="go-Footer-link" data-gtmc="footer link">
+          Brand Guidelines
+        </a>
+        <a href="https://go.dev/conduct" class="go-Footer-link" data-gtmc="footer link">
+          Code of Conduct
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://www.twitter.com/golang" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Connect
+        </a>
+        <a href="https://www.twitter.com/golang" class="go-Footer-link" data-gtmc="footer link">
+          Twitter
+        </a>
+        <a href="https://github.com/golang" class="go-Footer-link" data-gtmc="footer link">GitHub</a>
+        <a href="https://invite.slack.golangbridge.org/" class="go-Footer-link"
+            data-gtmc="footer link">
+          Slack
+        </a>
+        <a href="https://reddit.com/r/golang" class="go-Footer-link" data-gtmc="footer link">
+          r/golang
+        </a>
+        <a href="https://www.meetup.com/pro/go" class="go-Footer-link" data-gtmc="footer link">
+          Meetup
+        </a>
+        <a href="https://golangweekly.com/" class="go-Footer-link" data-gtmc="footer link">
+          Golang Weekly
+        </a>
+      </div>
+    </div>
+    <div class="go-Footer-bottom">
+      <img class="go-Footer-gopher"  width="1431" height="901"
+          src="/static/shared/gopher/pilot-bust-1431x901.svg" alt="Gopher in flight goggles">
+      <ul class="go-Footer-listRow">
+        <li class="go-Footer-listItem">
+          <a href="https://go.dev/copyright" data-gtmc="footer link">Copyright</a>
+        </li>
+        <li class="go-Footer-listItem">
+          <a href="https://go.dev/tos" data-gtmc="footer link">Terms of Service</a>
+        </li>
+        <li class="go-Footer-listItem">
+          <a href="http://www.google.com/intl/en/policies/privacy/" data-gtmc="footer link"
+              target="_blank" rel="noopener">
+            Privacy Policy
+          </a>
+        </li>
+        <li class="go-Footer-listItem">
+          <a href="https://go.dev/s/pkgsite-feedback" target="_blank" rel="noopener"
+              data-gtmc="footer link">
+            Report an Issue
+          </a>
+        </li>
+        <li class="go-Footer-listItem">
+          <button class="go-Button go-Button--text go-Footer-toggleTheme js-toggleTheme" aria-label="Toggle theme">
+            <img data-value="auto" class="go-Icon go-Icon--inverted" height="24" width="24" src="/static/shared/icon/brightness_6_gm_grey_24dp.svg" alt="System theme">
+            <img data-value="dark" class="go-Icon go-Icon--inverted" height="24" width="24" src="/static/shared/icon/brightness_2_gm_grey_24dp.svg" alt="Dark theme">
+            <img data-value="light" class="go-Icon go-Icon--inverted" height="24" width="24" src="/static/shared/icon/light_mode_gm_grey_24dp.svg" alt="Light theme">
+          </button>
+          <button class="go-Button go-Button--text go-Footer-keyboard js-openShortcuts" aria-label="Open shorcuts modal">
+            <img class="go-Icon go-Icon--inverted" height="24" width="24" src="/static/shared/icon/keyboard_grey_24dp.svg" alt="">
+          </button>
+        </li>
+      </ul>
+      <a class="go-Footer-googleLogo" href="https://google.com" target="_blank"rel="noopener"
+          data-gtmc="footer link">
+        <img class="go-Footer-googleLogoImg" height="24" width="72"
+            src="/static/shared/logo/google-white.svg" alt="Google logo">
+      </a>
+    </div>
+  </footer>
+
+    
+  <dialog id="jump-to-modal" class="JumpDialog go-Modal go-Modal--md js-modal">
+    <form method="dialog" data-gmtc="jump to form" aria-label="Jump to Identifier">
+      <div class="Dialog-title go-Modal-header">
+        <h2>Jump to</h2>
+        <button
+          class="go-Button go-Button--inline"
+          type="button"
+          data-modal-close
+          data-gtmc="modal button"
+          aria-label="Close"
+        >
+          <img
+            class="go-Icon"
+            height="24"
+            width="24"
+            src="/static/shared/icon/close_gm_grey_24dp.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="JumpDialog-filter">
+        <input class="JumpDialog-input go-Input" autocomplete="off" type="text">
+      </div>
+      <div class="JumpDialog-body go-Modal-body">
+        <div class="JumpDialog-list"></div>
+      </div>
+      <div class="go-Modal-actions">
+        <button class="go-Button" data-test-id="close-dialog">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="ShortcutsDialog go-Modal go-Modal--sm js-modal">
+    <form method="dialog">
+      <div class="go-Modal-header">
+        <h2>Keyboard shortcuts</h2>
+        <button
+          class="go-Button go-Button--inline"
+          type="button"
+          data-modal-close
+          data-gtmc="modal button"
+          aria-label="Close"
+        >
+          <img
+            class="go-Icon"
+            height="24"
+            width="24"
+            src="/static/shared/icon/close_gm_grey_24dp.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="go-Modal-body">
+        <table>
+          <tbody>
+            <tr><td class="ShortcutsDialog-key">
+              <strong>?</strong></td><td> : This menu</td>
+            </tr>
+            <tr><td class="ShortcutsDialog-key">
+              <strong>/</strong></td><td> : Search site</td>
+            </tr>
+            <tr><td class="ShortcutsDialog-key">
+              <strong>f</strong> or <strong>F</strong></td><td> : Jump to</td>
+            </tr>
+            <tr>
+              <td class="ShortcutsDialog-key"><strong>y</strong> or <strong>Y</strong></td>
+              <td> : Canonical URL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="go-Modal-actions">
+        <button class="go-Button" data-test-id="close-dialog">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+    
+      <section class="Cookie-notice js-cookieNotice">
+        <div>go.dev uses cookies from Google to deliver and enhance the quality of its services and to
+        analyze traffic. <a target=_blank href="https://policies.google.com/technologies/cookies">Learn more.</a></div>
+        <div><button class="go-Button">Okay</button></div>
+      </section>
+    
+    
+      <script>
+        // this will throw if the querySelector can’t find the element
+        const gtmId = document.querySelector('.js-gtmID').dataset.gtmid;
+        if (!gtmId) {
+          throw new Error('Google Tag Manager ID not found');
+        }
+        loadScript(`https://www.googletagmanager.com/gtm.js?id=${gtmId}`);
+      </script>
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8MVQXG"
+                height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+      </noscript>
+    
+    
+  
+  <div class="js-canonicalURLPath" data-canonical-url-path="/github.com/charmbracelet/bubbletea@v0.24.2" hidden></div>
+  <div class="js-playgroundVars" data-modulepath="github.com/charmbracelet/bubbletea" data-version="v0.24.2" hidden></div>
+  <script>
+    loadScript('/static/frontend/unit/main/main.js')
+  </script>
+
+  <script>
+    loadScript('/static/frontend/unit/unit.js')
+  </script>
+
+  </body>
+</html>

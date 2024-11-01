@@ -1,0 +1,19 @@
+
+  (let ((n (- char ?a)))
+    (if (< n 0)
+        (error "number too large")
+      (s-repeat n ""))))
+
+(defun pen-modeline-buffer-name ()
+  (let ((bn (buffer-name)))
+    (cond ((string-equal bn "*scratch*")
+           "*")
+          ((string-equal bn "*Messages*")
+           "M")
+          ((string-equal bn "*Help*")
+           "?")
+          ((string-equal bn "*Compile-Log*")
+           "C")
+          ((string-equal bn "*Completions*")
+           "=")
+          ((s-matches? ".org" bn) ; org mode files have the org in the name too! so we have to look at the path.  TODO

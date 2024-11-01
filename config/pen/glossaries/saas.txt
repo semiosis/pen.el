@@ -1,0 +1,24 @@
+churn rate
+    [#saas]
+
+    The number of subscribers who discontinued
+    their subscription during a period divided
+    into the total number of subscribers.
+
+Playbooks
+    This seems to be a term often used when
+    talking about 'scripts' created through a
+    GUI.
+
+    GitGuardian
+        Playbooks enable you to customize and
+        automate GitGuardian behavior.
+        
+        This allows users to focus on
+        resolving incidents and spending less
+        time on investigations.
+        
+        By default, GitGuardian offers the
+        Auto-healing playbook to automate the
+        process of sharing the incident with
+        the developer involved.

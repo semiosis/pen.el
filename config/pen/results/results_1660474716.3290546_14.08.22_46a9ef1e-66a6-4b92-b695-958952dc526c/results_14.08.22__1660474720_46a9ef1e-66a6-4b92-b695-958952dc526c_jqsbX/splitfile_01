@@ -1,0 +1,11 @@
+https://wiki.haskell.org/Functor_hierarchy_proposal
+
+
+Functor hierarchy proposal
+
+Functor hierarchy proposal
+
+This page documents the proposed functor hierarchy for Haskell 8.0.
+
+Functors are a way to generalize operations on a structure to a more
+abstract level.

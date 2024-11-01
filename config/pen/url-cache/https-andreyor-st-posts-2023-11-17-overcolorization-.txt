@@ -1,0 +1,292 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=600
+Content-Length: 7930
+Content-Type: text/html; charset=utf-8
+Etag: "30440e115451685311c87d33fb1d3d711d4957562ba925817de252c50542c5bf-gzip"
+Expires: Wed, 22 Nov 2023 21:29:15 UTC
+Last-Modified: Sun, 19 Nov 2023 20:02:09 GMT
+Permissions-Policy: interest-cohort=()
+Vary: Origin
+Date: Wed, 22 Nov 2023 21:19:15 GMT
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Overcolorization · Andrey Listopadov</title>
+<link rel="stylesheet" href="https://andreyor.st/css/style.css"/>
+<meta property="og:title" content="Overcolorization" />
+<meta property="og:description" content="Tree-sitter became more widespread and Emacs took notice and included a bunch of &lt;lang&gt;-ts-mode as alternatives to &lt;lang&gt;-mode into the core. This is good news and a welcome change, but I have some concerns about the approach.
+When I first saw the Tree-sitter talk by Max Brunsfeld I was concerned that the language highlighting &ldquo;fix&rdquo; they&rsquo;re talking about is too much." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andreyor.st/posts/2023-11-17-overcolorization/" /><meta property="og:image" content="https://andreyor.st/me.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-17T22:45:00+03:00" />
+<meta property="article:modified_time" content="2023-11-17T22:56:11+03:00" />
+
+<body>
+    <header>
+      <div class="header">
+  <h2><a href="https://andreyor.st/">Andrey Listopadov</a></h2>
+  <div class="horizontal-links"><a href="https://gitlab.com/andreyorst/">Gitlab</a><span> </span><a href="https://github.com/andreyorst/">Github</a><span> </span><a href="https://andreyor.st/tags">Tags</a><span> </span><a href="https://andreyor.st/categories">Categories</a><span> </span><a href="https://andreyor.st/posts">Archive</a><span> </span><a href="https://andreyor.st/talks">Talks</a><span> </span><a href="https://andreyor.st/about">About</a><span> </span><a href="https://andreyor.st/feed.xml">RSS</a></div>
+</div>
+</header>
+    <main>
+<div class="post">
+  <div class="title-group">
+    <h1 class="title">Overcolorization</h1>
+    <div class="sub-title">
+      <div class="date">
+        <time datetime="2023-11-17T22:45:00&#43;0300"
+              class="post-date"
+              title="Last modified at Fri, Nov 17, 22:56, 2023">
+          Fri, Nov 17, 2023
+        </time>
+      </div>
+      <div class="tags">
+        <span class="horizontal-links links">
+          <a href="https://andreyor.st/categories/rant/">@rant</a> <a href="https://andreyor.st/categories/emacs/">@emacs</a> 
+          <span title="~2542 words">~12 minutes read</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <article class="content">
+    <p>Tree-sitter became more widespread and Emacs took notice and included a bunch of <code>&lt;lang&gt;-ts-mode</code> as alternatives to <code>&lt;lang&gt;-mode</code> into the core.
+This is good news and a welcome change, but I have some concerns about the approach.</p>
+<p>When I first saw the Tree-sitter talk by Max Brunsfeld I was concerned that the language <a href="https://youtu.be/Jes3bD6P0To?t=390" target="_blank">highlighting &ldquo;fix&rdquo; they&rsquo;re talking about</a> is too much.
+Here are the screenshots from the talk before and after Tree-sitter:</p>
+<figure><img src="https://andreyor.st/2023-11-17-overcolorization/before.png"
+         alt="Figure 1: In some languages, variables have different colors depending on context, types have different colors, struct fields don&amp;rsquo;t have their own color, etc."/><figcaption>
+            <p><span class="figure-number">Figure 1: </span>In some languages, variables have different colors depending on context, types have different colors, struct fields don&rsquo;t have their own color, etc.</p>
+        </figcaption>
+</figure>
+
+<figure><img src="https://andreyor.st/2023-11-17-overcolorization/after.png"
+         alt="Figure 2: Everything is consistent now."/><figcaption>
+            <p><span class="figure-number">Figure 2: </span>Everything is consistent now.</p>
+        </figcaption>
+</figure>
+
+<p>Here&rsquo;s an important quote from that talk:</p>
+<blockquote>
+<p>It might seem like a subtle improvement to you but I really think it actually achieves the goal of making it so that you can kind of get the structure of the code just from glancing at the colors.</p>
+</blockquote>
+<p>Structure, from <em>colors</em>.
+I don&rsquo;t know, I have never tried to infer <strong>structure</strong> from <strong>colors</strong> in the code.
+I do write mostly in lisps today, and to infer structure there I, personally, use semantic indentation, not parentheses, despite a popular belief.
+There are people who use colored parentheses to make it easier to see where the expression starts and ends, but in my practice, there&rsquo;s no need for that, and colors can be used for other things.</p>
+<p>Before lisps, I was writing mostly in <a href="https://en.wikipedia.org/wiki/Generational_list_of_programming_languages#ALGOL_based" target="_blank">ALGOL-based</a> languages, and again, there aren&rsquo;t many places where I could infer <em>structure</em> from colors.
+I don&rsquo;t think I can do that with the provided screenshot of the code in the talk either.
+I can see the semantics better, yes, since types and field accesses are uniformly highlighted, but this tells me nothing about code structure - the indentation kinda does.</p>
+<p>But I&rsquo;m being picky here.
+The word structure is not the word I have problems with in particular.
+And I can get what they mean - you know that the type color is blue, so when you switch languages, and the language defines types at different positions, you can spot them easily, despite being in a different place.
+It can be seen when they show C and Go examples on the slides with Tree-sitter highlighting.
+While all of that is cool, I think that coloring everything is the wrong approach.</p>
+<p>Before Emacs, I used NeoVim and Kakoune, and I was too obsessed with colors in my editor.
+NeoVim by default highlights many things, and I&rsquo;ve even created <a href="https://github.com/andreyorst/dotfiles/commit/124dfbc1e255ba646a18b901bf000437539f0e55" target="_blank">additional rules</a> to highlight struct fields in C code.
+Kakoune also <a href="https://github.com/andreyorst/dotfiles/commit/820ccc844efd874f911983a919495c7e8fe63fc3" target="_blank">allowed</a> me to define my own extra rules and I used it plenty of times.</p>
+<p>But when I moved to Emacs, I noticed that, unlike other editors, syntax highlighting is much more <em>reserved</em>.
+For example, Emacs usually highlights function definitions, but not function calls.
+At first, I was upset, and searched for <a href="https://github.com/andreyorst/dotfiles/commit/51435e0f4362e947cc996ddf7447fc17a30abd00" target="_blank">ways</a> to enable more syntax highlighting, but quickly learned that the underlying system is slow, and the more you highlight the choppier Emacs gets.</p>
+<p>But after years with Emacs, I began to like the more reserved highlighting.
+By highlighting <strong>important</strong> parts, Emacs helps me focus on important parts of the code.
+A function call is not that important, you call them all the time - the definition, however, is.
+The macro call, on the other hand, is important, as it transforms the code inside its body, so it is better to know that something that looks like an ordinary call isn&rsquo;t actually an ordinary call.
+Rust solved this by forcing the use of <code>!</code> in macro names, but Emacs had a different solution to the same problem in lisps for a long time by using syntax highlighting.</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/elisp-highlighting-specials.png"/>
+</figure>
+
+<p>The following screenshot demonstrates how Emacs highlights the macro calls.
+The calls to <code>defun</code>, <code>defmacro</code>, and <code>when</code> are calls to macros.
+They aren&rsquo;t special language constructs, just macros, but they do affect the language, as they transform the code given to them into something else and that&rsquo;s why it&rsquo;s important to see that you&rsquo;re calling a macro.
+Calls to the ordinary functions like <code>apply</code>, or <code>log-level-satisfies</code> aren&rsquo;t highlighted because there is not much significance with them - they return some values and that&rsquo;s it.</p>
+<p>The macros above are both standard to and known by Emacs but users can define their own macros.
+And we need to somehow highlight these macros as well as already known ones.
+Tree-sitter parsers can do that in a very limited way - if the macro comes from the same file it can be detected easily.
+If not - you have to analyze all of the files imported by the current file.
+Which becomes harder, when files are in external dependencies, possibly in compressed archives, and so on.</p>
+<p>That&rsquo;s where the dynamic highlighting comes naturally.
+Emacs controls everything related to Emacs Lisp so it can do that without much effort, but that can&rsquo;t be said about every other language.</p>
+<p>This is how Emacs highlights the Clojure code for me:</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/clojure-var-off.png"
+         alt="Figure 3: No dynamic highlighting"/><figcaption>
+            <p><span class="figure-number">Figure 3: </span>No dynamic highlighting</p>
+        </figcaption>
+</figure>
+
+<p>Emacs can&rsquo;t know anything about Clojure, and thus we can&rsquo;t apply the same logic when it comes to highlighting user-defined macros and other runtime stuff.
+But, the CIDER package provides a facility to highlight things dynamically, based on the state of the program.
+In this particular case it helps to see that some names came from the global scope:</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/clojure-var-on.png"
+         alt="Figure 4: Dynamic highlighting shows a global var"/><figcaption>
+            <p><span class="figure-number">Figure 4: </span>Dynamic highlighting shows a global var</p>
+        </figcaption>
+</figure>
+
+<p>Similarly, CIDER can highlight user-defined macros:</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/cider-macro-off.png"
+         alt="Figure 5: Dynamic highlighting is enabled, but the macro wasn&amp;rsquo;t made known to the REPL process"/><figcaption>
+            <p><span class="figure-number">Figure 5: </span>Dynamic highlighting is enabled, but the macro wasn&rsquo;t made known to the REPL process</p>
+        </figcaption>
+</figure>
+
+<p>Same as in Emacs Lisp, Clojure macros are small compilers, so it&rsquo;s better to indicate that certain calls are special:</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/cider-macro-on.png"
+         alt="Figure 6: After sending the macro to the REPL, dynamic highlighting shows the user-defined macro"/><figcaption>
+            <p><span class="figure-number">Figure 6: </span>After sending the macro to the REPL, dynamic highlighting shows the user-defined macro</p>
+        </figcaption>
+</figure>
+
+<p>Another use for dynamic highlighting can be found in languages with dynamic scoping, which today are mostly only lisps.
+It is important to know if the variable you&rsquo;re using is a dynamically scoped one.
+Especially so, when <code>let</code> can both introduce locals and re-bind dynamically scoped variables.
+For example, again, in Emacs Lisp:</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/elisp-dynamic-var-off.png"
+         alt="Figure 7: No dynamic highlighting"/><figcaption>
+            <p><span class="figure-number">Figure 7: </span>No dynamic highlighting</p>
+        </figcaption>
+</figure>
+
+<p>The issue here is subtle, but if <code>foo</code> uses <code>dynamic-var</code> internally, it will see the value changed to <code>20</code>.
+Dynamic highlighting helps to indicate that <code>dynamic-var</code> is special and important:</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/elisp-dynamic-var-on.png"
+         alt="Figure 8: Dynamic highlighting shows a global var"/><figcaption>
+            <p><span class="figure-number">Figure 8: </span>Dynamic highlighting shows a global var</p>
+        </figcaption>
+</figure>
+
+<p>I&rsquo;m using descriptive names, like <code>local-var</code> and <code>dynamic-var</code> but in actual code, it&rsquo;s not as obvious, when something is dynamic.
+A few months ago, I encountered a weird bug in one of the projects I maintain, and it was related to dynamic var being used as a local one:</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/bug.png"
+         alt="Figure 9: compile-command is a dynamic var"/><figcaption>
+            <p><span class="figure-number">Figure 9: </span><code>compile-command</code> is a dynamic var</p>
+        </figcaption>
+</figure>
+
+<p>Here, the variable named <code>compile-command</code> is just a string, used to store a command to compile the source code.
+The name is innocent and semantically appropriate.
+However, it is a dynamic var introduced in the <code>compile.el</code> package, and changing <code>compile-command</code> can cause problems for any functions called from the body of the <code>let</code> block.
+In my case, some other package adviced one of the calls inside this <code>let</code> block, overriding the <code>compile-command</code> for them, breaking the package I maintain.</p>
+<p>Sadly, by default, Emacs doesn&rsquo;t highlight such variables.
+And, as I said, Tree-sitter can&rsquo;t really help with any of the above cases without parsing <em>all</em> of the code.
+But it often can be achieved with an external package that consults with the runtime, like CIDER for Clojure and <code>highlight-defined.el</code><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> for Emacs Lisp.
+Luckily the fix was easy, but if Emacs highlighted dynamic vars by default, this would not be an issue at all.</p>
+<p>So my point is - highlight the <strong>important stuff</strong>, not <em>just stuff</em>.</p>
+<p>Of course, for lisps all these nuances existed even before dynamic highlighting, so lisp hackers had to deal with them somehow.
+Thus, dynamically scoped vars use different naming conventions (e.g. <code>*dynamic-var*</code>), macros use different code indentation rules, and so on.
+These rules are still widely used today but highlighting is an additional visual aid, making important stuff easier to notice.</p>
+<p>But let&rsquo;s go back to the main topic.
+I&rsquo;ve called this post &ldquo;Overcolorization&rdquo; for a reason, after all.
+I wanted to show you the importance of selective highlighting first, and I hope it will make more sense on why I think there is a problem.</p>
+<p>One of the reasons, Emacs highlighting is reserved only for important parts of the code, is because it is slow.
+Tree-sitter makes everything much faster, and thus Emacs should be able to highlight everything now without slowdown.
+That fact worried me, as it would mean that code could suddenly become a mess of colors when the <code>&lt;lang&gt;-ts-mode</code> becomes the standard.
+I held hopes that due to Emacs being used by generally more conservative people, the old approach to syntax highlighting would remain, what would change is that actually finding the important parts of the code will be easier, because the parser gives us all of the info.</p>
+<p>Recently, I was toying with the Elixir language, and decided to use the now inbuilt <code>elixir-ts-mode</code>, because the non-tree-sitter mode has issues with automatic indentation, and jumping across the delimiters.
+Tree-sitter should naturally fix this, and it indeed does, but <strong>what am I looking at</strong>?</p>
+<figure class="invertable"><img src="https://andreyor.st/2023-11-17-overcolorization/elixir.png"
+         alt="Figure 10: elixir-mode on the left, elixir-ts-mode on the right"/><figcaption>
+            <p><span class="figure-number">Figure 10: </span><code>elixir-mode</code> on the left, <code>elixir-ts-mode</code> on the right</p>
+        </figcaption>
+</figure>
+
+<p>Everything is purple.
+I&rsquo;ve included the old mode on the left, so you can see what it looked like before I switched to the new one, which is actually <a href="https://github.com/elixir-editors/emacs-elixir/commit/19ed1ffaccbc14f4b1777a24f0951918bab537b4#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5R7-R10" target="_blank">suggested by the developers of the original <code>elixir-mode</code></a>.
+I mean, it&rsquo;s pretty, and the colors do look nice in my personal opinion, but remember the quote I mentioned?</p>
+<blockquote>
+<p>It actually achieves the goal of making it so that you can kind of get the structure of the code just from glancing at the colors.</p>
+</blockquote>
+<p>The colors here clearly do not help the matter here.
+You could object by saying, that the colors should be used consistently, and I agree with you, here the main issue is that the <code>font-lock-keyword-face</code> is used for both keywords and method calls, as well as for parentheses.
+The <code>font-lock-function-name-face</code> is used both for function definitions, parameter names, and calls.
+But not for all calls, some use <code>font-lock-keyword-face</code> and I&rsquo;m not talking about method calls: see <code>raise</code>.
+The <code>font-lock-type-face</code> is used both for types and <code>:symbols</code>.
+The operators aren&rsquo;t highlighted only because the <code>font-lock-operator-face</code> is not set in my theme.</p>
+<p>The highlighting is all over the place.
+Thanks to the speed and power of the tree sitter the code was made to look pretty, not informative.
+The same happened for a few other languages, but Elixir is probably the most offending in my opinion.</p>
+<p>And I can&rsquo;t fix that!
+Say, I want to remove highlighting of the method calls - but I can&rsquo;t because for that I need to unset the face used by them, removing highlighting of the language keywords too.
+Same with the argument colors - they use function name colors, and I do want to see function definitions highlighted.
+I could override the <code>treesit-font-lock-rules</code> used by Elixir, only the <code>elixir-ts--font-lock-settings</code> is a private var, and it can silently be removed, renamed, and changed, breaking everything I&rsquo;ve tried to fix.</p>
+<p>I don&rsquo;t want this post to be a bashing of <code>elixir-ts-mode</code> developers, I&rsquo;m glad that the new mode was made, as it is better in many ways, but the problem with syntax highlighting exists, and other languages are in trouble too.
+In Lua, the <code>lua-ts-mode</code> does highlight table access but doesn&rsquo;t highlight method calls which differs from table access by one symbol.
+Are table accesses more important than method calls?
+I think they both are equally unimportant.</p>
+<p>The real problem here is that Emacs isn&rsquo;t ready for semantic highlighting.
+It does now have Tree-sitter, which is a common interface between most text editors, so the problem isn&rsquo;t with Emacs speed anymore.
+What it doesn&rsquo;t have is enough standardized faces to use across all languages.</p>
+<p>Or does it?</p>
+<ul>
+<li><code>font-lock-comment-face</code> - face used to highlight comments.</li>
+<li><code>font-lock-misc-punctuation-face</code> - face used to highlight miscellaneous punctuation.</li>
+<li><code>font-lock-delimiter-face</code> - face used to highlight delimiters.</li>
+<li><code>font-lock-bracket-face</code> - face used to highlight brackets, braces, and parens.</li>
+<li><code>font-lock-punctuation-face</code> - face used to highlight punctuation characters.</li>
+<li><code>font-lock-property-use-face</code> - face used to highlight property references.</li>
+<li><code>font-lock-property-name-face</code> - face used to highlight properties of an object.</li>
+<li><code>font-lock-operator-face</code> - face used to highlight operators.</li>
+<li><code>font-lock-number-face</code> - face used to highlight numbers.</li>
+<li><code>font-lock-escape-face</code> - face used to highlight escape sequences in strings.</li>
+<li><code>font-lock-regexp-grouping-construct</code> - face used to highlight grouping constructs in Lisp regexps.</li>
+<li><code>font-lock-regexp-grouping-backslash</code> - face for backslashes in Lisp regexp grouping constructs.</li>
+<li><code>font-lock-regexp-face</code> - face used to highlight regexp literals.</li>
+<li><code>font-lock-preprocessor-face</code> - face used to highlight preprocessor directives.</li>
+<li><code>font-lock-negation-char-face</code> - face used to highlight easy to overlook negation.</li>
+<li><code>font-lock-warning-face</code> - face used to highlight warnings.</li>
+<li><code>font-lock-constant-face</code> - face used to highlight constants and labels.</li>
+<li><code>font-lock-type-face</code> - face used to highlight type and class names.</li>
+<li><code>font-lock-variable-use-face</code> - face used to highlight variable references.</li>
+<li><code>font-lock-variable-name-face</code> - face used to highlight variable names.</li>
+<li><code>font-lock-function-call-face</code> - face used to highlight function calls.</li>
+<li><code>font-lock-function-name-face</code> - face used to highlight function names.</li>
+<li><code>font-lock-builtin-face</code> - face used to highlight builtins.</li>
+<li><code>font-lock-keyword-face</code> - face used to highlight keywords.</li>
+<li><code>font-lock-doc-markup-face</code> - face used to highlight embedded documentation mark-up.</li>
+<li><code>font-lock-doc-face</code> - face used to highlight documentation embedded in program code.</li>
+<li><code>font-lock-string-face</code> - face used to highlight strings.</li>
+<li><code>font-lock-comment-delimiter-face</code> - face used to highlight comment delimiters.</li>
+</ul>
+<p>These are all of the faces defined in the <code>font-lock.el</code> package.
+There are separate faces for function definitions and function calls - good stuff.
+I don&rsquo;t see the face that can be used for method calls specifically, but are there any major differences from ordinary function calls?
+It even has a face for variable usage, not just definition.</p>
+<p>Thing is, many of these faces are new, and did not exist prior to Emacs 29.1.
+It&rsquo;s good that they were added <a href="https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a795c51f6053272de61bc1721305e3c15ff424ee" target="_blank">specifically to be used with Tree-sitter</a>-based modes.
+You can say that I should submit a bug to Emacs about the <code>elixir-ts-mode</code> not using faces properly, and I did, but the problem isn&rsquo;t specific to <code>elixir-ts-mode</code>.</p>
+<p>The Elixir mode is just a convenient way to illustrate the problem
+The problem when lifting technical limitations can cause problems.
+A famous quote says &ldquo;Limitations breed creativity&rdquo;, and I feel like that&rsquo;s exactly what was going on with the old method of syntax highlighting in Emacs.
+It was slow, and couldn&rsquo;t handle too much highlighting or too complex rules, so it was kept to the minimum, highlighting what was absolutely necessary.
+But with Tree-sitter parsers being able to process files with 20k lines under 30ms the performance is out of the question.
+Well, mostly, you still need to draw everything on the screen, processing abstract syntax trees generated by these parsers.</p>
+<hr>
+<p>I want to end this post with a message to fellow major mode maintainers.</p>
+<p>Please, use syntax <strong>highlighting</strong> to <strong>highlight</strong>, not to <em>color</em>.</p>
+<p>Syntax highlighting is a tool, and highlighting important parts of the code makes programming less convoluted.
+Pretty colors are nice to have, but if the point is only to make the code look fancy, there&rsquo;s no real value for what we&rsquo;re trying to do in the end - write better code.
+Let&rsquo;s help each other at least at that.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>BTW, <code>highlight-defined.el</code> by default tries to highlight <em>everything</em> defined, so I limited it down to only highlighting known dynamic vars.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </article>
+</div></main>
+    <footer>
+      <div class="content-container">
+  <div class="content">
+    © Andrey Listopadov 2020-2023 · This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> · This site source code is MIT licensed.
+  </div>
+</div>
+    </footer>
+    <script>
+      if (window.location.host.endsWith("gitlab.io")) window.location.hostname = ("andreyor.st")
+    </script>
+  </body>
+</html>

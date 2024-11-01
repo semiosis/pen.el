@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: dn bn ext mant
+# group: fp
+# key: ext
+# --
+(let* ((fp (get-path))
+(bn (basename fp))
+(dn (f-dirname fp))
+(ext (file-name-extension bn))
+(mant (file-name-sans-extension bn))))

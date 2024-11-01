@@ -1,0 +1,14 @@
+
+
+;; Config:
+(setq gs-base-dir "~/Dropbox/genekitchen")
+(setq gs-base-dir "~/Dropbox/projects")
+
+
+(defun gs-find-file (file)
+  (interactive)
+  (find-file (concat gs-base-dir "/" file)))
+
+(defun gs-doc ()
+  (interactive)
+  (gs-find-file "doc"))

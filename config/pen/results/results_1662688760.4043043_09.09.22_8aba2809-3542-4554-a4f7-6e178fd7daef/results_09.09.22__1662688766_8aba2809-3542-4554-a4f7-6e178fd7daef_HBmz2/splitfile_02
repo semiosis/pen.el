@@ -1,0 +1,7 @@
+https://clojuredocs.org/clojure.core/swap/
+
+                                       swap
+
+   (swap f x)                           (swap x f)
+   (swap f x y ...)                      (swap x y ... f)
+   (swap f x y z ...)

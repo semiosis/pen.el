@@ -1,0 +1,18 @@
+
+#
+# This file describes the prompt for the $PROMPT_NAME environment.
+#
+# It is a series of lines, each containing one of the following directives:
+#
+#   PROMPT:<prompt-string>
+#     Sets the prompt to <prompt-string>.  The prompt string may contain
+#     escape sequences.  The escapes are:
+#
+#       \w  The working directory, with $HOME abbreviated with a tilde.
+#       \W  The basename of the working directory.
+#       \h  The hostname up to the first '.'
+#       \H  The full hostname
+#       \u  The username of the current user
+#       \$  If the effective UID is 0, a #, otherwise a $
+#       \t  The current time in 24-hour HH:MM:SS format
+#       \d

@@ -1,0 +1,12 @@
+FASTA format
+    [#bioinformatics]
+    [#biochemistry]
+
+    A text-based format for representing
+    either nucleotide sequences or amino acid
+    sequences, in which nucleotides or amino
+    acids are represented using single-letter
+    codes.
+    
+    The format also allows for sequence names
+    and comments to precede the sequences.

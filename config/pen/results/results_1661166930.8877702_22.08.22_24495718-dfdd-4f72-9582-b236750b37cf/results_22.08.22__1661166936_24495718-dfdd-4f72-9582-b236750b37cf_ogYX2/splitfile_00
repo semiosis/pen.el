@@ -1,0 +1,10 @@
+
+    let s = s . ' ' . expand("%:e")
+let s = s . '. '
+
+let s = s . '"'
+
+echo s
+endfunction
+
+function! InsertMultiPrompt(

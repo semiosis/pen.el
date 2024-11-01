@@ -1,0 +1,83 @@
+task: "Correct the syntax"
+doc: "Given some selected code, correct the syntax"
+tags: code syntax
+todo:
+- remove and restore leading whitespace
+prompt-version: 2
+prompt: |+
+  <delim>
+  The following bash has incorrect syntax:
+  <delim>
+  i=1
+  for var in "$@"
+  do
+      i++
+  done
+  <delim>
+  The same program but with corrected syntax:
+  <delim>
+  i=1
+  for var in "$@"
+  do
+      ((i++))
+  done
+  <delim>
+  The following awk has incorrect syntax:
+  <delim>
+  if NR >= window_size && (effective_nr % step == 0) {
+    $0 = "" + "my string";
+  }
+  <delim>
+  The same program but with corrected syntax:
+  <delim>
+  if (NR >= window_size && (effective_nr % step == 0)) {
+    $0 = "" "my string";
+  }
+  <delim>
+  The following <language> has incorrect syntax:
+  <delim>
+  <bad code>
+  <delim>
+  The same program but with corrected syntax:
+  <delim>
+engine: "OpenAI Codex"
+stop-sequences:
+- "<delim>"
+temperature: 0.3
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+cache: on
+vars:
+- "language"
+- "bad code"
+var-defaults:
+- "(pen-detect-language-ask)"
+- "(pen-selected-text)"
+examples:
+- "awk"
+- |-
+  if NR >= window_size && (effective_nr % step == 0) {
+      s = ""
+      for (i=1; i<window_size; i++) {
+          s = s memory[i] RS
+      }
+      s = s memory[window_size]
+      printf("(%s)", s) |& cmd
+
+      close(cmd, "to");
+      $0 = "" + "my string";
+
+      brs=RS
+      RS="##long read##"
+      cmd |& getline $0;
+      fflush(cmd);
+      close(cmd);
+      RS=brs
+      print; system("");
+  }
+preprocessors:
+- sed 's=<delim>=\\"\\"\\"='
+- sed 's=<delim>=\\"\\"\\"='
+filter: on
+completion: off
+insertion: off

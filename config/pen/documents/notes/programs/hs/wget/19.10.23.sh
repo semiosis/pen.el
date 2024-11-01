@@ -1,0 +1,5 @@
+cd /root/.pen/documents/bible-notes/verse;  "wget" "-qO-" "https://www.youtube.com/watch?v=f2oxGYpuLkw" "#" "<==" "pen-ci"
+cd /root/.pen/documents/bible-notes/verse;  "wget" "-qO-" "https://www.youtube.com/watch?v=d4guuTdLIcI" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=sDAGy1jXuqY" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=uCOycIMyJZM" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=Xxm2p9RCw90" "#" "<==" "pen-ci"

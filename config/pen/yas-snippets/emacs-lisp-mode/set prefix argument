@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: set prefix argument
+# group: 
+# key: cu
+# --
+(setq current-prefix-arg '(4)) ; C-u

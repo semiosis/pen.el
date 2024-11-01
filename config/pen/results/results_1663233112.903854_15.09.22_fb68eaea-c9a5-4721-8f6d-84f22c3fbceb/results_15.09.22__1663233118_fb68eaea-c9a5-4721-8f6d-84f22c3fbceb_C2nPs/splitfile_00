@@ -1,0 +1,1 @@
+ aws ec2 describe-instance-types --region ap-southeast-2

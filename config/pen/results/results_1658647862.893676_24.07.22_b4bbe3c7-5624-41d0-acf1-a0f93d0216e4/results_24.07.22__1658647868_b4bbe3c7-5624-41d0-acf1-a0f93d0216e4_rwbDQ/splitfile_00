@@ -1,0 +1,11 @@
+"StrictHostKeyChecking" is a parameter of the ssh command.
+
+It is a "yes" or "no" value.
+
+It is a parameter of the ssh command.
+
+It is a parameter of the ssh client.
+
+It is a parameter of the ssh server.
+
+It is a parameter of the ssh connection.

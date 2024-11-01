@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Matthew 5:5" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Matthew 5:6" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Matthew 5:10" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Matthew 5:11" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Matthew 5:12" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Matthew 5:13" "#" "<==" "pen-ci"

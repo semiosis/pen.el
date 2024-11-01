@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes;  "host-script" "-sn" "cvlc" "/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Rhythmic.mp3" "#" "<==" "withopts"

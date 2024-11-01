@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "Romans" "12:1-2" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "Romans" "12:1-2" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "Romans" "12:1-2" "#" "<==" "upd"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "Romans" "12:1-2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "12:1-2" "#" "<==" "zsh"

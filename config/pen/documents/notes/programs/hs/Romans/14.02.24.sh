@@ -1,0 +1,6 @@
+cd /;  "Romans" "10:17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "10:10" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "10:10-11" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "10:10-12" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "1:17" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "3:28" "#" "<==" "bash"

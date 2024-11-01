@@ -1,0 +1,11 @@
+do
+  let maxWidths = maximumBy (compare `on` length) $ map length rows
+  mapM_ (tabularise' maxWidths) rows
+
+tabularise' :: [Int] -> [[String]] -> IO ()
+tabularise' _ [] = putStrLn ""
+tabularise' maxWidths (x:xs) = do
+  let padded = map (\s -> replicate (maxWidths !! index xs) s) x
+  putStrLn $ T.pack $ T.intercalate T.pack padded " | "
+  tabularise' maxWidths xs
+EOD

@@ -1,0 +1,5 @@
+cd /root/notes;  "I" "John" "1" "#" "<==" "zsh"
+cd /root/notes;  "I" "Thessalonians" "#" "<==" "slmenu"
+cd /root/notes;  "I" "Thessalonians" "#" "<==" "slmenu"
+cd /root/notes;  "I" "Thessalonians" "#" "<==" "slmenu"
+cd /root/notes;  "I" "Peter" "3:9" "#" "<==" "zsh"

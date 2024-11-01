@@ -1,0 +1,767 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 14519
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 21 Feb 2021 00:01:02 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"6031a2be-e390"
+expires: Mon, 28 Oct 2024 10:32:46 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 13A1:1EDE33:C72A2F:D0FA6D:671F65F6
+Accept-Ranges: bytes
+Date: Mon, 28 Oct 2024 10:22:49 GMT
+Via: 1.1 varnish
+Age: 3
+X-Served-By: cache-akl10334-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1730110969.456556,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 86bad48742b7cbbda5c384eb626e3d6f0629415a
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leonardo Borges  | Monads in small bites - Part IV - Monads</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.67.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    
+
+    
+    
+    <meta property="og:title" content="Monads in small bites - Part IV - Monads" />
+<meta property="og:description" content="This is Part IV of my Monads tutorial. Make sure you read the previous parts:
+  Part I - Functors
+  Part II - Applicative Functors
+  Part III - Monoids
+  Part IV - Monads (this post)
+  A quick recap In Part I we learned about Functors, which are things that can be mapped over using a normal function - fmap is used for that." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/" />
+<meta property="article:published_time" content="2012-12-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2012-12-08T00:00:00+00:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
+<meta itemprop="name" content="Monads in small bites - Part IV - Monads">
+<meta itemprop="description" content="This is Part IV of my Monads tutorial. Make sure you read the previous parts:
+  Part I - Functors
+  Part II - Applicative Functors
+  Part III - Monoids
+  Part IV - Monads (this post)
+  A quick recap In Part I we learned about Functors, which are things that can be mapped over using a normal function - fmap is used for that.">
+<meta itemprop="datePublished" content="2012-12-08T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2012-12-08T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2485">
+
+
+
+<meta itemprop="keywords" content="clojure,functional-programming,haskell," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Monads in small bites - Part IV - Monads"/>
+<meta name="twitter:description" content="This is Part IV of my Monads tutorial. Make sure you read the previous parts:
+  Part I - Functors
+  Part II - Applicative Functors
+  Part III - Monoids
+  Part IV - Monads (this post)
+  A quick recap In Part I we learned about Functors, which are things that can be mapped over using a normal function - fmap is used for that."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+<header>
+    <div class="bg-black">
+        <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://leonardoborges.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Leonardo Borges
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/books/" title="Books page">
+              Books
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/writings/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/talks/" title="Projects &amp; Talks page">
+              Projects &amp; Talks
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/tags/" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+<a href="https://stackoverflow.com/users/910811/leonardoborges" target="_blank" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Stack Overflow link" rel="noopener" aria-label="follow on Stack Overflow——Opens in a new window">
+  <svg height="32px" 
+    style="enable-background:new 0 0 67 67;"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="32px"
+>
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.869 5.903l3.114 4.567-.975.665-3.115-4.567.976-.665zm-2.812 2.585l4.84 2.838-.6 1.017-4.842-2.838.602-1.017zm-1.276 2.724l5.413 1.521-.291 1.077-5.428-1.458.306-1.14zm-.588 2.461l5.687.569-.103 1.12-5.691-.513.107-1.176zm-.169 2.16h5.835v1.167h-5.835v-1.167zm7.976 3.167h-10v-6h1v5h8v-5h1v6zm.195-8.602l-.945-5.446 1.162-.202.947 5.446-1.164.202z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://twitter.com/theleoborges" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/theleoborges/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/theleoborges" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-2811271-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        WRITINGS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/&amp;text=Monads%20in%20small%20bites%20-%20Part%20IV%20-%20Monads" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/&amp;title=Monads%20in%20small%20bites%20-%20Part%20IV%20-%20Monads" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">Monads in small bites - Part IV - Monads</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2012-12-08T00:00:00Z">December 8, 2012</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This is Part IV of my Monads tutorial. Make sure you read the previous parts:</p>
+<ul>
+<li>
+<p><a href="/2012/11/30/monads-in-small-bites-part-i-functors/">Part I   - Functors</a></p>
+</li>
+<li>
+<p><a href="/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/">Part II  - Applicative Functors</a></p>
+</li>
+<li>
+<p><a href="/2012/12/05/monads-in-small-bites-part-iii-monoids/">Part III - Monoids</a></p>
+</li>
+<li>
+<p>Part IV  - Monads (this post)</p>
+</li>
+</ul>
+<h3 id="a-quick-recap">A quick recap</h3>
+<p>In <a href="/2012/11/30/monads-in-small-bites-part-i-functors/">Part I</a> we learned about <em>Functors</em>, which are things that can be mapped over using a normal function - <code>fmap</code> is used for that.</p>
+<p><a href="/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/">Part II</a> tought us that when our Functors themselves contain functions and we want them applied to the values contained in other Functors, <em>Applicatives</em> come to the rescue - and bring theirs friends <code>pure</code> and <code>&lt;*&gt;</code>.</p>
+<p><a href="/2012/12/05/monads-in-small-bites-part-iii-monoids/">Part III</a> introduced Monoids which model a special type of relationship involving binary functions and their identity values.</p>
+<p>Now it&rsquo;s time for what I hope is the post you have all been waiting for :)</p>
+<h3 id="monads">Monads</h3>
+<h4 id="a-word-on-context">A word on context</h4>
+<p>So far I&rsquo;ve said things such as <em>wrapping</em> stuff in Functors, <em>unwrapping</em> functions from Applicatives and putting results into minimal Functors. All this really means is that [Applicative]Functors - and Monads - have associated contexts that model some sort of computation.</p>
+<p>For lists, for example, this means they represent computations that can have several results - non-determinism.</p>
+<p>These computations can have much greater implications though - they can represent failure (or not!), do IO and even launch nuclear missiles. The point is: when we combine Functors/Applicatives/Monads, we carry their context with us to the end - they are essentially <em>sequenced</em> together.</p>
+<p>This will become clearer with an example. For once I won&rsquo;t start with lists - w00t! - so get ready for it!</p>
+<h3 id="the-maybe-monad">The Maybe Monad</h3>
+<p>The Maybe monad models computations that can fail. Let&rsquo;s have a look at an example.</p>
+<p>Say you have an e-commerce system. When placing an order, a few things need to get done:</p>
+<ul>
+<li>gather information about the order;</li>
+<li>calculate shipping rates;</li>
+<li>apply discount codes, if any, and;</li>
+<li>finally place the order.</li>
+</ul>
+<p>The code below shows the supporting functions that will be orchestrated in order to achieve this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>calculate-shipping-rate [address]
+    (<span style="color:#66d9ef">if </span>(= (<span style="color:#e6db74">:country</span> address) <span style="color:#e6db74">&#34;Australia&#34;</span>)
+        <span style="color:#ae81ff">10.0</span>
+        nil))
+
+(<span style="color:#66d9ef">defn </span>apply-shipping-costs [order shipping-rate]
+    (assoc order <span style="color:#e6db74">:total</span> (+ (<span style="color:#e6db74">:total</span> order) shipping-rate)))
+
+(<span style="color:#66d9ef">defn </span>lookup-discount-code [code]
+    (<span style="color:#66d9ef">if </span>(= code <span style="color:#e6db74">&#34;XMAS2012&#34;</span>)
+        <span style="color:#ae81ff">5.0</span>
+        nil))
+
+(<span style="color:#66d9ef">defn </span>apply-discount-code [order discount]
+    (assoc order <span style="color:#e6db74">:total</span> (- (<span style="color:#e6db74">:total</span> order) discount)))
+
+(<span style="color:#66d9ef">defn </span>place [order]
+    (prn (str <span style="color:#e6db74">&#34;Off you go! Order total: $&#34;</span> (<span style="color:#e6db74">:total</span> order))))
+</code></pre></div><p>Note that based on the code above, we can <em>only</em> ship to Australia and there is <em>only one</em> active discount code. Keep this in mind - you&rsquo;ll see why later on.</p>
+<p>Now let&rsquo;s place an order for some Jalapeño sauce:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>order {
+    <span style="color:#e6db74">:items</span> [{<span style="color:#e6db74">:name</span> <span style="color:#e6db74">&#34;Jalapeño sauce&#34;</span> <span style="color:#e6db74">:price</span> <span style="color:#ae81ff">20.0</span>}]
+    <span style="color:#e6db74">:address</span> {<span style="color:#e6db74">:country</span> <span style="color:#e6db74">&#34;Australia&#34;</span>}
+    <span style="color:#e6db74">:discount-code</span> <span style="color:#e6db74">&#34;XMAS2012&#34;</span>
+    <span style="color:#e6db74">:total</span> <span style="color:#ae81ff">20.0</span>
+})
+
+(<span style="color:#66d9ef">def </span>shipping-rate (<span style="color:#a6e22e">calculate-shipping-rate</span> (<span style="color:#e6db74">:address</span> order)))
+(<span style="color:#66d9ef">def </span>discount (<span style="color:#a6e22e">lookup-discount-code</span> (<span style="color:#e6db74">:discount-code</span> order)))
+
+(-&gt; order
+    (<span style="color:#a6e22e">apply-shipping-costs</span> shipping-rate)
+    (<span style="color:#a6e22e">apply-discount-code</span> discount)
+    (<span style="color:#a6e22e">place</span>))
+<span style="color:#75715e">;; &#34;Off you go! Order total: $25.0&#34;</span>
+</code></pre></div><p>Great! Soon I&rsquo;ll be receiving some hot sauce to go with my burritos!</p>
+<p>But wait, what if I had mistakenly set my address to somewhere other than Australia? How would this code behave?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>another-order {
+    <span style="color:#e6db74">:items</span> [{<span style="color:#e6db74">:name</span> <span style="color:#e6db74">&#34;Jalapeño sauce&#34;</span> <span style="color:#e6db74">:price</span> <span style="color:#ae81ff">20.0</span>}]
+    <span style="color:#e6db74">:address</span> {<span style="color:#e6db74">:country</span> <span style="color:#e6db74">&#34;Brazil&#34;</span>}
+    <span style="color:#e6db74">:discount-code</span> <span style="color:#e6db74">&#34;HACKERZ&#34;</span>
+    <span style="color:#e6db74">:total</span> <span style="color:#ae81ff">20.0</span>
+})
+
+
+(<span style="color:#66d9ef">def </span>shipping-rate (<span style="color:#a6e22e">calculate-shipping-rate</span> (<span style="color:#e6db74">:address</span> another-order)))
+(<span style="color:#66d9ef">def </span>discount (<span style="color:#a6e22e">lookup-discount-code</span> (<span style="color:#e6db74">:discount-code</span> another-order)))
+
+(-&gt; another-order
+    (<span style="color:#a6e22e">apply-shipping-costs</span> shipping-rate)
+    (<span style="color:#a6e22e">apply-discount-code</span> discount)
+    (<span style="color:#a6e22e">place</span>))
+<span style="color:#75715e">;; NullPointerException   [trace missing]</span>
+</code></pre></div><p><strong>Oops</strong>! Your e-commerce system just crashed! Not cool. But hey, this is easy to fix, right? We could just change our <em>apply-shipping-costs</em> function to something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>apply-shipping-costs [order shipping-rate]
+    (<span style="color:#66d9ef">if </span>shipping-rate
+        (assoc order <span style="color:#e6db74">:total</span> (+ (<span style="color:#e6db74">:total</span> order) shipping-rate))
+        order))
+
+
+<span style="color:#75715e">;;Remember we only support one discount code so the same problem could happen again</span>
+<span style="color:#75715e">;;We need to change the apply-discount-code function as well</span>
+
+(<span style="color:#66d9ef">defn </span>apply-discount-code [order discount]
+    (<span style="color:#66d9ef">if </span>discount
+        (assoc order <span style="color:#e6db74">:total</span> (- (<span style="color:#e6db74">:total</span> order) discount))
+        order))
+</code></pre></div><p>Now let&rsquo;s see what happens:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>shipping-rate (<span style="color:#a6e22e">calculate-shipping-rate</span> (<span style="color:#e6db74">:address</span> another-order)))
+(<span style="color:#66d9ef">def </span>discount (<span style="color:#a6e22e">lookup-discount-code</span> (<span style="color:#e6db74">:discount-code</span> another-order)))
+
+(-&gt; another-order
+    (<span style="color:#a6e22e">apply-shipping-costs</span> shipping-rate)
+    (<span style="color:#a6e22e">apply-discount-code</span> discount)
+    (<span style="color:#a6e22e">place</span>))
+<span style="color:#75715e">;; &#34;Off you go! Order total: $15.0&#34;</span>
+</code></pre></div><p>Well, it doesn&rsquo;t <em>crash</em> but we can&rsquo;t ship to Brazil anyway! So the code is <em>still</em> incorrect! What we really want is a way to halt the whole computation - placing an order - if any of those steps fail.</p>
+<p>Of course we could fix it with a couple more <em>if</em> forms before trying to call the <em>place</em> function but you see where this is going.</p>
+<p>Essentially our nice little functions became burdened with <em>context</em>: each of them is now aware that they can fail and need to cater for it.</p>
+<h3 id="enter-the-monad">Enter the Monad</h3>
+<p>I&rsquo;ll jump straight to how the code could look like if we had monads - it won&rsquo;t work now because we haven&rsquo;t actually implemented the monad yet, but this should whet your appetite.</p>
+<p>Also, assume we reversed the changes from before - the functions don&rsquo;t have the <em>if</em> forms checking its arguments any longer, just like in the original version. Here&rsquo;s the code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">domonad</span> maybe-monad
+    [order order
+     shipping-rate (<span style="color:#a6e22e">calculate-shipping-rate</span> (<span style="color:#e6db74">:address</span> order))
+     discount (<span style="color:#a6e22e">lookup-discount-code</span> (<span style="color:#e6db74">:discount-code</span> order))]
+     (-&gt; order
+        (<span style="color:#a6e22e">apply-shipping-costs</span> shipping-rate)
+        (<span style="color:#a6e22e">apply-discount-code</span> discount)
+        (<span style="color:#a6e22e">place</span>)))
+<span style="color:#75715e">;;&#34;Off you go! Order total: $25.0&#34;</span>
+
+(<span style="color:#a6e22e">domonad</span> maybe-monad
+    [order another-order
+     shipping-rate (<span style="color:#a6e22e">calculate-shipping-rate</span> (<span style="color:#e6db74">:address</span> order))
+     discount (<span style="color:#a6e22e">lookup-discount-code</span> (<span style="color:#e6db74">:discount-code</span> order))]
+     (-&gt; order
+        (<span style="color:#a6e22e">apply-shipping-costs</span> shipping-rate)
+        (<span style="color:#a6e22e">apply-discount-code</span> discount)
+        (<span style="color:#a6e22e">place</span>)))
+<span style="color:#75715e">;; nil</span>
+</code></pre></div><p><code>domonad</code> receives the monad you want to operate on, a vector of bindings and an expression that&rsquo;s the final result of the whole thing.</p>
+<p>Is your mind blown yet? :) Somehow the whole operation fails and yields <code>nil</code> in the second call to <em>domonad</em> above - without any <em>if</em> forms and without crashing! To see why that is, I&rsquo;ll now explain the monad type class from Haskell.</p>
+<h3 id="the-monad-type-class">The Monad Type Class</h3>
+<p>Here&rsquo;s the Haskell definition of the Monad type class (I left the <code>fail</code> function out so we can focus on the core of it):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">class</span> <span style="color:#66d9ef">Monad</span> m <span style="color:#66d9ef">where</span>  
+    return <span style="color:#f92672">::</span> a <span style="color:#f92672">-&gt;</span> m a  
+  
+    (<span style="color:#f92672">&gt;&gt;=</span>) <span style="color:#f92672">::</span> m a <span style="color:#f92672">-&gt;</span> (a <span style="color:#f92672">-&gt;</span> m b) <span style="color:#f92672">-&gt;</span> m b  
+  
+    (<span style="color:#f92672">&gt;&gt;</span>) <span style="color:#f92672">::</span> m a <span style="color:#f92672">-&gt;</span> m b <span style="color:#f92672">-&gt;</span> m b  
+    x <span style="color:#f92672">&gt;&gt;</span> y <span style="color:#f92672">=</span> x <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#a6e22e">\</span><span style="color:#66d9ef">_</span> <span style="color:#f92672">-&gt;</span> y
+</code></pre></div><p>Let&rsquo;s distill those bad ass type signatures:</p>
+<blockquote>
+<p><strong>return</strong> - much like <code>pure</code> from <a href="/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/">Applicative Functors</a>, <code>return</code> is responsible for wrapping a value of type <code>a</code> into a minimum context Monad that yields a value of type <code>a</code> - referred to as a <em>monadic value</em>.</p>
+</blockquote>
+<blockquote>
+<p><strong>(&raquo;=)</strong> - often called <code>bind</code> - is a function of two arguments. The first is a <em>monadic value</em> of type <code>a</code> and the second is a function that receives a value of type <code>a</code> and returns a monadic value of type <code>m b</code> which is also the overall result of the function.</p>
+</blockquote>
+<blockquote>
+<p>In other words: <code>bind</code> <em>runs</em> the monad <code>m a</code>, feeding the yielded <code>a</code> value into the function it received as an argument - any context carried by that monad will be taken into account.</p>
+</blockquote>
+<blockquote>
+<p><strong>(&raquo;)</strong> - often called <code>then</code> - This function receives two monads, <code>m a</code> and <code>m b</code>, and returns a monad of type <code>m b</code>. It is generally used when you&rsquo;re interested in the side effects - the context - carried out by the monad <code>m a</code> but doesn&rsquo;t care about the value <code>a</code> it yields.  It&rsquo;s rarely implemented in specific monads because the type class provides a default implementation:</p>
+</blockquote>
+<blockquote>
+<p>It applies <code>bind</code> to the monad <code>x</code> and a function that ignores its argument (<code>\_ -&gt; y</code>) - which by convention is represented by an <em>underscore</em> - and simply yields the monad <code>y</code>: that&rsquo;s the final result of the computation.</p>
+</blockquote>
+<p>I won&rsquo;t be implementing <code>then</code> in Clojure though - I&rsquo;ll focus on <code>return</code> and <code>bind</code>, since <code>then</code> is essentially a helper function you could write yourself.</p>
+<h4 id="the-maybe-monad---clojure-edition">The Maybe Monad - Clojure edition</h4>
+<p>With definitions out of the way, let&rsquo;s implement the Clojure version of the Maybe monad.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>maybe-monad {
+    <span style="color:#e6db74">:return</span> (<span style="color:#66d9ef">fn </span>[v] v)
+    <span style="color:#e6db74">:bind</span> (<span style="color:#66d9ef">fn </span>[mv f] 
+            (<span style="color:#66d9ef">if </span>mv
+                (<span style="color:#a6e22e">f</span> mv)
+                nil))})
+</code></pre></div><p>Yup. That&rsquo;s <em>it</em>.</p>
+<p>For the maybe monad, all its context needs to represent is a single value or the absence of value. We do this inside <code>bind</code> by checking if the monadic value <code>mv</code> is <code>nil</code>. If it isn&rsquo;t, we apply <code>f</code> to it, which will yield another monadic value. If, on the other hand, <code>mv</code> IS <code>nil</code>, we just return <code>nil</code>, bypassing the function application entirely.</p>
+<p><code>return</code>, as we saw, wraps a value into a minimal monad. In this case this is the value itself, so we just return it untouched.</p>
+<p>This is how one may go about using it:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(-&gt; another-order
+    ((<span style="color:#e6db74">:bind</span> maybe-monad)
+     (<span style="color:#66d9ef">fn </span>[order]
+       (-&gt; (<span style="color:#a6e22e">calculate-shipping-rate</span> (<span style="color:#e6db74">:address</span> order))
+           ((<span style="color:#e6db74">:bind</span> maybe-monad)
+            (<span style="color:#66d9ef">fn </span>[shipping-rate]
+              (-&gt; (<span style="color:#a6e22e">lookup-discount-code</span> (<span style="color:#e6db74">:discount-code</span> order))
+                  ((<span style="color:#e6db74">:bind</span> maybe-monad)
+                   (<span style="color:#66d9ef">fn </span>[discount]
+                     ((<span style="color:#e6db74">:return</span> maybe-monad)
+                      (-&gt; order 
+                        (<span style="color:#a6e22e">apply-shipping-costs</span> shipping-rate) (
+                        apply-discount-code discount) 
+                        (<span style="color:#a6e22e">place</span>))))))))))))
+<span style="color:#75715e">;; nil</span>
+</code></pre></div><p><em>WOW!</em> That is awful! And I won&rsquo;t blame you for not wanting to read through this aberration. But trust me, it does the job.</p>
+<p>However, you&rsquo;re probably thinking: that looks <em>nothing</em> like the nice little <code>domonad</code> notation we saw earlier!</p>
+<p>Well, you&rsquo;re right. That&rsquo;s because <code>domonad</code> is a <a href="http://clojure.org/macros">macro</a> - it gives us some syntactic sugar that expands into the real code shown above. In order to be able to use the <code>domonad</code> notation, paste the following into your REPL:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>monad-steps
+    ([monad steps expr]
+        (<span style="color:#66d9ef">if </span>(seq steps)
+            (<span style="color:#66d9ef">let </span>[fst (first steps)
+                  snd (second steps)]
+                  <span style="color:#f92672">`</span>((<span style="color:#e6db74">:bind</span> <span style="color:#f92672">~</span>monad) 
+                    (<span style="color:#66d9ef">fn </span>[<span style="color:#f92672">~</span>(symbol fst)]
+                        (-&gt;  <span style="color:#f92672">~</span>snd <span style="color:#f92672">~</span>(<span style="color:#a6e22e">monad-steps</span> monad (subvec steps <span style="color:#ae81ff">2</span>) expr)))))
+            expr)))
+
+
+(<span style="color:#66d9ef">defmacro </span>domonad [monad steps expr]
+    (<span style="color:#66d9ef">let </span>[args (map first (<span style="color:#a6e22e">partition</span> <span style="color:#ae81ff">2</span> steps))
+          forms (map second (<span style="color:#a6e22e">partition</span> <span style="color:#ae81ff">2</span> steps))
+          new-steps (subvec (<span style="color:#a6e22e">vec</span> (interleave (cons nil args) forms)) <span style="color:#ae81ff">2</span>)]
+          <span style="color:#f92672">`</span>(<span style="color:#66d9ef">let </span>[m# <span style="color:#f92672">~</span>monad]  
+            (-&gt; <span style="color:#f92672">~</span>(second steps)
+                <span style="color:#f92672">~</span>(<span style="color:#a6e22e">monad-steps</span> monad new-steps 
+                    <span style="color:#f92672">`</span>((<span style="color:#e6db74">:bind</span> <span style="color:#f92672">~</span>monad) (<span style="color:#66d9ef">fn </span>[<span style="color:#f92672">~</span>(symbol (last args))] ((<span style="color:#e6db74">:return</span> <span style="color:#f92672">~</span>monad) <span style="color:#f92672">~</span>expr))))))))
+</code></pre></div><p>All set! Now you should be able to run the examples that use <code>domonad</code> without any hiccups. Give it a shot:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">domonad</span> maybe-monad
+    [order another-order
+     shipping-rate (<span style="color:#a6e22e">calculate-shipping-rate</span> (<span style="color:#e6db74">:address</span> order))
+     discount (<span style="color:#a6e22e">lookup-discount-code</span> (<span style="color:#e6db74">:discount-code</span> order))]
+     (-&gt; order
+        (<span style="color:#a6e22e">apply-shipping-costs</span> shipping-rate)
+        (<span style="color:#a6e22e">apply-discount-code</span> discount)
+        (<span style="color:#a6e22e">place</span>)))
+<span style="color:#75715e">;; nil</span>
+</code></pre></div><blockquote>
+<p><strong>Note:</strong> macros can be daunting at times so don&rsquo;t worry too much about its implementation. It&rsquo;s way more important to me that you understand the end result than it is to be able to implement the macro yourself - but by all means dissect this implementation if you feel inclined to do so :)</p>
+</blockquote>
+<p>Now that&rsquo;s way better. The <em>maybe</em> monad abstracted away the logic behind computations that can fail so you don&rsquo;t have to worry about it in your functions  - you can just focus on writing them.</p>
+<p>In the end I also believe it aids readability once you get used to it.</p>
+<h3 id="dont-break-the-law">Don&rsquo;t break the law</h3>
+<p>Monads have laws of their own too! Let&rsquo;s have a look at them.</p>
+<h4 id="right-unit">Right unit</h4>
+<blockquote>
+<p>Binding a monadic value <code>m</code> to <code>return</code> should be equal to <code>m</code> itself</p>
+</blockquote>
+<p>In Haskell speak:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">m</span> <span style="color:#f92672">&gt;&gt;=</span> return <span style="color:#f92672">=</span>  m
+</code></pre></div><p>The proof in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>m <span style="color:#ae81ff">10</span>)
+(<span style="color:#66d9ef">def </span>&gt;&gt;= (<span style="color:#e6db74">:bind</span> maybe-monad))
+(<span style="color:#66d9ef">def </span>return (<span style="color:#e6db74">:return</span> maybe-monad))
+
+<span style="color:#75715e">;; given the above, this...</span>
+(<span style="color:#a6e22e">&gt;&gt;=</span> m return) <span style="color:#75715e">;; 10</span>
+
+<span style="color:#75715e">;;is the same as</span>
+m <span style="color:#75715e">;; 10</span>
+</code></pre></div><h4 id="left-unit">Left unit</h4>
+<blockquote>
+<p>Applying <code>return</code> to <code>x</code> and then applying <code>&gt;&gt;=</code> to the resulting value and <code>f</code>should be the same as applying <code>f</code> directly to <code>x</code></p>
+</blockquote>
+<p>In Haskell speak:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">return</span> x <span style="color:#f92672">&gt;&gt;=</span> f <span style="color:#f92672">=</span>  f x 
+</code></pre></div><p>The proof in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>x <span style="color:#ae81ff">10</span>)
+(<span style="color:#66d9ef">def </span>&gt;&gt;= (<span style="color:#e6db74">:bind</span> maybe-monad))
+(<span style="color:#66d9ef">def </span>return (<span style="color:#e6db74">:return</span> maybe-monad))
+(<span style="color:#66d9ef">def </span>f (<span style="color:#66d9ef">fn </span>[v] (* v <span style="color:#ae81ff">2</span>)))
+
+<span style="color:#75715e">;; given the above, this...</span>
+(-&gt; (<span style="color:#a6e22e">return</span> x) (<span style="color:#a6e22e">&gt;&gt;=</span> f)) <span style="color:#75715e">;; 20</span>
+
+<span style="color:#75715e">;;is the same as</span>
+(<span style="color:#a6e22e">f</span> x) <span style="color:#75715e">;; 20</span>
+</code></pre></div><h4 id="associativity">Associativity</h4>
+<blockquote>
+<p>Binding <code>m</code> to <code>f</code> and then applying <code>&gt;&gt;=</code> to the result and <code>g</code> should be the same as applying <code>&gt;&gt;=</code> to <code>m</code> and a function of argument <code>x</code> that first applies <code>f</code> to <code>x</code> and then binds it to <code>g</code>.</p>
+</blockquote>
+<p>Phew&hellip;another mouthful, huh? Code should make it clearer. As usual, Haskell comes first:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell">(m <span style="color:#f92672">&gt;&gt;=</span> f) <span style="color:#f92672">&gt;&gt;=</span> g  <span style="color:#f92672">=</span>  m <span style="color:#f92672">&gt;&gt;=</span> (<span style="color:#a6e22e">\</span>x <span style="color:#f92672">-&gt;</span> f x <span style="color:#f92672">&gt;&gt;=</span> g)
+</code></pre></div><p>And now let&rsquo;s prove it in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>&gt;&gt;= (<span style="color:#e6db74">:bind</span> maybe-monad))
+(<span style="color:#66d9ef">def </span>return (<span style="color:#e6db74">:return</span> maybe-monad))
+
+(<span style="color:#66d9ef">def </span>m <span style="color:#ae81ff">10</span>)
+(<span style="color:#66d9ef">def </span>f (<span style="color:#66d9ef">fn </span>[v] (* v <span style="color:#ae81ff">2</span>)))
+(<span style="color:#66d9ef">def </span>g (<span style="color:#66d9ef">fn </span>[v] (+ v <span style="color:#ae81ff">10</span>)))
+
+<span style="color:#75715e">;; given the above, this...</span>
+(-&gt; (<span style="color:#a6e22e">&gt;&gt;=</span> m f) (<span style="color:#a6e22e">&gt;&gt;=</span> g)) <span style="color:#75715e">;; 30</span>
+
+<span style="color:#75715e">;;is the same as</span>
+(<span style="color:#a6e22e">&gt;&gt;=</span> m
+     (<span style="color:#66d9ef">fn </span>[x]
+        (<span style="color:#a6e22e">&gt;&gt;=</span> (<span style="color:#a6e22e">f</span> x) g))) <span style="color:#75715e">;; 30</span>
+</code></pre></div><p>Alright, we&rsquo;re getting to the end now! Hold on just a little longer!</p>
+<h3 id="one-last-thing---the-list-monad">One last thing - The List Monad</h3>
+<p>Yeah, I&rsquo;m sure you saw this coming. Lists are monads too! I&rsquo;ll make this quick and show its implementation and usage in Clojure - bear with me one last time.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>list-monad {
+    <span style="color:#e6db74">:return</span> (<span style="color:#66d9ef">fn </span>[v] [v])
+    <span style="color:#e6db74">:bind</span> (<span style="color:#66d9ef">fn </span>[mv f] 
+        (<span style="color:#66d9ef">if </span>(seq mv)
+            (apply concat (map f mv))
+            []))
+    })
+
+<span style="color:#75715e">;;let&#39;s play with it</span>
+
+(<span style="color:#a6e22e">domonad</span> list-monad
+    [a [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>]
+     b [a, (- a)]]
+     (* <span style="color:#ae81ff">3</span> b))
+<span style="color:#75715e">;; (3 -3 6 -6)</span>
+
+(<span style="color:#a6e22e">domonad</span> list-monad
+    [a [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>]
+     b []]
+     (* <span style="color:#ae81ff">3</span> b))
+<span style="color:#75715e">;; () - an empty list. </span>
+</code></pre></div><p>This should look familiar if you&rsquo;ve used <a href="http://clojuredocs.org/clojure_core/clojure.core/for">list comprehensions</a> in Clojure or other languages such as Python:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(for [a [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>]
+     b [a, (- a)]]
+     (* <span style="color:#ae81ff">3</span> b))
+<span style="color:#75715e">;; (3 -3 6 -6)</span>
+</code></pre></div><p>See? You&rsquo;ve been using monads all along and didn&rsquo;t even know it! How awesome is that?</p>
+<p>Also note that we didn&rsquo;t need to re-implement <code>domonad</code> for the list monad. It&rsquo;s a generic macro that will work with any monads you throw at it!</p>
+<p>It&rsquo;s interesting to see how the list and the maybe monads differ. This time, <code>return</code> puts the value <code>v</code> inside a list and returns it because for lists, a minimum monad is a list with a single element.</p>
+<p><code>bind</code> is a bit more interesting. It first checks to see if <code>mv</code> is empty, in which case it returns an empty list, causing the whole computation to stop. If, however, <code>mv</code> is NOT empty, it maps <code>f</code> over every element in <code>mv</code>.</p>
+<p>The resulting list is potentially a list of lists, since functions fed to monads - such as <code>f</code> in this case - have to return monadic values. That&rsquo;s why we then apply <code>concat</code> to the resulting list, effectively flattening it.</p>
+<h3 id="final-words">Final words</h3>
+<p>Hopefully you now have a much better understanding of Monads and should start seeing in your code use cases and/or opportunities for the monads shown here.</p>
+<p>You&rsquo;ll notice that this Clojure implementation of monads used only normal functions - that was by design since I wanted this implementation to be as close as possible to Clojure&rsquo;s <a href="https://github.com/clojure/algo.monads">core.algo.monads</a> library. You should have a look at it.</p>
+<p>Also, bear in mind that this tutorial is by no means exhaustive - there&rsquo;s <strong>a lot</strong> more about monads that I could possibly cover in a blog - it was hard enough ending it here! But if you want to study more about them, I&rsquo;d recommend starting with these resources:</p>
+<ul>
+<li>
+<p><a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good</a> - this book is an excellent intro to Haskell and it was the approach found there that made me grok monads - highly recommended and freely available online.</p>
+</li>
+<li>
+<p><a href="http://en.wikibooks.org/wiki/Haskell/Understanding_monads">The Monads Section on the Haskell wikibook</a> - another free online resource</p>
+</li>
+</ul>
+<p>That&rsquo;s it from me. I hope you enjoyed the read and if you made it until here, a big <em>thank you</em>.</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/clojure" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">clojure</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/functional-programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">functional-programming</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/haskell" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">haskell</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "leonardoborges" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/writings/2012/12/05/monads-in-small-bites-part-iii-monoids/">Monads in small bites - Part III - Monoids</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/">Monads in small bites - Part II - Applicative Functors</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/11/30/monads-in-small-bites-part-i-functors/">Monads in small bites - Part I - Functors</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/09/10/clojure-leiningen-heroku-aot-compilation-gotchas/">Clojure, leiningen 2 and Heroku: AOT compilation gotchas</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/08/23/sean-corfield-clojure-and-cfml-sitting-in-a-tree/">Sean Corfield: Clojure and CFML sitting in a tree</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/02/22/clj-syd-report-number-0/">clj syd report number 0</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/02/05/project-euler-problem-4-in-clojure/">project euler problem 4 in clojure</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/01/22/backlog-ola-bini-on-clojure-conj/">backlog ola bini on clojure conj</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2012/01/20/announcing-the-sydney-clojure-user-group/">announcing the sydney clojure user group</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/writings/2011/10/12/report-clojure-meetup-1/">Report: Clojure Meetup - 1</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
+    &copy;  Leonardo Borges 2021 
+  </a>
+    <div>
+
+
+<a href="https://stackoverflow.com/users/910811/leonardoborges" target="_blank" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Stack Overflow link" rel="noopener" aria-label="follow on Stack Overflow——Opens in a new window">
+  <svg height="32px" 
+    style="enable-background:new 0 0 67 67;"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="32px"
+>
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.869 5.903l3.114 4.567-.975.665-3.115-4.567.976-.665zm-2.812 2.585l4.84 2.838-.6 1.017-4.842-2.838.602-1.017zm-1.276 2.724l5.413 1.521-.291 1.077-5.428-1.458.306-1.14zm-.588 2.461l5.687.569-.103 1.12-5.691-.513.107-1.176zm-.169 2.16h5.835v1.167h-5.835v-1.167zm7.976 3.167h-10v-6h1v5h8v-5h1v6zm.195-8.602l-.945-5.446 1.162-.202.947 5.446-1.164.202z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://twitter.com/theleoborges" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/theleoborges/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/theleoborges" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

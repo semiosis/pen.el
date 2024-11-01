@@ -1,0 +1,10 @@
+
+
+nil :: Ilist a
+nil = Cons Nothing Nil
+
+cons :: a -> Ilist a -> Ilist a
+cons x (Cons y ys) = Cons x ys
+
+-- h@20
+import System.

@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "unbuffer-coreutils" "pv" "-L" "1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "unbuffer-coreutils" "cat" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "unbuffer-coreutils" "cat" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "unbuffer-coreutils" "cat" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "unbuffer-coreutils" "cat" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "unbuffer-coreutils" "#" "<==" "zsh"

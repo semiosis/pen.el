@@ -1,0 +1,3 @@
+
+python -c "import requests; print(requests.post('http://google.com/search', data={'q':'$1'}).url)"
+

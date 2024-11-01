@@ -1,0 +1,14 @@
+"hugo" is a command line tool
+
+Usage:
+    hugo [flags]
+    hugo [command]
+
+Available Commands:
+    build       Builds your site
+    help        Help about any command
+    new         Create a new content file and automatically set the date and ti
+me.
+    new-post    Create a new content file and automatically set the date and ti
+me in the Hugo format.
+    new-page    Create a new content file

@@ -1,0 +1,3 @@
+;; Run function dictionary-get-definition-json
+(message (eval '(dictionary-get-definition-json "watermelon")))
+--> 

@@ -1,0 +1,426 @@
+https://problog.readthedocs.io/en/latest/modeling_basic.html
+
+operators
+    | Prolog | Python     | English |
+    |--------+------------+---------|
+    | :-     | <<         | clause  |
+    | ,      | &          | and     |
+    | ;      | bar symbol | or      |
+    | \+     | ~          | not     |
+
+logical digraphs
+    | Symbol | OP | unicode |      | name             |
+    |--------+----+---------+------+------------------|
+    | ¬      | NO |    0xac |  172 | NOT SIGN         |
+    | ∧      | AN |    2227 | 8743 | LOGICAL AND      |
+    | ∨      | OR |    2228 | 8744 | LOGICAL OR       |
+    | →      | -> |    2192 | 8594 | RIGHTWARDS ARROW |
+    | ↔      | <> |    2194 | 8596 | LEFT RIGHT ARROW |
+    
+    vimhelp +/LOGICAL digraph-table
+    
+    | Connective    | Symbol | Description    |
+    |---------------+--------+----------------|
+    | Negation      | ¬      | NOT            |
+    | Conjugation   | ∧      | AND            |
+    | Disjunction   | ∨      | OR             |
+    | Conditional   | →      | If ... then    |
+    | Biconditional | ↔      | If and only if |
+
+propositional logic vs first-order logic
+    Propositional logic only deals with
+    “facts”, statements that may or may not be
+    true of the world, e.g. “It is raining”. ,
+    one cannot have variables that stand for
+    books or tables.
+
+    In first-order logic, variables refer to
+    things in the world and you can quantify
+    over them.
+
+    Propositional:
+    - j:problog-basic-coin
+    - j:noisy-or-coin
+
+    First-order:
+    - j:first-order-coin
+    - j:probabilistic-burglary-using-firstorder-logic
+
+non-ground clause
+
+conjunction
+    And.
+    ,
+
+disjunction
+    Or.
+    ;
+
+noisy-or
+    Multiple rules for the same head:
+
+        % Probabilistic facts:
+        0.5::alarm1.
+        0.6::alarm2.
+
+        % Rules:
+        someAlarm :- alarm1.
+        someAlarm :- alarm2.
+           ^           ^
+          Head        Tail
+
+    As opposed to the regular and
+    (conjunction):
+
+        0.5::heads1.
+        0.6::heads2.
+
+        % Rules:
+        twoHeads :- heads1, heads2.
+
+    /volumes/home/shane/notes/ws/problog/scratch/noisy-or-coin.problog
+
+head/tail notation
+[H|Tail]
+    http://www.cs.trincoll.edu/~ram/cpsc352/notes/prolog/search.html
+
+    Example:
+        excess([I|R],Limit) :- \+pack(I), excess(R,Limit).
+
+head
+tail
+    A Prolog rule has the form:
+        Head :- Body.
+
+    The notation of the head of a rule depends
+    on the number of arguments:
+
+        If the predicate has zero arguments,
+        then the head consists only of the
+        predicate name.
+
+head
+conclusion
+    The head (or conclusion) of a rule
+    adds more definition to a predicate's
+    behaviour.
+
+predicate
+    A predicate is a bit like a pure boolean
+    function.
+
+    Several rules may be used to define the
+    functionality of a predicate.
+
+    Example:
+        heads(C)
+
+    Another example:
+        heads
+
+    A predicate is a bit like a pure boolean
+    function.
+
+    Several rules may be used to define the
+    functionality of a predicate.
+
+    A Prolog rule has the form:
+        Head :- Body.
+
+    Example:
+        heads(C) :- coin(C), lands_heads(C).
+
+    The predicate here is:
+        heads(C)
+
+    The predicate contains the predicate name
+    'heads' and one argument, 'C'.
+
+pattern matching
+    https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc481/lecture-notes/ln481-012.pdf
+
+    Example:
+        % excess/1
+        excess(Limit) :- excess([skis,boots,helmet,gloves],Limit). % all possible items
+        % excess/2
+        excess([],Limit) :- Limit<0.
+        excess([I|R],Limit) :- pack(I), weight(I,W), L is Limit-W, excess(R,L).
+        excess([I|R],Limit) :- \+pack(I), excess(R,Limit).
+
+intensional probabilistic fact
+    Fact with a `flexible’ probability.
+
+        weight(skis,6).
+        weight(boots,4).
+        weight(helmet,3).
+        weight(gloves,2).
+
+        % intensional probabilistic fact with flexible probability:
+        P::pack(Item) :- weight(Item,Weight),  P is 1.0/Weight.
+
+    https://dtai.cs.kuleuven.be/problog/tutorial/basic/06_more_features.html
+
+query
+    Example:
+        0.5::heads(C).
+        two_heads :- heads(c1), heads(c2).
+        query(two_heads).
+
+    Queries can also be added in batch.
+
+        0.5::heads(C).
+        query(heads(C)) :- between(1, 4, C).
+
+non-ground query
+    It is also possible to give a non-ground
+    query, on the condition that the program
+    itself contains sufficient information to
+    ground the probabilistic parts.
+
+        0.5::heads(C) :- between(1, 4, C).
+        query(heads(C)).
+
+evidence
+    Evidence specifies any observations on
+    which we want to condition this
+    probability. Evidence conditions a part of
+    the program to be true or false.
+
+    It can be specified using a fact
+    evidence(Literal).
+
+        0.5::heads(C).
+        two_heads :- heads(c1), heads(c2).
+        evidence(\+ two_heads).
+        query(heads(c1)).
+
+    This program computes the probability that
+    the first coin toss produces heads when we
+    know that the coin tosses did not both
+    produce heads.
+    
+    You can try it out in the online editor.
+    
+    Evidence can also be specified using the
+    binary predicate evidence(Positive, true)
+    and evidence(Positive, false).
+
+condition
+    [verb]
+
+    Problog introduces also two predicates
+    query and evidence for querying a
+    probabilistic program or to condition it
+    to some pieces of evidence.
+
+    "condition it to some pieces of evidence"
+
+syntax
+    Definition            | Example
+    fact                  | a.
+    probabilistic fact    | 0.5::a.
+    clause                | a :- x.
+    probabilistic clause  | 0.5::a :- x.
+    annotated disjunction | 0.5::a; 0.5::b.
+    annotated disjunction | 0.5::a; 0.5::b :- x.
+
+fact
+unit clause
+    a.
+
+probabilistic fact
+probabilistic unit clause
+    0.5::a.
+
+rule
+premise
+conclusion
+    A prolog rule is called a clause.
+    
+    The head is a rule's conclusion.
+    
+    The body is a rule's premise or condition.
+
+    logic      | prolog
+    ------------------------
+    rule       | clause
+    conclusion | head
+    premise    | body
+
+rule
+clause
+:-
+    Example:
+        a :- x.
+
+    A prolog clause may be either:
+    - fact/unit clause
+    - rule
+
+    A prolog rule is called a clause.
+    
+    A clause has a head, a neck and a body:
+        father(X,Y) :- parent(X,Y), male(X).
+    
+    The head is a rule's conclusion.
+    
+    The body is a rule's premise or condition.
+
+neck
+    A clause has a head, a neck and a body:
+        father(X,Y) :- parent(X,Y), male(X).
+
+probabilistic clause
+    Example:
+        0.5::a :- x.
+
+    probabilistic clauses help to reduce
+    auxiliary predicates.
+
+    For example, to reduce the following:
+        0.6::lands_heads(_).
+        heads(C) :- coin(C), lands_heads(C).
+
+    Do this:
+        0.6::heads(C) :- coin(C).
+
+    This just means you can put the
+    functionality of a different predicate (in
+    this case, the predicate 'lands_heads') into
+    the rule/clause instead of calling a
+    predicate to get the behaviour inside (in
+    this case, the behaviour is the
+    probability).
+
+auxiliary
+    providing supplementary or additional help
+    and support.
+    "auxiliary airport staff"
+
+auxiliary atom
+auxiliary predicate
+    A predicate is a bit like a pure boolean
+    function.
+
+    Several rules may be used to define the
+    functionality of a predicate.
+
+    So an auxiliary predicate is simply a
+    predicate which is used by the body of a
+    rule to use/reuse the logic that that
+    auxiliary predicate provides.
+
+    For example, p_alarm1, p_alarm2 and
+    p_alarm3 are auxiliary atoms used by the
+    'alarm' predicate:
+
+        0.9::p_alarm1.
+        alarm :- burglary, earthquake, p_alarm1.
+
+        0.8::p_alarm2.
+        alarm :- burglary, \+earthquake, p_alarm2.
+
+        0.1::p_alarm3.
+        alarm :- \+burglary, earthquake, p_alarm3.
+
+    Another example, lands_heads is an
+    auxiliary predicate used by the 'heads'
+    predicate:
+
+    To reduce the following:
+        0.6::lands_heads(_).
+        heads(C) :- coin(C), lands_heads(C).
+
+    Do this:
+        0.6::heads(C) :- coin(C).
+
+annotated disjunction
+    Examples:
+    - 0.5::a; 0.5::b.
+
+    Can also be used as head of a clause.
+
+    Examples:
+    - 0.5::a; 0.5::b :- x.
+    - 0.5::weather(0,sun); 0.5::weather(0,rain).
+      0.8::weather(T,sun); 0.2::weather(T,rain) :- T > 0, T1 is T - 1, weather(T1, sun).
+      0.4::weather(T,sun); 0.6::weather(T,rain) :- T > 0, T1 is T - 1, weather(T1, rain).
+
+and and or
+    % and
+    twoSix :- six1, six2.
+
+    % or
+    someSix :- six1.
+    someSix :- six2.
+
+    https://dtai.cs.kuleuven.be/problog/tutorial/basic/03_dice.html#annotated-disjunctions-dealing-with-multi-valued-variables
+
+annotated disjunction
+multi-valued variable
+    I think the rule of sum is partially
+    implemented as multi-valued variables.
+
+    https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html#annotated-disjunctions-dealing-with-multi-valued-variables
+
+    A probabilistic primitive that chooses
+    exactly one of a number of alternatives
+    (if their probabilities sum to 1.0, if the
+    sum is less than 1.0, then with some
+    probability none of the alternatives is
+    picked).
+    
+    It expresses that at most one of these
+    choices is true.
+    
+    There is always an implicit null choice
+    which states that none of the options is
+    taken.
+
+    Example:
+        1/6::die(D, 1); 1/6::die(D, 2); 1/6::die(D, 3);
+        1/6::die(D, 4); 1/6::die(D, 5); 1/6::die(D, 6).
+    
+    In this example, however, that extra state
+    has zero probability because the
+    probabilities of the other states sum to
+    one.
+
+stochastic memoization
+    [#probabilistic programming]
+
+    Remembering probabilistic events that have
+    already occurred.
+
+    Example:
+        $MYGIT/mullikine/problog-examples/stochastic-memoisation.problog
+
+    Example2:
+        $MYGIT/mullikine/problog-examples/stochastic-memoisation-zeros.problog
+
+        The reason that most sequences have
+        probability zero, is that if it
+        encounters the same die a second time,
+        it will not roll it again, but reuse
+        the (memoized) result of the previous
+        roll. 
+
+Meta-predicates
+    Apply a predicate on all members of a list
+    (or higher-order functions) such as map,
+    partition, fold, and scan.
+
+not
+not provable
+\+
+    Because of the problems of
+    negation-as-failure, negation in Prolog is
+    represented in modern Prolog interpreters
+    using the symbol \+, which is supposed to
+    be a mnemonic for not provable with the \
+    standing for not and the + for provable. 
+
+    http://www.cse.unsw.edu.au/~billw/dictionaries/prolog/negation.html#:~:text=Because%20of%20the%20problems%20of,not%20and%20the%20%2B%20for%20provable.
+
+    not
+        The older operator.

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: pretty
+# key: pretty
+# --
+(require sexp-diff)
+(require racket/pretty)
+
+(pretty-print (sexp-diff
+'(define (f x) (+ (* x 2) 1))
+'(define (f x) (- (* x 2) 3 1))))

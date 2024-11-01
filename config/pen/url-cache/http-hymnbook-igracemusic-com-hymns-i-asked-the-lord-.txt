@@ -1,0 +1,187 @@
+HTTP/1.1 200 OK
+Server: Cowboy
+Date: Sat, 01 Jun 2024 03:14:40 GMT
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1717211680&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=ftdExyIOMTv9qO3pH%2ByoXvByaRCCsrE%2FgO%2BPoqSAdFU%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1717211680&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=ftdExyIOMTv9qO3pH%2ByoXvByaRCCsrE%2FgO%2BPoqSAdFU%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+Vary: Accept
+Etag: W/"fef6ebad849efa4cc48e489dba63f8ab"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _ruf_hymnbook_session=SGp5allRMkFPTDNXVTA3QnpKcG14TU9abkxDVWRtOHJ2bWtxYnQySGZNMGkwZmZXSDh3WUtuTnhwMkErSStSb1QzNWdnbmFEZHhqYUpjMmhlNnoxMFE3L3k4bUZvWnpWa2RlL3FRM0xENW5wNkdCR1QzamxTWkZKdXh5S01PN2FHOXVuTmVUU1hoOGd5b1pmNnNLdVFRPT0tLVBoRXdwaWx1MlBZNVJldVVWYkUwYWc9PQ%3D%3D--23d16e7904224d538a74f9b1def1bf7a83ced155; path=/; HttpOnly
+X-Request-Id: 6d900b76-583a-4956-a36d-b697652d698f
+X-Runtime: 0.075960
+Content-Length: 9230
+Via: 1.1 vegur
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>I Asked The Lord - Indelible Grace Hymnbook</title>
+  <link rel="stylesheet" href="/assets/application-c1fbd74149bfb5bb16079f33688bc64c311ba74d4bc8164607bfbecfa9fc6f78.css" media="all" />
+  <script src="/assets/application-88936e829cf62b1da553db97773b1d2c6d425e2537615d6cdd0a42d02a35d4d2.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="XJsQrqGgeW3iJ5jfWrvfy6eopPwnbMTWKsvKkvy2Ko9JBOxqInz4cDzoZWsnEJW4TfTc2embbukaZAJxYv6cJQ==" />
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1 class="banner"><a href="/">Indelible Grace Hymnbook</a></h1>
+    <nav>
+      <ul>
+        <li class="active"><a href="/hymns">Hymn Index</a></li>
+        <li class=""><a href="/albums">Albums</a></li>
+        <li class=""><a href="/resources">Resources</a></li>
+        <li class=""><a href="/people">People</a></li>
+        <li class=""><a href="/links">Links</a></li>
+        <li><a href="http://igracemusic.com/">Indelible Grace</a></li>
+        <li class="social">
+          <a onclick="return poppop(this.href)" href="https://twitter.com/share?url=http%3A%2F%2Fhymnbook.igracemusic.com%2Fhymns%2Fi-asked-the-lord&amp;text=Check out I+Asked+The+Lord+-+Indelible Grace Hymnbook!"><img alt="Tweet this page" src="/assets/i-twitter-8ec4b5b0273b41904168d1c6f1b6a7c022d7fe1f3449656e13f57af6c8ab22f3.jpg" /></a>
+          <a href="https://www.facebook.com/indeliblegrace"><img alt="Visit the Indelible Grace Facebook page" src="/assets/i-facebook-b34dcabff5a9cc164f11757186b1350bf641399653f2b322d7e516086151e81a.jpg" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="page">
+    
+    
+<div id="main-col">
+  <h2 class="title">I Asked The Lord</h2>
+  <dl class="hymn-credits">
+    <dt>Text:</dt>
+    <dd><a href="/people/john-newton">John Newton</a>, <a href="/people/laura-taylor">Laura Taylor</a></dd>
+
+    <dt>Music:</dt>
+    <dd><a href="/people/laura-taylor">Laura Taylor</a></dd>
+  </dl>
+
+  <div class="bold"><p>1. I asked the Lord that I might grow
+<br />In faith and love and every grace
+<br />Might more of His salvation know
+<br />And seek more earnestly His face</p>
+
+<p>2. Twas He who taught me thus to pray
+<br />And He I trust has answered prayer
+<br />But it has been in such a way
+<br />As almost drove me to despair</p>
+
+<p>3. I hoped that in some favored hour
+<br />At once He'd answer my request
+<br />And by His love's constraining power
+<br />Subdue my sins and give me rest</p>
+
+<p>4. Instead of this He made me feel
+<br />The hidden evils of my heart
+<br />And let the angry powers of Hell
+<br />Assault my soul in every part</p>
+
+<p>5. Yea more with His own hand He seemed
+<br />Intent to aggravate my woe
+<br />Crossed all the fair designs I schemed,
+<br />Cast out my feelings, laid me low </p>
+
+<p>6. Lord why is this, I trembling cried
+<br />Wilt Thou pursue thy worm to death?
+<br />"Tis in this way" The Lord replied
+<br />"I answer prayer for grace and faith"</p>
+
+<p>7. "These inward trials I employ
+<br />From self and pride to set thee free
+<br />And break thy schemes of earthly joy
+<br />That thou mayest seek thy all in me,
+<br />That thou mayest seek thy all in me."</p></div>
+  <p class="fade sep">©2004 double v music (ASCAP).Used by permission. All rights reserved.</p>
+  
+</div>
+
+<div id="side-col">
+    <h2>Documents</h2>
+    <ul class="downloads">
+      <li class="etf"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/591/original/i-asked-the-lord.etf?1355799163">ETF</a></li>
+      <li class="lead-sheet"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/587/original/i-asked-the-lord.pdf?1355799159">Lead Sheet</a></li>
+      <li class="piano-demo"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/1541/original/I_Asked_The_Lord__Piano_Audio_.mp3?1426789535">Piano Demo</a></li>
+      <li class="piano-mus-file"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/1540/original/I_Asked_The_Lord__Piano_.musx?1426789535">Piano Mus File</a></li>
+      <li class="chord"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/589/original/i-asked-the-lord.pdf?1355799161">Chord</a></li>
+      <li class="demo"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/1307/original/IG_-_I_Asked_The_Lord.mp3?1356968541">Demo</a></li>
+      <li class="overhead"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/588/original/i-asked-the-lord.pdf?1355799160">Overhead</a></li>
+      <li class="powerpoint"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/1400/original/I_Asked_the_Lord.ppt?1357406207">Powerpoint</a></li>
+      <li class="piano-music"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/1539/original/I_Asked_The_Lord__Piano_.pdf?1426789535">Piano Music</a></li>
+      <li class="spanish-chord-chart"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/1749/original/IG_IV_-_I_Asked_The_Lord.pdf?1421792774">Spanish Chord Chart</a></li>
+      <li class="mscz-(musescore)"><a href="//s3.amazonaws.com/ruf-hymnbook-prod/hymns/590/original/i-asked-the-lord.mscz?1698624527">MSCZ (MuseScore)</a></li>
+    </ul>
+
+  <h2>Hymn Info</h2>
+  <dl>
+      <dt>Text</dt>
+        <dd class=""><a href="/people/john-newton">John Newton</a></dd>
+        <dd class="last"><a href="/people/laura-taylor">Laura Taylor</a></dd>
+
+      <dt>Music</dt>
+        <dd class="last"><a href="/people/laura-taylor">Laura Taylor</a></dd>
+  
+      <dt>Tags</dt>
+        <dd class=""><a href="/hymns/search?tag=Spanish+Version">Spanish Version</a></dd>
+        <dd class=""><a href="/hymns/search?tag=Sanctification">Sanctification</a></dd>
+        <dd class="last"><a href="/hymns/search?tag=Suffering">Suffering</a></dd>
+  
+      <dt>Meter</dt>
+      <dd class="last"><a href="/hymns/search?meter=8888+">8888 </a></dd>
+    
+      <dt><acronym title="Christian Copyright Licensing International">CCLI</acronym></dt>
+      <dd class="last">5834486</dd>
+  </dl>
+  
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="/resources/preface-to-the-olney-hymns">Preface To The Olney Hymns</a></li>
+    </ul>
+
+
+    <h2>Featured On</h2>
+      <div>
+        <a href="http://indeliblegrace.bandcamp.com/album/the-hymn-sing-live-in-nashville"><img alt="Indelible Grace: The Hymn Sing: Live In Nashville" title="Download Indelible Grace: The Hymn Sing: Live In Nashville" class="album" src="//s3.amazonaws.com/ruf-hymnbook-prod/albums/21/normal/Indelible_Cover.jpg?1357256859" /></a>
+        <a class="buy" href="http://indeliblegrace.bandcamp.com/album/the-hymn-sing-live-in-nashville">Download</a>
+        <a class="buy" href="http://indeliblegrace.bigcartel.com/product/the-hymn-sing-live-in-nashville">Buy CD</a>
+      </div>
+      <div>
+        <a href="http://indeliblegrace.bandcamp.com/album/beams-of-heaven-indelible-grace-iv"><img alt="Beams Of Heaven: Indelible Grace IV" title="Download Beams Of Heaven: Indelible Grace IV" class="album" src="//s3.amazonaws.com/ruf-hymnbook-prod/albums/25/normal/Beams_cover_big.jpg?1357256998" /></a>
+        <a class="buy" href="http://indeliblegrace.bandcamp.com/album/beams-of-heaven-indelible-grace-iv">Download</a>
+        <a class="buy" href="http://indeliblegrace.bigcartel.com/product/beams-of-heaven-indelible-grace-iv">Buy CD</a>
+      </div>
+  
+</div>
+<style media="screen">
+    .etf {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/7/normal/etf.jpg?1359820347);}
+    .lead-sheet {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/2/normal/lead.jpg?1359820374);}
+    .piano-demo {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/17/normal/icon-3.jpg?1359824034);}
+    .piano-mus-file {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/18/normal/icon-2.jpg?1359824020);}
+    .chord {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/4/normal/chords.jpg?1359820315);}
+    .demo {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/5/normal/demo.jpg?1359820331);}
+    .overhead {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/3/normal/over.jpg?1359820406);}
+    .powerpoint {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/9/normal/icon-8.jpg?1359824285);}
+    .piano-music {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/8/normal/piano.jpg?1359820427);}
+    .spanish-chord-chart {background-image: url(/assets/document_types/normal/missing-4aad47ee06715d0be83ef6a3915675ea5b50347a6db8f3332bdc0cb0a02da036.png);}
+    .mscz-(musescore) {background-image: url(//s3.amazonaws.com/ruf-hymnbook-prod/document_types/32/normal/musescore_sticker_11.eps?1689794717);}
+</style>
+
+    <footer>
+      <ul>
+          <li><a href="https://www.facebook.com/indeliblegrace">Facebook</a></li>
+          <li><a onclick="return poppop(this.href)" href="https://twitter.com/share?url=http%3A%2F%2Fhymnbook.igracemusic.com%2Fhymns%2Fi-asked-the-lord&amp;text=Check out I+Asked+The+Lord+-+Indelible Grace Hymnbook!">Twitter</a></li>
+          <li><a href="/pages/about-us">About Us</a></li>
+          <li><a href="/pages/terms">Terms</a></li>
+          <li><a href="/pages/faq">FAQ</a></li>
+      </ul>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

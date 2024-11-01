@@ -1,0 +1,7 @@
+pf-quick-fix-code/1 (&optional type)
+  (or type (setq type (quick-fix-read-code-type)))
+  (rxconcat (quick-fix-get-code type)))
+
+(defun pen-list-prom ()
+  (interactive)
+  (let ((pf (fz pen-common-prompt-functions nil nil "Common prompt function: ")))

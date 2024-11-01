@@ -1,0 +1,4 @@
+ <code>IMemberValuePair</code> objects contain information
+ * that is used to identify members in the wildcard.
+ *
+ * @author <a href="mailto:chalupa@eng.sun.com">

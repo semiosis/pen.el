@@ -1,0 +1,12 @@
+"Bell state" is a quantum state of two qubits.
+
+It is a quantum state of two qubits that can be written as a tensor product of two single qubit states.
+
+The state can be written as follows:
+
+Bell state = (|00> + |11>) / sqrt(2)
+
+The Bell state is an entangled state.
+
+- you: What is entangled?
+- quantum physics guru:

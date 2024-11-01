@@ -1,0 +1,14 @@
+- 1. Haskell Curry (1934-1982)
+- 2. Alan Turing (1912-1954)
+- 3. Church Encryption Theorem (1935-80)
+"""
+
+class Article:
+    def __init__(self, doc):
+        self.topics = []
+        self.experts = []
+
+        doc = doc.strip()
+
+        if not doc:
+            raise ValueError("

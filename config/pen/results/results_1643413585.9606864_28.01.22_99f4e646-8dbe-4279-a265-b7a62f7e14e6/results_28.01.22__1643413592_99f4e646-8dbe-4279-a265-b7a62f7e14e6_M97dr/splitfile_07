@@ -1,0 +1,12 @@
+git diff --cached
+diff --git a/core b/core
+index 5b9e9f2..d1d8b0a 100644
+--- a/core
++++ b/core
+@@ -1 +1 @@
+-harrys adventures
++harrys adventures (edited)
+» git add core
+» git commit -m "edited core"
+[master 8f7f3b6] edited core
+ 1 file changed, 1

@@ -1,0 +1,6 @@
+cd /root/repos/flk;  "ranger" "#" "<==" "zsh"
+cd /root/repos/flk;  "ranger" "#" "<==" "zsh"
+cd /root/repos/flk/docs;  "ranger" "#" "<==" "zsh"
+cd /root/repos/flk/mal;  "ranger" "#" "<==" "zsh"
+cd /root/repos/flk/mal/impls/tcl;  "ranger" "#" "<==" "zsh"
+cd /root/repos;  "ranger" "#" "<==" "zsh"

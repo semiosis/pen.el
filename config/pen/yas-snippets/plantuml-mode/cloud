@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cloud
+# group: deployment
+# key: cloud
+# --
+cloud {
+`yas-selected-text`$0
+}

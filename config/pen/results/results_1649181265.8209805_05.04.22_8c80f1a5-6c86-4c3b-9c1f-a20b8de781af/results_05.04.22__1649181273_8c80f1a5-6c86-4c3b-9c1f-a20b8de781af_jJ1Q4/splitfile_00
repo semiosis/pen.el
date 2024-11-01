@@ -1,0 +1,4 @@
+
+Whereas this declaration states that Natural is a type consisting of Integer s, it does not enforce the requirement that the compiler
+only use Integer s when it sees a Natural . Nevertheless, this type is semantically equivalent to Integer .
+That is,

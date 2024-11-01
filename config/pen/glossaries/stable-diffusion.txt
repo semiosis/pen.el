@@ -1,0 +1,164 @@
+https://www.sagiodev.com/blog/stable_diffusion_parameters/
+
+CFG Scale
+Classifier Free Guidance scale
+    A parameter to control how much the model
+    should respect your prompt.
+
+    1 = Mostly ignore your prompt. 
+    3 = Be more creative.
+    7 = A good balance between following the
+        prompt and freedom.
+    15 = Adhere more to prompt.
+    30 = Strictly follow the prompt.
+
+    Below are a few examples of increasing the
+    CFG scale with the same random seed.
+    
+    In general, you should stay away from the
+    two extremes - 1 and 30.
+
+    Recommendation:
+        Start with 7. Increase if you want it
+        to follow your prompt more.
+
+    https://www.sagiodev.com/blog/stable_diffusion_parameters/
+
+Sampling steps
+    Quality improves as the sampling step
+    increases.
+    
+    Typically 20 steps with Euler a sampler is
+    enough to reach a high quality, sharp
+    image.
+    
+    Although the image will still change
+    subtly when stepping through to higher
+    values, it will become different but not
+    necessarily higher quality.
+
+    Recommendation:
+        20 steps. Adjust to higher if you
+        suspect quality is low.
+
+    https://www.sagiodev.com/blog/stable_diffusion_parameters/
+
+Sampling methods
+    There’s a variety of sampling methods you
+    can choose, depending on what GUI you are
+    using:
+    - Euler a
+    - Euler
+    - LMS
+    - Heun
+    - DPM2
+    - DPM2 a
+    - DPM fast
+    - DPM adaptive
+    - LMS Karras
+    - DPM2 Karras
+    - DPM2 a Karras
+    - DDIM
+    - PLMS
+    
+    They are simply different methods for
+    solving diffusion equations.
+    
+    They are supposed to give the same result
+    but could be slightly different due
+    numerical bias.
+    
+    But since there’s no right answer here –
+    the only criteria is the image looks good,
+    accuracy of the method should not be your
+    concern.
+    
+    There are discussions in online community
+    claiming that certain sampling methods
+    tend to yield particular styles.
+    
+    This is without theoretical merit.
+    
+    My suggestion is to leave it as the
+    default.
+    
+    You would only want to change it if you
+    want to speed things up.
+    
+    Recommendation:
+        Leave it as default.
+
+    https://www.sagiodev.com/blog/stable_diffusion_parameters/
+
+Seed
+    The random seed determines the initialize
+    noise pattern and hence the final image.
+
+    Setting it to -1 means using a random one
+    every time. It is useful when you want to
+    generate new images. On the other hand,
+    fixing it would result in the same images
+    in each new generation.
+
+    How to find the seed used for an image if
+    you use random seed? In the dialog box,
+    you should see something like:
+    - Steps: 20,
+    - Sampler: Euler a,
+    - CFG scale: 7,
+    - Seed: 4239744034,
+    - Size: 512x512,
+    - Model hash: 7460a6fa
+
+    Simply copy this seed value to seed input
+    box. If you generate more than one image
+    at a time, the seed value of the second
+    image is this number incremented by 1, and
+    so on.
+
+    Recommendation:
+        Set to -1 to explore. Fix to a value
+        for fine-tuning.
+
+    https://www.sagiodev.com/blog/stable_diffusion_parameters/
+
+Image size
+    The size of output image. Since Stable
+    Diffusion is trained with 512x512 images,
+    setting it to portrait or landscape sizes
+    can create unexpected issues. Leave it as
+    square whenever possible.
+
+    Recommendation:
+        Set image size as 512x512.
+
+Batch size
+    Batch size is the number of images
+    generated each time. Since the final
+    images are very dependent on the random
+    seed, it is always a good idea to generate
+    a few images at a time. This way, you can
+    get a good sense of what the current
+    prompt can do.
+
+    Recommendation:
+        Set batch size to 4 or 8.
+
+Restore faces
+    A dirty little secret of Stable Diffusion
+    is that it often has issues with faces and
+    eyes. Restore faces is a post-processing
+    method applied to images using AI trained
+    specifically to correct faces.
+
+    To turn it on, check the box next to
+    Restore faces. Go to Settings tab, under
+    Face restoration model, select CodeFormer.
+
+    Below are two examples. Without face
+    restoration is on the left. With face
+    restoration is on the right.
+
+    Recommendation:
+        Turn restore faces on when you
+        generate images with faces.

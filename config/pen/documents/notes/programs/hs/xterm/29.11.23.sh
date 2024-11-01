@@ -1,0 +1,7 @@
+cd /root/notes;  "xterm" "-ls" "-fs" "11" "-e" ". /root/.xterm-sh-rc; resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:; echo $? > /root/.pen/tmp/tmp.hz3pKF5FrF" "#" "<==" "pen-xterm"
+cd /root/.emacs.d/host/pen.el/scripts;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.emacs.d/host/pen.el/scripts; /root/.pen/tmp/nsfa--yn-hi-root-emacs-d-host-pen-el-scripts.sh" "#" "<==" "pen-xt"
+cd /root/notes;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/notes; resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:" "#" "<==" "pen-xt"
+cd /root/notes;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/notes; resize &> /dev/null; sleep 0.1; TERM=screen-2color tmux attach -t localhost:" "#" "<==" "pen-xt"
+cd /root/notes;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/notes; resize &> /dev/null; sleep 0.1; TERM=screen-2color tmux attach -t localhost:" "#" "<==" "pen-xt"
+cd /root/notes;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/notes; resize &> /dev/null; sleep 0.1; TERM=screen-2color tmux attach -t localhost:" "#" "<==" "pen-xt"
+cd /root/.emacs.d/host/pen.el/scripts;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.emacs.d/host/pen.el/scripts; /root/.pen/tmp/nsfa--bash-root-emacs-d-host-pen-el-scripts.sh" "#" "<==" "pen-xt"

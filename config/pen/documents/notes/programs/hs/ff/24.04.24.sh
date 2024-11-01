@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "ff" "http://www.google.com/search?ie=utf-8&oe=utf-8&q=\"C is a coin that lands heads\"\\nhttp://www.google.com/search?ie=utf-8&oe=utf-8&q=\"C is a coin that lands heads\"\\nhttp://www.google.com/search?ie=utf-8&oe=utf-8&q=\"C is a coin that lands heads\"\\nhttp://www.google.com/search?ie=utf-8&oe=utf-8&q=\"C is a coin that lands heads\""
+cd /volumes/home/shane/notes/ws/problog/scratch;  "ff" "/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/basic/03_dice.html"
+cd /volumes/home/shane/notes/ws/problog/scratch;  "ff" "/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/basic/03_dice.html"
+cd /volumes/home/shane/notes/ws/problog/scratch;  "ff" "/volumes/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/basic/03_dice.html"
+cd /volumes/home/shane/notes/ws/problog/scratch;  "ff" "/volumes/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/basic/03_dice.html"

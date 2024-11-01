@@ -1,0 +1,12 @@
+Paraphrase mining
+    The task of finding pharaphrases (texts
+    with identical / similar meaning) in a
+    large corpus of sentences.
+    
+    In Semantic Textual Similarity we saw a
+    simplified version of finding paraphrases
+    in a list of sentences.
+    
+    The approach presented there used a brute-
+    force approach to score and rank all
+    pairs.

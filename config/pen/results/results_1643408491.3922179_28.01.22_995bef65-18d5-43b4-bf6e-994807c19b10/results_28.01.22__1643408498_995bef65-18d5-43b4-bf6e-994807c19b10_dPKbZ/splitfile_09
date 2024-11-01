@@ -1,0 +1,6 @@
+cd 'harrys adventures'
+» ls
+ harry-and-the-sorcerers-stone.txt  harry-and-the-prisoner-of-azkaban.txt
+ harry-and-the-goblet-of-fire.txt  harry-and-the-order-of-the-phoenix.txt
+ harry.txt  harry2.txt  harry3.txt
+» cd ../..

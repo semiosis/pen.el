@@ -1,0 +1,26 @@
+Regression analysis
+    A set of statistical processes for
+    estimating the relationships between a
+    dependent variable (often called the
+    'outcome variable') and one or more
+    independent variables (often called
+    'predictors', 'covariates', or
+    'features').
+
+    Primarily used for two conceptually distinct purposes.
+    - First, regression analysis is widely
+      used for prediction and forecasting,
+      where its use has substantial overlap
+      with the field of machine learning.
+    - Second, in some situations regression
+      analysis can be used to infer causal
+      relationships between the independent
+      and dependent variables.
+
+Exploratory causal analysis
+data causality
+causal discovery.
+    The use of statistical algorithms to infer
+    associations in observed data sets that
+    are potentially causal under strict
+    assumptions.

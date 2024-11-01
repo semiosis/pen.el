@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "1" "John" "3:17-18" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "1" "John" "2:27" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/churches/cornerstone;  "1" "Corinthians" "9:21" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "1" "John" "3:17" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "1" "Timothy" "6:17" "#" "<==" "bash"

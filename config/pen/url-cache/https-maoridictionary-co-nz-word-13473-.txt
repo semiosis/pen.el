@@ -1,0 +1,738 @@
+HTTP/1.1 200 OK
+Date: Thu, 21 Sep 2023 07:39:49 GMT
+Server: Apache/2.4.57 (Ubuntu)
+X-Powered-By: PHP/8.1.9
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6Ik16eURiZ3ByT1hMbDNKU2hUUDZEVlE9PSIsInZhbHVlIjoiQ09ZeFVxb3E0c3JaVC9WSFYrazNtcnd0NkMrSERzZS84dUhjSFdJNG5OWFpyZEJadG9tSHphdDZJNlQycXhBU3l1MlRvTGMzMGU1ODNHamIyTzhmaFRZaWgwcFUwMEJDWHdRZmlIR0YyZSs5NFpxaEhMWStML0hzNTQwTlZlQ2YiLCJtYWMiOiJlZDM5NDJjNTk2NzJkZmQ5MmJlMmNjMGRmMDVlMDkyMGYxMTUzZjlhMDBiMDM2MjNhZDQyZjJjOGRmMGJlNmEzIiwidGFnIjoiIn0%3D; expires=Thu, 21 Sep 2023 09:39:49 GMT; Max-Age=7200; path=/; samesite=lax
+Set-Cookie: laravel_session=eyJpdiI6IkRBbmJEbFRMWGxoVlJtYUp5eHhUa1E9PSIsInZhbHVlIjoibktOWXNBV2F5SjMzeiswWWNKZWxZUGNOcXduNytmL3JhL29lT3padE15dkhHb0JianAwRlVnbnF3VEdsUDdZUllLVThicmJkZDFwRmc3WjV3dzBldjBMaTBneXk3YXF4bFM3WEtRb2l1M2paa1dYa250Wm5VNkZrYTVHMlRyZEMiLCJtYWMiOiI0ZjI4ZDcwN2VhMmRkNjhiMGY1YzBmYmUyNTU3MGRmMGY5ZmRkZjliNjkwNmEyZTVkMGIyMTJiOGIyYWYzNDMxIiwidGFnIjoiIn0%3D; expires=Thu, 21 Sep 2023 09:39:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+Vary: Accept-Encoding
+Content-Type: text/html; charset=UTF-8
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Connection: close
+Transfer-Encoding: chunked
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ka pai - Te Aka Māori Dictionary</title>
+<meta name="apple-itunes-app" content="app-id=377136638">
+<meta name="google-play-app" content="app-id=com.auttereomaori">
+<meta name="description" content="Search results for 'ka pai'. Search the Māori dictionary with the online version of Te Aka Māori-English, English-Māori Dictionary and Index " />
+<meta name="keywords" content="ka pai,maori dictionary,maori,maori language,maori english,english maori,maori translation,dictionary " />
+<meta name="author" content="www.dynamo6.com" />
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Te Aka">
+<meta name="application-name" content="Te Aka">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ka pai - Te Aka Māori Dictionary" />
+<meta property="og:description" content="Search results for 'ka pai'. Search the Māori dictionary with the online version of Te Aka Māori-English, English-Māori Dictionary and Index " />
+<meta property="og:url" content="https://www.maoridictionary.co.nz/" />
+<meta property="og:site_name" content="ka pai - Te Aka Māori Dictionary" />
+<meta property="og:image" content="https://maoridictionary.co.nz/te-aka.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ka pai - Te Aka Māori Dictionary" />
+<meta name="twitter:description" content="Search results for 'ka pai'. Search the Māori dictionary with the online version of Te Aka Māori-English, English-Māori Dictionary and Index " />
+<meta name="twitter:image" content="https://maoridictionary.co.nz/te-aka.jpg" />
+
+<link href="/css/app.css?id=215cad011d1946df57b556872a98acb2" rel="stylesheet">
+<link href="/css/splide-core.min.css?id=320a61539bc83007265de3d76ba18da0" rel="stylesheet">
+<script src="/js/app.js?id=5b7d30a9306440ae85b9cdc662902e25" defer></script>
+</head>
+<body class="text-primary bg-page antialiased preload" :class="overlay && 'overflow-hidden'" x-data="app()" x-init="updateAppliedFilterCount">
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVJG0XLCBC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XVJG0XLCBC');
+    </script>
+    
+    <div class="fixed w-full h-full bg-black opacity-25 z-40" :class="!overlay && 'hidden'" @click="hideOverlay()" x-cloak></div>
+    <header class="site-header" :class="overlay && 'after:blur-sm'">
+        <div class="flex justify-between relative">
+            <div class="flex px-4 z-50">
+                <a class="flex items-center" href="#" @click.prevent="navOpen = true; overlay = true">
+                    <svg class="fill-current transition-colors text-primary lg:text-light hover:text-yellow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6ZM2 12C2 11.4477 2.44772 11 3 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H3C2.44772 13 2 12.5523 2 12ZM3 17C2.44772 17 2 17.4477 2 18C2 18.5523 2.44772 19 3 19H19C19.5523 19 20 18.5523 20 18C20 17.4477 19.5523 17 19 17H3Z"/>
+                    </svg>
+                    <span class="hidden lg:flex text-xs opacity-60 ml-2" href="#">Menu</span>
+                </a>
+            </div>
+            <div class="px-4 z-50 hidden lg:flex transition-filter duration-300" :class="overlay && 'blur-sm'">
+                <a class="language-toggle bg-secondary " href="/switch/en" title="View site in English">EN</a>
+<a class="language-toggle ml-1  border-2 border-light border-opacity-30 " href="/switch/mi" title="View site in Māori">MI</a>
+            </div>
+            <div class="px-4 z-50 flex lg:hidden transition-filter duration-300" :class="overlay && 'blur-sm'">
+    <a class="filter-button" href="#" @click.prevent="mobileFilters = true; overlay = true" x-cloak>
+        <span class="relative inline-block bg-filter w-6 h-6 align-middle">
+            <span class="absolute -top-1 -right-1 inline-block bg-secondary text-white border-1 border-white rounded-full text-center leading-3" style="width:14px; height:14px; font-size:8px" :class="appliedFilterCount == '0' && 'hidden'" x-text="appliedFilterCount">0</span> 
+        </span> 
+    </a>
+</div>
+            <a href="/" class="lg:hidden absolute inline-block w-full z-10 font-dazzle text-base sm:text-xl text-primary text-center top-1/2 -translate-y-1/2 active:opacity-20" :class="overlay && 'blur-sm'">Te Aka</a>
+            <div class="hidden absolute lg:inline-block w-full z-10 text-center top-1/2 -translate-y-1/2" :class="overlay && 'blur-sm'" x-cloak>
+    <nav class="sites-nav__nav">
+        <div class="group w-auto inline-block">
+            <span class="site-nav-bg-strip"></span>
+            <div class="text-xs transform transition-visibility duration-300 delay-100 ease-in-out opacity-100 visible group-hover:opacity-0 group-hover:invisible">
+                <a href="https://tewhanake.maori.nz" class="sites-nav__list-item">Te Whanake</a>
+                <a href="https://shop.tewhanake.maori.nz" class="sites-nav__list-item">Shop</a>
+                <a href="http://animations.tewhanake.maori.nz" class="sites-nav__list-item">Animations</a>
+                <a href="http://podcasts.tewhanake.maori.nz" class="sites-nav__list-item">Podcasts</a>
+                <a href="http://www.tokureo.maori.nz" class="sites-nav__list-item">Videos</a>
+                <a href="https://maoridictionary.co.nz" class="sites-nav__list-item border-2 rounded-2xl py-1">Māori Dictionary</a>
+            </div>
+            <div class="sites-nav-site-links">
+                <div class="max-w-5xl m-auto px-14">
+                    <div class="flex items-baseline justify-center">
+                        <div class="w-auto flex-1">
+                            <a class="site-link" href="https://tewhanake.maori.nz/">
+                                <span class="site-link-image">
+                                    <picture>
+                                        <img class="block" src="/i/sites/te-whanake.png" alt="Site nav te whanake" width="136" height="68">
+                                    </picture>
+                                </span>
+                                <span class="block mb-1 text-sm font-bold">Te Whanake</span>
+                                <span class="text-tiny opacity-60 block">The gateway to printed and online Māori language resources</span>
+                            </a>
+                        </div>
+                        <div class="w-auto flex-1">
+                            <a class="site-link" href="https://shop.tewhanake.maori.nz/">
+                                <span class="site-link-image">
+                                    <picture>
+                                        <img class="block" src="/i/sites/shop.png" alt="Site nav shop" width="136" height="68">
+                                    </picture>
+                                </span>
+                                <span class="block mb-1 text-sm font-bold">Shop</span>
+                                <span class="text-tiny opacity-60 block">Shop for textbooks, study guides, manuals and dictionary</span>
+                            </a>
+                        </div>
+                        <div class="w-auto flex-1">
+                            <a class="site-link" href="http://animations.tewhanake.maori.nz/">
+                                <span class="site-link-image">
+                                    <picture>
+                                        <img class="block" src="/i/sites/animations.png" alt="Site nav animations" width="136" height="68">
+                                    </picture>
+                                </span>
+                                <span class="block mb-1 text-sm font-bold">Animations</span>
+                                <span class="text-tiny opacity-60 block">Online animations and activities for learning Māori</span>
+                            </a>
+                        </div>
+                        <div class="w-auto flex-1">
+                            <a class="site-link" href="http://podcasts.tewhanake.maori.nz/">
+                                <span class="site-link-image">
+                                    <picture>
+                                        <img class="block" src="/i/sites/podcasts.png" alt="Site nav podcasts" width="136" height="68">
+                                    </picture>
+                                </span>
+                                <span class="block mb-1 text-sm font-bold">Podcasts</span>
+                                <span class="text-tiny opacity-60 block">Audio activities and exercises for Māori language learners</span>
+                            </a>
+                        </div>
+                        <div class="w-auto flex-1">
+                            <a class="site-link" href="http://www.tokureo.maori.nz/">
+                                <span class="site-link-image">
+                                    <picture>
+                                        <img class="block" src="/i/sites/videos.png" alt="Site nav videos" width="136" height="68">
+                                    </picture>
+                                </span>
+                                <span class="block mb-1 text-sm font-bold">Videos</span>
+                                <span class="text-tiny opacity-60 block">TV programmes to complement Te Whanake resources</span>
+                            </a>
+                        </div>
+                        <div class="w-auto flex-1">
+                            <a class="site-link" href="https://maoridictionary.co.nz/">
+                                <span class="site-link-image">
+                                    <picture>
+                                        <img class="block" src="/i/sites/maori-dictionary.png" alt="Site nav dictionary" width="136" height="68">
+                                    </picture>
+                                </span>
+                                <span class="block mb-1 text-sm font-bold">Māori Dictionary</span>
+                                <span class="text-tiny opacity-60 block">The online Māori language dictionary</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>        </div>
+        <div class="transition-filter duration-300" :class="overlay && 'blur-sm'">
+                <div class="lg:hidden px-4 pt-4">
+        <form action="https://maoridictionary.co.nz/search" method="get" class="searchForm" id="searchFormHeader" x-data="{ keywords: '' }">
+    <input type="hidden" name="idiom" value=""/>
+    <input type="hidden" name="phrase" value=""/>
+    <input type="hidden" name="proverb" value=""/>
+    <input type="hidden" name="loan" value=""/>
+    <input type="hidden" name="histLoanWords" value=""/>
+
+    <fieldset>
+        <div class="flex bg-textboxgray bg-opacity-50 rounded-sm py-1 px-2 sm:py-2 sm:pl-4 sm:pr-3" x-data="{ clearIcon: keywords ? true : false, submitIcon: false }" @click.outside="keywords != '' ? clearIcon = true : clearIcon = false; submitIcon = false">
+            <span class="inline-block">
+    <svg class="hidden sm:block " width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 3C15.4183 3 19 6.58172 19 11C19 12.8487 18.3729 14.551 17.3199 15.9056L20.8284 19.4142C21.219 19.8047 21.219 20.4379 20.8284 20.8284C20.4379 21.219 19.8047 21.219 19.4142 20.8284L15.9056 17.3199C14.551 18.3729 12.8487 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3ZM15.5213 14.9445C15.3938 14.9931 15.2743 15.0688 15.1716 15.1716C15.0688 15.2743 14.9931 15.3938 14.9445 15.5213C13.8898 16.4422 12.5101 17 11 17C7.68629 17 5 14.3137 5 11C5 7.68629 7.68629 5 11 5C14.3137 5 17 7.68629 17 11C17 12.5101 16.4422 13.8898 15.5213 14.9445Z" fill="#102B26"/>
+    </svg>
+        <svg class="block sm:hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C14.3137 5 17 7.68629 17 11C17 12.424 16.5039 13.7321 15.6752 14.761L18.9749 18.0607C19.3654 18.4512 19.3654 19.0843 18.9749 19.4749C18.5843 19.8654 17.9512 19.8654 17.5607 19.4749L14.1768 16.091C13.2555 16.667 12.1666 17 11 17C7.68629 17 5 14.3137 5 11C5 7.68629 7.68629 5 11 5ZM11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7Z" fill="#102B26"/>
+    </svg>
+    </span>
+<input @focus="keywords != '' ? submitIcon = true : submitIcon = false; clearIcon = false;" @keyup="submitIcon = true;" x-model="keywords" x-ref="keywords" type="text" class="flex-1 font-bold ml-2 focus:outline-none text-primary bg-opacity-0 bg-textboxgray text-sm sm:text-base" name="keywords" placeholder="Search" value="" autocomplete="off" autocapitalize="off">
+<button class="active:opacity-20" x-cloak x-show="clearIcon" @click.prevent="keywords = ''; $refs.keywords.focus()" type="button">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7983 7.61594C18.1888 7.22542 18.1888 6.59225 17.7983 6.20173C17.4077 5.81121 16.7746 5.81121 16.3841 6.20173L12.1414 10.4444L7.89878 6.20173C7.50825 5.81121 6.87509 5.81121 6.48456 6.20173C6.09404 6.59225 6.09404 7.22542 6.48456 7.61594L10.7272 11.8586L6.48456 16.1012C6.09404 16.4917 6.09404 17.1249 6.48456 17.5154C6.87509 17.906 7.50825 17.906 7.89878 17.5154L12.1414 13.2728L16.3841 17.5154C16.7746 17.906 17.4077 17.906 17.7983 17.5154C18.1888 17.1249 18.1888 16.4917 17.7983 16.1012L13.5556 11.8586L17.7983 7.61594Z" fill="#D0D0C9"/>
+    </svg>
+</button>
+<button class="active:opacity-20 w-6" x-cloak x-show="submitIcon" type="submit">
+    <svg class="m-auto w-5 h-5 sm:w-6 sm:h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="#C1360B"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 8.93506C13 8.53571 13.4451 8.29752 13.7773 8.51903L18.376 11.5848C18.6728 11.7827 18.6728 12.2189 18.376 12.4168L13.7773 15.4826C13.4451 15.7041 13 15.4659 13 15.0665V13.0008H7C6.44772 13.0008 6 12.5531 6 12.0008C6 11.4485 6.44772 11.0008 7 11.0008H13V8.93506Z" fill="white"/>
+    </svg>
+</button>        </div>
+    </fieldset>
+</form>
+    </div>
+        </div>
+    </header>
+    <nav class="side-nav" :style="navOpen ? {transform: 'translateX(0)'} : {}" :class="navOpen && 'shadow-2xl'" x-cloak>
+    <div class="px-4">
+        <div class="flex justify-between">
+            <a class="" href="#" @click.prevent="navOpen = false; overlay = false">
+                <svg class="inline-block fill-current text-yellow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0711 5.34313C20.4616 4.95261 20.4616 4.31944 20.0711 3.92892C19.6805 3.53839 19.0474 3.53839 18.6569 3.92892L12 10.5858L5.34315 3.92892C4.95262 3.53839 4.31946 3.53839 3.92893 3.92892C3.53841 4.31944 3.53841 4.95261 3.92893 5.34313L10.5858 12L3.92893 18.6568C3.53841 19.0474 3.53841 19.6805 3.92893 20.0711C4.31946 20.4616 4.95262 20.4616 5.34315 20.0711L12 13.4142L18.6569 20.0711C19.0474 20.4616 19.6805 20.4616 20.0711 20.0711C20.4616 19.6805 20.4616 19.0474 20.0711 18.6568L13.4142 12L20.0711 5.34313Z"/>
+                </svg>
+            </a>
+            <div class="flex">
+                <a class="language-toggle bg-secondary " href="/switch/en" title="View site in English">EN</a>
+<a class="language-toggle ml-1  border-2 border-light border-opacity-30 " href="/switch/mi" title="View site in Māori">MI</a>
+            </div>
+        </div>
+        <ul class="mt-16 sm:mt-20">
+            <li class="menu-item"><a href="/">Search</a></li>
+            <li class="menu-item"><a href="/dictionary-info">About</a></li>
+            <li class="menu-item"><a href="/dictionary-project">Sources</a></li>
+            <li class="menu-item"><a href="/maori-dictionary">The Book</a></li>
+            <li class="menu-item"><a href="/maori-resources">Resources</a></li>
+            <li class="menu-item"><a href="/dictionary-help">Help</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="fixed top-0 left-0 bg-white text-primary p-4 w-full z-50 -translate-y-full transition transform duration-300" :style="mobileFilters ? {transform: 'translateY(0)'} : {}">
+        <div x-data="{
+    filterSelection: {
+        idiom: '',
+        phrase: '',
+        proverb: '',
+        loan: '',
+        histLoanWords: ''
+    },
+    applyFilters() {
+        const filterSelection = this.filterSelection;
+        Object.keys(filterSelection).map((key) => {
+            if(key === 'histLoanWords') {
+                if(filterSelection[key] == '0') {
+                    filterSelection[key] = '';
+                }
+            } else {
+                if(filterSelection[key] == '1') {
+                    filterSelection[key] = '';
+                }
+            }
+        });
+        searchParams = filterSelection;
+        this.closeFilters();
+        setTimeout(() => {
+            document.getElementById('searchForm').submit()
+        }, 300);
+    },
+    closeFilters() {
+        this.filters = false;
+        this.mobileFilters = false;
+        this.hideOverlay();
+    }
+}">
+    <div class="flex justify-between items-center pb-4">
+        <span class="form-label">Filters</span>
+        <a href="#" class="block text-2xl" @click.prevent="closeFilters()"><span class="icon-x"></span></a>
+    </div>
+    <div class="filter-item">
+        <p class="">Idioms</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="idiom" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.idiom = '0' : filterSelection.idiom = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="idiom" name="toggle-idiom"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item">
+        <p class="">Phrases</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="phrase" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.phrase = '0' : filterSelection.phrase = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="phrase" name="toggle-phrase"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item">
+        <p class="">Proverbs</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="proverb" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.proverb = '0' : filterSelection.proverb = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="proverb" name="toggle-proverb"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item">
+        <p class="">Loan words</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="loan" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.loan = '0' : filterSelection.loan = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="loan" name="toggle-loan"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item border-b-1">
+        <p class="">Historical loan words</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="histLoanWords" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.histLoanWords = '0' : filterSelection.histLoanWords = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="histLoanWords" name="toggle-histLoanWords"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="pt-6">
+        <button class="uppercase bg-primary text-white form-label w-full p-3" @click.prevent="$el.classList.add('opacity-20'); applyFilters();">Apply filters</button>
+    </div>
+</div>    </div>
+
+    <div id="content" class="transition-filter duration-300" :class="overlay && 'blur-sm'">
+
+            <div class="inner-header" x-data="{ filters: false }">
+    <div class="flex py-6">
+        <div class="flex flex-none pl-10 xl:w-64">
+            <a id="logo-container" class="flex" href="/">
+                <div id="tui-small" class="bg-tui bg-tui-small bg-no-repeat bg-center mr-2 hidden xl:block"></div>
+                <div>
+                    <span class="font-dazzle text-xl leading-6 block">Te Aka</span>
+                    <span class="text-sm font-semibold leading-6 block text-secondary">Māori Dictionary</span>
+                </div>
+            </a>
+        </div>
+        <div class="flex-grow items-center justify-center m-auto max-w-4xl px-4 sm:px-24 lg:px-16">
+            <form action="https://maoridictionary.co.nz/search" method="get" class="searchForm" id="searchForm" x-data="{ keywords: '' }" x-ref="searchForm">
+    <input type="hidden" name="idiom" value="" x-model="searchParams.idiom"/>
+    <input type="hidden" name="phrase" value="" x-model="searchParams.phrase"/>
+    <input type="hidden" name="proverb" value="" x-model="searchParams.proverb"/>
+    <input type="hidden" name="loan" value="" x-model="searchParams.loan"/>
+    <input type="hidden" name="histLoanWords" value="" x-model="searchParams.histLoanWords"/>
+
+    <fieldset>
+        <div  class="flex bg-white border-2 border-primary py-2 pl-4 pr-3 focus-within:shadow-textfield" x-data="{ clearIcon: keywords ? true : false, submitIcon: false }" @click.outside="keywords != '' ? clearIcon = true : clearIcon = false; submitIcon = false">
+            <span class="inline-block">
+    <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 3C15.4183 3 19 6.58172 19 11C19 12.8487 18.3729 14.551 17.3199 15.9056L20.8284 19.4142C21.219 19.8047 21.219 20.4379 20.8284 20.8284C20.4379 21.219 19.8047 21.219 19.4142 20.8284L15.9056 17.3199C14.551 18.3729 12.8487 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3ZM15.5213 14.9445C15.3938 14.9931 15.2743 15.0688 15.1716 15.1716C15.0688 15.2743 14.9931 15.3938 14.9445 15.5213C13.8898 16.4422 12.5101 17 11 17C7.68629 17 5 14.3137 5 11C5 7.68629 7.68629 5 11 5C14.3137 5 17 7.68629 17 11C17 12.5101 16.4422 13.8898 15.5213 14.9445Z" fill="#102B26"/>
+    </svg>
+    </span>
+<input @focus="keywords != '' ? submitIcon = true : submitIcon = false; clearIcon = false;" @keyup="submitIcon = true;" x-model="keywords" x-ref="keywords" type="text" class="flex-1 font-bold ml-2 focus:outline-none text-primary bg-opacity-0 bg-white" name="keywords" placeholder="Search" value="" autocomplete="off" autocapitalize="off">
+<button class="active:opacity-20" x-cloak x-show="clearIcon" @click.prevent="keywords = ''; $refs.keywords.focus()" type="button">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7983 7.61594C18.1888 7.22542 18.1888 6.59225 17.7983 6.20173C17.4077 5.81121 16.7746 5.81121 16.3841 6.20173L12.1414 10.4444L7.89878 6.20173C7.50825 5.81121 6.87509 5.81121 6.48456 6.20173C6.09404 6.59225 6.09404 7.22542 6.48456 7.61594L10.7272 11.8586L6.48456 16.1012C6.09404 16.4917 6.09404 17.1249 6.48456 17.5154C6.87509 17.906 7.50825 17.906 7.89878 17.5154L12.1414 13.2728L16.3841 17.5154C16.7746 17.906 17.4077 17.906 17.7983 17.5154C18.1888 17.1249 18.1888 16.4917 17.7983 16.1012L13.5556 11.8586L17.7983 7.61594Z" fill="#D0D0C9"/>
+    </svg>
+</button>
+<button class="active:opacity-20 w-6" x-cloak x-show="submitIcon" type="submit">
+    <svg class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="#C1360B"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 8.93506C13 8.53571 13.4451 8.29752 13.7773 8.51903L18.376 11.5848C18.6728 11.7827 18.6728 12.2189 18.376 12.4168L13.7773 15.4826C13.4451 15.7041 13 15.4659 13 15.0665V13.0008H7C6.44772 13.0008 6 12.5531 6 12.0008C6 11.4485 6.44772 11.0008 7 11.0008H13V8.93506Z" fill="white"/>
+    </svg>
+</button>        </div>
+    </fieldset>
+</form>
+        </div>
+        <div class="flex flex-none pr-10 xl:w-64 items-center justify-end">
+                    </div>
+    </div>
+    <div class="absolute top-20 right-1 z-10 bg-white border-2 border-primary p-6 shadow-textfield w-90" x-cloak x-show="filters" x-transition:opacity x-transition:enter.duration.300ms>
+        <div x-data="{
+    filterSelection: {
+        idiom: '',
+        phrase: '',
+        proverb: '',
+        loan: '',
+        histLoanWords: ''
+    },
+    applyFilters() {
+        const filterSelection = this.filterSelection;
+        Object.keys(filterSelection).map((key) => {
+            if(key === 'histLoanWords') {
+                if(filterSelection[key] == '0') {
+                    filterSelection[key] = '';
+                }
+            } else {
+                if(filterSelection[key] == '1') {
+                    filterSelection[key] = '';
+                }
+            }
+        });
+        searchParams = filterSelection;
+        this.closeFilters();
+        setTimeout(() => {
+            document.getElementById('searchForm').submit()
+        }, 300);
+    },
+    closeFilters() {
+        this.filters = false;
+        this.mobileFilters = false;
+        this.hideOverlay();
+    }
+}">
+    <div class="flex justify-between items-center pb-4">
+        <span class="form-label">Filters</span>
+        <a href="#" class="block text-2xl" @click.prevent="closeFilters()"><span class="icon-x"></span></a>
+    </div>
+    <div class="filter-item">
+        <p class="">Idioms</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="idiom" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.idiom = '0' : filterSelection.idiom = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="idiom" name="toggle-idiom"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item">
+        <p class="">Phrases</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="phrase" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.phrase = '0' : filterSelection.phrase = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="phrase" name="toggle-phrase"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item">
+        <p class="">Proverbs</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="proverb" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.proverb = '0' : filterSelection.proverb = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="proverb" name="toggle-proverb"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item">
+        <p class="">Loan words</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '1' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="loan" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.loan = '0' : filterSelection.loan = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="loan" name="toggle-loan"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="filter-item border-b-1">
+        <p class="">Historical loan words</p>
+        <div class="flex justify-center items-center" x-data="{ toggle: '' }">
+    <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle ? 'bg-secondary' : 'bg-disabled']">
+        
+        <label for="histLoanWords" class="w-12 h-6 block"
+            @click="!toggle ? toggle = true : toggle = false; !toggle ? filterSelection.histLoanWords = '0' : filterSelection.histLoanWords = '1';">
+            <span class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+            :class="[toggle ? 'translate-x-full border-secondary' : 'translate-x-0 border-disabled']"></span>
+        </label>
+        
+        <input type="checkbox" id="histLoanWords" name="toggle-histLoanWords"
+            class="appearance-none w-full h-full active:outline-none focus:outline-none">
+    </div>
+</div>    </div>
+    <div class="pt-6">
+        <button class="uppercase bg-primary text-white form-label w-full p-3" @click.prevent="$el.classList.add('opacity-20'); applyFilters();">Apply filters</button>
+    </div>
+</div>    </div>
+</div>
+        
+<div class="relative">
+    <div class="load-bg"></div>
+    
+    <div class="result">
+
+        
+        <section class="word-def max-w-4xl m-auto pt-8 sm:pt-16 pb-8 sm:pb-12 px-4 sm:px-24 lg:px-40 xl:px-16" x-data="definition()">
+                <div class="center  first  clearfix">
+            <div class="columns">
+                <div class="large-two">
+                    <div class="content-def">
+                                                    <h2 class="title  ">ka pai 
+                                                                                                    <a href="#" title="Play audio pronunciation" class="icon-audio word-audio-play text-lightgray text-2xl ml-2 align-middle transition-colors duration-200 ease-in-out hover:text-secondary" x-data="{ audioRef: 'word-audio-13473' }" @click.prevent="playPronounciation" :style="playing && { color: '#C1360B' }"></a>
+                                    <audio x-ref="word-audio-13473" src="https://storage.googleapis.com/maori-dictionary-prod2-web-assets/public/13473.mp3" class="hidden" preload="none" @ended="playing = false"></audio>
+                                                                <a href="https://maoridictionary.co.nz/word/13473" title="Link to this word" class="text-lightgray inline-block align-middle w-5 h-5 mt-1 fill-current text-2xl transition-colors duration-200 ease-in-out hover:text-secondary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg></a>
+                            </h2>
+                                                <div id="d15735" class="flex mt-5 sm:mt-8">
+                            <div class="flex-1 detail">
+                                <p class="mb-0"><strong>1.</strong> 
+                                                                                                                                                                
+                                good. 
+
+                                                                
+                                <div class="mt-4 ">
+
+                                                                        
+                                    <div x-data="{ showExample: false }">
+                                        <p class="mb-0 mt-2 text-slate" x-show="showExample" x-transition:opacity x-transition:enter.duration.300ms>
+                                                                                        <em><b>Ka pai</b> rā tēnei mahi.</em> /                                                                                                                                     This work is good.                                                                                                                                </p>
+                                        <p class="text-secondary mb-0 mt-2" :class="showExample && 'hidden'"><a href="#" @click.prevent="showExample = true"><span class="icon-expand text-xs mr-2"></span> Show example</a></p>
+                                        <p class="text-secondary mb-0 mt-2" :class="!showExample && 'hidden'"><a href="#" @click.prevent="showExample = false"><span class="icon-condense text-xs mr-2"></span> Hide example</a></p>
+                                    </div>
+                                    
+                                    
+                                                                                                                                                </div>
+                                
+                                                                
+                            </div><!-- end .detail -->
+                            <div class="flex-none ml-4">
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-6">                <div class="center  clearfix">
+            <div class="columns">
+                <div class="large-two">
+                    <div class="content-def">
+                                                <div id="d53101" class="flex mt-5 sm:mt-8">
+                            <div class="flex-1 detail">
+                                <p class="mb-0"><strong>2.</strong> 
+                                                                                                                                                                
+                                it serves (you) right&nbsp;- sometimes used idiomatically to indicate the speakers lack of sympathy. 
+
+                                                                
+                                <div class="mt-4 ">
+
+                                                                        
+                                    <div x-data="{ showExample: false }">
+                                        <p class="mb-0 mt-2 text-slate" x-show="showExample" x-transition:opacity x-transition:enter.duration.300ms>
+                                                                                        <em>Pare: Kua tangohia te raihana a Tahuti. Rangi: <b>Ka pai</b>. Koinā anō e mātotoru nā te waewae (HKK 1999:72).</em> /                                                                                                                                     Pare: Tahuti has had his licence taken away. Rangi: It serves him right. That's because of his heavy foot.                                                                                                                                </p>
+                                        <p class="text-secondary mb-0 mt-2" :class="showExample && 'hidden'"><a href="#" @click.prevent="showExample = true"><span class="icon-expand text-xs mr-2"></span> Show example</a></p>
+                                        <p class="text-secondary mb-0 mt-2" :class="!showExample && 'hidden'"><a href="#" @click.prevent="showExample = false"><span class="icon-condense text-xs mr-2"></span> Hide example</a></p>
+                                    </div>
+                                    
+                                    
+                                                                                                                                                </div>
+                                
+                                                                
+                            </div><!-- end .detail -->
+                            <div class="flex-none ml-4">
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </section>
+    <div class="pattern-divider h-7 sm:h-14"></div>
+
+
+        
+
+    </div>
+</div>
+
+
+    </div>
+
+        <section class="hidden md:block max-w-screen-xl px-4 md:px-12 xl:px-0 m-auto my-16 md:mt-40 md:mb-0 transition-filter duration-300" :class="overlay && 'blur-sm'">
+    <div class="flex items-center bg-darkgreen py-12 pr-14">
+        <div class="flex-none relative w-80 h-48">
+            <div class="absolute -top-32">
+                <img src="/i/te-kakano-book.png">
+            </div>
+        </div>
+        <div class="flex items-center flex-wrap xl:flex-nowrap">
+            <div class="xl:pr-40 text-left text-light">
+                <h2 class="text-2xl xl:text-4xl">Te Kākano 3rd Edition</h2>
+                <p>New edition of the leading Māori-language textbook out now.</p>            </div>
+            <div class="lg:flex-none">
+                <a href="https://shop.tewhanake.maori.nz/textbooks/te-whanake-1-te-kakano-3rd-edition" target="_blank" rel="noopener" class="block py-3 px-8 bg-light text-center form-label uppercase border-2 border-primary shadow-textfield hover:bg-primary hover:text-light transition-colors duration-200 ease-in-out">Get the textbook</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="max-w-screen-xl px-4 md:px-12 xl:px-0 m-auto my-16 md:mb-28 md:mt-12 transition-filter duration-300" :class="overlay && 'blur-sm'">
+    <div class="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="md:hidden grid gap-2 grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+            <div class="bg-tekakano-book bg-bottom bg-no-repeat bg-promo-box lg:bg-contain bg-darkgreen pt-11 pb-80 lg:pb-90 px-7 lg:px-10">
+                <div class="text-center text-light">
+                    <h2 class="text-2xl xl:text-4xl">Te Kākano 3rd Edition</h2>
+                    <p>New edition of the leading Māori-language textbook out now.</p>                    <a class="arrow-button-light" href="https://shop.tewhanake.maori.nz/textbooks/te-whanake-1-te-kakano-3rd-edition" target="_blank" rel="noopener"><span class="align-middle">More info</span><span class="icon-arrow text-2xl align-middle ml-2"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-teaka-app bg-bottom bg-no-repeat bg-promo-box lg:bg-contain bg-lime bg-opacity-10 pt-11 pb-80 lg:pb-90 px-7 lg:px-10">
+            <div class="text-center">
+                <h2 class="text-2xl xl:text-4xl">The App</h2>
+                <p>Te Aka Māori Dictionary is also available as an iOS and Android app. Download below.</p>
+    <a class="logo-button mr-3" href="https://itunes.apple.com/nz/app/id377136638?mt=8" target="_blank" rel="noopener"><span class="icon-apple text-2xl align-middle mr-2"></span><span class="align-middle">iOS</span></a>  <a class="logo-button ml-3" href="https://play.google.com/store/apps/details?id=com.auttereomaori&hl=en" target="_blank" rel="noopener"><span class="icon-android text-2xl align-middle mr-2"></span><span class="align-middle">Android</span></a>            </div>
+        </div>
+        <div class="bg-teaka-book bg-bottom bg-no-repeat bg-promo-box lg:bg-contain bg-seagreen bg-opacity-10 pt-11 pb-60 px-7 lg:px-10">
+            <div class="text-center">
+                <h2 class="text-2xl xl:text-4xl">The Book</h2>
+                <p><em>Te Aka Māori-English, English-Māori Dictionary and Index</em> by John C Moorfield comprises a selection of modern and everyday language that will be extremely useful for learners of the Māori language.</p>
+    <a class="arrow-button" href="/maori-dictionary"><span class="align-middle">More info</span><span class="icon-arrow text-2xl align-middle ml-2"></span></a>            </div>
+        </div>
+        <div class="bg-hpk bg-bottom bg-no-repeat bg-promo-box lg:bg-contain bg-secondary bg-opacity-10 pt-11 pb-60 px-7 lg:px-10 md:col-span-2 lg:col-auto">
+            <div class="text-center md:px-30 lg:p-0">
+                <h2 class="text-2xl xl:text-4xl mb-0">He Pātaka Kupu</h2><p class="subtitle text-base xl:text-xl text-slate pb-4 mb-0">Te kai a te rangatira</p>                <p>He Pātaka Kupu is a monolingual Māori language dictionary, and was designed using its own culturally authentic terms.</p><p><a class="arrow-button" href="https://hepatakakupu.nz" target="_blank" rel="noopener"><span class="align-middle">Visit website</span><span class="icon-arrow text-2xl align-middle ml-2"></span></a></p>            </div>
+        </div>
+    </div>
+</section>    <!-- Media overlay -->
+    <div class="fixed top-0 left-0 z-50 w-full h-full" x-show="mediaOverlay" x-cloak x-transition:opacity x-transition:enter.duration.300ms>
+        <div class="flex w-full md:w-2/3 m-auto md:h-screen h-full items-center justify-center">
+            <div class="flex flex-col w-full md:w-auto justify-between h-full md:h-auto shadow-mediamodal bg-black relative" @click.outside="hideOverlay()">
+                <div class="flex flex-col items-end absolute w-full h-30 z-10" :class="mediaType == 'image' && 'media-gradient'">
+                    <a href="#" class="text-2xl text-light m-3" @click.prevent="hideOverlay()"><span class="icon-x"></span></a>
+                </div>
+                <img src="" class="md:max-h-[60vh]" x-show="mediaType == 'image'" :src="mediaImageURL">
+                <audio x-ref="mediaAudio" src="" class="hidden" :src="mediaAudioURL" @durationchange="updateDuration()" @timeupdate="updateAudioProgress()" @ended="mediaPlaying = false"></audio>
+                <div class="media-audio" x-show="mediaType == 'audio'">
+                    <div class="absolute flex justify-center items-center -bottom-14 md:bottom-0 left-0 p-4 w-full">
+                        <button class="flex-none bg-no-repeat" @click.prevent="toggleAudio()" :class="mediaPlaying ? 'bg-pause' : 'bg-play'"></button>
+                        <div class="flex-grow bg-light bg-opacity-20 mx-4 rounded-full">
+                            <span class="block w-0 bg-secondary h-1 rounded-full" :style="`width: ${mediaAudioProgress}%`"></span>
+                        </div>
+                        <span class="flex-none text-xs w-9" x-text="mediaAudioDuration">00:00</span>
+                    </div>
+                </div>
+                <div class=" bg-black p-4">
+                    <div class="font-bold text-sm text-light leading-7" x-text="mediaWord"></div>
+                    <div class="text-xs leading-4 text-light opacity-70" x-text="mediaCredits"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="transition-filter duration-300" :class="overlay && 'blur-sm'">
+        <div class="pattern-divider h-12 sm:h-24"></div>
+        <div class="py-10 sm:py-20">
+
+            <div class="flex max-w-screen-lg px-12 xl:px-0 m-auto text-slate">
+                <div class="flex flex-col md:flex-row w-2/3 md:w-10/12">
+                    <div class="md:w-1/3">
+                        <h3 class="font-dazzle text-primary mt-0 mb-4 md:leading-7">Te Aka</h3>
+                        <p class="text-xs">&copy; Copyright 2003-2023 <br>John C Moorfield, <br>Te Aka Māori Dictionary</p>
+                    </div>
+                    <div class="flex md:w-2/3">
+                        <div class="w-1/2 md:w-1/3">
+                            <div class="mb-2 sm:mb-3"><a class="footer-link" href="/">Search</a></div>
+                            <div class="mb-2 sm:mb-3"><a class="footer-link" href="/dictionary-info">About</a></div>
+                            <div><a class="footer-link" href="/dictionary-project">Sources</a></div>
+                        </div>
+                        <div class="w-1/2 md:w-1/3">
+                            <div class="mb-2 sm:mb-3"><a class="footer-link" href="/maori-dictionary">The Book</a></div>
+                            <div class="mb-2 sm:mb-3"><a class="footer-link" href="/maori-resources">Resources</a></div>
+                            <div><a class="footer-link" href="/dictionary-help">Help</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-1/3 md:w-2/12 justify-end">
+                    <a class="footer-icon" href="https://temurumara.org.nz" title="Te Murumara Foundation">
+                        <svg class="footer__logo" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 214">
+                            <g fill="none" fill-rule="evenodd">
+                            <path fill="#C1360B" d="M20,35 C20,25 20,20 20,20 C11.7157288,20 5,26.7157288 5,35 C5,35 10,35 20,35 Z" transform="rotate(-90 12.5 27.5)"></path>
+                            <path fill="#102B26" d="M20,0 L20,40 L0,40 L0,20 C0,8.954305 8.954305,0 20,0 Z M20,40 L20,20 C8.954305,20 0,28.954305 0,40 L20,40 Z"></path>
+                            <path fill="#5D9F00" d="M20,0 L34.361148,1.03584031e-15 C43.2763354,-6.01853049e-16 46.5091978,0.928256111 49.768457,2.67132704 C53.0277163,4.41439796 55.585602,6.97228371 57.328673,10.231543 C59.0717439,13.4908022 60,16.7236646 60,25.638852 L60,40 L60,40 L20,40 L20,0 Z"></path>
+                            <path fill="#97B000" d="M20,0 L30.361148,1.03584031e-15 C39.2763354,-6.01853049e-16 42.5091978,0.928256111 45.768457,2.67132704 C49.0277163,4.41439796 51.585602,6.97228371 53.328673,10.231543 C55.0717439,13.4908022 56,16.7236646 56,25.638852 L56,40 L56,40 L20,40 L20,0 Z"></path>
+                            <circle cx="35" cy="15" r="5" fill="#FCEA00"></circle>
+                            <circle cx="35" cy="15" r="2.5" fill="#102B26"></circle>
+                            <path fill="#5D9F00" d="M60,40 L60,80 L45.638852,80 C36.7236646,80 33.4908022,79.0717439 30.231543,77.328673 C26.9722837,75.585602 24.414398,73.0277163 22.671327,69.768457 C20.9605352,66.5695544 20.0346593,63.3960801 20.0009543,54.8506264 L20,40 L60,40 Z M80,60 L80,80 L60,80 L60,60 L80,60 Z"></path>
+                            <path fill="#C1360B" d="M76,80 C64.954305,80 56,71.045695 56,60 L56,40 C63.3637967,40 64.69713,40 60,40 L80,80 L76,80 Z"></path>
+                            <path fill="#97B000" d="M60,40 C71.045695,40 80,48.954305 80,60 L80,60 L80,60 L60,60 L60,40 Z"></path>
+                            <path fill="#0B8F78" d="M80,80 C80,66.6666667 80,60 80,60 C68.954305,60 60,68.954305 60,80 C60,80 66.6666667,80 80,80 Z" transform="matrix(1 0 0 -1 0 140)"></path>
+                            <path fill="#102B26" d="M40,80 L40,100 L40,100 L20,100 C20,88.954305 28.954305,80 40,80 L40,80 Z M60,80 L60,100 L60,100 L40,100 C40,88.954305 48.954305,80 60,80 L60,80 Z"></path>
+                            <path fill="#102B26" d="M3.0425 13L3.0425 3.807 0 3.807 0 1.0375 9 1.0375 9 3.807 5.957 3.807 5.957 13 3.0425 13zM15.07 13.2175C11.474 13.2175 8.864 10.332 8.864 7.0115 8.864 3.7055 11.474.82 15.07.82 18.84.82 21.7545 4.1695 21.189 7.867L11.735 7.867C11.9525 9.375 13.301 10.5495 15.0555 10.5495 16.259 10.5495 17.303 9.9115 17.825 8.969L20.9715 8.969C20.2175 11.4195 17.9265 13.2175 15.07 13.2175zM11.909 5.692L18.1585 5.692C17.7815 4.4305 16.549 3.5315 15.041 3.5315 13.533 3.5315 12.315 4.445 11.909 5.692zM21.9005 15.052L21.9005 22.5485C21.9005 23.549 22.2485 24.361 23.3795 24.361 24.5105 24.361 24.8585 23.549 24.8585 22.5485L24.8585 15.052 27.7875 15.052 27.7875 22.447C27.7875 25.3325 26.1055 27.1885 23.3795 27.1885 20.6535 27.1885 18.9715 25.318 18.9715 22.447L18.9715 15.052 21.9005 15.052zM42.9685 15.052L42.9685 22.5485C42.9685 23.549 43.3165 24.361 44.4475 24.361 45.5785 24.361 45.9265 23.549 45.9265 22.5485L45.9265 15.052 48.8555 15.052 48.8555 22.447C48.8555 25.3325 47.1735 27.1885 44.4475 27.1885 41.7215 27.1885 40.0395 25.318 40.0395 22.447L40.0395 15.052 42.9685 15.052zM32.9855 15.052C36.9295 15.052 38.394 17.3575 38.394 19.837 38.394 21.2435 37.9155 22.592 36.8715 23.491L38.684 27 35.3055 27 34.305 24.5785C34.0295 24.622 33.725 24.6365 33.406 24.6365L32.913 24.6365 32.913 27.0145 29.9985 27.0145 29.9985 15.052 32.9855 15.052zM81.98 15.052C85.924 15.052 87.3885 17.3575 87.3885 19.837 87.3885 21.2435 86.91 22.592 85.866 23.491L87.6785 27 84.3 27 83.2995 24.5785C83.024 24.622 82.7195 24.6365 82.4005 24.6365L81.9075 24.6365 81.9075 27.0145 78.993 27.0145 78.993 15.052 81.98 15.052zM6.8715 15.0665L9.9165 23.172 12.918 15.0665 16.7605 15.0665 16.7605 27 13.846 27 13.846 20.011 11.1925 27 8.597 27 5.9145 19.924 5.9145 27 3 27 3 15.0665 6.8715 15.0665zM54.938 15.0665L57.983 23.172 60.9845 15.0665 64.827 15.0665 64.827 27 61.9125 27 61.9125 20.011 59.259 27 56.6635 27 53.981 19.924 53.981 27 51.0665 27 51.0665 15.0665 54.938 15.0665zM73.447 15.0665L77.7245 27 74.7375 27 74.2445 25.521 69.6335 25.521 69.1405 27 66.081 27 70.431 15.0665 73.447 15.0665zM95.1385 15.0665L99.416 27 96.429 27 95.936 25.521 91.325 25.521 90.832 27 87.7725 27 92.1225 15.0665 95.1385 15.0665zM71.939 18.532L70.3875 23.2445 73.4905 23.2445 71.939 18.532zM93.6305 18.532L92.079 23.2445 95.182 23.2445 93.6305 18.532zM33.493 17.894L32.913 17.894 32.913 21.7945 33.493 21.7945C34.8415 21.7945 35.5375 20.9535 35.5375 19.837 35.5375 18.706 34.827 17.894 33.493 17.894zM82.4875 17.894L81.9075 17.894 81.9075 21.7945 82.4875 21.7945C83.836 21.7945 84.532 20.9535 84.532 19.837 84.532 18.706 83.8215 17.894 82.4875 17.894zM75 12L75 14 69 14 69 12 75 12zM17.101 28.82C20.697 28.82 23.2925 31.7055 23.2925 35.0115 23.2925 38.332 20.697 41.2175 17.101 41.2175 13.4905 41.2175 10.895 38.332 10.895 35.0115 10.895 31.7055 13.4905 28.82 17.101 28.82zM88.896 28.82C92.492 28.82 95.0875 31.7055 95.0875 35.0115 95.0875 38.332 92.492 41.2175 88.896 41.2175 85.2855 41.2175 82.69 38.332 82.69 35.0115 82.69 31.7055 85.2855 28.82 88.896 28.82zM27.9395 29.052L27.9395 36.5485C27.9395 37.549 28.2875 38.361 29.4185 38.361 30.5495 38.361 30.8975 37.549 30.8975 36.5485L30.8975 29.052 33.8265 29.052 33.8265 36.447C33.8265 39.3325 32.1445 41.1885 29.4185 41.1885 26.6925 41.1885 25.0105 39.318 25.0105 36.447L25.0105 29.052 27.9395 29.052zM64.8775 29.0665L69.155 41 66.168 41 65.675 39.521 61.064 39.521 60.571 41 57.5115 41 61.8615 29.0665 64.8775 29.0665zM80.827 29.081L80.827 41 77.898 41 77.898 29.081 80.827 29.081zM9.554 29.0375L9.554 31.807 5.9145 31.807 5.9145 33.9385 9.2205 33.9385 9.2205 36.418 5.9145 36.418 5.9145 41 3 41 3 29.0375 9.554 29.0375zM38.981 29.052L42.8235 35.809 42.8235 29.052 45.7525 29.052 45.7525 41 42.8525 41 38.9665 34.185 38.9665 41 36.0375 41 36.0375 29.052 38.981 29.052zM50.8925 29.0375C55.46 29.0375 57.403 31.7345 57.403 34.9825 57.403 38.2305 55.46 41 50.8925 41L48.094 41 48.094 29.0375 50.8925 29.0375zM77 29.0375L77 31.807 73.918 31.807 73.918 41 71.0035 41 71.0035 31.807 68 31.807 68 29.0375 77 29.0375zM99.894 29.052L103.7365 35.809 103.7365 29.052 106.6655 29.052 106.6655 41 103.7655 41 99.8795 34.185 99.8795 41 96.9505 41 96.9505 29.052 99.894 29.052zM17.101 31.749C15.2015 31.749 13.824 33.228 13.824 35.0115 13.824 36.795 15.2015 38.2885 17.101 38.2885 18.986 38.2885 20.3635 36.795 20.3635 35.0115 20.3635 33.228 18.986 31.749 17.101 31.749zM88.896 31.749C86.9965 31.749 85.619 33.228 85.619 35.0115 85.619 36.795 86.9965 38.2885 88.896 38.2885 90.781 38.2885 92.1585 36.795 92.1585 35.0115 92.1585 33.228 90.781 31.749 88.896 31.749zM51.255 31.9665L51.0085 31.9665 51.0085 38.0565 51.255 38.0565C53.5025 38.0565 54.474 36.6645 54.474 34.9825 54.474 33.315 53.5025 31.9665 51.255 31.9665zM63.3695 32.532L61.818 37.2445 64.921 37.2445 63.3695 32.532z" transform="rotate(90 -23 84)"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.tematawai.maori.nz/" class="ml-4 md:w-1/2 max-w-[80px]" title="Te Mātāwai">
+                        <img src="/i/te-matawai-logo.png" width="400" height="400" class="rounded-full">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

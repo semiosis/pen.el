@@ -1,0 +1,6 @@
+http://beta.quicklisp.org/quicklisp.lisp"
+
+(setq *lisp-directory* "$HOME/repos/swank/"
+)
+
+(swank:create-server :port

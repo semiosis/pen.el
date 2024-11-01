@@ -1,0 +1,12 @@
+query parser
+    Parsing of a query is the process by which
+    this decision making is done that for a
+    given query, calculating how many
+    different ways there are in which the
+    query can run.
+    
+    Every query must be parsed at least once.
+    
+    The parsing of a query is performed within
+    the database using the Optimizer
+    component.

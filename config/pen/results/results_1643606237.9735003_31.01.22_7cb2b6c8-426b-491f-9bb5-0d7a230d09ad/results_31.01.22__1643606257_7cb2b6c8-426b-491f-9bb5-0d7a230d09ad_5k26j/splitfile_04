@@ -1,0 +1,14 @@
+
+function! GetLast20Lines()
+    let end = line('.')
+    let start = end - 20
+    if start < 1
+        let start = 1
+    endif
+    let s = ""
+    for i in range(start, end)
+        let s .= getline(i) . "\n"
+    endfor
+    return s
+endfunction
+

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: handle capture c-g
+# group: 
+# key: c-g
+# --
+(defun my-c-g-test ()
+"test catching control-g"
+(interactive)
+(let ((inhibit-quit t))
+(unless (with-local-quit
+(y-or-n-p "arg you gonna type C-g?")
+t)
+(progn
+(message "you hit C-g")
+(setq quit-flag nil)))))

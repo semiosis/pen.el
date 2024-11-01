@@ -1,0 +1,885 @@
+HTTP/1.1 200 OK
+Date: Sat, 21 Oct 2023 20:05:16 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+﻿<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/SubPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.biblestudystart.com/img/books-large.jpg">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Outline of Numbers | Free Bible Outlines</title>
+<!-- InstanceEndEditable -->
+<meta property="og:site_name" content="Bible Outlines" />
+<meta property="og:title" content="Outline of Numbers | Free Bible Outlines" />
+<meta property="og:description" content="Bible outline of Numbers. See what it's about from the first verse to the last." />
+<meta name="Description" content="Bible outline of Numbers. See what it's about from the first verse to the last.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../layout/styles3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 240px;
+}
+@media (min-width: 500px) {
+.gresponsive, #google-responsiveside {
+	width: 468px;
+	height: 60px;
+}
+}
+@media (min-width: 601px) {
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 600px;
+}
+}
+@media (min-width: 1100px) {
+.gresponsive, #google-responsiveside {
+	width: 300px;
+	height: 600px;
+}
+}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="mainbackground">
+  <div id="header">
+    <div class="lowerglow innerdiv"> <!-- InstanceBeginEditable name="SubSiteTitle" -->
+      <div class="title"> <a href="https://www.biblestudystart.com/outlines/">Bible Outlines</a></div>
+      <div class="subtitle">Every book of the Bible outlined in section headings.</div>
+      <!-- InstanceEndEditable --> </div>
+  </div>
+  <div id="outer" class="innerdiv">
+    <div id="content"> 
+      <div class="bibleoutline">
+<h1>Outline of Numbers</h1>
+<table>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 1</td></tr>
+ <tr>
+  <td class="verses">Nu 1:1-4.</td>
+  <td class="summary">God commands Moses to number the people.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 1:5-16.</td>
+  <td class="summary">The princes of the tribes.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 1:17-46.</td>
+  <td class="summary">The number of every tribe.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 1:47-54.</td>
+  <td class="summary">The Levites are exempted for the service of the Lord.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 2</td></tr>
+ <tr>
+  <td class="verses">Nu 2:1-34.</td>
+  <td class="summary">The order of the tribes in their tents.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 3</td></tr>
+ <tr>
+  <td class="verses">Nu 3:1-4.</td>
+  <td class="summary">The sons of Aaron.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:5-13.</td>
+  <td class="summary">The Levites are given to the priests instead of the first-born;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:14-20.</td>
+  <td class="summary">are numbered by their families.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:21-26.</td>
+  <td class="summary">The families, number, and charge of the Gershonites;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:27-32.</td>
+  <td class="summary">of the Kohathites;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:33-37.</td>
+  <td class="summary">of the Merarites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:38-39.</td>
+  <td class="summary">The place and charge of Moses and Aaron.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:40-43.</td>
+  <td class="summary">The first-born are freed by the Levites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 3:44-51.</td>
+  <td class="summary">The overplus are redeemed.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 4</td></tr>
+ <tr>
+  <td class="verses">Nu 4:1-3.</td>
+  <td class="summary">The age at which the Levites were to begin to serve, and the duration of the service.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:4-15.</td>
+  <td class="summary">The duty of the Kohathites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:16.</td>
+  <td class="summary">The charge of Eleazar.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:17-20.</td>
+  <td class="summary">The office of the priests.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:21-28.</td>
+  <td class="summary">The duty of the Gershonites;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:29-33.</td>
+  <td class="summary">of the Merarites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:34-37.</td>
+  <td class="summary">The number of the Kohathites;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:38-41.</td>
+  <td class="summary">of the Gershonites</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 4:42-49.</td>
+  <td class="summary">and of the Merarites.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 5</td></tr>
+ <tr>
+  <td class="verses">Nu 5:1-4.</td>
+  <td class="summary">The unclean are removed out of camp.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 5:5-10.</td>
+  <td class="summary">Restitution is to be made in trespass.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 5:11-31.</td>
+  <td class="summary">The trial of jealousy.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 6</td></tr>
+ <tr>
+  <td class="verses">Nu 6:1-12.</td>
+  <td class="summary">The law of the Nazarite in the days of his separation;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 6:13-21.</td>
+  <td class="summary">and after their completion.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 6:22-27.</td>
+  <td class="summary">The form of blessing the people.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 7</td></tr>
+ <tr>
+  <td class="verses">Nu 7:1-9.</td>
+  <td class="summary">The offering of the princes at the dedication of the tabernacle.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 7:10-88.</td>
+  <td class="summary">Their several offerings at the dedication of the altar.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 7:89.</td>
+  <td class="summary">God speaks to Moses from the mercy seat.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 8</td></tr>
+ <tr>
+  <td class="verses">Nu 8:1-4.</td>
+  <td class="summary">How the lamps are to be lighted.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 8:5-22.</td>
+  <td class="summary">The consecration of the Levites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 8:23-26.</td>
+  <td class="summary">The age and time of their service.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 9</td></tr>
+ <tr>
+  <td class="verses">Nu 9:1-5.</td>
+  <td class="summary">The passover is again commanded.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 9:6-14.</td>
+  <td class="summary">A second passover for the unclean or absent.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 9:15-23.</td>
+  <td class="summary">The cloud directs the removals and encampments of the Israelites.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 10</td></tr>
+ <tr>
+  <td class="verses">Nu 10:1-10.</td>
+  <td class="summary">The use of the silver trumpets.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 10:11-13.</td>
+  <td class="summary">The Israelites remove from Sinai to Paran.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 10:14-28.</td>
+  <td class="summary">The order of their march.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 10:29-32.</td>
+  <td class="summary">Hobab is entreated by Moses not to leave them.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 10:33-36.</td>
+  <td class="summary">The blessing of Moses at the removing and resting of the ark.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 11</td></tr>
+ <tr>
+  <td class="verses">Nu 11:1-3.</td>
+  <td class="summary">The burning at Taberah quenched by Moses' prayer.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 11:4-9.</td>
+  <td class="summary">The people lust for flesh, and loathe manna.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 11:10-15.</td>
+  <td class="summary">Moses complains of his charge.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 11:16-20.</td>
+  <td class="summary">God promises to divide his burden unto seventy elders, and to give the people flesh for a month.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 11:21-30.</td>
+  <td class="summary">Moses' faith is staggered.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 11:31-35.</td>
+  <td class="summary">Quails are given in wrath at Kibroth-hattaavah.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 12</td></tr>
+ <tr>
+  <td class="verses">Nu 12:1-10.</td>
+  <td class="summary">God rebukes the sedition of Miriam and Aaron.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 12:11-13.</td>
+  <td class="summary">Miriam's leprosy is healed at the prayer of Moses.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 12:14-15.</td>
+  <td class="summary">God commands her to be shut out of the host.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 12:16.</td>
+  <td class="summary">The people encamp in the wilderness of Paran.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 13</td></tr>
+ <tr>
+  <td class="verses">Nu 13:1-16.</td>
+  <td class="summary">The names of the men who were sent to search the land.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 13:17-20.</td>
+  <td class="summary">Their instructions.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 13:21-25.</td>
+  <td class="summary">Their acts.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 13:26-33.</td>
+  <td class="summary">Their relation.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 14</td></tr>
+ <tr>
+  <td class="verses">Nu 14:1-5.</td>
+  <td class="summary">The people murmur at the news.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 14:6-10.</td>
+  <td class="summary">Joshua and Caleb labour to still them.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 14:11-12.</td>
+  <td class="summary">God threatens them.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 14:13-25.</td>
+  <td class="summary">Moses intercedes with God, and obtains pardon.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 14:26-35.</td>
+  <td class="summary">The murmurers are debarred from entering into the land.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 14:36-39.</td>
+  <td class="summary">The men who raised the evil report die by a plague.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 14:40-45.</td>
+  <td class="summary">The people that would invade the land against the will of God are smitten.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 15</td></tr>
+ <tr>
+  <td class="verses">Nu 15:1-13.</td>
+  <td class="summary">The law of the meat offering, and the drink offering.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 15:14-16.</td>
+  <td class="summary">The stranger is under the same law.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 15:17-21.</td>
+  <td class="summary">The law of the first of the dough for an heave offering.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 15:22-29.</td>
+  <td class="summary">The sacrifice for sins of ignorance.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 15:30-31.</td>
+  <td class="summary">The punishment of presumption.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 15:32-36.</td>
+  <td class="summary">He that violated the sabbath is stoned.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 15:37-41.</td>
+  <td class="summary">The law of fringes.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 16</td></tr>
+ <tr>
+  <td class="verses">Nu 16:1-22.</td>
+  <td class="summary">The rebellion of Korah, Dathan, and Abiram.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 16:23-30.</td>
+  <td class="summary">Moses separates the people from the rebels' tents.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 16:31-35.</td>
+  <td class="summary">The earth swallows up Korah, and a fire consumes others.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 16:36-40.</td>
+  <td class="summary">The censers are reserved to holy use.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 16:41-45.</td>
+  <td class="summary">Fourteen thousand and seven hundred are slain by a plague, for murmuring against Moses and Aaron.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 16:46-50.</td>
+  <td class="summary">Aaron by incense stays the plague.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 17</td></tr>
+ <tr>
+  <td class="verses">Nu 17:1-9.</td>
+  <td class="summary">Aaron,s rod, among all the rods of the tribes, only flourishes.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 17:10-13.</td>
+  <td class="summary">It is left for a monument against the rebels.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 18</td></tr>
+ <tr>
+  <td class="verses">Nu 18:1-7.</td>
+  <td class="summary">The charge of the priests and Levites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 18:8-20.</td>
+  <td class="summary">The priests' portion.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 18:21-24.</td>
+  <td class="summary">The Levites' portion.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 18:25-32.</td>
+  <td class="summary">The heave offering to the priests out of the Levites' portion.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 19</td></tr>
+ <tr>
+  <td class="verses">Nu 19:1-10.</td>
+  <td class="summary">The water of separation made of the ashes of a red heifer.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 19:11-22.</td>
+  <td class="summary">The law for the use of it in purification of the unclean.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 20</td></tr>
+ <tr>
+  <td class="verses">Nu 20:1.</td>
+  <td class="summary">The children of Israel come to Zin, where Miriam dies.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 20:2-6.</td>
+  <td class="summary">They murmur for want of water.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 20:7-13.</td>
+  <td class="summary">Moses smiting the rock, brings forth water at Meribah.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 20:14-21.</td>
+  <td class="summary">Moses at Kadesh desires passage through Edom, which is denied him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 20:22-29.</td>
+  <td class="summary">At mount Hor Aaron resigns his place to Eleazar, and dies.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 21</td></tr>
+ <tr>
+  <td class="verses">Nu 21:1-3.</td>
+  <td class="summary">Israel destroys the Canaanites at Hormah.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 21:4-6.</td>
+  <td class="summary">The people murmuring are plagued with fiery serpents.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 21:7-9.</td>
+  <td class="summary">They repenting are healed by a brazen serpent.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 21:10-20.</td>
+  <td class="summary">Sundry journeys of the Israelites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 21:21-32.</td>
+  <td class="summary">Sihon is overcome,</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 21:33-35.</td>
+  <td class="summary">and Og.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 22</td></tr>
+ <tr>
+  <td class="verses">Nu 22:1-14.</td>
+  <td class="summary">Balak's first message for Balaam is refused.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 22:15-21.</td>
+  <td class="summary">His second message obtains him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 22:22-35.</td>
+  <td class="summary">An angel would have slain him, if he had not been saved by his ass.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 22:36-41.</td>
+  <td class="summary">Balak entertains him.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 23</td></tr>
+ <tr>
+  <td class="verses">Nu 23:1-6.</td>
+  <td class="summary">Balak's sacrifices.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 23:7-12.</td>
+  <td class="summary">Balaam's parables.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 23:13-17.</td>
+  <td class="summary">Balak's sacrifices.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 23:18-24.</td>
+  <td class="summary">Balaam's parables.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 23:25-30.</td>
+  <td class="summary">Balak's sacrifices.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 24</td></tr>
+ <tr>
+  <td class="verses">Nu 24:1-9.</td>
+  <td class="summary">Balaam, leaving divinations, prophesies the happiness of Israel.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 24:10-14.</td>
+  <td class="summary">Balak, in anger, dismisses him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 24:15-25.</td>
+  <td class="summary">He prophesies of the Star of Jacob, and the destruction of some nations.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 25</td></tr>
+ <tr>
+  <td class="verses">Nu 25:1-5.</td>
+  <td class="summary">Israel at Shittim commit whoredom and idolatry.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 25:6-9.</td>
+  <td class="summary">Phinehas kills Zimri and Cozbi.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 25:10-15.</td>
+  <td class="summary">God therefore gives him an everlasting priesthood.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 25:16-18.</td>
+  <td class="summary">The Midianites are to be vexed.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 26</td></tr>
+ <tr>
+  <td class="verses">Nu 26:1-51.</td>
+  <td class="summary">The sum of all Israel is taken in the plains of Moab.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 26:52-56.</td>
+  <td class="summary">The law of dividing among them the inheritance of the land.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 26:57-62.</td>
+  <td class="summary">The families and number of the Levites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 26:63-65.</td>
+  <td class="summary">None was left of them which were numbered at Sinai, but Caleb and Joshua.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 27</td></tr>
+ <tr>
+  <td class="verses">Nu 27:1-5.</td>
+  <td class="summary">The daughters of Zelophehad sue for an inheritance.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 27:6-11.</td>
+  <td class="summary">The law of inheritances.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 27:12-17.</td>
+  <td class="summary">Moses, being told of his death, sues for a successor.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 27:18-23.</td>
+  <td class="summary">Joshua is appointed to succeed him.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 28</td></tr>
+ <tr>
+  <td class="verses">Nu 28:1-2.</td>
+  <td class="summary">Offerings are to be observed.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 28:3-8.</td>
+  <td class="summary">The continual burnt offering.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 28:9-10.</td>
+  <td class="summary">The offering on the sabbath;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 28:11-15.</td>
+  <td class="summary">on the new moons;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 28:16-25.</td>
+  <td class="summary">at the passover;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 28:26-31.</td>
+  <td class="summary">in the day of the first-fruits.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 29</td></tr>
+ <tr>
+  <td class="verses">Nu 29:1-6.</td>
+  <td class="summary">The offering at the feast of trumpets;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 29:7-11.</td>
+  <td class="summary">at the day of afflicting their souls;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 29:12-40.</td>
+  <td class="summary">and on the eight days of the feast of tabernacles.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 30</td></tr>
+ <tr>
+  <td class="verses">Nu 30:1-2.</td>
+  <td class="summary">Vows are not to be broken.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 30:3-5.</td>
+  <td class="summary">The exceptions of a maid's vows;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 30:6-8.</td>
+  <td class="summary">of a wife's;</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 30:9-16.</td>
+  <td class="summary">of a widow's; or her that is divorced.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 31</td></tr>
+ <tr>
+  <td class="verses">Nu 31:1-12.</td>
+  <td class="summary">The Midianites are spoiled, and Balaam slain.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 31:13-18.</td>
+  <td class="summary">Moses is wroth with the officers, for saving the women alive.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 31:19-24.</td>
+  <td class="summary">How the soldiers, with their captives and spoil, are to be purified.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 31:25-47.</td>
+  <td class="summary">The proportion in which the prey is to be divided.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 31:48-54.</td>
+  <td class="summary">The voluntary oblation unto the treasury of the Lord.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 32</td></tr>
+ <tr>
+  <td class="verses">Nu 32:1-5.</td>
+  <td class="summary">The Reubenites and Gadites sue for their inheritance on the east side of Jordan.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 32:6-15.</td>
+  <td class="summary">Moses reproves them.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 32:16-32.</td>
+  <td class="summary">They offer him conditions with which he is content.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 32:33-38.</td>
+  <td class="summary">Moses assigns them the land.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 32:39-42.</td>
+  <td class="summary">They conquer it.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 33</td></tr>
+ <tr>
+  <td class="verses">Nu 33:1-49.</td>
+  <td class="summary">The two and forty journeys of the Israelites.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 33:50-56.</td>
+  <td class="summary">The Canaanites are to be destroyed.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 34</td></tr>
+ <tr>
+  <td class="verses">Nu 34:1-15.</td>
+  <td class="summary">The borders of the land.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 34:16-29.</td>
+  <td class="summary">The names of the men who shall divide the land.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 35</td></tr>
+ <tr>
+  <td class="verses">Nu 35:1-5.</td>
+  <td class="summary">Eight and forty cities for the Levites, with their suburbs, and measure thereof.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 35:6-8.</td>
+  <td class="summary">Six of them are to be cities of refuge.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 35:9-30.</td>
+  <td class="summary">The laws of murder and manslaughter.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 35:31-34.</td>
+  <td class="summary">No satisfaction for murder.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Numbers chapter 36</td></tr>
+ <tr>
+  <td class="verses">Nu 36:1-6.</td>
+  <td class="summary">The inconvenience of the inheritance of daughters is remedied by marrying in their own tribes,</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 36:7-9.</td>
+  <td class="summary">lest the inheritance should be removed from the tribe.</td>
+ </tr>
+ <tr>
+  <td class="verses">Nu 36:10-13.</td>
+  <td class="summary">The daughters of Zelophehad marry their father's brothers' sons.</td>
+ </tr>
+</table>
+
+</div> 
+    </div>
+    <div id="rightside">
+      <div id="rightsideinner"> <!-- InstanceBeginEditable name="EditNextPrev" --> 
+        <div class="nav"><div class="nav-prev"><a href="leviticus.html" rel="prev">&larr;&nbsp;Leviticus</a></div><div class="nav-next"><a href="deuteronomy.html" rel="next">Deuteronomy&nbsp;&rarr;</a></div></div> 
+        <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="EditIndexSelector" --> 
+        <div id="indexselector">
+        <select name="OutlinePages" onChange="window.open(this.options[this.selectedIndex].value,'_top')">
+<option selected value="/outlines/">Select a Book of the Bible</option>
+<option value="/outlines/">(About these outlines)</option>
+<option value="genesis.html">Genesis</option>
+<option value="exodus.html">Exodus</option>
+<option value="leviticus.html">Leviticus</option>
+<option value="numbers.html">Numbers</option>
+<option value="deuteronomy.html">Deuteronomy</option>
+<option value="joshua.html">Joshua</option>
+<option value="judges.html">Judges</option>
+<option value="ruth.html">Ruth</option>
+<option value="1samuel.html">1 Samuel</option>
+<option value="2samuel.html">2 Samuel</option>
+<option value="1kings.html">1 Kings</option>
+<option value="2kings.html">2 Kings</option>
+<option value="1chronicles.html">1 Chronicles</option>
+<option value="2chronicles.html">2 Chronicles</option>
+<option value="ezra.html">Ezra</option>
+<option value="nehemiah.html">Nehemiah</option>
+<option value="esther.html">Esther</option>
+<option value="job.html">Job</option>
+<option value="psalms.html">Psalms</option>
+<option value="proverbs.html">Proverbs</option>
+<option value="ecclesiastes.html">Ecclesiastes</option>
+<option value="songofsolomon.html">Song of Solomon</option>
+<option value="isaiah.html">Isaiah</option>
+<option value="jeremiah.html">Jeremiah</option>
+<option value="lamentations.html">Lamentations</option>
+<option value="ezekiel.html">Ezekiel</option>
+<option value="daniel.html">Daniel</option>
+<option value="hosea.html">Hosea</option>
+<option value="joel.html">Joel</option>
+<option value="amos.html">Amos</option>
+<option value="obadiah.html">Obadiah</option>
+<option value="jonah.html">Jonah</option>
+<option value="micah.html">Micah</option>
+<option value="nahum.html">Nahum</option>
+<option value="habakkuk.html">Habakkuk</option>
+<option value="zephaniah.html">Zephaniah</option>
+<option value="haggai.html">Haggai</option>
+<option value="zechariah.html">Zechariah</option>
+<option value="malachi.html">Malachi</option>
+<option value="matthew.html">Matthew</option>
+<option value="mark.html">Mark</option>
+<option value="luke.html">Luke</option>
+<option value="john.html">John</option>
+<option value="acts.html">Acts</option>
+<option value="romans.html">Romans</option>
+<option value="1corinthians.html">1 Corinthians</option>
+<option value="2corinthians.html">2 Corinthians</option>
+<option value="galatians.html">Galatians</option>
+<option value="ephesians.html">Ephesians</option>
+<option value="philippians.html">Philippians</option>
+<option value="colossians.html">Colossians</option>
+<option value="1thessalonians.html">1 Thessalonians</option>
+<option value="2thessalonians.html">2 Thessalonians</option>
+<option value="1timothy.html">1 Timothy</option>
+<option value="2timothy.html">2 Timothy</option>
+<option value="titus.html">Titus</option>
+<option value="philemon.html">Philemon</option>
+<option value="hebrews.html">Hebrews</option>
+<option value="james.html">James</option>
+<option value="1peter.html">1 Peter</option>
+<option value="2peter.html">2 Peter</option>
+<option value="1john.html">1 John</option>
+<option value="2john.html">2 John</option>
+<option value="3john.html">3 John</option>
+<option value="jude.html">Jude</option>
+<option value="revelation.html">Revelation</option>
+</select>
+ 
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="clearall">&nbsp;</div>
+        <div id="searchbox">
+          <form action="https://www.google.com" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="partner-pub-5275979875239567:3875486487">
+              <input type="hidden" name="ie" value="UTF-8">
+              <input type="text" name="q" size="20" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+        
+        <!--SS_AD_START-->
+        <div id="sssidebar" class="sidebar">
+          <div class="innersidebar">
+            <p>Your Bible study shouldn't be left to a web search.</p>
+            <div class="sslink">
+              <p><a href="https://www.swordsearcher.com">Better Bible Study
+                With<br>
+                SwordSearcher
+                Bible Software <br>
+                <img src="../img/swordsearcher.png" alt="SwordSearcher"></a> </p>
+            </div>
+            <p>The internet is good for many things, but it is not designed for studying God's word.</p>
+            <p>SwordSearcher is.</p>
+            <ul>
+              <li><a href="https://www.swordsearcher.com">Learn more.</a></li>
+              <li><a href="https://www.swordsearcher.com/video/3reasons.htm">Video: 3 Reasons to use SwordSearcher</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--SS_AD_END-->
+        
+        
+        <a href="https://www.bible-topics.com/" class="button">Bible Topics</a>
+		<a href="https://www.naves-topical-bible.com/" class="button">Nave's Topical Bible Concordance</a>
+		<a href="https://www.internationalstandardbible.com/" class="button">International Standard Bible Encyclopedia</a>
+  		<a href="https://www.biblicalcyclopedia.com/" class="button">McClintock and Strong Biblical Cyclopedia</a>
+		<a href="https://av1611.com/kjbp/kjv-bible-text/index.html" class="button">Online KJV Text</a>
+		<a href="https://av1611.com/kjbp/kjv-dictionary/kjv-dictionary-index.html" class="button">KJV Dictionary</a> 
+ 
+      </div>
+    </div>
+    <div class="clearall"> &nbsp; </div>
+  </div>
+</div>
+<div id="footer"> <!-- InstanceBeginEditable name="EditFooterIndex" --> 
+  <!--FOOTER_INDEX_DIV_START--> 
+  <!--FOOTER_INDEX_DIV_END--> 
+  <!-- InstanceEndEditable -->
+  <div class="innerdiv"> 
+    <!--FOOTER_START--> 
+    <a href="https://www.biblestudystart.com"><img src="../img/books-tiny.jpg" alt="Bible Study Start" class="bookspicture"></a> <!-- InstanceBeginEditable name="Footer" -->
+    <p>Source: <a href="https://www.swordsearcher.com/bible-study-library/bible-outlines.html">OutlinesBB</a> module from <a href="https://www.swordsearcher.com">SwordSearcher</a>.</p>
+    <!-- InstanceEndEditable -->
+    <p>Website HTML, editorial descriptions, and images &copy;2023 <a href="https://www.studylamp.com">StudyLamp Software LLC.</a> <br>
+      <a href="https://av1611.com/verseclick">Scripture linking and popups powered by VerseClick&trade;.</a> </p>
+    <!--FOOTER_END--> 
+  </div>
+</div>
+<div id="postfooter"> 
+  
+ 
+</div>
+
+
+<script src="https://av1611.com/verseclick/verseclick.js"></script> 
+
+<!-- AddThis Smart Layers BEGIN --> 
+<!-- Go to http://www.addthis.com/get/smart-layers to customize --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e2b9213820e78"></script> 
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5,
+	  'mobile' : false
+    }   
+  });
+</script> 
+<!-- AddThis Smart Layers END --> 
+
+
+</body>
+<!-- InstanceEnd --></html>

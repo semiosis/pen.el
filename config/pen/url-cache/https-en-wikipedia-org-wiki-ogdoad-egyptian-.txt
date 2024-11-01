@@ -1,0 +1,1056 @@
+HTTP/1.1 200 OK
+date: Sat, 17 Sep 2022 05:13:53 GMT
+server: mw2277.codfw.wmnet
+x-content-type-options: nosniff
+content-language: en
+vary: Accept-Encoding,Cookie,Authorization
+last-modified: Sat, 17 Sep 2022 04:24:31 GMT
+content-type: text/html; charset=UTF-8
+age: 12796
+x-cache: cp4036 hit, cp4032 hit/2
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp4032"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+set-cookie: WMF-Last-Access=17-Sep-2022;Path=/;HttpOnly;secure;Expires=Wed, 19 Oct 2022 00:00:00 GMT
+set-cookie: WMF-Last-Access-Global=17-Sep-2022;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Wed, 19 Oct 2022 00:00:00 GMT
+accept-ch: Sec-CH-UA-Arch,Sec-CH-UA-Bitness,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-UA-Platform-Version
+permissions-policy: interest-cohort=(),ch-ua-arch=(self "intake-analytics.wikimedia.org"),ch-ua-bitness=(self "intake-analytics.wikimedia.org"),ch-ua-full-version-list=(self "intake-analytics.wikimedia.org"),ch-ua-model=(self "intake-analytics.wikimedia.org"),ch-ua-platform-version=(self "intake-analytics.wikimedia.org")
+x-client-ip: 2407:7000:8257:5800:2ed9:aea2:86a4:a865
+cache-control: private, s-maxage=0, max-age=0, must-revalidate
+set-cookie: GeoIP=NZ:OTA:Dunedin:-45.90:170.49:v4; Path=/; secure; Domain=.wikipedia.org
+accept-ranges: bytes
+content-length: 26828
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Ogdoad (Egyptian) - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"9f3f3597-808e-4a6d-92d2-181e41482c2c","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Ogdoad_(Egyptian)","wgTitle":"Ogdoad (Egyptian)","wgCurRevisionId":1110518350,"wgRevisionId":1110518350,"wgArticleId":50919806,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles containing Ancient Greek (to 1453)-language text","Articles containing Ancient Egyptian-language text","Commons category link from Wikidata","Groups of Egyptian deities","Creation myths"],
+"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Ogdoad_(Egyptian)","wgRelevantArticleId":50919806,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":8000,"wgNoticeProject":"wikipedia","wgVector2022PreviewPages":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q265177","GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,
+"wgGEStructuredTaskRejectionReasonTextInputEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.wikihiero":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.charinsert",
+"ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikihiero%2CwikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.40.0-wmf.1"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0c/L%27Ogdoade_d%27Hermopolis.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="1408"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0c/L%27Ogdoade_d%27Hermopolis.jpg"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="938"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="751"/>
+<meta name="viewport" content="width=1000"/>
+<meta property="og:title" content="Ogdoad (Egyptian) - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Ogdoad_(Egyptian)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Ogdoad_(Egyptian)"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Ogdoad_Egyptian rootpage-Ogdoad_Egyptian skin-vector action-view skin-vector-legacy vector-toc-not-collapsed vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-enabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Ogdoad (Egyptian)</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Group of 8 deities in Ancient Egyptian religion</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about the deities in Egyptian mythology. For the concept in Gnosticism, see <a href="/wiki/Ogdoad_(Gnosticism)" title="Ogdoad (Gnosticism)">Ogdoad (Gnosticism)</a>.</div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:L%27Ogdoade_d%27Hermopolis.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/L%27Ogdoade_d%27Hermopolis.jpg/300px-L%27Ogdoade_d%27Hermopolis.jpg" decoding="async" width="300" height="352" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/0/0c/L%27Ogdoade_d%27Hermopolis.jpg 1.5x" data-file-width="341" data-file-height="400" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:L%27Ogdoade_d%27Hermopolis.jpg" class="internal" title="Enlarge"></a></div>A depiction of the Ogdoad from a Roman era relief at the <a href="/wiki/Dendera_Temple_complex" title="Dendera Temple complex">Hathor temple</a> in <a href="/wiki/Dendera" title="Dendera">Dendera</a> in which some have <a href="/wiki/Frog" title="Frog">frog</a> heads and others have <a href="/wiki/Snake" title="Snake">serpent</a> heads</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/File:The_dawn_of_civilization-_Egypt_and_Chaldaea_(1897)_(14763536725).jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/The_dawn_of_civilization-_Egypt_and_Chaldaea_%281897%29_%2814763536725%29.jpg/300px-The_dawn_of_civilization-_Egypt_and_Chaldaea_%281897%29_%2814763536725%29.jpg" decoding="async" width="300" height="363" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/The_dawn_of_civilization-_Egypt_and_Chaldaea_%281897%29_%2814763536725%29.jpg/450px-The_dawn_of_civilization-_Egypt_and_Chaldaea_%281897%29_%2814763536725%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/29/The_dawn_of_civilization-_Egypt_and_Chaldaea_%281897%29_%2814763536725%29.jpg/600px-The_dawn_of_civilization-_Egypt_and_Chaldaea_%281897%29_%2814763536725%29.jpg 2x" data-file-width="1659" data-file-height="2010" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:The_dawn_of_civilization-_Egypt_and_Chaldaea_(1897)_(14763536725).jpg" class="internal" title="Enlarge"></a></div>Drawing of a representation of the Ogdoad in the temple of <a href="/wiki/Philae" title="Philae">Philae</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup></div></div></div>
+<p>In <a href="/wiki/Egyptian_mythology" title="Egyptian mythology">Egyptian mythology</a>, the <b>Ogdoad</b> (<a href="/wiki/Ancient_Greek_language" class="mw-redirect" title="Ancient Greek language">Ancient Greek</a>: <span lang="grc">ὀγδοάς</span> "the Eightfold"; <a href="/wiki/Ancient_Egyptian_language" class="mw-redirect" title="Ancient Egyptian language">Ancient Egyptian</a>: <i lang="egy">ḫmnyw</i>, a plural <a href="/wiki/Afroasiatic_languages#Nisba" title="Afroasiatic languages">nisba</a> of <span title="Ancient Egyptian-language text"><i lang="egy">ḫmnw</i></span> "eight") were eight <a href="/wiki/Primordial_deities" class="mw-redirect" title="Primordial deities">primordial deities</a> worshiped in <a href="/wiki/Hermopolis" title="Hermopolis">Hermopolis</a>.
+</p><p>References to the Ogdoad date to the <a href="/wiki/Old_Kingdom_of_Egypt" title="Old Kingdom of Egypt">Old Kingdom of Egypt</a>, and even at the time of composition of the <a href="/wiki/Pyramid_Texts" title="Pyramid Texts">Pyramid Texts</a> toward the end of the Old Kingdom, they appear to have been antiquated and mostly forgotten by everyone except their theologians. They are frequently mentioned in the <a href="/wiki/Coffin_Texts" title="Coffin Texts">Coffin Texts</a> of the <a href="/wiki/Middle_Kingdom_of_Egypt" title="Middle Kingdom of Egypt">Middle Kingdom</a>. The oldest known pictorial representations of the group do not pre-date the time of <a href="/wiki/Seti_I" title="Seti I">Seti I</a> (<a href="/wiki/New_Kingdom_of_Egypt" title="New Kingdom of Egypt">New Kingdom</a>, thirteenth century BC), when the group appears to be rediscovered by the theologians of Hermopolis for the purposes of creating a more elaborate creation-account.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>Texts of the <a href="/wiki/Late_Period_of_ancient_Egypt" title="Late Period of ancient Egypt">Late Period</a> describe them as having the heads of frogs (male) and serpents (female), and they are often depicted in this way in reliefs of the last dynasty, the <a href="/wiki/Ptolemaic_Kingdom" title="Ptolemaic Kingdom">Ptolemaic Kingdom</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Names"><span class="tocnumber">1</span> <span class="toctext">Names</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Attributes"><span class="tocnumber">2</span> <span class="toctext">Attributes</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Bibliography"><span class="tocnumber">4.1</span> <span class="toctext">Bibliography</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Names">Names</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit&amp;section=1" title="Edit section: Names">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The eight deities were arranged in four male–female pairs. The names have the same meanings and differ only by their endings,<sup id="cite_ref-FOOTNOTEBudge1904283_4-0" class="reference"><a href="#cite_note-FOOTNOTEBudge1904283-4">&#91;4&#93;</a></sup>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<td><a href="/wiki/Nu_(mythology)" title="Nu (mythology)">Nu</a>  <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W24.png?55bf4" height="17" title="W24" alt="W24" /> <img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W24.png?55bf4" height="17" title="W24" alt="W24" /> <img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W24.png?55bf4" height="17" title="W24" alt="W24" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_N1.png?b4d26" height="11" title="N1" alt="N1" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_N35A.png?7d084" height="38" title="N35A" alt="N35A" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_A40.png?3f15b" height="36" title="A40" alt="A40" /></td></tr></tbody></table> </td></tr></tbody></table></td>
+<td><a href="/wiki/Nu_(mythology)" title="Nu (mythology)">Naunet</a> <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W24.png?55bf4" height="17" title="W24" alt="W24" /> <img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W24.png?55bf4" height="17" title="W24" alt="W24" /> <img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W24.png?55bf4" height="17" title="W24" alt="W24" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_N1.png?b4d26" height="11" title="N1" alt="N1" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_N35A.png?7d084" height="38" title="N35A" alt="N35A" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_X1.png?f2a8c" height="11" title="X1" alt="X1" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_H8.png?530f1" height="18" title="H8" alt="H8" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_B1.png?ca40a" height="38" title="B1" alt="B1" /></td></tr></tbody></table> </td></tr></tbody></table>
+</td></tr>
+<tr>
+<td><a href="/wiki/Huh_(god)" class="mw-redirect" title="Huh (god)">Ḥeḥu</a> <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V28.png?f1179" height="38" title="V28" alt="V28" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V28.png?f1179" height="38" title="V28" alt="V28" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_G43.png?6eb40" height="38" title="G43" alt="G43" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_A40.png?3f15b" height="36" title="A40" alt="A40" /></td></tr></tbody></table> </td></tr></tbody></table></td>
+<td><a href="/wiki/Huh_(god)" class="mw-redirect" title="Huh (god)">Ḥeḥut</a> <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V28.png?f1179" height="38" title="V28" alt="V28" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V28.png?f1179" height="38" title="V28" alt="V28" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_G43.png?6eb40" height="38" title="G43" alt="G43" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_X1.png?f2a8c" height="11" title="X1" alt="X1" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_H8.png?530f1" height="18" title="H8" alt="H8" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_B1.png?ca40a" height="38" title="B1" alt="B1" /></td></tr></tbody></table> </td></tr></tbody></table>
+</td></tr>
+<tr>
+<td><a href="/wiki/Kek_(mythology)" title="Kek (mythology)">Kekui</a> <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V31.png?70ebb" height="11" title="V31" alt="V31" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V31.png?70ebb" height="11" title="V31" alt="V31" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_Z4.png?dbdf8" height="14" title="Z4 [y]" alt="y" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_G43.png?6eb40" height="38" title="G43" alt="G43" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_N2.png?0a28d" height="38" title="N2" alt="N2" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_A40.png?3f15b" height="36" title="A40" alt="A40" /></td></tr></tbody></table> </td></tr></tbody></table></td>
+<td><a href="/wiki/Kek_(mythology)" title="Kek (mythology)">Kekuit</a>  <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V31.png?70ebb" height="11" title="V31" alt="V31" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V31.png?70ebb" height="11" title="V31" alt="V31" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_Z4.png?dbdf8" height="14" title="Z4 [y]" alt="y" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_G43.png?6eb40" height="38" title="G43" alt="G43" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_N2.png?0a28d" height="38" title="N2" alt="N2" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_X1.png?f2a8c" height="11" title="X1" alt="X1" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_H8.png?530f1" height="18" title="H8" alt="H8" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_B1.png?ca40a" height="38" title="B1" alt="B1" /></td></tr></tbody></table> </td></tr></tbody></table>
+</td></tr>
+<tr>
+<td>Qerḥ <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W11.png?e5e65" height="18" title="W11" alt="W11" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_D21.png?9bfb9" height="11" title="D21 [r]" alt="r" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V28.png?f1179" height="38" title="V28" alt="V28" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_D41.png?e781d" height="12" title="D41" alt="D41" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_A40.png?3f15b" height="36" title="A40" alt="A40" /></td></tr></tbody></table> </td></tr></tbody></table></td>
+<td>Qerḥet <table class="mw-hiero-table mw-hiero-outer" dir="ltr"><tbody><tr><td> <table class="mw-hiero-table"><tbody><tr> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_W11.png?e5e65" height="18" title="W11" alt="W11" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_D21.png?9bfb9" height="11" title="D21 [r]" alt="r" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_V28.png?f1179" height="38" title="V28" alt="V28" /></td><td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_D41.png?e781d" height="12" title="D41" alt="D41" /><br /><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_X1.png?f2a8c" height="11" title="X1" alt="X1" /> <img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_H8.png?530f1" height="18" title="H8" alt="H8" /></td> <td><img style="margin: 1px;" src="/w/extensions/wikihiero/img/hiero_B1.png?ca40a" height="38" title="B1" alt="B1" /></td></tr></tbody></table> </td></tr></tbody></table>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Attributes">Attributes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit&amp;section=2" title="Edit section: Attributes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The names of <a href="/wiki/Nu_(mythology)" title="Nu (mythology)">Nu and Naunet</a> are written with the determiners for <a href="/wiki/Sky_(hieroglyph)" title="Sky (hieroglyph)">sky</a> and <a href="/wiki/N-water_ripple_(n_hieroglyph)" class="mw-redirect" title="N-water ripple (n hieroglyph)">water</a>, and it seems clear that they represent the primordial waters.
+</p><p><a href="/wiki/Huh_(god)" class="mw-redirect" title="Huh (god)">Ḥeḥu and Ḥeḥut</a> have no readily identifiable determiners; according to a suggestion due to <a href="/wiki/Heinrich_Karl_Brugsch" title="Heinrich Karl Brugsch">Brugsch</a> (1885), the names are associated with a term for an undefined or <a href="/wiki/Infinity_(philosophy)" title="Infinity (philosophy)">unlimited number</a>, <i>ḥeḥ</i>, suggesting a concept similar to the Greek <i><a href="/wiki/Aeon" title="Aeon">aion</a></i>. From the context of a number of passages in which Ḥeḥu is mentioned, however, Brugsch also suggested that the names may be a personification of the atmosphere between heaven and earth (c.f. <i><a href="/wiki/Shu_(Egyptian_god)" title="Shu (Egyptian god)">Shu</a></i>).
+</p><p>The names of <a href="/wiki/Kek_(mythology)" title="Kek (mythology)">Kekui and Kekuit</a> are written with a determiner combining the <a href="/wiki/Sky_(hieroglyph)" title="Sky (hieroglyph)">sky hieroglyph</a> with a staff or scepter used for words related to darkness and obscurity, and <i>kkw</i> as a regular word means "darkness", suggesting that these gods represent <a href="/wiki/Darkness" title="Darkness">primordial darkness</a>, comparable to the Greek <a href="/wiki/Erebus" title="Erebus">Erebus</a>, but in some aspects they appear to represent day as well as night, or the change from night to day and from day to night.
+</p><p>The fourth pair has no consistent attributes as it appears with varying names; sometimes the name <i>Qerḥ</i> is replaced by <i>Ni, Nenu, Nu, or <a href="/wiki/Amun" title="Amun">Amun</a></i>, and the name <i>Qerḥet</i> by <i>Ennit, Nenuit, Nunu, Nit, or <a href="/wiki/Amunet" title="Amunet">Amunet</a></i>. The common meaning of <i>qerḥ</i> is "night", but the determinative (D41 for "to halt, stop, deny") also suggests the principle of inactivity or repose.<sup id="cite_ref-FOOTNOTEBudge1904283–286_5-0" class="reference"><a href="#cite_note-FOOTNOTEBudge1904283–286-5">&#91;5&#93;</a></sup>
+</p><p>There is no obvious way to allot or attribute four functions to the four pairs of deities, and it seems clear that "the ancient Egyptians themselves had no very clear idea" regarding such functions.<sup id="cite_ref-FOOTNOTEBudge1904287–288_6-0" class="reference"><a href="#cite_note-FOOTNOTEBudge1904287–288-6">&#91;6&#93;</a></sup> Nevertheless, there have been attempts to assign "four ontological concepts"<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+to the four pairs.
+</p><p>For example, in the context of the New Kingdom, <a href="/wiki/Maulana_Karenga" title="Maulana Karenga">Karenga</a> (2004) uses "fluidity" (for "flood, waters"),   "darkness", "unboundedness", and "invisibility" (or "repose, inactivity").<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Ennead" title="Ennead">Ennead</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks hlist"><tbody><tr><td class="sidebar-pretitle" style="background:#decd87;;padding-top:0.4em;">Part of <a href="/wiki/Category:Ancient_Egyptian_religion" title="Category:Ancient Egyptian religion">a series</a> on</td></tr><tr><th class="sidebar-title-with-pretitle" style="background:#decd87;;line-height:1.2em;"><a href="/wiki/Ancient_Egyptian_religion" title="Ancient Egyptian religion"><span class="nowrap">Ancient Egyptian</span> religion</a></th></tr><tr><td class="sidebar-image"><a href="/wiki/File:Eye_of_Horus_bw.svg" class="image" title="Eye of Horus"><img alt="Eye of Horus" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eye_of_Horus_bw.svg/90px-Eye_of_Horus_bw.svg.png" decoding="async" width="90" height="69" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eye_of_Horus_bw.svg/135px-Eye_of_Horus_bw.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eye_of_Horus_bw.svg/180px-Eye_of_Horus_bw.svg.png 2x" data-file-width="650" data-file-height="500" /></a></td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#decd87;;border:1px solid #decd87;text-align:center;">Beliefs</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Ancient_Egyptian_afterlife_beliefs" title="Ancient Egyptian afterlife beliefs">Afterlife</a></li>
+<li><a href="/wiki/Duat" title="Duat">Duat</a></li>
+<li><a href="/wiki/Maat" title="Maat">Ma'at</a></li>
+<li><a href="/wiki/Egyptian_mythology" title="Egyptian mythology">Mythology</a></li>
+<li><a href="/wiki/Numbers_in_Egyptian_mythology" title="Numbers in Egyptian mythology">Numerology</a></li>
+<li><a href="/wiki/Ancient_Egyptian_philosophy" title="Ancient Egyptian philosophy">Philosophy</a></li>
+<li><a href="/wiki/Ancient_Egyptian_concept_of_the_soul" class="mw-redirect" title="Ancient Egyptian concept of the soul">Soul</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#decd87;;border:1px solid #decd87;text-align:center;">Practices</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Ancient_Egyptian_burial_customs" class="mw-redirect" title="Ancient Egyptian burial customs">Funerals</a></li>
+<li><a href="/wiki/Ancient_Egyptian_offering_formula" title="Ancient Egyptian offering formula">Offering formula</a></li>
+<li><a href="/wiki/Egyptian_temple" title="Egyptian temple">Temples</a></li>
+<li><a href="/wiki/Priestess_of_Hathor" title="Priestess of Hathor">Priestess of Hathor</a></li>
+<li><a href="/wiki/Pyramids" class="mw-redirect" title="Pyramids">Pyramids</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#decd87;;border:1px solid #decd87;text-align:center;"><a href="/wiki/Egyptian_pantheon" class="mw-redirect" title="Egyptian pantheon">Deities</a> (<a href="/wiki/List_of_Egyptian_deities" title="List of Egyptian deities">list</a>)</div><div class="sidebar-list-content mw-collapsible-content"><div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" aria-label="Navbox"><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="background-color:#decd87;;width:1%"><a class="mw-selflink selflink">Ogdoad</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Amun" title="Amun">Amun</a></li>
+<li><a href="/wiki/Amunet" title="Amunet">Amunet</a></li>
+<li><a href="/wiki/Hauhet" class="mw-redirect" title="Hauhet">Hauhet</a></li>
+<li><a href="/wiki/Heh_(god)" title="Heh (god)">Heh</a></li>
+<li><a href="/wiki/Kauket" class="mw-redirect" title="Kauket">Kauket</a></li>
+<li><a href="/wiki/Kek_(mythology)" title="Kek (mythology)">Kek</a></li>
+<li><a href="/wiki/Naunet" class="mw-redirect" title="Naunet">Naunet</a></li>
+<li><a href="/wiki/Nu_(mythology)" title="Nu (mythology)">Nu</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;;width:1%"><a href="/wiki/Ennead" title="Ennead">Ennead</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Atum" title="Atum">Atum</a></li>
+<li><a href="/wiki/Geb" title="Geb">Geb</a></li>
+<li><a href="/wiki/Isis" title="Isis">Isis</a></li>
+<li><a href="/wiki/Nephthys" title="Nephthys">Nephthys</a></li>
+<li><a href="/wiki/Nut_(goddess)" title="Nut (goddess)">Nut</a></li>
+<li><a href="/wiki/Osiris" title="Osiris">Osiris</a></li>
+<li><a href="/wiki/Set_(deity)" title="Set (deity)">Set</a></li>
+<li><a href="/wiki/Shu_(Egyptian_god)" title="Shu (Egyptian god)">Shu</a></li>
+<li><a href="/wiki/Tefnut" title="Tefnut">Tefnut</a></li></ul>
+</div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em"><b>A</b>
+<ul><li><a href="/wiki/Aker_(deity)" title="Aker (deity)">Aker</a></li>
+<li><a href="/wiki/Akhty_(deity)" title="Akhty (deity)">Akhty</a></li>
+<li><a href="/wiki/Ammit" title="Ammit">Ammit</a></li>
+<li><a href="/wiki/Am-heh" title="Am-heh">Am-heh</a></li>
+<li><a href="/wiki/Anat" title="Anat">Anat</a></li>
+<li><a href="/wiki/Andjety" title="Andjety">Andjety</a></li>
+<li><a href="/wiki/Anhur" title="Anhur">Anhur</a></li>
+<li><a href="/wiki/Anput" title="Anput">Anput</a></li>
+<li><a href="/wiki/Anubis" title="Anubis">Anubis</a></li>
+<li><a href="/wiki/Anuket" title="Anuket">Anuket</a></li>
+<li><a href="/wiki/Apedemak" title="Apedemak">Apedemak</a></li>
+<li><a href="/wiki/Apep" title="Apep">Apep</a></li>
+<li><a href="/wiki/Apis_(deity)" title="Apis (deity)">Apis</a></li>
+<li><a href="/wiki/Apt_(Egyptian)" title="Apt (Egyptian)">Apt</a></li>
+<li><a href="/wiki/Aqen" title="Aqen">Aqen</a></li>
+<li><a href="/wiki/Arensnuphis" title="Arensnuphis">Arensnuphis</a></li>
+<li><a href="/wiki/Ash_(deity)" title="Ash (deity)">Ash</a></li>
+<li><a href="/wiki/Assessors_of_Maat" title="Assessors of Maat">Assessors</a></li>
+<li><a href="/wiki/Astarte" title="Astarte">Astarte</a></li>
+<li><a href="/wiki/Aten" title="Aten">Aten</a></li></ul>
+<p><b>B</b>
+</p>
+<ul><li><a href="/wiki/Babi_(mythology)" title="Babi (mythology)">Babi</a></li>
+<li><a href="/wiki/Banebdjedet" title="Banebdjedet">Banebdjedet</a></li>
+<li><a href="/wiki/Bastet" title="Bastet">Bastet</a></li>
+<li><a href="/wiki/Bat_(goddess)" title="Bat (goddess)">Bat</a></li>
+<li><a href="/wiki/Bata_(god)" title="Bata (god)">Bata</a></li>
+<li><a href="/wiki/Ba-Pef" title="Ba-Pef">Ba-Pef</a></li>
+<li><a href="/wiki/Bennu" title="Bennu">Bennu</a></li>
+<li><a href="/wiki/Bes" title="Bes">Bes</a></li>
+<li><a href="/wiki/Buchis" title="Buchis">Buchis</a></li></ul>
+<p><b>C</b>
+</p>
+<ul><li><a href="/wiki/Cavern_deities_of_the_underworld" title="Cavern deities of the underworld">Cavern deities</a></li></ul>
+<p><b>D</b>
+</p>
+<ul><li><a href="/wiki/Dedun" title="Dedun">Dedun</a></li>
+<li><a href="/wiki/Duau_(god)" title="Duau (god)">Duau (god)</a></li></ul>
+<p><b>F</b>
+</p>
+<ul><li><a href="/wiki/Four_sons_of_Horus" title="Four sons of Horus">Four sons of Horus</a>
+<ul><li><a href="/wiki/Duamutef" title="Duamutef">Duamutef</a></li>
+<li><a href="/wiki/Hapi_(Son_of_Horus)" title="Hapi (Son of Horus)">Hapi</a></li>
+<li><a href="/wiki/Imset" title="Imset">Imset</a></li>
+<li><a href="/wiki/Qebehsenuef" title="Qebehsenuef">Qebehsenuef</a></li></ul></li></ul>
+<p><b>G</b>
+</p>
+<ul><li><a href="/wiki/Gate_deities_of_the_underworld" title="Gate deities of the underworld">Gate deities</a></li></ul>
+<p><b>H</b>
+</p>
+<ul><li><a href="/wiki/Ha_(mythology)" title="Ha (mythology)">Ha</a></li>
+<li><a href="/wiki/Hapi_(Nile_god)" title="Hapi (Nile god)">Hapi</a></li>
+<li><a href="/wiki/Haurun" title="Haurun">Haurun</a></li>
+<li><a href="/wiki/Hathor" title="Hathor">Hathor</a></li>
+<li><a href="/wiki/Hatmehit" title="Hatmehit">Hatmehit</a></li>
+<li><a href="/wiki/Hedetet" title="Hedetet">Hedetet</a></li>
+<li><a href="/wiki/Hedjhotep" title="Hedjhotep">Hedjhotep</a></li>
+<li><a href="/wiki/Heka_(god)" title="Heka (god)">Heka</a></li>
+<li><a href="/wiki/Hemen" title="Hemen">Hemen</a></li>
+<li><a href="/wiki/Hemsut" title="Hemsut">Hemsut</a></li>
+<li><a href="/wiki/Heqet" title="Heqet">Heqet</a></li>
+<li><a href="/wiki/Hermanubis" title="Hermanubis">Hermanubis</a></li>
+<li><a href="/wiki/Hesat" title="Hesat">Hesat</a></li>
+<li><a href="/wiki/Horus" title="Horus">Horus</a></li>
+<li><a href="/wiki/Heryshaf" title="Heryshaf">Heryshaf</a></li>
+<li><a href="/wiki/Hu_(mythology)" title="Hu (mythology)">Hu</a></li></ul>
+<p><b>I</b>
+</p>
+<ul><li><a href="/wiki/Iabet" title="Iabet">Iabet</a></li>
+<li><a href="/wiki/Iah" title="Iah">Iah</a></li>
+<li><a href="/wiki/Iat" title="Iat">Iat</a></li>
+<li><a href="/wiki/Ihy" title="Ihy">Ihy</a></li>
+<li><a href="/wiki/Imentet" title="Imentet">Imentet</a></li>
+<li><a href="/wiki/Imhotep" title="Imhotep">Imhotep</a></li>
+<li><a href="/wiki/Iunit" title="Iunit">Iunit</a></li>
+<li><a href="/wiki/Iusaaset" title="Iusaaset">Iusaaset</a></li></ul>
+<p><b>K</b>
+</p>
+<ul><li><a href="/wiki/Kebechet" title="Kebechet">Kebechet</a></li>
+<li><a href="/wiki/Khensit" title="Khensit">Khensit</a></li>
+<li><a href="/wiki/Khenti-Amentiu" title="Khenti-Amentiu">Khenti-Amentiu</a></li>
+<li><a href="/wiki/Khenti-kheti" title="Khenti-kheti">Khenti-kheti</a></li>
+<li><a href="/wiki/Khepri" title="Khepri">Khepri</a></li>
+<li><a href="/wiki/Kherty" title="Kherty">Kherty</a></li>
+<li><a href="/wiki/Khnum" title="Khnum">Khnum</a></li>
+<li><a href="/wiki/Khonsu" title="Khonsu">Khonsu</a></li>
+<li><a href="/wiki/Kothar-wa-Khasis" title="Kothar-wa-Khasis">Kothar-wa-Khasis</a></li></ul>
+<p><b>M</b>
+</p>
+<ul><li><a href="/wiki/Maahes" title="Maahes">Maahes</a></li>
+<li><a href="/wiki/Maat" title="Maat">Ma'at</a></li>
+<li><a href="/wiki/Mandulis" title="Mandulis">Mandulis</a></li>
+<li><a href="/wiki/Medjed_(god)" class="mw-redirect" title="Medjed (god)">Medjed</a></li>
+<li><a href="/wiki/Mafdet" title="Mafdet">Mafdet</a></li>
+<li><a href="/wiki/Mehen" title="Mehen">Mehen</a></li>
+<li><a href="/wiki/Mehet-Weret" title="Mehet-Weret">Mehet-Weret</a></li>
+<li><a href="/wiki/Mehit" title="Mehit">Mehit</a></li>
+<li><a href="/wiki/Menhit" title="Menhit">Menhit</a></li>
+<li><a href="/wiki/Meret" title="Meret">Meret</a></li>
+<li><a href="/wiki/Meretseger" title="Meretseger">Meretseger</a></li>
+<li><a href="/wiki/Meskhenet" title="Meskhenet">Meskhenet</a></li>
+<li><a href="/wiki/Min_(god)" title="Min (god)">Min</a></li>
+<li><a href="/wiki/Mnevis" title="Mnevis">Mnevis</a></li>
+<li><a href="/wiki/Montu" title="Montu">Montu</a></li>
+<li><a href="/wiki/Mut" title="Mut">Mut</a></li></ul>
+<p><b>N</b>
+</p>
+<ul><li><a href="/wiki/Nebethetepet" title="Nebethetepet">Nebethetepet</a></li>
+<li><a href="/wiki/Nebtuwi" title="Nebtuwi">Nebtuwi</a></li>
+<li><a href="/wiki/Nefertem" title="Nefertem">Nefertem</a></li>
+<li><a href="/wiki/Nehebkau" title="Nehebkau">Nehebkau</a></li>
+<li><a href="/wiki/Nehmetawy" title="Nehmetawy">Nehmetawy</a></li>
+<li><a href="/wiki/Neith" title="Neith">Neith</a></li>
+<li><a href="/wiki/Nemty" title="Nemty">Nemty</a></li>
+<li><a href="/wiki/Nekhbet" title="Nekhbet">Nekhbet</a></li>
+<li><a href="/wiki/Neper_(mythology)" title="Neper (mythology)">Neper</a></li></ul>
+<p><b>P</b>
+</p>
+<ul><li><a href="/wiki/Pakhet" title="Pakhet">Pakhet</a></li>
+<li><a href="/wiki/Petbe" title="Petbe">Petbe</a></li>
+<li><a href="/wiki/Ptah" title="Ptah">Ptah</a></li></ul>
+<p><b>Q</b>
+</p>
+<ul><li><a href="/wiki/Qebui" title="Qebui">Qebui</a></li>
+<li><a href="/wiki/Qetesh" title="Qetesh">Qetesh</a></li></ul>
+<p><b>R</b>
+</p>
+<ul><li><a href="/wiki/Ra" title="Ra">Ra</a></li>
+<li><a href="/wiki/Raet-Tawy" title="Raet-Tawy">Raet-Tawy</a></li>
+<li><a href="/wiki/Rem_(mythology)" title="Rem (mythology)">Rem</a></li>
+<li><a href="/wiki/Renenutet" title="Renenutet">Renenutet</a></li>
+<li><a href="/wiki/Renpet" title="Renpet">Renpet</a></li>
+<li><a href="/wiki/Repyt" title="Repyt">Repyt</a></li>
+<li><a href="/wiki/Resheph" title="Resheph">Resheph</a></li></ul>
+<p><b>S</b>
+</p>
+<ul><li><a href="/wiki/Sah_(god)" title="Sah (god)">Sah</a></li>
+<li><a href="/wiki/Satis_(goddess)" title="Satis (goddess)">Satis</a></li>
+<li><a href="/wiki/Sekhmet" title="Sekhmet">Sekhmet</a></li>
+<li><a href="/wiki/Seker" title="Seker">Seker</a></li>
+<li><a href="/wiki/Serapis" title="Serapis">Serapis</a></li>
+<li><a href="/wiki/Serket" title="Serket">Serket</a></li>
+<li><a href="/wiki/Seshat" title="Seshat">Seshat</a></li>
+<li><a href="/wiki/Shai" title="Shai">Shai</a></li>
+<li><a href="/wiki/Shed_(deity)" title="Shed (deity)">Shed</a></li>
+<li><a href="/wiki/Shesmetet" title="Shesmetet">Shesmetet</a></li>
+<li><a href="/wiki/Shezmu" title="Shezmu">Shezmu</a></li>
+<li><a href="/wiki/Sia_(god)" title="Sia (god)">Sia</a></li>
+<li><a href="/wiki/Sobek" title="Sobek">Sobek</a></li>
+<li><a href="/wiki/Sopdet" title="Sopdet">Sopdet</a></li>
+<li><a href="/wiki/Sopdu" title="Sopdu">Sopdu</a></li>
+<li><a href="/wiki/Souls_of_Pe_and_Nekhen" title="Souls of Pe and Nekhen">Souls of Pe and Nekhen</a></li></ul>
+<p><b>T</b>
+</p>
+<ul><li><a href="/wiki/Tatenen" title="Tatenen">Tatenen</a></li>
+<li><a href="/wiki/Taweret" title="Taweret">Taweret</a></li>
+<li><a href="/wiki/Tayt" title="Tayt">Tayt</a></li>
+<li><a href="/wiki/Ta-Bitjet" title="Ta-Bitjet">Ta-Bitjet</a></li>
+<li><a href="/wiki/Tenenet" class="mw-redirect" title="Tenenet">Tenenet</a></li>
+<li><a href="/wiki/Thoth" title="Thoth">Thoth</a>
+<ul><li><a href="/wiki/Hermes_Trismegistus" title="Hermes Trismegistus">Hermes Trismegistus</a></li></ul></li>
+<li><a href="/wiki/Tjenenyet" title="Tjenenyet">Tjenenyet</a></li>
+<li><a href="/wiki/Tutu_(Egyptian_god)" title="Tutu (Egyptian god)">Tutu</a></li></ul>
+<p><b>U</b>
+</p>
+<ul><li><a href="/wiki/Unut" title="Unut">Unut</a></li></ul>
+<p><b>W</b>
+</p>
+<ul><li><a href="/wiki/Wadjet" title="Wadjet">Wadjet</a></li>
+<li><a href="/wiki/Wadj-wer" title="Wadj-wer">Wadj-wer</a></li>
+<li><a href="/wiki/Weneg_(Egyptian_deity)" title="Weneg (Egyptian deity)">Weneg</a></li>
+<li><a href="/wiki/Wepset" title="Wepset">Wepset</a></li>
+<li><a href="/wiki/Wepwawet" title="Wepwawet">Wepwawet</a></li>
+<li><a href="/wiki/Werethekau" title="Werethekau">Werethekau</a></li>
+<li><a href="/wiki/Wosret" title="Wosret">Wosret</a></li></ul></div></td></tr></tbody></table></div></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#decd87;;border:1px solid #decd87;text-align:center;">Locations</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Aaru" title="Aaru">Aaru</a></li>
+<li><a href="/wiki/Benben" title="Benben">Benben</a></li>
+<li><a href="/wiki/Duat" title="Duat">Duat</a></li>
+<li><a href="/wiki/Land_of_Manu" title="Land of Manu">Land of Manu</a></li>
+<li><a href="/wiki/The_Indestructibles" title="The Indestructibles">The Indestructibles</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#decd87;;border:1px solid #decd87;text-align:center;"><a href="/wiki/Category:Ancient_Egyptian_symbols" title="Category:Ancient Egyptian symbols">Symbols and objects</a></div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Aani" title="Aani">Aani</a></li>
+<li><a href="/wiki/Abtu" title="Abtu">Abtu</a></li>
+<li><a href="/wiki/Ankh" title="Ankh">Ankh</a></li>
+<li><a href="/wiki/Atef" title="Atef">Atef</a></li>
+<li><a href="/wiki/Atet" class="mw-redirect" title="Atet">Atet</a></li>
+<li><a href="/wiki/Book_of_Thoth" title="Book of Thoth">Book of Thoth</a></li>
+<li><a href="/wiki/Cartouche_(hieroglyph)" class="mw-redirect" title="Cartouche (hieroglyph)">Cartouche</a></li>
+<li><a href="/wiki/Crook_and_flail" title="Crook and flail">Crook and flail</a></li>
+<li><a href="/wiki/Deshret" title="Deshret">Deshret</a></li>
+<li><a href="/wiki/Djed" title="Djed">Djed</a></li>
+<li><a href="/wiki/Egyptian_obelisk" class="mw-redirect" title="Egyptian obelisk">Egyptian obelisk</a></li>
+<li><a href="/wiki/Egyptian_pool" title="Egyptian pool">Egyptian pool</a></li>
+<li><a href="/wiki/Eye_of_Horus" title="Eye of Horus">Eye of Horus</a></li>
+<li><a href="/wiki/Eye_of_Ra" title="Eye of Ra">Eye of Ra</a></li>
+<li><a href="/wiki/Griffin" title="Griffin">Griffin</a></li>
+<li><a href="/wiki/Hedjet" title="Hedjet">Hedjet</a></li>
+<li><a href="/wiki/Hemhem_crown" title="Hemhem crown">Hemhem crown</a></li>
+<li><a href="/wiki/Hennu" title="Hennu">Hennu</a></li>
+<li><a href="/wiki/Hieracosphinx" title="Hieracosphinx">Hieracosphinx</a></li>
+<li><a href="/wiki/Imiut_fetish" title="Imiut fetish">Imiut fetish</a></li>
+<li><a href="/wiki/Khepresh" title="Khepresh">Khepresh</a></li>
+<li><a href="/wiki/Kneph" title="Kneph">Kneph</a></li>
+<li><a href="/wiki/Matet_boat" class="mw-redirect" title="Matet boat">Matet boat</a></li>
+<li><a href="/wiki/Medjed_(fish)" title="Medjed (fish)">Medjed</a></li>
+<li><a href="/wiki/Menat" title="Menat">Menat</a></li>
+<li><a href="/wiki/Nebu" title="Nebu">Nebu</a></li>
+<li><a href="/wiki/Nemes" title="Nemes">Nemes</a></li>
+<li><a href="/wiki/Neshmet" title="Neshmet">Neshmet</a></li>
+<li><a href="/wiki/Ouroboros" title="Ouroboros">Ouroboros</a></li>
+<li><a href="/wiki/Pschent" title="Pschent">Pschent</a></li>
+<li><a href="/wiki/Scarab_(artifact)" title="Scarab (artifact)">Scarab</a></li>
+<li><a href="/wiki/Seqtet_boat" class="mw-redirect" title="Seqtet boat">Seqtet boat</a></li>
+<li><a href="/wiki/Serekh" title="Serekh">Serekh</a></li>
+<li><a href="/wiki/Serpopard" title="Serpopard">Serpopard</a></li>
+<li><a href="/wiki/Set_animal" title="Set animal">Set animal</a></li>
+<li><a href="/wiki/Shen_ring" title="Shen ring">Shen ring</a></li>
+<li><a href="/wiki/Sphinx" title="Sphinx">Sphinx</a></li>
+<li><a href="/wiki/Tyet" title="Tyet">Tyet</a></li>
+<li><a href="/wiki/Uraeus" title="Uraeus">Uraeus</a></li>
+<li><a href="/wiki/Ushabti" title="Ushabti">Ushabti</a></li>
+<li><a href="/wiki/Was-sceptre" title="Was-sceptre">Was-sceptre</a></li>
+<li><a href="/wiki/Winged_sun" title="Winged sun">Winged sun</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#decd87;;border:1px solid #decd87;text-align:center;">Texts</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Ancient_Egyptian_funerary_texts" title="Ancient Egyptian funerary texts">Funerary texts</a> (<i><a href="/wiki/Amduat" title="Amduat">Amduat</a> • <a href="/wiki/Books_of_Breathing" title="Books of Breathing">Books of Breathing</a> • <a href="/wiki/Book_of_Caverns" title="Book of Caverns">Book of Caverns</a> • <a href="/wiki/Book_of_the_Dead" title="Book of the Dead">Book of the Dead</a> • <a href="/wiki/Book_of_the_Earth" title="Book of the Earth">Book of the Earth</a> • <a href="/wiki/Book_of_Gates" title="Book of Gates">Book of Gates</a></i>)</li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:#decd87;;border:1px solid #decd87;text-align:center;">Related religions</div><div class="sidebar-list-content mw-collapsible-content">
+<ul><li><a href="/wiki/Atenism" title="Atenism">Atenism</a></li>
+<li><a href="/wiki/Hermeticism" title="Hermeticism">Hermeticism</a></li>
+<li><a href="/wiki/Thelema" title="Thelema">Thelema</a></li>
+<li><a href="/wiki/Kemetism" title="Kemetism">Kemeticism</a> (<a href="/wiki/Kemetic_Orthodoxy" title="Kemetic Orthodoxy">Kemetic Orthodoxy</a> • <a href="/wiki/Church_of_the_Most_High_Goddess" class="mw-redirect" title="Church of the Most High Goddess">Church of the Most High Goddess</a>)</li></ul></div></div></td>
+</tr><tr><td class="sidebar-below" style="background:transparent;">
+<img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramidi_aavikolla.png/16px-Pyramidi_aavikolla.png" decoding="async" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramidi_aavikolla.png/24px-Pyramidi_aavikolla.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramidi_aavikolla.png/32px-Pyramidi_aavikolla.png 2x" data-file-width="45" data-file-height="45" />&#160;<a href="/wiki/Portal:Ancient_Egypt" title="Portal:Ancient Egypt">Ancient Egypt&#32;portal</a></td></tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Ancient_Egyptian_religion" title="Template:Ancient Egyptian religion"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Ancient_Egyptian_religion" title="Template talk:Ancient Egyptian religion"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Ancient_Egyptian_religion&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">"Drawn by Faucher-Gudin from a photograph by Béato. C.f. Lepsius, <i>Denkm</i>, iv.pl.66 <i>c</i>.", published in Maspero (1897).
+The scene is collapsed from "the two extremities of a great scene at Philae, in which the Eight, divided into two groups of four, take part in the adoration of the king."</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Sethe (1929), 35ff, 65f.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFSmith2002" class="citation cs2">Smith, Mark (2002), <i>On the Primaeval Ocean</i>, p.&#160;38</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=On+the+Primaeval+Ocean&amp;rft.pages=38&amp;rft.date=2002&amp;rft.aulast=Smith&amp;rft.aufirst=Mark&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-FOOTNOTEBudge1904283-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEBudge1904283_4-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFBudge1904">Budge 1904</a>, p.&#160;283.</span>
+</li>
+<li id="cite_note-FOOTNOTEBudge1904283–286-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEBudge1904283–286_5-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFBudge1904">Budge 1904</a>, pp.&#160;283–286.</span>
+</li>
+<li id="cite_note-FOOTNOTEBudge1904287–288-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEBudge1904287–288_6-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFBudge1904">Budge 1904</a>, pp.&#160;287–288.</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Harco Willems (1996) - <a rel="nofollow" class="external text" href="https://books.google.co.uk/books?id=2fMiG2dGPpYC&amp;pg">The Coffin of Heqata: (Cairo JdE 36418)&#160;: a Case Study of Egyptian Funerary Culture of the Early Middle Kingdom</a> - <a rel="nofollow" class="external text" href="https://books.google.co.uk/books?id=2fMiG2dGPpYC&amp;pg=PA470">p.470f</a> Peeters Publishers, 1996.</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a href="/wiki/Maulana_Karenga" title="Maulana Karenga">Maulana Karenga</a> (2004) - <a rel="nofollow" class="external text" href="https://books.google.co.uk/books?id=ams2OPbmHMUC&amp;pg">Maat, the Moral Ideal in Ancient Egypt: A Study in Classical African Ethics</a> - <a rel="nofollow" class="external text" href="https://books.google.co.uk/books?id=ams2OPbmHMUC&amp;pg=PA177">p.177</a> Psychology Press, 2004 <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0415947537" title="Special:BookSources/0415947537">0415947537</a> - Volume 70 of <i><a rel="nofollow" class="external text" href="http://poj.peeters-leuven.be/content.php?url=journal&amp;journal_code=olp">Orientalia Lovaniensia analecta</a></i>.</span>
+</li>
+</ol></div></div>
+<h3><span class="mw-headline" id="Bibliography">Bibliography</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit&amp;section=5" title="Edit section: Bibliography">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBainesShaferSilvermanLesko1991" class="citation cs2">Baines, John D.; Shafer, Byron Esely; <a href="/wiki/David_P._Silverman" title="David P. Silverman">Silverman, David P.</a>; Lesko, Leonard H. (1991), <i>Religion in Ancient Egypt: Gods, Myths, and Personal Practice</i>, Cornell University Press</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Religion+in+Ancient+Egypt%3A+Gods%2C+Myths%2C+and+Personal+Practice&amp;rft.pub=Cornell+University+Press&amp;rft.date=1991&amp;rft.aulast=Baines&amp;rft.aufirst=John+D.&amp;rft.au=Shafer%2C+Byron+Esely&amp;rft.au=Silverman%2C+David+P.&amp;rft.au=Lesko%2C+Leonard+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBudge1904" class="citation cs2"><a href="/wiki/E._A._Wallis_Budge" title="E. A. Wallis Budge">Budge, E.A.</a> (1904), <a rel="nofollow" class="external text" href="https://archive.org/stream/godsofegyptianso00budg"><i>The Gods of the Egyptians: Or, Studies in Egyptian Mythology</i></a>, vol.&#160;1</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Gods+of+the+Egyptians%3A+Or%2C+Studies+in+Egyptian+Mythology&amp;rft.date=1904&amp;rft.aulast=Budge&amp;rft.aufirst=E.A.&amp;rft_id=https%3A%2F%2Farchive.org%2Fstream%2Fgodsofegyptianso00budg&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDunandZivie-Coche2004" class="citation cs2"><a href="/wiki/Fran%C3%A7oise_Dunand" title="Françoise Dunand">Dunand, Françoise</a>; Zivie-Coche, Christiane (2004), <i>Gods and Men in Egypt: 3.000 BCE to 395 CE</i>, Cornell University Press</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Gods+and+Men+in+Egypt%3A+3.000+BCE+to+395+CE&amp;rft.pub=Cornell+University+Press&amp;rft.date=2004&amp;rft.aulast=Dunand&amp;rft.aufirst=Fran%C3%A7oise&amp;rft.au=Zivie-Coche%2C+Christiane&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFHart2005" class="citation cs2">Hart, George (2005), <i>The Routledge Dictionary Of Egyptian Gods And Goddesses</i>, Routledge, p.&#160;113</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Routledge+Dictionary+Of+Egyptian+Gods+And+Goddesses&amp;rft.pages=113&amp;rft.pub=Routledge&amp;rft.date=2005&amp;rft.aulast=Hart&amp;rft.aufirst=George&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSethe1929" class="citation cs2"><a href="/wiki/Kurt_Sethe" title="Kurt Sethe">Sethe, Kurt</a> (1929), <i>Amun und die acht Urgötter von Hermopolis</i></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Amun+und+die+acht+Urg%C3%B6tter+von+Hermopolis&amp;rft.date=1929&amp;rft.aulast=Sethe&amp;rft.aufirst=Kurt&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSalmon1887" class="citation cs2"><a href="/wiki/George_Salmon" title="George Salmon">Salmon, George</a> (1887), "Ogdoad",  in <a href="/wiki/William_Smith_(lexicographer)" title="William Smith (lexicographer)">Smith, William</a>; <a href="/wiki/Henry_Wace_(Anglican_priest)" class="mw-redirect" title="Henry Wace (Anglican priest)">Wace, Henry</a> (eds.), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=e3DYAAAAMAAJ"><i>A Dictionary of Christian Biography, Literature, Sects and Doctrines</i></a>, vol.&#160;IV, London: John Murray</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Ogdoad&amp;rft.btitle=A+Dictionary+of+Christian+Biography%2C+Literature%2C+Sects+and+Doctrines&amp;rft.place=London&amp;rft.pub=John+Murray&amp;rft.date=1887&amp;rft.aulast=Salmon&amp;rft.aufirst=George&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3De3DYAAAAMAAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit&amp;section=6" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1097025294">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:#f9f9f9}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><div class="side-box side-box-right plainlinks sistersitebox">
+<div class="side-box-flex">
+<div class="side-box-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <span style="font-weight: bold; font-style: italic;"><a href="https://commons.wikimedia.org/wiki/Category:Ogdoad" class="extiw" title="commons:Category:Ogdoad">Ogdoad</a></span>.</div></div>
+</div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFButler" class="citation web cs1">Butler, Edward P. <a rel="nofollow" class="external text" href="http://henadology.wordpress.com/theology/netjeru/hermopolitan-ogdoad/">"Hermopolitan Ogdoad"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-08-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Hermopolitan+Ogdoad&amp;rft.aulast=Butler&amp;rft.aufirst=Edward+P.&amp;rft_id=http%3A%2F%2Fhenadology.wordpress.com%2Ftheology%2Fnetjeru%2Fhermopolitan-ogdoad%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AOgdoad+%28Egyptian%29" class="Z3988"></span></li></ul>
+<div class="navbox-styles nomobile"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"/></div><div role="navigation" class="navbox" aria-labelledby="Ancient_Egyptian_religion" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="3" style="background-color:#decd87"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"/><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Ancient_Egyptian_religion_footer" title="Template:Ancient Egyptian religion footer"><abbr title="View this template" style="background-color:#decd87;;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Ancient_Egyptian_religion_footer" title="Template talk:Ancient Egyptian religion footer"><abbr title="Discuss this template" style="background-color:#decd87;;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Ancient_Egyptian_religion_footer&amp;action=edit"><abbr title="Edit this template" style="background-color:#decd87;;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Ancient_Egyptian_religion" style="font-size:114%;margin:0 4em"><a href="/wiki/Ancient_Egyptian_religion" title="Ancient Egyptian religion">Ancient Egyptian religion</a></div></th></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%">Beliefs</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Ancient_Egyptian_afterlife_beliefs" title="Ancient Egyptian afterlife beliefs">Afterlife</a></li>
+<li><a href="/wiki/Ancient_Egyptian_creation_myths" title="Ancient Egyptian creation myths">Creation myths</a></li>
+<li><a href="/wiki/Isfet_(Egyptian_mythology)" title="Isfet (Egyptian mythology)">Isfet</a></li>
+<li><a href="/wiki/Maat" title="Maat">Maat</a></li>
+<li><a href="/wiki/Maa_Kheru" title="Maa Kheru">Maa Kheru</a></li>
+<li><a href="/wiki/Egyptian_mythology" title="Egyptian mythology">Mythology</a></li>
+<li><a href="/wiki/Numbers_in_Egyptian_mythology" title="Numbers in Egyptian mythology">Numerology</a></li>
+<li><a href="/wiki/Osiris_myth" title="Osiris myth">Osiris myth</a></li>
+<li><a href="/wiki/Ancient_Egyptian_philosophy" title="Ancient Egyptian philosophy">Philosophy</a></li>
+<li><a href="/wiki/Ancient_Egyptian_concept_of_the_soul" class="mw-redirect" title="Ancient Egyptian concept of the soul">Soul</a></li></ul>
+</div></td><td class="noviewer navbox-image" rowspan="10" style="width:1px;padding:0 0 0 2px"><div><a href="/wiki/File:Eye_of_Horus_bw.svg" class="image"><img alt="Eye of Horus bw.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eye_of_Horus_bw.svg/90px-Eye_of_Horus_bw.svg.png" decoding="async" width="90" height="69" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eye_of_Horus_bw.svg/135px-Eye_of_Horus_bw.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eye_of_Horus_bw.svg/180px-Eye_of_Horus_bw.svg.png 2x" data-file-width="650" data-file-height="500" /></a></div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%">Practices</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Canopic_jar" title="Canopic jar">Canopic jars</a></li>
+<li><a href="/wiki/The_Ritual_of_Embalming_Papyrus" title="The Ritual of Embalming Papyrus">Embalming ritual</a></li>
+<li><a href="/wiki/Ancient_Egyptian_funerary_practices" title="Ancient Egyptian funerary practices">Funerals</a></li>
+<li><a href="/wiki/Mortuary_temple" title="Mortuary temple">Mortuary temples</a></li>
+<li><a href="/wiki/Ancient_Egyptian_offering_formula" title="Ancient Egyptian offering formula">Offering formula</a></li>
+<li><a href="/wiki/Opening_of_the_mouth_ceremony" title="Opening of the mouth ceremony">Opening of the mouth</a></li>
+<li><a href="/wiki/Egyptian_pyramids" title="Egyptian pyramids">Pyramids</a></li>
+<li><a href="/wiki/Egyptian_temple" title="Egyptian temple">Temples</a></li>
+<li><a href="/wiki/Veneration_of_the_dead" title="Veneration of the dead">Veneration of the dead</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%"><a href="/wiki/Ancient_Egyptian_deities" title="Ancient Egyptian deities">Deities</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="background-color:#decd87;;width:1%"><a class="mw-selflink selflink">Ogdoad</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Amun" title="Amun">Amun</a></li>
+<li><a href="/wiki/Amunet" title="Amunet">Amunet</a></li>
+<li><a href="/wiki/Heh_(god)" title="Heh (god)">Heh</a></li>
+<li><a href="/wiki/Hauhet" class="mw-redirect" title="Hauhet">Hauhet</a></li>
+<li><a href="/wiki/Kek_(mythology)" title="Kek (mythology)">Kek</a></li>
+<li><a href="/wiki/Kauket" class="mw-redirect" title="Kauket">Kauket</a></li>
+<li><a href="/wiki/Nu_(mythology)" title="Nu (mythology)">Nu</a></li>
+<li><a href="/wiki/Naunet" class="mw-redirect" title="Naunet">Naunet</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;;width:1%"><a href="/wiki/Ennead" title="Ennead">Ennead</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Atum" title="Atum">Atum</a></li>
+<li><a href="/wiki/Shu_(Egyptian_god)" title="Shu (Egyptian god)">Shu</a></li>
+<li><a href="/wiki/Tefnut" title="Tefnut">Tefnut</a></li>
+<li><a href="/wiki/Geb" title="Geb">Geb</a></li>
+<li><a href="/wiki/Nut_(goddess)" title="Nut (goddess)">Nut</a></li>
+<li><a href="/wiki/Osiris" title="Osiris">Osiris</a></li>
+<li><a href="/wiki/Isis" title="Isis">Isis</a></li>
+<li><a href="/wiki/Set_(deity)" title="Set (deity)">Set</a></li>
+<li><a href="/wiki/Nephthys" title="Nephthys">Nephthys</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;;width:1%">Triads</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em"><a href="/wiki/Theban_Triad" title="Theban Triad">Theban Triad</a></div></td></tr><tr><td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><b>A</b></li>
+<li><a href="/wiki/Aker_(deity)" title="Aker (deity)">Aker</a></li>
+<li><a href="/wiki/Akhty_(deity)" title="Akhty (deity)">Akhty</a></li>
+<li><a href="/wiki/Amesemi" title="Amesemi">Amesemi</a></li>
+<li><a href="/wiki/Ammit" title="Ammit">Ammit</a></li>
+<li><a href="/wiki/Am-heh" title="Am-heh">Am-heh</a></li>
+<li><a href="/wiki/Anat" title="Anat">Anat</a></li>
+<li><a href="/wiki/Andjety" title="Andjety">Andjety</a></li>
+<li><a href="/wiki/Anhur" title="Anhur">Anhur</a></li>
+<li><a href="/wiki/Anput" title="Anput">Anput</a></li>
+<li><a href="/wiki/Anubis" title="Anubis">Anubis</a></li>
+<li><a href="/wiki/Anuket" title="Anuket">Anuket</a></li>
+<li><a href="/wiki/Apedemak" title="Apedemak">Apedemak</a></li>
+<li><a href="/wiki/Apep" title="Apep">Apep</a></li>
+<li><a href="/wiki/Apis_(deity)" title="Apis (deity)">Apis</a></li>
+<li><a href="/wiki/Apt_(Egyptian)" title="Apt (Egyptian)">Apt</a></li>
+<li><a href="/wiki/Aqen" title="Aqen">Aqen</a></li>
+<li><a href="/wiki/Arensnuphis" title="Arensnuphis">Arensnuphis</a></li>
+<li><a href="/wiki/Ash_(deity)" title="Ash (deity)">Ash</a></li>
+<li><a href="/wiki/Assessors_of_Maat" title="Assessors of Maat">Assessors</a></li>
+<li><a href="/wiki/Astarte" title="Astarte">Astarte</a></li>
+<li><a href="/wiki/Aten" title="Aten">Aten</a></li>
+<li><b>B</b></li>
+<li><a href="/wiki/Babi_(mythology)" title="Babi (mythology)">Babi</a></li>
+<li><a href="/wiki/Banebdjedet" title="Banebdjedet">Banebdjedet</a></li>
+<li><a href="/wiki/Bastet" title="Bastet">Bastet</a></li>
+<li><a href="/wiki/Bat_(goddess)" title="Bat (goddess)">Bat</a></li>
+<li><a href="/wiki/Bata_(god)" title="Bata (god)">Bata</a></li>
+<li><a href="/wiki/Ba-Pef" title="Ba-Pef">Ba-Pef</a></li>
+<li><a href="/wiki/Bennu" title="Bennu">Bennu</a></li>
+<li><a href="/wiki/Bes" title="Bes">Bes</a></li>
+<li><a href="/wiki/Buchis" title="Buchis">Buchis</a></li>
+<li><b>C</b></li>
+<li><a href="/wiki/Cavern_deities_of_the_underworld" title="Cavern deities of the underworld">Cavern deities</a></li>
+<li><b>D</b></li>
+<li><a href="/wiki/Dedun" title="Dedun">Dedun</a></li>
+<li><a href="/wiki/Dionysus-Osiris" title="Dionysus-Osiris">Dionysus-Osiris</a></li>
+<li><b>F</b></li>
+<li><a href="/wiki/Four_sons_of_Horus" title="Four sons of Horus">Four sons of Horus</a>
+<ul><li><a href="/wiki/Duamutef" title="Duamutef">Duamutef</a></li>
+<li><a href="/wiki/Hapi_(Son_of_Horus)" title="Hapi (Son of Horus)">Hapi</a></li>
+<li><a href="/wiki/Imset" title="Imset">Imset</a></li>
+<li><a href="/wiki/Qebehsenuef" title="Qebehsenuef">Qebehsenuef</a></li></ul></li>
+<li><b>G</b></li>
+<li><a href="/wiki/Gate_deities_of_the_underworld" title="Gate deities of the underworld">Gate deities</a></li>
+<li><b>H</b></li>
+<li><a href="/wiki/Ha_(mythology)" title="Ha (mythology)">Ha</a></li>
+<li><a href="/wiki/Hapi_(Nile_god)" title="Hapi (Nile god)">Hapi</a></li>
+<li><a href="/wiki/Haurun" title="Haurun">Haurun</a></li>
+<li><a href="/wiki/Hathor" title="Hathor">Hathor</a></li>
+<li><a href="/wiki/Hatmehit" title="Hatmehit">Hatmehit</a></li>
+<li><a href="/wiki/Hedetet" title="Hedetet">Hedetet</a></li>
+<li><a href="/wiki/Hedjhotep" title="Hedjhotep">Hedjhotep</a></li>
+<li><a href="/wiki/Heka_(god)" title="Heka (god)">Heka</a></li>
+<li><a href="/wiki/Hemen" title="Hemen">Hemen</a></li>
+<li><a href="/wiki/Hemsut" title="Hemsut">Hemsut</a></li>
+<li><a href="/wiki/Heqet" title="Heqet">Heqet</a></li>
+<li><a href="/wiki/Hermanubis" title="Hermanubis">Hermanubis</a></li>
+<li><a href="/wiki/Hesat" title="Hesat">Hesat</a></li>
+<li><a href="/wiki/Horus" title="Horus">Horus</a>
+<ul><li><a href="/wiki/Harpocrates" title="Harpocrates">Harpocrates</a></li></ul></li>
+<li><a href="/wiki/Heryshaf" title="Heryshaf">Heryshaf</a></li>
+<li><a href="/wiki/Hu_(mythology)" title="Hu (mythology)">Hu</a></li>
+<li><b>I</b></li>
+<li><a href="/wiki/Iabet" title="Iabet">Iabet</a></li>
+<li><a href="/wiki/Iah" title="Iah">Iah</a></li>
+<li><a href="/wiki/Iat" title="Iat">Iat</a></li>
+<li><a href="/wiki/Ihy" title="Ihy">Ihy</a></li>
+<li><a href="/wiki/Imentet" title="Imentet">Imentet</a></li>
+<li><a href="/wiki/Imhotep" title="Imhotep">Imhotep</a></li>
+<li><a href="/wiki/Iunit" title="Iunit">Iunit</a></li>
+<li><a href="/wiki/Iusaaset" title="Iusaaset">Iusaaset</a></li>
+<li><b>K</b></li>
+<li><a href="/wiki/Kebechet" title="Kebechet">Kebechet</a></li>
+<li><a href="/wiki/Khensit" title="Khensit">Khensit</a></li>
+<li><a href="/wiki/Khenti-Amentiu" title="Khenti-Amentiu">Khenti-Amentiu</a></li>
+<li><a href="/wiki/Khenti-kheti" title="Khenti-kheti">Khenti-kheti</a></li>
+<li><a href="/wiki/Khepri" title="Khepri">Khepri</a></li>
+<li><a href="/wiki/Kherty" title="Kherty">Kherty</a></li>
+<li><a href="/wiki/Khnum" title="Khnum">Khnum</a></li>
+<li><a href="/wiki/Khonsu" title="Khonsu">Khonsu</a></li>
+<li><a href="/wiki/Kothar-wa-Khasis" title="Kothar-wa-Khasis">Kothar-wa-Khasis</a></li>
+<li><b>M</b></li>
+<li><a href="/wiki/Maahes" title="Maahes">Maahes</a></li>
+<li><a href="/wiki/Maat" title="Maat">Ma'at</a></li>
+<li><a href="/wiki/Mafdet" title="Mafdet">Mafdet</a></li>
+<li><a href="/wiki/Mandulis" title="Mandulis">Mandulis</a></li>
+<li><a href="/wiki/Medjed" title="Medjed">Medjed</a></li>
+<li><a href="/wiki/Mehen" title="Mehen">Mehen</a></li>
+<li><a href="/wiki/Mehet-Weret" title="Mehet-Weret">Mehet-Weret</a></li>
+<li><a href="/wiki/Mehit" title="Mehit">Mehit</a></li>
+<li><a href="/wiki/Menhit" title="Menhit">Menhit</a></li>
+<li><a href="/wiki/Meret" title="Meret">Meret</a></li>
+<li><a href="/wiki/Meretseger" title="Meretseger">Meretseger</a></li>
+<li><a href="/wiki/Meskhenet" title="Meskhenet">Meskhenet</a></li>
+<li><a href="/wiki/Min_(god)" title="Min (god)">Min</a></li>
+<li><a href="/wiki/Mnevis" title="Mnevis">Mnevis</a></li>
+<li><a href="/wiki/Montu" title="Montu">Montu</a></li>
+<li><a href="/wiki/Mut" title="Mut">Mut</a></li>
+<li><b>N</b></li>
+<li><a href="/wiki/Nebethetepet" title="Nebethetepet">Nebethetepet</a></li>
+<li><a href="/wiki/Nebtuwi" title="Nebtuwi">Nebtuwi</a></li>
+<li><a href="/wiki/Nefertem" title="Nefertem">Nefertem</a></li>
+<li><a href="/wiki/Nehebkau" title="Nehebkau">Nehebkau</a></li>
+<li><a href="/wiki/Nehmetawy" title="Nehmetawy">Nehmetawy</a></li>
+<li><a href="/wiki/Neith" title="Neith">Neith</a></li>
+<li><a href="/wiki/Nekhbet" title="Nekhbet">Nekhbet</a></li>
+<li><a href="/wiki/Nemty" title="Nemty">Nemty</a></li>
+<li><a href="/wiki/Neper_(mythology)" title="Neper (mythology)">Neper</a></li>
+<li><b>P</b></li>
+<li><a href="/wiki/Pakhet" title="Pakhet">Pakhet</a></li>
+<li><a href="/wiki/Petbe" title="Petbe">Petbe</a></li>
+<li><a href="/wiki/Ptah" title="Ptah">Ptah</a></li>
+<li><b>Q</b></li>
+<li><a href="/wiki/Qebui" title="Qebui">Qebui</a></li>
+<li><a href="/wiki/Qetesh" title="Qetesh">Qetesh</a></li>
+<li><b>R</b></li>
+<li><a href="/wiki/Ra" title="Ra">Ra</a></li>
+<li><a href="/wiki/Raet-Tawy" title="Raet-Tawy">Raet-Tawy</a></li>
+<li><a href="/wiki/Rekhyt" title="Rekhyt">Rekhyt</a></li>
+<li><a href="/wiki/Rem_(mythology)" title="Rem (mythology)">Rem</a></li>
+<li><a href="/wiki/Renenutet" title="Renenutet">Renenutet</a></li>
+<li><a href="/wiki/Renpet" title="Renpet">Renpet</a></li>
+<li><a href="/wiki/Renpetneferet" title="Renpetneferet">Renpetneferet</a></li>
+<li><a href="/wiki/Repyt" title="Repyt">Repyt</a></li>
+<li><a href="/wiki/Resheph" title="Resheph">Resheph</a></li>
+<li><b>S</b></li>
+<li><a href="/wiki/Sah_(god)" title="Sah (god)">Sah</a></li>
+<li><a href="/wiki/Satis_(goddess)" title="Satis (goddess)">Satis</a></li>
+<li><a href="/wiki/Sebiumeker" title="Sebiumeker">Sebiumeker</a></li>
+<li><a href="/wiki/Sekhmet" title="Sekhmet">Sekhmet</a></li>
+<li><a href="/wiki/Seker" title="Seker">Seker</a></li>
+<li><a href="/wiki/Serapis" title="Serapis">Serapis</a></li>
+<li><a href="/wiki/Serket" title="Serket">Serket</a></li>
+<li><a href="/wiki/Seshat" title="Seshat">Seshat</a></li>
+<li><a href="/wiki/Shai" title="Shai">Shai</a></li>
+<li><a href="/wiki/Shed_(deity)" title="Shed (deity)">Shed</a></li>
+<li><a href="/wiki/Shesmetet" title="Shesmetet">Shesmetet</a></li>
+<li><a href="/wiki/Shezmu" title="Shezmu">Shezmu</a></li>
+<li><a href="/wiki/Sia_(god)" title="Sia (god)">Sia</a></li>
+<li><a href="/wiki/Sobek" title="Sobek">Sobek</a></li>
+<li><a href="/wiki/Sopdet" title="Sopdet">Sopdet</a></li>
+<li><a href="/wiki/Sopdu" title="Sopdu">Sopdu</a></li>
+<li><a href="/wiki/Souls_of_Pe_and_Nekhen" title="Souls of Pe and Nekhen">Souls of Pe and Nekhen</a></li>
+<li><b>T</b></li>
+<li><a href="/wiki/Tatenen" title="Tatenen">Tatenen</a></li>
+<li><a href="/wiki/Taweret" title="Taweret">Taweret</a></li>
+<li><a href="/wiki/Tayt" title="Tayt">Tayt</a></li>
+<li><a href="/wiki/Ta-Bitjet" title="Ta-Bitjet">Ta-Bitjet</a></li>
+<li><a href="/wiki/Thoth" title="Thoth">Thoth</a>
+<ul><li><a href="/wiki/Hermes_Trismegistus" title="Hermes Trismegistus">Hermes Trismegistus</a></li></ul></li>
+<li><a href="/wiki/Tjenenyet" title="Tjenenyet">Tjenenyet</a></li>
+<li><a href="/wiki/Tutu_(Egyptian_god)" title="Tutu (Egyptian god)">Tutu</a></li>
+<li><b>U</b></li>
+<li><a href="/wiki/Unut" title="Unut">Unut</a></li>
+<li><b>W</b></li>
+<li><a href="/wiki/Wadjet" title="Wadjet">Wadjet</a></li>
+<li><a href="/wiki/Wadj-wer" title="Wadj-wer">Wadj-wer</a></li>
+<li><a href="/wiki/Weneg_(Egyptian_deity)" title="Weneg (Egyptian deity)">Weneg</a></li>
+<li><a href="/wiki/Wepset" title="Wepset">Wepset</a></li>
+<li><a href="/wiki/Wepwawet" title="Wepwawet">Wepwawet</a></li>
+<li><a href="/wiki/Werethekau" title="Werethekau">Werethekau</a></li>
+<li><a href="/wiki/Wosret" title="Wosret">Wosret</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%"><a href="/wiki/Category:Egyptian_legendary_creatures" title="Category:Egyptian legendary creatures">Creatures</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Aani" title="Aani">Aani</a></li>
+<li><a href="/wiki/Abtu" title="Abtu">Abtu</a></li>
+<li><a href="/wiki/Griffin" title="Griffin">Griffin</a></li>
+<li><a href="/wiki/Hieracosphinx" title="Hieracosphinx">Hieracosphinx</a></li>
+<li><a href="/wiki/Medjed_(fish)" title="Medjed (fish)">Medjed</a></li>
+<li><a href="/wiki/Serpopard" title="Serpopard">Serpopard</a></li>
+<li><a href="/wiki/Set_animal" title="Set animal">Sha</a></li>
+<li><a href="/wiki/Sphinx" title="Sphinx">Sphinx</a></li>
+<li><a href="/wiki/Uraeus" title="Uraeus">Uraeus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%">Characters</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dedi" title="Dedi">Dedi</a></li>
+<li><a href="/wiki/Djadjaemankh" title="Djadjaemankh">Djadjaemankh</a></li>
+<li><a href="/wiki/Rededjet" title="Rededjet">Rededjet</a></li>
+<li><a href="/wiki/Ubaoner" title="Ubaoner">Ubaoner</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%">Locations</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Aaru" title="Aaru">Aaru</a></li>
+<li><a href="/wiki/Akhet_(hieroglyph)" title="Akhet (hieroglyph)">Akhet</a></li>
+<li><a href="/wiki/Benben" title="Benben">Benben</a></li>
+<li><a href="/wiki/Duat" title="Duat">Duat</a></li>
+<li><a href="/wiki/Land_of_Manu" title="Land of Manu">Land of Manu</a></li>
+<li><a href="/wiki/The_Indestructibles" title="The Indestructibles">The Indestructibles</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%"><a href="/wiki/Category:Ancient_Egyptian_symbols" title="Category:Ancient Egyptian symbols">Symbols<br />and objects</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Ankh" title="Ankh">Ankh</a></li>
+<li><a href="/wiki/Atef" title="Atef">Atef</a></li>
+<li><a href="/wiki/Cartouche_(hieroglyph)" class="mw-redirect" title="Cartouche (hieroglyph)">Cartouche</a></li>
+<li><a href="/wiki/Crook_and_flail" title="Crook and flail">Crook and flail</a></li>
+<li><a href="/wiki/Crown_of_justification" title="Crown of justification">Crown of justification</a></li>
+<li><a href="/wiki/Deshret" title="Deshret">Deshret</a></li>
+<li><a href="/wiki/Djed" title="Djed">Djed</a></li>
+<li><a href="/wiki/Egyptian_obelisk" class="mw-redirect" title="Egyptian obelisk">Egyptian obelisk</a></li>
+<li><a href="/wiki/Egyptian_pool" title="Egyptian pool">Egyptian pool</a></li>
+<li><a href="/wiki/Eye_of_Horus" title="Eye of Horus">Eye of Horus</a></li>
+<li><a href="/wiki/Eye_of_Ra" title="Eye of Ra">Eye of Ra</a></li>
+<li><a href="/wiki/Hedjet" title="Hedjet">Hedjet</a></li>
+<li><a href="/wiki/Hemhem_crown" title="Hemhem crown">Hemhem crown</a></li>
+<li><a href="/wiki/Hennu" title="Hennu">Hennu</a></li>
+<li><a href="/wiki/Horus_on_the_Crocodiles" title="Horus on the Crocodiles">Horus on the Crocodiles</a></li>
+<li><a href="/wiki/Imiut_fetish" title="Imiut fetish">Imiut fetish</a></li>
+<li><a href="/wiki/Khepresh" title="Khepresh">Khepresh</a></li>
+<li><a href="/wiki/Kneph" title="Kneph">Kneph</a></li>
+<li><a href="/wiki/Menat" title="Menat">Menat</a></li>
+<li><a href="/wiki/Nebu" title="Nebu">Nebu</a></li>
+<li><a href="/wiki/Nemes" title="Nemes">Nemes</a></li>
+<li><a href="/wiki/Neshmet" title="Neshmet">Neshmet</a></li>
+<li><a href="/wiki/Ouroboros" title="Ouroboros">Ouroboros</a></li>
+<li><a href="/wiki/Pschent" title="Pschent">Pschent</a></li>
+<li><a href="/wiki/Scarab_(artifact)" title="Scarab (artifact)">Scarab</a></li>
+<li><a href="/wiki/Serekh" title="Serekh">Serekh</a></li>
+<li><a href="/wiki/Shen_ring" title="Shen ring">Shen ring</a></li>
+<li><a href="/wiki/Solar_barque" title="Solar barque">Solar barque</a></li>
+<li><a href="/wiki/Tyet" title="Tyet">Tyet</a></li>
+<li><a href="/wiki/Ushabti" title="Ushabti">Ushabti</a></li>
+<li><a href="/wiki/Vulture_crown" title="Vulture crown">Vulture crown</a></li>
+<li><a href="/wiki/Was-sceptre" title="Was-sceptre">Was-sceptre</a></li>
+<li><a href="/wiki/Winged_sun" title="Winged sun">Winged sun</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%"><a href="/wiki/Category:Ancient_Egyptian_texts" title="Category:Ancient Egyptian texts">Writings</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Amduat" title="Amduat">Amduat</a></li>
+<li><a href="/wiki/Books_of_Breathing" title="Books of Breathing">Books of Breathing</a></li>
+<li><a href="/wiki/Book_of_Caverns" title="Book of Caverns">Book of Caverns</a></li>
+<li><i><a href="/wiki/Book_of_the_Dead" title="Book of the Dead">Book of the Dead</a></i></li>
+<li><a href="/wiki/Book_of_the_Earth" title="Book of the Earth">Book of the Earth</a></li>
+<li><a href="/wiki/Book_of_Gates" title="Book of Gates">Book of Gates</a></li>
+<li><a href="/wiki/Book_of_the_Heavenly_Cow" title="Book of the Heavenly Cow">Book of the Heavenly Cow</a></li>
+<li><a href="/wiki/Book_of_Traversing_Eternity" title="Book of Traversing Eternity">Book of Traversing Eternity</a></li>
+<li><a href="/wiki/Coffin_Texts" title="Coffin Texts">Coffin Texts</a></li>
+<li><a href="/wiki/The_Contendings_of_Horus_and_Seth" title="The Contendings of Horus and Seth">The Contendings of Horus and Seth</a></li>
+<li><a href="/wiki/Enigmatic_Book_of_the_Netherworld" class="mw-redirect" title="Enigmatic Book of the Netherworld">Enigmatic Book of the Netherworld</a></li>
+<li><a href="/wiki/Great_Hymn_to_the_Aten" title="Great Hymn to the Aten">Great Hymn to the Aten</a></li>
+<li><a href="/wiki/Litany_of_the_Eye_of_Horus" title="Litany of the Eye of Horus">Litany of the Eye of Horus</a></li>
+<li><a href="/wiki/Litany_of_Re" title="Litany of Re">Litany of Re</a></li>
+<li><a href="/wiki/Pyramid_Texts" title="Pyramid Texts">Pyramid Texts</a></li>
+<li><a href="/wiki/Spell_of_the_Twelve_Caves" title="Spell of the Twelve Caves">Spell of the Twelve Caves</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%"><a href="/wiki/Category:Festivals_in_ancient_Egypt" title="Category:Festivals in ancient Egypt">Festivals</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Beautiful_Festival_of_the_Valley" title="Beautiful Festival of the Valley">Beautiful Festival of the Valley</a></li>
+<li><a href="/wiki/Cattle_count" title="Cattle count">Cattle count</a></li>
+<li><a href="/wiki/Coronation_of_the_pharaoh" title="Coronation of the pharaoh">Coronation of the pharaoh</a></li>
+<li><a href="/wiki/Min_festival" title="Min festival">Min festival</a></li>
+<li><a href="/wiki/Opet_Festival" title="Opet Festival">Opet Festival</a></li>
+<li><a href="/wiki/Sed_festival" title="Sed festival">Sed festival</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="background-color:#decd87;width:1%">Related religions</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Atenism" title="Atenism">Atenism</a></li>
+<li><a href="/wiki/Gnosticism" title="Gnosticism">Gnosticism</a></li>
+<li><a href="/wiki/Hermeticism" title="Hermeticism">Hermeticism</a></li>
+<li><a href="/wiki/Kemetism" title="Kemetism">Kemetism</a></li>
+<li><a href="/wiki/Mysteries_of_Isis" title="Mysteries of Isis">Mysteries of Isis</a></li>
+<li><a href="/wiki/Temple_of_Set" title="Temple of Set">Temple of Set</a></li>
+<li><a href="/wiki/Thelema" title="Thelema">Thelema</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="3" style="background-color:#decd87"><div>
+<ul><li><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramidi_aavikolla.png/16px-Pyramidi_aavikolla.png" decoding="async" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramidi_aavikolla.png/24px-Pyramidi_aavikolla.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramidi_aavikolla.png/32px-Pyramidi_aavikolla.png 2x" data-file-width="45" data-file-height="45" />&#160;<a href="/wiki/Portal:Ancient_Egypt" title="Portal:Ancient Egypt">Ancient Egypt&#32;portal</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw2277
+Cached time: 20220917051354
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.527 seconds
+Real time usage: 0.722 seconds
+Preprocessor visited node count: 1491/1000000
+Post‐expand include size: 88437/2097152 bytes
+Template argument size: 1541/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 37622/5000000 bytes
+Lua time usage: 0.316/10.000 seconds
+Lua memory usage: 23656505/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  584.008      1 -total
+ 22.24%  129.859      1 Template:Reflist
+ 19.73%  115.213      1 Template:Lang-grc
+ 17.47%  102.053      1 Template:Ancient_Egyptian_religion
+ 17.04%   99.531      7 Template:Citation
+ 16.93%   98.855      1 Template:Sidebar_with_collapsible_lists
+ 10.85%   63.372      1 Template:Short_description
+  9.50%   55.453      1 Template:Commons_category
+  9.03%   52.734      1 Template:Sister_project
+  8.61%   50.261      1 Template:Side_box
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:50919806-0!canonical and timestamp 20220917051353 and revision id 1110518350.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Ogdoad_(Egyptian)&amp;oldid=1110518350">https://en.wikipedia.org/w/index.php?title=Ogdoad_(Egyptian)&amp;oldid=1110518350</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Groups_of_Egyptian_deities" title="Category:Groups of Egyptian deities">Groups of Egyptian deities</a></li><li><a href="/wiki/Category:Creation_myths" title="Category:Creation myths">Creation myths</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Articles_containing_Ancient_Greek_(to_1453)-language_text" title="Category:Articles containing Ancient Greek (to 1453)-language text">Articles containing Ancient Greek (to 1453)-language text</a></li><li><a href="/wiki/Category:Articles_containing_Ancient_Egyptian-language_text" title="Category:Articles containing Ancient Egyptian-language text">Articles containing Ancient Egyptian-language text</a></li><li><a href="/wiki/Category:Commons_category_link_from_Wikidata" title="Category:Commons category link from Wikidata">Commons category link from Wikidata</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span title="The user page for the IP address you are editing as">Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Ogdoad+%28Egyptian%29" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Ogdoad+%28Egyptian%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Ogdoad_(Egyptian)" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Ogdoad_(Egyptian)" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Ogdoad_(Egyptian)"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation"  >
+	<h3
+		id="p-interaction-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Ogdoad_(Egyptian)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Ogdoad_(Egyptian)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;oldid=1110518350" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Ogdoad_%28Egyptian%29&amp;id=1110518350&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q265177" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation"  >
+	<h3
+		id="p-coll-print_export-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Ogdoad_%28Egyptian%29&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Ogdoad_(Egyptian)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects vector-menu-portal portal" aria-labelledby="p-wikibase-otherprojects-label" role="navigation"  >
+	<h3
+		id="p-wikibase-otherprojects-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">In other projects</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Ogdoad" hreflang="en"><span>Wikimedia Commons</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-lang" class="vector-menu mw-portlet mw-portlet-lang vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation"  >
+	<h3
+		id="p-lang-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A3%D8%AC%D8%AF%D9%88%D8%AF" title="أجدود – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ast mw-list-item"><a href="https://ast.wikipedia.org/wiki/Ogd%C3%B3ada" title="Ogdóada – Asturian" lang="ast" hreflang="ast" class="interlanguage-link-target"><span>Asturianu</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%9E%D0%B3%D0%B4%D0%BE%D0%B0%D0%B4%D0%B0" title="Огдоада – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-br mw-list-item"><a href="https://br.wikipedia.org/wiki/Ogdoad" title="Ogdoad – Breton" lang="br" hreflang="br" class="interlanguage-link-target"><span>Brezhoneg</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Llista_de_personatges_de_la_mitologia_eg%C3%ADpcia#O" title="Llista de personatges de la mitologia egípcia – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs badge-Q17437796 badge-featuredarticle mw-list-item" title="featured article badge"><a href="https://cs.wikipedia.org/wiki/Osmero" title="Osmero – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Ogdoad" title="Ogdoad – Danish" lang="da" hreflang="da" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Achtheit_von_Hermopolis" title="Achtheit von Hermopolis – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%9F%CE%B3%CE%B4%CE%BF%CE%AC%CE%B4%CE%B1_%CF%84%CE%B7%CF%82_%CE%95%CF%81%CE%BC%CE%BF%CF%85%CF%80%CF%8C%CE%BB%CE%B5%CF%89%CF%82" title="Ογδοάδα της Ερμουπόλεως – Greek" lang="el" hreflang="el" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Ogd%C3%B3ada" title="Ogdóada – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Ogdoado" title="Ogdoado – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Ogdoada" title="Ogdoada – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A7%DA%AF%D8%AF%D9%88%D8%AF" title="اگدود – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Ogdoade_d%27Hermopolis" title="Ogdoade d&#039;Hermopolis – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%98%A4%EA%B7%B8%EB%8F%84%EC%95%84%EB%93%9C" title="오그도아드 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Ogdoade" title="Ogdoade – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wikipedia.org/wiki/Ogdoad" title="Ogdoad – Lithuanian" lang="lt" hreflang="lt" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Ogdo%C3%A1d" title="Ogdoád – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Ogdoad_(Mesir_purba)" title="Ogdoad (Mesir purba) – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Ogdoade_van_Hermopolis" title="Ogdoade van Hermopolis – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%B0%E3%83%89%E3%82%A2%E3%83%89" title="オグドアド – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Ogdoaden" title="Ogdoaden – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Ogdoada" title="Ogdoada – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Ogd%C3%B3ade" title="Ogdóade – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9E%D0%B3%D0%B4%D0%BE%D0%B0%D0%B4%D0%B0" title="Огдоада – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Ogdoad_(Egyptian)" title="Ogdoad (Egyptian) – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sk mw-list-item"><a href="https://sk.wikipedia.org/wiki/Hermopolisk%C3%A9_Osmoro" title="Hermopoliské Osmoro – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target"><span>Slovenčina</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Hermopolska_ogdoada" title="Hermopolska ogdoada – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Ogdoadi" title="Ogdoadi – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Hermopolitanska_ogdoaden" title="Hermopolitanska ogdoaden – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Ogdoad" title="Ogdoad – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9E%D0%B3%D0%B4%D0%BE%D0%B0%D0%B4%D0%B0" title="Огдоада – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%85%AB%E5%85%83%E7%A5%9E" title="八元神 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q265177#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 15 September 2022, at 23:40<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Ogdoad_(Egyptian)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.527","walltime":"0.722","ppvisitednodes":{"value":1491,"limit":1000000},"postexpandincludesize":{"value":88437,"limit":2097152},"templateargumentsize":{"value":1541,"limit":2097152},"expansiondepth":{"value":16,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":37622,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  584.008      1 -total"," 22.24%  129.859      1 Template:Reflist"," 19.73%  115.213      1 Template:Lang-grc"," 17.47%  102.053      1 Template:Ancient_Egyptian_religion"," 17.04%   99.531      7 Template:Citation"," 16.93%   98.855      1 Template:Sidebar_with_collapsible_lists"," 10.85%   63.372      1 Template:Short_description","  9.50%   55.453      1 Template:Commons_category","  9.03%   52.734      1 Template:Sister_project","  8.61%   50.261      1 Template:Side_box"]},"scribunto":{"limitreport-timeusage":{"value":"0.316","limit":"10.000"},"limitreport-memusage":{"value":23656505,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFBainesShaferSilvermanLesko1991\"] = 1,\n    [\"CITEREFBudge1904\"] = 1,\n    [\"CITEREFButler\"] = 1,\n    [\"CITEREFDunandZivie-Coche2004\"] = 1,\n    [\"CITEREFHart2005\"] = 1,\n    [\"CITEREFSalmon1887\"] = 1,\n    [\"CITEREFSethe1929\"] = 1,\n    [\"CITEREFSmith2002\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"About\"] = 1,\n    [\"Ancient Egyptian religion\"] = 1,\n    [\"Ancient Egyptian religion footer\"] = 1,\n    [\"Citation\"] = 7,\n    [\"Cite web\"] = 1,\n    [\"Commons category\"] = 1,\n    [\"ISBN\"] = 1,\n    [\"Lang\"] = 1,\n    [\"Lang-egy\"] = 1,\n    [\"Lang-grc\"] = 1,\n    [\"Reflist\"] = 1,\n    [\"Sfn\"] = 3,\n    [\"Short description\"] = 1,\n}\narticle_whitelist = table#1 {\n}\ntable#1 {\n    [\"size\"] = \"tiny\",\n}\ntable#1 {\n    [\"size\"] = \"tiny\",\n}\n"},"cachereport":{"origin":"mw2277","timestamp":"20220917051354","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Ogdoad (Egyptian)","url":"https:\/\/en.wikipedia.org\/wiki\/Ogdoad_(Egyptian)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q265177","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q265177","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2016-06-25T07:36:50Z","dateModified":"2022-09-15T23:40:19Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/0c\/L%27Ogdoade_d%27Hermopolis.jpg","headline":"group of 8 deities in Ancient Egyptian religion"}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Ogdoad (Egyptian)","url":"https:\/\/en.wikipedia.org\/wiki\/Ogdoad_(Egyptian)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q265177","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q265177","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2016-06-25T07:36:50Z","dateModified":"2022-09-15T23:40:19Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/0c\/L%27Ogdoade_d%27Hermopolis.jpg","headline":"group of 8 deities in Ancient Egyptian religion"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":858,"wgHostname":"mw2277"});});</script>
+</body>
+</html>

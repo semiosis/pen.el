@@ -1,0 +1,20 @@
+
+  -- For example, if the user enters "18", the program should say:
+  -- "Your age is 18"
+  -- If the user enters "0", the program should say:
+  -- "You are a baby"
+  -- If the user enters "-10", the program should say:
+  -- "You are an invalid age"
+
+  putStrLn "What is your age?"
+  age <- getLine
+  putStrLn $ "Your age is " ++ age
+
+  putStrLn "What is the weather like today?"
+  weather <- getLine
+  if weather == "sunny" then travelToSchool weather else travelToWork weather
+
+  putStrLn $ "The weather is " ++ weather
+
+
+EOD

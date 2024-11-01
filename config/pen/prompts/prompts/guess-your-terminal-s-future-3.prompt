@@ -1,0 +1,60 @@
+task: "Guess your terminal's future"
+doc: "Given a view of the screen, show what the terminal may look like in the future"
+tags: general continuum
+prompt-version: 1
+prompt: |
+    Terminal screen recorder.
+    <delim>
+    Terminal 4 days ago:
+    <delim>
+    <older-screen>
+    <delim>
+    Terminal 3 days ago:
+    <delim>
+    <old-screen>
+    <delim>
+    Terminal 2 days ago:
+    <delim>
+    <current-screen>
+    <delim>
+    Terminal 1 day ago:
+    <delim>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 1000
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- older-screen
+- old-screen
+- current-screen
+var-defaults:
+- "(continuum-get-older)"
+- "(continuum-get-old)"
+- "(pen-trim-max-chars (buffer-string-visible) 300)"
+examples:
+- |-
+    shane@mele:$NOTES$ read -d '^C-r user_input
+- |-
+    shane@mele:$NOTES$ read -d '^C-r user_input
+    shane@mele:$NOTES$ read -e -r user_input^C
+    shane@mele:$NOTES$ ^C
+    shane@mele:$NOTES$ read -r user_input
+- |-
+    shane@mele:$NOTES$ read -d '^C-r user_input
+    shane@mele:$NOTES$ read -e -r user_input^C
+    shane@mele:$NOTES$ ^C
+    shane@mele:$NOTES$ read -r user_input
+    shane@mele:$NOTES$ read -r user_input
+    hi^M^C
+    shane@mele:$NOTES$ read -e user_input
+    hi
+    ho
+    shane@mele:$NOTES$ echo "$user_input"
+    hi
+info: on
+filter: off
+completion: off
+insertion: off

@@ -1,0 +1,4 @@
+root@mele:/var$ ls
+lib  lib64  local  log  lock  lost+found  opt  run  spool  tmp  utmp
+root@mele:/var$ cd /var/log
+root@mele:/var/log$ ls

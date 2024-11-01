@@ -1,0 +1,7 @@
+"define-expression" is a function that allows you to create a custom
+expression that can be used in the "--filter" option for commands that
+support it. For example, the "aws ec2 describe-instances" command has a
+"--filter" option that takes "Name=tag:KEY,Values=VALUE" arguments.
+Instead of having to type the filter expression string, you can just
+type the name of the tag and its value. For example, if you wanted to
+filter

@@ -1,0 +1,4 @@
+""large-file-warning-threshold" refers to a variable that
+says how large a file has to be in order for the user to be warned
+that he is editing it using Emacs on a large file.
+

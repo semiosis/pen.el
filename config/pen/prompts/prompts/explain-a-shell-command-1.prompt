@@ -1,0 +1,41 @@
+title: explain a shell command
+tags: hci code
+issues: 
+design-patterns: 
+doc: Explain what a shell command does
+prompt-version: 2
+prompt: |
+  The following is a list of one-liners for the linux command-line and some explanations:
+
+  $ ls -t * | head -1
+  The above command gets the newest file in directory bash.
+  <delim>
+  $ find . -name '*' -type f -not -path '*.mp3'
+  The above command finds with invert match - e.g. find every file that is not mp3
+  <delim>
+  $ find . -name "node_modules" -exec rm -rf '{}' +
+  The above command recursively removes all "node_modules" folders
+  <delim>
+  $ <code>
+  The above command
+issues: 
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "##"
+cache: true
+vars:
+- code
+examples:
+- raco pkg show --all
+prefer-external: true
+external-related:
+- https://explainshell.com/
+n-test-runs: 5
+related-prompts:
+- annotate-with-commentary.prompt
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify

@@ -1,0 +1,16 @@
+
+  (char-to-string (+ ?a (1- char))))
+
+(defun pen-modeline-name-letter ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (number-to-letter
+            (string-to-number
+             (s-replace-regexp
+              "pen-emacsd-" ""
+              dn))))
+          (t
+           "e"))))
+EOD

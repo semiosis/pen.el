@@ -1,0 +1,10 @@
+* Ideas for new prompts
+- automatically break down a daunting task into more approachable sub tasks
+- write a program based on a description
+- fix imports
+- nl refactor
+
+* workflow
+- generate code
+- fix imports
+- comment code

@@ -1,0 +1,7 @@
+graph = tf.get_default_graph()
+
+# get the list of all operations in the graph
+operations = graph.get_operations()
+
+# get the list of all the tensors in the graph
+tensors = graph.get_tensor_by_name("")

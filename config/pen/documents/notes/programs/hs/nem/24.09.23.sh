@@ -1,0 +1,6 @@
+cd /root/notes;  "nem" "fast" "ebible" "-m" "NASB" "Romans 1:1" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-m" "NASB" "Romans 1:4" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-m" "NASB" "Romans 1:5" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-m" "NASB" "Romans 1:7" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-m" "NASB" "Romans 1:9" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-m" "NASB" "Romans 1:13" "#" "<==" "bash"

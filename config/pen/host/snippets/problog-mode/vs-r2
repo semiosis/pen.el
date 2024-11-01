@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rule 2 elements
+# group: vimsnippet
+# key: vs-r2
+# --
+${1:dry} :- ${2:rain}, ${4:raincoat}.

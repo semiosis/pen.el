@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" tmux attach -t bfdf46fc-e8df-11ee-acb5-d33c23fbdb9b:\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "bash"

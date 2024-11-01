@@ -1,0 +1,23 @@
+
+
+thing1 thing2
+
+thing3 thing4
+
+thing5
+
+thing6
+
+thing7
+
+thing8
+
+thing9
+
+thing10
+
+
+
+module Main where
+
+example2 = do thing1

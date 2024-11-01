@@ -1,0 +1,8 @@
+`pwd`/../vim/vimfiles/
+# this opens a bash shell.
+-ls
+source $VIMRUNTIME/vimrc
+
+echo "filter: read stdin"
+
+grep -v "

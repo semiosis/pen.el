@@ -1,0 +1,11 @@
+
+
+fun! ReselectVisual()
+
+fun! WordReplace()
+
+nmap <leader>r :<c-u>call WordReplace()<cr>
+
+fun! Todo()
+
+let g:

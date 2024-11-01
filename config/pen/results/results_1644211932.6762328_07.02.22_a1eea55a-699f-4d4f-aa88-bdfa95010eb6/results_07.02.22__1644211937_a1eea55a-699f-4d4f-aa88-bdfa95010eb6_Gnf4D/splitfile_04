@@ -1,0 +1,6 @@
+ nl, read(ch).
+
+
+Output:
+
+>chars_of_charlie.pl Enter a character: b The first character of Charles Enter a character: r The second character of Charles Enter a character: t The

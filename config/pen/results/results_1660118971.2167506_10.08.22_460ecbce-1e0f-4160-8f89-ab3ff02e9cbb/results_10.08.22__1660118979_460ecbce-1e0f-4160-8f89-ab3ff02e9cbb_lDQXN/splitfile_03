@@ -1,0 +1,26 @@
+
+
+Stars are flowers of light.
+Oh, what beautiful flowers grow,
+Out of reach of human eye;
+No mortal can approach to see;
+If men could but learn from these,
+What elastic beauty is made,
+How pure from impurity they stream,
+How free from stain and spots the light they puff.
+
+
+Tatoos are flowers of love.
+I have a flower for every lovesick heart.
+I've seen 'em bloom: and bloom for my delight;
+But you, alas! you're left to die in the cold!
+
+        -- Pablo Picasso"""
+
+        self.set_for_download(download)
+
+        self.nkp.fetch_all_data()
+
+    def test_data_is_generated(self):
+
+        assert self.uploaded_data == self.logic.fetch()

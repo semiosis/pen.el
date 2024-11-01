@@ -1,0 +1,24 @@
+title: meeting bullet points to summary
+tags: prose summarisation
+doc: Summarize a meeting from a list of bullet points
+prompt: |
+  Convert my short hand into a first-hand account of the meeting:
+
+  <1>
+
+  Summary:
+model: davinci-instruct-beta
+temperature: 0.7
+max-generated-tokens: 1000
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- notes
+examples:
+- |-
+  Tom: Profits up 50%
+  Jane: New servers are online
+  Kjel: Need more time to fix software
+  Jane: Happy to help
+  Parkman: Beta testing almost done

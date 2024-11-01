@@ -1,0 +1,13 @@
+covered a new type of neuron that can be used to learn representations of multiple types of data.
+    "Multimodal Neurons" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+
+sparse transformer
+    https://openai.com/blog/sparse-transformer/
+
+sparse attention
+    v +/"Sparse Attention" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+
+Multimodal Neurons
+    We’ve discovered a new type of neuron that can be used to learn representations of multiple types of data.
+    "Multimodal Neurons" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+

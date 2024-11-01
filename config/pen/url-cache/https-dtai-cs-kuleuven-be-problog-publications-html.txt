@@ -1,0 +1,232 @@
+HTTP/1.1 200 OK
+Server: nginx/1.20.2
+Date: Sat, 19 Mar 2022 09:41:46 GMT
+Content-Type: text/html
+Content-Length: 6741
+Connection: keep-alive
+Last-Modified: Mon, 27 Sep 2021 14:58:33 GMT
+ETag: "b407-5ccfb54b66f9d-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Publications &#8212; ProbLog: Probabilistic Programming</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="_static/problog.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div id="wrapper">
+
+
+  <nav id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ProbLog</a>
+      </div>
+
+      <!-- Top menu -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav top-nav">
+            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://dtai.cs.kuleuven.be/problog/index.html#download">Download</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="applications.html">Applications and Datasets</a></li>
+                <li><a href="https://dtai.cs.kuleuven.be/problog/index.html#help">Help</a></li>
+                <li><a href="https://dtai.cs.kuleuven.be/problog/index.html#people">People</a></li>
+                <li><a href="https://problog.readthedocs.io/">Documentation</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="editor.html">Online</a></li>
+            
+            
+
+              
+            
+            
+            
+            
+            
+         </ul>
+
+          
+            
+          
+      </div>
+  </div><!-- /container-fluid -->
+</nav>
+
+<div id="page-wrapper">
+<div class="container">
+  <div class="row"> 
+    <div class="col-md-12 content">
+      
+  <div class="section" id="publications">
+<h1>Publications<a class="headerlink" href="#publications" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="key-publications">
+<h2>Key publications<a class="headerlink" href="#key-publications" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="problog2-system">
+<h3>ProbLog2 System<a class="headerlink" href="#problog2-system" title="Permalink to this headline">¶</a></h3>
+<ul><li class="cite"><span class="cite author">D. Fierens, G. Van den Broeck, J. Renkens, D. Shterionov, B. Gutmann, I. Thon, G. Janssens and L. De Raedt</span>. <span class="cite title">Inference and learning in probabilistic logic programs using weighted Boolean formulas</span>. <span class="cite venue"><span class="cite journal_title">Theory and Practice of Logic Programming</span>, <span class="cite volume">15</span>:<span class="cite issue">3</span>, <span class="cite pages">pp. 358 - 401</span></span>, <span class="cite publisher">Cambridge University Press</span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/392821/3/plp2cnf.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1017/S1471068414000076"><span class="pubdoi">DOI</span></a></li>
+</ul></div>
+<div class="section" id="problog-language">
+<h3>ProbLog Language<a class="headerlink" href="#problog-language" title="Permalink to this headline">¶</a></h3>
+<ul><li class="cite"><span class="cite author">L. De Raedt and A. Kimmig</span>. <span class="cite title">Probabilistic (logic) programming concepts</span>. <span class="cite venue"><span class="cite journal_title">Machine Learning</span>, <span class="cite volume">100</span>:<span class="cite issue">1</span>, <span class="cite pages">pp. 5 - 47</span></span>, <span class="cite publisher">Springer New York LLC</span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/490338/1/deraedt_kimmig_mlj15.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/s10994-015-5494-z"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt, A. Kimmig and H. Toivonen</span>. <span class="cite title">ProbLog: A probabilistic Prolog and its application in link discovery</span>. <span class="cite venue"><span class="cite conference_title">IJCAI 2007, Proceedings of the 20th International Joint Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 2462 - 2467</span></span>, <span class="cite year">2007</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/146072/1/ijcai07-problog.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+</div>
+<div class="section" id="tutorial-slides">
+<h2>Tutorial Slides<a class="headerlink" href="#tutorial-slides" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">L. De Raedt and A. Kimmig</span>. <span class="cite title">Probabilistic programming (IJCAI tutorial)</span>. <span class="cite venue"><span class="cite conference_title">IJCAI</span></span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/504183/1/pp-tutorial-ijcai15.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt and A. Kimmig</span>. <span class="cite title">Probabilistic programming (ECAI tutorial)</span>. <span class="cite venue"><span class="cite conference_title">ECAI</span></span>, <span class="cite year">2014</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/460510/1/pp-tutorial-ecai14.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig</span>. <span class="cite title">Probabilistic programming (KI tutorial)</span>. <span class="cite venue"><span class="cite conference_title">KI</span></span>, <span class="cite year">2014</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/464227/1/pp-tutorial-ki14.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+<div class="section" id="language">
+<h2>Language<a class="headerlink" href="#language" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">F. Orsini, P. Frasconi and L. De Raedt</span>. <span class="cite title">kProbLog: an algebraic Prolog for machine learning</span>. <span class="cite venue"><span class="cite journal_title">Machine Learning</span>, <span class="cite pages">pp. 1933 - 1969</span></span>, <span class="cite year">2017</span>. <a href="https://lirias.kuleuven.be/retrieve/493322"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/s10994-017-5668-y"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig, G. Van den Broeck and L. De Raedt</span>. <span class="cite title">Algebraic model counting</span>. <span class="cite venue"><span class="cite journal_title">Journal of Applied Logic</span>, <span class="cite pages">pp. 46 - 62</span></span>, <span class="cite year">2017</span>. <a href="https://lirias.kuleuven.be/retrieve/396543"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1016/j.jal.2016.11.031"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt and A. Kimmig</span>. <span class="cite title">Probabilistic (logic) programming concepts</span>. <span class="cite venue"><span class="cite journal_title">Machine Learning</span>, <span class="cite volume">100</span>:<span class="cite issue">1</span>, <span class="cite pages">pp. 5 - 47</span></span>, <span class="cite publisher">Springer New York LLC</span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/490338/1/deraedt_kimmig_mlj15.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/s10994-015-5494-z"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">D. Fierens, G. Van den Broeck, M. Bruynooghe and L. De Raedt</span>. <span class="cite title">Constraints for probabilistic logic programming</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the NIPS Probabilistic Programming Workshop</span>, <span class="cite pages">pp. 1 - 4</span></span>, <span class="cite year">2012</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/369425/1/cProbLog.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig, G. Van den Broeck and L. De Raedt</span>. <span class="cite title">An algebraic Prolog for reasoning about possible worlds</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the Twenty-Fifth AAAI Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 209 - 214</span></span>, <span class="cite publisher">AAAI Press</span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/307221/1/aProbLog_aaai11.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">M. Bruynooghe, T. Mantadelis, A. Kimmig, B. Gutmann, J. Vennekens, G. Janssens and L. De Raedt</span>. <span class="cite title">ProbLog technology for inference in a probabilistic first order logic</span>. <span class="cite venue"><span class="cite conference_title">ECAI 2010 - 19th European Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 719 - 724</span></span>, <span class="cite publisher">IOS Press</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/268374/3/ecai2010.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.3233/978-1-60750-606-5-719"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt, A. Kimmig, B. Gutmann, K. Kersting, V. Santos Costa and H. Toivonen</span>. <span class="cite title">Probabilistic inductive querying using ProbLog</span>. <span class="cite venue"><span class="cite conference_title">Inductive Databases and Constraint-Based Data Mining</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/284080/1/problog_iq.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-1-4419-7738-0_10"><span class="pubdoi">DOI</span></a> <a href="http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW552.abs.html" title="Technical Report"><span class="pubpdf">TR</span></a></li>
+<li class="cite"><span class="cite author">G. Van den Broeck, I. Thon, M. van Otterlo and L. De Raedt</span>. <span class="cite title">DTProbLog: A decision-theoretic probabilistic Prolog</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the twenty-fourth AAAI conference on artificial intelligence</span>, <span class="cite pages">pp. 1217 - 1222</span></span>, <span class="cite publisher">AAAI Press</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/270066/1/dtproblog.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt, B. Demoen, D. Fierens, B. Gutmann, G. Janssens, A. Kimmig, N. Landwehr, T. Mantadelis, W. Meert, R. Rocha, V. Santos Costa, I. Thon and J. Vennekens</span>. <span class="cite title">Towards digesting the alphabet-soup of statistical relational learning</span>. <span class="cite venue"><span class="cite conference_title">NIPS 2008 Workshop on Probabilistic Programming</span></span>, <span class="cite year">2008</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/206421/1/nips_pll.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt, A. Kimmig and H. Toivonen</span>. <span class="cite title">ProbLog: A probabilistic Prolog and its application in link discovery</span>. <span class="cite venue"><span class="cite conference_title">IJCAI 2007, Proceedings of the 20th International Joint Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 2462 - 2467</span></span>, <span class="cite year">2007</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/146072/1/ijcai07-problog.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+<div class="section" id="systems">
+<h2>Systems<a class="headerlink" href="#systems" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="problog2">
+<h3>ProbLog2<a class="headerlink" href="#problog2" title="Permalink to this headline">¶</a></h3>
+<ul><li class="cite"><span class="cite author">A. Dries, A. Kimmig, W. Meert, J. Renkens, G. Van den Broeck, J. Vlasselaer and L. De Raedt</span>. <span class="cite title">ProbLog2: Probabilistic logic programming</span>. <span class="cite venue"><span class="cite journal_title">Lecture Notes in Computer Science</span>, <span class="cite volume">9286</span>, <span class="cite pages">pp. 312 - 315</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/510204/1/problog_demo.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-319-23461-8_37"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">D. Fierens, G. Van den Broeck, J. Renkens, D. Shterionov, B. Gutmann, I. Thon, G. Janssens and L. De Raedt</span>. <span class="cite title">Inference and learning in probabilistic logic programs using weighted Boolean formulas</span>. <span class="cite venue"><span class="cite journal_title">Theory and Practice of Logic Programming</span>, <span class="cite volume">15</span>:<span class="cite issue">3</span>, <span class="cite pages">pp. 358 - 401</span></span>, <span class="cite publisher">Cambridge University Press</span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/392821/3/plp2cnf.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1017/S1471068414000076"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">J. Renkens, D. Shterionov, G. Van den Broeck, J. Vlasselaer, D. Fierens, W. Meert, G. Janssens and L. De Raedt</span>. <span class="cite title">ProbLog2: From probabilistic programming to statistical relational learning</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the NIPS Probabilistic Programming Workshop</span></span>, <span class="cite year">2012</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/369427/1/nips2012.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">D. Fierens, G. Van den Broeck, I. Thon, B. Gutmann and L. De Raedt</span>. <span class="cite title">Inference in probabilistic logic programs using weighted CNF's</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the 27th Conference on Uncertainty in Artificial Intelligence (UAI)</span>, <span class="cite pages">pp. 211 - 220</span></span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/310668/1/UAI.pdf"><span class="pubpdf">PDF</span></a> <a href="http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW607.pdf" title="Technical Report"><span class="pubpdf">TR</span></a></li>
+</ul></div>
+<div class="section" id="problog1">
+<h3>ProbLog1<a class="headerlink" href="#problog1" title="Permalink to this headline">¶</a></h3>
+<ul><li class="cite"><span class="cite author">A. Kimmig, B. Demoen, L. De Raedt, V. Santos Costa and R. Rocha</span>. <span class="cite title">On the implementation of the probabilistic logic programming language ProbLog</span>. <span class="cite venue"><span class="cite journal_title">Theory and Practice of Logic Programming</span>, <span class="cite volume">11</span>, <span class="cite pages">pp. 235 - 262</span></span>, <span class="cite publisher">Cambridge University Press</span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/259607/1/kimmig10.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1017/S1471068410000566"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig, V. Santos Costa, R. Rocha, B. Demoen and L. De Raedt</span>. <span class="cite title">On the efficient execution of ProbLog programs</span>. <span class="cite venue"><span class="cite conference_title">International Conference on Logic Programming, LNCS</span>, volume <span class="cite volume">5366</span>, <span class="cite pages">pp. 175 - 189</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2008</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/199133/1/cr_problog_iclp08.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-540-89982-2_22"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt, A. Kimmig and H. Toivonen</span>. <span class="cite title">ProbLog: A probabilistic Prolog and its application in link discovery</span>. <span class="cite venue"><span class="cite conference_title">IJCAI 2007, Proceedings of the 20th International Joint Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 2462 - 2467</span></span>, <span class="cite year">2007</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/146072/1/ijcai07-problog.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+</div>
+<div class="section" id="inference">
+<h2>Inference<a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">J. Vlasselaer, G. Van den Broeck, A. Kimmig, W. Meert and L. De Raedt</span>. <span class="cite title">Tp-compilation for inference in probabilistic logic programs</span>. <span class="cite venue"><span class="cite journal_title">International Journal of Approximate Reasoning</span>, <span class="cite pages">pp. 15 - 32</span></span>, <span class="cite year"></span>. <a href="https://lirias.kuleuven.be/retrieve/391312"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">J. Vlasselaer, G. Van den Broeck, A. Kimmig, W. Meert and L. De Raedt</span>. <span class="cite title">Anytime inference in probabilistic logic programs with Tp-compilation</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of 24th International Joint Conference on Artificial Intelligence (IJCAI)</span>, <span class="cite pages">pp. 1852 - 1858</span></span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/494681/2/TpCompilation.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">D. Shterionov, J. Renkens, J. Vlasselaer, A. Kimmig, W. Meert and G. Janssens</span>. <span class="cite title">The most probable explanation for probabilistic logic programs with annotated disjunctions</span>. <span class="cite venue"><span class="cite conference_title">Inductive Logic Programming</span></span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/474713/2/paper.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">J. Renkens, A. Kimmig and L. De Raedt</span>. <span class="cite title">Lazy explanation-based  approximation for probabilistic logic programming</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the StarAI workshop at UAI</span></span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/503329/1/starai1.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">J. Vlasselaer, J. Renkens, G. Van den Broeck and L. De Raedt</span>. <span class="cite title">Compiling probabilistic logic programs into sentential decision diagrams</span>. <span class="cite venue"><span class="cite conference_title">Proceedings Workshop on Probabilistic Logic Programming (PLP)</span>, <span class="cite pages">pp. 1 - 10</span></span>, <span class="cite year">2014</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/456227/1/plp_sdd_paper.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">J. Renkens, A. Kimmig, G. Van den Broeck and L. De Raedt</span>. <span class="cite title">Explanation-based approximate weighted model counting for probabilistic logics</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the 28th AAAI Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 2490 - 2496</span></span>, <span class="cite year">2014</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/451332/1/aaai14.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">D. Shterionov, T. Mantadelis and G. Janssens</span>. <span class="cite title">Pattern-based compaction for ProbLog inference</span>. <span class="cite venue"><span class="cite conference_title">Technical Report</span></span>, <span class="cite publisher">Department of Computer Science, KU Leuven</span>, <span class="cite year">2013</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/410252/1/CW639.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">B. Moldovan, I. Thon, J. Davis and L. De Raedt</span>. <span class="cite title">MCMC estimation of conditional probabilities in probabilistic programming languages</span>. <span class="cite venue"><span class="cite conference_title">Lecture Notes in Computer Science</span>, volume <span class="cite volume">7958</span>, <span class="cite pages">pp. 436 - 448</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2013</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/411248/1/mcmc.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-642-39091-3_37"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">J. Renkens, G. Van den Broeck and S. Nijssen</span>. <span class="cite title">k-optimal: A novel approximate inference algorithm for ProbLog</span>. <span class="cite venue"><span class="cite journal_title">Machine Learning</span>, <span class="cite volume">89</span>:<span class="cite issue">3</span>, <span class="cite pages">pp. 215 - 231</span></span>, <span class="cite publisher">Springer New York LLC</span>, <span class="cite year">2012</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/353833/1/paper.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/s10994-012-5304-9"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">T. Mantadelis and G. Janssens</span>. <span class="cite title">Nesting probabilistic inference</span>. <span class="cite venue"><span class="cite conference_title">CICLOPS</span>, <span class="cite pages">pp. 1 - 16</span></span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/316482/3/metaproblog.tar.gz"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">D. Fierens, G. Van den Broeck, I. Thon, B. Gutmann and L. De Raedt</span>. <span class="cite title">Inference in probabilistic logic programs using weighted CNF's</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the 27th Conference on Uncertainty in Artificial Intelligence (UAI)</span>, <span class="cite pages">pp. 211 - 220</span></span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/310668/1/UAI.pdf"><span class="pubpdf">PDF</span></a> <a href="http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW607.pdf" title="Technical Report"><span class="pubpdf">TR</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig, B. Demoen, L. De Raedt, V. Santos Costa and R. Rocha</span>. <span class="cite title">On the implementation of the probabilistic logic programming language ProbLog</span>. <span class="cite venue"><span class="cite journal_title">Theory and Practice of Logic Programming</span>, <span class="cite volume">11</span>, <span class="cite pages">pp. 235 - 262</span></span>, <span class="cite publisher">Cambridge University Press</span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/259607/1/kimmig10.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1017/S1471068410000566"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">T. Mantadelis, R. Rocha, A. Kimmig and G. Janssens</span>. <span class="cite title">Preprocessing Boolean formulae for BDDs in a probabilistic context</span>. <span class="cite venue"><span class="cite conference_title">Logics in Artificial Intelligence, 12th European Conference, JELIA 2010, Proceedings</span>, volume <span class="cite volume">6341</span>, <span class="cite pages">pp. 260 - 272</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/270070/2/complexity.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-642-15675-5_23"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">D. Shterionov, A. Kimmig, T. Mantadelis and G. Janssens</span>. <span class="cite title">DNF sampling for ProbLog inference</span>. <span class="cite venue"><span class="cite conference_title">Proceedings International Colloquium on Implementation of Constraint and LOgic Programming Systems (CICLOPS)</span></span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/269697/1/CICLOPS2010.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">T. Mantadelis and G. Janssens</span>. <span class="cite title">Dedicated tabling for a probabilistic setting</span>. <span class="cite venue"><span class="cite conference_title">Technical Communications of the 26th International Conference on Logic Programming</span>, volume <span class="cite volume">7</span>, <span class="cite pages">pp. 124 - 133</span></span>, <span class="cite publisher">Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/269696/1/ICLP2010_shortened.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/http://dx.doi.org/10.4230/LIPIcs.ICLP.2010.124"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">T. Mantadelis and G. Janssens</span>. <span class="cite title">Variable compression in ProbLog</span>. <span class="cite venue"><span class="cite conference_title">Lecture Notes in Computer Science</span>, volume <span class="cite volume">6397</span>, <span class="cite pages">pp. 504 - 518</span></span>, <span class="cite publisher">Springer-Verlag's</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/274400/1/LPAR2010.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-642-16242-8_36"><span class="pubdoi">DOI</span></a> <a href="http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW586.pdf" title="Technical Report"><span class="pubpdf">TR</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig, V. Santos Costa, R. Rocha, B. Demoen and L. De Raedt</span>. <span class="cite title">On the efficient execution of ProbLog programs</span>. <span class="cite venue"><span class="cite conference_title">International Conference on Logic Programming, LNCS</span>, volume <span class="cite volume">5366</span>, <span class="cite pages">pp. 175 - 189</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2008</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/199133/1/cr_problog_iclp08.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-540-89982-2_22"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt, A. Kimmig and H. Toivonen</span>. <span class="cite title">ProbLog: A probabilistic Prolog and its application in link discovery</span>. <span class="cite venue"><span class="cite conference_title">IJCAI 2007, Proceedings of the 20th International Joint Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 2462 - 2467</span></span>, <span class="cite year">2007</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/146072/1/ijcai07-problog.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+<div class="section" id="learning">
+<h2>Learning<a class="headerlink" href="#learning" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">L. De Raedt, A. Dries, I. Thon, G. Van den Broeck and M. Verbeke</span>. <span class="cite title">Inducing probabilistic relational rules from probabilistic examples</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of 24th International Joint Conference on Artificial Intelligence (IJCAI)</span></span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/499989/1/ijcai15_probfoil.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">B. Gutmann, I. Thon and L. De Raedt</span>. <span class="cite title">Learning the parameters of probabilistic logic programs from interpretations</span>. <span class="cite venue"><span class="cite conference_title">Machine Learning and Knowledge Discovery in Databases</span>, volume <span class="cite volume">6911</span>, <span class="cite pages">pp. 581 - 596</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/310534/3/gutmann_489.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-642-23780-5_47"><span class="pubdoi">DOI</span></a> <a href="http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW584.pdf" title="Technical Report"><span class="pubpdf">TR</span></a> <a href="https://lirias.kuleuven.be/bitstream/123456789/310534/4/erratum.pdf" title="Erratum"><span class="pubpdf">ERR</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig and L. De Raedt</span>. <span class="cite title">Local query mining in a probabilistic Prolog</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the Twenty-First International Joint Conference on Artificial Intelligence (IJCAI-09)</span>, volume <span class="cite volume">2</span>, <span class="cite pages">pp. 1095 - 1100</span></span>, <span class="cite publisher">AAAI Press</span>, <span class="cite year">2009</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/224532/1/kimmig_ijcai09.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">B. Gutmann, A. Kimmig, K. Kersting and L. De Raedt</span>. <span class="cite title">Parameter learning in probabilistic databases:  A least squares approach</span>. <span class="cite venue"><span class="cite conference_title">Machine Learning and Knowledge Discovery in Databases</span>, volume <span class="cite volume">5211</span>, <span class="cite pages">pp. 473 - 488</span></span>, <span class="cite publisher">Springer Verlag</span>, <span class="cite year">2008</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/185514/1/ecml2008.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-540-87479-9_49"><span class="pubdoi">DOI</span></a> <a href="http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW583.pdf" title="Technical Report"><span class="pubpdf">TR</span></a></li>
+<li class="cite"><span class="cite author">L. De Raedt, K. Kersting, A. Kimmig, K. Revoredo and H. Toivonen</span>. <span class="cite title">Compressing probabilistic Prolog programs</span>. <span class="cite venue"><span class="cite journal_title">Machine learning</span>, <span class="cite volume">70</span>:<span class="cite issue">2-3</span>, <span class="cite pages">pp. 151 - 168</span></span>, <span class="cite publisher">Kluwer Academic Publishers</span>, <span class="cite year">2008</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/176105/4/tc_mlj07_authors.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/s10994-007-5030-x"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig, L. De Raedt and H. Toivonen</span>. <span class="cite title">Probabilistic explanation based learning</span>. <span class="cite venue"><span class="cite conference_title">Lecture notes in computer science</span>, volume <span class="cite volume">4701</span>, <span class="cite pages">pp. 176 - 187</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2007</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/146226/1/pebl_ecml2007.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-540-74958-5_19"><span class="pubdoi">DOI</span></a></li>
+</ul></div>
+<div class="section" id="distributional-clauses-and-continuous-distributions">
+<h2>Distributional Clauses and Continuous Distributions<a class="headerlink" href="#distributional-clauses-and-continuous-distributions" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">P. Zuidberg Dos Martires, A. Dries and L. De Raedt</span>. <span class="cite title">Exact and Approximate Weighted Model Integration with Probability Density Functions Using Knowledge Compilation</span>. <span class="cite venue"><span class="cite conference_title">Thirty-third AAAI Conference on Artificial Intelligence</span>, <span class="cite pages">pp. 7825 - 7825</span></span>, <span class="cite publisher">Assoc Advancement Artifical Intelligence</span>, <span class="cite year">2019</span>. <a href="https://lirias.kuleuven.be/retrieve/531327"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">D. Nitti, T. De Laet and L. De Raedt</span>. <span class="cite title">A particle filter for hybrid relational domains</span>. <span class="cite venue"><span class="cite conference_title">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2013</span>, <span class="cite pages">pp. 2764 - 2771</span></span>, <span class="cite publisher">IEEE</span>, <span class="cite year">2013</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/415987/1/IROS2013.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1109/IROS.2013.6696747"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">B. Gutmann, I. Thon, A. Kimmig, M. Bruynooghe and L. De Raedt</span>. <span class="cite title">The magic of logical inference in probabilistic programming</span>. <span class="cite venue"><span class="cite journal_title">Theory and Practice of Logic Programming</span>, <span class="cite volume">11</span>, <span class="cite pages">pp. 663 - 680</span></span>, <span class="cite publisher">Cambridge University Press</span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/307537/1/gutmann2011iclp_cr.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1017/S1471068411000238"><span class="pubdoi">DOI</span></a></li>
+<li class="cite"><span class="cite author">B. Gutmann, M. Jaeger and L. De Raedt</span>. <span class="cite title">Extending ProbLog with continuous distributions</span>. <span class="cite venue"><span class="cite conference_title">Inductive Logic Programming</span>, volume <span class="cite volume">6489</span>, <span class="cite pages">pp. 76 - 91</span></span>, <span class="cite publisher">Springer</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/280675/1/gutmann_ilp2010.pdf"><span class="pubpdf">PDF</span></a> <a href="https://doi.org/10.1007/978-3-642-21295-6_12"><span class="pubdoi">DOI</span></a></li>
+</ul></div>
+<div class="section" id="decision-theoretic-problog">
+<h2>Decision-Theoretic ProbLog<a class="headerlink" href="#decision-theoretic-problog" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">V. Derkinderen and L. De Raedt</span>. <span class="cite title">Algebraic Circuits for Decision Theoretic Inference and Learning</span>. <span class="cite venue"><span class="cite conference_title">24th European Conference on Artificial Intelligence</span></span>, <span class="cite year">2020</span>. <a href="https://lirias.kuleuven.be/retrieve/578655"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">G. Van den Broeck, I. Thon, M. van Otterlo and L. De Raedt</span>. <span class="cite title">DTProbLog: A decision-theoretic probabilistic Prolog</span>. <span class="cite venue"><span class="cite conference_title">Proceedings of the twenty-fourth AAAI conference on artificial intelligence</span>, <span class="cite pages">pp. 1217 - 1222</span></span>, <span class="cite publisher">AAAI Press</span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/270066/1/dtproblog.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">I. Thon, B. Gutmann and G. Van den Broeck</span>. <span class="cite title">Probabilistic programming for planning problems</span>. <span class="cite venue"><span class="cite conference_title">Statistical Relational AI workshop</span></span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/270229/1/thon10staraiCM.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+<div class="section" id="dynamic-models">
+<h2>Dynamic Models<a class="headerlink" href="#dynamic-models" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">J. Vlasselaer, W. Meert, G. Van den Broeck and L. De Raedt</span>. <span class="cite title">Exploiting local and repeated structure in dynamic Bayesian networks</span>. <span class="cite venue"><span class="cite journal_title">Artificial Intelligence</span></span>, <span class="cite publisher">North-Holland Pub. Co.</span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/510960/6/dbn_paper.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+<div class="section" id="deepproblog">
+<h2>DeepProbLog<a class="headerlink" href="#deepproblog" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">R. Manhaeve, S. Dumancic, A. Kimmig, T. Demeester and L. De Raedt</span>. <span class="cite title">DeepProbLog: Neural Probabilistic Logic Programming</span>. <span class="cite venue"><span class="cite conference_title">NeurIPS 2018,Thirty-second Conference on Neural Information Processing Systems</span>, <span class="cite pages">pp. 3753 - 3760</span></span>, <span class="cite year">2018</span>. <a href="https://lirias.kuleuven.be/retrieve/550383/"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+<div class="section" id="ph-d-dissertations">
+<h2>Ph.D. Dissertations<a class="headerlink" href="#ph-d-dissertations" title="Permalink to this headline">¶</a></h2>
+<ul><li class="cite"><span class="cite author">F. Orsini</span>. <span class="cite title">Learning from Structured Data with Kernels, Neural Networks and Logic (Leren uit gestructureerde data met kernels, neurale netwerken en logica)</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2017</span>. <a href="https://lirias.kuleuven.be/retrieve/458348"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">J. Vlasselaer</span>. <span class="cite title">Probabilistic Inference for Dynamic and Relational Models (Probabilistische inferentie voor dynamische en relationele modellen)</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2016</span>. <a href="https://lirias.kuleuven.be/retrieve/416789"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">D. Nitti</span>. <span class="cite title">Hybrid Probabilistic Logic Programming (Hybride probabilistisch logisch programmeren)</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2016</span>. <a href="https://lirias.kuleuven.be/retrieve/399043"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">B. Moldovan</span>. <span class="cite title">Relational Affordances and their Applications</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/483830/1/thesis.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">D. Shterionov</span>. <span class="cite title">Design and Development of Probabilistic Inference Pipelines</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2015</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/502578/1/thesis_final_dimitar_shterionov.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">T. Mantadelis</span>. <span class="cite title">Efficient Algorithms for Prolog Based Probabilistic Logic Programming (Effici&euml;nte algoritmen voor prolog gebaseerd probabilistisch logisch programmeren)</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2012</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/362695/1/thesis.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">I. Thon</span>. <span class="cite title">Stochastic Relational Processes and Models: Learning and Reasoning (Stochastisch relationele processen en modellen: leren en redeneren)</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/319172/1/phd_final_print.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">B. Gutmann</span>. <span class="cite title">On Continuous Distributions and Parameter Estimation in Probabilistic Logic Programs (Over continue verdelingen en het schatten van parameters in probabilistische logische programma's)</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2011</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/316500/1/phd_thesis_bernd_gutmann_final_version.pdf"><span class="pubpdf">PDF</span></a></li>
+<li class="cite"><span class="cite author">A. Kimmig</span>. <span class="cite title">A Probabilistic Prolog and its Applications (Een probabilistische prolog en zijn toepassingen)</span>. <span class="cite venue"><span class="cite conference_title">PhD Thesis, KU Leuven</span></span>, <span class="cite year">2010</span>. <a href="https://lirias.kuleuven.be/bitstream/123456789/280932/1/phd_angelika_kimmig.pdf"><span class="pubpdf">PDF</span></a></li>
+</ul></div>
+</div>
+
+
+    </div>
+    
+ 
+  </div>
+</div>
+</div>
+</div>
+<footer class="footer">
+
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; 2015-2020, KU Leuven · DTAI Research Group.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

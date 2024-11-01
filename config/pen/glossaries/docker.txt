@@ -1,0 +1,582 @@
+builder
+builder pattern
+    [#multi-stage build]
+    [pattern]
+
+    Two files:
+    - Dockerfile.build
+    - Dockerfile
+
+    https://docs.docker.com/develop/develop-images/multistage-build/
+    https://betterprogramming.pub/super-slim-docker-containers-fdaddc47e560
+
+multi-stage build
+from .* as
+    https://docs.docker.com/develop/develop-images/multistage-build/
+
+    By default, the stages are not named, and
+    you refer to them by their integer number,
+    starting with 0 for the first FROM
+    instruction.
+    
+    However, you can name your stages, by
+    adding an AS <NAME> to the FROM
+    instruction.
+    
+    This example improves the previous one by
+    naming the stages and using the name in
+    the COPY instruction.
+    
+    This means that even if the instructions
+    in your Dockerfile are re-ordered later,
+    the COPY doesn’t break.
+
+context
+    The docker build command builds an image
+    from a Dockerfile and a context.
+    
+    The build’s context is the set of files at
+    a specified location PATH or URL.
+    
+    The PATH is a directory on your local
+    filesystem.
+    
+    The URL is a Git repository location.
+    
+    The build context is processed
+    recursively.
+    
+    So, a PATH includes any subdirectories and
+    the URL includes the repository and its
+    submodules.
+    
+    This example shows a build command that
+    uses the current directory (.) as build
+    context:
+
+        docker build .
+
+composure
+docker-compose.yml
+    v +/"- \[Docker Images\](#docker-images) Docker Images \/ Composures w\/ Solr." "$MYGIT/Anant/awesome-solr/README.md"
+
+    This is not an official docker term.
+
+executor
+    Part of a Worker Node.
+
+    https://i0.wp.com/www.docker.com/blog/wp-content/uploads/swarm-node-breakdown.png?w=975&ssl=1
+
+worker
+    [node]
+
+    Worker Nodes are responsible for running
+    Tasks using an Executor.
+    
+    SwarmKit comes with a default Docker
+    Container Executor that can be easily
+    swapped out.
+
+manager
+    [node]
+
+    Accept specifications from the user and
+    are responsible for reconciling the
+    desired state with the actual cluster
+    state.
+
+stack
+docker stack
+    [#docker]
+
+    A command that's embedded into the Docker
+    CLI.
+    
+    It lets you manage a cluster of Docker
+    containers through Docker Swarm.
+    
+    It just so happens both Docker Compose and
+    the docker stack command support the same
+    docker-compose.yml file with slightly
+    different features.
+
+STOPSIGNAL
+    The default signal sent to containers to
+    stop thems.
+
+docker stack
+    A command that's embedded into the Docker
+    CLI. It lets you manage a cluster of
+    Docker containers through Docker Swarm. It
+    just so happens both Docker Compose and
+    the docker stack command support the same
+    docker-compose. yml file with slightly
+    different features.
+
+volume
+    Independent storage -- stored on host
+    machine.
+
+Docker Machine
+    [VM]
+
+    A very small VM that runs an instance of
+    the Docker Engine.
+    
+    This means we can run Docker containers
+    inside it.
+    
+    It can be understood as a container of
+    containers.
+
+Docker host
+    Docker Host is the machine that Docker
+    Engine is installed.
+    
+    Docker host is the machine where you
+    installed the docker engine.
+    
+    The docker container can be compared with
+    a simple process running on that same
+    docker host.
+
+Docker engine
+    Supports the tasks and workflows involved
+    to build, ship and run container-based
+    applications.
+    
+    The engine creates a server-side daemon
+    process that hosts images, containers,
+    networks and storage volumes.
+
+    Has module called Swarm Mode.
+
+Docker Swarm
+    A group of either physical or VMs that are
+    running the Docker application and that
+    have been configured to join together in a
+    cluster.
+    
+    A container orchestration tool, meaning
+    that it allows the user to manage multiple
+    containers deployed across multiple host
+    machines.
+
+    A module of docker engine which offers
+    built-in support for connecting and
+    orchestrating many machines (physical or
+    virtual -- like Docker Machines)
+    containing the Docker Engine.
+    
+    This basically builds a network of nodes
+    that are directed by a manager -- a
+    central node.
+    
+    At this point, an instance of a service
+    could be replicated, and the manager would
+    spread the replicas over the nodes
+    efficiently.
+
+    Example:
+        You have 100 containers.
+
+        You need to do 
+        - Health check on every container
+        - Ensure all containers are up on
+          every system
+        - Scaling the containers up or down
+          depending on the load
+        - Adding updates/changes to all the
+          containers
+
+        Orchestration
+        - managing and controlling multiple
+          docker containers as a single
+          service
+
+        Tools available
+        - Docker Swarm,
+        - Kubernetes,
+        - Apache Mesos
+
+AUFS
+Advanced multi-layered unification filesystem
+    It's like the union fuse filesystem.
+
+CNCF
+Cloud Native Computing Foundation
+    [new feature]
+
+CNAB
+Cloud Native Application Bundle
+    [new feature]
+
+Docker Trusted Registry
+    The enterprise-grade image storage
+    solution from Docker.
+    
+    You install it behind your firewall so
+    that you can securely store and manage the
+    Docker images you use in your
+    applications.
+
+registries
+    Stores Docker images.
+
+docker client
+    - docker build
+    - docker pull
+    - docker run
+
+docker server
+    - docker daemon
+      - images
+        - containers
+
+$MYGIT/ufoscout/docker-compose-wait
+    A small command line utility to wait for
+    other docker images to be started while
+    using docker-compose.
+
+    It permits to wait for a fixed amount of
+    seconds and/or to wait until a TCP port is
+    open on a target image.
+
+docker-machine
+Docker Machine
+    A tool that lets you install Docker
+    Engine on virtual hosts, and manage the
+    hosts with docker-machine commands.
+    
+    You can use Machine to create Docker hosts
+    on your local Mac or Windows box, on your
+    company network, in your data center, or
+    on cloud providers like Azure, AWS, or
+    Digital Ocean.
+
+    Lets you create Docker hosts on your
+    computer, on cloud providers, and inside
+    your own data center.
+    
+    It creates servers, installs Docker on
+    them, then configures the Docker client to
+    talk to them.
+
+docker
+    The Docker option --net=host
+
+ADE
+    Creates a Docker container from a base
+    image and mounts additional read-only
+    volumes in /opt.
+    
+    The base image provides development tools
+    (e.g. vim, udpreplay, etc.), and the
+    volumes provide additional development
+    tools (e.g., IDEs, large third-party
+    libraries) or released software versions
+    (e.g. the latest AutowareAuto release).
+    
+    Furthermore, ADE enables easy switching
+    between versions of the images and
+    volumes.
+
+dind
+Docker-in-Docker
+    A Dockerfile and wrapper script to provide
+    Docker in Docker easily.
+
+    Allows Docker engine to run as a Container
+    inside Docker.
+    
+    This link is the official repository for
+    Dind.
+    
+    When there is a new Docker version
+    released, corresponding Dind version also
+    gets released.
+
+context
+build context
+    The set of files located in the specified
+    PATH or URL.
+    
+build process
+    May refer to ANY of the files in the
+    context.
+    
+    For example, your build can use a COPY
+    instruction to reference a file in the
+    context.
+
+Compose
+docker compose
+    [#docker]
+
+    A tool for defining and running multi-
+    container Docker applications.
+    
+    With Compose, you use a YAML file to
+    configure your application's services.
+    
+    Then, with a single command, you create
+    and start all the services from your
+    configuration.
+
+tag
+    The tag is a string which identifies a
+    variant of a docker image, usually a
+    version.
+
+    egr list tags for docker image
+
+Fully-qualified name
+FQN
+    The FQN is the term for the full URL-like
+    path that describes an image.
+    
+    Example
+        registry.gitlab.com/apexai/ade-atom:latest
+
+HEALTHCHECK
+    Two forms:
+    - HEALTHCHECK [OPTIONS] CMD command (check container health by running a command inside the container)
+    - HEALTHCHECK NONE (disable any healthcheck inherited from the base image)
+
+ADD
+    [keyword]
+
+    ewwlinks +/"ADD has two forms:" "https://docs.docker.com/engine/reference/builder/"
+
+Swarmkit
+    A separate project to docker and swarm
+    which implements Docker’s orchestration
+    layer and is used directly within Docker.
+
+    The cluster management and orchestration
+    features embedded in the Docker Engine are
+    built using swarmkit.
+    
+swarm manager
+    [docker host]
+
+    Manage membership and delegation
+
+swarm worker
+    [docker host]
+
+    Runs swarm services.
+
+docker host in swarm mode
+    Can be a manager, a worker, or perform
+    both roles.
+
+swarm
+swarm service
+service
+    This is NOT gitlab service.
+
+    Docker service:
+        Docker service will be the image for a
+        microservice within the context of
+        some larger application.  Examples of
+        services might include an HTTP server,
+        a database, or any other type of
+        executable program that you wish to
+        run in a distributed environment.
+
+    When you create a service, you specify
+    which container image to use and which
+    commands to execute inside running
+    containers. You also define options for
+    the service including:
+
+    - the port where the swarm will make the
+      service available outside the swarm
+    - an overlay network for the service to
+      connect to other services in the swarm
+    - CPU and memory limits and reservations
+    - a rolling update policy
+    - the number of replicas of the image to
+      run in the swarm
+
+    A swarm consists of multiple Docker hosts
+    which run in swarm mode and act as
+    managers and workers .
+    
+    When you create a swarm service, you
+    define its optimal state:
+    - number of replicas,
+    - network and storage resources available
+      to it,
+    - ports the service exposes to the outside
+      world,
+    - and more.
+    
+    Docker works to maintain that desired
+    state.
+    
+    For instance, if a worker node becomes
+    unavailable, Docker schedules that node’s
+    tasks on other nodes.
+    
+    A task is a running container which is
+    part of a swarm service and managed by a
+    swarm manager, as opposed to a standalone
+    container.
+    
+    One of the key advantages of swarm
+    services over standalone containers is
+    that you can modify a service’s
+    configuration, including the networks and
+    volumes it is connected to, without the
+    need to manually restart the service.
+    
+    Docker will update the configuration, stop
+    the service tasks with the out of date
+    configuration, and create new ones
+    matching the desired configuration.
+    
+    When Docker is running in swarm mode, you
+    can still run standalone containers on any
+    of the Docker hosts participating in the
+    swarm, as well as swarm services.
+    
+    A key difference between standalone
+    containers and swarm services:
+    - only swarm managers can manage a swarm,
+      while standalone containers can be
+      started on any daemon.
+    
+    Docker daemons can participate in a swarm
+    as managers, workers, or both.
+    
+    In the same way that you can use Docker
+    Compose to define and run containers, you
+    can define and run Swarm service stacks.
+    
+    Keep reading for details about concepts
+    relating to Docker swarm services,
+    including nodes, services, tasks, and load
+    balancing.
+
+Nodes
+    [docker swarm]
+
+    A node is an instance of the Docker engine
+    participating in the swarm.
+    
+    You can also think of this as a Docker
+    node.
+    
+    You can run one or more nodes on a single
+    physical computer or cloud server, but
+    production swarm deployments typically
+    include Docker nodes distributed across
+    multiple physical and cloud machines.
+    
+    To deploy your application to a swarm, you
+    submit a service definition to a manager
+    node.
+    
+    The manager node dispatches units of work
+    called tasks to worker nodes.
+    
+    Manager nodes also perform the
+    orchestration and cluster management
+    functions required to maintain the desired
+    state of the swarm.
+    
+    Manager nodes elect a single leader to
+    conduct orchestration tasks.
+    
+    Worker nodes receive and execute tasks
+    dispatched from manager nodes.
+    
+    By default manager nodes also run services
+    as worker nodes, but you can configure
+    them to run manager tasks exclusively and
+    be manager-only nodes.
+    
+    An agent runs on each worker node and
+    reports on the tasks assigned to it.
+    
+    The worker node notifies the manager node
+    of the current state of its assigned tasks
+    so that the manager can maintain the
+    desired state of each worker.
+
+Services and tasks
+    [docker swarm]
+
+    A service is the definition of the tasks
+    to execute on the manager or worker nodes.
+    
+    It is the central structure of the swarm
+    system and the primary root of user
+    interaction with the swarm.
+    
+    When you create a service, you specify
+    which container image to use and which
+    commands to execute inside running
+    containers.
+    
+    In the replicated services model, the
+    swarm manager distributes a specific
+    number of replica tasks among the nodes
+    based upon the scale you set in the
+    desired state.
+    
+    For global services, the swarm runs one
+    task for the service on every available
+    node in the cluster.
+    
+    A task carries a Docker container and the
+    commands to run inside the container.
+    
+    It is the atomic scheduling unit of swarm.
+    
+    Manager nodes assign tasks to worker nodes
+    according to the number of replicas set in
+    the service scale.
+    
+    Once a task is assigned to a node, it
+    cannot move to another node.
+    
+    It can only run on the assigned node or
+    fail.
+
+Load balancing
+    [docker swarm]
+
+    The swarm manager uses ingress load
+    balancing to expose the services you want
+    to make available externally to the swarm.
+    
+    The swarm manager can automatically assign
+    the service a PublishedPort or you can
+    configure a PublishedPort for the service.
+    
+    You can specify any unused port.
+    
+    If you do not specify a port, the swarm
+    manager assigns the service a port in the
+    30000-32767 range.
+    
+    External components, such as cloud load
+    balancers, can access the service on the
+    PublishedPort of any node in the cluster
+    whether or not the node is currently
+    running the task for the service.
+    
+    All nodes in the swarm route ingress
+    connections to a running task instance.
+    
+    Swarm mode has an internal DNS component
+    that automatically assigns each service in
+    the swarm a DNS entry.
+    
+    The swarm manager uses internal load
+    balancing to distribute requests among
+    services within the cluster based upon the
+    DNS name of the service.

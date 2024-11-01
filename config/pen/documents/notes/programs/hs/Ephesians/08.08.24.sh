@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Ephesians" "1:18-20" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "1:17-20" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "1:16-20" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "1:16-21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "1:16-21" "#" "<==" "zsh"

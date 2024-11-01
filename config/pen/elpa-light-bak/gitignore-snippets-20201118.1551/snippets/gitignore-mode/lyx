@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: LyX
+# contributor: Toptal & contributors
+# key: lyx
+# --
+
+### LyX ###
+
+# Ignore LyX backup and autosave files
+# http://www.lyx.org/
+*.lyx~
+*.lyx#

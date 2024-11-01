@@ -1,0 +1,23 @@
+
+  (let ((i (- char 1)))
+    (if (and (>= i 0) (< i 26))
+        (string (+ ?a i))
+      (error "ascii-letter-from-int: invalid character"))))
+
+(defun pen-modeline-buffer-name ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "")
+          ((s-matches? "pen-" dn)
+           (s-replace-regexp "pen-" "" dn))
+          (t
+           dn))))
+
+(defun pen-modeline ()
+  "Modeline for Pen Emacs."
+
+  ;; TODO: make this work for any buffer name, not just the current one.
+
+  (let* ((dn (pen-daemon-name))
+
+         ;; TODO

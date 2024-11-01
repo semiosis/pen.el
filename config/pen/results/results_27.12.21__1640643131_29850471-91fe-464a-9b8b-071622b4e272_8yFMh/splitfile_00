@@ -1,0 +1,20 @@
+CNC-MACHINE-CLI(1)                     User Commands                    CNC-MACHINE-CLI(1)
+
+NAME
+       cnc-machine-cli - Control CNC-Machine via CLI
+
+SYNOPSIS
+       cnc-machine-cli [OPTION]...
+
+DESCRIPTION
+       Control CNC-Machine via CLI
+
+OPTIONS
+       --help
+              Display help
+
+       --version
+              Display version information
+
+AUTHOR
+       Written by Jonas Møller (jonas

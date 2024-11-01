@@ -1,0 +1,91 @@
+Semantic Web stack
+    - RDF(S)
+    - OWL
+
+    Allow for a fluent representation of
+    various types of data and content: data
+    schema, taxonomies and vocabularies, all
+    sorts of metadata, reference and master
+    data.
+
+semantic web tower
+    https://www.w3.org/RDF/Metalog/docs/sw-easy
+
+              ------------------------------------
+              | Trust                            |
+            -------------------------------------|
+            |   Proof                |           |
+          ----------------------------           |
+          |     Logic                | Digital   |
+        ------------------------------ Signature |
+        |       Ontology vocabulary  |           |
+      --------------------------------           |
+      |         RDF + rdfschema      |           |
+    ----------------------------------------------
+    |           XML + NS + xmlschema             |
+    ----------------------------------------------
+    |           Unicode | URI                    |
+    ----------------------------------------------
+
+SPARQL
+    [RDF query language]
+
+    A semantic query language for
+    databases, able to retrieve and manipulate
+    data stored in Resource Description
+    Framework format.
+
+Turtle
+Terse RDF Triple Language
+    [File format]
+
+    A syntax and file format for expressing
+    data in the Resource Description Framework
+    data model.
+
+    Turtle syntax is similar to that of
+    SPARQL, an RDF query language.
+
+    It is a common data format for storing RDF
+    data, along with N-Triples, JSON-LD and
+    RDF/XML.
+
+OWL
+Web Ontology Language
+    A family of knowledge representation
+    languages for authoring ontologies.
+
+    https://www.w3.org/OWL/
+    e:$HOME/source/git/asanchez75/opencyc
+
+RDF
+    https://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624/#section-use-cases
+
+vocabulary
+vocabularies
+ontology
+ontologies
+    Define the concepts and relationships
+    (also referred to as “terms”) used to
+    describe and represent an area of concern.
+    
+    Used to classify the terms that can be
+    used in a particular application,
+    characterize possible relationships, and
+    define possible constraints on using those
+    terms.
+    
+    The basic building blocks
+    for inference techniques on the Semantic
+    Web.
+
+    In practice, can be very complex (with
+    several thousands of terms) or very simple
+    (describing one or two concepts only).
+    
+    Use "ontology" for more complex, and
+    possibly quite formal collection of terms.
+
+    Use "vocabulary" when such strict
+    formalism is not necessarily used or only
+    in a very loose sense.

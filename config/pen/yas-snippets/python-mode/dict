@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: dict
+# key: dict
+# --
+def describe(obj):
+    switchDict = {"module": describe_module, "type": describe_klass, "function": describe_func, "builtin_function_or_method": describe_builtin}
+    switchDict[type(obj).__name__](obj)

@@ -1,0 +1,4 @@
+
+nnoremap <silent> [Z :call GetLast20LinesBeforeCursor()<CR>
+" search linewise, then insert above and below the results
+nnoremap g/A/<C-R

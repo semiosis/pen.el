@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: aqf
+# group: q
+# key: aqf
+# --
+aqf () { aqf-real "$@"; }

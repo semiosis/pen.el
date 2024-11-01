@@ -1,0 +1,16 @@
+enna, where they saw the mosaic of the apse of San Vitale
+and the Mausoleum of Galla Placidia.99 They then visited the
+Roman therme at Caracalla's villa in Tivoli.100 In Ravenna,
+Jung wrote a letter to his mother describing his impression
+of the city:
+
+I have never seen Ravenna so lovely as it is today. The whole
+town is full of antique beauty and I am quite overwhelmed by it.
+The Mausoleum of Galla Placidia and the Mausoleum of Constantia are
+two of the most beautiful monuments I have ever seen. The mosaics are
+so beautiful that one can live and die in them without getting bored.
+The beauty of these works is so great that one can see them a hundred
+times without becoming blase.101
+EOD
+
+  cat draft.text | tr 'A-Z' 'a

@@ -1,0 +1,4 @@
+The above code is taken from the sigwinch_passthrough function in the tty crate.
+The sigwinch_passthrough function is a function that takes in a master file descriptor and an optional stderr master file descriptor.
+The function spawns a thread that listens for SIGWINCH signals. When a SIGWINCH signal is received, the function gets the current window size and sets it on the master file descriptor.
+The function also gets the process group id of the terminal and

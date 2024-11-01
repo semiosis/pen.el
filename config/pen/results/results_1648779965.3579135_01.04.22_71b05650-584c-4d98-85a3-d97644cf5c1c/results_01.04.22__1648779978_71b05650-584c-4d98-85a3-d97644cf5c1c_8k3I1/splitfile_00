@@ -1,0 +1,31 @@
+VIM(1)                     User Commands                    VIM(1)
+
+NAME
+       vim - Vi IMproved, a programmers text editor
+
+SYNOPSIS
+       vim [option] [file ...]
+
+DESCRIPTION
+       Vim is a very powerful text editor. It is an improved version of the vi editor distributed with most UNIX systems.  Vim can
+       be used to edit both plain text and programs.
+
+       If no file name is given, vim enters the ex command mode and you can do most things from there.  If one or more file names
+       are given, vim starts editing the files, if one of them doesn't exist, a new file is created.
+
+       The following options can be used:
+
+       -A     Like -M, but only considers text newer than the timestamp of the auto-save file.
+
+       -a     Open files in append mode.
+
+       -b     Specify file name to be used as buffer.
+
+       -c     Specify how to close the window.  Valid values are:
+              "nosave" with '!'  : Don't write the file at all.
+              "hide"   with '#'  : Hide the window, but don't delete it.
+              "exit"   with 'x'  : Don't save anything.  Only works with one file.
+              "kill"   with 'k'  : Kill the buffer.
+              "wipe"   with 'w'  : Wipe the buffer (remove text).
+              "delete" with 'd'  : Delete the buffer.
+              "unload" with 'u'  : Unload the buffer (remove text

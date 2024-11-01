@@ -1,0 +1,1 @@
+- Haskell guru: {-# OPTIONS_GHC -Wno-deferred-type-errors #-} {-# LANGUAGE OverloadedStrings #-}

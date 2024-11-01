@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: identity
+# key: identity
+# --
+import Data.Functor.Identity
+Identity 5

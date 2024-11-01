@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: remove deprecated args
+# group: getopt
+# key: deprecated
+# --
+remove_deprecated_args() {
+sed 's/ -e / -- /'
+}
+
+if ! test "\\\$(hostname)" = "morgan"; then
+eval "set -- \\\$(cmd "\\\$@" | remove_deprecated_args)"
+fi

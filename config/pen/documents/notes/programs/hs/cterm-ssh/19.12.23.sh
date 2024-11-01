@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "acpi" "-b" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "nmtui" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "i" "gw" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "alsamixer" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "which" "chrome" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "chrome" "https://www.youtube.com/watch?v=MtH0vvSbqcI" "#" "<==" "pen-ssh-host"

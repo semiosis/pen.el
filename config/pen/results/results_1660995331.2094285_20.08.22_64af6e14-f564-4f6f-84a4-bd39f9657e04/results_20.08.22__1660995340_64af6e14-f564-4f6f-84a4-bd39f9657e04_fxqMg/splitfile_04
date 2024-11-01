@@ -1,0 +1,21 @@
+
+  (let ((n (- char ?a)))
+    (if (< n 0)
+        (error "invalid char: %s" char)
+      (char-to-string (+ ?a n)))))
+
+(defun pen-modeline-name-ascii ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (let* ((n (string-to-number dn))
+                  (l (- n 1)))
+             (if (< l 0)
+                 "emacs"
+               (ascii-letter-from-int l)))))))
+
+
+;;; mode line setup for emacs daemon mode.  This is the default mode line.
+
+ ;; emacs daemon mode:  the default

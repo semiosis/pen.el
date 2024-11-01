@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://www.youtube.com/watch?v=H8whTwDoiNA&ab_channel=DesiringGod" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=H8whTwDoiNA" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://www.youtube.com/watch?v=BQDRdC0h1mM" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://www.youtube.com/watch?v=BQDRdC0h1mM&ab_channel=DesiringGod" "#" "<==" "o"

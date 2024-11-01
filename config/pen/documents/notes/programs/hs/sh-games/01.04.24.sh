@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "sh-games" "#" "<==" "sh-apps"
+cd /root/.pen/documents/notes;  "sh-games" "#" "<==" "sh-apps"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "sh-games" "#" "<==" "sh-apps"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "sh-games" "#" "<==" "sh-apps"
+cd /;  "sh-games" "#" "<==" "sh-apps"
+cd /;  "sh-games" "#" "<==" "sh-apps"

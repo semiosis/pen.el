@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: getopt
+# group: 
+# key: getopt
+# --
+OPTS="\$(getopt -o H:f: -- "\$@")"
+
+if [ \$? != 0 ] ; then echo "Failed parsing options." >&2 ; exit 1 ; fi
+
+eval set -- "\$OPTS"
+
+while true; do
+  case "\$1" in
+    -H ) hf="\$2"; shift 2 ;;
+    -f ) cf="\$2"; shift 2 ;;
+    -- ) shift; break ;;
+    * ) break ;;
+  esac
+done

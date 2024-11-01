@@ -1,0 +1,1 @@
+3/2:71/2:71">from another page</a>, I needed to write a function that would take a file path and parse out the filename (without extension) and append an extension based on an input set of extensions.

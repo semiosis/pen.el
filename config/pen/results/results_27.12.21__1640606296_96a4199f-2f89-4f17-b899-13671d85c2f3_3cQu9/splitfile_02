@@ -1,0 +1,12 @@
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
+
+                             Amazon EC2
+                             Instance Metadata
+
+   Amazon EC2 provides metadata about your EC2 instances and resources.
+   You can use the metadata to configure applications and to monitor your
+   resources. The metadata is available as both an HTTP GET operation and
+   a set of DNS records.
+   Amazon EC2 metadata is available from these locations:
+   Amazon EC2 metadata is available from these locations:
+   Amazon EC2 metadata is available from these locations

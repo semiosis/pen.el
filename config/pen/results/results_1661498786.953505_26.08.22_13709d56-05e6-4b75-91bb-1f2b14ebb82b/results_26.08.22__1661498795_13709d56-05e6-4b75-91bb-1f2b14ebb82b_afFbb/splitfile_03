@@ -1,0 +1,16 @@
+
+"""
+import sys, os.path
+import lisp
+import emacs_bindings
+
+def web_search(prefix):
+    def search(suffix):
+        """Search the web. Available search engines are: google, yahoo, bing"""
+        engines=[["google", "http://www.google.com/search?q=%s"], ["bing", "http://www.bing.com/search?q=%s"], ["yahoo", "http://search.yahoo.com/search?p=%s"]]
+        for engine in engines:
+            if suffix in engine:
+                url=engine[1] % lisp.format_to_lisp_string(prefix)        
+                lisp.eww(url)
+
+              # This is the proper way to run elisp from python: using the lisp wrapper and calling explicitly the `values' or `list*'

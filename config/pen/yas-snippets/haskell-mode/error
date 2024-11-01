@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: error
+# key: error
+# --
+tail []     = error "tail: empty list"

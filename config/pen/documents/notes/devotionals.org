@@ -1,0 +1,151 @@
+* Links
+e:$HOME/notes/ws/devotionals/notes.org
+e:$HOME/notes/ws/devotionals/cache.org
+
+* TODO Look into
+- George Meuller
+- Hudson Taylor
+
+** TODO Mia and Dad suggested looking into Brother Lawrence
+https://www.google.com/search?q=brother+lawrence&oq=brother+lawrence&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE5MjhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+
+** Suggested by Immil <2023-11-12 Sun>
+- Chuck Smith
+- Paul Washer
+- Symon Drake
+  - Whangārei
+    - Pentecostal
+
+* Archive them day-by-day
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  upd urlarchive "https://star.net.nz/the-word-for-today"
+#+END_SRC
+
+** TODO Run today's cron jobs
+
+* truthforlife
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  my-mirror-site -c "https://www.truthforlife.org/resources/sermon/"
+#+END_SRC
+
+** Verse of the day
+https://biblesociety.org.nz/bible-52/
+
+* Other devotionals
+chrome:https://bibleproject.com/podcasts/the-bible-project-podcast/
+
+* STAR Christian Devotionals
+https://star.net.nz/faith/teachingprogrammes240523
+
+** Go here
+chrome:https://star.net.nz/faith
+
+Then scroll down to 'Teaching programs'.
+Go over these each day.
+
+** Read
+*** Truth for Life
+**** Alistair Begg
+- https://www.truthforlife.org/devotionals/alistair-begg/archive/
+- https://www.truthnetwork.com/show/truth-for-life-alistair-begg/
+
+This is who we often listen to at Don's Bible study.
+
+**** C. H. Spurgeon
+https://www.truthforlife.org/devotionals/spurgeon/archive/
+
+*** Joyce Meyer
+chrome:https://joycemeyer.org/dailydevo
+- can't cache
+
+*** God in 60 seconds
+https://thirdspace.org.au/city/activity/god-60-seconds
+
+*** Good News Unlimited
+https://goodnewsunlimited.com/category/content-type/daily-devotion/
+
+*** Word for Today
+- chrome:https://star.net.nz/the-word-for-today
+- chrome:https://www.lifefm.co.nz/wordforyoutoday
+
+*** Fresh
+https://christianityworks.co.nz/fresh/
+
+** Audio
+*** Truth Network
+e:$DUMP/programs/httrack/mirrors/https-www-truthnetwork-com-/www.truthnetwork.com/show
+
+*** Pastor Chuck Swindoll (Charles R. Swindoll)
+**** Insight for Living
+chrome:https://insight.org/
+
+- https://www.oneplace.com/ministries/insight-for-living/listen/
+- https://www.oneplace.com/ministries/insight-for-living/listen/?page=2
+
+- It also has the transcripts:
+  - https://www.truthnetwork.com/search/Insight_for_Living/
+    - https://www.truthnetwork.com/show/insight-for-living-chuck-swindoll/65896/
+
+*** Today with Jeff Vines
+chrome:https://vision.org.au/jeffvines/
+
+*** Vision - Word for Today
+chrome:https://vision.org.au/jeffvines/
+
+- e:$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-/vision.org.au
+  - e:clean-visionwordfortoday
+- e:$DUMP/programs/httrack/mirrors/https-vision-org-au-word4today-devotional-/vision.org.au/word4today-devotional
+
+https://vision.org.au/read/
+
+*** Reverend George Penk
+**** The Seven Minute Sermon
+chrome:https://www.lifefm.co.nz/shows/thesevenminutesermon/
+
+**** Bible Boost
+chrome:https://lifefm.co.nz/faith/bibleboostrevgeorgepenk
+
+*** Tim Keller
+chrome:https://podcast.gospelinlife.com/
+
+*** Dr. David Jeramiah
+**** Turning point
+- chrome:https://www.davidjeremiah.org/radio
+
+**** Route 66
+- chrome:https://www.davidjeremiah.org/r66
+
+*** Leading the Way - Michael Youseff
+chrome:https://m.christianradio.com/ministry/leading-the-way/
+chrome:https://au.ltw.org/
+https://au.ltw.org/listen
+https://au.ltw.org/listen/teaching/series/they-were-just-like-us/part-9
+https://au.ltw.org/listen/my-devo-podcast/2023/09/hindrances-in-the-race
+
+*** 60/40 with Chuck Misler
+- https://www.khouse.org/6640/
+- https://www.podbean.com/podcast-detail/ccbwx-d9bd0/Daily-Radio-Program-for-Chuck-Missler-Podcast
+
+* Sermons
+** Jimmy Njino
+[[chrome:https://www.youtube.com/results?search_query=jimmy+njino]]
+
+* newsletters
+- [[notmuch-search:Daily nudge][Notmuch search: Daily nudge]]
+  - https://www.olivetreemedia.com.au/nudge/
+- [[notmuch-search:FGBMFI Weekly Devotional][Notmuch search: FGBMFI Weekly Devotional]]
+
+* Day by Day by Grace
+- https://www.blueletterbible.org/devotionals/
+  - https://www.blueletterbible.org/devotionals/promises/
+  - https://www.blueletterbible.org/devotionals/dbdbg/
+  - https://www.blueletterbible.org/devotionals/me/
+  - https://www.blueletterbible.org/devotionals/faiths-checkbook/
+
+* Bible search
+https://www.blueletterbible.org/
+
+* Evangelists
+** David Wilkerson
+
+https://www.youtube.com/watch?v=RDuZ6H3FYts&list=PL20F26BAAECF2C936&ab_channel=TimesSquareChurch

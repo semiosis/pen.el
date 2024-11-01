@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: exit 0
+# key: e0
+# --
+(exit 0)

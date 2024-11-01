@@ -1,0 +1,34 @@
+pruning
+    [model optimization technique]
+
+    Remove model parameters that have little
+    or no impact on the predicted outcome.
+
+fusion
+    [model optimization technique]
+
+    Merge model layers (say, convolution and
+    activation).
+
+quantization
+    [model optimization technique]
+
+    Storing model parameters in smaller values
+    (say, 8 bits instead of 32 bits).
+
+whitespace
+    This is why GPT-3 cares so much if you end
+    your prompt with a space.
+    
+    When generating most common words, GPT-3
+    generates the leading space as part of the
+    word.
+    
+    So when there is a space without a word,
+    that is a completely different token.
+    
+    This typically only occurs in odd
+    contexts, leading GPT-3 to generate poor
+    quality completions.
+
+    https://aidungeon.medium.com/controlling-gpt-3-with-logit-bias-55866d593292

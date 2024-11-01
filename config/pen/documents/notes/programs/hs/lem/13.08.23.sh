@@ -1,0 +1,1 @@
+cd /root/.pen/documents/devotionals/the-word-for-today-reading/help-for-your-marriage;  "lem" "/root/.pen/documents/devotionals/the-word-for-today-reading/help-for-your-marriage/clean.txt" "#" "<==" "zsh"

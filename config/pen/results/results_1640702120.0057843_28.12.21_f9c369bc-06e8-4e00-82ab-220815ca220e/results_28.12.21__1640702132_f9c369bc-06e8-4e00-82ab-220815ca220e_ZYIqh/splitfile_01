@@ -1,0 +1,13 @@
+- 1. Annenberg
+- 2. Brazzaville
+- 3. Dennehy
+- 4. Igoa
+- 5. Rabinowitz
+"""  # noqa: W291
+        self._test_summary(model, filename, expected_summary)
+
+        # tests the cli interface with a malformed input file:
+        self._test_cli_error(['sumy', 'lex_rank', '--length=10', '--url', 'file://example.txt'])
+
+    def test_variants(self):
+        string = """A task is a question with an intended answer.[2] Tasks are related to mental and/or behavioral models.[3] The

@@ -1,0 +1,2 @@
+ for example, import qualified Data.ByteString.Lazy as LS
+- you: That is correct. As I understand it, lazy bytestrings are a monad which can be converted to a lazy list. Also I read that it can

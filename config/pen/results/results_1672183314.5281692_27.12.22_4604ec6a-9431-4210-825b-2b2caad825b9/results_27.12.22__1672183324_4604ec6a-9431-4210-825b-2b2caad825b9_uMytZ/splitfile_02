@@ -1,0 +1,8 @@
+The above code is from the pty crate, which is a crate that provides a wrapper around the pty functions.  It's a
+pretty straightforward wrapper, so I'm not going to explain it in depth.
+
+The gist of it is that it creates a thread that listens for SIGWINCH, which is the signal that the terminal window
+size has changed.  It then sends the signal to the process group of the master process, so that it will also be
+changed.
+
+The

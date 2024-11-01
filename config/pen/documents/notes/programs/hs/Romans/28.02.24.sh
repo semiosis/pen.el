@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Romans" "12:21" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "8:31" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "4" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Romans" "4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Romans" "4:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Romans" "4:12" "#" "<==" "bash"

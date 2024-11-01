@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: advise-to-yes
+# group: 
+# key: ady
+# --
+(advice-add 'kill-buffer :around #'advise-to-yes)

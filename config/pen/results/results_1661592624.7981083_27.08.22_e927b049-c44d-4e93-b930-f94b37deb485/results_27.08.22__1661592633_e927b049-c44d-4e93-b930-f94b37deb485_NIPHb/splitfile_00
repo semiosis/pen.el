@@ -1,0 +1,26 @@
+ a list of JSON objects, one for each record.
+  jsons <- map (asJSON . fmap (\m -> m {-caret-})) maps
+
+  -- Convert the list of JSON objects into a single JSON array.
+  json <- asJSON [{-caret-}] jsons
+
+  -- Print the result to stdout.
+  print json
+EOD
+
+# ruby files
+
+cat draft.rb <<EOD
+require 'json'
+require 'csv'
+require 'pp'
+require 'byebug'
+require 'pry'
+
+
+def parse_csv(file)
+
+  # Read the CSV from stdin and decode it into a list of lines.
+  # We use the Lazy version of ByteString to avoid reading the whole file into memory.
+
+  lines = CSV.parse(File.read(file, :encoding => "BINARY"), :headers

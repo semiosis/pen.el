@@ -1,0 +1,96 @@
+Autonomous Electric Vehicle
+AEV
+
+ADAS
+Advanced driver assistance systems
+    ADAS are becoming increasingly available
+    across all car lines to improve safety,
+    comfort and fuel savings through engine
+    efficiency.
+    
+    The latest generation of ADAS leverages
+    data from the navigation map to anticipate
+    the road ahead, allowing ADAS to make
+    decisions like humans do.
+
+TomTom ADAS
+    https://www.tomtom.com/products/adas-map/
+
+    The TomTom ADAS Map content provides
+    highly accurate information, including:
+    gradient, curvature and speed limits – all
+    backed by our connected global coverage.
+    
+    Like a human driver, this content allows
+    ADAS to accurately anticipate changes on
+    the road ahead.
+    
+    Features and Benefits Automated driving
+    technology that sees beyond the road ahead
+    
+    The TomTom ADAS Map improves drivers’
+    safety and comfort, optimizing powertrain
+    efficiency by providing highly accurate
+    content of the road ahead for driver
+    assistance systems.
+QNX
+    A commercial Unix-like real-time operating
+    system, aimed primarily at the embedded
+    systems market.
+    
+    QNX was one of the first commercially
+    successful microkernel operating systems
+    and is currently used in a variety of
+    devices including cars and mobile phones.
+
+Drive by wire
+drive-by-wire
+DbW
+by-wire
+Steer-by-wire
+Fly-by-wire
+x-by-wire
+    A semi-automatic and typically
+    computer-regulated system for controlling
+    the engine, handling, suspension, and
+    other functions of a motor vehicle.
+
+    The use of electrical or
+    electro-mechanical systems for performing
+    vehicle functions traditionally achieved
+    by mechanical linkages.
+
+SocketCAN
+Low Level CAN Framework
+LLCF
+    A set of open source CAN drivers and a
+    networking stack contributed by Volkswagen
+    Research to the Linux kernel.
+
+    $MYGIT/fortescue-autonomy/alv/socketcan_driver/CMakeLists.txt
+    $MYGIT/fortescue-autonomy/drivers/socketcan-driver
+
+pacmod driver
+    If a rosnode sends a message it turns it
+    into a CAN message.
+
+delta pose
+    cd "$HOME/OneDrive/General/Engineering/Papers/Autoware"; zathura -- $HOME/OneDrive/General/Engineering/Papers/Autoware/Kato2018autowareembedded.pdf
+
+semantics map
+    cd "$HOME/OneDrive/General/Engineering/Papers/Autoware"; zathura -- $HOME/OneDrive/General/Engineering/Papers/Autoware/Kato2018autowareembedded.pdf
+
+    No hits:
+        gli -F "autoware" -i "semantic"
+
+    No hits:
+        gli -F "Autoware" -i "semantic"
+
+potential map
+
+Autoware
+    cd "$HOME/OneDrive/General/Engineering/Papers/Autoware"; zathura -- $HOME/OneDrive/General/Engineering/Papers/Autoware/Kato2018autowareembedded.pdf
+
+    Has:
+    - semantics map
+    - potential map

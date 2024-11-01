@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: 1C
+# contributor: Toptal & contributors
+# key: 1c
+# --
+
+### 1C ###
+
+# 1C external data processors on unmanaged formes
+
+**/Form/**/form
+src/**/und/*
+src/**/maps.txt
+src/**/renames.txt

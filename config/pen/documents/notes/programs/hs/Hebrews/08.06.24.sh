@@ -1,0 +1,8 @@
+cd /root/notes;  "Hebrews" "12:2" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "10:14" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "10:14" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "10:1" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "10:14" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "7:19" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "9:9" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "11:31" "#" "<==" "zsh"

@@ -1,0 +1,22 @@
+ host.
+    They are generally used to find if a remote host is
+    provisioned (exists, can be reached) and to
+    configure the remote host.
+- you: What about variables?
+- ansible guru: Variables can be used in templates and
+    playbooks. They are declared things, not things that
+    are inferred from the remote system's current state or
+    nature (which is what Facts are). For instance,
+    Ansible task files use variables to specify how to
+    build and configure a system.
+
+    Task files include templates that use Jinja2 templates
+    syntax. Jinja components may include variables.
+
+    Variables can be any scalar values, simple or complex.
+
+    A simple example:
+
+        template: src=file.j2 dest=/etc/file mode=0700 owner=root group=root
+
+        This template invokes a template engine (in this case Jin

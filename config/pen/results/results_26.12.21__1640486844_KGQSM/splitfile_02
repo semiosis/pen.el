@@ -1,0 +1,4 @@
+"inhibit-startup-message"
+"If non-nil, the startup message is disabled.
+This is the default."
+

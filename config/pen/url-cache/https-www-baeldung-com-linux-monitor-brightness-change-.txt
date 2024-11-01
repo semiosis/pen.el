@@ -1,0 +1,1155 @@
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 10:04:58 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 85230d325dbb1c50-AKL
+CF-Cache-Status: HIT
+Age: 168
+Cache-Control: public, max-age=14400
+Last-Modified: Tue, 06 Feb 2024 22:05:50 GMT
+Strict-Transport-Security: max-age=15552000; preload
+Vary: Accept-Encoding, Accept-Encoding
+cf-apo-via: tcache
+cf-edge-cache: cache,platform=wordpress
+pragma: public
+referrer-policy: no-referrer-when-downgrade
+x-powered-by: W3 Total Cache/2.6.1
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<!doctype html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://www.baeldung.com/new-relic.js"></script>
+<style id="ao_optimized_gfonts" media="print" onload="this.onload=null;this.media='all';">@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEorCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DJKQtMlrSQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrSQ.ttf) format('truetype');
+}
+</style><link rel="apple-touch-icon" sizes="57x57" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/apple-touch-icon-120x120.png">
+<link rel="icon" type="image/png" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/manifest.json">
+<link rel="mask-icon" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/safari-pinned-tab.svg" color="#63b175">
+<link rel="shortcut icon" href="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/mstile-144x144.png">
+<meta name="msapplication-config" content="https://www.baeldung.com/wp-content/themes/baeldung/favicon/linux/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link media="all" href="https://www.baeldung.com/linux/wp-content/cache/autoptimize/2/css/autoptimize_7ed0b51ace05c6d3bfea19d3a4929aac.css" rel="stylesheet"><title>Changing Monitor Brightness on Linux | Baeldung on Linux</title>
+
+<meta name="description" content="Learn how to change the brightness of the monitor." />
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.baeldung.com/linux/monitor-brightness-change" />
+<meta name="generator" content="All in One SEO (AIOSEO) 4.5.3.1" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Baeldung on Linux" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Changing Monitor Brightness on Linux | Baeldung on Linux" />
+<meta property="og:description" content="Learn how to change the brightness of the monitor." />
+<meta property="og:url" content="https://www.baeldung.com/linux/monitor-brightness-change" />
+<meta property="og:image" content="https://www.baeldung.com/wp-content/uploads/sites/2/2019/11/Featured-Linux-2-k.jpg" />
+<meta property="og:image:secure_url" content="https://www.baeldung.com/wp-content/uploads/sites/2/2019/11/Featured-Linux-2-k.jpg" />
+<meta property="og:image:width" content="952" />
+<meta property="og:image:height" content="498" />
+<meta property="article:published_time" content="2023-07-09T01:29:05+00:00" />
+<meta property="article:modified_time" content="2023-08-31T12:58:10+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Changing Monitor Brightness on Linux | Baeldung on Linux" />
+<meta name="twitter:description" content="Learn how to change the brightness of the monitor." />
+<meta name="twitter:creator" content="@baeldung" />
+<meta name="twitter:image" content="https://www.baeldung.com/wp-content/uploads/sites/2/2019/11/Featured-Linux-2-k.jpg" />
+<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.baeldung.com\/linux\/#listItem","position":1,"name":"Home"}]},{"@type":"Organization","@id":"https:\/\/www.baeldung.com\/linux\/#organization","name":"Baeldung on Linux","url":"https:\/\/www.baeldung.com\/","publishingPrinciples":"https:\/\/www.baeldung.com\/about","logo":{"@type":"ImageObject","height":700,"width":700,"url":"https:\/\/www.baeldung.com\/linux\/wp-content\/themes\/baeldung\/icon\/baeldung-logo.jpg"},"sameAs":["https:\/\/twitter.com\/baeldung","https:\/\/www.facebook.com\/baeldung","https:\/\/www.linkedin.com\/company\/baeldung","https:\/\/www.instagram.com\/baeldung","https:\/\/www.youtube.com\/@BaeldungTutorials","https:\/\/www.pinterest.com\/baeldung\/"]},{"@type":"TechArticle","name":"Changing Monitor Brightness on Linux | Baeldung on Linux","headline":"Changing Monitor Brightness on Linux","author":{"@id":"https:\/\/www.baeldung.com\/linux\/#organization"},"publisher":{"@id":"https:\/\/www.baeldung.com\/linux\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/www.baeldung.com\/wp-content\/uploads\/sites\/2\/2019\/11\/Featured-Linux-2-k.jpg","width":952,"height":498},"datePublished":"2023-07-09T01:29:05+00:00","dateModified":"2023-08-31T12:58:10+00:00","inLanguage":"en-US","mainEntityOfPage":{"@id":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change#webpage"},"isPartOf":{"@id":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change#webpage"},"articleSection":"Administration, Hardware, screen","citation":["https:\/\/www.baeldung.com\/linux\/find-device-driver","https:\/\/www.baeldung.com\/linux\/check-monitor-active-gpu","https:\/\/www.baeldung.com\/linux\/x11","https:\/\/www.baeldung.com\/linux\/cli-hardware-info","https:\/\/www.baeldung.com\/linux\/adjust-screen-resolution","https:\/\/www.baeldung.com\/linux\/secure-shell-ssh","https:\/\/www.baeldung.com\/linux\/apt-vs-apt-get#the-apt-get-utility","https:\/\/packages.ubuntu.com\/source\/focal\/x11-xserver-utils","https:\/\/www.baeldung.com\/cs\/convert-rgb-to-grayscale#1-rgb","https:\/\/linux.die.net\/man\/1\/xgamma","https:\/\/github.com\/Hummer12007\/brightnessctl","https:\/\/github.com\/LordAmit\/Brightness","https:\/\/www.baeldung.com\/linux\/unmet-dependencies-apt-get#removing-ppas"]},{"@type":"WebPage","@id":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change#webpage","url":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change","name":"Changing Monitor Brightness on Linux | Baeldung on Linux","description":"Learn how to change the brightness of the monitor.","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.baeldung.com\/linux\/#website"},"breadcrumb":{"@id":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change#breadcrumblist"},"author":{"@id":"https:\/\/www.baeldung.com\/linux\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/www.baeldung.com\/wp-content\/uploads\/sites\/2\/2019\/11\/Featured-Linux-2-k.jpg","@id":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change\/#mainImage","width":952,"height":498},"primaryImageOfPage":{"@id":"https:\/\/www.baeldung.com\/linux\/monitor-brightness-change#mainImage"},"datePublished":"2023-07-09T01:29:05+00:00","dateModified":"2023-08-31T12:58:10+00:00"},{"@type":"WebSite","@id":"https:\/\/www.baeldung.com\/linux\/#website","url":"https:\/\/www.baeldung.com\/linux\/","name":"Baeldung on Linux","description":"Learn about Linux in practice","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.baeldung.com\/linux\/#organization"}}]}
+		</script>
+
+<meta name="excerpt" content="Learn how to change the brightness of the monitor.">
+<link href="https://fonts.gstatic.com" crossorigin="anonymous" rel="preconnect" />
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="dashicons-css" href="https://www.baeldung.com/linux/wp-includes/css/dashicons.min.css?ver=6.4.3" type="text/css" media="all" />
+<style id="wpbs-style-inline-css" type="text/css">
+#wrap a  { color: #8e6fdc; }
+ #wrap a:link, #wrap a:visited   { color: #8e6fdc; }
+ #wrap .show_more_wrapper a.loadmore-editor { background-color:#a38be1;border-bottom: 6px solid #8e6fdc; }
+ #wrap .show_more_wrapper a.loadmore-editor:hover { background-color:#8e6fdc;border-bottom: 6px solid #8e6fdc; }
+ body.home #wrap a:link, body.page-template-homepage #wrap a:link, body.home #wrap a:visited, body.page-template-homepage #wrap a:visited   { color: #a38be1; }
+ body.author #wrap .author-contact-list a:link,body.author #wrap .author-contact-list a:visited   { color: #a38be1; }
+ #wrap a.nav--menu_item_anchor  { color: white; }
+ #wrap a.dropdown--item_anchor:hover .dropdown--item_text, #wrap  a.dropdown--item_anchor:focus .dropdown--item_text, #wrap  a.dropdown--item_anchor:active .dropdown--item_text  { color: #a38be1; }
+ .single #wrap .categories .btn-share { background-color: #8e6fdc; }
+ #wrap .all-author-header h1 {color:#a38be1;}
+ #wrap .author-divider-separator  {border-top: 2px solid #a38be1;}
+ #wrap .all-author-content-section-even .author-image-border {border-color:#a38be1}
+ .single #wrap .categories a,
+				.single #wrap .post-tags a,
+				.archive #wrap .related-tags a,
+				.archive #wrap .related-categories a,
+				.archive #wrap a.archive-parent-cat  { background-color: #a38be1; color:white }
+ .single #wrap .post-tags a, .archive #wrap .related-tags a  { background-color: #333; } 
+  .archive #wrap .related-tags .highlight  { background-color: #8e6fdc !important; }
+ .single #wrap .categories a:hover,
+				.single #wrap .categories a:focus,
+				.single #wrap .post-tags a:hover,
+				.single #wrap .post-tags a:focus,
+				.single #wrap .post-tags .pointed a:hover,
+				.archive #wrap .related-tags .pointed a:hover,
+				.single #wrap .post-tags .pointed a:hover:after,
+				.archive #wrap .related-tags a:hover,
+				.archive #wrap .related-tags .pointed a:hover:after,
+				.archive #wrap .related-tags .pointed a.highlight:after,
+				.archive #wrap .related-tags .pointed a.highlight,
+				.archive #wrap .related-tags a:focus,
+				.archive #wrap .related-categories a:hover,
+				.archive #wrap .related-categories a:focus,
+				.archive #wrap a.archive-parent-cat:hover,
+				.archive #wrap a.archive-parent-cat:focus  { background-color: #8e6fdc; border-color: #8e6fdc; }
+ #wrap section.further-reading-posts .fr-item .ex, #wrap  section.further-reading-posts .fr-item a  { color: #7386a6; }
+ #wrap .page-header .single-title {color: #333}
+ .single #wrap .post-content p, .single #wrap .post-content h2, .single #wrap .post-content h3, .single #wrap .post-content h4, .single #wrap .post-content li {color: #000}
+ #wrap .btn-default:hover, #wrap  .hljs-copy-button, #wrap  .button-newsletter a, #wrap  .btn-default:focus  { background-color: #a38be1; border-color: #a38be1; }
+ #wrap .btn-default:focus, #wrap  .btn-default:focus:active, #wrap  .button-newsletter a:focus, #wrap  .button-newsletter a:active  { background-color: #8e6fdc; border-color: #8e6fdc }
+ button._1p1hm7w,div._3n1zmx>header,li._1jinjag { background-color: #a38be1!important; border-color: #a38be1!important; }
+ #wrap .author, #wrap  .reviewer  { border-left: 3px solid #a38be1; }
+ #wrap .author-categories .highlight  {background-color: #8e6fdc;border-color: #8e6fdc}
+ #wrap .big-nav-top-bar  { background: #a38be1; }
+ #wrap .menu-mobile  { background: #a38be1; }
+ #wrap .header--menu  { background-color: #a38be1; }
+ #wrap .nav--menu_item_highlighted  { background: #a38be1 } 
+ #wrap .nav--menu_item_darkened  { background: #8e6fdc } 
+ #wrap li.big-nav-icon  { background-color: #8e6fdc; }
+ #wrap .big-nav-content hr  { color: #8e6fdc; border-color: #8e6fdc; }
+ #wrap #big-nav a.highlight b  { color: #a38be1 !important }
+ #wrap #big-nav a.highlight::before  { color: #a38be1 !important }
+ #wrap .big-nav-content > .row > .col-md-6 ul li a  { color: white; }
+ #wrap .big-nav-content > .row > .col-md-6 a  { color: white; }
+ #wrap .big-nav-content > .row > .col-md-6 ul li a:hover  { color: #A4B4D3; }
+ #wrap .nav--dropdown  { background: #474747; }
+ #wrap .nav--dropdown_content  { background: #474747; } 
+ #wrap .nav--dropdown_content:before, #wrap  .nav--dropdown_content:after  { background-color: #474747; }
+ #wrap a.nav--menu_item_anchor_active, #wrap  a.nav--menu_item_anchor:active  { background-color: #474747; }
+ #wrap nav.header--menu li.inner-dropdown a.nav--dropdown_active, #wrap  .nav--dropdown_item:hover  { background-color: #474747; }
+ #wrap nav.header--menu .nav--dropdown li.inner-dropdown .nav--dropdown, #wrap  
+														nav.header--menu .nav--dropdown li.inner-dropdown .nav--dropdown ul  { background-color: #474747; } 
+ #wrap #big-nav  { background-color: #474747; } 
+ #wrap .big-nav-content  { background-color: #927bcf; }
+ #wrap .big-nav-top-bar a.close-big-nav  { background-color: #927bcf; } 
+ #wrap li.big-nav-icon:hover  { background-color: #927bcf; }
+ #wrap li.big-nav-icon a.nav--menu_item_anchor:active  { background-color: #927bcf; }
+ #wrap #menu-search.active .btn-search  { background-color: #8e6fdc; } 
+ #wrap #menu-search.active .btn-search:hover  { background-color: #a38be1; } 
+ #wrap .pagination > li > a, #wrap  .pagination > li > span  { color: #a38be1; }
+ #wrap .pagination > .active > a, #wrap 
+				.pagination > .active > span, #wrap 
+				.pagination > .active > a:hover, #wrap 
+				.pagination > .active > span:hover, #wrap 
+				.pagination > .active > a:focus, #wrap 
+				.pagination > .active > span:focus  { color: white; background-color: #a38be1; border-color: #a38be1; }
+ #wrap .archive-columns .post-title  { color: #8e6fdc; }
+ body.author.archive #wrap .author-fullname  { color: #a38be1 } 
+ #wrap .table-styled th  { background-color: #a38be1 }
+ #wrap .table-styled td:not(:last-child)  { border-right-color: #a38be1 }
+ #wrap .table-styled tr:nth-child(odd)  { background-color: #f2f2f2 }
+ #wrap .hljs-keyword, #wrap  .hljs-attribute, #wrap  .hljs-selector-tag, #wrap  .hljs-meta-keyword, #wrap  .hljs-doctag, #wrap  .hljs-name  {  color: #a38be1; }
+ #wrap .hljs-type, #wrap  .hljs-string, #wrap  .hljs-number, #wrap  .hljs-selector-id, #wrap  .hljs-selector-class, #wrap  .hljs-quote, #wrap  .hljs-template-tag, #wrap  .hljs-deletion  {  color: #8e6fdc;}
+ #wrap .hljs-title, #wrap  .hljs-section  { color: #6449a8; font-weight: bold; }
+ #wrap .hljs, #wrap  .hljs-subst  { color: #000000; }
+ #wrap .hljs  { background-color: #fafafa; }
+ body #wrap .hljs  { border-left: 3px solid #6449a8 } 
+ #wrap  .short_end  { border: 4px solid #a38be1 !important; }
+ #wrap #wpcomm .wc-load-more-submit:hover, #wrap  #wpcomm .wc-load-more-submit:focus  { background-color: #a38be1; } 
+ #wrap .wpcf7 .wpcf7-submit  { background-color: #a38be1; }
+ #wrap .archive-columns.click-whole .post-title .hover-wrapper:before  { background-color: #a38be1; }
+ #wrap .sublogo-container  { background-color: #6449a8; } 
+ #wrap .content-info a ,  body.home #wrap .content-info a:link, body.page-template-homepage #wrap .content-info a:link, body.home #wrap .content-info a:visited, body.page-template-homepage #wrap .content-info a:visited  { color: rgba(255, 255, 255, 0.5); }
+ #wrap .content-info a:hover ,  body.home #wrap .content-info a:hover, body.page-template-homepage #wrap .content-info a:hover  { color: rgba(255, 255, 255, 1); }
+</style>
+<script type="text/javascript" src="https://www.baeldung.com/linux/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.baeldung.com/linux/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Corporation",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "Romania",
+				"addressLocality": "Bucharest",
+				"addressRegion": "Bucharest",
+				"postalCode": "041243",
+				"streetAddress": "str. Dambului, nr. 96"
+			},
+			"description": "Baeldung - In-depth, to-the-point tutorials on Java, Spring, Spring Boot, Security, and REST.",
+			"email": "mailto:team@baeldung.com",
+			"logo": "https://www.baeldung.com/wp-content/themes/baeldung/icon/baeldung-logo-schema.jpg",
+			"name": "Baeldung",
+			"sameAs": [
+				"https://twitter.com/baeldung",
+				"https://www.facebook.com/baeldung",
+				"https://www.linkedin.com/company/baeldung",
+				"https://www.instagram.com/baeldung",
+				"https://www.youtube.com/@BaeldungTutorials",
+				"https://www.pinterest.com/baeldung/"
+			],
+			"telephone": "0040728336441",
+			"url": "https://www.baeldung.com/"
+		}
+		</script><meta name="generator" content="Elementor 3.18.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto">
+
+
+<script type="text/javascript" async="true">
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.quantcast.com'
+    .concat('/choice/', '8de23B0-UzMb6', '/', host, '/choice.js?tag_version=V2');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = Object.assign(args[3], { tag_version: 'V2' });
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKMBFL7JWS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // commented out on 24/06/22 to see the impact on stats see UX-3393
+  // uncommented on 06/09/22
+  setTimeout("gtag('event', 'more than 2.5 minutes', {'event_category': 'Time on page','non_interaction': true});", 150000);
+
+
+  // https://support.google.com/analytics/answer/9310895?hl=en&utm_id=ad#zippy=%2Cin-this-article
+  // Adding our GA4 Property Link
+  gtag('config', 'G-FKMBFL7JWS');
+</script>
+<link rel="stylesheet" href="https://a.pub.network/core/pubfig/cls.css" onerror="window.blocker = true">
+<script data-cfasync="false" type="text/javascript">
+					var freestar = freestar || {};
+					freestar.hitTime = Date.now();
+					freestar.queue = freestar.queue || [];
+					freestar.config = freestar.config || {};
+					freestar.debug = window.location.search.indexOf('fsdebug') === -1 ? false : true;
+					freestar.config.enabled_slots = [];
+					freestar.queue.push(function() {
+					googletag.pubads().setTargeting('section', ["Administration","hardware","screen"] );
+				});
+					!function(a,b){var c=b.getElementsByTagName('script')[0],d=b.createElement('script'),e='https://a.pub.network/baeldung-com';e+=freestar.debug?'/qa/pubfig.min.js':'/pubfig.min.js',d.async=!0,d.src=e,c.parentNode.insertBefore(d,c)}(window,document);
+					freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }
+				</script><script type="text/javascript" data-cfasync="false" src="https://www.baeldung.com/linux/wp-content/themes/baeldung/library/dist/js/ad-recovery.min.js?ver=1.0.0"></script> <script>
+		let api_url = "https:\/\/www.baeldung.com\/api\/country-code\/" // get url of api.
+
+		let myAsyncFunction = async () => {
+			const response = await fetch(api_url);
+			if (response.status !== 200) {
+				throw new Error("cannot fetch data");
+			}
+			
+			let data = await response.json();
+			return data;
+		};
+		
+		myAsyncFunction()
+		.then((data) => {
+			console.log("resolved", data);
+
+			window.country_code = data.countryCode; // set country_code globally.
+
+			const countryCode = new Event('countryCodeEvent') // Create a new event
+			document.dispatchEvent(countryCode) // Dispatch the event
+		})
+		.catch((err) => {
+			console.log("rejected", err.message);
+		});
+	</script>
+<style>
+</style>
+<style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style> </head>
+<body class="post-template-default single single-post postid-62717 single-format-standard site-linux elementor-default elementor-kit-51447">
+<div id="fvp" data-attribute-site-id="2" data-attribute-page-id="62717" data-attribute-tags="602,149" data-attribute-categories="93" data-attribute-sitename="Baeldung on Linux" hidden></div>
+<div id="wrap">
+<nav class="header--menu">
+<div class="container">
+<div class="container-inner">
+<a class="nav--logo_mobile" href="/linux/" title="Baeldung">
+<img alt="The Baeldung logo" style="width:180px;height:40px" src="https://www.baeldung.com/linux/wp-content/themes/baeldung/icon/logo.svg">
+</a>
+<a href="#" class="menu-mobile" title="Navigation" onclick="veggieBurger.reset().play();">
+<svg version="1.1" id="veggieBurger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+<line style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="2.5" y1="17.5" x2="32.5" y2="17.5" />
+<line style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="2.5" y1="6.5" x2="32.5" y2="6.5" />
+<line style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="2.5" y1="28.5" x2="32.5" y2="28.5" />
+</svg>
+</a>
+</div>
+</div>
+<div class="container menu-container">
+<div class="container-inner">
+<ul id="menu-main-menu" class="nav--menu"><li class="big-nav-icon nav--menu_item">
+<a class="nav--menu_item_anchor menu-not-loaded" aria-label="Tutorials" title="Tutorials" href="#">
+<svg id="BigNavIcon" aria-label="Tutorials" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#menu-icon"></svg>
+</a><li class="nav--logo"><a href="/linux/" title="Baeldung"><img src="https://www.baeldung.com/wp-content/themes/baeldung/icon/logo.svg" style="width:180px;height:40px" alt="The Baeldung Logo"></a><a title="Baeldung" href="https://www.baeldung.com/linux/"><span class="sublogo-container"><img src="https://www.baeldung.com/wp-content/uploads/sites/2/2022/11/linux_sublogo.png" width="66" height="20" alt="Linux Sublogo" /></span></a><li class="nav--menu_item  menu-start-here"><a class="nav--menu_item_anchor" href="https://www.baeldung.com/linux/start-here">Start Here</a><li class="nav--menu_item  nav--menu_has_2_children menu-about"><a id="menu-item-49699" class="nav--menu_item_anchor nav--menu_item_withDropdown" href="javascript:void(0)">About&nbsp;<span class="menu--item_normal">▼</span><span class="menu--item_active">▲</span></a>
+<div class="nav--dropdown">
+<ul class="nav--dropdown_content">
+<li class="nav--dropdown_item">
+<a class="dropdown--item_anchor transition--background" href="/linux/full_archive" title>
+<div class="dropdown--item_icon">
+<svg id="FullArchiveSvg" aria-label="Full Archive" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#full-archive-svg"></svg>
+</div>
+<div class="dropdown--item_text">
+<h3 class="dropdown--item_title">
+Full Archive
+</h3>
+<p class="dropdown--item_excerpt">
+The high level overview of all the articles on the site.
+</p>
+</div>
+</a>
+</li>
+<li class="nav--dropdown_item">
+<a class="dropdown--item_anchor transition--background" href="/about" title>
+<div class="dropdown--item_icon">
+<svg id="AboutBaeldungSvg" aria-label="About Baeldung" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#about-baeldung-svg"></svg>
+</div>
+<div class="dropdown--item_text">
+<h3 class="dropdown--item_title">
+About Baeldung
+</h3>
+<p class="dropdown--item_excerpt">
+About Baeldung.
+</p>
+</div>
+</a>
+</li>
+</div><li class="nav--menu_item  menu-search"><a id="menu-item-51358" class="nav--menu_item_anchor" title="search" aria-label="search" href="/bael-search"><svg id="Search" aria-label="search" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#search"></svg></a><li class="nav--menu_item  menu-rss"><a id="menu-item-53184" class="nav--menu_item_anchor" title="RSS" aria-label="RSS" href="/linux/feed"><svg id="RssSvg" aria-label="RSS" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#rss-svg"></svg></a></ul>
+</div>
+</div>
+</nav>
+<div id="big-nav" class="inactive menu-not-loaded"></div>
+<div id="content" class="container">
+<div class="container-inner">
+<div class="flex-wrap">
+<div id="main" class="flex-col clearfix" role="main">
+<div id="toc-contents"></div>
+<article id="post-62717" class="clearfix post-62717 post type-post status-publish format-standard has-post-thumbnail hentry category-administration tag-hardware tag-screen" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://google.com/article" />
+<meta itemprop="datePublished" content="2023-07-09T01:29:05+0000" />
+<meta itemprop="dateModified" content="2023-08-31T12:58:10+0000" />
+<header>
+<div class="page-header">
+<h1 class="single-title entry-title" itemprop="headline">Changing Monitor Brightness on Linux</h1>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<style>
+.topAdContainer {
+	overflow: hidden;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	padding: 0px 0px 0px 20px;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px
+	}
+</style>
+<div class="code-block code-block-1 topAdContainer" style="margin: 8px 0; clear: both;">
+<div style="display: contents;" id="FreeStarVideoAdContainer">
+<div id="freestar-video-parent">
+<div id="freestar-video-child"></div>
+</div>
+</div>
+
+<div align="center" data-freestar-ad="__300x250" id="baeldung_top_1">
+<script data-cfasync="false" type="text/javascript">
+			freestar.config.enabled_slots.push({ placementName: "baeldung_top_1", slotId: "baeldung_top_1" });
+		  </script>
+</div>
+</div>
+</div>
+<p class="post-modified">Last updated: <span class="updated">August 31, 2023</span></p>
+<div class="meta-row bael_page_inner_head">
+<div class="author_reviewer">
+<img alt src="https://secure.gravatar.com/avatar/dc417739e22ae675b0e1f7012bbddaa5?s=50&#038;r=g" class="user_avatar_photo" />
+<div class="author vcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span class="author-by"> Written by: </span>
+<span class="author-name fn" itemprop="name">
+<a href="https://www.baeldung.com/linux/author/baeldung" title="Posts by baeldung" rel="author">baeldung</a> </span>
+</div>
+
+</div>
+<div class="bael_category_tags">
+<span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+<meta itemprop="url" content="https://www.baeldung.com/wp-content/uploads/sites/2/2019/11/Featured-Linux-2-k.jpg">
+<meta itemprop="width" content="208">
+<meta itemprop="height" content="208">
+</span>
+<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<meta itemprop="url" content="https://www.baeldung.com/linux/wp-content/themes/baeldung/icon/schema-logo.png">
+<meta itemprop="width" content="300">
+<meta itemprop="height" content="300">
+</span>
+<meta itemprop="name" content="Baeldung">
+</span>
+<ul class="categories">
+<li><a href="https://www.baeldung.com/linux/category/administration" rel="category tag">Administration</a></li> </ul>
+<ul class="post-tags">
+<li class="rounded">
+<a href="https://www.baeldung.com/linux/tag/hardware" rel="post tag">
+Hardware </a>
+</li>
+<li class>
+<a href="https://www.baeldung.com/linux/tag/screen" rel="post tag">
+screen </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</header> 
+<div class="before-post-widgets">
+</div>
+
+<div class="geo-targeting-widgets">
+</div>
+<section class="post-content clearfix" itemprop="articleBody">
+<h2 id="bd-introduction" data-id="introduction">1. Introduction</h2>
+<div class="bd-anchor" id="introduction"></div>
+<p>Adjusting the brightness of the monitor on Linux is a way to greatly enhance the viewing experience. With a variety of methods available, including command-line tools and graphical interfaces, we can customize the brightness settings to suit our preferences.</p>
+<p>In this tutorial, we&#8217;ll explore different ways to change monitor brightness in Linux.</p>
+<p>Notably, <strong>the effectiveness and availability of the methods for adjusting monitor brightness on Linux may vary depending on factors such as display <a href="/linux/find-device-driver">drivers</a>, <a href="/linux/check-monitor-active-gpu">graphics hardware</a>, <a href="/linux/x11">X11</a> display server compatibility, and <a href="/linux/cli-hardware-info">hardware support</a></strong>.</p>
+<h2 id="bd-using-xrandr" data-id="using-xrandr">2. Using <em>xrandr</em></h2>
+<div class="bd-anchor" id="using-xrandr"></div>
+<p><a href="/linux/adjust-screen-resolution"><em>xrandr</em></a> is a command-line tool in Linux used for managing display settings. We can employ <em>xrandr</em> to adjust brightness by manipulating the gamma values of the display. Hence, <strong>by modifying the gamma values, we can effectively control the display&#8217;s brightness</strong> from a Linux command-line environment.</p>
+<p>Notably,<strong> <em>xrandr</em> is designed to work on a graphical environment with an active X11 display session</strong>. Hence, it may not function as expected or be available in non-graphical environments, such as remote <a href="/linux/secure-shell-ssh">SSH</a> sessions.</p><div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+<div align="center" data-freestar-ad="__336x280 __728x90" id="baeldung_leaderboard_mid_1">
+<script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_leaderboard_mid_1", slotId: "baeldung_leaderboard_mid_1" });
+  </script>
+</div></div>
+<p>First, let&#8217;s install <em>xrandr</em> via <a href="/linux/apt-vs-apt-get#the-apt-get-utility"><em>apt-get</em></a>:</p>
+<pre><code class="language-bash">$ sudo apt-get install x11-xserver-utils</code></pre>
+<p><em>xrandr</em> is part of the <a href="https://packages.ubuntu.com/source/focal/x11-xserver-utils"><em>x11-xserver-utils</em></a> package.</p>
+<p>Once it&#8217;s installed, we can start by checking the current display settings:</p>
+<pre><code class="language-bash">$ xrandr
+Screen 0: minimum 16 x 16, current 1680 x 1050, maximum 32767 x 32767
+XWAYLAND0 connected 1680x1050+0+0 (normal left inverted right x axis y axis) 0mm                                                                                                                                x 0mm
+   1680x1050     59.95*+
+   1400x1050     59.98
+   1280x1024     59.89
+...
+   720x400       59.55
+   640x350       59.77</code></pre>
+<p>As we can see, the output provides an overview of the available screen and resolution options for the current system.</p>
+<p>Then, let&#8217;s list the available monitors:</p><div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+<div align="center" data-freestar-ad="__300x250 __336x280" id="baeldung_leaderboard_mid_2">
+<script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_leaderboard_mid_2", slotId: "baeldung_leaderboard_mid_2" });
+  </script>
+</div></div>
+<pre><code class="language-bash">$ xrandr --listmonitors
+Monitors: 2
+ 0: +*XWAYLAND0 1472/389x894/237+0+0 XWAYLAND0
+ 1: +HDMI-1 1920/1920x1080/1080+1920+0 HDMI-1</code></pre>
+<p>The output shows two monitors available named <em>XWAYLAND0</em> and <em>HDMI-1</em> connected to the system, with supported pixel resolutions of each monitor.</p>
+<p>Now, <strong>we can set the brightness level by modifying the gamma values</strong>:</p>
+<pre><code class="language-bash">$ xrandr --output OUTPUT_NAME --gamma BRIGHTNESS_VALUE:BRIGHTNESS_VALUE:BRIGHTNESS_VALUE</code></pre>
+<p><strong>We&#8217;ll replace <em>OUTPUT_NAME</em> with the desired monitor name and <em>BRIGHTNESS_VALUE</em> with a number between <em>0.0</em> and <em>1.0</em></strong>:</p>
+<pre><code class="language-bash">$ xrandr --output XWAYLAND0 --gamma 0.8:0.8:0.8</code></pre>
+<p>Here, we used the same value for each gamma value to ensure consistent color representation and to avoid skewing the colors.</p>
+<p>In this example, we used <em>&#8211;output</em> to specify the output and set the gamma values for the red, green, and blue <a href="/cs/convert-rgb-to-grayscale#1-rgb">color channels</a> respectively. Each value represents the brightness or intensity of the corresponding color channel. Here, all three gamma values are set to <em>0.8</em>, indicating a decrease in brightness for the display.</p><div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+<div align="center" data-freestar-ad="__300x250 __336x280" id="baeldung_leaderboard_mid_3">
+<script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_leaderboard_mid_3", slotId: "baeldung_leaderboard_mid_3" });
+  </script>
+</div></div>
+<h2 id="bd-using-xgamma" data-id="using-xgamma">3. Using <em>xgamma</em></h2>
+<div class="bd-anchor" id="using-xgamma"></div>
+<p><strong><a href="https://linux.die.net/man/1/xgamma"><em>xgamma</em></a> is a utility in Linux that enables us to adjust the gamma values of the display, indirectly affecting its brightness</strong>. <em>xgamma</em> is also included in the <em>x11-xserver-utils</em> package.</p>
+<p>In this case, the gamma values are numbers between <em>0.100</em> and <em>10.000</em>. Notably, <strong>the actual impact on brightness may vary depending on the specific display and graphics driver</strong>.</p>
+<p>First, let&#8217;s get the current gamma values:</p>
+<pre><code class="language-bash">$ xgamma 
+-&gt; Red  1.000, Green  1.000, Blue  1.000</code></pre>
+<p>Here, we can see the current gamma values for the red, green, and blue color channels of the display.</p>
+<p>Then, <strong>we&#8217;ll set the gamma value</strong>:</p>
+<p><code class="language-bash">$ xgamma -gamma 0.6</code></p>
+<p>Here, we used <em>-gamma</em> to specify the gamma value for all channels.</p>
+<p>Of course, we can define each gamma channel separately:</p><div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+<div align="center" data-freestar-ad="__336x280 __336x280" id="baeldung_incontent_1">
+<script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_incontent_1", slotId: "baeldung_incontent_1" });
+  </script>
+</div></div>
+<pre><code class="language-bash">$ xgamma -rgamma 0.8 -ggamma 0.8 -bgamma 0.8</code></pre>
+<p>Here, we&#8217;ll use the same value for each gamma channel to maintain color balance and prevent color distortion.</p>
+<p>In this example, we used <em>-rgamma</em>, <em>-ggamma</em>, and <em>-bgamma</em> to set the gamma values of red, blue, and green channels respectively.</p>
+<h2 id="bd-using-brightnessctl" data-id="using-brightnessctl">4. Using <em>brightnessctl</em></h2>
+<div class="bd-anchor" id="using-brightnessctl"></div>
+<p><a href="https://github.com/Hummer12007/brightnessctl"><em>brightnessctl</em></a> is a command-line utility in Linux for adjusting the brightness of displays and backlights. Moreover, <em>brightnessctl</em> provides a way to control the brightness level, query the current brightness value, and perform smooth transitions between brightness levels.</p>
+<p>First, let&#8217;s install <em>brightnessctl</em> via <em>apt-get</em>:</p>
+<pre><code class="language-bash">$ sudo apt-get install brightnessctl</code></pre>
+<p>Then, we&#8217;ll list the controllable devices:</p>
+<pre><code class="language-bash">$ brightnessctl -l
+Available devices:
+Device &#039;input2::numlock&#039; of class &#039;leds&#039;:
+	Current brightness: 0 (0%)
+	Max brightness: 1
+
+Device &#039;input2::capslock&#039; of class &#039;leds&#039;:
+	Current brightness: 1 (100%)
+	Max brightness: 1
+
+...
+
+Device &#039;0004:043e:4030.0004:global&#039; of class &#039;leds&#039;:
+Current brightness: 1 (100%)
+Max brightness: 1</code></pre>
+<p>As we can see, <strong>all devices have a name or a unique identifier, <em>Current brightness</em> state, and <em>Max brightness</em></strong>.</p>
+<p>In this example, the device with ID <em>0004:043e:4030.0004:global</em> is the current display. Hence, <em>0004</em> is a unique number assigned to the display, <em>043e</em> is the vendor ID and <em>4030</em> is the product ID.</p>
+<p>Now, we&#8217;ll change the display brightness:</p><div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+<div align="center" data-freestar-ad="__336x280 __336x280" id="baeldung_incontent_2">
+<script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_incontent_2", slotId: "baeldung_incontent_2" });
+  </script>
+</div></div>
+<pre><code class="language-bash">$ brightnessctl -d &quot;0004:043e:4030.0004:global&quot; set 80%</code></pre>
+<p>In this example, we used <em>-d</em> to specify the current display ID. Moreover, <strong>we decreased the brightness to <em>80%</em> by using the <em>set</em> option</strong>.</p>
+<h2 id="bd-brightness-controller-gui" data-id="brightness-controller-gui">5. Brightness Controller GUI</h2>
+<div class="bd-anchor" id="brightness-controller-gui"></div>
+<p><a href="https://github.com/LordAmit/Brightness">Brightness Controller</a> is a third-party application for Linux that provides a graphical interface to adjust the display brightness. Moreover, Brightness Controller offers a slider or a step-based adjustment method to control the brightness level of the screen. Hence, it&#8217;s an alternative solution for users who prefer a dedicated brightness control tool with a user-friendly interface.</p>
+<p>Notably, <strong>Brightness Controller is particularly useful for systems where the native display brightness controls aren&#8217;t readily available or functional</strong>.</p>
+<h3 id="bd-1-installing-brightness-controller" data-id="1-installing-brightness-controller">5.1. Installing Brightness Controller</h3>
+<div class="bd-anchor" id="1-installing-brightness-controller"></div>
+<p>Firstly, let&#8217;s add a <a href="/linux/unmet-dependencies-apt-get#removing-ppas">PPA repository</a>:</p>
+<pre><code class="language-bash">$ sudo add-apt-repository ppa:apandada1/brightness-controller</code></pre>
+<p>As we can see, we added <em>apandada1/brightness-controller</em> from the PPA repository to the system&#8217;s software sources which contain the Brightness Controller application.</p>
+<p>Secondly, we&#8217;ll update the package:</p>
+<pre><code class="language-bash">$ sudo apt-get update</code></pre>
+<p>Here, we ensure that the system has the latest information about available packages and their versions.</p>
+<p>Finally, we&#8217;ll install the Brightness Controller:</p><div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+<div align="center" data-freestar-ad="__336x280 __336x280" id="baeldung_incontent_3">
+<script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_incontent_3", slotId: "baeldung_incontent_3" });
+  </script>
+</div></div>
+<pre><code class="language-bash">$ sudo apt-get install brightness-controller</code></pre>
+<p>Of course, we&#8217;ll find the Brightness Controller application in the applications menu.</p>
+<h3 id="bd-2-using-brightness-controller" data-id="2-using-brightness-controller">5.2. Using Brightness Controller</h3>
+<div class="bd-anchor" id="2-using-brightness-controller"></div>
+<p>Now, we&#8217;re able to adjust the display brightness:</p>
+<img decoding="async" class="alignnone size-full wp-image-102604" src="/wp-content/uploads/sites/2/2023/07/BrightnessController.jpg" alt="Brightness Controller" />
+<p>As we can see, the brightness bar allows us to control the overall brightness level of the display.</p>
+<h2 id="bd-conclusion" data-id="conclusion">6. Conclusion</h2>
+<div class="bd-anchor" id="conclusion"></div>
+<p>In this article, we&#8217;ve explored different methods to change monitor brightness on Linux, ranging from command-line tools like <em>xrandr</em> and <em>xgamma</em> to dedicated utilities like <em>brightnessctl</em> and Brightness Controller. Each approach offers its own advantages, allowing us to adjust the brightness level of the monitor.</p>
+
+</section> 
+</article> 
+<div class="after-post-widgets">
+</div>
+
+<ul style="list-style-type: none;"></li>
+</ul>
+<span>Comments are closed on this article!</span>
+<div class="code-block code-block-16" style="margin: 8px 0; clear: both;">
+<div align="center" data-freestar-ad="__336x280 __336x280" id="baeldung_leaderboard_btf_2">
+<script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_leaderboard_btf_2", slotId: "baeldung_leaderboard_btf_2" });
+  </script>
+</div></div>
+</div> 
+<div id="sidebar1" class="sidebar flex-col" role="complementary" style="overflow: hidden; max-height:100px;">
+<div class="sticky-widgets" style="visibility: hidden;">
+<div id="text-2" data-sticky-weight="1" data-height-limit="0" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_text"> <div class="textwidget"><div id="baeldung_right_rail_1" align="center"><script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "baeldung_right_rail_1", slotId: "baeldung_right_rail_1" });
+  </script></div></div>
+</div><div id="text-3" data-sticky-weight="1" data-height-limit="0" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_text"> <div class="textwidget"><div id="baeldung_right_rail_2" align="center"><script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "baeldung_right_rail_2", slotId: "baeldung_right_rail_2" });
+  </script></div></div>
+</div><div id="text-6" data-sticky-weight="1" data-height-limit="10000" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_text"> <div class="textwidget"><div id="baeldung_right_rail_3" align="center"><script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "baeldung_right_rail_3", slotId: "baeldung_right_rail_3" });
+  </script></div></div>
+</div><div id="text-7" data-sticky-weight="1" data-height-limit="16000" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_text"> <div class="textwidget"><div id="baeldung_right_rail_4" align="center" data-freestar-ad="__336x280"><script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "baeldung_right_rail_4", slotId: "baeldung_right_rail_4" });
+  </script></div></div>
+</div> </div>
+</div>
+</div> 
+</div> 
+</div> 
+<footer id="footer" class="content-info" role="contentinfo">
+<div class="container">
+<div>
+<div class="column-wrapper row">
+<div class="logo-desktop">
+<img src="https://www.baeldung.com/linux/wp-content/themes/baeldung/icon/logo.svg" style="width:180px;height:40px" alt="The Baeldung logo">
+</div>
+<div class="widgets">
+<div id="nav_menu-3" data-sticky-weight="1" data-height-limit="0" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_nav_menu"><h4 class="widgettitle">Categories</h4><ul id="menu-categories" class="menu"><li class="menu-administration"><a href="/linux/category/administration">Administration</a></li>
+<li class="menu-files"><a href="/linux/category/files">Files</a></li>
+<li class="menu-filesystems"><a href="/linux/category/filesystems">Filesystems</a></li>
+<li class="menu-installation"><a href="/linux/category/installation">Installation</a></li>
+<li class="menu-networking"><a href="/linux/category/networking">Networking</a></li>
+<li class="menu-processes"><a href="/linux/category/processes">Processes</a></li>
+<li class="menu-scripting"><a href="/linux/category/scripting">Scripting</a></li>
+<li class="menu-search"><a href="/linux/category/search">Search</a></li>
+<li class="menu-security"><a href="/linux/category/security">Security</a></li>
+<li class="menu-web"><a href="/linux/category/web">Web</a></li>
+</ul></div><div id="nav_menu-4" data-sticky-weight="1" data-height-limit="0" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_nav_menu"><h4 class="widgettitle">Series</h4><ul id="menu-series" class="menu"><li class="menu-linux-administration"><a href="/linux/linux-administration-series">Linux Administration</a></li>
+<li class="menu-linux-files"><a href="/linux/linux-files-series">Linux Files</a></li>
+<li class="menu-linux-processes"><a href="/linux/linux-processes-guide">Linux Processes</a></li>
+</ul></div><div id="nav_menu-2" data-sticky-weight="1" data-height-limit="0" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_nav_menu"><h4 class="widgettitle">About</h4><ul id="menu-about" class="menu"><li class="menu-about-baeldung"><a href="/about">About Baeldung</a></li>
+<li class="menu-the-full-archive"><a href="https://www.baeldung.com/linux/full_archive">The Full Archive</a></li>
+<li class="menu-editors"><a href="https://www.baeldung.com/editors">Editors</a></li>
+</ul></div> </div>
+<div class="stacked-rows">
+<div id="nav_menu-5" data-sticky-weight="1" data-height-limit="0" data-stickyness="sticky" style="margin-top:0em;margin-bottom:0em;" class="baeldung-widgets widget widget_nav_menu"><ul id="menu-terms" class="menu"><li class="menu-terms-of-service"><a rel="nofollow" href="https://www.baeldung.com/terms-of-service">Terms of Service</a></li>
+<li class="menu-privacy-policy"><a rel="nofollow" href="https://www.baeldung.com/privacy-policy">Privacy Policy</a></li>
+<li class="menu-company-info"><a rel="nofollow" href="https://www.baeldung.com/baeldung-company-info">Company Info</a></li>
+<li class="menu-contact"><a rel="nofollow" href="/contact">Contact</a></li>
+</ul></div> </div>
+<div class="logo-mobile">
+<img src="https://www.baeldung.com/linux/wp-content/themes/baeldung/icon/whiteleaf.svg" style="width:50px;height:50px" alt="The Baeldung Logo">
+</div>
+</div> 
+</div> 
+</div> 
+</footer> 
+</div> 
+<script> 
+/* <![CDATA[ */
+var ba_cats=["Administration"];
+var ba_tags=["Hardware","screen"];
+/* ]]> */
+</script>
+<script type="text/javascript" id="ba_big_menu_scripts-js-extra">
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"https:\/\/www.baeldung.com\/linux\/wp-admin\/admin-ajax.php"};
+var bigmenu_settings = {"loading_delay":"4000","subsite_slug":"baeldung-on-linux","referral_id":"62717","version":"2.0.7","cache_version":"1707256983"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.baeldung.com/linux/wp-content/plugins/prismatic/lib/highlight/js/highlight-core.js?ver=3.4.1" id="prismatic-highlight-js"></script>
+<script type="text/javascript" id="prismatic-highlight-js-after">
+/* <![CDATA[ */
+try {
+     hljs.highlightAll();    
+} catch (e) {
+     //do nothing
+}
+/* ]]> */
+</script>
+<script type="text/javascript" id="wpbs-js-js-extra">
+/* <![CDATA[ */
+var geolocTargetingData = {"gtagDebug":"","apiUrl":"https:\/\/www.baeldung.com\/api\/country-code\/"};
+var ajaxUrl = "https:\/\/www.baeldung.com\/linux\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script>
+<script type="text/javascript" id="getTemplateUrlScript-js-extra">
+/* <![CDATA[ */
+var getTemplateUrl = {"templateUrl":"https:\/\/www.baeldung.com\/linux\/wp-content\/themes\/baeldung"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="vivus-js-after">
+/* <![CDATA[ */
+function svginit_veggieBurger() {
+				var svgTarget = document.getElementById('veggieBurger');
+				if (svgTarget) {
+				veggieBurger  = new Vivus('veggieBurger', {type: 'delayed', duration: 30,  start: 'autostart'});
+				}
+			}
+			document.addEventListener("DOMContentLoaded", svginit_veggieBurger);
+
+
+          function svginit_49699() {
+						jQuery("#FullArchiveSvg path, #FullArchiveSvg g ").each(function( index ) {  
+			var color = jQuery( this ).attr("stroke"); 
+			var fill = jQuery( this ).attr("fill"); 
+
+			var colors_to_replace =  ["#63B175","#67B277","rgb(101, 175, 119)","rgb(99, 177, 117)"];
+			var replacement_color = "#a38be1";
+
+			if ( color || fill ) {
+				if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).attr("stroke", replacement_color); }
+				if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).attr("fill", replacement_color); }
+			}
+			else {
+				var color = jQuery( this ).css("stroke");
+				var fill = jQuery( this ).css("fill");
+
+				if ( color || fill ) {
+					if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).css("stroke", replacement_color); }
+					if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).css("fill", replacement_color); }
+				}
+			} })
+jQuery("#AboutBaeldungSvg path, #AboutBaeldungSvg g ").each(function( index ) {  
+			var color = jQuery( this ).attr("stroke"); 
+			var fill = jQuery( this ).attr("fill"); 
+
+			var colors_to_replace =  ["#63B175","#67B277","rgb(101, 175, 119)","rgb(99, 177, 117)"];
+			var replacement_color = "#a38be1";
+
+			if ( color || fill ) {
+				if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).attr("stroke", replacement_color); }
+				if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).attr("fill", replacement_color); }
+			}
+			else {
+				var color = jQuery( this ).css("stroke");
+				var fill = jQuery( this ).css("fill");
+
+				if ( color || fill ) {
+					if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).css("stroke", replacement_color); }
+					if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).css("fill", replacement_color); }
+				}
+			} })
+            FullArchiveSvg = new Vivus('FullArchiveSvg', {type: 'delayed', duration: 60,  start: 'manual'});
+AboutBaeldungSvg = new Vivus('AboutBaeldungSvg', {type: 'delayed', duration: 60,  start: 'manual'});
+            
+          document.getElementById('menu-item-49699').onmouseenter = function(){
+            FullArchiveSvg.reset().play();
+AboutBaeldungSvg.reset().play();
+          };
+        
+					
+          }
+					
+				
+          document.addEventListener("ready-to-animate-svg", svginit_49699);
+        
+
+          function svginit_Search() {
+            Search = new Vivus('Search', {type: 'delayed', duration: 60,  start: 'autostart'});
+            
+          document.getElementById('menu-item-51358').onmouseenter = function(){
+            Search.reset().play();
+							jQuery("#Search path, #Search g ").each(function( index ) {  
+			var color = jQuery( this ).attr("stroke"); 
+			var fill = jQuery( this ).attr("fill"); 
+
+			var colors_to_replace =  ["#63B175","#67B277","rgb(101, 175, 119)","rgb(99, 177, 117)"];
+			var replacement_color = "#a38be1";
+
+			if ( color || fill ) {
+				if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).attr("stroke", replacement_color); }
+				if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).attr("fill", replacement_color); }
+			}
+			else {
+				var color = jQuery( this ).css("stroke");
+				var fill = jQuery( this ).css("fill");
+
+				if ( color || fill ) {
+					if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).css("stroke", replacement_color); }
+					if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).css("fill", replacement_color); }
+				}
+			} })
+          };
+        
+          }
+					
+					
+          document.addEventListener("ready-to-animate-svg", svginit_Search);
+        
+
+          function svginit_RssSvg() {
+            RssSvg = new Vivus('RssSvg', {type: 'delayed', duration: 60,  start: 'autostart'});
+            
+          document.getElementById('menu-item-53184').onmouseenter = function(){
+            RssSvg.reset().play();
+							jQuery("#RssSvg path, #RssSvg g ").each(function( index ) {  
+			var color = jQuery( this ).attr("stroke"); 
+			var fill = jQuery( this ).attr("fill"); 
+
+			var colors_to_replace =  ["#63B175","#67B277","rgb(101, 175, 119)","rgb(99, 177, 117)"];
+			var replacement_color = "#a38be1";
+
+			if ( color || fill ) {
+				if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).attr("stroke", replacement_color); }
+				if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).attr("fill", replacement_color); }
+			}
+			else {
+				var color = jQuery( this ).css("stroke");
+				var fill = jQuery( this ).css("fill");
+
+				if ( color || fill ) {
+					if ( jQuery.inArray( color, colors_to_replace ) !== -1 ) { jQuery( this ).css("stroke", replacement_color); }
+					if ( jQuery.inArray( fill, colors_to_replace ) !== -1 ) { jQuery( this ).css("fill", replacement_color); }
+				}
+			} })
+          };
+        
+          }
+					
+					
+          document.addEventListener("ready-to-animate-svg", svginit_RssSvg);
+        
+/* ]]> */
+</script>
+<script type="text/javascript" id="fvp-scripts-js-extra">
+/* <![CDATA[ */
+var geolocTargetingData = {"gtagDebug":"","apiUrl":"https:\/\/www.baeldung.com\/api\/country-code\/"};
+var fvpVersionData = {"fvpVer":""};
+var ajaxUrl = "https:\/\/www.baeldung.com\/linux\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '9539554';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/9539554.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+
+<script>
+function b2a(a){var b,c=0,l=0,f="",g=[];if(!a)return a;do{var e=a.charCodeAt(c++);var h=a.charCodeAt(c++);var k=a.charCodeAt(c++);var d=e<<16|h<<8|k;e=63&d>>18;h=63&d>>12;k=63&d>>6;d&=63;g[l++]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(e)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(h)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(k)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(d)}while(c<
+a.length);return f=g.join(""),b=a.length%3,(b?f.slice(0,b-3):f)+"===".slice(b||3)}function a2b(a){var b,c,l,f={},g=0,e=0,h="",k=String.fromCharCode,d=a.length;for(b=0;64>b;b++)f["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(b)]=b;for(c=0;d>c;c++)for(b=f[a.charAt(c)],g=(g<<6)+b,e+=6;8<=e;)((l=255&g>>>(e-=8))||d-2>c)&&(h+=k(l));return h}b64e=function(a){return btoa(encodeURIComponent(a).replace(/%([0-9A-F]{2})/g,function(b,a){return String.fromCharCode("0x"+a)}))};
+b64d=function(a){return decodeURIComponent(atob(a).split("").map(function(a){return"%"+("00"+a.charCodeAt(0).toString(16)).slice(-2)}).join(""))};
+/* <![CDATA[ */
+ai_front = {"insertion_before":"BEFORE","insertion_after":"AFTER","insertion_prepend":"PREPEND CONTENT","insertion_append":"APPEND CONTENT","insertion_replace_content":"REPLACE CONTENT","insertion_replace_element":"REPLACE ELEMENT","visible":"VISIBLE","hidden":"HIDDEN","fallback":"FALLBACK","automatically_placed":"Automatically placed by AdSense Auto ads code","cancel":"Cancel","use":"Use","add":"Add","parent":"Parent","cancel_element_selection":"Cancel element selection","select_parent_element":"Select parent element","css_selector":"CSS selector","use_current_selector":"Use current selector","element":"ELEMENT","path":"PATH","selector":"SELECTOR"};
+/* ]]> */
+var ai_cookie_js=!0,ai_block_class_def="code-block";
+/*
+ JavaScript Cookie v2.2.0
+ https://github.com/js-cookie/js-cookie
+
+ Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ Released under the MIT license
+*/
+"undefined"!==typeof ai_cookie_js&&(function(a){if("function"===typeof define&&define.amd){define(a);var c=!0}"object"===typeof exports&&(module.exports=a(),c=!0);if(!c){var d=window.Cookies,b=window.Cookies=a();b.noConflict=function(){window.Cookies=d;return b}}}(function(){function a(){for(var d=0,b={};d<arguments.length;d++){var f=arguments[d],e;for(e in f)b[e]=f[e]}return b}function c(d){function b(){}function f(h,k,g){if("undefined"!==typeof document){g=a({path:"/",sameSite:"Lax"},b.defaults,
+g);"number"===typeof g.expires&&(g.expires=new Date(1*new Date+864E5*g.expires));g.expires=g.expires?g.expires.toUTCString():"";try{var l=JSON.stringify(k);/^[\{\[]/.test(l)&&(k=l)}catch(p){}k=d.write?d.write(k,h):encodeURIComponent(String(k)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent);h=encodeURIComponent(String(h)).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent).replace(/[\(\)]/g,escape);l="";for(var n in g)g[n]&&(l+="; "+n,!0!==g[n]&&(l+="="+
+g[n].split(";")[0]));return document.cookie=h+"="+k+l}}function e(h,k){if("undefined"!==typeof document){for(var g={},l=document.cookie?document.cookie.split("; "):[],n=0;n<l.length;n++){var p=l[n].split("="),m=p.slice(1).join("=");k||'"'!==m.charAt(0)||(m=m.slice(1,-1));try{var q=p[0].replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent);m=(d.read||d)(m,q)||m.replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent);if(k)try{m=JSON.parse(m)}catch(r){}g[q]=m;if(h===q)break}catch(r){}}return h?g[h]:g}}b.set=f;b.get=
+function(h){return e(h,!1)};b.getJSON=function(h){return e(h,!0)};b.remove=function(h,k){f(h,"",a(k,{expires:-1}))};b.defaults={};b.withConverter=c;return b}return c(function(){})}),AiCookies=Cookies.noConflict(),ai_check_block=function(a){if(null==a)return!0;var c=AiCookies.getJSON("aiBLOCKS");ai_debug_cookie_status="";null==c&&(c={});"undefined"!==typeof ai_delay_showing_pageviews&&(c.hasOwnProperty(a)||(c[a]={}),c[a].hasOwnProperty("d")||(c[a].d=ai_delay_showing_pageviews));if(c.hasOwnProperty(a)){for(var d in c[a]){if("x"==
+d){var b="",f=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in f.dataset&&(b=f.dataset.aiHash);f="";c[a].hasOwnProperty("h")&&(f=c[a].h);var e=new Date;e=c[a][d]-Math.round(e.getTime()/1E3);if(0<e&&f==b)return ai_debug_cookie_status=a="closed for "+e+" s = "+Math.round(1E4*e/3600/24)/1E4+" days",!1;ai_set_cookie(a,"x","");c[a].hasOwnProperty("i")||c[a].hasOwnProperty("c")||ai_set_cookie(a,"h","")}else if("d"==d){if(0!=c[a][d])return ai_debug_cookie_status=a="delayed for "+c[a][d]+
+" pageviews",!1}else if("i"==d){b="";f=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in f.dataset&&(b=f.dataset.aiHash);f="";c[a].hasOwnProperty("h")&&(f=c[a].h);if(0==c[a][d]&&f==b)return ai_debug_cookie_status=a="max impressions reached",!1;if(0>c[a][d]&&f==b){e=new Date;e=-c[a][d]-Math.round(e.getTime()/1E3);if(0<e)return ai_debug_cookie_status=a="max imp. reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1;ai_set_cookie(a,"i","");c[a].hasOwnProperty("c")||c[a].hasOwnProperty("x")||
+ai_set_cookie(a,"h","")}}if("ipt"==d&&0==c[a][d]&&(e=new Date,b=Math.round(e.getTime()/1E3),e=c[a].it-b,0<e))return ai_debug_cookie_status=a="max imp. per time reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1;if("c"==d){b="";f=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in f.dataset&&(b=f.dataset.aiHash);f="";c[a].hasOwnProperty("h")&&(f=c[a].h);if(0==c[a][d]&&f==b)return ai_debug_cookie_status=a="max clicks reached",!1;if(0>c[a][d]&&f==b){e=new Date;e=-c[a][d]-
+Math.round(e.getTime()/1E3);if(0<e)return ai_debug_cookie_status=a="max clicks reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1;ai_set_cookie(a,"c","");c[a].hasOwnProperty("i")||c[a].hasOwnProperty("x")||ai_set_cookie(a,"h","")}}if("cpt"==d&&0==c[a][d]&&(e=new Date,b=Math.round(e.getTime()/1E3),e=c[a].ct-b,0<e))return ai_debug_cookie_status=a="max clicks per time reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1}if(c.hasOwnProperty("G")&&c.G.hasOwnProperty("cpt")&&0==c.G.cpt&&
+(e=new Date,b=Math.round(e.getTime()/1E3),e=c.G.ct-b,0<e))return ai_debug_cookie_status=a="max global clicks per time reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1}ai_debug_cookie_status="OK";return!0},ai_check_and_insert_block=function(a,c){if(null==a)return!0;var d=document.getElementsByClassName(c);if(d.length){d=d[0];var b=d.closest("."+ai_block_class_def),f=ai_check_block(a);!f&&0!=parseInt(d.getAttribute("limits-fallback"))&&d.hasAttribute("data-fallback-code")&&(d.setAttribute("data-code",
+d.getAttribute("data-fallback-code")),null!=b&&b.hasAttribute("data-ai")&&d.hasAttribute("fallback-tracking")&&d.hasAttribute("fallback_level")&&b.setAttribute("data-ai-"+d.getAttribute("fallback_level"),d.getAttribute("fallback-tracking")),f=!0);d.removeAttribute("data-selector");if(f)ai_insert_code(d),b&&(f=b.querySelectorAll(".ai-debug-block"),f.length&&(b.classList.remove("ai-list-block"),b.classList.remove("ai-list-block-ip"),b.classList.remove("ai-list-block-filter"),b.style.visibility="",b.classList.contains("ai-remove-position")&&
+(b.style.position="")));else{f=d.closest("div[data-ai]");if(null!=f&&"undefined"!=typeof f.getAttribute("data-ai")){var e=JSON.parse(b64d(f.getAttribute("data-ai")));"undefined"!==typeof e&&e.constructor===Array&&(e[1]="",f.setAttribute("data-ai",b64e(JSON.stringify(e))))}b&&(f=b.querySelectorAll(".ai-debug-block"),f.length&&(b.classList.remove("ai-list-block"),b.classList.remove("ai-list-block-ip"),b.classList.remove("ai-list-block-filter"),b.style.visibility="",b.classList.contains("ai-remove-position")&&
+(b.style.position="")))}d.classList.remove(c)}d=document.querySelectorAll("."+c+"-dbg");b=0;for(f=d.length;b<f;b++)e=d[b],e.querySelector(".ai-status").textContent=ai_debug_cookie_status,e.querySelector(".ai-cookie-data").textContent=ai_get_cookie_text(a),e.classList.remove(c+"-dbg")},ai_load_cookie=function(){var a=AiCookies.getJSON("aiBLOCKS");null==a&&(a={});return a},ai_set_cookie=function(a,c,d){var b=ai_load_cookie();if(""===d){if(b.hasOwnProperty(a)){delete b[a][c];a:{c=b[a];for(f in c)if(c.hasOwnProperty(f)){var f=
+!1;break a}f=!0}f&&delete b[a]}}else b.hasOwnProperty(a)||(b[a]={}),b[a][c]=d;0===Object.keys(b).length&&b.constructor===Object?AiCookies.remove("aiBLOCKS"):AiCookies.set("aiBLOCKS",b,{expires:365,path:"/"});return b},ai_get_cookie_text=function(a){var c=AiCookies.getJSON("aiBLOCKS");null==c&&(c={});var d="";c.hasOwnProperty("G")&&(d="G["+JSON.stringify(c.G).replace(/"/g,"").replace("{","").replace("}","")+"] ");var b="";c.hasOwnProperty(a)&&(b=JSON.stringify(c[a]).replace(/"/g,"").replace("{","").replace("}",
+""));return d+b});
+var ai_insertion_js=!0,ai_block_class_def="code-block";
+if("undefined"!=typeof ai_insertion_js){ai_insert=function(a,h,l){if(-1!=h.indexOf(":eq("))if(window.jQuery&&window.jQuery.fn)var n=jQuery(h);else{console.error("AI INSERT USING jQuery QUERIES:",h,"- jQuery not found");return}else n=document.querySelectorAll(h);for(var u=0,y=n.length;u<y;u++){var d=n[u];selector_string=d.hasAttribute("id")?"#"+d.getAttribute("id"):d.hasAttribute("class")?"."+d.getAttribute("class").replace(RegExp(" ","g"),"."):"";var w=document.createElement("div");w.innerHTML=l;
+var m=w.getElementsByClassName("ai-selector-counter")[0];null!=m&&(m.innerText=u+1);m=w.getElementsByClassName("ai-debug-name ai-main")[0];if(null!=m){var r=a.toUpperCase();"undefined"!=typeof ai_front&&("before"==a?r=ai_front.insertion_before:"after"==a?r=ai_front.insertion_after:"prepend"==a?r=ai_front.insertion_prepend:"append"==a?r=ai_front.insertion_append:"replace-content"==a?r=ai_front.insertion_replace_content:"replace-element"==a&&(r=ai_front.insertion_replace_element));-1==selector_string.indexOf(".ai-viewports")&&
+(m.innerText=r+" "+h+" ("+d.tagName.toLowerCase()+selector_string+")")}m=document.createRange();try{var v=m.createContextualFragment(w.innerHTML)}catch(t){}"before"==a?d.parentNode.insertBefore(v,d):"after"==a?d.parentNode.insertBefore(v,d.nextSibling):"prepend"==a?d.insertBefore(v,d.firstChild):"append"==a?d.insertBefore(v,null):"replace-content"==a?(d.innerHTML="",d.insertBefore(v,null)):"replace-element"==a&&(d.parentNode.insertBefore(v,d),d.parentNode.removeChild(d));z()}};ai_insert_code=function(a){function h(m,
+r){return null==m?!1:m.classList?m.classList.contains(r):-1<(" "+m.className+" ").indexOf(" "+r+" ")}function l(m,r){null!=m&&(m.classList?m.classList.add(r):m.className+=" "+r)}function n(m,r){null!=m&&(m.classList?m.classList.remove(r):m.className=m.className.replace(new RegExp("(^|\\b)"+r.split(" ").join("|")+"(\\b|$)","gi")," "))}if("undefined"!=typeof a){var u=!1;if(h(a,"no-visibility-check")||a.offsetWidth||a.offsetHeight||a.getClientRects().length){u=a.getAttribute("data-code");var y=a.getAttribute("data-insertion-position"),
+d=a.getAttribute("data-selector");if(null!=u)if(null!=y&&null!=d){if(-1!=d.indexOf(":eq(")?window.jQuery&&window.jQuery.fn&&jQuery(d).length:document.querySelectorAll(d).length)ai_insert(y,d,b64d(u)),n(a,"ai-viewports")}else{y=document.createRange();try{var w=y.createContextualFragment(b64d(u))}catch(m){}a.parentNode.insertBefore(w,a.nextSibling);n(a,"ai-viewports")}u=!0}else w=a.previousElementSibling,h(w,"ai-debug-bar")&&h(w,"ai-debug-script")&&(n(w,"ai-debug-script"),l(w,"ai-debug-viewport-invisible")),
+n(a,"ai-viewports");return u}};ai_insert_list_code=function(a){var h=document.getElementsByClassName(a)[0];if("undefined"!=typeof h){var l=ai_insert_code(h),n=h.closest("div."+ai_block_class_def);if(n){l||n.removeAttribute("data-ai");var u=n.querySelectorAll(".ai-debug-block");n&&u.length&&(n.classList.remove("ai-list-block"),n.classList.remove("ai-list-block-ip"),n.classList.remove("ai-list-block-filter"),n.style.visibility="",n.classList.contains("ai-remove-position")&&(n.style.position=""))}h.classList.remove(a);
+l&&z()}};ai_insert_viewport_code=function(a){var h=document.getElementsByClassName(a)[0];if("undefined"!=typeof h){var l=ai_insert_code(h);h.classList.remove(a);l&&(a=h.closest("div."+ai_block_class_def),null!=a&&(l=h.getAttribute("style"),null!=l&&a.setAttribute("style",a.getAttribute("style")+" "+l)));setTimeout(function(){h.removeAttribute("style")},2);z()}};ai_insert_adsense_fallback_codes=function(a){a.style.display="none";var h=a.closest(".ai-fallback-adsense"),l=h.nextElementSibling;l.getAttribute("data-code")?
+ai_insert_code(l)&&z():l.style.display="block";h.classList.contains("ai-empty-code")&&null!=a.closest("."+ai_block_class_def)&&(a=a.closest("."+ai_block_class_def).getElementsByClassName("code-block-label"),0!=a.length&&(a[0].style.display="none"))};ai_insert_code_by_class=function(a){var h=document.getElementsByClassName(a)[0];"undefined"!=typeof h&&(ai_insert_code(h),h.classList.remove(a))};ai_insert_client_code=function(a,h){var l=document.getElementsByClassName(a)[0];if("undefined"!=typeof l){var n=
+l.getAttribute("data-code");null!=n&&ai_check_block()&&(l.setAttribute("data-code",n.substring(Math.floor(h/19))),ai_insert_code_by_class(a),l.remove())}};ai_process_elements_active=!1;function z(){ai_process_elements_active||setTimeout(function(){ai_process_elements_active=!1;"function"==typeof ai_process_rotations&&ai_process_rotations();"function"==typeof ai_process_lists&&ai_process_lists();"function"==typeof ai_process_ip_addresses&&ai_process_ip_addresses();"function"==typeof ai_process_filter_hooks&&
+ai_process_filter_hooks();"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks();"function"==typeof ai_process_impressions&&1==ai_tracking_finished&&ai_process_impressions();"function"==typeof ai_install_click_trackers&&1==ai_tracking_finished&&ai_install_click_trackers();"function"==typeof ai_install_close_buttons&&ai_install_close_buttons(document);"function"==typeof ai_process_wait_for_interaction&&ai_process_wait_for_interaction();"function"==typeof ai_process_delayed_blocks&&ai_process_delayed_blocks()},
+5);ai_process_elements_active=!0}const B=document.querySelector("body");(new MutationObserver(function(a,h){for(const l of a)"attributes"===l.type&&"data-ad-status"==l.attributeName&&"unfilled"==l.target.dataset.adStatus&&l.target.closest(".ai-fallback-adsense")&&ai_insert_adsense_fallback_codes(l.target)})).observe(B,{attributes:!0,childList:!1,subtree:!0});var Arrive=function(a,h,l){function n(t,c,e){d.addMethod(c,e,t.unbindEvent);d.addMethod(c,e,t.unbindEventWithSelectorOrCallback);d.addMethod(c,
+e,t.unbindEventWithSelectorAndCallback)}function u(t){t.arrive=r.bindEvent;n(r,t,"unbindArrive");t.leave=v.bindEvent;n(v,t,"unbindLeave")}if(a.MutationObserver&&"undefined"!==typeof HTMLElement){var y=0,d=function(){var t=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector;return{matchesSelector:function(c,e){return c instanceof HTMLElement&&t.call(c,e)},addMethod:function(c,e,f){var b=c[e];c[e]=
+function(){if(f.length==arguments.length)return f.apply(this,arguments);if("function"==typeof b)return b.apply(this,arguments)}},callCallbacks:function(c,e){e&&e.options.onceOnly&&1==e.firedElems.length&&(c=[c[0]]);for(var f=0,b;b=c[f];f++)b&&b.callback&&b.callback.call(b.elem,b.elem);e&&e.options.onceOnly&&1==e.firedElems.length&&e.me.unbindEventWithSelectorAndCallback.call(e.target,e.selector,e.callback)},checkChildNodesRecursively:function(c,e,f,b){for(var g=0,k;k=c[g];g++)f(k,e,b)&&b.push({callback:e.callback,
+elem:k}),0<k.childNodes.length&&d.checkChildNodesRecursively(k.childNodes,e,f,b)},mergeArrays:function(c,e){var f={},b;for(b in c)c.hasOwnProperty(b)&&(f[b]=c[b]);for(b in e)e.hasOwnProperty(b)&&(f[b]=e[b]);return f},toElementsArray:function(c){"undefined"===typeof c||"number"===typeof c.length&&c!==a||(c=[c]);return c}}}(),w=function(){var t=function(){this._eventsBucket=[];this._beforeRemoving=this._beforeAdding=null};t.prototype.addEvent=function(c,e,f,b){c={target:c,selector:e,options:f,callback:b,
+firedElems:[]};this._beforeAdding&&this._beforeAdding(c);this._eventsBucket.push(c);return c};t.prototype.removeEvent=function(c){for(var e=this._eventsBucket.length-1,f;f=this._eventsBucket[e];e--)c(f)&&(this._beforeRemoving&&this._beforeRemoving(f),(f=this._eventsBucket.splice(e,1))&&f.length&&(f[0].callback=null))};t.prototype.beforeAdding=function(c){this._beforeAdding=c};t.prototype.beforeRemoving=function(c){this._beforeRemoving=c};return t}(),m=function(t,c){var e=new w,f=this,b={fireOnAttributesModification:!1};
+e.beforeAdding(function(g){var k=g.target;if(k===a.document||k===a)k=document.getElementsByTagName("html")[0];var p=new MutationObserver(function(x){c.call(this,x,g)});var q=t(g.options);p.observe(k,q);g.observer=p;g.me=f});e.beforeRemoving(function(g){g.observer.disconnect()});this.bindEvent=function(g,k,p){k=d.mergeArrays(b,k);for(var q=d.toElementsArray(this),x=0;x<q.length;x++)e.addEvent(q[x],g,k,p)};this.unbindEvent=function(){var g=d.toElementsArray(this);e.removeEvent(function(k){for(var p=
+0;p<g.length;p++)if(this===l||k.target===g[p])return!0;return!1})};this.unbindEventWithSelectorOrCallback=function(g){var k=d.toElementsArray(this);e.removeEvent("function"===typeof g?function(p){for(var q=0;q<k.length;q++)if((this===l||p.target===k[q])&&p.callback===g)return!0;return!1}:function(p){for(var q=0;q<k.length;q++)if((this===l||p.target===k[q])&&p.selector===g)return!0;return!1})};this.unbindEventWithSelectorAndCallback=function(g,k){var p=d.toElementsArray(this);e.removeEvent(function(q){for(var x=
+0;x<p.length;x++)if((this===l||q.target===p[x])&&q.selector===g&&q.callback===k)return!0;return!1})};return this},r=new function(){function t(f,b,g){return d.matchesSelector(f,b.selector)&&(f._id===l&&(f._id=y++),-1==b.firedElems.indexOf(f._id))?(b.firedElems.push(f._id),!0):!1}var c={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};r=new m(function(f){var b={attributes:!1,childList:!0,subtree:!0};f.fireOnAttributesModification&&(b.attributes=!0);return b},function(f,b){f.forEach(function(g){var k=
+g.addedNodes,p=g.target,q=[];null!==k&&0<k.length?d.checkChildNodesRecursively(k,b,t,q):"attributes"===g.type&&t(p,b,q)&&q.push({callback:b.callback,elem:p});d.callCallbacks(q,b)})});var e=r.bindEvent;r.bindEvent=function(f,b,g){"undefined"===typeof g?(g=b,b=c):b=d.mergeArrays(c,b);var k=d.toElementsArray(this);if(b.existing){for(var p=[],q=0;q<k.length;q++)for(var x=k[q].querySelectorAll(f),A=0;A<x.length;A++)p.push({callback:g,elem:x[A]});if(b.onceOnly&&p.length)return g.call(p[0].elem,p[0].elem);
+setTimeout(d.callCallbacks,1,p)}e.call(this,f,b,g)};return r},v=new function(){function t(f,b){return d.matchesSelector(f,b.selector)}var c={};v=new m(function(){return{childList:!0,subtree:!0}},function(f,b){f.forEach(function(g){g=g.removedNodes;var k=[];null!==g&&0<g.length&&d.checkChildNodesRecursively(g,b,t,k);d.callCallbacks(k,b)})});var e=v.bindEvent;v.bindEvent=function(f,b,g){"undefined"===typeof g?(g=b,b=c):b=d.mergeArrays(c,b);e.call(this,f,b,g)};return v};h&&u(h.fn);u(HTMLElement.prototype);
+u(NodeList.prototype);u(HTMLCollection.prototype);u(HTMLDocument.prototype);u(Window.prototype);h={};n(r,h,"unbindAllArrive");n(v,h,"unbindAllLeave");return h}}(window,"undefined"===typeof jQuery?null:jQuery,void 0)};
+;!function(a,b){a(function(){"use strict";function a(a,b){return null!=a&&null!=b&&a.toLowerCase()===b.toLowerCase()}function c(a,b){var c,d,e=a.length;if(!e||!b)return!1;for(c=b.toLowerCase(),d=0;d<e;++d)if(c===a[d].toLowerCase())return!0;return!1}function d(a){for(var b in a)i.call(a,b)&&(a[b]=new RegExp(a[b],"i"))}function e(a){return(a||"").substr(0,500)}function f(a,b){this.ua=e(a),this._cache={},this.maxPhoneWidth=b||600}var g={};g.mobileDetectRules={phones:{iPhone:"\\biPhone\\b|\\biPod\\b",BlackBerry:"BlackBerry|\\bBB10\\b|rim[0-9]+|\\b(BBA100|BBB100|BBD100|BBE100|BBF100|STH100)\\b-[0-9]+",Pixel:"; \\bPixel\\b",HTC:"HTC|HTC.*(Sensation|Evo|Vision|Explorer|6800|8100|8900|A7272|S510e|C110e|Legend|Desire|T8282)|APX515CKT|Qtek9090|APA9292KT|HD_mini|Sensation.*Z710e|PG86100|Z715e|Desire.*(A8181|HD)|ADR6200|ADR6400L|ADR6425|001HT|Inspire 4G|Android.*\\bEVO\\b|T-Mobile G1|Z520m|Android [0-9.]+; Pixel",Nexus:"Nexus One|Nexus S|Galaxy.*Nexus|Android.*Nexus.*Mobile|Nexus 4|Nexus 5|Nexus 5X|Nexus 6",Dell:"Dell[;]? (Streak|Aero|Venue|Venue Pro|Flash|Smoke|Mini 3iX)|XCD28|XCD35|\\b001DL\\b|\\b101DL\\b|\\bGS01\\b",Motorola:"Motorola|DROIDX|DROID BIONIC|\\bDroid\\b.*Build|Android.*Xoom|HRI39|MOT-|A1260|A1680|A555|A853|A855|A953|A955|A956|Motorola.*ELECTRIFY|Motorola.*i1|i867|i940|MB200|MB300|MB501|MB502|MB508|MB511|MB520|MB525|MB526|MB611|MB612|MB632|MB810|MB855|MB860|MB861|MB865|MB870|ME501|ME502|ME511|ME525|ME600|ME632|ME722|ME811|ME860|ME863|ME865|MT620|MT710|MT716|MT720|MT810|MT870|MT917|Motorola.*TITANIUM|WX435|WX445|XT300|XT301|XT311|XT316|XT317|XT319|XT320|XT390|XT502|XT530|XT531|XT532|XT535|XT603|XT610|XT611|XT615|XT681|XT701|XT702|XT711|XT720|XT800|XT806|XT860|XT862|XT875|XT882|XT883|XT894|XT901|XT907|XT909|XT910|XT912|XT928|XT926|XT915|XT919|XT925|XT1021|\\bMoto E\\b|XT1068|XT1092|XT1052",Samsung:"\\bSamsung\\b|SM-G950F|SM-G955F|SM-G9250|GT-19300|SGH-I337|BGT-S5230|GT-B2100|GT-B2700|GT-B2710|GT-B3210|GT-B3310|GT-B3410|GT-B3730|GT-B3740|GT-B5510|GT-B5512|GT-B5722|GT-B6520|GT-B7300|GT-B7320|GT-B7330|GT-B7350|GT-B7510|GT-B7722|GT-B7800|GT-C3010|GT-C3011|GT-C3060|GT-C3200|GT-C3212|GT-C3212I|GT-C3262|GT-C3222|GT-C3300|GT-C3300K|GT-C3303|GT-C3303K|GT-C3310|GT-C3322|GT-C3330|GT-C3350|GT-C3500|GT-C3510|GT-C3530|GT-C3630|GT-C3780|GT-C5010|GT-C5212|GT-C6620|GT-C6625|GT-C6712|GT-E1050|GT-E1070|GT-E1075|GT-E1080|GT-E1081|GT-E1085|GT-E1087|GT-E1100|GT-E1107|GT-E1110|GT-E1120|GT-E1125|GT-E1130|GT-E1160|GT-E1170|GT-E1175|GT-E1180|GT-E1182|GT-E1200|GT-E1210|GT-E1225|GT-E1230|GT-E1390|GT-E2100|GT-E2120|GT-E2121|GT-E2152|GT-E2220|GT-E2222|GT-E2230|GT-E2232|GT-E2250|GT-E2370|GT-E2550|GT-E2652|GT-E3210|GT-E3213|GT-I5500|GT-I5503|GT-I5700|GT-I5800|GT-I5801|GT-I6410|GT-I6420|GT-I7110|GT-I7410|GT-I7500|GT-I8000|GT-I8150|GT-I8160|GT-I8190|GT-I8320|GT-I8330|GT-I8350|GT-I8530|GT-I8700|GT-I8703|GT-I8910|GT-I9000|GT-I9001|GT-I9003|GT-I9010|GT-I9020|GT-I9023|GT-I9070|GT-I9082|GT-I9100|GT-I9103|GT-I9220|GT-I9250|GT-I9300|GT-I9305|GT-I9500|GT-I9505|GT-M3510|GT-M5650|GT-M7500|GT-M7600|GT-M7603|GT-M8800|GT-M8910|GT-N7000|GT-S3110|GT-S3310|GT-S3350|GT-S3353|GT-S3370|GT-S3650|GT-S3653|GT-S3770|GT-S3850|GT-S5210|GT-S5220|GT-S5229|GT-S5230|GT-S5233|GT-S5250|GT-S5253|GT-S5260|GT-S5263|GT-S5270|GT-S5300|GT-S5330|GT-S5350|GT-S5360|GT-S5363|GT-S5369|GT-S5380|GT-S5380D|GT-S5560|GT-S5570|GT-S5600|GT-S5603|GT-S5610|GT-S5620|GT-S5660|GT-S5670|GT-S5690|GT-S5750|GT-S5780|GT-S5830|GT-S5839|GT-S6102|GT-S6500|GT-S7070|GT-S7200|GT-S7220|GT-S7230|GT-S7233|GT-S7250|GT-S7500|GT-S7530|GT-S7550|GT-S7562|GT-S7710|GT-S8000|GT-S8003|GT-S8500|GT-S8530|GT-S8600|SCH-A310|SCH-A530|SCH-A570|SCH-A610|SCH-A630|SCH-A650|SCH-A790|SCH-A795|SCH-A850|SCH-A870|SCH-A890|SCH-A930|SCH-A950|SCH-A970|SCH-A990|SCH-I100|SCH-I110|SCH-I400|SCH-I405|SCH-I500|SCH-I510|SCH-I515|SCH-I600|SCH-I730|SCH-I760|SCH-I770|SCH-I830|SCH-I910|SCH-I920|SCH-I959|SCH-LC11|SCH-N150|SCH-N300|SCH-R100|SCH-R300|SCH-R351|SCH-R400|SCH-R410|SCH-T300|SCH-U310|SCH-U320|SCH-U350|SCH-U360|SCH-U365|SCH-U370|SCH-U380|SCH-U410|SCH-U430|SCH-U450|SCH-U460|SCH-U470|SCH-U490|SCH-U540|SCH-U550|SCH-U620|SCH-U640|SCH-U650|SCH-U660|SCH-U700|SCH-U740|SCH-U750|SCH-U810|SCH-U820|SCH-U900|SCH-U940|SCH-U960|SCS-26UC|SGH-A107|SGH-A117|SGH-A127|SGH-A137|SGH-A157|SGH-A167|SGH-A177|SGH-A187|SGH-A197|SGH-A227|SGH-A237|SGH-A257|SGH-A437|SGH-A517|SGH-A597|SGH-A637|SGH-A657|SGH-A667|SGH-A687|SGH-A697|SGH-A707|SGH-A717|SGH-A727|SGH-A737|SGH-A747|SGH-A767|SGH-A777|SGH-A797|SGH-A817|SGH-A827|SGH-A837|SGH-A847|SGH-A867|SGH-A877|SGH-A887|SGH-A897|SGH-A927|SGH-B100|SGH-B130|SGH-B200|SGH-B220|SGH-C100|SGH-C110|SGH-C120|SGH-C130|SGH-C140|SGH-C160|SGH-C170|SGH-C180|SGH-C200|SGH-C207|SGH-C210|SGH-C225|SGH-C230|SGH-C417|SGH-C450|SGH-D307|SGH-D347|SGH-D357|SGH-D407|SGH-D415|SGH-D780|SGH-D807|SGH-D980|SGH-E105|SGH-E200|SGH-E315|SGH-E316|SGH-E317|SGH-E335|SGH-E590|SGH-E635|SGH-E715|SGH-E890|SGH-F300|SGH-F480|SGH-I200|SGH-I300|SGH-I320|SGH-I550|SGH-I577|SGH-I600|SGH-I607|SGH-I617|SGH-I627|SGH-I637|SGH-I677|SGH-I700|SGH-I717|SGH-I727|SGH-i747M|SGH-I777|SGH-I780|SGH-I827|SGH-I847|SGH-I857|SGH-I896|SGH-I897|SGH-I900|SGH-I907|SGH-I917|SGH-I927|SGH-I937|SGH-I997|SGH-J150|SGH-J200|SGH-L170|SGH-L700|SGH-M110|SGH-M150|SGH-M200|SGH-N105|SGH-N500|SGH-N600|SGH-N620|SGH-N625|SGH-N700|SGH-N710|SGH-P107|SGH-P207|SGH-P300|SGH-P310|SGH-P520|SGH-P735|SGH-P777|SGH-Q105|SGH-R210|SGH-R220|SGH-R225|SGH-S105|SGH-S307|SGH-T109|SGH-T119|SGH-T139|SGH-T209|SGH-T219|SGH-T229|SGH-T239|SGH-T249|SGH-T259|SGH-T309|SGH-T319|SGH-T329|SGH-T339|SGH-T349|SGH-T359|SGH-T369|SGH-T379|SGH-T409|SGH-T429|SGH-T439|SGH-T459|SGH-T469|SGH-T479|SGH-T499|SGH-T509|SGH-T519|SGH-T539|SGH-T559|SGH-T589|SGH-T609|SGH-T619|SGH-T629|SGH-T639|SGH-T659|SGH-T669|SGH-T679|SGH-T709|SGH-T719|SGH-T729|SGH-T739|SGH-T746|SGH-T749|SGH-T759|SGH-T769|SGH-T809|SGH-T819|SGH-T839|SGH-T919|SGH-T929|SGH-T939|SGH-T959|SGH-T989|SGH-U100|SGH-U200|SGH-U800|SGH-V205|SGH-V206|SGH-X100|SGH-X105|SGH-X120|SGH-X140|SGH-X426|SGH-X427|SGH-X475|SGH-X495|SGH-X497|SGH-X507|SGH-X600|SGH-X610|SGH-X620|SGH-X630|SGH-X700|SGH-X820|SGH-X890|SGH-Z130|SGH-Z150|SGH-Z170|SGH-ZX10|SGH-ZX20|SHW-M110|SPH-A120|SPH-A400|SPH-A420|SPH-A460|SPH-A500|SPH-A560|SPH-A600|SPH-A620|SPH-A660|SPH-A700|SPH-A740|SPH-A760|SPH-A790|SPH-A800|SPH-A820|SPH-A840|SPH-A880|SPH-A900|SPH-A940|SPH-A960|SPH-D600|SPH-D700|SPH-D710|SPH-D720|SPH-I300|SPH-I325|SPH-I330|SPH-I350|SPH-I500|SPH-I600|SPH-I700|SPH-L700|SPH-M100|SPH-M220|SPH-M240|SPH-M300|SPH-M305|SPH-M320|SPH-M330|SPH-M350|SPH-M360|SPH-M370|SPH-M380|SPH-M510|SPH-M540|SPH-M550|SPH-M560|SPH-M570|SPH-M580|SPH-M610|SPH-M620|SPH-M630|SPH-M800|SPH-M810|SPH-M850|SPH-M900|SPH-M910|SPH-M920|SPH-M930|SPH-N100|SPH-N200|SPH-N240|SPH-N300|SPH-N400|SPH-Z400|SWC-E100|SCH-i909|GT-N7100|GT-N7105|SCH-I535|SM-N900A|SGH-I317|SGH-T999L|GT-S5360B|GT-I8262|GT-S6802|GT-S6312|GT-S6310|GT-S5312|GT-S5310|GT-I9105|GT-I8510|GT-S6790N|SM-G7105|SM-N9005|GT-S5301|GT-I9295|GT-I9195|SM-C101|GT-S7392|GT-S7560|GT-B7610|GT-I5510|GT-S7582|GT-S7530E|GT-I8750|SM-G9006V|SM-G9008V|SM-G9009D|SM-G900A|SM-G900D|SM-G900F|SM-G900H|SM-G900I|SM-G900J|SM-G900K|SM-G900L|SM-G900M|SM-G900P|SM-G900R4|SM-G900S|SM-G900T|SM-G900V|SM-G900W8|SHV-E160K|SCH-P709|SCH-P729|SM-T2558|GT-I9205|SM-G9350|SM-J120F|SM-G920F|SM-G920V|SM-G930F|SM-N910C|SM-A310F|GT-I9190|SM-J500FN|SM-G903F|SM-J330F|SM-G610F|SM-G981B|SM-G892A|SM-A530F",LG:"\\bLG\\b;|LG[- ]?(C800|C900|E400|E610|E900|E-900|F160|F180K|F180L|F180S|730|855|L160|LS740|LS840|LS970|LU6200|MS690|MS695|MS770|MS840|MS870|MS910|P500|P700|P705|VM696|AS680|AS695|AX840|C729|E970|GS505|272|C395|E739BK|E960|L55C|L75C|LS696|LS860|P769BK|P350|P500|P509|P870|UN272|US730|VS840|VS950|LN272|LN510|LS670|LS855|LW690|MN270|MN510|P509|P769|P930|UN200|UN270|UN510|UN610|US670|US740|US760|UX265|UX840|VN271|VN530|VS660|VS700|VS740|VS750|VS910|VS920|VS930|VX9200|VX11000|AX840A|LW770|P506|P925|P999|E612|D955|D802|MS323|M257)|LM-G710",Sony:"SonyST|SonyLT|SonyEricsson|SonyEricssonLT15iv|LT18i|E10i|LT28h|LT26w|SonyEricssonMT27i|C5303|C6902|C6903|C6906|C6943|D2533|SOV34|601SO|F8332",Asus:"Asus.*Galaxy|PadFone.*Mobile",Xiaomi:"^(?!.*\\bx11\\b).*xiaomi.*$|POCOPHONE F1|MI 8|Redmi Note 9S|Redmi Note 5A Prime|N2G47H|M2001J2G|M2001J2I|M1805E10A|M2004J11G|M1902F1G|M2002J9G|M2004J19G|M2003J6A1G",NokiaLumia:"Lumia [0-9]{3,4}",Micromax:"Micromax.*\\b(A210|A92|A88|A72|A111|A110Q|A115|A116|A110|A90S|A26|A51|A35|A54|A25|A27|A89|A68|A65|A57|A90)\\b",Palm:"PalmSource|Palm",Vertu:"Vertu|Vertu.*Ltd|Vertu.*Ascent|Vertu.*Ayxta|Vertu.*Constellation(F|Quest)?|Vertu.*Monika|Vertu.*Signature",Pantech:"PANTECH|IM-A850S|IM-A840S|IM-A830L|IM-A830K|IM-A830S|IM-A820L|IM-A810K|IM-A810S|IM-A800S|IM-T100K|IM-A725L|IM-A780L|IM-A775C|IM-A770K|IM-A760S|IM-A750K|IM-A740S|IM-A730S|IM-A720L|IM-A710K|IM-A690L|IM-A690S|IM-A650S|IM-A630K|IM-A600S|VEGA PTL21|PT003|P8010|ADR910L|P6030|P6020|P9070|P4100|P9060|P5000|CDM8992|TXT8045|ADR8995|IS11PT|P2030|P6010|P8000|PT002|IS06|CDM8999|P9050|PT001|TXT8040|P2020|P9020|P2000|P7040|P7000|C790",Fly:"IQ230|IQ444|IQ450|IQ440|IQ442|IQ441|IQ245|IQ256|IQ236|IQ255|IQ235|IQ245|IQ275|IQ240|IQ285|IQ280|IQ270|IQ260|IQ250",Wiko:"KITE 4G|HIGHWAY|GETAWAY|STAIRWAY|DARKSIDE|DARKFULL|DARKNIGHT|DARKMOON|SLIDE|WAX 4G|RAINBOW|BLOOM|SUNSET|GOA(?!nna)|LENNY|BARRY|IGGY|OZZY|CINK FIVE|CINK PEAX|CINK PEAX 2|CINK SLIM|CINK SLIM 2|CINK +|CINK KING|CINK PEAX|CINK SLIM|SUBLIM",iMobile:"i-mobile (IQ|i-STYLE|idea|ZAA|Hitz)",SimValley:"\\b(SP-80|XT-930|SX-340|XT-930|SX-310|SP-360|SP60|SPT-800|SP-120|SPT-800|SP-140|SPX-5|SPX-8|SP-100|SPX-8|SPX-12)\\b",Wolfgang:"AT-B24D|AT-AS50HD|AT-AS40W|AT-AS55HD|AT-AS45q2|AT-B26D|AT-AS50Q",Alcatel:"Alcatel",Nintendo:"Nintendo (3DS|Switch)",Amoi:"Amoi",INQ:"INQ",OnePlus:"ONEPLUS",GenericPhone:"Tapatalk|PDA;|SAGEM|\\bmmp\\b|pocket|\\bpsp\\b|symbian|Smartphone|smartfon|treo|up.browser|up.link|vodafone|\\bwap\\b|nokia|Series40|Series60|S60|SonyEricsson|N900|MAUI.*WAP.*Browser"},tablets:{iPad:"iPad|iPad.*Mobile",NexusTablet:"Android.*Nexus[\\s]+(7|9|10)",GoogleTablet:"Android.*Pixel C",SamsungTablet:"SAMSUNG.*Tablet|Galaxy.*Tab|SC-01C|GT-P1000|GT-P1003|GT-P1010|GT-P3105|GT-P6210|GT-P6800|GT-P6810|GT-P7100|GT-P7300|GT-P7310|GT-P7500|GT-P7510|SCH-I800|SCH-I815|SCH-I905|SGH-I957|SGH-I987|SGH-T849|SGH-T859|SGH-T869|SPH-P100|GT-P3100|GT-P3108|GT-P3110|GT-P5100|GT-P5110|GT-P6200|GT-P7320|GT-P7511|GT-N8000|GT-P8510|SGH-I497|SPH-P500|SGH-T779|SCH-I705|SCH-I915|GT-N8013|GT-P3113|GT-P5113|GT-P8110|GT-N8010|GT-N8005|GT-N8020|GT-P1013|GT-P6201|GT-P7501|GT-N5100|GT-N5105|GT-N5110|SHV-E140K|SHV-E140L|SHV-E140S|SHV-E150S|SHV-E230K|SHV-E230L|SHV-E230S|SHW-M180K|SHW-M180L|SHW-M180S|SHW-M180W|SHW-M300W|SHW-M305W|SHW-M380K|SHW-M380S|SHW-M380W|SHW-M430W|SHW-M480K|SHW-M480S|SHW-M480W|SHW-M485W|SHW-M486W|SHW-M500W|GT-I9228|SCH-P739|SCH-I925|GT-I9200|GT-P5200|GT-P5210|GT-P5210X|SM-T311|SM-T310|SM-T310X|SM-T210|SM-T210R|SM-T211|SM-P600|SM-P601|SM-P605|SM-P900|SM-P901|SM-T217|SM-T217A|SM-T217S|SM-P6000|SM-T3100|SGH-I467|XE500|SM-T110|GT-P5220|GT-I9200X|GT-N5110X|GT-N5120|SM-P905|SM-T111|SM-T2105|SM-T315|SM-T320|SM-T320X|SM-T321|SM-T520|SM-T525|SM-T530NU|SM-T230NU|SM-T330NU|SM-T900|XE500T1C|SM-P605V|SM-P905V|SM-T337V|SM-T537V|SM-T707V|SM-T807V|SM-P600X|SM-P900X|SM-T210X|SM-T230|SM-T230X|SM-T325|GT-P7503|SM-T531|SM-T330|SM-T530|SM-T705|SM-T705C|SM-T535|SM-T331|SM-T800|SM-T700|SM-T537|SM-T807|SM-P907A|SM-T337A|SM-T537A|SM-T707A|SM-T807A|SM-T237|SM-T807P|SM-P607T|SM-T217T|SM-T337T|SM-T807T|SM-T116NQ|SM-T116BU|SM-P550|SM-T350|SM-T550|SM-T9000|SM-P9000|SM-T705Y|SM-T805|GT-P3113|SM-T710|SM-T810|SM-T815|SM-T360|SM-T533|SM-T113|SM-T335|SM-T715|SM-T560|SM-T670|SM-T677|SM-T377|SM-T567|SM-T357T|SM-T555|SM-T561|SM-T713|SM-T719|SM-T813|SM-T819|SM-T580|SM-T355Y?|SM-T280|SM-T817A|SM-T820|SM-W700|SM-P580|SM-T587|SM-P350|SM-P555M|SM-P355M|SM-T113NU|SM-T815Y|SM-T585|SM-T285|SM-T825|SM-W708|SM-T835|SM-T830|SM-T837V|SM-T720|SM-T510|SM-T387V|SM-P610|SM-T290|SM-T515|SM-T590|SM-T595|SM-T725|SM-T817P|SM-P585N0|SM-T395|SM-T295|SM-T865|SM-P610N|SM-P615|SM-T970|SM-T380|SM-T5950|SM-T905|SM-T231|SM-T500|SM-T860",Kindle:"Kindle|Silk.*Accelerated|Android.*\\b(KFOT|KFTT|KFJWI|KFJWA|KFOTE|KFSOWI|KFTHWI|KFTHWA|KFAPWI|KFAPWA|WFJWAE|KFSAWA|KFSAWI|KFASWI|KFARWI|KFFOWI|KFGIWI|KFMEWI)\\b|Android.*Silk/[0-9.]+ like Chrome/[0-9.]+ (?!Mobile)",SurfaceTablet:"Windows NT [0-9.]+; ARM;.*(Tablet|ARMBJS)",HPTablet:"HP Slate (7|8|10)|HP ElitePad 900|hp-tablet|EliteBook.*Touch|HP 8|Slate 21|HP SlateBook 10",AsusTablet:"^.*PadFone((?!Mobile).)*$|Transformer|TF101|TF101G|TF300T|TF300TG|TF300TL|TF700T|TF700KL|TF701T|TF810C|ME171|ME301T|ME302C|ME371MG|ME370T|ME372MG|ME172V|ME173X|ME400C|Slider SL101|\\bK00F\\b|\\bK00C\\b|\\bK00E\\b|\\bK00L\\b|TX201LA|ME176C|ME102A|\\bM80TA\\b|ME372CL|ME560CG|ME372CG|ME302KL| K010 | K011 | K017 | K01E |ME572C|ME103K|ME170C|ME171C|\\bME70C\\b|ME581C|ME581CL|ME8510C|ME181C|P01Y|PO1MA|P01Z|\\bP027\\b|\\bP024\\b|\\bP00C\\b",BlackBerryTablet:"PlayBook|RIM Tablet",HTCtablet:"HTC_Flyer_P512|HTC Flyer|HTC Jetstream|HTC-P715a|HTC EVO View 4G|PG41200|PG09410",MotorolaTablet:"xoom|sholest|MZ615|MZ605|MZ505|MZ601|MZ602|MZ603|MZ604|MZ606|MZ607|MZ608|MZ609|MZ615|MZ616|MZ617",NookTablet:"Android.*Nook|NookColor|nook browser|BNRV200|BNRV200A|BNTV250|BNTV250A|BNTV400|BNTV600|LogicPD Zoom2",AcerTablet:"Android.*; \\b(A100|A101|A110|A200|A210|A211|A500|A501|A510|A511|A700|A701|W500|W500P|W501|W501P|W510|W511|W700|G100|G100W|B1-A71|B1-710|B1-711|A1-810|A1-811|A1-830)\\b|W3-810|\\bA3-A10\\b|\\bA3-A11\\b|\\bA3-A20\\b|\\bA3-A30|A3-A40",ToshibaTablet:"Android.*(AT100|AT105|AT200|AT205|AT270|AT275|AT300|AT305|AT1S5|AT500|AT570|AT700|AT830)|TOSHIBA.*FOLIO",LGTablet:"\\bL-06C|LG-V909|LG-V900|LG-V700|LG-V510|LG-V500|LG-V410|LG-V400|LG-VK810\\b",FujitsuTablet:"Android.*\\b(F-01D|F-02F|F-05E|F-10D|M532|Q572)\\b",PrestigioTablet:"PMP3170B|PMP3270B|PMP3470B|PMP7170B|PMP3370B|PMP3570C|PMP5870C|PMP3670B|PMP5570C|PMP5770D|PMP3970B|PMP3870C|PMP5580C|PMP5880D|PMP5780D|PMP5588C|PMP7280C|PMP7280C3G|PMP7280|PMP7880D|PMP5597D|PMP5597|PMP7100D|PER3464|PER3274|PER3574|PER3884|PER5274|PER5474|PMP5097CPRO|PMP5097|PMP7380D|PMP5297C|PMP5297C_QUAD|PMP812E|PMP812E3G|PMP812F|PMP810E|PMP880TD|PMT3017|PMT3037|PMT3047|PMT3057|PMT7008|PMT5887|PMT5001|PMT5002",LenovoTablet:"Lenovo TAB|Idea(Tab|Pad)( A1|A10| K1|)|ThinkPad([ ]+)?Tablet|YT3-850M|YT3-X90L|YT3-X90F|YT3-X90X|Lenovo.*(S2109|S2110|S5000|S6000|K3011|A3000|A3500|A1000|A2107|A2109|A1107|A5500|A7600|B6000|B8000|B8080)(-|)(FL|F|HV|H|)|TB-X103F|TB-X304X|TB-X304F|TB-X304L|TB-X505F|TB-X505L|TB-X505X|TB-X605F|TB-X605L|TB-8703F|TB-8703X|TB-8703N|TB-8704N|TB-8704F|TB-8704X|TB-8704V|TB-7304F|TB-7304I|TB-7304X|Tab2A7-10F|Tab2A7-20F|TB2-X30L|YT3-X50L|YT3-X50F|YT3-X50M|YT-X705F|YT-X703F|YT-X703L|YT-X705L|YT-X705X|TB2-X30F|TB2-X30L|TB2-X30M|A2107A-F|A2107A-H|TB3-730F|TB3-730M|TB3-730X|TB-7504F|TB-7504X|TB-X704F|TB-X104F|TB3-X70F|TB-X705F|TB-8504F|TB3-X70L|TB3-710F|TB-X704L",DellTablet:"Venue 11|Venue 8|Venue 7|Dell Streak 10|Dell Streak 7",YarvikTablet:"Android.*\\b(TAB210|TAB211|TAB224|TAB250|TAB260|TAB264|TAB310|TAB360|TAB364|TAB410|TAB411|TAB420|TAB424|TAB450|TAB460|TAB461|TAB464|TAB465|TAB467|TAB468|TAB07-100|TAB07-101|TAB07-150|TAB07-151|TAB07-152|TAB07-200|TAB07-201-3G|TAB07-210|TAB07-211|TAB07-212|TAB07-214|TAB07-220|TAB07-400|TAB07-485|TAB08-150|TAB08-200|TAB08-201-3G|TAB08-201-30|TAB09-100|TAB09-211|TAB09-410|TAB10-150|TAB10-201|TAB10-211|TAB10-400|TAB10-410|TAB13-201|TAB274EUK|TAB275EUK|TAB374EUK|TAB462EUK|TAB474EUK|TAB9-200)\\b",MedionTablet:"Android.*\\bOYO\\b|LIFE.*(P9212|P9514|P9516|S9512)|LIFETAB",ArnovaTablet:"97G4|AN10G2|AN7bG3|AN7fG3|AN8G3|AN8cG3|AN7G3|AN9G3|AN7dG3|AN7dG3ST|AN7dG3ChildPad|AN10bG3|AN10bG3DT|AN9G2",IntensoTablet:"INM8002KP|INM1010FP|INM805ND|Intenso Tab|TAB1004",IRUTablet:"M702pro",MegafonTablet:"MegaFon V9|\\bZTE V9\\b|Android.*\\bMT7A\\b",EbodaTablet:"E-Boda (Supreme|Impresspeed|Izzycomm|Essential)",AllViewTablet:"Allview.*(Viva|Alldro|City|Speed|All TV|Frenzy|Quasar|Shine|TX1|AX1|AX2)",ArchosTablet:"\\b(101G9|80G9|A101IT)\\b|Qilive 97R|Archos5|\\bARCHOS (70|79|80|90|97|101|FAMILYPAD|)(b|c|)(G10| Cobalt| TITANIUM(HD|)| Xenon| Neon|XSK| 2| XS 2| PLATINUM| CARBON|GAMEPAD)\\b",AinolTablet:"NOVO7|NOVO8|NOVO10|Novo7Aurora|Novo7Basic|NOVO7PALADIN|novo9-Spark",NokiaLumiaTablet:"Lumia 2520",SonyTablet:"Sony.*Tablet|Xperia Tablet|Sony Tablet S|SO-03E|SGPT12|SGPT13|SGPT114|SGPT121|SGPT122|SGPT123|SGPT111|SGPT112|SGPT113|SGPT131|SGPT132|SGPT133|SGPT211|SGPT212|SGPT213|SGP311|SGP312|SGP321|EBRD1101|EBRD1102|EBRD1201|SGP351|SGP341|SGP511|SGP512|SGP521|SGP541|SGP551|SGP621|SGP641|SGP612|SOT31|SGP771|SGP611|SGP612|SGP712",PhilipsTablet:"\\b(PI2010|PI3000|PI3100|PI3105|PI3110|PI3205|PI3210|PI3900|PI4010|PI7000|PI7100)\\b",CubeTablet:"Android.*(K8GT|U9GT|U10GT|U16GT|U17GT|U18GT|U19GT|U20GT|U23GT|U30GT)|CUBE U8GT",CobyTablet:"MID1042|MID1045|MID1125|MID1126|MID7012|MID7014|MID7015|MID7034|MID7035|MID7036|MID7042|MID7048|MID7127|MID8042|MID8048|MID8127|MID9042|MID9740|MID9742|MID7022|MID7010",MIDTablet:"M9701|M9000|M9100|M806|M1052|M806|T703|MID701|MID713|MID710|MID727|MID760|MID830|MID728|MID933|MID125|MID810|MID732|MID120|MID930|MID800|MID731|MID900|MID100|MID820|MID735|MID980|MID130|MID833|MID737|MID960|MID135|MID860|MID736|MID140|MID930|MID835|MID733|MID4X10",MSITablet:"MSI \\b(Primo 73K|Primo 73L|Primo 81L|Primo 77|Primo 93|Primo 75|Primo 76|Primo 73|Primo 81|Primo 91|Primo 90|Enjoy 71|Enjoy 7|Enjoy 10)\\b",SMiTTablet:"Android.*(\\bMID\\b|MID-560|MTV-T1200|MTV-PND531|MTV-P1101|MTV-PND530)",RockChipTablet:"Android.*(RK2818|RK2808A|RK2918|RK3066)|RK2738|RK2808A",FlyTablet:"IQ310|Fly Vision",bqTablet:"Android.*(bq)?.*\\b(Elcano|Curie|Edison|Maxwell|Kepler|Pascal|Tesla|Hypatia|Platon|Newton|Livingstone|Cervantes|Avant|Aquaris ([E|M]10|M8))\\b|Maxwell.*Lite|Maxwell.*Plus",HuaweiTablet:"MediaPad|MediaPad 7 Youth|IDEOS S7|S7-201c|S7-202u|S7-101|S7-103|S7-104|S7-105|S7-106|S7-201|S7-Slim|M2-A01L|BAH-L09|BAH-W09|AGS-L09|CMR-AL19",NecTablet:"\\bN-06D|\\bN-08D",PantechTablet:"Pantech.*P4100",BronchoTablet:"Broncho.*(N701|N708|N802|a710)",VersusTablet:"TOUCHPAD.*[78910]|\\bTOUCHTAB\\b",ZyncTablet:"z1000|Z99 2G|z930|z990|z909|Z919|z900",PositivoTablet:"TB07STA|TB10STA|TB07FTA|TB10FTA",NabiTablet:"Android.*\\bNabi",KoboTablet:"Kobo Touch|\\bK080\\b|\\bVox\\b Build|\\bArc\\b Build",DanewTablet:"DSlide.*\\b(700|701R|702|703R|704|802|970|971|972|973|974|1010|1012)\\b",TexetTablet:"NaviPad|TB-772A|TM-7045|TM-7055|TM-9750|TM-7016|TM-7024|TM-7026|TM-7041|TM-7043|TM-7047|TM-8041|TM-9741|TM-9747|TM-9748|TM-9751|TM-7022|TM-7021|TM-7020|TM-7011|TM-7010|TM-7023|TM-7025|TM-7037W|TM-7038W|TM-7027W|TM-9720|TM-9725|TM-9737W|TM-1020|TM-9738W|TM-9740|TM-9743W|TB-807A|TB-771A|TB-727A|TB-725A|TB-719A|TB-823A|TB-805A|TB-723A|TB-715A|TB-707A|TB-705A|TB-709A|TB-711A|TB-890HD|TB-880HD|TB-790HD|TB-780HD|TB-770HD|TB-721HD|TB-710HD|TB-434HD|TB-860HD|TB-840HD|TB-760HD|TB-750HD|TB-740HD|TB-730HD|TB-722HD|TB-720HD|TB-700HD|TB-500HD|TB-470HD|TB-431HD|TB-430HD|TB-506|TB-504|TB-446|TB-436|TB-416|TB-146SE|TB-126SE",PlaystationTablet:"Playstation.*(Portable|Vita)",TrekstorTablet:"ST10416-1|VT10416-1|ST70408-1|ST702xx-1|ST702xx-2|ST80208|ST97216|ST70104-2|VT10416-2|ST10216-2A|SurfTab",PyleAudioTablet:"\\b(PTBL10CEU|PTBL10C|PTBL72BC|PTBL72BCEU|PTBL7CEU|PTBL7C|PTBL92BC|PTBL92BCEU|PTBL9CEU|PTBL9CUK|PTBL9C)\\b",AdvanTablet:"Android.* \\b(E3A|T3X|T5C|T5B|T3E|T3C|T3B|T1J|T1F|T2A|T1H|T1i|E1C|T1-E|T5-A|T4|E1-B|T2Ci|T1-B|T1-D|O1-A|E1-A|T1-A|T3A|T4i)\\b ",DanyTechTablet:"Genius Tab G3|Genius Tab S2|Genius Tab Q3|Genius Tab G4|Genius Tab Q4|Genius Tab G-II|Genius TAB GII|Genius TAB GIII|Genius Tab S1",GalapadTablet:"Android [0-9.]+; [a-z-]+; \\bG1\\b",MicromaxTablet:"Funbook|Micromax.*\\b(P250|P560|P360|P362|P600|P300|P350|P500|P275)\\b",KarbonnTablet:"Android.*\\b(A39|A37|A34|ST8|ST10|ST7|Smart Tab3|Smart Tab2)\\b",AllFineTablet:"Fine7 Genius|Fine7 Shine|Fine7 Air|Fine8 Style|Fine9 More|Fine10 Joy|Fine11 Wide",PROSCANTablet:"\\b(PEM63|PLT1023G|PLT1041|PLT1044|PLT1044G|PLT1091|PLT4311|PLT4311PL|PLT4315|PLT7030|PLT7033|PLT7033D|PLT7035|PLT7035D|PLT7044K|PLT7045K|PLT7045KB|PLT7071KG|PLT7072|PLT7223G|PLT7225G|PLT7777G|PLT7810K|PLT7849G|PLT7851G|PLT7852G|PLT8015|PLT8031|PLT8034|PLT8036|PLT8080K|PLT8082|PLT8088|PLT8223G|PLT8234G|PLT8235G|PLT8816K|PLT9011|PLT9045K|PLT9233G|PLT9735|PLT9760G|PLT9770G)\\b",YONESTablet:"BQ1078|BC1003|BC1077|RK9702|BC9730|BC9001|IT9001|BC7008|BC7010|BC708|BC728|BC7012|BC7030|BC7027|BC7026",ChangJiaTablet:"TPC7102|TPC7103|TPC7105|TPC7106|TPC7107|TPC7201|TPC7203|TPC7205|TPC7210|TPC7708|TPC7709|TPC7712|TPC7110|TPC8101|TPC8103|TPC8105|TPC8106|TPC8203|TPC8205|TPC8503|TPC9106|TPC9701|TPC97101|TPC97103|TPC97105|TPC97106|TPC97111|TPC97113|TPC97203|TPC97603|TPC97809|TPC97205|TPC10101|TPC10103|TPC10106|TPC10111|TPC10203|TPC10205|TPC10503",GUTablet:"TX-A1301|TX-M9002|Q702|kf026",PointOfViewTablet:"TAB-P506|TAB-navi-7-3G-M|TAB-P517|TAB-P-527|TAB-P701|TAB-P703|TAB-P721|TAB-P731N|TAB-P741|TAB-P825|TAB-P905|TAB-P925|TAB-PR945|TAB-PL1015|TAB-P1025|TAB-PI1045|TAB-P1325|TAB-PROTAB[0-9]+|TAB-PROTAB25|TAB-PROTAB26|TAB-PROTAB27|TAB-PROTAB26XL|TAB-PROTAB2-IPS9|TAB-PROTAB30-IPS9|TAB-PROTAB25XXL|TAB-PROTAB26-IPS10|TAB-PROTAB30-IPS10",OvermaxTablet:"OV-(SteelCore|NewBase|Basecore|Baseone|Exellen|Quattor|EduTab|Solution|ACTION|BasicTab|TeddyTab|MagicTab|Stream|TB-08|TB-09)|Qualcore 1027",HCLTablet:"HCL.*Tablet|Connect-3G-2.0|Connect-2G-2.0|ME Tablet U1|ME Tablet U2|ME Tablet G1|ME Tablet X1|ME Tablet Y2|ME Tablet Sync",DPSTablet:"DPS Dream 9|DPS Dual 7",VistureTablet:"V97 HD|i75 3G|Visture V4( HD)?|Visture V5( HD)?|Visture V10",CrestaTablet:"CTP(-)?810|CTP(-)?818|CTP(-)?828|CTP(-)?838|CTP(-)?888|CTP(-)?978|CTP(-)?980|CTP(-)?987|CTP(-)?988|CTP(-)?989",MediatekTablet:"\\bMT8125|MT8389|MT8135|MT8377\\b",ConcordeTablet:"Concorde([ ]+)?Tab|ConCorde ReadMan",GoCleverTablet:"GOCLEVER TAB|A7GOCLEVER|M1042|M7841|M742|R1042BK|R1041|TAB A975|TAB A7842|TAB A741|TAB A741L|TAB M723G|TAB M721|TAB A1021|TAB I921|TAB R721|TAB I720|TAB T76|TAB R70|TAB R76.2|TAB R106|TAB R83.2|TAB M813G|TAB I721|GCTA722|TAB I70|TAB I71|TAB S73|TAB R73|TAB R74|TAB R93|TAB R75|TAB R76.1|TAB A73|TAB A93|TAB A93.2|TAB T72|TAB R83|TAB R974|TAB R973|TAB A101|TAB A103|TAB A104|TAB A104.2|R105BK|M713G|A972BK|TAB A971|TAB R974.2|TAB R104|TAB R83.3|TAB A1042",ModecomTablet:"FreeTAB 9000|FreeTAB 7.4|FreeTAB 7004|FreeTAB 7800|FreeTAB 2096|FreeTAB 7.5|FreeTAB 1014|FreeTAB 1001 |FreeTAB 8001|FreeTAB 9706|FreeTAB 9702|FreeTAB 7003|FreeTAB 7002|FreeTAB 1002|FreeTAB 7801|FreeTAB 1331|FreeTAB 1004|FreeTAB 8002|FreeTAB 8014|FreeTAB 9704|FreeTAB 1003",VoninoTablet:"\\b(Argus[ _]?S|Diamond[ _]?79HD|Emerald[ _]?78E|Luna[ _]?70C|Onyx[ _]?S|Onyx[ _]?Z|Orin[ _]?HD|Orin[ _]?S|Otis[ _]?S|SpeedStar[ _]?S|Magnet[ _]?M9|Primus[ _]?94[ _]?3G|Primus[ _]?94HD|Primus[ _]?QS|Android.*\\bQ8\\b|Sirius[ _]?EVO[ _]?QS|Sirius[ _]?QS|Spirit[ _]?S)\\b",ECSTablet:"V07OT2|TM105A|S10OT1|TR10CS1",StorexTablet:"eZee[_']?(Tab|Go)[0-9]+|TabLC7|Looney Tunes Tab",VodafoneTablet:"SmartTab([ ]+)?[0-9]+|SmartTabII10|SmartTabII7|VF-1497|VFD 1400",EssentielBTablet:"Smart[ ']?TAB[ ]+?[0-9]+|Family[ ']?TAB2",RossMoorTablet:"RM-790|RM-997|RMD-878G|RMD-974R|RMT-705A|RMT-701|RME-601|RMT-501|RMT-711",iMobileTablet:"i-mobile i-note",TolinoTablet:"tolino tab [0-9.]+|tolino shine",AudioSonicTablet:"\\bC-22Q|T7-QC|T-17B|T-17P\\b",AMPETablet:"Android.* A78 ",SkkTablet:"Android.* (SKYPAD|PHOENIX|CYCLOPS)",TecnoTablet:"TECNO P9|TECNO DP8D",JXDTablet:"Android.* \\b(F3000|A3300|JXD5000|JXD3000|JXD2000|JXD300B|JXD300|S5800|S7800|S602b|S5110b|S7300|S5300|S602|S603|S5100|S5110|S601|S7100a|P3000F|P3000s|P101|P200s|P1000m|P200m|P9100|P1000s|S6600b|S908|P1000|P300|S18|S6600|S9100)\\b",iJoyTablet:"Tablet (Spirit 7|Essentia|Galatea|Fusion|Onix 7|Landa|Titan|Scooby|Deox|Stella|Themis|Argon|Unique 7|Sygnus|Hexen|Finity 7|Cream|Cream X2|Jade|Neon 7|Neron 7|Kandy|Scape|Saphyr 7|Rebel|Biox|Rebel|Rebel 8GB|Myst|Draco 7|Myst|Tab7-004|Myst|Tadeo Jones|Tablet Boing|Arrow|Draco Dual Cam|Aurix|Mint|Amity|Revolution|Finity 9|Neon 9|T9w|Amity 4GB Dual Cam|Stone 4GB|Stone 8GB|Andromeda|Silken|X2|Andromeda II|Halley|Flame|Saphyr 9,7|Touch 8|Planet|Triton|Unique 10|Hexen 10|Memphis 4GB|Memphis 8GB|Onix 10)",FX2Tablet:"FX2 PAD7|FX2 PAD10",XoroTablet:"KidsPAD 701|PAD[ ]?712|PAD[ ]?714|PAD[ ]?716|PAD[ ]?717|PAD[ ]?718|PAD[ ]?720|PAD[ ]?721|PAD[ ]?722|PAD[ ]?790|PAD[ ]?792|PAD[ ]?900|PAD[ ]?9715D|PAD[ ]?9716DR|PAD[ ]?9718DR|PAD[ ]?9719QR|PAD[ ]?9720QR|TelePAD1030|Telepad1032|TelePAD730|TelePAD731|TelePAD732|TelePAD735Q|TelePAD830|TelePAD9730|TelePAD795|MegaPAD 1331|MegaPAD 1851|MegaPAD 2151",ViewsonicTablet:"ViewPad 10pi|ViewPad 10e|ViewPad 10s|ViewPad E72|ViewPad7|ViewPad E100|ViewPad 7e|ViewSonic VB733|VB100a",VerizonTablet:"QTAQZ3|QTAIR7|QTAQTZ3|QTASUN1|QTASUN2|QTAXIA1",OdysTablet:"LOOX|XENO10|ODYS[ -](Space|EVO|Xpress|NOON)|\\bXELIO\\b|Xelio10Pro|XELIO7PHONETAB|XELIO10EXTREME|XELIOPT2|NEO_QUAD10",CaptivaTablet:"CAPTIVA PAD",IconbitTablet:"NetTAB|NT-3702|NT-3702S|NT-3702S|NT-3603P|NT-3603P|NT-0704S|NT-0704S|NT-3805C|NT-3805C|NT-0806C|NT-0806C|NT-0909T|NT-0909T|NT-0907S|NT-0907S|NT-0902S|NT-0902S",TeclastTablet:"T98 4G|\\bP80\\b|\\bX90HD\\b|X98 Air|X98 Air 3G|\\bX89\\b|P80 3G|\\bX80h\\b|P98 Air|\\bX89HD\\b|P98 3G|\\bP90HD\\b|P89 3G|X98 3G|\\bP70h\\b|P79HD 3G|G18d 3G|\\bP79HD\\b|\\bP89s\\b|\\bA88\\b|\\bP10HD\\b|\\bP19HD\\b|G18 3G|\\bP78HD\\b|\\bA78\\b|\\bP75\\b|G17s 3G|G17h 3G|\\bP85t\\b|\\bP90\\b|\\bP11\\b|\\bP98t\\b|\\bP98HD\\b|\\bG18d\\b|\\bP85s\\b|\\bP11HD\\b|\\bP88s\\b|\\bA80HD\\b|\\bA80se\\b|\\bA10h\\b|\\bP89\\b|\\bP78s\\b|\\bG18\\b|\\bP85\\b|\\bA70h\\b|\\bA70\\b|\\bG17\\b|\\bP18\\b|\\bA80s\\b|\\bA11s\\b|\\bP88HD\\b|\\bA80h\\b|\\bP76s\\b|\\bP76h\\b|\\bP98\\b|\\bA10HD\\b|\\bP78\\b|\\bP88\\b|\\bA11\\b|\\bA10t\\b|\\bP76a\\b|\\bP76t\\b|\\bP76e\\b|\\bP85HD\\b|\\bP85a\\b|\\bP86\\b|\\bP75HD\\b|\\bP76v\\b|\\bA12\\b|\\bP75a\\b|\\bA15\\b|\\bP76Ti\\b|\\bP81HD\\b|\\bA10\\b|\\bT760VE\\b|\\bT720HD\\b|\\bP76\\b|\\bP73\\b|\\bP71\\b|\\bP72\\b|\\bT720SE\\b|\\bC520Ti\\b|\\bT760\\b|\\bT720VE\\b|T720-3GE|T720-WiFi",OndaTablet:"\\b(V975i|Vi30|VX530|V701|Vi60|V701s|Vi50|V801s|V719|Vx610w|VX610W|V819i|Vi10|VX580W|Vi10|V711s|V813|V811|V820w|V820|Vi20|V711|VI30W|V712|V891w|V972|V819w|V820w|Vi60|V820w|V711|V813s|V801|V819|V975s|V801|V819|V819|V818|V811|V712|V975m|V101w|V961w|V812|V818|V971|V971s|V919|V989|V116w|V102w|V973|Vi40)\\b[\\s]+|V10 \\b4G\\b",JaytechTablet:"TPC-PA762",BlaupunktTablet:"Endeavour 800NG|Endeavour 1010",DigmaTablet:"\\b(iDx10|iDx9|iDx8|iDx7|iDxD7|iDxD8|iDsQ8|iDsQ7|iDsQ8|iDsD10|iDnD7|3TS804H|iDsQ11|iDj7|iDs10)\\b",EvolioTablet:"ARIA_Mini_wifi|Aria[ _]Mini|Evolio X10|Evolio X7|Evolio X8|\\bEvotab\\b|\\bNeura\\b",LavaTablet:"QPAD E704|\\bIvoryS\\b|E-TAB IVORY|\\bE-TAB\\b",AocTablet:"MW0811|MW0812|MW0922|MTK8382|MW1031|MW0831|MW0821|MW0931|MW0712",MpmanTablet:"MP11 OCTA|MP10 OCTA|MPQC1114|MPQC1004|MPQC994|MPQC974|MPQC973|MPQC804|MPQC784|MPQC780|\\bMPG7\\b|MPDCG75|MPDCG71|MPDC1006|MP101DC|MPDC9000|MPDC905|MPDC706HD|MPDC706|MPDC705|MPDC110|MPDC100|MPDC99|MPDC97|MPDC88|MPDC8|MPDC77|MP709|MID701|MID711|MID170|MPDC703|MPQC1010",CelkonTablet:"CT695|CT888|CT[\\s]?910|CT7 Tab|CT9 Tab|CT3 Tab|CT2 Tab|CT1 Tab|C820|C720|\\bCT-1\\b",WolderTablet:"miTab \\b(DIAMOND|SPACE|BROOKLYN|NEO|FLY|MANHATTAN|FUNK|EVOLUTION|SKY|GOCAR|IRON|GENIUS|POP|MINT|EPSILON|BROADWAY|JUMP|HOP|LEGEND|NEW AGE|LINE|ADVANCE|FEEL|FOLLOW|LIKE|LINK|LIVE|THINK|FREEDOM|CHICAGO|CLEVELAND|BALTIMORE-GH|IOWA|BOSTON|SEATTLE|PHOENIX|DALLAS|IN 101|MasterChef)\\b",MediacomTablet:"M-MPI10C3G|M-SP10EG|M-SP10EGP|M-SP10HXAH|M-SP7HXAH|M-SP10HXBH|M-SP8HXAH|M-SP8MXA",MiTablet:"\\bMI PAD\\b|\\bHM NOTE 1W\\b",NibiruTablet:"Nibiru M1|Nibiru Jupiter One",NexoTablet:"NEXO NOVA|NEXO 10|NEXO AVIO|NEXO FREE|NEXO GO|NEXO EVO|NEXO 3G|NEXO SMART|NEXO KIDDO|NEXO MOBI",LeaderTablet:"TBLT10Q|TBLT10I|TBL-10WDKB|TBL-10WDKBO2013|TBL-W230V2|TBL-W450|TBL-W500|SV572|TBLT7I|TBA-AC7-8G|TBLT79|TBL-8W16|TBL-10W32|TBL-10WKB|TBL-W100",UbislateTablet:"UbiSlate[\\s]?7C",PocketBookTablet:"Pocketbook",KocasoTablet:"\\b(TB-1207)\\b",HisenseTablet:"\\b(F5281|E2371)\\b",Hudl:"Hudl HT7S3|Hudl 2",TelstraTablet:"T-Hub2",GenericTablet:"Android.*\\b97D\\b|Tablet(?!.*PC)|BNTV250A|MID-WCDMA|LogicPD Zoom2|\\bA7EB\\b|CatNova8|A1_07|CT704|CT1002|\\bM721\\b|rk30sdk|\\bEVOTAB\\b|M758A|ET904|ALUMIUM10|Smartfren Tab|Endeavour 1010|Tablet-PC-4|Tagi Tab|\\bM6pro\\b|CT1020W|arc 10HD|\\bTP750\\b|\\bQTAQZ3\\b|WVT101|TM1088|KT107"},oss:{AndroidOS:"Android",BlackBerryOS:"blackberry|\\bBB10\\b|rim tablet os",PalmOS:"PalmOS|avantgo|blazer|elaine|hiptop|palm|plucker|xiino",SymbianOS:"Symbian|SymbOS|Series60|Series40|SYB-[0-9]+|\\bS60\\b",WindowsMobileOS:"Windows CE.*(PPC|Smartphone|Mobile|[0-9]{3}x[0-9]{3})|Windows Mobile|Windows Phone [0-9.]+|WCE;",WindowsPhoneOS:"Windows Phone 10.0|Windows Phone 8.1|Windows Phone 8.0|Windows Phone OS|XBLWP7|ZuneWP7|Windows NT 6.[23]; ARM;",iOS:"\\biPhone.*Mobile|\\biPod|\\biPad|AppleCoreMedia",iPadOS:"CPU OS 13",SailfishOS:"Sailfish",MeeGoOS:"MeeGo",MaemoOS:"Maemo",JavaOS:"J2ME/|\\bMIDP\\b|\\bCLDC\\b",webOS:"webOS|hpwOS",badaOS:"\\bBada\\b",BREWOS:"BREW"},uas:{Chrome:"\\bCrMo\\b|CriOS|Android.*Chrome/[.0-9]* (Mobile)?",Dolfin:"\\bDolfin\\b",Opera:"Opera.*Mini|Opera.*Mobi|Android.*Opera|Mobile.*OPR/[0-9.]+$|Coast/[0-9.]+",Skyfire:"Skyfire",Edge:"\\bEdgiOS\\b|Mobile Safari/[.0-9]* Edge",IE:"IEMobile|MSIEMobile",Firefox:"fennec|firefox.*maemo|(Mobile|Tablet).*Firefox|Firefox.*Mobile|FxiOS",Bolt:"bolt",TeaShark:"teashark",Blazer:"Blazer",Safari:"Version((?!\\bEdgiOS\\b).)*Mobile.*Safari|Safari.*Mobile|MobileSafari",WeChat:"\\bMicroMessenger\\b",UCBrowser:"UC.*Browser|UCWEB",baiduboxapp:"baiduboxapp",baidubrowser:"baidubrowser",DiigoBrowser:"DiigoBrowser",Mercury:"\\bMercury\\b",ObigoBrowser:"Obigo",NetFront:"NF-Browser",GenericBrowser:"NokiaBrowser|OviBrowser|OneBrowser|TwonkyBeamBrowser|SEMC.*Browser|FlyFlow|Minimo|NetFront|Novarra-Vision|MQQBrowser|MicroMessenger",PaleMoon:"Android.*PaleMoon|Mobile.*PaleMoon"},props:{Mobile:"Mobile/[VER]",Build:"Build/[VER]",Version:"Version/[VER]",VendorID:"VendorID/[VER]",iPad:"iPad.*CPU[a-z ]+[VER]",iPhone:"iPhone.*CPU[a-z ]+[VER]",iPod:"iPod.*CPU[a-z ]+[VER]",Kindle:"Kindle/[VER]",Chrome:["Chrome/[VER]","CriOS/[VER]","CrMo/[VER]"],Coast:["Coast/[VER]"],Dolfin:"Dolfin/[VER]",Firefox:["Firefox/[VER]","FxiOS/[VER]"],Fennec:"Fennec/[VER]",Edge:"Edge/[VER]",IE:["IEMobile/[VER];","IEMobile [VER]","MSIE [VER];","Trident/[0-9.]+;.*rv:[VER]"],NetFront:"NetFront/[VER]",NokiaBrowser:"NokiaBrowser/[VER]",Opera:[" OPR/[VER]","Opera Mini/[VER]","Version/[VER]"],"Opera Mini":"Opera Mini/[VER]","Opera Mobi":"Version/[VER]",UCBrowser:["UCWEB[VER]","UC.*Browser/[VER]"],MQQBrowser:"MQQBrowser/[VER]",MicroMessenger:"MicroMessenger/[VER]",baiduboxapp:"baiduboxapp/[VER]",baidubrowser:"baidubrowser/[VER]",SamsungBrowser:"SamsungBrowser/[VER]",Iron:"Iron/[VER]",Safari:["Version/[VER]","Safari/[VER]"],Skyfire:"Skyfire/[VER]",Tizen:"Tizen/[VER]",Webkit:"webkit[ /][VER]",PaleMoon:"PaleMoon/[VER]",SailfishBrowser:"SailfishBrowser/[VER]",Gecko:"Gecko/[VER]",Trident:"Trident/[VER]",Presto:"Presto/[VER]",Goanna:"Goanna/[VER]",iOS:" \\bi?OS\\b [VER][ ;]{1}",Android:"Android [VER]",Sailfish:"Sailfish [VER]",BlackBerry:["BlackBerry[\\w]+/[VER]","BlackBerry.*Version/[VER]","Version/[VER]"],BREW:"BREW [VER]",Java:"Java/[VER]","Windows Phone OS":["Windows Phone OS [VER]","Windows Phone [VER]"],"Windows Phone":"Windows Phone [VER]","Windows CE":"Windows CE/[VER]","Windows NT":"Windows NT [VER]",Symbian:["SymbianOS/[VER]","Symbian/[VER]"],webOS:["webOS/[VER]","hpwOS/[VER];"]},utils:{Bot:"Googlebot|facebookexternalhit|Google-AMPHTML|s~amp-validator|AdsBot-Google|Google Keyword Suggestion|Facebot|YandexBot|YandexMobileBot|bingbot|ia_archiver|AhrefsBot|Ezooms|GSLFbot|WBSearchBot|Twitterbot|TweetmemeBot|Twikle|PaperLiBot|Wotbox|UnwindFetchor|Exabot|MJ12bot|YandexImages|TurnitinBot|Pingdom|contentkingapp|AspiegelBot",MobileBot:"Googlebot-Mobile|AdsBot-Google-Mobile|YahooSeeker/M1A1-R2D2",DesktopMode:"WPDesktop",TV:"SonyDTV|HbbTV",WebKit:"(webkit)[ /]([\\w.]+)",Console:"\\b(Nintendo|Nintendo WiiU|Nintendo 3DS|Nintendo Switch|PLAYSTATION|Xbox)\\b",Watch:"SM-V700"}},g.detectMobileBrowsers={fullPattern:/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i,
+shortPattern:/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,tabletPattern:/android|ipad|playbook|silk/i};var h,i=Object.prototype.hasOwnProperty;return g.FALLBACK_PHONE="UnknownPhone",g.FALLBACK_TABLET="UnknownTablet",g.FALLBACK_MOBILE="UnknownMobile",h="isArray"in Array?Array.isArray:function(a){return"[object Array]"===Object.prototype.toString.call(a)},function(){var a,b,c,e,f,j,k=g.mobileDetectRules;for(a in k.props)if(i.call(k.props,a)){for(b=k.props[a],h(b)||(b=[b]),f=b.length,e=0;e<f;++e)c=b[e],j=c.indexOf("[VER]"),j>=0&&(c=c.substring(0,j)+"([\\w._\\+]+)"+c.substring(j+5)),b[e]=new RegExp(c,"i");k.props[a]=b}d(k.oss),d(k.phones),d(k.tablets),d(k.uas),d(k.utils),k.oss0={WindowsPhoneOS:k.oss.WindowsPhoneOS,WindowsMobileOS:k.oss.WindowsMobileOS}}(),g.findMatch=function(a,b){for(var c in a)if(i.call(a,c)&&a[c].test(b))return c;return null},g.findMatches=function(a,b){var c=[];for(var d in a)i.call(a,d)&&a[d].test(b)&&c.push(d);return c},g.getVersionStr=function(a,b){var c,d,e,f,h=g.mobileDetectRules.props;if(i.call(h,a))for(c=h[a],e=c.length,d=0;d<e;++d)if(f=c[d].exec(b),null!==f)return f[1];return null},g.getVersion=function(a,b){var c=g.getVersionStr(a,b);return c?g.prepareVersionNo(c):NaN},g.prepareVersionNo=function(a){var b;return b=a.split(/[a-z._ \/\-]/i),1===b.length&&(a=b[0]),b.length>1&&(a=b[0]+".",b.shift(),a+=b.join("")),Number(a)},g.isMobileFallback=function(a){return g.detectMobileBrowsers.fullPattern.test(a)||g.detectMobileBrowsers.shortPattern.test(a.substr(0,4))},g.isTabletFallback=function(a){return g.detectMobileBrowsers.tabletPattern.test(a)},g.prepareDetectionCache=function(a,c,d){if(a.mobile===b){var e,h,i;return(h=g.findMatch(g.mobileDetectRules.tablets,c))?(a.mobile=a.tablet=h,void(a.phone=null)):(e=g.findMatch(g.mobileDetectRules.phones,c))?(a.mobile=a.phone=e,void(a.tablet=null)):void(g.isMobileFallback(c)?(i=f.isPhoneSized(d),i===b?(a.mobile=g.FALLBACK_MOBILE,a.tablet=a.phone=null):i?(a.mobile=a.phone=g.FALLBACK_PHONE,a.tablet=null):(a.mobile=a.tablet=g.FALLBACK_TABLET,a.phone=null)):g.isTabletFallback(c)?(a.mobile=a.tablet=g.FALLBACK_TABLET,a.phone=null):a.mobile=a.tablet=a.phone=null)}},g.mobileGrade=function(a){var b=null!==a.mobile();return a.os("iOS")&&a.version("iPad")>=4.3||a.os("iOS")&&a.version("iPhone")>=3.1||a.os("iOS")&&a.version("iPod")>=3.1||a.version("Android")>2.1&&a.is("Webkit")||a.version("Windows Phone OS")>=7||a.is("BlackBerry")&&a.version("BlackBerry")>=6||a.match("Playbook.*Tablet")||a.version("webOS")>=1.4&&a.match("Palm|Pre|Pixi")||a.match("hp.*TouchPad")||a.is("Firefox")&&a.version("Firefox")>=12||a.is("Chrome")&&a.is("AndroidOS")&&a.version("Android")>=4||a.is("Skyfire")&&a.version("Skyfire")>=4.1&&a.is("AndroidOS")&&a.version("Android")>=2.3||a.is("Opera")&&a.version("Opera Mobi")>11&&a.is("AndroidOS")||a.is("MeeGoOS")||a.is("Tizen")||a.is("Dolfin")&&a.version("Bada")>=2||(a.is("UC Browser")||a.is("Dolfin"))&&a.version("Android")>=2.3||a.match("Kindle Fire")||a.is("Kindle")&&a.version("Kindle")>=3||a.is("AndroidOS")&&a.is("NookTablet")||a.version("Chrome")>=11&&!b||a.version("Safari")>=5&&!b||a.version("Firefox")>=4&&!b||a.version("MSIE")>=7&&!b||a.version("Opera")>=10&&!b?"A":a.os("iOS")&&a.version("iPad")<4.3||a.os("iOS")&&a.version("iPhone")<3.1||a.os("iOS")&&a.version("iPod")<3.1||a.is("Blackberry")&&a.version("BlackBerry")>=5&&a.version("BlackBerry")<6||a.version("Opera Mini")>=5&&a.version("Opera Mini")<=6.5&&(a.version("Android")>=2.3||a.is("iOS"))||a.match("NokiaN8|NokiaC7|N97.*Series60|Symbian/3")||a.version("Opera Mobi")>=11&&a.is("SymbianOS")?"B":(a.version("BlackBerry")<5||a.match("MSIEMobile|Windows CE.*Mobile")||a.version("Windows Mobile")<=5.2,"C")},g.detectOS=function(a){return g.findMatch(g.mobileDetectRules.oss0,a)||g.findMatch(g.mobileDetectRules.oss,a)},g.getDeviceSmallerSide=function(){return window.screen.width<window.screen.height?window.screen.width:window.screen.height},f.prototype={constructor:f,mobile:function(){return g.prepareDetectionCache(this._cache,this.ua,this.maxPhoneWidth),this._cache.mobile},phone:function(){return g.prepareDetectionCache(this._cache,this.ua,this.maxPhoneWidth),this._cache.phone},tablet:function(){return g.prepareDetectionCache(this._cache,this.ua,this.maxPhoneWidth),this._cache.tablet},userAgent:function(){return this._cache.userAgent===b&&(this._cache.userAgent=g.findMatch(g.mobileDetectRules.uas,this.ua)),this._cache.userAgent},userAgents:function(){return this._cache.userAgents===b&&(this._cache.userAgents=g.findMatches(g.mobileDetectRules.uas,this.ua)),this._cache.userAgents},os:function(){return this._cache.os===b&&(this._cache.os=g.detectOS(this.ua)),this._cache.os},version:function(a){return g.getVersion(a,this.ua)},versionStr:function(a){return g.getVersionStr(a,this.ua)},is:function(b){return c(this.userAgents(),b)||a(b,this.os())||a(b,this.phone())||a(b,this.tablet())||c(g.findMatches(g.mobileDetectRules.utils,this.ua),b)},match:function(a){return a instanceof RegExp||(a=new RegExp(a,"i")),a.test(this.ua)},isPhoneSized:function(a){return f.isPhoneSized(a||this.maxPhoneWidth)},mobileGrade:function(){return this._cache.grade===b&&(this._cache.grade=g.mobileGrade(this)),this._cache.grade}},"undefined"!=typeof window&&window.screen?f.isPhoneSized=function(a){return a<0?b:g.getDeviceSmallerSide()<=a}:f.isPhoneSized=function(){},f._impl=g,f.version="1.4.5 2021-03-13",f})}(function(a){if("undefined"!=typeof module&&module.exports)return function(a){module.exports=a()};if("function"==typeof define&&define.amd)return define;if("undefined"!=typeof window)return function(a){window.MobileDetect=a()};throw new Error("unknown environment")}());var ai_lists=!0,ai_block_class_def="code-block";
+if("undefined"!=typeof ai_lists){function X(b,e){for(var p=[];b=b.previousElementSibling;)("undefined"==typeof e||b.matches(e))&&p.push(b);return p}function fa(b,e){for(var p=[];b=b.nextElementSibling;)("undefined"==typeof e||b.matches(e))&&p.push(b);return p}var host_regexp=RegExp(":\\/\\/(.[^/:]+)","i");function ha(b){b=b.match(host_regexp);return null!=b&&1<b.length&&"string"===typeof b[1]&&0<b[1].length?b[1].toLowerCase():null}function Q(b){return b.includes(":")?(b=b.split(":"),1E3*(3600*parseInt(b[0])+
+60*parseInt(b[1])+parseInt(b[2]))):null}function Y(b){try{var e=Date.parse(b);isNaN(e)&&(e=null)}catch(p){e=null}if(null==e&&b.includes(" ")){b=b.split(" ");try{e=Date.parse(b[0]),e+=Q(b[1]),isNaN(e)&&(e=null)}catch(p){e=null}}return e}function Z(){null==document.querySelector("#ai-iab-tcf-bar")&&null==document.querySelector(".ai-list-manual")||"function"!=typeof __tcfapi||"function"!=typeof ai_load_blocks||"undefined"!=typeof ai_iab_tcf_callback_installed||(__tcfapi("addEventListener",2,function(b,
+e){e&&"useractioncomplete"===b.eventStatus&&(ai_tcData=b,ai_load_blocks(),b=document.querySelector("#ai-iab-tcf-status"),null!=b&&(b.textContent="IAB TCF 2.0 DATA LOADED"),b=document.querySelector("#ai-iab-tcf-bar"),null!=b&&(b.classList.remove("status-error"),b.classList.add("status-ok")))}),ai_iab_tcf_callback_installed=!0)}ai_process_lists=function(b){function e(a,d,k){if(0==a.length){if("!@!"==k)return!0;d!=k&&("true"==k.toLowerCase()?k=!0:"false"==k.toLowerCase()&&(k=!1));return d==k}if("object"!=
+typeof d&&"array"!=typeof d)return!1;var l=a[0];a=a.slice(1);if("*"==l)for(let [,n]of Object.entries(d)){if(e(a,n,k))return!0}else if(l in d)return e(a,d[l],k);return!1}function p(a,d,k){if("object"!=typeof a||-1==d.indexOf("["))return!1;d=d.replace(/]| /gi,"").split("[");return e(d,a,k)}function z(){if("function"==typeof __tcfapi){var a=document.querySelector("#ai-iab-tcf-status"),d=document.querySelector("#ai-iab-tcf-bar");null!=a&&(a.textContent="IAB TCF 2.0 DETECTED");__tcfapi("getTCData",2,function(k,
+l){l?(null!=d&&d.classList.add("status-ok"),"tcloaded"==k.eventStatus||"useractioncomplete"==k.eventStatus)?(ai_tcData=k,k.gdprApplies?null!=a&&(a.textContent="IAB TCF 2.0 DATA LOADED"):null!=a&&(a.textContent="IAB TCF 2.0 GDPR DOES NOT APPLY"),null!=d&&(d.classList.remove("status-error"),d.classList.add("status-ok")),setTimeout(function(){ai_process_lists()},10)):"cmpuishown"==k.eventStatus&&(ai_cmpuishown=!0,null!=a&&(a.textContent="IAB TCF 2.0 CMP UI SHOWN"),null!=d&&(d.classList.remove("status-error"),
+d.classList.add("status-ok"))):(null!=a&&(a.textContent="IAB TCF 2.0 __tcfapi getTCData failed"),null!=d&&(d.classList.remove("status-ok"),d.classList.add("status-error")))})}}function C(a){"function"==typeof __tcfapi?(ai_tcfapi_found=!0,"undefined"==typeof ai_iab_tcf_callback_installed&&Z(),"undefined"==typeof ai_tcData_requested&&(ai_tcData_requested=!0,z(),cookies_need_tcData=!0)):a&&("undefined"==typeof ai_tcfapi_found&&(ai_tcfapi_found=!1,setTimeout(function(){ai_process_lists()},10)),a=document.querySelector("#ai-iab-tcf-status"),
+null!=a&&(a.textContent="IAB TCF 2.0 MISSING: __tcfapi function not found"),a=document.querySelector("#ai-iab-tcf-bar"),null!=a&&(a.classList.remove("status-ok"),a.classList.add("status-error")))}if(null==b)b=document.querySelectorAll("div.ai-list-data, meta.ai-list-data");else{window.jQuery&&window.jQuery.fn&&b instanceof jQuery&&(b=Array.prototype.slice.call(b));var x=[];b.forEach((a,d)=>{a.matches(".ai-list-data")?x.push(a):(a=a.querySelectorAll(".ai-list-data"),a.length&&a.forEach((k,l)=>{x.push(k)}))});
+b=x}if(b.length){b.forEach((a,d)=>{a.classList.remove("ai-list-data")});var L=ia(window.location.search);if(null!=L.referrer)var A=L.referrer;else A=document.referrer,""!=A&&(A=ha(A));var R=window.navigator.userAgent,S=R.toLowerCase(),aa=navigator.language,M=aa.toLowerCase();if("undefined"!==typeof MobileDetect)var ba=new MobileDetect(R);b.forEach((a,d)=>{var k=document.cookie.split(";");k.forEach(function(f,h){k[h]=f.trim()});d=a.closest("div."+ai_block_class_def);var l=!0;if(a.hasAttribute("referer-list")){var n=
+a.getAttribute("referer-list");n=b64d(n).split(",");var v=a.getAttribute("referer-list-type"),E=!1;n.every((f,h)=>{f=f.trim();if(""==f)return!0;if("*"==f.charAt(0))if("*"==f.charAt(f.length-1)){if(f=f.substr(1,f.length-2),-1!=A.indexOf(f))return E=!0,!1}else{if(f=f.substr(1),A.substr(-f.length)==f)return E=!0,!1}else if("*"==f.charAt(f.length-1)){if(f=f.substr(0,f.length-1),0==A.indexOf(f))return E=!0,!1}else if("#"==f){if(""==A)return E=!0,!1}else if(f==A)return E=!0,!1;return!0});var r=E;switch(v){case "B":r&&
+(l=!1);break;case "W":r||(l=!1)}}if(l&&a.hasAttribute("client-list")&&"undefined"!==typeof ba)switch(n=a.getAttribute("client-list"),n=b64d(n).split(","),v=a.getAttribute("client-list-type"),r=!1,n.every((f,h)=>{if(""==f.trim())return!0;f.split("&&").every((c,t)=>{t=!0;var w=!1;for(c=c.trim();"!!"==c.substring(0,2);)t=!t,c=c.substring(2);"language:"==c.substring(0,9)&&(w=!0,c=c.substring(9).toLowerCase());var q=!1;w?"*"==c.charAt(0)?"*"==c.charAt(c.length-1)?(c=c.substr(1,c.length-2).toLowerCase(),
+-1!=M.indexOf(c)&&(q=!0)):(c=c.substr(1).toLowerCase(),M.substr(-c.length)==c&&(q=!0)):"*"==c.charAt(c.length-1)?(c=c.substr(0,c.length-1).toLowerCase(),0==M.indexOf(c)&&(q=!0)):c==M&&(q=!0):"*"==c.charAt(0)?"*"==c.charAt(c.length-1)?(c=c.substr(1,c.length-2).toLowerCase(),-1!=S.indexOf(c)&&(q=!0)):(c=c.substr(1).toLowerCase(),S.substr(-c.length)==c&&(q=!0)):"*"==c.charAt(c.length-1)?(c=c.substr(0,c.length-1).toLowerCase(),0==S.indexOf(c)&&(q=!0)):ba.is(c)&&(q=!0);return(r=q?t:!t)?!0:!1});return r?
+!1:!0}),v){case "B":r&&(l=!1);break;case "W":r||(l=!1)}var N=n=!1;for(v=1;2>=v;v++)if(l){switch(v){case 1:var g=a.getAttribute("cookie-list");break;case 2:g=a.getAttribute("parameter-list")}if(null!=g){g=b64d(g);switch(v){case 1:var y=a.getAttribute("cookie-list-type");break;case 2:y=a.getAttribute("parameter-list-type")}g=g.replace("tcf-gdpr","tcf-v2[gdprApplies]=true");g=g.replace("tcf-no-gdpr","tcf-v2[gdprApplies]=false");g=g.replace("tcf-google","tcf-v2[vendor][consents][755]=true && tcf-v2[purpose][consents][1]=true");
+g=g.replace("tcf-no-google","!!tcf-v2[vendor][consents][755]");g=g.replace("tcf-media.net","tcf-v2[vendor][consents][142]=true && tcf-v2[purpose][consents][1]=true");g=g.replace("tcf-no-media.net","!!tcf-v2[vendor][consents][142]");g=g.replace("tcf-amazon","tcf-v2[vendor][consents][793]=true && tcf-v2[purpose][consents][1]=true");g=g.replace("tcf-no-amazon","!!tcf-v2[vendor][consents][793]");g=g.replace("tcf-ezoic","tcf-v2[vendor][consents][347]=true && tcf-v2[purpose][consents][1]=true");g=g.replace("tcf-no-ezoic",
+"!!tcf-v2[vendor][consents][347]");var F=g.split(","),ca=[];k.forEach(function(f){f=f.split("=");try{var h=JSON.parse(decodeURIComponent(f[1]))}catch(c){h=decodeURIComponent(f[1])}ca[f[0]]=h});r=!1;var I=a;F.every((f,h)=>{f.split("&&").every((c,t)=>{t=!0;for(c=c.trim();"!!"==c.substring(0,2);)t=!t,c=c.substring(2);var w=c,q="!@!",T="tcf-v2"==w&&"!@!"==q,B=-1!=c.indexOf("["),J=0==c.indexOf("tcf-v2")||0==c.indexOf("euconsent-v2");J=J&&(B||T);-1!=c.indexOf("=")&&(q=c.split("="),w=q[0],q=q[1],B=-1!=w.indexOf("["),
+J=(J=0==w.indexOf("tcf-v2")||0==w.indexOf("euconsent-v2"))&&(B||T));if(J)document.querySelector("#ai-iab-tcf-status"),B=document.querySelector("#ai-iab-tcf-bar"),null!=B&&(B.style.display="block"),T&&"boolean"==typeof ai_tcfapi_found?r=ai_tcfapi_found?t:!t:"object"==typeof ai_tcData?(null!=B&&B.classList.add("status-ok"),w=w.replace(/]| /gi,"").split("["),w.shift(),r=(w=e(w,ai_tcData,q))?t:!t):"undefined"==typeof ai_tcfapi_found&&(I.classList.add("ai-list-data"),N=!0,"function"==typeof __tcfapi?C(!1):
+"undefined"==typeof ai_tcData_retrying&&(ai_tcData_retrying=!0,setTimeout(function(){"function"==typeof __tcfapi?C(!1):setTimeout(function(){"function"==typeof __tcfapi?C(!1):setTimeout(function(){C(!0)},3E3)},1E3)},600)));else if(B)r=(w=p(ca,w,q))?t:!t;else{var U=!1;"!@!"==q?k.every(function(ja){return ja.split("=")[0]==c?(U=!0,!1):!0}):U=-1!=k.indexOf(c);r=U?t:!t}return r?!0:!1});return r?!1:!0});r&&(N=!1,I.classList.remove("ai-list-data"));switch(y){case "B":r&&(l=!1);break;case "W":r||(l=!1)}}}a.classList.contains("ai-list-manual")&&
+(l?(I.classList.remove("ai-list-data"),I.classList.remove("ai-list-manual")):(n=!0,I.classList.add("ai-list-data")));(l||!n&&!N)&&a.hasAttribute("data-debug-info")&&(g=document.querySelector("."+a.dataset.debugInfo),null!=g&&(g=g.parentElement,null!=g&&g.classList.contains("ai-debug-info")&&g.remove()));y=X(a,".ai-debug-bar.ai-debug-lists");var ka=""==A?"#":A;0!=y.length&&y.forEach((f,h)=>{h=f.querySelector(".ai-debug-name.ai-list-info");null!=h&&(h.textContent=ka,h.title=R+"\n"+aa);h=f.querySelector(".ai-debug-name.ai-list-status");
+null!=h&&(h.textContent=l?ai_front.visible:ai_front.hidden)});g=!1;if(l&&a.hasAttribute("scheduling-start")&&a.hasAttribute("scheduling-end")&&a.hasAttribute("scheduling-days")){var u=a.getAttribute("scheduling-start");v=a.getAttribute("scheduling-end");y=a.getAttribute("scheduling-days");g=!0;u=b64d(u);F=b64d(v);var V=parseInt(a.getAttribute("scheduling-fallback")),O=parseInt(a.getAttribute("gmt"));if(u.includes("-")||F.includes("-"))P=Y(u)+O,K=Y(F)+O;else var P=Q(u),K=Q(F);P??=0;K??=0;var W=b64d(y).split(",");
+y=a.getAttribute("scheduling-type");var D=(new Date).getTime()+O;v=new Date(D);var G=v.getDay();0==G?G=6:G--;u.includes("-")||F.includes("-")||(u=(new Date(v.getFullYear(),v.getMonth(),v.getDate())).getTime()+O,D-=u,0>D&&(D+=864E5));scheduling_start_date_ok=D>=P;scheduling_end_date_ok=0==K||D<K;u=scheduling_start_date_ok&&scheduling_end_date_ok&&W.includes(G.toString());switch(y){case "B":u=!u}u||(l=!1);var la=v.toISOString().split(".")[0].replace("T"," ");y=X(a,".ai-debug-bar.ai-debug-scheduling");
+0!=y.length&&y.forEach((f,h)=>{h=f.querySelector(".ai-debug-name.ai-scheduling-info");null!=h&&(h.textContent=la+" "+G+" current_time: "+Math.floor(D.toString()/1E3)+"  start_date:"+Math.floor(P/1E3).toString()+"=>"+scheduling_start_date_ok.toString()+" end_date:"+Math.floor(K/1E3).toString()+"=>"+scheduling_end_date_ok.toString()+" days:"+W.toString()+"=>"+W.includes(G.toString()).toString());h=f.querySelector(".ai-debug-name.ai-scheduling-status");null!=h&&(h.textContent=l?ai_front.visible:ai_front.hidden);
+l||0==V||(f.classList.remove("ai-debug-scheduling"),f.classList.add("ai-debug-fallback"),h=f.querySelector(".ai-debug-name.ai-scheduling-status"),null!=h&&(h.textContent=ai_front.fallback+" = "+V))})}if(n||!l&&N)return!0;a.style.visibility="";a.style.position="";a.style.width="";a.style.height="";a.style.zIndex="";if(l){if(null!=d&&(d.style.visibility="",d.classList.contains("ai-remove-position")&&(d.style.position="")),a.hasAttribute("data-code")){n=b64d(a.dataset.code);u=document.createRange();
+g=!0;try{H=u.createContextualFragment(n)}catch(f){g=!1}g&&(null!=a.closest("head")?(a.parentNode.insertBefore(H,a.nextSibling),a.remove()):a.append(H));da(a)}}else if(g&&!u&&0!=V){null!=d&&(d.style.visibility="",d.classList.contains("ai-remove-position")&&d.css({position:""}));n=fa(a,".ai-fallback");0!=n.length&&n.forEach((f,h)=>{f.classList.remove("ai-fallback")});if(a.hasAttribute("data-fallback-code")){n=b64d(a.dataset.fallbackCode);u=document.createRange();g=!0;try{var H=u.createContextualFragment(n)}catch(f){g=
+!1}g&&a.append(H);da(a)}else a.style.display="none",null!=d&&null==d.querySelector(".ai-debug-block")&&d.hasAttribute("style")&&-1==d.getAttribute("style").indexOf("height:")&&(d.style.display="none");null!=d&&d.hasAttribute("data-ai")&&(d.getAttribute("data-ai"),a.hasAttribute("fallback-tracking")&&(H=a.getAttribute("fallback-tracking"),d.setAttribute("data-ai-"+a.getAttribute("fallback_level"),H)))}else a.style.display="none",null!=d&&(d.removeAttribute("data-ai"),d.classList.remove("ai-track"),
+null!=d.querySelector(".ai-debug-block")?(d.style.visibility="",d.classList.remove("ai-close"),d.classList.contains("ai-remove-position")&&(d.style.position="")):d.hasAttribute("style")&&-1==d.getAttribute("style").indexOf("height:")&&(d.style.display="none"));a.setAttribute("data-code","");a.setAttribute("data-fallback-code","");null!=d&&d.classList.remove("ai-list-block")})}};function ea(b){b=`; ${document.cookie}`.split(`; ${b}=`);if(2===b.length)return b.pop().split(";").shift()}function ma(b,
+e,p){ea(b)&&(document.cookie=b+"="+(e?";path="+e:"")+(p?";domain="+p:"")+";expires=Thu, 01 Jan 1970 00:00:01 GMT")}function m(b){ea(b)&&(ma(b,"/",window.location.hostname),document.cookie=b+"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;")}(function(b){"complete"===document.readyState||"loading"!==document.readyState&&!document.documentElement.doScroll?b():document.addEventListener("DOMContentLoaded",b)})(function(){setTimeout(function(){ai_process_lists();setTimeout(function(){Z();if("function"==
+typeof ai_load_blocks){document.addEventListener("cmplzEnableScripts",e);document.addEventListener("cmplz_event_marketing",e);function e(p){"cmplzEnableScripts"!=p.type&&"all"!==p.consentLevel||ai_load_blocks()}}},50);var b=document.querySelector(".ai-debug-page-type");null!=b&&b.addEventListener("dblclick",e=>{e=document.querySelector("#ai-iab-tcf-status");null!=e&&(e.textContent="CONSENT COOKIES");e=document.querySelector("#ai-iab-tcf-bar");null!=e&&(e.style.display="block")});b=document.querySelector("#ai-iab-tcf-bar");
+null!=b&&b.addEventListener("click",e=>{m("euconsent-v2");m("__lxG__consent__v2");m("__lxG__consent__v2_daisybit");m("__lxG__consent__v2_gdaisybit");m("CookieLawInfoConsent");m("cookielawinfo-checkbox-advertisement");m("cookielawinfo-checkbox-analytics");m("cookielawinfo-checkbox-necessary");m("complianz_policy_id");m("complianz_consent_status");m("cmplz_marketing");m("cmplz_consent_status");m("cmplz_preferences");m("cmplz_statistics-anonymous");m("cmplz_choice");m("cmplz_banner-status");m("cmplz_functional");
+m("cmplz_policy_id");m("cmplz_statistics");m("moove_gdpr_popup");m("real_cookie_banner-blog:1-tcf");m("real_cookie_banner-blog:1");e=document.querySelector("#ai-iab-tcf-status");null!=e&&(e.textContent="CONSENT COOKIES DELETED")})},5)});function da(b){setTimeout(function(){"function"==typeof ai_process_rotations_in_element&&ai_process_rotations_in_element(b);"function"==typeof ai_process_lists&&ai_process_lists();"function"==typeof ai_process_ip_addresses&&ai_process_ip_addresses();"function"==typeof ai_process_filter_hooks&&
+ai_process_filter_hooks();"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks(b);"function"==typeof ai_process_impressions&&1==ai_tracking_finished&&ai_process_impressions();"function"==typeof ai_install_click_trackers&&1==ai_tracking_finished&&ai_install_click_trackers();"function"==typeof ai_install_close_buttons&&ai_install_close_buttons(document)},5)}function ia(b){var e=b?b.split("?")[1]:window.location.search.slice(1);b={};if(e){e=e.split("#")[0];e=e.split("&");for(var p=0;p<e.length;p++){var z=
+e[p].split("="),C=void 0,x=z[0].replace(/\[\d*\]/,function(L){C=L.slice(1,-1);return""});z="undefined"===typeof z[1]?"":z[1];x=x.toLowerCase();z=z.toLowerCase();b[x]?("string"===typeof b[x]&&(b[x]=[b[x]]),"undefined"===typeof C?b[x].push(z):b[x][C]=z):b[x]=z}}return b}};
+var ai_ip=!0,ai_data_id="d98b161453",ai_ajax_url="https://www.baeldung.com/linux/wp-admin/admin-ajax.php",ai_block_class_def="code-block";
+if("undefined"!=typeof ai_ip){function u(b,g){g||(g=window.location.href);b=b.replace(/[\[\]]/g,"\\$&");return(b=(new RegExp("[?&]"+b+"(=([^&#]*)|&|#|$)")).exec(g))?b[2]?decodeURIComponent(b[2].replace(/\+/g," ")):"":null}function y(){return(new Date).getTime()+"-"+Math.round(1E5*Math.random())}function v(b){b.forEach((a,c)=>{a.classList.remove("ai-ip-data")});var g=!1;if(""!=ai_ip_data){try{var l=JSON.parse(ai_ip_data),f=l[0],r=l[1],p=l[2],q=l[3]}catch(a){return}var t=!1;-1!=f.indexOf("#")&&(t=!0,
+f=f.replace("#",""));var e="";t&&(e="CFP BLOCKED, ");e=e+f+", "+r;null!=p&&null!=q&&(e=e+":"+p+":"+q);null==p&&(p="");null==q&&(q="");null!=l&&b.forEach((a,c)=>{c=a.closest("div."+ai_block_class_def);g=!0;if(a.hasAttribute("ip-addresses")){var h=a.getAttribute("ip-addresses").split(","),m=a.getAttribute("ip-address-list"),k=!1;h.every((d,n)=>{if("*"==d.charAt(0))if("*"==d.charAt(d.length-1)){if(d=d.substr(1,d.length-2),-1!=f.indexOf(d))return k=!0,!1}else{if(d=d.substr(1),f.substr(-d.length)==d)return k=
+!0,!1}else if("*"==d.charAt(d.length-1)){if(d=d.substr(0,d.length-1),0==f.indexOf(d))return k=!0,!1}else if("#"==d){if(""==f)return k=!0,!1}else if("CFP"==d.toUpperCase()){if(t)return k=!0,!1}else if(d==f)return k=!0,!1;return!0});switch(m){case "B":k&&(g=!1);break;case "W":k||(g=!1)}}if(g&&a.hasAttribute("countries"))switch(h=a.getAttribute("countries").split(","),m=a.getAttribute("country-list"),k=!1,h.every((d,n)=>{n=d.trim().split(":");if(null==n[1]||""==p)n[1]="";if(null==n[2]||""==q)n[2]="";
+d=n.join(":").toUpperCase();n=(r+":"+(""==n[1]?"":p)+":"+(""==n[2]?"":q)).toUpperCase();return d==n?(k=!0,!1):!0}),m){case "B":k&&(g=!1);break;case "W":k||(g=!1)}a.style.visibility="";a.style.position="";a.style.width="";a.style.height="";a.style.zIndex="";for(h=a.previousElementSibling;h&&!h.matches(".ai-debug-bar");)h=h.previousElementSibling;null!=h&&(m=h.querySelector(".ai-debug-name.ai-ip-country"),null!=m&&(m.textContent=e),m=h.querySelector(".ai-debug-name.ai-ip-status"),null!=m&&(m.textContent=
+g?ai_front.visible:ai_front.hidden));if(g){if(null!=c&&(c.style.visibility="",c.classList.contains("ai-remove-position")&&(c.style.position="")),a.hasAttribute("data-code")){h=b64d(a.dataset.code);m=document.createRange();var w=!0;try{var x=m.createContextualFragment(h)}catch(d){w=!1}w&&(null!=a.closest("head")?(a.parentNode.insertBefore(x,a.nextSibling),a.remove()):a.append(x));a.removeAttribute("data-code");z(a)}}else a.style.display="none",null!=c&&(c.removeAttribute("data-ai"),c.classList.remove("ai-track"),
+null!=c.querySelector(".ai-debug-block")?(c.style.visibility="",c.classList.remove("ai-close"),c.classList.contains("ai-remove-position")&&(c.style.position=""),a.hasAttribute("data-code")&&(c.classList.remove("ai-list-block"),c.classList.remove("ai-list-block-filter"),null!=c.previousElementSibling&&c.previousElementSibling.classList.contains("ai-debug-info")&&c.previousElementSibling.remove())):c.hasAttribute("style")&&-1==c.getAttribute("style").indexOf("height:")&&(c.style.display="none"));null!=
+c&&c.classList.remove("ai-list-block-ip")})}}ai_process_ip_addresses=function(b){if(null==b)b=document.querySelectorAll("div.ai-ip-data, meta.ai-ip-data");else{window.jQuery&&window.jQuery.fn&&b instanceof jQuery&&(b=Array.prototype.slice.call(b));var g=[];b.forEach((e,a)=>{e.matches(".ai-ip-data")?g.push(e):(e=e.querySelectorAll(".ai-ip-data"),e.length&&e.forEach((c,h)=>{g.push(c)}))});b=g}if(b.length)if("undefined"!=typeof ai_ip_data)v(b);else if("undefined"==typeof ai_ip_data_requested){ai_ip_data_requested=
+!0;var l=ai_ajax_url+"?action=ai_ajax&ip-data=ip-address-country-city",f=u("ai-debug-ip-address");null!=f&&(l+="&ai-debug-ip-address="+f);f=u("ai-debug-country");null!=f&&(l+="&ai-debug-country="+f);f={ai_check:ai_data_id,version:y()};var r=[],p;for(p in f){var q=encodeURIComponent(p),t=encodeURIComponent(f[p]);r.push(q+"="+t)}r=r.join("&");(async function(){return await (await fetch(l,{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"},body:r})).text()})().then(e=>
+{ai_ip_data=e;if(""==e){var a="Ajax request returned empty data, geo-targeting disabled";console.error(a);"undefined"!=typeof ai_js_errors&&ai_js_errors.push([a,l,0])}else try{JSON.parse(e)}catch(c){a="Ajax call returned invalid data, geo-targeting disabled",console.error(a,e),"undefined"!=typeof ai_js_errors&&ai_js_errors.push([a,l,0])}b=document.querySelectorAll("div.ai-ip-data, meta.ai-ip-data");b.length&&v(b)}).catch(e=>{document.querySelectorAll("div.ai-ip-data").forEach((a,c)=>{a.style.display=
+"none";a.style.visibility="";a.style.position="";a.style.width="";a.style.height="";a.style.zIndex="";a.classList.remove("ai-ip-data")})})}};(function(b){"complete"===document.readyState||"loading"!==document.readyState&&!document.documentElement.doScroll?b():document.addEventListener("DOMContentLoaded",b)})(function(){setTimeout(function(){ai_process_ip_addresses()},5)});function z(b){setTimeout(function(){"function"==typeof ai_process_rotations_in_element&&ai_process_rotations_in_element(b);"function"==
+typeof ai_process_lists&&ai_process_lists();"function"==typeof ai_process_ip_addresses&&ai_process_ip_addresses();"function"==typeof ai_process_filter_hooks&&ai_process_filter_hooks();"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks(b);"function"==typeof ai_process_impressions&&1==ai_tracking_finished&&ai_process_impressions();"function"==typeof ai_install_click_trackers&&1==ai_tracking_finished&&ai_install_click_trackers();"function"==typeof ai_install_close_buttons&&ai_install_close_buttons(document)},
+5)}};
+
+ai_js_code = true;
+</script>
+<script type="text/javascript" id="perf-rep">
+	/* <![CDATA[ */
+		var calls = "152";
+	/* ]]> */
+	</script>
+<script defer src="https://www.baeldung.com/linux/wp-content/cache/autoptimize/2/js/autoptimize_03b2edf0ee3df83954d44528dded78fc.js"></script></body>
+</html>

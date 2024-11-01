@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Zechariah" "4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Zechariah" "4:6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Zechariah" "4:6-10" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Zechariah" "4:6" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Zechariah" "4:6" "#" "<==" "zsh"

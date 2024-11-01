@@ -1,0 +1,502 @@
+HTTP/1.1 200 OK
+Date: Sat, 02 Mar 2024 11:03:29 GMT
+Server: Apache/2.2.22 (Debian)
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 5815
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<HTML>
+<HEAD>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
+<TITLE>The Development of the Canon of the New Testament - Ignatius</TITLE>
+
+<META name="description"  content="The Development of the Canon of the New Testament">
+<META name="keywords"  content="New Testament, canon, Bruce Metzger">
+
+<META name="keywords"
+content="
+Gospel of Thomas, 
+Gospel of Truth,
+Gospel of the Twelve,
+Gospel of Peter,
+Gospel of Basilides,
+Gospel of the Egyptians,
+Gospel of the Hebrews,
+Gospel of Matthias,
+Traditions of Matthias,
+Preaching of Peter,
+Acts of Andrew,
+Acts of Paul,
+Acts of John,
+Epistle to the Laodiceans,
+I Clement,
+Epistle of Barnabas,
+Didache,
+Shepherd of Hermas,
+Apocalypse of Peter">
+
+</HEAD>
+
+<BODY bgcolor="E0D0C0">
+
+<TABLE  width="100%"  border=0  cellspacing=0   cellpadding=4>
+    <TR>
+        <TD VALIGN="top" colspan=2 >
+        
+<center>
+
+<H1>The Development of the Canon of the New&nbsp;Testament</H1>
+
+<table cellspacing=0>
+
+<tr>
+<b>
+
+<td><a href="./index.shtml">Home |</a></td>
+<td bgcolor="000088"><a href="authorities.shtml"><font color="ffffff">Authorities</font></a></td>
+
+<td>
+|
+
+<a href="writings.shtml">Writings</a> |
+<a href="table.shtml">Table</a> |
+<a href="lists.shtml">Lists</a> |
+<a href="places.shtml">Places</a> |
+<a href="heresies.shtml">Heresies</a> |
+<a href="miscellaneous.shtml">Miscellaneous</a> |
+<a href="information.shtml">for more Information</a>
+</td>
+
+</b>
+</tr>
+</table>
+
+<br>
+
+</center>
+
+        <hr noshade>
+        <br>
+        </TD>
+    </TR>
+
+    <TR>
+        <TD VALIGN="TOP" width="150" align=left >
+            <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" >
+            <tr>
+                <td>
+                <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0">
+                <tr>
+                    <td bgcolor=white>
+                    
+
+<a href="authorities.shtml"><b>Early Christian Authorities</b></a>
+<br>
+<br>
+
+<a href="Ignatius.shtml">Ignatius of Antioch</a>
+<br>
+<a href="Polycarp.shtml">Polycarp of Smyrna</a>
+<br>
+<a href="Marcion.shtml">Marcion</a>
+<br>
+<a href="Valentinus.shtml">Valentinus</a>
+<br>
+<a href="Justin_Martyr.shtml">Justin Martyr</a>
+<br>
+<a href="Irenaeus.shtml">Irenaeus of Lyons</a>
+<br>
+<a href="Clement.shtml">Clement of Alexandria</a>
+<br>
+<a href="Tertullian.shtml">Tertullian of Carthage</a>
+<br>
+<a href="Muratorian_Canon.shtml">Muratorian Canon</a>
+<br>
+<a href="Origen.shtml">Origen</a>
+<br>
+<a href="Eusebius.shtml">Eusebius of Caesarea</a>
+<br>
+<a href="codex_Sinaiticus.shtml">codex Sinaiticus</a>
+<br>
+<a href="Athanasius.shtml">Athanasius of Alexandria</a>
+<br>
+<a href="Didymus.shtml">Didymus the Blind</a>
+<br>
+<a href="Peshitta.shtml">Peshitta</a>
+<br>
+<a href="Vulgate.shtml">Vulgate</a>
+<br>
+
+                    </td>
+                </table>
+                </td>
+            </tr>
+            </table>
+        </TD>
+
+        <TD VALIGN="TOP"  >
+        
+<H2>
+Ignatius of Antioch
+<FONT SIZE=-1>
+(born ? -- died (apparently martyred) ~110 CE in Rome) &#160;&#160;
+</FONT>
+</H2>
+
+<table  width=250 align=right  border=2 cellpadding=2>
+<tr>
+<td>
+<A HREF="ignatios_l0500030.jpg"><IMG SRC="ignatios_thumb.jpg"  align=left></A>
+
+This icon is taken from
+<A HREF="http://www.skete.com/">Orthodox Byzantine Icons</A>.
+The artist and date are unknown.
+A <A HREF="ignatios_l0500030.jpg">larger version</A> is available.
+</td>
+</tr>
+</table>
+
+
+<P>
+Ignatius, bishop of Antioch in Syria, is known mainly as the author of 7
+letters that had exceptional influence in the early church.
+A Catholic Encyclopedia article is online at
+<A HREF="http://www.newadvent.org/cathen/07644a.htm">St. Ignatius of Antioch</A>.
+
+He was apparently anxious to counteract the teachings of two groups:
+the Judaizers, who did not accept the authority of the New Testament
+(although the NT did not really exist at that time); and the Docetists,
+who held that Christ's sufferings and death were only apparent.
+The letters have often been cited to determine what beliefs were held in the early church.
+These letters are:
+
+<br clear=right>
+
+<UL>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=2>
+<TR>
+<TH>Writing</TH>
+<TH>Abbrev.</TH>
+<TH>English Translation(s)</TH>
+</TR>
+
+<TR><TD>Letter to the Ephesians</TD>
+<TD>Eph.</TD>
+<TD>
+<A HREF="references.shtml#Richardson">[Richardson]</A> ,
+<A HREF="references.shtml#LHH">[LHH]</A> ,
+<A HREF="http://wesley.nnu.edu/biblical_studies/noncanon/fathers/ante-nic/ignatius/igephesi.htm">Noncanonical Homepage</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-01/anf01-16.htm">Christian Classics Ethereal Library</A> ,
+<A HREF="gopher://ccat.sas.upenn.edu:3333/00/Religious/ChurchWriters/ApostolicFathers/Ignatius_Ephesians">CCAT Public Archive</A>
+</TD>
+</TR>
+
+<TR><TD>Letter to the Magnesians</TD>
+<TD>Mag.</TD>
+<TD>
+<A HREF="references.shtml#Richardson">[Richardson]</A> ,
+<A HREF="references.shtml#LHH">[LHH]</A> ,
+<A HREF="http://wesley.nnu.edu/biblical_studies/noncanon/fathers/ante-nic/ignatius/igmagnsa.htm">Noncanonical Homepage</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-01/anf01-17.htm">Christian Classics Ethereal Library</A> ,
+<A HREF="gopher://ccat.sas.upenn.edu:3333/00/Religious/ChurchWriters/ApostolicFathers/Ignatius_Magnesians">CCAT Public Archive</A> ,
+<A HREF="http://www.ocf.org/OrthodoxPag/reading/St.Pachomius/Greek/ignatius.magnesians.html">Athenaeum of Christian Antiquity</A>
+</TD>
+</TR>
+
+<TR><TD>Letter to the Trallians</TD>
+<TD>Trall.</TD>
+<TD>
+<A HREF="references.shtml#Richardson">[Richardson]</A> ,
+<A HREF="references.shtml#LHH">[LHH]</A> ,
+<A HREF="http://wesley.nnu.edu/biblical_studies/noncanon/fathers/ante-nic/ignatius/igtral.htm">Noncanonical Homepage</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-01/anf01-18.htm">Christian Classics Ethereal Library</A> ,
+<A HREF="gopher://ccat.sas.upenn.edu:3333/00/Religious/ChurchWriters/ApostolicFathers/Ignatius_Trallians">CCAT Public Archive</A> ,
+<A HREF="http://www.ocf.org/OrthodoxPag/reading/St.Pachomius/Greek/ignatius.trallians.html">Athenaeum of Christian Antiquity</A>
+</TD>
+</TR>
+
+<TR><TD>Letter to the Romans</TD>
+<TD>Rom.</TD>
+<TD>
+<A HREF="references.shtml#Richardson">[Richardson]</A> ,
+<A HREF="references.shtml#LHH">[LHH]</A> ,
+<A HREF="http://wesley.nnu.edu/biblical_studies/noncanon/fathers/ante-nic/ignatius/igrome.htm">Noncanonical Homepage</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-01/anf01-19.htm">Christian Classics Ethereal Library</A> ,
+<A HREF="gopher://ccat.sas.upenn.edu:3333/00/Religious/ChurchWriters/ApostolicFathers/Ignatius_Romans">CCAT Public Archive</A>
+</TD>
+</TR>
+
+<TR><TD>Letter to the Philadelphians</TD>
+<TD>Phil.</TD>
+<TD>
+<A HREF="references.shtml#Richardson">[Richardson]</A> ,
+<A HREF="references.shtml#LHH">[LHH]</A> ,
+<A HREF="http://wesley.nnu.edu/biblical_studies/noncanon/fathers/ante-nic/ignatius/igphil.htm">Noncanonical Homepage</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-01/anf01-20.htm">Christian Classics Ethereal Library</A> ,
+<A HREF="gopher://ccat.sas.upenn.edu:3333/00/Religious/ChurchWriters/ApostolicFathers/Ignatius_Phila">CCAT Public Archive</A> ,
+<A HREF="http://www.ocf.org/OrthodoxPag/reading/St.Pachomius/Greek/ignatius.philadel.html">Athenaeum of Christian Antiquity</A>
+</TD>
+</TR>
+
+<TR><TD>Letter to the Smyrnaeans</TD>
+<TD>Smyr.</TD>
+<TD>
+<A HREF="references.shtml#Richardson">[Richardson]</A> ,
+<A HREF="references.shtml#LHH">[LHH]</A> ,
+<A HREF="http://wesley.nnu.edu/biblical_studies/noncanon/fathers/ante-nic/ignatius/igsmyr.htm">Noncanonical Homepage</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-01/anf01-21.htm">Christian Classics Ethereal Library</A> ,
+<A HREF="gopher://ccat.sas.upenn.edu:3333/00/Religious/ChurchWriters/ApostolicFathers/Ignatius_Smyrneans">CCAT Public Archive</A> ,
+<A HREF="http://www.ocf.org/OrthodoxPag/reading/St.Pachomius/Greek/ignatius.smyrnaeans.html">Athenaeum of Christian Antiquity</A>
+</TD>
+</TR>
+
+<TR><TD>Letter to Polycarp</TD>
+<TD>Poly.</TD>
+<TD>
+<A HREF="references.shtml#Richardson">[Richardson]</A> ,
+<A HREF="references.shtml#LHH">[LHH]</A> ,
+<A HREF="http://wesley.nnu.edu/biblical_studies/noncanon/fathers/ante-nic/ignatius/polycarp.htm">Noncanonical Homepage</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-01/anf01-22.htm">Christian Classics Ethereal Library</A> ,
+<A HREF="gopher://ccat.sas.upenn.edu:3333/00/Religious/ChurchWriters/ApostolicFathers/Ignatius_Polycarp">CCAT Public Archive</A>
+</TD>
+
+</TR>
+</TABLE>
+</UL>
+
+
+
+<P>Ignatius does not refer to older Christian writings by name,
+but his letters have quotations (of approval) from these writings:
+<UL>
+<LI><A HREF="#Gospel_of_Matthew">Gospel according to Matthew</A></LI>
+<LI><A HREF="#Gospel_of_Luke">Gospel according to Luke</A></LI>
+<LI><A HREF="#Acts">Acts</A></LI>
+<LI><A HREF="#Romans">Romans</A></LI>
+<LI><A HREF="#Corinthians">I Corinthians</A></LI>
+<LI><A HREF="#Ephesians">Ephesians</A></LI>
+<LI><A HREF="#Colossians">Colossians</A></LI>
+<LI><A HREF="#Thessalonians">I Thessalonians</A></LI>
+</UL>
+
+
+<P>
+Ignatius is held in high regard in the West Syrian Church (an independent Christian Church).
+Every patriarch since 1293 bears the surname "Ignatios" in his honor.
+The present (1982) patriarch, Ignatios XXXIX Jacob III, rules from Damascus over
+11 metropolitans and 3 bishops and over the Syrian Orthodox Church in Malabar.
+
+<P>
+The  quotations below follow
+<A HREF="references.shtml#Richardson">[Richardson]</A>.
+For a summary of this evidence see the
+<A HREF="table.shtml">Cross Reference Table</A>.
+
+<P>
+<A NAME="Gospel_of_Matthew"></A><HR>
+<H3>Ignatius quotes the Gospel according Matthew</H3>
+
+<TABLE BORDER CELLPADDING=4 >
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH=85%></TH>
+<TH>Matthew</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Eph. 14:2</FONT></TD>
+<TD><FONT COLOR="#000080"><P>No one who professes faith falls into sin, nor does one who has learned to love hate. </FONT><FONT  COLOR="#800000">"The tree is known by its fruit"</FONT><FONT COLOR="#000080">. Similarly, those who profess to be Christ's will be recognized by their actions. For what matters is not a momentary act of professing, but being persistently motivated by faith.</FONT></TD>
+<TD><FONT COLOR="#800000">12:33</FONT></TD>
+</TR>
+<TR>
+<TD  VALIGN=TOP><FONT COLOR="#000080">Smyr. 6:1</FONT></TD>
+<TD><FONT COLOR="#000080"><P>Let no one be misled: heavenly beings, the splendor of angels, and principalities, visible and invisible, if they fail to believe in Christ's blood, they too are doomed. </FONT><FONT COLOR="#800000">"Let him accept it who can"</FONT><FONT COLOR="#000080">. Let no one's position swell in his head, for faith and love are everything -- there is nothing preferable to them.</FONT></TD>
+<TD><FONT COLOR="#800000">19:12</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Poly. 2:2</FONT></TD>
+<TD><FONT COLOR="#000080"><P>In all circumstances be </FONT><FONT  COLOR="#800000">"wise as a serpent"</FONT><FONT COLOR="#000080">, and perpetually </FONT><FONT  COLOR="#800000">"harmless as a dove"</FONT><FONT  COLOR="#000080">. The reason you have a body as well as a soul is that you may win the favor of the visible world. But ask that you may have revelations of what is unseen. In that way you will lack nothing and have an abundance of every gift.</FONT></TD>
+<TD><FONT COLOR="#800000">10:16</FONT></TD>
+</TR>
+</TABLE>
+
+<P>
+<A NAME="Thessalonians"></A><HR>
+<H3>Ignatius quotes I Thessalonians</H3>
+
+<TABLE  BORDER CELLPADDING=4>
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH="85%"></TH>
+<TH>I Thessalonians</TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Eph. 10:1</FONT></TD>
+<TD><FONT COLOR="#800000"><P>"Keep on praying"</FONT><FONT COLOR="#000080"> for others too, for there is a chance of their being converted and getting to God. Let them, then, learn from you at least from your actions.</FONT></TD>
+<TD><FONT COLOR="#800000">5:17</FONT></TD>
+</TR>
+</TABLE>
+
+<P>
+<A NAME="Colossians"></A><HR>
+<H3>Ignatius quotes I Colossians</H3>
+
+<TABLE  BORDER CELLPADDING=4>
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH="85%"></TH>
+<TH>Colossians</TH>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Eph. 10:2</FONT></TD>
+<TD><FONT COLOR="#000080"><P>Return their bad temper with gentleness; their boasts with humility; their abuse with prayer. In the face of their error, be </FONT><FONT COLOR="#800000">"steadfast in the faith". </FONT><FONT COLOR="#000080">Return their violence with mildness and do not be intent on getting your own back.</FONT></TD>
+<TD><FONT COLOR="#800000">1:23</FONT></TD>
+</TR>
+</TABLE>
+
+
+<P>
+<A NAME="Corinthians"></A><HR>
+<H3>Ignatius quotes I Corinthians</H3>
+
+<TABLE BORDER CELLPADDING=4>
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH="85%"></TH>
+<TH>I Corinthians</TH>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Eph. 18:1</FONT></TD>
+<TD><FONT COLOR="#000080"><P>I am giving my life (not that it's worth much!) for the cross, which unbelievers find a stumbling block, but which means to us salvation and eternal life. </FONT><FONT COLOR="#800000">"Where is the wise man? Where is the debater?"</FONT><FONT COLOR="#000080"> Where are the boasts of those supposedly intelligent?</FONT></TD>
+<TD><FONT COLOR="#800000">1:20</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Trall. 1:3</FONT></TD>
+<TD><FONT COLOR="#000080">Those too who are deacons of Jesus Christ's </FONT><FONT COLOR="#800000">"mysteries"</FONT><FONT COLOR="#000080"> must give complete satisfaction to everyone. For they do not serve mere food and drink, but minister to God's Church. They must therefore avoid leaving themselves open to criticism, as they would shun fire.</FONT></TD>
+<TD><FONT COLOR="#800000">4:1</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Trall. 12:3</FONT></TD>
+<TD><FONT COLOR="#000080"><P>Out of love I want you to heed me, so that my letter will not tell against you. Moreover, pray for me. By God's mercy I need your love if I am going to deserve the fate I long for, and not prove a </FONT><FONT COLOR="#800000">"castaway"</FONT><FONT COLOR="#000080">.</FONT></TD>
+<TD><FONT COLOR="#800000">9:27</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Rom.5:1-2</FONT></TD>
+<TD><FONT COLOR="#000080"><P>Even now as a prisoner, I am learning to forgo my own wishes. All the way from Syria to Rome I am fighting with wild beasts, by land and sea, night and day, chained as I am to ten leopards (I mean to a detachment of soldiers), who only get worse the better you treat them. But by their injustices I am becoming a better disciple, </FONT><FONT COLOR="#800000">"though not for that reason am I acquitted"</FONT><FONT COLOR="#000080">. What a thrill I shall have from the wild beasts that are ready for me! I hope they will make short work of me. I shall coax them on to eat me up at once and not to hold off, as sometimes happens, through fear.</FONT></TD>
+<TD><FONT COLOR="#800000">4:4</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Rom. 6:1</FONT></TD>
+<TD><FONT COLOR="#000080">Not the wide bounds of earth nor the kingdoms of this world nor the kingdoms of this world will avail me anything. </FONT><FONT COLOR="#800000">"I would rather die"</FONT><FONT COLOR="#000080"> and get to Jesus Christ, than reign over the ends of the earth. That is what I am looking for -- the One who died for us. That is whom I want -- the One who rose for us.</FONT></TD>
+<TD><FONT COLOR="#800000">9:15</FONT></TD>
+</TR>
+</TABLE>
+
+<P>
+<A NAME="Romans"></A><HR>
+<H3>Ignatius quotes Romans</H3>
+
+<TABLE BORDER CELLPADDING=4>
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH="85%"></TH>
+<TH>Romans</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Eph. 20:2</FONT></TD>
+<TD><FONT COLOR="#000080"><P>I will do this especially if the Lord shows me that you are all, every one of you, meeting together under the influence of grace that we owe to the Name, in one faith and in union with Christ who was </FONT><FONT COLOR="#800000">"descended from David according to the flesh"</FONT><FONT COLOR="#000080"> and is Son of man and Son of God. At these meetings you should heed the bishop and presbytery attentively, and break one loaf, which is the medicine of immortality, and the antidote which wards off death but yields continuous life in union with Jesus Christ.</FONT></TD>
+<TD><FONT COLOR="#800000">1:3</FONT></TD>
+</TR>
+</TABLE>
+
+<P>
+<A NAME="Acts"></A><HR>
+<H3>Ignatius quotes Acts</H3>
+
+<TABLE  BORDER CELLPADDING=4>
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH=85%></TH>
+<TH>Acts</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Mag. 5:1</FONT></TD>
+<TD><FONT COLOR="#000080"><P>Yes, everything is coming to and end, and we stand before this choice -- death or life -- and everyone, will go </FONT><FONT COLOR="#800000">"to his own place"</FONT><FONT COLOR="#000080">. Once might say similarly, there are two coinages, one God's, the other the world's. Each bears its own stamp -- unbelievers that of this world; believers, who are spurred by love, the stamp of God the Father through Jesus Christ. And if we do not willingly die in union with his Passion, we do not have his life in us.</FONT></TD>
+<TD><FONT COLOR="#800000">1:25</FONT></TD>
+</TR>
+</TABLE>
+
+
+<P>
+<A NAME="Gospel_of_Luke"></A><HR>
+<H3>Ignatius quotes Gospel according to Luke</H3>
+
+<TABLE  BORDER CELLPADDING=4>
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH="85%"></TH>
+<TH>Luke</TH>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Smyr. 3:1-2</FONT></TD>
+<TD><FONT COLOR="#000080"><P>For myself, I am convinced and believe that even after the resurrection he was in the flesh. Indeed, when he came to Peter and his friends, he said to them, </FONT><FONT COLOR="#800000">"Take hold of me, touch me and see that I am not a bodiless ghost."</FONT><FONT COLOR="#000080">. And they at once touched him and were convinced, clutching his body and his very breath. For this reason they despised death itself, and proved its victors. Moreover, after the resurrection he ate and drank with them as a real human being, although in spirit he was united with the Father.</FONT></TD>
+<TD><FONT COLOR="#800000">24:39</FONT></TD>
+</TR>
+</TABLE>
+
+<P>
+<A NAME="Ephesians"></A><HR>
+<H3>Ignatius quotes Ephesians</H3>
+
+
+<TABLE  BORDER CELLPADDING=4>
+<TR>
+<TH>Ignatius</TH>
+<TH WIDTH="85%"></TH>
+<TH>Ephesians</TH>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Poly. 1:2</FONT></TD>
+<TD><FONT COLOR="#000080"><P>God grant I may never forget it! By the grace which you have put on, I urge you to press forward in your race and to urge everybody to be saved. Vindicate your position by giving your whole attention to its material and spiritual sides. Make unity your concern -- there is nothing better than that. Lend everybody a hand, as the Lord does you. </FONT><FONT COLOR="#800000">"Out of love be patient"</FONT><FONT COLOR="#000080"> with everyone, as indeed you are.</FONT></TD>
+<TD><FONT COLOR="#800000">4:2</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP><FONT COLOR="#000080">Poly. 5:1</FONT></TD>
+<TD><FONT COLOR="#000080"><P>Tell my sisters to love the Lord and to be altogether contented with their husbands. Similarly urge my brothers in the name of Jesus Christ </FONT><FONT COLOR="#800000">"to love their wives as the Lord loves the Church"</FONT><FONT COLOR="#000080">.</FONT></TD>
+<TD><FONT COLOR="#800000">5:25,29</FONT></TD>
+</TR>
+</TABLE>
+
+
+
+
+        </TD>
+    </TR>
+
+</TABLE>
+
+
+<P>
+<hr noshade>
+
+<CENTER>
+<P>
+<FONT SIZE="+0">
+Pages created by Glenn Davis, 1997-2010. <BR>
+For additions, corrections, and comments send e-mail to
+<I>
+<A HREF="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#103;&#100;&#097;&#118;&#105;&#115;&#064;&#110;&#116;&#099;&#097;&#110;&#111;&#110;&#046;&#111;&#114;&#103;">
+&#103;&#100;&#097;&#118;&#105;&#115;&#064;&#110;&#116;&#099;&#097;&#110;&#111;&#110;&#046;&#111;&#114;&#103;
+</A></I>
+</FONT>
+
+</CENTER>
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: flag
+# group: options
+# key: flag
+# --
+:- set_prolog_flag(${1:double_quotes, chars}).

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dirname
+# group: 
+# key: dn
+# --
+dn = os.path.dirname("/")

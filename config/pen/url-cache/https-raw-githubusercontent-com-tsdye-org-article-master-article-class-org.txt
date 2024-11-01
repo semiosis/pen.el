@@ -1,0 +1,2750 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 24188
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: W/"889ad836661925c3ab08c027c11e770fe2e5fa548f499f95b2e12731b0dcd7d1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: C442:1342E:5A7FAE:6A49D4:65D9CDB1
+Accept-Ranges: bytes
+Date: Sat, 24 Feb 2024 11:07:12 GMT
+Via: 1.1 varnish
+X-Served-By: cache-akl10325-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1708772833.519100,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e192b4bdd6a83247e214f5753f88b411f074d6e0
+Expires: Sat, 24 Feb 2024 11:12:12 GMT
+Source-Age: 46
+
+#+TITLE:     The Org-article LaTeX class
+#+AUTHOR:    Tom Dye
+#+EMAIL:     tsd at tsdye dot com
+#+DATE:      2010-09-18 Sat
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT: 
+#+BABEL: :exports code
+#+LaTeX_CLASS: org-article
+#+LaTeX_CLASS_OPTIONS: [koma,letterpaper,captions=tableheading,utopia,11pt,listings-sv,microtype,paralist,colorlinks=true,urlcolor=blue,secnums]
+#+LATEX_HEADER: \usepackage[AUTO]{inputenc}
+
+* Org-article class
+  :PROPERTIES:
+  :VISIBILITY: children
+  :END:
+This [[latex:proglang][Org-mode]] file uses Babel to tangle a [[latex:proglang][LaTeX]] class named [[latex:classfile][Org-article]].
+The class provides all of the LaTeX packages used by the [[latex:proglang][Org-mode]]
+LaTeX exporter.  The class accepts numerous options, which the user
+can set either in =.emacs=, for default use with all org-article
+exports, or within the [[latex:proglang][Org-mode]] file using =#+LaTeX_CLASS_OPTIONS:=.
+
+Some of the features include:
+  - Default packages :: Options to keep individual LaTeX packages from
+       loading make it somewhat easier to modify which LaTeX packages
+       are loaded during the processing of LaTeX code exported by
+       [[latex:proglang][Org-mode]].
+  - Fonts :: The package also implements several choices of fonts and
+             takes steps to ensure that the fonts don't clash with the
+             symbol font files that [[latex:proglang][Org-mode]] depends upon to typeset
+             [[latex:progstruct][org-entities]].
+  - Listing themes :: The class provides pre-defined themes for
+                      formatting source code listings, which can be
+                      used as is, or used as a basis for minor modifications.
+  - Compact lists :: A facility to typeset lists with less vertical
+                     space is provided.
+  - Double spacing :: An option is provided to set lines double spaced.
+  - Table of contents :: The table of contents depth can be set
+       independently of section numbering depth.
+  - Section numbering :: Section numbering depth can be specified
+       independently of the table of contents depth.
+  - Key=value options :: [[latex:classfile][Org-article]] implements key=value options
+       using [[latex:proglang][pgfkeys]] and [[latex:classfile][pgfopts]].
+
+** How to use this Org-mode document
+   :PROPERTIES:
+   :VISIBILITY: folded
+   :END:
+
+You might be able to get the [[latex:proglang][Org-mode]] document from GitHub using the following
+shell command:
+
+#+name: get-from-github-alt
+#+begin_src sh :exports code
+  git clone git://github.com/tsdye/org-article.git
+#+end_src
+
+This will create a sub-directory, =org-article=, initialize the git
+repository and download the file =article-class.org= as part of the
+repository.  The [[latex:proglang][Org-mode]] document can be tangled to produce the
+=org-article.cls= file.  This is done by running [[latex:progstruct][org-babel-tangle]] 
+against the file, either by =M-x org-babel-tangle RET= or =C-c C-v
+[C-]t=.
+
+The resulting =org-article.cls= file should then be moved where LaTeX
+can find it.  In LaTeX setups that conform to the [[http://www.tex.ac.uk/tex-archive/tds/tds.html][Tex Directory
+Structure]], this might be path/to/texmf-local/tex/latex/base.  Once
+the file has been placed in an appropriate directory it is often the
+case that the directory database, such as the one maintained by
+[[http://tug.org/kpathsea/][Kpathsea]], must then be updated. The following shell commands work on
+my OS-X system with the [[http://tug.org/mactex/][MacTeX]] distribution:
+
+#+name: install-org-article
+#+begin_src sh :exports code
+  sudo cp org-article.cls /usr/local/texlive/texmf-local/tex/latex/base/
+  sudo mktexlsr
+  kpsewhich org-article.cls
+#+end_src
+** Org-mode LaTeX export setup
+   :PROPERTIES:
+   :VISIBILITY: folded
+   :END:
+# <<export-setup>>
+There are two ways to setup [[latex:classfile][Org-article]] and your choice will probably
+depend on the value of the variable [[latex:progstruct][org-export-latex-packages-alist]].
+If this variable is nil (or it refers to packages that you always want
+loaded), then the following setup should work for you.  It asks
+[[latex:proglang][Org-mode]] *not* to load the default packages, because these are loaded
+by [[latex:classfile][Org-article]].  Then, it loads the packages in
+[[latex:progstruct][org-export-latex-packages-alist]], which should consist of a single
+entry for the [[latex:package][inputenc]] package.  [[latex:proglang][Org-mode]] automatically sets the
+input encoding based on the status of the [[latex:proglang][Org-mode]] buffer being
+exported, which it can't do if it is loaded by [[latex:classfile][Org-article]].  Finally,
+any packages specified in the [[latex:proglang][Org-mode]] buffer are loaded (the [EXTRA]
+argument).
+
+The [[latex:classfile][Org-article]] setup for the case when
+[[latex:progstruct][org-export-latex-packages-alist]] is [[latex:progstruct][nil]]:
+
+The number of heading levels in the LaTeX output is determined by two
+factors: the number of heading levels (section, subsection, etc.)
+defined in [[latex:progstruct][org-export-latex-classes]] and the setting of the [[latex:progstruct][H:]]
+option in the export header.  The number of heading levels will be the
+smaller of the two values, e.g., if [[latex:progexample][H: 5]] calls for five heading
+levels, but only sections are defined in [[latex:progstruct][org-export-latex-classes]]
+then the exported LaTeX file will only contain sections and will lack
+subsections, subsubsections, etc.  Similarly, if headings down to
+subparagraph are defined in [[latex:progstruct][org-export-latex-classes]] and  [[latex:progexample][H: 1]],
+then only sections will appear in the LaTeX export.  In a practical
+sense, the only reason to restrict the number of headings specified in
+[[latex:progstruct][org-export-latex-classes]] would be to constrain the options available
+to the author of the document.  Thus, [[latex:classfile][Org-article]] defines
+headings to the subparagraph level, which is the maximum defined by LaTeX.
+#+begin_src emacs-lisp :exports code
+  (require 'org-latex)
+  (setq org-export-latex-listings t)
+  (add-to-list 'org-export-latex-packages-alist
+               '("AUTO" "inputenc" t))
+  (add-to-list 'org-export-latex-classes
+            '("org-article"
+               "\\documentclass{org-article}
+               [NO-DEFAULT-PACKAGES]
+               [PACKAGES]
+               [EXTRA]"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+end_src
+
+If, for some reason, [[latex:progstruct][org-export-latex-packages-alist]] is not [[latex:progstruct][nil]],
+and it includes packages that you don't want always loaded then
+the following setup should work.
+
+#+begin_src emacs-lisp :exports code
+  (require 'org-latex)
+  (setq org-export-latex-listings t)
+  (add-to-list 'org-export-latex-classes
+               '("org-article"
+                 "\\documentclass{org-article}
+                   [NO-DEFAULT-PACKAGES]
+                   [EXTRA]"
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+end_src
+
+In this case, you will need to specify the [[latex:package][inputenc]] package in the
+[[latex:proglang][Org-mode]] file:
+
+#+name: specify-inputenc
+#+begin_src org :exports code
+  ,#+LATEX_HEADER: \usepackage[AUTO]{inputenc} 
+#+end_src
+
+** Examples
+The functionality of [[latex:classfile][Org-article]] can be demonstrated with the
+following two examples of pdf output generated by [[latex:proglang][Org-mode]] LaTeX
+export of this [[latex:proglang][Org-mode]] file.  In the first, these three lines appear
+near the top of the [[latex:proglang][Org-mode]] file:
+
+#+name: first-example
+#+begin_src org :exports code
+#+OPTIONS:   H:5 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+LaTeX_CLASS: org-article
+#+LaTeX_CLASS_OPTIONS: [article,letterpaper,times,12pt,listings-bw,microtype]
+#+end_src
+
+The resulting [[http://www.tsdye2.com/org-babel/article-class-times-art.pdf][pdf file]] is typeset with the standard LaTeX
+[[latex:classfile][article]] on 8.5 x 11 in. paper, using Times, Helvetica, and
+Courier fonts with a 12 point base size.  Source code listings are
+given in black and white, and microtypographic justification is
+applied.
+
+In the second example, these three lines appear near the top of the
+[[latex:proglang][Org-mode]] file:
+
+#+name: second-example
+#+begin_src org :exports code
+#+OPTIONS:   H:5 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+LaTeX_CLASS: org-article
+#+LaTeX_CLASS_OPTIONS: [koma,a5paper,landscape,twocolumn,utopia,10pt,listings-sv,microtype,paralist]
+#+end_src
+
+The resulting [[http://www.tsdye2.com/org-babel/article-class-utopia-koma.pdf][pdf file]] is typeset with the KOMA-script [[latex:classfile][scrartcl]]
+on 5.8 x 8.3 in. paper in landscape mode, using Utopia, Bera,
+and Incosolata fonts with a 10 point base size.  Source code listings
+are given in color, and microtypographic justification is applied.  In
+addition, the [[latex:progstruct][paralist]] option has been set; compare the tightly-set
+list immediately below with the standard list of the first example.
+
+In the third example, these three lines appear at the top of the
+[[latex:proglang][Org-mode]] file:
+
+#+name: third-example
+#+begin_src org :exports code
+  ,#+OPTIONS:   H:5 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+  ,#+LaTeX_CLASS: org-article
+  ,#+LaTeX_CLASS_OPTIONS: [koma,a5paper,DIV=15,landscape,utopia,10pt,listings-sv,microtype,paralist]
+#+end_src
+
+The resulting [[http://www.tsdye2.com/org-babel/article-class-koma-div.pdf][pdf file]] is typeset with the KOMA-script [[latex:classfile][scrartcl]]
+on 5.8 x 8.3 in. paper in landscape mode, using Utopia, Bera, and
+Incosolata fonts with a 10 point base size.  The size of the text
+block has been increased by setting [[latex:progstruct][DIV]] to a relatively high number.
+Source code listings are given in color, and microtypographic
+justification is applied.  In addition, the [[latex:progstruct][paralist]] option has been
+set.
+
+The fourth example, set out in the listing below, illustrates use of
+the [[latex:classfile][Org-article]] section numbering facility.  The option
+[[latex:progstruct][secnums]] has been used to number section heads but leave subsection
+and lower level heads unnumbered.  This [[http://www.tsdye2.com/org-babel/article-class-secnum.pdf][results]] in a clean look.  The
+[[latex:progstruct][listings-es]] theme has been used for the listings, which uses color
+sparingly and sets code blocks off primarily by numbering and small
+size of the font.
+ 
+#+name: fourth-example
+#+begin_src org :exports code
+  ,#+OPTIONS:   H:5 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+  ,#+LaTeX_CLASS: org-article
+  ,#+LaTeX_CLASS_OPTIONS: [koma,letterpaper,utopia,11pt,listings-es,microtype,paralist,colorlinks=true,urlcolor=blue,secnums]
+#+end_src
+
+* The class file
+   :PROPERTIES:
+   :VISIBILITY: folded
+   :END:
+The LaTeX class file has six standard parts:
+
+   - Identification part :: Defines the nature of the file and
+        specifies the TeX format that it requires.
+   - Initial code part :: Loads packages used internally by the class file.
+   - Declaration of options part :: All options known to the class are
+        declared here.  It is forbidden to load packages in this part.
+   - Execution of options part :: Set default values and execute the
+        code for the options that have been declared.
+   - Package loading part :: Load packages with the options specified
+        in the declaration of options part using [[latex:progstruct][PassOptionsToPackage]].
+   - Main code part :: Usually used to define new commands and structures.
+
+#+name: org-article
+#+begin_src latex :tangle org-article.cls :noweb yes :exports none
+  <<identification-part>>
+  <<initial-code-part>>
+  <<declaration-of-options-part>>
+  <<execution-of-options-part>>
+  <<package-loading-part>>
+  <<class-code-part>>
+#+end_src
+
+** Identification part
+
+This is a standard identification part.  The [[latex:progstruct][NeedsTeXFormat]] command
+can take an optional argument with a release date for the oldest
+version of LaTeX that can use the class.  Since it is relatively easy
+to update LaTeX installations nowadays there is less reason to use
+this optional argument than there was in the past.  It is omitted here.
+
+#+name: identification-part
+#+begin_src latex :exports code
+  % Identification part
+  \NeedsTeXFormat{LaTeX2e}
+  \ProvidesClass{org-article}[2010/09/21 0.2 (TSD)]
+  % End of the identification part
+  %
+#+end_src
+
+** Initial code part
+The initial code part loads packages needed to process the class file.  
+
+
+#+name: initial-code-part
+#+begin_src latex :noweb yes :exports code
+  % Initial code part
+
+  \RequirePackage{ifthen}
+  \RequirePackage{calc}
+  \RequirePackage{ifpdf}
+  \RequirePackage{remreset}
+  \RequirePackage{pgfopts}
+  % End of initial code part
+#+end_src
+  
+** Declaration of options part
+# <<declaration>>
+The package options are declared here in a code block made up entirely
+of noweb references.  Typically, a package referred to here will also
+appear in the [[package-loading-part][package loading part]].  The [[package-loading-part][package loading part]] also
+consists of noweb references, an arrangement that makes it possible to
+keep all the code specific to a particular package together in the
+[[latex-packages][LaTeX packages]] section.
+
+Options defined by the base class, either the standard [[latex:classfile][article]] or the
+Koma class [[latex:classfile][scrartcl]], are passed on to those classes by default and
+don't have to be declared here.
+
+#+name: declaration-of-options-part
+#+begin_src latex :noweb yes :exports none
+  % Declaration of options part
+  % Org-mode default packages
+  <<option-fontenc>>
+  <<option-fixltx2e>>
+  <<option-graphicx>>
+  <<option-longtable>>
+  <<option-float>>
+  <<option-wrapfig>>
+  <<option-soul>>
+  <<option-textcomp>>
+  <<option-marvosym>>
+  <<option-wasysym>>
+  <<option-latexsym>>
+  <<option-amssymb>>
+  <<option-hyperref>>
+  
+  % Font options
+  <<option-times>>
+  <<option-garamond>>
+  <<option-palatino>>
+  <<option-utopia>>
+  <<option-charter>>
+  
+  % Base class options
+  <<option-koma>>
+  <<option-article>>
+  <<option-tocdepth>>
+  <<option-secnum>>
+  
+  % Other package options
+  <<option-microtype>>
+  <<option-paralist>>
+  <<option-setspace>>
+  % <<option-topcapt>>
+  <<option-listings>>  
+  <<option-minted>>  
+  %  <<option-color>>
+  <<option-gantt>>
+
+  % Base class
+  <<pass-to-koma>>
+  <<pass-to-article>>  
+
+  % Pass options to packages
+  <<options-to-hyperref>>
+  
+  % End of declaration of options part
+#+end_src
+
+** Execution of options part
+
+The [[latex:progstruct][ProcessOptions]] command reclaims the memory used to store user
+options, so those values are now gone unless something was done with
+them in the [[declaration][declaration of options]] part.
+
+#+name: execution-of-options-part
+#+begin_src latex :exports code
+  % Execution of options part
+
+  \ProcessPgfOptions{/ORGART}
+  \ProcessOptions\relax
+  
+  % End of execution of options part
+#+end_src
+
+** Package loading part
+# <<package-loading-part>>
+
+By default, [[latex:classfile][Org-article]] loads all but one of the packages in
+[[latex:progstruct][org-export-latex-default-packages-alist]].  It does not load [[latex:package][inputenc]]
+directly, but instead relies on the [[latex:proglang][Org-mode]] LaTeX exporter to load
+this package, which passes as an option the encoding scheme of the
+exported buffer.  The [[latex:package][fontenc]] package is loaded with the [[latex:progstruct][T1]] option
+by default as a prerequisite for the various symbol packages.  There
+is no facility to disable loading [[latex:package][fontenc]], which is unusual among
+LaTeX packages in its ability to be loaded more than once.  This
+functionality is required in the case where two or more fonts with
+different encodings are used.
+
+This code block is implemented as noweb references so that
+package-specific code can be kept together in [[latex-packages][LaTeX packages]].
+
+#+name: package-loading-part
+#+begin_src latex :noweb yes :exports none
+  % Package loading part
+  
+  % Base class
+  <<load-base-class>>
+  
+  % Org-mode default
+  <<load-fixltx2e>>    
+  <<load-graphicx>>   
+  <<load-longtable>>    
+  <<load-float>>  
+  <<load-wrapfig>>  
+  <<load-soul>>  
+  <<load-fontenc>>    % with T1 option for symbol packages
+  <<load-textcomp>>  
+  <<load-marvosym>>  
+  <<load-wasysym>>  
+  <<load-latexsym>>  
+  <<load-amssymb>>  
+  
+  % Other packages
+  <<load-paralist>>  
+  <<load-microtype>>
+  <<load-setspace>>
+  % <<load-topcapt>>
+  <<load-listings>>
+  <<load-color>>
+  <<load-minted>>
+  <<load-gantt>>
+   
+  % Font packages 
+  <<load-times>>
+  <<load-garamond>>
+  <<load-palatino>>  
+  <<load-charter>>  
+  <<load-utopia>>  
+
+  % Hyperref asks to be loaded last
+  <<load-hyperref>>  
+  
+  % End of package loading part
+  %
+#+end_src
+
+** Class code part
+# <<class-code-part>>
+
+This part is also implemented with noweb references.  It calls
+package-specific setup routines that are defined in the [[latex-packages][LaTeX packages]]
+section.
+
+#+name: class-code-part
+#+begin_src latex :exports none :noweb yes
+  % Class code part
+  <<setspace-code>>
+  <<listings-code>>
+  <<proglangs-code>>
+  <<progstructs-code>>
+%  <<gantt-code>>
+  % End of class code part  
+#+end_src
+
+* Semantic markup
+
+Arbitrary semantic markup in [[latex:proglang][Org-mode]] files is implemented by
+defining a new link type in =.emacs=.  The following code block
+defines a new link type, [[latex:progstruct][latex]], whose [[latex:progstruct][path]] argument can hold the
+name of any LaTeX command.  A link such as
+=[latex:proglang][Org-mode]= will export =\proglang{Org-mode}= to the
+LaTeX file.  In this way, it is possible to make the [[latex:proglang][Org-mode]] LaTeX
+exporter conform to the semantic markup defined in arbitrary style
+files.  [[latex:proglang][Org-mode]] will even complete your new link type!
+
+Note that the code below assumes a [[latex:proglang][CSS]] stylsheet that defines classes
+with the same names as the corresponding LaTeX macros.
+
+#+name: define-latex-link
+#+begin_src emacs-lisp :exports code
+  (org-add-link-type
+   "latex" nil
+   (lambda (path desc format)
+     (cond
+      ((eq format 'html)
+       (format "<span class=\"%s\">%s</span>" path desc))
+      ((eq format 'latex)
+       (format "\\%s{%s}" path desc)))))
+  
+#+end_src
+
+** The path command
+# <<path-command>>
+
+It is often the case that paths are long and difficult to break at the
+end of a line.  One way to get line breaks right is to wrap a path in
+the [[latex:progstruct][path]] command from the [[latex:package][url]] package.  This can be done
+with a link such as this one (abbreviated for obvious reasons)
+=[latex:path][/path/ ...]=, which gets typeset so it will break at the
+end of the line,
+[[latex:path][/path/to/a/file/nested/very/deeply/in/the/directory/structure]].
+
+** Programming languages
+# <<proglangs>>
+
+Semantic markup for programming language names, package names, and
+class file names is provided with the [[latex:progstruct][proglang]], [[latex:progstruct][package]], and [[latex:progstruct][classfile]]
+commands.  [[latex:classfile][Org-article]] currently defines all of these in the same way.
+
+#+name: proglangs-code
+#+begin_src latex :exports code
+  \let\proglang=\textsf
+  \let\package=\textsf
+  \let\classfile=\textsf
+#+end_src
+
+** Programming constructs
+Markup for programming constructs is provided with the [[latex:progstruct][progstruct]]
+and [[latex:progstruct][progexample]] commands.  Both are set in monospaced type; the
+examples are set at a slightly smaller size.
+
+#+name: progstructs-code
+#+begin_src latex :exports code
+  \let\progstruct=\texttt
+  \newcommand{\progexample}[1]{{\ttfamily\small #1}}
+#+end_src
+
+* LaTeX packages
+   :PROPERTIES:
+   :VISIBILITY: folded
+   :END:
+# <<latex-packages>>
+
+** Article base class options
+
+[[latex:classfile][Org-article]] offers a choice of two base classes.  The first is the
+standard LaTeX [[latex:classfile][article]] class.  Also available is the [[http://www.ctan.org/tex-archive/macros/latex/contrib/koma-script/][KOMA-script]]
+[[latex:classfile][scrartcl]] class.  The KOMA-script [[latex:classfile][scrartcl]] is compatible with the
+standard LaTeX article class; input that compiles with [[latex:classfile][article]] should
+also compile with [[latex:classfile][scrartcl]].  It differs in the layout of the page and
+the styling of page elements, producing a somewhat more "modern"
+design based on principles set out by the typographer and book
+designer [[http://en.wikipedia.org/wiki/Jan_Tschichold][Jan Tschichold]].
+
+To select the standard LaTeX [[latex:classfile][article]] class, put this line in your [[latex:proglang][Org-mode]]
+document:
+
+#+name: org-buffer-article
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [article]
+#+end_src
+
+To select the [[http://www.ctan.org/tex-archive/macros/latex/contrib/koma-script/][KOMA-script]] [[latex:classfile][scrartcl]] class, put this line in your
+[[latex:proglang][Org-mode]] document:
+
+#+name: org-buffer-koma
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [koma]
+#+end_src
+ 
+
+For information on [[latex:classfile][scrartcl]], you can probably read the documentation
+on your system with the following shell command:
+
+#+name: read-koma
+#+begin_src sh :exports code
+  texdoc koma
+#+end_src
+
+
+#+name: option-koma
+#+begin_src latex :exports code
+  \newboolean{koma}
+  \DeclareOption{koma}{\setboolean{koma}{true}}
+#+end_src
+
+#+name: option-article
+#+begin_src latex :exports code
+  \newboolean{article}
+  \DeclareOption{article}{\setboolean{article}{true}}
+#+end_src
+
+#+name: pass-to-koma
+#+begin_src latex :exports code
+  \DeclareOption*{\PassOptionsToClass{\CurrentOption}{scrartcl}}
+#+end_src
+
+#+name: pass-to-article
+#+begin_src latex :exports code
+  \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+#+end_src
+
+The article class is loaded by default.
+
+#+name: load-base-class
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{koma}}
+  {%
+    \LoadClass{scrartcl}%
+  }%
+  {%
+  \LoadClass{article}%
+  }  
+#+end_src
+
+*** Paper size
+
+The following paper size options are available for the standard LaTeX
+[[latex:classfile][article]] class and the [[http://www.ctan.org/tex-archive/macros/latex/contrib/koma-script/][KOMA-script]] [[latex:classfile][scrartcl]] class.  The first three
+options are [[http://en.wikipedia.org/wiki/Paper_size#North_American_paper_sizes][North American paper sizes]].  The [[latex:progstruct][a4paper]], [[latex:progstruct][a5paper]], [[latex:progstruct][b4paper]],
+and [[latex:progstruct][b5paper]] options are [[http://en.wikipedia.org/wiki/Paper_size#The_international_standard:_ISO_216][international standard ISO 216]].  The
+[[latex:progstruct][landscape]] option orients the paper with the long axis horizontal. 
+
+#+name: paper-sizes
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [letterpaper]
+  #+LaTeX_CLASS_OPTIONS: [legalpaper]
+  #+LaTeX_CLASS_OPTIONS: [executivepaper]
+  #+LaTeX_CLASS_OPTIONS: [a4paper]
+  #+LaTeX_CLASS_OPTIONS: [a5paper]
+  #+LaTeX_CLASS_OPTIONS: [b4paper]
+  #+LaTeX_CLASS_OPTIONS: [b5paper]
+  #+LaTeX_CLASS_OPTIONS: [landscape]
+#+end_src
+
+The [[http://www.ctan.org/tex-archive/macros/latex/contrib/koma-script/][KOMA-script]] [[latex:classfile][scrartcl]] class has options for a fuller range of the
+[[http://en.wikipedia.org/wiki/Paper_size#The_international_standard:_ISO_216][international standard ISO 216]] paper sizes, in addition to the sizes
+offered by the standard LaTeX [[latex:classfile][article]] class.  In the example below, X
+is replaced by an integer [0, 1, ... 10].
+ 
+#+name: koma-paper-sizes
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [aXpaper]
+  #+LaTeX_CLASS_OPTIONS: [bXpaper]
+  #+LaTeX_CLASS_OPTIONS: [cXpaper]
+  #+LaTeX_CLASS_OPTIONS: [dXpaper]  
+#+end_src
+
+*** Font size
+
+There are three base font size options available for the standard
+LaTeX [[latex:classfile][article]] and the [[http://www.ctan.org/tex-archive/macros/latex/contrib/koma-script/][KOMA-script]] [[latex:classfile][scrartcl]] classes.  This option
+sets the size of the main text in the body of the document.  Other
+fonts used in the document design, such as headers, footers, heads,
+sub-heads, etc., will be scaled accordingly.
+
+#+name: font-sizes
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [10pt]
+  ,#+LaTeX_CLASS_OPTIONS: [11pt]
+  ,#+LaTeX_CLASS_OPTIONS: [12pt]
+#+end_src
+
+*** Text block and margins
+With the [[latex:progstruct][koma]] option, the size of the text block
+and the resulting margins can be altered using the option
+[[latex:progstruct][DIV]].  A typical value of
+[[latex:progstruct][DIV]] is 9. Smaller text blocks with larger
+margins result when [[latex:progstruct][DIV]] takes a smaller value
+and larger text blocks with smaller margins result when  [[latex:progstruct][DIV]] takes a
+larger value (fig. \ref{fig:div}).
+
+#+CAPTION: Text block sizes on A4 paper with different values of DIV
+#+LABEL: fig:div
+#+ATTR_LaTeX: width=0.5\textwidth
+#+results:
+[[file:../images/org-article-text-blocks.png]]
+
+
+The [[latex:progstruct][koma]] class can also take into account the part of the page used
+by the binding.  This value is passed to the package with the option
+[[latex:progstruct][BCOR]], which takes any LaTeX length as its argument.
+
+For example, to set the text block large and leave ample space for
+binding with a clip, one might pass the following options to the class
+when using the [[latex:progstruct][koma]] option.
+#+name: koma-text-block
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [koma,DIV=15,BCOR=15mm]
+#+end_src
+
+*** Table of contents
+In the default configuration, the [[latex:proglang][Org-mode]] LaTeX exporter includes a
+function that sandwiches the LaTeX =\tableofcontents= command between
+a command that sets the depth of the headings that appear in the table
+of contents (based on the number of headline levels that will be
+exported as headings, rather than lists) and a command to add some
+vertical space.  Neither of these additions to the =\tableofcontents=
+command is especially desireable.  It is often the case that one wants
+the table of contents depth to differ from the depth to which sections
+are numbered.  In the LaTeX world, the space between the end of one
+element and the start of another is something that is specified within
+a class file, rather than within the document itself.  Formatting with
+the class style exclusively can give the finished document a pleasing
+stylistic uniformity that is difficult to achieve in an ad hoc way.
+Fortunately, the LaTeX exporter is coded in such a way that it is
+possible for the user to alter this behavior relatively easily.
+
+[[latex:classfile][Org-article]] makes it possible to set the depth of headings that
+appear in the table of contents independent of the level to which
+section headings are numbered.  This mechanism will only work if the default behavior of the LaTeX
+exporter is changed.  The following bit of [[latex:proglang][Emacs
+Lisp]] code can be
+placed in =.emacs=:
+
+#+name: format-toc
+#+begin_src emacs-lisp :exports code
+  (defun org-export-latex-format-toc-org-article (depth)
+    (when depth
+      (format "\\setcounter{secnumdepth}{%s}\n\\tableofcontents\n"
+              depth)))
+  (setq org-export-latex-format-toc-function 'org-export-latex-format-toc-org-article)
+#+end_src
+This code uses the depth to which [[latex:proglang][Org-mode]] headlines are exported to
+sections, rather than lists, as the default level to which sections
+are numbered.  This is fine for many applications, but it is possible
+to control this variable separately, as [[section-numbering][shown below]].
+
+Three choices are available in [[latex:classfile][Org-article]]: sections,
+subsections, and subsubsections.  It would be possible to create other
+choices, but it is generally the case that one, two, or three heading
+levels are sufficient for the table of contents.  More levels are
+rarely seen and are perhaps not too desireable.
+
+#+name: toc-depth-text-block
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [tocdepths,tocdepthss,tocdepthsss]
+#+end_src
+
+#+name: option-tocdepth
+#+begin_src latex :exports code
+  \DeclareOption{tocdepths}{\AtBeginDocument{\setcounter{tocdepth}{1}}}
+  \DeclareOption{tocdepthss}{\AtBeginDocument{\setcounter{tocdepth}{2}}}
+  \DeclareOption{tocdepthsss}{\AtBeginDocument{\setcounter{tocdepth}{3}}}
+#+end_src
+
+*** Section numbering
+# <<section-numbering>>
+
+It is possible to set the level to which sections will be numbered
+with [[latex:classfile][Org-article]].  
+
+#+name: format-toc-for-secnum
+#+begin_src emacs-lisp :exports code
+  (defun org-export-latex-format-toc-org-article-sec-num (depth)
+    (when depth
+      (format "%% Org-mode is exporting headings to %s levels.\n\\tableofcontents\n"
+              depth)))
+  (setq org-export-latex-format-toc-function 'org-export-latex-format-toc-org-article-sec-num)
+#+end_src
+
+Five choices are available in [[latex:classfile][Org-article]]: sections,
+subsections, subsubsections, paragraphs, and subparagraphs.
+
+#+name: sec-number-text-block
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [secnums,secnumss,secnumsss,secnump,secnumsp]
+#+end_src
+
+#+name: option-secnum
+#+begin_src latex :exports code
+  \DeclareOption{secnums}{\AtBeginDocument{\setcounter{secnumdepth}{1}}}
+  \DeclareOption{secnumss}{\AtBeginDocument{\setcounter{secnumdepth}{2}}}
+  \DeclareOption{secnumsss}{\AtBeginDocument{\setcounter{secnumdepth}{3}}}
+  \DeclareOption{secnump}{\AtBeginDocument{\setcounter{secnumdepth}{4}}}
+  \DeclareOption{secnumsp}{\AtBeginDocument{\setcounter{secnumdepth}{5}}}
+#+end_src
+
+*** Equations
+
+The standard LaTeX [[latex:classfile][article]] class and the [[http://www.ctan.org/tex-archive/macros/latex/contrib/koma-script/][KOMA-script]] [[latex:classfile][scrartcl]] class
+both recognize two options that control formatting of equations.  The
+option [[latex:progstruct][leqno]] will number equations on the left, rather than the
+right, which is the default.  The option [[latex:progstruct][fleqn]] displays equations
+flush left, rather than centered, which is the default
+
+#+name: equations
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [leqno]
+  ,#+LaTeX_CLASS_OPTIONS: [fleqn]
+#+end_src
+
+*** Table captions
+
+The standard LaTeX [[latex:classfile][article]] formats captions to appear below the
+captioned item.  However, many document styles require table captions
+above the table.  Users of [[latex:classfile][article]] typically use a package,
+[[http://tug.ctan.org/cgi-bin/ctanPackageInformation.py?id%3Dtopcapt][topcapt]], and place the command [[latex:progstruct][topcaption]] above the
+captioned item.  With the [[latex:proglang][Org-mode]] LaTeX exporter, this requires
+changes to the exported LaTeX code.  The [[http://www.ctan.org/tex-archive/macros/latex/contrib/koma-script/][KOMA-script]] [[latex:classfile][scrartcl]]
+class provides an option that gets rid of the need for [[latex:package][topcapt]]:
+
+#+name: koma-caption
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [captions=tableheading]
+#+end_src
+
+** Org-mode default packages
+
+*** Inputenc                                                       :noexport:
+
+The input encoding of the document is specified by the [[latex:package][inputenc]] package.  It
+takes one of the following options:
+
+#+name: inputenc-options
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [ascii]
+  ,#+LaTeX_CLASS_OPTIONS: [latin1] 
+  ,#+LaTeX_CLASS_OPTIONS: [latin2]
+  ,#+LaTeX_CLASS_OPTIONS: [latin3] 
+  ,#+LaTeX_CLASS_OPTIONS: [latin4] 
+  ,#+LaTeX_CLASS_OPTIONS: [latin5]
+  ,#+LaTeX_CLASS_OPTIONS: [latin9] 
+  ,#+LaTeX_CLASS_OPTIONS: [latin10]
+  ,#+LaTeX_CLASS_OPTIONS: [decmulti]
+  ,#+LaTeX_CLASS_OPTIONS: [cp850]
+  ,#+LaTeX_CLASS_OPTIONS: [cp852]
+  ,#+LaTeX_CLASS_OPTIONS: [cp858]
+  ,#+LaTeX_CLASS_OPTIONS: [cp437]
+  ,#+LaTeX_CLASS_OPTIONS: [cp437de]
+  ,#+LaTeX_CLASS_OPTIONS: [cp865]
+  ,#+LaTeX_CLASS_OPTIONS: [applemac]
+  ,#+LaTeX_CLASS_OPTIONS: [macce] 
+  ,#+LaTeX_CLASS_OPTIONS: [next]
+  ,#+LaTeX_CLASS_OPTIONS: [cp1250]
+  ,#+LaTeX_CLASS_OPTIONS: [cp1252]
+  ,#+LaTeX_CLASS_OPTIONS: [cp1257]
+  ,#+LaTeX_CLASS_OPTIONS: [ansinew]
+  ,#+LaTeX_CLASS_OPTIONS: [utf8]
+#+end_src
+
+The package documentation describes each of these options.  You can
+probably read the documentation for [[latex:package][inputenc]] with the following shell
+command:
+#+name: read-inputenc
+#+begin_src sh :exports code
+  texdoc inputenc
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-inputenc
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [noinputenc]
+#+end_src
+ 
+
+#+name: option-inputenc
+#+begin_src latex :exports none
+  \newboolean{noinputenc}  
+  \DeclareOption{noinputenc}{\setboolean{noinputenc}{true}}  
+#+end_src
+
+#+name: load-inputenc
+#+begin_src latex :exports none
+  \ifthenelse{\boolean{noinputenc}}
+  {}
+  {\RequirePackage{inputenc}}
+#+end_src
+
+#+name: options-to-inputenc
+#+begin_src latex :exports none
+  \DeclareOption*{%
+    \PassOptionsToPackage{\CurrentOption}{inputenc}
+  }
+#+end_src
+
+*** Inputenc
+The input encoding of the document is specified by the [[latex:package][inputenc]]
+package.  [[latex:proglang][Org-mode]] provides a nifty method for sending options to this
+package, so it is not loaded directly by [[latex:classfile][Org-article]].  See
+[[export-setup][Org-mode LaTeX export setup]].
+
+*** Fontenc
+
+The [[latex:package][fontenc]] package specifies the encoding to use with a font.  The
+history of font encodings in LaTeX is a long one; suffice it to say
+that the most common option is [[latex:progstruct][T1]], also known as the Cork encoding
+because it was formulated at a EuroTeX conference in Ireland's County
+Cork.  The [[latex:package][fontenc]] package pretends that it was never loaded so that
+it can be called several times with different options to load fonts
+that have various encodings.
+
+You can probably read the documentation for [[latex:package][fontenc]] on your system
+with the following shell command:
+
+#+name: read-fontenc
+#+begin_src sh :exports code
+  texdoc fontenc
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-fontenc
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nofontenc]
+#+end_src
+ 
+Note that several of the font packages load [[latex:package][fontenc]] themselves.
+These include [[garamond-font][Garamond]], [[palatino-font][Palatino]], [[charter-font][Charter]], and [[utopia-font][Utopia]].
+
+#+name: option-fontenc
+#+begin_src latex :exports code
+  \newboolean{ORGART@nofontenc}  
+  \DeclareOption{nofontenc}{\setboolean{ORGART@nofontenc}{true}}
+#+end_src
+
+#+name: load-fontenc
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nofontenc}}
+  {}
+  {\RequirePackage[T1]{fontenc}}
+#+end_src
+
+#+name: options-to-fontenc
+#+begin_src latex :exports code
+  \DeclareOption*{%
+    \PassOptionsToPackage{\CurrentOption}{fontenc}
+  }
+#+end_src
+
+*** Fixltx2e
+The [[latex:package][fixltx2e]] package applies fixes to LaTeX2e that would break older
+documents, so have not been applied to the LaTeX2e kernel.  The
+package doesn't take any options.
+
+You can probably read about [[latex:package][fixltx2e]] on your system by issuing the
+following shell command:
+
+#+name: read-fixltx2e
+#+begin_src sh :exports code
+  texdoc fixltx2e
+#+end_src
+ 
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-fixltx2e
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nofixltx2e]
+#+end_src
+ 
+#+name: option-fixltx2e
+#+begin_src latex :exports code
+  \newboolean{ORGART@nofixltx2e}
+  \DeclareOption{nofixltx2e}{\setboolean{ORGART@nofixltx2e}{true}}
+#+end_src
+
+#+name: load-fixltx2e
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nofixltx2e}}
+  {}
+  {\RequirePackage{fixltx2e}}
+#+end_src
+
+*** Graphicx
+The [[latex:package][graphicx]] package is typically configured with *.def files
+because the facilities it specifies are provided by a graphics driver,
+rather than by LaTeX.  For this reason, it is typically loaded without
+options. 
+
+You should be able to read about [[latex:package][graphicx]], along with its companion
+packages [[latex:package][color]] and [[latex:package][graphics]] by issuing the following shell
+command:
+
+#+name: read-graphicx
+#+begin_src sh :exports code
+  texdoc graphicx
+#+end_src
+
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-graphicx
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nographicx]
+#+end_src
+ 
+#+name: option-graphicx
+#+begin_src latex :exports code
+  \newboolean{ORGART@nographicx}
+  \DeclareOption{nographicx}{\setboolean{ORGART@nographicx}{true}}
+#+end_src
+
+#+name: load-graphicx
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nographicx}}
+  {}
+  {\RequirePackage{graphicx}}
+#+end_src
+
+*** Longtable
+The [[latex:package][longtable]] package defines a new LaTeX environment that can be
+used in place of the =tabular= environment and can be broken by the
+TeX page-breaking algorithm.  It is used, as the name implies, by long
+tables that typically won't fit onto a single page.  The package is
+loaded without option.
+
+You should be able to read the [[latex:package][longtable]] documentation on your
+system by issuing the following shell command:
+
+#+name: read-longtable
+#+begin_src sh :exports code
+  texdoc longtable
+#+end_src
+
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-longtable
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nolongtable]
+#+end_src
+
+#+name: option-longtable
+#+begin_src latex :exports code
+  \newboolean{ORGART@nolongtable}
+  \DeclareOption{nolongtable}{\setboolean{ORGART@nolongtable}{true}}
+#+end_src
+
+#+name: load-longtable
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nolongtable}}
+  {}
+  {\RequirePackage{longtable}}
+#+end_src
+
+*** Float
+Tables and figures in LaTeX are treated as floating objects.
+Internally, they are treated as a single (large) glyph, which makes
+them difficult to place on a page of otherwise small glyphs.
+Consequently, they are allowed to "float" until a suitable location is
+found.  The [[latex:package][float]] package provides facilities to define new floating
+environments, to restyle the existing float environments, and
+additionally defines a placement parameter, [[latex:progstruct][{H}]], that keeps a float
+from floating.  The package is loaded without options.
+
+You can probably read about the [[latex:package][float]] package on your system by
+issuing the following shell command:
+
+#+name: read-float
+#+begin_src sh :exports code
+  texdoc float
+#+end_src
+
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-float
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nofloat]
+#+end_src
+
+#+name: option-float
+#+begin_src latex :exports code
+  \newboolean{ORGART@nofloat}
+  \DeclareOption{nofloat}{\setboolean{ORGART@nofloat}{true}}
+#+end_src
+
+#+name: load-float
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nofloat}}
+  {}
+  {\RequirePackage{float}}
+#+end_src
+
+*** Wrapfig
+The [[latex:package][wrapfig]] package defines two new environments to set a narrow
+float at the edge of the text and wrap the text around it.  Because
+"floats" in these new environments do not float it is sometimes the
+case that they appear out of order, e.g. Figure n appears before
+Figure n-1.  Caveat emptor.
+
+The package is loaded without options.
+
+The documentation for this package is included at the end of the package source.
+You should be able to read it on your system by issuing the following
+shell command:
+
+#+name: read-wrapfig
+#+begin_src sh :exports code
+  texdoc wrapfig
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-wrapfig
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nowrapfig]
+#+end_src
+ 
+#+name: option-wrapfig
+#+begin_src latex :exports code
+  \newboolean{ORGART@nowrapfig}
+  \DeclareOption{nowrapfig}{\setboolean{ORGART@nowrapfig}{true}}
+#+end_src
+
+#+name: load-wrapfig
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nowrapfig}}
+  {}
+  {\RequirePackage{wrapfig}}
+#+end_src
+
+*** Soul
+The [[latex:package][soul]] package is used primarily for underlining text.  It is
+loaded without options.
+
+You can probably read the [[latex:package][soul]] documentation on your system by
+issuing the following shell command:
+
+#+name: read-soul
+#+begin_src sh :exports code
+  texdoc soul
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-soul
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nosoul]
+#+end_src
+ 
+#+name: option-soul
+#+begin_src latex :exports code
+  \newboolean{ORGART@nosoul}
+  \DeclareOption{nosoul}{\setboolean{ORGART@nosoul}{true}}
+#+end_src
+
+#+name: load-soul
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nosoul}}
+  {}
+  {\RequirePackage{soul}}
+#+end_src
+
+*** T1enc                                                          :noexport:
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-t1enc
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [not1enc]
+#+end_src
+ 
+#+name: option-t1enc
+#+begin_src latex :exports code
+  \newboolean{ORGART@not1enc} 
+  \DeclareOption{not1enc}{\setboolean{ORGART@not1enc}{true}}
+#+end_src
+
+#+name: load-t1enc
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@not1enc}}
+  {}
+  {\RequirePackage{t1enc}}
+#+end_src
+
+*** Textcomp
+This package provides support for the Text Companion fonts, which
+provide symbols used by [[latex:progstruct][org-entities]], in particular the Euro
+currency symbol.  It is loaded without options.
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-textcomp
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [notextcomp]
+#+end_src
+ 
+
+#+name: option-textcomp
+#+begin_src latex :exports code
+  \newboolean{ORGART@notextcomp}
+  \DeclareOption{notextcomp}{\setboolean{ORGART@notextcomp}{true}}
+#+end_src
+
+#+name: load-textcomp
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@notextcomp}}
+  {}
+  {\RequirePackage{textcomp}}
+#+end_src
+
+*** MarVoSym
+The [[latex:package][marvosym]] package provides support for Martin Vogel's Symbol
+font, some glyphs from which are required by [[latex:progstruct][org-entities]].  The
+package is loaded without options.
+
+You can probably read about the [[latex:package][marvosym]] package by issuing the
+following command in the shell:
+
+#+name: read-marvosym
+#+begin_src sh :exports code
+  texdoc marvosym
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-marvosym
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nomarvosym]
+#+end_src
+
+#+name: option-marvosym
+#+begin_src latex :exports code
+  \newboolean{ORGART@nomarvosym}
+  \DeclareOption{nomarvosym}{\setboolean{ORGART@nomarvosym}{true}}
+#+end_src
+
+#+name: load-marvosym
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nomarvosym}}
+  {}
+  {\RequirePackage{marvosym}}
+#+end_src
+
+*** Wasysym
+The [[latex:package][wasysym]] package makes available some symbol glyphs from the
+[[latex:package][wasy]] fonts.  It is needed to support some of the glyphs in
+[[latex:progstruct][org-entities]].  When it is loaded without options, this package clashes
+with the American Mathematical Society's [[latex:package][amsmath]] package.  Using
+the [[latex:progstruct][nointegrals]] option resolves this clash:
+
+#+name: wasysym-options
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [integrals, nointegrals]
+#+end_src
+
+You can probably read the wasysym documentation on your system by
+issuing the following shell command:
+
+#+name: read-wasysym
+#+begin_src sh :exports code
+  texdoc wasysym
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-wasysym
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nowasysym]
+#+end_src
+ 
+#+name: option-wasysym
+#+begin_src latex :exports code
+  \newboolean{ORGART@nowasysym}
+  \DeclareOption{nowasysym}{\setboolean{ORGART@nowasysym}{true}}
+  \newboolean{ORGART@integrals}
+  \DeclareOption{integrals}{\setboolean{ORGART@integrals}{true}}
+  \newboolean{ORGART@nointegrals}
+  \DeclareOption{nointegrals}{\setboolean{ORGART@nointegrals}{true}}
+#+end_src
+
+#+name: load-wasysym
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nowasysym}}
+  {}
+  {%
+    \ifthenelse{\boolean{ORGART@integrals}}%
+    {\RequirePackage[integrals]{wasysym}}%
+    {\RequirePackage[nointegrals]{wasysym}}%
+  }
+#+end_src
+
+*** Latexsym
+The [[latex:package][latexsym]] package provides a few glyphs, one or more of which
+might be required by [[latex:progstruct][org-entities]].  According to the documentation,
+[[latex:package][latexsym]] isn't needed if the [[latex:package][amssymb]] package is loaded.
+
+You can probably read about the [[latex:package][latexsym]] package on your system by issuing the
+following shell command:
+
+#+name: read-latexsym
+#+begin_src sh :exports code
+  texdoc latexsym
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-latexsym
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nolatexsym]
+#+end_src
+ 
+#+name: option-latexsym
+#+begin_src latex :exports code
+  \newboolean{ORGART@nolatexsym}
+  \DeclareOption{nolatexsym}{\setboolean{ORGART@nolatexsym}{true}}
+#+end_src
+
+#+name: load-latexsym
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nolatexsym}}
+  {}
+  {\RequirePackage{latexsym}}
+#+end_src
+
+*** Amssymb
+This package provides all the symbols defined in the American
+Mathematical Society's [[http://www.ams.org/publications/authors/tex/amsfonts][symbol fonts]] =msam= and =msbm=.  They are
+required to support [[latex:progstruct][org-entities]].  It is superseded by the
+=mathdesign= package, which is used by various fonts.  If one of these
+is specified, then the [[latex:package][amssymb]] package is not loaded. If the package is
+loaded, the it is loaded without options.
+
+You can probably read the [[latex:package][amssymb]] package documentation by issuing
+the following shell command:
+
+#+name: read-amssymb
+#+begin_src sh :exports code
+  texdoc amssymb
+#+end_src
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.
+
+#+name: org-buffer-amssymb
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [noamssymb]
+#+end_src
+
+#+name: option-amssymb
+#+begin_src latex :exports code
+  \newboolean{ORGART@noamssymb}
+  \DeclareOption{noamssymb}{\setboolean{ORGART@noamssymb}{true}}
+#+end_src
+
+Isn't loaded if Times, Charter, Utopia, or Garamond are loaded.  These
+use the[[latex:package][mathdesign]] package, which apparently supersedes [[latex:package][amssymb]].
+
+#+name: load-amssymb
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@noamssymb}\or\boolean{ORGART@utopia}\or\boolean{ORGART@charter}\or\boolean{ORGART@garamond}\or\boolean{ORGART@times}}
+  {}
+  {\RequirePackage{amssymb}}
+#+end_src
+  
+*** Hyperref
+The [[latex:package][hyperref]] package turns LaTeX cross-referencing commands into
+hyperlinks, including the table of contents, bibliography, etc.  It is
+typically configured on a site-wide basis with options kept in a file,
+=hyperref.cfg=.  The LaTeX document loads the package without
+specifying any options.  The [[latex:package][hyperref]] package redefines many LaTeX
+commands, so it needs to be loaded at, or near the end of, the [[package-loading-part][package
+loading part]]. 
+
+The [[latex:package][hyperref]] package accepts numerous options, which can be given as
+=key = value= pairs.  Boolean options default to =true= when passed
+without a value.  Options are passed in the usual way, and
+[[latex:classfile][Org-article]] simply passes them on to [[latex:package][hyperref]].
+
+#+name: hyperref-options
+#+begin_src org :exports code
+  ,#+LaTeX_CLASS_OPTIONS: [anchorcolor, backref, baseurl, bookmarks,
+  bookmarksnumbered, bookmarksopen, bookmarksopenlevel, bookmarkstype,
+  breaklinks, CJKbookmarks, citebordercolor, citecolor, colorlinks,
+  draft, dvipdfm, dvipdfmx, dvips, dvipsone, dviwindo, encap,
+  extension, filebordercolor, filecolor, final, frenchlinks,
+  hyperfigures, hyperfootnotes, hyperindex, hypertex, hypertexnames,
+  implicit, latex2html, legalpaper, letterpaper, linkbordercolor,
+  linkcolor, linktocpage, menubordercolor, menucolor, nativepdf,
+  naturalnames, nesting, pageanchor, pagebackref, pdfauthor,
+  pdfborder, pdfcenterwindow, pdfcreator, pdfdirection,
+  pdfdisplaydoctitle, pdfduplex, pdffitwindow, pdfhighlight, pdfinfo,
+  pdfkeywords, pdflang, pdfmark, pdfmenubar, pdfnewwindow,
+  pdfnonfullscreenpagemode, pdfnumcopies, pdfpagelayout, pdfpagemode,
+  pdfpagelabels, pdfpagescrop, pdfpagetransition,
+  pdfpicktraybypdfsize, pdfprintarea, pdfprintclip, pdfprintpagerange,
+  pdfprintscaling, pdfproducer, pdfstartpage, pdfstartview,
+  pdfsubject, pdftex, pdftitle, pdftoolbar, pdftrapped, pdfview,
+  pdfviewarea, pdfviewclip, pdfwindowui, plainpages, ps2pdf,
+  raiselinks, runbordercolor, runcolor, setpagesize, tex4ht, textures,
+  unicode, urlbordercolor, urlcolor, verbose, vtex, xetex]
+#+end_src
+
+
+You can probably read the [[latex:package][hyperref]] documentation by issuing the
+following shell command:
+
+#+name: read-hyperref
+#+begin_src sh :exports code
+  texdoc hyperref
+#+end_src
+
+
+This is a standard [[latex:proglang][Org-mode]] package that is loaded by default.  An
+option is provided to not load it.  If the user chooses not to load
+[[latex:package][hyperref]], then the [[latex:package][url]] package is loaded instead to provide
+support for the [[path-command][path]] command.
+
+#+name: org-buffer-hyperref
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [nohyperref]
+#+end_src
+
+#+name: option-hyperref
+#+begin_src latex :exports code
+  \newboolean{ORGART@nohyperref}
+  \DeclareOption{nohyperref}{\setboolean{ORGART@nohyperref}{true}}
+#+end_src
+
+#+name: load-hyperref
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@nohyperref}}
+  {\RequirePackage{url}}
+  {\RequirePackage{hyperref}}
+#+end_src
+
+Options do not include =debug=.
+
+#+name: options-to-hyperref
+#+begin_src latex :exports code
+\DeclareOption{anchorcolor}{%
+   \PassOptionsToPackage{anchorcolor}{hyperref}}
+\DeclareOption{backref}{%
+   \PassOptionsToPackage{backref}{hyperref}}
+\DeclareOption{baseurl}{%
+   \PassOptionsToPackage{baseurl}{hyperref}}
+\DeclareOption{bookmarks}{%
+   \PassOptionsToPackage{bookmarks}{hyperref}}
+\DeclareOption{bookmarksnumbered}{%
+   \PassOptionsToPackage{bookmarksnumbered}{hyperref}}
+\DeclareOption{bookmarksopen}{%
+   \PassOptionsToPackage{bookmarksopen}{hyperref}}
+\DeclareOption{bookmarksopenlevel}{%
+   \PassOptionsToPackage{bookmarksopenlevel}{hyperref}}
+\DeclareOption{bookmarkstype}{%
+   \PassOptionsToPackage{bookmarkstype}{hyperref}}
+\DeclareOption{breaklinks}{%
+   \PassOptionsToPackage{breaklinks}{hyperref}}
+\DeclareOption{CJKbookmarks}{%
+   \PassOptionsToPackage{CJKbookmarks}{hyperref}}
+\DeclareOption{citebordercolor}{%
+   \PassOptionsToPackage{citebordercolor}{hyperref}}
+\DeclareOption{citecolor}{%
+   \PassOptionsToPackage{citecolor}{hyperref}}
+\DeclareOption{colorlinks}{%
+   \PassOptionsToPackage{colorlinks}{hyperref}}
+\DeclareOption{draft}{%
+   \PassOptionsToPackage{draft}{hyperref}}
+\DeclareOption{dvipdfm}{%
+   \PassOptionsToPackage{dvipdfm}{hyperref}}
+\DeclareOption{dvipdfmx}{%
+   \PassOptionsToPackage{dvipdfmx}{hyperref}}
+\DeclareOption{dvips}{%
+   \PassOptionsToPackage{dvips}{hyperref}}
+\DeclareOption{dvipsone}{%
+   \PassOptionsToPackage{dvipsone}{hyperref}}
+\DeclareOption{dviwindo}{%
+   \PassOptionsToPackage{dviwindo}{hyperref}}
+\DeclareOption{encap}{%
+   \PassOptionsToPackage{encap}{hyperref}}
+\DeclareOption{extension}{%
+   \PassOptionsToPackage{extension}{hyperref}}
+\DeclareOption{filebordercolor}{%
+   \PassOptionsToPackage{filebordercolor}{hyperref}}
+\DeclareOption{filecolor}{%
+   \PassOptionsToPackage{filecolor}{hyperref}}
+\DeclareOption{final}{%
+   \PassOptionsToPackage{final}{hyperref}}
+\DeclareOption{frenchlinks}{%
+   \PassOptionsToPackage{frenchlinks}{hyperref}}
+\DeclareOption{hyperfigures}{%
+   \PassOptionsToPackage{hyperfigures}{hyperref}}
+\DeclareOption{hyperfootnotes}{%
+   \PassOptionsToPackage{hyperfootnotes}{hyperref}}
+\DeclareOption{hyperindex}{%
+   \PassOptionsToPackage{hyperindex}{hyperref}}
+\DeclareOption{hypertex}{%
+   \PassOptionsToPackage{hypertex}{hyperref}}
+\DeclareOption{hypertexnames}{%
+   \PassOptionsToPackage{hypertexnames}{hyperref}}
+\DeclareOption{implicit}{%
+   \PassOptionsToPackage{implicit}{hyperref}}
+\DeclareOption{latex2html}{%
+   \PassOptionsToPackage{latex2html}{hyperref}}
+\DeclareOption{legalpaper}{%
+   \PassOptionsToPackage{legalpaper}{hyperref}}
+\DeclareOption{letterpaper}{%
+   \PassOptionsToPackage{letterpaper}{hyperref}}
+\DeclareOption{linkbordercolor}{%
+   \PassOptionsToPackage{linkbordercolor}{hyperref}}
+\DeclareOption{linkcolor}{%
+   \PassOptionsToPackage{linkcolor}{hyperref}}
+\DeclareOption{linktocpage}{%
+   \PassOptionsToPackage{linktocpage}{hyperref}}
+\DeclareOption{menubordercolor}{%
+   \PassOptionsToPackage{menubordercolor}{hyperref}}
+\DeclareOption{menucolor}{%
+   \PassOptionsToPackage{menucolor}{hyperref}}
+\DeclareOption{nativepdf}{%
+   \PassOptionsToPackage{nativepdf}{hyperref}}
+\DeclareOption{naturalnames}{%
+   \PassOptionsToPackage{naturalnames}{hyperref}}
+\DeclareOption{nesting}{%
+   \PassOptionsToPackage{nesting}{hyperref}}
+\DeclareOption{pageanchor}{%
+   \PassOptionsToPackage{pageanchor}{hyperref}}
+\DeclareOption{pagebackref}{%
+   \PassOptionsToPackage{pagebackref}{hyperref}}
+\DeclareOption{pdfauthor}{%
+   \PassOptionsToPackage{pdfauthor}{hyperref}}
+\DeclareOption{pdfborder}{%
+   \PassOptionsToPackage{pdfborder}{hyperref}}
+\DeclareOption{pdfcenterwindow}{%
+   \PassOptionsToPackage{pdfcenterwindow}{hyperref}}
+\DeclareOption{pdfcreator}{%
+   \PassOptionsToPackage{pdfcreator}{hyperref}}
+\DeclareOption{pdfdirection}{%
+   \PassOptionsToPackage{pdfdirection}{hyperref}}
+\DeclareOption{pdfdisplaydoctitle}{%
+   \PassOptionsToPackage{pdfdisplaydoctitle}{hyperref}}
+\DeclareOption{pdfduplex}{%
+   \PassOptionsToPackage{pdfduplex}{hyperref}}
+\DeclareOption{pdffitwindow}{%
+   \PassOptionsToPackage{pdffitwindow}{hyperref}}
+\DeclareOption{pdfhighlight}{%
+   \PassOptionsToPackage{pdfhighlight}{hyperref}}
+\DeclareOption{pdfinfo}{%
+   \PassOptionsToPackage{pdfinfo}{hyperref}}
+\DeclareOption{pdfkeywords}{%
+   \PassOptionsToPackage{pdfkeywords}{hyperref}}
+\DeclareOption{pdflang}{%
+   \PassOptionsToPackage{pdflang}{hyperref}}
+\DeclareOption{pdfmark}{%
+   \PassOptionsToPackage{pdfmark}{hyperref}}
+\DeclareOption{pdfmenubar}{%
+   \PassOptionsToPackage{pdfmenubar}{hyperref}}
+\DeclareOption{pdfnewwindow}{%
+   \PassOptionsToPackage{pdfnewwindow}{hyperref}}
+\DeclareOption{pdfnonfullscreenpagemode}{%
+   \PassOptionsToPackage{pdfnonfullscreenpagemode}{hyperref}}
+\DeclareOption{pdfnumcopies}{%
+   \PassOptionsToPackage{pdfnumcopies}{hyperref}}
+\DeclareOption{pdfpagelayout}{%
+   \PassOptionsToPackage{pdfpagelayout}{hyperref}}
+\DeclareOption{pdfpagemode}{%
+   \PassOptionsToPackage{pdfpagemode}{hyperref}}
+\DeclareOption{pdfpagelabels}{%
+   \PassOptionsToPackage{pdfpagelabels}{hyperref}}
+\DeclareOption{pdfpagescrop}{%
+   \PassOptionsToPackage{pdfpagescrop}{hyperref}}
+\DeclareOption{pdfpagetransition}{%
+   \PassOptionsToPackage{pdfpagetransition}{hyperref}}
+\DeclareOption{pdfpicktraybypdfsize}{%
+   \PassOptionsToPackage{pdfpicktraybypdfsize}{hyperref}}
+\DeclareOption{pdfprintarea}{%
+   \PassOptionsToPackage{pdfprintarea}{hyperref}}
+\DeclareOption{pdfprintclip}{%
+   \PassOptionsToPackage{pdfprintclip}{hyperref}}
+\DeclareOption{pdfprintpagerange}{%
+   \PassOptionsToPackage{pdfprintpagerange}{hyperref}}
+\DeclareOption{pdfprintscaling}{%
+   \PassOptionsToPackage{pdfprintscaling}{hyperref}}
+\DeclareOption{pdfproducer}{%
+   \PassOptionsToPackage{pdfproducer}{hyperref}}
+\DeclareOption{pdfstartpage}{%
+   \PassOptionsToPackage{pdfstartview}{hyperref}}
+\DeclareOption{pdfsubject}{%
+   \PassOptionsToPackage{pdfsubject}{hyperref}}
+\DeclareOption{pdftex}{%
+   \PassOptionsToPackage{pdftex}{hyperref}}
+\DeclareOption{pdftitle}{%
+   \PassOptionsToPackage{pdftitle}{hyperref}}
+\DeclareOption{pdftoolbar}{%
+   \PassOptionsToPackage{pdftoolbar}{hyperref}}
+\DeclareOption{pdftrapped}{%
+   \PassOptionsToPackage{pdftrapped}{hyperref}}
+\DeclareOption{pdfview}{%
+   \PassOptionsToPackage{pdfview}{hyperref}}
+\DeclareOption{pdfviewarea}{%
+   \PassOptionsToPackage{pdfviewarea}{hyperref}}
+\DeclareOption{pdfviewclip}{%
+   \PassOptionsToPackage{pdfviewclip}{hyperref}}
+\DeclareOption{pdfwindowui}{%
+   \PassOptionsToPackage{pdfwindowui}{hyperref}}
+\DeclareOption{plainpages}{%
+   \PassOptionsToPackage{plainpages}{hyperref}}
+\DeclareOption{ps2pdf}{%
+   \PassOptionsToPackage{ps2pdf}{hyperref}}
+\DeclareOption{raiselinks}{%
+   \PassOptionsToPackage{raiselinks}{hyperref}}
+\DeclareOption{runbordercolor}{%
+   \PassOptionsToPackage{runbordercolor}{hyperref}}
+\DeclareOption{runcolor}{%
+   \PassOptionsToPackage{runcolor}{hyperref}}
+\DeclareOption{setpagesize}{%
+   \PassOptionsToPackage{setpagesize}{hyperref}}
+\DeclareOption{tex4ht}{%
+   \PassOptionsToPackage{tex4ht}{hyperref}}
+\DeclareOption{textures}{%
+   \PassOptionsToPackage{textures}{hyperref}}
+\DeclareOption{unicode}{%
+   \PassOptionsToPackage{unicode}{hyperref}}
+\DeclareOption{urlbordercolor}{%
+   \PassOptionsToPackage{urlbordercolor}{hyperref}}
+\DeclareOption{urlcolor}{%
+   \PassOptionsToPackage{urlcolor}{hyperref}}
+\DeclareOption{verbose}{%
+   \PassOptionsToPackage{verbose}{hyperref}}
+\DeclareOption{vtex}{%
+   \PassOptionsToPackage{vtex}{hyperref}}
+\DeclareOption{xetex}{%
+   \PassOptionsToPackage{xetex}{hyperref}}
+#+end_src
+
+** Font packages
+LaTeX documents might need three text fonts, one for the serif
+typeface used for text, the sans-serif typeface often used for heads
+and sub-heads, and the monospace typewriter typeface typically used to
+set code examples and the like.  Each of the following options
+specifies all three of the fonts, but takes its name after the serif
+font used to set text.
+
+*** Times
+# <<times-font>>
+
+The =times= option uses URW Nimbus Roman, a Times clone, for the serif
+font, URW Nimbus Sans, a Helvetica clone, for the sans-serif font,
+and URW Nimbus Mono, a Courier clone, for the typewriter font.  This
+is a standard set of common typefaces typically used in scientific
+publications.  All of the fonts should be included in a typical LaTeX
+distribution. 
+
+[[http://en.wikipedia.org/wiki/Times_Roman][Times New Roman]] was designed by [[http://en.wikipedia.org/wiki/Stanley_Morison][Stanley Morison]] for /The Times/ of
+London during a redesign of the newspaper prompted, in part, by
+Morison's criticism of its typography in 1929.  [[http://en.wikipedia.org/wiki/Helvetica][Helvetica]] was
+developed in 1957 by [[http://en.wikipedia.org/wiki/Max_Miedinger][Max Miedinger]].  [[http://en.wikipedia.org/wiki/Courier_(typeface)][Courier]] was designed by Howard
+Kettler in 1955 for use in IBM typewriters.
+
+#+name: org-buffer-times
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [times]
+#+end_src
+
+#+name: option-times
+#+begin_src latex :exports code
+  \newboolean{ORGART@times}
+  \DeclareOption{times}{\setboolean{ORGART@times}{true}}
+#+end_src
+
+Helvetica looks better if it is set slightly smaller than the serif
+font.
+
+#+name: load-times
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@times}}
+  {%
+    \ifpdf
+    \RequirePackage[T1]{fontenc}
+    \RequirePackage{mathptmx} 
+    \RequirePackage[scaled=.90]{helvet} 
+    \RequirePackage{courier}
+    \fi}%
+  {}
+#+end_src
+
+*** Garamond
+# <<garamond-font>>
+
+[[http://en.wikipedia.org/wiki/Garamond][Garamond]] refers to a group of old-style serif typefaces and is named
+after the sixteenth-century type designer, Claude Garamond.  It is an
+elegant typeface.  The sans-serif font is [[http://en.wikipedia.org/wiki/Bitstream_Vera][Bera]], an adaptation of a font
+originally named Vera.  It was designed by Jim Lyles.  The typewriter
+font is [[http://en.wikipedia.org/wiki/Inconsolata][Inconsolata]], which was created by Raph Levien and is based on Vera.
+
+
+#+name: org-buffer-garamond
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [garamond]
+#+end_src
+ 
+#+name: option-garamond
+#+begin_src latex :exports code
+  \newboolean{ORGART@garamond}
+  \DeclareOption{garamond}{\setboolean{ORGART@garamond}{true}}
+#+end_src
+
+Garamond requires a bit more leading than normal.
+
+#+name: load-garamond
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@garamond}}
+  {%
+    \ifpdf
+     \RequirePackage[T1]{fontenc} 
+     \RequirePackage[urw-garamond]{mathdesign}
+     \RequirePackage[scaled]{berasans} 
+     \RequirePackage{inconsolata} % tt
+     \linespread{1.0609}
+    \fi}%
+  {}
+#+end_src
+
+*** Palatino
+# <<palatino-font>>
+
+The beautiful, old-style serif font, [[http://en.wikipedia.org/wiki/Palatino][Palatino]], was designed by [[http://en.wikipedia.org/wiki/Herman_Zapf][Herman
+Zapf]].  It is somewhat heavier and easier to read than [[garamond-font][Garamond]].  It is
+paired here with Helvetica and Courier, as is [[times-font][Times]],
+for which it is an alternative.
+
+#+name: org-buffer-palatino
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [palatino]
+#+end_src
+
+#+name: option-palatino
+#+begin_src latex :exports code
+  \newboolean{ORGART@palatino}
+  \DeclareOption{palatino}{\setboolean{ORGART@palatino}{true}}
+#+end_src
+
+Palatino gets a bit more leading than normal.
+
+#+name: load-palatino
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@palatino}}
+  {%
+    \ifpdf
+    \RequirePackage[T1]{fontenc}
+    \RequirePackage{mathpazo}% 
+    \linespread{1.05}%
+    \RequirePackage[scaled]{helvet}%
+    \RequirePackage{courier} % tt
+    \fi}%
+  {}
+#+end_src
+
+*** Utopia
+# <<utopia-font>>
+
+[[http://en.wikipedia.org/wiki/Utopia_(typeface)][Utopia]] is a transitional serif font designed by [[http://en.wikipedia.org/wiki/Robert_Slimbach][Robert Slimbach]] for
+Adobe in 1989.  It became free software in 2006.  It is paired here
+with Bera and Inconsolata, as is [[garamond-font][Garamond]].
+
+Note that the utopia font clashes with the [[latex:package][amssymb]] package.
+
+#+name: org-buffer-utopia
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [utopia]
+#+end_src
+
+#+name: option-utopia
+#+begin_src latex :exports code
+  \newboolean{ORGART@utopia}
+  \DeclareOption{utopia}{\setboolean{ORGART@utopia}{true}}
+#+end_src
+
+#+name: load-utopia
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@utopia}}
+  {%
+    \ifpdf
+     \RequirePackage[T1]{fontenc} 
+     \RequirePackage[adobe-utopia]{mathdesign}
+     \RequirePackage[scaled]{berasans} 
+     \RequirePackage{inconsolata} % tt
+    \fi}%
+  {}
+#+end_src
+
+*** Charter
+# <<charter-font>>
+
+[[http://en.wikipedia.org/wiki/Bitstream_Charter][Charter]] was designed to reproduce well on low-resolution 300 dpi
+printers.  It is paired here with Helvetica and Courier, like [[times-font][Times]],
+for which it is an alternative.
+
+These fonts conflict with the [[latex:package][amssymb]] package.
+
+#+name: org-buffer-charter
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [charter]
+#+end_src
+ 
+#+name: option-charter
+#+begin_src latex :exports code
+  \newboolean{ORGART@charter}
+  \DeclareOption{charter}{\setboolean{ORGART@charter}{true}}
+#+end_src
+
+Helvetica is set a bit smaller to better match the Charter font.
+
+#+name: load-charter
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@charter}}
+  {%
+    \ifpdf
+     \RequirePackage[T1]{fontenc} 
+     \RequirePackage[bitstream-charter]{mathdesign}
+     \RequirePackage[scaled=.90]{helvet} 
+     \RequirePackage{courier} % tt
+    \fi}%
+  {}
+#+end_src
+
+** Other packages
+Packages not included in the [[latex:proglang][Org-mode]] list of default packages are
+made available in [[latex:classfile][Org-article]].  These include facilities to
+apply microtypographic adjustments to suitable fonts, set the line
+spacing of the document to double space, set lists more compactly than
+the standard LaTeX [[latex:classfile][article]], and typeset source code listings
+using one of several color or black and white themes.
+
+*** Microtype
+
+The [[latex:package][microtype]] package makes available the micro-typographic
+extensions of pdfTeX.  Prominent among these are font expansion and
+character protrusion, which together result in fewer bad line breaks
+and a visually even right margin.  
+
+You can probably read the [[latex:package][microtype]] documentation, which runs to
+more than 200 pages, on your system by issuing the shell command:
+
+#+name: read-microtype
+#+begin_src sh :exports code
+  texdoc microtype
+#+end_src
+
+
+This package is not loaded by default.  An option is provided to load
+it.
+
+#+name: org-buffer-microtype
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [microtype]
+#+end_src
+
+#+name: option-microtype
+#+begin_src latex :exports code
+  \newboolean{ORGART@microtype}
+  \DeclareOption{microtype}{\setboolean{ORGART@microtype}{true}}
+#+end_src
+
+#+name: load-microtype
+#+begin_src latex :exports code
+    \ifthenelse{\boolean{ORGART@microtype}}
+  {%
+    \ifpdf
+     \RequirePackage{microtype}
+    \fi}%
+  {}
+#+end_src
+
+*** Setspace
+
+The [[latex:package][setspace]] package is used here for the sole purpose of creating
+double-spaced documents, such as manuscripts submitted to some
+publishing houses.  If it is loaded, then the option [[latex:progstruct][doublespace]]
+will produce a double-spaced document.
+
+This package is not loaded by default.  An option is provided to load
+it, and to set linespacing to doublespace.
+
+#+name: org-buffer-setspace
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [setspace,doublespace]
+#+end_src
+ 
+#+name: option-setspace
+#+begin_src latex :exports code
+  \newboolean{ORGART@setspace}
+  \newboolean{ORGART@doublespace}
+  \DeclareOption{setspace}{\setboolean{ORGART@setspace}{true}}
+  \DeclareOption{doublespace}{\setboolean{ORGART@doublespace}{true}}
+#+end_src
+
+#+name: load-setspace
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@setspace}}
+  {\RequirePackage{setspace}}
+  {}
+#+end_src
+
+#+name: setspace-code
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{ORGART@setspace}}%
+  {\ifthenelse{\boolean{ORGART@doublespace}}%
+  {\doublespacing}%
+  {\singlespacing}}%
+  {}%
+#+end_src
+
+*** Paralist
+
+The [[latex:package][paralist]] package was designed to meet the widespread request for
+more tightly set lists in the standard LaTeX classes.  If it is
+loaded, then the LaTeX environments =itemize=, =enumerate=, and
+=description= are over-ridden by their paralist counterparts.
+
+You can probably read the [[latex:package][paralist]] documentation on your system by
+issuing the shell command:
+
+#+name: read-paralist
+#+begin_src sh :exports code
+  texdoc paralist
+#+end_src
+
+
+This package is not loaded by default.  An option is provided to load
+it.
+
+#+name: org-buffer-paralist
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [paralist]
+#+end_src
+ 
+#+name: option-paralist
+#+begin_src latex :exports code
+  \newboolean{ORGART@paralist}
+  \DeclareOption{paralist}{\setboolean{ORGART@paralist}{true}}
+#+end_src
+
+#+name: load-paralist
+#+begin_src latex :exports code
+  % Set the standard LaTeX list environments to their compact counterparts  
+  \ifthenelse{\boolean{ORGART@paralist}}
+    {%
+      \RequirePackage{paralist}
+      \let\itemize\compactitem%
+      \let\description\compactdesc%
+      \let\enumerate\compactenum%
+    }
+    {}
+#+end_src
+
+*** Topcapt                                                        :noexport:
+The [[latex:packgae][topcapt]] package is needed when it is desired to set the caption
+of a table above the table.  In this case, the [[latex:progstruct][caption]] command
+must be moved above the =tabular= environment and the command changed
+to =\topcaption=.  These will be adjustments made to the code produced
+by the [[latex:proglang][Org-mode]] LaTeX exporter.
+
+This package is not loaded by default.  An option is provided to load
+it.
+
+#+name: org-buffer-topcapt
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [topcapt]
+#+end_src
+
+#+name: option-topcapt
+#+begin_src latex :exports code
+  \newboolean{topcapt}
+  \DeclareOption{topcapt}{\setboolean{topcapt}{true}}
+#+end_src
+
+#+name: load-topcapt
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{topcapt}}
+    {\RequirePackage{topcapt}}
+    {}
+#+end_src
+
+*** Color                                                          :noexport:
+The =xcolor= package provides facilities for adding color to LaTeX
+output.  This package needs additional configuration.  It should take
+options. 
+
+#+name: org-buffer-color
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [color]
+#+end_src
+
+#+name: option-color
+#+begin_src latex :exports code
+  \newboolean{color}
+  \DeclareOption{color}{\setboolean{color}{true}}  
+#+end_src
+
+#+name: load-color
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{color}}
+    {\RequirePackage{color}}
+    {}
+#+end_src
+
+*** Listings
+The [[latex:package][listings]] package is a source code printer for LaTeX.  Except for
+the two options =draft= and =final=, which the [[latex:package][listings]] package is
+configured to pick up itself from options passed to [[latex:progstruct][documentclass]],
+the other options were introduced to ease debugging or to trigger
+compatibility with earlier versions of the package.  It seems unwise
+to use this mechanism to set options for the [[latex:package][listings]] package
+because there is no reason to assume that it will be stable.  One
+solution would be to process options for this package using a =key =
+value= interface that sets the values of keys recognized by the
+package's [[latex:progstruct][lstset]] function.  This is relatively difficult to do.  An
+easier approach groups package options into themes, which can be
+selected with simple options, rather than =key = value= pairs.  It is
+the approach adopted here.
+
+This package is not loaded by default.  Options are provided to load
+it in its default state, set up for black and white reproduction, and
+with two themes for color reproduction.
+
+#+name: org-buffer-listings
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [listings, listings-bw, listings-color, listings-sv]
+#+end_src
+ 
+Themes are defined for the listings package.  The
+=listings-color= theme was lifted from a post to the [[latex:proglang][Org-mode]] list by
+Eric Schulte.  The =listings-sv= theme was posted to the list by
+Sebastian Vauban; it has been modified here to work with the [[latex:package][color]]
+package, rather than the [[latex:package][xcolor]] package used by Sebastian, and to
+allow breaking of long lines.
+
+Caveat emptor: the line-breaking mechanism in the listings package appears to
+break when [[latex:progexample][resetmargins = false]].  This means that the listing will
+always be set to =\textwidth=, rather than =\linewidth=.  Thus, care
+should be taken to ensure that listings do not occur in lists.
+Probably the best way to ensure that this doesn't happen is to make
+sure the =H:= option in the export header is set to a suitably high
+level, so source code blocks always occur at an [[latex:proglang][Org-mode]] headline
+level that exports as a heading, rather than a list, e.g. if source
+code appears in a three-asterisk headline and now lower, then setting
+=H: 3= should ensure that listing margins are always aligned with text
+margins. 
+
+#+name: option-listings
+#+begin_src latex :exports code
+  \newboolean{listings}
+  \newboolean{color}
+  \DeclareOption{listings}{\setboolean{listings}{true}}
+  \DeclareOption{listings-bw}{%
+    \setboolean{listings}{true}%
+    \AtBeginDocument{%
+      \lstset{
+        basicstyle=\ttfamily\footnotesize,%
+        frame=lines,%
+        breaklines=true,%
+        showstringspaces=false}%
+    }%
+  }
+  \DeclareOption{listings-color}{%
+    \setboolean{listings}{true}%
+    \setboolean{color}{true}%
+    \AtBeginDocument{%
+      \definecolor{keywords}{RGB}{255,0,90}%
+      \definecolor{comments}{RGB}{60,179,113}%
+      \definecolor{back}{RGB}{231,231,231}%
+      \lstset{%
+        keywordstyle=\color{keywords},%
+        commentstyle=\color{comments},%
+        backgroundcolor=\color{back},%
+        basicstyle=\ttfamily\footnotesize,%
+        showstringspaces=false,%
+        frame=lines,%
+        breaklines=true,%
+        resetmargins=true%
+      }%
+    }%
+  }
+  \DeclareOption{listings-sv}{%
+    \setboolean{listings}{true}%
+    \setboolean{color}{true}%
+    \AtBeginDocument{%
+      \definecolor{...@lstbackground}{RGB}{255,255,204} % light yellow
+      \definecolor{...@lstkeyword}{RGB}{0,0,255} % blue
+      \definecolor{...@lstidentifier}{RGB}{0,0,0} % black
+      \definecolor{...@lstcomment}{RGB}{255,0,0} % red
+      \definecolor{...@lststring}{RGB}{0,128,0} % dark green
+      \lstset{%
+        basicstyle=\ttfamily\scriptsize, % the font that is used for the code
+        tabsize=4, % sets default tabsize to 4 spaces
+        numbers=left, % where to put the line numbers
+        numberstyle=\tiny, % line number font size
+        stepnumber=0, % step between two line numbers
+        breaklines=true, %!! do break long lines of code
+        showtabs=false, % show tabs within strings adding particular underscores
+        showspaces=false, % show spaces adding particular underscores
+        showstringspaces=false, % underline spaces within strings
+        keywordstyle=\color{...@lstkeyword},
+        identifierstyle=\color{...@lstidentifier},
+        stringstyle=\color{...@lststring},
+        commentstyle=\color{...@lstcomment},
+        backgroundcolor=\color{...@lstbackground}, % sets the background color
+        resetmargins=true,%
+        captionpos=b, % sets the caption position to `bottom'
+        extendedchars=false %!?? workaround for when the listed file is in UTF-8
+      }%
+    }%
+  }
+  \DeclareOption{listings-es}{%
+    \setboolean{listings}{true}%
+    \setboolean{color}{true}%
+    \AtBeginDocument{%
+      \definecolor{dkgreen}{rgb}{0,0.5,0}%
+      \definecolor{dkred}{rgb}{0.5,0,0}%
+      \definecolor{gray}{rgb}{0.5,0.5,0.5}%
+      \lstset{%
+        basicstyle=\ttfamily\bfseries\scriptsize,
+        keywordstyle=\color{blue},
+        ndkeywordstyle=\color{red},
+        commentstyle=\color{dkred},
+        stringstyle=\color{dkgreen},
+        numbers=left,
+        breaklines=true,
+        numberstyle=\ttfamily\footnotesize\color{gray},
+        stepnumber=1,
+        numbersep=10pt,
+        backgroundcolor=\color{white},
+        tabsize=4,
+        showspaces=false,
+        showstringspaces=false,
+        xleftmargin=.23in
+      }%
+    }%
+  }
+#+end_src
+
+#+name: load-listings
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{listings}}
+    {\RequirePackage{listings}}
+    {}
+#+end_src
+
+#+name: listings-code
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{listings}}%
+  {\lstdefinelanguage{org}%
+    {%
+      morekeywords={:results, :session, :var, :noweb, :exports},%
+      sensitive=false,%
+      morestring=[b]",%
+      morecomment=[l]{\#},%
+    }%
+    \lstdefinelanguage{dot}
+    {%
+      morekeywords={graph},
+      sensitive=false,
+    }%
+    \lstdefinelanguage{ditaa}
+    {%
+      breaklines=false
+    }%
+  }%
+  {}%  
+#+end_src
+
+*** Minted                                                         :noexport:
+
+Minted is a LaTeX package for formatting source code.  It is an
+alternative to the listings package.  It relies on an external piece
+of software called Pygments that needs to be installed separately.
+
+**** Installing Pygments
+
+#+name: org-buffer-minted
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [minted, monokai, perldoc, borland, colorful,
+murphy, trac, tango, fruity, autumn, vs, bw, emacs, pastie, friendly, native]
+#+end_src
+
+#+name: option-minted
+#+begin_src latex :exports code
+  \newboolean{minted}
+  \DeclareOption{minted}{\setboolean{minted}{true}}
+#+end_src
+
+#+name: load-minted
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{minted}}
+    {\RequirePackage{minted}}
+    {}
+#+end_src
+
+#+name: options-to-minted
+#+begin_src latex :exports code
+\DeclareOption{monokai}{%
+   \PassOptionsToPackage{monokai}{minted}}
+\DeclareOption{manni}{%
+   \PassOptionsToPackage{manni}{minted}}
+\DeclareOption{perldoc}{%
+   \PassOptionsToPackage{perldoc}{minted}}
+\DeclareOption{borland}{%
+   \PassOptionsToPackage{borland}{minted}}
+\DeclareOption{colorful}{%
+   \PassOptionsToPackage{colorful}{minted}}
+\DeclareOption{murphy}{%
+   \PassOptionsToPackage{murphy}{minted}}
+\DeclareOption{trac}{%
+   \PassOptionsToPackage{trac}{minted}}
+\DeclareOption{tango}{%
+   \PassOptionsToPackage{tango}{minted}}
+\DeclareOption{fruity}{%
+   \PassOptionsToPackage{fruity}{minted}}
+\DeclareOption{autumn}{%
+   \PassOptionsToPackage{autumn}{minted}}
+\DeclareOption{vs}{%
+   \PassOptionsToPackage{vs}{minted}}
+\DeclareOption{bw}{%
+   \PassOptionsToPackage{bw}{minted}}
+\DeclareOption{emacs}{%
+   \PassOptionsToPackage{emacs}{minted}}
+\DeclareOption{pastie}{%
+   \PassOptionsToPackage{pastie}{minted}}
+\DeclareOption{friendly}{%
+   \PassOptionsToPackage{friendly}{minted}}
+\DeclareOption{native}{%
+   \PassOptionsToPackage{native}{minted}}
+#+end_src
+
+*** GANTT charts                                                   :noexport:
+Eric Fraga wrote this GANTT chart constructor, powered by an [[latex:proglang][Org-mode]]
+table.  For everyday use, it requires that some Emacs lisp code be
+installed in the Library of Babel.
+
+**** GANTT Emacs lisp code
+
+The GANTT Emacs lisp code can either be placed in the buffer with the
+GANTT chart table or it can be installed in the [[http://orgmode.org/manual/Library-of-Babel.html#Library-of-Babel][Library of Babel]].
+Installing local code in the Library of Babel is best accomplished by
+establishing one or more [[latex:proglang][Org-mode]] files for this purpose and keeping
+them in a place that won't be overwritten when [[latex:proglang][Org-mode]] is updated.
+For each of these local files, place a line like the following in
+=.emacs= to make the source code blocks accessible to the Library:
+
+#+name: load-local-lob
+#+begin_src emacs-lisp :exports code
+  (org-babel-lob-ingest "~/org/local-lob.org")
+#+end_src
+
+The following source code block sent to the [[latex:proglang][Org-mode]] list by Eric
+Fraga has been modified slightly.  It should be installed in the
+Library of Babel.
+
+#+begin_example
+#+name: elispgantt
+#+begin_src emacs-lisp :var table=gantttest
+(defun esf/generate-gantt-chart (table)
+  (let ((dates "")
+	(entries (nthcdr 2 table))
+	(milestones "")
+	(nmilestones 0)
+	(ntasks 0)
+	(projecttime 0)
+	(tasks "")
+	(xlength 1)
+	)
+    (message "Initial: %s\n" table)
+    (message "Entries: %s\n" entries)
+    (while entries
+      (let ((entry (first entries)))
+	(if (listp entry)
+	    (let ((id (first entry))
+		  (type (nth 1 entry))
+		  (label (nth 2 entry))
+		  (task (nth 3 entry))
+		  (dependencies (nth 4 entry))
+		  (start (nth 5 entry))
+		  (duration (nth 6 entry))
+		  (end (nth 7 entry))
+		  (alignment (nth 8 entry))
+		  )
+	      (if (> start projecttime) (setq projecttime start))
+	      (if (string= type "task")
+		  (let ((end (+ start duration))
+			(textposition (+ start (/ duration 2)))
+			(flush "")
+			)
+		    (if (string= alignment "left")
+			(progn
+			  (setq textposition start)
+			  (setq flush "[left]"))
+		      (if (string= alignment "right")
+			  (progn
+			    (setq textposition end)
+			    (setq flush "[right]"))
+			)
+		      )
+		    (setq tasks (format "%s  \\gantttask{%s}{%s}{%d}{%d}{%d}{%s}\n" tasks label task start end textposition flush))
+		    (setq ntasks (+ 1 ntasks))
+		    (if (> end projecttime)
+			(setq projecttime end))
+		    )
+		(if (string= type "milestone")
+		    (progn
+		      (setq milestones (format "%s  \\ganttmilestone{$\\begin{array}{c}\\mbox{%s}\\\\ \\mbox{%s}\\end{array}$}{%d}\n" milestones label task start))
+		      (setq nmilestones (+ 1 nmilestones)))
+		  (if (string= type "date")
+		      (setq dates (format "%s  \\ganttdateline{%s}{%d}\n" dates label start))
+		    (message "Ignoring entry with type %s\n" type)
+		    )
+		  )
+		)
+	      )
+	  (message "Ignoring non-list entry %s\n" entry)
+	  ) ; end if list entry
+	(setq entries (cdr entries))
+	)
+      ) ; end while entries left
+    (format "\\pgfdeclarelayer{background}
+\\pgfdeclarelayer{foreground}
+\\pgfsetlayers{background,foreground}
+\\renewcommand{\\ganttprojecttime}{%d}
+\\renewcommand{\\ganttntasks}{%d}
+\\noindent
+\\begin{tikzpicture}[y=-0.75cm,x=0.75\\textwidth]
+  \\begin{pgfonlayer}{background}
+    \\draw[very thin, red!10!white] (0,1+\\ganttntasks) grid [ystep=0.75cm,xstep=1/\\ganttprojecttime] (1,0);
+    \\draw[\\ganttdatelinecolour] (0,0) -- (1,0);
+    \\draw[\\ganttdatelinecolour] (0,1+\\ganttntasks) -- (1,1+\\ganttntasks);
+  \\end{pgfonlayer}
+%s
+%s
+%s
+\\end{tikzpicture}" projecttime ntasks tasks milestones dates)
+    )
+  )
+(esf/generate-gantt-chart table)
+#+end_src
+#+end_example
+
+**** The GANTT Option
+The GANTT facility can be loaded by adding the following line to the
+[[latex:proglang][Org-mode]] buffer.
+
+#+name: org-buffer-gantt
+#+begin_src org :exports code
+  #+LaTeX_CLASS_OPTIONS: [gantt]
+#+end_src
+
+#+name: option-gantt
+#+begin_src latex :exports code
+  \newboolean{gantt}
+  \DeclareOption{gantt}{\setboolean{gantt}{true}}
+#+end_src
+
+The GANTT code requires the [[http://www.ctan.org/tex-archive/help/Catalogue/entries/pgf.html][pgf]] LaTeX packages written by Till Tantau.
+#+name: load-gantt
+#+begin_src latex :exports code
+  \ifthenelse{\boolean{gantt}}
+  {\RequirePackage{pgf, pgfarrows, pgfnodes, tikz}}
+  {}
+#+end_src
+
+Eric wrote several LaTeX commands to make the translation from
+[[latex:proglang][Org-mode]] table to GANTT chart.
+
+#+name: gantt-code
+#+begin_src latex :exports code
+  \newcommand\ganttline[4]{% line, tag, start end
+    \node at (0,#1) [anchor=base east] {#2};
+    \fill[black!20!white] (#3/20,#1-.2) rectangle (#4/20,#1+.2);}
+  \newcounter{gantttask}
+  \newcommand{\gantttaskcolour}{blue!50!white}
+  \newcommand{\ganttmilestonecolour}{red!50!white}
+  \newcommand{\ganttdatelinecolour}{black!50!white}
+  \newcommand{\ganttprojecttime}{1}
+  \newcommand{\ganttntasks}{1}
+  \newcommand\gantttask[6]{% label, activity, start, end, labelpos, align
+    \begin{pgfonlayer}{foreground}
+      % \node at (0,\thegantttask) [anchor=base east] {#2};
+      \stepcounter{gantttask}
+      \node [left] at (0,\thegantttask) {#1};
+      \draw[fill=\gantttaskcolour] (#3/\ganttprojecttime,\thegantttask-0.4) rectangle (#4/\ganttprojecttime,\thegantttask +0.4);
+      \node at (#5/\ganttprojecttime,\thegantttask) #6 {#2};
+    \end{pgfonlayer}
+  }
+  \newcommand\ganttpoint[3]{% line, tag, date
+    \node at (0,#1) [anchor=base east] {#2};
+    \fill[black] (#3/\ganttprojecttime,#1) circle (0.1/\ganttprojecttime);
+  }
+  \newcommand\ganttdateline[2]{% tag, date
+    \begin{pgfonlayer}{background}
+      \draw[\ganttdatelinecolour] (#2/\ganttprojecttime,0) -- (#2/\ganttprojecttime,\thegantttask+1);
+      \node at (#2/\ganttprojecttime,0) [above] {#1};
+    \end{pgfonlayer}
+  }
+  \newcommand\ganttmilestone[2]{% tag, date
+    \begin{pgfonlayer}{foreground}
+      \node at (#2/\ganttprojecttime,\thegantttask+1.0) [below] {#1};
+      \draw[black,fill=\ganttmilestonecolour] (#2/\ganttprojecttime-0.1\ganttntasks/\ganttprojecttime,\thegantttask+0.9) rectangle (#2/\ganttprojecttime+0.1\ganttntasks/\ganttprojecttime,\thegantttask+1.1);
+    \end{pgfonlayer}
+  }
+  
+  
+#+end_src
+
+**** Input Table
+
+The [[latex:proglang][Org-mode]] table that Eric used to test his code is named
+=ganttesttable=.  Perhaps the best way to understand its structure is
+to compare it to the GANTT chart it produces.
+
+#+CAPTION: Eric Fraga's GANTT chart input table
+#+tblname: gantttesttable
+    |    | type      | label | activity      | depends | start | duration | end | align |
+    |----+-----------+-------+---------------+---------+-------+----------+-----+-------|
+    |  1 | date      | Start |               |         |     0 |          |   0 |       |
+    |  2 | task      | 1.1   | Lit survey    |         |     0 |        3 |   3 | right |
+    |  3 | task      | 1.2   | Develop model |       2 |     3 |        9 |  12 | right |
+    |  4 | milestone | M1    | model         |       3 |    12 |          |  12 |       |
+    |  5 | task      | 1.3   | Implement     |       3 |    12 |        6 |  18 | left  |
+    |  6 | date      | Y1    |               |         |    12 |          |  12 |       |
+    |  7 | milestone | M2    | software      |       5 |    18 |          |  18 |       |
+    |----+-----------+-------+---------------+---------+-------+----------+-----+-------|
+    |  8 | task      | 2.1   | Surrogate     |       3 |    15 |        6 |  21 | left  |
+    |  9 | task      | 2.2   | Implement     |       7 |    21 |        3 |  24 | left  |
+    | 10 | milestone | M3    | software      |       8 |    24 |          |  24 |       |
+    | 11 | date      | End   |               |         |    24 |          |  24 |       |
+    |----+-----------+-------+---------------+---------+-------+----------+-----+-------|
+    #+TBLFM: $1=1+@-1::$8=$6+$7::@5$6=@-1$+2::@6$6=@-1$+2::@8$6=@-2$+2::@9$6=3+@4$+2::@10$6=@-1$+2
+
+
+**** Creating the GANTT chart
+In the [[latex:proglang][Org-mode]] buffer, the call to the code in the Library of Babel
+passes =ganttesttable= to the function =elispgantt=.  Note that the
+header argument is set in the function call.
+
+#+begin_src org :exports code
+,#+lob: elispgantt(table=gantttesttable) :results output latex
+#+end_src
+
+The results are wrapped in =#+BEGIN_LaTeX= ... =#+END_LaTeX=.  
+
+#+name: elispgantt-output
+#+begin_src org :exports code
+#+BEGIN_LaTeX
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,foreground}
+\renewcommand{\ganttprojecttime}{24}
+\renewcommand{\ganttntasks}{5}
+\noindent
+\begin{tikzpicture}[y=-0.75cm,x=0.75\textwidth]
+  \begin{pgfonlayer}{background}
+    \draw[very thin, red!10!white] (0,1+\ganttntasks) grid [ystep=0.75cm,xstep=1/\ganttprojecttime] (1,0);
+    \draw[\ganttdatelinecolour] (0,0) -- (1,0);
+    \draw[\ganttdatelinecolour] (0,1+\ganttntasks) -- (1,1+\ganttntasks);
+  \end{pgfonlayer}
+  \gantttask{1.1}{Lit survey}{0}{3}{3}{[right]}
+  \gantttask{1.2}{Develop model}{3}{12}{12}{[right]}
+  \gantttask{1.3}{Implement}{12}{18}{12}{[left]}
+  \gantttask{2.1}{Surrogate}{15}{21}{15}{[left]}
+  \gantttask{2.2}{Implement}{21}{24}{21}{[left]}
+
+  \ganttmilestone{$\begin{array}{c}\mbox{M1}\\ \mbox{model}\end{array}$}{12}
+  \ganttmilestone{$\begin{array}{c}\mbox{M2}\\ \mbox{software}\end{array}$}{18}
+  \ganttmilestone{$\begin{array}{c}\mbox{M3}\\ \mbox{software}\end{array}$}{24}
+
+  \ganttdateline{Start}{0}
+  \ganttdateline{Y1}{12}
+  \ganttdateline{End}{24}
+
+\end{tikzpicture}
+#+END_LaTeX
+
+#+end_src
+
+
+The resulting GANTT chart is processed by LaTeX and appears in the PDF
+output without reference to an external file.  The chart does not appear in
+the HTML export.  The chart looks great, Eric!  
+
+
+#+BEGIN_LaTeX
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,foreground}
+\renewcommand{\ganttprojecttime}{24}
+\renewcommand{\ganttntasks}{5}
+\noindent
+\begin{tikzpicture}[y=-0.75cm,x=0.75\textwidth]
+  \begin{pgfonlayer}{background}
+    \draw[very thin, red!10!white] (0,1+\ganttntasks) grid [ystep=0.75cm,xstep=1/\ganttprojecttime] (1,0);
+    \draw[\ganttdatelinecolour] (0,0) -- (1,0);
+    \draw[\ganttdatelinecolour] (0,1+\ganttntasks) -- (1,1+\ganttntasks);
+  \end{pgfonlayer}
+  \gantttask{1.1}{Lit survey}{0}{3}{3}{[right]}
+  \gantttask{1.2}{Develop model}{3}{12}{12}{[right]}
+  \gantttask{1.3}{Implement}{12}{18}{12}{[left]}
+  \gantttask{2.1}{Surrogate}{15}{21}{15}{[left]}
+  \gantttask{2.2}{Implement}{21}{24}{21}{[left]}
+
+  \ganttmilestone{$\begin{array}{c}\mbox{M1}\\ \mbox{model}\end{array}$}{12}
+  \ganttmilestone{$\begin{array}{c}\mbox{M2}\\ \mbox{software}\end{array}$}{18}
+  \ganttmilestone{$\begin{array}{c}\mbox{M3}\\ \mbox{software}\end{array}$}{24}
+
+  \ganttdateline{Start}{0}
+  \ganttdateline{Y1}{12}
+  \ganttdateline{End}{24}
+
+\end{tikzpicture}
+#+END_LaTeX
+
+**** Notes                                                         :noexport:
+Org-article users will need to download the style file and install it.
+This command works to grab gantt.sty from Worg (in case, like me, you
+lose track of the back door):
+
+#+name: get-gantt.sty
+#+begin_src sh
+  curl http://repo.or.cz/w/Worg.git/blob_plain/HEAD:/code/latex/gantt.sty > gantt.sty
+#+end_src
+
+What are your plans for the use instructions I saw on the list?  Are
+you going to put them up on Worg?  I'm planning to paraphrase them in
+article-class.org, but will tailor the paraphrase to reflect other
+information available on the web (I'm not keen to link to mailing list
+messages, though this practice seems to be widely accepted in the
+Org-mode community).
+
+*** Index                                                          :noexport:
+* Notes                                                            :noexport:
+** DONE fontenc is passed option TI by default
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2010-09-13 Mon 07:25]
+   :END:
+** DONE inputenc is passed option AUTO by default
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2010-09-13 Mon 07:26]
+   :END:
+** DONE investigate monotype fonts other than courier
+   :LOGBOOK:
+   - State "DONE"       from "STARTED"    [2010-10-17 Sun 10:34]
+   - State "STARTED"    from "TODO"       [2010-09-13 Mon 07:26]
+   :END:
+   - Inconsolata is nice, modeled on Vera
+** DONE Add the listings package
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2010-09-13 Mon 08:36]
+   :END:
+** DONE Add the color package
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2010-09-13 Mon 11:27]
+   :END:
+** DONE PassOptionsToPackages conditionally
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2010-09-14 Tue 06:51]
+   :END:
+   - See p. 880 of LaTeX Companion
+   - Need to figure out how to get options to the packages, are they
+     throwing warnings (OK) or errors (not OK)?
+\DeclareOption{myoption}{%
+   \PassOptionsToPackage{myoption}{other-package}}
+** DONE Hyperref active by default
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2010-09-17 Fri 07:31]
+   :END:
+** DONE Sebastian Vauban's settings
+   :LOGBOOK:
+   - State "DONE"       from "STARTED"    [2010-10-17 Sun 10:34]
+   - State "STARTED"    from "TODO"       [2010-09-17 Fri 08:27]
+   :END:
+#+begin_LaTeX
+% typeset source code listings
+\usepackage{listings} % must be loaded after `babel'
+\lstloadlanguages{C}
+\definecolor{...@lstbackground}{html}{ffffcc} % light yellow
+\definecolor{...@lstkeyword}{html}{0000ff} % blue
+\definecolor{...@lstidentifier}{html}{000000} % black
+\definecolor{...@lstcomment}{html}{ff0000} % red
+\definecolor{...@lststring}{html}{008000} % dark green
+\lstset{%
+    basicstyle=\ttfamily\scriptsize, % the font that is used for the code
+    tabsize=4, % sets default tabsize to 4 spaces
+    numbers=left, % where to put the line numbers
+    numberstyle=\tiny, % line number font size
+    stepnumber=0, % step between two line numbers
+    breaklines=false, %!! don't break long lines of code
+    showtabs=false, % show tabs within strings adding particular underscores
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    keywordstyle=\color{...@lstkeyword},
+    identifierstyle=\color{...@lstidentifier},
+    stringstyle=\color{...@lststring},
+    commentstyle=\color{...@lstcomment},
+    backgroundcolor=\color{...@lstbackground}, % sets the background color
+    captionpos=b, % sets the caption position to `bottom'
+    extendedchars=false %!?? workaround for when the listed file is in UTF-8
+}
+#+end_LaTeX
+** DONE Color or xcolor?
+   :LOGBOOK:
+   - State "DONE"       from ""           [2010-09-19 Sun 21:37]
+   :END:
+   - Check which package is best to use
+   - Troubles with xcolor
+** DONE Explanation of div
+   :LOGBOOK:
+   - State "DONE"       from ""           [2010-09-21 Tue 18:11]
+   :END:
+   This table comes from the KOMA-script documentation.  It gives text
+   block and margin sizes on A4 paper with various settings of [[latex:progstruct][DIV]].
+
+#+tblname: koma-div
+| DIV | width_[mm] | height_[mm] | top_[mm] | inner_[mm] |
+|-----+------------+-------------+----------+------------|
+|   6 |     105.00 |      148.50 |    49.50 |      35.00 |
+|   7 |     120.00 |      169.71 |    42.43 |      30.00 |
+|   8 |     131.25 |      185.63 |    37.13 |      26.25 |
+|   9 |     140.00 |      198.00 |    33.00 |      23.33 |
+|  10 |     147.00 |      207.90 |    29.70 |      21.00 |
+|  11 |     152.73 |      216.00 |    27.00 |      19.09 |
+|  12 |     157.50 |      222.75 |    24.75 |      17.50 |
+|  13 |     161.54 |      228.46 |    22.85 |      16.15 |
+|  14 |     165.00 |      233.36 |    21.21 |      15.00 |
+|  15 |     168.00 |      237.60 |    19.80 |      14.00 |
+
+This R script plots the text block information in the table.
+
+#+begin_src R :var x = koma-div :width 2000 :height 2000 :pointsize 40 :file ../images/org-article-text-blocks.png
+  plot(x[,2], x[,3], xlim=c(0,260), ylim=c(0,260), type='n',
+  xlab='Text block width (mm)', ylab='Text block height (mm)')
+  rect(0,0,x[,2],x[,3])
+  text(x=x[,2],y=x[,3],labels=x[,1],pos=3,offset=0.1)
+#+end_src
+
+#+results:
+[[file:../images/org-article-text-blocks.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** DONE Format TOC
+   :LOGBOOK:
+   - State "DONE"       from ""           [2010-09-26 Sun 11:34]
+   :END:
+#+name: format-toc
+#+begin_src emacs-lisp :exports code
+  (defun org-export-latex-format-toc-org-article (depth)
+    (when depth
+      (format "\\setcounter{secnumdepth}{%s}\n\\tableofcontents\n"
+              depth)))
+  (setq org-export-latex-format-toc-function 'org-export-latex-format-toc-org-article)
+#+end_src
+** TODO Insert properties in text
+Add macro to insert property values into exported text
+=======================================================
+
+you can use {{{property{NAME}}}} to insert the value of a
+property upon export.
+
+Thanks to David Maus for a patch to this effect.
+
+** umlauts and other characters
+Even better, for the OP, is to switch to the tex input method (M-x
+set-input-method RET tex RET)!  In this case, you can type \"o to get ö.
+Almost all TeX and LaTeX sequences are understood (e.g. \forall to get
+∀, \exists for ∃, \alpha for α, \leftrightharpoons for ⇋, and so on.)
+You can see all the characters with =describe-input-method=.
+
+Will need to let LaTeX know that the input is UTF-8.  It works out of
+the box for HTML.
+** Semantic markup for blocks, Christian Moe
+Use org-special-blocks
+
+On Oct 31, 2010, at 9:47 AM, Magnus Nilsson wrote:
+
+Dear all,
+
+Is there a way to include an abstract that suits both LaTeX export
+and html export?
+
+I am thinking in lines of
+#+BEGIN_ABSTRACT:
+My abstract goes here
+#+END_ABSTRACT:
+and have it interpreted differently depending on the export used.
+
+If I'm not overlooking a hitch, you can do that now with the contributed package org-special-blocks. Just put
+
+(require 'org-special-blocks)
+
+in your .emacs.
+
+The HTML abstract won't look like anything special until you style it, it will just be wrapped in a <div class="abstract"> element. Here are some sample style lines for your org document header (without line wraps):
+
+#+STYLE: <style>.abstract {margin: 1em; padding: 1em; border: 1px solid black}
+#+STYLE: .abstract:before {content: "ABSTRACT: ";}</style>
+
+Thomas S. Dye wrote:
+Alternatively, you could use the existing link syntax for this kind of
+markup. See
+http://orgmode.org/worg/org-tutorials/org-latex-export.php#sec-12
+
+I'm all for using custom links to extend inline markup, but this is block-level, and thus handily extensible with org-special-blocks.
+
+Cheers,
+Christian
+
+** Test conditional export
+
+#+name: test_output
+#+begin_src octave :results value vector :exports (if (and (boundp 'htmlp) htmlp) "none" "results" )
+rand(2)
+#+end_src
+
+#+results: test_output
+| 0.3982018019389448 | 0.3879818701032038 |
+| 0.8053847746148466 | 0.3333630867175288 |
+------------------------------------------------------------
+
+Will export nothing to HTML, and the resulting output to other
+formats.
+
+Values for 'exports' can be 'both', 'none', 'code' or 'results'; and
+there are export flags latexp, htmlp, asciip, docbookp.
+
+I tested the above example, and it "mostly" works. Sometimes not, and
+I don't yet know why.
+
+BR
+.j.

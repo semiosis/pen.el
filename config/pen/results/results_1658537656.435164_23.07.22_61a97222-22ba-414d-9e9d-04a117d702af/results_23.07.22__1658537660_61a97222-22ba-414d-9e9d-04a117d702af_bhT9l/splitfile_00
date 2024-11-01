@@ -1,0 +1,9 @@
+
+  age <- getLine
+  putStrLn ("Your age is: " ++ age)
+EOD
+
+# python files
+
+cat draft.py <<EOD
+import sys, os, re, subprocess,

@@ -1,0 +1,10 @@
+
+;; A list of strings, each a snapshot of the terminal
+(defset pen-terminal-states '())
+
+;; Run the command a couple of times before running the prompt
+
+(defun continuum-add-state (state)
+  (interactive (list (pen-trim-max-chars (buffer-string-visible) 300)))
+  (setq pen-terminal-states(cons state pen-terminal-states))
+

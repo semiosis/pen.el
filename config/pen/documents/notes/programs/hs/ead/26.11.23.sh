@@ -1,0 +1,5 @@
+cd /usr/local/share/vim/vim82/doc;  "ead" "#" "<==" "ead"
+cd /usr/local/share/vim/vim82/doc;  "ead" "#" "<==" "ead"
+cd /usr/local/share/vim/vim82/doc;  "ead" "window" "#" "<==" "ead"
+cd /usr/local/share/vim/vim82/doc;  "ead" "window" "#" "<==" "ead"
+cd /usr/local/share/vim/vim82/doc;  "ead" "window" "#" "<==" "ead"

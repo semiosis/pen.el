@@ -1,0 +1,110 @@
+end-entity certificate
+    A digitally-signed statement issued by a
+    Certificate Authority to a person or
+    system.
+    
+    It binds a public key to some identifying
+    information and is used for encryption,
+    authentication, digital signatures and
+    other purposes
+
+CA bundle
+    A file that contains root and intermediate
+    certificates.
+    
+    The end-entity certificate along with a CA
+    bundle constitutes the certificate chain.
+
+end-entity certificate
+    Along with a CA bundle constitutes the
+    certificate chain.
+
+runit
+    An init scheme for Unix-like operating
+    systems that initializes, supervises, and
+    ends processes throughout the operating
+    system.
+    
+    Runit is a reimplementation of the
+    daemontools process supervision toolkit
+    that runs on many Linux-based operating
+    systems, as well as, the macOS, *BSD, and
+    Solaris operating systems.
+    
+    Runit features parallelization of the
+    start up of system services, which can
+    speed up the boot time of the operating
+    system.
+
+Runit
+    An init daemon, so it is the direct or
+    indirect ancestor of all other processes.
+    
+    It is the first process started during
+    booting, and continues running until the
+    system is shut down.
+
+daemontools
+    A process control system by D.J.
+    Bernstein.
+
+    https://cr.yp.to/daemontools.html
+
+    A collection of tools for managing UNIX
+    services.
+    
+    See:
+    - supervise
+    - multilog
+    
+supervise
+    [daemontools]
+
+    monitors a service.
+    
+    It starts the service and restarts the
+    service if it dies.
+    
+    Setting up a new service is easy: all
+    supervise needs is a directory with a run
+    script that runs the service.
+
+multilog
+    [daemontools]
+
+    saves error messages to one or more logs.
+    
+    It optionally timestamps each line and,
+    for each log, includes or excludes lines
+    matching specified patterns.
+    
+    It automatically rotates logs to limit the
+    amount of disk space used.
+    
+    If the disk fills up, it pauses and tries
+    again, without losing any data.
+
+Daemon Tools
+    [#windows]
+
+    Virtual drive and optical disc authoring
+    program for Microsoft Windows and Mac OS.
+
+launchd
+    A process control system used by Apple as
+    process 1 under Mac OS X.
+
+runit
+    A process control system.
+
+Superlance
+    A package which provides various event
+    listener implementations that plug into
+    Supervisor which can help monitor process
+    memory usage and crash status:
+    https://pypi.org/pypi/superlance/.
+
+umask
+    Abbreviation of user mask: sets the file
+    mode creation mask of the current process.
+    See http://en.wikipedia.org/wiki/Umask.

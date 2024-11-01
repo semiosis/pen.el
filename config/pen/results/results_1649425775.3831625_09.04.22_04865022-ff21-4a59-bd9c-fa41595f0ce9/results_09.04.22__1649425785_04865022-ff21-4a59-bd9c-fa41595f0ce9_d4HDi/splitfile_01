@@ -1,0 +1,3 @@
+
+shane@mele:~/notes$ date; tmux send-keys date
+shane@mele:~/notes$

@@ -1,0 +1,6 @@
+ed.txt
+"""
+;; add 5 to x
+;; arguments: (x)
+(message (eval '(add-5-to-x 10)))
+--> 15

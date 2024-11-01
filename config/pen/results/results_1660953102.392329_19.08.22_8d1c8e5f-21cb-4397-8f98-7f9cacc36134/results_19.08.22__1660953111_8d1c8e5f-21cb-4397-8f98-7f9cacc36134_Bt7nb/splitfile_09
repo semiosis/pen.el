@@ -1,0 +1,32 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: Populate a Library with content from a sync source
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Create a Library
+      zabbix_screen:
+        server_url: http://zabbix.example.com
+        login_user: username
+        login_password: password
+        screens:
+          - screen_name: ExampleScreen
+            host_group: Example group
+            state: present
+            graph_names:
+              - Example graph1
+              - Example graph2
+              - Example graph3
+            graph_width: 200
+            graph_height: 100
+            graphs_in_row: 3
+            sort: 0
+            application: Example application
+            columns: 3
+            value_type: 0
+            units:
+              - Example unit1
+              - Example unit2
+              - Example unit3
+            items:

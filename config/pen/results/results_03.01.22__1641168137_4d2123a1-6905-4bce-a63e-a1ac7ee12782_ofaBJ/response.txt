@@ -1,0 +1,9 @@
+Generate a fibonacci sequence of N elements"
+  (interactive "nHow many elements? ")
+  (let ((fib-seq '()))
+    (dotimes (i n)
+      (push (if (< i 2)
+                i
+              (+ (nth (- i 2) fib-seq) (nth (- i 1) fib-seq)))
+            fib-seq))
+    (nreverse fib-seq)))

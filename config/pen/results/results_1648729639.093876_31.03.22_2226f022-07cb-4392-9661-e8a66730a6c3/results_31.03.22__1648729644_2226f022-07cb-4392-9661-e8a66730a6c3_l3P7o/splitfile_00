@@ -1,0 +1,1 @@
+- Simon Peyton Jones: execState takes a state monad, and a value, and runs the monad to produce a return value and final state.

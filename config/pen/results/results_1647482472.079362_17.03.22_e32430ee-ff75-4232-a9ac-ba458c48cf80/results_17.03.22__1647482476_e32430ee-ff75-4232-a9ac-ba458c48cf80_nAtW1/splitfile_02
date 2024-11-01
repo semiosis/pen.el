@@ -1,0 +1,10 @@
+a (b) (+ b b))
+(a 1)
+
+(defun a (b) (+ b 1))
+(a 1)
+
+(defun square (x) (* x x))
+(square 3)
+
+(defun cube (x) (* x ()

@@ -1,0 +1,6 @@
+cd /root/notes;  "1" "Peter" "3:6" "#" "<==" "zsh"
+cd /root/notes;  "1" "John" "4:18" "#" "<==" "zsh"
+cd /root/notes;  "1" "Peter" "1:2" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Chronicles" "29:17" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "John" "2:4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Timothy" "1:3–5" "#" "<==" "zsh"

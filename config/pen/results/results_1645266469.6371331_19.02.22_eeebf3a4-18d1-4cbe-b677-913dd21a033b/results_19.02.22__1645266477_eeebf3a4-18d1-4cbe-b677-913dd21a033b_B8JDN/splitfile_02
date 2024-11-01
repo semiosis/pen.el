@@ -1,0 +1,16 @@
+"defn" is a macro that creates functions.
+
+(defn hello [name]
+  (let [greeting "Hello"]
+    (concat greeting ", " name "!")))
+
+(hello "Bob")
+
+(defn hello-again [name]
+  (let [greeting "Hello"]
+    (concat greeting ", " name "!")))
+
+(hello-again "Bob")
+
+(defn hello-again [name]
+

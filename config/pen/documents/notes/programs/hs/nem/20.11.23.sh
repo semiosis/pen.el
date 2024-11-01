@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 21:1" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Ephesians 2:1" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "todayfile" "#" "<==" "zsh"

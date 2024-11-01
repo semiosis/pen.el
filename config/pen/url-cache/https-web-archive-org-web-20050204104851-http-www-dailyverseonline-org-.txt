@@ -1,0 +1,562 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 03 Jan 2024 02:52:39 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-archive-orig-date: Fri, 04 Feb 2005 10:48:42 GMT
+x-archive-orig-www-authenticate: Basic realm="Password Protected Area"
+x-archive-orig-x-host: p2w4.geo.scd.yahoo.com
+x-archive-orig-x-inkt-uri: http://www.dailyverseonline.org//index.html
+x-archive-orig-x-inkt-site: http://www.dailyverseonline.org
+x-archive-orig-last-modified: Thu, 03 Feb 2005 10:48:51 GMT
+x-archive-orig-etag: "b546a3-5c08-42020193"
+x-archive-orig-accept-ranges: bytes
+x-archive-orig-content-length: 24023
+x-archive-orig-connection: close
+x-archive-guessed-content-type: text/html
+x-archive-guessed-charset: windows-1252
+memento-datetime: Fri, 04 Feb 2005 10:48:51 GMT
+link: <http://www.dailyverseonline.org:80/>; rel="original", <https://web.archive.org/web/timemap/link/http://www.dailyverseonline.org:80/>; rel="timemap"; type="application/link-format", <https://web.archive.org/web/http://www.dailyverseonline.org:80/>; rel="timegate", <https://web.archive.org/web/20040423021213/http://www.dailyverseonline.org:80/>; rel="first memento"; datetime="Fri, 23 Apr 2004 02:12:13 GMT", <https://web.archive.org/web/20050130045450/http://dailyverseonline.org:80/>; rel="prev memento"; datetime="Sun, 30 Jan 2005 04:54:50 GMT", <https://web.archive.org/web/20050204104851/http://www.dailyverseonline.org:80/>; rel="memento"; datetime="Fri, 04 Feb 2005 10:48:51 GMT", <https://web.archive.org/web/20050204225551/http://www.dailyverseonline.org:80/>; rel="next memento"; datetime="Fri, 04 Feb 2005 22:55:51 GMT", <https://web.archive.org/web/20140626082503/http://www.dailyverseonline.org/>; rel="last memento"; datetime="Thu, 26 Jun 2014 08:25:03 GMT"
+content-security-policy: default-src 'self' 'unsafe-eval' 'unsafe-inline' data: blob: archive.org web.archive.org web-static.archive.org wayback-api.archive.org analytics.archive.org pragma.archivelab.org
+x-archive-src: EB_slash_crawl32.20050201152656-c/EB_slash_crawl32.20050204104822.arc.gz
+server-timing: captures_list;dur=223.886013, exclusion.robots;dur=0.154542, exclusion.robots.policy;dur=0.142815, cdx.remote;dur=0.069317, esindex;dur=0.010446, LoadShardBlock;dur=179.668137, PetaboxLoader3.datanode;dur=68.810990, PetaboxLoader3.resolve;dur=46.483102, load_resource;dur=42.407144
+x-app-server: wwwb-app203
+x-ts: 200
+x-tr: 320
+X-location: All
+X-RL: 0
+X-NA: 0
+X-Page-Cache: HIT
+X-NID: -
+Referrer-Policy: no-referrer-when-downgrade
+Permissions-Policy: interest-cohort=()
+
+<html>
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=t1Bf4PY_" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle.js"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.dailyverseonline.org:80/","20050204104851","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1107514131");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>The Daily Verse Online- God's Word, Every Day</title>
+<meta name="author" content="The Daily Verse Online">
+<meta name="keywords" content="daily bible verse, bible verse of the day, daily verse, daily verse online, god, bible">
+<meta name="description" content="The Daily Verse Online provides free daily devotionals that include a daily bible verse, thought, prayer, Extended Reading, and Through The Bible readings.">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<style type="text/css">
+<!--
+img {
+	border: none;
+}
+.tah10 {
+	font-family: Tahoma;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+}
+.tah11 {
+	font-family: Tahoma;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000;
+}
+.ver10 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+	}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: overline underline
+}
+.ver11 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.tah9 {
+	font-family: Tahoma;
+	font-size: 9px;
+	text-decoration: none;
+	color: #000000;
+}
+.ver9 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.tah12 {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+
+<!-- flooble Expandable Content header start -->
+<script language="javascript">
+var ie4 = false; if(document.all) { ie4 = true; }
+function getObject(id) { if (ie4) { return document.all[id]; } else { return document.getElementById(id); } }
+function toggle(link, divId) { var lText = link.innerHTML; var d = getObject(divId);
+ if (lText == '+') { link.innerHTML = '&minus;'; d.style.display = 'block'; }
+ else { link.innerHTML = '+'; d.style.display = 'none'; } }
+</script>
+<!-- flooble Expandable Content header end   -->
+                
+
+	<!--START of Post 'Em Notes Header code --> 
+	<style>
+	.note { border: 1px solid #6688CC; font: 9px caption; font-weight: bold; background: #c0c0c0; text-decoration:none; color: #000077;}
+	A.note { text-decoration: none; }
+	.notebody { display:block; border: 1px solid #666666; color: #000000; background: #c0c0c0; position:absolute; z-index: +10; width:300px; padding: 2px; left: 100px; font-size: 12px;}
+	.notetitle { font-weight: bold; background: #CCCCCC; color: #000000; border-bottom: 1px dashed #666666; padding: 1px; width: 100%; margin: 0px;  font-size: 13px;}
+	.notehidden { display: none; }
+	.notevisible { display: block; position:absolute; z-index: +10; left:9px;}
+</style>
+	<script language="javascript">
+	var ie = false;
+	var lastNote = '';
+	if (document.all) { ie = true; }
+
+	function getObj(id) {
+		if (ie) {
+			return document.all[id];
+		} else {
+			return document.getElementById(id);
+		}
+	}
+
+	function showNote(name) {
+		if (name == lastNote) {
+			hideNote(name);
+			return;
+		}
+
+		if (lastNote != '') { hideNote(lastNote); }
+		var title = getObj(name + '_title');
+		var body = getObj(name + '_body');
+		//title.className = 'notehidden';
+		body.className = 'notevisible';
+		lastNote = name;
+	}
+
+	function hideNote(name) {
+		var title = getObj(name + '_title');
+		var body = getObj(name + '_body');
+		//title.className = 'note';
+		body.className = 'notehidden';
+		lastNote = '';
+	}
+</script>
+	<!-- END of Post 'Em Notes Header Code --> 
+
+<!--Start popup code--->
+<script language="JAVASCRIPT" type="TEXT/JAVASCRIPT">
+ <!--
+var win=null;
+function NewWindow(mypage,myname,w,h,pos,infocus){
+if(pos=="random"){myleft=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;mytop=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+if(pos=="center"){myleft=(screen.width)?(screen.width-w)/2:100;mytop=(screen.height)?(screen.height-h)/2:100;}
+else if((pos!='center' && pos!="random") || pos==null){myleft=0;mytop=20}
+settings="width=" + w + ",height=" + h + ",top=" + mytop + ",left=" + myleft + ",scrollbars=no,location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no";win=window.open(mypage,myname,settings);
+win.focus();}
+// -->
+</script>
+<!--End popup code-->
+
+<!--image rollover code-->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!--end image rollover code-->
+
+</head>
+<link rel="shortcut icon" href="https://web.archive.org/web/20050204104851im_/http://www.dailyverseonline.org/favicon.ico">
+<body onload="MM_preloadImages('images/button_over.gif')">
+<body bgcolor="#d3d3d3" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- ImageReady Slices (0005_red.psd - Slices: 03, 04, 05) -->
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr>
+		<td width="50%" rowspan="3" background="/web/20050204104851im_/http://www.dailyverseonline.org/images/bg.gif" bgcolor="#000000">&nbsp;</td>
+		<td width="1" bgcolor="#000000" rowspan="3"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="1" height="1"></td>
+    <td> 
+<table width="780" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td rowspan="10">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://web.archive.org/web/20050204104851oe_/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="750" height="137" id="dvotop" align="middle">
+<param name="allowScriptAccess" value="sameDomain"/>
+<param name="movie" value="dvotop.swf"/>
+<param name="loop" value="false"/>
+<param name="menu" value="false"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#cccccc"/>
+<embed src="/web/20050204104851oe_/http://www.dailyverseonline.org/dvotop.swf" loop="false" menu="false" quality="high" bgcolor="#cccccc" width="750" height="137" name="dvotop" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+</object></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/t1.gif" width="20" height="25" alt=""></td>
+		<td rowspan="5">
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/t3.gif" width="10" height="137" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="index.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/r1.gif" width="20" height="24" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="archive/index.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/r2.gif" width="20" height="28" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="about.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/r3.gif" width="20" height="31" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/t2.gif" width="20" height="29" alt=""></td>
+	</tr>
+</table>	
+	 </td>
+		<td width="1" bgcolor="#000000" rowspan="3"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="1" height="1"></td>
+		<td width="50%" rowspan="3" background="/web/20050204104851im_/http://www.dailyverseonline.org/images/bg.gif" bgcolor="#000000">&nbsp;</td>
+	</tr>
+	<tr>
+		<td height="100%">
+<table width="780" border="0" cellpadding="0" cellspacing="0" height="100%">
+	<tr>
+		<td width="541" height="100%">
+<table width="541" border="0" cellpadding="0" cellspacing="0" height="100%" background="/web/20050204104851im_/http://www.dailyverseonline.org/images/bg2.gif"> 
+	<tr>
+          <!--Empty--><td width="23" height="28"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m00.gif" a href="index.html" width="23" height="28"></td>
+
+          <!--Home--><td width="51" height="28"><a href="index.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m1.gif" name="but11" a href="index.html" width="51" height="28" id="but1" onmouseover="MM_swapImage('but11','','images/m1-2.gif',1)" onmouseout="MM_swapImgRestore()"></td>
+
+		<!--Archive--><td>
+			<a href="archive/index.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m2.gif" width="75" height="28" alt="DVO Archives" name="but21" width="75" height="24" id="but2" onmouseover="MM_swapImage('but21','','images/m2-2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+
+		<td colspan="2" width="75">
+			<a href="about.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m3.gif" name="but31" width="73" height="28" id="but3" onmouseover="MM_swapImage('but31','','images/m3-2.gif',1)" onmouseout="MM_swapImgRestore()"></td>
+			
+	          <!--Members--><td width="82"><a href="https://web.archive.org/web/20050204104851/http://members.dailyverseonline.org/"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m4.gif" name="but41" width="82" height="28" id="but4" onmouseover="MM_swapImage('but41','','images/m4-2.gif',1)" onmouseout="MM_swapImgRestore()"></td>
+
+          <!--Help--><td width="83"><a href="help.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m5.gif" name="but51" width="83" height="28" id="but5" onmouseover="MM_swapImage('but51','','images/m5-2.gif',1)" onmouseout="MM_swapImgRestore()"></td>
+
+           <!--Contact--><td width="86"><a href="contact.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m6.gif" name="but61" width="86" height="28" id="but6" onmouseover="MM_swapImage('but61','','images/m6-2.gif',1)" onmouseout="MM_swapImgRestore()"></td>
+
+          <!--More--><td width="68"><a href="more.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/m01.gif" name="but71" width="68" height="28" id="but7" onmouseover="MM_swapImage('but71','','images/m01-2.gif',1)" onmouseout="MM_swapImgRestore()"></td>
+	</tr>
+	<tr>
+		<td width="541" colspan="9" background="/web/20050204104851im_/http://www.dailyverseonline.org/images/bg.gif">
+<div style="padding:15" class="ver11">
+<table width="120" height="100" hspace="5" align="left">
+  <tr>
+    <td>
+      <div align="center">
+		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://web.archive.org/web/20050204104851oe_/http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="120" height="100" hspace="5" align="left" alt="loading...">
+		<param name="allowScriptAccess" value="sameDomain"/>
+		<param name="movie" value="photo_rotator.swf"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#ffffff"/>
+		<embed src="/web/20050204104851oe_/http://www.dailyverseonline.org/photo_rotator.swf" quality="high" bgcolor="#ffffff" width="120" height="100" hspace="5" align="left" alt="loading..." allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+		</object>
+	  </div>
+    </td>
+  </tr>
+</table>
+
+
+<br><br>
+<p><b>THE VERSE</b>
+<p>"I am the vine; you are the branches.  If a man remains in me and I in him, he will bear much fruit; apart from me you can do nothing."
+<p>---------------------------&gt;John 15:5
+
+--   <!-- Post 'Em Note "Source: NIV" Start -->
+	<a href="javascript:void(0);" id="note1106595311_title" class="note" onclick="showNote('note1106595311');"> Source: NIV </a><span id="note1106595311_body" class="notehidden"><br><div class="notebody" align="left"><table class="notetitle" cellspacing="0" cellpadding="0"><tr><td>Source: NIV</td><td align="right">(<a href="javascript:void(0);" onclick="hideNote('note1106595311');">hide</a>)</td></tr></table>All scripture quotations, unless otherwise indicated, are taken from the HOLY BIBLE, NEW INTERNATIONAL VERSION. NIV. Copyright 1973, 1978, 1984 by International Bible Society.  Used by permission of Zondervan Publishing House. All rights reserved. <a href="https://web.archive.org/web/20050204104851/http://www.zondervan.com/"> Zondervan Publishing House</a></div></span>
+	<!-- Post 'Em Note End --></p>
+
+<p><b>THE THOUGHT</b>
+<p>You've heard it all before: the fruits of the Spirit are love, joy, peace, patience, etc.  So we know what those fruits are- but how do we get them?  Jesus answers that question here.  Remain in him and you will bear fruit.  So now what does that mean?  It means that if we are going to live a life overflowing with the fruits of the Spirit, we need to be constantly connected to the source of everything good in us- God.  By immersing ourselves in prayer and Scripture, we nourish our spirits and strengthen our faith.  Just like when a branch is cut off from the tree and it withers, a person cut off from the love and power of God will wither spiritually.  The only way to keep growing fruit is to stay connected to the vine that is Christ, receiving from him all the power we need to live a godly life.
+
+<p><b>THE PRAYER</b>
+<p>Lord, Keep me connected to you.  The devil is always trying to break my connection to you, and I confess that sometimes he succeeds.  But your incredible mercy always draws me back and heals me, Lord.  Keep me united with you, so that I can grow greater and greater glory for you in my life.  That is my purpose for living, Lord; help me to fulfill that purpose.
+
+<br><br>
+<!-- Extended Reading and Through The Bible Start -->
+<div style="border: 1px solid #000000; padding: 0px; background: #c0c0c0; "><table border="0" cellspacing="0" cellpadding="2" width="80%" style="background: #c0c0c0; color: #000000; "><tr><td>More...</td><td align="right">
+[<a title="show/hide" id="exp1106596517_link" href="javascript: void(0);" onclick="toggle(this, 'exp1106596517');" style="text-decoration: none; color: #000000; ">&minus;</a>]</td></tr></table>
+<div id="exp1106596517" style="padding: 3px;">
+<p><b>EXTENDED READING</b>- Learn more about today's topic</p>
+<blockquote>
+<p><a href="https://web.archive.org/web/20050204104851/http://www.biblegateway.com/passage/index.php?search=john%2015:1-17&amp;version=31">
+John 15:1-17</a></p>
+<p><a href="https://web.archive.org/web/20050204104851/http://www.biblegateway.com/passage/index.php?search=Galatians%205:22-25&amp;version=31">
+Galatians 5:22-25</a></p>
+<p><a href="https://web.archive.org/web/20050204104851/http://www.biblegateway.com/passage/index.php?search=Philippians%202:13-16&amp;version=31">
+</a></p>
+</blockquote>
+<br>
+<p><b>THROUGH THE BIBLE</b>- Read through the entire Bible in one year</p>
+<blockquote><p>NT READING:
+<p>--&gt;<a href="https://web.archive.org/web/20050204104851/http://www.biblegateway.com/passage/index.php?search=john%204&amp;version=31">
+John 4</a></p>
+<p>OT READING:
+<p>--&gt;<a href="https://web.archive.org/web/20050204104851/http://www.biblegateway.com/passage/index.php?search=Isaiah%2058-63&amp;version=31">
+Isaiah 58-63</a></p>
+</blockquote>
+</div>
+</div>
+<script language="javascript">toggle(getObject('exp1106596517_link'), 'exp1106596517');</script>
+<!-- Extended Reading and Through The Bible End  -->
+
+<hr size="1">
+<br clear="all"><br>
+<b><blockquote><u>WHO WE ARE</u></blockquote></b>
+The Daily Verse Online is a free Daily Devotional website committed to helping Christians grow closer to God and to leading the lost to Christ.  Each day the Daily Verse is read by more than 600 people around the world.  So jump on the bandwagon-  Enter your name and email address in the sign up fields in the upper right-hand corner of the page to start receiving God's Word- Every Day.  
+</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="9">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://web.archive.org/web/20050204104851oe_/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="541" height="31" id="h1-2" align="middle">
+<param name="allowScriptAccess" value="sameDomain"/>
+<param name="movie" value="h1-2.swf"/>
+<param name="loop" value="false"/>
+<param name="menu" value="false"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#cccccc"/>
+<embed src="/web/20050204104851oe_/http://www.dailyverseonline.org/h1-2.swf" loop="false" menu="false" quality="high" bgcolor="#cccccc" width="541" height="31" name="h1-2" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+</object></td>
+	</tr>
+	<tr>
+		<td width="188" colspan="4" valign="top" align="center">
+
+		</td>
+		<td width="353" colspan="5" valign="top">
+
+		</td>
+	</tr>
+	<tr>
+		<td width="541" height="100%" colspan="9" valign="top" bgcolor="#cccccc">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://web.archive.org/web/20050204104851oe_/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="540" height="404" id="navigation" align="middle">
+<param name="allowScriptAccess" value="sameDomain"/>
+<param name="movie" value="navigation.swf"/>
+<param name="loop" value="false"/>
+<param name="menu" value="false"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#cccccc"/>
+<embed src="/web/20050204104851oe_/http://www.dailyverseonline.org/navigation.swf" loop="false" menu="false" quality="high" bgcolor="#cccccc" width="540" height="404" name="navigation" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+</object>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="23" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="51" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="75" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="39" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="34" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="82" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="83" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="86" height="1" alt=""></td>
+		<td>
+			<img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/spacer.gif" width="68" height="1" alt=""></td>
+	</tr>
+</table>		
+		</td>
+		<td width="239" height="1000">
+<table width="239" border="0" cellpadding="0" cellspacing="0" height="100%">
+
+
+	 <!-- Start Sign Up Code -->
+<div align="center">
+<div style="padding:0px; border:1px solid #999999; width:237px; margin: 0px;background-color:#F2F4FA;">
+<form action="https://web.archive.org/web/20050204104851/http://pub41.bravenet.com/elist/add.php" method="post" style="margin:0px;">
+<div style="background-color:#DBE0F5;padding:3px;font:12px arial;color:black;"><b>Get The Daily Verse By Email</b></div>
+<div style="margin:10px; font: 11px arial; color: black; text-align:left;">
+<div style="margin-bottom:5px;">Enter your name and email address below:</div>
+Name: <input type="text" name="ename" size="23" maxlength="60"/><br>
+Email: <input type="text" name="emailaddress" size="23" maxlength="100"/><br>
+<input type="radio" name="action" value="join" checked style="border: 0px;"/>Subscribe&nbsp;
+<input type="radio" name="action" value="leave" style="border: 0px;"/>Unsubscribe&nbsp;
+<input type="hidden" name="usernum" style="border: 0px solid black; height: 0px; width: 0px;" value="3479953441"/><input type="hidden" name="cpv" style="border: 0px solid black; height: 0px; width: 0px;" value="1"/>
+<input type="submit" name="submit" value="GO"/></div>
+<p>Click here for our <a href="javascript:NewWindow('privacypolicy.html','privacypolicy','325','200','custom','front');">privacy policy</a></p>
+</form>
+</div></div>
+<!-- End Sign Up Code -->
+	<tr>
+		<td colspan="3">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://web.archive.org/web/20050204104851oe_/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="239" height="31" id="h2" align="middle">
+<param name="allowScriptAccess" value="sameDomain"/>
+<param name="movie" value="h2.swf"/>
+<param name="loop" value="false"/>
+<param name="menu" value="false"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#cccccc"/>
+<embed src="/web/20050204104851oe_/http://www.dailyverseonline.org/h2.swf" loop="false" menu="false" quality="high" bgcolor="#cccccc" width="239" height="31" name="h2" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+</object></td>
+	</tr>
+	<tr>
+	<td width="239" colspan="3" background="/web/20050204104851im_/http://www.dailyverseonline.org/images/bg3.gif">
+<div style="padding:15" class="ver11">
+<b>31 Dec 2004 ::: Tsunami Relief</b>
+<br><br>
+Over 150,000 people were killed by tsunamis in Asia, and relief organizations are mobilizing to provide much-needed relief to the survivors.  Show the love of Christ to those struggling by making a donation to an international aid organization.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="disaster.html" style="color:0505A5" class="ver11">--Donate Now</a>
+<br><br>
+<b>04 Dec 2004 ::: It's Advent!</b>
+<br><br>
+The DVO is preparing for Christmas.  Follow our journey towards the Savior's birth as we light a new candle on our advent wreath above each week.
+</div>		
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://web.archive.org/web/20050204104851oe_/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="239" height="35" id="h3" align="middle">
+<param name="allowScriptAccess" value="sameDomain"/>
+<param name="movie" value="h3.swf"/>
+<param name="loop" value="false"/>
+<param name="menu" value="false"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#cccccc"/>
+<embed src="/web/20050204104851oe_/http://www.dailyverseonline.org/h3.swf" loop="false" menu="false" quality="high" bgcolor="#cccccc" width="239" height="35" name="h3" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+</object></td>
+	</tr>
+	<tr>
+		<td width="239" height="100%" colspan="3" valign="top" background="/web/20050204104851im_/http://www.dailyverseonline.org/images/bg4.gif">
+<div style="padding:15" class="ver11">
+
+<a href="https://web.archive.org/web/20050204104851/http://remnant.dailyverseonline.org/index.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/madefree.jpg" border="0" width="70" height="65" hspace="5" align="left" alt="daily bible verse"></a>
+<b>&lt;--The Remnant</b>
+<p>--&gt;<a href="https://web.archive.org/web/20050204104851/http://remnant.dailyverseonline.org/index.html">A new online novel from the author of the DVO</a>
+<br clear="all"><br><br>
+
+<a href="freakpage.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/img3.jpg" border="0" width="70" height="65" hspace="5" align="left" alt="bible verse of  the day"></a>
+<b>&lt;--The FreakPage</b>
+<p>--&gt;<a href="freakpage.html">DVO Ministry Gone Slightly Wack</a>
+<br clear="all"><br><br>
+
+<a href="GetGod.swf"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/cross5.jpg" border="0" width="70" height="65" hspace="5" align="left" alt="bible verse of the day"></a>
+<b>&lt;--Got God?</b>
+<p>--&gt;<a href="GetGod.swf" style="color:0505A5" class="ver11">watch the Flash movie...</a>
+<br clear="all"><br><br>
+
+<a href="HANDS/index.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/hands.jpg" border="0" width="70" height="65" hspace="5" align="left" alt="daily verse"></a>
+<b>&lt;--HANDS [PREVIEW]</b>
+<p>--&gt;<a href="HANDS/index.html">Reaching Up. Reaching Out. Reaching In.</a>
+<br clear="all"><br><br>
+
+<a href="https://web.archive.org/web/20050204104851/http://www.thekristo.com/flashform.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/cross1.jpg" border="0" width="70" height="65" hspace="5" align="left" alt="daily bible verse"></a>
+<b>&lt;--Jesus Saves</b>
+<p>--&gt;<a href="https://web.archive.org/web/20050204104851/http://www.thekristo.com/flashform.html">Has He saved you?</a>
+<br clear="all"><br><br>
+
+<a href="wireless.html"><img src="/web/20050204104851im_/http://www.dailyverseonline.org/images/cellphone.jpg" border="0" width="70" height="65" hspace="5" align="left" alt="daily bible verse"></a>
+<b>&lt;--DVO Wireless</b>
+<p>--&gt;<a href="wireless.html">God's Word Gone Mobile</a>
+<br clear="all"><br><br>
+
+
+
+</div>		
+		</td>
+	</tr>
+</table>		
+		</td>
+	</tr>
+</table>		
+		</td>
+	</tr>
+	<tr>
+		<td>
+<table width="780" border="0" cellpadding="0" cellspacing="0" background="/web/20050204104851im_/http://www.dailyverseonline.org/images/bgdown.gif">
+	<tr>
+		<td width="780" height="26" align="center">
+<a href="index.html" class="tah12"><b>Home</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="resources.html" class="tah12"><b>Services</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html" class="tah12"><b>About Us</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://web.archive.org/web/20050204104851/http://members.dailyverseonline.org/" class="tah12"><b>Members Login</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="help.html" class="tah12"><b>Help</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="contact.html" class="tah12"><b>Contact Us</b></a>
+		</td>
+	</tr>
+	<tr>
+		<td width="780" height="26" align="center" class="ver9">
+Copyright © 2002-2004 The Daily Verse Online. All rights reserved.		
+<br><br><br>
+
+
+		</td>
+	</tr>
+</table>		
+		</td>
+	</tr>
+</table>
+
+<!-- End ImageReady Slices -->
+</body>
+</html><!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="https://web.archive.org/web/20050204104851js_/http://hostingprod.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="https://web.archive.org/web/20050204104851im_/http://visit.webhosting.yahoo.com/visit.gif?us1107514122" alt="setstats" border="0" width="1" height="1"></noscript>
+<img src="https://web.archive.org/web/20050204104851im_/http://geo.yahoo.com/serv?s=76001405&amp;t=1107514122" alt="1" width="1" height="1">
+<!--
+     FILE ARCHIVED ON 10:48:51 Feb 04, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:52:32 Jan 03, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 223.868
+  exclusion.robots: 0.154
+  exclusion.robots.policy: 0.142
+  cdx.remote: 0.069
+  esindex: 0.01
+  LoadShardBlock: 179.668 (3)
+  PetaboxLoader3.datanode: 68.81 (4)
+  PetaboxLoader3.resolve: 46.483 (2)
+  load_resource: 42.407
+-->

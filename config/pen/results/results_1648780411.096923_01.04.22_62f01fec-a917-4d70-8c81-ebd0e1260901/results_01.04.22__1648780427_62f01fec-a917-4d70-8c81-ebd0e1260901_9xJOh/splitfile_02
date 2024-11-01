@@ -1,0 +1,16 @@
+- 1. Arthur C. Clarke (1917-2008)
+- 2. Arthur C. Danto (1923–2003)
+- 3. Michael Dummett (1923–2011)
+- 4. Ivor Ngana (1919–1991)
+"""
+
+    def setUp(self):
+        self.expert_dir = tempfile.mkdtemp()
+
+    def tearDown(self):
+        shutil.rmtree(self.expert_dir)
+
+    def _write_experts(self, experts_string):
+        experts = experts_string.split("\n")[1::6]
+        for expert in experts:
+            name, year,

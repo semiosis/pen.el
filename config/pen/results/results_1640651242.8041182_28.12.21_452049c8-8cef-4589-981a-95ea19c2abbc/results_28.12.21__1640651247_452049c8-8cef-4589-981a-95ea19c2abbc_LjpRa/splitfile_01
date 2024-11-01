@@ -1,0 +1,3 @@
+ abort
+    let q = string(a:0, ' ')
+    call system("bash -c \"exit $(expr match(getcwd(), '.*terminal.*') == 0 ? "bash" : "zsh")

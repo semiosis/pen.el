@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: item
+# group: mine
+# key: i
+# --
+[-] ${0:new item}

@@ -1,0 +1,6 @@
+
+             (loop for i below n
+                   collect (factorial i)))
+LIST-OF-FACTORIALS
+CL-USER> (list-of-factorials 10)
+(1 1 2 6 24 120

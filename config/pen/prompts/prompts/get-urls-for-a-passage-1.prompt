@@ -1,0 +1,51 @@
+task: "Get URLs for a passage"
+doc: "Given some text return relevant URLs"
+tags: web lookingglass
+prompt-version: 4
+issues:
+  - DONE URLs are sometimes invalid or outdated. Add a validator.
+  - The corrector could literally just be a google search for that url
+  - It's a little slow because of the validator (checks results for 404).
+  - Also, add a URL corrector (syntax checker for urls, with a specific LM)
+todo:
+  - Generate the URL titles too, so I can select from those
+prompt: |+
+  <delim>
+  <text>
+  <delim>
+  Links to read about the above:
+  <delim>
+  - <:pp>http
+engine: "OpenAI Codex"
+temperature: 0.3
+# This is just a list of URLs
+max-generated-tokens: "200"
+top-p: 1.0
+n-collate: 1
+n-completions: 5
+stop-sequences:
+- "<delim>"
+cache: on
+end-split-patterns:
+- "\n"
+vars:
+- text
+# This contraint is not needed for the imaginary internet
+# validator: url-exists
+postprocessor: sed '$d' | xurls
+var-defaults:
+- |-
+    (pen-ask
+     (s-chompall
+      (pen-snc "sed -z 's/\\s\\+/ /g'"
+           (or (sor (pen-selected-text t))
+               (pen-surrounding-context)))))
+examples:
+- |-
+    import Data.Foldable (for_)
+    import Data.Traversable (for)
+    
+    import Control.Monad (when)
+info: on
+completion: off
+insertion: off

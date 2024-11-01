@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.lmc.edu/about/news-center/articles/2022/in-2022-passover,-ramadan,-and-easter-all-fall-in-april,-a-coincidence-that-happens-only-about-every-33-years.htm" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://jcal.com/" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.vercalendario.info/en/calendars/jewish-calendar/compare-5782.html" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=cn8vXRrf2wo&t=3599" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://youtube.com/watch?v=y1RAL9oX2JE&t=902" "#" "<==" "pen-ci"

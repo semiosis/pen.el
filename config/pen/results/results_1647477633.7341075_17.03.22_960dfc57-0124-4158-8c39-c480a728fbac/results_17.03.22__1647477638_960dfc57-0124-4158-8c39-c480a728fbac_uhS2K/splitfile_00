@@ -1,0 +1,4 @@
+
+    input <- getLine
+    let output = show $ length input
+    putStrLn output

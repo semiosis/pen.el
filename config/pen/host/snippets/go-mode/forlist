@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: forlist
+# key: forlist
+# --
+varNames := []string{}
+for v := range vars {
+        varNames = append(varNames, v)
+}
+return "", errors.Errorf("vars %v are defined.", varNames)

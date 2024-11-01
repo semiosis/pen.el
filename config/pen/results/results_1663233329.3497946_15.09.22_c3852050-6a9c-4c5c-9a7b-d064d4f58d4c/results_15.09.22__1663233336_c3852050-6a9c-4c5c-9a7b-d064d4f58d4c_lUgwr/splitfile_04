@@ -1,0 +1,6 @@
+import tensorflow as tf
+...
+output_graph_def = tf.graph_util.convert_variables_to_constants(
+    sess,
+    tf.get_default_graph().as_graph_def(),
+    ["my_output"])

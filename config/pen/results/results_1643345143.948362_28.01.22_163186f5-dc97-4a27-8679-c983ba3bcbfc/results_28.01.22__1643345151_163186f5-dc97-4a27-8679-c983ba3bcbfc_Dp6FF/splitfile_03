@@ -1,0 +1,8 @@
+"async/go-loop" is a function that takes a channel, a function and a list of
+items. It will call the function for each item in the list, passing the item
+as an argument. The function will be called concurrently in its own thread.
+The function passed to async/go-loop can return a future, which will be
+immediately resolved, and then the next item in the list will be processed.
+
+This is a code example:
+

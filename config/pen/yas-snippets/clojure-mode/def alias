@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: def alias
+# group: 
+# key: da
+# --
+(def pps pprint-to-string)

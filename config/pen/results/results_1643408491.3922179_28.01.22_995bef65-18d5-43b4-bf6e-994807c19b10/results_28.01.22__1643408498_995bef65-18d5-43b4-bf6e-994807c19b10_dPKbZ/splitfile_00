@@ -1,0 +1,8 @@
+cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» ls
+ harry.txt  harry-and-the-sorcerers-stone.txt  harry-and-the-goblet-of-fire.txt
+» cd ..
+» ls
+ harrys-adventures  harry.txt  harry-and-the-goblet-of-fire.txt  harry-and-

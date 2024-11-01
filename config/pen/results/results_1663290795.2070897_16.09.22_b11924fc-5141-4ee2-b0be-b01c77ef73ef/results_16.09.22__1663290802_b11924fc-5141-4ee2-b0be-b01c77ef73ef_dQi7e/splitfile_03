@@ -1,0 +1,4 @@
+
+# It's only a demo, there are better ways to do this.
+Code: while true; do printf "%d
+" -1; done

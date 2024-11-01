@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs;  "ead" "-z" "ansi8" "#" "<==" "ead"
+cd /usr/local/share/emacs/site-lisp;  "ead" "-z" "other" "messages" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bkeyboard-quit\\b" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bkeyboard-quit\\b" "#" "<==" "zsh"
+cd /usr/local/share/emacs/site-lisp;  "ead" "-z" "other" "messages" "#" "<==" "ead"

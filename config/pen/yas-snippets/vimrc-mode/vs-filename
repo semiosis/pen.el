@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: filename
+# group: vimsnippet
+# key: vs-filename
+# --
+`Filename()`
+

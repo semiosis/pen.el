@@ -1,0 +1,11 @@
+pper)
+
+main = do
+
+putStrLn "\e[H\e[2J"
+
+forM_ [1,2,3] $
+
+putStrLn $
+
+mapM_ putChar

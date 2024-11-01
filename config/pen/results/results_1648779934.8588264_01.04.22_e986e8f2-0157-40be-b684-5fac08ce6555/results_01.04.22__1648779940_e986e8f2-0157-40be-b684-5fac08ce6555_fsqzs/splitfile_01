@@ -1,0 +1,11 @@
+VIM(1)                     User Commands                    VIM(1)
+
+NAME
+       vim - Vi IMproved, a programmers text editor
+
+SYNOPSIS
+       vim [option] [file ...]      Use the command in vi mode
+       vim [option] +line file     Use the command in ex mode
+
+DESCRIPTION
+       Vim is a highly configurable text editor built to

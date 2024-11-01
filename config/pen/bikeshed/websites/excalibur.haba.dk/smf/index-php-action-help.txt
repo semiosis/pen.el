@@ -1,0 +1,217 @@
+Link: help
+Link: search
+Link: contents
+Link: - RSS (alternate)
+
+User Info                             Key Stats
+Welcome, Guest. Please login or       3016 Posts in 228 Topics by 110
+register.                             Members
+May 26, 2008, 03:54:56 PM             Latest Member: Jack Sparrow
+___________ ___________
+[ _______ ] [ Login ]
+Login with username, password and
+session length
+
+Search: _____________________  
+[ Search ]   Advanced search
+
+Home Help Search Login Register
+
+Introduction o Registering o Logging In o Profile o Posting o Personal
+Message o Searching
+
+So you've arrived at this Simple Machines Forum (SMF)! Perhaps you've been
+looking at the board index or a screen telling you that you need to
+register before you can read it and you're wondering what to do next?
+
+Well, some forums permit guests to read and post, some permit guests to
+read only and some are restricted to registered members. We'd recommend
+registering at any forum that you see yourself using regularly because
+many of the most useful features will only become available to you when
+you do so. Since SMF, however, is such a flexible system that few forums
+are likely to be identical, we will start by describing four key areas
+that we'd normally expect to be there for you:
+
+ 1. The Main Menu
+ 2. The Board Index
+ 3. The Message Index
+ 4. The Topic
+
+The Main Menu
+
+Supposing you've arrived here as a guest (or have registered but are
+currently logged out), the main menu (which appears on every page) should
+normally comprise five or six buttons (or text links):
+
+o Home, which takes you back to the board index.
+o Help, which brings you to this guide.
+o Search, which allows you to search the forums for whatever you're
+looking for.
+o Calendar, which links to the forum calendar (if enabled).
+o Login, which allows you to login if already registered.
+o Register, which allows you to register (or sometimes apply for
+registration) when you wish to do so.
+
+Once you've registered and logged in, however, the main menu should look a
+little different:
+
+o Home (as before).
+o Help (as before).
+o Search (as before).
+o Profile, which allows you to make changes to your profile settings.
+o Calendar (as before).
+o Logout, which allows you to logout again if desired.
+
+Forum administrators should also note the presence of an additional Admin
+button.
+
+The Board Index
+
+While the board index (forum home page) is packed with all kinds of
+information and links, the core of the interface (at least in the SMF
+default theme) normally looks something like this:
+
++  Forum Name
+
+-  Category Name
+New                                                     Date, time,
+Posts  Board Name         Number of topics and posts in  subject and
+Board Description           this board            author of last
+post
+
+  New Posts  No New Posts                      Mark ALL messages as read
+
+o The forum name links back to the top of the board index.
+o If the category is collapsible (shown by the little arrow symbol),
+clicking the category name collapses or expands the category as
+appropriate.
+o The board name links to the message index for that board.
+o The board description describes the board's content, and may also
+include links to child boards and/or specify the board's moderator(s).
+o The New Posts and No New Posts icons in the leftmost column show
+registered members whether there have been any new posts to the board
+since they last read it.
+o The Mark as Read button enables registered members to mark all posts
+in the entire forum as 'read'.
+
+The Message Index
+
+Like the board index, the message index interface is quite straightforward
+when reduced to its essential components:
+
++  Forum Name
+|- +  Category Name
+| |- +  Board Name
+
+Pages: [1]       Mark Read Notify of Replies Start new topic Post New Poll
+
+Subject            Started by     Replies  Views  Last post   [IMG]
+Topic Subject New  Topic Starter     0       0    Date, time and author
+of last post
+
+Pages: [1]       Mark Read Notify of Replies Start new topic Post New Poll
+
+  Topic you have    Locked
+posted in         Topic
+  Normal Topic      Sticky
+  Hot Topic (More Topic        Jump to: [ _____________________________ ] 
+than 15 replies)    Poll                                            [ go ]
+  Very Hot Topic
+(More than 25
+replies)
+
+o Some forums show the navigation tree at the top in a space-saving
+horizontal mode.
+o The page numbers link to further pages of the board, and may be
+accompanied by Go Up and Go Down buttons linking to the top and bottom
+of the current page.
+o The Mark as Read button enables registered members to mark all posts
+in this board as 'read'.
+o The Notify button enables registered members to subscribe to email
+notification of replies to topics in this board.
+o The New Topic and New Poll buttons are for starting new topics and
+polls, as described in the posting help.
+o The Subject, Started by, Replies, Views and Last post links enable you
+to sort the columns by these parameters (with Last post also toggling
+between descending and ascending order as indicated by the little
+arrow).
+o The topic icons in the leftmost column are explained by the key below.
+o The post icons in the next column are sometimes used to draw attention
+to the mood or purpose of the topic.
+o The topic subject links to the start of the topic, with extra links
+for subsequent pages and new buttons to take registered members
+straight to their first unread post of the topic.
+o Where the topic has been started or last replied to by a registered
+member, their names link to their respective profiles.
+o The Jump to menu provides a convenient quick method of navigating the
+forum.
+
+The Topic
+
+Sometimes referred to as threads, topics are where you find the actual
+messages:
+
++  Forum Name
+|- +  Category Name
+| |- +  Board Name
+| | |- +  Topic Subject
+
+Pages: [1]       Reply Notify of Replies Mark unread Send this topic Print
+
+Author    Topic: Topic Subject  (Read x times)
+
+Author      [IMG] Topic Subject
+Member            << Date and Time of Post >>             Reply with quote
+Group
+Post Group
+*
+Post Count  Here is the text of the message, which is ultimately what
+we're all here for!  Smiley
+View
+Profile
+Email
+Personal
+Message
+(Offline)                                 Report to moderator     Logged
+
+Pages: [1]       Reply Notify of Replies Mark unread Send this topic Print
+
+Jump to: [ _____________________________ ]  [ go ]
+
+o Some forums show the navigation tree at the top in a space-saving
+horizontal mode.
+o Some forums may also be configured with previous and next topic links.
+o The page numbers link to further pages of the topic, and may be
+accompanied by Go Up and Go Down buttons linking to the top and bottom
+of the current page.
+o The Reply button enables you to reply to the topic.
+o The Notify button enables registered members to subscribe to email
+notification of replies to the topic.
+o The Mark Unread button enables registered members to mark the topic as
+'unread', which means that it will still be listed as new and can be
+effectively 'saved for later'. Note that this button changes to Add
+Poll in the bottom button set for users with permission to add polls
+to existing topics.
+o The Send Topic button enables registered members to send a link to the
+topic by email.
+o The Print button creates a simplified, printer-friendly rendering of
+the page.
+o The author name links to the author's profile
+o The author details in the lefthand column may be accompanied by
+further personal information.
+o The topic subject links back to the start of the topic.
+o The Quote button enables you to quote the post.
+o Further Modify and Delete options are normally provided to enable
+registered members to edit their own posts.
+o Report to moderator enables you to report abusive or wrongly-placed
+posts to the forum staff.
+o Logged indicates that the IP of the author has been logged. The actual
+IP is only available to board administrators
+o The Jump to menu provides a convenient quick method of navigating the
+forum.
+Introduction o Registering o Logging In o Profile o Posting o Personal
+Message o Searching
+
+Powered by SMF 1.1 RC3 | SMF (c) 2001-2006, Lewis Media
+Theme by Nesianstyles | Buttons by Andrea
+

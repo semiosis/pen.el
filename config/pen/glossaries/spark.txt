@@ -1,0 +1,2 @@
+gloming
+    vim +/"print(A.glom().map(len).collect())" "$MYGIT/tirthajyoti/Spark-with-Python/Partioning and Gloming.py"

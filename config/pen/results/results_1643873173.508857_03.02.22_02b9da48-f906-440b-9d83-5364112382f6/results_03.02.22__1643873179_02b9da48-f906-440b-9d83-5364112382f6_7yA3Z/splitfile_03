@@ -1,0 +1,6 @@
+
+shane@mele:/$ ls
+bin   cdrom  dev  export  home       lib    lib64   lost+found  mnt  opt   proc  run   snap  sys  usr
+boot  core   etc  gnu     input.txt  lib32  libx32  media       nix  path  root  sbin  srv   tmp  var
+shane@mel
+

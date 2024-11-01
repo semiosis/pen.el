@@ -1,0 +1,136 @@
+AI-GA
+AI-generating algorithms
+    An alternate paradigm for producing
+    general artificial intelligence.
+
+    https://arxiv.org/abs/1905.10985
+
+Psi-theory
+    Developed by Dietrich Dörner at the
+    University of Bamberg, is a systemic
+    psychological theory covering human action
+    regulation, intention selection and
+    emotion.
+    
+    It models the human mind as an information
+    processing agent, controlled by a set of
+    basic physiological, social and cognitive
+    drives.
+
+Neural Algorithmic Reasoning
+NAR
+    https://venturebeat.com/2021/09/10/deepmind-aims-to-marry-deep-learning-and-classic-algorithms/
+
+    The key thesis of NAR research is that
+    algorithms possess fundamentally different
+    qualities to DL methods.
+    
+    And this suggests that if DL methods were
+    better able to mimic algorithms, then
+    generalization of the sort seen with
+    algorithms would become possible with DL.
+
+Long Form Assistant
+
+Self-reference
+    Occurs in natural or formal languages when
+    a sentence, idea or formula refers to
+    itself.
+    
+    The reference may be expressed either
+    directly—through some intermediate
+    sentence or formula—or by means of some
+    encoding.
+    
+    In philosophy, it also refers to the
+    ability of a subject to speak of or refer
+    to itself, that is, to have the kind of
+    thought expressed by the first person
+    nominative singular pronoun "I" in
+    English.
+    
+    Self-reference is studied and has
+    applications in mathematics, philosophy,
+    computer programming, and linguistics, as
+    well as in humor.
+    
+    Self-referential statements are sometimes
+    paradoxical, and can also be considered
+    recursive.
+
+Deep Symbolic Network
+DSN
+    [#general AI]
+    [model]
+
+    https://arxiv.org/abs/1707.03377
+
+    Aim:
+        To be the white-box version of DNNs.
+    
+    Provides a simple, universal yet powerful
+    structure, similar to DNN, to represent
+    any knowledge of the world, which is
+    transparent to humans.
+    
+    Conjecture:
+        Any type of real world objects sharing
+        enough common features are mapped into
+        human brains as a symbol.
+    
+        Those symbols are connected by links,
+        representing the composition,
+        correlation, causality, or other
+        relationships between them, forming a
+        deep, hierarchical symbolic network
+        structure.
+    
+    Powered by such a structure, the DSN model
+    is expected to learn like humans, because
+    of its unique characteristics:
+    - universal
+
+      Using the same structure to store any
+      knowledge.
+    
+    - Able to learn symbols from the world and
+      construct the deep symbolic networks
+      automatically
+      
+      Utilises the fact that real world
+      objects have been naturally separated by
+      singularities.
+    
+    - Symbolic
+    
+      Has the capacity of performing causal
+      deduction and generalization.
+    
+    - The symbols and the links between them
+      are transparent to us
+    
+      Thus we will know what it has learned or
+      not - which is the key for the security
+      of an AI system.
+    
+    - Its transparency enables it to learn
+      with relatively small data.
+    
+    - Its knowledge can be accumulated.
+    
+    - It is more friendly to unsupervised
+      learning than DNN.
+    
+    We present the details of the model, the
+    algorithm powering its automatic learning
+    ability, and describe its usefulness in
+    different use cases.
+
+scaling hypothesis
+    https://www.gwern.net/GPT-3#gpt-3-implications
+
+    Regards the blessings of scale as the
+    secret of AGI: intelligence is ‘just’
+    simple neural units & learning algorithms
+    applied to diverse experiences at a
+    (currently) unreachable scale.

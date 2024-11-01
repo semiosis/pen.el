@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/src;  "list-unicode-range" "" "" "#" "<==" "pen-odn"
+cd /root/.emacs.d/host/pen.el/src;  "list-unicode-range" "" "" "#" "<==" "pen-odn"
+cd /;  "list-unicode-range" "" "" "#" "<==" "pen-odn"
+cd /;  "list-unicode-range" "" "" "#" "<==" "pen-odn"
+cd /;  "list-unicode-range" "0700" "074F" "#" "<==" "pen-odn"
+cd /;  "list-unicode-range" "" "" "#" "<==" "pen-odn"
+cd /root/.emacs.d/host/pen.el/src;  "list-unicode-range" "" "" "#" "<==" "pen-odn"
+cd /root/.pen/documents/agenda;  "list-unicode-range" "" "" "#" "<==" "pen-odn"

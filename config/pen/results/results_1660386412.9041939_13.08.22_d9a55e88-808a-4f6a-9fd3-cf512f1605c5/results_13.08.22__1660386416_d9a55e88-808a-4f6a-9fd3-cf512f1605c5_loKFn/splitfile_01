@@ -1,0 +1,7 @@
+
+        then putStrLn "I'm walking"
+        else putStrLn "I'm taking the bus"
+
+main :: IO ()
+main = travelToSchool "sunny"
+EOD

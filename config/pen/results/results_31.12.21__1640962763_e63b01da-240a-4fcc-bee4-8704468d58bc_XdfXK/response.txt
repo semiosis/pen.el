@@ -1,0 +1,15 @@
+
+def prompt(fun, *args)
+  s = ""
+  args.each do |arg|
+    s += " \"" + arg + "\""
+  end
+
+  cmd = fun + s
+  s = `penf -u #{cmd}`
+  @p = s
+
+  # paste from p register
+  `normal! gv"pp`
+end
+

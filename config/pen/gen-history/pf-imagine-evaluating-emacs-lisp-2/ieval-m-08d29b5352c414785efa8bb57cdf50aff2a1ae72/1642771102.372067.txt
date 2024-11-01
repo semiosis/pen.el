@@ -1,0 +1,9 @@
+;; Run function color-of-thing
+(message (eval '(color-of-thing "thing=sun" "#rrggbb")))
+--> "rrggbb"
+
+
+
+;; Run function color-of-thing
+(message (eval '(color-of-thing "watermelon")))
+--> 

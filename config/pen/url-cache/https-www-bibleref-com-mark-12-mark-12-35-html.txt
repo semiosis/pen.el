@@ -1,0 +1,493 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/html
+Last-Modified: Wed, 13 Dec 2023 21:22:01 GMT
+Accept-Ranges: bytes
+ETag: "80a22d69a2eda1:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Date: Thu, 28 Dec 2023 10:19:40 GMT
+Content-Length: 8053
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/webpage" xmlns:og="http://opengraphprotocol.org/schema/">
+
+<head>
+	<title>What does Mark 12:35 mean? | BibleRef.com</title>
+    <META name="keywords" content="Mark 12:35">
+    <META name="description" content="And Jesus responded and began saying, as He taught in the temple area, 'How is it that the scribes say that the Christ is the son of David? - What is the meaning of Mark 12:35?">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="StyleSheet" href="https://www.bibleref.com/scommon/new-main-styles.css" type="text/css" media="screen">
+
+    <link rel="image_src" itemprop="image" href="https://www.bibleref.com/images/logo3.png">
+    <meta property="og:image" content="https://www.bibleref.com/images/BR-OG-image(new23).png">
+    <meta property="og:site_name" content="BibleRef.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bibleref.com/Mark/12/Mark-12-35.html">
+    <link rel="canonical" itemprop="url" href="https://www.bibleref.com/Mark/12/Mark-12-35.html">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36362452-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-36362452-7');
+    </script>
+    <meta name="ZOOMPAGEBOOST" content="5">
+</head>
+
+<body data-site-theme="light" class="verse">
+    <header>
+        <a href="https://www.bibleref.com" class="logo">
+            <img class="headerLogo" src="https://www.bibleRef.com/images/BibleRef-Logo.svg" alt="BibleRef.com logo">
+        </a>
+        <div class="search">
+            <FORM class="zoom_searchform" action="https://www.bibleref.com/search.php" method="get">
+                <INPUT type="hidden" value="0" name="zoom_sort" />
+                <label for="zoom_query">Search</label>
+                <INPUT class="zoom_searchbox" name="zoom_query" input type="text" placeholder="John 3:16">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <g fill="currentColor">
+                        <path d="M22.561,20.439l-5.233-5.233a9.028,9.028,0,1,0-2.122,2.122l5.233,5.233a1.5,1.5,0,0,0,2.122-2.122ZM3,10a7,7,0,1,1,7,7A7.008,7.008,0,0,1,3,10Z"></path>
+                      </g>
+                    </svg>
+                </button>
+            </FORM>
+        </div>
+        <nav>
+            <ul class="modal-menu">
+                <li><a href="https://www.bibleref.com" title="BibleRef homepage">Home</a></li>
+                <li><a href="https://www.bibleref.com/new.html" title="Latest commentary from BibleRef">What's New</a></li>
+                <li><a href="https://www.bibleref.com/about.html" title="About BibleRef.com">About</a></li>
+                <li><a href="https://www.bibleref.com/faith.html" title="BibleRef.com statement of faith">Statement of Faith</a></li>
+                <li><a href="https://www.bibleref.com/subscribe.html" title="BibleRef.com subscribe">Subscribe</a></li>
+                <li><a href="https://www.bibleref.com/blog" title="BibleRef.com blog">Blog</a></li>
+                <li><a href="https://www.bibleref.com/contact.html" title="Contact BibleRef.com">Contact</a></li>
+                <li><a href="https://www.bibleref.com/donate.html" title="Donate to BibleRef.com" class="highlighted">Donate</a></li>
+            </ul>
+        </nav>
+        <ul class="settings-menu modal-menu">
+            <li>
+                <div class="toggle-wrap">
+                    <span>Light</span><input type="checkbox" id="toggle" class="checkbox" onclick="toggleTheme()"><label for="toggle" class="switch"></label><span>Dark</span>
+                </div>
+            </li>
+            <li><label for="font">Font Family</label><select name="font" id="font" onchange="changeFont()">
+                    <option value="system-ui">Default</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select></li>
+            <li><label for="fontsize">Font Size</label><select name="fontsize" id="fontsize" onchange="changeFontSize()">
+                    <option value="1">Default</option>
+                    <option value="1">1.0</option>
+                    <option value="1.2">1.2</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                </select></li>
+        </ul>
+	<ul class="final-menu modal-menu">
+	   <li>
+		  <a href="https://www.facebook.com/sharer.php?u=https://bibleref.com" class="fb" title="Share BibleRef on Facebook">
+			 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><rect class="nc-transparent-rect" x="0" y="0" width="24" height="24" rx="0" ry="0" fill="none" stroke="none"></rect><g class="nc-icon-wrapper" fill="#ffffff"><path fill="currentColor" d="M9.03153,23L9,13H5V9h4V6.5C9,2.7886,11.29832,1,14.60914,1c1.58592,0,2.94893,0.11807,3.34615,0.17085 v3.87863l-2.29623,0.00104c-1.80061,0-2.14925,0.85562-2.14925,2.11119V9H18.75l-2,4h-3.24019v10H9.03153z"></path></g></g></svg>
+			 Facebook
+		  </a>
+	   </li>
+	   <li>
+		  <a href="http://twitter.com/share?url=https://bibleref.com" class="tw" title="Share BibleRef on Twitter">
+			 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><rect class="nc-transparent-rect" x="0" y="0" width="24" height="24" rx="0" ry="0" fill="none" stroke="none"></rect><g class="nc-icon-wrapper" fill="#ffffff"><path fill="currentColor" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"></path></g></g></svg>
+			 Twitter
+		  </a>
+	   </li>
+	   <li>
+		  <a href="https://pinterest.com/pin/create/link/?url=https://bibleref.com" class="pi" title="Share BibleRef on Pinterest">
+			 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><rect class="nc-transparent-rect" x="0" y="0" width="24" height="24" rx="0" ry="0" fill="none" stroke="none"></rect><g class="nc-icon-wrapper" fill="#ffffff"><path fill="currentColor" d="M12,0C5.4,0,0,5.4,0,12c0,5.1,3.2,9.4,7.6,11.2c-0.1-0.9-0.2-2.4,0-3.4c0.2-0.9,1.4-6,1.4-6S8.7,13,8.7,12 c0-1.7,1-2.9,2.2-2.9c1,0,1.5,0.8,1.5,1.7c0,1-0.7,2.6-1,4c-0.3,1.2,0.6,2.2,1.8,2.2c2.1,0,3.8-2.2,3.8-5.5c0-2.9-2.1-4.9-5-4.9 c-3.4,0-5.4,2.6-5.4,5.2c0,1,0.4,2.1,0.9,2.7c0.1,0.1,0.1,0.2,0.1,0.3c-0.1,0.4-0.3,1.2-0.3,1.4c-0.1,0.2-0.2,0.3-0.4,0.2 c-1.5-0.7-2.4-2.9-2.4-4.6c0-3.8,2.8-7.3,7.9-7.3c4.2,0,7.4,3,7.4,6.9c0,4.1-2.6,7.5-6.2,7.5c-1.2,0-2.4-0.6-2.8-1.4 c0,0-0.6,2.3-0.7,2.9c-0.3,1-1,2.3-1.5,3.1C9.6,23.8,10.8,24,12,24c6.6,0,12-5.4,12-12C24,5.4,18.6,0,12,0z"></path></g></g></svg>
+			 Pinterest
+		  </a>
+	   </li>
+	   <li>
+		  <a class="SendEmail" href="" title="Share BibleRef via email">
+			 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><rect class="nc-transparent-rect" x="0" y="0" width="24" height="24" rx="0" ry="0" fill="none" stroke="none"></rect><g class="nc-icon-wrapper" fill="currentColor"><path d="M13.4,14.6A2.3,2.3,0,0,1,12,15a2.3,2.3,0,0,1-1.4-.4L0,8.9V19a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V8.9Z" fill="currentColor"></path><path data-color="color-2" d="M21,2H3A3,3,0,0,0,0,5V6a1.05,1.05,0,0,0,.5.9l11,6a.9.9,0,0,0,.5.1.9.9,0,0,0,.5-.1l11-6A1.05,1.05,0,0,0,24,6V5A3,3,0,0,0,21,2Z"></path></g></g></svg>
+			 Email
+		  </a>
+	   </li>
+	</ul>
+        <div class="mobile-menu" onclick="showMenu(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <g fill="currentColor"><path d="M30,15H2c-0.6,0-1,0.4-1,1s0.4,1,1,1h28c0.6,0,1-0.4,1-1S30.6,15,30,15z"></path> <path d="M30,6H2C1.4,6,1,6.4,1,7s0.4,1,1,1h28c0.6,0,1-0.4,1-1S30.6,6,30,6z"></path> <path d="M30,24H2c-0.6,0-1,0.4-1,1s0.4,1,1,1h28c0.6,0,1-0.4,1-1S30.6,24,30,24z"></path></g>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section id="bible-nav">
+		<div id='bibleRefLinkSettings'>
+<label for='bibleRefLinkVersion'>Bible Version</label>
+<select type='text' name='bibleRefLinkVersion' id='bibleRefLinkVersion' onchange='changeVersion()'>
+<option value='esv'>ESV</option>
+<option value='niv'>NIV</option>
+<option value='nasb'>NASB</option>
+<option value='csb'>CSB</option>
+<option value='nlt'>NLT</option>
+<option value='kjv'>KJV</option>
+</select>
+</div>
+	
+		<label for='bible-book'>Book</label>
+<div id='bible-book' class='dropdown'>
+<button onclick='toggleBookDropdown()' class='dropbtn'>Mark</button>
+<div id='book-content' class='dropdown-content'>
+<a href='https://www.bibleref.com/Genesis'>Genesis</a>
+<a href='https://www.bibleref.com/Exodus'>Exodus</a>
+<a href='https://www.bibleref.com/Leviticus'>Leviticus</a>
+<a href='https://www.bibleref.com/Numbers'>Numbers</a>
+<a href='https://www.bibleref.com/Deuteronomy'>Deuteronomy</a>
+<a href='https://www.bibleref.com/Joshua'>Joshua</a>
+<a href='https://www.bibleref.com/Judges'>Judges</a>
+<a href='https://www.bibleref.com/Ruth'>Ruth</a>
+<a href='https://www.bibleref.com/1-Samuel'>1 Samuel</a>
+<a href='https://www.bibleref.com/2-Samuel'>2 Samuel</a>
+<a href='https://www.bibleref.com/1-Kings'>1 Kings</a>
+<a href='https://www.bibleref.com/2-Kings'>2 Kings</a>
+<a href='https://www.bibleref.com/1-Chronicles'>1 Chronicles</a>
+<a href='https://www.bibleref.com/2-Chronicles'>2 Chronicles</a>
+<a href='https://www.bibleref.com/Ezra'>Ezra</a>
+<a href='https://www.bibleref.com/Nehemiah'>Nehemiah</a>
+<a href='https://www.bibleref.com/Esther'>Esther</a>
+<a href='https://www.bibleref.com/Job'>Job</a>
+<a href='https://www.bibleref.com/Psalms'>Psalms</a>
+<a href='https://www.bibleref.com/Proverbs'>Proverbs</a>
+<a href='https://www.bibleref.com/Ecclesiastes'>Ecclesiastes</a>
+<a href='https://www.bibleref.com/Song-of-Solomon'>Song of Solomon</a>
+<a href='https://www.bibleref.com/Isaiah'>Isaiah</a>
+<a href='https://www.bibleref.com/Jeremiah'>Jeremiah</a>
+<a href='https://www.bibleref.com/Lamentations'>Lamentations</a>
+<a href='https://www.bibleref.com/Ezekiel'>Ezekiel</a>
+<a href='https://www.bibleref.com/Daniel'>Daniel</a>
+<a href='https://www.bibleref.com/Hosea'>Hosea</a>
+<a href='https://www.bibleref.com/Joel'>Joel</a>
+<a href='https://www.bibleref.com/Amos'>Amos</a>
+<a href='https://www.bibleref.com/Obadiah'>Obadiah</a>
+<a href='https://www.bibleref.com/Jonah'>Jonah</a>
+<a href='https://www.bibleref.com/Micah'>Micah</a>
+<a href='https://www.bibleref.com/Nahum'>Nahum</a>
+<a href='https://www.bibleref.com/Habakkuk'>Habakkuk</a>
+<a href='https://www.bibleref.com/Zephaniah'>Zephaniah</a>
+<a href='https://www.bibleref.com/Haggai'>Haggai</a>
+<a href='https://www.bibleref.com/Zechariah'>Zechariah</a>
+<a href='https://www.bibleref.com/Malachi'>Malachi</a>
+<a href='https://www.bibleref.com/Matthew'>Matthew</a>
+<a href='https://www.bibleref.com/Mark'>Mark</a>
+<a href='https://www.bibleref.com/Luke'>Luke</a>
+<a href='https://www.bibleref.com/John'>John</a>
+<a href='https://www.bibleref.com/Acts'>Acts</a>
+<a href='https://www.bibleref.com/Romans'>Romans</a>
+<a href='https://www.bibleref.com/1-Corinthians'>1 Corinthians</a>
+<a href='https://www.bibleref.com/2-Corinthians'>2 Corinthians</a>
+<a href='https://www.bibleref.com/Galatians'>Galatians</a>
+<a href='https://www.bibleref.com/Ephesians'>Ephesians</a>
+<a href='https://www.bibleref.com/Philippians'>Philippians</a>
+<a href='https://www.bibleref.com/Colossians'>Colossians</a>
+<a href='https://www.bibleref.com/1-Thessalonians'>1 Thessalonians</a>
+<a href='https://www.bibleref.com/2-Thessalonians'>2 Thessalonians</a>
+<a href='https://www.bibleref.com/1-Timothy'>1 Timothy</a>
+<a href='https://www.bibleref.com/2-Timothy'>2 Timothy</a>
+<a href='https://www.bibleref.com/Titus'>Titus</a>
+<a href='https://www.bibleref.com/Philemon'>Philemon</a>
+<a href='https://www.bibleref.com/Hebrews'>Hebrews</a>
+<a href='https://www.bibleref.com/James'>James</a>
+<a href='https://www.bibleref.com/1-Peter'>1 Peter</a>
+<a href='https://www.bibleref.com/2-Peter'>2 Peter</a>
+<a href='https://www.bibleref.com/1-John'>1 John</a>
+<a href='https://www.bibleref.com/2-John'>2 John</a>
+<a href='https://www.bibleref.com/3-John'>3 John</a>
+<a href='https://www.bibleref.com/Jude'>Jude</a>
+<a href='https://www.bibleref.com/Revelation'>Revelation</a>
+</div></div>
+		<div class='bible-chapter'>
+<span>Chapter</span>
+<div class='chapters'>
+<a href='https://www.bibleref.com/Mark/1/Mark-chapter-1.html'>1</a>
+<a href='https://www.bibleref.com/Mark/2/Mark-chapter-2.html'>2</a>
+<a href='https://www.bibleref.com/Mark/3/Mark-chapter-3.html'>3</a>
+<a href='https://www.bibleref.com/Mark/4/Mark-chapter-4.html'>4</a>
+<a href='https://www.bibleref.com/Mark/5/Mark-chapter-5.html'>5</a>
+<a href='https://www.bibleref.com/Mark/6/Mark-chapter-6.html'>6</a>
+<a href='https://www.bibleref.com/Mark/7/Mark-chapter-7.html'>7</a>
+<a href='https://www.bibleref.com/Mark/8/Mark-chapter-8.html'>8</a>
+<a href='https://www.bibleref.com/Mark/9/Mark-chapter-9.html'>9</a>
+<a href='https://www.bibleref.com/Mark/10/Mark-chapter-10.html'>10</a>
+<a href='https://www.bibleref.com/Mark/11/Mark-chapter-11.html'>11</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-chapter-12.html' class='active'>12</a>
+<a href='https://www.bibleref.com/Mark/13/Mark-chapter-13.html'>13</a>
+<a href='https://www.bibleref.com/Mark/14/Mark-chapter-14.html'>14</a>
+<a href='https://www.bibleref.com/Mark/15/Mark-chapter-15.html'>15</a>
+<a href='https://www.bibleref.com/Mark/16/Mark-chapter-16.html'>16</a>
+</div></div>
+
+		<div class='bible-verse'>
+<span>Verse</span>
+<div class='verses'>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-1.html'>1</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-2.html'>2</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-3.html'>3</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-4.html'>4</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-5.html'>5</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-6.html'>6</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-7.html'>7</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-8.html'>8</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-9.html'>9</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-10.html'>10</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-11.html'>11</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-12.html'>12</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-13.html'>13</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-14.html'>14</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-15.html'>15</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-16.html'>16</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-17.html'>17</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-18.html'>18</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-19.html'>19</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-20.html'>20</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-21.html'>21</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-22.html'>22</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-23.html'>23</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-24.html'>24</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-25.html'>25</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-26.html'>26</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-27.html'>27</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-28.html'>28</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-29.html'>29</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-30.html'>30</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-31.html'>31</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-32.html'>32</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-33.html'>33</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-34.html'>34</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-35.html' class='active'>35</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-36.html'>36</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-37.html'>37</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-38.html'>38</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-39.html'>39</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-40.html'>40</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-41.html'>41</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-42.html'>42</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-43.html'>43</a>
+<a href='https://www.bibleref.com/Mark/12/Mark-12-44.html'>44</a>
+</div></div>
+
+            <div class="buttons">
+                <div class="action-button mobile bible">
+                    <a href="#scripture">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                          <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor"><polygon points="1,2 16,7 31,2 31,25 16,30 1,25 "></polygon> <line x1="13" y1="11.667" x2="5" y2="9"></line> <line x1="13" y1="17.333" x2="5" y2="15"></line> <line x1="5" y1="21" x2="13" y2="23.667"></line> <line x1="19" y1="11.667" x2="27" y2="9"></line> <line x1="19" y1="17.333" x2="27" y2="15"></line> <line x1="27" y1="21" x2="19" y2="23.667"></line></g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="action-button mobile commentary">
+                    <a href="#content-commentary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                          <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M28,2H4A3,3,0,0,0,1,5V21a3,3,0,0,0,3,3h7l5,6,5-6h7a3,3,0,0,0,3-3V5A3,3,0,0,0,28,2Z"></path> <line x1="8" y1="10" x2="24" y2="10"></line> <line x1="8" y1="16" x2="17" y2="16"></line></g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="action-button mobile chapter">
+                    <a href="#summary-book">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                          <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor"><rect x="3" y="5" width="22" height="26"></rect> <line x1="8" y1="12" x2="20" y2="12"></line> <line x1="8" y1="18" x2="20" y2="18"></line> <line x1="8" y1="24" x2="12" y2="24"></line> <polyline points=" 6,1 29,1 29,28 "></polyline></g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="action-button mobile book">
+                    <a href="#summary-chapter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                          <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor"><polyline points="22,1 22,12 18,9 14,12 14,1 "></polyline> <path d="M28,25V1H7C5.343,1,4,2.343,4,4v24"></path> <path d="M28,31v-6H7 c-1.657,0-3,1.343-3,3v0c0,1.657,1.343,3,3,3H28z"></path> <line x1="8" y1="25" x2="8" y2="5"></line></g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="action-button mobile settings" onclick="settingsMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                      <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor"><circle cx="16" cy="16" r="4"></circle> <path d="M27,16a11.057,11.057,0,0,0-.217-2.175L30.49,11.1l-3-5.2L23.263,7.754a10.955,10.955,0,0,0-3.754-2.172L19,1H13l-.509,4.582A10.955,10.955,0,0,0,8.737,7.754L4.51,5.9l-3,5.2,3.707,2.727a11.009,11.009,0,0,0,0,4.35L1.51,20.9l3,5.2,4.227-1.852a10.955,10.955,0,0,0,3.754,2.172L13,31h6l.509-4.582a10.955,10.955,0,0,0,3.754-2.172L27.49,26.1l3-5.2-3.707-2.727A11.057,11.057,0,0,0,27,16Z"></path></g>
+                    </svg>
+                </div>
+                <div class="action-button sharebutton" onclick="shareMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><rect class="nc-transparent-rect" x="0" y="0" width="24" height="24" rx="0" ry="0" fill="none" stroke="none"/><g class="nc-icon-wrapper" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="currentColor" stroke="currentColor" stroke-miterlimit="10"><polyline points="18 15 18 22 2 22 2 8 7 8" fill="none" stroke="currentColor"/> <path data-cap="butt" data-color="color-2" d="M9,16A10,10,0,0,1,19,6h3" fill="none" stroke-linecap="butt"/> <polyline data-color="color-2" points="18 10 22 6 18 2" fill="none"/></g></g></svg>
+                </div>
+            </div>
+        </section>
+        <section class="scripture verse" id="scripture">
+            <div class='scripture-nav'>
+	<a href='https://www.bibleref.com/Mark/12/Mark-12-34.html'>
+		<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 32 32'><g stroke-linecap='round' stroke-linejoin='round' stroke-width='2' fill='none'  stroke='currentColor'><polyline points='16,10 10,16 16,22' transform='translate(0, 0)'></polyline></g></svg>
+	</a>
+	<a href='https://www.bibleref.com/Mark/12/Mark-12-36.html'>
+		<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 32 32'><g stroke-linecap='round' stroke-linejoin='round' stroke-width='2' fill='none' stroke='currentColor'><polyline points='12,10 18,16 12,22' transform='translate(0, 0)'></polyline></g></svg>
+	</a>
+</div>
+
+<span id="titleLine">
+	<h1>Mark 12:35</h1>
+</span> 
+<div class='bottomPadding esv'>
+<a href='http://www.christianbook.com/page/bibles/translations/esv?navcat=Bibles|Translations|ESV' target='_blank'>ESV</a>
+<span>And as Jesus taught in the temple, he said, &#8220;How can the scribes say that the Christ is the son of David?</span>
+</div>
+<div class='bottomPadding niv'>
+<a href='http://www.christianbook.com/page/bibles/translations/niv?navcat=Bibles|Translations|NIV' target='_blank'>NIV</a>
+<span>While Jesus was teaching in the temple courts, he asked, 'Why do the teachers of the law say that the Messiah is the son of David?</span>
+</div>
+<div class='bottomPadding nasb'>
+<a href='http://www.christianbook.com/page/bibles/translations/nasb?navcat=Bibles|Translations|NASB' target='_blank'>NASB</a>
+<span>And Jesus responded and <i>began</i> saying, as He taught in the temple <i>area,</i> 'How <i>is it that</i> the scribes say that the Christ is the son of David?</span>
+</div>
+<div class='bottomPadding csb'>
+<a href='http://www.christianbook.com/page/bibles/translations/csb?navcat=Bibles|Translations|CSB' target='_blank'>CSB</a>
+<span>While Jesus was teaching in the temple, he asked, "How can the scribes say that the Messiah is the son of David?</span>
+</div>
+<div class='bottomPadding nlt'>
+<a href='http://www.christianbook.com/page/bibles/translations/nlt?navcat=Bibles|Translations|NLT' target='_blank'>NLT</a>
+<span>Later, as Jesus was teaching the people in the Temple, he asked, 'Why do the teachers of religious law claim that the Messiah is the son of David?</span>
+</div>
+<div class='bottomPadding kjv'>
+<a href='http://www.christianbook.com/page/bibles/translations/kjv?navcat=Bibles|Translations|KJV' target='_blank'>KJV</a>
+<span>And Jesus answered and said, while he taught in the temple, How say the scribes that Christ is the Son of David?</span>
+</div>
+
+
+<div class='scripture-nav'>
+	<a href='https://www.bibleref.com/Mark/12/Mark-12-34.html'>
+		<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 32 32'><g stroke-linecap='round' stroke-linejoin='round' stroke-width='2' fill='none'  stroke='currentColor'><polyline points='16,10 10,16 16,22' transform='translate(0, 0)'></polyline></g></svg>
+	</a>
+	<a href='https://www.bibleref.com/Mark/12/Mark-12-36.html'>
+		<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 32 32'><g stroke-linecap='round' stroke-linejoin='round' stroke-width='2' fill='none' stroke='currentColor'><polyline points='12,10 18,16 12,22' transform='translate(0, 0)'></polyline></g></svg>
+	</a>
+</div>
+            <div id="footer-desktop">
+			<section class="follow">
+				<span>Follow Us:</span>
+				<a target="_blank" href="https://www.facebook.com/BibleRefcom/">
+					<img src="https://www.bibleref.com/img/logo-facebook-gold.svg">
+				</a>
+				<a target="_blank" href="https://twitter.com/BibleRefCom">
+					<img src="https://www.bibleref.com/img/logo-twitter-gold.svg">
+				</a>
+				<a target="_blank" href="https://www.instagram.com/biblerefdotcom/">
+				   <img src="https://www.bibleref.com/img/logo-instagram-gold.svg">
+				</a>
+			</section>
+			<div style="font-size: .8em; line-height: 1.2em;">
+			<div class="bottomPadding copyright">
+			  <script type="text/javascript" src="https://www.gotquestions.org/scommon/copyright.js"></script><br>
+			  <a href="https://www.bibleref.com">www.BibleRef.com</a>|
+			  <a href="https://www.bibleref.com/sitemap.html">Sitemap</a>|
+			  <a href="https://www.bibleref.com/books-of-the-Bible.html">Books of the Bible</a>|
+			  <a href="https://www.bibleref.com/bible-passages.html">Passages</a>
+			</div>
+              THE HOLY BIBLE, NEW INTERNATIONAL
+              VERSION&reg;, NIV&reg; Copyright&copy; 1973, 1978, 1984, 2011 by Biblica&reg;.<br><br>
+              The Holy Bible, New Living Translation, Copyright&copy; 1996, 2004, 2007. Used by permission
+              of Tyndale House Publishers, Inc. Carol Stream, Illinois 60188.<br><br>
+              The Holy Bible, English Standard Version&reg; Copyright&copy; 2001 by Crossway Bibles, a
+              publishing ministry of Good News Publishers.<br><br>
+              New American Standard Bible Copyright&copy; 1960 - 2020 by The Lockman Foundation.<br><br>
+              Christian Standard Bible&reg;, Copyright&copy; 2017 by Holman Bible Publishers. Used by Permission.
+			  </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content-commentary" id="content-commentary">
+   <div class="comment leftcomment">
+      <h1>
+         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor">
+               <path d="M42,4H6A4,4,0,0,0,2,8V30a4,4,0,0,0,4,4H16l8,10,8-10H42a4,4,0,0,0,4-4V8A4,4,0,0,0,42,4Z"></path>
+               <line x1="12" y1="14" x2="36" y2="14"></line>
+               <line x1="12" y1="24" x2="26" y2="24"></line>
+            </g>
+         </svg>
+         What does Mark 12:35 mean?
+	<a href="https://bibleref.com/biblepassage/Printer?section=Mark_12:35&lang=en" target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><g><rect class="nc-transparent-rect" x="0" y="0" width="24" height="24" rx="0" ry="0" fill="none" stroke="none"></rect><g class="nc-icon-wrapper" fill="currentColor"><path data-color="color-2" d="M20,4H18V2H6V4H4V1A1,1,0,0,1,5,0H19a1,1,0,0,1,1,1Z"></path><path d="M21,6H3A3,3,0,0,0,0,9v9a1,1,0,0,0,1,1H4v4a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V19h3a1,1,0,0,0,1-1V9A3,3,0,0,0,21,6ZM18,22H6V13H18Z" fill="currentColor"></path></g></g></svg>
+	</a>
+      </h1>
+      Matthew adds more detail to this incident. Jesus asks the gathered Pharisees who they think is the father of the Christ. They respond that the Messiah is the son of David (Matthew 22:41&ndash;42). The Messiah wasn't referred to directly as the "son of David" until the mid-first century BC in writings by scribes. Like in Mark 9:11&ndash;13, Jesus doesn't contradict this scribal teaching but explains more fully what it means. He compares it to Psalm 110:1 (Mark 12:36) and shows how two seemingly contradictory statements can both be true. <br><br>
+In Judaism, the ancestor "outranks" and represents all his descendants. This is shown in the argument that the priesthood of Melchizedek is pre-eminent over the priesthood of the Levites because Abraham, great-grandfather to Levi, tithed to Melchizedek (Hebrews 7:1&ndash;10). It would follow, then, that the Messiah, who would be the descendant of King David, would be subordinate to David (1 Chronicles 17:11&ndash;14; Jeremiah 23:5&ndash;6). So, tradition would state that while the Messiah would be a significant figure, rescuing Israel from her Gentile oppressors, he would be a man no more special than David. <br><br>
+The Bible uses the term "son of" in a couple of different ways. First, it can mean a male descendant of any generation. Jesus fulfills this requirement both through Joseph's genealogy (Matthew 1:6&ndash;16) and Mary's (Luke 3:23&ndash;31). "Son of" can also mean someone who exemplifies another's character. Jesus called the scribes and Pharisees sons of Satan because they tried to find a way to kill Jesus rather than recognizing He spoke the truth from God (John 8:39&ndash;47). The Messiah will be the "son" of David in this exemplary way because he will be king of a united Israel and will rule justly with a mind to God's heart. <br><br>
+Whether a biological descendant or one who images the character of another, David's "son" could not also be his "Lord" (Mark 12:36). Jesus wants to prove that the Messiah is more than just David's son. He can't be defined merely as a successor to David. In fact, He is David's Lord.
+   </div>
+   <div class="expand" onclick="expandText(this)">
+      <span>Expand</span>
+   </div>
+</div>
+<div class="content-summary summary-book" id="summary-book">
+   <div>
+      <script type="text/javascript" src="https://www.bibleref.com/summaries/Mark-12-35thru12-37-context.js"></script>
+   </div>
+   <div class="expand" onclick="expandText(this)">
+      <span>Expand</span>
+   </div>
+</div>
+<div class="content-summary summary-chapter" id="summary-chapter">
+   <div>
+      <script type="text/javascript" src="https://www.bibleref.com/summaries/Mark-chapter-12.js"></script>
+   </div>
+   <div class="expand" onclick="expandText(this)">
+      <span>Expand</span>
+   </div>
+</div>
+        </section>
+        <section class="right-spons">
+            <a href="https://www.bibleref.com/The-Gospel.html" class="link">What is the Gospel?</a>
+            <div class="adManager-placeholder"></div>
+	    <div class="app">
+		Download the app:<br>
+		<a href="https://apps.apple.com/us/app/got-questions/id1596177226" target="_blank" rel="noopener" class="applink">
+			<img src="https://www.bibleref.com/img/apple-appstore.svg">
+		</a>
+		<a href="https://play.google.com/store/apps/details?id=org.gotquestions.bibleref" target="_blank" rel="noopener" class="applink">
+			<img src="https://www.bibleref.com/img/google-play.svg" class="appSource">
+		</a>
+            </div>
+	    <div class="ministry-links">
+BibleRef.com is part of Got Questions Ministries <a target="_blank" href="https://www.gqm.one"><img src="https://www.gotquestions.org/img/gqm-one.png"></a><br><br>For answers to your Bible questions, please visit<br><a target="_blank" href="https://www.gotquestions.org"><img src="https://www.gotquestions.org/img/GQlogo.png" width="200" height="40"></a>
+            </div>
+        </section>
+        <div id="footer-mobile">
+			<section class="follow">
+				<span>Follow Us:</span>
+				<a target="_blank" href="https://www.facebook.com/BibleRefcom/">
+					<img src="https://www.bibleref.com/img/logo-facebook-gold.svg">
+				</a>
+				<a target="_blank" href="https://twitter.com/BibleRefCom">
+					<img src="https://www.bibleref.com/img/logo-twitter-gold.svg">
+				</a>
+				<a target="_blank" href="https://www.instagram.com/biblerefdotcom/">
+				   <img src="https://www.bibleref.com/img/logo-instagram-gold.svg">
+				</a>
+			</section>
+			<div style="font-size: .8em; line-height: 1.2em;">
+			<div class="bottomPadding copyright">
+			  <script type="text/javascript" src="https://www.gotquestions.org/scommon/copyright.js"></script><br>
+			  <a href="https://www.bibleref.com">www.BibleRef.com</a>|
+			  <a href="https://www.bibleref.com/sitemap.html">Sitemap</a>|
+			  <a href="https://www.bibleref.com/books-of-the-Bible.html">Books of the Bible</a>|
+			  <a href="https://www.bibleref.com/bible-passages.html">Passages</a>
+			</div>
+			  THE HOLY BIBLE, NEW INTERNATIONAL
+			  VERSION&reg;, NIV&reg; Copyright&copy; 1973, 1978, 1984, 2011 by Biblica&reg;.<br><br>
+			  The Holy Bible, New Living Translation, Copyright&copy; 1996, 2004, 2007. Used by permission
+			  of Tyndale House Publishers, Inc. Carol Stream, Illinois 60188.<br><br>
+			  The Holy Bible, English Standard Version&reg; Copyright&copy; 2001 by Crossway Bibles, a
+			  publishing ministry of Good News Publishers.<br><br>
+			  New American Standard Bible Copyright&copy; 1960 - 2020 by The Lockman Foundation.<br><br>
+			  Christian Standard Bible&reg;, Copyright&copy; 2017 by Holman Bible Publishers. Used by Permission.
+			  </div>
+        </div>
+    </main>
+    <script src="https://www.bibleref.com/js/new-brscripts.js"></script>
+</body>
+
+</html>

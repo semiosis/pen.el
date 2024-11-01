@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src;  "hx" "/volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src/main.rs" "#" "<==" "zsh"
+cd /root/notes;  "hx" "/volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src/main.rs" "#" "<==" "zsh"
+cd /root/notes;  "hx" "/volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src/main.rs" "#" "<==" "zsh"
+cd /root/notes;  "hx" "/volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src/main.rs" "#" "<==" "zsh"
+cd /root/notes;  "hx" "/volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src/main.rs" "#" "<==" "zsh"
+cd /root/notes;  "hx" "/volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src/main.rs" "#" "<==" "zsh"
+cd /root/notes;  "hx" "/volumes/home/shane/var/smulliga/source/git/ua-kxie/circe/src/main.rs" "#" "<==" "zsh"

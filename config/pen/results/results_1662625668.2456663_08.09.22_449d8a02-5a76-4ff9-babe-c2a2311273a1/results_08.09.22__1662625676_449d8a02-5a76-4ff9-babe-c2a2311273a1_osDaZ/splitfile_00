@@ -1,0 +1,8 @@
+https://clojuredocs.org/clojure.core/swap/
+
+   swap
+
+   (swap! var-name var)
+
+   Returns a new binding of var-name to the value of the expression (var),
+   replacing any existing binding for var-name. If the expression (var) is

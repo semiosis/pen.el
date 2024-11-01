@@ -1,0 +1,10 @@
+The above code is an excerpt from the Options module of the Haskell standard library.
+The Options module defines the Option type, which represents an optional value.
+The Option type is defined as follows:
+data Option a = None | Some a
+
+The Options module defines a number of functions to work with Option values.
+The Applicative module defines a type class, Applicative, which makes it possible
+to combine Option values using the applicative functor.
+
+The Applicative type class is defined

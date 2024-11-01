@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:8" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "bible-tpop-lookup" "-c" "-m" "NASB" "Genesis 1:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 11:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 11:2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 11:4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "NASB" "Matthew 11:5" "#" "<==" "zsh"

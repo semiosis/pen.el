@@ -1,0 +1,15 @@
+
+The answer is that you hit "C-g" and at the "M-x" prompt type "save-buffers-kill-emacs". 
+
+"""
+
+def emacsTheory1(x):
+    return x
+
+def emacsTheory2(x):
+    return x
+
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,16 @@
+
+#
+# The sync source is a directory containing files and directories. The
+# files are copied to the library, and the directories are copied to the
+# library and then populated with content from the sync source.
+#
+# The sync source is specified by the 'sync_source' variable. This is a
+# path relative to the ansible playbook's directory. If it is not specified,
+# then it defaults to 'content-sync'. This allows you to have multiple
+# content-sync playbooks in a single repository.
+#
+# The sync source can contain a file named 'manifest.yaml'. If it does, it
+# will be used to populate the library's manifest. If it does not exist, then
+# the manifest will be populated using the content of the sync source. If no
+# manifest exists in the library, then one will be created using the content of
+# the sync source. If a manifest

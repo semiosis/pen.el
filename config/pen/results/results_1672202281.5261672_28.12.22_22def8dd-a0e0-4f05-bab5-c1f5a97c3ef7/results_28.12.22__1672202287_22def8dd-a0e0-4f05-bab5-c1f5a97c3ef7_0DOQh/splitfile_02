@@ -1,0 +1,5 @@
+
+norm! "zz
+endf
+fun! VisualSelection()    if visualmode() == "V"
+        return visualmode() == "r" ? "\<Esc>\<C-

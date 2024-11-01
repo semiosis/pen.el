@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: script reload guard
+# group: vimsnippet
+# key: vs-guard
+# --
+if exists('${1:did_`vim_snippets#Filename()`}') || &cp${2: || version < 700}
+	finish
+endif
+let $1 = 1${0}

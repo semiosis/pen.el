@@ -1,0 +1,24 @@
+ "start repl"
+  hosts: all
+  gather_facts: no
+  tasks:
+  - name: "start repl"
+    clomacs:
+      name: "clojure.main"
+      lib: "lein.repl"
+      func: "repl"
+      args:
+      - "-s"
+      - "/dev/null"
+      kwargs:
+        :port: "7888"
+        :headless: "true"
+        :classpath: "{{ lookup('env', 'CLASSPATH') }}"
+      delegate_to: "{{ inventory_hostname }}"
+    register: clojure_repl
+    delegate_to: "{{ inventory_hostname }}"
+  - name: "wait for repl"
+    wait_for:
+      host: "{{ inventory_hostname }}"
+      port: "7888"
+      state:

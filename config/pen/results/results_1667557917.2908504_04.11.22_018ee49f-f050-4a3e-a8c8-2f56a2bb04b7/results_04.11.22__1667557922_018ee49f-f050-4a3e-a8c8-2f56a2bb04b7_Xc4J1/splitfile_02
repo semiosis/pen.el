@@ -1,0 +1,2 @@
+- haskell guru: Control.Monad is used for handling computations that may fail,
+and also to combine computations.

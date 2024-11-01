@@ -1,0 +1,15 @@
+That's too many words.
+
+A type system defines the shape of data that can be safely stored in the computer's memory. Type systems can be categorized, roughly, by how they expand outwards, starting with types that are known. The type system for C, for example, is small and fixed, and is expressed in the language's syntax. It is known to the compiler, but the programmer does not need to write it down.
+
+In contrast, a type system for a language like Haskell is expressed in the language's syntax, but is not known to the compiler. It is known to the programmer, who can write it down with a comment.
+
+This way of expanding the type system is called a Hindley-Milner Type system.
+
+The programmer might write a comment that says
+
+-- | Triangle
+
+to indicate that a type called Triangle will be defined, and the compiler will wait for a definition without needing to know what one looks like.
+
+Programmers

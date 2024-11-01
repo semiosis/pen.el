@@ -1,0 +1,5 @@
+cd /;  "ebible" "-nbd" "-m" "NASB" "Matthew 5:17" "#" "<==" "sh"
+cd /root/.pen/documents;  "ebible" "-m" "NASB" "I John" "#" "<==" "I"
+cd /root/.emacs.d/host/pen.el/src;  "ebible" "-m" "NASB" "I John" "#" "<==" "I"
+cd /root/.pen/documents/notes/ws/blessings;  "ebible" "-m" "NASB" "2 Corinthians 1:8-11" "#" "<==" "2"
+cd /root/.pen/documents/notes/ws/blessings;  "ebible" "-m" "NASB" "2 Corinthians 1:8-11" "#" "<==" "2"

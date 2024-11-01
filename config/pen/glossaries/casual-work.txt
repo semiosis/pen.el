@@ -1,0 +1,13 @@
+pick packer
+    You pick items in a warehouse based on the
+    customer's order and pack them for
+    shipping.
+    
+    You also label items with delivery details
+    and load them onto delivery trucks.
+    
+    Most pick packers work in warehouses and
+    distribution centres, helping businesses
+    fulfil orders efficiently.
+    
+    pick packer roles.

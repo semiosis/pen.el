@@ -1,0 +1,9 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "list-signs-and-symbols-of" "love")))
+--> 
+
+
+
+;; Run function -loop
+(message (eval '(-loop "-u" "symbols-of" "love")))
+--> 

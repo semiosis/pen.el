@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "pen-gc" "https://github.com/sbcl/sbcl" "#" "<==" "gc"
+cd /root/.pen/documents/notes;  "pen-gc" "https://github.com/sbcl/sbcl" "#" "<==" "gc"
+cd /root/.pen/documents/notes;  "pen-gc" "https://github.com/sbcl/sbcl" "#" "<==" "gc"
+cd /root/.pen/documents/notes;  "pen-gc" "https://github.com/sbcl/sbcl" "#" "<==" "gc"
+cd /root/.pen/documents/notes;  "pen-gc" "https://github.com/sbcl/sbcl" "#" "<==" "gc"

@@ -1,0 +1,13 @@
+
+
+GY_CMD&
+
+echo “Training done”
+
+exit 0
+
+这里是内部调用的代码：
+
+for
+
+{

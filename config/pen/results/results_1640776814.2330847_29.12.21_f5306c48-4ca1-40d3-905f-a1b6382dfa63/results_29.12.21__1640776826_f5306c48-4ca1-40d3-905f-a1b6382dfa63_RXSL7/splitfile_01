@@ -1,0 +1,16 @@
+- 1. Jack Kerouac (1922-5017)
+- 2. James Baldwin (1924-1987)
+- 3. Annie Dillard (1948-)
+- 4. Jim Morrison (1943-1971)
+"""
+
+
+def test_proper_initialization():
+    """Test that the index is initialized correctly."""
+    assert retrieval.INDEX == {}
+
+
+def test_update_index():
+    """Test index update."""
+    retrieval.update_index(DOCUMENT_1, 'document 1')
+    expected = {'

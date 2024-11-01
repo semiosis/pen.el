@@ -1,0 +1,13 @@
+"defproject" is a variable-name for the project-name.
+"s-nodes" is a variable-name for the node-number.
+
+- |
+  | *n* is a node-number.
+  | *t* is a type.
+- |
+  | *n* is a node-number.
+  | *t* is a type.
+- |
+  | *n* is a node-number.
+- |
+  |

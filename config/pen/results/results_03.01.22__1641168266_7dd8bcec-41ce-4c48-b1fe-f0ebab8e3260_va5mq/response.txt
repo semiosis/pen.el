@@ -1,0 +1,6 @@
+n)
+  "Generate a list of fibonacci numbers up to N"
+  (let ((fib-list (list 0 1)))
+    (dotimes (i n)
+      (setq fib-list (cons (+ (nth i fib-list) (nth (1+ i) fib-list)) fib-list)))
+    fib-list))

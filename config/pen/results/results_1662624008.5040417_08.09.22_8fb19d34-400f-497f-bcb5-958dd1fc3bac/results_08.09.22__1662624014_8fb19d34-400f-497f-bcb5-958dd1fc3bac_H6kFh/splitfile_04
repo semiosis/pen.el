@@ -1,0 +1,9 @@
+"MailBox" is a class that allows you to work with the mailbox.
+
+Usage:
+    >>> mailbox = MailBox('imap.gmail.com')
+    >>> mailbox.login('email', 'password')
+    >>> mailbox.folder.set('INBOX')
+    >>> for msg in mailbox.fetch():
+    >>>     print(msg.subject)
+    >>> mailbox.logout()

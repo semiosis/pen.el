@@ -1,0 +1,836 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 29912
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: swipl_session=a9ed-b61e-4db6-95d9.swi-prolog; path=/; version=1; samesite=lax
+Content-Security-Policy: frame-ancestors 'none'
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 11 Sep 2022 07:28:41 GMT
+X-Served-By: cache-bfi-krnt7300113-BFI, cache-akl10329-AKL
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1662881321.751377,VS0,VE428
+Strict-Transport-Security: max-age=900
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SWI-Prolog -- Manual</title>
+
+<link rel="stylesheet" type="text/css" href="/css/footer.css">
+<link rel="stylesheet" type="text/css" href="/css/plweb.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+<link rel="stylesheet" type="text/css" href="/css/annotation.css">
+<link rel="stylesheet" type="text/css" href="/css/swipl.css">
+<link rel="stylesheet" type="text/css" href="/css/tags.css">
+<script type="text/javascript" src="/js/jquery.min.js">
+
+</script>
+<script type="text/javascript" src="/pldoc/res/pldoc.js">
+
+</script>
+<script type="text/javascript" src="/js/markitup/jquery.markitup.js">
+
+</script>
+<script type="text/javascript" src="/js/jquery/ui/jquery-ui.min.js">
+
+</script>
+<script type="text/javascript" src="/js/jquery/menu.js">
+
+</script>
+<link rel="stylesheet" type="text/css" href="/js/jquery/ui/jquery-ui.min.css">
+<script type="text/javascript" src="/js/tagit/js/tag-it.min.js">
+
+</script>
+<link rel="stylesheet" type="text/css" href="/js/tagit/css/jquery.tagit.css">
+<link rel="stylesheet" type="text/css" href="/js/tagit/css/tagit.ui-zendesk.css">
+<link rel="stylesheet" type="text/css" href="/js/markitup/sets/pldoc/style.css">
+<link rel="stylesheet" type="text/css" href="/js/markitup/skins/markitup/style.css">
+<script type="text/javascript" src="/js/markitup/sets/pldoc/set.js">
+
+</script>
+<link rel="stylesheet" type="text/css" href="/pldoc/res/pldoc.css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+<body>
+<div class="outer-container">
+<div id="upper-header">
+
+<table id="upper-header-contents">
+<tr><td id="dyknow-container">Did you know ... 
+<script type="text/javascript">
+
+		   $(function() {
+		     $.ajax({ url: "/dyk",
+			      success: function(data) {
+			        $("#"+"dyknow-container").html(data);
+			      }
+		            });
+		   });
+		  
+</script>
+</td><td id="search-container"><span class="lbl">Search Documentation:</span>
+
+<form action="/search" id="search-form">
+<input name="for" id="for" value=""><input id="submit-for" type="submit" value="Search">
+<script type="text/javascript">
+
+    $(function() {
+	function htmlEncode(text) {
+	  if ( !text ) return "";
+	  return document.createElement('a')
+			 .appendChild(document.createTextNode(text))
+			 .parentNode
+			 .innerHTML;
+	}
+        $("#"+"for").autocomplete({
+        minLength: 1,
+        delay: 0.3,
+        source: "/autocomplete/ac_predicate",
+        focus: function(event,ui) {
+          $("#"+"for").val(ui.item.label);
+          return false;
+        },
+        select: function(event,ui) {
+          $("#"+"for").val(ui.item.label);
+          window.location.href = ui.item.href;
+          return false;
+        }
+        })
+        .data("ui-autocomplete")._renderItem = function(ul,item) {
+        var label = String(htmlEncode(item.label)).replace(
+            htmlEncode(this.term),
+            "<span class=\"acmatch\">"+this.term+"</span>");
+        var tag = item.tag ? " <i>["+item.tag+"]</i>" : "";
+        return $("<li>")
+          .append("<a class=\""+item.class+"\">"+label+tag+"</a>")
+          .appendTo(ul)
+        };
+        });
+
+</script>
+</form>
+
+</td></tr>
+</table>
+
+</div>
+
+<table id="header-line-area">
+<tr><td id="logo"><a href="http://www.swi-prolog.org"><img class="owl" src="/icons/swipl.png" alt="SWI-Prolog owl logo" title="SWI-Prolog owl logo"></a></td><td class="primary-header">Tabled execution (SLG resolution)</td></tr>
+</table>
+
+
+<div id="menubar">
+<div class="menubar fixed-width">
+<ul class="menubar-container">
+<li><a href="/">HOME</a></li>
+<li>DOWNLOAD
+<ul>
+<li><a href="/Download.html">SWI-Prolog</a></li>
+<li><a href="/build/">Sources/building</a></li>
+<li><a href="/Docker.html">Docker images</a></li>
+<li><a href="/pack/list">Add-ons</a></li>
+<li><a href="https://github.com/SWI-Prolog">Browse GIT<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+</ul>
+</li>
+<li>DOCUMENTATION
+<ul>
+<li><a href="/pldoc/refman/">Manual</a></li>
+<li><a href="/pldoc/package/">Packages</a></li>
+<li><a href="/FAQ/">FAQ</a></li>
+<li><a href="/pldoc/man?section=cmdline">Command line</a></li>
+<li><a href="/pldoc/package/pldoc.html">PlDoc</a></li>
+<li>Bluffers<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="/pldoc/man?section=syntax">Prolog syntax</a></li>
+<li><a href="/pldoc/man?section=emacsbluff">PceEmacs</a></li>
+<li><a href="/pldoc/man?section=htmlwrite">HTML generation</a></li>
+</ul>
+</li>
+<li><a href="/license.html">License</a></li>
+<li><a href="/Publications.html">Publications</a></li>
+<li><a href="/pldoc/man?section=extensions">Rev 7 Extensions</a></li>
+</ul>
+</li>
+<li>TUTORIALS
+<ul>
+<li>Beginner<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="/pldoc/man?section=quickstart">Getting started</a></li>
+<li><a href="http://lpn.swi-prolog.org/">Learn Prolog Now!<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="http://book.simply-logical.space/">Simply Logical<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="/pldoc/man?section=debugoverview">Debugger</a></li>
+<li><a href="/IDE.html">Development tools</a></li>
+</ul>
+</li>
+<li>Advanced<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="http://chiselapp.com/user/ttmrichter/repository/gng/doc/trunk/output/tutorials/swiplmodtut.html">Modules<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="https://www.github.com/Anniepoo/swipldcgtut/blob/master/dcgcourse.adoc">Grammars (DCGs)<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="https://www.github.com/Anniepoo/swiplclpfd/blob/master/clpfd.adoc">clp(fd)<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="https://www.github.com/Anniepoo/swiplmessage/blob/master/message.adoc">Printing messages<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="http://chiselapp.com/user/ttmrichter/repository/swipldoctut/doc/tip/doc/tutorial.html">PlDoc<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+</ul>
+</li>
+<li>Web applications<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="https://www.github.com/Anniepoo/swiplwebtut/blob/master/web.adoc">Web applications<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="https://github.com/triska/letswicrypt">Let's Encrypt!<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="/pengines/">Pengines</a></li>
+</ul>
+</li>
+<li>Semantic web<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="https://cliopatria.swi-prolog.org/tutorial/">ClioPatria<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="/howto/UseRdfMeta.html">RDF namespaces</a></li>
+</ul>
+</li>
+<li>Graphics<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="/download/xpce/doc/coursenotes/coursenotes.pdf">XPCE</a></li>
+<li><a href="/Graphics.html">GUI options</a></li>
+</ul>
+</li>
+<li>Machine learning<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="http://cplint.ml.unife.it/">Probabilistic Logic Programming<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+</ul>
+</li>
+<li>External collections<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="https://www.metalevel.at/prolog">Meta level tutorials<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+</ul>
+</li>
+<li>For packagers<span class="arrow">&#x25B6;</span>
+<ul>
+<li><a href="/build/guidelines.html">Linux packages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/community.html">COMMUNITY</a>
+<ul>
+<li><a href="http://webchat.freenode.net/?channels=##prolog">IRC<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="https://swi-prolog.discourse.group">Forum &amp; mailing list<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news/archive">News</a></li>
+<li><a href="/bug.html">Report a bug</a></li>
+<li><a href="/howto/SubmitPatch.html">Submit a patch</a></li>
+<li><a href="/howto/Pack.html">Submit an add-on</a></li>
+<li><a href="https://github.com/SWI-Prolog/roadmap">Roadmap (on GitHub)<img class="ext-link" src="/icons/ext-link.png" alt="External"></a></li>
+<li><a href="/Links.html">External links</a></li>
+<li><a href="/contributing.html">Contributing</a></li>
+<li><a href="/Code-of-Conduct.html">Code of Conduct</a></li>
+<li><a href="/Contributors.html">Contributors</a></li>
+<li><a href="/loot.html">SWI-Prolog items</a></li>
+</ul>
+</li>
+<li>USERS
+<ul>
+<li><a href="/web/index.html">Semantic web</a></li>
+<li><a href="/students/index.html">Students</a></li>
+<li><a href="/research/index.html">Researchers</a></li>
+<li><a href="/commercial/index.html">Commercial users</a></li>
+<li><a href="/dogfood.html">Dog food</a></li>
+<li><a href="/pldoc/man?section=swiorother">Is SWIPL right for me?</a></li>
+</ul>
+</li>
+<li>WIKI
+<ul>
+<li><a href="/openid/login?openid.return_to=/pldoc/man?section%3Dtabling">Login</a></li>
+<li><a href="/wiki/changes">View changes</a></li>
+<li><a href="/wiki/sandbox">Sandbox</a></li>
+<li><a href="/wiki/">Wiki help</a></li>
+<li><a href="/list-tags">All tags</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="breadcrumb"></div>
+<div class="inner-contents pldoc">
+<div id="contents" class="contents pldoc">
+<div class="navtree">
+<div class="navwindow">
+<ul class="nav">
+<li class="nav"><a href="/pldoc/doc_for?object=root">Documentation</a>
+<ul class="nav">
+<li class="nav"><a href="/pldoc/doc_for?object=manual">Reference manual</a>
+<ul class="nav">
+<li class="obj nav"><a href="/pldoc/man?section=intro">Introduction</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=overview">Overview</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=IDE">Initialising and Managing a Prolog Project</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=builtin">Built-in Predicates</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=extensions">SWI-Prolog extensions</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=modules">Modules</a></li>
+<li class="nav current"><a href="/pldoc/man?section=tabling">Tabled execution (SLG resolution)</a>
+<ul class="nav">
+<li class="obj nav"><a href="/pldoc/man?section=tabling-memoize">Example 1: using tabling for memoizing</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-non-termination">Example 2: avoiding non-termination</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-mode-directed">Answer subsumption or mode directed tabling</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tnotpure">Tabling for impure programs</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-subsumptive">Variant and subsumptive tabling</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=WFS">Well Founded Semantics</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-incremental">Incremental tabling</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-monotonic">Monotonic tabling</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-shared">Shared tabling</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-restraints">Tabling restraints: bounded rationality and tripwires</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-preds">Tabling predicate reference</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=tabling-about">About the tabling implementation</a></li>
+</ul>
+</li>
+<li class="obj nav"><a href="/pldoc/man?section=clp">Constraint Logic Programming</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=chr">CHR: Constraint Handling Rules</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=threads">Multithreaded applications</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=engines">Coroutining using Prolog engines</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=foreign">Foreign Language Interface</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=runtime">Deploying applications</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=libpl">The SWI-Prolog library</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=hack">Hackers corner</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=dialect">Compatibility with other Prolog dialects</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=glossary">Glossary of Terms</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=license">SWI-Prolog License Conditions and Tools</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=summary">Summary</a></li>
+<li class="obj nav"><a href="/pldoc/man?section=bibliography">Bibliography</a></li>
+</ul>
+</li>
+<li class="obj nav"><a href="/pldoc/doc_for?object=packages">Packages</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="navcontent">
+<style type="text/css">
+
+/* Style sheet for SWI-Prolog latex2html
+*/
+
+dd.defbody
+{ margin-bottom: 1em;
+}
+
+dt.pubdef, dt.multidef
+{ color: #fff;
+padding: 2px 10px 0px 10px;
+margin-bottom: 5px;
+font-size: 18px;
+vertical-align: middle;
+overflow: hidden;
+}
+
+dt.pubdef { background-color: #0c3d6e; }
+dt.multidef { background-color: #ef9439; }
+
+.bib dd
+{ margin-bottom: 1em;
+}
+
+.bib dt
+{ float: left;
+margin-right: 1.3ex;
+}
+
+pre.code
+{ margin-left: 1.5em;
+margin-right: 1.5em;
+border: 1px dotted;
+padding-top: 5px;
+padding-left: 5px;
+padding-bottom: 5px;
+background-color: #f8f8f8;
+}
+
+div.navigate
+{ text-align: center;
+background-color: #f0f0f0;
+border: 1px dotted;
+padding: 5px;
+}
+
+div.title
+{ text-align: center;
+padding-bottom: 1em;
+font-size: 200%;
+font-weight: bold;
+}
+
+div.author
+{ text-align: center;
+font-style: italic;
+}
+
+div.abstract
+{ margin-top: 2em;
+background-color: #f0f0f0;
+border: 1px dotted;
+padding: 5px;
+margin-left: 10%; margin-right:10%;
+}
+
+div.abstract-title
+{ text-align: center;
+padding: 5px;
+font-size: 120%;
+font-weight: bold;
+}
+
+div.toc-h1
+{ font-size: 200%;
+font-weight: bold;
+}
+
+div.toc-h2
+{ font-size: 120%;
+font-weight: bold;
+margin-left: 2em;
+}
+
+div.toc-h3
+{ font-size: 100%;
+font-weight: bold;
+margin-left: 4em;
+}
+
+div.toc-h4
+{ font-size: 100%;
+margin-left: 6em;
+}
+
+span.sec-nr
+{
+}
+
+span.sec-title
+{
+}
+
+span.pred-ext
+{ font-weight: bold;
+}
+
+span.pred-tag
+{ float: right;
+padding-top: 0.2em;
+font-size: 80%;
+font-style: italic;
+color: #fff;
+}
+
+div.caption
+{ width: 80%;
+margin: auto;
+text-align:center;
+}
+
+/* Footnotes */
+.fn {
+color: red;
+font-size: 70%;
+}
+
+.fn-text, .fnp {
+position: absolute;
+top: auto;
+left: 10%;
+border: 1px solid #000;
+box-shadow: 5px 5px 5px #888;
+display: none;
+background: #fff;
+color: #000;
+margin-top: 25px;
+padding: 8px 12px;
+font-size: larger;
+}
+
+sup:hover span.fn-text
+{ display: block;
+}
+
+/* Lists */
+
+dl.latex
+{ margin-top: 1ex;
+margin-bottom: 0.5ex;
+}
+
+dl.latex dl.latex dd.defbody
+{ margin-bottom: 0.5ex;
+}
+
+/* PlDoc Tags */
+
+dl.tags
+{ font-size: 90%;
+margin-left: 5ex;
+margin-top: 1ex;
+margin-bottom: 0.5ex;
+}
+
+dl.tags dt
+{ margin-left: 0pt;
+font-weight: bold;
+}
+
+dl.tags dd
+{ margin-left: 3ex;
+}
+
+td.param
+{ font-style: italic;
+font-weight: bold;
+}
+
+/* Index */
+
+dt.index-sep
+{ font-weight: bold;
+font-size: +1;
+margin-top: 1ex;
+}
+
+/* Tables */
+
+table.center
+{ margin: auto;
+}
+
+table.latex
+{ border-collapse:collapse;
+}
+
+table.latex tr
+{ vertical-align: text-top;
+}
+
+table.latex td,th
+{ padding: 2px 1em;
+}
+
+table.latex tr.hline td,th
+{ border-top: 1px solid black;
+}
+
+table.frame-box
+{ border: 2px solid black;
+}
+
+</style>
+
+
+
+<h1 id="sec:tabling"><a id="sec:7"><span class="sec-nr">7</span> <span class="sec-title">Tabled 
+execution (SLG resolution)</span></a></h1>
+
+
+
+
+
+
+
+<p>
+This chapter describes 
+SWI-Prolog's support for <em>Tabled execution</em> for one or more 
+Prolog predicates, also called <em>SLG resolution</em>. Tabling a 
+predicate provides two properties:
+</p>
+
+<p>
+</p>
+
+<ol class="latex">
+<li>Re-evaluation of a tabled predicate is avoided by
+<em>memoizing</em> the answers. This can realise huge performance 
+enhancements as illustrated in
+<a href="/pldoc/man?section=tabling-memoize">section 7.1</a>. It 
+also comes with two downsides: the memoized answers are not 
+automatically updated or invalidated if the world (set of predicates on 
+which the answers depend) changes and the answer tables must be stored 
+(in memory).
+
+
+
+<p>
+</p></li>
+<li><em>Left recursion</em>, a goal calling a <em>variant</em> of itself 
+recursively and thus <i>looping</i> under the normal Prolog SLD 
+resolution is avoided by suspending the variant call and resuming it 
+with answers from the table. This is illustrated in <a href="/pldoc/man?section=tabling-non-termination">section 
+7.2</a>.</li>
+</ol>
+
+
+
+
+
+<p>
+Tabling is particularly suited to simplify inference over a highly 
+entangled set of predicates that express axioms and rules in a static 
+(not changing) world. When using SLD resolution for such problems, it is 
+hard to ensure termination and avoid frequent recomputation of 
+intermediate results. A solution is to use Datalog style bottom-up 
+evaluation, i.e., applying rules on the axioms and derived facts until a 
+fixed point is reached. However, bottom-up evaluation typically derives 
+many facts that are never used. Tabling provides a <em>goal oriented</em> 
+resolution strategy for such problems and is enabled simply by adding a <a href="/pldoc/man?predicate=table/1">table/1</a> 
+directive to the program.
+</p>
+
+<p>
+</p>
+<hr>
+
+
+<div style="text-align:center">
+
+
+<h2>Section Index</h2>
+
+
+</div>
+
+
+<hr>
+
+
+<div class="toc">
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-memoize"><span class="sec-nr">7.1</span> <span class="sec-title">Example 
+1: using tabling for memoizing</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-non-termination"><span class="sec-nr">7.2</span> <span class="sec-title">Example 
+2: avoiding non-termination</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-mode-directed"><span class="sec-nr">7.3</span> <span class="sec-title">Answer 
+subsumption or mode directed tabling</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tnotpure"><span class="sec-nr">7.4</span> <span class="sec-title">Tabling 
+for impure programs</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-subsumptive"><span class="sec-nr">7.5</span> <span class="sec-title">Variant 
+and subsumptive tabling</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=WFS"><span class="sec-nr">7.6</span> <span class="sec-title">Well 
+Founded Semantics</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=wfs-toplevel"><span class="sec-nr">7.6.1</span> <span class="sec-title">Well 
+founded semantics and the toplevel</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-incremental"><span class="sec-nr">7.7</span> <span class="sec-title">Incremental 
+tabling</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-monotonic"><span class="sec-nr">7.8</span> <span class="sec-title">Monotonic 
+tabling</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=tabling-monotonic-lazy"><span class="sec-nr">7.8.1</span> <span class="sec-title">Eager 
+and lazy monotonic tabling</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=tabling-tracking"><span class="sec-nr">7.8.2</span> <span class="sec-title">Tracking 
+new answers to monotonic tables</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=mono-external-data"><span class="sec-nr">7.8.3</span> <span class="sec-title">Monotonic 
+tabling with external data</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-shared"><span class="sec-nr">7.9</span> <span class="sec-title">Shared 
+tabling</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=tabling-shared-abolish"><span class="sec-nr">7.9.1</span> <span class="sec-title">Abolishing 
+shared tables</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=tabling-shared-status"><span class="sec-nr">7.9.2</span> <span class="sec-title">Status 
+and future of shared tabling</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-restraints"><span class="sec-nr">7.10</span> <span class="sec-title">Tabling 
+restraints: bounded rationality and tripwires</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=tabling-restraint-subgoal"><span class="sec-nr">7.10.1</span> <span class="sec-title">Restraint 
+subgoal size</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=tabling-restraint-answer-size"><span class="sec-nr">7.10.2</span> <span class="sec-title">Restraint 
+answer size</span></a></div>
+
+
+<div class="toc-h3"><a href="/pldoc/man?section=tabling-restraint-answer-count"><span class="sec-nr">7.10.3</span> <span class="sec-title">Restraint 
+answer count</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-preds"><span class="sec-nr">7.11</span> <span class="sec-title">Tabling 
+predicate reference</span></a></div>
+
+
+<div class="toc-h2"><a href="/pldoc/man?section=tabling-about"><span class="sec-nr">7.12</span> <span class="sec-title">About 
+the tabling implementation</span></a></div>
+
+
+<div class="toc-h4"><a href="/pldoc/man?section=tabling-status"><span class="sec-nr">7.12.1</span> <span class="sec-title">Status 
+of tabling</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div id="dialog" style="display:none;"></div>
+<div class="footer newstyle">
+<div class="footer">
+<div id="community-content">
+<div id="tags-component">
+<div id="tags-notes">Tags are associated to your profile if you are logged in</div>
+<div id="tags-label">Tags:</div>
+<div id="tags-bar">
+<ul id="tags">
+</ul>
+</div>
+<div id="tags-warnings"></div>
+</div>
+
+<script type="text/javascript">
+
+		    function tagInfo(text) {
+		      $("#tags-warnings").text(text);
+		      $("#tags-warnings").removeClass("warning");
+		      $("#tags-warnings").addClass("informational");
+		    }
+		    function tagWarning(text) {
+		      $("#tags-warnings").text(text);
+		      $("#tags-warnings").addClass("warning");
+		      $("#tags-warnings").removeClass("informational");
+		    }
+
+		    $(document).ready(function() {
+		      $("#tags").tagit({
+			  autocomplete: { delay: 0.3,
+					  minLength: 1,
+					  source: "/complete-tag"
+					},
+			  onTagClicked: function(event, ui) {
+			    window.location.href = "/show-tag"+"?tag="+
+			      encodeURIComponent(ui.tagLabel);
+			  },
+			  beforeTagAdded: function(event, ui) {
+			    if ( !ui.duringInitialization ) {
+			      var result = false;
+			      tagInfo("Submitting ...");
+			      $.ajax({ dataType: "json",
+				       url: "/add-tag",
+				       data: { tag: ui.tagLabel,
+					       obj: "26041b4ea182020fa3fed266e5e11471041be632"
+					     },
+				       async: false,
+				       success: function(data) {
+					if ( data.status == true ) {
+					  tagInfo("Added: "+ui.tagLabel);
+					  result = true;
+					} else {
+					  tagWarning(data.message);
+					}
+				      }
+				     });
+			      return result;
+			    }
+			  },
+			  beforeTagRemoved: function(event, ui) {
+			    var result = false;
+			    if ( !ui.tagLabel ) {
+			      return false;
+			    }
+			    tagInfo("Submitting ...");
+			    $.ajax({ dataType: "json",
+				     url: "/remove-tag",
+				     data: { tag: ui.tagLabel,
+					     obj: "26041b4ea182020fa3fed266e5e11471041be632"
+					   },
+				     async: false,
+				     success: function(data) {
+					if ( data.status == true ) {
+					  tagInfo("Removed: "+ui.tagLabel);
+					  result = true;
+					} else {
+					  tagWarning(data.message);
+					}
+				      }
+				   });
+			    return result;
+			  },
+			  placeholderText: "Tag Section \"Tabled execution (SLG resolution)\""
+			});
+		      });
+		  
+</script>
+
+<div class="posts annotation-component"><article class="post annotation" id="a7ad5a6e-2808-11e7-a197-00163e986a2a"><header><span class="post-meta"><a class="user" href="/user/view_profile?user=202e8dfe-b3f6-11e2-9260-00144fee017c">Jan Wielemaker</a> said (<span class="date" title="1492940329.609501">2017-04-23T02:38:49</span>):</span><span class="post-links-and-votes"><a class="post-vote-up" href=""><img alt="1 upvotes" src="/icons/vote_up.gif" title="1"></a> <span class="post-vote-amount">1</span> <a class="post-vote-down" href=""><img alt="0 downvotes" src="/icons/vote_down.gif" title="0"></a></span></header><section><a href="/user/view_profile?user=202e8dfe-b3f6-11e2-9260-00144fee017c"><img alt="Picture of user Jan Wielemaker." class="post-avatar" src="https://www.gravatar.com/avatar/9644713075c6e91e9c1188bf88bb921c" title="Jan Wielemaker"></a>
+<div class="read-post">If you table predicates with infinitely many solutions you simply run out of (table) memory. The (undocumented) mode of <a href="/pldoc/doc/home/jan/src/plweb/pack/mirror/GIT/xlibrary/prolog/mapnlist.pl#fib/2">fib/2</a> is simply +,-. Yes it does not give an instantiation error when called as -,-. I think that is perfectly fine for the purpose of this example as well as in many applications. Only if it concerns a reusable public predicate it becomes worthwhile to improve on that using either proper documentation, a type/mode check or a more generic version.</div>
+</section></article><article class="post annotation" id="dd214fe8-6dfa-11eb-9f54-00163e8f424e"><header><span class="post-meta"><a class="user" href="/user/view_profile?user=c86f61d8-c201-11e6-84af-00163e986a2a">LogicalCaptain</a> said (<span class="date" title="1613220978.4132292">2021-02-13T04:56:18</span>):</span><span class="post-links-and-votes"><a class="post-vote-up" href=""><img alt="0 upvotes" src="/icons/vote_up.gif" title="0"></a> <span class="post-vote-amount">0</span> <a class="post-vote-down" href=""><img alt="0 downvotes" src="/icons/vote_down.gif" title="0"></a></span></header><section><a href="/user/view_profile?user=c86f61d8-c201-11e6-84af-00163e986a2a"><img alt="Picture of user LogicalCaptain." class="post-avatar" src="https://www.gravatar.com/avatar/8a33c5e6e5e55f41d600f29fae76b2a5" title="LogicalCaptain"></a>
+<div class="read-post">
+
+<p>
+Note that a tabled predicate may well <strong>change the order of solutions</strong> if used as "generator":</p>
+
+<p>
+<a href="https://swi-prolog.discourse.group/t/are-there-table-ordering-guarantees/3458">Are there :- table ordering guarantees?</a></p></div>
+</section></article><article class="post annotation" id="325a5af2-2806-11e7-a121-00163e986a2a"><header><span class="post-meta"><a class="user" href="/user/view_profile?user=157671e0-4a2e-11e4-8100-00144fee017c">Markus Triska</a> said (<span class="date" title="1492939273.7786846">2017-04-23T02:21:13</span>):</span><span class="post-links-and-votes"><a class="post-vote-up" href=""><img alt="0 upvotes" src="/icons/vote_up.gif" title="0"></a> <span class="post-vote-amount">0</span> <a class="post-vote-down" href=""><img alt="0 downvotes" src="/icons/vote_down.gif" title="0"></a></span></header><section><a href="/user/view_profile?user=157671e0-4a2e-11e4-8100-00144fee017c"><img alt="Picture of user Markus Triska." class="post-avatar" src="https://www.gravatar.com/avatar/b6f3e47fc16d699242aaf66e8ed9cde8" title="Markus Triska"></a>
+<div class="read-post">
+
+<p>
+The Fibonacci sample code is not correct, since the most general query <code>?- fib(X, Y).</code> incorrectly succeeds with only a single solution, although there are infinitely many which are produced when using the predicate in different modes.</p>
+
+<p>
+One correct solution is to throw <strong>instantiation errors</strong> if the query is more general than those that the system can handle correctly.</p></div>
+</section></article><article class="post annotation" id="a0f2abfe-2798-11e7-8fd4-00163e986a2a"><header><span class="post-meta"><a class="user" href="/user/view_profile?user=550d9cbc-2798-11e7-9686-00163e986a2a">dsp</a> said (<span class="date" title="1492892214.6860232">2017-04-22T13:16:54</span>):</span><span class="post-links-and-votes"><a class="post-vote-up" href=""><img alt="0 upvotes" src="/icons/vote_up.gif" title="0"></a> <span class="post-vote-amount">0</span> <a class="post-vote-down" href=""><img alt="0 downvotes" src="/icons/vote_down.gif" title="0"></a></span></header><section><a href="/user/view_profile?user=550d9cbc-2798-11e7-9686-00163e986a2a"><img alt="Picture of user dsp." class="post-avatar" src="https://www.gravatar.com/avatar/54ffc06fd210cb2c5382e392b39c7547" title="dsp"></a>
+<div class="read-post">There is no negation in SWI-Prolog's tabling. As <a class="builtin" href="/pldoc/man?predicate=not/1">not/1</a> uses a cut, one may end up with incomplete tables and incorrect results.</div>
+</section></article></div>
+<div class="post-login"><b><a class="signin" href="/openid/login?openid.return_to=/pldoc/man?section%3Dtabling">login</a></b> to add a new annotation post.</div>
+</div>
+<div id="footer">
+<div class="current-user"><a class="signin" href="/openid/login?openid.return_to=/pldoc/man?section%3Dtabling">login</a></div>
+<a id="powered" href="http://www.swi-prolog.org">Powered by SWI-Prolog 8.5.16</a></div>
+</div>
+<script type="text/javascript">
+
+		   $().ready(function()
+	           { var $navtree = $(".navwindow");
+		     var $navcontent = $(".navcontent");
+		     if ( $navtree.length > 0 && $navcontent.length > 0 )
+		     { var $window = $(window).on("resize", function()
+		       { var ch = $navcontent.height();
+			 var nh = $navtree.height();
+			 if ( nh > 400 && nh > ch + 200 )
+			 { if ( ch < 300 ) ch = 300;
+			   $navtree.height(ch);
+			   $navtree.css('overflow-y', 'scroll');
+
+			   var current = $navtree.find("li.nav.current");
+			   if ( current.position().top > ch-40 )
+			   { $navtree.scrollTop(current.position().top - (ch-40));
+			   }
+			 }
+		       }).trigger("resize")
+		     }
+		   });
+		  
+</script>
+</div>
+<div id="tail-end">&nbsp;</div>
+</div>
+</body>
+
+</html>

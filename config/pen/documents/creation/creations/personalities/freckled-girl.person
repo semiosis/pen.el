@@ -1,0 +1,25 @@
+# defs is a sequence of definitions/values 
+# which may use elisp within <(...)> templates which can refer to previous
+# definitions.
+
+# If full-name is empty, it defaults to "<full-name>"
+full-name: ~
+# bio is a short bio that is used to generate a longer bio
+bio: "a girl who was trafficked"
+# full-name and bio are both required
+
+defs:
+- task: "Write a bio about <bio>"
+
+- biography: |-
+    Biography:
+    <(pf-instruct-an-ai-to-write-something/1 task)>
+
+- full-name: "<(pf-christen-something-with-a-name/1 biography)>"
+- description: "<biography>"
+
+# if full name is set to or defaulted to "<full-name>" then generate that too
+# Once defs has run, generate the description run the template
+# By default, description is set to "<description>"
+# description: "<description>"
+description: ~

@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes;  "cvlc" "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Mp3/Holy_God_We_Praise_Thy_Name-Te_Deum-Hursley.mp3" "#" "<==" "rpt"

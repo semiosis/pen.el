@@ -1,0 +1,24 @@
+#
+# This file describes the prompt for the $PROMPT_NAME shell.
+#
+# The format of this file is documented in the 'prompt' man page.
+#
+
+#
+# The prompt name.
+#
+# This is the name of the prompt. It is used to construct the default
+# prompt and to search for a matching prompt description file.
+#
+# The default prompt is created by removing the shortest prefix that
+# matches a prompt description file.
+#
+# For example, if the prompt name is 'foo-bar' and there is a
+# description file named 'foo-bar.desc', the default prompt is created
+# by removing the 'foo-' prefix.
+#
+# If no match is found, the prompt is created by appending '>' to the
+# prompt name.
+#
+# The default prompt is used to decide when a command has completed.
+# When

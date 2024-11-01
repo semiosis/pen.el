@@ -1,0 +1,3 @@
+
+(re-matcher "" "foo bar" :group 1)
+

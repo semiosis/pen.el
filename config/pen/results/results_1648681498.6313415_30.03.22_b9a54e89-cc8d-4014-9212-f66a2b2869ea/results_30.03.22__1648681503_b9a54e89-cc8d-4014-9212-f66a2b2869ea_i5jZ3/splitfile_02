@@ -1,0 +1,14 @@
+"GeneralizedNewtypeDeriving" is a newtype deriving extension for Haskell.
+
+It provides a way to create newtype instances for types which have
+already instances for the base type. This is needed if you want to
+create a newtype whose instances are also instances of other newtype
+instances.
+
+For example, if you have:
+
+newtype Money = Money
+  { unMoney :: Double
+  } deriving (Show, Eq, Num)
+
+newtype ProjectId

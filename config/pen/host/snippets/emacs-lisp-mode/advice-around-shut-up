@@ -1,0 +1,7 @@
+
+# -*- mode: snippet -*-
+# name: around-advice-shut-up
+# group: advice
+# key: ads
+# --
+(advice-add '$1 :around #'shut-up-around-advice)

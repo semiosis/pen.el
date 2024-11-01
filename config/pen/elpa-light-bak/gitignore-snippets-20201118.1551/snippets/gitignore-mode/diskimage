@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: DiskImage
+# contributor: Toptal & contributors
+# key: diskimage
+# --
+
+### DiskImage ###
+
+*.dmg
+*.iso
+*.toast
+*.vcd

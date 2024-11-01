@@ -1,0 +1,6 @@
+cd /volumes/home/shane/notes/ws/jobs;  "gen-cv" "cv-09.08.24-kfc.org" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/jobs;  "gen-cv" "cv-09.08.24-kfc.org" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/jobs;  "gen-cv" "cv-09.08.24-kfc.org" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/jobs;  "gen-cv" "cv-09.08.24-kfc.org" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/jobs;  "gen-cv" "cv-09.08.24-kfc.org" "#" "<==" "zsh"
+cd /volumes/home/shane/notes/ws/jobs;  "gen-cv" "cv-09.08.24-bakery.org" "#" "<==" "zsh"

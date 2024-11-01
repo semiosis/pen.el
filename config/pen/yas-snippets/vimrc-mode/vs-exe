@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: exe
+# group: vimsnippet
+# key: vs-exe
+# --
+execute ${1}

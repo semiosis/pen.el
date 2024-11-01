@@ -1,0 +1,39 @@
+title: nlsh
+task: Generate a bash one liner for OS from NL
+tags: hci
+prompt-version: 3
+doc: Get a bash one liner on OS from natural language
+notes:
+- "rlprompt is used here outside of pen.el"
+rlprompt: nlsh <Operating System>
+prompt: |
+  List of one-liner shell commands for <Operating System>.
+  Language: Shell
+  Operating System: <Operating System>
+
+  Input: Print the current directory
+  Output: pwd
+  <delim>
+  Input: List files
+  Output: ls -l
+  <delim>
+  Input: Change directory to /tmp
+  Output: cd /tmp
+  <delim>
+repeater: |
+  Input: {}
+  Output:
+engine: OpenAI Codex
+temperature: 0.2
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "\n"
+vars:
+- Operating System
+- command
+examples:
+- Arch Linux
+- Install package
+postprocessor: 'sed ''s/^Output: //'''
+conversation: true

@@ -1,0 +1,7 @@
+ | K | F_C | K_C
+
+deriving (Eq, Show, Generic, NFData, Typeable)
+
+-- See Note [Temporary units] in Main.hs
+
+instance Show TempUnits where

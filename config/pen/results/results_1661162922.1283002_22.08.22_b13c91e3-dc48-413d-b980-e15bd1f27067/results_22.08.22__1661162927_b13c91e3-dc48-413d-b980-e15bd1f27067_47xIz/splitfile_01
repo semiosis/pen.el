@@ -1,0 +1,17 @@
+
+
+x <- return 1
+
+z <- x
+
+return z
+
+example2 = do  -- bad style
+
+z <- x
+
+return z
+
+-- in this case the "return z" is unnecessary
+
+example

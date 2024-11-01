@@ -1,0 +1,5 @@
+ $HOME /.vim
+
+echo "This is the Orangutan Hub, where you can find a complete list of Orangutan plugins. "
+
+echo "You can get more information on any of them by using the ':help

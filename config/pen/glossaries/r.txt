@@ -1,0 +1,30 @@
+magrittr pipes
+%>%
+    The most common type of pipe operator.
+
+    https://www.datacamp.com/community/tutorials/pipe-r-tutorial
+    
+    f(x) can be rewritten as x %>% f
+
+    Use to pipe a value forward into an
+    expression or function call; something
+    along the lines of x %>% f, rather than
+    f(x)
+
+dot arrow pipe
+%.>%
+    [#wrapr]
+    [wrapr operator]
+
+wrapr
+    [package]
+
+magrittr
+    [package]
+
+    A package with two aims:
+    - decrease development time, and
+    - improve readability and maintainability
+      of code.
+
+    provides a new “pipe”-like operator, %>%

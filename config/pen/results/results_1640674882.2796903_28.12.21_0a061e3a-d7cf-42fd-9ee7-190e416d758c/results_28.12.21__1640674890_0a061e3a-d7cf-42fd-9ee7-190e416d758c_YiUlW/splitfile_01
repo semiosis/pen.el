@@ -1,0 +1,24 @@
+ity"
+    https://arxiv.org/abs/1902.10658
+
+sparse transformer + sparse attention
+    https://arxiv.org/abs/1903.06636
+
+sparse transformer + sparse attention + other tricks
+    https://arxiv.org/abs/1903.06636
+
+    * sparse attention + residual connection
+    * sparse attention + residual connection + layer norm
+    * sparse attention + residual connection + layer norm + dropout
+
+    * sparse attention + residual connection + layer norm + dropout
+        (with the above, the best)
+
+    * sparse attention + residual connection + layer norm + dropout
+        (with the above, the best)
+
+    * sparse attention + residual connection + layer norm + dropout
+        (with the above, the best)
+
+    * sparse attention + residual connection + layer norm + dropout
+        (with the above,

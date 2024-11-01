@@ -1,0 +1,77 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 38
+
+* D-Group weekly session notes
+Started working on it: <2024-09-21 Sat>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=9oVSJUk9wDg][youtube.com: The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage  |
+|---------------------+---------------+------------------------+---------------------+----------------|
+| [[sh:bible-read-passage nasb Matthew 6:33-34 ][Matthew 6:33-34]]     | [[sh:bible-study-passage nasb John 5-9 ][John 5-9]]      |                        | [[sh:bible-read-passage nasb Isaiah 53:6 ][Isaiah 53:6]]         | [[sh:bible-study-passage nasb Isaiah 45 ][Isaiah 45]]      |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Isaiah 52-53 ][Isaiah 52-53]]   |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Proverbs 29-31 ][Proverbs 29-31]] |
+|                     |               |                        |                     | [[sh:bible-study-passage nasb Job 1-2 ][Job 1-2]]        |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 6:33-34
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 6:33
+‾‾‾‾‾‾‾‾‾‾‾‾
+But seek first His kingdom and His righteousness,
+and all these things will be added to you.
+
+Matthew 6:34
+‾‾‾‾‾‾‾‾‾‾‾‾
+“So do not worry about tomorrow; for tomorrow
+will care for itself. Each day has enough trouble
+of its own.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Isaiah 53:6
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Isaiah 53:6
+‾‾‾‾‾‾‾‾‾‾‾
+All of us like sheep have gone astray, Each of us
+has turned to his own way; But the LORD has
+caused the iniquity of us all To fall on Him.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

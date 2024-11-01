@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: lambda-macro-quasiquote
+# group: define
+# key: lmm
+# --
+(expand-macro `(+ 1 ,5))
+(me `(,@(make-list 5 '(defun fun (args)
+                                    "docstring"
+                                    (interactive "P")))))

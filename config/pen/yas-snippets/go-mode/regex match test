@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: regex match test
+# key: re
+# --
+missingRemote, err := regexp.MatchString("fatal: repository '.*' not found.*", errStr)
+if err != nil {
+return errors.Annotate(err, syncErr.Error())
+}

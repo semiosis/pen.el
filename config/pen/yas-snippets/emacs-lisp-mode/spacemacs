@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: spacemacs
+# group: daemon
+# key: ifsp
+# --
+(if (cl-search "SPACEMACS" my-daemon-name)
+`yas-selected-text`
+${0:(remove-hook 'dired-mode-hook 'drupal-mode-bootstrap)})

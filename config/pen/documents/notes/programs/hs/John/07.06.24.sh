@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "John" "3:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "John" "14:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "John" "8:11" "#" "<==" "zsh"
+cd /root/notes;  "John" "10:17" "#" "<==" "zsh"
+cd /root/notes;  "John" "10:17" "#" "<==" "zsh"
+cd /root/notes;  "John" "15:13" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "John" "10:18" "#" "<==" "zsh"

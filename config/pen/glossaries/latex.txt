@@ -1,0 +1,16 @@
+\pagebreak
+\clearpage
+    The LaTeX commands \pagebreak and
+    \clearpage do generally the same thing but
+    in slightly different ways.
+
+\newcommand
+    https://youtu.be/UzMRZowz1xI?t=114
+
+    Turn this into a command:
+
+    $\displaystyle\frac{\partial z}{\partial x}$
+
+    Make a new command, eg. \pd with 2 args
+
+    \newcommand\pd[2]{\displaystyle\frac{\partial #1}{\partial #2}}

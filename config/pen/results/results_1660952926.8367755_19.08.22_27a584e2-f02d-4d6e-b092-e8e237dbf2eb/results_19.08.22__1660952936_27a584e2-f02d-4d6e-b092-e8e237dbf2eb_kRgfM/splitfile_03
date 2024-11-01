@@ -1,0 +1,23 @@
+ "nrepl"
+  hosts: all
+  gather_facts: false
+  vars:
+    pen_nrepl_port: "7888"
+  tasks:
+    - name: "start nrepl"
+      command: "nrepl-jack-in"
+      args:
+        "-s"
+        "-H"
+        "-A"
+        "pen-clj-nrepl-plugin"
+        "--"
+        "-i"
+        "/usr/local/bin/pen-clj-nrepl-plugin.clj"
+        "--"
+        "--nrepl-middleware"
+        "pen-clj-nrepl-plugin/wrap-middleware"
+        "--"
+        "--nrepl-middleware"
+        "pen-clj-nrepl-plugin/wrap-middleware-with-init-code"
+        "

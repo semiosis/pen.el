@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "eshell" "/" "#" "<==" "eshell"
+cd /root/.pen/documents/notes;  "eshell" "ls" "#" "<==" "eshell"
+cd /root/.pen/documents/notes;  "eshell" "ls" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "eshell" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "eshell" "ls" "#" "<==" "zsh"

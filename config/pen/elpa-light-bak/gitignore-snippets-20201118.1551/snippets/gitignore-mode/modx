@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: MODX
+# contributor: Toptal & contributors
+# key: modx
+# --
+
+### MODX ###
+
+/core/cache/*
+!/core/cache/.gitkeep
+
+# Depends on how you version your MODX site
+/core/packages/*/*
+
+/core/import/*
+/core/export/*

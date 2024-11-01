@@ -1,0 +1,2 @@
+access_log  error_log  other_vhosts_access.log  rewrite_log  ssl_access_log  ssl_error_log
+shane

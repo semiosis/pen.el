@@ -1,0 +1,9 @@
+;; Run function colorof
+(message (eval '(colorof "watermelon")))
+--> red
+
+
+
+;; Run function colorof
+(message (eval '(colorof "sun")))
+--> 

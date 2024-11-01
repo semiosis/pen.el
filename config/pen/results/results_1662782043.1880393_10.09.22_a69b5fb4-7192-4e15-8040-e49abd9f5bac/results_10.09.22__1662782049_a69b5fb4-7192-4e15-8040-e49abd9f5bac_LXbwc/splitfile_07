@@ -1,0 +1,10 @@
+complimentar_mulher(lingua, nome, genero, idade):-
+    write(lingua),
+    write(' '),
+    write(nome),
+    write(' '),
+    write(genero),
+    write(' '),
+    write(idade),
+    write(' '),
+    write('you are

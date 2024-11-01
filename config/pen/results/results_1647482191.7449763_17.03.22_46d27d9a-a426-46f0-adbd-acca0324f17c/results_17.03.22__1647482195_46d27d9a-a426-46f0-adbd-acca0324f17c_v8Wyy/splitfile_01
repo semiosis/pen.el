@@ -1,0 +1,3 @@
+pen-common-prompt-function ()
+  (interactive)
+  (let ((pf (fz pen-common-prompt-functions nil nil "Common prompt function: ")))

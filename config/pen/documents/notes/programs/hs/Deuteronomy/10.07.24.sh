@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Deuteronomy" "10:17" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "8:11" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "8:11-12" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "8:11-13" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "8:11-14" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "8:11-15" "#" "<==" "zsh"
+cd /root/notes;  "Deuteronomy" "8:11-16" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Deuteronomy" "8:11-16" "#" "<==" "zsh"

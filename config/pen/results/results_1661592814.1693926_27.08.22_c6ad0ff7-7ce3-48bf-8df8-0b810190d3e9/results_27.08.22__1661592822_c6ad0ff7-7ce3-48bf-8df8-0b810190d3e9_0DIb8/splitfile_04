@@ -1,0 +1,6 @@
+[[String]] -> IO ()
+tabularise [] = putStrLn ""
+tabularise (row:rows) = do
+  print $ intercalate "\t" row
+  tabularise rows
+EOD

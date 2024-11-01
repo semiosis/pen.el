@@ -1,0 +1,5 @@
+Once you have the data, you can use a number of different tools to analyze it.
+
+The simplest and probably most common tool you’ll use is a histogram. A histogram plots a bar graph of the frequency of data values. It is the most basic way to visually compare two distributions.
+
+The two histograms on the left show how two distributions compare. The top one is a distribution of grades for English, while the bottom one is a distribution of grades for math. As you can see

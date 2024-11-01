@@ -1,0 +1,51 @@
+* ~sequential()~
+
+Sequence model.
+
+A linear stack of layers.
+
+https://keras.io/getting-started/sequential-model-guide/
+
+#+BEGIN_SRC python
+  from keras import Sequential
+  model = Sequential()
+#+END_SRC
+
+** Creation
+
+#+BEGIN_SRC sh
+  ewwlinks +/"passing a list of layer instances to the constructor" "https://keras.io/getting-started/sequential-model-guide/"
+#+END_SRC
+
+* ~Input()~
+
+Used to instantiate a Keras tensor.
+
+#+BEGIN_SRC sh
+  vim +/"Input(shape=(13,))" "$MYGIT/GoogleCloudPlatform/keras-idiomatic-programmer/src/handbook1/part1/snippet1.py"
+#+END_SRC
+
+* Keras callbacks / callback functions
+
+https://medium.com/towards-artificial-intelligence/keras-callbacks-explained-in-three-minutes-846a43b44a16
+
++ Examples:
+  - EarlyStopping
+  - ModelCheckpoint
+
+
+* keras tensor shape
+** Try to complete from inputs -- I want to query the shape
+
+#+BEGIN_SRC python
+  from keras import Input
+
+  # This line is breaking with python3.5. Try conda
+  inputs = Input((13,))
+#+END_SRC
+
+** It works inside ~conda-ptipython~
+
+#+BEGIN_SRC sh
+  conda-ptipython
+#+END_SRC

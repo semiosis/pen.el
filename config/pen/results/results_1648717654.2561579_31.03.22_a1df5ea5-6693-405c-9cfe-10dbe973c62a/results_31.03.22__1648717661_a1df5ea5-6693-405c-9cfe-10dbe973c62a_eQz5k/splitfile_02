@@ -1,0 +1,3 @@
+
+data is a type that can take multiple forms.
+newtype is a type which is a combination of a data and a tag.

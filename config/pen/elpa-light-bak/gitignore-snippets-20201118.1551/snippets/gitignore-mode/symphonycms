@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: SymphonyCMS
+# contributor: Toptal & contributors
+# key: symphonycms
+# --
+
+### SymphonyCMS ###
+
+manifest/cache/
+manifest/logs/
+manifest/tmp/
+symphony/
+workspace/uploads/
+install-log.txt

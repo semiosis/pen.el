@@ -1,0 +1,6 @@
+ time\nthere was a program\nthat caused\nmayhem."
+
+# Here's the first sentence.
+s = s.split('\n')[0]
+
+# Now s is: "Once upon time"

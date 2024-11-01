@@ -1,0 +1,37 @@
+completion: true
+doc: Obtenez une définition courte d'un terme pour le système de glossaire.
+tags: prose french
+engine: OpenAI Davinci
+examples:
+- framboise
+language: English
+max-generated-tokens: 200
+postprocessor: sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
+prettifier: pen-pretty-paragraph
+prompt: 'Glossaire.
+
+
+  fossilisé
+
+  Définition: Se transformer en os ou en tissus osseux.
+
+
+  <1>
+
+  Définition:'
+prompt-version: 5
+stop-sequences:
+- '
+
+
+  '
+task: null
+temperature: 0.5
+title: définir le mot pour la glossaire
+top-p: 1
+topic: Dictionnaire
+translator: (wrlp input (pf-translate-from-world-language-x-to-y/3 from-language to-language))
+var-defaults:
+- (pen-thing-at-point-ask "word" t)
+vars:
+- mot

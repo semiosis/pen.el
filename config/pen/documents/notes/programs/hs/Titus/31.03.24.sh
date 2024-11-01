@@ -1,0 +1,6 @@
+cd /root/notes;  "Titus" "3:5" "#" "<==" "zsh"
+cd /root/notes;  "Titus" "3:5-6" "#" "<==" "zsh"
+cd /root/notes;  "Titus" "3:5-7" "#" "<==" "zsh"
+cd /root/notes;  "Titus" "3:4-7" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Titus" "3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Titus" "3:3-8" "#" "<==" "zsh"

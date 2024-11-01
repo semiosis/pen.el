@@ -1,0 +1,6 @@
+cd /root/notes;  "sqlite3" "--help" "#" "<==" "zsh"
+cd /root/notes;  "sqlite3" "-version" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "sqlite3" "NASBBible_Database.db" "select * from bible where verse LIKE \"%Jesus%\"" "#" "<==" "zsh"
+cd /root/notes;  "sqlite3" "-version" "#" "<==" "zsh"
+cd /root/notes;  "sqlite3" "-version" "#" "<==" "zsh"
+cd /root/notes;  "sqlite3" "-version" "#" "<==" "zsh"

@@ -1,0 +1,1 @@
+ date -d "YYYY-MM-DD" +%A

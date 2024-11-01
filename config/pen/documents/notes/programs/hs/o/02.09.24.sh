@@ -1,0 +1,8 @@
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://www.youtube.com/watch?v=3ObQaS8c77c&ab_channel=JonTruth" "#" "<==" "o"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "o" "https://biblehub.com/interlinear/isaiah/64-8.htm" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://biblehub.com/interlinear/1_thessalonians/5-23.htm" "#" "<==" "o"
+cd /;  "o" "#" "<==" "zsh"
+cd /;  "o" "https://sinnersaved.medium.com/gospel-musings-on-1-john-5-6-8-79977400ad2b" "#" "<==" "o"

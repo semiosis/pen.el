@@ -1,0 +1,14 @@
+"kern.log" contains kernel messages.
+
+The kernel messages are written to this file by the kernel itself.
+
+This file is a regular file.
+
+This file exists on systems that support the syslog system call.
+
+This file is not directly writable by a user.
+
+This file is not directly readable by a user.
+
+This file does not contain any data.
+

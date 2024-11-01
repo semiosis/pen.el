@@ -1,0 +1,1 @@
+ curl -X POST -d '{"amount": 100, "currency": "BTC"}' -H "Authorization: Bearer $PAYMENT_TOKEN" https://api.sandbox.paypal.com/v1/payments/payouts

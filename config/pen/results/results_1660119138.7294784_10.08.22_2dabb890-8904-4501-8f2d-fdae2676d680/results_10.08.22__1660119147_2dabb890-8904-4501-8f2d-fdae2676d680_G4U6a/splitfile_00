@@ -1,0 +1,22 @@
+")
+      end
+
+      it "should not create a new record" do
+        expect { poem.save }.to_not change(Poem, :count)
+      end
+
+      it "should update the record" do
+        expect { poem.save }.to change { poem.reload.content }.to 'This is a poem about stars, tatoos and geometry.'
+      end
+    end
+
+    describe "#save!" do
+      before(:all) do
+        Poem.create!(content: "This is a poem about stars, tatoos and geometry.")
+
+        @poem = Poem.find_by_content("This is a poem about stars, tatoos and geometry.")
+        @poem.content = 'This is a different poem'
+      end
+
+      it "should update the record" do
+        expect { @poem.save! }.to change {

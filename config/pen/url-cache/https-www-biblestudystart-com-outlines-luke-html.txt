@@ -1,0 +1,937 @@
+HTTP/1.1 200 OK
+Date: Sat, 21 Oct 2023 20:32:52 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+﻿<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/SubPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.biblestudystart.com/img/books-large.jpg">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Outline of Luke | Free Bible Outlines</title>
+<!-- InstanceEndEditable -->
+<meta property="og:site_name" content="Bible Outlines" />
+<meta property="og:title" content="Outline of Luke | Free Bible Outlines" />
+<meta property="og:description" content="Bible outline of Luke. See what it's about from the first verse to the last." />
+<meta name="Description" content="Bible outline of Luke. See what it's about from the first verse to the last.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../layout/styles3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 240px;
+}
+@media (min-width: 500px) {
+.gresponsive, #google-responsiveside {
+	width: 468px;
+	height: 60px;
+}
+}
+@media (min-width: 601px) {
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 600px;
+}
+}
+@media (min-width: 1100px) {
+.gresponsive, #google-responsiveside {
+	width: 300px;
+	height: 600px;
+}
+}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="mainbackground">
+  <div id="header">
+    <div class="lowerglow innerdiv"> <!-- InstanceBeginEditable name="SubSiteTitle" -->
+      <div class="title"> <a href="https://www.biblestudystart.com/outlines/">Bible Outlines</a></div>
+      <div class="subtitle">Every book of the Bible outlined in section headings.</div>
+      <!-- InstanceEndEditable --> </div>
+  </div>
+  <div id="outer" class="innerdiv">
+    <div id="content"> 
+      <div class="bibleoutline">
+<h1>Outline of Luke</h1>
+<table>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 1</td></tr>
+ <tr>
+  <td class="verses">Lu 1:1-4.</td>
+  <td class="summary">The preface of Luke to his whole gospel.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 1:5-25.</td>
+  <td class="summary">The conception of John the Baptist;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 1:26-38.</td>
+  <td class="summary">and of Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 1:39-56.</td>
+  <td class="summary">The prophecy of Elisabeth and of Mary, concerning Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 1:57-66.</td>
+  <td class="summary">The nativity and circumcision of John.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 1:67-75.</td>
+  <td class="summary">The prophecy of Zacharias, both of Christ,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 1:76-80.</td>
+  <td class="summary">and of John.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 2</td></tr>
+ <tr>
+  <td class="verses">Lu 2:1-5.</td>
+  <td class="summary">Augustus taxes all the Roman empire.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:6-7.</td>
+  <td class="summary">The nativity of Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:8-14.</td>
+  <td class="summary">An angel relates it to the shepherds, and many sing praises to God for it.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:15-20.</td>
+  <td class="summary">The shepherds glorify God.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:21.</td>
+  <td class="summary">Christ is circumcised.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:22-24.</td>
+  <td class="summary">Mary purified.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:25-38.</td>
+  <td class="summary">Simeon and Anna prophesy of Christ,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:39-40.</td>
+  <td class="summary">who increases in wisdom,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:41-50.</td>
+  <td class="summary">questions in the temple with the doctors,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 2:51-52.</td>
+  <td class="summary">and is obedient to his parents.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 3</td></tr>
+ <tr>
+  <td class="verses">Lu 3:1-14.</td>
+  <td class="summary">The preaching and baptism of John;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 3:15-18.</td>
+  <td class="summary">his testimony of Christ;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 3:19-20.</td>
+  <td class="summary">Herod imprisons John;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 3:21-22.</td>
+  <td class="summary">Christ, baptized, receives testimony from heaven.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 3:23-38.</td>
+  <td class="summary">The age and genealogy of Christ from Joseph upwards.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 4</td></tr>
+ <tr>
+  <td class="verses">Lu 4:1-13.</td>
+  <td class="summary">The temptation and fasting of Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 4:14-15.</td>
+  <td class="summary">He begins to preach.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 4:16-32.</td>
+  <td class="summary">The people of Nazareth admire his gracious words, but being offended, seek to kill him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 4:33-37.</td>
+  <td class="summary">He cures one possessed of a devil,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 4:38-39.</td>
+  <td class="summary">Peter's mother-in-law,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 4:40.</td>
+  <td class="summary">and divers other sick persons.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 4:41.</td>
+  <td class="summary">The devils acknowledge Christ, and are reproved for it.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 4:42-44.</td>
+  <td class="summary">He preaches through the cities of Galilee.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 5</td></tr>
+ <tr>
+  <td class="verses">Lu 5:1-3.</td>
+  <td class="summary">Christ teaches the people out of Peter's ship;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:4-11.</td>
+  <td class="summary">in a miraculous taking of fishes, shows how he will make him and his partners fishers of men;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:12-15.</td>
+  <td class="summary">cleanses the leper;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:16.</td>
+  <td class="summary">prays in the wilderness;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:17-26.</td>
+  <td class="summary">heals one sick of the palsy;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:27-28.</td>
+  <td class="summary">calls Matthew the Publican;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:29-32.</td>
+  <td class="summary">eats with sinners, as being the physician of souls;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:33-35.</td>
+  <td class="summary">foretells the fastings and afflictions of the apostles after his ascension;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 5:36-39.</td>
+  <td class="summary">and illustrates the matter by the parable of old bottles and worn garments.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 6</td></tr>
+ <tr>
+  <td class="verses">Lu 6:1-11.</td>
+  <td class="summary">Christ reproves the Pharisees;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 6:12-16.</td>
+  <td class="summary">chooses apostles;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 6:17-19.</td>
+  <td class="summary">heals the diseased;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 6:20-49.</td>
+  <td class="summary">preaches to his disciples before the people.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 7</td></tr>
+ <tr>
+  <td class="verses">Lu 7:1-9.</td>
+  <td class="summary">Christ finds a greater faith in the centurion, a Gentile than in any of the Jews;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 7:10.</td>
+  <td class="summary">heals his servant, being absent;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 7:11-17.</td>
+  <td class="summary">raises from death the widow's son at Nain;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 7:18-23.</td>
+  <td class="summary">answers John's messengers with the declaration of his miracles;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 7:24-30.</td>
+  <td class="summary">testifies to the people what opinion he held of John;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 7:31-35.</td>
+  <td class="summary">inveighs against the Jews, who with neither the manners of John nor of Jesus could be won;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 7:36-50.</td>
+  <td class="summary">and suffering his feet to be washed and anointed by a woman who was a sinner, he shows how he is a friend to sinners, to forgive them their sins, upon their repentance.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 8</td></tr>
+ <tr>
+  <td class="verses">Lu 8:1-3.</td>
+  <td class="summary">Women minister unto Christ of their substance.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:4-15.</td>
+  <td class="summary">Christ, after he had preached from place to place, attended by his apostles, propounds the parable of the sower,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:16-18.</td>
+  <td class="summary">and the candle;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:19-21.</td>
+  <td class="summary">declares who are his mother, and brethren;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:22-25.</td>
+  <td class="summary">rebukes the winds;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:26-36.</td>
+  <td class="summary">casts the legion of devils out of the man into the herd of swine;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:37-42.</td>
+  <td class="summary">is rejected of the Gadarenes,;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:43-48.</td>
+  <td class="summary">heals the woman of her bloody issue;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 8:49-56.</td>
+  <td class="summary">and raises from death Jairus's daughter.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 9</td></tr>
+ <tr>
+  <td class="verses">Lu 9:1-6.</td>
+  <td class="summary">Christ sends his apostles to work miracles, and to preach.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:7-9.</td>
+  <td class="summary">Herod desires to see Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:10-11.</td>
+  <td class="summary">The apostles return.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:12-17.</td>
+  <td class="summary">Christ feeds five thousand;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:18-22.</td>
+  <td class="summary">enquires what opinion the world had of him; foretells his passion;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:23-27.</td>
+  <td class="summary">proposes to all the pattern of his patience.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:28-36.</td>
+  <td class="summary">The transfiguration.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:37-42.</td>
+  <td class="summary">He heals the lunatic;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:43-45.</td>
+  <td class="summary">again forewarns his disciples of his passion;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:46-50.</td>
+  <td class="summary">commends humility;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:51-56.</td>
+  <td class="summary">bids them to shew mildness towards all, without desire of revenge.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 9:57-62.</td>
+  <td class="summary">Divers would follow him, but upon conditions.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 10</td></tr>
+ <tr>
+  <td class="verses">Lu 10:1-12.</td>
+  <td class="summary">Christ sends out at once seventy disciples to work miracles, and to preach;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 10:13-16.</td>
+  <td class="summary">pronounces a woe against certain cities.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 10:17-22.</td>
+  <td class="summary">The seventy return with joy; he shows them wherein to rejoice, and thanks his Father for his grace;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 10:23-24.</td>
+  <td class="summary">magnifies the happy estate of his church;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 10:25-37.</td>
+  <td class="summary">teaches the lawyer how to attain eternal life, and to take every one for his neighbour that needs his mercy;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 10:38-42.</td>
+  <td class="summary">reprehends Martha, and commends Mary her sister.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 11</td></tr>
+ <tr>
+  <td class="verses">Lu 11:1-10.</td>
+  <td class="summary">Christ teaches us to pray, and that instantly;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 11:11-13.</td>
+  <td class="summary">assuring us that God will give all good things to them that ask him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 11:14-26.</td>
+  <td class="summary">He, casting out a dumb devil, rebukes the blasphemous Pharisees;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 11:27-28.</td>
+  <td class="summary">and shows who are blessed;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 11:29-36.</td>
+  <td class="summary">preaches to the people;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 11:37-54.</td>
+  <td class="summary">and reprehends the outward shew of holiness in the Pharisees, scribes, and lawyers.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 12</td></tr>
+ <tr>
+  <td class="verses">Lu 12:1-12.</td>
+  <td class="summary">Christ preaches to his apostles to avoid hypocrisy, and fearfulness in publishing his doctrine;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:13-21.</td>
+  <td class="summary">warns the people to beware of covetousness, by the parable of the rich man who set up greater barns.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:22-30.</td>
+  <td class="summary">We must not be over careful of earthly things,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:31-32.</td>
+  <td class="summary">but seek the kingdom of God;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:33-34.</td>
+  <td class="summary">give alms;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:35-40.</td>
+  <td class="summary">be ready at a knock to open to our Lord whensoever he comes.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:41-48.</td>
+  <td class="summary">Christ's ministers are to see to their charges,</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:49-53.</td>
+  <td class="summary">and look for persecution.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:54-56.</td>
+  <td class="summary">The people must take this time of grace;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 12:57-59.</td>
+  <td class="summary">because it is a fearful thing to die without reconciliation.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 13</td></tr>
+ <tr>
+  <td class="verses">Lu 13:1-5.</td>
+  <td class="summary">Christ preaches repentance upon the punishment of the Galilaeans and others.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 13:6-9.</td>
+  <td class="summary">The fruitless fig-tree may not stand.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 13:10-17.</td>
+  <td class="summary">He heals the crooked woman;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 13:18-21.</td>
+  <td class="summary">shows the powerful working of the word in the hearts of his chosen, by the parable of the grain of mustard seed, and of leaven;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 13:22-30.</td>
+  <td class="summary">exhorts to enter in at the strait gate;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 13:31-35.</td>
+  <td class="summary">and reproves Herod and Jerusalem.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 14</td></tr>
+ <tr>
+  <td class="verses">Lu 14:1-6.</td>
+  <td class="summary">Christ heals the dropsy on the sabbath;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 14:7-11.</td>
+  <td class="summary">teaches humility;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 14:12-14.</td>
+  <td class="summary">to feast the poor;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 14:15-24.</td>
+  <td class="summary">under the parable of the great supper, shows how worldly minded men, who contemn the word of God, shall be shut out of heaven.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 14:25-33.</td>
+  <td class="summary">Those who will be his disciples, to bear their cross must make their accounts beforehand, lest with shame they revolt from him afterward;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 14:34-35.</td>
+  <td class="summary">and become altogether unprofitable, like salt that has lost its savour.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 15</td></tr>
+ <tr>
+  <td class="verses">Lu 15:1-7.</td>
+  <td class="summary">The parable of the lost sheep;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 15:8-10.</td>
+  <td class="summary">of the piece of silver;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 15:11-32.</td>
+  <td class="summary">of the prodigal son.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 16</td></tr>
+ <tr>
+  <td class="verses">Lu 16:1-13.</td>
+  <td class="summary">The parable of the unjust steward.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 16:14-18.</td>
+  <td class="summary">Christ reproves the hypocrisy of the covetous Pharisees.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 16:19-31.</td>
+  <td class="summary">The parable of the rich man and Lazarus the beggar.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 17</td></tr>
+ <tr>
+  <td class="verses">Lu 17:1-2.</td>
+  <td class="summary">Christ teaches to avoid occasions of offence;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 17:3-4.</td>
+  <td class="summary">and to forgive one another.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 17:5.</td>
+  <td class="summary">The power of faith.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 17:6-10.</td>
+  <td class="summary">How we are bound to God, and not he to us.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 17:11-21.</td>
+  <td class="summary">Christ heals ten lepers.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 17:22-37.</td>
+  <td class="summary">Of the kingdom of God, and the coming of the Son of Man.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 18</td></tr>
+ <tr>
+  <td class="verses">Lu 18:1-8.</td>
+  <td class="summary">Of the importunate widow.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 18:9-14.</td>
+  <td class="summary">Of the Pharisee and the publican.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 18:15-17.</td>
+  <td class="summary">Of Children brought to Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 18:18-27.</td>
+  <td class="summary">A ruler would follow Christ, but is hindered by his riches.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 18:28-30.</td>
+  <td class="summary">The reward of them that leave all for his sake.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 18:31-34.</td>
+  <td class="summary">He foretells his death;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 18:35-43.</td>
+  <td class="summary">and restores a blind man to his sight.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 19</td></tr>
+ <tr>
+  <td class="verses">Lu 19:1-10.</td>
+  <td class="summary">Of Zacchaeus a publican.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 19:11-27.</td>
+  <td class="summary">The ten pieces of money.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 19:28-40.</td>
+  <td class="summary">Christ rides into Jerusalem with triumph;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 19:41-44.</td>
+  <td class="summary">weeps over it;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 19:45-46.</td>
+  <td class="summary">drives the buyers and sellers out of the temple;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 19:47-48.</td>
+  <td class="summary">teaching daily in it. The rulers seek to destroy him, but fear the people.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 20</td></tr>
+ <tr>
+  <td class="verses">Lu 20:1-8.</td>
+  <td class="summary">Christ avouches his authority by a question of John's baptism.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 20:9-18.</td>
+  <td class="summary">The parable of the vineyard.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 20:19-26.</td>
+  <td class="summary">Of giving tribute to Caesar.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 20:27-40.</td>
+  <td class="summary">He convinces the Sadducees, that denied the resurrection.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 20:41-44.</td>
+  <td class="summary">How Christ is the Son of David.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 20:45-47.</td>
+  <td class="summary">He warns his disciples to beware of the scribes.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 21</td></tr>
+ <tr>
+  <td class="verses">Lu 21:1-4.</td>
+  <td class="summary">Christ commends the poor widow.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 21:5-24.</td>
+  <td class="summary">He foretells the destruction of the temple, and of the city Jerusalem;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 21:25-33.</td>
+  <td class="summary">the signs also which shall be before the last day.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 21:34-38.</td>
+  <td class="summary">He exhorts them to be watchful.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 22</td></tr>
+ <tr>
+  <td class="verses">Lu 22:1-2.</td>
+  <td class="summary">The Jews conspire against Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:3-6.</td>
+  <td class="summary">Satan prepares Judas to betray him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:7-18.</td>
+  <td class="summary">The apostles prepare the passover.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:19-20.</td>
+  <td class="summary">Christ institutes his holy supper;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:21-23.</td>
+  <td class="summary">covertly foretells of the traitor;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:24-30.</td>
+  <td class="summary">rebukes the rest of his apostles from ambition;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:31-33.</td>
+  <td class="summary">assures Peter his faith should not fail;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:34-38.</td>
+  <td class="summary">and yet he should deny him thrice.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:39-46.</td>
+  <td class="summary">He prays in the mount, and sweats blood;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:47-49.</td>
+  <td class="summary">is betrayed with a kiss;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:50-53.</td>
+  <td class="summary">he heals Malchus' ear;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:54-62.</td>
+  <td class="summary">he is thrice denied of Peter;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:63-65.</td>
+  <td class="summary">shamefully abused;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 22:66-71.</td>
+  <td class="summary">and confesses himself to be the Son of God.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 23</td></tr>
+ <tr>
+  <td class="verses">Lu 23:1-7.</td>
+  <td class="summary">Jesus is accused before Pilate, and sent to Herod.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:8-11.</td>
+  <td class="summary">Herod mocks him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:12.</td>
+  <td class="summary">Herod and Pilate are made friends.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:13-25.</td>
+  <td class="summary">Barabbas is desired of the people, and is loosed by Pilate, and Jesus is given to be crucified.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:26-33.</td>
+  <td class="summary">He tells the women, that lament him, the destruction of Jerusalem;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:34-38.</td>
+  <td class="summary">prays for his enemies.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:39-45.</td>
+  <td class="summary">Two evildoers are crucified with him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:46-49.</td>
+  <td class="summary">His death.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 23:50-56.</td>
+  <td class="summary">His burial.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">Luke chapter 24</td></tr>
+ <tr>
+  <td class="verses">Lu 24:1-8.</td>
+  <td class="summary">Christ's resurrection is declared by two angels to the women that come to the sepulchre.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 24:9-12.</td>
+  <td class="summary">These report it to others.</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 24:13-35.</td>
+  <td class="summary">Christ himself appears to the two disciples that went to Emmaus;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 24:36-46.</td>
+  <td class="summary">afterwards he appears to the apostles, and reproves their unbelief;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 24:47-48.</td>
+  <td class="summary">gives them a charge;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 24:49.</td>
+  <td class="summary">promises the Holy Ghost;</td>
+ </tr>
+ <tr>
+  <td class="verses">Lu 24:50-53.</td>
+  <td class="summary">and so ascends into heaven.</td>
+ </tr>
+</table>
+
+</div> 
+    </div>
+    <div id="rightside">
+      <div id="rightsideinner"> <!-- InstanceBeginEditable name="EditNextPrev" --> 
+        <div class="nav"><div class="nav-prev"><a href="mark.html" rel="prev">&larr;&nbsp;Mark</a></div><div class="nav-next"><a href="john.html" rel="next">John&nbsp;&rarr;</a></div></div> 
+        <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="EditIndexSelector" --> 
+        <div id="indexselector">
+        <select name="OutlinePages" onChange="window.open(this.options[this.selectedIndex].value,'_top')">
+<option selected value="/outlines/">Select a Book of the Bible</option>
+<option value="/outlines/">(About these outlines)</option>
+<option value="genesis.html">Genesis</option>
+<option value="exodus.html">Exodus</option>
+<option value="leviticus.html">Leviticus</option>
+<option value="numbers.html">Numbers</option>
+<option value="deuteronomy.html">Deuteronomy</option>
+<option value="joshua.html">Joshua</option>
+<option value="judges.html">Judges</option>
+<option value="ruth.html">Ruth</option>
+<option value="1samuel.html">1 Samuel</option>
+<option value="2samuel.html">2 Samuel</option>
+<option value="1kings.html">1 Kings</option>
+<option value="2kings.html">2 Kings</option>
+<option value="1chronicles.html">1 Chronicles</option>
+<option value="2chronicles.html">2 Chronicles</option>
+<option value="ezra.html">Ezra</option>
+<option value="nehemiah.html">Nehemiah</option>
+<option value="esther.html">Esther</option>
+<option value="job.html">Job</option>
+<option value="psalms.html">Psalms</option>
+<option value="proverbs.html">Proverbs</option>
+<option value="ecclesiastes.html">Ecclesiastes</option>
+<option value="songofsolomon.html">Song of Solomon</option>
+<option value="isaiah.html">Isaiah</option>
+<option value="jeremiah.html">Jeremiah</option>
+<option value="lamentations.html">Lamentations</option>
+<option value="ezekiel.html">Ezekiel</option>
+<option value="daniel.html">Daniel</option>
+<option value="hosea.html">Hosea</option>
+<option value="joel.html">Joel</option>
+<option value="amos.html">Amos</option>
+<option value="obadiah.html">Obadiah</option>
+<option value="jonah.html">Jonah</option>
+<option value="micah.html">Micah</option>
+<option value="nahum.html">Nahum</option>
+<option value="habakkuk.html">Habakkuk</option>
+<option value="zephaniah.html">Zephaniah</option>
+<option value="haggai.html">Haggai</option>
+<option value="zechariah.html">Zechariah</option>
+<option value="malachi.html">Malachi</option>
+<option value="matthew.html">Matthew</option>
+<option value="mark.html">Mark</option>
+<option value="luke.html">Luke</option>
+<option value="john.html">John</option>
+<option value="acts.html">Acts</option>
+<option value="romans.html">Romans</option>
+<option value="1corinthians.html">1 Corinthians</option>
+<option value="2corinthians.html">2 Corinthians</option>
+<option value="galatians.html">Galatians</option>
+<option value="ephesians.html">Ephesians</option>
+<option value="philippians.html">Philippians</option>
+<option value="colossians.html">Colossians</option>
+<option value="1thessalonians.html">1 Thessalonians</option>
+<option value="2thessalonians.html">2 Thessalonians</option>
+<option value="1timothy.html">1 Timothy</option>
+<option value="2timothy.html">2 Timothy</option>
+<option value="titus.html">Titus</option>
+<option value="philemon.html">Philemon</option>
+<option value="hebrews.html">Hebrews</option>
+<option value="james.html">James</option>
+<option value="1peter.html">1 Peter</option>
+<option value="2peter.html">2 Peter</option>
+<option value="1john.html">1 John</option>
+<option value="2john.html">2 John</option>
+<option value="3john.html">3 John</option>
+<option value="jude.html">Jude</option>
+<option value="revelation.html">Revelation</option>
+</select>
+ 
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="clearall">&nbsp;</div>
+        <div id="searchbox">
+          <form action="https://www.google.com" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="partner-pub-5275979875239567:3875486487">
+              <input type="hidden" name="ie" value="UTF-8">
+              <input type="text" name="q" size="20" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+        
+        <!--SS_AD_START-->
+        <div id="sssidebar" class="sidebar">
+          <div class="innersidebar">
+            <p>Your Bible study shouldn't be left to a web search.</p>
+            <div class="sslink">
+              <p><a href="https://www.swordsearcher.com">Better Bible Study
+                With<br>
+                SwordSearcher
+                Bible Software <br>
+                <img src="../img/swordsearcher.png" alt="SwordSearcher"></a> </p>
+            </div>
+            <p>The internet is good for many things, but it is not designed for studying God's word.</p>
+            <p>SwordSearcher is.</p>
+            <ul>
+              <li><a href="https://www.swordsearcher.com">Learn more.</a></li>
+              <li><a href="https://www.swordsearcher.com/video/3reasons.htm">Video: 3 Reasons to use SwordSearcher</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--SS_AD_END-->
+        
+        
+        <a href="https://www.bible-topics.com/" class="button">Bible Topics</a>
+		<a href="https://www.naves-topical-bible.com/" class="button">Nave's Topical Bible Concordance</a>
+		<a href="https://www.internationalstandardbible.com/" class="button">International Standard Bible Encyclopedia</a>
+  		<a href="https://www.biblicalcyclopedia.com/" class="button">McClintock and Strong Biblical Cyclopedia</a>
+		<a href="https://av1611.com/kjbp/kjv-bible-text/index.html" class="button">Online KJV Text</a>
+		<a href="https://av1611.com/kjbp/kjv-dictionary/kjv-dictionary-index.html" class="button">KJV Dictionary</a> 
+ 
+      </div>
+    </div>
+    <div class="clearall"> &nbsp; </div>
+  </div>
+</div>
+<div id="footer"> <!-- InstanceBeginEditable name="EditFooterIndex" --> 
+  <!--FOOTER_INDEX_DIV_START--> 
+  <!--FOOTER_INDEX_DIV_END--> 
+  <!-- InstanceEndEditable -->
+  <div class="innerdiv"> 
+    <!--FOOTER_START--> 
+    <a href="https://www.biblestudystart.com"><img src="../img/books-tiny.jpg" alt="Bible Study Start" class="bookspicture"></a> <!-- InstanceBeginEditable name="Footer" -->
+    <p>Source: <a href="https://www.swordsearcher.com/bible-study-library/bible-outlines.html">OutlinesBB</a> module from <a href="https://www.swordsearcher.com">SwordSearcher</a>.</p>
+    <!-- InstanceEndEditable -->
+    <p>Website HTML, editorial descriptions, and images &copy;2023 <a href="https://www.studylamp.com">StudyLamp Software LLC.</a> <br>
+      <a href="https://av1611.com/verseclick">Scripture linking and popups powered by VerseClick&trade;.</a> </p>
+    <!--FOOTER_END--> 
+  </div>
+</div>
+<div id="postfooter"> 
+  
+ 
+</div>
+
+
+<script src="https://av1611.com/verseclick/verseclick.js"></script> 
+
+<!-- AddThis Smart Layers BEGIN --> 
+<!-- Go to http://www.addthis.com/get/smart-layers to customize --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e2b9213820e78"></script> 
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5,
+	  'mobile' : false
+    }   
+  });
+</script> 
+<!-- AddThis Smart Layers END --> 
+
+
+</body>
+<!-- InstanceEnd --></html>

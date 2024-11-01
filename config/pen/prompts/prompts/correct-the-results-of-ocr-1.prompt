@@ -1,0 +1,68 @@
+task: "correct the results of OCR"
+doc: "Given OCR results, correct them"
+tags: ocr
+prompt-version: 2
+issues:
+- This is not very effective.
+- It doesn't seem to have coherence across lines.
+done:
+- Redesign to make this work line-by-line
+prompt: |+
+    Restore this text to its original.
+    <delim>
+    Input 1:
+    <delim>
+    1	"r'2Pto flare i~t in the face; for this"
+    2	"riea/on they ef~d all tho~-e Books which"
+    3	"gave the least ac- of the Heathen Theology"
+    4	"to the flames ;"
+    <delim>
+    Output 2:
+    <delim>
+    1	"For a to flare it in the face; for this"
+    2	"reason they sacrificed all those books which"
+    3	"gave the least account of the Heathen Theology"
+    4	"to the flames;"
+    <delim>
+    Input 2:
+    <delim>
+    <OCR text>
+    <delim>
+    Output 2:
+    <delim>
+    <:pp>1	"
+# engine: "OpenAI Codex"
+# temperature: 0.3
+force-engine: "OpenAI Davinci"
+force-temperature: 0.8
+# force-engine: "OpenAI Codex"
+# force-temperature: 0.3
+max-generated-tokens: "(* 2 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
+# max-generated-tokens: "(* 1 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
+# max-generated-tokens: 300
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "OCR text"
+examples:
+- |+
+  they continu~e chofep ha~its ~fill in t-he mink .&fen th~at th~e generality of
+  Mlankiind conts ing~r them~relv~es with a ju~per~fcial knowvledye th-ingfSif.
+# TODO Add to .prompt optional multiplex preprocessor for inputs
+# If a postprocessor sees pf- then check the function to see if it has
+# multiplex capability
+preprocessors:
+# - "sed -z 's/\\n\\n/\\n/g' | sed 's/\\s\\+/ /g'  | pen-str nl"
+- "pen-str wrap 40  | pen-str nl"
+# preprocessors:
+# - pen-c strip-unicode | pen-str join ' '
+# - pen-str onelineify
+# postprocessor: "sed '/^In: /d' | sed 's/Out: //' | penf -u pf-correct-english-spelling-and-grammar/1"
+# postprocessor: "sed '/^In [0-9]*: /d' | sed 's/Out [0-9]*: //'"
+# postprocessor: "sed '/^[0-9]*: /d' | sed 's/^[0-9]*: //'"
+postprocessor: sed "s/^[0-9]*	//" | uq -l
+filter: on
+completion: off
+insertion: off

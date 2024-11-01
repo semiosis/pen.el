@@ -1,0 +1,4 @@
+owing line is desirable for RP386's running a recent
+# version of BIND and with PKZIP uninstalled
+# The following line is desirable for all OSes (except for
+# systems on which dnsmasq is compiled with

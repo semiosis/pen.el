@@ -1,0 +1,9 @@
+motivating example
+    Provides motivation for a definition, a
+    theorem, or even the whole paper.
+
+running example
+    An example that is recalled time and again
+    during the paper, applying the newly
+    discovered knowledge to it, presumably to
+    show how things work.

@@ -1,0 +1,36 @@
+title: Ship came into harbour carrying X
+tags: fun search ilambda
+version: 3
+doc: ''
+prompt: |
+  8 countries starting with A
+  American Samoa,Armenia,Australia,Afghanistan,Albania,Andorra,Angola,Argentina
+  <delim>
+  3 car brands starting with H
+  Holden,Hyundai,Honda
+  <delim>
+  7 islands starting with N
+  New Britain,Naart,Nukumanu,Nikumaroro,Neuwerk
+  <delim>
+  4 fruit starting with E
+  Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
+  <delim>
+  6 clothing brands starting with CC & M
+  Croft,Caliwoods,Contare,Calvin Klein,Charles Viancin,Costume National
+  <delim>
+  <n> <type> starting with <letter>
+engine: OpenAI Davinci
+temperature: 0.7
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- n
+- type
+- letter
+examples:
+- '5'
+- island countries
+- T
+postprocessor: sed 's/,/\n/g'

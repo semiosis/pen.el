@@ -1,0 +1,1 @@
+cd /;  "hsqf" "pdflatex" "#" "<==" "hsqf"

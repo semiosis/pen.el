@@ -1,0 +1,8 @@
+"re-match-p" is a function that returns t if the current buffer matches the regexp.
+
+(defun re-match-p (regexp)
+  (string-match-p regexp (buffer-substring-no-properties (point-min) (point-max))))
+
+(re-match-p "^[a-zA-Z_]" "abc")
+
+(re-match-p "^[a-zA-Z_]" "

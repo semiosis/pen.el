@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: if regex match
+# group: re
+# key: ifgr
+# --
+(if (re-match-p $0))

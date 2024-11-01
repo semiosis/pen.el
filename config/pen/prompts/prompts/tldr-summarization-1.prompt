@@ -1,0 +1,24 @@
+title: tldr summarization
+tags: nlp-task summarisation
+prompt-version: 2
+doc: "tldr"
+prompt: |+
+  <passage>
+
+  tl;dr:
+completion: true
+engine: OpenAI Davinci
+temperature: 0.3
+# This allowance is really for the input
+max-generated-tokens: 400
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- passage
+filter: true
+examples:
+- The long white cloud
+preprocessors:
+- sed 's/^\s*//' | pen-str join ' '
+prettifier: pen-pretty-paragraph

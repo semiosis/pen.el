@@ -1,0 +1,6 @@
+ A YAML-formatted file that describes a series of actions to be
+
+applied to a target host.
+
+
+playbook    [#ansible] A YAML-formatted file that describes a series of

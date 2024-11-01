@@ -1,0 +1,17 @@
+"penf" is a command line tool that allows you to interact with a running
+instance of penf.
+
+To get started, you need to start an instance of penf.
+
+To start an instance of penf, run the following command:
+
+```
+penf
+```
+
+This will start an instance of penf in the current directory.
+
+To interact with this instance of penf, run the following command:
+
+```
+penf <topic>

@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "watch" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "watch" "-n" "1" "date" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "watch" "-n" "1" "-E" "date|vimcat" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "watch" "-n" "1" "-E" "date|vimcat" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "watch" "-n" "1" "-E" "date|vimcat >&2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "watch" "-n" "1" "-E" "date|vimcat" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "watch" "-n" "1" "-E" "date|vimcat" "#" "<==" "zsh"

@@ -1,0 +1,20 @@
+This talks about people who DO NOT BELIEVE,
+nor accept Jesus Christ as their Lord and master.
+
+However, it appears as though, God certainly does not let
+His children go.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Philippians 1:6
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Philippians 1:6
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+For I am confident of this very thing, that He
+who began a good work in you will perfect it
+until the day of Christ Jesus.
+
+(NASB)
+#+end_src

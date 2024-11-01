@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: mermaid class
+# group: mermaid
+# key: mcl
+# --
+#+BEGIN_SRC mermaid :results raw :file mermaid-class.png
+classDiagram
+class Datom{
+int EntityID
+int Attribute
+int ValueForAttribute
+int Tx
+bool Op
+}
+#+END_SRC

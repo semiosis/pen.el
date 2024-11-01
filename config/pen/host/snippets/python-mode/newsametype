@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: newsametype
+# key: newsametype
+# --
+SeqType = type(seq) 
+emptySeq = SeqType() 

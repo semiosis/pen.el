@@ -1,0 +1,14 @@
+
+(defun continuum-get-older ()
+  (let ((r (reverse pen-terminal-states)))
+    (if (> (length pen-terminal-states) 1)
+        (second r))))
+
+(defun continuum-get-old ()
+  (let ((r (reverse pen-terminal-states)))
+    (if (> (length pen-terminal-states) 1)
+        (first r))))
+
+(defun continuum-get-current ()
+  (buffer-string-visible))
+

@@ -1,0 +1,3 @@
+pf-quick-fix-code/1 ()
+  (interactive)
+  (let ((pf (fz pen-common-prompt-functions nil nil "Common prompt function: ")))

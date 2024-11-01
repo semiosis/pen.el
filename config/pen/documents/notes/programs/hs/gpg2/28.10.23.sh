@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-output31r5zb" "--verify" "--" "/tmp/epg-signatureoqDy7E" "-" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/src;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputJXoa0H" "--verify" "--" "/tmp/epg-signatureSYVVhz" "-" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"

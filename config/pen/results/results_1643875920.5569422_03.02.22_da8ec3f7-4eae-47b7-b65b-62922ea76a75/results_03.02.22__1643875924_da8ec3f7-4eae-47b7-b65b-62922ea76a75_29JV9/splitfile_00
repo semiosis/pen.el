@@ -1,0 +1,6 @@
+
+- subprompts:
+- - metaprompt: |
+      This is a conversation between a human and a brilliant AI.
+      The topic is "<in the context of>" in the context of "<topic>".
+

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: read all stdin into string
+# group: fd
+# key: cat
+# --
+(file->string "/dev/stdin")

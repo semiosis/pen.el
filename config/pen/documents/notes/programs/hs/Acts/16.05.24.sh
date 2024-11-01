@@ -1,0 +1,6 @@
+cd /;  "Acts" "21" "#" "<==" "zsh"
+cd /;  "Acts" "6" "#" "<==" "zsh"
+cd /root/notes;  "Acts" "19" "#" "<==" "zsh"
+cd /root/notes;  "Acts" "19:15-16" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "Acts" "16" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "Acts" "16:18" "#" "<==" "zsh"

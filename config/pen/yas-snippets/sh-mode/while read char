@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: while read char
+# group: 
+# key: wrc
+# --
+grep -o . | while IFS=\$'\n' read -r char; do
+    (
+    exec 0</dev/null
+    :
+    )
+done

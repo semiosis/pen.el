@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: zip with indices
+# group: zip
+# key: zipi
+# --
+zip [0 .. ] ${1:"hello"}

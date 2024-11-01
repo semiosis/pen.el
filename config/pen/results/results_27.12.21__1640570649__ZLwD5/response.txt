@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo: no tty present and no askpass program specified
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+sudo: 3 incorrect password attempts
+sudo: 3 incorrect password

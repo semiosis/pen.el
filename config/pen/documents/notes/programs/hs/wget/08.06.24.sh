@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=nV1Vl71-XIo&list=PLLOEf4zj7b-rXi4ya1SIv73zoJckqiBEC&index=1" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=0v-JiclgWKE" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=hRuVDZndzhU" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=YIBNUIhqyFI" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=K6BpMe9BlzU&t=2759s" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/src;  "wget" "-qO-" "https://www.youtube.com/watch?v=S0j3BzPEy3w" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "wget" "-qO-" "https://www.youtube.com/watch?v=eeOxjRPMBBU" "#" "<==" "pen-ci"

@@ -1,0 +1,3 @@
+shanepy.get_setting("spacy_model") or "en_core_web_md"
+nlp = spacy.load(spacy_model)
+

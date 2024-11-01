@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "hebrew-letters-explain" "#" "<==" "sh"

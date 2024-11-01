@@ -1,0 +1,195 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sun, 05 May 2024 21:52:24 GMT
+Content-Length: 38298
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" /><link type="text/css" href="/css/global.css" rel="stylesheet" />
+    <script type="text/javascript" src="/scripts/jquery-1.4.4.min.js" ></script>
+    <script type="text/javascript" src="/scripts/jquery.twitter.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="/scripts/global.js?1.1" ></script>
+
+    <script type="text/javascript" src="/scripts/audio_swfobject.js"></script>
+    
+    
+
+    
+	<meta name="title" content="Colin Urquhart : Defeating the Leviathan Spirit" />
+	<link rel="image_src" href="/images/layout/colinurquhart_bio_163.jpg" />
+
+<title>
+	Colin Urquhart : Defeating the Leviathan Spirit
+</title></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Defeating-the-Leviathan-Spirit.aspx?contentID=19&amp;title=Defeating-the-Leviathan-Spirit" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=LESujvtCBxkZ7_a5g1_w8K20D5Djc4EenmFC1hwhvQIQyRoVpQPDpH6VmMnZ_O5nYRbPci-mutlsR6lZidHwufXxXRtXYOOOKhsDfsgTH5fVWwaZZ7vGJH9_-VP-OJ8P5saB4MQKcHiSYtdPgWNQoQfEJXNCTnwGPmo_9f0D_08u5d2X0&amp;t=7e14f9a4" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2173C2F0" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+          
+        
+        <div class="menu">
+            <ul class="main_menu">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/About.aspx">About</a>
+                </li>
+                <li>
+                    <a href="/Articles.aspx">Articles</a>
+                </li>
+                <li>
+                    <a href="https://www.kingdomfaith.com/podcast/keynote.aspx">Keynotes</a>
+                </li>
+            </ul>
+            
+            <ul class="truth_menu">
+                <li>
+                    <a href="https://www.kingdomfaith.com/shop/thetruthstudyedition.aspx">
+                        <img src="/images/menu/truth_standard.jpg" alt="The Truth Version" />
+                        <span>The Truth Version</span>
+                        <span class="yellow">&rsaquo; find out more</span>
+                    </a>
+                </li>
+            </ul>
+        
+        </div>
+        
+        <div class="container">
+        
+            <a href="/Default.aspx">
+                <img src="/images/layout/colinurquhart_com.png" alt="ColinUrquhart.com" />
+            </a>
+            
+            <div class="left">
+        
+                
+
+    <table class="article_full" cellspacing="0" border="0" id="ctl00_LeftContentPlaceHolder_FormView1">
+	<tr>
+		<td colspan="2">
+
+            <h1><b style="font-weight: 100;">&rsaquo;&nbsp;</b>Defeating the Leviathan Spirit
+                <span style="float: right; margin-top: 10px;">
+                28.04.2009</span>     
+            </h1>
+            
+            <div class="article_full_hr"></div>
+            
+            <p>The enemy is opposed to the work of God and it is not surprising that we should experience attack from him at both a personal and corporate level.  We have nothing to fear because Jesus has defeated all the powers of darkness by His blood, He has given us His victory and is our Mighty Warrior.  However we need to be wise and vigilant so that we do not allow the enemy to take advantage without realising what is happening.  He is a deceiver and likes to appear as an angel of light.  This means he can work in ways that are not immediately obvious.  He is both cunning and devious.  So it is important to know our enemy!</p>
+<p>In recent months Kingdom Faith has been under spiritual attack and we can praise God that, by His mercy, the enemy has not been able to have his way.  It is as well that the situation was first addressed publicly last October, because the corporate response at that time has prevented the spirit sent against us to have much influence.  I also spoke in January of the way that another major church was ruined by this same spirit that was sent against us, and I was determined that this would not be allowed to happen here.</p>
+<p>Subsequently we have discovered that a number of strategic churches in different parts of the world have come under similar attack from the same spirit.  One of those churches in America is pastored by Dr. Ron Phillips, who has produced a teaching on this spirit that we have found most beneficial, although it only came to our notice recently.  He confirms much that we have discovered about this spirit, principally from scripture, but also from our own experience and from talking with other international leaders.  I have incorporated this material in the explanation that follows.</p>
+<h2>Leviathan</h2>
+<p>In scripture this spirit is called Leviathan, which means &quot;<em>twister</em>&quot;, for reasons that will become obvious.  The nature of this spirit is described in Isaiah 27:1 and more extensively in Job 41.  The Lord uses an animal to describe the activities of this spirit,   probably the Nile crocodile that steals up on its prey, snatches it, takes it into the water and literally twists the life out it until it can then be consumed.  In Isaiah it is referred to as the &quot;<em>twisted serpent</em>.&quot;  Having consumed its prey it then flees.</p>
+<p>This demonstrates the vile nature of this spirit.  In Job 41:34 it is described as &quot;<em>king over all the children of pride</em>,&quot; and it is pride that gives this spirit access into people's lives.  Its influence is spread through those who are guilty of pride and self-righteousness.  Like the crocodile this is a hidden spirit that can be lurking in the life of a church, ready to strike when given the opportunity.  When it is exposed for what it is, it loses its power and hold over people as soon as they repent for coming under its influence.  So there is nothing to fear from Leviathan because our faith is in the victory that the Lord Jesus Christ has already won over all the powers of the evil, the victory that is ours through His blood!</p>
+<p>However, there is a big difference between those who inadvertently come under the influence of this spirit and those who are carriers of this spirit because of their continued pride and their refusal to repent.  Some serve Leviathan whether they realise it or not; others are merely unwilling victims.</p>
+<p>The description in Job 41 shows that this is a formidable opponent that cannot be captured and kept as a pet; the normal person would not want anything to do with such a spirit.  Although hidden it can be very powerful in its effect on people, marriages, families, churches and even nations, bringing division for reasons that at the time can seem mystifying.  There is no apparent reason for such division. &quot;<em>An enemy has done this!</em>&quot;</p>
+<p><strong>Apart from being king of the proud, Job 41 mentions other characteristics of this spirit:</strong></p>
+<ol>
+    <li>You cannot play around with this spirit; it would be dangerous to attempt to do so.  It cannot be tamed and has therefore to be renounced completely.</li>
+    <li>You cannot enter in covenant with this spirit (v. 4).  It encourages people to break covenant by encouraging those under its influence to leave churches.  It can destroy marriages and break up friendships.</li>
+    <li>Leviathan twists the truth. It misrepresents what has been said, causing people to sometimes believe the very opposite of what was said.  Those under its influence hear things in a twisted way, and then pass on this twisted version, often believing it to be the truth.  So this is definitely a spirit of deception.  It is this twisting of the truth that makes it a difficult spirit to deal with.</li>
+    <li>You cannot reason with this spirit because it blinds people to the truth.  In fact those under its influence can be so deceived that they do not appreciate that they are deceived or are twisting the truth.</li>
+    <li>This spirit can only be overcome through the supernatural activity of God's Spirit, not by any human means.</li>
+    <li>&quot;<em>His breath kindles coals</em>,&quot; meaning that their words have a destructive, negative effect.  Those under its power become very critical, especially of those in authority.  They become judgmental and their words have the effect of pulling down rather than building up.</li>
+    <li>This spirit produces a hardness of heart in people (v. 24) making it even more difficult to bring those being used by this spirit to the repentance they need.</li>
+    <li>Because of its pride, and because it has access into people's lives through their proud hearts, this spirit wants to be in control.  So those under its influence want to control situations in which they are placed.  They resist submission to true spiritual authority.</li>
+    <li>This is a mocking spirit, and uses mockery as one way of attacking others.  It will mock those who walking in obedience to the Lord or who disagree with them, so important to them are their own opinions.</li>
+    <li>Not only do people become hard-hearted under its influence, they become thick-skinned in the wrong sense.  The truth bounces off them!</li>
+</ol>
+<p>Because of its deceptive nature, those under its influence can mistake its voice to be from God.  Typical phrases that are used by those under its influence are: &quot;<em>The Lord said to me...</em>&quot; and &quot;<em>I felt in my spirit...</em>&quot;  But when you check out what is said it does not tie in with either the scriptures or the way in which the Holy Spirit leads people.  Remember that its intention is to encourage people to break covenant and to bring division into the church.  It opposes covenant and wants people to excuse themselves from contracts and other commitments.</p>
+<p>Typically, this spirit brings false allegations against people, especially those in leadership. Often outrageous things are said that are a complete distortion or twisting of the truth.  We are warned in scripture not to bite or devour one another, or we will be consumed by one another.  The honouring of one another is essential to prevent this spirit from gaining any foothold in the church.</p>
+<h2>Leviathan defeated</h2>
+<p>Those who have advertently or inadvertently been used by this spirit need to repent and ask the Lord's forgiveness.  Those who have been carriers of this spirit will need to be broken of their pride that has given the enemy opportunity to bring so much disruption into their own lives and the lives of others that they have influenced.  The longer this is left, the more difficult it becomes to take the necessary spiritual steps to be rid of its influence.  There has to be a humbling and a breaking of proud, self-righteous, independent attitudes.</p>
+<p>Where there is such repentance there is nothing to fear from Leviathan, for the Lord is then able to restore people.  During their time under Leviathan's influence they have not been able to prosper spiritually, but once forgiven and restored they can again flow with the Holy Spirit, the right Spirit.  A true sense of direction and purpose is then restored to their lives, instead of the disruption they previously experienced</p>
+<p>It is good for everyone to stand against being under any influence from this spirit by praying in the following way:</p>
+<p class="style3">&quot;Lord, I ask you to remove from my life any influence from the spirit of Leviathan.  I reject this spirit completely and whole-heartedly.  Forgive me for any ways that I have served this spirit either intentionally or inadvertently.  Forgive me for any ways in which I have been twisted or have twisted the truth, that I have listened to distortion of the truth or have distorted the truth.  I devote myself to bringing unity, not division, into the church and will therefore honour other members and those you have placed in authority.  By your grace I will speak the truth in love and dedicate myself to expressing the truth of your word in my life, in the precious name of Jesus.   Amen.&quot;</p>
+<h2>After Leviathan</h2>
+<p>After the Lord had described this spirit to Job, he was humbled before the Lord: &quot;<em>I know that you can do all things; no plan of yours can be thwarted</em>.&quot;  His response was to say to God: &quot;<em>I despise myself and repent in dust and ashes</em>.&quot;  Following his repentance and after he had prayed for his friends, Job was then restored by the Lord who &quot;<em>made him prosper again and gave him twice as much as he had before</em>&quot; he possessed before he came under attack from the enemy.</p>
+<p>Life after deliverance from Leviathan is much better than it was before!  We are told to submit ourselves to God, resist the devil and he will flee from us, precisely what God promises concerning Leviathan.  So it is important to repent before God and to put yourself  right in the relationships that have suffered while under the influence of this Leviathan spirit. So the effects of freedom from this spirit are corporate as well as personal.</p>
+<p>In Isaiah 27, after the Lord has promised to deal personally with Leviathan, He tells the people: &quot;<em>Sing about a fruitful vineyard:  I, the Lord, watch over it; I water it continually; I guard it day and night so that no one may harm it.</em>&quot; (v. 2-3)</p>
+<p>So your security is to be found in the vine.  Do not allow this spirit to isolate you by drawing you out of this place of the Lord's security, and thereby making you vulnerable to the enemy's tactics.</p>
+<p>Although some at Kingdom Faith have shown a lack of understanding of these spiritual realities, most have been wise in guarding themselves against this deceiving spirit.  Leviathan has failed in its attempts to influence them.  Some have had thoughts that they should leave Kingdom Faith, although they have not wanted to do this, nor do they have any good reason for doing so.  Some have heard false rumours about the church or the leadership.  Some have been confused by conflicting things they have heard: The truth on the one hand and a twisting of the truth on the other that is the result of Leviathan's influence.</p>
+<p>At the same time people have had dreams, visions and words from God that have described accurately what has been taking place, warning them not to break covenant and make themselves and their families vulnerable to this twisting spirit.  Some have actually experienced a physical twisting in their stomachs that is overcome when they come against this in the name of Jesus.</p>
+<p>As a church, by the grace of God we emerge triumphant, for God always leads us in His triumphant procession in Christ Jesus!  The Lord has shown people that a cleansing and a purging of the Body has been taking place and that this is a prelude to the time of much greater blessing and fruitfulness that lies just ahead of us.  In fact there is a sense of fresh anointing and vibrancy in so many areas of Kingdom Faith life.</p>
+<p>The promises of harvest and abundance shall be realised and this attack from the enemy cannot prevent this. As Job said to the Lord immediately after being told about this twisting spirit: &quot;<em>No plans of yours can be thwarted.</em>&quot;</p>
+<p>You may have come to the brink of a major breakthrough with God, only to sense that something has stood in the way of the breakthrough.  That something is now being dealt with and you can be free to enter fully into the Lord's destiny for you personally and for Kingdom Faith corporately.</p>
+<p>Of course we shall remain vigilant in prayer and in praise for our Mighty Warrior God who has gone before us to give us the victory over this and all the works of the enemy, in the name of Jesus.</p>
+<p>Only a very few have been taken out from among us, and we continue in prayer for them; that they will restored to us having been set free from all the effects of this spirit.  We do not want to see anyone robbed of the inheritance that was theirs as part of Kingdom Faith, and we pray God's peace upon them and their families.</p>
+<p><strong>To listen to the Apostolic Keynote message that accompanies this article click the play icon on the audio player below.</strong></p>
+<div id="audio_player">&nbsp;</div>
+<script type="text/javascript">var s1 = new SWFObject("/Flash/Audio/Player.swf", "single", "510", "24", "7");s1.addVariable("soundFile", "http://extras.kingdomfaith.com/Audio/Keynote/Keynote2009-04-28.mp3");s1.addVariable("autostart","no");s1.write("audio_player");</script>
+            
+            <div class="article_full_hr"></div>
+            
+            <div class="article_full_links">
+                        
+                <a id="ctl00_LeftContentPlaceHolder_FormView1_TweetHyperLink" href="http://twitter.com/home?status=Defeating+the+Leviathan+Spirit.+Article+by+@ColinUrquhart.+Read+online:+http://colinurquhart.com/?a=19">
+                        <img src="/images/layout/twitter_icon.png" alt="Tweet this" />Tweet this
+                </a>
+                        
+                <a id="ctl00_LeftContentPlaceHolder_FormView1_FacebookHyperLink" href="http://www.facebook.com/share.php?u=http://colinurquhart.com/?a=19">
+                        <img src="/images/layout/facebook_icon.png" alt="Share on Facebook" />Share on Facebook
+                </a>
+            
+            </div>
+            
+        </td>
+	</tr>
+</table>
+
+    
+
+
+    <a href="/Articles.aspx" class="view_all_articles fade_link">
+        <img src="/images/layout/view_all_articles.png" />
+    </a>
+            
+
+                
+            </div>
+            
+            <div class="right">
+            
+                
+
+    <div class="bio">
+        <img src="/images/layout/colinurquhart_bio_163.jpg" alt="Colin Urquhart" />
+
+        <p>Apostolic leader, founder of Kingdom Faith and well known author of many best sellers, Colin Urquhart has been ordained for over 50 years. His apostolic ministry is widely recognised and valued throughout the world. <a href="/About.aspx">Read more...</a></p>
+    </div>
+        
+    
+    
+
+            
+            </div>
+            
+            <div class="clear"></div>
+            
+        </div>
+        
+
+    </form>
+    
+      
+</body>
+</html>

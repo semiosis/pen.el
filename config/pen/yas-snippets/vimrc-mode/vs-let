@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: let
+# group: vimsnippet
+# key: vs-let
+# --
+let ${1:variable} = ${0: value}

@@ -1,0 +1,27 @@
+ operational."
+EOD
+<|endoftext|>Q:
+
+How to get the value of a variable in a function in C?
+
+I have this code: 
+void fun(int *a, int b) {
+
+if (a == 1) {
+
+printf("Hello");
+
+} else {
+
+printf("World");
+
+}
+} 
+
+int main() {
+
+int a = 2;
+
+fun(&a, 3);
+
+return

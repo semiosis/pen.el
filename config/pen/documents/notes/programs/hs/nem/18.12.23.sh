@@ -1,0 +1,6 @@
+cd /root/.pen/documents/agenda;  "nem" "Luke" "12:48-53" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "I" "John" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "I" "John" "2" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Deuteronomy 25:1" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "NASB" "Deuteronomy 25:19" "#" "<==" "pen-ci"

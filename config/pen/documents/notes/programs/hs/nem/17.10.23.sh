@@ -1,0 +1,5 @@
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Luke 17:3" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Luke 17:4" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Luke 17:5" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Luke 17:6" "#" "<==" "bash"
+cd /root/notes;  "nem" "fast" "ebible" "-c" "-m" "NASB" "Luke 17:10" "#" "<==" "bash"

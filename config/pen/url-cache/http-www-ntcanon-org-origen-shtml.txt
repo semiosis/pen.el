@@ -1,0 +1,724 @@
+HTTP/1.1 200 OK
+Date: Sat, 02 Mar 2024 12:50:58 GMT
+Server: Apache/2.2.22 (Debian)
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 7890
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<HTML>
+<HEAD>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
+<TITLE>The Development of the Canon of the New Testament - Origen</TITLE>
+
+<META name="description"  content="The Development of the Canon of the New Testament">
+<META name="keywords"  content="New Testament, canon, Bruce Metzger">
+
+<META name="keywords"
+content="
+Gospel of Thomas, 
+Gospel of Truth,
+Gospel of the Twelve,
+Gospel of Peter,
+Gospel of Basilides,
+Gospel of the Egyptians,
+Gospel of the Hebrews,
+Gospel of Matthias,
+Traditions of Matthias,
+Preaching of Peter,
+Acts of Andrew,
+Acts of Paul,
+Acts of John,
+Epistle to the Laodiceans,
+I Clement,
+Epistle of Barnabas,
+Didache,
+Shepherd of Hermas,
+Apocalypse of Peter">
+
+</HEAD>
+
+<BODY bgcolor="E0D0C0">
+
+<TABLE  width="100%"  border=0  cellspacing=0   cellpadding=4>
+    <TR>
+        <TD VALIGN="top" colspan=2 >
+        
+<center>
+
+<H1>The Development of the Canon of the New&nbsp;Testament</H1>
+
+<table cellspacing=0>
+
+<tr>
+<b>
+
+<td><a href="./index.shtml">Home |</a></td>
+<td bgcolor="000088"><a href="authorities.shtml"><font color="ffffff">Authorities</font></a></td>
+
+<td>
+|
+
+<a href="writings.shtml">Writings</a> |
+<a href="table.shtml">Table</a> |
+<a href="lists.shtml">Lists</a> |
+<a href="places.shtml">Places</a> |
+<a href="heresies.shtml">Heresies</a> |
+<a href="miscellaneous.shtml">Miscellaneous</a> |
+<a href="information.shtml">for more Information</a>
+</td>
+
+</b>
+</tr>
+</table>
+
+<br>
+
+</center>
+
+        <hr noshade>
+        <br>
+        </TD>
+    </TR>
+
+    <TR>
+        <TD VALIGN="TOP" width="150" align=left >
+            <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" >
+            <tr>
+                <td>
+                <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0">
+                <tr>
+                    <td bgcolor=white>
+                    
+
+<a href="authorities.shtml"><b>Early Christian Authorities</b></a>
+<br>
+<br>
+
+<a href="Ignatius.shtml">Ignatius of Antioch</a>
+<br>
+<a href="Polycarp.shtml">Polycarp of Smyrna</a>
+<br>
+<a href="Marcion.shtml">Marcion</a>
+<br>
+<a href="Valentinus.shtml">Valentinus</a>
+<br>
+<a href="Justin_Martyr.shtml">Justin Martyr</a>
+<br>
+<a href="Irenaeus.shtml">Irenaeus of Lyons</a>
+<br>
+<a href="Clement.shtml">Clement of Alexandria</a>
+<br>
+<a href="Tertullian.shtml">Tertullian of Carthage</a>
+<br>
+<a href="Muratorian_Canon.shtml">Muratorian Canon</a>
+<br>
+<a href="Origen.shtml">Origen</a>
+<br>
+<a href="Eusebius.shtml">Eusebius of Caesarea</a>
+<br>
+<a href="codex_Sinaiticus.shtml">codex Sinaiticus</a>
+<br>
+<a href="Athanasius.shtml">Athanasius of Alexandria</a>
+<br>
+<a href="Didymus.shtml">Didymus the Blind</a>
+<br>
+<a href="Peshitta.shtml">Peshitta</a>
+<br>
+<a href="Vulgate.shtml">Vulgate</a>
+<br>
+
+                    </td>
+                </table>
+                </td>
+            </tr>
+            </table>
+        </TD>
+
+        <TD VALIGN="TOP"  >
+        
+<H2>
+Origen
+<FONT SIZE=-1>
+(Origenes Adamantius) &#160;&#160;
+(b. ~185 in Egypt,   d. 253/254 at Tyre)
+</FONT>
+</H2>
+
+
+
+<P>
+Among ante-Nicene writers of the Eastern Church, the greatest by far was Origen,
+both as a theologian and as a prolific Biblical scholar.
+According to <A HREF="Eusebius.shtml">Eusebius</A>,
+Origen was born of Christian parents in Egypt,
+probably about 185, and spent most of his life in
+<A HREF="Alexandria.shtml">Alexandria</A> as a teacher,
+but he also visited <A HREF="Antioch.shtml">Antioch</A>,
+Athens, Arabia, Ephesus, and <A HREF="Rome.shtml">Rome</A>,
+and lived for a rather long period at Caesarea in Palestine.
+A Catholic Encyclopedia article is online at
+<A HREF="http://www.newadvent.org/cathen/11306b.htm">Origen and Origenism</A>.
+
+<P>
+In the year 203 Origen was appointed by Demetrius, the bishop, to succeed
+<A HREF="Clement.shtml">Clement</A> as head of the catechetical school in Alexandria.
+For a dozen years he carried on that work with marked success and with
+increasing numbers of pupils at the school.
+In 215, however, as a result of the Emperor Caracalla's furious attack
+upon the Alexandrians, Origen's work at the school was interrupted and
+he was driven from the city.
+
+<P>
+Origen took refuge at Caesarea in Palestine,
+where he preached in churches at the request of the bishops of Jerusalem and Caesarea
+As he was only a layman, this was regarded by his bishop, Demetrius,
+as a breach of ecclesiastical discipline,
+in consequence of which he was recalled to Alexandria,
+where he resumed his scholarly work at the school.
+
+<P>
+In 230 Origen traveled to Greece on some church business and,
+stopping at Caesarea on his way, was ordained as a presbyter by
+the same friendly bishops who had invited him to preach on his previous visit.
+When Demetrius learned of this, he felt that his authority had been flouted,
+and, on Origen's return, deposed him from his teaching office and
+excommunicated him from the Alexandrian church on the grounds of
+irregularity of ordination.
+
+<P>
+Origen now moved back to Caesarea, where he opened a new Biblical
+and theological school which soon outshone that of Alexandria,
+and where he continued his extensive literary work, as well as
+preaching and giving Biblical expositions almost every day.
+In 250, during the Decian persecution, Origen was imprisoned,
+cruelly tortured, and condemned to the stake.
+Although he regained his liberty at the death of the emperor,
+he died soon afterward, in the year 253 or 254,
+probably as a result of the torture.
+
+<P>
+In his lifetime he was often attacked,
+suspected of adulterating the Gospel with pagan philosophy.
+After his death, opposition steadily mounted.
+The chief accusations against Origen's teaching are the following:
+making the Son inferior to the Father and thus being a precursor of Arianism,
+a 4th-century heresy that denied that the Father and the Son
+were of the same substance; spiritualizing away the resurrection
+of the body; denying hell, a morally enervating universalism;
+speculating about pre-existent souls and world cycles;
+dissolving redemptive history into timeless myth by using
+allegorical interpretation, thus turning Christianity into a kind of Gnosticism,
+a heretical movement that held that matter was evil and the spirit good.
+None of these charges is altogether groundless.
+
+
+<P>
+Only a small part of Origen's writings has come down to us,
+but this fills volumes.
+The ones relevant to the New Testament canon are:
+
+<UL>
+<TABLE CELLSPACING=2 BORDER=1 CELLPADDING=2>
+<TR>
+<TH>Writing</TH>
+<TH>English Translation(s)</TH>
+</TR>
+
+<TR>
+<TD NOWRAP><I>De Principiis</I></TD>
+<TD>
+<A HREF="http://www.newadvent.org/fathers/0412.htm">New Advent</A> ,
+<A HREF="http://www.ccel.org/fathers2/ANF-04/anf04-44.htm">Christian Classics Ethereal Library</A>
+</TD>
+</TR>
+
+<TR>
+<TD NOWRAP><I>Commentary on the Gospel of Matthew</I></TD>
+<TD>
+<A HREF="http://www.newadvent.org/fathers/1016.htm">New Advent</A>
+</TD>
+</TR>
+
+
+<TR>
+<TD NOWRAP><I>Homily on Luke</I></TD>
+<TD>?</TD>
+</TR>
+
+<TR>
+<TD NOWRAP><I>Commentary on the Gospel of John</I></TD>
+<TD>
+<A HREF="http://www.newadvent.org/fathers/1015.htm">New Advent</A>
+</TD>
+</TR>
+
+<TR>
+<TD NOWRAP><I>Commentary on Romans</I></TD>
+<TD>?</TD>
+</TR>
+
+<TR>
+<TD NOWRAP><I>Homilies on Hebrews</I></TD>
+<TD>?</TD>
+</TR>
+
+<TR>
+<TD NOWRAP><I>Homilies on Joshua</I></TD>
+<TD>?</TD>
+</TR>
+
+</TABLE>
+</UL>
+
+<P>
+One finds in them citations of all the
+books of the New Testament, though he expressed reservations concerning:
+<BLOCKQUOTE>
+<A HREF="#James">James</A>,
+<A HREF="#II_Peter">II Peter</A>,
+<A HREF="#II_John">II John</A>, and
+<A HREF="#III_John">III John</A>
+</BLOCKQUOTE>
+
+<P>
+At other times Origen, accepts as Christian evidence any material he
+finds convincing or appealing, even designating on occasion these writings as
+<FONT COLOR="#000080">'divinely inspired'</FONT>:
+<UL>
+<LI><A HREF="#Gospel_of_Peter">Gospel of Peter</A></LI>
+<LI><A HREF="#Gospel_of_the_Hebrews">Gospel of the Hebrews</A></LI>
+<LI><A HREF="#Acts_of_Paul">Acts of Paul</A></LI>
+<LI><A HREF="#I_Clement">I Clement</A></LI>
+<LI><A HREF="#Epistle_of_Barnabas">Epistle of Barnabas</A></LI>
+<LI><A HREF="#Didache">Didache</A></LI>
+<LI><A HREF="#Shepherd_of_Hermas">Shepherd of Hermas</A></LI>
+</UL>
+
+<P>
+Origen denies the authenticity of these writings:
+<UL>
+<LI><A HREF="#Gospels">Gospel of Thomas</A></LI>
+<LI><A HREF="#Gospels">Gospel of the Twelve</A></LI>
+<LI><A HREF="#Gospels">Gospel of Basilides</A></LI>
+<LI><A HREF="#Gospels">Gospel of the Egyptians</A></LI>
+<LI><A HREF="#Gospels">Gospel of Matthias</A></LI>
+<LI><A HREF="#Preaching_of_Peter">Preaching of Peter</A></LI>
+</UL>
+
+For a summary of his opinions see the
+<A HREF="table.shtml">Cross Reference Table</A>.
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Gospels"><HR SIZE=6></A>
+<H3>Origen and the Gospels</H3>
+
+<P>
+From Origen's <I>Homily on Luke</I>  (1:1), according to the Latin translation of Jerome:
+<BLOCKQUOTE>
+<FONT COLOR="#000080">
+That there have been written down not only the four Gospels,
+but a whole series from which those that we possess have been chosen
+and handed down to the churches, is, let it be noted, what we may learn
+from Luke's preface, which runs thus:
+</FONT>
+<FONT COLOR="#800000">'For as much as many have taken in hand to compose a narrative'
+</FONT>
+<FONT COLOR="#000080">.
+The expression
+</FONT>
+<FONT COLOR="#800000">
+'they have taken in hand'
+</FONT>
+<FONT COLOR="#000080">
+involves a covert accusation of those who precipitately and without
+the grace of the Holy Ghost have set about the writing of the gospels.
+<P>
+Matthew to be sure and Mark and John as well as Luke did not
+</FONT>
+<FONT COLOR="#800000">
+'take in hand'
+</FONT>
+<FONT COLOR="#000080">
+to write, but filled with the Holy Ghost have written the Gospels.
+</FONT>
+<FONT COLOR="#800000">
+'Many have taken in hand to compose a narrative of the events which are
+quite definitely familiar among us'
+</FONT>
+<FONT COLOR="#000080">.
+The Church possesses four Gospels, heresy a great many, of which one is entitled
+<I>'The Gospel according to the Egyptians'</I>,
+and another <I>'The Gospel according to the Twelve Apostles'</I>.
+<I>Basilides</I> also has presumed to write a gospel,
+and to call it by his own name.
+</FONT>
+<FONT COLOR="#800000">'Many have taken in hand '
+</FONT>
+<FONT COLOR="#000080"> to write, but only four Gospels are recognized.
+From these the doctrines concerning the person of our Lord and Savior are to be derived.
+I know a certain gospel which is called <I>'The Gospel according to Thomas'</I>
+and a <I>'Gospel according to Matthias'</I>,
+and many others have we read - lest we should in any way be considered ignorant
+because of those who imagine that they posses some knowledge if
+they are acquainted with these.
+Nevertheless, among all these we have approved solely what the Church
+has recognized, which is that only the four Gospels should be accepted.
+</FONT>
+</BLOCKQUOTE>
+
+<P>
+Origen also wrote commentaries on the Gospels according to Matthew and John.
+Now and then Origen does quote or refer to (sometimes with approval) the
+<A HREF="#Gospel_of_Peter">Gospel of Peter</A> and the
+<A HREF="#Gospel_of_the_Hebrews">Gospel of the Hebrews</A>.
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Acts"><HR SIZE=6></A>
+<H3>Origen and Acts</H3>
+
+<P>
+Origen's testimony concerning the Book of Acts is pervasive in his writings.
+As would be expected, he attributes Acts to Luke,
+the author of the Third Gospel; see p. 137 of
+<A HREF="references.shtml#Metzger">[Metzger]</A>.
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Pauline"><HR SIZE=6></A>
+<H3>Origen and the Pauline Epistles</H3>
+
+<P>
+Origen makes frequent citations from the Pauline Epistles,
+including even the brief letter of Philemon (<I>Jer. hom.</I> 20.2).
+Often he uses the formula 'Paul says' or 'Paul said',
+and sometimes adds the name of those whom the apostle addresses.
+Only in the case of 2 Timothy does Origen make the remark
+<FONT COLOR="#000080">
+'some have dared to reject this Epistle, but they were not able'
+</FONT>
+(<I>In Matt. ser. vet. interp.</I> 117).
+See p. 138 of <A HREF="references.shtml#Metzger">[Metzger]</A>.
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Hebrews"><HR SIZE=6></A>
+<H3>Origen and the Hebrews</H3>
+
+<P>
+Throughout Origen's writings he quotes from the Epistle to the Hebrews
+more than 200 times, and in the vast majority of his references
+he is content to attribute it to Paul as its author.
+But near the close of his life (after 245 CE),
+where Origen is speaking as a scholar,
+he admits that the tradition of its authorship is wholly uncertain.
+From the composite account in <A HREF="Eusebius.shtml">[Eusebius]</A>:
+
+<BLOCKQUOTE>
+In addition he makes the following statements concerning the Epistle to the Hebrews,
+in his <I>Homilies</I> upon it:
+<FONT COLOR="#000080">
+'That the character of the diction of the Epistles entitled 'To the Hebrews'
+has not the apostle's rudeness in speech,
+who acknowledged himself to be rude in speech (2 Cor. 6:6),
+that is, in style, but that the Epistle is better Greek in the framing of its diction,
+will be admitted by everyone who is able to discern differences of style.
+But again, on the other hand, that the thoughts of the Epistle are admirable,
+and not inferior to the acknowledged writings of the apostle,
+this also everyone who carefully examines the apostolic text will admit'.
+</FONT>
+Further on he adds,
+<FONT COLOR="#000080">
+If I gave my opinion, I should say that the thoughts are those of the apostle,
+but the style and composition belong to some one who remembered the apostle's
+teachings and wrote down at his leisure what had been said by his teacher.
+Therefore, if any church holds that this Epistle is by Paul,
+let it be commended for this also.
+For it is not without reason that the men of old time have handed it down as Paul's.
+But who wrote the Epistle in truth, God knows.
+Yet the account that has reached us
+</FONT>
+[is twofold]
+<FONT COLOR="#000080">,
+some saying that Clement,
+bishop of Rome, wrote the Epistle, and others, that it was Luke,
+the one who wrote the Gospel and the Acts.
+</FONT>
+(6.25.11-14)
+</BLOCKQUOTE>
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="James"><HR SIZE=6></A>
+<H3>Origen and James</H3>
+
+<P>
+Although the Epistle of James is quoted several times by Origen,
+in his <I>Commentary on John</I> (19.61) he refers to it as
+<FONT COLOR="#000080">
+'the Epistle of James that is in circulation'
+</FONT>,
+implying some doubt as to its authenticity.
+One also notes that in Origen's <I>Commentary on Matthew</I> (2.17),
+when he speaks at length of the brothers of Jesus,
+he mentions James but says nothing of his Epistle.
+For more discussion, see <A HREF="references.shtml#Ruwet">[Ruwet]</A> pp. 29-32.
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="I_Peter"><HR SIZE=6></A><A NAME="II_Peter"></A>
+<H3>Origen and I-II Peter</H3>
+
+<P>
+Throughout Origen's writings that have come down to us in Greek,
+he does quote from I Peter, but never from II Peter.
+And from the composite Latin account in
+<A HREF="references.shtml#Eusebius">[Eusebius]</A>:
+<BLOCKQUOTE>
+<FONT COLOR="#000080">
+And Peter , on whom the Church of Christ is built,
+</FONT>
+<FONT COLOR="#800000">
+'against which the gates of hell shall not prevail'
+</FONT>
+<FONT COLOR="#000080">
+(Matt. 16:18), has left one acknowledged Epistle; possibly also a second, but this is disputed.
+</FONT>
+(6.25.8)
+</BLOCKQUOTE>
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="I_John"><HR SIZE=6></A><A NAME="II_John"></A><A NAME="III_John"></A>
+<H3>Origen and I-III John, and the Revelation of John</H3>
+<P>
+Throughout Origen's writings that have come down to us in Greek,
+he does quote from I John, but never from II or III John.
+And from the composite Latin account in
+<A HREF="references.shtml#Eusebius">[Eusebius]</A>:
+<BLOCKQUOTE>
+<FONT COLOR="#000080">
+Why need I speak of him who leaned back on Jesus' breast (John 13:25),
+John, who has left behind one Gospel,
+though he confessed that he could write so many that even
+the world itself could not contain them (John 21:25).
+And he wrote also the Apocalypse, being ordered to keep silence and
+not to write the voices of the seven thunders (Rev. 10:4).
+He has also left an Epistle of a very few lines; and, it may be,
+a second and a third; for not all say that these are genuine --
+but the two of them are not a hundred lines long.
+</FONT>
+(6.25.9-10)
+</BLOCKQUOTE>
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Jude"><HR SIZE=6></A>
+<H3>Origen and Jude</H3>
+<P>
+In Origen's <I>Commentary on Matthew</I> (10.17), he says
+<BLOCKQUOTE>
+<FONT COLOR="#000080">
+And Jude, who wrote an Epistle of but a few lines,
+yet filled with the healthful words of heavenly grace,
+said in the salutation: Jude, a servant of Jesus Christ, and brother of James.
+</FONT>
+</BLOCKQUOTE>
+
+<P>
+For more discussion, see <A HREF="references.shtml#Ruwet">[Ruwet]</A> pp. 29-32.
+
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Gospel_of_Peter"><HR SIZE=6></A>
+<H3>Origen and the Gospel of Peter</H3>
+<P>
+Origen refers to the Gospel of Peter in connection with identifying
+the brothers of Jesus as sons of Joseph by a former wife
+(<I>Comm. in Matt.</I> 10.17).
+See p. 137 of <A HREF="references.shtml#Metzger">[Metzger]</A>.
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Gospel_of_the_Hebrews"><HR SIZE=6></A>
+<H3>Origen and the Gospel of the Hebrews</H3>
+
+<P>
+More than once Origen refers to the Gospel of the Hebrews,
+sometimes without further comment (<I>Comm. in John</I> 2.12; <I>Comm. in Matt.</I> 16.12),
+sometimes with a qualifying phrase, such as
+<FONT COLOR="#000080">'if any one receives it'</FONT>
+(<I>Hom. in Jeremiah</I> 15.4; <I>Comm. in Matt.</I> 15.14).
+See p. 137 of <A HREF="references.shtml#Metzger">[Metzger]</A>.
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Preaching_of_Peter"><HR SIZE=6></A>
+<H3>Origen and the Preaching of Peter</H3>
+
+<P>
+Origen refers to the Preaching of Peter twice.
+The first is a report of its use by Heracleon, the Valentinian:
+<BLOCKQUOTE>
+<FONT COLOR="#000080">
+Now there is much to adduce from the words quoted by Heracleon
+from the so-called Preaching of Peter,
+and regarding them inquiry has to be made concerning the book,
+whether it is genuine or not genuine or mixed.
+But for that very reason we would willingly pass it by and merely
+refer to the fact that it states that Peter taught:
+(God) should not be worshipped in the manner of the Greeks,
+who take material things and serve sticks and stones.
+Also the Divine ought not to be worshipped in the manner of the Jews,
+for they, who believe that they alone know God, rather do not know him and worship angels,
+the month and the moon.
+</FONT>
+(<I>Comm. in John</I> 13.17)
+</BLOCKQUOTE>
+
+<P>
+And another passage preserved only in a Latin translation:
+<BLOCKQUOTE>
+<FONT COLOR="#000080">
+And if anyone should confront us with (a section) from that book which is
+called the 'Doctrine of Peter', 
+in which the Savior seem to say to the disciples:
+</FONT>
+<FONT COLOR="#800000">
+'I am not a bodiless demon'
+</FONT>
+<FONT COLOR="#000080">,
+then the answer must be given him, in the first place,
+that this book is not included among the books of the Church,
+and further it must be pointed out that this writing comes
+neither from Peter nor from any other person inspired by the Spirit of God.
+</FONT>
+(<I>De Princ.</I> praef. 8)
+</BLOCKQUOTE>
+
+<P>
+Whether the 'Doctrine of Peter' is the same as the 'Preaching of Peter'
+is discussed in
+<A HREF="references.shtml#Schneemelcher">[Schneemelcher]</A>, V. 2, p. 36.
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Acts_of_Paul"><HR SIZE=6></A>
+<H3>Origen and the Acts of Paul</H3>
+<P>
+Origen refers to the Acts of Paul twice.
+In his work <I>De Principiis</I> he quotes a saying from the Acta Pauli
+(so in Rufinus' Latin translation):
+<FONT COLOR="#800000">
+'This is the Word, a living Being'
+</FONT> (I2.3).
+So far the quotation has not come to light in any known text of the Acts of Paul.
+But the following quotation <I>has</I> been verified:
+<BLOCKQUOTE>
+<FONT COLOR="#000080">
+If anyone cares to accept was is written in the Acts of Paul,
+where the Lord says:
+</FONT>
+<FONT COLOR="#800000">
+'I am on the point of being crucified afresh'
+</FONT>
+<FONT COLOR="#000080"> ...</FONT>
+(<I>Comm. in John</I> 20.12)
+</BLOCKQUOTE>
+
+<P>
+Origen thus knew this work, and probably valued it;
+at least he did not reject it as heretical.
+For more discussion see
+<A HREF="references.shtml#Schneemelcher">[Schneemelcher]</A>, V. 2, p. 215.
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="I_Clement"><HR SIZE=6></A>
+<H3>Origen and I Clement</H3>
+<P>
+Origen quotes from I Clement 4 times, see p. 140 of
+<A HREF="references.shtml#Metzger">[Metzger]</A>.
+
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Epistle_of_Barnabas"><HR SIZE=6></A>
+<H3>Origen and the Epistle of Barnabas</H3>
+<P>
+Origen quotes from the Epistle of Barnabas 3 times;
+in fact on one occasion he calls it
+<FONT COLOR="#000080">'Barnabas'general epistle'</FONT>. (<I>Contra Celsum</I> 1.63).
+See p. 140 of <A HREF="references.shtml#Metzger">[Metzger]</A>.
+
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Didache"><HR SIZE=6></A>
+<H3>Origen and the Didache</H3>
+<P>
+<P>
+According to <A HREF="references.shtml#Grant">[Grant]</A>:
+<BLOCKQUOTE>
+It would appear that while he [Origen] was at Alexandria he regarded
+the <I>Didache</I>, Hermas and Barnabas as canonical,
+but that after moving to Caesarea he became aware that they were not accepted there.
+(p. 171)
+</BLOCKQUOTE>
+<P>
+For more discussion,
+see <A HREF="references.shtml#Ruwet">[Ruwet]</A> pp. 33-38.
+
+<!----------------------------------------------------------------->
+<P>
+<A NAME="Shepherd_of_Hermas"><HR SIZE=6></A>
+<H3>Origen and the Shepherd of Hermas</H3>
+<P>
+Origen makes numerous references to the Shepherd of Hermas,
+and on one occasion, in his later years, he describes it as
+<FONT COLOR="#000080">
+'a work which seems to me very useful, and, as I believe, divinely inspired'
+</FONT>. (<I>Comm. in Rom.</I> 10.31, written about 244-6).
+See p. 140 of <A HREF="references.shtml#Metzger">[Metzger]</A>.
+
+
+
+        </TD>
+    </TR>
+
+</TABLE>
+
+
+<P>
+<hr noshade>
+
+<CENTER>
+<P>
+<FONT SIZE="+0">
+Pages created by Glenn Davis, 1997-2010. <BR>
+For additions, corrections, and comments send e-mail to
+<I>
+<A HREF="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#103;&#100;&#097;&#118;&#105;&#115;&#064;&#110;&#116;&#099;&#097;&#110;&#111;&#110;&#046;&#111;&#114;&#103;">
+&#103;&#100;&#097;&#118;&#105;&#115;&#064;&#110;&#116;&#099;&#097;&#110;&#111;&#110;&#046;&#111;&#114;&#103;
+</A></I>
+</FONT>
+
+</CENTER>
+
+
+
+</BODY>
+</HTML>

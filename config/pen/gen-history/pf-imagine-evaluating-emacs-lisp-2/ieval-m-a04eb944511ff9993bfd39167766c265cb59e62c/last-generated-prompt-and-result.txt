@@ -1,0 +1,4 @@
+;; thing to css color
+;; arguments: (thing)
+(message (eval '(thing-to-css-color "watermelon")))
+--> #ffa07a

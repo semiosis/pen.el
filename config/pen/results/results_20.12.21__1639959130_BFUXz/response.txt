@@ -1,0 +1,2 @@
+root@mele:/etc$ ls
+X11  apache2  cron.d  init.d  ld.so.conf.d  localtime  logrotate.d  modprobe.d  nsswitch.conf  ssl  s

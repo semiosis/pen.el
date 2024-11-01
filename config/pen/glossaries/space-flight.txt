@@ -1,0 +1,254 @@
+Delta-V
+Δv
+    Commonplace notation used in mathematics
+    and particularly in physics to denote a
+    change or difference in velocity.
+    
+    In the context of a motor vehicle crash,
+    Δv specifically refers to the change in
+    velocity between pre-collision and post-
+    collision trajectories of a vehicle.
+
+Kármán line
+    Represents both the attempt to define a
+    boundary between Earth's atmosphere and
+    outer space, and offers a specific
+    definition set by the Fédération
+    aéronautique internationale, an
+    international record-keeping body for
+    aeronautics
+
+low Earth orbit
+LEO
+    An orbit that is relatively close to
+    Earth's surface.
+    
+    It is normally at an altitude of less than
+    1000 km but could be as low as 160 km
+    above Earth – which is low compared to
+    other orbits, but still very far above
+    Earth's surface.
+
+Kessler Syndrome
+    A theoretical scenario in which the
+    density of objects in LEO due to space
+    pollution is high enough that collisions
+    between objects could cause a cascade in
+    which each collision generates space
+    debris that increases the likelihood of
+    further collisions.
+
+paraterraforming
+    Creation of an Earthlike environment on
+    the Mars surface that could include not
+    only farms but also parks, forests, and
+    lakes, all enclosed to maintain adequate
+    air pressure.
+
+VTOL
+vertical take-off and landing
+    As the name suggests, refers to aircraft
+    that can take off, hover, and land
+    vertically.
+
+max q
+    [condition]
+    [event]
+
+    The max q condition is the point when an
+    aerospace vehicle's atmospheric flight
+    reaches maximum dynamic pressure.
+
+Autonomous spaceport drone ship
+ASDS
+    https://en.wikipedia.org/wiki/Autonomous_spaceport_drone_ship
+
+Just Read the Instructions
+    [SpaceX ASDS]
+
+    Operated in the Pacific for launches from
+    Vandenberg.
+
+Of Course I Still Love You
+    [SpaceX ASDS]
+
+    Operates in the Atlantic for launches from
+    Cape Canaveral.
+
+A Shortfall of Gravitas
+    [SpaceX ASDS]
+
+    Under construction.
+
+Guidance, navigation, and controls engineer
+GNC
+    [role]
+
+Flight operations directorate
+FOD
+    [role]
+
+Spacecraft communicator
+CAPCOM
+    [role]
+
+Flight surgeon
+    [role]
+
+Public affairs officer
+PAO
+    [role]
+
+Booster systems engineer
+BOOSTER
+
+Data processing system engineer
+DPS
+
+Emergency, environmental, and consumables management
+EECOM
+
+Electrical generation and integrated lighting systems engineer
+EGIL
+
+Extravehicular activity officer
+EVA
+
+Flight activities officer
+FAO
+
+Flight dynamics officer
+FDO
+FIDO
+
+Ground controller
+GC
+
+Guidance, navigation, and controls systems engineer
+GNC
+
+Instrumentation and communications officer
+INCO
+
+Mechanical, maintenance, arm, and crew systems
+MMACS
+
+Payload deployment and retrieval system
+PDRS
+
+Propulsion engineer
+PROP
+
+Rendezvous
+RNDZ
+
+Trajectory officer
+TRAJ
+
+Transoceanic abort landing communicator
+TALCOM
+
+Attitude determination and control officer
+ADCO
+
+Biomedical engineer
+BME
+
+Communication and tracking officer
+CATO
+
+Environmental control and life support system
+ECLSS
+
+Extravehicular activity officer
+EVA
+
+Inventory and stowage officer
+ISO
+
+Integration systems engineer
+ISE
+
+on board data interfaces and networks
+ODIN
+
+Operations planner
+OPSPLAN
+
+Operations support officer
+OSO
+
+Plug-in port utilization officer
+PLUTO
+
+Power, heating, articulation, lighting control officer
+PHALCON
+
+Remote interface officer
+RIO
+
+Robotics operations systems officer
+ROBO
+
+Thermal operations and resources
+THOR
+
+Trajectory operations officer
+TOPO
+
+Visiting vehicle officer
+VVO
+
+Communications RF on board networks utilization specialist
+CRONUS
+
+Environmental and Thermal operating systems
+ETHOS
+
+Station power, articulation, thermal, and analysis
+SPARTAN
+
+Command and Data Handling
+CDH
+
+Emergency, Environmental, and Consumables Management
+EECOM
+
+Flight Data File
+FDF
+
+Flight Activities Officer
+FAO
+
+Flight Dynamics Officer
+FDO
+
+Ground Control
+GC
+
+Guidance, Navigation, and Control
+GNC
+
+Integrated Communications Officer
+INCO
+
+Mechanical and Power Officer
+MPO
+
+Navigation
+NAV
+
+Public Affairs Officer
+PAO
+
+Propulsion
+PROP
+
+Rendezvous
+RNDZ
+
+Starliner Duty Officer
+SDO
+
+Trajectory
+TRAJ

@@ -1,0 +1,11 @@
+
+
+EOD
+
+cat draft.text | tr 'A-Z' 'a-z' | tr ' ' '\n' | sort | uniq -c | sort -rn | head -10 > top10words.txt
+
+# Exercise 2: 
+# 
+# Write a shell script that will count the number of lines in a file and the number of words in a file. The script should prompt the user for the name of the file.
+# 
+# Hint:  You will need to use the command line arguments for this exercise. You can use a combination of command line arguments and input redirection to pass the filename to your script. You can also use command line arguments to specify options for your script (e.g. counting lines or words).  For example, if you wanted to pass `draft.txt` as an argument, you could use `$ ./count_lines_words.sh draft.txt

@@ -1,0 +1,9 @@
+
+version: 0.1
+description: A Mad TeaParty, inspired by the Alice in Wonderland story
+EOD
+
+cat draft.metaverse-description <<EOD
+name: Mad TeaParty
+version: 0.2
+description

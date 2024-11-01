@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: OrCAD
+# contributor: Toptal & contributors
+# key: orcad
+# --
+
+### OrCAD ###
+
+### Cadence Design Systm's OrCAD ###
+*.dat

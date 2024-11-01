@@ -1,0 +1,25 @@
+ "Start a REPL"
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: "Start a REPL"
+    command: "cider repl"
+    delegate_to: localhost
+    register: repl_results
+  - name: "Wait for REPL to start"
+    wait_for:
+      path: "$HOME/.cider/repl-history"
+      state: touch
+    delegate_to: localhost
+    register: repl_results
+  - name: "Wait for REPL to start"
+    wait_for:
+      path: "$HOME/.cider/repl-history"
+      state: touch
+    delegate_to: localhost
+    register: repl_results
+  - name: "Wait for REPL to start"
+    wait_for:
+      path: "$HOME/.cider/repl-history"
+      state: touch
+    delegate

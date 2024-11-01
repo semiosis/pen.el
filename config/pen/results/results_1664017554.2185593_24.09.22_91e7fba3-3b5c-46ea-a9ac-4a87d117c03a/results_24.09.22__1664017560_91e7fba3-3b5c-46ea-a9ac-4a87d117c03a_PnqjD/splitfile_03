@@ -1,0 +1,4 @@
+
+  "Should be used on a list of numbers (for example a vector) in order to"
+  "find the consecutive numbers in ascending order"
+  ((x) (if (nil? x) x

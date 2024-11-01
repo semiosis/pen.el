@@ -1,0 +1,31 @@
+title: Statement of remorse
+tags: law prose chatbot
+doc: ''
+prompt-version: 2
+prompt: |
+  The following documents are to be submitted to
+  the court prior to the defendants'
+  sentencing. The documents are intended to
+  convey the defendants' remorse.
+  <delim>
+  I am truly sorry for my inexcusable actions. I
+  have caused real harm to the victims and have
+  let down not only my family, but the community
+  too. I want to do everything in my power to
+  make things right.
+  <delim>
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "#"
+cache: true
+vars: 
+examples: 
+preprocessors:
+- pf-correct-grammar
+prefer-external: true
+quality-script: my-quality-checker-for-this-prompt.sh
+validation-script: my-validator-for-this-prompt.sh
+n-test-runs: 5

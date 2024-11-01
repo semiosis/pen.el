@@ -1,0 +1,47 @@
+defer
+    An engine will not defer to a different
+    engine unless a defer is specified and the
+    prompt requests it.
+
+layers
+    'layers' is like 'provides' but also
+    reflects how the model was trained.
+
+    It says the layers of training /
+    finetuning.
+    
+        layers:
+        - foundation
+        - nl
+        - code
+
+    The above means that it is based on a
+    foundation model and may provide
+    foundation features but it is also
+    finetuned (nl then code), so may not be
+    ideal for a foundation task.
+
+    The layers also suggest that the engine
+    provides 'nl' and 'code' knowledge if a
+    prompt requires them.
+
+foundation
+    - What makes a LM a foundation LM?
+      - Generality and power
+    - What if a model is finetuned? Is it
+      still a foundation model?
+    - What if a model is just as general but
+      less powerful? Is it still a foundation
+      model?
+    - I can specify 'foundation: true' while
+      most definable tasks can be performed by
+      the model.  That may change in future.
+
+    I can specify 'foundation: true' while
+    most definable tasks can be performed by
+    the model.
+
+    That may change in future when the model
+    no longer performs most definable tasks,
+    or if the definition of a foundation model
+    changes.

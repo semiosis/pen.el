@@ -1,0 +1,15 @@
+"defn" is a macro that creates a function.
+(defn my-fn [x y]
+  (+ x y))
+(my-fn 1 2)
+
+(defn my-fn [x y]
+  (println "Hello")
+  (+ x y))
+(my-fn 1 2)
+
+(defn my-fn [x y]
+  (println "Hello")
+  (println (+ x y))
+  (+ x y))
+(

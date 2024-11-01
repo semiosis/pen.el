@@ -1,0 +1,27 @@
+
+But let us make sure you learn something today.
+Are you sure you want to know the answer?
+###
+Human: Yes.
+###
+AI: And do you actually want to use vscode for your future career?
+###
+Human: Yes.
+###
+AI: Then let me tell you.
+I do not think you should use vscode at all!
+###
+Human: Why is that?
+###
+AI: Because even though it is open source and has a lot of packages,
+most of them are not compatible with each other.
+You might make a great application with vscode,
+but the chance to make a faulty application is too high.
+###
+Human: So I should use repl.it instead?
+###
+AI: Yes. It is free, easy to use, compatible with almost all programming languages,
+and requires no installation.
+###
+Human: What about repl.run?
+

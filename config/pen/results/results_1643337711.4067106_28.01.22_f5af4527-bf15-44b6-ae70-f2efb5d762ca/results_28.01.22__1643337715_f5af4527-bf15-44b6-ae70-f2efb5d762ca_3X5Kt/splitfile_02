@@ -1,0 +1,1 @@
+ aws cloudwatch put-metric-alarm --alarm-name ec2-instance-stop-alarm --alarm-description "Alarm when an EC2 instance stops" --metric-name InstanceStatus.Status --namespace AWS/EC2 --stat

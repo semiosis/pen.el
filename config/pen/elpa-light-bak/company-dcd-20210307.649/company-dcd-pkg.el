@@ -1,0 +1,2 @@
+;;; Generated package description from company-dcd.el  -*- no-byte-compile: t -*-
+(define-package "company-dcd" "20210307.649" "Company backend for Dlang using DCD." '((company "0.9") (flycheck-dmd-dub "0.7") (yasnippet "0.8") (popwin "0.7") (cl-lib "0.5") (ivy "20160804.326")) :commit "858500115d4f0285f963698ede9492f409a90e52" :authors '(("tsukimizake <shomasd_at_gmail.com>")) :maintainer '("tsukimizake <shomasd_at_gmail.com>") :keywords '("languages") :url "http://github.com/tsukimizake/company-dcd")

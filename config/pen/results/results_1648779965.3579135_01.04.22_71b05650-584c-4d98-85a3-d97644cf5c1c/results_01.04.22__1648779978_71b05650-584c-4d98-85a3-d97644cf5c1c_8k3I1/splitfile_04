@@ -1,0 +1,45 @@
+VIM(1)                     User Commands                    VIM(1)
+
+NAME
+       vim - Vi IMproved, a programmers text editor
+
+SYNOPSIS
+       vim [option] [file ...]
+
+DESCRIPTION
+       Vim is a very powerful text editor. It is an improved version of the vi editor distributed with most UNIX systems.  Vim can
+       be used to edit both the command line and the first line of many types of text files.
+
+       The GUI version of Vim can be used to edit files in various graphical environments, such as X Windows.
+
+       The most used GUI version of Vim is gvim.
+
+       Vim is an almost compatible version of the vi editor distributed with the Berkeley UNIX system.
+
+       Vim is an improved version of the vi editor distributed with most UNIX systems.  Vim can be used to edit both the command line
+       and the first line of many types of text files.
+
+       The GUI version of Vim can be used to edit files in various graphical environments, such as X Windows.
+
+       The most used GUI version of Vim is gvim.
+
+       Vim is an almost compatible version of the vi editor distributed with the Berkeley UNIX system.
+
+       The following is a list of some of the new features which have been added since the last version of vi:
+
+       * undo
+       * block operations
+       * macros
+       * search highlighting
+       * incremental search
+       * command line history
+       * multiple windows
+       * code folding
+       * syntax highlighting
+       * autoindent
+       * color schemes
+       * terminal emulation
+       * special key handling
+       * user defined key mappings
+       * file browser
+       *

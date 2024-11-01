@@ -1,0 +1,6 @@
+[[String]] -> IO ()
+tabularise []     = return ()
+tabularise (row:rows) = do
+  putStrLn $ unlines (map show row)
+  tabularise rows
+EOD

@@ -1,0 +1,19 @@
+ -- from https://wiki.haskell.org/Simple_monad_examples
+
+Here's a little example (that is also in the Haskell wiki article):
+
+    newtype Counter a = Counter { count :: a }
+
+    instance Monad (Counter a) where
+        fmap f (Counter c) = Counter $ f c
+        return  x = Counter $ pure x
+        (Counter c1) >>= f = Counter $ do
+            x <- c1 -- get the current value
+            let count = f x -- run the function, ...
+            Counter $ -- and update it.
+                return $ count + 1
+    -->>
+
+  * I *think* this means that 'fmap' is used to change the value returned by the monad. 'return' is used to set the initial value of the monad. '>>=' is used to set what happens when the value changes.
+
+                                                   LIC

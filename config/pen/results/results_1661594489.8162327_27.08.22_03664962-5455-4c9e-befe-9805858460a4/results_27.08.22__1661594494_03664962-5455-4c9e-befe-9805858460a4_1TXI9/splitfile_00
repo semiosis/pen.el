@@ -1,0 +1,5 @@
+
+ <nowiki>readFile "myFile.txt"</nowiki>
+ instead.
+- you: OK, but what if I want to read it as text?
+- haskell guru: why would you want to

@@ -1,0 +1,28 @@
+[[https://www.youtube.com/watch?v=V8FEFw50lg4][Explaining Neural Scaling Laws - YouTube]]
+
+Strength to Weight Ratio
+    One property that is affected by SA/V is
+    the strength to weight ratio.
+    
+    Your text approaches this argument from a
+    biological standpoint.
+    
+    I'm instead going to address it from a
+    materials science angle.
+
+    The equation for an applied stress (σ) to
+    an resulting strain (ε) is:
+
+        σ = F/A = Eε = E(Δl/l)
+
+        pf-convert-ascii-to-latex-equation/1
+
+        \sigma = \frac{F}{A} = \epsilon = \frac{1}{A}\sqrt{\frac{1}{N} \sum_{i=1}^N \left(\frac{l_i - \overline{l}}{\Delta l}\right)^2}
+
+    Here E is the Young's modulus for the
+    material. This is something you can look
+    up in tables, which changes from material
+    to material.
+
+    https://youtu.be/f1Ln7X_MbHs?t=251
+

@@ -1,0 +1,12 @@
+
+#
+# This playbook is intended to be run against a fresh Library. It will
+# create a new top-level collection, then populate it with the content from
+# the sync source.
+#
+# The sync source is specified in the 'sync_source' variable. The source
+# can be any of the following:
+#   - a path on the local file system, e.g. '/path/to/files'
+#   - a URL to a tarball, e.g. 'http://example.com/files.tar' or 'https://example.com/files.tar'
+#   - a URL to a tarball which gzip compresses all of its contents, e.g. 'http://example.com/files.tgz' or 'https://example.com/files.tgz'
+#   - a URL to an apache directory listing, e.g., 'http

@@ -1,0 +1,46 @@
+search scope
+    Examples:
+    - Test code
+      file:(test|spec)
+    - Non-test code
+      -file:(test|spec)
+    - JSON files
+    - Text documents
+    - Non-vendor code
+    - Vendored code
+
+repository group
+repogroup
+    repogroup:python from \B\.\w+ import \w+
+
+    Examples:
+    - cncf
+      CNCF projects
+    - Refactor Python 2 to 3
+      refactor-python-2-to-3
+    - kubetnetes
+      Kubetnetes
+    - golang
+      Go
+    - stanford
+      Stanford University
+
+file
+      file:pod.yaml content:"kind: ReplicationController"
+
+      https://sourcegraph.com/search
+
+content
+      file:pod.yaml content:"kind: ReplicationController"
+
+type
+      repo:^github\.com/golang/go$ type:diff after:"1 week ago"
+
+after
+      repo:^github\.com/golang/go$ type:diff after:"1 week ago"
+
+repo
+      repo:^github\.com/golang/go$ type:diff after:"1 week ago"
+
+lang
+      lang:javascript alert(:[variable])

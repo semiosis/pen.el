@@ -1,0 +1,8 @@
+# key: ci
+# name: cache
+# --
+from functools import lru_cache
+
+@lru_cache(maxsize=None)
+def web_lookup(url):
+    return urllib.urlopen(url).read()

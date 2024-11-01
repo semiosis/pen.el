@@ -1,0 +1,139 @@
+AI alignment
+alignment
+    Aims to align AI goal systems with human
+    values.
+
+capability control
+    Aims to reduce an AI system's capacity to
+    harm humans or gain control.
+    
+    Capability control proposals are generally
+    not considered reliable or sufficient to
+    solve the control problem, but rather as
+    potentially valuable supplements to
+    alignment efforts.
+
+AI control problem
+superintelligence control problem
+    Approaches:
+    - alignment
+    - capability control
+
+    https://futureoflife.org/2015/11/23/the-superintelligence-control-problem/
+
+    Aspects of how to build AI systems such
+    that they will aid rather than harm their
+    creators.
+    
+    One particular concern is that humanity
+    will have to solve the control problem
+    before a superintelligent AI system is
+    created, as a poorly designed
+    superintelligence might rationally decide
+    to seize control over its environment and
+    refuse to permit its creators to modify it
+    after launch.
+    
+    In addition, some scholars argue that
+    solutions to the control problem,
+    alongside other advances in AI safety
+    engineering, might also find applications
+    in existing non-superintelligent AI. 
+
+technocentrism
+    A value system that is centered on
+    technology and its ability to control and
+    protect the environment.[citation needed]
+    Technocentrics argue that technology can
+    address ecological problems through its
+    problem-solving ability, efficiency, and
+    its managerial means.
+    
+    Specifically, these capabilities allow
+    humans control over nature, allowing them
+    to correct or negotiate environmental
+    risks or problems.
+    
+    Although technocentrics may accept that
+    environmental problems exist, they do not
+    see them as problems to be solved by a
+    reduction in industry.
+    
+    Rather, environmental problems are seen as
+    problems to be solved using rational,
+    scientific and technological means.
+    
+    They also believe in scientific research.
+    
+    Indeed, technocentrics see the way forward
+    for both developed and developing
+    countries, and the solutions to
+    environmental problems, as lying in
+    scientific and technological advancement
+    (sometimes referred to as
+    sustainopreneurship).
+
+ecocentrism
+    Often contrasted with ecocentrism.
+    
+    Ecocentrics, including deep ecologists,
+    see themselves as being subject to nature,
+    rather than in control of it.
+    
+    They lack faith in modern technology and
+    the bureaucracy attached to it so they
+    maintain responsibility for the
+    environment.
+    
+    Ecocentrics will argue that the natural
+    world should be respected for its
+    processes and products and that low-impact
+    technology and self-sufficiency is more
+    desirable than technological control of
+    nature.
+    
+    Fundamentally, ecocentrism maintains that
+    concerns for the natural environment
+    should dominate the needs of humankind,
+    pitting it against the anthropocentric
+    position of technocentrism, which pushes
+    the needs of humans at the forefront even
+    at the expense of everything else.
+
+prosaic
+    Having the style or diction of prose;
+    lacking poetic beauty.
+
+    See:
+    - prosaic AGI.
+
+prosaic AGI
+    It now seems possible that we could build
+    "prosaic" AGI, which can replicate human
+    behavior but doesn't involve qualitatively
+    new ideas about "how intelligence works".
+
+scaling laws
+    The observed trend of some ML
+    architectures (notably transformers) to
+    scale their performance on predictable
+    power law when given more compute, data,
+    or parameters (model size), assuming they
+    are not bottlenecked on one of the other
+    resources.
+
+neural scaling law
+    Widely observed neural scaling laws, in
+    which error falls off as a power of the
+    training set size, model size, or both,
+    have driven substantial performance
+    improvements in DL.
+    
+    However, these improvements through
+    scaling alone require considerable costs
+    in compute and energy.
+
+    https://www.alignmentforum.org/tag/scaling-laws
+
+scaling laws for neural language models
+    https://arxiv.org/abs/2001.08361

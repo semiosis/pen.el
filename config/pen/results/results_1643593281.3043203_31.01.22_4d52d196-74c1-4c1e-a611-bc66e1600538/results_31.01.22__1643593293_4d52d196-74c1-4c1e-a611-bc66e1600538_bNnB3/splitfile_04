@@ -1,0 +1,7 @@
+
+(defn args-to-envs [args]
+  (join "\n"
+        (map (fn [[key value]]
+               (str (name key) "=" (cmd value)))
+             (seq args))))
+

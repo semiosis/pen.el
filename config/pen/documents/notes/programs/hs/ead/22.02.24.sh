@@ -1,0 +1,6 @@
+cd /root/.emacs.d/elpa;  "ead" "'src-block" "#" "<==" "ead"
+cd /root/.emacs.d/elpa;  "ead" "-d" "'src-block" "#" "<==" "ead"
+cd /root/.emacs.d/elpa-full;  "ead" "-d" "'src-block" "#" "<==" "ead"
+cd /root/.emacs.d/elpa-full;  "ead" "-d" "'src-block" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bdap-ui-breakpoints\\b" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\borg-toggle-link-display\\b" "#" "<==" "zsh"

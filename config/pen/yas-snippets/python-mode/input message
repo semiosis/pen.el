@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: input message
+# group: 
+# key: input
+# --
+rating = input("Please rate the story quality from 1-10: ")

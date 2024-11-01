@@ -1,0 +1,70 @@
+::=
+    [#BNF]
+
+    Means:
+    - May expand into, or
+    - May be replaced with.
+
+M-expression
+meta-expressions
+    An early proposed syntax for the Lisp
+    programming language, inspired by
+    contemporary languages such as Fortran and
+    ALGOL.
+
+    The notation was never implemented into
+    the language and, as such, it was never
+    finalized.
+
+Parsing
+    Takes a grammar and a string and answers
+    two questions:
+    - Is that string in the language of the
+      grammar?
+    - What is the structure of that string
+      relative to the grammar?
+
+Context-sensitivity
+    https://matt.might.net/articles/grammars-bnf-ebnf/
+
+    Means that terminal symbols may also
+    appear in the left-hand sides of rules.
+
+terminal symbol
+    A literal like ("+" or "function") or a
+    class of literals (like integer). 
+
+Regular extensions to BNF
+    https://matt.might.net/articles/grammars-bnf-ebnf/
+
+    It's common to find regular-expression-
+    like operations inside grammars.
+    
+    For instance, the Python lexical
+    specification uses them.
+    
+    In these grammars:    
+        postfix * means "repeated 0 or more times"
+        postfix + means "repeated 1 or more times"
+        postfix ? means "0 or 1 times"
+
+    The definition of floating point literals
+    in Python is a good example of combining
+    several notations:    
+        floatnumber   ::=  pointfloat | exponentfloat
+        pointfloat    ::=  [intpart] fraction | intpart "."
+        exponentfloat ::=  (intpart | pointfloat) exponent
+        intpart       ::=  digit+
+        fraction      ::=  "." digit+
+        exponent      ::=  ("e" | "E") ["+" | "-"] digit+
+
+    It does not use angle brackets around
+    names (like many EBNF notations and ABNF),
+    yet does use ::= (like BNF). It mixes
+    regular operations like + for non-empty
+    repetition with EBNF conventions like [ ]
+    for option.
+    
+    The grammar for the entire Python language
+    uses a slightly different (but still
+    regular) notation.

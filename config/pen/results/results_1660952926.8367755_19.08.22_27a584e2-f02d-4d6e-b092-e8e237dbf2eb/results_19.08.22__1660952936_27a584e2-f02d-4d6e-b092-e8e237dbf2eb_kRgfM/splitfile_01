@@ -1,0 +1,25 @@
+ "Connect to the running container"
+  hosts: all
+  gather_facts: no
+  tasks:
+  - name: "Connect to the running container"
+    command: "docker exec -it pen-cider-test /bin/bash"
+    become: yes
+    become_method: sudo
+    become_user: root
+    register: output
+    delegate_to: localhost
+    ignore_errors: yes
+- name: "Connect to the running container"
+  hosts: all
+  gather_facts: no
+  tasks:
+  - name: "Connect to the running container"
+    command: "docker exec -it pen-cider-test /bin/bash"
+    become: yes
+    become_method: sudo
+    become_user: root
+    register: output
+    delegate_to: localhost
+    ignore_errors: yes
+- name: "Connect to

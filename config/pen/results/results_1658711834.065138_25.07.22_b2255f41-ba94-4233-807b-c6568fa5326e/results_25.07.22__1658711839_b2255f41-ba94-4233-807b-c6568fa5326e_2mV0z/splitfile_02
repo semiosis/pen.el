@@ -1,0 +1,7 @@
+ do
+
+y <- maybe (fail "zero") return (Just 5)
+
+x <- y
+
+print x

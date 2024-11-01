@@ -1,0 +1,7 @@
+cd /root/repos/bubbletea/examples/table;  "gc" "http://github.com/charmbracelet/bubbles/table" "#" "<==" "gc"
+cd /root/repos/bubbletea/examples/table;  "gc" "http://github.com/charmbracelet/bubbles/table" "#" "<==" "gc"
+cd /root/repos/bubbletea/examples/table;  "gc" "http://github.com/charmbracelet/bubbles/table" "#" "<==" "gc"
+cd /root/repos/bubbletea/examples/table;  "gc" "http://github.com/charmbracelet/bubbles/table" "#" "<==" "gc"
+cd /root/repos/bubbletea/examples/table/charmbracelet/bubbles;  "gc" "http://github.com/charmbracelet/bubbles/table" "#" "<==" "gc"
+cd /root/repos/bubbletea/examples/table/charmbracelet/bubbles;  "gc" "http://github.com/charmbracelet/bubbles/table" "#" "<==" "gc"
+cd /root/repos/bubbletea/examples/progress-animated;  "gc" "http://github.com/charmbracelet/bubbles/progress" "#" "<==" "gc"

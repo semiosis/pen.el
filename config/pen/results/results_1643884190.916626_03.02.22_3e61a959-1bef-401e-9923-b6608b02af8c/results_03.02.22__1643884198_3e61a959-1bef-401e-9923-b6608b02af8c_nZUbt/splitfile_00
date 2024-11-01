@@ -1,0 +1,8 @@
+1. This function takes two arguments, path and buf
+2. It then checks if the path is "/"
+3. If it is then it returns the list of directories
+4. If it is not then it checks if the path is "." or ".."
+5. If it is then it returns the list of directories
+6. If it is not then it checks if the path is "/"
+7. If it is then it returns the list of files
+8.

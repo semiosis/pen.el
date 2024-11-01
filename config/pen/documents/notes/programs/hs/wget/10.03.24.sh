@@ -1,0 +1,5 @@
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=6Xta6lm0zok" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=Wpjpemdu9R4" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=YJbzKQyaRb4" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=p-dJU7KFdys" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=nz5tgELtkG8&t=92s" "#" "<==" "pen-ci"

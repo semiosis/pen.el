@@ -1,0 +1,78 @@
+HTTP/1.1 200 OK
+Date: Wed, 06 Apr 2022 07:23:03 GMT
+Server: Apache
+Last-Modified: Wed, 28 Feb 2001 20:43:34 GMT
+ETag: "1584-37e6407462980"
+Accept-Ranges: bytes
+Content-Length: 5508
+Content-Type: text/html; charset=UTF-8
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+
+<title>Haskell 98 Index</title><hr><body bgcolor="#ffffff"> <h3>Gentle Intro: Index</h3><hr>
+<UL><LI><a href="intro.html#sect1">1<tt>&nbsp;&nbsp;</tt>Introduction</a>
+<LI><a href="goodies.html#sect2">2<tt>&nbsp;&nbsp;</tt>Values, Types, and Other Goodies</a>
+<LI><a href="goodies.html#sect2.1">2.1<tt>&nbsp;&nbsp;</tt>Polymorphic Types</a>
+<LI><a href="goodies.html#sect2.2">2.2<tt>&nbsp;&nbsp;</tt>User-Defined Types</a>
+<LI><a href="goodies.html#sect2.2.1">2.2.1<tt>&nbsp;&nbsp;</tt>Recursive Types</a>
+<LI><a href="goodies.html#sect2.3">2.3<tt>&nbsp;&nbsp;</tt>Type Synonyms</a>
+<LI><a href="goodies.html#sect2.4">2.4<tt>&nbsp;&nbsp;</tt>Built-in Types Are Not Special</a>
+<LI><a href="goodies.html#sect2.4.1">2.4.1<tt>&nbsp;&nbsp;</tt>List Comprehensions and Arithmetic Sequences</a>
+<LI><a href="goodies.html#sect2.4.2">2.4.2<tt>&nbsp;&nbsp;</tt>Strings</a>
+<LI><a href="functions.html#sect3">3<tt>&nbsp;&nbsp;</tt>Functions</a>
+<LI><a href="functions.html#sect3.1">3.1<tt>&nbsp;&nbsp;</tt>Lambda Abstractions</a>
+<LI><a href="functions.html#sect3.2">3.2<tt>&nbsp;&nbsp;</tt>Infix Operators</a>
+<LI><a href="functions.html#sect3.2.1">3.2.1<tt>&nbsp;&nbsp;</tt>Sections</a>
+<LI><a href="functions.html#sect3.2.2">3.2.2<tt>&nbsp;&nbsp;</tt>Fixity Declarations</a>
+<LI><a href="functions.html#sect3.3">3.3<tt>&nbsp;&nbsp;</tt>Functions are Non-strict</a>
+<LI><a href="functions.html#sect3.4">3.4<tt>&nbsp;&nbsp;</tt>"Infinite" Data Structures</a>
+<LI><a href="functions.html#sect3.5">3.5<tt>&nbsp;&nbsp;</tt>The Error Function</a>
+<LI><a href="patterns.html#sect4">4<tt>&nbsp;&nbsp;</tt>Case Expressions and Pattern Matching</a>
+<LI><a href="patterns.html#sect4.1">4.1<tt>&nbsp;&nbsp;</tt>Pattern-Matching Semantics</a>
+<LI><a href="patterns.html#sect4.2">4.2<tt>&nbsp;&nbsp;</tt>An Example</a>
+<LI><a href="patterns.html#sect4.3">4.3<tt>&nbsp;&nbsp;</tt>Case Expressions</a>
+<LI><a href="patterns.html#sect4.4">4.4<tt>&nbsp;&nbsp;</tt>Lazy Patterns</a>
+<LI><a href="patterns.html#sect4.5">4.5<tt>&nbsp;&nbsp;</tt>Lexical Scoping and Nested Forms</a>
+<LI><a href="patterns.html#sect4.6">4.6<tt>&nbsp;&nbsp;</tt>Layout</a>
+<LI><a href="classes.html#sect5">5<tt>&nbsp;&nbsp;</tt>Type Classes and Overloading</a>
+<LI><a href="moretypes.html#sect6">6<tt>&nbsp;&nbsp;</tt>Types, Again</a>
+<LI><a href="moretypes.html#sect6.1">6.1<tt>&nbsp;&nbsp;</tt>The Newtype Declaration</a>
+<LI><a href="moretypes.html#sect6.2">6.2<tt>&nbsp;&nbsp;</tt>Field Labels</a>
+<LI><a href="moretypes.html#sect6.3">6.3<tt>&nbsp;&nbsp;</tt>Strict Data Constructors</a>
+<LI><a href="io.html#sect7">7<tt>&nbsp;&nbsp;</tt>Input/Output</a>
+<LI><a href="io.html#sect7.1">7.1<tt>&nbsp;&nbsp;</tt>Basic I/O Operations</a>
+<LI><a href="io.html#sect7.2">7.2<tt>&nbsp;&nbsp;</tt>Programming With Actions</a>
+<LI><a href="io.html#sect7.3">7.3<tt>&nbsp;&nbsp;</tt>Exception Handling</a>
+<LI><a href="io.html#sect7.4">7.4<tt>&nbsp;&nbsp;</tt>Files, Channels, and Handles</a>
+<LI><a href="io.html#sect7.5">7.5<tt>&nbsp;&nbsp;</tt>Haskell and Imperative Programming</a>
+<LI><a href="stdclasses.html#sect8">8<tt>&nbsp;&nbsp;</tt>Standard Haskell Classes</a>
+<LI><a href="stdclasses.html#sect8.1">8.1<tt>&nbsp;&nbsp;</tt>Equality and Ordered Classes</a>
+<LI><a href="stdclasses.html#sect8.2">8.2<tt>&nbsp;&nbsp;</tt>The Enumeration Class</a>
+<LI><a href="stdclasses.html#sect8.3">8.3<tt>&nbsp;&nbsp;</tt>The Read and Show Classes</a>
+<LI><a href="stdclasses.html#sect8.4">8.4<tt>&nbsp;&nbsp;</tt>Derived Instances</a>
+<LI><a href="monads.html#sect9">9<tt>&nbsp;&nbsp;</tt>About Monads</a>
+<LI><a href="monads.html#sect9.1">9.1<tt>&nbsp;&nbsp;</tt>Monadic Classes</a>
+<LI><a href="monads.html#sect9.2">9.2<tt>&nbsp;&nbsp;</tt>Built-in Monads</a>
+<LI><a href="monads.html#sect9.3">9.3<tt>&nbsp;&nbsp;</tt>Using Monads</a>
+<LI><a href="numbers.html#sect10">10<tt>&nbsp;&nbsp;</tt>Numbers</a>
+<LI><a href="numbers.html#sect10.1">10.1<tt>&nbsp;&nbsp;</tt>Numeric Class Structure</a>
+<LI><a href="numbers.html#sect10.2">10.2<tt>&nbsp;&nbsp;</tt>Constructed Numbers</a>
+<LI><a href="numbers.html#sect10.3">10.3<tt>&nbsp;&nbsp;</tt>Numeric Coercions and Overloaded Literals</a>
+<LI><a href="numbers.html#sect10.4">10.4<tt>&nbsp;&nbsp;</tt>Default Numeric Types</a>
+<LI><a href="modules.html#sect11">11<tt>&nbsp;&nbsp;</tt>Modules</a>
+<LI><a href="modules.html#sect11.1">11.1<tt>&nbsp;&nbsp;</tt>Qualified Names</a>
+<LI><a href="modules.html#sect11.2">11.2<tt>&nbsp;&nbsp;</tt>Abstract Data Types</a>
+<LI><a href="modules.html#sect11.3">11.3<tt>&nbsp;&nbsp;</tt>More Features</a>
+<LI><a href="pitfalls.html#sect12">12<tt>&nbsp;&nbsp;</tt>Typing Pitfalls</a>
+<LI><a href="pitfalls.html#sect12.1">12.1<tt>&nbsp;&nbsp;</tt>Let-Bound Polymorphism</a>
+<LI><a href="pitfalls.html#sect12.2">12.2<tt>&nbsp;&nbsp;</tt>Numeric Overloading</a>
+<LI><a href="pitfalls.html#sect12.3">12.3<tt>&nbsp;&nbsp;</tt>The Monomorphism Restriction</a>
+<LI><a href="arrays.html#sect13">13<tt>&nbsp;&nbsp;</tt>Arrays</a>
+<LI><a href="arrays.html#sect13.1">13.1<tt>&nbsp;&nbsp;</tt>Index types</a>
+<LI><a href="arrays.html#sect13.2">13.2<tt>&nbsp;&nbsp;</tt>Array Creation</a>
+<LI><a href="arrays.html#sect13.3">13.3<tt>&nbsp;&nbsp;</tt>Accumulation</a>
+<LI><a href="arrays.html#sect13.4">13.4<tt>&nbsp;&nbsp;</tt>Incremental updates</a>
+<LI><a href="arrays.html#sect13.5">13.5<tt>&nbsp;&nbsp;</tt>An example: Matrix Multiplication</a>
+<LI><a href="end.html#sect14">14<tt>&nbsp;&nbsp;</tt>The Next Stage</a>
+<LI><a href="end.html#sect15">15<tt>&nbsp;&nbsp;</tt>Acknowledgements</a>
+</UL>

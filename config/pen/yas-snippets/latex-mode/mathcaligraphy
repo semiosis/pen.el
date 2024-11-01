@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: math special calligraphic font for uppercase letters only
+# group: math
+# key: mcal
+# --
+\mathcal{`yas-selected-text`$0}

@@ -1,0 +1,7 @@
+purescript list comprehension
+
+spago
+    https://github.com/spacchetti/spago
+
+pulp
+    A build tool for PureScript projects

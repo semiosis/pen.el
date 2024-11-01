@@ -1,0 +1,7 @@
+
+
+Please enter your age:
+Your age is: 55
+
+The module system in Haskell is very simple. The source files for a module must be named after the module, with the .hs extension.
+We do not have to explicitly

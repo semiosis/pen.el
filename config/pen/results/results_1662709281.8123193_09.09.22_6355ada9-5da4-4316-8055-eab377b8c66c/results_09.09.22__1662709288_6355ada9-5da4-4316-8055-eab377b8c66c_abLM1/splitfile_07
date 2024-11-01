@@ -1,0 +1,6 @@
+aws lambda create-function \
+    --function-name "my_lambda" \
+    --zip-file fileb:///tmp/file.zip \
+    --handler "my_handler.my_handler" \
+    --runtime "python3.6" \
+    --role "arn:aws:iam::0123456789012:role/

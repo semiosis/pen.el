@@ -1,0 +1,17 @@
+CNC-MACHINE-CLI(1)                     User Commands                    CNC-MACHINE-CLI(1)
+
+NAME
+       cnc-machine-cli - Command line interface to control CNC machines
+
+SYNOPSIS
+       cnc-machine-cli [OPTIONS] COMMAND [ARGS]...
+
+DESCRIPTION
+       Command line interface to control CNC machines.
+
+OPTIONS
+       --help
+              Print usage, help and version info.
+
+       --version
+              Print version info

@@ -1,0 +1,9 @@
+http://repo.or.cz/w/quicklisp.git"
+swank.asd
+
+(ql:quickload :swank)
+
+ros install :swank
+
+# The Common Lisp IDE
+b

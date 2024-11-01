@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ternary operator
+# group: if
+# key: ?:
+# --
+"yahoo!" if 3 > 2 else 2

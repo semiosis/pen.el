@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "3:5-21" "#" "<==" "zsh"
+cd /root/.pen/tmp;  "Revelation" "3:5-21" "#" "<==" "zsh"
+cd /root/.pen/tmp;  "Revelation" "of" "John" "3:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "22:13-15" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Revelation" "1:18" "#" "<==" "zsh"

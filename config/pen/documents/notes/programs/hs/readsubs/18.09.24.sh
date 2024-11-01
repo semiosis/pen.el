@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "readsubs" "https://www.youtube.com/watch?v=eEot02XA49E&ab_channel=DeliverancePrayers" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "readsubs" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "readsubs" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "readsubs" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "readsubs" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "readsubs" "https://youtube.com/watch?v=nqnYYt6kEN0&t=919" "#" "<==" "pen-ci"

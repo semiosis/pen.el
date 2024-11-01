@@ -1,0 +1,5 @@
+ '())
+(defn pair_consecutive
+  "Pair together consecutive elements of a list"
+  [x] [(:first x) (:last x)])
+(defn pair_consecutive

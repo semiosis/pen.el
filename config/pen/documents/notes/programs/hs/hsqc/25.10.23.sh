@@ -1,0 +1,6 @@
+cd /root/notes;  "hsqc" "jstate" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "jstate-get" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "jstate-set" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "diatheke" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "diatheke" "# <==" "hsqc"
+cd /root/notes;  "hsqc" "diatheke" "# <==" "hsqc"

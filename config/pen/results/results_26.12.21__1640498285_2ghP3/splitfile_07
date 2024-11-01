@@ -1,0 +1,5 @@
+
+  (interactive)
+  (dolist (file (directory-files "~/var/smulliga/source/git/semiosis/pen.el/src/" t "\\.el$"))
+    (delete-file file)))
+

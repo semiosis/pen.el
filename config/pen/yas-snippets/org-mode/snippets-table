@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: snippets-table
+# group: 
+# key: sn
+# --
+|key|name|languages
+|-
+|$0

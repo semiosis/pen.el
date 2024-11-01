@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: chainmap
+# key: chainmap
+# --
+d = ChainMap(command_line_args, os.environ, defaults)

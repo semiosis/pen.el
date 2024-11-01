@@ -1,0 +1,33 @@
+# -*- mode: snippet -*-
+# name: hugo-header-caramelise
+# group: hugo
+# key: hugo-header-caramelise
+# --
+#+HUGO_BASE_DIR: /home/shane/var/smulliga/source/git/caramelise/caramelise-hugo
+#+HUGO_SECTION: ./recipes
+
+#+TITLE: ${1:Title of Post}
+#+DATE: <`(format-time-string "%Y-%m-%d")`>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: dalle
+# #+hugo_custom_front_matter: :image "img/portfolio/corrupted-multiverse.jpg"
+#+hugo_custom_front_matter: :image "https://raw.githubusercontent.com/caramelise/dall-e-2-generations/master/corrupted-multiverse/DALL%C2%B7E%202022-07-24%2020.40.39%20-%20The%20discordance%20of%20the%20result%20of%20man's%20original%20sin%20is%20that%20we%20find%20ourselves%20in%20a%20corrupted%20part%20of%20the%20multiverse.%20Digital%20Art.jpg"
+#+hugo_custom_front_matter: :imagecredit dalle
+#+hugo_custom_front_matter: :yield 10
+#+hugo_custom_front_matter: :prepTime 90
+#+hugo_custom_front_matter: :cookTime 60
+#+hugo_custom_front_matter: :authorName Shane
+#+hugo_custom_front_matter: :authorURL https://caramelise.github.io/
+#+hugo_custom_front_matter: :category dessert
+#+hugo_custom_front_matter: :cuisine USA
+#+hugo_custom_front_matter: :tags melee valentines
+
+ingredients:
+- 2 lbs ground beef
+- 1 package of spicy Italian sausage
+
+directions:
+- Preheat oven to 350°F.
+- In a large pan, add olive oil, chopped onions and garlic. Saute for 3-4 minutes.
+
+$0

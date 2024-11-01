@@ -1,0 +1,2 @@
+ssh: Could not resolve hostname apple: Name or service not known
+root

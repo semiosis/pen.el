@@ -1,0 +1,7 @@
+
+
+This program is a simple console application that accepts a number input from the keyboard, prints it out, and prints the age out as a string.
+
+The program is compiled and run with the Haskell Platform.
+
+The program can be

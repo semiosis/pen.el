@@ -1,0 +1,7 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/messages" "#" "<==" "bash"
+cd /root;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/bible-notes/verse;  "ranger" "#" "<==" "zsh"
+cd /;  "ranger" "#" "<==" "zsh"
+cd /volumes/home/shane/bigusb/shanemulligan/103/completed/Lab24/shapes;  "ranger" "#" "<==" "zsh"
+cd /root/programs/jdk-21.0.1;  "ranger" "#" "<==" "zsh"

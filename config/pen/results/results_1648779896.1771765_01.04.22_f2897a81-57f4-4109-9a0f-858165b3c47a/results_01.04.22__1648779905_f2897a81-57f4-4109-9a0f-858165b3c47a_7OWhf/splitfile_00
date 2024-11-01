@@ -1,0 +1,16 @@
+
+Command line interface
+======================
+
+The command line interface is the most common way to interact with vim.
+
+The command line consists of a prompt, typically "vim>", followed by
+commands.  The prompt can be customized using the "--prompt" option.
+
+The command line interface is a single-threaded event loop.  Commands
+are entered and processed one at a time.  Commands are executed in the
+order they are entered.  The command line is persistent between
+invocations of vim.
+
+The command line interface is also used for most of the user interface
+features described in the user interface section.

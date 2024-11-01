@@ -1,0 +1,49 @@
+task: "find rhyming sentence"
+tags: prose grammar language fun
+doc: "Find rhyming sentence"
+prompt-version: 1
+prompt: |+
+    These pairs of sentences rhyme:
+    My favorite color is red
+    ends with: "red"
+    "red" rhymes with "bed"
+    Rhyme: It's the color of my bed
+    <delim>
+    I once had a dog
+    ends with: "dog"
+    "dog" rhymes with "frog"
+    Rhyme: That good boy ate a frog
+    <delim>
+    I wish I was small
+    ends with: "small"
+    "small" rhymes with "tall"
+    Rhyme: Instead I'm so tall
+    <delim>
+    <sentence>
+    ends with: "<last word>"
+    "<last word>" rhymes with "
+engine: "OpenAI Davinci"
+best-of: 10
+temperature: 0.2
+max-generated-tokens: 50
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "sentence"
+defs:
+- "last word": "(pen-snc \"pen-str last-word\" sentence)"
+examples:
+- "That's a cool train"
+# This doesn't work too well with the pick-up-line prompt. But perhaps it might work with a rhyme prompt?
+# continue-default: "(pen-unfinished-sentence)"
+# continue-default: "(pen-sn \"pen-str join \\\" \\\"\" (pen-preceding-sentences))"
+n-completions: 10
+info: on
+completion: off
+insertion: off
+external-related: "http://gptprompts.wikidot.com/intro:logprobs#toc10"
+postprocessor: "sed -n '/^Rhyme:/p' | sed 's/^Rhyme: //'"
+end-split-patterns:
+- "\n"

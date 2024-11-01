@@ -1,0 +1,16 @@
+** Association vs Similarity
+The difference between association and
+similarity which is probably the reason
+for your observation as well.
+
+For example, coffee and a cup.
+
+They are not similar but they are
+associative.
+
+#+BEGIN_SRC sh
+  agi wordnet
+#+END_SRC
+
+* multi-layer dictionary
+http://learnthesewordsfirst.com/about/what-is-a-multi-layer-dictionary.html

@@ -1,0 +1,489 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:03:56 GMT
+Content-Type: text/html
+Content-Length: 24316
+Last-Modified: Sun, 17 Feb 2019 03:57:23 GMT
+Connection: keep-alive
+ETag: "5c68dba3-5efc"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Patterns</title>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="functions.html">back</a> <a href="classes.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-pattern-matching"></a><p>
+<a name="sect4"></a>
+<h2>4<tt>&nbsp;&nbsp;</tt>Case Expressions and Pattern Matching</h2>
+<p>
+Earlier we gave several examples of pattern matching in defining
+functions---for example <tt>length</tt> and <tt>fringe</tt>.  In this section we
+will look at the pattern-matching process in greater detail
+(<a href="../onlinereport/exps.html#pattern-matching">&sect;3.17</a>). (Pattern matching in Haskell is 
+different from that found in logic programming languages such as
+Prolog; in particular, it can be viewed as "one-way" matching,
+whereas Prolog allows "two-way" matching (via unification), along
+with implicit backtracking in its evaluation mechanism.)<p>
+Patterns are not "first-class;" there is only a fixed set of
+different kinds of patterns.  We have already seen several examples of
+<I>data constructor</I> patterns; both <tt>length</tt> and <tt>fringe</tt> defined
+earlier use such patterns, the former on the constructors of a
+"built-in" type (lists), the latter on a user-defined type (<tt>Tree</tt>).
+Indeed, matching is permitted using the constructors of any type,
+user-defined or not.  This includes tuples, strings, numbers,
+characters, etc.  For example, here's a contrived function that
+matches against a tuple of "constants:"
+<tt><br>
+
+<br>
+contrived&nbsp;::&nbsp;([a],&nbsp;Char,&nbsp;(Int,&nbsp;Float),&nbsp;String,&nbsp;Bool)&nbsp;-&gt;&nbsp;Bool<br>
+contrived&nbsp;&nbsp;&nbsp;&nbsp;([],&nbsp;&nbsp;'b',&nbsp;&nbsp;(1,&nbsp;&nbsp;&nbsp;2.0),&nbsp;&nbsp;&nbsp;"hi",&nbsp;&nbsp;&nbsp;True)&nbsp;=&nbsp;False<br>
+
+<br>
+
+</tt>This example also demonstrates that <I>nesting</I> of patterns is
+permitted (to arbitrary depth).<p>
+Technically speaking, <I>formal parameters</I> (The Report
+calls these <I>variables</I>.) are also patterns---it's just that they
+<I>never fail to match a value</I>.  As a "side effect" of the
+successful match, the formal parameter is bound to the value it is
+being matched against.  For this reason patterns in any one equation
+are not allowed to have more than one occurrence of the same formal
+parameter (a property called <I>linearity</I> <a href="../onlinereport/exps.html#pattern-matching">&sect;3.17</a>,
+<a href="../onlinereport/exps.html#lambda-abstractions">&sect;3.3</a>, <a href="../onlinereport/decls.html#function-bindings">&sect;4.4.3</a>).<p>
+Patterns such as formal parameters that never fail to match are said
+to be <I>irrefutable</I>, in contrast to <I>refutable</I> patterns which
+may fail to match.  The pattern used
+in the <tt>contrived</tt> example above is refutable.  There are three
+other kinds of irrefutable patterns, two of which we will introduce
+now (the other we will delay until Section <a href="patterns.html#tut-lazy-patterns">4.4</a>).<p>
+<h3>As-patterns.</h3> Sometimes it is convenient to name a
+pattern for use on the right-hand side of an equation.  For example, a
+function that duplicates the first element in a list might be written
+as: 
+<tt><br>
+
+<br>
+f&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x:x:xs<br>
+
+<br>
+
+</tt>(Recall that "<tt>:</tt>" associates to the right.)  Note that <tt>x:xs</tt> appears
+both as a pattern on the left-hand side, and an expression on the
+right-hand side.  To improve readability, we might prefer to write
+<tt>x:xs</tt> just once, which we can achieve using an <I>as-pattern</I> as
+follows: (Another advantage to doing this is that a naive
+implementation might completely reconstruct <tt>x:xs</tt> rather than
+re-use the value being matched against.)
+<tt><br>
+
+<br>
+f&nbsp;s@(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x:s<br>
+
+<br>
+
+</tt>Technically speaking, as-patterns always result in a successful match,
+although the sub-pattern (in this case <tt>x:xs</tt>) could, of course, fail.<p>
+<h3>Wild-cards.</h3> Another common situation is matching against
+a value we really care nothing about.  For example, the functions
+<tt>head</tt> and <tt>tail</tt> defined in Section <a href="goodies.html#tut-polymorphism">2.1</a>
+can be rewritten as:
+<tt><br>
+
+<br>
+head&nbsp;(x:_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x<br>
+tail&nbsp;(_:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;xs<br>
+
+<br>
+
+</tt>in which we have "advertised" the fact that we don't care what a
+certain part of the input is.  Each wild-card independently matches
+anything, but in contrast to a formal parameter, each binds
+nothing; for this reason more than one is allowed in an equation.<a name="tut-matching-semantics"></a><p>
+<a name="sect4.1"></a>
+<h3>4.1<tt>&nbsp;&nbsp;</tt>Pattern-Matching Semantics</h3>
+<p>
+So far we have discussed how individual patterns are matched, how some
+are refutable, some are irrefutable, etc.  But what drives the overall
+process?  In what order are the matches attempted?  What if none
+succeeds?  This section addresses these questions.<p>
+Pattern matching can either <I>fail</I>, <I>succeed</I>  or 
+<I>diverge</I>.  A successful match binds the formal parameters in the
+pattern.  Divergence occurs when a value needed by the pattern
+contains an error (_|_).  The matching process itself occurs "top-down,
+left-to-right."  Failure of a pattern anywhere in one equation
+results in failure of the whole equation, and the next equation is
+then tried.  If all equations fail, the value of the function
+application is _|_, and results in a run-time error.<p>
+For example, if <tt>[1,2]</tt> is matched against <tt>[0,bot]</tt>, then <tt>1</tt> fails
+to match <tt>0</tt>, so the result is a failed match.  (Recall that <tt>bot</tt>,
+defined earlier, is a variable bound to _|_.)  But if <tt>[1,2]</tt> is
+matched against <tt>[bot,0]</tt>, then matching <tt>1</tt> against <tt>bot</tt> causes
+divergence (i.e. _|_).<p>
+The other twist to this set of rules is that top-level patterns
+may also have a boolean <I>guard</I>, as in this definition of a
+function that forms an abstract version of a number's sign:
+<tt><br>
+
+<br>
+sign&nbsp;x&nbsp;|&nbsp;&nbsp;x&nbsp;&gt;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;x&nbsp;==&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;x&nbsp;&lt;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;-1<br>
+
+<br>
+
+</tt>Note that a sequence of guards may be provided for the same pattern;
+as with patterns, they are evaluated top-down, and the first that
+evaluates to <tt>True</tt> results in a successful match.<p>
+<a name="sect4.2"></a>
+<h3>4.2<tt>&nbsp;&nbsp;</tt>An Example</h3><p>
+The pattern-matching rules can have subtle effects on the meaning of
+functions.  For example, consider this definition of <tt>take</tt>:
+<tt><br>
+
+<br>
+take&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[]<br>
+take&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[]<br>
+take&nbsp;&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;:&nbsp;take&nbsp;(n-1)&nbsp;xs<br>
+
+<br>
+
+</tt>and this slightly different version (the first 2 equations have been
+reversed):
+<tt><br>
+
+<br>
+take1&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[]<br>
+take1&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;[]<br>
+take1&nbsp;&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;(x:xs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;:&nbsp;take1&nbsp;(n-1)&nbsp;xs<br>
+
+<br>
+
+</tt>Now note the following:
+<p>
+<table >
+<tr><td>
+  <tt>take&nbsp;&nbsp;0&nbsp;bot</tt>  </td><td align=center>   =&gt;   </td><td> <tt>[]</tt> </td></tr><tr><td><tt>take1&nbsp;0&nbsp;bot</tt>  </td><td align=center>   =&gt;   </td><td> _|_</td></tr><tr><td>
+  <tt>take&nbsp;&nbsp;bot&nbsp;[]</tt> </td><td align=center>   =&gt;   </td><td> _|_</td></tr><tr><td><tt>take1&nbsp;bot&nbsp;[]</tt> </td><td align=center>   =&gt;   </td><td> <tt>[]
+</tt></td></tr></table>
+<p>
+
+We see that <tt>take</tt> is "more defined" with respect to its second
+argument, whereas <tt>take1</tt> is more defined with respect to its first.
+It is difficult to say in this case which definition is better.  Just
+remember that in certain applications, it may make a difference.  (The
+Standard Prelude includes a definition corresponding to <tt>take</tt>.)<a name="tut-case"></a><p>
+<a name="sect4.3"></a>
+<h3>4.3<tt>&nbsp;&nbsp;</tt>Case Expressions</h3>
+<p>
+Pattern matching provides a way to "dispatch control" based on
+structural properties of a value.  In many circumstances we
+don't wish to define a <I>function</I> every time we need to do this,
+but so far we have only shown how to do pattern matching in function
+definitions.  Haskell's <I>case expression</I> provides a way to solve
+this problem.  Indeed, the meaning of pattern matching in function
+definitions is specified in the Report in terms of case expressions,
+which are considered more primitive.  In particular, a function
+definition of the form:
+<p>
+<table >
+<tr><td>
+<tt>f</tt><I> p</I><sub><I>11</I></sub><I> ... p</I><sub><I>1k</I></sub><I> </I><tt>=</tt><I> e</I><sub><I>1</I></sub> </td></tr><tr><td><I>...</I> </td></tr><tr><td><tt>f</tt><I> p</I><sub><I>n1</I></sub><I> ... p</I><sub><I>nk</I></sub><I> </I><tt>=</tt><I> e</I><sub><I>n</I></sub>
+</td></tr></table>
+<p>
+
+where each <I>p</I><sub><I>ij</I></sub> is a pattern, is semantically equivalent to:
+<p>
+<tt>f&nbsp;x1&nbsp;x2</tt><I> ... </I><tt>xk&nbsp;=&nbsp;case&nbsp;(x1,&nbsp;</tt><I>...</I><tt>,&nbsp;xk)&nbsp;of
+</tt>   <table >
+<tr><td>
+   <tt>(</tt><I>p</I><sub><I>11</I></sub><I>, ..., p</I><sub><I>1k</I></sub><tt>)&nbsp;-&gt;</tt><I> e</I><sub><I>1</I></sub> </td></tr><tr><td><I>...</I> </td></tr><tr><td><tt>(</tt><I>p</I><sub><I>n1</I></sub><I>, ..., p</I><sub><I>nk</I></sub><tt>)&nbsp;-&gt;</tt><I> e</I><sub><I>n</I></sub>
+   </td></tr></table>
+
+<p>
+
+where the <tt>xi</tt> are new identifiers.  (For a more general translation
+that includes guards, see <a href="../onlinereport/decls.html#function-bindings">&sect;4.4.3</a>.)  For example, the
+definition of <tt>take</tt> given earlier is equivalent to:
+<tt><br>
+
+<br>
+take&nbsp;m&nbsp;ys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;case&nbsp;(m,ys)&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(0,_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;[]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(_,[])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;[]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(n,x:xs)&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;x&nbsp;:&nbsp;take&nbsp;(n-1)&nbsp;xs<br>
+
+<br>
+<p>
+</tt>A point not made earlier is that, for type correctness, the types of
+the right-hand sides of a case expression or set of equations
+comprising a function definition must all be the same; more precisely,
+they must all share a common principal type.<p>
+The pattern-matching rules for case expressions are the same as we
+have given for function definitions, so there is really nothing new to
+learn here, other than to note the convenience that case expressions
+offer.  Indeed, there's one use of a case expression that is so common
+that it has special syntax: the <I>conditional expression</I>.  In
+Haskell, conditional expressions have the familiar form:
+<p>
+<tt>if</tt> e<sub>1</sub> <tt>then</tt> e<sub>2</sub> <tt>else</tt> e<sub>3</sub> <p>
+
+which is really short-hand for:
+<p>
+<table >
+<tr><td>
+<tt>case</tt> e<sub>1</sub> <tt>of</tt> </td><td> <tt>True&nbsp;&nbsp;-&gt;</tt> e<sub>2</sub></td></tr><tr><td></td><td> <tt>False&nbsp;-&gt;</tt> e<sub>3</sub>
+</td></tr></table>
+<p>
+
+From this expansion it should be clear that e<sub>1</sub> must have type
+<tt>Bool</tt>, and e<sub>2</sub> and e<sub>3</sub> must have the same (but otherwise
+arbitrary) type.  In other words, <tt>if</tt>-<tt>then</tt>-<tt>else</tt> when viewed
+as a function has type <tt>Bool-&gt;a-&gt;a-&gt;a</tt>.<a name="tut-lazy-patterns"></a><p>
+<a name="sect4.4"></a>
+<h3>4.4<tt>&nbsp;&nbsp;</tt>Lazy Patterns</h3>
+<p>
+There is one other kind of pattern allowed in Haskell.  It is called a
+<I>lazy pattern</I>, and has the form <tt>~</tt>pat.  Lazy patterns are
+<I>irrefutable</I>: matching a value v against <tt>~</tt>pat always
+succeeds, regardless of pat.  Operationally speaking, if an
+identifier in pat is later "used" on the right-hand-side, it will
+be bound to that portion of the value that would result if v were to
+successfully match pat, and _|_ otherwise.<p>
+Lazy patterns are useful in contexts where infinite data structures are being
+defined recursively.  For example, infinite lists are an excellent
+vehicle for writing <I>simulation</I> programs, and in this context the
+infinite lists are often called <I>streams</I>.  Consider the simple
+case of simulating the interactions between a server process <tt>server
+</tt>and a client process <tt>client</tt>, where <tt>client</tt> sends a sequence of 
+<I>requests</I> to <tt>server</tt>, and <tt>server</tt> replies to each request with some
+kind of <I>response</I>.  This situation is shown pictorially in Figure
+2.  (Note that <tt>client</tt> also takes an initial message as
+argument.)
+<div align=center><img src="fig2.gif" alt="Client Server Example"> 
+<h4>Figure 2</h4> </div>
+Using
+streams to simulate the message sequences, the Haskell code
+corresponding to this diagram is:
+<tt><br>
+
+<br>
+reqs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;client&nbsp;init&nbsp;resps<br>
+resps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;server&nbsp;reqs<br>
+
+<br>
+
+</tt>These recursive equations are a direct lexical transliteration of the
+diagram.<p>
+Let us further assume that the structure of the server and client look
+something like this:
+<tt><br>
+
+<br>
+client&nbsp;init&nbsp;(resp:resps)&nbsp;=&nbsp;init&nbsp;:&nbsp;client&nbsp;(next&nbsp;resp)&nbsp;resps<br>
+server&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(req:reqs)&nbsp;&nbsp;&nbsp;=&nbsp;process&nbsp;req&nbsp;:&nbsp;server&nbsp;reqs<br>
+
+<br>
+
+</tt>where we assume that <tt>next</tt> is a function that, given a response from
+the server, determines the next request, and <tt>process</tt> is a function
+that processes a request from the client, returning an appropriate
+response.<p>
+Unfortunately, this program has a serious problem: it will not produce
+any output!  The problem is that <tt>client</tt>, as used in the recursive
+setting of <tt>reqs</tt> and <tt>resps</tt>, attempts a match on the response list
+before it has submitted its first request!  In other words, the
+pattern matching is being done "too early."  One way to fix this is
+to redefine <tt>client</tt> as follows:
+<tt><br>
+
+<br>
+client&nbsp;init&nbsp;resps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;init&nbsp;:&nbsp;client&nbsp;(next&nbsp;(head&nbsp;resps))&nbsp;(tail&nbsp;resps)<br>
+
+<br>
+
+</tt>Although workable, this solution does not read as well as that given
+earlier.  A better solution is to use a lazy pattern:
+<tt><br>
+
+<br>
+client&nbsp;init&nbsp;~(resp:resps)&nbsp;=&nbsp;init&nbsp;:&nbsp;client&nbsp;(next&nbsp;resp)&nbsp;resps<br>
+
+<br>
+
+</tt>Because lazy patterns are irrefutable, the match will immediately
+succeed, allowing the initial request to be "submitted", in turn
+allowing the first response to be generated; the engine is now
+"primed", and the recursion takes care of the rest.<p>
+As an example of this program in action, if we define:
+<tt><br>
+
+<br>
+init&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0<br>
+next&nbsp;resp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;resp<br>
+process&nbsp;req&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;req+1<br>
+
+<br>
+
+</tt>then we see that:
+<p>
+<tt>take&nbsp;10&nbsp;reqs</tt>    =&gt;    <tt>[0,1,2,3,4,5,6,7,8,9]</tt> <p>
+<p>
+As another example of the use of lazy patterns, consider the
+definition of Fibonacci given earlier:
+<tt><br>
+
+<br>
+fib&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1&nbsp;:&nbsp;1&nbsp;:&nbsp;[&nbsp;a+b&nbsp;|&nbsp;(a,b)&nbsp;&lt;-&nbsp;zip&nbsp;fib&nbsp;(tail&nbsp;fib)&nbsp;]<br>
+
+<br>
+
+</tt>We might try rewriting this using an as-pattern:
+<tt><br>
+
+<br>
+fib@(1:tfib)&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1&nbsp;:&nbsp;1&nbsp;:&nbsp;[&nbsp;a+b&nbsp;|&nbsp;(a,b)&nbsp;&lt;-&nbsp;zip&nbsp;fib&nbsp;tfib&nbsp;]<br>
+
+<br>
+
+</tt>This version of <tt>fib</tt> has the (small) advantage of not using <tt>tail</tt> on
+the right-hand side, since it is available in "destructured" form on
+the left-hand side as <tt>tfib</tt>.<p>
+[This kind of equation is called a <I>pattern binding</I> because
+it is a top-level equation in which the entire left-hand side is a
+pattern; i.e. both <tt>fib</tt> and <tt>tfib</tt> become bound within the scope of
+the declaration.]<p>
+Now, using the same reasoning as earlier, we should be led to
+believe that this program will not generate any output.  Curiously,
+however, it <I>does</I>, and the reason is simple: in Haskell,
+pattern bindings are assumed to have an implicit <tt>~</tt> in front of them,
+reflecting the most common behavior expected of pattern bindings, and
+avoiding some anomalous situations which are beyond the scope of this
+tutorial.  Thus we see that lazy patterns play an important role in
+Haskell, if only implicitly.<a name="tut-nesting"></a><p>
+<a name="sect4.5"></a>
+<h3>4.5<tt>&nbsp;&nbsp;</tt>Lexical Scoping and Nested Forms</h3>
+<p>
+It is often desirable to create a nested scope within an expression,
+for the purpose of creating local bindings not seen elsewhere---i.e.
+some kind of "block-structuring" form.  In Haskell there are two ways
+to achieve this:<p>
+<h3>Let Expressions.</h3> Haskell's <I>let expressions</I> are
+useful whenever a nested set of bindings is required.  As a simple
+example, consider:
+<tt><br>
+
+<br>
+let&nbsp;y&nbsp;&nbsp;&nbsp;=&nbsp;a*b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;(x+y)/y<br>
+in&nbsp;f&nbsp;c&nbsp;+&nbsp;f&nbsp;d<br>
+
+<br>
+
+</tt>The set of bindings created by a <tt>let</tt> expression is <I>mutually
+recursive</I>, and pattern bindings are treated as lazy patterns (i.e.
+they carry an implicit <tt>~</tt>).  The only kind of declarations permitted
+are <I>type signatures</I>, <I>function bindings</I>, and <I>pattern
+bindings</I>.<p>
+<h3>Where Clauses.</h3> Sometimes it is convenient to scope
+bindings over several guarded equations, which requires a <I>where
+clause</I>:
+<tt><br>
+
+<br>
+f&nbsp;x&nbsp;y&nbsp;&nbsp;|&nbsp;&nbsp;y&gt;z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;y==z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;y&lt;z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;z&nbsp;=&nbsp;x*x<br>
+
+<br>
+
+</tt>Note that this cannot be done with a <tt>let</tt> expression, which only
+scopes over the expression which it encloses.  A <tt>where</tt> clause is
+only allowed at the top level of a set of equations or case
+expression.  The same properties and constraints on bindings in <tt>let
+</tt>expressions apply to those in <tt>where</tt> clauses.<p>
+These two forms of nested scope seem very similar, but remember that a
+<tt>let</tt> expression is an <I>expression</I>, whereas a <tt>where</tt> clause is
+not---it is part of the syntax of function declarations and case
+expressions.<a name="tut-layout"></a><p>
+<a name="sect4.6"></a>
+<h3>4.6<tt>&nbsp;&nbsp;</tt>Layout</h3>
+<p>
+The reader may have been wondering how it is that Haskell programs
+avoid the use of semicolons, or some other kind of terminator, to
+mark the end of equations, declarations, etc.  For example, consider
+this <tt>let</tt> expression from the last section:
+<tt><br>
+
+<br>
+let&nbsp;y&nbsp;&nbsp;&nbsp;=&nbsp;a*b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;(x+y)/y<br>
+in&nbsp;f&nbsp;c&nbsp;+&nbsp;f&nbsp;d<br>
+
+<br>
+
+</tt>How does the parser know not to parse this as:
+<tt><br>
+
+<br>
+let&nbsp;y&nbsp;&nbsp;&nbsp;=&nbsp;a*b&nbsp;f<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;=&nbsp;(x+y)/y<br>
+in&nbsp;f&nbsp;c&nbsp;+&nbsp;f&nbsp;d<br>
+
+<br>
+
+</tt>?<p>
+The answer is that Haskell uses a two-dimensional syntax called 
+<I>layout</I> that essentially relies on declarations being "lined up in
+columns."  In the above example, note that <tt>y</tt> and <tt>f</tt> begin in the
+same column.  The rules for layout are spelled out in detail in the
+Report (<a href="../onlinereport/lexemes.html#lexemes-layout">&sect;2.7</a>, <a href="../onlinereport/syntax-iso.html#layout">&sect;B.3</a>), but in practice, use of
+layout is rather intuitive.  Just remember two things:<p>
+First, the next character following any of the keywords <tt>where</tt>,
+<tt>let</tt>, or <tt>of</tt> is what determines the starting column for the
+declarations in the where, let, or case expression being written (the
+rule also applies to <tt>where</tt> used in the class and instance
+declarations to be introduced in Section <a href="classes.html#tut-type-classes">5</a>).  Thus
+we can begin the declarations on the same line as the keyword, the
+next line, etc.  (The <tt>do</tt> keyword, to be discussed later, also uses layout).<p>
+Second, just be sure that the starting column is further to the right
+than the starting column associated with the immediately surrounding
+clause (otherwise it would be ambiguous).  The "termination" of a
+declaration happens when something appears at or to the left of the
+starting column associated with that binding form. (Haskell
+observes the convention that tabs count as 8 blanks; thus care must be
+taken when using an editor which may observe some other convention.)<p>
+Layout is actually shorthand for an <I>explicit</I> grouping mechanism,
+which deserves mention because it can be useful under certain
+circumstances.  The <tt>let</tt> example above is equivalent to:
+<tt><br>
+
+<br>
+let&nbsp;{&nbsp;y&nbsp;&nbsp;&nbsp;=&nbsp;a*b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;f&nbsp;x&nbsp;=&nbsp;(x+y)/y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+in&nbsp;f&nbsp;c&nbsp;+&nbsp;f&nbsp;d<br>
+
+<br>
+
+</tt>Note the explicit curly braces and semicolons.  One way in which this
+explicit notation is useful is when more than one declaration is
+desired on a line; for example, this is a valid expression:
+<tt><br>
+
+<br>
+let&nbsp;y&nbsp;&nbsp;&nbsp;=&nbsp;a*b;&nbsp;&nbsp;z&nbsp;=&nbsp;a/b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f&nbsp;x&nbsp;=&nbsp;(x+y)/z<br>
+in&nbsp;f&nbsp;c&nbsp;+&nbsp;f&nbsp;d<br>
+
+<br>
+
+</tt>For another example of the expansion of layout into explicit
+delimiters, see <a href="../onlinereport/lexemes.html#lexemes-layout">&sect;2.7</a>.<p>
+The use of layout greatly reduces the syntactic clutter associated
+with declaration lists, thus enhancing readability.  It is easy to
+learn, and its use is encouraged.<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="functions.html">back</a> <a href="classes.html">next</a> <a href="index.html">top</a>

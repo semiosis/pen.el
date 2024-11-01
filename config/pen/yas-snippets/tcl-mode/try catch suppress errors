@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: try catch suppress errors
+# group: try
+# key: try
+# --
+if {[catch {
+        expect eof
+        close
+    } issue]} {
+    puts "There is a failure and it is ignored"
+    puts "Reason for failure : $issue"
+}

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: key
+# group: prompt
+# key: k
+# --
+${1:$$(pen-select-from-existing-prompt-keys)}

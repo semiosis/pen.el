@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: around-advice-old
+# group: advice-old
+# key: ada-old
+# --
+;; nadvice - proc is the original function, passed in. do not modify
+(defun ${1:advised-function-name}-around-advice (proc &rest args)
+  (message "$1 called with args %S" args)
+  (let ((res (apply proc args)))
+    (message "$1 returned %S" res)
+    res))
+(advice-add '$1 :around #'$1-around-advice)
+
+;; Old advice
+(defadvice $1 (around my-ad-$1 activate)
+  (interactive)
+  $0
+  ad-do-it)

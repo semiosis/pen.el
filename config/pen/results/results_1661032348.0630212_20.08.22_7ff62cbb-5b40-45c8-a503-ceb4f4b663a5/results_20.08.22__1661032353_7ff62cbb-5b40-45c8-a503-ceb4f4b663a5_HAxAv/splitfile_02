@@ -1,0 +1,11 @@
+
+
+main :: IO ()
+main = do
+
+program <- getArgs
+name <- getProgName
+
+-- usage message
+-- usageMessage = "Usage: "++program++" <weather>"
+seasonsOfYear ::

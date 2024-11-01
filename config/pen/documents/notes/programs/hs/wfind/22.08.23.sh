@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/src;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"
+cd /root/.emacs.d/host/pen.el/scripts;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"
+cd /root/notes;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"
+cd /root/.emacs.d/host/pen.el/scripts;  "wfind" "/root/.pen/documents/notes/programs/hs/diatheke" "#" "<==" "wfind"
+cd /root/.emacs.d/host/pen.el/scripts;  "wfind" "/root/.pen/documents/notes/programs/hs/emacsclient" "#" "<==" "wfind"
+cd /root/.emacs.d/host/pen.el/scripts;  "wfind" "/root/.pen/documents/notes/programs/hs/emacsclient" "#" "<==" "wfind"
+cd /root/.emacs.d/host/pen.el/scripts;  "wfind" "/root/.pen/documents/notes/programs/hs/toggle-tmux-popup" "#" "<==" "wfind"

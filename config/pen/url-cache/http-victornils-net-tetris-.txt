@@ -1,0 +1,159 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 17 Feb 2024 05:05:02 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-backend: web3
+etag: W/"f9279fc84e3dde551a9bd039b0f04fed5a9e31ff"
+content-disposition: inline
+access-control-allow-origin: *
+x-backend: web3
+last-modified: Sat, 16 Mar 2019 14:19:24 GMT
+X-Frontend: frontend2
+X-Trace-Id: ti_96e9ccf423d361191e1e71257a01dc25
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>vitetris: Text-mode Tetris for Linux</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="canonical" href="https://www.victornils.net/tetris/">
+ <link rel="stylesheet" type="text/css" href="vite.css">
+</head>
+<body id="tetris">
+ <div id="container">
+  <h1><img src="img/tetrislogo.png" alt="TETRIS" width=264 height=48></h1>
+  <p><em>Now on <a href="https://github.com/vicgeralds/vitetris" title="vitetris GitHub repo">GitHub</a>!</em></p>
+  <p><strong>vitetris</strong> is a terminal-based Tetris clone by Victor <del>Nilsson</del> <ins>Geraldsson</ins>.
+    Gameplay is much like the early Tetris games by Nintendo.
+    Features include:
+  </p>
+  <ul>
+   <li>Configurable keys
+   <li>Highscore table
+   <li>Two-player mode with garbage
+   <li>Network play
+   <li>Joystick (gamepad) support on Linux or with Allegro
+  </ul>
+  <p>It has been tested on Linux, NetBSD and a few other Unix-like systems,
+    and ported to Windows and DOS. Library dependencies are minimal (only libc
+    is required), and many features can be disabled at compile-time.
+  </p>
+  <p><strong><a href="#download">Download</a></strong> |
+    <strong><a href="#screenshots">Screenshots</a></strong> |
+    <strong><a href="#faq">FAQ</a></strong> |
+    <strong><a href="#more">More Info</a></strong>
+  </p>
+  <pre class="tetris">
+                  <b>+--------+
+                  | <span class="yellow">######</span> |
+                  |   <span class="yellow">##</span>   |</b>
+             _____<b>|________|</b>_____
+  <b class="blue">+--------+</b>|  .   .   .   .   . |<b>|</b>  <b class="magenta-fg">Top Scores</b>
+  <b class="blue">| <span class="label">Score</span>  |</b>|  .   .   <b class="yellow">##</b>  .   . |<b>|</b>  <span class="white-fg">1. 415490</span>
+  <b class="blue">|</b><b class="white-fg"> 122704 </b><b class="blue">|</b>|  .   .   <b class="yellow">####</b>.   . |<b>|</b>  <span class="white-fg">2. 284528</span>
+  <b class="blue">|        |</b>|  .   .   <b class="yellow">##</b>  .   . |<b>|</b>  <span class="white-fg">3. 244339</span>
+  <b class="blue">+--------+</b>|  .   .   .   .   . |<b>|</b>  <span class="white-fg">4. 203341</span>
+  <b class="blue">| <span class="label">Level</span>  |</b>|  .   .   .   .   . |<b>|</b>  <span class="white-fg">5. 185026</span>
+  <b class="blue">|  </b><b class="white-fg"> 09 </b><b class="blue">  |</b>|  .   .   .   .   . |<b>|</b>  <b class="red-fg">---------</b>
+  <b class="blue">|        |</b>|  .   .   .   .   . |<b>|</b>
+  <b class="blue">+--------+</b>|  .   .   .   .   . |<b>|</b>
+  <b class="blue">| <span class="label">Lines</span>  |</b>|  .   .   .   .   . |<b>|</b>
+  <b class="blue">|  </b><b class="white-fg"> 044 </b><b class="blue"> |</b>|  .   .   .   .   . |<b>|</b>
+  <b class="blue">|        |</b>|  .   .   .   .   . |<b>|</b>   <b class="red">&lt;I&gt;</b> <span class="white-fg">021</span>
+  <b class="blue">+--------+</b>|  .   .   . <b class="white">{}</b>.   . |<b>|</b>   <b class="white">{J}</b> <span class="white-fg">008</span>
+           <b>|</b>|  . <b class="green">%%</b>.   . <b class="white">{}{}</b>  . |<b>|</b>   <b class="magenta">(L)</b> <span class="white-fg">020</span>
+           <b>|</b>|  . <b class="green">%%%%%%</b><b class="white">{}{}{}</b>  <b class="cyan">@@</b>|<b>|</b>   <b class="blue">[O]</b> <span class="white-fg">024</span>
+           <b>|</b>|  .   <b class="green">%%%%%%</b><b class="white">{}{}</b><b class="cyan">@@@@</b>|<b>|</b>   <b class="green">%S%</b> <span class="white-fg">020</span>
+           <b>|</b>|  .   <b class="magenta">()()</b><b class="green">%%</b><b class="cyan">@@</b><b class="red">&lt;&gt;</b><b class="cyan">@@</b><b class="yellow">##</b>|<b>|</b>   <b class="yellow">#T#</b> <span class="white-fg">019</span>
+           <b>|</b>|  <b class="red">&lt;&gt;</b><b class="blue">[][]</b><b class="magenta">()</b><b class="cyan">@@@@</b><b class="red">&lt;&gt;</b><b class="yellow">####</b>|<b>|</b>   <b class="cyan">@Z@</b> <span class="white-fg">012</span>
+           <b>|</b>|  <b class="red">&lt;&gt;</b><b class="blue">[][]</b><b class="magenta">()</b><b class="cyan">@@</b><b class="magenta">()</b><b class="red">&lt;&gt;</b><b class="green">%%</b><b class="yellow">##</b>|<b>|</b>     <span class="white-fg">-----</span>
+           <b>|</b>|  <b class="red">&lt;&gt;</b><b class="blue">[][]</b><b class="magenta">()()()</b><b class="red">&lt;&gt;</b><b class="green">%%%%</b>|<b>|</b>  <span class="white-fg">Sum 0124</span>
+</pre>
+  <h2><a name="download">Download</a></h2>
+  <h3>Source Code</h3>
+ <p>Get the latest version from the <a href="https://github.com/vicgeralds/vitetris">GitHub repository for vitetris</a></p>
+  <p>To compile vitetris you need a Unix-like environment with a C compiler and
+    other basic development tools.
+  </p>
+  <ul>
+   <li><p><strong><a href="https://github.com/vicgeralds/vitetris/releases/latest">Latest release</a></strong><br>
+     Installation instructions: <a href="INSTALL.txt">INSTALL</a>
+   <li><p><a href="vitet055src.zip" download>vitet055src.zip</a> for DOS<br>
+     Installation instructions: <a href="https://raw.githubusercontent.com/vicgeralds/vitetris/dos/INSTALL.DOS">INSTALL.DOS</a>
+  </ul>
+  <p>Optional dependency: <a href="https://www.allegro.cc/files/?v=4.2">Allegro 4</a><br>
+  </p>
+  <h3><a name="binaries">Binaries</a></h3>
+  <table>
+  <tr class="binaries-windows">
+   <td>Windows:
+   <td><strong><a href="vitetris-0.57-win.zip" download>vitetris-0.57-win.zip</a></strong>
+   <td><a href="README-win.txt">README-win.txt</a>
+  <tr>
+   <td>DOS:
+   <td><a href="vitet055.zip" download>vitet055.zip</a>
+   <td><a href="https://raw.githubusercontent.com/vicgeralds/vitetris/dos/README.DOS">README.DOS</a>
+  <tr>
+   <td>Linux:
+   <td colspan=2><a href="vitetris-0.55-i486-linux.tar.gz" download>vitetris-0.55-i486-linux.tar.gz</a><br>
+      Built with gcc 3.4.6 for i486-linux on Slackware 11.0.
+  </table>
+  <h3>Linux Packages</h3>
+  <ul>
+   <li><p>Debian and other distros: <a href="https://pkgs.org/download/vitetris">pkgs.org/download/vitetris</a>
+   <li><p>Arch Linux: <a href="https://aur.archlinux.org/packages/vitetris/">vitetris package in AUR</a>
+   <li><p>Gentoo: <a href="ebuild-vitetris-0.57.tar.bz2" download>ebuild-vitetris-0.57.tar.bz2</a><br>
+     Packaged by matt the guy.
+     <p>Unpack into $PORTDIR_OVERLAY (in /etc/make.conf, often set to /usr/local/portage).<br>
+        Then type "emerge vitetris" and you're done.</p>
+  </ul>
+  <h2><a name="screenshots">Screenshots</a></h2>
+  <img class="screenshot" src="img/vitetris050-brackets.png" width=354 height=357 alt="vitetris 0.50">
+  <h3>vitetris 0.3.1 and 0.3</h3>
+  <div id="screens">
+   <p><a href="img/vitetris031-tt-rxvt.png"><img src="img/vitetris031-tt-rxvt-sm.png" width=151 height=158 alt="New tt mode (rxvt)"></a> &nbsp;
+     <a href="img/vitetris031-tt-color-konsole.png"><img src="img/vitetris031-tt-color-konsole-sm.png" width=154 height=158 alt="tt blocks with colour (Konsole)"></a> &nbsp;
+     <a href="img/vitetris03-xterm34x20.png"><img src="img/vitetris03-xterm34x20-sm.png" width=124 height=158 alt="34x20 terminal (xterm)"></a> &nbsp;
+     <a href="img/vitetris03-2player-xterm.png"><img src="img/vitetris03-2player-xterm-sm.png" width=185 height=158 alt="2-player mode (xterm)"></a> &nbsp;
+     <a href="img/vitetris03-rxvt-mono.png"><img src="img/vitetris03-rxvt-mono.png" width=146 height=158 alt="Monochrome ASCII (rxvt)"></a>
+   </p>
+  </div>
+  <h2><a name="faq">Frequently Asked Questions</a></h2>
+  <p><strong>How do I install vitetris?</strong></p>
+  <ul>
+   <li><p>Linux: Unpack with "tar xzvf vitetris-XXX.tar.gz" and
+     cd into the directory. Read the text files and run "make" to build.</p>
+   <li><p>Windows: Download <a href="#binaries">the zip-file</a> and extract it to any directory, e.g.
+     C:\vitetris. Create a shortcut to tetrisal.exe.</p>
+  </ul>
+  <p><strong>How does the won-lost thing displayed after my opponent's name work?</strong></p>
+  <p>When either of you wins three times, that counts as a match and this score is
+    updated. It is simply saved in the configuration file and not communicated in
+    any way to the server/other end of the connection. If a game was cancelled,
+    the score is unchanged. It is only based on the names you use, which are
+    case sensitive.
+  </p>
+  <h2><a name="more">More Information</a></h2>
+  <p>See the <a href="README.txt">README file</a>.</p>
+  <p>vitetris is open source, released under a <a href="licence.txt">2-clause BSD-style licence</a> (fewer restrictions than GPL).</p>
+  <p>"vitetris" stands for virtual terminal *tris.</p>
+  <p><a href="http://freshmeat.net/projects/vitetris">vitetris freshmeat project page</a></p>
+ </div>
+ <script type="text/javascript">
+  if (window.addEventListener) {
+    window.addEventListener('hashchange', onhashchange, false)
+  }
+  function onhashchange () {
+    if (location.hash === '#binaries') {
+      var tr = document.querySelector && document.querySelector('.binaries-windows')
+      if (tr) {
+	tr.style.backgroundColor = 'yellow'
+      }
+    }
+  }
+ </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+ w3m "www.google.com/search?q=$(echo "$*" | sed 's/ /+/g')"
+

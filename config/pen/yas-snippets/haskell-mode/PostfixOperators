@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: PostfixOperators
+# key: xpo
+# --
+{-# LANGUAGE PostfixOperators #-}
+
+(!) :: Integer -> Integer
+(!) n | n == 0    = 1
+| n >  0    = n * ((n - 1) !)
+| otherwise = error "factorial of a negative number"
+
+main = print (4 !)

@@ -1,0 +1,6 @@
+cd /root/.pen/documents/custom-repl;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/custom-repl;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/custom-repl;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/khala/src/khala;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/khala/src/khala;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/dni/parchment;  "ranger" "#" "<==" "zsh"

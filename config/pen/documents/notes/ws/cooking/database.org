@@ -1,0 +1,8 @@
+* My repo
+e:/volumes/home/shane/var/smulliga/source/git/mullikine/recipes/README.org
+
+* This is a nice =directory of json files= database
+e:/volumes/home/shane/var/smulliga/source/git/dpapathanasiou/recipes/README.md
+
+** TODO Automate the process of taking recipes from one repo?
+Nah, just put them in the top directory for the moment.

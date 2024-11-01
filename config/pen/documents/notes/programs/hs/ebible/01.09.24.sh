@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ebible" "-m" "ESV" "Galatians 5:19-21" "#" "<==" "Galatians"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Acts 15:20" "#" "<==" "Acts"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Acts 15:19-20" "#" "<==" "Acts"
+cd /root/notes;  "ebible" "-m" "ESV" "Hebrews 8:10" "#" "<==" "Hebrews"
+cd /root/notes;  "ebible" "-m" "ESV" "Acts 15:19-20" "#" "<==" "Acts"
+cd /root/notes;  "ebible" "-m" "ESV" "Galatians 3:13-14" "#" "<==" "Galatians"

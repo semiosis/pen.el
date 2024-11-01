@@ -1,0 +1,36 @@
+cpl
+cplint
+    [#prolog]
+    [prolog package]
+
+    cplint is a package for prolog that is
+    used for probabilistic logic programming.
+
+prob/2
+    [#cplint]
+    [predicate]
+
+    prob is a predicate for the cplint that
+    takes 2 arguments.
+
+    Computes the probability of an atom.
+
+        a:0.2:-
+            prob(b,P),
+            P > 0.2.
+
+    Read about it:
+    - http://friguzzi.github.io/cplint/_build/html/index.html
+
+probabilistic annotation
+    Can be a variable:
+
+        (flexprob.pl)
+
+        red(Prob):Prob.
+
+        draw_red(R, G):-
+            Prob is R/(R + G),
+            red(Prob).
+
+    /volumes/home/shane/var/smulliga/source/git/friguzzi/cplint/prolog/examples/flexprob.pl

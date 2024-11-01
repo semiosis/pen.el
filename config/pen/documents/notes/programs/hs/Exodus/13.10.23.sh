@@ -1,0 +1,5 @@
+cd /root/notes;  "Exodus" "5" "#" "<==" "zsh"
+cd /root/notes;  "Exodus" "5" "#" "<==" "zsh"
+cd /root/notes;  "Exodus" "5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Exodus" "5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Exodus" "5" "#" "<==" "zsh"

@@ -1,0 +1,13 @@
+"random-uuid" [random-uuid]
+
+"Terminal contents:
+"
+[ring.util.response :as resp]
+   [medley.core :refer [random-uuid]]))
+
+(defn main
+  []
+  (let [host "localhost"
+        port 8080]
+    (go (async/http-server host port #(ws-handler %)))
+    (go (async/http-server host

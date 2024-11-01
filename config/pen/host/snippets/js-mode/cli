@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: cli
+# group: 
+# key: cli
+# --
+#!/usr/bin/nodejs
+// npm install cssbeautify
+
+var cssb = require("cssbeautify")
+
+const fs = require("fs");
+const data = fs.readFileSync("/dev/stdin", "utf-8");
+
+var beautified = cssb(data, {
+    indent: '  ',
+    openbrace: 'separate-line',
+    autosemicolon: true
+});
+
+process.stdout.write(beautified);

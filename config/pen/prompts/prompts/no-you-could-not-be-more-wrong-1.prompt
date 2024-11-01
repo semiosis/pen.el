@@ -1,0 +1,23 @@
+title: no, you could not be more wrong
+tags: discourse nlp-task prose
+prompt-version: 1
+doc: This is a completer that refutes what you just said.
+prompt: |
+  The following is an excerpt of an argument on reddit:
+  <delim>
+  Your claim that "<1>" is so incorrect. You could not be more wrong.
+  Firstly,
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1
+cache: true
+stop-sequences:
+- "\n\n"
+vars:
+- text
+examples:
+- Recycling is good for the world
+var-defaults:
+- "(pen-preceding-text)"
+postprocessor: pen-pretty-paragraph

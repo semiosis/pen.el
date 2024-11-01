@@ -1,0 +1,10 @@
+
+
+" Save the current selection
+let l:line = getline(".")
+
+let l:col = col(".")
+
+" Alternate between current and previous selections
+if l:line == l:prevline
+let l:

@@ -1,0 +1,40 @@
+HTTP/1.1 404 Not Found
+Date: Sat, 10 Sep 2022 04:42:36 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=mCmRN%2FQJBVDhcIxocMjONGK69xyyqq0DI7DItEh8wp%2FVN4fT6XUpOVYGBjJMfuq1L9JjnLWqxrT8vl0eSEzd9xYcYIXPVMRqazqSrKt8YQkajn6VKiVQliICCQjG%2F7sHGt7V5Bl1n8fqV9CZkxI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 74857f7b3deba938-SYD
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+<!DOCTYPE html>
+<html><head><meta content="width=device-width, maximum-scale=1.0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="default" name="apple-mobile-web-app-status-bar-style"><meta content="ClojureDocs" name="apple-mobile-web-app-title"><meta content="XjzqkjEPtcgtLjhnqAvtnVSeveEccs-O_unFGGlbk4g" name="google-site-verification"><title>Community-Powered Clojure Documentation and Examples | ClojureDocs</title><link href="/opensearch.xml" rel="search" title="ClojureDocs" type="application/opensearchdescription+xml"><link href="/css/font-awesome.min.css?bbfef9385083d307ad2692c0cf99f611" rel="stylesheet"><link href="/css/bootstrap.min.css?385b964b68acb68d23cb43a5218fade9" rel="stylesheet"><link href="/css/app.css?9e9d4de52804fa9bff22ecaa7badf8f9" rel="stylesheet"><script>// <![CDATA[
+window.PAGE_DATA="nil";
+//]]></script></head><body class="error-page"><div class="mobile-nav-menu"><section><h4><i class="fa fa-rocket"></i>ClojureDocs</h4><ul class="navbar-nav mobile-navbar-nav nav"><li><a href="/core-library">Core Library<span class="clojure-version">(1.10.1)</span></a></li><li><a href="/quickref">Quick Reference</a></li><li><a href="https://github.com/login/oauth/authorize?client_id=d0242c22610efb54ebbe&amp;redirect_uri=http%3A%2F%2Fclojuredocs.org%2Fgh-callback&amp;scope="><i class="fa fa-github-square"></i>Log In</a></li></ul></section></div><div class="mobile-nav-bar"><header class="navbar"><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1"><a class="navbar-brand" href="/"><i class="fa fa-rocket"></i>ClojureDocs</a><button class="btn btn-default navbar-btn pull-right mobile-menu"><i class="fa fa-bars"></i></button><ul class="navbar-nav nav navbar-right desktop-navbar-nav"><li><div class="navbar-brand clojure-version"><a href="https://github.com/clojure/clojure/tree/clojure-1.10.1">1.10.1</a></div></li><li><a href="/core-library">Core Library</a></li><li><a href="/quickref">Quick Ref</a></li><li><a href="https://github.com/login/oauth/authorize?client_id=d0242c22610efb54ebbe&amp;redirect_uri=http%3A%2F%2Fclojuredocs.org%2Fgh-callback&amp;scope="><i class="fa fa-github-square"></i>Log In</a></li></ul></div></div></div></header></div><div class="sticky-wrapper mobile-push-wrapper"><div class="desktop-nav-bar"><header class="navbar"><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1"><a class="navbar-brand" href="/"><i class="fa fa-rocket"></i>ClojureDocs</a><button class="btn btn-default navbar-btn pull-right mobile-menu"><i class="fa fa-bars"></i></button><ul class="navbar-nav nav navbar-right desktop-navbar-nav"><li><div class="navbar-brand clojure-version"><a href="https://github.com/clojure/clojure/tree/clojure-1.10.1">1.10.1</a></div></li><li><a href="/core-library">Core Library</a></li><li><a href="/quickref">Quick Ref</a></li><li><a href="https://github.com/login/oauth/authorize?client_id=d0242c22610efb54ebbe&amp;redirect_uri=http%3A%2F%2Fclojuredocs.org%2Fgh-callback&amp;scope="><i class="fa fa-github-square"></i>Log In</a></li></ul></div></div></div></header></div><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-sm-8 col-sm-offset-2"><h1>404</h1><a class="four-oh-four" href="https://emareaf.deviantart.com/art/Rich-Hickey-321501046"><img class="four-oh-four" src="https://fc04.deviantart.net/fs70/f/2012/229/a/6/rich_hickey_by_emareaf-d5bevsm.png"></a></div></div></div></div></div><div class="sticky-push"></div></div><footer><div class="container"><div class="row"><div class="col-sm-12"><div class="divider">- ❦ -</div></div></div><div class="row"><div class="ctas"><div class="col-sm-6 left">Brought to you by <a href="https://zacharykim.com">Zachary Kim</a>. </div><div class="col-sm-6 right"><iframe allowtransparency="true" class="gh-starred-count" frameborder="0" height="20" scrolling="0" src="/github-btn.html?user=zk&amp;repo=clojuredocs&amp;type=watch&amp;count=true" width="80"></iframe><a class="twitter-share-button" data-text="Community-powered docs and examples for #Clojure" data-url="http://clojuredocs.org" data-via="heyzk" href="https://twitter.com/share">Tweet</a></div></div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div></footer><script src="/cljs/clojuredocs.js?9421f92fbece10f3ababd69dba14cf70"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17348828-1', 'auto');
+  ga('send', 'pageview');</script><script>if(("standalone" in window.navigator) && window.navigator.standalone){
+var noddy, remotes = false;
+
+document.addEventListener('click', function(event) {
+
+noddy = event.target;
+
+while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+noddy = noddy.parentNode;
+}
+
+if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+{
+event.preventDefault();
+document.location.href = noddy.href;
+}
+
+},false);
+}</script></body></html>

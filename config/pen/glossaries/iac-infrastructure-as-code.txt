@@ -1,0 +1,29 @@
+stacklet.io
+    https://stacklet.io/
+
+    Save money on the cloud.
+
+    - Cloud asset visibility
+    - Security best practices
+    - Cost savings
+    - Operations and governance excellence
+
+    At scale, delivered via a Policy as Code
+    platform.
+
+cloud custodian
+    Enables users to be well managed in the
+    cloud.
+
+    The simple YAML DSL allows you to easily
+    define rules to enable a well-managed
+    cloud infrastructure, that's both secure
+    and cost optimized.
+
+    It consolidates many of the ad-hoc scripts
+    organizations have into a lightweight and
+    flexible tool, with unified metrics and
+    reporting.
+
+    Custodian supports managing AWS, Azure,
+    and GCP public cloud environments.

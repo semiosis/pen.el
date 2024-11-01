@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: autocontrib
+# key: autocon
+# --
+# Contributor Guide
+{{range .}}
+## {{.Name}}
+
+{{.Doc}}
+{{end}}

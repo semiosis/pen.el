@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: subgraph
+# group: boilerplate
+# key: sg
+# --
+subgraph cluster_R {
+`yas-selected-text`${0:nodeA -> nodeB}
+}

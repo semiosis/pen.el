@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: lingo tenet yaml
+# key: lty
+# --
+tenets:
+- name: ${1:$$(e/chomp (bp u dn | u bn (buffer-file-name)))}
+doc: |
+Check that no $1 functions are present in ${2:$$(e/chomp (bp u dn | u dn -f | u bn | s capitalize (buffer-file-name)))} code.
+flows:
+codelingo/review:
+comment: $1 ...
+query: |
+import codelingo/ast/${2:$$(e/chomp (bp u dn | u dn -f | u bn (buffer-file-name)))}
+
+go.file(depth = any):
+go.decls:
+go.func_decl:
+@ review.comment
+go.ident:
+name == "init"
+go.func_type:
+go.field_list:
+child_count == 0

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: 3-tuple
+# group: sot
+# key: 3
+# --
+($1,$2,$3)$0

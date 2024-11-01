@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "John" "16:13" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "12:49-50" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "John" "1:16-17" "#" "<==" "withopts"
+cd /root/notes;  "John" "6:65" "#" "<==" "zsh"
+cd /;  "John" "15:16" "#" "<==" "zsh"

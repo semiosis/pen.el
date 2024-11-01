@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: define macro
+# key: dm
+# --
+(define-syntax ${1:my-if}
+(syntax-rules (${2:then else})
+[($1 ${3:e1 then e2 else e3})
+${0:(if e1 e2 e3)}]))

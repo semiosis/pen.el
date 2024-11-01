@@ -1,0 +1,11 @@
+;; price of vehicle
+;; arguments: (name)
+(message (eval '(price-of-vehicle "Nissan Excel 1992")))
+--> "Nissan Excel 1992 costs $2000"
+
+
+
+;; price of vehicle
+;; arguments: (name)
+(message (eval '(price-of-vehicle "Toyota Tarago")))
+--> 

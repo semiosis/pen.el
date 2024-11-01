@@ -1,0 +1,3 @@
+The above code is equivalent to the following:
+(fn [sym] `(quote ,(keyword sym)))
+

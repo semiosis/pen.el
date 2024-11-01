@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iterate-over-dictionary
+# group: dict
+# key: idict
+# --
+[i for i in matcher._patterns.values()][0][0]

@@ -1,0 +1,6 @@
+"(d/q '[:find ?e ?n ?a
+         :where
+         [?e :name ?n]
+         [?e :age ?a]]
+       @conn)" is a code snippet.
+

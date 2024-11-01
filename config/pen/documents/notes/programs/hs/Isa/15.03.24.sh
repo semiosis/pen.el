@@ -1,0 +1,7 @@
+cd /root/notes;  "Isa" "59:17" "#" "<==" "zsh"
+cd /root/notes;  "Isa" "59:17-18" "#" "<==" "zsh"
+cd /root/notes;  "Isa" "11:5" "#" "<==" "zsh"
+cd /root/notes;  "Isa" "52:7" "#" "<==" "zsh"
+cd /root/notes;  "Isa" "52:7" "#" "<==" "zsh"
+cd /root/notes;  "Isa" "59:17" "#" "<==" "zsh"
+cd /root/notes;  "Isa" "49:2" "#" "<==" "zsh"

@@ -1,0 +1,6 @@
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=sexp" "--format-version=5" "--decrypt=true" "--exclude=false" "'" "id:CAD0RMY5X8P5D892wApiQgZXTice1Tz1E7VkmYdwXiZid80bBsw@mail.gmail.com" "'" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=4" "--decrypt=true" "id:CAD0RMY5X8P5D892wApiQgZXTice1Tz1E7VkmYdwXiZid80bBsw@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=6" "--decrypt=true" "id:CAD0RMY5X8P5D892wApiQgZXTice1Tz1E7VkmYdwXiZid80bBsw@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "show" "--format=raw" "--part=5" "--decrypt=true" "id:CAD0RMY5X8P5D892wApiQgZXTice1Tz1E7VkmYdwXiZid80bBsw@mail.gmail.com" "#" "<==" "emacs"
+cd /root;  "notmuch" "search" "--format=sexp" "--format-version=5" "--sort=newest-first" "tag:inbox" "#" "<==" "emacs"

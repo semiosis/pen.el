@@ -1,0 +1,15 @@
+equivalence class
+    When the elements of some set S have a
+    notion of equivalence defined on them,
+    then one may naturally split the set S
+    into equivalence classes.
+    
+    These equivalence classes are constructed
+    so that elements a and b belong to the
+    same equivalence class if, and only if,
+    they are equivalent.
+
+universe
+    A collection that contains all the
+    entities one wishes to consider in a given
+    situation.

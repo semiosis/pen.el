@@ -1,0 +1,51 @@
+"date","meal","food","id","unit","amount","servings"
+08/01/21,"breakfast","eggs",4,"egg",2,2
+08/01/21,"breakfast","banana",10,"banana",1,1
+08/01/21,"breakfast","oatmeal",13,"packet",1,1
+08/01/21,"breakfast","honey nut cheerios",30,"bowl",1,1
+08/01/21,"breakfast","whole milk",3,"bowl",1,1
+08/01/21,"breakfast","coffee, nguyen, light roast",33,"mug",1,1
+08/01/21,"lunch","hummus",28,"serving",1,1
+08/01/21,"lunch","pita chips",29,"cracker",12,2
+08/01/21,"Lunch 2","bran flakes",35,"bowl",1,1
+08/01/21,"Lunch 2","Milk, 2%",31,"bowl",1,1
+08/01/21,"dinner","pork fried rice, The Orient",36,"container",0.5,0.5
+08/01/21,"dinner","avocado roll, The Orient",21,"roll",1,1
+08/01/21,"dinner","pepsi",37,"can",1,1
+08/01/21,"dinner","dogfish head 60 minute ipa",38,"can",2,2
+08/01/21,"dinner","tea",39,"mug",1,1
+08/02/21,"breakfast","eggs",4,"egg",2,2
+08/02/21,"breakfast","banana",10,"banana",1,1
+08/02/21,"breakfast","honey nut cheerios",30,"bowl",1,1
+08/02/21,"breakfast","whole milk",3,"bowl",1,1
+08/02/21,"breakfast","brownie",40,"piece",1,1
+08/02/21,"breakfast","coffee, nguyen, dark roast",34,"mug",1,1
+08/02/21,"lunch","pork fried rice, The Orient",36,"container",0.5,0.5
+08/02/21,"dinner","broccoli",15,"cup",2,2
+08/02/21,"dinner","white rice",17,"cup",0.5,1
+08/02/21,"dinner","teriyaki chicken",43,"oz",4,1
+08/02/21,"dinner","coffee, nguyen, dark roast",34,"mug",1,1
+08/02/21,"dessert","blueberry scone, Ashley",53,"scone",1,1
+08/02/21,"dessert","coffee, nguyen, dark roast",34,"mug",1,1
+08/03/21,"breakfast","french toast, home",54,"slice",4,4
+08/03/21,"breakfast","eggs",4,"egg",2,2
+08/03/21,"breakfast","coffee, nguyen, dark roast",34,"mug",1,1
+08/03/21,"lunch","Strawberries (in smoothie)",55,"cup",1,1
+08/03/21,"lunch","banana (in smoothie)",10,"banana",1,1
+08/03/21,"lunch","honey nut cheerios",30,"bowl",1,1
+08/03/21,"lunch","whole milk",3,"bowl",1,1
+08/03/21,"lunch","tostitos, hint of lime",60,"servings",2,2
+08/03/21,"lunch","salsa",61,"servings",1,1
+08/03/21,"lunch","guacamole",22,"servings",1,1
+08/03/21,"dinner","barbacoa quesadilla, chipotle",56,"quesadilla",0.25,0.25
+08/03/21,"dinner","steak taco, chipotle",57,"taco",1,1
+08/03/21,"dinner","beer, dogfishead 60 minute ipa",38,"can",1,1
+08/03/21,"dinner","beer, flying dog",58,"bottle",1,1
+08/03/21,"dessert","brownie, neighbor",40,"piece",1,1
+08/03/21,"dessert","ice cream, vanilla, breyer’s",59,"scoop",1,1
+08/04/21,"breakfast","honey nut cheerios",30,"bowl",1,1
+08/04/21,"breakfast","whole milk",3,"bowl",1,1
+08/04/21,"breakfast","coffee, nguyen, dark roast",34,"mug",1,1
+08/04/21,"lunch","eggs",4,"egg",2,2
+08/04/21,"lunch","tostitos, hint of lime",60,"servings",1,1
+08/04/21,"lunch","salsa",61,"servings",1,1

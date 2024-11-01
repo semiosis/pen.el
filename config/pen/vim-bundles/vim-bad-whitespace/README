@@ -1,0 +1,34 @@
+bad-whitespace - Highlights whitespace at the end of lines
+
+http://www.vim.org/scripts/script.php?script_id=3735
+
+Author:  Bit Connor <bit@mutantlemon.com>
+Version: 0.3
+
+Get the latest version at:
+https://github.com/bitc/vim-bad-whitespace
+
+Inspired by the trailing-whitespace script:
+http://www.vim.org/scripts/script.php?script_id=3201
+
+Additional References:
+http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+http://sartak.org/2011/03/end-of-line-whitespace-in-vim.html
+
+About ~
+
+This plugin highlights whitespace at the end of lines with a red color.
+
+You can erase the bad whitespace with the command |EraseBadWhitespace|
+
+You can manually toggle the highlighting for the current buffer with the
+commands |ShowBadWhitespace| |HideBadWhitespace| |ToggleBadWhitespace|
+
+This plugin is better than using the builtin vim 'list' command because it
+doesn't show an annoying highlight while you are typing in insert mode at the
+end of a line.
+
+This plugin is better than competing plugins because it doesn't show
+highlighting in buffers that are not modifiable, which is usually what you
+want. This makes it compatible with UI buffers that happen to contain bad
+whitespace, such as the quickfix window, or the fugitive plugin.

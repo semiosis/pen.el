@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "ebible" "-m" "ESV" "II John 1:9" "#" "<==" "II"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Corinthians 1:18" "#" "<==" "I"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "John 1:1" "#" "<==" "John"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "John 1:14" "#" "<==" "John"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Hebrews 1:2" "#" "<==" "Hebrews"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Hebrews 2:1" "#" "<==" "Hebrews"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "ebible" "-m" "ESV" "Proverbs 8:22-36" "#" "<==" "Proverbs"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "ebible" "-m" "ESV" "Galatians 5:1-6" "#" "<==" "Galatians"

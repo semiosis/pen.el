@@ -1,0 +1,96 @@
+HTTP/1.1 200 OK
+Date: Fri, 01 Mar 2024 02:09:45 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Server: BunnyCDN-AUC1-1142
+CDN-PullZone: 1569362
+CDN-Uid: 49d7db18-1dfb-442a-ba45-885c787462bf
+CDN-RequestCountryCode: NZ
+Cache-Control: public, max-age=0
+X-Frame-Options: SAMEORIGIN
+X-Mod-Pagespeed: 1.13.35.2-0
+CDN-ProxyVer: 1.04
+CDN-RequestPullSuccess: True
+CDN-RequestPullCode: 200
+CDN-CachedAt: 03/01/2024 02:09:45
+CDN-EdgeStorageId: 1142
+CDN-Status: 200
+CDN-RequestId: c9e96fcb67419a9cea145c4f60dfa6fd
+CDN-Cache: MISS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>CHURCH FATHERS: Against Heresies, I.2 (St. Irenaeus)</title><script src="https://dtyry4ejybx0.cloudfront.net/js/cmp/cleanmediacmp.js?ver=0104" async="true"></script><script defer data-domain="newadvent.org" src="https://plausible.io/js/script.js"></script><link rel="canonical" href="https://www.newadvent.org/fathers/0103102.htm">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Featuring the Church Fathers, Catholic Encyclopedia, Summa Theologica and more.">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.newadvent.org/bestoftheweb?format=xml"><link rel="icon" href="../images/icon1.ico" type="image/x-icon"><link rel="shortcut icon" href="../images/icon1.ico" type="image/x-icon"><meta name="robots" content="noodp"><link type="text/css" rel="stylesheet" href="../utility/screen6.css" media="screen"></head>
+
+<body class="fathers" id="0103102.htm">
+
+<!-- spacer-->&nbsp;<br/>
+
+
+
+<div id="capitalcity"><table summary="Logo" cellpadding=0 cellspacing=0 width="100%"><tr valign="bottom"><td align="left"><a href="../"><img height=36 width=153 border="0" alt="New Advent" src="../images/logo.gif"></a></td><td align="right"> <form id="searchbox_000299817191393086628:ifmbhlr-8x0" action="../utility/search.htm">
+  <!-- Hidden Inputs -->
+  <input type="hidden" name="safe" value="active">
+  <input type="hidden" name="cx" value="000299817191393086628:ifmbhlr-8x0"/>
+  <input type="hidden" name="cof" value="FORID:9"/>
+ 
+  <!-- Search Box -->
+  <label for="searchQuery" id="searchQueryLabel">Search:</label>
+  <input id="searchQuery" name="q" type="text" size="25" aria-labelledby="searchQueryLabel"/>
+ 
+  <!-- Submit Button -->
+  <label for="submitButton" id="submitButtonLabel" class="visually-hidden">Submit Search</label>
+  <input id="submitButton" type="submit" name="sa" value="Search" aria-labelledby="submitButtonLabel"/>
+</form> <table summary="Spacer" cellpadding=0 cellspacing=0><tr><td height="2"></td></tr></table> <table summary="Tabs" cellpadding=0 cellspacing=0><tr> <td bgcolor="#ffffff"></td> <td class="tab"><a class="tab_color_on_beige" href="../">&nbsp;Home&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../cathen/index.html">&nbsp;Encyclopedia&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../summa/index.html">&nbsp;Summa&nbsp;</a></td> <td class="tab"><a class="tab_white_on_color" href="../fathers/index.html">&nbsp;Fathers&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../bible/gen001.htm">&nbsp;Bible&nbsp;</a></td> <td class="tab"><a class="tab_color_on_beige" href="../library/index.html">&nbsp;Library&nbsp;</a></td> </tr></table> </td> </tr></table><table summary="Alphabetical index" width="100%" cellpadding=0 cellspacing=0><tr><td class="bar_white_on_color"> <a href="../cathen/a.htm">&nbsp;A&nbsp;</a><a href="../cathen/b.htm">&nbsp;B&nbsp;</a><a href="../cathen/c.htm">&nbsp;C&nbsp;</a><a href="../cathen/d.htm">&nbsp;D&nbsp;</a><a href="../cathen/e.htm">&nbsp;E&nbsp;</a><a href="../cathen/f.htm">&nbsp;F&nbsp;</a><a href="../cathen/g.htm">&nbsp;G&nbsp;</a><a href="../cathen/h.htm">&nbsp;H&nbsp;</a><a href="../cathen/i.htm">&nbsp;I&nbsp;</a><a href="../cathen/j.htm">&nbsp;J&nbsp;</a><a href="../cathen/k.htm">&nbsp;K&nbsp;</a><a href="../cathen/l.htm">&nbsp;L&nbsp;</a><a href="../cathen/m.htm">&nbsp;M&nbsp;</a><a href="../cathen/n.htm">&nbsp;N&nbsp;</a><a href="../cathen/o.htm">&nbsp;O&nbsp;</a><a href="../cathen/p.htm">&nbsp;P&nbsp;</a><a href="../cathen/q.htm">&nbsp;Q&nbsp;</a><a href="../cathen/r.htm">&nbsp;R&nbsp;</a><a href="../cathen/s.htm">&nbsp;S&nbsp;</a><a href="../cathen/t.htm">&nbsp;T&nbsp;</a><a href="../cathen/u.htm">&nbsp;U&nbsp;</a><a href="../cathen/v.htm">&nbsp;V&nbsp;</a><a href="../cathen/w.htm">&nbsp;W&nbsp;</a><a href="../cathen/x.htm">&nbsp;X&nbsp;</a><a href="../cathen/y.htm">&nbsp;Y&nbsp;</a><a href="../cathen/z.htm">&nbsp;Z&nbsp;</a> </td></tr></table></div>
+ <div id="mobilecity" style="text-align: center; "><a href="../"><img height=24 width=102 border="0" alt="New Advent" src="../images/logo.gif"></a></div>
+ <!--<div class="scrollmenu"> <a href="../utility/search.htm">SEARCH</a> <a href="../cathen/">Encyclopedia</a> <a href="../summa/">Summa</a> <a href="../fathers/">Fathers</a> <a href="../bible/">Bible</a> <a href="../library/">Library</a> </div> <br />-->
+
+<div id="mi5"><span class="breadcrumbs"><a href="../">Home</a> > <a href="../fathers/index.html">Fathers of the Church</a> > <a href="../fathers/0103.htm">Against Heresies (St. Irenaeus)</a> > Book I, Chapter 2</span></div>
+
+<div id="springfield2">
+
+<div class='catholicadnet-728x90' id='fathers-728x90-top' style='display: flex; height: 100px; align-items: center; justify-content: center; '></div>
+
+
+<h1>Against Heresies (Book I, Chapter 2)</h1>
+
+<p><em><a href="https://gumroad.com/l/na2"><strong>Please help support the mission of New Advent</strong> and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99...</a></em></p>
+
+
+
+<span class="h1a">The Propator was known to Monogenes alone. Ambition, disturbance, and danger into which Sophia fell; her shapeless offspring: she is restored by Horos. The production of Christ and of the Holy Spirit, in order to the completion of the &AElig;ons. Manner of the production of Jesus.</span>
+
+<p>1. They proceed to tell us that the Propator of their scheme was <a href="../cathen/08673a.htm">known</a> only to Monogenes, who sprang from him; in other words, only to Nous, while to all the others he was invisible and incomprehensible. And, according to them, Nous alone took pleasure in contemplating the <a href="../cathen/06608a.htm">Father</a>, and exulting in considering his immeasurable greatness; while he also meditated how he might communicate to the rest of the <a href="../cathen/01173c.htm">&AElig;ons</a> the greatness of the <a href="../cathen/06608a.htm">Father</a>, revealing to them how vast and mighty he was, and how he was without beginning &mdash; beyond comprehension, and altogether incapable of being seen. But, in accordance with the <a href="../cathen/15624a.htm">will</a> of the <a href="../cathen/06608a.htm">Father</a>, Sige restrained him, because it was his design to lead them all to an acquaintance with the aforesaid Propator, and to create within them a desire of investigating his nature. In like manner, the rest of the <a href="../cathen/01173c.htm">&AElig;ons</a> also, in a kind of quiet way, had a wish to behold the Author of their being, and to contemplate that First Cause which had no beginning.</p>
+
+<p>2. But there rushed forth in advance of the rest that <a href="../cathen/01173c.htm">&AElig;on</a> who was much the latest of them, and was the youngest of the Duodecad which sprang from Anthropos and Ecclesia, namely Sophia, and suffered passion apart from the embrace of her consort Theletos. This passion, indeed, first arose among those who were connected with Nous and Aletheia, but passed as by contagion to this degenerate <a href="../cathen/01173c.htm">&AElig;on</a>, who acted under a pretence of <a href="../cathen/09397a.htm">love</a>, but was in reality influenced by temerity, because she had not, like Nous, enjoyed communion with the perfect Father. This passion, they say, consisted in a desire to search into the <a href="../cathen/10715a.htm">nature</a> of the Father; for she wished, according to them, to comprehend his greatness. When she could not attain her end, inasmuch as she aimed at an impossibility, and thus became involved in an extreme agony of <a href="../cathen/10321a.htm">mind</a>, while both on account of the vast profundity as well as the unsearchable nature of the <a href="../cathen/06608a.htm">Father</a>, and on account of the <a href="../cathen/09397a.htm">love</a> she bore him, she was ever stretching herself forward, there was danger lest she should at last have been absorbed by his sweetness, and resolved into his absolute <a href="../cathen/05543b.htm">essence</a>, unless she had met with that Power which supports all things, and preserves them outside of the unspeakable greatness. This power they term Horos; by whom, they say, she was restrained and supported; and that then, having with difficulty been brought back to herself, she was convinced that the Father is incomprehensible, and so laid aside her original design, along with that passion which had arisen within her from the overwhelming influence of her admiration.</p>
+
+<div class="CMtag_300x250" style="display: flex; height: 300px; align-items: center; justify-content: center; "></div>
+
+<p>3. But others of them fabulously describe the passion and restoration of Sophia as follows: They say that she, having engaged in an impossible and impracticable attempt, brought forth an amorphous substance, such as her female nature enabled her to produce.  When she looked upon it, her first feeling was one of grief, on account of the imperfection of its generation, and then of <a href="../cathen/06021a.htm">fear</a> lest this should end  her own <a href="../cathen/05543b.htm">existence</a>. Next she lost, as it were, all command  of herself, and was in the greatest perplexity while endeavouring to discover the <a href="../cathen/03459a.htm">cause</a> of all this, and in what way she might conceal what had happened. Being greatly harassed by these <a href="../cathen/11534a.htm">passions</a>, she at last changed her <a href="../cathen/10321a.htm">mind</a>, and endeavoured to return anew to the Father. When, however, she in some measure made the attempt, strength failed her, and she became a suppliant of the Father. The other <a href="../cathen/01173c.htm">&AElig;ons</a>, Nous in particular, presented their supplications along with her. And hence they declare material substance  had its beginning from <a href="../cathen/07648a.htm">ignorance</a> and grief, and <a href="../cathen/06021a.htm">fear</a> and bewilderment.</p>
+
+<p>4. The Father afterwards produces, in his own image, by means of Monogenes, the above-mentioned Horos, without conjunction,  masculo-feminine. For they maintain that sometimes the Father acts in conjunction with Sige, but that at other times he shows himself independent both of male and female. They term this Horos both Stauros and Lytrotes, and Carpistes, and Horothetes, and Metagoges.  And by this Horos they declare that Sophia was purified and established, while she was also restored to her proper conjunction. For her enthymesis (or inborn idea) having been taken away from her, along with its supervening passion, she herself certainly remained within the Pleroma; but her enthymesis, with its passion, was separated from her by Horos, fenced  off, and expelled from that circle. This enthymesis was, no <a href="../cathen/05141a.htm">doubt</a>, a spiritual substance, possessing some of the natural tendencies of an <a href="../cathen/01173c.htm">&AElig;on</a>, but at the same time shapeless and without <a href="../cathen/06137b.htm">form</a>, because it had received nothing.  And on this account they say that it was an imbecile and feminine production. </p>
+
+<p>5. After this substance had been placed outside of the Pleroma of the <a href="../cathen/01173c.htm">&AElig;ons</a>, and its mother restored to her proper conjunction, they tell us that Monogenes, acting in accordance with the <a href="../cathen/12517b.htm">prudent</a> forethought of the <a href="../cathen/06608a.htm">Father</a>, gave origin to another conjugal pair, namely <a href="../cathen/08374c.htm">Christ</a> and the <a href="../cathen/07409a.htm">Holy Spirit</a> (lest any of the <a href="../cathen/01173c.htm">&AElig;ons</a> should fall into a calamity similar to that of Sophia), for the purpose of fortifying and strengthening the Pleroma, and who at the same time completed the number of the <a href="../cathen/01173c.htm">&AElig;ons</a>. <a href="../cathen/08374c.htm">Christ</a> then instructed them as to the <a href="../cathen/10715a.htm">nature</a> of their conjunction, and taught those who those who possessed a comprehension of the Unbegotten were sufficient for themselves.  He also announced among them what related to the <a href="../cathen/08673a.htm">knowledge</a> of the <a href="../cathen/06608a.htm">Father</a> &mdash; namely, that he cannot be understood or comprehended, nor so much as seen or heard, except in so far as he is <a href="../cathen/08673a.htm">known</a> by Monogenes only. And the reason why the rest of the <a href="../cathen/01173c.htm">&AElig;ons</a> possess perpetual <a href="../cathen/05543b.htm">existence</a> is found in that part of the Father's nature which is incomprehensible; but the reason of their origin and formation was situated in that which may be comprehended regarding him, that is, in the Son.  <a href="../cathen/08374c.htm">Christ</a>, then, who had just been produced, effected these things among them.</p>
+
+<p>6. But the <a href="../cathen/07409a.htm">Holy Spirit</a>  taught them to give thanks on being all rendered equal among themselves, and led them to a state of <a href="../cathen/15073a.htm">true</a> repose. Thus, then, they tell us that the <a href="../cathen/01173c.htm">&AElig;ons</a> were constituted equal to each other in form and sentiment, so that all became as Nous, and <a href="../cathen/09328a.htm">Logos</a>, and Anthropos, and Christus. The female <a href="../cathen/01173c.htm">&AElig;ons</a>, too, became all as Aletheia, and Zoe, and Spiritus, and Ecclesia. Everything, then, being thus established, and brought into a state of perfect rest, they next tell us that these beings sang praises with great <a href="../cathen/07131b.htm">joy</a> to the Propator, who himself shared in the abounding exaltation. Then, out of gratitude for the great benefit which had been conferred on them, the whole Pleroma of the <a href="../cathen/01173c.htm">&AElig;ons</a>, with one design and desire, and with the concurrence of <a href="../cathen/08374c.htm">Christ</a> and the <a href="../cathen/07409a.htm">Holy Spirit</a>, their Father also setting the seal of His approval on their conduct, brought together whatever each one had in himself of the greatest beauty and preciousness; and uniting all these contributions so as skilfully to blend the whole, they produced, to the <a href="../cathen/07462a.htm">honour</a> and <a href="../cathen/06585a.htm">glory</a> of Bythus, a being of most perfect beauty, the very star of the Pleroma, and the perfect fruit [of it], namely Jesus. Him they also speak of under the name of Saviour, and <a href="../cathen/08374c.htm">Christ</a>, and patronymically, <a href="../cathen/09328a.htm">Logos</a>, and Everything, because He was formed from the contributions of all. And then we are told that, by way of <a href="../cathen/07462a.htm">honour</a>, <a href="../cathen/01476d.htm">angels</a> of the same nature as Himself were simultaneously produced, to act as His bodyguard.</p>
+
+<div class='catholicadnet-728x90' id='fathers-728x90-bottom' style='display: flex; height: 100px; align-items: center; justify-content: center; '></div>
+
+<div class="pub"> <h2>About this page</h2> <p id="src"><strong>Source.</strong> <span id="srctrans">Translated by Alexander Roberts and William Rambaut.</span> From <span id="srcwork">Ante-Nicene Fathers</span>, <span id="srcvolume">Vol. 1.</span> <span id="srced">Edited by Alexander Roberts, James Donaldson, and A. Cleveland Coxe.</span> (<span id="srcpublisher">Buffalo, NY: Christian Literature Publishing Co.,</span> <span id="srcyear">1885.</span>) <span id="kk">Revised and edited for New Advent by Kevin Knight.</span> <span id="srcurl">&lt;http://www.newadvent.org/fathers/0103102.htm&gt;.</span></p> <p id="contactus"><strong>Contact information.</strong> The editor of New Advent is Kevin Knight. My email address is feedback732 <em>at</em> newadvent.org. (To help fight spam, this address might change occasionally.) Regrettably, I can't reply to every letter, but I greatly appreciate your feedback &mdash; especially notifications about typographical errors and inappropriate ads.</p> </div>
+
+</div>
+
+<div id="ogdenville"><table summary="Bottom bar" width="100%" cellpadding=0 cellspacing=0><tr><td class="bar_white_on_color"><center><strong>Copyright &#169; 2023 by <a href="../utility/contactus.htm">New Advent LLC</a>. Dedicated to the Immaculate Heart of Mary.</strong></center></td></tr></table><p align="center"><a href="../utility/contactus.htm">CONTACT US</a>  | <a href="https://cleanmedia.net/p/?psid=491-308-20180429T2217479770">ADVERTISE WITH NEW ADVENT</a></p></div><!-- Sticky Footer --> <ins class="CANBMDDisplayAD" data-bmd-ad-unit="30849120210203T1734389107AB67D35C03D4A318731A4F337F60B3E" style="display:block"></ins> <script src="https://secureaddisplay.com/au/bmd/"></script> <!-- /Sticky Footer --> <!-- Hide Dynamic Ads --><ins class="CMAdExcludeArticles"></ins><!-- /Hide Dynamic Ads-->
+
+</body>
+</html>

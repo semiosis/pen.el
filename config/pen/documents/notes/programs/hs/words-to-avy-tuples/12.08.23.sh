@@ -1,0 +1,6 @@
+cd /root/.pen/documents/devotionals/truthnetwork/truth-for-life-alistair-begg/10006;  "words-to-avy-tuples" "-nbe" "/tmp/9UH6avy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/devotionals/truthnetwork/truth-for-life-alistair-begg/10006;  "words-to-avy-tuples" "-nbe" "/tmp/2iUYavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/devotionals/truthnetwork/truth-for-life-alistair-begg/10006;  "words-to-avy-tuples" "-nbe" "/tmp/q3YRavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/devotionals/the-word-for-today-reading/help-for-your-marriage;  "words-to-avy-tuples" "-nbe" "/tmp/VXl4avy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/devotionals/the-word-for-today-reading/help-for-your-marriage;  "words-to-avy-tuples" "-nbe" "/tmp/D9alavy-bible.txt" "#" "<==" "perl"
+cd /root/.pen/documents/devotionals/the-word-for-today-reading/help-for-your-marriage;  "words-to-avy-tuples" "-nbe" "/tmp/kMpkavy-bible.txt" "#" "<==" "perl"

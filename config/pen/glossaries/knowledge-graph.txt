@@ -1,0 +1,17 @@
+KG
+    Consist of factual information represented
+    explicitly in a structured format,
+    generally in the form of [subject entity,
+    relation, object entity] triples.
+
+    A KG can be viewed as interconnected
+    entity subgraphs.               
+
+entity subgraph
+    A group of related triples is called an
+    entity subgraph.
+
+    An example of an entity subgraph that
+    builds on the previous example of a triple
+    is { [210x10 photobooks, instance of,
+    Nonprofit Organization] }. 

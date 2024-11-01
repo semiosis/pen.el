@@ -1,0 +1,15 @@
+
+
+export TERM=xterm-256color
+
+exec env
+
+test -x $0 || exit 0
+
+ret=0
+
+case $1 in
+
+'--help'|'-h')
+
+ret

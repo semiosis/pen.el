@@ -1,0 +1,1 @@
+(pprint (map (fn [x] (* x 2)) (range 1 10)))

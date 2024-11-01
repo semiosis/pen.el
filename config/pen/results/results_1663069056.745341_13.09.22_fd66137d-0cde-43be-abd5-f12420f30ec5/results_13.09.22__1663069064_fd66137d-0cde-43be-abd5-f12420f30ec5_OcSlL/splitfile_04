@@ -1,0 +1,14 @@
+"JSONSrcIO" is a module to read and write JSON files.
+
+The module is designed to work with a JSON file as a source of
+templates.
+
+The module provides functions to read and write JSON files.
+
+The JSON file is a source of templates.
+
+The JSON file is a source of data to fill the templates.
+
+The JSON file is a source of data to fill the templates.
+
+The JSON file is a source of data to fill the templates.

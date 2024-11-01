@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: system
+# key: system
+# --
+import System.Info
+
+main = do
+print os
+print arch
+print compilerName
+print compilerVersion

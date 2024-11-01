@@ -1,0 +1,78 @@
+Cytoscape.js
+    An open-source graph theory (a.k.a.
+    network) library written in JS.
+    
+    You can use Cytoscape.js for graph
+    analysis and visualisation.
+
+lambda
+    [javascript]
+    [ES6]
+
+    Comes in 2 flavors:
+    - function expression
+    - arroy function expression
+
+web-ext
+    A command line tool designed to speed up
+    various parts of the extension development
+    process, making development faster and
+    easier.
+    
+    This article explains how to install and
+    use web-ext.
+
+gulp
+    A toolkit for automating painful or
+    time-consuming tasks in your development
+    workflow, so you can stop messing around
+    and build something. 
+
+bower
+    A package manager for the web.
+
+arrow notation
+=>
+    currying in javascript.
+
+    The abstraction of arity.
+
+rope
+    An efficient data structure for storing
+    and manipulating very large mutable
+    strings.
+    
+    It reduces memory reallocation and data
+    copy overhead for applications that are
+    constantly operating on very large strings
+    by splitting them into multiple smaller
+    strings transparently.
+
+    Efficient random access is achieved via a
+    binary tree.
+
+generator
+    A function that returns an iterator
+    object.
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators
+
+    https://nullprogram.com/blog/2018/05/31/
+
+async
+await
+async function
+    A function declared with the async
+    keyword.
+    
+    Async functions are instances of the
+    AsyncFunction constructor, and the await
+    keyword is permitted within them.
+    
+    The async and await keywords enable
+    asynchronous, promise-based behavior to be
+    written in a cleaner style, avoiding the
+    need to explicitly configure promise
+    chains.
+
+    sp +/"(async" "$MYGIT/sonyarianto/translate-text-with-google-translate-and-puppeteer/google_translate.js"

@@ -1,0 +1,14 @@
+
+def play_movie(path, term_and_transcript = false, use_tty = false, loop = false)
+  path = UMN(path)
+  kill_music
+  use_tty_str = use_tty ? "export USETTY=y; " : ""
+  play_function = path.start_with?('http') ? :play_youtube_url : :play_video_path
+  if term_and_transcript
+    play_function.call(path, :spv, loop: loop)
+    sleep 0.1
+    sph("readsubs #{path} -d")
+  else
+    play_function.call(path)
+  end
+end

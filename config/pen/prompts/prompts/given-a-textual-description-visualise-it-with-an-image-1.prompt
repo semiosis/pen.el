@@ -1,0 +1,34 @@
+task: "Given a textual description, visualise it with an image"
+doc: "Given a textual description, visualise it with an image"
+tags: vision prose
+prompt-version: 1
+prompt: |+
+  <text description>
+# force-engine: "GLIDE"
+force-engine: "HF GLIDE"
+temperature: 0.0
+max-generated-tokens: 150
+top-p: 1.0
+# Most of these parameters won't mean anything
+stop-sequences:
+- "<long>"
+cache: on
+info: on
+vars:
+- "text description"
+# preprocessors:
+# - "pen-convert-for-alephalpha"
+# filter: on
+examples:
+  - "A phantasmagoria of semiotic art depicting a surreal and surreptitious strawberry."
+completion: off
+insertion: off
+actions:
+- show-image: "(pen-show-image result)"
+# postprocessor: pen-str clean-alephalpha
+# this works after the prompt is run
+# return-postprocessor: ""
+# prettifier: pen-pretty-paragraph
+
+# Don't prettify without correcting grammar.
+# postprocessor: "pf-correct-english-spelling-and-grammar/1"

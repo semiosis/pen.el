@@ -1,0 +1,28 @@
+task: "Generate wiki blurb"
+tags: web chatbot
+doc: "Create a wiki blurb"
+prompt-version: 2
+prompt: |+
+    <topic> - Wikipedia
+    
+    en.wikipedia.org › wiki › <topic>
+
+    Short article:
+    <:pp><topic> 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1.0
+# End of the first sentence. Sadly, if there is J.R.R. Tolkien, etc. this will break
+stop-sequences:
+- "."
+cache: on
+vars:
+- "topic"
+examples:
+- "John Dee"
+postprocessor: pen-str join ' ' | sed -z 's/\s*\n$//' | sed -z 's/[^a-zA-Z0-9]*$//' | sed -z 's/$/./'
+info: on
+filter: off
+completion: off
+insertion: off

@@ -1,0 +1,12 @@
+The above code imports the Applicative class from the Options module.
+
+The Applicative class is a subclass of the Applicative type class,
+which is a subclass of the Functor type class.
+
+The Applicative type class is defined in the Control.Applicative module.
+
+The Functor type class is defined in the Control.Functor module.
+
+The Options module is defined in the Data.Options module.
+
+The Control module is defined in the Control module.

@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ebdb" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "ebdb" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "ebdb" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "ebdb" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "ebdb" "#" "<==" "zsh"

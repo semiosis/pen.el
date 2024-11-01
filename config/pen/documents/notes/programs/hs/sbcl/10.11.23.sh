@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Genesis" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Genesis" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Genesis" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Genesis" "#" "<==" "sbcl-ql"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Romans" "#" "<==" "sbcl-ql"
+cd /volumes/home/shane/var/smulliga/source/git/tmux/tmux;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Romans" "#" "<==" "sbcl-ql"

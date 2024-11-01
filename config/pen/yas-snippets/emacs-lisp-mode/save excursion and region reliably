@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: save excursion and region reliably
+# group: save region
+# key: se
+# --
+(save-excursion-and-region-reliably `yas-selected-text`$0)

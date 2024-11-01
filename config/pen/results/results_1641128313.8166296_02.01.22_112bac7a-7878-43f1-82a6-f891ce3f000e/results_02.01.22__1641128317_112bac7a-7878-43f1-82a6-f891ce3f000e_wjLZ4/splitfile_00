@@ -1,0 +1,2 @@
+repo:^github\.com/sourcegraph/sourcegraph$ type:diff file:readme.md after:"1 week ago"
+

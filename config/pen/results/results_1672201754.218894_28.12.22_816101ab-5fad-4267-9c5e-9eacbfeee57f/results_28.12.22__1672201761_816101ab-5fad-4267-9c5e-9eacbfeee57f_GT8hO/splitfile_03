@@ -1,0 +1,7 @@
+
+
+" If this is a very long line, break it.
+
+if line("'<") > 120 && line("'<") <= line("$") && line("'>") <= line("$")
+
+return '[

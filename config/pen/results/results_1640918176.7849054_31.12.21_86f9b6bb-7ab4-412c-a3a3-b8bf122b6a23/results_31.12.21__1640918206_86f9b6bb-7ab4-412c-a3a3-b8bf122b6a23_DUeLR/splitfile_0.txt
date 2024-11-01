@@ -1,0 +1,22 @@
+List of algorithms:
+"""
+Function or algorithm:
+```
+(defun f (n)
+  (if (= n 0) 0
+    (if (= n 1) 1
+      (+ (f (- n 1)) (f (- n 2))))))
+```
+Algorithm name: Generate the fibonacci sequence
+Function name: fib
+"""
+Function or algorithm:
+```
+f :: (Ord a) => [a] -> [a]
+f [] = []
+f (x:xs) =
+  let smaller = f [a | a <- xs, a <= x]
+      bigger = f [a | a <- xs, a > x]
+  in  smaller ++ [x] ++ bigger
+```
+Algorithm name:  PEN MODEL DummyModel prompt List of algorithms n nFunction or algorithm n n defun f n n if n 0 0 n if n 1 1 n f n 1 f n 2 n nAlgorithm name Generate the fibonacci sequence nFunction name fib n nFunction or algorithm n nf Ord a a a nf nf x xs n let smaller f a a xs a x n bigger f a a xs a x n in smaller x bigger n nAlgorithm name n 4 top k 10 top p 1 0 log probs 10 stop sequences delim delim maximum tokens 513 temperature 0 3 presence penalty 0 frequency penalty 0 

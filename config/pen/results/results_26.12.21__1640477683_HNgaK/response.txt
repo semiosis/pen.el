@@ -1,0 +1,5 @@
+declare -f __crack_password__
+declare -f __crack_password_hash__
+declare -f __crack_password_hash_sha1__
+declare -f __crack_password_hash_sha224__
+declare -

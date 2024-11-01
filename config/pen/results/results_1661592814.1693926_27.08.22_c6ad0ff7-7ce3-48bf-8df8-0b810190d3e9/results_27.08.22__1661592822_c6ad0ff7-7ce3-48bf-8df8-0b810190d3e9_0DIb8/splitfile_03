@@ -1,0 +1,6 @@
+[[String]] -> IO ()
+tabularise []     = putStrLn ""
+tabularise ((x:xs):rows) = do
+  putStrLn (x ++ " | " ++ xs !! 0)
+  tabularise rows
+EOD

@@ -1,0 +1,9 @@
+Generate an emacs-lisp struct definition for a C struct."
+  (let ((struct-name (read-string "Name of struct: "))
+        (struct-fields (read-string "Fields of struct: ")))
+    (with-temp-file (concat struct-name ".el")
+      (insert (concat "(defstruct " struct-name "\n"
+                      "  (\n"))
+      (dolist (field (split-string struct-fields))
+        (insert (concat "    " field "\n")))
+      (insert "  ))\n"))))

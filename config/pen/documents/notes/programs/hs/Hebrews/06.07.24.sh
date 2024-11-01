@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Hebrews" "13:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Hebrews" "13:12-13" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "13:4" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "13:5-6" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "13:12-13" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "13:12-14" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "13:15-16" "#" "<==" "zsh"

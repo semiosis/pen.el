@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: intenum
+# group: enum
+# key: intenum
+# --
+from enum import IntEnum
+
+class Building(IntEnum):
+AACHEN_CATHEDRAL = 1622
+AMPHITHEATRE = 251

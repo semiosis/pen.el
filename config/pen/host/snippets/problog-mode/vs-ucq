@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: union of conjunctive queries
+# group: vimsnippet
+# key: vs-ucq
+# --
+${1:smokes} :- ${2:stress(X)}, ${3:influences(X,Y)}.
+query($1).

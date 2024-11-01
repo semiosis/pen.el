@@ -1,0 +1,6313 @@
+https://wiki.haskell.org/Category:Glossary
+
+http://dev.stephendiehl.com/fun/001_basics.html
+
+http://learnyouahaskell.com/input-and-output
+lyah sequence
+
+purity
+pure function
+    Pure functions take values as arguments,
+    do some processing of those values, then
+    return a result value.
+
+    A pure function does not depend on the
+    'state of the world'.
+
+    The computation is entirely self-contained
+    and independent.
+
+    Given the same arguments, a pure function
+    will *always* return the same result.
+
+    Order of function evaluation doesn't
+    matter in pure code - e.g.
+
+        let a = reverse "winston"
+            b = reverse "churchill"
+        in "sir " ++ a ++ " " b
+
+short cut fusion
+    An optimizer method that merges some
+    function calls into one.
+
+    E.g.
+        map f . map g
+
+            can be substituted by
+
+        map (f . g)
+
+            and
+
+        filter p . filter q
+
+            can be substituted by
+
+        filter (\x -> q x && p x)
+
+    It can also help to remove intermediate
+    data structures.
+
+    E.g.
+        Computing sum [1..n] does not require
+        an explicit list structure, and the
+        expression is actually translated into
+        a simple loop.
+
+    Short cut fusion allows elimination of intermediate data
+    structures using rewrite rules that can
+    also be performed automatically during
+    compilation.
+
+    https://wiki.haskell.org/Correctness_of_short_cut_fusion
+    https://wiki.haskell.org/Short_cut_fusion
+
+component
+    [#cabal]
+
+    https://kowainik.github.io/projects/awesome-cabal
+
+    A component is anything behind a stanza
+    with its own set of dependencies, etc.
+
+    So it can be multiple sublibraries,
+    multiple executables, test-suites, etc.
+
+    You can prefix component names with lib:
+    or exe: to specify if its an executable
+    component (like a test suite) or a library
+    component.
+
+    Components are described a bit in the
+    users guide:
+    https://cabal.readthedocs.io/en/latest/setup-commands.html?highlight=component#runhaskell-setup-hs-configure
+
+    pin $MYGIT/mark-watson/haskell_tutorial_cookbook_examples/ImPure
+    /root/.ghcup/bin/cabal repl
+
+GT
+LT
+EQ
+    Special values representing:
+    - Greater-than
+    - Less-than
+    - Equal-to
+
+    Used within a comparator.
+
+    Used in the 'sortBy' function.
+
+    In order languages they would be:
+    - -1, 0 and 1, or
+    - True and False
+
+StateVar
+    https://hackage.haskell.org/package/StateVar
+
+loop
+    printStudents :: Int -> IO ()
+    printStudents num = do
+        let student = students !! num
+        if num <= 4
+        then do
+            putStrLn student
+            printStudents (num + 1)
+        else putStrLn "printed all students!"
+
+    https://youtu.be/C0XhHpfw5ao?list=PLmTgnNwroyn8TnF26YRvW-hvQF1ypztzg&t=597
+
+$=
+($=)
+    In the StateVar package, the following is
+    defined:
+
+        class HasSetter s where -- class of all
+        writable state variables.
+
+        ($=) :: s a -> a -> IO ()
+
+    Write a new value into a state variable.
+
+    So it is the 'write' operator for settable
+    (mutable) values. Particularly as used in
+    OpenGL.
+
+    https://youtu.be/1MNTerD8IuI?t=308
+
+        initGL width height = do
+        clearColor $= Color4 1 1 1 1
+        viewport $= (Position 0 0,
+                    Size (fromIntegral width)
+                         (fromIntegral height))
+        ortho 0 (fromIntegral width)
+              0 (fromIntegral height) (-1) 1
+
+partial function [haskell]
+    A function that is not defined for all
+    possible arguments of the specified type.
+
+    Examples:
+    - head, tail
+      Undefined for empty lists.
+
+    - (!!)
+      Undefined if the index is at least as
+      big as the list length.
+
+    - div
+      Undefined if the divisor is zero.
+
+    The opposite is a total function.
+
+    Avoid partial functions and instead write
+    total ones.
+        Makes "if your code compiles, it
+        probably works" true for your code
+        more often.
+
+    Usually if you have a partial function,
+    it's because your types are incorrect and
+    you should fix your types rather than
+    writing partial functions which guarantee
+    the impossible.
+
+    A good example of this is head.
+
+    You shouldn't use this function or write
+    functions like it.
+
+    The problem is in the type, it says [a] ->
+    a which is actually impossible as far as
+    total functions are concerned.
+
+    Why?
+
+    Because you might have an empty list!
+
+    Instead, a more honest type that lets you
+    write a total function would be [a] ->
+    Maybe a.
+
+    This makes the possibility of not getting
+    a result more explicit and keeps your
+    functions total.
+
+    You almost never have an excuse for
+    writing a partial function!
+
+    There are methods to avoid the use of
+    partial functions.
+
+    Example:
+        head :: [h] -> h                      -- 'head' is a function. list -> element.
+                                              -- what is the relevance of 'a'? It could be anything?
+        head []    = error "head: empty list" -- [], therefore error
+        head (x:_) = x
+
+        -- The empty list case errors.
+        -- If the list is empty, it panics.
+
+total function [haskell]
+    Opposite of a partial function.
+
+function
+    inc x   = x+1
+    add x y = x+y
+
+    are really shorthand for:
+
+    inc = \x   -> x+1
+    add = \x y -> x+y
+
+Function application
+    Example: map function:
+
+        map          :: (a->b) -> [a] -> [b]
+        map f  []    =  []
+        map f (x:xs) =  f x : map f xs
+
+    Second equation:
+
+        map f (x:xs) =  f x : map f xs
+
+    Function application has higher precedence
+    than any infix operator, and thus the
+    right-hand side of the second equation
+    parses as:
+
+        (f x) : (map f xs)
+
+circular
+circularity
+    Here is an infinite list of ones:
+
+        ones = 1 : ones
+
+    The definition of ones above is an example
+    of a circular list.
+
+    In most circumstances laziness has an
+    important impact on efficiency, since an
+    implementation can be expected to
+    implement the list as a true circular
+    structure, thus saving space.
+
+    Another example:
+
+        fib = 1 : 1 : [ a+b | (a,b) <- zip fib (tail fib) ]
+
+non-terminating expression
+_|_
+    Suppose bot is defined by:
+
+        bot = bot
+
+    In other words, bot is a non-terminating
+    expression.
+
+    Abstractly, we denote the value of a non-
+    terminating expression as _|_ (read
+    "bottom").
+
+    Expressions that result in some kind of a
+    run-time error, such as 1/0, also have
+    this value.
+
+    Such an error is not recoverable: programs
+    will not continue past these errors.
+
+    Errors encountered by the I/O system, such
+    as an end-of-file error, are recoverable
+    and are handled in a different manner.
+
+    (Such an I/O error is really not an error
+    at all but rather an exception.
+
+    See "error function".
+
+error
+error function
+    Its type is String->a.
+
+    This is a somewhat odd function: From its
+    type it looks as if it is returning a
+    value of a polymorphic type about which it
+    knows nothing, since it never receives a
+    value of that type as an argument!
+
+    In fact, there is one value "shared" by
+    all types: _|_. Indeed, semantically that
+    is exactly what value is always returned
+    by error (recall that all errors have
+    value _|_). However, we can expect that a
+    reasonable implementation will print the
+    string argument to error for diagnostic
+    purposes. Thus this function is useful
+    when we wish to terminate a program when
+    something has "gone wrong." For example,
+    the actual definition of head taken from
+    the Standard Prelude is:
+
+        head (x:xs) =  x
+        head  []    =  error "head{PreludeList}: head []"
+
+    See "_|_".
+
+strict
+    A function f is said to be strict if, when
+    applied to a nonterminating expression, it
+    also fails to terminate.
+
+    In other words, f is strict iff the value
+    of f bot is _|_.
+
+    For most programming languages, all
+    functions are strict.
+
+    But this is not so in Haskell.
+
+    As a simple example, consider const1, the
+    constant 1 function, defined by:
+
+        const1 x = 1
+
+    The value of const1 bot in Haskell is 1.
+
+    Operationally speaking, since const1 does
+    not "need" the value of its argument, it
+    never attempts to evaluate it, and thus
+    never gets caught in a nonterminating
+    computation.
+
+    For this reason, non-strict functions are
+    also called "lazy functions", and are said
+    to evaluate their arguments "lazily", or
+    "by need".
+
+fixity declaration
+    Can be given for any infix operator or
+    constructor (including those made from
+    ordinary identifiers, such as `elem`).
+
+    This declaration specifies a precedence
+    level from 0 to 9 (with 9 being the
+    strongest; normal application is assumed
+    to have a precedence level of 10), and
+    left-, right-, or non-associativity.
+
+    For example, the fixity declarations for
+    ++ and .  are:
+
+        infixr 5 ++
+        infixr 9 .
+
+    Both of these specify right-associativity,
+    the first with a precedence level of 5,
+    the other 9.
+
+    Left associativity is specified via
+    infixl, and non-associativity by infix.
+
+    Also, the fixity of more than one operator
+    may be specified with the same fixity
+    declaration.
+
+    If no fixity declaration is given for a
+    particular operator, it defaults to infixl
+    9.
+
+    (See §4.4.2 for a detailed definition of
+    the associativity rules.)
+
+associative
+    Associative operators are those that are
+    not sensitive of the sequence of
+    execution, for example, 5+3+2 will always
+    result in 10 whether you execute/solve the
+    right part first or the last part.
+
+non-associative
+non-associativity
+    Non-associative operators are those whose
+    result will differ based upon the sequence
+    of execution or solving, for example,
+    5-3-2 will result in 0 if the left pair is
+    executed first and will result in 4 if the
+    right part is executed first.
+
+    The Non-Associative operators are further
+    classified as:
+    - left-associative
+    - right associative.
+
+left associative
+right associative
+left-associative
+right-associative
+    [non-associative]
+
+non-strict
+lazy
+    ewwlinks +/"Functions are Non-strict" "https://www.haskell.org/tutorial/functions.html"
+
+    Another way of explaining non-strict
+    functions is that Haskell computes using
+    definitions rather than the assignments
+    found in traditional languages. Read a
+    declaration such as
+
+        v = 1/0
+
+    as `define v as 1/0' instead of `compute
+    1/0 and store the result in v'.  Only if
+    the value (definition) of v is needed will
+    the division by zero error occur.
+
+    One advantage of the non-strict nature of
+    Haskell is that data constructors are
+    non-strict, too. This should not be
+    surprising, since constructors are really
+    just a special kind of function (the
+    distinguishing feature being that they can
+    be used in pattern matching). For example,
+    the constructor for lists, (:), is
+    non-strict.
+
+    Non-strict constructors permit the
+    definition of (conceptually) infinite data
+    structures. Here is an infinite list of
+    ones:
+
+        ones = 1 : ones
+
+    Perhaps more interesting is the function
+    numsFrom:
+
+        numsFrom n = n : numsFrom (n+1)
+
+    Thus numsFrom n is the infinite list of
+    successive integers beginning with n. From
+    it we can construct an infinite list of
+    squares:
+
+        squares = map (^2) (numsfrom 0)
+
+    See "strict".
+
+state
+    Violates referential transparency.
+
+static typing
+statically typed
+    Haskell is statically typed.
+
+    Typing
+        "When types are checked"
+
+    Static
+        Types checked before run-time
+    Dynamic
+        Types checked on the fly, during
+        execution
+
+Haskell
+    [language]
+
+    A polymorphic lambda calculus with lazy
+    evaluation plus algebraic data types and
+    type classes.
+
+    This happens to be just the right
+    combination of features to allow us to
+    write clean, maintainable code that also
+    runs fast.
+
+    ewwlinks +/"Standard Haskell: Ergonomics + Performance" "https://serokell.io/blog/why-dependent-haskell"
+
+    Attributes:
+    - polymorphism type: parametric
+
+    A distinct construct exists to represent
+    side effects, orthogonal to the type of
+    functions.
+
+    why?
+    - reasoning about code
+    - purity
+      flows from laziness
+    - strong static typing
+
+    ewwlinks +/"Runtime Correctness" "https://github.com/github/semantic/blob/master/docs/why-haskell.md"
+
+Haskell Kernel
+    Haskell has adopted many of the convenient
+    syntactic structures that have become
+    popular in functional programming. In this
+    Report, the meaning of such syntactic
+    sugar is given by translation into simpler
+    constructs. If these translations are
+    applied exhaustively, the result is a
+    program written in a small subset of
+    Haskell that we call the Haskell kernel.
+
+    Although the kernel is not formally
+    specified, it is essentially a slightly
+    sugared variant of the lambda calculus
+    with a straightforward denotational
+    semantics. The translation of each
+    syntactic structure into the kernel is
+    given as the syntax is introduced. This
+    modular design facilitates reasoning about
+    Haskell programs and provides useful
+    guidelines for implementors of the
+    language.
+
+    ewwlinks +/"The Haskell Kernel" "https://www.haskell.org/onlinereport/haskell2010/haskellch1.html#x6-110001.2"
+
+type constructor vs data constructor
+    Maybe is a type constructor and Nothing
+    and Just are data constructors.
+    You can construct a data value by applying
+    the Just data constructor to a value:
+
+        country = Just "China"
+
+    In the same way, you can construct a type
+    by applying the Maybe type constructor to
+    a type:
+
+        lookupAge :: DB -> String -> Maybe Int
+
+    Type constructors such as Point and data
+    constructors such as Pt are in separate
+    namespaces. This allows the same name to
+    be used for both a type constructor and
+    data constructor, as in the following:
+
+        data Point a = Point a a
+
+    For tuples, the type constructors (as well
+    as the data constructors) are (,), (,,),
+    and so on.
+
+    Data constructors:
+
+        data Tree a = Leaf a | Branch (Tree a) (Tree a)
+
+        Here we have defined a polymorphic
+        binary tree type whose elements are
+        either leaf nodes containing a value
+        of type a, or internal nodes
+        ("branches") containing (recursively)
+        two sub-trees.
+
+        When reading data declarations such as
+        this, remember again that Tree is a
+        type constructor, whereas Branch and
+        Leaf are data constructors. Aside from
+        establishing a connection between
+        these constructors, the above
+        declaration is essentially defining
+        the following types for Branch and
+        Leaf:
+
+        Branch :: Tree a -> Tree a -> Tree a
+        Leaf   :: a -> Tree a
+
+concrete
+concrete type
+concrete data type
+    Can be introduced with the data construct
+    (without parameters), or by specializing a
+    Parametrized data type to a specific
+    situation.
+
+    For example, Maybe Integer , Bool ,
+    [(String,String)] and Tree String are
+    concrete data types.
+
+    See:
+    - "type constructor vs data constructor"
+
+polymorphic type
+    Can be thought of as containers for values
+    of another type.
+
+    Monad types are polymorphic types.
+
+    They are like containers that are capable
+    of holding values of many different types.
+
+    So Maybe Int can be thought of as a Maybe
+    container holding an Int value (or
+    Nothing) and Maybe String would be a Maybe
+    container holding a String value (or
+    Nothing).
+
+    In Haskell, we can also make the type of
+    the container polymorphic, so we could
+    write "m a" to represent a container of
+    some type holding a value of some type!
+
+Continuation Passing Style
+CPS
+    Continuation passing style is a
+    transformation from a normal function and
+    a call stack to a direction to send the
+    result to the "continuation" without
+    returning.
+
+    This means the functions context can be
+    cleaned up.
+
+    Delimited continuations are a slight
+    variation, where instead of an unbounded
+    "rest of the program", the continuation
+    has an end point and a value.
+
+    It's essentially a function, and can be
+    handled as such.
+
+    There is a purely mechanical method for
+    converting all of the lambda calculus
+    transforms into CPS form, and this can be
+    profitable for compilers based on lambda,
+    or related logics, like system F.
+
+continuation monad
+    CPS is tedious, though.
+
+    Having to explicitly add a continuation to
+    everything is complicated.
+
+    However, there's also a typeclass, or
+    concept, that allows you to convert
+    regular functions into continuation
+    passing style, automatically.
+
+    It's then rather straightforward to
+    involve concerns like where work is being
+    run for something that wraps up the entire
+    work.
+
+    Even being able to switch back and forth
+    between contexts.
+
+    That's the continuation monad.
+
+non-deterministic computation
+    The kind of computation that, instead of
+    producing a single result, might produce
+    many.
+
+    https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/13-the-list-monad
+
+    A computation returning a non-
+    deterministic result of type a is not a
+    pure function, but it can be made into one
+    by transforming its result type from a to
+    a list of a.
+
+    In essence, we create a function that
+    returns all possible results at once.
+
+monadic function
+    Functions that return a monadic type are
+    called monadic functions.
+
+    Each monad provides a mechanism for
+    composing such monadic functions.
+
+    As we have seen, the do notation
+    simplifies the syntax of composing
+    multiple monadic functions.
+
+one-way monads
+    Many monads are one-way i.e. you can't get
+    values back out of the monad. But y ou may
+    implment functions for your monad that do
+    this. An example is the IO monad.
+
+    Allow values to enter the monad through
+    the return function (and sometimes the
+    fail function) and they allow computations
+    to be performed within the monad using the
+    bind functions >>= and >>, but they do not
+    allow values back out of the monad.
+
+    However, List and Maybe, do allow values
+    out of the monad. So it is possible to
+    write functions which use these monads
+    internally but return non-monadic values.
+
+interface
+interface class
+    They provide functionality to your
+    classes.
+
+    Any Type class that wants to check the
+    equality of an expression should be a part
+    of the EQ Type Class.
+
+    Examples
+    - Ord
+    - EQ
+
+    Any Type class that wants to be used by
+    ">", "<", "<=", ">=", "compare" should be
+    a part of the Ord Type Class.
+
+diverge
+divergence
+    [#mathematics]
+
+    (of a series) increase indefinitely as
+    more of its terms are added.
+
+catamorphism
+    [#category theory]
+
+    A general abstraction that enables you to
+    handle multiple values, for example in
+    order to reduce them to a single value.
+
+    The concept of catamorphism denotes the
+    unique homomorphism from an initial
+    algebra into some other algebra.
+
+    [#functional programming]
+
+    Catamorphisms provide generalizations of
+    folds of lists to arbitrary algebraic data
+    types, which can be described as initial
+    algebras.
+
+    https://youtu.be/LXx-dOmjxg0
+
+    $MYGIT/acmeism/RosettaCodeData/Task/Catamorphism
+
+    Deconstructs a data structure with an
+    F-algebra for its underlying functor.
+
+    A catamorphism for some F-algebra (X,f) is
+    denoted (| f |)F.
+
+    When the functor F can be determined
+    unambiguously, it is usually written (|φ|)
+    or cata φ.
+
+    Due to this choice of notation, a
+    catamorphism is sometimes called a banana
+    and the (|.|) notation is sometimes
+    referred to as banana brackets.
+
+    Examples:
+        $MYGIT/acmeism/RosettaCodeData/Task/Catamorphism/C++/catamorphism.cpp
+
+    The unique homomorphism from an initial
+    algebra into some other algebra.
+
+    The dual concept is that of anamorphism
+    that generalize unfolds.
+
+    A hylomorphism is the composition of an
+    anamorphism followed by a catamorphism.
+
+anamorphism
+    A function that generates a sequence by
+    repeated application of the function to
+    its previous result.
+
+    You begin with some value A and apply a
+    function f to it to get B.
+
+    Then you apply f to B to get C, and so on
+    until some terminating condition is
+    reached.
+
+ascription
+type ascription
+    > :t (+)
+    (+) :: Num a => a -> a -> a
+
+    You can read the type for (+) as saying
+    "(+) takes two Ints or two Floats or two
+    Doubles or two values of any other numeric
+    type and returns another number of the
+    same type as the arguments". Haskell
+    automatically infers the specific types
+    based on how the expressions are used. But
+    we can also explicitly tell Haskell which
+    types we want using type ascription.
+
+    > :t (4 :: Int) + (5 :: Int)
+
+section
+operator section
+section of an infix operator
+    [#haskell]
+
+    Convert infix operator into a functional
+    value.
+
+    The partial application of an
+    infix operator.
+
+    This is the opposite of backquote notation
+    (i.e. making a functional value into an
+    operator).
+
+    For example:
+
+        (x+)  =  \y -> x+y
+        (+y)  =  \x -> x+y
+        (+)   =  \x y -> x+y
+
+    The parentheses are mandatory.
+
+    Handy when passing an infix operator as an
+    argument to a function, as in:
+
+        map (+) [1,2,3]
+
+    A special syntax for partial application
+    on infix operators.
+
+    https://wiki.haskell.org/Section_of_an_infix_operator
+
+    \x -> 2 ^ x
+        (2^) (left section) is equivalent to (^) 2,
+        or more verbosely \x -> 2 ^ x
+
+    \x -> x ^ 2
+        (^2) (right section) is equivalent to flip (^) 2,
+        or more verbosely \x -> x ^ 2
+
+    https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/guide-to-ghc-extensions/basic-syntax-extensions#postfixoperators
+
+existential types
+    [#haskell]
+
+    ifl existential type haskell
+
+    Normally when creating a new type using
+    type, newtype, data, etc., every type
+    variable that appears on the right-hand
+    side must also appear on the left-hand
+    side.
+
+    Existential types are a way of turning
+    this off.
+
+generics
+    [#haskell]
+
+type applications
+    [#haskell]
+
+TypeInType
+    [#haskell]
+    [WIP language extension]
+
+    Modern type-level programming.
+
+    Covers a wealth of features, all with the
+    aim of creating a dependently typed
+    Haskell.
+
+language extensions
+    [#haskell]
+
+    cd $MYGIT/facebook/duckling/Duckling/; grep -HnR "# LANGUAGE" . | scrape "LANGUAGE [^ ]+" | uniqnosort
+    sed -n "s/.*LANGUAGE \(.*\)/\1\n    [haskell language extension]\n/ip"
+
+PostfixOperators
+    [haskell language extension]
+
+    ewwlinks +/"PostfixOperators" "https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/guide-to-ghc-extensions/basic-syntax-extensions"
+
+    Normally, when you write, for example:
+
+        (4 !)
+
+    it expands into:
+
+        \x -> 4 ! x
+
+    or, equivalently:
+
+        \x -> (!) 4 x
+
+    PostfixOperators instead expands this left section into:
+
+        (!) 4
+
+Data.Typeable and Data.Data
+    ewwlinks +/"Typeable and Data in Haskell" "https://chrisdone.com/posts/data-typeable/"
+
+    Rather mysterious.
+
+    Starting out as a Haskell newbie you see
+    them once in a while and wonder what use
+    they are.
+
+    Their Haddock pages are pretty opaque and
+    scary in places.
+
+    Here's a quick rundown I thought I'd write
+    to get people up to speed nice and quick
+    so that they can start using it.
+
+    It's really rather beautiful as a way to
+    do generic programming in Haskell.
+
+    The general approach is that you don't
+    know what data types are being given to
+    you, but you want to work upon them almost
+    as if you did.
+
+    The technique is simple when broken down.
+
+DeriveDataTypeable
+    [haskell language extension]
+
+    Now you can derive instances of both
+    Data.Typeable and Data.Data:
+
+        data X = X
+          deriving (Data,Typeable)
+
+    Now we can start doing generic operations
+    upon X.
+
+MultiParamTypeClasses
+    [haskell language extension]
+
+DeriveAnyClass
+    [haskell language extension]
+
+DeriveGeneric
+    [haskell language extension]
+
+NoRebindableSyntax
+    [haskell language extension]
+
+TypeFamilies
+    [haskell language extension]
+
+OverloadedStrings
+    [haskell language extension]
+
+GADTs
+    [haskell language extension]
+
+LambdaCase
+    [haskell language extension]
+
+tuple constructor
+    [#haskell]
+
+    Example:
+
+        (,,,,) 1 "hello" 6.5 (Just ()) [5, 5, 6, 7]
+
+    See:
+        vim +/"TupleSections" "$HOME/notes/glossary.txt"
+
+TupleSections
+    [haskell language extension]
+
+    ewwlinks +/"TupleSections" "https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/guide-to-ghc-extensions/basic-syntax-extensions"
+
+    Allows you to:
+    - omit values from the tuple syntax,
+      unifying the standard tuple sugar with
+      the tuple constructor syntax to form one
+      generalized syntax for tuples.
+
+    Normally, tuples are constructed with the
+    standard tuple sugar, which looks like
+    this:
+
+        (1, "hello", 6.5, Just (), [5, 5, 6, 7])
+
+    This could be considered shorthand for the
+    following explicit tuple constructor use:
+
+        (,,,,) 1 "hello" 6.5 (Just ()) [5, 5, 6, 7]
+
+    However, the explicit tuple constructor
+    (,,,,) could just as easily be considered
+    section sugar for tuples, expanding to:
+
+        \v w x y z -> (v, w, x, y, z)
+
+    Looking at it this way allows us to ask,
+    "Why can't we partially section a tuple?
+    After all, (+) is valid, (,) is valid, and
+    (1 +) is valid, but (1,) is not valid. The
+    TupleSections extension fixes this
+    oversight.
+
+    With TupleSections you can now write, for
+    example:
+
+        (1, "hello",, Just (),)
+
+    and have it mean the same as
+
+        \x y -> (1, "hello", x, Just (), y)
+
+NamedFieldPuns
+    [haskell language extension]
+
+    ewwlinks +/"Record puns are enabled by the flag -XNamedFieldPuns." "https://downloads.haskell.org/~ghc/7.6.2/docs/html/users_guide/syntax-extns.html"
+
+    When using records, it is common to write
+    a pattern that binds a variable with the
+    same name as a record field, such as:
+
+        data C = C {a :: Int}
+        f (C {a = a}) = a
+
+    Record punning permits the variable name
+    to be elided, so one can simply write
+
+        f (C {a}) = a
+
+RecordWildCards
+    [haskell language extension]
+
+AllowAmbiguousTypes
+    [haskell language extension]
+
+ExistentialQuantification
+    [haskell language extension]
+
+FlexibleContexts
+    [haskell language extension]
+
+FlexibleInstances
+    [haskell language extension]
+
+RankNTypes
+    [haskell language extension]
+
+ScopedTypeVariables
+    [haskell language extension]
+
+StandaloneDeriving
+    [haskell language extension]
+
+TypeOperators
+    [haskell language extension]
+
+BangPatterns
+    [haskell language extension]
+
+Math
+    Purely functional.
+
+    vimlinks +/"Mathematics is a purely functional language. " "http://matt.might.net/articles/discrete-math-and-code/"
+
+package
+    [#cabal]
+
+    Has:
+    - A name and version
+    - 0 or 1 libraries
+    - 0 or more executables
+    - A cabal file (or, as mentioned above, an
+      hpack package.yaml that generates a
+      cabal file)
+    - And a bunch more
+
+cabal-install vs stack
+    https://stackoverflow.com/questions/30913145/what-is-the-difference-between-cabal-and-stack
+
+    cabal-install and stack are frontends to
+    Cabal.
+
+    Both tools make it possible to build
+    Haskell projects whose sets of
+    dependencies might conflict with each
+    other within the confines of a single
+    system.
+
+    The key difference between them lies in
+    how they address this goal.
+
+Stack
+    [build tool]
+
+    Works on top of the Cabal build system.
+
+project
+    [#stack]
+
+    Has:
+    - A resolver, which tells it about a
+      snapshot (more on this later)
+    - Extra dependencies on top of the
+      snapshot
+    - 0 or more local Cabal packages
+    - Flag and GHC options configurations
+    - And a bunch more Stack configuration
+
+value constructor
+tag
+    data RGB
+      = MkRGB Int Int Int
+    {-
+          ^    ^   ^   ^
+          |    |   |   |
+          |    |   |   +- This is the blue component
+          |    |   |
+          |    |   +----- This is the green component
+          |    |
+          |    +--------- This is the red component
+          |
+          +------------- This is called the value constructor, or "tag"
+    -}
+
+magenta :: RGB
+magenta = MkRGB 255 0 255
+
+return
+    [Function in Haskell]
+
+    fathersMaternalGrandmother :: Sheep -> Maybe Sheep
+    fathersMaternalGrandmother s = (return s) >>= father >>= mother >>= mother
+
+    Return turns the sheep into a Maybe sheep.
+
+    Has little to do with the return keyword
+    in imperative programming languages.
+
+    It's just an ordinary function with an
+    ordinary type signature:
+
+    return :: Monad m => a -> m a
+
+    Basically, return takes any old value and
+    "lifts" it into a monad. It's a little
+    clearer what this function does when you
+    replace the m with a concrete type, like
+    Maybe:
+
+    return :: a -> Maybe a
+
+dependent type
+    [type]
+
+    A type whose definition depends on a
+    value.
+
+    It is an overlapping feature of type
+    theory and type systems.
+
+Eq
+    [typeclass]
+
+    The Int type is an instance of the Eq
+    typeclass because the Eq typeclass defines
+    behavior for stuff that can be equated.
+
+    And because integers can be equated, Int
+    is a part of the Eq typeclass.
+
+type variable
+    Example:
+        Given the type:
+            a -> a -> a
+        'a' is a type variable.
+
+    ewwlinks +/"Type Variables" "https://cs.lmu.edu/~ray/notes/introhaskell/"
+
+    We know [Char] and [Float] are two
+    different types. So how do we speak about,
+    or write functions that work on, lists of
+    ANY type? Or tuples of any size, or any
+    component type?
+
+    Answer: type variables.
+
+    Type variables come in lowercase.
+
+list comprehension
+    [x*2 | x = 12]
+
+    The part before the pipe is called the
+    output function.
+
+    ewwlinks +/"I'm a list comprehension" "http://learnyouahaskell.com/starting-out#im-a-list-comprehension"
+
+$
+    readsubs +/"that dollar thing" "[[https://www.youtube.com/watch?v=SMj-n2f7wYY][Adam McCullough - Monad Transformers for the Easily Confused - C 2018 - YouTube]]"
+
+    These type signatures are similar:
+        med <(ghcit '($ 5)') <(ghcit '(+ 10)')
+
+value constructor
+    [function]
+
+    Returns a value of a data type.
+
+    Example:
+        data Shape = Circle Float Float Float | Rectangle Float Float Float Float
+
+        Circle and Rectangle are the value
+        constructors.
+
+        They are just functions.
+
+        ewwlinks +/":t Circle" "http://learnyouahaskell.com/making-our-own-types-and-typeclasses#the-functor-typeclass"
+
+        ghci> :t Circle
+        Circle :: Float -> Float -> Float -> Shape
+
+applicative
+applicative functor
+    [Type class]
+
+    Something that specifies how to map a
+    function onto instances of itself
+    (instances that wrap basic values but also
+    instances that wrap functions).
+
+    An intermediate structure between functors
+    and monads. Applicative functors are the
+    programming equivalent of lax monoidal
+    functors with tensorial strength in
+    category theory.
+
+    Applicatives extend functors in that they
+    allow us to wrap functions, rather than
+    basic values.
+
+    So you can have a Just (+1).
+
+    tidbits.
+    - <*>
+      app, apply, spaceship
+
+      The operation of applicative.
+
+      ghcit "(<*>)"
+
+    - The applicative of lists
+      See note under "pure".
+
+    - Interchange
+
+    Applicative, the class for applicative
+    functors.
+
+    Like monads, applicative functors are
+    functors with extra laws and operations.
+
+    Applicative is a widely used class
+    with a wealth of applications. It enables
+    the eponymous applicative style, a
+    convenient way of structuring functorial
+    computations, and also provides means to
+    express a number of important patterns.
+
+    vim +/"instance Applicative ErrorOr where" "$MYGIT/google/haskell-trainings/haskell_102/codelab/Game.hs"
+
+    http://www.staff.city.ac.uk/~ross/papers/Applicative.html
+
+    Example (of an applicative functor)
+        replicateM :: Applicative m => Int -> m a -> m [a]
+        base Control.Monad
+        replicateM n act performs the action n times, gathering the results.
+
+    #haskell
+        00:38 < libertyprime> im looking at the hackage documentation for replicateM. it seems the 4.7 version was easier to understand. why would monad have been changed to
+                              applicative? what are the benefits?
+        00:38 < libertyprime> http://hackage.haskell.org/package/base-4.7.0.0/docs/src/Control-Monad.html#replicateM
+        00:38 < libertyprime> http://hackage.haskell.org/package/base-4.12.0.0/docs/src/Control.Monad.html#replicateM
+        00:38 < ski> (in Twelf you're write the same thing, except prefixing the first clause with `sum/zero : ', and the second clause with `sum/succ : '. data type
+                     definitions and predicate definitions are the same thing, in Twelf)
+        00:38 < Ariakenom> I suppose sleep :: DiffTime -> IO () would be most correct
+        00:39 < dminuoso> libertyprime: It admits more instances.
+        00:39 < ski> of course, you don't get any automatic proof search with such a data type, in Haskell
+        00:39 < dminuoso> libertyprime: There are some things that are Applicative but not Monad. The reason you had a Monad constraint was because it came before Applicative
+                          was a thing.
+        00:40 < dminuoso> libertyprime: Since the introduction of Applicative a lot of code could be relaxed from requiring Monad to Applicative.
+        00:56 < dminuoso> libertyprime: https://gitlab.haskell.org/ghc/ghc/issues/10168 this is the ticket
+        00:57 < libertyprime> mawesome. thanks guys
+        00:57 < dminuoso> libertyprime: It also describes the reason why the implication is different. :)
+        00:57 < dminuoso> *implementation
+
+    Example
+        ewwlinks +/"sequence :: (Applicative f) => \[f a\] -> f \[a\]" "http://derekwyatt.org/2012/01/25/haskell-sequence-over-functions-explained/"
+
+<*>
+splat
+applicative
+applicative function
+applicative operator
+    [operator]
+
+    https://youtu.be/CNOff5LPKQI?t=103
+
+    The applicative operation.
+
+    This is the thing that applicative does.
+
+    readsubs +/"splat" "[[https://www.youtube.com/watch?v=SMj-n2f7wYY][Adam McCullough - Monad Transformers for the Easily Confused - C 2018 - YouTube]]"
+
+    Unlike like how functors have the function
+    named "fmap" which does the same thing as
+    the infix <$>, applicatives don't have a
+    name for the applicative operator <*>.
+
+interchange
+    [#applicative]
+
+    $NOTES/ws/haskell/tidbits/interchange.org
+
+    Evaluation order doesn't matter.
+
+    Reason/intuition:
+        Even if your functions have effects
+        for doing side effect key things order
+        of evaluation shouldn't matter.
+
+        https://wiki.haskell.org/Typeclassopedia#Laws
+
+        If this wasn't the case then debugging
+        haskell code would be a nightmare.
+
+pure
+    [#applicative]
+    [function]
+
+    ghciol ":i pure" | vs
+
+    A function that lifts a function into the
+    context that applicative is working in.
+
+    Example:
+        So, if you are working in the
+        applicative of lists, "pure id" will
+        give you a list with one value in it
+        called id.
+
+        pure id <*> v = v -- identity
+
+    readsubs +/"the context that applicative" "[[https://www.youtube.com/watch?v=SMj-n2f7wYY][Adam McCullough - Monad Transformers for the Easily Confused - C 2018 - YouTube]]"
+
+    When implementing pure for an instance of
+    Applicative, implement the simplest case.
+        https://youtu.be/CNOff5LPKQI?t=825
+
+bitwise (flags)
+    and
+        (.&.) :: a -> a -> a infixl 7
+    or
+        (.|.) :: a -> a -> a infixl 5
+    xor
+        xor :: a -> a -> a infixl 6
+    reverse all bits
+        complement :: a -> a
+
+ersatz
+    [package]
+
+    http://hackage.haskell.org/package/ersatz
+
+    A monad for expressing SAT or QSAT
+    problems using observable sharing.
+
+    Uses 'minisat'.
+
+language extensions
+    https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/guide-to-ghc-extensions/basic-syntax-extensions
+
+    From regular source code:
+        {-# LANGUAGE PackageImports #-}
+
+        import "regex-pcre" Text.Regex.PCRE
+
+    From ghci
+        :set -XPackageImports
+
+        import "regex-pcre" Text.Regex.PCRE
+
+infixl
+infixr
+    https://stackoverflow.com/questions/27770118/how-does-the-infix-work
+
+    ewwlinks +/"(|>) :: Seq a -> a -> Seq a infixl 5" "https://hackage.haskell.org/package/containers-0.6.2.1/docs/Data-Sequence.html#v:-124--62-"
+
+    The r and l refer to the associativity,
+    the number you specify refers to the
+    operator precedence.
+
+    When you don't specify the associativity
+    you get an operator that can be associated
+    only by explicit parenthesis or when the
+    associativity is non-ambiguous.
+
+    https://wiki.haskell.org/Keywords#infixr
+
+    Examples:
+    - infixl 5
+    - infixr 5
+
+()
+unit
+    The empty tuple.
+
+action
+I/O action
+    [#haskell monads]
+
+    Actions are sequenced using an operator
+    that has a rather cryptic name: >>= (or
+    `bind').
+
+    Instead of using this operator directly,
+    we choose some syntactic sugar, the do
+    notation, to hide these sequencing
+    operators under a syntax resembling more
+    conventional languages.
+
+    The do notation can be trivially expanded
+    to >>=.
+
+    Something that, when performed, will carry
+    out an action with a side-effect (that's
+    usually either reading from the input or
+    printing stuff to the screen) and will
+    also contain some kind of return value
+    inside it.
+
+    Actions are defined rather than invoked
+    within the expression language of Haskell.
+
+    Evaluating the definition of an action
+    doesn't actually cause the action to
+    happen.
+
+    Rather, the invocation of actions takes
+    place outside of the expression evaluation
+    we have considered up to this point.
+
+    Actions are either atomic, as defined in
+    system primitives, or are a sequential
+    composition of other actions.
+
+    The I/O monad contains primitives which
+    build composite actions, a process similar
+    to joining statements in sequential order
+    using `;' in other languages.
+
+    Thus the monad serves as the glue which
+    binds together the actions in a program.
+
+Prelude print :: Show a => a -> IO ()
+Prelude putStrLn :: String -> IO ()
+    Printing a string to the terminal doesn't
+    really have any kind of meaningful return
+    value, so a dummy value of () is used.
+
+        >:t print $ "emp: "
+        print $ "emp: " :: IO ()
+        >:t putStrLn $ "emp: "
+        putStrLn $ "emp: " :: IO ()
+
+tails
+    >tails "klsjdf"
+    ["klsjdf","lsjdf","sjdf","jdf","df","f",""]
+
+infix operators
+    isPrefixOf "Hello" "Hello World!"
+    "Hello" `isPrefixOf` "Hello World!"
+
+    These are equivalent.
+
+isPrefixOf
+    ewwlinks +/"isPrefixOf :: Eq a => \[a\] -> \[a\] -> Bool Source #" "http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-List.html#v:isPrefixOf"
+
+    Works on a string.
+
+    import Data.List
+
+    include :: String -> String -> Bool
+    include xs ys = or . map (isPrefixOf ys) . tails $ xs
+
+    >isPrefixOf "aadvark" "a"
+    False
+    >isPrefixOf "a" "aadvark"
+    True
+
+    >"Hello" `isPrefixOf` "Hello World!"
+    True
+    >"Hello" `isPrefixOf` "Wello Horld!"
+    False
+
+getCurrentDirectory
+    import System.Directory
+    getCurrentDirectory
+
+.lhs extension
+literate formatting
+    Source code of a program written in
+    Haskell, a functional programming
+    language, with literate formatting;
+    similar to a standard Haskell Script (.HS
+    file), but includes commentary, where only
+    lines starting with ">" are considered to
+    be program code.
+
+    Example:
+    $MYGIT/bollu/teleport/app/Main.lhs
+
+operation
+operator
+    Type classes allow us to declare which
+    types are instances of which class, and to
+    provide definitions of the overloaded
+    operations associated with a class. For
+    example, let's define a type class
+    containing an equality operator:
+
+        class Eq a where
+        (==) :: a -> a -> Bool
+
+    See "overloading".
+
+method
+typeclass method
+type class method
+    ewwlinks +/"type class method" "https://www.schoolofhaskell.com/school/starting-with-haskell/introduction-to-haskell/5-type-classes"
+
+    Example:
+
+        instance Eq Integer where
+        x == y = x `integerEq` y
+
+    The definition of == is called a method.
+
+    Example of not a true method:
+        $HOME/source/git/lotz84/haskellbyexample/ex/methods.md.hs
+
+Identity
+    import Data.Functor.Identity
+    Identity 5
+
+id
+identity function
+    The id function returns what it is given.
+
+        fmap (\x -> map id x) $ Just ["Full house", "Shane"]
+
+sum type
+    [#haskell]
+    [constructor]
+
+    An alternation of types (e.g. Fruit =
+    Apple or Orange).
+
+    Consists of multiple options of type
+    constructors under the same type.
+
+    The two cases can be used at all locations
+    the type is specified, and are
+    discriminated using pattern matching.
+
+    ewwlinks +/"data Sum = A Int | B Bool" "http://dev.stephendiehl.com/fun/001_basics.html"
+
+    "sum" is alternation (A | B, meaning A or B but not both)
+
+    Example:
+
+        data Bool = False | True
+
+    ewwlinks +/"In Haskell, the simplest sum type is the Bool type:" "https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/sum-types"
+
+constructor
+    [AlDT]
+
+    2 types:
+    - sum
+    - product
+
+    Sums and products can be repeatedly
+    combined into an arbitrarily large
+    structures.
+
+    Examples:
+    - data Pair = P Int Double
+      A pair of numbers, an Int and a Double
+      together.
+
+      The tag P is used (in constructors and
+      pattern matching) to combine the contained
+      values into a single structure that can be
+      assigned to a variable.
+
+    - data Pair = I Int | D Double
+      Just one number, either an Int or else a
+      Double.
+
+      In this case, the tags I and D are used
+      (in constructors and pattern matching) to
+      distinguish between the two alternatives.
+
+    - data T1 = A Int Int | B Bool Bool
+      Sums and products can be combined.
+
+brace
+{}
+    Syntax for records.
+
+selector
+    A function generated by a record.
+
+    Extracts the value of a specific field
+    from a record.
+
+record
+data record
+    [product type]
+
+    Uses braces.
+
+    In addition to generating code for the
+    constructors, generates a set of functions
+    known as selectors which extract the
+    values of a specific field from the
+    record.
+
+    ewwlinks +/"data Prod = Prod { a :: Int , b :: Bool" "http://dev.stephendiehl.com/fun/001_basics.html"
+
+        data Prod = Prod { a :: Int , b :: Bool }
+
+        :t a
+        -- a :: Prod -> Int
+        :t b
+        -- b :: Prod -> Bool
+
+    https://youtu.be/BMF6z88xiYw?list=PLmTgnNwroyn8TnF26YRvW-hvQF1ypztzg&t=231
+
+product type
+    [#haskell]
+    [constructor]
+
+    Combines multiple fields into the same type.
+
+    ewwlinks +/"data Prod = Prod Int Bool" "http://dev.stephendiehl.com/fun/001_basics.html"
+
+    "product" is combination (A B, meaning A and B together)
+
+iterate
+    ewwlinks +/"iterate :: (a -> a) -> a -> \[a\] Source #" "http://hackage.haskell.org/package/base-4.12.0.0/docs/GHC-OldList.html#v:iterate"
+
+    iterate f x returns an infinite list of repeated applications of f to x:
+
+        iterate :: (a -> a) -> a -> [a]
+
+function application
+    Putting a space between two things is
+    simply function application.
+
+    The space is sort of like an operator and
+    it has the highest precedence.
+
+pattern matching
+one-way matching
+    Specifying patterns to which some data
+    should conform and then checking to see if
+    it does and deconstructing the data
+    according to those patterns.
+
+    vim +/"pattern matching" "$HOME/notes/ws/haskell/remember.org"
+
+    Pattern matching can also be used on
+    tuples.
+
+    Without pattern matching:
+         -- the identifier 'a' in the type
+         -- definition is separate from the 'a'
+         -- in the definition
+
+        addVectors :: (Num a) => (a, a) -> (a, a) -> (a, a)
+        addVectors a b = (fst a + fst b, snd a + snd b)
+
+    With pattern matching:
+
+        addVectors :: (Num a) => (a, a) -> (a, a) -> (a, a)
+        addVectors (x1, y1) (x2, y2) = (x1 + x2, y1 + y2)
+
+    Pattern matching in Haskell is different
+    from that found in logic programming
+    languages such as Prolog; in particular,
+    it can be viewed as "one-way" matching,
+    whereas Prolog allows "two-way" matching
+    (via unification), along with implicit
+    backtracking in its evaluation mechanism:
+        zip (x:xs) (y:ys)       = (x,y) : zip xs ys
+        -- Here, 'zip xs ys' is pattern
+        -- matched after the former
+        zip  xs     ys          = []
+
+    Examples of pattern matching:
+        fold :: (a -> a -> a) -> [a] -> a
+        fold f [] = error "blah"
+        fold f [x] = x
+        fold f (x:xs) = f x (fold f x5)
+
+        -- pattern matching
+        -- ----------------
+        -- fold f [a1, a2, a3, a4]
+        -- f a1 (fold f [a2, a3, a4])        -- fold f (x:xs) = f x (fold f x5)
+        -- f a1 (f a2 (fold f [a3, a41))     -- fold f (x:xs) = f x (fold f x5)
+        -- f a1 (f a2 (f a3 (fold f [a4])))  -- fold f (x:xs) = f x (fold f x5)
+
+    Indeed, matching is permitted using the
+    constructors of any type, user-defined or
+    not. This includes tuples, strings,
+    numbers, characters, etc. For example,
+    here's a contrived function that matches
+    against a tuple of "constants:"
+
+        contrived :: ([a], Char, (Int, Float), String, Bool) -> Bool
+        contrived    ([],  'b',  (1,   2.0),   "hi",   True) = False
+
+    This example also demonstrates that
+    nesting of patterns is permitted (to
+    arbitrary depth).
+
+        -- f a1 (f a2 (f a3 a4))             -- fold f [x] = x
+
+    Technically speaking, formal parameters
+    (The Report calls these variables.) are
+    also patterns---it's just that they never
+    fail to match a value.
+
+    As a "side effect" of the successful
+    match, the formal parameter is bound to
+    the value it is being matched against.
+
+    For this reason patterns in any one
+    equation are not allowed to have more than
+    one occurrence of the same formal
+    parameter (a property called linearity
+    §3.17, §3.3, §4.4.3).
+
+formal parameter
+    Example:
+        addVectors :: (Num a) => (a, a) -> (a, a) -> (a, a)
+        addVectors (x1, y1) (x2, y2) = (x1 + x2, y1 + y2)
+
+        -- The formal parameters of the
+        -- pattern matching are x1, y1, x2 and
+        -- y2.
+
+refutable
+irrefutable
+    [pattern]
+
+    Patterns such as formal parameters that
+    never fail to match are said to be
+    irrefutable, in contrast to refutable
+    patterns which may fail to match.
+
+    The pattern used in the contrived example
+    above is refutable.
+
+    There are three other kinds of irrefutable
+    patterns, two of which we will introduce
+    now (the other we will delay until Section
+    4.4).
+
+pattern
+    A way of making sure a value conforms to some form and
+    deconstructing it.
+
+    http://learnyouahaskell.com/syntax-in-functions
+
+guard
+    A way of testing whether some property of a value (or several of
+    them) are true or false.
+
+    http://learnyouahaskell.com/syntax-in-functions#guards-guards
+
+    Example:
+        toNatural               :: Integer -> Natural
+        toNatural x | x < 0     = error "Can't create negative naturals!"
+                    | otherwise = MakeNatural x
+
+    I think what makes them special is that
+    they calculate values which they use,
+    later. ie. avg. Maybe not, though. I have
+    no idea.
+
+    https://www.youtube.com/watch?v=02_H3LjqMr8&list=PLGLfVvz_LVvSX7fVd4OUFp_ODd86H0ZIY&index=23
+
+    batAvgRating :: Double -> Double -> String
+
+    batAvgRating hits atBats
+        | avg <= 0.200 = "Terrible Batting Average"
+        | avg <= 0.250 = "Average Player"
+        | avg <= 0.280 = "Your doing pretty good"
+        | otherwise = "You're a Superstar"
+        where avg = hits / atBats
+
+    See: "where".
+
+Monoid
+    [#haskell]
+    [typeclass]
+
+    https://wiki.haskell.org/Monoid
+
+    A class for types which have a single most
+    natural operation for combining values,
+    together with a value which doesn't do
+    anything when you combine it with others
+    (this is called the identity element).
+
+    It is closely related to the Foldable
+    class, and indeed you can think of a
+    Monoid instance declaration for a type m
+    as precisely what you need in order to
+    fold up a list of values of m.
+
+    Has:
+    - an appending operation <> or mappend
+    - an identity element, mempty
+
+    Can be made a Semigroup with just instance
+    Semigroup MyMonoid.
+
+    Practical explanation:
+        If you have a float and you convert
+        that float into a Builder and Builder
+        is a monoid, that means you can
+        combine those Builders into a single
+        Builder (because Builder is a monoid).
+
+        Being a Monoid makes something
+        combinable.
+
+        https://youtu.be/FYTZkE5BZ-0?t=202
+
+        You use fold to combine them into a
+        single thing.
+
+        In the example, he folded a
+        [Builder] into a Builder.
+
+<>
+(<>)
+    You may read it as '+'.
+
+    Addition is associative:
+        x <> (y <> z) == (x <> y) <> z
+
+    See:
+    - "Semigroup".
+
+Semigroup
+    https://typeclasses.com/semigroup
+
+    In abstract algebra, a semigroup is a set
+    together with a binary operation.
+
+    For set, in Haskell, you can more or less
+    substitute the word type; there are ways
+    in which types do not perfectly correspond
+    to sets, but it is close enough for this
+    purpose.
+
+    A binary operation is a function that
+    takes two arguments.
+
+    The binary operation must be closed – that
+    is, its two arguments and its return value
+    but must all be values from the same set.
+
+    A semigroup must also obey one law: the
+    law of associativity.
+
+    That is usually summarized as
+        x <> (y <> z) == (x <> y) <> z
+
+    If the <> operation is as yet unfamiliar
+    to you, you may read it as +; addition is
+    associative.
+
+    http://hackage.haskell.org/package/semigroups
+
+    Has:
+    - an append <>
+
+    Does not require:
+    - mempty element.
+
+    An algebraic structure consisting of a set
+    together with an associative binary
+    operation.
+
+    Generalizes a monoid in that there might
+    not exist an identity element.
+
+    Originally,
+        Also generalized a group to a type
+        where every element did not have to
+        have an inverse, thus the name
+        semigroup.
+
+group
+    A monoid with all inverses.
+
+Programming with effects
+Programming with monads
+Programming with monadic things
+
+ghc-mod
+    A backend program to enrich Haskell
+    programming in editors. It strives to
+    offer most of the features one has come to
+    expect from modern IDEs in any editor.
+
+Hackage
+    The place where you find packages to
+    install using Cabal.
+
+    Any package installable with cabal is
+    installable with stack. This is because
+    stack uses cabal.
+
+        cabal install language-bash
+        stack install language-bash
+
+stack
+    Stack uses cabal.
+
+        cabal install language-bash
+        stack install language-bash
+
+stack vs cabal
+    http://www.scs.stanford.edu/16wi-cs240h/labs/stack.html
+
+monad
+monad functor
+    [type class]
+
+    A monad is a container type together with
+    a few methods defined on it.
+
+    Monads model different kinds of
+    computations.
+
+    Something that specifies how to map a
+    function onto instances of itself
+    (instances that wrap basic values but also
+    instances that wrap functions), but also
+    coerces both wrapped and unwrapped values
+    into wrapped.
+
+    Like applicative functors, monads are
+    functors with extra laws and operations.
+
+    - >>=
+      bind
+
+    vim +/"instance Monad ErrorOr where" "$MYGIT/google/haskell-trainings/haskell_102/codelab/Game.hs"
+
+    The standard Monad class definition in
+    Haskell looks something like this:
+
+    class Monad m where
+        (>>=)  :: m a -> (a -> m b) -> m b
+        return :: a -> m a
+
+    return takes a value and embeds it in the monad.
+
+        return :: a -> m a
+
+    bind is a function that combines a monad
+    instance m a with a computation that
+    produces another monad instance m b from
+    a's to produce a new monad instance m b
+
+        (>>=) :: m a -> (a -> m b) -> m b
+
+    A monad is a type constructor, a function
+    called return, and a combinator function
+    called bind or >>=. These three elements
+    work together to encapsulate a strategy
+    for combining computations to produce more
+    complex computations.
+
+    A monad is used for getting imperative
+    behaviour out of functional programs.
+
+    Operations that have side effets i.e.
+    - IO
+    - Error handling
+    - Failure at runtime
+    - Changing state
+
+    Non-deterministic operations
+
+    Monads allow the computations to be
+    isolated from the side effects and
+    non-determinism.
+
+    Examples of common monads:
+    - Maybe
+      Representing failure.
+    - List
+      Nondeterminism. Represents carrying
+      multiple values.
+    - State
+      State.
+    - Reader
+      Read-only environment.
+    - IO
+      I/O.
+    - continuations
+    - transducers
+    - exceptions
+    - logic programming
+
+    Monads are not composable.
+
+    See "monad transformer".
+
+    An algebraic structure from mathematics
+    that has proved useful for addressing a
+    number of computational problems.
+
+    Provide a powerful way to build
+    computations with effects.
+
+    Each of the standard monads is specialised
+    to do exactly one thing.
+
+    In real code, we often need to be able to
+    use several effects at once.
+
+    Bind and unit define a monad.
+
+    In the Haskell standard library bind and
+    unit are called the Writer monad.
+
+    In Haskell, monads play a central role in
+    the I/O system. It is not essential to
+    understand monads to do I/O in Haskell,
+    but understanding the I/O monad will
+    improve your code and extend your
+    capabilities.
+
+    For the programmer, monads are useful
+    tools for structuring functional programs.
+    They have three properties that make them
+    especially useful:
+
+    Modularity
+    - They allow computations to be composed
+      from simpler computations and separate
+      the combination strategy from the actual
+      computations being performed.
+    Flexibility
+    - They allow functional programs to be
+      much more adaptable than equivalent
+      programs written without monads. This is
+      because the monad distills the
+      computational strategy into a single
+      place instead of requiring it be
+      distributed throughout the entire
+      program.
+    Isolation
+    - They can be used to create
+      imperative-style computational
+      structures which remain safely isolated
+      from the main body of the functional
+      program. This is useful for
+      incorporating side-effects (such as I/O)
+      and state (which violates referential
+      transparency) into a pure functional
+      language like Haskell.
+
+    A monoid in the category of endofunctors.
+
+    http://blog.klipse.tech/javascript/2016/08/31/monads-javascript.html
+
+    Prevalent in Haskell because it only
+    allows pure functions, that is functions
+    that do not have side effects.
+
+    The typical monad introduction will tell
+    you that monads are all about sneaking
+    side effects into this model so you can do
+    I/O.
+        But that’s just one application.
+        Monads are really about composing
+        functions, as we’ll see.
+
+The three fundamental laws of monads
+    The concept of a monad comes from a branch
+    of mathematics called category theory.
+    While it is not necessary to know category
+    theory to create and use monads, we do
+    need to obey a small bit of mathematical
+    formalism. To create a monad, it is not
+    enough just to declare a Haskell instance
+    of the Monad class with the correct type
+    signatures. To be a proper monad, the
+    return and >>= functions must work
+    together according to three laws:
+
+        1 (return x) >>= f ==== f x
+        2 m >>= return ==== m
+        3 (m >>= f) >>= g ==== m >>= (\x -> f x >>= g)
+
+    The first law requires that return is a
+    left-identity with respect to >>=. The
+    second law requires that return is a
+    right-identity with respect to >>=. The
+    third law is a kind of associativity law
+    for >>=. Obeying the three laws ensures
+    that the semantics of the do-notation
+    using the monad will be consistent.
+
+    Any type constructor with return and bind
+    operators that satisfy the three monad
+    laws is a monad. In Haskell, the compiler
+    does not check that the laws hold for
+    every instance of the Monad class. It is
+    up to the programmer to ensure that any
+    Monad instance they create satisfies the
+    monad laws.
+
+lens
+    Well-behaved bidirectional transformation.
+
+    Operates on ad-hoc, textual data formats.
+
+    Every lens program, when read from left to
+    right, describes a function that maps an
+    input to an output; when read from right
+    to left, the very same program describes a
+    "backwards" function that maps a modified
+    output, together with the original input,
+    back to a modified input.
+
+lens
+lenses
+    [haskell/fp concept]
+
+    https://github.com/ekmett/lens#lens-lenses-folds-and-traversals
+
+Control.Lens
+    The combinators in Control.Lens provide a
+    highly generic toolbox for composing
+    families of getters, folds, isomorphisms,
+    traversals, setters and lenses and their
+    indexed variants.
+
+arrow
+    [#haskell]
+
+    A new abstract view of computation.
+
+    They serve much the same purpose as
+    monads -- providing a common structure for
+    libraries -- but are more general.
+
+    In particular they allow notions of
+    computation that may be partially static
+    (independent of the input) or may take
+    multiple inputs.
+
+    If your application works fine with
+    monads, you might as well stick with
+    them.
+
+    But if you're using a structure that's
+    very like a monad, but isn't one, maybe
+    it's an arrow.
+
+monad vs arrow
+    Most importantly:
+        There are more things which are arrows
+        than there are things which are
+        monads.
+
+    Monads are strictly more powerful than
+    arrows.
+
+    Monad
+        Is an arrow equipped with an apply
+        function of type
+
+            (a ~> b, a) ~> b
+
+        where (~>) is the constructor for a
+        given arrow.
+
+        This destroys the meticulous
+        distinction arrows maintain between
+        terms and commands (or, if you prefer,
+        objects and morphisms).
+
+
+monad transformer
+    https://wiki.haskell.org/Monad_Transformers_Explained
+
+    Explanation:
+        You have an innermost monad (usually
+        Identity or IO but you can use any
+        monad).
+
+        You then wrap monad transformers
+        around this monad to make bigger,
+        better monads.
+
+    Similar to a regular monad, but it's not a
+    standalone entity: instead, it modifies
+    the behaviour of an underlying monad.
+
+    Most of the monads in the mtl library have
+    transformer equivalents.
+
+    By convention, the transformer version of
+    a monad has the same name, with a T stuck
+    on the end.
+
+    For example, the transformer equivalent of
+    State is StateT; it adds mutable state to
+    an underlying monad.
+
+    The WriterT monad transformer makes it
+    possible to write data when stacked on top
+    of another monad.
+
+    "The default implementation of MonadMemo
+    is also monad transformer so it can be
+    "mixed" with other monads."
+
+    https://wiki.haskell.org/Monad_Transformers_Explained
+
+    https://page.mi.fu-berlin.de/scravy/realworldhaskell/materialien/monad-transformers-step-by-step.pdf
+
+    It is possible to create custom monads
+    simply by composing the necessary monad
+    transformers. For example, if you need a
+    monad with state and error handling, just
+    take the StateT and ErrorT monad
+    transformers and combine them.
+
+    Concrete example
+    - Suppose I was writing a server:
+      Each client handling thread must be of
+      type IO ()
+
+      That's because forkIO :: IO () -> IO
+      ThreadID).
+
+    Monads are not composable.
+
+    This poses a problem, since composition is
+    one of the foremost patterns in functional
+    programming.
+
+    However, many alternatives have been
+    devised.
+
+    One of the most common is the monad
+    transformer.
+
+    Monad transformers allow developers to
+    compose the effects of different monads,
+    even if the monads themselves are not the
+    same.
+
+    An example is writing a do-statement that
+    can:
+    - abort computation (ExceptT),
+    - thread state (StateT), and
+    - connect to a database
+      (via a Haskell library such as
+      persistence or esqueleto).
+
+    The transformers package is used by over
+    2,500 packages on Stackage.
+
+    But using monad transformers is a
+    challenge for many, even if they are
+    already writing useful, effectful,
+    production Haskell.
+
+Functor
+    [Type class]
+
+    https://www.youtube.com/watch?v=xCut-QT2cpI&ab_channel=KracX
+
+    Example
+    - <$>
+      eff-map
+
+    Something that specifies how to map a
+    function onto instances of itself
+    (instances that wrap basic values).
+
+    Things that can be mapped over, like
+    lists, Maybes, trees, and such.
+
+    In Haskell, they're described by the
+    typeclass Functor, which has only one
+    typeclass method, namely fmap, which has
+    the type:
+        fmap :: (a -> b) -> f a -> f b
+
+        It says:
+            Give me a function that takes an a
+            and returns a b and a box with an
+            a (or several of them) inside it
+            and I'll give you a box with a b
+            (or several of them) inside it.
+
+    It kind of applies the function to the
+    element inside the box.
+
+    vim +/"instance Functor ErrorOr where" "$MYGIT/google/haskell-trainings/haskell_102/codelab/Game.hs"
+
+Tokenizer
+    token :: String -> [String]
+    token = undefined
+
+    A tokenizer is something that takes a
+    string and returns the list of tokens.
+
+    token :: String -> [(Int, String)]
+    If you change the type to this, then the
+    tokens are indexed and you can see the
+    positions of the tokens in the string.
+
+    token :: [(Int,Char)] -> [(Int, String)]
+    You could then index the input to the
+    tokenizer.
+
+    Now this looks like a generic type.
+
+GHC's Generics mechanism
+GHC.Generics
+    Support for datatype-generic programming
+    through two features, enabled with two
+    flags:
+    - DeriveGeneric
+    - DefaultSignatures
+
+    We show how this all works in this page,
+    starting with a detailed example.
+
+prelude
+    A module that contains a small set of
+    standard definitions and is included
+    automatically into all Haskell modules.
+
+\x
+Nameless function 'x'
+    Example,
+        (\x -> x + 1) 4
+
+        Returns: 5 :: Integer
+
+<-
+    x <- action runs the IO action, gets its
+    result, and binds it to x.
+
+getLine
+    Reads a string into a variable, inside a
+    do.
+
+    do
+      path <- getLine
+
+
+    getLine is an I/O action that contains a
+    result type of String.
+
+        ghci> :t getLine
+        getLine :: IO String
+        luggage
+
+    It will wait for the user to input
+    something at the terminal and then that
+    something will be represented as a string.
+
+    perform the I/O action getLine and then
+    bind its result value to name:
+
+        name <- getLine
+
+    getLine has a type of IO String, so name
+    will have a type of String.
+
+    Once it's fetched that data for you, the
+    only way to open the box and get the data
+    inside it is to use the <- construct.
+
+    Caveat:
+        If we're taking data out of an I/O
+        action, we can only take it out when
+        we're inside another I/O action.
+
+    We temporarily un-taint the data inside an
+    I/O action when we bind it to a name, so
+    that it can be used again in pure code.
+
+=
+    let x = action defines x to be equivalent
+    to action, but does not run anything.
+    Later on, you can use y <- x meaning y <-
+    action.
+
+liftA
+    hoogle liftA | vs
+
+    It's an applicative functor.
+
+    Transform a function into a corresponding
+    function within another (usually more
+    general) setting.
+
+MonadRandom
+    https://hackage.haskell.org/package/MonadRandom-0.1.3/docs/Control-Monad-Random.htm
+
+    A random number generation monad.
+
+referential transparency
+    One value is as good as another in Haskell
+    if it represents the same thing.
+
+ghcid
+    Very low feature GHCi based IDE
+
+    readsubs +/"it monitors all of the files in the" "[[https://youtu.be/5p2Aq3bRuL0][My Haskell Setup - YouTube]]"
+
+Advanced Haskell
+    https://en.wikibooks.org/wiki/Haskell/Monoids
+    https://en.wikibooks.org/wiki/Haskell/Applicative_functors
+    https://en.wikibooks.org/wiki/Haskell/Foldable
+    https://en.wikibooks.org/wiki/Haskell/Traversable
+    https://en.wikibooks.org/wiki/Haskell/Arrow_tutorial
+    https://en.wikibooks.org/wiki/Haskell/Understanding_arrows
+    https://en.wikibooks.org/wiki/Help:Development_stages
+    https://en.wikibooks.org/wiki/Haskell/Zippers
+    https://en.wikibooks.org/wiki/Haskell/Lenses_and_functional_references
+    Co-monads
+    MonadFix
+    Effectful Streaming
+    https://en.wikibooks.org/wiki/Haskell/Mutable_objects
+    https://en.wikibooks.org/wiki/Haskell/Concurrency
+    Template Haskell
+    Type Families
+
+lens
+    [library]
+
+    [[https://www.youtube.com/watch?v=7fbziKgQjnw][A Brief Introduction of the Haskell Lens Library - YouTube]]
+
+    Lenses are used here and in a lot of other
+    places.
+
+    https://rosettacode.org/wiki/CSV_data_manipulation#Haskell
+
+    Lenses are really great for working with
+    records and nested records.
+
+++
+(++)
+    [operator]
+
+    Requires both its parameters to be lists
+    over the same type.
+
+    This is invalid:
+        nameTag = "Hello, my name is " ++ getLine
+
+do
+    [#haskell monads]
+
+    Use do syntax to glue together several I/O
+    actions into one.
+
+        main = do
+            putStrLn "Hello, what's your name?"
+            name <- getLine
+            putStrLn ("Hey " ++ name ++ ", you rock!")
+
+    Each of these steps is an I/O action.
+
+    By putting them together with do syntax,
+    we glued them into one I/O action.
+
+    The action that we got has a type of IO
+    (), because that's the type of the last
+    I/O action inside.
+
+    redundant binds
+        ewwlinks +/"Except for the last line" "http://learnyouahaskell.com/input-and-output"
+
+        Except for the last line, every line
+        in a do block that doesn't bind can
+        also be written with a bind
+
+    The do notation uses layout in the same
+    manner as let or where so we can omit
+    braces and semicolons with proper
+    indentation.
+
+    Unlike a let expression where variables
+    are scoped over all definitions, the
+    variables defined by <- are only in scope
+    in the following statements.
+
+    Embedded do:
+    - https://youtu.be/AtsPtAf2avQ?t=287
+
+then do
+    Example:
+        printStudents :: Int -> IO ()
+        printStudents num = do
+        let student = students !! num
+            if num <= 4
+            then do
+                putStrLn student
+                printStudents (num + 1)
+            else putStrLn "printed all students!"
+
+let
+let expression
+    form 1:
+        let <bindings> in <expression>
+
+    form 2:
+        let <bindings>
+
+    ewwlinks +/"Let it be" "http://learnyouahaskell.com/syntax-in-functions"
+
+        (let a = 100; b = 200; c = 300 in a*b*c, let foo="Hey "; bar = "there!" in foo ++ bar)
+
+    In list comprehensions, the in part isn't
+    needed.
+
+    You can also put let bindings inside list
+    comprehensions.
+
+        calcBmis :: (RealFloat a) => [(a, a)] -> [a]
+        calcBmis xs = [bmi | (w, h) <- xs, let bmi = w / h ^ 2]
+
+    'let' allows you to combine the
+    readability of a 'where' clause with the
+    power of a lambda function.
+
+    Haskell's let expressions are useful
+    whenever a nested set of bindings is
+    required. As a simple example, consider:
+
+        let y   = a*b
+            f x = (x+y)/y
+        in f c + f d
+
+    The set of bindings created by a let
+    expression is mutually recursive, and
+    pattern bindings are treated as lazy
+    patterns (i.e. they carry an implicit ~).
+    The only kind of declarations permitted
+    are type signatures, function bindings,
+    and pattern bindings.
+
+    The body (after the 'in') of the let
+    clause needs to be indented if it's
+    multilined, I think.
+
+let
+let keyword
+    [ghci keyword]
+
+    Note: We can use the let keyword to define
+    a name right in GHCI.
+
+    Doing let a = 1 inside GHCI is the
+    equivalent of writing a = 1 in a script
+    and then loading it.
+
+    ghci> let lostNumbers = [4,8,15,16,23,42]
+    ghci> lostNumbers
+    [4,8,15,16,23,42]
+
+let vs where
+    ewwlinks +/"Very similar to where bindings are let bindings" "http://learnyouahaskell.com/syntax-in-functions"
+
+    The difference is that let bindings are
+    expressions themselves. where bindings are
+    just syntactic constructs.
+
+    where:
+
+        where bmi weight height = weight / height ^ 2
+
+    let:
+
+        let sideArea = 2 * pi * r * h
+        topArea = pi * r ^2
+        in  sideArea + 2 * topArea
+
+case
+Case expressions
+otherwise
+    ewwlinks +/"Case expressions" "http://learnyouahaskell.com/syntax-in-functions#case-expressions"
+    ewwlinks +/"case, of" "https://wiki.haskell.org/Keywords#case.2C_of"
+
+    These are equivalent:
+
+        -- pattern matching
+        head' :: [a] -> a
+        head' [] = error "No head for empty lists!"
+        head' (x:_) = x
+
+        -- case expression
+        head' :: [a] -> a
+        head' xs = case xs of [] -> error "No head for empty lists!"
+                              (x:_) -> x
+
+    https://youtu.be/BK1VFLfEigM?list=PLmTgnNwroyn8TnF26YRvW-hvQF1ypztzg&t=160
+
+    otherwise (or _)
+
+        -- These two are equivalent
+        case var of
+             cond -> value
+             otherwise -> other
+
+        case var of
+             cond -> value
+             _ -> other
+
+sequence
+sequence_
+    ewwlinks +/"sequence \[(> 4), (< 10), odd\] 7" "http://derekwyatt.org/2012/01/25/haskell-sequence-over-functions-explained/"
+
+    sequence :: (Traversable t, Monad m) => t (m a) -> m (t a)
+    base Prelude
+
+    Evaluate each monadic action in the
+    structure from left to right, and collect
+    the results. For a version that ignores
+    the results see sequence_.
+
+    sequence takes a list of I/O actions and
+    returns an I/O actions that will perform
+    those actions one after the other. The
+    result contained in that I/O action will
+    be a list of the results of all the I/O
+    actions that were performed. Its type
+    signature is sequence :: [IO a] -> IO [a].
+    Doing this:
+
+        main = do
+            a <- getLine
+            b <- getLine
+            c <- getLine
+            print [a,b,c]
+
+    Is exactly the same as doing this:.
+
+        main = do
+            rs <- sequence [getLine, getLine, getLine]
+            print rs
+
+    A common pattern with sequence is when we
+    map functions like print or putStrLn over
+    lists. Doing map print [1,2,3,4] won't
+    create an I/O action. It will create a
+    list of I/O actions, because that's like
+    writing [print 1, print 2, print 3, print
+    4]. If we want to transform that list of
+    I/O actions into an I/O action, we have to
+    sequence it.
+
+        ghci> sequence (map print [1,2,3,4,5])
+        1
+        2
+        3
+        4
+        5
+        [(),(),(),(),()]
+
+    The sequence function takes a list of
+    monadic computations, executes each one in
+    turn and returns a list of the results.
+    If any of the computations fail, then the
+    whole function fails:
+
+        sequence :: Monad m => [m a] -> m [a]
+        sequence = foldr mcons (return [])
+                     where mcons p q = p >>= \x -> q >>= \y -> return (x:y)
+
+    The sequence_ function (notice the
+    underscore) has the same behavior as
+    sequence but does not return a list of
+    results.  It is useful when only the
+    side-effects of the monadic computations
+    are important.
+
+        sequence_ :: Monad m => [m a] -> m ()
+        sequence_ = foldr (>>) (return ())
+
+non-deterministic
+    ewwlinks +/"Before looking at the source" "http://sleepomeno.github.io/blog/2014/06/25/Explaining-the-Magic/"
+
+    But what sort of action is "01". As a
+    string is a list of characters, it's equal
+    to ['0','1'] which denotes a
+    'non-deterministic' character value.
+
+null
+    null :: Foldable t => t a -> Bool
+    base Prelude
+
+    Test whether the structure is empty.
+
+    The default implementation is optimized
+    for structures that are similar to cons-
+    lists, because there is no general way to
+    do better.
+
+replicateM
+    I've seen replicateM shown as having both of these types.
+
+    replicateM :: Monad m => Int -> m a -> m [a]
+    replicateM :: Applicative m => Int -> m a -> m [a]
+    base Control.Monad
+    replicateM n act performs the action n times, gathering the results.
+
+    eww "http://sleepomeno.github.io/blog/2014/06/25/Explaining-the-Magic/"
+
+    Example
+
+        replicateM 3 (putStrLn "hello")
+        -- hello
+        -- hello
+        -- hello
+        -- [(),(),()]
+
+        replicateM 3 "01"
+        -- ["000","001","010","011","100","101","110","111"]
+
+    Explanation:
+        But what sort of action is "01".  As a
+        string is a list of characters, it's
+        equal to ['0','1'] which denotes a
+        'non-deterministic' character value.
+
+    Old version is easier to understand
+    http://hackage.haskell.org/package/base-4.7.0.0/docs/src/Control-Monad.html#replicateM
+    http://hackage.haskell.org/package/base-4.12.0.0/docs/src/Control.Monad.html#replicateM
+
+replicate
+    replicate :: Int -> a -> [a]
+    base Prelude
+
+        hsdoc replicate
+
+    replicate n x
+        A list of length n with x the value of
+        every element.
+
+        It is an instance of the more general
+        genericReplicate, in which n may be of any
+        integral type.
+
+elem
+    elem :: (Foldable t, Eq a) => a -> t a -> Bool
+
+    Does the element occur in the structure?
+
+import qualified
+    The module is imported 'qualified'.
+
+    ewwlinks +/"11.1  Qualified Names" "https://www.haskell.org/tutorial/modules.html"
+
+    This forces an obligatory namespace qualifier to imported identifiers.
+
+    Examples
+        import qualified Fringe ( fringe )
+
+        import qualified TensorFlow.Core as TF
+
+        ewwlinks +/"import qualified Mod" "https://wiki.haskell.org/Import"
+        ewwlinks +/"import qualified Fringe ( fringe )" "https://www.haskell.org/tutorial/modules.html"
+
+putStrLn
+    putStrLn :: String -> IO ()
+    base Prelude
+    The same as putStr, but adds a newline character.
+
+trace
+    import Debug.Trace
+
+    list = [1, 2, 3, 4, 5]
+
+    main = do
+        print list
+
+        trace "print $ head list" print $ head list
+        trace "print $ tail list" print $ tail list
+
+    #haskell
+        20:52 < libertyprime> hey guys. any way to simplify this to simply print out the expression and then execute it, to remove the repitition?
+        20:53 < libertyprime> trace "print $ head list" print $ head list
+        20:54 < Taneb> libertyprime: there isn't anything like that I'm afraid
+        20:54 < solonarv> I suppose you could use template haskell and write something like: [traceQ| print $ head list |], but that seems like a very cumbersome and silly thing to do
+        20:55 < solonarv> also, you're already working in IO (as indicated by the 'print'), why use trace at all?
+        20:55 < solonarv> why not just: do putStrLn "print $ head list"; print $ head list
+        20:56 < solonarv> then pick a more informative message and the repetition is also gone ;)
+        20:58 < libertyprime> thanks guys. insightful. haha i should be flexing my racket skills to generate my haskell anyway
+        20:59 < solonarv> o-O
+        21:00 < solonarv> if you find yourself doing this a lot you could also write a helper function: printMsg msg val = putStrLn (msg ++ " = " ++ show val)
+
+filter
+    filter :: (a -> Bool) -> [a] -> [a]
+    base Prelude
+    filter, applied to a predicate and a list,
+    returns the list of those elements that
+    satisfy the predicate
+
+    filter p xs = [ x | x <- xs, p x]
+
+cycle
+    print $ take 10 $ cycle [1..4]
+
+    Ties a finite list into a circular one, or
+    equivalently, the infinite repetition of
+    the original list.
+
+scanl
+scanl :: (b -> a -> b) -> b -> [a] -> [b]
+    Similar to foldl, but returns a list of
+    successive reduced values from the left:
+
+        scanl f z [x1, x2, ...] == [z, z `f` x1, (z `f` x1) `f` x2, ...]
+
+scanr
+scanr :: (a -> b -> b) -> b -> [a] -> [b]
+    The right-to-left dual of scanl.
+
+        head (scanr f z xs) == foldr f z xs.
+
+scanr1
+scanr1 :: (a -> a -> a) -> [a] -> [a]
+    A variant of scanr that has no starting
+    value argument.
+
+list
+[a]
+
+[]
+    A pattern that matches the empty list.
+
+    It doesn't bind any variables.
+
+    [] is also a type constructor. Given any
+    type t we can "apply" [] to yield a new
+    type [t]. The Haskell syntax allows [] t
+    to be written as [t].
+
+Foldable
+    Own implementation:
+        foldl :: (a -> b -> a) -> a -> [b] -> a
+
+    From the standard library:
+        foldl :: Foldable t => (b -> a -> b) -> b -> t a -> b
+
+    The standard library uses 't a' instead of
+    '[b]'.
+
+    t stands for Foldable.
+    Rather than a 'list of a', it's a 'Foldable of a'.
+
+    class Foldable t
+    base Prelude
+    Data structures that can be folded.
+
+    Example
+        -- given a data type:
+
+        data Tree a = Empty | Leaf a | Node (Tree a) a (Tree a)
+
+        -- a suitable instance would be
+
+        instance Foldable Tree where
+        foldMap f Empty = mempty
+        foldMap f (Leaf x) = f x
+        foldMap f (Node l k r) = foldMap f l `mappend` f k `mappend` foldMap f r
+
+    This is suitable even for abstract types,
+    as the monoid is assumed to satisfy the
+    monoid laws.
+
+    Alternatively, one could define foldr:
+
+        instance Foldable Tree where
+        foldr f z Empty = z
+        foldr f z (Leaf x) = f x z
+        foldr f z (Node l k r) = foldr f (f k (foldr f z r)) l
+
+    Foldable instances are expected to satisfy
+    the following laws:
+
+        foldr f z t = appEndo (foldMap (Endo . f) t ) z
+
+        foldl f z t = appEndo (getDual (foldMap (Dual . Endo . flip f) t)) z
+
+        fold = foldMap id
+
+        length = getSum . foldMap (Sum . const  1)
+
+    sum, product, maximum, and minimum
+    should all be essentially equivalent to foldMap forms, such
+    as
+
+    sum = getSum . foldMap Sum
+
+    but may be less defined.
+
+    If the type is also a Functor instance, it should satisfy
+
+    foldMap f = fold . fmap f
+
+    which implies that
+
+    foldMap f . fmap g = foldMap (f . g)
+
+(x:xs)
+    [pattern]
+
+    Matches a non-empty list which is formed
+    by something (which gets bound to the x
+    variable) which was cons'd (by the (:)
+    function) onto something else (which gets
+    bound to xs ).
+
+    This doesn't look like a list, but it is.
+    It's for pattern matching lists.
+    Crazily, [x] here is not a list, but [a]
+    is a list.
+
+        fold :: (a -> a -> a) -> [a] -> a
+        fold f [] = error "blah"
+        fold f [x] = x
+        fold f (x:xs) = f x (fold f x5)
+
+predicate
+(a -> Bool)
+
+type
+    ewwlinks +/"The type declaration is how one introduces an alias for an algebraic data type" "https://wiki.haskell.org/Keywords#type"
+
+~
+    https://wiki.haskell.org/Keywords#.7E
+
+    - lazy pattern binding
+      f2 x = case x of ~(Just n) -> "Got it"
+    - type constraint
+      example :: F a ~ b => a -> b
+
+!
+    Strictness flag.
+
+    https://wiki.haskell.org/Keywords#.21
+
+    Evaluate the argument (STList a), before passing to the constructor STCons.
+
+    data STList a
+            = STCons a !(STList a)  -- the second argument to STCons will be
+                                    -- evaluated before STCons is applied
+            | STNil
+
+'
+    https://wiki.haskell.org/Keywords#.27
+
+    Used in:
+    - Character literals: 'a'
+    - Template Haskell:
+      Name of a (value) variable or data constructor: 'length, 'Left
+    - Promoted data constructor: 'True
+
+''
+    https://wiki.haskell.org/Keywords#.27.27
+
+    [#Template Haskell]
+
+    Name of a type constructor or class:
+    - ''Int
+    - ''Either
+    - ''Show
+
+- keyword
+    [[https://wiki.haskell.org/Keywords#-][Keywords HaskellWiki -]]
+
+    (- 1)
+
+    is parsed as the negative integer -1,
+    rather than as an operator
+
+-- keyword
+    [[https://wiki.haskell.org/Keywords#--][Keywords HaskellWiki --]]
+
+    Starts a single-line comment, unless
+    immediately followed by an operator
+    character other than -:
+
+    main = print "hello world" -- this is a comment
+    --this is a comment as well
+    ---this too
+    foobar --+ this_is_the_second_argument_of_the_dash_dash_plus_operator
+
+where
+    https://wiki.haskell.org/Keywords#where
+
+    Multiple uses:
+    - introduce a module
+
+      module Main where
+
+    - introduce an instance
+
+      instance Num Int  where
+        ...
+
+    - introduce a class
+
+      class Num a where
+        ...
+
+    - introduce a GADT
+
+      data Something a where
+        ...
+
+    - bind local variables:
+
+      f x = y
+          where y = x * 2
+
+      g z | z > 2 = y
+          where y = x * 2
+
+      example:
+
+        calcChange owed given = if change > 0
+                   then change
+                   else 0
+                   where change = given - owed
+
+arrow
+arrow notation
+    Arrows are a generalisation of monads.
+
+    With the Arrows extension, GHC supports
+    the arrow notation.
+
+    ewwlinks +/"The extension adds a new kind of expression for defining arrows:" "http://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#arrow-notation"
+
+-<
+    [[http://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#arrow-notation][Arrow notation]]
+    See "Generalising Monads to Arrows".
+
+-<<
+    [[http://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#arrow-notation][Arrow notation]]
+    See "Generalising Monads to Arrows".
+
+category theory
+    More general than abstract algebra.
+
+monomorphic
+monomorphism
+    [#abstract algebra]
+    [#universal algebra]
+
+    An injective homomorphism.
+
+    A monomorphism from X to Y is often
+    denoted with the notation X ↪ Y.
+
+monomorphic
+monomorphism
+monic morphism
+mono
+    [category theory]
+
+    Left-cancellative morphism, that is, an
+    arrow f : X → Y such that, for all
+    morphisms g1, g2 : Z → X.
+
+{-# LANGUAGE MultiParamTypeClasses #-}
+    https://www.reddit.com/r/haskell/comments/a710ix/why_dependent_haskell_is_the_future_of_software/
+
+{-# LANGUAGE DataKinds #-}
+    https://www.reddit.com/r/haskell/comments/a710ix/why_dependent_haskell_is_the_future_of_software/
+
+{-# LANGUAGE KindSignatures #-}
+    https://www.reddit.com/r/haskell/comments/a710ix/why_dependent_haskell_is_the_future_of_software/
+
+{-# LANGUAGE GADTs #-}
+    https://www.reddit.com/r/haskell/comments/a710ix/why_dependent_haskell_is_the_future_of_software/
+
+kind
+    [#type theory]
+
+    The type of a type constructor or, less
+    commonly, the type of a higher-order type
+    operator.
+
+    Could be:
+    - The type of a type constructor.
+    - The type of a higher-order type operator.
+
+    A kind system is essentially a simply
+    typed lambda calculus 'one level up,'
+    endowed with a primitive type, denoted *
+    and called 'type', which is the kind of
+    any (monomorphic) data type."
+
+    ewwlinks +/"Ordinary types, also called monotypes or nullary type constructors" "https://wiki.haskell.org/Kind"
+
+        ghci> :kind (->)
+        (->) :: * -> * -> *
+
+    As we know, the type system detects typing
+    errors in expressions. But what about
+    errors due to malformed type expressions?
+    The expression (+) 1 2 3 results in a type
+    error since (+) takes only two arguments.
+    Similarly, the type Tree Int Int should
+    produce some sort of an error since the
+    Tree type takes only a single argument.
+    So, how does Haskell detect malformed type
+    expressions? The answer is a second type
+    system which ensures the correctness of
+    types! Each type has an associated kind
+    which ensures that the type is used
+    correctly.
+
+    Type expressions are classified into
+    different kinds which take one of two
+    possible forms:
+
+    - The symbol * represents the kind of type
+      associated with concrete data objects.
+      That is, if the value v has type t, the
+      kind of v must be *.
+    - If k1 and k2 are kinds, then k1->k2 is
+      the kind of types that take a type of
+      kind k1 and return a type of kind k2.
+
+    The type constructor Tree has the kind
+    *->*; the type Tree Int has the kind *.
+    Members of the Functor class must all have
+    the kind *->*; a kinding error would
+    result from an declaration such as
+
+        instance Functor Integer where ...
+
+    since Integer has the kind *.
+
+    Kinds do not appear directly in Haskell
+    programs.  The compiler infers kinds
+    before doing type checking without any
+    need for `kind declarations'. Kinds stay
+    in the background of a Haskell program
+    except when an erroneous type signature
+    leads to a kind error. Kinds are simple
+    enough that compilers should be able to
+    provide descriptive error messages when
+    kind conflicts occur.
+
+//
+    ewwlinks +/"13.4  Incremental updates" "https://www.haskell.org/tutorial/arrays.html"
+
+    In addition to the monolithic array
+    creation functions, Haskell also has an
+    incremental array update function, written
+    as the infix operator //; the simplest
+    case, an array a with element i updated to
+    v, is written a // [(i, v)].
+
+    The reason for the square brackets is that
+    the left argument of (//) is an
+    association list, usually containing a
+    proper subset of the indices of the array:
+
+        (//) :: (Ix a) => Array a b -> [(a,b)] -> Array a b
+
+    Monolithic:
+        $MYGIT/acmeism/RosettaCodeData/Task/Arrays/Haskell/arrays.hs
+
+keyword
+    !                     	 https://wiki.haskell.org/Keywords#.21
+    '                     	 https://wiki.haskell.org/Keywords#.27
+    ''                    	 https://wiki.haskell.org/Keywords#.27.27
+    -                     	 https://wiki.haskell.org/Keywords#-
+    --                    	 https://wiki.haskell.org/Keywords#--
+    -<                    	 https://wiki.haskell.org/Keywords#-.3C
+    -<<                   	 https://wiki.haskell.org/Keywords#-.3C.3C
+    ->                    	 https://wiki.haskell.org/Keywords#-.3E
+    ::                    	 https://wiki.haskell.org/Keywords#
+    ;                     	 https://wiki.haskell.org/Keywords#.3B
+    <-                    	 https://wiki.haskell.org/Keywords#.3C-
+    ,                     	 https://wiki.haskell.org/Keywords#.2C
+    =                     	 https://wiki.haskell.org/Keywords#.3D
+    =>                    	 https://wiki.haskell.org/Keywords#.3D.3E
+    >                     	 https://wiki.haskell.org/Keywords#.3E
+    ?                     	 https://wiki.haskell.org/Keywords#.3F
+    #                     	 https://wiki.haskell.org/Keywords#.23
+    *                     	 https://wiki.haskell.org/Keywords#.2A
+    @                     	 https://wiki.haskell.org/Keywords#.40
+    [|, |]                	 https://wiki.haskell.org/Keywords#.5B.7C.2C_.7C.5D
+    \                     	 https://wiki.haskell.org/Keywords#.5C
+    _                     	 https://wiki.haskell.org/Keywords#
+    `                     	 https://wiki.haskell.org/Keywords#.60
+    {, }                  	 https://wiki.haskell.org/Keywords#.7B.2C_.7D
+    {-, -}                	 https://wiki.haskell.org/Keywords#.7B-.2C_-.7D
+    |                     	 https://wiki.haskell.org/Keywords#.7C
+    ~                     	 https://wiki.haskell.org/Keywords#.7E
+    as                    	 https://wiki.haskell.org/Keywords#as
+    case, of              	 https://wiki.haskell.org/Keywords#case.2C_of
+    class                 	 https://wiki.haskell.org/Keywords#class
+    data                  	 https://wiki.haskell.org/Keywords#data
+    data family           	 https://wiki.haskell.org/Keywords#data_family
+    data instance         	 https://wiki.haskell.org/Keywords#data_instance
+    default               	 https://wiki.haskell.org/Keywords#default
+    deriving              	 https://wiki.haskell.org/Keywords#deriving
+    deriving instance     	 https://wiki.haskell.org/Keywords#deriving_instance
+    do                    	 https://wiki.haskell.org/Keywords#do
+    forall                	 https://wiki.haskell.org/Keywords#forall
+    foreign               	 https://wiki.haskell.org/Keywords#foreign
+    hiding                	 https://wiki.haskell.org/Keywords#hiding
+    if, then, else        	 https://wiki.haskell.org/Keywords#if.2C_then.2C_else
+    import                	 https://wiki.haskell.org/Keywords#import
+    infix, infixl, infixr 	 https://wiki.haskell.org/Keywords#infix.2C_infixl.2C_infixr
+    instance              	 https://wiki.haskell.org/Keywords#instance
+    let, in               	 https://wiki.haskell.org/Keywords#let.2C_in
+    mdo                   	 https://wiki.haskell.org/Keywords#mdo
+    module                	 https://wiki.haskell.org/Keywords#module
+    newtype               	 https://wiki.haskell.org/Keywords#newtype
+    proc                  	 https://wiki.haskell.org/Keywords#proc
+    qualified             	 https://wiki.haskell.org/Keywords#qualified
+    rec                   	 https://wiki.haskell.org/Keywords#rec
+    type                  	 https://wiki.haskell.org/Keywords#type
+    type family           	 https://wiki.haskell.org/Keywords#type_family
+    type instance         	 https://wiki.haskell.org/Keywords#type_instance
+    where                 	 https://wiki.haskell.org/Keywords#where
+
+deriving
+    [keyword]
+
+    ifl haskell deriving
+
+        data Shape = Circle Float Float Float | Rectangle Float Float Float Float deriving (Show)
+
+    We won't concern ourselves with deriving
+    too much for now.
+
+    Let's just say that if we add deriving
+    (Show) at the end of a data declaration,
+    Haskell automagically makes that type part
+    of the Show typeclass.
+
+    So now, we can do this:
+
+        ghci> Circle 10 20 5
+        Circle 10.0 20.0 5.0
+        ghci> Rectangle 50 230 60 90
+        Rectangle 50.0 230.0 60.0 90.0
+
+deriving show
+    https://youtu.be/BMF6z88xiYw?list=PLmTgnNwroyn8TnF26YRvW-hvQF1ypztzg&t=329
+
+newtype
+newtype declaration
+    [declaration]
+
+    Creates a new type in much the same way as
+    data.
+
+    The use of newtype avoids the extra level
+    of indirection (caused by laziness) that
+    the data declaration would introduce.
+
+    How one introduces a renaming for an
+    algebraic data type into Haskell.
+
+    This is different from type below, as a
+    newtype requires a new constructor as
+    well.
+
+    As an example, when writing a compiler one
+    sometimes further qualifies Identifiers to
+    assist in type safety checks:
+
+        newtype SimpleIdentifier = SimpleIdentifier Identifier
+        newtype FunctionIdentifier = FunctionIdentifier Identifier
+
+    Most often, one supplies smart
+    constructors and destructors for these to
+    ease working with them.
+
+    The syntax and usage of newtypes is
+    virtually identical to that of data
+    declarations - in fact, you can replace
+    the newtype keyword with data and it'll
+    still compile, indeed there's even a good
+    chance your program will still work.
+
+    The converse is not true, however - data
+    can only be replaced with newtype if the
+    type has exactly one constructor with
+    exactly one field inside it.
+
+    ewwlinks +/"A newtype declaration creates a new type in much the same way as data" "https://wiki.haskell.org/Newtype"
+
+the most basic haskell function usage
+    -- Type annotation (optional, same for each implementation)
+    factorial :: (Integral a) => a -> a
+
+    -- Using a list and the "product" function
+    factorial n = product [1..n]
+
+fmap
+liftM
+liftM vs fmap
+    Why do we have three different functions
+    that do essentially the same thing?
+
+        map :: (a -> b) -> [a] -> [b]
+        fmap :: Functor f => (a -> b) -> f a -> f b
+        liftM :: Monad m => (a -> b) -> m a -> m b
+
+    fmap and liftM exist because monads were
+    not automatically functors in Haskell.
+
+    fmap and liftM are essentially
+    interchangeable, since it is a bug (in a
+    social rather than technical sense) for
+    any type to be an instance of Monad
+    without also being an instance of Functor.
+
+where
+    Where is like do, but contains declarations.
+
+    $MYGIT/gwern/misc-haskell/d.hs
+
+auto-installing dependencies
+    How can I do this?
+
+    vim +/"import System.Console.Readline" "$MYGIT/mklinik/haskell-misc/13/Main.hs"
+
+recursion
+    -- Type annotation (optional, same for each implementation)
+    factorial :: (Integral a) => a -> a
+
+    -- Using recursion (with the "ifthenelse" expression)
+    factorial n = if n < 2
+                  then 1
+                  else n * factorial (n - 1)
+
+    -- Using recursion (with pattern matching)
+    factorial 0 = 1
+    factorial n = n * factorial (n - 1)
+
+    -- Using recursion (with guards)
+    factorial n
+       | n < 2     = 1
+       | otherwise = n * factorial (n - 1)
+
+length :: [a] -> Int
+    recursive
+
+    Multiple ways to solve
+        length (_:xs) = 1 + length xs
+        length = foldl (\a _ -> a + 1) 0
+
+    vim +/"length :: \[a\] -> Int" "$MYGIT/google/haskell-trainings/haskell_101/codelab/Codelab.hs"
+
+Template Haskell
+TH
+    [#haskell]
+    [standard framework]
+
+    type-safe, compile-time meta programming.
+
+    Allows:
+    - Writing Haskell meta programs, which are
+      evaluated at compile-time, and which
+      produce Haskell programs as the results
+      of their execution.
+
+    No non-Lisp language could ever hope to
+    even stand in the shadow of how simple and
+    powerful meta programming and extending
+    your language is in a Lisp like Racket.
+
+lazy evaluation
+    Upside:
+        It allows great reusability of code.
+
+    Downside:
+        Rather difficult to reason about time
+        and space complexity.
+
+map
+    A ColorMap is a map from a Color to a Int.
+
+    type ColorMap = Map Color Int
+
+type alias
+    -- An error message is just a String
+    type ErrorMsg = String
+
+type signature questions
+    ifl many1 parsec
+
+    #haskell.au
+        16:26 < libertyprime> hey guys. im looking at this signature. * many1 :: Stream s m t => ParsecT s u m a -> ParsecT s u m [a]    Quick question: Does this say that s,m
+                              and t are all of the Stream monad type?
+        16:27 < libertyprime> im total noob sorry. this will help me to understand
+        16:40 < georgew> Stream is a multi-parameter typeclass, and Stream s m t is a constraint involving the type variables s m and t, which are used in the rest of the type
+                         signature.
+        16:41 < georgew> I believe this is an implementation detail of how Parsec handles input. I would approximate it in my head as `many1 :: Parsec a -> Parsec [a]`, for
+                         some type alias Parsec that may not exist
+        16:58 < libertyprime> georgew: thank you :) very helpful
+
+
+    class (Monad m) =>
+     Stream s m t | s -> t where
+        uncons :: s -> m (Maybe (t,s))
+
+unwords
+    [function]
+
+    hoogle -i unwords
+
+    Inverse operation to words.
+
+    It joins words with separating spaces.
+
+    >>> unwords ["Lorem", "ipsum", "dolor"]
+    "Lorem ipsum dolor"
+
+dot composition
+    https://stackoverflow.com/questions/631284/dot-operator-in-haskell-need-more-explanation
+
+    vim +/"p = either print (putStrLn . unwords . map show) . parse tProg \"\"" "$MYGIT/acmeism/RosettaCodeData/Task/S-Expressions/Haskell/s-expressions.hs"
+
+    f (g x) = (f . g) x
+
+data vs newtype
+    Most of the time, writing newtype whenever
+    you can get away with it is a good idea.
+    Maybe 1% of the time having access to the
+    extra bottom denoted by data is absolutely
+    critical.
+
+    The reason they're different
+        - newtype
+          Indicates that the runtime
+          representation of the value is
+          identical to the underlying value.
+
+        - data (with a single constructor and field)
+          Will still have a wrapper box around
+          the underlying value.
+
+        A newtype around Int is going to be
+        represented in memory in a way completely
+        indistinguishable from an Int, while data
+        X = X Int will have a box around it.
+
+        This is particularly relevant when
+        undefined is involved, or any other
+        form of non-strictness.
+
+        data
+            data X = X Int
+            foo = case undefined of
+              X _ -> "This will error"
+
+        newtype
+            newtype Y = Y Int
+            bar = case undefined of
+              Y _ -> "This will not"
+
+data
+data declaration
+    [declaration]
+
+    Create a datatype to hold an abstract
+    syntax tree for an expression, one could
+    use:
+
+    data Exp = Ebin   Operator Exp Exp
+             | Eunary Operator Exp
+             | Efun   FunctionIdentifier [Exp]
+             | Eid    SimpleIdentifier
+
+    where the types
+    - Operator,
+    - FunctionIdentifier, and
+    - SimpleIdentifier
+    are defined elsewhere.
+
+    The types
+    - Ebin
+    - Eunary
+    - Efun
+    are all types of Exp
+
+    Exp is partially recursive.
+    An Ebin can hold 2 of Exp.
+
+learn these language modifications
+    cd $MYGIT/facebook/duckling/Duckling/; grep -HnR "# LANGUAGE" . | scrape "LANGUAGE [^ ]+" | uniqnosort
+
+stack reinstall package
+    Frustratingly none of this worked.
+    rm -rf $HOME/.stack/programs/x86_64-linux/ghc8.6.3
+    stack update
+    stack install --force-dirty ghc-8.6.3
+
+    But this did
+    xmonad --recompile
+
+    It started a stack install for me for ghc-8.6.3.
+
+Maybe
+    https://www.snoyman.com/blog/2017/01/functors-applicatives-and-monads
+
+    "lifts" or extends a type (e.g. Integer)
+    into a new context in which it has an
+    extra value (Nothing) that represents a
+    lack of value!
+
+    A more resilient way to write our code is
+    to use the readMaybe function, which will
+    return a Maybe Integer value. This makes
+    it clear with the types themselves that
+    the parse may succeed or fail. To test
+    this out,
+
+    try running the following code:
+
+    #!/usr/bin/env stack
+    -- stack --resolver lts-7.14 --install-ghc runghc
+    import Text.Read (readMaybe)
+
+    main = do
+        -- We use explicit types to tell the compiler how to try and parse the
+        -- string.
+        print (readMaybe "1980" :: Maybe Integer)
+        print (readMaybe "hello" :: Maybe Integer)
+        print (readMaybe "2000" :: Maybe Integer)
+        print (readMaybe "two-thousand" :: Maybe Integer)
+
+read
+    [function]
+
+    Example:
+    - https://youtu.be/4x_ARIVLdLw?list=PLmTgnNwroyn8TnF26YRvW-hvQF1ypztzg&t=266
+
+    https://www.snoyman.com/blog/2017/01/functors-applicatives-and-monads
+
+    read is trying to parse it into an
+    Integer. But not all Strings are valid
+    Integers. read is what we call a partial
+    function, meaning that under some
+    circumstances it will return an error
+    instead of a valid result.
+
+strings
+    String, ByteString, Lazy ByteString, Text, Lazy Text.
+
+    - Ah, this regex package works on strings
+      and I have Text.
+    - This JSON library encodes to ByteString,
+      and I need Text.
+    - This url decoding implementation takes
+      String as an input, and I have Text.
+    - And so on and so forth.
+
+    SOLUTION? string-conv
+    https://hackage.haskell.org/package/string-conv-0.1
+
+    string-conversions seems to be used more widely
+    https://www.stackage.org/package/string-conversions
+
+Get implemetation of function in haskell
+    Unfortunately, the best way to find the
+    implementation of some function is through
+    this convoluted process
+
+    http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-List.html
+
+    quick jump
+
+    Alternatively, I can go on the #haskell.au
+    IRC channel and type @src tail
+
+    The website is 'hackage', but there is no
+    easy link to 'quick jump'.
+
+    http://hackage.haskell.org/
+
+    I want to end up in a place link this.
+    http://hackage.haskell.org/package/base-4.12.0.0/docs/src/GHC.List.html#tail
+
+forM_
+    mapM_ map lambda to list.
+    Your every day map.
+
+    The _ indicates ignore results.
+
+    hsdoc forM_
+
+    egr forM_
+
+    Type:
+    forM_ :: (Foldable t, Monad m) => t a -> (a -> m b) -> m ()
+
+    Type in context example:
+    forM_ :: [Integer] -> (Integer -> IO ()) -> IO ()
+
+    mapM_ with its arguments flipped.
+
+forM_ vs forM
+    forM_ function is more efficient than forM
+    because it does not save the results of
+    the operations.
+
+    That is all.
+
+forM_
+    Ignores the results
+
+forM
+    Does not ignores the results.
+
+    mapM with its arguments flipped.
+
+mapM
+    mapM mf xs takes a monadic function mf
+    (having type Monad m => (a -> m b)) and
+    applies it to each element in list xs; the
+    result is a list inside a monad. The
+    difference between mapM and mapM_ is, that
+    mapM returns a list of the results, while
+    mapM_ returns an empty result. The result
+    of each action in mapM_ is not stored.
+
+compose
+.
+(.)
+function composition
+    [operator]
+    [infix operator]
+
+        (.)   :: (b->c) -> (a->b) -> (a->c)
+        f . g = \ x -> f (g x)
+
+convert functional value into infix operator
+    Example:
+
+        x `elem` xs
+
+    This can be read intuitively as "x is an
+    element of xs."
+
+apply
+$
+($)
+    [operator]
+
+    low, right-associative binding precedence
+
+    f $ g $ h x  =  f (g (h x))
+    f (g $ h x)  =  f (g (h x))
+    f (g (h x))  =  f (g (h x))
+
+comparing lists
+    Can be compared if the stuff they contain
+    can be compared.
+
+    [3,2,1] > [2,1,0]
+    [3,2,1] > [2,10,100]
+
+!!
+    "Steve Buscemi" !! 6
+
+++
+    [1,2,3,4] ++ [9,10,11,12]
+    "hello" ++ " " ++ "world"
+    ['w','o'] ++ ['o','t']
+    'A':" SMALL CAT"
+    ( [6,6,6]:[[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]] ++ [[1,1,1,1]] ) !! 2
+
+'
+    doubleSmallNumber' x = (if x > 100 then x else x*2) + 1
+
+    The ' at the end of the function name.
+    That apostrophe doesn't have any special
+    meaning in Haskell's syntax. It's a valid
+    character to use in a function name. We
+    usually use ' to either denote a strict
+    version of a function (one that isn't
+    lazy) or a slightly modified version of a
+    function or a variable. Because ' is a
+    valid character in functions, we can make
+    a function like this.
+
+typeclass
+type class
+class
+    A class of a type.
+
+    Num contains Integer, Double, Int, Float.
+
+    Example:
+    - Eq
+
+context
+type constraint
+    A class can be used as a context.
+
+    Example:
+    - Eq a
+      - where Eq is the context here.
+
+    The constraint that a type a must be an
+    instance of the class Eq is written Eq a.
+
+    Thus Eq a is not a type expression, but
+    rather it expresses a constraint on a
+    type, and is called a context.
+
+    Contexts are placed at the front of type
+    expressions.
+
+    For example, the effect of the above class
+    declaration is to assign the following
+    type to ==:
+
+        (==) :: (Eq a) => a -> a -> Bool
+
+    This should be read, "For every type a
+    that is an instance of the class Eq, ==
+    has type a->a->Bool". This is the type
+    that would be used for == in the elem
+    example, and indeed the constraint imposed
+    by the context propagates to the principal
+    type for elem:
+
+        elem :: (Eq a) => a -> [a] -> Bool
+
+    Contexts are also allowed in data
+    declarations.
+
+kind constraint
+
+class constraint
+    Class methods may have additional class
+    constraints on any type variable except
+    the one defining the current class. For
+    example, in this class:
+
+        class C a where
+        m :: Show b => a -> b
+
+    the method m requires that type b is in
+    class Show. However, the method m could
+    not place any additional class constraints
+    on type a. These would instead have to be
+    part of the context in the class
+    declaration.
+
+constraint
+    Types:
+    - Context (type constraint?)
+    - Kind constraint
+    - Class constraint
+    - Implicit parameter constraint
+    - Equality constraint
+    - ConstraintKinds
+
+    Normally, constraints (which appear in
+    types to the left of the => arrow) have a
+    very restricted syntax. They can only be:
+
+    - Class constraints, e.g. Show a
+    - Implicit parameter constraints
+      e.g. ?x::Int (with the ImplicitParams extension)
+    - Equality constraints
+      e.g. a ~ Int (with the TypeFamilies or GADTs extensions)
+
+    With the ConstraintKinds extension, GHC
+    becomes more liberal in what it accepts as
+    constraints in your program.
+
+ConstraintKinds
+    Allow types of kind Constraint to be used
+    in contexts.
+
+    ewwlinks +/"The following things" "https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/constraint_kind.html"
+
+    Among others:
+        Anything whose form is not yet known,
+        but the user has declared to have kind
+        Constraint (for which they need to
+        import it from Data.Kind )
+
+    ghcd 5.5
+    ghcd Fractional
+
+instance declaration
+    [declaration]
+
+    But how do we specify which types are
+    instances of the class Eq, and the actual
+    behavior of == on each of those types?
+    This is done with an instance declaration.
+    For example:
+
+        instance Eq Integer where
+        x == y = x `integerEq` y
+
+Ord
+    [typeclass]
+
+    An instance of Ord is a thing that can be
+    ordered.
+
+AlGebraic Data Type
+AgDT
+    [#haskell]
+
+    intro
+        http://learnyouahaskell.com/making-our-own-types-and-typeclasses
+
+ps@(p:pt)
+    Syntactic sugar, with @ read aloud as "as". ps@(p:pt) gives you names for
+
+    1. the list: ps
+    2. the list's head : p
+    3. the list's tail: pt
+    Without the @, you'd have to choose between (1) or (2):(3).
+
+    This syntax actually works for any
+    constructor; if you have data Tree a =
+    Tree a [Tree a], then t@(Tree _ kids)
+    gives you access to both the tree and its
+    children.
+
+Redundant parentheses
+    These are equal.
+    A function takes 1 argument and returns a function.
+
+    This is because it's right-associative.
+
+    foldl :: (b -> a -> b) -> b -> [a] -> b
+    foldl :: (b -> a -> b) -> (b -> [a] -> b)
+    foldl :: (b -> (a -> b)) -> (b -> ([a] -> b))
+
+arrow in return term in type declaration
+    13:00 < libertyprime> 	 could somebody please explain to me the intuition behind why haskell uses -> for the return term in a type declaration?
+    13:08 < dibblego>     	 there are a number of intuitions
+    13:08 < dibblego>     	 e.g. A -> B, can be thought of as, "given A, a B can be produced"
+    13:09 < dibblego>     	 it also corresponds to implication under a C-H logic correspondence. The proposition A implies B
+    13:09 < dibblego>     	 importantly, it is right-associative
+    13:09 < dibblego>     	 take the signature of foldl :: (b -> a -> b) -> b -> [a] -> b
+    13:09 < dibblego>     	 I will now add redundant parentheses
+    13:09 < dibblego>     	 foldl :: (b -> a -> b) -> (b -> [a] -> b)
+    13:09 < dibblego>     	 and some more
+    13:09 < dibblego>     	 foldl :: (b -> (a -> b)) -> (b -> ([a] -> b))
+    13:10 < dibblego>     	 this goes to show, it takes one argument (and returns a function)
+    13:54 < libertyprime> 	 thanks dibblego. ill meditate on this
+    13:55 < dibblego>     	 no problem, here is a challenge, what is the type of this expression: foldl (++)
+
+    ghcit $(p "foldl (++)")
+
+    A -> B
+        Can be thought of as, "given A, a B can be produced"
+
+Find the type of an expression
+    x -cd "$(pwd)" -sh "ghci" -e "Prelude>" -s ":t (+) 3" -c m -i
+
+    ghci -v0 <<< ":t (+) 3" | v
+
+ghci
+    echo :browse Data.List | ghci | v
+
+    # This is the cleaner way to do it
+    ghci -v0 <<< ":browse Data.List" | v
+
+chaining
+    -- (++) is the concatenation operator
+    -- to concatenate two linked lists you have to chain the second one
+    -- at the end of the first one
+
+    (++) :: [a] -> [a] -> [a]
+    -- the definition of something with 2 parameters must have 2 params on
+    -- the LHS
+    []     ++ l2 = l2
+    (l:l1) ++ l2 = l : (l1 ++ l2)
+    -- l1 ++ l2 = foldr (:) l2 l1
+
+Refactoring tips in emacs
+
+     or :: [Bool] -> Bool
+     or []     = False
+     or (x:xs) = x || or xs
+     -- or = foldl (||) False
+
+    Use foldr
+    Found:
+      or [] = False
+      or (x : xs) = x || or xs
+    Perhaps:
+      or xs = foldr (||) False xs
+
+head:tail notation
+    (l:l1) ++ l2 = l : (l1 ++ l2)
+
+    Doesn't have to be x:xs
+
+++
+    vim +/"-- the definiton of something with 2 parameters must have 2 params on" "$MYGIT/google/haskell-trainings/haskell_101/codelab/Codelab.hs"
+
+    []     ++ l2 = l2
+    (l:l1) ++ l2 = l : (l1 ++ l2)
+    -- l1 ++ l2 = foldr (:) l2 l1
+
+and
+    help hs and
+
+    and = foldl (&&) True
+
+    and []
+    -- True
+
+or
+    or = foldl (||) True
+
+    or []
+    -- False
+
+xs
+    xs hs "foldl (/) 64 [4,2,4]"
+
+λ
+lambda
+lambda abstraction
+λ-abstraction
+    Instead of using equations to define
+    functions, we can also define them
+    "anonymously" via a lambda abstraction.
+
+    For example, a function equivalent to inc
+    could be written as \x -> x+1.
+
+    Similarly, the function add is equivalent
+    to \x -> \y -> x+y.
+
+        xs hs "foldl (\x y -> 2*x + y) 4 [1,2,3]"
+
+queryTerminal
+    vim +/"import           System.Posix.Terminal (queryTerminal)" "$MYGIT/google/haskell-trainings/haskell_101/codelab/Main.hs"
+
+    I can learn much from this file.
+
+lambda
+    unfoldr (\b -> fmap (const . (second $ drop 1) . break (==' ') $ b) . listToMaybe $ b)
+
+    what comes directly after the \ are the input parameters.
+
+String
+[Char]
+   String just a type alias for [Char]
+
+   vim +/"type String = \[Char\]" "$(hoogle String | tf txt)"
+
+error handling
+    vim +/"head \[\]    = error \"head: empty list\" -- \[\], therefore error" "$MYGIT/google/haskell-trainings/haskell_101/codelab/Codelab.hs"
+
+type signatures
+    -- these are the same
+    head :: [h] -> h
+    head :: [a] -> a
+
+    -- this is not the same type
+    head :: [a] -> h
+
+{-# Language TypeFamilies #-}
+Indexed type families
+type families (for short)
+    [Haskell extension]
+
+    For supporting ad-hoc overloading of data
+    types.
+
+    Type families are parametric types that
+    can be assigned specialized
+    representations based on the type
+    parameters they are instantiated with.
+
+    They are the data type analogue of type
+    classes: families are used to define
+    overloaded data in the same way that
+    classes are used to define overloaded
+    functions.
+
+    Type families are useful for generic
+    programming, for creating highly
+    parameterised library interfaces, and for
+    creating interfaces with enhanced static
+    information, much like dependent types.
+
+    Come in two flavors:
+    - data families
+    - type synonym families
+
+    Data families
+        The indexed form of data and newtype
+        definitions.
+
+    Type synonym families
+        The indexed form of type synonyms.
+
+    Each of these flavors can be defined in a
+    standalone manner or associated with a
+    type class.
+
+    Standalone definitions are more general,
+    while associated types can more clearly
+    express how a type is used and lead to
+    better error messages.
+
+{-# LANGUAGE CPP #-}
+    .hs files will be processed with C preprocessor before the code is compiled.
+
+{-# LANGUAGE QuasiQuotes #-}
+    ewwlinks +/"tutorial for the quasiquoting facility" "https://wiki.haskell.org/Quasiquotation"
+
+    Quasiquoting allows programmers to use
+    custom, domain-specific syntax to
+    construct fragments of their program.
+
+    Along with Haskell's existing support for
+    domain specific languages, you are now
+    free to use new syntactic forms for your
+    EDSLs.
+
+monads, Foldable
+    foldl :: Foldable t => (b -> a -> b) -> b -> t a -> b
+
+    Is Foldable a monad?
+    No it's not. Though the type signaturee makes it look likee it is.
+    I think "Foldable t =>" just says what something is.
+
+fold
+Foldable
+    import Data.Foldable
+
+    Foldable provides you with fold.
+
+    You can use fold to combine a list of
+    monoids/foldable things into a single
+    monoid/foldable thing.
+
+    For example, after turning a list of
+    strings into a list of builders, and the
+    builders are foldable, you can then fold
+    them all into eachother to produce a
+    single foldable.
+
+    https://youtu.be/FYTZkE5BZ-0?t=265
+
+foldl
+    https://youtu.be/24XK4LPoCXc?t=89
+
+    help hs foldl
+
+    xs hs "foldl (/) 64 [4,2,4]"
+
+    reduces the list using the binary operator, from left to right:
+
+    -- this was a custom implementation
+    length = foldl (\a _ -> a + 1) 0
+
+    Prelude foldl :: Foldable t => (b -> a -> b) -> b -> t a -> b
+
+    Takes a function
+        (b -> a -> b)
+    and a value
+        b
+    and a value of type Foldable
+        t a
+    and returns a value
+        b
+
+    xs hs "foldl max 5 [1,2,3,4,5,6,7]"
+
+    x -cd "$(pwd)" -sh "ghci" -e "Prelude>" -s "a = foldl (\xs y -> 10*xs -y) 0" -c m -e "Prelude>" -s "a [1,2,3]" -c m -i
+
+foldr
+    https://youtu.be/24XK4LPoCXc?t=89
+
+fold
+unfold
+    https://kseo.github.io/posts/2016-12-12-unfold-and-fold.html
+
+    Every functional programmer loves fold.
+    fold is universal and expressive. But fold
+    has a secret twin brother named unfold
+    which undoes what fold does.
+
+    unfoldr builds a list from a seed value
+    while foldr reduces a list to a summary
+    value.
+
+Control.Applicative
+    A structure intermediate between a functor
+    and a monad (technically, a strong lax
+    monoidal functor). Compared with monads,
+    this interface lacks the full power of the
+    binding operation >>=, but:
+    - it has more instances.
+    - it is sufficient for many uses, e.g.
+      context-free parsing, or the Traversable
+      class.
+    - instances can perform analysis of
+      computations before they are executed,
+      and thus produce shared optimizations.
+
+    See also:
+        vim +/"Applicative vs Normal Order" "$HOME/notes/glossary.txt"
+
+ApplicativeDo
+    https://gitlab.haskell.org/ghc/ghc/wikis/applicative-do
+
+    Adds support to GHC for desugaring
+    do-notation into Applicative expressions
+    where possible.
+
+    When ApplicativeDo is turned on, GHC will
+    use a different method for desugaring
+    do-notation, which attempts to use the
+    Applicative operator <*> as far as
+    possible, along with fmap and join.
+
+Abstract Data Type
+AbDT (to differentiate)
+ADT
+    [#haskell]
+
+    ewwlinks +/"11.2  Abstract Data Types" "https://www.haskell.org/tutorial/modules.html"
+
+    Must create a module to create new AbDTs.
+
+        module TreeADT (Tree, leaf, branch, cell,
+                        left, right, isLeaf) where
+
+        data Tree a             = Leaf a | Branch (Tree a) (Tree a)
+
+        leaf                    = Leaf
+        branch                  = Branch
+        cell  (Leaf a)          = a
+        left  (Branch l r)      = l
+        right (Branch l r)      = r
+        isLeaf   (Leaf _)       = True
+        isLeaf   _              = False
+
+    vim +/"Abstract Data Type" "$HOME/notes/glossary.txt"
+
+module
+    A Haskell program consists of a collection
+    of modules.
+
+    A module in Haskell serves the dual
+    purpose of:
+    - controlling name-spaces
+    - creating abstract data types.
+
+    Module names are alphanumeric and must
+    begin with an uppercase letter.
+
+    Export list:
+        ( Tree(Leaf,Branch), fringe )
+        https://www.haskell.org/tutorial/modules.html
+
+    Modules provide the only way to build
+    AbDTs in Haskell.
+
+atomically
+    [#haskell]
+
+    $MYGIT/lotz84/haskellbyexample/ex/atomic-counters.md.hs
+
+co-monad
+comonad
+    ewwlinks +/"Control.Monad.Co" "http://hackage.haskell.org/package/kan-extensions-5.2/docs/Control-Monad-Co.html"
+
+    [[https://www.youtube.com/watch?v=HOmOQnQGtPU][Chris Penner - Comonads by Example 1/4 - YouTube]]
+
+array
+    ewwlinks +/"13  Arrays" "https://www.haskell.org/tutorial/arrays.html"
+
+    ewwlinks +/"array #" "http://hackage.haskell.org/package/array-0.5.3.0/docs/Data-Array.html#v:array"
+
+    hs-browse Data.Array
+
+    Not part of the Standard Prelude.
+
+Existential types
+existentials
+    A way of 'squashing' a group of types into
+    one, single type.
+
+universal quantification
+universally quantified
+
+forall
+    IORef :: forall t. t
+
+    Can be any type
+
+forall
+    In standard Haskell 98/2010 type variables
+    in a type expression are all assumed to be
+    universally quantified.
+
+    Example
+        The type expression
+            a -> a
+        denotes the type
+            forall a. a ->a~
+
+    ewwlinks +/"The forall keyword" "https://en.wikibooks.org/wiki/Haskell/Existentially_quantified_types"
+
+    The scope of the forall extends as far to
+    the right as possible; for example,
+
+        forall a. a -> a
+
+    means
+
+        forall a. (a -> a)
+
+    Examples:
+        head :: [a] -> a
+        head []    = error "head: empty list"
+        head (x:_) = x
+        -- a :: forall t. t
+        -- x: :: forall a. a -> [a] -> [a]
+        -- : :: forall a. a -> [a] -> [a]
+        -- _ :: [a]
+
+        isNothing :: Maybe a -> Bool
+        isNothing Nothing  = True
+        isNothing (Just _) = False
+        -- a :: forall t. t
+        -- Just :: forall a. a -> Maybe a
+        -- _ :: a
+        -- Nothing :: forall a. Maybe a
+        -- isNothing :: forall a. Maybe a -> Bool
+
+hiding
+    When importing modules, without
+    introducing a name into scope, entities
+    can be excluded by using the form
+
+        hiding (import1 , ... , importn )
+
+    which specifies that all entities exported
+    by the named module should be imported
+    except for those named in the list.
+
+    For example:
+
+        import Prelude hiding (lookup,filter,foldr,foldl,null,map)
+
+polymorphic function
+    ewwlinks +/"Example: A polymorphic function" "https://en.wikibooks.org/wiki/Haskell/Existentially_quantified_types"
+
+    A and b are type variables.
+
+        map :: (a -> b) -> [a] -> [b]
+
+    The compiler sees that they begin with a
+    lowercase letter and as such allows any
+    type to fill that role.
+
+    Another way of putting this is that those
+    variables are 'universally quantified'.
+
+imperative programming
+    It is possible to write imperative-style
+    code in Haskell as well.
+
+    Sometimes we really do want to say
+    something like "do A, then do B, then do
+    C".
+
+    This adds a new dimension to the simple
+    world of function application: we need a
+    notion of 'happens before'.
+
+    Haskell has embraced the Monad concept to
+    describe computations that have an order
+    of evaluation.
+
+    This turns out to be very handy because it
+    can encapsulate effects such as changing
+    state.
+
+//
+    hoogle //
+
+    (//) :: Vector a -> [(Int, a)] -> Vector a
+    vector Data.Vector
+    O(m+n) For each pair (i,a) from the list, replace the
+
+
+
+    vector element at position i by a.
+
+!
+    2 forms:
+    - in a haskell type declaration
+    - as an operator in an expression
+
+    Declaration:
+        It's a strictness declaration.
+        Basically, it means that it must be
+        evaluated to what's called "weak
+        normal head form" when the data
+        structure value is created.
+
+            data MidiMessage = MidiMessage !Int !MidiMessage
+
+    Operator:
+        The value at the given index in an array.
+
+            (!) :: IntMap a -> Key -> a
+
+        containers Data.IntMap.Internal
+        O(min(n,W)). Find the value at a key. Calls error when
+        the element can not be found.
+
+            fromList [(5,'a'), (3,'b')] ! 1
+            -- Error: element not in the map
+
+            fromList [(5,'a'), (3,'b')] ! 5 == 'a'
+
+forever
+    hsdoc forever
+
+    Repeat an action indefinitely.
+
+        forever :: Applicative f => f a -> f b Source #
+
+reverse binder function
+=<<
+(=<<)
+    (=<<) :: Monad m => (a -> m b) -> m a -> m b
+    base Prelude
+    Same as >>=, but with the arguments interchanged.
+
+    These are equivalent:
+
+        print =<< nextInt
+        nextInt >>= print
+
+    The prelude also defines a binding function that takes it arguments in the opposite order to
+    the standard binding function. Since the standard binding function is called ">>=", the
+    reverse binding function is called "=<<". It is useful in circumstances where the binding
+    operator is used as a higher-order term and it is more convenient to have the arguments in the
+    reversed order. Its definition is simply:
+
+        (=<<) :: Monad m => (a -> m b) -> m a -> m b
+        f =<< x = x >>= f
+
+    >>= vs =<<
+
+        Prelude> :t (>>=)
+        (>>=) :: Monad m => m a -> (a -> m b) -> m b
+        Prelude> :t (=<<)
+        (=<<) :: Monad m => (a -> m b) -> m a -> m b
+
+type-declarative search
+
+    I can do type-declarative search with
+    hoogle. I don't need to use the IRC bot
+
+        stack exec -- hoogle "(a -> b) -> [a] -> [b]"
+
+bracket
+    vim +/"bracket (openBinaryFile \"\/tmp\/dat2\" WriteMode)" "$MYGIT/lotz84/haskellbyexample/ex/writing-files.md.hs"
+
+    bracket :: IO a -> (a -> IO b) -> (a -> IO c) -> IO c
+
+    base Control.Exception
+
+    When you want to acquire a resource, do some work with it, and then
+    release the resource, it is a good idea to use bracket, because
+    bracket will install the necessary exception handler to release
+    the resource in the event that an exception is raised during the
+    computation. If an exception is raised, then bracket will
+    re-raise the exception (after performing the release).
+
+ghcup
+    An installer for the general purpose
+    language Haskell.
+
+Ix
+    http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Ix.html
+
+    The Ix class is used to map a contiguous
+    subrange of values in type onto integers.
+
+    It is used primarily for array indexing
+    (see the array package).
+
+    Ix uses row-major order.
+
+        hsdoc Ix
+
+        >let a = array (0, 4) [(i, 0) | i <- [0..4]]
+        >:t a
+        (Ix i, Enum i, Num i, Num e) => Array i e
+        Array Integer Integer
+
+Parsec
+    An industrial strength, monadic parser
+    combinator library for Haskell.
+
+    It can parse context-sensitive, infinite
+    look-ahead grammars but it performs best
+    on predictive (LL[1]) grammars.
+
+apostrophe
+    In an identifier name:
+        Just part of the name.
+
+        It is a naming convention (idiom)
+        adopted in Haskell.
+
+        The convention in Haskell is that,
+        like in math, the apostrophe on a
+        variable name represents a variable
+        that is somehow related, or similar,
+        to a prior variable.
+
+        x' is related to x , and we indicate
+        that with the apostrophe.
+
+lazy IO
+
+containers
+    vim +/"Haskell containers" "$NOTES/ws/haskell/remember.org"
+
+finite map
+dictionary
+    http://hackage.haskell.org/package/containers-0.6.2.1/docs/Data-Map-Strict.html
+
+hpack
+    hpack: A modern format for Haskell packages
+
+    Hpack is a format for Haskell packages. It
+    is a modern alternative to the Cabal
+    package format and follows different
+    design principles.
+
+type synonym
+    https://wiki.haskell.org/Type_synonym
+
+    A type synonym is a new name for an
+    existing type. Values of different
+    synonyms of the same type are entirely
+    compatible. In Haskell you can define a
+    type synonym using type:
+
+    type MyChar = Char
+
+    In C you define a type synonym using
+    typedef.
+
+type vs data vs newtype
+    The 'data' keyword allows you to
+    introduce a new algebraic data type, while
+    'type' just makes a type synonym.
+
+    =newtype= is like =data= in that they both
+    create algebraic data types, where =type=
+    only creates a type synonym.
+
+    =newtype= is like =type= in that you may
+    only have one value constructor.
+
+value parameter
+    Value constructors can take value
+    parameters produce a new value.
+
+    Just a
+        data Maybe a = Nothing | Just a
+
+type parameter
+    Type constructors can take types as
+    parameters to produce new types.
+
+    Maybe a
+        data Maybe a = Nothing | Just a
+
+parameterized type
+    https://livebook.manning.com/book/get-programming-with-haskell/chapter-18/
+
+Unit type
+    https://en.wikipedia.org/wiki/Unit_type
+
+    v +/"\*\* Unit type" "$HOME/blog/posts/haskell-typeclasses.org"
+
+staging programs
+    Writing programs using template haskell.
+
+stage polymorphic programs
+
+typed template haskell
+    All about generating expressions in a
+    principled manner.
+
+TypeApplications
+Type Application
+    [language extension]
+
+    ewwlinks +/"Type Application" "https://gitlab.haskell.org/ghc/ghc/-/wikis/type-application"
+
+    answer_read = show (read @Int "3") -- "3" :: String
+    answer_show = show @Integer (read "5") -- "5" :: String
+    answer_showread = show @Int (read @Int "7") -- "7" :: String
+
+floatLE
+    floatLE :: Float -> Builder
+
+    bytestring Data.ByteString.Builder
+    Encode a Float in little endian format.
+
+runCommand
+    This is how I need to invoke commands in
+    haskell.
+
+    runCommand $ printf "/bin/bash -c \"export SHELL=bash; source ~/.profile || :; sps cava; ffplay -autoexit -showmode 0 -f f32le -ar %f %s\"; killall cava" sampleRate outputFilePath
+
+_
+    The underscore `_` is used as a "*don't
+    care*" variable.
+
+error
+    https://youtu.be/24XK4LPoCXc?t=124
+
+Either
+    The Either type represents values with two
+    possibilities: a value of type Either a b
+    is either Left a or Right b.
+
+    The Either type is sometimes used to
+    represent a value which is either correct
+    or an error; by convention, the Left
+    constructor is used to hold an error value
+    and the Right constructor is used to hold
+    a correct value (mnemonic: "right" also
+    means "correct").
+
+    The type Either String Int is the type of
+    values which can be either a String or an
+    Int. The Left constructor can be used only
+    on Strings, and the Right constructor can
+    be used only on Ints.
+
+    Constructors:
+    - Left a
+    - Right b
+
+    https://hackage.haskell.org/package/base-4.16.2.0/docs/Data-Either.html
+
+<$>
+fmap
+    https://youtu.be/xCut-QT2cpI?t=364
+
+    An infix synonym for fmap. The name of
+    this operator is an allusion to $. Note
+    the similarities between their types:
+
+        ($)  ::              (a -> b) ->   a ->   b
+        (<$>) :: Functor f => (a -> b) -> f a -> f b
+
+    Whereas $ is function application, <$> is
+    function application lifted over a
+    Functor.
+
+    Examples:
+        Convert from a Maybe Int to a Maybe
+        String using show:
+
+            >>> show <$> Nothing
+            Nothing
+
+            >>> show <$> Just 3
+            Just "3"
+
+        Convert from an Either Int Int to an
+        Either Int String using show:
+
+            >>> show <$> Left 17
+            Left 17
+
+            >>> show <$> Right 17
+            Right "17"
+
+        Double each element of a list:
+
+            >>> (*2) <$> [1,2,3]
+            [2,4,6]
+
+        Apply even to the second element of a
+        pair:
+
+            >>> even <$> (2,2)
+            (2,True)
+
+    https://hoogle.haskell.org/?hoogle=%3C%24%3E&scope=set%3Astackage
+
+layout keywords
+    - let
+    - where
+    - of
+    - do
+
+    https://en.wikibooks.org/wiki/Haskell/Indentation#:~:text=Haskell%20relies%20on%20indentation%20to,a%20couple%20fundamental%20layout%20rules.
+
+_value namespace_
+_type namespace_
+    There are two completely separate
+    namespaces in any Haskell source file:
+    - The value namespace, and
+    - the type namespace.
+
+    The former is where functions, literals,
+    patterns, etc. reside, and the latter is
+    where you'll find type constructors,
+    typeclasses, and type variables.
+
+::
+(::)
+has type operator
+    [operator]
+
+    The stuff on the left of the operator is
+    in the value namespace, and the stuff on
+    the right is in the type namespace, as in
+    5 :: Int.
+
+NamedFieldPuns
+    https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#record-puns
+
+    When using records, it is common to write
+    a pattern that binds a variable with the
+    same name as a record field, such as:
+
+        data C = C {a :: Int}
+        f (C {a = a}) = a
+
+    Record punning permits the variable name
+    to be elided, so one can simply write
+
+        f (C {a}) = a
+
+    to mean the same pattern as above. That
+    is, in a record pattern, the pattern a
+    expands into the pattern a = a for the
+    same name a.
+
+lambda calculus
+λ calculus
+    A formal system in mathematical logic for
+    expressing computation based on function
+    abstraction and application using variable
+    binding and substitution.
+
+    It is a universal model of computation
+    that can be used to simulate any Turing
+    machine.
+
+    It was introduced by the mathematician
+    Alonzo Church in the 1930s as part of his
+    research into the foundations of
+    mathematics.
+
+beta reduction
+β reduction
+    [lambda calculus]
+
+    The process of calculating a result from
+    the application of a function to an
+    expression.
+
+cradle
+    [#hie]
+    [#hie.yaml]
+
+    https://www.stackage.org/haddock/nightly-2021-02-05/hie-bios-0.7.2/HIE-Bios-Cradle.html
+
+HIE Bios
+hie-bios
+    [#hie]
+
+    Provides an abstraction over the GHC Api
+    to initialise a GHC session and loading
+    modules in a project.
+
+    Defines the `hie.yaml` file specification.
+    This is used to explicitly configure how a
+    project should be built by GHC.
+
+hie.yaml
+    [#hie]
+    [specification]
+
+    Used to explicitly configure how a project
+    should be built by GHC.
+
+    https://www.reddit.com/r/haskell/comments/hcu5sf/mystified_by_hieyaml/
+
+(>>=)
+>>=
+>>
+bind
+    The >>= function is known as "bind"
+    because it binds the value in a monad
+    container to the first argument of a
+    function.
+
+    https://wiki.haskell.org/Simple_monad_examples
+
+    All you really need to know, is that the
+    (>>=) operator either returns Nothing if
+    it is passed Nothing on its left-hand
+    side; or if its left-hand side is a Just
+    x, for example, it strips off the Just,
+    and passes the contents into the function
+    supplied on its right-hand side, which
+    rewraps it. Simple!
+
+    Bind is one of the operators of Monad;
+    Another is 'return', which is rather
+    simple, it just containerizes a value.
+
+    (>>) and (>>=) are both bind variants.
+
+    Explanation of (>>):
+        https://youtu.be/_Gk_lwhJMzk?t=278
+
+    infixl 1  >>, >>=
+    class  Monad m  where
+        (>>=)            :: m a -> (a -> m b) -> m b
+        (>>)             :: m a -> m b -> m b
+        return           :: a -> m a
+        fail             :: String -> m a
+
+        m >> k           =  m >>= \_ -> k
+
+MINIMAL
+    The MINIMAL comment here means that
+    there is only one function that we need in
+    order to have a Monad, (>>=), the bind
+    operator.
+
+      ghciol ":i Monad"
+
+      {-# MINIMAL (>>=) #-}
+
+instance
+    This output also shows that Maybe and IO
+    are instances of Monad.
+
+      ghciol ":i Monad"
+
+      instance Monad Maybe -- Defined in 'GHC.Base'
+      instance Monad IO -- Defined in 'GHC.Base'
+
+    https://youtu.be/CNOff5LPKQI?t=369
+
+mod
+modulo
+    [operator]
+
+    Like 'rem', but after modular division.
+
+div
+    [operator]
+
+    Integral division, round down.
+
+    (div x y)*y + (mod x y) == x
+
+quot
+quotient
+    [operator]
+
+    Integral division, round towards zero.
+
+    (quot x y)*y + (rem x y) == x
+
+rem
+remainder
+    [operator]
+
+    Remainder after division.
+
+QualifiedDo
+    https://www.tweag.io/blog/2020-07-13-qualified-do-announcement/
+    https://www.youtube.com/watch?v=TH3cYp3349A
+
+LiftIO
+    https://www.schoolofhaskell.com/user/commercial/content/monad-transformers
+
+sequenceA
+    https://www.youtube.com/watch?v=N9RUqGYuGfw&t=1347s&ab_channel=Tsoding
+
+as-pattern
+@
+    ewwlinks +/"^As-patterns." "http://www.cs.otago.ac.nz/coursework/cosc347/References/FP/haskell-98-tutorial-html/patterns.html"
+
+    The @ Symbol is used to both give a name
+    to a parameter and match that parameter
+    against a pattern that follows the @.
+
+    It's not specific to lists and can also be
+    used with other data structures.
+
+    It's just syntactic sugar, with @ read
+    aloud as "as".
+
+    Example:
+        f (x:xs)                = x:x:xs
+
+    can be rewritten as:
+        f s@(x:xs)             = x:s
+
+    Example:
+        fib@(1:tfib)    = 1 : 1 : [ a+b | (a,b) <- zip fib tfib ]
+
+    Example:
+        ps@(p:pt)
+    gives you names for:
+        the list: ps
+        the list's head : p
+        the list's tail: pt
+
+    Without the @, you'd have to choose
+    between (1) or (2):(3).
+
+    This syntax actually works for any
+    constructor; if you have data Tree a =
+    Tree a [Tree a], then t@(Tree _ kids)
+    gives you access to both the tree and its
+    children.
+
+wrapped value
+    Example:
+        Just 9
+
+    9 is wrapped in a Just.
+
+    Can't do:
+        (+3) (Just 9)
+
+        That's where the functor comes into
+        play.
+
+        fmap (+3) (Just 4) -> Just 7
+
+unwrapped value
+    Example:
+        9
+
+->
+(->)
+    ghcd "(->)"
+
+if
+else
+    The else part is mandatory in Haskell.
+
+    doubleSmallNumber x = if x > 100
+                            then x
+                            else x*2
+
+    vs case:
+
+        if e1then e2else e3
+
+    which is really short-hand for:
+
+        case e1 of True  -> e2
+                   False -> e3
+
+Yesod
+main = warp 3000
+    web framework
+
+    main = warp 3000
+
+    eww "https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Simple%20examples"
+
+total function
+    sp +/"total functions" "$HOME/Calibre Library/Jan Stolarek/Understanding Basic Haskell Error Messages (90)/Understanding Basic Haskell Error Messages - Jan Stolarek.txt"
+
+    Safe version of head function which will
+    work for all possible inputs without
+    throwing an exception.
+
+applicative expression
+    NLG: A function is called an applicative
+    expression if it is either a constant or a
+    function of exactly one argument
+
+    NLG: An expression that is syntactically
+    valid Haskell code, but the fixity or
+    syntax of which is not valid Haskell.
+
+    For example, `1 + (2 * 3)` would be an
+    applicative expression
+
+type-level programming
+    ewwlinks +/"^Type-level programming" "https://rebeccaskinner.net/posts/2021-08-25-introduction-to-type-level-programming.html"
+
+    NLG: "Type-level programming" is a
+    programming paradigm in which the types of
+    data are used to guide and inform the
+    design of programs.
+
+newtype wrapper
+    https://hackage.haskell.org/package/newtype-zoo
+
+    ewwlinks +/"^The simplest way to define" "https://rebeccaskinner.net/posts/2021-08-25-introduction-to-type-level-programming.html"
+
+    NLG: A datatype that wraps an existing
+    Haskell datatype, such that it is defined
+    with a constructor that ensures that the
+    datatype is in fact new.
+
+    NLG: Haskell's newtype wrapper allows you
+    to generate new datatypes with type safety
+    enforced.
+
+ST monad
+    The monadic ST type provides support for
+    strict state threads.
+
+====
+    Identity.
+
+    See "The three fundamental laws of monads".
+
+MonadPlus
+zero
+plus
+mzero
+mplus
+    Beyond the three monad laws, some monads
+    obey additional laws. These monads have a
+    special value mzero and an operator mplus
+    that obey four additional laws:
+
+        1 mzero >>= f == mzero
+        2 m >>= (\x -> mzero) == mzero
+        3 mzero `mplus` m == m
+        4 m `mplus` mzero == m
+
+    It is easy to remember the laws for mzero
+    and mplus if you associate mzero with 0,
+    mplus with +, and >>= with × in ordinary
+    arithmetic.
+
+    Monads which have a zero and a plus can be
+    declared as instances of the MonadPlus
+    class in Haskell:
+
+        class (Monad m) => MonadPlus m where
+            mzero :: m a
+            mplus :: m a -> m a -> m a
+
+    Continuing to use the Maybe monad as an
+    example, we see that the Maybe monad is an
+    instance of MonadPlus:
+
+        instance MonadPlus Maybe where
+            mzero             = Nothing
+            Nothing `mplus` x = x
+            x `mplus` _       = x
+
+FiniteMap
+    ewwlinks +/"FiniteMap" "https://wiki.haskell.org/All_About_Monads"
+
+principal
+principal type
+    An expression's or function's principal
+    type is the least general type that,
+    intuitively, "contains all instances of
+    the expression".
+
+    For example, the principal type of head is
+    [a]->a; [b]->a, a->a, or even a are
+    correct types, but too general, whereas
+    something like [Integer]->Integer is too
+    specific.
+
+nullary constructor
+    If a constructor does not take any data
+    arguments, it is nullary.
+
+enumerated type
+    Examples:
+        data Bool  = False | True
+        data Color = Red | Green | Blue | Indigo | Violet
+
+    Both Bool and Color are examples of
+    enumerated types, since they consist of a
+    finite number of nullary data
+    constructors.
+
+tuple type
+    Example:
+        data Point a = Pt a a
+
+    Because of the single constructor, a type
+    like Point is often called a tuple type,
+    since it is essentially just a cartesian
+    product (in this case binary) of other
+    types. (Tuples are somewhat like records
+    in other languages.)
+
+multi-constructor type
+union type
+sum types
+    In contrast to tuple types,
+    multi-constructor types, such as Bool and
+    Color (See enumerated type), are called
+    (disjoint) union or sum types.
+
+polymorphic type
+    Example:
+        data Point a = Pt a a
+
+    For any type t, Point defines the type of
+    cartesian points that use t as the
+    coordinate type.
+
+unary type constructor
+    Example:
+        data Point a = Pt a a
+
+    The Point type can now be seen clearly as
+    a unary type constructor, since from the
+    type t it constructs a new type Point t.
+
+binary data constructor
+    Example:
+        Pt is a -> a -> Point a,
+
+    Thus the following typings are valid:
+        Pt  2.0  3.0            :: Point Float
+        Pt  'a'  'b'            :: Point Char
+        Pt True False           :: Point Bool
+
+recursive type
+    Examples
+        -- binary trees
+        data Tree a = Leaf a | Branch (Tree a) (Tree a)
+
+race
+    Allows you to kill asynchonous exceptions
+    from the outside.
+
+    https://youtu.be/DebDaiYev2M?t=596
+
+atomic type
+    Examples:
+    - Integer (infinite-precision integers),
+    - Char (characters),
+    - Integer->Integer (functions mapping Integer to Integer)
+
+structured type
+    Examples:
+    - [Integer] (homogeneous lists of integers)
+    - (Char,Integer) (character, integer pairs).
+
+typing
+    [declaration]
+
+    The association of a value with its type.
+
+    Examples:
+             5  :: Integer
+            'a' :: Char
+            inc :: Integer -> Integer
+        [1,2,3] :: [Integer]
+        ('b',4) :: (Char,Integer)
+
+equation
+    [declaration]
+
+    Functions in Haskell are normally defined
+    by a series of equations.
+
+    For example, the function inc can be
+    defined by the single equation:
+
+        inc n = n+1
+
+type signature declaration
+    [declaration]
+
+    We can declare an explicit typing for inc:
+
+        inc :: Integer -> Integer
+
+lazy pattern
+    ewwlinks +/"4.4  Lazy Patterns" "http://www.cs.otago.ac.nz/coursework/cosc347/References/FP/haskell-98-tutorial-html/patterns.html"
+
+    There is one other kind of pattern allowed
+    in Haskell.
+
+    It is called a lazy pattern, and has the
+    form ~pat.
+
+    Lazy patterns are irrefutable: matching a
+    value v against ~pat always succeeds,
+    regardless of pat.
+
+    Operationally speaking, if an identifier
+    in pat is later "used" on the right-hand-
+    side, it will be bound to that portion of
+    the value that would result if v were to
+    successfully match pat, and _|_ otherwise.
+
+    Lazy patterns are useful in contexts where
+    infinite data structures are being defined
+    recursively.
+
+    For example, infinite lists are an
+    excellent vehicle for writing simulation
+    programs, and in this context the infinite
+    lists are often called streams.
+
+    Consider the simple case of simulating the
+    interactions between a server process
+    server and a client process client, where
+    client sends a sequence of requests to
+    server, and server replies to each request
+    with some kind of response.
+
+    This situation is shown pictorially in
+    Figure 2.
+
+    (Note that client also takes an initial
+    message as argument.)
+
+    Client Server Example
+
+    Using streams to simulate the message
+    sequences, the Haskell code corresponding
+    to this diagram is:
+
+        reqs  = client init resps
+        resps = server reqs
+
+    These recursive equations are a direct
+    lexical transliteration of the diagram.
+
+    Let us further assume that the structure
+    of the server and client look something
+    like this:
+
+        client init (resp:resps) = init : client (next resp) resps
+        server      (req:reqs)   = process req : server reqs
+
+    where we assume that next is a function
+    that, given a response from the server,
+    determines the next request, and process
+    is a function that processes a request
+    from the client, returning an appropriate
+    response.
+
+    Unfortunately, this program has a serious
+    problem: it will not produce any output!
+    The problem is that client, as used in the
+    recursive setting of reqs and resps,
+    attempts a match on the response list
+    before it has submitted its first request!
+    In other words, the pattern matching is
+    being done "too early." One way to fix
+    this is to redefine client as follows:
+
+        client init resps = init : client (next (head resps)) (tail resps)
+
+    Although workable, this solution does not
+    read as well as that given earlier. A
+    better solution is to use a lazy pattern:
+
+        client init ~(resp:resps) = init : client (next resp) resps
+
+    Because lazy patterns are irrefutable, the
+    match will immediately succeed, allowing
+    the initial request to be "submitted", in
+    turn allowing the first response to be
+    generated; the engine is now "primed", and
+    the recursion takes care of the rest.
+
+pattern binding
+    [lazy binding]
+
+    As another example of the use of lazy
+    patterns, consider the definition of
+    Fibonacci given earlier:
+
+        fib          = 1 : 1 : [ a+b | (a,b) <- zip fib (tail fib) ]
+
+    We might try rewriting this using an as-pattern:
+
+        fib@(1:tfib) = 1 : 1 : [ a+b | (a,b) <- zip fib tfib ]
+
+    This version of fib has the (small)
+    advantage of not using tail on the
+    right-hand side, since it is available in
+    "destructured" form on the left-hand side
+    as tfib.
+
+    This kind of equation is called a pattern
+    binding because it is a top-level equation
+    in which the entire left-hand side is a
+    pattern; i.e. both fib and tfib become
+    bound within the scope of the
+    declaration.
+
+    Now, using the same reasoning as earlier,
+    we should be led to believe that this
+    program will not generate any output.
+    Curiously, however, it does, and the
+    reason is simple: in Haskell, pattern
+    bindings are assumed to have an implicit ~
+    in front of them, reflecting the most
+    common behavior expected of pattern
+    bindings, and avoiding some anomalous
+    situations which are beyond the scope of
+    this tutorial. Thus we see that lazy
+    patterns play an important role in
+    Haskell, if only implicitly.
+
+block-structuring
+    [form]
+
+    Examples:
+    - let expressions
+    - where clauses
+
+mutually recursive
+    A form of recursion where two mathematical
+    or computational objects, such as
+    functions or datatypes, are defined in
+    terms of each other.
+
+where
+where clause
+    Sometimes it is convenient to scope
+    bindings over several guarded equations,
+    which requires a where clause:
+
+        f x y  |  y>z           =  ...
+               |  y==z          =  ...
+               |  y<z           =  ...
+             where z = x*x
+
+    Note that this cannot be done with a let
+    expression, which only scopes over the
+    expression which it encloses. A where
+    clause is only allowed at the top level of
+    a set of equations or case expression. The
+    same properties and constraints on
+    bindings in let expressions apply to those
+    in where clauses.
+
+let vs where
+    These two forms of nested scope seem very
+    similar, but remember that a let
+    expression is an expression, whereas a
+    where clause is not---it is part of the
+    syntax of function declarations and case
+    expressions.
+
+layout
+explicit grouping mechanism
+    [two-dimensional syntax]
+
+    The reader may have been wondering how it
+    is that Haskell programs avoid the use of
+    semicolons, or some other kind of
+    terminator, to mark the end of equations,
+    declarations, etc. For example, consider
+    this let expression from the last section:
+
+        let y   = a*b
+            f x = (x+y)/y
+        in f c + f d
+
+    How does the parser know not to parse this
+    as:
+
+        let y   = a*b f
+            x   = (x+y)/y
+        in f c + f d
+
+    ?
+
+    The answer is that Haskell uses a
+    two-dimensional syntax called layout that
+    essentially relies on declarations being
+    "lined up in columns." In the above
+    example, note that y and f begin in the
+    same column. The rules for layout are
+    spelled out in detail in the Report (§2.7,
+    §B.3), but in practice, use of layout is
+    rather intuitive. Just remember two
+    things:
+
+    First, the next character following any of
+    the keywords where, let, or of is what
+    determines the starting column for the
+    declarations in the where, let, or case
+    expression being written (the rule also
+    applies to where used in the class and
+    instance declarations to be introduced in
+    Section 5). Thus we can begin the
+    declarations on the same line as the
+    keyword, the next line, etc. (The do
+    keyword, to be discussed later, also uses
+    layout).
+
+    Second, just be sure that the starting
+    column is further to the right than the
+    starting column associated with the
+    immediately surrounding clause (otherwise
+    it would be ambiguous). The "termination"
+    of a declaration happens when something
+    appears at or to the left of the starting
+    column associated with that binding form.
+    (Haskell observes the convention that tabs
+    count as 8 blanks; thus care must be taken
+    when using an editor which may observe
+    some other convention.)
+
+    Layout is actually shorthand for an
+    explicit grouping mechanism, which
+    deserves mention because it can be useful
+    under certain circumstances. The let
+    example above is equivalent to:
+
+        let { y   = a*b
+            ; f x = (x+y)/y
+            }
+        in f c + f d
+
+    Note the explicit curly braces and
+    semicolons. One way in which this explicit
+    notation is useful is when more than one
+    declaration is desired on a line; for
+    example, this is a valid expression:
+
+        let y   = a*b;  z = a/b
+            f x = (x+y)/z
+        in f c + f d
+
+    The use of layout greatly reduces the
+    syntactic clutter associated with
+    declaration lists, thus enhancing
+    readability. It is easy to learn, and its
+    use is encouraged.
+
+polymorphism
+    Types:
+    - parametric polymorphism
+    - ad-hoc polymorphism
+
+parametric polymorphism
+    [type of polymorphism]
+
+    Parametric polymorphism is useful in
+    defining families of types by universally
+    quantifying over all types.
+
+    Sometimes, however, that universal
+    quantification is too broad---we wish to
+    quantify over some smaller set of types,
+    such as those types whose elements can be
+    compared for equality, so we may use
+    ad-hoc polymorphism instead. Type classes
+    can be seen as providing a structured way
+    to do just this.
+
+    Indeed, we can think of parametric
+    polymorphism as a kind of overloading too!
+    It's just that the overloading occurs
+    implicitly over all types instead of a
+    constrained set of types (i.e. a type
+    class).
+
+    For example, the map function is
+    polymorphic and its type indicates clearly
+    that its first argument is a function;
+    note also that the two a's must be
+    instantiated with the same type (likewise
+    for the b's). As an example of the use of
+    map, we can increment the elements in a
+    list:
+
+        map (add 1) [1,2,3] => [2,3,4]
+
+ad-hoc polymorphism
+overload
+overloaded
+overloading
+    [type of polymorphism]
+
+    http://www.cs.otago.ac.nz/coursework/cosc347/References/FP/haskell-98-tutorial-html/classes.html
+
+    - The literals 1, 2, etc. are often used
+      to represent both fixed and arbitrary
+      precision integers.
+
+    - Numeric operators such as + are often
+      defined to work on many different kinds
+      of numbers.
+
+    - The equality operator (== in Haskell)
+      usually works on numbers and many other
+      (but not all) types.
+
+    Intuitively speaking, the type of elem
+    "ought" to be: a->[a]->Bool. But this
+    would imply that == has type a->a->Bool,
+    even though we just said that we don't
+    expect == to be defined for all types.
+
+    Furthermore, as we have noted earlier,
+    even if == were defined on all types,
+    comparing two lists for equality is very
+    different from comparing two integers. In
+    this sense, we expect == to be overloaded
+    to carry on these various tasks.
+
+    Type classes conveniently solve both of
+    these problems. They allow us to declare
+    which types are instances of which class,
+    and to provide definitions of the
+    overloaded operations associated with a
+    class. For example, let's define a type
+    class containing an equality operator:
+
+        class Eq a where
+        (==) :: a -> a -> Bool
+
+    Here Eq is the name of the class being
+    defined, and == is the single operation in
+    the class.
+
+    This declaration may be read "a type a is
+    an instance of the class Eq if there is an
+    (overloaded) operation ==, of the
+    appropriate type, defined on it." (Note
+    that == is only defined on pairs of
+    objects of the same type.)
+
+    Eq is a context.
+
+    See:
+    - "context"
+    - "operation"
+
+class declaration
+    [declaration]
+
+    Example:
+
+        class (Eq a) => Ord a where
+        (<), (<=), (>=), (>) :: a -> a -> Bool
+        max, min :: a -> a -> a
+
+superclass
+subclass
+class inclusion
+    Example:
+
+        class (Eq a) => Ord a where
+        (<), (<=), (>=), (>) :: a -> a -> Bool
+        max, min :: a -> a -> a
+
+    We say that Eq is a superclass of Ord
+    (conversely, Ord is a subclass of Eq), and
+    any type which is an instance of Ord must
+    also be an instance of Eq.
+
+    One benefit of such class inclusions is
+    shorter contexts: a type expression for a
+    function that uses operations from both
+    the Eq and Ord classes can use the context
+    (Ord a), rather than (Eq a, Ord a), since
+    Ord "implies" Eq.
+
+    More importantly, methods for subclass
+    operations can assume the existence of
+    methods for superclass operations.
+
+    For example, the Ord declaration in the
+    Standard Prelude contains this default
+    method for (<):
+
+class extension
+    We may wish to define a class Ord which
+    inherits all of the operations in Eq, but
+    in addition has a set of comparison
+    operations and minimum and maximum
+    functions:
+
+        class (Eq a) => Ord a where
+        (<), (<=), (>=), (>) :: a -> a -> Bool
+        max, min :: a -> a -> a
+
+    Note the context in the class declaration.
+
+    We say that Eq is a superclass of Ord
+    (conversely, Ord is a subclass of Eq), and
+    any type which is an instance of Ord must
+    also be an instance of Eq.
+
+    (In the next Section we give a fuller
+    definition of Ord taken from the Prelude.)
+    One benefit of such class inclusions is
+    shorter contexts: a type expression for a
+    function that uses operations from both
+    the Eq and Ord classes can use the context
+    (Ord a), rather than (Eq a, Ord a), since
+    Ord "implies" Eq.
+
+    More importantly, methods for subclass
+    operations can assume the existence of
+    methods for superclass operations.
+
+    For example, the Ord declaration in the
+    Standard Prelude contains this default
+    method for (<):
+
+        x < y = x <= y && x /= y
+
+    As an example of the use of Ord, the
+    principal typing of quicksort defined in
+    Section 2.4.1 is:
+
+        quicksort :: (Ord a) => [a] -> [a]
+
+    In other words, quicksort only operates on
+    lists of values of ordered types.
+
+multiple inheritance
+    Classes may have more than one superclass.
+
+    Example:
+
+        class (Eq a, Show a) => C a where ...
+
+    This creates a class C which inherits
+    operations from both Eq and Show.
+
+first-order
+    See:
+    - "first-order function"
+    - "first-order type"
+
+higher-order
+    See:
+    - "higher-order function"
+    - "higher-order type"
+
+first-order function
+    A function that takes no other
+    functions as arguments.
+
+higher-order function
+    A function that takes at least one
+    function as an argument.
+
+first-order type
+    Integer is a first-order type.
+    Even `Tree Integer`, or even `Tree a`
+    are first-order, because they are FQ
+    types.
+
+    Example:
+        Integer
+
+    Example:
+        -- a tree containing Integer values
+        Tree Integer
+
+    Example:
+        -- representing the family of trees
+        -- containing a values
+        Tree a
+
+higher-order type
+type constructor
+    Takes a type as an argument and returns a
+    type as a result.
+
+    Tree by itself is a higher-order type.
+
+    Examples:
+        [] is also a type constructor. Given
+        any type t we can "apply" [] to yield
+        a new type [t].
+
+        The Haskell syntax allows [] t to be
+        written as [t].
+
+        Similarly, -> is a type constructor:
+        given two types t and u, t->u is the
+        type of functions mapping elements of
+        type t to elements of type u.
+
+    There are no values in Haskell that have a
+    higher order type, but such types can be
+    used in class declarations.
+
+    The exception to the rule due to syntax
+    sugar:
+    - The types [a] and [] a are the same.
+
+    See:
+    - "type constructor vs data constructor"
+
+field
+field label
+field name
+    The fields within a Haskell data type can
+    be accessed either positionally or by name
+    using field labels. Consider a data type
+    for a two-dimensional point:
+
+        data Point = Pt Float Float
+
+    The two components of a Point are the
+    first and second arguments to the
+    constructor Pt. A function such as
+
+        pointx                  :: Point -> Float
+        pointx (Pt x _)         =  x
+
+    may be used to refer to the first
+    component of a point in a more descriptive
+    way, but, for large structures, it becomes
+    tedious to create such functions by hand.
+
+    Constructors in a data declaration may be
+    declared with associated field names,
+    enclosed in braces. These field names
+    identify the components of constructor by
+    name rather than by position. This is an
+    alternative way to define Point:
+
+        data Point = Pt {pointx, pointy :: Float}
+
+    This data type is identical to the earlier
+    definition of Point. The constructor Pt is
+    the same in both cases. However, this
+    declaration also defines two field names,
+    pointx and pointy. These field names can
+    be used as selector functions to extract a
+    component from a structure. In this
+    example, the selectors are:
+
+        pointx                  ::   Point -> Float
+        pointy                  ::   Point -> Float
+
+    This is a function using these selectors:
+
+        absPoint                :: Point -> Float
+        absPoint p              =  sqrt (pointx p * pointx p +
+                                         pointy p * pointy p)
+
+    Field labels can also be used to construct
+    new values. The expression Pt {pointx=1,
+    pointy=2} is identical to Pt 1 2. The use
+    of field names in the declaration of a
+    data constructor does not preclude the
+    positional style of field access; both Pt
+    {pointx=1, pointy=2} and Pt 1 2 are
+    allowed. When constructing a value using
+    field names, some fields may be omitted;
+    these absent fields are undefined.
+
+    Pattern matching using field names uses a
+    similar syntax for the constructor Pt:
+
+        absPoint (Pt {pointx = x, pointy = y}) = sqrt (x*x + y*y)
+
+    An update function uses field values in an
+    existing structure to fill in components
+    of a new structure. If p is a Point, then
+    p {pointx=2} is a point with the same
+    pointy as p but with pointx replaced by 2.
+    This is not a destructive update: the
+    update function merely creates a new copy
+    of the object, filling in the specified
+    fields with new values.
+
+    [The braces used in conjunction with field
+    labels are somewhat special: Haskell
+    syntax usually allows braces to be omitted
+    using the layout rule (described in
+    Section 4.6). However, the braces
+    associated with field names must be
+    explicit.]
+
+    Field names are not restricted to types
+    with a single constructor (commonly called
+    `record' types). In a type with multiple
+    constructors, selection or update
+    operations using field names may fail at
+    runtime. This is similar to the behavior
+    of the head function when applied to an
+    empty list.
+
+    Field labels share the top level namespace
+    with ordinary variables and class methods.
+    A field name cannot be used in more than
+    one data type in scope. However, within a
+    data type, the same field name can be used
+    in more than one of the constructors so
+    long as it has the same typing in all
+    cases. For example, in this data type
+
+        data T = C1 {f :: Int, g :: Float}
+               | C2 {f :: Int, h :: Bool}
+
+    the field name f applies to both
+    constructors in T. Thus if x is of type T,
+    then x {f=5} will work for values created
+    by either of the constructors in T.
+
+    Field names does not change the basic
+    nature of an algebraic data type; they are
+    simply a convenient syntax for accessing
+    the components of a data structure by name
+    rather than by position. They make
+    constructors with many components more
+    manageable since fields can be added or
+    removed without changing every reference
+    to the constructor.
+
+strict data
+strict data constructor
+    Data structures in Haskell are generally
+    lazy: the components are not evaluated
+    until needed.
+
+    This permits structures that contain
+    elements which, if evaluated, would lead
+    to an error or fail to terminate.
+
+    Lazy data structures enhance the
+    expressiveness of Haskell and are an
+    essential aspect of the Haskell
+    programming style.
+
+    Internally, each field of a lazy data
+    object is wrapped up in a structure
+    commonly referred to as a thunk that
+    encapsulates the computation defining the
+    field value.
+
+    This thunk is not entered until the value
+    is needed; thunks which contain errors
+    (_|_) do not affect other elements of a
+    data structure.
+
+    For example, the tuple ('a',_|_) is a
+    perfectly legal Haskell value.
+
+    The 'a' may be used without disturbing the
+    other component of the tuple.
+
+    Most programming languages are strict
+    instead of lazy: that is, all components
+    of a data structure are reduced to values
+    before being placed in the structure.
+
+    See "strictness flag".
+
+strictness flag
+!
+    There are a number of overheads associated
+    with thunks: they take time to construct
+    and evaluate, they occupy space in the
+    heap, and they cause the garbage collector
+    to retain other structures needed for the
+    evaluation of the thunk. To avoid these
+    overheads, strictness flags in data
+    declarations allow specific fields of a
+    constructor to be evaluated immediately,
+    selectively suppressing laziness.
+
+    A field marked by ! in a data declaration
+    is evaluated when the structure is created
+    instead of delayed in a thunk. There are a
+    number of situations where it may be
+    appropriate to use strictness flags:
+
+    - Structure components that are sure to be
+      evaluated at some point during program
+      execution.
+    - Structure components that are simple to
+      evaluate and never cause errors.
+    - Types in which partially undefined
+      values are not meaningful.
+
+    For example, the complex number library
+    defines the Complex type as:
+
+        data RealFloat a => Complex a = !a :+ !a
+
+    [note the infix definition of the
+    constructor :+.] This definition marks the
+    two components, the real and imaginary
+    parts, of the complex number as being
+    strict. This is a more compact
+    representation of complex numbers but this
+    comes at the expense of making a complex
+    number with an undefined component, 1 :+
+    _|_ for example, totally undefined (_|_).
+    As there is no real need for partially
+    defined complex numbers, it makes sense to
+    use strictness flags to achieve a more
+    efficient representation.
+
+    Strictness flags may be used to address
+    memory leaks: structures retained by the
+    garbage collector but no longer necessary
+    for computation.
+
+    The strictness flag, !, can only appear in
+    data declarations. It cannot be used in
+    other type signatures or in any other type
+    definitions. There is no corresponding way
+    to mark function arguments as being
+    strict, although the same effect can be
+    obtained using the seq or !$ functions.
+
+    It is difficult to present exact
+    guidelines for the use of strictness
+    flags. They should be used with caution:
+    laziness is one of the fundamental
+    properties of Haskell and adding
+    strictness flags may lead to hard to find
+    infinite loops or have other unexpected
+    consequences.
+
+thunk
+    A value that is yet to be evaluated.
+
+    https://wiki.haskell.org/Thunk
+
+    Internally, each field of a lazy data
+    object is wrapped up in a structure
+    commonly referred to as a thunk that
+    encapsulates the computation defining the
+    field value.
+
+    This thunk is not entered until the value
+    is needed; thunks which contain errors
+    (_|_) do not affect other elements of a
+    data structure.
+
+    For example, the tuple ('a',_|_) is a
+    perfectly legal Haskell value.
+
+    The 'a' may be used without disturbing the
+    other component of the tuple.
+
+    Most programming languages are strict
+    instead of lazy: that is, all components
+    of a data structure are reduced to values
+    before being placed in the structure.
+
+    There are a number of overheads associated
+    with thunks: they take time to construct
+    and evaluate, they occupy space in the
+    heap, and they cause the garbage collector
+    to retain other structures needed for the
+    evaluation of the thunk. To avoid these
+    overheads, strictness flags in data
+    declarations allow specific fields of a
+    constructor to be evaluated immediately,
+    selectively suppressing laziness.
+
+thunk build-up
+    ewwlinks +/"Note that iterate is lazy, potentially leading to thunk build-up if the consumer doesn't force each iterate." "http://hackage.haskell.org/package/base-4.12.0.0/docs/GHC-OldList.html#v:iterate"
+
+IO
+    [Monad]
+    [type]
+
+    [[psp:hdc IO]]
+
+    A value of type IO a is a computation
+    which, when performed, does some I/O
+    before returning a value of type a.
+
+    There is really only one way to "perform"
+    an I/O action: bind it to Main.main in
+    your program. When your program is run,
+    the I/O will be performed. It isn't
+    possible to perform I/O from an arbitrary
+    function, unless that function is itself
+    in the IO monad and called at some point,
+    directly or indirectly, from Main.main.
+
+    IO is a monad, so IO actions can be
+    combined using either the do-notation or
+    the >> and >>= operations from the Monad
+    class.
+
+instantiated
+    "instantiated to IO a"
+
+Alternative
+instance Alternative
+    [typeclass]]
+
+    https://stackoverflow.com/questions/13080606/confused-by-the-meaning-of-the-alternative-type-class-and-its-relationship-to
+
+closure
+    Example:
+
+        -- The host argument is captured in
+        -- the lambda function:
+
+        genHostRequestBuilder host = (\apiKey resource id -> getRequestUrl host apikey resource id)
+
+fromMaybe
+    -- Read an integer from a string using 'Text.Read.readMaybe'. If we fail to
+    -- parse an integer, we want to return @0@ by default:
+    --
+    -- >>> import Text.Read ( readMaybe )
+    -- >>> fromMaybe 0 (readMaybe "5")
+    -- 5
+    -- >>> fromMaybe 0 (readMaybe "")
+
+singleton list
+    A list with only one element.
+
+    Example:
+      [(v,inp)]
+
+intercalate
+    [#haskell]
+
+    v +/"intercalate" "$HOME/blog/posts/haskell-functions.org"
+
+    The words ‘intersperse’ and ‘intercalate’
+    are near synonyms in English, although
+    ‘intercalate’ has a few specialized uses.
+
+    ‘Intercalate’ is pronounced “in-ter’-kuh-
+    late” with the main stress on the ter.
+
+    Cognate words such as intercalar in
+    Spanish may be more commonly used than
+    ‘intercalate’ is in English; we’ve been
+    told the Italian version sometimes has the
+    specialized meaning of inserting
+    meaningless words and phrases such as “I
+    mean” or “like” between sentences.
+
+    We point this out here because for us it
+    was a helpful mnemonic – inserting strings
+    such as “like” into lists of strings.
+
+Kleisli composition operator
+(>=>)
+>=>
+    https://typeclasses.com/beginner-crash-course/monad
+
+corecursion
+    In CS, corecursion is a type of operation
+    that is dual to recursion.
+
+    Whereas recursion works analytically,
+    starting on data further from a base case
+    and breaking it down into smaller data and
+    repeating until one reaches a base case,
+    corecursion works synthetically, starting
+    from a base case and building it up,
+    iteratively producing data further removed
+    from a base case.
+
+    Put simply, corecursive algorithms use the
+    data that they themselves produce, bit by
+    bit, as they become available, and needed,
+    to produce further bits of data.
+
+    A similar but distinct concept is
+    generative recursion which may lack a
+    definite "direction" inherent in
+    corecursion and recursion.
+
+    Where recursion allows programs to operate
+    on arbitrarily complex data, so long as
+    they can be reduced to simple data (base
+    cases), corecursion allows programs to
+    produce arbitrarily complex and
+    potentially infinite data structures, such
+    as streams, so long as it can be produced
+    from simple data (base cases) in a
+    sequence of finite steps.
+
+    Where recursion may not terminate, never
+    reaching a base state, corecursion starts
+    from a base state, and thus produces
+    subsequent steps deterministically, though
+    it may proceed indefinitely (and thus not
+    terminate under strict evaluation), or it
+    may consume more than it produces and thus
+    become non-productive.
+
+    Many functions that are traditionally
+    analyzed as recursive can alternatively,
+    and arguably more naturally, be
+    interpreted as corecursive functions that
+    are terminated at a given stage, for
+    example recurrence relations such as the
+    factorial.
+
+    Corecursion can produce both finite and
+    infinite data structures as results, and
+    may employ self-referential data
+    structures.
+
+    Corecursion is often used in conjunction
+    with lazy evaluation, to produce only a
+    finite subset of a potentially infinite
+    structure (rather than trying to produce
+    an entire infinite structure at once).
+
+    Corecursion is a particularly important
+    concept in functional programming, where
+    corecursion and codata allow total
+    languages to work with infinite data
+    structures.
+
+    https://youtu.be/7fylNa2wZaU?t=650
+
+itraverse
+itraversed
+TraversableWithIndex
+    The Haskell library lens contains a type
+    class TraversableWithIndex that defines
+    both the functions itraverse and
+    itraversed:
+
+Abbreviations
+
+Abstract data type
+
+Algebraic data type
+
+Alpha conversion
+
+Anonymous function
+
+Applicative functor
+
+Beta reduction
+
+Bottom
+
+Camel case
+
+Closure
+
+Combinator
+
+Comparison of functional programming languages
+
+Concrete data type
+
+Confluent term rewriting system
+
+Constant applicative form
+
+Continuation
+
+Currying
+
+Deforestation
+
+Denotative
+
+DSL
+
+Dynamic
+
+Eager evaluation
+
+EDSL
+
+Embedded domain specific language
+
+Error
+
+Eta conversion
+
+Exception
+
+Existential type
+
+Fold
+
+Free expression
+
+Free monad
+
+Free structure
+
+Free variable
+
+Function
+
+Function composition
+
+Function inlining
+
+Function unfolding
+
+Functional dependencies
+
+Functional programming/Old version
+
+Garbage collector
+
+Generalised algebraic datatype
+
+Heterogenous collections
+
+Higher order function
+
+Hoare Property
+
+Import
+
+Impredicative types
+
+Infix operator
+
+Iterate
+
+Lambda abstraction
+
+Lambda calculus
+
+Lazy evaluation
+
+Lazy pattern match
+
+List comprehension
+
+Literate programming
+
+Maximal free expression
+
+Memory leak
+
+Monad (sans metaphors)
+
+Monomorphism
+
+Monomorphism restriction
+
+Multi-parameter type class
+
+Mutually recursive modules
+
+Non-strict semantics
+
+Parallel/Glossary
+
+Partial application
+
+Partial functions
+
+Pattern guard
+
+Peano numbers
+
+Phantom type
+
+Polymorphism
+
+Prelude
+
+Pure
+
+Recursion in a monad
+
+Reducible expression
+
+Refactoring
+
+Referential transparency
+
+Reified type
+
+Scoped type variables
+
+Section of an infix operator
+
+Seq
+
+Sharing
+
+Short cut fusion
+
+Short-circuiting
+
+Smart constructors
+
+Strict semantics
+
+Studly capitals
+
+Super combinator
+
+Tail recursion
+
+Terms
+
+Thunk
+
+Type class
+
+Type inference
+
+Type signature
+
+Type synonym
+
+Typing
+
+Variable
+
+Vogonism
+
+
+print
+    [function]
+
+    https://stackoverflow.com/questions/5952167/how-do-i-print-a-list-in-haskell
+
+    main :: IO ()
+    main = print (inc [1,2,3,4])
+
+    -- Equivalent to:
+
+    main :: IO ()
+    main = putStrLn $ show (inc [1,2,3,4])

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: math gives upright letters from the typewriter type font
+# group: math
+# key: mtt
+# --
+\mathtt{`yas-selected-text`$0}

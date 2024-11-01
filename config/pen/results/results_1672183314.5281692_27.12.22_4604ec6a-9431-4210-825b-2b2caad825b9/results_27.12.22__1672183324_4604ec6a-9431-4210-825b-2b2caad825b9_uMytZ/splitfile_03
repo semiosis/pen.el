@@ -1,0 +1,5 @@
+The above code is a function that will spawn a thread that will listen for SIGWINCH signals.
+The SIGWINCH signal is sent to a process when its controlling terminal is resized.
+The function will listen for this signal and resize the terminal accordingly.
+The function will return Ok(()) if it succeeds in spawning the thread.
+The function will return Err(Errno::EINVAL) if the master is not a valid file descriptor.

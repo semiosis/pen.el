@@ -1,0 +1,40 @@
+task: "Given a function name, show the import"
+doc: "Given a function name, show the import"
+tags: code help documentation
+prompt-version: 1
+prompt: |+
+    Functions and imports.
+
+    <delim>
+    language: Haskell
+    function: fromJust
+    import: "import Data.Maybe"
+    <delim>
+    language: Haskell
+    function: forM_
+    import: "import Control.Monad"
+    <delim>
+    language: Python
+    function: randint
+    import: "from random import randint"
+    <delim>
+    language: <language>
+    function: <function>
+    import: "    
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "\""
+cache: on
+vars:
+- "function": ~
+- "language": "(pen-detect-language-ask)"
+examples:
+- "Python"
+- "yaml.load"
+filter: off
+info: on
+completion: off
+insertion: off

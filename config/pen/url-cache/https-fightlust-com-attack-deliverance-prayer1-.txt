@@ -1,0 +1,730 @@
+HTTP/1.1 200 OK
+Server: openresty/1.25.3.1
+Date: Fri, 14 Jun 2024 05:31:18 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Last-Modified: Tue, 13 Feb 2024 17:35:08 GMT
+ETag: W/"11ff0-61146d0c72540"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: "1; mode=block"
+Referrer-Policy: no-referrer-when-downgrade
+X-Webcom-Cache-Status: BYPASS
+
+<!-- page-render Tue Feb 13 2024 17:34:55 GMT+0000 (Coordinated Universal Time)-->
+<!DOCTYPE html>
+<html lang="en" itemType="https://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:site_name" content="fightlust">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fightlust.com/attack/deliverance-prayer1">
+  <meta name="twitter:url" content="https://fightlust.com/attack/deliverance-prayer1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="google-site-verification" content="IpscW3tCS9zB4my1NJvbK91Ekg2Yqp8vsESofr6rRHc" />
+  <link href="/favicons/dc554181-1560-4a2b-a61b-2ffa5e4389b0/favicon-16x16.png" type="image/png" rel="shortcut icon" sizes="16x16">
+  <link href="/favicons/dc554181-1560-4a2b-a61b-2ffa5e4389b0/favicon-32x32.png" type="image/png" rel="icon" sizes="32x32">
+  <link href="/favicons/dc554181-1560-4a2b-a61b-2ffa5e4389b0/favicon-180x180.png" type="image/png" rel="icon" sizes="180x180">
+  <link rel="stylesheet" href="/bundle/publish/0.40.0/publish.css">
+  <link rel="stylesheet" type="text/css" href="/styles/dc554181-1560-4a2b-a61b-2ffa5e4389b0.css?v=1707842035000" id="global_styles">
+  <style type="text/css">
+  /* latin */
+  @font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/__fonts/oxygen-normal-300.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+  /* latin-ext */
+  @font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/__fonts/oxygen-normal-300.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  } 
+  /* latin */
+  @font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/__fonts/oxygen-normal-400.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+  /* latin-ext */
+  @font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/__fonts/oxygen-normal-400.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  } 
+  /* latin */
+  @font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/__fonts/oxygen-normal-700.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+  /* latin-ext */
+  @font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/__fonts/oxygen-normal-700.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  </style>
+  <style>#mobile_table{display:none}@media screen and (max-width:1040px){#desktop_table{display:none}#mobile_table{display:block}}.section-f5e53a24-8c3f-4730-b911-15ab32e56756{padding-top:0;padding-bottom:0}@media screen and (max-width:2560px){.section-f5e53a24-8c3f-4730-b911-15ab32e56756{padding-top:0;padding-bottom:0}}@media screen and (max-width:1920px){.section-f5e53a24-8c3f-4730-b911-15ab32e56756{padding-top:0;padding-bottom:0}}@media screen and (max-width:1366px){.section-f5e53a24-8c3f-4730-b911-15ab32e56756{padding-top:0;padding-bottom:0}}@media screen and (max-width:1024px){.section-f5e53a24-8c3f-4730-b911-15ab32e56756{padding-top:0;padding-bottom:0}}@media screen and (max-width:767px){.section-f5e53a24-8c3f-4730-b911-15ab32e56756{padding-top:0;padding-bottom:0}}.section-82b963a3-134c-4b93-ae3c-205b40e08734{padding-top:8px;padding-bottom:8px}@media screen and (max-width:2560px){.section-82b963a3-134c-4b93-ae3c-205b40e08734{padding-top:10px;padding-bottom:10px}}@media screen and (max-width:1920px){.section-82b963a3-134c-4b93-ae3c-205b40e08734{padding-top:8px;padding-bottom:8px}}@media screen and (max-width:1366px){.section-82b963a3-134c-4b93-ae3c-205b40e08734{padding-top:6px;padding-bottom:6px}}@media screen and (max-width:1024px){.section-82b963a3-134c-4b93-ae3c-205b40e08734{padding-top:5px;padding-bottom:5px}}@media screen and (max-width:767px){.section-82b963a3-134c-4b93-ae3c-205b40e08734{padding-top:4px;padding-bottom:4px}}.section-f8da62de-cbe3-495d-a778-c8f45a8be58e{padding-top:0;padding-bottom:0}@media screen and (max-width:2560px){.section-f8da62de-cbe3-495d-a778-c8f45a8be58e{padding-top:0;padding-bottom:0}}@media screen and (max-width:1920px){.section-f8da62de-cbe3-495d-a778-c8f45a8be58e{padding-top:0;padding-bottom:0}}@media screen and (max-width:1366px){.section-f8da62de-cbe3-495d-a778-c8f45a8be58e{padding-top:0;padding-bottom:0}}@media screen and (max-width:1024px){.section-f8da62de-cbe3-495d-a778-c8f45a8be58e{padding-top:0;padding-bottom:0}}@media screen and (max-width:767px){.section-f8da62de-cbe3-495d-a778-c8f45a8be58e{padding-top:0;padding-bottom:0}}.section-5e62dd50-5005-465c-9124-601f3a420b7d{padding-top:9px;padding-bottom:9px}@media screen and (max-width:2560px){.section-5e62dd50-5005-465c-9124-601f3a420b7d{padding-top:12px;padding-bottom:12px}}@media screen and (max-width:1920px){.section-5e62dd50-5005-465c-9124-601f3a420b7d{padding-top:9px;padding-bottom:9px}}@media screen and (max-width:1366px){.section-5e62dd50-5005-465c-9124-601f3a420b7d{padding-top:7px;padding-bottom:7px}}@media screen and (max-width:1024px){.section-5e62dd50-5005-465c-9124-601f3a420b7d{padding-top:6px;padding-bottom:6px}}@media screen and (max-width:767px){.section-5e62dd50-5005-465c-9124-601f3a420b7d{padding-top:4px;padding-bottom:4px}}</style>
+  <!-- head html inject: start -->
+  <meta name="keywords" content="lust, porn, fight lust*, deliverance, jesus, christian, spiritual warfare, god, lord, sex, addiciton, sin, fight porn, compulsive sex, cybersex, hypersexual, hypersexual disorder, imaging, impulsive sex, neurobiolog*, out of control sex, problem* sex*, sex, sex addict*, sexually explicit material, visual sexual stimuli" />
+  <!-- head html inject: end -->
+</head>
+<body itemProp="mainContentOfPage">
+<div class="js-widget" data-widget="svgLoader" data-icons='["global/check","sp-cross_20","sp-arrow-next","templates/_global/defaultList/1","sp-divider-solid","sp-play","global/error-video","global/arrow-up","global/close_18"]'></div>
+<div id="app"><div class="template link_06 blockquote1_style-07 blockquote2_style-02"><header class="header_wrapper js-widget" data-widget="header" data-settings="{&quot;burger&quot;:false,&quot;orientation&quot;:&quot;left&quot;,&quot;float&quot;:&quot;center&quot;,&quot;sloganCollapseSetup&quot;:{}}" data-offset="{&quot;header&quot;:{&quot;desktop&quot;:85,&quot;mobile&quot;:60,&quot;topOffset&quot;:2,&quot;bottomOffset&quot;:2},&quot;total&quot;:{&quot;desktop&quot;:89,&quot;mobile&quot;:64}}" itemType="https://schema.org/WPHeader" itemscope="" style="opacity:0"><div class="header"><div class="header__item main__header" style="background-color:rgb(36, 32, 32);border-top-color:rgb(185, 101, 61);border-bottom-color:rgb(185, 101, 61);border-top-width:2px;border-bottom-width:2px;position:relative;height:85px" data-style="{&quot;backgroundColor&quot;:&quot;rgb(36, 32, 32)&quot;,&quot;borderTopColor&quot;:&quot;rgb(185, 101, 61)&quot;,&quot;borderBottomColor&quot;:&quot;rgb(185, 101, 61)&quot;,&quot;borderTopWidth&quot;:&quot;2px&quot;,&quot;borderBottomWidth&quot;:&quot;2px&quot;,&quot;position&quot;:&quot;relative&quot;,&quot;height&quot;:85}"><div class="s-wrapper s-wrapper_original"><div class="header__wrap"><div class="header-layout-wrapper header-logo crop-mode__contain"><div class="resizable"><div class="logo__box logo_can-pressed" itemscope="" itemType="https://schema.org/Organization"><div class="logo__wrap"><a href="/" class="logo__link" target="_self" itemProp="url"><div class="crop cropped-image image-loaded mode_contain"><div class="crop__content" data-zoom="1"><img class="crop-image lazy" style="left:50%;top:50%;transform:translate(-50%, -50%);transform-origin:50% 50%;zoom:1" alt="" data-src="/__static/0fa263e6d15ef44a9c5d109f03bea6f4/fight-lust-logo-copy.png" itemProp="logo"/></div></div></a></div></div></div></div><div class="header-layout-wrapper _center header-nav"><nav class="nav__box nav__box_6"><div class="s-wrapper s-wrapper_nav"><div id="navigation__box" class="navigation__box" style="order:0"><ul class="nav" itemProp="mainEntity" itemType="https://schema.org/SiteNavigationElement"><li class="nav__item"><div class="nav__item-inner"><a class="nav__link" style="padding:0 15px" href="/" target="_self" itemProp="url"><span class="nav__title">Home</span></a></div></li><li class="nav__item nav__item_has-child"><div class="nav__item-inner"><a data-type="folder" class="nav__link" style="padding:0 15px" href="/prayer/acts/" target="_self" itemProp="url"><span class="nav__title">Prayer</span></a></div><div class="sub-menu__nav" style="right:initial;left:0"><div class="sub-menu__nav-background" style="pointer-events:none;background-color:rgb(36, 32, 32)"></div><div class="nav-item__native-scroll"><ul><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/prayer/acts/" target="_self" itemProp="url"><span class="nav__title">A.C.T.S. Prayer</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/prayer/pr/" target="_self" itemProp="url"><span class="nav__title">Prayer Request</span></a></li></ul></div></div></li><li class="nav__item nav__item_has-child"><div class="nav__item-inner"><a data-type="folder" class="nav__link" style="padding:0 15px" href="/resources/war/" target="_self" itemProp="url"><span class="nav__title">Resources</span></a></div><div class="sub-menu__nav" style="right:initial;left:0"><div class="sub-menu__nav-background" style="pointer-events:none;background-color:rgb(36, 32, 32)"></div><div class="nav-item__native-scroll"><ul><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/resources/war/" target="_self" itemProp="url"><span class="nav__title">War on Lust</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/resources/wallpapers/" target="_self" itemProp="url"><span class="nav__title">Wallpapers</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/resources/bookmarks/" target="_self" itemProp="url"><span class="nav__title">Bookmarks</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/resources/books/" target="_self" itemProp="url"><span class="nav__title">Books and Courses</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/resources/media/" target="_self" itemProp="url"><span class="nav__title">Media</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/resources/accountability/" target="_self" itemProp="url"><span class="nav__title">Accountability</span></a></li></ul></div></div></li><li class="nav__item"><div class="nav__item-inner"><a class="nav__link" style="padding:0 15px" href="/salvation/" target="_self" itemProp="url"><span class="nav__title">Salvation</span></a></div></li><li class="nav__item nav__item_has-child"><div class="nav__item-inner"><a data-type="folder" class="nav__link" style="padding:0 15px" href="/spiritual-warfare/intro/" target="_self" itemProp="url"><span class="nav__title">Spiritual Warfare</span></a></div><div class="sub-menu__nav" style="right:initial;left:0"><div class="sub-menu__nav-background" style="pointer-events:none;background-color:rgb(36, 32, 32)"></div><div class="nav-item__native-scroll"><ul><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/intro/" target="_self" itemProp="url"><span class="nav__title">01 Introduction</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/belt/" target="_self" itemProp="url"><span class="nav__title">02 Belt of Truth</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/breastplate/" target="_self" itemProp="url"><span class="nav__title">03 Breastplate of Righteousness</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/shoes/" target="_self" itemProp="url"><span class="nav__title">04 Shoes of Peace</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/shield/" target="_self" itemProp="url"><span class="nav__title">05 Shield of Faith</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/helmet/" target="_self" itemProp="url"><span class="nav__title">06 Helmet of Salvation</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/sword/" target="_self" itemProp="url"><span class="nav__title">07 Sword of the Spirit</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/worshipwarfare/" target="_self" itemProp="url"><span class="nav__title">08 Worship Warfare</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/cloak/" target="_self" itemProp="url"><span class="nav__title">09 Cloak of Zeal</span></a></li><li class="sub-menu__item"><a data-type="page" class="sub-menu__link" href="/spiritual-warfare/prayerandsus/" target="_self" itemProp="url"><span class="nav__title">10 Prayer and Supplication</span></a></li></ul></div></div></li><li class="nav__item"><div class="nav__item-inner"><a class="nav__link" style="padding:0 15px" href="/quotes/" target="_self" itemProp="url"><span class="nav__title">Quotes</span></a></div></li></ul></div></div></nav></div><div class="header-layout-wrapper"><div class="buttons__box"><div class="btn__wrap"><a class="btn btn_border-secondary effect-uplift" style="text-transform:none;font-variant:normal;font-size:16em" spellcheck="false" target="" href="/prayer/pr/"><i class="icon" data-style="{}"><svg style="fill:rgb(255, 255, 255)" data-style="{&quot;fill&quot;:&quot;rgb(255, 255, 255)&quot;}"><use xlink:href="#templates/_global/defaultList/1"></use></svg></i><span>Need to talk?</span></a></div></div></div><div id="burger__box" class="burger__box nav__effect_1 nav_theme-6" style="display:none"><div class="btn__burger-wrap"><div id="btn__burger" class="btn__burger btn__burger_4"><div class="burger__icon"><div class="burger__icon-line"></div><div class="burger__icon-line"></div><div class="burger__icon-line"></div><div class="burger__icon-line"></div><div class="burger__icon-line"></div><div class="burger__icon-line"></div></div></div></div><div class="nav__box-wrap"><div class="nav__box-wrap--sticky"><div class="s-wrapper"><div></div> </div></div></div></div></div></div></div></div></header><main class="layout main"><section data-widget="section" class="s-section js-widget empty-block section-f5e53a24-8c3f-4730-b911-15ab32e56756" id="s-f5e53a24-8c3f-4730-b911-15ab32e56756" style="background:rgb(36, 32, 32)" data-style="{&quot;background&quot;:&quot;rgb(36, 32, 32)&quot;}"><div><div class="s-wrapper"><div class="layout"><div class="row"><div class="layout"><div class="row__item row__item_desktop-12"><div class="layout"><div class="row"><div class="layout"><div class="row__item row__item_desktop-12"><div class="layout"><div class="divider__node divider__size-100 divider__theme-solid divider__align-left" style="padding:0px 0"><i class="icon divider__icon" data-style="{}"><svg style="color:var(--color_text)" data-style="{&quot;color&quot;:&quot;var(--color_text)&quot;}"><use xlink:href="#sp-divider-solid"></use></svg></i></div></div></div></div></div></div></div></div></div></div></div></div></section><section data-widget="section" class="s-section js-widget section-82b963a3-134c-4b93-ae3c-205b40e08734" id="s-82b963a3-134c-4b93-ae3c-205b40e08734" style="background:rgb(36, 32, 32)" data-style="{&quot;background&quot;:&quot;rgb(36, 32, 32)&quot;}"><div><div class="s-wrapper"><div class="layout"><div class="row"><div class="layout"><div class="row__item row__item_desktop-12"><div class="layout"><div class="row"><div class="layout"><div class="row__item row__item_desktop-12"><div class="layout"><div class="section__title header-two"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><h2 class="textAlign-center" data-block="true" data-editor="e9nno" data-offset-key="faljr-0-0" contenteditable="false"><span data-offset-key="faljr-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="text-align:center"><span><span style="color:rgb(255, 235, 59)" data-style="{&quot;color&quot;:&quot;rgb(255, 235, 59)&quot;}"><span data-offset-key="faljr-0-0"><span data-text="true">DELIVERANCE PRAYER FROM SPIRIT OF LUST</span></span></span></span></span></h2></div></div></div></div></div><div class="divider__node divider__size-100 divider__theme-solid divider__align-left" style="padding:0px 0"><i class="icon divider__icon" data-style="{}"><svg style="color:var(--color_text)" data-style="{&quot;color&quot;:&quot;var(--color_text)&quot;}"><use xlink:href="#sp-divider-solid"></use></svg></i></div></div></div></div></div></div></div></div></div></div></div></div></section><section data-widget="section" class="s-section js-widget section-f8da62de-cbe3-495d-a778-c8f45a8be58e" id="s-f8da62de-cbe3-495d-a778-c8f45a8be58e" style="background:rgb(36, 32, 32)" data-style="{&quot;background&quot;:&quot;rgb(36, 32, 32)&quot;}"><div><div class="section_bg"><div class="_error-wrap"><picture class="js-img-bg-picture section_bg-img lazy" data-sizes="{&quot;laptop&quot;:[0,500],&quot;desktop&quot;:[501,1500],&quot;quad&quot;:[1501,null]}" data-src="/__static/fea64bf363c5ea52c0a5aff70e27f78d/notmywillbutyoursbedone.jpeg" data-iesrc="/__static/fea64bf363c5ea52c0a5aff70e27f78d/notmywillbutyoursbedone.jpeg" style="opacity:0.42" data-object-fit="cover"><source data-device="laptop" media="(max-width:500px)" srcSet="/__static/f8da62de-cbe3-495d-a778-c8f45a8be58e/image_laptop"/><source data-device="desktop" media="(min-width:501px) and (max-width:1500px)" srcSet="/__static/f8da62de-cbe3-495d-a778-c8f45a8be58e/image_desktop"/><source data-device="quad" media="(min-width:1501px)" srcSet="/__static/fea64bf363c5ea52c0a5aff70e27f78d/notmywillbutyoursbedone.jpeg"/><noscript><img class="" alt="" data-object-fit="cover" src="/__static/fea64bf363c5ea52c0a5aff70e27f78d/notmywillbutyoursbedone.jpeg" itemProp="image"/></noscript></picture></div></div><div class="s-wrapper"><div class="layout"><div class="row"><div class="layout"><div class="row__item row__item_desktop-12"><div class="layout"><div class="section__text"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><span data-block="true" data-editor="7vjvs" data-offset-key="7sns5-0-0" contenteditable="false"><span data-offset-key="7sns5-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="7sns5-0-0"><span data-text="true">
+</span></span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="7sns5-1-0"><span data-text="true">Heavenly Father,
+
+We come before your throne room today through the blood of Jesus Christ. We come boldly and with confidence. (Ephesians 3:12)</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="2ll00-0-0" contenteditable="false"><span data-offset-key="2ll00-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="2ll00-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="c0gr6-0-0" contenteditable="false"><span data-offset-key="c0gr6-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="c0gr6-0-0"><span data-text="true">For your Word says that when we confess our sins, you are faithful and forgive our sins and cleanse us from all unrighteousness. (1 John 1:9)</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="1ncnv-0-0" contenteditable="false"><span data-offset-key="1ncnv-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="1ncnv-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="et0li-0-0" contenteditable="false"><span data-offset-key="et0li-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="et0li-0-0"><span data-text="true">Today, we are praying against the Spirit of lust, lust within our hearts, lust within our minds lust within our bodies, and the lust of the flesh. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="76ne1-0-0" contenteditable="false"><span data-offset-key="76ne1-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="76ne1-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="8p1ig-0-0" contenteditable="false"><span data-offset-key="8p1ig-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="8p1ig-0-0"><span data-text="true">The Bible says, the lust of the flesh, the lust of the eyes, and the pride of life (1 John 2:16). So today, we&#x27;re going to come against that Spirit of lust and all other sexual things that might be connected to it. So today, we&#x27;re going to pray and renounce these things. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="54k47-0-0" contenteditable="false"><span data-offset-key="54k47-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="54k47-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="67opd-0-0" contenteditable="false"><span data-offset-key="67opd-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="67opd-0-0"><span data-text="true">Today we renounce all sexual sins that we have been involved in the past, including fornication, masturbation, pornography, perversion, fantasy, and adultery, In the name of Jesus Christ.</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="fsp2j-0-0" contenteditable="false"><span data-offset-key="fsp2j-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="fsp2j-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="93mq8-0-0" contenteditable="false"><span data-offset-key="93mq8-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="93mq8-0-0"><span data-text="true">We break all curses of adultery, perversion, fornication, lust, incest, rape, molestation, harlotry, and polygamy In the name of Jesus Christ. We command all spirits of lust perversion to come! Out of our stomach right now! to come out! Of our genitals, right now! to come out of our eyes, right now! to come out of our mind, our mouth, our hands in the name of Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="f3su3-0-0" contenteditable="false"><span data-offset-key="f3su3-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="f3su3-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="faosn-0-0" contenteditable="false"><span data-offset-key="faosn-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="faosn-0-0"><span data-text="true">We present our bodies to the Lord right now as a living sacrifice. According to Romans 12:1, Lord, we pray today that our members are the members of Christ, and we will not let them be the members of the harlot according to 1 Corinthians 6:15. The love we release the fire of God burns out or unclean lust from our lives in the name of Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="9msbv-0-0" contenteditable="false"><span data-offset-key="9msbv-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="9msbv-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="e2s1r-0-0" contenteditable="false"><span data-offset-key="e2s1r-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="e2s1r-0-0"><span data-text="true">We break ungodly soul ties with former lovers and sexual partners. In the name of Jesus Christ, we cast out all spirits of loneliness that would drive us to ungodly sexual relationships. In the name of Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="cfctl-0-0" contenteditable="false"><span data-offset-key="cfctl-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="cfctl-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="7h82e-0-0" contenteditable="false"><span data-offset-key="7h82e-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="7h82e-0-0"><span data-text="true">We command all spirits of hereditary lust from our ancestors to also come out now in the name of Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="5csjn-0-0" contenteditable="false"><span data-offset-key="5csjn-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="5csjn-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="ahqgk-0-0" contenteditable="false"><span data-offset-key="ahqgk-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="ahqgk-0-0"><span data-text="true">We command all spirits of witchcraft that work with lust to relieve the Lord to leave now in the name of Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="8lej2-0-0" contenteditable="false"><span data-offset-key="8lej2-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="8lej2-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="10v9s-0-0" contenteditable="false"><span data-offset-key="10v9s-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="10v9s-0-0"><span data-text="true">We take authority over our thoughts and bind all spirits of fantasy and lustful thinking in the name of Jesus Christ. We cast out all marriage-breaking Spirits of lust that would break covenants in the name of Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="71ovb-0-0" contenteditable="false"><span data-offset-key="71ovb-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="71ovb-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="eelg1-0-0" contenteditable="false"><span data-offset-key="eelg1-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="eelg1-0-0"><span data-text="true">We cast out and loosen ourselves from any spiritual spouse and spirits of Incubus, Succubus in the name of Jesus Christ. We cast out all spirits of perversion, including the Moabite and the Ammonite spirits of lust right now in the name of Jesus Christ.</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="6i0jh-0-0" contenteditable="false"><span data-offset-key="6i0jh-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="6i0jh-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="31jvv-0-0" contenteditable="false"><span data-offset-key="31jvv-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="31jvv-0-0"><span data-text="true">We receive the Spirit of holiness in our lives now to walk in sexual purity in the name of Jesus (Romans 1:4). Lord, we loosen ourselves from the Spirit of this world, the Spirit of the flesh, the lust of the eyes, and the pride.</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="f236v-0-0" contenteditable="false"><span data-offset-key="f236v-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="f236v-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="a9oci-0-0" contenteditable="false"><span data-offset-key="a9oci-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="a9oci-0-0"><span data-text="true">We overcome the world through the power of the Holy Spirit. According to 1 John 2:16. Lord, we pray today that we are crucified with Christ and our members also, and we will not let the sin reign in our bodies. We will not disobey it with the lust according to Romans 6:6-12 week command right now that all those things, Lord that have been against us that have been against our lives that shall no longer come against us today in the name of our Lord Jesus Christ.</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="d5qdb-0-0" contenteditable="false"><span data-offset-key="d5qdb-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="d5qdb-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="1lnek-0-0" contenteditable="false"><span data-offset-key="1lnek-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="1lnek-0-0"><span data-text="true">Oh, Father, we come boldly before your throne of grace, Lord, in a time that we need your help and strength, fill us with the power of your Holy Spirit. We submit ourselves time and our lives unto you for Your Word says that if we submit ourselves unto you, that we can resist the enemy, and he would flee from us, Lord, we are fully submitted to you all that we are and all that we ever hoped to be. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="31ek9-0-0" contenteditable="false"><span data-offset-key="31ek9-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="31ek9-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="55g0o-0-0" contenteditable="false"><span data-offset-key="55g0o-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="55g0o-0-0"><span data-text="true">Therefore, we surrender unto you, Father, for we are weak, but you are strong, and we know that in your weaknesses, we are made strong because your Word says that my strength is not in my will, but to withstand the devil and the many temptations but it is by faith, our strength and our hope is in you. Therefore, Lord, we confess it with our strength in you and the power of your might right now, Father, in the name of Jesus, we cast out all imagination thoughts right now, in the name of our Lord Jesus!</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="a3vnb-0-0" contenteditable="false"><span data-offset-key="a3vnb-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="a3vnb-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="a029s-0-0" contenteditable="false"><span data-offset-key="a029s-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="a029s-0-0"><span data-text="true">Satan, every stronghold you have tried to bring against us, is being rendered helpless, powerless, and ineffective to operate in our lives from today by the authority of our Lord Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="8fivh-0-0" contenteditable="false"><span data-offset-key="8fivh-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="8fivh-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="1vrva-0-0" contenteditable="false"><span data-offset-key="1vrva-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="1vrva-0-0"><span data-text="true">We put off all forms of lust, the old nature, and adopt the new nature of righteousness, purity, and honesty, today! in the name of Jesus Christ!</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="cf1n2-0-0" contenteditable="false"><span data-offset-key="cf1n2-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="cf1n2-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="3i4qb-0-0" contenteditable="false"><span data-offset-key="3i4qb-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="3i4qb-0-0"><span data-text="true">Satan, in our life, you are defeated today. And now you&#x27;re under our feet, and the power of lust in sin is broken today. Father, we thank you for healing our prayers, hearing us today, and delivering us from the tricks of the enemy. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="15rbb-0-0" contenteditable="false"><span data-offset-key="15rbb-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="15rbb-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="2d69i-0-0" contenteditable="false"><span data-offset-key="2d69i-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="2d69i-0-0"><span data-text="true">We thank You for Your Word and how it is established in our hearts and in our lives. And we thank you for giving us the power over the enemy. I thank you for strengthening us so that we will not defile the body (your temple). Thank you, Lord, for restoring us, cleansing us, and forgiving us from all our weaknesses. We praise you and give you all the glory right now! in the name of Jesus Christ. </span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="denj3-0-0" contenteditable="false"><span data-offset-key="denj3-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="denj3-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="fb9s0-0-0" contenteditable="false"><span data-offset-key="fb9s0-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="fb9s0-0-0"><span data-text="true">We thank You, Lord Jesus, that you would just come and fill us and touch us with the power of your Holy Spirit right now. Let the power of the Holy Spirit come and fill us and touch us and fill us a fresh fill those voids where every demonic Spirit is left. We think your Holy Spirit that through you and you alone, we cannot do anything. The Bible says unless the Spirit of God builds, we build in vain. We build our lives in vain without the help of the Holy Spirit. So Holy Spirit, come and fill us with your characteristics.</span></span></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="1vev8-0-0" contenteditable="false"><span data-offset-key="1vev8-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span data-offset-key="1vev8-0-0"><br data-text="true"/></span></span></span></span><span data-block="true" data-editor="7vjvs" data-offset-key="5u3gd-0-0" contenteditable="false"><span data-offset-key="5u3gd-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="5u3gd-0-0"><span data-text="true">Fill us with your attributes fill us with the things that we never inherited, like your holiness, that we may live holy unto you in the mighty name of our Lord Jesus.</span></span></span></span></span></span></div></div></div></div></div><div class="video js-widget" data-widget="video" data-widget-id="fc02d5e540caee7f" data-settings="{&quot;id&quot;:&quot;8YZ2WL8tnZY&quot;,&quot;autoplay&quot;:0,&quot;fs&quot;:1,&quot;color&quot;:&quot;red&quot;,&quot;provider&quot;:&quot;youtube&quot;,&quot;removeControls&quot;:false,&quot;hash&quot;:&quot;fc02d5e540caee7f&quot;,&quot;isBackground&quot;:false,&quot;isSliderBg&quot;:false,&quot;src&quot;:&quot;https://img.youtube.com/vi/8YZ2WL8tnZY/maxresdefault.jpg&quot;}"><div class="youtube not-background-video youtube-frame video-toolbar-active"><span id="v-fc02d5e540caee7f"></span><div class="video__preview-container" id="preview-container-fc02d5e540caee7f"><img class="video__preview lazy" data-src="https://img.youtube.com/vi/8YZ2WL8tnZY/maxresdefault.jpg" alt="" id="preview-image-fc02d5e540caee7f" itemProp="image"/><i class="dailyimotion_video__icon video__icon icon" data-style="{}"><svg style="width:100%;height:100%" data-style="{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;}"><use xlink:href="#sp-play"></use></svg></i></div><div class="video-error-wrapper hidden"><i class="icon video-error-icon icon_1x84K" data-style="{}"><svg style="width:100%;height:100%" data-style="{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;}"><use xlink:href="#global/error-video"></use></svg></i><p class="video-error-title">Video can’t be displayed</p><p class="video-error-desc">This video is not available.</p></div></div></div><div class="section__text"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><span class="textAlign-center" data-block="true" data-editor="butna" data-offset-key="2vm0m-0-0" contenteditable="false"><span data-offset-key="2vm0m-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="text-align:center;font-size:17em"><span><span style="color:rgb(254, 254, 254)" data-style="{&quot;color&quot;:&quot;rgb(254, 254, 254)&quot;}"><span data-offset-key="2vm0m-0-0"><span data-text="true">This video was created by Pastor Robert Clancy. I have received 
+permission from Pastor Robert Clancy to share this powerful video.
+</span></span></span><a class="" href="/__static/945c7ba863e7cd99c7ff742e9b005225/fight-lust-prayer.txt?dl=1" download="fight-lust-prayer.txt" data-style="{}"><span data-offset-key="2vm0m-1-0" style="font-style:italic;font-weight:bold"><span data-text="true">DOWNLOAD TRANSCRIPT</span></span></a></span></span></span></div></div></div></div></div><div class="space__block" style="height:20em"><div class="space__box"></div></div></div></div></div></div></div></div></div></section></main><footer class="layout footer" itemscope="" itemType="https://schema.org/WPFooter"><section data-widget="section" class="s-section js-widget section-5e62dd50-5005-465c-9124-601f3a420b7d" id="s-5e62dd50-5005-465c-9124-601f3a420b7d" style="background:rgb(var(--preColor_text))" data-style="{&quot;background&quot;:&quot;rgb(var(--preColor_text))&quot;}"><div><div class="s-wrapper"><div class="layout"><div class="row"><div class="layout"><div class="row__item row__item_desktop-12"><div class="layout"><div class="space__block" style="height:15em"><div class="space__box"></div></div><div class="section__title header-six"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><h6 class="textAlign-center" data-block="true" data-editor="7tvt" data-offset-key="7pn19-0-0" contenteditable="false"><span data-offset-key="7pn19-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="text-align:center"><span><a class="" href="/freeseries/" style="color:rgb(255, 235, 59)" data-style="{&quot;color&quot;:&quot;rgb(255, 235, 59)&quot;}"><span data-offset-key="7pn19-0-0" style="font-style:italic"><span data-text="true">Click HERE to Signup for the next Truly Free Class!</span></span></a></span></span></h6></div></div></div></div></div></div></div></div></div><div class="row"><div class="layout"><div class="row__item row__item_desktop-4"><div class="layout"><div class="section__title header-six"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><h6 class="textAlign-center" data-block="true" data-editor="e5umb" data-offset-key="9i45a-0-0" contenteditable="false"><span data-offset-key="9i45a-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="text-align:center;line-height:1;font-size:14em"><span><a class="" href="/support/" data-style="{}"><span data-offset-key="9i45a-0-0" style="font-weight:400"><span data-text="true">Our Supporters</span></span></a></span></span></h6></div></div></div></div></div><div class="space__block" style="height:10em"><div class="space__box"></div></div></div></div><div class="row__item row__item_desktop-4"><div class="layout"><div class="section__title header-six"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><h6 class="textAlign-center" data-block="true" data-editor="2pvsc" data-offset-key="2pirl-0-0" contenteditable="false"><span data-offset-key="2pirl-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="text-align:center;font-size:14em;line-height:1"><span><a class="" href="https://discord.gg/fAdqcshPqu" target="_blank" data-style="{}"><span data-offset-key="2pirl-0-0" style="font-weight:400"><span data-text="true">Our Discord Server</span></span></a></span></span></h6></div></div></div></div></div><div class="space__block" style="height:10em"><div class="space__box"></div></div></div></div><div class="row__item row__item_desktop-4"><div class="layout"><div class="section__title header-six"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><h6 class="textAlign-center" data-block="true" data-editor="2m3ik" data-offset-key="9i45a-0-0" contenteditable="false"><span data-offset-key="9i45a-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="text-align:center;line-height:1;font-size:14em"><span><a class="" href="/doctrinal-beliefs/" data-style="{}"><span data-offset-key="9i45a-0-0" style="font-weight:400"><span data-text="true">Our Statement of Faith</span></span></a></span></span></h6></div></div></div></div></div><div class="space__block" style="height:10em"><div class="space__box"></div></div></div></div></div></div><div class="row"><div class="layout"><div class="row__item row__item_desktop-12"><div class="layout"><div class="section__text"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space:pre-wrap;word-wrap:break-word"><div data-contents="true"><span class="textAlign-center" data-block="true" data-editor="9qqpp" data-offset-key="292fr-0-0" contenteditable="false"><span data-offset-key="292fr-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="line-height:1;font-size:12em;text-align:center"><span><span style="color:rgba(var(--preColor_textAlt), 0.5)" data-style="{&quot;color&quot;:&quot;rgba(var(--preColor_textAlt), 0.5)&quot;}"><span data-offset-key="292fr-0-0"><span data-text="true">fightlust.com ~ fightlust.net ~fightlust.org  Copyright © All rights reserved.</span></span></span></span></span></span></div></div></div></div></div></div></div></div></div></div></div></div></section></footer><div class="fixed-block"><div class="fixed-block__box"><div class="fixed-block__right"><div class="layout"><div class="back-to-top"><i class="icon icon icon_primary" data-style="{}"><svg data-style="{}"><use xlink:href="#global/arrow-up"></use></svg></i><i class="icon icon icon_secondary" data-style="{}"><svg data-style="{}"><use xlink:href="#global/arrow-up"></use></svg></i></div></div></div></div><div class="js-widget" data-widget="cookieNotice"><div id="cookie-notice-toolbar" data-active="false" data-primary="rgb(var(--preColor_brand))" data-secondary="rgb(var(--preColor_textAlt))" class="cookie-toolbar _dark hidden"><div class="cookie-toolbar__wrap"><p class="cookie-toolbar__text">We use cookies to enable essential functionality on our website, and analyze website traffic. By clicking Accept you consent to our use of cookies. <a class="cookie-toolbar__link" rel="noopener noreferrer" href="/privacy-and-cookies-policy" target="_self">Read about how we use cookies.</a></p><div class="cookie-toolbar__buttons"><button class="cookie-toolbar__btn cookie-toolbar__btn_settings" type="button">Cookie settings</button><button class="cookie-toolbar__btn cookie-toolbar__btn_accept" type="button">Accept</button></div></div></div></div></div></div><div class="js-widget" data-widget="modal"><div id="cookie-notice-modal"><div class="cookie-settings-popup__wrap modal__overlay"><div class="modal__popup"><button class="btn modal__close effect-fade-out" style="text-transform:none;font-variant:normal" spellcheck="false"><i class="icon" data-style="{}"><svg style="fill:rgb(255, 255, 255)" data-style="{&quot;fill&quot;:&quot;rgb(255, 255, 255)&quot;}"><use xlink:href="#global/close_18"></use></svg></i></button><div class="cookie-settings-popup"><div class="cookie-settings-popup__title">Your Cookie Settings</div><p class="cookie-settings-popup__description">We use cookies to enable essential functionality on our website, and analyze website traffic. <a class="cookie-settings-popup__description-link" rel="noopener noreferrer" target="_self" href="/privacy-and-cookies-policy">Read about how we use cookies</a>.</p><div class="cookie-settings-popup__subtitle">Cookie Categories</div><div class="_mt--5"><div class="cookie-settings-popup__option-wrap"><div class="cookie-settings-popup__option-title">Essential</div><label class="gdpr-switcher" data-active="true"><input type="checkbox" disabled="" class="gdpr-switcher__checkbox" checked=""/><span class="gdpr-switcher__text">On</span><span class="gdpr-switcher__label"><span class="gdpr-switcher__circle"></span></span></label></div><p class="cookie-settings-popup__option-text">These cookies are strictly necessary to provide you with services available through our websites. You cannot refuse these cookies without impacting how our websites function. You can block or delete them by changing your browser settings, as described under the heading &quot;Managing cookies&quot; in the <a class="cookie-settings-popup__description-link" rel="noopener noreferrer" target="_self" href="/privacy-and-cookies-policy">Privacy and Cookies Policy</a>.</p></div><div><div class="cookie-settings-popup__option-wrap"><div class="cookie-settings-popup__option-title">Analytics</div><label class="gdpr-switcher gdpr-switcher__analytics" data-active="true"><input type="checkbox" class="gdpr-switcher__checkbox" checked=""/><span class="gdpr-switcher__text">On</span><span class="gdpr-switcher__label"><span class="gdpr-switcher__circle"></span></span></label></div><p class="cookie-settings-popup__option-text _pb-10">These cookies collect information that is used in aggregate form to help us understand how our websites are being used or how effective our marketing campaigns are.</p></div><div class="cookie-settings-popup__btn-wrap"><button class="cookie-settings-popup__btn cookie-settings-popup__btn-save" type="button">Save settings</button></div></div></div></div></div></div></div>
+
+<script>
+  window['__PRELOADED_STATE__'] = {
+  "analytics": {
+    "googleAnalyticsId": "G-HREWK5WXLS",
+    "googleTagManagerId": "GTM-KV57D99"
+  },
+  "apiUrls": {
+    "static": "https://static.edit.site",
+    "staticService": "https://static-cdn.edit.site",
+    "memberApi": "https://rest.edit.site/member-api/1.1",
+    "blogApi": "https://rest.edit.site/blog-api/1.1",
+    "ecommerceFilestorageService": "https://rest.edit.site/ecommerce-filestorage-service/1.0",
+    "memberApiService": "https://rest.edit.site/member-api-service",
+    "fileStorageService": "https://rest.edit.site/filestorage-api-service",
+    "imageApiService": "https://rest.edit.site/image-api-service",
+    "imageResizeApiService": "https://rest.edit.site/image-resize/api/process",
+    "ecommerceService": "https://rest.edit.site/ecommerce-api-service",
+    "analyticApiService": "https://rest.edit.site/member-analytics-service",
+    "embedApiService": "https://rest.edit.site/embed-api-service",
+    "geoipService": "https://rest.edit.site/geoip-service",
+    "pageRenderService": "https://rest.edit.site/page-render-service",
+    "staticCdnService": "https://static-gcs.edit.site",
+    "fontsCdn": "https://fonts-cdn.edit.site",
+    "ecomDashApiUrl": "https://sd-checkout-api-prod-us-central-north.azurewebsites.net/v1.0/",
+    "ecomDashCartScriptUrl": "https://mfe.newfold-addons.io",
+    "bookingApiUrl": "https://app-gateway.myschedulr.com/booking/public",
+    "bookingService": "https://app.myschedulr.com/bookings-scheduler/index"
+  },
+  "ecommerce": {
+    "storeUrl": ""
+  },
+  "iconsPath": "projects/dc554181-1560-4a2b-a61b-2ffa5e4389b0",
+  "pageId": "41ee3932-835a-4582-9af7-063b7a20eea4",
+  "planType": "paid",
+  "projectId": "dc554181-1560-4a2b-a61b-2ffa5e4389b0",
+  "publishAssetsVersion": "0.40.0",
+  "resellerId": "970",
+  "staticData": {
+    "isStaticPublished": true,
+    "staticDir": "/__static",
+    "noSrc": "https://static.edit.site/default.png"
+  },
+  "styles": {
+    "preColor": {
+      "brand": "51, 112, 125",
+      "altBrand": "205, 135, 101",
+      "text": "23, 23, 23",
+      "textAlt": "254, 254, 254",
+      "complementary": "244, 239, 235"
+    },
+    "color": {
+      "brand": "rgb(var(--preColor_brand))",
+      "altBrand": "rgb(var(--preColor_altBrand))",
+      "text": "rgb(var(--preColor_text))",
+      "textAlt": "rgb(var(--preColor_textAlt))",
+      "complementary": "rgb(var(--preColor_complementary))"
+    },
+    "font": {
+      "primary": "Oxygen, sans-serif",
+      "secondary": "Oxygen, sans-serif",
+      "complementary": "'PT Sans', serif",
+      "primaryBackup": "Roboto, sans-serif"
+    },
+    "menu": {
+      "type": 6,
+      "fontSize": "20em",
+      "fontWeight": "700",
+      "textTransform": "none",
+      "lineHeight": "38px",
+      "padding": "15px",
+      "color": "rgb(211, 190, 174)",
+      "fontFamily": "var(--font_secondary)",
+      "fontStyle": "normal",
+      "fontVariant": "normal",
+      "burger": {
+        "color": "rgb(211, 190, 174)"
+      },
+      "active": {
+        "color": "rgb(23, 23, 23)",
+        "background": "var(--menu_color)"
+      },
+      "subMenu": {
+        "fontSize": "var(--menu_fontSize)",
+        "background": "var(--header_main_background)",
+        "sm": "var(--menu_subMenu_fontSize)"
+      },
+      "subMenuLink": {
+        "fontSize": "var(--menu_subMenu_fontSize)"
+      }
+    },
+    "template": {
+      "background": "#fff",
+      "fill": "var(--color_brand)",
+      "fontFamily": "var(--font_primary)",
+      "name": "Blinds"
+    },
+    "header": {
+      "alwaysCollapsed": false,
+      "main": {
+        "background": "rgb(36, 32, 32)",
+        "borderTopColor": "rgb(185, 101, 61)",
+        "borderTopWidth": "2px",
+        "borderBottomColor": "rgb(185, 101, 61)",
+        "borderBottomWidth": "2px",
+        "opacity": "1.00"
+      },
+      "sub": {
+        "background": "var(--header_main_background)"
+      },
+      "subheader": {
+        "color": {
+          "static": "rgb(var(--preColor_text))",
+          "active": "rgb(var(--preColor_brand))"
+        }
+      },
+      "topbar": {
+        "color": {
+          "static": "rgb(var(--preColor_text))",
+          "active": "rgb(var(--preColor_brand))"
+        }
+      },
+      "height": 75,
+      "fixed": false
+    },
+    "footer": {
+      "main": {
+        "background": "rgb(36, 32, 32)"
+      },
+      "sub": {
+        "background": "var(--footer_main_background)"
+      }
+    },
+    "logo": {
+      "default": {
+        "isLink": true,
+        "text": "Blinds",
+        "src": "/static/490/logo.svg"
+      },
+      "default_footer": {
+        "src": "themes/_global/logo.png"
+      }
+    },
+    "link": {
+      "name": "link_06",
+      "presets": [
+        {
+          "name": "link_01"
+        },
+        {
+          "name": "link_02"
+        },
+        {
+          "name": "link_03"
+        },
+        {
+          "name": "link_04"
+        },
+        {
+          "name": "link_05"
+        }
+      ],
+      "title": "sh.fi.link-style_6",
+      "color": "rgb(var(--preColor_altBrand))",
+      "preColor": "var(--preColor_brand)",
+      "fontStyle": "normal",
+      "textDecoration": "none",
+      "fontWeight": 400,
+      "borderBottom": "none"
+    },
+    "blockquote1": {
+      "name": "blockquote_07",
+      "title": "sh.fi.quote-style_7",
+      "before": {
+        "color": "rgba(var(--preColor_text), 0.4)"
+      },
+      "default": {
+        "color": "var(--color_text)",
+        "preColor": "var(--preColor_text)",
+        "fontStyle": "normal",
+        "fontSize": "var(--text_fontSize)",
+        "fontFamily": "var(--text_fontFamily)",
+        "fontWeight": 400,
+        "lineHeight": "var(--text_lineHeight)",
+        "background": "transparent",
+        "textTransform": "none",
+        "borderColor": "rgba(var(--preColor_text), 0.4)",
+        "textDecoration": "none"
+      }
+    },
+    "blockquote2": {
+      "name": "blockquote_02",
+      "title": "sh.fi.quote-style_2",
+      "default": {
+        "fontWeight": 700,
+        "color": "var(--color_text)",
+        "preColor": "var(--preColor_text)",
+        "fontStyle": "italic",
+        "fontSize": "var(--text_fontSize)",
+        "fontFamily": "var(--text_fontFamily)",
+        "lineHeight": "var(--text_lineHeight)",
+        "background": "transparent",
+        "textTransform": "none",
+        "borderColor": "transparent",
+        "textDecoration": "none"
+      },
+      "before": {
+        "color": "var(--color_text)"
+      }
+    },
+    "text": {
+      "fontSize": "16em",
+      "lineHeight": "1.6em",
+      "fontWeight": 400,
+      "fontStyle": "normal",
+      "fontVariant": "normal",
+      "fontFamily": "var(--font_primary)",
+      "textTransform": "none",
+      "textAlign": "left",
+      "color": "var(--color_text)"
+    },
+    "title": {
+      "lineHeight": "1.4em",
+      "fontStyle": "normal",
+      "fontWeight": 700,
+      "fontVariant": "normal",
+      "textTransform": "none",
+      "textAlign": "left",
+      "color": "var(--color_text)",
+      "heroHeading": {
+        "fontSize": "64em",
+        "lineHeight": "1.1em",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontVariant": "normal",
+        "fontFamily": "var(--font_secondary)",
+        "textTransform": "capitalize",
+        "textAlign": "var(--title_textAlign)",
+        "color": "var(--title_color)"
+      },
+      "mainHeading": {
+        "fontSize": "48em",
+        "lineHeight": "1.2em",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontVariant": "normal",
+        "fontFamily": "var(--font_secondary)",
+        "textTransform": "capitalize",
+        "textAlign": "var(--title_textAlign)",
+        "color": "var(--title_color)"
+      },
+      "heading": {
+        "fontSize": "30em",
+        "lineHeight": "1.3em",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontVariant": "normal",
+        "fontFamily": "var(--font_secondary)",
+        "textTransform": "capitalize",
+        "textAlign": "var(--title_textAlign)",
+        "color": "var(--title_color)"
+      },
+      "smallHeading": {
+        "fontSize": "24em",
+        "lineHeight": "1.4em",
+        "fontWeight": "var(--title_fontWeight)",
+        "fontStyle": "var(--title_fontStyle)",
+        "fontVariant": "normal",
+        "fontFamily": "var(--font_secondary)",
+        "textTransform": "capitalize",
+        "textAlign": "var(--title_textAlign)",
+        "color": "var(--title_color)"
+      },
+      "subHeading": {
+        "fontSize": "16em",
+        "lineHeight": "1.6em",
+        "fontWeight": "var(--title_fontWeight)",
+        "fontStyle": "var(--title_fontStyle)",
+        "fontVariant": "normal",
+        "fontFamily": "var(--font_secondary)",
+        "textTransform": "capitalize",
+        "textAlign": "var(--title_textAlign)",
+        "color": "var(--title_color)"
+      }
+    },
+    "btn": {
+      "fontSize": "16px",
+      "fontFamily": "var(--font_secondary)",
+      "borderRadius": 0,
+      "border": 0,
+      "textTransform": "uppercase",
+      "fontWeight": 700,
+      "fontStyle": "normal",
+      "fill": "currentColor",
+      "primary": {
+        "fill": "var(--btn_fill)",
+        "fontSize": "var(--btn_fontSize)",
+        "fontFamily": "var(--btn_fontFamily)",
+        "textTransform": "none",
+        "fontWeight": "var(--btn_fontWeight)",
+        "fontStyle": "var(--btn_fontStyle)",
+        "borderRadius": "64px",
+        "borderWidth": "0px",
+        "borderColor": "transparent",
+        "background": "rgb(var(--preColor_brand))",
+        "color": "rgb(var(--preColor_altBrand))",
+        "textDecoration": "none"
+      },
+      "secondary": {
+        "fill": "var(--btn_fill)",
+        "fontSize": "var(--btn_fontSize)",
+        "fontFamily": "var(--btn_fontFamily)",
+        "textTransform": "none",
+        "fontWeight": "var(--btn_fontWeight)",
+        "fontStyle": "var(--btn_fontStyle)",
+        "borderRadius": "64px",
+        "borderWidth": "0px",
+        "borderColor": "transparent",
+        "background": "rgb(var(--preColor_textAlt))",
+        "color": "rgb(var(--preColor_brand))",
+        "textDecoration": "none"
+      },
+      "borderPrimary": {
+        "fill": "var(--btn_fill)",
+        "background": "transparent",
+        "fontSize": "var(--btn_fontSize)",
+        "fontFamily": "var(--btn_fontFamily)",
+        "borderRadius": "64px",
+        "textTransform": "none",
+        "fontWeight": 700,
+        "fontStyle": "var(--btn_fontStyle)",
+        "borderStyle": "solid",
+        "borderWidth": "2px",
+        "color": "rgb(var(--preColor_brand))",
+        "borderColor": "rgb(var(--preColor_brand))",
+        "textDecoration": "none",
+        "paddingBottom": "4px",
+        "paddingTop": "4px"
+      },
+      "borderSecondary": {
+        "fill": "var(--btn_fill)",
+        "background": "transparent",
+        "fontSize": "var(--btn_fontSize)",
+        "fontFamily": "var(--btn_fontFamily)",
+        "borderRadius": "64px",
+        "textTransform": "none",
+        "fontWeight": "var(--btn_fontWeight)",
+        "fontStyle": "var(--btn_fontStyle)",
+        "borderStyle": "solid",
+        "borderWidth": "2px",
+        "color": "rgb(var(--preColor_textAlt))",
+        "borderColor": "rgb(var(--preColor_textAlt))",
+        "textDecoration": "none",
+        "paddingBottom": "4px",
+        "paddingTop": "4px"
+      },
+      "default": {
+        "fill": "var(--btn_fill)",
+        "paddingTop": "6px",
+        "paddingBottom": "6px",
+        "fontSize": "var(--btn_fontSize)",
+        "fontFamily": "var(--btn_fontFamily)",
+        "textTransform": "var(--btn_textTransform)",
+        "fontWeight": "var(--btn_fontWeight)",
+        "fontStyle": "var(--btn_fontStyle)",
+        "borderRadius": "0",
+        "borderWidth": "0",
+        "borderColor": "transparent",
+        "background": "transparent",
+        "color": "var(--color_brand)",
+        "textDecoration": "none"
+      },
+      "header": {
+        "fontSize": "16em"
+      }
+    },
+    "input": {
+      "fontSize": "var(--text_fontSize)",
+      "height": "auto",
+      "color": "var(--text_color)",
+      "preBgColor": "255, 255, 255",
+      "background": "rgb(var(--input_preBgColor))",
+      "borderWidth": "1px",
+      "borderColor": "#cccccc",
+      "borderRadius": 0,
+      "textTransform": "none",
+      "textarea": {
+        "fontSize": "var(--input_fontSize)",
+        "height": "140px",
+        "color": "var(--input_color)",
+        "background": "var(--input_background)",
+        "borderWidth": "var(--input_borderWidth)",
+        "borderColor": "var(--input_borderColor)",
+        "borderRadius": "var(--input_borderRadius)",
+        "textTransform": "var(--input_textTransform)"
+      },
+      "select": {
+        "fontSize": "var(--input_fontSize)",
+        "height": "var(--input_height)",
+        "color": "var(--input_color)",
+        "background": "var(--input_background)",
+        "borderWidth": "var(--input_borderWidth)",
+        "borderColor": "var(--input_borderColor)",
+        "borderRadius": "var(--input_borderRadius)",
+        "textTransform": "var(--input_textTransform)"
+      },
+      "radio": {
+        "fontSize": "var(--input_fontSize)",
+        "color": "var(--input_color)",
+        "borderColor": "var(--input_borderColor)",
+        "textTransform": "var(--input_textTransform)"
+      }
+    },
+    "divider": {
+      "solid": {
+        "align": "left",
+        "color": "var(--color_text)",
+        "width": "100"
+      },
+      "dashed": {
+        "align": "left",
+        "color": "var(--color_text)",
+        "width": "100"
+      },
+      "dotted": {
+        "align": "left",
+        "color": "var(--color_text)",
+        "width": "100"
+      },
+      "dots": {
+        "align": "left",
+        "color": "var(--color_brand)",
+        "width": "100"
+      },
+      "slant": {
+        "align": "left",
+        "color": "var(--color_brand)",
+        "width": "100"
+      },
+      "waves": {
+        "align": "left",
+        "color": "var(--color_brand)",
+        "width": "100"
+      },
+      "dash": {
+        "align": "left",
+        "color": "var(--color_brand)",
+        "width": "100"
+      },
+      "zigzag": {
+        "align": "left",
+        "color": "var(--color_brand)",
+        "width": "100"
+      },
+      "default": "solid"
+    },
+    "function": {
+      "darkenBrand": [
+        10,
+        15,
+        50
+      ],
+      "rgbaBrand": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "link": {
+        "rgba": [
+          1,
+          2
+        ]
+      },
+      "button": {
+        "primary": {
+          "darken": [
+            10,
+            15
+          ]
+        },
+        "secondary": {
+          "darken": [
+            10,
+            15
+          ]
+        },
+        "borderPrimary": {
+          "darken": [
+            10,
+            15
+          ]
+        },
+        "borderSecondary": {
+          "darken": [
+            10,
+            15
+          ]
+        }
+      }
+    },
+    "countdown": {
+      "layout": "circles",
+      "circleColor": "var(--color_brand)",
+      "timesUpMessageColor": "var(--color_text)",
+      "number": {
+        "fontWeight": "var(--title_mainHeading_fontWeight)",
+        "fontStyle": "var(--title_mainHeading_fontStyle)",
+        "textTransform": "var(--title_mainHeading_textTransform)",
+        "fontFamily": "var(--title_mainHeading_fontFamily)",
+        "fontVariant": "var(--title_mainHeading_fontVariant)",
+        "fontSize": "var(--title_mainHeading_fontSize)",
+        "lineHeight": "var(--title_mainHeading_lineHeight)",
+        "letterSpacing": 0,
+        "textDecoration": "none",
+        "color": "var(--title_mainHeading_color)"
+      },
+      "caption": {
+        "fontWeight": "var(--title_smallHeading_fontWeight)",
+        "fontStyle": "var(--title_smallHeading_fontStyle)",
+        "textTransform": "var(--title_smallHeading_textTransform)",
+        "fontFamily": "var(--title_smallHeading_fontFamily)",
+        "fontVariant": "var(--title_smallHeading_fontVariant)",
+        "fontSize": "var(--title_smallHeading_fontSize)",
+        "lineHeight": "var(--title_smallHeading_lineHeight)",
+        "letterSpacing": 0,
+        "textDecoration": "none",
+        "color": "var(--title_smallHeading_color)"
+      }
+    },
+    "timeline": {
+      "layout": 1,
+      "align": "center",
+      "shape": "circle",
+      "circleColor": "var(--color_brand)",
+      "lineColor": "rgba(var(--preColor_brand), 0.4)",
+      "date": {
+        "fontWeight": "var(--title_subHeading_fontWeight)",
+        "fontStyle": "var(--title_subHeading_fontStyle)",
+        "textTransform": "var(--title_subHeading_textTransform)",
+        "fontFamily": "var(--title_subHeading_fontFamily)",
+        "fontVariant": "var(--title_subHeading_fontVariant)",
+        "fontSize": "var(--title_subHeading_fontSize)",
+        "lineHeight": "var(--title_subHeading_lineHeight)",
+        "letterSpacing": 0,
+        "textDecoration": "none",
+        "color": "var(--title_subHeading_color)"
+      },
+      "title": {
+        "fontWeight": "var(--title_smallHeading_fontWeight)",
+        "fontStyle": "var(--title_smallHeading_fontStyle)",
+        "textTransform": "var(--title_smallHeading_textTransform)",
+        "fontFamily": "var(--title_smallHeading_fontFamily)",
+        "fontVariant": "var(--title_smallHeading_fontVariant)",
+        "fontSize": "var(--title_smallHeading_fontSize)",
+        "lineHeight": "var(--title_smallHeading_lineHeight)",
+        "letterSpacing": 0,
+        "textDecoration": "none",
+        "color": "var(--title_smallHeading_color)"
+      },
+      "text": {
+        "fontWeight": "var(--text_fontWeight)",
+        "fontStyle": "var(--text_fontStyle)",
+        "textTransform": "var(--text_textTransform)",
+        "fontFamily": "var(--text_fontFamily)",
+        "fontVariant": "var(--text_fontVariant)",
+        "fontSize": "var(--text_fontSize)",
+        "lineHeight": "var(--text_lineHeight)",
+        "letterSpacing": 0,
+        "textDecoration": "none",
+        "color": "var(--color_text)"
+      }
+    },
+    "brandingTheme": {
+      "colorTheme": "custom",
+      "defaultColor": "#007A33",
+      "hoverColor": "#0f6633",
+      "focusColor": "#0f6633",
+      "pressedColor": "#0f6633",
+      "cssLogoFilter": "contrast(0) sepia(100%) hue-rotate(305deg) brightness(1.32) saturate(10.75)",
+      "themeApplyVariation": "standard",
+      "innerColor": "#ffffff",
+      "borderRadius": "4px",
+      "browserColorTheme": "#ffffff",
+      "defaultColor-rgb": "0,122,51",
+      "hoverColor-rgb": "15,102,51",
+      "focusColor-rgb": "15,102,51",
+      "pressedColor-rgb": "15,102,51",
+      "innerColor-rgb": "255,255,255"
+    },
+    "cart": {
+      "type": 1
+    }
+  },
+  "settings": {
+    "animation": {
+      "enabled": false,
+      "value": "long"
+    }
+  }
+};
+</script>
+
+
+
+  <script defer src="/bundle/publish/0.40.0/vendors.js"></script>
+  <script defer src="/bundle/publish/0.40.0/bundle.js"></script>
+  <!-- body html inject: start -->
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/628ed4ee7b967b11799146e8/1g3uuvh7n';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  <!-- body html inject: end -->
+</body>
+</html>

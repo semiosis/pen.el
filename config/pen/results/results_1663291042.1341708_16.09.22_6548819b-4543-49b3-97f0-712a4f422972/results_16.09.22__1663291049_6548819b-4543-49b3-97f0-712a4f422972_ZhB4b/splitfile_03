@@ -1,0 +1,1 @@
+ (setq newmode (make-sparse-keymap)) (define-key newmode "\C-xk" 'next-line) (define-key newmode "\C-xj" 'previous-line) (define-key newmode "\C-xh

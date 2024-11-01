@@ -1,0 +1,9 @@
+# key: ltrm
+# name: lingo tenet readme
+# --
+#${1:$$(e/chomp (bp u dn | u bn (buffer-file-name)))}
+
+_by codelingo, part of their ${2:$$(e/chomp (bp u dn | u dn -f | u bn (buffer-file-name)))} bundle_
+$0
+
+[Load up in the codelingo.io/playground](https://codelingo.io/playground/?repo=github.com/codelingo/hub&dir=tenets/codelingo/$2/$1&tenet=codelingo/$2/$1)

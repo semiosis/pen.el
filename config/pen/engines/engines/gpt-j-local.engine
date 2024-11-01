@@ -1,0 +1,13 @@
+engine-title: local GPT-J-6B slim
+# Not yet ready
+needs-work: true
+lm-command: "gpt-j-complete.sh"
+# This is the locally running GPT-J model
+# model: davinci
+# engine-min-tokens: 64 ?
+default-tokens: 512
+# engine-max-tokens: 2048 ?
+foundation: true
+libre-dataset: yes
+libre-model: yes
+local: yes

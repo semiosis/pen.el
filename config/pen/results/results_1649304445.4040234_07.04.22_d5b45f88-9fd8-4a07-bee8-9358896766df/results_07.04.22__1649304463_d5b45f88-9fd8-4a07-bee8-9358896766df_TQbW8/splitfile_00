@@ -1,0 +1,4 @@
+
+if filereadable(expand("~/.pen/pen.vim"))
+  source ~/.pen/pen.vim
+endif

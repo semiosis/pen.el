@@ -1,0 +1,15 @@
+ialization(
+  (
+    assert(user:file_search_path(library, '$libdir')),
+    assert(user:file_search_path(foreign, '$libdir/prolog')),
+    assert(user:file_search_path(library, '$libdir/prolog')),
+    assert(user:file_search_path(library, '.')),
+    assert(user:file_search_path(foreign, '.')),
+    assert(user:file_search_path(library, '../clib')),
+    assert(user:file_search_path(foreign, '../clib')),
+    assert(user:file_search_path(library, '../plunit')),
+    assert(user:file_search_path(foreign, '../plunit')),
+
+    use_module('$libdir/swipl'),
+
+

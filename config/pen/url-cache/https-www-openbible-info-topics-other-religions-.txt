@@ -1,0 +1,1319 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 25507
+Connection: keep-alive
+Date: Thu, 08 Feb 2024 12:44:37 GMT
+Server: Apache
+Cache-Control: max-age=600
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 af544d149b599010a6c8492a192cbd68.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: AKL50-C2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: G0HO-VsQ5G1OctcfnJyh6JDde78DlxAwGc36qsNFB7oDHgh6QWBSsA==
+Age: 4
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>What Does the Bible Say About Other Religions?</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/topics/other_religions/" />
+<meta name="description" content="Bible verses about Other Religions" />
+<script>
+	if (window.location.href.match(/\bn=/)) {
+		let newUrl = window.location.href;
+		newUrl = newUrl.replace(/\bn=[^&]+/, "");
+		newUrl = newUrl.replace(/\?$/, "");
+		window.history.replaceState({}, "", newUrl);
+	}
+</script>
+</head>
+<body class="topics inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<form action="/topics/" method="get" class="topic-search">
+	<p><label>What does the Bible say about
+		<input type="text" size="30" name="q" maxlength="100" value="Other Religions" /></label>?
+		<input type="submit" value="Find Out" id="top-submit" />
+	</p>
+	<p class="alpha-nav">
+						<a href="/topics/a">A</a>
+							&#8227;
+								<a href="/topics/b">B</a>
+							&#8227;
+								<a href="/topics/c">C</a>
+							&#8227;
+								<a href="/topics/d">D</a>
+							&#8227;
+								<a href="/topics/e">E</a>
+							&#8227;
+								<a href="/topics/f">F</a>
+							&#8227;
+								<a href="/topics/g">G</a>
+							&#8227;
+								<a href="/topics/h">H</a>
+							&#8227;
+								<a href="/topics/i">I</a>
+							&#8227;
+								<a href="/topics/j">J</a>
+							&#8227;
+								<a href="/topics/k">K</a>
+							&#8227;
+								<a href="/topics/l">L</a>
+							&#8227;
+								<a href="/topics/m">M</a>
+							&#8227;
+								<a href="/topics/n">N</a>
+							&#8227;
+								<a href="/topics/o">O</a>
+							&#8227;
+								<a href="/topics/p">P</a>
+							&#8227;
+								<a href="/topics/q">Q</a>
+							&#8227;
+								<a href="/topics/r">R</a>
+							&#8227;
+								<a href="/topics/s">S</a>
+							&#8227;
+								<a href="/topics/t">T</a>
+							&#8227;
+								<a href="/topics/u">U</a>
+							&#8227;
+								<a href="/topics/v">V</a>
+							&#8227;
+								<a href="/topics/w">W</a>
+							&#8227;
+								<a href="/topics/y">Y</a>
+							&#8227;
+								<a href="/topics/z">Z</a>
+					</p></form>
+<h1><span class="small">		100 Bible Verses about
+	</span> Other Religions</h1>
+<p><a href="https://twitter.com/share?url=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fother_religions%2F" target="_blank" class="share" aria-label="Share on Twitter"><span style="background-color: #55acee"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M26.67 9.38c-.78.35-1.63.58-2.51.69.9-.54 1.6-1.4 1.92-2.42-.85.5-1.78.87-2.78 1.06a4.38 4.38 0 0 0-7.57 3c0 .34.04.68.11 1-3.64-.18-6.86-1.93-9.02-4.57-.38.65-.59 1.4-.59 2.2 0 1.52.77 2.86 1.95 3.64-.72-.02-1.39-.22-1.98-.55v.06c0 2.12 1.51 3.89 3.51 4.29a4.37 4.37 0 0 1-1.97.07c.56 1.74 2.17 3 4.09 3.04a8.82 8.82 0 0 1-5.44 1.87c-.35 0-.7-.02-1.04-.06a12.43 12.43 0 0 0 6.71 1.97c8.05 0 12.45-6.67 12.45-12.45 0-.19-.01-.38-.01-.57.84-.62 1.58-1.39 2.17-2.27z"/></g></svg></span></a>
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.openbible.info%2Ftopics%2Fother_religions%2F" target="_blank" class="share" aria-label="Share on Facebook"><span style="background-color: #3b5998"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><path d="M21 6.144C20.656 6.096 19.472 6 18.097 6c-2.877 0-4.85 1.66-4.85 4.7v2.62H10v3.557h3.247V26h3.895v-9.123h3.234l.497-3.557h-3.73v-2.272c0-1.022.292-1.73 1.858-1.73h2V6.143z" fill-rule="evenodd"/></g></svg></span></a></p>
+<form action="/topics/other_religions" method="post" id="vote"><input type="hidden" name="w" value="other_religions" /><input type="hidden" id="db" name="db" value="dy" />
+									<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+4%3A5-8&amp;version=ESV" class="bibleref">1 John 4:5-8</a>
+					<span class="note">
+						ESV / 541 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62004005-62004008" type="submit" id="vote_u_62004005-62004008" value="1">Helpful</button>
+					<button name="vote_d_62004005-62004008" type="submit" id="vote_d_62004005-62004008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They are from the world; therefore they speak from the world, and the world listens to them. We are from God. Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error. Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+14%3A6&amp;version=ESV" class="bibleref">John 14:6</a>
+					<span class="note">
+						ESV / 513 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43014006" type="submit" id="vote_u_43014006" value="1">Helpful</button>
+					<button name="vote_d_43014006" type="submit" id="vote_d_43014006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Jesus said to him, &#8220;I am the way, and the truth, and the life. No one comes to the Father except through me.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+8%3A5-6&amp;version=ESV" class="bibleref">1 Corinthians 8:5-6</a>
+					<span class="note">
+						ESV / 420 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46008005-46008006" type="submit" id="vote_u_46008005-46008006" value="1">Helpful</button>
+					<button name="vote_d_46008005-46008006" type="submit" id="vote_d_46008005-46008006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For although there may be so-called gods in heaven or on earth&#8212;as indeed there are many &#8220;gods&#8221; and many &#8220;lords&#8221;&#8212; yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+13%3A34-35&amp;version=ESV" class="bibleref">John 13:34-35</a>
+					<span class="note">
+						ESV / 296 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43013034-43013035" type="submit" id="vote_u_43013034-43013035" value="1">Helpful</button>
+					<button name="vote_d_43013034-43013035" type="submit" id="vote_d_43013034-43013035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+1%3A6-10&amp;version=ESV" class="bibleref">Galatians 1:6-10</a>
+					<span class="note">
+						ESV / 293 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48001006-48001010" type="submit" id="vote_u_48001006-48001010" value="1">Helpful</button>
+					<button name="vote_d_48001006-48001010" type="submit" id="vote_d_48001006-48001010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I am astonished that you are so quickly deserting him who called you in the grace of Christ and are turning to a different gospel&#8212; not that there is another one, but there are some who trouble you and want to distort the gospel of Christ. But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Deuteronomy+13%3A6-10&amp;version=ESV" class="bibleref">Deuteronomy 13:6-10</a>
+					<span class="note">
+						ESV / 214 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_05013006-05013010" type="submit" id="vote_u_05013006-05013010" value="1">Helpful</button>
+					<button name="vote_d_05013006-05013010" type="submit" id="vote_d_05013006-05013010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;If your brother, the son of your mother, or your son or your daughter or the wife you embrace or your friend who is as your own soul entices you secretly, saying, &#8216;Let us go and serve other gods,&#8217; which neither you nor your fathers have known, some of the gods of the peoples who are around you, whether near you or far off from you, from the one end of the earth to the other, you shall not yield to him or listen to him, nor shall your eye pity him, nor shall you spare him, nor shall you conceal him. But you shall kill him. Your hand shall be first against him to put him to death, and afterward the hand of all the people. You shall stone him to death with stones, because he sought to draw you away from the <span class="sc">Lord</span> your God, who brought you out of the land of Egypt, out of the house of slavery.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Deuteronomy+12%3A29-31&amp;version=ESV" class="bibleref">Deuteronomy 12:29-31</a>
+					<span class="note">
+						ESV / 208 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_05012029-05012031" type="submit" id="vote_u_05012029-05012031" value="1">Helpful</button>
+					<button name="vote_d_05012029-05012031" type="submit" id="vote_d_05012029-05012031" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;When the <span class="sc">Lord</span> your God cuts off before you the nations whom you go in to dispossess, and you dispossess them and dwell in their land, take care that you be not ensnared to follow them, after they have been destroyed before you, and that you do not inquire about their gods, saying, &#8216;How did these nations serve their gods?&#8212;that I also may do the same.&#8217; You shall not worship the <span class="sc">Lord</span> your God in that way, for every abominable thing that the <span class="sc">Lord</span> hates they have done for their gods, for they even burn their sons and their daughters in the fire to their gods.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+3%3A16-18&amp;version=ESV" class="bibleref">John 3:16-18</a>
+					<span class="note">
+						ESV / 206 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43003016-43003018" type="submit" id="vote_u_43003016-43003018" value="1">Helpful</button>
+					<button name="vote_d_43003016-43003018" type="submit" id="vote_d_43003016-43003018" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Micah+4%3A1-13&amp;version=ESV" class="bibleref">Micah 4:1-13</a>
+					<span class="note">
+						ESV / 190 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_33004001-33004013" type="submit" id="vote_u_33004001-33004013" value="1">Helpful</button>
+					<button name="vote_d_33004001-33004013" type="submit" id="vote_d_33004001-33004013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					It shall come to pass in the latter days that the mountain of the house of the <span class="sc">Lord</span> shall be established as the highest of the mountains, and it shall be lifted up above the hills; and peoples shall flow to it, and many nations shall come, and say: &#8220;Come, let us go up to the mountain of the <span class="sc">Lord</span>, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths.&#8221; For out of Zion shall go forth the law, and the word of the <span class="sc">Lord</span> from Jerusalem. He shall judge between many peoples, and shall decide disputes for strong nations far away; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore; but they shall sit every man under his vine and under his fig tree, and no one shall make them afraid, for the mouth of the <span class="sc">Lord</span> of hosts has spoken. For all the peoples walk each in the name of its god, but we will walk in the name of the <span class="sc">Lord</span> our God forever and ever. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+1%3A26&amp;version=ESV" class="bibleref">James 1:26</a>
+					<span class="note">
+						ESV / 189 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59001026" type="submit" id="vote_u_59001026" value="1">Helpful</button>
+					<button name="vote_d_59001026" type="submit" id="vote_d_59001026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Thessalonians+2%3A9-12&amp;version=ESV" class="bibleref">2 Thessalonians 2:9-12</a>
+					<span class="note">
+						ESV / 179 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_53002009-53002012" type="submit" id="vote_u_53002009-53002012" value="1">Helpful</button>
+					<button name="vote_d_53002009-53002012" type="submit" id="vote_d_53002009-53002012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The coming of the lawless one is by the activity of Satan with all power and false signs and wonders, and with all wicked deception for those who are perishing, because they refused to love the truth and so be saved. Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+12%3A47&amp;version=ESV" class="bibleref">John 12:47</a>
+					<span class="note">
+						ESV / 164 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43012047" type="submit" id="vote_u_43012047" value="1">Helpful</button>
+					<button name="vote_d_43012047" type="submit" id="vote_d_43012047" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If anyone hears my words and does not keep them, I do not judge him; for I did not come to judge the world but to save the world.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+15%3A16&amp;version=ESV" class="bibleref">John 15:16</a>
+					<span class="note">
+						ESV / 158 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43015016" type="submit" id="vote_u_43015016" value="1">Helpful</button>
+					<button name="vote_d_43015016" type="submit" id="vote_d_43015016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that whatever you ask the Father in my name, he may give it to you.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+12%3A32&amp;version=ESV" class="bibleref">John 12:32</a>
+					<span class="note">
+						ESV / 144 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43012032" type="submit" id="vote_u_43012032" value="1">Helpful</button>
+					<button name="vote_d_43012032" type="submit" id="vote_d_43012032" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And I, when I am lifted up from the earth, will draw all people to myself.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Timothy+2%3A5&amp;version=ESV" class="bibleref">1 Timothy 2:5</a>
+					<span class="note">
+						ESV / 141 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_54002005" type="submit" id="vote_u_54002005" value="1">Helpful</button>
+					<button name="vote_d_54002005" type="submit" id="vote_d_54002005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For there is one God, and there is one mediator between God and men, the man Christ Jesus,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jude+1%3A22&amp;version=ESV" class="bibleref">Jude 1:22</a>
+					<span class="note">
+						ESV / 130 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_65001022" type="submit" id="vote_u_65001022" value="1">Helpful</button>
+					<button name="vote_d_65001022" type="submit" id="vote_d_65001022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And have mercy on those who doubt;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+6%3A44&amp;version=ESV" class="bibleref">John 6:44</a>
+					<span class="note">
+						ESV / 116 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43006044" type="submit" id="vote_u_43006044" value="1">Helpful</button>
+					<button name="vote_d_43006044" type="submit" id="vote_d_43006044" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+14%3A9-10&amp;version=ESV" class="bibleref">John 14:9-10</a>
+					<span class="note">
+						ESV / 108 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43014009-43014010" type="submit" id="vote_u_43014009-43014010" value="1">Helpful</button>
+					<button name="vote_d_43014009-43014010" type="submit" id="vote_d_43014009-43014010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Jesus said to him, &#8220;Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, &#8216;Show us the Father&#8217;? Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but the Father who dwells in me does his works.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+2%3A21&amp;version=ESV" class="bibleref">Galatians 2:21</a>
+					<span class="note">
+						ESV / 107 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48002021" type="submit" id="vote_u_48002021" value="1">Helpful</button>
+					<button name="vote_d_48002021" type="submit" id="vote_d_48002021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I do not nullify the grace of God, for if righteousness were through the law, then Christ died for no purpose.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Joshua+24%3A15&amp;version=ESV" class="bibleref">Joshua 24:15</a>
+					<span class="note">
+						ESV / 104 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_06024015" type="submit" id="vote_u_06024015" value="1">Helpful</button>
+					<button name="vote_d_06024015" type="submit" id="vote_d_06024015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And if it is evil in your eyes to serve the <span class="sc">Lord</span>, choose this day whom you will serve, whether the gods your fathers served in the region beyond the River, or the gods of the Amorites in whose land you dwell. But as for me and my house, we will serve the <span class="sc">Lord</span>.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+5%3A5&amp;version=ESV" class="bibleref">1 John 5:5</a>
+					<span class="note">
+						ESV / 103 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62005005" type="submit" id="vote_u_62005005" value="1">Helpful</button>
+					<button name="vote_d_62005005" type="submit" id="vote_d_62005005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Who is it that overcomes the world except the one who believes that Jesus is the Son of God?				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Titus+3%3A5&amp;version=ESV" class="bibleref">Titus 3:5</a>
+					<span class="note">
+						ESV / 100 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_56003005" type="submit" id="vote_u_56003005" value="1">Helpful</button>
+					<button name="vote_d_56003005" type="submit" id="vote_d_56003005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+3%3A6&amp;version=ESV" class="bibleref">2 Corinthians 3:6</a>
+					<span class="note">
+						ESV / 96 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_47003006" type="submit" id="vote_u_47003006" value="1">Helpful</button>
+					<button name="vote_d_47003006" type="submit" id="vote_d_47003006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Who has made us sufficient to be ministers of a new covenant, not of the letter but of the Spirit. For the letter kills, but the Spirit gives life.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+5%3A4&amp;version=ESV" class="bibleref">Galatians 5:4</a>
+					<span class="note">
+						ESV / 92 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48005004" type="submit" id="vote_u_48005004" value="1">Helpful</button>
+					<button name="vote_d_48005004" type="submit" id="vote_d_48005004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					You are severed from Christ, you who would be justified by the law; you have fallen away from grace.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Timothy+4%3A1&amp;version=ESV" class="bibleref">1 Timothy 4:1</a>
+					<span class="note">
+						ESV / 88 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_54004001" type="submit" id="vote_u_54004001" value="1">Helpful</button>
+					<button name="vote_d_54004001" type="submit" id="vote_d_54004001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+3%3A20&amp;version=ESV" class="bibleref">Romans 3:20</a>
+					<span class="note">
+						ESV / 88 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45003020" type="submit" id="vote_u_45003020" value="1">Helpful</button>
+					<button name="vote_d_45003020" type="submit" id="vote_d_45003020" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+5%3A8&amp;version=ESV" class="bibleref">Romans 5:8</a>
+					<span class="note">
+						ESV / 85 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45005008" type="submit" id="vote_u_45005008" value="1">Helpful</button>
+					<button name="vote_d_45005008" type="submit" id="vote_d_45005008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But God shows his love for us in that while we were still sinners, Christ died for us.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+8%3A8-22&amp;version=ESV" class="bibleref">Acts 8:8-22</a>
+					<span class="note">
+						ESV / 84 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44008008-44008022" type="submit" id="vote_u_44008008-44008022" value="1">Helpful</button>
+					<button name="vote_d_44008008-44008022" type="submit" id="vote_d_44008008-44008022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So there was much joy in that city. But there was a man named Simon, who had previously practiced magic in the city and amazed the people of Samaria, saying that he himself was somebody great. They all paid attention to him, from the least to the greatest, saying, &#8220;This man is the power of God that is called Great.&#8221; And they paid attention to him because for a long time he had amazed them with his magic. But when they believed Philip as he preached good news about the kingdom of God and the name of Jesus Christ, they were baptized, both men and women. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Timothy+4%3A3-4&amp;version=ESV" class="bibleref">2 Timothy 4:3-4</a>
+					<span class="note">
+						ESV / 83 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_55004003-55004004" type="submit" id="vote_u_55004003-55004004" value="1">Helpful</button>
+					<button name="vote_d_55004003-55004004" type="submit" id="vote_d_55004003-55004004" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Peter+3%3A15&amp;version=ESV" class="bibleref">1 Peter 3:15</a>
+					<span class="note">
+						ESV / 76 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_60003015" type="submit" id="vote_u_60003015" value="1">Helpful</button>
+					<button name="vote_d_60003015" type="submit" id="vote_d_60003015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But in your hearts honor Christ the Lord as holy, always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+5%3A17&amp;version=ESV" class="bibleref">2 Corinthians 5:17</a>
+					<span class="note">
+						ESV / 76 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_47005017" type="submit" id="vote_u_47005017" value="1">Helpful</button>
+					<button name="vote_d_47005017" type="submit" id="vote_d_47005017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+12%3A3&amp;version=ESV" class="bibleref">1 Corinthians 12:3</a>
+					<span class="note">
+						ESV / 74 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46012003" type="submit" id="vote_u_46012003" value="1">Helpful</button>
+					<button name="vote_d_46012003" type="submit" id="vote_d_46012003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Therefore I want you to understand that no one speaking in the Spirit of God ever says &#8220;Jesus is accursed!&#8221; and no one can say &#8220;Jesus is Lord&#8221; except in the Holy Spirit.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+1%3A14&amp;version=ESV" class="bibleref">John 1:14</a>
+					<span class="note">
+						ESV / 72 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43001014" type="submit" id="vote_u_43001014" value="1">Helpful</button>
+					<button name="vote_d_43001014" type="submit" id="vote_d_43001014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+1%3A1-51&amp;version=ESV" class="bibleref">John 1:1-51</a>
+					<span class="note">
+						ESV / 72 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43001001-43001051" type="submit" id="vote_u_43001001-43001051" value="1">Helpful</button>
+					<button name="vote_d_43001001-43001051" type="submit" id="vote_d_43001001-43001051" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through him, and without him was not any thing made that was made. In him was life, and the life was the light of men. The light shines in the darkness, and the darkness has not overcome it. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+15%3A7&amp;version=ESV" class="bibleref">Luke 15:7</a>
+					<span class="note">
+						ESV / 72 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42015007" type="submit" id="vote_u_42015007" value="1">Helpful</button>
+					<button name="vote_d_42015007" type="submit" id="vote_d_42015007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Just so, I tell you, there will be more joy in heaven over one sinner who repents than over ninety-nine righteous persons who need no repentance.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+7%3A9&amp;version=ESV" class="bibleref">Jeremiah 7:9</a>
+					<span class="note">
+						ESV / 72 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24007009" type="submit" id="vote_u_24007009" value="1">Helpful</button>
+					<button name="vote_d_24007009" type="submit" id="vote_d_24007009" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Will you steal, murder, commit adultery, swear falsely, make offerings to Baal, and go after other gods that you have not known,				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+4%3A12&amp;version=ESV" class="bibleref">Acts 4:12</a>
+					<span class="note">
+						ESV / 70 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44004012" type="submit" id="vote_u_44004012" value="1">Helpful</button>
+					<button name="vote_d_44004012" type="submit" id="vote_d_44004012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Mark+13%3A22&amp;version=ESV" class="bibleref">Mark 13:22</a>
+					<span class="note">
+						ESV / 70 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_41013022" type="submit" id="vote_u_41013022" value="1">Helpful</button>
+					<button name="vote_d_41013022" type="submit" id="vote_d_41013022" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For false christs and false prophets will arise and perform signs and wonders, to lead astray, if possible, the elect.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+7%3A13-14&amp;version=ESV" class="bibleref">Matthew 7:13-14</a>
+					<span class="note">
+						ESV / 62 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40007013-40007014" type="submit" id="vote_u_40007013-40007014" value="1">Helpful</button>
+					<button name="vote_d_40007013-40007014" type="submit" id="vote_d_40007013-40007014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+John+1%3A10-11&amp;version=ESV" class="bibleref">2 John 1:10-11</a>
+					<span class="note">
+						ESV / 58 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_63001010-63001011" type="submit" id="vote_u_63001010-63001011" value="1">Helpful</button>
+					<button name="vote_d_63001010-63001011" type="submit" id="vote_d_63001010-63001011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, for whoever greets him takes part in his wicked works.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+8%3A11&amp;version=ESV" class="bibleref">Jeremiah 8:11</a>
+					<span class="note">
+						ESV / 58 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24008011" type="submit" id="vote_u_24008011" value="1">Helpful</button>
+					<button name="vote_d_24008011" type="submit" id="vote_d_24008011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They have healed the wound of my people lightly, saying, &#8216;Peace, peace,&#8217; when there is no peace.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+5%3A7&amp;version=ESV" class="bibleref">1 Corinthians 5:7</a>
+					<span class="note">
+						ESV / 57 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46005007" type="submit" id="vote_u_46005007" value="1">Helpful</button>
+					<button name="vote_d_46005007" type="submit" id="vote_d_46005007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Cleanse out the old leaven that you may be a new lump, as you really are unleavened. For Christ, our Passover lamb, has been sacrificed.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+4%3A42&amp;version=ESV" class="bibleref">John 4:42</a>
+					<span class="note">
+						ESV / 57 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43004042" type="submit" id="vote_u_43004042" value="1">Helpful</button>
+					<button name="vote_d_43004042" type="submit" id="vote_d_43004042" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They said to the woman, &#8220;It is no longer because of what you said that we believe, for we have heard for ourselves, and we know that this is indeed the Savior of the world.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+5%3A1&amp;version=ESV" class="bibleref">1 Corinthians 5:1</a>
+					<span class="note">
+						ESV / 56 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46005001" type="submit" id="vote_u_46005001" value="1">Helpful</button>
+					<button name="vote_d_46005001" type="submit" id="vote_d_46005001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					It is actually reported that there is sexual immorality among you, and of a kind that is not tolerated even among pagans, for a man has his father's wife.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+22%3A18-19&amp;version=ESV" class="bibleref">Revelation 22:18-19</a>
+					<span class="note">
+						ESV / 55 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66022018-66022019" type="submit" id="vote_u_66022018-66022019" value="1">Helpful</button>
+					<button name="vote_d_66022018-66022019" type="submit" id="vote_d_66022018-66022019" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I warn everyone who hears the words of the prophecy of this book: if anyone adds to them, God will add to him the plagues described in this book, and if anyone takes away from the words of the book of this prophecy, God will take away his share in the tree of life and in the holy city, which are described in this book.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+8%3A58&amp;version=ESV" class="bibleref">John 8:58</a>
+					<span class="note">
+						ESV / 55 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43008058" type="submit" id="vote_u_43008058" value="1">Helpful</button>
+					<button name="vote_d_43008058" type="submit" id="vote_d_43008058" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Jesus said to them, &#8220;Truly, truly, I say to you, before Abraham was, I am.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+19%3A34&amp;version=ESV" class="bibleref">Acts 19:34</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44019034" type="submit" id="vote_u_44019034" value="1">Helpful</button>
+					<button name="vote_d_44019034" type="submit" id="vote_d_44019034" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But when they recognized that he was a Jew, for about two hours they all cried out with one voice, &#8220;Great is Artemis of the Ephesians!&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+32%3A35&amp;version=ESV" class="bibleref">Jeremiah 32:35</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24032035" type="submit" id="vote_u_24032035" value="1">Helpful</button>
+					<button name="vote_d_24032035" type="submit" id="vote_d_24032035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They built the high places of Baal in the Valley of the Son of Hinnom, to offer up their sons and daughters to Molech, though I did not command them, nor did it enter into my mind, that they should do this abomination, to cause Judah to sin.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+29%3A13-31%3A31&amp;version=ESV" class="bibleref">Jeremiah 29:13-31:31</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24029013-24031031" type="submit" id="vote_u_24029013-24031031" value="1">Helpful</button>
+					<button name="vote_d_24029013-24031031" type="submit" id="vote_d_24029013-24031031" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					You will seek me and find me, when you seek me with all your heart. I will be found by you, declares the <span class="sc">Lord</span>, and I will restore your fortunes and gather you from all the nations and all the places where I have driven you, declares the <span class="sc">Lord</span>, and I will bring you back to the place from which I sent you into exile. &#8220;Because you have said, &#8216;The <span class="sc">Lord</span> has raised up prophets for us in Babylon,&#8217; thus says the <span class="sc">Lord</span> concerning the king who sits on the throne of David, and concerning all the people who dwell in this city, your kinsmen who did not go out with you into exile: &#8216;Thus says the <span class="sc">Lord</span> of hosts, behold, I am sending on them sword, famine, and pestilence, and I will make them like vile figs that are so rotten they cannot be eaten. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Isaiah+64%3A6&amp;version=ESV" class="bibleref">Isaiah 64:6</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_23064006" type="submit" id="vote_u_23064006" value="1">Helpful</button>
+					<button name="vote_d_23064006" type="submit" id="vote_d_23064006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					We have all become like one who is unclean, and all our righteous deeds are like a polluted garment. We all fade like a leaf, and our iniquities, like the wind, take us away.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Isaiah+53%3A5-7&amp;version=ESV" class="bibleref">Isaiah 53:5-7</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_23053005-23053007" type="submit" id="vote_u_23053005-23053007" value="1">Helpful</button>
+					<button name="vote_d_23053005-23053007" type="submit" id="vote_d_23053005-23053007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed. All we like sheep have gone astray; we have turned&#8212;every one&#8212;to his own way; and the <span class="sc">Lord</span> has laid on him the iniquity of us all. He was oppressed, and he was afflicted, yet he opened not his mouth; like a lamb that is led to the slaughter, and like a sheep that before its shearers is silent, so he opened not his mouth.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+22%3A4-8&amp;version=ESV" class="bibleref">2 Chronicles 22:4-8</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14022004-14022008" type="submit" id="vote_u_14022004-14022008" value="1">Helpful</button>
+					<button name="vote_d_14022004-14022008" type="submit" id="vote_d_14022004-14022008" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					He did what was evil in the sight of the <span class="sc">Lord</span>, as the house of Ahab had done. For after the death of his father they were his counselors, to his undoing. He even followed their counsel and went with Jehoram the son of Ahab king of Israel to make war against Hazael king of Syria at Ramoth-gilead. And the Syrians wounded Joram, and he returned to be healed in Jezreel of the wounds that he had received at Ramah, when he fought against Hazael king of Syria. And Ahaziah the son of Jehoram king of Judah went down to see Joram the son of Ahab in Jezreel, because he was wounded. But it was ordained by God that the downfall of Ahaziah should come about through his going to visit Joram. For when he came there, he went out with Jehoram to meet Jehu the son of Nimshi, whom the <span class="sc">Lord</span> had anointed to destroy the house of Ahab. And when Jehu was executing judgment on the house of Ahab, he met the princes of Judah and the sons of Ahaziah's brothers, who attended Ahaziah, and he killed them.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+15%3A3-13&amp;version=ESV" class="bibleref">2 Chronicles 15:3-13</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14015003-14015013" type="submit" id="vote_u_14015003-14015013" value="1">Helpful</button>
+					<button name="vote_d_14015003-14015013" type="submit" id="vote_d_14015003-14015013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For a long time Israel was without the true God, and without a teaching priest and without law, but when in their distress they turned to the <span class="sc">Lord</span>, the God of Israel, and sought him, he was found by them. In those times there was no peace to him who went out or to him who came in, for great disturbances afflicted all the inhabitants of the lands. They were broken in pieces. Nation was crushed by nation and city by city, for God troubled them with every sort of distress. But you, take courage! Do not let your hands be weak, for your work shall be rewarded.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=2+Chronicles+13%3A5-10&amp;version=ESV" class="bibleref">2 Chronicles 13:5-10</a>
+					<span class="note">
+						ESV / 52 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_14013005-14013010" type="submit" id="vote_u_14013005-14013010" value="1">Helpful</button>
+					<button name="vote_d_14013005-14013010" type="submit" id="vote_d_14013005-14013010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Ought you not to know that the <span class="sc">Lord</span> God of Israel gave the kingship over Israel forever to David and his sons by a covenant of salt? Yet Jeroboam the son of Nebat, a servant of Solomon the son of David, rose up and rebelled against his lord, and certain worthless scoundrels gathered about him and defied Rehoboam the son of Solomon, when Rehoboam was young and irresolute and could not withstand them. &#8220;And now you think to withstand the kingdom of the <span class="sc">Lord</span> in the hand of the sons of David, because you are a great multitude and have with you the golden calves that Jeroboam made you for gods. Have you not driven out the priests of the <span class="sc">Lord</span>, the sons of Aaron, and the Levites, and made priests for yourselves like the peoples of other lands? Whoever comes for ordination with a young bull or seven rams becomes a priest of what are not gods. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+4%3A18-19&amp;version=ESV" class="bibleref">Luke 4:18-19</a>
+					<span class="note">
+						ESV / 51 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42004018-42004019" type="submit" id="vote_u_42004018-42004019" value="1">Helpful</button>
+					<button name="vote_d_42004018-42004019" type="submit" id="vote_d_42004018-42004019" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed, to proclaim the year of the Lord's favor.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+33%3A14-34%3A17&amp;version=ESV" class="bibleref">Jeremiah 33:14-34:17</a>
+					<span class="note">
+						ESV / 51 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24033014-24034017" type="submit" id="vote_u_24033014-24034017" value="1">Helpful</button>
+					<button name="vote_d_24033014-24034017" type="submit" id="vote_d_24033014-24034017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Behold, the days are coming, declares the <span class="sc">Lord</span>, when I will fulfill the promise I made to the house of Israel and the house of Judah. In those days and at that time I will cause a righteous Branch to spring up for David, and he shall execute justice and righteousness in the land. In those days Judah will be saved, and Jerusalem will dwell securely. And this is the name by which it will be called: &#8216;The <span class="sc">Lord</span> is our righteousness.&#8217; &#8220;For thus says the <span class="sc">Lord</span>: David shall never lack a man to sit on the throne of the house of Israel, and the Levitical priests shall never lack a man in my presence to offer burnt offerings, to burn grain offerings, and to make sacrifices forever.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Mark+10%3A45&amp;version=ESV" class="bibleref">Mark 10:45</a>
+					<span class="note">
+						ESV / 42 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_41010045" type="submit" id="vote_u_41010045" value="1">Helpful</button>
+					<button name="vote_d_41010045" type="submit" id="vote_d_41010045" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Mark+5%3A1-43&amp;version=ESV" class="bibleref">Mark 5:1-43</a>
+					<span class="note">
+						ESV / 40 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_41005001-41005043" type="submit" id="vote_u_41005001-41005043" value="1">Helpful</button>
+					<button name="vote_d_41005001-41005043" type="submit" id="vote_d_41005001-41005043" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They came to the other side of the sea, to the country of the Gerasenes. And when Jesus had stepped out of the boat, immediately there met him out of the tombs a man with an unclean spirit. He lived among the tombs. And no one could bind him anymore, not even with a chain, for he had often been bound with shackles and chains, but he wrenched the chains apart, and he broke the shackles in pieces. No one had the strength to subdue him. Night and day among the tombs and on the mountains he was always crying out and cutting himself with stones. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+16%3A2-7&amp;version=ESV" class="bibleref">Proverbs 16:2-7</a>
+					<span class="note">
+						ESV / 40 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20016002-20016007" type="submit" id="vote_u_20016002-20016007" value="1">Helpful</button>
+					<button name="vote_d_20016002-20016007" type="submit" id="vote_d_20016002-20016007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					All the ways of a man are pure in his own eyes, but the <span class="sc">Lord</span> weighs the spirit. Commit your work to the <span class="sc">Lord</span>, and your plans will be established. The <span class="sc">Lord</span> has made everything for its purpose, even the wicked for the day of trouble. Everyone who is arrogant in heart is an abomination to the <span class="sc">Lord</span>; be assured, he will not go unpunished. By steadfast love and faithfulness iniquity is atoned for, and by the fear of the <span class="sc">Lord</span> one turns away from evil. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+115%3A4-11&amp;version=ESV" class="bibleref">Psalm 115:4-11</a>
+					<span class="note">
+						ESV / 40 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19115004-19115011" type="submit" id="vote_u_19115004-19115011" value="1">Helpful</button>
+					<button name="vote_d_19115004-19115011" type="submit" id="vote_d_19115004-19115011" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Their idols are silver and gold, the work of human hands. They have mouths, but do not speak; eyes, but do not see. They have ears, but do not hear; noses, but do not smell. They have hands, but do not feel; feet, but do not walk; and they do not make a sound in their throat. Those who make them become like them; so do all who trust in them. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Leviticus+18%3A21&amp;version=ESV" class="bibleref">Leviticus 18:21</a>
+					<span class="note">
+						ESV / 40 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_03018021" type="submit" id="vote_u_03018021" value="1">Helpful</button>
+					<button name="vote_d_03018021" type="submit" id="vote_d_03018021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					You shall not give any of your children to offer them to Molech, and so profane the name of your God: I am the <span class="sc">Lord</span>.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Genesis+12%3A1-3&amp;version=ESV" class="bibleref">Genesis 12:1-3</a>
+					<span class="note">
+						ESV / 40 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_01012001-01012003" type="submit" id="vote_u_01012001-01012003" value="1">Helpful</button>
+					<button name="vote_d_01012001-01012003" type="submit" id="vote_d_01012001-01012003" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now the <span class="sc">Lord</span> said to Abram, &#8220;Go from your country and your kindred and your father's house to the land that I will show you. And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing. I will bless those who bless you, and him who dishonors you I will curse, and in you all the families of the earth shall be blessed.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Jeremiah+19%3A5&amp;version=ESV" class="bibleref">Jeremiah 19:5</a>
+					<span class="note">
+						ESV / 39 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_24019005" type="submit" id="vote_u_24019005" value="1">Helpful</button>
+					<button name="vote_d_24019005" type="submit" id="vote_d_24019005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And have built the high places of Baal to burn their sons in the fire as burnt offerings to Baal, which I did not command or decree, nor did it come into my mind&#8212;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+13%3A8-18&amp;version=ESV" class="bibleref">Revelation 13:8-18</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66013008-66013018" type="submit" id="vote_u_66013008-66013018" value="1">Helpful</button>
+					<button name="vote_d_66013008-66013018" type="submit" id="vote_d_66013008-66013018" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And all who dwell on earth will worship it, everyone whose name has not been written before the foundation of the world in the book of life of the Lamb who was slain. If anyone has an ear, let him hear: If anyone is to be taken captive, to captivity he goes; if anyone is to be slain with the sword, with the sword must he be slain. Here is a call for the endurance and faith of the saints. Then I saw another beast rising out of the earth. It had two horns like a lamb and it spoke like a dragon. It exercises all the authority of the first beast in its presence, and makes the earth and its inhabitants worship the first beast, whose mortal wound was healed. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=James+1%3A12-4%3A1&amp;version=ESV" class="bibleref">James 1:12-4:1</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_59001012-59004001" type="submit" id="vote_u_59001012-59004001" value="1">Helpful</button>
+					<button name="vote_d_59001012-59004001" type="submit" id="vote_d_59001012-59004001" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Blessed is the man who remains steadfast under trial, for when he has stood the test he will receive the crown of life, which God has promised to those who love him. Let no one say when he is tempted, &#8220;I am being tempted by God,&#8221; for God cannot be tempted with evil, and he himself tempts no one. But each person is tempted when he is lured and enticed by his own desire. Then desire when it has conceived gives birth to sin, and sin when it is fully grown brings forth death. Do not be deceived, my beloved brothers. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Acts+2%3A25-28&amp;version=ESV" class="bibleref">Acts 2:25-28</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_44002025-44002028" type="submit" id="vote_u_44002025-44002028" value="1">Helpful</button>
+					<button name="vote_d_44002025-44002028" type="submit" id="vote_d_44002025-44002028" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For David says concerning him, &#8220;&#8216;I saw the Lord always before me, for he is at my right hand that I may not be shaken; therefore my heart was glad, and my tongue rejoiced; my flesh also will dwell in hope. For you will not abandon my soul to Hades, or let your Holy One see corruption. You have made known to me the paths of life; you will make me full of gladness with your presence.&#8217;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Zechariah+4%3A6&amp;version=ESV" class="bibleref">Zechariah 4:6</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_38004006" type="submit" id="vote_u_38004006" value="1">Helpful</button>
+					<button name="vote_d_38004006" type="submit" id="vote_d_38004006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then he said to me, &#8220;This is the word of the <span class="sc">Lord</span> to Zerubbabel: Not by might, nor by power, but by my Spirit, says the <span class="sc">Lord</span> of hosts.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Micah+6%3A3-5&amp;version=ESV" class="bibleref">Micah 6:3-5</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_33006003-33006005" type="submit" id="vote_u_33006003-33006005" value="1">Helpful</button>
+					<button name="vote_d_33006003-33006005" type="submit" id="vote_d_33006003-33006005" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;O my people, what have I done to you? How have I wearied you? Answer me! For I brought you up from the land of Egypt and redeemed you from the house of slavery, and I sent before you Moses, Aaron, and Miriam. O my people, remember what Balak king of Moab devised, and what Balaam the son of Beor answered him, and what happened from Shittim to Gilgal, that you may know the righteous acts of the <span class="sc">Lord</span>.&#8221;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ezekiel+36%3A24-27&amp;version=ESV" class="bibleref">Ezekiel 36:24-27</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_26036024-26036027" type="submit" id="vote_u_26036024-26036027" value="1">Helpful</button>
+					<button name="vote_d_26036024-26036027" type="submit" id="vote_d_26036024-26036027" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					I will take you from the nations and gather you from all the countries and bring you into your own land. I will sprinkle clean water on you, and you shall be clean from all your uncleannesses, and from all your idols I will cleanse you. And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put my Spirit within you, and cause you to walk in my statutes and be careful to obey my rules.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Proverbs+25%3A15&amp;version=ESV" class="bibleref">Proverbs 25:15</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_20025015" type="submit" id="vote_u_20025015" value="1">Helpful</button>
+					<button name="vote_d_20025015" type="submit" id="vote_d_20025015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					With patience a ruler may be persuaded, and a soft tongue will break a bone.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Kings+18%3A21&amp;version=ESV" class="bibleref">1 Kings 18:21</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_11018021" type="submit" id="vote_u_11018021" value="1">Helpful</button>
+					<button name="vote_d_11018021" type="submit" id="vote_d_11018021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And Elijah came near to all the people and said, &#8220;How long will you go limping between two different opinions? If the <span class="sc">Lord</span> is God, follow him; but if Baal, then follow him.&#8221; And the people did not answer him a word.				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Numbers+23%3A7&amp;version=ESV" class="bibleref">Numbers 23:7</a>
+					<span class="note">
+						ESV / 38 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_04023007" type="submit" id="vote_u_04023007" value="1">Helpful</button>
+					<button name="vote_d_04023007" type="submit" id="vote_d_04023007" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And Balaam took up his discourse and said, &#8220;From Aram Balak has brought me, the king of Moab from the eastern mountains: &#8216;Come, curse Jacob for me, and come, denounce Israel!&#8217;				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Revelation+2%3A2-6%3A17&amp;version=ESV" class="bibleref">Revelation 2:2-6:17</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_66002002-66006017" type="submit" id="vote_u_66002002-66006017" value="1">Helpful</button>
+					<button name="vote_d_66002002-66006017" type="submit" id="vote_d_66002002-66006017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;&#8216;I know your works, your toil and your patient endurance, and how you cannot bear with those who are evil, but have tested those who call themselves apostles and are not, and found them to be false. I know you are enduring patiently and bearing up for my name's sake, and you have not grown weary. But I have this against you, that you have abandoned the love you had at first. Remember therefore from where you have fallen; repent, and do the works you did at first. If not, I will come to you and remove your lampstand from its place, unless you repent. Yet this you have: you hate the works of the Nicolaitans, which I also hate. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+John+2%3A19-5%3A18&amp;version=ESV" class="bibleref">1 John 2:19-5:18</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_62002019-62005018" type="submit" id="vote_u_62002019-62005018" value="1">Helpful</button>
+					<button name="vote_d_62002019-62005018" type="submit" id="vote_d_62002019-62005018" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					They went out from us, but they were not of us; for if they had been of us, they would have continued with us. But they went out, that it might become plain that they all are not of us. But you have been anointed by the Holy One, and you all have knowledge. I write to you, not because you do not know the truth, but because you know it, and because no lie is of the truth. Who is the liar but he who denies that Jesus is the Christ? This is the antichrist, he who denies the Father and the Son. No one who denies the Son has the Father. Whoever confesses the Son has the Father also. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Colossians+2%3A10-4%3A10&amp;version=ESV" class="bibleref">Colossians 2:10-4:10</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_51002010-51004010" type="submit" id="vote_u_51002010-51004010" value="1">Helpful</button>
+					<button name="vote_d_51002010-51004010" type="submit" id="vote_d_51002010-51004010" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And you have been filled in him, who is the head of all rule and authority. In him also you were circumcised with a circumcision made without hands, by putting off the body of the flesh, by the circumcision of Christ, having been buried with him in baptism, in which you were also raised with him through faith in the powerful working of God, who raised him from the dead. And you, who were dead in your trespasses and the uncircumcision of your flesh, God made alive together with him, having forgiven us all our trespasses, by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Ephesians+2%3A6-6%3A12&amp;version=ESV" class="bibleref">Ephesians 2:6-6:12</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_49002006-49006012" type="submit" id="vote_u_49002006-49006012" value="1">Helpful</button>
+					<button name="vote_d_49002006-49006012" type="submit" id="vote_d_49002006-49006012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And raised us up with him and seated us with him in the heavenly places in Christ Jesus, so that in the coming ages he might show the immeasurable riches of his grace in kindness toward us in Christ Jesus. For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+3%3A11-17&amp;version=ESV" class="bibleref">1 Corinthians 3:11-17</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46003011-46003017" type="submit" id="vote_u_46003011-46003017" value="1">Helpful</button>
+					<button name="vote_d_46003011-46003017" type="submit" id="vote_d_46003011-46003017" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For no one can lay a foundation other than that which is laid, which is Jesus Christ. Now if anyone builds on the foundation with gold, silver, precious stones, wood, hay, straw&#8212; each one's work will become manifest, for the Day will disclose it, because it will be revealed by fire, and the fire will test what sort of work each one has done. If the work that anyone has built on the foundation survives, he will receive a reward. If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Corinthians+1%3A8-30&amp;version=ESV" class="bibleref">1 Corinthians 1:8-30</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_46001008-46001030" type="submit" id="vote_u_46001008-46001030" value="1">Helpful</button>
+					<button name="vote_d_46001008-46001030" type="submit" id="vote_d_46001008-46001030" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Who will sustain you to the end, guiltless in the day of our Lord Jesus Christ. God is faithful, by whom you were called into the fellowship of his Son, Jesus Christ our Lord. I appeal to you, brothers, by the name of our Lord Jesus Christ, that all of you agree, and that there be no divisions among you, but that you be united in the same mind and the same judgment. For it has been reported to me by Chloe's people that there is quarreling among you, my brothers. What I mean is that each one of you says, &#8220;I follow Paul,&#8221; or &#8220;I follow Apollos,&#8221; or &#8220;I follow Cephas,&#8221; or &#8220;I follow Christ.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+11%3A6-15&amp;version=ESV" class="bibleref">Romans 11:6-15</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45011006-45011015" type="submit" id="vote_u_45011006-45011015" value="1">Helpful</button>
+					<button name="vote_d_45011006-45011015" type="submit" id="vote_d_45011006-45011015" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					But if it is by grace, it is no longer on the basis of works; otherwise grace would no longer be grace. What then? Israel failed to obtain what it was seeking. The elect obtained it, but the rest were hardened, as it is written, &#8220;God gave them a spirit of stupor, eyes that would not see and ears that would not hear, down to this very day.&#8221; And David says, &#8220;Let their table become a snare and a trap, a stumbling block and a retribution for them; let their eyes be darkened so that they cannot see, and bend their backs forever.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+9%3A16-16%3A27&amp;version=ESV" class="bibleref">Romans 9:16-16:27</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45009016-45016027" type="submit" id="vote_u_45009016-45016027" value="1">Helpful</button>
+					<button name="vote_d_45009016-45016027" type="submit" id="vote_d_45009016-45016027" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So then it depends not on human will or exertion, but on God, who has mercy. For the Scripture says to Pharaoh, &#8220;For this very purpose I have raised you up, that I might show my power in you, and that my name might be proclaimed in all the earth.&#8221; So then he has mercy on whomever he wills, and he hardens whomever he wills. You will say to me then, &#8220;Why does he still find fault? For who can resist his will?&#8221; But who are you, O man, to answer back to God? Will what is molded say to its molder, &#8220;Why have you made me like this?&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+6%3A14-7%3A6&amp;version=ESV" class="bibleref">Romans 6:14-7:6</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45006014-45007006" type="submit" id="vote_u_45006014-45007006" value="1">Helpful</button>
+					<button name="vote_d_45006014-45007006" type="submit" id="vote_d_45006014-45007006" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For sin will have no dominion over you, since you are not under law but under grace. What then? Are we to sin because we are not under law but under grace? By no means! Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching to which you were committed, and, having been set free from sin, have become slaves of righteousness. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Luke+9%3A18-11%3A13&amp;version=ESV" class="bibleref">Luke 9:18-11:13</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_42009018-42011013" type="submit" id="vote_u_42009018-42011013" value="1">Helpful</button>
+					<button name="vote_d_42009018-42011013" type="submit" id="vote_d_42009018-42011013" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now it happened that as he was praying alone, the disciples were with him. And he asked them, &#8220;Who do the crowds say that I am?&#8221; And they answered, &#8220;John the Baptist. But others say, Elijah, and others, that one of the prophets of old has risen.&#8221; Then he said to them, &#8220;But who do you say that I am?&#8221; And Peter answered, &#8220;The Christ of God.&#8221; And he strictly charged and commanded them to tell this to no one, saying, &#8220;The Son of Man must suffer many things and be rejected by the elders and chief priests and scribes, and be killed, and on the third day be raised.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Mark+7%3A20-29&amp;version=ESV" class="bibleref">Mark 7:20-29</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_41007020-41007029" type="submit" id="vote_u_41007020-41007029" value="1">Helpful</button>
+					<button name="vote_d_41007020-41007029" type="submit" id="vote_d_41007020-41007029" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					And he said, &#8220;What comes out of a person is what defiles him. For from within, out of the heart of man, come evil thoughts, sexual immorality, theft, murder, adultery, coveting, wickedness, deceit, sensuality, envy, slander, pride, foolishness. All these evil things come from within, and they defile a person.&#8221; And from there he arose and went away to the region of Tyre and Sidon. And he entered a house and did not want anyone to know, yet he could not be hidden. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Matthew+11%3A12-12%3A50&amp;version=ESV" class="bibleref">Matthew 11:12-12:50</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_40011012-40012050" type="submit" id="vote_u_40011012-40012050" value="1">Helpful</button>
+					<button name="vote_d_40011012-40012050" type="submit" id="vote_d_40011012-40012050" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					From the days of John the Baptist until now the kingdom of heaven has suffered violence, and the violent take it by force. For all the Prophets and the Law prophesied until John, and if you are willing to accept it, he is Elijah who is to come. He who has ears to hear, let him hear. &#8220;But to what shall I compare this generation? It is like children sitting in the marketplaces and calling to their playmates, ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Daniel+2%3A13-11%3A45&amp;version=ESV" class="bibleref">Daniel 2:13-11:45</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_27002013-27011045" type="submit" id="vote_u_27002013-27011045" value="1">Helpful</button>
+					<button name="vote_d_27002013-27011045" type="submit" id="vote_d_27002013-27011045" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					So the decree went out, and the wise men were about to be killed; and they sought Daniel and his companions, to kill them. Then Daniel replied with prudence and discretion to Arioch, the captain of the king's guard, who had gone out to kill the wise men of Babylon. He declared to Arioch, the king's captain, &#8220;Why is the decree of the king so urgent?&#8221; Then Arioch made the matter known to Daniel. And Daniel went in and requested the king to appoint him a time, that he might show the interpretation to the king. Then Daniel went to his house and made the matter known to Hananiah, Mishael, and Azariah, his companions, ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Isaiah+14%3A1-32&amp;version=ESV" class="bibleref">Isaiah 14:1-32</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_23014001-23014032" type="submit" id="vote_u_23014001-23014032" value="1">Helpful</button>
+					<button name="vote_d_23014001-23014032" type="submit" id="vote_d_23014001-23014032" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					For the <span class="sc">Lord</span> will have compassion on Jacob and will again choose Israel, and will set them in their own land, and sojourners will join them and will attach themselves to the house of Jacob. And the peoples will take them and bring them to their place, and the house of Israel will possess them in the <span class="sc">Lord</span>'s land as male and female slaves. They will take captive those who were their captors, and rule over those who oppressed them. When the <span class="sc">Lord</span> has given you rest from your pain and turmoil and the hard service with which you were made to serve, you will take up this taunt against the king of Babylon: &#8220;How the oppressor has ceased, the insolent fury ceased! The <span class="sc">Lord</span> has broken the staff of the wicked, the scepter of rulers, ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+106%3A1-48&amp;version=ESV" class="bibleref">Psalm 106:1-48</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19106001-19106048" type="submit" id="vote_u_19106001-19106048" value="1">Helpful</button>
+					<button name="vote_d_19106001-19106048" type="submit" id="vote_d_19106001-19106048" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Praise the <span class="sc">Lord</span>! Oh give thanks to the <span class="sc">Lord</span>, for he is good, for his steadfast love endures forever! Who can utter the mighty deeds of the <span class="sc">Lord</span>, or declare all his praise? Blessed are they who observe justice, who do righteousness at all times! Remember me, O <span class="sc">Lord</span>, when you show favor to your people; help me when you save them, that I may look upon the prosperity of your chosen ones, that I may rejoice in the gladness of your nation, that I may glory with your inheritance. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Esther+5%3A1-14&amp;version=ESV" class="bibleref">Esther 5:1-14</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_17005001-17005014" type="submit" id="vote_u_17005001-17005014" value="1">Helpful</button>
+					<button name="vote_d_17005001-17005014" type="submit" id="vote_d_17005001-17005014" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					On the third day Esther put on her royal robes and stood in the inner court of the king's palace, in front of the king's quarters, while the king was sitting on his royal throne inside the throne room opposite the entrance to the palace. And when the king saw Queen Esther standing in the court, she won favor in his sight, and he held out to Esther the golden scepter that was in his hand. Then Esther approached and touched the tip of the scepter. And the king said to her, &#8220;What is it, Queen Esther? What is your request? It shall be given you, even to the half of my kingdom.&#8221; And Esther said, &#8220;If it please the king, let the king and Haman come today to a feast that I have prepared for the king.&#8221; Then the king said, &#8220;Bring Haman quickly, so that we may do as Esther has asked.&#8221; So the king and Haman came to the feast that Esther had prepared. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=1+Samuel+5%3A1-6%3A21&amp;version=ESV" class="bibleref">1 Samuel 5:1-6:21</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_09005001-09006021" type="submit" id="vote_u_09005001-09006021" value="1">Helpful</button>
+					<button name="vote_d_09005001-09006021" type="submit" id="vote_d_09005001-09006021" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					When the Philistines captured the ark of God, they brought it from Ebenezer to Ashdod. Then the Philistines took the ark of God and brought it into the house of Dagon and set it up beside Dagon. And when the people of Ashdod rose early the next day, behold, Dagon had fallen face downward on the ground before the ark of the <span class="sc">Lord</span>. So they took Dagon and put him back in his place. But when they rose early on the next morning, behold, Dagon had fallen face downward on the ground before the ark of the <span class="sc">Lord</span>, and the head of Dagon and both his hands were lying cut off on the threshold. Only the trunk of Dagon was left to him. This is why the priests of Dagon and all who enter the house of Dagon do not tread on the threshold of Dagon in Ashdod to this day. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Joshua+22%3A1-23%3A16&amp;version=ESV" class="bibleref">Joshua 22:1-23:16</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_06022001-06023016" type="submit" id="vote_u_06022001-06023016" value="1">Helpful</button>
+					<button name="vote_d_06022001-06023016" type="submit" id="vote_d_06022001-06023016" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					At that time Joshua summoned the Reubenites and the Gadites and the half-tribe of Manasseh, and said to them, &#8220;You have kept all that Moses the servant of the <span class="sc">Lord</span> commanded you and have obeyed my voice in all that I have commanded you. You have not forsaken your brothers these many days, down to this day, but have been careful to keep the charge of the <span class="sc">Lord</span> your God. And now the <span class="sc">Lord</span> your God has given rest to your brothers, as he promised them. Therefore turn and go to your tents in the land where your possession lies, which Moses the servant of the <span class="sc">Lord</span> gave you on the other side of the Jordan. Only be very careful to observe the commandment and the law that Moses the servant of the <span class="sc">Lord</span> commanded you, to love the <span class="sc">Lord</span> your God, and to walk in all his ways and to keep his commandments and to cling to him and to serve him with all your heart and with all your soul.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Leviticus+26%3A1-46&amp;version=ESV" class="bibleref">Leviticus 26:1-46</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_03026001-03026046" type="submit" id="vote_u_03026001-03026046" value="1">Helpful</button>
+					<button name="vote_d_03026001-03026046" type="submit" id="vote_d_03026001-03026046" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;You shall not make idols for yourselves or erect an image or pillar, and you shall not set up a figured stone in your land to bow down to it, for I am the <span class="sc">Lord</span> your God. You shall keep my Sabbaths and reverence my sanctuary: I am the <span class="sc">Lord</span>. &#8220;If you walk in my statutes and observe my commandments and do them, then I will give you your rains in their season, and the land shall yield its increase, and the trees of the field shall yield their fruit. Your threshing shall last to the time of the grape harvest, and the grape harvest shall last to the time for sowing. And you shall eat your bread to the full and dwell in your land securely. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Exodus+20%3A2-22%3A20&amp;version=ESV" class="bibleref">Exodus 20:2-22:20</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_02020002-02022020" type="submit" id="vote_u_02020002-02022020" value="1">Helpful</button>
+					<button name="vote_d_02020002-02022020" type="submit" id="vote_d_02020002-02022020" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;I am the <span class="sc">Lord</span> your God, who brought you out of the land of Egypt, out of the house of slavery. &#8220;You shall have no other gods before me. &#8220;You shall not make for yourself a carved image, or any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth. You shall not bow down to them or serve them, for I the <span class="sc">Lord</span> your God am a jealous God, visiting the iniquity of the fathers on the children to the third and the fourth generation of those who hate me, but showing steadfast love to thousands of those who love me and keep my commandments. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Exodus+12%3A13-15%3A26&amp;version=ESV" class="bibleref">Exodus 12:13-15:26</a>
+					<span class="note">
+						ESV / 36 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_02012013-02015026" type="submit" id="vote_u_02012013-02015026" value="1">Helpful</button>
+					<button name="vote_d_02012013-02015026" type="submit" id="vote_d_02012013-02015026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					The blood shall be a sign for you, on the houses where you are. And when I see the blood, I will pass over you, and no plague will befall you to destroy you, when I strike the land of Egypt. &#8220;This day shall be for you a memorial day, and you shall keep it as a feast to the <span class="sc">Lord</span>; throughout your generations, as a statute forever, you shall keep it as a feast. Seven days you shall eat unleavened bread. On the first day you shall remove leaven out of your houses, for if anyone eats what is leavened, from the first day until the seventh day, that person shall be cut off from Israel. On the first day you shall hold a holy assembly, and on the seventh day a holy assembly. No work shall be done on those days. But what everyone needs to eat, that alone may be prepared by you. And you shall observe the Feast of Unleavened Bread, for on this very day I brought your hosts out of the land of Egypt. Therefore you shall observe this day, throughout your generations, as a statute forever. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Genesis+15%3A1-17%3A27&amp;version=ESV" class="bibleref">Genesis 15:1-17:27</a>
+					<span class="note">
+						ESV / 35 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_01015001-01017027" type="submit" id="vote_u_01015001-01017027" value="1">Helpful</button>
+					<button name="vote_d_01015001-01017027" type="submit" id="vote_d_01015001-01017027" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					After these things the word of the <span class="sc">Lord</span> came to Abram in a vision: &#8220;Fear not, Abram, I am your shield; your reward shall be very great.&#8221; But Abram said, &#8220;O Lord <span class="sc">God</span>, what will you give me, for I continue childless, and the heir of my house is Eliezer of Damascus?&#8221; And Abram said, &#8220;Behold, you have given me no offspring, and a member of my household will be my heir.&#8221; And behold, the word of the <span class="sc">Lord</span> came to him: &#8220;This man shall not be your heir; your very own son shall be your heir.&#8221; And he brought him outside and said, &#8220;Look toward heaven, and number the stars, if you are able to number them.&#8221; Then he said to him, &#8220;So shall your offspring be.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Hebrews+9%3A1-11%3A40&amp;version=ESV" class="bibleref">Hebrews 9:1-11:40</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_58009001-58011040" type="submit" id="vote_u_58009001-58011040" value="1">Helpful</button>
+					<button name="vote_d_58009001-58011040" type="submit" id="vote_d_58009001-58011040" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Now even the first covenant had regulations for worship and an earthly place of holiness. For a tent was prepared, the first section, in which were the lampstand and the table and the bread of the Presence. It is called the Holy Place. Behind the second curtain was a second section called the Most Holy Place, having the golden altar of incense and the ark of the covenant covered on all sides with gold, in which was a golden urn holding the manna, and Aaron's staff that budded, and the tablets of the covenant. Above it were the cherubim of glory overshadowing the mercy seat. Of these things we cannot now speak in detail. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Galatians+1%3A1-3%3A29&amp;version=ESV" class="bibleref">Galatians 1:1-3:29</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_48001001-48003029" type="submit" id="vote_u_48001001-48003029" value="1">Helpful</button>
+					<button name="vote_d_48001001-48003029" type="submit" id="vote_d_48001001-48003029" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Paul, an apostle&#8212;not from men nor through man, but through Jesus Christ and God the Father, who raised him from the dead&#8212; and all the brothers who are with me, To the churches of Galatia: Grace to you and peace from God our Father and the Lord Jesus Christ, who gave himself for our sins to deliver us from the present evil age, according to the will of our God and Father, to whom be the glory forever and ever. Amen. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Romans+3%3A1-6%3A23&amp;version=ESV" class="bibleref">Romans 3:1-6:23</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_45003001-45006023" type="submit" id="vote_u_45003001-45006023" value="1">Helpful</button>
+					<button name="vote_d_45003001-45006023" type="submit" id="vote_d_45003001-45006023" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					Then what advantage has the Jew? Or what is the value of circumcision? Much in every way. To begin with, the Jews were entrusted with the oracles of God. What if some were unfaithful? Does their faithlessness nullify the faithfulness of God? By no means! Let God be true though every one were a liar, as it is written, &#8220;That you may be justified in your words, and prevail when you are judged.&#8221; But if our unrighteousness serves to show the righteousness of God, what shall we say? That God is unrighteous to inflict wrath on us? (I speak in a human way.) ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=John+10%3A1-17%3A26&amp;version=ESV" class="bibleref">John 10:1-17:26</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_43010001-43017026" type="submit" id="vote_u_43010001-43017026" value="1">Helpful</button>
+					<button name="vote_d_43010001-43017026" type="submit" id="vote_d_43010001-43017026" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					&#8220;Truly, truly, I say to you, he who does not enter the sheepfold by the door but climbs in by another way, that man is a thief and a robber. But he who enters by the door is the shepherd of the sheep. To him the gatekeeper opens. The sheep hear his voice, and he calls his own sheep by name and leads them out. When he has brought out all his own, he goes before them, and the sheep follow him, for they know his voice. A stranger they will not follow, but they will flee from him, for they do not know the voice of strangers.&#8221; ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Psalm+82%3A1-84%3A12&amp;version=ESV" class="bibleref">Psalm 82:1-84:12</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_19082001-19084012" type="submit" id="vote_u_19082001-19084012" value="1">Helpful</button>
+					<button name="vote_d_19082001-19084012" type="submit" id="vote_d_19082001-19084012" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					<span class="pt">A Psalm of Asaph. </span>God has taken his place in the divine council; in the midst of the gods he holds judgment: &#8220;How long will you judge unjustly and show partiality to the wicked? Selah Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked.&#8221; They have neither knowledge nor understanding, they walk about in darkness; all the foundations of the earth are shaken. ...				</p>
+			</div>
+								<div class="verse">
+				<h3>
+					<a href="https://www.biblegateway.com/passage/?search=Exodus+32%3A1-34%3A35&amp;version=ESV" class="bibleref">Exodus 32:1-34:35</a>
+					<span class="note">
+						ESV / 34 helpful votes					</span>
+					<span class="vote-buttons invisible"><button name="vote_u_02032001-02034035" type="submit" id="vote_u_02032001-02034035" value="1">Helpful</button>
+					<button name="vote_d_02032001-02034035" type="submit" id="vote_d_02032001-02034035" value="-1">Not Helpful</button></span>
+				</h3>
+				<p>
+					When the people saw that Moses delayed to come down from the mountain, the people gathered themselves together to Aaron and said to him, &#8220;Up, make us gods who shall go before us. As for this Moses, the man who brought us up out of the land of Egypt, we do not know what has become of him.&#8221; So Aaron said to them, &#8220;Take off the rings of gold that are in the ears of your wives, your sons, and your daughters, and bring them to me.&#8221; So all the people took off the rings of gold that were in their ears and brought them to Aaron. And he received the gold from their hand and fashioned it with a graving tool and made a golden calf. And they said, &#8220;These are your gods, O Israel, who brought you up out of the land of Egypt!&#8221; When Aaron saw this, he built an altar before it. And Aaron made a proclamation and said, &#8220;Tomorrow shall be a feast to the <span class="sc">Lord</span>.&#8221; ...				</p>
+			</div>
+			</form>
+<h2>Suggest a Verse</h2>
+<form action="/topics/other_religions" method="post" id="form-verse">
+	<h3><label for="preview">Enter a Verse Reference <span class="note">(e.g., <cite class="bibleref">John 3:16-17</cite>)</span></label></h3>
+	<p>
+		<input type="text" size="30" maxlength="100" name="preview" id="preview" value=""/>
+		<input type="submit" id="preview-button" value="Preview" />
+		<input type="hidden" name="verse" id="verse" value="" />
+		<br /><span class="note">Visit the <a href="https://www.biblegateway.com/">Bible</a> online to search for words if you don&rsquo;t know the specific passage your&rsquo;re looking for.</span>
+	</p>
+	<div id="preview-text">
+			</div>
+</form><script type="text/javascript">
+document.body.className += " script";
+var OB = {};
+
+OB.Verse =
+{
+	previewUrl: '/topics/tools/verse',
+
+	Preview: function(e)
+	{
+		e.preventDefault();
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", OB.Verse.previewUrl + "?verse=" + encodeURIComponent(document.getElementById("preview").value));
+		xhr.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				OB.Verse.PreviewResponse(JSON.parse(this.responseText));
+			}
+		}
+		xhr.send();
+	},
+
+	PreviewResponse: function(response)
+	{
+		if (response.content && response.id && response.reference)
+		{
+			document.getElementById("preview-text").innerHTML = '<h3>' + response.reference + '</h3><p>' + response.content + '</p><p><input type="submit" value="Suggest This Verse" /></p>';
+			document.getElementById("verse").value = response.id;
+		}
+		else
+		{
+			document.getElementById("preview-text").innerHTML = '<p class="error">Sorry, we couldn&#8217;t find a passage matching the verse you suggest. Please double-check your spelling and try again.</p>';
+		}
+	}
+};
+
+OB.Vote =
+{
+	myUrl: '/topics/tools/vote',
+
+	Vote: function(e)
+	{
+		e.preventDefault();
+		var encodedWord = encodeURIComponent(document.URL.replace(/\/+$/, '').split(/\//).pop());
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", OB.Vote.myUrl + "?w=" + encodedWord);
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send("word=" + encodedWord + "&db=" + encodeURIComponent(document.getElementById("db").value) + "&id=" + encodeURIComponent(this.id));
+		this.parentNode.innerHTML = "Thank you for your vote.";
+	},
+
+	Over: function()
+	{
+		this.className += " visible";
+	},
+
+	Out: function()
+	{
+		this.className = this.className.replace(/ visible/);
+	}
+};
+
+var buttons = document.querySelectorAll("form#vote button");
+for (var i = 0, j = buttons.length; i < j; i++) {
+	buttons[i].addEventListener("click", OB.Vote.Vote, false);
+}
+if (document.getElementById("preview-button")) {
+	document.getElementById("preview-button").addEventListener("click", OB.Verse.Preview, false);
+}
+var divs = document.querySelectorAll("div.verse");
+for (var i = 0, j = divs.length; i < j; i++) {
+	var div = divs[i];
+	div.addEventListener("mouseenter", OB.Vote.Over, false);
+	div.addEventListener("mouseleave", OB.Vote.Out, false);
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

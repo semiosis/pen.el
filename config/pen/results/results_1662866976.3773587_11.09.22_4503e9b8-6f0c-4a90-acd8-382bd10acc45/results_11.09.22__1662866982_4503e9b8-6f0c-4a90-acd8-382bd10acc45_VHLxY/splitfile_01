@@ -1,0 +1,10 @@
+"eprintln" is a macro that prints to stderr.
+
+```
+use cli_log::*;
+
+fn main() {
+    init_cli_log!();
+    eprintln!("Hello, world!");
+}
+```

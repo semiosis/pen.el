@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: FlexBuilder
+# contributor: Toptal & contributors
+# key: flexbuilder
+# --
+
+### FlexBuilder ###
+
+bin/
+bin-debug/
+bin-release/

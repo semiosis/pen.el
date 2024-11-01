@@ -1,0 +1,32 @@
+title: code one liners from natural language
+tags: code hci
+future-titles:
+- Get code snippet
+- Get snippet
+next-version: get-code-snippet.prompt
+prompt-version: 4
+doc: Get a one liner from natural langauge
+prompt: |
+  The following is a list of ways to use map with string/split in one line of code with Clojure:
+  <delim>
+  - (map first (split-at 3 "Hello World"))
+  - (map #(str/split % #"\s+") ["a-b-c" "1-2-3"])
+  - (map #(str % #" ") ["Hello" "World"])
+  - (map #(apply str (reverse %)) (re-seq #"[^ ]+" "hi there"))
+  <delim>
+  The following is a list of ways to <2> in one line of code with <1>:
+  <delim>
+  <:pp>-
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+postprocessor: sed 's/- //' | uniqnosort
+vars:
+- language
+- task
+examples:
+- bash
+- suspend laptop

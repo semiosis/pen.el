@@ -1,0 +1,7 @@
+
+shane@mele:~/notes$ echo "$(( i++ % 5))"
+shane@mele:~/notes$ echo "$(( i++ % 5))"
+shane@mele:~/notes$ echo "$(( i++ % 5))"
+shane@mele:~/notes$ echo "$(( i++ % 5))"
+shane@mele:~/notes$ echo "$(( i++ % 5))"
+shane@mele:

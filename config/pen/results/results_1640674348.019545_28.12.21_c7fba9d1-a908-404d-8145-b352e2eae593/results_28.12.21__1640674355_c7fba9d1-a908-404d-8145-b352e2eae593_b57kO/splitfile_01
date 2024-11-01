@@ -1,0 +1,7 @@
+covered a new type of neuron that can be used to learn representations of visual and
+    auditory inputs simultaneously.
+    https://arxiv.org/abs/1806.01260
+
+sparse transformer
+    https://github.com/lucidrains/sparse-transformer
+

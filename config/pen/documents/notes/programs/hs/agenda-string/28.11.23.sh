@@ -1,0 +1,5 @@
+cd /root/.pen/documents/agenda;  "agenda-string" "Deliverance from trial" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "agenda-string" "Deliverance from trial" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "agenda-string" "prayers" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "agenda-string" "contemplation" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "agenda-string" "Jesus clean me" "#" "<==" "zsh"

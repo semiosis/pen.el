@@ -1,0 +1,11 @@
+"multifile" is a directive that allows a predicate to be defined in multiple files.
+
+"genlsDirectlyList" is a predicate that is defined in multiple files.
+
+"gourmetFormalogFlag" is a predicate that is defined in multiple files.
+
+"are" is a predicate that is defined in multiple files.
+
+"isa" is a predicate that is defined in multiple files.
+
+"gourmetFormalogFlag" is a predicate that is defined in multiple

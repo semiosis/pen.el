@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "2:2" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Ephesians" "1:11" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "6:6" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "2:9" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "2:8-9" "#" "<==" "zsh"

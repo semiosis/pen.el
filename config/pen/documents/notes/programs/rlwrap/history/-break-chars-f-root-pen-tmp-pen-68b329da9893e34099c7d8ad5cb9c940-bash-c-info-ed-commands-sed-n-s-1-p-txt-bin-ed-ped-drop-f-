@@ -1,0 +1,19 @@
+H
+P
+i
+       PROGRAM DROP
+C SIMULATE TRAJECTORY DATA
+C X(T) = X0 + V0 T + 1/2 A T**2
+C ASSUMPTION: X0 = 0, V0 = 0
+C X(T) = 1/2 A T**2
+C SOLVE FOR T:
+T**2 = 2X / A
+C T = SQRT(2X / A)
+C T**2 = 2X / A
+       DOUBLEPRECISION X, T, G
+.
+w
+1,$n
+q
+H
+1,$n

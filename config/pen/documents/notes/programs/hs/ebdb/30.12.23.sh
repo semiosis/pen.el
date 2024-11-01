@@ -1,0 +1,7 @@
+cd /;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"
+cd /;  "ebdb" "#" "<==" "zsh"

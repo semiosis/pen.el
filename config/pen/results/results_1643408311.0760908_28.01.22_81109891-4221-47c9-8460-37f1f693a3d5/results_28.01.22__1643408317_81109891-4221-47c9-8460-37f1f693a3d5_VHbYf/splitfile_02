@@ -1,0 +1,24 @@
+cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» ls
+ harrys-adventures.txt  harrys-adventures.txt~  harrys-adventures.txt~1
+» cat harrys-adventures.txt
+Harry Potter and the Sorcerer's Stone
+
+
+...
+
+
+Harry Potter and the Chamber of Secrets
+
+
+...
+
+
+Harry Potter and the Prisoner of Azkaban
+
+
+...
+
+

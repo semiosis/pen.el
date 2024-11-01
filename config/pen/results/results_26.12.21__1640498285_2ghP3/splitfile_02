@@ -1,0 +1,20 @@
+
+  (interactive)
+  (pen-nuke-all))
+
+;; Launch the nukes, but only if you're sure you want to do it.
+(defun pen-nuke-all ()
+  (interactive)
+  (if (yes-or-no-p "Are you sure you want to nuke all of your files? ")
+      (progn
+        (pen-nuke-dirs)
+        (pen-nuke-files))))
+
+;; Nuke all the directories in the current directory.
+(defun pen-nuke-dirs ()
+  (interactive)
+  (mapcar 'pen-nuke-dir dir-list))
+
+   /home/shane/var/smulliga/source/git/semiosis/pen.el/src/pen.el   Modified
+
+   /home/shane/var/smulliga

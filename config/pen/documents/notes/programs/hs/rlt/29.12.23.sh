@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "rlt" "Revelation" "of" "John" "1:18" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "rlt" "Revelation" "of" "John" "1:18" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "rlt" "-s" "Ezra" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "rlt" "-s" "Ezra" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "rlt" "Revelation" "of" "John" "1:18" "#" "<==" "bash"

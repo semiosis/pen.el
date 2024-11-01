@@ -1,0 +1,12 @@
+import tensorflow as tf
+
+def f(x):
+    return x + 1
+
+g = tf.Graph()
+with g.as_default():
+    x = tf.placeholder(tf.float32)
+    y = f(x)
+
+gdef = g.as_graph_def()
+gdef.node[0].name

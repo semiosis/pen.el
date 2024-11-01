@@ -1,0 +1,18 @@
+
+  (let ((n (mod char 26)))
+    (if (= n 0)
+        "z"
+      (number-to-string n))))
+
+(defun pen-modeline-name-ascii ()
+  (let ((dn (pen-daemon-name)))
+    (cond ((string-equal "DEFAULT" dn)
+           "🖊")
+          ((s-matches? "pen-" dn)
+           (s-replace-regexp
+            "pen-emacsd-\\([0-9]*\\)"
+            (concat (ascii-letter-from-int 1)
+                    (ascii-letter-from-int 2))
+            dn))
+          (t
+           "emacs"))))

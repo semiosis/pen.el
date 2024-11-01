@@ -1,0 +1,1 @@
+cd /root/.pen/documents/agenda;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.pen/documents/agenda; /root/.pen/tmp/nsfa--tm-init-pin-root-pen-documents-agenda.sh" "#" "<==" "pen-xt"

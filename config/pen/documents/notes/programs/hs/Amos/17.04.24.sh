@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Amos" "5:18" "#" "<==" "zsh"
+cd /root/notes;  "Amos" "5:18-20" "#" "<==" "zsh"
+cd /root/notes;  "Amos" "1:2" "#" "<==" "zsh"
+cd /root/notes;  "Amos" "4:12" "#" "<==" "zsh"
+cd /root/notes;  "Amos" "5:8" "#" "<==" "zsh"

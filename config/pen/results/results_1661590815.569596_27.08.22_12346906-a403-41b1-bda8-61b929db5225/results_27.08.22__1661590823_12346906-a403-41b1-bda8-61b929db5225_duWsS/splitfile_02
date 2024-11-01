@@ -1,0 +1,21 @@
+ to the graveyard to search for him,
+and to their surprise, they discovered he’d
+been turned into one of the undead.
+
+On hearing this tale, your friend asks you to
+explain how it is possible for a person who wakes
+up every day at four in the morning could be turned
+into a vampire.
+'''
+# ==============================
+
+
+# ========= 2.4.2 ==========
+# Define a variable that represents a decimal number. Then, convert it into hexadecimal, binary and octal numbers as well as its original value. Name them hexdec, bindec and octdec respectively. Output the results using print() function. Refer to your text book for the formula to convert numbers from base 10 system to binary, octal and hexadecimal respectively.  Do not forget to add comments throughout your code.
+# ============================
+
+
+
+
+### == Main program == ###
+if __

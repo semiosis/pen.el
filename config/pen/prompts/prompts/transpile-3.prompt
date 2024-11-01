@@ -1,0 +1,50 @@
+task: "transpile"
+tags: transpilation code
+aliases:
+- transpile
+doc: "Given some code and a target language, transpile into that language"
+prompt-version: 4
+engine: OpenAI Codex
+prompt: |+
+    # The program in <from language>
+
+    cat program_in_<from language> <<EOD
+    <code>
+    EOD
+
+    # The exact same program in <to language>
+
+    cat program_in_<to language> <<EOD
+xlr-n-generate: 5
+inject-gen-start: "\n"
+temperature: 0.0
+# On each collated generation, rotate the temperature upwards by 0.1
+collation-temperature-stepper: "(mod (+ <temperature> 0.1) 1)"
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+best-of: 1
+cache: on
+stop-sequences:
+- "EOD"
+vars:
+- code
+- "from language"
+- "to language"
+preprocessors:
+- cat
+- slugify
+- slugify
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+examples:
+- "print(\"Hello world with empathy\")"
+- "Python"
+- "Ruby"
+n-test-runs: 5
+n-collate: 3
+n-completions: 2
+new-document: yes
+external-related:
+- "https://www.youtube.com/watch?v=Iq3rDFZOorw"
+- "https://semiosis.github.io/posts/the-codex-quine/"

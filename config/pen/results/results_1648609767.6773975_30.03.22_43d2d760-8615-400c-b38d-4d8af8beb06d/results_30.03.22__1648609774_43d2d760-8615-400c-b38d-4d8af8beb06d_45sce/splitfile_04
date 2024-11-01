@@ -1,0 +1,13 @@
+"newtype" is a new keyword introduced in GHC 7.8.
+
+The newtype keyword allows you to create a new type that wraps an existing type.
+
+newtype is a keyword, not a class.
+
+newtype is used to create a new type that wraps an existing type.
+
+newtype is used to create a new type that wraps an existing type.
+
+newtype is used to create a new type that wraps an existing type.
+
+newtype is used to create

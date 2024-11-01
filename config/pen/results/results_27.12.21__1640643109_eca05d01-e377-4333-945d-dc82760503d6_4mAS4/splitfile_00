@@ -1,0 +1,19 @@
+CNC-MACHINE-CLI(1)                     User Commands                    CNC-MACHINE-CLI(1)
+
+NAME
+       cnc-machine-cli - CNC-Machine CLI
+
+SYNOPSIS
+       cnc-machine-cli
+
+DESCRIPTION
+       This is a CLI for CNC-Machine.
+
+EXAMPLES
+       cnc-machine-cli
+
+AUTHOR
+       Written by Jonas Häggqvist.
+
+REPORTING BUGS
+       Report bugs

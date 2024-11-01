@@ -1,0 +1,2 @@
+trap 'echo "Interrupted"; exit 1' INT
+trap 'echo "Terminated"; exit 1' TERM

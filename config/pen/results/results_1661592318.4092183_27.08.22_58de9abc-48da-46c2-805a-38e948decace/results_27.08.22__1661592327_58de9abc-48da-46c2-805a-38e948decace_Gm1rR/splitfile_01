@@ -1,0 +1,23 @@
+.
+
+import qualified Data.ByteString as B
+import qualified Data.Text as T
+import Data.Text.IO (readFile)
+
+main = do
+  input <- B.readFile "input.csv"
+
+  -- parse CSV into a list of rows, where each row is a list of cells
+  rows = input \\ "\\n" \\ "," map T.words
+
+  -- parse each row into a list of cells, where each cell is a string
+  cells = concatMap (\row -> row \\ ",") rows
+
+  -- parse each cell into an integer, if it can be parsed
+  ints = map (\cell -> read cell :: Int) cells
+
+  -- sum up the integers in the last column
+  sum = sum $ filter (\i -> i > 0) $ takeWhile (\i -> i /= -1) ints
+
+  print sum
+EOD

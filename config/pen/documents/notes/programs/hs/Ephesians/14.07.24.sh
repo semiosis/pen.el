@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Ephesians" "1:13" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "1:13-14" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Ephesians" "5:18" "#" "<==" "zsh"
+cd /root/notes;  "Ephesians" "5:18-19" "#" "<==" "zsh"
+cd /root/notes;  "Ephesians" "5:18-20" "#" "<==" "zsh"
+cd /root/notes;  "Ephesians" "5:18-21" "#" "<==" "zsh"

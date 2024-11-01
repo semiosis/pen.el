@@ -1,0 +1,2 @@
+ (re-matches #"\s*([^:]+):(.*)" input "libname:srcs\\n")
+

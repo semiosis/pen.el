@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "Hebrews" "11:7" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Hebrews" "12:18" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Hebrews" "12:18-25" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Hebrews" "13:4" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Hebrews" "11:20" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Hebrews" "11:11" "#" "<==" "bash"

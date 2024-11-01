@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: import-sy
+# group: import
+# key: sy
+# --
+import spacy
+import spacy as sy
+from spacy.en import English
+import snips_nlu
+
+import problog
+import problog as pl
+from problog.program import PrologString
+from problog import get_evaluatable
+from problog.evaluator import SemiringLogProbability
+from problog.logic import Term, Constant

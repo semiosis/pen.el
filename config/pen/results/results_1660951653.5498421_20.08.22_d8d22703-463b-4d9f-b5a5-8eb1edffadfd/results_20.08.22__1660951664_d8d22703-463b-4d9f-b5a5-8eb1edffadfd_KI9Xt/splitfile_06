@@ -1,0 +1,22 @@
+
+#
+# The source is specified with the 'source' variable, and the content
+# is specified with the 'content' variable.  The content can be a list
+# of files, or a directory (in which case all files in the directory
+# are synced).  If a directory is specified, only files that end in
+# .yaml are synced.  The destination is specified with the 'dest'
+# variable, which defaults to /apps/content/new_collection.
+---
+- hosts: localhost
+  remote_user: root
+
+  vars:
+    source: "{{ item.source }}"
+    dest: "{{ item.dest }}"
+
+  tasks:
+
+    - name: Copy content from source to destination
+      copy: src="{{ item.source }}" dest="{{ item.dest }}" flat=yes
+
+    - name: Make sure permissions are correct on collection

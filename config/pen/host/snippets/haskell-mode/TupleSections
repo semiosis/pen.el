@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: let
+# group: layout
+# key: let
+# expand-env: ((yas-indent-line 'fixed))
+# --
+let {s1 = (x^2 + y^2); s2 = (x+y) ^ 2;} in
+
+minutesPerDay =
+  let
+    minutesPerHour = 60
+    hoursPerDay = 24
+  in
+    minutesPerHour * hoursPerDay

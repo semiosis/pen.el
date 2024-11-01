@@ -1,0 +1,5 @@
+"ScopedTypeVariables" is a GHC extension that allows you to declare that a type variable is in scope for the rest of the current module. It is a useful extension that allows you to limit the scope of a type variable to a single module.
+
+The extension is enabled by the flag "ScopedTypeVariables" (see the "LANGUAGE" pragma in the above example).
+
+The extension is enabled by the flag "ScopedTypeVariables" (see the "LANGUAGE"

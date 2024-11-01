@@ -1,0 +1,100 @@
+glossary.org
+
+package
+    Nothing but a directory with some code
+    files, which exposes different variables
+    (features) from a single point of
+    reference.
+
+    This is a package:
+    ${GOPATH%%:*}/src/github.com/mullikine/google-spreadsheet-cli
+
+module
+    A collection of related Go packages that
+    are versioned together as a single unit.
+
+    Modules record precise dependency
+    requirements and create reproducible
+    builds.
+
+    Most often, a version control repository
+    contains exactly one module defined in the
+    repository root.
+
+Go concurrency primitives
+    There are 2:
+        goroutines
+        channels
+
+array
+    Has a fixed size, unlike a slice.
+
+slice
+    A dynamic view into a subset of an array.
+    
+    Much more common than arrays.
+
+map
+    in other languages
+        hash
+        dict 
+
+Defer
+    Defers the execution of a function until
+    the surrounding function returns.
+
+    IMPORTANT
+
+    The deferred call's arguments are
+    evaluated immediately, but the function
+    call is not executed until the surrounding
+    function returns.
+
+chan
+    Channels are a typed conduit through which
+    you can send and receive values with the
+    channel operator, <-.
+
+    Easy concurrency / thread synchronization
+
+    See "glossary.org".
+    
+Concrete type
+    Not an interfacea.
+
+    Interface types provide contracts to
+    concrete types.
+
+    When you implement interface types into
+    concrete types, you don’t need to
+    explicitly declare the interface type
+    along with your struct definition.
+    Instead, it will implicitly implement the
+    interface types into your types at run
+    time.
+
+dep ensure
+    Run dep ensure to ensure vendor/ is in the
+    correct state for your configuration.
+
+    https://gist.github.com/subfuzion/12342599e26f5094e4e2d08e9d4ad50d
+
+context
+    https://golang.org/pkg/context/
+    
+    Package context defines the Context type,
+    which carries deadlines, cancelation
+    signals, and other request-scoped values
+    across API boundaries and between
+    processes.
+
+    Incoming requests to a server should
+    create a Context, and outgoing calls to
+    servers should accept a Context. The chain
+    of function calls between them must
+    propagate the Context, optionally
+    replacing it with a derived Context
+    created using WithCancel, WithDeadline,
+    WithTimeout, or WithValue. When a Context
+    is canceled, all Contexts derived from it
+    are also canceled.

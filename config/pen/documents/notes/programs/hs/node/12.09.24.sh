@@ -1,0 +1,1 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "node" "/root/.emacs.d/.cache/lsp/npm/typescript-language-server/bin/typescript-language-server" "--tsserver-path" "/root/.emacs.d/.cache/lsp/npm/typescript/bin/tsserver" "--stdio" "#" "<==" "emacs"

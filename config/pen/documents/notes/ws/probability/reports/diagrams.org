@@ -1,0 +1,121 @@
+#+TITLE:  Probability diagrams
+#+DATE: <2024-04-24 Wed>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: probability problog emacs
+
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+# TODO Get a good font
+# fc-list :outline -f "%{family}\n"
+
+#+LATEX_COMPILER: xelatex
+#+LATEX_HEADER_EXTRA: \usepackage{fontspec}
+#+LATEX_HEADER_EXTRA: \setmainfont{DejaVu Sans}
+
+# k = A e − E a R T ,
+
+# It's possible to copy and paste these
+# https://en.wikipedia.org/wiki/Arrhenius_equation
+
+# https://chemistry7.wordpress.com/wp-content/uploads/2014/03/updated-equation-sheet.pdf
+
+#+BEGIN_SRC graphviz-dot :filter "show-dot" :results verbatim drawer
+  digraph alarm2 { burglary -> alarm; earthquake -> alarm; alarm -> "calls(john)"; alarm -> "calls(...)"; alarm -> "calls(mary)"; } 
+#+END_SRC
+
+#+RESULTS:
+:results:
+                    +------------+
+                    |  burglary  |
+                    +------------+
+                      |
+                      |
+                      v
++-------------+     +--------------------------+     +-------------+
+| calls(john) | <-- |          alarm           | --> | calls(mary) |
++-------------+     +--------------------------+     +-------------+
+                      |             ^
+                      |             |
+                      v             |
+                    +------------++------------+
+                    | calls(...) || earthquake |
+                    +------------++------------+
+:end:
+
+
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+
+          ··
+         :O :
+      ··  |   ··
+     :O =:S :-O :
+          ··  ··
+
+#+END_SRC
+
+Chemistry equations:
+- Arrhenius equation
+- Butler–Volmer equation
+- Eyring equation
+- Henderson–Hasselbalch equation
+- Michaelis–Menten equation
+- Nernst equation
+- Schrödinger equation
+- Urey–Bigeleisen–Mayer equation
+
+** Arrhenius equation
+
+https://en.wikipedia.org/wiki/Arrhenius_equation
+
+\begin{equation}
+  {\displaystyle k=Ae^{\frac {-E_{\text{a}}}{RT}},}
+\end{equation}
+
+** Butler–Volmer equation
+
+https://en.wikipedia.org/wiki/Butler%E2%80%93Volmer_equation
+
+\begin{equation}
+  {\displaystyle j=j_{0}\cdot \left\{\exp \left[{\frac {\alpha _{\rm {a}}zF}{RT}}(E-E_{\rm {eq}})\right]-\exp \left[-{\frac {\alpha _{\rm {c}}zF}{RT}}(E-E_{\rm {eq}})\right]\right\}}
+\end{equation}
+
+- Eyring equation
+- Henderson–Hasselbalch equation
+- Michaelis–Menten equation
+- Nernst equation
+- Schrödinger equation
+- Urey–Bigeleisen–Mayer equation
+
+
+* Solving problems
+** 
+The valence e⁻ at the ⎴EL of [17 Cl]:
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  1s²2s²2p⁶3s²3p⁶3d¹
+          \---⏟----/ 7e⁻
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+            ··
+           :Cl:
+            ·
+#+END_SRC
+
+** TODO Make some digraphs for these:
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  ⎴ - top bracket
+
+  ⎵ - bottom bracket
+
+  🗖 - maximize
+
+  🗕 - minimize
+#+END_SRC
+
+Perhaps I could have a string-rewriter. Then I'd also need something to autocomplete/make suggestions for it.
+
+For example =[top]= should automatically become =⎴=.

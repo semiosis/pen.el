@@ -1,0 +1,1 @@
+s/\(.*\)=\(.*\)/#+BEGIN_SRC \2 :results silent

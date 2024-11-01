@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Luke" "1:16" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Luke" "1:35" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "Luke" "1:17" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Luke" "1:35" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Luke" "1:16" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Matthew" "5:1-2" "#" "<==" "bash"
+cd /root/.pen/documents/notes/ws/discipleship-group/weekly-journal;  "nem" "nasb" "Luke" "1:35" "#" "<==" "bash"

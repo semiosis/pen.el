@@ -1,0 +1,4 @@
+cd /;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--in-tm-2-pin-.sh > /root/.pen/tmp/tf_temp53mWSBh.txt" "#" "<==" "pen-xt"
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--pin-tmux-attach-t-localhost-.sh" "#" "<==" "pen-xt"
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--tmux-attach-t-cinema-localhost-user-.sh" "#" "<==" "pen-xt"
+cd /;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /root/.pen/tmp/nsfa--in-tm-2-pin-.sh > /root/.pen/tmp/tf_tempLlmVBz1.txt" "#" "<==" "pen-xt"

@@ -1,0 +1,4 @@
+;; population of country in millions
+;; arguments: (country)
+(message (eval '(population-of-country-in-millions "New Zealand")))
+--> 

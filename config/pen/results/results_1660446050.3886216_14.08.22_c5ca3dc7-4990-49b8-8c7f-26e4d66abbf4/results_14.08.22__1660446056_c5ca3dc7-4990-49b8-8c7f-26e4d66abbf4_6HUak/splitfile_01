@@ -1,0 +1,5 @@
+The above code is a simple program that will print out the weather forecast for the next few days.
+
+The getResults function is a function that takes a string and returns a list of strings.
+The fromMaybe function is a function that takes a default value and a Maybe value and returns the value inside the Maybe if it's not Nothing.
+The unlines function is a function that takes a list of strings and returns a string with the strings separated by newlines.

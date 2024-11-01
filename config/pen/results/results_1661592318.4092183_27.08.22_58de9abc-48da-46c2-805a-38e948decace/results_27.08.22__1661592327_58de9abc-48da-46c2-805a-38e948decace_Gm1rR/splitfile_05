@@ -1,0 +1,18 @@
+.
+
+import Data.Char
+import Data.List
+import Data.Maybe
+import Data.Text (Text)
+import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
+import qualified Data.Text.Lazy as TLZ
+import qualified Data.Text.Lazy.Builder as TLZB
+import qualified Data.Text.IO as TIO
+import qualified Data.Vector as V
+import qualified Data.Vector.Storable as VS
+import qualified Control.Applicative as AP
+import Control.Monad (forM_, when)
+import Control.Monad.Primitive (replicateM)
+import Control.Monad.ST (runST)
+import Control.Monad.ST.Lazy (runST)  -- for .fmapR_ .fmapR_ .fmapR_ .fmapR_ .fmapR_ .fmapR_ .fmap

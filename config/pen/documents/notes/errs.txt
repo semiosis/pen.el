@@ -1,0 +1,199 @@
+../.emacs.d/elpa/volatile-highlights-20160612.155/volatile-highlights.el: Warning: ‘pushnew’ is an obsolete alias (as of 27.1); use ‘cl-pushnew’ instead.
+../.emacs.d/elpa/volatile-highlights-20160612.155/volatile-highlights.el: Warning: ‘assert’ is an obsolete alias (as of 27.1); use ‘cl-assert’ instead.
+../.emacs.d/elpa/polymode-20220115.812/polymode-classes.el: Warning: Unknown type: face [5 times]
+../.emacs.d/elpa/polymode-20220115.812/polymode.el: Warning: Use keywords rather than deprecated positional arguments to `define-minor-mode'
+Error loading autoloads: (void-function f-join)
+zsh:cd:1: no such file or directory: ~/notes/
+(Shell command succeeded with no output)
+zsh:cd:1: no such file or directory: ~/notes/
+(Shell command succeeded with no output)
+../.emacs.d/elpa/emacsql-20210615.1539/emacsql.el: Warning: Non-symbol arguments to cl-defgeneric: (connection emacsql-connection)
+Waiting for git... [2 times]
+Cannot insert ("H" "Magithub" magithub-dispatch-popup) into magit-dispatch; C-h m not found
+Created outlook link.
+../.emacs.d/elpa/evil-20210726.2220/evil-commands.el: Warning: Missing format argument
+../.emacs.d/elpa/lsp-mode-20221223.1809/lsp-mode.el: Warning: Non-symbol arguments to cl-defgeneric: (process process) [5 times]
+../.emacs.d/elpa/multiple-cursors-20211112.2223/multiple-cursors-core.el: Warning: Use keywords rather than deprecated positional arguments to `define-minor-mode'
+../.emacs.d/elpa/multiple-cursors-20211112.2223/mc-cycle-cursors.el: Warning: ‘return-from’ is an obsolete alias (as of 27.1); use ‘cl-return-from’ instead.
+../.emacs.d/elpa/multiple-cursors-20211112.2223/mc-hide-unmatched-lines-mode.el: Warning: Use keywords rather than deprecated positional arguments to `define-minor-mode'
+Iedit default key binding is C-;
+../.emacs.d/elpa/iedit-20210805.723/iedit.el: Warning: Case 'symbol will match ‘quote’.  If that’s intended, write (symbol quote) instead.  Otherwise, don’t quote ‘symbol’.
+../.emacs.d/elpa/iedit-20210805.723/iedit.el: Warning: Case 'word will match ‘quote’.  If that’s intended, write (word quote) instead.  Otherwise, don’t quote ‘word’.
+../.emacs.d/elpa/iedit-20210805.723/iedit.el: Warning: Case 'regexp will match ‘quote’.  If that’s intended, write (regexp quote) instead.  Otherwise, don’t quote ‘regexp’.
+../.emacs.d/elpa/company-20210808.11/company.el: Warning: Case 'light will match ‘quote’.  If that’s intended, write (light quote) instead.  Otherwise, don’t quote ‘light’.
+../.emacs.d/elpa/pcre2el-20161120.2103/pcre2el.el: Warning: Use keywords rather than deprecated positional arguments to `define-minor-mode' [2 times]
+../.emacs.d/elpa/pcre2el-20161120.2103/pcre2el.el: Warning: ‘merge’ is an obsolete alias (as of 27.1); use ‘cl-merge’ instead.
+Warning: setting attribute ‘:foreground’ of face ‘trailing-whitespace’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘which-key-separator-face’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-header-line-left-margin’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘ediff-fine-diff-Ancestor’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-added’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-added’: nil value is invalid, use ‘unspecified’ instead.
+../.emacs.d/elpa/macrostep-20161120.2106/macrostep.el: Warning: Use keywords rather than deprecated positional arguments to `define-minor-mode'
+[tree-sitter-langs] Running (git rev-parse --show-toplevel) in /root/.emacs.d/elpa/tree-sitter-langs-20211213.159/
+The directory /root/.emacs.d/elpa/tree-sitter-langs-20211213.159/ doesn’t seem to be a git working dir. Grammar-building functions will not work.
+tree-sitter-langs: Grammar bundle v0.10.12 was already installed; skipped
+../.emacs.d/elpa/tree-sitter-indent-20211128.2236/tree-sitter-indent.el: Warning: Use keywords rather than deprecated positional arguments to `define-minor-mode'
+Loading /root/.emacs.d/host/pen.el/src/pen-example-config.el (source)...
+Loading yamlmod!
+Directory ~/notes/
+(Shell command succeeded with no output) [3 times]
+../.emacs.d/host/pen.el/src/asoc.el: Warning: Case 'eq will match ‘quote’.  If that’s intended, write (eq quote) instead.  Otherwise, don’t quote ‘eq’.
+Loading /root/.emacs.d/elpa/org-trello-20210314.1901/org-trello-setup.el (source)...done
+../.emacs.d/elpa/session-20120511.0/session.el: Warning: ‘incf’ is an obsolete alias (as of 27.1); use ‘cl-incf’ instead. [2 times]
+../.emacs.d/elpa/session-20120511.0/session.el: Warning: ‘decf’ is an obsolete alias (as of 27.1); use ‘cl-decf’ instead. [2 times]
+../.emacs.d/elpa/session-20120511.0/session.el: Warning: ‘incf’ is an obsolete alias (as of 27.1); use ‘cl-incf’ instead. [6 times]
+../.emacs.d/elpa/session-20120511.0/session.el: Warning: ‘decf’ is an obsolete alias (as of 27.1); use ‘cl-decf’ instead.
+Directory ~/notes/
+(Shell command succeeded with no output)
+Directory ~/notes/
+(Shell command succeeded with no output)
+Directory ~/notes/
+(Shell command succeeded with no output)
+Directory ~/notes/
+(Shell command succeeded with no output)
+Directory ~/notes/
+(Shell command succeeded with no output)
+Directory ~/notes/
+(Shell command succeeded with no output)
+Created prompt link.
+Created el link.
+Created o link.
+Created open link.
+Created ev link.
+Created dg link.
+Created ci link.
+Created ic link.
+Created mx link.
+Created grep link.
+Created grep-app link.
+Created ros link.
+Created gli link.
+Created e link.
+Created d link.
+Created r link.
+Created ri link.
+Created egr link.
+Created pa link. [2 times]
+Created cmd link.
+Created sps link.
+Created pen-sps link.
+Created psps link.
+Created psp link.
+Created yt link.
+Created z link.
+Created l link.
+Created j link.
+Created pj link.
+Created J link.
+Created ead link.
+Created eww link.
+Created ob link.
+Created br link.
+Created brain link.
+Created chrome link.
+Created R link.
+Created ranger link.
+Created ff link.
+Created replace link.
+Created ftp link.
+Created bible link.
+Created v link.
+Created vs link.
+Created sp link.
+Created h link.
+Created tag link.
+Created lrk link.
+Created show-map link.
+Created describe-package link.
+Created map link.
+Created tcq link.
+Created y link.
+Created Y link.
+(Shell command succeeded with no output) [2 times]
+zsh:cd:1: no such file or directory: ~/notes/
+(x)
+Warning: setting attribute ‘:foreground’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+../.emacs.d/host/pen.el/src/helm-fzf.el: Warning: (lambda (process event) \...) quoted with ' rather than with #'
+../.emacs.d/host/pen.el/src/pen-eipe.el: Warning: ‘loop’ is an obsolete alias (as of 27.1); use ‘cl-loop’ instead.
+Warning: setting attribute ‘:foreground’ of face ‘trailing-whitespace’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘which-key-separator-face’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-header-line-left-margin’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:foreground’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘ediff-fine-diff-Ancestor’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-added’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-added’: nil value is invalid, use ‘unspecified’ instead.
+../.emacs.d/elpa/highlight-indent-guides-20200820.2328/highlight-indent-guides.el: Warning: Use keywords rather than deprecated positional arguments to `define-minor-mode'
+Directory ~/notes/
+(Shell command succeeded with no output)
+Loading /root/.emacs.d/.session...done
+Turning on magit-auto-revert-mode...done
+Warning: setting attribute ‘:foreground’ of face ‘trailing-whitespace’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-added’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-added’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘ediff-fine-diff-Ancestor’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-header-line-left-margin’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘which-key-separator-face’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:foreground’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+For information about GNU Emacs and the GNU system, type C-h C-a.
+Warning: setting attribute ‘:foreground’ of face ‘trailing-whitespace’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘org-level-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-added’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-removed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-added’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘diff-indicator-changed’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘ediff-fine-diff-Ancestor’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-1’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-2’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-3’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘markdown-header-face-4’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-header-line-left-margin’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘which-key-separator-face’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:foreground’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+Warning: setting attribute ‘:background’ of face ‘helm-grep-match’: nil value is invalid, use ‘unspecified’ instead.
+Package cl is deprecated
+Mark saved where search started

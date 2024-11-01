@@ -1,0 +1,33 @@
+e:/root/.emacs.d/host/pen.el/docs/faith-and-judgement.org
+
+Matthew 5:17: Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them.􂚠
+Luke 24:44: Then he said to them, These are my words that I spoke to you while I was still with you, that everything written about me in the Law of Moses and the Prophets and the Psalms must be fulfilled.􂿍
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 3:34
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+John 3:34
+‾‾‾‾‾‾‾‾‾
+For He whom God has sent speaks the words of
+God; for He gives the Spirit without measure.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 6:63
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+John 6:63
+‾‾‾‾‾‾‾‾‾
+It is the Spirit who gives life; the flesh
+profits nothing; the words that I have spoken
+to you are spirit and are life.
+
+(NASB)
+#+end_src

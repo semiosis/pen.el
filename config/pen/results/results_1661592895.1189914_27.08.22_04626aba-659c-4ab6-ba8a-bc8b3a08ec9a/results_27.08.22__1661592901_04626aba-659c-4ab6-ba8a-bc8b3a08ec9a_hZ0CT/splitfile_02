@@ -1,0 +1,4 @@
+
+  let cols = maximum (map length rows)
+  mapM_ (\r -> putStrLn $ map (\c -> if c < cols then replicate (cols - c) " " else "") r) rows
+EOD

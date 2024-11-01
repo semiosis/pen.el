@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: python
+# key: python
+# --
+read -r -d '' PYCODE <<HEREDOC
+try:
+from googlesearch import search
+except ImportError:
+print("No module named 'google' found")
+
+# to search
+query = "Geeksforgeeks"
+
+for j in search(query, tld="co.in", num=20, stop=1, pause=2):
+print(j)
+HEREDOC
+
+python3.6 -c "$PYCODE"

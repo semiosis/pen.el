@@ -1,0 +1,6 @@
+
+EOD
+
+# duplicate the markdown file to the output folder
+# cd $output_dir && cp -f draft.markdown index.markdown
+cp -f draft.markdown index.markdown

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: printf
+# group: string
+# key: printf
+# --
+(format "-%s-%s-" "foo" "bar")
+(format-spec "*-testing-%n-%j-*" (list (cons ?n "Cool") (cons ?j "Whip")))

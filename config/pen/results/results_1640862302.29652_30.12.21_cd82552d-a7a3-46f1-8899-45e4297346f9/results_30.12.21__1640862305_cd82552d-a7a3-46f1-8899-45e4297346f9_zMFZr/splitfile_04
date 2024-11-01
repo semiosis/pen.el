@@ -1,0 +1,7 @@
+
+Quit is a key binding.
+It is usually bound to the "Control-g" key.
+When you press it, your editor will hide.
+You can press "Control-g" many times in a row
+to make it trigger faster.
+

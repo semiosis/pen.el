@@ -1,0 +1,11 @@
+"random-uuid"
+  (random-uuid)
+  "Returns a random UUID"
+  :form
+  {:type :text
+   :label "UUID"}
+  :ret
+  {:type :text
+   :label "Random UUID"})
+
+

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Arcanist
+# contributor: Toptal & contributors
+# key: arcanist
+# --
+
+### Arcanist ###
+
+.phutil_module_cache
+.divinercache/

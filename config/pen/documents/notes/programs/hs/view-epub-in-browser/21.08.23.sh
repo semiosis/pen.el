@@ -1,0 +1,6 @@
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "view-epub-in-browser" "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)/They Shall Expel Demons - Derek Prince.epub" "#" "<==" "zsh"
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "view-epub-in-browser" "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)/They Shall Expel Demons - Derek Prince.epub" "#" "<==" "zsh"
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "view-epub-in-browser" "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)/They Shall Expel Demons - Derek Prince.epub" "#" "<==" "zsh"
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "view-epub-in-browser" "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)/They Shall Expel Demons - Derek Prince.epub" "#" "<==" "zsh"
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "view-epub-in-browser" "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)/They Shall Expel Demons - Derek Prince.epub" "#" "<==" "zsh"
+cd "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)";  "view-epub-in-browser" "/root/.pen/ebooks/Derek Prince/They Shall Expel Demons (9)/They Shall Expel Demons - Derek Prince.epub" "#" "<==" "zsh"

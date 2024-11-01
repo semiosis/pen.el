@@ -1,0 +1,148 @@
+HTTP/1.1 200 OK
+Date: Fri, 20 Sep 2024 06:55:39 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 8c5fe940292ad9b3-AKL
+CF-Cache-Status: HIT
+Age: 2
+Cache-Control: public, max-age=30
+Expires: Fri, 20 Sep 2024 06:56:09 GMT
+Last-Modified: Fri, 20 Sep 2024 06:55:37 GMT
+Vary: Accept-Encoding
+Server: cloudflare
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tclers wiki">
+<meta name="author" content>
+<link rel="icon" href="/img/favicon.ico">
+<title>Tcl examples</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/nikit.css" type="text/css">
+<link rel="stylesheet" href="/css/sh_style.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/css/theme.bootstrap_3.min.css" type="text/css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+</head>
+<body onload="sh_highlightDocument(); nikitUser();">
+<nav class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;Tcler&#39;s Wiki<span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a href="/welcome">Home</a></li>
+<li><a rel="nofollow" href="/recent">Changes</a></li>
+<li><a rel="nofollow" href="/_random">Random page</a></li>
+<li><a rel="nofollow" href="/_new">New page</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="dropdown" id="li_idPageEdit" style="display:none">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="name_idPageEdit">Page</span><span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a rel="nofollow" href="/_edit/Tcl+examples?A=1">Comment</a></li>
+<li><a rel="nofollow" hidden="true" href="/_edit/Tcl+examples">Edit</a></li>
+<li><a rel="nofollow" href="/_upload/Tcl+examples">Upload</a></li>
+<li><a rel="nofollow" href="/ref/Tcl+examples">References</a></li>
+<li><a rel="nofollow" href="/history/Tcl+examples">History</a></li>
+<li><hr></li>
+<li><a href="#a39b71bf702f55fb83dc017ef1bd7114e130e45e33a4a9143dca5705dd27fe0d"> Summary </a>
+</li>
+<li><a href="#8a7583448005a20dbc9ffa2cf18c9f1625193a3d96398eafd18610156d98f8ba"> See Also </a>
+</li>
+<li><a href="#47742718299e82699bc374b81e6ab6b22c2b19c674703379e03143e714e9e3c1"> Description </a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="li_idPageNoEdit" style="display:none">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="name_idPageNoEdit">Page</span><span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a rel="nofollow" href="/ref/Tcl+examples">References</a></li>
+<li><a rel="nofollow" href="/history/Tcl+examples">History</a></li>
+<li><hr></li>
+<li><a href="#a39b71bf702f55fb83dc017ef1bd7114e130e45e33a4a9143dca5705dd27fe0d"> Summary </a>
+</li>
+<li><a href="#8a7583448005a20dbc9ffa2cf18c9f1625193a3d96398eafd18610156d98f8ba"> See Also </a>
+</li>
+<li><a href="#47742718299e82699bc374b81e6ab6b22c2b19c674703379e03143e714e9e3c1"> Description </a>
+</li>
+</ul>
+</li>
+<li><a href="/page/Showcase">Showcase</a></li>
+<li><a href="/page/Tcl+Tutorial+Lesson+0">Tutorial</a></li>
+<li><a href="/page/Articles">Articles</a></li>
+<li><a href="/page/Tcl+Playground">Playground</a></li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;Help<span class="caret"></span></a>
+<ul class="dropdown-menu scrollable-menu" role="menu"><li><a rel="nofollow" href="/page/Help">Page Markup</a></li>
+<li><a rel="nofollow" href="/page/How+do+Wiki+Categories+work">Wiki Categories</a></li>
+<li><a rel="nofollow" href="/page/Contents">Topics</a></li>
+<li><a rel="nofollow" target="_blank" href="https://chiselapp.com/user/stevel/repository/nikit/ticket">Report Problems</a></li>
+<li><a rel="nofollow" href="/privacy">Privacy</a></li>
+<li><a rel="nofollow" href="/license">License</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="name_SMenu">User</span><span class="caret"></span></a>
+<ul class="dropdown-menu" id="ul_SMenu">
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-right" method="post" action="/search" id="searchform">
+<input name="Q" type="text" class="form-control" placeholder="Search..." />
+<input type="hidden" name="sites" value="wiki.tcl-lang.org" />
+</form>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<h2>Tcl examples</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<h2 id="a39b71bf702f55fb83dc017ef1bd7114e130e45e33a4a9143dca5705dd27fe0d" class="mkup_h1"> Summary </h2><p class="mkup_p">A list of examples for those <a class="mkup_a mkup_known" href="/page/Beginning+Tcl">Beginning Tcl</a></p><h2 id="8a7583448005a20dbc9ffa2cf18c9f1625193a3d96398eafd18610156d98f8ba" class="mkup_h1"> See Also </h2><dl class="mkup_dl"><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/Tcl+on+RosettaCode">RosettaCode</a></dt><dd class="mkup_dd">a site dedicated to comparing programming languages. <a class="mkup_a mkup_known" href="/page/DKF">DKF</a> has been tirelessly adding <a class="mkup_a mkup_known" href="/page/Tcl">Tcl</a> examples </dd></dl><dl class="mkup_dl"><dt class="mkup_dt"><a rel="nofollow" class="mkup_a" href="http://www.phaseit.net/claird/comp.lang.tcl/tcl-examples.html">Example fragments of Tcl source <span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></dt><dd class="mkup_dd">examples collected by <a class="mkup_a mkup_known" href="/page/CL">CL</a> </dd></dl><h2 id="47742718299e82699bc374b81e6ab6b22c2b19c674703379e03143e714e9e3c1" class="mkup_h1"> Description </h2><p class="mkup_p"><a class="mkup_a mkup_known" href="/page/The+Tcler%27s+Wiki">The Tcler's Wiki</a> is full of <a class="mkup_a mkup_known" href="/page/Tcl">Tcl</a> examples, but here's a subjective selection of short scripts that illustrate a point, so may be helpful for learners. All these are for a pure <i class="mkup_i">tclsh</i> - see also <a class="mkup_a mkup_known" href="/page/Tk+examples">Tk examples</a> for <i class="mkup_i"><a class="mkup_a mkup_known" href="/page/wish">wish</a></i> scripts.</p><p class="mkup_p">Please help arrange this from simple to complex!</p><dl class="mkup_dl"><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/Show+me+an+example">Show me an example</a></dt><dd class="mkup_dd">&quot;Hello world&quot; from one-liner to MFClike GUI</dd><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/Example+Scripts+Everybody+Should+Have">Example scripts everybody should have</a></dt><dd class="mkup_dd">grep,find... in Tcl</dd><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/An+HTTP+robot+in+Tcl">An HTTP robot in Tcl</a></dt><dd class="mkup_dd">automated data mining, e.g. zipcodes</dd><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/owh+%2D+a+fileless+tclsh">owh - a fileless tclsh</a></dt><dd class="mkup_dd">pass scriptlets on command line</dd><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/A+simple+database">A simple database</a></dt><dd class="mkup_dd">use an array and its powerful features</dd><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/chatTemp">chatTemp</a></dt><dd class="mkup_dd"></dd><dt class="mkup_dt"><a class="mkup_a mkup_known" href="/page/phasemachines">phasemachines</a></dt><dd class="mkup_dd"></dd></dl><hr><div class="mkup_centered"><table class="mkup_categories"><tr><td class="mkup_td"><a class="mkup_a" href="/page/Category+Example">Category Example</a></td></tr></table></div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="Footer">Updated 2014-04-09 03:07:09</div>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/js/jquery.tablesorter.combined.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/nikit.js"></script>
+<script type="text/javascript" src="/scripts/sh_main.js"></script>
+<script type="text/javascript" src="/scripts/sh_tcl.js"></script>
+<script type="text/javascript" src="/scripts/sh_c.js"></script>
+<script type="text/javascript" src="/scripts/sh_cpp.js"></script>
+
+<script src="https://hcaptcha.com/1/api.js"></script>
+<script>var clipboard = new ClipboardJS('.copybtn', {
+  text: function(trigger) {
+    return document.querySelector(trigger.getAttribute('data-clipboard-target')).textContent + '\n';
+  }
+});
+sort_tables();
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+
+- you: But couldn't it be the case that the file is actually a lazy bytestring, and therefore it is of type L.ByteString?
+- haskell guru: Yes, but if you think about it, it is

@@ -1,0 +1,187 @@
+libvterm
+    [abstract terminal library]
+
+    An abstract C99 library which implements a
+    VT220 or xterm-like terminal emulator.
+    
+    It doesn't use any particular graphics
+    toolkit or output system, instead it
+    invokes callback function pointers that
+    its embedding program should provide it to
+    draw on its behalf.
+    
+    It avoids calling malloc() during normal
+    running state, allowing it to be used in
+    embedded kernel situations.
+
+UPower
+    A piece of middleware for power management
+    on Linux systems.
+    
+    It enumerates power sources, maintains
+    statistics and history data on them and
+    notifies about status changes.
+    
+    It consists of a daemon, an application
+    programming interface and a set of command
+    line tools.
+
+Security-Enhanced Linux
+SELinux
+    A Linux kernel security module that
+    provides a mechanism for supporting access
+    control security policies, including
+    mandatory access controls (MAC).
+    
+    SELinux is a set of kernel modifications
+    and user-space tools that have been added
+    to various Linux distributions.
+
+autoreconf
+    Runs:
+    - autoconf,
+    - autoheader,
+    - aclocal,
+    - automake,
+    - libtoolize,
+    - and autopoint (when appropriate) repeatedly
+      to update the GNU Build System in the
+      specified directories and their
+      subdirectories (see Subdirectories). By
+      default, it only remakes those files that
+      are older than their sources. The
+      environment variables AUTOM4TE,
+    - AUTOCONF,
+      AUTOHEADER,
+    - AUTOMAKE,
+    - ACLOCAL,
+    - AUTOPOINT,
+    - LIBTOOLIZE,
+    - M4,
+    - and MAKE may be used to override the
+      invocation of the respective tools. 
+
+copy-on-write system
+copy-on-write filesystem
+CoW
+COW
+implicit sharing
+shadowing
+    Examples:
+    - AUFS,
+    - BTRFS,
+    - Device Mapper,
+    
+    A resource-management technique used in
+    computer programming to efficiently
+    implement a "duplicate" or "copy"
+    operation on modifiable resources.
+
+    If a resource is duplicated but not modified,
+    it is not necessary to create a new resource;
+    the resource can be shared between the copy
+    and the original.
+
+    Modifications must still create a copy, hence
+    the technique: the copy operation is deferred
+    to the first write.
+
+    By sharing resources in this way, it is
+    possible to significantly reduce the resource
+    consumption of unmodified copies, while adding
+    a small overhead to resource-modifying
+    operations.
+
+efivarfs
+    A (U)EFI variable filesystem The efivarfs
+    filesystem was created to address the
+    shortcomings of using entries in sysfs to
+    maintain EFI variables.
+
+Squashfs
+    A compressed read-only file system for
+    Linux.
+    
+    Squashfs compresses files, inodes and
+    directories, and supports block sizes from
+    4 KiB up to 1 MiB for greater compression.
+    
+    Several compression algorithms are
+    supported.
+
+urandom
+/dev/urandom
+unblocking random
+
+random
+/dev/random
+blocking random
+
+compositor
+compositing window manager
+    A window manager that provides
+    applications with an off-screen buffer for
+    each window.
+    
+    The window manager composites the window
+    buffers into an image representing the
+    screen and writes the result into the
+    display memory.
+
+    Compositing window managers may perform
+    additional processing on buffered windows,
+    applying 2D and 3D animated effects such
+    as blending, fading, scaling, rotation,
+    duplication, bending and contortion,
+    shuffling, blurring, redirecting
+    applications, and translating windows into
+    one of a number of displays and virtual
+    desktops.
+    
+    Computer graphics technology allows for
+    visual effects to be rendered in real time
+    such as drop shadows, live previews, and
+    complex animation.
+    
+    Since the screen is double buffered, it
+    does not flicker during updates.
+
+    The most commonly used compositing window
+    managers include:
+
+    - Linux, FreeBSD and OpenSolaris—Compiz,
+      KWin, Xfwm, Enlightenment and Mutter.
+    - Windows—the Desktop Window Manager
+    - macOS—the Quartz Compositor
+
+LSB
+Linux Standard Base
+    lsb_release -a
+
+bootstrap
+    In the general sense, "bootstrapping" is a
+    process through which a complex system is
+    set up using a much simpler system.
+    
+    A bootstrap system (the simpler system) is
+    in itself inherently incomplete.
+    
+    Bootstrapping an OS ("booting it")
+    includes getting the computer's firmware
+    (BIOS, or equivalent) to run a simple
+    program which is sometimes located on a
+    fixed location on disk, which in turn
+    starts more complex initialisation
+    routines (see first and second stage
+    bootloaders).
+    
+    Bootstrapping a compiler is done by
+    compiling a simple compiler that can
+    handle a subset of a language in which the
+    full compiler is written in, possibly in
+    several successive steps.
+
+fc-cache
+    Build font info cache files.
+
+    man fc-cache

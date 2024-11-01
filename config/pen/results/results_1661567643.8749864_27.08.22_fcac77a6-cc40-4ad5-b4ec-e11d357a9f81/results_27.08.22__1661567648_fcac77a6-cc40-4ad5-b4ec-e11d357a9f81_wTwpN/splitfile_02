@@ -1,0 +1,12 @@
+http://www.lispworks.com/reference/HyperSpec/Body/m_defmet.htm
+
+
+                                                                                           M-DEFMET
+
+**  M-DEFMET
+
+       (defmet (name &rest options)
+              &body body)
+
+       (defmet (name &rest options)
+              &

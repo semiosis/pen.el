@@ -1,0 +1,20 @@
+- 1. /usr/bin/file
+- 2. /usr/bin/find
+- 3. /usr/bin/grep
+- 4. /usr/bin/gzip
+- 5. /usr/bin/head
+- 6. /usr/bin/ln
+- 7. /usr/bin/ls
+- 8. /usr/bin/mkdir
+- 9. /usr/bin/mv
+- 10. /usr/bin/rm
+- 11. /usr/bin/rmdir
+- 12. /usr/bin/sort
+- 13. /usr/bin/tar
+- 14. /usr/bin/wc
+- 15. /usr/bin/xargs
+- 16. /usr/bin/yes
+
+Answer:
+- 14. /usr/bin/wc
+

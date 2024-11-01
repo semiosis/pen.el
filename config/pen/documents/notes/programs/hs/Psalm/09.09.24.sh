@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Psalm" "14:3" "#" "<==" "zsh"
+cd /;  "Psalm" "14:3" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Psalm" "14:3" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Psalm" "106:10" "#" "<==" "zsh"
+cd /;  "Psalm" "119" "#" "<==" "zsh"
+cd /;  "Psalm" "59" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Psalm" "34:22" "#" "<==" "zsh"

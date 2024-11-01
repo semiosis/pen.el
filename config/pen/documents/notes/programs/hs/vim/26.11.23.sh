@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes;  "vim" "--not-a-term" "-c" "silent\! echom|silent\! echom|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()" "--not-a-term" "+help digraph-table" "+only" "#" "<==" "pen-v"

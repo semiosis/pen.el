@@ -1,0 +1,3 @@
+;; Run function temperature
+(message (eval '(temperature "melting point of gold")))
+--> "melting point of gold is 1063.15 K"

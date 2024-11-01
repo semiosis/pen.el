@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "2" "Thessalonians" "2:13-15" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "2" "Cronicals" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "2" "Cron" "36:13" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "2" "Cronicles" "36:13" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "2" "Chronicles" "36:13" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "2" "Cor" "5" "#" "<==" "zsh"

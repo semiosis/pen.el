@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "Psalm" "40:3" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Psalm" "40:3" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Psalm" "40:3" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Psalm" "40:3" "#" "<==" "withopts"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Psalm" "110" "#" "<==" "zsh"

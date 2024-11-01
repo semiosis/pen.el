@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: math normal math italic font (math)
+# group: math
+# key: mm
+# --
+\mathnormal{`yas-selected-text`$0}

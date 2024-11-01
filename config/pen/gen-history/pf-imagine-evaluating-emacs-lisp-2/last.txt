@@ -1,0 +1,10 @@
+;; population of country in millions
+;; arguments: (country)
+(message (eval '(population-of-country-in-millions "New Zealand")))
+--> 0.4
+
+
+;; population of country in millions
+;; arguments: (country)
+(message (eval '(population-of-country-in-millions "New Zealand")))
+--> 

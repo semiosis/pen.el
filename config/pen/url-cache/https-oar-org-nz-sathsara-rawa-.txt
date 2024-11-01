@@ -1,0 +1,1028 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 08 Jan 2024 12:23:42 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Cache-Enabled: False
+X-UA-Compatible: IE=edge
+Link: <https://oar.org.nz/wp-json/>; rel="https://api.w.org/", <https://oar.org.nz/wp-json/wp/v2/posts/41409>; rel="alternate"; type="application/json", <https://oar.org.nz/?p=41409>; rel=shortlink
+X-Httpd: 1
+Host-Header: 6b7412fb82ca5edfd0917e3957f05d89
+X-Proxy-Cache: MISS
+X-Proxy-Cache-Info: W NC:000000 UP:
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v21.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Sathsara Rāwa - OAR FM Dunedin</title>
+	<link rel="canonical" href="https://oar.org.nz/sathsara-rawa/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Sathsara Rāwa - OAR FM Dunedin" />
+	<meta property="og:description" content="Join Suranga Dassanayake every Wednesdays at 7 PM as he explores Sri Lankan culture through music from  the 70&#8217;s, 80s, 90s and 2000&#8217;s  &#8211; the golden era of Sri Lankan Sinhala songs. Sathsara Rāwa will stir memories for Sri Lankan migrants, and offer insight into Sri Lankan culture to their children. RSS Feed" />
+	<meta property="og:url" content="https://oar.org.nz/sathsara-rawa/" />
+	<meta property="og:site_name" content="OAR FM Dunedin" />
+	<meta property="article:publisher" content="https://www.facebook.com/OtagoAccessRadio/" />
+	<meta property="article:published_time" content="2022-02-22T00:31:13+00:00" />
+	<meta property="article:modified_time" content="2023-06-19T22:39:11+00:00" />
+	<meta property="og:image" content="http://oar.org.nz/wp-content/uploads/2022/03/Suranga-1-scaled-e1647484977216.jpg" />
+	<meta name="author" content="Arina Aizal" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://oar.org.nz/sathsara-rawa/#article","isPartOf":{"@id":"https://oar.org.nz/sathsara-rawa/"},"author":{"name":"Arina Aizal","@id":"https://oar.org.nz/#/schema/person/490b2f3ae37c5068250fce5c82ab50b7"},"headline":"Sathsara Rāwa","datePublished":"2022-02-22T00:31:13+00:00","dateModified":"2023-06-19T22:39:11+00:00","mainEntityOfPage":{"@id":"https://oar.org.nz/sathsara-rawa/"},"wordCount":56,"publisher":{"@id":"https://oar.org.nz/#organization"},"image":{"@id":"https://oar.org.nz/sathsara-rawa/#primaryimage"},"thumbnailUrl":"http://oar.org.nz/wp-content/uploads/2022/03/Suranga-1-scaled-e1647484977216.jpg","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://oar.org.nz/sathsara-rawa/","url":"https://oar.org.nz/sathsara-rawa/","name":"Sathsara Rāwa - OAR FM Dunedin","isPartOf":{"@id":"https://oar.org.nz/#website"},"primaryImageOfPage":{"@id":"https://oar.org.nz/sathsara-rawa/#primaryimage"},"image":{"@id":"https://oar.org.nz/sathsara-rawa/#primaryimage"},"thumbnailUrl":"http://oar.org.nz/wp-content/uploads/2022/03/Suranga-1-scaled-e1647484977216.jpg","datePublished":"2022-02-22T00:31:13+00:00","dateModified":"2023-06-19T22:39:11+00:00","breadcrumb":{"@id":"https://oar.org.nz/sathsara-rawa/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://oar.org.nz/sathsara-rawa/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://oar.org.nz/sathsara-rawa/#primaryimage","url":"http://oar.org.nz/wp-content/uploads/2022/03/Suranga-1-scaled-e1647484977216.jpg","contentUrl":"http://oar.org.nz/wp-content/uploads/2022/03/Suranga-1-scaled-e1647484977216.jpg"},{"@type":"BreadcrumbList","@id":"https://oar.org.nz/sathsara-rawa/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://oar.org.nz/"},{"@type":"ListItem","position":2,"name":"Sathsara Rāwa"}]},{"@type":"WebSite","@id":"https://oar.org.nz/#website","url":"https://oar.org.nz/","name":"OAR FM Dunedin","description":"The Voice of Your Community","publisher":{"@id":"https://oar.org.nz/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://oar.org.nz/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://oar.org.nz/#organization","name":"OAR FM Dunedin","url":"https://oar.org.nz/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://oar.org.nz/#/schema/logo/image/","url":"http://oar.org.nz/wp-content/uploads/2018/02/OAR-FM-Logo-Square.png","contentUrl":"http://oar.org.nz/wp-content/uploads/2018/02/OAR-FM-Logo-Square.png","width":1500,"height":1500,"caption":"OAR FM Dunedin"},"image":{"@id":"https://oar.org.nz/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/OtagoAccessRadio/","https://www.instagram.com/oarfm/"]},{"@type":"Person","@id":"https://oar.org.nz/#/schema/person/490b2f3ae37c5068250fce5c82ab50b7","name":"Arina Aizal","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://oar.org.nz/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/5bb9df36c249f39119cccf8254bb72ad?s=96&d=identicon&r=g","contentUrl":"https://secure.gravatar.com/avatar/5bb9df36c249f39119cccf8254bb72ad?s=96&d=identicon&r=g","caption":"Arina Aizal"},"url":"https://oar.org.nz/author/arina/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link href='https://fonts.googleapis.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="OAR FM Dunedin &raquo; Feed" href="https://oar.org.nz/feed/" />
+<link rel="alternate" type="application/rss+xml" title="OAR FM Dunedin &raquo; Comments Feed" href="https://oar.org.nz/comments/feed/" />
+<link rel='stylesheet' id='scap.flashblock-css' href='https://oar.org.nz/wp-content/plugins/compact-wp-audio-player/css/flashblock.css' media='all' />
+<link rel='stylesheet' id='scap.player-css' href='https://oar.org.nz/wp-content/plugins/compact-wp-audio-player/css/player.css' media='all' />
+<link rel='stylesheet' id='generate-fonts-css' href='//fonts.googleapis.com/css?family=|Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic' media='all' />
+<link rel='stylesheet' id='mediaelement-css' href='https://oar.org.nz/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://oar.org.nz/wp-includes/js/mediaelement/wp-mediaelement.min.css' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='display-custom-post-css' href='https://oar.org.nz/wp-content/plugins/display-custom-post/css/display-custom-post.css' media='all' />
+<link rel='stylesheet' id='dcp-layout-css' href='https://oar.org.nz/wp-content/plugins/display-custom-post/css/dcp-layout.css' media='all' />
+<link rel='stylesheet' id='sow-image-default-c67d20f9f743-css' href='https://oar.org.nz/wp-content/uploads/siteorigin-widgets/sow-image-default-c67d20f9f743.css' media='all' />
+<link rel='stylesheet' id='sow-google-map-default-5006d6f6236c-css' href='https://oar.org.nz/wp-content/uploads/siteorigin-widgets/sow-google-map-default-5006d6f6236c.css' media='all' />
+<link rel='stylesheet' id='generate-style-grid-css' href='https://oar.org.nz/wp-content/themes/generatepress/assets/css/unsemantic-grid.min.css' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='https://oar.org.nz/wp-content/themes/generatepress/assets/css/style.min.css' media='all' />
+<style id='generate-style-inline-css'>
+body{background-color:#efefef;color:#3a3a3a;}a{color:#1e73be;}a:visited{color:#a5a5a5;}a:hover, a:focus, a:active{color:#6796bf;}body .grid-container{max-width:1080px;}.wp-block-group__inner-container{max-width:1080px;margin-left:auto;margin-right:auto;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}:root .has-contrast-color{color:var(--contrast);}:root .has-contrast-background-color{background-color:var(--contrast);}:root .has-contrast-2-color{color:var(--contrast-2);}:root .has-contrast-2-background-color{background-color:var(--contrast-2);}:root .has-contrast-3-color{color:var(--contrast-3);}:root .has-contrast-3-background-color{background-color:var(--contrast-3);}:root .has-base-color{color:var(--base);}:root .has-base-background-color{background-color:var(--base);}:root .has-base-2-color{color:var(--base-2);}:root .has-base-2-background-color{background-color:var(--base-2);}:root .has-base-3-color{color:var(--base-3);}:root .has-base-3-background-color{background-color:var(--base-3);}:root .has-accent-color{color:var(--accent);}:root .has-accent-background-color{background-color:var(--accent);}body, button, input, select, textarea{font-family:Helvetica;}body{line-height:1.5;}.entry-content > [class*="wp-block-"]:not(:last-child):not(.wp-block-heading){margin-bottom:1.5em;}.main-title{font-size:45px;}.main-navigation a, .menu-toggle{text-transform:capitalize;font-size:17px;}.main-navigation .main-nav ul ul li a{font-size:14px;}.sidebar .widget, .footer-widgets .widget{font-size:17px;}h1{font-weight:300;font-size:40px;}h2{font-weight:300;font-size:30px;}h3{font-size:20px;}h4{font-size:inherit;}h5{font-size:inherit;}@media (max-width:768px){.main-title{font-size:30px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a{color:#3a3a3a;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.main-navigation,.main-navigation ul ul{background-color:#50a1d0;}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:#ffffff;}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#ffffff;background-color:#4c4c4c;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#50a1d0;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#ffffff;background-color:#4c4c4c;}.main-navigation ul ul{background-color:#3f3f3f;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#4f4f4f;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-meta{color:#595959;}.entry-meta a{color:#595959;}.entry-meta a:hover{color:#1e73be;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{background-color:#ffffff;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#ffffff;background-color:#222222;}.site-info a{color:#ffffff;}.site-info a:hover{color:#606060;}.footer-bar .widget_nav_menu .current-menu-item a{color:#606060;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#666666;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f3f3f;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}:root{--gp-search-modal-bg-color:var(--base-3);--gp-search-modal-text-color:var(--contrast);--gp-search-modal-overlay-bg-color:rgba(0,0,0,0.2);}@media (max-width: 768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#ffffff;}}.inside-top-bar{padding:10px;}.inside-header{padding:10px 32px 5px 0px;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:15px 15px 0px 20px;}.site-main .wp-block-group__inner-container{padding:15px 15px 0px 20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-20px;width:calc(100% + 35px);max-width:calc(100% + 35px);}.one-container.right-sidebar .site-main,.one-container.both-right .site-main{margin-right:15px;}.one-container.left-sidebar .site-main,.one-container.both-left .site-main{margin-left:20px;}.one-container.both-sidebars .site-main{margin:0px 15px 0px 20px;}.separate-containers .widget, .separate-containers .site-main > *, .separate-containers .page-header, .widget-area .main-navigation{margin-bottom:2px;}.separate-containers .site-main{margin:2px;}.both-right.separate-containers .inside-left-sidebar{margin-right:1px;}.both-right.separate-containers .inside-right-sidebar{margin-left:1px;}.both-left.separate-containers .inside-left-sidebar{margin-right:1px;}.both-left.separate-containers .inside-right-sidebar{margin-left:1px;}.separate-containers .page-header-image, .separate-containers .page-header-contained, .separate-containers .page-header-image-single, .separate-containers .page-header-content-single{margin-top:2px;}.separate-containers .inside-right-sidebar, .separate-containers .inside-left-sidebar{margin-top:2px;margin-bottom:2px;}.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .mobile-bar-items a{padding-left:18px;padding-right:18px;line-height:37px;}.main-navigation .main-nav ul ul li a{padding:10px 18px 10px 18px;}.navigation-search input[type="search"]{height:37px;}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:18px;}.menu-item-has-children .dropdown-menu-toggle{padding-right:18px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:18px;}.widget-area .widget{padding:0px 0px 0px 10px;}.footer-widgets{padding:0px 40px 40px 40px;}.site-info{padding:20px 20px 20px 0px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.site-info{padding-right:10px;padding-left:10px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}/* End cached CSS */@media (max-width: 768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}
+.site-header{background-image:url('http://oar.org.nz/wp-content/uploads/2018/02/WavefromVector-1.png');background-repeat:no-repeat;background-size:100% auto;background-attachment:local;}
+.navigation-branding .main-title{font-weight:bold;text-transform:none;font-size:45px;}@media (max-width: 768px){.navigation-branding .main-title{font-size:30px;}}
+</style>
+<link rel='stylesheet' id='generate-mobile-style-css' href='https://oar.org.nz/wp-content/themes/generatepress/assets/css/mobile.min.css' media='all' />
+<link rel='stylesheet' id='generate-font-icons-css' href='https://oar.org.nz/wp-content/themes/generatepress/assets/css/components/font-icons.min.css' media='all' />
+<link rel='stylesheet' id='wpdreams-asl-basic-css' href='https://oar.org.nz/wp-content/plugins/ajax-search-lite/css/style.basic.css' media='all' />
+<link rel='stylesheet' id='wpdreams-ajaxsearchlite-css' href='https://oar.org.nz/wp-content/plugins/ajax-search-lite/css/style-underline.css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/css/frontend.min.css' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css' media='all' />
+<link rel='stylesheet' id='elementor-post-38045-css' href='https://oar.org.nz/wp-content/uploads/elementor/css/post-38045.css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://oar.org.nz/wp-content/uploads/elementor/css/global.css' media='all' />
+<link rel='stylesheet' id='elementor-post-41409-css' href='https://oar.org.nz/wp-content/uploads/elementor/css/post-41409.css' media='all' />
+<link rel='stylesheet' id='generate-secondary-nav-css' href='https://oar.org.nz/wp-content/plugins/gp-premium/secondary-nav/functions/css/style.min.css' media='all' />
+<style id='generate-secondary-nav-inline-css'>
+.secondary-navigation{background-color:#636363;}.secondary-navigation .main-nav ul li a,.secondary-navigation .menu-toggle,.secondary-menu-bar-items .menu-bar-item > a{color:#ffffff;font-family:"Nunito", sans-serif;text-transform:uppercase;padding-left:6px;padding-right:6px;line-height:27px;}.secondary-navigation .secondary-menu-bar-items{color:#ffffff;}button.secondary-menu-toggle:hover,button.secondary-menu-toggle:focus{color:#ffffff;}.widget-area .secondary-navigation{margin-bottom:2px;}.secondary-navigation ul ul{background-color:#303030;top:auto;}.secondary-navigation .main-nav ul ul li a{color:#ffffff;padding-left:6px;padding-right:6px;padding-top:5px;padding-bottom:5px;}.secondary-navigation .menu-item-has-children ul .dropdown-menu-toggle{padding-top:5px;padding-bottom:5px;margin-top:-5px;}.secondary-navigation .menu-item-has-children .dropdown-menu-toggle{padding-right:6px;}.secondary-navigation .menu-item-has-children ul .dropdown-menu-toggle{padding-top:5px;padding-bottom:5px;margin-top:-5px;}.secondary-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .secondary-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .secondary-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .secondary-menu-bar-items .menu-bar-item:hover > a{color:#ffffff;background-color:#50a1d0;}.secondary-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.secondary-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a,.secondary-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#ffffff;background-color:#474747;}.secondary-navigation .main-nav ul li[class*="current-menu-"] > a{color:#222222;background-color:#ffffff;}.secondary-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#474747;}@media (max-width: 768px) {.secondary-menu-bar-items .menu-bar-item:hover > a{background: none;color: #ffffff;}}
+</style>
+<link rel='stylesheet' id='generate-secondary-nav-mobile-css' href='https://oar.org.nz/wp-content/plugins/gp-premium/secondary-nav/functions/css/style-mobile.min.css' media='all' />
+<link rel='stylesheet' id='generate-navigation-branding-css' href='https://oar.org.nz/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding.min.css' media='all' />
+<style id='generate-navigation-branding-inline-css'>
+@media (max-width: 768px){.site-header, #site-navigation, #sticky-navigation{display:none !important;opacity:0.0;}#mobile-header{display:block !important;width:100% !important;}#mobile-header .main-nav > ul{display:none;}#mobile-header.toggled .main-nav > ul, #mobile-header .menu-toggle, #mobile-header .mobile-bar-items{display:block;}#mobile-header .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;}}.navigation-branding img, .site-logo.mobile-header-logo img{height:37px;width:auto;}.navigation-branding .main-title{line-height:37px;}@media (max-width: 1090px){#site-navigation .navigation-branding, #sticky-navigation .navigation-branding{margin-left:10px;}}@media (max-width: 768px){.main-navigation:not(.slideout-navigation) .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;}.main-navigation:not(.slideout-navigation) .inside-navigation{-ms-flex-wrap:wrap;flex-wrap:wrap;display:-webkit-box;display:-ms-flexbox;display:flex;}.nav-aligned-center .navigation-branding, .nav-aligned-left .navigation-branding{margin-right:auto;}.nav-aligned-center  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-center  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav{margin-right:0px;}}
+</style>
+<link rel='stylesheet' id='eael-general-css' href='https://oar.org.nz/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.4.2' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css' media='all' />
+<link rel='stylesheet' id='myStyleSheets-css' href='https://oar.org.nz/wp-content/plugins/wp-latest-posts/css/wplp_front.css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://oar.org.nz/wp-content/plugins/compact-wp-audio-player/js/soundmanager2-nodebug-jsmin.js" id="scap.soundmanager2-js"></script>
+<script src="https://oar.org.nz/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="https://oar.org.nz/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script id="post_grid_scripts-js-extra">
+var post_grid_ajax = {"post_grid_ajaxurl":"https:\/\/oar.org.nz\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="https://oar.org.nz/wp-content/plugins/post-grid/assets/frontend/js/scripts.js" id="post_grid_scripts-js"></script>
+<script id="sow-google-map-js-extra">
+var soWidgetsGoogleMap = {"map_consent":"","geocode":{"noResults":"There were no results for the place you entered. Please try another."}};
+</script>
+<script src="https://oar.org.nz/wp-content/plugins/so-widgets-bundle/js/sow.google-map.min.js" id="sow-google-map-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="https://www.googletagmanager.com/gtag/js?id=GT-PZZK8VW" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["oar.org.nz"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-PZZK8VW");
+</script>
+
+<!-- End Google Analytics snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://oar.org.nz/wp-json/" /><link rel="alternate" type="application/json" href="https://oar.org.nz/wp-json/wp/v2/posts/41409" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://oar.org.nz/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.2" />
+<link rel='shortlink' href='https://oar.org.nz/?p=41409' />
+<link rel="alternate" type="application/json+oembed" href="https://oar.org.nz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Foar.org.nz%2Fsathsara-rawa%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://oar.org.nz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Foar.org.nz%2Fsathsara-rawa%2F&#038;format=xml" />
+<style type='text/css'> .ae_data .elementor-editor-element-setting {
+            display:none !important;
+            }
+            </style><meta name="generator" content="Site Kit by Google 1.116.0" />	<style>img#wpstats{display:none}</style>
+						<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link rel="preload" as="style" href="//fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+				<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans&display=swap" media="all" />
+				<meta name="generator" content="Elementor 3.18.3; features: e_dom_optimization, e_optimized_assets_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto">
+
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script>
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-N73V4R8' );
+			
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+                <style>
+                    
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+						font-size: 0px !important;
+						color: rgba(0, 0, 0, 0);
+					}
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+						font-size: 11px !important;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 1;
+					}
+					.asl_w_container {
+						width: 100%;
+						margin: 0px 0px 0px 0px;
+						min-width: 200px;
+					}
+					div[id*='ajaxsearchlite'].asl_m {
+						width: 100%;
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+						font-weight: bold;
+						color: rgba(217, 49, 43, 1);
+						background-color: rgba(238, 238, 238, 1);
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results .results img.asl_image {
+						width: 70px;
+						height: 70px;
+						object-fit: cover;
+					}
+					div.asl_r .results {
+						max-height: none;
+					}
+				
+						div.asl_r.asl_w.vertical .results .item::after {
+							display: block;
+							position: absolute;
+							bottom: 0;
+							content: '';
+							height: 1px;
+							width: 100%;
+							background: #D8D8D8;
+						}
+						div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+							display: none;
+						}
+					                </style>
+                <link rel="icon" href="https://oar.org.nz/wp-content/uploads/2018/02/cropped-OAR-FM-Logo-Square-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://oar.org.nz/wp-content/uploads/2018/02/cropped-OAR-FM-Logo-Square-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://oar.org.nz/wp-content/uploads/2018/02/cropped-OAR-FM-Logo-Square-180x180.png" />
+<meta name="msapplication-TileImage" content="https://oar.org.nz/wp-content/uploads/2018/02/cropped-OAR-FM-Logo-Square-270x270.png" />
+		<style id="wp-custom-css">
+			@media (max-width:768px) {
+    .home .page-header-content {
+        display: none;
+    }
+    .home .site-header {
+        display: block;
+    }
+}
+
+
+/*social media icons in the header*/
+#wpcom_social_media_icons_widget-2 {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+/* Below made inbetween the header and footer indented...
+
+.inside-article {
+	margin: 0 0 0 20px;
+}
+
+#text-7 {
+	margin: 0 20px 0 0;
+	padding-bottom: 0;
+}
+
+#text-11 {
+	margin: 0 20px 0 0;
+}
+
+#text-10 {
+	margin: 0 20px 0 0;
+}
+
+----------------------------------------*/
+/* donate button */
+#donate {
+	margin: auto;
+	width: 100%;
+	color: #ffffff;
+}
+
+/* button colour and border in the different forms */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: #50a1d0;
+	color: #FFFFFF;
+	border-radius: 4px;
+	border: thin solid #A3A3A3;
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #4c4c4c;
+	border: 1px solid #F8f8f8;
+}
+
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	background: #4c4c4c;
+	border: 1px solid #F8f8f8;
+}
+
+/*-------------------------------*/
+/* styling for the category display on homepage */
+.lcp_catlist li {
+	clear: both;
+	margin: 5px;
+	padding-right: 10px;
+	list-style: none;
+	border-top: thin solid #999999;
+}
+
+.lcp_thumbnail {
+	float: left;
+	padding: 5px;
+}
+
+.page-content, .entry-content, .entry-summary {
+	margin: 0;
+}
+
+/*-----------------------*/
+.site-info {
+	background-color: #50a1d0;
+}
+
+/* making footer fixed width */
+#footer-widgets {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* trimming top and bottom margin in sidebar */
+#right-sidebar {
+	top: 0;
+	bottom: 0;
+}
+
+/* styling for the sponsor table - making logos lineup nice - found on tablepress forum */
+#tablepress-3 > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) {
+	width: 5%;
+	white-space: nowrap;
+}
+
+/* page header margin */
+/*.pagehead, p {
+	margin: 0;
+	margin-top: 10px;
+}*/
+
+/* pulling in the space around category display title */
+.entry-content > h1:nth-child(3) {
+	margin-bottom: 0;
+}
+
+/* reducing space around horizontal line */
+.entry-content > hr:nth-child(2) {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*menu item floating right*/
+@media (min-width: 769px) {
+    .menu-item-float-right {
+        float: right;
+    }
+}
+
+/*buttons by Domi*/
+#bottom-btn1{
+  margin-top: 10px;
+  margin: 20px;
+  margin-left: 340px;
+  display: inline-block;
+  float: left;
+}
+#bottom-btn2{
+  margin-top: 10px;
+  margin: 20px;
+  margin-right: 40px;
+  display: inline-block;
+  float: right;
+}
+		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-41409 single-format-standard wp-embed-responsive post-image-above-header post-image-aligned-center secondary-nav-above-header secondary-nav-aligned-right sticky-menu-fade mobile-header right-sidebar nav-below-header one-container contained-header active-footer-widgets-1 nav-aligned-center header-aligned-left dropdown-hover elementor-default elementor-kit-38045 elementor-page elementor-page-41409" itemtype="https://schema.org/Blog" itemscope>
+			<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N73V4R8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+		<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a><div class="header-cont"><div class="headr">			<nav id="secondary-navigation" class="secondary-navigation grid-container grid-parent" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
+				<div class="inside-navigation grid-container grid-parent">
+										<button class="menu-toggle secondary-menu-toggle">
+						<span class="mobile-menu">Menu</span>					</button>
+					<div class="main-nav"><ul id="menu-sub-menu" class=" secondary-menu sf-menu"><li id="menu-item-35987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35987"><a href="https://oar.org.nz/school-shows/">School Shows</a></li>
+<li id="menu-item-34512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34512"><a href="https://oar.org.nz/connecting-cultures-zone/">Connecting Cultures Zone</a></li>
+<li id="menu-item-34513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34513"><a href="https://oar.org.nz/youth-zone/">Youth Zone</a></li>
+</ul></div>				</div><!-- .inside-navigation -->
+			</nav><!-- #secondary-navigation -->
+					<header class="site-header grid-container grid-parent" id="masthead" aria-label="Site"  itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container grid-parent">
+							<div class="header-widget">
+				<aside id="custom_html-3" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81780710-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81780710-1');
+</script></div></aside><aside id="text-22" class="widget inner-padding widget_text">			<div class="textwidget"><p>&nbsp;</p>
+<p><a class="maxbutton-1 maxbutton maxbutton-listen-live bottom-btn1" title="Listen to OAR FM Dunedin" href="https://oar.org.nz/live-stream/"><span class='mb-text'>LISTEN LIVE</span></a> <a class="maxbutton-2 maxbutton maxbutton-listen-to-podcasts bottom-btn2" target="_blank" title="Find our Podcasts" rel="noopener" href="https://accessmedia.nz/StationProfile.aspx?SID=c0aeb0af-3667-4b6e-9937-ecfb81bcbdf0"><span class='mb-text'>LISTEN TO PODCASTS</span></a></p>
+</div>
+		</aside>			</div>
+						</div>
+		</header>
+				<nav id="mobile-header" itemtype="https://schema.org/SiteNavigationElement" itemscope class="main-navigation mobile-header-navigation">
+			<div class="inside-navigation grid-container grid-parent">
+									<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+						<span class="mobile-menu">Menu</span>					</button>
+					<div id="mobile-menu" class="main-nav"><ul id="menu-menu-1" class=" menu sf-menu"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-11"><a href="http://oar.org.nz/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8"><a href="http://oar.org.nz/who-are-we/">About<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-255"><a href="https://oar.org.nz/who-are-we/">Who are we?<span role="presentation" class="dropdown-menu-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-37895" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37895"><a href="http://oar.org.nz/who-are-we/">About</a></li>
+		<li id="menu-item-37754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37754"><a href="https://oar.org.nz/community-access-media-alliance-cama/">Community Access Media Alliance (CAMA)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://oar.org.nz/our-staff/">Our Team</a></li>
+	<li id="menu-item-34597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34597"><a href="https://oar.org.nz/history/">Station History</a></li>
+</ul>
+</li>
+<li id="menu-item-222" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-222"><a href="http://oar.org.nz/as-a-programme-maker/">Get Involved<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="https://oar.org.nz/as-a-programme-maker/">As a Programme Maker</a></li>
+	<li id="menu-item-301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-301"><a href="https://oar.org.nz/sponsor/">As a Programme Sponsor</a></li>
+	<li id="menu-item-40489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40489"><a href="https://oar.org.nz/broadcaster-resources/">Broadcaster Resources</a></li>
+</ul>
+</li>
+<li id="menu-item-34006" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34006"><a href="http://oar.org.nz/calendar/by-programme-name/">OAR Programmes<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-38579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38579"><a href="https://oar.org.nz/calendar/by-programme-name/">By Programme Name</a></li>
+	<li id="menu-item-34323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-34323"><a href="https://oar.org.nz/connecting-cultures-zone/">Connecting Cultures<span role="presentation" class="dropdown-menu-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-39501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39501"><a href="http://oar.org.nz/connecting-cultures-zone/#shows">Connecting Cultures Shows</a></li>
+		<li id="menu-item-39497" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39497"><a href="https://oar.org.nz/connecting-cultures-features/">Connecting Cultures Features</a></li>
+	</ul>
+</li>
+	<li id="menu-item-738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-738"><a href="https://oar.org.nz/youth-zone/">Youth Zone<span role="presentation" class="dropdown-menu-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-8086" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8086"><a href="http://oar.org.nz/youth-zone/">Youth Zone Programming</a></li>
+		<li id="menu-item-39328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39328"><a href="http://oar.org.nz/unique-otepoti/">Unique Ōtepoti</a></li>
+		<li id="menu-item-36860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36860"><a href="https://yz.oar.org.nz/?page_id=345">Youth Zone Mobilised</a></li>
+		<li id="menu-item-11866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11866"><a href="https://oar.org.nz/?p=11842">Youth Zone Unplugged 2018</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-305"><a href="https://oar.org.nz/contact/">Contact<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-40490" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40490"><a href="http://oar.org.nz/contact/">Contact Details</a></li>
+	<li id="menu-item-17227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17227"><a href="http://oar.org.nz/contact/#complaints">Complaints</a></li>
+</ul>
+</li>
+<li id="menu-item-36126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-36126"><a href="https://yz.oar.org.nz/">Mobile Apps<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-36194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36194"><a href="http://oar.org.nz/featured/accessmedianz/">accessmedia.nz App</a></li>
+</ul>
+</li>
+<li id="menu-item-7945" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7945"><a href="https://dcnb.oar.org.nz/">Noticeboard</a></li>
+</ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+				<nav class="main-navigation grid-container grid-parent sub-menu-right" id="site-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container grid-parent">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-menu-2" class=" menu sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-11"><a href="http://oar.org.nz/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8"><a href="http://oar.org.nz/who-are-we/">About<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-255"><a href="https://oar.org.nz/who-are-we/">Who are we?<span role="presentation" class="dropdown-menu-toggle"></span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37895"><a href="http://oar.org.nz/who-are-we/">About</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37754"><a href="https://oar.org.nz/community-access-media-alliance-cama/">Community Access Media Alliance (CAMA)</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://oar.org.nz/our-staff/">Our Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34597"><a href="https://oar.org.nz/history/">Station History</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-222"><a href="http://oar.org.nz/as-a-programme-maker/">Get Involved<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="https://oar.org.nz/as-a-programme-maker/">As a Programme Maker</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-301"><a href="https://oar.org.nz/sponsor/">As a Programme Sponsor</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40489"><a href="https://oar.org.nz/broadcaster-resources/">Broadcaster Resources</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34006"><a href="http://oar.org.nz/calendar/by-programme-name/">OAR Programmes<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38579"><a href="https://oar.org.nz/calendar/by-programme-name/">By Programme Name</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-34323"><a href="https://oar.org.nz/connecting-cultures-zone/">Connecting Cultures<span role="presentation" class="dropdown-menu-toggle"></span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39501"><a href="http://oar.org.nz/connecting-cultures-zone/#shows">Connecting Cultures Shows</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39497"><a href="https://oar.org.nz/connecting-cultures-features/">Connecting Cultures Features</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-738"><a href="https://oar.org.nz/youth-zone/">Youth Zone<span role="presentation" class="dropdown-menu-toggle"></span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8086"><a href="http://oar.org.nz/youth-zone/">Youth Zone Programming</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39328"><a href="http://oar.org.nz/unique-otepoti/">Unique Ōtepoti</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36860"><a href="https://yz.oar.org.nz/?page_id=345">Youth Zone Mobilised</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11866"><a href="https://oar.org.nz/?p=11842">Youth Zone Unplugged 2018</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-305"><a href="https://oar.org.nz/contact/">Contact<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40490"><a href="http://oar.org.nz/contact/">Contact Details</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17227"><a href="http://oar.org.nz/contact/#complaints">Complaints</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-36126"><a href="https://yz.oar.org.nz/">Mobile Apps<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36194"><a href="http://oar.org.nz/featured/accessmedianz/">accessmedia.nz App</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7945"><a href="https://dcnb.oar.org.nz/">Noticeboard</a></li>
+</ul></div>			</div>
+		</nav>
+		</div></div>
+	<div class="site grid-container container hfeed grid-parent" id="page">
+				<div class="site-content" id="content">
+			
+	<div class="content-area grid-parent mobile-grid-100 grid-65 tablet-grid-65" id="primary">
+		<main class="site-main" id="main">
+			
+<article id="post-41409" class="post-41409 post type-post status-publish format-standard hentry" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+					<header class="entry-header" aria-label="Content">
+				<h1 class="entry-title" itemprop="headline">Sathsara Rāwa</h1>			</header>
+			
+		<div class="entry-content" itemprop="text">
+					<div data-elementor-type="wp-page" data-elementor-id="41409" class="elementor elementor-41409">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-4dd9b377 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4dd9b377" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5778179" data-id="5778179" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-51a6382e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="51a6382e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-76572ef4" data-id="76572ef4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-47a476bf elementor-widget elementor-widget-text-editor" data-id="47a476bf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Join Suranga Dassanayake every Wednesdays at 7 PM as he explores Sri Lankan culture through music from  the 70&#8217;s, 80s, 90s and 2000&#8217;s  &#8211; the golden era of Sri Lankan Sinhala songs.</p><div>Sathsara Rāwa will stir memories for Sri Lankan migrants, and offer insight into Sri Lankan culture to their children.</div>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7185867e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7185867e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1949e27a" data-id="1949e27a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b9a9783 elementor-widget elementor-widget-image" data-id="b9a9783" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="300" height="300" src="https://oar.org.nz/wp-content/uploads/2022/03/Suranga-1-scaled-e1647484977216.jpg" class="attachment-medium size-medium wp-image-41503" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-52471eec elementor-widget elementor-widget-html" data-id="52471eec" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<iframe id="iframe" src="https://www.accessmedia.nz/player.aspx?pid=b6317ca6-7d73-47ed-af5e-9f32e6a343dc&autoplay=false" width="100%" height="730" frameborder="0"></iframe>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1c180d9e elementor-align-center elementor-widget elementor-widget-button" data-id="1c180d9e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.accessmedia.nz/RSS.ashx?pid=b6317ca6-7d73-47ed-af5e-9f32e6a343dc">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-rss"></i>			</span>
+						<span class="elementor-button-text">RSS Feed</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+				</div>
+
+				<footer class="entry-meta" aria-label="Entry meta">
+			<span class="cat-links"><span class="screen-reader-text">Categories </span>Uncategorized</span> 		<nav id="nav-below" class="post-navigation" aria-label="Posts">
+			<div class="nav-previous"><span class="prev"><a href="https://oar.org.nz/planet-waves-afrosound-and-global-funk-podcast/" rel="prev">Planet Waves AfroSound and Global Funk Podcast</a></span></div><div class="nav-next"><span class="next"><a href="https://oar.org.nz/sofeas-study-space-on-youth-zone/" rel="next">Sofea&#8217;s Study Space on Youth Zone</a></span></div>		</nav>
+				</footer>
+			</div>
+</article>
+		</main>
+	</div>
+
+	<div class="widget-area sidebar is-right-sidebar grid-35 tablet-grid-35 grid-parent" id="right-sidebar">
+	<div class="inside-right-sidebar">
+		<aside id="text-24" class="widget inner-padding widget_text">			<div class="textwidget">		<div data-elementor-type="wp-post" data-elementor-id="34256" class="elementor elementor-34256">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-9a46f27 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9a46f27" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-09e9806" data-id="09e9806" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-14b6ed6 elementor-widget elementor-widget-text-editor" data-id="14b6ed6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<h3 style="text-align: center;"><strong>Search for Podcasts</strong></h3>						</div>
+				</div>
+				<div class="elementor-element elementor-element-d648ce3 elementor-widget elementor-widget-wp-widget-ajaxsearchlitewidget" data-id="d648ce3" data-element_type="widget" data-widget_type="wp-widget-ajaxsearchlitewidget.default">
+				<div class="elementor-widget-container">
+			<h5> </h5><div class="asl_w_container asl_w_container_1">
+	<div id='ajaxsearchlite1'
+		 data-id="1"
+		 data-instance="1"
+		 class="asl_w asl_m asl_m_1 asl_m_1_1">
+		<div class="probox">
+
+	
+	<div class='prosettings' style='display:none;' data-opened=0>
+				<div class='innericon'>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+					<polygon transform = "rotate(90 256 256)" points="142.332,104.886 197.48,50 402.5,256 197.48,462 142.332,407.113 292.727,256 "/>
+				</svg>
+		</div>
+	</div>
+
+	
+	
+	<div class='proinput'>
+        <form role="search" action='#' autocomplete="off"
+			  aria-label="Search form">
+			<input aria-label="Search input"
+				   type='search' class='orig'
+				   tabindex="0"
+				   name='phrase'
+				   placeholder='Search here..'
+				   value=''
+				   autocomplete="off"/>
+			<input aria-label="Search autocomplete input"
+				   type='text'
+				   class='autocomplete'
+				   tabindex="-1"
+				   name='phrase'
+				   value=''
+				   autocomplete="off" disabled/>
+			<input type='submit' value="Start search" style='width:0; height: 0; visibility: hidden;'>
+		</form>
+	</div>
+
+	
+	
+	<button class='promagnifier' tabindex="0" aria-label="Search magnifier button">
+				<span class='innericon' style="display:block;">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+					<path d="M460.355,421.59L353.844,315.078c20.041-27.553,31.885-61.437,31.885-98.037
+						C385.729,124.934,310.793,50,218.686,50C126.58,50,51.645,124.934,51.645,217.041c0,92.106,74.936,167.041,167.041,167.041
+						c34.912,0,67.352-10.773,94.184-29.158L419.945,462L460.355,421.59z M100.631,217.041c0-65.096,52.959-118.056,118.055-118.056
+						c65.098,0,118.057,52.959,118.057,118.056c0,65.096-52.959,118.056-118.057,118.056C153.59,335.097,100.631,282.137,100.631,217.041
+						z"/>
+				</svg>
+		</span>
+	</button>
+
+	
+	
+	<div class='proloading'>
+
+		<div class="asl_loader"><div class="asl_loader-inner asl_simple-circle"></div></div>
+
+			</div>
+
+			<div class='proclose'>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+				 y="0px"
+				 width="12" height="12" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
+				 xml:space="preserve">
+				<polygon points="438.393,374.595 319.757,255.977 438.378,137.348 374.595,73.607 255.995,192.225 137.375,73.622 73.607,137.352 192.246,255.983 73.622,374.625 137.352,438.393 256.002,319.734 374.652,438.378 "/>
+			</svg>
+		</div>
+	
+	
+</div>	</div>
+	<div class='asl_data_container' style="display:none !important;">
+		<div class="asl_init_data wpdreams_asl_data_ct"
+	 style="display:none !important;"
+	 id="asl_init_id_1"
+	 data-asl-id="1"
+	 data-asl-instance="1"
+	 data-asldata="ew0KCSJob21ldXJsIjogImh0dHBzOi8vb2FyLm9yZy5uei8iLA0KCSJyZXN1bHRzdHlwZSI6ICJ2ZXJ0aWNhbCIsDQoJInJlc3VsdHNwb3NpdGlvbiI6ICJob3ZlciIsDQoJIml0ZW1zY291bnQiOiA0LA0KCSJjaGFyY291bnQiOiAgMCwNCgkiaGlnaGxpZ2h0IjogMCwNCgkiaGlnaGxpZ2h0d2hvbGV3b3JkcyI6IDEsDQoJInNpbmdsZUhpZ2hsaWdodCI6IDAsDQoJInNjcm9sbFRvUmVzdWx0cyI6IHsNCgkJImVuYWJsZWQiOiAwLA0KCQkib2Zmc2V0IjogMA0KCX0sDQoJInJlc3VsdGFyZWFjbGlja2FibGUiOiAxLA0KCSJhdXRvY29tcGxldGUiOiB7DQoJCSJlbmFibGVkIiA6IDEsDQoJCSJsYW5nIiA6ICJlbiIsDQoJCSJ0cmlnZ2VyX2NoYXJjb3VudCIgOiAwDQoJfSwNCgkibW9iaWxlIjogew0KCQkibWVudV9zZWxlY3RvciI6ICIjbWVudS10b2dnbGUiDQoJfSwNCgkidHJpZ2dlciI6IHsNCgkJImNsaWNrIjogInJlc3VsdHNfcGFnZSIsDQoJCSJjbGlja19sb2NhdGlvbiI6ICJzYW1lIiwNCgkJInVwZGF0ZV9ocmVmIjogMCwNCgkJInJldHVybiI6ICJyZXN1bHRzX3BhZ2UiLA0KCQkicmV0dXJuX2xvY2F0aW9uIjogInNhbWUiLA0KCQkiZmFjZXQiOiAxLA0KCQkidHlwZSI6IDEsDQoJCSJyZWRpcmVjdF91cmwiOiAiP3M9e3BocmFzZX0iLA0KCQkiZGVsYXkiOiAzMDANCgl9LA0KICAgICJhbmltYXRpb25zIjogew0KICAgICAgICAicGMiOiB7DQogICAgICAgICAgICAic2V0dGluZ3MiOiB7DQogICAgICAgICAgICAgICAgImFuaW0iIDogImZhZGVkcm9wIiwNCiAgICAgICAgICAgICAgICAiZHVyIiAgOiAzMDANCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICAicmVzdWx0cyIgOiB7DQoJCQkJImFuaW0iIDogImZhZGVkcm9wIiwNCgkJCQkiZHVyIiAgOiAzMDANCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICAiaXRlbXMiIDogInZvaWRhbmltIg0KICAgICAgICB9LA0KICAgICAgICAibW9iIjogew0KICAgICAgICAgICAgInNldHRpbmdzIjogew0KICAgICAgICAgICAgICAgICJhbmltIiA6ICJmYWRlZHJvcCIsDQogICAgICAgICAgICAgICAgImR1ciIgIDogMzAwDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgInJlc3VsdHMiIDogew0KCQkJCSJhbmltIiA6ICJmYWRlZHJvcCIsDQoJCQkJImR1ciIgIDogMzAwDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgIml0ZW1zIiA6ICJ2b2lkYW5pbSINCiAgICAgICAgfQ0KICAgIH0sDQoJImF1dG9wIjogew0KCQkic3RhdGUiOiAiZGlzYWJsZWQiLA0KCQkicGhyYXNlIjogIiIsDQoJCSJjb3VudCI6IDEJfSwNCiAgICAicmVzUGFnZSI6IHsNCiAgICAgICAgInVzZUFqYXgiOiAwLA0KICAgICAgICAic2VsZWN0b3IiOiAiI21haW4iLA0KICAgICAgICAidHJpZ2dlcl90eXBlIjogMSwNCiAgICAgICAgInRyaWdnZXJfZmFjZXQiOiAxLA0KICAgICAgICAidHJpZ2dlcl9tYWduaWZpZXIiOiAwLA0KICAgICAgICAidHJpZ2dlcl9yZXR1cm4iOiAwICAgIH0sDQoJInJlc3VsdHNTbmFwVG8iOiAibGVmdCIsDQogICAgInJlc3VsdHMiOiB7DQogICAgICAgICJ3aWR0aCI6ICJhdXRvIiwNCiAgICAgICAgIndpZHRoX3RhYmxldCI6ICJhdXRvIiwNCiAgICAgICAgIndpZHRoX3Bob25lIjogImF1dG8iDQogICAgfSwNCgkic2V0dGluZ3NpbWFnZXBvcyI6ICJyaWdodCIsDQoJImNsb3NlT25Eb2NDbGljayI6IDEsDQoJIm92ZXJyaWRld3BkZWZhdWx0IjogMCwNCgkib3ZlcnJpZGVfbWV0aG9kIjogImdldCINCn0NCg=="></div>	<div id="asl_hidden_data">
+		<svg style="position:absolute" height="0" width="0">
+			<filter id="aslblur">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+			</filter>
+		</svg>
+		<svg style="position:absolute" height="0" width="0">
+			<filter id="no_aslblur"></filter>
+		</svg>
+	</div>
+	</div>
+
+	<div id='ajaxsearchliteres1'
+	 class='vertical wpdreams_asl_results asl_w asl_r asl_r_1 asl_r_1_1'>
+
+	
+	<div class="results">
+
+		
+		<div class="resdrg">
+		</div>
+
+		
+	</div>
+
+	
+	
+</div>
+
+	<div id='__original__ajaxsearchlitesettings1'
+		 data-id="1"
+		 class="searchsettings wpdreams_asl_settings asl_w asl_s asl_s_1">
+		<form name='options'
+	  aria-label="Search settings form"
+	  autocomplete = 'off'>
+
+	
+	
+	<input type="hidden" name="filters_changed" style="display:none;" value="0">
+	<input type="hidden" name="filters_initial" style="display:none;" value="1">
+
+	<div class="asl_option_inner hiddend">
+		<input type='hidden' name='qtranslate_lang' id='qtranslate_lang1'
+			   value='0'/>
+	</div>
+
+	
+	
+	<fieldset class="asl_sett_scroll">
+		<legend style="display: none;">Generic selectors</legend>
+		<div class="asl_option" tabindex="0">
+			<div class="asl_option_inner">
+				<input type="checkbox" value="exact"
+					   aria-label="Exact matches only"
+					   name="asl_gen[]" />
+				<div class="asl_option_checkbox"></div>
+			</div>
+			<div class="asl_option_label">
+				Exact matches only			</div>
+		</div>
+		<div class="asl_option" tabindex="0">
+			<div class="asl_option_inner">
+				<input type="checkbox" value="title"
+					   aria-label="Search in title"
+					   name="asl_gen[]"  checked="checked"/>
+				<div class="asl_option_checkbox"></div>
+			</div>
+			<div class="asl_option_label">
+				Search in title			</div>
+		</div>
+		<div class="asl_option" tabindex="0">
+			<div class="asl_option_inner">
+				<input type="checkbox" value="content"
+					   aria-label="Search in content"
+					   name="asl_gen[]"  checked="checked"/>
+				<div class="asl_option_checkbox"></div>
+			</div>
+			<div class="asl_option_label">
+				Search in content			</div>
+		</div>
+		<div class="asl_option_inner hiddend">
+			<input type="checkbox" value="excerpt"
+				   aria-label="Search in excerpt"
+				   name="asl_gen[]" />
+			<div class="asl_option_checkbox"></div>
+		</div>
+	</fieldset>
+	<fieldset class="asl_sett_scroll">
+		<legend style="display: none;">Post Type Selectors</legend>
+					<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="ai1ec_event"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+						<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="post"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+						<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="page"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+						<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="tablepress_table"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+				</fieldset>
+	</form>
+	</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+</div>
+		</aside><aside id="text-25" class="widget inner-padding widget_text">			<div class="textwidget">		<div data-elementor-type="wp-post" data-elementor-id="34260" class="elementor elementor-34260">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-c47a231 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c47a231" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4d19aa9" data-id="4d19aa9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ebbdca3 elementor-widget elementor-widget-text-editor" data-id="ebbdca3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<h3 style="text-align: center;"><strong>Coming Up on OAR FM Dunedin</strong></h3>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+</div>
+		</aside><aside id="custom_html-6" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><center><iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Pacific%2FAuckland&amp;src=b2FyLm9yZy5uel9vYnJpZzg3MzE0bjI2YmxoNjkyczdnazFkMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%234285F4&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;title=Website" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe></center></div></aside><aside id="media_image-2" class="widget inner-padding widget_media_image"><a href="https://givealittle.co.nz/org/oarfm" target="_blank" rel="noopener"><img class="image aligncenter" src="http://oar.org.nz/wp-content/uploads/2016/01/ButtonOAR-1-e1453761869994.png" alt="Donate to Otago Access Radio" width="275" height="160" decoding="async" /></a></aside><aside id="text-27" class="widget inner-padding widget_text">			<div class="textwidget"><p><strong>                 Thanks to Our Funders</strong><a href="https://www.nzonair.govt.nz/"><img decoding="async" class="wp-image-41550 aligncenter" src="http://oar.org.nz/wp-content/uploads/2022/04/NZoA_RGB_NZoA-Black-300x184-1.jpg" alt="" width="300" height="184" /></a><a href="https://www.oct.org.nz/"><img decoding="async" class="wp-image-43102 aligncenter" src="http://oar.org.nz/wp-content/uploads/2023/03/OCTLogo_RGB-300x99.jpg" alt="" width="260" height="86" srcset="https://oar.org.nz/wp-content/uploads/2023/03/OCTLogo_RGB-300x99.jpg 300w, https://oar.org.nz/wp-content/uploads/2023/03/OCTLogo_RGB-1024x340.jpg 1024w, https://oar.org.nz/wp-content/uploads/2023/03/OCTLogo_RGB-768x255.jpg 768w, https://oar.org.nz/wp-content/uploads/2023/03/OCTLogo_RGB.jpg 1182w" sizes="(max-width: 260px) 100vw, 260px" /></a></p>
+<p><a href="https://www.dunedin.govt.nz/"><img loading="lazy" decoding="async" class="aligncenter wp-image-41546" src="http://oar.org.nz/wp-content/uploads/2022/04/DCC-Logo-300x64-4.png" alt="" width="361" height="77" /></a></p>
+<p><a href="https://www.communitymatters.govt.nz/lottery-community/"><img loading="lazy" decoding="async" class="wp-image-41551 size-full aligncenter" src="http://oar.org.nz/wp-content/uploads/2022/04/lottery-300x115-1.jpg" alt="" width="300" height="115" /></a><a href="https://www.communitymatters.govt.nz/community-organisations-grants-scheme/" data-wp-editing="1"><img loading="lazy" decoding="async" class="aligncenter wp-image-41549" src="http://oar.org.nz/wp-content/uploads/2022/04/cogs-300x156-1.jpg" alt="" width="200" height="104" /></a></p>
+<p>&nbsp;</p>
+</div>
+		</aside><aside id="text-26" class="widget inner-padding widget_text">			<div class="textwidget">		<div data-elementor-type="wp-post" data-elementor-id="34519" class="elementor elementor-34519 elementor-bc-flex-widget">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-db95f1f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="db95f1f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-552a6c6" data-id="552a6c6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7223f4c elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="7223f4c" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-b883793" href="https://www.facebook.com/OtagoAccessRadio/" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Facebook</span>
+													<i class="fa fa-facebook"></i>
+											</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-ae1c3eb" href="https://www.instagram.com/oarfm/" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Instagram</span>
+													<i class="fa fa-instagram"></i>
+											</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-78f2336" href="https://twitter.com/oarfm/" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Twitter</span>
+													<i class="fa fa-twitter"></i>
+											</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-47903ae" href="https://www.youtube.com/user/OARFM/" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Youtube</span>
+													<i class="fa fa-youtube"></i>
+											</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+</div>
+		</aside><aside id="sow-image-2" class="widget inner-padding widget_sow-image"><div
+			
+			class="so-widget-sow-image so-widget-sow-image-default-c67d20f9f743"
+			
+		>
+
+<div class="sow-image-container">
+			<a href="https://dcnb.oar.org.nz/"
+					>
+			<img src="https://oar.org.nz/wp-content/uploads/2018/01/Community-Notice-inline_new.png" width="2048" height="721" srcset="https://oar.org.nz/wp-content/uploads/2018/01/Community-Notice-inline_new.png 2048w, https://oar.org.nz/wp-content/uploads/2018/01/Community-Notice-inline_new-300x106.png 300w, https://oar.org.nz/wp-content/uploads/2018/01/Community-Notice-inline_new-768x270.png 768w, https://oar.org.nz/wp-content/uploads/2018/01/Community-Notice-inline_new-1024x360.png 1024w" sizes="(max-width: 2048px) 100vw, 2048px" title="Community Notice inline_new" alt="Dunedin Community Noticeboard" loading="lazy" decoding="async" 		class="so-widget-image"/>
+	</a></div>
+
+</div></aside>	</div>
+</div>
+
+	</div>
+</div>
+
+
+<div class="site-footer grid-container grid-parent">
+				<div id="footer-widgets" class="site footer-widgets">
+				<div class="footer-widgets-container grid-container grid-parent">
+					<div class="inside-footer-widgets">
+							<div class="footer-widget-1 grid-parent grid-100 tablet-grid-50 mobile-grid-100">
+		<aside id="text-15" class="widget inner-padding widget_text"><h2 class="widget-title">Thanks to all the Businesses and Organisations working with OAR:</h2>			<div class="textwidget"><p style="font-size: 80%; text-align: center;"><a title="Alcoholics Anonymous" href="http://aa.org.nz/" target="_blank" rel="noopener noreferrer">Alcoholics Anonymous</a> / <a href="http://www.artsenta.org/" target="_blank" rel="noopener noreferrer">Artsenta</a> / <a href="https://dch.org.nz/tenants/">Asthma Otago</a> / <a title="Brain Injury Association Otago" href="http://www.braininjuryotagocanterbury.org.nz/">Brain Injury Association Otago</a> / <a title="BYA" href="http://www.bya.org.hk/">Buddhist Youth Association</a> / <a href="http://www.cct.org.nz/" target="_blank" rel="noopener noreferrer">Community Care Trust</a> / <a title="CitizensAdvice" href="http://www.cab.org.nz/">Citizens Advice Bureau</a> / <a title="Community Law Otago" href="http://www.communitylawotago.com/">Community Law Otago</a> / <a href="https://www.basedunedin.co.nz/youth-directory/training-education-and-employment/connections-education-and-development-centre">Connections Centre</a> / <a title="DBAS Dunedin" href="http://www.budgetingdunedin.co.nz/">DBAS Dunedin</a> / <a title="Disabled Persons Assembly" href="http://www.dpa.org.nz/">Disabled Persons Assembly</a> / <a title="Dunedin Athenaeum and Mechanics Institute" href="http://www.dunedinathenaeum.org.nz/">Dunedin Athenaeum and Mechanics Institute</a> / <a title="DCC" href="http://www.dunedin.govt.nz/" target="_blank" rel="noopener noreferrer">Dunedin City Council</a> / <a href="https://www.facebook.com/dunedinkoreanlanguageculture">Dunedin Korean Language and Culture Society</a> / <a title="Dunedin Multi-Cultural Council" href="https://www.facebook.com/DunedinMultiEthnicCouncil/" target="_blank" rel="noopener noreferrer">Dunedin Multi-Cultural Council</a> / <a href="https://www.facebook.com/Nepalese-Community-in-Dunedin-1580088442259496/">Dunedin Nepalese Society</a> / <a href="https://www.dunpak-society.org.nz/">Dunedin Pakistan Society</a> / <a href="https://www.dunedinpride.org.nz/">Dunedin Pride</a> / <a href="https://www.dpags.org.nz/">Dunedin Public Art Gallery Society</a> / <a href="http://www.dunedinlibraries.govt.nz/" target="_blank" rel="noopener noreferrer">Dunedin Public Libraries</a> / <a href="http://www.dunedintamilsociety.org.nz/" target="_blank" rel="noopener noreferrer">Dunedin Tamil Society</a> / <a href="https://www.cityofliterature.co.nz/">Dunedin UNESCO City of Literature</a> / <a href="https://www.facebook.com/DunedinSCA/">Dunedin Senior Chinese Association</a> / Ecumenical Churches of Dunedin / <a href="https://www.otagocdem.govt.nz/">Emergency Mangement Otago</a> / <a href="http://www.otago.ac.nz/law/" target="_blank" rel="noopener noreferrer">Faculty of Law, University of Otago</a> / <a title="Fono Faufautua a Samoa i Otago" href="https://www.facebook.com/profile.php?id=100009963647295" target="_blank" rel="noopener noreferrer">Fono Faufautua a Samoa i Otago</a> / <a href="https://www.visitheritage.co.nz/">Heritage New Zealand</a> / <a title="Huzur Kebab" href="http://www.huzurkebabcafe.co.nz/">Huzur Kebab</a> / <a href="https://livingwellcentre.nz/">Livingwell &#8211; Disability Resource Centre</a> / <a href="http://www.dmm.org.nz/index.php">Methodist Mission</a> / <a title="MS Otago" href="https://www.msotago.org.nz/" target="_blank" rel="noopener noreferrer">MS Otago</a> / <a title="Orokonui Ecosanctuary" href="http://www.orokonui.nz/">Orokonui Ecosanctuary</a> / <a href="https://www.otago-institute.org/">Otago Institute of Arts and Sciences</a> / <a title="Otago Polytechnic Te Pūkenga College of Community Development and Personal Wellbeing" href="http://www.otagopolytechnic.ac.nz/">Otago Polytechnic Te Pūkenga College of Community Development and Personal Wellbeing</a> / <a title="Otago Polytechnic Te Pūkenga Capable NZ / Work-based Learning" href="http://www.otagopolytechnic.ac.nz/">Otago Polytechnic Te Pūkenga Capable NZ Work-based Learning</a> / <a href="https://www.orc.govt.nz/">Otago Regional Council</a> / <a title="Otago Southland Branch NZ Society of Authors" href="http://www.authors.org.nz/about/branches/otagosouthland/">Otago Southland Branch NZ Society of Authors</a> / <a href="http://www.pactgroup.co.nz/" target="_blank" rel="noopener noreferrer">PACT</a> / <a title="Disabled Persons Assembly" href="http://www.prospectpark.co.nz/">Prospect Park Productions</a> / <a title="Radius Care" href="http://radiuscare.net.nz/">Radius Care</a> / <a href="http://www.quakers.nz/" target="_blank" rel="noopener noreferrer">Religious Society of Friends (Quakers) Aotearoa New Zealand</a> / <a title="Rhubarb on Highgate" href="http://www.rhubarbnz.com/" target="_blank" rel="noopener noreferrer">Rhubarb on Highgate</a> / <a title="Science Academy (OUASSA)" href="http://www.otago.ac.nz/ouassa/">Science Academy (OUASSA)</a> / <a href="http://www.southernheritage.org.nz/" target="_blank" rel="noopener noreferrer">Southern Heritage Trust</a> / <a href="https://www.stroke.org.nz/">Stroke Foundation NZ</a> / <a href="https://www.tewhatuora.govt.nz/">Te Whatu Ora Southern</a> / <a title="University Book Shop" href="http://www.unibooks.co.nz/">University Book Shop</a> / <a title="Otago University Science News and Promotion" href="http://www.otago.ac.nz/" target="_blank" rel="noopener noreferrer">University of Otago</a> / <a href="http://www.volunteersouth.org.nz/" target="_blank" rel="noopener noreferrer">Volunteer South</a></p>
+</div>
+		</aside>	</div>
+						</div>
+				</div>
+			</div>
+					<footer class="site-info" aria-label="Site"  itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info grid-container grid-parent">
+								<div class="copyright-bar">
+					&copy; OAR FM Dunedin 2024				</div>
+			</div>
+		</footer>
+		</div>
+
+
+<!-- WP Audio player plugin v1.9.9 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = 'https://oar.org.nz/wp-content/plugins/compact-wp-audio-player/swf/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+    stop_all_tracks();                soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <!--noptimize--><!--email_off--><style type='text/css'>.maxbutton-1.maxbutton.maxbutton-listen-live{position:relative !important;text-decoration:none !important;display:inline-block !important;vertical-align:middle !important;width:120px !important;height:30px !important;border:2px solid #50a1d0 !important;border-radius:4px 4px 4px 4px !important;background-color:#50a1d0 !important;box-shadow:0px 0px 2px 0px #333333 !important}.maxbutton-1.maxbutton.maxbutton-listen-live:hover{border-color:#50a1d0 !important;background-color:white !important;box-shadow:0px 0px 2px 0px #333333 !important}.maxbutton-1.maxbutton.maxbutton-listen-live .mb-text{color:#ffffff !important;font-size:15px !important;text-align:center !important;font-style:normal !important;font-weight:bold !important;line-height:1em !important;box-sizing:border-box !important;display:block !important;background-color:unset !important;padding:8px 0px 0px 0px !important}.maxbutton-1.maxbutton.maxbutton-listen-live:hover .mb-text{color:#50a1d0 !important}@media only screen and (min-width:0px) and (max-width:480px){.maxbutton-1.maxbutton.maxbutton-listen-live{width:90% !important}.maxbutton-1.maxbutton.maxbutton-listen-live .mb-text{font-size:12px !important}}
+.maxbutton-2.maxbutton.maxbutton-listen-to-podcasts{position:relative !important;text-decoration:none !important;display:inline-block !important;vertical-align:middle !important;width:175px !important;height:30px !important;border:2px solid #50a1d0 !important;border-radius:4px 4px 4px 4px !important;background-color:#50a1d0 !important;box-shadow:0px 0px 2px 0px #333333 !important}.maxbutton-2.maxbutton.maxbutton-listen-to-podcasts:hover{border-color:#50a1d0 !important;background-color:white !important;box-shadow:0px 0px 2px 0px #333333 !important}.maxbutton-2.maxbutton.maxbutton-listen-to-podcasts .mb-text{color:#ffffff !important;font-size:15px !important;text-align:center !important;font-style:normal !important;font-weight:bold !important;line-height:1em !important;box-sizing:border-box !important;display:block !important;background-color:unset !important;padding:8px 0px 0px 0px !important}.maxbutton-2.maxbutton.maxbutton-listen-to-podcasts:hover .mb-text{color:#50a1d0 !important}@media only screen and (min-width:0px) and (max-width:480px){.maxbutton-2.maxbutton.maxbutton-listen-to-podcasts{width:90% !important}.maxbutton-2.maxbutton.maxbutton-listen-to-podcasts .mb-text{font-size:12px !important}}
+</style><!--/email_off--><!--/noptimize-->
+<script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script><link rel='stylesheet' id='elementor-post-34256-css' href='https://oar.org.nz/wp-content/uploads/elementor/css/post-34256.css' media='all' />
+<link rel='stylesheet' id='elementor-post-34519-css' href='https://oar.org.nz/wp-content/uploads/elementor/css/post-34519.css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://oar.org.nz/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css' media='all' />
+<!--[if lte IE 11]>
+<script src="https://oar.org.nz/wp-content/themes/generatepress/assets/js/classList.min.js" id="generate-classlist-js"></script>
+<![endif]-->
+<script id="generate-menu-js-extra">
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src="https://oar.org.nz/wp-content/themes/generatepress/assets/js/menu.min.js" id="generate-menu-js"></script>
+<script id="wd-asl-ajaxsearchlite-js-before">
+window.ASL = typeof window.ASL !== 'undefined' ? window.ASL : {}; window.ASL.wp_rocket_exception = "DOMContentLoaded"; window.ASL.ajaxurl = "https:\/\/oar.org.nz\/wp-admin\/admin-ajax.php"; window.ASL.backend_ajaxurl = "https:\/\/oar.org.nz\/wp-admin\/admin-ajax.php"; window.ASL.js_scope = "jQuery"; window.ASL.asl_url = "https:\/\/oar.org.nz\/wp-content\/plugins\/ajax-search-lite\/"; window.ASL.detect_ajax = 1; window.ASL.media_query = 4761; window.ASL.version = 4761; window.ASL.pageHTML = ""; window.ASL.additional_scripts = [{"handle":"wd-asl-ajaxsearchlite","src":"https:\/\/oar.org.nz\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-prereq.js","prereq":[]},{"handle":"wd-asl-ajaxsearchlite-core","src":"https:\/\/oar.org.nz\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-core.js","prereq":[]},{"handle":"wd-asl-ajaxsearchlite-vertical","src":"https:\/\/oar.org.nz\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-results-vertical.js","prereq":["wd-asl-ajaxsearchlite"]},{"handle":"wd-asl-ajaxsearchlite-autocomplete","src":"https:\/\/oar.org.nz\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-autocomplete.js","prereq":["wd-asl-ajaxsearchlite"]},{"handle":"wd-asl-ajaxsearchlite-load","src":"https:\/\/oar.org.nz\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-load.js","prereq":["wd-asl-ajaxsearchlite-autocomplete"]}]; window.ASL.script_async_load = false; window.ASL.init_only_in_viewport = true; window.ASL.font_url = "https:\/\/oar.org.nz\/wp-content\/plugins\/ajax-search-lite\/css\/fonts\/icons2.woff2"; window.ASL.css_async = false; window.ASL.highlight = {"enabled":false,"data":[]}; window.ASL.analytics = {"method":0,"tracking_id":"","string":"?ajax_search={asl_term}","event":{"focus":{"active":1,"action":"focus","category":"ASL","label":"Input focus","value":"1"},"search_start":{"active":0,"action":"search_start","category":"ASL","label":"Phrase: {phrase}","value":"1"},"search_end":{"active":1,"action":"search_end","category":"ASL","label":"{phrase} | {results_count}","value":"1"},"magnifier":{"active":1,"action":"magnifier","category":"ASL","label":"Magnifier clicked","value":"1"},"return":{"active":1,"action":"return","category":"ASL","label":"Return button pressed","value":"1"},"facet_change":{"active":0,"action":"facet_change","category":"ASL","label":"{option_label} | {option_value}","value":"1"},"result_click":{"active":1,"action":"result_click","category":"ASL","label":"{result_title} | {result_url}","value":"1"}}};
+window.ASL_INSTANCES = [];window.ASL_INSTANCES[1] = {"homeurl":"https:\/\/oar.org.nz\/","resultstype":"vertical","resultsposition":"hover","itemscount":4,"charcount":0,"highlight":0,"highlightwholewords":1,"singleHighlight":0,"scrollToResults":{"enabled":0,"offset":0},"resultareaclickable":1,"autocomplete":{"enabled":1,"lang":"en","trigger_charcount":0},"mobile":{"menu_selector":"#menu-toggle"},"trigger":{"click":"results_page","click_location":"same","update_href":0,"return":"results_page","return_location":"same","facet":1,"type":1,"redirect_url":"?s={phrase}","delay":300},"animations":{"pc":{"settings":{"anim":"fadedrop","dur":300},"results":{"anim":"fadedrop","dur":300},"items":"voidanim"},"mob":{"settings":{"anim":"fadedrop","dur":300},"results":{"anim":"fadedrop","dur":300},"items":"voidanim"}},"autop":{"state":"disabled","phrase":"","count":1},"resPage":{"useAjax":0,"selector":"#main","trigger_type":1,"trigger_facet":1,"trigger_magnifier":0,"trigger_return":0},"resultsSnapTo":"left","results":{"width":"auto","width_tablet":"auto","width_phone":"auto"},"settingsimagepos":"right","closeOnDocClick":1,"overridewpdefault":0,"override_method":"get"};
+</script>
+<script src="https://oar.org.nz/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-prereq.js" id="wd-asl-ajaxsearchlite-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-core.js" id="wd-asl-ajaxsearchlite-core-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-results-vertical.js" id="wd-asl-ajaxsearchlite-vertical-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-autocomplete.js" id="wd-asl-ajaxsearchlite-autocomplete-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-load.js" id="wd-asl-ajaxsearchlite-load-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-wrapper.js" id="wd-asl-ajaxsearchlite-wrapper-js"></script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https:\/\/oar.org.nz\/wp-admin\/admin-ajax.php","nonce":"21c09c245e","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/oar.org.nz\/sathsara-rawa\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+</script>
+<script src="https://oar.org.nz/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js" id="eael-general-js"></script>
+<script defer src="https://stats.wp.com/e-202402.js" id="jetpack-stats-js"></script>
+<script id="jetpack-stats-js-after">
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'95564191',post:'41409',tz:'13',srv:'oar.org.nz',j:'1:12.9.1'} ]);
+_stq.push([ "clickTrackerInit", "95564191", "41409" ]);
+</script>
+<script src="https://oar.org.nz/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/premium-wrapper-link.min.js" id="pa-wrapper-link-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script src="https://oar.org.nz/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js" id="elementor-waypoints-js"></script>
+<script src="https://oar.org.nz/wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.18.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"block_editor_assets_optimize":true,"landing-pages":true,"e_image_loading_optimization":true,"e_global_styleguide":true},"urls":{"assets":"https:\/\/oar.org.nz\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":41409,"title":"Sathsara%20R%C4%81wa%20-%20OAR%20FM%20Dunedin","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://oar.org.nz/wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
+
+
+  
+  <style>
+      </style>
+
+    <script>     var post_grid_vars = {"siteUrl":"https:\/\/oar.org.nz"}  </script>
+  
+
+  <style>
+      </style>
+
+  
+</body>
+</html>

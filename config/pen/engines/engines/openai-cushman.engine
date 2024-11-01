@@ -1,0 +1,29 @@
+engine-title: OpenAI Cushman
+include: OpenAI
+model: cushman-codex
+engine-notes:
+- Almost as capable as davinci-codex, but slightly faster
+# foundation may be derived from layers
+foundation: false
+default-temperature: 0.2
+modes:
+- search
+- classification
+# Pick when you want 'just' Code
+# Therefore, it would override Codex when nl
+# is not required
+specialities:
+- code
+layers:
+- code
+engine-min-tokens: 0
+engine-whitespace-support: yes
+engine-max-tokens: 2049
+libre-dataset: no
+libre-model: no
+local: no
+# If the model is not available
+# then try these in order:
+fallbacks:
+- OpenAI Codex
+- OpenAI Davinci

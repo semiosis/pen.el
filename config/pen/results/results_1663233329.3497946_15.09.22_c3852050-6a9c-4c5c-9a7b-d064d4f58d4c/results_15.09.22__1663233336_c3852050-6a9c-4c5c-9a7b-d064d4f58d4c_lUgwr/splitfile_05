@@ -1,0 +1,7 @@
+import tensorflow as tf
+
+graph_def_file = "path/to/frozen_graph.pb"
+input_arrays = ["input"]
+output_arrays = ["MobilenetV1/Predictions/Softmax"]
+
+converter = tf.lite.TFLiteConverter.from_frozen_graph(

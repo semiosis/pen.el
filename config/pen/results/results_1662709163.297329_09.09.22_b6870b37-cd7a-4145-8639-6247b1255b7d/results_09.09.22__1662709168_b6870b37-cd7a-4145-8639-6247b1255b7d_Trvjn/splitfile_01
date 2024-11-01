@@ -1,0 +1,1 @@
+System.Console.GetOpt "hi:o:" "input.txt" "output.txt"

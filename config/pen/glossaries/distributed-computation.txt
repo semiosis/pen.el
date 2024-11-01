@@ -1,0 +1,12 @@
+Conflict-free replicated data type
+CRDT
+    [data structure]
+
+    A data structure which can be replicated
+    across multiple computers in a network,
+    where the replicas can be updated
+    independently and concurrently without
+    coordination between the replicas, and
+    where it is always mathematically possible
+    to resolve inconsistencies that might come
+    up.

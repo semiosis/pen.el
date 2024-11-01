@@ -1,0 +1,187 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/html
+Last-Modified: Thu, 07 Mar 2024 15:12:19 GMT
+Accept-Ranges: bytes
+ETag: "80cbc9d8a170da1:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self' https://*.gotquestions.org
+Date: Wed, 01 May 2024 21:31:37 GMT
+Content-Length: 6242
+
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+<head>
+<title>Is the Word of Faith movement biblical? | GotQuestions.org</title>
+<META name="keywords" itemprop="keywords" content="Word Faith movement"><META name="description" itemprop="description" property="og:description" content="Is the Word of Faith movement biblical? Is it God’s will for all Christians to be physically healthy and financially prosperous?">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="image_src" itemprop="image" href="https://www.gotquestions.org/img/GQlogo.png"><link rel="canonical" itemprop="url mainEntityOfPage" href="https://www.gotquestions.org/Word-Faith.html">
+<meta itemprop="author" content="GotQuestions.org">
+<meta itemprop="datePublished" content="2005-02-11">
+<meta property="og:image" content="https://www.gotquestions.org/img/OG/Word-Faith.jpg">
+<meta property="og:site_name" content="GotQuestions.org">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.gotquestions.org/Word-Faith.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7EVHFDMSZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M7EVHFDMSZ');
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-site-theme="light">
+<div class="fixed-button settings box-shadow"><img src="img/cogwheel.svg" alt="settings icon" onclick="settingsMenu(this)"></div>
+<div class="fixed-button sharebutton box-shadow"><img src="img/share.svg" alt="share icon" onclick="shareMenu(this)"></div>
+<header class="gradient-to-b" style="--color-start: var(--bgcolor-header-start); --color-end: var(--bgcolor-header-end);">
+<div class="searchbox desktop-show"><div class="search"><div class='gq-ac-placeholder header'></div></div></div>
+<div class="logo-wrap"><a href="https://www.gotquestions.org" class="logo"><img src="img/logo_white.svg" alt="Bible Questions Answered"></a></div>
+<nav>
+<ul>
+<li><a href="whats-new.html">New</a></li>
+<li><a href="top20.html">Top 20</a></li>
+<li><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="extra-menu modal-menu box-shadow">
+<li class="mobile-show flex-half"><a href="whats-new.html">New</a></li>
+<li class="mobile-show flex-half"><a href="top20.html">Top 20</a></li>
+<li class="mobile-show flex-half"><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li class="mobile-show flex-half"><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="Gospel-presentations.html">The Gospel</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="Bible-Questions.html">Ask</a></li>
+<li><a href="crucial.html">Crucial Questions</a></li>
+<li><a href="content.html">Content Index</a></li>
+<li><a href="questweek.html">Question of the Week</a></li>
+<li><a href="free-Bible-study.html">Bible Studies</a></li>
+<li><a href="international.html">International</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li class="mobile-show donate"><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="settings-menu modal-menu box-shadow">
+<li>
+<div class="toggle-wrap">
+<span>Light</span><input type="checkbox" checked id="toggle" class="checkbox" onclick="toggleTheme(this)" /><label for="toggle" class="switch"></label><span>Dark</span>
+</div>
+</li>
+<li><div id="bibleRefLinkSettings"><label for="bibleRefLinkVersion">Bible Version</label><select id="bibleRefLinkVersion" name="bibleRefLinkVersion" onchange="changeVersion();BibleRefLink.brlSavePrefs();"><option value="ESV">ESV</option><option value="CSB">CSB</option><option value="KJV">KJV</option><option value="NASB">NASB</option><option value="NIV" selected="selected">NIV</option><option value="NKJV">NKJV</option><option value="NLT">NLT</option></select></div></li>
+<li><label for="font">Font Family</label><select name="font" id="font" onchange="changeFont()"><option value="system-ui">Default</option><option value="Arial">Arial</option><option value="Verdana">Verdana</option><option value="Helvetica">Helvetica</option><option value="Tahoma">Tahoma</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option></select></li>
+<li><label for="lineheight">Line Height</label><select name="lineheight" id="lineheight" onchange="changeLineHeight()"><option value="1.4">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+<li><label for="fontsize">Font Size</label><select name="fontsize" id="fontsize" onchange="changeFontSize()"><option value="1">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+</ul>
+<ul class="final-menu modal-menu box-shadow">
+<li><a href="https://www.facebook.com/sharer.php?u=https://www.gotquestions.org/" class="fb"><img src="img/logo-fb-simple.svg" alt="Facebook icon">Facebook</a></li>
+<li><a href="https://twitter.com/share?url=https://www.gotquestions.org/" class="tw"><img src="img/logo-twitter.svg" alt="Twitter icon">Twitter</a></li>
+<li><a href="https://pinterest.com/pin/create/link/?url=https://www.gotquestions.org/" class="pi"><img src="img/logo-pinterest.svg" alt="Pinterest icon">Pinterest</a></li>
+<li><a class="SendEmail" href=""><img src="img/letter.svg" alt="Email icon">Email</a></li>
+<li class="mobile-show"><a class="SendSMS" href=""><img src="img/sms-icon.svg" alt="SMS icon">Text/SMS</a></li>
+</ul>
+<img src="img/menu.svg" class="menu-icon" alt="Menu icon" onclick="extraMenu(this)">
+</nav>
+</header>
+<div class="featured gradient-to-tr" style="--color-start: var(--bgcolor-featured-start); --color-end: var(--bgcolor-featured-end)">
+<div class="featured-left">
+<h5>Find Out</h5>
+<h4><a href="going-to-heaven.html">How to go to Heaven</a></h4>
+<h4><a href="get-right-with-God.html">How to get right with God</a></h4>
+</div>
+<div class="featured-right">
+<div class="desktop-hide gq-YT"><a href="https://www.youtube.com/gotquestionsorg" target="_blank"><img src="img/GQ-YT.png"></a></div>
+</div>
+</div>
+<main><div class="breadcrumb-wrapper">
+<span class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org"><span itemprop="name"><span class="home-icon"></span>Home</span></a><meta itemprop="position" content="1"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content.html"><span itemprop="name">Content Index</span></a><meta itemprop="position" content="2"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_false-beliefs.html"><span itemprop="name">False Beliefs</span></a><meta itemprop="position" content="3"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_false-beliefs_Spirit.html"><span itemprop="name">False Beliefs about the Holy Spirit</span></a><meta itemprop="position" content="4"></span> <span class="chevron-right"></span> Word of Faith</span></div>
+<section class="content-wrap gradient-to-b" style="--color-start: var(--bgcolor-content-start); --color-end: var(--bgcolor-content-end);" ><div class="content">
+<div class="label gradient-to-tr" style="--color-start: #96445a; --color-end: #6f637e;">Question</div>
+<div class="sponsor-sidebar"><div class="desktop-show" align="center"><div class="adManager-placeholder"></div></div></div>
+<h1><span itemprop="name headline" property="og:title">Is the Word of Faith movement biblical?</span></h1>
+<div class="actions-wrap"><div class="actions">
+<a target="_blank" rel="noopener nofollow" href="INTL/Word-Faith.html" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'intl'});"><img src="img/translate-icon.svg" alt="translate"></a>
+<a target="_blank" rel="noopener" property="og:video" href="https://youtu.be/wYDwjDDel94" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'video'});"><img src="img/logo-youtube.svg" alt="video" class="questionInteract"></a>
+<a target="_blank" rel="noopener" href="https://printer.gotquestions.net/GeneratePF?articleId=1754" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'print'});"><img src="img/print.svg" class="questionInteract" alt="Word Faith movement"></a>
+<span class="audio-icon"><img src="img/volume.svg" alt="audio" class="questionInteract"><audio controls preload="none" style="width:300px;height:25px"><source src="audio/word-faith.mp3" type="audio/mpeg"></audio></span>
+</div></div>
+<div itemprop="articleBody">
+<div class="label  gradient-to-tr" style="--color-start: #29a699; --color-end: #749c5a;">Answer</div><br><br>
+Word of Faith teaching is decidedly unbiblical. It is not a denomination and does not have a formal organization or hierarchy. Instead, it is a movement that is heavily influenced by a number of high-profile pastors and teachers such as Kenneth Hagin, Benny Hinn, Kenneth Copeland, Paul and Jan Crouch, and Fred Price.<br><br>
+<div class="youtube-player" data-id="wYDwjDDel94"></div><br>
+The Word of Faith movement grew out of the Pentecostal movement in the late 20th century. Its founder was E. W. Kenyon, who studied the metaphysical New Thought teachings of Phineas Quimby. Mind science (where "name it and claim it" originated) was combined with Pentecostalism, resulting in a peculiar mix of orthodox Christianity and mysticism. Kenneth Hagin, in turn, studied under E. W. Kenyon and made the Word of Faith movement what it is today. Although individual teachings range from completely heretical to completely ridiculous, what follows is the basic theology most Word of Faith teachers align themselves with.<br><br>
+At the heart of the Word of Faith movement is the belief in the "force of faith." It is believed words can be used to manipulate the faith-force, and thus actually create what they believe Scripture promises (health and wealth). Laws supposedly governing the faith-force are said to operate independently of God’s sovereign will and that God Himself is subject to these laws. This is nothing short of idolatry, turning our faith—and by extension ourselves—into god.<br><br>
+From here, its theology just strays further and further from Scripture: it claims that God created human beings in His literal, physical image as little gods. Before the fall, humans had the potential to call things into existence by using the faith-force. After the fall, humans took on Satan’s nature and lost the ability to call things into existence. In order to correct this situation, Jesus Christ gave up His divinity and became a man, died spiritually, took Satan’s nature upon Himself, went to hell, was born again, and rose from the dead with God’s nature. After this, Jesus sent the Holy Spirit to replicate the Incarnation in believers so they could become little gods as God had originally intended.<br><br>
+Following the natural progression of these teachings, as little gods we again have the ability to manipulate the faith-force and become prosperous in all areas of life. Illness, sin, and failure are the result of a lack of faith, and are remedied by confession—claiming God’s promises for oneself into existence. Simply put, the Word of Faith movement exalts man to god-status and reduces God to man-status. Needless to say, this is a false representation of what Christianity is all about. Obviously, Word of Faith teaching does not take into account what is found in Scripture. Personal revelation, not Scripture, is highly relied upon in order to come up with such absurd beliefs, which is just one more proof of its heretical nature.<br><br>
+Countering Word of Faith teaching is a simple matter of reading the Bible. God alone is the Sovereign Creator of the Universe (Genesis 1:3; 1 Timothy 6:15) and does not need faith—He is the object of faith (Mark 11:22; Hebrews 11:3). God is spirit and does not have a physical body (John 4:24). Man was created in the image of God (Genesis 1:26, 27; 9:6), but this does not make him a little god or divine. Only God has a divine nature (Galatians 4:8; Isaiah 1:6-11, 43:10, 44:6; Ezekiel 28:2; Psalm 8:6-8). Christ is Eternal, the Only Begotten Son, and the only incarnation of God (John 1:1, 2, 14, 15, 18; 3:16; 1 John 4:1). In Him dwelt the fullness of the Godhead bodily (Colossians 2:9). By becoming a man, Jesus gave up the glory of heaven but not His divinity (Philippians 2:6-7), though He did choose to withhold His power while walking the earth as man.<br><br>
+The Word of Faith movement is deceiving countless people, causing them to grasp after a way of life and faith that is not biblical. At its core is the same lie Satan has been telling since the Garden: “You shall be as God” (Genesis 3:5). Sadly, those who buy into the Word of Faith movement are still listening to him. Our hope is in the Lord, not in our own words, not even in our own faith (Psalm 33:20-22). Our faith comes from God in the first place (Ephesians 2:8; Hebrews 12:2) and is not something we create for ourselves. So, be wary of the Word of Faith movement and any church that aligns itself with Word of Faith teachings.<br><br>
+</div>
+<div class="related resources"><h4>For Further Study</h4>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'chrbook'});" href="https://www.christianbook.com/Christian/Books/product?event=AFF&amp;p=1011693&amp;item_no=964596">Christianity in Crisis: 21st Century by Hank Hanegraaff</a><br><br>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'logos'});" href="https://www.logos.com/free-edition?utm_source=gotquestions&utm_medium=advertising_display&utm_content=more+insights+get+started&utm_campaign=promo-basic-fundamentals">More insights from your Bible study - Get Started with Logos Bible Software for Free!</a>
+</div>
+<div class="related topics"><h4>Related Articles</h4>
+<a href="faith-healers.html">Are faith healers for real? Does a faith healer heal with the same power as Jesus?</a><br><br>
+<a href="prosperity-gospel.html">What does the Bible say about the prosperity gospel?</a><br><br>
+<a href="American-Gospel.html">What are the <em>American Gospel</em> documentaries?</a><br><br>
+<a href="Trinity-Broadcasting-Network-TBN.html">What is the Trinity Broadcasting Network (TBN)?</a><br><br>
+<a href="prosperity-preachers.html">Are all prosperity preachers charlatans and/or false teachers?</a>
+</div>
+<center><strong class="return">Return to:<br><br>
+<a class="button-link box-shadow" href="questions_false-doctrine.html">Questions about False Doctrine</a><br><br>
+Is the Word of Faith movement biblical?</strong></center>
+</div>
+</section>
+<section class="homepage-sponsor desktop-hide">
+<div class="desktop-hide" align="center"><div class="adManager-placeholder-mobile"></div></div>
+</section>
+<section class="subscribe gradient-to-br" style="--color-start: #153c59; --color-end: #1b537c">
+<div class="grid">
+<div class="gradient-to-br box-shadow" style="--color-start: #2c6482; --color-end: #64547b">
+<h5>Subscribe to the</h5>
+<h3>Question of the Week</h3>
+<p>Get our Question of the Week delivered right to your inbox!</p>
+<iframe src="scommon/qotw.htm" title="question of the week" frameborder="0" width="100%" height="100%"></iframe>
+</div></div>
+</section>
+<section class="share gradient-to-b" style="--color-start: #073D60; --color-end: #0A3652;">
+<span>Follow Us:</span>
+<a target="_blank" href="https://www.facebook.com/gotquestions.org"><img src="img/logo-fb-simple.svg" alt="Facebook icon"></a>
+<a target="_blank" href="https://twitter.com/gotquestions"><img src="img/logo-twitter.svg" alt="Twitter icon"></a>
+<a target="_blank" href="https://www.youtube.com/gotquestionsorg"><img src="img/logo-youtube.svg" alt="YouTube icon"></a>
+<a target="_blank" href="https://www.pinterest.com/gotquestionsmin/"><img src="img/logo-pinterest.svg" alt="Pinterest icon"></a>
+<a target="_blank" href="https://www.instagram.com/gotquestionsministries/"><img src="img/logo-instagram.svg" alt="Instagram icon"></a>
+</section>
+</main>
+<footer>
+<div class="grid"><div>
+<div class="logo"></div>
+<ul>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="citation.html">Citation</a></li>
+<li><a href="apply.html">Serve with Us</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="network">
+GotQuestions.org is the flagship site of Got Questions Ministries <a target="_blank" href="https://www.gqm.one"><img src="img/gqm-one.png"></a>
+</div>
+<div class="apps">
+<a href="https://apps.apple.com/us/app/got-questions/id366553550" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'ios-app'});"><img src="img/apple-appstore.svg" class="appSource"></a>
+<a href="https://play.google.com/store/apps/details?id=com.gotquestions.gqandapp&hl=en" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'android-app'});"><img src="img/google-play.svg" class="appSource"></a>
+<a href="https://www.amazon.com/gp/product/B07VX73L12" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'alexa-skill'});"><img src="img/amazon-alexa.svg" class="appSource"></a>
+</div>
+</div>
+</footer>
+<center><div class="bottom">&copy; Copyright 2002-2024 Got Questions Ministries. All rights reserved.&nbsp;<a href="privacy.html">Privacy Policy</a></div>
+<div itemprop="dateModified" content="2022-01-04">This page last updated: January 4, 2022</div></center>
+<script src="scripts.js"></script>
+<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="GotQuestions.org"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="url" content="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="width" content="400"><meta itemprop="height" content="79">
+</div></div>
+<div itemprop="video" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="embedURL" content="https://youtu.be/wYDwjDDel94"><meta itemprop="name" content="Is the Word of Faith movement biblical?"><meta itemprop="description" content="Is the Word of Faith movement biblical? Is it God’s will for all Christians to be physically healthy and financially prosperous?"><meta itemprop="thumbnailUrl" content="https://www.gotquestions.org/img/video-thumbnails/Word-Faith.jpg"><meta itemprop="uploadDate" content="2019-02-20">
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sum of list
+# group: list math
+# key: +
+# --
+sum([1,2,3,4,5,1,4,5])

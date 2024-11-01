@@ -1,0 +1,10 @@
+cd 'harrys adventures'
+» ls
+ harry-and-the-sorcerers-stone.txt  harry-and-the-goblet-of-fire.txt  harry-and-the-order-of-the-phoenix.txt
+» cd ..
+» ls
+ harrys adventures  harrys adventures  stop-reason.txt
+» cd ..
+» ls
+ notes  stop-reason.txt
+» cd notes

@@ -1,0 +1,16 @@
+- 1. Henry Ford (1863-1947)
+  - 2. Henry Timken (1895-1981)
+  - 3. Ray Kroc (1902-1984)
+  - 4. Philip Morris (1911-1990)
+  - 5. Jack Welch (1937-)
+"""
+
+
+def test_main():
+    runner = CliRunner()
+    result = runner.invoke(cli, ['--help'])
+    assert result.exit_code == 0
+    assert 'Print out a Markdown table to stdout based on the contents of the database' in result.output
+
+    result = runner.invoke(cli, ['--version'])
+    assert result.exit_

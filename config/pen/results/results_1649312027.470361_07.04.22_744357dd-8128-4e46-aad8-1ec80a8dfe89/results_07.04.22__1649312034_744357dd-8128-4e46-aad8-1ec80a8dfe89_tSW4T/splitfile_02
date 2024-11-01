@@ -1,0 +1,6 @@
+
+
+xmap <silent> gb :call GetLast20LinesBeforeCursor()<cr> 
+function! DeleteTrailingWhitespace()
+let l:save = &showbreak
+silent! %s

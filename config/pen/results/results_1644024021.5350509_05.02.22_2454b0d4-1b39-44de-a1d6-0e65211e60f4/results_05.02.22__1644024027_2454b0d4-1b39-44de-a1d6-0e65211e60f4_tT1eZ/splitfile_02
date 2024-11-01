@@ -1,0 +1,11 @@
+
+
+
+def __init__(self):
+self.image_url = ''
+
+def add_image(self, image_url):
+self.image_url = image_url
+
+@staticmethod
+def get_image

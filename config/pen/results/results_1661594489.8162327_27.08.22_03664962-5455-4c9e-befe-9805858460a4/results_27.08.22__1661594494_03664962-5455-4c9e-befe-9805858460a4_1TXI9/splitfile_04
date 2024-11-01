@@ -1,0 +1,4 @@
+
+- you: I’m not sure what you mean.
+- haskell guru: if you have a lazy bytestring, you should use decodeUtf8 to convert it to a lazy text:
+- you: Wow!

@@ -1,0 +1,30 @@
+Quantum indeterminacy
+    The apparent necessary incompleteness in
+    the description of a physical system, that
+    has become one of the characteristics of
+    the standard description of quantum
+    physics.
+
+Quantum Atmosphere
+    https://www.quantamagazine.org/quantum-atmospheres-may-reveal-secrets-of-matter-20180925/
+
+Quantum jump
+    Atomic electron transition or a similar
+    transition between quantum states, which
+    is a scientific phenomenon.
+
+    Apparently they're not instantaneous:
+        https://www.quantamagazine.org/quantum-leaps-long-assumed-to-be-instantaneous-take-time-20190605/
+
+Quantum jump method
+MCWF method
+Monte Carlo wave function method
+    [#computational physics]
+    [technique]
+
+    Used for simulating open quantum systems.
+
+    Example:
+        Approximate the density matrix of a
+        two-level atom undergoing damped Rabi
+        oscillations.

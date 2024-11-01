@@ -1,0 +1,49 @@
+FXL
+Feature eXtraction Language
+    DEPRECATED.
+
+    Used before 2015. Scrapped.
+
+    Used in combatting spam on the social
+    networking service. FXL described as a
+    narrowly-optimized implementation of a
+    well-chosen subset of Standard ML (with
+    some customized syntax). FXL offers two
+    key advantages: it is simple and easy to
+    write, yet extremely efficient for
+    Facebook-sized workloads.
+
+    The things to detect became more numerous
+    and harder.
+
+    [[https://youtu.be/sl2zo7tzrO8?t=474][The Road to Running Haskell at Facebook Scale - Jon Coens - YouTube]]
+
+    The interpreter wasn't sophisticated
+    enough.
+
+Hydra
+    [framework]
+
+    Elegantly configure complex applications.
+
+    https://hydra.cc
+
+grey circle around a white dot
+    [#messenger]
+
+    Message not sent.
+
+grey circle around a white dot with a grey tick inside
+    [#messenger]
+
+    Message sent but not delivered.
+
+filled grey circle with white tick inside
+    [#messenger]
+
+    Sent and delivered but not seen.
+
+filled photo circle
+    [#messenger]
+
+    Seen.

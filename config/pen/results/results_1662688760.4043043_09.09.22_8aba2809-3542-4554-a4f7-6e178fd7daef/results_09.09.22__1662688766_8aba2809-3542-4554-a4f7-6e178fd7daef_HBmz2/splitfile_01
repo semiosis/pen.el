@@ -1,0 +1,11 @@
+https://clojuredocs.org/clojure.core/swap/
+
+                                              clojure.core/swap
+
+                                              swap
+  (fn a b)
+  (fn a b & args)
+
+Swaps the two top-most arguments.
+
+  (swap a b)

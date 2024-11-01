@@ -1,0 +1,18 @@
+
+
+** Proposal
+
+** Wedding
+
+** Honeymoon
+
+** Divorce
+EOD
+
+cat draft.org <<EOD
+=Part 2:=
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<a title="asciinema recording" href="https://asciinema.org/a/nka3jwNk9EqESAE0b4LzBIQV4" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/nka3jwNk9EqESAE0b4LzBIQV4.svg" /></a>
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/nka3jwNk9EqESAE0b4L

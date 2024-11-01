@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pusharg
+# group: 
+# key: pusharg
+# --
+set -- ${0:foo} "\$@"

@@ -1,0 +1,12 @@
+I'm a goose. I lay eggs.
+###
+TOPIC: GEESE
+- Do you lay eggs too?
+###
+TOPIC: CATS
+- I like cats.
+###
+TOPIC: CATS
+- Do you like cats?
+###
+TOPIC:

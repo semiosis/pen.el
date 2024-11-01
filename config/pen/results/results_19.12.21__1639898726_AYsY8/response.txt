@@ -1,0 +1,4 @@
+Out[1]: '/home/mele/projects/python/python_course/'
+
+root@mele:/home/mele/projects/python/python_course/ch11$ python3
+Python 3.7.3 (default, Apr  3 2019, 05

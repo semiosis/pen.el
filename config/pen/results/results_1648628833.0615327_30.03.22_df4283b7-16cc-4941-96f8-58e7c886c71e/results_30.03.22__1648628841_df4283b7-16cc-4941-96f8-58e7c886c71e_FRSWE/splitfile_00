@@ -1,0 +1,11 @@
+The above code is a little bit more complicated than the previous examples.
+
+It's a function that takes a Project and returns a Tree String.
+
+The outer case statement takes a Project and returns a Node.
+
+The inner case statement takes a Project and returns a Node.
+
+The inner case statement's pattern matches a Project that has a ProjectId and a name.
+
+The inner case statement's function returns a Node that has a label that is a formatted string of the name and the

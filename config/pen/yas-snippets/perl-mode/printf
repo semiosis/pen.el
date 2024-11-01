@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: printf
+# group: common
+# key: pf
+# --
+printf("%u \n", $big_int + 1);

@@ -1,0 +1,8 @@
+Particle filters
+Sequential Monte Carlo method
+SMC method
+    [set of MC algorithms]
+    
+    Used to solve filtering problems arising
+    in signal processing and Bayesian
+    statistical inference.

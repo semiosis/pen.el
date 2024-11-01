@@ -1,0 +1,7 @@
+The above code is a bit of a mess.  It's a port of the code in the following gist:
+https://gist.github.com/jtriley/1108174
+
+The gist is a port of the code in the following blog post:
+http://blog.taz.net.au/2012/04/09/getting-the-terminal-size-in-python/
+
+The gist is a port of the code in the following C code:

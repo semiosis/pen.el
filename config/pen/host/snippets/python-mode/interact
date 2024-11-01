@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: interact
+# group: interactive
+# key: int
+# --
+# import code; code.interact(local=locals())
+# from ptpython.repl import embed
+# embed(globals(), locals())
+import shanepy
+import shanepy as spy
+from shanepy import *
+myembed(globals(), locals())

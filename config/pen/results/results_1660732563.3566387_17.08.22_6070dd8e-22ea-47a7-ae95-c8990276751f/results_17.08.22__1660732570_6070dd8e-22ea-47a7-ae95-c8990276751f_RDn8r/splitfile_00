@@ -1,0 +1,16 @@
+"Functor" is a typeclass.
+
+The following is a code example:
+
+class Functor f where
+  fmap :: (a -> b) -> f a -> f b
+
+instance Functor Maybe where
+  fmap f (Just x) = Just (f x)
+  fmap _ Nothing = Nothing
+
+instance Functor [] where
+  fmap f xs = xs
+
+instance Functor (Either a) where
+  fmap f (Left

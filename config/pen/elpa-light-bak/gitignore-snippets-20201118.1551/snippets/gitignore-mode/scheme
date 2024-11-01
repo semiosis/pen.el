@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Scheme
+# contributor: Toptal & contributors
+# key: scheme
+# --
+
+### Scheme ###
+
+*.ss~
+*.ss#*
+.#*.ss
+
+*.scm~
+*.scm#*
+.#*.scm

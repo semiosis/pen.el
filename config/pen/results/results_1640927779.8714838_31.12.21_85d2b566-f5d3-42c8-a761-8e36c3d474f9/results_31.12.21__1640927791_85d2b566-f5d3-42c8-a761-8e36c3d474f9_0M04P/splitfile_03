@@ -1,0 +1,16 @@
+- 1. Wittgenstein (1889-1951)
+- 2. Quine (1908-2001)
+- 3. Ritchie (1941-)
+...
+"""
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        filepath = os.path.join(tmpdir, 'test.org')
+
+        with open(filepath, 'w') as file:
+            file.write(orgmode)
+
+        print('* reading file')
+
+        filename = os.path.join(tmpdir, 'test.org')
+        doc = 

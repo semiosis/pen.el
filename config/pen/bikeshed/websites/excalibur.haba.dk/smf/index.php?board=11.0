@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Age of Empires 2" />
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum" />
+	<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/script.js?rc2"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1";
+		var smf_images_url = "http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images";
+		var smf_scripturl = "http://excalibur.haba.dk/smf/index.php";
+	// ]]></script>
+	<title>Age of Empires 2</title>
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/style.css?rc2" />
+	<link rel="stylesheet" type="text/css" href="http://excalibur.haba.dk/smf/Themes/default/print.css?rc2" media="print" />
+	<link rel="help" href="http://excalibur.haba.dk/smf/index.php?action=help" target="_blank" />
+	<link rel="search" href="http://excalibur.haba.dk/smf/index.php?action=search" />
+	<link rel="contents" href="http://excalibur.haba.dk/smf/index.php" />
+	<link rel="alternate" type="application/rss+xml" title=" - RSS" href="http://excalibur.haba.dk/smf/index.php?type=rss;action=.xml" />
+	<link rel="index" href="http://excalibur.haba.dk/smf/index.php?board=11.0" />
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+</head>
+<body>
+	<div id="headerarea" style="padding: 12px 30px 4px 30px;">
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="position: relative;">
+			<tr>
+				<td colspan="2" valign="bottom" style="padding: 5px; white-space: nowrap;">
+					<span style="font-family: Georgia, sans-serif; font-size: xx-large;"></span>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top">
+						<table width="99%" cellspacing="0" cellpadding="5" class="tborder"><tr>
+						<td class="titlebg" width="100%">User Info</td></tr><tr><td width="100%" valign="top" class="windowbg2" style="font-family: verdana, arial, sans-serif; font-size: x-small;">
+							Welcome, <b>Guest</b>. Please <a href="http://excalibur.haba.dk/smf/index.php?action=login">login</a> or <a href="http://excalibur.haba.dk/smf/index.php?action=register">register</a>.<br />
+							May 26, 2008, 09:07:50 PM<br />
+
+							<form action="http://excalibur.haba.dk/smf/index.php?action=login2" method="post" style="margin: 3px 1ex 1px 0; text-align:right;">
+								<input type="text" name="user" size="10" /> <input type="password" name="passwrd" size="10" />
+								<select name="cookielength">
+									<option value="60">1 Hour</option>
+									<option value="1440">1 Day</option>
+									<option value="10080">1 Week</option>
+									<option value="302400">1 Month</option>
+									<option value="-1" selected="selected">Forever</option>
+								</select>
+								<input type="submit" value="Login" /><br />
+								Login with username, password and session length
+							</form>
+						</td></tr></table>
+
+					<form action="http://excalibur.haba.dk/smf/index.php?action=search2" method="post" style="margin: 0; margin-top: 7px;">
+						<b>Search: </b><input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 8ex;" />&nbsp;
+						<a href="http://excalibur.haba.dk/smf/index.php?action=search;advanced">Advanced search</a>
+						<input type="hidden" name="advanced" value="0" />
+						<input type="hidden" name="brd[11]" value="11" />
+					</form>
+
+				</td>
+				<td width="262" style="padding-left: 5px;" valign="top">
+					<br /><table width="99%" cellspacing="0" cellpadding="5" class="tborder">
+					<tr>
+					<td class="titlebg" width="100%">Key Stats</td>
+					</tr>
+					<tr>
+					<td class="windowbg2" width="100%" style="font-size: x-small"><b>3016</b> Posts in <b>228</b> Topics by <b>110</b> Members<br />
+							Latest Member: <b> <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=123">Jack Sparrow</a></b>
+						</td></tr></table>
+				</td>
+			</tr>
+		</table>
+				<a href="http://excalibur.haba.dk/smf/index.php"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/home.gif" alt="Home" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=help"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/help.gif" alt="Help" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=search"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/search.gif" alt="Search" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=login"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/login.gif" alt="Login" style="margin: 2px 0;" border="0" /></a> 
+				<a href="http://excalibur.haba.dk/smf/index.php?action=register"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/english/register.gif" alt="Register" style="margin: 2px 0;" border="0" /></a>
+	</div>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td id="bodyarea" style="padding: 1ex 20px 2ex 20px;">
+		<table width="100%" cellpadding="3" cellspacing="0">
+			<tr>
+				<td><a name="top"></a><span class="nav" style="font-size: smaller;"><b><a href="http://excalibur.haba.dk/smf/index.php" class="nav"></a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php#2" class="nav">Age of Empires 2 - THe Conquerors Forum</a></b> &nbsp;|&nbsp; <b><a href="http://excalibur.haba.dk/smf/index.php?board=11.0" class="nav">Age of Empires 2</a></b> (Moderators: <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="Board Moderator">Leonidas</a>, <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7" title="Board Moderator">exc_imac</a>)</span></td>
+			</tr>
+		</table>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="margin-bottom: 1ex;">
+			<tr>
+				<td class="catbg" height="30">
+					<table cellpadding="3" cellspacing="0" width="100%">
+						<tr>
+							<td><b>Pages:</b> [<b>1</b>] <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?board=11.20">2</a> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?board=11.40">3</a> </td>
+							<td align="right" nowrap="nowrap" style="font-size: smaller;"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+			<table border="0" width="100%" cellspacing="1" cellpadding="4" class="bordercolor">
+				<tr class="titlebg">
+					<td width="9%" colspan="2"></td>
+					<td><a href="http://excalibur.haba.dk/smf/index.php?board=11.0;sort=subject">Subject</a></td>
+					<td width="14%"><a href="http://excalibur.haba.dk/smf/index.php?board=11.0;sort=starter">Started by</a></td>
+					<td width="4%" align="center"><a href="http://excalibur.haba.dk/smf/index.php?board=11.0;sort=replies">Replies</a></td>
+					<td width="4%" align="center"><a href="http://excalibur.haba.dk/smf/index.php?board=11.0;sort=views">Views</a></td>
+					<td width="24%"><a href="http://excalibur.haba.dk/smf/index.php?board=11.0;sort=last_post">Last post <img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/sort_down.gif" alt="" border="0" /></a></td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post_sticky.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2828"><a href="http://excalibur.haba.dk/smf/index.php?topic=226.0">Basic Training</a></span>
+						<span class="smalltext" id="pages2828"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7" title="View the profile of exc_imac">exc_imac</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						3
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						86
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=226.msg2831#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						September 25, 2007, 09:42:02 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7">exc_imac</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_poll.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_3083"><a href="http://excalibur.haba.dk/smf/index.php?topic=246.0">Seige--what's your favorite</a></span>
+						<span class="smalltext" id="pages3083"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						6
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						34
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=246.msg3092#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						<b>Today</b> at 01:38:26 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36">zT_ThAi</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_3062"><a href="http://excalibur.haba.dk/smf/index.php?topic=245.0">clan on mac</a></span>
+						<span class="smalltext" id="pages3062"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						12
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						76
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=245.msg3090#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 24, 2008, 05:17:26 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36">zT_ThAi</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_3059"><a href="http://excalibur.haba.dk/smf/index.php?topic=244.0">Active member</a></span>
+						<span class="smalltext" id="pages3059"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						13
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						82
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=244.msg3085#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 24, 2008, 05:28:53 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=88">OcToPuS</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post_locked.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2970"><a href="http://excalibur.haba.dk/smf/index.php?topic=239.0">top list!!!!</a></span>
+						<span class="smalltext" id="pages2970">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=239.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=239.15">2</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=239.30">3</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						40
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						369
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=239.msg3058#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 17, 2008, 03:24:26 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2851"><a href="http://excalibur.haba.dk/smf/index.php?topic=233.0">First game back</a></span>
+						<span class="smalltext" id="pages2851">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=233.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=233.15">2</a> ... <a href="http://excalibur.haba.dk/smf/index.php?topic=233.60">5</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=233.75">6</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						75
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						857
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=233.msg2953#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						November 13, 2007, 12:58:31 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=119">€pitådeus</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/hot_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2624"><a href="http://excalibur.haba.dk/smf/index.php?topic=213.0">GR Best clans Biography (Part I)</a></span>
+						<span class="smalltext" id="pages2624">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=213.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=213.15">2</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7" title="View the profile of exc_imac">exc_imac</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						24
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						459
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=213.msg2825#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						September 17, 2007, 05:06:27 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7">exc_imac</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2808"><a href="http://excalibur.haba.dk/smf/index.php?topic=224.0">flank strat evolution</a></span>
+						<span class="smalltext" id="pages2808"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						8
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						170
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=224.msg2817#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						September 11, 2007, 04:02:20 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post_locked.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2725"><a href="http://excalibur.haba.dk/smf/index.php?topic=221.0">Re: best clan flames</a></span>
+						<span class="smalltext" id="pages2725">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=221.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=221.15">2</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=221.30">3</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=221.45">4</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=221.60">5</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=65" title="View the profile of homie">homie</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						65
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						720
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=221.msg2806#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						September 10, 2007, 03:19:32 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post_locked.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2658"><a href="http://excalibur.haba.dk/smf/index.php?topic=218.0">best clan flames</a></span>
+						<span class="smalltext" id="pages2658">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=218.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=218.15">2</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=218.30">3</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=218.45">4</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						48
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						543
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=218.msg2740#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						September 06, 2007, 01:59:19 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2651"><a href="http://excalibur.haba.dk/smf/index.php?topic=216.0">GR Best clans Biography (Part II)</a></span>
+						<span class="smalltext" id="pages2651"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=7" title="View the profile of exc_imac">exc_imac</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						1
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						82
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=216.msg2657#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						August 25, 2007, 11:40:59 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_poll.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2629"><a href="http://excalibur.haba.dk/smf/index.php?topic=214.0">where is Qiyamat???</a></span>
+						<span class="smalltext" id="pages2629"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						7
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						182
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=214.msg2643#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						August 22, 2007, 06:20:00 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2577"><a href="http://excalibur.haba.dk/smf/index.php?topic=210.0">error in game</a></span>
+						<span class="smalltext" id="pages2577"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						3
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						103
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=210.msg2582#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						July 23, 2007, 05:52:46 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post_locked.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2049"><a href="http://excalibur.haba.dk/smf/index.php?topic=181.0">Star td</a></span>
+						<span class="smalltext" id="pages2049">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=181.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=181.15">2</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=181.30">3</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=181.45">4</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						59
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						1008
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=181.msg2540#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 21, 2007, 10:31:04 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38">The_HOOD</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2447"><a href="http://excalibur.haba.dk/smf/index.php?topic=196.0">PC vs Mac</a></span>
+						<span class="smalltext" id="pages2447"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						12
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						274
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=196.msg2533#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 18, 2007, 10:06:03 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38">The_HOOD</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2220"><a href="http://excalibur.haba.dk/smf/index.php?topic=193.0">clan ranks</a></span>
+						<span class="smalltext" id="pages2220">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=193.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=193.15">2</a> ... <a href="http://excalibur.haba.dk/smf/index.php?topic=193.75">6</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=193.90">7</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4" title="View the profile of Leonidas">Leonidas</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						97
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						1351
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=193.msg2531#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 18, 2007, 06:06:13 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=65">homie</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post_locked.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2037"><a href="http://excalibur.haba.dk/smf/index.php?topic=180.0">Counter unit</a></span>
+						<span class="smalltext" id="pages2037">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=180.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=180.15">2</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=180.30">3</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=180.45">4</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						59
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						862
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=180.msg2432#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 09, 2007, 06:28:27 PM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=4">Leonidas</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_1512"><a href="http://excalibur.haba.dk/smf/index.php?topic=147.0">Most Improved Player.</a></span>
+						<span class="smalltext" id="pages1512"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=20" title="View the profile of Rusher">Rusher</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						10
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						271
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=147.msg2415#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						May 08, 2007, 02:57:28 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=80">tom</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/hot_poll.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2182"><a href="http://excalibur.haba.dk/smf/index.php?topic=192.0">Pocket</a></span>
+						<span class="smalltext" id="pages2182">&#171; <a href="http://excalibur.haba.dk/smf/index.php?topic=192.0">1</a> <a href="http://excalibur.haba.dk/smf/index.php?topic=192.15">2</a> &#187;</span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=36" title="View the profile of zT_ThAi">zT_ThAi</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						17
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						300
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=192.msg2289#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						April 28, 2007, 04:28:45 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=38">The_HOOD</a>
+					</td>
+				</tr>
+				<tr class="windowbg2">
+					<td valign="middle" align="center" width="5%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" />
+					</td>
+					<td valign="middle" align="center" width="4%">
+						<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/post/xx.gif" alt="" />
+					</td>
+					<td class="windowbg" valign="middle" >
+						<span id="msg_2124"><a href="http://excalibur.haba.dk/smf/index.php?topic=187.0">advance to castle age..</a></span>
+						<span class="smalltext" id="pages2124"></span>
+					</td>
+					<td valign="middle" width="14%">
+						<a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=88" title="View the profile of OcToPuS">OcToPuS</a>
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						6
+					</td>
+					<td class="windowbg" valign="middle" width="4%" align="center">
+						162
+					</td>
+					<td class="smalltext" valign="middle" width="22%">
+						<a href="http://excalibur.haba.dk/smf/index.php?topic=187.msg2153#new"><img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/icons/last_post.gif" alt="Last post" title="Last post" border="0" style="float: right;" /></a>
+
+						April 23, 2007, 05:16:09 AM<br />
+						by <a href="http://excalibur.haba.dk/smf/index.php?action=profile;u=88">OcToPuS</a>
+					</td>
+				</tr>
+			</table>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="margin-top: 1ex;">
+			<tr>
+				<td class="catbg" width="100%" height="30">
+					<table cellpadding="3" cellspacing="0" width="100%">
+						<tr>
+							<td><a name="bot"></a><b>Pages:</b> [<b>1</b>] <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?board=11.20">2</a> <a class="navPages" href="http://excalibur.haba.dk/smf/index.php?board=11.40">3</a> </td>
+							<td align="right" nowrap="nowrap" style="font-size: smaller;"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td class="smalltext" style="padding-top: 1ex;">
+					<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/my_normal_post.gif" alt="" align="middle" /> Topic you have posted in<br />
+					<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post.gif" alt="" align="middle" /> Normal Topic<br />
+					<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/hot_post.gif" alt="" align="middle" /> Hot Topic (More than 15 replies)<br />
+					<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/veryhot_post.gif" alt="" align="middle" /> Very Hot Topic (More than 25 replies)
+				</td>
+				<td class="smalltext" valign="top" style="padding-top: 1ex;">
+					<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post_locked.gif" alt="" align="middle" /> Locked Topic<br />
+					<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_post_sticky.gif" alt="" align="middle" /> Sticky Topic<br />
+					<img src="http://excalibur.haba.dk/smf/Themes/BlackDaySMF1/images/topic/normal_poll.gif" alt="" align="middle" /> Poll
+				</td>
+				<td class="smalltext" align="right" valign="middle">
+					<form action="http://excalibur.haba.dk/smf/index.php" method="get">
+						<label for="jumpto">Jump to</label>:
+						<select name="jumpto" id="jumpto" onchange="if (this.selectedIndex > 0 &amp;&amp; this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+							<option value="">Please select a destination:</option>
+							<option value="" disabled="disabled">-----------------------------</option>
+							<option value="#1">General</option>
+							<option value="" disabled="disabled">-----------------------------</option>
+							<option value="?board=1.0"> => The pub / general discussion</option>
+							<option value="?board=12.0"> => Clantalk</option>
+							<option value="" disabled="disabled">-----------------------------</option>
+							<option value="#2">Age of Empires 2 - THe Conquerors Forum</option>
+							<option value="" disabled="disabled">-----------------------------</option>
+							<option value="?board=11.0" selected="selected"> => Age of Empires 2</option>
+							<option value="?board=6.0"> => Rm-1vs1 discussion</option>
+							<option value="?board=5.0"> => Rm-teamgame discussion</option>
+							<option value="?board=8.0"> => Rec. Games Discussion</option>
+							<option value="?board=4.0"> => Memorable games</option>
+							<option value="?board=2.0"> => Deathmatch discussion</option>
+						</select>&nbsp;
+						<input type="button" value="go" onclick="if (this.form.jumpto.options[this.form.jumpto.selectedIndex].value) window.location.href = 'http://excalibur.haba.dk/smf/index.php' + this.form.jumpto.options[this.form.jumpto.selectedIndex].value;" />
+					</form>
+				</td>
+			</tr>
+		</table>
+<script language="JavaScript" type="text/javascript" src="http://excalibur.haba.dk/smf/Themes/default/xml_board.js"></script>
+<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+
+	// Hide certain bits during topic edit.
+	hide_prefixes.push("pages", "newicon");
+
+	// Use it to detect when we've stopped editing.
+	document.onmousedown = mouse_down;
+
+	var mouse_on_div;
+	function mouse_down(e)
+	{
+		if (in_edit_mode == 1 && mouse_on_div == 0)
+			modify_topic_save("82b0cda970140ac291e63109a116e2b2");
+	}
+
+	// For templating, shown when an inline edit is made.
+	function modify_topic_show_edit(subject)
+	{
+		// Just template the subject.
+		setInnerHTML(cur_subject_div, '<input type="text" name="subject" value="' + subject + '" size="60" style="width: 99%;"  maxlength="80" /><input type="hidden" name="topic" value="' + cur_topic_id + '" /><input type="hidden" name="msg" value="' + cur_msg_id.substr(4) + '" />');
+	}
+
+	// And the reverse for hiding it.
+	function modify_topic_hide_edit(subject)
+	{
+		// Re-template the subject!
+		setInnerHTML(cur_subject_div, '<a href="http://excalibur.haba.dk/smf/index.php?topic=' + cur_topic_id + '.0">' + subject + '</a>');
+	}
+// ]]></script></td>
+	</tr></table>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			function smfFooterHighlight(element, value)
+			{
+				element.src = smf_images_url + "/" + (value ? "h_" : "") + element.id + ".gif";
+			}
+		// ]]></script>
+		<table cellspacing="0" cellpadding="3" border="0" width="100%">
+			<tr>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1 RC3</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF &copy; 2001-2006, Lewis Media</a>
+		</span><br /><font size="1">Theme by Nesianstyles | Buttons by Andrea</font>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print
+# group: print
+# key: p
+# --
+print "Hi"

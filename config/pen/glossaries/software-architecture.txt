@@ -1,0 +1,67 @@
+ports and adapters architecture
+hexagonal architecture
+onion architecture
+    Layered application architecture done
+    right.
+
+    https://youtu.be/US8QG9I1XW0?t=580
+
+    Hard to achieve with OO languages.
+    Easy with FP languages.
+
+MAS
+self-organized system
+Multi-agent system
+    A computerized system composed of multiple
+    interacting intelligent agents.
+    
+    Multi-agent systems can solve problems
+    that are difficult or impossible for an
+    individual agent or a monolithic system to
+    solve.
+
+    https://jade.tilab.com/
+
+Service-oriented architecture
+SOA
+    A style of software design where services
+    are provided to the other components by
+    application components, through a
+    communication protocol over a network.
+    
+    A SOA service is a discrete unit of
+    functionality that can be accessed
+    remotely and acted upon and updated
+    independently, such as retrieving a credit
+    card statement online.
+    
+    SOA is also intended to be independent of
+    vendors, products and technologies.
+
+microservices
+microservice architecture
+    An architectural style that structures an
+    application as a collection of services
+    that are.
+    
+    Highly maintainable and testable.
+    
+    Loosely coupled.
+    
+    Independently deployable.
+    
+    Organized around business capabilities.
+
+    An evolution of the service-oriented
+    architecture pattern that elegantly
+    eliminate organizational friction, giving
+    your engineers and teams the autonomy they
+    need to continuously ship, iterate, and
+    improve.
+
+    There are toolkits for building
+    microservices in a single language.
+
+    E.g.
+    - Go: 
+      https://github.com/go-kit/kit

@@ -1,0 +1,15 @@
+do
+  -- Get the maximum width of each column.
+  widths <- mapM (\row -> mapM (\s -> length s) row) rows
+
+  -- Print the header.
+  print $ map (\(c, w) -> " " ++ replicate w ' ' ++ " |" ++ " " ++ T.pack c) $ zip [0..] widths
+
+  -- Print a separator line.
+  print $ map (\w -> replicate w '-' ++ "+" ++ replicate w '-') widths
+
+  -- Print each row.
+  mapM_ print rows
+
+
+EOD

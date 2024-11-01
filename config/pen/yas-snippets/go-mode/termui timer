@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: termui timer
+# key: tutimer
+# --
+p.Handle("/timer/1s", func(e ui.Event) {
+cnt := e.Data.(ui.EvtTimer)
+if cnt.Count%2 == 0 {
+p.TextFgColor = ui.ColorRed
+} else {
+p.TextFgColor = ui.ColorWhite
+}
+})

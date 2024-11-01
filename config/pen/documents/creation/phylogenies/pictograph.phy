@@ -1,0 +1,18 @@
+name: "Pictograph"
+
+creations:
+- muse:
+  - ext: muse
+  - repo: muses
+  - next:
+    - motif
+  
+- motif:
+  - ext: motif
+  - repo: motifs
+  - next:
+    - pictograph
+  
+- pictograph:
+  - ext: pict
+  - repo: pictographs

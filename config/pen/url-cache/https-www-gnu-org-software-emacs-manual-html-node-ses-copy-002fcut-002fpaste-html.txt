@@ -1,0 +1,138 @@
+HTTP/1.1 200 OK
+Date: Wed, 26 Jul 2023 07:21:46 GMT
+Server: Apache/2.4.29
+Strict-Transport-Security: max-age=63072000
+X-Frame-Options: sameorigin
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: (null)
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+Expires: Wed, 26 Jul 2023 07:21:46 GMT
+Vary: Accept-Encoding
+Content-Length: 1853
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Language: en
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.8, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Copy/cut/paste (SES: Simple Emacs Spreadsheet)</title>
+
+<meta name="description" content="Copy/cut/paste (SES: Simple Emacs Spreadsheet)">
+<meta name="keywords" content="Copy/cut/paste (SES: Simple Emacs Spreadsheet)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rev="made" href="mailto:bug-gnu-emacs@gnu.org">
+<link rel="icon" type="image/png" href="/graphics/gnu-head-mini.png">
+<meta name="ICBM" content="42.256233,-71.006581">
+<meta name="DC.title" content="gnu.org">
+<style type="text/css">
+@import url('/software/emacs/manual.css');
+</style>
+</head>
+
+<body lang="en">
+<div class="section" id="Copy_002fcut_002fpaste">
+<div class="header" style="background-color:#DDDDFF">
+<p>
+Next: <a href="Customizing-SES.html" accesskey="n" rel="next">Customizing <acronym>SES</acronym></a>, Previous: <a href="Clearing-cells.html" accesskey="p" rel="prev">Clearing cells</a>, Up: <a href="The-Basics.html" accesskey="u" rel="up">The Basics</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+<span id="Copy_002c-cut_002c-and-paste"></span><h3 class="section">3.5 Copy, cut, and paste</h3>
+<span id="index-copy"></span>
+<span id="index-cut"></span>
+<span id="index-paste"></span>
+<span id="index-kill_002dring_002dsave"></span>
+<span id="index-mouse_002dset_002dregion"></span>
+<span id="index-mouse_002dset_002dsecondary"></span>
+<span id="index-ses_002dkill_002doverride"></span>
+<span id="index-yank"></span>
+<span id="index-clipboard_002dyank"></span>
+<span id="index-mouse_002dyank_002dat_002dclick"></span>
+<span id="index-mouse_002dyank_002dat_002dsecondary"></span>
+<span id="index-ses_002dyank_002dpop"></span>
+
+<p>The copy functions work on rectangular regions of cells.  You can paste the
+copies into non-<acronym>SES</acronym> buffers to export the print text.
+</p>
+<dl compact="compact">
+<dt><span><kbd>M-w</kbd></span></dt>
+<dt><span><kbd>[copy]</kbd></span></dt>
+<dt><span><kbd>[C-insert]</kbd></span></dt>
+<dd><p>Copy the highlighted cells to kill ring and primary clipboard
+(<code>kill-ring-save</code>).
+</p>
+</dd>
+<dt><span><kbd>[drag-mouse-1]</kbd></span></dt>
+<dd><p>Mark a region and copy it to kill ring and primary clipboard
+(<code>mouse-set-region</code>).
+</p>
+</dd>
+<dt><span><kbd>[M-drag-mouse-1]</kbd></span></dt>
+<dd><p>Mark a region and copy it to kill ring and secondary clipboard
+(<code>mouse-set-secondary</code>).
+</p>
+</dd>
+<dt><span><kbd>C-w</kbd></span></dt>
+<dt><span><kbd>[cut]</kbd></span></dt>
+<dt><span><kbd>[S-delete]</kbd></span></dt>
+<dd><p>The cut functions do not actually delete rows or columns&mdash;they copy
+and then clear (<code>ses-kill-override</code>).
+</p>
+</dd>
+<dt><span><kbd>C-y</kbd></span></dt>
+<dt><span><kbd>[S-insert]</kbd></span></dt>
+<dd><p>Paste from kill ring (<code>yank</code>).  The paste functions behave
+differently depending on the format of the text being inserted:
+</p><ul>
+<li> When pasting cells that were cut from a <acronym>SES</acronym> buffer, the print text is
+ignored and only the attached formula and printer are inserted; cell
+references in the formula are relocated unless you use <kbd>C-u</kbd>.
+</li><li> The pasted text overwrites a rectangle of cells whose top left corner
+is the current cell.  If part of the rectangle is beyond the edges of
+the spreadsheet, you must confirm the increase in spreadsheet size.
+</li><li> Non-<acronym>SES</acronym> text is usually inserted as a replacement formula for the
+current cell.  If the formula would be a symbol, it&rsquo;s treated as a
+string unless you use <kbd>C-u</kbd>.  Pasted formulas with syntax errors
+are always treated as strings.
+</li></ul>
+
+</dd>
+<dt><span><kbd>[paste]</kbd></span></dt>
+<dd><p>Paste from primary clipboard or kill ring (<code>clipboard-yank</code>).
+</p>
+</dd>
+<dt><span><kbd>[mouse-2]</kbd></span></dt>
+<dd><p>Set point and paste from primary clipboard (<code>mouse-yank-at-click</code>).
+</p>
+</dd>
+<dt><span><kbd>[M-mouse-2]</kbd></span></dt>
+<dd><p>Set point and paste from secondary clipboard (<code>mouse-yank-secondary</code>).
+</p>
+</dd>
+<dt><span><kbd>M-y</kbd></span></dt>
+<dd><p>Immediately after a paste, you can replace the text with a preceding
+element from the kill ring (<code>ses-yank-pop</code>).  Unlike the standard
+Emacs yank-pop, the <acronym>SES</acronym> version uses <code>undo</code> to delete the old
+yank.  This doesn&rsquo;t make any difference?
+</p></dd>
+</dl>
+
+</div>
+
+<div class="header" style="background-color:#DDDDFF">
+<p>
+Next: <a href="Customizing-SES.html">Customizing <acronym>SES</acronym></a>, Previous: <a href="Clearing-cells.html">Clearing cells</a>, Up: <a href="The-Basics.html">The Basics</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

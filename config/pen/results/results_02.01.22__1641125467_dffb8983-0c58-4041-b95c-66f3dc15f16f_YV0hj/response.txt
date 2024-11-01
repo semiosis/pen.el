@@ -1,0 +1,7 @@
+Out[5]:
+{'Big Mac': {'calories': 540,
+  'calories from fat': 270,
+  'total fat': 29,
+  'trans fat': 1,
+  'saturated fat': 10,
+  'cholesterol': 80,

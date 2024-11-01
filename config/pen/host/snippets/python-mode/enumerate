@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: enumerate
+# group: loop
+# key: enumerate
+# --
+for i, n1 in enumerate(nums):
+$0

@@ -1,0 +1,8 @@
+
+
+instance Num Natural where
+
+(+) x y = fromNatural $ x + y
+
+Absence of a type signature allows the compiler to infer the type of the expression. For example, the
+following is valid and adds 1

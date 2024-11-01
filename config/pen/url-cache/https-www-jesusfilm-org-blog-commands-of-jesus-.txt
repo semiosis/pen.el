@@ -1,0 +1,1136 @@
+HTTP/1.1 200 OK
+Date: Fri, 24 Nov 2023 21:29:11 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-hacker: If you're reading this, you should visit wpvip.com/careers and apply to join the fun, mention this header.
+x-powered-by: WordPress VIP <https://wpvip.com>
+host-header: a9130478a60e5f9135f765b23f26593b
+link: <https://www.jesusfilm.org/wp-json/>; rel="https://api.w.org/"
+link: <https://www.jesusfilm.org/wp-json/wp/v2/posts/14790>; rel="alternate"; type="application/json"
+link: <https://www.jesusfilm.org/?p=14790>; rel=shortlink
+x-rq: syd1 96 185 443
+Cache-Control: max-age=300, must-revalidate
+Age: 143
+x-cache: hit
+vary: Accept-Encoding, accept, content-type
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2B%2FctQ9YtSSWVU0Eb%2FnvKnSMaEPcU5LryeThODkeO9U7B%2F06PJ5KssCq2TiEjs%2FBjioqHx4lJdG%2Fxl0M9ElLTWIo0tev7SGoMHoF%2FSS5eqyeX26%2BlAPbuxeQJeQvMByomaBeTHWAZdk5lp1FZezh8"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 82b4bef6db89a829-SYD
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8" />
+	
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5KK2PTZ');</script>
+<!-- End Google Tag Manager -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<meta name="description" content="Jesus told the disciples, “If you love me, keep my commands” (John 14:15). It’s safe to assume that He would say the same thing to His followers today. But"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.jesusfilm.org/blog/commands-of-jesus/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="38 Commands of Jesus We Should Take to Heart - Jesus Film Project" />
+<meta property="og:description" content="Jesus told the disciples, “If you love me, keep my commands” (John 14:15). It’s safe to assume that He would say the same thing to His followers today. But" />
+<meta property="og:url" content="https://www.jesusfilm.org/blog/commands-of-jesus/" />
+<meta property="og:site_name" content="Jesus Film Project" />
+<meta property="article:publisher" content="https://www.facebook.com/jesusfilm/" />
+<meta property="article:section" content="Following Jesus" />
+<meta property="og:updated_time" content="2023-08-10T10:42:29-04:00" />
+<meta property="og:image" content="https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg" />
+<meta property="og:image:secure_url" content="https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="576" />
+<meta property="og:image:alt" content="Jeasus healing blind man" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2023-05-18T11:35:04-04:00" />
+<meta property="article:modified_time" content="2023-08-10T10:42:29-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="38 Commands of Jesus We Should Take to Heart - Jesus Film Project" />
+<meta name="twitter:description" content="Jesus told the disciples, “If you love me, keep my commands” (John 14:15). It’s safe to assume that He would say the same thing to His followers today. But" />
+<meta name="twitter:site" content="@jesusfilm" />
+<meta name="twitter:creator" content="@jesusfilm" />
+<meta name="twitter:image" content="https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://www.jesusfilm.org/#place","address":{"@type":"PostalAddress","streetAddress":"100 Lake Hart Drive","addressLocality":"Orlando","addressRegion":"FL","postalCode":"32832","addressCountry":"USA"}},{"@type":"Organization","@id":"https://www.jesusfilm.org/#organization","name":"Jesus Film Project","url":"https://www.jesusfilm.org","sameAs":["https://www.facebook.com/jesusfilm/","https://twitter.com/jesusfilm","https://www.instagram.com/jesusfilm/","http://www.youtube.com/user/jesusfilm"],"email":"info@jesusfilm.org","address":{"@type":"PostalAddress","streetAddress":"100 Lake Hart Drive","addressLocality":"Orlando","addressRegion":"FL","postalCode":"32832","addressCountry":"USA"},"logo":{"@type":"ImageObject","@id":"https://www.jesusfilm.org/#logo","url":"https://www.jesusfilm.org/wp-content/uploads/2022/11/jfp-logo-red.png","contentUrl":"https://www.jesusfilm.org/wp-content/uploads/2022/11/jfp-logo-red.png","caption":"Jesus Film Project","inLanguage":"en-US","width":"336","height":"140"},"location":{"@id":"https://www.jesusfilm.org/#place"}},{"@type":"WebSite","@id":"https://www.jesusfilm.org/#website","url":"https://www.jesusfilm.org","name":"Jesus Film Project","alternateName":"Jesus Film","publisher":{"@id":"https://www.jesusfilm.org/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg","url":"https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg","width":"1024","height":"576","caption":"Jeasus healing blind man","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.jesusfilm.org","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.jesusfilm.org/blog/","name":"Blog"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.jesusfilm.org/blog/commands-of-jesus/","name":"38 Commands of Jesus We Should Take to Heart"}}]},{"@type":"WebPage","@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#webpage","url":"https://www.jesusfilm.org/blog/commands-of-jesus/","name":"38 Commands of Jesus We Should Take to Heart - Jesus Film Project","datePublished":"2023-05-18T11:35:04-04:00","dateModified":"2023-08-10T10:42:29-04:00","isPartOf":{"@id":"https://www.jesusfilm.org/#website"},"primaryImageOfPage":{"@id":"https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#breadcrumb"}},{"@type":"Person","@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#author","name":"Jesus Film Project","image":{"@type":"ImageObject","@id":"https://www.jesusfilm.org/wp-content/uploads/2023/04/avatar-jfp.png","url":"https://www.jesusfilm.org/wp-content/uploads/2023/04/avatar-jfp.png","caption":"Jesus Film Project","inLanguage":"en-US"},"sameAs":["https://www.jesusfilm.org"],"worksFor":{"@id":"https://www.jesusfilm.org/#organization"}},{"@type":"BlogPosting","headline":"38 Commands of Jesus We Should Take to Heart - Jesus Film Project","datePublished":"2023-05-18T11:35:04-04:00","dateModified":"2023-08-10T10:42:29-04:00","author":{"@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#author","name":"Jesus Film Project"},"publisher":{"@id":"https://www.jesusfilm.org/#organization"},"description":"Jesus told the disciples, \u201cIf you love me, keep my commands\u201d (John 14:15). It\u2019s safe to assume that He would say the same thing to His followers today. But","name":"38 Commands of Jesus We Should Take to Heart - Jesus Film Project","@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#richSnippet","isPartOf":{"@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#webpage"},"image":{"@id":"https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.jesusfilm.org/blog/commands-of-jesus/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<title>38 Commands of Jesus We Should Take to Heart - Jesus Film Project</title>
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Jesus Film Project &raquo; Feed" href="https://www.jesusfilm.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Jesus Film Project &raquo; Comments Feed" href="https://www.jesusfilm.org/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.jesusfilm.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0' href='https://www.jesusfilm.org/_static/??/wp-content/plugins/genesis-blocks/dist/style-blocks.build.css,/wp-content/mu-plugins/jetpack-12.8/modules/related-posts/related-posts.css?m=1700587746' type='text/css' media='all' />
+<style id='wp-block-site-logo-inline-css'>
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}.wp-block-site-logo.is-style-rounded{border-radius:9999px}
+</style>
+<style id='wp-block-button-inline-css'>
+.wp-block-button__link{box-sizing:border-box;cursor:pointer;display:inline-block;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}.wp-block-button .wp-block-button__link.is-style-outline,.wp-block-button.is-style-outline>.wp-block-button__link{border:2px solid;padding:.667em 1.333em}.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color),.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color){color:currentColor}.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background),.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background){background-color:transparent;background-image:none}.wp-block-button .wp-block-button__link:where(.has-border-color){border-width:initial}.wp-block-button .wp-block-button__link:where([style*=border-top-color]){border-top-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-right-color]){border-right-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-bottom-color]){border-bottom-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-left-color]){border-left-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-style]){border-width:initial}.wp-block-button .wp-block-button__link:where([style*=border-top-style]){border-top-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-right-style]){border-right-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-bottom-style]){border-bottom-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-left-style]){border-left-width:medium}
+.is-style-outline.is-style-outline.wp-block-button .wp-block-button__link{background-color: transparent;border-width: 1px;color: currentColor;}
+</style>
+<style id='wp-block-buttons-inline-css'>
+.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-button.aligncenter{text-align:center}
+.wp-block-buttons-is-layout-flow > :first-child:first-child{margin-block-start: 0;}.wp-block-buttons-is-layout-flow > :last-child:last-child{margin-block-end: 0;}.wp-block-buttons-is-layout-flow > *{margin-block-start: 10px;margin-block-end: 0;}.wp-block-buttons-is-layout-constrained > :first-child:first-child{margin-block-start: 0;}.wp-block-buttons-is-layout-constrained > :last-child:last-child{margin-block-end: 0;}.wp-block-buttons-is-layout-constrained > *{margin-block-start: 10px;margin-block-end: 0;}.wp-block-buttons-is-layout-flex{gap: 10px;}.wp-block-buttons-is-layout-grid{gap: 10px;}
+</style>
+<style id='wp-block-search-inline-css'>
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;min-height:24px;min-width:24px;vertical-align:text-bottom}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search__input{-webkit-appearance:initial;appearance:none;border:1px solid #949494;flex-grow:1;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important}.wp-block-search.wp-block-search__button-only .wp-block-search__button{margin-left:0}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block-search__button-behavior-expand .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search__button-behavior-expand .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search__button-behavior-expand.wp-block-search__searchfield-hidden,.wp-block-search__button-behavior-expand.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search__button-behavior-expand.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}.wp-block[data-align=right] .wp-block-search__button-behavior-expand .wp-block-search__inside-wrapper{float:right}
+</style>
+<style id='block-visibility-screen-size-styles-inline-css'>
+/* Large screens (desktops, 782px and up) */
+@media ( min-width: 782px ) {
+	.block-visibility-hide-large-screen {
+		display: none !important;
+	}
+}
+
+/* Medium screens (tablets, between 600px and 782px) */
+@media ( min-width: 600px ) and ( max-width: 781.98px ) {
+	.block-visibility-hide-medium-screen {
+		display: none !important;
+	}
+}
+
+/* Small screens (mobile devices, less than 600px) */
+@media ( max-width: 599.98px ) {
+	.block-visibility-hide-small-screen {
+		display: none !important;
+	}
+}
+</style>
+<style id='cloudcatch-megamenu-item-style-inline-css'>
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/megamenu-item/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-megamenu-item {
+  position: static;
+}
+.wp-block-megamenu-item__drawer {
+  padding: 17px 0 21px;
+  list-style: none !important;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgba(240, 237, 227, 0.41);
+  margin: 18px 0;
+  display: none;
+  gap: 16px;
+  position: relative;
+}
+.wp-block-megamenu-item__drawer.is-visible {
+  display: flex;
+  max-height: 100vh;
+  overflow: visible;
+}
+.wp-block-megamenu-item__drawer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200vw;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(240, 237, 227, 0.41);
+}
+@media (min-width: 1024px) {
+  .wp-block-megamenu-item.device-visibility-mobile {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .wp-block-megamenu-item.device-visibility-desktop {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
+</style>
+<link rel='stylesheet' id='all-css-12' href='https://www.jesusfilm.org/wp-content/plugins/megamenu-blocks/build/megamenu/style-index.css?m=1682107840g' type='text/css' media='all' />
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}
+</style>
+<style id='wp-block-post-title-inline-css'>
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title a{display:inline-block}
+.wp-block-post-title a:where(:not(.wp-element-button)){text-decoration: none;}
+.wp-block-post-title a:where(:not(.wp-element-button)):hover{text-decoration: underline;}
+.wp-block-post-title a:where(:not(.wp-element-button)):focus{text-decoration: underline;}
+</style>
+<style id='wp-block-post-date-inline-css'>
+.wp-block-post-date{box-sizing:border-box}
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+p{line-height: var(--wp--custom--typography--line-height--body);}
+p a:where(:not(.wp-element-button)){color: var(--wp--preset--color--red);}
+</style>
+<style id='wp-block-post-terms-inline-css'>
+.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}
+.wp-block-post-terms a:where(:not(.wp-element-button)){font-size: var(--wp--preset--font-size--small);font-weight: 600;line-height: 18px;text-decoration: none;text-transform: uppercase;}
+</style>
+<style id='wp-block-post-author-inline-css'>
+.wp-block-post-author{display:flex;flex-wrap:wrap}.wp-block-post-author__byline{font-size:.5em;margin-bottom:0;margin-top:0;width:100%}.wp-block-post-author__avatar{margin-right:1em}.wp-block-post-author__bio{font-size:.7em;margin-bottom:.7em}.wp-block-post-author__content{flex-basis:0;flex-grow:1}.wp-block-post-author__name{margin:0}
+</style>
+<style id='wp-block-post-featured-image-inline-css'>
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:transparent}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}
+.wp-block-post-featured-image img, .wp-block-post-featured-image .block-editor-media-placeholder, .wp-block-post-featured-image .wp-block-post-featured-image__overlay{border-radius: 8px;}
+</style>
+<style id='wp-block-columns-inline-css'>
+.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
+<style id='wp-block-separator-inline-css'>
+@charset "UTF-8";.wp-block-separator{border:1px solid;border-left:none;border-right:none}.wp-block-separator.is-style-dots{background:none!important;border:none;height:auto;line-height:1;text-align:center}.wp-block-separator.is-style-dots:before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}
+.wp-block-separator{border-bottom-width: 0px;color: var(--wp--preset--color--light-soft-gray);}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+.wp-block-heading a:where(:not(.wp-element-button)){text-decoration: none;}
+</style>
+<link rel='stylesheet' id='all-css-48' href='https://www.jesusfilm.org/wp-includes/blocks/social-links/style.min.css?m=1699399644g' type='text/css' media='all' />
+<style id='wp-block-social-links-inline-css'>
+.wp-block-social-links{color: white;}.wp-block-social-links-is-layout-flow > :first-child:first-child{margin-block-start: 0;}.wp-block-social-links-is-layout-flow > :last-child:last-child{margin-block-end: 0;}.wp-block-social-links-is-layout-flow > *{margin-block-start: var(--wp--preset--spacing--40);margin-block-end: 0;}.wp-block-social-links-is-layout-constrained > :first-child:first-child{margin-block-start: 0;}.wp-block-social-links-is-layout-constrained > :last-child:last-child{margin-block-end: 0;}.wp-block-social-links-is-layout-constrained > *{margin-block-start: var(--wp--preset--spacing--40);margin-block-end: 0;}.wp-block-social-links-is-layout-flex{gap: var(--wp--preset--spacing--40);}.wp-block-social-links-is-layout-grid{gap: var(--wp--preset--spacing--40);}
+</style>
+<style id='wp-block-navigation-link-inline-css'>
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word;word-break:normal}.wp-block-navigation .wp-block-navigation-item__description{display:none}
+</style>
+<link rel='stylesheet' id='all-css-50' href='https://www.jesusfilm.org/wp-includes/blocks/navigation/style.min.css?m=1699399644g' type='text/css' media='all' />
+<style id='wp-block-navigation-inline-css'>
+.wp-block-navigation{color: var(--wp--preset--color--gray-500);font-size: var(--wp--preset--font-size--tiny);font-weight: 500;line-height: 22px;}.wp-block-navigation-is-layout-flow > :first-child:first-child{margin-block-start: 0;}.wp-block-navigation-is-layout-flow > :last-child:last-child{margin-block-end: 0;}.wp-block-navigation-is-layout-flow > *{margin-block-start: var(--wp--preset--spacing--12);margin-block-end: 0;}.wp-block-navigation-is-layout-constrained > :first-child:first-child{margin-block-start: 0;}.wp-block-navigation-is-layout-constrained > :last-child:last-child{margin-block-end: 0;}.wp-block-navigation-is-layout-constrained > *{margin-block-start: var(--wp--preset--spacing--12);margin-block-end: 0;}.wp-block-navigation-is-layout-flex{gap: var(--wp--preset--spacing--12);}.wp-block-navigation-is-layout-grid{gap: var(--wp--preset--spacing--12);}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;text-decoration: none;}
+.wp-block-navigation a:where(:not(.wp-element-button)):hover{color: var(--wp--preset--color--red);text-decoration: none;}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--foreground: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--red: #EF3340;--wp--preset--color--light-soft-gray: #D4D2C9;--wp--preset--color--light-gray: #D8D8D8;--wp--preset--color--warm-white: #F0EDE3;--wp--preset--color--gray: #979797;--wp--preset--color--dark-gray: #4D4D4D;--wp--preset--color--tan: #f0ede3;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 14px;--wp--preset--font-size--medium: 17px;--wp--preset--font-size--large: 19px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--tiny: 12px;--wp--preset--font-size--regular: 16px;--wp--preset--font-size--heading-1: clamp(1.875rem, 0.2175rem + 4.4199vw, 2.375rem);--wp--preset--font-size--heading-2: clamp(1.5rem, 0.0497rem + 3.8674vw, 1.9375rem);--wp--preset--font-size--heading-3: clamp(1.375rem, 0.3391rem + 2.7624vw, 1.6875rem);--wp--preset--font-size--heading-4: clamp(1.125rem, 0.9178rem + 0.5525vw, 1.1875rem);--wp--preset--font-size--heading-5: clamp(1.0625rem, 0.8553rem + 0.5525vw, 1.125rem);--wp--preset--font-size--heading-6: clamp(1.0625rem, 0.8553rem + 0.5525vw, 1.125rem);--wp--preset--font-family--notoserif: "NotoSerif", ui-serif, serif;--wp--preset--font-family--apercupro: "ApercuPro", ui-sans, sans-serif;--wp--preset--font-family--fontawesome: "Font Awesome 6 Free";--wp--preset--font-family--fontawesome-brands: "Font Awesome 6 Brands";--wp--preset--spacing--auto: auto;--wp--preset--spacing--4: 4px;--wp--preset--spacing--8: 8px;--wp--preset--spacing--12: 12px;--wp--preset--spacing--16: 16px;--wp--preset--spacing--20: 20px;--wp--preset--spacing--24: 24px;--wp--preset--spacing--30: 30px;--wp--preset--spacing--32: 32px;--wp--preset--spacing--36: 36px;--wp--preset--spacing--40: 40px;--wp--preset--spacing--48: 48px;--wp--preset--spacing--50: 50px;--wp--preset--spacing--60: 60px;--wp--preset--spacing--64: 64px;--wp--preset--spacing--80: 80px;--wp--preset--spacing--100: 100px;--wp--preset--spacing--120: clamp(3.75rem, -0.6356rem + 16.9492vw, 7.5rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);--wp--custom--typography--line-height--body: 1.75;--wp--custom--typography--line-height--headings: 130%;--wp--custom--typography--line-height--h-1: 1.029411;--wp--custom--typography--line-height--140-p: 140%;--wp--custom--header-height--mobile: 100px;--wp--custom--header-height--desktop: 159px;}body { margin: 0;--wp--style--global--content-size: 1216px;--wp--style--global--wide-size: 1160px; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) { padding-right: 0; padding-left: 0; }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(.has-global-padding) > .alignfull { margin-right: 0; margin-left: 0; }.has-global-padding > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: 0; padding-left: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 20px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: 20px; }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: 20px;margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: 20px;margin-block-end: 0;}:where(body .is-layout-flex) {gap: 20px;}:where(body .is-layout-grid) {gap: 20px;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--dark-gray);font-family: var(--wp--preset--font-family--notoserif);font-size: var(--wp--preset--font-size--regular);font-weight: 500;line-height: var(--wp--custom--typography--line-height--body);--wp--style--root--padding-top: 0;--wp--style--root--padding-right: var(--wp--preset--spacing--32);--wp--style--root--padding-bottom: 0;--wp--style--root--padding-left: var(--wp--preset--spacing--32);}a:where(:not(.wp-element-button)){color: inherit;text-decoration: underline;}h1, h2, h3, h4, h5, h6{font-family: var(--wp--preset--font-family--apercupro);font-weight: 700;line-height: var(--wp--custom--typography--line-height--headings);margin-top: 1.25em;margin-bottom: .75em;}h1{font-size: var(--wp--preset--font-size--heading-1);font-weight: 700;line-height: 1;}h2{font-size: var(--wp--preset--font-size--heading-2);font-weight: 700;line-height: 1.375;}h3{font-size: var(--wp--preset--font-size--heading-3);font-weight: 700;line-height: 1.148;}h4{font-size: var(--wp--preset--font-size--heading-4);font-weight: 500;line-height: 1.210;}h5{font-family: var(--wp--preset--font-family--notoserif);font-size: var(--wp--preset--font-size--heading-5);font-weight: 600;line-height: 1.555;}h6{font-family: var(--wp--preset--font-family--notoserif);font-size: var(--wp--preset--font-size--heading-6);font-weight: 100;line-height: 1.555;}.wp-element-button, .wp-block-button__link{background-color: var(--wp--preset--color--dark-gray);border-color: transparent;border-width: 1px;border-style: solid;color: var(--wp--preset--color--white);font-family: var(--wp--preset--font-family--apercupro);font-size: 15px;font-weight: 500;line-height: 1.33;padding-top: 12px;padding-right: 24px;padding-bottom: 11px;padding-left: 24px;text-decoration: none;}.wp-element-button:hover, .wp-block-button__link:hover{background-color: transparent;border-color: currentColor;border-width: 1px;border-style: solid;color: var(--wp--preset--color--dark-gray);}.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption{font-size: var(--wp--preset--font-size--tiny);font-weight: 500;line-height: 22px;margin-bottom: 0;}cite{color: var(--wp--preset--color--dark-gray);font-family: var(--wp--preset--font-family--apercupro);font-size: var(--wp--preset--font-size--regular);font-style: normal;font-weight: 500;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-red-color{color: var(--wp--preset--color--red) !important;}.has-light-soft-gray-color{color: var(--wp--preset--color--light-soft-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-warm-white-color{color: var(--wp--preset--color--warm-white) !important;}.has-gray-color{color: var(--wp--preset--color--gray) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-tan-color{color: var(--wp--preset--color--tan) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-red-background-color{background-color: var(--wp--preset--color--red) !important;}.has-light-soft-gray-background-color{background-color: var(--wp--preset--color--light-soft-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-warm-white-background-color{background-color: var(--wp--preset--color--warm-white) !important;}.has-gray-background-color{background-color: var(--wp--preset--color--gray) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-tan-background-color{background-color: var(--wp--preset--color--tan) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-red-border-color{border-color: var(--wp--preset--color--red) !important;}.has-light-soft-gray-border-color{border-color: var(--wp--preset--color--light-soft-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-warm-white-border-color{border-color: var(--wp--preset--color--warm-white) !important;}.has-gray-border-color{border-color: var(--wp--preset--color--gray) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-tan-border-color{border-color: var(--wp--preset--color--tan) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-regular-font-size{font-size: var(--wp--preset--font-size--regular) !important;}.has-heading-1-font-size{font-size: var(--wp--preset--font-size--heading-1) !important;}.has-heading-2-font-size{font-size: var(--wp--preset--font-size--heading-2) !important;}.has-heading-3-font-size{font-size: var(--wp--preset--font-size--heading-3) !important;}.has-heading-4-font-size{font-size: var(--wp--preset--font-size--heading-4) !important;}.has-heading-5-font-size{font-size: var(--wp--preset--font-size--heading-5) !important;}.has-heading-6-font-size{font-size: var(--wp--preset--font-size--heading-6) !important;}.has-notoserif-font-family{font-family: var(--wp--preset--font-family--notoserif) !important;}.has-apercupro-font-family{font-family: var(--wp--preset--font-family--apercupro) !important;}.has-fontawesome-font-family{font-family: var(--wp--preset--font-family--fontawesome) !important;}.has-fontawesome-brands-font-family{font-family: var(--wp--preset--font-family--fontawesome-brands) !important;}
+.wp-block-jf-breadcrumbs{font-family: var(--wp--preset--font-family--apercupro);font-size: var(--wp--preset--font-size--tiny);font-weight: 500;}
+.wp-block-jf-breadcrumbs a:where(:not(.wp-element-button)){text-decoration: none;}
+.wp-block-jf-breadcrumbs a:where(:not(.wp-element-button)):hover{color: var(--wp--preset--color--red);}
+.wp-block-jf-blog-filter{font-family: var(--wp--preset--font-family--apercupro);font-size: var(--wp--preset--font-size--large);font-weight: 500;}
+.wp-block-jf-blog-filter a:where(:not(.wp-element-button)){text-decoration: none;}
+.wp-block-cloudcatch-megamenu{color: inherit;}
+.wp-block-cloudcatch-megamenu a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-cloudcatch-megamenu a:where(:not(.wp-element-button)):hover{color: var(--wp--preset--color--red);}
+.wp-block-cloudcatch-megamenu-item-link{font-size: var(--wp--preset--font-size--heading-3);font-weight: 700;line-height: 1.15;}
+.wp-block-jf-table-of-contents{font-family: var(--wp--preset--font-family--apercupro);font-size: var(--wp--preset--font-size--medium);font-weight: 500;}
+iframe[src*="arclight.org"]:not([height]){aspect-ratio:1.75}.modular-inner{margin:0 auto;padding:0;max-width:100%}@media (max-width:781px){.desktop-only{display:none!important}}@media (min-width:782px){.mobile-only{display:none!important}}.jf-completed-langs-var{display:block;color:var(--wp--preset--color--red);text-align:center;font-size:1.5em;font-weight:600;line-height:1.618}.wp-block-jf-accordion summary small:empty{display:none}
+
+
+.wp-block-jetpack-related-posts ul[class$="__post"] {
+	display: flex;
+  flex-direction: column-reverse;
+  
+}
+.wp-block-jetpack-related-posts ul[class$="__post"]:not(:last-child) {
+	margin: 0 0 var(--wp--preset--spacing--32);
+}
+.wp-block-jetpack-related-posts [class$="__post-link"] {
+  font-size: var(--wp--preset--font-size--heading-4);
+	font-weight: 700;
+}
+.wp-block-jetpack-related-posts [class$="__post-link"] a {
+	text-decoration: none;
+}
+.wp-block-jetpack-related-posts [class$="__post-link"] a:hover {
+	color: var(--wp--preset--color--red);
+}
+
+branded-checkout input[type=radio], branded-checkout input[type=checkbox] {
+	-webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
+    display: initial;
+}
+branded-checkout .is-required label:after {
+	vertical-align: text-top;
+	font-size: 8px !important;
+}
+ol:not([class]) li a:where(:not(.wp-element-button)),
+ul:not([class]) li a:where(:not(.wp-element-button)){
+	color: var(--wp--preset--color--red);
+}
+.give-nav .wp-block-navigation__container {
+    row-gap: 12px;
+}
+.post-meta-row .wp-block-post-terms {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.post-meta-row .wp-block-post-terms .wp-block-post-terms__separator {
+	white-space: nowrap !important;
+}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-container-4.wp-container-4{flex-wrap:nowrap;gap:10px;}.wp-container-5.wp-container-5{flex-wrap:nowrap;justify-content:space-between;align-items:flex-start;}.wp-container-7.wp-container-7{flex-wrap:nowrap;gap:var(--wp--preset--spacing--4);}.wp-container-15.wp-container-15.wp-container-15.wp-container-15 > * + *{margin-block-start:var(--wp--preset--spacing--32);margin-block-end:0;}.wp-container-17.wp-container-17{flex-wrap:nowrap;gap:var(--wp--preset--spacing--20);}.wp-container-20.wp-container-20{flex-wrap:nowrap;gap:var(--wp--preset--spacing--50) var(--wp--preset--spacing--50);}.wp-container-22.wp-container-22{gap:var(--wp--preset--spacing--20) var(--wp--preset--spacing--20);justify-content:flex-start;}.wp-container-24.wp-container-24{gap:var(--wp--preset--spacing--20);}.wp-container-content-29{flex-basis:300px;}.wp-container-31.wp-container-31{justify-content:center;align-items:center;}.wp-container-33.wp-container-33{justify-content:space-between;}.wp-container-34.wp-container-34.wp-container-34.wp-container-34 > * + *{margin-block-start:var(--wp--preset--spacing--30);margin-block-end:0;}.wp-elements-c7046dc1777a9ef77a9be5058633df66 a,.wp-elements-0f6a35b8efa9b8fa8837dfceabd0aae7 a{color:var(--wp--preset--color--dark-gray);}.wp-container-11.wp-container-11,.wp-container-30.wp-container-30{flex-wrap:nowrap;}.wp-container-15.wp-container-15 > *,.wp-container-18.wp-container-18 > *,.wp-container-18.wp-container-18.wp-container-18.wp-container-18 > * + *,.wp-container-34.wp-container-34 > *{margin-block-start:0;margin-block-end:0;}
+</style>
+<style id='fsb-flexible-spacer-style-inline-css'>
+.fsb-style-show-front{position:relative;z-index:2;}@media screen and (min-width:1025px){.fsb-flexible-spacer__device--md,.fsb-flexible-spacer__device--sm{display:none;}}@media screen and (min-width:600px) and (max-width:1024px){.fsb-flexible-spacer__device--lg,.fsb-flexible-spacer__device--sm{display:none;}}@media screen and (max-width:599px){.fsb-flexible-spacer__device--lg,.fsb-flexible-spacer__device--md{display:none;}}
+</style>
+<style id='wp-webfonts-inline-css'>
+@font-face{font-family:NotoSerif;font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/NotoSerif-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:NotoSerif;font-style:italic;font-weight:400;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/NotoSerif-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:NotoSerif;font-style:normal;font-weight:700;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/NotoSerif-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:NotoSerif;font-style:italic;font-weight:700;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/NotoSerif-BoldItalic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:normal;font-weight:100;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-Thin.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:italic;font-weight:100;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-ThinItalic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:normal;font-weight:200;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-ExtraLight.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:italic;font-weight:200;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-ExtraLightItalic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:normal;font-weight:300;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-Light.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:italic;font-weight:300;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-LightItalic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:italic;font-weight:400;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:italic;font-weight:500;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-MediumItalic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:normal;font-weight:500;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-Medium.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:normal;font-weight:700;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:italic;font-weight:700;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-BoldItalic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:normal;font-weight:900;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-Black.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:ApercuPro;font-style:italic;font-weight:900;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/ApercuPro-BlackItalic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:fontawesome;font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/fa-regular-400.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:fontawesome;font-style:normal;font-weight:900;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/fa-solid-900.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:fontawesome-brands;font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.jesusfilm.org/wp-content/themes/jesusfilm-2023/assets/fonts/fa-brands-400.woff2') format('woff2');font-stretch:normal;}
+</style>
+<link rel='stylesheet' id='all-css-60' href='https://www.jesusfilm.org/_static/??/wp-content/themes/jesusfilm-2023/style.css,/wp-content/mu-plugins/jetpack-12.8/css/jetpack.css?m=1700587746' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.jesusfilm.org/wp-content/plugins/megamenu-blocks/build/megamenu/view.js?m=1682107840g" ></script><link rel="https://api.w.org/" href="https://www.jesusfilm.org/wp-json/" /><link rel="alternate" type="application/json" href="https://www.jesusfilm.org/wp-json/wp/v2/posts/14790" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.jesusfilm.org/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.2" />
+<link rel='shortlink' href='https://www.jesusfilm.org/?p=14790' />
+<link rel="alternate" type="application/json+oembed" href="https://www.jesusfilm.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jesusfilm.org%2Fblog%2Fcommands-of-jesus%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.jesusfilm.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jesusfilm.org%2Fblog%2Fcommands-of-jesus%2F&#038;format=xml" />
+		
+	<script type="text/javascript">
+		(function(c,l,a,r,i,t,y){
+			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+			t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+		})(window, document, "clarity", "script", "i4bzqyqeh5");
+	</script>
+		
+		<style>img#wpstats{display:none}</style>
+		<link rel="icon" href="https://www.jesusfilm.org/wp-content/uploads/2022/11/favicon.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://www.jesusfilm.org/wp-content/uploads/2022/11/favicon.png?w=180" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.jesusfilm.org/wp-content/uploads/2022/11/favicon.png?w=180" />
+<meta name="msapplication-TileImage" content="https://www.jesusfilm.org/wp-content/uploads/2022/11/favicon.png?w=180" />
+</head>
+
+<body class="post-template-default single single-post postid-14790 single-format-standard wp-custom-logo wp-embed-responsive">
+
+<div class="wp-site-blocks"><header class="alignfull site-header wp-block-template-part">
+<div class="wp-block-group has-text-color has-background has-warm-white-background-color has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex wp-container-5 wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="https://www.jesusfilm.org/" class="custom-logo-link" rel="home"><img loading="lazy" width="186" height="47" src="https://www.jesusfilm.org/wp-content/uploads/2023/04/JFP-RED.svg" class="custom-logo" alt="Jesus Film Project" decoding="async" /></a></div>
+
+
+<div class="wp-block-group site-header__actions is-nowrap is-layout-flex wp-container-4 wp-block-group-is-layout-flex">
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-small"><a class="wp-block-button__link has-red-background-color has-background wp-element-button" href="https://www.jesusfilm.org/how-to-help/ways-to-donate/give-now-2/?amount=&amp;frequency=single&amp;campaign-code=NXWJPO&amp;designation-number=2592320&amp;thankYouRedirect=https://www.jesusfilm.org/dev/special/thank-you-refer/social-share/">Give Now</a></div>
+</div>
+
+
+<form role="search" method="get" action="https://www.jesusfilm.org/" class="block-visibility-hide-medium-screen block-visibility-hide-small-screen wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-2" >Search</label><div class="wp-block-search__inside-wrapper " ><input class="wp-block-search__input" id="wp-block-search__input-2" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form>
+
+
+<nav class="wp-block-cloudcatch-megamenu wp-block-megamenu open-click static has-apercupro-font-family has-heading-1-font-size" role="navigation"><button aria-label="Toggle menu"><div class="hamburger"><span></span><span></span><span></span><span></span></div></button><ul class="wp-block-megamenu__items"><form role="search" method="get" action="https://www.jesusfilm.org/" class="block-visibility-hide-large-screen wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-3" >Search</label><div class="wp-block-search__inside-wrapper " ><input class="wp-block-search__input" id="wp-block-search__input-3" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form>
+
+
+<li aria-haspopup="true" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both has-megamenu"><a href="https://www.jesusfilm.org/about/" rel="noopener" aria-expanded="false" target="_self">About Us</a><ul class="wp-block-megamenu-item__drawer">
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/about/">Our Organization</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/about/history/">Our History</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/about/team/">Leadership Team</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/about/why-film/">Why Film?</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/about/faith-statement/">Statement Of Faith</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/about/faq/">FAQs</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/partners/resources/strategies/statistics/">Statistics</a></li>
+</ul></li>
+
+
+
+<li aria-haspopup="false" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both"><a href="https://www.jesusfilm.org/blog/" rel="noopener" aria-expanded="false" target="_self">Blog</a></li>
+
+
+
+<li aria-haspopup="true" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both has-megamenu"><a href="https://www.jesusfilm.org/give/" rel="noopener" aria-expanded="false" target="_self">Give</a><ul class="wp-block-megamenu-item__drawer">
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/give/">Ways to Give</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/give/why-give/">Why Give</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/give/ways-to-give/current-projects/">Current Projects</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/give/ways-to-give/memorials-living-tributes/">Honors &amp; Memorials</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a target="_blank" href="https://giftcatalog.jesusfilm.org/" rel="noreferrer noopener">Gift Catalog</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/give/ways-to-give/tax-smart-giving/">Tax Smart Giving</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/give/accountability/">Financial Accountability</a></li>
+</ul></li>
+
+
+
+<li aria-haspopup="true" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both has-megamenu"><a href="https://www.jesusfilm.org/partners/" rel="noopener" aria-expanded="false" target="_self">Partner With Us</a><ul class="wp-block-megamenu-item__drawer">
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/partners/">Become A Partner</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/partners/resources/">Resources</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/partners/resources/strategies/">Strategies</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/partners/mission-trips/">Mission Trips</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/partners/resources/pray/">Pray With Us</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/partners/resources/strategies/women/">Women’s Strategies</a></li>
+</ul></li>
+
+
+
+<li aria-haspopup="true" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both has-megamenu"><a href="https://www.jesusfilm.org/tools/" rel="noopener" aria-expanded="false" target="_self">Evangelism Tools</a><ul class="wp-block-megamenu-item__drawer">
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/tools/">All Tools</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/tools/app/">Jesus Film App</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a href="https://www.jesusfilm.org/tools/youtube/">YouTube</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a target="_blank" href="https://www.jesusfilm.org/watch.html" rel="noreferrer noopener">Watch</a></li>
+
+
+
+<li class="wp-block-cloudcatch-megamenu-item-link"><a target="_blank" href="https://crustore.org/product-category/jesus-film-project/" rel="noreferrer noopener">DVDs &amp; Media</a></li>
+</ul></li>
+
+
+
+<li aria-haspopup="false" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both"><a href="https://www.jesusfilm.org/serve/" rel="noopener" aria-expanded="false" target="_self">Careers</a></li>
+
+
+
+<li aria-haspopup="false" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both"><a href="https://www.jesusfilm.org/about/tour/" rel="noopener" aria-expanded="false" target="_self">Visit us</a></li>
+
+
+
+<li aria-haspopup="false" class="wp-block-cloudcatch-megamenu-item wp-block-megamenu-item device-visibility-both"><a href="https://www.jesusfilm.org/contact/" rel="noopener" aria-expanded="false" target="_self">Contact Us</a></li>
+</ul></nav>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="wp-block-group hero-section has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--32);padding-bottom:var(--wp--preset--spacing--32)">
+<div class="wp-block-columns is-layout-flex wp-container-11 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-jf-breadcrumbs">
+	<nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="https://www.jesusfilm.org">Home</a><span class="separator"> / </span><a href="https://www.jesusfilm.org/blog/">Blog</a><span class="separator"> / </span><span class="last">38 Commands of Jesus We Should Take to Heart</span></p></nav></div>
+
+
+<h1 class="wp-block-post-title">38 Commands of Jesus We Should Take to Heart</h1>
+
+
+<div class="wp-block-group post-meta has-apercupro-font-family is-nowrap is-layout-flex wp-container-7 wp-block-group-is-layout-flex" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:500;text-transform:uppercase"><div class="wp-block-post-date"><time datetime="2023-05-18T11:35:04-04:00">5/18/2023</time></div>
+
+
+<p>•</p>
+
+
+<div class="taxonomy-category wp-block-post-terms"><a href="https://www.jesusfilm.org/blog/category/following-jesus/" rel="tag">Following Jesus</a></div></div>
+
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--auto)"><div style="font-style:normal;font-weight:500;text-decoration:none;" class="has-link-color wp-block-post-author has-apercupro-font-family wp-elements-c7046dc1777a9ef77a9be5058633df66"><div class="wp-block-post-author__avatar"><img alt='Avatar photo' src='https://www.jesusfilm.org/wp-content/uploads/2023/04/avatar-jfp.png' srcset='https://www.jesusfilm.org/wp-content/uploads/2023/04/avatar-jfp.png 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/></div><div class="wp-block-post-author__content"><p class="wp-block-post-author__name"><a href="https://www.jesusfilm.org/blog/author/jesus-film-project/" target="_self">Jesus Film Project</a></p></div></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:62%"><figure style="aspect-ratio:16/9;" class="wp-block-post-featured-image"><img width="1024" height="576" src="https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg?w=1024" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Jeasus healing blind man" decoding="async" style="width:100%;height:100%;object-fit:cover;" fetchpriority="high" srcset="https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg 2048w, https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg?resize=300,169 300w, https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg?resize=768,432 768w, https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg?resize=1024,576 1024w, https://www.jesusfilm.org/wp-content/uploads/2023/05/38-Commands-of-Jesus-We-Should-Take-to-Heart.jpg?resize=1536,864 1536w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+</div>
+</div>
+
+
+
+<div class="wp-block-group site-content has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<hr class="block-visibility-hide-small-screen wp-block-separator has-alpha-channel-opacity" style="margin-top:var(--wp--preset--spacing--40)"/>
+
+
+
+<div class="wp-block-columns is-style-separator post-container is-layout-flex wp-container-20 wp-block-columns-is-layout-flex" style="margin-top:var(--wp--preset--spacing--32)">
+<div class="wp-block-column is-layout-flow wp-container-15 wp-block-column-is-layout-flow"><div class="block-visibility-hide-small-screen wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><h3 class="wp-block-heading" id="table-of-contents">Table of Contents</h3><nav class="wp-block-table-of-contents wp-block-jf-table-of-contents"><ol><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#1">Repent, for the kingdom of heaven is near (Matthew 4:27)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#2">Come and follow Me (Matthew 4:19)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#3">Rejoice when you’re persecuted in My name (Matthew 5:11–12)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#4">Let your light shine before all people (Matthew 5:16)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#5">Be reconciled to one another (Matthew 5:23–24)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#6">Take sin very seriously (Matthew 5:29–30)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#7">Keep your word (Matthew 5:37)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#8">Turn the other cheek (Matthew 5:39)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#9">Go above and beyond (Matthew 5:40–42)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#10">Love your enemies (Matthew 5:43–44)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#11">Be perfect as your heavenly Father is perfect (Matthew 5:48)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#12">Focus on spiritual disciplines for the right reasons (Matthew 6:1–18)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#13">Put your efforts in the right place (Matthew 6:19–21)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#14">Seek God’s kingdom first of all (Matthew 6:33)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#15">Do not worry about tomorrow (Matthew 6:34)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#16">Use right judgment (Matthew 7:1–5)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#17">Practice discretion (Matthew 7:6)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#18">Ask, seek, and knock (Matthew 7:7–8)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#19">Treat others as you would like to be treated (Matthew 7:12)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#20">Choose the narrow path to life (Matthew 7:13–14)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#21">Look out for false prophets (Matthew 7:15–20)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#22">Pray for kingdom laborers (Matthew 9:37–38)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#23">Be on your guard (Matthew 10:16–17)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#24">Do not fear persecutors (Matthew 10:26–31)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#25">Take My yoke upon you (Matthew 11:28–30)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#26">Do not despise the little ones (Matthew 18:10)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#27">How to deal with offenders (Matthew 18:15–17)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#28">Practice forgiveness (Matthew 18:21–22)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#29">Lead through service (Matthew 20:25–28)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#30">Love God with all your heart, mind, and soul (Matthew 22:37–38)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#31">Love your neighbor as yourself (Matthew 22:39)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#32">Stay alert and keep watch (Matthew 24:42–44)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#33">Make disciples of all the nations (Matthew 28:18–20)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#34">Deny yourself (Luke 9:23–24)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#35">Watch out for greed (Luke 12:15)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#36">Give to those who can’t reciprocate (Luke 14:12–14)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#37">You must be born again (John 3:7)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#38">If you love Me, keep my commandments (John 12:15)</a></li><li><a class="wp-block-table-of-contents__entry" href="https://www.jesusfilm.org/blog/commands-of-jesus/#39">Learn more about Jesus</a></li></ol></nav><hr class="wp-block-separator has-text-color has-light-soft-gray-color has-alpha-channel-opacity has-light-soft-gray-background-color has-background" /></div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading" id="related-posts">Related Posts</h3>
+
+
+<nav class="jp-relatedposts-i2 wp-block-jetpack-related-posts has-apercupro-font-family" data-layout="list"><div class="jp-related-posts-i2__row" data-post-count="3"><ul id="related-posts-item-65611517ee420" aria-labelledby="related-posts-item-65611517ee420-label" class="jp-related-posts-i2__post" role="menuitem"><li class="jp-related-posts-i2__post-link"><a id="related-posts-item-65611517ee420-label" href="https://www.jesusfilm.org/blog/jesus-quotes/" >Essential Jesus Quotes Everyone Should Know</a></li><li class="jp-related-posts-i2__post-date">7/4/2022</li></ul><ul id="related-posts-item-65611517ee441" aria-labelledby="related-posts-item-65611517ee441-label" class="jp-related-posts-i2__post" role="menuitem"><li class="jp-related-posts-i2__post-link"><a id="related-posts-item-65611517ee441-label" href="https://www.jesusfilm.org/blog/parables-treasure-and-pearl/" >What Are the Parables of the Hidden Treasure and Pearl About?</a></li><li class="jp-related-posts-i2__post-date">11/5/2018</li></ul><ul id="related-posts-item-65611517ee460" aria-labelledby="related-posts-item-65611517ee460-label" class="jp-related-posts-i2__post" role="menuitem"><li class="jp-related-posts-i2__post-link"><a id="related-posts-item-65611517ee460-label" href="https://www.jesusfilm.org/blog/kingdom-of-god/" >What Is the Kingdom of God?</a></li><li class="jp-related-posts-i2__post-date">1/8/2019</li></ul></div></nav></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div class="wp-block-group is-style-brand-red has-background-color has-text-color has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:8px;padding-top:var(--wp--preset--spacing--32);padding-right:var(--wp--preset--spacing--32);padding-bottom:var(--wp--preset--spacing--32);padding-left:var(--wp--preset--spacing--32)">
+<h2 class="wp-block-heading">Subscribe To Our Weekly Newsletter</h2>
+
+
+
+<p>Sign up for our weekly newsletter, JFP News, to receive encouraging stories, videos and resources in your inbox.</p>
+
+
+
+<div class="campaign-form">
+<div class="alert alert-danger hidden" role="alert">An issue has occurred. Please try again or contact website administrator.</div>
+<form class="" action="https://campaign-forms.cru.org/forms" method="post" data-recaptcha-sitekey='6LfQ_uAZAAAAAOH93HaoaaiehT0aHxqlHvMobzgk'>
+    <input type="hidden" name="id" value="03245966-06d7-4e44-a8f7-f93edf6a4c38"/></p>
+<div class="form-group">
+  <input id="cf_first_name_56" class="form-control small" type="text" name="first_name" placeholder="First Name" required>
+</div>
+<div class="form-group">
+  <input id="cf_email_address_57" class="form-control small" type="email" name="email_address" placeholder="Email Address" required>
+</div>
+<p>    <button type="submit" class="button has-primary-background-color" >Subscribe</button><br />
+  </form>
+<div class="alert alert-success hidden" role="alert">
+<div><strong>Congratulations!</strong> You have successfully subscribed.</div>
+</div>
+</div><small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small>
+<style>.grecaptcha-badge { visibility: hidden; } </style>
+<p><script src="https://campaign-forms.cru.org/packs/campaign.js"></script><br />
+<script type="application/javascript" src='https://www.google.com/recaptcha/api.js?render=6LfQ_uAZAAAAAOH93HaoaaiehT0aHxqlHvMobzgk'></script></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-left:8%;flex-basis:70%">
+<div aria-hidden="true" class="wp-block-fsb-flexible-spacer fsb-flexible-spacer"><div class="fsb-flexible-spacer__device fsb-flexible-spacer__device--lg" style="height:31px"></div><div class="fsb-flexible-spacer__device fsb-flexible-spacer__device--md" style="height:0"></div><div class="fsb-flexible-spacer__device fsb-flexible-spacer__device--sm" style="height:0"></div></div>
+
+
+<div class="entry-content wp-block-post-content is-layout-flow wp-block-post-content-is-layout-flow">
+<p>Jesus told the disciples, “If you love me, keep my commands” (John 14:15). It’s safe to assume that He would say the same thing to His followers today. But what kind of things did Jesus ask of His followers?</p>
+
+
+
+<p>We pulled together 38 of Jesus’ commands, focusing on the ones with universal application for all of His followers. These Scriptures can be a great jumping off point for prayer, memorization and meditation.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading" id="1">1. Repent, for the kingdom of heaven is near (Matthew 4:27)</h2>
+
+
+
+<p>From that time on Jesus began to preach, “Repent, for the kingdom of heaven has come near.”</p>
+
+
+
+<h2 class="wp-block-heading" id="2">2. Come and follow Me (Matthew 4:19)</h2>
+
+
+
+<p>“Come, follow me,” Jesus said, “and I will send you out to fish for people.”</p>
+
+
+
+<h2 class="wp-block-heading" id="3">3. Rejoice when you’re persecuted in My name (Matthew 5:11–12)</h2>
+
+
+
+<p>“Blessed are you when people insult you, persecute you and falsely say all kinds of evil against you because of me. Rejoice and be glad, because great is your reward in heaven, for in the same way they persecuted the prophets who were before you.”</p>
+
+
+
+<h2 class="wp-block-heading" id="4">4. Let your light shine before all people (Matthew 5:16)</h2>
+
+
+
+<p>“In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven.”</p>
+
+
+
+<h2 class="wp-block-heading" id="5">5. Be reconciled to one another (Matthew 5:23–24)</h2>
+
+
+
+<p>“Therefore, if you are offering your gift at the altar and there remember that your brother or sister has something against you, leave your gift there in front of the altar. First go and be reconciled to them; then come and offer your gift.”</p>
+
+
+
+<h2 class="wp-block-heading" id="6">6. Take sin very seriously (Matthew 5:29–30)</h2>
+
+
+
+<p>“If your right eye causes you to stumble, gouge it out and throw it away. It is better for you to lose one part of your body than for your whole body to be thrown into hell. And if your right hand causes you to stumble, cut it off and throw it away. It is better for you to lose one part of your body than for your whole body to go into hell.”</p>
+
+
+
+<h2 class="wp-block-heading" id="7">7. Keep your word (Matthew 5:37)</h2>
+
+
+
+<p>“All you need to say is simply ‘Yes’ or ‘No’; anything beyond this comes from the evil one.”</p>
+
+
+
+<h2 class="wp-block-heading" id="8">8. Turn the other cheek (Matthew 5:39)</h2>
+
+
+
+<p>“But I tell you, do not resist an evil person. If anyone slaps you on the right cheek, turn to them the other cheek also.”</p>
+
+
+
+<h2 class="wp-block-heading" id="9">9. Go above and beyond (Matthew 5:40–42)</h2>
+
+
+
+<p>“And if anyone wants to sue you and take your shirt, hand over your coat as well. If anyone forces you to go one mile, go with them two miles. Give to the one who asks you, and do not turn away from the one who wants to borrow from you.”</p>
+
+
+
+<h2 class="wp-block-heading" id="10">10. Love your enemies (Matthew 5:43–44)</h2>
+
+
+
+<p>&nbsp;“You have heard that it was said, ‘Love your neighbor and hate your enemy.’ But I tell you, love your enemies and pray for those who persecute you,&#8221;</p>
+
+
+
+<h2 class="wp-block-heading" id="11">11. Be perfect as your heavenly Father is perfect (Matthew 5:48)</h2>
+
+
+
+<p>“Be perfect, therefore, as your heavenly Father is perfect.”</p>
+
+
+
+<h2 class="wp-block-heading" id="12">12. Focus on spiritual disciplines for the right reasons (Matthew 6:1–18)</h2>
+
+
+
+<p>“Be careful not to practice your righteousness in front of others to be seen by them. If you do, you will have no reward from your Father in heaven.</p>
+
+
+
+<p>“So when you give to the needy, do not announce it with trumpets, as the hypocrites do in the synagogues and on the streets, to be honored by others. Truly I tell you, they have received their reward in full. But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. Then your Father, who sees what is done in secret, will reward you.</p>
+
+
+
+<p>“And when you pray, do not be like the hypocrites, for they love to pray standing in the synagogues and on the street corners to be seen by others. Truly I tell you, they have received their reward in full. But when you pray, go into your room, close the door and pray to your Father, who is unseen. Then your Father, who sees what is done in secret, will reward you. And when you pray, do not keep on babbling like pagans, for they think they will be heard because of their many words. Do not be like them, for your Father knows what you need before you ask him.</p>
+
+
+
+<p>&nbsp;“This, then, is how you should pray:</p>
+
+
+
+<p>“‘Our Father in heaven,</p>
+
+
+
+<p>hallowed be your name,</p>
+
+
+
+<p>&nbsp;your kingdom come,</p>
+
+
+
+<p>your will be done,</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;on earth as it is in heaven.</p>
+
+
+
+<p>&nbsp;Give us today our daily bread.</p>
+
+
+
+<p>&nbsp;And forgive us our debts,</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;as we also have forgiven our debtors.</p>
+
+
+
+<p>&nbsp;And lead us not into temptation,</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;but deliver us from the evil one.’</p>
+
+
+
+<p>For if you forgive other people when they sin against you, your heavenly Father will also forgive you. But if you do not forgive others their sins, your Father will not forgive your sins.</p>
+
+
+
+<p>“When you fast, do not look somber as the hypocrites do, for they disfigure their faces to show others they are fasting. Truly I tell you, they have received their reward in full. But when you fast, put oil on your head and wash your face, so that it will not be obvious to others that you are fasting, but only to your Father, who is unseen; and your Father, who sees what is done in secret, will reward you.”</p>
+
+
+
+<h2 class="wp-block-heading" id="13">13. Put your efforts in the right place (Matthew 6:19–21)</h2>
+
+
+
+<p>“Do not store up for yourselves treasures on earth, where moths and vermin destroy, and where thieves break in and steal. But store up for yourselves treasures in heaven, where moths and vermin do not destroy, and where thieves do not break in and steal. For where your treasure is, there your heart will be also.”</p>
+
+
+
+<h2 class="wp-block-heading" id="14">14. Seek God’s kingdom first of all (Matthew 6:33)</h2>
+
+
+
+<p>“But seek first his kingdom and his righteousness, and all these things will be given to you as well.”</p>
+
+
+
+<h2 class="wp-block-heading" id="15">15. Do not worry about tomorrow (Matthew 6:34)</h2>
+
+
+
+<p>“Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.”</p>
+
+
+
+<h2 class="wp-block-heading" id="16">16. Use right judgment (Matthew 7:1–5)</h2>
+
+
+
+<p>“Do not judge, or you too will be judged. For in the same way you judge others, you will be judged, and with the measure you use, it will be measured to you.</p>
+
+
+
+<p>“Why do you look at the speck of sawdust in your brother’s eye and pay no attention to the plank in your own eye? How can you say to your brother, ‘Let me take the speck out of your eye,’ when all the time there is a plank in your own eye? You hypocrite, first take the plank out of your own eye, and then you will see clearly to remove the speck from your brother’s eye.”</p>
+
+
+
+<h2 class="wp-block-heading" id="17">17. Practice discretion (Matthew 7:6)</h2>
+
+
+
+<p>“Do not give dogs what is sacred; do not throw your pearls to pigs. If you do, they may trample them under their feet, and turn and tear you to pieces.&#8221;</p>
+
+
+
+<h2 class="wp-block-heading" id="18">18. Ask, seek, and knock (Matthew 7:7–8)</h2>
+
+
+
+<p>“Ask and it will be given to you; seek and you will find; knock and the door will be opened to you. For everyone who asks receives; the one who seeks finds; and to the one who knocks, the door will be opened.&#8221;&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading" id="19">19. Treat others as you would like to be treated (Matthew 7:12)</h2>
+
+
+
+<p>“So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets.”</p>
+
+
+
+<h2 class="wp-block-heading" id="20">20. Choose the narrow path to life (Matthew 7:13–14)</h2>
+
+
+
+<p>“Enter through the narrow gate. For wide is the gate and broad is the road that leads to destruction, and many enter through it. But small is the gate and narrow the road that leads to life, and only a few find it.&#8221;</p>
+
+
+
+<h2 class="wp-block-heading" id="21">21. Look out for false prophets (Matthew 7:15–20)</h2>
+
+
+
+<p>“Watch out for false prophets. They come to you in sheep’s clothing, but inwardly they are ferocious wolves. By their fruit you will recognize them. Do people pick grapes from thornbushes, or figs from thistles? Likewise, every good tree bears good fruit, but a bad tree bears bad fruit. A good tree cannot bear bad fruit, and a bad tree cannot bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus, by their fruit you will recognize them.&#8221;</p>
+
+
+
+<h2 class="wp-block-heading" id="22">22. Pray for kingdom laborers (Matthew 9:37–38)</h2>
+
+
+
+<p>Then he said to his disciples, “The harvest is plentiful but the workers are few. Ask the Lord of the harvest, therefore, to send out workers into his harvest field.”</p>
+
+
+
+<h2 class="wp-block-heading" id="23">23. Be on your guard (Matthew 10:16–17)</h2>
+
+
+
+<p>“I am sending you out like sheep among wolves. Therefore be as shrewd as snakes and as innocent as doves. Be on your guard; you will be handed over to the local councils and be flogged in the synagogues.&#8221;</p>
+
+
+
+<h2 class="wp-block-heading" id="24">24. Do not fear persecutors (Matthew 10:26–31)</h2>
+
+
+
+<p>“So do not be afraid of them, for there is nothing concealed that will not be disclosed, or hidden that will not be made known. What I tell you in the dark, speak in the daylight; what is whispered in your ear, proclaim from the roofs. Do not be afraid of those who kill the body but cannot kill the soul. Rather, be afraid of the One who can destroy both soul and body in hell. Are not two sparrows sold for a penny? Yet not one of them will fall to the ground outside your Father’s care. And even the very hairs of your head are all numbered. So don’t be afraid; you are worth more than many sparrows.”</p>
+
+
+
+<h2 class="wp-block-heading" id="25">25. Take My yoke upon you (Matthew 11:28–30)</h2>
+
+
+
+<p>“Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls. For my yoke is easy and my burden is light.”</p>
+
+
+
+<h2 class="wp-block-heading" id="26">26. Do not despise the little ones (Matthew 18:10)</h2>
+
+
+
+<p>“See that you do not despise one of these little ones. For I tell you that their angels in heaven always see the face of my Father in heaven.&#8221;</p>
+
+
+
+<h2 class="wp-block-heading" id="27">27. How to deal with offenders (Matthew 18:15–17)</h2>
+
+
+
+<p>“If your brother or sister sins, go and point out their fault, just between the two of you. If they listen to you, you have won them over. But if they will not listen, take one or two others along, so that ‘every matter may be established by the testimony of two or three witnesses.’ If they still refuse to listen, tell it to the church; and if they refuse to listen even to the church, treat them as you would a pagan or a tax collector.”</p>
+
+
+
+<h2 class="wp-block-heading" id="28">28. Practice forgiveness (Matthew 18:21–22)</h2>
+
+
+
+<p>Then Peter came to Jesus and asked, “Lord, how many times shall I forgive my brother or sister who sins against me? Up to seven times?”</p>
+
+
+
+<p>Jesus answered, “I tell you, not seven times, but seventy-seven times.”</p>
+
+
+
+<h2 class="wp-block-heading" id="29">29. Lead through service (Matthew 20:25–28)</h2>
+
+
+
+<p>Jesus called them together and said, “You know that the rulers of the Gentiles lord it over them, and their high officials exercise authority over them. Not so with you. Instead, whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave—just as the Son of Man did not come to be served, but to serve, and to give his life as a ransom for many.”</p>
+
+
+
+<h2 class="wp-block-heading" id="30">30. Love God with all your heart, mind, and soul (Matthew 22:37–38)</h2>
+
+
+
+<p>Jesus replied: “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment.”</p>
+
+
+
+<h2 class="wp-block-heading" id="31">31. Love your neighbor as yourself (Matthew 22:39)</h2>
+
+
+
+<p>And the second is like it: “Love your neighbor as yourself.”</p>
+
+
+
+<h2 class="wp-block-heading" id="32">32. Stay alert and keep watch (Matthew 24:42–44)</h2>
+
+
+
+<p>“Therefore keep watch, because you do not know on what day your Lord will come.&nbsp; But understand this: If the owner of the house had known at what time of night the thief was coming, he would have kept watch and would not have let his house be broken into. So you also must be ready, because the Son of Man will come at an hour when you do not expect him.”</p>
+
+
+
+<h2 class="wp-block-heading" id="33">33. Make disciples of all the nations (Matthew 28:18–20)</h2>
+
+
+
+<p>Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.”</p>
+
+
+
+<h2 class="wp-block-heading" id="34">34. Deny yourself (Luke 9:23–24)</h2>
+
+
+
+<p>Then he said to them all: “Whoever wants to be my disciple must deny themselves and take up their cross daily and follow me. For whoever wants to save their life will lose it, but whoever loses their life for me will save it.&#8221;</p>
+
+
+
+<h2 class="wp-block-heading" id="35">35. Watch out for greed (Luke 12:15)</h2>
+
+
+
+<p>Then he said to them, “Watch out! Be on your guard against all kinds of greed; life does not consist in an abundance of possessions.”</p>
+
+
+
+<h2 class="wp-block-heading" id="36">36. Give to those who can’t reciprocate (Luke 14:12–14)</h2>
+
+
+
+<p>Then Jesus said to his host, “When you give a luncheon or dinner, do not invite your friends, your brothers or sisters, your relatives, or your rich neighbors; if you do, they may invite you back and so you will be repaid. But when you give a banquet, invite the poor, the crippled, the lame, the blind, and you will be blessed. Although they cannot repay you, you will be repaid at the resurrection of the righteous.”</p>
+
+
+
+<h2 class="wp-block-heading" id="37">37. You must be born again (John 3:7)</h2>
+
+
+
+<p>You should not be surprised at my saying, “You must be born again.”</p>
+
+
+
+<h2 class="wp-block-heading" id="38">38. If you love Me, keep my commandments (John 12:15)</h2>
+
+
+
+<p>“If you love me, keep my commands.”</p>
+
+
+
+<h2 class="wp-block-heading" id="39">Learn more about Jesus</h2>
+
+
+
+<p>If you’re interested in learning more about the life and teachings of Jesus, check out Jesus Film Project’s<sup>®</sup><a href="https://www.jesusfilm.org/watch">watch page</a>. There you’ll find the <a href="https://www.jesusfilm.org/watch/jesus.html/english.html"><em>JESUS</em></a> film, the <a href="https://www.jesusfilm.org/watch/life-of-jesus-gospel-of-john.html/english.html"><em>Life of Jesus</em></a><em>, </em><a href="https://www.jesusfilm.org/watch/lumo-the-gospel-of-matthew.html/english.html"><em>Lumo &#8211; The Gospel of Matthew</em></a> and more! These resources can inspire and help you as you love and serve Jesus in your everyday life.</p>
+</div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-18 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--50)">
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div aria-hidden="true" class="wp-block-fsb-flexible-spacer fsb-flexible-spacer"><div class="fsb-flexible-spacer__device fsb-flexible-spacer__device--lg" style="height:64px"></div><div class="fsb-flexible-spacer__device fsb-flexible-spacer__device--md" style="height:32px"></div><div class="fsb-flexible-spacer__device fsb-flexible-spacer__device--sm" style="height:20px"></div></div>
+
+
+
+<div class="wp-block-group post-author-box is-nowrap is-layout-flex wp-container-17 wp-block-group-is-layout-flex"><div style="margin-bottom:var(--wp--preset--spacing--16);" class="wp-block-post-author"><div class="wp-block-post-author__avatar"><img alt='Avatar photo' src='https://www.jesusfilm.org/wp-content/uploads/2023/04/avatar-jfp.png' srcset='https://www.jesusfilm.org/wp-content/uploads/2023/04/avatar-jfp.png 2x' class='avatar avatar-142 photo' height='142' width='142' loading='lazy' decoding='async'/></div><div class="wp-block-post-author__content"><p class="wp-block-post-author__name">Jesus Film Project</p></div></div>
+
+
+<p class="has-small-font-size" style="margin-bottom:2px;font-style:normal;font-weight:500">About the Author</p>
+
+
+<div style="margin-bottom:var(--wp--preset--spacing--12); font-style:normal;font-weight:700;line-height:1;" class="wp-block-post-author-name has-heading-3-font-size has-apercupro-font-family">Jesus Film Project</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer class="alignfull site-footer wp-block-template-part">
+<div class="wp-block-group has-text-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:92px">
+<div class="wp-block-group site-footer__grid is-layout-flow wp-container-34 wp-block-group-is-layout-flow">
+<div class="wp-block-group site-footer__grid-col-1 is-layout-flex wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="https://www.jesusfilm.org/" class="custom-logo-link" rel="home"><img loading="lazy" width="157" height="39" src="https://www.jesusfilm.org/wp-content/uploads/2023/04/JFP-RED.svg" class="custom-logo" alt="Jesus Film Project" decoding="async" /></a></div>
+
+
+<ul class="wp-block-social-links has-icon-color is-style-logos-only is-content-justification-left is-layout-flex wp-container-22 wp-block-social-links-is-layout-flex" style="margin-right:var(--wp--preset--spacing--20)"><li style="color: #4D4D4D; " class="wp-social-link wp-social-link-twitter has-dark-gray-color wp-block-social-link"><a rel=" noopener nofollow" target="_blank" href="http://twitter.com/jesusfilm" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+
+<li style="color: #4D4D4D; " class="wp-social-link wp-social-link-facebook has-dark-gray-color wp-block-social-link"><a rel=" noopener nofollow" target="_blank" href="http://www.facebook.com/jesusfilm" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
+
+<li style="color: #4D4D4D; " class="wp-social-link wp-social-link-instagram has-dark-gray-color wp-block-social-link"><a rel=" noopener nofollow" target="_blank" href="https://www.instagram.com/jesusfilm/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+
+<li style="color: #4D4D4D; " class="wp-social-link wp-social-link-youtube has-dark-gray-color wp-block-social-link"><a rel=" noopener nofollow" target="_blank" href="http://www.youtube.com/user/jesusfilm" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li></ul>
+
+
+<nav style="font-size:13px;font-style:normal;font-weight:700;" class="wp-block-navigation has-apercupro-font-family is-layout-flex wp-container-24 wp-block-navigation-is-layout-flex" aria-label="Footer navigation"><ul style="font-size:13px;font-style:normal;font-weight:700;" class="wp-block-navigation__container  wp-block-navigation has-apercupro-font-family"><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/partners/share/"><span class="wp-block-navigation-item__label">Share</span></a></li><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/watch" target="_blank"  ><span class="wp-block-navigation-item__label">Watch</span></a></li><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/give/"><span class="wp-block-navigation-item__label">Giving</span></a></li><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/about/"><span class="wp-block-navigation-item__label">About</span></a></li><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/tools/"><span class="wp-block-navigation-item__label">Products</span></a></li><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/partners/resources/"><span class="wp-block-navigation-item__label">Resources</span></a></li><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/partners/"><span class="wp-block-navigation-item__label">Partners</span></a></li><li style="font-size: 13px;" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.jesusfilm.org/contact/"><span class="wp-block-navigation-item__label">Contact</span></a></li></ul></nav>
+
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-small"><a class="wp-block-button__link has-red-background-color has-background wp-element-button" href="https://www.jesusfilm.org/how-to-help/ways-to-donate/give-now/?amount=&amp;frequency=single&amp;campaign-code=NXWJPO&amp;designation-number=2592320&amp;thankYouRedirect=https://www.jesusfilm.org/dev/special/thank-you-refer/social-share/">Give Now</a></div>
+</div>
+</div>
+
+
+
+<div class="wp-block-group site-footer__grid-col-2 is-content-justification-space-between is-layout-flex wp-container-33 wp-block-group-is-layout-flex">
+<div class="wp-block-columns is-not-stacked-on-mobile is-style-separator has-apercupro-font-family wp-container-content-29 is-layout-flex wp-container-30 wp-block-columns-is-layout-flex" style="font-size:12px;line-height:1">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:110px">
+<p style="line-height:1.2">100 Lake Hart Drive<br>Orlando, FL, 32832</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="has-link-color wp-elements-0f6a35b8efa9b8fa8837dfceabd0aae7" style="line-height:1.2">Office: <a href="tel:407-826-2300">(407) 826-2300</a><br>Fax: <a href="tel:407-826-2375">(407) 826-2375</a></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-31 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-small"><a class="wp-block-button__link wp-element-button" href="https://www.jesusfilm.org/email/">Sign Up For Our Newsletter</a></div>
+</div>
+
+
+<form role="search" method="get" action="https://www.jesusfilm.org/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-32" >Search</label><div class="wp-block-search__inside-wrapper " ><input class="wp-block-search__input" id="wp-block-search__input-32" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></div>
+</div>
+</div>
+</footer></div>
+
+		<style id="skip-link-styles">
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	</style>
+		<script>
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	</script>
+		<script type="text/javascript">
+		function genesisBlocksShare( url, title, w, h ){
+			var left = ( window.innerWidth / 2 )-( w / 2 );
+			var top  = ( window.innerHeight / 2 )-( h / 2 );
+			return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
+		}
+	</script>
+	
+	<svg class="clip-path">
+		<clipPath id="clip-path-1" clipPathUnits="objectBoundingBox"><path d="M0.049,0 C0.022,0,0,0.03,0,0.066 v0.508 c0,0.03,0.015,0.056,0.035,0.064 l0.941,0.361 c0.012,0.004,0.023,-0.008,0.023,-0.024 V0.066 C1,0.03,0.978,0,0.951,0 H0.049"></path></clipPath>
+	</svg>
+
+	<script>
+		document.addEventListener( 'splideReady', function( e ) {
+			e.detail.defaults = {
+				arrowPath: 'M33.7,12.7c5.4,3.4,5.4,11.2,0,14.6L15.5,38.7c-5.7,3.6-13.2-0.5-13.2-7.3V8.6c0-6.8,7.4-10.9,13.2-7.3L33.7,12.7z'
+			};
+		} );
+	</script>
+
+	
+	<script>
+		function brandedCheckoutRedirect() {
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			const maybeRedirect = urlParams.get('thankYouRedirect');
+			if (maybeRedirect && maybeRedirect.length > 0) {
+				window.location = maybeRedirect;
+			}
+		}
+		window.onOrderCompleted = function () { brandedCheckoutRedirect(); };
+	</script>
+
+	<script type="text/javascript" src="https://www.jesusfilm.org/_static/??/wp-content/plugins/genesis-blocks/dist/assets/js/dismiss.js,/wp-content/themes/jesusfilm-2023/assets/js/main.js?m=1682107841j" ></script><script defer src='https://stats.wp.com/e-202347.js' id='jetpack-stats-js'></script>
+<script id="jetpack-stats-js-after">
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'212494354',post:'14790',tz:'-5',srv:'www.jesusfilm.org',hp:'vip',j:'1:12.8.1'} ]);
+_stq.push([ "clickTrackerInit", "212494354", "14790" ]);
+</script>
+</body>
+</html>

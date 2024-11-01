@@ -1,0 +1,12 @@
+
+main :: IO ()
+main = do
+  output <- getResults "Weather"
+  print $ unlines $ fromMaybe [] output
+
+# The main function is defined as a monad, which is a type of function that can
+# take a function of type a -> b and return a value of type a. In this case,
+# the main function takes a function of type IO () and returns a value of type
+# IO ().
+
+# The main function is defined as a monad, which

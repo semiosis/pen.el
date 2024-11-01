@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "carbonyl" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "carbonyl" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "carbonyl" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "carbonyl" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "carbonyl" "https://youtube.com" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "carbonyl" "https://google.com" "#" "<==" "zsh"

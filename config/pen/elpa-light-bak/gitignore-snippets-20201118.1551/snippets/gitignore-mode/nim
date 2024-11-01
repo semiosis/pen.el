@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Nim
+# contributor: Toptal & contributors
+# key: nim
+# --
+
+### Nim ###
+
+nimcache/
+nimblecache/
+htmldocs/

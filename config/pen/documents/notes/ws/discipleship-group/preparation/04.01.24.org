@@ -1,0 +1,143 @@
+* Listen to instrumental worship music
+https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s&ab_channel=CHRISTIANPiano
+
+* Prepare for D Group tomorrow
+- Currently waiting for the PDF from Geoff, but this shouldn't stop me.
+
+** Elliot's email
+[[notmuch:id:CAH1kdqxF2VZPqkaJmmF4p=Dvy8OrUCJGi14kcocM2mRZABYXBA@mail.gmail.com][Email from Elliot Munro: Re: D group today]]
+
+** Preparation
+This precedes the actual notes.
+
+e:/root/.pen/documents/notes/ws/discipleship-group/preparation
+
+** D-group weekly devotional
+
+** Memorization
+e:/root/.pen/documents/notes/ws/discipleship-group/memorization
+
+*** Ask the question, "What stood out to me?"
+
+** Hear journals
+e:/root/.pen/documents/notes/ws/discipleship-group/hear-journal
+
+The HEAR-journal entry must be _per-highlighted-verse_.
+I need to update the snippet and the filename to reflect
+one HEAR-journal entry PER passage reflection.
+
+*** H (Highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Philippians 4:13
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Philippians 4:13
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+I can do all things through Him who
+strengthens me.
+
+(NASB)
+#+end_src
+
+*** E (Explain)
+Pal was telling the church at Philippi that he has discovered the secret of contentment.
+No matter the situation in Paul's life, he realized that Christ was all he needed, and
+Christ was the One who strengthened him to persevere through difficult times.
+
+*** A (Apply)
+In my life, I will experience many ups and downs. My contentment is not found in circumstances.
+Rather, it is based on my relationship with Jesus Christ. Only Jesus gives me the strength I need
+to be content in every circumstance.
+
+*** R (Respond)
+Lord Jesus, please help me as I strive to be content in You. Through Your strength, I can
+make it through any situation I face.
+
+** Hinge moments
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  hinge moment
+      An experience or season of time that has
+      changed the trajectory of one's life.
+#+END_SRC
+
+- Connect my story to God's mission
+- Articulate how God's story (the Gospel) has changed my story
+
+I must identify the hinge moments in my life:
+- Born-again
+- Submit to Jesus Christ's commandments
+
+*** 
+
++ /10 high points/ [5/8]
+  - [-] 
+  - [X] Working on Age of Kings Trigger Studio
+  - [-] Returning from Auckland to Dunedin
+  - [-] Moving from Perth to Dunedin
+  - [X] Meeting Melee and then working on my AI project
+  - [X] Becoming born-again of the Spirit
+  - [X] Learning about Jesus Christ
+  - [X] Proposing to Melee
+  - [X] Following Jesus' commandments, experiencing persecution and knowing that He is observing
+  - [X] Discovering the Bible
+
++ /10 hard times/ (failure or grief) [1/7]
+  - [-] My entire life
+  - [-] Reporting bad grades to dad
+  - [-] At uni, when I was around 20 years old, I became very unwell
+    - Some people who were very bad influences gave me a large amount of cannabis, and I was not a smoker. It made me very unwell. Also someone put a dead rat under my bed and I 
+    - I honestly think I must have been attacked spiritually that year, but I would not have understood that at the time. My grades suffered.
+  - [-] Moving from Dunedin to Auckland
+  - [-] Moving from Dunedin to Perth
+    - People told me that God was providing this job for me, but I really didn't want to go
+    - No-one would give me work in Dunedin
+  - [-] Moving from Perth to Dunedin
+  - [X] Fighting against satan for about a year and a half
+    - I close my eyes and get blasphemous dreams, and lewd visions, and gaslighting
+    - And literally satan also gaslighting me, reminding me of past sin and trying to steal from me good conscience with God after having been born again
+
+*** Hinge moment reflection questions
+- What are my truly formative experiences in life? What has made a lasting impact?
+  - 
+- Is there any common thread to my experiences?
+  - 
+- Why do I do what I do vocationally? Did one person or event significantly determine this?
+  - 
+- Who are my most meaningful friends?
+  - 
+- Who taught me how to live? How am I learning to live like Christ?
+  - 
+- How has God's grace been revealed in my life?
+  - 
+- How does my unique story bring God glory?
+  - God has brought me into the Truth and given me good works to carry out which glorify Him
+  - 
+- What would my life be like without God?
+  - 
+- What may God be preparing me to do in my life?
+  - 
+
+** Read
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  nem nasb Luke 1-5
+#+END_SRC
+
+** Memorize
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matthew 5:1-2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:1-2
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+And seeing the multitudes, he went up into a
+mountain: and when he was set, his disciples
+came unto him: And he opened his mouth, and
+taught them, saying,
+
+(RLT)
+#+end_src

@@ -1,0 +1,34 @@
+
+
+EOD
+
+# text files
+
+cat draft.text <<EOD
+GLOSSARY OF EPIGRAPHY
+
+epigraphy
+    The study and interpretation of ancient
+    inscriptions.
+
+    The study of inscriptions, or epigraphs,
+    as writing; it is the science of
+    identifying graphemes, clarifying their
+    meanings, classifying their uses according
+    to dates and cultural contexts, and
+    drawing conclusions about the writing and
+    the writers.
+
+    Specifically excluded from epigraphy are
+    the historical significance of an epigraph
+    as a document and the artistic value of a
+    literary composition.
+
+    A person using the methods of epigraphy is
+    called an epigrapher or epigraphist.
+
+  codex
+
+  tractate
+
+  EOD

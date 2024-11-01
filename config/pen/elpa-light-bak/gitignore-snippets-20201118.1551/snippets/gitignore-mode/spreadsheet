@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Spreadsheet
+# contributor: Toptal & contributors
+# key: spreadsheet
+# --
+
+### Spreadsheet ###
+
+*.xlr
+*.xls
+*.xlsx

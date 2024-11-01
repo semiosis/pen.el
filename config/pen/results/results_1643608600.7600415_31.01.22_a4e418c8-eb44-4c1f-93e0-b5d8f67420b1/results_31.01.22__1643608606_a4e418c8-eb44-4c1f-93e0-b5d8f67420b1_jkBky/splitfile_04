@@ -1,0 +1,9 @@
+ en
+
+fav-font-size: 14
+
+fav-font: DejaVu Sans Mono
+
+# These variables affect display of non-libre
+# modes.
+fav-non-libre-font

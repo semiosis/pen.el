@@ -1,0 +1,14 @@
+
+Many programming languages have special types for null values, strings, booleans, integers, etc., but in Haskell, each type has to stand up to three requirements which are enforced by the type system.
+
+Haskell is a statically typed, functional programming language. There are three things that Haskell programs have to do before they can be compiled:
+
+Express all type information, including type variable information Declare the monadic side effects that the program is allowed to perform Allocate sufficient storage for all data that will be in use at runtime
+
+Haskell's type system is able to guarantee type safety by the use of its three type system features:
+
+The type system guarantees type safety. The type system can describe the shape of data. The type system can describe the shape of programs.
+
+The type system guarantees type safety.
+
+Types are used to guarantee type safety. Haskell has type inference, but also type annotations that can be used to specify the expected type of an expression.

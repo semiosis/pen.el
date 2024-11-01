@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: define-macro-function-wrapper
+# group: define
+# key: dk-fw
+# --
+(defmacro qtv (&rest args)
+"Function wrapper"
+`(tv ,@body))

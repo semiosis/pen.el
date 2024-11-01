@@ -1,0 +1,8 @@
+"async/go-loop" is a function that takes a channel and a function
+and starts a go-loop. The function will be called with the channel
+and a function that takes a channel and a function. The function
+will be called with the channel and a function that takes a channel
+and a function. The function will be called with the channel and a
+function that takes a channel and a function. The function will be
+called with the channel and a function that takes a channel and a
+function. The

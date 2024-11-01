@@ -1,0 +1,5 @@
+The above code is a recursive function that takes a project and returns a tree.
+It does this by taking the project and checking if it is a Project or a ProjectGroup.
+If it is a Project, it returns a Node with the name and id of the project.
+If it is a ProjectGroup, it returns a Node with the name of the group and a list of the
+trees of the projects in the group.

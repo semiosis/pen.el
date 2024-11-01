@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Metals
+# contributor: Toptal & contributors
+# key: metals
+# --
+
+### Metals ###
+
+.metals/
+.bloop/
+project/metals.sbt

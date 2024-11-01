@@ -1,0 +1,20 @@
+# Playbook for populate a Library with content from a sync source
+---
+- name: populate library
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    library_path: /tmp/library
+    library_name: test_library
+    library_description: test library
+    library_type: local
+    library_sync_type: sync
+    library_sync_destination: local
+    library_sync_destination_path: /tmp/library/sync
+    library_sync_destination_sync_type: sync
+    library_sync_destination_sync_destination: local
+    library_sync_destination_sync_destination_path: /tmp/library/sync/destination
+    library_sync_destination_sync_destination_sync_type: sync
+    library_sync_destination_sync_destination_sync_destination: local
+    library_sync_destination_sync_

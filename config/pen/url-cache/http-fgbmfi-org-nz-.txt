@@ -1,0 +1,136 @@
+HTTP/1.1 200 OK
+Date: Fri, 15 Dec 2023 03:09:49 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Cache-Control: public, max-age=0, must-revalidate
+ETag: W/"b23bd3d8482584a0822c0b962c347119"
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=reXdZ4zBjRz8cBN2iaVcLfeUyhcXdXSYen%2FhJuahSG4a7MD2hP4kiC9Cu6ga5pF8Jv%2FZ4df0UqEEf30jMT9T7iFz%2FKPvpBygmh8dGy0kjN2TCmvY2Xf%2FqAUtmb4O1gwuLsPIOK3sxdTL89RZ4coaoA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 835b7d718d86508b-AKL
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<html lang="en" data-whatinput="mouse" data-whatintent="mouse" class=" whatinput-types-initial whatinput-types-mouse">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Full Gospel Business Men's Fellowship International - New Zealand</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="/_style/css/site.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/_style/css/fgbmfi.86e3b3979aaa.css">
+    <script src="/_style/js/jquery.min.2f6b11a7e914.js"></script>
+    <script src="/_style/js/what-input.min.0df787e74c55.js"></script>
+    <script src="/_style/js/foundation.min.571dfb4f73c5.js"></script>
+    <script src="/_style/js/fgbmfi.64337c09929e.js"></script>
+    <meta class="foundation-mq">
+</head>
+<body>
+
+<header class="centered-navigation" role="banner">
+    <nav role="navigation">
+        <ul class="centered-navigation-menu">
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/events/">Events</a></li>
+            <li class="nav-link"><a href="/resources/">Resources</a></li>
+            <li class="nav-link logo">
+                <a href="/">
+                    <img src="/_style/images/logo.f531976fb96d.png" alt="Full Gospel Business Men&#39;s Fellowship International Logo">
+                </a>
+            </li>
+            <li class="nav-link"><a href="/stories/">Stories</a></li>
+            <li class="nav-link"><a href="/about/">About</a></li>
+            <li class="nav-link"><a href="/contact/">Contact</a></li>
+        </ul>
+        <a href="/" class="centered-navigation-mobile-logo">
+            <img src="/_style/images/logo.f531976fb96d.png" alt="Full Gospel Business Men&#39;s Fellowship International Logo">
+        </a>
+    </nav>
+</header>
+
+<section id="content">
+    
+    <div class="row">
+        <div class="large-12 columns">
+
+            <section class="section-header">
+                <header>
+                    <h1>Full Gospel Business Men's Fellowship International - New Zealand</h1>
+                </header>
+            </section>
+
+            <section class="section-body">
+                <div class="row">
+
+                    <section id="who-are-fgbmfi-video" class="medium-8 columns">
+                        <div class="responsive-embed">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uCwpp7rB7LE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </section>
+
+                    <section class="top-margin-when-stacked medium-4 columns">
+                        <p>Full Gospel Business Men's Fellowship International (New Zealand) has <a href="/about/#chapters">chapters</a> in cities and towns across New Zealand at which
+                            members share their experience of encountering the Lord Jesus Christ in their lives.</p>
+                        <p>The Fellowship is not a church and members come from a variety of Christian denominations.</p>
+                        <p>Our desire is to see men across New Zealand set free spiritually, filled with the power of God's Holy Spirit and empowered to witness for Jesus Christ.</p>
+                    </section>
+
+                </div>
+            </section>
+<!--
+            <section class="section-body">
+                <div class="row">
+                    <div class="large-6 small-12 columns">
+                        <h2>New Plymouth 2023 National Convention</h2>
+                        <p><a href="https://convention.fgbmfi.nz/">Convention registrations are open. Visit the convention website to register. https://convention.fgbmfi.nz/</a></p>
+                        <p><a href="https://convention.fgbmfi.nz/" class="button large">Visit The FGBMFI Convention Website</a></p>
+                    </div>
+                </div>
+            </section>
+-->
+
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer" role="contentinfo">
+    <div class="footer-logo">
+        <img src="/_style/images/logo.f531976fb96d.png" alt="Logo image">
+        <p>Full Gospel Business Men's Fellowship International - New Zealand</p>
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><h3>Content</h3></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/events/">Events</a></li>
+            <li><a href="/resources/">Resources</a></li>
+            <li><a href="/stories/">Stories</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <ul>
+            <li><h3>Follow Us</h3></li>
+            <li><a target="_blank" href="https://www.facebook.com/FgbmfiNz/">Facebook</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCUHMt1iaud3x5ql3CEyJhUg">YouTube</a></li>
+        </ul>
+        <ul>
+            <li><h3>Legal</h3></li>
+            <li><a href="/legal/">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <hr>
+    <p>His Banner Over Us Is Love</p>
+</footer>
+
+</body>
+</html>

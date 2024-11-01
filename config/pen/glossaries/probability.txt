@@ -1,0 +1,697 @@
+frequentism
+frequentist probability
+    An interpretation of probability; it
+    defines an event's probability as the
+    limit of its relative frequency in many
+    trials.
+    
+    Probabilities can be found by a repeatable
+    objective process.
+
+bayesian network
+    https://youtu.be/TuGDMj43ehw?t=409
+
+Probability identities
+    P(a | b) = P(a, b) / P(b)
+        Probability
+        a = weather is cloudy
+        b = season is Spring
+        a | b = cloudy given it is Spring
+        a, b = cloudy and is Spring
+
+    P(a, b) = P(a | b) P(b)
+
+Rule of sum
+    https://brilliant.org/wiki/probability-rule-of-sum/
+
+    See "Multi-valued variable".
+    
+Bayes' formula
+    P(b | a) = P(a | b) P(b) / P(a)
+
+    When reading these probability formulas
+    you can imagine that | means /.
+
+    That means it easy to work out without
+    imagining it.
+
+    In that case, I should also imagine , as
+    meaning *.
+
+    P(R, W, S, C) = P(R) P(C) P(W | C, R) P(S | W)
+        What is the probability that the
+        ground is wet(W) given someone was
+        washing their car(C) OR that it
+        rained(R).
+
+    If the , is on the right side of a |
+    though, then it's an OR which is additive.
+        But how is that calculated?
+        # Therefore acts to further divide (as
+        # if it's part of the divisor)? - No.
+
+        I think I'd need Generalized Rule of
+        Sum to calculate this.
+
+    The probability of two things
+    simultaneously would be their
+    probabilities multiplied together - this
+    makes sense.
+
+probability tree
+    https://youtu.be/TuGDMj43ehw?t=1259
+
+Noisy OR
+    The noisy OR is a generalization of the
+    logical OR.
+
+    Three assumptions:
+    - 1. All possible causes Ui for a event X
+      are listed (you can add a leak node)
+    - 2. Negated causes ¬Ui do not have any
+      influence on X
+    - 3. Independent failure probability qi
+      for each cause alone.
+
+    https://dtai.cs.kuleuven.be/problog/tutorial/basic/01_coins.html#noisy-or-multiple-rules-for-the-same-head
+
+statistical distribution
+distribution
+
+multimodal
+multimodal distribution
+    [#statistics]
+
+    See:
+    - unimodal
+    - bimodal
+
+unimodality
+unimodal
+unimodal distribution
+    [#statistics]
+
+    Means possessing a unique mode.
+    
+    More generally, unimodality means there is
+    only a single highest value, somehow
+    defined, of some mathematical object
+
+    (of a statistical distribution) having one
+    maximum.
+
+bimodal
+bimodal distribution
+    [#statistics]
+
+    A probability distribution with two
+    different modes, which may also be
+    referred to as a bimodal distribution.
+    
+    These appear as distinct peaks in the
+    probability density function,
+
+statistical parameter
+population parameter
+    A quantity entering into the probability
+    distribution of a statistic or a random
+    variable.
+
+    It can be regarded as a numerical
+    characteristic of a statistical population
+    or a statistical model.
+
+    Suppose that we have an indexed family of
+    distributions.
+
+    If the index is also a parameter of the
+    members of the family, then the family is
+    a parameterized family.
+
+    For example, the family of chi-squared
+    distributions can be indexed by the number
+    of degrees of freedom: the number of
+    degrees of freedom is a parameter for the
+    distributions, and so the family is
+    thereby parameterized.
+
+variate
+random variable
+variant
+stochastic variable
+chance variable
+    A variable quantity that is random.
+    
+    A random variable is a variable whose
+    value is unknown or a function that
+    assigns values to each of an experiment's
+    outcomes.
+    
+    A random variable can be either discrete
+    (having specific values) or continuous
+    (any value in a continuous range).
+
+discrete variable
+    A variable that can only take on a certain
+    number of values.
+
+    In other words, they don't have an
+    infinite number of values.
+
+    If you can count a set of items, then it's
+    a discrete variable.
+
+    The opposite of a discrete variable is a
+    continuous variable.
+
+probability distribution
+probability distribution function
+    A function of a discrete variable whose
+    integral over any interval is the
+    probability that the variate specified by
+    it will lie within that interval.
+
+probability density function
+probability distribution function
+    The probability distribution function is
+    defined for discrete random variables.
+
+    Probability density function is the
+    equivalent of the probability distribution
+    function for the continuous random
+    variables, gives the likelihood of a
+    certain random variable to assume a
+    certain value.
+
+prior
+prior probability of an event
+    The probability of the event computed
+    before the collection of new data.
+
+    For example, if 0.01 of a population has
+    schizophrenia then the probability that a
+    person drawn at random would have
+    schizophrenia is 0.01. This is the prior
+    probability.
+
+Maximum Liklihood [Estimation]
+MLE
+    The goal of maximum likelihood is to find
+    the optimal way to fit a distribution to
+    the data.
+
+    Could be trying to fit the Normal
+    distribution, for example.
+
+    Closely related to maximum entropy.
+
+Maximum a-posteriori [estimation]
+MAP
+    Works on the posterior distribution
+    instead of the likelihood like MLE.
+
+Standard inference
+
+MPE inference
+Most probable explanation
+Max propagation
+    Computes the most probable configuration
+    of variables that do not have evidence.
+
+    This is NOT just a problog acronym.
+
+MPE inference vs Standard inference
+    For MPE inference:
+        When variables are marginalized out
+        from distributions in order to compute
+        queries, instead of summing values,
+        the maximum is used.
+
+MAP inference
+    http://deepdive.stanford.edu/inference
+
+Marginal inference
+    The task of inferring the probability of
+    one variable taking a particular value.
+    Using the law of total probability, it is
+    straightforward to express this
+    probability as the sum of the
+    probabilities of possible worlds that
+    contain the requested value for that
+    variable.
+
+Factor Graph
+    [probabilistic graphical model]
+    [model]
+
+    A bipartite graph representing the
+    factorization of a probability
+    distribution function.
+
+    Can be used too perform probabilistic
+    inference.
+
+    Has two types of nodes:
+    - Variables
+      Can be either evidence variables when
+      their value is known, or query variables
+      when their value should be predicted.
+
+    - Factors
+      Defines the relationships between
+      variables in the graph. Each factor can
+      be connected to many variables and comes
+      with a factor function to define the
+      relationship between these variables.
+
+      For example, if a factor node is
+      connected to two variables nodes A and
+      B, a possible factor function could be
+      imply(A,B),
+      
+      meaning that if the random variable A
+      takes value 1, then so must the random
+      variable B.
+      
+      Each factor function has a weight
+      associated with it, which describes how
+      much influence the factor has on its
+      variables in relative terms.
+      
+      In other words, the weight encodes the
+      confidence we have in the relationship
+      expressed by the factor function.
+      
+      If the weight is high and positive, we
+      are very confident in the function that
+      the factor encodes; if the weight is
+      high and negative, we are confident that
+      the function is incorrect.
+      
+      The weight can be learned from training
+      data, or assigned manually.
+
+possible world [of a factor graph]
+    An assignment to every variable in a
+    factor graph.
+
+Markov Processes
+    NLG: A Markov process is a stochastic
+    process whose future state depends only on
+    its current state and not on the events
+    that occurred before it.
+
+stochastic process
+random process
+RP
+    A mathematical object usually defined as a
+    family of random variables.
+
+    Important Classes of Random Processes:
+    - IID
+    - Random Walk Process
+    - Markov Processes
+    - Independent Increment Processes
+    - Counting processes and Poisson Process
+
+    An infinite indexed collection of random
+    variables {X(t) : t ∈ T }, defined over a
+    common probability space.
+
+    Examples:
+    - Bernoulli trial
+    - Brownian motion
+
+independent and identically distributed
+iid
+    NLG: The assumption that the values of a
+    random variable are identically
+    distributed and the same for all values of
+    the random variable.
+
+Bernoulli process
+    One of the simplest stochastic processes.
+
+    A sequence of iid random variables, where
+    each random variable takes either the
+    value 1 with probability p, and value 0
+    with probability 1 - p.
+
+    This process can be likened to a coin
+    flip, where the probability of obtaining a
+    head is p and its value is 1, while the
+    value of a tail is 0.
+
+    In other words, a Bernoulli process is a
+    sequence of iid Bernoulli random
+    variables,where each coin flip is a
+    Bernoulli trial.
+
+Wiener motion
+Brownian motion
+    [stochastic process]
+
+    Widely considered the most studied and
+    central stochastic process in probability
+    theory.
+
+Pr(A)
+    Probability of event A occurring.
+
+C_n(A)
+    Number of occurrences of event A in n
+    trials.
+
+sample space
+    The set of possible values taken by the
+    random variable.
+
+    See "https://en.wikipedia.org/wiki/Probability_density_function"
+
+    The sample space S of a random process is
+    the set of all possible outcomes of that
+    process.
+
+    A model of 'all possible ways the world
+    can be'.
+
+    Formally, it's the space of all possible
+    values of the input and outputs to the
+    function.
+
+    Each of these defines one dimension of the
+    samples space.
+
+    Each possible combination is called a
+    sample point.
+
+    Can be:
+    - finite
+    - countably infinite
+    - uncountable
+
+    S={o_1, ..., o_j, ..., o_M}
+
+    The collection of all possible outcomes of
+    a random experiment.
+    
+    The elements of are called sample points.
+    
+    A sample space may be finite, countably
+    infinite or uncountable.
+    
+    A finite or countably infinite sample
+    space is called a discrete sample space.
+
+finite sample space
+    Example:
+        S = {H,T}
+
+infinite sample space
+
+event
+    A subset of the sample space.
+    
+sampling bias
+    Examples:
+    - Selection bias
+    - Under coverage bias
+
+random variable
+X
+
+probability and information
+    readsubs +/"we have a sample space a random variable" "https://www.youtube.com/watch?v=XUTk3pyHIxY"
+
+    You have
+
+    - sample space
+    - random variable associated with the
+      sample space
+    - a probability that the random variable
+      is some outcome (i.e. it occurs)
+
+joint probability and information
+    - sample space is doubly indexed
+    - p(x,y)
+      The probability that in a given trial, X
+      has value x and Y hase value y.
+    - we have marginal probabilities
+    - ca can calculate the joint information
+
+marginal distribution
+    [#probability theory]
+
+    The marginal distribution of a subset of a
+    collection of random variables is the
+    probability distribution of the variables
+    contained in the subset.
+    
+    It gives the probabilities of various
+    values of the variables in the subset
+    without reference to the values of the
+    other variables.
+
+    Lingo:
+    "marginal distribution over X"
+
+conditional distribution
+    A probability distribution for a sub-
+    population.
+    
+    In other words, it shows the probability
+    that a randomly selected item in a sub-
+    population has a characteristic you're
+    interested in.
+
+joint probability distribution
+bivariate distribution
+    Given random variables X,Y,..., that are
+    defined on a probability space, the joint
+    probability distribution for X,Y,... is a
+    probability distribution that gives the
+    probability that each of X,Y,... falls in
+    any particular range or discrete set of
+    values specified for that variable.
+
+    Gives the probability that each of X, Y
+    falls in any particular ranger or discrete
+    set of values specified.
+
+    In the case of 2 variables this is called
+    a bivariate distribution.
+
+joint information
+    The base two logarithm of the probability
+
+    How surprised we are by an 'x,y' event.
+
+    -log_2(p(x,y))
+
+information
+surprisal
+    Negative log base 2 of the probability
+
+expected information
+information-theoretic entropy
+entropy
+H
+    Measures the average amount of information
+    that you get when you learn the weather
+    each day, or more generally the average
+    amount of information that you get from
+    one sample drawn from a given probability
+    distribution p.
+    
+    It tells you how unpredictable that
+    probability distribution is.
+    
+    If you live in the middle of a desert
+    where it’s sunny every day, on average you
+    won’t get much information from the
+    weather station.
+    
+    The entropy will be close to zero.
+    
+    Conversely, if the weather varies a lot,
+    the entropy will be much larger.
+
+    Optimising codes:
+        For example, when we use a 2-bit
+        message for sunny weather, we’re
+        implicitly assuming that it will be
+        sunny every 4 days (2 to the power of
+        2), at least on average.
+
+        In other words, by using this code,
+        we’re implicitly predicting a
+        probability of 25% for sunny weather,
+        or else our code will not be optimal.
+
+        https://youtu.be/ErfnhcEV1O8?t=425
+
+joint entropy
+    <= to the sum of the entropies.
+
+joint self information
+    Sum of the informations.
+
+normal
+bell curve
+    [type of probability distribution]
+
+    The user simply defines the mean or
+    expected value and a standard deviation to
+    describe the variation about the mean.
+    Values in the middle near the mean are
+    most likely to occur. It is symmetric and
+    describes many natural phenomena such as
+    people's heights. Examples of variables
+    described by normal distributions include
+    inflation rates and energy prices.
+
+lognormal
+    [type of probability distribution]
+
+    Values are positively skewed, not
+    symmetric like a normal distribution. It
+    is used to represent values that don't go
+    below zero but have unlimited positive
+    potential. Examples of variables described
+    by lognormal distributions include real
+    estate property values, stock prices, and
+    oil reserves.
+
+uniform
+    [type of probability distribution]
+
+    All values have an equal chance of
+    occurring, and the user simply defines the
+    minimum and maximum. Examples of variables
+    that could be uniformly distributed
+    include manufacturing costs or future
+    sales revenues for a new product.
+
+triangular
+    [type of probability distribution]
+
+    The user defines the minimum, most likely,
+    and maximum values. Values around the most
+    likely are more likely to occur. Variables
+    that could be described by a triangular
+    distribution include past sales history
+    per unit of time and inventory levels.
+
+PERT
+    [type of probability distribution]
+
+    The user defines the minimum, most likely,
+    and maximum values, just like the
+    triangular distribution. Values around the
+    most likely are more likely to occur.
+    However values between the most likely and
+    extremes are more likely to occur than the
+    triangular; that is, the extremes are not
+    as emphasized. An example of the use of a
+    PERT distribution is to describe the
+    duration of a task in a project management
+    model.
+
+discrete
+    [type of probability distribution]
+
+    The user defines specific values that may
+    occur and the likelihood of each. An
+    example might be the results of a lawsuit:
+    20% chance of positive verdict, 30% change
+    of negative verdict, 40% chance of
+    settlement, and 10% chance of mistrial.
+
+Jensen Shannon Divergence
+JSD
+    [#probability theory]
+
+    A method of measuring the similarity
+    between two probability distributions.
+    
+    It is also known as information radius
+    (IRad) or total divergence to the
+    average.
+    
+    It is based on the Kullback–Leibler
+    divergence, with some notable (and useful)
+    differences, including that it is
+    symmetric and it always has a finite
+    value.
+    
+    The square root of the Jensen–Shannon
+    divergence is a metric often referred to
+    as Jensen-Shannon distance.c
+
+particle filter
+    [#bayesian filter]
+
+    An extension of Bayesian filter.
+
+bayesian filter
+    https://leimao.github.io/article/Introduction-to-Bayesian-Filter/
+
+    Estimate the distribution in a process
+    where there is incoming measurements.
+
+    Given a stream of observation data.
+    
+    The whole process with assumptions could
+    be described using a graph known as Hidden
+    Markov Model (HMM).
+    
+    Widely used in localization problems in
+    robotics.
+    
+    See "particle filter".
+
+maximum entropy
+The principle of maximum entropy
+    The probability distribution which best
+    represents the current state of knowledge
+    is the one with largest entropy, in the
+    context of precisely stated prior data
+    (such as a proposition that expresses
+    testable information).
+
+    Another way of stating this:
+        Take precisely stated prior data or
+        testable information about a
+        probability distribution function.
+        
+        Consider the set of all trial
+        probability distributions that would
+        encode the prior data.
+        
+        According to this principle, the
+        distribution with maximal information
+        entropy is the best choice.
+
+maxent
+maximum entropy modelling
+    Predicts species occurrences by finding
+    the distribution that is most spread out,
+    or closest to uniform, while taking into
+    account the limits of the environmental
+    variables of known locations.
+
+expectation
+expectation of a random variable
+    https://seeing-theory.brown.edu/basic-probability/index.html
+
+    A number that attempts to capture the
+    center of that random variable's
+    distribution.
+    
+    It can be interpreted as the long-run
+    average of many independent samples from
+    the given distribution.
+    
+    More precisely, it is defined as the
+    probability-weighted sum of all possible
+    values in the random variable's support,

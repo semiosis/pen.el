@@ -1,0 +1,3 @@
+cd /root/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "emacs"
+cd /root/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "emacs"
+cd /root/notes;  "ros" "roswell-internal-use" "version" "confdir" "#" "<==" "emacs"

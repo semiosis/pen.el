@@ -1,0 +1,10 @@
+"Clavier" is a command line interface for the pen drive.
+
+Usage:
+    clavier [options]
+
+Options:
+    -h --help     Show this screen.
+    --version     Show version.
+    --debug       Enable debug mode.
+    --path=<path> Set the path to the pen drive.

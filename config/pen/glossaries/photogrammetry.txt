@@ -1,0 +1,33 @@
+Photogrammetry
+    The art and science of extracting 3D
+    information from photographs.
+    
+    The process involves taking overlapping
+    photographs of an object, structure, or
+    space, and converting them into 2D or 3D
+    digital models.
+    
+    Photogrammetry is often used by surveyors,
+    architects, engineers, and contractors to
+    create topographic maps, meshes, point
+    clouds, or drawings based on the real-
+    world.
+
+Aerial photogrammetry
+    The rocess of utilizing aircrafts to
+    produce aerial photography that can be
+    turned into a 3D model or mapped
+    digitally.
+    
+    Now, it is possible to do the same work
+    with a drone.
+
+Terrestrial photogrammetry
+    When images are captured using a handheld
+    camera or with a camera mounted to a
+    tripod.
+    
+    The output of this method is not to create
+    topographic maps, but rather to make 3D
+    models of a smaller object.
+

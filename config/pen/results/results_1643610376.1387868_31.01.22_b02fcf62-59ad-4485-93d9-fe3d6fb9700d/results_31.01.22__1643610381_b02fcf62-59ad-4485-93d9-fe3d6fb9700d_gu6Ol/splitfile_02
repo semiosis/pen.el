@@ -1,0 +1,5 @@
+ sh-update completely.
+sh-update: on
+
+# log-format: defines the log format.
+log-format: " %a %b %I %l %u %t \" %r \" %>s %O

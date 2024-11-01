@@ -1,0 +1,7 @@
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=S5E_MqEqk-U" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=S5E_MqEqk-U" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons;  "wget" "-qO-" "https://www.youtube.com/watch?v=U7v13scZqN0" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=U7v13scZqN0&t=294" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=U7v13scZqN0&t=473" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://youtube.com/watch?v=xqgeT26BAnE&t=2734" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=ctSi4G74iGw" "#" "<==" "pen-ci"

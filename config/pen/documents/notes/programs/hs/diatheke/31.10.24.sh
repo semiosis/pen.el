@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 154" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 155" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 156" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 157" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 158" "#" "<==" "emacs"

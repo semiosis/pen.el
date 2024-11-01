@@ -1,0 +1,14 @@
+
+            (or (pen-var-value-maybe 'engine-max-stop-sequence-size)
+                ',engine-max-stop-sequence-size)))
+
+          (final-engine
+           (or (pen-var-value-maybe 'engine)
+               ',engine))
+
+          (final-search
+           (or (pen-var-value-maybe 'search)
+               ',search))
+
+          ;; These happen before the postprocessing
+          (

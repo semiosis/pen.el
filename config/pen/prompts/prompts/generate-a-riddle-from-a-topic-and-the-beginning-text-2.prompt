@@ -1,0 +1,62 @@
+task: '#("Generate a riddle from a topic and the beginning text" 0 52 (engine "OpenAI Davinci" language "English" topic "Comedy"))'
+doc: "Given a topic, come up with a list of related funny riddles"
+tags: fun prose
+prompt-version: 1
+issues:
+- Not funny
+prompt: |+
+  Here is a list of witty jokes:
+  <delim>
+  TOPIC: IRISH PUN
+  - What do you call a bulletproof Irishman? Rick O'Shea!
+  <delim>
+  TOPIC: PUN
+  - What do you call someone with no body and no nose? Nobody knows!
+  <delim>
+  TOPIC: COW MOVIES PUN
+  - What is a cow's favourite movie? Moo-lan
+  <delim>
+  TOPIC: FARMING PUN
+  - Why are there no unemployed farmers? They can get a job in any field.
+  <delim>
+  TOPIC: SPACE PUN
+  - Why do all kids want to be astronauts? Because there is no pressure.
+  <delim>
+  TOPIC: BATMAN CHURCH PUN
+  - What do you call it when Batman skips church? Christian Bale.
+  <delim>
+  TOPIC: <1> PUN
+  -<:pp> <2>
+prompt-filter: "sed -z 's/\\s\\+$//'"
+engine: "OpenAI Davinci"
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1.0
+cache: on
+best-of: 2
+stop-sequences:
+- "##"
+- "\n"
+vars:
+- topic
+- beinning
+examples:
+-
+  - tectonic plates
+  - What do you call
+-
+  - pun
+  - What do you call an alcoholic cat?
+preprocessors:
+- tr '[:lower:]' '[:upper:]'
+prefer-external: true
+var-defaults:
+- "(pen-thing-at-point-ask)"
+external-related:
+- "https://riddles.net/funny-riddles"
+n-test-runs: 10
+# 2x15 will generate 30 riddles
+n-collate: 2
+n-completions: 15
+postprocessor: sed 's/^ *//' | awk 1 | sed '/^[^a-zA-Z]/d'
+collation-separator: ''

@@ -1,0 +1,475 @@
+Content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+	<TITLE>The Open Hymnal Project - Freely Distributable Christian Hymnody for Today's World</TITLE>
+   <STYLE type="text/css"> h3 {margin-bottom: 0; padding-bottom: 0} </STYLE>
+   <script type="text/javascript">
+   <!--
+   // This javascript code is a bit of source code from an article 
+   // "Zebra Tables" by David S. Miller
+   // on "The A List Apart" website.  March 5, 2004.
+   //
+   // The copyright notice specifically says:
+   // Free source
+   // In its tutorials and articles, A List Apart gives away CSS styles, 
+   // JavaScript, PHP and Perl scripts, XHTML markup techniques, and other 
+   // bits of "source code" for the use of its readers. You may freely copy, 
+   // paste, and modify any of this code for use on your own web projects 
+   // large or small, commercial or non-commercial. You need not ask permission 
+   // to do so. You need not credit ALA or its authors. It is our gift to you.
+
+
+     // this function is needed to work around 
+     // a bug in IE related to element attributes
+     function hasClass(obj) {
+        var result = false;
+        if (obj.getAttributeNode("class") != null) {
+            result = obj.getAttributeNode("class").value;
+        }
+        return result;
+     }   
+
+    function stripe(id) {
+
+       // the flag we'll use to keep track of 
+       // whether the current row is odd or even
+       var even = false;
+
+       // if arguments are provided to specify the colours
+       // of the even & odd rows, then use the them;
+       // otherwise use the following defaults:
+       var evenColor = arguments[1] ? arguments[1] : "#CBC5B9";
+       var oddColor = arguments[2] ? arguments[2] : "#eee";
+
+       // obtain a reference to the desired table
+       // if no such table exists, abort
+       var table = document.getElementById(id);
+       if (! table) { return; }
+
+       // by definition, tables can have more than one tbody
+       // element, so we'll have to get the list of child
+       // &lt;tbody&gt;s 
+       var tbodies = table.getElementsByTagName("tbody");
+
+       // and iterate through them...
+       for (var h = 0; h < tbodies.length; h++) {
+
+        // find all the &lt;tr&gt; elements... 
+         var trs = tbodies[h].getElementsByTagName("tr");
+
+         // ... and iterate through them
+         for (var i = 0; i < trs.length; i++) {
+
+           // avoid rows that have a class attribute
+           // or backgroundColor style
+           if (! hasClass(trs[i]) &&
+               ! trs[i].style.backgroundColor) {
+
+             // get all the cells in this row...
+             var tds = trs[i].getElementsByTagName("td");
+
+             // and iterate through them...
+             for (var j = 0; j < tds.length; j++) {
+
+               var mytd = tds[j];
+
+               // avoid cells that have a class attribute
+               // or backgroundColor style
+               if (! hasClass(mytd) &&
+                   ! mytd.style.backgroundColor) {
+
+                 mytd.style.backgroundColor =
+                   even ? evenColor : oddColor;
+
+               }
+             }
+           }
+           // flip from odd to even, or vice-versa
+           even =  ! even;
+         }
+       }
+     }
+   // -->
+   </script>
+<style>
+p.menubar {padding-bottom:0cm;padding-top:0.1cm;padding-left:0cm;padding-right:0cm;margin:.05em 0 .05em 0;font-size:80%}
+</style>
+
+</HEAD>
+<script language="JavaScript">
+<!--//BEGIN Script
+
+function new_window(url) {
+
+link = window.open(url,"Link","location=0,directories=0,status=0,menubar=1,scrollbars=1,resizable=0,width=600,height=480,left=80,top=180");
+
+}
+//END Script-->
+</script>
+
+<BODY LANG="en-US" bgcolor="#CBC5B9" link="#0000a7" vlink="#800080" topmargin="0" leftmargin="0"  onload="stripe('playlist', '#e0dacd', '#CBC5B9');">
+<table style="width:100%" border="0" cellpadding="0" cellspacing="0"> 
+<tr>
+	<td align="center" valign="top" style="width:231px">
+   	<img src="bg-hires-trans-mini-2012.png" border="0" alt="Logo">
+	</td>
+	<td valign="center">
+      <table style="width:100% height:100%" border="0" cellpadding="0" cellspacing="0"> 
+      <tr>
+		   <td style="background-color:#6d8cab;width:6px"></td>
+      	<td style="background-color:#6d8cab;height:120px">
+   			<!-- <h1>&nbsp;&nbsp;&nbsp;&nbsp;The Open Hymnal Project</h1> -->
+         	<img src="logo.png" border="0" alt="The Open Hymnal Project">
+			</td>
+		   <td style="background-color:#6d8cab;width:6px"></td>
+      </tr>
+      <tr style="height:5px">
+      	<td ><img src="border-left-bottom.gif"></td>
+		   <td style="background-color:#6d8cab;width:100%"></td>
+      	<td ><img src="border-right-bottom.gif"></td>
+      </tr>
+      </table>
+	</td>
+</tr>
+<tr> <td style="padding: 5px 0px 0px 5px" valign="top">
+
+   <table cellpadding="0" cellspacing="0" border="0" width="221">
+   <tr>
+   <td rowspan="2"><img src="border-left-top.gif"></td>
+   <td width="209" height="2" bgcolor="#6d8cab"></td>
+   <td rowspan="2"><img src="border-right-top.gif"></td>
+   </tr><tr>
+   <td><center><b>Open Hymnal</b></center></td>
+   </tr><tr>
+   <td bgcolor="#6d8cab"></td>
+   <td bgcolor="#6d8cab">
+      	   <p class="menubar"><a href="index.html"><b>Home</b></a> </p>
+      	   <p class="menubar"><a href="editions.html"><b>Editions</b></a> </p>
+			<p class="menubar"><a href="genindex.html"><b>General Index</b></a> </p>
+ 			<p class="menubar"><a href="tune.html"><b>Alphabetical Tune Index</b></a> </p>
+ 			<p class="menubar"><a href="metrical.html"><b>Metrical Tune Index</b></a> </p>
+ 			<p class="menubar"><a href="people.html"><b>People Index</b></a> </p>
+			<p class="menubar"><a href="topicala.html"><b>Topical Index</b></a> </p>
+			<p class="menubar"><a href="scripref.html"><b>Scripture Reference Index</b></a> </p>
+            <p class="menubar"><a href="new.html"><b>New Hymns</b></a> </p>
+            <p class="menubar"><a href="alllyrics.html"><b>Lyrics Only For All Hymns</b></a> </p>
+            <p class="menubar"><a href="language.html"><b>KJV Language</b></a> </p>
+			<p class="menubar"><a href="links.html"><b>Links</b></a> </p>
+			<p class="menubar"><a href="about.html"><b>About</b></a> </p>
+			<p class="menubar"><a href="copying.html"><b>Copying</b></a> </p>
+			<p class="menubar"><a href="search.html"><b>Search</b></a> </p>
+			<p class="menubar"><a href="mobile-index.html"><b>Mobile Site</b></a> </p>
+   </td>
+   <td bgcolor="#6d8cab"></td>
+   </tr><tr>
+   <td><img src="border-left-bottom.gif"></td>
+   <td bgcolor="#6d8cab"></td>
+   <td><img src="border-right-bottom.gif"></td>
+   </tr>
+   </table>
+
+   <p></p>
+   
+   <table cellpadding="0" cellspacing="0" border="0" width="221">
+   <tr>
+   <td rowspan="2"><img src="border-left-top.gif"></td>
+   <td width="209" height="2" bgcolor="#6d8cab"></td>
+   <td rowspan="2"><img src="border-right-top.gif"></td>
+   </tr><tr>
+   <td><center><b>Downloads</b></center></td>
+   </tr><tr>
+   <td bgcolor="#6d8cab"></td>
+   <td bgcolor="#6d8cab">
+		   Here you will find downloadable scores, a zip file of audio files (MIDI)
+		   and a zip file of all source files (in <a href="http://abcplus.sourceforge.net/">ABC Plus</a> 
+		   format).  Note that a topical index is included in the pdf.<p></p>
+		   <a href="OpenHymnal2014.06.pdf" target="_parent">Scores as a single pdf (2014.06)</a> (8MB)<p>
+		   <a href="OpenHymnal2014.06.abc" target="_parent">Big, single ABC (source) file (2014.06)</a> (2MB)<p>
+		   <a href="OpenHymnal2014.06-gif.zip" target="_parent">All Scores as GIF files, zipped (2014.06)</a> (23MB)<p>
+		   <a href="OpenHymnal2014.06-midi.zip">All MIDI files as a zip (2014.06)</a> (336kB)<p>
+		   <a href="OpenHymnal2014.06-abc.zip">All ABC (source) files as a zip (2014.06)</a> (1MB)<p>
+         <hr>
+		   <a href="OpenHymnalChristmas2013.pdf" target="_parent">Christmas Edition 2013</a> (1.7M)<p>
+		   <a href="OpenHymnalChristmas2013.zip" target="_parent">MP3s for Christmas Edition</a> (70MB)<p>
+         <hr>
+		   <a href="OpenHymnalEaster2011.pdf" target="_parent">Lent/Easter Edition 2011</a> (1.1MB)<p>
+         <hr>
+		   <a href="OpenHymnalVisitation2011.pdf" target="_parent">Visitation Edition 2011</a> (1.1MB)<p>
+		   <a href="OpenHymnalVisitation2011-2up.pdf" target="_parent">2-up duplex printing Visitation Edition 2011</a> (1.1MB) (This should be printed on legal sized paper short-side duplex, stapled, folded, then sheared)<p>
+		   <a href="OpenHymnalVisitation2011.zip" target="_parent">MP3s for Visitation Edition</a> (58MB) (put these on a cell phone or MP3 player with a little speaker when you visit the sick)<p>
+         <hr>
+		   <a href="OpenHymnalChoral2013.pdf" target="_parent">Choral and Instrumental Edition 2013</a> (438kB)<p>
+         <hr>
+		   Sword Modules (2014.06): <p>
+		   <a href="OpenHymnal.201406.zip" target="_parent">Raw ZIP Module</a> (24MB)<p>
+		   <a href="openhymnal.201406.xml" target="_parent">ThML source</a> (2MB)<p>
+   </td>
+   <td bgcolor="#6d8cab"></td>
+   </tr><tr>
+   <td><img src="border-left-bottom.gif"></td>
+   <td bgcolor="#6d8cab"></td>
+   <td><img src="border-right-bottom.gif"></td>
+   </tr>
+   </table>
+
+</td><td valign="top">
+<div style="padding: 0px 0px 0px 0px">
+<!--  START ADD CORE HERE -->
+<h3>Home</h3>
+Welcome!  This web site is the home of
+the Open Hymnal Project to create a freely distributable, downloadable
+database of Christian hymns, spiritual songs, and prelude/postlude
+music.  I am doing my best to create a final product that is
+&quot;Hymnal-quality&quot;, and could feasibly be used as the basis
+for a printed church hymnal.  This music is to be distributed as
+complete scores (words and music), using all accompaniment parts, in
+formats that are easily accessible on most computer OS's and which
+can be freely modified by anyone. <p></p>
+&quot;<FONT COLOR="#a80000">Freely you received, so freely give.</FONT>&quot; - Matthew 10:8 (WEB)<p></p>
+
+<b>15 Mar 2017</b>
+Changed the setting for <a href="javascript:new_window('Lyrics/When_I_Survey_The_Wondrous_Cross-Rockingham_Old.html')">When I Survey the Wondrous Cross</a>, due to a concerned raised about its sourcing.<p></p>
+
+
+<b>30 Nov 2015</b>
+Added three new hymns, <a href="javascript:new_window('Lyrics/He_Keeps_Me_Singing-He_Keeps_Me_Singing-Melody_of_Love.html')">He Keeps Me Singing</a>,
+<a href="javascript:new_window('Lyrics/Jesus_Is_All_The_World_to_Me-Jesus_Is_All_The_World_to_Me.html')">Jesus Is All the World To Me</a>,
+and <a href="javascript:new_window('Lyrics/Rescue_the_Perishing-Rescue_the_Perishing.html')">Rescue the Perishing</a>.<p></p>
+
+<b>27 Sep 2015</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Moment_By_Moment-Whittle.html')">Moment By Moment</a>.<p></p>
+
+<b>13 Jan 2015</b>
+Added a new hymn by modern hymnwriter Rev'd Can. Bola Omodun. Ilori, <a href="javascript:new_window('Lyrics/Ascribe_To_The_Lord_Honor-Iyin_Oluwa.html')">Ascribe To the Lord Honor</a>.
+It is based on Psalm 29.<p></p>
+
+<b>09 Nov 2014</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/A_Child_of_The_King-Binghamton.html')">A Child of The King</a>, contributed by Tobin Strong.<p></p>
+
+<b>10 Aug 2014</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Lord_Of_Our_Life-Iste_Confessor-Rouen.html')">Lord Of Our Life</a>.<p></p>
+
+<b>01 Aug 2014</b>
+Please pray for our brothers and sisters in Christ who are persecuted around the world for the faith.  Especially, now, pray for those in Syria and Iraq who are under tremendous levels of persecution.  Suggestions from the Open Hymnal for prayer services include:
+<ul>
+<li><a href="javascript:new_window('Lyrics/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Isorhythmic.html')">A Mighty Fortress Is Our God</a></li>
+<li><a href="javascript:new_window('Lyrics/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Rhythmic.html')">A Mighty Fortress Is Our God</a></li>
+<li><a href="javascript:new_window('Lyrics/Behold_A_Host_Arrayed_In_White-Den_Store_Hvide_Flok-Great_White_Host.html')">Behold, A Host, Arrayed in White</a></li>
+<li><a href="javascript:new_window('Lyrics/Beneath_The_Cross_Of_Jesus-St_Christopher.html')">Beneath The Cross Of Jesus</a></li>
+<li><a href="javascript:new_window('Lyrics/Blest_Be_The_Tie_That_Binds-Boylston.html')">Blest Be The Tie That Binds</a></li>
+<li><a href="javascript:new_window('Lyrics/Built_On_The_Rock-Kirken_Den_Er_Et_Gammelt_Hus.html')">Built on the Rock</a></li>
+<li><a href="javascript:new_window('Lyrics/Faith_Of_Our_Fathers-St_Catherine.html')">Faith of Our Fathers</a></li>
+<li><a href="javascript:new_window('Lyrics/Fear_Not_O_Little_Flock-Kommt_her_zu_mir_spricht_Gottes_Sohn.html')">Fear Not, O Little Flock</a></li>
+<li><a href="javascript:new_window('Lyrics/For_All_The_Saints-Sine_Nomine.html')">For All The Saints</a></li>
+<li><a href="javascript:new_window('Lyrics/God_The_Father_Be_Our_Stay-Gott_Der_Vater_Wohn_uns_bei.html')">God the Father Be Our Stay</a></li>
+<li><a href="javascript:new_window('Lyrics/How_Firm_A_Foundation-Foundation-Protection.html')">How Firm A Foundation</a></li>
+<li><a href="javascript:new_window('Lyrics/Im_But_A_Stranger_Here-St_Edmund_Sullivan.html')">I'm But A Stranger Here</a></li>
+<li><a href="javascript:new_window('Lyrics/In_These_Our_Days_So_Perilous-Verleih_uns_Frieden_Gnaediglich.html')">In These Our Days So Perilous</a></li>
+<li><a href="javascript:new_window('Lyrics/Lord_Keep_Us_Steadfast_In_Thy_Word-Erhalt_Uns_Herr_bei_Deinem_Wort.html')">Lord, Keep Us Steadfast in Thy Word</a></li>
+<li><a href="javascript:new_window('Lyrics/Our_God_Our_Help_In_Ages_Past-St_Anne.html')">Our God, Our Help In Ages Past</a></li>
+<li><a href="javascript:new_window('Lyrics/Through_The_Night_of_Doubt_and_Sorrow-Rex_Gloriae.html')">Through the Night of Doubt and Sorrow</a></li>
+</ul><p></p>
+Some good articles may be found <a href="http://www.lcms.org/president/persecution">here</a>.<p></p>
+   <table cellpadding="0" cellspacing="0" border="0">
+   <tr>
+   <td width ="50"></td>
+   <td>"The cross is widely recognized as the major symbol of Christian faith. In its original context, there was nothing noble about it: It served as a frightening reminder of the shameful execution reserved for the worst of criminals and enemies of the state. There is something profound about it being a special sign with which we as Christians have been marked at our Baptism. It does mark the shape of our Christian life. What is it? “Indeed all who desire to live a godly life in Christ Jesus will be persecuted” (2 Tim. 3:12). All. No exceptions. Persecution for the faith is not something that should catch any baptized off guard: It is inherent in the very nature of Christian faith." -- Pr. Alexey Streltsov</td>
+   </tr></table><p></p>
+
+<b>07 Jul 2014</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/My_Saviors_Love-My_Saviors_Love-I_Stand_Amazed_in_the_Presence.html')">My Savior's Love</a>, contributed by Tobin Strong.  Thanks!<p></p>
+
+<b>22 Jun 2014</b>
+Updated large pdf version of the hymnal.<p></p>
+
+<b>08 Jun 2014</b>
+After a bit of an absence, added a new hymn, <a href="javascript:new_window('Lyrics/Of_The_Fathers_Love_Begotten-Divinum_Mysterium-Corde_Natus.html')">Of The Father's Love Begotten</a>.<p></p>
+
+<b>23 Mar 2014</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Praise_The_Lord_Ye_Heavens_Adore_Him-Austria_Haydn-Austrian_Hymn.html')">Praise The Lord, Ye Heavens Adore Him</a>.<p></p>
+
+<b>10 Mar 2014</b>
+Added two new hymns, <a href="javascript:new_window('Lyrics/Glorious_Things_of_Thee_Are_Spoken-Austria_Haydn-Austrian_Hymn.html')">Glorious Things of Thee are Spoken</a> (contributed by Tobin Strong) 
+and <a href="javascript:new_window('Lyrics/None_Other_Lamb-Rossetti.html')">None Other Lamb</a>.<p></p>
+
+<b>16 Feb 2014</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Hark_Hark_My_Soul-Finlandia.html')">Hark, Hark, My Soul!</a> with a new lyrical arrangement by Mike Hosken.  Thanks, Mike!<p></p>
+
+<b>26 Jan 2014</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/My_Soul_Now_Praise_Thy_Maker-Non_Lob_Mein_Seel.html')">My Soul, Now Praise Thy Maker</a>.<p></p>
+
+<b>12 Jan 2014</b>
+Added the last arrangement of 
+<a href="javascript:new_window('Lyrics/When_I_Survey_The_Wondrous_Cross-O_Waly_Waly.html')">When I Survey the Wondrous Cross</a>
+by Tobin Strong.  Also added two new hymns, 
+<a href="javascript:new_window('Lyrics/I_Sing_The_Mighty_Power_Of_God-Ellacombe.html')">I Sing the Mighty Power of God</a> and 
+<a href="javascript:new_window('Lyrics/The_Love_Of_God-The_Love_Of_God.html')">The Love of God</a>.  All of these are contributions by Tobin Strong.  Thanks!<p></p>
+
+<b>05 Jan 2014</b>
+Added two new arrangements of "When I Survey the Wondrous Cross" contributed by Tobin Strong.  One more arrangement is still to come.  They can be found here:
+<a href="javascript:new_window('Lyrics/When_I_Survey_The_Wondrous_Cross-Duke_Street.html')">When I Survey the Wondrous Cross</a>
+and <a href="javascript:new_window('Lyrics/When_I_Survey_The_Wondrous_Cross-Hamburg.html')">When I Survey the Wondrous Cross</a>.  Thanks, Tobin!<p></p>
+
+<b>06 Dec 2013</b>
+Updated the Christmas Edition for 2013.<p></p>
+
+<b>05 Dec 2013</b>
+Added two new hymns, <a href="javascript:new_window('Lyrics/Lift_Up_Your_Heads_Ye_Mighty_Gates-Milwaukee-Macht_Hoch_die_Tuer_Lemke.html')">Lift Up Your Heads, Ye Mighty Gates</a> 
+and <a href="javascript:new_window('Lyrics/All_My_Heart_This_Night_Rejoices-Ebeling-Bonn-Warum_Sollt_Ich-All_My_Heart_This_Night.html')">All My Heart This Night Rejoices</a>.<p></p>
+
+<b>12 Nov 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Twas_In_The_Moon_Of_Wintertime-Huron_Carol-Jesous_Ahatonhia-Une_Jeune_Pucelle.html')">Twas In The Moon of Wintertime</a>.<p></p>
+
+<b>06 Nov 2013</b>
+Fixed numerous spelling errors and added the "<a href="alllyrics.html">All Lyrics</a>" page.<p></p>
+
+<b>13 Oct 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Jesus_Sinners_Doth_Receive-Meinen_Jesum_Lass_ich_Nicht_Darmstadt.html')">Jesus Sinners Doth Receive</a>.<p></p>
+
+<b>20 Sep 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Come_Ye_Disconsolate-Consolator_Webbe.html')">Come, Ye Disconsolate</a>.<p></p>
+
+<b>27 Aug 2013</b>
+The site is being updated to output UTF-8 web pages.  Also added a web page for the metrical index (which used to only exist in the printed version).<p></p>
+
+<b>26 Aug 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/From_Nazareth-Puer_Nobis_Nascitur.html')">From Nazareth</a>.<p></p>
+
+<b>14 Jul 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/The_Winds_And_Billows_Loudly_Roar-Consolation-Morning_Song.html')">The Winds and Billows Loudly Roar</a>.<p></p>
+
+<b>17 Jun 2013</b>
+The individual hymn pages now have a built-in audio player.  The direct download links are still there, and it still does NOT auto-play.  <p></p>
+
+<b>02 Jun 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/We_Know_Thee_Who_Thou_Art-Sellinge.html')">We Know Thee Who Thou Art</a>.<p></p>
+
+<b>29 May 2013</b>
+Added a new modern hymn by Anthony Robertson, <a href="javascript:new_window('Lyrics/O_Lord_My_God_I_Thirst_For_You-Kingsfold.html')">O Lord, My God, I Thirst For You</a>.<p></p>
+
+<b>23 May 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/The_Lily_of_the_Valley-Salvation-The_Lily_of_the_Valley.html')">The Lily of the Valley</a>.<p></p>
+
+<b>13 May 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/To_Avert_from_Men_Gods_Wrath-Gethsemane-Petra.html')">To Avert From Men God's Wrath</a>.<p></p>
+
+<b>06 May 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/To_God_Be_the_Glory-To_God_Be_the_Glory.html')">To God Be The Glory</a>.<p></p>
+
+<b>02 Apr 2013</b>
+We're on the new server now.  If you have any problems, let us know!<p></p>
+
+<b>31 Mar 2013</b>
+Happy Easter!  Christ is Risen!  He Is Risen Indeed!  Alleluia!<p></p>
+
+Some may have noticed that the site has been up and down for a few days: some server issues have caused a bit of grief.  The crew is working on it and we appreciate their efforts.<p></p>
+
+Added a new hymn, <a href="javascript:new_window('Lyrics/Lord_of_Life_All_Praise_Excelling-Hyfrydol.html')">Lord of Life, All Praise Excelling</a>.<p></p>
+
+<b>18 Mar 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Rejoice_O_Pilgrim_Throng-Marion.html')">Rejoice, O Pilgrim Throng</a>.<p></p>
+
+<b>17 Mar 2013</b>
+Added two new hymns, <a href="javascript:new_window('Lyrics/Were_You_There-Were_You_There.html')">Were You There?</a>
+and <a href="javascript:new_window('Lyrics/Within_The_Fathers_House-Franconia.html')">Within the Father's House</a>.<p></p>
+
+<b>10 Mar 2013</b>
+Added two new hymns, <a href="javascript:new_window('Lyrics/The_Lords_My_Shepherd-Marosa-Brother_James_Air.html')">The Lord's My Shepherd</a>
+and a second translation of <a href="javascript:new_window('Lyrics/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Isorhythmic.html')">A Mighty Fortress Is Our God</a>, using the isorhythmic version of the tune.<p></p>
+
+<b>10 Feb 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Every_Morning_Mercies_New-Kelso.html')">Every Morning Mercies New</a>.<p></p>
+
+<b>05 Feb 2013</b>
+Multiple changes today.  I've added the "Choral Edition" and also the "Editions" web page to guide you through the various available editions of the Open Hymnal.
+Also fixed a bug in the presentation of one hymn and in the general index for another.<p></p>
+
+<b>14 Jan 2013</b>
+Added a new (modern) hymn, <a href="javascript:new_window('Lyrics/Yet_Before_We_See_Your_Plans-Holy_Manna.html')">Yet Before We See Your Plans</a>.  Special thanks go to Greg Paul and to Pastor Todd Liefer for helping to make it happen!<p></p>
+
+<b>11 Jan 2013</b>
+Added a new logo, seen in the upper left of the web page.  It's supposed to indicate that what you should see when you look inside the Open Hymnal is Christ's work for you.<p></p>
+
+<b>07 Jan 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Abide_O_Dearest_Jesus-Christus_Der_Ist_Mein_Leben.html')">Abide, O Dearest Jesus</a>.<p></p>
+
+<b>02 Jan 2013</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/On_What_Has_Now_Been_Sown-Darwalls_148th.html')">On What Has Now Been Sown</a>.<p></p>
+
+<b>31 Dec 2012</b>
+I've been planning out the work for 2013, and the Open Hymnal will see some changes.  Firstly, it has grown sufficiently that the choral and instrumental pieces will be moved to a separate edition of the Open Hymnal.  Then, an effort will be made to round it out for actual congregational use.  I will be looking at whether there are the right numbers of the right types of hymns to cover an entire Church Year.  The Open Hymnal will be compared against a handful of common lectionaries to make sure that sermon hymns will be available for each week (probably assuming that the sermon will be from the Gospel lesson of the day).  Lastly, I will look at whether the Open Hymnal has sufficient hymns appropriate for mid-week congregational gatherings (weddings, funerals, Ash Wednesday services, Ascension day services, special memorial and prayer services, mid-week Lenten and Advent services, etc.).  Pray for guidance in 2013!<p></p>
+
+<b>25 Dec 2012</b>
+&ldquo;Glory to God in the highest,
+on earth peace, good will toward men.&rdquo;  This Christmas day, may you have real peace ... true peace ...
+heavenly peace.  The peace that can only be brought by Immanuel ... God with us.<p></p>
+
+<b>12 Dec 2012</b>
+Added two hymns, <a href="javascript:new_window('Lyrics/God_Himself_Is_Present-Wunderbarer_Konig-Arnsberg-Groeningen.html')">God Himself is Present</a>
+and <a href="javascript:new_window('Lyrics/O_Holy_Spirit_Enter_In-Wie_Schon_Leuchtet.html')">O Holy Spirit, Enter In</a>.<p></p>
+
+<b>14 Nov 2012</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/O_Father_All_Creating-Aurelia.html')">O Father, All Creating</a>.<p></p>
+
+<b>22 Oct 2012</b>
+I've updated the Christmas Edition for 2012.<p></p>
+
+<b>14 Oct 2012</b>
+I've updated the large PDF hymnal, making version 2012.10.  Enjoy!<p></p>
+
+<b>11 Oct 2012</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/Lamp_of_Our_Feet-St_Agnes.html')">Lamp of Our Feet</a>.<p></p>
+
+<b>30 Sep 2012</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/One_Things_Needful-Eins_Ist_Not.html')">One Thing's Needful</a>.<p></p>
+
+<b>06 Aug 2012</b>
+Added a new hymn, <a href="javascript:new_window('Lyrics/God_Will_Take_Care_Of_You-Martin.html')">God Will Take Care of You</a>.<p></p>
+
+<b>28 Jul 2012</b>
+Added two hymns, <a href="javascript:new_window('Lyrics/Blessed_Jesus_At_Thy_Word-Liebster_Jesu_wir_Sind_Hier.html')">Blessed Jesus at Thy Word</a>
+and <a href="javascript:new_window('Lyrics/O_Holy_Blessed_Trinity-O_Heilige_Dreifaltigkeit-Steht_Auf_Ihr_Lieben_Kinderlein.html')">O Holy, Blessed Trinity</a>.<p></p>
+
+<b>02 Jul 2012</b>
+Added a modern hymn by Anthony Robertson <a href="javascript:new_window('Lyrics/The_Apostle_Looked_And_Heard_A_Voice-London-Addisons.html')">The Apostle Looked and Heard a Voice</a>.  Check it out!  Thanks Tony!<p></p>
+
+<b>04 Jun 2012</b>
+Added the hymn <a href="javascript:new_window('Lyrics/Blind_Bartimaeus-Fillmore.html')">Blind Bartimaeus</a><p></p>
+
+<b>16 Apr 2012</b>
+Small fix to the lyrics of 'O For a Thousand Tongues'.  We love bug reports!<p></p>
+
+<b>06 Mar 2012</b>
+Added two new hymns.  The first is a nearly-lost gem, <a href="javascript:new_window('Lyrics/The_Galilean_Fishers_Toil-Old_137th.html')">The Galilean Fishers Toil</a>.  Thanks to the folks at 
+<a href="http://www.finestofthewheat.org/FOTW/FOTWPoetry.php">Finest Of The Wheat</a> for digging up this one!
+The other is a classic and uses two tunes: <a href="javascript:new_window('Lyrics/Blest_Be_The_Tie_That_Binds-Boylston.html')">Blest Be The Tie That Binds (Boylston)</a>
+and <a href="javascript:new_window('Lyrics/Blest_Be_The_Tie_That_Binds-Dennis.html')">Blest Be The Tie That Binds (Dennis)</a>.<p></p>
+
+<b>05 Mar 2012</b>
+Added two new hymns, <a href="javascript:new_window('Lyrics/I_Need_Thee_Every_Hour-I_Need_Thee_Every_Hour.html')">I Need Thee Every Hour</a>
+and <a href="javascript:new_window('Lyrics/No_Not_One-No_Not_One.html')">No, Not One!</a>, both contributed by Samuel Cantrell - thanks!<p></p>
+
+<b>19 Feb 2012</b>
+Added three new hymns, <a href="javascript:new_window('Lyrics/Where_He_Leads_Me-Where_He_Leads_Me.html')">Where He Leads Me</a>
+and <a href="javascript:new_window('Lyrics/More_Love_To_Thee-More_Love_To_Thee.html')">More Love to Thee</a>
+and <a href="javascript:new_window('Lyrics/Whiter_Than_Snow-Whiter_Than_Snow.html')">Whiter Than Snow</a>, which were contributed by Samuel Cantrell - thanks!<p></p>
+
+<b>11 Feb 2012</b>
+Added two new hymns, <a href="javascript:new_window('Lyrics/Not_Worthy_Lord_To_Gather_Up_The_Crumbs-Eventide.html')">Not Worthy, Lord, to Gather Up the Crumbs</a>
+and <a href="javascript:new_window('Lyrics/The_Comforter_Has_Come-The_Comforter_Has_Come.html')">The Comforter Has Come</a>, which was contributed by Samuel Cantrell - thanks!<p></p>
+
+
+ 
+<p></p>
+<center><a href="archive.html">Very Old News</a></center>
+
+<!--  END ADD CORE HERE -->
+</div>
+</td></tr></table>
+<hr width=590 size=2><br>
+<i>Last modified: 18 Mar 2017</i> <br>
+</BODY>
+</HTML>

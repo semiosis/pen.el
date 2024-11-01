@@ -1,0 +1,8 @@
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Matthew" "6:9-15" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Matthew" "18" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Matthew" "18:21-35" "#" "<==" "in-pen"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Lev.19:18" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 109" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 109" "#" "<==" "emacs"
+cd /;  "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Lev.19:18" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "NASB" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"

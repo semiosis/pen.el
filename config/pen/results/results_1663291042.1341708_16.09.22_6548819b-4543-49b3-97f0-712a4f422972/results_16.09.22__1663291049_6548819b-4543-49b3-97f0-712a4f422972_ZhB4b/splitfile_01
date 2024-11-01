@@ -1,0 +1,3 @@
+ 
+(define-derived-mode erb-mode fundamental-mode "erb"
+)

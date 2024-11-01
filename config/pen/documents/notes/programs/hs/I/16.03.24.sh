@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Kings‬" "‭15‬:‭5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Kings" "15:5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Peter‬" "‭4‬:‭1‬-‭2‬" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Peter" "4:1-2" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Samuel" "15" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Samuel" "15:22-23" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Corinthians" "4:6-16" "#" "<==" "zsh"

@@ -1,0 +1,8 @@
+"kern.log" is the kernel log file. It is a text file that contains a log of all
+kernel events that have occurred since the system booted. It is a very important
+file for debugging system issues.
+
+The "kern.log" file is located in the "/var/log" directory.
+
+The "kern.log" file is a single file that is not rotated.
+

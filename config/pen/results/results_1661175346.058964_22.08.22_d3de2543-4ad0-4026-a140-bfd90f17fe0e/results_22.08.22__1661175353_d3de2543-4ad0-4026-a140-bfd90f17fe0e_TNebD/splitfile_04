@@ -1,0 +1,11 @@
+"RandomizedList" is a data structure that supports the following operations:
+
+- Insert: inserts an element into the list.
+- Remove: removes an element from the list.
+- GetRandom: returns a random element from the list.
+- GetRandom: returns a random element from the list.
+
+The idea is to use a hash table to store the elements and a linked list to
+maintain the order of the elements.
+
+The hash table is implemented using the built-in dictionary in

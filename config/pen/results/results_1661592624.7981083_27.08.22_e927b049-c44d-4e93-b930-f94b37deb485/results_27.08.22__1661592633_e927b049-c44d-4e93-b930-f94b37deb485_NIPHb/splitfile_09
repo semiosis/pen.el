@@ -1,0 +1,9 @@
+ a list of records, one for each line in the CSV file.
+  records' <- map (fromRecord . fmap (\m -> m {-caret-})) maps
+
+  -- Convert the list of records into a list of lines.
+  lines' <- map (T.pack . T.intersperse ", ") records'
+
+  -- Write the lines to stdout.
+  putStrLn $ T.concat lines'
+EOD

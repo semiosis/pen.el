@@ -1,0 +1,460 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 23 Oct 2023 04:22:12 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-legacytest: 0
+vary: Accept-Encoding, x-legacytest
+X-Proxy-Cache: HIT
+
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    const savedTheme = localStorage.getItem("theme")
+    if (savedTheme) {
+        document.documentElement.classList.add(savedTheme) // "light" | "dark" class added to <html> tag
+    }
+</script>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='preload' as='style' href="/dist/show.details.css?v=RmFHHQdwIVx-6tbFI1L1GtuUJXh5Vnc4BECiP48qFPY" />
+        <link rel="stylesheet" href="/dist/show.details.css?v=RmFHHQdwIVx-6tbFI1L1GtuUJXh5Vnc4BECiP48qFPY" />
+    
+
+
+
+<title>A Leader—From the Knees Up!, Part 1 - Listen to Insight for Living with Chuck Swindoll, Oct 16, 2023</title>
+<meta name="description" content="Listen to Insight for Living daily radio broadcasts with Chuck Swindoll sermons free online. Your favorite Chuck Swindoll messages, ministry radio programs, podcasts and more!">
+
+    <meta property="og:type" content="article" />
+
+    <meta property="og:title" content="A Leader&#x2014;From the Knees Up!, Part 1 | Insight for Living with Chuck Swindoll" />
+    <meta property="og:description" content="Listen to Insight for Living daily radio broadcasts with Chuck Swindoll sermons free online. Your favorite Chuck Swindoll messages, ministry radio programs, podcasts and more!" />
+    <meta property="og:image" content="https://content.swncdn.com/zcast/oneplace/host-images/insight-for-living/640x480.jpg?v=190710-030" />
+    <meta property="og:url" content="https://www.oneplace.com/ministries/insight-for-living/listen/a-leaderfrom-the-knees-up-part-1-1128564.html"/>
+    <meta property="og:site_name" content="Oneplace.com" />
+
+<meta property="fb:admins" content="696121494" />
+<meta property="fb:app_id" content="178251615543460" />
+<meta property="fb:pages" content="92524602964"/>
+        <link href="https://i.swncdn.com/cdn/640w/zcast/oneplace/host-images/insight-for-living/640x480.webp?v=190710-030" rel="preload" as="image" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png">
+
+<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png">
+
+<link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+
+<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="~/img/favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="~/img/favicon/browserconfig.xml">
+
+
+    
+    
+    <meta name="robots" content="max-image-preview:large" />
+</head>
+<body class="">
+    <div class="headerAndNav">
+        <div class="container">
+            <header class="d-flex">
+                <menu-mobile class="tabletAndSmaller"></menu-mobile>
+                <a href="/" class="logo light-ib"><img src="/img/logo.svg" width="170" height="62" /></a>
+                <a href="/" class="logo dark-ib"><img src="/img/logo-fff.svg" width="170" height="62" /></a>
+                <search-box></search-box>
+                <div class="ml-auto d-flex ai-c">
+                    <login-button class="nm nt"></login-button>
+                    <div data-search-box-trigger class="ml-auto tabletAndSmaller searchBoxTrigger"></div>
+                    <theme-switcher class="ml-25 ml-15_m"></theme-switcher>
+                </div>
+            </header>
+            <nav class="d-flex nm">
+                <a class="highlight" href="/ministries/">All Ministries</a>
+                <a data- href="/ministries/recently-added/">Recently Added</a>
+                <a href="/christian-radio/">Live Radio</a>
+                <a href="http://www.elsitiocristiano.com/">Español</a>
+                <a id="siteMoreDropdown" href="javascript:;" onclick="return false">More...</a>
+                <z-dropdown trigger-id="siteMoreDropdown" alignment="left">
+                    <a href="/bible-study/">Bible Study</a>
+                    <a href="/devotionals/">Devotionals</a>
+                    <a href="/newsletters/">Newsletters</a>
+                    <a href="/mobile-app">Apps</a>
+                    <a href="/podcasts">Podcasts</a>
+                    <a href="/verse-of-the-day">Verse of the Day</a>
+                </z-dropdown>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="ad ad728 nm">
+                    <a href="https://www.oneplace.com/ministries/insight-for-living/adclick-2.html?stoid=12096" target="_blank"  rel="nofollow" data-update-ad-click-category-id>
+                    <img class="showBanner" style="display: none;" loading="lazy" src="https://i.swncdn.com/cdn/90h/zcast/oneplace/banners/insight-for-living/oneplace-banner-chucks-sermonsnew.webp" data-fb-src="https://content.swncdn.com/zcast/oneplace/banners/insight-for-living/oneplace-banner-chucks-sermonsnew.jpg" width="729" height="90"/>
+                    </a>
+            </div>
+            
+
+<z-takeover sosid="82" st="Insight for Living" ss="insight-for-living" target-type="show"></z-takeover>
+
+<section class="showHeader">
+    <a href="https://www.oneplace.com/ministries/insight-for-living/" class="nm">
+        <img src="https://i.swncdn.com/cdn/512w/zcast/oneplace/host-images/insight-for-living/512x512.webp?v=190710-687" width="80" height="80" data-fb-src="https://content.swncdn.com/zcast/oneplace/host-images/insight-for-living/512x512.jpg?v=190710-687" />
+    </a>
+    <div>
+        <h1><a href="https://www.oneplace.com/ministries/insight-for-living/">Insight for Living</a></h1>
+        <h2><a href="https://www.oneplace.com/ministries/insight-for-living/">Chuck Swindoll</a></h2>
+    </div>
+    <div class="ml-auto actions">
+<div><follow-button s="insight-for-living" t="Insight for Living"></follow-button></div><div><a target="_blank" href="https://www.oneplace.com/r?sid=82&amp;acid=1" class="btn ga4-donate-click-event" data-update-acid>Donate</a></div>    </div>
+</section>
+<div id="countdownForMobile" class="pi-c py-10" style="display:none;"></div>
+<nav class="show">
+    <a href="https://www.oneplace.com/ministries/insight-for-living/" class="active">Listen</a>
+
+        <a href="https://www.oneplace.com/ministries/insight-for-living/listen/" class="">Archives</a>
+
+        <click-follow-guard s="insight-for-living" t="Insight for Living" id="goToPodcastPageTabLink" action="podcast" in-order-to="see this podcast">
+            <a href="https://www.oneplace.com/ministries/insight-for-living/subscribe/" class="">Podcast</a>
+        </click-follow-guard>
+<a class="nm" href="https://www.lightsource.com/ministry/video-insights/" target="_blank" rel="noopener">Watch on Lightsource.com<svg class="ml-10" style="width:16px;fill:grey;" viewBox="0 0 512 512"><path d="M492.7 0H353.1c-10.7 0-19.3 8.6-19.3 19.3 0 10.7 8.6 19.3 19.3 19.3h120.3v120.3c0 10.7 8.6 19.3 19.3 19.3 10.7 0 19.3-8.6 19.3-19.3V19.3C512 8.6 503.4 0 492.7 0z" /><path d="M506.3 5.7c-7.5-7.5-19.7-7.5-27.3 0L203.8 281c-7.5 7.5-7.5 19.8 0 27.3 3.8 3.8 8.7 5.7 13.6 5.7 4.9 0 9.9-1.9 13.6-5.7L506.3 32.9C513.9 25.4 513.9 13.2 506.3 5.7z" /><path d="M427.1 239.9c-10.7 0-19.3 8.6-19.3 19.3v214.2H38.6V104.2h214.2c10.7 0 19.3-8.6 19.3-19.3s-8.6-19.3-19.3-19.3H19.3C8.6 65.6 0 74.2 0 84.9v407.8C0 503.4 8.6 512 19.3 512h407.8c10.7 0 19.3-8.6 19.3-19.3V259.2C446.4 248.6 437.8 239.9 427.1 239.9z" /></svg></a>        <a id="displayMoreShowOptions" href="javascript:;">More...</a>
+        <z-overlay trigger-id="displayMoreShowOptions">
+                <a class="item" href="mailto:customerservice@insight.org">Contact</a>
+                <a class="item" href="https://www.oneplace.com/ministries/insight-for-living/read/devotionals/todays-insight-from-chuck-swindoll/">Devotionals</a>
+                <a class="item" href="https://www.oneplace.com/ministries/insight-for-living/read/articles/">Articles</a>
+                <a class="mobile item" href="https://www.lightsource.com/ministry/video-insights/" target="_blank" rel="noopener">Watch on Lightsource.com</a>
+                <a target="_blank" href="https://www.oneplace.com/ministries/insight-for-living/smart-speaker">Listen on Smart Speakers</a>
+            <a href="javascript:;" class="cancel" z-close-overlay-on-click>
+                Cancel
+            </a>
+        </z-overlay>
+    <script>
+        const isLiveView = false
+        const isMobile = window.matchMedia(`(max-width: 820px)`).matches
+        const isNowLive = false
+        const moveForMobile = document.querySelector(".moveForMobile")
+
+        if (isLiveView && isMobile && moveForMobile && !isNowLive) {
+            moveForMobile.remove()
+        }
+        else if (isMobile && moveForMobile) {
+            const target = document.getElementById("countdownForMobile")
+            target.appendChild(moveForMobile)
+            target.style.display = 'grid'
+            document.querySelector(".showHeader .actions").classList.add("mb-10") // kind of hack, but not terrible. otherwise, there's no space under the Donate button
+        }
+    </script>
+</nav>
+
+<section class="cols ">
+    <section class="left">
+
+        
+
+    <section class="episode">
+            <player-on-ended next-data="{&quot;Title&quot;:&quot;The Matter at Hand, Part 3&quot;,&quot;SubTitle&quot;:&quot;October 13, 2023&quot;,&quot;Url&quot;:&quot;https://www.oneplace.com/ministries/insight-for-living/listen/the-matter-at-hand-part-3-1127663.html&quot;,&quot;ImageUrl&quot;:null,&quot;ImageUrlWebP&quot;:null,&quot;Description&quot;:null}"></player-on-ended>
+        <div class="epHeader">
+            <img class="mobile" src="https://i.swncdn.com/cdn/640w/zcast/oneplace/host-images/insight-for-living/640x480.webp?v=190710-030" width="640" height="480" />
+            <div class="details">
+                <h2>A Leader&#x2014;From the Knees Up!, Part 1</h2>
+                <div class="liveDate">October 16, 2023</div>
+            </div>
+            <img data-url="https://www.oneplace.com/ministries/insight-for-living/player/a-leaderfrom-the-knees-up-part-1-1128564.html" class="popout nm" src="/img/icon-external-link.svg" />
+        </div>
+        <div class="mt-30">
+            
+<div id="player" data-style-display="flex" class="group" data-m="aHR0cHM6Ly96Y2FzdC5zd25jZG4uY29tL2VwaXNvZGVzL3pjYXN0L2luc2lnaHQtZm9yLWxpdmluZy8yMDIzLzEwLTE2LzExMjg1NjQvODJfMjAyMzEwMTE3MTE0MC5tcDM=" data-e-id="1128564">
+    <div class="controls">
+        <img src="/lib/player/icon-rewind_square.svg" class="backward30Seconds mainControl seek" />
+        <img src="/lib/player/icon-play_cropped.svg" class="play mainControl" />
+        <img src="/lib/player/icon-forward_square.svg" class="forward30Seconds mainControl seek" />
+    </div>
+    <div class="progressControl">
+        <div class="progressControlContent">
+            <input class="progressBar" type="range" min="0.01" max="100" step="0.01" value="0.01">
+            <div class="times">
+                <span class="currentTime smallText">00:00</span>
+                <span class="duration smallText">27:46</span>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="socialIconsAndActionButtons c-left">
+    <social-icons class="social" data-url="https://www.oneplace.com/ministries/insight-for-living/listen/a-leaderfrom-the-knees-up-part-1-1128564.html" s="insight-for-living"></social-icons>
+    <div class="actions">
+            <click-follow-guard s="insight-for-living" t="Insight for Living" id="goToPodcastPageButton" action="podcast" in-order-to="see this podcast">
+                <a class="orangeActionBtn" href="https://www.oneplace.com/ministries/insight-for-living/subscribe/">Podcast</a>
+            </click-follow-guard>
+
+            <download-mp3-button s="insight-for-living" eid="1128564" t="Insight for Living" mp3-url="https://zcast.swncdn.com/episodes/zcast/insight-for-living/2023/10-16/1128564/82_2023101171140.mp3">
+                <a class="orangeActionBtn mp3-download" href="javascript:;">Free MP3</a>
+            </download-mp3-button>
+            <download-transcript-button s="insight-for-living" t="Insight for Living" u="https://content.swncdn.com/zcast/oneplace/episodes/transcripts/insight-for-living/HMB-STS-02.pdf">
+                <a class="orangeActionBtn" href="javascript:;">Transcript</a>
+            </download-transcript-button>
+    </div>
+</section>
+
+        </div>
+        <div class="fs-16 desc epDesc">
+            <p>Simply put, a leader is one with influence over others. Yet, godly leaders don&rsquo;t resort to clever persuasion, psychological manipulation, or mere flattery.</p>
+<p>Good leaders recognize others&rsquo; needs. They respond in faithfulness by bringing those needs before God and by obeying His directives.</p>
+<p>Nehemiah 1:1&ndash;11 demonstrates how Israel&rsquo;s new leader relied upon prayer. Discover the power of prayer with Pastor Chuck Swindoll as he tells how communion with God makes you wait, clears your vision, quiets your heart, and activates your faith. &emsp;</p>
+        </div>
+
+           <div class="references lh-1-pt-2_m mt-20 pt-20">
+                <span class="mr-15 bold">References: </span>
+                        <i></i><a href="https://www.biblestudytools.com/passage?t=niv&amp;q=nehemiah&#x2B;1" target="_blank" rel="noopener">Nehemiah 1</a>
+            </div>         
+    </section>
+
+<div class="relatedEps mobile" id="relatedEpsMobileTarget"></div>
+
+    <section class="offers">
+        <h3>Featured Resources From Insight for Living</h3>
+        <div class="featured">
+            <a href="https://www.oneplace.com/r?oid=31526&amp;sid=82&amp;acid=2" class="imgLink ga4-offer-click-event" data-update-acid target="_blank" rel="noopener">
+                <img loading="lazy" data-orientation="l" src="https://i.swncdn.com/cdn/120w/zcast/oneplace/offers/31526/this-months-featured-resources.webp?v=231003-623" data-fb-src="https://content.swncdn.com/zcast/oneplace/offers/31526/this-months-featured-resources.jpg?v=231003-623" width="400" height="315">
+            </a>
+            <div class="details">
+                <a href="https://www.oneplace.com/r?oid=31526&amp;sid=82&amp;acid=2" class="ga4-offer-click-event" target="_blank" rel="noopener" data-update-acid>This Month&#x27;s Featured Resource</a>
+                <div>
+                    <p>Featuring books by Charles R. Swindoll mentioned on recent broadcasts such as: <em>Hand Me Another Brick: Timeless Lessons on Leadership</em> by Charles R. Swindoll</p>
+                </div>
+                <a href="https://www.oneplace.com/r?oid=31526&amp;sid=82&amp;acid=2" class="btn ga4-offer-click-event" target="_blank" rel="noopener" data-update-acid>Order</a>
+            </div>
+        </div>
+        <div class="subFeatured">
+                <div>
+                    <a href="https://www.oneplace.com/r?oid=30627&amp;sid=82&amp;acid=2" class="imgLink ga4-offer-click-event" target="_blank" rel="noopener" data-update-acid>
+                        <img loading="lazy" data-orientation="p" src="https://i.swncdn.com/cdn/120w/zcast/lightsource/offers/30627/offer-the-swindoll-study-bible-hardcover-nlt-202301100857541565.webp?v=230509-640" data-fb-src="https://content.swncdn.com/zcast/lightsource/offers/30627/offer-the-swindoll-study-bible-hardcover-nlt-202301100857541565.png?v=230509-640" width="400" height="400">
+                    </a>
+                    <a class="nm ga4-offer-click-event" href="https://www.oneplace.com/r?oid=30627&amp;sid=82&amp;acid=2" target="_blank" rel="noopener" data-update-acid>The Swindoll Study Bible, Hardcover (NLT)</a>
+                </div>
+                <div>
+                    <a href="https://www.oneplace.com/r?oid=30626&amp;sid=82&amp;acid=2" class="imgLink ga4-offer-click-event" target="_blank" rel="noopener" data-update-acid>
+                        <img loading="lazy" data-orientation="p" src="https://i.swncdn.com/cdn/120w/zcast/lightsource/offers/30626/offer-swindolls-living-insights-new-testament-commentary-complete-set-202301100854541567.webp?v=230509-657" data-fb-src="https://content.swncdn.com/zcast/lightsource/offers/30626/offer-swindolls-living-insights-new-testament-commentary-complete-set-202301100854541567.png?v=230509-657" width="400" height="400">
+                    </a>
+                    <a class="nm ga4-offer-click-event" href="https://www.oneplace.com/r?oid=30626&amp;sid=82&amp;acid=2" target="_blank" rel="noopener" data-update-acid>Swindoll&#x27;s Living Insights New Testament Commentary: Complete Set</a>
+                </div>
+                <div>
+                    <a href="https://www.oneplace.com/r?oid=30625&amp;sid=82&amp;acid=2" class="imgLink ga4-offer-click-event" target="_blank" rel="noopener" data-update-acid>
+                        <img loading="lazy" data-orientation="p" src="https://i.swncdn.com/cdn/120w/zcast/oneplace/offers/30625/chucks-books.webp?v=230706-560" data-fb-src="https://content.swncdn.com/zcast/oneplace/offers/30625/chucks-books.jpg?v=230706-560" width="400" height="400">
+                    </a>
+                    <a class="nm ga4-offer-click-event" href="https://www.oneplace.com/r?oid=30625&amp;sid=82&amp;acid=2" target="_blank" rel="noopener" data-update-acid>Chuck&#x27;s Books</a>
+                </div>
+        </div>
+    </section>    
+
+    </section>
+        <section class="right">
+                <div class="relatedEps nm" id="relatedEps">
+                           <click-follow-guard s="insight-for-living" t="Insight for Living" action="archive" in-order-to="access the archives">
+                            <a href="https://www.oneplace.com/ministries/insight-for-living/listen/the-matter-at-hand-part-3-1127663.html">
+                                <img src="/img/play-button-blue-white.svg" />
+                                <div>
+                                    <div class="title">The Matter at Hand, Part 3</div>
+                                    <span>October 13, 2023</span>
+                                </div>
+                            </a>
+                            </click-follow-guard>
+                           <click-follow-guard s="insight-for-living" t="Insight for Living" action="archive" in-order-to="access the archives">
+                            <a href="https://www.oneplace.com/ministries/insight-for-living/listen/the-matter-at-hand-part-2-1127662.html">
+                                <img src="/img/play-button-blue-white.svg" />
+                                <div>
+                                    <div class="title">The Matter at Hand, Part 2</div>
+                                    <span>October 12, 2023</span>
+                                </div>
+                            </a>
+                            </click-follow-guard>
+                           <click-follow-guard s="insight-for-living" t="Insight for Living" action="archive" in-order-to="access the archives">
+                            <a href="https://www.oneplace.com/ministries/insight-for-living/listen/the-matter-at-hand-part-1-1127661.html">
+                                <img src="/img/play-button-blue-white.svg" />
+                                <div>
+                                    <div class="title">The Matter at Hand, Part 1</div>
+                                    <span>October 11, 2023</span>
+                                </div>
+                            </a>
+                            </click-follow-guard>
+                    <a class="moreEpisodes" href="https://www.oneplace.com/ministries/insight-for-living/listen/">More Episodes</a>
+                </div>
+                <script>
+                    const target = document.getElementById("relatedEpsMobileTarget")
+                    if (target && window.matchMedia("only screen and (max-width: 760px)").matches) { // for mobile, move these in the dom
+                        const relatedEps = document.getElementById("relatedEps")
+                        while (relatedEps.childNodes.length) {
+                            target.appendChild(relatedEps.childNodes[0]);
+                        }
+                    }
+                </script>
+            <newsletters-box si="Oneplace.com" sh="82"></newsletters-box>
+                <a class="smartSpeakerPromo mt-20" href="https://www.oneplace.com/ministries/insight-for-living/smart-speaker">
+                    <span class="listen">Listen to Insight for Living on Amazon Echo and Google Home</span>
+                    <span class="learn mt-20">Learn How</span>
+                    <img loading="lazy" class="mt-20 light-ib" src="/img/smart-speakers.webp" data-fb-src="/img/smart-speakers.png" />
+                    <img loading="lazy" class="mt-20 dark-ib" src="/img/smart-speakers_dark.webp" data-fb-src="/img/smart-speakers_dark.png" />
+                </a>
+        </section>        
+</section>
+<section class="showFooter">
+    <section class="about">
+        <section class="o-h">
+            <h2>About Insight for Living</h2>
+            <div class="lh-1-pt-2">
+                <em>Insight for Living</em> is the Bible-teaching ministry of author and pastor <strong>Charles R. Swindoll</strong>.  Insight for Living is committed to excellence in communicating biblical truth and its application.<br /><br />Para conocer acerca del ministerio en espa&ntilde;ol de Insight for Living, visite&nbsp;<a href="https://www.elsitiocristiano.com/ministries/vision-para-vivir/" target="_blank">https://www.elsitiocristiano.com/ministries/vision-para-vivir/</a><br /><br />
+            </div>
+        </section>
+        <section class="o-h mt-20_m">
+            <h2>About Chuck Swindoll</h2>
+            <div class="lh-1-pt-2"><p>Charles R. Swindoll has devoted his life to the accurate, practical teaching and application of God's Word. Since 1998, he has served as the founder and senior pastor-teacher of Stonebriar Community Church in Frisco, Texas, but Chuck's listening audience extends far beyond a local church body. As a leading program in Christian broadcasting since 1979, Insight for Living airs in major Christian radio markets around the world, reaching people groups in languages they can understand. Chuck's extensive writing ministry has also served the body of Christ worldwide and his leadership as president and now chancellor of Dallas Theological Seminary has helped prepare and equip a new generation for ministry. Chuck and Cynthia, his partner in life and ministry, have four grown children, ten grandchildren, and six great-grandchildren.</p>
+<br /></div>
+        </section>
+    </section>
+    <section class="contact o-h">
+        <h3>Contact Insight for Living with Chuck Swindoll</h3>
+        <section class="items">
+            <section>
+                    <div><strong>E-mail</strong><br> <a href="mailto: customerservice@insight.org">customerservice@insight.org</a></div>
+                    <div><strong>Website</strong><br><a target="_blank" rel="noopener" href="http://insight.org">http://insight.org</a></div>
+            </section>
+            <section>
+                <div><strong>Mailing Address</strong></div>
+<div>Insight for Living<br />Post Office Box 5000<br />Frisco, Texas 75034<br />USA</div>
+<div>&nbsp;</div>
+<div><strong>Phone Number</strong></div>
+1-800-772-8888
+            </section>
+            <section>
+                
+            </section>
+        </section>
+   </section>
+</section>
+
+
+        </div>
+    </div>
+    <footer>
+            <a class="showBanner" href="https://www.oneplace.com/ministries/insight-for-living/adclick-2.html?stoid=12096" target="_blank"  rel="nofollow" data-update-ad-click-category-id>
+               <img class="desktopTabletBanner" loading="lazy" src="https://i.swncdn.com/cdn/90h/zcast/oneplace/banners/insight-for-living/oneplace-banner-chucks-sermonsnew.webp" data-fb-src="https://content.swncdn.com/zcast/oneplace/banners/insight-for-living/oneplace-banner-chucks-sermonsnew.jpg" width="728" height="90"/>
+               <img class="mobileBanner" loading="lazy" src="https://i.swncdn.com/cdn/660w/zcast/oneplace/banners/insight-for-living/opmobileswindollnew.webp" data-fb-src="https://content.swncdn.com/zcast/oneplace/banners/insight-for-living/opmobileswindollnew.jpg" width="300" height="250"/>
+            </a>
+            <section class="appBanner">
+                <div class="title">More Ways to Listen</div>
+                <div class="apps">
+                    <a href="https://cutt.ly/BVO1nTx" target="_blank" rel="noopener">
+                        <img class="f-left" width="160" src="/img/ways-to-listen-apple.svg" />
+                    </a>
+                    <a href="https://cutt.ly/QVO1Rth" target="_blank" rel="noopener">
+                        <img class="f-left" width="160" src="/img/ways-to-listen-android.svg" />
+                    </a>
+                    <a href="https://cutt.ly/vVO1GzP" target="_blank" rel="noopener">
+                        <img class="f-left" width="160" src="/img/ways-to-listen-alexa.svg" />
+                    </a>
+                    <a href="https://cutt.ly/0VO0i5o" target="_blank" rel="noopener">
+                        <img class="f-left" width="160" height="160" src="/img/ways-to-listen-google-home.svg" />
+                    </a>
+                </div>
+            </section>
+
+        <section class="social">
+            <div class="icons">
+                <a target="_blank" href="http://www.facebook.com/oneplacecom" rel="noopener">
+                    <svg enable-background="new 0 0 256 256" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" href="https://twitter.com/oneplacecom" rel="noopener">
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" href="https://www.pinterest.com/oneplacecom/" rel="noopener">
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1664 896q0 209-103 385.5t-279.5 279.5-385.5 103q-111 0-218-32 59-93 78-164 9-34 54-211 20 39 73 67.5t114 28.5q121 0 216-68.5t147-188.5 52-270q0-114-59.5-214t-172.5-163-255-63q-105 0-196 29t-154.5 77-109 110.5-67 129.5-21.5 134q0 104 40 183t117 111q30 12 38-20 2-7 8-31t8-30q6-23-11-43-51-61-51-151 0-151 104.5-259.5t273.5-108.5q151 0 235.5 82t84.5 213q0 170-68.5 289t-175.5 119q-61 0-98-43.5t-23-104.5q8-35 26.5-93.5t30-103 11.5-75.5q0-50-27-83t-77-33q-62 0-105 57t-43 142q0 73 25 122l-99 418q-17 70-13 177-206-91-333-281t-127-423q0-209 103-385.5t279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <div class="links">
+            <a href="/mobile-app">Get the App</a>
+            <a href="https://salemmedia.com/salem-web-network-privacy-policy/">Privacy Policy</a>
+            <a href="http://www.salemwebnetwork.com/our-brands/terms-of-use/">Terms of Use</a>
+            <a href="/contact-us.html">Contact Oneplace.com</a>
+            <a href="https://salemmedia.com/ccpa-sale-opt-out/">California - Do Not Sell My Personal Information</a>
+            <a href="https://salemmedia.com/salem-web-network-ccpa-privacy-notice-for-california-residents/">California - CCPA Notice</a>
+        </div>
+        <div class="copyright">
+            Copyright © 2021, Oneplace.com. All Rights Reserved. Article Images Copyright © 2021 Jupiter Images Corporation.
+        </div>
+    </footer>
+    <script>
+        window.baseUrl = `/`
+    </script>
+    
+    <script>
+        window.initData = window.initData || {}
+        window.initData.podcastPageUrl = `https://www.oneplace.com/ministries/insight-for-living/subscribe/`
+        window.initData.showSlug = 'insight-for-living'
+        window.initData.skipFollowGuard = false // #skipfollow
+    </script>
+    
+    <script>
+        window.salemMeta = window.salemMeta || {}
+        salemMeta.episodeId = 1128564
+        window.initData = window.initData || {}
+        window.initData.popoutUrl = `https://www.oneplace.com/ministries/insight-for-living/player/a-leaderfrom-the-knees-up-part-1-1128564.html`
+    </script>
+
+
+<script src="/dist/show.details.js?v=NdgJPusQ3qASBdQlvcVS-teUsKyiq_TVoyK2iPlg4yQ"></script>
+    <script>
+        window.salemMeta = window.salemMeta || {}
+        window.salemMeta.controllerName = `Show`
+        window.salemMeta.actionName = `Details`
+        // add any other key values that were set on server side
+;window.salemMeta.showId = `82`    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NTM9RHM');</script>
+    <!-- End Google Tag Manager -->
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script async src="https://media.swncdn.com/js/prebid/script.js"></script>
+    <script async src="https://media.swncdn.com/salemads/oneplace/advscript.js"></script>
+
+        <script defer src="//cf.journity.com/collector/oneplace.com.js"></script>
+        <link defer href="//cf.journity.com/personalizer/oneplace.com.css" rel="stylesheet" />
+        <script defer src="//cf.journity.com/personalizer/oneplace.com.min.js"></script>
+    <!-- LiveConnectTag for advertisers -->
+    <script defer src="//b-code.liadm.com/a-06uz.min.js" charset="utf-8"></script>
+
+    <!-- warn user if they're on localhost and they're not on correct port # -->
+    <script>
+        const currentUrl = document.URL
+        const startingUrlForThirdPartySignIn = `https://localhost:7200`
+        if (currentUrl.includes("localhost") && !currentUrl.includes(startingUrlForThirdPartySignIn)) {
+            alert(`You must be on ${startingUrlForThirdPartySignIn} for third party sign in to work.`)
+        }
+    </script>
+</body>
+</html>

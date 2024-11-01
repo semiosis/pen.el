@@ -1,0 +1,14 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\t -> t {key = t, value = 1})) tuples
+
+  -- Reduce the rows into a list of key-value pairs, one for each record.
+  pairs <- concatMap (\r -> [r {key = r, value = 1}]) rows
+
+  -- Reduce the pairs into a single pair, summarising the entire file.
+  summary <- foldl1 (\a b -> a {key = b, value = a.value + b.value}) pairs
+
+  -- Print the summary
+  print (summary {key = summary, value = summary.value})
+EOD

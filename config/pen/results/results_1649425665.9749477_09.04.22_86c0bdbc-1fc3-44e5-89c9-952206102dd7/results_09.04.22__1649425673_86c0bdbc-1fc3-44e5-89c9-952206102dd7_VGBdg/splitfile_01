@@ -1,0 +1,5 @@
+
+shane@mele:~/notes$ while :; do date; sleep 2; clear; done
+shane@mele:~/notes$ date
+shane@mele:~/notes$ clear
+shane@mele:~/notes$

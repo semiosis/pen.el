@@ -1,0 +1,19 @@
+"StrictHostKeyChecking" is a flag in the ssh config file.
+
+It can be set to:
+
+yes
+no
+ask
+ask-no
+ask-yes
+
+The default is:
+
+no
+
+If set to "yes", then the ssh command will fail if the host key is not present in the local known_hosts file.
+
+If set to "no", then the ssh command will automatically add the host key to the local known_hosts file.
+
+If

@@ -1,0 +1,4 @@
+
+What is type system?
+
+Type systems are systems that types don't always behave according to what you expect. A type system may ensure that a string is always a string while the other type systems may allow for a string to be null or an integer.

@@ -1,0 +1,7 @@
+
+
+linrec :: (a -> a -> a) -> a -> Ilist a -> Ilist a
+
+linrec f z Nil = z : Nil
+
+linrec f z (Cons x xs) = case f x z

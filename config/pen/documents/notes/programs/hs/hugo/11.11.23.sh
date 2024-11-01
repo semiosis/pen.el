@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "hugo" "help" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "hugo" "--help" "#" "<==" "zsh"
+cd /root/.pen/projects/gospel-slides;  "hugo" "new" "site" "Gospel-of-Jesus" "#" "<==" "zsh"
+cd /root/.pen/projects/gospel-slides;  "hugo" "new" "site" "Gospel-of-Jesus" "#" "<==" "zsh"
+cd /root/repos/dzello/reveal-hugo/exampleSite;  "hugo" "serve" "#" "<==" "zsh"
+cd /root/.pen/projects/gospel-slides/Gospel-of-Jesus;  "hugo" "mod" "init" "github.com/gospel-slides/presentation" "#" "<==" "zsh"
+cd /root/.pen/projects/gospel-slides/Gospel-of-Jesus;  "hugo" "mod" "get" "github.com/dzello/reveal-hugo" "#" "<==" "zsh"
+cd /root/.pen/projects/gospel-slides/Gospel-of-Jesus;  "hugo" "server" "#" "<==" "zsh"

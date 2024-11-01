@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: jq multiple read
+# group: jq
+# key: jqm
+# --
+delim="¬"
+IFS="\$delim" read -r -d\$'\\1' prompt first_stop_sequence haspreprocessors temperature engine preferred_openai_engine max_tokens top_p postprocessor < <(
+cat "\$prompt_fp" | yq -r '[.prompt,."stop-sequences"[0],.preprocessors[0],.temperature,.engine,."preferred-openai-engine",."max-tokens",."top-p",.postprocessor] | join("'\$delim'")')

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: defaultdict
+# key: dd
+# --
+d = defaultdict(list)
+for name in names:
+key = len(name)
+d[key].append(name)

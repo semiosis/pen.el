@@ -1,0 +1,365 @@
+HTTP/1.1 200 OK
+Connection: close
+content-type: text/html; charset=UTF-8
+link: <https://www.stuarttownend.co.uk/wp-json/>; rel="https://api.w.org/"
+link: <https://www.stuarttownend.co.uk/?p=2497>; rel=shortlink
+etag: "38801-1695139846;gz"
+x-litespeed-cache: hit
+transfer-encoding: chunked
+vary: Accept-Encoding
+date: Fri, 22 Sep 2023 09:53:15 GMT
+server: LiteSpeed
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head >
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>In Christ alone - Stuart Townend</title>
+	<meta name="description" content="Stuart Townend is one of today’s leading worship songwriters. Hymns such as “In Christ alone” and “How deep the Father’s love” are sung in churches around the world, while the skill and depth of his lyric writing has drawn some to compare his contribution to hymnody to that of Watts and Wesley." />
+	<link rel="canonical" href="https://www.stuarttownend.co.uk/song/in-christ-alone/" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="In Christ alone - Stuart Townend" />
+	<meta property="og:description" content="Stuart Townend is one of today’s leading worship songwriters. Hymns such as “In Christ alone” and “How deep the Father’s love” are sung in churches around the world, while the skill and depth of his lyric writing has drawn some to compare his contribution to hymnody to that of Watts and Wesley." />
+	<meta property="og:url" content="https://www.stuarttownend.co.uk/song/in-christ-alone/" />
+	<meta property="og:site_name" content="Stuart Townend" />
+	<meta property="article:publisher" content="https://www.facebook.com/stuart.townend.75" />
+	<meta property="article:modified_time" content="2021-07-21T08:26:48+00:00" />
+	<meta property="og:image" content="https://www.stuarttownend.co.uk/wp-content/uploads/2018/04/Stuart-homepage.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="681" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@stuarttownend" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.stuarttownend.co.uk/song/in-christ-alone/","url":"https://www.stuarttownend.co.uk/song/in-christ-alone/","name":"In Christ alone - Stuart Townend","isPartOf":{"@id":"https://www.stuarttownend.co.uk/#website"},"datePublished":"2018-04-19T11:00:18+00:00","dateModified":"2021-07-21T08:26:48+00:00","description":"Stuart Townend is one of today’s leading worship songwriters. Hymns such as “In Christ alone” and “How deep the Father’s love” are sung in churches around the world, while the skill and depth of his lyric writing has drawn some to compare his contribution to hymnody to that of Watts and Wesley.","breadcrumb":{"@id":"https://www.stuarttownend.co.uk/song/in-christ-alone/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.stuarttownend.co.uk/song/in-christ-alone/"]}]},{"@type":"BreadcrumbList","@id":"https://www.stuarttownend.co.uk/song/in-christ-alone/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.stuarttownend.co.uk/"},{"@type":"ListItem","position":2,"name":"Songs","item":"https://www.stuarttownend.co.uk/song/"},{"@type":"ListItem","position":3,"name":"In Christ alone"}]},{"@type":"WebSite","@id":"https://www.stuarttownend.co.uk/#website","url":"https://www.stuarttownend.co.uk/","name":"Stuart Townend","description":"Author of How Deep the Father’s Love, In Christ Alone and Beautiful Saviour","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.stuarttownend.co.uk/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel="alternate" type="application/rss+xml" title="Stuart Townend &raquo; Feed" href="https://www.stuarttownend.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Stuart Townend &raquo; Comments Feed" href="https://www.stuarttownend.co.uk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Stuart Townend &raquo; In Christ alone Comments Feed" href="https://www.stuarttownend.co.uk/song/in-christ-alone/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.stuarttownend.co.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=e31a92613eedd104ef36f29f448137e0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+			<style type="text/css">
+
+						.mejs-controls, .mejs-mediaelement {
+				background: #e8e8e8 !important;
+			}
+			
+			
+						.mejs-container * {
+				color: #000000 !important;
+			}
+			
+						.mejs-controls button {
+				color: #000000 !important;
+			}
+			
+						.mejs-controls .mejs-time-rail .mejs-time-total {
+				background: #7089a3 !important;
+			}
+			
+						.mejs-controls .mejs-time-rail .mejs-time-current {
+				background: #4986a2 !important;
+			}
+			
+			
+			
+						.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+				background: #4986a2 !important;
+			}
+			
+		</style>
+		<link rel='stylesheet' id='a-z-listing-block-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/a-z-listing/css/a-z-listing-default.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-all-blocks-style-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-all-blocks-style.css?ver=10.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://www.stuarttownend.co.uk/wp-includes/css/dashicons.min.css?ver=e31a92613eedd104ef36f29f448137e0' type='text/css' media='all' />
+<link rel='stylesheet' id='media_player_style_kit-frontend-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/media-player-style-kit/assets/css/frontend.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='supersideme-style-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/superside-me/includes/css/supersideme-style.css?ver=2.8.1' type='text/css' media='screen' />
+<style id='supersideme-style-inline-css' type='text/css'>
+@media only screen and (max-width:800px) {nav,#nav,.nav-primary,.nav-secondary,.supersideme .site-header .secondary-toggle,.menu-toggle {display:none }.slide-nav-link,.ssme-search,.button.ssme-button.ssme-custom {display:block }}.sidr {width:260px }.sidr.left {left:-260px }.sidr.right {right:-260px }.slide-nav-link {background-color:#333;right:0;color:#fefefe;position:absolute;width:auto }.sidr {background-color:#333;color:#fefefe }.sidr h3,.sidr h4,.sidr .widget,.sidr p {color:#fefefe }.slide-nav-link:focus,.sidr:focus,.sidr a:focus,.menu-close:focus,.sub-menu-toggle:focus {outline:#fefefe dotted 1px }.sidr a,.sidr a:focus,.sidr a:active,.sidr button,.sidr .sub-menu-toggle:before {color:#fefefe }.search-me {color:#333 }.slide-nav-link:before,.search-me:before,.menu-close:before,.sidr .sub-menu-toggle:before,.ssme-search:before,.ssme-button:before {-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;font-style:normal;font-variant:normal;font-weight:900;font-family:'Font Awesome 5 Free','FontAwesome';font-size:20px }.menu-close:before,.sidr .sub-menu-toggle:before {font-size:16px }.slide-nav-link:before {content:'\f0c9' }.slide-nav-link.menu-open:before {content:'\f0c9' }.sidr .menu-close:before {content:'\f00d' }.sidr .sub-menu-toggle:before {content:'\f107' }.sidr .sub-menu-toggle-open:before {content:'\f106' }.search-me:before {content:'\f002' }.ssme-search:before {content:'\f002' }
+</style>
+<link rel='stylesheet' id='font-awesome-5-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/all.min.css?ver=2.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/v4-shims.min.css?ver=2.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.1.1' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.1.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='search-filter-plugin-styles-css' href='https://www.stuarttownend.co.uk/wp-content/plugins/search-filter-pro/public/assets/css/search-filter.min.css?ver=2.5.16' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css' href='https://use.typekit.net/dgb6qnl.css?ver=e31a92613eedd104ef36f29f448137e0' type='text/css' media='all' />
+<link rel='stylesheet' id='stuart-townend-theme-css' href='https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/style.css?ver=1.2.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://stats.wp.com/w.js?ver=202338' id='woo-tracks-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='search-filter-plugin-build-js-extra'>
+/* <![CDATA[ */
+var SF_LDATA = {"ajax_url":"https:\/\/www.stuarttownend.co.uk\/wp-admin\/admin-ajax.php","home_url":"https:\/\/www.stuarttownend.co.uk\/","extensions":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/search-filter-pro/public/assets/js/search-filter-build.min.js?ver=2.5.16' id='search-filter-plugin-build-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/search-filter-pro/public/assets/js/select2.min.js?ver=2.5.16' id='search-filter-plugin-select2-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/js/jquery-accessible-tabs.js?ver=1.2.1' id='accessible-tabs-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/js/audio-buttons.js?ver=1.2.1' id='audio-buttons-js'></script>
+<link rel="https://api.w.org/" href="https://www.stuarttownend.co.uk/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.stuarttownend.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.stuarttownend.co.uk/wp-includes/wlwmanifest.xml" />
+
+<link rel='shortlink' href='https://www.stuarttownend.co.uk/?p=2497' />
+<link rel="alternate" type="application/json+oembed" href="https://www.stuarttownend.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stuarttownend.co.uk%2Fsong%2Fin-christ-alone%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.stuarttownend.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stuarttownend.co.uk%2Fsong%2Fin-christ-alone%2F&#038;format=xml" />
+<link rel="icon" href="https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/images/favicon.ico" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
+			.single-post .entry-content a.fl-accordion-button-label,
+.single-post .entry-content a.fl-accordion-button-icon{
+	border-bottom: none;
+	display: table-cell;
+	outline: none;
+}
+
+section.mailing {
+	display: none;
+}		</style>
+		</head>
+<body class="gml_songs-template-default single single-gml_songs postid-2497 theme-genesis no-js woocommerce-no-js full-width-content genesis-breadcrumbs-hidden"><script>/* <![CDATA[ */(function(){var c = document.body.classList;c.remove('no-js');c.add('js');})();/* ]]> */</script>
+		<div class="site-container"><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to main content</a></li></ul><nav class="nav-utility"><ul id="menu-utility-bar-menu" class="menu genesis-nav-menu js-superfish"><li id="menu-item-2144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2144"><a href="https://www.stuarttownend.co.uk/my-account/"><span >My account</span></a></li>
+<li class="menu-item"><a class="wcmenucart-contents" href="https://www.stuarttownend.co.uk/cart/" title="View your shopping cart"><span class="dashicons dashicons-cart"></span> 0 items</a></li></ul></nav><header class="site-header"><div class="wrap"><div class="title-area"><p class="site-title"><a href="https://www.stuarttownend.co.uk/"><img src="https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/images/logo.png" alt="Stuart Townend Logo"/></a></p></div><div class="widget-area header-widget-area"><nav class="nav-primary" aria-label="Main" id="genesis-nav-primary"><div class="wrap"><ul id="menu-primary-menu" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://www.stuarttownend.co.uk/biography/"><span >Bio</span></a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://www.stuarttownend.co.uk/music/"><span >Music</span></a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-31"><a href="https://www.stuarttownend.co.uk/reflections/"><span >Resources</span></a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://www.stuarttownend.co.uk/events/"><span >Events</span></a></li>
+</ul></div></nav></div></div></header><div class="site-inner"><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-2497 gml_songs type-gml_songs status-publish gml_scripture_tax-1-corinthians-15-28 gml_scripture_tax-acts-2-32-33 gml_scripture_tax-colossians-1-27 gml_scripture_tax-ephesians-2-20 gml_scripture_tax-ephesians-3-18 gml_scripture_tax-isaiah-53-5 gml_scripture_tax-john-1-5 gml_scripture_tax-john-10-28 gml_scripture_tax-john-15-26 gml_scripture_tax-matthew-27-42 gml_scripture_tax-philippians-2-7-8 gml_scripture_tax-romans-5-9 gml_scripture_tax-romans-8-1-2 gml_scripture_tax-romans-8-38-39 gml_topic_tax-cross gml_topic_tax-jesus gml_topic_tax-salvation entry" aria-label="In Christ alone"><header class="entry-header"><h1 class="entry-title">In Christ alone</h1>
+<div class="audio-player"><!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+<audio class="wp-audio-shortcode" id="audio-2497-1" preload="none" style="light" controls="controls"><source type="audio/mpeg" src="https://www.stuarttownend.co.uk/wp-content/uploads/2018/04/In-Christ-Alone-Preview.mp3?_=1" /><a href="https://www.stuarttownend.co.uk/wp-content/uploads/2018/04/In-Christ-Alone-Preview.mp3">https://www.stuarttownend.co.uk/wp-content/uploads/2018/04/In-Christ-Alone-Preview.mp3</a></audio></div><p class="entry-meta"><span class="entry-terms"><a href="https://www.stuarttownend.co.uk/topic/cross/" rel="tag">Cross</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/topic/jesus/" rel="tag">Jesus</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/topic/salvation/" rel="tag">Salvation</a><br></span> <span class="entry-terms"><a href="https://www.stuarttownend.co.uk/scripture/1-corinthians-15-28/" rel="tag">1 Corinthians 15: 28</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/acts-2-32-33/" rel="tag">Acts 2: 32-33</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/colossians-1-27/" rel="tag">Colossians 1: 27</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/ephesians-2-20/" rel="tag">Ephesians 2: 20</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/ephesians-3-18/" rel="tag">Ephesians 3: 18</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/isaiah-53-5/" rel="tag">Isaiah 53: 5</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/john-1-5/" rel="tag">John 1: 5</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/john-10-28/" rel="tag">John 10: 28</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/john-15-26/" rel="tag">John 15: 26</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/matthew-27-42/" rel="tag">Matthew 27: 42</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/philippians-2-7-8/" rel="tag">Philippians 2: 7-8</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/romans-5-9/" rel="tag">Romans 5: 9</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/romans-8-1-2/" rel="tag">Romans 8: 1-2</a>&ensp;·&ensp; <a href="https://www.stuarttownend.co.uk/scripture/romans-8-38-39/" rel="tag">Romans 8: 38-39</a></span></p></header><div class="entry-content"><section class="lyrics">
+    <h2 class="screen-reader-text">Lyrics</h2>
+	<p>In Christ alone my hope is found,<br />
+He is my light, my strength, my song;<br />
+This Cornerstone, this solid Ground,<br />
+Firm through the fiercest drought and storm.<br />
+What heights of love, what depths of peace,<br />
+When fears are stilled, when strivings cease!<br />
+My Comforter, my All in All,<br />
+Here in the love of Christ I stand.</p>
+<p>In Christ alone! &#8211; who took on flesh,<br />
+Fullness of God in helpless babe.<br />
+This gift of love and righteousness,<br />
+Scorned by the ones He came to save:<br />
+Till on that cross as Jesus died,<br />
+The wrath of God was satisfied &#8211;<br />
+For every sin on Him was laid;<br />
+Here in the death of Christ I live.</p>
+<p>There in the ground His body lay,<br />
+Light of the world by darkness slain:<br />
+Then bursting forth in glorious day<br />
+Up from the grave He rose again!<br />
+And as He stands in victory<br />
+Sin&#8217;s curse has lost its grip on me,<br />
+For I am His and He is mine &#8211;<br />
+Bought with the precious blood of Christ.</p>
+<p>No guilt in life, no fear in death,<br />
+This is the power of Christ in me;<br />
+From life&#8217;s first cry to final breath,<br />
+Jesus commands my destiny.<br />
+No power of hell, no scheme of man,<br />
+Can ever pluck me from His hand:<br />
+Till He returns or calls me home,<br />
+Here in the power of Christ I&#8217;ll stand.</p>
+    <aside class="copyright">Stuart Townend &amp; Keith Getty Copyright &copy; 2001 Thankyou Music (Adm. by CapitolCMGPublishing.com excl. UK &amp; Europe, adm. by Integrity Music, part of the David C Cook family, songs@integritymusic.com)</aside>
+</section><section class="story">
+    <div class="wrap">
+        <h2>A hymn on the life, death and resurrection of Christ</h2>
+        <div class="flex-container">
+			                <div class="video">
+                    <div class="embed-container"><iframe title="Story Behind The Song In Christ Alone Stuart Townend" width="640" height="360" src="https://www.youtube.com/embed/TpipuCeGQn4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                </div>             <div class="story-copy-video"><p>In Christ alone was actually the first song Keith Getty and I wrote together. We had been introduced by a mutual friend at a worship conference, where we had a coffee together and talked about our backgrounds, musical influences, and motivations to write. Keith promised he would send me a CD with a bunch of melodies he&#8217;d been working on, and to be honest I thought no more about it.</p>
+<p>Then a few days later the CD arrived. And the first melody on it really hit me &#8211; it was tuneful and memorable, and yet had gravitas and real emotion. And I began to feel the pressure to write lyrics that were of a comparable standard!</p>
+<p>The only thing I could think was to base it on the eternal theme of the life, death and resurrection of Christ. The verses came in a fairly linear way, but as the third verse developed, I was getting pretty excited as I thought about the amazing implications of Christ&#8217;s finished work on the cross. I wanted to write a fourth verse that was about us &#8211; but not just as an emotional response, but as a undeniable statement of the power of Christ to sustain us in this life.</p>
+<p>Keith and I are overwhelmed with the response this song has had, and we are just grateful to God that He should use it to build up His church in this way.</p>
+</div>
+        </div>
+    </div>
+</section><section class="resources">
+    <h2 class="screen-reader-text">Resources</h2>
+    <div class="js-tabs">
+        <ul class="js-tablist" data-hx="h2" data-tabs-prefix-class="tabs">
+            <li class="js-tablist__item">
+                <a href="#id_first" id="label_id_first" class="js-tablist__link">Stream</a>
+            </li>
+            <li class="js-tablist__item">
+                <a href="#id_second" id="label_id_second" class="js-tablist__link">Buy this song</a>
+            </li>
+            <li class="js-tablist__item">
+                <a href="#id_third" id="label_id_third" class="js-tablist__link">Featured on</a>
+            </li>
+            <li class="js-tablist__item">
+                <a href="#id_fourth" id="label_id_fourth" class="js-tablist__link">Other versions</a>
+            </li>
+        </ul>
+        <div id="id_first" class="js-tabcontent">
+			<a class="button" href="https://itunes.apple.com/gb/album/in-christ-alone-live/554146954?i=554146995" target="_blank"><span class="icon-apple"></span> Apple Music</a>			<a class="button" href="https://open.spotify.com/track/4V9pdCnjcA2uvCmBFC9uzc?si=AojWWoUGQMCg1Nudrd4Avg" target="_blank"><span class="icon-spotify"></span> Spotify</a>			<a class="button" href="https://play.google.com/store/music/album/Keith_Kristyn_Getty_In_Christ_Alone?id=Bkedt3chqggaf4qyfcqoefm5z2a" target="_blank"><span class="icon-googleplay"></span> Google Play</a>        </div>
+        <div id="id_second" class="js-tabcontent">
+			<a class="button" href="https://itunes.apple.com/gb/album/in-christ-alone/1092074660?i=1092075382" target="_blank"><span class="icon-apple"></span> Apple iTunes</a>			<a class="button" href="http://amzn.eu/cTJaTyp" target="_blank"><span class="icon-amazon"></span> Amazon</a>			<a class="button" href="https://play.google.com/store/music/album/Keith_Kristyn_Getty_In_Christ_Alone?id=Bkedt3chqggaf4qyfcqoefm5z2a" target="_blank"><span class="icon-googleplay"></span>Google Play</a>        </div>
+        <div id="id_third" class="js-tabcontent">
+															                    <a href="https://www.stuarttownend.co.uk/product/the-best-of-stuart-townend-live/">The Best of Stuart Townend – Live</a><br>
+
+									                    <a href="https://www.stuarttownend.co.uk/product/the-best-of-stuart-townend-vol-2-live/">The Best of Stuart Townend Vol. 2 (Live)</a><br>
+
+									                    <a href="https://www.stuarttownend.co.uk/product/ultimate-collection-stuart-townend/">Ultimate Collection – Stuart Townend</a><br>
+
+									                    <a href="https://www.stuarttownend.co.uk/product/stuart-townend-monument-to-mercy-lord-of-every-heart/">Stuart Townend: Monument to Mercy &#038; Lord of Every Heart</a><br>
+
+											
+        </div>
+        <div id="id_fourth" class="js-tabcontent">
+							Sorry, I don't have links to any other version of this song.			        </div>
+    </div>
+</section>
+<section class="arrangements">
+    <h2 class="screen-reader-text">Arrangements</h2>
+
+    <div class="wrap flex-container">
+		            <div class="item">
+                <a href="https://www.stuarttownend.co.uk/wp-content/uploads/2018/04/In-Christ-alone-chord-chart.pdf">
+                    <img src="https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/images/chord_chart_icon.jpg"
+                         alt="Chord chart"/>
+                    <h3>Chord Charts</h3>
+                </a>
+            </div>
+		
+		
+		
+		            <div class="item">
+                <a href="http://www.scoreexchange.com/scores/181133.html" target="_blank">
+                    <img src="https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/images/sheet_music_icon.jpg"
+                         alt="Melody line sheet music"/>
+                    <h3>Melody Line</h3>
+                </a>
+            </div>
+		
+		
+		            <div class="item">
+                <a href="http://www.scoreexchange.com/scores/181134.html" target="_blank">
+                    <img src="https://www.stuarttownend.co.uk/wp-content/themes/stuart-townend/images/sheet_music_icon.jpg"
+                         alt="Piano arrangement sheet music"/>
+                    <h3>Piano</h3>
+                </a>
+            </div>
+		
+    </div>
+</section><section class="related">
+    <h2>You might also like</h2>
+	<ul>            <li><a href="https://www.stuarttownend.co.uk/song/o-for-a-closer-walk-with-god/">O for a closer walk with God</a></li>
+			            <li><a href="https://www.stuarttownend.co.uk/song/never-failing-love/">Never-failing love</a></li>
+			            <li><a href="https://www.stuarttownend.co.uk/song/season-of-singing/">Season of singing</a></li>
+			            <li><a href="https://www.stuarttownend.co.uk/song/pour-over-me/">Pour over me</a></li>
+			            <li><a href="https://www.stuarttownend.co.uk/song/knowing-your-grace/">Knowing Your grace</a></li>
+			</ul></section>
+</div><footer class="entry-footer"></footer></article></main></div></div>    <section class="social-media">
+        <div class="social-links">
+            <a href="https://www.facebook.com/stuart.townend.75" target="_blank"><span
+                        class="dashicons dashicons-facebook"></span><span
+                        class="screen-reader-text">My Facebook page</span></a>
+            <a href="https://www.youtube.com/user/stuarttownend" target="_blank"><span
+                        class="dashicons dashicons-video-alt3"></span><span class="screen-reader-text">My YouTube channel</span></a>
+            <a href="https://twitter.com/stuarttownend" target="_blank"><span
+                        class="dashicons dashicons-twitter"></span><span
+                        class="screen-reader-text">My Twitter feed</span></a>
+        </div>
+    </section>
+	<footer class="site-footer"><div class="wrap"><nav class="nav-secondary" aria-label="Secondary"><div class="wrap"><ul id="menu-footer-menu" class="menu genesis-nav-menu menu-secondary js-superfish"><li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="https://www.stuarttownend.co.uk/book-stuart/"><span >Book Stuart</span></a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://www.stuarttownend.co.uk/get-in-touch/"><span >Get in touch</span></a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="https://www.stuarttownend.co.uk/press-kit/"><span >Press kit</span></a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="https://www.stuarttownend.co.uk/privacy-policy/"><span >How we protect your privacy</span></a></li>
+<li id="menu-item-3139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3139"><a href="https://www.stuarttownend.co.uk/delivery-and-returns/"><span >Delivery, returns and FAQs</span></a></li>
+</ul></div></nav><div class="creds"><p>Copyright &copy; 2023 Townend Music Limited &middot; Website by <a href="http://www.nickwilmot.co.uk">Nick Wilmot Creative</a></p></div><p></p></div></footer></div><!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8604888-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-8604888-1');
+</script>
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='mediaelement-css' href='https://www.stuarttownend.co.uk/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.stuarttownend.co.uk/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=e31a92613eedd104ef36f29f448137e0' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/superside-me/includes/js/sidr.me.min.js?ver=2.2.1' id='supersideme-sidr-js'></script>
+<script type='text/javascript' id='superside-init-js-extra'>
+/* <![CDATA[ */
+var SuperSideMeVar = {"location":"","close":{"closeText":"Close","closeAria":"Close Navigation"},"displace":"1","closeevent":".menu-close","side":"right","navigation":"Menu","navarialabel":"Navigation Menu","submenu":"Menu","subarialabel":"Navigation Sub Menu","swipe":"","speed":"200","source":null,"function":"prepend","search":{"panel":false,"button":false,"button_text":"Search","button_aria":"Search"},"second":[],"html5":"1","widget_end":"1","custom":[],"customizer":"","svg":"","rest":"https:\/\/www.stuarttownend.co.uk\/wp-json\/supersideme\/api\/menu"};
+var supersidemeSkipLinks = {"ulClass":".genesis-skip-link","startLink":"genesis-nav-primary","contains":"genesis-nav","unique":"primary"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/superside-me/includes/js/supersideme.min.js?ver=2.8.1' id='superside-init-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.1.1' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View basket","cart_url":"https:\/\/www.stuarttownend.co.uk\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.1.1' id='wc-add-to-cart-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.1.1' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.1.1' id='woocommerce-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"d MM yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/hoverIntent.min.js?ver=1.10.2' id='hoverIntent-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10' id='superfish-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=3.4.0' id='superfish-args-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.4.0' id='skip-links-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=e31a92613eedd104ef36f29f448137e0' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.stuarttownend.co.uk/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=e31a92613eedd104ef36f29f448137e0' id='wp-mediaelement-js'></script>
+</body></html>
+
+
+<!-- Page cached by LiteSpeed Cache 5.6 on 2023-09-19 16:10:46 -->

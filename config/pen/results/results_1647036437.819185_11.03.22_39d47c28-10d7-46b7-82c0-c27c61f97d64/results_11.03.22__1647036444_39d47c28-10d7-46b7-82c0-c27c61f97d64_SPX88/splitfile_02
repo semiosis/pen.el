@@ -1,0 +1,8 @@
+
+    This program performs a simple
+    dependency parse on the text of the
+    Book of Revelation in the Bible.
+    The program then constructs a
+    dependency tree and prints it to the
+    screen.
+

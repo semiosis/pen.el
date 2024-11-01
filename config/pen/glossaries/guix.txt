@@ -1,0 +1,18 @@
+substitute
+    Guix supports transparent source/binary
+    deployment, which means that it can either
+    build things locally, or download
+    pre-built items from a server, or both.
+
+    We call these pre-built items
+    substitutes—they are substitutes for local
+    build results.
+
+    In many cases, downloading a substitute is
+    much faster than building things locally.
+
+GuixSD
+GNU Guix System
+
+channel
+    https://guix.gnu.org/manual/en/html_node/Channels.html

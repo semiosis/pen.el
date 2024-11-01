@@ -1,0 +1,30 @@
+task: "Given some surreal art and a description, elaborate"
+doc: "Given some surreal art and a description, elaborate"
+tags: vision prose web lookingglass art
+prompt-version: 1
+payloads:
+# This could be a raw string to a file or URL, or an elisp function
+# - image: "(read-file-name \"image 2 of 2: \")"
+- image: "(read-file-name \"image: \")"
+prompt: |+
+  <description> Furthermore,
+force-engine: "AlephAlpha EUTranMM"
+force-temperature: 0.1
+# max-generated-tokens: "(* 2 prompt-length)"
+max-generated-tokens: 100
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "description"
+preprocessors:
+- pen-str unwhitespacify
+examples:
+- "This is a painting."
+info: on
+# filter: on
+completion: off
+insertion: off
+postprocessor: pen-str clean-alephalpha
+prettifier: pen-pretty-paragraph

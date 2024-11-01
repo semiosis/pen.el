@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: basename
+# group: 
+# key: bn
+# --
+bn = os.path.basename("/")

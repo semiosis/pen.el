@@ -1,0 +1,6 @@
+
+In emacs you can quit by typing "C-x C-c".
+In other words, hold "Ctrl" and press "x",
+then hold "Ctrl" again and press "c".
+In emacs the "C-" means "Control", not "Command"
+

@@ -1,0 +1,28 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 408
+Connection: keep-alive
+Date: Wed, 18 Oct 2023 02:02:22 GMT
+Last-Modified: Wed, 18 Oct 2023 00:49:33 GMT
+x-amz-version-id: GX.3WrK7SK2DjiVSdPs0hisXKOfPsM.7
+ETag: "e4306f8705f665f020f0ebd0088262c9"
+x-amz-storage-class: INTELLIGENT_TIERING
+Server: AmazonS3
+X-Cache: Hit from cloudfront
+Via: 1.1 4acb5efdd4b252788b64d73e2726c236.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD1-C1
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: uslBytyQ-RhRoV6JrxNlfytZqShw-XldDoX6LqS3fpuGtDsZsowOSA==
+Age: 1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="0;URL=../../../core/ops/trait.Deref.html">
+    <title>Redirection</title>
+</head>
+<body>
+    <p>Redirecting to <a href="../../../core/ops/trait.Deref.html">../../../core/ops/trait.Deref.html</a>...</p>
+    <script>location.replace("../../../core/ops/trait.Deref.html" + location.search + location.hash);</script>
+</body>
+</html>

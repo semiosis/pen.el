@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Bower
+# contributor: Toptal & contributors
+# key: bower
+# --
+
+### Bower ###
+
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp

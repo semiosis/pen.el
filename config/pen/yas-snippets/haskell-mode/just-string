@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: just-string
+# group: maybe
+# key: js
+# --
+(Just "Hello, World!")

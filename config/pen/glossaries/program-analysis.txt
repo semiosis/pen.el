@@ -1,0 +1,80 @@
+reaching definition
+    [#compiler theory]
+
+    Reaching definition for a given
+    instruction is an earlier instruction
+    whose target variable can reach (be
+    assigned to) the given one without an
+    intervening assignment.
+
+    For example, in the following code:
+
+    d1 : y := 3
+    d2 : x := y
+
+    d1 is a reaching definition for d2.
+
+    In the following, example, however:
+
+    d1 : y := 3
+    d2 : y := 4
+    d3 : x := y
+
+    d1 is no longer a reaching definition for
+    d3, because d2 kills its reach: the value
+    defined in d1 is no longer available and
+    cannot reach d3.
+
+reaching definition analysis
+    A data-flow analysis which statically
+    determines which definitions may reach a
+    given point in the code.
+
+intermediate representation
+IR
+    [#program analysis]
+
+SSA
+Static single assignment form
+    [property of an IR]
+
+    Requires that each variable be assigned
+    exactly once, and every variable be
+    defined before it is used.
+    
+    Existing variables in the original IR are
+    split into versions, new variables
+    typically indicated by the original name
+    with a subscript in textbooks, so that
+    every definition gets its own version.
+    
+    In SSA form, use-def chains are explicit
+    and each contains a single element.
+
+    SSA was proposed by Barry K. Rosen, Mark
+    N. Wegman, and F. Kenneth Zadeck in
+    1988.[1] Ron Cytron, Jeanne Ferrante and
+    the previous three researchers at IBM
+    developed an algorithm that can compute
+    the SSA form efficiently.[2]
+
+    One can expect to find SSA in a compiler
+    for Fortran or C, whereas in functional
+    language compilers, such as those for
+    Scheme and ML, continuation-passing style
+    (CPS) is generally used.
+    
+    SSA is formally equivalent to a well-
+    behaved subset of CPS excluding non-local
+    control flow, which does not occur when
+    CPS is used as intermediate
+    representation.
+    
+    So optimizations and transformations
+    formulated in terms of one immediately
+    apply to the other.
+
+free-form syntax
+    vim +/"free-form syntax" "$NOTES/ws/m4/remember.org"
+
+    vs line-based syntax.

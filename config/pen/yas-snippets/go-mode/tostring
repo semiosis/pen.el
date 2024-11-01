@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tostring
+# key: tostring
+# --
+string(bytes)

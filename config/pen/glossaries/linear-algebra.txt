@@ -1,0 +1,28 @@
+syzygy module 
+    https://en.wikipedia.org/wiki/Linear_relation
+
+linear relation
+    https://en.wikipedia.org/wiki/Linear_relation
+
+spectrum [of a matrix]
+    [#math]
+
+    The set of its eigenvalues.
+
+Eigenvectors and eigenvalues
+    Are ubiquitous because they characterize
+    linear transformations.
+    
+linear transformation
+    [operation]
+
+    Stretch, squeeze, rotate or otherwise
+    change all parts of an object in the same
+    way.
+
+    Represented by rectangular arrays of
+    numbers called matrices.
+
+    One matrix might rotate an object by 90
+    degrees; another might flip it upside down
+    and shrink it in half.

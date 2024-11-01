@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: raii
+# group: idioms
+# key: raii
+# --
+# If one-off
+(print "set things up")
+(try
+(print "do something")
+(finally (print "tear things down")))
+
+# If performed multiple times
+(defclass controlled_execution []
+  (defn __enter__ [self]
+    (print "set things up")
+    "thing")
+  (defn __exit__ [self type value traceback]
+    (print "tear things down")
+    (isinstance value TypeError)))
+(with [thing (controlled_execution)] (print "some code"))

@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "open" "https://www.youtube.com/watch?v=l8pCbtLeXzc&list=RDnmBcTrDu4O4&index=3&ab_channel=ShaneandShane" "#" "<==" "ff"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "open" "https://www.youtube.com/watch?v=l8pCbtLeXzc&list=RDnmBcTrDu4O4&index=3&ab_channel=ShaneandShane" "#" "<==" "ff"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "open" "https://www.youtube.com/watch?v=l8pCbtLeXzc&list=RDnmBcTrDu4O4&index=3&ab_channel=ShaneandShane" "#" "<==" "ff"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "open" "https://www.youtube.com/watch?v=l8pCbtLeXzc&list=RDnmBcTrDu4O4&index=3&ab_channel=ShaneandShane" "#" "<==" "ff"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "open" "https://www.youtube.com/watch?v=l8pCbtLeXzc&list=RDnmBcTrDu4O4&index=3&ab_channel=ShaneandShane" "#" "<==" "ff"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "open" "https://www.youtube.com/watch?v=l8pCbtLeXzc&list=RDnmBcTrDu4O4&index=3&ab_channel=ShaneandShane" "#" "<==" "ff"

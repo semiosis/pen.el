@@ -1,0 +1,9 @@
+lexicographic order
+    A generalization of the alphabetical order
+    of the dictionaries to sequences of
+    ordered symbols or, more generally, of
+    elements of a totally ordered set.
+
+    There are several variants and
+    generalizations of the lexicographical
+    ordering.

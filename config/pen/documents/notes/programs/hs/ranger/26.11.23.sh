@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/devotionals;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/devotionals;  "ranger" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "ranger" "#" "<==" "zsh"
+cd /root/repos;  "ranger" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/aindilis;  "ranger" "#" "<==" "zsh"

@@ -1,0 +1,16 @@
+title: micro horror story (2-3 sentences)
+tags: fun writing
+prompt: |
+  Topic: Breakfast
+  Two-Sentence Horror Story: He always stops crying when I pour the milk on his cereal. I just have to remember not to let him see his face on the carton.
+  <delim>
+  Topic: <1>
+  Two-Sentence Horror Story:
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- topic

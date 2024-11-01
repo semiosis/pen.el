@@ -1,0 +1,33 @@
+instrumental convergence
+    The hypothetical tendency for most
+    sufficiently intelligent agents to pursue
+    potentially unbounded instrumental goals
+    provided that their ultimate goals are
+    themselves unlimited.
+
+    Posits that an intelligent agent with
+    unbounded but apparently harmless goals
+    can act in surprisingly harmful ways.
+    
+    For example, a computer with the sole,
+    unconstrained goal of solving an
+    incredibly difficult mathematics problem
+    like the Riemann hypothesis could attempt
+    to turn the entire Earth into one giant
+    computer in an effort to increase its
+    computational power so that it can succeed
+    in its calculations.
+
+explicit bias
+    [#ai safety]
+
+    Where output is clearly toxic (cursing,
+    slander).
+
+implicit bias
+    [#ai safety]
+
+    Where the policy from the output changes
+    based on context (e.g. opposition to
+    programs that help certain groups,
+    probabilities about roles).

@@ -1,0 +1,62 @@
+mitmproxy
+man-in-the-middle proxy
+    A console tool that allows interactive
+    examination and modification of HTTP
+    traffic.
+    
+    It differs from mitmdump in that all flows
+    are kept in memory, which means that it´s
+    intended for taking and manipulating
+    smallish samples.
+    
+    Use the ? shortcut key to view, context-
+    sensitive documentation from any mitmproxy
+    screen.
+
+Filter expressions
+    Many commands in the mitmproxy tool make use of filter expressions. Filter
+    expressions consist of the following operators:        
+    
+    ~a  Match asset in response: CSS, Javascript, Flash, images.  
+    ~b regex  Body  
+    ~bq regex  Request body  
+    ~bs regex  Response body  
+    ~c int  HTTP response code  
+    ~d regex  Domain  
+    ~dst regex  Match destination address  
+    ~e  Match error  
+    ~h regex  Header  
+    ~hq regex  Request header  
+    ~hs regex  Response header  
+    ~http  Match HTTP flows  
+    ~m regex  Method  
+    ~marked  Match marked flows  
+    ~q  Match request with no response  
+    ~s  Match response  
+    ~src regex  Match source address  
+    ~t regex  Content-type header  
+    ~tcp  Match TCP flows  
+    ~tq regex  Request Content-Type header  
+    ~ts regex  Response Content-Type header  
+    ~u regex  URL  
+    ~websocket  Match WebSocket flows (and HTTP-WebSocket handshake flows)  
+    !  unary not  
+    &  and  
+    |  or  
+    (...)  grouping  
+    
+    - Regexes are Python-style
+    - Regexes can be specified as quoted strings
+    - Header matching (~h, ~hq, ~hs) is against a string of the form “name: value”.
+    - Strings with no operators are matched against the request URL.
+    - The default binary operator is &.
+
+mitmdump
+    The command-line companion to mitmproxy.
+    
+    It provides tcpdump-like functionality to
+    let you view, record, and programmatically
+    transform HTTP traffic.
+    
+    See the --help flag output for complete
+    documentation.

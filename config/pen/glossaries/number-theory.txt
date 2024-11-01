@@ -1,0 +1,10 @@
+Green–Tao theorem
+    The sequence of prime numbers contains
+    arbitrarily long arithmetic progressions.
+    In other words, for every natural number
+    k, there exist arithmetic progressions of
+    primes with k terms.
+
+Mersenne prime
+    A prime number of the form 2 p −1, where p
+    is also prime number.

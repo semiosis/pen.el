@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: getopts
+# key: getopts
+# --
+(for
+    ([arg (current-command-line-arguments)])
+  (displayln arg))

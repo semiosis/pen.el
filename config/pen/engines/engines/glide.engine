@@ -1,0 +1,29 @@
+engine-title: GLIDE
+include: Offline
+model: DummyModel
+foundation: false
+lm-command: "glide-complete.sh"
+engine-delimiter: "\n\n"
+# For the API
+default-temperature: 0.0
+force-n-jobs: 1
+modes:
+- text-to-image
+# modes:
+# - search
+# - classification
+# 'layers' is like 'provides'. see glossary
+layers:
+- foundation
+- nl
+- code
+- vision
+# Pick this engine when you need 'just' NL ∩ Code
+specialities:
+- nl+vision
+# e.g. may also put finetuning labels at the end
+# - python
+engine-min-tokens: 0
+engine-whitespace-support: yes
+engine-max-tokens: 2048
+upstream-engine: Offline

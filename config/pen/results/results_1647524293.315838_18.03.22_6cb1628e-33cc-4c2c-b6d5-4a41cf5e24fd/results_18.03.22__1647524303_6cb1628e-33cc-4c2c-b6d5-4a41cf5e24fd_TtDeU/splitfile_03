@@ -1,0 +1,3 @@
+Once upon a time, your author was a young Clojure developer. He worked on NLP data in Clojure, and struggled to find a tokenization library that would cleanly return sequences of the type that he was accustomed to in Clojure (vectors of the form ["a" "token" "string"]).(ns clojure-interop-with-python-nlp-libraries-testbed.core
+  (:gen-class)
+  (:require [libpython-clj2.require :refer [require-python]]

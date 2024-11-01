@@ -1,0 +1,15 @@
+_separator
+
+field_separator_in_quotes
+
+index_file
+
+tag_marker
+
+tag_field_name
+"""
+
+
+class OptionsParser(object):
+    """
+    Parses

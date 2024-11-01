@@ -1,0 +1,15 @@
+"definterface" is a macro that defines a new interface.
+
+It takes two arguments:
+  - A name for the interface
+  - A list of method names
+
+It returns a function that takes two arguments:
+  - A name for the implementation
+  - A list of method implementations
+
+Each method implementation is a function that takes two arguments:
+  - A list of method arguments
+  - An optional map of method options
+
+The method arguments are the arguments that the method will

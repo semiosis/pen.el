@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el;  "xterm" "-ls" "-fs" "26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.emacs.d/host/pen.el; cat \"/root/.pen/tmp/tf_tempvrxTZCc.txt\" | /root/.pen/tmp/nsfa--in-pen-in-tm-v-root-pen-documents-notes.sh" "#" "<==" "pen-xt"

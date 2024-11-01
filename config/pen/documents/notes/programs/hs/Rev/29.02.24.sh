@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "Rev" "21:4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Rev" "21:4" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Rev" "21:4" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Rev" "20:6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rev" "22:9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rev" "7:9-12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rev" "22:9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Rev" "20:6" "#" "<==" "zsh"

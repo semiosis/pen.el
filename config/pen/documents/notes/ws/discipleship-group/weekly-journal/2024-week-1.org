@@ -1,0 +1,577 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 1
+
+* D-Group weekly session notes
+Started working on it: <2024-01-05 Fri>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s&ab_channel=CHRISTIANPiano][Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene 🍁CHRISTIAN piano]]
+
+| Scripture Memory | Reading for HEAR Journals |
+|------------------+---------------------------|
+| [[sh:bible-read-passage nasb Matthew 5:1-2][Matthew 5:1-2]]    | [[sh:bible-study-passage nasb Luke 1-5][Luke 1-5]]                  |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+Story bullet points (over entire reading):
+- Luke is writing down his acccount of events surrounding Jesus Christ's life
+  and ministry, having stated he has a perfect
+  understanding from the beginning.
+- Zacharias and his wife Elizabeth were walking in all the commandments
+  and ordinances of the Lord blameless, but Elizabeth was barren and they
+  became old but Gabriel, an angel of the Lord appeared to Zacharias,
+  while Zacharias was on duty serving at the temple.
+- I feel like Zacharias seemed like an ordinary old guy serving at the temple
+  but who was following God's commandments but for a priest to be startled
+  by a vision of an angel, and gripped by fear from it, he must not have
+  experienced such things before.
+- [[sh:bible-read-passage nasb Luke 1:16]]
+  And he will turn many of the sons of Israel back to the Lord their God.
+- Zacharias was told he would name the child John.
+  The child, John, would be filled with the Holy Ghost, even from his
+  mother's womb. However, John was not conceived by the Holy Ghost.
+- Zacharias wanted further evidence, so Gabriel struck him dumb for his
+  disbelief.
+- Gabriel went to Mary next and told her she would bear the Son of God.
+  [[sh:bible-read-passage nasb Luke 1:35]]
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Matthew 5:1-2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:1-2
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+When Jesus saw the crowds, He went up on the
+mountain; and after He sat down, His disciples
+came to Him.
+
+He opened His mouth and began to teach them,
+saying,
+
+(NASB)
+#+end_src
+
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
+Reading: [[sps:nasb Luke 1-5]]
+
+** H.E.A.R journal entry for verse [[sh:bible-read-passage Luke 1:17][Luke 1:17]]
+*** H ([h]ighlight a verse that stood out in the reading)
+**** Personal righteous living is a thing - and there is an attitude
+e:/volumes/home/shane/notes/ws/bible-studies/enter-into-kingdom-of-heaven.org
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 1:17
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:17
+‾‾‾‾‾‾‾‾‾
+It is he who will go as a forerunner before
+Him in the spirit and power of Elijah, to turn
+the hearts of the fathers back to the
+children, and the disobedient to the attitude
+of the righteous, so as to make ready a people
+prepared for the Lord.”
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  rlt Luke 1:17
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:17
+‾‾‾‾‾‾‾‾‾
+And he shall go before him in the spirit and
+power of Elijah, to turn the hearts of the
+fathers to the children, and the disobedient
+to the wisdom of the just; to make ready a
+people prepared for the Lord.
+
+(RLT)
+#+end_src
+
+- John's parents diligently served the Lord, blamelessly
+  walking in God's commandments.
+
+- John was born from them. John was filled with the Holy Ghost from birth
+  and turned people towards the wisdom of the just, to prepare people
+  for the Lord.
+
+- The attitude/wisdom of the justified sinner on the cross next to Jesus
+  - A repentant heart
+  - Striving to live without willfully sinning
+
+[[sh:bible-read-passage I John 2:4-6][I John 2:4-6]]
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+- Zacharias was going about routine service at the temple, when the
+  angel appeared and spoke to him.
+- God had saw Zacharias and Elizabeth as
+  righteous and walking blamelessly in his sight.
+- The angel said that, their son, John, would turn
+  people towards to the attitude/wisdom of the just, and coming to
+  Zacharias.
+- God sent Gabriel to righteous people to declare they would have a son
+  who would turn more people to the attritude/wisdom of the just,
+  preparing them for the Lord.
+- Zacharias wasn't fully believing - it's possible that
+  fear quenched his faith.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  bsb Luke 1:8-9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:8-9
+‾‾‾‾‾‾‾‾‾‾
+One day while Zechariah’s division was on duty
+and he was serving as priest before God, he
+was chosen by lot, according to the custom of
+the priesthood, to enter the temple of the
+Lord and burn incense.
+
+(engbsb2020eb)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  bsb Luke 1:12
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:12
+‾‾‾‾‾‾‾‾‾
+When Zechariah saw him, he was startled and
+gripped with fear.
+
+(engbsb2020eb)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 1:13
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:13
+‾‾‾‾‾‾‾‾‾
+But the angel said unto him, Fear not,
+Zacharias: for thy prayer is heard; and thy
+wife Elisabeth shall bear thee a son, and thou
+shalt call his name John.
+
+(RLT)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Proverbs 15:29 
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Proverbs 15:29
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+YHWH is far from the wicked: but he heareth
+the prayer of the righteous.
+
+(RLT)
+#+end_src
+
+God hears our prayers, even for petitions of such things as to have a child.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 1:14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:14
+‾‾‾‾‾‾‾‾‾
+And thou shalt have joy and gladness; and many
+shall rejoice at his birth.
+
+(RLT)
+#+end_src
+
+God lets you have joy and gladness in other things, but
+it's true that this joy was a gift from God, which is what
+the name 'John' means.
+
+Also, the prayer was in alignment with God's will.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 1:20
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:20
+‾‾‾‾‾‾‾‾‾
+And, behold, thou shalt be dumb, and not able
+to speak, until the day that these things
+shall be performed, because thou believest not
+my words, which shall be fulfilled in their
+season.
+
+(RLT)
+#+end_src
+
+God's words never return to Him empty.
+God's promises always come to pass.
+When God decrees something, it always come to pass.
+Nothing gets in the way of it.
+
+Zacharias and Elizabeth served the Lord humbly.
+
+Despite Zacharias's lapse of belief, him and his wife lived righteous
+lives in the sight of God, and God still blessed them.
+Indeed, God had decreed a blessing to them, and the blessing
+was part of God's plan, and God wasn't going to relent on the blessing,
+nor let anything get in the way of His plan coming to pass.
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+- I can live righteously in God's sight.
+  - I can avoid idolatry, adultery, theft, hate, covetousness, pride,
+    and every other thing the Lord hates.
+  - I can keep God's commandments and decrees, his precepts.
+- I can ask God for things that would give me joy.
+  - But God is the one who provides them.
+  - It glorifies God when we wait for God to provide for a want and God delivers.
+  - It glorifies God when we wait for God, even when it might
+    seem impossible, and then God delivers the impossible.
+  - If I don't receive the gift through waiting for God to provide, then it's stealing - it doesn't glorify God.
+- I can fear God, and serve God.
+- I can believe God.
+- I can have more faith in God.
+- I can encourage others to walk in the attitude / wisdom of the just.
+- I can expect God to win.
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+please, God, forgive me for making incursions towards getting the things
+I want, where I have not waited for You to provide them.
+Please, God, let me be allowed to remain in that place of waiting on You to provide for me.
+Please, God, help me to have the attitude and wisdom of the just, remaining faithful to your precepts, and Your commandments.
+In Jesus Christ's name I ask,
+AMEN!!
+
+** H.E.A.R journal entry for verse [[sh:bible-read-passage Luke 1:38][Luke 1:38]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 1:38
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:38
+‾‾‾‾‾‾‾‾‾
+And Mary said, “Behold, the bondslave of the
+Lord; may it be done to me according to your
+word.” And the angel departed from her.
+
+(NASB)
+#+end_src
+
+*** E ([e]xplain the context of the verse and what the writer may have been experiencing when they wrote it)
+
+Mary had just been visited by the angel Gabriel.
+
+- Mary was 'troubled' by the angel's words and wondered what kind
+  of greeting it might be.
+  - Unlike Zacharias, Mary was not gripped with fear by the angel, but
+    by the angel's words.
+- She believed Gabriel, and asked how it would happen.
+  - Unlike Zacharias, she did not ask for more evidence.
+- She recognised that she was not her own and belonged to the Lord.
+- Her attitude was more righteous than consenting to the Lord,
+  and it was never about consent. God had decreed something.
+- But she already had given her life to God, and God knew this.
+- She said, "May it happen to me according to your word."
+- Her attitude was obedience.
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+
+As a servant of God, I can consider my life entirely owned by the Lord.
+I can be more believing of God.
+I can be more obedient to God.
+I can be more trusting of that God's plan for me is better
+than my own plans.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  1 Corinthians 6:20
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+1 Corinthians 6:20
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+For ye are bought with a price: therefore
+glorify God in your body, and in your spirit,
+which are God’s.
+
+(RLT)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Romans 12:1
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Romans 12:1
+‾‾‾‾‾‾‾‾‾‾‾
+I beseech you therefore, brethren, by the
+mercies of God, that ye present your bodies a
+living sacrifice, holy, acceptable unto God,
+which is your reasonable service.
+
+(RLT)
+#+end_src
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+please help me to live by faith in You and faithfulness to You, trusting
+in You AND being faithful to You, and not have fear of what the pagans have fear of, which are materialistic concerns, but trusting in You that
+Your plans are best, and that Your words are reliable, and Your promises
+are reliable.
+Please always hear me when I pray, so I can live in that knowledge
+that You are always listening, and I can then live faithfully to
+you with what You have already spoken.
+Please forgive me for when I have come short of total service towards
+You, and help me to live a more holy life.
+In Jesus Christ's name I ask,
+AMEN!!
+
+Reading: [[sps:nasb Luke 1-5][Luke 1:50]]
+
+** H.E.A.R journal entry for verse [[sh:bible-read-passage Luke 1:50][Luke 1:50]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Luke 1:50-52
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 1:50-52
+‾‾‾‾‾‾‾‾‾‾‾‾
+And his mercy is on them that fear him from
+generation to generation.
+
+He hath shewed strength with his arm; he hath
+scattered the proud in the imagination of
+their hearts.
+
+He hath put down the mighty from their seats,
+and exalted them of low degree.
+
+(RLT)
+#+end_src
+
+[[sh:bible-read-passage nasb Luke 23:32-43][Luke 23:32-43]]
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Matthew 5:17-22
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:17-22
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+“Do not think that I came to abolish the Law
+or the Prophets; I did not come to abolish but
+to fulfill.
+
+For truly I say to you, until heaven and earth
+pass away, not the smallest letter or stroke
+shall pass from the Law until all is
+accomplished.
+
+Whoever then annuls one of the least of these
+commandments, and teaches others to do the
+same, shall be called least in the kingdom of
+heaven; but whoever keeps and teaches them, he
+shall be called great in the kingdom of
+heaven.
+
+“For I say to you that unless your
+righteousness surpasses that of the scribes
+and Pharisees, you will not enter the kingdom
+of heaven.
+
+“You have heard that the ancients were told,
+‘You shall not commit murder’ and ‘Whoever
+commits murder shall be liable to the court.’
+But I say to you that everyone who is angry
+with his brother shall be guilty before the
+court; and whoever says to his brother, ‘You
+good-for-nothing,’ shall be guilty before the
+supreme court; and whoever says, ‘You fool,’
+shall be guilty enough to go into the fiery
+hell.
+
+(NASB)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  asv Matthew 18:3-4
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 18:3-4
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+and said, Verily I say unto you, Except ye
+turn, and become as little children, ye shall
+in no wise enter into the kingdom of heaven.
+
+Whosoever therefore shall humble himself as
+this little child, the same is the greatest in
+the kingdom of heaven.
+
+(ASV)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  bsb Luke 23:39-43
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 23:39-43
+‾‾‾‾‾‾‾‾‾‾‾‾‾
+One of the criminals who hung there heaped
+abuse on Him.
+
+“Are You not the Christ?” he said.
+
+“Save Yourself and us!” But the other one
+rebuked him, saying, “Do you not even fear
+God, since you are under the same judgment?
+
+We are punished justly, for we are receiving
+what our actions deserve.
+
+But this man has done nothing wrong.” Then he
+said, “Jesus, remember me when You come into
+Your kingdom!” And Jesus said to him, “Truly I
+tell you, today you will be with Me in
+Paradise.”
+
+(engbsb2020eb)
+#+end_src
+
+Geoff:
+- Fear God, His mercy will be for me. Humble myself to Him.
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+Mary's soul was exalting the Lord and rejoicing in God her Saviour.
+Mary was also fearing the Lord and humbling herself before God.
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+Continue to fear God:
+- Do not take lightly his commandments and precepts.
+- Always try to remain faithful to God.
+Humble myself before God.
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+Please, God, please help me to have the faithfulness of
+Mary in my life, even when I'm going through life
+without being under intense supervision. Father God,
+Please help me to have the faithful trust
+that Mary had and hand over my entire life to You,
+that You may do with me as You will.
+Please, Father God, I am so sorry for [in my own life situations]
+coming short of the faithfulness and faith and trust towards You
+that Mary has exemplified.
+Please forgive me, LORD.
+I want to be more trusting.
+I want to be more faithful.
+Please forgive me, LORD.
+In Jesus Christ's name I ask,
+AMEN!!
+
+Reading: [[sps:nasb Luke 1-5][Luke 2:15]]
+
+** H.E.A.R journal entry for verse [[sh:bible-read-passage Luke 2:15][Luke 2:15]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  bsb Luke 2:13-14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 2:13-14
+‾‾‾‾‾‾‾‾‾‾‾‾
+And suddenly there appeared with the angel a
+great multitude of the heavenly host, praising
+God and saying: “Glory to God in the highest,
+and on earth peace to men on whom His favor
+rests!”
+
+(engbsb2020eb)
+#+end_src
+
+The peace that the angels were declaring God gives
+comes to those on whom His favor rests.
+This peace is only for those on whom His favour rests.
+God decides who gets his favour and the peace which He gives.
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+
+** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Luke 2:35 ][Luke 2:35]]
+*** H ([h]ighlight a verse that stood out in the reading)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 2:35
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 2:35
+‾‾‾‾‾‾‾‾‾
+and a sword will pierce even your own soul--to
+the end that thoughts from many hearts may be
+revealed.”
+
+(NASB)
+#+end_src
+
+*** E ([e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it)
+
+*** A (write down how I can [a]pply this Bible verse in my own life)
+
+*** R ([r]espond to the LORD in prayer)
+
+Dear Heavenly Father, Almighty Jehovah God,
+
+* Geoff's notes
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  Luke 2:49: And He said to them, “Why is it that you were looking for Me? Did you not know that I had to be in My Father’s house?”
+#+END_SRC
+
+Identity preceeds instructions.
+This is what Geoff is saying.
+Identity in Christ is crucial, as Jesus' identity in His Father is crucial.

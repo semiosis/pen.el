@@ -1,0 +1,549 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 15 Dec 2023 02:25:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Cookie
+Set-Cookie: session=.eJwVzDEOAjEMBdG75ARx7NgJl1nZP06DBBIgGsTdWbopnuZTDjwf-3jdr3k73q1cClUV6B4Dsqdas0xaI1hY2TgCCeugwAjx2WW4u4ISZ_sy4RVBxqkB9kyto_n_IenSrRpMdy4GyJusWWcQop-Yam5LLt8fCcsrzQ.ZXu5Cg.odAeuQuUvImzbGKlcTYCDR2MWJM; HttpOnly; Path=/
+X-Clacks-Overhead: GNU Terry Pratchett
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Permissions-Policy: interest-cohort=()
+Content-Security-Policy: default-src 'none'; style-src 'self' 'unsafe-inline'; img-src * data:; script-src 'self' 'unsafe-inline'
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+~fosskers/transducers.el -
+
+Ergonomic, efficient data processing for Emacs Lisp. -
+
+sourcehut git
+</title>
+<link href="/static/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="/static/logo.png" rel="icon" sizes="any" type="image/png"/>
+<link href="/static/main.min.df853ed0.css" rel="stylesheet"/>
+<meta content="git" name="vcs"/>
+<meta content="master" name="vcs:default-branch"/>
+<meta content="https://git.sr.ht/~fosskers/transducers.el" name="vcs:clone"/>
+<meta content="git@git.sr.ht:~fosskers/transducers.el" name="vcs:clone"/>
+<meta content="https://git.sr.ht/~fosskers/transducers.el" name="forge:summary"/>
+<meta content="https://git.sr.ht/~fosskers/transducers.el/tree/{ref}/{path}" name="forge:dir"/>
+<meta content="https://git.sr.ht/~fosskers/transducers.el/tree/{ref}/{path}" name="forge:file"/>
+<meta content="https://git.sr.ht/~fosskers/transducers.el/blob/{ref}/{path}" name="forge:rawfile"/>
+<meta content="https://git.sr.ht/~fosskers/transducers.el/tree/{ref}/{path}#L{line}" name="forge:line"/>
+<meta content="git.sr.ht/~fosskers/transducers.el git https://git.sr.ht/~fosskers/transducers.el" name="go-import"/>
+</head>
+<body>
+<nav class="container navbar navbar-light navbar-expand-sm">
+<span class="navbar-brand">
+<span aria-hidden="true" class="icon icon-circle"><svg height="22" viewbox="0 0 512 512" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"></path></svg>
+</span>
+<a href="https://sr.ht">
+    sourcehut
+  </a>
+</span>
+<ul class="navbar-nav">
+</ul>
+<div class="login">
+<span class="navbar-text">
+<a href="https://meta.sr.ht/oauth/authorize?client_id=25ff6e5ce60d7345&amp;scopes=profile,keys,b99a95de3e69c958/jobs:write&amp;state=%2F~fosskers%2Ftransducers.el%3F" rel="nofollow">Log in</a>
+    —
+    <a href="https://meta.sr.ht">Register</a>
+</span>
+</div>
+</nav>
+<div class="header-tabbed">
+<div class="container">
+<h2>
+<a href="/~fosskers/">~fosskers</a>/<wbr/>transducers.el
+    </h2>
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" href="/~fosskers/transducers.el">summary</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~fosskers/transducers.el/tree">tree</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~fosskers/transducers.el/log">log</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/~fosskers/transducers.el/refs">refs</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-extension">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+        Ergonomic, efficient data processing for Emacs Lisp.
+      </div>
+<div class="col-md-6 licenses">
+
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row" style="margin-bottom: 1rem">
+<div class="col-md-6">
+<div class="event-list" style="margin-bottom: 0.5rem">
+<div class="event">
+<div>
+<a href="/~fosskers/transducers.el/commit/8a80629d5af197005cea4dcb627a396c3237ed7c" title="8a80629d5af197005cea4dcb627a396c3237ed7c">8a80629d</a>
+  
+  —
+  
+  
+  <a href="/~fosskers/">Colin Woodbury</a>
+<small class="pull-right">
+<a href="/~fosskers/transducers.el/log?from=8a80629d5af197005cea4dcb627a396c3237ed7c#log-8a80629d5af197005cea4dcb627a396c3237ed7c" id="log-8a80629d5af197005cea4dcb627a396c3237ed7c"><span title="2023-11-26 01:26:15 UTC">19 days ago</span></a>
+</small>
+</div>
+<pre class="commit">docs: update usage notes</pre>
+</div>
+<div class="event">
+<div>
+<a href="/~fosskers/transducers.el/commit/657c8074b0d98bb191434c9bf074cf039105ac3a" title="657c8074b0d98bb191434c9bf074cf039105ac3a">657c8074</a>
+  
+  —
+  
+  
+  <a href="/~fosskers/">Colin Woodbury</a>
+<small class="pull-right">
+<a href="/~fosskers/transducers.el/log?from=657c8074b0d98bb191434c9bf074cf039105ac3a#log-657c8074b0d98bb191434c9bf074cf039105ac3a" id="log-657c8074b0d98bb191434c9bf074cf039105ac3a"><span title="2023-11-20 03:48:56 UTC">24 days ago</span></a>
+</small>
+</div>
+<pre class="commit">fix: reposition the setting of the shorthand</pre>
+</div>
+<div class="event">
+<div>
+<a href="/~fosskers/transducers.el/commit/711906b806c22e095be053328a0a0d8a80dadd3e" title="711906b806c22e095be053328a0a0d8a80dadd3e">711906b8</a>
+  
+  —
+  
+  
+  <a href="/~fosskers/">Colin Woodbury</a>
+<small class="pull-right">
+<a href="/~fosskers/transducers.el/log?from=711906b806c22e095be053328a0a0d8a80dadd3e#log-711906b806c22e095be053328a0a0d8a80dadd3e" id="log-711906b806c22e095be053328a0a0d8a80dadd3e"><span title="2023-11-20 01:48:31 UTC">25 days ago</span></a>
+</small>
+</div>
+<pre class="commit">docs: move the internal note about shorthanding</pre>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-4">
+<h3>refs</h3>
+<dl>
+<dt>master</dt>
+<dd>
+<a href="/~fosskers/transducers.el/tree">browse <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+<a href="/~fosskers/transducers.el/log">log <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+</dd>
+<dt>v1.0.0</dt>
+<dd>
+<a href="/~fosskers/transducers.el/tree/v1.0.0">browse <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+<a href="/~fosskers/transducers.el/archive/v1.0.0.tar.gz" rel="nofollow">.tar.gz <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span></a>
+</dd>
+</dl>
+</div>
+<div class="col-md-8">
+<h3>clone</h3>
+<dl>
+<dt>read-only</dt>
+<dd><a href="https://git.sr.ht/~fosskers/transducers.el">https://git.sr.ht/~fosskers/transducers.el</a></dd>
+<dt>read/write</dt>
+<dd>git@git.sr.ht:~fosskers/transducers.el</dd>
+</dl>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8 offset-md-4">
+<form action="/clone" method="POST">
+<input dir="auto" name="_csrf_token" type="hidden" value="1064c6f88c4f96727ee1d8b3436373bbcec75c1bc8b4a9548aaa6c1ec954ad743dbb173e6bc3aee6082a7ee14ea45707c76fed3cc1a24d909b1cb5bc310ef7e3"/>
+<input dir="auto" name="cloneUrl" type="hidden" value="https://git.sr.ht/~fosskers/transducers.el"/>
+<input dir="auto" name="name" type="hidden" value="transducers.el"/>
+<input dir="auto" name="description" type="hidden" value="Clone of https://git.sr.ht/~fosskers/transducers.el"/>
+<input dir="auto" name="visibility" type="hidden" value="UNLISTED"/>
+<button class="btn btn-primary btn-block" type="submit">
+              Clone repo to your account <span aria-hidden="true" class="icon icon-caret-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+</span>
+</button>
+<p class="text-muted text-centered">
+<small>
+                You can also use your local clone with
+                <a href="https://git-send-email.io">git send-email</a>.
+              </small>
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row" id="readme">
+<div class="col-md-10">
+<div class="content">
+<h1 class="title">Transducers: Ergonomic, efficient data processing</h1>
+<div>
+<h2>Table of Contents</h2>
+<div>
+<ul>
+<li><a href="#org52f4682" rel="nofollow noopener">1. History and Motivation</a></li>
+<li><a href="#orge15efb7" rel="nofollow noopener">2. Installation</a></li>
+<li><a href="#orgcd99e13" rel="nofollow noopener">3. Usage</a>
+<ul>
+<li><a href="#orgbc6139f" rel="nofollow noopener">3.1. Importing</a></li>
+<li><a href="#org858207f" rel="nofollow noopener">3.2. Transducers, Reducers, and Sources</a></li>
+<li><a href="#org8964846" rel="nofollow noopener">3.3. Using the <code>t-fold</code> Reducer</a></li>
+</ul>
+</li>
+<li><a href="#org14498d7" rel="nofollow noopener">4. Example Gallery</a>
+<ul>
+<li><a href="#orgfde69eb" rel="nofollow noopener">4.1. Words in a File</a></li>
+<li><a href="#org718eaab" rel="nofollow noopener">4.2. Reading and Writing CSV data</a></li>
+<li><a href="#org114b700" rel="nofollow noopener">4.3. Reducing into Property Lists and Assocation Lists</a></li>
+</ul>
+</li>
+<li><a href="#orge0949c9" rel="nofollow noopener">5. Issue Tracker and Mailing List</a></li>
+<li><a href="#org44bf4e1" rel="nofollow noopener">6. Resources</a></li>
+</ul>
+</div>
+</div>
+<blockquote>
+<p>
+I think Transducers are a fundamental primitive that decouples critical logic
+from list/sequence processing, and if I had to do Clojure all over I would put
+them at the bottom.
+</p>
+<p>
+– Rich Hickey
+</p>
+</blockquote>
+<p>
+Transducers are an ergonomic and extremely memory-efficient way to process a
+data source. Here "data source" means simple collections like Lists or Vectors,
+but also potentially large files or generators of infinite data.
+</p>
+<p>
+Transducers…
+</p>
+<ul class="org-ul">
+<li>allow the chaining of operations like <code>map</code> and <code>filter</code> without allocating memory between each step.</li>
+<li>aren't tied to any specific data type; they need only be implemented once.</li>
+<li>vastly simplify "data transformation code".</li>
+<li>have nothing to do with "lazy evaluation".</li>
+<li>are a joy to use!</li>
+</ul>
+<p>
+Example: <i>While skipping every second line of a file, sum the lengths of only
+evenly-lengthed lines.</i>
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(t-transduce
+  ;; How do we want to process each element?
+  (t-comp (t-step 2) (t-map #'length) (t-filter #'cl-evenp))
+  ;; How do we want to combine all the elements together?
+  #'+
+  ;; What's our original data source?
+  (t-file-read "README.org"))
+</pre>
+</div>
+<pre class="example">2120
+</pre>
+<p>
+Looking for Transducers in other Lisps? Check out the <a href="https://git.sr.ht/~fosskers/cl-transducers" rel="nofollow noopener">Common Lisp</a> and <a href="https://git.sr.ht/~fosskers/transducers.fnl" rel="nofollow noopener">Fennel</a>
+implementations!
+</p>
+<div class="outline-2">
+<h2 id="org52f4682"><span class="section-number-2">1.</span> History and Motivation</h2>
+<div class="outline-text-2">
+<p>
+Originally invented in Clojure and adapted to Scheme as SRFI-171, Transducers
+are an excellent way to think about - and efficiently operate on - collections
+or streams of data. Transduction operations are strict and don't involve
+"laziness" or "thunking" in any way, yet only process the exact amount of data
+you ask them to.
+</p>
+<p>
+This library is mostly a port of the <a href="https://git.sr.ht/~fosskers/cl-transducers" rel="nofollow noopener">Common Lisp implementation</a>, with a few
+alterations to account for the minor differences between Common Lisp and Emacs
+Lisp.
+</p>
+</div>
+</div>
+<div class="outline-2">
+<h2 id="orge15efb7"><span class="section-number-2">2.</span> Installation</h2>
+<div class="outline-text-2">
+<p>
+This package is not (yet) available on MELPA.
+</p>
+</div>
+</div>
+<div class="outline-2">
+<h2 id="orgcd99e13"><span class="section-number-2">3.</span> Usage</h2>
+<div class="outline-text-2">
+</div>
+<div class="outline-3">
+<h3 id="orgbc6139f"><span class="section-number-3">3.1.</span> Importing</h3>
+<div class="outline-text-3">
+<p>
+Since this is just a library, you can import it as usual:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(require 'transducers)
+</pre>
+</div>
+<p>
+Every function in the library is prefixed by <code>transducers-</code> but you're encouraged
+to use <code>read-symbol-shorthands</code> to shorten this to <code>t-</code>. This can be done
+interactively in your own files via <code>add-file-local-variable-prop-line</code>, which you
+can use to set your top line to:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; -*- read-symbol-shorthands: (("t-" . "transducers-")); -*-
+</pre>
+</div>
+<p>
+or via <code>add-file-local-variable</code>, which results in:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; Local Variables:
+;; read-symbol-shorthands: (("t-" . "transducers-"))
+;; End:
+</pre>
+</div>
+<p>
+at the bottom of the file. After this, you can make relatively clean calls like:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(t-transduce (t-map #'1+) #'t-vector '(1 2 3))
+</pre>
+</div>
+<pre class="example">[2 3 4]
+</pre>
+<p>
+This can also be done in <code>.org</code> files, so that Transducers can be used in their
+short forms even in Babel source blocks. That's exactly what this README does!
+</p>
+<p>
+The remaining examples below use <code>t-</code> for brevity.
+</p>
+</div>
+</div>
+<div class="outline-3">
+<h3 id="org858207f"><span class="section-number-3">3.2.</span> Transducers, Reducers, and Sources</h3>
+<div class="outline-text-3">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; The fundamental pattern.
+(t-transduce &lt;transducer-chain&gt; &lt;reducer&gt; &lt;source&gt;)
+</pre>
+</div>
+<p>
+Data processing largely has three concerns:
+</p>
+<ol class="org-ol">
+<li>Where is my data coming from? (sources)</li>
+<li>What do I want to do to each element? (transducers)</li>
+<li>How do I want to collect the results? (reducers)</li>
+</ol>
+<p>
+Each full "transduction" requires all three. We pass one of each to the
+<code>t-transduce</code> function, which drives the process. It knows how to pull values from
+the source, feed them through the transducer chain, and wrap everything together
+via the reducer.
+</p>
+<ul class="org-ul">
+<li>Typical transducers are <code>t-map</code>, <code>t-filter</code>, and <code>t-take</code>.</li>
+<li>Typical reducers are <code>+</code>, <code>t-count</code>, <code>t-cons</code>, and <code>t-fold</code>.</li>
+<li>Typical sources are lists, vectors, strings, hash tables, and files.</li>
+</ul>
+<p>
+<i>Generators</i> are a special kind of source that yield infinite data. Typical
+generators are <code>t-repeat</code>, <code>t-cycle</code>, and <code>t-ints</code>.
+</p>
+<p>
+Let's sum the squares of the first 1000 odd integers:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(t-transduce
+ (t-comp (t-filter #'cl-oddp)          ;; (2) Keep only odd numbers.
+         (t-take 1000)                 ;; (3) Keep the first 1000 filtered odds.
+         (t-map (lambda (n) (* n n)))) ;; (4) Square those 1000.
+ #'+         ;; (5) Reducer: Add up all the squares.
+ (t-ints 1)) ;; (1) Source: Generate all positive integers.
+</pre>
+</div>
+<pre class="example">1333333000
+</pre>
+<p>
+Two things of note here:
+</p>
+<ol class="org-ol">
+<li><code>t-comp</code> is used here to chain together different transducer steps. Notice that
+the order appears "backwards" from usual function composition. It may help to
+imagine that <code>t-comp</code> is acting like the <code>thread-last</code> macro here.</li>
+<li>The reduction via <code>+</code> is listed as Step 5, but really it's occuring throughout
+the transduction process. Each value that makes it through the composed
+transducer chain is immediately added to an internal accumulator.</li>
+</ol>
+<p>
+Explore the other transducers and reducers to see what's possible! You'll never
+write a <code>loop</code> again.
+</p>
+</div>
+</div>
+<div class="outline-3">
+<h3 id="org8964846"><span class="section-number-3">3.3.</span> Using the <code>t-fold</code> Reducer</h3>
+<div class="outline-text-3">
+<p>
+A <i>reducer</i> is a function that "reduces" or "folds" the results of the transducer
+chain into some single value. This could be a collection or some scalar. Some
+reducers can even short-circuit, yielding a desired value early.
+</p>
+<p>
+<code>t-fold</code> is the ultimate reducer, and thus deserves special attention. <code>t-fold</code>
+creates an ad-hoc reducer based on a given 2-argument function. An optional seed
+can be given as the initial accumulator value, which also becomes the
+return value in case there were no input left in the transduction.
+</p>
+<p>
+The normal CL functions <code>+</code> and <code>*</code> are automatically valid reducers, because they
+yield sane values even when given 0 or 1 arguments. Other functions like <code>max</code>
+cannot be used as-is as reducers since they can't be called without arguments.
+For functions like this, <code>t-fold</code> is appropriate.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; The length of the longest word in this README.
+(let ((xf (t-comp (t-map #'split-string)
+                  #'t-concatenate
+                  (t-filter (lambda (w) (string-match-p "^[a-zA-Z]+$" w)))
+                  (t-map #'length))))
+  (t-transduce xf (t-fold #'max) (t-file-read "README.org")))
+</pre>
+</div>
+<pre class="example">14
+</pre>
+<p>
+In Clojure this function is called <code>completing</code>.
+</p>
+</div>
+</div>
+</div>
+<div class="outline-2">
+<h2 id="org14498d7"><span class="section-number-2">4.</span> Example Gallery</h2>
+<div class="outline-text-2">
+</div>
+<div class="outline-3">
+<h3 id="orgfde69eb"><span class="section-number-3">4.1.</span> Words in a File</h3>
+<div class="outline-text-3">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(t-transduce (t-comp (t-map #'split-string)
+                     #'t-concatenate)
+             #'t-count
+             (t-file-read "README.org"))
+</pre>
+</div>
+<pre class="example">1101
+</pre>
+</div>
+</div>
+<div class="outline-3">
+<h3 id="org718eaab"><span class="section-number-3">4.2.</span> Reading and Writing CSV data</h3>
+<div class="outline-text-3">
+<p>
+This library also provides two transducers for processing CSV data: <code>t-from-csv</code>
+and <code>t-into-csv</code>. The original data can come from any source, like a file, open
+buffer, or raw string.
+</p>
+<p>
+<code>t-from-csv</code> reads the data into a stream of Hash Tables with each value keyed to
+the fields provided in the first line. <code>t-into-csv</code> reverses the process, given a
+sequence of headers to select.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(t-transduce (t-comp #'t-from-csv
+                     (t-into-csv ["Age" "Name"]))
+             #'t-cons
+             ["Name,Age,Hair" "Alice,35,Blond" "Bob,26,Black"])
+</pre>
+</div>
+<pre class="example">("Age,Name" "35,Alice" "26,Bob")
+</pre>
+<p>
+Here we're immediately converting back into CSV strings, but with <code>t-comp</code> we're
+free to add as many intermediate steps as we like.
+</p>
+</div>
+</div>
+<div class="outline-3">
+<h3 id="org114b700"><span class="section-number-3">4.3.</span> Reducing into Property Lists and Assocation Lists</h3>
+<div class="outline-text-3">
+<p>
+There is no special reducer function for plists, because none is needed. If you
+have a stream of cons cells, you can break it up with <code>t-uncons</code> and then collect
+with <code>t-cons</code> as usual:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(t-transduce (t-comp (t-map (lambda (pair) (cons (car pair) (1+ (cdr pair)))))
+                     #'t-uncons)
+             #'t-cons
+             (t-plist '(:a 1 :b 2 :c 3)))
+</pre>
+</div>
+<pre class="example">(:a 2 :b 3 :c 4)
+</pre>
+<p>
+Likewise, Association Lists are already lists-of-cons-cells, so no special
+treatment is needed:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(t-transduce #'t-pass #'t-cons '((:a . 1) (:b . 2) (:c . 3)))
+</pre>
+</div>
+<pre class="example">((:a . 1) (:b . 2) (:c . 3))
+</pre>
+</div>
+</div>
+</div>
+<div class="outline-2">
+<h2 id="orge0949c9"><span class="section-number-2">5.</span> Issue Tracker and Mailing List</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li><a href="https://todo.sr.ht/~fosskers/transducers" rel="nofollow noopener">Issue Tracker</a></li>
+<li><a href="https://lists.sr.ht/~fosskers/transducers" rel="nofollow noopener">Mailing List</a></li>
+</ul>
+</div>
+</div>
+<div class="outline-2">
+<h2 id="org44bf4e1"><span class="section-number-2">6.</span> Resources</h2>
+<div class="outline-text-2">
+<ul class="org-ul">
+<li><a href="https://clojure.org/reference/transducers" rel="nofollow noopener">Clojure: Transducers</a></li>
+<li><a href="https://clojure.org/guides/faq#transducers_vs_seqs" rel="nofollow noopener">Clojure: What are good uses cases for transducers?</a></li>
+<li><a href="https://www.youtube.com/watch?v=4KqUvG8HPYo" rel="nofollow noopener">Youtube: Inside Transducers</a> (Rich Hickey)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="status">
+<p class="date">Created: 2023-11-26 Sun 01:29</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer" rel="nofollow noopener">Validate</a></p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

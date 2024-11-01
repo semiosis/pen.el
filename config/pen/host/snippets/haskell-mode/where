@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: where
+# group: examples
+# key: where
+# expand-env: ((yas-indent-line 'fixed))
+# --
+minutesPerDay = minutesPerHour * hoursPerDay
+  where minutesPerHour = 60
+        hoursPerDay = 24

@@ -1,0 +1,3 @@
+
+(map second (map first (first (sliding 2))))
+

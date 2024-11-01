@@ -1,0 +1,31 @@
+task: "imagine evaluating emacs lisp"
+doc: "Given some elisp return the imagined result"
+tags: ilambda code
+prompt-version: 1
+prompt: |+
+  <code-or-comment>
+  (message (eval <expression>))
+  --> 
+engine: "OpenAI Codex"
+temperature: 0.2
+max-generated-tokens: 200
+top-p: 1.0
+cache: on
+# This prepends the previously selected prompt+generation
+# to obtain consistency in output.
+# This is useful for mocking APIs.
+prepend-previous: on
+stop-sequences:
+- "\n"
+vars:
+- "code or comment"
+- "expression"
+validator: "grep -qv '(:return'"
+examples:
+- |-
+    (defun double-number (x)
+      (x * x))
+- "(double-number 5)"
+filter: on
+completion: off
+insertion: off

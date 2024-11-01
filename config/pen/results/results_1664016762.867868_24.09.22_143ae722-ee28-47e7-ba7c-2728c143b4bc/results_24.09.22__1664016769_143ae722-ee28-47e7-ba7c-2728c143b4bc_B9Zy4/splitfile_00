@@ -1,0 +1,6 @@
+
+  (loop [a (first list)
+         b (rest list)
+         acc '()]
+    (let [acc (conj acc (list a b))]
+      (if (= b nil)

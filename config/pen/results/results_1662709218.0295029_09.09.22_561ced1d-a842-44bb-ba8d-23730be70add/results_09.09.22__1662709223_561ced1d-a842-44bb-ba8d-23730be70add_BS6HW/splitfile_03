@@ -1,0 +1,1 @@
+newtype Result = Success Int | Failure String

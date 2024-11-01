@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "6:26" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "7:26" "#" "<==" "bash"
+cd /root/notes;  "Romans" "8:1" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "7:26" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "7:26-27" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "8:1-2" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "Romans" "6:23" "#" "<==" "bash"

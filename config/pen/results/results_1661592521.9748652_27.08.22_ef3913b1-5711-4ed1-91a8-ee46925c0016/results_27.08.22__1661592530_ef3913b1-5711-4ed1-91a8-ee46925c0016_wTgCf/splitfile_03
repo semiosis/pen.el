@@ -1,0 +1,65 @@
+
+
+  -- Parse each record into a list of fields.
+  fields <- records \\ ","
+
+  -- Print the number of fields in each record.
+  mapM_ putStrLn $ map (length . fields) records
+EOD
+
+# haskell files
+
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main = do lines <- L.readFile "-" records <- decodeUtf8 <$> lines fields <- records \\ "," mapM_ putStrLn $ map (length . fields) records EOD

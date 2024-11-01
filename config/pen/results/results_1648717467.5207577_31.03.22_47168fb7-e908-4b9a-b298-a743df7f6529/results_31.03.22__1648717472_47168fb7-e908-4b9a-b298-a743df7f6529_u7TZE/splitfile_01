@@ -1,0 +1,3 @@
+
+Braces are used to protect data, especially records, together with the constructor name,
+so that the compiler can check their type.

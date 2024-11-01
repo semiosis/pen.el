@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: print line
+# group: do
+# key: pl
+# --
+main = do
+    putStrLn $ "haskell " ++ "lang"

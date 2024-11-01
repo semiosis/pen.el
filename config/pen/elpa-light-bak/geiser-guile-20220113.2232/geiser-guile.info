@@ -1,0 +1,118 @@
+This is geiser-guile.info, produced by makeinfo version 6.7 from
+geiser-guile.texi.
+
+INFO-DIR-SECTION Emacs
+START-INFO-DIR-ENTRY
+* Geiser Guile: (geiser-guile). Support for Guile in Geiser.
+END-INFO-DIR-ENTRY
+
+
+File: geiser-guile.info,  Node: Top,  Next: Overview,  Up: (dir)
+
+Geiser and Guile talk to each other
+***********************************
+
+* Menu:
+
+* Overview::
+* Start up::
+* Debugging support::
+* Tramp support::
+
+
+File: geiser-guile.info,  Node: Overview,  Next: Start up,  Prev: Top,  Up: Top
+
+Overview
+********
+
+This package provides support for using GNU Guile
+(https://www.gnu.org/software/guile/) in Emacs with Geiser
+(http://geiser.nongnu.org).
+
+   Provided geiser (https://gitlab.com/emacs-geiser/geiser) is installed
+in your system, if this package’s directory is in your load path, just
+add ‘(require 'geiser-guile)’ to your initialisation files and then ‘M-x
+run-guile’ to start a REPL.  Scheme files with a Guile module
+declaration should be automatically recognised as Guile-flavoured Geiser
+buffers.
+
+   The easiest way of installing this package is using NonGNU Elpa or
+MELPA.  If you’re in Emacs 28 or higher, the former is already enabled
+and all you need is the familiar
+
+     M-x install-package RET geiser-guile RET
+
+   That will also install geiser, and its fine info manual.  Please
+refer to it (or its online version (https://geiser.nongnu.org)) for a
+general description of how geiser schemes work.  We provide below some
+additional details specific to geiser-guile.
+
+
+File: geiser-guile.info,  Node: Start up,  Next: Debugging support,  Prev: Overview,  Up: Top
+
+Start up
+********
+
+When launching the Guile REPL, geiser will invoke the binary configured
+in ‘geiser-guile-binary’ (simply "guile" by default) which in turn will
+load ‘geiser-guile-init-file’, if any.
+
+   Note, however, that specifying ‘geiser-guile-init-file’ is _not_
+equivalent to changing Guile’s initialization file (‘~/.guile’), because
+the former is loaded using the ‘-l’ flag, together with ‘-q’ to disable
+loading the second.  But there are subtle differences in the way Guile
+loads the initialization file versus how it loads a file specified via
+the ‘-l’ flag.  If what you want is just loading ‘~/.guile’, leave
+‘geiser-guile-init-file’ alone and set ‘geiser-guile-load-init-file-p’
+to ‘t’ instead.
+
+   One can also provide a global list of paths to add to Guile’s
+‘%load-path’ via ‘geiser-guile-load-path’.
+
+
+File: geiser-guile.info,  Node: Debugging support,  Next: Tramp support,  Prev: Start up,  Up: Top
+
+Debugging support
+*****************
+
+Guile supports all the debugger commands supported by Geiser (it’s in
+fact used as the reference for the implementation and design of that
+support).  When the REPL would normally enter its debug mode, with a
+prompt of the style:
+
+   scheme@(guile-user) [1]>
+
+   showing a debugging level, Geiser will instead bring you to the
+‘*Geiser Dbg*’ buffer, where you can access a menu of debugging commands
+via the ‘,’ (comma) key.
+
+   The geiser-guile customization group will show you, among many other,
+a few flags fine-tuning interaction with the debugger, as well as things
+like the detail level of error messages (e.g.  via
+‘geiser-guile-warning-level’).
+
+
+File: geiser-guile.info,  Node: Tramp support,  Prev: Debugging support,  Up: Top
+
+Tramp support
+*************
+
+Geiser guile can be used remotely via tramp connections: the REPL
+process will be run in the machine where the tramp-accessed file lives.
+Implemented by Felipe Lema.
+
+
+
+Tag Table:
+Node: Top210
+Node: Overview427
+Node: Start up1518
+Node: Debugging support2493
+Node: Tramp support3300
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

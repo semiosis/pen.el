@@ -1,0 +1,7 @@
+
+"Quit" is actually not a command in emacs.
+"Quit" is actually a command in a certain text editor to close the program.
+But it is often rebinded to a certain key for convenience.
+You may find the binding by pressing "C-h k", then input the key you want to know the binding of.
+On my system, the binding for "quit" is actually "C-x C-c".
+

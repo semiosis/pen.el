@@ -1,0 +1,221 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:05:42 GMT
+Content-Type: text/html
+Content-Length: 11670
+Last-Modified: Sun, 17 Feb 2019 03:57:23 GMT
+Connection: keep-alive
+ETag: "5c68dba3-2d96"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Modules</title>
+<p>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="numbers.html">back</a> <a href="pitfalls.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-modules"></a><a name="sect11"></a>
+<h2>11<tt>&nbsp;&nbsp;</tt>Modules</h2>
+<p>
+A Haskell program consists of a collection of 
+<I>modules</I>.  A module in Haskell serves the dual purpose of controlling
+name-spaces and creating abstract data types.<p>
+The top level of a module contains any of the various declarations we
+have discussed: fixity declarations, data and type declarations, class
+and instance declarations, type signatures, function definitions, and
+pattern bindings.  Except for the fact that 
+import declarations (to be described shortly) must appear first, the
+declarations may appear in any order (the top-level scope is mutually
+recursive).<p>
+Haskell's module design is relatively conservative: the name-space of
+modules is completely flat, and modules are in no way "first-class."
+Module names are alphanumeric and must begin with an uppercase letter.
+There is no formal connection between a Haskell module and the file
+system that would (typically) support it.  In particular, there is no
+connection between module names and file names, and more than one
+module could conceivably reside in a single file (one module may even
+span several files).  Of course, a particular implementation will most
+likely adopt conventions that make the connection between modules and
+files more stringent.<p>
+Technically speaking, a module is really just one big declaration
+which begins with the keyword <tt>module</tt>; here's an example for a module
+whose name is <tt>Tree</tt>:
+<tt><br>
+
+<br>
+module&nbsp;Tree&nbsp;(&nbsp;Tree(Leaf,Branch),&nbsp;fringe&nbsp;)&nbsp;where<br>
+<br>
+data&nbsp;Tree&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Leaf&nbsp;a&nbsp;|&nbsp;Branch&nbsp;(Tree&nbsp;a)&nbsp;(Tree&nbsp;a)&nbsp;<br>
+<br>
+fringe&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;[a]<br>
+fringe&nbsp;(Leaf&nbsp;x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;[x]<br>
+fringe&nbsp;(Branch&nbsp;left&nbsp;right)&nbsp;=&nbsp;fringe&nbsp;left&nbsp;++&nbsp;fringe&nbsp;right<br>
+
+<br>
+
+</tt>The type <tt>Tree</tt> and the function <tt>fringe</tt> should be familiar; they
+were given as examples in Section <a href="goodies.html#tut-recursive-types">2.2.1</a>.
+[Because of the <tt>where</tt> keyword, layout is active at the top
+level of a module, and thus the declarations must all line up in the
+same column (typically the first).  Also note that the module name is
+the same as that of the type; this is allowed.]<p>
+This module explicitly <I>exports</I> <tt>Tree</tt>, <tt>Leaf</tt>, <tt>Branch</tt>, and
+<tt>fringe</tt>.  If the export list following the <tt>module</tt> keyword is
+omitted, <I>all</I> of the names bound at the top level of the module
+would be exported.  (In the above example everything is explicitly
+exported, so the effect would be the same.)  Note that the name of a
+type and its constructors have be grouped together, as in
+<tt>Tree(Leaf,Branch)</tt>.  As short-hand, we could also write <tt>Tree(..)</tt>.
+Exporting a subset of the constructors is also possible.  The names in
+an export list need not be local to the exporting module; any name in
+scope may be listed in an export list. <p>
+The <tt>Tree</tt> module may now be <I>imported</I> into some other module:
+<tt><br>
+
+<br>
+module&nbsp;Main&nbsp;(main)&nbsp;where<br>
+import&nbsp;Tree&nbsp;(&nbsp;Tree(Leaf,Branch),&nbsp;fringe&nbsp;)<br>
+<br>
+main&nbsp;=&nbsp;print&nbsp;(fringe&nbsp;(Branch&nbsp;(Leaf&nbsp;1)&nbsp;(Leaf&nbsp;2)))<br>
+
+<br>
+
+</tt>The various items being imported into and exported out of a module are
+called <I>entities</I>.  Note the explicit import list in the import
+declaration; omitting it would cause all entities exported from <tt>Tree
+</tt>to be imported.<p>
+<a name="sect11.1"></a>
+<h3>11.1<tt>&nbsp;&nbsp;</tt>Qualified Names</h3><p>
+There is an obvious problem with importing names directly into the
+namespace of module.  What if two imported modules contain different
+entities with the same name?  Haskell solves this problem using
+<I>qualified names</I>.  An import declaration may use the
+<tt>qualified</tt> keyword to cause the imported names to be prefixed by the
+name of the module imported.  These prefixes are followed by the `<tt>.</tt>'
+character without intervening whitespace.  [Qualifiers are part of
+the lexical syntax.  Thus, <tt>A.x</tt> and <tt>A&nbsp;.&nbsp;x</tt> are quite different: the
+first is a qualified name and the second a use of the infix `<tt>.</tt>'
+function.]  For example, using the <tt>Tree</tt> module introduced above:
+<tt><br>
+
+<br>
+module&nbsp;Fringe(fringe)&nbsp;where<br>
+import&nbsp;Tree(Tree(..))<br>
+<br>
+fringe&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;[a]&nbsp;&nbsp;&nbsp;--&nbsp;A&nbsp;different&nbsp;definition&nbsp;of&nbsp;fringe<br>
+fringe&nbsp;(Leaf&nbsp;x)&nbsp;=&nbsp;[x]<br>
+fringe&nbsp;(Branch&nbsp;x&nbsp;y)&nbsp;=&nbsp;fringe&nbsp;x<br>
+<br>
+module&nbsp;Main&nbsp;where<br>
+import&nbsp;Tree&nbsp;(&nbsp;Tree(Leaf,Branch),&nbsp;fringe&nbsp;)<br>
+import&nbsp;qualified&nbsp;Fringe&nbsp;(&nbsp;fringe&nbsp;)&nbsp;&nbsp;<br>
+<br>
+main&nbsp;=&nbsp;do&nbsp;print&nbsp;(fringe&nbsp;(Branch&nbsp;(Leaf&nbsp;1)&nbsp;(Leaf&nbsp;2)))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;(Fringe.fringe&nbsp;(Branch&nbsp;(Leaf&nbsp;1)&nbsp;(Leaf&nbsp;2)))<br>
+
+<br>
+
+</tt>Some Haskell programmers prefer to use qualifiers for all imported
+entities, making the source of each name explicit with every use.
+Others prefer short names and only use qualifiers when absolutely
+necessary.<p>
+Qualifiers are used to resolve conflicts between different entities
+which have the same name.  But what if the same entity is imported
+from more than one module?  Fortunately, such name clashes are
+allowed: an entity can be imported by various routes without
+conflict.  The compiler knows whether entities from different modules
+are actually the same.<a name="tut-ADTs"></a><p>
+<a name="sect11.2"></a>
+<h3>11.2<tt>&nbsp;&nbsp;</tt>Abstract Data Types</h3>
+<p>
+Aside from controlling namespaces, modules provide the only way to
+build abstract data types (ADTs) in Haskell.  For example, the
+characteristic feature of an ADT is that the <I>representation type
+</I>is <I>hidden</I>; all operations on the ADT are done at an abstract
+level which does not depend on the representation.  For example,
+although the <tt>Tree</tt> type is simple enough that we might not normally
+make it abstract, a suitable ADT for it might include the following
+operations:
+<tt><br>
+
+<br>
+data&nbsp;Tree&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;just&nbsp;the&nbsp;type&nbsp;name&nbsp;<br>
+leaf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;Tree&nbsp;a<br>
+branch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;Tree&nbsp;a<br>
+cell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+left,&nbsp;right&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;Tree&nbsp;a<br>
+isLeaf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Tree&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>A module supporting this is:
+<tt><br>
+
+<br>
+module&nbsp;TreeADT&nbsp;(Tree,&nbsp;leaf,&nbsp;branch,&nbsp;cell,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left,&nbsp;right,&nbsp;isLeaf)&nbsp;where<br>
+<br>
+data&nbsp;Tree&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Leaf&nbsp;a&nbsp;|&nbsp;Branch&nbsp;(Tree&nbsp;a)&nbsp;(Tree&nbsp;a)&nbsp;<br>
+<br>
+leaf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Leaf<br>
+branch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Branch<br>
+cell&nbsp;&nbsp;(Leaf&nbsp;a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;a<br>
+left&nbsp;&nbsp;(Branch&nbsp;l&nbsp;r)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;l<br>
+right&nbsp;(Branch&nbsp;l&nbsp;r)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;r<br>
+isLeaf&nbsp;&nbsp;&nbsp;(Leaf&nbsp;_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;True<br>
+isLeaf&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;False<br>
+
+<br>
+
+</tt>Note in the export list that the type name <tt>Tree</tt> appears alone
+(i.e. without its constructors).  Thus
+<tt>Leaf</tt> and <tt>Branch</tt> are not exported, and the only way to build or
+take apart trees outside of the module is by using the various
+(abstract) operations.  Of course, the advantage of this information
+hiding is that at a later time we could <I>change</I> the
+representation type without affecting users of the type.<a name="tut-rules"></a><p>
+<a name="sect11.3"></a>
+<h3>11.3<tt>&nbsp;&nbsp;</tt>More Features</h3><p>
+
+Here is a brief overview of some other aspects of the module system.
+See the report for more details.
+<UL><LI>An <tt>import</tt> declaration may selectively hide entities using a
+<tt>hiding</tt> clause in the
+import declaration.  This is useful for explicitly excluding names that
+are used for other purposes without having to use qualifiers for other
+imported names from the module.
+<LI>An <tt>import</tt> may contain an <tt>as</tt> clause to specify a different
+qualifier than the name of the importing module.  This can be used to
+shorten qualifiers from modules with long names or to easily adapt to
+a change in module name without changing all qualifiers.
+<LI>Programs implicitly import the <tt>Prelude</tt> module.  An explicit
+import of the Prelude overrides the implicit import of all Prelude
+names.  Thus,
+<tt><br>
+
+<br>
+import&nbsp;Prelude&nbsp;hiding&nbsp;length<br>
+
+<br>
+
+</tt>will not import <tt>length</tt> from the Standard Prelude, allowing the name
+<tt>length</tt> to be defined differently.<p>
+<LI>Instance declarations are not explicitly named in import or
+export lists.  Every module exports all of its instance declarations
+and every import brings all instance declarations into scope.
+<LI>Class methods may be named either in the manner of data
+constructors, in parentheses following the class name, or as ordinary
+variables. 
+</UL>
+Although Haskell's module system is relatively conservative, there are
+many rules concerning the import and export of values.  Most of these
+are obvious---for instance, it is illegal to import two different
+entities having the same name into the same scope.  Other rules are
+not so obvious---for example, for a given type and class, there cannot
+be more than one <tt>instance</tt> declaration for that combination of type
+and class anywhere in the program.
+The reader should read the Report for details
+(<a href="../onlinereport/modules.html#modules">&sect;5</a>).<p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="numbers.html">back</a> <a href="pitfalls.html">next</a> <a href="index.html">top</a>
+<p>

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: background
+# key: background
+# --
+exec du / > du-output.txt &

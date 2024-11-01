@@ -1,0 +1,10 @@
+The above code is a slightly modified version of the code from the
+`getResults` function.
+
+The `getResults` function returns a list of strings.
+
+The `fromMaybe` function is a Haskell function that takes a default value and a
+maybe value. If the maybe value is `Nothing`, then the default value is
+returned. Otherwise, the `Just` value is returned.
+
+The `fromMaybe` function is used to return an empty list if the `get

@@ -1,0 +1,34 @@
+task: "Imagine an awk linter"
+doc: "Given a line of awk code, check it for errors"
+tags: interpreter
+issues:
+- This doesn't work very well at all.
+prompt-version: 1
+prompt: |+
+    awk -f syntax-test.awk
+    awk: syntax-test.awk:1:   x = f(
+    awk: syntax-test.awk:1:         ^ unexpected newline or end of string
+    awk: syntax-test.awk:2:   for (i=1; i<window_size; i++) {
+    awk: syntax-test.awk:3:     s = s memory[i] RS
+    awk: syntax-test.awk:4:   }
+    awk: syntax-test.awk:5:   <line of code>
+    awk: syntax-test.awk:
+engine: "OpenAI Codex"
+temperature: 0.0
+max-generated-tokens: 60
+n-completions: 10
+no-uniq-results: on
+top-p: 1.0
+cache: on
+stop-sequences:
+- "\n"
+vars:
+- "line of code"
+examples:
+- "close cmd, \"to\""
+preprocessors:
+- "cat"
+postprocessor: "grep -v -P \"^6\" | sed \"s/^5: //\""
+filter: yes
+completion: off
+insertion: off

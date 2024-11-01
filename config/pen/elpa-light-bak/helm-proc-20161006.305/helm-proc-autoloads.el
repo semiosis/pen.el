@@ -1,0 +1,29 @@
+;;; helm-proc-autoloads.el --- automatically extracted autoloads
+;;
+;;; Code:
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
+
+;;;### (autoloads nil "helm-proc" "helm-proc.el" (0 0 0 0))
+;;; Generated autoloads from helm-proc.el
+
+(autoload 'helm-proc "helm-proc" "\
+Preconfigured helm for processes." t nil)
+
+(register-definition-prefixes "helm-proc" '("helm-"))
+
+;;;***
+
+;;;### (autoloads nil nil ("helm-proc-pkg.el") (0 0 0 0))
+
+;;;***
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; no-update-autoloads: t
+;; coding: utf-8
+;; End:
+;;; helm-proc-autoloads.el ends here

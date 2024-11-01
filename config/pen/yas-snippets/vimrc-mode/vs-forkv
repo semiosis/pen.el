@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: for [key, value] in loop
+# group: vimsnippet
+# key: vs-forkv
+# --
+for [${1},${2}] in items(${3})
+	${0}
+	unlet $1 $2
+endfor

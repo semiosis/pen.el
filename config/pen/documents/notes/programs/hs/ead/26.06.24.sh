@@ -1,0 +1,5 @@
+cd /usr/local/share/emacs/29.1.50/lisp/org;  "ead" "-z" "mouse-movement" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp/org;  "ead" "-z" "mouse" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bkeyboard-quit\\b" "#" "<==" "zsh"
+cd /usr/local/share/emacs/29.1.50/lisp/org;  "ead" "-" "mouse-face" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50/lisp/org;  "ead" "-z" "mouse-face" "#" "<==" "ead"

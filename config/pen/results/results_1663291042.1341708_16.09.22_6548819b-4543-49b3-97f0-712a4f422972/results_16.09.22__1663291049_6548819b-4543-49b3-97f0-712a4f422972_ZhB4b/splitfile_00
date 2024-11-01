@@ -1,0 +1,3 @@
+ (defvar shell-mode "\\(emacs-lisp-mode\\|cperl-mode\\|python-mode\\)\\'" "Mode name of shell mode")
+(defvar shell-mode-hook nil "Hook run when entering shell mode")
+(

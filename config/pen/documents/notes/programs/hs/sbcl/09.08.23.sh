@@ -1,0 +1,5 @@
+cd /root/.pen/glossaries;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "1 John" "#" "<==" "sbcl-ql"
+cd /root/.pen/glossaries;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "First John" "#" "<==" "sbcl-ql"
+cd /root/.pen/glossaries;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "First John" "#" "<==" "sbcl-ql"
+cd /root/.pen/glossaries;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "1 John" "#" "<==" "sbcl-ql"
+cd /root/.pen/glossaries;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl" "First John" "#" "<==" "sbcl-ql"

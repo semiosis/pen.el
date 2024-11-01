@@ -1,0 +1,5 @@
+pspg
+    Unix pager designed for work with tables.
+    Designed for PostgreSQL, but MySQL is
+    supported too. Now it can be used as CSV
+    viewer.

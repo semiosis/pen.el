@@ -1,0 +1,13 @@
+
+function! FindFile()
+
+function! JumpToEndOfCurrentFile()
+
+function! CmdLine(str)
+
+function! IndentCurrentLine()
+
+function! NewFile()
+
+
+function! DeleteTrailing

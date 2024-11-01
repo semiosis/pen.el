@@ -1,0 +1,8 @@
+* drop-while
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (drop-while neg? [-1 -2 -6 -7 1 2 3 4 -5 -6 0 1])
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  (1 2 3 4 -5 -6 0 1)
+#+END_SRC

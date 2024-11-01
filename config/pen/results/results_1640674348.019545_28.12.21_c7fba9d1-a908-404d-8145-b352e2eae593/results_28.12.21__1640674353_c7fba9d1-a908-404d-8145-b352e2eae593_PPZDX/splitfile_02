@@ -1,0 +1,6 @@
+covered a new type of neuron that can be used to learn representations of high-dimensional data, and we’ve developed a new neural network architecture that can be used to build them.
+    https://ai.googleblog.com/2019/05/multimodal-neurons-discovering-new.html
+
+sparse attention
+    v +/"Sparse Attention" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+

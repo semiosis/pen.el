@@ -1,0 +1,10 @@
+$NOTES/ws/datomic/glossary.txt
+
+rule
+    A powerful abstraction mechanism in the
+    logic language that is Datalog, just like
+    functions are a powerful abstraction
+    mechanism in the procedural language that
+    is Clojure.
+
+    https://github.com/vvvvalvalval/datalog-rules

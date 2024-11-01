@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: gitcloneandcd
+# key: gcd
+# --
+cd "$(gc "https://github.com/github/semantic")"

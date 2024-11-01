@@ -1,0 +1,50 @@
+title: explain some code to answer a question
+tags: code explain
+issues: 
+design-patterns: 
+doc: Explain some code to answer a question
+prompt-version: 2
+prompt: |
+    Code excerpt and explanation.
+    <delim>
+    Excerpt:
+    <delim>
+    <code>
+    <delim>
+    <question>
+    Explanation:
+    <delim>
+    <:pp>The above code 
+issues: 
+engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 100
+# max-generated-tokens: "prompt-length"
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- code
+- question
+var-defaults:
+- "(pen-selected-text)"
+- "\"What is this doing?\""
+examples:
+- |+
+    data RGB = RGB
+      { rgbRed   :: Word8
+      , rgbGreen :: Word8
+      , rgbBlue  :: Word8
+      } deriving (Eq, Show)
+    <delim>
+prefer-external: true
+external-related:
+- https://explainshell.com/
+n-test-runs: 5
+related-prompts:
+- annotate-with-commentary.prompt
+preprocessors:
+- pen-str onelineify
+- pen-str onelineify
+postprocessor: pen-str unonelineify

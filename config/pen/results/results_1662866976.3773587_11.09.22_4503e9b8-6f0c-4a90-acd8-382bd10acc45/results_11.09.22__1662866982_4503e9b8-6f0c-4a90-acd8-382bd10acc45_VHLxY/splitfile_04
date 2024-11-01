@@ -1,0 +1,5 @@
+"eprintln" is a macro that prints to stderr.
+
+fn main() {
+    eprintln!("Hello, world!");
+}

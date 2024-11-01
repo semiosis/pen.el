@@ -1,0 +1,38 @@
+
+This is        hard, but I just know we are getting
+closer to the truth...
+"""
+# Setting the base case scenario
+scenario_analysis(
+  u"""
+  Here we wanted to check if it also handles links as well mixed or within mistakes
+  in running text. We should expect the bool phrase_search() and substring_processing()
+  to catch similar sentences as allowed by a greedy wildcard criterion.
+  ----
+  Here we want to search for meanings based on an
+  incomplete set of specifics against an incomplete set of givens. Here's an example
+  where an automated dictionary program is recovering, word by word, some meanings
+  based just on uniform physical consinstency with fixation points from a passage. Every
+  servo and sensor involved in identifying what is reported has been scanned and aligned
+  as an allowable.
+  ----
+  This is a repeat case to identify persistance behavioral content of syndromic dimensions.
+  ------
+  Speech synthesis (natural language methods for
+  automatic narration) in the speech of the dilapidated,
+  destitute, memory-ridden old man, who
+  offers up a simple phrase like "No, everything
+  goes singular, opposite, jauntless irreducible
+  manifolds." Psychedelic distortions or visionary
+  hyperbole--manifolds changing, embedded systems
+  in reinterpreted charcoal analogies churning
+  mysteriously, at times in a visual free association way,
+  as such containing internal deceiving alternatuves
+  but at another level entirely transcending alternatives
+  or connecting it all back around to ashy convolutional
+  plateaus, places reverberating---writing creative nonfiction.
+  -----
+    With manifest profound decisions, like the black static
+    of the sky streaming through a seashell, the wind
+    snaking and weaving until it divorces the continuous
+    gather

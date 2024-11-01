@@ -1,0 +1,9 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "convert-miles-to-km" "20")))
+--> 32.14
+
+
+
+;; Run function -loop
+(message (eval '(-loop "-u" "the" "speed" "of" "an" "unladen" "swollow")))
+--> 

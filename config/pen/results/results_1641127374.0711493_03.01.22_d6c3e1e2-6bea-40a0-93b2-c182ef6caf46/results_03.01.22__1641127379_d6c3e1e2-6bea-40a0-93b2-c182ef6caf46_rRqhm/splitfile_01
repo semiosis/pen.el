@@ -1,0 +1,2 @@
+type:diff repo:^github\.com/sourcegraph/sourcegraph$ file:^(?!\.test).* (golang\.org/x/sync/errgroup|golang\.org/x/net/context)
+

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: count words
+# group: 
+# key: countwords
+# --
+from collections import Counter
+word_count = Counter(words)
+word_count["he"]

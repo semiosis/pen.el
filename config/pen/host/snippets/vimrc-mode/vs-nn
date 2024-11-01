@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nn
+# group: vimsnippet
+# key: vs-nn
+# --
+nnoremap ${1} ${2}<CR>

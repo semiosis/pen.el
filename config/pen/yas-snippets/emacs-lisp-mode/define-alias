@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: define-alias
+# group: define
+# key: da
+# --
+(defalias '${1:name} '${0:definition})

@@ -1,0 +1,192 @@
+HTTP/1.1 200 OK
+Server: openresty
+Date: Wed, 10 Aug 2022 08:18:33 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 10086
+Connection: keep-alive
+Set-Cookie: vsid=929vr4076651112624603; expires=Mon, 09-Aug-2027 08:18:31 GMT; Max-Age=157680000; path=/; domain=www.poetryfoundation.net; HttpOnly
+X-Adblock-Key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKX74ixpzVyXbJprcLfbH4psP4+L2entqri0lzh6pkAaXLPIcclv6DQBeJJjGFWrBIF6QMyFwXT5CCRyjS2penECAwEAAQ==_P7zMjfTDvzwQk0aayNyCk5cyUckxIOwPsPa42yhyTEZERzJviAmkbSjvGKGzW17SH9ifdq6scyRRUU3C1NK7IA==
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKX74ixpzVyXbJprcLfbH4psP4+L2entqri0lzh6pkAaXLPIcclv6DQBeJJjGFWrBIF6QMyFwXT5CCRyjS2penECAwEAAQ==_P7zMjfTDvzwQk0aayNyCk5cyUckxIOwPsPa42yhyTEZERzJviAmkbSjvGKGzW17SH9ifdq6scyRRUU3C1NK7IA==">
+<head><script type="text/javascript">var abp;</script><script type="text/javascript" src="https://www.poetryfoundation.net/px.js?ch=1"></script><script type="text/javascript" src="https://www.poetryfoundation.net/px.js?ch=2"></script><script type="text/javascript">function handleABPDetect(){try{if(!abp) return;var imglog = document.createElement("img");imglog.style.height="0px";imglog.style.width="0px";imglog.src="https://www.poetryfoundation.net/sk-logabpstatus.php?a=Ry9TbW1rb25YVGRqRDBIbEdZNWtVQWlGOFVBOEdTU2s0RnlORWQ5cUtVakowUE5BcXFkdjNUcHdNYWgrc3ptOTJrTGgyalAwdUlZdFEyWCs2SnpSUWFkemd6NFo1ZU5paUU4TDVSWUFlZ0ZmVnpFWitmbkNHb2VtY2JicmM2c2E=&b="+abp;document.body.appendChild(imglog);if(typeof abperurl !== "undefined" && abperurl!="")window.top.location=abperurl;}catch(err){}}</script><meta name="tids" content="a='27677' b='31684' c='poetryfoundation.net' d='entity_mapped'" /><title>Poetryfoundation.net</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable = no">
+<link rel="icon" type="image/jpg" href="https://i2cdnimg-a.akamaihd.net/__media__/pics/468/netsol-favicon-2020.jpg">
+<style type="text/css">
+
+@font-face {font-family: "open-sans";src: url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans/open-sans.eot");src: url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans/open-sans.eot?#iefix") format("embedded-opentype"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans/open-sans.woff") format("woff"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans/open-sans.woff2") format("woff2"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans/open-sans.ttf") format("truetype"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans/open-sans.otf") format("opentype"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans/open-sans.svg#open-sans") format("svg");font-weight: normal;font-style: normal;font-display: swap;}
+@font-face {font-family: "open-sans-bold";src: url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans-bold/open-sans-bold.eot");src: url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans-bold/open-sans-bold.eot?#iefix") format("embedded-opentype"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans-bold/open-sans-bold.woff") format("woff"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans-bold/open-sans-bold.woff2") format("woff2"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans-bold/open-sans-bold.ttf") format("truetype"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans-bold/open-sans-bold.otf") format("opentype"),url("https://i2cdnimg-a.akamaihd.net/__media__/fonts/open-sans-bold/open-sans-bold.svg#open-sans-bold") format("svg");font-weight: normal;font-style: normal;font-display: swap;}						
+*{margin:0; padding:0}
+a{text-decoration:none; outline:none}
+a:hover{text-indent:0; cursor:pointer; outline:0 none;}
+.clearfix:after{visibility: hidden;display:block;font-size: 0;content: " ";clear: both;height:0}
+* html .clearfix{zoom:1} 
+*:first-child+html .clearfix{zoom:1}
+
+body{font-family:
+  open-sans 
+,sans-serif;font-size:12px; background:#fff;font-weight: 400;background: url(https://i2cdnimg-a.akamaihd.net/__media__/pics/27587/BG_2.png) no-repeat center bottom; background-size: cover;background-attachment: fixed;}
+
+.top-strip .main-container{width:1150px; margin:0 auto;position: relative}
+.domain-line{color:#fff; padding:5px 0px;  font-size: 12px;}
+.backorder{color: #4d4d4d; border-bottom:1px solid #4d4d4d; font-size: 12px}
+.domain-line a{color: #b4b4b4; border-bottom:1px solid #b4b4b4}
+.top-strip{width: 100%;padding: 12px 0;margin-bottom: 30px;box-shadow:0 2px 12px 0 rgba(206, 206, 206, 0.5);
+  background-color: #e2e2e2;}
+.msgleft{color: #fff;font-size: 25px;width: 50%;word-wrap: break-word; font-weight:600;float: left;position: absolute; top: 50%; transform: translateY(-50%); padding: 0;} 
+.msgleft a{color: #333}
+.msgright{float: right;font-size: 14px;text-align: right; width: 50%}
+a.logo{display:inline-block;}
+.logo-img-wrap {overflow: hidden; /*width: 130px;*/ display: block; float: right; }
+.logo-img-wrap img{border:0;outline:none;}
+
+.msgright .expMsg{color: #4d4d4d;font-size: 12px}
+.msgright .expMsg a{color: #4d4d4d;font-size: 12px}
+.msgright .ucMsg, .msgright .ucMsg a{color: #4d4d4d;font-size: 12px}
+.msgright .WhyAmI a {color: #4d4d4d; font-size: 12px; text-decoration: underline}
+
+.container{width:800px;margin:0 auto;}
+.searchbox{float:right; width:400px; height:37px;}
+.srch-txt{float: left; width: 343px; height: 37px; padding:0 10px;font-size: 16px; background: #fff; color: #000; padding: 0 10px; outline: none; border: none}
+.srch-btn{float: right; width: 37px; background: #000000 url(https://i2cdnimg-a.akamaihd.net/__media__/pics/27586/searchbtn.png) no-repeat center center;; border: none; height: 37px; margin: 0; cursor: pointer; border-radius: 0;background-size: 15px}
+
+.content{padding-bottom:10px;}
+.frt_arr{float:left;width:200px; height:455px; background: url(https://i2cdnimg-a.akamaihd.net/__media__/pics/27587/Right.png) no-repeat top center;background-size: 100%}
+.lst_arr{float:right;width:200px; height:455px; background: url(https://i2cdnimg-a.akamaihd.net/__media__/pics/27587/Left.png) no-repeat top center;background-size: 100%}
+.kwd_bloack{float:left; width:400px; margin-top:60px}
+.kwd_bloack h4{font-size:14px; color:#138541; text-transform: uppercase; text-align: center;font-weight: 400}
+.kwd_bloack ul, .kwd_bloack ul li{text-align:center;list-style:none}
+.kwd_bloack ul{padding-top:9px}
+.kwd_bloack ul li{line-height:30px}
+.kwd_bloack ul li a{text-decoration:underline; font-size:22px; font-family: 
+  open-sans-bold 
+,sans-serif; color:#4d4d4d;display:block; word-wrap: break-word; padding: 15px;border-radius: 12px}
+.kwd_bloack ul li a:hover{background-color:#0b8040;color: #fff}
+
+.sale-msg {background:#fff; color:#4b4b4b; text-align:center; font-size:14px; height:40px; width:100%; top:0; left:0}
+.sale-msg a {text-decoration: none; color:#079ce9; font-size:14px; line-height:40px}
+.sale-msg a:hover, .inquire a:hover{text-decoration: underline}
+
+#footer-keys-bot{background: #e2e2e2; text-align: center; padding: 35px 0; margin-top: 30px}
+.footerwrap{width:1150px; margin:0 auto;}
+.foottxt{width: 550px; margin: 0 auto; float: left; text-align:left;padding:4px 0;}
+.foottxt a{color:#000000; font-size:12px; line-height: 28px; }
+.foottxt a:hover{text-decoration: underline}
+.foottxt .nobrd{border:0 none;}
+.foottxt span{padding:0 10px;border-right: 1px solid #016a8e;}
+
+@media only screen and (max-width:1250px){
+    .top-strip .main-container,.footerwrap{width:95%}
+    .foottxt{width: 60%}
+    .searchbox{width: 39%}
+    .srch-txt{width: 80%;padding:0 3%;}
+    .srch-btn{width: 14%}
+    /*.arrows{width: 30%;background-size: auto 100% !important}
+    .kwd_bloack{width: 40%}*/
+}
+@media only screen and (max-width:990px) {
+    .container{width: 95%}
+    .msgleft{font-size: 19px;width: 33%;padding-top: 10px; padding-bottom: 10px; width: 100%;margin-bottom: 10px;text-align: center;position: relative; top: unset; transform: none;}
+    .msgright{width: 100%;text-align: center}
+    .top-strip{margin-bottom: 40px}
+    .logo-img-wrap{float:none;width:auto}
+
+    .searchbox{margin:0; float:none; width:auto; padding:20px 5px}
+    .kwd_bloack{float:none; width:auto;margin:0 auto;max-width: 600px}
+    .foottxt,.searchbox{max-width: 600px;text-align: center;margin:0 auto;float: none;width: auto}
+    .kwd_bloack ul, .kwd_bloack ul li, .kwd_bloack ul li a{float:none; width:auto}
+    .arrows, .separator{display:none}
+}
+@media only screen and (max-width:767px){
+    br{display: none}
+    #footer-keys-bot{padding:15px 0;}
+    .kwd_bloack,.foottxt{max-width: 90%}
+    .searchbox{max-width: 300px;padding: 10px 0}
+    .foottxt{padding: 10px 0}
+    .searchbox,.srch-txt,.srch-btn{height: 35px}
+    .srch-txt{line-height: 16px}
+    .srch-btn{background-size: 18px}
+    .foottxt a{font-size: 12px}
+
+    .kwd_bloack ul li a{font-size: 18px;line-height: 22px}
+    .top-strip{padding-top:0;margin-bottom: 10px}
+    .msgleft{word-wrap: break-word;width: 100%;margin-bottom: 5px;float: none;text-align: center}
+    .msgright{float:none;margin:0 auto;text-align: center}
+    .logo img{width: 100%}
+    ul.privacy {text-align:center; padding: 15px 0}
+    ul.privacy li{display: block;font-size: 12px}
+    ul.privacy li a{font-size: 12px}
+    .msgright .expMsg, .backorder, .msgright .expMsg a{font-size: 12px}
+    .related-searches-custom{font-size: 14px}  
+}
+</style>
+<script language="JavaScript" type="text/javascript" src="https://i2cdnimg-a.akamaihd.net/__media__/js/min.js?v2.3"></script>
+</head>
+<body onload="" onunload="" onBeforeUnload=""><div style="visibility:hidden;display:none;" id="divSponAds"><form name="frmSponsAds" id="frmSponsAds" method="get" action="" target="_blank"><input type="hidden" name="params" id="params" /></form></div><div id="main-wrap" class="clearfix">
+    <div class="top-strip clearfix">
+        <div class="main-container clearfix" id="main">
+            <div class="msgleft">
+            <a href="http://www.Poetryfoundation.net">Poetryfoundation.net</a>
+            </div>
+            <div class="msgright">
+                <a href="//www.networksolutions.com/" target="_blank" class="logo clearfix">
+                  <div class="logo-img-wrap"><img src="https://i2cdnimg-a.akamaihd.net/__media__/pics/10667/netsol-logos-2020-165-50.jpg" alt="networksolutions"></div>
+                </a>
+                <div class="ucMsg">
+                  This Page Is Under Construction - Coming Soon!                </div>
+                <p class="WhyAmI"><a href="http://www.poetryfoundation.net/__media__/design/underconstructionnotice.php?d=poetryfoundation.net" onClick="return popup(this, 'notes')"> Why am I seeing this 'Under Construction' page?</a></p>                 <div class="expMsg">
+                                    </div>
+            </div>
+         </div>
+    </div>   
+	<div class="container clearfix">
+        <div class="content clearfix">
+        	<div class="arrows frt_arr pngFix"></div>
+            <div class="kwd_bloack clearfix">
+                <h4>            <span class="related-searches-custom">Related Searches:</span>
+        </h4>
+                <ul class="clearfix">
+                    <li><a href="https://www.poetryfoundation.net/Popular_Poetry.cfm?fp=HzTa3EsISLTsAPYCk0GMYjayZo0S%2FqGI3W8HkAHJZuL%2FqgmFULf1QsIXQF%2BbHPqhl2H0%2BhNiYCBhop1Uvk8fG%2BSSe4O8V9CN156bYt8WPl4HpsEsI4dFw1hNnltZWj5biqcknEvq7iq%2F0aZGNPYU%2BdR95NIiH80HDRSF72V1s0k1T47Tq%2Blu%2Fhpbe%2FhKQPXlwoTCx%2BUNMUppmXLfnznvEu%2BvTLkVlpUS18n7BMpWXSecXxURnbfsEs94YuNqtBQQdkxnVSt4ZydHM5hMB5ZVKzm4o0dr4BaFWPr0MjMMTW%2FvxhzvUPkUne%2Bwdr2TKO4V&yep=7Gj3Njcc6mdJzIG0LagxR0NFic6xFT65bfEsNYqHwkZI4AG%2FkTsNS16ZT%2FydgSdOGHO3puIyJlhm%2Fyg4GMwbMmmKhspcMdlB5SAtu5XE%2F67Pn9vfh9%2FptqdX94wBw148LOnLMOTFsidFsPwbQOrjzzNps7UB3EbvkWb6C18Ij5hofb8bE20y2Ux%2FfkaISxNc6FmcSU90uTI7Bv1SOUOql2fvNLeQRi4j1RCe2eaSk9l3P2zH%2FlMVKC0nltHICfI9b%2Fd9MxVkeCq2SaqAaogb%2FLP2K1%2FmSehq5xuWcdivyodu2%2FdEuwci4Rrr8%2B4SpD6dxhPE%2BWsjppNNyH1RveTjSWkAPpo5M1lC42kgitWlC0xax%2FhtY0Pg9b5FEdB8Lu%2B04IlNfq1fwJpXnwCfrr6yzoeMDUR2UaRK%2F%2Fn6kAdNr7y%2BC1Uf5V8f7gwQIMcxPGNeQirGPJU9alwbRTg%2FHCtdSuCcfQd8fHbgZHI4BrayD4m9z6T%2BEddviNVtFZfuKF6VLRsiCGt5GVdGirmGOS%2Fi1ZA6O75P8KFW%2FXxa9kTrIZ749QxRD3qGMW5xCPjZniXs22Om812ZpjRWyZ1FWZDYI70fjCLDnNys7U2XwsJrUB46JAww%2By5qqAmE1ylU7jvmyaAGnZ7ixf402l4CQA2b%2B%2BegKDrHD8AVh6Abz3G7zalF8O5OLdSV2PWi03SdqM9a2fyvb3uRNE21KSYWzzWhEKeIQVNw5Wq8SRaBCSwRxVA4G7rN8DKs39EB7R5xWsCLdjqEP9wruBR7BfP5qTtmvfjMw6IsPsAXpfn2VI4wgbhXB18D2jiEdf0J8oQ4CD2DQkOxzd45GIRyhNKkTI498oK6H5rTHczvmeLtF0FEkgnNwhvHB3G9J9uvS4Eew1%2BelP5A9W6cyHWDuhYi68wllQA33AJyHs26hMOSFZz1iZd6H4DlGeTC0gYuc73FHvPGBCbbcyLu40YWyD8xh0bJG9sv2Hxuzz5Y4dV6JtFDDD5UIVJ5jBc9HfIsJdQr7jAGPI01fs37pW6z9bWejQnpplJl2vz%2FWSbDlNHxwOgzCWFjjYZg%2BAHyawSi%2BqPj%2B44iZKuHQmCJafjf2aSI9Lom9OPvcBoejKQEuuPs5cH8%2B%2FvHOjN5FWppFdkjKpjd1KQCB8Yl24rSmDaUbOdnBOJ%2BPIhgD2ZXfFsVoLmJ%2BmNMufbz2C1rjOoPoOINA4sVfK5IKcYHRp2wnPYs%2FGd%2BQpnA11k54MM0e4gzBttVMEP3zYUnd2KcyrLEUtD4Ae7nb%2FCvSDSsVqdZ2e93YRDBIyAnq%2Bn%2FU9U1Xs01FZYFyirTdwr4ggxwRJmuHzzDEyDjrdQa%2BuRecbKJmfERN3Bw4baClVMLqXWHRpI2pxizGN%2BpaQKiKzgRxDMala4nlX9PM0AxKcY1C7X8cthuoz2bx8bjwVIuf92mzxQ%2FtYIGXxwyTfI4m71EBUDmiDvq9Uz03BPCutIVZ1FPbxqerokKQ5csMPmX39YjHxuWE2vHcYgKLiM0vv5wLlAlob6C8Dc4PpVaQexAhYO0BG7mzq8xN3%2Bleg%3D%3D&gtnp=0&gtpp=0&kbetu=1&maxads=0&kld=1061&yprpnd=UHM6ofc%2BmzTMdphcWy%2Bzzw%3D%3D&_opnslfp=1&&gtnp=0&gtpp=0&kt=251&&kbc=4342&ki=22829153&ktd=256&kld=1061&kp=1" target="_top" onmouseover="changeStatus('Popular Poetry');return true;" onmouseout="changeStatus('');return true;" onclick="if(typeof(showPop) != 'undefined')showPop=0;return modifyKeywordClickURL(this, 'kwclk');;" title="Popular Poetry" id="dk1" name="dk1" >Popular Poetry</a></li>
+                    <li><a href="https://www.poetryfoundation.net/Childrens_Poetry.cfm?fp=HzTa3EsISLTsAPYCk0GMYjayZo0S%2FqGI3W8HkAHJZuL%2FqgmFULf1QsIXQF%2BbHPqhl2H0%2BhNiYCBhop1Uvk8fG%2BSSe4O8V9CN156bYt8WPl4HpsEsI4dFw1hNnltZWj5biqcknEvq7iq%2F0aZGNPYU%2BdR95NIiH80HDRSF72V1s0k1T47Tq%2Blu%2Fhpbe%2FhKQPXlwoTCx%2BUNMUppmXLfnznvEu%2BvTLkVlpUS18n7BMpWXSecXxURnbfsEs94YuNqtBQQdkxnVSt4ZydHM5hMB5ZVKzm4o0dr4BaFWPr0MjMMTW%2FvxhzvUPkUne%2Bwdr2TKO4V&yep=7Gj3Njcc6mdJzIG0LagxR0NFic6xFT65bfEsNYqHwkZI4AG%2FkTsNS16ZT%2FydgSdOGHO3puIyJlhm%2Fyg4GMwbMmmKhspcMdlB5SAtu5XE%2F67Pn9vfh9%2FptqdX94wBw148LOnLMOTFsidFsPwbQOrjzzNps7UB3EbvkWb6C18Ij5hofb8bE20y2Ux%2FfkaISxNc6FmcSU90uTI7Bv1SOUOql2fvNLeQRi4j1RCe2eaSk9l3P2zH%2FlMVKC0nltHICfI9b%2Fd9MxVkeCq2SaqAaogb%2FLP2K1%2FmSehq5xuWcdivyodu2%2FdEuwci4Rrr8%2B4SpD6dxhPE%2BWsjppNNyH1RveTjSWkAPpo5M1lC42kgitWlC0xax%2FhtY0Pg9b5FEdB8Lu%2B04IlNfq1fwJpXnwCfrr6yzoeMDUR2UaRK%2F%2Fn6kAdNr7y%2BC1Uf5V8f7gwQIMcxPGNeQirGPJU9alwbRTg%2FHCtdSuCcfQd8fHbgZHI4BrayD4m9z6T%2BEddviNVtFZfuKF6VLRsiCGt5GVdGirmGOS%2Fi1ZA6O75P8KFW%2FXxa9kTrIZ749QxRD3qGMW5xCPjZniXs22Om812ZpjRWyZ1FWZDYI70fjCLDnNys7U2XwsJrUB46JAww%2By5qqAmE1ylU7jvmyaAGnZ7ixf402l4CQA2b%2B%2BegKDrHD8AVh6Abz3G7zalF8O5OLdSV2PWi03SdqM9a2fyvb3uRNE21KSYWzzWhEKeIQVNw5Wq8SRaBCSwRxVA4G7rN8DKs39EB7R5xWsCLdjqEP9wruBR7BfP5qTtmvfjMw6IsPsAXpfn2VI4wgbhXB18D2jiEdf0J8oQ4CD2DQkOxzd45GIRyhNKkTI498oK6H5rTHczvmeLtF0FEkgnNwhvHB3G9J9uvS4Eew1%2BelP5A9W6cyHWDuhYi68wllQA33AJyHs26hMOSFZz1iZd6H4DlGeTC0gYuc73FHvPGBCbbcyLu40YWyD8xh0bJG9sv2Hxuzz5Y4dV6JtFDDD5UIVJ5jBc9HfIsJdQr7jAGPI01fs37pW6z9bWejQnpplJl2vz%2FWSbDlNHxwOgzCWFjjYZg%2BAHyawSi%2BqPj%2B44iZKuHQmCJafjf2aSI9Lom9OPvcBoejKQEuuPs5cH8%2B%2FvHOjN5FWppFdkjKpjd1KQCB8Yl24rSmDaUbOdnBOJ%2BPIhgD2ZXfFsVoLmJ%2BmNMufbz2C1rjOoPoOINA4sVfK5IKcYHRp2wnPYs%2FGd%2BQpnA11k54MM0e4gzBttVMEP3zYUnd2KcyrLEUtD4Ae7nb%2FCvSDSsVqdZ2e93YRDBIyAnq%2Bn%2FU9U1Xs01FZYFyirTdwr4ggxwRJmuHzzDEyDjrdQa%2BuRecbKJmfERN3Bw4baClVMLqXWHRpI2pxizGN%2BpaQKiKzgRxDMala4nlX9PM0AxKcY1C7X8cthuoz2bx8bjwVIuf92mzxQ%2FtYIGXxwyTfI4m71EBUDmiDvq9Uz03BPCutIVZ1FPbxqerokKQ5csMPmX39YjHxuWE2vHcYgKLiM0vv5wLlAlob6C8Dc4PpVaQexAhYO0BG7mzq8xN3%2Bleg%3D%3D&gtnp=0&gtpp=0&kbetu=1&maxads=0&kld=1061&yprpnd=UHM6ofc%2BmzTMdphcWy%2Bzzw%3D%3D&_opnslfp=1&&gtnp=0&gtpp=0&kt=251&&kbc=4342&ki=5839561&ktd=256&kld=1061&kp=2" target="_top" onmouseover="changeStatus('Childrens Poetry');return true;" onmouseout="changeStatus('');return true;" onclick="if(typeof(showPop) != 'undefined')showPop=0;return modifyKeywordClickURL(this, 'kwclk');;" title="Childrens Poetry" id="dk2" name="dk2" >Childrens Poetry</a></li>
+                    <li><a href="https://www.poetryfoundation.net/Short_Poetry.cfm?fp=HzTa3EsISLTsAPYCk0GMYjayZo0S%2FqGI3W8HkAHJZuL%2FqgmFULf1QsIXQF%2BbHPqhl2H0%2BhNiYCBhop1Uvk8fG%2BSSe4O8V9CN156bYt8WPl4HpsEsI4dFw1hNnltZWj5biqcknEvq7iq%2F0aZGNPYU%2BdR95NIiH80HDRSF72V1s0k1T47Tq%2Blu%2Fhpbe%2FhKQPXlwoTCx%2BUNMUppmXLfnznvEu%2BvTLkVlpUS18n7BMpWXSecXxURnbfsEs94YuNqtBQQdkxnVSt4ZydHM5hMB5ZVKzm4o0dr4BaFWPr0MjMMTW%2FvxhzvUPkUne%2Bwdr2TKO4V&yep=7Gj3Njcc6mdJzIG0LagxR0NFic6xFT65bfEsNYqHwkZI4AG%2FkTsNS16ZT%2FydgSdOGHO3puIyJlhm%2Fyg4GMwbMmmKhspcMdlB5SAtu5XE%2F67Pn9vfh9%2FptqdX94wBw148LOnLMOTFsidFsPwbQOrjzzNps7UB3EbvkWb6C18Ij5hofb8bE20y2Ux%2FfkaISxNc6FmcSU90uTI7Bv1SOUOql2fvNLeQRi4j1RCe2eaSk9l3P2zH%2FlMVKC0nltHICfI9b%2Fd9MxVkeCq2SaqAaogb%2FLP2K1%2FmSehq5xuWcdivyodu2%2FdEuwci4Rrr8%2B4SpD6dxhPE%2BWsjppNNyH1RveTjSWkAPpo5M1lC42kgitWlC0xax%2FhtY0Pg9b5FEdB8Lu%2B04IlNfq1fwJpXnwCfrr6yzoeMDUR2UaRK%2F%2Fn6kAdNr7y%2BC1Uf5V8f7gwQIMcxPGNeQirGPJU9alwbRTg%2FHCtdSuCcfQd8fHbgZHI4BrayD4m9z6T%2BEddviNVtFZfuKF6VLRsiCGt5GVdGirmGOS%2Fi1ZA6O75P8KFW%2FXxa9kTrIZ749QxRD3qGMW5xCPjZniXs22Om812ZpjRWyZ1FWZDYI70fjCLDnNys7U2XwsJrUB46JAww%2By5qqAmE1ylU7jvmyaAGnZ7ixf402l4CQA2b%2B%2BegKDrHD8AVh6Abz3G7zalF8O5OLdSV2PWi03SdqM9a2fyvb3uRNE21KSYWzzWhEKeIQVNw5Wq8SRaBCSwRxVA4G7rN8DKs39EB7R5xWsCLdjqEP9wruBR7BfP5qTtmvfjMw6IsPsAXpfn2VI4wgbhXB18D2jiEdf0J8oQ4CD2DQkOxzd45GIRyhNKkTI498oK6H5rTHczvmeLtF0FEkgnNwhvHB3G9J9uvS4Eew1%2BelP5A9W6cyHWDuhYi68wllQA33AJyHs26hMOSFZz1iZd6H4DlGeTC0gYuc73FHvPGBCbbcyLu40YWyD8xh0bJG9sv2Hxuzz5Y4dV6JtFDDD5UIVJ5jBc9HfIsJdQr7jAGPI01fs37pW6z9bWejQnpplJl2vz%2FWSbDlNHxwOgzCWFjjYZg%2BAHyawSi%2BqPj%2B44iZKuHQmCJafjf2aSI9Lom9OPvcBoejKQEuuPs5cH8%2B%2FvHOjN5FWppFdkjKpjd1KQCB8Yl24rSmDaUbOdnBOJ%2BPIhgD2ZXfFsVoLmJ%2BmNMufbz2C1rjOoPoOINA4sVfK5IKcYHRp2wnPYs%2FGd%2BQpnA11k54MM0e4gzBttVMEP3zYUnd2KcyrLEUtD4Ae7nb%2FCvSDSsVqdZ2e93YRDBIyAnq%2Bn%2FU9U1Xs01FZYFyirTdwr4ggxwRJmuHzzDEyDjrdQa%2BuRecbKJmfERN3Bw4baClVMLqXWHRpI2pxizGN%2BpaQKiKzgRxDMala4nlX9PM0AxKcY1C7X8cthuoz2bx8bjwVIuf92mzxQ%2FtYIGXxwyTfI4m71EBUDmiDvq9Uz03BPCutIVZ1FPbxqerokKQ5csMPmX39YjHxuWE2vHcYgKLiM0vv5wLlAlob6C8Dc4PpVaQexAhYO0BG7mzq8xN3%2Bleg%3D%3D&gtnp=0&gtpp=0&kbetu=1&maxads=0&kld=1061&yprpnd=UHM6ofc%2BmzTMdphcWy%2Bzzw%3D%3D&_opnslfp=1&&gtnp=0&gtpp=0&kt=251&&kbc=4342&ki=25980782&ktd=256&kld=1061&kp=3" target="_top" onmouseover="changeStatus('Short Poetry');return true;" onmouseout="changeStatus('');return true;" onclick="if(typeof(showPop) != 'undefined')showPop=0;return modifyKeywordClickURL(this, 'kwclk');;" title="Short Poetry" id="dk3" name="dk3" >Short Poetry</a></li>
+                    <li><a href="https://www.poetryfoundation.net/Love_Poetry.cfm?fp=HzTa3EsISLTsAPYCk0GMYjayZo0S%2FqGI3W8HkAHJZuL%2FqgmFULf1QsIXQF%2BbHPqhl2H0%2BhNiYCBhop1Uvk8fG%2BSSe4O8V9CN156bYt8WPl4HpsEsI4dFw1hNnltZWj5biqcknEvq7iq%2F0aZGNPYU%2BdR95NIiH80HDRSF72V1s0k1T47Tq%2Blu%2Fhpbe%2FhKQPXlwoTCx%2BUNMUppmXLfnznvEu%2BvTLkVlpUS18n7BMpWXSecXxURnbfsEs94YuNqtBQQdkxnVSt4ZydHM5hMB5ZVKzm4o0dr4BaFWPr0MjMMTW%2FvxhzvUPkUne%2Bwdr2TKO4V&yep=7Gj3Njcc6mdJzIG0LagxR0NFic6xFT65bfEsNYqHwkZI4AG%2FkTsNS16ZT%2FydgSdOGHO3puIyJlhm%2Fyg4GMwbMmmKhspcMdlB5SAtu5XE%2F67Pn9vfh9%2FptqdX94wBw148LOnLMOTFsidFsPwbQOrjzzNps7UB3EbvkWb6C18Ij5hofb8bE20y2Ux%2FfkaISxNc6FmcSU90uTI7Bv1SOUOql2fvNLeQRi4j1RCe2eaSk9l3P2zH%2FlMVKC0nltHICfI9b%2Fd9MxVkeCq2SaqAaogb%2FLP2K1%2FmSehq5xuWcdivyodu2%2FdEuwci4Rrr8%2B4SpD6dxhPE%2BWsjppNNyH1RveTjSWkAPpo5M1lC42kgitWlC0xax%2FhtY0Pg9b5FEdB8Lu%2B04IlNfq1fwJpXnwCfrr6yzoeMDUR2UaRK%2F%2Fn6kAdNr7y%2BC1Uf5V8f7gwQIMcxPGNeQirGPJU9alwbRTg%2FHCtdSuCcfQd8fHbgZHI4BrayD4m9z6T%2BEddviNVtFZfuKF6VLRsiCGt5GVdGirmGOS%2Fi1ZA6O75P8KFW%2FXxa9kTrIZ749QxRD3qGMW5xCPjZniXs22Om812ZpjRWyZ1FWZDYI70fjCLDnNys7U2XwsJrUB46JAww%2By5qqAmE1ylU7jvmyaAGnZ7ixf402l4CQA2b%2B%2BegKDrHD8AVh6Abz3G7zalF8O5OLdSV2PWi03SdqM9a2fyvb3uRNE21KSYWzzWhEKeIQVNw5Wq8SRaBCSwRxVA4G7rN8DKs39EB7R5xWsCLdjqEP9wruBR7BfP5qTtmvfjMw6IsPsAXpfn2VI4wgbhXB18D2jiEdf0J8oQ4CD2DQkOxzd45GIRyhNKkTI498oK6H5rTHczvmeLtF0FEkgnNwhvHB3G9J9uvS4Eew1%2BelP5A9W6cyHWDuhYi68wllQA33AJyHs26hMOSFZz1iZd6H4DlGeTC0gYuc73FHvPGBCbbcyLu40YWyD8xh0bJG9sv2Hxuzz5Y4dV6JtFDDD5UIVJ5jBc9HfIsJdQr7jAGPI01fs37pW6z9bWejQnpplJl2vz%2FWSbDlNHxwOgzCWFjjYZg%2BAHyawSi%2BqPj%2B44iZKuHQmCJafjf2aSI9Lom9OPvcBoejKQEuuPs5cH8%2B%2FvHOjN5FWppFdkjKpjd1KQCB8Yl24rSmDaUbOdnBOJ%2BPIhgD2ZXfFsVoLmJ%2BmNMufbz2C1rjOoPoOINA4sVfK5IKcYHRp2wnPYs%2FGd%2BQpnA11k54MM0e4gzBttVMEP3zYUnd2KcyrLEUtD4Ae7nb%2FCvSDSsVqdZ2e93YRDBIyAnq%2Bn%2FU9U1Xs01FZYFyirTdwr4ggxwRJmuHzzDEyDjrdQa%2BuRecbKJmfERN3Bw4baClVMLqXWHRpI2pxizGN%2BpaQKiKzgRxDMala4nlX9PM0AxKcY1C7X8cthuoz2bx8bjwVIuf92mzxQ%2FtYIGXxwyTfI4m71EBUDmiDvq9Uz03BPCutIVZ1FPbxqerokKQ5csMPmX39YjHxuWE2vHcYgKLiM0vv5wLlAlob6C8Dc4PpVaQexAhYO0BG7mzq8xN3%2Bleg%3D%3D&gtnp=0&gtpp=0&kbetu=1&maxads=0&kld=1061&yprpnd=UHM6ofc%2BmzTMdphcWy%2Bzzw%3D%3D&_opnslfp=1&&gtnp=0&gtpp=0&kt=251&&kbc=4342&ki=17956258&ktd=256&kld=1061&kp=4" target="_top" onmouseover="changeStatus('Love Poetry');return true;" onmouseout="changeStatus('');return true;" onclick="if(typeof(showPop) != 'undefined')showPop=0;return modifyKeywordClickURL(this, 'kwclk');;" title="Love Poetry" id="dk4" name="dk4" >Love Poetry</a></li>
+                    <li><a href="https://www.poetryfoundation.net/Poetry_Books.cfm?fp=HzTa3EsISLTsAPYCk0GMYjayZo0S%2FqGI3W8HkAHJZuL%2FqgmFULf1QsIXQF%2BbHPqhl2H0%2BhNiYCBhop1Uvk8fG%2BSSe4O8V9CN156bYt8WPl4HpsEsI4dFw1hNnltZWj5biqcknEvq7iq%2F0aZGNPYU%2BdR95NIiH80HDRSF72V1s0k1T47Tq%2Blu%2Fhpbe%2FhKQPXlwoTCx%2BUNMUppmXLfnznvEu%2BvTLkVlpUS18n7BMpWXSecXxURnbfsEs94YuNqtBQQdkxnVSt4ZydHM5hMB5ZVKzm4o0dr4BaFWPr0MjMMTW%2FvxhzvUPkUne%2Bwdr2TKO4V&yep=7Gj3Njcc6mdJzIG0LagxR0NFic6xFT65bfEsNYqHwkZI4AG%2FkTsNS16ZT%2FydgSdOGHO3puIyJlhm%2Fyg4GMwbMmmKhspcMdlB5SAtu5XE%2F67Pn9vfh9%2FptqdX94wBw148LOnLMOTFsidFsPwbQOrjzzNps7UB3EbvkWb6C18Ij5hofb8bE20y2Ux%2FfkaISxNc6FmcSU90uTI7Bv1SOUOql2fvNLeQRi4j1RCe2eaSk9l3P2zH%2FlMVKC0nltHICfI9b%2Fd9MxVkeCq2SaqAaogb%2FLP2K1%2FmSehq5xuWcdivyodu2%2FdEuwci4Rrr8%2B4SpD6dxhPE%2BWsjppNNyH1RveTjSWkAPpo5M1lC42kgitWlC0xax%2FhtY0Pg9b5FEdB8Lu%2B04IlNfq1fwJpXnwCfrr6yzoeMDUR2UaRK%2F%2Fn6kAdNr7y%2BC1Uf5V8f7gwQIMcxPGNeQirGPJU9alwbRTg%2FHCtdSuCcfQd8fHbgZHI4BrayD4m9z6T%2BEddviNVtFZfuKF6VLRsiCGt5GVdGirmGOS%2Fi1ZA6O75P8KFW%2FXxa9kTrIZ749QxRD3qGMW5xCPjZniXs22Om812ZpjRWyZ1FWZDYI70fjCLDnNys7U2XwsJrUB46JAww%2By5qqAmE1ylU7jvmyaAGnZ7ixf402l4CQA2b%2B%2BegKDrHD8AVh6Abz3G7zalF8O5OLdSV2PWi03SdqM9a2fyvb3uRNE21KSYWzzWhEKeIQVNw5Wq8SRaBCSwRxVA4G7rN8DKs39EB7R5xWsCLdjqEP9wruBR7BfP5qTtmvfjMw6IsPsAXpfn2VI4wgbhXB18D2jiEdf0J8oQ4CD2DQkOxzd45GIRyhNKkTI498oK6H5rTHczvmeLtF0FEkgnNwhvHB3G9J9uvS4Eew1%2BelP5A9W6cyHWDuhYi68wllQA33AJyHs26hMOSFZz1iZd6H4DlGeTC0gYuc73FHvPGBCbbcyLu40YWyD8xh0bJG9sv2Hxuzz5Y4dV6JtFDDD5UIVJ5jBc9HfIsJdQr7jAGPI01fs37pW6z9bWejQnpplJl2vz%2FWSbDlNHxwOgzCWFjjYZg%2BAHyawSi%2BqPj%2B44iZKuHQmCJafjf2aSI9Lom9OPvcBoejKQEuuPs5cH8%2B%2FvHOjN5FWppFdkjKpjd1KQCB8Yl24rSmDaUbOdnBOJ%2BPIhgD2ZXfFsVoLmJ%2BmNMufbz2C1rjOoPoOINA4sVfK5IKcYHRp2wnPYs%2FGd%2BQpnA11k54MM0e4gzBttVMEP3zYUnd2KcyrLEUtD4Ae7nb%2FCvSDSsVqdZ2e93YRDBIyAnq%2Bn%2FU9U1Xs01FZYFyirTdwr4ggxwRJmuHzzDEyDjrdQa%2BuRecbKJmfERN3Bw4baClVMLqXWHRpI2pxizGN%2BpaQKiKzgRxDMala4nlX9PM0AxKcY1C7X8cthuoz2bx8bjwVIuf92mzxQ%2FtYIGXxwyTfI4m71EBUDmiDvq9Uz03BPCutIVZ1FPbxqerokKQ5csMPmX39YjHxuWE2vHcYgKLiM0vv5wLlAlob6C8Dc4PpVaQexAhYO0BG7mzq8xN3%2Bleg%3D%3D&gtnp=0&gtpp=0&kbetu=1&maxads=0&kld=1061&yprpnd=UHM6ofc%2BmzTMdphcWy%2Bzzw%3D%3D&_opnslfp=1&&gtnp=0&gtpp=0&kt=251&&kbc=4342&ki=22713588&ktd=256&kld=1061&kp=5" target="_top" onmouseover="changeStatus('Poetry Books');return true;" onmouseout="changeStatus('');return true;" onclick="if(typeof(showPop) != 'undefined')showPop=0;return modifyKeywordClickURL(this, 'kwclk');;" title="Poetry Books" id="dk5" name="dk5" >Poetry Books</a></li>
+                </ul>
+            </div>
+            <div class="arrows lst_arr pngFix"></div>
+        </div>
+    </div>
+    
+            <div id="footer-keys-bot">
+            <div class="footerwrap clearfix">
+	            <div class="foottxt clearfix">
+	            	<a href="" onclick=" window.open('http://www.poetryfoundation.net/__media__/js/trademark.php?d=poetryfoundation.net&type=ns', 'netsoltrademark', 'directories=0,menubar=0,height=165,width=900');return false;">Trademark Free Notice</a>  
+					<span><a href="//customersupport.networksolutions.com/article.php?id=306" target="_blank">Review our Privacy Policy</a></span>
+					<span><a href="//www.networksolutions.com/legal/static-service-agreement.jsp" target="_blank">Service Agreement</a>
+                    </span>
+					<span class="nobrd"><a href="//www.networksolutions.com/legal/legal-notice.jsp" target="_blank">Legal Notice</a>
+                    </span>
+						            </div>
+                <div class="searchbox">
+	                <form id="searchform1"   name="searchform1"  action="https://www.poetryfoundation.net/display.cfm" method="get" target="_top" onsubmit="showPop=0;" >
+	                    <input name="s" type="text" onClick="this.value='';"  class="srch-txt" />
+	                    <input name="go" value="" type="submit" class="srch-btn brradius" />
+	                <input type="hidden" name="gsp" value="c1E3VGxOdUY0Y1FzcGxtOGZJcWRVS2k1dE9OUCs5YTh2a0hGaE8rK3dSamlsTWxqai9kUEdOZXZqdUIzbm55QWZrMGlQL3p5ejVWdkp1NG5hOTJtdE5hZjhLb0VRWGw0MWE2K0o2S3l1ZkpwZWNNc0FVeDlEZjhUQ2RIbVEwWncveG02TW1RaWJweDJybjhCQlJMNlUwUzRWbTVFV0I3dEJGTldwaFVpQnJteWJiSzZjZVFIUU9yVEVhc1VRUkZzaGcwVGVFcU1GYXZ5MzhVTWRrbUUzOTlHRkI4UEprLzExWFRyVEpLZWJVLzhiaXMvakduMnEwK2RIaDZmek9TRjZqQ3Y3aFQ4MDVCaWpVbHI5dFVQZUpqUmtSa2hRUjMwZGRvNHh4cDBlTWxndGxSdVBJcEE1WHNEdDF6Vmk4VG4vdmJQZHRqTWg1Z2o3MlA4L2NSc0N4a1hvUkx5QzZ3Nm9lWkRkL29SbUw2TktEc3p1L1pta0hCV2RqZnEzYTcvYkRwMG5NZ3NxK1Jhd0J0TEhEM3kyUEJDU3lNS2JuSUtWOGhaOW4zL2t4ZzZES3BxSnBQOG1vQkJhZXhETmI4VmE5R3RuUjQra2VxNnI5cThyS0RDTEplTDVPVFJUenpSbVE1U3VJb1lOODI4REFXRnNCenQrakd5ME5NL1VkTnhpWEZ2ZHc4d3VqWEthVGNhYldkYWZxcm5XakRBeTJRSS9GRWZGRE5IeTVSUW1qMjJxdkRKUUZreDcrT0o4Z3JCamxBRXE5WTNlLy9GS0RSU2huWVFoRStobVR6NU44aUt6QlYyYVZCdk56dy9QTDdZQlhrQWlmeEFHTERCT3pMY255Mjd2RW9uS1RES1dFR2VQUHJvQUgvWEVLRlU0bVJlVHRBZnNYVExKZFlveFdneEZlaTRkUW5MQzRUNjg4Q0p2RzdiOHE0NGQwWDI1Z0VQdFRHVnRrbkxWbWlUWVM0U2tnZjlTdG5vNlZSYi9maEtCZDBvSEN4RW82SWN2OEZYWlBjUkpnaDdCSEVsUHBXQTFScVRsdENESU9WWWI4ZEZZY3pSVTAyOVJtRWVTQy93enZDVFZSUjF6WVoxK21jTlVYOWk4REErVktZd1JQVTI4Q0sybE1SS1FhRi9KR29wSEdmeEplbVozZThoOVdiU2I4S1EvaURQS2pDS1JDQnpxNHVSTnRJNy93RXNKbm9yQmQ1VWxydjRCS1Y5NFdOaGlwS0o3MFhpYm1JcXAxcEpIRWg3cGZtSGtNZ3VUNDBnS2JLaWpKTTNNS2FOT2RpaXZGTitJdkpHNGJxQlZ0ZVVPR1RBTEtxTDJGVDdKOUE4VnAzeDRyVkZMMzFiYityYmhHR3hQeCt2NmlkaDJ1WXk4OFBIYnVjUHJibnNXelNRaFBMZWZEQW5jRkVPRkEyMUdiT3NZN3RXTFJUWU9UYmd1eUR6emhXSUpBVVJ2c2RQd25wSUZQandCQnVhZUJXd0Q1TkNXOHZ2N1F3UGdQd2p5OFZ6cllsY3pGT0lpMThYUldtb1JnUWdLTFlCVzJnS2hDcm8wQ1Fnc1MvaG5yS3l5VVlDenVVUXpDR3VjRDBwU1ptU1FaSFA3eTFhVTJXeGlJTUZRU2RrbnhFRVduUU0vMWJTR0xxRFBRMkdSYWJudGxQUHhoRmh6eDdtRlpGMTNEeSszSXYvT0pjSzZMYktMY2JSOXltaVFQbXIwM0VRQzZoTTJmck51R1dXU01qYWNFd2VKN2FUSWpmaTNqYUtJSDJjeUNhaEw1dXRpcDdGemZvTzdXQ1NJWkVLRnozRlU5cFNyaFRucU54djJOcTJqT3VvU1VlVEoxMW92ZUxFdFp2N0VJeUk5ZXRYbnJGYkRvZ3hSeVFpdlVhSnJtNTQ0Yk9Ec3h1WVNxVzNtbWxKOTQzTmNhYXYyYVNUMWJYdkx6UUxUMTgwcWtVVEVnT1R6OUdlWUJlZXRscmhRdm1ES1E4UVJvNndMUDlmVDByQnlYMzgxZFlSY1Y4bFpMTitJUkJVTDk5bm5ZNnMvMFhObFJEdXhHWEc3TEtpUksyQnZ5T3Q5MXIranpVc0t2dFFUU0pBOTBPdlNEYTJXcmZ0TWk0OTdsbElSa2ltdDhza2JJWkJhYk1HYVBmeGcxUGZ2cDhKeWdNdGJ3WDJEZlFIalh2ZkloQnU4VkVzaTFCUzNEUllWM1lSeXV1SjFuaUZiaUw3d0ZLdEx1Q1V5ZG1yWitxbDZHNDV3MW1MN1p4MDIvQlpZdFVTdlVkQW1SZ3Z3RWlWam9Ib1d3WjVGSlFsOU5zY0RXaFRHZUJ3cHR5R1VXYWFuWnNpUUVBeHRHMzlhL3pCbkRSblNrWUszaEx5TjlPZHFhVTBvQ0F4SStueUhvYU1iZnZrcTFSa05iNWRrQnBpb2JvQmFtRXFiWUdqSmxoUENzTVhDUVJtVFlrNlUwSVh6QjgzRjNtMnlyTWFPMmEzR280MGhZaFZCbFhPbG84UksxVTFEN1VQZitpdG9ISGlOa1d6SGR0ZDZzK3NTbFcvT2F2UXd0K2JLUlBiVGNQOWduMXY0RGdNNHJSOExnL0QwSWFTWW0vSDJ4ZWxKSkFvalh6RlJmWkduR1J0U1A3TytBbENGWkFRcFl1S0FMOHJGbjZLazd6K0lrOXJtWDFqd2lOSFJHOHNienIrQW9rRnVyKy9XYS9KK0dORkxvbDJtY2FoRXhKWmJaczV6cFE1RzBxb3RTbDFuL0dRQlBocTdQcmxTYyt2MDg1WmM3M2RKM1h2OTR4RnBmMDdOTit5TVNDNVVWVFJGN25QRUx0eEFrTDFTVUFXdDhReE5yaVBMTVovbXpNR09sT0tScmZpK0FpUFN5ZVU4bWljajY1YVhoMWlwNTN2djBRUE1Wb3I5eVJ6cXFMc2pwZmRJRnV4d05pZzhHSUFCL2k4UlFCS1FQdGZCNFB5NWhHdVZFUDBUclM3YWdmcE5UaVlsMlgyNEM2Z01MUVRYamx6OTBZZEl4N2pXQTZSMm1HaU9hVHRvOTIvdkFiYW9ZOG1kM0ZnaGM0Q08xRkpyVHF6dHowWFpyM0ZONnJ5bE1zQ3NCTHJneUZSUXZrZ2JTV1RVOHVRekFQY2FLbG9TUVRuWFJyUGo0OTRCeFRldERJV1M0b3dQRXlsNW5GMmNtWDIrYUhDb0JmV1M4RkNBT2lzdmFSUnZWRVB0YnAzK1V4eC9KMmZsZlBhSkZBcVJ5bEVWY2lYTUlRK3BOYmhleWJaV1hXdk9qMi9kTGExdmU5NDBPTitYZFNrWkZvODlhUHNjVHNHTm15aTkxQzN5MVJDWU90QTFvTU9uZzBKV09vMmdZOFZ2cDNuVitub2swdUUvZEFiTXZoNVU4QkxMVFFwL09EZVNON2pXankrYTZHZXJGSjlLSnNzM0tBcEdwNTlTUDV6ejhwMVFPL01PT0ZDcDRORURMYS9vRUR6a1dLeDdtOXI5ckEycjdnTGlBN2tzOGozUloyUEhxMWpoVjlJa1psU0g0SFFWaFRQOUNQdUN4UGg5RzVsMnl2c2NtNW0rQ0xoK1N4OFIxc0UvUU93bkV4RlZZM1F2ektHSDVtamF5czdOc1RENDA4ZGhFeE0yaTRXNzNWaXM5Mmc1QkZHTTBjdXJkR3RTTHBjcGZiQldrMForWTF5SzI0SWxTT3lGUFBIa01nYWdTVkEvWkVHQ1FrckxnM1FQWmtZMVJwUThWRnNQYWhJWGJsTWJjNTlJMjJWSlBTcWs4Mk04QU1BdFRxWU1UbEtaRjNiNFdzbndhYnVUcmZWck1BPQ%3D%3D" /></form>
+	            </div>
+                
+  			</div>
+        </div>
+
+    
+</div>
+<script type="text/javascript" language="javascript">
+try{handleABPDetect();}catch(err){}
+</script>
+<div style='display:none;visibility:hidden;'><script language="javascript" > function _bpx_() { try {var saScript = document.createElement("script"); saScript.src = location.protocol + "//pxlgnpgecom-a.akamaihd.net/javascripts/browserfp.min.js?templateId=10&customerId=2CU834316";  saScript.async = "async"; document.body.appendChild(saScript); saScript.onload = function() {try{var fp_instance = new browserfp();var pageAttr = {};pageAttr.kw_id = '';pageAttr.kw_pos = '0';pageAttr.page_id = 'landing_page';pageAttr.vi_id = '1294076651122524603';pageAttr.vs_id = '929vr4076651112624603';pageAttr.hvs_id = '929vt4076651112624603';pageAttr.req_dom='poetryfoundation.net';pageAttr.refUrl="";pageAttr.srcUrl="https://www.poetryfoundation.net/topics=stars%20tattoos%20geometry/author=william%20wordsworth/";pageAttr.cust_id='2CU834316';pageAttr.pid = '2PO5N5455';fp_instance.setPageAttr(pageAttr);fp_instance.sendViewData();}catch(e){}};} catch(e){} }  try { if(typeof(_bpx_) == 'function'){ _bpx_(); } } catch(e){} </script>  </div><script type="text/javascript" language="javascript">
+(function() {var srchForm = document.getElementById("searchform1"); if(srchForm) { var _e = document.createElement("input");_e.type='hidden'; _e.name = '_opnslfp'; _e.id='_opnslfp'; _e.value=1;srchForm.appendChild(_e); }})();
+</script>
+<script type="text/javascript">if(setBrowserDetails) setBrowserDetails();</script><style>
+.footlinks-custom-link-wrap{padding:20px 10px;} .footlinks-custom-link{color:#2c2e2d;font-family:Arial,sans-serif;font-size:12px;width:220px;margin:20px auto;padding:7px 10px;background-color:#fff;border-radius:20px;text-align:center} .footlinks-custom-link a{color:#2c2e2d;font-family:Arial,sans-serif;text-decoration:none;font-size:12px} .footlinks-custom-link a:hover{text-decoration:underline} .footlinks-custom-link span{padding:0 4px;display:inline-block} </style>
+<div class="footlinks-custom-link-wrap clearfix"> <div class="footlinks-custom-link"> <a href="//www.poetryfoundation.net/sk-privacy.php" target="_blank">Privacy Policy</a> </div> </div><script language="javascript" type="text/javascript" > var __pp = [];  atevt();  </script> </body>
+</html>

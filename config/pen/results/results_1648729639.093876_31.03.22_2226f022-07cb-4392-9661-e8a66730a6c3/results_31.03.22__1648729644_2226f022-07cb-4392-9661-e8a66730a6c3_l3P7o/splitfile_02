@@ -1,0 +1,1 @@
+- Simon Peyton Jones: execState is a function that just evaluates a state. It's a simple function, any language should have something like this.

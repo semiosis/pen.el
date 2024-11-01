@@ -1,0 +1,2 @@
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "y" "-ssh" "--" "docker" "container" "ls" "--all" "--format=[{{ json .Names }},{{json .ID}},{{json .Image}},{{json .Command}},{{json .CreatedAt}},{{json .Status}},{{json .Ports}},{{json .Names}}]" "#" "<==" "pen-ssh-host"
+cd /root/.pen/documents/notes;  "cterm-ssh" "-ssh-to-host" "n" "-cwd" "/root/.pen/documents/notes" "-cmd" "tmwr -nopr \"glow\" \"-f\" \"/root/repos/dzello/reveal-hugo/README.md\"" "-user" "shane" "#" "<==" "nsfa--pen-cterm"

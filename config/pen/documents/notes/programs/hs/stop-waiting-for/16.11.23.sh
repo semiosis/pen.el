@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "stop-waiting-for" "notty214612" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "stop-waiting-for" "notty215654" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "stop-waiting-for" "notty216697" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "stop-waiting-for" "notty217150" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/src;  "stop-waiting-for" "notty221528" "#" "<==" "sh"
+cd /root/.pen/documents/notes;  "stop-waiting-for" "notty225354" "#" "<==" "sh"

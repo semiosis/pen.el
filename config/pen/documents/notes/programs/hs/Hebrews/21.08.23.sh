@@ -1,0 +1,6 @@
+cd /root/notes;  "Hebrews" "3:1" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "3:1" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "3:1-2" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "8:3-13" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "9:26-27" "#" "<==" "zsh"
+cd /root/notes;  "Hebrews" "9:26-28" "#" "<==" "zsh"

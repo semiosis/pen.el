@@ -1,0 +1,31 @@
+task: "Synopsis of book"
+tags: fun writing
+doc: "Given a book title, give a synopsis"
+prompt-version: 1
+prompt: |+
+  http://readersdigest.co.uk/book-reviews/<sl:author>/<sl:title>/
+
+  <delim>
+  Book title: <q:title>
+  <delim>
+  Author: <q:author>
+  <delim>
+  Full synopsis: <:pp>"
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "author"
+- "title"
+examples:
+- "J. R. R. Tolkien"
+- "The Hobbit"
+info: on
+completion: off
+insertion: off
+n-collate: 1
+postprocessor: pen-str remove-leading-and-trailing-newlines | uq | sed -z 's/^"//' | pen-pretty-paragraph

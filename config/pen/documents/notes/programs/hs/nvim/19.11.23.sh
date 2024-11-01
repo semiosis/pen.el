@@ -1,0 +1,1 @@
+cd /root/.pen/documents;  "nvim" "-u" "/root/.nvimrc" "-c" "call TermAndQuit(\" cat '/root/.pen/tmp/tf_temp6RHNBWQ.txt' | 'fzf' '--algo=v2' '-m' '--reverse' '--preview=p {} | pen-fzf-scope' '--preview-window=up:30%:hidden' > '/root/.pen/tmp/tf_tempSpEJ2J2.txt'\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "pen-nvc"

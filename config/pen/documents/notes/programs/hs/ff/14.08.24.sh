@@ -1,0 +1,6 @@
+cd /root/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=he+put+all+things+under+his+feet+and+gave+him+as+head+over+all+things+to+the+church%2C+which+is+his+body%2C+the+fullness+of+him+who+fills+all+in+all"
+cd /root/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=he put all things under his feet and gave him as head over all things to the church, which is his body, the fullness of him who fills all in all"
+cd /root/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=he+put+all+things+under+his+feet+and+gave+him+as+head+over+all+things+to+the+church%2C+which+is+his+body%2C+the+fullness+of+him+who+fills+all+in+all"
+cd /;  "ff" "https://www.google.com/search?client=firefox-b-d&q=he+put+all+things+under+his+feet+and+gave+him+as+head+over+all+things+to+the+church%2C+which+is+his+body%2C+the+fullness+of+him+who+fills+all+in+all"
+cd /;  "ff" "https://www.google.com/search?client=firefox-b-d&q=he+put+all+things+under+his+feet+and+gave+him+as+head+over+all+things+to+the+church%2C+which+is+his+body%2C+the+fullness+of+him+who+fills+all+in+all"
+cd /root/notes;  "ff" "https://www.google.com/search?client=firefox-b-d&q=he+put+all+things+under+his+feet+and+gave+him+as+head+over+all+things+to+the+church%2C+which+is+his+body%2C+the+fullness+of+him+who+fills+all+in+all"

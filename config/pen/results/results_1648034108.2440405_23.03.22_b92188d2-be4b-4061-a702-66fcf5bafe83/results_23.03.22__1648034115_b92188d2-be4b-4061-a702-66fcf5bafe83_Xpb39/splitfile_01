@@ -1,0 +1,9 @@
+(reset! mnt (Mount/start
+               {:id 'khala
+                :state (atom nil)
+                :subtree (subtree/subtree-root
+                          {:title "Khala"
+                           :data nil
+                           :view-fn)
+
+(defonce mnt (atom nil))

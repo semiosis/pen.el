@@ -1,0 +1,8 @@
+"http/post" is a function that takes a path and a list of params.
+The path should be a string that begins with a slash.
+The params should be a list of key-value pairs.
+
+Example:
+(http/post "/" '((:name "Bob") (:age 25)))
+
+

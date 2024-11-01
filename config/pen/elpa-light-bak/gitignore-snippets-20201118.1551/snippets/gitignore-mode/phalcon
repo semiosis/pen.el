@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Phalcon
+# contributor: Toptal & contributors
+# key: phalcon
+# --
+
+### Phalcon ###
+
+/cache/
+/config/development/

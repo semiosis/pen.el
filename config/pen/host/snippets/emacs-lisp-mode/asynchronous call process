@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: asynchronous call process
+# group: call
+# key: start-process
+# --
+(let ((process "*kubectl*")
+(buffer "*kubectl-logs*"))
+(start-process process buffer "kubectl" "logs" "-f""redis-64896b74dc-zrw7w")
+(switch-to-buffer buffer))

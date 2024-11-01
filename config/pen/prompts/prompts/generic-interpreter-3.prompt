@@ -1,0 +1,40 @@
+task: "Generic Interpreter"
+tags: interpreter
+prompt-version: 1
+subprompts:
+- banner: |+
+    <language> REPL.
+
+- kickstarter: |+
+    Input: 
+prompt: |+
+    <banner>
+    <history><expression>
+    <:pp>Output:
+lm-command: "openai-complete.sh"
+engine: "OpenAI Codex"
+temperature: 0.2
+max-generated-tokens: 60
+top-p: 1.0
+cache: on
+stop-sequences:
+- "Input:"
+- "\n\n"
+postpostprocessor: pen-str generic-interpreter-tidy-result
+vars:
+- history
+- expression
+- language
+var-defaults:
+- kickstarter
+examples:
+- "Input: "
+- "5 + 5"
+- Python
+filter: no
+completion: off
+insertion: off
+interpreter: on
+conversation: on
+external-related:
+- "https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/"

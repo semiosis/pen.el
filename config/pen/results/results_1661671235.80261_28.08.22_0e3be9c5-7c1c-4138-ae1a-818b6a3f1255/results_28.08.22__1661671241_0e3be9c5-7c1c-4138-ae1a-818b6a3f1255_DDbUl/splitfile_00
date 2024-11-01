@@ -1,0 +1,13 @@
+()
+
+pil.open()
+
+pil.savedata()
+
+pil.imread()
+
+pil.palette()
+
+pil.show()
+
+pil.imshow()

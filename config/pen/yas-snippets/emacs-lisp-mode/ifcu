@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ifcu
+# group: arg
+# key: ifcu
+# --
+(defun fz-cq-classes (&optional arg)
+(interactive "P")
+(goto-cq-sel (fz (b-tabulate (cq-classes (if (equalp arg '(4)) (current-file-path)))))))

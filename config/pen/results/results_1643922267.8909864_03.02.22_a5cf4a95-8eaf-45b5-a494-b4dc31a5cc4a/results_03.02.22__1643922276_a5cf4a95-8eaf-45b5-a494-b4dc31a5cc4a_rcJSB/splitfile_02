@@ -1,0 +1,21 @@
+- 1. /usr/bin/file
+- 2. /usr/bin/find
+- 3. /usr/bin/grep
+- 4. /usr/bin/gzip
+- 5. /usr/bin/ldd
+- 6. /usr/bin/ldconfig
+- 7. /usr/bin/locate
+- 8. /usr/bin/logsave
+- 9. /usr/bin/ls
+- 10. /usr/bin/mktemp
+- 11. /usr/bin/nohup
+- 12. /usr/bin/passwd
+- 13. /usr/bin/readlink
+- 14. /usr/bin/sleep
+- 15. /usr/bin/sort
+- 16. /usr/bin/tar
+- 17. /usr/bin/touch
+- 18. /usr/bin/uname
+- 19. /usr/bin/xargs
+- 20. /usr/bin/yes
+

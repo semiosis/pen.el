@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Sass
+# contributor: Toptal & contributors
+# key: sass
+# --
+
+### Sass ###
+
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

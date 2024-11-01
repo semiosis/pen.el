@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "1" "Timothy" "2:4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Timothy" "2:3-4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Timothy" "2:1-4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Corinthians" "15:20-23" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Timothy" "1:1–2" "#" "<==" "zsh"

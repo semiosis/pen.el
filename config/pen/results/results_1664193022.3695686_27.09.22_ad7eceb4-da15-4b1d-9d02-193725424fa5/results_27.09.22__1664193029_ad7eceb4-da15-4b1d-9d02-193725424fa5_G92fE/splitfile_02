@@ -1,0 +1,14 @@
+https://gobyexample.com/hello-world/
+
+
+Hello World
+
+A tiny program to say hello.
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       fmt.Println("Hello, World!")
+   }

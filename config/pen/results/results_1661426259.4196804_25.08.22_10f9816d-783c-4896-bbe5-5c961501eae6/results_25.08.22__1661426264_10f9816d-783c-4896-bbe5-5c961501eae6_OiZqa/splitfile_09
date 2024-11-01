@@ -1,0 +1,1 @@
+(shell-command-to-string "/usr/bin/uptime")

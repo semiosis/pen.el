@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "rustup" "toolchain" "install" "nightly" "--component" "rust-analyzer-preview" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "rustup" "toolchain" "install" "nightly" "--component" "rust-analyzer-preview" "--reinstall" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "rustup" "toolchain" "install" "nightly" "--force" "--component" "rust-analyzer-preview" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "rustup" "toolchain" "install" "--force" "nightly" "--component" "rust-analyzer-preview" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "rustup" "toolchain" "install" "nightly" "--component" "rust-analyzer-preview" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "rustup" "toolchain" "install" "nightly" "--component" "rust-analyzer-preview" "#" "<==" "zsh"

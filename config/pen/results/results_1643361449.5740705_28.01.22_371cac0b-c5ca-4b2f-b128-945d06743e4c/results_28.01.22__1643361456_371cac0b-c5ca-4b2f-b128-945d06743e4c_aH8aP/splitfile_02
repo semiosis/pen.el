@@ -1,0 +1,11 @@
+
+
+This is a draft of a post about an imaginary linter called Codex.
+
+** Motivation
+
+I was thinking about the recent [openai gpt](https://openai.com/blog/better-language-models/) and wondered if we could create an imaginary linter that would work in the same way.
+
+** What is a linter?
+
+A linter is a tool that checks for errors in code. It can be used to check for

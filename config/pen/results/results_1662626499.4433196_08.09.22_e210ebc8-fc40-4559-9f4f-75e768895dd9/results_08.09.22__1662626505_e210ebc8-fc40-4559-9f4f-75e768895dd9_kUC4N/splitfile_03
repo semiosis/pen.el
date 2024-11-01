@@ -1,0 +1,16 @@
+ Graphics.UI.Gtk
+
+import System.Time
+
+
+main :: IO ( )
+
+main = do
+
+initGUI
+
+alarm <- newAlarm
+
+startAlarm i
+
+runAlarm i

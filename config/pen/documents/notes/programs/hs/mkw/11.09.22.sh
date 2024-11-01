@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "mkw" "-npm" "solidity-language-server" "#" "<==" "mkw"
+cd /root/.pen/documents/notes;  "mkw" "-npm" "solidity-language-server" "#" "<==" "mkw"
+cd /root/.pen/documents/notes;  "mkw" "-npm" "solidity-language-server" "#" "<==" "mkw"
+cd /root/.pen/documents/notes;  "mkw" "-npm" "solidity-language-server" "#" "<==" "mkw"
+cd /root/.pen/documents/notes;  "mkw" "-npm" "solidity-language-server" "#" "<==" "mkw"
+cd /root/.emacs.d/host/pen.el/scripts/container;  "mkw" "-npm" "solidity-language-server" "#" "<==" "mkw"
+cd /root/.emacs.d/host/pen.el/scripts/container;  "mkw" "-npm" "solidity-language-server" "#" "<==" "mkw"

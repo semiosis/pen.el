@@ -1,0 +1,66 @@
+fndds_id,fdc_id,name
+203,1003,Protein
+204,1004,Total Fat
+205,1005,Carbohydrate
+208,1008,Energy
+221,1018,Alcohol
+255,1051,Water
+262,1057,Caffeine
+263,1058,Theobromine
+269,2000,"Sugars, total"
+291,1079,"Fiber, total dietary"
+301,1087,Calcium
+303,1089,Iron
+304,1090,Magnesium
+305,1091,Phosphorus
+306,1092,Potassium
+307,1093,Sodium
+309,1095,Zinc
+312,1098,Copper
+317,1103,Selenium
+319,1105,Retinol
+320,1106,"Vitamin A, RAE"
+321,1107,"Carotene, beta"
+322,1108,"Carotene, alpha"
+323,1109,Vitamin E (alpha-tocopherol)
+328,1114,Vitamin D (D2 + D3)
+334,1120,"Cryptoxanthin, beta"
+337,1122,Lycopene
+338,1123,Lutein + zeaxanthin
+401,1162,Vitamin C
+404,1165,Thiamin
+405,1166,Riboflavin
+406,1167,Niacin
+415,1175,Vitamin B6
+417,1177,"Folate, total"
+418,1178,Vitamin B12
+421,1180,"Choline, total"
+430,1185,Vitamin K (phylloquinone)
+431,1186,Folic acid
+432,1187,"Folate, food"
+435,1190,"Folate, DFE"
+573,1242,"Vitamin E, added"
+578,1246,"Vitamin B12, added"
+601,1253,Cholesterol
+606,1258,"Fatty acids, total saturated"
+607,1259,4:0 (Butyric acid)
+608,1260,6:0 (Caproic acid)
+609,1261,8:0 (Caprylic acid)
+610,1262,10:0 (Capric acid)
+611,1263,12:0 (Lauric acid)
+612,1264,14:0 (Myristic acid)
+613,1265,16:0 (Palmitic acid)
+614,1266,18:0 (Stearic acid)
+617,1268,18:1 (Oleic acid)
+618,1269,18:2 (Linoleic acid)
+619,1270,18:3 (Linolenic acid)
+620,1271,20:4 (Arachidonic acid)
+621,1272,22:6 n-3 (Docosahexaenoic acid – DHA)
+626,1275,16:1 (Palmitoleic acid)
+627,1276,18:4 (Parinaric acid)
+628,1277,20:1 (Gadoleic acid)
+629,1278,20:5 n-3 (Eicosapentaenoic acid – EPA)
+630,1279,22:1 (Erucic/citoleic acid)
+631,1280,22:5 n-3 (Docosapentaenoic acid – DPA)
+645,1292,"Fatty acids, total monounsaturated"
+646,1293,"Fatty acids, total polyunsaturated"

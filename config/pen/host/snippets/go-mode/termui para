@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: termui para
+# key: tupara
+# --
+p1 := ui.NewPar("Hey!\nI am a borderless block!")
+p1.Border = false
+p1.Width = 26
+p1.Height = 2
+p1.TextFgColor = ui.ColorMagenta
+p1.X = 52
+p1.Y = 11

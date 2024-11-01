@@ -1,0 +1,1 @@
+ aws lambda create-function --function-name HelloWorld --runtime python3.6 --role arn:aws:iam::<account-id>:role/<role-name> --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.

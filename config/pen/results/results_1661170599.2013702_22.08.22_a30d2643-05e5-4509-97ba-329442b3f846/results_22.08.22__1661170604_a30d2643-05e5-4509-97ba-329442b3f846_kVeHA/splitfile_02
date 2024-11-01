@@ -1,0 +1,9 @@
+
+import Text.Printf
+main = do
+putStrLn "Enter your name: "
+name <- getLine
+putStrLn $ "Good day " ++ name ++ "!"
+putStrLn ""
+
+Output

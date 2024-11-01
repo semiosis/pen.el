@@ -1,0 +1,199 @@
+# git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+# git config --global merge.conflictStyle diff3 # makes merges easier to read: https://magit.vc/manual/magit/Resolving-Conflicts.html
+# git config core.pager "npx git-split-diffs --color | less -RFX"
+
+# git config --global --add safe.directory '*' # For the current user and all repositories
+# git config --system --add safe.directory '*' # For all users and all repositories
+
+# -RFX will print directly to stdout if tty is big enough
+# less --tabs=4 -RFX
+
+[user]
+    name = Shane Mulligan
+    email = mullikine@gmail.com
+
+[core]
+	pager = npx git-split-diffs --color | less -RFX
+# 	pager = less -RFX
+    filemode = true
+
+[gc]
+    auto = 0
+
+[gui]
+    fontui = -family Ubuntu -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+    fontdiff = -family \"Ubuntu Mono\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+
+[diff]
+    tool = vimdiff
+
+[diff "zip"]
+    textconv = unzip -v
+
+[diff "pdf"]
+    textconv = pdfinfo
+
+[diff "bin"]
+    textconv = hexdump -v -C
+
+[difftool]
+    prompt = false
+
+# this overrides the default vimdiff tool and allows me to specify
+# things like disabling syntax highlighting inside the vd script
+[difftool "vimdiff"]
+    cmd = vd \"$LOCAL\" \"$REMOTE\"
+
+[difftool "vimdifftool"]
+    cmd = vd \"$LOCAL\" \"$REMOTE\"
+
+[difftool "wdiff"]
+    cmd = wdiff \"$LOCAL\" \"$REMOTE\"
+
+[difftool "difft"]
+    cmd = difft \"$LOCAL\" \"$REMOTE\"
+
+[difftool "dhex"]
+    cmd = dhex \"$LOCAL\" \"$REMOTE\"
+
+[difftool "meld"]
+    cmd = meld \"$LOCAL\" \"$REMOTE\"
+
+[difftool "meld"]
+    cmd = meld \"$LOCAL\" \"$REMOTE\"
+    
+[difftool "dsf"]
+    cmd = diff-so-fancy \"$LOCAL\" \"$REMOTE\"
+
+[difftool "diff-so-fancy"]
+    cmd = diff-so-fancy \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+    tool = vimdiff
+    confligtstype = diff3
+    conflictStyle = diff3
+
+[mergetool "diffconflicts"]
+    cmd = "diffconflicts $BASE $LOCAL $REMOTE $MERGED"
+    trustExitCode = true
+
+[mergetool "splice"]
+    cmd = "vim $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+    trustExitCode = true
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+
+[color "branch"]
+    current = yellow black
+    local = yellow
+    remote = magenta
+
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+    commit = yellow bold
+
+[alias]
+    current-hash = rev-parse HEAD
+    rebase-current = !git show `cat .git/rebase-merge/stopped-sha`
+    divergence-commit = !git merge-base master "$(vc bn)"
+    base = !git merge-base master "$(vc bn)"
+    branchorcommit = git rev-parse --abbrev-ref HEAD
+    discard = "!git-discard-nonstaged.sh"
+    detach = checkout --detach
+    remote-exists-remotely = ls-remote --exit-code 
+    b = branch
+    ignored = ls-files . --ignored --exclude-standard --others
+    untracked = ls-files . --exclude-standard --others
+    bi = bisect
+    changed = !test -n "$(git status -s)"
+    root = rev-parse --show-toplevel
+    today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
+    wdiff = "!GIT_EXTERNAL_DIFF=`which wdiff.sh` git diff"
+    rl = "!git-rl.sh"
+    co = checkout
+    r = remote -v
+    remotes = remote -v
+    #s = "!unbuffer git status|less -rS"
+    s = "!git status|vs"
+    a = add
+    show-my-files = "!git-show-my-files"
+    cob = checkout -b
+    unstage = reset HEAD --
+    c = commit -m
+    aa = !git add -u && git add . && git status
+    up = !git fetch origin && git rebase origin/master
+    ir = !git rebase -i origin/master
+    # We fetch and rebase again, just in case there have been changes since the last step, and then we merge it all into master and push it out if all tests pass.
+    # That is what rake is used for in this situation.
+    done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
+    # ↓ it always bothers me when a conflict occurs and i need to add and afterwards, continue rebase. then the next alias saves me! :-)
+    next = "!git add . && git rebase --continue"
+    # shows the last change or changes for a file set
+    dp = "!git-dp.sh"
+    dc = "!git-dc.sh"
+    dt = "!git-dt.sh"
+    diffed = "!git-diffed.sh"
+    dw = "!git-dw.sh"
+    ds = "!git-ds.sh"
+    #dp = "!bash -c \"notify-send \\\"\\$(pwd)\\\";if [[ $# == 1 ]]; then git difftool \\$(git log --oneline -- $1|sed -n 2p|cut -d ' ' -f 1) -- $1; elif [[ $# == 2 ]]; then git difftool \\$(git log --oneline -- $1|sed -n \\$(expr 1 + $2)p|cut -d ' ' -f 1) -- $1; else echo \\\"Example ‘git dp draw.c’ or ‘git dp draw.c 2’\\\"; fi\" -"
+    #dp = "!bash -c \"rev= ;if [[ $# == 1 ]]; then rev=\\$(git log --oneline -- \\\\$1|sed -n 2p|cut -d ' ' -f 1); elif [[ $# == 2 ]]; then rev=\\$(git log --oneline -- \\\\$1|sed -n \\$(expr 1 + $2)p|cut -d ' ' -f 1);echo \\\"Last change was at \\$rev\\\";git difftool \\$rev -- \\$1; else echo \\\"Example ‘git dp draw.c’ or ‘git dp draw.c 2’\\\"; fi\" -"
+    d = difftool
+    m = mergetool
+    tree = log --oneline --decorate --graph
+    this = !git init && git add . && git commit -m \"initial commit\"
+    # The git commit message has 
+    # get-commit-message = !git log -n 1 --pretty=tformat:%s%n%n%b
+    get-commit-message = !git rev-list --format=%s%b --max-count=1 HEAD | sed 1d
+    amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+    r = remote
+    removedeleted = !git ls-files -z --deleted | xargs -0 git rm
+    rmd = rmd
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+    ignore=!([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+    x  = commit -m
+    xa = commit -a -m
+    master = checkout master
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lgo = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    resettoremote = !git fetch origin && git reset --hard origin/master
+[grep]
+    lineNumber = true
+    extendRegexp = true
+# All this time, this has been preventing me from downloading git repos
+#[url "https://"]
+#	insteadOf = git://
+[credential]
+    helper = store
+[github]
+    user = mullikine
+	oauth-token = 1518d0378498014068097affa6f66554d0238a0c
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[diff-so-fancy]
+    changeHunkIndicators = true
+    stripLeadingSymbols = true
+    useUnicodeRuler = true
+    markEmptyLines = true
+[credential "https://git.codelingo.io:443"]
+    helper = store --file /home/shane/.codelingo/configs/git-credentials
+[credential "https://git.codelingo.io"]
+	helper = store --file /home/shane/.codelingo/configs/git-credentials
+[credential "https://git.modica.codelingo.io"]
+	helper = store --file /home/shane/.codelingo/configs/git-credentials-modica
+[credential "https://git.staging.codelingo.io"]
+	helper = store --file /home/shane/.codelingo/configs/git-credentials-staging
+[split-diffs]
+	theme-name = dark
+[safe]
+	directory = *

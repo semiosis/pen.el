@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: internal network
+# group: nwdiag
+# key: int
+# --
+network internal {
+address = "172.x.x.x/24";
+
+`yas-selected-text`$0web01 [address = "172.x.x.1"];
+web02 [address = "172.x.x.2"];
+db01;
+db02;
+}

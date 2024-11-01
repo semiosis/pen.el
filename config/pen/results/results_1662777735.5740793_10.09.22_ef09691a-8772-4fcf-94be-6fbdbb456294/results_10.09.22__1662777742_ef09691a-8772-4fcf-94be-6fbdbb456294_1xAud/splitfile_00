@@ -1,0 +1,1 @@
+""realized?" refers to a value in clojure, it's a function that takes a value and returns the same value as a boolean. if you have a value that is a boolean, calling "realized?" on it will return true. if you have a value that is not a boolean, calling "realized?" on it will return false.

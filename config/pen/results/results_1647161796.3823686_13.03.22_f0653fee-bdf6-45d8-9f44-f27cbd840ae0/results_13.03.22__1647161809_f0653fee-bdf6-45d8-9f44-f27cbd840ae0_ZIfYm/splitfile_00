@@ -1,0 +1,60 @@
+ialization(main).
+
+:- prolog_flag(unknown,_,fail).
+
+:- use_module(library(lists)).
+:- use_module(library(terms)).
+:- use_module(library(ordsets)).
+:- use_module(library(apply_macros)).
+:- use_module(library(random)).
+:- use_module(library(system)).
+:- use_module(library('pillow/http')).
+:- use_module('../../clpqr-common/ops').
+:- use_module('../../clpqr-common/arith').
+:- use_module('../../clpqr-common/clpqr').
+:- ensure_loaded('../../clpqr-common/clpr').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EOD

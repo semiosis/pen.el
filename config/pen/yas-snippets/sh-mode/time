@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: time
+# key: time
+# --
+start_time="$(date +%s)"
+trap func_trap INT HUP
+$HOME/go/bin/lingo "$@"
+end_time="$(date +%s)"

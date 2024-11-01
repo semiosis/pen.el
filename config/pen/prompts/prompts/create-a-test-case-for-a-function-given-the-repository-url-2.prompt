@@ -1,0 +1,39 @@
+task: "create a test case for a function, given the repository url"
+doc: "Given a function name and a repository URL, generate a test case"
+tags: code
+todo:
+- Make this work for more languages
+prompt-version: 1
+prompt: |+
+  git clone "<url>"
+  cd `(insert (pen-snc "sed 's/.*github.com\\/[^/]*\\///'" "<url>"))`
+  cd tests
+  # Functions for testing <function name>
+  cat test_<function name>.py <<EOD
+  
+engine: "OpenAI Codex"
+temperature: 0.3
+
+# This works, but the approximation of the max bound sometimes isn't good enough
+# max-generated-tokens: "final-engine-max-generated-tokens"
+
+# max-generated-tokens: "(- final-engine-max-generated-tokens 200)"
+
+# Only start it off
+max-generated-tokens: 150
+
+top-p: 1.0
+n-completions: 5
+stop-sequences:
+- "EOD"
+cache: on
+yas: on
+vars:
+- "url"
+- "function name"
+examples:
+- "https://github.com/dbrattli/OSlash"
+- "monad"
+filter: off
+completion: off
+insertion: on

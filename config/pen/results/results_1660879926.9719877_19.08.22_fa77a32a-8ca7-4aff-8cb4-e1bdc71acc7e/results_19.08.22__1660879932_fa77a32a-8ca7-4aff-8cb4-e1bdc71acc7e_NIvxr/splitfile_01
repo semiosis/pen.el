@@ -1,0 +1,1 @@
+"hosts: all" is a special value that applies the task to all hosts in the inventory.

@@ -1,0 +1,4 @@
+"GeneralizedNewtypeDeriving" is a new feature in GHC 7.10. It allows you to
+derive instances of Eq, Ord, Show, Read, and Bounded for your newtypes.
+
+This is a code snippet.

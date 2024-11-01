@@ -1,0 +1,8 @@
+cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» ls
+ harrys-adventures.txt  harrys-adventures.txt.bak  harrys-adventures.txt.bak2  harrys-adventures.txt.bak3
+» cat harry-adventures.txt
+Harry's Adventures in the Wizarding World of Magic
+Harry's Adventures in the Wizarding World of Magic

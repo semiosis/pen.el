@@ -1,0 +1,6 @@
+reflexion models.
+    [way of learning a codebase]
+
+    First, you come up with a rough hypothesis
+    of what you think the components are and
+    how they interact:

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: resolver
+# group: shebang
+# key: ver
+# --
+#!/usr/bin/env stack
+-- stack --resolver lts-10.2 script

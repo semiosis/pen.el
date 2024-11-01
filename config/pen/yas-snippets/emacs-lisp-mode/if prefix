@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: if prefix
+# group: prefix
+# key: ifp
+# --
+(if (>= (prefix-numeric-value current-${1:global-}prefix-arg) 4))

@@ -1,0 +1,264 @@
+Link: Excalibur Clan (alternate)
+Home arrow Tutorials arrow Other Tutorials arrow How to set up computer to
+host
+_____________________
+Wednesday, September 15 2010
+o Home
+o Blog
+o Forum
+
+Other Menu               How to set up         PDF Print E-mail   Latest News
+computer to host
+Tutorials                                                           o DM
+Rec. Games                 Written by Leonidas                        attacking
+EX Members                 Sunday, 20 December 2009                   guide
+Mac Newsfeeds              How to configure your computer to host   o DM, the
+FAQs                                                                  first few
+Links                      There are many people who want to host     minutes
+How to register            but no one can join their rooms.  This   o MAC AOE2
+is because the computers of the people     LADDER
+Recent Topics            in your room, do not know how to find    o How to
+yours!  It is very easy to help them       set up
+o New Members (6) by     find their way.                            computer
+Ka$h                                                              to host
+o Playing... (3) by       If you only have one modem and one      o Pocket
+niels                  computer, connected to one modem, with     Mayans:
+o hi everyone (2) by     no separate router and no extra            Plumed
+Citin                  devices,  it is very easy! Everyone        Archers
+o Funniest Story 2010    will be able to join your games!  if   spacer.png, 0
+(27) by Mantis         they cant join your games, you must    kB
+o Killing/ Stealing      have a port blocked.  what is a port?
+sheep (17) by Leonidas that is the entrance they get to your
+o Your "go to" rush (5)  computer.  you have to go to your
+by Leonidas            modem (your isp, verizon, at&t, etc,
+o Mouse Accuracy Trainer will have to tell you how to do this*)
+(2) by Ka$h            and open these ports: 16000, 23978,
+o How To Use Civs In DM  and 15000 for a good measure.  Then
+(3) by Sinister_ROA    you are set.
+o Pocket Strat (6) by
+Sinister_ROA            
+o NEW 1V1 LADDER
+http://tourney.ath.cx/ If you have more than one device on
+(27) by OcToPuS        your network, the other computer will
+have a problem.  When the signal from
+Login Form               the other computer goes to your modem
+looking for the game, it will get
+Username                   lost! it will see all the various
+___________                devices (printers, other computers,
+Password                   iphones, etc) attached to your
+___________                network, and not know which one to
+[ ] Remember me            connect to for the game!! ARRG.  How
+[ Login ]                  do you fix this problem?
+Lost Password?
+ very easy.  You go to the control
+Who's Online             page of your router (if that is also
+your modem, see the asterisked line
+We have 3 guests online    above) and set port forwarding.  This
+spacer.png, 0 kB           means, you tell the router: ALL
+TRAFFIC ENTERRING PORTS 16000 23978
+AND 15000 MUST GO TO MY COMPUTER NOT
+TO THE OTHER DEVICES.  unfortunately,
+your router doesnt know english.  so
+you have to put the info in like
+this.  I will explain how to do it if
+your router is an airport like i
+have. 
+
+ Go to the utilities folder in your
+applications folder.  Open the program
+called "airport utility" select the
+airport that is your router or base
+station.  click manual setup (if you
+have leopard).  In any event, click
+into the control page and if you are
+on Tiger os you should have a pref
+pane for port forwarding.  Enter the
+ports above, and enter the IP adress:
+10.0.1.9    If you have Snow Leopard
+(and i think leopard too), then u have
+to click the button up top that says
+"internet" in teh airport utility
+window.  click so the DHCP lease is
+200 days.  you can do this with tiger
+but its in another window or
+something.  then click the advanced
+wheel, then "port mapping" tab.  click
+the plus button and type in 16000 in
+both publick and private port areas,
+and type in 10.01.9 for private IP
+adress.  click ok.  Repeat this for
+15000 and 23978.  then click update
+for the airport, and you are SET!!!
+
+ 
+
+ONLY ONE PROBLEM!! muahaha.  you just
+forwarded all aoe games to 10.0.1.9. 
+What if your computer is not called
+10.0.1.9 on your own Local Area
+Network (LAN, what your little network
+of devices in your house is called). 
+Well easy, we'll just change it to
+that.
+
+ 
+
+open your system preferences, and
+click network.  This is a little
+different depending on your OS, but
+not too different.  In Snow Leopard,
+you click advanced at the bottom then
+click "tcp/ip", but in Tiger it is a
+bit different.  Nonetheless you have
+to find the tab that says "tcp/ip". 
+write the following settings to look
+like this:
+
+ Configure IPv4: Manualy
+
+IPv4 Adress:  10.0.1.9
+
+Subnet Mask: 255.255.255.0
+
+Router:  10.0.1.1
+
+Configure IPv6:  Automatically
+
+ 
+
+now click ok.  you are done! you did
+it!!
+
+ 
+
+*for my router, on Verizon, a westell
+i think, i type in 192.168.1.1 into my
+browser and it takes me to control
+page.  I then go to
+'FIREWALLSETTINGS"  I set it to
+minimum security and i was fine.
+
+ 
+
+ALSO in system preferenses, if you
+have your Mac firewall on, you want to
+go to the Security Pane in system
+prefernces, clikc "firewall".  In
+older os's, you can enter the ports
+above, as exceptions.  In Snow
+Leopard, you click advanced and
+specifically add aoe and gameranger as
+allowed traffic
+
+ 
+
+PM me in GR with questions!
+
+ 
+
+ leonidas
+
+ 
+
+Comments (4)add                   feed
+zfdfsd5 : wow gold :
+http://www.wotlkgold.net
+I think wow gold and wow power
+leveling or wow gold and and wow power
+leveling
+April 24, 2010
+air max 2009 : air max 2009 :
+http://www.basketballshoesdiscount.com
+it is safety and easy to get the nike
+air max shoes online shop ,we offer
+the good air max shoes with high
+quality ,we sale the nike shoes for
+women and men .such as the the nike
+air max 2009,nike free shoes,nike
+lebron james shoes,etc.If you want to
+buy the cheap nike air max
+basketballshoes , you can just open
+the www.basketballshoesdiscount.com
+.here we had the mens nike air max
+2009 shoes , womens nike air max 2010
+shoes,
+mens nike free 5.0 shoes,mens nike air
+max 95 shoes,womens nike free 5.0
+shoes, nike lebron james VII
+shoes,mens nike free 3.0 shoes,mens
+nike air max 90 shoes and so on .
+
+nike air max shoes make your life and
+you body become more and more
+beautiful.
+June 04, 2010
+... : tabiz
+thanks a lot man
+August 17, 2010
+... : Genghis Khan
+man, my host use to work fine but I
+did some changes some people come and
+i can host no more, so i just came to
+this tutorial and the problem appear
+when i am openning "Airport Utility".
+It doesnt find my router data base, it
+says "Airport utility can't find any
+devices... bla bla bla, have been
+searching and lot of people have the
+problem but no solution do you know
+what to do??
+September 04, 2010
+
+Write comment
+
+Name _____________________
+Email _____________________
+Website _____________________
+Title _____________________
+Comment
+quote
+bold
+italicize
+underline
+strike
+url
+image
+quote
+quote
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+Smiley
+_____________________
+_____________________
+_____________________
+_____________________
+_____________________
+_____________________
+
+Write the displayed characters
+
+_________
+Add Comment
+
+Powered by Azrul's Jom Comment
+busy
+Last Updated ( Wednesday, 03 February
+2010 )
+
+ 
+
+Next >
+
+[ Back ]
+
+RSS 2.0
+

@@ -1,0 +1,2 @@
+guix-daemon.log  mail.log.1  squid  wtmp
+shane

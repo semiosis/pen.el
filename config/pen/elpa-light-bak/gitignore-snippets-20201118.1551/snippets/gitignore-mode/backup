@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Backup
+# contributor: Toptal & contributors
+# key: backup
+# --
+
+### Backup ###
+
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp

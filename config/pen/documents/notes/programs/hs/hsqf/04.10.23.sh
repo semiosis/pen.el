@@ -1,0 +1,5 @@
+cd /root/.emacs.d/pen.el/scripts;  "hsqf" "hs" "#" "<==" "hsqf"
+cd /root/.emacs.d/pen.el/scripts;  "hsqf" "rust-analyzer" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "rust-analyzer" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "rust-analyzer" "#" "<==" "hsqf"
+cd /root/notes;  "hsqf" "rust-analyzer" "#" "<==" "hsqf"

@@ -1,0 +1,12 @@
+
+            (or (pen-var-value-maybe 'engine-max-stop-sequence-size)
+                ',engine-max-stop-sequence-size)))
+
+          (final-engine
+           (or (pen-var-value-maybe 'engine)
+               ',engine))
+
+          ;; These happen after the postprocessing
+          (final-end-actions
+           (or (pen-var-value-maybe 'end-actions)
+               ',end

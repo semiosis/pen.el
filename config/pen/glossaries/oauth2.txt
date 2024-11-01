@@ -1,0 +1,20 @@
+oauth
+    Provides granular permissions ("scopes")
+    and easy ability for users (or
+    administrators) to see granted tokens and
+    revoke tokens/permissions at will.
+
+Bearer Tokens
+    The predominant type of access token used
+    with OAuth 2.0.
+    
+    A Bearer Token is an opaque string, not
+    intended to have any meaning to clients
+    using it.
+    
+    Some servers will issue tokens that are a
+    short string of hexadecimal characters,
+    while others may use structured tokens
+    such as JSON Web Tokens.
+
+    https://youtu.be/xQGC-8ojYbU?t=372

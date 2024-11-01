@@ -1,0 +1,2 @@
+opam switch
+    hsqf opam switch

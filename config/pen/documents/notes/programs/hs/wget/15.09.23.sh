@@ -1,0 +1,2 @@
+cd /root/dump/programs;  "wget" "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter0_0.20.8-2_amd64.deb" "#" "<==" "zsh"
+cd /root/dump/programs;  "wget" "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter-dev_0.20.8-2_amd64.deb" "#" "<==" "zsh"

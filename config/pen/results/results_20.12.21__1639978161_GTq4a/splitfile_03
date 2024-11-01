@@ -1,0 +1,13 @@
+{
+    "n_stages": 3,
+    "stage_1": {
+        "name": "stage_1",
+        "thrust": 0.0,
+        "payload": 0.0,
+root@mele:/etc/init.d$ cat /etc/falcon9/falcon9.conf
+{
+    "n_stages": 3,
+    "stage_1": {
+        "name": "stage_1",
+        "thrust": 0.0,
+        "payload": 0

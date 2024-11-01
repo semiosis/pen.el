@@ -1,0 +1,7 @@
+cd /;  "gmi" "pull" "#" "<==" "spin"
+cd /;  "gmi" "pull" "#" "<==" "spin"
+cd /;  "gmi" "pull" "#" "<==" "spin"
+cd /;  "gmi" "pull" "#" "<==" "spin"
+cd /;  "gmi" "pull" "#" "<==" "spin"
+cd /;  "gmi" "pull" "#" "<==" "spin"
+cd /;  "gmi" "pull" "#" "<==" "spin"

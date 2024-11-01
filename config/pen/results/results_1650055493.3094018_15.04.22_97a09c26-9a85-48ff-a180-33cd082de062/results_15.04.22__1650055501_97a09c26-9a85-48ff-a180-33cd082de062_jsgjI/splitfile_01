@@ -1,0 +1,7 @@
+
+
+Transient commands are invoked by typing their prefix key (just any
+e
+character or key) and then their infix arguments, and finally their
+suffix command. For example, the following transient is bound to the
+key sequence

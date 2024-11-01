@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: getter
+# group: adt
+# key: get
+# --
+data Person = MkPerson String String Int Float String String deriving (Show)
+
+firstName :: Person -> String
+firstName (MkPerson firstname _ _ _ _ _) = firstname

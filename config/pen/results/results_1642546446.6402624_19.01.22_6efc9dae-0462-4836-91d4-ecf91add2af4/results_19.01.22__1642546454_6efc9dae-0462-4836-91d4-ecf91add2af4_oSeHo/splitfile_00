@@ -1,0 +1,4 @@
+
+One of the accepted answers to your question is @.
+I would suggest that this is the standard way to refer to a reference in a clojure program.
+

@@ -1,0 +1,2 @@
+cd /root/.pen/documents/notes;  "fpvd" "/root/.pen/documents/notes/ws/chemistry/list-of-chemical-elements.tsv" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes/ws/chemistry;  "fpvd" "/root/.pen/documents/notes/ws/chemistry/list-of-chemical-elements.tsv" "#" "<==" "fpvd"

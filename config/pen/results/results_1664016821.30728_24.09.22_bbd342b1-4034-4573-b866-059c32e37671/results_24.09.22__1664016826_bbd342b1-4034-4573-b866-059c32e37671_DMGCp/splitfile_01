@@ -1,0 +1,7 @@
+
+            (mapv first pairs))))
+
+(defn make-project-name
+  "Get a project name from the current directory"
+  []
+  (str/replace (str/trim (pget (p

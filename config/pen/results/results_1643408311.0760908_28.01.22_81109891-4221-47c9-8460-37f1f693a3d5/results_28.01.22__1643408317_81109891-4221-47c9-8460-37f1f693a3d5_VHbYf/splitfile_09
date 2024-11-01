@@ -1,0 +1,18 @@
+cd /root/notes
+» pwd
+/root/notes
+» cd ..
+» pwd
+/root
+» cd /root/notes
+» pwd
+/root/notes
+» cd ../..
+» pwd
+/root
+» cd /root/notes
+» pwd
+/root/notes
+» cd ../../..
+» pwd
+

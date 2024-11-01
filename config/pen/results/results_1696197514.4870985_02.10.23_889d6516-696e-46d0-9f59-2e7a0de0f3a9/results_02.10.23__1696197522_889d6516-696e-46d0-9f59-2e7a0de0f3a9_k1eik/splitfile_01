@@ -1,0 +1,3 @@
+vim
+exec env | tv
+env | tv

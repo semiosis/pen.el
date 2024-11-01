@@ -1,0 +1,11 @@
+https://wiki.haskell.org/Functor_hierarchy_proposal
+
+
+Functor hierarchy proposal
+
+Functors are a simple typeclass that provides a mapping operation.
+
+Functors provide a mapping operation that can be used to map a function
+over the values in a data structure.
+
+Functors are

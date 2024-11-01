@@ -1,0 +1,7 @@
+[[String]] -> IO ()
+tabularise rows = do
+  let maxWidths = maximumBy (compare `on` length) rows
+  forM_ rows $ \row -> do
+    let row' = map (\(s, n) -> if n == 0 then s else pad s n) row
+    putStrLn $ intercalate " | " $ map (\(s, w) -> pad s w) row' `zip` maxWidths
+EOD

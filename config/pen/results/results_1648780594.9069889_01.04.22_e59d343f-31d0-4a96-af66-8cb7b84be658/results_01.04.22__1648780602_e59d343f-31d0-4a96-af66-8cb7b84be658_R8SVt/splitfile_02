@@ -1,0 +1,19 @@
+.
+- There are different types of recycling, right?
+- You are right, but what about recycling oil?
+- You should certainly consider that.
+- When was the first recycling?
+checksum: "84bcaa3514cdf7df8c954cdf70ec7fdd3d13a73b477a9b48fe1894be2a9d1a8f"
+`
+
+// TestCompletionPrompts tests completion prompts are correctly read.
+func TestCompletionPrompts(t *testing.T) {
+	path := "../../data/completion-prompts.yaml"
+
+	var prompts []CompletionPrompt
+
+	if err := LoadYAML(&prompts, path); err != nil {
+		t.Fatalf("Failed to load YAML: %v", err)
+	}
+
+	if len

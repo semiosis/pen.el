@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: DM
+# contributor: Toptal & contributors
+# key: dm
+# --
+
+### DM ###
+
+*.dmb
+*.rsc
+*.int
+*.lk
+*.zip

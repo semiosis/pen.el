@@ -1,0 +1,5 @@
+cd /;  "plf" "String::Escape" "#" "<==" "runbasic.sh"
+cd /;  "plf" "String::Escape" "#" "<==" "runbasic.sh"
+cd /;  "plf" "String::Escape" "#" "<==" "runbasic.sh"
+cd /root/.emacs.d/host/pen.el/scripts;  "plf" "install" "Text::Unidecode" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "plf" "install" "Text::Unidecode" "#" "<==" "zsh"

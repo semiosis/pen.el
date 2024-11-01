@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"
+cd /root/.pen/documents/notes;  "visidata" "-P" "open-colors" "#" "<==" "pen-fpvd"

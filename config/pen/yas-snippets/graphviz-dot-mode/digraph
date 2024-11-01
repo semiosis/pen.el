@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: digraph
+# group: boilerplate
+# key: dg
+# --
+digraph Q {
+`yas-selected-text`${0:node1 -> node2}
+}

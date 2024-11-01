@@ -1,0 +1,13 @@
+cd 'harrys adventures'
+» ls
+ harry.txt       harry.txt~  harrys-adventures.txt
+» cat harry.txt
+Harry Potter and the Deathly Hallows
+» cat harrys-adventures.txt
+Harry Potter and the Deathly Hallows
+» cd ..
+» ls
+ clipboard.txt   core  'harrys adventures'   stop-reason.txt
+» cd ..
+» ls
+ clipboard.

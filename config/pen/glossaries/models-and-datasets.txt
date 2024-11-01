@@ -1,0 +1,13 @@
+Open Neural Network Exchange
+ONNX
+    https://onnx.ai/
+
+    The open standard for ML interoperability.
+    
+    ONNX is an open format built to represent
+    ML models. ONNX defines a common set of
+    operators - the building blocks of ML and
+    DL models - and a common file format to
+    enable AI developers to use models with a
+    variety of frameworks, tools, runtimes,
+    and compilers.

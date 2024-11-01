@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: stub
+# key: stub
+# --
+codelab :: a
+codelab = error "SOMETHING IS NOT IMPLEMENTED!"

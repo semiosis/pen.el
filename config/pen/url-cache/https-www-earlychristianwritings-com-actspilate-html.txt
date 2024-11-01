@@ -1,0 +1,740 @@
+HTTP/1.1 200 OK
+Date: Fri, 01 Mar 2024 00:54:04 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Tue, 17 Nov 2015 20:49:49 GMT
+Accept-Ranges: bytes
+Content-Length: 39892
+Keep-Alive: timeout=3, max=100
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Acts of Pilate</title>
+<link rel="stylesheet" media="all" href="finaldemo/layers.css" type="text/css">
+<style type="text/css">
+body {
+	behavior: url("csshover.txt");
+}
+
+body {
+  margin: 0px;
+	padding: 0px;
+}
+
+#menu ul, li, div {
+	margin: 0px;
+	padding: 0px;
+}
+LI:hover {
+	Z-INDEX: 15;
+}
+UL UL {
+  position: absolute;
+	display: none;
+}
+LI:hover UL UL {
+	DISPLAY: none;
+}
+LI:hover UL {
+	DISPLAY: block;
+}
+LI:hover LI:hover UL {
+	DISPLAY: block
+}
+li ul {
+	position: absolute;
+	display: none;
+}
+#menu ul, #menu li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul li {
+	position: relative;
+}
+#menu {
+  line-height: 1px;
+	font-size: 1px;
+}
+
+/* Styles for Menu Items */
+
+li.topli ul a {
+  display: block;
+	padding-top: 3px; padding-left: 3px; padding-bottom: 3px; padding-right: 0px;
+	margin: 0px;
+	text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+	line-height: 10px;
+  font-size: 10px;
+	color: rgb(246, 223, 190);
+}
+li.submenu a {
+  background-image: url("pic/arrow.gif"); background-position: right; background-repeat: no-repeat; z-index: 20;
+}
+li.submenu ul a {
+  background-image: url("pic/spacer.gif"); z-index: 25;
+}
+li.topli li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+li.topli li:hover ul li a {
+  color: rgb(246, 223, 190);
+	background-color: rgb(73, 63, 40);
+}
+#menu li.submenu ul li:hover a {
+  color: rgb(73, 63, 40);
+	background-color: rgb(246, 223, 190);
+}
+#menu li {
+  height: 16px;
+	margin: 0px; padding: 0px;
+  width: inherit;
+}
+
+/* Specific classes */
+
+ul.topul {
+  position: absolute;
+	left: 0px;
+	top: 20px;
+	background-color: black;
+}
+
+li.topli {
+  position: absolute;
+	top: 0px;
+}
+
+div.topdiv1 {
+  position: absolute;
+	top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.topdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(73, 63, 40);
+}
+
+ul.subul {
+  position: absolute;
+  top: -1px;
+  background-color: black;
+}
+
+div.subdiv1 {
+  position: absolute;
+  top: 1px; left: 1px;
+  background-color: rgb(246, 223, 190);
+}
+
+div.subdiv2 {
+  position: absolute;
+  top: 1px; left: 1px;
+	background-color: rgb(73, 63, 40);
+}
+
+/* Fix some stuff with lists in the body of the page. */
+#infolayer ul {
+  position: relative;
+  display: block;
+  list-style-type: disc;
+	list-style-position: outside;
+}
+#infolayer li {
+  position: relative;
+  display: list-item;
+}
+#infolayer ul li {
+	margin-left: -16px;
+}
+#infolayer ol li {
+  margin-left: -8px;
+}
+#infolayer a {
+  color: #990033;
+}
+#infolayer a:visited {
+  color: black;
+}
+#infolayer a:hover {
+  color: red;
+}
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4053514-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div id="whitetoplayer">
+  <div id="buythecd"><a href="http://earlywritings.com/buy/"><img src="pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div id="breadcrumbs"><p><a href="index.html">Home</a> <span><b>&gt;</b></span> <a href="apocrypha.html">Apocrypha</a> <span><b>&gt;</b></span> <b>Acts of Pilate</b></p></div>
+  <form action="http://www.google.com/cse" id="cse-search-box" target="_blank" style="position: absolute; top: 0px; right: 118px; height: 39px; font-family: Arial, Helvetica, sans-serif; margin: 5px;">
+    <div style="background-color: rgb( 174, 134, 64 ); text-align: right; -moz-border-radius: 5px;"><div style="padding: 3px;">
+    <input type="hidden" name="cx" value="partner-pub-2665675471425577:4654561773" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" width="40" />
+    <input type="submit" name="sa" value="Search" />
+	</div></div>
+  </form>
+</div>
+
+<style>
+#ataglance div.info {
+  margin-top: 6px;
+	margin-bottom: 6px;
+}
+</style>
+
+<div id="infolayer">
+  <div id="textboundingbox">
+
+  <h1 id="textname">Acts of Pilate</h1>
+
+	<div id="toprightad" style="float: right;">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Top Right Article -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-2665675471425577"
+     data-ad-slot="8302713982"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	<div id="ataglance" style="margin-left: auto; margin-right: 0 px; width: 210px; border-style: groove; border-width: 4px; color: black; border-color: rgb( 174, 134, 64 ); background-color: rgb( 250, 240, 230 ); margin-top: 5px;">
+	<div style="padding: 5px; font-size: 12px; text-align: left;" class="info">
+	  <div style="text-align: center; font-size: 14px; font-weight: bold;"><b>At a Glance</b></div>
+	  <div style="width: auto;" class="info"><div style="display: block; float: right; left: 0px; width: 75px;">Gospel</div> Genre<!--<a href="genre.html">Genre</a>-->: </div>
+	  <div style="width: auto;" class="info"><div style="display: block; float: right; left: 0px; width: 75px;">(2/5) **</div> Reliability of Dating<!--<a href="dating.html">Reliability of Dating</a>-->: </div>
+	  <div style="width: auto;" class="info"><div style="display: block; float: right; left: 0px; width: 75px;">(4/5) ****</div> Length of Text<!--<a href="lengthoftext.html">Length of Text</a>-->: </div>
+	  <div style="width: auto;" class="info"><div style="display: block; float: right; left: 0px; width: 75px;">Greek</div> Original Language: </div> 
+	  <div style="width: auto;" class="info"> <div>Ancient Translations:</div>
+		                                        <div style="margin-left: 12px;"></div> </div>
+		<div style="width: auto;" class="info"> <div>Modern Translations:</div>
+		                                        <div style="margin-left: 12px;"><a href="text/gospelnicodemus.html">English</a></div> </div>
+		</div>
+	</div>
+
+
+</div>
+
+<p style="position: relative; display: inline; padding-top: 0px; margin-top: 5px;"></p>
+
+<h2>Estimated Range of Dating: 150-255 <span class="ce">A.D.</span></h2>
+
+<div><a href="index.html"><b>Chronological List of Early Christian Writings</b></a></div>
+
+<div>Discuss this text on the <a href="http://earlywritings.com/forum/viewforum.php?f=3">Early Writings forum</a>.</div>
+
+<h2>Text</h2>
+
+<ul style="margin-right: 220px;">
+<li><a href="text/reportpilate.html">M. R. James: The Report of Pilate to the Emperor Claudius</a></li>
+<li><a href="text/gospelnicodemus.html">M. R. James: Gospel of Nicodemus</a></li>
+<li><a href="text/gospelnicodemus-roberts.html">Roberts-Donaldson: Gospel of Nicodemus: Acts of Pilate</a></li>
+<li><a href="text/gospelnicodemus-roberts2.html">Roberts-Donaldson: Gospel of Nicodemus: The Descent of Christ into Hell</a></li>
+</ul>
+
+<h2>Resources</h2>
+
+<ul style="margin-right: 220px;">
+<li><a href="info/actspilate-cathen.html">Catholic Encyclopedia: Acti Pilati</a></li>
+<!-- <li><a href="http://web.archive.org/web/20040811082920/http://www.christianstudycenter.com/modules.php?name=News&file=article&sid=19">Acts of Pilate: Introduction</a></li> -->
+</ul>
+
+<h2>Books</h2>
+
+<ul style="margin-right: 220px;">
+<li>Z. Izydorczyk, <a rel="nofollow" href="http://www.amazon.com/exec/obidos/asin/0866981985/peterkirby">The Medieval Gospel of Nicodemus</a> (Medieval & Renaissance Texts & Studies 1997).</li>
+</ul>
+
+<div><a href="books.html"><b>Recommended Books for the Study of Early Christian Writings</b></a></div>
+
+<h2>Information on Acts of Pilate</h2>
+
+<p>J. Quasten writes (<i>Patrology</i>, v. 1, pp. 115-116):</p>
+<blockquote>
+<p>The tendency to minimize the guilt of Pilate which is found in the <i>Gospel According to Peter</i> shows the keen interest with which ancient Christianity regarded his person.  The prominent position occupied by Pontius Pilate in early Christian thought is further evidenced by the <i>Gospel of Nicodemus</i>.  Into this narrative have been incorporated the so-called <i>Acts of Pilate</i>, a supposed official report of the procurator concerning Jesus.  Some Acts of Pilate, it seems, were known as early as the second century.  Justin Martyr remarks in his first <i>Apology</i> (35) after he has mentioned the passion and crucifixion of Jesus: 'And that these things happened you can ascertain from the Acts of Pontius Pilate.'  A similar statement occurs in chapter 48.  Tertullian refers twice to a report made by Pilate to Tiberius.  According to him, Pontius Pilate informed the Emperor of the unjust sentence of death which he had pronounced against an innocent and divine person; the Emperor was so moved by his report of the miracles of Christ and his resurrection, that he proposed the reception of Christ among the gods of Rome.  But the Senate refused (<i>Apologeticum</i> 5).  In another place Tertullian says that the 'whole story of Christ was reported to Caesar—at that time it was Tiberius—by Pilate, himself in his secret heart already a Christian' (<i>Apol.</i> 21, 24).  We see here the tendency at work to use the Roman procurator as a witness for the history of the death and resurrection of Christa nd the truth of Christianity.</p>
+</blockquote>
+<p>The Gospel of Nicodemus preserves a document known as the <i>Acta Pilati</i> in chapters 1 to 11, with an addition in chapters 12 to 16, while chapters 17 to 27 are called the "Decensus Christi ad Inferos."  Quasten writes, "The whole work, which in a later Latin manuscript is called the <i>Evangelium Nicodemi</i>, must have been composed at the beginning of the fifth century, but it seems to be more or less a compilation of older material." (<i>Patrology</i>, vol. 1, p. 116)  It is possible that the material in the Gospel of Nicodemus was written to refute pagan Acts of Pilate created in 311, mentioned by Eusebius:</p>
+<blockquote>
+<p>Having forged, to be sure, Memoirs of Pilate and Our Saviour, full of every kind of blasphemy against Christ, with the approval of their chief they sent them round to every part of his dominions, with edicts that they should be exhibited openly for everyone to see in every place, both town and country, and that the primary teachers should give them to the children, instead of lessons, for study and committal to memory. (<i>H. E.</i> 9.5.1)</p>
+</blockquote>
+<p>F. F. Bruce writes (<i>The New Testament Documents: Are They Reliable?</i>):</p>
+<blockquote>
+<p>We should especially like to know if Pilate sent home to Rome any report of the trial and execution of Jesus, and, if so, what it contained. But it is not certain that he must have done so; and if he did, it has disappeared beyond trace.</p>
+<p>Certainly some ancient writers believed that Pilate did send in such a report, but there is no evidence that any of them had any real knowledge of it. About AD 150 Justin Martyr, addressing his Defence of Christianity to the Emperor Antoninius Pius, referred him to Pilate's report, which Justin supposed must be preserved in the imperial archives. 'But the words, "They pierced my hands and my feet," ' he says, 'are a description of the nails that were fixed in His hands and His feet on the cross; and after He was crucified, those who crucified Him cast lots for His garments, and divided them among themselves; and that these things were so, you may learn from the "Acts" which were recorded under Pontius Pilate." Later he says: 'That He performed these miracles you may easily be satisfied from the "Acts" of Pontius Pilate." </p>
+<p>Then Tertullian, the great jurist-theologian of Carthage, addressing his Defence of Christianity to the man authorities in the province of Africa about AD 197, says: 'Tiberius, in whose time the Christian name first made its appearance in the world, laid before the Senate tidings from Syria Palestina which had revealed to him the truth of the divinity there manifested, and supported the motion by his own vote to begin with. The Senate rejected it because it had not itself given its approval. Caesar held to his own opinion and threatened danger to the accusers of the Christians." </p>
+<p>It would no doubt be pleasant if we could believe this story of Tertullian, which he manifestly believed to be true but a story so inherently improbable and inconsistent with what we know of Tiberius, related nearly 170 years after the event, does not commend itself to a historian's judgment. </p>
+<p>When the influence of Christianity was increasing rapidly in the Empire, one of the last pagan emperors, Maximin II, two years before the Edict of Milan, attempted to bring Christianity into disrepute by publishing what he alleged to be the true 'Acts of Pilate', representing the origins of Christianity in an unsavoury guise. These 'Acts', which were full of outrageous assertions about Jesus, had to be read and memorized by schoolchildren. They were manifestly forged, as Eusebius historian pointed out at the time;' among other things, their dating was quite wrong, as they placed the death of Jesus in the seventh year of Tiberius (AD 20), whereas the testimony of Josephus' is plain that Pilate not become procurator of Judaea till Tiberius' Twelfth year (not to mention the evidence of Luke iii. 1, according to which John the Baptist began to preach in fifteenth year of Tiberius). We do not know in detail these alleged 'Acts' contained, as they were naturally suppressed on Constantine's accession to power; but we may surmise that they had some affinity with Toledoth Yeshu, an anti-Christian compilation popular in some Jewish circles in mediaeval time.' </p>
+<p>Later in the fourth century another forged set of 'Acts of Pilate' appeared, this time from the Christian side, and as devoid of genuineness as Maximin's, to which they were perhaps intended as a counterblast. They are still extant, and consist of alleged memorials the trial, passion, and resurrection of Christ, recorded by Nicodemus and deposited with Pilate. (They are also own as the 'Gospel of Nicodemus'.) A translation of them is given in M. R. James' <i>Apocryphal New Testament</i>, pp. 94 ff., and they have a literary interest of their own, which does not concern us here. </p>
+</blockquote>
+<p>J. Quasten writes: "The oldest piece of Christian Pilate literature seems to be 'The Report of Pilate to the Emperor Claudius', which is inserted in Greek into the late <i>Acts of Peter and Paul</i> and is given in Latin translation as an appendix of the <i>Evangelium Nicodemi</i>.  It is probable that this report is identical with that mentioned by Tertullian.  If that is true, it must have been composed before the year 197 A.D., the time of Tertullian's <i>Apologeticum</i>." (<i>Patrology</i>, vol. 1, p. 116)</p>
+<p>The Gospel of Nicodemus and "The Report of Pilate to the Emperor Claudius" can be read from the links above.</p>
+
+<div style="float: left; margin-right: 20px;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Rectangle - left -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-2665675471425577"
+     data-ad-slot="3495055140"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<h2>Some Contemporary Texts</h2>
+
+<ul style="display: table;">
+<li><a href="hypsiphrone.html">Hypsiphrone</a> (150-350 A.D.)</li>
+<li><a href="valentinian.html">Valentinian Exposition</a> (150-350 A.D.)</li>
+<li><a href="actpeter.html">Act of Peter</a> (150-350 A.D.)</li>
+<li><a href="greatpower.html">Concept of Our Great Power</a> (150-360 A.D.)</li>
+<li><b>Acts of Pilate</b> (150-400 A.D.)</li>
+<li><a href="antimarcion.html">Anti-Marcionite Prologues</a> (150-400 A.D.)</li>
+<li><a href="dialoguejohnjesus.html">Dialogue Between John and Jesus</a> (150-400 A.D.)</li>
+<li><a href="tatian.html">Tatian's Address to the Greeks</a> (160-170 A.D.)</li>
+<li><a href="apollinaris.html">Claudius Apollinaris</a> (160-180 A.D.)</li>
+</ul>
+
+</div>
+ 
+<div style='clear: both;'></div>
+
+<hr width="50%">
+
+<p style="text-align: center">Go to the <a href="index.html">Chronological List</a> of all Early Christian Writings</p>
+
+<hr width="50%">
+
+<p style="text-align: center;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2665675471425577";
+/* Leaderboard-bot */
+google_ad_slot = "4364046558";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+
+<p style="text-align: center; font-size:135%;">Please <a href="http://earlywritings.com/buy/">buy the CD</a> to support the site, view it without ads, and get bonus stuff!</p>
+
+
+  <div id="infoleft"></div>
+  <div id="inforight"></div>
+  <div id="footer">
+    <div id="footleft"></div>
+    <div id="footright"></div>
+  </div>
+
+  	<div id="whitebottomlayer">
+	<p id="copyrightnotice"><a href="index.html">Early Christian Writings</a> is copyright &copy; 
+  <script language="JavaScript">
+  <!--
+  var months=new Array(13);
+  months[1]="Jan.";
+  months[2]="Feb.";
+  months[3]="Mar.";
+  months[4]="Apr.";
+  months[5]="May";
+  months[6]="June";
+  months[7]="July";
+  months[8]="Aug.";
+  months[9]="Sept.";
+  months[10]="Oct.";
+  months[11]="Nov.";
+  months[12]="Dec.";
+  var time=new Date();
+  var lmonth=months[time.getMonth() + 1];
+  var date=time.getDate();
+  var year=time.getYear();
+  if (year < 2000)
+    year = year + 1900;
+  document.write("2001-" + year);
+  // -->
+  </script>	
+    Peter Kirby <code>&lt;<a href="http://www.peterkirby.com/">E-Mail</a>&gt</code>.</p>
+	  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fearlychristianwritingscom%2F121187514627340&amp;send=false&amp;layout=box_count&amp;width=55&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:65px; float: left; margin-left: 15px;" allowTransparency="true"></iframe>
+	  <div style="float: left; margin-right: 10px;">
+	<!-- Place this tag where you want the +1 button to render. -->
+	<div class="g-plusone"></div>
+	<!-- Place this tag after the last +1 button tag. -->
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	  <div><a href="https://twitter.com/mrpeterkirby" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @mrpeterkirby</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+	  </div>
+	<div id="buythecd"><a href="http://earlywritings.com/buy/"><img src="pic/textanim.gif" alt="Get the CD Now!" width="108" height="39"></a></div>
+  <div style="width: 500px; font-size: 12px; margin-top: 8px; margin-left: auto; margin-right: auto; padding-left: 50px;"><div style="position: absolute; width: 40px; height: 40px;"><b>MLA<br>Style</b></div><div style="position: relative; left: 40px;"><p>Kirby, Peter. "Acts of Pilate." <i>Early Christian Writings</i>.  
+  <script language="JavaScript">
+  <!--
+  document.write(year + ". " + date + " " + lmonth + " " + year);
+  // -->
+  </script>
+ &lt;http://www.earlychristianwritings.com/actspilate.html&gt;.</p></div></div>
+  </div></div><div id="headlayer">
+  <div id="headleft"></div>
+  <div id="headright"></div>
+
+<ul id="menu" style="position: absolute; margin-left: -149px; left: 50%; top: 83px; width: 0px; height: 0px;">
+<li class="topli" style="left: 0px; width: 87px; height: 29px;"><a href="newtestament.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 87px; height: 29px; border: 0px;" alt="New Testament"></a>
+	<ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px"><div class="topdiv2" style="width: 130px; height: 96px;">
+		<li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 51px; height: 67px;">
+  		<div class="subdiv1" style="width: 49px; height: 65px;"><div class="subdiv2" style="width: 48px; height: 64px;">
+				<li><a href="matthew.html">Matthew</a></li> 
+				<li><a href="mark.html">Mark</a></li> 
+				<li><a href="luke.html">Luke</a></li> 
+				<li><a href="john.html">John</a></li>
+  		</div></div>
+			</ul>
+		</li>
+		<li><a href="acts.html"><span>Acts</span></a></li>
+		<li class="submenu"><a><span>Letters of Paul</span></a>
+			<ul class="subul" style="left: 129px; width: 88px; height: 211px;">
+			<div class="subdiv1" style="width: 86px; height: 209px;"><div class="subdiv2" style="width: 85px; height: 208px;">
+				<li><a href="romans.html">Romans</a></li> 
+				<li><a href="1corinthians.html">1 Corinthians</a></li> 
+				<li><a href="2corinthians.html">2 Corinthians</a></li> 
+				<li><a href="galatians.html">Galatians</a></li> 
+				<li><a href="ephesians.html">Ephesians</a></li> 
+				<li><a href="philippians.html">Philippians</a></li> 
+				<li><a href="colossians.html">Colossians</a></li> 
+				<li><a href="1thessalonians.html">1 Thessalonians</a></li> 
+				<li><a href="2thessalonians.html">2 Thessalonians</a></li> 
+				<li><a href="1timothy.html">1 Timothy</a></li> 
+				<li><a href="2timothy.html">2  Timothy</a></li> 
+				<li><a href="titus.html">Titus</a></li> 
+				<li><a href="philemon.html">Philemon</a></li> 
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="hebrews.html"><span>Letter to the Hebrews</span></a></li>
+		<li class="submenu"><a><span>General Letters</span></a>
+			<ul class="subul" style="left: 129px; width: 51px; height: 115px;">
+			<div class="subdiv1" style="width: 49px; height: 113px;"><div class="subdiv2" style="width: 48px; height: 112px;"> 
+				<li><a href="james.html">James</a></li> 
+				<li><a href="1peter.html">1 Peter</a></li> 
+				<li><a href="2peter.html">2 Peter</a></li> 
+				<li><a href="1john.html">1 John</a></li> 
+				<li><a href="2john.html">2 John</a></li> 
+				<li><a href="3john.html">3 John</a></li> 
+				<li><a href="jude.html">Jude</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="revelation.html"><span>Revelation</span></a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 87px; width: 62px; height: 29px;"><a href="apocrypha.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 29px; border: 0px;" alt="Apocrypha"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Gospels</a>
+		  <ul class="subul" style="left: 129px; width: 131px; height: 163px;">
+			<div class="subdiv1" style="width: 129px; height: 161px;"><div class="subdiv2" style="width: 128px; height: 160px;">
+			  <li><a href="thomas.html">Gospel of Thomas</a></li>
+				<li><a href="egerton.html">Egerton Gospel</a></li>
+				<li><a href="gospelpeter.html">Gospel of Peter</a></li>
+				<li><a href="oxyrhynchus840.html">Oxyrhynchus 840</a></li>
+				<li><a href="gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="apostolorum.html">Epistula Apostolorum</a></li>
+				<li><a href="infancyjames.html">Infancy Gospel of James</a></li>
+				<li><a href="infancythomas.html">Infancy Gospel of Thomas</a></li>
+				<li><a href="actspilate.html">Acts of Pilate</a></li>
+				<li><a href="diatessaron.html">Diatessaron</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Gospel Fragments</a>
+		   <ul class="subul" style="left: 129px; width: 156px; height: 131px;">
+			 <div class="subdiv1" style="width: 154px; height: 129px;"><div class="subdiv2" style="width: 153px; height: 128px;">
+			   <li><a href="oxyrhynchus1224.html">Oxyrhynchus 1224</a></li>
+				 <li><a href="secretmark.html">Fayyum Fragment</a></li>
+				 <li><a href="gospelegyptians.html">Gospel of the Egyptians</a></li>
+				 <li><a href="gospelhebrews.html">Gospel of the Hebrews</a></li>
+				 <li><a href="gospelebionites.html">Gospel of the Ebionites</a></li>
+				 <li><a href="gospelnazoreans.html">Gospel of the Nazoreans</a></li>
+				 <li><a href="traditionsmatthias.html">Traditions of Matthias</a></li>
+				 <li><a href="dura.html">Dura-Europos Gospel Harmony</a></li>
+			 </div></div>
+			 </ul>
+		</li>
+		<li class="submenu"><a>Apostolic Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 131px;">
+			<div class="subdiv1" style="width: 156px; height: 129px;"><div class="subdiv2" style="width: 155px; height: 128px;">
+			  <li><a href="preachingpeter.html">Preaching of Peter</a></li>
+				<li><a href="actspeter.html">Acts of Peter</a></li>
+				<li><a href="actsjohn.html">Acts of John</a></li>
+				<li><a href="actspaul.html">Acts of Paul</a></li>
+				<li><a href="actsandrew.html">Acts of Andrew</a></li>
+				<li><a href="actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="actsthomas.html">Acts of Thomas</a></li>
+			</div></div>
+			</ul>
+		</li>
+    <li class="submenu"><a>Martyrologies</a>
+		  <ul class="subul" style="left: 129px; width: 203px; height: 115px;">
+			<div class="subdiv1" style="width: 201px; height: 113px;"><div class="subdiv2" style="width: 200px; height: 112px;">
+			  <li><a href="martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+				<li><a href="esra.html">Fifth and Sixth Books of Esra</a></li>
+				<li><a href="carpus.html">Acts of Carpus, Papylus, and Agathonice</a></li>
+				<li><a href="viennalyons.html">Letter from Vienna and Lyons</a></li>
+				<li><a href="scillitan.html">Passion of the Scillitan Martyrs</a></li>
+				<li><a href="actsapollonius-2.html">Acts of Apollonius</a></li>
+				<li><a href="actsperpetua.html">Acts of Perpetua and Felicitas</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="didache.html">Didache</a></li>
+	  <li><a href="apocalypsepeter.html">Apocalypse of Peter</a></li>
+		<li><a href="didascalia.html">Didascalia</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 149px; width: 52px; height: 29px;"><a href="gnostics.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 52px; height: 29px; border: 0px;" alt="Gnostics"></a>
+  <ul class="topul" style="width: 133px; height: 99px;">
+	<div class="topdiv1" style="width: 131px; height: 97px;"><div class="topdiv2" style="width: 130px; height: 96px;">
+	  <li class="submenu"><a>Dialogues with Jesus</a>
+		  <ul class="subul" style="left: 129px; width: 116px; height: 115px;">
+			<div class="subdiv1" style="width: 114px; height: 113px;"><div class="subdiv2" style="width: 113px; height: 112px;">
+			  <li><a href="sophia.html">Sophia of Jesus Christ</a></li>
+				<li><a href="secretjames.html">Secret James</a></li>
+				<li><a href="gospelmary.html">Gospel of Mary</a></li>
+				<li><a href="dialoguesavior.html">Dialogue of the Savior</a></li>
+				<li><a href="gospelsavior.html">Gospel of the Savior</a></li>
+				<li><a href="jeu.html">Books of Jeu</a></li>
+				<li><a href="pistis.html">Pistis Sophia</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Apocalypses</a>
+		  <ul class="subul" style="left: 129px; width: 138px; height: 67px;">
+			<div class="subdiv1" style="width: 136px; height: 65px;"><div class="subdiv2" style="width: 135px; height: 64px;">
+			  <li><a href="apocalypsejames2.html">2nd Apocalypse of James</a></li>
+				<li><a href="nhlapocalypsepaul.html">Coptic Apocalypse of Paul</a></li>
+				<li><a href="apocalypsejames1.html">1st Apocalypse of James</a></li>
+				<li><a href="nhlapocalypsepeter.html">Coptic Apocalypse of Peter</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>Acts</a>
+		  <ul class="subul" style="left: 129px; width: 158px; height: 51px;">
+			<div class="subdiv1" style="width: 156px; height: 49px;"><div class="subdiv2" style="width: 155px; height: 48px;">
+			  <li><a href="actspetertwelve.html">Acts of Peter and the Twelve</a></li>
+				<li><a href="contender.html">Book of Thomas the Contender</a></li>
+				<li><a href="petertophilip.html">Letter of Peter to Philip</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li class="submenu"><a>More Nag Hammadi</a>
+		  <ul class="subul" style="left: 129px; width: 189px; height: 131px;">
+			<div class="subdiv1" style="width: 187px; height: 129px;"><div class="subdiv2" style="width: 186px; height: 128px;">
+			  <li><a href="apocryphonjohn.html">Apocryphon of John</a></li>
+				<li><a href="gospeltruth.html">Gospel of Truth</a></li>
+				<li><a href="treatiseres.html">Treatise on the Resurrection</a></li>
+				<li><a href="gospelphilip.html">Gospel of Philip</a></li>
+			  <li><a href="trimorphic.html">Trimorphic Protennoia</a></li>
+				<li><a href="authoritative.html">Authoritative Teaching</a></li>
+				<li><a href="eighthninth.html">Discourse on the Eighth and the Ninth</a></li>
+				<li><a href="melchizedek.html">Melchizedek</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 115px;">
+			<div class="subdiv1" style="width: 109px; height: 113px;"><div class="subdiv2" style="width: 108px; height: 112px;">
+			  <li><a href="basilides.html">Basilides</a></li>
+				<li><a href="naassene.html">Naassene Fragments</a></li>
+				<li><a href="valentinus.html">Valentinus</a></li>
+				<li><a href="marcion.html">Marcion</a></li>
+				<li><a href="epiphanes.html">Epiphanes</a></li>
+				<li><a href="ophite.html">Ophite Diagrams</a></li>
+				<li><a href="gospeljudas.html">Gospel of Judas</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 111px; height: 99px;">
+			<div class="subdiv1" style="width: 109px; height: 97px;"><div class="subdiv2" style="width: 108px; height: 96px;">
+				<li><a href="ptolemy.html">Ptolemy</a></li>
+				<li><a href="isidore.html">Isidore</a></li>
+				<li><a href="theodotus.html">Theodotus</a></li>
+				<li><a href="heracleon.html">Heracleon</a></li>
+				<li><a href="apelles.html">Apelles</a></li>
+				<li><a href="cassianus.html">Julius Cassianus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 201px; width: 85px; height: 29px;"><a href="churchfathers.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Church Fathers"></a>
+  <ul class="topul" style="width: 133px; height: 147px;">
+	<div class="topdiv1" style="width: 131px; height: 145px;"><div class="topdiv2" style="width: 130px; height: 144px;">
+	  <li class="submenu"><a>Apostolic Fathers</a>
+		  <ul class="subul" style="left: 129px; width: 163px; height: 147px;">
+			<div class="subdiv1" style="width: 161px; height: 145px;"><div class="subdiv2" style="width: 160px; height: 144px;">
+			  <li><a href="didache.html">Didache</a></li>
+			  <li><a href="barnabas.html">Epistle of Barnabas</a></li>
+			  <li><a href="1clement.html">First Clement</a></li>
+			  <li><a href="shepherd.html">Shepherd of Hermas</a></li>
+			  <li><a href="ignatius.html">Ignatius of Antioch</a></li>
+			  <li><a href="polycarp.html">Polycarp to the Philippians</a></li>
+			  <li><a href="2clement.html">Second Clement</a></li>
+			  <li><a href="diognetus.html">Epistle of Mathetes to Diognetus</a></li>
+			  <li><a href="martyrdompolycarp.html">Martyrdom of Polycarp</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Apologists</a>
+		  <ul class="subul" style="left: 129px; width: 120px; height: 99px;">
+			<div class="subdiv1" style="width: 118px; height: 97px;"><div class="subdiv2" style="width: 117px; height: 96px;">
+			  <li><a href="aristides.html">Aristides</a></li>
+			  <li><a href="justin.html">Justin Martyr</a></li>
+			  <li><a href="tatian.html">Tatian</a></li>
+			  <li><a href="octavius.html">Minucius Felix</a></li>
+			  <li><a href="athenagoras.html">Athenagoras of Athens</a></li>
+			  <li><a href="theophilus.html">Theophilus of Antioch</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 123px; height: 147px;">
+			<div class="subdiv1" style="width: 121px; height: 145px;"><div class="subdiv2" style="width: 120px; height: 144px;">
+			  <li><a href="papias.html">Papias</a></li>
+			  <li><a href="quadratus.html">Quadratus</a></li>
+			  <li><a href="aristo.html">Aristo of Pella</a></li>
+			  <li><a href="apollinaris.html">Claudius Apollinaris</a></li>
+			  <li><a href="melito.html">Melito of Sardis</a></li>
+			  <li><a href="hegesippus.html">Hegesippus</a></li>
+			  <li><a href="dionysius.html">Dionysius of Corinth</a></li>
+			  <li><a href="rhodon.html">Rhodon</a></li>
+			  <li><a href="theophiluscaesarea.html">Theophilus of Caesarea</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>More Quoted Authors</a>
+		  <ul class="subul" style="left: 129px; width: 136px; height: 147px;">
+			<div class="subdiv1" style="width: 134px; height: 145px;"><div class="subdiv2" style="width: 133px; height: 144px;">
+			  <li><a href="bardesanes.html">Bardesanes</a></li>
+			  <li><a href="maximus.html">Maximus of Jerusalem</a></li>
+			  <li><a href="polycrates.html">Polycrates of Ephesus</a></li>
+			  <li><a href="victor.html">Victor I</a></li>
+			  <li><a href="pantaenus.html">Pantaenus</a></li>
+			  <li><a href="antimontanist.html">Anonymous Anti-Montanist</a></li>
+			  <li><a href="serapion.html">Serapion of Antioch</a></li>
+			  <li><a href="apollonius.html">Apollonius</a></li>
+			  <li><a href="caius.html">Caius</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="irenaeus.html">Irenaeus of Lyons</a></li>
+		<li><a href="hippolytus.html">Hippolytus of Rome</a></li>
+		<li><a href="clement.html">Clement of Alexandria</a></li>
+		<li><a href="tertullian.html">Tertullian</a></li>
+		<li><a href="origen.html">Origen</a></li>
+	</div></div>
+	</ul>
+</li>
+<li class="topli" style="left: 286px; width: 41px; height: 29px;"><a href="other.html"><img src="pic/spacer.gif" style="position: absolute; left: 0px; top: 0px; width: 85px; height: 29px; border: 0px;" alt="Other"></a>
+  <ul class="topul" style="width: 133px; height: 115px;">
+	<div class="topdiv1" style="width: 131px; height: 113px;"><div class="topdiv2" style="width: 130px; height: 112px;">
+	  <li class="submenu"><a>Pagan and Jewish</a>
+		  <ul class="subul" style="left: 129px; width: 105px; height: 195px;">
+			<div class="subdiv1" style="width: 103px; height: 193px;"><div class="subdiv2" style="width: 102px; height: 192px;">
+			  <li><a href="mara.html">Mara bar Serapion</a></li>
+			  <li><a href="josephus.html">Josephus</a></li>
+			  <li><a href="pliny.html">Pliny the Younger</a></li>
+			  <li><a href="suetonius.html">Suetonius</a></li>
+			  <li><a href="tacitus.html">Tacitus</a></li>
+			  <li><a href="fronto.html">Fronto</a></li>
+			  <li><a href="lucian.html">Lucian of Samosata</a></li>
+			  <li><a href="aurelius.html">Marcus Aurelius</a></li>
+			  <li><a href="galen.html">Galen</a></li>
+			  <li><a href="celsus.html">Celsus</a></li>
+			  <li><a href="talmud.html">Talmud</a></li>
+			  <li><a href="philostratus.html">Philostratus</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Jewish/Christian</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 83px;">
+			<div class="subdiv1" style="width: 115px; height: 81px;"><div class="subdiv2" style="width: 114px; height: 80px;">
+			  <li><a href="patriarchs.html">The Twelve Patriarchs</a></li>
+			  <li><a href="sibylline.html">Non-Pagan Sibyllines</a></li>
+			  <li><a href="odes.html">Odes of Solomon</a></li>
+			  <li><a href="elchasai.html">Book of Elchasai</a></li>
+			  <li><a href="ascension.html">Ascension of Isaiah</a></li>
+			</div></div>
+			</ul>
+		</li>
+	  <li class="submenu"><a>Hypothesized Sources</a>
+		  <ul class="subul" style="left: 129px; width: 117px; height: 51px;">
+			<div class="subdiv1" style="width: 115px; height: 49px;"><div class="subdiv2" style="width: 114px; height: 48px;">
+			  <li><a href="passion.html">Passion Narrative</a></li>
+			  <li><a href="q.html">Sayings Gospel Q</a></li>
+			  <li><a href="signs.html">Signs Gospel</a></li>
+			</div></div>
+			</ul>
+		</li>
+		<li><a href="antimarcion.html">Anti-Marcionite Prologues</a></li>
+		<li><a href="muratorian.html">Muratorian Canon</a></li>
+		<li><a href="kerygmatapetrou.html">Kerygmata Petrou</a></li>
+		<li><a href="abercius.html">Inscription of Abercias</a></li>
+	</div></div>
+	</ul>
+</li>
+</ul>	
+</div><![if !IE]><script language="JavaScript"> 
+<!--
+var view = document.defaultView; var symboltab = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8704,0,8707,0,0, 8715,0,0,8727,0,0,8722,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,8773,913,914,935,8710,917,934,915,919,921, 977,922,923,924,925,927,928,920,929,931,932,933,962, 8486,926,936,918,0,8756,0,8869,0,8254,945,946,967, 948,949,966,947,951,953,981,954,955,956,957,959,960, 952,961,963,964,965,982,969,958,968,950,0,0,0,8764,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,978,8242,8804,8725,8734,402,9827,9830, 9829,9824,8596,8592,8593,8594,8595,176,177,8243, 8805,215,8733,8706,8226,247,8800,8801,8776,8230,0, 0,8629,8501,8465,8476,8472,8855,8853,8709,8745,8746, 8835,8839,8836,8834,8838,8712,8713,8736,8711,174,169, 8482,8719,8730,8901,172,8743,8744,8660,8656,8657, 8658,8659,9674,9001,174,169,8482,8721,0,0,0,0,0,0,0, 0,0,0,0,9002,8747,8992,0,8993,0,0,0,0,0,0,0,0,0, 0]; function convNode(n) { var n1; if (n == null) return; if (n.nodeType == 3) { elem = n.parentNode; var st = view.getComputedStyle(elem, null); var val = st.getPropertyValue('font-family'); if (val.toLowerCase() == 'symbol') { var s0 = n.data, s1 = '', len = s0.length, ch; for (i = 0; i < len; i++) { ch = s0.charCodeAt(i); if (ch < 256 && symboltab[ch] != 0) ch = symboltab[ch]; s1 += String.fromCharCode(ch); } n.data = s1; } } n1 = n.firstChild; while (n1 != null) { convNode(n1); n1 = n1.nextSibling; } } convNode(document);
+// <![endif]-->
+</script><!--[if IE]>
+<script language="JavaScript">var sURL = unescape(window.location.pathname); function refresh() {window.location.href = sURL;}</script>
+<script language="JavaScript1.1">function refresh() {window.location.replace( sURL );}</script>
+<script language="JavaScript1.2">function refresh() {window.location.reload( false );}</script>
+<script language="JavaScript">window.onresize = refresh;</script>
+<![endif]-->
+<!-- Javascript tag: -->
+<!-- begin ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+<script language="JavaScript">
+var zflag_nid="305"; var zflag_cid="39404/39401/1"; var zflag_sid="4519"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="15"; var zflag_click="[INSERT_CLICK_TRACKER_MACRO]";
+</script>
+<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/fo.js"></script>
+<!-- end ZEDO for channel:  EarlyChristianWritings - CLB , publisher: Early Christian Writings , Ad Dimension: Pixel/Popup - 1 x 1 -->
+</body> 
+</html>

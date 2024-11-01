@@ -1,0 +1,5 @@
+cd /root/notes;  "htop" "#" "<==" "htop"
+cd /root/notes;  "htop" "#" "<==" "htop"
+cd /root/notes;  "htop" "#" "<==" "htop"
+cd /root/notes;  "htop" "#" "<==" "htop"
+cd /root/notes;  "htop" "pen-emacsd" "#" "<==" "htop"

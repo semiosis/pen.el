@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "II" "Timothy" "3:8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Thessalonians" "2:2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Thessalonians" "2:1-2" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Samuel" "7:14-15" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "II" "Timothy" "3:12-13" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Timothy" "2:7-10" "#" "<==" "zsh"

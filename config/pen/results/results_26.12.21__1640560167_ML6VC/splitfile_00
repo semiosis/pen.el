@@ -1,0 +1,10 @@
+"buffer" is a command for setting the current buffer.
+
+The buffer named "*scratch*" is the initial buffer.
+
+Type \\[list-buffers] to see all buffers.
+Type \\[describe-mode] in that buffer for a list of commands.
+Type \\[help-command] in any buffer to get help for that buffer's mode.
+
+The names of the buffers appear in the buffer list in the order they
+were most recently used

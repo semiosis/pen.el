@@ -1,0 +1,8 @@
+
+** Make it my mission to bring vim into the modern age
+- Use the bash interpreter
+- Which prompt functions would be useful?
+  - Select and transform code
+  - Generate EX
+  - Select and use prompt function
+

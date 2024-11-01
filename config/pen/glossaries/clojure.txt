@@ -1,0 +1,621 @@
+realized?
+    ;; Create a promise
+    user> (def p (promise))
+    #'user/p ; p is our promise
+
+    ;; Check if was delivered/realized
+    user> (realized? p)
+    false ; No yet
+
+    ;; Delivering the promise
+    user> (deliver p 42)
+    #<core$promise$reify__5727@47122d: 42>
+
+    ;; Check again if it was delivered
+    user> (realized? p)
+    true ; Yes!
+
+    ;; Deref to see what has been delivered
+    user> @p
+    42
+
+    ;; Note that @ is shorthand for deref
+    user> (deref p)
+    42
+
+selmer
+    [library]
+
+    A fast, Django inspired template system in
+    Clojure.
+
+thread
+    Clojure supports two types of threads:
+    - Ordinary threads, and
+    - Inversion of Control (IOC) threads.
+
+    Clojure supports both due to the Java
+    runtime environment, but JavaScript, being
+    only single-threaded, only supports IOC
+    threads which we can create by using the
+    go macro.
+
+Ordinary thread
+
+Inversion of Control thread
+IOC thread
+
+Inversion of Control
+    Essentially the idea of handing over some
+    responsibility for execution over to
+    something else, e.g.  a library or
+    framework.
+
+    Normally we control precisely what the
+    software is doing at any given moment, but
+    with the inversion of control pattern, we
+    are effectively asking the software to
+    control us in response to some event.
+
+go
+go macro
+    [#async]
+
+    To avoid blocking our thread and pausing
+    our program execution, we can instead
+    create an IOC thread using the go macro,
+    which will instantly return control back
+    to our program after each task.
+
+    It does this internally by parking the
+    channel state, which avoids us having to
+    manually write additional call-backs and
+    events.
+
+    The internal state machine keeps track of
+    the channel for us and will notify us of
+    any state changes.
+
+core.async
+    core.async is about making processes that
+    take values from and put values into
+    channels.
+
+channel
+    Core.async provides a number of channel
+    types off the shelf:
+    - buffered channels,
+    - dropping-buffer channels, and
+    - sliding-buffers.
+
+buffered channels
+
+dropping-buffer channels
+
+sliding-buffers
+
+reducing function
+reduce function
+reducer
+    (fn [result input]
+        ...)
+
+    A reducing function is a function you can
+    use as the first argument of reduce.
+
+    A reducing function takes an accumulated
+    result and an input and returns a new
+    result.
+
+    conj is an example of a reducing function.
+
+    It takes a collection (the result we’ve
+    accumulated so far) and an item (the
+    input) and adds the item into the
+    collection (the new result).
+
+    Here’s an example of using conj:
+
+    (conj [1 2] 3)
+    ;;          ^ input
+    ;;    ^^^^^ accumulated result
+    ;;=> [1 2 3]
+    ;;   ^^^^^^^ new result
+
+reader tag
+reader tag symbol
+    Default reader tags:
+    https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/default-data-readers
+
+    ewwlinks +/"reader tags" "https://blog.davemartin.me/posts/debugging-in-clojure/"
+
+spyscope
+    [debug tool]
+
+    https://github.com/dgrnbrg/spyscope
+
+    A Clojure(Script) library designed to make
+    it easy to debug single- and multi-
+    threaded applications.
+
+    ewwlinks +/"^Spyscope" "https://blog.davemartin.me/posts/debugging-in-clojure/"
+
+Scope-capture
+    [debug tool]
+
+    For cases when you need to debug a piece
+    of code more thoroughly, the scope-capture
+    library is indispensable.
+
+    https://github.com/vvvvalvalval/scope-capture
+
+    It allows you to capture the local
+    environment whenever a certain form is
+    evaluated, and then re-create this
+    environment in the REPL.
+
+    This allows you to play around in the REPL
+    as if you’d stopped the program at the
+    point when the form was evaluated.
+
+    ewwlinks +/"^Scope-capture" "https://blog.davemartin.me/posts/debugging-in-clojure/"
+
+keyword
+    Always maps to itself.
+
+    Very useful for keys in maps because they
+    print and read as themselves, and they
+    evaluate very quickly.
+
+nil
+    nil is the Java Null.
+
+    When you get a Null back from Java, it's
+    going to say nil.
+
+^:private
+    https://stackoverflow.com/a/20443693
+
+dependency management
+    https://cljdoc.org/d/leiningen/leiningen/2.9.5/doc/managed-dependencies-with-leiningen
+
+Duct
+    A highly modular framework for building
+    server-side applications in Clojure using
+    data-driven architecture.
+
+    It is similar in scope to Arachne, and is
+    based on Integrant.
+
+    Duct builds applications around an
+    immutable configuration that acts as a
+    structural blueprint.
+
+    The configuration can be manipulated and
+    queried to produce sophisticated behavior.
+
+ring
+    [Clojure library]
+
+    Defines a common interface for expressing
+    web applications.
+
+    https://medium.com/@daniel.oliver.king/getting-real-work-done-in-clojure-application-development-683c8129a313
+
+compojure
+    [Clojure library]
+
+    Create REST APIs.
+
+    A small routing library for Ring that
+    allows web applications to be composed of
+    small, independent parts.
+
+    https://medium.com/@daniel.oliver.king/getting-real-work-done-in-clojure-application-development-683c8129a313
+
+ring/ring-json
+    [Clojure library]
+
+    Standard Ring middleware functions for
+    handling JSON requests and responses.
+
+    https://medium.com/@daniel.oliver.king/getting-real-work-done-in-clojure-application-development-683c8129a313
+
+ragtime
+    [Clojure library]
+
+    For migrating structured data in a way
+    that's database independent.
+
+    It defines a common interface for
+    expressing migrations.
+
+    https://medium.com/@daniel.oliver.king/getting-real-work-done-in-clojure-application-development-683c8129a313
+
+nREPL
+network REPL
+    A protocol that allows other processes to
+    send commands to a Clojure REPL through a
+    network port.
+
+variable assignment
+binding (in Clojure)
+
+figwheel
+    Builds your ClojureScript code and hot
+    loads it into the browser as you are
+    coding!
+
+as->
+    ewwlinks +/"\* (as-> expr name & forms)" "https://clojuredocs.org/clojure.core/as->"
+
+edn
+EDN
+Extensible Data Notation
+    A format for serializing data.
+
+    EDN is a subset of the syntax used by
+    Clojure.
+
+    Reading data defined by EDN is safer than
+    that defined by the full Clojure syntax,
+    especially from untrusted sources.
+
+    The main benefit of EDN over JSON and YAML
+    is that it is extensible.
+
+refer, alias, require, use, and ns
+    Functions/syntax for organising code.
+
+reference
+    Two types:
+    - agent
+    - actor?
+
+    https://clojure.org/reference/agents
+
+clojure
+    A modern, dynamic, and functional dialect
+    of the Lisp programming language on the
+    Java platform.
+
+    Like other Lisp dialects, Clojure treats
+    code as data and has a Lisp macro system.
+
+&
+    & in signature
+    https://www.tutorialspoint.com/clojure/clojure_variadic_functions.htm
+
+!
+    The names of functions / macros that are
+    not safe in STM transactions should end
+    with an exclamation mark (e.g. reset!).
+
+    But what does it really mean? Anything
+    what has a non-idempotent side effect.
+
+    Idempotent operation is the one that has
+    no additional effect if it is called more
+    than once with the same input parameters.
+
+    When to use ! in function name:
+    https://clojure.wladyka.eu/posts/when-use-exclamation-mark/
+
+defonce
+    (defonce animator (agent nil))
+
+    Idempotent set.
+
+    This defines the variable animator and
+    sets it to agent.
+
+    If called again, it will
+    not change the value.
+
+    It's equivalent to emacs' (defvar).
+
+atom
+    https://clojure.org/reference/atoms
+
+    Atoms provide a way to manage shared,
+    synchronous, independent state.
+
+    They are a reference type like refs and
+    vars.
+
+    You create an atom with atom, and can
+    access its state with deref/@. Like refs
+    and agents, atoms support validators.
+
+    To change the value of an atom, you can
+    use swap!.
+
+    A lower-level compare-and-set! is also
+    provided.
+
+    Changes to atoms are always free of race
+    conditions.
+
+    As with all reference types, the intended
+    use of atom is to hold one of Clojures
+    immutable data structures.
+
+    And, similar to refs alter and agents
+    send, you change the value by applying a
+    function to the old value.
+
+    This is done in an atomic manner by swap!
+
+    Internally, swap!  reads the current
+    value, applies the function to it, and
+    attempts to compare- and-set! it in.
+
+    Since another thread may have changed the
+    value in the intervening time, it may have
+    to retry, and does so in a spin loop.
+
+    The net effect is that the value will
+    always be the result of the application of
+    the supplied function to a current value,
+    atomically.
+
+    However, because the function might be
+    called multiple times, it must be free of
+    side effects.
+
+    Atoms are an efficient way to represent
+    some state that will never need to be
+    coordinated with any other, and for which
+    you wish to make synchronous changes
+    (unlike agents, which are similarly
+    independent but asynchronous).
+
+deref
+@
+    Access the state of a reference with deref/@.
+
+    ewwlinks +/"deref\/@" "https://clojure.org/reference/atoms"
+
+    This includes atom.
+
+    v +/"(defonce app-state" "$MYGIT/ilmotta/clojure-ants-simulation/src/demo/core.clj"
+
+    (defonce app-state
+      (atom
+        {:config {:animation-sleep-ms 100}}))
+
+    (get-in (deref app-state) [:config])
+
+    (get-in @app-state [:config])
+
+atomic reference
+    [java]
+
+    This is wrapped in clojure as an atom.
+
+    At the lowest level this is just a
+    pointer.
+
+future
+    Takes a body of expressions and yields a
+    future object that will invoke the body in
+    another thread, and will cache the result
+    and return it on all subsequent calls to
+    deref/@.
+
+    If the computation has not yet finished,
+    calls to deref/@ will block, unless the
+    variant of deref with timeout is used.
+
+        ;; A future's calculation is started here and it runs in another thread
+        user=> (def f (future (Thread/sleep 10000) (println "done") 100))
+        #'user/f
+        ;;if you wait 10 seconds before dereferencing it you'll see "done"
+
+        ;; When you dereference it you will block until the result is available.
+        user=> @f
+        done
+        100
+
+        ;; Dereferencing again will return the already calculated value.
+        => @f
+        100
+
+    See also - realized?.
+
+dereference
+dereferencing
+    Unlike futures, delays, and promises,
+    dereferencing an atom (or any other
+    reference type) will never block.
+    
+    When you dereference futures, delays, and
+    promises, it’s like you’re saying “I need
+    a value now, and I will wait until I get
+    it,” so it makes sense that the operation
+    would block.
+    
+    However, when you dereference a reference
+    type, it’s like you’re saying “give me the
+    value I’m currently referring to,” so it
+    makes sense that the operation doesn’t
+    block, because it doesn’t have to wait for
+    anything.
+
+CAS
+Compare-And-Set
+Compare-And-Swap
+compare-and-set!
+    [concurrency]
+
+    (compare-and-set! ...)
+
+    Atomically sets the value of atom to
+    newval if and only if the current value of
+    the atom is identical to oldval. Returns
+    true if set happened, else false.
+
+doto
+    clojure.core/doto
+
+    Evaluates x then calls all of the methods
+    and functions with the value of x supplied
+    at the front of the given arguments.
+
+    The forms are evaluated in order.
+
+    Returns x.
+
+    (doto
+      (new java.util.HashMap)
+      (.put "a" 1)
+      (.put "b" 2))
+
+reify
+    [macro]
+
+Profiles
+profile
+:profiles
+    v +/"# Profiles" "$MYGIT/technomancy/leiningen/doc/PROFILES.md"
+
+    You can change the configuration of your project by applying various
+    profiles. For instance, you may want to have a few extra test data
+    directories on the classpath during development without including them
+    in the jar, or you may want to have development tools like
+    [Slamhound](https://github.com/technomancy/slamhound) available in
+    every project you hack on without modifying every single `project.clj`
+    you use.
+
+Slamhound
+    v +/"# Slamhound" "$MYGIT/technomancy/slamhound/README.md"
+
+    Slamhound rips your ns form apart and reconstructs it.
+
+flux
+    Clojure based Solr client.
+
+->
+    https://stackoverflow.com/a/6785874
+
+zipmap
+    Returns a map with the keys mapped to the
+    corresponding vals.
+
+    (zipmap [:a :b :c :d :e] [1 2 3 4 5])
+
+    {:a 1, :b 2, :c 3, :d 4, :e 5}
+
+require
+use
+import
+    require causes the library to get loaded,
+    and every public symbol it exports will be
+    accessible as eg clojure.pprint/pprint.
+
+    If you want to use a more convenient name
+    like just pprint, you need to refer to the
+    namespace.
+
+    use is a convenient shorthand for
+    "require, then refer", to load the library
+    without the namespace prefix.
+
+    https://stackoverflow.com/questions/5276675/cant-get-pprint-to-work-in-clojure
+
+    user> (ns user (:require clojure.pprint))
+    nil
+    user> (pprint 1)
+    ; Evaluation aborted.
+    user> (clojure.pprint/pprint 1)
+    1
+    nil
+    user> (ns user (:use clojure.pprint))
+    nil
+    user> (pprint 1)
+    1
+
+expect
+    [#clojure-test]
+
+    https://github.com/clojure-expectations/clojure-test
+
+Proto
+    This is a REPL for Atom.
+
+    https://medium.com/@daniel.oliver.king/a-clojure-development-environment-that-gets-out-of-your-way-c11e6711ead3
+
+ns
+    The namespace must match the name of the
+    file.
+
+@
+    deref
+
+:gen-class
+    May generate a .class if being compiled,
+    otherwise it does nothing.
+
+transducer
+    https://stackoverflow.com/q/26317325
+
+    In essence, a transducer is a function
+    that takes a reducing function (like conj)
+    and turns it into a new, more awesome
+    reducing function. Let’s give it a try.
+    Let’s make a transducer called
+    inc-transducer:
+
+    Transducers are recipes of what to do with
+    a sequence of data without knowledge of
+    what the underlying sequence is (how to do
+    it). It can be any seq, async channel or
+    maybe observable.
+
+    They are composable and polymorphic.
+
+    The benefit is, you don't have to
+    implement all standard combinators every
+    time a new data source is added. Again and
+    again. As a result, you as user are able
+    to reuse those recipes on different data
+    sources.
+
+    Transducers are composable algorithmic
+    transformations.
+
+    They are independent from the context of
+    their input and output sources and specify
+    only the essence of the transformation in
+    terms of an individual element.
+
+    Because transducers are decoupled from
+    input or output sources, they can be used
+    in many different processes - collections,
+    streams, channels, observables, etc.
+
+    Transducers compose directly, without
+    awareness of input or creation of
+    intermediate aggregates.
+
+    NLG: A transducer is a function defined as
+    a reduction.
+
+PersistentHashSet
+Hash set
+    Returned by datahike queries.
+
+    https://clojuredocs.org/clojure.core/hash-set
+
+goroutine
+go
+a/<!
+    From inside a (go ...) block, you can -
+    and should - use a/<! instead of a/<!!:
+
+     (a/go (let [x (a/<! ch)] ...))
+
+    The logical behaviour will be the same as
+    a/<!!, but only the logical process of the
+    goroutine will block instead of the actual
+    OS thread.

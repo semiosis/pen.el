@@ -1,0 +1,378 @@
+@namespace h "http://www.w3.org/1999/xhtml";
+.body {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: justify;
+    text-indent: 0.99em
+    }
+.body-space-after {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0.85em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: justify;
+    text-indent: 0.99em
+    }
+.body-space-before {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.99em;
+    text-align: justify;
+    text-indent: 0.99em
+    }
+.calibre {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0
+    }
+.calibre1 {
+    display: block
+    }
+.calibre2 {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline
+    }
+.calibre3 {
+    color: inherit;
+    cursor: inherit;
+    text-decoration: inherit
+    }
+.calibre4 {
+    display: block;
+    list-style-type: decimal;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre5 {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre6 {
+    display: block;
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.centered {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    text-indent: 0
+    }
+.copyright-page {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 1.26em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: left;
+    text-indent: 0
+    }
+.dropcap {
+    font-size: 1.66667em;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.2
+    }
+.first-para {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: justify;
+    text-indent: 0
+    }
+.footnote {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5.31em;
+    text-align: justify;
+    text-indent: 0
+    }
+.generated-style {
+    line-height: 1.2
+    }
+.heading {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Trajan Pro";
+    font-size: 1.83333em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 1.16em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    text-indent: 0
+    }
+.heading-top {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Trajan Pro";
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.43em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    text-indent: 0
+    }
+.heading1 {
+    color: rgb(0, 0, 0);
+    font-family: "Garamond Premier Pro";
+    font-size: 1.25926em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none
+    }
+.heading2 {
+    color: rgb(0, 0, 0);
+    font-family: "Garamond Premier Pro";
+    font-size: 1.125em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none
+    }
+.italic {
+    color: rgb(0, 0, 0);
+    font-family: "Times";
+    font-size: 1em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none
+    }
+.italic1 {
+    color: rgb(0, 0, 0);
+    font-family: "Times";
+    font-size: 0.75em;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none
+    }
+.italic2 {
+    color: rgb(0, 0, 0);
+    font-family: "Times";
+    font-size: 1em;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none
+    }
+.italic3 {
+    color: rgb(0, 0, 0);
+    font-family: "Times";
+    font-size: 0.77778em;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none
+    }
+.points {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 3.48em;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: justify;
+    text-indent: -3.48em
+    }
+.points-space-before {
+    display: list-item
+    }
+.points-space-before1 {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 3.48em;
+    margin-right: 0;
+    margin-top: 0.85em;
+    text-align: justify;
+    text-indent: -3.48em
+    }
+.preface {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0.99em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.99em;
+    text-align: center;
+    text-indent: 0
+    }
+.quote {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0.99em;
+    margin-right: 0.99em;
+    margin-top: 0;
+    text-align: justify;
+    text-indent: 0.99em
+    }
+.scripture {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0.99em;
+    margin-right: 0.99em;
+    margin-top: 0.99em;
+    text-align: left;
+    text-indent: 0.99em
+    }
+.scripture-no-spaces {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0.99em;
+    margin-right: 0.99em;
+    margin-top: 0;
+    text-align: left;
+    text-indent: 0.99em
+    }
+.scripture-space-after {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0.85em;
+    margin-left: 0.99em;
+    margin-right: 0.99em;
+    margin-top: 0;
+    text-align: right;
+    text-indent: 0.99em
+    }
+.subhead {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Adobe Garamond Pro";
+    font-size: 1.125em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0.21em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.69em;
+    text-align: left;
+    text-indent: 0
+    }
+.tablebody {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: "Times";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0.12em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.12em;
+    text-align: left;
+    text-indent: 0
+    }

@@ -1,0 +1,103 @@
+$NOTES/ws/programming/glossary.txt
+
+shim
+    A small library that transparently
+    intercepts API calls and changes the
+    arguments passed, handles the operation
+    itself or redirects the operation
+    elsewhere.
+    
+    Shims can be used to support an old API in
+    a newer environment, or a new API in an
+    older environment.
+    
+    Shims can also be used for running
+    programs on different software platforms
+    than they were developed for.
+
+two's complement
+    Negation of a two's complement is
+    accomplished by inverting the bits and
+    adding 1.
+
+state diagram
+    A graphical representation of a set of
+    variables and the values they refer to.
+
+stack diagrams
+    http://greenteapress.com/thinkpython/html/thinkpython004.html#toc33
+
+    To keep track of which variables can be
+    used where, it is sometimes useful to draw
+    a stack diagram.
+    
+    Like state diagrams, stack diagrams show
+    the value of each variable, but they also
+    show the function each variable belongs
+    to.
+    
+    Each function is represented by a frame.
+
+    A graphical representation of a stack of
+    functions, their variables, and the values
+    they refer to.
+
+flow of execution
+     The order in which statements are
+     executed during a program run.
+
+traceback
+     A list of the functions that are
+     executing, printed when an exception
+     occurs.
+    
+frame
+    [#stack diagram]
+
+    Per function call.
+
+    A frame is a box with the name of a
+    function beside it and the parameters and
+    variables of the function inside it.
+
+    A box in a stack diagram that represents a
+    function call.
+    
+    It contains the local variables and
+    parameters of the function.
+
+meta-circular evaluator
+MCE
+meta-circular interpreter
+MCI
+    An interpreter for a programming language
+    written in that language.
+    
+    Meta-circular interpreters can be used to
+    clarify or define the semantics of the
+    language by reducing the full language to
+    a sub-language in which the interpreter is
+    expressed.
+    
+    Historically, such definitional
+    interpreters become popular within the
+    functional programming community, see the
+    classical Definitional interpreters for
+    higher-order programming languages.
+
+    An interpreter which defines each feature
+    of the interpreted language using a
+    similar facility of the interpreter's host
+    language.
+    
+    For example, interpreting a lambda
+    application may be implemented using
+    function application.
+    
+    Meta-circular evaluation is most prominent
+    in the context of Lisp.
+    
+    A self-interpreter is a meta-circular
+    interpreter where the interpreted language
+    is nearly identical to the host language;
+    the two terms are often used synonymously. 

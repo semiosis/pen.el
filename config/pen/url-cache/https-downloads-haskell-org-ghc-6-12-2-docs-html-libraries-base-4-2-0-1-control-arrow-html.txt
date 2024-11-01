@@ -1,0 +1,2155 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 34348
+Server: nginx
+Content-Type: text/html
+Last-Modified: Fri, 15 Feb 2019 14:57:19 GMT
+ETag: "5c66d34f-862c"
+Expires: Wed, 30 Mar 2022 08:26:15 GMT
+Cache-Control: no-cache, public
+Via: 1.1 varnish, 1.1 varnish
+Accept-Ranges: bytes
+Date: Wed, 30 Mar 2022 08:26:16 GMT
+Age: 0
+X-Served-By: cache-dfw18641-DFW, cache-akl10320-AKL
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1648628776.479580,VS0,VE160
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Rendered using the Haskell Html Library v0.2-->
+<HTML
+><HEAD
+><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"
+><TITLE
+>Control.Arrow</TITLE
+><LINK HREF="haddock.css" REL="stylesheet" TYPE="text/css"
+><SCRIPT SRC="haddock-util.js" TYPE="text/javascript"
+></SCRIPT
+><SCRIPT TYPE="text/javascript"
+>window.onload = function () {setSynopsis("mini_Control-Arrow.html")};</SCRIPT
+></HEAD
+><BODY
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topbar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><IMG SRC="haskell_icon.gif" WIDTH="16" HEIGHT="16" ALT=" "
+></TD
+><TD CLASS="title"
+>base-4.2.0.1: Basic libraries</TD
+><TD CLASS="topbut"
+><A HREF="src/Control-Arrow.html"
+>Source code</A
+></TD
+><TD CLASS="topbut"
+><A HREF="index.html"
+>Contents</A
+></TD
+><TD CLASS="topbut"
+><A HREF="doc-index.html"
+>Index</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="modulebar"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD
+><FONT SIZE="6"
+>Control.Arrow</FONT
+></TD
+><TD ALIGN="right"
+><TABLE CLASS="narrow" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="infohead"
+>Portability</TD
+><TD CLASS="infoval"
+>portable</TD
+></TR
+><TR
+><TD CLASS="infohead"
+>Stability</TD
+><TD CLASS="infoval"
+>experimental</TD
+></TR
+><TR
+><TD CLASS="infohead"
+>Maintainer</TD
+><TD CLASS="infoval"
+>libraries@haskell.org</TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="section4"
+><B
+>Contents</B
+></TD
+></TR
+><TR
+><TD
+><DL
+><DT
+><A HREF="#1"
+>Arrows
+</A
+></DT
+><DD
+><DL
+><DT
+><A HREF="#2"
+>Derived combinators
+</A
+></DT
+><DT
+><A HREF="#3"
+>Right-to-left variants
+</A
+></DT
+></DL
+></DD
+><DT
+><A HREF="#4"
+>Monoid operations
+</A
+></DT
+><DT
+><A HREF="#5"
+>Conditionals
+</A
+></DT
+><DT
+><A HREF="#6"
+>Arrow application
+</A
+></DT
+><DT
+><A HREF="#7"
+>Feedback
+</A
+></DT
+></DL
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Description</TD
+></TR
+><TR
+><TD CLASS="doc"
+>Basic arrow definitions, based on
+      <EM
+>Generalising Monads to Arrows</EM
+>, by John Hughes,
+      <EM
+>Science of Computer Programming</EM
+> 37, pp67-111, May 2000.
+ plus a couple of definitions (<TT
+><A HREF="Control-Arrow.html#v%3AreturnA"
+>returnA</A
+></TT
+> and <TT
+><A HREF="Control-Arrow.html#v%3Aloop"
+>loop</A
+></TT
+>) from
+      <EM
+>A New Notation for Arrows</EM
+>, by Ross Paterson, in <EM
+>ICFP 2001</EM
+>,
+      Firenze, Italy, pp229-240.
+ See these papers for the equations these combinators are expected to
+ satisfy.  These papers and more information on arrows can be found at
+ <A HREF="http://www.haskell.org/arrows/"
+>http://www.haskell.org/arrows/</A
+>.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+>Synopsis</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Category.html#t%3ACategory"
+>Category</A
+> a =&gt; <A HREF="#t%3AArrow"
+>Arrow</A
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Aarr"
+>arr</A
+> ::  (b -&gt; c) -&gt; a b c</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Afirst"
+>first</A
+> ::  a b c -&gt; a (b, d) (c, d)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Asecond"
+>second</A
+> ::  a b c -&gt; a (d, b) (d, c)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%2A%2A%2A"
+>(***)</A
+> ::  a b c -&gt; a b' c' -&gt; a (b, b') (c, c')</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%26%26%26"
+>(&amp;&amp;&amp;)</A
+> ::  a b c -&gt; a b c' -&gt; a b (c, c')</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>newtype</SPAN
+>  <A HREF="#t%3AKleisli"
+>Kleisli</A
+> m a b = <A HREF="#v%3AKleisli"
+>Kleisli</A
+> {<TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="recfield"
+><A HREF="#v%3ArunKleisli"
+>runKleisli</A
+> :: a -&gt; m b</TD
+></TR
+></TABLE
+>}</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AreturnA"
+>returnA</A
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; a b b</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%5E%3E%3E"
+>(^&gt;&gt;)</A
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; (b -&gt; c) -&gt; a c d -&gt; a b d</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%3E%3E%5E"
+>(&gt;&gt;^)</A
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; a b c -&gt; (c -&gt; d) -&gt; a b d</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%3C%3C%5E"
+>(&lt;&lt;^)</A
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; a c d -&gt; (b -&gt; c) -&gt; a b d</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%5E%3C%3C"
+>(^&lt;&lt;)</A
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; (c -&gt; d) -&gt; a b c -&gt; a b d</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A HREF="#t%3AArrowZero"
+>ArrowZero</A
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AzeroArrow"
+>zeroArrow</A
+> ::  a b c</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrowZero"
+>ArrowZero</A
+> a =&gt; <A HREF="#t%3AArrowPlus"
+>ArrowPlus</A
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%3C%2B%3E"
+>(&lt;+&gt;)</A
+> ::  a b c -&gt; a b c -&gt; a b c</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A HREF="#t%3AArrowChoice"
+>ArrowChoice</A
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Aleft"
+>left</A
+> ::  a b c -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b d) (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> c d)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Aright"
+>right</A
+> ::  a b c -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> d b) (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> d c)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%2B%2B%2B"
+>(+++)</A
+> ::  a b c -&gt; a b' c' -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b b') (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> c c')</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%7C%7C%7C"
+>(|||)</A
+> ::  a b d -&gt; a c d -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b c) d</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A HREF="#t%3AArrowApply"
+>ArrowApply</A
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Aapp"
+>app</A
+> ::  a (a b c, b) c</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>newtype</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> a =&gt; <A HREF="#t%3AArrowMonad"
+>ArrowMonad</A
+> a b = <A HREF="#v%3AArrowMonad"
+>ArrowMonad</A
+> (a <A HREF="../ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+> b)</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3AleftApp"
+>leftApp</A
+> :: <A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> a =&gt; a b c -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b d) (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> c d)</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A HREF="#t%3AArrowLoop"
+>ArrowLoop</A
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3Aloop"
+>loop</A
+> ::  a (b, d) (c, d) -&gt; a b c</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%3E%3E%3E"
+>(&gt;&gt;&gt;)</A
+> :: <A HREF="Control-Category.html#t%3ACategory"
+>Category</A
+> cat =&gt; cat a b -&gt; cat b c -&gt; cat a c</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="#v%3A%3C%3C%3C"
+>(&lt;&lt;&lt;)</A
+> :: <A HREF="Control-Category.html#t%3ACategory"
+>Category</A
+> cat =&gt; cat b c -&gt; cat a b -&gt; cat a c</TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="1"
+><A NAME="1"
+>Arrows
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Category.html#t%3ACategory"
+>Category</A
+> a =&gt; <A NAME="t:Arrow"
+><A NAME="t%3AArrow"
+></A
+></A
+><B
+>Arrow</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#Arrow"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+><P
+>The basic arrow class.
+</P
+><P
+>Minimal complete definition: <TT
+><A HREF="Control-Arrow.html#v%3Aarr"
+>arr</A
+></TT
+> and <TT
+><A HREF="Control-Arrow.html#v%3Afirst"
+>first</A
+></TT
+>.
+</P
+><P
+>The other combinators have sensible default definitions,
+   which may be overridden for efficiency.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:arr"
+><A NAME="v%3Aarr"
+></A
+></A
+><B
+>arr</B
+> ::  (b -&gt; c) -&gt; a b c</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#arr"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Lift a function to an arrow.
+</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:first"
+><A NAME="v%3Afirst"
+></A
+></A
+><B
+>first</B
+> ::  a b c -&gt; a (b, d) (c, d)</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#first"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Send the first component of the input through the argument
+   arrow, and copy the rest unchanged to the output.
+</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:second"
+><A NAME="v%3Asecond"
+></A
+></A
+><B
+>second</B
+> ::  a b c -&gt; a (d, b) (d, c)</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#second"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>A mirror image of <TT
+><A HREF="Control-Arrow.html#v%3Afirst"
+>first</A
+></TT
+>.
+</P
+><P
+>The default definition may be overridden with a more efficient
+   version if desired.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:***"
+><A NAME="v%3A%2A%2A%2A"
+></A
+></A
+><B
+>(***)</B
+> ::  a b c -&gt; a b' c' -&gt; a (b, b') (c, c')</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%2A%2A%2A"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Split the input between the two argument arrows and combine
+   their output.  Note that this is in general not a functor.
+</P
+><P
+>The default definition may be overridden with a more efficient
+   version if desired.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:&&&"
+><A NAME="v%3A%26%26%26"
+></A
+></A
+><B
+>(&amp;&amp;&amp;)</B
+> ::  a b c -&gt; a b c' -&gt; a b (c, c')</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%26%26%26"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Fanout: send the input to both argument arrows and combine
+   their output.
+</P
+><P
+>The default definition may be overridden with a more efficient
+   version if desired.
+</P
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Arrow')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Arrow" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> (-&gt;)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>newtype</SPAN
+>  <A NAME="t:Kleisli"
+><A NAME="t%3AKleisli"
+></A
+></A
+><B
+>Kleisli</B
+> m a b </TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#Kleisli"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Kleisli arrows of a monad.
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="5" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:Kleisli"
+><A NAME="v%3AKleisli"
+></A
+></A
+><B
+>Kleisli</B
+></TD
+><TD CLASS="rdoc"
+></TD
+></TR
+><TR
+><TD CLASS="body" COLSPAN="2"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:runKleisli"
+><A NAME="v%3ArunKleisli"
+></A
+></A
+><B
+>runKleisli</B
+> :: a -&gt; m b</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:Kleisli')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:Kleisli" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> m =&gt; <A HREF="Control-Category.html#t%3ACategory"
+>Category</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad-Fix.html#t%3AMonadFix"
+>MonadFix</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowLoop"
+>ArrowLoop</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowChoice"
+>ArrowChoice</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonadPlus"
+>MonadPlus</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowPlus"
+>ArrowPlus</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonadPlus"
+>MonadPlus</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowZero"
+>ArrowZero</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="2"
+><A NAME="2"
+>Derived combinators
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:returnA"
+><A NAME="v%3AreturnA"
+></A
+></A
+><B
+>returnA</B
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; a b b</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#returnA"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>The identity arrow, which plays the role of <TT
+><A HREF="Control-Monad.html#v%3Areturn"
+>return</A
+></TT
+> in arrow notation.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:^>>"
+><A NAME="v%3A%5E%3E%3E"
+></A
+></A
+><B
+>(^&gt;&gt;)</B
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; (b -&gt; c) -&gt; a c d -&gt; a b d</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%5E%3E%3E"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Precomposition with a pure function.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:>>^"
+><A NAME="v%3A%3E%3E%5E"
+></A
+></A
+><B
+>(&gt;&gt;^)</B
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; a b c -&gt; (c -&gt; d) -&gt; a b d</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%3E%3E%5E"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Postcomposition with a pure function.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section2"
+><A NAME="3"
+><A NAME="3"
+>Right-to-left variants
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:<<^"
+><A NAME="v%3A%3C%3C%5E"
+></A
+></A
+><B
+>(&lt;&lt;^)</B
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; a c d -&gt; (b -&gt; c) -&gt; a b d</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%3C%3C%5E"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Precomposition with a pure function (right-to-left variant).
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:^<<"
+><A NAME="v%3A%5E%3C%3C"
+></A
+></A
+><B
+>(^&lt;&lt;)</B
+> :: <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; (c -&gt; d) -&gt; a b c -&gt; a b d</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%5E%3C%3C"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Postcomposition with a pure function (right-to-left variant).
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="4"
+><A NAME="4"
+>Monoid operations
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A NAME="t:ArrowZero"
+><A NAME="t%3AArrowZero"
+></A
+></A
+><B
+>ArrowZero</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#ArrowZero"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:zeroArrow"
+><A NAME="v%3AzeroArrow"
+></A
+></A
+><B
+>zeroArrow</B
+> ::  a b c</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#zeroArrow"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ArrowZero')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ArrowZero" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonadPlus"
+>MonadPlus</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowZero"
+>ArrowZero</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrowZero"
+>ArrowZero</A
+> a =&gt; <A NAME="t:ArrowPlus"
+><A NAME="t%3AArrowPlus"
+></A
+></A
+><B
+>ArrowPlus</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#ArrowPlus"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:<+>"
+><A NAME="v%3A%3C%2B%3E"
+></A
+></A
+><B
+>(&lt;+&gt;)</B
+> ::  a b c -&gt; a b c -&gt; a b c</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%3C%2B%3E"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ArrowPlus')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ArrowPlus" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonadPlus"
+>MonadPlus</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowPlus"
+>ArrowPlus</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="5"
+><A NAME="5"
+>Conditionals
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A NAME="t:ArrowChoice"
+><A NAME="t%3AArrowChoice"
+></A
+></A
+><B
+>ArrowChoice</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#ArrowChoice"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Choice, for arrows that support it.  This class underlies the
+   <TT
+>if</TT
+> and <TT
+>case</TT
+> constructs in arrow notation.
+   Any instance must define <TT
+><A HREF="Control-Arrow.html#v%3Aleft"
+>left</A
+></TT
+>.  The other combinators have sensible
+   default definitions, which may be overridden for efficiency.
+</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:left"
+><A NAME="v%3Aleft"
+></A
+></A
+><B
+>left</B
+> ::  a b c -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b d) (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> c d)</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#left"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Feed marked inputs through the argument arrow, passing the
+   rest through unchanged to the output.
+</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:right"
+><A NAME="v%3Aright"
+></A
+></A
+><B
+>right</B
+> ::  a b c -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> d b) (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> d c)</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#right"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>A mirror image of <TT
+><A HREF="Control-Arrow.html#v%3Aleft"
+>left</A
+></TT
+>.
+</P
+><P
+>The default definition may be overridden with a more efficient
+   version if desired.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:+++"
+><A NAME="v%3A%2B%2B%2B"
+></A
+></A
+><B
+>(+++)</B
+> ::  a b c -&gt; a b' c' -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b b') (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> c c')</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%2B%2B%2B"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Split the input between the two argument arrows, retagging
+   and merging their outputs.
+   Note that this is in general not a functor.
+</P
+><P
+>The default definition may be overridden with a more efficient
+   version if desired.
+</P
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:|||"
+><A NAME="v%3A%7C%7C%7C"
+></A
+></A
+><B
+>(|||)</B
+> ::  a b d -&gt; a c d -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b c) d</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#%7C%7C%7C"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+><P
+>Fanin: Split the input between the two argument arrows and
+   merge their outputs.
+</P
+><P
+>The default definition may be overridden with a more efficient
+   version if desired.
+</P
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ArrowChoice')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ArrowChoice" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Arrow.html#t%3AArrowChoice"
+>ArrowChoice</A
+> (-&gt;)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowChoice"
+>ArrowChoice</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="6"
+><A NAME="6"
+>Arrow application
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A NAME="t:ArrowApply"
+><A NAME="t%3AArrowApply"
+></A
+></A
+><B
+>ArrowApply</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#ArrowApply"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>Some arrows allow application of arrow inputs to other inputs.
+</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:app"
+><A NAME="v%3Aapp"
+></A
+></A
+><B
+>app</B
+> ::  a (a b c, b) c</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#app"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ArrowApply')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ArrowApply" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> (-&gt;)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>newtype</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> a =&gt; <A NAME="t:ArrowMonad"
+><A NAME="t%3AArrowMonad"
+></A
+></A
+><B
+>ArrowMonad</B
+> a b </TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#ArrowMonad"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>The <TT
+><A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+></TT
+> class is equivalent to <TT
+><A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+></TT
+>: any monad gives rise
+   to a <TT
+><A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+></TT
+> arrow, and any instance of <TT
+><A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+></TT
+> defines a monad.
+</TD
+></TR
+><TR
+><TD CLASS="section4"
+>Constructors</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="arg"
+><A NAME="v:ArrowMonad"
+><A NAME="v%3AArrowMonad"
+></A
+></A
+><B
+>ArrowMonad</B
+> (a <A HREF="../ghc-prim-0.2.0.0/GHC-Unit.html#t%3A%28%29"
+>()</A
+> b)</TD
+><TD CLASS="rdoc"
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ArrowMonad')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ArrowMonad" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> a =&gt; <A HREF="Control-Monad.html#t%3AMonad"
+>Monad</A
+> (<A HREF="Control-Arrow.html#t%3AArrowMonad"
+>ArrowMonad</A
+> a)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:leftApp"
+><A NAME="v%3AleftApp"
+></A
+></A
+><B
+>leftApp</B
+> :: <A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+> a =&gt; a b c -&gt; a (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> b d) (<A HREF="Data-Either.html#t%3AEither"
+>Either</A
+> c d)</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#leftApp"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Any instance of <TT
+><A HREF="Control-Arrow.html#t%3AArrowApply"
+>ArrowApply</A
+></TT
+> can be made into an instance of
+   <TT
+><A HREF="Control-Arrow.html#t%3AArrowChoice"
+>ArrowChoice</A
+></TT
+> by defining <TT
+><A HREF="Control-Arrow.html#v%3Aleft"
+>left</A
+></TT
+> = <TT
+><A HREF="Control-Arrow.html#v%3AleftApp"
+>leftApp</A
+></TT
+>.
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="section1"
+><A NAME="7"
+><A NAME="7"
+>Feedback
+</A
+></A
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><SPAN CLASS="keyword"
+>class</SPAN
+> <A HREF="Control-Arrow.html#t%3AArrow"
+>Arrow</A
+> a =&gt; <A NAME="t:ArrowLoop"
+><A NAME="t%3AArrowLoop"
+></A
+></A
+><B
+>ArrowLoop</B
+> a  <SPAN CLASS="keyword"
+>where</SPAN
+></TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#ArrowLoop"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="ndoc"
+>The <TT
+><A HREF="Control-Arrow.html#v%3Aloop"
+>loop</A
+></TT
+> operator expresses computations in which an output value is
+   fed back as input, even though the computation occurs only once.
+   It underlies the <TT
+>rec</TT
+> value recursion construct in arrow notation.
+</TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+>Methods</TD
+></TR
+><TR
+><TD CLASS="body"
+><TABLE CLASS="vanilla" CELLSPACING="0" CELLPADDING="0"
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:loop"
+><A NAME="v%3Aloop"
+></A
+></A
+><B
+>loop</B
+> ::  a (b, d) (c, d) -&gt; a b c</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Arrow.html#loop"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s8"
+></TD
+></TR
+><TR
+><TD CLASS="section4"
+><IMG SRC="minus.gif" CLASS="coll" ONCLICK="toggle(this,'i:ArrowLoop')" ALT="show/hide"
+> Instances</TD
+></TR
+><TR
+><TD CLASS="body"
+><DIV ID="i:ArrowLoop" STYLE="display:block;"
+><TABLE CLASS="vanilla" CELLSPACING="1" CELLPADDING="0"
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Arrow.html#t%3AArrowLoop"
+>ArrowLoop</A
+> (-&gt;)</TD
+></TR
+><TR
+><TD CLASS="decl"
+><A HREF="Control-Monad-Fix.html#t%3AMonadFix"
+>MonadFix</A
+> m =&gt; <A HREF="Control-Arrow.html#t%3AArrowLoop"
+>ArrowLoop</A
+> (<A HREF="Control-Arrow.html#t%3AKleisli"
+>Kleisli</A
+> m)</TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:>>>"
+><A NAME="v%3A%3E%3E%3E"
+></A
+></A
+><B
+>(&gt;&gt;&gt;)</B
+> :: <A HREF="Control-Category.html#t%3ACategory"
+>Category</A
+> cat =&gt; cat a b -&gt; cat b c -&gt; cat a c</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Category.html#%3E%3E%3E"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Left-to-right composition
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="topdecl"
+><TABLE CLASS="declbar"
+><TR
+><TD CLASS="declname"
+><A NAME="v:<<<"
+><A NAME="v%3A%3C%3C%3C"
+></A
+></A
+><B
+>(&lt;&lt;&lt;)</B
+> :: <A HREF="Control-Category.html#t%3ACategory"
+>Category</A
+> cat =&gt; cat b c -&gt; cat a b -&gt; cat a c</TD
+><TD CLASS="declbut"
+><A HREF="src/Control-Category.html#%3C%3C%3C"
+>Source</A
+></TD
+></TR
+></TABLE
+></TD
+></TR
+><TR
+><TD CLASS="doc"
+>Right-to-left composition
+</TD
+></TR
+><TR
+><TD CLASS="s15"
+></TD
+></TR
+><TR
+><TD CLASS="botbar"
+>Produced by <A HREF="http://www.haskell.org/haddock/"
+>Haddock</A
+> version 2.6.1</TD
+></TR
+></TABLE
+></BODY
+></HTML
+>

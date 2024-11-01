@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "mkw" "-pak" "valgrind" "#" "<==" "mkw"
+cd /root/.pen/documents/notes;  "mkw" "-apt" "valgrind" "#" "<==" "mkw"
+cd /;  "mkw" "-apt" "gdb" "#" "<==" "mkw"
+cd /;  "mkw" "libconfig" "#" "<==" "mkw"
+cd /;  "mkw" "ldconfig" "#" "<==" "mkw"
+cd /root/programs/carbonyl-0.0.3;  "mkw" "chromium" "#" "<==" "mkw"
+cd /root/programs/carbonyl-0.0.3;  "mkw" "-f" "carbonyl" "#" "<==" "mkw"
+cd /root/programs/carbonyl-0.0.3;  "mkw" "-f" "carbonyl" "#" "<==" "mkw"

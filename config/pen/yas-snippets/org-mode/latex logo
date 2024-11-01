@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: latex logo
+# group: latex
+# key: latexlogo
+# --
+$\LaTeX$

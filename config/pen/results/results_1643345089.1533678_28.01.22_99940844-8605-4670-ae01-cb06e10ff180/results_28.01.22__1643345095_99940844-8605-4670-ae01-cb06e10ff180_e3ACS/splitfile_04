@@ -1,0 +1,3 @@
+"async/go-loop" is a function that runs a go-routine and
+returns a channel that can be used to send values to the go-routine.
+

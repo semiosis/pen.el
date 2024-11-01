@@ -1,0 +1,6 @@
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/.pen/documents/notes;  "rl" "pen-readln" "Search tmux panes PCRE" "#" "<==" "find-text-in-te"
+cd /root/.pen/documents/notes;  "rl" "pen-readln" "Search tmux panes PCRE" "#" "<==" "find-text-in-te"

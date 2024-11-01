@@ -1,0 +1,12 @@
+ https://www.nasa.gov/jpl/sbodies/white-hole
+
+'+str(time.ctime())+'
+
+#############################################################################################################
+
+                                                                Image from the F125W filter
+Image from the F140W filter
+'''
+text_file = open("Output.txt", "w")
+text_file.write(output)
+text_file.close()

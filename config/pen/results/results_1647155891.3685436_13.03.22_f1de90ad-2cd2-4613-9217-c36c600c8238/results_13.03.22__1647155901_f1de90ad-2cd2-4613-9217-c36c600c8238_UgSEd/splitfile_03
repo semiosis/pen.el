@@ -1,0 +1,6 @@
+The above code is a simple, but inefficient way to solve the problem. The
+problem is that the code is not tail recursive, and so has to be compiled with
+the -O option to make it tail recursive.
+
+The tail recursive version of the code is as follows:
+

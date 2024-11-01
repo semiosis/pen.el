@@ -1,0 +1,1 @@
+find . -name "*.el" | grep -v pen- | grep -v "^\./pen.el$" | grep -v "^\./init.el$" | grep -v "^\./init-setup.el$"

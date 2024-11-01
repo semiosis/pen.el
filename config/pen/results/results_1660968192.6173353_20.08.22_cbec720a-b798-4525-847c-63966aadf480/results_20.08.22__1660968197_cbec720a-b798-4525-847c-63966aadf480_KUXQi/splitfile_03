@@ -1,0 +1,5 @@
+owing lines are desirable for IPv6 capable hosts
+::1	localhost6
+fe80::	localhost6
+
+2c6ef:7122:dac2:f15b:2b56:818e:dbb

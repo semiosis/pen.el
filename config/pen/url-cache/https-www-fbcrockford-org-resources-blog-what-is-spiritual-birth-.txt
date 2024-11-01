@@ -1,0 +1,1134 @@
+HTTP/1.1 200 OK
+Date: Tue, 16 Jan 2024 09:51:04 GMT
+Server: Apache
+Strict-Transport-Security: max-age=63072000
+Content-Type: text/html; charset=utf-8
+Content-Length: 13820
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding,User-Agent
+Set-Cookie: PHPSESSID=gik873t624nn9mv92d2uap50vk; path=/;HttpOnly;Secure
+Set-Cookie: usertime=%7B%22country%22%3A%22New%20Zealand%22%2C%22latitude%22%3A%22-45.8382%22%2C%22longitude%22%3A%22170.5047%22%2C%22accuracy%22%3A5%2C%22timezone%22%3A%22Pacific%5C%2FAuckland%22%2C%22country_code3%22%3A%22NZL%22%2C%22organization%22%3A%22AS9500%20One%20New%20Zealand%20Group%20Limited%22%2C%22asn%22%3A9500%2C%22country_code%22%3A%22NZ%22%2C%22area_code%22%3A%220%22%2C%22organization_name%22%3A%22One%20New%20Zealand%20Group%20Limited%22%2C%22ip%22%3A%22118.92.75.104%22%2C%22city%22%3A%22Dunedin%22%2C%22continent_code%22%3A%22OC%22%2C%22region%22%3A%22Otago%22%2C%22time_zone%22%3A%22Pacific%5C%2FAuckland%22%7D; expires=Thu, 15-Feb-2024 09:51:03 GMT; Max-Age=2592000; path=/;HttpOnly;Secure
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+<!DOCTYPE html><html
+xmlns="https://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:og="http://ogp.me/ns#"
+xmlns:fb="https://www.facebook.com/2008/fbml"><head><meta
+charset="utf-8"><meta
+http-equiv="X-UA-Compatible" content="IE=edge"><meta
+name="viewport" content="width=device-width, initial-scale=1"><meta
+name="description" content="&nbsp;&ldquo;Have you been born again?&rdquo; This question has been a popular way to ask someone whether or not he or she is a Christian."><meta
+name="keywords" content=""><meta
+name="user_login_id" content=""><meta
+name="csrf-token" content="QxS4sdsOkVwsxE6+diLLh18J2BrGSeyBr9pPZDF4k8Y="><link
+rel="shortcut icon"
+href="https://chusermedia.s3.amazonaws.com/1124_favicon_6850_favicon.png"><title>What Is Spiritual Birth? - First Baptist Church of Rockford</title><link
+href="/asset/css/bootstrap.css" rel="stylesheet"><link
+href="https://d3hjjij7h4i3lg.cloudfront.net/asset/css/flipclock.css" rel="stylesheet"><link
+href="/asset/css/2.0/core.css/?version=1.15528" rel="stylesheet"><link
+rel="stylesheet" href="https://d3hjjij7h4i3lg.cloudfront.net/asset/js/froala3_2_1/css/froala_style.css"><link
+href="/asset/css/theme-providence.css" rel="stylesheet"><link
+id="themefont" href="" rel="stylesheet"><link
+id="themecolor" href="https://d3hjjij7h4i3lg.cloudfront.net/asset/css/2.0/palettes/palette15.css" rel="stylesheet" media="print" onload="this.media='all'"><link
+href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"  media="print" onload="this.media='all'"><link
+href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet"  media="print" onload="this.media='all'"><link
+href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"  media="print" onload="this.media='all'">
+ <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+<!--[if lt IE 9]> <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <script src="https://d3hjjij7h4i3lg.cloudfront.net/asset/js/2.0/jquery.min.js"></script> <script src="https://d3hjjij7h4i3lg.cloudfront.net/asset/js/jquery.cookie.js"></script> <meta
+property="og:site_name" content="What Is Spiritual Birth? - First Baptist Church of Rockford"><meta
+property="og:title" content="What Is Spiritual Birth? - First Baptist Church of Rockford"><meta
+property="og:description" content="&nbsp;&ldquo;Have you been born again?&rdquo; This question has been a popular way to ask someone whether or not he or she is a Christian."><meta
+property="og:type" content="website"><meta
+property="og:url" content="https://www.fbcrockford.org/resources/blog/what-is-spiritual-birth/"><meta
+property="og:image" content="https://d1fzhre25nnjsm.cloudfront.net/1124152225_6853_9957116.jpg"><meta
+property="og:image:secure_url" content="https://d1fzhre25nnjsm.cloudfront.net/1124152225_6853_9957116.jpg"><meta
+property="fb:app_id" content="192938808007618">
+<noscript>
+<iframe
+src="//www.googletagmanager.com/ns.html?id=GTM-WWBW9B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript> <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WWBW9B');</script>  <script>var blockVidId = [];
+        var blockPlayerID = [];
+        var blockPlayer = [];
+        var blockPlayerCount = 0;
+        var applemapready = false;</script> <script src="https://www.google.com/recaptcha/api.js?render=6LdxxfUiAAAAAKGS9C-coMS2ZB767FSke1IUlAAu" async defer></script> <script>var after = "";
+            var before = "";</script> <div
+style="display: none;" class="inside_header"></div> <script>$(document).ready(function () {
+            // var sub_menu_id = $('#sub_menu_id').val();
+            var sub_menu_id = "8231";
+            $('#LockedSubMenuId').val(sub_menu_id);
+            $('#PasswordLockedSubMenuId').val(sub_menu_id);
+            $('#seoSubMenuId').val(sub_menu_id);
+            $('#imageSubMenuId').val(sub_menu_id);
+            $('#advancedCodeSubMenuId').val(sub_menu_id);
+            console.log(sub_menu_id);
+
+            var html_after = '<div class="after_start_body_tag">'+after+'</div>';
+            var html_befor_close = '<div class="befor_close_body_tag">'+before+'</div>';
+
+            $("footer").before(html_befor_close);
+            $("body").prepend(html_after);
+
+            if (!$(".editable-field").hasClass('fr-view')) {
+                $(".container").addClass('fr-view');
+            }
+        });</script> </head><body
+class="secondary-page  blog    "><div
+id="wrap">
+<nav
+id="side-menu" style="display: none;"><ul><li>
+<a
+href="/start-here/">Start Here</a>
+<a
+href="#SubMenuList_29038" class="ion-ios-arrow-down side-menu-arrow collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a><div
+id="SubMenuList_29038" class="collapse slideout-menu-sub"><ul><li><a
+href="/start-here/weekly-schedule/">Weekly Schedule</a></li><li><a
+href="/start-here/child-care/">Child Care</a></li><li><a
+href="/start-here/what-you-really-need-to-know/">What You Really Need to Know</a></li></ul></div></li><li>
+<a
+href="/about-us/">About Us</a>
+<a
+href="#SubMenuList_23468" class="ion-ios-arrow-down side-menu-arrow collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a><div
+id="SubMenuList_23468" class="collapse slideout-menu-sub"><ul><li><a
+href="/about-us/our-beliefs/">our beliefs</a></li><li><a
+href="/about-us/our-mission/">Our Mission</a></li><li><a
+href="/about-us/our-ministries/">Our ministries</a></li><li><a
+href="/about-us/our-pastors/">our pastors</a></li><li><a
+href="/about-us/our-history/">Our History</a></li><li><a
+href="/about-us/our-covenant/">Our Covenant</a></li></ul></div></li><li>
+<a
+href="/resources/">Resources</a>
+<a
+href="#SubMenuList_23482" class="ion-ios-arrow-down side-menu-arrow collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a><div
+id="SubMenuList_23482" class="collapse slideout-menu-sub"><ul><li><a
+href="/resources/calendar/">calendar</a></li><li><a
+href="/resources/upcoming-hymns/">Upcoming Hymns</a></li><li><a
+href="/resources/ccgg/">CCGG</a></li><li><a
+href="/resources/blog/">Blog</a></li></ul></div></li><li>
+<a
+href="/sermons/">Sermons</a>
+<a
+href="#SubMenuList_30546" class="ion-ios-arrow-down side-menu-arrow collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a><div
+id="SubMenuList_30546" class="collapse slideout-menu-sub"><ul><li><a
+href="/sermons/sunday-morning/">Sunday Morning</a></li><li><a
+href="/sermons/sunday-evening/">Sunday Evening</a></li><li><a
+href="/sermons/series-depression/">SERIES: Depression</a></li><li><a
+href="/sermons/events/">Events</a></li></ul></div></li><li>
+<a
+href="/contact-us/">Contact Us</a></li></ul><div
+class="mobile-nav-extras"><li>
+<a
+href="javascript:void(0);" class="members-login pull-left" onclick="show_login_form();">
+<i
+class="ion-person"></i> login
+</a></li></div><div
+class="side-menu-spacer"></div>
+</nav><div
+id="panel">
+<burger-nav
+id="burger" class="inactive">
+<shape></shape>
+<shape></shape>
+<shape></shape>
+<shape></shape>
+<shape></shape>
+<shape></shape>
+</burger-nav> <script>$('#burger').on('click', function(e) {
+            $('body').toggleClass("burger-nav");
+            $('.navbar').toggleClass("navhide navshow");
+            $('#burger').toggleClass("active inactive");
+            //$('#AltNavHomeLink').toggleClass("show hide");
+            //you can list several class names
+            e.preventDefault();
+        });</script> <navbg
+class="nav-colored">
+</navbg>
+<nav
+class="navbar navbar-default navbar-fixed-top navhide  "><div
+class="container"><div
+class="navbar-block"><div
+class="navbar-header has-logo-bg"><div
+class="navbar-brand brand-image ">
+<a
+href="/" class="brand-logo" style="background-image: url(https://d1fzhre25nnjsm.cloudfront.net/1124103110_6850_color-logo-300.png);"></a>
+<a
+href="/" class="brand-box"><span
+class="logo-color">First</span> Baptist Church Rockford </a></div><div
+class="navbar-spacer"></div>
+<button
+href="javascript:void(0);" id="menu-toggle"  type="button" class="navbar-toggle collapsed js-slideout-toggle" href="#menu-toggle" id="menu-toggle">
+<span
+class="icon-bar"></span>
+<span
+class="icon-bar"></span>
+<span
+class="icon-bar"></span>
+</button></div><div
+id="navbar" class="collapse navbar-collapse"><ul
+class="nav navbar-nav sort_menu not-mobile" id="mainmenu"><li
+id="AltNavHomeLink" class="hide"><a
+href="/">Home</a></li><li
+id="MenuList_29038" class="dropdown not-mobile"><a
+id="main-nav29038" href="/start-here/" class="dropdown-toggle"><div
+class="main-nav-edit-container" style="display:block;"><span
+id="submenuShow29038">Start Here</span></div></a><ul
+class="dropdown-menu sort_menu" id="submenu29038"><li
+id="MenuList_29040"><a
+id="menulink29040" href="/start-here/weekly-schedule/"><span
+id="submenuShow29040">Weekly Schedule</span></a></li><li
+id="MenuList_29041"><a
+id="menulink29041" href="/start-here/child-care/"><span
+id="submenuShow29041">Child Care</span></a></li><li
+id="MenuList_29042"><a
+id="menulink29042" href="/start-here/what-you-really-need-to-know/"><span
+id="submenuShow29042">What You Really Need to Know</span></a></li></ul></li><li
+id="MenuList_23468" class="dropdown not-mobile"><a
+id="main-nav23468" href="/about-us/" class="dropdown-toggle"><div
+class="main-nav-edit-container" style="display:block;"><span
+id="submenuShow23468">About Us</span></div></a><ul
+class="dropdown-menu sort_menu" id="submenu23468"><li
+id="MenuList_23469"><a
+id="menulink23469" href="/about-us/our-beliefs/"><span
+id="submenuShow23469">our beliefs</span></a></li><li
+id="MenuList_24003"><a
+id="menulink24003" href="/about-us/our-mission/"><span
+id="submenuShow24003">Our Mission</span></a></li><li
+id="MenuList_24172"><a
+id="menulink24172" href="/about-us/our-ministries/"><span
+id="submenuShow24172">Our ministries</span></a></li><li
+id="MenuList_23470"><a
+id="menulink23470" href="/about-us/our-pastors/"><span
+id="submenuShow23470">our pastors</span></a></li><li
+id="MenuList_24164"><a
+id="menulink24164" href="/about-us/our-history/"><span
+id="submenuShow24164">Our History</span></a></li><li
+id="MenuList_30099"><a
+id="menulink30099" href="/about-us/our-covenant/"><span
+id="submenuShow30099">Our Covenant</span></a></li></ul></li><li
+id="MenuList_23482" class="dropdown not-mobile"><a
+id="main-nav23482" href="/resources/" class="dropdown-toggle"><div
+class="main-nav-edit-container" style="display:block;"><span
+id="submenuShow23482">Resources</span></div></a><ul
+class="dropdown-menu sort_menu" id="submenu23482"><li
+id="MenuList_24173"><a
+id="menulink24173" href="/resources/calendar/"><span
+id="submenuShow24173">calendar</span></a></li><li
+id="MenuList_24175"><a
+id="menulink24175" href="/resources/upcoming-hymns/"><span
+id="submenuShow24175">Upcoming Hymns</span></a></li><li
+id="MenuList_25951"><a
+id="menulink25951" href="/resources/ccgg/"><span
+id="submenuShow25951">CCGG</span></a></li><li
+id="MenuList_30839"><a
+id="menulink30839" href="/resources/blog/"><span
+id="submenuShow30839">Blog</span></a></li></ul></li><li
+id="MenuList_30546" class="dropdown not-mobile"><a
+id="main-nav30546" href="/sermons/" class="dropdown-toggle"><div
+class="main-nav-edit-container" style="display:block;"><span
+id="submenuShow30546">Sermons</span></div></a><ul
+class="dropdown-menu sort_menu" id="submenu30546"><li
+id="MenuList_24176"><a
+id="menulink24176" href="/sermons/sunday-morning/"><span
+id="submenuShow24176">Sunday Morning</span></a></li><li
+id="MenuList_25733"><a
+id="menulink25733" href="/sermons/sunday-evening/"><span
+id="submenuShow25733">Sunday Evening</span></a></li><li
+id="MenuList_47435"><a
+id="menulink47435" href="/sermons/series-depression/"><span
+id="submenuShow47435">SERIES: Depression</span></a></li><li
+id="MenuList_46857"><a
+id="menulink46857" href="/sermons/events/"><span
+id="submenuShow46857">Events</span></a></li></ul></li><li
+id="MenuList_23481" class=" not-mobile"><a
+id="main-nav23481" href="/contact-us/" class="dropdown-toggle"><div
+class="main-nav-edit-container" style="display:block;"><span
+id="submenuShow23481">Contact Us</span></div></a></li></ul><div
+class="utility-nav">
+<a
+href="javascript:void(0);" class="members-login pull-left" onclick="show_login_form();"><div
+class="members-login-container"><div
+class="members-login-icon">
+<i
+class="ion-person"></i></div>
+<span>login</span></div></a></div></div></div></div>
+</nav><div
+class="secondary-block no-mid-bar"><div
+class="secondary-block-bg secondary-section-bg " id="secondary-section-bg" data-rellax-speed="-4" style="background-image: url('https://d1fzhre25nnjsm.cloudfront.net/1124152225_6853_9957116.jpg');"><div
+class="tv no" ><div
+id="tv" class="screen mute" data-video="" ></div></div></div><div
+class="secondary-block-overlay " id="secondary-section" style=""></div>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="hero-shape"></hero-shape>
+<hero-shape
+class="logo-shape"></hero-shape><div
+class="secondary-block-content secondary-content secondary-content-header "><h1 id="hdrtitle">
+What Is Spiritual Birth?</h1></div></div><div
+id="30839srvcbar" class="mid-bar srvcbar secondary  hide-mid-bar "><div
+class="mid-bar-bg"></div><div
+class="mid-bar-overlay " id="mid-bar-overlay" style=""></div><div
+class="container mid-bar-content "><div
+class="mid-bar-secondary " id="MidBarMain"><h3><div
+class="mid-bar-icon ion-android-time" id="MidBarMain-midbar-icon"></div><span
+id="MidBarMaintitleShow">Services</span></h3><div
+class="mid-bar-text" >
+<span
+id="MidBarMainShow">Sunday - 930 Morning Worship - 1115 Sunday School | Wednesday - 7PM Prayer Meeting & Bible Study</span></div></div><div
+class="mid-bar-secondary " style="display:none" id="MidBarEditMain"><form
+name="frmMidBarMain" id="frmMidBarMain" method="post" action=""><h3><div
+class="mid-bar-icon ion-android-time" id="MidBarEditMain-midbar-edit-icon"><div
+class="icon-chooser">
+<a
+href="javascript:void(0);" class="service-bar-icon ion-home" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-person" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-person-stalker" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-android-time" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" active></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-chatbox" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-calendar" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-quote" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-location" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-map" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-android-phone-portrait" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-ios-bookmarks" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a>
+<a
+href="javascript:void(0);" class="service-bar-icon ion-android-warning" onclick="return change_icon_global('MidBarMain','MidBarEditMain',this);" ></a></div></div>
+<input
+class="form-control" id="MidBarMaintitle" name="MidBarMaintitle" value="Services"></h3><div
+class="mid-bar-text" >
+<input
+id="MidBarMaintxt" name="MidBarMaintxt" class="form-control" value="Sunday - 930 Morning Worship - 1115 Sunday School | Wednesday - 7PM Prayer Meeting & Bible Study">
+<input
+type="hidden" id="MidBarMainicon" name="MidBarMainicon" value="ion-android-time" /></div><div
+class="action-bar">
+<a
+href="javascript:void(0);" id="servicesCancel" class="action-bar-btn cancel" onclick="cancel_edit_rightmenu('MidBarMain','MidBarEditMain');">cancel</a>
+<a
+href="javascript:void(0);" id="servicesSave" class="action-bar-btn save" onclick="save_edit_rightmenu('MidBarMain','MidBarEditMain');">save</a></div></form></div></div></div><div
+id="SecondaryBlock18231Show"></div><div
+class="content-block block-box" id="SecondaryPage"><div
+class="content-block-bg"></div><div
+class="content-block-overlay " id="subpage-section" style=""></div><div
+class="container content secondary-content subpage-content "><div
+id="rowBlog8231" class="blog-item-container blog-list row "><div
+class="blog fr-view" id="frmBlogText8231"><div
+class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div
+class="blog-item-content"><div
+class="blog-specs-container"><div
+class="blog-specs"><h4><span
+class="glyphicon glyphicon-pencil"></span>by: <span
+id="authorby">Pastor David Huffstutler</span></h4></div><div
+class="blog-specs"><h4><span
+class="glyphicon glyphicon-calendar"></span>03/07/2021</h4></div><div
+class="blog-specs"><h4 ><span
+class="glyphicon glyphicon-comment"></span>0</h4></div></div>
+<span
+id="blogcontenttext8231"><p>&nbsp;&ldquo;Have you been born again?&rdquo; This question has been a popular way to ask someone whether or not he or she is a Christian. But what does this question mean?&nbsp;</p><p>The Bible sometimes uses birth as a metaphor to describe&nbsp;the impartation of God&rsquo;s life to the sinner. Without this life, we are otherwise dead in our sins, follow the world and Satan, and live for our own desires (Ephesians 2:1&ndash;3; cf. 2:4&ndash;5). We would be under the wrath of God and never enter His kingdom (John 3:3; Ephesians 2:3).&nbsp;</p><p>In&nbsp;a word, spiritual birth is&nbsp;regeneration. Other metaphors include creation (2 Corinthians&nbsp;5:17; Ephesians&nbsp;2:10; 4:24), resurrection (John 5:25), receiving a new a pure heart (Jeremiah&nbsp;24:7; Ezekiel&nbsp;36:26; Matthew&nbsp;5:8; cf. Deuteronomy5:29; 29:4), and experiencing a circumcision of the heart (Deuteronomy&nbsp;10:16; 30:6; Jeremiah&nbsp;9:25&ndash;26). Whatever the metaphor may be, the reception of God&rsquo;s life changes one&rsquo;s eternal destiny from perishing in the lake of fire to living forever in heaven. This life brings a present change as well&mdash;from living in sin to&nbsp;living for Christ and becoming more like Him&nbsp;(Colossians 3:9&ndash;10).</p><p>Sticking with the picture of spiritual birth (found in most of the Scriptures cited below), we can learn a bit about how we receive God&rsquo;s life and what happens as a result. This birth does not come about by one&rsquo;s heritage, desire, or the power of man (John 1:13; 3:3, 6). It is not the result of walking down an aisle, being baptized, praying a prayer, or attending services at a church. Instead, it is spiritual in nature and based upon the will and mercy of God (James 1:18; 1 Peter 1:3). It is an act of God (John 1:13; 3:3, 8) through His Spirit (John 3:5, 6, 8) that takes place with the sinner&rsquo;s acceptance of the gospel (1 Cor 4:15), which is the living and abiding Word of God (1 Peter&nbsp;1:23, 25; cf. James 1:18; 1 John 3:9). The one who is born by God believes that Jesus is the Christ and that He died to take the wrath of God&nbsp;upon Himself&nbsp;for our sins (1 John 5:1; cf. 1 John 4:10). The one born in this way knows&nbsp;God (1 John 4:7), loves&nbsp;the Father (1 John 5:1), and hopes&nbsp;in&nbsp;the&nbsp;resurrection (1 Peter 1:3). He loves others (1 John 4:7; 5:1), practices righteousness (1 John 2:29), and does not make a practice of sin (1 John 3:9; 5:18). He might be persecuted (Galatians&nbsp;4:29), but he overcomes the world through faith (1 John 5:4).&nbsp;and&nbsp;will be protected by the Son of God (1 John 5:18). He&nbsp;will&nbsp;one day&nbsp;see and enter the kingdom of God (John 3:3, 5).</p><p>If you are trusting in Christ alone for your salvation and your life has been transformed, you can know that God has imparted His life to you and that you have been born again.</p><p>All quotes ESV. Articles by Pastor Huffstutler are at davidhuffstutler.com</p>									   </span></div></div></div><div
+class="collapse" id="frmBlogShow8231"><div
+class="staff-add-bg form-bg" id="rowBlog"><div
+class="top-shadow"></div><div
+class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px;"><div
+class="row date-editor"><form
+id="frmBlog8231" name="frmBlog8231" method="post" action="" enctype="multipart/form-data">
+<a
+href="javascript:void(0);" class="blog-link col-lg-4 col-md-4 col-sm-4 col-xs-12" onclick="return choice_image('8231');"><div
+class="blog-item"><div
+id="blogbgimageEdit8231" class="blog-item-bg" style="background-image: url(https://d1fzhre25nnjsm.cloudfront.net/1124152225_6853_9957116.jpg);" ></div></div>
+</a><div
+class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="padding:20px;"><div
+class="row"><div
+class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div
+id="grpBlogTitle" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<label
+for="BlogTitle">Blog Title</label>
+<input
+class="form-control" id="BlogTitle" name="BlogTitle" placeholder="Enter Blog TItle" data-value="What Is Spiritual Birth?" value="What Is Spiritual Birth?"></div><div
+class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<label
+for="BlogAuthor">Author</label>
+<input
+class="form-control" id="BlogAuthor" name="BlogAuthor" placeholder="Enter an author's name" data-value="Pastor David Huffstutler" value="Pastor David Huffstutler"></div><div
+class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<label
+for="BlogModerator">Blog Moderator</label>
+<select
+id="BlogModerator" name="BlogModerator" class="form-control"><option
+value="" selected>Choose one...</option><option
+value="9964">Pastor David Huffstutler</option><option
+value="8426">Jen Hockema</option><option
+value="7742">Tim Williams</option><option
+value="6900">David Huffstutler</option><option
+value="6850">Rob Patrick</option>
+</select>
+<small
+style="margin-top: -2rem; display: block;">Blog comments will be sent to the moderator</small></div><div
+class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<label
+for="BlogPublish">Publish Date</label>
+<input
+class="form-control datepicker" id="BlogPublish" name="BlogPublish" placeholder="Select Date" data-date-format="mm/dd/yyyy" value="03/07/2021"></div><div
+class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<label>
+<input
+type="checkbox" name="allowcomment" id="allowcomment" value="T" > Allow Comments
+</label></div><div
+class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div
+id="blogcontent" style="min-height:200px;"><p>&nbsp;&ldquo;Have you been born again?&rdquo; This question has been a popular way to ask someone whether or not he or she is a Christian. But what does this question mean?&nbsp;</p><p>The Bible sometimes uses birth as a metaphor to describe&nbsp;the impartation of God&rsquo;s life to the sinner. Without this life, we are otherwise dead in our sins, follow the world and Satan, and live for our own desires (Ephesians 2:1&ndash;3; cf. 2:4&ndash;5). We would be under the wrath of God and never enter His kingdom (John 3:3; Ephesians 2:3).&nbsp;</p><p>In&nbsp;a word, spiritual birth is&nbsp;regeneration. Other metaphors include creation (2 Corinthians&nbsp;5:17; Ephesians&nbsp;2:10; 4:24), resurrection (John 5:25), receiving a new a pure heart (Jeremiah&nbsp;24:7; Ezekiel&nbsp;36:26; Matthew&nbsp;5:8; cf. Deuteronomy5:29; 29:4), and experiencing a circumcision of the heart (Deuteronomy&nbsp;10:16; 30:6; Jeremiah&nbsp;9:25&ndash;26). Whatever the metaphor may be, the reception of God&rsquo;s life changes one&rsquo;s eternal destiny from perishing in the lake of fire to living forever in heaven. This life brings a present change as well&mdash;from living in sin to&nbsp;living for Christ and becoming more like Him&nbsp;(Colossians 3:9&ndash;10).</p><p>Sticking with the picture of spiritual birth (found in most of the Scriptures cited below), we can learn a bit about how we receive God&rsquo;s life and what happens as a result. This birth does not come about by one&rsquo;s heritage, desire, or the power of man (John 1:13; 3:3, 6). It is not the result of walking down an aisle, being baptized, praying a prayer, or attending services at a church. Instead, it is spiritual in nature and based upon the will and mercy of God (James 1:18; 1 Peter 1:3). It is an act of God (John 1:13; 3:3, 8) through His Spirit (John 3:5, 6, 8) that takes place with the sinner&rsquo;s acceptance of the gospel (1 Cor 4:15), which is the living and abiding Word of God (1 Peter&nbsp;1:23, 25; cf. James 1:18; 1 John 3:9). The one who is born by God believes that Jesus is the Christ and that He died to take the wrath of God&nbsp;upon Himself&nbsp;for our sins (1 John 5:1; cf. 1 John 4:10). The one born in this way knows&nbsp;God (1 John 4:7), loves&nbsp;the Father (1 John 5:1), and hopes&nbsp;in&nbsp;the&nbsp;resurrection (1 Peter 1:3). He loves others (1 John 4:7; 5:1), practices righteousness (1 John 2:29), and does not make a practice of sin (1 John 3:9; 5:18). He might be persecuted (Galatians&nbsp;4:29), but he overcomes the world through faith (1 John 5:4).&nbsp;and&nbsp;will be protected by the Son of God (1 John 5:18). He&nbsp;will&nbsp;one day&nbsp;see and enter the kingdom of God (John 3:3, 5).</p><p>If you are trusting in Christ alone for your salvation and your life has been transformed, you can know that God has imparted His life to you and that you have been born again.</p><p>All quotes ESV. Articles by Pastor Huffstutler are at davidhuffstutler.com</p></div></div></div></div>
+<input
+type="hidden" id="cid" value="8231" />
+<input
+type="hidden" id="idblog" name="idblog" value="8231" />
+<input
+type="hidden" id="menuID" name="menuID" value="30839" />
+<input
+type="hidden" id="mediasrc" name="mediasrc" value="https://d1fzhre25nnjsm.cloudfront.net/1124152225_6853_9957116.jpg" />
+<a
+href="javascript:void(0);" class="btn btn-default" style="margin:20px 20px 0 0;" onclick="return cancel_show_form_blog_single('8231',true);"><span
+class="glyphicon glyphicon-remove"></span>cancel</a>
+<a
+id="btnSaveBlog8231" onclick="return save_form_blog_single('8231');" class="btn btn-primary"  style="margin:20px 20px 0 0;"><span
+class="glyphicon glyphicon-floppy-disk"></span>save</a></div></form></div></div><div
+class="bottom-shadow"></div></div></div></div><div
+class="col-lg-9 col-md-9 col-sm-9 col-xs-12 blog-comments">
+<a
+name="AreaComment" id="AreaComment"></a><div
+class="row"><div
+class="social-share-buttons pull-right">
+<a
+href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+<iframe
+src="//www.facebook.com/plugins/like.php?href=http://www.fbcrockford.org/blog//&amp;width=107&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=158006847554399" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:107px; height:21px;" allowTransparency="true"></iframe><div
+class="g-plusone" data-size="medium"></div> <script type="text/javascript">(function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/platform.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();</script> </div></div></div></div></div><div
+data-spy="affix" id="shareBlogSingle" ><div
+class="blog-social-box"><div
+class="blog-social-float"><div
+class="social-share-spacer"></div>
+<a
+href="javascript:open_window('https://www.facebook.com/sharer/sharer.php?u=https://www.fbcrockford.org/resources/blog/what-is-spiritual-birth/',600,400);" class="social-share-icon facebook" >
+<i
+class="ion-social-facebook" aria-hidden="true"></i>
+</a>
+<a
+href="javascript:open_window('https://twitter.com/share?url=https://www.fbcrockford.org/resources/blog/what-is-spiritual-birth/&related=&via=ChurchSpring&text=What Is Spiritual Birth?',600,400);" class="social-share-icon twitter" style="padding:10px;">
+<i
+class="cs-twitter-x" aria-hidden="true"></i>
+</a>
+<a
+href="javascript:void(0);" class="social-share-icon email" onclick="return pop_share_email();">
+<input
+type="hidden" id="sharetitle" name="sharetitle" value="What Is Spiritual Birth?" />
+<i
+class="ion-email" aria-hidden="true"></i>
+</a></div></div></div> <script src="/asset/ajax/blog.js?v=1.3"></script> <div
+id="SecondaryBlock28231Show"></div><footer
+class="footer" id="footer"><div
+class="footer-block-bg"></div><div
+class="footer-block-overlay " id="footer-section" style=""></div><div
+class="container footer-content "><div
+class="row"><div
+class="col-lg-3 col-md-3 col-sm-12 col-xs footer-column one"><div
+class="editable-field" id="ContactFooter"><h3><span
+id="ContactFootertxtShow">Contact Us</span></h3></div><div
+class="footer-column-content">
+815-395-0550<br>
+5304 Charles St<br>
+Rockford, IL 61108</div></div><div
+class="col-lg-3 col-md-3 col-sm-12 col-xs footer-column two"><div
+class="editable-field" id="SitemapFooter"><h3><span
+id="SitemapFootertxtShow">Sitemap</span></h3></div><ul
+id="footersitemap"><li><a
+href="/start-here/">Start Here</a></li><li><a
+href="/about-us/">About Us</a></li><li><a
+href="/resources/">Resources</a></li><li><a
+href="/sermons/">Sermons</a></li><li><a
+href="/contact-us/">Contact Us</a></li></ul></div><div
+class="col-lg-3 col-md-3 col-sm-12 col-xs footer-column three"><div
+class="editable-field" id="RecentPostsFooter"><h3><span
+id="RecentPostsFootertxtShow"></span></h3></div><ul><li><a
+href="/resources/blog/the-first-baptist-church-of-rockford-family-seminar/">The First Baptist Church of…</a></li><li><a
+href="/resources/blog/holding-the-ambitious-heart-in-check-part-2-of-2/">Holding the Ambitious Heart in…</a></li><li><a
+href="/resources/blog/holding-the-ambitious-heart-in-check-part-1-of-2/">Holding the Ambitious Heart in…</a></li><li><a
+href="/resources/blog/contending-for-the-faith-jude-3-4-part-2-of-2/">Contending for the Faith: Jude…</a></li><li><a
+href="/resources/blog/contending-for-the-faith-jude-3-4-part-1-of-2/">Contending for the Faith: Jude…</a></li></ul></div><div
+class="col-lg-3 col-md-3 col-sm-12 col-xs footer-column four"><div
+class="editable-field" id="EventsFooter"><h3><span
+id="EventsFootertxtShow"> Services</span></h3></div><ul><li><a
+href="/start-here/weekly-schedule/weekly-events/detail/mid-week-prayer-service/50717-1705471200/">Mid-week Prayer Service</a></li><li><a
+href="/start-here/weekly-schedule/weekly-events/detail/morning-worship-service/29337-1705816800/">Morning Worship Service</a></li><li><a
+href="/start-here/weekly-schedule/weekly-events/detail/christian-life-hour/29338-1705816800/">Christian Life Hour</a></li><li><a
+href="/start-here/weekly-schedule/weekly-events/detail/afternoon-service/61865-1705816800/">Afternoon Service</a></li><li><a
+href="/start-here/weekly-schedule/weekly-events/detail/mid-week-prayer-service/50717-1706076000/">Mid-week Prayer Service</a></li></ul></div></div><div
+class="row footer-bottom"><div
+class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-copyright"><div
+id="login-tut" class="tut-box" style="display:none;"><div
+class="tut-arrow-bottom"></div><div
+class="pointer-bar"><div
+class="pointer-dot"></div></div><div
+id="main-nav-tut1" style="display:block;"><div
+class="modal-body"><h2>Administration Login:</h2><p>The "Admin" link below is how you will access administration area which allows you to manage your website. Your login credentials were sent to you via email at the time of purchase.</p></div><div
+class="modal-footer">
+<a
+href="javascript:void(0);"  onclick="toggle_visibility('login-tut'); show_login_form();" class="btn btn-primary pull-right">Login Now</a>
+<a
+href="javascript:void(0);"   onclick="toggle_visibility('login-tut'); " class="btn btn-default pull-right">Dismiss</a></div></div></div>
+&copy; 2024 All Rights Reserved  ·  First Baptist Church of Rockford  ·  <a
+href="/privacy-policy/">Privacy Policy</a> · <a
+onclick="show_login_form();" href="javascript:void(0);">Admin</a></div><div
+class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-social">
+<a
+href="https://www.facebook.com/firstbaptistrockford" class="social-icon" target="_blank"><span
+class="ion-social-facebook"></span></a>
+<a
+href="https://twitter.com/FBCRockford" class="social-icon" target="_blank"><span
+class="cs-twitter-x"></span></a></div><div
+class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-logo editable-field"><div
+class="logo-container inactive" id="FooterLogo">
+<span>powered by</span>
+<a
+href="https://churchspring.com" class="cs-logo icon-cs-logo"></a></div></div></div></div>
+</footer></div>
+<style>.SEO_style {
+        width: 100%;
+        word-break: break-all;
+    }</style><div
+class="modal fade" id="EvenRegModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog modal-width-40"><div
+class="modal-content"><div
+class="modal-body clearfix">
+<a
+href="javascript:();" class="close-x" data-dismiss="modal">
+<span
+class="ion-close"></span>
+</a><h2>Register for this event</h2><form
+id="regEventFrmModal" name="regEventFrmModal" action="" method="POST"><div
+class="row"><div
+id="grpFirstname" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<label
+for="Firstname">First Name</label>
+<input
+class="form-control input-lg" id="Firstname" name="Firstname"
+placeholder="First name"></div><div
+id="grpLastname" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<label
+for="Lastname">Last Name</label>
+<input
+class="form-control input-lg" id="Lastname" name="Lastname" placeholder="Last name"></div><div
+id="grpEmail" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<label
+for="Email">Email Address</label>
+<input
+class="form-control input-lg" id="Email" name="Email" placeholder="Email"></div><div
+id="grpcomments" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<label
+for="comments">Comments</label><textarea id="comments" name="comments" class="form-control input-lg" rows="3"></textarea></div></div></form></div><div
+class="modal-footer">
+<input
+type="hidden" id="eventIDreg" name="eventIDreg" value=""/>
+<button
+type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+<button
+type="button" class="btn btn-primary" onclick="return process_event_register(this);">Register
+</button></div></div></div></div><div
+class="modal fade" id="EvenRegModalThanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body clearfix">
+<a
+href="javascript:();" class="close-x" data-dismiss="modal">
+<span
+class="ion-close"></span>
+</a><h1 class="text-center" style="font-size: 80px; margin-top: 0px;"><i
+class="ion-thumbsup"
+aria-hidden="true"></i></h1><h2 class="no-top-margin text-center"> Thanks for registering!</h2><h4 class="no-top-margin text-center">Your registration has been received.</h4></div></div></div></div><div
+class="modal fade" id="FacbookPageSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true"><div
+class="modal-dialog" style="width: 65%;"><div
+class="modal-content"><div
+class="modal-body"><div
+class="fb-select-container"><div
+class="fb-select-icon personal">
+<span
+class="ion-social-facebook"></span></div><div
+class="fb-select-icon page">
+<span
+class="ion-flag"></span></div><div
+class="fb-select-icon group">
+<span
+class="ion-person-stalker"></span></div></div></div></div></div></div><div
+class="modal fade" id="fbtwitterAuth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true"><div
+class="modal-dialog" style="width: 65%;"><div
+class="modal-content"><div
+class="modal-body">
+<button
+type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><iframe
+name="fbtwitterauthURL" id="fbtwitterauthURL" src="" frameborder="0" scrolling="no" width="100%"
+height="400" marginwidth="5" marginheight="5"></iframe></div></div></div></div><div
+class="modal fade" id="EmailShare" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body clearfix">
+<a
+href="javascript:();" class="close-x" data-dismiss="modal">
+<span
+class="ion-close"></span>
+</a><form
+name="frmEmailShare" class="" id="frmEmailShare" action="" method="post"><h2 class="no-top-margin"><i
+class="ion-email" aria-hidden="true"></i> Email a Friend</h2><div
+id="grpTo" class="control-group"><div
+class="controls">
+<input
+type="text" class="form-control input-lg" placeholder="To Email:" id="To" name="To"></div></div><div
+id="grpFromEmail" class="control-group"><div
+class="controls">
+<input
+type="email" class="form-control input-lg" placeholder="From Email:" id="FromEmail"
+name="FromEmail"></div></div><div
+id="grpSubject" class="control-group"><div
+class="controls">
+<input
+type="text" class="form-control input-lg" placeholder="Subject:" id="Subject"
+name="Subject" value="Check out this article - [Article Title]"></div></div><div
+id="grpMessage" class="control-group"><div
+class="controls"><textarea rows="5" cols="100" class="form-control" placeholder="Message" id="Message"
+                                      name="Message" minlength="5" data-validation-minlength-message="Min 5 characters"
+                                      style="resize:none"></textarea></div></div><h5 style="font-weight:400 !important; word-wrap:break-word;">URL: https://www.fbcrockford.org/resources/blog/what-is-spiritual-birth/</h4><div
+id="success" style="display:none"></div>
+<span
+style="display:none">
+<input
+id="urlshare" name="urlshare" value="https://www.fbcrockford.org/resources/blog/what-is-spiritual-birth/"/>
+<input
+type="checkbox" id="secure" name="secure" value="spam">
+</span>
+<button
+id="btnEmailShare" name="btnEmailShare" class="btn btn-lg btn-primary pull-right"
+style="margin:20px 0px 0px 0px;" onclick="return submit_email_share_form();">Send
+</button></form></div></div></div></div><div
+class="modal fade" id="EmailShareThanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body clearfix">
+<a
+href="javascript:();" class="close-x" data-dismiss="modal">
+<span
+class="ion-close"></span>
+</a><h1 class="text-center" style="font-size: 80px; margin-top: 0px;"><i
+class="ion-thumbsup"
+aria-hidden="true"></i></h1><h2 class="no-top-margin text-center" style="font-weight: 800 !important; text-transform: uppercase;">
+Thanks for sharing!</h1><h3 class="no-top-margin text-center">Your email has been sent.</h2></div></div></div></div><div
+class="modal fade" id="Modal-Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-header">
+<button
+type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h2 class="modal-title">Login</h2></div><div
+id="Login"><div
+class="modal-body"><div
+id="frmLoginError" class="alert alert-danger">Invalid login info</div><div
+class="login-box-container "><div
+class="login-box-column"><form
+id="frmLogin" name="frmLogin" action="" method="post"><div
+class="form-group" id="grpuser">
+<input
+type="email" class="form-control has-success input-lg"
+onKeyPress="return changeFocus(event,this.form,false,'btnLogin');" id="usr"
+name="usr" placeholder="Enter email" value=""></div><div
+class="form-group" id="grppass"><input
+type="password" class="form-control input-lg" id="pass" name="pass"
+placeholder="Password"
+onKeyPress="return changeFocus(event,this.form,true,'btnLogin');" value=""></div>
+<a
+href="javascript:void(0);" type="button" id="btnLogin"
+class="btn btn-lg btn-primary btn-block login">Login</a>
+<a
+href="javascript:void(0);" id="btnForgotPass" class="login-bottom-link pull-left">forgot
+password?</a></form></div><div
+class="login-divider"><div
+class="login-or">or</div></div><div
+class="login-box-column right"><button
+onclick="fb_login();" type="button"
+class="btn btn-block btn-lg login-social facebook">
+<ion-icon
+name="logo-facebook"></ion-icon>
+<span>Login with Facebook</span></button><button
+onclick="tw_login();" type="button"
+class="btn btn-block btn-lg login-social twitter"><i
+class="ion-social-twitter"
+aria-hidden="true"></i>Login
+with Twitter
+</button><a
+href="javascript:void(0);" id="btnCreateAccount"><h3>Don't have an account? Request
+one!</h3></a></div></div></div></div><div
+id="Forgot" style="display:none;"><div
+class="modal-body"><form
+id="frmForget" name="frmForget" action="" method="post">
+Enter your email below and a new password will be sent to you. After you login with this new
+password you can change it in the settings area.<div
+class="form-group" id="grpResetPassword">
+<label
+for="ResetPassword">Email</label>
+<input
+type="email" class="form-control" id="ResetPassword" name="ResetPassword"
+placeholder="Enter your email address" value="">
+<input
+type="email" class="form-control casper" autocomplete="off" id="ResetPasswordemail"
+name="ResetPasswordemail" placeholder="Enter your email address" value="">
+<input
+id="statusform" name="statusform" type="checkbox" value="Yes"
+class="form-control casper"/>
+<small><span
+id="lgnerrmsg" class="lgnerrmsg hide">* An account for this email address does not exist.</span></small></div></form></div><div
+class="modal-footer">
+<button
+type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+<a
+href="javascript:void(0);" type="button" id="btnResetPass" class="btn btn-primary">Reset
+Password</a></div></div><div
+id="Confirm" style="display:none;"><div
+class="modal-body"><h3>Your New Password Has Been Sent!</h3><hr/>
+We have just sent an email containing a new password to login. You can always change this password
+by logging in and visiting the settings page.</div><div
+class="modal-footer">
+<button
+type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div></div></div></div></div><div
+class="modal fade" id="Modal-CreateAccount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-header">
+<button
+type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h2 class="modal-title">Request an Account</h2></div><div
+class="modal-body clearfix"><form
+id="frmlgnCreateUser" name="frmlgnCreateUser" action="" method="post"><div
+class="row"><div
+class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div
+id="grpFirstName" class="form-group">
+<label
+for="FirstName">First Name</label>
+<input
+class="form-control input-lg" id="FirstName" name="FirstName"
+placeholder="Enter First Name" value=""></div></div><div
+class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div
+id="grpLastName" class="form-group">
+<label
+for="LastName">Last Name</label>
+<input
+class="form-control input-lg" id="LastName" name="LastName"
+placeholder="Enter Last Name" value="">
+<input
+class="form-control input-lg casper" id="LastNameUsr" name="LastNameUsr"
+placeholder="Enter Last Name User" value="">
+<input
+id="statusformreq" name="statusformreq" type="checkbox" value="Yes"
+class="form-control casper"/></div></div><div
+class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div
+id="grpEmail" class="form-group">
+<label
+for="LastName">Email</label>
+<input
+class="form-control input-lg" id="Email" name="Email" placeholder="Enter Email"
+value="" onblur="return check_username_exist(this);"><div
+class="invalid-tooltip" id="emailvalidationloginpop">
+A person with this email already exists</div></div></div><div
+class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div
+id="grpPassword" class="form-group">
+<label
+for="Password">Password</label>
+<input
+type="password" class="form-control input-lg" id="Password" name="Password"
+placeholder="Enter Password"></div></div></div>
+<input
+type="hidden" id="gtokspot" name="gtokspot" value=""/>
+<input
+type="hidden" id="uid" name="uid" value=""/>
+<a
+href="javascript:void(0);" type="button" class="btn btn-lg btn-primary btn-block "
+id="btnlgnCreateAccount" style="width:100%; margin-top:15px;">Create Account</a><div
+class="login-divider margin-bottom-0"><div
+class="login-or">or</div></div><button
+onclick="fb_login();" type="button" class="btn btn-block btn-lg login-social facebook">
+<ion-icon
+name="logo-facebook" role="img" class="hydrated"
+aria-label="logo facebook"></ion-icon>
+<span>Login with Facebook account </span></button><button
+onclick="tw_login();" type="button" class="btn btn-block btn-lg login-social twitter"><i
+class="ion-social-twitter" aria-hidden="true"></i>Login with Twitter account
+</button></form></div></div></div></div><div
+class="modal fade" id="Modal-CreateAccountThankyou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-header">
+<button
+type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3 class="modal-title">Create an Account</h3></div><div
+class="modal-body clearfix">
+Your request for an account has been received. Once this information is moderated you will receive an
+email with your account details.</div><div
+class="modal-footer">
+<button
+type="button" class="btn btn-default" data-dismiss="modal">OK</button></div></div></div></div><div
+class="modal fade" id="WelcomeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body"><h2>Welcome to your new website!</h2><p>We are excited you've joined the ChurchSpring family! It is our desire to come along side your
+ministry as you seek to reach the world for Christ. We would like to take you through a quick
+tutorial to get you on your way. Click continue to get started.</p></div><div
+class="modal-footer">
+<a
+href="javascript:void(0);" data-dismiss="modal"
+onclick="toggle_visibility('login-tut');return scroll_to('footer');"
+class="btn btn-primary pull-right">Continue</a></div></div></div></div><div
+class="modal fade" id="MaxNavItems" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body"><h2>Maximum Navigation Items Reached</h2><p>You have reached the limit of 6 main level navigation items. You can always rename or delete your
+existing main nav items to better organize your content. Consider adding pages to the sub navigation
+menus as well.</p></div><div
+class="modal-footer">
+<a
+href="javascript:void(0);" data-dismiss="modal" class="btn btn-primary pull-right">Ok</a></div></div></div></div><div
+style="z-index:999999999 !important;" class="modal fade" id="generalRemove" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body"><h3 id="genAskAfterContent" style="text-transform: none;"><span
+id="genAsk">Are you sure you want to delete this item?</span></h3></div><div
+class="modal-footer">
+<input
+type="hidden" id="genPK" name="genPK" value=""/>
+<input
+type="hidden" id="genAct" name="genAct" value=""/>
+<input
+type="hidden" id="genURL" name="genURL" value="/resources/blog/what-is-spiritual-birth/"/>
+<button
+type="button" class="btn btn-default" data-dismiss="modal">No</button>
+<a
+id="genOk" class="btn btn-primary" data-dismiss="modal">Yes</a></div></div></div></div><div
+style="z-index:99999999" class="modal fade" id="NotificationModal" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body"><h3><span
+id="NotifText">Notification Text</span></h3></div><div
+class="modal-footer">
+<a
+class="btn btn-primary" data-dismiss="modal"><span
+id="NotifButton">Dismiss</span></a></div></div></div></div><div
+style="z-index:999999999" class="modal fade" id="GeneralNotificationModal" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body"><h3 style="text-transform: none;"><span
+id="NotifText">Notification Text</span></h3><p><span
+id="NotifContent">content</span></p></div><div
+class="modal-footer">
+<a
+class="btn btn-primary" data-dismiss="modal"><span
+id="NotifButton">Dismiss</span></a></div></div></div></div><div
+class="modal fade" id="SavingModal" tabindex="-1" role="dialog" aria-labelledby="mySavingModal"
+aria-hidden="true"><div
+class="modal-dialog"><div
+class="modal-content"><div
+class="modal-body"><div
+class="saving-icon"><i
+class="ion-load-c"></i></div><div
+class="saving-text"><span
+id="txtNotif">Saving</span></div></div></div></div></div><div
+id="domMessage" style="display:none;z-index:999999"><h3>We are processing your request. Please do not click anything until this process is completed. <br/>Thank you.</h3></div><input
+type="hidden" id="CurrPath" name="CurrPath" value=""/><div
+class="modal fade gallery-modal" id="GalleryPopModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div
+class="modal-dialog" role="document"><div
+class="modal-content"><div
+class="modal-body">
+<a
+href="javascript:void(0);" class="modal-close-icon" data-dismiss="modal"><span
+class="ion-close"></span></a>
+<img
+id="galpopsrc" src="" class="img-responsive"></div><div
+class="modal-footer" id="galpopcap">
+&nbsp;</div></div></div></div><div
+class="modal fade" id="LoadingModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+aria-labelledby="LoadingModal"><div
+class="modal-dialog modal-dialog-centered processing-modal" role="document"><div
+class="modal-content"><div
+class="modal-body text-center"><h5>Processing...</h5></div></div></div></div><div
+class="modal fade" id="AddGroupMember" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+aria-labelledby="AddGroupMember"><div
+class="modal-dialog transparent" role="document"><div
+class="modal-content"><div
+class="modal-body text-center"><div
+class="card profile member">
+<button
+id="closeAddGroupMember" class="close" data-dismiss="modal" aria-label="Close">
+<span><ion-icon
+name="close" role="img" class="md hydrated"
+aria-label="close"></ion-icon></span>
+</button>
+<photo
+id="addMemberPhoto"
+style="background-image: url(/asset/img/user-profile0.jpg)" class="photo">
+</photo><div
+class="add-group-member"><div
+class="form-group margin-top-1">
+<input
+type="text" class="form-control" id="addMemberName"
+placeholder="Enter someone's name" autocomplete="off" name="addMemberName">
+<input
+type="hidden" id="addMemberId" name="addMemberId">
+<autocomplete
+class="inactive" id="acLeaderField2">
+<a
+href="javascript:void(0);" class="btn btn-secondary btn-sm" id="acCancel">cancel</a>
+</autocomplete></div><div
+id="btnToolbar" class="btn-bar hide"><div
+class="d-flex align-items-center">
+<a
+href="javascript:void(0);" class="btn btn-sm margin-0 margin-left-1 btn-secondary"
+id="assignCancel2">cancel</a> &nbsp;
+<a
+href="javascript:void(0);"
+class="btn btn-sm margin-0 margin-left-1 btn-primary disabled" style="width: 100%"
+id="assignSave2">Add Member</a></div></div></div></div></div></div></div></div><div
+class="modal fade" id="RemoveGroupMember" tabindex="-1" role="dialog" aria-labelledby="RemoveGroupMember"><div
+class="modal-dialog" role="document"><div
+class="modal-content"><div
+class="modal-body">
+<a
+href="javascript:void(0);" class="modal-close-icon" data-dismiss="modal"><span
+class="ion-close"></span></a><h3 class="modal-titl text-center">Are you sure you want to remove this member?</h3><p
+class="text-center">Removing this person from the group will not remove them from the system. You can
+add them back at any time.</p>
+<input
+type="hidden" id="removePeopleGroupId"></div><div
+class="modal-footer text-center">
+<button
+type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+<button
+type="button" id="btnRemoveGroupMember" class="btn btn-primary" onclick="removeGroupPeople()">
+Remove
+</button></div></div></div></div><div
+class="modal fade" id="GroupMessageModal" tabindex="-1" role="dialog" aria-labelledby="GroupMessage"><div
+class="modal-dialog" role="document"><div
+class="modal-content"><form
+id="GroupMessageForm" onsubmit="return sendGroupMessage()"><div
+class="modal-body">
+<a
+href="javascript:void(0);" class="modal-close-icon" data-dismiss="modal"><span
+class="ion-close"></span></a><h3>Message <span
+id="GroupMessageName"></span> Members</h3><div
+class="form-group margin-top-1">
+<input
+required type="text" class="form-control input-lg" id="groupMessageSubject"
+placeholder="Enter subject" autocomplete="off" name="groupMessageSubject"></div><div
+class="form-group margin-top-1"><textarea required type="text" class="form-control input-lg" id="groupMessageContent"
+                                  placeholder="Message content" autocomplete="off" name="groupMessageContent"
+                                  rows="10"></textarea></div></div><div
+class="modal-footer text-center">
+<button
+type="reset" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+<button
+type="submit" class="btn btn-primary">Send</button></div></form></div></div></div><div
+class="modal fade" id="RequestGroupMessage" tabindex="-1" role="dialog" aria-labelledby="RequestGroupMessage"><div
+class="modal-dialog" role="document"><div
+class="modal-content"><form
+id="GroupRequestMessageForm" onsubmit="return sendRequestMessage()"><div
+class="modal-body">
+<a
+href="javascript:void(0);" class="modal-close-icon" data-dismiss="modal"><span
+class="ion-close"></span></a><h3>Request Information</h3><div
+class="form-group">
+<input
+type="text" class="form-control input-lg margin-0" id="requestGroupMessageUserName"
+placeholder="Name" autocomplete="off" name="requestGroupMessageUserName" required></div><div
+class="form-group">
+<input
+type="email" class="form-control input-lg margin-0" id="requestGroupMessageUserEmail"
+placeholder="Email Address" autocomplete="off" name="requestGroupMessageUserEmail"
+required></div><div
+class="form-group"><textarea type="text" class="form-control input-lg margin-0" id="requestGroupMessageContent"
+                                  placeholder="Message content" autocomplete="off" name="groupMessageContent"
+                                  rows="10" required></textarea></div></div><div
+class="modal-footer text-center">
+<button
+type="reset" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+<button
+type="submit" class="btn btn-primary">Send</button></div></form></div></div></div><div
+class="modal fade" id="GroupMessageThanks" tabindex="-1" role="dialog" aria-labelledby="GroupMessageThanks"><div
+class="modal-dialog" role="document"><div
+class="modal-content"><div
+class="modal-body">
+<a
+href="javascript:void(0);" class="modal-close-icon" data-dismiss="modal"><span
+class="ion-close"></span></a><h1 class="text-center text-green">
+<ion-icon
+name="checkmark-circle"></ion-icon></h1><h3 class="modal-titl text-center">Your message has been sent!</h3></div><div
+class="modal-footer"></div></div></div></div> <script>var map;
+	/*function initMap() {
+		if($('#map-section-bg').length) {
+			if($('#map-section-bg').parent('.hide-block').length == 0) {
+				get_googlemap_location_20('5304 Charles St Rockford, IL 61108','map-section-bg');
+			}
+		}
+  }*/</script> <input
+type="hidden" id="route" name="route" value="resources/blog" />
+<input
+type="hidden" id="newroute" name="newroute" value="" /> <script>var lazyloadsetup = false;
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200){
+		$('.navbar').addClass("shrink");
+		$('.preview-header.top-bar').addClass("reveal");
+		if (lazyloadsetup == false) {
+			$('.lazy-scroll').lazy({bind: "event"});
+			$('.lazy').lazy({bind: "event"});
+			lazyloadsetup = true;
+		}
+    }
+    else{
+		$('.navbar').removeClass("shrink");
+		$('.preview-header.top-bar').removeClass("reveal");
+    }
+});</script>  <script>function getBackground(jqueryElement) {
+		// Is current element's background color set?
+		var color = jqueryElement.css("background-color").replace(" ", "");
+
+		color = color.replace("(", "");
+		color = color.replace(/,/g, "");
+		color = color.replace(")", "");
+		color = color.replace(/ /g, "");
+
+		$('.btn-primary').addClass(color);
+		$('.btn-default').addClass(color);
+		if (color == 'rgba(0, 0, 0)') {
+			// if so then return that color
+			//return color;
+			$('.btn-primary').addClass('strike');
+		}
+
+	}
+
+$(function() {
+    getBackground($(".btn-primary"));
+});</script>  <script language="javascript">var refTagger = {
+		settings: {
+			bibleVersion: "ESV",
+			dropShadow: true, 
+			noSearchClassNames: ["navbar-block","hero", "rtTooltipHeader"],		
+			//noSearchTagNames: ["form"],	
+			socialSharing: [],
+			tagChapters: true
+		}
+	};
+	(function(d, t) {
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = "//api.reftagger.com/v2/RefTagger.js";
+		s.parentNode.insertBefore(g, s);
+	}(document, "script"));
+
+	$(document).ready(function(){
+		$('a[class^="rtBibleRef"]').each(function(){
+			$(this).attr('data-version','ESV');
+		});
+	});</script>  <script>var xid = '1124';</script> <input
+type="hidden" id="cmlgn" name="cmlgn" value="https://apps.churchspring.com/ajax/singleon-login/"/>
+<input
+type="hidden" id="churchspringsite" name="churchspringsite" value="https://signup.churchspring.com"/><style id="customGlobalCSS">.navbar-brand {
+min-height:125px;
+}
+.home-block.event-block .event-carousel .item .container .row .event-item-container .event-item .event-item-content span {
+color:#ffff;
+}
+ .members-login {
+display:none !important;
+}
+
+.fr-view img {
+margin:0px !important;
+}
+
+
+body {
+overflow:visible !important;
+}</style></body></html> <script type="text/javascript" src="https://d3hjjij7h4i3lg.cloudfront.net/asset/js/rellax.min.js"></script><script src="https://d3hjjij7h4i3lg.cloudfront.net/asset/js/2.0/bootstrap.min.js"></script><script src="https://d3hjjij7h4i3lg.cloudfront.net/asset/js/range-slider.js?v=1.4"></script> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> <script src="/asset/js/merged.js?v=2.34"></script> <script src="/asset/js/merged2.js?v=1.1"></script> <script src="/asset/js/merged3.js?v=2.1"></script> <script type="text/javascript" src="https://d3hjjij7h4i3lg.cloudfront.net/asset/js/jquery.lazy.min.js"></script> <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script> <script>var mapcalled = false;
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200){
+		if($('#map-section-bg').length && mapcalled == false) {
+			mapcalled = true;
+			if($('#map-section-bg').parent('.hide-block').length == 0) {
+				initAppleMap('5304 Charles St Rockford, IL 61108','map-section-bg');
+			}
+		}
+	}
+});</script> <style type="text/css">.fr-view img.fr-dii.fr-fil {
+	margin: 5px 18px 5px 0;
+}</style>
+ <script defer src="/asset/ajax/giving.js?v=1.7"></script> <script type="text/javascript" src="/asset/js/jquery.mask.min.js"></script>

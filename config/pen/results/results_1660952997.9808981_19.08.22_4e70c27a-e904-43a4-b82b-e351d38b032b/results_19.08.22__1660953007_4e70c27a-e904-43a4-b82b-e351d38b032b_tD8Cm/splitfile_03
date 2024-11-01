@@ -1,0 +1,53 @@
+# Playbook for (require 'clojure-mode)
+(require 'cider)
+(require 'ob-clojure)
+
+(require 'clomacs)
+
+(if (inside-docker-p)
+    (setq cider-lein-command "pen-lein"))
+
+(setq cider-auto-jump-to-error nil)
+(setq cider-repl-pop-to-buffer-on-connect nil)
+
+(pen-with 'cider
+          ;; Fixes super annoying message
+          (setq cider-allow-jack-in-without-project t))
+
+(defun pen-4clojure-check-and-proceed ()
+  "Check the answer and show the next question if it worked."
+  (interactive)
+  (let ((result (4clojure-check-answers)))
+    (unless (string-match "failed." result)
+       (4clojure-next-question))))
+---
+- name: Install dependencies
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Install dependencies
+      apt:
+        name:
+          - clojure
+          - clojure-dev
+          - leiningen
+          - nodejs
+          - npm
+          - ruby
+          - ruby-dev
+          - libxml2-dev
+          - libxslt1-dev
+          - libsqlite3-dev
+          - sqlite3
+          - libcurl4-openssl-dev
+          - libffi-dev
+          - libssl-dev
+          - libreadline-dev
+          - libyaml-dev
+          - libsqlite3-dev
+          - libxml2-dev
+          - libxslt1-dev
+          - libffi-dev
+          - libssl-dev
+          - python-dev

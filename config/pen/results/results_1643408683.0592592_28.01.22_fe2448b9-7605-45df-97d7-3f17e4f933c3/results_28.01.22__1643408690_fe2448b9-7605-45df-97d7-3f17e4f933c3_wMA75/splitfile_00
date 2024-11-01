@@ -1,0 +1,11 @@
+cd 'harrys adventures'
+» ls
+ harry.txt      harry-potter.txt  harry-potter-2.txt  harry-potter-3.txt
+» cd ..
+» cd core
+» ls
+ clipboard.txt  stop-reason.txt
+» cd ..
+» cd 'harrys adventures'
+» ls
+ harry.txt      harry-potter.txt  harry-potter-

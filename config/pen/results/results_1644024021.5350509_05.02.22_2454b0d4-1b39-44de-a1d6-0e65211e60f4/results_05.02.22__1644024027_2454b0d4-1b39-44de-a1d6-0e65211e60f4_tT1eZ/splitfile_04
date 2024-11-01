@@ -1,0 +1,12 @@
+
+
+def __init__(self):
+
+self.target_folder = "."
+
+self.base64_image = None
+
+self.base64_image_dir = "./output/"
+
+
+def on_set

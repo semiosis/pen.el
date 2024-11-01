@@ -1,0 +1,13 @@
+
+EOD
+
+cat draft.text <<EOD
+The human figure with the head upwards represents the Divine Mind, the symbol of the
+Supreme Being in his aspect of Truth and Knowledge.
+The human figure with the head downwards represents the human mind, that is to say, the
+thought-power of man.
+The human figure with the head to the left represents the Left Hand, that is to say, the
+power of perception and comprehension.
+The human figure with the head to the right represents the Right Hand, that is to say, the
+power of action and creation.
+EOD

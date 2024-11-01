@@ -1,0 +1,13 @@
+
+
+main :: IO ()
+main = do
+
+-- Generate the weather forecast
+
+generateForecast :: IO [Int]
+generateForecast = do
+
+-- Lets get into the car!
+
+driveToSchool

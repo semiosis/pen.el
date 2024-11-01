@@ -1,0 +1,55 @@
+# -*- mode: snippet -*-
+# name: edit-args-examples
+# group: args
+# key: argedit
+# --
+#!/bin/bash
+export TTY
+
+a=("\$@")
+
+echo 0
+cmd "\$@" | awk 1
+
+echo 1
+set --
+cmd "\$@" | awk 1
+
+echo 2
+set -- "\${a[@]}"
+cmd "\$@" | awk 1
+
+echo 3
+eval "set -- \$(cmd "\$@" | sed "s/ -- .*//")"
+b=("\$@")
+cmd "\$@" | awk 1
+
+echo 4
+set -- "\${a[@]}"
+cmd "\$@" | awk 1
+
+echo 5
+eval "set -- \$(cmd "\$@" | sed "s/.* --//")"
+c=("\$@")
+cmd "\$@" | awk 1
+
+# Copy c
+cc=("\${c[@]}")
+
+# Set the arguments to this range
+set -- {1..10};
+
+args=("\$@"); unset 'args[4]'
+
+printf '<%s>' "\${args[@]}"
+echo
+printf '<%s>' "\${@}"
+
+# restore
+set -- "\${args[@]}"
+echo
+printf '<%s>' "\${@}"
+
+# use array instead
+args=("\$@");
+cmd "\${args[@]}"

@@ -1,0 +1,5 @@
+cd /root/notes;  "Luke" "11:1-4" "#" "<==" "zsh"
+cd //;  "Luke" "22:41-42" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Luke" "10:21-22" "#" "<==" "zsh"
+cd /root/notes;  "Luke" "4:18" "#" "<==" "zsh"
+cd /root/notes;  "Luke" "7:22" "#" "<==" "zsh"

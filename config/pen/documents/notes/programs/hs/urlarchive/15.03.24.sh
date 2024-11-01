@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "urlarchive" "-d" "15.03.24" "https://star.net.nz/the-word-for-today" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "urlarchive" "-d" "15.03.24" "https://star.net.nz/the-word-for-today" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "urlarchive" "-d" "15.03.24" "https://star.net.nz/the-word-for-today" "#" "<==" "zsh"
+cd /;  "urlarchive" "-d" "15.03.24" "https://star.net.nz/the-word-for-today" "#" "<==" "upd"
+cd /;  "urlarchive" "-d" "15.03.24" "https://star.net.nz/the-word-for-today" "#" "<==" "upd"
+cd /;  "urlarchive" "-d" "15.03.24" "https://star.net.nz/the-word-for-today" "#" "<==" "today"
+cd /;  "urlarchive" "-d" "15.03.24" "https://star.net.nz/the-word-for-today" "#" "<==" "today"

@@ -1,0 +1,5 @@
+
+"emacs" is a program that lets you edit text.
+It does this by taking keyboard input from you.
+When you press a key, which tells it a certain action, it does something like "deleting a character" or "inserting text".
+

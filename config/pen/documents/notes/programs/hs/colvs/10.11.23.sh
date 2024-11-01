@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_c9e77b4c04_romans-12-1-2.txt" "#" "<==" "pen-xa"
+cd /volumes/home/shane/notes;  "colvs" "-nls" "-num" "/root/.pen/tmp/tf_temp_e56a0ca2da_john-2-13-22.txt" "#" "<==" "pen-xa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"
+cd /root/.pen/documents/notes;  "colvs" "#" "<==" "pa"
+cd /root/.emacs.d/host/pen.el/config;  "colvs" "#" "<==" "pa"

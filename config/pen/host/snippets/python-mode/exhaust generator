@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: exhaust generator
+# group: 
+# key: exhaust
+# --
+list(doc.noun_chunks)
+[c for c in doc.noun_chunks]

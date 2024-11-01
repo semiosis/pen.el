@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nasb" "John" "1:18" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nasb" "John" "14:10" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nasb" "John" "14:6" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nasb" "John" "1:1" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "nasb" "Philippians" "2:12" "#" "<==" "zsh"

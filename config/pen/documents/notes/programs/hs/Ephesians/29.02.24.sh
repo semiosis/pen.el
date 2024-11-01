@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Ephesians" "4:17-24" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Ephesians" "5:25" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Ephesians" "5:32" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Ephesians" "5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Ephesians" "5:25-27" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Ephesians" "5:25" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Ephesians" "5:25-27" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Ephesians" "5:25" "#" "<==" "withopts"

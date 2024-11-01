@@ -1,0 +1,4 @@
+1. This is a function that takes two arguments, s and col
+2. It then returns a function that takes one argument
+3. It then returns true if the argument is equal to any element in the collection
+

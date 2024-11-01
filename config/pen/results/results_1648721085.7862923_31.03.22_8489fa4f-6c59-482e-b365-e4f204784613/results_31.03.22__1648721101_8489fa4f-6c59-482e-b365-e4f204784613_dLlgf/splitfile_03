@@ -1,0 +1,16 @@
+- 1. A. A. Milne
+- 2. Alan Alexander Milne
+- 3. Sir Alan Milne
+- 4. Sir A. A. Milne
+- 5. C. S. Lewis
+- 6. Lewis Carroll
+- 7. Charles Lutwidge Dodgson
+"""
+
+    r = [l for l in sample_db_config if len(l) > 0]
+
+    with open('docs/sample_db_config', 'w') as f:
+        f.write('\n'.join(r))
+
+    with open('docs/documents.txt', 'w') as f:
+        f.write(documents)

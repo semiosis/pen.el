@@ -1,0 +1,94 @@
+HTTP/1.1 200 OK
+X-Frame-Options: deny
+Content-Type: application/xhtml+xml
+Cache-Control: max-age=86400
+X-Cloud-Trace-Context: 82d77b50bb4fbeff0506b51292cd6e1b
+Date: Tue, 13 Sep 2022 19:27:12 GMT
+Server: Google Frontend
+Content-Length: 8558
+Connection: close
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+<meta name="viewport" content="width=865" />
+<title>ZeroBanana &ndash; Senior Engineers are Living in the Future</title>
+<link href="/styles/essay.css" type="text/css" rel="stylesheet" />
+<link href="/feeds/latest" type="application/atom+xml" rel="alternate" title="Latest Essays" />
+<link href="./" type="text/html" rel="canonical latest-version" title="Latest version of this essay" />
+<link href="history" type="text/html" rel="version-history" title="Publication history of this essay" />
+<link href="/" type="text/html" rel="home" title="Home Page" />
+</head>
+<body>
+<div class="article">
+<h1>Senior Engineers are Living in the Future</h1>
+<div>
+<span class="datetime"><abbr class="iso8601" title="2022-09-06"><span class="day">6</span> <span class="mo">Sep</span> <span class="yr">2022</span></abbr></span>
+<div id="byline">By: <a href="/author/Zane-Bitter" class="author" rel="author" title="Author Profile &mdash; Zane Bitter">Zane Bitter</a></div>
+</div>
+<div id="essay">
+<p id="p1"><a class="anchor" href="#p1" title="Paragraph 1"></a>
+<span class="dropcap">I</span>magine for a moment that, by some quirk of the universe, you are sharing your workspace with a time traveller. Specifically, yourself from 1 year in the future. How will you react to your new co-worker?<sup class="fnref"><a href="#fn1" id="note1" title="Footnote 1">1</a></sup><span class="footnote" id="fn1"> <span class="fnmarker">[</span><a class="fnref" href="#note1" title="Footnote 1 Reference">1</a> If you find this exercise difficult, try instead imagining how your past self of a year ago would react to your present self.<span class="fnmarker">]</span></span> Despite being no more intelligent than you and coming from a similar background, they always seem to be one step ahead. Everything you accomplish, they have already accomplished a year ago.
+</p>
+<p class="indent" id="p2"><a class="anchor" href="#p2" title="Paragraph 2"></a>
+As intolerable as this situation is, the universe has been relatively kind to you because things could get much worse. What if, instead of a one year jump, this chronoscopic portal delivered up your future self from only a week or two away? This new colleague is not even more experienced than you in any meaningful sense, yet somehow has all of the answers. That bizarre compiler error you have been fighting with all day that seems to be independent of the actual code being compiled? It was caused by an invisible Unicode character. Right <em>there</em>.<sup class="fnref"><a href="#fn2" id="note2" title="Footnote 2">2</a></sup><span class="footnote" id="fn2"> <span class="fnmarker">[</span><a class="fnref" href="#note2" title="Footnote 2 Reference">2</a> It was a long time ago and I am over it now. Thank you.<span class="fnmarker">]</span></span> Your neighbour&rsquo;s insufferability peaks whenever they have just found the solution to your current problem.
+</p>
+<p class="indent" id="p3"><a class="anchor" href="#p3" title="Paragraph 3"></a>
+We can dispense with the thought experiment now, because in reality you probably already work with engineers from the future: the more-senior members of your team.<sup class="fnref"><a href="#fn3" id="note3" title="Footnote 3">3</a></sup><span class="footnote" id="fn3"> <span class="fnmarker">[</span><a class="fnref" href="#note3" title="Footnote 3 Reference">3</a> Unless you are already on the top rung of the career ladder, this is broadly true at all levels of seniority.<span class="fnmarker">]</span></span> It should be obvious that it is a mistake to compare your own present accomplishments unfavourably with those of more experienced engineers. Your <em>future</em> accomplishments may, in time, match or even exceed theirs. At times we all commit this error nonetheless. What is less obvious are the smaller-scale effects of seniority on time travel.
+</p>
+<p class="indent" id="p4"><a class="anchor" href="#p4" title="Paragraph 4"></a>
+Your senior colleagues are routinely among the first to see problems&mdash;and their solutions&mdash;because your teammates ask them for help first. They hear sooner about new projects and other changes coming down the pike, because management tells them earlier. (In a large organisation they may even report higher up in the chain.) They interact more with peers in other teams, because that is part of the role. While junior engineers may be expected to be heads-down developing software most of the time, management allows senior engineers more time for gathering and synthesizing information. At first this is partially offset by increasing efficiency in development tasks, but the most-senior engineers may be expected to do nothing else.
+</p>
+<p class="indent" id="p5"><a class="anchor" href="#p5" title="Paragraph 5"></a>
+For those with the structural advantage of frontrunning the flow of information to the team, it is <em>literally effortless</em> to accidentally cultivate the impression of being some kind of wizard. In fact, as you progress you will have to invest increasing amounts of effort in reminding your colleagues that the only reason you were able to swoop in and immediately solve their problem or answer their question is that you already saw it somewhere between 1 week and 20 minutes ago. Nobody will believe you,<sup class="fnref"><a href="#fn4" id="note4" title="Footnote 4">4</a></sup><span class="footnote" id="fn4"> <span class="fnmarker">[</span><a class="fnref" href="#note4" title="Footnote 4 Reference">4</a> This essay is my doomed attempt to capture what I have been failing to convince colleagues of for 15 years.<span class="fnmarker">]</span></span> but you must keep trying to avoid discouraging the next generation of leaders.
+</p>
+<p class="indent" id="p6"><a class="anchor" href="#p6" title="Paragraph 6"></a>
+Increasing seniority is driven by a positive-feedback loop. Career advancement goes to those who can use their flow of information to benefit the team; from career advancement comes temporal advancement in the form of better access to information flows. Every step up in job title is equivalent to living perhaps 1&ndash;2 days further into the future. The key is to bootstrap this feedback loop without neglecting your workaday responsibilities to the team.
+</p>
+<hr />
+<p class="indent" id="p7"><a class="anchor" href="#p7" title="Paragraph 7"></a>
+The first&mdash;and most important&mdash;thing is to stop comparing yourself with others. Ensure that you are fulfilling the expectations of your manager and team for your development contributions. Then, seek to optimise the value to your team of the information flows you have access to. Show more-junior team members what is happening behind the curtain.
+</p>
+<p class="indent" id="p8"><a class="anchor" href="#p8" title="Paragraph 8"></a>
+Finally, stop comparing yourself with others.
+</p>
+</div>
+</div>
+<div id="comments">
+<a href="comments" title="Primæ objectiones &amp; responsio authoris ad primas objectiones" accesskey="9">Comments</a>
+</div>
+
+<div id="header">
+<hr />
+<ul>
+<li><a href="history" title="History of this page" rel="nofollow">History</a></li>
+<li><a href="2a575919b969" rel="bookmark nofollow" title="Permanent link to this version">Permalink</a></li>
+<li class="feed"><a href="/feeds/latest" title="Full text feed">Subscribe</a></li>
+</ul>
+</div>
+<div id="nav">
+<h1><img height="125" width="125" alt="ZeroBanana" title="ZeroBanana" src="/images/logo" /></h1>
+<hr />
+<ul id="menu">
+<li><a accesskey="1" href="/" title="Home Page">Home</a></li>
+<li><a href="/archive/" title="News archive">Archive</a></li>
+<li><a href="/essays/" title="All essays on this site">Essays</a></li>
+<li class="feed"><a href="/feeds/" title="Syndication feeds">Feeds</a></li>
+<li class="twitter"><a href="https://twitter.com/zerobanana" title="Twitter feed">Twitter</a></li>
+<li><a accesskey="4" href="/search" title="Search this site">Search</a></li>
+<li><address><a href="/about" title="About this site">About</a></address></li>
+</ul>
+</div>
+<div id="footer">
+<hr />
+<p>
+&copy;2022 Zane Bitter.
+<a href="https://creativecommons.org/licenses/by-nc/3.0/" rel="copyright" title="Creative Commons Attribution Non-Commercial">Some Rights Reserved</a>.
+</p>
+</div>
+<script src="/scripts/localtimes.js" />
+
+</body>
+</html>

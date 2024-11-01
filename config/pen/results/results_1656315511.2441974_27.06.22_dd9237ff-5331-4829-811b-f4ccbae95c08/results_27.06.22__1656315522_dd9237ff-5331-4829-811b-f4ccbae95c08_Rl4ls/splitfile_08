@@ -1,0 +1,13 @@
+
+
+    The Rosetta Stone is now housed in the
+    British Museum in London.
+EOD
+
+# text files with line numbers
+
+cat draft.text | nl > draft.text.nl
+
+# text files with line numbers and line lengths
+
+cat draft.text | nl | wc -l > draft.text.nl.wc-l

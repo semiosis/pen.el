@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rule not
+# group: vimsnippet
+# key: vs-rn
+# --
+${1:dry} :- not(${2:rain}).

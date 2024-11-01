@@ -1,0 +1,1589 @@
+HTTP/1.1 200 OK
+x-guploader-uploadid: ABPtcPpyL9bym2rOuLQ6fFEx-LL5Q2P_6pCJPxBwVIrVom09hygm-qwlI2-oB_QYPohRVWAHn10HdqhKYrozoVxhW_On
+date: Fri, 05 Jan 2024 23:27:28 GMT
+last-modified: Mon, 18 Dec 2023 06:39:52 GMT
+etag: "2ade94dfffdc825b33ed1def20c73208"
+x-goog-generation: 1702881592478539
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 89152
+content-type: text/html
+x-goog-hash: crc32c=XcUahw==
+x-goog-hash: md5=Kt6U3//cglsz7R3vIMcyCA==
+x-goog-storage-class: STANDARD
+accept-ranges: bytes
+Content-Length: 89152
+server: UploadServer
+via: 1.1 google
+Cache-Control: public,max-age=3600
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+
+    <link rel="preload" href="/assets/css/app.css?1702880124" as="style">
+    <link rel="preload" href="/assets/fonts/ITCAvantGardeStd-Md.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/ITCAvantGardeStd-Demi.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/ITCAvantGardeStd-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      rel="stylesheet"
+      href="/assets/css/app.css?1702880124"
+      media="screen"
+      type="text/css"
+/>
+
+    <link rel="shortcut icon" href="/assets/icon/favicon.ico"/>
+    <title>
+      With God, All Things Are Possible |
+The Bible with Nicky and Pippa Gumbel</title>
+<meta name="description"
+      content="‘When life hands you a lemon, make lemonade,’ wrote Norman Vincent Peale, who published his best-known book, *The Power of Positive Thinking*, in 1952. It stayed in *The New York Times* bestseller list for 186 consecutive weeks. Much of what he had to say...">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Alpha International">
+<link rel="canonical"
+      href="https://bible.alpha.org/en/classic/28">
+<meta property="og:title"
+      content="With God, All Things Are Possible | The Bible with Nicky and Pippa Gumbel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://bible.alpha.org/en/classic/28/">
+<meta property="og:description"
+      content="‘When life hands you a lemon, make lemonade,’ wrote Norman Vincent Peale, who published his best-known book, *The Power of Positive Thinking*, in 1952. It stayed in *The New York Times* bestseller list for 186 consecutive weeks. Much of what he had to say...">
+<meta property="og:image" content="/assets/img/screenshot-2023-12-15-at-10.33.29.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@BibleinOneYr">
+<meta name="twitter:url" content="https://bible.alpha.org/en/classic/28/">
+<meta name="twitter:title"
+      content="With God, All Things Are Possible | The Bible with Nicky and Pippa Gumbel">
+<meta name="twitter:description"
+      content="‘When life hands you a lemon, make lemonade,’ wrote Norman Vincent Peale, who published his best-known book, *The Power of Positive Thinking*, in 1952. It stayed in *The New York Times* bestseller list for 186 consecutive weeks. Much of what he had to say...">
+<meta name="twitter:image" content="/assets/img/screenshot-2023-12-15-at-10.33.29.png">
+
+      
+            <link rel="alternate"
+                  hreflang="en"
+                  href="https://bible.alpha.org/en/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="ar"
+                  href="https://bible.alpha.org/ar/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="de"
+                  href="https://bible.alpha.org/de/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="es"
+                  href="https://bible.alpha.org/es/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="fr"
+                  href="https://bible.alpha.org/fr/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="hi"
+                  href="https://bible.alpha.org/hi/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="id"
+                  href="https://bible.alpha.org/id/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="it"
+                  href="https://bible.alpha.org/it/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="th"
+                  href="https://bible.alpha.org/th/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="vi"
+                  href="https://bible.alpha.org/vi/classic/28/" />
+      
+            <link rel="alternate"
+                  hreflang="zh"
+                  href="https://bible.alpha.org/zh/classic/28/" />
+      
+      <link rel="alternate"
+            hreflang="x-default"
+            href="https://bible.alpha.org/en/classic/28/" />
+
+
+
+    
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer'
+              ? '&l=' + l
+              : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f
+            .parentNode
+            .insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WS26JLBF');
+      </script>
+    
+  </head>
+
+  <body x-data="baseView">
+
+    
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WS26JLBF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+    
+
+    
+      
+  <div
+  x-data="promo"
+  x-ref="promoModal"
+  x-init="init('2023-12-14','2024-01-07', 'bnap-2023', 'modal')"
+  class="fixed inset-0 z-20 hidden flex-col items-center justify-center bg-black bg-opacity-60 min-h-screen"
+>
+  <div
+    class="w-[90%] overflow-y-auto overflow-hidden rounded-lg bg-white shadow-lg md:w-[80%] lg:w-[60%] xl:w-[55%] 2xl:w-[40%] "
+  >
+    
+      <div class="bg-red flex items-center justify-center py-14">
+
+        <picture><source type="image/webp" srcset="/assets/img/A6tWPequx4-300.webp 300w" sizes="(min-width: 640px) 60vw,
+    100vw"><img class="w-auto overflow-hidden object-center aspect-[1.87] h-32 xs:h-36 sm:h-40 md:h-44 lg:h-48 xl:h-56" alt="Donate promo" loading="lazy" decoding="async" src="/assets/img/A6tWPequx4-300.jpeg" width="300" height="163"></picture>
+      
+    </div>
+    <div class="flex flex-col items-center justify-center space-y-8 py-8 px-7">
+      <h3 class="text-center text-base font-semibold text-red md:text-lg">
+        Notice something new?
+      </h3>
+      <div class="space-y-4 text-sm md:text-base">
+        <p>Welcome to the new online home of The Bible with Nicky and Pippa Gumbel (formerly Bible in One Year). Nothing else has changed, we hope you continue to enjoy our daily Bible readings.</p>
+
+      </div>
+      <button
+        id="ga-bnap-2023-accept"
+         @click="hidePromo()"  
+        class="inline-block w-4/6 rounded border border-red bg-red p-2 pb-1.5 text-center text-white transition-colors hover:bg-white hover:text-red"
+      >
+        OK
+      </button>
+      
+    </div>
+  </div>
+</div>
+
+    
+
+    
+
+<header x-data="devotionBanner" x-init="init('classic')" id="header" class="border-red border-t-4 absolute  h-16 text-white top-0 w-full z-10 md:bg-none">
+  <h1 class="absolute text-2xl font-medium m-0 -top-[2.0rem] sm:-top-[1.8rem] md:-top-[1.3rem]">
+    <a href="/en" title="The Bible with Nicky and Pippa Gumbel">
+      <svg class="fill-current text-red w-32 h-auto ml-3 sm:w-36 md:w-40" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#bnap"></use>
+            </svg>
+    </a>
+    <div id="switchBanner" class="absolute top-10 inline-flex space-x-1 rtl:space-x-reverse ltr:left-[9rem] sm:ltr:left-[10rem] md:ltr:left-[11rem] rtl:right-36 sm:rtl:right-40 md:rtl:right-44">
+      
+        <div class="space-y-1 ltr:w-full" :class="outOfView ? 'rtl:w-full' : ''">
+          <button id="editionButton" class="bg-transparent px-2  text-black uppercase" :class="outOfView ? 'text-base w-full space-x-1.5 py-3 flex items-center justify-center' :'border border-red text-xs'" @click="openEdition = !openEdition">
+            <span x-show="outOfView"><svg class="fill-current h-6 w-6 ltr:mr-2 rtl:ml-2" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#medium_book"></use>
+            </svg></span>
+            classic
+          </button>
+          <div class="absolute bg-red divide-y-2" :class="outOfView ? 'w-1/2' : ''" x-show="openEdition">
+            
+            
+              <a href="/en/youth/28" class="block text-white text-xs py-3 pl-2 pr-4">
+                <button>Youth</button>
+              </a>
+            
+            
+              <a href="/en/express/28" class="block text-white text-xs py-3 pl-2 pr-4">
+                <button>Express</button>
+              </a>
+            
+            
+
+          </div>
+        </div>
+        
+          <div class="space-y-1 w-full">
+            <button id="languagesButton" class="bg-transparent px-2  text-black uppercase" :class="outOfView ? 'text-base w-full space-x-1.5 py-3 flex items-center justify-center' :'border border-red text-xs'" @click="openLanguages = !openLanguages">
+              <span x-show="outOfView"><svg class="fill-current h-6 w-6 ltr:mr-2 rtl:ml-2" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#translate"></use>
+            </svg></span>
+              en
+            </button>
+            <div class="absolute bg-red divide-y-2" :class="outOfView ? 'w-1/2' : 'min-w-max'" x-show="openLanguages">
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'en')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">English</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'ar')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">عربى</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'de')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">Deutsch</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'es')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">Español</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'fr')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">Français</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'hi')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">हिंदी</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'id')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">Bahasa Indonesia</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'it')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">Italiano</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'th')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">ไทย</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'vi')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">Tiếng Việt/㗂越</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+                <a class="block text-white text-xs py-3 pl-2 pr-4" :href="parsePageUrl('/en/classic/28/', 'zh')">
+                  <div class="grid grid-cols-3 gap-3 min-w-max">
+                    <span class="col-start-1 col-end-3">中國人</span>
+                    <div class="col-start-3 col-end-4 flex justify-end">
+                      <div class="grid grid-cols-2 gap-2">
+                        
+                          
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              
+            </div>
+          </div>
+        
+      
+    </div>
+  </h1>
+  <div class="absolute top-0 right-0 pt-2 pr-2 flex flex-row-reverse justify-center items-center rtl:pr-0 rtl:pl-2 rtl:left-0 rtl:right-auto md:hidden">
+    <a href="/en/#start" :href="deviceUrl('en', 'https://play.google.com/store/apps/details?id=com.multipie.bibleinoneyear&amp;hl=en_GB', 'https://apps.apple.com/gb/app/bible-in-one-year/id504133402')" class="inline-block bg-red border border-red rounded p-2 pb-1.5 text-white hover:bg-white hover:text-red transition-colors">Download
+    </a>
+  </div>
+</header>
+<nav id="navbar" class=" fixed bottom-0 w-full bg-white z-10 shadow-lg h-16 flex items-center sm:h-20 md:absolute md:bg-transparent
+      md:h-auto md:bottom-auto md:top-0 md:ltr:right-0
+      md:rtl:left-0  md:text-black md:mt-4 md:shadow-none text-left flex-row-reverse md:rtl:pl-4
+      md:w-1/2 ">
+  <div class="w-full grid grid-cols-4 justify-items-stretch md:flex md:flex-row md:w-auto">
+    <a href="/en#start" class="flex flex-col items-center justify-center md:py-1.5 md:mr-4 md:underline" title="Start The Bible with Nicky and Pippa Gumbel Today">
+      <svg class="fill-current h-5 w-auto aspect-[1.8] mb-1 sm:h-6 md:hidden" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#bnap"></use>
+            </svg>
+      Start
+    </a>
+    <a href="/en/about" class="flex flex-col items-center justify-center  md:py-1.5 md:mr-4
+                                                                                                                                                                                                                        md:underline">
+      <svg class="fill-current h-6 w-6 mb-1 sm:h-8 sm:w-8 md:hidden" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#about"></use>
+            </svg>
+      About
+    </a>
+    <a href="/en/faqs" class="flex flex-col items-center justify-center  md:py-1.5 md:mr-4 md:underline">
+      <svg class="fill-current h-6 w-6 mb-1 sm:h-8 sm:w-8 md:hidden" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#help"></use>
+            </svg>
+      FAQs
+    </a>
+    <a href="/en/donate" class="flex flex-col items-center justify-center  md:py-1.5 md:mr-4
+                                                                                                                                                                                                                        md:underline">
+      <svg class="fill-current h-6 w-6 mb-1 sm:h-8 sm:w-8 md:hidden" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#donate"></use>
+            </svg>
+      Donate
+    </a>
+    <a class="hidden bg-red border border-red rounded p-2 pb-1.5 text-white hover:bg-white hover:text-red transition-colors
+                                                                                                                                                                    no-underline mr-4 md:flex" href="/en/#start" :href="deviceUrl('en', 'https://play.google.com/store/apps/details?id=com.multipie.bibleinoneyear&amp;hl=en_GB', 'https://apps.apple.com/gb/app/bible-in-one-year/id504133402')">
+      Download
+    </a>
+  </div>
+</nav>
+
+    <main>
+      
+<div class="mt-24 px-4 sm:mt-32">
+  
+<article class="max-w-prose mx-auto font-commentary break-words">
+  <div class="mx-10 prose lg:prose-xl ">
+    <div class="mt-24">
+      <span class="text-xl text-red">Day
+        28</span>
+    </div>
+    <div class="mt-2">
+      <h1 class="text-xl">With God, All Things Are Possible</h1>
+    </div>
+
+    <div class="mt-32">
+      <h2></h2>
+      <div class="flex flex-col">
+        <span class="text-red h-6">Wisdom</span>
+        <span>Proverbs 3:11-20</span>
+      </div>
+      <div class="flex flex-col mt-2">
+        <span class="text-red h-6">New Testament</span>
+        <span>Matthew 19:16-30</span>
+      </div>
+      <div class="flex flex-col mt-2">
+        <span class="text-red h-6">Old Testament</span>
+        <span>Job 8:1-10:22</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-10 prose lg:prose-xl mb-8">
+    <div class="mt-16">
+      <h2>Introduction</h2>
+    </div>
+
+    <p>‘When life hands you a lemon, make lemonade,’ wrote Norman Vincent Peale, who published his best-known book, <em>The Power of Positive Thinking</em>, in 1952. It stayed in <em>The New York Times</em> bestseller list for 186 consecutive weeks. Much of what he had to say was extremely good and helpful. But, the words of Jesus go way beyond the power of positive thinking.</p>
+<p>Norman Vincent Peale said, ‘A positive mental attitude is a belief that things are going to turn out well, and that you can overcome any kind of trouble or difficulty.’ Jesus said, ‘With <em>God</em> all things are possible’ (Matthew 19:26). This is far more than the power of positive thinking. It is <em>the power of God</em> that makes what seems impossible possible. Nothing is impossible with God (Luke 1:37).</p>
+
+  </div>
+
+  
+    <section class="prose lg:prose-xl mb-8 mx-10">
+      <div class="p-4 bg-red rounded">
+        <div class="font-bold text-4xl text-white">Wisdom</div>
+      </div>
+      <div class="py-4">
+        <h2>Proverbs 3:11-20</h2>
+          <div class="font-scripture">
+            <p>&nbsp; <sup>11</sup> My son, do not despise the Lord’s discipline,<br>&nbsp;&nbsp; and do not resent his rebuke,<br>&nbsp; <sup>12</sup> because the Lord disciplines those he loves,<br>&nbsp;&nbsp; as a father the son he delights in.</p>
+<p>&nbsp; <sup>13</sup> Blessed are those who find wisdom,<br>&nbsp;&nbsp; those who gain understanding,<br>&nbsp; <sup>14</sup> for she is more profitable than silver<br>&nbsp;&nbsp; and yields better returns than gold.<br>&nbsp; <sup>15</sup> She is more precious than rubies;<br>&nbsp;&nbsp; nothing you desire can compare with her.<br>&nbsp; <sup>16</sup> Long life is in her right hand;<br>&nbsp;&nbsp; in her left hand are riches and honour.<br>&nbsp; <sup>17</sup> Her ways are pleasant ways,<br>&nbsp;&nbsp; and all her paths are peace.<br>&nbsp; <sup>18</sup> She is a tree of life to those who take hold of her;<br>&nbsp;&nbsp; those who hold her fast will be blessed.</p>
+<p>&nbsp; <sup>19</sup> By wisdom the Lord laid the earth’s foundations,<br>&nbsp;&nbsp; by understanding he set the heavens in place;<br>&nbsp; <sup>20</sup> by his knowledge the watery depths were divided,<br>&nbsp;&nbsp; and the clouds let drop the dew.</p>
+
+          </div>
+        <h2>Commentary</h2>
+        <h4>Through Jesus, the universe was created</h4>
+<p>The fact that with God ‘all things are possible’ is proven by the fact that God created the entire universe out of nothing: ‘By wisdom the LORD laid the earth’s foundations, by understanding he set the heavens in place; by his knowledge the deeps were divided, and the clouds let drop the dew’ (vv.19–20).</p>
+<p>The writer of Proverbs sees wisdom as a person (vv.13–18). Through the lens of the New Testament, we see that that person is Jesus. St Paul tells us that ‘Christ \[is\] the power of God and the wisdom of God’ (1 Corinthians 1:24).</p>
+<p>Until you find a relationship with Jesus, life will not really make sense. The entire universe was created through Jesus (John 1:3). He loves you. In a relationship with him you find God’s wisdom and God’s power.</p>
+<p>When you find Jesus, you find the source of all wisdom. This is the way of blessing (Proverbs 3:13a). It is also the way to understanding (v.13b). It is far more profitable than all the material blessings (vv.14–15a). In fact, ‘nothing you desire can compare with her’ (v.15b).</p>
+<p>This is the path to long life (v.16, which is ‘eternal life’ in the New Testament, see John 3:16). Here you find true ‘riches and honour’ (Proverbs 3:16). This is the way to a peace beyond understanding (v.17). Here you find the ‘tree of life’ (v.18).</p>
+
+        <h2>Prayer</h2>
+          <div class="border-l-4 pl-4 border-red font-scripture"><p>Lord, I seek you today. Give me wisdom, peace and power to live the kind of life you want me to lead.</p>
+</div>
+      </div>
+    </section>
+    
+
+  
+    <section class="prose lg:prose-xl mb-8 mx-10">
+      <div class="p-4 bg-red rounded">
+        <div class="font-bold text-4xl text-white">New Testament</div>
+      </div>
+      <div class="py-4">
+        <h2>Matthew 19:16-30</h2>
+          <div class="font-scripture">
+            <h3>The Rich and the Kingdom of God</h3>
+<p><sup>16</sup> Just then a man came up to Jesus and asked, “Teacher, what good thing must I do to get eternal life?”</p>
+<p><sup>17</sup> “Why do you ask me about what is good?” Jesus replied. “There is only One who is good. If you want to enter life, keep the commandments.”</p>
+<p><sup>18</sup> “Which ones?” he inquired.</p>
+<p>Jesus replied, “‘You shall not murder, you shall not commit adultery, you shall not steal, you shall not give false testimony, <sup>19</sup> honour your father and mother,’ and ‘love your neighbour as yourself.’”</p>
+<p><sup>20</sup> “All these I have kept,” the young man said. “What do I still lack?”</p>
+<p><sup>21</sup> Jesus answered, “If you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven. Then come, follow me.”</p>
+<p><sup>22</sup> When the young man heard this, he went away sad, because he had great wealth.</p>
+<p><sup>23</sup> Then Jesus said to his disciples, “Truly I tell you, it is hard for someone who is rich to enter the kingdom of heaven. <sup>24</sup> Again I tell you, it is easier for a camel to go through the eye of a needle than for someone who is rich to enter the kingdom of God.”</p>
+<p><sup>25</sup> When the disciples heard this, they were greatly astonished and asked, “Who then can be saved?”</p>
+<p><sup>26</sup> Jesus looked at them and said, “With man this is impossible, but with God all things are possible.”</p>
+<p><sup>27</sup> Peter answered him, “We have left everything to follow you! What then will there be for us?”</p>
+<p><sup>28</sup> Jesus said to them, “Truly I tell you, at the renewal of all things, when the Son of Man sits on his glorious throne, you who have followed me will also sit on twelve thrones, judging the twelve tribes of Israel. <sup>29</sup> And everyone who has left houses or brothers or sisters or father or mother or wife or children or fields for my sake will receive a hundred times as much and will inherit eternal life. <sup>30</sup> But many who are first will be last, and many who are last will be first.</p>
+
+          </div>
+        <h2>Commentary</h2>
+        <h4>What is impossible in human terms is possible with God</h4>
+<p>Do you sometimes find yourself facing a seemingly impossible situation? It might be a relationship that seems to have broken down irretrievably, or an issue to do with health, finances or something else where change seems impossible. With God there is always hope, no matter how bad things look. Nothing is impossible with God. His power makes all things possible.</p>
+<p>The context of Jesus’ words that ‘with God all things are possible’ (v.26) is the account of the rich young man to whom Jesus calls, ‘Come, follow me’ (v.21b). He tells him, ‘Go, sell your possessions and give to the poor’ (v.21a). But it is too much for him to give up and the young man goes away ‘sad’ (v.22). Jesus points out how hard it is for the rich to enter the kingdom of heaven (vv.23–24). Yet, with God ‘all things are possible’ (v.26).</p>
+<p>Jesus says that, humanly speaking, it is impossible for anyone to enter the kingdom of God (v.26). Worldly riches are of no help. In fact, they are more of a hindrance. Jesus says, ‘It is easier for a camel to go through the eye of a needle than for the rich to enter the kingdom of God’ (v.24).</p>
+<p>Some people have suggested that this is a reference to a gate in Jerusalem that was called ‘the needle’s eye’. A camel would need to unload all it was carrying on its back to go through it. Other people have pointed out that a word very similar to ‘camel’ means a sort of rope. Maybe he was talking of threading rope through the eye of a needle.</p>
+<p>These attempts to rationalise the words of Jesus miss the point. The point is that it is totally unthinkable for a camel to go through the eye of a needle. But what is impossible in human terms is possible with God (v.26).</p>
+<p>In answer to the disciples’ question, ‘“Then who has any chance at all?” Jesus looked hard at them and said, “No chance at all if you think you can pull it off yourself. Every chance in the world if you trust God to do it”’ (vv.25–26, MSG).</p>
+<p>In this world the rich, the powerful and the famous are the ones who people look up to as ‘first’. The poor are looked down on, ignored and seen as ‘last’. But in the kingdom of heaven the reverse is the case. Jesus says, ‘But many who are first will be last, and many who are last will be first’ (v.30).</p>
+<p>This is God’s powerful upside-down kingdom. Jesus asks the rich young man to give to the poor because he wants the man to place his trust in him and because the poor are such a high priority in the kingdom. They should be for us too: the thousands of children dying each day through desperate poverty and starvation, the oppressed people of so many countries, the homeless on our streets, the voiceless and the vulnerable.</p>
+<p>Jesus rarely told people to give away everything but in this case, he did. For everyone, there is a ‘cost’ to following Jesus. There is the cost of being willing to fly his flag in a hostile world. There is what may seem to be a cost of giving up things that we know to be wrong.</p>
+<p>Whatever ‘the cost’, it is nothing compared to what it cost Jesus to make ‘eternal life’ (v.29) possible for you and me. And it is nothing compared to the cost of not following Jesus. The rich young ruler missed out on so much.</p>
+<p>Furthermore, it is nothing compared to what you receive: ‘And everyone who has left houses or brothers or sisters or father or mother or wife or children or fields for my sake will receive a hundred times as much and will inherit eternal life’ (v.29). Jesus promises that for everything you give up, you will receive far more – in this life and, even more significantly, into eternity with Jesus.</p>
+
+        <h2>Prayer</h2>
+          <div class="border-l-4 pl-4 border-red font-scripture"><p>Lord, help me to be willing to give everything I have for the sake of the kingdom of God. Thank you that the greatest and most enduring riches come from following Jesus.</p>
+</div>
+      </div>
+    </section>
+    
+
+  
+    <section class="prose lg:prose-xl mb-8 mx-10">
+      <div class="p-4 bg-red rounded">
+        <div class="font-bold text-4xl text-white">Old Testament</div>
+      </div>
+      <div class="py-4">
+        <h2>Job 8:1-10:22</h2>
+          <div class="font-scripture">
+            <h3>Bildad</h3>
+<p><strong>8</strong> Then Bildad the Shuhite replied:</p>
+<p>&nbsp; <sup>2</sup> “How long will you say such things?<br>&nbsp;&nbsp; Your words are a blustering wind.<br>&nbsp; <sup>3</sup> Does God pervert justice?<br>&nbsp;&nbsp; Does the Almighty pervert what is right?<br>&nbsp; <sup>4</sup> When your children sinned against him,<br>&nbsp;&nbsp; he gave them over to the penalty of their sin.<br>&nbsp; <sup>5</sup> But if you will seek God earnestly<br>&nbsp;&nbsp; and plead with the Almighty,<br>&nbsp; <sup>6</sup> if you are pure and upright,<br>&nbsp;&nbsp; even now he will rouse himself on your behalf<br>&nbsp;&nbsp; and restore you to your prosperous state.<br>&nbsp; <sup>7</sup> Your beginnings will seem humble,<br>&nbsp;&nbsp; so prosperous will your future be.</p>
+<p>&nbsp; <sup>8</sup> “Ask the former generation<br>&nbsp;&nbsp; and find out what their ancestors learned,<br>&nbsp; <sup>9</sup> for we were born only yesterday and know nothing,<br>&nbsp;&nbsp; and our days on earth are but a shadow.<br>&nbsp; <sup>10</sup> Will they not instruct you and tell you?<br>&nbsp;&nbsp; Will they not bring forth words from their understanding?<br>&nbsp; <sup>11</sup> Can papyrus grow tall where there is no marsh?<br>&nbsp;&nbsp; Can reeds thrive without water?<br>&nbsp; <sup>12</sup> While still growing and uncut,<br>&nbsp;&nbsp; they wither more quickly than grass.<br>&nbsp; <sup>13</sup> Such is the destiny of all who forget God;<br>&nbsp;&nbsp; so perishes the hope of the godless.<br>&nbsp; <sup>14</sup> What they trust in is fragile;<br>&nbsp;&nbsp; what they rely on is a spider’s web.<br>&nbsp; <sup>15</sup> They lean on the web, but it gives way;<br>&nbsp;&nbsp; they cling to it, but it does not hold.<br>&nbsp; <sup>16</sup> They are like a well-watered plant in the sunshine,<br>&nbsp;&nbsp; spreading its shoots over the garden;<br>&nbsp; <sup>17</sup> it entwines its roots around a pile of rocks<br>&nbsp;&nbsp; and looks for a place among the stones.<br>&nbsp; <sup>18</sup> But when it is torn from its spot,<br>&nbsp;&nbsp; that place disowns it and says, ‘I never saw you.’<br>&nbsp; <sup>19</sup> Surely its life withers away,<br>&nbsp;&nbsp; and from the soil other plants grow.</p>
+<p>&nbsp; <sup>20</sup> “Surely God does not reject one who is blameless<br>&nbsp;&nbsp; or strengthen the hands of evildoers.<br>&nbsp; <sup>21</sup> He will yet fill your mouth with laughter<br>&nbsp;&nbsp; and your lips with shouts of joy.<br>&nbsp; <sup>22</sup> Your enemies will be clothed in shame,<br>&nbsp;&nbsp; and the tents of the wicked will be no more.”</p>
+<h3>Job</h3>
+<p><strong>9</strong> Then Job replied:</p>
+<p>&nbsp; <sup>2</sup> “Indeed, I know that this is true.<br>&nbsp;&nbsp; But how can mere mortals prove their innocence before God?<br>&nbsp; <sup>3</sup> Though they wished to dispute with him,<br>&nbsp;&nbsp; they could not answer him one time out of a thousand.<br>&nbsp; <sup>4</sup> His wisdom is profound, his power is vast.<br>&nbsp;&nbsp; Who has resisted him and come out unscathed?<br>&nbsp; <sup>5</sup> He moves mountains without their knowing it<br>&nbsp;&nbsp; and overturns them in his anger.<br>&nbsp; <sup>6</sup> He shakes the earth from its place<br>&nbsp;&nbsp; and makes its pillars tremble.<br>&nbsp; <sup>7</sup> He speaks to the sun and it does not shine;<br>&nbsp;&nbsp; he seals off the light of the stars.<br>&nbsp; <sup>8</sup> He alone stretches out the heavens<br>&nbsp;&nbsp; and treads on the waves of the sea.<br>&nbsp; <sup>9</sup> He is the Maker of the Bear and Orion,<br>&nbsp;&nbsp; the Pleiades and the constellations of the south.<br>&nbsp; <sup>10</sup> He performs wonders that cannot be fathomed,<br>&nbsp;&nbsp; miracles that cannot be counted.<br>&nbsp; <sup>11</sup> When he passes me, I cannot see him;<br>&nbsp;&nbsp; when he goes by, I cannot perceive him.<br>&nbsp; <sup>12</sup> If he snatches away, who can stop him?<br>&nbsp;&nbsp; Who can say to him, ‘What are you doing?’<br>&nbsp; <sup>13</sup> God does not restrain his anger;<br>&nbsp;&nbsp; even the cohorts of Rahab cowered at his feet.</p>
+<p>&nbsp; <sup>14</sup> “How then can I dispute with him?<br>&nbsp;&nbsp; How can I find words to argue with him?<br>&nbsp; <sup>15</sup> Though I were innocent, I could not answer him;<br>&nbsp;&nbsp; I could only plead with my Judge for mercy.<br>&nbsp; <sup>16</sup> Even if I summoned him and he responded,<br>&nbsp;&nbsp; I do not believe he would give me a hearing.<br>&nbsp; <sup>17</sup> He would crush me with a storm<br>&nbsp;&nbsp; and multiply my wounds for no reason.<br>&nbsp; <sup>18</sup> He would not let me catch my breath<br>&nbsp;&nbsp; but would overwhelm me with misery.<br>&nbsp; <sup>19</sup> If it is a matter of strength, he is mighty!<br>&nbsp;&nbsp; And if it is a matter of justice, who can challenge him?<br>&nbsp; <sup>20</sup> Even if I were innocent, my mouth would condemn me;<br>&nbsp;&nbsp; if I were blameless, it would pronounce me guilty.</p>
+<p>&nbsp; <sup>21</sup> “Although I am blameless,<br>&nbsp;&nbsp; I have no concern for myself;<br>&nbsp;&nbsp; I despise my own life.<br>&nbsp; <sup>22</sup> It is all the same; that is why I say,<br>&nbsp;&nbsp; ‘He destroys both the blameless and the wicked.’<br>&nbsp; <sup>23</sup> When a scourge brings sudden death,<br>&nbsp;&nbsp; he mocks the despair of the innocent.<br>&nbsp; <sup>24</sup> When a land falls into the hands of the wicked,<br>&nbsp;&nbsp; he blindfolds its judges.<br>&nbsp;&nbsp; If it is not he, then who is it?</p>
+<p>&nbsp; <sup>25</sup> “My days are swifter than a runner;<br>&nbsp;&nbsp; they fly away without a glimpse of joy.<br>&nbsp; <sup>26</sup> They skim past like boats of papyrus,<br>&nbsp;&nbsp; like eagles swooping down on their prey.<br>&nbsp; <sup>27</sup> If I say, ‘I will forget my complaint,<br>&nbsp;&nbsp; I will change my expression, and smile,’<br>&nbsp; <sup>28</sup> I still dread all my sufferings,<br>&nbsp;&nbsp; for I know you will not hold me innocent.<br>&nbsp; <sup>29</sup> Since I am already found guilty,<br>&nbsp;&nbsp; why should I struggle in vain?<br>&nbsp; <sup>30</sup> Even if I washed myself with soap<br>&nbsp;&nbsp; and my hands with cleansing powder,<br>&nbsp; <sup>31</sup> you would plunge me into a slime pit<br>&nbsp;&nbsp; so that even my clothes would detest me.</p>
+<p>&nbsp; <sup>32</sup> “He is not a mere mortal like me that I might answer him,<br>&nbsp;&nbsp; that we might confront each other in court.<br>&nbsp; <sup>33</sup> If only there were someone to mediate between us,<br>&nbsp;&nbsp; someone to bring us together,<br>&nbsp; <sup>34</sup> someone to remove God’s rod from me,<br>&nbsp;&nbsp; so that his terror would frighten me no more.<br>&nbsp; <sup>35</sup> Then I would speak up without fear of him,<br>&nbsp;&nbsp; but as it now stands with me, I cannot.</p>
+<p>&nbsp; <strong>10</strong> “I loathe my very life;<br>&nbsp;&nbsp; therefore I will give free rein to my complaint<br>&nbsp;&nbsp; and speak out in the bitterness of my soul.<br>&nbsp; <sup>2</sup> I say to God: Do not declare me guilty,<br>&nbsp;&nbsp; but tell me what charges you have against me.<br>&nbsp; <sup>3</sup> Does it please you to oppress me,<br>&nbsp;&nbsp; to spurn the work of your hands,<br>&nbsp;&nbsp; while you smile on the plans of the wicked?<br>&nbsp; <sup>4</sup> Do you have eyes of flesh?<br>&nbsp;&nbsp; Do you see as a mortal sees?<br>&nbsp; <sup>5</sup> Are your days like those of a mortal<br>&nbsp;&nbsp; or your years like those of a strong man,<br>&nbsp; <sup>6</sup> that you must search out my faults<br>&nbsp;&nbsp; and probe after my sin —<br>&nbsp; <sup>7</sup> though you know that I am not guilty<br>&nbsp;&nbsp; and that no one can rescue me from your hand?</p>
+<p>&nbsp; <sup>8</sup> “Your hands shaped me and made me.<br>&nbsp;&nbsp; Will you now turn and destroy me?<br>&nbsp; <sup>9</sup> Remember that you molded me like clay.<br>&nbsp;&nbsp; Will you now turn me to dust again?<br>&nbsp; <sup>10</sup> Did you not pour me out like milk<br>&nbsp;&nbsp; and curdle me like cheese,<br>&nbsp; <sup>11</sup> clothe me with skin and flesh<br>&nbsp;&nbsp; and knit me together with bones and sinews?<br>&nbsp; <sup>12</sup> You gave me life and showed me kindness,<br>&nbsp;&nbsp; and in your providence watched over my spirit.</p>
+<p>&nbsp; <sup>13</sup> “But this is what you concealed in your heart,<br>&nbsp;&nbsp; and I know that this was in your mind:<br>&nbsp; <sup>14</sup> If I sinned, you would be watching me<br>&nbsp;&nbsp; and would not let my offense go unpunished.<br>&nbsp; <sup>15</sup> If I am guilty —woe to me!<br>&nbsp;&nbsp; Even if I am innocent, I cannot lift my head,<br>&nbsp; for I am full of shame<br>&nbsp;&nbsp; and drowned in my affliction.<br>&nbsp; <sup>16</sup> If I hold my head high, you stalk me like a lion<br>&nbsp;&nbsp; and again display your awesome power against me.<br>&nbsp; <sup>17</sup> You bring new witnesses against me<br>&nbsp;&nbsp; and increase your anger toward me;<br>&nbsp;&nbsp; your forces come against me wave upon wave.</p>
+<p>&nbsp; <sup>18</sup> “Why then did you bring me out of the womb?<br>&nbsp;&nbsp; I wish I had died before any eye saw me.<br>&nbsp; <sup>19</sup> If only I had never come into being,<br>&nbsp;&nbsp; or had been carried straight from the womb to the grave!<br>&nbsp; <sup>20</sup> Are not my few days almost over?<br>&nbsp;&nbsp; Turn away from me so I can have a moment’s joy<br>&nbsp; <sup>21</sup> before I go to the place of no return,<br>&nbsp;&nbsp; to the land of gloom and utter darkness,<br>&nbsp; <sup>22</sup> to the land of deepest night,<br>&nbsp;&nbsp; of utter darkness and disorder,<br>&nbsp;&nbsp; where even the light is like darkness.”</p>
+
+          </div>
+        <h2>Commentary</h2>
+        <h4>In your life, nothing is impossible with God</h4>
+<p>Sometimes when we see the suffering of others it is tempting to come up with glib explanations. In the advice of Job’s friend, Bildad, we see an extraordinary mixture of truth, half-truth and falsehood (8:1–22).</p>
+<p>When Job replies, he says, ‘Indeed, I know that this is true. But…’ (9:2). In other words, he points out that some of what Bildad said was true, but not all. He rejects his glib explanation of why he is suffering.</p>
+<p>Job’s words are far more authentic. They come from the heart. He cries out to God, ‘I could only plead with my Judge for mercy’ (v.15). He wishes he had never been born (10:18–19). He admits his struggles and doubts, and even his anger at what is happening to him. He says, ‘I loathe my life; therefore I will give free rein to my complaint and speak out in the bitterness of my soul’ (v.1).</p>
+<p>Yet in the midst of all this he recognises that nothing is impossible with God. Job says, ‘God’s wisdom is so deep, God’s power so immense... He moves mountains before they know what’s happened, flips them on their heads on a whim... We’ll never comprehend all the great things he does; his miracle-surprises can’t be counted’ (9:4–5,10, MSG). ‘You gave me life itself, and incredible love. You watched and guarded every breath I took’ (10:12, MSG).</p>
+<p>There is an extraordinary mixture here of honest struggles and faith. Job does not try and pretend that everything is all right, or that he can explain it, yet through it all he clings to what he knows of God.</p>
+<p>God was able to do in Job’s life what was impossible by human effort. God restored Job’s fortunes and ‘blessed the latter part of Job’s life more than the first’ (42:12).</p>
+<p>Whatever struggles you are facing at the moment, however difficult life looks, however impossible the situation seems, it is important to remember his love for you and trust that ‘with God all things are possible’ (Matthew 19:26).</p>
+
+        <h2>Prayer</h2>
+          <div class="border-l-4 pl-4 border-red font-scripture"><p>Lord, thank you for the example of Job – his faithfulness and trust in you even during the struggles of life. My life is in your hands and at your disposal. Thank you for your amazing love. Thank you that with you nothing is impossible.</p>
+</div>
+      </div>
+    </section>
+    
+
+  <section class="prose lg:prose-xl mx-10 bg-stone p-4 mb-4">
+    <h2>Pippa adds</h2>
+    <h2>Matthew 19:16–26</h2>
+<p>A new <a href="https://www.alpha.org/">Alpha</a> term is starting in churches all around the world. It’s so exciting to hear of the hundreds of people joining in online and in person. They are coming to explore the meaning of life.    </p>
+<p>In Matthew 19:26 it says, ‘With God all things are possible.’ I can’t wait to see what God is going to do in the lives of these people this term.</p>
+
+  </section>
+
+  <div class="mx-10 mb-4 grid gap-4 md:grid-cols-3">
+    <section class="prose lg:prose-xl bg-stone p-4">
+      <h2 class="mt-0">Verse of the Day</h2>
+      <h3>Matthew 19:26</h3>
+      <p>‘With God all things are possible.’</p>
+
+    </section>
+
+    
+
+    
+  </div>
+
+  <section
+  class="lg:container mx-auto p-4"
+  x-data="mediumView"
+  id="start"
+>
+  <div class="relative lg:rounded">
+    <div
+      class="flex flex-col items-stretch"
+      style="min-height: 30rem"
+      x-ref="mediaContainer"
+    >
+      
+        <div
+        class="relative bg-cover bg-center w-full bioy-medium"
+        x-show="mediaFocus === 0"
+      >
+          
+            <picture><source type="image/webp" srcset="/assets/img/o2IIH9f3cp-320.webp 320w, /assets/img/o2IIH9f3cp-640.webp 640w, /assets/img/o2IIH9f3cp-800.webp 800w, /assets/img/o2IIH9f3cp-1200.webp 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><source type="image/jpeg" srcset="/assets/img/o2IIH9f3cp-320.jpeg 320w, /assets/img/o2IIH9f3cp-640.jpeg 640w, /assets/img/o2IIH9f3cp-800.jpeg 800w, /assets/img/o2IIH9f3cp-1200.jpeg 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><img class="object-cover h-full w-full absolute filter saturate-0
+        lg:rounded-lg rtl:transform rtl:-scale-x-1" alt="reader" loading="lazy" decoding="async" src="/assets/img/o2IIH9f3cp-320.jpeg" width="1200" height="799"></picture>
+          
+
+          <div
+          class="
+            flex flex-col
+            justify-center
+            relative
+            h-full
+            bg-red bg-opacity-80
+            text-white
+            pl-28
+            pr-4
+            py-6
+            md:pl-36
+            rtl:pl-0 rtl:pr-36
+            lg:rounded-lg
+          "
+        >
+            
+              <div class="max-w-xs">
+
+                <h4 class="text-xl font-bold mb-3">
+                  App
+                </h4>
+                
+                  <p>Download The Bible with Nicky and Pippa Gumbel app for iOS or Android devices and read along each day.</p>
+<ul>
+<li><a href="https://itunes.apple.com/gb/app/bible-in-one-year/id504133402?mt=8">Download for iOS from the App Store</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.multipie.bibleinoneyear&hl=en_GB">Download for Android on Google Play</a></li>
+</ul>
+
+                
+
+                
+
+              </div>
+            
+          </div>
+        </div>
+      
+        <div
+        class="relative bg-cover bg-center w-full bioy-medium"
+        x-show="mediaFocus === 1"
+      >
+          
+            <picture><source type="image/webp" srcset="/assets/img/VaA8S1A2AE-320.webp 320w, /assets/img/VaA8S1A2AE-640.webp 640w, /assets/img/VaA8S1A2AE-800.webp 800w, /assets/img/VaA8S1A2AE-1200.webp 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><source type="image/jpeg" srcset="/assets/img/VaA8S1A2AE-320.jpeg 320w, /assets/img/VaA8S1A2AE-640.jpeg 640w, /assets/img/VaA8S1A2AE-800.jpeg 800w, /assets/img/VaA8S1A2AE-1200.jpeg 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><img class="object-cover h-full w-full absolute filter saturate-0
+        lg:rounded-lg rtl:transform rtl:-scale-x-1" alt="reader" loading="lazy" decoding="async" src="/assets/img/VaA8S1A2AE-320.jpeg" width="1200" height="759"></picture>
+          
+
+          <div
+          class="
+            flex flex-col
+            justify-center
+            relative
+            h-full
+            bg-red bg-opacity-80
+            text-white
+            pl-28
+            pr-4
+            py-6
+            md:pl-36
+            rtl:pl-0 rtl:pr-36
+            lg:rounded-lg
+          "
+        >
+            
+              <div class="max-w-xs">
+
+                <h4 class="text-xl font-bold mb-3">
+                  Email
+                </h4>
+                
+                  <p>Sign up now to receive The Bible with Nicky and Pippa Gumbel in your inbox each morning. You’ll get one email each day.</p>
+
+                
+
+                
+                  <button @click="toggleZohoForm" class="inline-block bg-white rounded p-2 pb-1.5 text-red hover:bg-red hover:text-white transition-colors">Sign up now</button>
+<iframe x-ref="zohoFormIframe" frameborder="0" class="w-full h-full fixed hidden inset-0 z-20" src='https://forms.zohopublic.eu/bioy/form/EnTheBiblewithNickyandPippaGumbelSignup/formperma/483HSv9kvNNpdHod2BaW5pwr_BWq1zL9jcBrtbsmG7o'></iframe>
+<button x-ref="zohoFormCloseButton" @click="toggleZohoForm" class="bg-red fixed hidden p-3 right-4 rounded-full top-2 z-30 lg:right-1/3">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+</button>
+                
+
+              </div>
+            
+          </div>
+        </div>
+      
+        <div
+        class="relative bg-cover bg-center w-full bioy-medium"
+        x-show="mediaFocus === 2"
+      >
+          
+            <picture><source type="image/webp" srcset="/assets/img/RdJg02ZuKy-320.webp 320w, /assets/img/RdJg02ZuKy-640.webp 640w, /assets/img/RdJg02ZuKy-800.webp 800w, /assets/img/RdJg02ZuKy-1200.webp 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><source type="image/jpeg" srcset="/assets/img/RdJg02ZuKy-320.jpeg 320w, /assets/img/RdJg02ZuKy-640.jpeg 640w, /assets/img/RdJg02ZuKy-800.jpeg 800w, /assets/img/RdJg02ZuKy-1200.jpeg 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><img class="object-cover h-full w-full absolute filter saturate-0
+        lg:rounded-lg rtl:transform rtl:-scale-x-1" alt="reader" loading="lazy" decoding="async" src="/assets/img/RdJg02ZuKy-320.jpeg" width="1200" height="780"></picture>
+          
+
+          <div
+          class="
+            flex flex-col
+            justify-center
+            relative
+            h-full
+            bg-red bg-opacity-80
+            text-white
+            pl-28
+            pr-4
+            py-6
+            md:pl-36
+            rtl:pl-0 rtl:pr-36
+            lg:rounded-lg
+          "
+        >
+            
+              <div class="max-w-xs md:max-w-xl lg:max-w-2xl">
+                <div class="lg:max-w-xl">
+                  <h4 class="text-xl font-bold mb-3">Podcast</h4>
+                  <p>Subscribe and listen to The Bible with Nicky and Pippa Gumbel delivered to your favourite podcast app every day.</p>
+
+                </div>
+
+                
+                  <div class="md:flex md:items-center md:justify-center lg:hidden mt-4 md:mt-8">
+                    <div class="relative md:max-w-xs">
+                      
+                        <div class="flex items-center justify-between w-full absolute top-1">
+                          <button class="flex items-center justify-center z-10 px-2" id="previous"><svg class="h-8 w-8 rtl:rotate-180" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#back"></use>
+            </svg></button>
+                          <button class="flex items-center justify-center z-10 px-2" id="next"><svg class="h-8 w-8 rtl:rotate-180" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#forward"></use>
+            </svg></button>
+                        </div>
+                      
+                      <div id="podcast" class="relative overflow-hidden invisible flex flex-col max-w-xs">
+                        <div class="relative overflow-hidden flex items-center">
+
+                          
+                            <div class="relative float-left w-full overflow-hidden">
+                              <div class="space-y-4">
+                                <p class="text-center font-bold">Classic</p>
+                                
+                                  <a href="https://open.spotify.com/show/2pgoH7R1Qg4JTS52cSwUc9?si=pg9OYYb-SNyPkVRb00BeNA&amp;dl_branch=1&quot;" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#spotify_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Spotify</span>
+                                  </a>
+                                
+                                  <a href="https://podcasts.apple.com/gb/podcast/bible-in-one-year-classic/id1462347514" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#apple_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Apple Podcasts</span>
+                                  </a>
+                                
+                                  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hcGkuYmlveWRhdGEuY29tL3Jzcy9wb2RjYXN0" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#google_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Google Podcasts</span>
+                                  </a>
+                                
+                              </div>
+                            </div>
+                          
+                            <div class="relative float-left w-full overflow-hidden">
+                              <div class="space-y-4">
+                                <p class="text-center font-bold">Youth</p>
+                                
+                                  <a href="https://open.spotify.com/show/64lLuiXmbTV66AyW0hTQ38?si=EUM1pZaLQ1mxGODClReIAg&amp;dl_branch=1" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#spotify_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Spotify</span>
+                                  </a>
+                                
+                                  <a href="https://podcasts.apple.com/gb/podcast/bible-in-one-year-youth/id1493330473" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#apple_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Apple Podcasts</span>
+                                  </a>
+                                
+                                  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hcGkuYmlveWRhdGEuY29tL3Jzcy9wb2RjYXN0P3ZhcmlhbnQ9eW91dGg" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#google_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Google Podcasts</span>
+                                  </a>
+                                
+                              </div>
+                            </div>
+                          
+                            <div class="relative float-left w-full overflow-hidden">
+                              <div class="space-y-4">
+                                <p class="text-center font-bold">Express</p>
+                                
+                                  <a href="https://open.spotify.com/show/3OylO6IHxA41cPeOsJODuU?si=fyAdcm4fSXqB2iMemnRCUg&amp;dl_branch=1&quot;" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#spotify_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Spotify</span>
+                                  </a>
+                                
+                                  <a href="https://podcasts.apple.com/gb/podcast/bible-in-one-year-express/id1584089153" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#apple_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Apple Podcasts</span>
+                                  </a>
+                                
+                                  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hcGkuYmlveWRhdGEuY29tL3Jzcy9wb2RjYXN0P3ZhcmlhbnQ9ZXhwcmVzcw" class="podcast-link" style="text-decoration:none">
+                                    
+                                      <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#google_podcasts"></use>
+            </svg>
+                                    
+                                    <span>Google Podcasts</span>
+                                  </a>
+                                
+                              </div>
+                            </div>
+                          
+
+                        </div>
+                      </div>
+
+                      
+                        <div class="flex items-center justify-center space-x-1 rtl:space-x-reverse mt-4">
+                          
+                            <button data-index="0" class="podcast-pagination"></button>
+                          
+                            <button data-index="1" class="podcast-pagination"></button>
+                          
+                            <button data-index="2" class="podcast-pagination"></button>
+                          
+                        </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="hidden lg:flex  rtl:space-x-reverse lg:mt-8  lg:space-x-6 ">
+                    
+                      <div class="space-y-4">
+                        <p class="font-bold">Classic</p>
+                        
+                          <a href="https://open.spotify.com/show/2pgoH7R1Qg4JTS52cSwUc9?si=pg9OYYb-SNyPkVRb00BeNA&amp;dl_branch=1&quot;" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#spotify_podcasts"></use>
+            </svg>
+                            
+                            <span>Spotify</span>
+                          </a>
+                        
+                          <a href="https://podcasts.apple.com/gb/podcast/bible-in-one-year-classic/id1462347514" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#apple_podcasts"></use>
+            </svg>
+                            
+                            <span>Apple Podcasts</span>
+                          </a>
+                        
+                          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hcGkuYmlveWRhdGEuY29tL3Jzcy9wb2RjYXN0" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#google_podcasts"></use>
+            </svg>
+                            
+                            <span>Google Podcasts</span>
+                          </a>
+                        
+                      </div>
+                    
+                      <div class="space-y-4">
+                        <p class="font-bold">Youth</p>
+                        
+                          <a href="https://open.spotify.com/show/64lLuiXmbTV66AyW0hTQ38?si=EUM1pZaLQ1mxGODClReIAg&amp;dl_branch=1" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#spotify_podcasts"></use>
+            </svg>
+                            
+                            <span>Spotify</span>
+                          </a>
+                        
+                          <a href="https://podcasts.apple.com/gb/podcast/bible-in-one-year-youth/id1493330473" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#apple_podcasts"></use>
+            </svg>
+                            
+                            <span>Apple Podcasts</span>
+                          </a>
+                        
+                          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hcGkuYmlveWRhdGEuY29tL3Jzcy9wb2RjYXN0P3ZhcmlhbnQ9eW91dGg" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#google_podcasts"></use>
+            </svg>
+                            
+                            <span>Google Podcasts</span>
+                          </a>
+                        
+                      </div>
+                    
+                      <div class="space-y-4">
+                        <p class="font-bold">Express</p>
+                        
+                          <a href="https://open.spotify.com/show/3OylO6IHxA41cPeOsJODuU?si=fyAdcm4fSXqB2iMemnRCUg&amp;dl_branch=1&quot;" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#spotify_podcasts"></use>
+            </svg>
+                            
+                            <span>Spotify</span>
+                          </a>
+                        
+                          <a href="https://podcasts.apple.com/gb/podcast/bible-in-one-year-express/id1584089153" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#apple_podcasts"></use>
+            </svg>
+                            
+                            <span>Apple Podcasts</span>
+                          </a>
+                        
+                          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hcGkuYmlveWRhdGEuY29tL3Jzcy9wb2RjYXN0P3ZhcmlhbnQ9ZXhwcmVzcw" class="podcast-link" style="text-decoration:none">
+                            
+                              <svg class="h-8 w-8" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#google_podcasts"></use>
+            </svg>
+                            
+                            <span>Google Podcasts</span>
+                          </a>
+                        
+                      </div>
+                    
+                  </div>
+                
+
+              </div>
+            
+          </div>
+        </div>
+      
+        <div
+        class="relative bg-cover bg-center w-full bioy-medium"
+        x-show="mediaFocus === 3"
+      >
+          
+            <picture><source type="image/webp" srcset="/assets/img/Tc2YebU1ft-320.webp 320w, /assets/img/Tc2YebU1ft-640.webp 640w, /assets/img/Tc2YebU1ft-800.webp 800w, /assets/img/Tc2YebU1ft-1200.webp 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><source type="image/jpeg" srcset="/assets/img/Tc2YebU1ft-320.jpeg 320w, /assets/img/Tc2YebU1ft-640.jpeg 640w, /assets/img/Tc2YebU1ft-800.jpeg 800w, /assets/img/Tc2YebU1ft-1200.jpeg 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><img class="object-cover h-full w-full absolute filter saturate-0
+        lg:rounded-lg rtl:transform rtl:-scale-x-1" alt="reader" loading="lazy" decoding="async" src="/assets/img/Tc2YebU1ft-320.jpeg" width="1200" height="897"></picture>
+          
+
+          <div
+          class="
+            flex flex-col
+            justify-center
+            relative
+            h-full
+            bg-red bg-opacity-80
+            text-white
+            pl-28
+            pr-4
+            py-6
+            md:pl-36
+            rtl:pl-0 rtl:pr-36
+            lg:rounded-lg
+          "
+        >
+            
+              <div class="max-w-xs">
+
+                <h4 class="text-xl font-bold mb-3">
+                  Website
+                </h4>
+                
+                  <p>Start reading today’s devotion right here on The Bible with Nicky and Pippa Gumbel website.</p>
+
+                
+
+                
+                  <a href="#todays-devotion" class="whiteButton">Read now</a>
+                
+
+              </div>
+            
+          </div>
+        </div>
+      
+        <div
+        class="relative bg-cover bg-center w-full bioy-medium"
+        x-show="mediaFocus === 4"
+      >
+          
+            <picture><source type="image/webp" srcset="/assets/img/NqYO5ZJLnp-320.webp 320w, /assets/img/NqYO5ZJLnp-640.webp 640w, /assets/img/NqYO5ZJLnp-800.webp 800w, /assets/img/NqYO5ZJLnp-1200.webp 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><source type="image/jpeg" srcset="/assets/img/NqYO5ZJLnp-320.jpeg 320w, /assets/img/NqYO5ZJLnp-640.jpeg 640w, /assets/img/NqYO5ZJLnp-800.jpeg 800w, /assets/img/NqYO5ZJLnp-1200.jpeg 1200w" sizes="(min-width: 1526px) calc(1536px - 2rem), (min-width: 1280px)
+        calc(1280px - 2rem), (min-width: 1024px) calc(1024px - 2rem), calc(100vw
+        - 2rem)"><img class="object-cover h-full w-full absolute filter saturate-0
+        lg:rounded-lg rtl:transform rtl:-scale-x-1" alt="reader" loading="lazy" decoding="async" src="/assets/img/NqYO5ZJLnp-320.jpeg" width="1200" height="799"></picture>
+          
+
+          <div
+          class="
+            flex flex-col
+            justify-center
+            relative
+            h-full
+            bg-red bg-opacity-80
+            text-white
+            pl-28
+            pr-4
+            py-6
+            md:pl-36
+            rtl:pl-0 rtl:pr-36
+            lg:rounded-lg
+          "
+        >
+            
+              <div class="max-w-xs">
+
+                <h4 class="text-xl font-bold mb-3">
+                  Book
+                </h4>
+                
+                  <p>The Bible with Nicky and Pippa Gumbel Commentary is available as a book.</p>
+<ul>
+<li><a href="https://shop.alpha.org/bible-in-one-year">Buy from the Alpha Shop</a></li>
+<li><a href="https://clcbookshops.com/product/bible-in-one-year-the-a-commentary-by-nicky-gumbel-hard-cover-gumbel-nicky-hodder-stoughton-9781473677067">Buy from CLC Bookshops</a></li>
+</ul>
+
+                
+
+                
+
+              </div>
+            
+          </div>
+        </div>
+      
+    </div>
+
+    <div
+      class="
+        hidden
+        top-0
+        h-full
+        flex flex-col
+        absolute
+        w-24
+        fill-current
+        text-red
+      "
+      x-ref="mediaNav"
+    >
+      
+        
+          <button
+              class="
+                flex-1 flex flex-col
+                items-center
+                justify-center
+                bg-opacity-90
+                lg:rtl:rounded-tr-lg
+                lg:rtl:rounded-tl-none
+                lg:rounded-tl-lg
+                
+              "
+              :class="mediaClass(0)"
+              @click="mediaFocus = 0"
+              style="min-height: 6rem"
+            >
+            
+              <svg class="fill-current h-10 w-10 mb-1" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#medium_app"></use>
+            </svg>
+            
+            <div>App</div>
+          </button>
+        
+      
+        
+          <button
+              class="
+                flex-1 flex flex-col
+                items-center
+                justify-center
+                bg-opacity-90
+                lg:rtl:rounded-tr-lg
+                lg:rtl:rounded-tl-none
+                
+                
+              "
+              :class="mediaClass(1)"
+              @click="mediaFocus = 1"
+              style="min-height: 6rem"
+            >
+            
+              <svg class="fill-current h-10 w-10 mb-1" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#medium_email"></use>
+            </svg>
+            
+            <div>Email</div>
+          </button>
+        
+      
+        
+          <button
+              class="
+                flex-1 flex flex-col
+                items-center
+                justify-center
+                bg-opacity-90
+                lg:rtl:rounded-tr-lg
+                lg:rtl:rounded-tl-none
+                
+                
+              "
+              :class="mediaClass(2)"
+              @click="mediaFocus = 2"
+              style="min-height: 6rem"
+            >
+            
+              <svg class="fill-current h-10 w-10 mb-1" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#medium_podcast"></use>
+            </svg>
+            
+            <div>Podcast</div>
+          </button>
+        
+      
+        
+          <button
+              class="
+                flex-1 flex flex-col
+                items-center
+                justify-center
+                bg-opacity-90
+                lg:rtl:rounded-tr-lg
+                lg:rtl:rounded-tl-none
+                
+                
+              "
+              :class="mediaClass(3)"
+              @click="mediaFocus = 3"
+              style="min-height: 6rem"
+            >
+            
+              <svg class="fill-current h-10 w-10 mb-1" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#medium_website"></use>
+            </svg>
+            
+            <div>Website</div>
+          </button>
+        
+      
+        
+          <button
+              class="
+                flex-1 flex flex-col
+                items-center
+                justify-center
+                bg-opacity-90
+                lg:rtl:rounded-tr-lg
+                lg:rtl:rounded-tl-none
+                
+                lg:rounded-bl-lg
+              "
+              :class="mediaClass(4)"
+              @click="mediaFocus = 4"
+              style="min-height: 6rem"
+            >
+            
+              <svg class="fill-current h-10 w-10 mb-1" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#medium_book"></use>
+            </svg>
+            
+            <div>Book</div>
+          </button>
+        
+      
+    </div>
+  </div>
+</section>
+
+  <section class="mx-10 py-4 prose lg:prose-xl">
+    <h2>References</h2>
+    <div class="prose-sm">
+      <p>Norman Vincent Peale, <em>The Power of Positive Thinking,</em> (Prentice-Hall, 1952)</p>
+<p>Unless otherwise stated, Scripture quotations taken from the Holy Bible, New International Version Anglicised, Copyright © 1979, 1984, 2011 Biblica, formerly International Bible Society. Used by permission of Hodder &amp; Stoughton Publishers, an Hachette UK company. All rights reserved. ‘NIV’ is a registered trademark of Biblica. UK trademark number 1448790.</p>
+<p>Scripture marked (MSG) taken from The Message. Copyright © 1993, 1994, 1995, 1996, 2000, 2001, 2002. Used by permission of NavPress Publishing Group.</p>
+
+    </div>
+  </section>
+</article>
+
+<div>
+  
+    <div class="top-0 left-0 p-4 flex items-center h-screen fixed">
+      <a href="/en/classic/27" title="Previous" class="bg-white shadow-lg rounded-full hover:text-red transition-colors">
+        <svg class="relative -left-0.5 fill-current h-8 w-8 md:h-12 md:w-12" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#back"></use>
+            </svg>
+      </a>
+    </div>
+  
+
+  
+    <div class="top-0 right-0 p-4 flex items-center h-screen fixed">
+      <a href="/en/classic/29" title="Next" class="bg-white shadow-lg rounded-full hover:text-red transition-colors">
+        <svg class="relative left-0.5 fill-current h-8 w-8 md:h-12 md:w-12" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#forward"></use>
+            </svg>
+      </a>
+    </div>
+  
+</div>
+
+
+  <div  class="px-4 lg:max-w-2xl container mx-auto left-0 right-0 fixed bottom-24 md:bottom-11">
+    
+    
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+
+<section x-cloak x-data="audioPlayer" x-init="getChapters([{&quot;start&quot;:7.524,&quot;title&quot;:&quot;INTRODUCTION&quot;},{&quot;start&quot;:56.335,&quot;title&quot;:&quot;WISDOM BIBLE&quot;},{&quot;start&quot;:126.335,&quot;title&quot;:&quot;WISDOM COMMENTARY&quot;},{&quot;start&quot;:223.335,&quot;title&quot;:&quot;NEW TESTAMENT BIBLE&quot;},{&quot;start&quot;:361.335,&quot;title&quot;:&quot;NEW TESTAMENT COMMENTARY&quot;},{&quot;start&quot;:604.335,&quot;title&quot;:&quot;OLD TESTAMENT BIBLE&quot;},{&quot;start&quot;:1118.335,&quot;title&quot;:&quot;OLD TESTAMENT COMMENTARY&quot;},{&quot;start&quot;:1258.335,&quot;title&quot;:&quot;PIPPA ADDS&quot;}])" >
+    
+    <button x-cloak x-show="!isPlaying" class="absolute ltr:right-1 rtl:left-0 bottom-4 inline-flex items-center justify-center overflow-hidden rounded-full hover:bg-red/10 active:bg-red/20 focus:outline-none focus-visible:ring focus:ring-red/10 transition duration-100 ease-out hover:ease-in active:ease-in bg-white shadow-md" @click="showAudioPlayer()">
+        <svg class="h-20 w-20 -rotate-90 rounded-full">
+            <circle class="text-red" stroke-width="3" :stroke-dasharray="circumference" :stroke-dashoffset="circumference - progress / 100 * circumference" stroke-linecap="round" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40"/>
+        </svg>
+        <svg class="absolute audio__icons" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#play"></use>
+            </svg>
+    </button>
+
+    <div x-cloak x-show="isPlaying" class="bg-[#F5F5F5] pt-[34px] pb-4 rounded-2xl" 
+        x-transition:enter="transition ease-out duration-300 origin-top-right"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-out duration-300"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-90">
+        <div class="px-[16px] md:px-[26px]">
+            <div class="grid grid-cols-6 grid-rows-1 text-xs sm:text-sm md:text-base font-medium">
+                <select x-model="playrate" x-effect="changePlayrate()" class="max-w-fit appearance-none focus:outline-none bg-transparent">
+                    <option value="0.8">0.8x</option>
+                    <option value="1">1x</option>
+                    <option value="1.2">1.2x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="1.8">1.8x</option>
+                    <option value="2">2x</option>
+                </select>
+                <div class="col-start-2 col-end-6 min-w-fit flex items-center justify-center text-xs sm:text-sm md:text-base">
+                    <p x-show="showBioyTitle" class="uppercase">The Bible with Nicky and Pippa Gumbel</p>
+                    <ul>
+                        
+                            
+                                <li x-show="showChapterTitle(7.524, 56.335)">
+                                    INTRODUCTION
+                                </li>
+                            
+                                <li x-show="showChapterTitle(56.335, 126.335)">
+                                    WISDOM BIBLE
+                                </li>
+                            
+                                <li x-show="showChapterTitle(126.335, 223.335)">
+                                    WISDOM COMMENTARY
+                                </li>
+                            
+                                <li x-show="showChapterTitle(223.335, 361.335)">
+                                    NEW TESTAMENT BIBLE
+                                </li>
+                            
+                                <li x-show="showChapterTitle(361.335, 604.335)">
+                                    NEW TESTAMENT COMMENTARY
+                                </li>
+                            
+                                <li x-show="showChapterTitle(604.335, 1118.335)">
+                                    OLD TESTAMENT BIBLE
+                                </li>
+                            
+                                <li x-show="showChapterTitle(1118.335, 1258.335)">
+                                    OLD TESTAMENT COMMENTARY
+                                </li>
+                            
+                                <li x-show="showChapterTitle(1258.335, )">
+                                    PIPPA ADDS
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+            <input  x-ref="input" class="w-full mt-[23px]" type="range" min="0" max="100" x-model="range" :value="progress">
+            <div class="flex justify-between items-center font-normal mt-[8px] text-xs sm:text-sm md:text-base">
+                <span x-text="progressTime"></span>
+                <span x-text="totalTime"></span>
+            </div>
+            <div class="mt-[20px]">
+                <audio x-ref="audio" preload="metadata">
+                    <source src="https://audio.bioy.app/uploads/production/classic/en-gb/28_CLASSIC_en-GB.mp3" type="audio/mpeg">
+                    <p>Your browser doesn't support HTML5 audio. Here is a <a href="https://audio.bioy.app/uploads/production/classic/en-gb/28_CLASSIC_en-GB.mp3">link to the audio</a> instead.</p>
+                </audio>
+                <div class="flex justify-between md:max-w-md mx-auto">
+                    <button class="audio__controls" @click="previousTrack()" >
+                        <svg class="audio__icons" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#skip-back"></use>
+            </svg>
+                    </button>
+                    <button x-ref="seekBackward" class="audio__controls"  @click="seekBackward()" >
+                        <svg class="audio__icons" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#speed-back"></use>
+            </svg>
+                    </button>
+                    <button class="audio__controls" @click="player()" :class="isPlaying ? 'bg-red/10': '' ">
+                        <template x-if="!isPlaying">
+                            <svg class="audio__icons" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#play"></use>
+            </svg>
+                        </template>
+                        <template x-if="isPlaying">
+                            <svg class="audio__icons" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#pause"></use>
+            </svg>
+                        </template>
+                    </button>
+                    <button x-ref="seekForward" class="audio__controls"  @click="seekForward()" >
+                        <svg class="audio__icons" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#speed-forwards"></use>
+            </svg>
+                    </button>
+                    <button class="audio__controls" @click="nextTrack()" >
+                        <svg class="audio__icons" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#skip-forwards"></use>
+            </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  </div>
+
+</div>
+
+    </main>
+
+    <footer>
+  <p class="p-4 mt-12 font-medium text-lg text-center md:text-xl md:text-auto lg:container lg:mx-auto">
+    The Bible with Nicky and Pippa Gumbel
+  </p>
+
+  <div class="bg-stone text-center md:text-auto mb-16 md:mb-0">
+
+    <div class="lg:container p-4 mx-auto grid gap-4 md:grid-cols-2">
+      <div>
+        Start every day in the Bible.
+
+        <div class="mt-4 mb-4">
+          Download the app today
+
+          <div class="max-w-sm grid gap-4 grid-cols-2 md:flex mx-auto md:mx-0">
+            <a href="https://apps.apple.com/gb/app/bible-in-one-year/id504133402" class="block" target="_blank" rel="noopener">
+              <svg class="h-16 w-full md:w-32" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#app-store-ios"></use>
+            </svg>
+              <span class="visually-hidden">Download on the App Store</span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.multipie.bibleinoneyear&amp;hl=en_GB" class="block" target="_blank" rel="noopener">
+              <svg class="h-16 w-full md:w-32" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#app-store-android"></use>
+            </svg>
+              <span class="visually-hidden">Get it on Google Play</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="inline-flex gap-2 items-center justify-center md:justify-start">
+          
+            <a href="https://instagram.com/nickygumbel" rel="noopener" target="_blank" class="flex items-center justify-center rounded-full bg-red text-white fill-current h-10 w-10 hover:bg-red-dark">
+              <svg class="h-6 w-6 fill-current" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#instagram"></use>
+            </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          
+
+          
+            <a href="https://facebook.com/nickygumbel" rel="noopener" target="_blank" class="flex items-center justify-center rounded-full bg-red text-white fill-current h-10 w-10 hover:bg-red-dark">
+              <svg class="h-6 w-6 fill-current" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#facebook"></use>
+            </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          
+
+          
+            <a href="https://twitter.com/nickygumbel" rel="noopener" target="_blank" class="flex items-center justify-center rounded-full bg-red text-white fill-current h-10 w-10 hover:bg-red-dark">
+              <svg class="h-6 w-6 fill-current" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#twitter"></use>
+            </svg>
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          
+          
+            <a href="/en/faqs/ticket/" rel="noopener" target="_blank" class="flex items-center justify-center rounded-full bg-red text-white fill-current h-10 w-10 hover:bg-red-dark">
+              <svg class="h-6 w-6 fill-current" role="img" aria-hidden="true">
+              <use xlink:href="/assets/svg/sprite.svg?1702880124#contact"></use>
+            </svg>
+              <span class="visually-hidden">Contact</span>
+            </a>
+          
+        </div>
+
+      </div>
+
+      <ul class="md:grid md:gap-4 md:grid-cols-2 md:w-2/3 md:justify-self-end md:mt-8">
+        
+          <li class="inline-block">
+            <a href="https://www.alpha.org/" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline" target="_blank" rel="noopener">
+              Alpha</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="https://bibleinoneyear.org/en/faqs/ticket/" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline">
+              Contact</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="https://www.htb.org/" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline" target="_blank" rel="noopener">
+              HTB Church</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="https://themarriagecourse.org/" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline" target="_blank" rel="noopener">
+              The Marriage Course</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="/en/donate" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline">
+              Donate</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="/en/faqs" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline">
+              FAQs</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="/en/privacy-policy/" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline">
+              Privacy</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="/en/cookies/" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline">
+              Cookies</a>
+          </li>
+        
+          <li class="inline-block">
+            <a href="/en/faqs/ticket/" class="inline-block p-2 md:p-0 underline text-red hover:text-red-darker hover:no-underline">
+              Contact</a>
+          </li>
+        
+      </ul>
+
+      <div class="text-xs text-grey">
+        
+          <p class="my-2">The Bible with Nicky and Pippa Gumbel is part of Alpha International. Alpha International is a charity registered in England &amp; Wales (no. 1086179) and in Scotland (no. SC042906) and a private company limited by guarantee and registered in England &amp; Wales (no. 4157379). The registered office is at HTB Brompton Road SW7 1JA.</p>
+        
+        
+          <p class="my-2">&copy; Copyright Alpha International
+            2023</p>
+        
+      </div>
+    </div>
+  </footer>
+
+    <div x-show="isCookieBoxOpen" class="fixed bottom-20 z-10 bg-white bg-opacity-90 drop-shadow-lg filter right-4 left-4 p-4 flex flex-col sm:bottom-24 md:bottom-4 md:max-w-md md:right-auto">
+      <p class="text-sm">This website stores data such as cookies to enable necessary site functionality and analytics.
+        <a class="text-red underline hover:text-red-darker md:block" href="/en/cookies">Find out more</a>
+      </p>
+      <button class="mt-2 btn bg-red text-white hover:bg-red-dark" @click="acceptCookies()">Close</button>
+    </div>
+
+    <script src="/assets/js/app.js?1702880124" defer></script>
+    <!-- last build: production | Mon Dec 18 2023 09:15:24 GMT+0300 (East Africa Time) -->
+  </body>
+</html>

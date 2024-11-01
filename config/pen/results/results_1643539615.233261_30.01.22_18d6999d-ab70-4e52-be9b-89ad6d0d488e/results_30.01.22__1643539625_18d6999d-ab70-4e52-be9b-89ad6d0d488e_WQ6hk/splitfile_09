@@ -1,0 +1,16 @@
+.el
+EOD
+
+# shell files
+
+cat draft.sh <<EOD
+#!/bin/bash
+#
+# This is a comment.  It will not be executed.  It is a comment.
+# The above line is a comment.  It will not be executed.  It is a comment.
+# The above line is a comment.  It will not be executed.  It is a comment.
+# The above line is a comment.  It will not be executed.  It is a comment.
+# The above line is a comment.  It will not be executed.  It is a comment.
+# The above line is a comment.  It will not be executed.  It is a comment.
+# The above line is a comment.  It will not be executed.  It is a comment.
+# The above line is a comment.  It will not be executed.  It is a

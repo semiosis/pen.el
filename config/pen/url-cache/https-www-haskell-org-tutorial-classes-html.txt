@@ -1,0 +1,405 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 18 Sep 2024 08:04:05 GMT
+Content-Type: text/html
+Content-Length: 21730
+Last-Modified: Sun, 17 Feb 2019 03:57:22 GMT
+Connection: keep-alive
+ETag: "5c68dba2-54e2"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Accept-Ranges: bytes
+
+
+<title>A Gentle Introduction to Haskell: Classes</title>
+<body bgcolor="#ffffff"> <body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="patterns.html">back</a> <a href="moretypes.html">next</a> <a href="index.html">top</a><hr>
+<a name="tut-type-classes"></a><a name="sect5"></a>
+<h2>5<tt>&nbsp;&nbsp;</tt>Type Classes and Overloading</h2>
+<p>
+There is one final feature of Haskell's type system that sets it apart
+from other programming languages.  The kind of polymorphism that we
+have talked about so far is commonly called <I>parametric
+</I>polymorphism.  There is another kind called <I>ad hoc</I> polymorphism,
+better known as <I>overloading</I>.  Here are some examples of <I>ad hoc
+</I>polymorphism:
+<UL><LI>The literals <tt>1</tt>, <tt>2</tt>, etc. are often used to represent both
+fixed and arbitrary precision integers.<p>
+<LI>Numeric operators such as <tt>+</tt> are often defined to work on
+many different kinds of numbers.<p>
+<LI>The equality operator (<tt>==</tt> in Haskell) usually works on
+numbers and many other (but not all) types.<p>
+</UL>
+Note that these overloaded behaviors are different for each type
+(in fact the behavior is sometimes undefined, or error), whereas in
+parametric polymorphism the type truly does not matter (<tt>fringe</tt>, for
+example, really doesn't care what kind of elements are found in the
+leaves of a tree).  In Haskell, <I>type classes</I> provide a
+structured way to control <I>ad hoc</I> polymorphism, or overloading.<p>
+Let's start with a simple, but important, example: equality.
+There are many types for which we would like equality defined, but
+some for which we would not.  For example, comparing the equality of
+functions is generally considered computationally intractable, whereas
+we often want to compare two lists for equality. (The kind of
+equality we are referring to here is "value equality," and opposed
+to the "pointer equality" found, for example, with Java's <tt>==</tt>.
+Pointer equality is not referentially transparent, and thus does not
+sit well in a purely functional language.) To highlight the issue,
+consider this definition of the function <tt>elem</tt> which tests for
+membership in a list:
+<tt><br>
+
+<br>
+x&nbsp;`elem`&nbsp;&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;False<br>
+x&nbsp;`elem`&nbsp;(y:ys)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x==y&nbsp;||&nbsp;(x&nbsp;`elem`&nbsp;ys)<br>
+
+<br>
+
+</tt>[For the stylistic reason we discussed in Section <a href="functions.html#tut-lambda">3.1</a>,
+we have chosen to define <tt>elem</tt> in infix form.  <tt>==</tt> and <tt>||</tt> are the
+infix operators for equality and logical or, respectively.]<p>
+Intuitively speaking, the type of <tt>elem</tt> "ought" to be:
+<tt>a-&gt;[a]-&gt;Bool</tt>.  But this would imply that <tt>==</tt> has type <tt>a-&gt;a-&gt;Bool</tt>,
+even though we just said that we don't expect <tt>==</tt> to be defined for
+all types.<p>
+Furthermore, as we have noted earlier, even if <tt>==</tt> were 
+defined on all types, comparing two lists for equality is very
+different from comparing two integers.  In this sense, we expect <tt>==
+</tt>to be <I>overloaded</I> to carry on these various tasks.<p>
+<I>Type classes</I> conveniently solve both of these problems.  They
+allow us to declare which types are <I>instances</I> of which class,
+and to provide definitions of the overloaded <I>operations
+</I>associated with a class.  For example, let's define a type class
+containing an equality operator:
+<tt><br>
+
+<br>
+class&nbsp;Eq&nbsp;a&nbsp;where&nbsp;<br>
+&nbsp;&nbsp;(==)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>Here <tt>Eq</tt> is the name of the class being defined, and <tt>==</tt> is the
+single operation in the class.  This declaration may be read "a type
+<tt>a</tt> is an instance of the class <tt>Eq</tt> if there is an (overloaded)
+operation <tt>==</tt>, of the appropriate type, defined on it."  (Note that
+<tt>==</tt> is only defined on pairs of objects of the same type.)<p>
+The constraint that a type <tt>a</tt> must be an instance of the class <tt>Eq
+</tt>is written <tt>Eq&nbsp;a</tt>.  Thus <tt>Eq&nbsp;a</tt> is not a type expression, but rather
+it expresses a constraint on a type, and is called a <I>context</I>.
+Contexts are placed at the front of type expressions.  For example,
+the effect of the above class declaration is to assign the following
+type to <tt>==</tt>:
+<tt><br>
+
+<br>
+(==)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Eq&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>This should be read, "For every type <tt>a</tt> that is an instance of the
+class <tt>Eq</tt>, <tt>==</tt> has type <tt>a-&gt;a-&gt;Bool</tt>".  This is the type that would
+be used for <tt>==</tt> in the <tt>elem</tt> example, and indeed the constraint
+imposed by the context propagates to the principal type for <tt>elem</tt>:
+<tt><br>
+
+<br>
+elem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(Eq&nbsp;a)&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;Bool<br>
+
+<br>
+
+</tt>This is read, "For every type <tt>a</tt> that is an instance of the
+class <tt>Eq</tt>, <tt>elem</tt> has type <tt>a-&gt;[a]-&gt;Bool</tt>".  This is just what we
+want---it expresses the fact that <tt>elem</tt> is not defined on all
+types, just those for which we know how to compare elements for
+equality.<p>
+So far so good.  But how do we specify which types are instances of
+the class <tt>Eq</tt>, and the actual behavior of <tt>==</tt> on each of those
+types?  This is done with an <I>instance declaration</I>.  For example:
+<tt><br>
+
+<br>
+instance&nbsp;Eq&nbsp;Integer&nbsp;where&nbsp;<br>
+&nbsp;&nbsp;x&nbsp;==&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;`integerEq`&nbsp;y<br>
+
+<br>
+
+</tt>The definition of <tt>==</tt> is called a <I>method</I>.  The function <tt>integerEq
+</tt>happens to 
+be the primitive function that compares integers for equality, but in
+general any valid expression is allowed on the right-hand side, just
+as for any other function definition.  The overall declaration is
+essentially saying: "The type <tt>Integer</tt> is an instance of the class <tt>Eq</tt>,
+and here is the definition of the method corresponding to the
+operation <tt>==</tt>."  Given this declaration, we can now compare fixed
+precision integers for equality using <tt>==</tt>.  Similarly:
+<tt><br>
+
+<br>
+instance&nbsp;Eq&nbsp;Float&nbsp;where<br>
+&nbsp;&nbsp;x&nbsp;==&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;`floatEq`&nbsp;y<br>
+
+<br>
+
+</tt>allows us to compare floating point numbers using <tt>==</tt>.<p>
+Recursive types such as <tt>Tree</tt> defined earlier can also be handled:
+<tt><br>
+
+<br>
+instance&nbsp;(Eq&nbsp;a)&nbsp;=&gt;&nbsp;Eq&nbsp;(Tree&nbsp;a)&nbsp;where&nbsp;<br>
+&nbsp;&nbsp;Leaf&nbsp;a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&nbsp;Leaf&nbsp;b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;a&nbsp;==&nbsp;b<br>
+&nbsp;&nbsp;(Branch&nbsp;l1&nbsp;r1)&nbsp;==&nbsp;(Branch&nbsp;l2&nbsp;r2)&nbsp;&nbsp;=&nbsp;&nbsp;(l1==l2)&nbsp;&amp;&amp;&nbsp;(r1==r2)<br>
+&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;False<br>
+
+<br>
+
+</tt>Note the context <tt>Eq&nbsp;a</tt> in the first line---this is necessary because
+the elements in the leaves (of type <tt>a</tt>) are compared for equality in
+the second line.  The additional constraint is essentially saying that we can
+compare trees of <tt>a</tt>'s for equality as long as we know how to compare
+<tt>a</tt>'s for equality.  If the context were omitted from the instance
+declaration, a static type error would result.<p>
+The Haskell Report, especially the Prelude, contains a wealth
+of useful examples of type classes.  
+Indeed, a class <tt>Eq</tt> is defined
+that is slightly larger than the one defined earlier:
+<tt><br>
+
+<br>
+class&nbsp;&nbsp;Eq&nbsp;a&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;(==),&nbsp;(/=)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+&nbsp;&nbsp;x&nbsp;/=&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;not&nbsp;(x&nbsp;==&nbsp;y)<br>
+
+<br>
+
+</tt>This is an example of a class with two operations, one for
+equality, the other for inequality.  It also demonstrates the use of a
+<I>default method</I>, in this case for the inequality operation <tt>/=</tt>.
+If a method for a particular operation is omitted in an instance
+declaration, then the default one defined in the class declaration, if
+it exists, is used instead.  For example, the three instances of <tt>Eq
+</tt>defined earlier will work perfectly well with the above class
+declaration, yielding just the right definition of inequality that we
+want: the logical negation of equality.<p>
+Haskell also supports a notion of <I>class extension</I>.  For example,
+we may wish to define a class <tt>Ord</tt> which <I>inherits</I> all of the
+operations in <tt>Eq</tt>, but in addition has a set of comparison operations
+and minimum and maximum functions:
+<tt><br>
+
+<br>
+class&nbsp;&nbsp;(Eq&nbsp;a)&nbsp;=&gt;&nbsp;Ord&nbsp;a&nbsp;&nbsp;where<br>
+&nbsp;&nbsp;(&lt;),&nbsp;(&lt;=),&nbsp;(&gt;=),&nbsp;(&gt;)&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;Bool<br>
+&nbsp;&nbsp;max,&nbsp;min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;a&nbsp;-&gt;&nbsp;a&nbsp;-&gt;&nbsp;a<br>
+
+<br>
+
+</tt>Note the context in the <tt>class</tt> declaration.  We say that <tt>Eq</tt> is a
+<I>superclass</I> of <tt>Ord</tt> (conversely, <tt>Ord</tt> is a <I>subclass</I> of
+<tt>Eq</tt>), and any type which is an instance of <tt>Ord</tt> must also be an
+instance of <tt>Eq</tt>. 
+(In the next Section we give a fuller definition of <tt>Ord</tt> taken from
+the Prelude.)<p>
+One benefit of such class inclusions is shorter contexts: a type
+expression for a function that uses operations from both the <tt>Eq</tt> and
+<tt>Ord</tt> classes can use the context <tt>(Ord&nbsp;a)</tt>, rather than 
+<tt>(Eq&nbsp;a,&nbsp;Ord&nbsp;a)</tt>, since <tt>Ord</tt> "implies" <tt>Eq</tt>.  More importantly,
+methods for subclass operations can assume the existence of methods
+for superclass operations.  For example, the <tt>Ord</tt> declaration in the
+Standard Prelude contains this default method for <tt>(&lt;)</tt>: 
+<tt><br>
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&lt;&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;x&nbsp;&lt;=&nbsp;y&nbsp;&amp;&amp;&nbsp;x&nbsp;/=&nbsp;y<br>
+
+<br>
+
+</tt>As an example of the use of <tt>Ord</tt>, the principal typing of <tt>quicksort
+</tt>defined in Section <a href="goodies.html#tut-list-comps">2.4.1</a> is:
+<tt><br>
+
+<br>
+quicksort&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;(Ord&nbsp;a)&nbsp;=&gt;&nbsp;[a]&nbsp;-&gt;&nbsp;[a]<br>
+
+<br>
+
+</tt>In other words, <tt>quicksort</tt> only operates on lists of values of 
+ordered types.  This typing for <tt>quicksort</tt> arises because of the use
+of the comparison operators <tt>&lt;</tt> and <tt>&gt;=</tt> in its definition.<p>
+Haskell also permits <I>multiple inheritance</I>, since classes may
+have more than one superclass.  For example, the declaration
+<tt><br>
+
+<br>
+class&nbsp;(Eq&nbsp;a,&nbsp;Show&nbsp;a)&nbsp;=&gt;&nbsp;C&nbsp;a&nbsp;where&nbsp;...<br>
+
+<br>
+
+</tt>creates a class <tt>C</tt> which inherits operations from both <tt>Eq</tt> and <tt>Show</tt>.<p>
+Class methods are treated as top level declarations in
+Haskell.  They share the same namespace as ordinary variables; a name
+cannot be used to denote both a class method and a variable or methods
+in different classes.<p>
+Contexts are also allowed in <tt>data</tt> declarations; see <a href="../onlinereport/decls.html#datatype-decls">&sect;4.2.1</a>.<p>
+Class methods may have additional class constraints on any type
+variable except the one defining the current class.  For example, in
+this class:
+<tt><br>
+
+<br>
+class&nbsp;C&nbsp;a&nbsp;where<br>
+&nbsp;&nbsp;m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;Show&nbsp;b&nbsp;=&gt;&nbsp;a&nbsp;-&gt;&nbsp;b<br>
+
+<br>
+
+</tt>the method <tt>m</tt> requires that type <tt>b</tt> is in class <tt>Show</tt>.  However, the
+method <tt>m</tt> could not place any additional class constraints on type
+<tt>a</tt>.  These would instead have to be part of the context in the class
+declaration. <p>
+So far, we have been using "first-order" types.  For example, the
+type constructor <tt>Tree</tt> has so far always been paired with an
+argument, as in <tt>Tree&nbsp;Integer</tt> (a tree containing <tt>Integer</tt> values) or
+<tt>Tree&nbsp;a</tt> 
+(representing the family of trees containing <tt>a</tt> values).  But <tt>Tree
+</tt>by itself is a type constructor, and as such takes a type as an
+argument and returns a type as a result.  There are no values in
+Haskell that have this type, but such "higher-order" types can be
+used in <tt>class</tt> declarations.<p>
+To begin, consider the following <tt>Functor</tt> class (taken from the Prelude):
+<tt><br>
+
+<br>
+class&nbsp;Functor&nbsp;f&nbsp;where<br>
+&nbsp;&nbsp;fmap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;(a&nbsp;-&gt;&nbsp;b)&nbsp;-&gt;&nbsp;f&nbsp;a&nbsp;-&gt;&nbsp;f&nbsp;b<br>
+
+<br>
+
+</tt>The <tt>fmap</tt> function generalizes the <tt>map</tt> function used previously.
+Note that the type variable <tt>f</tt> is applied to other types in <tt>f&nbsp;a</tt> and
+<tt>f&nbsp;b</tt>.  Thus we would expect it to be bound to a type such as <tt>Tree
+</tt>which can be applied to an argument.  An instance of <tt>Functor
+</tt>for type <tt>Tree</tt> would be:
+<tt><br>
+
+<br>
+instance&nbsp;Functor&nbsp;Tree&nbsp;where<br>
+&nbsp;&nbsp;fmap&nbsp;f&nbsp;(Leaf&nbsp;x)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;Leaf&nbsp;&nbsp;&nbsp;(f&nbsp;x)<br>
+&nbsp;&nbsp;fmap&nbsp;f&nbsp;(Branch&nbsp;t1&nbsp;t2)&nbsp;=&nbsp;Branch&nbsp;(fmap&nbsp;f&nbsp;t1)&nbsp;(fmap&nbsp;f&nbsp;t2)<br>
+
+<br>
+
+</tt>This instance declaration declares that <tt>Tree</tt>, rather than <tt>Tree&nbsp;a</tt>,
+is an instance of <tt>Functor</tt>.  This capability is quite useful, and
+here demonstrates the ability to describe generic "container" types,
+allowing functions such as <tt>fmap</tt> to work uniformly over arbitrary
+trees, lists, and other data types.<p>
+[Type applications are written in the same manner as
+function applications.  The type <tt>T&nbsp;a&nbsp;b</tt> is parsed as <tt>(T&nbsp;a)&nbsp;b</tt>.
+Types such as tuples which use special syntax can be written in an
+alternative style which allows currying.  For functions, <tt>(-&gt;)</tt> is a
+type constructor; the types <tt>f&nbsp;-&gt;&nbsp;g</tt> and <tt>(-&gt;)&nbsp;f&nbsp;g</tt> are the same.
+Similarly, the types <tt>[a]</tt> and <tt>[]&nbsp;a</tt> are the same.  For tuples, the
+type constructors (as well as the data constructors) are <tt>(,)</tt>,
+<tt>(,,)</tt>, and so on.]<p>
+As we know, the type system detects typing errors in expressions.  But
+what about errors due to malformed type expressions?  The expression
+<tt>(+)&nbsp;1&nbsp;2&nbsp;3</tt> results in a type error since <tt>(+)</tt> takes only two arguments.
+Similarly, the type <tt>Tree&nbsp;Int&nbsp;Int</tt> should produce some sort of an
+error since the <tt>Tree</tt> type takes only a single argument.  So, how
+does Haskell detect malformed type expressions?  The answer is a second
+type system which ensures the correctness of types!  Each
+type has an associated <I>kind</I> which ensures that the type is used
+correctly.<p>
+Type expressions are classified into different <I>kinds</I> which take
+one of two possible forms:
+<UL><LI>The symbol * represents the kind of type associated with
+concrete data objects.  That is, if the value <I>v</I> has type <I>t</I>, the
+kind of <I>v</I> must be *.<p>
+<LI>If <font face="symbol">k</font><sub>1</sub> and <font face="symbol">k</font><sub>2</sub> are kinds, then
+<font face="symbol">k</font><sub>1</sub>-&gt;<font face="symbol">k</font><sub>2</sub> is the kind of types that take a type of
+kind <font face="symbol">k</font><sub>1</sub> and return a type of kind <font face="symbol">k</font><sub>2</sub>.
+</UL>
+The type constructor <tt>Tree</tt> has the kind *-&gt;*; the
+type <tt>Tree&nbsp;Int</tt> has the kind *.  Members of the <tt>Functor</tt> class
+must all have the kind *-&gt;*; a kinding error would
+result from an declaration such as 
+<tt><br>
+
+<br>
+instance&nbsp;Functor&nbsp;Integer&nbsp;where&nbsp;...<br>
+
+<br>
+
+</tt>since <tt>Integer</tt> has the kind *.  <p>
+Kinds do not appear directly in Haskell programs.
+The compiler infers kinds before doing type checking without any need
+for `kind declarations'.  Kinds stay in the background of a Haskell
+program except when an erroneous  type signature leads to a kind
+error.  Kinds are 
+simple enough that compilers should be able to provide descriptive
+error messages when kind conflicts occur.  See 
+<a href="../onlinereport/decls.html#type-syntax">&sect;4.1.2</a> and <a href="../onlinereport/decls.html#kindinference">&sect;4.6</a> for more information about
+kinds.<p>
+<h3>A Different Perspective.</h3>
+Before going on to further examples of the use of type classes, it is
+worth pointing out two other views of Haskell's type classes.
+The first is by analogy with object-oriented programming (OOP).  In the
+following general statement about OOP, simply substituting <I>type
+class</I> for <I>class</I>, and <I>type</I> for <I>object</I>, yields a valid
+summary of Haskell's type class mechanism:<p>
+"<I>Classes</I> capture common sets of operations.  A particular
+<I>object</I> may be an instance of a <I>class</I>, and will have a
+method corresponding to each operation.  <I>Classes</I> may be arranged
+hierarchically, forming notions of super<I>classes</I> and sub
+<I>classes</I>, and permitting inheritance of operations/methods.
+A default method may also be associated with an operation."<p>
+In contrast to OOP, it should be clear that types are not
+objects, and in particular there is no notion of an object's or type's
+internal mutable state.  An advantage over some OOP languages is that
+methods in 
+Haskell are completely type-safe: any attempt to apply a method to a
+value whose type is not in the required class will be detected at
+compile time instead of at runtime.  In other words, methods are not
+"looked up" at runtime but are simply passed as higher-order
+functions.<p>
+A different perspective can be gotten by considering the relationship
+between parametric and <I>ad hoc</I> polymorphism.  We have shown how
+parametric polymorphism is useful in defining families of types by
+universally quantifying over all types.  Sometimes, however,
+that universal quantification is too broad---we wish to quantify over
+some smaller set of types, such as those types whose elements can be
+compared for equality.  Type classes can be seen as providing a
+structured way to do just this.  Indeed, we can think of parametric
+polymorphism as a kind of overloading too!  It's just that the
+overloading occurs implicitly over all types instead of a constrained
+set of types (i.e. a type class).<p>
+<h3>Comparison to Other Languages.</h3><p>
+The classes used by Haskell are similar to those used in other
+object-oriented languages such as C++ and Java.  However, there are
+some significant differences:
+<UL><LI>Haskell separates the definition of a type from the definition
+of the methods associated with that type.  A class in C++ or Java
+usually defines both a data structure (the member variables) and the
+functions associated with the structure (the methods).  In Haskell,
+these definitions are separated.
+<LI>The class methods defined by a Haskell class correspond to
+virtual functions in a C++ class.  Each instance of a class provides
+its own definition for each method; class defaults correspond to
+default definitions for a virtual function in the base class. 
+<LI>Haskell classes are roughly similar to a Java interface.  Like
+an interface declaration, a Haskell class declaration defines a
+protocol for using an object rather than defining an object itself.
+<LI>Haskell does not support the C++ overloading style in which
+functions with different types share a common name. 
+<LI>The type of a Haskell object cannot be implicitly coerced; there
+is no universal base class such as <tt>Object</tt> which values can be
+projected into or out of.
+<LI>C++ and Java attach identifying information (such as a VTable)
+to the runtime representation of an object.  In Haskell, such
+information is attached logically instead of physically to values,
+through the type system.
+<LI>There is no access control (such as public or private class
+constituents) built into the Haskell class system. Instead, the module
+system must be used to hide or reveal components of a class.
+</UL><p>
+<hr><body bgcolor="#ffffff"><i>A Gentle Introduction to Haskell, Version 98</i><br><a href="patterns.html">back</a> <a href="moretypes.html">next</a> <a href="index.html">top</a>

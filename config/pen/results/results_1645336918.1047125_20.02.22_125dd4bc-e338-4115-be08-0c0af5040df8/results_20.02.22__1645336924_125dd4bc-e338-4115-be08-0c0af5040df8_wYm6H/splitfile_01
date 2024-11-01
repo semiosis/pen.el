@@ -1,0 +1,9 @@
+
+
+print(homer)
+
+# The `print` function can also be used to print the contents of a list.
+print(homer_list)
+
+# We can also print the contents of a list of strings.
+print(homer_list_

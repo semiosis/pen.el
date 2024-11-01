@@ -1,0 +1,9 @@
+
+stack exec Fibonacci
+stack exec FibonacciTooSlow
+stack exec ReadFile
+stack exec SortByLexicographic
+
+Options
+
+You can fine-tune the backends by setting compiler and RTS options. To

@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: PureBasic
+# contributor: Toptal & contributors
+# key: purebasic
+# --
+
+### PureBasic ###
+
+# PureBasic
+
+# Settings files
+*.pb.cfg
+*.pbi.cfg
+project.cfg
+
+# Shared libraries
+*.so
+*.dylib
+*.dll
+
+# Binary executables
+*.exe
+*.app
+*.out

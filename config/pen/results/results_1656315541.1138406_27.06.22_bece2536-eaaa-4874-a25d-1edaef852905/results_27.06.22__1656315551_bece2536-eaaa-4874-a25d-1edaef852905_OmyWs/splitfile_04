@@ -1,0 +1,7 @@
+
+
+EOD
+
+cat draft.text | grep -i "epigraphy"
+cat draft.text | grep -i "codex"
+cat draft.text | grep -i "tractate"

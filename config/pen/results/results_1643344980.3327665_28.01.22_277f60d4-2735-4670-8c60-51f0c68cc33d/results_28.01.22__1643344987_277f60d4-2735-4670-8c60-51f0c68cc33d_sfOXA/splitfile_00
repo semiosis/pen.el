@@ -1,0 +1,12 @@
+"go-loop"
+"A loop macro that takes a body and a test expression.
+If the test expression evaluates to true, the body is evaluated,
+and the loop is repeated.
+
+The body is a single expression, and must return a value.
+The test expression is an expression that evaluates to a boolean value.
+
+The loop macro is equivalent to the following:
+
+(let [retval (do (body) (while (test) (body)))]
+  ret

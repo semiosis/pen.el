@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: func-prefix-arg
+# group: prefix
+# key: fnp
+# --
+(cl-defun ${1:funcname} ()
+"With a `\\[universal-argument]' prefix argument, ....
+With a `\\[universal-argument] \\[universal-argument]' argument ..."
+(interactive)
+(let ((arg (prefix-numeric-value current-prefix-arg)))
+(when (>= arg 4)
+;; once
+nil)
+(when (>= arg 16)
+;; twice
+nil)))

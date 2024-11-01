@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=X-saQr3m4Vs&list=RDX-saQr3m4Vs&index=1" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=dOvtJjvmrY0" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/music;  "wget" "-qO-" "https://www.youtube.com/watch?v=0cnEDUMfPXs" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes/ws/christians-doing-stuff;  "wget" "-qO-" "https://www.youtube.com/watch?v=yIiZnf2PQBo" "#" "<==" "pen-ci"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "wget" "-qO-" "https://www.youtube.com/watch?v=Kg_pxPAbxmY" "#" "<==" "pen-ci"

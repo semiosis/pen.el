@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: replicateM
+# key: replicateM
+# --
+import Control.Monad
+replicateM 3 "01"

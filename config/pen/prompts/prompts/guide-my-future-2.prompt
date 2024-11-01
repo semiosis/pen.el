@@ -1,0 +1,33 @@
+title: "Guide my future"
+prompt-version: 1
+tags: fun life
+prompt: |+
+    <1>
+    I have always wanted <2>.
+    This is the story about how I achieved my goals.
+xlr-n-generate: 2
+# preprocessors:
+# - "pf-correct-grammar"
+engine: "OpenAI Davinci"
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1.0
+best-of: 1
+no-trim-start: off
+no-trim-end: off
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "Who I was"
+- "My wants"
+examples:
+- "When I was 23 I switched my university major to Chemistry."
+- "to get married, see the world and cycle across Asia"
+n-test-runs: 5
+prettifier: pen-pretty-paragraph
+n-collate: 1
+n-completions: 10
+filter: no
+completion: off
+insertion: on

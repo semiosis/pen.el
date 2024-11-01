@@ -1,0 +1,16 @@
+ial_state(
+    [
+        [empty, empty, empty, empty],
+        [empty, empty, empty, empty],
+        [empty, empty, empty, empty],
+        [empty, empty, empty, empty]
+    ]).
+
+final_state(
+    [
+        [empty, empty, red_car, blue_car],
+        [empty, red_car, blue_car, blue_car],
+        [red_car, red_car, blue_car, blue_car],
+        [red_car, red_car, blue_car, blue_car]
+    ]).
+EOD

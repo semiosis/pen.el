@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: cat-file
+# group: unix
+# key: cf
+# --
+import shanepy
+from shanepy import *
+cat("$DUMP/tmp/scratchcdFbGL.txt")
+with open("country_text.txt") as f:
+    TEXT = f.read()

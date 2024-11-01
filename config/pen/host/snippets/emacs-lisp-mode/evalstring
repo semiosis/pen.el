@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: evalstring
+# group: util
+# key: es
+# --
+(my-eval-string "(+ 5 5)")

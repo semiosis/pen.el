@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: for
+# key: for
+# --
+(for
+([arg (current-command-line-arguments)])
+(displayln arg))

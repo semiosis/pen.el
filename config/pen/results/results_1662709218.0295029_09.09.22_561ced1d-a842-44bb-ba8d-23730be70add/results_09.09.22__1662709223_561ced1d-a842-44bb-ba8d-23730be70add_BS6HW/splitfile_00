@@ -1,0 +1,9 @@
+newtype Person = Person { firstName :: String, lastName :: String } deriving (Show, Eq)
+
+john :: Person
+john = Person {firstName = "John", lastName = "Doe"}
+
+mary :: Person
+mary = Person {firstName = "Mary", lastName = "Poppins"}
+
+john == mary

@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/src;  "wait-for" "notty214612" "#" "<==" "notty"
+cd /root/.emacs.d/host/pen.el/src;  "wait-for" "notty215654" "#" "<==" "notty"
+cd /root/.emacs.d/host/pen.el/src;  "wait-for" "notty216697" "#" "<==" "notty"
+cd /root/.emacs.d/host/pen.el/src;  "wait-for" "notty217150" "#" "<==" "notty"
+cd /root/.emacs.d/host/pen.el/src;  "wait-for" "notty221528" "#" "<==" "notty"
+cd /root/.pen/documents/notes;  "wait-for" "notty225354" "#" "<==" "notty"

@@ -1,0 +1,13 @@
+* =Remote.transfer=
+#+BEGIN_SRC haskell -n :i babel-script :async :results verbatim code
+  x = factorial 6
+
+  Remote.transfer alice
+  y = foo x -- happens on `alice` node
+
+  Remote.transfer bob
+  bar x y -- happens on `bob` node
+#+END_SRC
+
+=Remote.transfer alice= transfers control of
+the computation to the =alice= node.

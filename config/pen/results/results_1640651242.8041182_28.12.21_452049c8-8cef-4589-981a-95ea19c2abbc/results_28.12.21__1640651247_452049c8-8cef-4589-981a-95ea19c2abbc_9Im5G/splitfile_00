@@ -1,0 +1,7 @@
+
+    let args = a:000
+    if args[0] == "#" && args[1] == 0
+        q!
+    elseif args[0] == "#"
+        qall!
+    elseif a

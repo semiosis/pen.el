@@ -1,0 +1,7 @@
+
+
+runhaskell Setup.hs configure --enable-executable-dynamic
+
+This will download and install the necessary dependencies if necessary, and run the examples.
+
+For the examples provided in Chapter 4 of the tutorial, you can

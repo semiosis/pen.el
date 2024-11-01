@@ -1,0 +1,30 @@
+
+    Facts are things that are inferred from
+    the remote system's current state or nature.
+
+    Facts are things that Ansible can
+    automatically determine based on the
+    current state of the system.
+
+    Facts are things that you do not declare
+    as variables in playbooks, but rather Ansible
+    will determine for you.
+
+    Facts are things that can be used in
+    templates.
+
+Playbook
+    A playbook is a collection of tasks that
+    define a series of steps to be executed on a
+    remote system.
+
+    Playbooks can be as simple as a single task,
+    or they can be composed of hundreds or even thousands of tasks.
+
+    Playbooks are composed of:
+
+        - hosts: Defines where the playbook will run.
+
+        - roles: Defines the different sections of your playbook.
+
+        - tasks: Defines what each host should do during its run.

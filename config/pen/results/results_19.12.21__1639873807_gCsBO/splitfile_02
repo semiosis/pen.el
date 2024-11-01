@@ -1,0 +1,7 @@
+
+
+;;====================================================
+;;; comment-mode
+;;====================================================
+(setq comment-start nil)	; Creates default comment region by // or #
+(setq comment-end "")		; Coments stops in file end

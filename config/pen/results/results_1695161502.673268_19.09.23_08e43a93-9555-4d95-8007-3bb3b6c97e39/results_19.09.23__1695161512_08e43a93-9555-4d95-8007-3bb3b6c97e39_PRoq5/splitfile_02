@@ -1,0 +1,30 @@
+$ pwd
+/root/notes
+$ ls -a
+.
+$ cat "untitled"
+$ pwd
+/root/notes
+$ ls -a
+.
+$ cat "untitled"
+$ pwd
+/root/notes
+$ ls -a
+.
+
+$ ls -d */ # list directories here
+databases/
+jot-vaults/
+node_modules/
+programs/
+ws/
+$ ls **/*
+jot-vaults/notes:
+$ ls **/*
+node_modules/ansi-styles:
+node_modules/axios:
+
+$ ls -d */ # list directories here
+databases/
+jot

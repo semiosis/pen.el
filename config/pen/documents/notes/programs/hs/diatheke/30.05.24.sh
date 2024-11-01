@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "John 5:17" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1002" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1002" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "I Peter 1:8" "#" "<==" "in-pen"

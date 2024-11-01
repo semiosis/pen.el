@@ -1,0 +1,29 @@
+GNU Guile
+GNU Ubiquitous Intelligent Language for Extensions
+    An implementation of the Scheme
+    programming language that's used for
+    creating applications and games for the
+    desktop, internet, terminal, and more.
+    
+    Writing Scheme is easy, using any one of
+    the many Scheme extensions in Emacs.
+
+Scheme Requests for Implementation
+SRFI
+    An effort to coordinate libraries and
+    extensions of standard Scheme programming
+    language, necessitated by Scheme's
+    minimalist design, and particularly the
+    lack of a standard library before Scheme
+    R6RS.
+    
+    SRFI is supported by many Scheme
+    implementations.
+    
+    As such, it is an informal standard.
+
+    https://srfi.schemers.org/srfi-1/srfi-1.html
+
+    #emacs
+        < holomorph> i tried implementing some macros from various srfi… that was fun
+        < holomorph> bremner: yeah, i did at least 2 and 16, and i think some functions from srfi-1

@@ -1,0 +1,5 @@
+list]
+  (cond
+    (zero? (count list)) []
+    :else (cons (take-nth 1 list) (take-nth -2 list))
+    :else (cons (take-last

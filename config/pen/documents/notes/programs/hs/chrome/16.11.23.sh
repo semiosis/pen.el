@@ -1,0 +1,2 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com;  "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com/hymndex.html" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com;  "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com/hymndex.html" "#" "<==" "zsh"

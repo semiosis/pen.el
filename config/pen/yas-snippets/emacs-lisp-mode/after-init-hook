@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: after-init-hook
+# group: after-init
+# key: init
+# --
+(add-hook 'after-init-hook (lambda () (require 'uptimes)))

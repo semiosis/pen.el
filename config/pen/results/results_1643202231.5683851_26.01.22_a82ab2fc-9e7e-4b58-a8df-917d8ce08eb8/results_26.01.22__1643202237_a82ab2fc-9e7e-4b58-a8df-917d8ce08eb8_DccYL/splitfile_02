@@ -1,0 +1,2 @@
+ J'ajoute la cohérence à des résultats pour les fonctions de\nprompt en se rappelant la précédente sortie à cette fonction et en\nl'ajoutant à la prochaine fonction de prompt.
+

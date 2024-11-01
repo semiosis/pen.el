@@ -1,0 +1,32 @@
+
+The most useful package I know of is "code-runner".
+Do you know about it?
+###
+Human: No, what is it?
+###
+AI: It allows you to run code from the command line.
+If you have a .py file you want to run, simply type:
+code-runner <path-to-your-file>.py
+###
+Human: Where can I download it?
+###
+AI: It is built in to vscode by default.
+###
+Human: Why do I need it?
+###
+AI: It will allow you to run code faster and easier.
+###
+Human: OK, thanks.
+###
+AI: Happy to help.
+###
+Human: Goodbye.
+###
+AI: Goodbye.
+""")
+
+# Outputs the help message.
+def outputHelp():
+    print(chatbot.getHelpString())
+
+# Outputs the current

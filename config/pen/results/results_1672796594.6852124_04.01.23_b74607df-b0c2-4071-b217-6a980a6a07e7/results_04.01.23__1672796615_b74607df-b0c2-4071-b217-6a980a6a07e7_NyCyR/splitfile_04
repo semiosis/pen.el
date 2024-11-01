@@ -1,0 +1,21 @@
+- 1. Elon Musk (1962–)
+- 2. Rick Perls (1918–1984)
+- 3. Alan Shepard (1923–1971)
+- 4. Buzz Aldrin (1930-)
+"""
+
+import csv
+
+
+def parse_topic(line, topics, experts):
+
+    topic = line[1:]
+
+    if line[0] == 'T':
+        topics.append(topic)
+
+    elif line[0] == 'E':
+        experts.append(topic)
+
+    else:
+        raise ValueError("

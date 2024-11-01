@@ -1,0 +1,6 @@
+cd /root/repos/cmang;  "ghb" "size"
+cd /root/repos/cmang;  "ghb" "size"
+cd /root/repos/cmang;  "ghb" "size"
+cd /root/repos/cmang;  "ghb" "size"
+cd /root/repos/asciinema;  "ghb" "size"
+cd /root/repos/wojciech-graj;  "ghb" "size"

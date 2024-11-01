@@ -1,0 +1,50 @@
+Gemini
+    [protocol]
+
+    The Gemini protocol is an application
+    layer protocol for distributed hypertext
+    information systems that provides access
+    to simple, primarily textual documents in
+    Gemini space.
+
+    This is done with contemporary
+    technologies such as TLS, thereby
+    improving privacy and user agency relative
+    to the Web.
+
+Finger user information
+    [protocol]
+
+    Simple network protocol for the exchange
+    of human-oriented status and user
+    information.
+
+    Finger daemon runs on TCP port 79. The
+    client will (in the case of remote hosts)
+    open a connection to port 79. An RUIP
+    (Remote User Information Program) is
+    started on the remote end of the
+    connection to process the request. The
+    local host sends the RUIP one line query
+    based upon the Finger query specification,
+    and waits for the RUIP to respond. The
+    RUIP receives and processes the query,
+    returns an answer, then initiates the
+    close of the connection. The local host
+    receives the answer and the close signal,
+    then proceeds to close its end of the
+    connection.
+
+Name/Finger
+    [protocol]
+
+    Simple network protocol for the exchange
+    of human-oriented status and user
+    information.
+
+    Based on Request for Comments document RFC
+    742 (December 1977) as an interface to the
+    name and finger programs that provide
+    status reports on a particular computer
+    system or a particular person at network
+    sites. 

@@ -1,0 +1,16 @@
+cd 'harrys adventures'
+» ls
+ harry.txt
+»
+» pwd
+/root/notes/harrys adventures
+» git diff --cached
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+»
+» cd 'harrys adventures'
+» ls
+ harry.txt
+» pwd
+/root/notes/h

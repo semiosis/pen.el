@@ -1,0 +1,1675 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 22 Jan 2022 06:53:07 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Server-Timing: total;dur=197;desc="Backend Total"
+Strict-Transport-Security: max-age=31536000
+Permissions-Policy: interest-cohort=()
+Content-Security-Policy: default-src 'none' ; connect-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; manifest-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; media-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; script-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; font-src data:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; img-src data:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; style-src  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; object-src 'none' ; worker-src blob: ; child-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; frame-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://3g2upl4pq6kufc4m.onion/ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ ; frame-ancestors 'self' ; base-uri 'self' ; block-all-mixed-content ;
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1;mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: origin
+Expect-CT: max-age=0
+Expires: Sat, 22 Jan 2022 06:53:08 GMT
+Cache-Control: max-age=1
+X-DuckDuckGo-Locale: en_US
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--[if IE 6]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 7]><html class="lt-ie8 lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
+  <meta name="referrer" content="origin" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>apple at DuckDuckGo</title>
+  <link title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_html_v2.xml" />
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="//duckduckgo.com/assets/logo_icon128.v101.png"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/logo_homepage.normal.v101.png"/>
+  <link type="text/css" media="handheld, all" href="//duckduckgo.com/h2032.css" rel="stylesheet" />
+</head>
+
+<body class="body--html">
+  <a name="top" id="top"></a>
+
+  <form action="/html/" method="post">
+    <input type="text" name="state_hidden" id="state_hidden" />
+  </form>
+
+  <div>
+    <div class="site-wrapper-border"></div>
+
+    <div id="header" class="header cw header--html">
+        <a title="DuckDuckGo" href="/html/" class="header__logo-wrap"></a>
+
+
+    <form name="x" class="header__form" action="/html/" method="post">
+
+      <div class="search search--header">
+          <input name="q" autocomplete="off" class="search__input" id="search_form_input_homepage" type="text" value="apple" />
+          <input name="b" id="search_button_homepage" class="search__button search__button--html" value="" title="Search" alt="Search" type="submit" />
+      </div>
+
+
+    
+    
+    
+    
+
+    <div class="frm__select">
+      <select name="kl">
+      
+        <option value="" >All Regions</option>
+      
+        <option value="ar-es" >Argentina</option>
+      
+        <option value="au-en" >Australia</option>
+      
+        <option value="at-de" >Austria</option>
+      
+        <option value="be-fr" >Belgium (fr)</option>
+      
+        <option value="be-nl" >Belgium (nl)</option>
+      
+        <option value="br-pt" >Brazil</option>
+      
+        <option value="bg-bg" >Bulgaria</option>
+      
+        <option value="ca-en" >Canada (en)</option>
+      
+        <option value="ca-fr" >Canada (fr)</option>
+      
+        <option value="ct-ca" >Catalonia</option>
+      
+        <option value="cl-es" >Chile</option>
+      
+        <option value="cn-zh" >China</option>
+      
+        <option value="co-es" >Colombia</option>
+      
+        <option value="hr-hr" >Croatia</option>
+      
+        <option value="cz-cs" >Czech Republic</option>
+      
+        <option value="dk-da" >Denmark</option>
+      
+        <option value="ee-et" >Estonia</option>
+      
+        <option value="fi-fi" >Finland</option>
+      
+        <option value="fr-fr" >France</option>
+      
+        <option value="de-de" >Germany</option>
+      
+        <option value="gr-el" >Greece</option>
+      
+        <option value="hk-tzh" >Hong Kong</option>
+      
+        <option value="hu-hu" >Hungary</option>
+      
+        <option value="in-en" >India (en)</option>
+      
+        <option value="id-en" >Indonesia (en)</option>
+      
+        <option value="ie-en" >Ireland</option>
+      
+        <option value="il-en" >Israel (en)</option>
+      
+        <option value="it-it" >Italy</option>
+      
+        <option value="jp-jp" >Japan</option>
+      
+        <option value="kr-kr" >Korea</option>
+      
+        <option value="lv-lv" >Latvia</option>
+      
+        <option value="lt-lt" >Lithuania</option>
+      
+        <option value="my-en" >Malaysia (en)</option>
+      
+        <option value="mx-es" >Mexico</option>
+      
+        <option value="nl-nl" >Netherlands</option>
+      
+        <option value="nz-en" >New Zealand</option>
+      
+        <option value="no-no" >Norway</option>
+      
+        <option value="pk-en" >Pakistan (en)</option>
+      
+        <option value="pe-es" >Peru</option>
+      
+        <option value="ph-en" >Philippines (en)</option>
+      
+        <option value="pl-pl" >Poland</option>
+      
+        <option value="pt-pt" >Portugal</option>
+      
+        <option value="ro-ro" >Romania</option>
+      
+        <option value="ru-ru" >Russia</option>
+      
+        <option value="xa-ar" >Saudi Arabia</option>
+      
+        <option value="sg-en" >Singapore</option>
+      
+        <option value="sk-sk" >Slovakia</option>
+      
+        <option value="sl-sl" >Slovenia</option>
+      
+        <option value="za-en" >South Africa</option>
+      
+        <option value="es-ca" >Spain (ca)</option>
+      
+        <option value="es-es" >Spain (es)</option>
+      
+        <option value="se-sv" >Sweden</option>
+      
+        <option value="ch-de" >Switzerland (de)</option>
+      
+        <option value="ch-fr" >Switzerland (fr)</option>
+      
+        <option value="tw-tzh" >Taiwan</option>
+      
+        <option value="th-en" >Thailand (en)</option>
+      
+        <option value="tr-tr" >Turkey</option>
+      
+        <option value="us-en" >US (English)</option>
+      
+        <option value="us-es" >US (Spanish)</option>
+      
+        <option value="ua-uk" >Ukraine</option>
+      
+        <option value="uk-en" >United Kingdom</option>
+      
+        <option value="vn-en" >Vietnam (en)</option>
+      
+      </select>
+    </div>
+
+    <div class="frm__select frm__select--last">
+      <select class="" name="df">
+      
+        <option value="" selected>Any Time</option>
+      
+        <option value="d" >Past Day</option>
+      
+        <option value="w" >Past Week</option>
+      
+        <option value="m" >Past Month</option>
+      
+        <option value="y" >Past Year</option>
+      
+      </select>
+    </div>
+
+    </form>
+
+    </div>
+
+
+
+
+
+<!-- Web results are present -->
+
+  <div>
+  <div class="serp__results">
+  <div id="links" class="results">
+
+      
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apple.com%2F&amp;rut=aaeef0c7fd75f3d4eb3bbf7881c77657abf65ee48596bfa8d631a3a4eef1c92c">Apple</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apple.com%2F&amp;rut=aaeef0c7fd75f3d4eb3bbf7881c77657abf65ee48596bfa8d631a3a4eef1c92c">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apple.com%2F&amp;rut=aaeef0c7fd75f3d4eb3bbf7881c77657abf65ee48596bfa8d631a3a4eef1c92c">
+                  www.apple.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apple.com%2F&amp;rut=aaeef0c7fd75f3d4eb3bbf7881c77657abf65ee48596bfa8d631a3a4eef1c92c">Discover the innovative world of <b>Apple</b> and shop everything iPhone, iPad, <b>Apple</b> Watch, Mac, and <b>Apple</b> TV, plus explore accessories, entertainment, and expert device support. <b>Apple</b>. Global Nav Open Menu Global Nav Close Menu.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FApple_Inc.&amp;rut=58bbca39e64f56dec62ecc793790d282d06dd3baccdd02274ce0e5773ca31825">Apple Inc. - Wikipedia</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FApple_Inc.&amp;rut=58bbca39e64f56dec62ecc793790d282d06dd3baccdd02274ce0e5773ca31825">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/en.wikipedia.org.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FApple_Inc.&amp;rut=58bbca39e64f56dec62ecc793790d282d06dd3baccdd02274ce0e5773ca31825">
+                  en.wikipedia.org/wiki/Apple_Inc-
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FApple_Inc.&amp;rut=58bbca39e64f56dec62ecc793790d282d06dd3baccdd02274ce0e5773ca31825"><b>Apple</b> Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCE_M8A5yxnLfW0KghEeajjw&amp;rut=644a2badc381852868b8e6810d5488698e006910d88a5653e112aa0c78f53791">Apple - YouTube</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCE_M8A5yxnLfW0KghEeajjw&amp;rut=644a2badc381852868b8e6810d5488698e006910d88a5653e112aa0c78f53791">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.youtube.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCE_M8A5yxnLfW0KghEeajjw&amp;rut=644a2badc381852868b8e6810d5488698e006910d88a5653e112aa0c78f53791">
+                  www.youtube.com/channel/UCE_M8A5yxnLfW0KghEeajjw
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.instagram.com%2Fapple%2F&amp;rut=8f2722970c39b65e9928618e770f4a4ec03eeb4d3bc1314d9936f9c8c8dd032c">instagram.com/apple</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.instagram.com%2Fapple%2F&amp;rut=8f2722970c39b65e9928618e770f4a4ec03eeb4d3bc1314d9936f9c8c8dd032c">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.instagram.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.instagram.com%2Fapple%2F&amp;rut=8f2722970c39b65e9928618e770f4a4ec03eeb4d3bc1314d9936f9c8c8dd032c">
+                  www.instagram.com/apple/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&amp;rut=0d8c7d8b38836f1b1cb3045fa243e9af6ed7e58f6c501fc5442c077dc78a29de">Apple - Home</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&amp;rut=0d8c7d8b38836f1b1cb3045fa243e9af6ed7e58f6c501fc5442c077dc78a29de">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.facebook.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&amp;rut=0d8c7d8b38836f1b1cb3045fa243e9af6ed7e58f6c501fc5442c077dc78a29de">
+                  www.facebook.com/apple/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&amp;rut=0d8c7d8b38836f1b1cb3045fa243e9af6ed7e58f6c501fc5442c077dc78a29de"><b>Apple</b>. 13,527,515 likes · 5,512 talking about this · 27,555 were here. Product/service.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdeveloper%3Fid%3DApple%26hl%3Dru%26gl%3DUS&amp;rut=25ea62f6700744f06717fc5a82a7a0bf0cc827848ed3d9ec277d35c3faf9987a">play.google.com/store/apps/developer?id=Apple&amp;hl=ru&amp;gl=US</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdeveloper%3Fid%3DApple%26hl%3Dru%26gl%3DUS&amp;rut=25ea62f6700744f06717fc5a82a7a0bf0cc827848ed3d9ec277d35c3faf9987a">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/play.google.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdeveloper%3Fid%3DApple%26hl%3Dru%26gl%3DUS&amp;rut=25ea62f6700744f06717fc5a82a7a0bf0cc827848ed3d9ec277d35c3faf9987a">
+                  play.google.com/store/apps/developer?id=Apple&amp;hl=ru&amp;gl=US
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fapple&amp;rut=ebf1c0a8af31cc563273c2376de8ddfeb48e12ad141799425c885050d2eb4d5b">Apple (@Apple) | Twitter</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fapple&amp;rut=ebf1c0a8af31cc563273c2376de8ddfeb48e12ad141799425c885050d2eb4d5b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/twitter.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fapple&amp;rut=ebf1c0a8af31cc563273c2376de8ddfeb48e12ad141799425c885050d2eb4d5b">
+                  twitter.com/apple
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftwitter.com%2Fapple&amp;rut=ebf1c0a8af31cc563273c2376de8ddfeb48e12ad141799425c885050d2eb4d5b">Estetty Estetty @<b>Apple</b>. Poista esto Poista esto käyttäjältä @<b>Apple</b>. Odottaa Odottava seuraamispyyntö käyttäjältä @<b>Apple</b>. Peruuta Peruuta seuraamispyyntösi käyttäjälle @<b>Apple</b>.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsupport.apple.com%2F&amp;rut=cbd7495cfde83ba4dc0a00c15a1dbd02b8133bcaa246497976dbdbb834981e4e">Official Apple Support</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsupport.apple.com%2F&amp;rut=cbd7495cfde83ba4dc0a00c15a1dbd02b8133bcaa246497976dbdbb834981e4e">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/support.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsupport.apple.com%2F&amp;rut=cbd7495cfde83ba4dc0a00c15a1dbd02b8133bcaa246497976dbdbb834981e4e">
+                  support.apple.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsupport.apple.com%2F&amp;rut=cbd7495cfde83ba4dc0a00c15a1dbd02b8133bcaa246497976dbdbb834981e4e"><b>Apple</b> Trade In is good for you and the planet. Also non-genuine replacement displays may have compromised visual quality and may fail to work correctly. <b>Apple</b>-certified screen repairs are performed by trusted experts who use genuine <b>Apple</b> parts.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fappleid.apple.com%2F&amp;rut=62bf1577a575f168fa3a290747b2e5a5b098ee38d6262ac53ba0b19b271d7d17">appleid.apple.com</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fappleid.apple.com%2F&amp;rut=62bf1577a575f168fa3a290747b2e5a5b098ee38d6262ac53ba0b19b271d7d17">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/appleid.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fappleid.apple.com%2F&amp;rut=62bf1577a575f168fa3a290747b2e5a5b098ee38d6262ac53ba0b19b271d7d17">
+                  appleid.apple.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fappleid.apple.com%2F&amp;rut=62bf1577a575f168fa3a290747b2e5a5b098ee38d6262ac53ba0b19b271d7d17">Загрузка…</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwiki2.org%2Fru%2FApple&amp;rut=fa1369c81a0c908cbeddb83e3d185c6a3c9bac6dbcbb1edc976ad6919111d147">wiki2.org/ru/Apple</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwiki2.org%2Fru%2FApple&amp;rut=fa1369c81a0c908cbeddb83e3d185c6a3c9bac6dbcbb1edc976ad6919111d147">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/wiki2.org.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwiki2.org%2Fru%2FApple&amp;rut=fa1369c81a0c908cbeddb83e3d185c6a3c9bac6dbcbb1edc976ad6919111d147">
+                  wiki2.org/ru/Apple
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgetsupport.apple.com%2F&amp;rut=bc5578fddd3a725e547737ec4f068b0f1ce180c1542ceefa9b5c99328f3da35b">Apple Support</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgetsupport.apple.com%2F&amp;rut=bc5578fddd3a725e547737ec4f068b0f1ce180c1542ceefa9b5c99328f3da35b">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/getsupport.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgetsupport.apple.com%2F&amp;rut=bc5578fddd3a725e547737ec4f068b0f1ce180c1542ceefa9b5c99328f3da35b">
+                  getsupport.apple.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgetsupport.apple.com%2F&amp;rut=bc5578fddd3a725e547737ec4f068b0f1ce180c1542ceefa9b5c99328f3da35b">Contact Customer Support.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fquokka.media%2Fistorii%2Dbrendov%2Fapple%2F&amp;rut=8603331c4eeb9043c03fb56dc817eccd47cc04f03155b68dfb08e978a8e9d64a">quokka.media/istorii-brendov/apple</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fquokka.media%2Fistorii%2Dbrendov%2Fapple%2F&amp;rut=8603331c4eeb9043c03fb56dc817eccd47cc04f03155b68dfb08e978a8e9d64a">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/quokka.media.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fquokka.media%2Fistorii%2Dbrendov%2Fapple%2F&amp;rut=8603331c4eeb9043c03fb56dc817eccd47cc04f03155b68dfb08e978a8e9d64a">
+                  quokka.media/istorii-brendov/apple/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fapple%2F&amp;rut=9a50fcbd852265879ce0dcd8765bdca1d155947308e86cdd1ee9ad79661eed45">The unofficial Apple community</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fapple%2F&amp;rut=9a50fcbd852265879ce0dcd8765bdca1d155947308e86cdd1ee9ad79661eed45">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.reddit.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fapple%2F&amp;rut=9a50fcbd852265879ce0dcd8765bdca1d155947308e86cdd1ee9ad79661eed45">
+                  www.reddit.com/r/apple/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reddit.com%2Fr%2Fapple%2F&amp;rut=9a50fcbd852265879ce0dcd8765bdca1d155947308e86cdd1ee9ad79661eed45">An unofficial community to discuss <b>Apple</b> devices and software, including news, rumors, opinions and analysis pertaining to the company located at...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvc.ru%2Ftrade%2F279102%2Distoriya%2Dapple%2Dkak%2Dnaglyy%2Dhippi%2Dstal%2Dotcom%2Dcifrovoy%2Drevolyucii&amp;rut=76fa47abd66c35a76ea0a3bf5311ceb23fd06edab0e6d5e11deba2af958677df">vc.ru/trade/279102-istoriya-apple-kak-naglyy-hippi-stal-otcom-cifrovoy...</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvc.ru%2Ftrade%2F279102%2Distoriya%2Dapple%2Dkak%2Dnaglyy%2Dhippi%2Dstal%2Dotcom%2Dcifrovoy%2Drevolyucii&amp;rut=76fa47abd66c35a76ea0a3bf5311ceb23fd06edab0e6d5e11deba2af958677df">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/vc.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvc.ru%2Ftrade%2F279102%2Distoriya%2Dapple%2Dkak%2Dnaglyy%2Dhippi%2Dstal%2Dotcom%2Dcifrovoy%2Drevolyucii&amp;rut=76fa47abd66c35a76ea0a3bf5311ceb23fd06edab0e6d5e11deba2af958677df">
+                  vc.ru/trade/279102-istoriya-apple-kak-naglyy-hippi-stal-otcom-cifrovoy-revolyucii
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.rambler.ru%2Forganization%2Fapple%2F&amp;rut=ff1e261b73d1e01a014dd1153bdacab8af5e4fdf6b859d5240c83ebaad966935">news.rambler.ru/organization/apple — Рамблер/новости</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.rambler.ru%2Forganization%2Fapple%2F&amp;rut=ff1e261b73d1e01a014dd1153bdacab8af5e4fdf6b859d5240c83ebaad966935">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/news.rambler.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.rambler.ru%2Forganization%2Fapple%2F&amp;rut=ff1e261b73d1e01a014dd1153bdacab8af5e4fdf6b859d5240c83ebaad966935">
+                  news.rambler.ru/organization/apple/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.rbc.ru%2Ftags%2F%3Ftag%3DApple&amp;rut=88b8cc989e2582dd80ac783c82a6485dfdfecc30160df64d5a2118977625f0b1">rbc.ru/tags/?tag=Apple</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.rbc.ru%2Ftags%2F%3Ftag%3DApple&amp;rut=88b8cc989e2582dd80ac783c82a6485dfdfecc30160df64d5a2118977625f0b1">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.rbc.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.rbc.ru%2Ftags%2F%3Ftag%3DApple&amp;rut=88b8cc989e2582dd80ac783c82a6485dfdfecc30160df64d5a2118977625f0b1">
+                  www.rbc.ru/tags/?tag=Apple
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmusic.apple.com%2Fus%2Fbrowse&amp;rut=e3ff04c2a9f12d00f9f2ba1fadaea90e20cf3ca15881b0420b46bf66769fa2bf">Apple Music</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmusic.apple.com%2Fus%2Fbrowse&amp;rut=e3ff04c2a9f12d00f9f2ba1fadaea90e20cf3ca15881b0420b46bf66769fa2bf">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/music.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmusic.apple.com%2Fus%2Fbrowse&amp;rut=e3ff04c2a9f12d00f9f2ba1fadaea90e20cf3ca15881b0420b46bf66769fa2bf">
+                  music.apple.com/us/browse
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmusic.apple.com%2Fus%2Fbrowse&amp;rut=e3ff04c2a9f12d00f9f2ba1fadaea90e20cf3ca15881b0420b46bf66769fa2bf">Browse <b>Apple</b> Music. UPDATED PLAYLIST. <b>Apple</b> Music Classical. Selections for serenity, from standard repertoire to sweeping contemporary scores.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmarket.yandex.ru%2Fbrands%2D%2Dapple%2F153043&amp;rut=5baae4f47c052bc984451d4fa9cb56448a974be751daa0b41fe558d1afa8fed0">market.yandex.ru/brands--apple/153043 — Яндекс.Маркет</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmarket.yandex.ru%2Fbrands%2D%2Dapple%2F153043&amp;rut=5baae4f47c052bc984451d4fa9cb56448a974be751daa0b41fe558d1afa8fed0">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/market.yandex.ru.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmarket.yandex.ru%2Fbrands%2D%2Dapple%2F153043&amp;rut=5baae4f47c052bc984451d4fa9cb56448a974be751daa0b41fe558d1afa8fed0">
+                  market.yandex.ru/brands--apple/153043
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fgenre%2Fios%2Fid36&amp;rut=4fba41fea1168c761200a27aa6d2e0085f414e1e06544b23bc1e129c0a1970e6">App Store Downloads on iTunes</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fgenre%2Fios%2Fid36&amp;rut=4fba41fea1168c761200a27aa6d2e0085f414e1e06544b23bc1e129c0a1970e6">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/apps.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fgenre%2Fios%2Fid36&amp;rut=4fba41fea1168c761200a27aa6d2e0085f414e1e06544b23bc1e129c0a1970e6">
+                  apps.apple.com/us/genre/ios/id36
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fapps.apple.com%2Fus%2Fgenre%2Fios%2Fid36&amp;rut=4fba41fea1168c761200a27aa6d2e0085f414e1e06544b23bc1e129c0a1970e6">Opening <b>Apple</b> Books.If <b>Apple</b> Books doesn&#x27;t open, click the Books app in your Dock.Progress Indicator.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fhabr.com%2Fru%2Fpost%2F105646%2F&amp;rut=bc025c7fed4c664ca6497f8428138eb56bcfb0c6383318b7dd9f2cb0028d42fe">habr.com/ru/post/105646 / Хабр</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fhabr.com%2Fru%2Fpost%2F105646%2F&amp;rut=bc025c7fed4c664ca6497f8428138eb56bcfb0c6383318b7dd9f2cb0028d42fe">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/habr.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fhabr.com%2Fru%2Fpost%2F105646%2F&amp;rut=bc025c7fed4c664ca6497f8428138eb56bcfb0c6383318b7dd9f2cb0028d42fe">
+                  habr.com/ru/post/105646/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.profvest.com%2F2021%2F08%2Fistoriya%2Dkompanii%2Dapple.html&amp;rut=9d623721d704a24bd6f348ea672bd95083b23e4911ec313f79d458ae93c5714e">profvest.com/2021/08/istoriya-kompanii-apple.html</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.profvest.com%2F2021%2F08%2Fistoriya%2Dkompanii%2Dapple.html&amp;rut=9d623721d704a24bd6f348ea672bd95083b23e4911ec313f79d458ae93c5714e">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.profvest.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.profvest.com%2F2021%2F08%2Fistoriya%2Dkompanii%2Dapple.html&amp;rut=9d623721d704a24bd6f348ea672bd95083b23e4911ec313f79d458ae93c5714e">
+                  www.profvest.com/2021/08/istoriya-kompanii-apple-html
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvk.com%2Fiphone&amp;rut=cbe515d80033a3dca6e39ee60e6196aa71c5705d4b5030666b35fe301a651166">vk.com/iphone</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvk.com%2Fiphone&amp;rut=cbe515d80033a3dca6e39ee60e6196aa71c5705d4b5030666b35fe301a651166">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/vk.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fvk.com%2Fiphone&amp;rut=cbe515d80033a3dca6e39ee60e6196aa71c5705d4b5030666b35fe301a651166">
+                  vk.com/iphone
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Finvestor.apple.com%2Fstock%2Dprice%2Fdefault.aspx&amp;rut=e6d6e4f85018cfa8330a1d1229084aa3b62d16a28d2ce5835c48bad174f86a1d">Stock Price - Apple</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Finvestor.apple.com%2Fstock%2Dprice%2Fdefault.aspx&amp;rut=e6d6e4f85018cfa8330a1d1229084aa3b62d16a28d2ce5835c48bad174f86a1d">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/investor.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Finvestor.apple.com%2Fstock%2Dprice%2Fdefault.aspx&amp;rut=e6d6e4f85018cfa8330a1d1229084aa3b62d16a28d2ce5835c48bad174f86a1d">
+                  investor.apple.com/stock-price/default-aspx
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Finvestor.apple.com%2Fstock%2Dprice%2Fdefault.aspx&amp;rut=e6d6e4f85018cfa8330a1d1229084aa3b62d16a28d2ce5835c48bad174f86a1d"><b>Apple</b> Card. Accessories. Gift Cards. <b>Apple</b> Store App. Refurbished and Clearance. Financing. <b>Apple</b> Trade In. Order Status. Shopping Help.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftv.apple.com%2F&amp;rut=ff75dd08c2b47d049daba6f1694c1b9e56b457835907db1294df6a735918dc80">Apple TV+</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftv.apple.com%2F&amp;rut=ff75dd08c2b47d049daba6f1694c1b9e56b457835907db1294df6a735918dc80">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/tv.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftv.apple.com%2F&amp;rut=ff75dd08c2b47d049daba6f1694c1b9e56b457835907db1294df6a735918dc80">
+                  tv.apple.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftv.apple.com%2F&amp;rut=ff75dd08c2b47d049daba6f1694c1b9e56b457835907db1294df6a735918dc80">All <b>Apple</b> Originals. Exclusively on <b>Apple</b> TV+. 7 days free, then $4.99/month. Or 3 months free when you buy an eligible <b>Apple</b> device. Terms apply. Some titles coming later to <b>Apple</b> TV+.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgagadget.com%2Fnews%2Fapple%2F&amp;rut=87779d8bc66d89b395a3d7b15af1b59e54f9f8da12067c9dae0f8a49ba14adee">gagadget.com/news/apple | Новости</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgagadget.com%2Fnews%2Fapple%2F&amp;rut=87779d8bc66d89b395a3d7b15af1b59e54f9f8da12067c9dae0f8a49ba14adee">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/gagadget.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgagadget.com%2Fnews%2Fapple%2F&amp;rut=87779d8bc66d89b395a3d7b15af1b59e54f9f8da12067c9dae0f8a49ba14adee">
+                  gagadget.com/news/apple/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.gsmarena.com%2Fapple%2Dphones%2D48.php&amp;rut=ca2a93201aa848cba50e2759e706c15052488dced64ddc6746cf5f89ae3452ed">List of Apple phones, smartphones and tablets</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.gsmarena.com%2Fapple%2Dphones%2D48.php&amp;rut=ca2a93201aa848cba50e2759e706c15052488dced64ddc6746cf5f89ae3452ed">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.gsmarena.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.gsmarena.com%2Fapple%2Dphones%2D48.php&amp;rut=ca2a93201aa848cba50e2759e706c15052488dced64ddc6746cf5f89ae3452ed">
+                  www.gsmarena.com/apple-phones-48-php
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.gsmarena.com%2Fapple%2Dphones%2D48.php&amp;rut=ca2a93201aa848cba50e2759e706c15052488dced64ddc6746cf5f89ae3452ed"><b>Apple</b> phones. Popularity. Time of release. <b>Apple</b> iPhone 13 Pro review. <b>Apple</b> iPad mini 6th gen (2021) review.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.forbes.com%2Fcompanies%2Fapple%2F&amp;rut=6b637ef3f8ef42f553fa175e434deeba6cad7ba9aa5b63aaaa0447ef679a548a">Apple (AAPL)</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.forbes.com%2Fcompanies%2Fapple%2F&amp;rut=6b637ef3f8ef42f553fa175e434deeba6cad7ba9aa5b63aaaa0447ef679a548a">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/www.forbes.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.forbes.com%2Fcompanies%2Fapple%2F&amp;rut=6b637ef3f8ef42f553fa175e434deeba6cad7ba9aa5b63aaaa0447ef679a548a">
+                  www.forbes.com/companies/apple/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.forbes.com%2Fcompanies%2Fapple%2F&amp;rut=6b637ef3f8ef42f553fa175e434deeba6cad7ba9aa5b63aaaa0447ef679a548a"><b>Apple</b>, Inc. engages in the design, manufacture, and sale of smartphones, personal computers, tablets, wearables and accessories, and other variety of related services. <b>Apple</b> (AAPL) Stock Key Data. SummaryAdditional DataAnalystsHistorical Quotes.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fiforgot.apple.com%2F&amp;rut=1cd2f887866fe89a4748a2e21dd2ce7f1e267645d6ad8825d1967d428a6a10ca">iforgot.apple.com — Apple (RU)</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fiforgot.apple.com%2F&amp;rut=1cd2f887866fe89a4748a2e21dd2ce7f1e267645d6ad8825d1967d428a6a10ca">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/iforgot.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fiforgot.apple.com%2F&amp;rut=1cd2f887866fe89a4748a2e21dd2ce7f1e267645d6ad8825d1967d428a6a10ca">
+                  iforgot.apple.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fara.apple.com%2F&amp;rut=66fcc783dcf170a35adf11b26e6be8f3458cc67cdc40b2ca3fdb6d31efeedb88">Share Your Screen</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fara.apple.com%2F&amp;rut=66fcc783dcf170a35adf11b26e6be8f3458cc67cdc40b2ca3fdb6d31efeedb88">
+                        <img class="result__icon__img" width="16" height="16" alt=""
+                          src="//external-content.duckduckgo.com/ip3/ara.apple.com.ico" name="i15" />
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fara.apple.com%2F&amp;rut=66fcc783dcf170a35adf11b26e6be8f3458cc67cdc40b2ca3fdb6d31efeedb88">
+                  ara.apple.com
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fara.apple.com%2F&amp;rut=66fcc783dcf170a35adf11b26e6be8f3458cc67cdc40b2ca3fdb6d31efeedb88"> <b>Apple</b>. Support. Share Your Screen. More ways to shop: Visit an <b>Apple</b> Store, call 1-800-MY-<b>APPLE</b>, or find a reseller.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+
+        
+        
+                <div class="nav-link">
+        <form action="/html/" method="post">
+          <input type="submit" class='btn btn--alt' value="Next" />
+          <input type="hidden" name="q" value="apple" />
+          <input type="hidden" name="s" value="30" />
+          <input type="hidden" name="nextParams" value="" />
+          <input type="hidden" name="v" value="l" />
+          <input type="hidden" name="o" value="json" />
+          <input type="hidden" name="dc" value="30" />
+          <input type="hidden" name="api" value="d.js" />
+          <input type="hidden" name="vqd" value="3-290683570931763547926120934744554925242-144403998739352232697867178136957499275" />
+
+        
+        
+        
+          <input name="kl" value="wt-wt" type="hidden" />
+        
+        
+        
+        
+        </form>
+                </div>
+        
+
+
+
+        <div class=" feedback-btn">
+            <a rel="nofollow" href="//duckduckgo.com/feedback.html" target="_new">Feedback</a>
+        </div>
+        <div class="clear"></div>
+  </div>
+  </div> <!-- links wrapper //-->
+
+
+
+    </div>
+  </div>
+
+    <div id="bottom_spacing2"></div>
+
+    
+      <img src="//duckduckgo.com/t/sl_h"/>
+    
+</body>
+</html>

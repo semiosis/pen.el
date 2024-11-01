@@ -1,0 +1,1 @@
+name "*.term" | xargs wc -l | sort -rn

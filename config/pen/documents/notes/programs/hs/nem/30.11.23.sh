@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes/ws/journal;  "nem" "todayfile" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "nem" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "nem" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/src;  "nem" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "displayopts" "#" "<==" "withopts"

@@ -1,0 +1,11 @@
+";" is a command that allows you to run a command in the terminal.
+
+;: is a command that allows you to run a command in the terminal, and then open a new line.
+
+;q is a command that allows you to quit the terminal.
+
+;w is a command that allows you to save the terminal output to a file.
+
+;wq is a command that allows you to save the terminal output to a file and then quit the terminal.
+
+;

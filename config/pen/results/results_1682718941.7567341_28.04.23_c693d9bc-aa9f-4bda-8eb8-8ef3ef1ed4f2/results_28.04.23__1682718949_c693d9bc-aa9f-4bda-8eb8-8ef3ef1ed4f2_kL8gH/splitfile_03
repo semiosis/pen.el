@@ -1,0 +1,11 @@
+"coerce" is a function that converts a value of one type into a value of another type.
+
+For example, the following code converts a value of type "Int" into a value of type "Bool":
+
+The type of "coerce" is:
+
+The type "coercible" is a synonym for "coerce":
+
+The type "coerce" is a synonym for "coerce":
+
+The type "coerce" is

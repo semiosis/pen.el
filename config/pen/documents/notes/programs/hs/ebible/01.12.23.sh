@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "ebible" "-m" "NASB" "Matthew 4:4" "#" "<==" "Matthew"
+cd /root/.pen/documents/notes/ws/discipleship-group;  "ebible" "-m" "NASB" "1 Corinthians 2:12-14" "#" "<==" "1"
+cd /root/.pen/documents/notes/ws/discipleship-group;  "ebible" "-m" "NASB" "Psalm 119:18" "#" "<==" "Psalm"
+cd /;  "ebible" "-nbd" "-m" "NASB" "I Samuel 3:19" "#" "<==" "sh"
+cd /;  "ebible" "-nbd" "-m" "NASB" "Isaiah 54:2" "#" "<==" "sh"
+cd /;  "ebible" "-nbd" "-m" "NASB" "II Kings 3:16-17" "#" "<==" "sh"

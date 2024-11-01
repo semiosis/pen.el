@@ -1,0 +1,342 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 4413
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Wed, 31 May 2023 23:12:53 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"6477d475-503a"
+expires: Thu, 14 Sep 2023 05:04:14 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: A082:7B33:761DC9:7D3402:650291F3
+Accept-Ranges: bytes
+Date: Thu, 14 Sep 2023 04:54:16 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10330-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1694667256.065272,VS0,VE2
+Vary: Accept-Encoding
+X-Fastly-Request-ID: f4f8b2a32ac6442f19f65a861e430de6bbc155da
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Understanding Sheets &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/basics/understanding-sheets.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Understanding Rows" href="../understanding-rows/" />
+    <link rel="prev" title="Navigating VisiData" href="../navigating-visidata/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Understanding Sheets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-the-sheets-sheet">How to use the Sheets Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-rename-a-sheet">How to rename a sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-close-remove-a-sheet">How to close/remove a sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-prevent-sheet-closure-removal">How to <em>prevent</em> sheet closure/removal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quickly-toggling-between-sheets">Quickly toggling between sheets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Understanding Sheets</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="understanding-sheets">
+<h1>Understanding Sheets<a class="headerlink" href="#understanding-sheets" title="Permalink to this headline">¶</a></h1>
+<p>VisiData’s workflow revolves around “sheets.” As with traditional spreadsheet programs, VisiData’s sheets are composed of <strong>columns</strong> and <strong>rows</strong>.</p>
+<p>But VisiData’s takes the sheet concept to the next level: In VisiData, nearly <em>everything</em> — even the program’s own settings panel — is a sheet.</p>
+<p>In VisiData, there are three types of sheets:</p>
+<ul class="simple">
+<li><strong>Source sheets</strong>: The data you’ve loaded directly into VisiData</li>
+<li><strong>Derived sheets</strong>: Sheets that are based on data in your source sheets. E.g., a frequency table, or a filtered subset of rows.</li>
+<li><strong>Metasheets</strong>: These are sheets that help you navigate and customize VisiData. Two of the most powerful are the Sheets Sheet (discussed below) and the Columns Sheet (discussed in the “Understanding Columns” chapter).</li>
+</ul>
+<div class="section" id="how-to-use-the-sheets-sheet">
+<h2>How to use the Sheets Sheet<a class="headerlink" href="#how-to-use-the-sheets-sheet" title="Permalink to this headline">¶</a></h2>
+<p>VisiData’s “Sheets Sheet” lists all currently-open sheets and makes it easy to jump between sheets.</p>
+<p>From anywhere in VisiData, you can open the Sheets Sheet by pressing <kbd class="kbd docutils literal notranslate">Shift-S</kbd>.</p>
+<p>If you’ve just launched VisiData with a single dataset, pressing <kbd class="kbd docutils literal notranslate">Shift-S</kbd> will open a Sheets Sheet that looks something like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-110">  </span><span class="ansi4 ansi30 ansi48-110">F</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ile  </span><span class="ansi4 ansi30 ansi48-110">E</span><span class="ansi30"></span><span class="ansi30 ansi48-110">dit  </span><span class="ansi4 ansi30 ansi48-110">V</span><span class="ansi30"></span><span class="ansi30 ansi48-110">iew  </span><span class="ansi4 ansi30 ansi48-110">C</span><span class="ansi30"></span><span class="ansi30 ansi48-110">olumn  </span><span class="ansi4 ansi30 ansi48-110">R</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ow  </span><span class="ansi4 ansi30 ansi48-110">D</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ata  </span><span class="ansi4 ansi30 ansi48-110">P</span><span class="ansi30"></span><span class="ansi30 ansi48-110">lot  </span><span class="ansi4 ansi30 ansi48-110">S</span><span class="ansi30"></span><span class="ansi30 ansi48-110">ystem  </span><span class="ansi4 ansi30 ansi48-110">H</span><span class="ansi30"></span><span class="ansi30 ansi48-110">elp     Ctrl+H for help menu</span><span class="ansi48-110">                 </span> 
+<span class="ansi1 ansi4 inv_background inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv_foreground"></span><span class="ansi1 ansi4 inv38-81 inv40"> name               </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> type        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> pane#</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> shortcut </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> nRows#</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> nCols#</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> nVisibleCols#</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">|</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> cursorDisplay</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">&gt;</span><span class="ansi40"> 
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> sheets             </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║ SheetsSheet |    1 | Shift+S  |     2 |    11 |           11 | sheets        ║
+</span><span class="ansi1"></span><span class="ansi1 ansi38-81"></span><span class="ansi1 ansi38-81 ansi40"> faa-wildlife-strik…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40"> CsvSheet    </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    1 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 1        </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> 73448 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">    16 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40">           16 </span><span class="ansi38-246 ansi40">|</span><span class="ansi37 ansi40"> BUSINESS      </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi40">                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi30 ansi40"></span><span class="ansi1 ansi30 ansi48-110">Shift+S› sheets|        </span><span class="ansi48-110">                                     </span><span class="ansi1 ansi48-110"></span><span class="ansi1 ansi30 ansi48-110">       Shift+S            2 sheets  •0</span><span class="ansi40"> </span>
+</pre>
+</div>
+<p>Not very exciting. But as you start juggling more sheets — frequency tables, multiple datasets, et cetera — the Sheets Sheet becomes very handy.</p>
+<p>You can navigate the Sheets Sheet much like you would any other sheet, with one main difference: Pressing <kbd class="kbd docutils literal notranslate">Enter</kbd> will open that row’s sheet.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Pressing <kbd class="kbd docutils literal notranslate">d</kbd> on a Sheets Sheet  will send that row’s sheet to the “sheets graveyard.” (You can type <kbd class="kbd docutils literal notranslate">gS</kbd> to visit the graveyard, and revive sheets there via <kbd class="kbd docutils literal notranslate">Enter</kbd>.)</p>
+</div>
+</div>
+<div class="section" id="how-to-rename-a-sheet">
+<h2>How to rename a sheet<a class="headerlink" href="#how-to-rename-a-sheet" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways to rename a sheet:</p>
+<ul class="simple">
+<li>Go to the <strong>Sheets Sheet</strong>, and navigate to the row representing the sheet you want to rename. Press <kbd class="kbd docutils literal notranslate">e</kbd> to go into editing mode, type the new name, and then press <kbd class="kbd docutils literal notranslate">Enter</kbd> to complete the renaming.</li>
+<li>Alternatively, while <strong>in the sheet you want to rename</strong>, press <kbd class="kbd docutils literal notranslate">Space</kbd> to raise the type-a-command prompt. Then, type <code class="docutils literal notranslate"><span class="pre">rename-sheet</span></code> and press <kbd class="kbd docutils literal notranslate">Enter</kbd>. At the next prompt, type the new name, and press <kbd class="kbd docutils literal notranslate">Enter</kbd> to complete the renaming.</li>
+</ul>
+</div>
+<div class="section" id="how-to-close-remove-a-sheet">
+<h2>How to close/remove a sheet<a class="headerlink" href="#how-to-close-remove-a-sheet" title="Permalink to this headline">¶</a></h2>
+<p>To close the current sheet (removing it from VisiData), press <kbd class="kbd docutils literal notranslate">q</kbd>.</p>
+<p>To close all sheets (and, hence, quitting VisiData in its entirety), type <kbd class="kbd docutils literal notranslate">gq</kbd>.</p>
+<p>To access the “sheets graveyard”, a listing of recently-closed sheets, type <kbd class="kbd docutils literal notranslate">gS</kbd>.</p>
+</div>
+<div class="section" id="how-to-prevent-sheet-closure-removal">
+<h2>How to <em>prevent</em> sheet closure/removal<a class="headerlink" href="#how-to-prevent-sheet-closure-removal" title="Permalink to this headline">¶</a></h2>
+<p>You can prevent VisiData from quitting a sheet by “guarding” it. To do so, press <kbd class="kbd docutils literal notranslate">Space</kbd> to raise the type-a-command prompt. Then, type <code class="docutils literal notranslate"><span class="pre">guard-sheet</span></code> and press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
+</div>
+<div class="section" id="quickly-toggling-between-sheets">
+<h2>Quickly toggling between sheets<a class="headerlink" href="#quickly-toggling-between-sheets" title="Permalink to this headline">¶</a></h2>
+<p>To flip back and forth between your current sheet and the previous one, press <kbd class="kbd docutils literal notranslate">Control-^</kbd>.</p>
+<p>Additionally, VisiData assigns every sheet a numeric shortcut, visible at the bottom-left corner of the interface. You can jump to a sheet by pressing <kbd class="kbd docutils literal notranslate">Alt</kbd> plus the shortcut number —&nbsp;for instance <kbd class="kbd docutils literal notranslate">Alt-1</kbd> to go to the first sheet you loaded.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../understanding-rows/" class="btn btn-neutral float-right" title="Understanding Rows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../navigating-visidata/" class="btn btn-neutral float-left" title="Navigating VisiData" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

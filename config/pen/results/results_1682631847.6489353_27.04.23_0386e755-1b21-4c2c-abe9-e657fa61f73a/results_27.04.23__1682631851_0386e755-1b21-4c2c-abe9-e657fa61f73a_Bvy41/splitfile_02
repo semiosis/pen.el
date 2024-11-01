@@ -1,0 +1,2 @@
+- haskell guru: 
+instance UnitName u => Show (Temp u) where

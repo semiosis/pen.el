@@ -1,0 +1,13 @@
+
+
+-- import Options.Applicative
+
+schoolDays :: IO Bool
+schoolDays = do
+
+-- import Options.Applicative
+
+weatherForecast :: IO String
+weatherForecast = do
+
+Next we create a cohesive

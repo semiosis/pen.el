@@ -1,0 +1,3 @@
+(->> [1 2 3 4]
+     (map (fn [x y] (list x y)) (partition 2))
+     (mapv (fn [[x y]] (list x y)) (partition 2)))

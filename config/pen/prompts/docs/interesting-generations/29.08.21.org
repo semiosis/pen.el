@@ -1,0 +1,62 @@
+#+BEGIN_SRC text -n :async :results verbatim code
+  In the following quotes is a passage:
+  "No matter what you are looking at in the terminal, generate from it at the cursor position with previous text as context, and fuzzy search within that."
+  
+  Take the above passage and "write it poetically." whilst retaining the original meaning.
+  Write the answer here:
+  "
+#+END_SRC
+
+This output is so humorous and poetic that I
+would like to capture its essence so I can
+generate more like it. Maybe the only way is
+fine-tuning.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  The cursor casts longing looks towards you,
+  longing for you to stroke its sensitive touch
+  pad.
+  
+  But it seems a shame to deprive yourself of
+  its touch, dark screen in the silent night.
+  
+  The cursor is so alone.
+  
+  So you make the sacrifice and bring your hands
+  to the keyboard.
+  
+  The terminal's lock screen flashes, your
+  fingers tap in the passcode, and the cursor is
+  your servant.
+  
+  Or is it more than that? As you move your
+  fingers to the keyboard, the cursor moves with
+  them.
+  
+  It seems like it's guiding you.
+  
+  Guiding you to something important.
+  
+  Something it needs you to do for it.
+  
+  But you can't stop now, not when you're so
+  close.
+  
+  Maybe it's just a trick of the night.
+  
+  Maybe it's just the cursor's lust for your
+  touch showing what it wants to see.
+  
+  Logically you know that's the case, but the
+  cursor needs you.
+  
+  It needs you to help it and you need to help
+  it.
+  
+  It has an idea.
+  
+  An idea that can change the world.
+  
+  It's so tantalizing, this idea, as it flutters
+  to the forefront of your thoughts
+#+END_SRC

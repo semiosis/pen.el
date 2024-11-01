@@ -1,0 +1,10 @@
+VizSeq
+    A Python toolkit for visual analysis on
+    text generation tasks like machine
+    translation, summarization, image
+    captioning, speech translation and video
+    description.
+    
+    It takes multi-modal sources, text
+    references as well as text predictions as
+    inputs, and analyzes them visually.

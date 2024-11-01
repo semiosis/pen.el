@@ -1,0 +1,14 @@
+VMware vSphere
+    A server virtualization platform from
+    VMware.
+    
+    VMware vSphere debuted in 2009 as the
+    successor to the company's flagship VMware
+    Infrastructure solution, and it serves as
+    a complete platform for implementing and
+    managing VM (VM) infrastructure on a large
+    scale.
+
+    I think this is like kubetnetes. Instead
+    of using vSphere, you can deploy to VMware
+    workstation using minikube.

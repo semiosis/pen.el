@@ -1,0 +1,16 @@
+
+  (let ((n (- char ?a)))
+    (if (< n 0)
+        (setq n (+ 26 n)))
+    (char-to-string (+ ?a n))))
+
+(defun pen-modeline-name-short ()
+  (let* ((dn (pen-daemon-name))
+         (name (cond ((string-equal "DEFAULT" dn)
+                      "🖊")
+                     ((s-matches? "pen-" dn)
+                      (s-replace-regexp "pen-" "" dn))
+                     (t
+                      "emacs"))))
+    name))
+EOD

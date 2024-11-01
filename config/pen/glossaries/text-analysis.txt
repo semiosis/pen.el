@@ -1,0 +1,28 @@
+concordance
+    Helps identify the context and instances
+    of words or a set of words. 
+    
+    | Reference            | Preceding Context                                        | Target | Following Context |
+    |----------------------+----------------------------------------------------------+--------+-------------------|
+    | Review 1, sentence 1 | Hate the new update.                                     | Simple | as that           |
+    | Review 2, sentence 4 | Its quite good and                                       | simple | to use.           |
+    | Review 3, sentence 1 | It's also slow and laggy . Takes a few seconds to send a | simple | message           |
+    | Review 4, sentence 2 | Love it! Super                                           | simple | and easy to use   |
+
+text mining
+text data mining
+    Similar to text analytics, is the process
+    of deriving high-quality information from
+    text.
+    
+    It involves "the discovery by computer of
+    new, previously unknown information, by
+    automatically extracting information from
+    different written resources."
+
+text analytics
+    Combines a set of ML, statistical and
+    linguistic techniques to process large
+    volumes of unstructured text or text that
+    does not have a predefined format, to
+    derive insights and patterns.

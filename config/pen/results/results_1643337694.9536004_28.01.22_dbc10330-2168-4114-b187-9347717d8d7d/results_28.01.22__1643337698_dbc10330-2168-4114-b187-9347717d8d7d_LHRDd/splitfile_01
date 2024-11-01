@@ -1,0 +1,1 @@
+ aws logs filter-log-events --log-group-name /aws/lambda/my-function --filter-pattern "ERROR" --output text --query 'events[*].message'

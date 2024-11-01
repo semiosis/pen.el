@@ -1,0 +1,2 @@
+The above code is a bit of a mess, but it's basically a way to make sure that the keys of the source and target hashes are lowercase.
+

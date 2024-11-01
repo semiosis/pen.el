@@ -1,0 +1,1 @@
+ aws s3 cp /tmp/file.txt s3://bucket-name/file.txt

@@ -1,0 +1,8 @@
+FreeNAS
+    Free and open-source network-attached
+    storage software based on FreeBSD and the
+    OpenZFS file system.
+    
+    It is licensed under the terms of the BSD
+    License and runs on commodity x86-64
+    hardware.

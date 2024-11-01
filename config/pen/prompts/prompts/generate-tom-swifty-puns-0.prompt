@@ -1,0 +1,50 @@
+title: Generate Tom Swifty puns
+tags: fun
+prompt: |
+  “I was certainly unlucky enough to lose all my cards”, Tom said slyly.
+  “Being a hoarder is something people are born with”, Tom said hereditarily.
+  “The ref’s call was a bad one!”, Tom griped.
+  “It was such a bad break-up that I got a bad ankle injury!”, Tom bemoaned.
+  “The text is so small!”, Tom said squintingly.
+  “If you continue to talk that loud, I will have to ask you to leave!”, Tom said demandingly.
+  “She is a great beauty, but she has the most hideous voice!”, Tom said unforgivably.
+  “Oh how I dream of the day I have perfect vision!”, Tom said visually.
+  “I’m having a layover in France, please let me know if you still want me to come over!” Tom said in passing.
+  “I’m so hungry I could eat a bear!” Tom said voraciously.
+  “I’m definitely going to miss the Pope’s funeral”, Tom said solemnly.
+  “I’m just an insignificant out-of-work milliner”, Tom said candidly.
+  “She’s got a bit of a reputation as a nun”, Tom whined.
+  “How did you know what I was thinking just then?”, Tom said telepathically.
+  “I’m thinking of giving up celibacy”, Tom said promiscuously.
+  “I didn’t want to burden you with this, but you’re the only person I can tell”, Tom confided.
+  “I’m just a humble former mayor”, Tom said meekly.
+  “I’ll have to do a lot of reading to finish this course”, Tom said studiously.
+  “I can’t afford to buy you a new pair of shoes right now”, Tom said sadly.
+  “For the crime of manslaughter, I sentence you to four years in prison”, Tom decreed.
+  “Yes, Virginia, there is a Santa Claus”, Tom said joyfully.
+  “Do you think there’s really a Santa Claus?”, Tom asked doubtfully.
+  “She was kind of cute before all that plastic surgery”, Tom said cosmetically.
+  “I’ll play the violin in a flash!” Tom said flippantly.
+  “You’ll never find a juicier steak than in Hawaii,” Tom said floridly.
+  “I’m going to visit the Parthenon in Greece,” Tom said grandly.
+  “I’m an impostor,” Tom admitted.
+  “I’ll only eat the red Jell-O,” Tom said gaily.
+  “The wealthy love to live in Manhattan,” said Tom haughtily.
+  “Many dead squirrels were discovered under my porch,” Tom hammed.
+  “This is how I drink my coffee,” said Tom handily.
+  “I want to drink coffee from a coffee mug,” said Tom hand to mouth.
+  “The cat was healed by faith healing,” Tom said histrionically.
+  “The French and English once again wage war on each other,” Tom recounted.
+  “The bicycle was thrown out with the trash,” Tom hollered.
+  “I am the most romantic person in the room,” said Tom immodestly.
+  “I was expelled from high school,” Tom immigrated.
+  “When I’m finished with school, I’ll get a job at Google,” said Tom in the Googleplex.
+  “I’ll release my records when Romney releases his,” said Tom in the media.
+  “You can have a cow, but you can’t have a horse,” said Tom in the modern world.
+  “Did you hear the story about the farmer and the horse?” asked Tom in passing.
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 1000
+top-p: 1
+stop-sequences:
+- "\n\n"

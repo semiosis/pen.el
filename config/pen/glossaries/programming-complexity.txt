@@ -1,0 +1,55 @@
+programming complexity
+software complexity
+    A term that includes many properties of a
+    piece of software, all of which affect
+    internal interactions.
+    
+    According to several commentators, there
+    is a distinction between the terms complex
+    and complicated.
+    
+    Complicated implies being difficult to
+    understand but with time and effort,
+    ultimately knowable.
+    
+    Complex, on the other hand, describes the
+    interactions between a number of entities.
+    
+    As the number of entities increases, the
+    number of interactions between them would
+    increase exponentially, and it would get
+    to a point where it would be impossible to
+    know and understand all of them.
+    
+    Similarly, higher levels of complexity in
+    software increase the risk of
+    unintentionally interfering with
+    interactions and so increases the chance
+    of introducing defects when making
+    changes.
+    
+    In more extreme cases, it can make
+    modifying the software virtually
+    impossible.
+
+cyclomatic
+cyclomatic complexity
+mccabe complexity
+    A software metric used to indicate the
+    complexity of a program.
+    
+    It is a quantitative measure of the number
+    of linearly independent paths through a
+    program's source code.
+
+    Computed using the control flow graph of
+    the program: the nodes of the graph
+    correspond to indivisible groups of
+    commands of a program, and a directed edge
+    connects two nodes if the second command
+    might be executed immediately after the
+    first command.
+    
+    Cyclomatic complexity may also be applied
+    to individual functions, modules, methods
+    or classes within a program. 

@@ -1,0 +1,7 @@
+
+Quit means "I want to exit from the program."
+If you are using emacs,
+then you can use "C-x C-c" to quit.
+If you are using xemacs,
+then you can use Control-z to quit.
+

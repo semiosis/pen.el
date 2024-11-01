@@ -1,0 +1,6 @@
+import Control.Exception
+
+main = do
+    x <- try (return 1)
+            catch (\_ -> return 2)
+    return x

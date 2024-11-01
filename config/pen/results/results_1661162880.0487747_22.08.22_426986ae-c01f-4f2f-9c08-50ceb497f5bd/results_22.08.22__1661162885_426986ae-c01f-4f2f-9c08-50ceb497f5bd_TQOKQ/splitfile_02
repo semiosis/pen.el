@@ -1,0 +1,4 @@
+ -- read give error! 
+ example2 = do s <- getLine  let number = read s :: Int + 2 
+
+main = do putStrLn "Enter an integer number:" s <- getLine let number = (read

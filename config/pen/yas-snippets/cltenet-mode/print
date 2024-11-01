@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: print
+# key: pr
+# --
+flows:
+  codelingo/review:
+    comment: |
+      {{category}}
+      {{text}}
+
+query: |
+  import (
+    codelingo/ast/phplint
+  )
+
+  @ review.comment
+  phplint.lint_rule(depth = any):
+    @ review.vars.category
+    category
+    @ review.vars.text
+    text

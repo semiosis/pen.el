@@ -1,0 +1,23 @@
+
+Some useful packages are:
+- "gitLens".
+- "vscode-icons".
+- "vscode-go".
+###
+Human: What is "gitLens"?
+###
+AI: I would be happy to answer your question.
+"gitLens" is a code-insight package for VS Code.
+It shows you which files are in the staging area, which files are in the repository and which files have conflicts.
+###
+Human: What is "vscode-icons"?
+###
+AI: I would be happy to answer your question.
+"vscode-icons" is an icon set for VS Code.
+It uses the most popular open source SVG icon collection,
+Material Design Icons by Google.
+###
+Human: What is "vscode-go"?
+###
+AI: I would be happy to answer your question.
+"vscode-go" is a VS Code

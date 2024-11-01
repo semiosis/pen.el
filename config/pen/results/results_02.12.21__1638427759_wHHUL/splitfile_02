@@ -1,0 +1,12 @@
+
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+'''
+soup = BeautifulSoup(html, 'lxml')
+
+# 按标签名查找所有元素
+print(soup.find_all('a'))
+print(type(soup.find_all('a')[0]))

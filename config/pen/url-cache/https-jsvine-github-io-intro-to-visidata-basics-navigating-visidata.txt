@@ -1,0 +1,524 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 8019
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-10aa4"
+expires: Fri, 12 Apr 2024 09:01:28 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 9214:D5751:A56E5E:AEFE2B:6618F60F
+Accept-Ranges: bytes
+Date: Fri, 12 Apr 2024 09:19:34 GMT
+Via: 1.1 varnish
+Age: 10
+X-Served-By: cache-akl10330-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1712913575.615636,VS0,VE2
+Vary: Accept-Encoding
+X-Fastly-Request-ID: ade56d53d03b601953e1a8b6ff96422b6400ea4b
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Navigating VisiData &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/basics/navigating-visidata.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Understanding Sheets" href="../understanding-sheets/" />
+    <link rel="prev" title="Opening Files" href="../opening-files/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../opening-files/">Opening Files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Navigating VisiData</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-move-one-row-column-at-a-time">How to move one row/column at a time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-move-faster">How to move faster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-move-via-searching">How to move via searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-move-to-a-specific-row-column-number">How to move to a specific row/column number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-move-with-your-mouse">How to move with your mouse</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Navigating VisiData</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="navigating-visidata">
+<h1>Navigating VisiData<a class="headerlink" href="#navigating-visidata" title="Permalink to this headline">¶</a></h1>
+<p>VisiData is a keyboard-driven program. Although you can use your mouse for some tasks, your keyboard will be your workhorse. Moving among a dataset’s rows and columns is no exception.</p>
+<div class="section" id="how-to-move-one-row-column-at-a-time">
+<h2>How to move one row/column at a time<a class="headerlink" href="#how-to-move-one-row-column-at-a-time" title="Permalink to this headline">¶</a></h2>
+<p>You can use your keyboard’s arrow keys to navigate between columns.</p>
+<p>Alternatively, you can use the <kbd class="kbd docutils literal notranslate">h</kbd>/<kbd class="kbd docutils literal notranslate">j</kbd>/<kbd class="kbd docutils literal notranslate">k</kbd>/<kbd class="kbd docutils literal notranslate">l</kbd> keys to move left/down/up/right. (That convention, like several others in VisiData, is <a class="reference external" href="http://www.catonmat.net/blog/why-vim-uses-hjkl-as-arrow-keys/">borrowed from the vim text editor</a>.)</p>
+<p>When you first open a dataset in VisiData, you’ll start in the top-left corner:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv37 inv48-68"></span><span class="ansi1 ansi4 inv37 inv40"> OPERATOR           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> ATYPE        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> INCIDENT_DATE     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> STATE </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> AIRPORT            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> PHASE_OF_FLT</span><span class="ansi38-246">&gt;
+</span><span class="ansi1 inv38-246 inv_foreground"></span><span class="ansi1 inv37 inv_foreground"></span><span class="ansi1 inv37 inv40"> BUSINESS           </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">│ PA-28        │ 05/22/15 00:00:00 │ FL    │ VERO BEACH MUNICIP…│ APPROACH     │
+</span><span class="ansi1"></span><span class="ansi1 ansi37"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> BE-1900</span><span class="ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 06/18/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AK    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> KENAI MUNICIPAL AR…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> PA-46 MALIBU </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 09/20/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DAVID WAYNE HOOKS …</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> B-717-200    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 11/07/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> BE-90 KING   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 12/17/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> POMPANO BEACH AIRP…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> B-757</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 07/17/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VI    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> HENRY E ROHLSEN AR…</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> B-717-200    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 08/02/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> SAN ANTONIO INTL   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> C-414</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 08/03/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LONE STAR EXECUTIV…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ALLEGIANT AIR      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MD-80</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 09/02/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TAMPA INTL</span><span class="ansi40">         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> TRANS STATES AIRLI…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> EMB-145</span><span class="ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 09/07/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> C-172</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 11/28/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> OPA-LOCKA EXECUTIV…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> GOVERNMENT         </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> EC120</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 12/08/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> NORMAN Y. MINETA S…</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AMERICAN AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-321</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FORT LAUDERDALE/HO…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> EXPRESSJET AIRLINES</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CRJ100/200   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FORT SMITH REGIONA…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> MESA AIRLINES      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CRJ900</span><span class="ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> BILL AND  HILLARY …</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> HELICOPTER   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> UNKNOWN</span><span class="ansi40">            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> En Route     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-320</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/07/15 00:0</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">┌──────────────────────────────────|</span><span class="ansi30 ansi43"> statuses </span><span class="ansi30 ansi48-114">|─┐</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-320</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:0</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ saul.pw/VisiData v3.0.2</span><span class="ansi48-114">                       </span><span class="ansi30 ansi48-114">│</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> LUFTHANSA          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-380</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/10/15 00:0</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ opening datasets/faa-wildlife-strikes.csv as  │</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> C-172</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:0</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ csv</span><span class="ansi48-114">                                           </span><span class="ansi30 ansi48-114">│</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> SPIRIT AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-319</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/10/15 00:0</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">└───────────────────────────────────────────────┘</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                                                </span><span class="ansi30 ansi48-68">73448 rows </span>
+</pre>
+</div>
+<p>If you press the down-arrow and then the right-arrow (or, correspondingly, <kbd class="kbd docutils literal notranslate">j</kbd> and then <kbd class="kbd docutils literal notranslate">l</kbd>), you should see the row and column selectors move:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 ansi30 ansi48-68"></span><span class="ansi1 ansi4 ansi37 ansi48-68"></span><span class="ansi1 ansi4 ansi37 ansi40"> OPERATOR           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 inv38-246 inv40"></span><span class="ansi1 ansi4 inv37 inv40"> ATYPE        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> INCIDENT_DATE     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> STATE </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> AIRPORT            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> PHASE_OF_FLT</span><span class="ansi38-246">&gt;
+</span><span class="ansi37"></span><span class="ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> PA-28        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/22/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VERO BEACH MUNICIP…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="inv38-246 inv40"></span><span class="inv37 inv40"> BUSINESS           │</span><span class="ansi1 inv37 inv40"> BE-1900      </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">│ 06/18/15 00:00:00 │ AK    │ KENAI MUNICIPAL AR…│ APPROACH     │
+</span><span class="ansi37"></span><span class="ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> PA-46 MALIBU </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 09/20/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DAVID WAYNE HOOKS …</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> B-717-200    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 11/07/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BE-90 KING   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 12/17/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> POMPANO BEACH AIRP…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> B-757        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 07/17/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VI    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> HENRY E ROHLSEN AR…</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> B-717-200    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 08/02/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> SAN ANTONIO INTL   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> C-414        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 08/03/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LONE STAR EXECUTIV…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> ALLEGIANT AIR      </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> MD-80        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 09/02/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TAMPA INTL</span><span class="ansi40">         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> TRANS STATES AIRLI…</span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> EMB-145      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 09/07/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> C-172        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 11/28/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> OPA-LOCKA EXECUTIV…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> GOVERNMENT         </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> EC120        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 12/08/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> NORMAN Y. MINETA S…</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> AMERICAN AIRLINES  </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> A-321        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FORT LAUDERDALE/HO…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> EXPRESSJET AIRLINES</span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> CRJ100/200   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FORT SMITH REGIONA…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> MESA AIRLINES      </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> CRJ900       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> BILL AND  HILLARY …</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> HELICOPTER   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/06/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> UNKNOWN</span><span class="ansi40">            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> En Route     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> A-320        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/07/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> METRO OAKLAND INTL </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> A-320        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> UT    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> SALT LAKE CITY INTL</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> LUFTHANSA          </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> A-380        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/10/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> GEORGE BUSH INTERC…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB        </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> C-172        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ORLANDO SANFORD IN…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi37 ansi40"> SPIRIT AIRLINES    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> A-319        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/10/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> IL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CHICAGO O'HARE INT…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB        </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                              </span><span class="ansi1 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">l</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">go-right</span><span class="ansi48-68">      </span><span class="ansi30 ansi48-68">73448 rows </span>
+</pre>
+</div>
+</div>
+<div class="section" id="how-to-move-faster">
+<h2>How to move faster<a class="headerlink" href="#how-to-move-faster" title="Permalink to this headline">¶</a></h2>
+<p>You can use these keystrokes to move more than one column or row at a time:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="59%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Keystroke(s)</th>
+<th class="head">Moves cursor …</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">gj</kbd></td>
+<td>to last row</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">gk</kbd></td>
+<td>to first row</td>
+</tr>
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">gh</kbd></td>
+<td>to leftmost column</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">gl</kbd></td>
+<td>to rightmost column</td>
+</tr>
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">PageDown</kbd>/<kbd class="kbd docutils literal notranslate">Control-F</kbd></td>
+<td>one page down (forward)</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">PageUp</kbd>/<kbd class="kbd docutils literal notranslate">Control-B</kbd></td>
+<td>one page up (backward)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>What’s the deal with “g”?</strong></p>
+<p>As you learn to use VisiData, you’ll notice that many commands can be prefixed with <code class="docutils literal notranslate"><span class="pre">g</span></code>. In general, prefixing a command with <code class="docutils literal notranslate"><span class="pre">g</span></code> applies it more broadly. (You can think of <code class="docutils literal notranslate"><span class="pre">g</span></code> as shorthand for “global.”)</p>
+<p class="last">Hence the above: <kbd class="kbd docutils literal notranslate">h</kbd> navigates one column to the left, while <kbd class="kbd docutils literal notranslate">gh</kbd> moves <em>all the way</em> to the left.</p>
+</div>
+</div>
+<div class="section" id="how-to-move-via-searching">
+<h2>How to move via searching<a class="headerlink" href="#how-to-move-via-searching" title="Permalink to this headline">¶</a></h2>
+<p>In VisiData you can hop between columns using <a class="reference external" href="http://2017.compciv.org/guide/topics/regular-expressions/regex-early-overview.html">regular expressions</a>. (If you’re not familiar with regular expressions, don’t worry; for the purposes here, you can just think of them as “search terms.”)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Searches in VisiData are, by default, <em>case-insensitive</em>. You can change this in <a class="reference external" href="../../advanced/configuring-visidata">VisiData’s options</a> by setting the <code class="docutils literal notranslate"><span class="pre">regex_flags</span></code> value to an empty string (instead of the default <code class="docutils literal notranslate"><span class="pre">I</span></code>).</p>
+</div>
+<p>To <strong>find a row</strong>, type these commands, followed by <kbd class="kbd docutils literal notranslate">Enter</kbd>:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Keystroke(s)</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">/</kbd> + <em>regex</em></td>
+<td>Search forward in <em>current</em> column</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">?</kbd> + <em>regex</em></td>
+<td>Search backward in <em>current</em> column</td>
+</tr>
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">g/</kbd> + <em>regex</em></td>
+<td>Search forward in <em>all</em> columns</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">g?</kbd> + <em>regex</em></td>
+<td>Search backward in <em>all</em> columns</td>
+</tr>
+</tbody>
+</table>
+<p>Some VisiData commands, like the ones directly above, will prompt you to enter some text.</p>
+<p>To demonstrate, move to the first column of the FAA dataset (if you’re not already there) and type <kbd class="kbd docutils literal notranslate">/</kbd>. At the bottom-left of the screen, you’ll see a prompt that says <code class="docutils literal notranslate"><span class="pre">search</span> <span class="pre">regex:</span></code>:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi38-238"></span><span class="ansi38-238 ansi48-110">search regex: </span><span class="ansi48-110">                                                     </span><span class="ansi30 ansi48-110"></span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">/</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">search-col</span><span class="ansi48-68">      </span><span class="ansi30 ansi48-68">73448 rows </span>
+</pre>
+</div>
+<p>Then, type <code class="docutils literal notranslate"><span class="pre">united</span></code>:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi38-238"></span><span class="ansi38-238 ansi48-110">search regex: </span><span class="ansi38-233 ansi48-110">united</span><span class="ansi48-110">                                               </span><span class="ansi30 ansi48-110"></span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">/</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">search-col</span><span class="ansi48-68">      </span><span class="ansi30 ansi48-68">73448 rows </span>
+</pre>
+</div>
+<p>Then, press <kbd class="kbd docutils literal notranslate">Enter</kbd>. Your cursor should now be at the first row matching “united”:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv37 inv48-68"></span><span class="ansi1 ansi4 inv37 inv40"> OPERATOR           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> ATYPE        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> INCIDENT_DATE     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> STATE </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> AIRPORT            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> PHASE_OF_FLT</span><span class="ansi38-246">&gt;
+</span><span class="ansi1 ansi38-246"></span><span class="ansi1 ansi37"></span><span class="ansi1 ansi37 ansi40"> AIR WISCONSIN AIRL…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CRJ100/200   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/09/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> NC    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> PIEDMONT TRIAD INTL</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> SKYWEST AIRLINES   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CRJ100/200   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/11/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> GEORGE BUSH INTERC…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> HORIZON AIR        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DHC8 DASH 8  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/10/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> OR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> PORTLAND INTL (OR) </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Climb</span><span class="ansi40">        </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> EXPRESSJET AIRLINES</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CRJ100/200   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/11/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TN    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TRI-CITIES REGIONA…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> UPS AIRLINES       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MD-11        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/12/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CO    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DENVER INTL AIRPORT</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> BE-200 KING  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/12/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VALLEY INTL        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MD-90-30     </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/12/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> RICHMOND INTL      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TAKE-OFF RUN </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ALASKA AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> B-737        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/12/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TAMPA INTL         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AMERIFLIGHT        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> BE-99        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/13/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> OR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> SOUTHWEST OREGON R…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> ENVOY AIR          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> EMB-145      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/14/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TN    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LOVELL FIELD ARPT  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> REPUBLIC AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> EMB-170      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/14/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> SC    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CHARLESTON AFB/INT…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> HORIZON AIR        </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DHC8 DASH 8  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/14/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AK    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FAIRBANKS INTL ARPT</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> SPIRIT AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-319        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/14/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> GEORGE BUSH INTERC…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> SHUTTLE AMERICA    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> EMB-170      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/12/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ME    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> PORTLAND INTL JETP…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB        </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> AMERICAN AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> MD-83        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/14/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LOS ANGELES INTL   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB        </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DHC8 DASH 8  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/13/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ROANOKE REGNL ARPT…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> C-172        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/15/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> GA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEKALB-PEACHTREE A…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> PIEDMONT AIRLINES  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DHC8 DASH 8  </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/16/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CHARLOTTESVILLE-AL…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> MESA AIRLINES      </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CRJ700       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/16/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DC    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> WASHINGTON DULLES …</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> C-340        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/18/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> VERO BEACH MUNICIP…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 inv38-246 inv40"></span><span class="ansi1 inv37 inv40"> UNITED AIRLINES    </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">│ B-737        │ 05/18/15 00:00:00 │ WA    │ SEATTLE-TACOMA INTL│ APPROACH     │
+</span><span class="ansi4"></span><span class="ansi4 ansi30"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                           </span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">/</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">search-col</span><span class="ansi48-68">      </span><span class="ansi30 ansi48-68">73448 rows </span>
+</pre>
+</div>
+<p>Once you’ve executed a search, you can <strong>cycle through all the matching rows</strong>:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Keystroke(s)</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">n</kbd></td>
+<td>Move to next matching row</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">N</kbd></td>
+<td>Move to previous matching row</td>
+</tr>
+</tbody>
+</table>
+<p>You can also jump between <strong>columns</strong>:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Keystroke(s)</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">c</kbd> + <em>regex</em></td>
+<td>Jump to the next matching column</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="how-to-move-to-a-specific-row-column-number">
+<h2>How to move to a specific row/column number<a class="headerlink" href="#how-to-move-to-a-specific-row-column-number" title="Permalink to this headline">¶</a></h2>
+<p>To jump to the <em>nth</em> row or column, you can use these commands:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="57%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Keystroke(s)</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">zr</kbd> + <em>n</em></td>
+<td>Jump to row number <em>n</em></td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">zc</kbd> + <em>n</em></td>
+<td>Jump to column number <em>n</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="how-to-move-with-your-mouse">
+<h2>How to move with your mouse<a class="headerlink" href="#how-to-move-with-your-mouse" title="Permalink to this headline">¶</a></h2>
+<p>In addition to using your keyboard, you can use your mouse or trackpad to navigate between rows:</p>
+<ul class="simple">
+<li><strong>Click</strong> a row to move the VisiData cursor to it</li>
+<li><strong>Scroll</strong> to scroll through the rows</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Feeling lost in a sheet? Press <kbd class="kbd docutils literal notranslate">Control-g</kbd> to display your cursor’s row and column number at the bottom of VisiData’s interface.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../understanding-sheets/" class="btn btn-neutral float-right" title="Understanding Sheets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../opening-files/" class="btn btn-neutral float-left" title="Opening Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

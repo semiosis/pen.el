@@ -1,0 +1,12 @@
+#ifdef __GLASGOW_HASKELL__
+{-# LANGUAGE MagicHash #-}
+#endif
+module Main where
+import Prelude hiding ( head )
+import qualified Data.ByteString as B
+import qualified Data.ByteString.Char8 as C8
+import qualified Data.Map as Map
+type Person = B . ByteString -- unchanging, magic hash
+data Name = Name { firstName :: ! B . ByteString , -- magic hash, unique lastName :: ! B . ByteString } deriving ( Eq , Ord , Show ) -- `deriving` for all the things!
+#if __GLASGOW_HASKELL__ >= 800 -- if __GLASGOW_HASKELL__ >= 800, then use this fancy new syntax!
+#[derive(Hashable)] -- derive instances of Hashable for all datatypes! {-# DEPREC

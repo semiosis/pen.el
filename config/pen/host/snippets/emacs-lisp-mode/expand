@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: expand
+# key: expand
+# --
+;; expand a list and give it to concat
+(cl-reduce 'concat '("foo" "bar" "baz"))

@@ -1,0 +1,7 @@
+
+liftm stringify (Just "foobar")
+   
+  where liftm 1 msg = Just $ "Just " ++ msg
+        liftm 0 msg = Nothing
+
+#output: Just foobar

@@ -1,0 +1,16 @@
+ial_state(state(left,left,left,left)).
+final_state(state(right,right,right,right)).
+
+% the following facts define the terrain
+% format: position(name of the position).
+EOD
+
+for ((i=0; i<$n; i++)); do
+    echo "position(${pos[i]})." >> draft.prolog
+done
+echo "" >> draft.prolog
+echo "%% the following facts define the legal moves" >> draft.prolog
+echo "%% format: move(name of the initial position, name of the final position)." >> draft.prolog
+for ((i=0; i<$n; i++)); do
+    echo "move(${pos[i]},${pos[$(( (i+1)%n ))]})." >> draft.prolog
+    echo "move(${pos[i]},${pos

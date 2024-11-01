@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: multiple assignment
+# group: syntax
+# key: ma
+# --
+my ($age, $street) = (40, '123 Main St');

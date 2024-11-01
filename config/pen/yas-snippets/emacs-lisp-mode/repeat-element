@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: repeat-element
+# group: lists
+# key: repeat
+# --
+(make-list 5 '(defun fun (args)
+"docstring"
+(interactive "P")
+))

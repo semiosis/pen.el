@@ -1,0 +1,10 @@
+"dnf" is a command line interface to the DNF package manager.
+
+Basic DNF commands are:
+
+dnf install <pkgs>... - install packages
+dnf update <pkgs>... - update packages
+dnf remove <pkgs>... - remove packages
+dnf search <query>... - search package details for <query>
+dnf list <query>... - list installed packages for <query>
+dnf info <pkgs>... -

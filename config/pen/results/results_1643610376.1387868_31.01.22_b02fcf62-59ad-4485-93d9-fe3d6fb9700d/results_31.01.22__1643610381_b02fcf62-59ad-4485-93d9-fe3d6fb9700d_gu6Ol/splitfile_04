@@ -1,0 +1,5 @@
+ sh-stat updates, which are done periodically and
+# whenever file system modification is detected.
+# Setting sh-update to on would only disable sh-stat updates when sh-stat.php is
+# modified.
+sh-update:

@@ -1,0 +1,7 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "wget" "-qO-" "https://www.youtube.com/watch?v=eb3g3lzOl70" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=TQHXXTJuMT0" "#" "<==" "pen-ci"
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=M9EbSw8O6uc" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=TQHXXTJuMT0" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=TQHXXTJuMT0&t=484" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=TQHXXTJuMT0&t=484" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=TQHXXTJuMT0&t=484" "#" "<==" "pen-ci"

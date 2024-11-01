@@ -1,0 +1,24 @@
+- 1. Knuth (1938-)
+- 2. Berners-Lee (1955-)
+- 3. Schneier (1967-)
+- 4. Gates (1955-)
+"""
+
+
+class TestPrettyPrint(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        logging.basicConfig(level=logging.DEBUG)
+
+    def setUp(self):
+        # print self._testMethodName
+        pass
+
+    def test_pprinter(self):
+
+        tags = ["one", "two", "three"]
+
+        pprinter = pretty_print.PrettyPrinter()
+
+        pprinter.add_tag_to

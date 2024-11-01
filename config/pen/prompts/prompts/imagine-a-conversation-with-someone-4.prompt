@@ -1,0 +1,30 @@
+include: Imagine a conversation between two people/5
+task: Imagine a conversation with someone
+tags: chatbot
+language: English
+defs:
+- Person A: "\"you\""
+vars:
+- history
+- expression
+- Person B
+- Info
+examples:
+- "<kickstarter>"
+- "Hi, my name is Bartholomew. I'm from a parallel dimension. May I ask you a few questions?"
+- "John Dee"
+- |+
+    John Dee was an English mathematician,
+    astronomer, astrologer, teacher, occultist,
+    and alchemist. He was the court astronomer
+    for, and advisor to, Elizabeth I, and spent
+    much of his time on alchemy, divination and
+    Hermetic philosophy. As an antiquarian, he had
+    one of the largest libraries in England at the
+    time.
+user-prompt: "^-[^:]*: "
+preprocessors:
+- ~
+- "awk 1 | sed -z \"s/$/<:pp>- <Person B>: /\""
+- ~
+- pen-str trailing-empty-line-if-not-empty

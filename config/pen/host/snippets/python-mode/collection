@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: collection
+# key: cln
+# --
+colors = ['red', 'green', 'blue', 'yellow']
+
+for color in colors:
+print color

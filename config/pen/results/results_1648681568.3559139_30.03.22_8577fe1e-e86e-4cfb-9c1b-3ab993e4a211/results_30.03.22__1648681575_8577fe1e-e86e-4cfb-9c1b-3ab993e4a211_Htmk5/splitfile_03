@@ -1,0 +1,12 @@
+"Data.Text" is a module for working with text as a sequence of Unicode
+code points.
+
+The module is intended to be a safe and friendly alternative to
+representing strings as lists of integers.
+
+The module is intended to be used with Haskell 98, and should work
+with a large subset of the functions defined in the Haskell report.
+
+The module provides a type, Text, with a variety of
+constructors, and a variety of functions for converting to and
+from Strings.

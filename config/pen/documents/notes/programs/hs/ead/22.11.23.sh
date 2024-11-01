@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "pen-n-workers" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "n-workers" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "-i" "waiting" "for" "socket" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "his" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "vimcat" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "gensub" "#" "<==" "ead"

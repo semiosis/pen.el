@@ -1,0 +1,916 @@
+Chomsky hierarchy
+Chomsky-Schützenberger hierarchy
+    A containment hierarchy of classes of
+    formal grammars.
+
+    The hierarchy
+    - Type-0 grammars
+    - Type-1 grammars
+    - Type-2 grammars
+    - Type-3 grammars
+
+
+    Type-0 grammars (Unrestricted grammar)
+        Includes all formal grammars. They
+        generate exactly all languages that
+        can be recognized by a Turing machine.
+        These languages are also known as the
+        recursively enumerable or
+        Turing-recognizable languages. Note
+        that this is different from the
+        recursive languages, which can be
+        decided by an always-halting Turing
+        machine.
+
+    Type-1 grammars (Context-sensitive grammar)
+        Generate context-sensitive languages.
+
+        The languages described by these
+        grammars are exactly all languages
+        that can be recognized by a linear
+        bounded automaton (a nondeterministic
+        Turing machine whose tape is bounded
+        by a constant times the length of the
+        input.)
+
+    Type-2 grammars (Context-free grammar)
+        Generate the context-free languages.
+
+        These languages are exactly all
+        languages that can be recognized by a
+        non-deterministic pushdown automaton.
+
+        Context-free languages-or rather its
+        subset of deterministic context-free
+        language-are the theoretical basis for
+        the phrase structure of most
+        programming languages, though their
+        syntax also includes context-sensitive
+        name resolution due to declarations
+        and scope.
+
+        Often a subset of grammars is used to
+        make parsing easier, such as by an LL
+        parser.
+
+    Type-3 grammars (Regular grammar)
+        Generate the regular languages.
+
+        Such a grammar restricts its rules to
+        a single nonterminal on the left-hand
+        side and a right-hand side consisting
+        of a single terminal, possibly
+        followed by a single nonterminal
+        (right regular).
+
+        Alternatively, the right-hand side of
+        the grammar can consist of a single
+        terminal, possibly preceded by a
+        single nonterminal (left regular).
+
+        These generate the same languages.
+
+        However, if left-regular rules and
+        right-regular rules are combined, the
+        language need no longer be regular.
+
+        These languages are exactly all
+        languages that can be decided by a
+        finite state automaton.
+
+        Additionally, this family of formal
+        languages can be obtained by regular
+        expressions.
+
+        Regular languages are commonly used to
+        define search patterns and the lexical
+        structure of programming languages.
+
+transformational grammar
+transformational-generative Grammar
+    [system of language analysis]
+
+    https://www.britannica.com/science/linguistics/Chomskys-grammar
+    https://www.britannica.com/topic/transformational-grammar
+
+    Recognizes the relationship among the
+    various elements of a sentence and among
+    the possible sentences of a language and
+    uses processes or rules (some of which are
+    called transformations) to express these
+    relationships.
+
+    Transformational grammar assigns a “deep
+    structure” and a “surface structure” to
+    show the relationship of such sentences.
+    
+    Thus, “I know a man who flies planes” can
+    be considered the surface form of a deep
+    structure approximately like “I know a
+    man. The man flies airplanes.”
+
+phrase-structure grammar
+    https://www.britannica.com/science/linguistics/Chomskys-grammar
+
+    One that consists entirely of phrase-
+    structure rules, a transformational
+    grammar (as formalized by Chomsky)
+    includes both phrase-structure and
+    transformational rules (as well as
+    morphophonemic rules).
+
+redex
+reducible expression
+    Subterms that can be reduced by one of the
+        reduction rules.
+
+contractum
+    A reduced redex.
+
+static semantics vs dynamic semantics
+    Semantics is about meaning. It includes:
+
+    - the static semantics, which is the part
+      that can be ascertained at compile time,
+      including data typing, whether all
+      variable are declared, which declaration
+      applies to which variable in the case of
+      scoping, what their type is, whether
+      functions and methods are called with
+      correct calling sequences, whether
+      assignments are type-compatible, etc.,
+      and
+
+    - dynamic semantics, which is what
+      actually happens when the program is
+      executed.
+
+expressive power
+expressiveness
+expressivity
+    [...of a language]
+
+    The breadth of ideas that can be
+    represented and communicated in that
+    language.
+    
+    The more expressive a language is, the
+    greater the variety and quantity of ideas
+    it can be used to represent.
+
+Recursive Descent Parser
+    A kind of top-down parser built from a set
+    of mutually recursive procedures (or a
+    non-recursive equivalent) where each such
+    procedure implements one of the
+    nonterminals of the grammar.
+
+John McCarthy
+    American computer scientist and cognitive
+    scientist. McCarthy was one of the
+    founders of the discipline of artificial
+    intelligence.
+
+    Coined the term "artificial intelligence"
+    (AI).
+    
+    Developed the Lisp programming language
+    family.
+    
+    Significantly influenced the
+    design of the ALGOL programming language.
+
+    Popularized timesharing.
+    
+    Very influential in the early development
+    of AI.
+
+    May he rest in peace, designed a language
+    that is as close to perfection as a human
+    can hope to achieve.
+
+parser generator
+compiler compiler
+    An application which generates a parser.
+
+    The usual input is a formal specification
+    of the grammar the parser has to
+    recognize, plus code implementing the
+    actions the parser has to take when
+    recognizing the various parts of its
+    input.
+
+scripting engine
+    Commonly defined as a vehicle for
+    implementing scripts in scripting
+    languages.
+    
+    These differ from other programming
+    languages commonly called "system
+    programming languages".
+    
+    Capable of loading, compiling, and running
+    script code.
+    
+    Like an interpreter that turns script
+    (code snippets directed at performing
+    certain task) into machine code on the fly
+    i.e. at the execution time.
+
+tail call
+    [subroutine call]
+    
+    Performed as the final action of a
+    procedure.
+
+    If a tail call might lead to the same
+    subroutine being called again later in the
+    call chain, the subroutine is said to be
+    tail-recursive, which is a special case of
+    recursion.
+    
+    Tail recursion (or tail-end recursion) is
+    particularly useful, and often easy to
+    handle in implementations.
+
+Tail Call Optimization
+    Tail calls can be implemented without
+    adding a new stack frame to the call
+    stack.
+    
+    Most of the frame of the current procedure
+    is no longer needed, and can be replaced
+    by the frame of the tail call, modified as
+    appropriate (similar to overlay for
+    processes, but for function calls).
+    
+    The program can then jump to the called
+    subroutine.
+    
+    Producing such code instead of a standard
+    call sequence is called tail call
+    elimination.
+    
+    Tail call elimination
+    
+    allows procedure calls in tail position to
+    be implemented as efficiently as goto
+    statements, thus allowing efficient
+    structured programming.
+    
+    In the words of Guy L. Steele, "in
+    general, procedure calls may be usefully
+    thought of as GOTO statements which also
+    pass parameters, and can be uniformly
+    coded as [machine code] JUMP
+    instructions."
+    
+    Not all programming languages require tail
+    call elimination.
+    
+    However, in functional programming
+    languages, tail call elimination is often
+    guaranteed by the language standard,
+    allowing tail recursion to use a similar
+    amount of memory as an equivalent loop.
+    
+    The special case of tail recursive calls,
+    when a function calls itself, may be more
+    amenable to call elimination than general
+    tail calls.
+    
+    When the language semantics do not
+    explicitly support general tail calls, a
+    compiler can often still optimize sibling
+    calls, or tail calls to functions which
+    take and return the same types as the
+    caller.
+
+third-generation programming language
+3GL
+    A generational way to categorize
+    high-level computer programming
+    languages.
+
+    Examples:
+    - C
+    - C++
+    - C#
+    - Java
+    - JavaScript
+
+    Some advanced 3GLs like Python, Ruby, and
+    Perl combine some 4GL abilities within a
+    general-purpose 3GL environment.
+    
+    Also, libraries with 4GL-like features
+    have been developed as add-ons for most
+    popular 3GLs.
+    
+    This has blurred the distinction of 4GL
+    and 3GL.
+
+
+fourth-generation programming language
+4GL
+    Any computer programming language that
+    belongs to a class of languages envisioned
+    as an advancement upon 3GLs.
+    
+    Each of the programming language
+    generations aims to provide a higher level
+    of abstraction of the internal computer
+    hardware details, making the language more
+    programmer-friendly, powerful, and
+    versatile.
+    
+    While the definition of 4GL has changed
+    over time, it can be typified by operating
+    more with large collections of information
+    at once rather than focusing on just bits
+    and bytes.
+    
+    Languages claimed to be 4GL may include
+    support for database management, report
+    generation, mathematical optimization, GUI
+    development, or web development.
+    
+    Some researchers state that 4GLs are a
+    subset of domain-specific languages.
+    
+    The concept of 4GL was developed from the
+    1970s through the 1990s, overlapping most
+    of the development of 3GL.
+    
+fifth-generation programming language
+5GL
+    Any programming language based on problem
+    solving using constraints given to the
+    program, rather than using an algorithm
+    written by a programmer.
+    
+    Most constraint-based and logic
+    programming languages and some other
+    declarative languages are fifth-generation
+    languages.
+
+attribute grammar
+    A formal way to define attributes for the
+    productions of a formal grammar,
+    associating these attributes with values.
+    
+    The evaluation occurs in the nodes of the
+    abstract syntax tree, when the language is
+    processed by some parser or compiler.
+    
+    The attributes are divided into two
+    groups:
+    - synthesized attributes, and
+    - inherited attributes.
+    
+    The synthesized attributes are the result
+    of the attribute evaluation rules, and may
+    also use the values of the inherited
+    attributes.
+    
+    The inherited attributes are passed down
+    from parent nodes.
+    
+    In some approaches, synthesized attributes
+    are used to pass semantic information up
+    the parse tree, while inherited attributes
+    help pass semantic information down and
+    across it.
+    
+    For instance, when constructing a language
+    translation tool, such as a compiler, it
+    may be used to assign semantic values to
+    syntax constructions.
+    
+    Also, it is possible to validate semantic
+    checks associated with a grammar,
+    representing the rules of a language not
+    explicitly imparted by the syntax
+    definition.
+    
+    Attribute grammars can also be used to
+    translate the syntax tree directly into
+    code for some specific machine, or into
+    some intermediate language.
+    
+    One strength of attribute grammars is that
+    they can transport information from
+    anywhere in the abstract syntax tree to
+    anywhere else, in a controlled and formal
+    way.
+
+Backus-Naur form
+Backus normal form
+BNF
+    [notation technique]
+
+    For context-free grammars, often used to
+    describe the syntax of languages used in
+    computing, such as computer programming
+    languages, document formats, instruction
+    sets and communication protocols.
+    
+    Applied wherever exact descriptions of
+    languages are needed: for instance, in
+    official language specifications, in
+    manuals, and in textbooks on programming
+    language theory.
+    
+    Many extensions and variants of the
+    original Backus–Naur notation are used;
+    some are exactly defined, including EBNF
+    and ABNF.
+
+Extended Backus–Naur form
+Extended BNF
+EBNF
+
+Augmented Backus–Naur form
+Augmented BNF
+ABNF
+
+semantic analysis
+context sensitive analysis
+    A process in compiler construction,
+    usually after parsing, to gather necessary
+    semantic information from the source code.
+    
+    It usually includes type checking, or
+    makes sure a variable is declared before
+    use which is impossible to describe in the
+    extended BNF and thus not
+    easily detected during parsing.
+
+context-sensitive grammar
+CSG
+    A formal grammar in which the left-hand
+    sides and right-hand sides of any
+    production rules may be surrounded by a
+    context of terminal and nonterminal
+    symbols.
+    
+    Context-sensitive grammars are more
+    general than context-free grammars, in the
+    sense that there are languages that can be
+    described by CSG but not by context-free
+    grammars.
+    
+    Context-sensitive grammars are less
+    general (in the same sense) than
+    unrestricted grammars.
+    
+    Thus, CSG are positioned between context-
+    free and unrestricted grammars in the
+    Chomsky hierarchy.
+
+    v +/"Type-2 grammars (Context-free grammar)" "$NOTES/ws/glossaries/formal-languages.txt"
+
+LL
+LL-style parsing
+    Left-to-right
+    Leftmost derivation
+
+    LL-style parsing has a problem:
+        Left Recursion.
+
+    It's a traversal algorithm for a parser.
+
+    The most natural way to think about
+    parsing.
+
+    Constructing a 'postfix' equivalent for
+    the 'infix' token stream that is being
+    read.
+
+    A parser that does LL-style parsing can be
+    written to look very much like the
+    original grammar that was specified.
+
+LR
+    Left-to-right
+    Rightmost derivation
+
+    It's a traversal algorithm.
+
+scanner
+    The first stage of a lexer.
+
+lexical analysis
+lexing
+tokenization
+    The process of converting a sequence of
+    characters (such as in a computer program
+    or web page) into a sequence of tokens
+    (strings with an assigned and thus
+    identified meaning).
+    
+    A lexer is generally combined with a
+    parser, which together analyze the syntax
+    of programming languages, web pages, and
+    so forth.
+
+lexer
+tokenizer
+scanner (imprecise)
+    Splits a string into tokens that might be
+    tagged to show what kind of value we are
+    dealing with.
+
+    A program that performs lexical analysis.
+
+    Scanner is also a term for the first stage
+    of a lexer.
+
+parse tree
+    Used for:
+    -   Translating it to another language
+        (used in many compilers)
+
+    -   Interpreting the written instructions
+        directly in some way (SQL, HTML)
+
+    -   Allowing tools like Linters to do
+        their work, etc.
+
+Parsing
+    The process of analyzing of a string of
+    symbols according to a formal grammar.
+
+    Create a parse tree that represents the
+    written text, storing the meaning of the
+    different written parts in each node of
+    the tree.
+
+    Sometimes, a parse tree is not explicitly
+    generated, but rather the action that
+    should be performed at each type of node
+    in the tree is executed directly. This
+    increases efficiency, but underwater still
+    an implicit parse tree exists.
+
+parser
+    Takes the output list of tokens from the
+    lexer and attempts to combine them,
+    forming an Abstract Syntax Tree.
+
+    Structurally a parser is a function which
+    takes an input stream of characters and
+    yields a parse tree by applying the parser
+    logic over sections of the character
+    stream (called lexemes) to build up a
+    composite data structure for the AST.
+
+    Ways to create parsers:
+    -   Parser Generator
+    -   Parser Combinators
+    -   parser interpreters (eval func)
+    -   by hand (more control)
+
+    4 algorithms
+    -   LL parsing.
+        (Context-free, top-down parsing.)
+    -   LR parsing.
+        (Context-free, bottom-up parsing.)
+    -   PEG + Packrat parsing.
+    -   Earley Parsing.
+
+lexer and parser
+    Can create them using parser generator
+    (from EBNF) or parser combinators.
+
+Parser Generator
+    EBNF to parser
+
+    Takes a file written in a DSL that is some
+    dialect of Extended BNF, and
+    turns it into source code that can then
+    (when compiled) become a parser for the
+    input language that was described in this
+    DSL.
+
+    It is written in a combination of the
+    EBNF-ish DSL and the code that these
+    statements should generate to.
+
+    Have a very distinct difference between
+    the lexer and the parser.
+
+Parser Combinators
+    Do not have/need a distinction between
+    lexer and parser.
+    
+    Simple parsers perform the work of the
+    'lexer'.
+    
+    The more high-level parsers call these
+    simpler ones to decide which kind of
+    AST-node to create.
+
+parser interpreters
+    The parser language is executed directly).
+
+    I guess this would be like 'eval' in bash.
+
+    It's not a real way.
+    
+hand-made parser
+    Writing the parser by hand is the
+    preferred form of implementation for many
+    modern production-ready
+    industrial-strength language
+    implementations (e.g. GCC, Clang, javac,
+    Scala).
+    
+    Maximal control over the internal parser
+    state, which helps with generating good
+    error messages.
+
+context-free grammar
+CFG
+    Has sufficient richness to describe the
+    recursive syntactic structure of many
+    (though certainly not all) languages.    
+
+    A certain type of formal grammar:
+        A set of production rules that
+        describe all possible strings in a
+        given formal language.
+        
+        Production rules are simple
+        replacements. For example, the rule
+            A → α 
+        replaces A with α.
+
+    Example:
+        <Stmt> → <Id> = <Expr>
+
+        replaces '<Stmt>'
+        with '<Id> = <Expr>'
+
+Grammar
+    The language of languages.
+
+    Behind every language, there is a grammar
+    that determines its structure.
+
+    Common notations for grammars:
+    -   BNF
+    -   EBNF
+    -   regular extensions to BNF.
+    
+    The most common type of grammar is the
+    context-free grammar, and these grammars
+    will be the primary focus of this article.
+
+    Composition:
+        A set of [grammar] rules.
+
+    See "Grammar rule".
+    
+    A set of rules is the core component of a
+    grammar. 
+    
+    Each rule has two parts:
+    1. a name, and
+    2. an expansion of the name. 
+    
+    For instance, if we were creating a
+    grammar to handle english text, we might
+    add a rule like:
+    - noun-phrase may expand into article noun. 
+    from which we could ultimately deduce that
+    "the dog" is a noun-phrase. 
+
+    the       dog
+    <article> <noun>
+    <noun phrase>
+
+Grammar rule
+    Composition:
+        Two parts:
+            a name
+            An expansion of the name.
+
+higher-order languages
+    https://link.springer.com/article/10.1007/s11229-017-1502-0
+
+Lemmatization
+    The process of grouping together the
+    inflected forms of a word so they can be
+    analysed as a single item, identified by
+    the word's lemma, or dictionary form.
+
+parametric polymorphism
+    A way to make a language more expressive,
+    while still maintaining full static type-
+    safety.
+    
+    Using parametric polymorphism, a function
+    or a data type can be written generically
+    so that it can handle values identically
+    without depending on their type.
+
+    Examples:
+    - Haskell
+
+polymorphic recursion
+    https://en.wikipedia.org/wiki/Polymorphic_recursion
+
+    A recursive parametrically polymorphic
+    function where the type parameter changes
+    with each recursive invocation made,
+    instead of staying constant.
+    
+    Type inference for polymorphic recursion
+    is equivalent to semi-unification and
+    therefore undecidable and requires the use
+    of a semi-algorithm or programmer supplied
+    type annotations.
+
+    See:
+        vim +/"- polymorphism type: parametric" "$NOTES/ws/glossaries/general.txt"
+
+Abstract Binding Trees
+    https://semantic-domain.blogspot.com/2015/03/abstract-binding-trees.html
+
+    Examples
+    - https://github.com/unisonweb/unison
+
+      Unison.Term and Unison.Type have the
+      syntax trees for terms and types.
+      
+      In both Term and Type, the same pattern
+      is used.
+      
+      Each defines a 'base functor' type, F a,
+      which is nonrecursive, and the actual
+      thing we use is an abstract binding tree
+      over this base functor, an ABT F.
+      
+      ABT (for 'abstract binding tree') is
+      defined in Unison.ABT.
+      
+      If you aren't familiar with abstract
+      binding trees, here is a nice blog post
+      explaining one formulation of the idea,
+      which inspired the Unison.ABT module.
+      
+      A lot of operations on terms and types
+      just delegate to generic ABT operations.
+      
+predictive LL(1) grammar
+LL[1] grammar
+LL(1) grammar
+    A context-free grammar G = (V_T, V_N, S,
+    P) whose parsing table has no multiple
+    entries is said to be LL(1).
+    
+    In the name LL(1):
+    - the first L stands for scanning the
+      input from left to right,
+    - the second L stands for producing a
+      leftmost derivation, and
+    - the 1 stands for using one input symbol
+      of lookahead at each step to make
+      parsing action decision.
+
+    http://www.csd.uwo.ca/~moreno/CS447/Lectures/Syntax.html/node14.html
+
+LL(1) language
+    Said to be LL(1) if it can be generated by
+    a LL(1) grmmar. It can be shown that LL(1)
+    grammars are:
+    - not ambiguous and
+    - not left-recursive.
+
+markup language
+    A system for annotating a document in a
+    way that is syntactically distinguishable
+    from the text.
+    
+    The idea and terminology evolved from the
+    "marking up" of paper manuscripts, which
+    is traditionally written with a red or
+    blue pencil on authors' manuscripts.
+
+    Examples:
+    - markdown
+    - org-mode
+    - html
+
+regular language
+    A language that can be expressed with a
+    regular expression or a deterministic or
+    non-deterministic finite automata or state
+    machine.
+    
+    A language is a set of strings which are
+    made up of characters from a specified
+    alphabet, or set of symbols.
+
+Starting rule
+S
+    Here's a typical example of a context-free
+    grammar one might see in a textbook on
+    automata and/or parsing. It is a common
+    convention in many textbooks to use the
+    capital letter `S` to indicate the
+    starting rule, so for this example, we'll
+    follow that convention:
+    
+    	S = AB*
+    	AB = A B
+    	A = 'a'+
+    	B = 'b'+
+    
+    This looks for alternating runs of 'a'
+    followed by runs of 'b'. So for example
+    "aaaaabbaaabbb" satisfies this grammar.
+    On the other hand, "aaabbbbaa" does not
+    (because the grammar specifies that each
+    run of 'a' must be followed by a run of
+    'b').
+
+    sp +/"### Creating your first parser" "$MYGIT/Engelberg/instaparse/README.md"
+
+non-terminal symbols
+    [#bnf]
+
+    We say that the left-hand side names
+    <expr> and <op> are non-terminal symbols,
+    meaning that we generate valid expressions
+    by substituting for them using these
+    grammar rules.
+    
+    By convention, we’ll put angle brackets
+    around all non-terminal symbols.
+
+associativity
+    The associativity of an operator is a
+    property that determines how operators of
+    the same precedence are grouped in the
+    absence of parentheses.
+
+    Types:
+    - associative
+    - left-associative
+    - right-associative
+    - non-associative
+
+associative
+    [type of associativity]
+
+    The operations can be grouped arbitrarily.
+
+    In mathematics, the associative property
+    is a property of some binary operations,
+    which means that rearranging the
+    parentheses in an expression will not
+    change the result.
+    
+    In propositional logic, associativity is a
+    valid rule of replacement for expressions
+    in logical proofs.
+
+    Examples:
+    - addition and multiplication of real
+      numbers are associative operations.
+
+left-associative
+    [type of associativity]
+
+    Meaning the operations are grouped from
+    the left.
+
+right-associative
+    [type of associativity]
+
+    Meaning the operations are grouped from
+    the right.
+
+    Operators of the same precedence are
+    evaluated in order from right to left.
+
+    For example, assignment is
+    right-associative.  Consider the following
+    code fragment:
+
+    int a = 3;
+    int b = 4;
+    a = b = 5;
+
+    After the code has been evaluated, both a
+    and b contain 5 because the assignments
+    are evaluated from right to left.
+
+non-associative
+    [type of associativity]
+
+    Meaning operations cannot be chained,
+    often because the output type is
+    incompatible with the input types.

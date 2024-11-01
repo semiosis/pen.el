@@ -1,0 +1,1 @@
+--filters Name=instance-state-name,Values=running

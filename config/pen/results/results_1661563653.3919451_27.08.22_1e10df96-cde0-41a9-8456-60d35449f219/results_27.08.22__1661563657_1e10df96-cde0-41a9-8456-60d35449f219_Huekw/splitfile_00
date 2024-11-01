@@ -1,0 +1,8 @@
+http://www.lispworks.com/reference/HyperSpec/Body/f_unionc.htm
+
+
+(defun union (set1 set2 &rest sets)
+"Combine SET1 and SET2, and apply to each of SETS.
+Return the union of the result.
+
+See `union' for more information."

@@ -1,0 +1,6 @@
+cd /root/notes;  "draw" "--help" "#" "<==" "zsh"
+cd /root/notes;  "draw" "#" "<==" "zsh"
+cd /root/notes;  "draw" "#" "<==" "zsh"
+cd /root/notes;  "draw" "#" "<==" "zsh"
+cd /root/notes;  "draw" "#" "<==" "zsh"
+cd /root/notes;  "draw" "#" "<==" "zsh"

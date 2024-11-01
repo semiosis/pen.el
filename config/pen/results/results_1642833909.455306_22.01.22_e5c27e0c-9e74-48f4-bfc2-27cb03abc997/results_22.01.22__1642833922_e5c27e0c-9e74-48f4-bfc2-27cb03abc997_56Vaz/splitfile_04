@@ -1,0 +1,13 @@
+- 1. Columbus, Ohio
+- 2. New Albany, Ohio
+"""
+
+
+import sys
+sys.path.append('../')
+from class_def import topic_model, document, topic, query
+
+
+
+
+class 

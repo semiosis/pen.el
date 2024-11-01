@@ -1,0 +1,30 @@
+engine-title: OpenAI Davinci Code Edit
+include: OpenAI
+model: code-davinci-edit-001
+foundation: true
+engine-delimiter: "\"\"\""
+# PEN_CACHE=y 
+availability-test: "pen-ci pen-openai-list-engines | grep -q code-davinci-edit-001"
+# For the API
+default-temperature: 0.2
+# Default mode (so it doesn't need to be specified in the prompt)
+mode: edit
+modes:
+- edit
+layers:
+- foundation
+- nl
+- code
+# Pick this engine when you need 'just' NL ∩ Code
+specialities:
+- nl+code+edit
+# e.g. may also put finetuning labels at the end
+# - python
+engine-min-tokens: 0
+engine-whitespace-support: yes
+engine-max-tokens: 4096
+rate-limit-requests-per-min: 20
+libre-dataset: no
+libre-model: no
+local: no
+upstream-engine: OpenAI Codex

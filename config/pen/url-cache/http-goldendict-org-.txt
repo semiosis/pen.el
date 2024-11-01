@@ -1,0 +1,186 @@
+HTTP/1.1 200 OK
+Server: nginx/1.2.1
+Date: Mon, 31 Jul 2023 23:53:21 GMT
+Content-Type: text/html
+Content-Length: 3022
+Connection: keep-alive
+X-Powered-By: PHP/5.4.4-14+deb7u12
+Vary: Accept-Encoding
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="LQqoUGj9UMJOWHDCkReMJv0paitHxwRAtKAZu597NKs" />
+<link rel="icon" type="image/png" href="/icon.png"/>
+<title>GoldenDict</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1	><a href="/">GoldenDict</a></h1>
+			<p>dictionary lookup program</p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+		<ul><li class ="first"><a href="/">About</a></li><li><a href="news.php">News</a></li><li><a href="screenshots.php">Screenshots</a></li><li><a href="download.php">Download</a></li><li><a href="changelog.php">Changelog</a></li><li><a href="dictionaries.php">Dictionaries</a></li><li><a href="wiki/">Wiki</a></li><li><a href="forum/">Forum</a></li><li><a href="contact.php">Contact</a></li>		</ul>
+	</div>
+<div id="wrapper">
+<div class="btm">
+	<div id="page">
+		<div id="content">
+			<div class="post">
+				<div class="entry">
+<p>The project aims to create a feature-rich dictionary lookup program. The latest release is <b>1.0.1</b>.
+You are welcome to look around, download the program, provide feedback, and join the cause.
+				</div>
+<div id="topb">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4531618624297387";
+/* Top */
+google_ad_slot = "0814101047";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+			</div>
+			<div class="post">
+				<h2 class="title">Features</h2>
+				<div class="entry">
+The program has the following features:<br><br>
+<ul>
+  <li>Use of WebKit for an accurate articles' representation, complete
+with all formatting, colors, images and links.</li>
+  <li>Support of multiple dictionary file formats, namely:</li>
+  <ul>
+    <li>Babylon .BGL files, complete with images and resources</li>
+    <li>StarDict .ifo/.dict./.idx/.syn dictionaries</li>
+    <li>Dictd .index/.dict(.dz) dictionary files</li>
+    <li>ABBYY Lingvo .dsl source files, together with abbreviations.
+The files can be optionally compressed with dictzip. Dictionary resources can be packed together into a .zip file.</li>
+    <li>ABBYY Lingvo .lsa/.dat audio archives. Those can be indexed
+separately, or be referred to from .dsl files.</li>
+  </ul>
+  <li>Support for Wikipedia, Wiktionary, or any other MediaWiki-based sites to perform lookups in.</li>
+  <li>Ability to use arbitrary websites as dictionaries via templated Url patterns.</li>
+  <li>Ability to run arbitrary external programs for audio playback or content generation (text-to-speech, man pages etc) (use the latest Git version for this)</li>
+  <li>Support for looking up and listening to pronunciations from <a href='http://forvo.com'>forvo.com</a></li>
+  <li>Hunspell-based morphology system, used for word stemming and spelling suggestions.</li>
+  <li>Ability to index arbitrary directories with audio files for pronunciation lookups.</li>
+  <li>Full Unicode case, diacritics, punctuation and whitespace folding. This means the ability
+to type in words without any accents, correct case, punctuation or spaces (e.g. typing
+'Grussen' would yield 'gr&uuml;&szlig;en' in German dictionaries).</li>
+ <li>Scan popup functionality. A small window pops up with the translation
+  of a word chosen from another application.</li>
+  <li>Support for global hotkeys. You can spawn the program window at any point,
+  or directly translate a word from the clipboard.</li>
+  <li>Tabbed browsing in a modern Qt 4 interface.</li>
+  <li>Cross-platform: Linux/X11 and Windows + portable to others.</li>
+  <li>Free software: GNU GPLv3+ license.</li>
+</ul>
+        </div>
+			</div>			
+
+			<div class="post">
+				<h2 class="title">Mobile version</h2>
+				<div class="entry">
+A commercial <a href="http://goldendict.mobi/">mobile version</a> is now available for Android devices. Using it is the best way to support this project financially.
+</div>
+</div>
+<br>
+
+			<div class="post">
+				<h2 class="title">Also</h2>
+				<div class="entry">
+If you're a Linux sysadmin, check out <a href="http://zbackup.org/">zbackup</a> - a versatile deduplicating backup tool, another open-source project by the same author.
+</div>
+</div>
+
+			
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="x_help" style="display: none;"><div class="x_help_space"></div><div class="x_help_inner"></div></div>
+
+<div style="height: 32px;">&nbsp;</div>
+
+<div class="post" id="our_xframe" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4531618624297387";
+/* Bottom Placement */
+google_ad_slot = "3050725811";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2008-2013 Konstantin Isakov. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
+	
+	
+	</p>
+ 	</div>
+	<!-- end #footer -->
+ 
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=4444680; 
+var sc_invisible=1; 
+var sc_partition=55; 
+var sc_click_stat=1; 
+var sc_security="177b4314"; 
+</script>
+<script type="text/javascript"
+ src="http://www.statcounter.com/counter/counter.js"></script><noscript>
+<div class="statcounter"><a title="myspace views counter"
+ href="http://www.statcounter.com/myspace/" target="_blank"><img
+ class="statcounter"
+ src="http://c.statcounter.com/4444680/0/177b4314/1/"
+ alt="myspace views counter"></a></div>
+</noscript><!-- End of StatCounter Code -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19913106-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+$(document).ready( function() {
+
+if ($('#our_xframe').height() == 0)
+{
+  $('#x_help .x_help_inner').html(
+"We've put a lot of effort to produce this software. \
+It comes for free, complete with the source code! \
+If you are sympathetic to the project and would like to help it, please \
+disable your <b>AdBlock</b> on this site. Just click on the <b>AdBlock</b> \
+icon and choose <b>'Disable on goldendict.org'</b>. Thank you!" );
+  $('#x_help').show();
+}
+});
+</script></body>
+</html>

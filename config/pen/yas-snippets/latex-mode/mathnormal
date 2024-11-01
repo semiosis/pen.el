@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: math normal upright Roman font
+# group: math
+# key: mnorm
+# --
+\mathrm{`yas-selected-text`$0}

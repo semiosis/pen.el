@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cll
+# group: for
+# key: cll
+# --
+(cl-loop for buf in (buffer-list) collect (buffer-file-name buf))

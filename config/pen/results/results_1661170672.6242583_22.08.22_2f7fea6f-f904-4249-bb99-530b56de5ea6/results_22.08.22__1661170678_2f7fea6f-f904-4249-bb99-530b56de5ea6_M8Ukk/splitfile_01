@@ -1,0 +1,8 @@
+isAlphaNum)
+import qualified Data.ByteString as S
+import Data.List
+import System.Environment
+import System.Exit
+
+-- | A description of an input file, consisting of the filename, a list of
+-- lines

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: getline
+# group: cmd
+# key: |
+# --
+printf "%s", \$0 |& cmd;
+close\(cmd, "to");
+\$0 = "";
+cmd |& getline \$0;
+fflush\(cmd);
+close\(cmd);

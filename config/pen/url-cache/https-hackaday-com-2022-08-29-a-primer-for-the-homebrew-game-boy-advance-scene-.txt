@@ -1,0 +1,1266 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 30 Sep 2023 03:08:58 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 21134
+Connection: close
+X-hacker: If you're reading this, you should visit wpvip.com/careers and apply to join the fun, mention this header.
+X-Powered-By: WordPress VIP <https://wpvip.com>
+Host-Header: a9130478a60e5f9135f765b23f26593b
+Link: <https://hackaday.com/wp-json/>; rel="https://api.w.org/"
+Link: <https://hackaday.com/wp-json/wp/v2/posts/550582>; rel="alternate"; type="application/json"
+Link: <https://wp.me/paBn4l-2jem>; rel=shortlink
+X-rq: syd3 123 242 443
+Cache-Control: max-age=300, must-revalidate
+Age: 1057
+X-Cache: hit
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=86400
+
+<!DOCTYPE html>
+<html itemscope="itemscope" itemtype="http://schema.org/Article" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="dQIcgy2eQ8-zyE6l15aOsCdxiVDUKl84C_zi-lJivYE" />
+<meta name="google-site-verification" content="I41e_5mBeAM8AcOI8rSwPioPyN1DXJomC2U2trjvVTI" />
+<meta name="robots" content="max-image-preview:large">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a1a1a">
+<title>A Primer For The Homebrew Game Boy Advance Scene | Hackaday</title>
+<script>document.documentElement.className = "js"</script>
+
+<link rel="shortcut icon" href="https://hackaday.com/wp-content/themes/hackaday-2/favicon.ico?v=3" />
+<link rel="apple-touch-icon" sizes="192x192" href="https://hackaday.com/wp-content/themes/hackaday-2/img/hackaday-logo_1024x1024.png?v=3" />
+<link href="https://hackaday.com/wp-content/themes/hackaday-2/img/logo.svg?v=3" rel="mask-icon" color="#000000">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://hackaday.com/xmlrpc.php">
+
+<!--[if lt IE 9]>
+    <script src="https://hackaday.com/wp-content/themes/hackaday-2/js/html5.js"></script>
+<![endif]-->
+
+<meta name='robots' content='max-image-preview:large' />
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="I41e_5mBeAM8AcOI8rSwPioPyN1DXJomC2U2trjvVTI" />
+<link rel='dns-prefetch' href='//cdn.parsely.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel="alternate" type="application/rss+xml" title="Hackaday &raquo; Feed" href="https://hackaday.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hackaday &raquo; Comments Feed" href="https://hackaday.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hackaday &raquo; A Primer For The Homebrew Game Boy Advance Scene Comments Feed" href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hackaday.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0' href='https://hackaday.com/_static/??-eJyNy0EOQDAQheELqYmIYiHOUu1EhmlJpyK9PRsJO8s/731w7oqC5cOhgBUBR5Jg4s2uimmKJmaQlBlLT6G8DwW8xSLg0ZFBRo8hfWJnkzEqxtnY/I/f27sfNPqh0n1T923T6QuH6EG8' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='all-css-4' href='https://hackaday.com/_static/??/wp-content/themes/hackaday-2/style.css,/wp-content/mu-plugins/jetpack-12.6/css/jetpack.css?m=1695938904' type='text/css' media='all' />
+<script id='srcmnt-ajax-request-js-extra'>
+var SafeCommentsAjax = {"ajaxurl":"https:\/\/hackaday.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script type="text/javascript" src="https://hackaday.com/_static/??-eJx9jdEKwjAMRX/IrqhsugfxW0KXra1LVtsU3d8vig/igxC4D+ccYh/JBHZzHbDYqHevmNfPNBS4iWVn/0mGwpRB8Ft2CwuyWPFImnhwNxhgNYdXXTxk/DXTXKfACmFEkzEtWZQRKXu/hAhPba502Xd9e+xP7bmLG0jORR4=" ></script><link rel="https://api.w.org/" href="https://hackaday.com/wp-json/" /><link rel="alternate" type="application/json" href="https://hackaday.com/wp-json/wp/v2/posts/550582" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hackaday.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.1" />
+<link rel="canonical" href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/" />
+<link rel='shortlink' href='https://wp.me/paBn4l-2jem' />
+<link rel="alternate" type="application/json+oembed" href="https://hackaday.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://hackaday.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F&#038;format=xml" />
+	<style>img#wpstats{display:none}</style>
+		<meta name="parsely-title" content="A Primer For The Homebrew Game Boy Advance Scene" />
+<meta name="parsely-link" content="http://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/" />
+<meta name="parsely-type" content="post" />
+<meta name="parsely-image-url" content="https://hackaday.com/wp-content/uploads/2022/08/gba-homebrew-main.png?w=250" />
+<meta name="parsely-pub-date" content="2022-08-30T05:00:24Z" />
+<meta name="parsely-section" content="Games" />
+<meta name="parsely-tags" content="coding,developer,game boy advance,games,gba,homebrew,programming,tutorial" />
+<meta name="parsely-author" content="Bryan Cockfield" />
+
+<link rel="image_src" href="https://hackaday.com/wp-content/uploads/2022/08/gba-homebrew-thumb.png?w=600&amp;h=600"/>
+<meta itemprop="name" content="A Primer For The Homebrew Game Boy Advance Scene">
+<meta itemprop="description" content="As video game systems pass into antiquity, some of them turn out to make excellent platforms for homebrew gaming. Not only does modern technology make it easier to interact with systems that are now c...">
+<meta itemprop="image" content="https://hackaday.com/wp-content/uploads/2022/08/gba-homebrew-thumb.png?w=600&amp;h=600">
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="A Primer For The Homebrew Game Boy Advance Scene" />
+<meta property="og:url" content="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/" />
+<meta property="og:description" content="As video game systems pass into antiquity, some of them turn out to make excellent platforms for homebrew gaming. Not only does modern technology make it easier to interact with systems that are no…" />
+<meta property="article:published_time" content="2022-08-30T05:00:24+00:00" />
+<meta property="article:modified_time" content="2022-08-29T21:49:38+00:00" />
+<meta property="og:site_name" content="Hackaday" />
+<meta property="og:image" content="https://hackaday.com/wp-content/uploads/2022/08/gba-homebrew-main.png" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="593" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@hackaday" />
+<meta name="twitter:text:title" content="A Primer For The Homebrew Game Boy Advance Scene" />
+<meta name="twitter:image" content="https://hackaday.com/wp-content/uploads/2022/08/gba-homebrew-main.png?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="stylesheet" type="text/css" id="wp-custom-css" href="https://hackaday.com/?custom-css=e239bab7ea" />
+<script src="//use.typekit.net/mpm6gph.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<!-- Supplyframe Ads -->
+	<script type='text/javascript'>
+		function OA_show(e){if(typeof OA_output[e]=="undefined"){return}else{document.write(OA_output[e])}}function OA_showpop(e){zones=window.OA_zones?window.OA_zones:false;var t=e;if(typeof window.OA_zones!="undefined"){if(typeof zones[e]=="undefined"){return}t=zones[e]}var n="<"+"script type='text/javascript' ";n+="src='"+OA_p+"?zoneid="+t;n+="&source="+escape(OA_source)+"&r="+OA_r;OA_spc+="&amp%3Bblock=1";if(window.location)n+="&loc="+escape(window.location);if(document.referrer)n+="&referer="+escape(document.referrer);n+="'><"+"/script>";document.write(n)}if(typeof OA_zones!="undefined"){var OA_zoneids="";for(var zonename in OA_zones)OA_zoneids+=escape(zonename+"="+OA_zones[zonename]+"|");OA_zoneids+="&nz=1"}else{var OA_zoneids=escape("426|427|428|429")}if(typeof OA_source=="undefined"){OA_source=""}var OA_p=location.protocol=="https:"?"https://ads.supplyframe.com/openads/www/delivery/spc.php":"http://ads.supplyframe.com/openads/www/delivery/spc.php";var OA_r=Math.floor(Math.random()*99999999);OA_output=new Array;var OA_spc="<"+"script type='text/javascript' ";OA_spc+="src='"+OA_p+"?zones="+OA_zoneids;OA_spc+="&source="+escape(OA_source)+"&r="+OA_r;OA_spc+="&amp%3Bblock=1";OA_spc+=document.charset?"&charset="+document.charset:document.characterSet?"&charset="+document.characterSet:"";if(window.location)OA_spc+="&loc="+escape(window.location);if(document.referrer)OA_spc+="&referer="+escape(document.referrer);OA_spc+="'><"+"/script>";document.write(OA_spc);var OA_fo="";OA_fo+="<"+"script type='text/javascript' src='//ads.supplyframe.com/openads/www/delivery/fl.js'><"+"/script>\n";document.write(OA_fo);
+	</script>
+
+</head>
+
+<body class="post-template-default single single-post postid-550582 single-format-standard group-blog">
+<div id="page" class="hfeed site">
+    <div id="leaderboard">
+        <script type='text/javascript'>
+            OA_show(426);
+        </script>
+    </div>
+
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header id="masthead" class="site-header" role="banner">
+        <div class="site-branding">
+            <a href="https://hackaday.com/" rel="home">
+                <img src="https://hackaday.com/wp-content/themes/hackaday-2/img/logo.png" alt="Logo" class="logo-img">
+            </a>
+            <h1 class="site-title">
+                <a href="https://hackaday.com/" rel="home">Hackaday</a>
+            </h1>
+        </div>
+
+        <button class="menu-toggle"><span class="icon icon-navbar-toggle">Primary Menu</span></button>
+
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-90201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90201"><a href="https://www.hackaday.com/">Home</a></li>
+<li id="menu-item-136904" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-136904"><a href="https://hackaday.com/blog/">Blog</a></li>
+<li id="menu-item-115276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115276"><a href="https://hackaday.io?from=had&#038;utm_source=hackaday&#038;utm_medium=menu&#038;utm_campaign=blog">Hackaday.io</a></li>
+<li id="menu-item-97770" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97770"><a href="https://www.tindie.com?utm_source=hackaday&#038;utm_medium=link&#038;utm_campaign=fromstore">Tindie</a></li>
+<li id="menu-item-136905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136905"><a title="Build Something that Matters" href="https://hackaday.io/prize">Hackaday Prize</a></li>
+<li id="menu-item-77211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77211"><a href="https://hackaday.com/submit-a-tip/">Submit</a></li>
+<li id="menu-item-101802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101802"><a href="https://hackaday.com/about/">About</a></li>
+<li class="menu-item-mobilesearch-top"><form role="search" method="get" class="search-form" action="https://hackaday.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></li></ul></div>		<aside id="hackaday_calendar-2" class="widget widget_hackaday_calendar"><div id="hackaday_calendar_wrap"><label class="calendar_current_time">September 29, 2023</label></div></aside>        </nav><!-- #site-navigation -->
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+        
+            
+<article itemscope itemtype="http://schema.org/Article" id="post-550582" class="post-550582 post type-post status-publish format-standard has-post-thumbnail hentry category-games tag-coding tag-developer tag-game-boy-advance tag-games tag-gba tag-homebrew tag-programming tag-tutorial">
+    <header class="entry-header">
+        <h1 class="entry-title" itemprop="name">A Primer For The Homebrew Game Boy Advance Scene</h1>
+        <div class="entry-meta">
+            <a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comments" class="comments-counts"><span class="icon-hackaday icon-hackaday-comment"></span>
+                10 Comments            </a>
+            <ul class="meta-authors vcard author">
+                <li>by:</li>
+                <span class="fn"><a href="https://hackaday.com/author/bryancockfield/" title="Posts by Bryan Cockfield" class="author url fn" rel="author">Bryan Cockfield</a></span>
+            </ul>
+        </div><!-- .entry-meta -->
+
+        <div class="entry-meta entry-meta-last">
+            <span class="entry-date published updated" itemprop="datePublished" content="August 29, 2022"><a href="https://hackaday.com/2022/08/29/" title="August 29, 2022 - 10:00 pm">August 29, 2022</a></span>
+            <ul class="share-post">
+                <li><a title="Share on Facebook" onclick="ga('send', 'event', 'ShareSingle', 'click', 'facebook');" href="https://www.facebook.com/sharer/sharer.php?u=https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/" target="_blank"><span class="icon-hackaday icon-hackaday-facebook"></span></a></li>
+                <li><a title="Share on Twitter" onclick="ga('send', 'event', 'ShareSingle', 'click', 'twitter');" href="https://twitter.com/intent/tweet?text=A%20Primer%20For%20The%20Homebrew%20Game%20Boy%20Advance%20Scene%20via%20@hackaday&#038;url=https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/" target="_blank"><span class="icon-hackaday icon-hackaday-twitter"></span></a></li>
+                <li><a title="Share on Hacker News" onclick="ga('send', 'event', 'ShareSingle', 'click', 'hackernews');" href="https://news.ycombinator.com/submitlink?u=https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/&#038;t=A%20Primer%20For%20The%20Homebrew%20Game%20Boy%20Advance%20Scene" target="_blank"><span class="icon-hackaday icon-hackaday-hackernews"></span></a></li>
+                <li><a title="Share on Reddit" onclick="ga('send', 'event', 'ShareSingle', 'click', 'reddit');" href="https://www.reddit.com/submit?url=https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/" target="_blank"><span class="icon-hackaday icon-hackaday-reddit"></span></a></li>
+                <li>
+                    <div class="dropdown">
+                        <button title="Copy title or shortlink" class="icon-hackaday icon-hackaday-clipboard" id="toggle-share-dialog"></button>
+                        <div class="share-dialog-chevron"></div>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- .entry-meta -->
+        <div class="share-dialog-content">
+            <form onsubmit="return false;" id="share-menu">
+                <label>Title:</label>
+                <div class="share-entry">
+                    <input type="text" id="article-title" readonly="true" value="A Primer For The Homebrew Game Boy Advance Scene">
+                    <button id="copy-title">Copy</button>
+                </div>
+                <label>Short Link:</label>
+                <div class="share-entry">
+                    <input type="text" id="article-link" readonly="true" value="https://hackaday.com/?p=550582">
+                    <button id="copy-link" onclick="">Copy</button>
+                </div>
+            </form>
+        </div>
+        <div class="entry-featured-image"><img itemprop="image" content="https://hackaday.com/wp-content/uploads/2022/08/gba-homebrew-thumb.png?w=600&#038;h=600" src="https://hackaday.com/wp-content/uploads/2022/08/gba-homebrew-main.png?w=800" alt=""></div>
+    </header><!-- .entry-header -->
+
+    <div class="entry-content" itemprop="articleBody">
+        <p>As video game systems pass into antiquity, some of them turn out to make excellent platforms for homebrew gaming. Not only does modern technology make it easier to interact with systems that are now comparatively underpowered and simpler, but the documentation available for older systems is often readily available as well, giving the community lots of options for exploration and creativity. The Game Boy Advance is becoming a popular platform for these sorts of independent game development, <a href="https://www.youtube.com/watch?v=6ecgELrwAnQ" target="_blank">and this video shows exactly how you can get started too</a>.</p>
+<p>This tutorial starts with some explanation of how the GBA works. It offered developers several modes for the display, so this is the first choice a programmer must make when designing the game. From there it has a brief explanation of how to compile programs for the GBA and execute them, then it dives into actually writing the games themselves. There are a few examples that [3DSage] demonstrates here including examples for checking the operation of the code and hardware, some simple games, and also a detailed explanation the framebuffers and other hardware and software available when developing games for this console.</p>
+<p>While the video is only 10 minutes long, we recommend watching it at three-quarters or half speed. It&#8217;s incredibly information-dense and anyone following along will likely need to pause several times. That being said, it&#8217;s an excellent primer for developing games for this platform and in general, especially since emulators are readily available so the original hardware isn&#8217;t needed. If you&#8217;d like to build something from an even more bygone era than the early 2000s, though, take a look at <a href="https://hackaday.com/2019/03/29/creating-8-bit-games-with-the-multi-platform-arcade-game-designer/">this tutorial for developing games on arcade cabinets</a>.</p>
+<p><span id="more-550582"></span></p>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" width="800" height="480" src="https://www.youtube.com/embed/6ecgELrwAnQ?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe></span></p>
+	            </div><!-- .entry-content -->
+    <ul class="sharing">
+    					<li class="">
+    				<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F" target="_blank">
+    					<i class="socicon-facebook"><img src="https://hackaday.com/wp-content/themes/hackaday-2/img/share_face.png"> </i>
+    									</a>
+    			</li>
+    					<li class="">
+                        <a class="twitter" href="https://twitter.com/intent/tweet?text=A%20Primer%20For%20The%20Homebrew%20Game%20Boy%20Advance%20Scene%20via%20@hackaday&#038;url=https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/" target="_blank">
+    					<i class="socicon-twitter"><img src="https://hackaday.com/wp-content/themes/hackaday-2/img/share_twitter.png"></i>
+    									</a>
+    			</li>
+    					<li class="">
+    				<a class="linkedin" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F" target="_blank">
+    					<i class="socicon-linkedin"><img src="https://hackaday.com/wp-content/themes/hackaday-2/img/share_in.png"></i>
+    									</a>
+    			</li>
+    					<li class="">
+                <a class="mail" href="mailto:?subject=A+Primer+For+The+Homebrew+Game+Boy+Advance+Scene | Hackaday&amp;body=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F">
+    					<i class=""><img src="https://hackaday.com/wp-content/themes/hackaday-2/img/share_mail1.png"></i>
+    									</a>
+    			</li>
+    			</ul>
+    <footer class="entry-footer">
+        <span class="cat-links">Posted in <a href="https://hackaday.com/category/games/" rel="category tag">Games</a></span><span class="tags-links">Tagged <a href="https://hackaday.com/tag/coding/" rel="tag">coding</a>, <a href="https://hackaday.com/tag/developer/" rel="tag">developer</a>, <a href="https://hackaday.com/tag/game-boy-advance/" rel="tag">game boy advance</a>, <a href="https://hackaday.com/tag/games/" rel="tag">games</a>, <a href="https://hackaday.com/tag/gba/" rel="tag">gba</a>, <a href="https://hackaday.com/tag/homebrew/" rel="tag">homebrew</a>, <a href="https://hackaday.com/tag/programming/" rel="tag">programming</a>, <a href="https://hackaday.com/tag/tutorial/" rel="tag">tutorial</a></span><meta itemprop="url" content="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/"/>    </footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+            	<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<div class="nav-previous"><a href="https://hackaday.com/2022/08/29/genshin-security-impact/" rel="prev"><span class="meta-nav">&larr;</span>&nbsp;Genshin Security Impact</a></div><div class="nav-next"><a href="https://hackaday.com/2022/08/30/a-beautiful-diy-guided-saw/" rel="next">A Beautiful DIY Guided Saw&nbsp;<span class="meta-nav">&rarr;</span></a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+            <div class="content-ads-holder">
+                <script type='text/javascript'>
+                    /* [id429] 300x250 */
+                    OA_show(429);
+                </script>
+            </div>
+
+            
+<div id="comments" class="comments-area">
+
+    
+            <h2 class="comments-title">
+            10 thoughts on &ldquo;<span>A Primer For The Homebrew Game Boy Advance Scene</span>&rdquo;        </h2>
+
+        
+        <ol class="comment-list">
+            	<li id="comment-6507749" class="comment even thread-even depth-1 parent ">
+		<article id="div-comment-6507749" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">elwing</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507749">
+						<time datetime="2022-08-29T22:56:11-07:00">
+							August 29, 2022 at 10:56 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I&#8217;ll just leave that here:<br />
+<a href="https://felixjones.github.io/gba-tutorial/" rel="nofollow ugc" target="_blank">https://felixjones.github.io/gba-tutorial/</a></p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507749"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507749', '538c0fe47e', 'safe-comments-result-6507749'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507749#respond' data-commentid="6507749" data-postid="550582" data-belowelement="div-comment-6507749" data-respondelement="respond" data-replyto="Reply to elwing" aria-label='Reply to elwing'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-6507935" class="comment odd alt depth-2 parent ">
+		<article id="div-comment-6507935" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href="http://gregchabala.com/" class="url" rel="ugc external nofollow">Greg Chabala</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507935">
+						<time datetime="2022-08-30T11:39:15-07:00">
+							August 30, 2022 at 11:39 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>This seems 200% more useful than the video.<br />
+Sort of on par for Hackaday, article is hype/fluff for a video someone found, plus callback to old article; comment section provides the real content.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507935"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507935', '538c0fe47e', 'safe-comments-result-6507935'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507935#respond' data-commentid="6507935" data-postid="550582" data-belowelement="div-comment-6507935" data-respondelement="respond" data-replyto="Reply to Greg Chabala" aria-label='Reply to Greg Chabala'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-6507998" class="comment even depth-3 parent ">
+		<article id="div-comment-6507998" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Traditionalist</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507998">
+						<time datetime="2022-08-30T15:56:01-07:00">
+							August 30, 2022 at 3:56 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>And I see you&#8217;re choosing to continue the rich tradition of shamelessly being an A-hole in the comments, providing nothing to the conversation :)</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507998"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507998', '538c0fe47e', 'safe-comments-result-6507998'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507998#respond' data-commentid="6507998" data-postid="550582" data-belowelement="div-comment-6507998" data-respondelement="respond" data-replyto="Reply to Traditionalist" aria-label='Reply to Traditionalist'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-6508595" class="comment odd alt depth-4  ">
+		<article id="div-comment-6508595" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Barrage</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6508595">
+						<time datetime="2022-09-01T07:08:48-07:00">
+							September 1, 2022 at 7:08 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>+1</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6508595"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6508595', '538c0fe47e', 'safe-comments-result-6508595'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6508595#respond' data-commentid="6508595" data-postid="550582" data-belowelement="div-comment-6508595" data-respondelement="respond" data-replyto="Reply to Barrage" aria-label='Reply to Barrage'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-6507765" class="comment even thread-odd thread-alt depth-1 parent ">
+		<article id="div-comment-6507765" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Bob</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507765">
+						<time datetime="2022-08-30T00:42:21-07:00">
+							August 30, 2022 at 12:42 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>The video looks like it is following the approach people used 20 years ago for this stuff. Things have moved on in that time in terms of setting up a build system: <a href="https://devkitpro.org/wiki/Getting_Started" rel="nofollow ugc" target="_blank">https://devkitpro.org/wiki/Getting_Started</a></p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507765"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507765', '538c0fe47e', 'safe-comments-result-6507765'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507765#respond' data-commentid="6507765" data-postid="550582" data-belowelement="div-comment-6507765" data-respondelement="respond" data-replyto="Reply to Bob" aria-label='Reply to Bob'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-6507872" class="comment odd alt depth-2  ">
+		<article id="div-comment-6507872" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">elwing</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507872">
+						<time datetime="2022-08-30T08:18:14-07:00">
+							August 30, 2022 at 8:18 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Yep, I do prefer the setup proposed by felix jones, using gba-toolchain &amp; cmake + Visual studio code with GDB, but there&#8217;s definitely more modern approach than the one presented, also going straight for mode5 and ignoring the tile modes seems like it&#8217;s missing much of what the HW offers. definitelky a really nice video introduction for sure.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507872"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507872', '538c0fe47e', 'safe-comments-result-6507872'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507872#respond' data-commentid="6507872" data-postid="550582" data-belowelement="div-comment-6507872" data-respondelement="respond" data-replyto="Reply to elwing" aria-label='Reply to elwing'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-6507878" class="comment even thread-even depth-1  ">
+		<article id="div-comment-6507878" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Mike</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507878">
+						<time datetime="2022-08-30T08:30:19-07:00">
+							August 30, 2022 at 8:30 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Yeah this tutorial uses only the bitmap modes, which is where you draw only pixels to the screen. You’re missing out on the charm of the hardware, like several background layers, sprites, rotating palette colors, rotating and zooming of sprites, and of course mode 7 (which is just rotating up to 2 background layers).</p>
+<p>The video hardware does a lot for you. Rather that drawing the entire screen pixel by pixel, then having to redraw the entire screen when you want it to move, you simply upload the tiles and the map to video ram once, then change an X and Y value, and the entire map is moved immediately. The different video modes help with different situations that you may come across. A background map and sprites are easy to move or even rotate, but they won’t have as many colors as a bitmap mode. So maybe use a bitmap mode for your title screen, and other modes during a platformer style game.</p>
+<p><a href="https://itch.io/jam/gbajam22" rel="nofollow ugc" target="_blank">https://itch.io/jam/gbajam22</a> GBA Jam 2022 link with more resources<br />
+<a href="https://www.coranac.com/tonc/text/" rel="nofollow ugc" target="_blank">https://www.coranac.com/tonc/text/</a> Tonc, an excellent guide, explains everything</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507878"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507878', '538c0fe47e', 'safe-comments-result-6507878'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507878#respond' data-commentid="6507878" data-postid="550582" data-belowelement="div-comment-6507878" data-respondelement="respond" data-replyto="Reply to Mike" aria-label='Reply to Mike'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-6507883" class="comment odd alt thread-odd thread-alt depth-1 parent ">
+		<article id="div-comment-6507883" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Mark+S.</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507883">
+						<time datetime="2022-08-30T08:55:36-07:00">
+							August 30, 2022 at 8:55 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Skip the GBA and go for the DS platform. More memory, more CPU power, touch screen and a second screen make it more useful and interesting to write for. And it&#8217;s just as easy.. in fact, most of the techniques and concepts are used on all Nintendo platforms.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507883"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507883', '538c0fe47e', 'safe-comments-result-6507883'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507883#respond' data-commentid="6507883" data-postid="550582" data-belowelement="div-comment-6507883" data-respondelement="respond" data-replyto="Reply to Mark+S." aria-label='Reply to Mark+S.'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-6507924" class="comment even depth-2  ">
+		<article id="div-comment-6507924" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">elwing</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507924">
+						<time datetime="2022-08-30T10:57:33-07:00">
+							August 30, 2022 at 10:57 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Actually if you really want to toy with the hardware and not just use brute force and bitmaps I would recommand going for GBA. it&#8217;s simlier to use and once you understand the hardware you can easily transpose that to NDS&#8230;</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507924"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507924', '538c0fe47e', 'safe-comments-result-6507924'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507924#respond' data-commentid="6507924" data-postid="550582" data-belowelement="div-comment-6507924" data-respondelement="respond" data-replyto="Reply to elwing" aria-label='Reply to elwing'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-6507909" class="comment odd alt thread-even depth-1  ">
+		<article id="div-comment-6507909" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href="https://www.youtube.com/c/3dsage" class="url" rel="ugc external nofollow">Sage</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#comment-6507909">
+						<time datetime="2022-08-30T10:15:14-07:00">
+							August 30, 2022 at 10:15 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>That&#8217;s me! 😎👍<br />
+Thank you for sharing! There is a GBA competition going on right now so I hope you enter a fun game!</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-6507909"><a class="hide-if-no-js" href="javascript:void(0);" onclick="return confirm('Are you sure you want to report this comment?')?safe_report_comments_flag_comment( '6507909', '538c0fe47e', 'safe-comments-result-6507909'):'';">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://hackaday.com/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/?replytocom=6507909#respond' data-commentid="6507909" data-postid="550582" data-belowelement="div-comment-6507909" data-respondelement="respond" data-replyto="Reply to Sage" aria-label='Reply to Sage'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+        </ol><!-- .comment-list -->
+
+        
+    
+    
+    
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2022/08/29/a-primer-for-the-homebrew-game-boy-advance-scene/#respond" style="display:none;">Cancel reply</a></small></h3>			<form id="commentform" class="comment-form">
+				<iframe
+					title="Comment Form"
+					src="https://jetpack.wordpress.com/jetpack-comment/?blogid=156670177&#038;postid=550582&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=0&#038;avatar_default=mystery&#038;greeting=Leave+a+Reply&#038;jetpack_comments_nonce=0ff9931231&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=dark&#038;lang=en_US&#038;jetpack_version=12.6.2&#038;show_cookie_consent=10&#038;has_cookie_consent=0&#038;token_key=%3Bnormal%3B&#038;sig=1cd6ff89e005cf19a0533e0161fc591e6f3462fe#parent=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F"
+											name="jetpack_remote_comment"
+						style="width:100%; height: 430px; border:0;"
+										class="jetpack_remote_comment"
+					id="jetpack_remote_comment"
+					sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups"
+				>
+									</iframe>
+									<!--[if !IE]><!-->
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+					<!--<![endif]-->
+							</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		<p>Please be kind and respectful to help make the comments section excellent. (<a href="https://hackaday.com/policies/">Comment Policy</a>)</p><p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn how your comment data is processed</a>.</p>
+</div><!-- #comments -->
+
+        
+        
+<div class="sidebar-ads-holder-top ads-one">
+
+    <!-- top right -->
+    <div class="sidebar-top-ad">
+        <script type='text/javascript'>
+            /* [id466] 300x250 */
+            OA_show(428);
+        </script>
+    </div>
+
+</div>
+        <div id="sidebar-mobile-1" class="widget widget_search"><h1 class="widget-title">Search</h1><form role="search" method="get" class="search-form" action="https://hackaday.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></div><div id="sidebar-mobile-1" class="widget widget-follow-us"><h1 class="widget-title">Never miss a hack</h1>
+			<a href="https://www.facebook.com/pages/Hack-a-Day/136115233068429" target="_blank" class="icon-social icon-facebook">Follow on facebook</a>
+			<a href="https://twitter.com/hackaday" target="_blank" class="icon-social icon-twitter">Follow on twitter</a>
+			<a href="https://www.youtube.com/user/hackaday" target="_blank" class="icon-social icon-youtube">Follow on youtube</a>
+			<a href="https://hackaday.com/blog/feed/" target="_blank" class="icon-social icon-rss">Follow on rss</a>
+			<a href="mailto:tips@hackaday.com" class="icon-social icon-contact">Contact us</a>
+		</div><div id="sidebar-mobile-1" class="widget widget-had-subscribe"><h1 class="widget-title">Subscribe</h1>
+            <form role="subscribe" action="//hackaday.us11.list-manage.com/subscribe/post?u=80fc49ec84df168e48c00c18a&amp;id=a428253bfe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">
+                    <input type="email" value="" name="EMAIL" class="subscribe-field" placeholder="Enter Email Address" id="mce-EMAIL" required>
+                </label>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_80fc49ec84df168e48c00c18a_a428253bfe" tabindex="-1" value=""></div>
+                <input type="submit" class="subscribe-submit" id="mc-embedded-subscribe" value="Subscribe">
+                </div>
+            </form>
+		</div><div id="sidebar-mobile-1" class="widget widget-recent-posts"><h1 class="widget-title">If you missed it</h1>
+	<ul>
+			<li>
+			<a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/pi-5-thumbnail.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s/">A Raspberry Pi 5 Is Better Than Two Pi 4s</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 141 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/27/do-bounties-hurt-foss/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/Bounties_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/27/do-bounties-hurt-foss/">Do Bounties Hurt FOSS?</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/27/do-bounties-hurt-foss//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 13 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/26/a-pulse-of-annoyance-about-oscillators-followed-by-a-flyback-of-a-rant/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/flyback-thumbnail.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/26/a-pulse-of-annoyance-about-oscillators-followed-by-a-flyback-of-a-rant/">A Pulse Of Annoyance About Oscillators, Followed By A Flyback Of A Rant</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/26/a-pulse-of-annoyance-about-oscillators-followed-by-a-flyback-of-a-rant//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 34 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/25/inverse-vaccines-could-help-treat-autoimmune-conditions/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2020/12/Vial-thumb.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/25/inverse-vaccines-could-help-treat-autoimmune-conditions/">Inverse Vaccines Could Help Treat Autoimmune Conditions</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/25/inverse-vaccines-could-help-treat-autoimmune-conditions//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 60 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/21/books-you-should-read-david-macaulays-architecture-series/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/DavidMacauly_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/21/books-you-should-read-david-macaulays-architecture-series/">Books You Should Read: David Macaulay&#8217;s Architecture Series</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/21/books-you-should-read-david-macaulays-architecture-series//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 31 Comments				</a>
+			</div>
+		</li>
+		</ul>
+	<a href="https://hackaday.com/category/featured/">More from this category</a>
+	</div>
+        
+<div class="sidebar-ads-holder-top ads-two">
+
+    <!-- store ad -->
+    <iframe class="sidebar-store-ad" scrolling="no" frameborder="0" align="top" marginwidth="0" marginheight="0" src="//search.supplyframe.com/partner/31/464/<search term>"></iframe>
+</div>
+        <div id="sidebar-mobile-2" class="widget widget-recent-posts"><h1 class="widget-title">Our Columns</h1>
+	<ul>
+			<li>
+			<a href="https://hackaday.com/2023/09/29/retrotechtacular-how-communism-made-televisions/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/stassfurt-tv-thumbnail.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/29/retrotechtacular-how-communism-made-televisions/">Retrotechtacular: How Communism Made Televisions</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/29/retrotechtacular-how-communism-made-televisions//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 14 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/29/hackaday-podcast-238-vibrating-bowl-feeders-open-sourcery-learning-to-love-layer-lines/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2016/05/microphone-thumb.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/29/hackaday-podcast-238-vibrating-bowl-feeders-open-sourcery-learning-to-love-layer-lines/">Hackaday Podcast 238: Vibrating Bowl Feeders, Open Sourcery, Learning To Love Layer Lines</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/29/hackaday-podcast-238-vibrating-bowl-feeders-open-sourcery-learning-to-love-layer-lines//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 2 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/29/this-week-in-security-magic-packets-gpu-zip-and-enter-the-sandman/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2016/01/darkarts-thumb.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/29/this-week-in-security-magic-packets-gpu-zip-and-enter-the-sandman/">This Week In Security: Magic Packets, GPU.zip, And Enter The Sandman</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/29/this-week-in-security-magic-packets-gpu-zip-and-enter-the-sandman//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 3 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/28/the-oldest-living-torrent-is-20-years-old/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/ibZlWVElMMAHv0msMkNWu1Ivb5F_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/28/the-oldest-living-torrent-is-20-years-old/">The Oldest Living Torrent Is 20 Years Old</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/28/the-oldest-living-torrent-is-20-years-old//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 28 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/27/youve-got-mail-faster-and-faster-we-go/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/07/USPS_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/27/youve-got-mail-faster-and-faster-we-go/">You&#8217;ve Got Mail: Faster And Faster We Go</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/27/youve-got-mail-faster-and-faster-we-go//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 7 Comments				</a>
+			</div>
+		</li>
+		</ul>
+	<a href="https://hackaday.com/category/hackaday-columns/">More from this category</a>
+	</div>
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+
+<div id="secondary" class="widget-area" role="complementary">
+    
+    <div class="sidebar-widget-wrapper">
+      <aside id="search-2" class="widget widget_search"><h1 class="widget-title">Search</h1><form role="search" method="get" class="search-form" action="https://hackaday.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="hackadayfollowus-2" class="widget widget-follow-us"><h1 class="widget-title">Never miss a hack</h1>
+			<a href="https://www.facebook.com/pages/Hack-a-Day/136115233068429" target="_blank" class="icon-social icon-facebook">Follow on facebook</a>
+			<a href="https://twitter.com/hackaday" target="_blank" class="icon-social icon-twitter">Follow on twitter</a>
+			<a href="https://www.youtube.com/user/hackaday" target="_blank" class="icon-social icon-youtube">Follow on youtube</a>
+			<a href="https://hackaday.com/blog/feed/" target="_blank" class="icon-social icon-rss">Follow on rss</a>
+			<a href="mailto:tips@hackaday.com" class="icon-social icon-contact">Contact us</a>
+		</aside><aside id="hackadaysubscribe-3" class="widget widget-had-subscribe"><h1 class="widget-title">Subscribe</h1>
+            <form role="subscribe" action="//hackaday.us11.list-manage.com/subscribe/post?u=80fc49ec84df168e48c00c18a&amp;id=a428253bfe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">
+                    <input type="email" value="" name="EMAIL" class="subscribe-field" placeholder="Enter Email Address" id="mce-EMAIL" required>
+                </label>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_80fc49ec84df168e48c00c18a_a428253bfe" tabindex="-1" value=""></div>
+                <input type="submit" class="subscribe-submit" id="mc-embedded-subscribe" value="Subscribe">
+                </div>
+            </form>
+		</aside><aside id="hackadayrecentposts-2" class="widget widget-recent-posts"><h1 class="widget-title">If you missed it</h1>
+	<ul>
+			<li>
+			<a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/pi-5-thumbnail.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s/">A Raspberry Pi 5 Is Better Than Two Pi 4s</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 141 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/27/do-bounties-hurt-foss/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/Bounties_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/27/do-bounties-hurt-foss/">Do Bounties Hurt FOSS?</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/27/do-bounties-hurt-foss//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 13 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/26/a-pulse-of-annoyance-about-oscillators-followed-by-a-flyback-of-a-rant/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/flyback-thumbnail.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/26/a-pulse-of-annoyance-about-oscillators-followed-by-a-flyback-of-a-rant/">A Pulse Of Annoyance About Oscillators, Followed By A Flyback Of A Rant</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/26/a-pulse-of-annoyance-about-oscillators-followed-by-a-flyback-of-a-rant//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 34 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/25/inverse-vaccines-could-help-treat-autoimmune-conditions/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2020/12/Vial-thumb.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/25/inverse-vaccines-could-help-treat-autoimmune-conditions/">Inverse Vaccines Could Help Treat Autoimmune Conditions</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/25/inverse-vaccines-could-help-treat-autoimmune-conditions//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 60 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/21/books-you-should-read-david-macaulays-architecture-series/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/DavidMacauly_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/21/books-you-should-read-david-macaulays-architecture-series/">Books You Should Read: David Macaulay&#8217;s Architecture Series</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/21/books-you-should-read-david-macaulays-architecture-series//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 31 Comments				</a>
+			</div>
+		</li>
+		</ul>
+	<a href="https://hackaday.com/category/featured/">More from this category</a>
+	</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1><form action="https://hackaday.com" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform'>
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="114554125">3d Printer hacks</option>
+	<option class="level-0" value="18020710">Android Hacks</option>
+	<option class="level-0" value="18020705">Arduino Hacks</option>
+	<option class="level-0" value="27981650">ARM</option>
+	<option class="level-0" value="422579952">Art</option>
+	<option class="level-0" value="422589899">Artificial Intelligence</option>
+	<option class="level-0" value="422573560">Ask Hackaday</option>
+	<option class="level-0" value="64298109">ATtiny Hacks</option>
+	<option class="level-0" value="422590491">Battery Hacks</option>
+	<option class="level-0" value="25122024">Beer Hacks</option>
+	<option class="level-0" value="422577767">Biography</option>
+	<option class="level-0" value="12115263">blackberry hacks</option>
+	<option class="level-0" value="422570206">Business</option>
+	<option class="level-0" value="422573558">car hacks</option>
+	<option class="level-0" value="11894719">Cellphone Hacks</option>
+	<option class="level-0" value="35745764">chemistry hacks</option>
+	<option class="level-0" value="422573559">classic hacks</option>
+	<option class="level-0" value="31677810">clock hacks</option>
+	<option class="level-0" value="18755632">cnc hacks</option>
+	<option class="level-0" value="568165">computer hacks</option>
+	<option class="level-0" value="422573570">cons</option>
+	<option class="level-0" value="5738">contests</option>
+	<option class="level-0" value="422573551">cooking hacks</option>
+	<option class="level-0" value="2588813">Crowd Funding</option>
+	<option class="level-0" value="421976847">Curated</option>
+	<option class="level-0" value="422570209">Current Events</option>
+	<option class="level-0" value="422590009">Cyberdecks</option>
+	<option class="level-0" value="10969032">digital audio hacks</option>
+	<option class="level-0" value="10969033">digital cameras hacks</option>
+	<option class="level-0" value="10969034">downloads hacks</option>
+	<option class="level-0" value="107827385">drone hacks</option>
+	<option class="level-0" value="63176382">Engine Hacks</option>
+	<option class="level-0" value="422570207">Engineering</option>
+	<option class="level-0" value="212825112">Fail of the Week</option>
+	<option class="level-0" value="35890">Featured</option>
+	<option class="level-0" value="422570208">Fiction</option>
+	<option class="level-0" value="551890">firefox hacks</option>
+	<option class="level-0" value="53446541">FPGA</option>
+	<option class="level-0" value="18020562">g1 hacks</option>
+	<option class="level-0" value="422578065">Games</option>
+	<option class="level-0" value="320557">google hacks</option>
+	<option class="level-0" value="10969036">gps hacks</option>
+	<option class="level-0" value="24535490">green hacks</option>
+	<option class="level-0" value="190105353">Hackaday Columns</option>
+	<option class="level-0" value="27311668">Hackaday links</option>
+	<option class="level-0" value="289711781">Hackaday Store</option>
+	<option class="level-0" value="21755374">Hackerspaces</option>
+	<option class="level-0" value="422573553">HackIt</option>
+	<option class="level-0" value="10969037">handhelds hacks</option>
+	<option class="level-0" value="422573549">hardware</option>
+	<option class="level-0" value="422590036">High Voltage</option>
+	<option class="level-0" value="421979219">History</option>
+	<option class="level-0" value="66307084">Holiday Hacks</option>
+	<option class="level-0" value="10969038">home entertainment hacks</option>
+	<option class="level-0" value="5660882">home hacks</option>
+	<option class="level-0" value="422573566">how-to</option>
+	<option class="level-0" value="422570204">Interest</option>
+	<option class="level-0" value="908478">internet hacks</option>
+	<option class="level-0" value="831">Interviews</option>
+	<option class="level-0" value="1416772">iphone hacks</option>
+	<option class="level-0" value="1275163">ipod hacks</option>
+	<option class="level-0" value="4157506">Kindle hacks</option>
+	<option class="level-0" value="46717088">Kinect hacks</option>
+	<option class="level-0" value="10969048">laptops hacks</option>
+	<option class="level-0" value="422573554">Laser Hacks</option>
+	<option class="level-0" value="422573557">LED Hacks</option>
+	<option class="level-0" value="422573568">Lifehacks</option>
+	<option class="level-0" value="729674">Linux Hacks</option>
+	<option class="level-0" value="20732807">lockpicking hacks</option>
+	<option class="level-0" value="10969060">Mac Hacks</option>
+	<option class="level-0" value="422582715">Machine Learning</option>
+	<option class="level-0" value="422573573">Major Tom</option>
+	<option class="level-0" value="11284667">Medical Hacks</option>
+	<option class="level-0" value="139916">Microcontrollers</option>
+	<option class="level-0" value="5611793">Misc Hacks</option>
+	<option class="level-0" value="18020730">Multitouch Hacks</option>
+	<option class="level-0" value="22652725">Musical Hacks</option>
+	<option class="level-0" value="18020722">Netbook Hacks</option>
+	<option class="level-0" value="6166512">Network Hacks</option>
+	<option class="level-0" value="103">News</option>
+	<option class="level-0" value="1861880">Nintendo DS Hacks</option>
+	<option class="level-0" value="114555425">Nintendo Game Boy Hacks</option>
+	<option class="level-0" value="18020685">Nintendo Hacks</option>
+	<option class="level-0" value="422573552">Nintendo Wii Hacks</option>
+	<option class="level-0" value="118011206">Nook Hacks</option>
+	<option class="level-0" value="422570205">Original Art</option>
+	<option class="level-0" value="114556430">Palm Pre Hacks</option>
+	<option class="level-0" value="422573571">Parts</option>
+	<option class="level-0" value="422592105">PCB Hacks</option>
+	<option class="level-0" value="10969081">Peripherals Hacks</option>
+	<option class="level-0" value="16325149">Phone Hacks</option>
+	<option class="level-0" value="10969088">Playstation Hacks</option>
+	<option class="level-0" value="2060">Podcasts</option>
+	<option class="level-0" value="10969096">Portable Audio Hacks</option>
+	<option class="level-0" value="10969099">Portable Video Hacks</option>
+	<option class="level-0" value="588444">PSP Hacks</option>
+	<option class="level-0" value="23971578">Radio Hacks</option>
+	<option class="level-0" value="47">Rants</option>
+	<option class="level-0" value="69218551">Raspberry Pi</option>
+	<option class="level-0" value="21870780">Repair Hacks</option>
+	<option class="level-0" value="422578063">Retrocomputing</option>
+	<option class="level-0" value="212824350">Retrotechtacular</option>
+	<option class="level-0" value="422590062">Reverse Engineering</option>
+	<option class="level-0" value="422573565">Reviews</option>
+	<option class="level-0" value="10969101">Robots Hacks</option>
+	<option class="level-0" value="422573563">Roundup</option>
+	<option class="level-0" value="422578013">Science</option>
+	<option class="level-0" value="10969111">Security Hacks</option>
+	<option class="level-0" value="422570203">Skills</option>
+	<option class="level-0" value="422573572">Slider</option>
+	<option class="level-0" value="2301">Software Development</option>
+	<option class="level-0" value="3796421">Software Hacks</option>
+	<option class="level-0" value="10969116">Solar Hacks</option>
+	<option class="level-0" value="422577709">Space</option>
+	<option class="level-0" value="10969121">Tablet Hacks</option>
+	<option class="level-0" value="3075183">Teardown</option>
+	<option class="level-0" value="12936984">Tech Hacks</option>
+	<option class="level-0" value="227104736">The Hackaday Prize</option>
+	<option class="level-0" value="10969130">Tool Hacks</option>
+	<option class="level-0" value="25277004">Toy Hacks</option>
+	<option class="level-0" value="10969134">Transportation Hacks</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="422573556">Video Hacks</option>
+	<option class="level-0" value="34942364">Virtual Reality</option>
+	<option class="level-0" value="50802420">Weapons Hacks</option>
+	<option class="level-0" value="12552193">Wearable Hacks</option>
+	<option class="level-0" value="39510952">Weekly Roundup</option>
+	<option class="level-0" value="4891215">Wireless Hacks</option>
+	<option class="level-0" value="7079455">Xbox Hacks</option>
+</select>
+</form>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+			</aside><aside id="hackadayrecentposts-3" class="widget widget-recent-posts"><h1 class="widget-title">Our Columns</h1>
+	<ul>
+			<li>
+			<a href="https://hackaday.com/2023/09/29/retrotechtacular-how-communism-made-televisions/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/stassfurt-tv-thumbnail.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/29/retrotechtacular-how-communism-made-televisions/">Retrotechtacular: How Communism Made Televisions</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/29/retrotechtacular-how-communism-made-televisions//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 14 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/29/hackaday-podcast-238-vibrating-bowl-feeders-open-sourcery-learning-to-love-layer-lines/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2016/05/microphone-thumb.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/29/hackaday-podcast-238-vibrating-bowl-feeders-open-sourcery-learning-to-love-layer-lines/">Hackaday Podcast 238: Vibrating Bowl Feeders, Open Sourcery, Learning To Love Layer Lines</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/29/hackaday-podcast-238-vibrating-bowl-feeders-open-sourcery-learning-to-love-layer-lines//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 2 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/29/this-week-in-security-magic-packets-gpu-zip-and-enter-the-sandman/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2016/01/darkarts-thumb.jpg?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/29/this-week-in-security-magic-packets-gpu-zip-and-enter-the-sandman/">This Week In Security: Magic Packets, GPU.zip, And Enter The Sandman</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/29/this-week-in-security-magic-packets-gpu-zip-and-enter-the-sandman//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 3 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/28/the-oldest-living-torrent-is-20-years-old/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/09/ibZlWVElMMAHv0msMkNWu1Ivb5F_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/28/the-oldest-living-torrent-is-20-years-old/">The Oldest Living Torrent Is 20 Years Old</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/28/the-oldest-living-torrent-is-20-years-old//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 28 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="https://hackaday.com/2023/09/27/youve-got-mail-faster-and-faster-we-go/" class="recent-image">
+							<img src="https://hackaday.com/wp-content/uploads/2023/07/USPS_thumbnail.png?w=600&#038;h=600" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="https://hackaday.com/2023/09/27/youve-got-mail-faster-and-faster-we-go/">You&#8217;ve Got Mail: Faster And Faster We Go</a>
+				</h2>
+				<a href="https://hackaday.com/2023/09/27/youve-got-mail-faster-and-faster-we-go//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 7 Comments				</a>
+			</div>
+		</li>
+		</ul>
+	<a href="https://hackaday.com/category/hackaday-columns/">More from this category</a>
+	</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent comments</h1><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Mike</span> on <a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s/#comment-6687582">A Raspberry Pi 5 Is Better Than Two Pi 4s</a></li><li class="recentcomments"><span class="comment-author-link">Mike</span> on <a href="https://hackaday.com/2023/09/28/a-raspberry-pi-5-is-better-than-two-pi-4s/#comment-6687580">A Raspberry Pi 5 Is Better Than Two Pi 4s</a></li><li class="recentcomments"><span class="comment-author-link">The Commenter Formerly Known As Ren</span> on <a href="https://hackaday.com/2023/09/29/fedex-robot-solves-complex-packing-problems/#comment-6687578">FedEx Robot Solves Complex Packing Problems</a></li><li class="recentcomments"><span class="comment-author-link">The Commenter Formerly Known As Ren</span> on <a href="https://hackaday.com/2023/09/29/hackaday-prize-2023-automated-shuttle-launcher-enables-solo-badminton-practice/#comment-6687577">Hackaday Prize 2023: Automated Shuttle Launcher Enables Solo Badminton Practice</a></li><li class="recentcomments"><span class="comment-author-link">The Commenter Formerly Known As Ren</span> on <a href="https://hackaday.com/2023/09/29/10-foot-high-3d-printer-based-on-ender-3/#comment-6687576">10-Foot High 3D Printer Based On Ender 3</a></li><li class="recentcomments"><span class="comment-author-link">The Commenter Formerly Known As Ren</span> on <a href="https://hackaday.com/2023/09/29/10-foot-high-3d-printer-based-on-ender-3/#comment-6687574">10-Foot High 3D Printer Based On Ender 3</a></li><li class="recentcomments"><span class="comment-author-link">The Commenter Formerly Known As Ren</span> on <a href="https://hackaday.com/2023/09/29/hackaday-podcast-238-vibrating-bowl-feeders-open-sourcery-learning-to-love-layer-lines/#comment-6687573">Hackaday Podcast 238: Vibrating Bowl Feeders, Open Sourcery, Learning To Love Layer Lines</a></li><li class="recentcomments"><span class="comment-author-link">Don</span> on <a href="https://hackaday.com/2023/09/29/fedex-robot-solves-complex-packing-problems/#comment-6687572">FedEx Robot Solves Complex Packing Problems</a></li><li class="recentcomments"><span class="comment-author-link">The Commenter Formerly Known As Ren</span> on <a href="https://hackaday.com/2023/09/29/fedex-robot-solves-complex-packing-problems/#comment-6687568">FedEx Robot Solves Complex Packing Problems</a></li><li class="recentcomments"><span class="comment-author-link">Doug</span> on <a href="https://hackaday.com/2023/09/29/10-foot-high-3d-printer-based-on-ender-3/#comment-6687567">10-Foot High 3D Printer Based On Ender 3</a></li></ul></aside><aside id="hackadayfeed-2" class="widget widget-hackaday-feed"><h1 class="widget-title">Now on Hackaday.io</h1>
+			<ul>
+									<li><a href="http://www.hackaday.io/project/159811-esp32-wiphone">zanovis liked ESP32 WiPhone.</a></li>
+										<li><a href="http://www.hackaday.io/project/188224-squeak-gps-pet-tracker">zanovis liked Squeak: GPS pet tracker.</a></li>
+										<li><a href="http://www.hackaday.io/project/187172-os3m-mouse">zanovis liked OS3M Mouse.</a></li>
+										<li><a href="http://www.hackaday.io/project/189530-e-paper-instant-camera">zanovis liked E-paper instant camera.</a></li>
+										<li><a href="http://www.hackaday.io/project/166441-cp297s">Keith liked CP297s.</a></li>
+										<li><a href="http://www.hackaday.io/project/187061-solar-powered-wifi-weather-station-v40">galapagos2020-hub liked Solar Powered WiFi Weather Station V4.0.</a></li>
+										<li><a href="http://www.hackaday.io/project/2618-cheap-easy-digital-readout">sweeett liked Cheap &amp; Easy Digital Readout.</a></li>
+										<li><a href="http://www.hackaday.io/project/192538/log/223753">Human Controller has added a new log for Blockchain Camera.</a></li>
+										<li><a href="http://www.hackaday.io/project/161127-teensy-beats-shield">davedarko liked Teensy Beats Shield.</a></li>
+										<li><a href="http://www.hackaday.io/project/191395/log/223728">Ahron Wayne has updated the log for X-Ray CT scanners get new life.</a></li>
+						</ul>
+	</aside>    </div>
+    
+    <div class="sidebar-ads-holder-bottom" id="secondary-bottom-ad">
+        <script type='text/javascript'>
+            /* [id465] 160x600 */
+            OA_show(427);
+        </script>
+    </div>
+
+</div><!-- #secondary -->
+
+
+    </div><!-- #content -->
+
+</div><!-- #page -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div id="footer" class="site-footer-container">
+
+        <a href="https://hackaday.com/" rel="home">
+            <img src="https://hackaday.com/wp-content/themes/hackaday-2/img/logo.png" alt="Logo" class="logo-img">
+        </a>
+
+        <div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-141410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-141410"><a href="https://hackaday.com/">Home</a></li>
+<li id="menu-item-141411" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-141411"><a href="https://hackaday.com/blog/">Blog</a></li>
+<li id="menu-item-141412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141412"><a href="http://hackaday.io">Hackaday.io</a></li>
+<li id="menu-item-141413" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141413"><a href="https://www.tindie.com/?utm_source=hackaday&#038;utm_medium=link&#038;utm_campaign=fromstore">Tindie</a></li>
+<li id="menu-item-141414" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141414"><a title="Build Something that Matters" href="http://hackaday.io/prize">Hackaday Prize</a></li>
+<li id="menu-item-152823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152823"><a href="http://www.youtube.com/user/hackaday/videos">Video</a></li>
+<li id="menu-item-141415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141415"><a href="https://hackaday.com/submit-a-tip/">Submit A Tip</a></li>
+<li id="menu-item-141417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141417"><a href="https://hackaday.com/about/">About</a></li>
+<li id="menu-item-141418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141418"><a href="https://hackaday.com/contact-us/">Contact Us</a></li>
+</ul></div>
+        <aside id="hackadayfollowus-3" class="widget widget-follow-us"><h1 class="footer-widget-title">Never miss a hack</h1>
+			<a href="https://www.facebook.com/pages/Hack-a-Day/136115233068429" target="_blank" class="icon-social icon-facebook">Follow on facebook</a>
+			<a href="https://twitter.com/hackaday" target="_blank" class="icon-social icon-twitter">Follow on twitter</a>
+			<a href="https://www.youtube.com/user/hackaday" target="_blank" class="icon-social icon-youtube">Follow on youtube</a>
+			<a href="https://hackaday.com/blog/feed/" target="_blank" class="icon-social icon-rss">Follow on rss</a>
+			<a href="mailto:tips@hackaday.com" class="icon-social icon-contact">Contact us</a>
+		</aside><aside id="hackadaysubscribe-2" class="widget widget-had-subscribe"><h1 class="footer-widget-title">Subscribe to Newsletter</h1>
+            <form role="subscribe" action="//hackaday.us11.list-manage.com/subscribe/post?u=80fc49ec84df168e48c00c18a&amp;id=a428253bfe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">
+                    <input type="email" value="" name="EMAIL" class="subscribe-field" placeholder="Enter Email Address" id="mce-EMAIL" required>
+                </label>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_80fc49ec84df168e48c00c18a_a428253bfe" tabindex="-1" value=""></div>
+                <input type="submit" class="subscribe-submit" id="mc-embedded-subscribe" value="Subscribe">
+                </div>
+            </form>
+		</aside>
+        <div class="site-info">
+            Copyright &copy; 2023            <span class="sep"> | </span>
+            <strong>Hackaday, Hack A Day, and the Skull and Wrenches Logo are Trademarks of Hackaday.com</strong>
+            <span class="sep"> | </span>
+            <a href="https://supplyframe.com/company/privacy" target="_blank">Privacy Policy</a>
+            <span class="sep"> | </span>
+            <a href="https://supplyframe.com/company/terms" target="_blank">Terms of Service</a>
+            <span class="sep"> | </span>
+            <a href="/digital-services-act/">Digital Services Act</a>
+            <br />Powered by <a href="https://wpvip.com/?utm_source=vip_powered_wpcom&#038;utm_medium=web&#038;utm_campaign=VIP%20Footer%20Credit&#038;utm_term=hackaday.com" rel="generator nofollow" class="powered-by-wpcom">WordPress VIP</a>        </div><!-- .site-info -->
+
+    </div>
+</footer><!-- #colophon -->
+
+<img src="//analytics.supplyframe.com/trackingservlet/impression?action=pageImpression&amp;zone=HDay_article&amp;extra=title%3DA+Primer+For+the+Homebrew+Game+Boy+Advance+Scene" id="hdTrack" class="trackImg"><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42734042-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XSENH6S7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5XSENH6S7G');
+</script>
+
+
+			<div class="cookie-notifications" style="display:none;">
+				<div class="container">
+					<div class="close cookie-notifications-btn"><img src="https://hackaday.com/wp-content/uploads/2018/04/close.png" style="width:16px;height:16px;"></div>
+					<p>
+						By using our website and services, you expressly agree to the placement of our performance, functionality and advertising cookies. <a target="_blank" href="https://hackaday.io/privacy-policy">Learn more</a></p>
+						<button class="accept cookie-notifications-btn">OK</button>
+
+				</div>
+			</div>
+
+		<script type="text/javascript" src="https://hackaday.com/_static/??-eJyNzTEOwjAMheELkRpUFZEBcZbSmOLgxJWdgHp7IqZOFbO//xk+i6M8cQ1oEA0CWYE35iAK7bQIrw9ibga1dIlyF+0AO5HijM2ORdRpzYUS/pNtfu3yp8jLtmKSXDAXSNUtXGfK9tsa1ZBX13ce7pU4AMsYUFt1S9fT2Q++v/jjEL9JIV3e" ></script><script data-parsely-site="hackaday.com" src='https://cdn.parsely.com/keys/hackaday.com/p.js?ver=3.9.0' id="parsely-cfg"></script>
+<script type="text/javascript" src="https://hackaday.com/_static/??-eJyNz0sKAjEQBNALmTQqMzoL8Syhk5np/M1Hze0NCG4N9K5eFTS8IsPgi/IFyq6cyrALNEKKxk6gM3jxpE0UCp7rfIB/PBuKzJI3bA1YM1vpPdazhGZI6kdVqXEZyvfG5jFR/FHyaKvsqCcYnOs1llS0jTsae3NTobu7ux3nZTovl+k66w8AbXgP" ></script><script defer src='https://stats.wp.com/e-202339.js' id='jetpack-stats-js'></script>
+<script id="jetpack-stats-js-after" type="text/javascript">
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'156670177',post:'550582',tz:'-7',srv:'hackaday.com',hp:'vip',j:'1:12.6.2'} ]);
+_stq.push([ "clickTrackerInit", "156670177", "550582" ]);
+</script>
+<script type="text/javascript" src="https://hackaday.com/wp-content/mu-plugins/akismet/_inc/akismet-frontend.js?m=1695745536g" ></script>
+		<!--[if IE]>
+		<script type="text/javascript">
+			if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+				// window.location.reload() doesn't respect the Hash in IE
+				window.location.hash = window.location.hash;
+			}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			(function () {
+				var comm_par_el = document.getElementById( 'comment_parent' ),
+					comm_par = ( comm_par_el && comm_par_el.value ) ? comm_par_el.value : '',
+					frame = document.getElementById( 'jetpack_remote_comment' ),
+					tellFrameNewParent;
+
+				tellFrameNewParent = function () {
+					if ( comm_par ) {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=156670177&postid=550582&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=0&avatar_default=mystery&greeting=Leave+a+Reply&jetpack_comments_nonce=0ff9931231&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=dark&lang=en_US&jetpack_version=12.6.2&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=1cd6ff89e005cf19a0533e0161fc591e6f3462fe#parent=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+					} else {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=156670177&postid=550582&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=0&avatar_default=mystery&greeting=Leave+a+Reply&jetpack_comments_nonce=0ff9931231&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=dark&lang=en_US&jetpack_version=12.6.2&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=1cd6ff89e005cf19a0533e0161fc591e6f3462fe#parent=https%3A%2F%2Fhackaday.com%2F2022%2F08%2F29%2Fa-primer-for-the-homebrew-game-boy-advance-scene%2F";
+					}
+				};
+
+				
+				if ( 'undefined' !== typeof addComment ) {
+					addComment._Jetpack_moveForm = addComment.moveForm;
+
+					addComment.moveForm = function ( commId, parentId, respondId, postId ) {
+						var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ),
+							cancelClick, cancel;
+
+						if ( false === returnValue ) {
+							cancel = document.getElementById( 'cancel-comment-reply-link' );
+							cancelClick = cancel.onclick;
+							cancel.onclick = function () {
+								var cancelReturn = cancelClick.call( this );
+								if ( false !== cancelReturn ) {
+									return cancelReturn;
+								}
+
+								if ( ! comm_par ) {
+									return cancelReturn;
+								}
+
+								comm_par = 0;
+
+								tellFrameNewParent();
+
+								return cancelReturn;
+							};
+						}
+
+						if ( comm_par == parentId ) {
+							return returnValue;
+						}
+
+						comm_par = parentId;
+
+						tellFrameNewParent();
+
+						return returnValue;
+					};
+				}
+
+				
+				// Do the post message bit after the dom has loaded.
+				document.addEventListener( 'DOMContentLoaded', function () {
+					var iframe_url = "https:\/\/jetpack.wordpress.com";
+					if ( window.postMessage ) {
+						if ( document.addEventListener ) {
+							window.addEventListener( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								frame.style.height = event.data + 'px';
+							});
+						} else if ( document.attachEvent ) {
+							window.attachEvent( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								frame.style.height = event.data + 'px';
+							});
+						}
+					}
+				})
+
+			})();
+		</script>
+
+		
+</body>
+</html>

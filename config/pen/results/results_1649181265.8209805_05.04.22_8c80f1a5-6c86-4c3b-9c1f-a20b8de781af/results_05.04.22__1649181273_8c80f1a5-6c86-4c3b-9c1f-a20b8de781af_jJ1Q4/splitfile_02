@@ -1,0 +1,9 @@
+
+A value of type Natural is implemented as an Integer :
+
+> Natural 0
+0
+> Natural 1
+1
+In this architecture, Natural values behave like integers with respect to the usual arithmetic operations:
+outOfRange :: Natural ->

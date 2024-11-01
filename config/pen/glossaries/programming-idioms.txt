@@ -1,0 +1,115 @@
+RAII
+Resource acquisition is initialization
+
+Continuation Passing Style
+Continuation-Passing Style
+CPS
+    [programming style]
+    [compilers]
+
+    Functions do not return values; rather,
+    they pass control onto a continuation,
+    which specifies what happens next.
+
+    Originated as a style of programming in
+    the 1970s, and it rose to prominence as an
+    intermediate representation for compilers
+    of advanced programming languages in the
+    1980s and 1990s.
+
+    It's now being rediscovered as a style of
+    programming for non-blocking (usually
+    distributed) systems.
+
+    There's a warm spot in my heart for CPS,
+    because it was the secret weapon in my
+    Ph.D. It probably shaved off a couple
+    years and immeasurable agony.
+
+    This article introduces CPS in both of its
+    roles--as a style for non-blocking
+    programming in JavaScript, and (briefly)
+    as an intermediate form for a functional
+    language.
+
+    A style of programming in which control is
+    passed explicitly in the form of a
+    continuation.
+    
+    This is contrasted with direct style,
+    which is the usual style of programming.
+    
+    A function written in continuation-passing
+    style takes an extra argument: an explicit
+    "continuation", i.e. a function of one
+    argument.
+    
+    When the CPS function has computed its
+    result value, it "returns" it by calling
+    the continuation function with this value
+    as the argument.
+    
+    That means that when invoking a CPS
+    function, the calling function is required
+    to supply a procedure to be invoked with
+    the subroutine's "return" value.
+    
+    Expressing code in this form makes a
+    number of things explicit which are
+    implicit in direct style.
+    
+    These include:
+    - procedure returns, which become apparent
+      as calls to a continuation;
+    - intermediate values, which are all given
+      names;
+    - order of argument evaluation, which is
+      made explicit; and
+    - tail calls, which simply call a
+      procedure with the same continuation,
+      unmodified, that was passed to the
+      caller.
+    
+    Programs can be automatically transformed
+    from direct style to CPS.
+    
+    Functional and logic compilers often use
+    CPS as an intermediate representation
+    where a compiler for an imperative or
+    procedural programming language would use
+    static single assignment form (SSA).
+    
+    SSA is formally equivalent to a subset of
+    CPS (excluding non-local control flow,
+    which does not occur when CPS is used as
+    intermediate representation).
+    
+    Functional compilers can also use ANF (but
+    only for languages requiring eager
+    evaluation), rather than with 'thunks'
+    (described in the examples below) in CPS.
+    
+    CPS is used more frequently by compilers
+    than by programmers as a local or global
+    style.
+
+continuation
+    [#haskell]
+
+    The functional metaphor below is more
+    relevant for haskell.
+
+    Imperative metaphor:
+    - A representation of the execution state
+      of a program (for example, the call
+      stack) at a certain point in time.
+
+    Functional metaphors:
+    - Represent the future of a computation,
+      as a function from an intermediate
+      result to the final result (section in
+      Jeff Newbern's All About Monads).
+    - The idea behind CPS is to pass around as
+      a function argument what to do next
+
+    See "Continuation Passing Style"

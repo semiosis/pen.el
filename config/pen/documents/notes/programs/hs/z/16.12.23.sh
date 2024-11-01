@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "z" "/tmp/emm.OZqwd7/Vision" "-" "Dec" "2023.pdf"
+cd /root/.pen/documents/notes;  "z" "/tmp/emm.OZqwd7/Vision - Dec 2023.pdf"
+cd /root/.pen/documents/notes;  "z" "/tmp/emm.OZqwd7/Vision - Dec 2023.pdf"
+cd /root/.pen/documents/notes;  "z" "/tmp/emm.VCV35u/Vision - Dec 2023.pdf"
+cd /root/.pen/documents/agenda;  "z" ""
+cd /root/.pen/documents/agenda;  "z" "/tmp/emm.26MaJa/Vision - Dec 2023.pdf"

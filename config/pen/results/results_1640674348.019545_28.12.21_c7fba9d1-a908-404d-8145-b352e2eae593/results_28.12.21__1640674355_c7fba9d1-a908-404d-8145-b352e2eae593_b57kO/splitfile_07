@@ -1,0 +1,9 @@
+covered a new type of neuron that can be simultaneously active in both visual and auditory modalities.
+    https://openai.com/blog/multimodal-neurons/
+
+sparse transformer
+    https://openai.com/blog/sparse-transformer/
+
+sparse attention
+    v +/"Sparse Attention" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+

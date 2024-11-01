@@ -1,0 +1,2966 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 12726
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy: base-uri 'self'; block-all-mixed-content; connect-src 'self' https://api.github.com/repos/ https://api.github.com/search/issues https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com fastly-insights.com *.fastly-insights.com *.ethicalads.io https://api.pwnedpasswords.com https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/sre/mathmaps/ https://2p66nmmycsj3.statuspage.io; default-src 'none'; font-src 'self' fonts.gstatic.com; form-action 'self' https://checkout.stripe.com; frame-ancestors 'none'; frame-src 'none'; img-src 'self' https://pypi-camo.freetls.fastly.net/ https://*.google-analytics.com https://*.googletagmanager.com *.fastly-insights.com *.ethicalads.io ethicalads.blob.core.windows.net; script-src 'self' https://*.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com *.fastly-insights.com *.ethicalads.io 'sha256-U3hKDidudIaxBDEzwGJApJgPEf2mWk6cfMWghrAa6i0=' https://cdn.jsdelivr.net/npm/mathjax@3.2.2/ 'sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII=' 'sha256-0POaN8stWYQxhzjKS+/eOfbbJ/u4YHO5ZagJvLpMypo='; style-src 'self' fonts.googleapis.com *.ethicalads.io 'sha256-2YHqZokjiizkHi1Zt+6ar0XJ0OeEy/egBnlm+MDMtrM=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-JLEjeN9e5dGsz5475WyRaoA4eQOdNPxDIeUhclnJDCE=' 'sha256-mQyxHEuwZJqpxCw3SLmc4YOySNKXunyu2Oiz1r3/wAE=' 'sha256-OCf+kv5Asiwp++8PIevKBYSgnNLNUZvxAp4a7wMLuKA=' 'sha256-h5LOiLhk6wiJrGsG5ItM0KimwzWQH/yAcmoJDJL//bY='; worker-src *.fastly-insights.com
+Referrer-Policy: origin-when-cross-origin
+ETag: "L2pS+x035aHh+TLVkewXPA"
+Accept-Ranges: bytes
+Date: Sat, 13 Jul 2024 03:38:09 GMT
+X-Served-By: cache-iad-kiad7000148-IAD, cache-akl10323-AKL
+X-Cache: HIT, HIT
+X-Cache-Hits: 3, 1
+X-Timer: S1720841889.248720,VS0,VE1
+Vary: Accept-Encoding, Cookie
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Permissions-Policy: publickey-credentials-create=(self),publickey-credentials-get=(self),accelerometer=(),ambient-light-sensor=(),autoplay=(),battery=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),execution-while-not-rendered=(),execution-while-out-of-viewport=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),hid=(),identity-credentials-get=(),idle-detection=(),local-fonts=(),magnetometer=(),microphone=(),midi=(),otp-credentials=(),payment=(),picture-in-picture=(),screen-wake-lock=(),serial=(),speaker-selection=(),storage-access=(),usb=(),web-share=(),xr-spatial-tracking=()
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="en, es, fr, ja, pt_BR, uk, el, de, zh_Hans, zh_Hant, ru, he, eo">
+
+
+    <title>AoE2ScenarioParser · PyPI</title>
+    <meta name="description" content="This is a project for editing parts of an &#39;aoe2scenario&#39; file from Age of Empires 2 Definitive Edition">
+
+    <link rel="stylesheet" href="/static/css/warehouse-ltr.040cc857.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.da0464c1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:400,400italic,600,600italic,700,700italic%7CSource+Code+Pro:500">
+    <noscript>
+      <link rel="stylesheet" href="/static/css/noscript.0673c9ea.css">
+    </noscript>
+
+
+    <link rel="icon" href="/static/images/favicon.35549fe8.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="/rss/packages.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS: latest releases for AoE2ScenarioParser" href="/rss/project/aoe2scenarioparser/releases.xml">    <link rel="canonical" href="https://pypi.org/project/AoE2ScenarioParser/">
+
+    <meta property="og:url" content="https://pypi.org/project/AoE2ScenarioParser/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pypi.org/static/images/twitter.abaf4b19.webp">
+    <meta property="og:title" content="AoE2ScenarioParser">
+    <meta property="og:description" content="This is a project for editing parts of an &#39;aoe2scenario&#39; file from Age of Empires 2 Definitive Edition">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="/opensearch.xml">
+
+    <script async
+data-ga-id="UA-55961911-1"
+data-ga4-id="G-RW7D75DF8V"
+            src="/static/js/warehouse.be375628.js">
+    </script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+};
+</script>
+<script async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"
+  integrity="sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII="
+  crossorigin="anonymous"
+></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RW7D75DF8V"></script>
+<script defer src="https://www.fastly-insights.com/insights.js?k=6a52360a-f306-421e-8ed5-7417d0d4a4e9&dnt=true"></script>
+    <script async
+        src="https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js"
+        integrity="sha256-U3hKDidudIaxBDEzwGJApJgPEf2mWk6cfMWghrAa6i0= sha384-UcmsCqcNRSLW/dV3Lo1oCi2/VaurXbib6p4HyUEOeIa/4OpsrnucrugAefzVZJfI sha512-q4t1L4xEjGV2R4hzqCa41P8jrgFUS8xTb8rdNv4FGvw7FpydVj/kkxBJHOiaoxHa8olCcx1Slk9K+3sNbsM4ug=="
+        crossorigin="anonymous"
+    ></script>
+
+  </head>
+
+  <body data-controller="viewport-toggle">
+
+    <!-- Accessibility: this link should always be the first piece of content inside the body-->
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
+    <button type="button" class="button button--primary button--switch-to-mobile hidden" data-viewport-toggle-target="switchToMobile" data-action="viewport-toggle#switchToMobile">
+Switch to mobile version    </button>
+
+    <div id="sticky-notifications" class="stick-to-top js-stick-to-top">
+      <!-- Add browser warning. Will show for ie9 and below -->
+      <!--[if IE]>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+      <noscript>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+      </div>
+      </noscript>
+
+<div data-html-include="/_includes/notification-banners/"></div>    </div>
+
+<div data-html-include="/_includes/flash-messages/"></div>
+
+<div data-html-include="/_includes/session-notifications/"></div>
+    <header class="site-header ">
+      <div class="site-container">
+        <div class="split-layout">
+          <div class="split-layout">
+            <div>
+              <a class="site-header__logo" href="/">
+                <img alt="PyPI" src="/static/images/logo-small.8998e9d1.svg">
+              </a>
+            </div>
+
+            <form class="search-form search-form--primary" action="/search/" role="search">
+              <label for="search" class="sr-only">Search PyPI</label>
+              <input id="search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false" data-controller="search-focus" data-action="keydown@window->search-focus#focusSearchField" data-search-focus-target="searchField">
+              <button type="submit" class="search-form__button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <span class="sr-only">Search</span>
+              </button>
+            </form>
+          </div>
+
+<div data-html-include="/_includes/current-user-indicator/">            <div id="user-indicator" class="horizontal-menu horizontal-menu--light horizontal-menu--tall">
+  <nav class="horizontal-menu horizontal-menu--light horizontal-menu--tall hide-on-tablet" aria-label="Main navigation">
+    <ul>
+      <li class="horizontal-menu__item"><a href="/help/" class="horizontal-menu__link">Help</a></li>
+      <li class="horizontal-menu__item"><a href="/sponsors/" class="horizontal-menu__link">Sponsors</a></li>
+      <li class="horizontal-menu__item"><a href="/account/login/" class="horizontal-menu__link">Log in</a></li>
+      <li class="horizontal-menu__item"><a href="/account/register/" class="horizontal-menu__link">Register</a></li>
+    </ul>
+  </nav>
+  <nav class="dropdown dropdown--on-menu hidden show-on-tablet" aria-label="Main navigation">
+    <button type="button" class="horizontal-menu__link dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-label="View menu">
+Menu      <span class="dropdown__trigger-caret">
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </span>
+    </button>
+    <ul class="dropdown__content" aria-hidden="true" aria-label="Main menu">
+      <li><a class="dropdown__link" href="/help/">Help</a></li>
+      <li><a class="dropdown__link" href="/sponsors/">Sponsors</a></li>
+      <li><a class="dropdown__link" href="/account/login/">Log in</a></li>
+      <li><a class="dropdown__link" href="/account/register/">Register</a></li>
+    </ul>
+  </nav>
+</div>
+</div>        </div>
+      </div>
+    </header>
+
+    <div class="mobile-search">
+      <form class="search-form search-form--fullwidth" action="/search/" role="search">
+        <label for="mobile-search" class="sr-only">Search PyPI</label>
+        <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false">
+        
+        <button type="submit" class="search-form__button">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+    </div>
+
+    <main id="content">
+<div class="hidden"
+  data-controller="github-repo-stats"
+  data-github-repo-stats-github-repo-info-outlet=".github-repo-info"
+  data-github-repo-stats-url-value="https://api.github.com/repos/KSneijders/AoE2ScenarioParser"
+  data-github-repo-stats-issue-url-value="https://api.github.com/search/issues?q=repo:KSneijders/AoE2ScenarioParser+type:issue+state:open&amp;per_page=1">
+</div>
+
+<div class="banner">
+  <div class="package-header">
+    <div class="package-header__left">
+      <h1 class="package-header__name">
+        AoE2ScenarioParser 0.1.68
+      </h1>
+
+      <div data-controller="clipboard">
+        <p class="package-header__pip-instructions">
+          <span id="pip-command" data-clipboard-target="source">pip install AoE2ScenarioParser</span>
+          <button type="button" class="copy-tooltip copy-tooltip-s" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+            <i class="fa fa-copy" aria-hidden="true"></i>
+            <span class="sr-only">Copy PIP instructions</span>
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <div class="package-header__right">
+      <a class="status-badge status-badge--good" href="/project/AoE2ScenarioParser/">
+        <span>Latest version</span>
+      </a>
+      <p class="package-header__date">
+Released: <time datetime="2024-05-25T10:10:49+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 25, 2024
+</time>      </p>
+    </div>
+  </div>
+</div>
+
+<div class="horizontal-section horizontal-section--grey horizontal-section--thin">
+  <div class="site-container">
+<div data-html-include="/_includes/administer-project-include/aoe2scenarioparser"></div>    <div class="split-layout split-layout--middle package-description">
+      <p class="package-description__summary">This is a project for editing parts of an &#39;aoe2scenario&#39; file from Age of Empires 2 Definitive Edition</p>
+<div data-html-include="/_includes/edit-project-button/aoe2scenarioparser"></div>    </div>
+  </div>
+</div>
+
+<div data-controller="project-tabs">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+          <nav aria-label="Navigation for AoE2ScenarioParser">
+            <ul class="vertical-tabs__list" role="tablist">
+              <li role="tab">
+                <a id="description-tab" href="#description" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                  <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description                </a>
+              </li>
+              <li role="tab">
+                <a id="history-tab" href="#history" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Release history. Focus will be moved to the history panel.">
+                  <i class="fa fa-history" aria-hidden="true"></i>
+Release history                </a>
+              </li>
+              <li role="tab">
+                <a id="files-tab" href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Download files. Focus will be moved to the project files.">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+Download files                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">Verified details</h3>
+  <small><i>These details have been verified by PyPI</i></small>
+    <h6>Maintainers</h6>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/KSneijders/" aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/a8da9a9e82dfe6c4e6f8471d040c11012af4d782/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f35336438313261656635313734323863313762626539353463393931633830363f73697a653d3530" height="50" width="50" alt="Avatar for KSneijders from gravatar.com" title="Avatar for KSneijders from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">
+            KSneijders
+          </span>
+        </a>
+      </span>
+</div>
+
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">Unverified details</h3>
+  <small><i>These details have <b>not</b> been verified by PyPI</i></small>
+  <h6>Project links</h6>
+  <ul class="vertical-tabs__list">
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://ksneijders.github.io/AoE2ScenarioParser/api_docs/aoe2_scenario/" rel="nofollow">
+        
+
+<i class="fab fa-github" aria-hidden="true"></i>API Docs
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/KSneijders/AoE2ScenarioParser/issues" rel="nofollow">
+        
+
+<i class="fas fa-bug" aria-hidden="true"></i>Bug Tracker
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/KSneijders/AoE2ScenarioParser/blob/master/CHANGELOG.md" rel="nofollow">
+        
+
+<i class="fas fa-scroll" aria-hidden="true"></i>Changelog
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://ksneijders.github.io/AoE2ScenarioParser/" rel="nofollow">
+        
+
+<i class="fas fa-book" aria-hidden="true"></i>Documentation
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/KSneijders/AoE2ScenarioParser" rel="nofollow">
+        
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+  </ul>
+
+  <h6>GitHub Statistics</h6>
+  <div class="hidden github-repo-info" data-controller="github-repo-info">
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="stargazersUrl" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span data-github-repo-info-target="stargazersCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="forksUrl" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span data-github-repo-info-target="forksCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openIssuesUrl" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues:</strong>
+          <span data-github-repo-info-target="openIssuesCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openPRsUrl" rel="noopener">
+          <i class="fa fa-code-pull-request" aria-hidden="true"></i>
+          <strong>Open PRs:</strong>
+          <span data-github-repo-info-target="openPRsCount"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+<div class="sidebar-section">
+  <h6>Meta</h6>
+  <p><strong>License:</strong> MIT License</p>
+    <p><strong>Author:</strong> <a href="mailto:ksneijders-dev@hotmail.com">Kerwin Sneijders</a></p>
+  <p>
+    <strong>Requires:</strong> Python &gt;=3.8
+  </p>
+</div>
+
+<div class="sidebar-section">
+  <h6 class="sidebar-section__title">Classifiers</h6>
+  <ul class="sidebar-section__classifiers">
+    <li>
+      <strong>License</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+            OSI Approved :: MIT License
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+OS+Independent">
+            OS Independent
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Programming Language</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+            Python :: 3
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div><div class="sidebar-section" data-ea-publisher="psf" data-ea-type="psf" data-ea-keywords="pypi-sidebar"></div>
+<div data-html-include="https://pypi.org/_includes/submit-malware-report/AoE2ScenarioParser"></div>
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav aria-label="Navigation for AoE2ScenarioParser">
+          <ul class="vertical-tabs__list" role="tablist">
+            <li role="tab">
+              <a id="mobile-description-tab" href="#description" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-data-tab" href="#data" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Project details. Focus will be moved to the project details.">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+Project details              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-history-tab" href="#history" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Release history. Focus will be moved to the history panel.">
+              <i class="fa fa-history" aria-hidden="true"></i>
+Release history            </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-files-tab" href="#files" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Download files. Focus will be moved to the project files.">
+                <i class="fa fa-download" aria-hidden="true"></i>
+Download files              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="description" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="description-tab mobile-description-tab" tabindex="-1">
+          <h2 class="page-title">Project description</h2>
+          <div class="project-description">
+            <h1>AoE2ScenarioParser</h1>
+<p>This is a project for editing parts of an <code>aoe2scenario</code> file from <strong>Age of Empires 2 Definitive Edition</strong> outside
+the in-game editor.</p>
+<h1>Getting started</h1>
+<h2>Quick links</h2>
+<ul>
+<li><a href="https://ksneijders.github.io/AoE2ScenarioParser/installation/" rel=nofollow>Installing AoE2ScenarioParser</a></li>
+<li><a href="https://ksneijders.github.io/AoE2ScenarioParser/getting_started/" rel=nofollow>Getting Started</a></li>
+<li><a href="https://ksneijders.github.io/AoE2ScenarioParser/hello_world/" rel=nofollow>Hello World Example</a></li>
+<li><a href="https://discord.gg/DRUtmugXT3" rel=nofollow>Discord Server</a></li>
+<li><a href="https://ksneijders.github.io/AoE2ScenarioParser/api_docs/aoe2_scenario/" rel=nofollow>API Docs</a></li>
+</ul>
+<h2>Documentation</h2>
+<p>Documentation can be found on <strong><a href="https://ksneijders.github.io/AoE2ScenarioParser/" rel=nofollow>GitHub Pages</a></strong>.</p>
+<h1>Discord</h1>
+<p>If you have any questions regarding the parser, <a href="https://discord.gg/DRUtmugXT3" rel=nofollow>join the discord</a>!</p>
+<h1>Progress</h1>
+<p>Current up-to-date progress can be found on the <a href="https://github.com/KSneijders/AoE2ScenarioParser/blob/dev/CHANGELOG.md" rel=nofollow>changelog.md</a> page. (Check the <code>dev</code> branch for non-released progress).</p>
+<h2>Features:</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>View</th>
+<th>Add</th>
+<th>Edit</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Triggers</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Conditions</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Effects</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>n/a *<sup>1</sup></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>n/a *<sup>1</sup></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Players</td>
+<td>n/a *<sup>1</sup></td>
+<td>✔️*</td>
+<td>✔️</td>
+<td>✔️*</td>
+</tr>
+<tr>
+<td>Messages</td>
+<td>n/a</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table>
+<p>*: You can disable or enable players like in the in-game editor (min 1, max 8).<br>
+*<sup>1</sup>: There's no overall formatting function to display these. Though, they can still be printed.</p>
+<p> </p>
+<h2>Support:</h2>
+<table>
+<thead>
+<tr>
+<th>Scenario file version</th>
+<th>Read</th>
+<th>Write</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.36</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since the<strong>release of the Definitive Edition</strong></td>
+</tr>
+<tr>
+<td>1.37</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/aoe2de-update-35584/" rel=nofollow>35584</a> (February 27th, 2020) <br> <strong>Unchanged in</strong>: <br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-36202/" rel=nofollow>36202</a> (March 30th, 2020) <br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-36906/" rel=nofollow>36906</a> (April 29th, 2020) <br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-37650/" rel=nofollow>37650</a> (May 27th, 2020) <br> - Hotfix <a href="https://www.ageofempires.com/news/aoe2de-hotfix-37906/" rel=nofollow>37906</a> (June 2nd, 2020) <br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-39284/" rel=nofollow>39284</a> (July 20th, 2020) <br> - Hotfix <a href="https://www.ageofempires.com/news/aoe2de-hotfix-39515/" rel=nofollow>39515</a> (July 27th, 2020) <br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-40220/" rel=nofollow>40220</a> (August 24th, 2020) <br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-40874/" rel=nofollow>40874</a> (September 22nd, 2020) <br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-41855/" rel=nofollow>41855</a> (October 20th, 2020)</td>
+</tr>
+<tr>
+<td>1.40</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/aoe2de-update-42848/" rel=nofollow>42848</a> (November 17th, 2020) <br> <strong>Unchanged in</strong>: <br> - Hotfix <a href="https://www.ageofempires.com/news/aoe2de-hotfix-43210/" rel=nofollow>43210</a> (November 24th, 2020)</td>
+</tr>
+<tr>
+<td>1.41</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/aoeiide-update-44725/" rel=nofollow>44725</a> (January 25th, 2021) <br> <strong>Unchanged in</strong>: <br> - Hotfix <a href="https://www.ageofempires.com/news/aoeiide-update-44725/#hotfix-44834" rel=nofollow>44834</a> (January 28th, 2021)<br> - Hotfix <a href="https://www.ageofempires.com/news/aoe2de-hotfix-45185/" rel=nofollow>45185</a> (February 11th, 2021)<br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-46295/" rel=nofollow>46265</a> (March 24th, 2021)<br> - Update <a href="https://www.ageofempires.com/news/aoe2de-update-47820/" rel=nofollow>47820</a> (May 3rd, 2021)</td>
+</tr>
+<tr>
+<td>1.42</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/aoe2de-update-50292/" rel=nofollow>50292</a> (July 6th, 2021) <br> <strong>Unchanged in</strong>: <br> - Hotfix <a href="https://www.ageofempires.com/news/aoe2de-update-50292/#hotfix-50700" rel=nofollow>50700</a> (July 13th, 2021)</td>
+</tr>
+<tr>
+<td>1.43</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/aoeiide-update-51737/" rel=nofollow>51737</a> (August 10th, 2021)</td>
+</tr>
+<tr>
+<td>1.44</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/aoeii-de-update-54480/" rel=nofollow>54480</a> (October 5th, 2021) <br> <strong>Unchanged in</strong>: <br> - Hotfix <a href="https://www.ageofempires.com/news/aoeii-de-update-54480/#hotfix-54684" rel=nofollow>54684</a> (October 6th, 2021)</td>
+</tr>
+<tr>
+<td>1.45</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/aoeii_de_update_56005/" rel=nofollow>56005</a> (November 17th, 2021) <br> <strong>Unchanged in</strong>: <br> - Update <a href="https://www.ageofempires.com/news/aoe-ii-de-update-58259/" rel=nofollow>58259</a> (January 31st, 2022)</td>
+</tr>
+<tr>
+<td>1.46</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-61321/" rel=nofollow>61321</a> (April 27th, 2022) <br> <strong>Unchanged in</strong>: <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-63482/" rel=nofollow>63482</a> (June 28th, 2021) <br> - Hotfix <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-63482#Hotfix-63581" rel=nofollow>63581</a> (July 6th, 2021)</td>
+</tr>
+<tr>
+<td>1.47</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-66692/" rel=nofollow>66692</a> (August 29th, 2022) <br> <strong>Unchanged in</strong>: <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-73855/" rel=nofollow>73855</a> (December 7th, 2022) <br> - Update 75350 (Console update) (January 31st, 2023) <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-78174/" rel=nofollow>78174</a> (March 8th, 2023) <br> - Hotfix <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-78174#641ecbac39a80" rel=nofollow>78757</a> (March 8th, 2023)</td>
+</tr>
+<tr>
+<td>1.48</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-81058/" rel=nofollow>81058</a> (April 11th, 2023) <br> <strong>Unchanged in</strong>: <br> - Hotfix <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-hotfix-82587/" rel=nofollow>82587</a> (April 28th, 2023)</td>
+</tr>
+<tr>
+<td>1.49</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-83607/" rel=nofollow>83607</a> (May 16th, 2023) <br> <strong>Unchanged in</strong>: <br> - Hotfix <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-hotfix-85208/" rel=nofollow>85208</a> (June 1st, 2023) <br> - Hotfix <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-hotfix-85614/" rel=nofollow>85614</a> (June 6th, 2023) <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-87863/" rel=nofollow>87863</a> (June 27th, 2023) <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-90260/" rel=nofollow>90260</a> (July 26th, 2023) <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-93001/" rel=nofollow>93001</a> (September 6th, 2023)</td>
+</tr>
+<tr>
+<td>1.51</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/preview-age-of-empires-ii-definitive-edition-update-95810/" rel=nofollow>95810</a> (October 31th, 2023) <br> <strong>Unchanged in</strong>: <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-99311/" rel=nofollow>99311</a> (December 11th, 2023) <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-104954/" rel=nofollow>104954</a> (February 23th, 2024)</td>
+</tr>
+<tr>
+<td>1.53</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>Version since game update: <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-107882/" rel=nofollow>107882</a> (March 13th, 2024) <br> <strong>Unchanged in</strong>: <br> - Update <a href="https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-update-108769/" rel=nofollow>108769</a> (March 26th, 2024)</td>
+</tr>
+</tbody>
+</table>
+<h1>Authors</h1>
+<ul>
+<li>Kerwin Sneijders (Main Author)</li>
+<li><a href="https://github.com/Divy1211" rel=nofollow>Alian713</a> (Dataset Wizard)</li>
+</ul>
+<h1>License</h1>
+<p>MIT License: Please see the <a href="https://github.com/KSneijders/AoE2ScenarioParser/blob/dev/LICENSE" rel=nofollow>LICENSE file</a>.</p>
+
+          </div>
+        </div>
+
+        <div id="data" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="mobile-data-tab" tabindex="-1">
+          <h2 class="page-title">Project details</h2>
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">Verified details</h3>
+  <small><i>These details have been verified by PyPI</i></small>
+    <h6>Maintainers</h6>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/KSneijders/" aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/a8da9a9e82dfe6c4e6f8471d040c11012af4d782/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f35336438313261656635313734323863313762626539353463393931633830363f73697a653d3530" height="50" width="50" alt="Avatar for KSneijders from gravatar.com" title="Avatar for KSneijders from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">
+            KSneijders
+          </span>
+        </a>
+      </span>
+</div>
+
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">Unverified details</h3>
+  <small><i>These details have <b>not</b> been verified by PyPI</i></small>
+  <h6>Project links</h6>
+  <ul class="vertical-tabs__list">
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://ksneijders.github.io/AoE2ScenarioParser/api_docs/aoe2_scenario/" rel="nofollow">
+        
+
+<i class="fab fa-github" aria-hidden="true"></i>API Docs
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/KSneijders/AoE2ScenarioParser/issues" rel="nofollow">
+        
+
+<i class="fas fa-bug" aria-hidden="true"></i>Bug Tracker
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/KSneijders/AoE2ScenarioParser/blob/master/CHANGELOG.md" rel="nofollow">
+        
+
+<i class="fas fa-scroll" aria-hidden="true"></i>Changelog
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://ksneijders.github.io/AoE2ScenarioParser/" rel="nofollow">
+        
+
+<i class="fas fa-book" aria-hidden="true"></i>Documentation
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/KSneijders/AoE2ScenarioParser" rel="nofollow">
+        
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+  </ul>
+
+  <h6>GitHub Statistics</h6>
+  <div class="hidden github-repo-info" data-controller="github-repo-info">
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="stargazersUrl" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span data-github-repo-info-target="stargazersCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="forksUrl" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span data-github-repo-info-target="forksCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openIssuesUrl" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues:</strong>
+          <span data-github-repo-info-target="openIssuesCount"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed"
+           data-github-repo-info-target="openPRsUrl" rel="noopener">
+          <i class="fa fa-code-pull-request" aria-hidden="true"></i>
+          <strong>Open PRs:</strong>
+          <span data-github-repo-info-target="openPRsCount"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+<div class="sidebar-section">
+  <h6>Meta</h6>
+  <p><strong>License:</strong> MIT License</p>
+    <p><strong>Author:</strong> <a href="mailto:ksneijders-dev@hotmail.com">Kerwin Sneijders</a></p>
+  <p>
+    <strong>Requires:</strong> Python &gt;=3.8
+  </p>
+</div>
+
+<div class="sidebar-section">
+  <h6 class="sidebar-section__title">Classifiers</h6>
+  <ul class="sidebar-section__classifiers">
+    <li>
+      <strong>License</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+            OSI Approved :: MIT License
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+OS+Independent">
+            OS Independent
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Programming Language</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+            Python :: 3
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>          <br>
+        </div>
+
+        <div id="history" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="history-tab mobile-history-tab" tabindex="-1">
+          <h2 class="page-title split-layout">
+            <span>Release history</span>
+            <span class="reset-text margin-top">
+              <a href="/help/#project-release-notifications">Release notifications</a> |
+              <a href="/rss/project/aoe2scenarioparser/releases.xml">RSS feed <i class="fa fa-rss" aria-hidden="true"></i></a>
+            </span>
+          </h2>
+
+          <div class="release-timeline">
+            <div class="release release--latest release--current">
+              <div class="release__meta">
+                <span class="badge">This version</span>
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/blue-cube.572a5bfb.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.68/">
+                <p class="release__version">
+                  0.1.68
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-05-25T10:10:49+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 25, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.67/">
+                <p class="release__version">
+                  0.1.67
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-05-18T12:59:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 18, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.66/">
+                <p class="release__version">
+                  0.1.66
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-05-02T21:24:24+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 2, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.65/">
+                <p class="release__version">
+                  0.1.65
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-04-03T18:03:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 3, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.64/">
+                <p class="release__version">
+                  0.1.64
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-03-13T19:49:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 13, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.63/">
+                <p class="release__version">
+                  0.1.63
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-03-11T23:30:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 11, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.62/">
+                <p class="release__version">
+                  0.1.62
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-03-06T17:59:05+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 6, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.61/">
+                <p class="release__version">
+                  0.1.61
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-01-03T13:45:31+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 3, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.60/">
+                <p class="release__version">
+                  0.1.60
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-12-29T00:32:14+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 29, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.59/">
+                <p class="release__version">
+                  0.1.59
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-12-12T22:33:06+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 12, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.58/">
+                <p class="release__version">
+                  0.1.58
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-11-08T19:29:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 8, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.57/">
+                <p class="release__version">
+                  0.1.57
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-11-01T00:19:34+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 1, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.56/">
+                <p class="release__version">
+                  0.1.56
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-06-30T13:49:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 30, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.55/">
+                <p class="release__version">
+                  0.1.55
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-05-24T19:57:53+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 24, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.54/">
+                <p class="release__version">
+                  0.1.54
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-05-18T07:00:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 18, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.53/">
+                <p class="release__version">
+                  0.1.53
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-25T10:32:30+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 25, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.52/">
+                <p class="release__version">
+                  0.1.52
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-15T17:32:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 15, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.51/">
+                <p class="release__version">
+                  0.1.51
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-03-05T16:36:37+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 5, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.50/">
+                <p class="release__version">
+                  0.1.50
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-01-20T18:49:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 20, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.49/">
+                <p class="release__version">
+                  0.1.49
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2023-01-01T18:54:26+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 1, 2023
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.48/">
+                <p class="release__version">
+                  0.1.48
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-11-05T10:32:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 5, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.47/">
+                <p class="release__version">
+                  0.1.47
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-09-01T19:38:47+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 1, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.46/">
+                <p class="release__version">
+                  0.1.46
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-09-01T15:32:29+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 1, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.45/">
+                <p class="release__version">
+                  0.1.45
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-08-31T22:23:55+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 31, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.44/">
+                <p class="release__version">
+                  0.1.44
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-08-04T23:30:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 4, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.43/">
+                <p class="release__version">
+                  0.1.43
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-08-03T20:38:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 3, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.42/">
+                <p class="release__version">
+                  0.1.42
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-08-01T11:52:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 1, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.41/">
+                <p class="release__version">
+                  0.1.41
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-06-30T21:44:46+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 30, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.40/">
+                <p class="release__version">
+                  0.1.40
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-05-18T20:19:09+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 18, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.39/">
+                <p class="release__version">
+                  0.1.39
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-05-08T11:53:40+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 8, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.38/">
+                <p class="release__version">
+                  0.1.38
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-05-02T11:45:38+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 2, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.37/">
+                <p class="release__version">
+                  0.1.37
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-04-30T22:52:16+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 30, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.36/">
+                <p class="release__version">
+                  0.1.36
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-15T22:47:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 15, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.35/">
+                <p class="release__version">
+                  0.1.35
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-03T19:02:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 3, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.34/">
+                <p class="release__version">
+                  0.1.34
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-03-01T11:42:36+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 1, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.33/">
+                <p class="release__version">
+                  0.1.33
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-02-21T20:47:09+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 21, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.32/">
+                <p class="release__version">
+                  0.1.32
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-02-04T00:56:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.31/">
+                <p class="release__version">
+                  0.1.31
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-02-02T20:30:27+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 2, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.30/">
+                <p class="release__version">
+                  0.1.30
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-01-04T22:09:10+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 4, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.29/">
+                <p class="release__version">
+                  0.1.29
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2022-01-03T19:57:23+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 3, 2022
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.28/">
+                <p class="release__version">
+                  0.1.28
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-11-19T11:26:20+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 19, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.27/">
+                <p class="release__version">
+                  0.1.27
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-11-18T23:48:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 18, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.26/">
+                <p class="release__version">
+                  0.1.26
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-09-30T23:13:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 30, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.25/">
+                <p class="release__version">
+                  0.1.25
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-09-29T13:38:49+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 29, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.24/">
+                <p class="release__version">
+                  0.1.24
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-09-24T23:51:24+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 24, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.23/">
+                <p class="release__version">
+                  0.1.23
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-09-09T12:12:01+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 9, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.22/">
+                <p class="release__version">
+                  0.1.22
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-09-08T13:33:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 8, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.21/">
+                <p class="release__version">
+                  0.1.21
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-28T10:17:26+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 28, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.20/">
+                <p class="release__version">
+                  0.1.20
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-16T22:29:30+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 16, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.19/">
+                <p class="release__version">
+                  0.1.19
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-15T23:32:56+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 15, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.18/">
+                <p class="release__version">
+                  0.1.18
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-11T23:01:30+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 11, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.17/">
+                <p class="release__version">
+                  0.1.17
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-08T13:36:25+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 8, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.16/">
+                <p class="release__version">
+                  0.1.16
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-06T10:32:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 6, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.15/">
+                <p class="release__version">
+                  0.1.15
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-08-02T11:27:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 2, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.14/">
+                <p class="release__version">
+                  0.1.14
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-26T15:38:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 26, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.13/">
+                <p class="release__version">
+                  0.1.13
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-16T23:19:47+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 16, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.12/">
+                <p class="release__version">
+                  0.1.12
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-16T16:34:43+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 16, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.11/">
+                <p class="release__version">
+                  0.1.11
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-08T07:44:01+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 8, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.10/">
+                <p class="release__version">
+                  0.1.10
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-07-07T23:56:53+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 7, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.9/">
+                <p class="release__version">
+                  0.1.9
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-06-02T18:42:24+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 2, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.8/">
+                <p class="release__version">
+                  0.1.8
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-05-01T08:31:32+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 1, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.7/">
+                <p class="release__version">
+                  0.1.7
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-04-05T16:28:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 5, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.6/">
+                <p class="release__version">
+                  0.1.6
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-04-01T07:16:05+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 1, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.5/">
+                <p class="release__version">
+                  0.1.5
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-03-28T16:17:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 28, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.4/">
+                <p class="release__version">
+                  0.1.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-03-27T15:16:24+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 27, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.3/">
+                <p class="release__version">
+                  0.1.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-03-27T14:33:55+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 27, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.2/">
+                <p class="release__version">
+                  0.1.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-03-27T14:14:41+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 27, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.1/">
+                <p class="release__version">
+                  0.1.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-03-26T12:58:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 26, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.1.0/">
+                <p class="release__version">
+                  0.1.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-03-25T21:55:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 25, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.20/">
+                <p class="release__version">
+                  0.0.20
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-02-17T11:43:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 17, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.19/">
+                <p class="release__version">
+                  0.0.19
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-02-01T00:42:23+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 1, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.18/">
+                <p class="release__version">
+                  0.0.18
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-01-31T21:48:36+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 31, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.17/">
+                <p class="release__version">
+                  0.0.17
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-01-26T23:00:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 26, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.16/">
+                <p class="release__version">
+                  0.0.16
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-12-30T13:08:36+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 30, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.15/">
+                <p class="release__version">
+                  0.0.15
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-12-18T20:52:03+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 18, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.14/">
+                <p class="release__version">
+                  0.0.14
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-29T03:49:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 29, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.13/">
+                <p class="release__version">
+                  0.0.13
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-27T00:59:55+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 27, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.12/">
+                <p class="release__version">
+                  0.0.12
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-27T00:21:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 27, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.11/">
+                <p class="release__version">
+                  0.0.11
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-15T16:32:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 15, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.10/">
+                <p class="release__version">
+                  0.0.10
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-10T23:46:46+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 10, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.9/">
+                <p class="release__version">
+                  0.0.9
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-09T00:26:23+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 9, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.8/">
+                <p class="release__version">
+                  0.0.8
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-08T01:53:59+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 8, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.7/">
+                <p class="release__version">
+                  0.0.7
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-05-23T14:09:24+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 23, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.6/">
+                <p class="release__version">
+                  0.0.6
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-04-19T21:20:34+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 19, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.5/">
+                <p class="release__version">
+                  0.0.5
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-04-07T20:58:10+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 7, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.4/">
+                <p class="release__version">
+                  0.0.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-04-03T20:43:25+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 3, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.3/">
+                <p class="release__version">
+                  0.0.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-03-17T22:41:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 17, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.2/">
+                <p class="release__version">
+                  0.0.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-01-25T01:51:14+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 25, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release release--oldest">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/AoE2ScenarioParser/0.0.1/">
+                <p class="release__version">
+                  0.0.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-01-21T09:49:45+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 21, 2020
+</time>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+          <div id="files" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="files-tab mobile-files-tab" tabindex="-1">
+            <h2 class="page-title">Download files</h2>
+            <p>Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">installing packages</a>.</p>
+            <h3>
+Source Distribution            </h3>
+
+                  <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/38/1d/b06f9a0a1b7f0a72e1ecc9e9b784660e4bcd469bf86dd64c30797de45e5a/aoe2scenarioparser-0.1.68.tar.gz">
+          aoe2scenarioparser-0.1.68.tar.gz
+        </a>
+        (307.1 kB
+        <a href="#copy-hash-modal-9b9a85ad-42e2-4f5a-aff2-3fd952e4d732">view hashes</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2024-05-25T10:10:52+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 25, 2024
+</time>
+          <code>Source</code>
+        </p>
+      </div>
+    </div>
+
+
+            <h3>
+Built Distribution            </h3>
+
+                <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/e8/87/c31138089b1bc3899e51c458f294588afdc7523705caa0f81088877bc12f/AoE2ScenarioParser-0.1.68-py3-none-any.whl">
+          AoE2ScenarioParser-0.1.68-py3-none-any.whl
+        </a>
+        (362.8 kB
+        <a href="#copy-hash-modal-afcb2148-0310-4e43-bd17-5a3eab741c8f">view hashes</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2024-05-25T10:10:49+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 25, 2024
+</time>
+          <code>Python 3</code>
+        </p>
+      </div>
+    </div>
+
+          </div>
+
+<div id="copy-hash-modal-9b9a85ad-42e2-4f5a-aff2-3fd952e4d732" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for aoe2scenarioparser-0.1.68.tar.gz      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for aoe2scenarioparser-0.1.68.tar.gz</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-controller="clipboard">
+            <th scope="row">SHA256</th>
+            <td><code data-clipboard-target="source">d6f39e16c8c4534421c3077d6fc86a3765d658b94bd984510aecaf44964ef99a</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">MD5</th>
+            <td><code data-clipboard-target="source">f590d974ebdf18c1e11cc3b0066b011f</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">BLAKE2b-256</th>
+            <td><code data-clipboard-target="source">381db06f9a0a1b7f0a72e1ecc9e9b784660e4bcd469bf86dd64c30797de45e5a</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div><div id="copy-hash-modal-afcb2148-0310-4e43-bd17-5a3eab741c8f" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for AoE2ScenarioParser-0.1.68-py3-none-any.whl      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for AoE2ScenarioParser-0.1.68-py3-none-any.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-controller="clipboard">
+            <th scope="row">SHA256</th>
+            <td><code data-clipboard-target="source">ad871ac4a01b4bc4bea2a75fd5114cf604bb718ff61588619796ba48b4f2246b</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">MD5</th>
+            <td><code data-clipboard-target="source">846b8d5e125a96a51a8f6e4c34bdc551</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+          <tr data-controller="clipboard">
+            <th scope="row">BLAKE2b-256</th>
+            <td><code data-clipboard-target="source">e887c31138089b1bc3899e51c458f294588afdc7523705caa0f81088877bc12f</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/static/images/white-cube.2351a86c.svg" alt="" class="-js-white-cube">
+      </div>
+
+      <div class="footer__menus">
+        <div class="footer__menu">
+          <h2>Help</h2>
+          <nav aria-label="Help navigation">
+            <ul>
+              <li><a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">Installing packages</a></li>
+              <li><a href="https://packaging.python.org/tutorials/packaging-projects/" title="External link" target="_blank" rel="noopener">Uploading packages</a></li>
+              <li><a href="https://packaging.python.org/" title="External link" target="_blank" rel="noopener">User guide</a></li>
+              <li><a href="https://www.python.org/dev/peps/pep-0541/" title="External link" target="_blank" rel="noopener">Project name retention</a></li>
+              <li><a href="/help/">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>About PyPI</h2>
+          <nav aria-label="About PyPI navigation">
+            <ul>
+              <li><a href="https://blog.pypi.org" title="External link" target="_blank" rel="noopener">PyPI Blog</a></li>
+              <li><a href="https://dtdg.co/pypi" title="External link" target="_blank" rel="noopener">Infrastructure dashboard</a></li>
+              <li><a href="/stats/">Statistics</a></li>
+              <li><a href="/trademarks/">Logos & trademarks</a></li>
+              <li><a href="/sponsors/">Our sponsors</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Contributing to PyPI</h2>
+          <nav aria-label="How to contribute navigation">
+            <ul>
+              <li><a href="/help/#feedback">Bugs and feedback</a></li>
+              <li><a href="https://github.com/pypi/warehouse" title="External link" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+              <li><a href="https://hosted.weblate.org/projects/pypa/warehouse/" title="External link" target="_blank" rel="noopener">Translate PyPI</a></li>
+              <li><a href="/sponsors/">Sponsor PyPI</a></li>
+              <li><a href="https://github.com/pypi/warehouse/graphs/contributors" title="External link" target="_blank" rel="noopener">Development credits</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Using PyPI</h2>
+          <nav aria-label="Using PyPI navigation">
+            <ul>
+              <li><a href="https://policies.python.org/python.org/code-of-conduct/" title="External link" target="_blank" rel="noopener">Code of conduct</a></li>
+              <li><a href="/security/">Report security issue</a></li>
+              <li><a href="https://www.python.org/privacy/" title="External link" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><a href="https://policies.python.org/pypi.org/Terms-of-Use/" title="External link" target="_blank" rel="noopener">Terms of Use</a></li>
+              <li><a href="https://policies.python.org/pypi.org/Acceptable-Use-Policy/" title="External link" target="_blank" rel="noopener">Acceptable Use Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <hr class="footer__divider">
+
+      <div class="footer__text">
+        <p>Status:<a href="https://status.python.org/" title="External link" target="_blank" rel="noopener">
+          <span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">all systems operational</span></a>
+        </p>
+        <p>
+Developed and maintained by the Python community, for the Python community.          <br>
+          <a href="https://donate.pypi.org">Donate today!</a>
+        </p>
+        <p>
+          "PyPI", "Python Package Index", and the blocks logos are registered <a href="/trademarks/">trademarks</a> of the <a href="https://www.python.org/psf-landing" target="_blank" rel="noopener">Python Software Foundation</a>.<br>
+        </p>
+        <p>
+          © 2024 <a href="https://www.python.org/psf-landing/" title="External link" target="_blank" rel="noopener">Python Software Foundation</a><br>
+          <a href="/sitemap/">Site map</a>
+        </p>
+      </div>
+
+      <div class="centered hide-on-desktop">
+        <button type="button" class="button button--switch-to-desktop hidden" data-viewport-toggle-target="switchToDesktop" data-action="viewport-toggle#switchToDesktop">
+Switch to desktop version        </button>
+      </div>
+    </footer>
+
+
+    <div class="language-switcher">
+      <form action="/locale/">
+        <ul>
+          <li>
+            <button
+              class="language-switcher__selected"
+              name="locale_id" value="en" type="submit"
+            >
+              English
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="es" type="submit"
+            >
+              español
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="fr" type="submit"
+            >
+              français
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="ja" type="submit"
+            >
+              日本語
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="pt_BR" type="submit"
+            >
+              português (Brasil)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="uk" type="submit"
+            >
+              українська
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="el" type="submit"
+            >
+              Ελληνικά
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="de" type="submit"
+            >
+              Deutsch
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="zh_Hans" type="submit"
+            >
+              中文 (简体)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="zh_Hant" type="submit"
+            >
+              中文 (繁體)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="ru" type="submit"
+            >
+              русский
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="he" type="submit"
+            >
+              עברית
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="eo" type="submit"
+            >
+              Esperanto
+            </button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  <div class="sponsors__divider"></div>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/ed7074cadad1a06f56bc520ad9bd3e00d0704c5b/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6177732d77686974652d6c6f676f2d7443615473387a432e706e67" alt=AWS loading=lazy>
+          <span class="sponsors__name">AWS</span>
+          <span class="sponsors__service">
+            Cloud computing and Security Sponsor
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/8855f7c063a3bdb5b0ce8d91bfc50cf851cc5c51/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f64617461646f672d77686974652d6c6f676f2d6668644c4e666c6f2e706e67" alt=Datadog loading=lazy>
+          <span class="sponsors__name">Datadog</span>
+          <span class="sponsors__service">
+            Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/df6fe8829cbff2d7f668d98571df1fd011f36192/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f666173746c792d77686974652d6c6f676f2d65684d3077735f6f2e706e67" alt=Fastly loading=lazy>
+          <span class="sponsors__name">Fastly</span>
+          <span class="sponsors__service">
+            CDN
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://careers.google.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/420cc8cf360bac879e24c923b2f50ba7d1314fb0/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f676f6f676c652d77686974652d6c6f676f2d616734424e3774332e706e67" alt=Google loading=lazy>
+          <span class="sponsors__name">Google</span>
+          <span class="sponsors__service">
+            Download Analytics
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.python.org/psf/sponsors/#microsoft">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/524d1ce72f7772294ca4c1fe05d21dec8fa3f8ea/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6d6963726f736f66742d77686974652d6c6f676f2d5a443172685444462e706e67" alt=Microsoft loading=lazy>
+          <span class="sponsors__name">Microsoft</span>
+          <span class="sponsors__service">
+            PSF Sponsor
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.pingdom.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/d01053c02f3a626b73ffcb06b96367fdbbf9e230/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f70696e67646f6d2d77686974652d6c6f676f2d67355831547546362e706e67" alt=Pingdom loading=lazy>
+          <span class="sponsors__name">Pingdom</span>
+          <span class="sponsors__service">
+            Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://getsentry.com/for/python">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/67af7117035e2345bacb5a82e9aa8b5b3e70701d/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f73656e7472792d77686974652d6c6f676f2d4a2d6b64742d706e2e706e67" alt=Sentry loading=lazy>
+          <span class="sponsors__name">Sentry</span>
+          <span class="sponsors__service">
+            Error logging
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/b611884ff90435a0575dbab7d9b0d3e60f136466/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f737461747573706167652d77686974652d6c6f676f2d5467476c6a4a2d502e706e67" alt=StatusPage loading=lazy>
+          <span class="sponsors__name">StatusPage</span>
+          <span class="sponsors__service">
+            Status page
+          </span>
+        </a>
+</div>
+  </body>
+
+</html>

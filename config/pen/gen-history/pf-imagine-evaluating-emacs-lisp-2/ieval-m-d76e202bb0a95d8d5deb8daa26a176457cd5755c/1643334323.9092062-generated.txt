@@ -1,0 +1,3 @@
+;; Run function -loop
+(message (eval '(-loop "-u" "sqrt" "5000")))
+--> 

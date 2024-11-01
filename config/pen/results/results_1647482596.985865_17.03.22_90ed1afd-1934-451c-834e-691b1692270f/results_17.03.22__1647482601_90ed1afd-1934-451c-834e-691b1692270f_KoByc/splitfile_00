@@ -1,0 +1,6 @@
+find-note-path (filename)
+  (let* ((notes-path "~/notes/")
+         (full-path (concat notes-path filename)))
+    full-path))
+
+(defun rename-file-and-buffer (new-name) ()

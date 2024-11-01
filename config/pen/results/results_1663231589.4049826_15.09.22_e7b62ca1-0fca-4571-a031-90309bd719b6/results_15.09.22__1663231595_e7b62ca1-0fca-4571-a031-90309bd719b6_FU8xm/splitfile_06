@@ -1,0 +1,1 @@
+^\s*\(<\/\?\)\?\(he2_mods_enabled_deflate_conf\|deflate_conf\)>/d

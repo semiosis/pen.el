@@ -1,0 +1,16 @@
+- 1. Larry Page (1973-)
+- 2. Mark Zuckerberg (1984-)
+- 3. Jeff Bezos (1964-)
+"""
+
+
+def print_documents(docs):
+    print('Your documents list:')
+    for d in docs:
+        print(d)
+
+
+def get_scholars():
+    return [Scholar('Kant', 'https://en.wikipedia.org/wiki/Immanuel_Kant', 1724, 1804),
+            Scholar('Hegel', 'https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel', 1770, 1831),
+            Scholar('Schopenhauer', 'https://en.

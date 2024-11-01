@@ -1,0 +1,103 @@
+HTTP/1.1 200 OK
+Server: nginx/1.22.1
+Date: Wed, 15 May 2024 03:00:44 GMT
+Content-Type: text/html; charset=UTF-8
+Last-Modified: Sun, 28 Apr 2024 13:31:30 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"662e4fb2-11a5"
+
+<!DOCTYPE html>
+<html>
+<!-- Created by GNU Texinfo 7.1, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual is for Org version 9.6.
+
+Copyright © 2004-2024 Free Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with the Front-Cover Texts being "A GNU Manual,"
+and with the Back-Cover Texts as in (a) below.  A copy of the license
+is included in the section entitled "GNU Free Documentation License."
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to copy and
+modify this GNU manual."
+ -->
+<title>Publishing links (The Org Manual)</title>
+
+<meta name="description" content="Publishing links (The Org Manual)">
+<meta name="keywords" content="Publishing links (The Org Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="index.html" rel="start" title="Top">
+<link href="Main-Index.html" rel="index" title="Main Index">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Configuration.html" rel="up" title="Configuration">
+<link href="Site-map.html" rel="next" title="Site map">
+<link href="Publishing-options.html" rel="prev" title="Publishing options">
+<style type="text/css">
+<!--
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+div.example {margin-left: 3.2em}
+kbd.kbd {font-style: oblique}
+span:hover a.copiable-link {visibility: visible}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/emacs/manual.css">
+
+
+</head>
+
+<body lang="en">
+<div class="subsection-level-extent" id="Publishing-links">
+<div class="nav-panel">
+<p>
+Next: <a href="Site-map.html" accesskey="n" rel="next">Generating a sitemap</a>, Previous: <a href="Publishing-options.html" accesskey="p" rel="prev">Options for the exporters</a>, Up: <a href="Configuration.html" accesskey="u" rel="up">Configuration</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Main-Index.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<h4 class="subsection" id="Publishing-links-1"><span>14.1.6 Publishing links<a class="copiable-link" href="#Publishing-links-1"> &para;</a></span></h4>
+
+<a class="index-entry-id" id="index-links_002c-publishing"></a>
+
+<p>To create a link from one Org file to another, you would use something
+like &lsquo;<samp class="samp">[[file:foo.org][The foo]]</samp>&rsquo; or simply &lsquo;<samp class="samp">[[file:foo.org]]</samp>&rsquo; (see
+<a class="ref" href="External-Links.html">External Links</a>).  When published, this link becomes a link to
+&lsquo;<samp class="samp">foo.html</samp>&rsquo;.  You can thus interlink the pages of your &ldquo;Org web&rdquo;
+project and the links will work as expected when you publish them to
+HTML.  If you also publish the Org source file and want to link to it,
+use an &lsquo;<samp class="samp">http</samp>&rsquo; link instead of a &lsquo;<samp class="samp">file:</samp>&rsquo; link, because &lsquo;<samp class="samp">file</samp>&rsquo; links are
+converted to link to the corresponding &lsquo;<samp class="samp">.html</samp>&rsquo; file.
+</p>
+<p>Links to encrypted Org files, like &lsquo;<samp class="samp">[[file:foo.org.gpg]]</samp>&rsquo; are also
+supported.
+</p>
+<p>You may also link to related files, such as images.  Provided you are
+careful with relative file names, and provided you have also
+configured Org to upload the related files, these links will work too.
+See <a class="ref" href="Complex-example.html">Example: complex publishing configuration</a>, for an example of this
+usage.
+</p>
+<p>Links between published documents can contain some search options (see
+<a class="ref" href="Search-Options.html">Search Options in File Links</a>), which will be resolved to the
+appropriate location in the linked file.  For example, once published
+to HTML, the following links all point to a dedicated anchor in
+&lsquo;<samp class="samp">foo.html</samp>&rsquo;.
+</p>
+<div class="example">
+<pre class="example-preformatted">[[file:foo.org::*heading]]
+[[file:foo.org::#custom-id]]
+[[file:foo.org::target]]
+</pre></div>
+
+</div>
+
+
+
+</body>
+</html>

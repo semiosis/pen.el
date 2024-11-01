@@ -1,0 +1,6 @@
+"RandomizedList" is a data structure that supports the following operations:
+
+- Insert: Inserts an element into the list.
+- Delete: Removes an element from the list.
+- Search: Searches for an element in the list.
+- GetRandom: Returns a random element from the list.

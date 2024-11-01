@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: version
+# key: version
+# --
+import statlib
+print statlib.__version__

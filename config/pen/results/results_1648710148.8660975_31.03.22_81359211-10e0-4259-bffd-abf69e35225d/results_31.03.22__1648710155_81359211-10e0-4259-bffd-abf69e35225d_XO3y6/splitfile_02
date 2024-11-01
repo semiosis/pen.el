@@ -1,0 +1,11 @@
+import Test.HUnit
+
+main :: IO ()
+main = runTestTT tests
+
+tests :: [(Bool, String)]
+tests =
+    [ (True, "test1")
+    , (True, "test2")
+    , (True, "test3")
+    ]

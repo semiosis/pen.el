@@ -1,0 +1,9 @@
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "apple")))
+--> "apple: n. A fruit with a red, green, or yellow skin and firm white flesh."
+
+
+
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "watermelon")))
+--> 

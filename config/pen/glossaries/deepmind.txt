@@ -1,0 +1,9 @@
+DQN
+Deep Q-Network
+    [algorithm]
+
+    Developed by DeepMind in 2015.
+    
+    It was able to solve a wide range of Atari
+    games (some to superhuman level) by
+    combining RL and deep NNs at scale.

@@ -1,0 +1,29 @@
+Original language: English
+English translation:
+hello there
+
+'''
+
+
+class TestMonad(unittest.TestCase):
+
+    def test_monad_abstraction(self):
+        self.assertEqual(
+            Monad.abstract_method,
+            'Abstract method called'
+        )
+
+    def test_monad_flavours(self):
+        self.assertEqual(
+            Monad.flavour_abstract_method,
+            'Abstract method called'
+        )
+
+    def test_monad_flavours_with_impl(self):
+        self.assertEqual(
+            Monad.flavour_abstract_method_with_impl,
+            'Implementation called'
+        )
+
+    def test_monad_flavours_with_impl_and_abstract_method(self):
+        self.assertEqual(

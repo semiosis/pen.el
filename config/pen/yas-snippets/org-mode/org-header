@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: org-header
+# group: properties
+# key: head
+# --
+#+TITLE: Emacs
+#+STARTUP: content
+#+TODO: inactive 
+#+PROPERTY: header-args :results silent

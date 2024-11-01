@@ -1,0 +1,27 @@
+#
+# This file describes the format of the prompt-description files.
+#
+# The first line of the file is the prompt name.  The rest of the
+# file is the prompt description.
+#
+# The prompt name is the name of the prompt, without the leading
+# '$' character.
+#
+# The prompt description is a single line of text.  The first word
+# of the line is the prompt type.  The rest of the line is the
+# prompt description.
+#
+# The prompt type is one of the following:
+#
+#    'function'
+#    'variable'
+#    'alias'
+#    'keyword'
+#    'builtin'
+#    'command'
+#    'filename'
+#    'directory'
+#    'user'
+#    'hostname'
+#    'cwd'
+#    'exitcode

@@ -1,0 +1,1809 @@
+HTTP/1.1 200 OK
+Date: Wed, 21 Feb 2024 03:18:44 GMT
+Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: https://jmu.cascadecms.com
+Content-Length: 32998
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The 613 Mitzvot - JMU</title>
+<!--fid:0008 sr:386002-->
+
+  
+<!-- ATTN: Current site URL is https://www.jmu.edu/dukehallgallery/exhibitions-past-2018-2019/the-613-mitzvot.shtml  
+
+  -->
+  
+ 
+
+
+
+<meta property="og:title" content="The 613 Mitzvot" /><meta property="og:description" content="The 613 Mitzvot" /><meta property="og:image" content="//www.jmu.edu/dukehallgallery/_images/Duke-gallery-feature3.jpg" />
+<meta property="og:url" content="https://www.jmu.edu/dukehallgallery/exhibitions-past-2018-2019/the-613-mitzvot.shtml" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="The 613 Mitzvot"/>
+<meta name="twitter:description" content="The 613 Mitzvot"/>
+<meta name="twitter:image" content="https://www.jmu.edu/dukehallgallery/_images/Duke-gallery-feature3.jpg" />
+
+<!--start extended header--><!--end extended header-->
+
+
+<meta content="Tue, 28 Jun 2022 18:000:40 -0560" name="date"/>
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>    <!-- sr:379076 -->
+</head>
+<body><xhtml-block><!-- RELATED LINKS BEGIN -->
+<script src="//www.jmu.edu/web_ssi/jquery/1.11/1.11.0.min.js" type="text/javascript"></script>
+<script src="//www.jmu.edu/web_ssi/related-links/related-links-json.js" type="text/javascript"></script>
+<!-- RELATED LINKS END --> <!-- Google Tag Manager --><noscript>&lt;iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-5CFRKN" style="display:none;visibility:hidden" width="0"&gt;&lt;/iframe&gt;</noscript>
+<script type="text/javascript">// <![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CFRKN');
+// ]]></script>
+<!-- End Google Tag Manager --></xhtml-block>
+<div id="wholepage"><a class="skipnav" href="#pagecontent" onblur="this.style.position='absolute'" onfocus="this.style.position='static'">Skip to Main Content</a>
+<!--fid:0007 sr:396055-->
+
+
+<!-- SSI start: /dukehallgallery/_ssi/dukehallgallery-header-ssi.shtml --><xhtml-block><!--fid: sr:440210-->
+
+
+<link href="//www.jmu.edu/web_ssi/googlethemes/static/fonts/fonts.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//www.jmu.edu/jmucmsfiles/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="//www.jmu.edu/jmucmsfiles/css/print.css?v=2" media="print" rel="stylesheet" type="text/css"/>
+<link href="//www.jmu.edu/jmucmsfiles/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="//www.jmu.edu/web_ssi/yui/3.18.1/cssgrids-responsive-min.css" rel="stylesheet" type="text/css"/>
+<link href="//www.jmu.edu/web_ssi/yui/3.18.1/responsive-styles-tabular.css?v=19" id="mastersheet" rel="stylesheet" type="text/css"/>
+<script src="//www.jmu.edu/jmucmsfiles/js/fancybox/jquery.fancybox.min.js"></script>
+<script src="//www.jmu.edu/web_ssi/mytemplatebg.js"></script>
+<script src="//www.jmu.edu/web_ssi/swapvideobtn.js"></script>
+<link href="//www.jmu.edu/jmucmsfiles/css/nav2.1.1.css?v=x20230511" rel="stylesheet" type="text/css"/><link rel="stylesheet" href="//www.jmu.edu/web_ssi/extendedcss/info4.css?v=x20221215" type="text/css" /><xhtml-block>
+</xhtml-block><div id="topheader" role="region" name="heading" aria-label="region for top banner">    <div id="purpleband" role="banner" aria-label="top banner with select menu and search" title="Top banner"><a name="headnav" id="headnav" role="region" aria-label="header nav"></a>        <div class="pagecontainer">
+        <div class="yui3-u-1-2 to100">
+        <div class="menu-collapser" onclick="$('#goldband').toggle();window.location='#headnav';">            <div class="collapse-button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+        </div><!-- menu-collapser -->
+
+
+   <a href="https://www.jmu.edu/index.shtml" ><img alt="website wordmark" height="30" id="jmuwordmark" onerror="this.src='//www.jmu.edu/jmucmsfiles/images/jmu-wordmark-white.png'" src="//www.jmu.edu/jmucmsfiles/images/jmu-wordmark-white.png" aria-label="Link to JMU Home" /></a>
+
+        </div><!-- end yui3-u-1-2 -->
+        <div class="yui3-u-1-2 to100">
+
+        <ul id="searchselect" role="presentation">
+        <li id="desktopdropdown">
+                          
+        <div class="option firstopt"><a >Info For <img src="//www.jmu.edu/_images/_buttons/link-indicator-down.png" alt="" /></a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/family/index.shtml">Parents</a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/alumni">Alumni</a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/gateway/students.shtml">Students</a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/gateway/faculty-staff.shtml">Faculty/Staff</a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/gateway/community.shtml">Community</a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/give/index.shtml">Giving</a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/news/index.shtml">JMU News</a></div>                       
+        <div class="option "><a href="https://www.jmu.edu/events/index.shtml">JMU Events</a></div>                                  
+                    </li>
+<script>
+function qxfr(sobj){
+    objsrch=document.getElementById(sobj).value;
+    objsrch=objsrch.toString();
+    if(objsrch.indexOf('site:')!=-1){
+        objsrchRA=objsrch.split('site:');
+        objsrch=objsrchRA[0];
+        document.getElementById(sobj).value=objsrch;
+    }
+	document.getElementById(sobj).value=document.getElementById(sobj).value+'                                                site:';
+	if(sobj=='query'){
+	document.getElementById('cse-search-box').submit();
+	}
+	if(sobj=='query2'){
+	document.getElementById('cse-search-box2').submit();
+	}
+}
+
+function checkenter(srchobj) {
+  if(window.event.keyCode == 13){
+	qxfr(srchobj);
+  }
+}
+
+Ivealerted=false;
+function hidensearch(){
+    $('#searchbtnz').hide();
+    $('#query').blur(); 
+}
+
+function nsearch(){
+    searchlog='';
+    if($('#uwd21').html()=='true'){         $('#query').removeAttr('onkeyup');  
+                searchlog+='Using web design 2.1\n';
+        if(sitetitle!='<sitetitle/>'){
+            searchlog+='Using Site title = '+sitetitle+' AND YES BUTTONS\n'; 
+            $('#searchbtnz').show(); 
+                        $('#subz').html($('#breadcrumbs-ul li:nth-child(2) a').html());              
+                        
+            subzin = $('#breadcrumbs-ul li:last a').attr('href'); 
+            subzin=subzin.split('/');
+            subzin=subzin[1];
+             
+            $('#subzinput').attr('value','https://www.jmu.edu/'+subzin);
+             
+            if($('.menu-collapser').css('display')!='none'&&$(window).width()<769){ 
+                sbwidth=$('#searchbtnz').css('width').replace('px',''); 
+                sbwidth=sbwidth*1; 
+                sbleftmargin=$(window).width()-sbwidth;
+                sbleftmargin=sbleftmargin/2;
+                $('#searchbtnz').css('left',sbleftmargin+'px');
+                $('#searchbtnz').css('right','');            }
+            
+        } else {
+            searchlog+='Not using a site title. NO BUTTONS.\n';
+            $('#searchbtnz').hide(); 
+        }
+    } else {
+        searchlog+='NOT using web design 2.1\n'; 
+    }
+    if(!Ivealerted){
+        searchlog+='You will ONLY see this message once though evaluation of web design 2.1 and sitetitle still occur in the background logic.';
+        console.log(searchlog); 
+        Ivealerted=true;
+    }
+}
+ 
+
+function newsearch(){
+    nsval=document.getElementById('query').value;
+        
+                searchresults='https://www.jmu.edu/search-results.shtml?cx=016476667732860519677:h7le3e3by1g&q='+nsval+'%20'+$("#searchbtnz input:checked").attr('value').replace('https:','site:')+'&ie=UTF-8';
+    location.href=searchresults;
+     
+}
+
+
+
+
+$(document).ready(function(){
+    $('.fancybox').click(function(){ok2fullscr=false;}); 
+    offsearch=false; 
+    $('#hdrsearch').mouseout(function(){
+        offsearch=true; 
+    });
+    $('#hdrsearch').mouseover(function(){
+        offsearch=false; 
+    });
+    $('body').click(function(){
+        if(offsearch){
+            hidensearch();
+        }
+    });
+    
+    if(window.innerWidth>=769){         purplebandwidth=$('#purpleband').width();
+        pagecontainerwidth=$('.pagecontainer').width();
+        purplebandwidth=purplebandwidth*1;
+        pagecontainerwidth=pagecontainerwidth*1;
+        widthdifference=purplebandwidth-pagecontainerwidth;
+        newsearchright=widthdifference/2;
+        newsearchright=newsearchright+50;
+        $('#searchbtnz').css('right',newsearchright+'px');
+    }
+     
+});
+
+</script>
+         
+        <li id="hdrsearch"><form role="search"  action="//www.google.com/cse" id="cse-search-box"><label for="query" style="display:none">Search</label>
+        <input  alt="Enter text to search for" autocomplete="off" class="j_search" id="query" maxlength="255" name="q" placeholder="Search JMU" size="25" type="text" onfocus="this.style.background='#595959';nsearch();" /> 
+        <input name="cx" type="hidden" value="016476667732860519677:h7le3e3by1g"/> <input name="ie" type="hidden" value="UTF-8"/>
+        
+        <style>
+        #searchbtnz { 
+            display: none; 
+            background: #450084; 
+            color: white; 
+            position: absolute; 
+            z-index: 99999999;
+            width: 100%; 
+            line-height: 20px; 
+            padding: 5px; 
+            
+            text-align: right; 
+            width: auto; 
+            font-size: 16px; 
+            margin-left: -36px; 
+            
+            border-radius: 0 0 5px 5px; 
+            
+            margin-top: 12px; 
+        }
+        
+        .search-options-shadow { 
+            box-shadow: 2px 2px 2px 0px #666666;
+        }
+        
+         
+        @media all and (max-width: 768px){
+            #searchbtnz { margin-left: 0px; margin-top: 16px; }
+        }
+         
+        </style>
+        <div id="searchbtnz" class="search-options-shadow"> 
+        <label for="searchallinput">all of www.jmu.edu</label> <input type="radio" name="searchbtn" id="searchallinput" value="https://www.jmu.edu" checked /><br /> 
+        <label id="subzlabel" for="subzinput">only <span id="subz"></span></label> <input type="radio" name="searchbtn" id="subzinput" value="only SUB SITE TO GO HERE" /> 
+        </div>
+        
+        <input title="search" type="submit" value=" "/></form></li>
+    </ul><!-- end searchselect -->
+    </div><!-- yui3-u-1-2 -->
+    </div><!-- end pagecontainer -->
+    </div><!-- end purpleband -->
+    <div id="goldband" ontouchstart="mobilescroll()" title="Top Navigation">    <div class="pagecontainer">
+        <ul id="mobileleftnav"></ul><!-- end mobileleftnav -->        <ul id="goldnav">
+                                                    
+             
+                        
+                                                                                                                <li  style="clear: left;"><a href="https://www.jmu.edu/dukehallgallery/index.shtml">Home</a>                </li>
+                                                    
+             
+                        
+                                                                                                                <li  ><a href="https://www.jmu.edu/dukehallgallery/exhibitions.shtml">Exhibitions</a>                </li>
+                                                    
+             
+                        
+                                                                                                                <li  ><a href="https://www.jmu.edu/dukehallgallery/visit.shtml">Visit</a>                </li>
+                                                    
+             
+                        
+                                                                                                                <li  ><a href="https://www.jmu.edu/dukehallgallery/support.shtml">Support</a>                </li>
+                                                    
+             
+                        
+                                                                                                                <li  ><a href="https://www.jmu.edu/dukehallgallery/learn.shtml">Learn</a>                </li>
+                                                    
+             
+                        
+                                                                                                                <li id="lastChild" ><a href="https://www.jmu.edu/dukehallgallery/publications.shtml">Publications</a>                </li>
+        <!-- start more jmu -->
+        <li id="goldmore"></li>
+        <!-- end more jmu -->
+        </ul><!-- end goldnav -->
+    </div><!-- end pagecontainer -->
+    </div><!-- end goldband-->
+</div><!-- end topheader / pagecontainer -->
+<div id="bannerghost"></div><!-- end bannerghost -->
+<!-- header -->
+
+<script>
+var nav21page=true; 
+function consumedmenu() { 
+    if($('#mytemplate').html()=='Secondary'||$('#mytemplate').html()=='(none)'||$('#mytemplate').html()==''){         $('#mobileleftnav').html($('#navigation .nav ul').html()); 
+        
+        $('#mobileleftnav li').each(function(){
+            if($(this).has('a')){ // if there are any list items in nav without an a tag (i.e., empty), hide them. 
+                // ok
+            } else { 
+                $(this).hide();
+            }
+        });
+        if($('.tabular-row').html().toString().indexOf('id="sidebar"')==-1||$('#mytemplate').html()=='Primary'){ // if no nav or Primary don't show Other Areas heading             // don't show Other Areas heading
+                        if(window.innerWidth<769){
+                $('#pagetitle').css('padding-top','10px');
+            }
+                    } else {
+            $('#mobileleftnav').append('<li id="otherareas"><a href="javascript:mobilescroll()" style="cursor:default;color:#333;background: #AD9C65; /* x20220429 replaced #ccb062 */">More JMU</a></li>');        }
+        $('#mobileleftnav li').each(function(){$(this).removeAttr('style');});
+    } // end if secondary template 
+    
+    $('#goldband li').each(function(){
+        if($(this).children('ul').length > 0){ // if li has a child ul, thus being a toggler 
+            $(this).addClass('arrowed');
+        }
+    });
+    
+        morejmuhtml='<a alt="Click to toggle or press Enter key to expand and collapse the sub navigation under this item" href="#" onclick="$(\'#masjmu .sub-collapser\').click()">Info For</a><ul>';     $('#desktopdropdown .option').each(function(){         if($(this).hasClass('firstopt')){        // ignore 
+        } else { 
+            morejmuhtml+='<li><a href="'+$(this).children().attr('href')+'">'+$(this).children().html()+'</a></li>';        }
+    });
+    morejmuhtml+='</ul>';
+    $('#goldmore').addClass('arrowed'); 
+    $('#goldmore').html(morejmuhtml);
+        
+    $('.arrowed>a').each(function(){
+        $(this).prepend('<span>&#9660;</span>');
+        $(this).click(function(){
+            if(window.innerWidth<769){
+                $('#goldnav li#goldmore').css('display','block'); // but keep goldmore showing at mobile 
+            }
+            $(this).siblings("ul").toggle(); 
+            if($(this).siblings('ul').css('display')=='block'){
+                $(this).siblings('ul').css('display','block');
+                $(this).siblings('ul').css('width','100%');
+                $(this).children('span').html('&#9650;');
+            } else {
+                $(this).children('span').html('&#9660;');
+            }
+        });
+    });
+
+    $('.arrowed a').each(function(){ // hide empty link with an alltext node therein 
+        if($(this).html().indexOf('alltext')!=-1){ 
+            $(this).hide(); 
+            $(this).parent().css('border-top','0px');
+        }
+    });
+}
+
+
+$(document).ready(function(){     $('#mobile-header #responsive-menu-button-other').remove();         anchoroffset = -100;
+    if(($('#embtn').length>0)&&($('#embtn').html().toString().length*1 > 3)) {//if emergency banner at mobile 
+        anchoroffset = -200;
+    }
+    if(window.innerWidth<769){ // if mobile
+        anchoroffset = anchoroffset - 20; 
+    }
+    $('a').each(function(){
+        if($(this).attr('onclick')==undefined && $(this).attr('href')==undefined){
+            hasId = $(this).attr('id'); 
+            if(($(this).attr('id')!='News')&&($(this).attr('id')!='Events')&&($(this).attr('id')!='Arts')&&($(this).attr('id')!='Sports')&&($(this).attr('id')!='top')&&($(this).attr('id')!='headernav')&&($(this).attr('id')!='link')&&($(this).attr('id')!='undefined')&&(typeof hasId !== 'undefined')&&(hasId!=false)){
+                $(this).css('display','block').css('position','relative').css('top',anchoroffset+'px');
+            }
+        }
+    });
+    
+    $('.hover-img').each(function(){
+        initsrc=$(this).attr('src');
+        if (typeof initsrc === 'undefined') { 
+            // variable is undefined
+            hovsrc=initsrc; 
+        } else {
+            hovsrc=initsrc.replace('.png','-hover.png');
+            $(this).attr('onerror','this.src='+"'"+initsrc+"'");
+            $(this).attr('onmouseover','this.src='+"'"+hovsrc+"'");
+            $(this).attr('onmouseout','this.src='+"'"+initsrc+"'");
+        }  
+    });
+    }); 
+
+
+window.onload = function() { 
+    consumedmenu(); 
+        // handle clicking off expanded hamburger menu: 
+    $('body').click(function(){ // checks if one clicks to the side of the expanded hamburger menu 
+        if($('.menu-collapser').css('display')=='block'){ 
+            if($('#mobileleftnav:hover, #goldnav:hover').length != 0){ // clicked on the expanded hamburger menu
+                $('#goldband').show(); 
+            } else if($('.menu-collapser:hover').length !=0){ // clicked on the hamburger toggler
+                // normal functionality will take over
+            } else { // if you're elsewhere
+                $('#goldband').hide(); // clicked off the menu and off the toggler 
+                $('#scrollnotify').hide();             }
+        }
+        if($('#lastChild').css('display')=='none'){$('#scrollnotify').hide();}     });
+};
+
+
+inspection=false;
+dskWinWidth=window.innerWidth;
+if(window.location.toString().indexOf('?inspect')!=-1){
+    inspection = true; 
+}
+currentDskWinWidth = window.innerWidth; 
+ok2fullscr=true;  
+
+window.onresize = function(event) {
+    
+    
+    dskWinWidthDiff = Math.abs(currentDskWinWidth - window.innerWidth);
+     
+    if(dskWinWidthDiff>5){  
+        if(!inspection&&(dskWinWidth>=769||window.innerWidth>=769)){ 
+            if(ok2fullscr){
+                location.href=pageurl; 
+            }
+        } 
+    }
+    
+    
+    
+    
+};
+ 
+
+window.onorientationchange = function(event) {
+    location.href=pageurl; 
+};
+
+
+function resetnav(){ // restores goldnav hover functionality at desktop when scroll back to top 
+        $('#goldnav li').each(function(){
+        $(this).attr('onmouseover',"$(this).children('ul').show()");        $(this).attr('onmouseout',"$(this).children('ul').hide()");    }); 
+        $('#sidebar').css('display','block');     $('#sidebar').css('visibility','visible');    $('#goldnav').css('max-width','1021px');    $('#scrollnotify').hide()      
+    if(($('#embtn').length>0)&&($('#embtn').html().toString().length*1 > 3)) {//if emergency banner
+        if(st==0){
+        embnr = $('#embtn').css('height').replace('px','');
+        embnr = embnr * 1; 
+        embnr = embnr + 24; 
+        embnr = embnr + 'px';
+        $('#topheader').css('top',embnr).css('position','static');
+        $('body').css('padding-top',embnr);
+        $('#bannerghost').css('height','0px');
+        }
+    }
+     
+    
+    $('#mobileleftnav').removeClass('shadowed');
+    $('#goldnav').removeClass('shadowed');
+    
+}
+
+function prepnav(){ // stages goldnav for hamburger on desktop after default goldnav functionality has been restored by the above function and now needs to be adjusted to work with the hamburger UI
+    $('#goldnav li').each(function(){
+        $(this).removeAttr('onmouseover');
+        $(this).removeAttr('onmouseout');
+    }); 
+}
+
+function hamburgertime(){// animation of wordmark and 'hamburger' menu-collapser emergence
+    $('.menu-collapser').fadeIn(500);
+        $('#mobileleftnav').css('display','inline-block');
+    $('#mobileleftnav').addClass('shadowed');
+    $('#goldnav').addClass('shadowed');
+    }
+
+function byeburger(){ // animation of wordmark and hiding of 'hamburger' menu-collapser
+    $('.menu-collapser').fadeOut(); 
+        $('#mobileleftnav').css('display','block');
+    $('#mobileleftnav').removeClass('shadowed');
+    $('#goldnav').removeClass('shadowed');
+    }
+
+pageurl=''; // populated at document ready 
+function stickybanner(){ // for desktop 
+    st = window.pageYOffset; 
+    if(st==0){
+        $('.menu-collapser').css('display','none');
+        resetnav();             } if(st<=50) {
+        $('#goldband').css('display','block'); // restore horizontal goldband
+        resetnav();     }else {
+        if($('.menu-collapser').css('display')=='none'){ // hide goldnav (all nav) when initially scrolling down but don't hide when on the menu and scrolling to the bottom of it
+            $('#goldband').css('display','none'); 
+        } 
+        prepnav();    }
+    bnrht=50; 
+    navht=window.innerHeight+10+'px';    if($('#sidebar').length>0){
+        navht= $('#sidebar').css('height');
+    } else { 
+        $('#mobileleftnav').html(''); 
+    } 
+    navht=navht.replace('px','');
+    navht=navht*1; 
+    if(($('#embtn').length>0)&&($('#embtn').html().toString().length*1 > 3)) {//if emergency banner 
+        bnrht = 50;
+                                if(st>=bnrht){
+                $('#topheader').css('top','0px');
+                $('body').css('padding-top','0px');
+            }
+            } else {
+        bnrht = 112; 
+    }
+    bnrhtoffset = -1*bnrht;
+    navigationht = window.innerHeight+'px'; 
+    if($('#navigation').length>0){
+        navigationht = $('#navigation').css('height').replace('px','')*1; 
+    } else { 
+        $('#mobileleftnav').html(''); 
+        navigationht=0;
+    } 
+        if($('.tabular-row').html().toString().indexOf('id="sidebar"')==-1){ // if no nav          navht = 0; 
+    }
+    
+    // start footer onscreen check per x20220105    
+	var element = document.querySelector('#footer');
+	var position = element.getBoundingClientRect();
+
+	// checking whether fully visible
+	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+		ftronscreen=true;
+	} else {
+	    ftronscreen=false;
+    }
+	// start footer onscreen check per x20220105
+    if(st >= bnrht){         $('#purpleband').addClass('shadowed-bottom');        document.getElementById('topheader').style.position='fixed';
+        document.getElementById('topheader').style.top='0px';
+        document.getElementById('topheader').style.zIndex=999999;
+        if(st > navht || $(window).scrollTop() >= $('body').offset().top + $('body').outerHeight() - window.innerHeight){ 
+            if(!ftronscreen){                $('#sidebar').css('visibility','hidden');                 $('#scrollnotify').hide(); 
+                $('#mobileleftnav').css('display','block');
+                $('#goldband').css('height',eval(window.innerHeight*0.9)+'px');// set height to allow scroll on longer nav on desktop expanded hamburger menu 
+                $('#dynscroll').attr('href','//www.jmu.edu/jmucmsfiles/css/nav2.1/stickybanner.css'); 
+                hamburgertime();                                                                if(window.innerWidth >= 500){
+                    $('#mobileleftnav').css('max-width','500px').css('display','block');                    $('#goldnav').css('max-width','500px');
+                }
+                            }        } else {  
+            byeburger();            $('#sidebar').css('display','block'); 
+            $('#sidebar').css('visibility','visible');            $('#goldband').css('height','50px');
+            $('#goldnav li ul').css('display','none');
+        } 
+    } 
+    if(st < bnrht){ 
+        $('#purpleband').removeClass('shadowed-bottom');        $('#dynscroll').attr('href','//www.jmu.edu/jmucmsfiles/css/nav2.1/blank.css'); 
+        $('#goldband').css('height','50px'); // prevent gold flash -- oversized goldband when scrolling back up. 
+        $('#mobileleftnav').css('display','none'); 
+        $('#goldnav li ul').css('display','none'); // don't show expanded subnav after opening in expanded hamburger when crolling back up 
+        $('#goldnav>li a span').html('&#9660;');    }
+}
+
+function utilnav(){ // for mobile 
+        
+    if($('#goldband').css('display')=='none'){
+        if(eval(window.pageYOffset*1)>eval($('#goldband').height()*1)){
+            $('.menu-collapser').click(function(){
+                $('html,body').scrollTop(0);
+            });
+        } else {
+            // no worries
+        } 
+    }
+        window.onscroll = function(){
+        if(window.pageYOffset<=1){
+            $('#purpleband').removeClass('shadowed-bottom');
+        } else { 
+            $('#purpleband').addClass('shadowed-bottom');
+        }
+                if(($('#embtn').length>0)&&($('#embtn').html().toString().length*1 > 3)) {//if emergency banner at mobile 
+            if(window.pageYOffset > 95){
+                $('#topheader').css('position','fixed');
+                $('#topheader').css('top','0px');
+            } else {
+                $('#topheader').css('top','95px');
+                $('#topheader').css('position','relative');
+            } 
+        }
+            }
+                        webaddress = window.location.href.toString();
+        if(webaddress.indexOf('.shtml')){ // no page specified
+            webaddressRA=webaddress.split('');
+            if(webaddressRA[webaddressRA.length-1]!='/'){ // no end slash
+                webaddress=webaddress+'/';
+            }
+            webaddress=webaddress+'index.shtml';
+        }
+            $('#goldband li a').each(function(){
+                weblink = $(this).attr('href').toString(); 
+        if(weblink.indexOf('.shtml')){ // no page specified
+            weblinkRA=weblink.split('');
+            if(weblinkRA[weblinkRA.length-1]!='/'){ // no end slash
+                weblink=weblink+'/';
+            }
+            weblink=weblink+'index.shtml';
+        }
+                if((webaddress==weblink)||(webaddress.indexOf($(this).attr('href').toString())!=-1)||(weblink.indexOf(webaddress)!=-1)){              $(this).addClass('nav-highlighted');         }
+    });
+        $('#goldband').css('height',eval(window.innerHeight*0.8)+'px');// set height to allow scroll on longer mobile expanded hamburger nav     $('#goldband').css('overflow','scroll');
+    $('#goldband').css('position','absolute');    gbht=eval(window.innerHeight-172);
+        gbht = $('#goldband').css('height');
+            $('#goldband').css('max-height',gbht);
+    $('#topheader').css('width','100%');
+    $('#topheader').css('z-index','999999');
+    $('.menu-collapser').css('z-index','999999');
+    $('.menu-collapser').css('right','20px');
+    $('#mainpagecontent').css('position','relative'); 
+    if(typeof $('#mobile-header~style').html() != 'undefined'){ // conditioned per x20220801 
+        $('#mobile-header~style').html($('#mobile-header~style').html().replace('#mainpagecontent { overflow: visible; }',''));//x20211215 to offset internal sidebar CSS rule (just after #mobile-header) and prevent sidebar CSS from causing purple bounce at mobile off top of screen 
+    }//close x20220801 condition
+    jQuery.expr.filters.offscreen = function(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+               (rect.x + rect.width) < 0 
+                 || (rect.y + rect.height) < 0
+                 || (rect.x > window.innerWidth || rect.y > window.innerHeight)
+             );
+    };
+}
+
+window.onscroll =  function() { 
+        if(window.innerWidth>=769){ 
+        /* start x20230908 */
+        if(location.href.toString().indexOf('#')!=-1){ /* hitting page on anchor  */
+            setTimeout("stickybanner()",500);
+        } else { /* end x20230908 */ 
+        stickybanner(); /* this was here pre-x20230908 */
+        } /* close of else per x20230908 */ 
+    } else { // sticky at mobile 
+        if($('#goldband').css('display')=='none'){
+            $('#apage').css('position','initial'); // allow page scroll while NO expanded hamburger menu open on mobile 
+        } else {
+                    }
+        if(($('#embtn').length>0)&&($('#embtn').html().toString().length*1 > 3)) {//if emergency banner at mobile 
+            if(window.pageYOffset > 95){
+                $('#topheader').css('position','fixed');
+                $('#topheader').css('top','0px');
+            } else {
+                $('#topheader').css('top','95px');
+                $('#topheader').css('position','relative');
+            }
+        }
+    }
+        if($('#lastChild').css('display')=='none'){        $('#scrollnotify').hide();
+    }
+     };
+
+function elementScrolled(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+}
+mobileusage=false;
+if(window.innerWidth<769){
+    mobileusage=true;
+} else {
+    mobileusage=false; 
+}
+document.getElementById('goldband').onmouseover = function() {    // When scrolling over the extended hamburger menu, show scroll notification and detect if "#lastChild" is scrolled into view, and when it is, scroll notification disappears
+    $('#mobileleftnav').mouseover(function() {
+        if(!mobileusage){$('#scrollnotify').show();}    });
+
+    if(elementScrolled('#lastChild')) {
+        $('#scrollnotify').hide();
+    } else {         if(!mobileusage){$('#scrollnotify').show();}    }
+};
+
+
+function mobilescroll(){
+
+}
+ 
+$(document).ready(function(){
+    pageurl=window.location.toString();
+    if(pageurl.indexOf('#')!=-1){ pageurl=pageurl.split('#'); pageurl=pageurl[0]; }
+    if(($('#embtn').length>0)&&($('#embtn').html().toString().length*1 > 3)) {//if emergency banner 
+        $('#bannerghost').css('height','95px');
+        $('#topheader').css('top','95px');
+        $('#topheader').css('position','relative');
+        $('#embtn').css('fixed');
+        if(window.innerWidth<769){
+            $('#bannerghost').css('height','184px');
+        }
+    }
+    if(window.innerWidth<769){
+        utilnav(); 
+    } 
+
+    $('figure:has(img.image-caption-310-left)').css('float', 'left');
+    $('figure:has(img.image-caption-310-left)').css('padding-right', '10px');
+    $('figure:has(img.image-caption-310-left)').css('width', '310px');
+    $('figure:has(img.image-caption-310-right)').css('float', 'right');
+    $('figure:has(img.image-caption-310-right)').css('padding-left', '10px');
+    $('figure:has(img.image-caption-310-right)').css('width', '310px');
+});
+
+</script>
+<style>
+#scrollnotify{
+    position: fixed;
+    bottom: 30px;     z-index: 999999;
+    display: none;
+    text-align: left;
+    width: 100%;
+    border-radius: 0px;
+    max-width: 500px;
+    margin-left: -9px;    margin-top: -5px; }
+
+@media all and (max-width: 1040px){
+    #scrollnotify {
+        margin-left: 0px; 
+    }
+}
+
+
+#scrollnotify div {
+    background: #f1f1f1;
+    /* border-radius: 16px; */
+    height: 1.25em;
+    padding: 0.5em;
+    display: block;
+    margin: 0px;
+    white-space: nowrap;
+    /* border: 1px solid #450084; */
+    max-width: 500px;
+    left: 0px;
+    text-align: center;
+}
+#scrollnotify { text-align: center; }
+#scrollnotify div { display: inline-block; border-radius: 16px; }
+</style>
+<script>
+if(navigator.userAgent.indexOf('Mac') > 0){
+            document.write('<style>#scrollnotify { margin-left: -0px; }</style>');// adjustment for Mac browsers 
+    } 
+if(navigator.userAgent.indexOf('Windows') > 0){
+    if(navigator.userAgent.indexOf('Chrome') > 0){
+        document.write('<style>#scrollnotify { margin-left: -9px; }</style>');// adjustment for Windows Chrome 
+    }
+}
+</script>
+<div id="sncontainer" class="pagecontainer"><div id="scrollnotify">
+<div>&#9660; Keep Scrolling for more</div></div>
+</div> 
+<script src="//www.jmu.edu/jmucmsfiles/js/jquery.cycle.all.js" type="text/javascript"></script>
+<script src="//www.jmu.edu/jmucmsfiles/js/global.js" type="text/javascript"></script>
+<link href="//www.jmu.edu/web_ssi/extendedcss/skins.css" rel="stylesheet"/> 
+<link href="//www.jmu.edu/jmucmsfiles/css/nav2.1/blank.css" id="dynscroll" rel="stylesheet" type="text/css"/>
+<style>#responsive-menu-button-other img { display: none; }</style>
+
+
+<script>
+$('#cse-search-box').attr('action','javascript:newsearch();');
+</script>
+ </xhtml-block>
+<!-- SSI end: /dukehallgallery/_ssi/dukehallgallery-header-ssi.shtml --><script type="text/javascript">
+$(document).ready(function(){
+    $('#wholepage').show();
+});
+</script>
+<noscript>
+<style type="text/css">#wholepage { display: block; }</style>
+</noscript>
+
+
+<div id="apage">
+<div id="mainpagecontent" style="border:none;">
+<div class="yui3-g-r">
+<div class="yui3-u-1-1" id="titles">
+<div class="pagecontainer" style="display: table;">
+
+
+
+<div class="yui3-u-1-5 breakaway" style="vertical-align: middle;width:202px;"><!--removed to100 -->
+<div id="sitetitle">
+                                                </div>
+</div>
+<div class="yui3-u-3-4" style="vertical-align: middle;">
+<h1 id="pagetitle"><span>The 613 Mitzvot</span></h1>  <!--span id="scriptlog" style="display: none;"></span--><script type="text/javascript">
+// <![CDATA[
+$(document).ready(function(){
+    $('#pagetitle span').css('white-space','nowrap');
+    var ptw = $('#pagetitle span').css('width');
+    ptw = ptw.replace('px','');
+    ptw = ptw * 1; 
+    if(ptw >= 759){
+        $('#pagetitle').css('position','static');
+    }
+    $('#pagetitle span').css('white-space','normal');
+    /*$('#scriptlog').html($('#pagetitle span').css('width') + ' and ptw is '+ptw);*/
+});
+// ]]>
+</script>
+</div>
+<script>$(window).on('load',function(){if($('h1#pagetitle span').html()=='Rename Me'){alert('Please change the display name and title of your page');}});</script><!--[if lte IE 9]>
+<style>
+@media all and (max-width: 768px){
+    #titles { margin-top: -30px; min-height: 90px; }
+}
+</style>
+<![endif]-->
+
+
+</div><!-- pagecontainer -->
+</div><!-- titles -->
+</div><!-- yui3-g-r -->
+<div class="pagecontainer" id="maincontentwrapper">
+  <div class="pagecontainer tabular" style="display: block; margin: 0;padding: 0;  border: 0;   outline: 0;">
+    <div class="tabular-row">
+      <div class="tabular-cell tabular-nav" id="nav" style="vertical-align:top;">
+<div class="yui3-u-1">
+
+<!-- fid:0034	sr:396055 -->
+
+
+<!-- SSI start: /dukehallgallery/_ssi/nav-ssi.shtml --><xhtml-block><!--fid:0033 sr:396086-->
+
+<!-- custom-nav-with-below-nav --><script>
+var lteIE9=false;
+var lteIE7=false;
+</script>
+<!--[if lte IE 9]>
+<script>
+lteIE9=true;
+</script>
+<style>
+#titles .pagecontainer { position: absolute; background-color: #F4EFE1; }
+#responsive-menu-button { top: 0px; }
+#maincontentwrapper > table tr td#nav { width: 190px; }
+#maincontentwrapper > .tabular .tabular-row .tabular-nav { width: 190px; }           
+@media all and (max-width: 768px){
+    #maincontentwrapper > table tr td#nav { width: 0px; }
+    #maincontentwrapper > .tabular .tabular-row .tabular-nav { width: 0px; }
+}
+</style>
+<![endif]-->
+<!--[if lte IE 7]>
+<script>
+lteIE7=true;
+</script>
+<style>
+#titles .pagecontainer { position: relative; background-color: #F4EFE1; }
+</style>
+<![endif]-->
+
+
+<script type="text/javascript">$(document).ready(function(){ // function by johns2ja
+    // ASDFNEW9 - BEGIN x20200401 which would be in the nav ssi Format 
+      usingSafariOnly=navigator.userAgent;
+      usingSafariOnly=usingSafariOnly.toString();
+      if(usingSafariOnly.indexOf('Safari')!=-1){
+          if(usingSafariOnly.indexOf('Chrome')!=-1){
+              usingSafariOnly=false;
+          } else { 
+            usingSafariOnly=true; 
+          }
+      }
+      if(usingSafariOnly){
+        $('#breadcrumbs-without-anim').css('padding-bottom','6px');
+      }
+    // ASDFNEW9 - END x20200401 which would be in the nav ssi Format 
+    var firstopen = true; 
+        $('#responsive-menu-button-other').click(function(){         if($(this).html().indexOf('id="leftnavopen"')!=-1){             $(this).html('<img alt="Close left navigation" aria-label="Close left navigation" id="leftnavclose" src="//www.jmu.edu/_images/icons-shared/buttons/nav-arrow-right.png" title="close"/>');             if(!lteIE9){
+                //
+            } else { $(this).css('top','0px'); } // -25px
+            $('#mainpagecontent').show().animate({
+                'left': '+=190px'
+            },250, function(){
+               // animation complete
+               if(lteIE9){
+                //$('#maincontentwrapper table tr td#nav').css('width','190px');
+               }
+            });
+            if(firstopen){$('#sidebar').show();}
+        } else {
+            $(this).html('<img alt="Open left navigation" aria-label="Open left navigation" id="leftnavopen" src="//www.jmu.edu/_images/icons-shared/buttons/nav-arrow-left.png" title="open"/>');             //$(this).css('top','60px');
+            if(lteIE9){
+                //$('#maincontentwrapper table tr td#nav').css('width','0px');
+                $('#maincontentwrapper .tabular .tabular-row .tabular-nav').css('width','0px');
+                $(this).css('top','0px');
+            }
+            $('#mainpagecontent').show().animate({
+                'left': '-=190px',
+                'position' : 'absolute'
+            },250, function(){
+               // animation complete
+               if(lteIE9){
+                //$('#maincontentwrapper table tr td#nav').css('width','0px');
+                $('#maincontentwrapper .tabular .tabular-row .tabular-nav').css('width','0px');
+                $('#responsive-menu-button-other').css('top','0px');                }
+               
+            });
+        }   
+        if(firstopen){
+            $('#sidebar #navigation .custnav ul li ul.subn').each(function(){
+                if($(this).parent().hasClass('nav-highlighted')){ // replaced the following per x20210817: if($(this).css('background').indexOf('ccb062')!=-1){ // if not highlighted, then hide else retain expansion. // x20210817 added .parent() 
+                $(this).hide(); 
+                }
+            });
+        }
+        firstopen = false; 
+    });
+});
+
+    </script>
+    <!-- start sidebar-->
+    <div id="mobile-header"><!-- other suffix added to id below per x20200401 -->
+        <a href="#sidenav" id="responsive-menu-button-other" onlick="this.style.border='0px'" role="link" style="border: 0px;outline: 0px;"><img alt="Open left navigation" aria-label="Open left navigation" id="leftnavopen" src="//www.jmu.edu/_images/icons-shared/buttons/nav-arrow-left.png" title="open"/></a>    </div>
+    <style type="text/css">
+        <!--
+#sidebar {
+    float: none !important;
+    text-align: right;
+}
+
+#sidebar .custnav {
+
+}
+#sidebar .custnav {
+    background-color: #fff; 
+}
+
+#sidebar .custnav ul {
+    list-style: none outside none;
+}
+#sidebar .custnav > ul > li:first-child { 
+    border-bottom: 1px solid #d6d6d6;
+    padding-right: 23px;
+}
+#sidebar .custnav ul li {
+    border-top: 1px solid #EBDFC0;
+    font-size: 14px;
+    /* padding: 10px 0; /* 12px 0 * / /* 22px 0 */ 
+}
+#sidebar .custnav ul li ul li { font-size: 0.9em; }
+#sidebar .custnav ul li ul li a { margin-left: 1em; }
+#sidebar .custnav a, #sidebar .nav ul li span {
+    color: #36185C;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none; 
+}
+#sidebar .custnav a { cursor: pointer; color: #5C574F; font-weight: normal; }
+
+/* removed per x20210817 #sidebar .custnav a:hover { background: url(//www.jmu.edu/jmucmsfiles/images/sidenavhover.png); text-decoration: none; } */
+
+#sidebar .custnav ul li ul li a:hover { background: none; color: #450084; }
+.activeContextLink {
+    background: url(//www.jmu.edu/jmucmsfiles/images/sidenavlink.png);
+}
+#sidebar .custnav ul li ul, #sidebar .custnav ul li ul li ul { position:relative;top:5px; }
+#sidebar .custnav ul li ul li ul li.third { /* "third level" */ 
+        padding-left: 1em;
+}
+#sidebar ul li a {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+#sidebar .custnav > ul { *width: 190px; *margin-left:0px; } 
+
+#belownav { width: 190px; }
+
+#mobile-header { display: none; }
+
+#responsive-menu-button { 
+    top: 5px; 
+}
+
+@-moz-document url-prefix() { /* firefox exception */
+    #responsive-menu-button { 
+        top: 5px; 
+    }
+}
+
+.sidr { font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; text-align:right; }
+
+
+@media all and (min-width:120px){
+    /*#maincontentwrapper { margin-top: -15px; }*/
+    #mobile-header { display: inline; } 
+    .custnav .firstdrop { display: block; text-transform: uppercase; font-size: 14px; line-height: 20px; font-weight: normal; text-align:right; }
+    .custnav .firstdrop span { margin-right: 12px; }
+    .custnav .firstdrop span a { margin-right: 0px !important; }
+
+    /*
+    #sidebar .custnav ul { width: 182px; }
+    #sidebar .custnav > ul { *width: 182px; }
+    #sidebar .custnav ul li { width, 182px; }
+    #sidebar .custnav > ul > li { *width: 182px; }
+    */
+    #mainpagecontent { position: relative; }
+    #sidebar { position: absolute !important; }
+    #sidebar { left: -190px; }
+    #sidebar { top: 5px; }
+    #mainpagecontent { overflow: visible; } 
+    #responsive-menu-button { top: 5px; position: absolute; left: 5px; font-size: 3em; color: #450084; /*black*/; text-decoration: none; z-index: 99; }
+    @-moz-document url-prefix() { /* firefox exception */
+        #responsive-menu-button { 
+            top: 5px; 
+    }
+}
+}
+@media all and (min-width:769px){ /* THE BREAKPOINT */
+    #maincontentwrapper { margin-top: 0px; }
+    #mobile-header { display: none; }
+    .custnav .firstdrop { display: none; }
+    
+    #mainpagecontent { position: static; }
+    #sidebar { position: static !important; }
+    #sidebar { display: block; }
+    #sidebar { left: 0px; }
+    #responsive-menu-button-other { display: none; }}
+
+@media screen and (min-width: 1000px){ 
+    #mobile-header { display: none; }
+}
+-->
+    </style>
+    <div class="pagecontainer">
+        <!--<div id="sidebar">-->
+        <script type="text/javascript">/* toggle nav by jamesarthurjohn (johns2ja) */
+var navbgpos="96.5% 16px"; /* was 96.5% 22px,  was 96.5% 32px */ 
+$(document).ready(function(){ 
+    $('#sidebar .custnav ul li ul.subn').each(function(){
+        var currentItem = $(this);
+        currentItem.toggle();
+        currentItem.parent().addClass('sideArrowGold');// replaced the following per x20210817: currentItem.parent().css('background','url(//www.jmu.edu/jmucmsfiles/images/sidebar-side-arrow-gold.png)'); 
+        // replaced by using class above per x20210817: currentItem.parent().css('background-repeat','no-repeat');
+        if(currentItem.parent().parent().hasClass('subn')){navbgpos="96.5% 11px";}else{navbgpos="96.5% 16px";}        currentItem.parent().css('background-position',navbgpos); 
+        var childlink; var childlinkmon;
+        currentItem.click(function(){
+             childlink = 0; // prevents collapse effect when clicking on child link in expanded nav
+        });
+        /***************  ATTN: Accessibility ******************/
+        $(this).parent().keydown(function(e){ // Jamie Johnson
+            if(childlink!=0) {
+                if(currentItem.is(":hidden")){
+                if(e.keyCode=='39') { // right arrow expands
+                    currentItem.toggle();
+                }
+                }
+                if(currentItem.is(":visible")){
+                if(e.keyCode=='37') { // left arrow collapses
+                    currentItem.toggle();
+                }
+                }
+                /* start arrow control */
+                if(currentItem.is(":hidden")) { 
+                    // arrow sideways 
+                    currentItem.parent().css('background','url(//www.jmu.edu/jmucmsfiles/images/sidebar-side-arrow-gold.png)');                     
+                    currentItem.parent().css('background-repeat','no-repeat'); 
+                    currentItem.parent().css('background-position',navbgpos); 
+                } 
+                else if(currentItem.is(":visible")) {  
+                    // arrow down
+                    currentItem.parent().css('background','url(//www.jmu.edu/jmucmsfiles/images/sidebar-nav-arrow-gold.png)');                  
+                    currentItem.parent().css('background-repeat','no-repeat'); 
+                    currentItem.parent().css('background-position',navbgpos); 
+                }
+                /* end arrow control */
+            }
+            childlink=1; // allows collapsible nav if click back to a page
+        });
+        /********************** END Accessibility ****************/
+        $(this).parent().click(function(){
+            if(childlink!=0) {
+                currentItem.toggle();
+                /* start arrow control */
+                if(currentItem.is(":hidden")) { 
+                    // arrow sideways 
+                    currentItem.parent().css('background','url(//www.jmu.edu/jmucmsfiles/images/sidebar-side-arrow-gold.png)');                     
+                    currentItem.parent().css('background-repeat','no-repeat'); 
+                    currentItem.parent().css('background-position',navbgpos); 
+                    // hide right border
+                    currentItem.parent().css('border-right','0px solid transparent');
+                } 
+                else if(currentItem.is(":visible")) {  
+                    // arrow down
+                    currentItem.parent().css('background','url(//www.jmu.edu/jmucmsfiles/images/sidebar-nav-arrow-gold.png)');                  
+                    currentItem.parent().css('background-repeat','no-repeat'); 
+                    currentItem.parent().css('background-position',navbgpos); 
+                    // show right border
+                    $('#sidebar .custnav ul').each(function(){// took out &gt; ul
+                        $(this).css('border-right','0px solid transparent');
+                    });
+                    if(lteIE7){
+                        $('#sidebar .custnav &gt; ul').each(function(){
+                            $(this).css('border-right','0px solid transparent');
+                        });
+                    }
+                    currentItem.parent().css('border-right','1px solid #d6d6d6');
+                    $('.subn .sub').parent().each(function(){        $(this).css('border-right','0px solid transparent');});         //x20210817  
+                }
+                /* end arrow control */
+            }
+            childlink=1; // allows collapsible nav if click back to a page
+        });
+    });
+    $('.firstdrop').css('background-position','210px 10px'); // was 210px 20px
+    $('.firstdrop').click(function(){
+        $('.firstdrop').css('background-position','210px 10px'); // was 210px 20px
+    });
+
+    $('ul.subn li a').each(function(){
+        if($(this).html()==''){$(this).parent().remove();}
+        if($(this).attr('href')=='#'){
+            $(this).css('cursor','default');
+        }
+    });
+    
+    // START RETAIN EXPANSION AND HIGHLIGHT - johns2ja @jamesarthurjohn 22-23 August 2013
+    $('#sidebar .custnav ul li a').each(function(){  // highlight
+        //does URL have http:// or https://?
+        URLProtcol='';
+        linkProtocol='';
+        myURL = location.href;
+        myhref = $(this).attr("href"); 
+        if(myhref.indexOf('www.jmu.edu')!=-1){//x20210906
+            myhref=myhref.split('www.jmu.edu');//x20210906
+            myhref=myhref[1];//x20210906
+        }
+        if(myhref.indexOf('/index.shtml')!=-1){ myhref=myhref.split('/index.shtml'); myhref=myhref[0]; } //x20210817 to allow highlighting of implied index.shtml when "index.shtml" is not in the URL
+        if(typeof myhref != 'undefined'){
+        //does link have http:// or https://?
+        if(myhref.indexOf("http://") != -1) { 
+          linkProtocol="http://";
+        } 
+        if(myhref.indexOf("https://") != -1) { 
+          linkProtocol="https://";
+        } 
+        if(myURL.indexOf("http://") != -1) { 
+          URLProtocol="http://";
+        } 
+        if(myURL.indexOf("https://") != -1) { 
+          URLProtocol="https://";
+        } 
+        if(linkProtocol==''){linkProtocol=URLProtocol;}
+                if(myhref.indexOf(linkProtocol) != -1) { 
+                    // do nothing
+        } else if(myhref.charAt(0)=='/') { myhref=myhref } else { myhref=myhref; }
+        myhref='.edu'+myhref;//x20210527
+        //$('#navlog').html($('#navlog').html() + '<br/><b>myhref</b> = '+myhref);    
+                ok=true;
+        if(location.href.indexOf('/events/') != -1){ 
+            ok = false; 
+            if(myhref.indexOf('/events/') != -1){
+                ok = true; 
+            }
+        }
+                if(ok){        if(location.href.indexOf(myhref) != -1){  
+            if(location.href.indexOf('#link') == -1) { /* johns2ja - conditioned to prevent unnecessary hightlights 24 March 2014 */ /* removed and replaced with items below end of this comment per x20210817: $(this).css("background","#ccb062"); $(this).css("font-weight","bold");*/ /* bold per marketing */ 
+                lhwip=location.href.split('www.jmu.edu');//x20210817 
+                lhwip='.edu'+lhwip[1];//x20210817
+                if(lhwip.indexOf('index.shtml')!=-1){ lhwip=lhwip.split('index.shtml'); lhwip=lhwip[0]; } //x20210817
+                if(myhref.indexOf('index.shtml')!=-1){ myhref=myhref.split('index.shtml'); myhref=myhref[0]; } //x20210817
+                if(lhwip==myhref||lhwip+'/'==myhref||lhwip==myhref+'/'){//x20210817
+                    $(this).parent().addClass('nav-highlighted'); // x20210817 nav-highlighted and added parent() 
+                    if($(this).parent().hasClass('third')){ $(this).parent().parent().toggle(); $(this).parent().parent().parent().parent().toggle(); $(this).parent().parent().parent().parent().parent().css('border-right', '1px solid #d6d6d6'); //x20210817
+                    } else { if($(this).parent().parent().hasClass('subn')){ $(this).parent().parent().toggle(); $(this).parent().parent().parent().css('border-right', '1px solid #d6d6d6'); } }//x20210817
+                }//x20210817
+            }  
+        }
+        }         } // if not undefined
+    });
+    
+    
+    $('#sidebar .custnav ul li ul.subn li a').each(function(){  // expand parent if on child
+        //does URL have http:// or https://?
+        URLProtcol='';
+        linkProtocol='';
+        myURL = location.href;
+        myhref=$(this).attr("href"); 
+        if(myhref.indexOf('/index.shtml')!=-1){ myhref=myhref.split('/index.shtml'); myhref=myhref[0]; } //x20210817 to allow highlighting of implied index.shtml when "index.shtml" is not in the URL
+        //does link have http:// or https://?
+        if(myhref.indexOf("http://") != -1) { 
+          linkProtocol="http://";
+        } 
+        if(myhref.indexOf("https://") != -1) { 
+          linkProtocol="https://";
+        } 
+        if(myURL.indexOf("http://") != -1) { 
+          URLProtocol="http://";
+        } 
+        if(myURL.indexOf("https://") != -1) { 
+          URLProtocol="https://";
+        } 
+        if(linkProtocol==''){linkProtocol=URLProtocol;}
+                if(myhref.indexOf(linkProtocol) != -1) { 
+                    // do nothing
+        } else if(myhref.charAt(0)=='/') { myhref=myhref } else { myhref=myhref; }
+        
+                ok=true;
+        if(location.href.indexOf('/events/') != -1){ 
+            ok = false; 
+            if(myhref.indexOf('/events/') != -1){
+                ok = true; 
+            }
+        }
+                if(ok){        if(location.href == myhref){ // replaced per x20210817 if(location.href.indexOf(myhref) != -1){ 
+                       $(this).parent().parent().toggle();
+            $(this).parent().addClass('nav-highlighted'); // replaced the following per x20210817: $(this).parent().css("background","#ccb062");
+                      //$(this).parent().css("background","#ccb062"); // removed per x20210817
+           if($(this).parent().parent().parent().css("border-right")!='1px solid #d6d6d6'){ // 10 september 2015
+            $(this).parent().parent().parent().css("border-right","1px solid #d6d6d6"); /* 9 september 2015 */
+           }
+           $('#sidebar .custnav ul li ul li').css("border-right","0px"); // 10 september 2015
+        }     
+        }    });
+    
+    $('#sidebar .custnav ul li ul.subn li ul li a').each(function(){  // expand parent if on grandchild  
+        //does URL have http:// or https://?
+        URLProtcol='';
+        linkProtocol='';
+        myURL = location.href;
+        myhref=$(this).attr("href"); 
+        //does link have http:// or https://?
+        if(myhref.indexOf("http://") != -1) { 
+          linkProtocol="http://";
+        } 
+        if(myhref.indexOf("https://") != -1) { 
+          linkProtocol="https://";
+        } 
+        if(myURL.indexOf("http://") != -1) { 
+          URLProtocol="http://";
+        } 
+        if(myURL.indexOf("https://") != -1) { 
+          URLProtocol="https://";
+        } 
+        if(linkProtocol==''){linkProtocol=URLProtocol;}
+                if(myhref.indexOf(linkProtocol) != -1) { 
+                    // do nothing
+        } else if(myhref.charAt(0)=='/') { myhref=myhref } else { myhref=myhref; }
+                ok=true;
+        if(location.href.indexOf('/events/') != -1){ 
+            ok = false; 
+            if(myhref.indexOf('/events/') != -1){
+                ok = true; 
+            }
+        }
+                if(ok){        if(location.href == myhref){ // replaced per x20210817 if(location.href.indexOf(myhref) != -1){ 
+                $(this).parent().parent().parent().parent().toggle();
+                $(this).parent().parent().addClass('nav-highlighted'); //replaced the following per x20210817: $(this).parent().css("background","#ccb062");// x20210817 added .parent()
+                $(this).parent().parent().parent().parent().parent().css("border-right","1px solid #d6d6d6");  /* 9 september 2015 */
+        } 
+        }    });
+      
+        $('#sidebar .custnav ul li ul.subn').each(function(){ // expansion retained and nav arrows modified  
+            if($(this).is(":visible")){
+                $(this).parent().css('background','url(//www.jmu.edu/jmucmsfiles/images/sidebar-nav-arrow-gold.png)');                     
+                $(this).parent().css('background-repeat','no-repeat'); 
+                $(this).parent().css('background-position',navbgpos); 
+            }
+        });
+        // END RETAIN EXPANSION AND HIGHLIGHT - johns2ja @jamesarthurjohn 22-23 August 2013
+});
+
+$(window).on('load',function(){         $('#abovenav').css('position','absolute');
+    $('#sidenav').css('position','absolute');
+    bnht = 0; 
+    if($('#header-top').html()!=''){
+        bnht = bnht + $('#header-top').outerHeight();
+        bnht*1;
+    }
+    if($('#header-bottom').html()!=''){
+        bnht = bnht + $('#header-bottom').outerHeight();
+        bnht*1;
+    }
+    if($('#heading').html()!=''){
+        bnht = bnht + $('#heading').outerHeight();
+        bnht*1;
+    }
+    if($('#home-slideshow').html()!=''){
+        bnht = bnht + $('#home-slideshow').outerHeight();
+        bnht*1;
+    }
+    bnht=bnht*1;
+        if($('#abovenav').html()!='') {
+        bnht = bnht + $('#abovenav').outerHeight();
+        bnht*1;
+    }
+    bnht*1;
+    bnht = bnht + $('#sidebar').outerHeight();
+    bnht=bnht*1;
+    $('#belownav').css('top',bnht);
+    $('#belownav').css('z-index','0');
+    $('#sidebar').css('position','relative');
+    $('#abovenav').css('position','relative');
+    $('#sidebar').css('z-index','99');
+    if($('#abovenav').html()==''){$('#abovenav').hide();}    
+    $('ul').each(function(){$(this).removeClass('nav-highlighted');});//x20210817 prevents whole UL from being highligted -- cleanup
+});
+
+        </script>
+        <div id="sidebar" role="navigation">
+            <div class="custnav"></div>
+            <div id="navigation">
+                <div class="custnav nav" style="margin-bottom: 0;">
+    <ul>
+    <li class="firstdrop"><span><!-- <a href="//www.jmu.edu">James Madison University</a> --></span></li><script>if($('#sitetitle a').html()!=''){$('.firstdrop').html($('#sitetitle').html());}else{$('.firstdrop').hide();}/* start 12 October 2015 addition */ $(document).ready(function(){$('#sitetitle').html('');$('.firstdrop').remove();}); /* end 12 October 2015 addition */</script> 
+    <li class="firstnavlink" style="">       <a href="/dukehallgallery/index.shtml" role="link">Duke Hall Gallery</a>     </li>
+    <li style="">       <a href="/dukehallgallery/exhibitions.shtml" role="link">Exhibitions</a>     </li>
+    <li style="">       <a href="/dukehallgallery/visit.shtml" role="link">Visit</a>     </li>
+    <li style="">       <a href="/dukehallgallery/support.shtml" role="link">Support</a>     </li>
+    <li style="">       <a href="/dukehallgallery/learn.shtml" role="link">Learn</a>     </li>
+    <li style="">       <a href="/dukehallgallery/shop.shtml" role="link">Shop</a>     </li>
+
+  
+
+    </ul>
+
+<div id="sidebarbelow"><!-- start sidebarbelow -->
+<style>#sidebarbelow {padding: 10px} #sidebarbelow a { position:relative; left: -10px; display: inline; }</style>
+</div><!-- end sidebarbelow -->
+</div>
+                <div class="custnav"></div>
+            </div>
+            <!-- sidebar -->
+            <div></div>
+        </div>
+    </div>
+    
+
+<script type="text/javascript">// <![CDATA[
+// function by James &#8220;Jamie&#8221; Arthur Johnson, johns2ja @jamesarthurjohn
+function isiPhone(){
+    return (
+        (navigator.platform.indexOf("iPhone") != -1) ||
+        (navigator.platform.indexOf("iPod") != -1)
+    );
+}
+
+
+function navdrawer(e){     if($('#responsive-menu-button-other').html()=='-'){     var container = $("#sidebar");
+    var container2 = $("#responsive-menu-button-other");     if (!container2.is(e.target) && !container.is(e.target)&& container.has(e.target).length === 0) {
+        if($('#mobile-header').css('display')!='none'){
+                $('#responsive-menu-button-other').click();        }
+    }
+    } }
+$(document).mouseup(function (e){     navdrawer(e);});
+
+
+if(isiPhone()){
+$(document).on( "touchend", function(e){ 
+    navdrawer(e);});
+}
+
+$('#responsive-menu-button-other').click(function(){ $(this).css('border','0px');   
+});
+// ]]></script>
+<script>
+$(document).ready(function(){
+var havebreadcrumbs = $('.rcrumbs').html(); 
+if (typeof havebreadcrumbs === 'undefined') {
+ // no breadcrumbs
+} else {
+    $('#responsive-menu-button').css('top','16px'); 
+}
+});
+</script>
+<style id="ptstyle">@media all and (min-width: 120px){
+    #titles #pagetitle {padding-left: 33px; }      
+}
+
+@media all and (min-width: 769px){
+    #titles #pagetitle {padding-left: 30px; }/* changed to 40px per x20180612 and then changed to 30px per ASDFNEW4 as part of x20200401 */
+}
+@media all and (min-width: 1040px){
+    #titles #pagetitle {padding-left: 30px; }/* x20180612 */
+}
+
+@media all and (max-width: 9999999px){
+    .rcrumbs { margin-left: 0px; }
+}
+@media all and (max-width: 768px){
+    .rcrumbs { margin-left: 35px; }
+}
+</style>
+<script>
+primaryptstyle='@media all and (min-width: 120px){#titles #pagetitle {padding-left: 3px; } }@media all and (min-width: 481px){ #titles #pagetitle {padding-left: 10px; }}@media all and (min-width: 769px){ #titles #pagetitle {padding-left: 40px; }}@media all and (max-width: 9999999px){    .rcrumbs { margin-left: 0px; }}@media all and (max-width: 768px){    .rcrumbs { margin-left: 35px; }}';
+$(document).ready(function(){
+    if($('#mytemplate').html()!='Secondary')
+    if($('#mytemplate').html()!='(none)'){        $('#ptstyle').html(primaryptstyle);
+        $('#pagetitle').parent().removeClass('yui3-u-3-4').addClass('yui3-u-1');         $('#pagetitle').css('position','relative');         }    $('#pagetitle').css('position','static');});
+</script>
+
+<script src="//www.jmu.edu/web_ssi/pgtitleht.js"></script>
+</xhtml-block>
+<!-- SSI end: /dukehallgallery/_ssi/nav-ssi.shtml -->
+
+
+
+
+
+
+</div>
+</div><!-- tabular-cell nav -->
+<div class="tabular-cell" id="maincontentarea" role="main" style="vertical-align:top;">
+<div class="yui3-g-r"><div class="yui3-u-1"><a id="pagecontent" name="pagecontent" title="page content"></a><!-- added for skipnav -->
+<!--fid:0012 sr:386002-->
+
+<div class="feature-image yui-3-u-1"><style>.feature-image {max-height:341px;overflow:hidden}</style>
+    <div class="gridpad" style="margin-top:0px !important;padding-bottom: 0px;">
+                    <img alt="Cover Photo Image" src="../_images/Duke-gallery-feature3.jpg"/>
+        </div><!-- gridpad -->
+</div><!--feature-image-->
+
+
+
+<!--fid:0011 sr:386002-->
+
+
+<!-- START PLEASE SPECIFY MACRO -->
+<!--END PLEASE SPECIFY MACRO -->
+
+  <style>#rightrelatedregion { visibility:hidden }</style> 
+   <!-- PAGE TYPE is Default -->
+
+ 
+<span content="2022-06-28" itemprop="datePublished" style="display:none">June 28, 2022</span>
+
+     <div class="yui3-u-1 " id="defaultregion"> <div class="gridpad" style="padding-bottom: 0px;">
+ 
+<!-- Starts x20210322
+ Ends x20210322 -->
+
+   
+ 
+         
+<content></content>
+
+<style>
+#defaultregion { display: none; }
+</style>
+
+<script>
+$(document).ready(function(){
+    if($('#defaultregion .gridpad').html().indexOf('iframe')!=-1){
+        $('#defaultregion').css('display','block');
+    }
+});
+</script>
+
+<script type="text/javascript"> 
+if (typeof $('.photowithcutline img') != "undefined") {
+        $('.cutline').css('width',$('.photowithcutline img').css('width'));
+        $('.cutline').css('position','relative');
+        $('.cutline').css('left','-16px');
+}
+</script>
+
+
+     <style>
+#maincontentarea { max-width: 1021px }
+#maincontentwrapper #nav { display: none }
+#in-page-footer { display: none }
+#titles { display: none }
+.tabular-row, .tabular-cell { display: block; }
+
+</style>
+
+ 
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="toprowobject"></div>
+    
+    
+
+
+ 
+
+
+
+
+
+
+                                                           <style>@media all and (min-width:481px){ #gridpad11656453640026 div.bgdiv { min-height:1px !important; } }</style>        
+    <div class="yui3-u-1">                                                                                                                                             <div class="gridpad">            <div class="      " id="gridpad11656453640026">                                                                                                                     <style>@media all and (min-width:481px){ #gridpad11656453640026 { min-height:1px !important;  }</style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                
+                                                                                                  <script>document.getElementById("gridpad11656453640026").classList.add("border-radius");</script>
+                                                
+                <div class="rwdwysiwyg">                  <content></content>
+                </div>
+                
+                                    
+                                                                                        
+                                                                                                        </div>
+    </div>
+</div> 
+                                                           <style>@media all and (min-width:481px){ #gridpad21656453640026 div.bgdiv { min-height:1px !important; } }</style>        
+    <div class="yui3-u-1">                                                                                                                                             <div class="gridpad">            <div class="      " id="gridpad21656453640026">                                                                                                                     <style>@media all and (min-width:481px){ #gridpad21656453640026 { min-height:1px !important;  }</style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                
+                                                                                                  <script>document.getElementById("gridpad21656453640026").classList.add("border-radius");</script>
+                                                                                                                <!-- ATTN: Shaun: headerradius = border-radius  wgbg =  -->
+                    <h5 class="headerpadding bg-goldlight-nohover border-radius">THE 613 MITZVOT</h5>                                
+                <div class="rwdwysiwyg">                  <img alt="rand_digital-501.png" class="" height="675" src="../_images/2018/09-sep/rand_digital-501.png" width="1200"/>
+                </div>
+                
+                                    
+                                                                                        
+                                                                                                        </div>
+    </div>
+</div> 
+                                                           <style>@media all and (min-width:481px){ #gridpad31656453640026 div.bgdiv { min-height:1px !important; } }</style>        
+    <div class="yui3-u-1">                                                                                                                                             <div class="gridpad">            <div class="      " id="gridpad31656453640026">                                                                                                     <style>@media all and (min-width:481px){ #gridpad31656453640026 { min-height:1px !important;  }</style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                
+                                                                                                  <script>document.getElementById("gridpad31656453640026").classList.add("border-radius");</script>
+                                                
+                <div class="rwdwysiwyg">                  <p>Contextual material for the exhibition <strong><em>The 613 by Archie Rand</em></strong> (11 September - 13 October 2018).</p>
+<p><em>The 613</em> refers to the 613 Jewish commandments (mitzvot in Hebrew) extracted from the Old Testament.&#160; This immense work by Archie Rand includes one painting for each one of the 613 mitzvot.</p>
+<p>&#160;</p>
+<p>1. To know there is a God.<br/>(Exodus 20:2)<br/><br/>2. To have not other gods.<br/>(Exodus 20:3)<br/><br/>3. To know that He is one.<br/>(Deuteronomy 6:4)<br/><br/>4. To love Him.<br/>(Deuteronomy 6:5)<br/><br/>5. To fear Him.<br/>(Deuteronomy 10:20)<br/><br/>6. To sanctify His Name.<br/>(Leviticus 22:32)<br/><br/>7. Not to profane His Name.<br/>(Leviticus 22:32)<br/><br/>8. To worship Him as He has ordered and not destroy holy objects.<br/>(Deuteronomy 12:4)<br/><br/>9. To listen to the true prophet.<br/>(Deuteronomy 18:15)<br/><br/>10. Not to test the prophet.<br/>(Deuteronomy 6:16)<br/><br/>11. To emulate His ways.<br/>(Deuteronomy 28:9)<br/><br/>12. To be with those who only worship Him.<br/>(Deuteronomy 10:20)<br/><br/>13. To love your neighbor as yourself.<br/>(Leviticus 19:18)<br/><br/>14. To love converts.<br/>(Deuteronomy 10:19)<br/><br/>15. Not to hate your brother in your heart.<br/>(Leviticus 19:17)<br/><br/>16. To reprove your brother when necessary.<br/>(Leviticus 19:17)<br/><br/>17. Not to embarrass others.<br/>(Leviticus 19:17)<br/><br/>18. Not to oppress the weak.<br/>(Exodus 22:21)<br/><br/>19. Not to slander.<br/>(Leviticus 19:16)<br/><br/>20. Not to take revenge.<br/>(Leviticus 19:18)<br/><br/>21. Not to bear a grudge.<br/>(Leviticus 19:18)<br/><br/>22. Teach Torah to your children.<br/>(Deuteronomy 6:7)<br/><br/>23. To respect and defer to the elders.<br/>(Leviticus 19:32)<br/><br/>24. Do not turn to the ways of idol worship.<br/>(Leviticus 19:4)<br/><br/>25. Let the fringes on your clothes remind you to have pure conduct.<br/>(Numbers 15:39)<br/><br/>26. Not to blaspheme or curse a judge.<br/>(Exodus 22:27)<br/><br/>27. Not to worship idols.<br/>(Exodus 20:5)<br/><br/>28. Not to bow down to idols.<br/>(Exodus 20:5)<br/><br/>29. Not to make an idol.<br/>(Exodus 20:4)<br/><br/>30. Not to make or cast an image.<br/>(Leviticus 19:4)<br/><br/>31. Not to make gods of silver or gold.<br/>(Exodus 20:20)<br/><br/>32. Not to turn a people to idolatry.<br/>(Exodus 23:13)<br/><br/>33. To destroy a city that has turned to idol worship.<br/>(Deuteronomy 13:17)<br/><br/>34. Not to rebuild that city.<br/>(Deuteronomy 13:17)<br/><br/>35. Not to retain any benefit from that city.<br/>(Deuteronomy 13:18)<br/><br/>36. Not to missionize a person to idol worship.<br/>(Deuteronomy 13:12)<br/><br/>37. Not to love the missionary.<br/>(Deuteronomy 13:9)<br/><br/>38. Not to stop hating him.<br/>(Deuteronomy 13:9)<br/><br/>39. Not to save him.<br/>(Deuteronomy 13:9)<br/><br/>40. Not to speak in his defense.<br/>(Deuteronomy 13:9)<br/><br/>41. Not to refrain from incriminating him.<br/>(Deuteronomy 13:9)<br/><br/>42. Not to prophesize in idolatry.<br/>(Deuteronomy 18:20)<br/><br/>43. To ignore the false prophet.<br/>(Deuteronomy 13:4)<br/><br/>44. Not to prophesize falsely in God's name.<br/>(Deuteronomy 18:20)<br/><br/>45. Not to fear killing a false prophet.<br/>(Deuteronomy 18:22)<br/><br/>46. Never swear in the name of an idol.<br/>(Exodus 23:13)<br/><br/>47. Not to perform as or acknowledge those who purport to channel spirits.<br/>(Leviticus 19:31)<br/><br/>48. Not to perform as or consult fortunetellers.<br/>(Leviticus 19:31)<br/><br/>49. Not to burn your children in a sacrificial fire to Molech.<br/>(Leviticus 18:21)<br/><br/>50. Not to erect a stone pillar in a place of public worship.<br/>(Deuteronomy 16:22)<br/><br/>51. Not to erect an idol or bow down on a smooth stone for worship.<br/>(Leviticus 26:1)<br/><br/>52. Not to plant a tree as a sacred pole.<br/>(Deuteronomy 16:21)<br/><br/>53. Destroy idols, their accessories, and the places where they were worshipped.<br/>(Deuteronomy 12:2)<br/><br/>54. Do not derive benefit from idols or bring abominations home.<br/>(Deuteronomy 7:26)<br/><br/>55. Do not derive benefit from the gold and silver accessories of idols.<br/>(Deuteronomy 7:25)<br/><br/>56. Make no covenant with Canaanites or their gods.<br/>(Deuteronomy 7:2)<br/><br/>57. Show them no favor.<br/>(Deuteronomy 7:2)<br/><br/>58. Not to let them dwell in your land.<br/>(Exodus 23:33)<br/><br/>59. Not to imitate their customs and clothing.<br/>(Leviticus 20:23)<br/><br/>60. Not to be superstitious.<br/>(Leviticus 19:26)<br/><br/>61. To not self-induce a trance to foresee events or tolerate soothsayers.<br/>(Deuteronomy 18:10)<br/><br/>62. Not to engage in astrology.<br/>(Leviticus 19:26)<br/><br/>63. Not to say incantations or cast spells.<br/>(Deuteronomy 18:11)<br/><br/>64. Not to attempt contacting the dead.<br/>(Deuteronomy 18:11)<br/><br/>65. Not to consult with mediums.<br/>(Deuteronomy 18:11)<br/><br/>66. Not to converse with wizards.<br/>(Deuteronomy 18:11)<br/><br/>67. Not to do sorcery.<br/>(Deuteronomy 18:10)<br/><br/>68. To not cut your hair at the temples.<br/>(Leviticus 19:27)<br/><br/>69. To not shave your beard.<br/>(Leviticus 19:27)<br/><br/>70. Men must not wear women's clothes.<br/>(Deuteronomy 22:5)<br/><br/>71. Women must not wear men's clothes.<br/>(Deuteronomy 22:5)<br/><br/>72. Not to tattoo your skin.<br/>(Leviticus 19:28)<br/><br/>73. Not to tear your skin for idolatry or mourning.<br/>(Deuteronomy 14:1)<br/><br/>74. Not to shave your head in mourning.<br/>(Deuteronomy 14:1)<br/><br/>75. Wrongdoers must correct their ways and confess before God.<br/>(Numbers 5:7)<br/><br/>76. Recite the central prayers twice daily and always study Torah, wherever you are.<br/>(Deuteronomy 6:7)<br/><br/>77. Serve God with prayer.<br/>(Exodus 23:25)<br/><br/>78. The priests, who are the sons of Aaron, must bless the nation.<br/>(Numbers 6:23)<br/><br/>79. To wear phylacteries so the laws will be a pendant on your forehead.<br/>(Deuteronomy 6:8)<br/><br/>80. To bind phylacteries so that the laws will be a sign on the arm.<br/>(Deuteronomy 6:8)<br/><br/>81. To put up a Mezuzah so that the laws will be on the doorposts of your house.<br/>(Deuteronomy 6:9)<br/><br/>82. Each male must write a Torah scroll.<br/>(Deuteronomy 31:19)<br/><br/>83. The king must write a second Torah scroll.<br/>(Deuteronomy 17:18)<br/><br/>84. To have fringes on the corners of your garments.<br/>(Numbers 15:38)<br/><br/>85. Bless God after meals.<br/>(Deuteronomy 8:10)<br/><br/>86. To circumcise every male on the eighth day.<br/>(Leviticus 12:3)<br/><br/>87. To rest on the seventh day.<br/>(Exodus 23:12)<br/><br/>88. Not to do prohibited work on the seventh day.<br/>(Exodus 20:10)<br/><br/>89. The court must not inflict punishment on the Sabbath.<br/>(Exodus 35:3)<br/><br/>90. Stay near home and within city bounds on the Sabbath.<br/>(Exodus 16:29)<br/><br/>91. To remember and sanctify the Sabbath by blessing wine and lighting the conclusionary candle.<br/>(Exodus 20:8)<br/><br/>92. To perform self-denial and to rest from exertion on Yom Kippur.<br/>(Leviticus 23:32)<br/><br/>93. Not to do prohibited labor.<br/>(Leviticus 23:31)<br/><br/>94. To afflict yourself.<br/>(Leviticus 16:29)<br/><br/>95. Not to eat or drink.<br/>(Leviticus 23:29)<br/><br/>96. To rest on the first day of Passover.<br/>(Leviticus 23:8)<br/><br/>97. To do no work on the first day of Passover.<br/>(Leviticus 23:8)<br/><br/>98. To rest on the seventh day of Passover.<br/>(Leviticus 23:8)<br/><br/>99. To do no work on the seventh day of Passover.<br/>(Leviticus 23:8)<br/><br/>100. To rest on the first day of Pentecost.<br/>(Leviticus 23:21)<br/><br/>101. To do no work on the first day of Pentecost.<br/>(Leviticus 23:21)<br/><br/>102. To rest on the New Year (the first day of the seventh month).<br/>(Leviticus 23:24)<br/><br/>103. To do no work on Rosh Hashana, the New Year.<br/>(Leviticus 23:25)<br/><br/>104. To rest on the first day of Sukkot, the Feast of Booths.<br/>(Leviticus 23:35)<br/><br/>105. The first day of Sukkot, the Feast of Booths, is sacred. Do no work.<br/>(Leviticus 23:35)<br/><br/>106. To rest on the eighth day of the Feast of Booths, Shimini Atzeret.<br/>(Leviticus 23:36)<br/><br/>107. To do no work on the eighth day of the Feast of Booths.<br/>(Leviticus 23:36)<br/><br/>108. To not eat leaven past noon on the day of Passover.<br/>(Deuteronomy 16:3)<br/><br/>109. To destroy all leaven on Passover.<br/>(Exodus 12:15)<br/><br/>110. Not to eat leaven all seven days of Passover.<br/>(Exodus 13:3)<br/><br/>111. Not to eat anything containing leaven during Passover.<br/>(Exodus 12:20)<br/><br/>112. No leaven shall be found in your domain during Passover.<br/>(Exodus 13:7)<br/><br/>113. Not to find any leaven in your house all seven days of Passover.<br/>(Exodus 12:19)<br/><br/>114. To eat matzoh on the first night of Passover.<br/>(Exodus 12:18)<br/><br/>115. On that night to explain the meaning of Passover.<br/>(Exodus 13:8)<br/><br/>116. To hear the Shofar, the ram's horn trumpet, on the first day of Tishrei, the seventh month (Rosh Hashanah).<br/>(Numbers 29:1)<br/><br/>117. To dwell in a Sukka (booth) for the seven days of the festival.<br/>(Leviticus 23:42)<br/><br/>118. To take up a Lulav (palm branch) and an Etrog (citron).<br/>(Leviticus 23:40)<br/><br/>119. Families shall pay an annual half-shekel temple tax.<br/>(Exodus 30:13)<br/><br/>120. The courts must calculate the day on which the new month begins.<br/>(Exodus 12:2)<br/><br/>121. To afflict and cry out (blow the trumpets) before God in times of catastrophe.<br/>(Numbers 10:9)<br/><br/>122. A man should contractually marry a woman before living with her.<br/>(Deuteronomy 24:1)<br/><br/>123. Not to have relations with women who are not acquired thus. (An Israelite man or woman cannot be a prostitute.)<br/>(Deuteronomy 23:18)<br/><br/>124. Not to withhold food, clothing, and relations from your wife.<br/>(Exodus 21:10)<br/><br/>125. To have children from her.<br/>(Genesis 1:28)<br/><br/>126. A divorced wife must receive a written bill of divorce.<br/>(Deuteronomy 24:1)<br/><br/>127. A man cannot remarry his divorced wife.<br/>(Deuteronomy 24:4)<br/><br/>128. To marry a childless brother's widow.<br/>(Deuteronomy 25:5)<br/><br/>129. To free a childless widow from the obligation to marry her brother-in-law.<br/>(Deuteronomy 25:9)<br/><br/>130. The widow must not remarry until the ties with her brother-in-law are removed.<br/>(Deuteronomy 25:5)<br/><br/>131. The court must fine one who seduces a maiden.<br/>(Exodus 22:15-16)<br/><br/>132. The rapist must marry the maiden.<br/>(Deuteronomy 22:29)<br/><br/>133. He must not divorce her.<br/>(Deuteronomy 22:29)<br/><br/>134. The slanderer must remain married to his wife.<br/>(Deuteronomy 22:19)<br/><br/>135. He must not divorce her.<br/>(Deuteronomy 22:19)<br/><br/>136. To take procedures against a suspected adultress.<br/>(Numbers 5:30)<br/><br/>137. A jealous husband must take his wife to the priests and not put oil on her meal offering.<br/>(Numbers 5:15)<br/><br/>138. A suspected wife is to be accompanied by a meal offering that contains no frankincense.<br/>(Numbers 5:15)<br/><br/>139. Not to have relations with your mother.<br/>(Leviticus 18:7)<br/><br/>140. Not to have relations with your father's wife.<br/>(Leviticus 18:8)<br/><br/>141. Not to have relations with your sister.<br/>(Leviticus 18:9)<br/><br/>142. Not to have relations with your father's wife's daughter.<br/>(Leviticus 18:11)<br/><br/>143. Not to have relations with your son's daughter.<br/>(Leviticus 18:10)<br/><br/>144. Not to have relations with your daughter.<br/>(Leviticus 18:10)<br/><br/>145. Not to have relations with your daughter's daughter.<br/>(Leviticus 18:10)<br/><br/>146. Not to marry a woman and her daughter.<br/>(Leviticus 18:17)<br/><br/>147. Not to marry a woman and her son's daughter.<br/>(Leviticus 18:17)<br/><br/>148. Not to marry a woman and her daughter's daughter.<br/>(Leviticus 18:17)<br/><br/>149. Not to have relations with your father's sister.<br/>(Leviticus 18:12)<br/><br/>150. Not to have relations with your mother's sister.<br/>(Leviticus 18:13)<br/><br/>151. Not to have relations with your father's brother's wife (same father).<br/>(Leviticus 18:14)<br/><br/>152. Not to have relations with your son's wife.<br/>(Leviticus 18:15)<br/><br/>153. Not to have relations with your brother's wife (same father and/or mother).<br/>(Leviticus 18:16)<br/><br/>154. Not to have relations with your wife's sister.<br/>(Leviticus 18:18)<br/><br/>155. A man must not have relations with a beast.<br/>(Leviticus 18:23)<br/><br/>156. A woman must not have relations with a beast.<br/>(Leviticus 18:23)<br/><br/>157. Not to have homosexual relations.<br/>(Leviticus 18:22)<br/><br/>158. Not to have homosexual relations with your father.<br/>(Leviticus 18:7)<br/><br/>159. Not to have homosexual relations with your father's brother.<br/>(Leviticus 18:14)<br/><br/>160. Not to have relations with a married woman.<br/>(Leviticus 18:20)<br/><br/>161. Not to have relations with a menstrually unclean woman.<br/>(Leviticus 18:19)<br/><br/>162. Not to marry Gentiles.<br/>(Deuteronomy 7:3)<br/><br/>163. Not to let Moabite and Ammonite males marry into the Jewish people.<br/>(Deuteronomy 23:4)<br/><br/>164. Don't abhor or keep third-generation Edomite and Egyptian converts from marrying into the Jewish nation.<br/>(Deuteronomy 23:8-9)<br/><br/>165. Not to abhor or refrain from marrying a third-generation Edomite or Egyptian convert.<br/>(Deuteronomy 23:8-9)<br/><br/>166. A bastard child cannot become an Israelite.<br/>(Deuteronomy 23:3)<br/><br/>167. A eunuch or sexually mutilated man may not enter into the community.<br/>(Deuteronomy 23:2)<br/><br/>168. Not to castrate any male (including animals).<br/>(Leviticus 22:24)<br/><br/>169. The High Priest must not marry a widow.<br/>(Leviticus 21:14)<br/><br/>170. The High Priest must not have relations with a widow.<br/>(Leviticus 21:14)<br/><br/>171. The High Priest must marry a virgin.<br/>(Leviticus 21:13)<br/><br/>172. A priest must not marry a divorc&#233;e.<br/>(Leviticus 21:7)<br/><br/>173. A priest may not marry a prostitute.<br/>(Leviticus 21:7)<br/><br/>174. A priest must not marry a defiled woman.<br/>(Leviticus 21:7)<br/><br/>175. Not to have pleasurable physical contact with any forbidden woman.<br/>(Leviticus 18:6)<br/><br/>176. To examine animals that are permitted as food.<br/>(Leviticus 11:2)<br/><br/>177. To be careful to eat only clean birds.<br/>(Deuteronomy 14:11)<br/><br/>178. To distinguish which sea creatures are fit to eat.<br/>(Leviticus 11:9)<br/><br/>179. To distinguish which winged insects may be eaten.<br/>(Leviticus 11:21)<br/><br/>180. Not to eat unclean animals.<br/>(Leviticus 11:4)<br/><br/>181. Not to eat forbidden birds.<br/>(Leviticus 11:13)<br/><br/>182. Not to eat sea creatures without fins and scales.<br/>(Leviticus 11:11)<br/><br/>183. Not to eat unclean flying insects.<br/>(Deuteronomy 14:19)<br/><br/>184. Small swarming insects and unclean creatures that crawl on land are forbidden as food.<br/>(Leviticus 11:41)<br/><br/>185. Not to eat maggots.<br/>(Leviticus 11:44)<br/><br/>186. Not to eat snakes, scorpions, and the worms found on the ground (after leaving the fruit).<br/>(Leviticus 11:42)<br/><br/>187. Not to eat creatures that live in water, other than fish.<br/>(Leviticus 11:43)<br/><br/>188. Not to eat of an animal that died without ritual slaughter.<br/>(Deuteronomy 14:21)<br/><br/>189. Not to eat an ox that was condemned to be stoned.<br/>(Exodus 21:28)<br/><br/>190. Not to eat meat of a mortally wounded animal.<br/>(Exodus 22:30)<br/><br/>191. Not to eat a limb torn off from a living creature.<br/>(Deuteronomy 12:23)<br/><br/>192. Not to eat blood.<br/>(Leviticus 3:17)<br/><br/>193. Not to eat the fat of some clean animals.<br/>(Leviticus 3:17)<br/><br/>194. Not to eat the thigh muscle.<br/>(Genesis. 32:33)<br/><br/>195. Not to eat milk and meat cooked together.<br/>(Exodus 23:19)<br/><br/>196. Not to cook milk and meat together.<br/>(Exodus 34:26)<br/><br/>197. Not to eat bread from the new grain harvest.<br/>(Leviticus 23:14)<br/><br/>198. Roasted grains must be offered before they are eaten.<br/>(Leviticus 23:14)<br/><br/>199. Not to eat ripe grains from the new grain harvest before they are made as an offering.<br/>(Leviticus 23:14)<br/><br/>200. Not to eat the fruit of a tree for the first three years.<br/>(Leviticus 19:23)<br/><br/>201. At the risk of forfeiture, not to eat of diverse seeds planted in a vineyard.<br/>(Deuteronomy 22:9)<br/><br/>202. No one may eat produce for an offering, or untithed food.<br/>(Leviticus 22:15)<br/><br/>203. Not to eat or drink anything offered as sacrifice to an idol.<br/>(Deuteronomy 32:38)<br/><br/>204. To ritually slaughter an animal before eating it.<br/>(Deuteronomy 12:21)<br/><br/>205. Not to slaughter an animal and its offspring on the same day.<br/>(Leviticus 22:28)<br/><br/>206. The blood of a slaughtered wild animal must be covered with dirt.<br/>(Leviticus 17:13)<br/><br/>207. Not to take a nesting bird with her eggs and young.<br/>(Deuteronomy 22:6)<br/><br/>208. To release the mother bird if you did not take her.<br/>(Deuteronomy 22:7)<br/><br/>209. Not to swear falsely in God's Name.<br/>(Leviticus 19:12)<br/><br/>210. Not to take God's Name in vain.<br/>(Exodus 20:7)<br/><br/>211. To not lie or deal falsely, or deny that something of value was left in your possession.<br/>(Leviticus 19:11)<br/><br/>212. To not swear falsely.<br/>(Leviticus 19:11)<br/><br/>213. To swear in God's Name only to confirm the truth, when deemed necessary by the courts.<br/>(Deuteronomy 10:20)<br/><br/>214. To keep your promises and vows to God.<br/>(Deuteronomy 23:24)<br/><br/>215. Not to break oaths or vows.<br/>(Numbers 30:3)<br/><br/>216. To have vows and oaths annulled according to law.<br/>(Numbers 30:3)<br/><br/>217. The Nazirite must let his hair grow.<br/>(Numbers 6:5)<br/><br/>218. The Nazirite must not cut his hair.<br/>(Numbers 6:5)<br/><br/>219. The Nazirite must not drink wine, wine mixtures, or wine vinegar.<br/>(Numbers 6:3)<br/><br/>220. The Nazirite must not eat fresh grapes.<br/>(Numbers 6:3)<br/><br/>221. The Nazirite must not eat raisins or drink anything steeped in grapes.<br/>(Numbers 6:3)<br/><br/>222. The Nazirite must not eat grape seeds.<br/>(Numbers 6:4)<br/><br/>223. The Nazirite must not eat grape skins or grapes dried on the vine.<br/>(Numbers 6:4)<br/><br/>224. A Nazirite may not enter where there is a dead person.<br/>(Numbers 6:6)<br/><br/>225. A Nazirite must not come in contact with the dead.<br/>(Numbers 6:7)<br/><br/>226. A Nazirite must shave his head after the completion of his vowed service.<br/>(Numbers 6:18)<br/><br/>227. To estimate the value of persons for whom offerings are paid.<br/>(Leviticus 27:2)<br/><br/>228. For priests to estimate the value of animal offerings.<br/>(Leviticus 27:12-13)<br/><br/>229. For priests to estimate the value of consecrated houses.<br/>(Leviticus 27:14)<br/><br/>230. To determine the redemption value of a vowed field.<br/>(Leviticus 27:16)<br/><br/>231. Fulfill the procedures of vowed possessions.<br/>(Leviticus 27:28)<br/><br/>232. Not to sell vowed possessions.<br/>(Leviticus 27:28)<br/><br/>233. Not to redeem any vowed possessions.<br/>(Leviticus 27:28)<br/><br/>234. Not to plant diverse seeds together.<br/>(Leviticus 19:19)<br/><br/>235. Not to plant grains or greens in a vineyard.<br/>(Deuteronomy 22:9)<br/><br/>236. Not to crossbreed animals.<br/>(Leviticus 19:19)<br/><br/>237. Not to work different animals together.<br/>(Deuteronomy 22:10)<br/><br/>238. Not to wear cloth woven of both wool and linen.<br/>(Deuteronomy 22:11)<br/><br/>239. No to reap your harvest to the edge of the field, but leave a corner uncut for the poor.<br/>(Leviticus 19:10)<br/><br/>240. Not to reap that corner but to leave fruit and grain for the poor.<br/>(Leviticus 19:9)<br/><br/>241. To leave gleanings.<br/>(Leviticus 19:9)<br/><br/>242. Not to gather the gleanings.<br/>(Leviticus 19:9)<br/><br/>243. Not to pick your vineyard bare.<br/>(Leviticus 19:10)<br/><br/>244. Not to gather the gleanings of a vineyard.<br/>(Leviticus 19:10)<br/><br/>245. To not gather the fallen fruit of the vineyard.<br/>(Leviticus 19:10)<br/><br/>246. Not to pick the unformed clusters of grapes.<br/>(Leviticus 19:10)<br/><br/>247. To leave forgotten sheaves in the field or leave a sheaf for the poor.<br/>(Deuteronomy 24:19)<br/><br/>248. Not to retrieve them but leave them for the widow, alien, and orphan.<br/>(Deuteronomy 24:19)<br/><br/>249. To separate the tithe for the poor.<br/>(Deuteronomy 14:28)<br/><br/>250. To give charity.<br/>(Deuteronomy 15:11)<br/><br/>251. Not to withhold charity from those in need.<br/>(Deuteronomy 15:7)<br/><br/>252. To set aside a tithed portion of the offerings for the priesthood).<br/>(Deuteronomy 18:4)<br/><br/>253. The Levite must be tithed on his tithe.<br/>(Numbers 18:26)<br/><br/>254. To not delay your agricultural offerings.<br/>(Exodus 22:28)<br/><br/>255. A layperson may not eat from a sacred donation.<br/>(Leviticus 22:10)<br/><br/>256. A servant of a priest may not eat from a sacred donation.<br/>(Leviticus 22:10)<br/><br/>257. An uncircumcised priest may not eat from a sacred donation.<br/>(Exodus 12:48)<br/><br/>258. A priest in a state of impurity may not eat from a sacred donation.<br/>(Leviticus 22:4)<br/><br/>259. A priest's daughter married to a layman may not eat from a sacred donation.<br/>(Leviticus 22:12)<br/><br/>260. Levites are to receive earmarked tithes each planting year.<br/>(Numbers 18:24)<br/><br/>261. To set aside the Second Tithe.<br/>(Deuteronomy 14:22)<br/><br/>262. Not to spend its redemption value on anything other than food, drink, or ointment.<br/>(Deuteronomy 26:14)<br/><br/>263. Not to eat from the Tithe while unclean.<br/>(Deuteronomy 26:14)<br/><br/>264. A mourner must not eat the Second Tithe on the first day of mourning.<br/>(Deuteronomy 26:14)<br/><br/>265. Not to eat grains from the Second Tithe outside Jerusalem.<br/>(Deuteronomy 12:17)<br/><br/>266. Not to consume Second-Tithe wine products outside Jerusalem.<br/>(Deuteronomy 12:17)<br/><br/>267. Not to consume Second-Tithe oil outside Jerusalem.<br/>(Deuteronomy 12:17)<br/><br/>268. The fourth-year crops must be totally for holy purposes.<br/>(Leviticus 19:24)<br/><br/>269. To read the confession of tithes every fourth and seventh years.<br/>(Deuteronomy 26:13)<br/><br/>270. To bring the first fruits into the temple.<br/>(Exodus 23:19)<br/><br/>271. The priests must not eat the first fruits outside Jerusalem.<br/>(Deuteronomy 12:17)<br/><br/>272. To read the Torah portion pertaining to their presentation.<br/>(Deuteronomy 26:5)<br/><br/>273. When baking, set aside some dough for the priesthood.<br/>(Numbers 15:20)<br/><br/>274. To give the shoulder, two cheeks, and the stomach of a sacrificed animal to the priesthood.<br/>(Deuteronomy 18:3)<br/><br/>275. To give the first shearing of sheep to the priesthood.<br/>(Deuteronomy 18:4)<br/><br/>276. A father must redeem the firstborn son and give the money to the priesthood.<br/>(Numbers 18:15)<br/><br/>277. To redeem each firstborn donkey with a lamb given to the priesthood.<br/>(Exodus 13:13)<br/><br/>278. To break the neck of the firstborn donkey if the owner doesn't redeem it.<br/>(Exodus 13:13)<br/><br/>279. To rest the land during the seventh year and do no work, to allow for the rejuvenation of the earth.<br/>(Exodus 34:21)<br/><br/>280. Not to work the land during the seventh year.<br/>(Leviticus 25:4)<br/><br/>281. Not to work with trees (to produce fruit) during the seventh year.<br/>(Leviticus 25:4)<br/><br/>282. Not to harvest wild crops in the seventh year.<br/>(Leviticus 25:5)<br/><br/>283. Not to systematically pick fruit in the seventh year.<br/>(Leviticus 25:5)<br/><br/>284. To leave untouched all produce that grew in the seventh year.<br/>(Exodus 23:11)<br/><br/>285. To relax all loans in the seventh year.<br/>(Deuteronomy 15:3)<br/><br/>286. Not to pressure the debtor in the seventh year.<br/>(Deuteronomy 15:2)<br/><br/>287. Not to refrain from lending in the year of remission for fear of monetary loss.<br/>(Deuteronomy 15:9)<br/><br/>288. The court must count and determine the year of the Jubilee.<br/>(Leviticus 25:8)<br/><br/>289. The court must sanctify the fiftieth year.<br/>(Leviticus 25:10)<br/><br/>290. To sound the ram's horn on Yom Kippur of the Jubilee year, to free the slaves.<br/>(Leviticus 25:9)<br/><br/>291. Not to work the land during the fiftieth year.<br/>(Leviticus 25:11)<br/><br/>292. Not to reap or harvest in the fiftieth year.<br/>(Leviticus 25:11)<br/><br/>293. Not to pick grapes in the usual way and to eat only directly from the vine in the fiftieth year.<br/>(Leviticus 25:11)<br/><br/>294. Follow the laws of sold and family properties.<br/>(Leviticus 25:24)<br/><br/>295. Not to sell land (in Israel) in perpetuity.<br/>(Leviticus 25:23)<br/><br/>296. To follow the laws pertaining to houses in walled cities.<br/>(Leviticus 25:29)<br/><br/>297. The Levites have no inheritance or allotment but will live in cities.<br/>(Deuteronomy 18:2)<br/><br/>298. Levites will not partake in the spoils of war.<br/>(Deuteronomy 18:1)<br/><br/>299. Levites are to be given cities and the surrounding fields.<br/>(Numbers 35:2)<br/><br/>300. Not to sell the fields of the Levites, which will remain their possession before and after the Jubilee year.<br/>(Leviticus 25:34)<br/><br/>301. To build a Sanctuary.<br/>(Exodus 25:8)<br/><br/>302. Not to build the altar with stones hewn by metal.<br/>(Exodus 20:22)<br/><br/>303. Not to climb steps to the altar.<br/>(Exodus 20:23)<br/><br/>304. To show reverence for the temple.<br/>(Leviticus 19:30)<br/><br/>305. Levites shall guard the temple area.<br/>(Numbers 18:3)<br/><br/>306. Not to leave the temple unguarded.<br/>(Numbers 18:5)<br/><br/>307. To blend the anointing oil.<br/>(Exodus 30:31)<br/><br/>308. Not to duplicate the formula for the anointing oil.<br/>(Exodus 30:32)<br/><br/>309. Not to anoint anyone who isn't a priest or a king with it.<br/>(Exodus 30:32)<br/><br/>310. Not to replicate the incense formula.<br/>(Exodus 30:37)<br/><br/>311. Not to burn anything on the altar besides incense.<br/>(Exodus 30:9)<br/><br/>312. The Levites carry the ark on their shoulders.<br/>(Numbers 7:9)<br/><br/>313. Not to remove the poles from the ark.<br/>(Exodus 25:15)<br/><br/>314. The Levites must work in the temple.<br/>(Numbers 18:23)<br/><br/>315. There are specified duties for the Levites.<br/>(Numbers 18:3)<br/><br/>316. The priest will be dedicated and must be treated as sacred.<br/>(Leviticus 21:8)<br/><br/>317. The priestly work shifts must be equal during holidays.<br/>(Deuteronomy 18:6-8)<br/><br/>318. The priests must wear their priestly garments during the service.<br/>(Exodus 28:2)<br/><br/>319. The priestly garments must not be torn.<br/>(Exodus 28:32)<br/><br/>320. The breastplate must not be loosened from the ephod.<br/>(Exodus 28:28)<br/><br/>321. A priest must not enter the temple when drunk.<br/>(Leviticus 10:9)<br/><br/>322. A priest must not enter the temple with unkempt hair.<br/>(Leviticus 10:6)<br/><br/>323. A priest must not enter the temple with torn clothes.<br/>(Leviticus 10:6)<br/><br/>324. A priest must not enter the sanctuary for no reason.<br/>(Leviticus 16:2)<br/><br/>325. A priest must not leave the temple during the service.<br/>(Leviticus 10:7)<br/><br/>326. To send the impure from the temple.<br/>(Numbers 5:2)<br/><br/>327. Impure persons must not enter the temple.<br/>(Numbers 5:3)<br/><br/>328. Unclean persons must not enter the Temple Mount area.<br/>(Deuteronomy 23:11)<br/><br/>329. Unclean priests cannot do temple service.<br/>(Leviticus 22:2)<br/><br/>330. An impure priest, after immersion, must not return to service until after sundown.<br/>(Leviticus 21:6)<br/><br/>331. A priest must wash his hands and feet before ministering.<br/>(Exodus 30:19)<br/><br/>332. A blemished priest must not enter the temple.<br/>(Leviticus 21:23)<br/><br/>333. A blemished priest must not serve.<br/>(Leviticus 21:17)<br/><br/>334. A temporarily blemished priest must not serve.<br/>(Leviticus 21:18)<br/><br/>335. A non-priest must not serve.<br/>(Numbers 18:4)<br/><br/>336. Blemished animals are unacceptable as offerings.<br/>(Leviticus 22:21)<br/><br/>337. Not to dedicate a blemished animal for the altar.<br/>(Leviticus 22:20)<br/><br/>338. An animal with a discharge must not be slaughtered.<br/>(Leviticus 22:22)<br/><br/>339. Not to sprinkle the blood of a disabled animal.<br/>(Leviticus 22:24)<br/><br/>340. Not to burn the fat of a defective animal.<br/>(Leviticus 22:22)<br/><br/>341. Not to offer an animal with a temporary blemish.<br/>(Deuteronomy 17:1)<br/><br/>342. Not to accept defective offerings even from foreigners.<br/>(Leviticus 22:25)<br/><br/>343. Not to inflict wounds or commit damage upon dedicated animals.<br/>(Leviticus 22:21)<br/><br/>344. To redeem disqualified dedicated animals.<br/>(Deuteronomy 12:15)<br/><br/>345. To offer animals that are at least eight days old.<br/>(Leviticus 22:27)<br/><br/>346. Not to offer animals purchased with the fees of a harlot or an animal exchanged for a dog.<br/>(Deuteronomy 23:19)<br/><br/>347. Not to burn yeast or honey on the altar.<br/>(Leviticus 2:11)<br/><br/>348. To salt all sacrifices.<br/>(Leviticus 2:13)<br/><br/>349. Not to omit the salt from grain offerings.<br/>(Leviticus 2:13)<br/><br/>350. To follow the burnt offering procedures as written in the Torah.<br/>(Leviticus 1:3)<br/><br/>351. Not to eat the meat of a burnt offering.<br/>(Deuteronomy 12:17)<br/><br/>352. To carry out the procedure for a sin offering.<br/>(Leviticus 6:18)<br/><br/>353. Not to eat the meat of a sin offering.<br/>(Leviticus 6:23)<br/><br/>354. The priest shall not cut off the head of a bird (sin) offering.<br/>(Leviticus 5:8)<br/><br/>355. To follow the procedures of the guilt offering.<br/>(Leviticus 7:1)<br/><br/>356. The priests must eat the sacrificed meat in the temple.<br/>(Exodus 29:33)<br/><br/>357. Priests must not eat the meat outside the temple.<br/>(Deuteronomy 12:17)<br/><br/>358. A non-priest must not eat the sacrificial meat.<br/>(Exodus 29:33)<br/><br/>359. To follow the procedure of the peace offering.<br/>(Leviticus 7:11)<br/><br/>360. Not to eat the meat of minor sacrifices before sprinkling the blood.<br/>(Deuteronomy 12:17)<br/><br/>361. To bring meal offerings in the prescribed manner.<br/>(Leviticus 2:1)<br/><br/>362. Not to put oil on the meal offerings of wrongdoers.<br/>(Leviticus 5:11)<br/><br/>363. Not to put frankincense on the meal offerings of wrongdoers.<br/>(Leviticus 5:11)<br/><br/>364. Not to eat the cereal offering of the high priest.<br/>(Leviticus 6:16)<br/><br/>365. Not to bake meal offerings with leaven.<br/>(Leviticus 6:10)<br/><br/>366. The priests must eat the remains of the meal offerings.<br/>(Leviticus 6:9)<br/><br/>367. To bring all freewill offerings to the temple and rejoice.<br/>(Deuteronomy 12:5-6)<br/><br/>368. Not to withhold payment which fulfills a vow to God.<br/>(Deuteronomy 23:22)<br/><br/>369. To offer all sacrifices in the temple.<br/>(Deuteronomy 12:11)<br/><br/>370. To bring all votive offerings to the temple.<br/>(Deuteronomy 12:26)<br/><br/>371. Not to slaughter sacrifices outside the courtyard of the temple.<br/>(Leviticus 17:4)<br/><br/>372. Not to offer any sacrifices outside the courtyard of the temple.<br/>(Deuteronomy 12:13)<br/><br/>373. To offer two lambs every day.<br/>(Numbers 28:3)<br/><br/>374. To light a fire on the altar every day.<br/>(Leviticus 6:5)<br/><br/>375. Not to extinguish this fire.<br/>(Leviticus 6:5)<br/><br/>376. To remove the ashes from the altar every day.<br/>(Leviticus 6:3)<br/><br/>377. To burn incense every day.<br/>(Exodus 30:7)<br/><br/>378. To keep the light burning every day (in the candelabra).<br/>(Exodus 27:21)<br/><br/>379. The High Priest must bring a meal offering every day.<br/>(Leviticus 6:13)<br/><br/>380. To bring two additional lambs as burnt offerings on the Sabbath.<br/>(Numbers 28:9)<br/><br/>381. To make and present the showbread.<br/>(Exodus 25:30)<br/><br/>382. To bring additional offerings of the new moon. <br/>(Numbers 28:11)<br/><br/>383. To bring additional offerings on Passover.<br/>(Numbers 28:19)<br/><br/>384. To bring a wave offering from the meal of the new wheat.<br/>(Leviticus 23:10)<br/><br/>385. To count the seven weeks from the new wheat offering to Pentecost (Shavuot).<br/>(Leviticus 23:15)<br/><br/>386. To bring an additional offering on Shavuot (Pentecost).<br/>(Numbers 28:26)<br/><br/>387. To offer two loaves, which must accompany the above sacrifices.<br/>(Leviticus 23:18)<br/><br/>388. To bring additional offerings on Rosh Hashana, the New Year.<br/>(Numbers 29:2)<br/><br/>389. To bring additional offerings on Yom Kippur, the Day of Atonement.<br/>(Numbers 29:8)<br/><br/>390. To bring additional offerings on Sukkot, the Feast of Booths.<br/>(Numbers 29:13)<br/><br/>391. To bring additional offerings on Shmini Atzeret, the eighth day of the Feast of Booths.<br/>(Numbers 29:35)<br/><br/>392. Not to eat any unfit sacrifices.<br/>(Deuteronomy 14:3)<br/><br/>393. Not to eat sacrifices offered with improper intentions.<br/>(Leviticus 7:18)<br/><br/>394. To eat the Thanksgiving sacrifice on the day it was sacrificed.<br/>(Leviticus 22:30)<br/><br/>395. Not to eat leftover sacrifices.<br/>(Leviticus 19:8)<br/><br/>396. Not to eat from sacrifices that have become impure.<br/>(Leviticus 7:19)<br/><br/>397. An unclean person cannot eat from sacrifices.<br/>(Leviticus 7:20)<br/><br/>398. Sacrificial remains must be burned on the third day.<br/>(Leviticus 7:17)<br/><br/>399. Impure sacrifices must be burnt.<br/>(Leviticus 7:19)<br/><br/>400. To follow the priestly rituals of Yom Kippur.<br/>(Leviticus 16:3)<br/><br/>401. One who uses sacred property for personal use incurs a special penalty and sacrifice.<br/>(Leviticus 5:16)<br/><br/>402. Not to work consecrated animals.<br/>(Deuteronomy 15:19)<br/><br/>403. Not to shear the fleece of consecrated animals.<br/>(Deuteronomy 15:19)<br/><br/>404. To slaughter the Paschal sacrifice at the specified time.<br/>(Exodus 12:6)<br/><br/>405. Not to slaughter the Paschal sacrifice while possessing leaven.<br/>(Exodus 23:18)<br/><br/>406. Not to leave the fat overnight.<br/>(Exodus 23:18)<br/><br/>407. To slaughter the second Paschal Lamb.<br/>(Numbers 9:11)<br/><br/>408. The Paschal Lamb is to be eaten with matzoh on the night it was slaughtered.<br/>(Exodus 12:8)<br/><br/>409. To eat the second Paschal Lamb on the night of the fifteenth of Iyar.<br/>(Numbers 9:11)<br/><br/>410. To roast the Paschal Lamb and not eat it raw or boiled.<br/>(Exodus 12:9)<br/><br/>411. No part of the Paschal Lamb may be removed from the house.<br/>(Exodus 12:46)<br/><br/>412. An apostate must not eat from the Paschal Lamb.<br/>(Exodus 12:43)<br/><br/>413. A hired servant or traveler must not eat from the Paschal Lamb.<br/>(Exodus 12:45)<br/><br/>414. An uncircumcised male must not eat from the Paschal Lamb.<br/>(Exodus 12:48)<br/><br/>415. No bone of the Paschal Lamb shall be broken.<br/>(Exodus 12:46)<br/><br/>416. Not to break any bones from the second Paschal offering.<br/>(Numbers 9:12)<br/><br/>417. Not to leave any of the Lamb over until morning.<br/>(Exodus 12:10)<br/><br/>418. Not to leave the second Paschal meat until morning.<br/>(Numbers 9:12)<br/><br/>419. Eat the Passover meat entirely on the night it is offered.<br/>(Deuteronomy 16:4)<br/><br/>420. To be seen at the temple three times a year&#8212;Passover, Shavuot, the Festival of Weeks; and Sukkot, the Festival of Booths.<br/>(Deuteronomy 16:16)<br/><br/>421. To celebrate and bring a peace offering in pilgrimage on these three festivals.<br/>(Exodus 23:14)<br/><br/>422. To rejoice on these three festivals.<br/>(Deuteronomy 16:14)<br/><br/>423. Not to appear at the temple for annual festivals without offerings.<br/>(Deuteronomy 16:16)<br/><br/>424. Not to refrain from rejoicing with and giving gifts to the Levites.<br/>(Deuteronomy 12:19)<br/><br/>425. Every seven years, on Sukkot, the Feast of Booths, to assemble all the people and read the law.<br/>(Deuteronomy 31:12)<br/><br/>426. To consecrate to God the firstborn of man and beast.<br/>(Exodus 13:12)<br/><br/>427. The priests must not eat of the unblemished firstborn animals outside Jerusalem.<br/>(Deuteronomy 12:17)<br/><br/>428. The firstborn of clean animals cannot be redeemed.<br/>(Numbers 18:17)<br/><br/>429. Separate the tithe from the animals.<br/>(Leviticus 27:32)<br/><br/>430. Do not exchange a good animal for a bad for the tithe.<br/>(Leviticus 27:33)<br/><br/>431. Every person must bring a sin offering for his transgression.<br/>(Leviticus 4:27)<br/><br/>432. An unintentional sin requires a sin offering when discovered.<br/>(Leviticus 5:17-18)<br/><br/>433. A guilt offering is required when one deals deceitfully.<br/>(Leviticus 5:25)<br/><br/>434. For certain sins a wealthy person will offer an animal and the poor will offer doves, pigeons, or meal as prescribed.<br/>(Leviticus 5:7-11)<br/><br/>435. The court must bring an offering when it rules in error or when the community sins.<br/>(Leviticus 4:13)<br/><br/>436. A woman with an irregular discharge must bring an offering after she goes to the ritual bath.<br/>(Leviticus 15:28-29)<br/><br/>437. A woman who gives birth must bring an offering after she immerses in the ritual bath.<br/>(Leviticus 12:6)<br/><br/>438. A man who is cured of a chronic discharge must bring an offering after immersing in the ritual bath.<br/>(Leviticus 15:13-14)<br/><br/>439. One who is cured of a skin disease must bring an offering after immersing in the ritual bath.<br/>(Leviticus 14:10)<br/><br/>440. Not to substitute another beast for one scheduled for sacrifice.<br/>(Leviticus 27:10)<br/><br/>441. The new animal, along with the substituted one, retains consecration.<br/>(Leviticus 27:10)<br/><br/>442. Not to change consecrated animals (from one type of offering to another).<br/>(Leviticus 27:26)<br/><br/>443. Everyone under a roof with a corpse is unclean.<br/>(Numbers 19:14)<br/><br/>444. Carry out the procedure of the Red Heifer.<br/>(Numbers 19:9)<br/><br/>445. A clean person sprinkles water on those who are unclean.<br/>(Numbers 19:21)<br/><br/>446. The priest's role is governed by the law when dealing with matters of skin disease.<br/>(Leviticus 13:12)<br/><br/>447. The afflicted must not remove the signs of impurity.<br/>(Deuteronomy 24:8)<br/><br/>448. The afflicted must not shave signs of impurity in his hair.<br/>(Leviticus 13:33)<br/><br/>449. A skin-diseased person will tear his clothes, grow his hair long, and cry out, "unclean, unclean."<br/>(Leviticus 13:45)<br/><br/>450. Carry out the procedure for purifying the person with skin disease.<br/>(Leviticus 14:2)<br/><br/>451. The diseased person must shave off all his hair prior to purification.<br/>(Leviticus 14:9)<br/><br/>452. To discover when a leprous infection is on a garment.<br/>(Leviticus 13:47)<br/><br/>453. To discover when a house is infected by a skin disease.<br/>(Leviticus 14:35)<br/><br/>454. To observe the laws of menstrual impurity.<br/>(Leviticus 15:19)<br/><br/>455. To observe the laws of impurity caused by childbirth.<br/>(Leviticus 12:2)<br/><br/>456. To observe the laws of impurity caused by an irregular discharge.<br/>(Leviticus 15:25)<br/><br/>457. To observe the laws of impurity caused by a man's chronic discharge.<br/>(Leviticus 15:3)<br/><br/>458. To observe the laws of impurity caused by contact with a dead animal.<br/>(Leviticus 11:39)<br/><br/>459. To observe the laws of impurity caused by contact with the eight (named) swarming creatures.<br/>(Leviticus 11:29)<br/><br/>460. Observe the laws of impurity of a seminal emission.<br/>(Leviticus 15:16)<br/><br/>461. Observe the laws of impurity concerning liquid and solid foods.<br/>(Leviticus 11:34)<br/><br/>462. Every impure person must immerse himself in a ritual bath to become pure.<br/>(Leviticus 15:16)<br/><br/>463. The court must judge the damages incurred by a goring ox.<br/>(Exodus 21:28)<br/><br/>464. The court must judge the damages incurred by an animal eating in another's field.<br/>(Exodus 22:4)<br/><br/>465. The court must judge the damages incurred by an open pit.<br/>(Exodus 21:33)<br/><br/>466. The court must judge the damages incurred by fire.<br/>(Exodus 22:5)<br/><br/>467. Not to steal money stealthily.<br/>(Leviticus 19:11)<br/><br/>468. The court must implement punitive measures against the thief.<br/>(Exodus 21:37)<br/><br/>469. Each individual must ensure that his scales and weights are accurate.<br/>(Leviticus 19:36)<br/><br/>470. Not to commit injustice with scales and weights.<br/>(Leviticus 19:35)<br/><br/>471. Not to possess inaccurate weights and scales even if they are not for use.<br/>(Deuteronomy 25:13)<br/><br/>472. Not to move a boundary marker to steal someone's property.<br/>(Deuteronomy 19:14)<br/><br/>473. Not to kidnap.<br/>(Exodus 20:13)<br/><br/>474. Not to rob openly.<br/>(Leviticus 19:13)<br/><br/>475. Not to withhold wages or fail to repay a debt.<br/>(Leviticus 19:13)<br/><br/>476. Not to covet and scheme to acquire another's possession.<br/>(Exodus 20:14)<br/><br/>477. Not to desire another's possession.<br/>(Deuteronomy 5:18)<br/><br/>478. Return the robbed object or its value.<br/>(Leviticus 5:23)<br/><br/>479. Not to ignore a lost object.<br/>(Deuteronomy 22:3)<br/><br/>480. Return the lost object.<br/>(Deuteronomy 22:1)<br/><br/>481. The court must implement laws against one who assaults another or damages another's property.<br/>(Exodus 21:18)<br/><br/>482. Not to murder.<br/>(Exodus 20:13)<br/><br/>483. Not to accept money to save a convicted murderer.<br/>(Numbers 35:31)<br/><br/>484. The court must send the accidental murderer to a city of refuge.<br/>(Numbers 35:25)<br/><br/>485. Not to accept monetary restitution instead of sending the accidental murderer to, or releasing him from, a city of refuge.<br/>(Numbers 35:32)<br/><br/>486. Not to kill the murderer before he stands trial.<br/>(Numbers 35:12)<br/><br/>487. To save someone being pursued even by taking the life of the pursuer.<br/>(Deuteronomy 25:12)<br/><br/>488. Not to pity the pursuer.<br/>(Numbers 35:12)<br/><br/>489. Not to stand idly by if someone's life is in danger.<br/>(Leviticus 19:16)<br/><br/>490. Designate refuge cities and prepare routes of access.<br/>(Deuteronomy 19:3)<br/><br/>491. When a murdered person is found in open country and the murder is unsolved, break the neck of a calf by the river valley.<br/>(Deuteronomy 21:4)<br/><br/>492. Not to work that river valley or plant there.<br/>(Deuteronomy 21:4)<br/><br/>493. Not to allow pitfalls and obstacles to remain on your property.<br/>(Deuteronomy 22:8)<br/><br/>494. Make a guardrail around flat roofs.<br/>(Deuteronomy 22:8)<br/><br/>495. Not to put a stumbling block before the blind.<br/>(Leviticus 19:14)<br/><br/>496. Help another remove the load from a beast that can no longer carry it.<br/>(Exodus 23:5)<br/><br/>497. Help others load their beasts.<br/>(Deuteronomy 22:4)<br/><br/>498. Not to leave fallen beasts distraught with their burdens but help to load or unload.<br/>(Deuteronomy 22:4)<br/><br/>499. Buy and sell according to Torah law.<br/>(Leviticus 25:14)<br/><br/>500. Not to overcharge or underpay for an article.<br/>(Leviticus 25:14)<br/><br/>501. Not to insult or harm anybody with words.<br/>(Leviticus 25:17)<br/><br/>502. Not to cheat a sincere convert monetarily.<br/>(Exodus 22:20)<br/><br/>503. Not to insult or harm a sincere convert with words.<br/>(Exodus 22:20)<br/><br/>504. A Hebrew slave shall be released after six years.<br/>(Exodus 21:2)<br/><br/>505. Not to sell him as a slave is sold.<br/>(Leviticus 25:42)<br/><br/>506. Not to work the slave oppressively.<br/>(Leviticus 25:43)<br/><br/>507. Not to allow a foreigner to work the slave oppressively.<br/>(Leviticus 25:53)<br/><br/>508. Not to have the kinsman slave do menial slave labor.<br/>(Leviticus 25:39)<br/><br/>509. Give the slave gifts when he goes free.<br/>(Deuteronomy 15:14)<br/><br/>510. Not to send the freed slave away empty-handed.<br/>(Deuteronomy 15:13)<br/><br/>511. Redeem Jewish maidservants.<br/>(Exodus 21:8)<br/><br/>512. Betroth the Jewish maidservant.<br/>(Exodus 21:8)<br/><br/>513. The master cannot resell a female servant.<br/>(Exodus 21:8)<br/><br/>514. Canaanite slaves must work forever unless injured in one of their limbs.<br/>(Leviticus 25:46)<br/><br/>515. Not to extradite a slave who fled to (Biblical) Israel.<br/>(Deuteronomy 23:16)<br/><br/>516. Not to wrong a slave who has come to Israel for refuge.<br/>(Deuteronomy 23:17)<br/><br/>517. The courts must carry out the laws of a hired worker and hired guard.<br/>(Exodus 22:9)<br/><br/>518. Pay wages on the day they were earned.<br/>(Deuteronomy 24:15)<br/><br/>519. Do not delay payment of wages past the agreed time.<br/>(Leviticus 19:13)<br/><br/>520. The hired worker may eat from the unharvested crops where he works.<br/>(Deuteronomy 23:25)<br/><br/>521. The worker must not eat while on hired time.<br/>(Deuteronomy 23:26)<br/><br/>522. The worker must not take more than he can eat.<br/>(Deuteronomy 23:25)<br/><br/>523. Not to muzzle an ox while plowing.<br/>(Deuteronomy 25:4)<br/><br/>524. The courts must carry out the laws of a borrower.<br/>(Exodus 22:13)<br/><br/>525. The courts must carry out the laws of the unpaid guard.<br/>(Exodus 22:6)<br/><br/>526. Lend without interest to the poor.<br/>(Exodus 22:24)<br/><br/>527. Not to press the poor for repayment.<br/>(Exodus 22:24)<br/><br/>528. Press the idolater for payment.<br/>(Deuteronomy 15:3)<br/><br/>529. The creditor must not forcibly take collateral.<br/>(Deuteronomy 24:10)<br/><br/>530. Return the collateral to the debtor when it is needed.<br/>(Deuteronomy 24:13)<br/><br/>531. Not to delay returning the collateral when it is needed.<br/>(Deuteronomy 24:12)<br/><br/>532. Not to demand collateral from a widow.<br/>(Deuteronomy 24:17)<br/><br/>533. Not to demand as collateral utensils needed for preparing food.<br/>(Deuteronomy 24:6)<br/><br/>534. Not to lend with interest within the community.<br/>(Leviticus 25:37)<br/><br/>535. Not to borrow with interest.<br/>(Deuteronomy 23:20)<br/><br/>536. Not to play any role in an interest loan.<br/>(Exodus 22:24)<br/><br/>537. Lend to, and borrow from, idolaters at interest.<br/>(Deuteronomy 23:21)<br/><br/>538. The court must carry out the laws of the plaintiff, admitter or denier.<br/>(Exodus 22:8)<br/><br/>539. Carry out the laws of the order of inheritance.<br/>(Numbers 27:8)<br/><br/>540. Appoint judges.<br/>(Deuteronomy 16:18)<br/><br/>541. Not to appoint judges who are not familiar with judicial procedure.<br/>(Deuteronomy 1:17)<br/><br/>542. Decide by majority in case of disagreement.<br/>(Exodus 23:2)<br/><br/>543. The court must not execute through a majority of one, but at least a majority of two is required.<br/>(Exodus 23:2)<br/><br/>544. A judge who presents a case for acquittal must not present an argument for conviction in capital cases.<br/>(Exodus 23:2)<br/><br/>545. The court must carry out the death penalty of stoning.<br/>(Deuteronomy 22:24)<br/><br/>546. The court must carry out the death penalty of burning.<br/>(Leviticus 20:14)<br/><br/>547. The court must carry out the death penalty of the sword.<br/>(Exodus 21:20)<br/><br/>548. The court must carry out the death penalty of strangulation.<br/>(Leviticus 20:10)<br/><br/>549. The court must hang those stoned for blasphemy or idolatry.<br/>(Deuteronomy 21:22)<br/><br/>550. Bury the executed on the day they were killed.<br/>(Deuteronomy 21:23)<br/><br/>551. Not to delay the burial overnight.<br/>(Deuteronomy 21:23)<br/><br/>552. The court must not let the sorcerer live.<br/>(Exodus 22:17)<br/><br/>553. The court must flog the wrongdoer.<br/>(Deuteronomy 25:2)<br/><br/>554. The court must not exceed the prescribed number of lashes.<br/>(Deuteronomy 25:3)<br/><br/>555. The court must not kill anybody on circumstantial evidence.<br/>(Exodus 23:7)<br/><br/>556. The court must not punish anybody who was forced to commit a crime.<br/>(Deuteronomy 22:26)<br/><br/>557. The judge must not pity the murderer or assaulter at the trial.<br/>(Deuteronomy 19:13)<br/><br/>558. The judge must not have mercy on the poor man at the trial.<br/>(Leviticus 19:15)<br/><br/>559. The judge must not respect the great man at the trial.<br/>(Leviticus 19:15)<br/><br/>560. The judge must not decide unjustly the case of the habitual transgressor.<br/>(Exodus 23:6)<br/><br/>561. The judge must not pervert justice.<br/>(Leviticus 19:15)<br/><br/>562. The judge must not pervert a case involving a convert or an orphan.<br/>(Deuteronomy 24:17)<br/><br/>563. Judge righteously.<br/>(Leviticus 19:15)<br/><br/>564. The judge must not fear a violent man in judgment.<br/>(Deuteronomy 1:17)<br/><br/>565. Judges must not accept bribes.<br/>(Exodus 23:8)<br/><br/>566. Judges must not accept testimony unless both parties are present.<br/>(Exodus 23:1)<br/><br/>567. Not to curse judges.<br/>(Exodus 22:27)<br/><br/>568. Not to curse the head of state.<br/>(Exodus 22:27)<br/><br/>569. Not to curse a deaf person.<br/>(Leviticus 19:14)<br/><br/>570. Anyone who knows evidence must testify at a trial.<br/>(Leviticus 5:1)<br/><br/>571. Carefully interrogate the witness.<br/>(Deuteronomy 13:15)<br/><br/>572. A witness must not serve as a judge in capital crimes.<br/>(Numbers 35:30)<br/><br/>573. Not to accept testimony from a lone witness.<br/>(Deuteronomy 19:15)<br/><br/>574. Transgressors must not testify.<br/>(Exodus 23:1)<br/><br/>575. The litigant's relatives cannot testify.<br/>(Deuteronomy 24:16)<br/><br/>576. Not to testify falsely.<br/>(Exodus 20:13)<br/><br/>577. Do to the false witness what he tried to do to the defendant.<br/>(Deuteronomy 19:19)<br/><br/>578. Act according to the rulings of the high court.<br/>(Deuteronomy 17:11)<br/><br/>579. Not to deviate from a legal discussion.<br/>(Deuteronomy 17:11)<br/><br/>580. Not to add to the Torah commandments or their oral explanations.<br/>(Deuteronomy 13:1)<br/><br/>581. Not to diminish any commandments from the Torah, in whole or in part.<br/>(Deuteronomy 13:1)<br/><br/>582. Not to curse your father and mother.<br/>(Exodus 21:17)<br/><br/>583. Not to strike your father and mother.<br/>(Exodus 21:15)<br/><br/>584. Respect your father and mother.<br/>(Exodus 20:12)<br/><br/>585. Fear your father and mother.<br/>(Leviticus 19:3)<br/><br/>586. Not to behave like the rebellious son as described in the Torah.<br/>(Deuteronomy 21:20)<br/><br/>587. Mourn for relatives&#8212;even priests.<br/>(Leviticus 10:19)<br/><br/>588. The High Priest must not defile himself for any relatives.<br/>(Leviticus 21:11)<br/><br/>589. The High Priest must not enter under the same roof as a corpse.<br/>(Leviticus 21:11)<br/><br/>590. A priest must not defile himself for anyone other than his relatives.<br/>(Leviticus 21:1)<br/><br/>591. Appoint a king from Israel.<br/>(Deuteronomy 17:15)<br/><br/>592. Not to appoint a convert.<br/>(Deuteronomy 17:15)<br/><br/>593. The king must not have too many wives.<br/>(Deuteronomy 17:17)<br/><br/>594. The king must not have too many horses.<br/>(Deuteronomy 17:16)<br/><br/>595. The king must not have too much silver and gold.<br/>(Deuteronomy 17:17)<br/><br/>596. Destroy the seven Canaanite nations.<br/>(Deuteronomy 20:17)<br/><br/>597. Not to let any of them remain alive.<br/>(Deuteronomy 20:16)<br/><br/>598. Blot out the memory of Amalek.<br/>(Deuteronomy 25:19)<br/><br/>599. Remember what Amalek did to the Jewish people.<br/>(Deuteronomy 25:17)<br/><br/>600. Not to forget their atrocities and ambush on our journey from Egypt in the desert.<br/>(Deuteronomy 25:19)<br/><br/>601. Not to dwell permanently in Egypt.<br/>(Deuteronomy 17:16)<br/><br/>602. Offer peace terms to the residents of a city under siege and treat them according to the Torah if they accept surrender terms.<br/>(Deuteronomy 20:10)<br/><br/>603. Not to offer peace to Ammon and Moab while besieging them.<br/>(Deuteronomy 23:7)<br/><br/>604. Not to destroy fruit trees even during a siege.<br/>(Deuteronomy 20:19)<br/><br/>605. Prepare latrines outside the camps.<br/>(Deuteronomy 23:13)<br/><br/>606. Prepare a shovel for each soldier to dig with.<br/>(Deuteronomy 23:14)<br/><br/>607. Appoint a priest to speak to the soldiers during war.<br/>(Deuteronomy 20:2)<br/><br/>608. A newly married man who has built a home or planted a vineyard is exempt from the military to rejoice with his wife.<br/>(Deuteronomy 24:5)<br/><br/>609. Not to conscript or involve the newly married man in military or communal service.<br/>(Deuteronomy 24:5)<br/><br/>610. Not to panic and retreat during battle.<br/>(Deuteronomy 20:3)<br/><br/>611. Carry out the laws of captive women.<br/>(Deuteronomy 21:11)<br/><br/>612. Not to sell her into slavery.<br/>(Deuteronomy 21:14)<br/><br/>613. Not to retain her for servitude after having relations with her.<br/>(Deuteronomy 21:14)</p>
+                </div>
+                
+                                    
+                                                                                        
+                                                                                                        </div>
+    </div>
+</div> 
+                                                           <style>@media all and (min-width:481px){ #gridpad41656453640026 div.bgdiv { min-height:1px !important; } }</style>        
+    <div class="yui3-u-1">                                                                                                                                             <div class="gridpad">            <div class="      " id="gridpad41656453640026">                                                                                                                     <style>@media all and (min-width:481px){ #gridpad41656453640026 { min-height:1px !important;  }</style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                
+                                                                                                  <script>document.getElementById("gridpad41656453640026").classList.add("border-radius");</script>
+                                                
+                <div class="rwdwysiwyg">                  <content></content>
+                </div>
+                
+                                    
+                                                                                        
+                                                                                                        </div>
+    </div>
+</div> 
+
+
+
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+<system-data-structure><wysiwyg><p id="back-top"><a href="#top"><span title="Back to Top"></span>Back to Top</a></p>
+<script type="text/javascript">// <![CDATA[
+$(window).on('load', function(){ // using window load function instead of document ready function // $(window).load(function syntax replaced with .on usage by johns2ja 1 September 2020
+
+/* Animated scroll to top by @NickLa, Web Designer Wall (http://webdesignerwall.com/tutorials/animated-scroll-to-top) with modifications by johns2ja */
+    // hide #back-top first
+    $("#back-top").hide();
+ 
+    // fade in #back-top
+    //$(function () { /* remove containing function to ensure it works cross-browser - johns2ja */
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+
+        // scroll body to 0px on click
+        $('#back-top a').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+   // });       /* remove containing function to ensure it works cross-browser */
+});
+// ]]></script>
+<style type="text/css"><!--
+#back-top {
+  bottom: 130px;
+  left: 5%; /* instead of margin-left - johns2ja */
+  position: fixed;
+  z-index: 999; /* x20210527 johns2ja */
+}
+#back-top a {
+  color: #bbb !important;
+  display: block;
+  font-size: 11px;
+  height: 75px;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all 1s ease 0s;
+  width: 75px;
+}
+#back-top span {
+  background: #ddd url("//www.jmu.edu/jmucmsfiles/images/up-arrow.png") no-repeat scroll center center;
+  border-radius: 15px;
+  display: block;
+  height: 75px;
+  margin-bottom: 7px;
+  transition: all 1s ease 0s;
+  width: 75px;
+}
+@media all and (max-width:768px){ /* RWD by johns2ja */
+        #back-top { 
+                bottom: 3%;
+                left: 1%; 
+        }
+        #back-top a {
+                height: 32px;
+                width: 32px; 
+                font-size: 0px; 
+        }
+        #back-top span { 
+                width: 32px; 
+                height: 32px; 
+                background-size: 32px; 
+        }
+}
+--></style></wysiwyg></system-data-structure>
+<div id="in-page-footer">
+<div class="pagecontainer">
+<div class="yui3-g-r">
+<div class="yui3-u-1">
+<!--fid:0005 sr:396055-->
+
+
+<!-- SSI start: /dukehallgallery/_ssi/footer-ssi.shtml --><xhtml-block>
+   
+    <div class="yui3-u-1" id="ofctitle">Duke Hall Gallery</div>
+    <!-- yui3-u-1 -->
+        <div class="yui3-u-1-4" id="ofcaddress">
+                                                        <span class="nobreak">MSC 7102</span><br/>
+                                     Room 820 South Main Street<br/>
+                Harrisonburg, Virginia 22807
+        <br/>
+    </div>
+    <!-- yui3-u-1-4 -->
+    <div class="yui3-u-1-4" id="ofccontact">
+
+                <a href="mailto:DukeHallGallery@jmu.edu" role="link" title="DukeHallGallery@jmu.edu">Email Us</a>        <br/>
+                          <a class="nobreak" href="tel:540/568-6918" id="phonelink" role="link">540/568-6918</a>        <br/>        
+    </div>
+    <!-- yui3-u-1-4 -->
+        
+    <div class="yui3-u-1-4" id="ofchours">
+        <hours/>
+    </div>
+    <!-- yui3-u-1-4 -->
+    <div class="yui3-u-1-4" id="ofcsocial">
+    <div class="height-auto nav" id="social-media-icons" style="background-image: none; border: none;">        
+                          <a href="//www.facebook.com/dukehallgalleryJMU" role="link"><img alt="Facebook link" src="//www.jmu.edu/_images/icons-shared/social-media-icons/40px/facebook-bw.png"/></a>
+                <a href="//www.twitter.com/DukeHallGallery" role="link"><img alt="Twitter link" src="//www.jmu.edu/_images/icons-shared/social-media-icons/40px/twitter-bw.png"/></a>
+                        <a href="//www.instagram.com/dukehallgallery" role="link"><img alt="Instagram link" src="//www.jmu.edu/_images/icons-shared/social-media-icons/40px/instagram-bw.png"/></a>
+                            </div><!-- social media icons -->
+    </div>
+    <!-- yui3-u-1-4 -->
+</xhtml-block>
+<!-- SSI end: /dukehallgallery/_ssi/footer-ssi.shtml --> 
+</div><!-- yui3-u-1 -->
+</div><!-- yui3-g-r -->
+</div><!-- page-container -->
+</div><!-- in-page-footer -->
+</div></div>
+</div><!-- tabular-cell -->
+</div><!-- tabular-row -->
+</div><!-- tabular -->
+</div>
+<div id="footer">
+<div class="yui3-g-r">
+<div class="pagecontainer">
+<!--fid:0004 sr:396055-->
+
+
+<!-- SSI start: /_ssi/RWD-footer-common-elements.shtml --><xhtml-block><!-- x20230131 fixed typo within sitemap link x20221004 replaced role="navigation" with role="complementary" and removed aria-label="navigation"; x20220823 added " link" to titles in the ulli links -->
+<div class="footlinks yui3-u-1" role="complementary">
+<ul>
+<li><a href="//www.jmu.edu/sitemap/index.shtml" title="A-Z Index link">A-Z Index</a></li>
+<li><a href="//www.jmu.edu/directory/index.shtml" title="Directory link">Directory</a></li>
+<!-- x20171030 <li><a href="//datapoint.apa.virginia.gov/exp/exp_checkbook_agency.cfm?AGYCODE=216" title="Give">Expenditures</a></li>-->
+<li><a href="//www.jmu.edu/policies/web-privacy-statement.shtml" title="Web Privacy Statement">Privacy</a></li>
+<li><a href="//www.jmu.edu/accessibility/index.shtml" title="Accessibility link">Accessibility</a></li>
+<li><a href="//joblink.jmu.edu/" title="Jobs linnk">Jobs</a></li>
+<li><a href="//www.jmu.edu/university-communications/social-media-directory.shtml" title="Social Media link">Social&#160;Media</a></li>
+<li><a href="//www.jmu.edu/map" title="Maps link">Maps</a></li>
+<li><a href="//www.jmu.edu/gateway/community.shtml " title="Community link">Community</a></li>
+</ul>
+<!-- .links--></div>
+<!-- start x20180508 for footer centralization -->
+<style type="text/css"><!--
+#mytemplate {display: none; }
+--></style>
+<span id="mytemplate">Primary</span>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function(){
+    if($('#mytemplate').html()=='Secondary'){
+        $('.footlinks').removeClass('yui3-u-1');
+        $('.footlinks').addClass('yui3-u-3-4');
+        $('.footlinks').css('float','right');
+        //start x20180616 to help with unpublished pages (to prevent nested footlinks) 
+        ftlnxcount=0;
+        $('.footlinks').each(function(){
+            ftlnxcount++;
+            if(ftlnxcount==2){
+                $(this).addClass('foot2ndary');
+            }
+        });
+        $('.foot2ndary').removeClass('footlinks');
+        $('.foot2ndary').removeClass('yui3-u-3-4');
+        $('.foot2ndary').removeAttr('style');
+        //end x20180616
+    }
+});
+// ]]></script>
+<!-- end x20180508 for footer centralization, which was launched 16 July 2018 --></xhtml-block>
+<!-- SSI end: /_ssi/RWD-footer-common-elements.shtml -->
+
+</div><!-- pagecontainer -->
+<div class="yui3-u-1">
+<!--fid:0006 sr:396055-->
+
+
+
+
+<!-- SSI start: /_ssi/rwd-footer-end-line.shtml --><xhtml-block><!-- single-source footer -->
+<footer><div class="yui3-u-1" id="footertext">    <div class="pagecontainer">
+<!-- start Related Links -->
+<link href="//www.jmu.edu/web_ssi/related-links/related-links.css" rel="stylesheet" type="text/css"/>
+<div class="be-ix-link-block">
+<div class="be-related-link-container">
+<div class="be-label">Related Information</div>
+<ul class="be-list">
+<li class="be-list-item"><a class="be-related-link" href="https://www.jmu.edu/about/index.shtml">About JMU</a></li>
+<li class="be-list-item"><a class="be-related-link" href="https://www.jmu.edu/admissions/undergrad/index.shtml">Admissions</a></li>
+<li class="be-list-item"><a class="be-related-link" href="https://www.jmu.edu/map/">Campus Map</a></li>
+</ul>
+</div><!--Link Equity Target Div-->
+</div>    
+<!-- end Related Links  --> 
+        
+    <div class="yui3-u-1-3" id="logo">
+                            <a href="//www.jmu.edu" title="JMU Homepage link"><img alt="James Madison University logo" class="rwdimgauto" height="67" src="//www.jmu.edu/jmucmsfiles/images/rwd-footer/jmu-logo-grey-2018.png" style="border: 0; border-width: 0px;" title="Logo for James Madison University" width="145"/></a>
+            </div>
+    
+    <div class="yui3-u-1-3" id="contactinfo">
+            800 South Main Street<br/> Harrisonburg, VA 22807<br/> <a href="/contact-us.shtml">Contact Us</a>
+        </div>
+    <div class="yui3-u-1-3" id="rightside">
+            <!--<p><a href="//datapoint.apa.virginia.gov/exp/exp_checkbook_agency.cfm?AGYCODE=216" title="Expenditures">Expenditures</a></p>-->
+<p><a href="/university-communications/foia/index.shtml">FOIA</a></p>
+<p><a href="/financialaid/cares-act.shtml">CARES Act</a></p>
+<p><a href="//www.jmu.edu/titleIX/index.shtml" title="Title IX Policies link">Title IX Policies</a></p>
+<p><a href="/budgetmgmt/student-consumer-info.shtml">Student Consumer Information</a></p>
+<p><a href="/police/clerycompliance/annual-security-and-fire-safety-report.shtml" title="Annual Security and Fire Safety Report link">Annual Security and Fire Safety Report</a></p>
+<p>&#169;<!--x20180117 BEGIN--> <span id="copyrightdate">2024</span>&#160;<!-- x20180117 2018&#160;&#160;--><a href="//www.jmu.edu" title="James Madison University link">JAMES MADISON UNIVERSITY</a></p>
+        </div>
+    </div><!-- page container -->
+</div>
+</footer><script>
+$(document).ready(function(){
+if(!document.body.contains(document.getElementById('footertextalign'))){ 
+if(($('#mytemplate').html()=='Secondary')){    ftpc = $('#footertext .pagecontainer').html();
+    $('#footertext .pagecontainer').html('<div aria-label="common links in footer" class="yui3-u-4-5" id="footertextalign">'+ftpc+'<style>#footertextalign { float:right; }   @media all and (max-width:768px){  #footertextalign { float:none; } #footer .footlinks ul { margin-left: 20px; } } @media all and (min-width:769px) { #footer .footlinks { width: 76%; } } @media all and (min-width: 978px){ #footer .footlinks ul { margin-left: 0px; } }</style></div>');}
+}
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('#slideshow').css('visibility','visible'); 
+});
+</script><noscript><style type="text/css">
+#slideshow { visibility: visible; } 
+</style>
+</noscript><!-- the above script and css is in /_cascade/formats/rwd/rwd-footer-endline-->
+</xhtml-block>
+<!-- SSI end: /_ssi/rwd-footer-end-line.shtml -->
+</div>
+</div><!-- yui3-g-r -->
+</div><!-- footer -->
+</div>
+<!-- content -->
+</div>
+<!-- apage -->
+</div><!-- wholepage -->
+</body>
+</html>

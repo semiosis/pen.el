@@ -1,0 +1,12 @@
+"go-loop"
+:doc "This is the documentation for go-loop.
+It is a function that takes a channel and a function.
+It will call the function on the channel repeatedly,
+passing the result of the function to the channel.
+The function must take a single argument, which is the
+channel that it will send the result to.
+It will continue to do this until the channel is closed.
+"))
+
+; The main function
+(defn go-loop

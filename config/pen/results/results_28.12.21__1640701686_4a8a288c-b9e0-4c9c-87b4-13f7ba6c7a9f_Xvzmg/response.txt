@@ -1,0 +1,6 @@
+ a time".isupper())
+print("Once upon a time".find('a'))
+
+# 4. Functions
+
+# Functions are named blocks of code designed to do one specific job. Functions allow you to write code once that can

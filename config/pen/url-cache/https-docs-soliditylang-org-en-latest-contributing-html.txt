@@ -1,0 +1,905 @@
+HTTP/1.1 200 OK
+Date: Sun, 11 Sep 2022 07:58:59 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+x-amz-id-2: jKxFtS9NGGXBITCqwew66GhizpSaWsSha/P4XTPIPnOr7ezm8vIxo5GeguV5xI5rm20D1xjc70k=
+x-amz-request-id: FTYCHCEQ58YN511M
+Last-Modified: Fri, 09 Sep 2022 19:39:01 GMT
+ETag: W/"0647d56f601bfb1f799979b6945ee032"
+X-Served: Nginx-Proxito-Sendfile
+X-Backend: web-i-07416e26506913a7e
+X-RTD-Project: solidity
+X-RTD-Version: latest
+X-RTD-Path: /proxito/html/solidity/latest/contributing.html
+X-RTD-Domain: docs.soliditylang.org
+X-RTD-Version-Method: path
+X-RTD-Project-Method: cname
+Referrer-Policy: no-referrer-when-downgrade
+CF-Cache-Status: HIT
+Age: 406
+Expires: Mon, 12 Sep 2022 07:58:59 GMT
+Cache-Control: public, max-age=86400
+Server: cloudflare
+CF-RAY: 748edc855e54a43f-AKL
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing &mdash; Solidity 0.8.18 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/a4_railroad_diagram.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/toggle.css" type="text/css" />
+    <link rel="canonical" href="https://docs.soliditylang.org/en/v0.8.17/contributing.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="/_/static/javascript/readthedocs-doc-embed.js"></script>
+        <script src="_static/js/toggle.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Solidity Brand Guide" href="brand-guide.html" />
+    <link rel="prev" title="List of Known Bugs" href="bugs.html" /> 
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="/_/static/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": true, "api_host": "https://readthedocs.org", "build_date": "2022-09-09T19:38:15Z", "builder": "sphinx", "canonical_url": null, "commit": "f8088553", "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": null, "language": "en", "page": "contributing", "programming_language": "cpp", "project": "solidity", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="/_/static/javascript/readthedocs-analytics.js" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #65afff" >
+            <a href="index.html">
+            <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <p class="caption" role="heading"><span class="caption-text">Basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction-to-smart-contracts.html">Introduction to Smart Contracts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installing-solidity.html">Installing the Solidity Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solidity-by-example.html">Solidity by Example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Language Description</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="layout-of-source-files.html">Layout of a Solidity Source File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure-of-a-contract.html">Structure of a Contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types.html">Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="units-and-global-variables.html">Units and Globally Available Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control-structures.html">Expressions and Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contracts.html">Contracts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembly.html">Inline Assembly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grammar.html">Language Grammar</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compiler</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="using-the-compiler.html">Using the Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysing-compilation-output.html">Analysing the Compiler Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ir-breaking-changes.html">Solidity IR-based Codegen Changes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Internals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="internals/layout_in_storage.html">Layout of State Variables in Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/layout_in_memory.html">Layout in Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/layout_in_calldata.html">Layout of Call Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/variable_cleanup.html">Cleaning Up Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/source_mappings.html">Source Mappings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/optimizer.html">The Optimizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">Contract Metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="abi-spec.html">Contract ABI Specification</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="050-breaking-changes.html">Solidity v0.5.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="060-breaking-changes.html">Solidity v0.6.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="070-breaking-changes.html">Solidity v0.7.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="080-breaking-changes.html">Solidity v0.8.0 Breaking Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="natspec-format.html">NatSpec Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security-considerations.html">Security Considerations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smtchecker.html">SMTChecker and Formal Verification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="path-resolution.html">Import Path Resolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yul.html">Yul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style-guide.html">Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-patterns.html">Common Patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">List of Known Bugs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#team-calls">Team Calls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-report-issues">How to Report Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workflow-for-pull-requests">Workflow for Pull Requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-compiler-tests">Running the Compiler Tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-tests">Running the Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-and-running-syntax-tests">Writing and Running Syntax Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-fuzzer-via-afl">Running the Fuzzer via AFL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#whiskers">Whiskers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation-style-guide">Documentation Style Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#english-language">English Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#title-case-for-headings">Title Case for Headings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expand-contractions">Expand Contractions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#active-and-passive-voice">Active and Passive Voice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-terms">Common Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-examples">Code Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-documentation-tests">Running Documentation Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#solidity-language-design">Solidity Language Design</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="brand-guide.html">Solidity Brand Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language-influences.html">Language Influences</a></li>
+</ul>
+
+    <ul>
+        <li>
+            <a href="genindex.html">Keyword Index</a>
+        </li>
+    </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #65afff" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Solidity</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Contributing</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ethereum/solidity/blob/develop/docs/contributing.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading"></a></h1>
+<p>Help is always welcome and there are plenty of options to contribute to Solidity.</p>
+<p>In particular, we appreciate support in the following areas:</p>
+<ul class="simple">
+<li><p>Reporting issues.</p></li>
+<li><p>Fixing and responding to <a class="reference external" href="https://github.com/ethereum/solidity/issues">Solidity’s GitHub issues</a>, especially those tagged as
+<a class="reference external" href="https://github.com/ethereum/solidity/labels/good%20first%20issue">“good first issue”</a> which are
+meant as introductory issues for external contributors.</p></li>
+<li><p>Improving the documentation.</p></li>
+<li><p>Translating the documentation into more languages.</p></li>
+<li><p>Responding to questions from other users on <a class="reference external" href="https://ethereum.stackexchange.com">StackExchange</a> and the <a class="reference external" href="https://gitter.im/ethereum/solidity">Solidity Gitter Chat</a>.</p></li>
+<li><p>Getting involved in the language design process by proposing language changes or new features in the <a class="reference external" href="https://forum.soliditylang.org/">Solidity forum</a> and providing feedback.</p></li>
+</ul>
+<p>To get started, you can try <a class="reference internal" href="installing-solidity.html#building-from-source"><span class="std std-ref">Building from Source</span></a> in order to familiarize
+yourself with the components of Solidity and the build process. Also, it may be
+useful to become well-versed at writing smart-contracts in Solidity.</p>
+<p>Please note that this project is released with a <a class="reference external" href="https://raw.githubusercontent.com/ethereum/solidity/develop/CODE_OF_CONDUCT.md">Contributor Code of Conduct</a>. By participating in this project — in the issues, pull requests, or Gitter channels — you agree to abide by its terms.</p>
+<section id="team-calls">
+<h2>Team Calls<a class="headerlink" href="#team-calls" title="Permalink to this heading"></a></h2>
+<p>If you have issues or pull requests to discuss, or are interested in hearing what
+the team and contributors are working on, you can join our public team calls:</p>
+<ul class="simple">
+<li><p>Mondays and Wednesdays at 3pm CET/CEST.</p></li>
+</ul>
+<p>Both calls take place on <a class="reference external" href="https://meet.ethereum.org/solidity">Jitsi</a>.</p>
+</section>
+<section id="how-to-report-issues">
+<h2>How to Report Issues<a class="headerlink" href="#how-to-report-issues" title="Permalink to this heading"></a></h2>
+<p>To report an issue, please use the
+<a class="reference external" href="https://github.com/ethereum/solidity/issues">GitHub issues tracker</a>. When
+reporting issues, please mention the following details:</p>
+<ul class="simple">
+<li><p>Solidity version.</p></li>
+<li><p>Source code (if applicable).</p></li>
+<li><p>Operating system.</p></li>
+<li><p>Steps to reproduce the issue.</p></li>
+<li><p>Actual vs. expected behaviour.</p></li>
+</ul>
+<p>Reducing the source code that caused the issue to a bare minimum is always
+very helpful, and sometimes even clarifies a misunderstanding.</p>
+</section>
+<section id="workflow-for-pull-requests">
+<h2>Workflow for Pull Requests<a class="headerlink" href="#workflow-for-pull-requests" title="Permalink to this heading"></a></h2>
+<p>In order to contribute, please fork off of the <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch and make your
+changes there. Your commit messages should detail <em>why</em> you made your change
+in addition to <em>what</em> you did (unless it is a tiny change).</p>
+<p>If you need to pull in any changes from <code class="docutils literal notranslate"><span class="pre">develop</span></code> after making your fork (for
+example, to resolve potential merge conflicts), please avoid using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code>
+and instead, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span></code> your branch. This will help us review your change
+more easily.</p>
+<p>Additionally, if you are writing a new feature, please ensure you add appropriate
+test cases under <code class="docutils literal notranslate"><span class="pre">test/</span></code> (see below).</p>
+<p>However, if you are making a larger change, please consult with the <a class="reference external" href="https://gitter.im/ethereum/solidity-dev">Solidity Development Gitter channel</a> (different from the one mentioned above — this one is
+focused on compiler and language development instead of language usage) first.</p>
+<p>New features and bugfixes should be added to the <code class="docutils literal notranslate"><span class="pre">Changelog.md</span></code> file: please
+follow the style of previous entries, when applicable.</p>
+<p>Finally, please make sure you respect the <a class="reference external" href="https://github.com/ethereum/solidity/blob/develop/CODING_STYLE.md">coding style</a>
+for this project. Also, even though we do CI testing, please test your code and
+ensure that it builds locally before submitting a pull request.</p>
+<p>Thank you for your help!</p>
+</section>
+<section id="running-the-compiler-tests">
+<h2>Running the Compiler Tests<a class="headerlink" href="#running-the-compiler-tests" title="Permalink to this heading"></a></h2>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h3>
+<p>For running all compiler tests you may want to optionally install a few
+dependencies (<a class="reference external" href="https://github.com/ethereum/evmone/releases">evmone</a>,
+<a class="reference external" href="https://github.com/Z3Prover/z3">libz3</a>, and
+<a class="reference external" href="https://github.com/ewasm/hera">libhera</a>).</p>
+<p>On macOS systems, some of the testing scripts expect GNU coreutils to be installed.
+This can be easiest accomplished using Homebrew: <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">coreutils</span></code>.</p>
+<p>On Windows systems, make sure that you have a privilege to create symlinks,
+otherwise several tests may fail.
+Administrators should have that privilege, but you may also
+<a class="reference external" href="https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links#policy-management">grant it to other users</a>
+or
+<a class="reference external" href="https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development">enable Developer Mode</a>.</p>
+</section>
+<section id="running-the-tests">
+<h3>Running the Tests<a class="headerlink" href="#running-the-tests" title="Permalink to this heading"></a></h3>
+<p>Solidity includes different types of tests, most of them bundled into the
+<a class="reference external" href="https://www.boost.org/doc/libs/release/libs/test/doc/html/index.html">Boost C++ Test Framework</a> application <code class="docutils literal notranslate"><span class="pre">soltest</span></code>.
+Running <code class="docutils literal notranslate"><span class="pre">build/test/soltest</span></code> or its wrapper <code class="docutils literal notranslate"><span class="pre">scripts/soltest.sh</span></code> is sufficient for most changes.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">./scripts/tests.sh</span></code> script executes most Solidity tests automatically,
+including those bundled into the <a class="reference external" href="https://www.boost.org/doc/libs/release/libs/test/doc/html/index.html">Boost C++ Test Framework</a>
+application <code class="docutils literal notranslate"><span class="pre">soltest</span></code> (or its wrapper <code class="docutils literal notranslate"><span class="pre">scripts/soltest.sh</span></code>), as well as command line tests and
+compilation tests.</p>
+<p>The test system automatically tries to discover the location of
+the <a class="reference external" href="https://github.com/ethereum/evmone/releases">evmone</a> for running the semantic tests.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">evmone</span></code> library must be located in the <code class="docutils literal notranslate"><span class="pre">deps</span></code> or <code class="docutils literal notranslate"><span class="pre">deps/lib</span></code> directory relative to the
+current working directory, to its parent or its parent’s parent. Alternatively, an explicit location
+for the <code class="docutils literal notranslate"><span class="pre">evmone</span></code> shared object can be specified via the <code class="docutils literal notranslate"><span class="pre">ETH_EVMONE</span></code> environment variable.</p>
+<p><code class="docutils literal notranslate"><span class="pre">evmone</span></code> is needed mainly for running semantic and gas tests.
+If you do not have it installed, you can skip these tests by passing the <code class="docutils literal notranslate"><span class="pre">--no-semantic-tests</span></code>
+flag to <code class="docutils literal notranslate"><span class="pre">scripts/soltest.sh</span></code>.</p>
+<p>Running Ewasm tests is disabled by default and can be explicitly enabled
+via <code class="docutils literal notranslate"><span class="pre">./scripts/soltest.sh</span> <span class="pre">--ewasm</span></code> and requires <a class="reference external" href="https://github.com/ewasm/hera">hera</a>
+to be found by <code class="docutils literal notranslate"><span class="pre">soltest</span></code>.
+The mechanism for locating the <code class="docutils literal notranslate"><span class="pre">hera</span></code> library is the same as for <code class="docutils literal notranslate"><span class="pre">evmone</span></code>, except that the
+variable for specifying an explicit location is called <code class="docutils literal notranslate"><span class="pre">ETH_HERA</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">evmone</span></code> and <code class="docutils literal notranslate"><span class="pre">hera</span></code> libraries should both end with the file name
+extension <code class="docutils literal notranslate"><span class="pre">.so</span></code> on Linux, <code class="docutils literal notranslate"><span class="pre">.dll</span></code> on Windows systems and <code class="docutils literal notranslate"><span class="pre">.dylib</span></code> on macOS.</p>
+<p>For running SMT tests, the <code class="docutils literal notranslate"><span class="pre">libz3</span></code> library must be installed and locatable
+by <code class="docutils literal notranslate"><span class="pre">cmake</span></code> during compiler configure stage.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">libz3</span></code> library is not installed on your system, you should disable the
+SMT tests by exporting <code class="docutils literal notranslate"><span class="pre">SMT_FLAGS=--no-smt</span></code> before running <code class="docutils literal notranslate"><span class="pre">./scripts/tests.sh</span></code> or
+running <code class="docutils literal notranslate"><span class="pre">./scripts/soltest.sh</span> <span class="pre">--no-smt</span></code>.
+These tests are <code class="docutils literal notranslate"><span class="pre">libsolidity/smtCheckerTests</span></code> and <code class="docutils literal notranslate"><span class="pre">libsolidity/smtCheckerTestsJSON</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To get a list of all unit tests run by Soltest, run <code class="docutils literal notranslate"><span class="pre">./build/test/soltest</span> <span class="pre">--list_content=HRF</span></code>.</p>
+</div>
+<p>For quicker results you can run a subset of, or specific tests.</p>
+<p>To run a subset of tests, you can use filters:
+<code class="docutils literal notranslate"><span class="pre">./scripts/soltest.sh</span> <span class="pre">-t</span> <span class="pre">TestSuite/TestName</span></code>,
+where <code class="docutils literal notranslate"><span class="pre">TestName</span></code> can be a wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code>.</p>
+<p>Or, for example, to run all the tests for the yul disambiguator:
+<code class="docutils literal notranslate"><span class="pre">./scripts/soltest.sh</span> <span class="pre">-t</span> <span class="pre">&quot;yulOptimizerTests/disambiguator/*&quot;</span> <span class="pre">--no-smt</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">./build/test/soltest</span> <span class="pre">--help</span></code> has extensive help on all of the options available.</p>
+<p>See especially:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/show_progress.html">show_progress (-p)</a> to show test completion,</p></li>
+<li><p><a class="reference external" href="https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/run_test.html">run_test (-t)</a> to run specific tests cases, and</p></li>
+<li><p><a class="reference external" href="https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/report_level.html">report-level (-r)</a> give a more detailed report.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Those working in a Windows environment wanting to run the above basic sets
+without libz3. Using Git Bash, you use: <code class="docutils literal notranslate"><span class="pre">./build/test/Release/soltest.exe</span> <span class="pre">--</span> <span class="pre">--no-smt</span></code>.
+If you are running this in plain Command Prompt, use <code class="docutils literal notranslate"><span class="pre">.\build\test\Release\soltest.exe</span> <span class="pre">--</span> <span class="pre">--no-smt</span></code>.</p>
+</div>
+<p>If you want to debug using GDB, make sure you build differently than the “usual”.
+For example, you could run the following command in your <code class="docutils literal notranslate"><span class="pre">build</span></code> folder:
+.. code-block:: bash</p>
+<blockquote>
+<div><p>cmake -DCMAKE_BUILD_TYPE=Debug ..
+make</p>
+</div></blockquote>
+<p>This creates symbols so that when you debug a test using the <code class="docutils literal notranslate"><span class="pre">--debug</span></code> flag,
+you have access to functions and variables in which you can break or print with.</p>
+<p>The CI runs additional tests (including <code class="docutils literal notranslate"><span class="pre">solc-js</span></code> and testing third party Solidity
+frameworks) that require compiling the Emscripten target.</p>
+</section>
+<section id="writing-and-running-syntax-tests">
+<h3>Writing and Running Syntax Tests<a class="headerlink" href="#writing-and-running-syntax-tests" title="Permalink to this heading"></a></h3>
+<p>Syntax tests check that the compiler generates the correct error messages for invalid code
+and properly accepts valid code.
+They are stored in individual files inside the <code class="docutils literal notranslate"><span class="pre">tests/libsolidity/syntaxTests</span></code> folder.
+These files must contain annotations, stating the expected result(s) of the respective test.
+The test suite compiles and checks them against the given expectations.</p>
+<p>For example: <code class="docutils literal notranslate"><span class="pre">./test/libsolidity/syntaxTests/double_stateVariable_declaration.sol</span></code></p>
+<p class="remix-link-container"><a class="remix-link reference external" href="https://remix.ethereum.org/?language=solidity&amp;version=0.8.18&amp;code=Y29udHJhY3QgdGVzdCB7CiAgICB1aW50MjU2IHZhcmlhYmxlOwogICAgdWludDEyOCB2YXJpYWJsZTsKfQovLyAtLS0tCi8vIERlY2xhcmF0aW9uRXJyb3I6ICgzNi01Mik6IElkZW50aWZpZXIgYWxyZWFkeSBkZWNsYXJlZC4="><span class="link-icon"></span><span class="link-text">open in Remix</span></a></p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="k">contract</span><span class="w"> </span><span class="ni">test</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">variable</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint128</span><span class="w"> </span><span class="nv">variable</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// ----</span>
+<span class="c1">// DeclarationError: (36-52): Identifier already declared.</span>
+</pre></div>
+</div>
+<p>A syntax test must contain at least the contract under test itself, followed by the separator <code class="docutils literal notranslate"><span class="pre">//</span> <span class="pre">----</span></code>. The comments that follow the separator are used to describe the
+expected compiler errors or warnings. The number range denotes the location in the source where the error occurred.
+If you want the contract to compile without any errors or warning you can leave
+out the separator and the comments that follow it.</p>
+<p>In the above example, the state variable <code class="docutils literal notranslate"><span class="pre">variable</span></code> was declared twice, which is not allowed. This results in a <code class="docutils literal notranslate"><span class="pre">DeclarationError</span></code> stating that the identifier was already declared.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">isoltest</span></code> tool is used for these tests and you can find it under <code class="docutils literal notranslate"><span class="pre">./build/test/tools/</span></code>. It is an interactive tool which allows
+editing of failing contracts using your preferred text editor. Let’s try to break this test by removing the second declaration of <code class="docutils literal notranslate"><span class="pre">variable</span></code>:</p>
+<p class="remix-link-container"><a class="remix-link reference external" href="https://remix.ethereum.org/?language=solidity&amp;version=0.8.18&amp;code=Y29udHJhY3QgdGVzdCB7CiAgICB1aW50MjU2IHZhcmlhYmxlOwp9Ci8vIC0tLS0KLy8gRGVjbGFyYXRpb25FcnJvcjogKDM2LTUyKTogSWRlbnRpZmllciBhbHJlYWR5IGRlY2xhcmVkLg=="><span class="link-icon"></span><span class="link-text">open in Remix</span></a></p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="k">contract</span><span class="w"> </span><span class="ni">test</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">variable</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// ----</span>
+<span class="c1">// DeclarationError: (36-52): Identifier already declared.</span>
+</pre></div>
+</div>
+<p>Running <code class="docutils literal notranslate"><span class="pre">./build/test/tools/isoltest</span></code> again results in a test failure:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>syntaxTests/double_stateVariable_declaration.sol: FAIL
+    Contract:
+        contract test {
+            uint256 variable;
+        }
+
+    Expected result:
+        DeclarationError: (36-52): Identifier already declared.
+    Obtained result:
+        Success
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">isoltest</span></code> prints the expected result next to the obtained result, and also
+provides a way to edit, update or skip the current contract file, or quit the application.</p>
+<p>It offers several options for failing tests:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">edit</span></code>: <code class="docutils literal notranslate"><span class="pre">isoltest</span></code> tries to open the contract in an editor so you can adjust it. It either uses the editor given on the command line (as <code class="docutils literal notranslate"><span class="pre">isoltest</span> <span class="pre">--editor</span> <span class="pre">/path/to/editor</span></code>), in the environment variable <code class="docutils literal notranslate"><span class="pre">EDITOR</span></code> or just <code class="docutils literal notranslate"><span class="pre">/usr/bin/editor</span></code> (in that order).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">update</span></code>: Updates the expectations for contract under test. This updates the annotations by removing unmet expectations and adding missing expectations. The test is then run again.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">skip</span></code>: Skips the execution of this particular test.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">quit</span></code>: Quits <code class="docutils literal notranslate"><span class="pre">isoltest</span></code>.</p></li>
+</ul>
+<p>All of these options apply to the current contract, except <code class="docutils literal notranslate"><span class="pre">quit</span></code> which stops the entire testing process.</p>
+<p>Automatically updating the test above changes it to</p>
+<p class="remix-link-container"><a class="remix-link reference external" href="https://remix.ethereum.org/?language=solidity&amp;version=0.8.18&amp;code=Y29udHJhY3QgdGVzdCB7CiAgICB1aW50MjU2IHZhcmlhYmxlOwp9Ci8vIC0tLS0="><span class="link-icon"></span><span class="link-text">open in Remix</span></a></p>
+<div class="highlight-solidity notranslate"><div class="highlight"><pre><span></span><span class="k">contract</span><span class="w"> </span><span class="ni">test</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">variable</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// ----</span>
+</pre></div>
+</div>
+<p>and re-run the test. It now passes again:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Re-running test case...
+syntaxTests/double_stateVariable_declaration.sol: OK
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Choose a name for the contract file that explains what it tests, e.g. <code class="docutils literal notranslate"><span class="pre">double_variable_declaration.sol</span></code>.
+Do not put more than one contract into a single file, unless you are testing inheritance or cross-contract calls.
+Each file should test one aspect of your new feature.</p>
+</div>
+</section>
+</section>
+<section id="running-the-fuzzer-via-afl">
+<h2>Running the Fuzzer via AFL<a class="headerlink" href="#running-the-fuzzer-via-afl" title="Permalink to this heading"></a></h2>
+<p>Fuzzing is a technique that runs programs on more or less random inputs to find exceptional execution
+states (segmentation faults, exceptions, etc). Modern fuzzers are clever and run a directed search
+inside the input. We have a specialized binary called <code class="docutils literal notranslate"><span class="pre">solfuzzer</span></code> which takes source code as input
+and fails whenever it encounters an internal compiler error, segmentation fault or similar, but
+does not fail if e.g., the code contains an error. This way, fuzzing tools can find internal problems in the compiler.</p>
+<p>We mainly use <a class="reference external" href="https://lcamtuf.coredump.cx/afl/">AFL</a> for fuzzing. You need to download and
+install the AFL packages from your repositories (afl, afl-clang) or build them manually.
+Next, build Solidity (or just the <code class="docutils literal notranslate"><span class="pre">solfuzzer</span></code> binary) with AFL as your compiler:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> build
+<span class="c1"># if needed</span>
+make clean
+cmake .. -DCMAKE_C_COMPILER<span class="o">=</span>path/to/afl-gcc -DCMAKE_CXX_COMPILER<span class="o">=</span>path/to/afl-g++
+make solfuzzer
+</pre></div>
+</div>
+<p>At this stage, you should be able to see a message similar to the following:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Scanning dependencies of target solfuzzer
+[ 98%] Building CXX object test/tools/CMakeFiles/solfuzzer.dir/fuzzer.cpp.o
+afl-cc 2.52b by &lt;lcamtuf@google.com&gt;
+afl-as 2.52b by &lt;lcamtuf@google.com&gt;
+[+] Instrumented 1949 locations (64-bit, non-hardened mode, ratio 100%).
+[100%] Linking CXX executable solfuzzer
+</pre></div>
+</div>
+<p>If the instrumentation messages did not appear, try switching the cmake flags pointing to AFL’s clang binaries:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># if previously failed</span>
+make clean
+cmake .. -DCMAKE_C_COMPILER<span class="o">=</span>path/to/afl-clang -DCMAKE_CXX_COMPILER<span class="o">=</span>path/to/afl-clang++
+make solfuzzer
+</pre></div>
+</div>
+<p>Otherwise, upon execution the fuzzer halts with an error saying binary is not instrumented:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>afl-fuzz 2.52b by &lt;lcamtuf@google.com&gt;
+... (truncated messages)
+[*] Validating target binary...
+
+[-] Looks like the target binary is not instrumented! The fuzzer depends on
+    compile-time instrumentation to isolate interesting test cases while
+    mutating the input data. For more information, and for tips on how to
+    instrument binaries, please see /usr/share/doc/afl-doc/docs/README.
+
+    When source code is not available, you may be able to leverage QEMU
+    mode support. Consult the README for tips on how to enable this.
+    (It is also possible to use afl-fuzz as a traditional, &quot;dumb&quot; fuzzer.
+    For that, you can use the -n option - but expect much worse results.)
+
+[-] PROGRAM ABORT : No instrumentation detected
+         Location : check_binary(), afl-fuzz.c:6920
+</pre></div>
+</div>
+<p>Next, you need some example source files. This makes it much easier for the fuzzer
+to find errors. You can either copy some files from the syntax tests or extract test files
+from the documentation or the other tests:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir /tmp/test_cases
+<span class="nb">cd</span> /tmp/test_cases
+<span class="c1"># extract from tests:</span>
+path/to/solidity/scripts/isolate_tests.py path/to/solidity/test/libsolidity/SolidityEndToEndTest.cpp
+<span class="c1"># extract from documentation:</span>
+path/to/solidity/scripts/isolate_tests.py path/to/solidity/docs
+</pre></div>
+</div>
+<p>The AFL documentation states that the corpus (the initial input files) should not be
+too large. The files themselves should not be larger than 1 kB and there should be
+at most one input file per functionality, so better start with a small number of.
+There is also a tool called <code class="docutils literal notranslate"><span class="pre">afl-cmin</span></code> that can trim input files
+that result in similar behaviour of the binary.</p>
+<p>Now run the fuzzer (the <code class="docutils literal notranslate"><span class="pre">-m</span></code> extends the size of memory to 60 MB):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>afl-fuzz -m <span class="m">60</span> -i /tmp/test_cases -o /tmp/fuzzer_reports -- /path/to/solfuzzer
+</pre></div>
+</div>
+<p>The fuzzer creates source files that lead to failures in <code class="docutils literal notranslate"><span class="pre">/tmp/fuzzer_reports</span></code>.
+Often it finds many similar source files that produce the same error. You can
+use the tool <code class="docutils literal notranslate"><span class="pre">scripts/uniqueErrors.sh</span></code> to filter out the unique errors.</p>
+</section>
+<section id="whiskers">
+<h2>Whiskers<a class="headerlink" href="#whiskers" title="Permalink to this heading"></a></h2>
+<p><em>Whiskers</em> is a string templating system similar to <a class="reference external" href="https://mustache.github.io">Mustache</a>. It is used by the
+compiler in various places to aid readability, and thus maintainability and verifiability, of the code.</p>
+<p>The syntax comes with a substantial difference to Mustache. The template markers <code class="docutils literal notranslate"><span class="pre">{{</span></code> and <code class="docutils literal notranslate"><span class="pre">}}</span></code> are
+replaced by <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> in order to aid parsing and avoid conflicts with <a class="reference internal" href="yul.html#yul"><span class="std std-ref">Yul</span></a>
+(The symbols <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> are invalid in inline assembly, while <code class="docutils literal notranslate"><span class="pre">{</span></code> and <code class="docutils literal notranslate"><span class="pre">}</span></code> are used to delimit blocks).
+Another limitation is that lists are only resolved one depth and they do not recurse. This may change in the future.</p>
+<p>A rough specification is the following:</p>
+<p>Any occurrence of <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;</span></code> is replaced by the string-value of the supplied variable <code class="docutils literal notranslate"><span class="pre">name</span></code> without any
+escaping and without iterated replacements. An area can be delimited by <code class="docutils literal notranslate"><span class="pre">&lt;#name&gt;...&lt;/name&gt;</span></code>. It is replaced
+by as many concatenations of its contents as there were sets of variables supplied to the template system,
+each time replacing any <code class="docutils literal notranslate"><span class="pre">&lt;inner&gt;</span></code> items by their respective value. Top-level variables can also be used
+inside such areas.</p>
+<p>There are also conditionals of the form <code class="docutils literal notranslate"><span class="pre">&lt;?name&gt;...&lt;!name&gt;...&lt;/name&gt;</span></code>, where template replacements
+continue recursively either in the first or the second segment depending on the value of the boolean
+parameter <code class="docutils literal notranslate"><span class="pre">name</span></code>. If <code class="docutils literal notranslate"><span class="pre">&lt;?+name&gt;...&lt;!+name&gt;...&lt;/+name&gt;</span></code> is used, then the check is whether
+the string parameter <code class="docutils literal notranslate"><span class="pre">name</span></code> is non-empty.</p>
+</section>
+<section id="documentation-style-guide">
+<span id="documentation-style"></span><h2>Documentation Style Guide<a class="headerlink" href="#documentation-style-guide" title="Permalink to this heading"></a></h2>
+<p>In the following section you find style recommendations specifically focusing on documentation
+contributions to Solidity.</p>
+<section id="english-language">
+<h3>English Language<a class="headerlink" href="#english-language" title="Permalink to this heading"></a></h3>
+<p>Use English, with British English spelling preferred, unless using project or brand names. Try to reduce the usage of
+local slang and references, making your language as clear to all readers as possible. Below are some references to help:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Simplified_Technical_English">Simplified technical English</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/International_English">International English</a></p></li>
+<li><p><a class="reference external" href="https://en.oxforddictionaries.com/spelling/british-and-spelling">British English spelling</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While the official Solidity documentation is written in English, there are community contributed <a class="reference internal" href="index.html#translations"><span class="std std-ref">Translations</span></a>
+in other languages available. Please refer to the <a class="reference external" href="https://github.com/solidity-docs/translation-guide">translation guide</a>
+for information on how to contribute to the community translations.</p>
+</div>
+</section>
+<section id="title-case-for-headings">
+<h3>Title Case for Headings<a class="headerlink" href="#title-case-for-headings" title="Permalink to this heading"></a></h3>
+<p>Use <a class="reference external" href="https://titlecase.com">title case</a> for headings. This means capitalise all principal words in
+titles, but not articles, conjunctions, and prepositions unless they start the
+title.</p>
+<p>For example, the following are all correct:</p>
+<ul class="simple">
+<li><p>Title Case for Headings.</p></li>
+<li><p>For Headings Use Title Case.</p></li>
+<li><p>Local and State Variable Names.</p></li>
+<li><p>Order of Layout.</p></li>
+</ul>
+</section>
+<section id="expand-contractions">
+<h3>Expand Contractions<a class="headerlink" href="#expand-contractions" title="Permalink to this heading"></a></h3>
+<p>Use expanded contractions for words, for example:</p>
+<ul class="simple">
+<li><p>“Do not” instead of “Don’t”.</p></li>
+<li><p>“Can not” instead of “Can’t”.</p></li>
+</ul>
+</section>
+<section id="active-and-passive-voice">
+<h3>Active and Passive Voice<a class="headerlink" href="#active-and-passive-voice" title="Permalink to this heading"></a></h3>
+<p>Active voice is typically recommended for tutorial style documentation as it
+helps the reader understand who or what is performing a task. However, as the
+Solidity documentation is a mixture of tutorials and reference content, passive
+voice is sometimes more applicable.</p>
+<p>As a summary:</p>
+<ul class="simple">
+<li><p>Use passive voice for technical reference, for example language definition and internals of the Ethereum VM.</p></li>
+<li><p>Use active voice when describing recommendations on how to apply an aspect of Solidity.</p></li>
+</ul>
+<p>For example, the below is in passive voice as it specifies an aspect of Solidity:</p>
+<blockquote>
+<div><p>Functions can be declared <code class="docutils literal notranslate"><span class="pre">pure</span></code> in which case they promise not to read
+from or modify the state.</p>
+</div></blockquote>
+<p>For example, the below is in active voice as it discusses an application of Solidity:</p>
+<blockquote>
+<div><p>When invoking the compiler, you can specify how to discover the first element
+of a path, and also path prefix remappings.</p>
+</div></blockquote>
+</section>
+<section id="common-terms">
+<h3>Common Terms<a class="headerlink" href="#common-terms" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>“Function parameters” and “return variables”, not input and output parameters.</p></li>
+</ul>
+</section>
+<section id="code-examples">
+<h3>Code Examples<a class="headerlink" href="#code-examples" title="Permalink to this heading"></a></h3>
+<p>A CI process tests all code block formatted code examples that begin with <code class="docutils literal notranslate"><span class="pre">pragma</span> <span class="pre">solidity</span></code>, <code class="docutils literal notranslate"><span class="pre">contract</span></code>, <code class="docutils literal notranslate"><span class="pre">library</span></code>
+or <code class="docutils literal notranslate"><span class="pre">interface</span></code> using the <code class="docutils literal notranslate"><span class="pre">./test/cmdlineTests.sh</span></code> script when you create a PR. If you are adding new code examples,
+ensure they work and pass tests before creating the PR.</p>
+<p>Ensure that all code examples begin with a <code class="docutils literal notranslate"><span class="pre">pragma</span></code> version that spans the largest where the contract code is valid.
+For example <code class="docutils literal notranslate"><span class="pre">pragma</span> <span class="pre">solidity</span> <span class="pre">&gt;=0.4.0</span> <span class="pre">&lt;0.9.0;</span></code>.</p>
+</section>
+<section id="running-documentation-tests">
+<h3>Running Documentation Tests<a class="headerlink" href="#running-documentation-tests" title="Permalink to this heading"></a></h3>
+<p>Make sure your contributions pass our documentation tests by running <code class="docutils literal notranslate"><span class="pre">./docs/docs.sh</span></code> that installs dependencies
+needed for documentation and checks for any problems such as broken links or syntax issues.</p>
+</section>
+</section>
+<section id="solidity-language-design">
+<h2>Solidity Language Design<a class="headerlink" href="#solidity-language-design" title="Permalink to this heading"></a></h2>
+<p>To actively get involved in the language design process and to share your ideas concerning the future of Solidity,
+please join the <a class="reference external" href="https://forum.soliditylang.org/">Solidity forum</a>.</p>
+<p>The Solidity forum serves as the place to propose and discuss new language features and their implementation in
+the early stages of ideation or modifications of existing features.</p>
+<p>As soon as proposals get more tangible, their
+implementation will also be discussed in the <a class="reference external" href="https://github.com/ethereum/solidity">Solidity GitHub repository</a>
+in the form of issues.</p>
+<p>In addition to the forum and issue discussions, we regularly host language design discussion calls in which selected
+topics, issues or feature implementations are debated in detail. The invitation to those calls is shared via the forum.</p>
+<p>We are also sharing feedback surveys and other content that is relevant to language design in the forum.</p>
+<p>If you want to know where the team is standing in terms or implementing new features, you can follow the implementation status in the <a class="reference external" href="https://github.com/ethereum/solidity/projects/43">Solidity Github project</a>.
+Issues in the design backlog need further specification and will either be discussed in a language design call or in a regular team call. You can
+see the upcoming changes for the next breaking release by changing from the default branch (<cite>develop</cite>) to the <a class="reference external" href="https://github.com/ethereum/solidity/tree/breaking">breaking branch</a>.</p>
+<p>For ad-hoc cases and questions, you can reach out to us via the <a class="reference external" href="https://gitter.im/ethereum/solidity-dev">Solidity-dev Gitter channel</a> — a
+dedicated chatroom for conversations around the Solidity compiler and language development.</p>
+<p>We are happy to hear your thoughts on how we can improve the language design process to be even more collaborative and transparent.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bugs.html" class="btn btn-neutral float-left" title="List of Known Bugs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="brand-guide.html" class="btn btn-neutral float-right" title="Solidity Brand Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2021, Ethereum.
+      <span class="commit">Revision <code>f8088553</code>.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+    <p>
+        <a href="credits-and-attribution.html">Credits and attribution</a>.
+    </p>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book fa-element"> RTD </span>
+
+    <span class="fa fa-element">
+    <input class="container_toggle" type="checkbox" id="switch" name="mode">
+    <label for="switch"></label>
+    </span>
+
+    <span class="fa fa-v fa-element"> v: latest <span class="fa fa-caret-down"></span></span>
+
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Downloads</dt> 
+            <dd><a href="//docs.soliditylang.org/_/downloads/en/latest/pdf/">pdf</a></dd>
+            
+            <dd><a href="//docs.soliditylang.org/_/downloads/en/latest/htmlzip/">html</a></dd>
+            
+            <dd><a href="//docs.soliditylang.org/_/downloads/en/latest/epub/">epub</a></dd>
+            
+        </dl>
+        <dl>
+            <dt>Versions</dt> 
+            <dd><a href="/en/latest/">latest</a></dd>
+            
+            <dd><a href="/en/stable/">stable</a></dd>
+            
+            <dd><a href="/en/v0.8.17/">v0.8.17</a></dd>
+            
+            <dd><a href="/en/v0.8.16/">v0.8.16</a></dd>
+            
+            <dd><a href="/en/v0.8.15/">v0.8.15</a></dd>
+            
+            <dd><a href="/en/v0.8.14/">v0.8.14</a></dd>
+            
+            <dd><a href="/en/v0.8.13/">v0.8.13</a></dd>
+            
+            <dd><a href="/en/v0.8.12/">v0.8.12</a></dd>
+            
+            <dd><a href="/en/v0.8.11/">v0.8.11</a></dd>
+            
+            <dd><a href="/en/v0.8.10/">v0.8.10</a></dd>
+            
+            <dd><a href="/en/v0.8.9/">v0.8.9</a></dd>
+            
+            <dd><a href="/en/v0.8.8/">v0.8.8</a></dd>
+            
+            <dd><a href="/en/v0.8.7/">v0.8.7</a></dd>
+            
+            <dd><a href="/en/v0.8.6/">v0.8.6</a></dd>
+            
+            <dd><a href="/en/v0.8.5/">v0.8.5</a></dd>
+            
+            <dd><a href="/en/v0.8.4/">v0.8.4</a></dd>
+            
+            <dd><a href="/en/v0.8.3/">v0.8.3</a></dd>
+            
+            <dd><a href="/en/v0.8.2/">v0.8.2</a></dd>
+            
+            <dd><a href="/en/v0.8.1/">v0.8.1</a></dd>
+            
+            <dd><a href="/en/v0.8.0/">v0.8.0</a></dd>
+            
+            <dd><a href="/en/v0.7.6/">v0.7.6</a></dd>
+            
+            <dd><a href="/en/v0.7.5/">v0.7.5</a></dd>
+            
+            <dd><a href="/en/v0.7.4/">v0.7.4</a></dd>
+            
+            <dd><a href="/en/v0.7.3/">v0.7.3</a></dd>
+            
+            <dd><a href="/en/v0.7.2/">v0.7.2</a></dd>
+            
+            <dd><a href="/en/v0.7.1/">v0.7.1</a></dd>
+            
+            <dd><a href="/en/v0.7.0/">v0.7.0</a></dd>
+            
+            <dd><a href="/en/v0.6.12/">v0.6.12</a></dd>
+            
+            <dd><a href="/en/v0.6.11/">v0.6.11</a></dd>
+            
+            <dd><a href="/en/v0.6.10/">v0.6.10</a></dd>
+            
+            <dd><a href="/en/v0.6.9/">v0.6.9</a></dd>
+            
+            <dd><a href="/en/v0.6.8/">v0.6.8</a></dd>
+            
+            <dd><a href="/en/v0.6.7/">v0.6.7</a></dd>
+            
+            <dd><a href="/en/v0.6.6/">v0.6.6</a></dd>
+            
+            <dd><a href="/en/v0.6.5/">v0.6.5</a></dd>
+            
+            <dd><a href="/en/v0.6.4/">v0.6.4</a></dd>
+            
+            <dd><a href="/en/v0.6.3/">v0.6.3</a></dd>
+            
+            <dd><a href="/en/v0.6.2/">v0.6.2</a></dd>
+            
+            <dd><a href="/en/v0.6.1/">v0.6.1</a></dd>
+            
+            <dd><a href="/en/v0.6.0/">v0.6.0</a></dd>
+            
+            <dd><a href="/en/v0.5.17/">v0.5.17</a></dd>
+            
+            <dd><a href="/en/v0.5.16/">v0.5.16</a></dd>
+            
+            <dd><a href="/en/v0.5.15/">v0.5.15</a></dd>
+            
+            <dd><a href="/en/v0.5.14/">v0.5.14</a></dd>
+            
+            <dd><a href="/en/v0.5.13/">v0.5.13</a></dd>
+            
+            <dd><a href="/en/v0.5.12/">v0.5.12</a></dd>
+            
+            <dd><a href="/en/v0.5.11/">v0.5.11</a></dd>
+            
+            <dd><a href="/en/v0.5.10/">v0.5.10</a></dd>
+            
+            <dd><a href="/en/v0.5.9/">v0.5.9</a></dd>
+            
+            <dd><a href="/en/v0.5.8/">v0.5.8</a></dd>
+            
+            <dd><a href="/en/v0.5.7/">v0.5.7</a></dd>
+            
+            <dd><a href="/en/v0.5.6/">v0.5.6</a></dd>
+            
+            <dd><a href="/en/v0.5.5/">v0.5.5</a></dd>
+            
+            <dd><a href="/en/v0.5.4/">v0.5.4</a></dd>
+            
+            <dd><a href="/en/v0.5.3/">v0.5.3</a></dd>
+            
+            <dd><a href="/en/v0.5.2/">v0.5.2</a></dd>
+            
+            <dd><a href="/en/v0.5.1/">v0.5.1</a></dd>
+            
+            <dd><a href="/en/v0.5.0/">v0.5.0</a></dd>
+            
+            <dd><a href="/en/v0.4.26/">v0.4.26</a></dd>
+            
+            <dd><a href="/en/v0.4.25/">v0.4.25</a></dd>
+            
+            <dd><a href="/en/v0.4.24/">v0.4.24</a></dd>
+            
+            <dd><a href="/en/v0.4.23/">v0.4.23</a></dd>
+            
+            <dd><a href="/en/v0.4.22/">v0.4.22</a></dd>
+            
+            <dd><a href="/en/v0.4.21/">v0.4.21</a></dd>
+            
+            <dd><a href="/en/v0.4.20/">v0.4.20</a></dd>
+            
+            <dd><a href="/en/v0.4.19/">v0.4.19</a></dd>
+            
+            <dd><a href="/en/v0.4.18/">v0.4.18</a></dd>
+            
+            <dd><a href="/en/v0.4.17/">v0.4.17</a></dd>
+            
+            <dd><a href="/en/v0.4.16/">v0.4.16</a></dd>
+            
+            <dd><a href="/en/v0.4.15/">v0.4.15</a></dd>
+            
+            <dd><a href="/en/v0.4.14/">v0.4.14</a></dd>
+            
+            <dd><a href="/en/v0.4.13/">v0.4.13</a></dd>
+            
+            <dd><a href="/en/v0.4.12/">v0.4.12</a></dd>
+            
+            <dd><a href="/en/v0.4.11/">v0.4.11</a></dd>
+            
+            <dd><a href="/en/v0.4.10/">v0.4.10</a></dd>
+            
+            <dd><a href="/en/v0.4.9/">v0.4.9</a></dd>
+            
+            <dd><a href="/en/v0.4.8/">v0.4.8</a></dd>
+            
+            <dd><a href="/en/v0.4.7/">v0.4.7</a></dd>
+            
+            <dd><a href="/en/v0.4.6/">v0.4.6</a></dd>
+            
+            <dd><a href="/en/v0.4.5/">v0.4.5</a></dd>
+            
+            <dd><a href="/en/v0.4.4/">v0.4.4</a></dd>
+            
+            <dd><a href="/en/v0.4.3/">v0.4.3</a></dd>
+            
+            <dd><a href="/en/v0.4.2/">v0.4.2</a></dd>
+            
+            <dd><a href="/en/v0.4.1/">v0.4.1</a></dd>
+            
+            <dd><a href="/en/v0.4.0/">v0.4.0</a></dd>
+            
+            <dd><a href="/en/v0.3.6/">v0.3.6</a></dd>
+            
+            <dd><a href="/en/v0.3.5/">v0.3.5</a></dd>
+            
+            <dd><a href="/en/v0.3.4/">v0.3.4</a></dd>
+            
+            <dd><a href="/en/v0.3.3/">v0.3.3</a></dd>
+            
+            <dd><a href="/en/v0.3.2/">v0.3.2</a></dd>
+            
+            <dd><a href="/en/v0.3.1/">v0.3.1</a></dd>
+            
+            <dd><a href="/en/v0.3.0/">v0.3.0</a></dd>
+            
+            <dd><a href="/en/v0.2.2/">v0.2.2</a></dd>
+            
+            <dd><a href="/en/v0.2.1/">v0.2.1</a></dd>
+            
+            <dd><a href="/en/v0.2.0/">v0.2.0</a></dd>
+            
+            <dd><a href="/en/v0.1.7/">v0.1.7</a></dd>
+            
+            <dd><a href="/en/v0.1.6/">v0.1.6</a></dd>
+            
+            <dd><a href="/en/v0.1.5/">v0.1.5</a></dd>
+            
+            <dd><a href="/en/v0.1.4/">v0.1.4</a></dd>
+            
+            <dd><a href="/en/v0.1.3/">v0.1.3</a></dd>
+            
+            <dd><a href="/en/v0.1.2/">v0.1.2</a></dd>
+            
+            <dd><a href="/en/develop/">develop</a></dd>
+            
+            <dd><a href="/en/breaking/">breaking</a></dd>
+            
+        </dl>
+        <dl>
+            
+            <dt>On Read the Docs</dt>
+            <dd>
+                <a href="//readthedocs.org/projects/solidity/?fromdocs=solidity">Project Home</a>
+            </dd>
+            <dd>
+                <a href="//readthedocs.org/builds/solidity/?fromdocs=solidity">Builds</a>
+            </dd>
+        </dl>
+    </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

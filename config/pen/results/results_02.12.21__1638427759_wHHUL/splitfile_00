@@ -1,0 +1,13 @@
+
+<a href="http://example.com/elsie" class="sister" id="link1"><!-- Elsie --></a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+"""
+soup=BeautifulSoup(html_doc, 'lxml')
+
+soup.find_all('a', href=True)
+soup.find_all('a', href=re.compile('^http'))
+def has_class_but_no_id(tag):
+    return tag.has_attr('class')

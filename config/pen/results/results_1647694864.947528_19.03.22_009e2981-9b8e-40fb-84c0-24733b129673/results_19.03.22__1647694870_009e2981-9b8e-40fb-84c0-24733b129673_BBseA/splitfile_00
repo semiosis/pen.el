@@ -1,0 +1,15 @@
+ 
+
+program_exists() {
+}
+
+is_file() {
+}
+
+is_file_readable() {
+}
+
+is_file_writeable() {
+}
+
+is_directory() {

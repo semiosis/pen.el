@@ -1,0 +1,8 @@
+cd /usr/local/share/info;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /usr/local/share/info;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"
+cd /usr/local/share/info;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputD9YNft" "--verify" "--" "/tmp/epg-signaturekIf0oq" "-" "#" "<==" "emacs"
+cd /usr/local/share/info;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputRnyz3B" "--verify" "--" "/tmp/epg-signaturezNTsiU" "-" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputNkhB63" "--verify" "--" "/tmp/epg-signatureelWFMO" "-" "#" "<==" "emacs"
+cd /root/notes;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputjznngx" "--verify" "--" "/tmp/epg-signaturel59ZvM" "-" "#" "<==" "emacs"

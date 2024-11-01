@@ -1,0 +1,11 @@
+ " " args))
+
+(defn sh-cmd
+  ""
+  [cmd]
+  (sh cmd))
+
+(defn sh-cmd-result
+  ""
+  [cmd]
+  (-> cmd

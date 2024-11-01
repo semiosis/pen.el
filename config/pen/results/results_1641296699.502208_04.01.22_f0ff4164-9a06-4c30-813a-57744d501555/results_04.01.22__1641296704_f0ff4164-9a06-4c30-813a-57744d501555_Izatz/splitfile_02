@@ -1,0 +1,1 @@
+ youtube-dl -o '%(title)s.%(ext)s' -f bestaudio --exec 'mplayer {}' https://www.youtube.com/results?search_query=jazz

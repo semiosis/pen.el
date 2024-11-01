@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print-newline
+# group: print
+# key: pl
+# --
+printf -- "%s\n" $0

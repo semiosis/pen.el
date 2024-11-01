@@ -1,0 +1,46 @@
+title: List songs given an artist or album
+tags: fun search
+doc: Given the title of a band or an album, list some popular songs.
+prompt: |
+  Given the title of a band or an album, list some popular songs.
+
+  <delim>
+  6 songs by Red Hot Chili Peppers
+  Track list:
+  - Under the Bridge
+  - Dani California
+  - Californication
+  - By The Way
+  - Higher Ground
+  - Tell Me Baby
+  <delim>
+  4 songs. Nirvana, Bleach
+  Track list:
+  - Love Buzz
+  - Blew
+  - School
+  - Mr Moustache
+  <delim>
+  3 songs. Dark side of the moon
+  Track list:
+  - Money
+  - Time
+  - The Great Gig in the Sky
+  <delim>
+  20 songs. <1>
+  Track list:
+  -
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- Artist/Album
+examples:
+- Beatles
+prefer-external: true
+postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
+pen-collation-postprocessor: uniqnosort

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: higher-order-function
+# group: fp
+# key: fp_hof
+# --
+// The higher-order-function takes an array and a function as arguments
+func mapForEach(arr []string, fn func(it string) int) []int {
+    var newArray = []int{}
+    for _, it := range arr {
+        // We are executing the method passed
+        newArray = append(newArray, fn(it))
+    }
+    return newArray
+}

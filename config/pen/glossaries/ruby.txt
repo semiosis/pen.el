@@ -1,0 +1,24 @@
+Guard
+    Automates various tasks by running custom
+    rules whenever file or directories are
+    modified.
+    
+    It's frequently used by software
+    developers, web designers, writers and
+    other specialists to avoid mundane,
+    repetitive actions and commands such as
+    "relaunching" tools after changing source
+    files or configurations.
+    
+    Common use cases include:
+    - an IDE replacement,
+    - web development tools,
+    - designing "smart" and "responsive" build
+      systems/workflows,
+    - automating various project tasks, and
+    - installing/monitoring various system
+      services.
+
+RuboCop
+    A Ruby static code analyzer (linter) and
+    code formatter. 

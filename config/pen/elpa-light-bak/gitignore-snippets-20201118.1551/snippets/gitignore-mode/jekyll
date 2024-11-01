@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Jekyll
+# contributor: Toptal & contributors
+# key: jekyll
+# --
+
+### Jekyll ###
+
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata

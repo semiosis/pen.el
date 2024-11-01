@@ -1,0 +1,11 @@
+ GY_LANG
+
+function run_env_cmd() {
+$1 | tee $2/env.log | $GY_CMD }
+main() {
+
+while : do
+
+sleep 1
+
+done

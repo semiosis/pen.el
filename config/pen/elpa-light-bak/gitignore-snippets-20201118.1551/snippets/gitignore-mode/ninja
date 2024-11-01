@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Ninja
+# contributor: Toptal & contributors
+# key: ninja
+# --
+
+### Ninja ###
+
+.ninja_deps
+.ninja_log

@@ -1,0 +1,6 @@
+
+             (if (> n 0)
+                    (cons (* n (factorial (- n 1)))
+                          (list-of-factorials2 (- n 1)))
+                  nil))
+LIST-OF-FACTOR

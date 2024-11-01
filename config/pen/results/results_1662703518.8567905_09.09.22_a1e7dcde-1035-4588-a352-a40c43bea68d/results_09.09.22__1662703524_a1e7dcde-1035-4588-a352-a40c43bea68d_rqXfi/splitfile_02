@@ -1,0 +1,2 @@
+import Control.Exception
+try (error "Error text") catch (\_ -> [])

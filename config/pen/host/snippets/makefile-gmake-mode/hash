@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hash
+# key: hash
+# --
+COMMIT_HASH=$(shell git rev-parse --short HEAD)

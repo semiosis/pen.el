@@ -1,0 +1,147 @@
+ephemeron
+    A data structure that solves two related
+    problems in garbage collected systems.
+    
+    On the one hand, an ephemeron provides a
+    notification when some object is about to
+    be collected.
+
+    On the other hand, an ephemeron allows
+    data to be associated with some object
+    without creating a reference to that
+    object that will prevent the object from
+    being collected.
+    
+    An ephemeron is a key-value pair, where
+    the key is the object that the ephemeron
+    guards, notifying the system when that
+    object is collectable, and the value can
+    be any data associated with the object
+    such as a property list, and which may be
+    emptyOn the other hand, an ephemeron
+    allows data to be associated with some
+    object without creating a reference to
+    that object that will prevent the object
+    from being collected.
+
+Dijkstra's algorithm
+Dijkstra's Shortest Path First algorithm
+SPF algorithm
+    [algorithm]
+
+    Finds the shortest path.
+
+    An algorithm for finding the shortest
+    paths between nodes in a graph, which may
+    represent, for example, road networks.
+
+Heaps
+    Used in many famous algorithms such as
+    Dijkstra's algorithm for finding the
+    shortest path, the heap sort sorting
+    algorithm, implementing priority queues,
+    and more.
+    
+    Essentially, heaps are the data structure
+    you want to use when you want to be able
+    to access the maximum or minimum element
+    very quickly.
+
+Radix tree
+Radix trie
+Compact prefix tree
+    A data structure that represents a
+    space-optimized trie in which each node
+    that is the only child is merged with its
+    parent.
+
+search tree
+    an ordered tree data structure used to
+    store a dynamic set or associative array
+    where the keys are usually strings.
+
+trie
+digital tree
+prefix tree
+    [search tree]
+        
+    Unlike a binary search tree, no node in
+    the tree stores the key associated with
+    that node; instead, its position in the
+    tree defines the key with which it is
+    associated.
+    
+    All the descendants of a node have a
+    common prefix of the string associated
+    with that node, and the root is associated
+    with the empty string.
+
+segment tree
+statistic tree
+    A tree data structure used for storing
+    information about intervals, or segments.
+    
+    It allows querying which of the stored
+    segments contain a given point.
+    
+    It is, in principle, a static structure;
+    that is, it's a structure that cannot be
+    modified once it's built.
+    
+    A similar data structure is the interval
+    tree.
+
+Skip list
+    - sorted
+
+    https://www.youtube.com/watch?v=ypod5jeYzAU
+
+    The idea is simple, we create multiple
+    layers in a sorted list so that we can
+    skip some nodes.
+
+    A data structure that allows search
+    complexity as well as insertion complexity
+    within an ordered sequence of elements.
+    
+    Thus it can get the best features of an
+    array while maintaining a linked list-like
+    structure
+
+treap
+    A binary tree in which every node has both
+    a search key and a priority, where the
+    inorder sequence of search keys is sorted
+    and each node's priority is smaller than
+    the priorities of its children.
+
+    In other words, a treap is simultaneously
+    a binary search tree for the search keys
+    and a (min-)heap for the ...
+
+zip tree
+    A form of randomized binary search tree.
+
+    One can view a zip tree as a treap (Seidel
+    and Aragon 1996) in which priority ties
+    are allowed and in which insertions and
+    deletions are done by unmerging and
+    merging paths ("unzipping" and "zipping")
+    rather than by doing rotations.
+
+    Alternatively, one can view a zip tree as
+    a binary-tree representation of a skip
+    list (Pugh 1990). Doing insertions and
+    deletions by unzipping and zipping instead
+    of by doing rotations avoids some pointer
+    changes and can thereby improve
+    efficiency.
+
+    Representing a skip list as a binary tree
+    avoids the need for nodes of different
+    sizes and can speed up searches and
+    updates. Zip trees are at least as simple
+    as treaps and skip lists but offer
+    improved efficiency. Their simplicity
+    makes them especially amenable to
+    concurrent operations.

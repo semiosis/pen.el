@@ -1,0 +1,410 @@
+HTTP/1.1 200 OK
+Server: nginx/1.24.0
+Date: Sun, 31 Dec 2023 22:24:46 GMT
+Content-Type: text/html
+Content-Length: 5576
+Connection: keep-alive
+Last-Modified: Mon, 27 Sep 2021 14:58:35 GMT
+ETag: "5991-5ccfb54cf56ac-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bayesian networks &#8212; ProbLog: Probabilistic Programming</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/problog.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/problog_editor_advanced.js"></script>
+    <script type="text/javascript" src="../../_static/ace.js"></script>
+    <script type="text/javascript" src="../../_static/mode-problog.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Rolling dice" href="03_dice.html" />
+    <link rel="prev" title="Tossing coins" href="01_coins.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div id="wrapper">
+
+
+  <nav id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          ProbLog</a>
+      </div>
+
+      <!-- Top menu -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav top-nav">
+            
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="https://dtai.cs.kuleuven.be/problog/index.html#download">Download</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../applications.html">Applications and Datasets</a></li>
+                <li><a href="https://dtai.cs.kuleuven.be/problog/index.html#help">Help</a></li>
+                <li><a href="https://dtai.cs.kuleuven.be/problog/index.html#people">People</a></li>
+                <li><a href="https://problog.readthedocs.io/">Documentation</a></li>
+                <li><a href="../../tutorial.html">Tutorial</a></li>
+                <li><a href="../../editor.html">Online</a></li>
+            
+            
+
+              
+            
+            
+            
+            
+            
+         </ul>
+
+          
+            
+          
+      </div>
+  </div><!-- /container-fluid -->
+</nav>
+
+<div id="page-wrapper">
+<div class="container">
+  <div class="row"> 
+    <div class="col-md-8 content">
+        
+<div class="row">
+<div class="col-xs-3">
+    <a href="01_coins.html" title="Previous Chapter: Tossing coins"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Tossing coins</span>
+    </a>
+</div>
+<div class="col-xs-6">
+</div>
+<div class="col-xs-3">
+    <a href="03_dice.html" title="Next Chapter: Rolling dice"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Rolling dice &raquo;</span>
+    </a>
+</div>
+</div><!-- /row -->
+      
+  <div class="section" id="bayesian-networks">
+<h1>Bayesian networks<a class="headerlink" href="#bayesian-networks" title="Permalink to this headline">¶</a></h1>
+<p>We illustrate the use of Bayesian networks in ProbLog using the famous
+<a class="reference external" href="http://www.bnlearn.com/bnrepository/#earthquake">Earthquake</a> example.</p>
+<p>Suppose there is a burglary in our house with probability 0.7 and an
+earthquake with probability 0.2. Whether our alarm will ring depends on
+both burglary and earthquake:</p>
+<ul class="simple">
+<li>if there is a burglary and an earthquake, the alarm rings with
+probability 0.9;</li>
+<li>if there is only a burglary, it rings with probability 0.8;</li>
+<li>if there is only an earthquake, it rings with probability 0.1;</li>
+<li>if there is neither a burglary nor an earthquake, the alarm doesn’t
+ring.</li>
+</ul>
+<p>To model this as a Bayesian network, one would use three random
+variables, <em>burglary</em>, <em>earthquake</em> and <em>alarm</em>, with <em>burglary</em> and
+<em>earthquake</em> being parents of <em>alarm</em>. To model this in ProbLog, there
+are two possible solutions: using ‘plain’ ProbLog or using some
+synthactic sugar called probabilistic clauses and annotated disjunctions. We now explain both
+solutions.</p>
+digraph alarm1 {
+burglary -&gt; alarm;
+earthquake -&gt; alarm;
+}
+<p><a class="reference external" href="https://problog.readthedocs.io/en/latest/modeling_basic.html#problog">ProbLog syntax documentation</a></p>
+<div class="section" id="probabilistic-facts">
+<h2>Probabilistic facts<a class="headerlink" href="#probabilistic-facts" title="Permalink to this headline">¶</a></h2>
+<p>In ‘plain’ ProbLog, we can encode the Bayesian network as follows.</p>
+<ul class="simple">
+<li>Since <em>burglary</em> and <em>earthquake</em> are random variable without
+parents, we can simply encode them as probabilistic facts, with the
+proper probability.</li>
+<li>To express the dependence of the random variable <em>alarm</em> on its
+parents <em>burglary</em> and <em>earthquake</em>, we use one Prolog rule for every
+possible state of the parents.<ul>
+<li>The first rule covers the case in which burglary and earthquake
+are both true. The required rule is <em>alarm :- burglary,
+earthquake, p_alarm1</em>, with <em>p_alarm1</em> an auxiliary atom defined
+by means of the probabilistic fact <em>0.9::p_alarm1</em>. The point of
+adding this atom is to ensure that the probability of <em>alarm</em> in
+this case will be 0.9 as required.</li>
+<li>The second rule covers the case that burglary is true but
+earthquake is false. Note that earthquake being false is encoded
+using the “<em>\+</em>” symbol for negation (as in regular Prolog).</li>
+<li>The third rule covers the case that burglary is false and
+earthquake is true.</li>
+<li>The fourth case (burglary and earthquake are both false) does not
+require a rule. This is because, according to our Bayesian
+network, the probability of alarm is 0 in this case.</li>
+</ul>
+</li>
+</ul>
+<p>We obtain the following ProbLog program.</p>
+<div class="col-md-12"><div class="problog-editor" data-width="100%" data-task="prob" data-advanced="false" data-trackurl="false" data-autosize="true">0.7::burglary.
+0.2::earthquake.
+0.9::p_alarm1.
+0.8::p_alarm2.
+0.1::p_alarm3.
+
+alarm :- burglary, earthquake, p_alarm1.
+alarm :- burglary, \+earthquake, p_alarm2.
+alarm :- \+burglary, earthquake, p_alarm3.
+
+evidence(alarm,true).
+
+query(burglary).
+query(earthquake).</div></div><p>When pressing ‘Evaluate’, ProbLog2 calculates the probability of there
+being a burglary or an earthquake, given the evidence that the alarm
+rang. The resulting marginals are: <em>P(burglary)=0.9896</em> and
+<em>P(earthquake)=0.2275</em>.</p>
+</div>
+<div class="section" id="probabilistic-clauses">
+<h2>Probabilistic clauses<a class="headerlink" href="#probabilistic-clauses" title="Permalink to this headline">¶</a></h2>
+<p>While the above is a correct encoding of the given Bayesian network, it
+is perhaps not very intuitive due to the auxiliary atoms. Fortunately,
+ProbLog2 offers some syntactic sugar called <strong>probabilistic clauses</strong>
+to encode this in a more readable way. Above, we encoded the information
+that the conditional probability of an alarm given a burglary and an
+earthquake equals 0.9 using the rule <em>alarm :- burglary, earthquake,
+p_alarm1</em>, plus the probabilistic fact <em>0.9::p_alarm1</em>. We can replace
+both with a single probabilistic clause of the form <em>0.9::alarm :-
+burglary, earthquake</em>. This should be read as: if burglary and
+earthquake are true, this causes alarm to become true with probability
+0.9 if there is a burglary and an earthquake. As this example illustrates, a probabilistic clause has a body,
+just like regular ProbLog rules, and a head. The difference is that now, the head is
+annotated with a probability. By also using probabilistic clauses
+for the other rules in the ProbLog encoding of the
+Bayesian network, we get the following program.</p>
+<div class="col-md-12"><div class="problog-editor" data-width="100%" data-task="prob" data-advanced="false" data-trackurl="false" data-autosize="true">0.7::burglary.
+0.2::earthquake.
+
+0.9::alarm :- burglary, earthquake.
+0.8::alarm :- burglary, \+earthquake.
+0.1::alarm :- \+burglary, earthquake.
+
+evidence(alarm,true).
+query(burglary).
+query(earthquake).</div></div><p>As you can verify by pressing ‘Evaluate’, this returns the same
+marginals as the ‘plain’ ProbLog encoding: <em>P(burglary)=0.9896</em> and
+<em>P(earthquake)=0.2275</em>. This is not a coincidence: the two programs are
+equivalent (but the program with probabilistic clauses has the
+advantage of not needing any auxiliary atoms).</p>
+<p><a class="reference external" href="https://problog.readthedocs.io/en/latest/modeling_basic.html#probabilistic-clauses">Probabilistic clauses documentation</a></p>
+</div>
+<div class="section" id="first-order">
+<h2>First-order<a class="headerlink" href="#first-order" title="Permalink to this headline">¶</a></h2>
+<p>To illustrate the use of <em>first-order</em> ProbLog programs, we show below a
+first-order extension of the <em>Alarm</em> example.</p>
+digraph alarm2 {
+burglary -&gt; alarm;
+earthquake -&gt; alarm;
+alarm -&gt; &quot;calls(john)&quot;;
+alarm -&gt; &quot;calls(...)&quot;;
+alarm -&gt; &quot;calls(mary)&quot;;
+}
+<p>Suppose there are <em>N</em> people and each person independently calls the
+police with a certain probability, depending on the alarm ringing or
+not: if the alarm rings, the probability of calling is 0.8, otherwise it
+is 0.1. This can be modelled as follows. We again use probabilistic clauses
+and show the case <em>N=2</em> (two people).</p>
+<div class="col-md-12"><div class="problog-editor" data-width="100%" data-task="prob" data-advanced="false" data-trackurl="false" data-autosize="true">person(john).
+person(mary).
+
+0.7::burglary.
+0.2::earthquake.
+
+0.9::alarm :- burglary, earthquake.
+0.8::alarm :- burglary, \+earthquake.
+0.1::alarm :- \+burglary, earthquake.
+
+0.8::calls(X) :- alarm, person(X).
+0.1::calls(X) :- \+alarm, person(X).
+
+evidence(calls(john),true).
+evidence(calls(mary),true).
+
+query(burglary).
+query(earthquake).</div></div><p>When pressing ‘Evaluate’, ProbLog2 calculates the probability of there
+being a burglary or an earthquake, given the evidence that both <em>john</em>
+and <em>mary</em> called. We obtain <em>P(burglary)=0.981939</em> and
+<em>P(earthquake)=0.226851</em>.</p>
+<p>In general, any Boolean Bayesian network can be modeled in ProbLog using
+the above methodology. This can also be extended to non-Boolean Bayesian
+networks (in which some variables can take more than two possible
+values), by using annotated disjunctions with multiple atoms in the head.</p>
+</div>
+<div class="section" id="annotated-disjunctions-dealing-with-multi-valued-variables">
+<h2>Annotated disjunctions: Dealing with multi-valued variables<a class="headerlink" href="#annotated-disjunctions-dealing-with-multi-valued-variables" title="Permalink to this headline">¶</a></h2>
+<p>Since the random variables in the Bayesian network are all Boolean, we only need a single literal in the head of the rules. We can extend the Bayesian network to have  a multi-valued variable by indicating the severity of the earthquake. The literal <code class="docutils literal notranslate"><span class="pre">earthquake</span></code> now has three possible values <code class="docutils literal notranslate"><span class="pre">none</span></code>, <code class="docutils literal notranslate"><span class="pre">mild</span></code>, <code class="docutils literal notranslate"><span class="pre">heavy</span></code> instead of previously two (no or yes).
+The probabilities of each value is denoted by the <strong>annotated disjunction</strong> in <em>0.01::earthquake(heavy); 0.19::earthquake(mild); 0.8::earthquake(none).</em> An annotated disjunction is similar to a probabilistic disjunction, but with a different head. Instead of it being one atom annotated with a probability, it is now a disjunction of atoms each annotated with a probability.</p>
+<div class="col-md-12"><div class="problog-editor" data-width="100%" data-task="prob" data-advanced="false" data-trackurl="false" data-autosize="true">person(john).
+person(mary).
+
+0.7::burglary.
+0.01::earthquake(heavy); 0.19::earthquake(mild); 0.8::earthquake(none).
+
+0.90::alarm :-   burglary, earthquake(heavy).
+0.85::alarm :-   burglary, earthquake(mild).
+0.80::alarm :-   burglary, earthquake(none).
+0.10::alarm :- \+burglary, earthquake(mild).
+0.30::alarm :- \+burglary, earthquake(heavy).
+
+0.8::calls(X) :- alarm, person(X).
+0.1::calls(X) :- \+alarm, person(X).
+
+evidence(calls(john),true).
+evidence(calls(mary),true).
+
+query(burglary).
+query(earthquake(_)).</div></div><p><a class="reference external" href="https://problog.readthedocs.io/en/latest/modeling_basic.html#annotated-disjunctions">Annotated disjunctions documentation</a></p>
+</div>
+</div>
+
+
+        
+<div class="row">
+<div class="col-xs-3">
+    <a href="01_coins.html" title="Previous Chapter: Tossing coins"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Tossing coins</span>
+    </a>
+</div>
+<div class="col-xs-6">
+</div>
+<div class="col-xs-3">
+    <a href="03_dice.html" title="Next Chapter: Rolling dice"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Rolling dice &raquo;</span>
+    </a>
+</div>
+</div><!-- /row -->
+    </div>
+    <div class="col-md-4 menu">
+        <p class="caption"><span class="caption-text">Basic Inference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_coins.html">Tossing coins</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bayesian networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_dice.html">Rolling dice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_rule_probs.html">Semantics of Rules with Probabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_pgraph.html">Probabilistic graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_smokers.html">Social networks (Friends &amp; Smokers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_more_features.html">Prolog built-ins and flexible probabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_higherorderfunctions.html">Higher-order functions / Meta-predicates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_inhibitioneffects.html">Inhibition effects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Parameter learning</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../learning/01_bayes.html">Bayesian networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/02_smokers.html">Social networks (Friends &amp; Smokers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/03_naivebayes.html">Naive Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/04_noisyor.html">Noisy-or</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning/05_structure_learning.html">Structure Learning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Sampling</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sampling/02_arithmeticexpressions.html">Inferring an Arithmetic Expression</a></li>
+</ul>
+<p class="caption"><span class="caption-text">MPE Inference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mpe/01_bn.html">Bayesian network</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Decision-Theoretic ProbLog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dtproblog/01_umbrella.html">Umbrella</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dtproblog/02_viral.html">Viral Marketing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples from tutorial slides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/01_basic.html">Very basic examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/02_more.html">More examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/03_stochmem.html">Stochastic memoization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/04_bayesian_learning.html">Bayesian learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/05_complexity.html">Complexity of querying</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutslides/06_smart_students.html">Smart students</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Various examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../various/01_montyhall.html">Monty Hall puzzle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/02_bousi.html">BousiProlog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/03_crowds.html">Crowd protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/04_nampally.html">Examples from PLP 2015</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/05_numberguessing.html">Nested Number Guessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/06_hmm.html">Hidden Markov Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/06_pcfg.html">Probabilistic Context Free Grammars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/06_slp.html">Stochastic Logic Programs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/07_ppdatalog.html">Probabilistic-Programming Datalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/08_bayesian_dataflow.html">Bayesian Dataflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/09_airflap.html">Aircraft Flap Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/10_causalpower.html">Estimating Causal Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/10_prism.html">PRISM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/11_semweb.html">Semantic Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/12_pingpong.html">Ping Pong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/13_incomplete_info.html">Incomplete Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/14_robot_key.html">Do-Calculus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/15_spaghetti.html">Bounds for a Query with Infinite Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/16_cplogic.html">Alternative view: CP-logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../various/17_taxonomy.html">Taxonomy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/01_python_interface.html">ProbLog as a Python library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/02_knowledgebases.html">Database/CSV knowledge base</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/03_aproblog.html">Algebraic ProbLog (semirings)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/04_prolog.html">Using the Prolog engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/10_urnballmodel.html">Urn-ball Model with Poisson Prior</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python recipes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/01-compile-once.html">Recipe: compile-once evaluate-many</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/02-calling_python_from_problog.html">Calling Python from ProbLog</a></li>
+</ul>
+
+    </div>
+    
+ 
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        problog.init();
+    });
+</script>
+</div>
+</div>
+<footer class="footer">
+
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; 2015-2020, KU Leuven · DTAI Research Group.<br/>
+    </p>
+  </div>
+</footer>
+    </div>  <!-- wrapper -->
+  </body>
+</html>

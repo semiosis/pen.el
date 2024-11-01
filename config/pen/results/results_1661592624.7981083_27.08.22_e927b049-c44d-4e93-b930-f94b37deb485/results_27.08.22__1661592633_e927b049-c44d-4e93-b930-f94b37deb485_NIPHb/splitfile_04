@@ -1,0 +1,26 @@
+ a list of JSON objects, one for each record.
+  jsons <- map (toJSON . fmap (\m -> m {-caret-})) maps
+
+  -- Convert the list of JSON objects into a list of strings, one for each record.
+  strings <- map (encodeUtf8 . toString) jsons
+
+  -- Print the list of strings to stdout.
+  putStrLn strings
+EOD
+
+# python files
+
+cat draft.py <<EOD
+import csv, json, sys, codecs
+from collections import OrderedDict
+from itertools import islice
+from operator import itemgetter as getter
+
+
+def read_csv(path):
+    with open(path) as f:
+        reader = csv.DictReader(f)
+        return [row for row in reader]
+
+
+def write_json(data, path

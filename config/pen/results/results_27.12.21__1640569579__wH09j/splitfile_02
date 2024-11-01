@@ -1,0 +1,6 @@
+"hugo" is a command line tool for building and publishing a hugo site.
+
+Usage:
+  hugo [help] [--source=<path>] [--destination=<path>] [--baseURL=<URL>] [--b
+lock=<theme>] [--cleanDestinationDir] [--disableKinds=<kind1,kind2>] [--disable
+URLs] [--disableRSS] [--disableSitemap] [--

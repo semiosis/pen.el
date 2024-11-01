@@ -1,0 +1,4 @@
+ (map first (partition 2 (iterate next (range))))
+
+(defn convert-string-to-keyword [string] 
+  (let [kh (case (keywordize string)

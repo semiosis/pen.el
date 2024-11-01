@@ -1,0 +1,1 @@
+- golang guru: v is an interface{} that may be a float64, a string, or just a regular object

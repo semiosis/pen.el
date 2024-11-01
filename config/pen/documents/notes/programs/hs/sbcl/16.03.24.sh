@@ -1,0 +1,2 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "I \"Kingse280ac\" \"e280ad15e280ac:e280ad5\"" "#" "<==" "sbcl-ql"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "I \"Petere280ac\" \"e280ad4e280ac:e280ad1e280ac-e280ad2e280ac\"" "#" "<==" "sbcl-ql"

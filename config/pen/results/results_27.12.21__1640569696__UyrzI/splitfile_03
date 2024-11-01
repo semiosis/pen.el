@@ -1,0 +1,11 @@
+"sysstat" is a collection of performance monitoring tools for Linux.
+The package is intended to be used by system administrators and
+power-users.
+
+The package contains the following tools:
+
+- sar: collects and reports system activity information;
+- sadf: displays data in various formats (standard output, XML,
+  HTML);
+- iostat: reports CPU utilization and disk I/O statistics;
+- pidstat: reports process statistics (CPU, memory, file system

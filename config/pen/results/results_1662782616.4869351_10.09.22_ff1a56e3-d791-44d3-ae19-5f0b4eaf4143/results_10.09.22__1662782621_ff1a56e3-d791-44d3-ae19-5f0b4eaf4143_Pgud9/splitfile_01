@@ -1,0 +1,6 @@
+
+	you could add another case:
+	case time.Time:
+		// do stuff with time.Time
+- you: Thanks, that helps a lot!
+- golang guru: You're welcome. Now I see

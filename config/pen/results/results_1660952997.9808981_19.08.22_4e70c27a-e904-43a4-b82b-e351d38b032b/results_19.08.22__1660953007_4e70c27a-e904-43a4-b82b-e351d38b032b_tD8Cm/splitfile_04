@@ -1,0 +1,38 @@
+# Playbook for (require 'clojure-mode)
+(require 'cider)
+(require 'ob-clojure)
+
+(require 'clomacs)
+
+(if (inside-docker-p)
+    (setq cider-lein-command "pen-lein"))
+
+(setq cider-auto-jump-to-error nil)
+(setq cider-repl-pop-to-buffer-on-connect nil)
+
+(pen-with 'cider
+          ;; Fixes super annoying message
+          (setq cider-allow-jack-in-without-project t))
+
+(defun pen-4clojure-check-and-proceed ()
+  "Check the answer and show the next question if it worked."
+  (interactive)
+  (let ((result (4clojure-check-answers)))
+    (unless (string-match "failed." result)
+       (4clojure-next-question))))
+---
+- name: 4clojure
+  hosts: all
+  gather_facts: no
+  vars:
+    clojure_version: "1.10.1"
+    lein_version: "2.5.1"
+    lein_version_alt: "2.6.1"
+    lein_version_alt_2: "2.6.2"
+    lein_version_alt_3: "2.6.3"
+    lein_version_alt_4: "2.6.4"
+    lein_version_alt_5: "2.6.5"
+    lein_version_alt_6: "2.6.6"
+    lein_version_alt_7: "2.6.7"
+    lein_version_alt_8: "2.6.8"
+    lein_version_alt_

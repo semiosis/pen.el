@@ -1,0 +1,1139 @@
+True
+False
+None
+Ellipsis
+NotImplemented
+    [builtin constant]
+
+    https://sadh.life/post/builtins/#constants
+
+    Ellipsis
+        Represented in two forms:
+        - Ellipsis
+        - ...
+
+        It mostly exists to support type
+        annotations, and for some very fancy
+        slicing support.
+
+    True
+    False
+        Actually function as 1 and 0.
+
+    NotImplemented
+        Used inside a class’ operator
+        definitions, when you want to tell
+        Python that a certain operator isn’t
+        defined for this class.
+
+builtin constants
+    There’s exactly 5 constants: 
+
+    - True,
+    - False,
+    - None,
+    - Ellipsis, and
+    - NotImplemented.
+
+nonlocal scope
+enclosing scope
+    https://sadh.life/post/builtins/#enclosing-scope
+
+    Refers to the scope of the classes or
+    functions inside which the current
+    function/class lives.
+
+nonlocal
+    [keyword]
+
+    https://sadh.life/post/builtins/#enclosing-scope
+
+    Tell the interpreter that you don’t mean
+    to define a new variable in the local
+    scope, but you want to modify the one in
+    the enclosing scope.
+
+builtin scope
+    https://sadh.life/post/builtins/#builtin-scope
+
+    It’s the scope where essentially all of
+    Python’s top level functions are defined,
+    such as len, range and print.
+    
+    When a variable is not found in the local,
+    enclosing or global scope, Python looks
+    for it in the builtins.
+
+cloudpickle
+    [library]
+
+
+trimesh
+    [library]
+
+    Library for loading and using triangular
+    meshes.
+
+uvloop
+    A fast, drop-in replacement of the built-
+    in asyncio event loop.
+    
+    uvloop is implemented in Cython and uses
+    libuv under the hood.
+
+httptools
+    A Python binding for the nodejs HTTP
+    parser.
+
+WSGI
+Web Server Gateway Interface
+whiskey
+WIZ-ghee
+    A simple calling convention for web
+    servers to forward requests to web
+    applications or frameworks written in the
+    Python programming language.
+
+ASGI
+    A spiritual successor to WSGI, intended to
+    provide a standard interface between
+    async-capable Python web servers,
+    frameworks, and applications.
+    
+    Where WSGI provided a standard for
+    synchronous Python apps, ASGI provides one
+    for both asynchronous and synchronous
+    apps, with a WSGI backwards-compatibility
+    implementation and multiple servers and
+    application frameworks.
+
+uvicorn
+    A lightning-fast ASGI server
+    implementation, using uvloop and
+    httptools.
+    
+    Until recently Python has lacked a minimal
+    low-level server/application interface for
+    asyncio frameworks.
+    
+    The ASGI specification fills this gap, and
+    means we're now able to start building a
+    common set of tooling usable across all
+    asyncio frameworks.
+selectors
+    [builtin module]
+
+    Allows high-level and efficient I/O
+    multiplexing, built upon the `select`
+    module primitives.
+
+select
+    [builtin module]
+
+    Supports asynchronous I/O on multiple file
+    descriptors.
+
+Python Package Index
+PyPI
+
+.pypirc
+    Allows you to define the configuration for
+    package indexes (referred to here as
+    “repositories”), so that you don’t have to
+    enter the URL, username, or password
+    whenever you upload a package with twine
+    or flit.
+
+setup_utils
+setuputils
+    A utility module to automate away
+    boilerplate in Python 3 setup scripts.
+    
+    See the module docstrings for more
+    information.
+
+    py i setuputils3
+
+.pyi
+    The i in .pyi stands for "Interface".
+
+    $MYGIT/returntocorp/semgrep/stubs/astpretty.pyi
+
+@abc.abstractmethod
+    v +/"@abc.abstractmethod" "$MYGIT/KSneijders/AoE2ScenarioParser/AoE2ScenarioParser/objects/aoe2_object.py"
+
+    Create class hierarchy with static methods
+    and abstract methods that need
+    implementation.
+
+    A class that has a metaclass derived from
+    ABCMeta cannot be instantiated unless all
+    of its abstract methods and properties are
+    overridden.
+
+@property
+    [built-in decorator]
+
+    Create attributes that execute code like
+    functions when they are 'got' or 'set'.
+
+regular package
+    Typically implemented as a directory
+    containing an __init__.py file.
+
+    When a regular package is imported, this
+    __init__.py file is implicitly executed,
+    and the objects it defines are bound to
+    names in the package’s namespace.
+
+    The __init__.py file can contain the same
+    Python code that any other module can
+    contain, and Python will add some
+    additional attributes to the module when
+    it is imported.
+
+    For example, the following file system
+    layout defines a top level parent package
+    with three subpackages:
+
+    parent/
+        __init__.py
+        one/
+            __init__.py
+        two/
+            __init__.py
+        three/
+            __init__.py
+
+    The first import of a subpackage of a
+    package will execute the top packages'
+    __init__.py followed by the subpackage.
+
+    import parent.one
+        execute parent/__init__.py
+        execute parent/one/__init__.py.
+
+    import parent.two
+        execute parent/two/__init__.py
+
+    import parent.three
+        execute parent/three/__init__.py
+
+daemon thread
+    https://docs.python.org/2/library/threading.html#thread-objects
+
+    A thread can be flagged as a “daemon
+    thread”.
+    
+    The significance of this flag is that the
+    entire Python program exits when only
+    daemon threads are left.
+    
+    The initial value is inherited from the
+    creating thread.
+    
+    The flag can be set through the daemon
+    property.
+
+OmegaConf
+    A hierarchical configuration system, with
+    support for merging configurations from
+    multiple sources (YAML config files,
+    dataclasses/objects and CLI arguments)
+    providing a consistent API regardless of
+    how the configuration was created.
+
+Gunicorn
+    A stand-alone WSGI web application server
+    which offers a lot of functionality.
+    
+    It natively supports various frameworks
+    with its adapters, making it an extremely
+    easy to use drop-in replacement for many
+    development servers that are used during
+    development.
+
+dist-packages
+    The debian-specific directory where apt
+    and friends install their stuff.
+
+site-packages
+    The standard pip directory.
+
+mypy
+    An optional static type checker for Python
+    that aims to combine the benefits of
+    dynamic (or "duck") typing and static
+    typing.
+    
+    Mypy combines the expressive power and
+    convenience of Python with a powerful type
+    system and compile-time type checking.
+    
+    Mypy type checks standard Python programs
+    ; run them using any Python VM with
+    basically no runtime overhead.
+
+    pip show mypy
+
+unittest
+    [package]
+
+    https://ongspxm.github.io/blog/2016/11/assertraises-testing-for-errors-in-unittest/
+
+assertRaises
+    [#unittest]
+    [function]
+
+    Can now do the comparism on the exception
+    is carried out and thus produce a useful
+    result.
+    
+    If any of you are interested in the more
+    technical details, take a look at the
+    unittest source code (source code is
+    always available,
+    
+    another reason why python rocks)
+
+test fixture
+    [#unittest]
+
+    A test fixture represents the preparation
+    needed to perform one or more tests, and
+    any associate cleanup actions.
+    
+    This may involve, for example, creating
+    temporary or proxy databases, directories,
+    or starting a server process.
+
+test case
+    [#unittest]
+
+    A test case is the individual unit of
+    testing.
+    
+    It checks for a specific response to a
+    particular set of inputs.
+    
+    unittest provides a base class, TestCase,
+    which may be used to create new test
+    cases.
+
+test suite
+    [#unittest]
+
+    A test suite is a collection of test
+    cases, test suites, or both.
+    
+    It is used to aggregate tests that should
+    be executed together.
+
+test runner
+    [#unittest]
+
+    A test runner is a component which
+    orchestrates the execution of tests and
+    provides the outcome to the user.
+    
+    The runner may use a graphical interface,
+    a textual interface, or return a special
+    value to indicate the results of executing
+    the tests.
+
+constructor
+    This is a constructor. You can tell because it has 2 sets of parentheses
+
+    vim +/"input = Dense(10)(inputs)" "$MYGIT/GoogleCloudPlatform/keras-idiomatic-programmer/src/handbook1/part1/snippet5.py"
+
+type
+class
+    Used interchangeably in python.
+
+mro
+method resolution order
+    [#python]
+
+    someclass.mro()
+
+    A class can inherit features and
+    attributes from multiple classes and thus,
+    implements multiple inheritance.
+    
+    MRO or Method Resolution Order is the
+    hierarchy in which base classes are
+    searched when looking for a method in the
+    parent class.
+
+lru_cache
+least recently used cache
+    [decorator]
+
+    ewwlinks +/"Python Language lru_cache" "https://riptutorial.com/python/example/19930/lru-cache"
+
+import
+    Import from file in same directory.
+        vim +/"from . import util" "/usr/local/lib/python3.5/dist-packages/spacy/__init__.py"
+
+    Import from directory/module in same directory.
+        vim +/"from .glossary import explain" "/usr/local/lib/python3.5/dist-packages/spacy/__init__.py"
+
+*args
+    Will give you all function parameters as a
+    tuple.
+
+**args
+**kwargs
+    Will give you all keyword arguments except
+    for those corresponding to a formal
+    parameter as a dictionary.
+
+print(id(age))
+    get memory location of a variable using
+    id() function
+
+reflection
+    type()
+    isinstance()
+    callable()
+    dir()
+    getattr()
+
+Reflection-enabling function
+    Examples:
+    - type()
+    - isinstance()
+    - callable()
+    - dir()
+    - getattr()
+
+scipy stack
+numpy stack
+    - scipy
+    - Matplotlib
+    - pandas
+    - SymPy
+    - and many more...
+
+scipy
+    modules for optimization:
+    - linear algebra
+    - integration
+    - interpolation
+    - special functions
+      https://docs.scipy.org/doc/scipy/reference/special.html
+    - FFT
+    - signal processing
+    - image processing
+    - ODE solvers
+
+    builds on:
+    - NumPy array
+
+scikit-learn
+    [ml library]
+
+    algorithms for:
+    - classification
+    - regression
+    - clustering
+
+    algorithms
+    - SVM
+    - random forests
+    - gradient boosting
+    - k-means
+    - DBSCAN
+    
+    Designed for:
+    - NumPy
+    - SciPy
+
+scikit-image
+    algorithms for:
+    - segmentatio
+    - geometric transformations
+    - color space manipulation
+    - analysis
+    - filtering
+    - morphology
+    - feature detection
+    
+    Designed for:
+    - NumPy
+    - SciPy
+
+pip vs conda
+    Pip installs Python packages whereas conda
+    installs packages which may contain
+    software written in any language.
+
+conda
+    A cross platform package and environment
+    manager that installs and manages conda
+    packages from the Anaconda repository as
+    well as from the Anaconda Cloud.
+    
+    Conda packages are binaries.
+    
+    There is never a need to have compilers
+    available to install them.
+    
+    Additionally conda packages are not
+    limited to Python software.
+    
+    They may also contain C or C++ libraries,
+    R packages or any other software.
+
+pip
+    The Python Packaging Authority’s
+    recommended tool for installing packages
+    from the Python Package Index, PyPI.
+    
+    Pip installs Python software packaged as
+    wheels or source distributions.
+    
+    The latter may require that the system
+    have compatible compilers, and possibly
+    libraries, installed before invoking pip
+    to succeed.
+
+__index__()
+    vim +/"bin(x)" "$HOME/notes/ws/python/glossary.txt"
+
+builtin functions
+    https://docs.python.org/3/library/functions.html
+
+    python -c "import shanepy as spy; print(dir(__builtins__))"
+
+    abs() delattr() hash() memoryview()
+    set() all() dict() help() min()
+    setattr() any() dir() hex() next()
+    slice() ascii() divmod() id()
+    object() sorted() bin() enumerate()
+    input() oct() staticmethod() bool()
+    eval() int() open() str()
+    breakpoint() exec() isinstance() ord()
+    sum() bytearray() filter()
+    issubclass() pow() super() bytes()
+    float() iter() print() tuple()
+    callable() format() len() property()
+    type() chr() frozenset() list()
+    range() vars() classmethod()
+    getattr() locals() repr() zip()
+    compile() globals() map() reversed()
+    __import__() complex() hasattr()
+    max() round()
+
+all(iterable)
+    [builtin]
+
+    Return True if all elements of the
+    iterable are true (or if the iterable is
+    empty).
+
+    deletes the named attribute, provided the
+    object allows it.
+
+any(iterable)
+    [builtin]
+
+    Return True if any element of the iterable
+    is true.
+
+    If the iterable is empty, return False.
+
+delattr()
+    [builtin]
+
+    Example:
+        delattr(x, 'foobar')
+        # equivalent to
+        del x.foobar
+
+ascii(object)
+    [builtin]
+
+    Like repr(), return a string containing a
+    printable representation of an object.
+
+    But escape the non-ASCII characters in the
+    string returned by repr() using \x, \u or
+    \U escapes.
+
+    This generates a string similar to that
+    returned by repr() in Python 2.
+
+bin(x)
+    [builtin]
+
+    Convert an integer number to a binary
+    string prefixed with “0b”.
+
+    The result is a valid Python expression.
+
+    If x is not a Python int object, it has to
+    define an __index__() method that returns
+    an integer.
+
+    Some examples:
+        bin(3)
+        # '0b11'
+        bin(-10)
+        # '-0b1010'
+    
+        # If prefix “0b” is desired or not,
+        # you can use either of the following
+        # ways.
+
+        format(14, '#b'), format(14, 'b')
+        # ('0b1110', '1110')
+        f'{14:#b}', f'{14:b}'
+        # ('0b1110', '1110')
+
+    https://docs.python.org/3/library/functions.html#format
+
+format(value[, format_spec])
+    [builtin]
+
+    This is different from str.format.
+
+    Convert a value to a “formatted”
+    representation, as controlled by
+    format_spec.
+    
+    The interpretation of format_spec will
+    depend on the type of the value argument,
+    however there is a standard formatting
+    syntax that is used by most built-in
+    types: Format Specification Mini-Language.
+
+str.format()
+    [#python3]
+
+    This method lets us concatenate elements
+    within a string through positional
+    formatting.
+
+__future__._Feature
+    [#python]
+
+    Future statement definition.
+
+    Example:
+        import psychopy
+        type(psychopy.clock.division)
+        # __future__._Feature
+
+Psycopg
+    [#Python]
+    [PostgreSQL database adapter]
+
+    The most popular.
+
+    Fully implements the Python DB API 2.0 specifications.
+
+with
+    ewwlinks +/"Understanding Python's \"with\" statement" "https://effbot.org/zone/python-with-statement.htm"
+
+freezing
+    https://docs.python-guide.org/shipping/freezing/
+
+    “Freezing” your code is creating a single-file executable file to
+    distribute to end-users, that contains all of your application code
+    as well as the Python interpreter.
+
+    Options:
+    - bbFreeze
+    - pyInstaller
+    - cx_Freeze
+
+dict comprehension
+    Example 1:
+        {k: [] for k in [1,2,3,4,5]}
+
+    Example 2:
+        {k:v*2 for (k,v) in {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}.items()}
+
+magic method
+special method
+    Methods that have a name `__like_this__`
+    and a special meaning.
+
+    vim +/"magic method" "$MYGIT/Akuli/python-tutorial/advanced/magicmethods.md"
+
+expandtabs
+    [#string]
+    [method]
+    
+    Returns a copy of string with all tab
+    characters '\t' replaced with whitespace
+    characters until the next multiple of
+    tabsize parameter.
+
+    "\t".expandtabs(4)
+
+cython vs cpython
+    `Cython` is a language in itself that is a
+    superset of `Python` (i.e. (almost) all
+    `Python` syntax is accepted).
+
+    `CPython` is one (the most trusted and
+    used) implementation of `Python` in `C`.
+    
+    Both are used to write `Python` libraries.
+
+Python Method Resolution Order
+.mro()
+    [#python]
+
+    Defines the class search path used by
+    Python to search for the right method to
+    use in classes having multi-inheritance.
+    
+    It as envolved since Python 2.2 to 2.3.
+    
+    The algorithm change is also refered as
+    old classes and new classes MRO algorithm.
+
+Procfile
+    [#heroku]
+
+    Must live in your app’s root directory.
+    It does not function if placed anywhere
+    else.
+
+    A Procfile declares its process types on
+    individual lines, each with the following
+    format:
+        <process type>: <command>
+
+    <process type>
+        An alphanumeric name for your command,
+        such as web, worker, urgentworker,
+        clock, and so on.
+
+    <command>
+        Indicates the command that every dyno
+        of the process type should execute on
+        startup, such as rake jobs:work.
+
+__call__
+    A special method on Python objects; it
+    turns them into callable objects. callable
+    objects, like functions or RNNCells, can
+    be called with parentheses.
+
+        def my_callable(x):
+            return x + 1
+        return my_callable(1)
+
+    has the same result as this
+
+        class MyClass:
+            def __call__(self, x):
+                return x + 1
+
+        my_callable = MyClass()
+        return my_callable(5)
+
+->
+    Return type operator.
+
+type alias
+    ewwlinks +/"Type aliases¶" "https://docs.python.org/3/library/typing.html"
+
+    Defined by assigning the type to the
+    alias.
+    
+    In this example, Vector and list[float]
+    will be treated as interchangeable
+    synonyms:
+
+        Vector = list[float]
+        
+        def scale(scalar: float, vector: Vector) -> Vector:
+            return [scalar * num for num in vector]
+        
+        # typechecks; a list of floats qualifies as a Vector.
+        new_vector = scale(2.0, [1.0, -4.2, 5.4])
+        
+        Type aliases are useful for simplifying complex type signatures. For example:
+        
+        from collections.abc import Sequence
+        
+        ConnectionOptions = dict[str, str]
+        Address = tuple[str, int]
+        Server = tuple[Address, ConnectionOptions]
+
+Austin
+    A Python frame stack sampler for CPython
+    written in pure C. Samples are collected
+    by reading the CPython interpreter virtual
+    memory space in order to retrieve
+    information about the currently running
+    threads along with the stack of the frames
+    that are being executed.
+    
+    Hence, one can use Austin to easily make
+    powerful statistical profilers that have
+    minimal impact on the target application
+    and that don't require any
+    instrumentation.
+
+NetworkX
+    [#python]
+    [#graphs]
+
+    A Python package for the creation,
+    manipulation, and study of the structure,
+    dynamics, and functions of complex
+    networks.
+
+Versioneer
+    A tool for managing a recorded version
+    number in distutils-based python projects.
+    The goal is to remove the tedious and
+    error-prone "update the embedded version
+    string" step from your release process.
+    Making a new release should be as easy as
+    recording a new tag in your version-
+    control system, and maybe making new
+    tarballs.
+
+expanduser
+    gli "os.path.*\\~"
+
+Flask
+    [web framework]
+
+    Provides you with tools, libraries and
+    technologies that allow you to build a web
+    application.
+
+itsdangerous
+    [library]
+
+    You can serialize and sign a user ID in a
+    URL and email it to them to unsubscribe
+    from a newsletter.
+    
+    This way you dont need to generate one-
+    time tokens and store them in the
+    database.
+    
+    Same thing with any kind of activation
+    link for accounts and similar things.
+    
+    Signed objects can be stored in cookies or
+    other untrusted sources which means you
+    dont need to have sessions stored on the
+    server, which reduces the number of
+    necessary database queries.
+    
+    Signed information can safely do a round
+    trip between server and client in general
+    which makes them useful for passing
+    server-side state to a client and then
+    back.
+
+@register
+    This is probably registering a test
+    fixture (something like priming some data
+    for a test to run).
+
+pluggy
+    [library]
+
+    The core framework used by the pytest,
+    tox, and devpi projects.
+    
+    The crystallized core of plugin management
+    and hook calling for pytest.
+    
+    It enables 500+ plugins to extend and
+    customize pytests default behaviour.
+    
+    Even pytest itself is composed as a set of
+    pluggy plugins which are invoked in
+    sequence according to a well defined set
+    of protocols.
+    
+    It gives users the ability to extend or
+    modify the behaviour of a host program by
+    installing a plugin for that program.
+    
+    The plugin code will run as part of normal
+    program execution, changing or enhancing
+    certain aspects of it.
+
+@hookspec
+    [pluggy]
+
+@hookimpl
+    [pluggy]
+
+future
+    [#async]
+
+    A special low-level awaitable object that
+    represents an eventual result of an
+    asynchronous operation.
+    
+    When a Future object is awaited it means
+    that the coroutine will wait until the
+    Future is resolved in some other place.
+    
+    Future objects in asyncio are needed to
+    allow callback-based code to be used with
+    async/await.
+    
+    Normally there is no need to create Future
+    objects at the application level code.
+    
+    Future objects, sometimes exposed by
+    libraries and some asyncio APIs, can be
+    awaited:
+
+future
+    [#features]
+
+    | feature          | optional in | mandatory in | effect                                             |
+    |------------------+-------------+--------------+----------------------------------------------------|
+    | nested_scopes    | 2.1.0b1     |          2.2 | PEP 227: Statically Nested Scopes                  |
+    | generators       | 2.2.0a1     |          2.3 | PEP 255: Simple Generators                         |
+    | division         | 2.2.0a2     |          3.0 | PEP 238: Changing the Division Operator            |
+    | absolute_import  | 2.5.0a1     |          3.0 | PEP 328: Imports: Multi-Line and Absolute/Relative |
+    | with_statement   | 2.5.0a1     |          2.6 | PEP 343: The “with” Statement                      |
+    | print_function   | 2.6.0a2     |          3.0 | PEP 3105: Make print a function                    |
+    | unicode_literals | 2.6.0a2     |          3.0 | PEP 3112: Bytes literals in Python 3000            |
+
+    vim +/"from __future__ import absolute_import" "$MYGIT/wit-ai/pywit/examples/basic.py"
+    vim +/"from __future__ import division" "$MYGIT/wit-ai/pywit/examples/basic.py"
+    vim +/"from __future__ import print_function" "$MYGIT/wit-ai/pywit/examples/basic.py"
+    vim +/"from __future__ import unicode_literals" "$MYGIT/wit-ai/pywit/examples/basic.py"
+
+    from __future__ import absolute_import
+    from __future__ import division
+    from __future__ import print_function
+
+awaitable
+    [type of object]
+
+    We say that an object is an awaitable
+    object if it can be used in an await
+    expression.
+    
+    Many asyncio APIs are designed to accept
+    awaitables.
+
+    Three main types of awaitable objects:
+    - coroutines,
+    - Tasks, and
+    - Futures.
+
+coroutine
+    Computer program components that
+    generalize subroutines for non-preemptive
+    multitasking, by allowing execution to be
+    suspended and resumed.
+    
+    Coroutines are well-suited for
+    implementing familiar program components
+    such as cooperative tasks, exceptions,
+    event loops, iterators, infinite lists and
+    pipes.
+
+task
+    A Future-like object that runs a Python
+    coroutine.
+    
+    Not thread-safe.
+
+    Tasks are used to run coroutines in event
+    loops.
+    
+    If a coroutine awaits on a Future, the
+    Task suspends the execution of the
+    coroutine and waits for the completion of
+    the Future.
+    
+    When the Future is done, the execution of
+    the wrapped coroutine resumes.
+
+asyncio
+async
+await
+    Coroutines declared with the async/await
+    syntax is the preferred way of writing
+    asyncio applications.
+
+    ewwlinks +/"async\/await syntax" "https://docs.python.org/3/library/asyncio-task.html"
+        
+        import asyncio
+        
+        async def main():
+            print('Hello ...')
+            await asyncio.sleep(1)
+            print('... World!')
+        
+        # Python 3.7+
+        asyncio.run(main())
+
+p.map
+Pool
+    from multiprocessing import Pool
+    
+    def f(x):
+        return x*x
+    
+    with Pool(5) as p:
+        print(p.map(f, [1, 2, 3]))
+
+@
+decorator
+    Not to be confused with Java/Kotlin
+    annotation.
+
+->
+function annotation
+    In more detail, Python 2.x has docstrings,
+    which allow you to attach a metadata
+    string to various types of object.
+    
+    This is amazingly handy, so Python 3
+    extends the feature by allowing you to
+    attach metadata to functions describing
+    their parameters and return values.
+    
+    There's no preconceived use case, but the
+    PEP suggests several.
+    
+    One very handy one is to allow you to
+    annotate parameters with their expected
+    types; it would then be easy to write a
+    decorator that verifies the annotations or
+    coerces the arguments to the right type.
+    
+    @property
+    def trigger_manager(self) -> TriggersObject:
+        return self._objects['TriggersObject']
+
+    Another is to allow parameter-specific
+    documentation instead of encoding it into
+    the docstring.
+
+anaconda
+    [[/home/shane/source/git/adashofdata/nlp-in-python-tutorial/README.md][nlp-in-python-tutorial/README.md]]
+
+    The birthplace of Python data science.
+    
+    We are a movement of data scientists,
+    data-driven enterprises, and open source
+    communities.
+
+ipywidgets
+    Widgets for Jupyter notebooks, JupyterLab
+    and the IPython kernel.
+
+del
+    The del keyword is used to delete objects.
+
+    In Python everything is an object, so the
+    del keyword can also be used to delete
+    variables, lists, or parts of a list etc.        
+
+    Examples:        
+        Delete from a dictionary.
+            del self.examples[id]
+
+dotenv
+python-dotenv
+    https://pypi.org/project/python-dotenv/
+
+    Reads the key-value pair from .env file
+    and adds them to environment variable.
+
+    It is great for managing app settings
+    during development and in production using
+    12-factor principles.
+
+Loguru
+    [library]
+
+    Aims to bring enjoyable logging in Python.
+
+typing
+Any
+Dict
+Callable
+Iterable
+Union
+List
+Pattern
+    from typing import Optional, Any, Dict, Callable, Iterable, Union, List, Pattern
+
+    gli -F "\\.py" "from typing import"
+
+dunder
+dunder method    
+magic method
+    [#Python]
+
+    The methods having two prefix and suffix
+    underscores in the method name. Dunder
+    here means “Double Under (Underscores)”.
+    These are commonly used for operator
+    overloading.
+
+textpipe
+    [package]
+
+    For converting raw text in to clean,
+    readable text and extracting metadata from
+    that text.
+    
+    Its functionalities include transforming
+    raw text into readable text by removing
+    HTML tags and extracting metadata such as
+    the number of words and named entities
+    from the text.
+
+PIL
+    Python Imaging Library.
+
+module
+    Just another name for any single python
+    file
+
+iloc
+pandas.DataFrame.iloc
+    Purely integer-location based indexing for
+    selection by position.
+
+    .iloc[] is primarily integer position
+    based (from 0 to length-1 of the axis),
+    but may also be used with a boolean array.
+
+    Allowed inputs are:
+    - An integer, e.g. 5.
+    - A list or array of integers, e.g. [4, 3,
+      0].
+    - A slice object with ints, e.g. 1:7.
+    - A boolean array.
+    - A callable function with one argument
+      (the calling Series or DataFrame) and
+      that returns valid output for indexing
+      (one of the above). This is useful in
+      method chains, when you don’t have a
+      reference to the calling object, but
+      would like to base your selection on
+      some value.
+
+    .iloc will raise IndexError if a requested
+    indexer is out-of-bounds, except slice
+    indexers which allow out-of-bounds
+    indexing (this conforms with python/numpy
+    slice semantics).
+
+    https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html

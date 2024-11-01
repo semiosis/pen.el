@@ -1,0 +1,4 @@
+
+## zsh magic function definitions -- http://zsh.sourceforge.net/Doc/Release/zsh-misc.html#zsh-magic-functions
+math_fib() {
+for ((i=1;i<=$1;i++)); do

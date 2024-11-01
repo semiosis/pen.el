@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "ead" "infocmp" "#" "<==" "ead"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bkeyboard-quit\\b" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el;  "ead" "-f" "\\bfz-run-handle\\b" "#" "<==" "zsh"
+cd /usr/local/share/emacs/29.1.50;  "ead" "set-face-attribute" "#" "<==" "ead"
+cd /usr/local/share/emacs/29.1.50;  "ead" "-z" "set-face-attribute" "#" "<==" "ead"
+cd /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs;  "ead" "-z" "set-face-attribute" "#" "<==" "ead"

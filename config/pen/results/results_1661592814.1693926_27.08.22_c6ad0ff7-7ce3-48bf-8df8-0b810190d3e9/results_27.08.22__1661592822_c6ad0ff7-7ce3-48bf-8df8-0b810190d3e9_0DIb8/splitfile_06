@@ -1,0 +1,20 @@
+[[String]] -> IO ()
+tabularise rows = mapM_ (\row -> putStrLn $ intercalate ", " row) rows
+EOD
+
+cat draft.haskell <<EOD
+import Data.Bits (xor)
+import Data.Char (ord)
+import Data.List (foldl')
+import Data.Maybe (catMaybes)
+import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
+import qualified Data.Text.Lazy as TL
+import qualified Data.Vector as V
+import qualified Data.Vector.Storable as VS
+import qualified GHC.ReadFile as RFile
+import qualified System.IO as SIO
+import System.Directory (removeFile, createDirectory, removeDirectory)
+
+  -- Read the CSV from stdin and decode it into a list of lines.
+  -- We use the Lazy version of ByteString to avoid reading the whole

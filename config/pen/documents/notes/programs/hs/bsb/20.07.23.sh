@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "bsb" "#" "<==" "zsh"
+cd /root/notes;  "bsb" "#" "<==" "zsh"
+cd /root/notes;  "bsb" "#" "<==" "zsh"
+cd /root/notes;  "bsb" "#" "<==" "zsh"
+cd /root/notes;  "bsb" "Romans" "10:15" "#" "<==" "zsh"
+cd /root/notes;  "bsb" "John" "3:16" "#" "<==" "zsh"

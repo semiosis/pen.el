@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: assert
+# group: my/testing
+# key: ass
+# --
+assert ${1:<condition>}
+assert $1,${2<error message>}

@@ -1,0 +1,144 @@
+sandbox
+    Sandboxes are deprecated and no longer
+    available in cabal.
+
+    cabal sandbox init
+
+Nixpkgs
+    The git repository containing all packages
+    and NixOS modules/expressions.
+
+    Installing packages directly from the
+    master branch of the Nixpkgs repo is
+    possible, but risky, since git commits are
+    merged into master before being heavily
+    tested.
+
+    That's where channels are useful.
+
+channel
+    https://nixos.wiki/wiki/Nix_channels
+
+    A "channel" is a name for the latest
+    "verified" git commits in Nixpkgs.
+
+    Each channel has a different definition of
+    what "verified" means.
+    
+    Each time a new git commit is verified,
+    the channel declaring this verification
+    gets updated.
+    
+    Contrary to a user of the git master
+    branch, a channel user will benefit from
+    both verified commits and binary packages
+    from the binary cache.
+
+    Channels are reified as git branches in
+    the nixpkgs repository and as disk images
+    in the channels webpage.
+
+    There is also the handy nix channel status
+    webpage that tracks the age of channels.
+
+User environment
+    Sets of software packages available to a
+    user at some point in time.
+
+i18n
+Internationalization
+I - eighteen letters -N
+    Is the process of planning and
+    implementing products and services so that
+    they can easily be adapted to specific
+    local languages and cultures, a process
+    called localization.
+
+Nix language
+Nix expression language
+    A pure, lazy, functional language.
+
+    Not a full-featured, general purpose
+    language.
+
+    Functions are “normal” values that can be
+    passed around and manipulated in
+    interesting ways.
+
+    Its main job is to describe packages,
+    compositions of packages, and the variability
+    within packages.
+
+Hydra
+    [CI testing and software release tool]
+
+    [#Nix]
+    [#Nix language]
+    [#CI]
+
+    A Nix-based continuous build system,
+    released under the terms of the GNU GPLv3
+    or (at your option) any later version.
+    
+    It continuously checks out sources of
+    software projects from version management
+    systems to build, test and release them.
+    
+    Uses a purely functional language to
+    describe build jobs and their
+    dependencies.
+
+    The build tasks are described using Nix
+    expressions.
+    
+    This allows a Hydra build task to specify
+    all the dependencies needed to build or
+    test a project.
+    
+    It supports a number of operating systems,
+    such as various GNU/Linux flavours, Mac OS
+    X, and Windows.
+    
+    Example:
+        At Delft University of Technology we
+        run a Hydra-based build farm to build
+        and test the NixOS GNU/Linux
+        distribution, the Nix Packages
+        collection, the Stratego/XT program
+        transformation system, and various
+        other open source projects.
+
+nix-env
+    Used to manipulate Nix user environments.
+
+Nix expression
+    May refer to a file with a Nix expression
+    inside.
+
+Cachix
+    Hosted Nix binary caches: Build Nix
+    packages once and share them for good.
+
+    If your project build takes 15 minutes,
+    why build it three times and waste your
+    time? With Cachix you can share the
+    binaries once it's built.
+
+    - You build your software project on your
+      laptop during development.
+    - Your Continuous Integration builds the
+      project again to verify there are no
+      mistakes.
+    - Users of your project build it again to
+      use or deploy it.
+
+    This will also greatly reduce your CI
+    build times by rebuilding only what has
+    changed.
+
+    Upload binaries to your binary cache with:
+    $ nix-build | cachix push <name>
+
+    While users of your cache can configure
+    Nix without fiddling with config files:
+    $ cachix use <name> && nix-build

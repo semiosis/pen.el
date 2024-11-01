@@ -1,0 +1,4 @@
+ The playbook is a file that contains a series of tasks. 
+   Tasks in Ansible are analogous to modules in Puppet and Chef.
+   😎 Ansible Playbooks allow humans to express machine
+   behaviors via language

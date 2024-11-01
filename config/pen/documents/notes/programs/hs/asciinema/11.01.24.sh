@@ -1,0 +1,1 @@
+cd /;  "asciinema" "rec" "#" "<==" "zsh"

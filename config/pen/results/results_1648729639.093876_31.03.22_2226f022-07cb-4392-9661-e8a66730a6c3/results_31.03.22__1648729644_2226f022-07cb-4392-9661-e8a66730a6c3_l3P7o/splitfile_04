@@ -1,0 +1,1 @@
+- Simon Peyton Jones: execState runs the state monad and discards the resulting state without returning it.

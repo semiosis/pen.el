@@ -1,0 +1,11 @@
+"async/go-loop" is a function that takes a channel and a function.
+It will call the function with the channel as the argument repeatedly
+until the channel is closed.
+
+Example:
+(async/go-loop [ch] (fn [_] (println "hello") (ch/put "world") (ch/close)))
+
+The above will print "hello" repeatedly until the channel is closed.
+
+Example:
+(async/go-loop [ch] (fn

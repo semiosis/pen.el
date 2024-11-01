@@ -1,0 +1,1 @@
+ emacs -batch /etc/hosts -f '((lambda () (flush-lines "apache")))'

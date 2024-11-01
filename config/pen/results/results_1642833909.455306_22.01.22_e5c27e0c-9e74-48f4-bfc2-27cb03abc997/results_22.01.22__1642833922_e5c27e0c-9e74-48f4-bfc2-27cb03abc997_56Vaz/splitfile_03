@@ -1,0 +1,19 @@
+- 1. Mabbly Lee Intel Corp (INTC)
+- 2. Renee Washington (21 Jan)
+- 3. Warren W. Buffett (Jan 21)
+- 4. Mark Fields (Intel Corp)
+- 5. The Knowledge Economy
+- 6. Dow Jones
+- 7. Berkshire Hathaway Inc
+EOF
+
+    @input_files = [source_file]
+
+    @expected_frequencies = [5,5,5,3,3,3,3]
+  end
+
+  def setup_stop_words_source_text_file
+    source_file = create_tempfile("Stop Words Source")
+
+    source_file << <<EOF
+

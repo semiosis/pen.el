@@ -1,0 +1,9 @@
+"apigateway" is a command line tool for managing AWS API Gateway.
+
+Usage:
+    saws apigateway create-api-key [options]
+    saws apigateway create-base-path-mapping [options]
+    saws apigateway create-deployment [options]
+    saws apigateway create-documentation-part [options]
+    saws apigateway create-documentation-version [options]
+    saws apigate

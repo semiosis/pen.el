@@ -1,0 +1,8 @@
+
+      (if (string-match "^[ \t]*$" preceding-text)
+          (pen-complete-line preceding-text tv)
+        (pen-complete-desirable-line preceding-text tv)))))
+
+(defun pen-complete-line-maybe-with-space (preceding-text &optional tv)
+  "Line completion with space"
+  (interactive (list (pen-preceding-

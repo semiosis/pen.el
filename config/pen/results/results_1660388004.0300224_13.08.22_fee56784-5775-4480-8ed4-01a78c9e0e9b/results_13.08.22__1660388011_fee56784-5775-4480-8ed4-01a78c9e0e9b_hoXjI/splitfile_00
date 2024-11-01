@@ -1,0 +1,4 @@
+The above code will get the results from the web service and print them to the console.
+The getResults function will return a list of strings.
+The fromMaybe function will return an empty list if the output is empty.
+The unlines function will join the strings in the list with a newline character.

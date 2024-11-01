@@ -1,0 +1,3 @@
+;; Run function i-
+(message (eval '(i- "dictionary-get-definition" "watermelon")))
+--> 

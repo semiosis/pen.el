@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: join
+# key: join
+# --
+// This buffer is for experimenting with Go code.
+// Press C-c C-c to format and evaluate the buffer,
+// or C-c C-p to send the buffer to the Go playground.
+package main
+
+import "fmt"
+import "strings"
+
+func main() {
+reg := []string{"a", "b", "c"}
+fmt.Println(strings.Join(reg[:], " "))
+}

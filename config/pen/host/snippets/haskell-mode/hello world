@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: hello world
+# group: 
+# key: hw
+# --
+main = putStrLn "Hello, World!"

@@ -1,0 +1,20 @@
+
+================
+
+Here's a simple monad for dealing with simple, non-blocking asynchronous IO.
+It's a bit of a toy, but it does illustrate a number of points:
+
+ * Use the monoid typeclass to define what kind of operation we're dealing with
+ * Use state functions to change the state of our monad. Such functions produce
+   other state functions.
+ * Use guard and fail to provide failure conditions
+
+    -- Nothing
+    guard (isGood x) = if x == 0 || isGood (x-1) then return () else fail()
+
+    -- Maybe<a>
+    fail :: Maybe<a> -> Maybe<a>
+    fail Nothing = Just(defaultVal)  -- maybe it would make more sense to use Nothing?
+    fail (Just n) = Unless (isGood n) (Just(defaultVal))
+
+    -- The full computation as a function that produces an 'I' in some

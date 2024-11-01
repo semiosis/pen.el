@@ -1,0 +1,6 @@
+
+Amphibian is a clojurescript library that generates HTML elements
+with Clojure syntax. The symbols & and > are used to create HTML elements.
+This is taken from https://groups.google.com/forum/#!topic/clojurescript/
+UIyEeQSx42w.
+

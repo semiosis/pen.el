@@ -1,0 +1,7 @@
+cd /usr/local/share/vim/vim82/doc;  "vh" "/" "windowl" "#" "<==" "zsh"
+cd /usr/local/share/vim/vim82/doc;  "vh" "/" "window" "#" "<==" "zsh"
+cd /usr/local/share/vim/vim82/doc;  "vh" "/" "window" "#" "<==" "zsh"
+cd /usr/local/share/vim/vim82/doc;  "vh" "/" "window" "#" "<==" "zsh"
+cd /usr/local/share/vim/vim82/doc;  "vh" "/" "window" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "vh" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "vh" "/" "window" "#" "<==" "zsh"

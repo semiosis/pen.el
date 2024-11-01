@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/labs/all.html" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/labs.html" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/messages.html" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/light-and-truth.html" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/light-and-truth/augustine-and-sovereign-joy.html" "#" "<==" "zsh"

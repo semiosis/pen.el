@@ -1,0 +1,471 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: text/html; charset=utf-8
+Cross-Origin-Window-Policy: deny
+Date: Sun, 24 Jul 2022 10:34:00 GMT
+Server: nginx
+Set-Cookie: a485692=1; path=/; expires=Mon, 25 Jul 2022 10:34:00 GMT; max-age=86400; HttpOnly
+Strict-Transport-Security: max-age=15768000
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: FwS9bX3TioBFHIYIT-zh
+X-Xss-Protection: 1; mode=block
+Transfer-Encoding: chunked
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>untitled - asciinema</title>
+    <link rel="stylesheet" href="/css/app-1e435408314208c5d1bea35855a33e04.css?vsn=d">
+    <link rel="shortcut icon" href="/images/favicon-2d62dafa447cf018340b7121007568e3.png?vsn=d">
+<!-- oEmbed -->
+<link rel="alternate" type="application/json+oembed" href="https://asciinema.org/oembed?url=https%3A%2F%2Fasciinema.org%2Fa%2FqiXTLRsCTSwgKm2jB9GLrRQb5&amp;format=json" />
+<link rel="alternate" type="text/xml+oembed" href="https://asciinema.org/oembed?url=https%3A%2F%2Fasciinema.org%2Fa%2FqiXTLRsCTSwgKm2jB9GLrRQb5&amp;format=xml" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="untitled" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5" />
+<meta property="og:image" content="https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.png" />
+<meta property="og:description" content="Recorded by mullikine" />
+<meta property="og:site_name" content="asciinema.org" />
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@asciinema" />
+<meta name="twitter:title" content="untitled" />
+<meta name="twitter:url" content="https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5" />
+<meta name="twitter:description" content="Recorded by mullikine" />
+<meta name="twitter:image" content="https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.png" />
+
+<!-- application/x-asciicast -->
+<link rel="alternate" type="application/x-asciicast" href="https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.cast">
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="origin">
+
+  </head>
+
+  <body class="l-app c-asciicast a-show">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo-red-949d10005bb389d1ae900a13b5ac53d7.svg?vsn=d">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/explore">Explore</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/docs/getting-started">Record</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/docs/how-it-works">Docs</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="http://blog.asciinema.org">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-right session-info">
+
+            <li class="nav-item">
+              <a class="nav-link" href="/login/new" id="log-in">
+                Log in
+ / Sign up
+              </a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+    <main role="main" class="">
+<section class="cinema" id="cinema" style="height: 68vw; max-height: 75vh">
+<script>  window.players = window.players || new Map();
+  window.players.set('cinema', {"author":"mullikine","author-img-url":"//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&d=retro","author-url":"https://asciinema.org/~mullikine","cols":80,"fit":"both","idleTimeLimit":null,"poster":"data:text/plain,\u001B[48;5;25;1;38;5;75mFile Documents Tutorials Configure Prompting Common Utilities Applications Netwo\u001B[0m\r\n\u001B[48;5;233;1;38;5;238m  1 \u001B[0m\u001B[48;5;234;1;38;5;238mfjdsajfiurenvk\u001B[0m\u001B[48;5;233;1;38;5;238;7m \u001B[0m\u001B[48;5;233;1;38;5;238m                                                             \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;25;1;38;5;75m 🖊  \u001B[0m\u001B[48;5;25;1;38;5;170m*scratch*   \u001B[0m\u001B[48;5;25;1;38;5;75m     (ξ 🖊 ⊚)                                                    \u001B[0m\r\n\u001B[48;5;233;1;38;5;238m                                                                                \u001B[0m\r\n\u001B[48;5;25;38;5;12m[ 1649486686 ]  \u001B[0m\u001B[48;5;25;38;5;81m1 \u001B[0m\u001B[48;5;25;38;5;87mpen-emacsclient-s-ro\u001B[0m\u001B[48;5;25;30m                                          \u001B[0m\u001B[?25l","preload":true,"rows":21,"src":"https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.cast","theme":"asciinema","title":"untitled"});
+</script>
+</section>
+
+<section class="even info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+        <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+        </span>
+
+        <h2>
+untitled
+        </h2>
+
+        <small>
+          by <a href="/~mullikine">mullikine</a>
+<time datetime="2022-04-09T08:19:57.127827Z" title="Sat, 09 Apr 2022 08:19:57 Z">3 months ago</time>
+
+<span class="special-label" title="Private asciicasts are not listed on the site and are hidden from search engines. However they're visible to anyone you give the URL.">private</span>
+
+
+
+        </small>
+      </div>
+
+      <div class="col-md-4 col-xs-12 text-right actions">
+        <div class="dropdown actions-dropdown pull-right">
+<a class="btn btn-sm btn-secondary" data-target="#share-modal" data-toggle="modal" href="#" id="share-link">Share</a>
+
+<a class="btn btn-sm btn-secondary" data-target="#download-modal" data-toggle="modal" href="#" id="download-link">Download</a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="odd meta">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDUuOTk5IDQ1Ljk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuOTk5IDQ1Ljk5OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zOS4yNjQsNi43MzZjLTguOTgyLTguOTgxLTIzLjU0NS04Ljk4Mi0zMi41MjgsMGMtOC45ODIsOC45ODItOC45ODEsMjMuNTQ1LDAsMzIuNTI4YzguOTgyLDguOTgsMjMuNTQ1LDguOTgxLDMyLjUyOCwwICAgIEM0OC4yNDUsMzAuMjgxLDQ4LjI0NCwxNS43MTksMzkuMjY0LDYuNzM2eiBNMjUuOTk5LDMzYzAsMS42NTctMS4zNDMsMy0zLDNzLTMtMS4zNDMtMy0zVjIxYzAtMS42NTcsMS4zNDMtMywzLTNzMywxLjM0MywzLDNWMzN6ICAgICBNMjIuOTQ2LDE1Ljg3MmMtMS43MjgsMC0yLjg4LTEuMjI0LTIuODQ0LTIuNzM1Yy0wLjAzNi0xLjU4NCwxLjExNi0yLjc3MSwyLjg3OS0yLjc3MWMxLjc2NCwwLDIuODgsMS4xODgsMi45MTcsMi43NzEgICAgQzI1Ljg5NywxNC42NDgsMjQuNzQ2LDE1Ljg3MiwyMi45NDYsMTUuODcyeiIgZmlsbD0iIzZjNzU3ZCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+
+          <code>OS=Linux</code>
+
+
+          <code>SHELL=zsh</code>
+
+
+          <code>TERM=screen-256color</code>
+
+        <code>VIEWS=2</code>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="even">
+      <div class="container">
+        <div class="row other-asciicasts">
+          <div class="col-md-12">
+            <h2>More by <a href="/~mullikine">mullikine</a></h2>
+
+            <div class="asciicast-list">
+              <div class="row">
+
+                  <div class="col-md-4">
+<div class="asciicast-card">
+  <a href="/a/288866" class="thumbnail-link">
+    <div class="play-button">
+      <span class="arrow">
+        <svg version="1.1" viewBox="0 0 12 12">
+          <path d="M1,0 L11,6 L1,12 Z" />
+        </svg>
+      </span>
+    </div>
+<div class="thumbnail asciinema-theme-asciinema">
+  <pre class="asciinema-terminal font-small"><span class="line"><span class="bg-233 bright fg-102" style="">                                   </span><span class="bg-233 bright fg-65" style="">           </span><span class="bg-233 bright fg-102" style="">                                  </span></span><span class="line"><span class="bg-233 bright fg-102" style="">                                   </span><span class="bg-233 bright fg-61" style="">-x-   = 100</span><span class="bg-233 bright fg-102" style="">                                  </span></span><span class="line"><span class="bg-233 bright fg-102" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-102" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-102" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-102" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-102" style="">                              </span><span class="bg-233 bright fg-131" style="">Press SPACE to start</span><span class="bg-233 bright fg-102" style="">                              </span></span><span class="line"><span class="bg-233 bright fg-238" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-238" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-238" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-238" style="">                                                                                </span></span><span class="line"><span class="bg-0 fg-124" style="">[ posts ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-235 fg-26" style="">-engineering-harnessing-the-power-of-language.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">22 new-window</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-254" style="">23 </span><span class="bg-0 fg-134" style="">n</span></span><span class="line"><span class="bg-0 fg-124" style="">[ blog ]  </span><span class="bg-0 fg-244" style="">1 </span><span class="bg-235 fg-40" style="">macro-tutorial.el</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">2 </span><span class="bg-235 fg-40" style="">perspective.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-254" style="">3 </span><span class="bg-0 fg-134" style="">posts</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">4 hugo-blog</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">5 mullikine-</span></span><span class="line"><span class="bg-0 fg-124" style="">[ ws ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-235 fg-160" style="">troubleshooting</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">8 </span><span class="bg-235 fg-160" style="">utils</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">9 emacs-lisp-elisp</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">10 functional-programming-fp</span></span><span class="line"><span class="bg-0 fg-124" style="">[  ]  </span><span class="bg-0 fg-240" style="">1 new-window</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">2 current</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">3 scripts</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">4 remote</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">5 scratch</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">6 projects</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-254" style="">7 </span><span class="bg-0 fg-134" style="">ws</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-240" style="">8 uni</span><span class="bg-0 fg-0" style=""> </span></span></pre>
+</div>
+<!-- The above <pre> has to be in one line, without extra spacing around for loops
+     in order to render terminal properly. -->
+  </a>
+
+  <div class="info">
+    <h3>
+<a href="/a/288866">mc-minor mode; making modes for arbitrary programs</a>
+
+
+      <span class="duration">01:48</span>
+    </h3>
+
+    <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+    </span>
+
+    <small>by <a href="/~mullikine">mullikine</a> <time datetime="2019-12-18T00:17:29.633609Z" title="Wed, 18 Dec 2019 00:17:29 Z">2 years ago</time></small>
+  </div>
+</div>
+
+                  </div>
+
+                  <div class="col-md-4">
+<div class="asciicast-card">
+  <a href="/a/461721" class="thumbnail-link">
+    <div class="play-button">
+      <span class="arrow">
+        <svg version="1.1" viewBox="0 0 12 12">
+          <path d="M1,0 L11,6 L1,12 Z" />
+        </svg>
+      </span>
+    </div>
+<div class="thumbnail asciinema-theme-asciinema">
+  <pre class="asciinema-terminal font-small"><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-235 fg-249" style="">                                                                                </span></span><span class="line"><span class="bg-25 bright fg-75" style="">-UUU:@----F2  </span><span class="bg-25 bright fg-170" style="">*scratch*   </span><span class="bg-25 bright fg-75" style="">   All L1     (Text pen-mydefaults ⊙ sel company WK iv</span></span><span class="line"><span class="bg-235 bright fg-75" style="">(1/0) pf-very-witty-pick-up-lines-for-a-topic/1 ~ pen-thing-at-point-ask:  </span><span class="bg-235 fg-249" style="">     </span></span><span class="line"><span class="bg-235 fg-249" style="">artificial</span><span class="bg-249 fg-235 " style=""> </span><span class="bg-235 fg-249" style="">                                                                    </span><span class="" style=""> </span></span><span class="line"><span class="bg-25 fg-12" style="">[ 1642147535 ]  </span><span class="bg-25 fg-81" style="">1 </span><span class="bg-25 fg-87" style="">pen-emacsclient-s-ro</span><span class="bg-25 fg-0" style="">                                          </span></span><span class="line"><span class="bg-0 fg-124" style="">[ Mele ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-233 fg-24" style="">listen.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">22 </span><span class="bg-233 fg-24" style="">need.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">23 </span><span class="bg-235 fg-26" style="">personal</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">24 </span><span class="bg-233 fg-24" style="">perspective.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">25 </span><span class="bg-233 fg-24" style="">plan.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">26 </span></span><span class="line"><span class="bg-0 fg-124" style="">[ Mele ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-233 fg-24" style="">listen.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">22 </span><span class="bg-233 fg-24" style="">need.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">23 </span><span class="bg-235 fg-26" style="">personal</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">24 </span><span class="bg-233 fg-24" style="">perspective.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">25 </span><span class="bg-233 fg-24" style="">plan.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">26 </span></span></pre>
+</div>
+<!-- The above <pre> has to be in one line, without extra spacing around for loops
+     in order to render terminal properly. -->
+  </a>
+
+  <div class="info">
+    <h3>
+<a href="/a/461721">AI vs Human - The human is the promptee</a>
+
+
+      <span class="duration">01:16</span>
+    </h3>
+
+    <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+    </span>
+
+    <small>by <a href="/~mullikine">mullikine</a> <time datetime="2022-01-14T08:12:39.588795Z" title="Fri, 14 Jan 2022 08:12:39 Z">6 months ago</time></small>
+  </div>
+</div>
+
+                  </div>
+
+                  <div class="col-md-4">
+<div class="asciicast-card">
+  <a href="/a/371131" class="thumbnail-link">
+    <div class="play-button">
+      <span class="arrow">
+        <svg version="1.1" viewBox="0 0 12 12">
+          <path d="M1,0 L11,6 L1,12 Z" />
+        </svg>
+      </span>
+    </div>
+<div class="thumbnail asciinema-theme-asciinema">
+  <pre class="asciinema-terminal font-small"><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">-1</span><span class="bg-233 bright fg-238" style=""> notfiletype (</span><span class="bg-233 bright fg-240" style="">--not-filetype=</span><span class="bg-233 bright fg-238" style="">)                                               </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">2</span><span class="bg-233 bright fg-238" style=""> intext (</span><span class="bg-233 bright fg-240" style="">--intext=</span><span class="bg-233 bright fg-238" style="">)                                                           </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">-2</span><span class="bg-233 bright fg-238" style=""> notintext (</span><span class="bg-233 bright fg-240" style="">--not-intext=</span><span class="bg-233 bright fg-238" style="">)                                                   </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">3</span><span class="bg-233 bright fg-238" style=""> intitle (</span><span class="bg-233 bright fg-36" style="">--intitle=transducer</span><span class="bg-233 bright fg-238" style="">)                                               </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">-3</span><span class="bg-233 bright fg-238" style=""> notintitle (</span><span class="bg-233 bright fg-36" style="">--not-intitle=clojure</span><span class="bg-233 bright fg-238" style="">)                                          </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">4</span><span class="bg-233 bright fg-238" style=""> inurl (</span><span class="bg-233 bright fg-240" style="">--inurl=</span><span class="bg-233 bright fg-238" style="">)                                                             </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">-4</span><span class="bg-233 bright fg-238" style=""> notinurl (</span><span class="bg-233 bright fg-240" style="">--not-inurl=</span><span class="bg-233 bright fg-238" style="">)                                                     </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">5</span><span class="bg-233 bright fg-238" style=""> site (</span><span class="bg-233 bright fg-240" style="">--site=</span><span class="bg-233 bright fg-238" style="">)                                                               </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">-5</span><span class="bg-233 bright fg-238" style=""> notsite (</span><span class="bg-233 bright fg-240" style="">--not-site=</span><span class="bg-233 bright fg-238" style="">)                                                       </span></span><span class="line"><span class="bg-233 bright fg-238" style="">                                                                                </span></span><span class="line"><span class="bg-233 bright fg-32" style="">Actions</span><span class="bg-233 bright fg-238" style="">                                                                         </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">g</span><span class="bg-233 bright fg-238" style=""> Search g                                                                     </span></span><span class="line"><span class="bg-233 bright fg-238" style=""> </span><span class="bg-233 bright fg-32" style="">k</span><span class="bg-233 bright fg-238" style=""> Search with keywords                                                         </span></span><span class="line"><span class="bg-233 bright fg-238" style="">                                                                                </span></span><span class="line"><span class="bg-0 fg-124" style="">[ Megn ]  </span><span class="bg-0 fg-0" style="">&lt;</span><span class="bg-233 fg-24" style="">g.bak</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">27 </span><span class="bg-233 fg-24" style="">plan.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">28 </span><span class="bg-233 fg-24" style="">read.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">29 </span><span class="bg-233 fg-24" style="">remember.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">30 </span><span class="bg-233 fg-24" style="">thoughts.org</span><span class="bg-0 fg-0" style=""> </span><span class="bg-0 fg-244" style="">31 </span><span class="bg-233 fg-24" style="">todo</span></span></pre>
+</div>
+<!-- The above <pre> has to be in one line, without extra spacing around for loops
+     in order to render terminal properly. -->
+  </a>
+
+  <div class="info">
+    <h3>
+<a href="/a/371131">transient mode for google search</a>
+
+
+      <span class="duration">00:52</span>
+    </h3>
+
+    <span class="author-avatar">
+<a href="/~mullikine" title="mullikine">
+<img class="avatar" src="//gravatar.com/avatar/980876ab92703e01562236d6ad5c5670?s=128&amp;d=retro">
+</a>
+    </span>
+
+    <small>by <a href="/~mullikine">mullikine</a> <time datetime="2020-11-07T05:19:34.210101Z" title="Sat, 07 Nov 2020 05:19:34 Z">1 year ago</time></small>
+  </div>
+</div>
+
+                  </div>
+
+              </div>
+            </div>
+
+            <p>
+<a class="btn btn-info" href="/~mullikine">See all</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="modal fade" id="share-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Share this recording</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h2>Link</h2>
+
+        <p>
+          <input data-behavior="auto-select" readonly="" value="https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5" type="text">
+        </p>
+
+        <p>
+          <span>Append <code>?t=30 </code>to start the playback at 30s, <code>?t=3:20 </code>to start the playback at 3m 20s. </span>
+        </p>
+
+        <h2>Embed image link</h2>
+
+        <p>Use snippets below to display a screenshot linking to this recording.<br>
+          Useful in places where scripts are not allowed (e.g. in a project's README file).</p>
+
+        <p>
+          <span>HTML:</span>
+          <br>
+          <input data-behavior="auto-select" readonly="" value="<a href=&quot;https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5&quot; target=&quot;_blank&quot;><img src=&quot;https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.svg&quot; /></a>" type="text">
+        </p>
+
+        <p>
+          <span>Markdown:</span>
+          <br>
+          <input data-behavior="auto-select" readonly="" value="[![asciicast](https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.svg)](https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5)" type="text">
+        </p>
+
+        <h2>Embed the player</h2>
+
+        <p>If you're embedding on your own page or on a site which permits script tags,
+          you can use the full player widget:</p>
+
+        <p>
+          <input data-behavior="auto-select" readonly="" value="&lt;script id=&quot;asciicast-qiXTLRsCTSwgKm2jB9GLrRQb5&quot; src=&quot;https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.js&quot; async&gt;&lt;/script&gt;" type="text">
+        </p>
+
+        <p>Paste the above script tag where you want the player to be displayed on your page.</p>
+
+        <hr>
+
+        <p>See <a href="/docs/embedding">Sharing &amp; embedding</a> for additional options.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Download this recording</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+
+              You can download this recording in <a href="https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md">asciicast v2 format</a>, as a .cast file.
+
+        </p>
+
+        <a href="https://asciinema.org/a/qiXTLRsCTSwgKm2jB9GLrRQb5.cast?dl=1" class="btn btn-primary" download="485692.cast" rel="nofollow">Download</a>
+
+        <h2>Replay in terminal</h2>
+
+        <p>
+          You can replay this recording in your terminal with <code>asciinema play</code> command:
+        </p>
+
+        <pre><code>asciinema play 485692.cast</code></pre>
+
+        <p>
+          If you don't have asciinema cli installed then <a href="/docs/installation">see installation instructions</a>.
+        </p>
+
+        <h2>Use with stand-alone player on your website</h2>
+
+        <p>
+          Download asciinema player from <a href="https://github.com/asciinema/asciinema-player/releases">player's releases page</a>
+          (you only need <code>.js</code> and <code>.css</code> file), then use it like this:
+        </p>
+
+        <pre><code>&lt;html>
+&lt;head>
+  &lt;link rel="stylesheet" type="text/css" href="asciinema-player.css" />
+&lt;/head>
+&lt;body>
+  &lt;div id="player">&lt;/div>
+  &lt;script src="asciinema-player.min.js">&lt;/script>
+  &lt;script>
+    AsciinemaPlayer.create(
+      '485692.cast',
+      document.getElementById('player'),
+      { cols: 80, rows: 21 }
+    );
+  &lt;/script>
+&lt;/body>
+&lt;/html></code></pre>
+
+        <p>See <a href="https://github.com/asciinema/asciinema-player">asciinema player README</a> for full usage instructions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <ul class="links">
+          <li><a href="/contributing">Contributing</a></li>
+          <li><a href="/tos">Terms of Service</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 col-xs-12 text-center">
+        <span>
+          Sponsored by
+          <br/>
+          <a class="brightbox-logo" href="http://brightbox.com/" rel="nofollow">
+            <img src="/images/brightbox-78fa1dc42e5065bdbcc77f48e38b6dd3.png?vsn=d" />
+          </a>
+        </span>
+      </div>
+
+      <div class="col-md-4 col-xs-12">
+        <ul class="links float-right">
+          <li>
+            <b>forum:</b> <a href="https://discourse.asciinema.org">discourse.asciinema.org</a>
+          </li>
+          <li>
+            <b>irc:</b> <a href="https://web.libera.chat/gamja/#asciinema">#asciinema on Libera.Chat</a>
+          </li>
+          <li>
+              <b>matrix:</b> <a href="https://matrix.to/#/#asciinema:matrix.org">#asciinema:matrix.org</a>
+          </li>
+
+          <li>
+            <b>twitter:</b> <a href="https://twitter.com/asciinema" title="Follow @asciinema on Twitter">@asciinema</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/js/app-17a26351cd42dadad7a104097fa975ee.js?vsn=d"></script>
+  </body>
+</html>

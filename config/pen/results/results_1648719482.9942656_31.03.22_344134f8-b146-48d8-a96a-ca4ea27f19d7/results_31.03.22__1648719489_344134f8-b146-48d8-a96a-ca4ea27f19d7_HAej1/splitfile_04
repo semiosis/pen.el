@@ -1,0 +1,12 @@
+
+
+import System.Mem.Weak
+
+import Text.Printf
+
+
+main :: IO ()
+
+main = do
+
+Maybe.mapM_ print $ filterM isOn $ map snd $ sortBy (comparing f

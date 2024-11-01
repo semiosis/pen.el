@@ -1,0 +1,4 @@
+
+
+- you: It did not compile again. Could you explain the reason?
+- haskell guru: The ByteString type is simply not the same as lazy bytestrings. The latter can be used with functions that work on large files

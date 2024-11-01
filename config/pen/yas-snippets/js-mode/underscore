@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: underscore
+# group: 
+# key: _
+# --
+// npm install -g underscore
+// _ is used by node repl to represent the last value
+var __ = require('underscore')._;

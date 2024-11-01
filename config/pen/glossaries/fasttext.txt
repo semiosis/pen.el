@@ -1,0 +1,33 @@
+FastText
+    A library for text classification and
+    representation.
+    
+    It transforms text into continuous vectors
+    that can later be used on any language
+    related task.
+    
+    A few tutorials are available.
+
+    Uses a hashtable for either word or
+    character ngrams.
+    
+    The size of the hashtable directly impacts
+    the size of a model.
+    
+    f
+    with the option '-hash'.
+    
+    For example a good value is 20000.
+    
+    Another option that greatly impacts the
+    size of a model is the size of the vectors
+    (-dim).
+    
+    This dimension can be reduced to save
+    space but this can significantly impact
+    performance.
+    
+    If that still produce a model that is too
+    big, one can further reduce the size of a
+    trained model with the quantization
+    option.

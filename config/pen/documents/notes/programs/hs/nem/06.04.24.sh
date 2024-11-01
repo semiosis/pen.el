@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"

@@ -1,0 +1,4 @@
+;; The author gives their opinion
+;; arguments: (topic author)
+(message (eval '(personal-views "Freedom" "Isaac Asimov")))
+--> 

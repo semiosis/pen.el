@@ -1,0 +1,12 @@
+
+stack exec ListExample
+stack exec MultiwayIfExample
+
+You can also load the examples into GHCi and call 'main' manually.
+
+~~~~~~~~
+import Control.Applicative
+
+import Control.Monad
+
+import Control

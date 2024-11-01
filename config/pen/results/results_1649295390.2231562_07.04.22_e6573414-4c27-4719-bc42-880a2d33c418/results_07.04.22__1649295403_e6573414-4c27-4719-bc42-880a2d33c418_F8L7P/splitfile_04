@@ -1,0 +1,16 @@
+"The version of npm that was packaged with Node.js 1.0 and later."
+        """
+
+        self.assertEqual(safe_dump(self.nodejs, indent=2), expected_yaml)
+
+    def test_dumps(self):
+        expected_yaml = r"""--- 
+title: 		Node.js
+class: 		group
+tags: 		[nodejs]
+license: 	BSD-3-Clause
+copyright: 	Copyright 2020. All rights reserved.
+author: 	Cris Ewing
+excerpt: 	<!-- excerpt -->
+description: |
+	This is a conversation between a student

@@ -1,0 +1,95 @@
+title: Explain error
+title: Generic tutor for any topic
+tags: chatbot
+issues:
+- It's not as accurate as asktutor/3 or that may have been because I was forcing Codex
+prompt-version: 2
+prompt: |
+  Student: Hello, are you my <topic> professor?
+  <delim>
+  Professor: Yes I am. How can I help?
+  <delim>
+  Student: I have a question. <question>
+  <delim>
+  Professor: Here's my explanation.
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 300
+top-p: 1
+best-of: 3
+stop-sequences:
+- "<delim>"
+vars:
+- topic
+- question
+examples:
+- nlp
+- What is BPE?
+conversation: true
+conversation-pretext-generator: human-conversation
+postprocessor: "sed \"s/^Professor: //\" | pen-pretty-paragraph"
+title: Generic tutor for any topic
+issues:
+- It's not as accurate as asktutor/3 or that may have been because I was forcing Codex
+prompt-version: 2
+prompt: |
+  This is a conversation between a human and a brilliant AI.
+  The topic is "<topic>".
+
+  Student: Hello, are you my <topic> tutor?
+  <delim>
+  Professor: Hi there.
+  Yes I am.
+  How can I help you?
+  <delim>
+  Student: Thanks. I have a question. <question>
+  <delim>
+  Professor: I would be happy to answer your question.
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 300
+top-p: 1
+best-of: 3
+stop-sequences:
+- "<delim>"
+vars:
+- topic
+- question
+examples:
+- nlp
+- What is BPE?
+conversation: true
+conversation-pretext-generator: human-conversation
+postprocessor: "sed \"s/^Professor: //\" | pen-pretty-paragraph"
+include: asktutor-3
+prompt-version: 1
+prompt: |
+  <metaprompt>
+
+  <pretext>. What does the following error mean? <q:question>
+  <delim>
+  Professor: I would be happy to answer your question.
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 500
+top-p: 1
+best-of: 3
+stop-sequences:
+- "<delim>"
+- "Student:"
+vars:
+- topic
+- in the context of
+- question
+examples:
+- node js
+- error messages
+- undefined
+preprocessors:
+- cat
+- cat
+- s join ' '
+var-defaults:
+- "(pen-topic-ask)"
+- "\"error messages\""
+- "(pen-selected-text)"

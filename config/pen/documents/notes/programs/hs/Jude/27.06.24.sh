@@ -1,0 +1,6 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Jude" "19" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Jude" "1-19" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Jude" "1:19" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Jude" "1:19" "#" "<==" "zsh"
+cd /root/notes;  "Jude" "1:19" "#" "<==" "zsh"
+cd /root/notes;  "Jude" "1:19" "#" "<==" "zsh"

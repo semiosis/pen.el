@@ -1,0 +1,5 @@
+cd /;  "wget" "-qO-" "https://www.youtube.com/watch?v=gSE8ddZJHo8" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts;  "wget" "-qO-" "https://www.youtube.com/watch?v=S0pXQVMC770" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts;  "wget" "-qO-" "https://youtu.be/Zpdo6We-_e0" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/config;  "wget" "https://raw.githubusercontent.com/edentsai/tig-theme-molokai-like/master/colors/molokai-like-theme.tigrc" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/config;  "wget" "https://raw.githubusercontent.com/jonas/tig/master/tigrc" "#" "<==" "zsh"

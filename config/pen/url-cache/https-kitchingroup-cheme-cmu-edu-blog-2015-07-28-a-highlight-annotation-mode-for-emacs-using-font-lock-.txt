@@ -1,0 +1,791 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 8927
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 10 Dec 2023 19:56:41 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"657617f9-8e90"
+expires: Wed, 20 Dec 2023 22:38:58 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: DEDC:28C3C1:15E823:196D97:65836AA8
+Accept-Ranges: bytes
+Date: Wed, 20 Dec 2023 22:29:01 GMT
+Via: 1.1 varnish
+Age: 3
+X-Served-By: cache-chc950027-CHC
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1703111342.650335,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 12506935566678716c0cb59fa2b73251809fbcac
+
+
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A highlight annotation mode for Emacs using font-lock</title>
+  <meta name="google-site-verification" content="CGcacJdHc2YoZyI0Vey9XRA5qwhhFDzThKJezbRFcJ4" />
+  <meta name="description" content="Chemical Engineering at Carnegie Mellon University">
+  <meta name="author" content="John Kitchin">
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/feed" />
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/blog/feed/atom" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/css/base.css?v=1">
+  <link rel="stylesheet" href="/css/grid.css?v=1">
+  <link rel="stylesheet" media="handheld" href="/css/handheld.css?v=1">
+  <link rel="stylesheet" href="/css/pygments_murphy.css" type="text/css" />
+
+  <script src="/js/libs/modernizr-1.7.min.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+  <link rel="stylesheet" href="/themes/theme1/style.css?v=1">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+  <body>
+    <div id="container" class="container container_12">
+      <div id="main" role="main">
+        <div id="main_block">
+          <header>
+<div id="header" class="header_gradient theme_font">
+<table><tr><td>
+    <h1><a href="/">The Kitchin Research Group</a></h1>
+    <h2>Chemical Engineering at Carnegie Mellon University</h2>
+</td>
+<td colspan=100%><div style="float:right;width:100%;text-align:right;"> <span id='badgeCont737515' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont737515&mashlet=badge&showTitle=false&className=a&rid=A-2363-2010'></script></span></div>
+</td></tr>
+</table>
+</div>
+  <div id="navigation" class="grid_12">
+
+    <ul class="theme_font">
+      <li><a href="/blog"
+             class="">Blog</a></li>
+
+      <li><a href="/blog/archive"
+             class="">Archives</a></li>
+
+      <li><a href="/publications.html">Publications</a></li>
+
+      <li><a href="/research.html"
+             class="">Research</a></li>
+
+      <li><a href="/categories.html"
+             class="">Categories</a></li>
+
+      <li><a href="/about.html"
+             class="">About us</a></li>
+
+      <li><a href="/subscribe.html">Subscribe</a></li>
+
+    </ul>
+  </div>
+</header>
+
+          <div id="prose_block" class="grid_8">
+            
+
+
+
+
+
+
+<article>
+  <div class="blog_post">
+    <header>
+      <div id="A-highlight-annotation-mode-for-Emacs-using-font-lock"></div>
+      <h2 class="blog_post_title"><a href="/blog/2015/07/28/A-highlight-annotation-mode-for-Emacs-using-font-lock/" rel="bookmark" title="Permanent Link to A highlight annotation mode for Emacs using font-lock">A highlight annotation mode for Emacs using font-lock</a></h2>
+      <p><small><span class="blog_post_date">Posted July 28, 2015 at 10:57 AM</span> | categories:
+        <span class="blog_post_categories"><a href='/blog/category/annotation/'>annotation</a>, <a href='/blog/category/emacs/'>emacs</a></span> | tags: 
+      <p><small><span class="blog_post_date">Updated July 31, 2015 at 09:17 AM</span></small>
+      </small></p>
+    </header>
+    <div class="post_prose">
+      
+
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Known limitations</a></li>
+</ul>
+</div>
+</div>
+<p>
+One of my students asked about highlighting text in emacs for note-taking. I can see some advantages for doing it while teaching, for example, and for students studying, so here we we work it out.
+</p>
+
+<p>
+You will definitely want to see the video on this one, the highlights do not show up in the published html. <a href="https://www.youtube.com/watch?v=Cvz2tiT12-I">https://www.youtube.com/watch?v=Cvz2tiT12-I</a> 
+</p>
+
+<p>
+For temporary use, highlighting is pretty easy, you just set a property on a region, e.g. the background color. For example, we can do this:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp"><span style="color: #8D8D84;">; </span><span style="color: #8D8D84; font-style: italic;">this seems to be necessary to get the tooltips to work.</span>
+(<span style="color: #0000FF;">setq</span> font-lock-extra-managed-props (delq 'help-echo font-lock-extra-managed-props))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-region</span> (beg end)
+ (<span style="color: #0000FF;">interactive</span> <span style="color: #008000;">"r"</span>)
+ (set-text-properties
+  beg end
+  '(font-lock-face (<span style="color: #006FE0;">:background</span> <span style="color: #008000;">"Light Salmon"</span>)
+                   highlighted t
+                   help-echo <span style="color: #008000;">"highlighted"</span>)))
+
+(global-set-key (kbd <span style="color: #008000;">"s-h"</span>) 'highlight-region)
+</pre>
+</div>
+
+<pre class="example">
+highlight-region
+</pre>
+
+<p>
+This sets the background color, and another property "highlighted" that we will use later. The trouble is this is transient. When I close the file, the highlights are lost. We can save them to a file though, and reload them later. As long as we are diligent about that we should be able to provide persistent highlights.
+</p>
+
+<p>
+First we need a function to get all the highlights, their start and end, their color, and if there is a help-echo which provides a tooltip. We will see why later. Here we loop through the buffer collecting highlights, and return a list of them.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-get-highlights</span> ()
+  <span style="color: #036A07;">"Scan buffer for list of highlighted regions.</span>
+<span style="color: #036A07;">These are defined only by the highlighted property. That means</span>
+<span style="color: #036A07;">adjacent highlighted regions will be merged into one region with</span>
+<span style="color: #036A07;">the color of the first one."</span>
+  (<span style="color: #0000FF;">save-excursion</span>
+    (goto-char (point-min))
+    (<span style="color: #0000FF;">let</span> ((highlights '())
+          (p)
+          (beg)
+          (end)
+          (note)
+          (color))
+      <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">corner case of first point being highlighted</span>
+      (<span style="color: #0000FF;">when</span> (get-text-property (point) 'highlighted)
+        (<span style="color: #0000FF;">setq</span> beg (point)
+              end (next-single-property-change (point) 'highlighted)
+              color (background-color-at-point)
+              help-echo (get-text-property (point) 'help-echo))
+        (add-to-list 'highlights (list beg end color help-echo) t)
+        (goto-char end))
+
+      <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">Now the rest of the buffer</span>
+      (<span style="color: #0000FF;">while</span> (<span style="color: #0000FF;">setq</span> p (next-single-property-change (point) 'highlighted))
+        (<span style="color: #0000FF;">setq</span> beg (goto-char p))
+        (<span style="color: #0000FF;">setq</span> color (background-color-at-point))
+        (<span style="color: #0000FF;">setq</span> note (get-text-property (point) 'help-echo))
+        (<span style="color: #0000FF;">setq</span> end (next-single-property-change (point) 'highlighted))
+        (<span style="color: #0000FF;">when</span> (<span style="color: #0000FF;">and</span> beg end)
+          (goto-char end)
+          (add-to-list 'highlights (list beg
+                                         end
+                                         color
+                                         note)
+                       t)
+          (goto-char end)))
+      highlights)))
+
+(highlight-get-highlights)
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="right">438</td>
+<td class="right">454</td>
+<td class="left">Light Salmon</td>
+<td class="left">highlighted</td>
+</tr>
+
+<tr>
+<td class="right">1014</td>
+<td class="right">1031</td>
+<td class="left">Light Salmon</td>
+<td class="left">highlighted</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+Next, we generate a filename, and a function to save the highlights to disk. We make it a hook function that runs every time we save the buffer.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-save-filename</span> ()
+  <span style="color: #036A07;">"Return name of file to save overlays in."</span>
+  (<span style="color: #0000FF;">when</span> (buffer-file-name)
+    (concat <span style="color: #008000;">"."</span> (file-name-nondirectory (buffer-file-name)) <span style="color: #008000;">".highlights"</span>)))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-save</span> ()
+  <span style="color: #036A07;">"Loop through buffer and save regions with property highlighted.</span>
+<span style="color: #036A07;">Save beginning, end of each region, color and help-echo on the</span>
+<span style="color: #036A07;">first character of the region. Delete highlight file if it is empty."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (<span style="color: #0000FF;">let</span> ((fname (highlight-save-filename))
+        (highlights (highlight-get-highlights)))
+    (<span style="color: #0000FF;">if</span> (<span style="color: #0000FF;">and</span> fname highlights)
+          (<span style="color: #0000FF;">with-temp-file</span> fname
+            (print highlights (current-buffer)))
+        <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">get rid of file if there are not highlights</span>
+        (<span style="color: #0000FF;">when</span> (<span style="color: #0000FF;">and</span> fname (file-exists-p fname))
+          (delete-file fname)))))
+
+(add-hook 'after-save-hook 'highlight-save)
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">highlight-save</td>
+<td class="left">helm-swoop&#x2013;clear-cache</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="org-src-container">
+
+<pre class="src src-sh">cat .highlights.org.highlights
+</pre>
+</div>
+
+<pre class="example">
+((438 454 "Light Salmon" "highlighted") (1014 1031 "Light Salmon" "highlighted"))
+</pre>
+
+<p>
+Here, we can read the contents and apply the highlights. We set this up on a hook for org-mode, so it will apply them on when we open org-files. You could make this more general if you plan to highlight in code files, for example.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-load</span> ()
+  <span style="color: #036A07;">"Load and apply highlights."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (<span style="color: #0000FF;">setq</span> font-lock-extra-managed-props (delq 'help-echo font-lock-extra-managed-props))
+  (<span style="color: #0000FF;">let</span> ((fname (highlight-save-filename)))
+    (<span style="color: #0000FF;">when</span> (<span style="color: #0000FF;">and</span> fname (file-exists-p fname))
+      (mapcar
+       (<span style="color: #0000FF;">lambda</span> (entry)
+         (<span style="color: #0000FF;">let</span> ((beg (nth 0 entry))
+               (end (nth 1 entry))
+               (color (nth 2 entry))
+               (help-echo (nth 3 entry)))
+           (set-text-properties
+            beg end
+            `(font-lock-face (<span style="color: #006FE0;">:background</span> ,color)
+                             help-echo ,help-echo
+                             highlighted t))))
+       (<span style="color: #0000FF;">with-temp-buffer</span> (insert-file-contents fname)
+                         (read (current-buffer)))))))
+
+
+(add-hook 'org-mode-hook 'highlight-load)
+</pre>
+</div>
+
+
+<p>
+Now, let's outdo ourselves in ridiculosity. We will add a helm-colors selector to give you unprecedented highlighting capability in multicolor magnificence. This function will highlight selected text, or update the color of an existing highlight.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight</span> (beg end <span style="color: #6434A3;">&amp;optional</span> color)
+  <span style="color: #036A07;">"Highlight region from BEG to END with COLOR.</span>
+<span style="color: #036A07;">COLOR is selected from `</span><span style="color: #D0372D;">helm-colors</span><span style="color: #036A07;">' when run interactively."</span>
+  (<span style="color: #0000FF;">interactive</span> <span style="color: #008000;">"r"</span>)
+  (<span style="color: #0000FF;">unless</span> (<span style="color: #0000FF;">or</span> (get-text-property (point) 'highlighted)
+              (region-active-p))
+    (<span style="color: #ff0000; font-weight: bold;">error</span> <span style="color: #008000;">"No region selected or not on a highlight."</span>))
+  (<span style="color: #0000FF;">unless</span> color
+    (<span style="color: #0000FF;">setq</span> color (s-trim (helm-colors))))
+  (<span style="color: #0000FF;">if</span> (get-text-property (point) 'highlighted)
+      <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">update color</span>
+      (<span style="color: #0000FF;">let</span> ((beg (previous-single-property-change (point) 'highlighted))
+            (end (next-single-property-change (point) 'highlighted)))
+        (set-text-properties
+         beg end
+         `(font-lock-face (<span style="color: #006FE0;">:background</span> ,color)
+                          highlighted t)))
+  (set-text-properties
+   beg end
+   `(font-lock-face (<span style="color: #006FE0;">:background</span> ,color)
+                    highlighted t))))
+
+<span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">For convenience</span>
+(global-set-key (kbd <span style="color: #008000;">"s-h"</span>) 'highlight)
+</pre>
+</div>
+<pre class="example">
+highlight
+</pre>
+
+
+<p>
+Now, we can conveniently highlight text in whatever color we want. How about list your highlights? After we have highlighted a lot, it might be nice to see a list of these we can click on to find our highlights more quickly.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-list</span> ()
+  <span style="color: #036A07;">"Make a list of highlighted text in another buffer. "</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (<span style="color: #0000FF;">let</span> ((cb (current-buffer))
+        (fname (buffer-file-name))
+        (hls (mapcar
+              (<span style="color: #0000FF;">lambda</span> (entry)
+                (list (nth 0 entry)
+                      (buffer-substring (nth 0 entry) (nth 1 entry))))
+              (highlight-get-highlights))))
+    (<span style="color: #0000FF;">if</span> hls
+        (<span style="color: #0000FF;">progn</span>
+          (split-window-right)
+          (switch-to-buffer-other-window <span style="color: #008000;">"*highlights*"</span>) (org-mode)
+          (<span style="color: #0000FF;">setq</span> buffer-read-only nil)
+          (erase-buffer)
+          (insert <span style="color: #008000;">"Click on text to jump to the position.\n\n"</span>)
+
+          (<span style="color: #0000FF;">dolist</span> (s hls)
+            (<span style="color: #0000FF;">let</span> ((map (make-sparse-keymap)))
+              (define-key map [mouse-1]
+                `(<span style="color: #0000FF;">lambda</span> ()
+                   (<span style="color: #0000FF;">interactive</span>)
+                   (find-file ,fname)
+                   (goto-char ,(nth 0 s))))
+              (insert (propertize
+                       (concat (nth 1 s) <span style="color: #008000;">"\n"</span>)
+                       'local-map map))))
+          (<span style="color: #0000FF;">setq</span> buffer-read-only t))
+      (message <span style="color: #008000;">"No highlights found."</span>))))
+</pre>
+</div>
+
+<pre class="example">
+highlight-list
+</pre>
+
+<p>
+You probably would like to just select some text with your mouse, and have it highlighted. That requires us to advise the mouse-set-region function.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-green</span> ()
+  <span style="color: #036A07;">"Highlight region in green."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (highlight (region-beginning) (region-end) <span style="color: #008000;">"Darkolivegreen1"</span>))
+
+<span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">create the advice for use later</span>
+(<span style="color: #0000FF;">defadvice</span> <span style="color: #006699;">mouse-set-region</span> (after my-highlight () disable)
+  <span style="color: #036A07;">"Highlight"</span>
+  (highlight-green))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-mouse-on</span> ()
+  <span style="color: #036A07;">"Turn on mouse highlighting"</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (ad-enable-advice 'mouse-set-region 'after 'my-highlight)
+  (ad-activate 'mouse-set-region))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-mouse-off</span> ()
+  (<span style="color: #0000FF;">interactive</span>)
+  (ad-disable-advice 'mouse-set-region 'after 'my-highlight)
+  (ad-deactivate 'mouse-set-region))
+</pre>
+</div>
+
+<pre class="example">
+highlight-mouse-off
+</pre>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-picasso-blues</span> ()
+ (<span style="color: #0000FF;">interactive</span>)
+ (<span style="color: #0000FF;">save-excursion</span>
+   (<span style="color: #0000FF;">let</span> ((colors '(<span style="color: #008000;">"PowderBlue"</span>
+                   <span style="color: #008000;">"Lightskyblue1"</span>
+                   <span style="color: #008000;">"Lightskyblue2"</span>
+                   <span style="color: #008000;">"Lightskyblue3"</span>
+                   <span style="color: #008000;">"Lightskyblue4"</span>))
+         (beg (region-beginning))
+         (end (region-end)))
+     (goto-char beg)
+     (<span style="color: #0000FF;">while</span> (&lt; (point) (- end 1))
+       (highlight (point) (+ 1 (point))
+                  (nth (mod (- (point) (region-beginning)) (length colors)) colors))
+       (forward-char)))))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-rainbow</span> ()
+ (<span style="color: #0000FF;">interactive</span>)
+ (<span style="color: #0000FF;">save-excursion</span>
+   (<span style="color: #0000FF;">let</span> ((colors '(<span style="color: #008000;">"Red1"</span>
+                   <span style="color: #008000;">"Orange1"</span>
+                   <span style="color: #008000;">"Yellow1"</span>
+                   <span style="color: #008000;">"Darkolivegreen1"</span>
+                   <span style="color: #008000;">"Skyblue1"</span>
+                   <span style="color: #008000;">"Blue1"</span>
+                   <span style="color: #008000;">"DarkViolet"</span>))
+         (beg (region-beginning))
+         (end (region-end)))
+     (goto-char beg)
+     (<span style="color: #0000FF;">while</span> (&lt; (point) (- end 1))
+       (highlight (point) (+ 1 (point))
+                  (nth (mod (- (point) (region-beginning)) (length colors)) colors))
+       (forward-char)))))
+</pre>
+</div>
+
+<p>
+=These look cool, but they don't get properly saved. The code that finds the highlights finds the region, but only saves the first color. That means that adjacent highlights of different color will also not be saved correctly.
+</p>
+
+<p>
+How about a highlight with your own tooltip? In theory we can set the help-echo property to some text. In practice I have found this tricky because font-lock occasionally erases help-echo properties on re-fontifying. We remove help-echo from a list of properties that are affected by this, but another library may add it back, and there might be some unintended consequences of that. Here we design a function to highlight with a user-defined tooltip.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-note</span> (beg end color <span style="color: #6434A3;">&amp;optional</span> note)
+  <span style="color: #036A07;">"Highlight selected text and add NOTE to it as a tooltip."</span>
+  (<span style="color: #0000FF;">interactive</span>
+   (list
+    (region-beginning)
+    (region-end)
+    (s-trim (helm-colors))))
+  (<span style="color: #0000FF;">unless</span> note (<span style="color: #0000FF;">setq</span> note (read-input <span style="color: #008000;">"Note: "</span>)))
+  (<span style="color: #0000FF;">unless</span> (region-active-p)
+    (<span style="color: #ff0000; font-weight: bold;">error</span> <span style="color: #008000;">"No region selected."</span>))
+  (set-text-properties
+   beg end
+   `(help-echo ,note font-lock-face (<span style="color: #006FE0;">:background</span> ,color)
+               highlighted t)))
+
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-note-edit</span> (new-note)
+  <span style="color: #036A07;">"Set tooltip of highlight at point to NEW-NOTE."</span>
+  (<span style="color: #0000FF;">interactive</span> (list (read-input <span style="color: #008000;">"Note: "</span> (get-text-property (point) 'help-echo))))
+  (<span style="color: #0000FF;">let*</span> ((region (button-lock-find-extent (point) 'highlighted))
+         (beg (car region))
+         (end (cdr region)))
+    (put-text-property beg end 'help-echo new-note)))
+</pre>
+</div>
+
+<p>
+=highlight-note-edit
+==highlight-note-edit
+==highlight-note-edit
+==highlight-note-edit
+=C
+Want to get rid of the highlights? We may want to delete one or all. We make a function for each.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-clear</span> ()
+  <span style="color: #036A07;">"Clear highlight at point."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (<span style="color: #0000FF;">when</span> (get-text-property (point) 'highlighted)
+    (set-text-properties
+     (next-single-property-change (point) 'highlighted)
+     (previous-single-property-change (point) 'highlighted)
+     nil)))
+
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-clear-all</span> ()
+  <span style="color: #036A07;">"Clear all highlights.</span>
+<span style="color: #036A07;">They are really deleted when you save the buffer."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (mapcar
+   (<span style="color: #0000FF;">lambda</span> (entry)
+     (<span style="color: #0000FF;">let</span> ((beg (nth 0 entry))
+           (end (nth 1 entry)))
+       (set-text-properties
+        beg end nil)))
+   (highlight-get-highlights))
+  (<span style="color: #0000FF;">when</span> (get-buffer <span style="color: #008000;">"*highlights*"</span>)
+    (kill-buffer <span style="color: #008000;">"*highlights*"</span>)))
+</pre>
+</div>
+<pre class="example">
+highlight-clear-all
+</pre>
+
+<p>
+Let's define a few convenience functions for common colors, a hydra to quickly select them and bind it to a key for convenience.  While we are at it, we add a menu to Org too.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-yellow</span> ()
+  <span style="color: #036A07;">"Highlight region in yellow."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (highlight (region-beginning) (region-end) <span style="color: #008000;">"Yellow"</span>))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-blue</span> ()
+  <span style="color: #036A07;">"Highlight region in blue."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (highlight (region-beginning) (region-end) <span style="color: #008000;">"LightBlue"</span>))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-pink</span> ()
+  <span style="color: #036A07;">"Highlight region in pink."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (highlight (region-beginning) (region-end) <span style="color: #008000;">"Pink"</span>))
+
+(<span style="color: #0000FF;">defun</span> <span style="color: #006699;">highlight-green</span> ()
+  <span style="color: #036A07;">"Highlight region in green."</span>
+  (<span style="color: #0000FF;">interactive</span>)
+  (highlight (region-beginning) (region-end) <span style="color: #008000;">"Darkolivegreen1"</span>))
+
+
+(<span style="color: #0000FF;">defhydra</span> highlighter (<span style="color: #006FE0;">:color</span> blue) <span style="color: #008000;">"highlighter"</span>
+  (<span style="color: #008000;">"b"</span> highlight-blue <span style="color: #008000;">"blue"</span>)
+  (<span style="color: #008000;">"g"</span> highlight-green <span style="color: #008000;">"Green"</span>)
+  (<span style="color: #008000;">"p"</span> highlight-pink <span style="color: #008000;">"Pink"</span>)
+  <span style="color: #8D8D84;">;; </span><span style="color: #8D8D84; font-style: italic;">define as many special colors as you like.</span>
+  (<span style="color: #008000;">"s"</span> (highlight (region-beginning) (region-end) <span style="color: #008000;">"Lightsalmon1"</span>) <span style="color: #008000;">"Salmon"</span>)
+  (<span style="color: #008000;">"y"</span> highlight-yellow <span style="color: #008000;">"yellow"</span>)
+  (<span style="color: #008000;">"c"</span> highlight <span style="color: #008000;">"Choose color"</span>)
+  (<span style="color: #008000;">"n"</span> (highlight-note (region-beginning) (region-end) <span style="color: #008000;">"Thistle"</span>) <span style="color: #008000;">"Note"</span>)
+  (<span style="color: #008000;">"N"</span> highlight-note <span style="color: #008000;">"Note (c)"</span>)
+  (<span style="color: #008000;">"m"</span> highlight-mouse-on <span style="color: #008000;">"Mouse"</span>)
+  (<span style="color: #008000;">"M"</span> highlight-mouse-off <span style="color: #008000;">"Mouse off"</span>)
+  (<span style="color: #008000;">"e"</span> highlight-note-edit <span style="color: #008000;">"Edit note"</span>)
+  (<span style="color: #008000;">"l"</span> highlight-list <span style="color: #008000;">"List highlights"</span>)
+  (<span style="color: #008000;">"r"</span> highlight-load <span style="color: #008000;">"Reload"</span>)
+  (<span style="color: #008000;">"S"</span> highlight-save <span style="color: #008000;">"Save"</span>)
+  (<span style="color: #008000;">"d"</span> highlight-clear <span style="color: #008000;">"Delete"</span>)
+  (<span style="color: #008000;">"D"</span> highlight-clear-all <span style="color: #008000;">"Delete All"</span>))
+
+(easy-menu-change
+ '(<span style="color: #008000;">"Org"</span>) <span style="color: #008000;">"highlighter"</span>
+ '([<span style="color: #008000;">"Highlight"</span> highlight]
+   [<span style="color: #008000;">"Highlight (B)"</span> highlight-blue]
+   [<span style="color: #008000;">"Highlight (G)"</span> highlight-green]
+   [<span style="color: #008000;">"Highlight (P)"</span> highlight-pink]
+   [<span style="color: #008000;">"Highlight (Y)"</span> highlight-yellow]
+   [<span style="color: #008000;">"Highlight note"</span> highlight-note]
+   [<span style="color: #008000;">"List highlights"</span> highlight-list]
+   [<span style="color: #008000;">"Delete highlight"</span> highlight-clear]
+   [<span style="color: #008000;">"Delete highlights"</span> highlight-clear-all])
+ <span style="color: #008000;">"Show/Hide"</span>)
+
+
+(global-set-key (kbd <span style="color: #008000;">"s-h"</span>) 'highlighter/body)
+</pre>
+</div>
+
+<pre class="example">
+highlighter/body
+</pre>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Known limitations</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The tooltips seem especially fragile, and if there is code that undoes the removal of help-echo from font-lock-extra-managed-props, it seems possible they would easily get lost. I wouldn't use them a lot without a lot of testing. You <i>have</i> to rely on the hook functions defined to keep the highlights synchronized between the buffer and the external highlight file. If you were to rename a file externally, e.g. in the OS, or with a shell command, then the highlights will be lost unless you also rename the external file.
+</p>
+
+<p>
+Highlights are not robust enough to survive refiling an org-mode section from one file to another.  Personally I don't see these as too big a problem; I don't put a lot of value of highlights, but I can see it being pretty annoying to lose them!
+</p>
+
+<p>
+Still, if you want to give this a try, you can use the code here: <a href="/media/2015-07-28-A-highlight-annotation-mode-for-Emacs-using-font-lock/highlights.el">highlights.el</a> . You should bind the functions to whatever keys you want. Also, it is setup to only work for org-mode. I am not sure what the best hook to use for any file might be. Maybe find-file-hook.
+</p>
+</div>
+</div>
+<p>Copyright (C) 2015 by John Kitchin. See the <a href="/copying.html">License</a> for information about copying.<p><p><a href="/org/2015/07/28/A-highlight-annotation-mode-for-Emacs-using-font-lock.org">org-mode source</a><p><p>Org-mode version = 8.2.10</p>
+
+    </div>
+  </div>
+</article>
+
+
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="johnkitchin">Share on Twitter</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+<a href="https://twitter.com/search?q=https://kitchingroup.cheme.cmu.edu/blog/2015/07/28/A-highlight-annotation-mode-for-Emacs-using-font-lock">Discuss on Twitter</a>
+
+
+          </div>
+          <div id="sidebar" class="grid_4">
+            <aside>
+<section>
+<script>
+  (function() {
+    var cx = '002533177287215655227:l7uvu35ssbc';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</section>
+
+<section>
+    <h1 class="post_header_gradient theme_font">Twitter</h1>
+    <a class="twitter-timeline" href="https://twitter.com/johnkitchin" data-widget-id="545217643582881792">Tweets by @johnkitchin</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+  <section>
+    <h1 class="post_header_gradient theme_font">Links</h1>
+    <ul>
+      <li><a href="https://www.continuum.io">Anaconda Python</a></li>
+      <li><a href="/pycse">Pycse</a></li>
+      <li><a href="/dft-book">DFT-book</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h1 class="post_header_gradient theme_font">Latest Posts</h1>
+    <ul>
+      <li><a href="/blog/2023/12/10/New-publication-Applying-Large-Graph-Neural-Networks-to-Predict-Transition-Metal-Complex-Energies-Using-the-tmQM-wB97MV-Data-Set/">New publication - Applying Large Graph Neural Networks to Predict Transition Metal Complex Energies Using the tmQM_wB97MV Data Set</a></li>
+      <li><a href="/blog/2023/12/03/New-publication-Chemical-Properties-from-Graph-Neural-Network-Predicted-Electron-Densities/">New publication - Chemical Properties from Graph Neural Network-Predicted Electron Densities</a></li>
+      <li><a href="/blog/2023/09/24/New-publication-Beyond-Independent-Error-Assumptions-in-Large-GNN-Atomistic-Models/">New publication - Beyond Independent Error Assumptions in Large GNN Atomistic Models</a></li>
+      <li><a href="/blog/2023/09/24/Adding-new-backends-to-hashcache/">Adding new backends to hashcache</a></li>
+      <li><a href="/blog/2023/09/21/A-better-manager-for-supervising-Python-functions/">A better manager for supervising Python functions</a></li>
+    </ul>
+  </section>
+
+<section>
+<h1 class="post_header_gradient theme_font">Latest GitHub Repos</h1>
+  <a href="https://github.com/jkitchin">@jkitchin</a> on GitHub.
+  <ul id="my-github-projects">
+        <li class="loading">Status updating&#8230;</li>
+  </ul>
+
+</section>
+</aside>
+
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      
+<footer>
+  <div id="footer" class="grid_12">
+    <div class="grid_8">
+      <p>
+        <a href="/blog/feed/index.xml">RSS</a>
+      </p>
+    </div>
+    <div class="grid_4" id="credits">
+      <p>
+        Copyright 2023
+        John Kitchin
+      </p>
+      <p>
+        Powered by <a href="http://www.blogofile.com">Blogofile</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/jquery.tweet.js"></script>  
+  <script src="/js/site.js"></script>
+  <!--[if lt IE 7 ]>
+  <script src="js/libs/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix('img, .png_bg');</script>
+  <![endif]-->
+  <script>
+      var _gaq=[['_setAccount','UA-35731398-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="/js/git.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+     $("#my-github-projects").loadRepositories("jkitchin");
+    });
+</script>
+
+
+

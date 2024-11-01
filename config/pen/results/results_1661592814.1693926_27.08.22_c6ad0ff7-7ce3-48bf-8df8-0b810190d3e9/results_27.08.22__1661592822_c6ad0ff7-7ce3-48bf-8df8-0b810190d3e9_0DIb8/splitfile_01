@@ -1,0 +1,3 @@
+[[String]] -> IO ()
+tabularise rows = mapM_ (\row -> putStrLn $ intercalate "," row) rows
+EOD

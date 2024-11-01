@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: create hook
+# group: hook
+# key: ch
+# --
+(defvar ${1:my-func}-after-hook '())
+(run-hooks '$1-after-hook)

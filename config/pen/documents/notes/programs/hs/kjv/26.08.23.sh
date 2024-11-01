@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "kjv" "rev.5:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "kjv" "rev.5:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "kjv" "rev.5:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "kjv" "ps.5:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "kjv" "ps." "5:14" "#" "<==" "zsh"

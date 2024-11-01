@@ -1,0 +1,5 @@
+ ( toLower )
+import Control.Exception ( evaluate , SomeException )
+import Control.Monad ( mapM_ )
+import Control.Arrow ( ( && & ) , second )
+import Control. Monad .Instances ()

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: prologscript
+# group: 
+# key: prologscript
+# --
+#!/usr/bin/env swipl
+
+:- initialization(main, main).
+
+main(Argv) :-
+shell("echo Shane | tv"),
+echo(Argv).

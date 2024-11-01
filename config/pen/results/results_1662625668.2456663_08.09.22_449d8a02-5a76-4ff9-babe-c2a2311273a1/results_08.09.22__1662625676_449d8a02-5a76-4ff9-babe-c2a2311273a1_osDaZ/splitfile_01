@@ -1,0 +1,6 @@
+https://clojuredocs.org/clojure.core/swap/
+
+  swap!
+   (swap! val keyfn &optional fn)
+   (swap! val keyfn &optional fn &key limit)
+   (swap! val keyfn &optional fn &key limit identity)

@@ -1,0 +1,1 @@
+- Bash guru: You can write a variable as "$NAME", which would be expanded by bash when it's time to run commands.

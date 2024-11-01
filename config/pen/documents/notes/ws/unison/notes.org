@@ -1,0 +1,39 @@
+* Unison
+https://www.unison-lang.org/docs/what-problems-does-unison-solve/
+
+It's a cool language but:
+- it doesn't use sexps
+- neither is it a hacky scripting language like shell or perl
+
+However, it's a lot like haskell and may be either a stepping stone to haskell or an alternate to haskell:
+- https://exercism.org/tracks/unison/exercises/zebra-puzzle/solutions/rlmark
+
+Consider learning something like Unison though.
+
+** Install
+https://www.unison-lang.org/docs/install-instructions/
+
+*** LSP
+https://github.com/unisonweb/unison/blob/trunk/docs/language-server.markdown
+
+** Libraries
+https://share.unison-lang.org/a
+
+See what it can do.
+
+*** Write shell scripts
+- https://share.unison-lang.org/@ceedubs/shell
+
+** Learn unison
+https://exercism.org/tracks/unison/
+
+These are just algorithms though.
+
+*** TODO Begin by learning how to make shell scripts
+
+** emacs
+https://github.com/fmguerreiro/unison-ts-mode
+
+** Consider making a blog with unison
+https://share.unison-lang.org/@unison/blog-engine
+

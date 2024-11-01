@@ -1,0 +1,13 @@
+
+
+main = do
+
+putStrLn "Hello world!"
+
+-- Just a simple comment
+
+-- This is a simple comment
+
+-- This is another comment
+
+-- and it can contain more than one line

@@ -1,0 +1,307 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 9266
+Connection: keep-alive
+Date: Fri, 25 Aug 2023 10:47:13 GMT
+Server: Apache
+Content-Location: search.php
+TCN: choice
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 291933b5bb7fbb03efd999a83bb9696a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SYD1-C2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: df5mjPCxvmpDuY-AN61mK86pfw6x5MUJWtedWpRo07Ss9-DD1lsOEw==
+Age: 2
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Gen 1:1 Cross References (62 Verses)</title>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<style>body{background:#fff;font-family:Segoe UI,-apple-system,Verdana,sans-serif;margin:0;padding:0}h1{font-size:250%;color:#625539;font-family:Georgia,serif;font-weight:400;margin-top:0;margin-bottom:.25em}h1+h2,h1+p{margin-top:-.5em}h2{font-size:200%;color:#6d834e;font-family:Georgia,serif;font-weight:400;margin-bottom:.25em;clear:left}h3{color:#625529;font-size:110%}h3+p,h3+ul{margin-top:-1em}h4{font-family:Georgia,serif;margin-bottom:.25em}td{vertical-align:top}#head{background:#7e7156}#head p{margin:0;padding-bottom:5px}#nav{text-align:center}#head a,#nav a{text-decoration:none;color:#fff;margin-right:1em;padding:0}#nav a:hover,body.blog #nav-blog,body.geo #nav-geo,body.home #nav-home,body.labs #nav-labs,body.realtime #nav-realtime,body.topics #nav-topics{border-bottom:5px solid #ebd8af}#logo{margin:.25em;padding:0;font-size:100%;position:absolute;left:0;height:2em}#body{width:90%;max-width:1200px;min-width:300px;margin-left:auto;margin-right:auto}div.testament{width:40%;float:left}div.testament h3{position:static;width:auto;text-align:left}div.testament li{font-size:110%}#side ul,div.testament ul{list-style-type:none;margin-left:0;padding-left:0}p.intro{font-family:Geogia,serif;font-size:125%;color:#444}#side{border-top:1px solid #7e7156;padding-top:0;margin-top:25px}#foot{font-size:85%;color:#444;border-top:1px solid #7e7156;padding:5px 5% 0;max-width:1200px;margin-top:25px;clear:both}#top-ads{float:right;margin:1em 2em 0 1em;width:340px}ul.overlay-gallery li{list-style-type:none;display:inline;float:left;clear:right;margin:auto 2em 1em auto}.alpha-nav{color:#ccc}.alpha-nav strong{color:#000}a img{border:none}a.ge{padding:0 0 24px 36px;background:url(https://a.openbible.info/images/ge.png);background-repeat:no-repeat}h2 a{color:#6d834e}span.sc{font-variant:small-caps}.note,span.preview{font-size:85%;color:#444}img.atlas{float:left;margin:auto 2em 2em auto}hr.clear{height:1px;visibility:hidden;clear:both}code{font-family:Consolas,monospace;font-size:85%;background:#eee}span.note{font-weight:400;font-size:80%}cite.bibleref{font-style:normal}img{max-width:100%}#map-canvas img{max-width:auto}input{font-weight:400}#suggest ol{width:25%;float:left;list-style-type:none}h2 input{font-size:120%;max-width:100%}h2 input[type=submit]{font-size:100%}form.topic-search{background:#e2e6dc;margin:0 0 auto 0;padding:4px 5px 4px 10px;font-weight:700}form+h1{margin-top:.2em}body.script .invisible{visibility:hidden}body.script .visible,body.script .visible .invisible{visibility:visible}.topic-search input{padding:2px}.topic-search .alpha-nav{font-weight:400;margin-top:-.5em}p.error,p.message{background:#ebd8af;border-top:1px solid #7e7156;border-bottom:1px solid #7e7156;padding:10px}body.script .vote-buttons{padding-right:10px;margin:0}.vote-buttons button{margin-bottom:3px}p.browse-verse{font-size:80%;margin-top:-.75em}p.verse-text{font-size:120%;line-height:160%}p.verse-topics{line-height:250%}p.verse-topics a{text-decoration:none;margin-right:1em}p.verse-topics a:hover{text-decoration:underline}a.cloud-1{font-size:90%}a.cloud-2{font-size:120%}a.cloud-3{font-size:150%}a.cloud-4{font-size:200%}a.cloud-5{font-size:250%}body.topics h1 span.small{display:block;font-size:35%;margin-bottom:-.5em}body.photos h1 img{float:left;margin:.25em 15px .5em 0}body.photos h2{clear:left}body.photos div.col{width:30%;float:left}body.photos div.col h2{border-color:transparent}span.credit{font-size:75%}ul.photos{list-style-type:none;padding-left:0;margin-left:0}ul.photos li{padding:3px;display:inline-block;list-style-type:none}.clear{clear:both}.left{float:left}.right{float:right}table.data{border-spacing:0}table.data td{border-bottom:1px solid #ccc}table.data th{text-align:left;border-bottom:1px solid #666}table.data th.number,td.number,th.number{text-align:right}table.data td,table.data th{padding:2px}table.chapters td{padding-right:12px}body.realtime input.search{font-size:120%}#tweets div.tweets{margin-top:12px;padding:0}#tweets div.tweets div{border-top:1px dashed #ccc;line-height:125%;padding:5px 0;clear:left}#tweets{max-width:564px;padding:12px 0;margin-top:20px}body.realtime a.bibleref{color:#390}#tweets h2{margin-top:0}.realtime-home #tweets{border-right:200px solid #f0f0f0;float:left;padding-top:0;padding-right:20px}.realtime-home .top{float:left;width:200px;margin-left:-200px;padding:10px 20px}p.prev-next{clear:left}ol.emoji{padding:0;margin:0;list-style-type:none}ol.emoji li{display:inline-block;font-size:2em;max-width:100px;text-align:center;list-style-type:none;width:2em;padding:8px}ol.emoji li small{font-size:45%;display:block}a.share span{margin:0;padding:0;height:20px;width:20px;line-height:20px;font-size:16px}a.share svg{fill:#fff;width:20px;height:20px;display:inline-block;vertical-align:bottom}h1 a.share span{font-size:20px}h1 a.share svg{vertical-align:baseline}@media (max-width:769px){#top-ads{float:none;margin:2em 0;text-align:center;width:auto;min-height:250px}#head p{line-height:44px}.mobile-hide{display:none}table.chapters td{padding-bottom:12px}}@media print{#top-ads{display:none}}</style>
+<link rel="icon" type="image/x-icon" href="https://a.openbible.info/favicon.ico" />
+	<link rel="canonical" href="https://www.openbible.info/labs/cross-references/search?q=Genesis+1%3A1" />
+<style type="text/css">
+	.votes-1 { background: #fee; }
+	.votes-2 { background: #fdd; }
+	.votes-3 { background: #fcc; }
+	.votes-4 { background: #fbb; }
+	.votes-5 { background: #faa; }
+	div.crossrefs { clear: right; }
+	div.crossrefs div { width:300px; height:200px; float:left; margin:auto 10px 10px auto; padding:5px; overflow:auto; }
+	div.crossrefs div h3 {color:#000; margin-top:0; margin-bottom:1em; }
+	div.crossrefs div h3 a {color:#000; }
+	div.crossrefs p {margin-bottom:0;}
+	div.crossrefs div.crossref-verse { background: #f77; border: 2px solid #000; width: 296px; height: 196px;}
+	span.vote { font-size:80%; float:right; font-weight:normal; padding-top:2px;}
+	span.vote a {background: #fee; border:1px solid #000; padding:2px; color:#000; text-decoration:none;}
+	@media print {
+		div.crossrefs div, div.crossrefs div.crossref-verse { width:auto; height:auto; float:none; margin:auto; padding:auto; }
+		form, span.vote, span.links, #head { display:none; }
+		h1 { font-size: 100%; }
+	}
+</style>
+</head>
+<body class="labs inline-h3">
+<div id="head">
+	<p id="nav">
+		<a href="/" id="nav-home">OpenBible.info</a>
+		<a href="/geo/" id="nav-geo">Geocoding</a>
+		<a href="/topics/" id="nav-topics">Topical<span class="mobile-hide">&#160;Bible</span></a>
+		<a href="/labs/" id="nav-labs">Labs</a>
+		<a href="/blog/" id="nav-blog">Blog</a>
+	</p>
+</div>
+<div id="top-ads">
+<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7781027110498774"
+     data-ad-slot="2667392197"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="body">
+<h1>Genesis 1:1 Cross References</h1>
+<form action="/labs/cross-references/search">
+<p><input type="text" name="q" size="20" value="Genesis 1:1" /> <input type="submit" value="Go to Bible verse" />
+		<br />
+								<a href="/labs/cross-references/search?q=Genesis+1%3A2">Genesis 1:2 &raquo;</a>
+				| Compare: <a href="https://www.biblegateway.com/passage/?search=Gen+1%3A1%2CJohn+1%3A1-3%2CHeb+11%3A3%2CIsa+45%3A18%2CRev+4%3A11%2CHeb+1%3A10%2CIsa+42%3A5%2CCol+1%3A16-17%2CEx+20%3A11%2CJob+38%3A4%2CActs+17%3A24%2C2+Pet+3%3A5%2CNeh+9%3A6%2CIsa+44%3A24%2CJer+32%3A17%2CJer+51%3A15%2CPs+33%3A9%2CRev+14%3A7%2CProv+3%3A19%2CPs+115%3A15%2CActs+14%3A15%2CJer+10%3A12%2CPs+136%3A5%2CProv+8%3A22-30%2C1+Cor+8%3A6%2CPs+8%3A3%2CHeb+1%3A2%2CPs+102%3A25%2CHeb+3%3A4%2CZech+12%3A1%2CIsa+40%3A28%2CPs+124%3A8%2CRev+10%3A6%2CPs+96%3A5%2CPs+89%3A11-12%2CPs+121%3A2%2CPs+33%3A6%2CActs+4%3A24%2CIsa+37%3A16%2CProv+16%3A4%2CPs+148%3A4-5%2CPs+104%3A24%2CPs+90%3A2%2CRom+11%3A36%2CIsa+51%3A16%2CPs+146%3A6%2CPs+134%3A3%2CIsa+40%3A26%2CPs+104%3A30%2C1+Jn+1%3A1%2CEph+3%3A9%2CRom+1%3A19-20%2CIsa+51%3A13%2C1+Chr+16%3A26%2CRev+21%3A6%2CMark+13%3A19%2CRev+22%3A13%2CIsa+65%3A17%2CRev+3%3A14%2CJob+26%3A13%2CEccl+12%3A1%2CMatt+11%3A25%2CEx+31%3A18&amp;version=NIV">NIV</a>, <a href="https://www.biblegateway.com/passage/?search=Gen+1%3A1%2CJohn+1%3A1-3%2CHeb+11%3A3%2CIsa+45%3A18%2CRev+4%3A11%2CHeb+1%3A10%2CIsa+42%3A5%2CCol+1%3A16-17%2CEx+20%3A11%2CJob+38%3A4%2CActs+17%3A24%2C2+Pet+3%3A5%2CNeh+9%3A6%2CIsa+44%3A24%2CJer+32%3A17%2CJer+51%3A15%2CPs+33%3A9%2CRev+14%3A7%2CProv+3%3A19%2CPs+115%3A15%2CActs+14%3A15%2CJer+10%3A12%2CPs+136%3A5%2CProv+8%3A22-30%2C1+Cor+8%3A6%2CPs+8%3A3%2CHeb+1%3A2%2CPs+102%3A25%2CHeb+3%3A4%2CZech+12%3A1%2CIsa+40%3A28%2CPs+124%3A8%2CRev+10%3A6%2CPs+96%3A5%2CPs+89%3A11-12%2CPs+121%3A2%2CPs+33%3A6%2CActs+4%3A24%2CIsa+37%3A16%2CProv+16%3A4%2CPs+148%3A4-5%2CPs+104%3A24%2CPs+90%3A2%2CRom+11%3A36%2CIsa+51%3A16%2CPs+146%3A6%2CPs+134%3A3%2CIsa+40%3A26%2CPs+104%3A30%2C1+Jn+1%3A1%2CEph+3%3A9%2CRom+1%3A19-20%2CIsa+51%3A13%2C1+Chr+16%3A26%2CRev+21%3A6%2CMark+13%3A19%2CRev+22%3A13%2CIsa+65%3A17%2CRev+3%3A14%2CJob+26%3A13%2CEccl+12%3A1%2CMatt+11%3A25%2CEx+31%3A18&amp;version=KJV">KJV</a>, <a href="https://www.biblegateway.com/passage/?search=Gen+1%3A1%2CJohn+1%3A1-3%2CHeb+11%3A3%2CIsa+45%3A18%2CRev+4%3A11%2CHeb+1%3A10%2CIsa+42%3A5%2CCol+1%3A16-17%2CEx+20%3A11%2CJob+38%3A4%2CActs+17%3A24%2C2+Pet+3%3A5%2CNeh+9%3A6%2CIsa+44%3A24%2CJer+32%3A17%2CJer+51%3A15%2CPs+33%3A9%2CRev+14%3A7%2CProv+3%3A19%2CPs+115%3A15%2CActs+14%3A15%2CJer+10%3A12%2CPs+136%3A5%2CProv+8%3A22-30%2C1+Cor+8%3A6%2CPs+8%3A3%2CHeb+1%3A2%2CPs+102%3A25%2CHeb+3%3A4%2CZech+12%3A1%2CIsa+40%3A28%2CPs+124%3A8%2CRev+10%3A6%2CPs+96%3A5%2CPs+89%3A11-12%2CPs+121%3A2%2CPs+33%3A6%2CActs+4%3A24%2CIsa+37%3A16%2CProv+16%3A4%2CPs+148%3A4-5%2CPs+104%3A24%2CPs+90%3A2%2CRom+11%3A36%2CIsa+51%3A16%2CPs+146%3A6%2CPs+134%3A3%2CIsa+40%3A26%2CPs+104%3A30%2C1+Jn+1%3A1%2CEph+3%3A9%2CRom+1%3A19-20%2CIsa+51%3A13%2C1+Chr+16%3A26%2CRev+21%3A6%2CMark+13%3A19%2CRev+22%3A13%2CIsa+65%3A17%2CRev+3%3A14%2CJob+26%3A13%2CEccl+12%3A1%2CMatt+11%3A25%2CEx+31%3A18&amp;version=NLT">NLT</a>, <a href="https://www.biblegateway.com/passage/?search=Gen+1%3A1%2CJohn+1%3A1-3%2CHeb+11%3A3%2CIsa+45%3A18%2CRev+4%3A11%2CHeb+1%3A10%2CIsa+42%3A5%2CCol+1%3A16-17%2CEx+20%3A11%2CJob+38%3A4%2CActs+17%3A24%2C2+Pet+3%3A5%2CNeh+9%3A6%2CIsa+44%3A24%2CJer+32%3A17%2CJer+51%3A15%2CPs+33%3A9%2CRev+14%3A7%2CProv+3%3A19%2CPs+115%3A15%2CActs+14%3A15%2CJer+10%3A12%2CPs+136%3A5%2CProv+8%3A22-30%2C1+Cor+8%3A6%2CPs+8%3A3%2CHeb+1%3A2%2CPs+102%3A25%2CHeb+3%3A4%2CZech+12%3A1%2CIsa+40%3A28%2CPs+124%3A8%2CRev+10%3A6%2CPs+96%3A5%2CPs+89%3A11-12%2CPs+121%3A2%2CPs+33%3A6%2CActs+4%3A24%2CIsa+37%3A16%2CProv+16%3A4%2CPs+148%3A4-5%2CPs+104%3A24%2CPs+90%3A2%2CRom+11%3A36%2CIsa+51%3A16%2CPs+146%3A6%2CPs+134%3A3%2CIsa+40%3A26%2CPs+104%3A30%2C1+Jn+1%3A1%2CEph+3%3A9%2CRom+1%3A19-20%2CIsa+51%3A13%2C1+Chr+16%3A26%2CRev+21%3A6%2CMark+13%3A19%2CRev+22%3A13%2CIsa+65%3A17%2CRev+3%3A14%2CJob+26%3A13%2CEccl+12%3A1%2CMatt+11%3A25%2CEx+31%3A18&amp;version=NKJV">NKJV</a>, <a href="https://www.biblegateway.com/passage/?search=Gen+1%3A1%2CJohn+1%3A1-3%2CHeb+11%3A3%2CIsa+45%3A18%2CRev+4%3A11%2CHeb+1%3A10%2CIsa+42%3A5%2CCol+1%3A16-17%2CEx+20%3A11%2CJob+38%3A4%2CActs+17%3A24%2C2+Pet+3%3A5%2CNeh+9%3A6%2CIsa+44%3A24%2CJer+32%3A17%2CJer+51%3A15%2CPs+33%3A9%2CRev+14%3A7%2CProv+3%3A19%2CPs+115%3A15%2CActs+14%3A15%2CJer+10%3A12%2CPs+136%3A5%2CProv+8%3A22-30%2C1+Cor+8%3A6%2CPs+8%3A3%2CHeb+1%3A2%2CPs+102%3A25%2CHeb+3%3A4%2CZech+12%3A1%2CIsa+40%3A28%2CPs+124%3A8%2CRev+10%3A6%2CPs+96%3A5%2CPs+89%3A11-12%2CPs+121%3A2%2CPs+33%3A6%2CActs+4%3A24%2CIsa+37%3A16%2CProv+16%3A4%2CPs+148%3A4-5%2CPs+104%3A24%2CPs+90%3A2%2CRom+11%3A36%2CIsa+51%3A16%2CPs+146%3A6%2CPs+134%3A3%2CIsa+40%3A26%2CPs+104%3A30%2C1+Jn+1%3A1%2CEph+3%3A9%2CRom+1%3A19-20%2CIsa+51%3A13%2C1+Chr+16%3A26%2CRev+21%3A6%2CMark+13%3A19%2CRev+22%3A13%2CIsa+65%3A17%2CRev+3%3A14%2CJob+26%3A13%2CEccl+12%3A1%2CMatt+11%3A25%2CEx+31%3A18&amp;version=NRSVUE">NRSVue</a>, <a href="https://www.biblegateway.com/passage/?search=Gen+1%3A1%2CJohn+1%3A1-3%2CHeb+11%3A3%2CIsa+45%3A18%2CRev+4%3A11%2CHeb+1%3A10%2CIsa+42%3A5%2CCol+1%3A16-17%2CEx+20%3A11%2CJob+38%3A4%2CActs+17%3A24%2C2+Pet+3%3A5%2CNeh+9%3A6%2CIsa+44%3A24%2CJer+32%3A17%2CJer+51%3A15%2CPs+33%3A9%2CRev+14%3A7%2CProv+3%3A19%2CPs+115%3A15%2CActs+14%3A15%2CJer+10%3A12%2CPs+136%3A5%2CProv+8%3A22-30%2C1+Cor+8%3A6%2CPs+8%3A3%2CHeb+1%3A2%2CPs+102%3A25%2CHeb+3%3A4%2CZech+12%3A1%2CIsa+40%3A28%2CPs+124%3A8%2CRev+10%3A6%2CPs+96%3A5%2CPs+89%3A11-12%2CPs+121%3A2%2CPs+33%3A6%2CActs+4%3A24%2CIsa+37%3A16%2CProv+16%3A4%2CPs+148%3A4-5%2CPs+104%3A24%2CPs+90%3A2%2CRom+11%3A36%2CIsa+51%3A16%2CPs+146%3A6%2CPs+134%3A3%2CIsa+40%3A26%2CPs+104%3A30%2C1+Jn+1%3A1%2CEph+3%3A9%2CRom+1%3A19-20%2CIsa+51%3A13%2C1+Chr+16%3A26%2CRev+21%3A6%2CMark+13%3A19%2CRev+22%3A13%2CIsa+65%3A17%2CRev+3%3A14%2CJob+26%3A13%2CEccl+12%3A1%2CMatt+11%3A25%2CEx+31%3A18&amp;version=ESV">ESV</a>
+		|
+		<a href="/labs/cross-references/">Cross references home</a>
+</p>
+</form>
+	<div class="crossrefs">
+		<div class="crossref-verse">
+		<h3>Genesis 1:1</h3>
+		<p>In the beginning, God created the heavens and the earth.</p>
+		</div>
+									<div class="votes-5"><h3><a href="/labs/cross-references/search?q=John+1%3A1-3">John 1:1-3</a> <span id="c01001001.43001001-43001003" class="vote"></span></h3>
+				<p>In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through him, and without him was not any thing made that was made.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Hebrews+11%3A3">Hebrews 11:3</a> <span id="c01001001.58011003-58011003" class="vote"></span></h3>
+				<p>By faith we understand that the universe was created by the word of God, so that what is seen was not made out of things that are visible.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+45%3A18">Isaiah 45:18</a> <span id="c01001001.23045018-23045018" class="vote"></span></h3>
+				<p>For thus says the <span class="sc">Lord</span>, who created the heavens (he is God!), who formed the earth and made it (he established it; he did not create it empty, he formed it to be inhabited!): &#8220;I am the <span class="sc">Lord</span>, and there is no other.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+4%3A11">Revelation 4:11</a> <span id="c01001001.66004011-66004011" class="vote"></span></h3>
+				<p>&#8220;Worthy are you, our Lord and God, to receive glory and honor and power, for you created all things, and by your will they existed and were created.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Hebrews+1%3A10">Hebrews 1:10</a> <span id="c01001001.58001010-58001010" class="vote"></span></h3>
+				<p>And, &#8220;You, Lord, laid the foundation of the earth in the beginning, and the heavens are the work of your hands;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+42%3A5">Isaiah 42:5</a> <span id="c01001001.23042005-23042005" class="vote"></span></h3>
+				<p>Thus says God, the <span class="sc">Lord</span>, who created the heavens and stretched them out, who spread out the earth and what comes from it, who gives breath to the people on it and spirit to those who walk in it:</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Colossians+1%3A16-17">Colossians 1:16-17</a> <span id="c01001001.51001016-51001017" class="vote"></span></h3>
+				<p>For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities&#8212;all things were created through him and for him. And he is before all things, and in him all things hold together.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Exodus+20%3A11">Exodus 20:11</a> <span id="c01001001.02020011-02020011" class="vote"></span></h3>
+				<p>For in six days the <span class="sc">Lord</span> made heaven and earth, the sea, and all that is in them, and rested on the seventh day. Therefore the <span class="sc">Lord</span> blessed the Sabbath day and made it holy.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Job+38%3A4">Job 38:4</a> <span id="c01001001.18038004-18038004" class="vote"></span></h3>
+				<p>&#8220;Where were you when I laid the foundation of the earth? Tell me, if you have understanding.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Acts+17%3A24">Acts 17:24</a> <span id="c01001001.44017024-44017024" class="vote"></span></h3>
+				<p>The God who made the world and everything in it, being Lord of heaven and earth, does not live in temples made by man,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=2+Peter+3%3A5">2 Peter 3:5</a> <span id="c01001001.61003005-61003005" class="vote"></span></h3>
+				<p>For they deliberately overlook this fact, that the heavens existed long ago, and the earth was formed out of water and through water by the word of God,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Nehemiah+9%3A6">Nehemiah 9:6</a> <span id="c01001001.16009006-16009006" class="vote"></span></h3>
+				<p>&#8220;You are the <span class="sc">Lord</span>, you alone. You have made heaven, the heaven of heavens, with all their host, the earth and all that is on it, the seas and all that is in them; and you preserve all of them; and the host of heaven worships you.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+44%3A24">Isaiah 44:24</a> <span id="c01001001.23044024-23044024" class="vote"></span></h3>
+				<p>Thus says the <span class="sc">Lord</span>, your Redeemer, who formed you from the womb: &#8220;I am the <span class="sc">Lord</span>, who made all things, who alone stretched out the heavens, who spread out the earth by myself,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Jeremiah+32%3A17">Jeremiah 32:17</a> <span id="c01001001.24032017-24032017" class="vote"></span></h3>
+				<p>&#8216;Ah, Lord <span class="sc">God</span>! It is you who have made the heavens and the earth by your great power and by your outstretched arm! Nothing is too hard for you.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Jeremiah+51%3A15">Jeremiah 51:15</a> <span id="c01001001.24051015-24051015" class="vote"></span></h3>
+				<p>&#8220;It is he who made the earth by his power, who established the world by his wisdom, and by his understanding stretched out the heavens.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+33%3A9">Psalm 33:9</a> <span id="c01001001.19033009-19033009" class="vote"></span></h3>
+				<p>For he spoke, and it came to be; he commanded, and it stood firm.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+14%3A7">Revelation 14:7</a> <span id="c01001001.66014007-66014007" class="vote"></span></h3>
+				<p>And he said with a loud voice, &#8220;Fear God and give him glory, because the hour of his judgment has come, and worship him who made heaven and earth, the sea and the springs of water.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Proverbs+3%3A19">Proverbs 3:19</a> <span id="c01001001.20003019-20003019" class="vote"></span></h3>
+				<p>The <span class="sc">Lord</span> by wisdom founded the earth; by understanding he established the heavens;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+115%3A15">Psalm 115:15</a> <span id="c01001001.19115015-19115015" class="vote"></span></h3>
+				<p>May you be blessed by the <span class="sc">Lord</span>, who made heaven and earth!</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Acts+14%3A15">Acts 14:15</a> <span id="c01001001.44014015-44014015" class="vote"></span></h3>
+				<p>&#8220;Men, why are you doing these things? We also are men, of like nature with you, and we bring you good news, that you should turn from these vain things to a living God, who made the heaven and the earth and the sea and all that is in them.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Jeremiah+10%3A12">Jeremiah 10:12</a> <span id="c01001001.24010012-24010012" class="vote"></span></h3>
+				<p>It is he who made the earth by his power, who established the world by his wisdom, and by his understanding stretched out the heavens.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+136%3A5">Psalm 136:5</a> <span id="c01001001.19136005-19136005" class="vote"></span></h3>
+				<p>to him who by understanding made the heavens, for his steadfast love endures forever;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Proverbs+8%3A22-30">Proverbs 8:22-30</a> <span id="c01001001.20008022-20008030" class="vote"></span></h3>
+				<p>&#8220;The <span class="sc">Lord</span> possessed me at the beginning of his work, the first of his acts of old. Ages ago I was set up, at the first, before the beginning of the earth. When there were no depths I was brought forth, when there were no springs abounding with water. Before the mountains had been shaped, before the hills, I was brought forth, before he had made the earth with its fields, or the first of the dust of the world.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+Corinthians+8%3A6">1 Corinthians 8:6</a> <span id="c01001001.46008006-46008006" class="vote"></span></h3>
+				<p>yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+8%3A3">Psalm 8:3</a> <span id="c01001001.19008003-19008003" class="vote"></span></h3>
+				<p>When I look at your heavens, the work of your fingers, the moon and the stars, which you have set in place,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Hebrews+1%3A2">Hebrews 1:2</a> <span id="c01001001.58001002-58001002" class="vote"></span></h3>
+				<p>but in these last days he has spoken to us by his Son, whom he appointed the heir of all things, through whom also he created the world.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+102%3A25">Psalm 102:25</a> <span id="c01001001.19102025-19102025" class="vote"></span></h3>
+				<p>Of old you laid the foundation of the earth, and the heavens are the work of your hands.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Hebrews+3%3A4">Hebrews 3:4</a> <span id="c01001001.58003004-58003004" class="vote"></span></h3>
+				<p>(For every house is built by someone, but the builder of all things is God.)</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Zechariah+12%3A1">Zechariah 12:1</a> <span id="c01001001.38012001-38012001" class="vote"></span></h3>
+				<p>The oracle of the word of the <span class="sc">Lord</span> concerning Israel: Thus declares the <span class="sc">Lord</span>, who stretched out the heavens and founded the earth and formed the spirit of man within him:</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+40%3A28">Isaiah 40:28</a> <span id="c01001001.23040028-23040028" class="vote"></span></h3>
+				<p>Have you not known? Have you not heard? The <span class="sc">Lord</span> is the everlasting God, the Creator of the ends of the earth. He does not faint or grow weary; his understanding is unsearchable.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+124%3A8">Psalm 124:8</a> <span id="c01001001.19124008-19124008" class="vote"></span></h3>
+				<p>Our help is in the name of the <span class="sc">Lord</span>, who made heaven and earth.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+10%3A6">Revelation 10:6</a> <span id="c01001001.66010006-66010006" class="vote"></span></h3>
+				<p>and swore by him who lives forever and ever, who created heaven and what is in it, the earth and what is in it, and the sea and what is in it, that there would be no more delay,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+96%3A5">Psalm 96:5</a> <span id="c01001001.19096005-19096005" class="vote"></span></h3>
+				<p>For all the gods of the peoples are worthless idols, but the <span class="sc">Lord</span> made the heavens.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+89%3A11-12">Psalm 89:11-12</a> <span id="c01001001.19089011-19089012" class="vote"></span></h3>
+				<p>The heavens are yours; the earth also is yours; the world and all that is in it, you have founded them. The north and the south, you have created them; Tabor and Hermon joyously praise your name.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+121%3A2">Psalm 121:2</a> <span id="c01001001.19121002-19121002" class="vote"></span></h3>
+				<p>My help comes from the <span class="sc">Lord</span>, who made heaven and earth.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+33%3A6">Psalm 33:6</a> <span id="c01001001.19033006-19033006" class="vote"></span></h3>
+				<p>By the word of the <span class="sc">Lord</span> the heavens were made, and by the breath of his mouth all their host.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Acts+4%3A24">Acts 4:24</a> <span id="c01001001.44004024-44004024" class="vote"></span></h3>
+				<p>And when they heard it, they lifted their voices together to God and said, &#8220;Sovereign Lord, who made the heaven and the earth and the sea and everything in them,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+37%3A16">Isaiah 37:16</a> <span id="c01001001.23037016-23037016" class="vote"></span></h3>
+				<p>&#8220;O <span class="sc">Lord</span> of hosts, God of Israel, enthroned above the cherubim, you are the God, you alone, of all the kingdoms of the earth; you have made heaven and earth.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Proverbs+16%3A4">Proverbs 16:4</a> <span id="c01001001.20016004-20016004" class="vote"></span></h3>
+				<p>The <span class="sc">Lord</span> has made everything for its purpose, even the wicked for the day of trouble.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+148%3A4-5">Psalm 148:4-5</a> <span id="c01001001.19148004-19148005" class="vote"></span></h3>
+				<p>Praise him, you highest heavens, and you waters above the heavens! Let them praise the name of the <span class="sc">Lord</span>! For he commanded and they were created.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+104%3A24">Psalm 104:24</a> <span id="c01001001.19104024-19104024" class="vote"></span></h3>
+				<p>O <span class="sc">Lord</span>, how manifold are your works! In wisdom have you made them all; the earth is full of your creatures.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+90%3A2">Psalm 90:2</a> <span id="c01001001.19090002-19090002" class="vote"></span></h3>
+				<p>Before the mountains were brought forth, or ever you had formed the earth and the world, from everlasting to everlasting you are God.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Romans+11%3A36">Romans 11:36</a> <span id="c01001001.45011036-45011036" class="vote"></span></h3>
+				<p>For from him and through him and to him are all things. To him be glory forever. Amen.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+51%3A16">Isaiah 51:16</a> <span id="c01001001.23051016-23051016" class="vote"></span></h3>
+				<p>And I have put my words in your mouth and covered you in the shadow of my hand, establishing the heavens and laying the foundations of the earth, and saying to Zion, &#8216;You are my people.&#8217;&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+146%3A6">Psalm 146:6</a> <span id="c01001001.19146006-19146006" class="vote"></span></h3>
+				<p>who made heaven and earth, the sea, and all that is in them, who keeps faith forever;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+134%3A3">Psalm 134:3</a> <span id="c01001001.19134003-19134003" class="vote"></span></h3>
+				<p>May the <span class="sc">Lord</span> bless you from Zion, he who made heaven and earth!</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+40%3A26">Isaiah 40:26</a> <span id="c01001001.23040026-23040026" class="vote"></span></h3>
+				<p>Lift up your eyes on high and see: who created these? He who brings out their host by number, calling them all by name; by the greatness of his might and because he is strong in power, not one is missing.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Psalm+104%3A30">Psalm 104:30</a> <span id="c01001001.19104030-19104030" class="vote"></span></h3>
+				<p>When you send forth your Spirit, they are created, and you renew the face of the ground.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+John+1%3A1">1 John 1:1</a> <span id="c01001001.62001001-62001001" class="vote"></span></h3>
+				<p>That which was from the beginning, which we have heard, which we have seen with our eyes, which we looked upon and have touched with our hands, concerning the word of life&#8212;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Ephesians+3%3A9">Ephesians 3:9</a> <span id="c01001001.49003009-49003009" class="vote"></span></h3>
+				<p>and to bring to light for everyone what is the plan of the mystery hidden for ages in God, who created all things,</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Romans+1%3A19-20">Romans 1:19-20</a> <span id="c01001001.45001019-45001020" class="vote"></span></h3>
+				<p>For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+51%3A13">Isaiah 51:13</a> <span id="c01001001.23051013-23051013" class="vote"></span></h3>
+				<p>and have forgotten the <span class="sc">Lord</span>, your Maker, who stretched out the heavens and laid the foundations of the earth, and you fear continually all the day because of the wrath of the oppressor, when he sets himself to destroy? And where is the wrath of the oppressor?</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=1+Chronicles+16%3A26">1 Chronicles 16:26</a> <span id="c01001001.13016026-13016026" class="vote"></span></h3>
+				<p>For all the gods of the peoples are worthless idols, but the <span class="sc">Lord</span> made the heavens.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+21%3A6">Revelation 21:6</a> <span id="c01001001.66021006-66021006" class="vote"></span></h3>
+				<p>And he said to me, &#8220;It is done! I am the Alpha and the Omega, the beginning and the end. To the thirsty I will give from the spring of the water of life without payment.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Mark+13%3A19">Mark 13:19</a> <span id="c01001001.41013019-41013019" class="vote"></span></h3>
+				<p>For in those days there will be such tribulation as has not been from the beginning of the creation that God created until now, and never will be.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+22%3A13">Revelation 22:13</a> <span id="c01001001.66022013-66022013" class="vote"></span></h3>
+				<p>I am the Alpha and the Omega, the first and the last, the beginning and the end.&#8221;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Isaiah+65%3A17">Isaiah 65:17</a> <span id="c01001001.23065017-23065017" class="vote"></span></h3>
+				<p>&#8220;For behold, I create new heavens and a new earth, and the former things shall not be remembered or come into mind.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Revelation+3%3A14">Revelation 3:14</a> <span id="c01001001.66003014-66003014" class="vote"></span></h3>
+				<p>&#8220;And to the angel of the church in Laodicea write: &#8216;The words of the Amen, the faithful and true witness, the beginning of God's creation.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Job+26%3A13">Job 26:13</a> <span id="c01001001.18026013-18026013" class="vote"></span></h3>
+				<p>By his wind the heavens were made fair; his hand pierced the fleeing serpent.</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Ecclesiastes+12%3A1">Ecclesiastes 12:1</a> <span id="c01001001.21012001-21012001" class="vote"></span></h3>
+				<p>Remember also your Creator in the days of your youth, before the evil days come and the years draw near of which you will say, &#8220;I have no pleasure in them&#8221;;</p>
+				</div>
+							<div class="votes-5"><h3><a href="/labs/cross-references/search?q=Matthew+11%3A25">Matthew 11:25</a> <span id="c01001001.40011025-40011025" class="vote"></span></h3>
+				<p>At that time Jesus declared, &#8220;I thank you, Father, Lord of heaven and earth, that you have hidden these things from the wise and understanding and revealed them to little children;</p>
+				</div>
+							<div class=""><h3><a href="/labs/cross-references/search?q=Exodus+31%3A18">Exodus 31:18</a> <span id="c01001001.02031018-02031018" class="vote"></span></h3>
+				<p>And he gave to Moses, when he had finished speaking with him on Mount Sinai, the two tablets of the testimony, tablets of stone, written with the finger of God.</p>
+				</div>
+					</div>
+<script type="text/javascript">
+var votes = document.querySelectorAll("span.vote");
+for (var i = 0, j = votes.length; i < j; i++) {
+	var node = votes[i];
+	var id = node.id.substr(1)
+	node.innerHTML = 'Helpful? <a id="u' + id + '" href="#u">Yes</a> <a id="d' + id + '" href="#d">No</a>';
+};
+var voteLinks = document.querySelectorAll("span.vote a");
+for (var i = 0, j = voteLinks.length; i < j; i++) {
+	voteLinks[i].addEventListener("click", voteCallback, false);
+}
+
+function voteCallback(e) {
+	e.preventDefault();
+	var node = e.target;
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "/labs/cross-references/vote");
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send("vote=" + node.id);
+	node.parentNode.innerHTML = "Thanks for voting";
+}
+</script>
+</div>
+<div id="foot">
+<p>Unless otherwise indicated, all content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>. All Scripture quotations, unless otherwise indicated, are taken from The Holy Bible, English Standard Version. Copyright &copy;2001 by <a href="http://www.crosswaybibles.org/">Crossway Bibles</a>, a publishing ministry of Good News Publishers. Contact me: openbibleinfo (at) gmail.com.
+</p>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B9KC46');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>

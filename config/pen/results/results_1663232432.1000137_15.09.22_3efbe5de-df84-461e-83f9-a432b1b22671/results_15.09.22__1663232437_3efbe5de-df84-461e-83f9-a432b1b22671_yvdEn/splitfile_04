@@ -1,0 +1,5 @@
+Welcome to the National Security Agency!
+root@nsa.gov:/$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+da

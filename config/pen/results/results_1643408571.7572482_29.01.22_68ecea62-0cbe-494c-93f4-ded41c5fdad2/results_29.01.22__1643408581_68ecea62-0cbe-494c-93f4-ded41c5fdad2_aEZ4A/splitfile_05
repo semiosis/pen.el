@@ -1,0 +1,10 @@
+
+            (or (pen-var-value-maybe 'engine-max-stop-sequence-size)
+                ',engine-max-stop-sequence-size)
+            '((?n . name)
+              (?e . engine))))
+
+          (final-engine-max-split-sequence-size
+           (expand-template
+            (or (pen-var-value-maybe 'engine-max-split-sequence-size)
+                ',

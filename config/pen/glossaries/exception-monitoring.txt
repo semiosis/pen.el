@@ -1,0 +1,16 @@
+CR
+Crash Reporting
+Exception Monitoring
+    [tech stack category]
+
+sentry.io
+    [#CR]
+
+    Self-hosted and cloud-based error
+    monitoring that helps all software teams
+    discover, triage, and prioritize errors in
+    real-time.
+
+    Supported by GitLab.
+
+    https://sentry.io/welcome/

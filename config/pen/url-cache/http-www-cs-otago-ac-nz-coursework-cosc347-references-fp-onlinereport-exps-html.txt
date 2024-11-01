@@ -1,0 +1,1378 @@
+HTTP/1.1 200 OK
+Date: Wed, 06 Apr 2022 09:18:13 GMT
+Server: Apache
+Last-Modified: Wed, 28 Feb 2001 20:43:37 GMT
+ETag: "1566c-37e640773f040"
+Accept-Ranges: bytes
+Content-Length: 87660
+Content-Type: text/html; charset=UTF-8
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+
+
+<title>The Haskell 98 Report: Expressions</title>
+<body bgcolor="#ffffff"> <i>The Haskell 98 Report</i><br> <a href="index.html">top</a> | <a href="lexemes.html">back</a> | <a href="decls.html">next</a> | <a href="index98.html">contents</a> | <a href="prelude-index.html">function index</a> <br><hr>
+<a name="expressions"></a><a name="sect3"></a>
+<h2>3<tt>&nbsp;&nbsp;</tt>Expressions</h2>
+<p>
+In this section, we describe the syntax and informal semantics of Haskell 
+<I>expressions</I>, including their translations into the
+Haskell  kernel, where appropriate.  Except in the case of <tt>let
+</tt>expressions, these translations preserve both the static and dynamic
+semantics.
+Free variables and constructors used in these translations refer to
+entities 
+defined by the Prelude.  To avoid clutter,
+
+we use <tt>True</tt> instead of
+<tt>Prelude.True</tt> or <tt>map</tt> instead of <tt>Prelude.map</tt>. (<tt>Prelude.True</tt> is a
+<I>qualified name</I> as described in Section <a href="modules.html#import">5.3</a>.)<p>
+In the syntax that follows, there are some families of nonterminals
+indexed by precedence levels (written as a superscript).  Similarly, the
+nonterminals <I>op</I>, <I>varop</I>, and <I>conop</I> may have a double index:
+a letter <I>l</I>, <I>r</I>, or <I>n</I> for left-, right- or non-associativity and
+a precedence level.  A precedence-level variable <I>i</I> ranges from 0 to 9;
+an associativity variable <I>a</I> varies over <I>{l, r, n}</I>.
+Thus, for example
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  <tt>(</tt> exp<sup>i+1</sup> qop<sup>(a,i)</sup> <tt>)
+</tt></td></tr></table>
+actually stands for 30 productions, with 10 substitutions for <I>i
+</I>and 3 for <I>a</I>.<p>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr></tr><tr><td>
+exp </td><td>  <tt>-&gt;</tt> </td><td>  exp<sup>0</sup> <tt>::</tt> [context <tt>=&gt;</tt>] type	</td><td> (expression type signature)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   exp<sup>0</sup>
+</td></tr><tr><td>
+exp<sup>i</sup> </td><td>  <tt>-&gt;</tt> </td><td>  exp<sup>i+1</sup> [qop<sup>(n,i)</sup> exp<sup>i+1</sup>]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   lexp<sup>i</sup>
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   rexp<sup>i</sup>
+</td></tr><tr><td>
+lexp<sup>i</sup> </td><td>  <tt>-&gt;</tt> </td><td>  (lexp<sup>i</sup> | exp<sup>i+1</sup>) qop<sup>(l,i)</sup> exp<sup>i+1</sup>
+</td></tr><tr><td>
+lexp<sup>6</sup> </td><td>  <tt>-&gt;</tt> </td><td>  <tt>-</tt> exp<sup>7</sup>
+</td></tr><tr><td>
+rexp<sup>i</sup> </td><td>  <tt>-&gt;</tt> </td><td>  exp<sup>i+1</sup> qop<sup>(r,i)</sup> (rexp<sup>i</sup> | exp<sup>i+1</sup>)
+</td></tr><tr><td>
+exp<sup>10</sup> </td><td>  <tt>-&gt;</tt> </td><td>  <tt>\</tt> apat<sub>1</sub> ... apat<sub>n</sub> <tt>-&gt;</tt> exp	</td><td> (lambda abstraction, n&gt;=1)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>let</tt> decls <tt>in</tt> exp	        </td><td> (let expression)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>if</tt> exp <tt>then</tt> exp <tt>else</tt> exp	</td><td> (conditional)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>case</tt> exp <tt>of</tt> <tt>{</tt> alts  <tt>}</tt>	</td><td> (case expression)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>do</tt> <tt>{</tt> stmts <tt>}</tt>        	        </td><td> (do expression)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   fexp
+</td></tr><tr><td>
+fexp </td><td>  <tt>-&gt;</tt> </td><td>  [fexp] aexp				</td><td> (function application)
+</td></tr><tr><td>
+aexp </td><td>  <tt>-&gt;</tt> </td><td>  qvar				</td><td> (variable)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   gcon				</td><td> (general constructor)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   literal				
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> exp <tt>)</tt>			      </td><td> (parenthesized expression)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> exp<sub>1</sub> <tt>,</tt> ... <tt>,</tt> exp<sub>k</sub> <tt>)</tt>	</td><td> (tuple, k&gt;=2)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>[</tt> exp<sub>1</sub> <tt>,</tt> ... <tt>,</tt> exp<sub>k</sub> <tt>]</tt>	</td><td> (list, k&gt;=1)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>[</tt> exp<sub>1</sub> [<tt>,</tt> exp<sub>2</sub>] <tt>..</tt> [exp<sub>3</sub>] <tt>]</tt> </td><td> (arithmetic sequence)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>[</tt> exp <tt>|</tt> qual<sub>1</sub> <tt>,</tt> ... <tt>,</tt> qual<sub>n</sub> <tt>]</tt>	</td><td> (list comprehension, n&gt;=1)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> exp<sup>i+1</sup> qop<sup>(a,i)</sup> <tt>)</tt>        </td><td> (left section)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> qop<sup>(a,i)</sup> exp<sup>i+1</sup> <tt>)</tt>        </td><td> (right section)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   qcon <tt>{</tt> fbind<sub>1</sub> <tt>,</tt> ... <tt>,</tt> fbind<sub>n</sub> <tt>}</tt> </td><td> (labeled construction, n&gt;=0)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   aexp<sub>{qcon}</sub> <tt>{</tt> fbind<sub>1</sub> <tt>,</tt> ... <tt>,</tt> fbind<sub>n</sub> <tt>}</tt> </td><td> (labeled update, n &gt;= 1)
+</td></tr></table>
+<p>
+As an aid to understanding this grammar,
+Table <a href="exps.html#syntax-precedences">1</a> shows the relative precedence of
+expressions, patterns and definitions, plus an extended associativity.
+<I>-</I> indicates that the item is non-associative.<p>
+<div align=center>
+<p>
+
+
+<table >
+<tr><td>
+Item						</td><td align=center>	Associativity </td></tr><tr><td>
+						</td><td align=center>			</td></tr><tr><td>simple terms, parenthesized terms               </td><td align=center>	--	       	</td></tr><tr><td>irrefutable patterns (<tt>~</tt>)                      </td><td align=center>       --		</td></tr><tr><td>as-patterns (<tt>@</tt>)                          </td><td align=center>       right		</td></tr><tr><td>function application				</td><td align=center>	left		</td></tr><tr><td><tt>do</tt>, <tt>if</tt>, <tt>let</tt>, lambda(<tt>\</tt>), <tt>case</tt> (leftwards)</td><td align=center>	right		</td></tr><tr><td><tt>case</tt> (rightwards)				</td><td align=center>	right		</td></tr><tr><td></td><td align=center>			</td></tr><tr><td>infix operators, prec. 9			</td><td align=center>	as defined	</td></tr><tr><td>...</td><td align=center>	...</td></tr><tr><td>infix operators, prec. 0			</td><td align=center>	as defined	</td></tr><tr><td></td><td align=center>			</td></tr><tr><td>function types (<tt>-&gt;</tt>)				</td><td align=center>	right		</td></tr><tr><td>contexts (<tt>=&gt;</tt>)					</td><td align=center>	--		</td></tr><tr><td>type constraints (<tt>::</tt>)				</td><td align=center>	--		</td></tr><tr><td><tt>do</tt>, <tt>if</tt>, <tt>let</tt>, lambda(<tt>\</tt>) (rightwards)	</td><td align=center>	right		</td></tr><tr><td>sequences (<tt>..</tt>)				</td><td align=center>	--		</td></tr><tr><td>generators (<tt>&lt;-</tt>)				</td><td align=center>	--		</td></tr><tr><td>grouping (<tt>,</tt>)					</td><td align=center>	n-ary		</td></tr><tr><td>guards (<tt>|</tt>)					</td><td align=center>	--		</td></tr><tr><td>case alternatives (<tt>-&gt;</tt>)			</td><td align=center>	--		</td></tr><tr><td>definitions (<tt>=</tt>)				</td><td align=center>	--		</td></tr><tr><td>separation (<tt>;</tt>)				</td><td align=center>	n-ary		</td></tr><tr><td>
+</td></tr></table>
+
+
+<p>
+
+<div align=center> <h4>Table 1</h4> </div>
+<div align=center><h3>Precedence of expressions, patterns, definitions (highest to lowest)</h3></div><a name="syntax-precedences"></a>
+
+</div><p>
+The grammar is ambiguous regarding the extent of lambda abstractions,
+let expressions, and conditionals.  The ambiguity is resolved by the
+metarule that each of these constructs extends as far to the right as
+possible.  As a consequence, each of these constructs has two precedences,
+one to its left, which is the precedence used in the grammar; and
+one to its right, which is obtained via the metarule.  See the sample
+parses below.<p>
+Expressions involving infix operators are disambiguated by the
+operator's fixity (see Section <a href="decls.html#fixity">4.4.2</a>).  Consecutive
+unparenthesized operators with the same precedence must both be either
+left or right associative to avoid a syntax error.
+Given an unparenthesized expression "<I>x qop</I><sup><I>(a,i)</I></sup><I> y qop</I><sup><I>(b,j)</I></sup><I> z</I>", parentheses
+must be added around either "<I>x qop</I><sup><I>(a,i)</I></sup><I> y</I>" or "<I>y qop</I><sup><I>(b,j)</I></sup>
+<I>z</I>" when <I>i=j</I> unless <I>a=b=l</I> or <I>a=b=r</I>.<p>
+Negation is the only prefix operator in
+Haskell ; it has the same precedence as the infix <tt>-</tt> operator
+defined in the Prelude (see Figure <a href="decls.html#prelude-fixities">2</a>).<p>
+Sample parses are shown below.
+<p>
+<table >
+<tr><td>
+This                           	    </td><td> Parses as                             </td></tr><tr><td>
+<tt>f&nbsp;x&nbsp;+&nbsp;g&nbsp;y</tt>                         </td><td> <tt>(f&nbsp;x)&nbsp;+&nbsp;(g&nbsp;y)</tt>                       </td></tr><tr><td><tt>-&nbsp;f&nbsp;x&nbsp;+&nbsp;y</tt>		            </td><td> <tt>(-&nbsp;(f&nbsp;x))&nbsp;+&nbsp;y</tt>		            </td></tr><tr><td><tt>let&nbsp;{&nbsp;...&nbsp;}&nbsp;in&nbsp;x&nbsp;+&nbsp;y</tt>		    </td><td> <tt>let&nbsp;{&nbsp;...&nbsp;}&nbsp;in&nbsp;(x&nbsp;+&nbsp;y)</tt>		    </td></tr><tr><td><tt>z&nbsp;+&nbsp;let&nbsp;{&nbsp;...&nbsp;}&nbsp;in&nbsp;x&nbsp;+&nbsp;y</tt>	    </td><td> <tt>z&nbsp;+&nbsp;(let&nbsp;{&nbsp;...&nbsp;}&nbsp;in&nbsp;(x&nbsp;+&nbsp;y))</tt>	    </td></tr><tr><td><tt>f&nbsp;x&nbsp;y&nbsp;::&nbsp;Int</tt>                      </td><td> <tt>(f&nbsp;x&nbsp;y)&nbsp;::&nbsp;Int</tt>                      </td></tr><tr><td><tt>\&nbsp;x&nbsp;-&gt;&nbsp;a+b&nbsp;::&nbsp;Int</tt>                 </td><td> <tt>\&nbsp;x&nbsp;-&gt;&nbsp;((a+b)&nbsp;::&nbsp;Int</tt>)               </td></tr></table>
+<p>
+<p>
+For the sake of clarity, the rest of this section shows the syntax of
+expressions without their precedences.<a name="basic-errors"></a><p>
+<a name="sect3.1"></a>
+<h3>3.1<tt>&nbsp;&nbsp;</tt>Errors</h3>
+
+Errors during expression evaluation, denoted by <I>_|_</I>,
+are indistinguishable from non-termination.  Since Haskell  is a
+lazy language, all Haskell  types include <I>_|_</I>.  That is, a value
+of any type may be bound to a computation that, when demanded, results
+in an error.  When evaluated, errors cause immediate program
+termination and cannot be caught by the user.  The Prelude provides
+two functions to directly 
+cause such errors:
+<tt><br>
+
+<br>
+error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;String&nbsp;-&gt;&nbsp;a<br>
+undefined&nbsp;::&nbsp;a<br>
+
+<br>
+
+
+
+</tt>A call to <tt>error</tt> terminates execution of
+the program and returns an appropriate error indication to the
+operating system.  It should also display the string in some
+system-dependent manner.  When <tt>undefined</tt> is used, the error message
+is created by the compiler.<p>
+Translations of Haskell  expressions use <tt>error</tt> and <tt>undefined</tt> to
+explicitly indicate where execution time errors may occur.  The actual
+program behavior when an error occurs is up to the implementation.
+The messages passed to the <tt>error</tt> function in these translations are
+only suggestions; implementations may choose to display more or less
+information when an error occurs.<p>
+<a name="sect3.2"></a>
+<h3>3.2<tt>&nbsp;&nbsp;</tt>Variables, Constructors, Operators, and Literals</h3>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  qvar				</td><td> (variable)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   gcon				</td><td> (general constructor)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   literal				
+</td></tr></table>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr><td>
+gcon </td><td>  <tt>-&gt;</tt> </td><td>  <tt>()
+</tt></td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>[]
+</tt></td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(,</tt>{<tt>,</tt>}<tt>)
+</tt></td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   qcon
+</td></tr><tr><td>
+var </td><td>  <tt>-&gt;</tt> </td><td>  varid | <tt>(</tt> varsym <tt>)</tt>		</td><td> (variable)
+</td></tr><tr><td>
+qvar </td><td>  <tt>-&gt;</tt> </td><td>  qvarid | <tt>(</tt> qvarsym <tt>)</tt>		</td><td> (qualified variable)
+</td></tr><tr><td>
+con </td><td>  <tt>-&gt;</tt> </td><td>  conid | <tt>(</tt> consym <tt>)</tt>		</td><td> (constructor)
+</td></tr><tr><td>
+qcon </td><td>  <tt>-&gt;</tt> </td><td>  qconid | <tt>(</tt> gconsym <tt>)</tt>		</td><td> (qualified constructor)
+</td></tr><tr><td>
+varop </td><td>  <tt>-&gt;</tt> </td><td>  varsym | `varid `</td><td> (variable operator)
+</td></tr><tr><td>
+qvarop </td><td>  <tt>-&gt;</tt> </td><td>  qvarsym | `qvarid `</td><td> (qualified variable operator)
+</td></tr><tr><td>
+conop </td><td>  <tt>-&gt;</tt> </td><td>  consym | `conid `</td><td> (constructor operator)
+</td></tr><tr><td>
+qconop </td><td>  <tt>-&gt;</tt> </td><td>  gconsym | `qconid `</td><td> (qualified constructor operator)
+</td></tr><tr><td>
+op </td><td>  <tt>-&gt;</tt> </td><td>  varop | conop 			</td><td> (operator)
+</td></tr><tr><td>
+qop </td><td>  <tt>-&gt;</tt> </td><td>  qvarop | qconop			</td><td> (qualified operator)
+</td></tr><tr><td>
+gconsym </td><td>  <tt>-&gt;</tt> </td><td>  <tt>:</tt> | qconsym
+</td></tr></table>
+<p>
+Alphanumeric operators are formed by enclosing an identifier between
+grave accents (backquotes).  Any variable or constructor may be used as
+an operator in this way.  If <I>fun</I> is an identifier (either variable
+or constructor), then an expression of the form <I>fun x y</I> is
+equivalent to <I>x `fun`y</I>.  If no fixity
+declaration is given for <I>`fun`</I> then it defaults
+to highest precedence and left associativity
+(see Section <a href="decls.html#fixity">4.4.2</a>).<p>
+Similarly, any symbolic operator may be used as a (curried) variable
+or constructor by enclosing it in parentheses.  If <I>op</I> is an infix
+operator, then an expression or pattern of the form <I>x op y</I> is
+equivalent to <tt>(</tt><I>op</I><tt>)</tt><I> x y</I>.<p>
+Qualified names may only be used to reference an imported variable or
+constructor (see Section <a href="modules.html#import">5.3</a>)
+but not in the definition of a new variable or constructor.  Thus
+<tt><br>
+
+<br>
+let&nbsp;F.x&nbsp;=&nbsp;1&nbsp;in&nbsp;F.x&nbsp;&nbsp;&nbsp;--&nbsp;invalid<br>
+
+<br>
+
+</tt>incorrectly uses a qualifier in the definition of <tt>x</tt>, regardless of
+the module containing this definition.  Qualification does not affect
+the nature of an operator: <tt>F.+</tt> is an infix operator just as <tt>+</tt> is.<p>
+Special syntax is used to name some constructors for some of the
+built-in types, as found
+in the production for <I>gcon</I> and <I>literal</I>.  These are described
+in Section <a href="basic.html#basic-types">6.1</a>.<p>
+
+An integer literal represents the
+application of the function <tt>fromInteger</tt> to the
+appropriate value of type 
+<tt>Integer</tt>.  Similarly, a floating point literal stands for an application of
+<tt>fromRational</tt> to a value of type <tt>Rational</tt> (that is, 
+<tt>Ratio&nbsp;Integer</tt>).<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+The integer literal <I>i</I> is equivalent to <tt>fromInteger</tt> <I>i</I>,
+where <tt>fromInteger</tt> is a method in class <tt>Num</tt> (see Section
+<a href="basic.html#numeric-literals">6.4.1</a>).<p>
+The floating point literal <I>f</I> is equivalent to <tt>fromRational
+</tt>(<I>n</I> <tt>Ratio.%</tt> <I>d</I>), where <tt>fromRational</tt> is a method in class <tt>Fractional
+</tt>and <tt>Ratio.%</tt> constructs a rational from two integers, as defined in
+the <tt>Ratio</tt> library.
+The integers <I>n</I> and <I>d</I> are chosen so that <I>n/d = f</I>.
+</td></tr></table>
+<a name="applications"></a><p>
+<a name="sect3.3"></a>
+<h3>3.3<tt>&nbsp;&nbsp;</tt>Curried Applications and Lambda Abstractions</h3>
+<a name="lambda-abstractions"></a>
+
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+fexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  [fexp] aexp				</td><td> (function application)
+</td></tr><tr><td>
+exp </td><td>  <tt>-&gt;</tt> </td><td>  <tt>\</tt> apat<sub>1</sub> ... apat<sub>n</sub> <tt>-&gt;</tt> exp
+</td></tr></table>
+<p>
+
+<I>Function application</I> is written 
+<I>e</I><sub><I>1</I></sub><I> e</I><sub><I>2</I></sub>.  Application associates to the left, so the
+parentheses may be omitted in <tt>(f&nbsp;x)&nbsp;y</tt>.  Because <I>e</I><sub><I>1</I></sub> could
+be a data constructor, partial applications of data constructors are
+allowed. <p>
+<I>Lambda abstractions</I> are written 
+<tt>\</tt><I> p</I><sub><I>1</I></sub><I> ... p</I><sub><I>n</I></sub><I> </I><tt>-&gt;</tt><I> e</I>, where the <I>p</I><sub><I>i</I></sub> are <I>patterns</I>.
+An expression such as <tt>\x:xs-&gt;x</tt> is syntactically incorrect;
+it may legally be written as <tt>\(x:xs)-&gt;x</tt>.<p>
+The set of patterns must be <I>linear</I>---no variable may appear more than once in the set.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+The following identity holds:
+<div align=center><table >
+<tr><td><tt>\</tt><I> p</I><sub><I>1</I></sub><I> ... p</I><sub><I>n</I></sub><I> </I><tt>-&gt;</tt><I> e
+</I>	 </td><td align=center> <I>=</I> </td><td>
+	<tt>\</tt><I> x</I><sub><I>1</I></sub><I> ... x</I><sub><I>n</I></sub><I> </I><tt>-&gt;&nbsp;case&nbsp;(</tt><I>x</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> x</I><sub><I>n</I></sub><tt>)&nbsp;of&nbsp;(</tt><I>p</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> p</I><sub><I>n</I></sub><tt>)&nbsp;-&gt;</tt><I> e
+</I></td></tr></table>
+
+</div>
+where the <I>x</I><sub><I>i</I></sub> are new identifiers.
+</td></tr></table>
+
+Given this translation combined with the semantics of case
+expressions and pattern matching described in
+Section <a href="exps.html#case-semantics">3.17.3</a>, if the
+pattern fails to match, then the result is <I>_|_</I>.<p>
+             <a name="operators"></a>
+<a name="sect3.4"></a>
+<h3>3.4<tt>&nbsp;&nbsp;</tt>Operator Applications</h3>
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+exp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  exp<sub>1</sub> qop exp<sub>2</sub>
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>-</tt> exp				</td><td> (prefix negation)
+</td></tr><tr><td>
+qop </td><td>  <tt>-&gt;</tt> </td><td>  qvarop | qconop			</td><td> (qualified operator)
+</td></tr></table>
+<p>
+
+The form <I>e</I><sub><I>1</I></sub><I> qop e</I><sub><I>2</I></sub> is the infix application of binary
+operator <I>qop</I> to expressions <I>e</I><sub><I>1</I></sub> and <I>e</I><sub><I>2</I></sub>.  <p>
+The special
+form <tt>-</tt><I>e</I> denotes prefix negation, the only
+prefix operator in Haskell , and is 
+syntax for <tt>negate&nbsp;</tt><I>(e)</I>.  The binary <tt>-</tt> operator
+does not necessarily refer 
+to the definition of <tt>-</tt> in the Prelude; it may be rebound 
+by the module system.  However, unary <tt>-</tt> will always refer to the
+<tt>negate</tt> function defined in the Prelude.  There is no link between
+the local meaning of the <tt>-</tt> operator and unary negation.<p>
+Prefix negation has the same precedence as the infix operator <tt>-
+</tt>defined in the Prelude (see
+Table <a href="decls.html#prelude-fixities">2</a>).  Because <tt>e1-e2</tt> parses as an
+infix application of the binary operator <tt>-</tt>, one must write <tt>e1(-e2)</tt> for
+the alternative parsing.  Similarly, <tt>(-)</tt> is syntax for 
+<tt>(\&nbsp;x&nbsp;y&nbsp;-&gt;&nbsp;x-y)</tt>, as with any infix operator, and does not denote 
+<tt>(\&nbsp;x&nbsp;-&gt;&nbsp;-x)</tt>---one must use <tt>negate</tt> for that.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+The following identities hold:
+<div align=center><table >
+<tr><td><I>e</I><sub><I>1</I></sub><I> op e</I><sub><I>2</I></sub> </td><td align=center> <I>=</I> </td><td> <tt>(</tt><I>op</I><tt>)</tt><I> e</I><sub><I>1</I></sub><I> e</I><sub><I>2</I></sub> </td></tr><tr><td><tt>-</tt><I>e</I> </td><td align=center> <I>=</I> </td><td> <tt>negate</tt><I> (e)
+</I></td></tr></table>
+
+</div>
+</td></tr></table>
+<a name="sections"></a><p>
+<a name="sect3.5"></a>
+<h3>3.5<tt>&nbsp;&nbsp;</tt>Sections</h3>
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  <tt>(</tt> exp qop <tt>)</tt> 
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> qop exp <tt>)
+</tt></td></tr></table>
+<p>
+
+<I>Sections</I> are written as <tt>(</tt><I> op e </I><tt>)</tt> or <tt>(</tt><I> e op </I><tt>)</tt>, where
+<I>op</I> is a binary operator and <I>e</I> is an expression.  Sections are a
+convenient syntax for partial application of binary operators.<p>
+Syntactic precedence rules apply to sections as follows.
+<tt>(</tt><I>op e</I><tt>)</tt> is legal if and only if <tt>(x</tt><I> op e</I><tt>)</tt> parses 
+in the same way as <tt>(x</tt><I> op </I><tt>(</tt><I>e</I><tt>))</tt>;
+and similarly for  <tt>(</tt><I>e op</I><tt>)</tt>.
+For example, <tt>(*a+b)</tt> is syntactically invalid, but <tt>(+a*b)</tt> and
+<tt>(*(a+b))</tt> are valid.  Because <tt>(+)</tt> is left associative, <tt>(a+b+)</tt> is syntactically correct,
+but <tt>(+a+b)</tt> is not; the latter may legally be written as <tt>(+(a+b))</tt>.<p>
+Because <tt>-</tt> is treated specially in the grammar,
+<tt>(-</tt><I> exp</I><tt>)</tt> is not a section, but an application of prefix
+negation, as
+described in the preceding section.  However, there is a <tt>subtract
+</tt>function defined in the Prelude such that
+<tt>(subtract</tt><I> exp</I><tt>)</tt> is equivalent to the disallowed section.
+The expression <tt>(+&nbsp;(-</tt><I> exp</I><tt>))</tt> can serve the same purpose.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+The following identities hold:
+<div align=center><table >
+<tr><td><tt>(</tt><I>op e</I><tt>)</tt> </td><td align=center> <I>=</I> </td><td> <tt>\</tt><I> x </I><tt>-&gt;</tt><I> x op e</I> </td></tr><tr><td><tt>(</tt><I>e op</I><tt>)</tt> </td><td align=center> <I>=</I> </td><td> <tt>\</tt><I> x </I><tt>-&gt;</tt><I> e op x
+</I></td></tr></table>
+
+</div>
+where <I>op</I> is a binary operator, <I>e</I> is an expression, and <I>x</I> is a variable
+that does not occur free in <I>e</I>.
+</td></tr></table>
+<a name="conditionals"></a><p>
+<a name="sect3.6"></a>
+<h3>3.6<tt>&nbsp;&nbsp;</tt>Conditionals</h3>
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+exp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  <tt>if</tt> exp<sub>1</sub> <tt>then</tt> exp<sub>2</sub> <tt>else</tt> exp<sub>3</sub>
+</td></tr></table>
+<p>
+A <I>conditional expression
+
+</I>has the form 
+<tt>if</tt><I> e</I><sub><I>1</I></sub><I> </I><tt>then</tt><I> e</I><sub><I>2</I></sub><I> </I><tt>else</tt><I> e</I><sub><I>3</I></sub> and returns the value of <I>e</I><sub><I>2</I></sub> if the
+value of <I>e</I><sub><I>1</I></sub> is <tt>True</tt>, <I>e</I><sub><I>3</I></sub> if <I>e</I><sub><I>1</I></sub> is <tt>False</tt>, and <I>_|_
+</I>otherwise.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+The following identity holds:
+<div align=center><table >
+<tr><td><tt>if</tt><I> e</I><sub><I>1</I></sub><I> </I><tt>then</tt><I> e</I><sub><I>2</I></sub><I> </I><tt>else</tt><I> e</I><sub><I>3</I></sub>  </td><td align=center> <I>=</I> </td><td> <tt>case</tt><I> e</I><sub><I>1</I></sub><I> </I><tt>of&nbsp;{&nbsp;True&nbsp;-&gt;</tt><I> e</I><sub><I>2</I></sub><I> </I><tt>;&nbsp;False&nbsp;-&gt;</tt><I> e</I><sub><I>3</I></sub><I> </I><tt>}
+</tt></td></tr></table>
+
+</div>
+where <tt>True</tt> and <tt>False</tt> are the two nullary constructors from the 
+type <tt>Bool</tt>, as defined in the Prelude.  The type of <I>e</I><sub><I>1</I></sub> must be <tt>Bool</tt>;
+<I>e</I><sub><I>2</I></sub> and <I>e</I><sub><I>3</I></sub> must have the same type, which is also the type of the
+entire conditional expression.
+</td></tr></table>
+<a name="lists"></a><p>
+<a name="sect3.7"></a>
+<h3>3.7<tt>&nbsp;&nbsp;</tt>Lists</h3>
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+exp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  exp<sub>1</sub> qop exp<sub>2</sub>
+</td></tr><tr><td>
+aexp </td><td>  <tt>-&gt;</tt> </td><td>  <tt>[</tt> exp<sub>1</sub> <tt>,</tt> ... <tt>,</tt> exp<sub>k</sub> <tt>]</tt>	</td><td> (k&gt;=1)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   gcon
+</td></tr><tr><td>
+gcon </td><td>  <tt>-&gt;</tt> </td><td> <tt>[]
+</tt></td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> qcon
+</td></tr><tr><td>
+qcon </td><td>  <tt>-&gt;</tt> </td><td> <tt>(</tt> gconsym <tt>)
+</tt></td></tr><tr><td>
+qop </td><td>  <tt>-&gt;</tt> </td><td> qconop
+</td></tr><tr><td>
+qconop </td><td>  <tt>-&gt;</tt> </td><td> gconsym
+</td></tr><tr><td>
+gconsym </td><td>  <tt>-&gt;</tt> </td><td> <tt>:
+</tt></td></tr></table>
+<p>
+<I>Lists</I> are written <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> e</I><sub><I>k</I></sub><tt>]</tt>, where
+<I>k&gt;=1</I>.  The list constructor is <tt>:</tt>, and the empty list is denoted <tt>[]</tt>.
+Standard operations on
+lists are given in the Prelude (see Section <a href="basic.html#basic-lists">6.1.3</a>, and
+Appendix <a href="standard-prelude.html#stdprelude">A</a> notably Section <a href="standard-prelude.html#preludelist">A.1</a>).<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>  
+The following identity holds:
+<div align=center><table >
+<tr><td><tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> e</I><sub><I>k</I></sub><tt>]</tt>  </td><td align=center> <I>=</I> </td><td> <I>e</I><sub><I>1</I></sub><I> </I><tt>:&nbsp;(</tt><I>e</I><sub><I>2</I></sub><I> </I><tt>:&nbsp;(</tt><I> ... </I><tt>(</tt><I>e</I><sub><I>k</I></sub><I> </I><tt>:&nbsp;[])))
+</tt></td></tr></table>
+
+</div>
+where <tt>:</tt> and <tt>[]</tt> are constructors for lists, as defined in
+the Prelude (see Section <a href="basic.html#basic-lists">6.1.3</a>).  The types
+of <I>e</I><sub><I>1</I></sub> through <I>e</I><sub><I>k</I></sub> must all be the same (call it <I>t</I>), and the
+type of the overall expression is <tt>[</tt><I>t</I><tt>]</tt> (see Section <a href="decls.html#type-syntax">4.1.2</a>).
+</td></tr></table>
+
+The constructor "<tt>:</tt>" is reserved solely for list construction; like
+<tt>[]</tt>, it is considered part of the language syntax, and cannot be hidden or redefined.<a name="tuples"></a><p>
+<a name="sect3.8"></a>
+<h3>3.8<tt>&nbsp;&nbsp;</tt>Tuples</h3>
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr><td>
+aexp </td><td>  <tt>-&gt;</tt> </td><td>  <tt>(</tt> exp<sub>1</sub> <tt>,</tt> ... <tt>,</tt> exp<sub>k</sub> <tt>)</tt>	</td><td> (k&gt;=2)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> qcon
+</td></tr><tr><td>
+qcon </td><td>  <tt>-&gt;</tt> </td><td> <tt>(,</tt>{<tt>,</tt>}<tt>)
+</tt></td></tr></table>
+<p>
+<I>Tuples</I> are written <tt>(</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> e</I><sub><I>k</I></sub><tt>)</tt>, and may be
+of arbitrary length <I>k&gt;=2</I>.  The constructor for an <I>n</I>-tuple is denoted by
+<tt>(,</tt>...<tt>,)</tt>, where there are <I>n-1</I> commas.  Thus <tt>(a,b,c)</tt> and
+<tt>(,,)&nbsp;a&nbsp;b&nbsp;c</tt> denote the same value.
+Standard operations on tuples are given
+in the Prelude (see Section <a href="basic.html#basic-tuples">6.1.4</a> and Appendix <a href="standard-prelude.html#stdprelude">A</a>).<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>  
+<tt>(</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> e</I><sub><I>k</I></sub><tt>)</tt> for <I>k&gt;=2</I> is an instance of a <I>k</I>-tuple as
+defined in the Prelude, and requires no translation.  If
+<I>t</I><sub><I>1</I></sub> through <I>t</I><sub><I>k</I></sub> are the types of <I>e</I><sub><I>1</I></sub> through <I>e</I><sub><I>k</I></sub>,
+respectively, then the type of the resulting tuple is 
+<tt>(</tt><I>t</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> t</I><sub><I>k</I></sub><tt>)</tt> (see Section <a href="decls.html#type-syntax">4.1.2</a>).
+</td></tr></table>
+<a name="unit-expression"></a><p>
+<a name="sect3.9"></a>
+<h3>3.9<tt>&nbsp;&nbsp;</tt>Unit Expressions and Parenthesized Expressions</h3>
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  gcon
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> exp <tt>)
+</tt></td></tr><tr><td>
+gcon </td><td>  <tt>-&gt;</tt> </td><td> <tt>()
+</tt></td></tr></table>
+<p>
+
+The form <tt>(</tt><I>e</I><tt>)</tt> is simply a <I>parenthesized expression</I>, and is
+equivalent to <I>e</I>.  The <I>unit expression</I> <tt>()</tt> has type
+<tt>()</tt> (see
+Section <a href="decls.html#type-syntax">4.1.2</a>); it is the only member of that type apart
+from _|_ (it can
+be thought of as the "nullary tuple")---see Section <a href="basic.html#basic-trivial">6.1.5</a>.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>  
+<tt>(</tt><I>e</I><tt>)</tt> is equivalent to <I>e</I>.
+</td></tr></table>
+<a name="arithmetic-sequences"></a><p>
+<a name="sect3.10"></a>
+<h3>3.10<tt>&nbsp;&nbsp;</tt>Arithmetic Sequences</h3>
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  <tt>[</tt> exp<sub>1</sub> [<tt>,</tt> exp<sub>2</sub>] <tt>..</tt> [exp<sub>3</sub>] <tt>]</tt>	
+</td></tr></table>
+<p>
+The <I>arithmetic sequence
+</I><tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I> e</I><sub><I>2</I></sub><I> </I><tt>..</tt><I> e</I><sub><I>3</I></sub><tt>]</tt> denotes a list of values of
+type <I>t</I>, where each of the <I>e</I><sub><I>i</I></sub> has type <I>t</I>, and <I>t</I> is an
+instance of class <tt>Enum</tt>.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+Arithmetic sequences satisfy these identities:
+<div align=center><table >
+<tr><td><tt>[&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>..&nbsp;]</tt>		</td><td align=center> <I>=</I> 
+                        </td><td> <tt>enumFrom</tt> <I>e</I><sub><I>1</I></sub> </td></tr><tr><td><tt>[&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>2</I></sub><tt>..&nbsp;]</tt>	</td><td align=center> <I>=</I> 
+                        </td><td> <tt>enumFromThen</tt> <I>e</I><sub><I>1</I></sub> <I>e</I><sub><I>2</I></sub> </td></tr><tr><td><tt>[&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>..</tt><I>e</I><sub><I>3</I></sub><tt>&nbsp;]</tt>	</td><td align=center> <I>=</I> 
+                        </td><td> <tt>enumFromTo</tt> <I>e</I><sub><I>1</I></sub> <I>e</I><sub><I>3</I></sub> </td></tr><tr><td><tt>[&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>2</I></sub><tt>..</tt><I>e</I><sub><I>3</I></sub><tt>&nbsp;]</tt> 
+                        </td><td align=center> <I>=</I> 
+                        </td><td> <tt>enumFromThenTo</tt> <I>e</I><sub><I>1</I></sub> <I>e</I><sub><I>2</I></sub> <I>e</I><sub><I>3</I></sub>
+</td></tr></table>
+
+</div>
+where <tt>enumFrom</tt>, <tt>enumFromThen</tt>, <tt>enumFromTo</tt>, and <tt>enumFromThenTo
+</tt>are class methods in the class <tt>Enum</tt> as defined in the Prelude
+(see Figure <a href="basic.html#standard-classes">5</a>).
+</td></tr></table>
+<p>
+The semantics of arithmetic sequences therefore depends entirely
+on the instance declaration for the type <I>t</I>.  We give here the
+semantics for <tt>Prelude</tt> types, and indications of the expected semantics
+for other, user-defined, types.<p>
+For the type <tt>Integer</tt>, arithmetic sequences have the following
+meaning:
+<UL><LI>The sequence <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>..]</tt> is the list <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+1</I><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+2</I><tt>,</tt><I>...</I><tt>]</tt>.<p>
+<LI>The sequence <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>2</I></sub><tt>..]</tt> is the list <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+i</I><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+2i</I><tt>,</tt><I>...</I><tt>]</tt>,
+where the increment, <I>i</I>, is <I>e</I><sub><I>2</I></sub><I>-e</I><sub><I>1</I></sub>.  The increment may be zero or negative.
+If the increment is zero, all the list elements are the same.<p>
+<LI>The sequence <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>..</tt><I>e</I><sub><I>3</I></sub><tt>]</tt> is the list <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+1</I><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+2</I><tt>,</tt><I>...e</I><sub><I>3</I></sub><tt>]</tt>.
+The list is empty if <I>e</I><sub><I>1</I></sub><I> &gt; e</I><sub><I>3</I></sub>.<p>
+<LI>The sequence <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>2</I></sub><tt>..</tt><I>e</I><sub><I>3</I></sub><tt>]</tt> 
+is the list <tt>[</tt><I>e</I><sub><I>1</I></sub><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+i</I><tt>,</tt><I>e</I><sub><I>1</I></sub><I>+2i</I><tt>,</tt><I>...e</I><sub><I>3</I></sub><tt>]</tt>,
+where the increment, <I>i</I>, is <I>e</I><sub><I>2</I></sub><I>-e</I><sub><I>1</I></sub>.  If the increment 
+is positive or zero, the list terminates when the next element would
+be greater than <I>e</I><sub><I>3</I></sub>; the list is empty if <I>e</I><sub><I>1</I></sub><I> &gt; e</I><sub><I>3</I></sub>.
+If the increment is negative, the list terminates when the next element would
+be less than <I>e</I><sub><I>3</I></sub>; the list is empty if <I>e1 &lt; e</I><sub><I>3</I></sub>.
+</UL>
+For other <I>discrete</I> <tt>Prelude</tt> types <I>t</I> that 
+are instances of <tt>Enum</tt>, namely <tt>()</tt>, <tt>Bool</tt>, <tt>Char</tt> and <tt>Ordering</tt>, and <tt>Integer</tt>,
+the semantics is given by mapping the <I>e</I><sub><I>i</I></sub> to <tt>Int</tt> using <tt>fromEnum</tt>,
+using the above rules, and then mapping back to <I>t</I> with <tt>toEnum</tt>.<p>
+Where the type is also an instance of class <tt>Bounded</tt> 
+and <I>e</I><sub><I>3</I></sub> is omitted, an implied <I>e</I><sub><I>3</I></sub> is added
+of <tt>maxBound</tt> (if the increment is positive) or <tt>minBound</tt> (resp. negative).
+For example, <tt>['a'..'z']</tt> denotes
+the list of lowercase letters in alphabetical order, and <tt>[LT..]</tt> is the
+list <tt>[LT,EQ,GT]</tt>.<p>
+For <I>continuous</I> <tt>Prelude</tt> types that are instances of <tt>Enum</tt>,
+namely <tt>Float</tt> and <tt>Double</tt>, the semantics is given by the rules for <tt>Int</tt>,
+except that the list terminates when the elements become greater than
+<I>e</I><sub><I>3</I></sub><I>+i/2</I> for positive increment <I>i</I>, or when they become less than 
+<I>e</I><sub><I>3</I></sub><I>+i/2</I> for negative <I>i</I>.<p>
+See Figure <a href="basic.html#standard-classes">5</a> and Section <a href="decls.html#derived-decls">4.3.3</a> for more details of which <tt>Prelude
+</tt>type are in <tt>Enum</tt>.<a name="list-comprehensions"></a><p>
+<a name="sect3.11"></a>
+<h3>3.11<tt>&nbsp;&nbsp;</tt>List Comprehensions</h3>
+
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> <tt>[</tt> exp <tt>|</tt> qual<sub>1</sub> <tt>,</tt> ... <tt>,</tt> qual<sub>n</sub> <tt>]</tt>	</td><td> (list comprehension, n&gt;=0)
+</td></tr><tr><td>
+qual </td><td>  <tt>-&gt;</tt> </td><td> pat <tt>&lt;-</tt> exp 	</td><td> (generator)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> <tt>let</tt> decls		</td><td> (local declaration)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> exp 			</td><td> (guard)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> 			</td><td> (empty qualifier)
+</td></tr></table>
+<p>
+
+A <I>list comprehension</I> has the form <tt>[</tt><I> e </I><tt>|</tt><I> q</I><sub><I>1</I></sub><tt>,</tt><I> ...</I><tt>,</tt><I> q</I><sub><I>n</I></sub><I> </I><tt>]</tt><I>,
+n&gt;=1,</I> where the <I>q</I><sub><I>i</I></sub> qualifiers are either
+<UL><LI><I>generators</I> of the form <I>p </I><tt>&lt;-</tt><I> e</I>, where
+<I>p</I> is a 
+pattern (see Section <a href="exps.html#pattern-matching">3.17</a>) of type <I>t</I> and <I>e</I> is an
+expression of type <tt>[</tt><I>t</I><tt>]
+</tt><LI><I>guards</I>, which are arbitrary expressions of
+type <tt>Bool</tt> 
+<LI><I>local bindings</I> that provide new definitions for use in
+the generated expression <I>e</I> or subsequent guards and generators.
+</UL><p>
+Such a list comprehension returns the list of elements
+produced by evaluating <I>e</I> in the successive environments
+created by the nested, depth-first evaluation of the generators in the
+qualifier list.  Binding of variables occurs according to the normal
+pattern matching rules (see Section <a href="exps.html#pattern-matching">3.17</a>), and if a
+match fails then that element of the list is simply skipped over.  Thus:
+<tt><br>
+
+<br>
+[&nbsp;x&nbsp;|&nbsp;&nbsp;xs&nbsp;&nbsp;&nbsp;&lt;-&nbsp;[&nbsp;[(1,2),(3,4)],&nbsp;[(5,4),(3,2)]&nbsp;],&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3,x)&nbsp;&lt;-&nbsp;xs&nbsp;]<br>
+
+<br>
+
+</tt>yields the list <tt>[4,2]</tt>.  If a qualifier is a guard, it must evaluate
+to <tt>True</tt> for the previous pattern match to succeed.  
+As usual, bindings in list comprehensions can shadow those in outer
+scopes; for example:
+<p>
+<table >
+<tr><td>
+<tt>[&nbsp;x&nbsp;|&nbsp;x&nbsp;&lt;-&nbsp;x,&nbsp;x&nbsp;&lt;-&nbsp;x&nbsp;]</tt> </td><td> = </td><td> <tt>[&nbsp;z&nbsp;|&nbsp;y&nbsp;&lt;-&nbsp;x,&nbsp;z&nbsp;&lt;-&nbsp;y]</tt> </td></tr></table>
+<p>
+
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3>
+List comprehensions satisfy these identities, which may be
+used as a translation into the kernel:
+<div align=center><table >
+<tr><td><tt>[&nbsp;</tt><I> e</I><tt>&nbsp;|&nbsp;]</tt> </td><td align=center> = </td><td> <tt>[</tt>e<tt>]</tt> </td></tr><tr><td><tt>[&nbsp;</tt><I> e</I><tt>&nbsp;|&nbsp;</tt><I>b</I><tt>,</tt><I>  Q  </I><tt>]</tt> </td><td align=center> = </td><td>
+	<tt>if</tt><I> b </I><tt>then</tt><I> </I><tt>[&nbsp;</tt><I> e</I><tt>&nbsp;|&nbsp;</tt><I>Q</I><tt>&nbsp;]</tt><I> </I><tt>else&nbsp;[]</tt> </td></tr><tr><td><tt>[&nbsp;</tt><I> e</I><tt>&nbsp;|&nbsp;</tt><I>p </I><tt>&lt;-</tt><I> l</I><tt>,</tt><I>  Q</I><tt>&nbsp;]</tt> </td><td align=center> = </td><td>
+	<tt>let&nbsp;ok</tt><I> p </I><tt>=</tt><I> </I><tt>[&nbsp;</tt><I> e</I><tt>&nbsp;|&nbsp;</tt><I>Q</I><tt>&nbsp;]</tt> </td></tr><tr><td></td><td align=center></td><td>       <tt>&nbsp;&nbsp;&nbsp;&nbsp;ok&nbsp;_&nbsp;=&nbsp;[]</tt> </td></tr><tr><td></td><td align=center></td><td>	<tt>in&nbsp;concatMap&nbsp;ok&nbsp;l</tt> </td></tr><tr><td><tt>[&nbsp;</tt><I> e</I><tt>&nbsp;|&nbsp;let</tt><I> decls</I><tt>,</tt><I>  Q</I><tt>&nbsp;]</tt> </td><td align=center> = </td><td>
+	<tt>let</tt><I> decls </I><tt>in</tt><I> </I><tt>[&nbsp;</tt><I> e</I><tt>&nbsp;|&nbsp;</tt><I>Q</I><tt>&nbsp;]
+</tt></td></tr></table>
+
+</div>
+where <I>e</I> ranges over expressions, <I>p</I> ranges over
+patterns, <I>l</I> ranges over list-valued expressions, <I>b</I> ranges over
+boolean expressions, <I>decls</I> ranges over declaration lists, 
+<I>Q</I> ranges over sequences of qualifiers, and <tt>ok</tt> is a fresh variable. 
+The function <tt>concatMap</tt> is defined in the Prelude.
+</td></tr></table>
+<p>
+As indicated by the translation of list comprehensions, variables
+bound by <tt>let</tt> have fully polymorphic types while those defined by
+<tt>&lt;-</tt> are lambda bound and are thus monomorphic (see Section
+<a href="decls.html#monomorphism">4.5.4</a>).<a name="let-expressions"></a><p>
+<a name="sect3.12"></a>
+<h3>3.12<tt>&nbsp;&nbsp;</tt>Let Expressions</h3>
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+exp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  <tt>let</tt> decls <tt>in</tt> exp
+</td></tr></table>
+<p>
+
+<I>Let expressions</I> have the general form
+<tt>let&nbsp;{</tt><I> d</I><sub><I>1</I></sub><I> </I><tt>;</tt><I> ...  </I><tt>;</tt><I> d</I><sub><I>n</I></sub><I> </I><tt>}&nbsp;in</tt><I> e</I>,
+and introduce a
+nested, lexically-scoped, 
+mutually-recursive list of declarations (<tt>let</tt> is often called <tt>letrec</tt> in
+other languages).  The scope of the declarations is the expression <I>e
+</I>and the right hand side of the declarations.  Declarations are
+described in Section <a href="decls.html#declarations">4</a>.  Pattern bindings are matched
+lazily; an implicit <tt>~</tt> makes these patterns
+irrefutable.
+For example, 
+<tt><br>
+
+<br>
+let&nbsp;(x,y)&nbsp;=&nbsp;undefined&nbsp;in&nbsp;</tt><I>e</I><tt><br>
+
+<br>
+
+</tt>does not cause an execution-time error until <tt>x</tt> or <tt>y</tt> is evaluated.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3> The dynamic semantics of the expression 
+<tt>let&nbsp;{</tt><I> d</I><sub><I>1</I></sub><I> </I><tt>;</tt><I> ...  </I><tt>;</tt><I> d</I><sub><I>n</I></sub><I> </I><tt>}&nbsp;in</tt><I> e</I><sub><I>0</I></sub> are captured by this
+translation: After removing all type signatures, each
+declaration <I>d</I><sub><I>i</I></sub> is translated into an equation of the form 
+<I>p</I><sub><I>i</I></sub><I> </I><tt>=</tt><I> e</I><sub><I>i</I></sub>, where <I>p</I><sub><I>i</I></sub> and <I>e</I><sub><I>i</I></sub> are patterns and expressions
+respectively, using the translation in
+Section <a href="decls.html#function-bindings">4.4.3</a>.  Once done, these identities
+hold, which may be used as a translation into the kernel:
+<div align=center><table >
+<tr><td><tt>let&nbsp;{</tt><I>p</I><sub><I>1</I></sub><tt>&nbsp;=&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>;&nbsp;</tt>...<tt>;&nbsp;</tt><I>p</I><sub><I>n</I></sub><tt>&nbsp;=&nbsp;</tt><I>e</I><sub><I>n</I></sub><tt>}&nbsp;in</tt> <I>e</I><sub><I>0</I></sub>
+      </td><td align=center>=</td><td> <tt>let&nbsp;(~</tt><I>p</I><sub><I>1</I></sub><tt>,</tt>...<tt>,~</tt><I>p</I><sub><I>n</I></sub><tt>)&nbsp;=&nbsp;(</tt><I>e</I><sub><I>1</I></sub><tt>,</tt>...<tt>,</tt><I>e</I><sub><I>n</I></sub><tt>)&nbsp;in</tt> <I>e</I><sub><I>0</I></sub> </td></tr><tr><td><tt>let&nbsp;</tt><I>p</I><tt>&nbsp;=&nbsp;</tt><I>e</I><sub><I>1</I></sub> <tt>&nbsp;in&nbsp;</tt> <I>e</I><sub><I>0</I></sub>
+	</td><td align=center>=</td><td> <tt>case&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>&nbsp;of&nbsp;~</tt><I>p</I><tt>&nbsp;-&gt;&nbsp;</tt><I>e</I><sub><I>0</I></sub>	</td></tr><tr><td></td><td align=center> </td><td> where no variable in <I>p</I> appears free in <I>e</I><sub><I>1</I></sub> </td></tr><tr><td><tt>let&nbsp;</tt><I>p</I><tt>&nbsp;=&nbsp;</tt><I>e</I><sub><I>1</I></sub> <tt>&nbsp;in&nbsp;</tt> <I>e</I><sub><I>0</I></sub>
+      </td><td align=center>=</td><td> <tt>let&nbsp;</tt><I>p</I><tt>&nbsp;=&nbsp;fix&nbsp;(&nbsp;\&nbsp;~</tt><I>p</I><tt>&nbsp;-&gt;&nbsp;</tt><I>e</I><sub><I>1</I></sub><tt>)&nbsp;in</tt> <I>e</I><sub><I>0</I></sub>
+</td></tr></table>
+
+</div>
+where <tt>fix</tt> is the least fixpoint operator.  Note the use of the
+irrefutable patterns <tt>~</tt><I>p</I>.  This translation
+does not preserve the static semantics because the use of <tt>case
+</tt>precludes a fully polymorphic typing of the bound variables.
+The static semantics of the bindings in a <tt>let</tt> expression
+are described in 
+Section <a href="decls.html#pattern-bindings">4.4.3</a>.
+</td></tr></table>
+<a name="case"></a><p>
+<a name="sect3.13"></a>
+<h3>3.13<tt>&nbsp;&nbsp;</tt>Case Expressions</h3>
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr><td>
+exp </td><td>  <tt>-&gt;</tt> </td><td>  <tt>case</tt> exp <tt>of</tt> <tt>{</tt> alts <tt>}
+</tt></td></tr><tr><td>
+alts </td><td>  <tt>-&gt;</tt> </td><td>  alt<sub>1</sub> <tt>;</tt> ... <tt>;</tt> alt<sub>n</sub> 		</td><td> (n&gt;=0)
+</td></tr><tr><td>
+alt </td><td>  <tt>-&gt;</tt> </td><td>  pat <tt>-&gt;</tt> exp [<tt>where</tt> decls]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   pat gdpat [<tt>where</tt> decls]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>					</td><td> (empty alternative)
+</td></tr><tr><td>
+gdpat </td><td>  <tt>-&gt;</tt> </td><td>  gd <tt>-&gt;</tt> exp [ gdpat ]
+</td></tr><tr><td>
+gd </td><td>  <tt>-&gt;</tt> </td><td>  <tt>|</tt> exp<sup>0</sup> 
+</td></tr></table>
+<p>
+A <I>case expression</I> has the general form
+<p>
+
+<tt>case</tt><I> e </I><tt>of&nbsp;{&nbsp;</tt><I>p</I><sub><I>1</I></sub><I> match</I><sub><I>1</I></sub><I> </I><tt>;</tt><I> ... </I><tt>;</tt><I> p</I><sub><I>n</I></sub><I>  match</I><sub><I>n</I></sub><I> </I><tt>}
+<p>
+
+</tt>where each <I>match</I><sub><I>i</I></sub> is of the general form
+<p>
+<table >
+<tr><td>
+ </td><td> <tt>|</tt><I> g</I><sub><I>i1</I></sub>   </td><td> <tt>-&gt;</tt><I> e</I><sub><I>i1</I></sub> </td></tr><tr><td></td><td> <I>...</I> </td></tr><tr><td></td><td> <tt>|</tt><I> g</I><sub><I>im</I><sub><I>i</I></sub></sub> </td><td> <tt>-&gt;</tt><I> e</I><sub><I>im</I><sub><I>i</I></sub></sub> </td></tr><tr><td></td><td> <tt>where</tt><I> decls</I><sub><I>i</I></sub>
+</td></tr></table>
+<p>
+
+Each alternative <I>p</I><sub><I>i</I></sub><I> match</I><sub><I>i</I></sub> consists of a 
+pattern <I>p</I><sub><I>i</I></sub> and its matches, <I>match</I><sub><I>i</I></sub>, which
+consists of pairs of guards
+<I>g</I><sub><I>ij</I></sub> and bodies <I>e</I><sub><I>ij</I></sub> (expressions), as well as
+optional bindings (<I>decls</I><sub><I>i</I></sub>) that scope over all of the guards and
+expressions of the alternative.  An alternative of the form
+<p>
+
+<I>pat </I><tt>-&gt;</tt><I> exp </I><tt>where</tt><I> decls
+<p>
+
+</I>is treated as shorthand for:
+<p>
+<table >
+<tr><td>
+ </td><td> <I>pat </I><tt>|&nbsp;True</tt>   </td><td> <tt>-&gt;</tt><I> exp</I> </td></tr><tr><td></td><td> <tt>where</tt><I> decls
+</I></td></tr></table>
+<p>
+<p>
+A case expression must have at least one alternative and each alternative must
+have at least one body.  Each body must have the same type, and the
+type of the whole expression is that type.<p>
+A case expression is evaluated by pattern matching the expression <I>e
+</I>against the individual alternatives.  The matches are tried sequentially,
+from top to bottom.  The first successful match causes evaluation of
+the corresponding alternative body, in the environment of the case
+expression extended by the bindings created during the matching of
+that alternative and by the <I>decls</I><sub><I>i</I></sub> associated with that
+alternative.  If no
+match succeeds, the result is <I>_|_</I>.  Pattern matching is described
+in Section <a href="exps.html#pattern-matching">3.17</a>, with the formal semantics of case
+expressions in Section <a href="exps.html#case-semantics">3.17.3</a>.<a name="do-expressions"></a><p>
+<a name="sect3.14"></a>
+<h3>3.14<tt>&nbsp;&nbsp;</tt>Do Expressions</h3>
+
+
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+exp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250> <tt>do</tt> <tt>{</tt> stmts <tt>}</tt>             </td><td> (do expression)
+</td></tr><tr><td>
+stmts </td><td>  <tt>-&gt;</tt> </td><td> stmt<sub>1</sub> <tt>;</tt> ... <tt>;</tt> stmt<sub>n</sub>	</td><td> <tt>&nbsp;&nbsp;</tt>(n&gt;=0)
+</td></tr><tr><td>
+stmt </td><td>  <tt>-&gt;</tt> </td><td> exp
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> pat <tt>&lt;-</tt> exp
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> <tt>let</tt> decls
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td> 			</td><td> (empty statment)
+</td></tr></table>
+<p>
+A <I>do expression</I> provides a more conventional syntax for monadic programming.
+It allows an expression such as 
+<tt><br>
+
+<br>
+&nbsp;&nbsp;putStr&nbsp;"x:&nbsp;"&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;<br>
+&nbsp;&nbsp;getLine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;=&nbsp;\l&nbsp;-&gt;<br>
+&nbsp;&nbsp;return&nbsp;(words&nbsp;l)<br>
+
+<br>
+
+</tt>to be written in a more traditional way as:
+<tt><br>
+
+<br>
+&nbsp;&nbsp;do&nbsp;putStr&nbsp;"x:&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l&nbsp;&lt;-&nbsp;getLine<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(words&nbsp;l)<br>
+
+<br>
+
+</tt><table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3> 
+Do expressions satisfy these identities, which may be
+used as a translation into the kernel, after eliminating empty <I>stmts</I>:
+<div align=center><table >
+<tr><td><tt>do&nbsp;{</tt><I>e</I><tt>}</tt>                       </td><td align=center>=</td><td> <I>e</I></td></tr><tr><td><tt>do&nbsp;{</tt><I>e</I><tt>;</tt><I>stmts</I><tt>}</tt>             </td><td align=center>=</td><td> <I>e</I> <tt>&gt;&gt;&nbsp;do&nbsp;{</tt><I>stmts</I><tt>}</tt> </td></tr><tr><td><tt>do&nbsp;{</tt><I>p</I><tt>&nbsp;&lt;-&nbsp;</tt><I>e</I><tt>;&nbsp;</tt><I>stmts</I><tt>}</tt>   </td><td align=center>=</td><td> <tt>let&nbsp;ok&nbsp;</tt><I>p</I><tt>&nbsp;=&nbsp;do&nbsp;{</tt><I>stmts</I><tt>}</tt></td></tr><tr><td></td><td align=center> </td><td> <tt>&nbsp;&nbsp;&nbsp;&nbsp;ok&nbsp;_&nbsp;=&nbsp;fail&nbsp;"..."</tt></td></tr><tr><td></td><td align=center> </td><td> <tt>&nbsp;&nbsp;in&nbsp;</tt><I>e</I><tt>&nbsp;&gt;&gt;=&nbsp;ok</tt> </td></tr><tr><td><tt>do&nbsp;{let</tt> <I>decls</I><tt>;&nbsp;</tt><I>stmts</I><tt>}</tt>  </td><td align=center>=</td><td> <tt>let</tt> <I>decls</I> <tt>in&nbsp;do&nbsp;{</tt><I>stmts</I><tt>}</tt></td></tr></table>
+
+</div>
+The ellipsis <tt>"..."</tt> stands for a compiler-generated error message,
+passed to <tt>fail</tt>, preferably giving some indication of the location
+of the pattern-match failure;
+the functions <tt>&gt;&gt;</tt>, <tt>&gt;&gt;=</tt>, and <tt>fail</tt> are operations in the class <tt>Monad</tt>,
+as defined in the Prelude; and <tt>ok</tt> is a fresh
+identifier. 
+</td></tr></table>
+
+As indicated by the translation of <tt>do</tt>, variables bound by <tt>let</tt> have
+fully polymorphic types while those defined by <tt>&lt;-</tt> are lambda bound
+and are thus monomorphic.<a name="field-ops"></a><p>
+<a name="sect3.15"></a>
+<h3>3.15<tt>&nbsp;&nbsp;</tt>Datatypes with Field Labels</h3>
+
+
+
+
+A datatype declaration may optionally include field labels for some or
+all of the components of the type (see Section <a href="decls.html#datatype-decls">4.2.1</a>).
+Readers unfamiliar with datatype declarations in Haskell  may wish
+to read Section <a href="decls.html#datatype-decls">4.2.1</a> first.
+These field labels can be used to 
+construct, select from, and update fields in a manner
+that is independent of the overall structure of the datatype.<p>
+Different datatypes cannot share common field labels in the same scope.
+A field label can be used at most once in a constructor.
+Within a datatype, however, a field name can be used in more
+than one constructor provided the field has the same typing in all
+constructors.
+<a name="sect3.15.1"></a>
+<h4>3.15.1<tt>&nbsp;&nbsp;</tt>Field Selection</h4>
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>     qvar
+</td></tr></table>
+<p>
+Field names are used as selector functions.  When used as a variable,
+a field name serves as a function that extracts the field from an
+object.  Selectors are top level bindings and so they
+may be shadowed by local variables but cannot conflict with 
+other top level bindings of the same name.  This shadowing only
+affects selector functions; in other record constructs, field labels
+cannot be confused with ordinary variables. <p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3> 
+A field label <I>f</I> introduces a selector function defined as:
+<div align=center><table >
+<tr><td>
+<I>f</I><tt>&nbsp;x</tt> </td><td align=center>=</td><td><tt>case&nbsp;x&nbsp;of&nbsp;{</tt> <I>C</I><sub><I>1</I></sub><I> p</I><sub><I>11</I></sub><I> ...p</I><sub><I>1k</I></sub> <tt>&nbsp;-&gt;&nbsp;</tt> <I>e</I><sub><I>1</I></sub> <tt>;</tt> 
+ <I>...</I> <tt>;</tt> <I>C</I><sub><I>n</I></sub><I> p</I><sub><I>n1</I></sub><I> ...p</I><sub><I>nk</I></sub> <tt>&nbsp;-&gt;&nbsp;</tt> <I>e</I><sub><I>n</I></sub> <tt>}</tt></td></tr></table>
+
+</div>
+where <I>C</I><sub><I>1</I></sub><I> ...C</I><sub><I>n</I></sub> are all the constructors of the datatype containing a
+field labeled with <I>f</I>, <I>p</I><sub><I>ij</I></sub> is <tt>y</tt> when <I>f</I> labels the <I>j</I>th
+component of <I>C</I><sub><I>i</I></sub> or <tt>_</tt> otherwise, and <I>e</I><sub><I>i</I></sub> is <tt>y</tt> when some field in
+<I>C</I><sub><I>i</I></sub> has a label of <I>f</I> or <tt>undefined</tt> otherwise.
+</td></tr></table>
+
+<a name="sect3.15.2"></a>
+<h4>3.15.2<tt>&nbsp;&nbsp;</tt>Construction Using Field Labels</h4>
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  qcon <tt>{</tt> fbind<sub>1</sub> <tt>,</tt> ... <tt>,</tt> fbind<sub>n</sub> <tt>}</tt> </td><td> (labeled construction, n&gt;=0)
+</td></tr><tr><td>
+fbind </td><td>  <tt>-&gt;</tt> </td><td>  qvar <tt>=</tt> exp
+</td></tr></table>
+<p>
+A constructor with labeled fields may be used to construct a value 
+in which the components are specified by name rather than by position.
+Unlike the braces used in declaration lists, these are not subject to
+layout; the <tt>{</tt> and <tt>}</tt> characters must be explicit.  (This is also
+true of field updates and field patterns.)
+Construction using field names is subject to the following constraints:
+<UL><LI>Only field labels declared with the specified constructor may be
+mentioned. 
+<LI>A field name may not be mentioned more than once.
+<LI>Fields not mentioned are initialized to _|_.
+<LI>A compile-time error occurs when any strict fields (fields
+whose declared types are prefixed by <tt>!</tt>) are omitted during
+construction.  Strict fields are discussed in Section <a href="decls.html#strictness-flags">4.2.1</a>.
+</UL><p>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3> 
+In the binding <I>f</I> <tt>=</tt> <I>v</I>, the field <I>f</I> labels <I>v</I>.
+<div align=center><table >
+<tr><td>
+<I>C</I> <tt>{</tt> <I>bs</I> <tt>}</tt> </td><td align=center>=</td><td> <I>C (pick</I><sup><I>C</I></sup><sub><I>1</I></sub><I> bs </I><tt>undefined</tt><I>) ...(pick</I><sup><I>C</I></sup><sub><I>k</I></sub><I> bs </I><tt>undefined</tt><I>)</I></td></tr></table>
+
+</div>
+where <I>k</I> is the arity of <I>C</I>.<p>
+The auxiliary function <I>pick</I><sup><I>C</I></sup><sub><I>i</I></sub><I> bs d</I> is defined as follows:
+<blockquote>If the <I>i</I>th component of a constructor <I>C</I> has the
+    field name <I>f</I>, and if <I>f=v</I> appears in the binding list
+    <I>bs</I>, then <I>pick</I><sup><I>C</I></sup><sub><I>i</I></sub><I> bs d</I> is <I>v</I>.  Otherwise, <I>pick</I><sup><I>C</I></sup><sub><I>i</I></sub><I> bs d</I> is
+    the default value <I>d</I>.
+</blockquote>
+</td></tr></table>
+
+<a name="sect3.15.3"></a>
+<h4>3.15.3<tt>&nbsp;&nbsp;</tt>Updates Using Field Labels</h4>
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+aexp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  aexp<sub>&lt;qcon&gt;</sub> <tt>{</tt> fbind<sub>1</sub> <tt>,</tt> ... <tt>,</tt> fbind<sub>n</sub> <tt>}</tt> </td><td> (labeled update, n&gt;=1)
+</td></tr></table>
+<p>
+Values belonging to a datatype with field names may be
+non-destructively updated.  This creates a new value in which the
+specified field values replace those in the existing value.  
+Updates are restricted in the following ways:
+<UL><LI>All labels must be taken from the same datatype.
+<LI>At least one constructor must define all of the labels
+mentioned in the update.
+<LI>No label may be mentioned more than once.
+<LI>An execution error occurs when the value being updated does
+not contain all of the specified labels.
+</UL>
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3> 
+Using the prior definition of <I>pick</I>,
+<div align=center><table >
+<tr><td>
+<I>e</I> <tt>{</tt> <I>bs</I> <tt>}</tt> </td><td align=center>=</td><td> <tt>case</tt> <I>e</I> <tt>of</tt></td></tr><tr><td></td><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>C</I><sub><I>1</I></sub><I> v</I><sub><I>1</I></sub><I> ... v</I><sub><I>k</I><sub><I>1</I></sub></sub> <tt>-&gt;</tt> <I>C (pick</I><sup><I>C</I><sub><I>1</I></sub></sup><sub><I>1</I></sub><I> bs v</I><sub><I>1</I></sub><I>) ... (pick</I><sup><I>C</I><sub><I>1</I></sub></sup><sub><I>k</I><sub><I>1</I></sub></sub><I> bs v</I><sub><I>k</I><sub><I>1</I></sub></sub><I>)</I></td></tr><tr><td></td><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt> ... </td></tr><tr><td></td><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>C</I><sub><I>j</I></sub><I> v</I><sub><I>1</I></sub><I> ... v</I><sub><I>k</I><sub><I>j</I></sub></sub> <tt>-&gt;</tt> <I>C (pick</I><sup><I>C</I><sub><I>j</I></sub></sup><sub><I>1</I></sub><I> bs v</I><sub><I>1</I></sub><I>) ... (pick</I><sup><I>C</I><sub><I>j</I></sub></sup><sub><I>k</I><sub><I>j</I></sub></sub><I> bs v</I><sub><I>k</I><sub><I>j</I></sub></sub><I>)</I></td></tr><tr><td></td><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;-&gt;&nbsp;error&nbsp;"Update&nbsp;error"</tt></td></tr></table>
+
+</div>
+where <I>{C</I><sub><I>1</I></sub><I>,...,C</I><sub><I>j</I></sub><I>}</I> is the set of constructors containing all labels
+in <I>b</I>, and <I>k</I><sub><I>i</I></sub> is the arity of <I>C</I><sub><I>i</I></sub>.
+</td></tr></table>
+
+Here are some examples using labeled fields:
+<tt><br>
+
+<br>
+data&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;C1&nbsp;{f1,f2&nbsp;::&nbsp;Int}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;C2&nbsp;{f1&nbsp;::&nbsp;Int,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f3,f4&nbsp;::&nbsp;Char}<br>
+
+<br>
+
+<p>
+</tt><table >
+<tr><td>
+Expression                       	    </td><td> Translation                       </td></tr><tr><td>
+<tt>C1&nbsp;{f1&nbsp;=&nbsp;3}</tt>                       </td><td> <tt>C1&nbsp;3&nbsp;undefined</tt>          </td></tr><tr><td><tt>C2&nbsp;{f1&nbsp;=&nbsp;1,&nbsp;f4&nbsp;=&nbsp;'A',&nbsp;f3&nbsp;=&nbsp;'B'}</tt>   </td><td> <tt>C2&nbsp;1&nbsp;'B'&nbsp;'A'</tt>            </td></tr><tr><td><tt>x&nbsp;{f1&nbsp;=&nbsp;1}</tt>                 </td><td> <tt>case&nbsp;x&nbsp;of&nbsp;C1&nbsp;_&nbsp;f2&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;C1&nbsp;1&nbsp;f2</tt> </td></tr><tr><td></td><td> <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C2&nbsp;_&nbsp;f3&nbsp;f4&nbsp;-&gt;&nbsp;C2&nbsp;1&nbsp;f3&nbsp;f4</tt>   </td></tr></table>
+<p>
+
+The field f1 is common to both constructors in T.  This
+example translates expressions using constructors in field-label
+notation into equivalent expressions using the same constructors
+without field labels. 
+A compile-time error will result if no single constructor
+defines the set of field names used in an update, such as
+<tt>x&nbsp;{f2&nbsp;=&nbsp;1,&nbsp;f3&nbsp;=&nbsp;'x'}</tt>. <a name="expression-type-sigs"></a><p>
+<a name="sect3.16"></a>
+<h3>3.16<tt>&nbsp;&nbsp;</tt>Expression Type-Signatures</h3>
+
+
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100>
+exp </td><td width=20>  <tt>-&gt;</tt> </td><td width=250>  exp <tt>::</tt> [context <tt>=&gt;</tt>] type
+</td></tr></table>
+<p>
+
+<I>Expression type-signatures</I> have the form <I>e </I><tt>::</tt><I> t</I>, where <I>e
+</I>is an expression and <I>t</I> is a type (Section <a href="decls.html#type-syntax">4.1.2</a>); they
+are used to type an expression explicitly
+and may be used to resolve ambiguous typings due to overloading (see
+Section <a href="decls.html#default-decls">4.3.4</a>).  The value of the expression is just that of
+<I>exp</I>.  As with normal type signatures (see
+Section <a href="decls.html#type-signatures">4.4.1</a>), the declared type may be more specific than 
+the principal type derivable from <I>exp</I>, but it is an error to give
+a type that is more general than, or not comparable to, the
+principal type.
+<table border=2 cellpadding=3>
+<tr><td>
+<h3>Translation:</h3> 
+<div align=center><table >
+<tr><td>
+<I>e </I><tt>::</tt><I> t</I> </td><td align=center> = </td><td> <tt>let&nbsp;{</tt><I> v </I><tt>::</tt><I> t</I><tt>;&nbsp;</tt><I> v </I><tt>=</tt><I> e </I><tt>}&nbsp;in&nbsp;</tt><I>v
+</I></td></tr></table>
+
+</div>
+</td></tr></table>
+<a name="pattern-matching"></a><p>
+<a name="sect3.17"></a>
+<h3>3.17<tt>&nbsp;&nbsp;</tt>Pattern Matching</h3>
+
+<a name="patterns"></a>
+<p>
+<I>Patterns</I> appear in lambda abstractions, function definitions, pattern
+bindings, list comprehensions, do expressions, and case expressions.
+However, the 
+first five of these ultimately translate into case expressions, so
+defining the semantics of pattern matching for case expressions is sufficient.<a name="pattern-definitions"></a><p>
+<a name="sect3.17.1"></a>
+<h4>3.17.1<tt>&nbsp;&nbsp;</tt>Patterns</h4>
+<p>
+Patterns have this syntax:
+<table cellspacing=0 cellspacing=0>
+<tr><td width=100></td><td width=20></td><td width=250></td></tr><tr></tr><tr><td>
+pat </td><td>  <tt>-&gt;</tt> </td><td>  var <tt>+</tt> integer            </td><td> (successor pattern)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   pat<sup>0</sup>
+</td></tr><tr><td>
+pat<sup>i</sup> </td><td>  <tt>-&gt;</tt> </td><td>  pat<sup>i+1</sup> [qconop<sup>(n,i)</sup> pat<sup>i+1</sup>]
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   lpat<sup>i</sup>
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   rpat<sup>i</sup>
+</td></tr><tr><td>
+lpat<sup>i</sup> </td><td>  <tt>-&gt;</tt> </td><td>  (lpat<sup>i</sup> | pat<sup>i+1</sup>) qconop<sup>(l,i)</sup> pat<sup>i+1</sup>
+</td></tr><tr><td>
+lpat<sup>6</sup> </td><td>  <tt>-&gt;</tt> </td><td>  <tt>-</tt> (integer | float)		</td><td> (negative literal)
+</td></tr><tr><td>
+rpat<sup>i</sup> </td><td>  <tt>-&gt;</tt> </td><td>  pat<sup>i+1</sup> qconop<sup>(r,i)</sup> (rpat<sup>i</sup> | pat<sup>i+1</sup>)
+</td></tr><tr><td>
+pat<sup>10</sup>-&gt; </td><td> apat
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   gcon apat<sub>1</sub> ... apat<sub>k</sub>		</td><td> (arity gcon = k, k&gt;=1)
+</td></tr><tr><td>
+apat </td><td>  <tt>-&gt;</tt> </td><td>  var [<tt>@</tt> apat]			</td><td> (as pattern)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   gcon				</td><td> (arity gcon = 0) 
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   qcon <tt>{</tt> fpat<sub>1</sub> <tt>,</tt> ... <tt>,</tt> fpat<sub>k</sub> <tt>}</tt> </td><td> (labeled pattern, k&gt;=0)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   literal
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>_</tt>					</td><td> (wildcard)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> pat <tt>)</tt>				</td><td> (parenthesized pattern)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>(</tt> pat<sub>1</sub> <tt>,</tt> ... <tt>,</tt> pat<sub>k</sub> <tt>)</tt>	</td><td> (tuple pattern, k&gt;=2)
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>[</tt> pat<sub>1</sub> <tt>,</tt> ... <tt>,</tt> pat<sub>k</sub> <tt>]</tt>	</td><td> (list pattern, k&gt;=1) 
+</td></tr><tr><td>
+</td><td> <tt>|</tt> </td><td>   <tt>~</tt> apat				</td><td> (irrefutable pattern)
+</td></tr><tr><td>
+fpat </td><td>  <tt>-&gt;</tt> </td><td>  qvar <tt>=</tt> pat
+</td></tr></table>
+<p>
+The arity of a constructor must match the number of
+sub-patterns associated with it; one cannot match against a
+partially-applied constructor.<p>
+All patterns must be <I>linear
+</I>---no variable may appear more than once.<p>
+Patterns of the form <I>var</I><tt>@</tt><I>pat</I> are called <I>as-patterns</I>,
+
+and allow one to use <I>var
+</I>as a name for the value being matched by <I>pat</I>.  For example,
+<tt><br>
+
+<br>
+case&nbsp;e&nbsp;of&nbsp;{&nbsp;xs@(x:rest)&nbsp;-&gt;&nbsp;if&nbsp;x==0&nbsp;then&nbsp;rest&nbsp;else&nbsp;xs&nbsp;}<br>
+
+<br>
+
+</tt>is equivalent to:
+<tt><br>
+
+<br>
+let&nbsp;{&nbsp;xs&nbsp;=&nbsp;e&nbsp;}&nbsp;in<br>
+&nbsp;&nbsp;case&nbsp;xs&nbsp;of&nbsp;{&nbsp;(x:rest)&nbsp;-&gt;&nbsp;if&nbsp;x==0&nbsp;then&nbsp;rest&nbsp;else&nbsp;xs&nbsp;}<br>
+
+<br>
+<p>
+</tt>Patterns of the form <tt>_</tt> are 
+<I>wildcards</I> and are useful when some part of a pattern
+is not referenced on the right-hand-side.  It is as if an
+identifier not used elsewhere were put in its place.  For example,
+<tt><br>
+
+<br>
+case&nbsp;e&nbsp;of&nbsp;{&nbsp;[x,_,_]&nbsp;&nbsp;-&gt;&nbsp;&nbsp;if&nbsp;x==0&nbsp;then&nbsp;True&nbsp;else&nbsp;False&nbsp;}<br>
+
+<br>
+
+</tt>is equivalent to:
+<tt><br>
+
+<br>
+case&nbsp;e&nbsp;of&nbsp;{&nbsp;[x,y,z]&nbsp;&nbsp;-&gt;&nbsp;&nbsp;if&nbsp;x==0&nbsp;then&nbsp;True&nbsp;else&nbsp;False&nbsp;}<br>
+
+<br>
+<p>
+</tt>In the pattern matching rules given below we distinguish two kinds of
+patterns: an <I>irrefutable pattern
+
+</I>is: a variable, a wildcard, <I>N apat</I> where <I>N</I> is a constructor
+defined by <tt>newtype</tt> and <I>apat</I> is irrefutable (see
+Section <a href="decls.html#datatype-renaming">4.2.3</a>), 
+ 
+<I>var</I><tt>@</tt><I>apat</I> where <I>apat</I> is irrefutable,
+or of the form <tt>~</tt><I>apat</I> (whether or not <I>apat</I> is irrefutable).
+All other patterns are <I>refutable</I>.<p>
+<a name="sect3.17.2"></a>
+<h4>3.17.2<tt>&nbsp;&nbsp;</tt>Informal Semantics of Pattern Matching</h4><p>
+Patterns are matched against values.  Attempting to match a pattern
+can have one of three results: it may <I>fail</I>; it may 
+<I>succeed</I>, returning a binding for each variable in the pattern; or it
+may <I>diverge</I> (i.e. return <I>_|_</I>).  Pattern matching proceeds
+from left to right, and outside to inside, according to these rules:
+<OL><LI>Matching a value <I>v</I> against the irrefutable pattern
+
+<I>var</I> always succeeds and binds <I>var</I> to <I>v</I>.  
+Similarly, matching <I>v</I> against the irrefutable pattern <tt>~</tt><I>apat</I> always succeeds.  
+The free
+variables in <I>apat</I> are bound to the appropriate values if matching
+<I>v</I> against <I>apat</I> would otherwise succeed, and to <I>_|_</I> if matching
+<I>v</I> against <I>apat</I> fails or diverges.  (Binding does 
+<I>not</I> imply evaluation.)<p>
+Matching any value against the wildcard pattern <tt>_</tt> always succeeds
+and no binding is done.<p>
+Operationally, this means that no matching is done on an
+irrefutable pattern until one of the variables in the pattern is used.
+At that point the entire pattern is matched against the value, and if
+the match fails or diverges, so does the overall computation.<p>
+<LI>
+Matching a value <I>con v</I> against the pattern <I>con pat</I>, where <I>con</I> is a
+constructor defined by <tt>newtype</tt>, is equivalent to matching <I>v
+</I>against the pattern <I>pat</I>.   That is, constructors associated with
+<tt>newtype</tt> serve only to change the type of a value.<p>
+<LI>Matching <I>_|_</I> against a refutable pattern always diverges.<p>
+<LI>Matching a non-<I>_|_</I> value can occur against three kinds of
+refutable patterns:
+<OL><LI>Matching a non-<I>_|_</I> value against a pattern whose outermost
+component is a constructor defined by <tt>data</tt> 
+
+fails if the value being matched was created by a 
+different constructor.  If the constructors are
+the same, the result of the match is the result of matching the
+sub-patterns left-to-right against the components of the data value:
+if all matches succeed, the overall match
+succeeds; the first to fail or diverge causes the overall match to
+fail or diverge, respectively.  <p>
+<LI>Numeric literals are matched using the overloaded <tt>==</tt> function.  
+The behavior of numeric patterns depends entirely on the definition of
+<tt>==</tt> and <tt>fromInteger</tt> (integer literals) or <tt>fromRational</tt> (floating point literals)
+for the type of object being matched.<p>
+<LI>Matching a non-<I>_|_</I> value <I>x</I> against a pattern of the form
+<I>n</I><tt>+</tt><I>k
+
+</I>(where <I>n</I> is a variable and <I>k</I> is a positive integer
+literal) succeeds if <I>x&gt;=k</I>, resulting in the binding of <I>n</I> to <I>x-k</I>,
+and fails if <I>x&lt;k</I>.  The behavior of <I>n</I><tt>+</tt><I>k</I> patterns depends entirely
+on the underlying definitions of <tt>&gt;=</tt>, <tt>fromInteger</tt>, and <tt>-</tt> for the
+type of the object being matched.
+</OL><p>
+<LI>
+Matching against a constructor using labeled fields is the same as
+matching ordinary constructor patterns except that the fields are
+matched in the order they are named in the field list.  All fields
+listed must be declared by the constructor; fields may not be named
+more than once.  Fields not named by the pattern are ignored (matched
+against <tt>_</tt>).<p>
+<LI>
+The result of matching a value <I>v</I> against an as-pattern <I>var</I><tt>@</tt><I>apat</I> is
+
+the result of matching <I>v</I> against <I>apat</I> augmented with the binding of
+<I>var</I> to <I>v</I>.  If the match of <I>v</I> against <I>apat</I> fails or diverges,
+then so does the overall match.
+</OL><p>
+Aside from the obvious static type constraints (for
+example, it is a static error to match a character against a
+boolean), these static class constraints hold: an integer
+literal pattern
+
+can only be matched against a value in the class
+<tt>Num</tt> and a floating literal pattern
+
+can only be matched against a value
+in the class <tt>Fractional</tt>.
+A <I>n</I><tt>+</tt><I>k</I> pattern
+
+can only be matched
+against a value in the class <tt>Integral</tt>.<p>
+Many people feel that <I>n</I><tt>+</tt><I>k</I> patterns should not be used.  These
+patterns may be removed or changed in future versions of Haskell . <p>
+Here are some examples:
+<OL><LI>If the pattern <tt>['a','b']</tt> is matched against <tt>['x',</tt><I>_|_</I><tt>]</tt>, then <tt>'a'
+</tt><I>fails</I> to match against <tt>'x'</tt>, and the result is a failed match.  But
+if <tt>['a','b']</tt> is matched against <tt>[</tt><I>_|_</I><tt>,'x']</tt>, then attempting to match
+<tt>'a'</tt> against <I>_|_</I> causes the match to <I>diverge</I>.<p>
+<LI>These examples demonstrate refutable vs. irrefutable
+matching:
+<tt><br>
+
+<br>
+(\&nbsp;~(x,y)&nbsp;-&gt;&nbsp;0)&nbsp;</tt><I>_|_</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;0<br>
+(\&nbsp;&nbsp;(x,y)&nbsp;-&gt;&nbsp;0)&nbsp;</tt><I>_|_</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>_|_</I><tt><br>
+
+<br>
+
+<br>
+
+<br>
+(\&nbsp;~[x]&nbsp;-&gt;&nbsp;0)&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;0<br>
+(\&nbsp;~[x]&nbsp;-&gt;&nbsp;x)&nbsp;[]&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>_|_</I><tt><br>
+
+<br>
+
+<br>
+
+<br>
+(\&nbsp;~[x,~(a,b)]&nbsp;-&gt;&nbsp;x)&nbsp;[(0,1),</tt><I>_|_</I><tt>]&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;(0,1)<br>
+(\&nbsp;~[x,&nbsp;(a,b)]&nbsp;-&gt;&nbsp;x)&nbsp;[(0,1),</tt><I>_|_</I><tt>]&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><I>_|_</I><tt><br>
+
+<br>
+
+<br>
+
+<br>
+(\&nbsp;&nbsp;(x:xs)&nbsp;-&gt;&nbsp;x:x:xs)&nbsp;</tt><I>_|_</I><tt>&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;</tt><I>_|_</I><tt><br>
+(\&nbsp;~(x:xs)&nbsp;-&gt;&nbsp;x:x:xs)&nbsp;</tt><I>_|_</I><tt>&nbsp;&nbsp;&nbsp;</tt><I>=&gt;</I><tt>&nbsp;&nbsp;&nbsp;</tt><I>_|_</I><tt>:</tt><I>_|_</I><tt>:</tt><I>_|_</I><tt><br>
+
+
+</tt></OL>
+
+Additional examples illustrating some of the subtleties of pattern matching
+may be found in Section <a href="decls.html#datatype-renaming">4.2.3</a>.<p>
+Top level patterns in case
+expressions and the set of top level patterns in function or pattern
+bindings may have zero or more associated <I>guards</I>.
+A guard is 
+a boolean expression that is evaluated only after all of the
+arguments have been successfully matched, and it must be true for the
+overall pattern match to succeed.  The environment of the guard is the same
+as the right-hand-side of the case-expression
+alternative, function definition, or pattern binding to which it is attached.<p>
+The guard semantics have an obvious influence on the
+strictness characteristics of a function or case expression.  In
+particular, an otherwise irrefutable pattern
+
+may be evaluated because of a guard.  For example, in
+<tt><br>
+
+<br>
+f&nbsp;~(x,y,z)&nbsp;[a]&nbsp;|&nbsp;a&nbsp;&amp;&amp;&nbsp;y&nbsp;=&nbsp;1<br>
+
+<br>
+
+</tt>both <tt>a</tt> and <tt>y</tt> will be evaluated by <tt>&amp;&amp;</tt> in the guard.<p>
+<table border=2 cellpadding=3>
+<tr><td>
+<div align=center><table border=2 cellpadding=3>
+<tr><td>
+<table >
+<tr><td align=center>(a)</td><td><tt>case&nbsp;</tt>e<tt>&nbsp;of&nbsp;{&nbsp;</tt>alts<tt>&nbsp;}&nbsp;</tt>=<tt>&nbsp;(\</tt>v<tt>&nbsp;-&gt;&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>alts<tt>&nbsp;})&nbsp;</tt><I>e</I></td></tr><tr><td align=center></td><td>where v is a completely new variable</td></tr><tr><td align=center>(b)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<sub>1</sub>  match<sub>1</sub><tt>;&nbsp;&nbsp;</tt>...<tt>&nbsp;;&nbsp;</tt>p<sub>n</sub>  match<sub>n</sub><tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<sub>1</sub>  match<sub>1</sub><tt>&nbsp;;</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;-&gt;&nbsp;</tt>...<tt>&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>p<sub>n</sub>  match<sub>n</sub></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;-&gt;&nbsp;error&nbsp;"No&nbsp;match"&nbsp;}</tt>...<tt>}</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;</tt>where each match<sub>i</sub> has the form:</td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;|&nbsp;</tt>g<sub>i,1</sub>  <tt>&nbsp;-&gt;&nbsp;</tt>e<sub>i,1</sub><tt>&nbsp;;&nbsp;</tt>...<tt>&nbsp;;&nbsp;|&nbsp;</tt>g<sub>i,m<sub>i</sub></sub><tt>&nbsp;-&gt;&nbsp;</tt>e<sub>i,m<sub>i</sub></sub><tt>&nbsp;where&nbsp;{&nbsp;</tt>decls<sub>i</sub><tt>&nbsp;}</tt></td></tr><tr><td align=center>
+(c)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<tt>&nbsp;|&nbsp;</tt>g<sub>1</sub><tt>&nbsp;-&gt;&nbsp;</tt>e<sub>1</sub><tt>&nbsp;;&nbsp;</tt>...</td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;</tt>g<sub>n</sub><tt>&nbsp;-&gt;&nbsp;</tt>e<sub>n</sub><tt>&nbsp;where&nbsp;{&nbsp;</tt>decls<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;case&nbsp;</tt>e'<tt>&nbsp;of</tt></td></tr><tr><td align=center></td><td>   <tt>&nbsp;&nbsp;{</tt>y<tt>&nbsp;-&gt;&nbsp;</tt>     (where <I>y</I> is a completely new variable)</td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>p<tt>&nbsp;-&gt;&nbsp;let&nbsp;{&nbsp;</tt>decls<tt>&nbsp;}&nbsp;in</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;</tt>g<sub>1</sub><tt>&nbsp;then&nbsp;</tt>e<sub>1</sub><tt>&nbsp;</tt>...<tt>&nbsp;else&nbsp;if&nbsp;</tt>g<sub>n</sub><tt>&nbsp;then&nbsp;</tt>e<sub>n</sub><tt>&nbsp;else&nbsp;</tt>y</td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;-&gt;&nbsp;</tt>y<tt>&nbsp;}}</tt></td></tr><tr><td align=center>
+(d)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;~</tt>p<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;(\</tt>x'<sub>1</sub> ... x'<sub>n</sub> <tt>-&gt;</tt> e<sub>1</sub> <tt>)&nbsp;(case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<tt>-&gt;</tt> 
+x<sub>1</sub><tt>&nbsp;})</tt> ... <tt>(case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<tt>&nbsp;-&gt;&nbsp;</tt>x<sub>n</sub><tt>})</tt></td></tr><tr><td align=center></td><td>where e<sub>1</sub> = e [x'<sub>1</sub>/x<sub>1</sub>, ..., x'<sub>n</sub>/x<sub>n</sub>]</td></tr><tr><td align=center>
+</td><td>x<sub>1</sub>, ..., x<sub>n</sub> are all the variables in p; x'<sub>1</sub>, ..., x'<sub>n</sub> are completely new variables</td></tr><tr><td align=center>
+(e)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>x<tt>@</tt>p<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<tt>&nbsp;-&gt;&nbsp;(&nbsp;\&nbsp;</tt>x<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>&nbsp;)&nbsp;</tt>v<tt>&nbsp;;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center>
+(f)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;_&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}&nbsp;</tt>=<tt>&nbsp;</tt>e</td></tr><tr><td align=center>
+</td></tr></table>
+
+</td></tr></table>
+</div>
+<div align=center> <h4>Figure 3</h4> </div>
+<div align=center><h3>Semantics of Case Expressions, Part 1</h3></div><a name="simple-case-expr-1"></a>
+
+</td></tr></table>
+<a name="case-semantics"></a><p>
+<a name="sect3.17.3"></a>
+<h4>3.17.3<tt>&nbsp;&nbsp;</tt>Formal Semantics of Pattern Matching</h4>
+<p>
+The semantics of all pattern matching constructs other than <tt>case
+</tt>expressions are defined by giving identities that relate those
+constructs to <tt>case</tt> expressions.  The semantics of
+<tt>case</tt> expressions themselves are in turn given as a series of
+identities, in Figures <a href="exps.html#simple-case-expr-1">3</a>--<a href="exps.html#simple-case-expr-2">4</a>. 
+Any implementation should behave so that these identities hold; it is 
+not expected that it will use them directly, since that 
+would generate rather inefficient code.
+  
+<table border=2 cellpadding=3>
+<tr><td>
+<div align=center><table border=2 cellpadding=3>
+<tr><td>
+<table >
+<tr><td align=center>(g)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>K p<sub>1</sub> ...p<sub>n</sub><tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>K x<sub>1</sub> ...x<sub>n</sub><tt>&nbsp;-&gt;&nbsp;case&nbsp;</tt>x<sub>1</sub><tt>&nbsp;of&nbsp;{</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>p<sub>1</sub><tt>&nbsp;-&gt;&nbsp;</tt>...<tt>&nbsp;case&nbsp;</tt>x<sub>n</sub><tt>&nbsp;of&nbsp;{&nbsp;</tt>p<sub>n</sub><tt>&nbsp;-&gt;&nbsp;</tt>e<tt>&nbsp;;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}&nbsp;</tt>...</td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center>
+</td><td>at least one of p<sub>1</sub>, ..., p<sub>n</sub> is not a variable; x<sub>1</sub>, ..., x<sub>n</sub> are new variables</td></tr><tr><td align=center>
+(h)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>k<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}&nbsp;</tt>=<tt>&nbsp;if&nbsp;(</tt>v<tt>==</tt>k<tt>)&nbsp;then&nbsp;</tt>e<tt>&nbsp;else&nbsp;</tt>e'</td></tr><tr><td align=center>
+(i)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>x<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}&nbsp;</tt>=<tt>&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>x<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>&nbsp;}</tt></td></tr><tr><td align=center>
+(j)</td><td><tt>case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>x<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>&nbsp;}&nbsp;</tt>=<tt>&nbsp;(&nbsp;\&nbsp;</tt>x<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>&nbsp;)&nbsp;</tt>v</td></tr><tr><td align=center>
+(k)</td><td><tt>case&nbsp;</tt>N v<tt>&nbsp;of&nbsp;{&nbsp;</tt>N<tt>&nbsp;</tt>p<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;case&nbsp;</tt>v<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>where N is a <tt>newtype</tt> constructor</td></tr><tr><td align=center>
+(l)</td><td><tt>case&nbsp;</tt>_|_<tt>&nbsp;of&nbsp;{&nbsp;</tt>N<tt>&nbsp;</tt>p<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}&nbsp;</tt>=<tt>&nbsp;case&nbsp;</tt>_|_<tt>&nbsp;of&nbsp;{&nbsp;</tt>p<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>where N is a <tt>newtype</tt> constructor</td></tr><tr><td align=center>
+(m)</td><td> <tt>case&nbsp;</tt> v <tt>&nbsp;of&nbsp;{&nbsp;</tt> K <tt>&nbsp;{</tt> f<sub>1</sub> <tt>&nbsp;=&nbsp;</tt> p<sub>1</sub> <tt>&nbsp;,&nbsp;</tt> f<sub>2</sub> <tt>&nbsp;=&nbsp;
+</tt>p<sub>2</sub> <tt>&nbsp;,&nbsp;</tt> ... <tt>}&nbsp;-&gt;&nbsp;</tt> e <tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt> e' <tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>= <tt>&nbsp;case&nbsp;</tt>e'<tt>&nbsp;of&nbsp;{</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;</tt>y<tt>&nbsp;-&gt;</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</tt> v <tt>&nbsp;of&nbsp;{&nbsp;</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt> K <tt>&nbsp;{&nbsp;</tt> f<sub>1</sub> <tt>&nbsp;=&nbsp;</tt> p<sub>1</sub> <tt>&nbsp;}&nbsp;-&gt;</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</tt> v <tt>&nbsp;of&nbsp;{</tt> K <tt>&nbsp;{</tt> f<sub>2</sub> <tt>&nbsp;=&nbsp;</tt> p<sub>2</sub> <tt>&nbsp;,&nbsp;
+</tt>... <tt>&nbsp;}&nbsp;-&gt;&nbsp;</tt> e <tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt> y <tt>&nbsp;};</tt></td></tr><tr><td align=center></td><td><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;-&gt;&nbsp;</tt> y <tt>&nbsp;}}</tt></td></tr><tr><td align=center></td><td>where f<sub>1</sub>, f<sub>2</sub>, ... are fields of constructor K; y
+is a new variable</td></tr><tr><td align=center>
+(n)</td><td><tt>case&nbsp;</tt> v <tt>&nbsp;of&nbsp;{&nbsp;</tt> K <tt>&nbsp;{</tt> f <tt>&nbsp;=&nbsp;</tt> p <tt>}&nbsp;-&gt;&nbsp;</tt> e <tt>;&nbsp;_&nbsp;-&gt;&nbsp;
+</tt>e' <tt>&nbsp;}</tt> </td></tr><tr><td align=center></td><td>=<tt>&nbsp;case&nbsp;</tt> v <tt>&nbsp;of&nbsp;{</tt></td></tr><tr><td align=center></td><td>   <tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> K p<sub>1</sub> ... p<sub>n</sub> <tt>&nbsp;-&gt;&nbsp;</tt> e <tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt> e' <tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>where p<sub>i</sub> is p if f labels the ith component of K,
+<tt>_</tt> otherwise</td></tr><tr><td align=center>(o)</td><td><tt>case&nbsp;</tt> v <tt>&nbsp;of&nbsp;{&nbsp;</tt> K <tt>&nbsp;{}&nbsp;-&gt;&nbsp;</tt> e <tt>;&nbsp;_&nbsp;-&gt;&nbsp;
+</tt>e' <tt>&nbsp;}</tt> </td></tr><tr><td align=center></td><td>=<tt>&nbsp;case&nbsp;</tt> v <tt>&nbsp;of&nbsp;{</tt></td></tr><tr><td align=center></td><td>   <tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> K <tt>_</tt> ... <tt>_&nbsp;-&gt;&nbsp;</tt> e <tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt> e' <tt>&nbsp;}</tt></td></tr><tr><td align=center>(p)</td><td><tt>case&nbsp;(</tt>K'<tt>&nbsp;</tt>e<sub>1</sub><tt>&nbsp;</tt>...<tt>&nbsp;</tt>e<sub>m</sub><tt>)&nbsp;of&nbsp;{&nbsp;</tt>K<tt>&nbsp;</tt>x<sub>1</sub><tt>&nbsp;</tt>...<tt>&nbsp;</tt>x<sub>n</sub><tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}&nbsp;</tt>=<tt>&nbsp;</tt>e'</td></tr><tr><td align=center></td><td>where K and K' are distinct <tt>data</tt> constructors of arity n and m, respectively</td></tr><tr><td align=center>
+(q)</td><td><tt>case&nbsp;(</tt>K<tt>&nbsp;</tt>e<sub>1</sub><tt>&nbsp;</tt>...<tt>&nbsp;</tt>e<sub>n</sub><tt>)&nbsp;of&nbsp;{&nbsp;</tt>K<tt>&nbsp;</tt>x<sub>1</sub><tt>&nbsp;</tt>...<tt>&nbsp;</tt>x<sub>n</sub><tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;&nbsp;case&nbsp;</tt>e<sub>1</sub><tt>&nbsp;of&nbsp;{&nbsp;</tt>x'<sub>1</sub><tt>&nbsp;-&gt;&nbsp;</tt>...<tt>&nbsp;&nbsp;case&nbsp;</tt>e<sub>n</sub><tt>&nbsp;of&nbsp;{&nbsp;</tt>x'<sub>n</sub><tt>&nbsp;-&gt;&nbsp;</tt>e[x'<sub>1</sub>/x<sub>1</sub> ...x'<sub>n</sub>/x<sub>n</sub>]<tt>&nbsp;}</tt>...<tt>}</tt></td></tr><tr><td align=center></td><td>where K is a constructor of arity n; x'<sub>1</sub> ...x'<sub>n</sub> are completely new variables</td></tr><tr><td align=center>
+(r)</td><td><tt>case&nbsp;</tt>e<sub>0</sub><tt>&nbsp;of&nbsp;{&nbsp;</tt>x<tt>+</tt>k<tt>&nbsp;-&gt;&nbsp;</tt>e<tt>;&nbsp;_&nbsp;-&gt;&nbsp;</tt>e'<tt>&nbsp;}</tt></td></tr><tr><td align=center></td><td>=<tt>&nbsp;if&nbsp;</tt>e<sub>0</sub><tt>&nbsp;&gt;=&nbsp;</tt>k<tt>&nbsp;then&nbsp;let&nbsp;{</tt>x'<tt>&nbsp;=&nbsp;</tt>e<sub>0</sub><tt>-</tt>k<tt>}&nbsp;in&nbsp;</tt>e[x'/x]<tt>&nbsp;else&nbsp;</tt>e'<tt>&nbsp;</tt>(x' is a new variable)</td></tr></table>
+
+</td></tr></table>
+</div>
+<div align=center> <h4>Figure 4</h4> </div>
+<div align=center><h3>Semantics of Case Expressions, Part 2</h3></div><a name="simple-case-expr-2"></a>
+
+</td></tr></table>
+<p>
+In Figures <a href="exps.html#simple-case-expr-1">3</a>--<a href="exps.html#simple-case-expr-2">4</a>:
+<I>e</I>, <I>e'</I> and <I>e</I><sub><I>i</I></sub> are expressions; 
+<I>g</I> and <I>g</I><sub><I>i</I></sub> are boolean-valued expressions; 
+<I>p</I> and <I>p</I><sub><I>i</I></sub> are patterns; 
+<I>v</I>, <I>x</I>, and <I>x</I><sub><I>i</I></sub> are variables; 
+<I>K</I> and <I>K'</I> are algebraic datatype (<tt>data</tt>) constructors (including
+tuple constructors);  <I>N</I> is a <tt>newtype</tt> constructor; 
+and <I>k</I> is a character, string, or numeric literal.<p>
+Rule (b) matches a general source-language
+<tt>case</tt> expression, regardless of whether it actually includes
+guards---if no guards are written, then <tt>True</tt> is substituted for the guards <I>g</I><sub><I>i,j</I></sub>
+in the <I>match</I><sub><I>i</I></sub> forms.
+Subsequent identities manipulate the resulting <tt>case</tt> expression into simpler
+and simpler forms.<p>
+Rule (h) in Figure <a href="exps.html#simple-case-expr-2">4</a> involves the
+overloaded operator <tt>==</tt>; it is this rule that defines the
+meaning of pattern matching against overloaded constants.<p>
+These identities all preserve the static semantics.  Rules (d), (e), and (j)
+use a lambda rather than a <tt>let</tt>; this indicates that variables bound
+by <tt>case</tt> are monomorphically typed (Section <a href="decls.html#type-semantics">4.1.4</a>).<p>
+<hr><i>The Haskell 98 Report</i><br><a href="index.html">top</a> | <a href="lexemes.html">back</a> | <a href="decls.html">next</a> | <a href="index98.html">contents</a> | <a href="prelude-index.html">function index</a> <br><font size=2>1 February, 1999</font>
+<p>

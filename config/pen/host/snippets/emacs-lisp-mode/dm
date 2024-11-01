@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: define-macro
+# group: define
+# key: dm
+# --
+(defmacro my/new-macro (&rest body)
+""
+`(progn ,@body))

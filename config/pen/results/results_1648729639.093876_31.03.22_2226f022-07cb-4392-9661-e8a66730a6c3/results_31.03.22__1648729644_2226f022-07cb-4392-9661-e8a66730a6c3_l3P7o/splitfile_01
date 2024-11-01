@@ -1,0 +1,1 @@
+- Simon Peyton Jones: execState gets the current state, runs a function and then returns the result.

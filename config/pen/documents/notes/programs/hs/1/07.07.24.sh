@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "1" "Corinthians" "13:10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Corinthians" "16:14" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Corinthians" "10:31" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "1" "Corinthians" "16:14" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "1" "Corinthians" "10:27" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Timothy" "2:4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "Corinthians" "7:30-31" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "1" "John" "2:15-17" "#" "<==" "zsh"

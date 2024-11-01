@@ -1,0 +1,5 @@
+, then it's a file
+    (true (readdir-list-files-base m [path] []))
+
+    ;; else it's a directory
+    (true (readdir-list-files-base m [path

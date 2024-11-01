@@ -1,0 +1,90 @@
+HTTP/1.1 200 OK
+Date: Wed, 14 Aug 2024 06:26:47 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Last-Modified: Tue, 06 Aug 2024 00:00:12 GMT
+ETag: "154b-61ef87a427a73-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 2317
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>nfdn: Contextual Interfaces in Casual Calc</title>
+  <link rel='stylesheet' type='text/css' media="only screen and (max-device-width:480px)" href='./theme/css/small-device.css' />
+  <link rel='stylesheet' type='text/css' media="only screen and (min-device-width:481px)" href='./theme/css/desktop.css' />
+  <link rel='stylesheet' type='text/css' href='./theme/css/main.css' />
+  <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://yummymelon.com/devnull/contextual-interfaces-in-casual-calc.html" />
+  <meta property="og:title" content="Contextual Interfaces in Casual Calc" />
+  <meta property="og:description" content="A compelling idea in the Transient UI package is the ability to craft interfaces where commands specific to a context can be discovered and used. Such contextual interfaces enable a user to..." />
+  <meta property="og:image" content="http://yummymelon.com/devnull/images/opengraph-default.jpg" />
+  </head>
+<body>
+<h1 class='siteTitle'><a href=".">notes from /dev/null</a></h1>
+<p>by Charles Choi 최민수</p>
+<hr/>
+<body>
+<div class='base'>
+<div class='main'>
+<h1 class='articleTitle'>Contextual Interfaces in Casual Calc</h1>
+<p>05 Aug 2024&nbsp;&nbsp;Charles Choi</p>
+
+
+<div class='articleBase'>
+<p>A compelling idea in the <a href="https://github.com/magit/transient">Transient</a> UI package is the ability to craft interfaces where commands specific to a context can be discovered and used. Such <em>contextual interfaces</em> enable a user to easily orchestrate and repeat such commands, particularly when the interface is raised and persisted. This allows the user to better focus on the task at hand.</p>
+<p>The most recent update to Casual Calc <a href="https://github.com/kickingvegas/casual-calc/releases/tag/1.11.0">v1.11.0</a> has made changes to be more contextual. In particular:</p>
+<ol>
+<li>Menus stay raised until explicitly dismissed.</li>
+<li>Basic calculator operation is enabled when a menu is raised.</li>
+</ol>
+<p>These UI changes have been applied to nearly all the menus in Casual Calc. To facilitate basic calculator operation algebraic entry is now supported via the <code>'</code> binding. Arithmetic operators (add, subtract, multiply, divide, modulo) are made available on menus as well.</p>
+<p>Shown below is a screenshot of the binary functions menu to illustrate a contextual interface at work. Commands that are common to working with binary and digital radix represented values are provided for and can be repeated or orchestrated with each other.</p>
+<p><img src='./images/contextual-interfaces-in-calc/calc-binary-menu.png' width='800' /></p>
+<p>In the latest release of <a href="https://github.com/kickingvegas/casual-calc/">Casual Calc</a>, all function and arithmetic sections offer their own contextual behavior, each section being akin to a “mini-app” with respect to a functional area of interest such as trigonometry, logarithms, rounding, time, random, conversions, and many others.</p>
+<h1>Closing Thoughts</h1>
+<p>Although historically the primary interface for Emacs Calc has been a prompt, it is in many ways an unnatural one. Real calculators offer dedicated buttons for commands. Particularly for the HP-28S calculator (a primary influence on the design of Emacs Calc), it offered soft-key buttons to map to different commands based on a mode. Persisted contextual interfaces in Casual Calc brings it closer to that modal push-button experience of the HP-28S.</p>
+<p>If you already use Casual Calc, the update is available now. For those new to it, you can install it from <a href="https://melpa.org/#/casual-calc">MELPA</a>. Regardless, let me know what you <a href="https://github.com/kickingvegas/casual-calc/discussions">think of it</a>.</p>
+<h1>Links</h1>
+<ul>
+<li><a href="./mathing-in-emacs-with-casual.html">Mathing in Emacs with Casual (Calc)</a></li>
+<li><a href="./announcing-casual-an-opinionated-porcelain-for-emacs-calc.html">Announcing Casual (Calc) - An opinionated porcelain for Emacs Calc</a></li>
+</ul>
+<p align='right'>
+ <a href='tag/emacs.html'>emacs</a>
+</p>
+ 
+</div>
+
+<p/>
+<div id="textbox">
+<p class="alignright"><a href="announcing-casual-bookmarks.html">Announcing Casual Bookmarks&nbsp;&rarr;</a></p>
+</div>
+<div style="clear: both;"></div>
+
+</div>
+</div>
+
+<div style='height: 0.5in;'>&nbsp;
+</div>
+<hr/>
+
+<p align='center'>
+  <a href="./pages/about.html">About</a>
+  • <a href="https://sfba.social/@kickingvegas">Mastodon</a>
+  • <a href="https://instagram.com/kickingvegas">Instagram</a>
+  • <a href="https://github.com/kickingvegas">GitHub</a>
+
+
+<p align='center'><a href="./tags.html">Feeds &amp; Tags</a> • <a href="http://yummymelon.com/captee" title='Captee is an app that makes marking up a link (both URL and title) a one-step operation straight from the macOS Share menu.'>Get Captee for macOS</a> • <a href="https://buymeacoffee.com/kickingvegas"><img src="./theme/images/icons/buymecoffee.png" height="30pt" style="vertical-align: -7px;"/></a></p>
+
+<p class='copyright'>&copy; 2009-2024 Charles Y. Choi</p>
+<p style='font-size:7pt; text-color: #333333;' align='center'>Powered by <a href='http://getpelican.com'>Pelican</a></p>
+
+</body>
+</html>

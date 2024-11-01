@@ -1,0 +1,13 @@
+
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+'''
+
+# 创建soup对象
+soup = BeautifulSoup(html_doc, 'html.parser')
+
+# 输出soup对象的内容
+print("---------------输出soup对象的内容(soup.__

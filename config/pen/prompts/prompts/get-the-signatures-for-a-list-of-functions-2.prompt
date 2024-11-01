@@ -1,0 +1,36 @@
+task: "Get the signatures for a list of functions"
+doc: "Given a list of functions, get their signatures"
+tags: code help documentation
+prompt-version: 1
+prompt: |+
+  This is a table of standard functions and their full signatures (including argument types) in <language>:
+  | Functions: | <function list>
+  | Signatures (function names with arguments): |
+engine: "OpenAI Codex"
+temperature: 0.1
+top-p: 1.0
+cache: on
+n-collate: 1
+n-completions: 3
+stop-sequences:
+- "\n"
+vars:
+- "language"
+- "function list"
+var-defaults:
+- "(pen-detect-language-ask)"
+preprocessors:
+- cat
+- pen-str join " | "
+examples:
+- "haskell"
+- "fromIntegral\nfromRational\nfromReal\nfromRealFrac"
+# delete the last
+postprocessor: sed "s/ | /\\n/g" | sed "s/^\s*//"
+# The 'end' split patterns are used because
+# we want it to run 'after' the postprocessor
+end-split-patterns:
+- "\n"
+filter: no
+completion: on
+insertion: on

@@ -1,0 +1,598 @@
+HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2024 07:08:04 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding,Cookie
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: private, must-revalidate, max-age=0
+Content-Language: en
+TT-Server: t=1711955284320246 D=34694
+Upgrade: h2
+Connection: Upgrade, Keep-Alive
+Last-Modified: Fri, 26 Jan 2024 20:14:52 GMT
+Content-Length: 10752
+Keep-Alive: timeout=10, max=20
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>wcrtomb, wcrtomb_s - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit" />
+<link rel="edit" title="Edit" href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/string/multibyte/wcrtomb","wgTitle":"c/string/multibyte/wcrtomb","wgCurRevisionId":101816,"wgArticleId":6107,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/string/multibyte/wcrtomb","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_string_multibyte_wcrtomb skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-login"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Fstring%2Fmultibyte%2Fwcrtomb" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></span></div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/w/c/string/multibyte/wcrtomb"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk"><span><a href="/w/Talk:c/string/multibyte/wcrtomb"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/w/c/string/multibyte/wcrtomb" >View</a></span></li>
+					<li id="ca-edit"><span><a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+                <h1 id="firstHeading" class="firstHeading">wcrtomb, wcrtomb_s</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="/w/c" title="c">c</a>&lrm; | <a href="/w/c/string" title="c/string">string</a>&lrm; | <a href="/w/c/string/multibyte" title="c/string/multibyte">multibyte</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/language" title="c/language"> Language</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/header" title="c/header"> Headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/types" title="c/types"> Type support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/program" title="c/program"> Program utilities</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/variadic" title="c/variadic"> Variadic function support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/error" title="c/error"> Error handling</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/memory" title="c/memory"> Dynamic memory management</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/string" title="c/string"> Strings library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/algorithm" title="c/algorithm"> Algorithms</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/numeric" title="c/numeric"> Numerics</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/chrono" title="c/chrono"> Date and time utilities</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/io" title="c/io"> Input/output support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/locale" title="c/locale"> Localization support</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/thread" title="c/thread"> Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/experimental" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/symbol_index" title="c/symbol index"> Symbol index</a> </td></tr>
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c/string" title="c/string"> Strings library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/string/byte" title="c/string/byte"> Byte strings</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/string/multibyte" title="c/string/multibyte"> Multibyte strings</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="/w/c/string/wide" title="c/string/wide"> Wide strings</a> </td></tr>
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c/string/multibyte" title="c/string/multibyte"> Null-terminated multibyte strings</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">Wide/multibyte conversions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbsinit" title="c/string/multibyte/mbsinit"><span class="t-lines"><span>mbsinit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbstowcs" title="c/string/multibyte/mbstowcs"><span class="t-lines"><span>mbstowcs</span><span>mbstowcs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/btowc" title="c/string/multibyte/btowc"><span class="t-lines"><span>btowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbrtowc" title="c/string/multibyte/mbrtowc"><span class="t-lines"><span>mbrtowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbsrtowcs" title="c/string/multibyte/mbsrtowcs"><span class="t-lines"><span>mbsrtowcs</span><span>mbsrtowcs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span>&#160;&#160;&#160;&#160;</span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbrtoc8" title="c/string/multibyte/mbrtoc8"><span class="t-lines"><span>mbrtoc8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/c8rtomb" title="c/string/multibyte/c8rtomb"><span class="t-lines"><span>c8rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbrtoc16" title="c/string/multibyte/mbrtoc16"><span class="t-lines"><span>mbrtoc16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/c16rtomb" title="c/string/multibyte/c16rtomb"><span class="t-lines"><span>c16rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/c32rtomb" title="c/string/multibyte/c32rtomb"><span class="t-lines"><span>c32rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbrtoc32" title="c/string/multibyte/mbrtoc32"><span class="t-lines"><span>mbrtoc32</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mblen" title="c/string/multibyte/mblen"><span class="t-lines"><span>mblen</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbtowc" title="c/string/multibyte/mbtowc"><span class="t-lines"><span>mbtowc</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/wctomb" title="c/string/multibyte/wctomb"><span class="t-lines"><span>wctomb</span><span>wctomb_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/wcstombs" title="c/string/multibyte/wcstombs"><span class="t-lines"><span>wcstombs</span><span>wcstombs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/wctob" title="c/string/multibyte/wctob"><span class="t-lines"><span>wctob</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>wcrtomb</span><span>wcrtomb_s</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/wcsrtombs" title="c/string/multibyte/wcsrtombs"><span class="t-lines"><span>wcsrtombs</span><span>wcsrtombs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbrlen" title="c/string/multibyte/mbrlen"><span class="t-lines"><span>mbrlen</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Types</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="/w/c/string/multibyte/mbstate_t" title="c/string/multibyte/mbstate t"><span class="t-lines"><span>mbstate_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code>&lt;wchar.h&gt;</code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
+<td></td>
+<td rowspan="142">(1)</td>
+<td></td>
+</tr>
+<tr class="t-dcl t-since-c95">
+<td> <div><span class="mw-geshi c source-c"><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> wcrtomb<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>s, <span class="kw4">wchar_t</span> wc, <a href="http://en.cppreference.com/w/c/string/multibyte/mbstate_t"><span class="kw591">mbstate_t</span></a> <span class="sy2">*</span>ps<span class="br0">&#41;</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-c95">(since C95)</span> </td>
+</tr>
+<tr class="t-dcl t-since-c99">
+<td> <div><span class="mw-geshi c source-c"><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> wcrtomb<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> s, <span class="kw4">wchar_t</span> wc, <a href="http://en.cppreference.com/w/c/string/multibyte/mbstate_t"><span class="kw591">mbstate_t</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> ps<span class="br0">&#41;</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
+</tr>
+</tbody><tbody>
+<tr class="t-dcl t-since-c11">
+<td> <div><span class="mw-geshi c source-c">errno_t wcrtomb_s<span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> retval, <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> s, rsize_t ssz,<br />
+&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; <span class="kw4">wchar_t</span> wc, <a href="http://en.cppreference.com/w/c/string/multibyte/mbstate_t"><span class="kw591">mbstate_t</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> ps<span class="br0">&#41;</span><span class="sy4">;</span></span></div></td>
+<td> (2) </td>
+<td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>Converts a wide character to its narrow multibyte representation.
+</p>
+<div class="t-li1"><span class="t-li">1)</span> If <code>s</code> is not a null pointer, the function determines the number of bytes necessary to store the multibyte character representation of <code>wc</code> (including any shift sequences, and taking into account the current multibyte conversion state <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span>), and stores the multibyte character representation in the character array whose first element is pointed to by <code>s</code>,  updating <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> as necessary. At most <span class="t-c"><span class="mw-geshi c source-c">MB_CUR_MAX</span></span> bytes can be written by this function.</div>
+<div class="t-li1"><span class="t-li"></span> If <code>s</code> is a null pointer, the call is equivalent to <span class="t-c"><span class="mw-geshi c source-c">wcrtomb<span class="br0">&#40;</span>buf, L<span class="st0">'<span class="es5">\0</span>'</span>, ps<span class="br0">&#41;</span></span></span> for some internal buffer <code>buf</code>.</div>
+<div class="t-li1"><span class="t-li"></span> If wc is the null wide character <span class="t-c"><span class="mw-geshi c source-c">L<span class="st0">'<span class="es5">\0</span>'</span></span></span>, a null byte is stored, preceded by any shift sequence necessary to restore the initial shift state and the conversion state parameter <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> is updated to represent the initial shift state.</div>
+<div class="t-li1"><span class="t-li"></span> If the environment macro <span class="t-c"><span class="mw-geshi c source-c">__STDC_ISO_10646__</span></span> is defined, the values of type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span></span></span> are the same as the short identifiers of the characters in the Unicode required set (typically UTF-32 encoding); otherwise, it is implementation-defined. In any case, the multibyte character encoding used by this function is specified by the currently active C locale.</div>
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that</div>
+<div class="t-li1"><span class="t-li"></span> if <code>s</code> is a null pointer, the call is equivalent to <span class="t-c"><span class="mw-geshi c source-c">wcrtomb_s<span class="br0">&#40;</span><span class="sy3">&amp;</span>retval, buf, <span class="kw4">sizeof</span> buf, L<span class="st0">'<span class="es5">\0</span>'</span>, ps<span class="br0">&#41;</span></span></span> with internal variables <code>retval</code> and <code>buf</code> (whose size is greater than <span class="t-lc">MB_CUR_MAX</span>)</div>
+<div class="t-li1"><span class="t-li"></span> the result is returned in the out-parameter <code>retval</code></div>
+<div class="t-li1"><span class="t-li"></span> the following errors are detected at runtime and call the currently installed <a href="/w/c/error/set_constraint_handler_s" title="c/error/set constraint handler s">constraint handler</a> function:
+<dl><dd><ul><li> <code>retval</code> or <code>ps</code> is a null pointer.
+</li><li> <code>ssz</code> is zero or greater than <span class="t-lc">RSIZE_MAX</span> (unless <code>s</code> is null)
+</li><li> <code>ssz</code> is less than the number of bytes that would be written (unless <code>s</code> is null)
+</li><li> <code>s</code> is a null pointer but <code>ssz</code> is not zero 
+</li></ul>
+</dd><dd>As with all bounds-checked functions, <code>wcrtomb_s</code>  only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="/w/c/string/wide" title="c/string/wide"><tt>&lt;wchar.h&gt;</tt></a>.</div>
+</dd></dl>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></table>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td>  s
+</td>
+<td> -
+</td>
+<td>  pointer to narrow character array where the multibyte character will be stored
+</td></tr>
+<tr class="t-par">
+<td>  wc
+</td>
+<td> -
+</td>
+<td>  the wide character to convert
+</td></tr>
+<tr class="t-par">
+<td>  ps
+</td>
+<td> -
+</td>
+<td>  pointer to the conversion state object used when interpreting the multibyte string
+</td></tr>
+<tr class="t-par">
+<td>  ssz
+</td>
+<td> -
+</td>
+<td>  max number of bytes to write (the size of the buffer <code>s</code>)
+</td></tr>
+<tr class="t-par">
+<td>  retval
+</td>
+<td> -
+</td>
+<td>  pointer to an out-parameter where the result (number of bytes in the multibyte string including any shift sequences) will be stored
+</td></tr></table>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
+<div class="t-li1"><span class="t-li">1)</span> On success, returns the number of bytes (including any shift sequences) written to the character array whose first element is pointed to by <code>s</code>. </div>
+<div class="t-li1"><span class="t-li"></span> On failure (if <span class="t-c"><span class="mw-geshi c source-c">wc</span></span> is not a valid wide character), returns <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a><span class="br0">&#41;</span><span class="sy2">-</span><span class="nu0">1</span></span></span>, stores <span class="t-lc"><a href="/w/c/error/errno_macros" title="c/error/errno macros">EILSEQ</a></span> in <span class="t-lc"><a href="/w/c/error/errno" title="c/error/errno">errno</a></span>, and leaves <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> in unspecified state.</div>
+<div class="t-li1"><span class="t-li">2)</span> Returns zero on success and non-zero on failure, in which case, <span class="t-c"><span class="mw-geshi c source-c">s<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span></span></span> is set to <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span> (unless <code>s</code> is null or <code>ssz</code> is zero or greater than <span class="t-lc">RSIZE_MAX</span>) and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span> is set to <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a><span class="br0">&#41;</span><span class="sy2">-</span><span class="nu0">1</span></span></span> (unless <code>retval</code> is null)</div>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit&amp;section=3" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;locale.h&gt;</span>
+<span class="co2">#include &lt;string.h&gt;</span>
+<span class="co2">#include &lt;wchar.h&gt;</span>
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+&#160;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="http://en.cppreference.com/w/c/locale/setlocale"><span class="kw900">setlocale</span></a><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/locale/LC_categories"><span class="kw903">LC_ALL</span></a>, <span class="st0">&quot;en_US.utf8&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/string/multibyte/mbstate_t"><span class="kw591">mbstate_t</span></a> state<span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/string/byte/memset"><span class="kw571">memset</span></a><span class="br0">&#40;</span><span class="sy3">&amp;</span>state, <span class="nu0">0</span>, <span class="kw4">sizeof</span> state<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">wchar_t</span> in<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> L<span class="st0">&quot;zß水🍌&quot;</span><span class="sy4">;</span> <span class="co1">// or &quot;z\u00df\u6c34\U0001F34C&quot;</span>
+    <a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> in_sz <span class="sy1">=</span> <span class="kw4">sizeof</span> in <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>in<span class="sy4">;</span>
+&#160;
+    <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw850">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;Processing&#160;%zu wchar_t units: [ &quot;</span>, in_sz<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> in_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span> <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw850">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;%#x &quot;</span>, <span class="br0">&#40;</span><span class="kw4">unsigned</span> <span class="kw4">int</span><span class="br0">&#41;</span>in<span class="br0">&#91;</span>n<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/io/puts"><span class="kw835">puts</span></a><span class="br0">&#40;</span><span class="st0">&quot;]&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="kw4">char</span> out<span class="br0">&#91;</span>MB_CUR_MAX <span class="sy2">*</span> in_sz<span class="br0">&#93;</span><span class="sy4">;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span>p <span class="sy1">=</span> out<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> in_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw4">int</span> rc <span class="sy1">=</span> wcrtomb<span class="br0">&#40;</span>p, in<span class="br0">&#91;</span>n<span class="br0">&#93;</span>, <span class="sy3">&amp;</span>state<span class="br0">&#41;</span><span class="sy4">;</span> 
+        <span class="kw1">if</span><span class="br0">&#40;</span>rc <span class="sy1">==</span> <span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="kw1">break</span><span class="sy4">;</span>
+        p <span class="sy2">+</span><span class="sy1">=</span> rc<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> out_sz <span class="sy1">=</span> p <span class="sy2">-</span> out<span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw850">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;into&#160;%zu UTF-8 code units: [ &quot;</span>, out_sz<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span><a href="http://en.cppreference.com/w/c/types/size_t"><span class="kw100">size_t</span></a> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> x <span class="sy1">&lt;</span> out_sz<span class="sy4">;</span> <span class="sy2">++</span>x<span class="br0">&#41;</span> <a href="http://en.cppreference.com/w/c/io/fprintf"><span class="kw850">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;%#x &quot;</span>, <span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">&#41;</span>out<span class="br0">&#91;</span>x<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="http://en.cppreference.com/w/c/io/puts"><span class="kw835">puts</span></a><span class="br0">&#40;</span><span class="st0">&quot;]&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Processing 5 wchar_t units: [ 0x7a 0xdf 0x6c34 0x1f34c 0 ]
+into 11 UTF-8 code units: [ 0x7a 0xc3 0x9f 0xe6 0xb0 0xb4 0xf0 0x9f 0x8d 0x8c 0 ]</pre></div></div> 
+</div>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit&amp;section=4" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-11">
+<ul><li> C11 standard (ISO/IEC 9899:2011): 
+</li></ul>
+<dl><dd><ul><li> 7.29.6.3.3 The wcrtomb function (p: 444)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> K.3.9.3.1.1 The wcrtomb_s function (p: 647-648)
+</li></ul>
+</dd></dl>
+<div class="t-ref-std-c99">
+<ul><li> C99 standard (ISO/IEC 9899:1999): 
+</li></ul>
+<dl><dd><ul><li> 7.24.6.3.3 The wcrtomb function (p: 390)
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="/w/c/string/multibyte/wctomb" title="c/string/multibyte/wctomb"> <span class="t-lines"><span>wctomb</span><span>wctomb_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   converts a wide character to its multibyte representation <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_wctomb&amp;action=edit">&#91;edit&#93;</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="/w/c/string/multibyte/mbrtowc" title="c/string/multibyte/mbrtowc"> <span class="t-lines"><span>mbrtowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   converts the next multibyte character to wide character, given state <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbrtowc&amp;action=edit">&#91;edit&#93;</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="/w/cpp/string/multibyte/wcrtomb" title="cpp/string/multibyte/wcrtomb">C++ documentation</a></span> for <span class="t-dsc-see-tt"><span>wcrtomb</span></span></div>
+</td></tr>
+
+</table></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 3668/1000000
+Preprocessor generated node count: 10516/1000000
+Post‐expand include size: 86394/2097152 bytes
+Template argument size: 18325/2097152 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6107-0!*!0!!en!*!* and timestamp 20240126201452 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;oldid=101816">https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;oldid=101816</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:WhatLinksHere/c/string/multibyte/wcrtomb" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/w/Special:RecentChangesLinked/c/string/multibyte/wcrtomb" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;oldid=101816" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/mwiki/index.php?title=c/string/multibyte/wcrtomb&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="tr" hreflang="tr">Türkçe</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/c/string/multibyte/wcrtomb" title="c/string/multibyte/wcrtomb" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 30 April 2018, at 15:44.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 23,083 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.812 secs. -->
+	</body>
+<!-- Cached 20240126201452 -->
+</html>

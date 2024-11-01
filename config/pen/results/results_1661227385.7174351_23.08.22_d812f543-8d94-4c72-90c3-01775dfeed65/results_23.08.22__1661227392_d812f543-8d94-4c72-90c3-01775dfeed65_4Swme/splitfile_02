@@ -1,0 +1,6 @@
+"Bell state" is a quantum state of two qubits.
+
+It is a superposition of two basis states:
+|00> + |11>
+
+The state is not strong enough to be used in a real quantum computer.

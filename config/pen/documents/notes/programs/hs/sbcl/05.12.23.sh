@@ -1,0 +1,3 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "2" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "2 Thes" "#" "<==" "sbcl-ql"
+cd /root/.pen/documents/notes/ws;  "sbcl" "--load" "/root/.roswell/lisp/quicklisp/setup.lisp" "--script" "/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/canonicalise-bible-book-title.cl" "Matt \"5:14,16\"" "#" "<==" "sbcl-ql"

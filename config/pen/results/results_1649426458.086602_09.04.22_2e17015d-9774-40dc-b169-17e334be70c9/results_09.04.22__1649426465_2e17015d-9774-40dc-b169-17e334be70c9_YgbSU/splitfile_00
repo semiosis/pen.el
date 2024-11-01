@@ -1,0 +1,7 @@
+
+:top
+i = i + 1
+i = i mod 5
+show i
+=> 0
+loop from top

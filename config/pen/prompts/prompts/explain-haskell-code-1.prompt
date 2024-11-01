@@ -1,0 +1,51 @@
+task: "explain haskell code"
+doc: "Given some haskell code, explain it"
+tags: code explain
+prompt-version: 1
+prompt: |+
+    Haskell explanations.
+
+    <delim>Code example 1
+    data Area = Circle Float Float Float
+    surface :: Area -> Float
+    surface (Circle _ _ r) = pi * r ^ 2
+    main = print (surface $ Circle 10 20 10 )
+    <delim>
+
+    <delim>Explanation of 1
+    We have created a new type called Area. Next, we are using this type to calculate the area of a circle. "surface" is a function that takes Area as an input and produces Float as the output.
+
+    Keep in mind that "data" is a keyword here and all user-defined types in Haskell always start with a capital letter.
+    <delim>
+
+    Here is some new code:
+
+    <delim>Code example 2
+    <haskell code>
+    <delim>
+
+    <delim>Explanation of 2
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: prompt-length
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "haskell code"
+examples:
+- |+
+    fact :: Integer -> Integer 
+    fact n | n == 0 = 1 
+           | n /= 0 = n * fact (n-1) 
+    main = do 
+       putStrLn "The factorial of 5 is:"  
+       print (fact 5) 
+info: on
+postprocessor: chomp | pen-str remove-starting-and-trailing-whitespace | pen-pretty-paragraph
+external-related:
+- https://www.tutorialspoint.com/haskell/haskell_functions.htm
+suggest-p:
+- "(major-mode-p 'haskell-mode)"
+- "(pen-selected-p)"

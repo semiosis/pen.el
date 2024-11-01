@@ -1,0 +1,11 @@
+
+
+
+:- pred write(str) is det.
+
+write(X) :- format(X, []),nl.
+
+
+:- pred format(atom, [atom, ...]) is det.
+
+format(N, X

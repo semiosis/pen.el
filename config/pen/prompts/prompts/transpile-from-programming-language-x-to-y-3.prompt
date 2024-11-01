@@ -1,0 +1,41 @@
+task: '#("Transpile from programming language X to Y" 0 41 (engine "OpenAI Davinci" language "English" topic "Programming"))'
+tags: transpilation code
+prompt-version: 7
+prompt: |+
+    <delim>
+    Haskell: zip (map show [1,5,9]) ["a","b","c"]
+    Clojure: (println (map vector '(1 2 3) '(4 5 6)))
+    <delim>
+    Clojure: (clojure.string/upper-case "MiXeD cAsE")
+    Haskell: map toUpper "MiXeD cAsE"
+    <delim>
+    <from language>: <code>
+    <to language>:
+engine: OpenAI Davinci
+temperature: 0.3
+max-generated-tokens: 400
+top-p: 1
+stop-sequences:
+- "<delim>"
+stop-patterns:
+- "^[a-zA-Z]+:"
+vars:
+- code
+- from language
+- to language
+preprocessors:
+- pen-str onelineify
+- cat
+- cat
+# Use s-preserve-trailing-whitespace within pen.el
+# Chomp is needed because of stop-patterns
+postprocessor: pen-str unonelineify | chomp
+examples:
+- min 1 2
+- Haskell
+- Clojure
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+- "(read-string-hist \"Pen to programming language: \")"
+filter: on

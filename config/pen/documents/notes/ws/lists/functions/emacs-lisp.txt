@@ -1,0 +1,23 @@
+(defun add-to-fuzzy-org (&optional sym lst)
+  "Adds the symbol under cursor to the fuzzy list selected"
+  (interactive (list
+                (if (selected)
+                    (selection)
+                  ;; (sed-s "^\\*/" (str (thing-at-point 'sexp)))
+                  (esed "^\\*" "" (str (thing-at-point 'sexp))))
+                (cond
+                 ((major-mode-p 'prog-mode)
+                  (concat "functions/" (detect-language))
+                  ;; (concat "$HOME/notes/ws/lists/functions/" (detect-language) ".org")
+                  )
+                 (t (fz
+                     ;; (b find $HOME/notes/ws/lists -type f | path-lasttwo | sed "s/\\..*//")
+                     (snc (concat (cmd "find" "$HOME/notes/ws/lists" "-type" "f" "-name" "*.org") "| path-lasttwo | sed \"s/\\\\..*//\""))
+                     nil
+                     "add-to-fuzzy-list: ")))))
+
+  (let ((fp (umn (concat "$HOME/notes/ws/lists/" lst ".txt"))))
+    (if (and sym lst)
+        ;; (eval `(bp append-uniq ,fp ,sym))
+        (snc (cmd "append-uniq" fp) sym))
+    (e fp)))

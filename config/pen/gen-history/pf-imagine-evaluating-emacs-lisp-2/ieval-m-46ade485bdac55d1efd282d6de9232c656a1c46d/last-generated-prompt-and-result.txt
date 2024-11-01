@@ -1,0 +1,3 @@
+;; Run function first-book-of
+(message (eval '(first-book-of "bible")))
+--> "Genesis"

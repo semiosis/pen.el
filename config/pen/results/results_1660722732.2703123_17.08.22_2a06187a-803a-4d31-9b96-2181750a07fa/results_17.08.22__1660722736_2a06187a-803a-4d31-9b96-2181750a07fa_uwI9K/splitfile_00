@@ -1,0 +1,7 @@
+
+        (setq gen (eval
+                   `(lambda (initial n)
+                      (pen-str2list
+                       (pen-snc
+                        (concat
+                         (pen-cmd ,gen initial)

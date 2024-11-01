@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "README.tex" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "faith-and-judgement.tex" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "faith-and-judgement.tex" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "faith-and-judgement.tex" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "faith-and-judgement.tex" "#" "<==" "zsh"

@@ -1,0 +1,75 @@
+task: "explain a file"
+doc: "Explain a file"
+tags: code filesystem
+demo: "https://mullikine.github.io/posts/demo-of-explain-a-file-4-prompt-explain-any-file/"
+prompt-version: 2
+prompt: |+
+  $ ls | head -n 10
+  <ls here output>
+
+  $ ls ..
+  <ls parent dir output>
+
+  $ cat <q:path> <<EOD
+  <contents>
+  EOD
+
+  $ cat "README for <path>.md" <<EOD
+  <:pp># <q:path>
+  ## Explanation of code
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 300
+top-p: 1.0
+stop-sequences:
+- EOD
+cache: on
+vars:
+- "contents"
+- "path"
+- "ls here output"
+- "ls parent dir output"
+var-defaults:
+- "(buffer-string)"
+- "(pen-f-basename (get-path))"
+- "(pen-snc \"ls | head -n 10\")"
+- "(pen-snc \"ls .. | head -n 10\")"
+examples:
+- |-
+    // SPDX-License-Identifier: MIT
+    pragma solidity >= 0.4.22 < 0.8.5;
+    
+    contract Migrations {
+      address public owner = msg.sender;
+      uint public last_completed_migration;
+    
+      modifier restricted() {
+        require(msg.sender == owner,
+                "This function is restricted to the contract's owner");
+        _;
+      }
+    
+      function setCompleted(uint completed) public restricted {
+        last_completed_migration = completed;
+      }
+    }
+- Migrations.sol
+- Migrations.sol
+- |-
+    box-img-lg.png
+    box-img-sm.png
+    bs-config.json
+    contracts
+    LICENSE
+    migrations
+    node_modules
+    package.json
+    package-lock.json
+    README.org
+    src
+    tags
+    test
+    truffle-config.js
+info: on
+completion: off
+insertion: off

@@ -1,0 +1,919 @@
+HTTP/1.1 200 OK
+date: Thu, 11 Jul 2024 21:14:21 GMT
+vary: Accept-Encoding,Cookie,Authorization
+server: ATS/9.1.4
+x-content-type-options: nosniff
+content-language: en
+origin-trial: AonOP4SwCrqpb0nhZbg554z9iJimP3DxUDB8V4yu9fyyepauGKD0NXqTknWi4gnuDfMG6hNb7TDUDTsl0mDw9gIAAABmeyJvcmlnaW4iOiJodHRwczovL3dpa2lwZWRpYS5vcmc6NDQzIiwiZmVhdHVyZSI6IlRvcExldmVsVHBjZCIsImV4cGlyeSI6MTczNTM0Mzk5OSwiaXNTdWJkb21haW4iOnRydWV9
+accept-ch: 
+last-modified: Wed, 10 Jul 2024 03:04:15 GMT
+content-type: text/html; charset=UTF-8
+age: 6277
+x-cache: cp4037 hit, cp4037 hit/3
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp4037"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+set-cookie: WMF-Last-Access=11-Jul-2024;Path=/;HttpOnly;secure;Expires=Mon, 12 Aug 2024 12:00:00 GMT
+set-cookie: WMF-Last-Access-Global=11-Jul-2024;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Mon, 12 Aug 2024 12:00:00 GMT
+set-cookie: WMF-DP=b91;Path=/;HttpOnly;secure;Expires=Fri, 12 Jul 2024 00:00:00 GMT
+x-client-ip: 2407:7000:8257:5800:be94:283f:6c69:e9cb
+cache-control: private, s-maxage=0, max-age=0, must-revalidate
+set-cookie: GeoIP=NZ:OTA:Dunedin:-45.84:170.50:v4; Path=/; secure; Domain=.wikipedia.org
+set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
+accept-ranges: bytes
+content-length: 30115
+
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-enabled vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-disabled skin-theme-clientpref-day vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>John Lennox - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-enabled vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-disabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":[
+"",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b324409d-3777-4eb4-8b3f-c9c46df37195","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"John_Lennox","wgTitle":"John Lennox","wgCurRevisionId":1233630002,"wgRevisionId":1233630002,"wgArticleId":19722743,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Use dmy dates from March 2020","Use British English from August 2011","Articles with hCards","CS1 maint: location missing publisher","Commons category link from Wikidata","Webarchive template wayback links","Articles with ISNI identifiers","Articles with VIAF identifiers","Articles with BIBSYS identifiers","Articles with BNE identifiers","Articles with BNF identifiers",
+"Articles with BNFdata identifiers","Articles with CANTICN identifiers","Articles with GND identifiers","Articles with J9U identifiers","Articles with LCCN identifiers","Articles with Libris identifiers","Articles with NDL identifiers","Articles with NKC identifiers","Articles with NLK identifiers","Articles with NSK identifiers","Articles with NTA identifiers","Articles with PLWABN identifiers","Articles with PortugalA identifiers","Articles with CINII identifiers","Articles with MATHSN identifiers","Articles with MGP identifiers","Articles with ZBMATH identifiers","Articles with SUDOC identifiers","Place of birth missing (living people)","1943 births","Living people","20th-century evangelicals","20th-century mathematicians from Northern Ireland","21st-century evangelicals","21st-century mathematicians from Northern Ireland","Alumni of Cardiff University","Alumni of Emmanuel College, Cambridge","Alumni of the University of Surrey","Christian apologists","Christianity and science",
+"British critics of atheism","Evangelicals from Northern Ireland","Evangelical writers","Fellows of Green Templeton College, Oxford","Fellows of Wycliffe Hall, Oxford","Group theorists","Intelligent design advocates","People educated at The Royal School, Armagh","People from Armagh (city)","Protestant philosophers","Scientists from County Armagh","Theistic evolutionists"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"John_Lennox","wgRelevantArticleId":19722743,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,
+"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q975795","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready",
+"jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.43.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/John_Lennox_2015_%28cropped%29.jpg/1200px-John_Lennox_2015_%28cropped%29.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1716">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/John_Lennox_2015_%28cropped%29.jpg/800px-John_Lennox_2015_%28cropped%29.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="1144">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/John_Lennox_2015_%28cropped%29.jpg/640px-John_Lennox_2015_%28cropped%29.jpg">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="915">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="John Lennox - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/John_Lennox">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=John_Lennox&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/John_Lennox">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-John_Lennox rootpage-John_Lennox skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=John+Lennox" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=John+Lennox" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=John+Lennox" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=John+Lennox" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice" class="notheme"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Early_life_and_education"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Early_life_and_education">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Early life and education</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Early_life_and_education-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Career"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Career">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Career</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Career-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Career subsection</span>
+			</button>
+		
+		<ul id="toc-Career-sublist" class="vector-toc-list">
+			<li id="toc-Debates"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Debates">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Debates</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Debates-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Personal_life"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Personal_life">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Personal life</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Personal_life-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Works"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Works">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Works</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Works-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">John Lennox</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 19 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-19" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">19 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AC%D9%88%D9%86_%D9%84%D9%8A%D9%86%D9%83%D8%B3" title="جون لينكس – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-azb mw-list-item"><a href="https://azb.wikipedia.org/wiki/%D8%AC%D8%A7%D9%86_%D9%84%D9%86%DA%A9%D8%B3" title="جان لنکس – South Azerbaijani" lang="azb" hreflang="azb" class="interlanguage-link-target"><span>تۆرکجه</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/John_Lennox" title="John Lennox – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/John_Lennox" title="John Lennox – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%AC%D8%A7%D9%86_%D9%84%D9%86%DA%A9%D8%B3" title="جان لنکس – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/John_Lennox" title="John Lennox – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/John_Lennox" title="John Lennox – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/John_Lennox" title="John Lennox – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/John_Lennox" title="John Lennox – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-arz mw-list-item"><a href="https://arz.wikipedia.org/wiki/%D8%AC%D9%88%D9%86_%D9%84%D9%8A%D9%86%D9%83%D8%B3" title="جون لينكس – Egyptian Arabic" lang="arz" hreflang="arz" class="interlanguage-link-target"><span>مصرى</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/John_Lennox" title="John Lennox – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BB%E3%83%AC%E3%83%8E%E3%83%83%E3%82%AF%E3%82%B9" title="ジョン・レノックス – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/John_Lennox" title="John Lennox – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/John_Lennox" title="John Lennox – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BD%D0%BD%D0%BE%D0%BA%D1%81,_%D0%94%D0%B6%D0%BE%D0%BD" title="Леннокс, Джон – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/John_Lennox" title="John Lennox – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/John_Lennox" title="John Lennox – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/John_Lennox" title="John Lennox – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B6%D0%BE%D0%BD_%D0%9B%D0%B5%D0%BD%D0%BD%D0%BE%D0%BA%D1%81" title="Джон Леннокс – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q975795#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/John_Lennox" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:John_Lennox" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/John_Lennox"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=John_Lennox&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=John_Lennox&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/John_Lennox"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=John_Lennox&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=John_Lennox&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/John_Lennox" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/John_Lennox" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=John_Lennox&amp;oldid=1233630002" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=John_Lennox&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=John_Lennox&amp;id=1233630002&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJohn_Lennox"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJohn_Lennox"><span>Download QR code</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q975795" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=John_Lennox&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=John_Lennox&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:John_Lennox" hreflang="en"><span>Wikimedia Commons</span></a></li><li class="wb-otherproject-link wb-otherproject-wikiquote mw-list-item"><a href="https://en.wikiquote.org/wiki/John_Lennox" hreflang="en"><span>Wikiquote</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Northern Irish mathematician and philosopher of science</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For the British soldier and politician, see <a href="/wiki/Lord_John_Lennox" title="Lord John Lennox">Lord John Lennox</a>.</div>
+<p class="mw-empty-elt">
+
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1229112069">.mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent}.mw-parser-output .infobox-3cols-child{margin:auto}.mw-parser-output .infobox .navbar{font-size:100%}body.skin-minerva .mw-parser-output .infobox-header,body.skin-minerva .mw-parser-output .infobox-subheader,body.skin-minerva .mw-parser-output .infobox-above,body.skin-minerva .mw-parser-output .infobox-title,body.skin-minerva .mw-parser-output .infobox-image,body.skin-minerva .mw-parser-output .infobox-full-data,body.skin-minerva .mw-parser-output .infobox-below{text-align:center}html.skin-theme-clientpref-night .mw-parser-output .infobox-full-data:not(.notheme)>div:not(.notheme)[style]{background:#1f1f23!important;color:#f8f9fa}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .infobox-full-data:not(.notheme) div:not(.notheme){background:#1f1f23!important;color:#f8f9fa}}@media(min-width:640px){body.skin--responsive .mw-parser-output .infobox-table{display:table!important}body.skin--responsive .mw-parser-output .infobox-table>caption{display:table-caption!important}body.skin--responsive .mw-parser-output .infobox-table>tbody{display:table-row-group}body.skin--responsive .mw-parser-output .infobox-table tr{display:table-row!important}body.skin--responsive .mw-parser-output .infobox-table th,body.skin--responsive .mw-parser-output .infobox-table td{padding-left:inherit;padding-right:inherit}}</style><table class="infobox biography vcard"><tbody><tr><th colspan="2" class="infobox-above"><div class="fn">John Lennox</div></th></tr><tr><td colspan="2" class="infobox-image"><span class="mw-default-size" typeof="mw:File/Frameless"><a href="/wiki/File:John_Lennox_2015_(cropped).jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/John_Lennox_2015_%28cropped%29.jpg/220px-John_Lennox_2015_%28cropped%29.jpg" decoding="async" width="220" height="315" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/John_Lennox_2015_%28cropped%29.jpg/330px-John_Lennox_2015_%28cropped%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/eb/John_Lennox_2015_%28cropped%29.jpg/440px-John_Lennox_2015_%28cropped%29.jpg 2x" data-file-width="2238" data-file-height="3200" /></a></span><div class="infobox-caption">Lennox in 2015</div></td></tr><tr><th scope="row" class="infobox-label">Born</th><td class="infobox-data"><div style="display:inline" class="nickname">John Carson Lennox</div><br /><span style="display:none"> (<span class="bday">1943-11-07</span>) </span>7 November 1943<span class="noprint ForceAgeToShow"> (age&#160;80)</span><br /><div style="display:inline" class="birthplace"><a href="/wiki/Armagh" title="Armagh">Armagh</a>, Northern Ireland</div></td></tr><tr><th scope="row" class="infobox-label">Alma&#160;mater</th><td class="infobox-data"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><div class="plainlist">
+<ul><li><span class="nowrap"><a href="/wiki/Emmanuel_College,_Cambridge" title="Emmanuel College, Cambridge">Emmanuel College, Cambridge</a></span> (<a href="/wiki/MA_(Oxon)" class="mw-redirect" title="MA (Oxon)">MA</a>, <a href="/wiki/Master_of_Mathematics" title="Master of Mathematics">MMath</a>, <a href="/wiki/PhD" class="mw-redirect" title="PhD">PhD</a>)</li>
+<li><a href="/wiki/University_of_Oxford" title="University of Oxford">University of Oxford</a> (<a href="/wiki/MA_(Oxon)" class="mw-redirect" title="MA (Oxon)">MA</a>, <a href="/wiki/DPhil" class="mw-redirect" title="DPhil">DPhil</a>)</li>
+<li><a href="/wiki/Cardiff_University" title="Cardiff University">Cardiff University</a> (<a href="/wiki/DSc" class="mw-redirect" title="DSc">DSc</a>)</li>
+<li><a href="/wiki/University_of_Surrey" title="University of Surrey">University of Surrey</a> (<a href="/wiki/M._A." class="mw-redirect" title="M. A.">MA</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="infobox-label">Spouse</th><td class="infobox-data">Sally Lennox</td></tr><tr><th scope="row" class="infobox-label">Children</th><td class="infobox-data">3</td></tr><tr><td colspan="2" class="infobox-full-data"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1229112069"><b>Scientific career</b></td></tr><tr><th scope="row" class="infobox-label">Fields</th><td class="infobox-data category"><a href="/wiki/Group_theory" title="Group theory">Group theory</a></td></tr><tr><th scope="row" class="infobox-label">Institutions</th><td class="infobox-data"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1126788409"><div class="plainlist">
+<ul><li><a href="/wiki/University_of_Wales" title="University of Wales">University of Wales</a></li>
+<li><a href="/wiki/University_of_Oxford" title="University of Oxford">University of Oxford</a></li></ul>
+</div></td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Doctoral_advisor" title="Doctoral advisor">Doctoral advisor</a></th><td class="infobox-data">James Roseblade</td></tr><tr style="display:none"><td colspan="2">
+</td></tr><tr><th scope="row" class="infobox-label">Website</th><td class="infobox-data"><span class="url"><a rel="nofollow" class="external text" href="https://www.johnlennox.org">www<wbr />.johnlennox<wbr />.org</a></span></td></tr></tbody></table>
+<p><b>John Carson Lennox</b> (born 7 November 1943) is an English <a href="/wiki/Mathematician" title="Mathematician">mathematician</a>, <a href="/wiki/Bioethicist" class="mw-redirect" title="Bioethicist">bioethicist</a>, and <a href="/wiki/Christian_apologist" class="mw-redirect" title="Christian apologist">Christian apologist</a> originally from Northern Ireland. He has written many books on religion, ethics, the relationship between science and God (like his books, <i>Has Science Buried God</i> and <i>Can Science Explain Everything</i>), and has had public debates with atheists including <a href="/wiki/Richard_Dawkins" title="Richard Dawkins">Richard Dawkins</a> and <a href="/wiki/Christopher_Hitchens" title="Christopher Hitchens">Christopher Hitchens</a>.
+</p><p>Lennox earned his first doctorate from the <a href="/wiki/University_of_Cambridge" title="University of Cambridge">University of Cambridge</a>, then earned a second and third doctorate from the <a href="/wiki/University_of_Oxford" title="University of Oxford">University of Oxford</a> and <a href="/wiki/Cardiff_University" title="Cardiff University">Cardiff University</a>, respectively. As a professor, Lennox specialised in <a href="/wiki/Group_theory" title="Group theory">group theory</a>. He is Emeritus Professor of <a href="/wiki/Mathematics" title="Mathematics">Mathematics</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> at the <a href="/wiki/University_of_Oxford" title="University of Oxford">University of Oxford</a>, where he is also Emeritus Fellow in Mathematics and <a href="/wiki/Philosophy_of_Science" class="mw-redirect" title="Philosophy of Science">Philosophy of Science</a> at <a href="/wiki/Green_Templeton_College" class="mw-redirect" title="Green Templeton College">Green Templeton College</a> and has worked as <a href="/wiki/Adjunct_lecturer" class="mw-redirect" title="Adjunct lecturer">adjunct lecturer</a> at <a href="/wiki/Wycliffe_Hall" class="mw-redirect" title="Wycliffe Hall">Wycliffe Hall</a> and at the Oxford Centre for Christian Apologetics. He is also an Associate Fellow of the <a href="/wiki/Sa%C3%AFd_Business_School" title="Saïd Business School">Saïd Business School</a> and a Senior Fellow at the <a href="/wiki/Trinity_Forum" title="Trinity Forum">Trinity Forum</a>.
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Early_life_and_education">Early life and education</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=John_Lennox&amp;action=edit&amp;section=1" title="Edit section: Early life and education"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>John Lennox was born on 7 November 1943 in <a href="/wiki/Northern_Ireland" title="Northern Ireland">Northern Ireland</a> and brought up in <a href="/wiki/Armagh" title="Armagh">Armagh</a> where his father ran a store.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> He attended <a href="/wiki/The_Royal_School,_Armagh" title="The Royal School, Armagh">The Royal School, Armagh</a>, and went on to become Exhibitioner and Senior Scholar at <a href="/wiki/Emmanuel_College,_Cambridge" title="Emmanuel College, Cambridge">Emmanuel College, Cambridge</a>, where in 1962 he also attended the last lectures of <a href="/wiki/C._S._Lewis" title="C. S. Lewis">C.&#160;S. Lewis</a> on the poet <a href="/wiki/John_Donne" title="John Donne">John Donne</a>. Lennox obtained a <a href="/wiki/Master_of_Arts_(Oxbridge_and_Dublin)" class="mw-redirect" title="Master of Arts (Oxbridge and Dublin)">Master of Arts</a>, a <a href="/wiki/Master_of_Mathematics" title="Master of Mathematics">Master of Mathematics</a> and a <a href="/wiki/Doctor_of_Philosophy" title="Doctor of Philosophy">Doctor of Philosophy</a> from the <a href="/wiki/University_of_Cambridge" title="University of Cambridge">University of Cambridge</a> with the dissertation <i>Centrality and Permutability in Soluble Groups</i> (1970).<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> 
+</p><p>Lennox was awarded a <a href="/wiki/Doctor_of_Science" title="Doctor of Science">Doctor of Science</a> degree in <a href="/wiki/Mathematics" title="Mathematics">mathematics</a> by <a href="/wiki/Cardiff_University" title="Cardiff University">Cardiff University</a> for his research. Lennox also holds a <a href="/wiki/Doctor_of_Philosophy" title="Doctor of Philosophy">Doctor of Philosophy</a> degree from the <a href="/wiki/University_of_Oxford" title="University of Oxford">University of Oxford</a> (by incorporation)<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> and an <a href="/wiki/Master_of_Arts" title="Master of Arts">M.A.</a> degree in <a href="/wiki/Bioethics" title="Bioethics">bioethics</a> at the <a href="/wiki/University_of_Surrey" title="University of Surrey">University of Surrey</a>. In addition, he was a <a href="/wiki/Humboldt_Fellow" class="mw-redirect" title="Humboldt Fellow">Humboldt Fellow</a> at the <a href="/wiki/University_of_W%C3%BCrzburg" title="University of Würzburg">University of Würzburg</a> and the <a href="/wiki/University_of_Freiburg" title="University of Freiburg">University of Freiburg</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> 
+</p>
+<h2><span class="mw-headline" id="Career">Career</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=John_Lennox&amp;action=edit&amp;section=2" title="Edit section: Career"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Upon completing his doctorate, Lennox moved to <a href="/wiki/Cardiff" title="Cardiff">Cardiff</a>, <a href="/wiki/Wales" title="Wales">Wales</a>, becoming a <a href="/wiki/Reader_(academic_rank)" title="Reader (academic rank)">reader</a> in Mathematics at the <a href="/wiki/University_of_Wales" title="University of Wales">University of Wales</a>, Cardiff. Lennox teaches <a href="/wiki/Science_and_religion" class="mw-redirect" title="Science and religion">science and religion</a> in the <a href="/wiki/University_of_Oxford" title="University of Oxford">University of Oxford</a>. During his 29 years in Cardiff he spent a year at each of the universities of <a href="/wiki/W%C3%BCrzburg" title="Würzburg">Würzburg</a>, <a href="/wiki/Freiburg" class="mw-redirect" title="Freiburg">Freiburg</a> (as an <a href="/wiki/Alexander_von_Humboldt_Fellow" class="mw-redirect" title="Alexander von Humboldt Fellow">Alexander von Humboldt Fellow</a>), and <a href="/wiki/Vienna" title="Vienna">Vienna</a>, and has lectured extensively in both Eastern and Western Europe, <a href="/wiki/Russia" title="Russia">Russia</a> and <a href="/wiki/North_America" title="North America">North America</a> on mathematics, <a href="/wiki/Apologetics" title="Apologetics">apologetics</a>, and the exposition of <a href="/wiki/Scripture" class="mw-redirect" title="Scripture">scripture</a>.
+</p><p>Lennox is the author of a number of books on the relations of science, religion, and ethics. He has published over 70 peer-reviewed articles on mathematics, co-authored two Oxford Mathematical Monographs, and worked as a translator of Russian mathematics.
+</p><p>He has spoken in many different countries, in conferences and as an academic fellow, including numerous trips to the former <a href="/wiki/Soviet_Union" title="Soviet Union">Soviet Union</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p><p>On 14 March 2012 he presented an edition of the <a href="/wiki/Lent_Talks" title="Lent Talks">Lent Talks</a> for <a href="/wiki/BBC_Radio_Four" class="mw-redirect" title="BBC Radio Four">BBC Radio Four</a>. Lennox has also given lectures at the <a href="/wiki/Veritas_Forum" title="Veritas Forum">Veritas Forum</a> on topics such as the relationship between science and religion,<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> the <a href="/wiki/Existence_of_god" class="mw-redirect" title="Existence of god">existence of God</a>,<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> <a href="/wiki/Doubt" title="Doubt">doubt</a>, and the <a href="/wiki/Problem_of_evil" title="Problem of evil">problems of evil and suffering</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> Additionally, he is a Senior Fellow of The Trinity Forum, a Christian nonprofit organisation that develops leaders to make contributions to cultural renewal.
+</p>
+<h3><span class="mw-headline" id="Debates">Debates</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=John_Lennox&amp;action=edit&amp;section=3" title="Edit section: Debates"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:John_Lennox_and_Christopher_Hitchens_debating.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/John_Lennox_and_Christopher_Hitchens_debating.jpg/220px-John_Lennox_and_Christopher_Hitchens_debating.jpg" decoding="async" width="220" height="112" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/John_Lennox_and_Christopher_Hitchens_debating.jpg/330px-John_Lennox_and_Christopher_Hitchens_debating.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/John_Lennox_and_Christopher_Hitchens_debating.jpg/440px-John_Lennox_and_Christopher_Hitchens_debating.jpg 2x" data-file-width="3153" data-file-height="1602" /></a><figcaption>Lennox (left) debating religion with <a href="/wiki/Christopher_Hitchens" title="Christopher Hitchens">Christopher Hitchens</a> in Alabama, March 2009</figcaption></figure>
+<p>Lennox has been part of numerous public debates defending the Christian faith, including debates with <a href="/wiki/Christopher_Hitchens" title="Christopher Hitchens">Christopher Hitchens</a>, <a href="/wiki/Michael_Shermer" title="Michael Shermer">Michael Shermer</a>, <a href="/wiki/Richard_Dawkins" title="Richard Dawkins">Richard Dawkins</a>, <a href="/wiki/Lawrence_Krauss" title="Lawrence Krauss">Lawrence Krauss</a>,
+<a href="/wiki/Peter_Atkins" title="Peter Atkins">Peter Atkins</a>, <a href="/wiki/Victor_Stenger" class="mw-redirect" title="Victor Stenger">Victor Stenger</a>, <a href="/wiki/Michael_Tooley" title="Michael Tooley">Michael Tooley</a>, <a href="/wiki/Stephen_Law" title="Stephen Law">Stephen Law</a>, and <a href="/wiki/Peter_Singer" title="Peter Singer">Peter Singer</a>.
+</p>
+<ul><li>On 3 October 2007, Lennox debated <a href="/wiki/Richard_Dawkins" title="Richard Dawkins">Richard Dawkins</a> at the <a href="/wiki/University_of_Alabama_at_Birmingham" title="University of Alabama at Birmingham">University of Alabama at Birmingham</a> in <a href="/wiki/Birmingham,_Alabama" title="Birmingham, Alabama">Birmingham, Alabama</a> on Dawkins's views expressed in his book, <i><a href="/wiki/The_God_Delusion" title="The God Delusion">The God Delusion</a></i>.<sup id="cite_ref-debate_12-0" class="reference"><a href="#cite_note-debate-12">&#91;12&#93;</a></sup><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup></li>
+<li>Lennox and Dawkins had a discussion in April 2008 at <a href="/wiki/Trinity_College,_Oxford" title="Trinity College, Oxford">Trinity College, Oxford</a> to expand upon topics left undeveloped during The God Delusion Debate.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup></li>
+<li>On 9 August 2008, Lennox debated <a href="/wiki/Christopher_Hitchens" title="Christopher Hitchens">Christopher Hitchens</a> at the <a href="/wiki/Edinburgh_International_Festival" title="Edinburgh International Festival">Edinburgh International Festival</a> in <a href="/wiki/Edinburgh,_Scotland" class="mw-redirect" title="Edinburgh, Scotland">Edinburgh, Scotland</a>, on the question of whether or not Europe should jettison its religious past and welcome the "<a href="/wiki/New_Atheism" title="New Atheism">New Atheism</a>."<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup></li>
+<li>On 23 August 2008, Lennox debated <a href="/wiki/Michael_Shermer" title="Michael Shermer">Michael Shermer</a> at the Wesley Conference Centre in <a href="/wiki/Sydney,_Australia" class="mw-redirect" title="Sydney, Australia">Sydney, Australia</a>, on the existence of God.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup></li>
+<li>On 21 October 2008, Lennox again debated Dawkins at the <a href="/wiki/Oxford_University_Museum_of_Natural_History" title="Oxford University Museum of Natural History">Oxford University Museum of Natural History</a>, the site of the <a href="/wiki/1860_Oxford_evolution_debate" title="1860 Oxford evolution debate">1860 Oxford evolution debate</a> between <a href="/wiki/Thomas_Henry_Huxley" title="Thomas Henry Huxley">Thomas Henry Huxley</a> and <a href="/wiki/Samuel_Wilberforce" title="Samuel Wilberforce">Samuel Wilberforce</a>. The debate was titled "Has Science Buried God?".<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup><sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup> <i><a href="/wiki/The_Spectator" title="The Spectator">The Spectator</a></i> called the event "Huxley-Wilberforce, Round Two."<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup></li>
+<li>On 3 March 2009, Lennox debated Hitchens for the second time at <a href="/wiki/Samford_University" title="Samford University">Samford University</a> in <a href="/wiki/Birmingham,_Alabama" title="Birmingham, Alabama">Birmingham, Alabama</a>, on the question "Is God Great?" The debate addressed the validity of some of Hitchens' claims in his book <i><a href="/wiki/God_is_Not_Great" class="mw-redirect" title="God is Not Great">God is Not Great</a></i>.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup><sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup></li>
+<li>On 20 July 2011, Lennox debated <a href="/wiki/Peter_Singer" title="Peter Singer">Peter Singer</a> at the <a href="/wiki/Melbourne_Town_Hall" title="Melbourne Town Hall">Melbourne Town Hall</a> in <a href="/wiki/Melbourne,_Australia" class="mw-redirect" title="Melbourne, Australia">Melbourne, Australia</a> on the topic "Is There a God?"<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup><sup id="cite_ref-27" class="reference"><a href="#cite_note-27">&#91;27&#93;</a></sup><sup id="cite_ref-28" class="reference"><a href="#cite_note-28">&#91;28&#93;</a></sup></li>
+<li>In August 2021, Lennox was the chief guest for the prestigious Malhar Fest hosted by St. Xavier's College, Mumbai.</li></ul>
+<h2><span class="mw-headline" id="Personal_life">Personal life</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=John_Lennox&amp;action=edit&amp;section=4" title="Edit section: Personal life"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Lennox speaks English, Russian, French, Spanish and German. He is married to Sally and has three children and 10 grandchildren.<sup id="cite_ref-debate_12-1" class="reference"><a href="#cite_note-debate-12">&#91;12&#93;</a></sup> He has a brother named Gilbert Lennox, previously an elder in Glenabbey Church, <a href="/wiki/Glengormley" title="Glengormley">Glengormley</a>.<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">&#91;29&#93;</a></sup> The hymn writer and recording artist <a href="/wiki/Kristyn_Getty" title="Kristyn Getty">Kristyn Getty</a> is John's niece, being Gilbert's daughter.
+</p>
+<h2><span class="mw-headline" id="Works">Works</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=John_Lennox&amp;action=edit&amp;section=5" title="Edit section: Works"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><style data-mw-deduplicate="TemplateStyles:r1215172403">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a{background-size:contain}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a{background-size:contain}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a{background-size:contain}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#2C882D;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911F}html.skin-theme-clientpref-night .mw-parser-output .cs1-visible-error,html.skin-theme-clientpref-night .mw-parser-output .cs1-hidden-error{color:#f8a397}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-visible-error,html.skin-theme-clientpref-os .mw-parser-output .cs1-hidden-error{color:#f8a397}html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911F}}</style><cite id="CITEREFLennoxStonehewer1987" class="citation book cs1">Lennox, John C.; Stonehewer, Stewart E. (1987). <i>Subnormal subgroups of groups</i>. Oxford: Clarendon. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-19-853552-2" title="Special:BookSources/978-0-19-853552-2"><bdi>978-0-19-853552-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Subnormal+subgroups+of+groups&amp;rft.place=Oxford&amp;rft.pub=Clarendon&amp;rft.date=1987&amp;rft.isbn=978-0-19-853552-2&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Stonehewer%2C+Stewart+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding1997" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (1997). <i>Key Bible Concepts</i>. Port Colborne: Gospel Folio Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781882701414" title="Special:BookSources/9781882701414"><bdi>9781882701414</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Key+Bible+Concepts&amp;rft.place=Port+Colborne&amp;rft.pub=Gospel+Folio+Press&amp;rft.date=1997&amp;rft.isbn=9781882701414&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding1997" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (1997). <i>Christianity: Opium or Truth?</i>. Port Colborne: Gospel Folio Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781882701469" title="Special:BookSources/9781882701469"><bdi>9781882701469</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Christianity%3A+Opium+or+Truth%3F&amp;rft.place=Port+Colborne&amp;rft.pub=Gospel+Folio+Press&amp;rft.date=1997&amp;rft.isbn=9781882701469&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2001" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2001). <span class="id-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/definitionofchri00davi"><i>The Definition of Christianity</i></a></span>. Port Colborne: Gospel Folio Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781882701421" title="Special:BookSources/9781882701421"><bdi>9781882701421</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Definition+of+Christianity&amp;rft.place=Port+Colborne&amp;rft.pub=Gospel+Folio+Press&amp;rft.date=2001&amp;rft.isbn=9781882701421&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fdefinitionofchri00davi&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxRobinson2004" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/Derek_J._S._Robinson" title="Derek J. S. Robinson">Robinson, Derek J. S.</a> (2004). <i>The Theory of Infinite Soluble Groups</i>. Clarendon Press. p.&#160;458. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-19-850728-4" title="Special:BookSources/978-0-19-850728-4"><bdi>978-0-19-850728-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Theory+of+Infinite+Soluble+Groups&amp;rft.pages=458&amp;rft.pub=Clarendon+Press&amp;rft.date=2004&amp;rft.isbn=978-0-19-850728-4&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Robinson%2C+Derek+J.+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2009" class="citation book cs1">&#8212;&#8212;&#8212; (2009). <a rel="nofollow" class="external text" href="https://archive.org/details/godsundertaker00john/page/224"><i>God's Undertaker: Has Science Buried God?</i></a> (Updated&#160;ed.). Lion UK. pp.&#160;<a rel="nofollow" class="external text" href="https://archive.org/details/godsundertaker00john/page/224">224</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7459-5371-7" title="Special:BookSources/978-0-7459-5371-7"><bdi>978-0-7459-5371-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=God%27s+Undertaker%3A+Has+Science+Buried+God%3F&amp;rft.place=Lion+UK&amp;rft.pages=224&amp;rft.edition=Updated&amp;rft.date=2009&amp;rft.isbn=978-0-7459-5371-7&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fgodsundertaker00john%2Fpage%2F224&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2011" class="citation book cs1">&#8212;&#8212;&#8212; (2011). <i>Seven Days That Divide the World: The Beginning According to Genesis and Science</i>. Zondervan. p.&#160;192. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-310-49217-7" title="Special:BookSources/978-0-310-49217-7"><bdi>978-0-310-49217-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Seven+Days+That+Divide+the+World%3A+The+Beginning+According+to+Genesis+and+Science&amp;rft.pages=192&amp;rft.pub=Zondervan&amp;rft.date=2011&amp;rft.isbn=978-0-310-49217-7&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2011" class="citation book cs1">&#8212;&#8212;&#8212; (2011). <i>God and Stephen Hawking: Whose Design Is It Anyway?</i> (1st&#160;ed.). Lion UK. p.&#160;96. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7459-5549-0" title="Special:BookSources/978-0-7459-5549-0"><bdi>978-0-7459-5549-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=God+and+Stephen+Hawking%3A+Whose+Design+Is+It+Anyway%3F&amp;rft.pages=96&amp;rft.edition=1st&amp;rft.pub=Lion+UK&amp;rft.date=2011&amp;rft.isbn=978-0-7459-5549-0&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2011" class="citation book cs1">&#8212;&#8212;&#8212; (2011). <i>Gunning for God: A Critique of the New Atheism</i> (1st&#160;ed.). Lion UK. p.&#160;248. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7459-5322-9" title="Special:BookSources/978-0-7459-5322-9"><bdi>978-0-7459-5322-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Gunning+for+God%3A+A+Critique+of+the+New+Atheism&amp;rft.pages=248&amp;rft.edition=1st&amp;rft.pub=Lion+UK&amp;rft.date=2011&amp;rft.isbn=978-0-7459-5322-9&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2015" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2015). <i>The Bible &amp; Ethics</i>. Myrtlefield Encounters. Vol.&#160;4. Ontario: Myrtlefield House. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1874584575" title="Special:BookSources/978-1874584575"><bdi>978-1874584575</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Bible+%26+Ethics&amp;rft.place=Ontario&amp;rft.series=Myrtlefield+Encounters&amp;rft.pub=Myrtlefield+House&amp;rft.date=2015&amp;rft.isbn=978-1874584575&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2015" class="citation book cs1">&#8212;&#8212;&#8212; (2015). <i>Against the Flow: The Inspiration of Daniel in an Age of Relativism</i> (1st&#160;ed.). Monarch Books. p.&#160;416. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0857216212" title="Special:BookSources/978-0857216212"><bdi>978-0857216212</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Against+the+Flow%3A+The+Inspiration+of+Daniel+in+an+Age+of+Relativism&amp;rft.pages=416&amp;rft.edition=1st&amp;rft.pub=Monarch+Books&amp;rft.date=2015&amp;rft.isbn=978-0857216212&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2017" class="citation book cs1">&#8212;&#8212;&#8212; (2017). <i>Determined to Believe: The Sovereignty of God, Freedom, Faith, and Human Responsibility</i> (1st&#160;ed.). Monarch Books. p.&#160;352. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0857218728" title="Special:BookSources/978-0857218728"><bdi>978-0857218728</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Determined+to+Believe%3A+The+Sovereignty+of+God%2C+Freedom%2C+Faith%2C+and+Human+Responsibility&amp;rft.pages=352&amp;rft.edition=1st&amp;rft.pub=Monarch+Books&amp;rft.date=2017&amp;rft.isbn=978-0857218728&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2018" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2018). <i>Being Truly Human: The Limits of Our Worth, Power, Freedom and Destiny</i>. The Quest for Reality and Significance. Vol.&#160;1. Belfast: Myrtlefield House. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1912721016" title="Special:BookSources/978-1912721016"><bdi>978-1912721016</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Being+Truly+Human%3A+The+Limits+of+Our+Worth%2C+Power%2C+Freedom+and+Destiny&amp;rft.place=Belfast&amp;rft.series=The+Quest+for+Reality+and+Significance&amp;rft.pub=Myrtlefield+House&amp;rft.date=2018&amp;rft.isbn=978-1912721016&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2018" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2018). <i>Finding Ultimate Reality: In Search of the Best Answers to the Biggest Questions</i>. The Quest for Reality and Significance. Vol.&#160;2. Belfast: Myrtlefield House. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1912721061" title="Special:BookSources/978-1912721061"><bdi>978-1912721061</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Finding+Ultimate+Reality%3A+In+Search+of+the+Best+Answers+to+the+Biggest+Questions&amp;rft.place=Belfast&amp;rft.series=The+Quest+for+Reality+and+Significance&amp;rft.pub=Myrtlefield+House&amp;rft.date=2018&amp;rft.isbn=978-1912721061&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2019" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2019). <i>Questioning Our Knowledge: Can We Know What We Need to Know?</i>. The Quest for Reality and Significance. Vol.&#160;3. Belfast: Myrtlefield House. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1912721115" title="Special:BookSources/978-1912721115"><bdi>978-1912721115</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Questioning+Our+Knowledge%3A+Can+We+Know+What+We+Need+to+Know%3F&amp;rft.place=Belfast&amp;rft.series=The+Quest+for+Reality+and+Significance&amp;rft.pub=Myrtlefield+House&amp;rft.date=2019&amp;rft.isbn=978-1912721115&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2019" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2019). <i>Doing What's Right: The Limits of Our Worth, Power, Freedom and Destiny</i>. The Quest for Reality and Significance. Vol.&#160;4. Belfast: Myrtlefield House. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1912721214" title="Special:BookSources/978-1912721214"><bdi>978-1912721214</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Doing+What%27s+Right%3A+The+Limits+of+Our+Worth%2C+Power%2C+Freedom+and+Destiny&amp;rft.place=Belfast&amp;rft.series=The+Quest+for+Reality+and+Significance&amp;rft.pub=Myrtlefield+House&amp;rft.date=2019&amp;rft.isbn=978-1912721214&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2019" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2019). <i>Claiming to Answer: How One Person Became the Response to Our Deepest Questions</i>. The Quest for Reality and Significance. Vol.&#160;5. Belfast: Myrtlefield House. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1912721269" title="Special:BookSources/978-1912721269"><bdi>978-1912721269</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Claiming+to+Answer%3A+How+One+Person+Became+the+Response+to+Our+Deepest+Questions&amp;rft.place=Belfast&amp;rft.series=The+Quest+for+Reality+and+Significance&amp;rft.pub=Myrtlefield+House&amp;rft.date=2019&amp;rft.isbn=978-1912721269&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennoxGooding2019" class="citation book cs1">&#8212;&#8212;&#8212;; <a href="/wiki/David_Willoughby_Gooding" title="David Willoughby Gooding">Gooding, David W.</a> (2019). <i>Suffering Life's Pain: Facing the Problems of Moral and Natural Evil</i>. The Quest for Reality and Significance. Vol.&#160;6. Belfast: Myrtlefield House. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1912721160" title="Special:BookSources/978-1912721160"><bdi>978-1912721160</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Suffering+Life%27s+Pain%3A+Facing+the+Problems+of+Moral+and+Natural+Evil&amp;rft.place=Belfast&amp;rft.series=The+Quest+for+Reality+and+Significance&amp;rft.pub=Myrtlefield+House&amp;rft.date=2019&amp;rft.isbn=978-1912721160&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rft.au=Gooding%2C+David+W.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2019" class="citation book cs1">&#8212;&#8212;&#8212; (2019). <i>Can Science Explain Everything?</i>. The Good Book Company. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1784984113" title="Special:BookSources/978-1784984113"><bdi>978-1784984113</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Can+Science+Explain+Everything%3F&amp;rft.pub=The+Good+Book+Company&amp;rft.date=2019&amp;rft.isbn=978-1784984113&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2019" class="citation book cs1">&#8212;&#8212;&#8212; (2019). <i>Joseph: A Story of Love, Hate, Slavery, Power, and Forgiveness</i>. Crossway. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781433562969" title="Special:BookSources/9781433562969"><bdi>9781433562969</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Joseph%3A+A+Story+of+Love%2C+Hate%2C+Slavery%2C+Power%2C+and+Forgiveness&amp;rft.pub=Crossway&amp;rft.date=2019&amp;rft.isbn=9781433562969&amp;rft.aulast=Lennox&amp;rft.aufirst=John+C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2020" class="citation book cs1">Lennox, John (April 2020). <a rel="nofollow" class="external text" href="https://www.thegoodbook.co.uk/where-is-god-in-a-coronavirus-world"><i>Where is God in A Coronavirus World?</i></a>. The Good Book Company. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781784985691" title="Special:BookSources/9781784985691"><bdi>9781784985691</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Where+is+God+in+A+Coronavirus+World%3F.&amp;rft.pub=The+Good+Book+Company&amp;rft.date=2020-04&amp;rft.isbn=9781784985691&amp;rft.aulast=Lennox&amp;rft.aufirst=John&amp;rft_id=https%3A%2F%2Fwww.thegoodbook.co.uk%2Fwhere-is-god-in-a-coronavirus-world&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2020" class="citation book cs1">Lennox, John (2020). <i>2084: Artificial Intelligence and the Future of Humanity</i>. Zondervan. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780310109563" title="Special:BookSources/9780310109563"><bdi>9780310109563</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=2084%3A+Artificial+Intelligence+and+the+Future+of+Humanity.&amp;rft.pub=Zondervan&amp;rft.date=2020&amp;rft.isbn=9780310109563&amp;rft.aulast=Lennox&amp;rft.aufirst=John&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFLennox2021" class="citation book cs1">Lennox, John (2021). <i>Cosmic Chemistry: Do God and Science Mix?</i>. Lion Books. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780745981406" title="Special:BookSources/9780745981406"><bdi>9780745981406</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Cosmic+Chemistry%3A+Do+God+and+Science+Mix%3F.&amp;rft.pub=Lion+Books&amp;rft.date=2021&amp;rft.isbn=9780745981406&amp;rft.aulast=Lennox&amp;rft.aufirst=John&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=John_Lennox&amp;action=edit&amp;section=6" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1217336898">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.maths.ox.ac.uk/node/7522">"Recognition of Distinction"</a>. Mathematical Institute, University of Oxford. 29 July 2008<span class="reference-accessdate">. Retrieved <span class="nowrap">15 July</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Recognition+of+Distinction&amp;rft.pub=Mathematical+Institute%2C+University+of+Oxford&amp;rft.date=2008-07-29&amp;rft_id=http%3A%2F%2Fwww.maths.ox.ac.uk%2Fnode%2F7522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFBillen2010" class="citation news cs1">Billen, Andrew (17 November 2010). "God is a person not a theory". <i><a href="/wiki/The_Times" title="The Times">The Times</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Times&amp;rft.atitle=God+is+a+person+not+a+theory&amp;rft.date=2010-11-17&amp;rft.aulast=Billen&amp;rft.aufirst=Andrew&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=69823">"John Lennox - The Mathematics Genealogy Project"</a>. <i>www.genealogy.math.ndsu.nodak.edu</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.genealogy.math.ndsu.nodak.edu&amp;rft.atitle=John+Lennox+-+The+Mathematics+Genealogy+Project&amp;rft_id=https%3A%2F%2Fwww.genealogy.math.ndsu.nodak.edu%2Fid.php%3Fid%3D69823&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Having a doctorate from both Cambridge and Oxford makes Lennox what <a href="/wiki/Ghil%27ad_Zuckermann" title="Ghil&#39;ad Zuckermann">Ghil'ad Zuckermann</a> calls an "<a href="/w/index.php?title=Oxbridge_paradox&amp;action=edit&amp;redlink=1" class="new" title="Oxbridge paradox (page does not exist)">Oxbridge paradox</a>": Lennox belongs to the rare group of people who hold a "pair o' docs" (sounding like "paradox" but meaning "two doctorates") – a D.Phil. (Oxon.) and a PhD (Cantab.) – from both <a href="/wiki/University_of_Oxford" title="University of Oxford">Oxford</a> and <a href="/wiki/University_of_Cambridge" title="University of Cambridge">Cambridge</a> universities (commonly abbreviated as <a href="/wiki/Oxbridge" title="Oxbridge">Oxbridge</a>) – see <a rel="nofollow" class="external text" href="https://www.adelaide.edu.au/directory/ghilad.zuckermann">Biography</a>.</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20120503220337/http://johnlennox.org/index.php/en/about/">"About John Lennox"</a>. <i>JohnLennox.org Website</i>. Archived from <a rel="nofollow" class="external text" href="http://johnlennox.org/index.php/en/about/">the original</a> on 3 May 2012<span class="reference-accessdate">. Retrieved <span class="nowrap">13 May</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=JohnLennox.org+Website&amp;rft.atitle=About+John+Lennox&amp;rft_id=http%3A%2F%2Fjohnlennox.org%2Findex.php%2Fen%2Fabout%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.purposenation.org/ep-28-john-lennox-phd-podcast-transcript">"Episode 28: John Lennox, PhD"</a>. <i>Purpose Nation</i><span class="reference-accessdate">. Retrieved <span class="nowrap">4 April</span> 2024</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Purpose+Nation&amp;rft.atitle=Episode+28%3A+John+Lennox%2C+PhD&amp;rft_id=https%3A%2F%2Fwww.purposenation.org%2Fep-28-john-lennox-phd-podcast-transcript&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=Kgpf0vPxxQw">"Prof John Lennox - Experiences in the Soviet Union"</a>. <i>YouTube</i><span class="reference-accessdate">. Retrieved <span class="nowrap">4 April</span> 2024</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=YouTube&amp;rft.atitle=Prof+John+Lennox+-+Experiences+in+the+Soviet+Union&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKgpf0vPxxQw&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20161005105940/http://www.veritas.org/science-buried-god-2/">"Has Science Buried God?"</a>. <i>Veritas Forum</i>. 16 September 2016. Archived from <a rel="nofollow" class="external text" href="http://www.veritas.org/science-buried-god-2/">the original</a> on 5 October 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">3 October</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Veritas+Forum&amp;rft.atitle=Has+Science+Buried+God%3F&amp;rft.date=2016-09-16&amp;rft_id=http%3A%2F%2Fwww.veritas.org%2Fscience-buried-god-2%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20161005105640/http://www.veritas.org/science-buried-god/">"Has Science Buried God"</a>. <i>Veritas Forum</i>. 11 July 2016. Archived from <a rel="nofollow" class="external text" href="http://www.veritas.org/science-buried-god/">the original</a> on 5 October 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">3 October</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Veritas+Forum&amp;rft.atitle=Has+Science+Buried+God&amp;rft.date=2016-07-11&amp;rft_id=http%3A%2F%2Fwww.veritas.org%2Fscience-buried-god%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20161005104214/http://www.veritas.org/god-fact-or-fiction-2/">"God: Fact or Fiction?"</a>. <i>Veritas Forum</i>. 20 February 2013. Archived from <a rel="nofollow" class="external text" href="http://www.veritas.org/god-fact-or-fiction-2/">the original</a> on 5 October 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">3 October</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Veritas+Forum&amp;rft.atitle=God%3A+Fact+or+Fiction%3F&amp;rft.date=2013-02-20&amp;rft_id=http%3A%2F%2Fwww.veritas.org%2Fgod-fact-or-fiction-2%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20161005105336/http://www.veritas.org/why-is-there-suffering-in-the-world/">"Why is there suffering in the world?"</a>. <i>The Veritas Forum</i>. Archived from <a rel="nofollow" class="external text" href="http://www.veritas.org/why-is-there-suffering-in-the-world/">the original</a> on 5 October 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">3 October</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=The+Veritas+Forum&amp;rft.atitle=Why+is+there+suffering+in+the+world%3F&amp;rft_id=http%3A%2F%2Fwww.veritas.org%2Fwhy-is-there-suffering-in-the-world%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-debate-12"><span class="mw-cite-backlink">^ <a href="#cite_ref-debate_12-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-debate_12-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090817002138/http://www.fixed-point.org/index.php/video/35-full-length/164-the-dawkins-lennox-debate">"The God Delusion Debate (Dawkins-Lennox)"</a>. Fixed Point Foundation. Archived from <a rel="nofollow" class="external text" href="http://fixed-point.org/index.php/video/35-full-length/164-the-dawkins-lennox-debate">the original</a> on 17 August 2009.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+God+Delusion+Debate+%28Dawkins-Lennox%29&amp;rft.pub=Fixed+Point+Foundation&amp;rft_id=http%3A%2F%2Ffixed-point.org%2Findex.php%2Fvideo%2F35-full-length%2F164-the-dawkins-lennox-debate&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFNaomi_Schaefer_Riley2007" class="citation web cs1">Naomi Schaefer Riley (12 October 2007). <a rel="nofollow" class="external text" href="https://www.wsj.com/articles/SB119214767015956720">"A Revelation: In Alabama, A Civil Debate Over God's Existence"</a>. The Wall Street Journal<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+Revelation%3A+In+Alabama%2C+A+Civil+Debate+Over+God%27s+Existence&amp;rft.pub=The+Wall+Street+Journal&amp;rft.date=2007-10-12&amp;rft.au=Naomi+Schaefer+Riley&amp;rft_id=https%3A%2F%2Fwww.wsj.com%2Farticles%2FSB119214767015956720&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFJoanna_Sugden2007" class="citation news cs1">Joanna Sugden (4 October 2007). <a rel="nofollow" class="external text" href="http://www.timesonline.co.uk/tol/comment/faith/article2588509.ece">"Richard Dawkins Debates in the Bible Belt"</a>. Times Online<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Richard+Dawkins+Debates+in+the+Bible+Belt&amp;rft.date=2007-10-04&amp;rft.au=Joanna+Sugden&amp;rft_id=http%3A%2F%2Fwww.timesonline.co.uk%2Ftol%2Fcomment%2Ffaith%2Farticle2588509.ece&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20080708201540/http://richarddawkins.net/article,2834,Conversation-between-Richard-Dawkins-and-John-Lennox,Richard-Dawkins-John-Lennox-Fixed-Point">"Conversation between Richard Dawkins and John Lennox"</a>. RichardDawkins.net. Archived from <a rel="nofollow" class="external text" href="http://richarddawkins.net/article,2834,Conversation-between-Richard-Dawkins-and-John-Lennox,Richard-Dawkins-John-Lennox-Fixed-Point">the original</a> on 8 July 2008<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Conversation+between+Richard+Dawkins+and+John+Lennox&amp;rft.pub=RichardDawkins.net&amp;rft_id=http%3A%2F%2Fricharddawkins.net%2Farticle%2C2834%2CConversation-between-Richard-Dawkins-and-John-Lennox%2CRichard-Dawkins-John-Lennox-Fixed-Point&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20101214054427/http://fixed-point.org/index.php/cds/misc-talks">"Dawkins-Lennox Radio Interview at Trinity College"</a>. Fixed Point Foundation. Archived from <a rel="nofollow" class="external text" href="http://fixed-point.org/index.php/cds/misc-talks">the original</a> on 14 December 2010<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Dawkins-Lennox+Radio+Interview+at+Trinity+College&amp;rft.pub=Fixed+Point+Foundation&amp;rft_id=http%3A%2F%2Ffixed-point.org%2Findex.php%2Fcds%2Fmisc-talks&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.edinburghguide.com/story/edinburghinternationalfestival/1474">"Edinburgh International Festival 2008 Looks To European Identity"</a>. EdinburghGuide.com<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Edinburgh+International+Festival+2008+Looks+To+European+Identity&amp;rft.pub=EdinburghGuide.com&amp;rft_id=http%3A%2F%2Fwww.edinburghguide.com%2Fstory%2Fedinburghinternationalfestival%2F1474&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://wetlenses.blogspot.com/2008/08/new-europe-new-atheism.html">"New Europe, New Atheism?"</a>. Wet Lenses<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=New+Europe%2C+New+Atheism%3F&amp;rft.pub=Wet+Lenses&amp;rft_id=http%3A%2F%2Fwetlenses.blogspot.com%2F2008%2F08%2Fnew-europe-new-atheism.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20080719003804/http://www.publicchristianity.org/BookingRetrieve.aspx?ID=26865">"The Great Debate: Does God Exist?"</a>. Centre for Public Christianity. Archived from <a rel="nofollow" class="external text" href="http://www.publicchristianity.org/BookingRetrieve.aspx?ID=26865">the original</a> on 19 July 2008<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+Great+Debate%3A+Does+God+Exist%3F&amp;rft.pub=Centre+for+Public+Christianity&amp;rft_id=http%3A%2F%2Fwww.publicchristianity.org%2FBookingRetrieve.aspx%3FID%3D26865&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20110714070026/http://files.meetup.com/979735/Lennox_Events.pdf">"Public Lectures, forums and debates with Dr. John Lennox"</a> <span class="cs1-format">(PDF)</span>. Centre for Public Christianity. Archived from <a rel="nofollow" class="external text" href="http://files.meetup.com/979735/Lennox_Events.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 14 July 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Public+Lectures%2C+forums+and+debates+with+Dr.+John+Lennox&amp;rft.pub=Centre+for+Public+Christianity&amp;rft_id=http%3A%2F%2Ffiles.meetup.com%2F979735%2FLennox_Events.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20091230135546/http://www.fixed-point.org/index.php/events/1-latest/5-has-science-buried-god">"Has Science Buried God?"</a>. Fixed Point Foundation. Archived from <a rel="nofollow" class="external text" href="http://fixed-point.org/index.php/events/1-latest/5-has-science-buried-god">the original</a> on 30 December 2009<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Has+Science+Buried+God%3F&amp;rft.pub=Fixed+Point+Foundation&amp;rft_id=http%3A%2F%2Ffixed-point.org%2Findex.php%2Fevents%2F1-latest%2F5-has-science-buried-god&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.bbc.co.uk/oxford/content/articles/2008/10/15/lennox_dawkins.shtml">"Has Science Buried God?"</a>. BBC Oxford. 15 October 2008<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Has+Science+Buried+God%3F&amp;rft.pub=BBC+Oxford&amp;rft.date=2008-10-15&amp;rft_id=http%3A%2F%2Fwww.bbc.co.uk%2Foxford%2Fcontent%2Farticles%2F2008%2F10%2F15%2Flennox_dawkins.shtml&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFMelanie_Phillips2008" class="citation web cs1">Melanie Phillips (12 June 2008). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20101107090651/http://www.spectator.co.uk/melaniephillips/771841/huxleywilberforce-round-two.thtml">"Huxley-Wilberforce, Round Two"</a>. The Spectator. Archived from <a rel="nofollow" class="external text" href="http://www.spectator.co.uk/melaniephillips/771841/huxleywilberforce-round-two.thtml">the original</a> on 7 November 2010<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Huxley-Wilberforce%2C+Round+Two&amp;rft.pub=The+Spectator&amp;rft.date=2008-06-12&amp;rft.au=Melanie+Phillips&amp;rft_id=http%3A%2F%2Fwww.spectator.co.uk%2Fmelaniephillips%2F771841%2Fhuxleywilberforce-round-two.thtml&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20110720192903/http://fixed-point.org/index.php/events/1-latest/6-is-god-great">"Is God Great?"</a>. Fixed Point Foundation. Archived from <a rel="nofollow" class="external text" href="http://fixed-point.org/index.php/events/1-latest/6-is-god-great">the original</a> on 20 July 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Is+God+Great%3F&amp;rft.pub=Fixed+Point+Foundation&amp;rft_id=http%3A%2F%2Ffixed-point.org%2Findex.php%2Fevents%2F1-latest%2F6-is-god-great&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite id="CITEREFGreg_Garrison2009" class="citation web cs1">Greg Garrison (28 February 2009). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100308134433/http://www.al.com/religion/birminghamnews/index.ssf?%2Fbase%2Fliving%2F1235812553191660.xml&amp;coll=2">"Christopher Hitchens argues against existence of God at Samford University in Birmingham, Alabama"</a>. The Birmingham News. Archived from <a rel="nofollow" class="external text" href="http://www.al.com/religion/birminghamnews/index.ssf?/base/living/1235812553191660.xml&amp;coll=2">the original</a> on 8 March 2010<span class="reference-accessdate">. Retrieved <span class="nowrap">3 November</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Christopher+Hitchens+argues+against+existence+of+God+at+Samford+University+in+Birmingham%2C+Alabama&amp;rft.pub=The+Birmingham+News&amp;rft.date=2009-02-28&amp;rft.au=Greg+Garrison&amp;rft_id=http%3A%2F%2Fwww.al.com%2Freligion%2Fbirminghamnews%2Findex.ssf%3F%2Fbase%2Fliving%2F1235812553191660.xml%26coll%3D2&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20160106160634/http://www.iscast.org/lennox_singer_debate_review">"Review of Lennox / Singer Debate: Is There A God?"</a>. ISCAST. Archived from <a rel="nofollow" class="external text" href="http://www.iscast.org/lennox_singer_debate_review">the original</a> on 6 January 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">1 September</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Review+of+Lennox+%2F+Singer+Debate%3A+Is+There+A+God%3F&amp;rft.pub=ISCAST&amp;rft_id=http%3A%2F%2Fwww.iscast.org%2Flennox_singer_debate_review&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://vimeo.com/ondemand/isthereagod">"Is There A God?"</a>. Fixed Point Foundation<span class="reference-accessdate">. Retrieved <span class="nowrap">1 September</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Is+There+A+God%3F&amp;rft.pub=Fixed+Point+Foundation&amp;rft_id=https%3A%2F%2Fvimeo.com%2Fondemand%2Fisthereagod&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=qA7qBtNMayQ">"Peter Singer vs John Lennox: Is There a God?"</a>. <i><a href="/wiki/YouTube" title="YouTube">YouTube</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">24 September</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=YouTube&amp;rft.atitle=Peter+Singer+vs+John+Lennox%3A+Is+There+a+God%3F&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DqA7qBtNMayQ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1215172403"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://evangelicalfocus.com/">"Authors"</a>. <i>Evangelical Focus</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Evangelical+Focus&amp;rft.atitle=Authors&amp;rft_id=https%3A%2F%2Fevangelicalfocus.com%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AJohn+Lennox" class="Z3988"></span></span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=John_Lennox&amp;action=edit&amp;section=7" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1217611005">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:#f9f9f9;display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><div class="side-box side-box-right plainlinks sistersitebox"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1126788409">
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <span style="font-weight: bold; font-style: italic;"><a href="https://commons.wikimedia.org/wiki/Category:John_Lennox" class="extiw" title="commons:Category:John Lennox">John Lennox</a></span>.</div></div>
+</div>
+<ul><li><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Wikiquote-logo.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/13px-Wikiquote-logo.svg.png" decoding="async" width="13" height="16" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/20px-Wikiquote-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/27px-Wikiquote-logo.svg.png 2x" data-file-width="300" data-file-height="355" /></a></span> Quotations related to <a href="https://en.wikiquote.org/wiki/Special:Search/John_Lennox" class="extiw" title="wikiquote:Special:Search/John Lennox">John Lennox</a> at Wikiquote</li>
+<li><a rel="nofollow" class="external text" href="https://www.johnlennox.org">Official website</a></li>
+<li><a rel="nofollow" class="external text" href="https://mathgenealogy.org/id.php?id=69823">John Lennox</a> at the <a href="/wiki/Mathematics_Genealogy_Project" title="Mathematics Genealogy Project">Mathematics Genealogy Project</a></li>
+<li><a rel="nofollow" class="external text" href="http://richarddawkins.net/articleComments,3240,Interview-with-John-Lennox,Tim-Bearder-BBC-Radio-Oxford,page2">Interview with John Lennox by Tim Bearder, BBC Radio Oxford</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20081229130444/http://richarddawkins.net/articleComments,3240,Interview-with-John-Lennox,Tim-Bearder-BBC-Radio-Oxford,page2">Archived</a> 29 December 2008 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>, 2008-10-16.</li>
+<li><a rel="nofollow" class="external text" href="http://www.premierradio.org.uk/listen/ondemand.aspx?mediaid={CD6D82AC-9A89-41D7-8D9E-F6712260177F}">Premier Christian Radio</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20130415183112/http://www.premierradio.org.uk/listen/ondemand.aspx?mediaid=%7BCD6D82AC-9A89-41D7-8D9E-F6712260177F%7D">Archived</a> 15 April 2013 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a> Radio debate on "Are we alone in the Universe?"</li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1228936124">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}</style></div><div role="navigation" class="navbox authority-control" aria-labelledby="Authority_control_databases_frameless&amp;#124;text-top&amp;#124;10px&amp;#124;alt=Edit_this_at_Wikidata&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q975795#identifiers&amp;#124;class=noprint&amp;#124;Edit_this_at_Wikidata" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Authority_control_databases_frameless&amp;#124;text-top&amp;#124;10px&amp;#124;alt=Edit_this_at_Wikidata&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q975795#identifiers&amp;#124;class=noprint&amp;#124;Edit_this_at_Wikidata" style="font-size:114%;margin:0 4em"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control databases</a> <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q975795#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></span></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">International</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://isni.org/isni/0000000081348105">ISNI</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://viaf.org/viaf/55605464">VIAF</a></span></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">National</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://authority.bibsys.no/authority/rest/authorities/html/90201355">Norway</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&amp;authority_id=XX1536450">Spain</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb15005177x">France</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://data.bnf.fr/ark:/12148/cb15005177x">BnF data</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://cantic.bnc.cat/registre/981058611257406706">Catalonia</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/123765021">Germany</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://olduli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007450148505171">Israel</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/n85308777">United States</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://libris.kb.se/31fjp0km4f31blx">Sweden</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://id.ndl.go.jp/auth/ndlna/001351402">Japan</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://aleph.nkp.cz/F/?func=find-c&amp;local_base=aut&amp;ccl_term=ica=xx0175791&amp;CON_LNG=ENG">Czech Republic</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://lod.nl.go.kr/resource/KAC201301970">Korea</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://katalog.nsk.hr/F/?func=direct&amp;doc_number=000615249&amp;local_base=nsk10">Croatia</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://data.bibliotheken.nl/id/thes/p32326655X">Netherlands</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://dbn.bn.org.pl/descriptor-details/9810535318905606">Poland</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://id.bnportugal.gov.pt/aut/catbnp/1787016">Portugal</a></span></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Academics</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://ci.nii.ac.jp/author/DA00873383?l=en">CiNii</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet/MRAuthorID/112530">MathSciNet</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://www.mathgenealogy.org/id.php?id=69823">Mathematics Genealogy Project</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://zbmath.org/authors/?q=ai:lennox.john-c">zbMATH</a></span></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://www.idref.fr/123302005">IdRef</a></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐687d5b87c4‐vsf9p
+Cached time: 20240710030529
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.657 seconds
+Real time usage: 0.893 seconds
+Preprocessor visited node count: 4429/1000000
+Post‐expand include size: 106114/2097152 bytes
+Template argument size: 4379/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 27/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 168243/5000000 bytes
+Lua time usage: 0.469/10.000 seconds
+Lua memory usage: 8245542/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  746.451      1 -total
+ 25.96%  193.751      1 Template:Infobox_scientist
+ 21.64%  161.501     23 Template:Cite_book
+ 16.23%  121.139      1 Template:Reflist
+ 13.26%   98.961      1 Template:Authority_control
+ 11.92%   88.999     26 Template:Cite_web
+  8.40%   62.708      1 Template:Short_description
+  7.10%   52.970      1 Template:Birth_date_and_age
+  5.82%   43.443      1 Template:Infobox
+  5.26%   39.237      2 Template:Pagetype
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:19722743-0!canonical and timestamp 20240710030529 and revision id 1233630002. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=John_Lennox&amp;oldid=1233630002">https://en.wikipedia.org/w/index.php?title=John_Lennox&amp;oldid=1233630002</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:1943_births" title="Category:1943 births">1943 births</a></li><li><a href="/wiki/Category:Living_people" title="Category:Living people">Living people</a></li><li><a href="/wiki/Category:20th-century_evangelicals" title="Category:20th-century evangelicals">20th-century evangelicals</a></li><li><a href="/wiki/Category:20th-century_mathematicians_from_Northern_Ireland" title="Category:20th-century mathematicians from Northern Ireland">20th-century mathematicians from Northern Ireland</a></li><li><a href="/wiki/Category:21st-century_evangelicals" title="Category:21st-century evangelicals">21st-century evangelicals</a></li><li><a href="/wiki/Category:21st-century_mathematicians_from_Northern_Ireland" title="Category:21st-century mathematicians from Northern Ireland">21st-century mathematicians from Northern Ireland</a></li><li><a href="/wiki/Category:Alumni_of_Cardiff_University" title="Category:Alumni of Cardiff University">Alumni of Cardiff University</a></li><li><a href="/wiki/Category:Alumni_of_Emmanuel_College,_Cambridge" title="Category:Alumni of Emmanuel College, Cambridge">Alumni of Emmanuel College, Cambridge</a></li><li><a href="/wiki/Category:Alumni_of_the_University_of_Surrey" title="Category:Alumni of the University of Surrey">Alumni of the University of Surrey</a></li><li><a href="/wiki/Category:Christian_apologists" title="Category:Christian apologists">Christian apologists</a></li><li><a href="/wiki/Category:Christianity_and_science" title="Category:Christianity and science">Christianity and science</a></li><li><a href="/wiki/Category:British_critics_of_atheism" title="Category:British critics of atheism">British critics of atheism</a></li><li><a href="/wiki/Category:Evangelicals_from_Northern_Ireland" title="Category:Evangelicals from Northern Ireland">Evangelicals from Northern Ireland</a></li><li><a href="/wiki/Category:Evangelical_writers" title="Category:Evangelical writers">Evangelical writers</a></li><li><a href="/wiki/Category:Fellows_of_Green_Templeton_College,_Oxford" title="Category:Fellows of Green Templeton College, Oxford">Fellows of Green Templeton College, Oxford</a></li><li><a href="/wiki/Category:Fellows_of_Wycliffe_Hall,_Oxford" title="Category:Fellows of Wycliffe Hall, Oxford">Fellows of Wycliffe Hall, Oxford</a></li><li><a href="/wiki/Category:Group_theorists" title="Category:Group theorists">Group theorists</a></li><li><a href="/wiki/Category:Intelligent_design_advocates" title="Category:Intelligent design advocates">Intelligent design advocates</a></li><li><a href="/wiki/Category:People_educated_at_The_Royal_School,_Armagh" title="Category:People educated at The Royal School, Armagh">People educated at The Royal School, Armagh</a></li><li><a href="/wiki/Category:People_from_Armagh_(city)" title="Category:People from Armagh (city)">People from Armagh (city)</a></li><li><a href="/wiki/Category:Protestant_philosophers" title="Category:Protestant philosophers">Protestant philosophers</a></li><li><a href="/wiki/Category:Scientists_from_County_Armagh" title="Category:Scientists from County Armagh">Scientists from County Armagh</a></li><li><a href="/wiki/Category:Theistic_evolutionists" title="Category:Theistic evolutionists">Theistic evolutionists</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_March_2020" title="Category:Use dmy dates from March 2020">Use dmy dates from March 2020</a></li><li><a href="/wiki/Category:Use_British_English_from_August_2011" title="Category:Use British English from August 2011">Use British English from August 2011</a></li><li><a href="/wiki/Category:Articles_with_hCards" title="Category:Articles with hCards">Articles with hCards</a></li><li><a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">CS1 maint: location missing publisher</a></li><li><a href="/wiki/Category:Commons_category_link_from_Wikidata" title="Category:Commons category link from Wikidata">Commons category link from Wikidata</a></li><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:Articles_with_ISNI_identifiers" title="Category:Articles with ISNI identifiers">Articles with ISNI identifiers</a></li><li><a href="/wiki/Category:Articles_with_VIAF_identifiers" title="Category:Articles with VIAF identifiers">Articles with VIAF identifiers</a></li><li><a href="/wiki/Category:Articles_with_BIBSYS_identifiers" title="Category:Articles with BIBSYS identifiers">Articles with BIBSYS identifiers</a></li><li><a href="/wiki/Category:Articles_with_BNE_identifiers" title="Category:Articles with BNE identifiers">Articles with BNE identifiers</a></li><li><a href="/wiki/Category:Articles_with_BNF_identifiers" title="Category:Articles with BNF identifiers">Articles with BNF identifiers</a></li><li><a href="/wiki/Category:Articles_with_BNFdata_identifiers" title="Category:Articles with BNFdata identifiers">Articles with BNFdata identifiers</a></li><li><a href="/wiki/Category:Articles_with_CANTICN_identifiers" title="Category:Articles with CANTICN identifiers">Articles with CANTICN identifiers</a></li><li><a href="/wiki/Category:Articles_with_GND_identifiers" title="Category:Articles with GND identifiers">Articles with GND identifiers</a></li><li><a href="/wiki/Category:Articles_with_J9U_identifiers" title="Category:Articles with J9U identifiers">Articles with J9U identifiers</a></li><li><a href="/wiki/Category:Articles_with_LCCN_identifiers" title="Category:Articles with LCCN identifiers">Articles with LCCN identifiers</a></li><li><a href="/wiki/Category:Articles_with_Libris_identifiers" title="Category:Articles with Libris identifiers">Articles with Libris identifiers</a></li><li><a href="/wiki/Category:Articles_with_NDL_identifiers" title="Category:Articles with NDL identifiers">Articles with NDL identifiers</a></li><li><a href="/wiki/Category:Articles_with_NKC_identifiers" title="Category:Articles with NKC identifiers">Articles with NKC identifiers</a></li><li><a href="/wiki/Category:Articles_with_NLK_identifiers" title="Category:Articles with NLK identifiers">Articles with NLK identifiers</a></li><li><a href="/wiki/Category:Articles_with_NSK_identifiers" title="Category:Articles with NSK identifiers">Articles with NSK identifiers</a></li><li><a href="/wiki/Category:Articles_with_NTA_identifiers" title="Category:Articles with NTA identifiers">Articles with NTA identifiers</a></li><li><a href="/wiki/Category:Articles_with_PLWABN_identifiers" title="Category:Articles with PLWABN identifiers">Articles with PLWABN identifiers</a></li><li><a href="/wiki/Category:Articles_with_PortugalA_identifiers" title="Category:Articles with PortugalA identifiers">Articles with PortugalA identifiers</a></li><li><a href="/wiki/Category:Articles_with_CINII_identifiers" title="Category:Articles with CINII identifiers">Articles with CINII identifiers</a></li><li><a href="/wiki/Category:Articles_with_MATHSN_identifiers" title="Category:Articles with MATHSN identifiers">Articles with MATHSN identifiers</a></li><li><a href="/wiki/Category:Articles_with_MGP_identifiers" title="Category:Articles with MGP identifiers">Articles with MGP identifiers</a></li><li><a href="/wiki/Category:Articles_with_ZBMATH_identifiers" title="Category:Articles with ZBMATH identifiers">Articles with ZBMATH identifiers</a></li><li><a href="/wiki/Category:Articles_with_SUDOC_identifiers" title="Category:Articles with SUDOC identifiers">Articles with SUDOC identifiers</a></li><li><a href="/wiki/Category:Place_of_birth_missing_(living_people)" title="Category:Place of birth missing (living people)">Place of birth missing (living people)</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 10 July 2024, at 03:04<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply. By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=John_Lennox&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" style="padding-left: 8px; padding-right: 8px;" href="https://wikimediafoundation.org/" target="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.svg" width="84" height="29" alt="Wikimedia Foundation"></a></li>
+	<li id="footer-poweredbyico"><a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" style="padding-left: 8px; padding-right: 8px;" href="https://www.mediawiki.org" target="https://www.mediawiki.org"><img src="/static/images/footer/poweredby_mediawiki.svg" width="84" height="29" alt="Powered by MediaWiki"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-687d5b87c4-pzcnj","wgBackendResponseTime":135,"wgPageParseReport":{"limitreport":{"cputime":"0.657","walltime":"0.893","ppvisitednodes":{"value":4429,"limit":1000000},"postexpandincludesize":{"value":106114,"limit":2097152},"templateargumentsize":{"value":4379,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":27,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":168243,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  746.451      1 -total"," 25.96%  193.751      1 Template:Infobox_scientist"," 21.64%  161.501     23 Template:Cite_book"," 16.23%  121.139      1 Template:Reflist"," 13.26%   98.961      1 Template:Authority_control"," 11.92%   88.999     26 Template:Cite_web","  8.40%   62.708      1 Template:Short_description","  7.10%   52.970      1 Template:Birth_date_and_age","  5.82%   43.443      1 Template:Infobox","  5.26%   39.237      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.469","limit":"10.000"},"limitreport-memusage":{"value":8245542,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-687d5b87c4-vsf9p","timestamp":"20240710030529","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"John Lennox","url":"https:\/\/en.wikipedia.org\/wiki\/John_Lennox","sameAs":"http:\/\/www.wikidata.org\/entity\/Q975795","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q975795","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2008-10-10T23:24:18Z","dateModified":"2024-07-10T03:04:13Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/eb\/John_Lennox_2015_%28cropped%29.jpg","headline":"Northern Irish mathematician and philosopher of science (b. 1943)"}</script>
+</body>
+</html>

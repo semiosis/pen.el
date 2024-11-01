@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: regex
+# group: regex
+# key: re
+# --
+{-# LANGUAGE PackageImports #-}
+import "regex-pcre" Text.Regex.PCRE
+
+boolToString :: Bool -> String
+boolToString True = "TRUE"
+boolToString False = "FALSE"
+
+putStrLn $ boolToString ("hello there" =~ "e" :: Bool)

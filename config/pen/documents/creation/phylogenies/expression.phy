@@ -1,0 +1,20 @@
+# An expression is a multi-modal work of art that expresses your feeling
+
+name: "Expression"
+
+creations:
+- feeling:
+  - ext: feeling
+  - repo: feelings
+  - next:
+    - idea
+  
+- idea:
+  - ext: idea
+  - repo: ideas
+  - next:
+    - expression
+  
+- expression:
+  - ext: exp
+  - repo: expressions

@@ -1,0 +1,8 @@
+trending sort
+    Based off of the default sorting method —
+    by highest score — but it boosts votes
+    that have happened recently, helping to
+    surface more up-to-date answers.
+    
+    It falls back to sorting by highest score
+    if no posts are trending.

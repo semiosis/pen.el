@@ -1,0 +1,6 @@
+cd /;  "carbonyl" "https://google.com" "#" "<==" "zsh"
+cd /;  "carbonyl" "#" "<==" "zsh"
+cd /;  "carbonyl" "https://google.com" "#" "<==" "zsh"
+cd /;  "carbonyl" "youtube.com" "#" "<==" "zsh"
+cd /;  "carbonyl" "https://youtube.com" "#" "<==" "zsh"
+cd /;  "carbonyl" "https://github.com/semiosis/thoughts-on-theology/blob/master/README.pdf" "#" "<==" "zsh"

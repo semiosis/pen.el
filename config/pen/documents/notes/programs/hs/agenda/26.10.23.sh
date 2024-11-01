@@ -1,0 +1,5 @@
+cd /root/notes;  "agenda" "#" "<==" "zsh"
+cd /root/notes;  "agenda" "#" "<==" "zsh"
+cd /root/notes;  "agenda" "#" "<==" "zsh"
+cd /root/notes;  "agenda" "#" "<==" "zsh"
+cd /root/notes;  "agenda" "#" "<==" "zsh"

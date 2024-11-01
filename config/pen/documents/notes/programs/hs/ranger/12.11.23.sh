@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el;  "ranger" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/bible;  "ranger" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/zhiyihuang/C-examples;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/documents/agenda;  "ranger" "#" "<==" "zsh"
+cd /root/.pen/org-brain;  "ranger" "#" "<==" "zsh"

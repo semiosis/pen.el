@@ -1,0 +1,1 @@
+ emacs -batch /etc/hosts -f '((lambda () (delete-matching-lines "apache"))))

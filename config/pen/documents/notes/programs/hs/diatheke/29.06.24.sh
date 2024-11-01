@@ -1,0 +1,6 @@
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-s" "phrase" "-o" "w" "-f" "plain" "-k" "causes your" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Romans 14:21;" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Romans 14:21" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1060" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Romans 14:17-22" "#" "<==" "in-pen"

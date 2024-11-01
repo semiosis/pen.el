@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: spacy/vectors
+# group: spacy
+# key: sy_v
+# --
+from spacy.vectors import Vectors
+
+empty_vectors = Vectors(shape=(10000, 300))
+
+data = numpy.zeros((3, 300), dtype='f')
+keys = [u"cat", u"dog", u"rat"]
+vectors = Vectors(data=data, keys=keys)

@@ -1,0 +1,2 @@
+ ;; Si non-nil alors le référentiel Spacelpa est la source primaire d'installation\n ;; d'une version de package verrouillée. Si nil alors Spacemacs installera la\n ;; dernière version des paquets à partir de MELPA. Spacelpa est actuellement\n ;; en phase expérimentale, merci de ne l'utiliser qu'en phase de test.\n ;; (default nil)
+

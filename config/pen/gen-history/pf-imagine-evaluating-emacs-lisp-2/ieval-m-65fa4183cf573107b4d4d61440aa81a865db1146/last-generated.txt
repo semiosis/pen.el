@@ -1,0 +1,4 @@
+;; price of vehicle
+;; arguments: (name)
+(message (eval '(price-of-vehicle "Ferrari F50")))
+--> 

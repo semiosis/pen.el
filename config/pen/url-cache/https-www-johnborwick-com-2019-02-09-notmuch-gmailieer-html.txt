@@ -1,0 +1,275 @@
+HTTP/1.1 200 OK
+keep-alive: timeout=5, max=100
+content-type: text/html
+last-modified: Sat, 18 Nov 2023 18:04:19 GMT
+accept-ranges: bytes
+vary: Accept-Encoding
+content-length: 4968
+date: Thu, 07 Dec 2023 05:50:01 GMT
+server: LiteSpeed
+x-turbo-charged-by: LiteSpeed
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Checking email with gmailieer + notmuch + Emacs | John’s web site</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Checking email with gmailieer + notmuch + Emacs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What I’ve learned so far in trying to check my email locally, rather than using Gmail." />
+<meta property="og:description" content="What I’ve learned so far in trying to check my email locally, rather than using Gmail." />
+<link rel="canonical" href="http://www.johnborwick.com/2019/02/09/notmuch-gmailieer.html" />
+<meta property="og:url" content="http://www.johnborwick.com/2019/02/09/notmuch-gmailieer.html" />
+<meta property="og:site_name" content="John’s web site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-09T00:00:00-08:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","datePublished":"2019-02-09T00:00:00-08:00","headline":"Checking email with gmailieer + notmuch + Emacs","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.johnborwick.com/2019/02/09/notmuch-gmailieer.html"},"url":"http://www.johnborwick.com/2019/02/09/notmuch-gmailieer.html","description":"What I’ve learned so far in trying to check my email locally, rather than using Gmail.","dateModified":"2019-02-09T00:00:00-08:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://www.johnborwick.com/feed.xml" title="John's web site" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">John&#39;s web site</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/archive.html">Web archive</a><a class="page-link" href="/wiki/">Wiki</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Checking email with gmailieer + notmuch + Emacs</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-02-09T00:00:00-08:00" itemprop="datePublished">Feb 9, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>
+In my continuing investigation of Emacs, I'm experimenting with checking email locally (i.e. on my computer) rather than using a web browser. I've used Gmail's web interface for my email for probably eight years at this point. Several years ago my friend recommended checking out <code>notmuch</code> for email; I poked around with it at the time but didn't understand what I was doing. Here's what I've figured out in trying to set this up again.
+</p>
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd050b08">1. Concepts</a></li>
+<li><a href="#orgc1545c8">2. Failed attempts</a></li>
+<li><a href="#org3c391fc">3. Shell work</a></li>
+<li><a href="#org177a239">4. Emacs setup</a></li>
+<li><a href="#orge380690">5. Next steps</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd050b08" class="outline-2">
+<h2 id="orgd050b08"><span class="section-number-2">1</span> Concepts</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Where we're going is:
+</p>
+
+<ol class="org-ol">
+<li><code>gmi</code> (<a href="https://github.com/gauteh/gmailieer">gmailieer</a>) is going to check gmail, both pulling messages and synchronizing labels/tags</li>
+<li><code>notmuch</code> is going to own the local machine's email indexing/tagging</li>
+<li>The <a href="https://notmuchmail.org/notmuch-emacs/">Notmuch Emacs interface</a> is going to own the actual MUA (mail user agent) work such as finding and reading emails</li>
+<li>Emacs's <a href="https://www.emacswiki.org/emacs/MessageMode">message-mode</a> will be used to send emails</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc1545c8" class="outline-2">
+<h2 id="orgc1545c8"><span class="section-number-2">2</span> Failed attempts</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+I tried to use <code>offlineimap</code> for this first. However, (a) I didn't know what I was doing at all and (b) getting Gmail's labels to align to notmuch's labels required lots of <a href="https://www.offlineimap.org/doc/nametrans.html">nametrans and folderfilter lambda functions</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3c391fc" class="outline-2">
+<h2 id="org3c391fc"><span class="section-number-2">3</span> Shell work</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Before Emacs is involved, a bunch of applications have to be installed and configured. First, <code>notmuch</code> and <code>gmailieer</code> have to be installed.
+</p>
+
+<p>
+These instructions are OS X+<a href="https://www.macports.org/">Macports</a> specific, but hopefully they are easy to understand and adapt to other platforms. These instructions also assume you have python-3.6, virtualenv, and virtualenvwrapper installed and virtualenvwrapper has been sourced in your current shell (i.e. you are actually using virtualenvwrapper).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">Make sure notmuch is installed:</span>
+sudo port install notmuch
+cat &gt; ~/.notmuch-config &lt;&lt;EOF
+<span style="color: #ffa54f;">[database]</span>
+<span style="color: #ffa54f;">path=~/Mail</span>
+<span style="color: #ffa54f;">[user]</span>
+<span style="color: #ffa54f;">name=John Borwick</span>
+<span style="color: #ffa54f;">primary_email=john_borwick@pobox.com</span>
+<span style="color: #ffa54f;">[new]</span>
+<span style="color: #ffa54f;">tags=new</span>
+<span style="color: #ffa54f;">ignore=</span>
+<span style="color: #ffa54f;">[search]</span>
+<span style="color: #ffa54f;">exclude_tags=deleted;spam;</span>
+<span style="color: #ffa54f;">[maildir]</span>
+<span style="color: #ffa54f;">synchronize_flags=true</span>
+<span style="color: #ffa54f;">[crypto]</span>
+<span style="color: #ffa54f;">gpg_path=gpg</span>
+<span style="color: #ffa54f;">EOF</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Create &amp; then use virtualenv. (mkvirtualenv does this)</span>
+mkvirtualenv --python=python3.6 gmailieer
+mkdir -p ~/build
+<span style="color: #483d8b;">cd</span> ~/build
+<span style="color: #b22222;"># </span><span style="color: #b22222;">install notmuch libraries. ideally this would be from the same</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">notmuch source as the above, but this works:</span>
+git clone https://git.notmuchmail.org/git/notmuch
+<span style="color: #483d8b;">cd</span> notmuch/bindings/python
+python setup.py install
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">install gmailieer:</span>
+<span style="color: #483d8b;">cd</span> ~/build
+git clone https://github.com/gauteh/gmailieer.git
+<span style="color: #483d8b;">cd</span> gmailieer
+python setup.py install
+<span style="color: #b22222;"># </span><span style="color: #b22222;">create notmuch database:</span>
+mkdir ~/Mail
+<span style="color: #483d8b;">cd</span> ~/Mail
+notmuch new
+<span style="color: #b22222;"># </span><span style="color: #b22222;">... ideally get a Google developer API certificate and call</span>
+<span style="color: #b22222;">#  </span><span style="color: #b22222;">gmi auth -c your-client-secrets.json</span>
+gmi init
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This changes gmi to pull the "promotions", "updates", etc tags:</span>
+gmi set --ignore-tags-remote <span style="color: #8b2252;">""</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">This is the step that takes forever:</span>
+gmi pull
+<span style="color: #b22222;"># </span><span style="color: #b22222;">make notmuch call gmi when 'notmuch new' is called:</span>
+mkdir -p .notmuch/hooks
+cat &gt; .notmuch/hooks/pre-new &lt;&lt;EOF
+<span style="color: #ffa54f;">#!/bin/sh</span>
+<span style="color: #ffa54f;">source ~/.virtualenvs/gmailieer/bin/activate</span>
+<span style="color: #ffa54f;">cd ~/Mail</span>
+<span style="color: #ffa54f;">gmi sync</span>
+<span style="color: #ffa54f;">EOF</span>
+chmod +x .notmuch/hooks/pre-new
+</pre>
+</div>
+
+<p>
+If all goes well, <code>gmi pull</code> will show a progress bar and when done, your gmail email will be on your computer with the same labels (notmuch "tags") that you have in gmail.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org177a239" class="outline-2">
+<h2 id="org177a239"><span class="section-number-2">4</span> Emacs setup</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+The other big step is configuring Emacs. Here's what I've done, all in my <code>~/.emacs.d/init.el</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #b22222;">; </span><span style="color: #b22222;">If I'm going to send email then I would like address completion. Therefore I'm going to</span>
+<span style="color: #b22222;">; </span><span style="color: #b22222;">use Big Brother database, for contacts:</span>
+(<span style="color: #a020f0;">when</span> (not (<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">bbdb</span> nil t))
+           (package-refresh-contents)
+           (package-install 'bbdb))
+<span style="color: #b22222;">; </span><span style="color: #b22222;">Notmuch for Emacs:</span>
+(<span style="color: #a020f0;">when</span> (not (<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">notmuch</span> nil t))
+           (package-refresh-contents)
+           (package-install 'notmuch))
+<span style="color: #b22222;">; </span><span style="color: #b22222;">want org-plus-contrib to get org-notmuch:</span>
+(add-to-list 'package-archives '(<span style="color: #8b2252;">"org"</span> . <span style="color: #8b2252;">"http://orgmode.org/elpa/"</span>) t)
+(<span style="color: #a020f0;">when</span> (not (<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-plus-contrib</span> nil t))
+           (package-refresh-contents)
+           (package-install 'org-plus-contrib))
+(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">bbdb</span>)
+(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-notmuch</span>)
+
+<span style="color: #b22222;">; </span><span style="color: #b22222;">configure outgoing SMTP (so you can send messages):</span>
+(<span style="color: #a020f0;">setq</span> smtpmail-smtp-server <span style="color: #8b2252;">"smtp.gmail.com"</span>
+      smtpmail-smtp-service 587)
+</pre>
+</div>
+
+<p>
+I wouldn't be surprised if there are other things missing from the above, but I think that's most of the config. Once everything is set up, you should be able to run <code>M-x notmuch</code>.
+</p>
+
+<p>
+Within notmuch, <code>G</code> calls <code>notmuch new</code>, which due to the <code>pre-new</code> script in <a href="#org3c391fc">Shell work</a>, above, will call <code>gmi sync</code> to receive new mail and send any label changes.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge380690" class="outline-2">
+<h2 id="orge380690"><span class="section-number-2">5</span> Next steps</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+I've begun to build my notmuch-specific tags:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #483d8b;">cd</span> ~/Mail
+cat &gt; .notmuch/hooks/post-new &lt;&lt;EOF
+<span style="color: #ffa54f;">#!/bin/sh</span>
+<span style="color: #ffa54f;">notmuch tag +to_me -- to:john_borwick@pobox.com and -tag:to_me</span>
+<span style="color: #ffa54f;">notmuch tag +to_me -- to:my-other-email@example.com and -tag:to_me</span>
+<span style="color: #ffa54f;">EOF</span>
+chmod +x ~/.notmuch/hooks/post-new
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Run this script for the first time:</span>
+.notmuch/hooks/post-new
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Synchronize these new labels with gmail:</span>
+gmi sync
+</pre>
+</div>
+
+<p>
+The <code>post-new</code> script can be used to add other tags. Also, the above configuration gives every message a notmuch <code>new</code> tag (that isn't synchronized to Google); you can add that tag to your logic if you only want to parse emails that have recently come in. You can also add other labels (such as this <code>to_me</code> label) to your local labels to ignore; please check <a href="https://github.com/gauteh/gmailieer">the gmailieer documentation</a> on how to do this.
+</p>
+</div>
+</div>
+
+  </div><a class="u-url" href="/2019/02/09/notmuch-gmailieer.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">John&#39;s web site</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">John&#39;s web site</li><li><a class="u-email" href="mailto:john_borwick@pobox.com">john_borwick@pobox.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/borwick"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">borwick</span></a></li><li><a href="https://www.linkedin.com/in/borwick"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">borwick</span></a></li><li><a href="https://www.twitter.com/borwick"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">borwick</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Neat stuff John likes.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

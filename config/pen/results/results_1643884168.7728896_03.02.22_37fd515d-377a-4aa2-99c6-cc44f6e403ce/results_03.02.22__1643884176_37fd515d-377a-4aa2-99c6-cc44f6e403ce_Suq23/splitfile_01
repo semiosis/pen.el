@@ -1,0 +1,5 @@
+
+(defn set-stub-dirs []
+  (->> (conj (map #(str "/" %) (pensieve/get-directories)) "/")
+       (into [])))
+

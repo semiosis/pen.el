@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: MonoDevelop
+# contributor: Toptal & contributors
+# key: monodevelop
+# --
+
+### MonoDevelop ###
+
+#User Specific
+*.userprefs
+*.usertasks
+
+#Mono Project Files
+*.pidb
+*.resources
+test-results/

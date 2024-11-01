@@ -1,0 +1,18 @@
+
+  (let ((n (- char 1)))
+    (cond ((< n 0)
+           "")
+          ((<= n 26)
+           (char-to-string (+ ?a n)))
+          ((< n 52)
+           (concat "A" (char-to-string (+ (- 26 n) 1))))
+          ((< n 78)
+           (concat "B" (char-to-string (+ (- 52 n) 1)))))))
+
+(defun pen-modeline-buffer ()
+  (let* ((bn (buffer-name))
+         (pfx (if (>= (length bn) 4)
+                  (substring bn 0 4) ""))
+         (sfx (if (>= (length bn) 4)
+                  (substring bn -4 nil) ""))
+         ;;(pfx "pen") ; for testing only, comment out above

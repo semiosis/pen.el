@@ -1,0 +1,28 @@
+rules
+    2 Rules:
+    - Every number corresponds to two sets of
+      previously created numbers, such that no
+      member of the left set is greater than
+      or equal to any member of the right set.
+    
+    - One number is less than or equal to
+      another number if and only if no member
+      of the first number's left set is
+      greater than or equal to the second
+      number, and no member of the second
+      number's right set is less than or equal
+      to the first number."
+
+0
+Zero
+    {:}
+    
+    Conway proved that zero was less than or
+    equal to zero, and he saw that it was
+    good.
+    
+    And the evening and the morning were the
+    day of zero.
+    
+    On the next day, two more numbers were
+    created, one

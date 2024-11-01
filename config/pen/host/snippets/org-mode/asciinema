@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: asciinema
+# group: asciinema
+# key: asciinema
+# --
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<a title="asciinema recording" href="https://asciinema.org/a/${1:Mmi1niX76Llg6JigBGFg518LV}" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/$1.svg" /></a>
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/$1.js" id="asciicast-$1" async></script>
+#+END_EXPORT
+$0

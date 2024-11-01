@@ -1,0 +1,7 @@
+cd /root/.pen/glossaries;  "Daniel" "4" "#" "<==" "zsh"
+cd /root/.pen/glossaries;  "Daniel" "4" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Daniel" "4:30-33" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Daniel" "4:30-34" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Daniel" "4:37" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Daniel" "4:30-33" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Daniel" "4:30-34" "#" "<==" "zsh"

@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: spacy/matcher
+# group: spacy
+# key: sy_matcher
+# --
+from spacy.matcher import Matcher
+matcher = Matcher(nlp.vocab)
+
+# Add patterns / matcher rules
+matcher.add("PATTERN1", None, pattern1)
+## I do not know the true names for these named arguments
+# matcher.add(id="PATTERN1", on_match=my_callback, pattern1, pattern1, pattern_etc)
+# an ID key, an on_match callback, and one or more patterns.
+
+for doc in matcher.pipe(docs, batch_size=50):
+    pass

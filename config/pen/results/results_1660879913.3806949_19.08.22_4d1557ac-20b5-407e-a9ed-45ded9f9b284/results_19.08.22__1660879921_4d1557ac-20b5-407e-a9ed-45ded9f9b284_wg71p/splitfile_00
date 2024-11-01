@@ -1,0 +1,10 @@
+"hosts" is a simple keyword that is used to specify the hosts on which the tasks will be executed.
+
+The hosts keyword can be used in two ways:
+
+1. It can be used to specify the hosts on which the tasks will be executed.
+2. It can be used to specify the hosts on which the tasks will be executed, but also to specify the hosts on which the tasks will be executed.
+
+The following examples show how to use hosts:
+
+1. The following

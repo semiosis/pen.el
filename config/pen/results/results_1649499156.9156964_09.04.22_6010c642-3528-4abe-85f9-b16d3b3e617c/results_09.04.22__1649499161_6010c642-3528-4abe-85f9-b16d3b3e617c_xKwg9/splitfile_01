@@ -1,0 +1,6 @@
+
+- you: <list of questions>.""")
+    def test_list_questions(self):
+        response = what_can_I_ask()
+        self.assertEqual(response, """\
+-

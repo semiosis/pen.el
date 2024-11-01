@@ -1,0 +1,15 @@
+# if defined(__GLASGOW_HASKELL__)
+# if __GLASGOW_HASKELL__ >= 704
+# define USE_LIBFFI
+# endif
+#endif
+import Data.List (isPrefixOf, intercalate)
+#ifdef USE_LIBFFI
+import Foreign.ForeignPtr (ForeignPtr, withForeignPtr, mallocPlainForeignPtrBytes)
+#endif
+import Control.Applicative ((<$>), (<*>)) -- (fmap, liftA2)
+#ifndef USE_LIBFFI
+import Control.Exception (assert) -- assert failure if expression throws an error.
+#endif
+import Control.Monad (when, forM_) -- forM_ is not in base and is not in hindent in haskell-src-meta either...
+using Interwiki.Types 	= [String]

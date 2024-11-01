@@ -1,0 +1,5 @@
+", :grade => "3.5", :interest => "Strategy", :user_id => "2"}
+])
+Interest.create!([
+  { :name => "Coding"},
+  { :name =>

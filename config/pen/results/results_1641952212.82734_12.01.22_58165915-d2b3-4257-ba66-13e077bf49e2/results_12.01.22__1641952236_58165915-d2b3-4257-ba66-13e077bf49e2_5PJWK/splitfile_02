@@ -1,0 +1,14 @@
+- 1. Schaufelberg (1941-1998)
+- 2. Fripp (1946-)
+- 3. Bruford (1948-)
+"""
+
+
+class TestTopic(unittest.TestCase):
+    def setUp(self):
+        self.data = """
+        title: Zen and The Art of Motorcycle Maintenance -Robert Pirsig-
+        url: https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance#cite_note-1
+        citations: [1] -[2] -[3] -[4] -[5] -[6]
+        topic_number: 7
+

@@ -1,0 +1,17 @@
+
+  -- "You are <age> years old"
+  -- age <- read <stdin>
+  -- putStrLn $ "You are " ++ show age ++ " years old"
+  -- putStrLn $ "You are " ++ show (read <stdin>) ++ " years old"
+
+  -- Read in from the user a person's age
+  -- Then, print the age back to the user within a sentence
+  -- "You are <age> years old"
+  -- age <- read <stdin>
+  -- putStrLn $ "You are " ++ show age ++ " years old"
+
+  -- Read in from the user a person's age
+  -- Then, print the age back to the user within a sentence
+  -- "You are <age> years old"
+  -- age <- read <stdin>
+  -- putStrLn $ "You are " ++ show

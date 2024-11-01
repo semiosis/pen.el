@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: consecutive combinations
+# group: 
+# key: cc
+# --
+n = 5
+list(zip(*(tks[i:] for i in range(n))))

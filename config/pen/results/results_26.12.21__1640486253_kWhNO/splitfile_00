@@ -1,0 +1,2 @@
+ ;; Si non-nil alors le dépôt Spacelpa est la source primaire utilisée\n ;; pour installer une version verrouillée des paquets. Si nil alors\n ;; Spacemacs utilisera le dépôt MELPA pour installer les paquets.\n ;; (default nil)
+

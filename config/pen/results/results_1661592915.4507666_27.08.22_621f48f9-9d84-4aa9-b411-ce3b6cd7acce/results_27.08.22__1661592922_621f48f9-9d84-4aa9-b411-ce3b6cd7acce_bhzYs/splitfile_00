@@ -1,0 +1,5 @@
+do
+  let colWidths = maximumBy (compare `on` length) $ map length rows
+  mapM_ (\row -> do
+    mapM_ (\(s, i) -> putStrLn $ s ++ replicate (colWidths !! i - length s) " ") row) rows
+EOD

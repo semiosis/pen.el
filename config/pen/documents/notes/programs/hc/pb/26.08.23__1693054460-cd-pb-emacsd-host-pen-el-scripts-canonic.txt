@@ -1,0 +1,7 @@
+cd ; pb /root/.emacs.d/host/pen.el/scripts/canonicalise-bible-book-title.cl # "<==" zsh
+http://ix.io/4EAy/cl
+#!/usr/bin/env -S sbcl-compile-run
+;; #!sbcl --script
+
+;; TODO use the proper roswell scripting technique
+;; https://fukamachi.hashnode.dev/day-3-roswell-common-lisp-scripting

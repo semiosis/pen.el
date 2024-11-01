@@ -1,0 +1,53 @@
+ialization(main).
+
+main :-
+	write('Hello, world!'), nl,
+	halt.
+EOD
+
+cat draft.prolog.1 <<EOD
+:- initialization(main).
+
+main :- 
+	write('Hello, world!'), nl, 
+	halt.
+EOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# prolog files with comments and empty lines in between clauses

@@ -1,0 +1,40 @@
+task: "synonym"
+tags: prose nlp-task
+aliases:
+- synonym
+- thesaurus
+- word for
+doc: "Given a word or phrase, find alternates"
+prompt-version: 3
+prompt: |+
+  Thesaurus:
+  <delim>
+  3 ways to say "get stuck":
+  - "paint into a corner"
+  - "become frozen in place"
+  - "become fastened"
+  <memory><delim>
+  <:mem>5 other words for and ways of saying <q:phrase>:
+  <:pp>- "
+engine: "OpenAI Davinci"
+force-engine: "OpenAI Davinci"
+temperature: 0.7
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+n-completions: 5
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "phrase"
+postprocessor: sed "s/^-*\\s*//" | sed -e "s/^\"\\(.*\\)\"$/\\1/" -e "s/^\"$//" | uq -l
+validator: grep -v '"' | grep -qiP "^[a-z ]*$"
+split-patterns:
+- "\n"
+examples:
+- "The misinterpretation"
+filter: on
+completion: off
+insertion: off
+external-related:
+- "https://arxiv.org/abs/2201.06009"

@@ -1,0 +1,41 @@
+cucumber
+    [tool]
+
+    A tool that supports BDD.
+
+    Reads executable specifications written in
+    plain text and validates that the software
+    does what those specifications say.
+    
+    The specifications consists of multiple
+    examples, or scenarios.
+
+Gherkin
+    [language]
+
+    A simple set of grammar rules that makes
+    plain text structured enough for Cucumber
+    to understand.
+    
+    The scenario above is written in Gherkin.
+
+    Serves multiple purposes:
+    - Unambiguous executable specification
+    - Automated testing using Cucumber
+    - Document how the system actually behaves
+    
+Behaviour-driven development
+BDD
+    [agile]
+
+    https://cucumber.io/docs/guides/overview/
+
+    An Agile software development process that
+    encourages collaboration among developers,
+    QA and non-technical or business
+    participants in a software project.
+    
+    It encourages teams to use conversation
+    and concrete examples to formalize a
+    shared understanding of how the
+    application should behave.

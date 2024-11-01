@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: SourcePawn
+# contributor: Toptal & contributors
+# key: sourcepawn
+# --
+
+### SourcePawn ###
+
+# SourcePawn
+*.dll # extensions
+*.so # extensions
+*.smx # plugins

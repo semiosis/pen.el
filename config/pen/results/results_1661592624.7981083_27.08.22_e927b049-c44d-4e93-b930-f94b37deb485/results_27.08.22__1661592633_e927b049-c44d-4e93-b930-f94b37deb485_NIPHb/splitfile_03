@@ -1,0 +1,14 @@
+ a list of objects, one for each record.
+  objects <- map (fromList . fmap (\m -> m {-caret-})) maps
+
+  -- Convert the list of objects into a list of values, one for each record.
+  values <- map (map (\o -> o {-caret-})) objects
+
+  -- Convert the list of values into a list of lists, one for each record.
+  lists <- map (map (\v -> v {-caret-})) values
+
+  -- Convert the list of lists into a list of tuples, one for each record.
+  tuples <- map (map (\l -> l {-caret-})) lists
+
+  -- Convert the list of tuples into a list of records, one for each line in the CSV file.
+  records' <- map (fromList . fmap (\t -> t {-caret-

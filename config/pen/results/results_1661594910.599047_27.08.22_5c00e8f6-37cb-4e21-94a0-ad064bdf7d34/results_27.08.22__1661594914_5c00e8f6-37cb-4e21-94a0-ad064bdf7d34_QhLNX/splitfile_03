@@ -1,0 +1,1 @@
+- haskell guru: Data.ByteString.Lazy exports two modules (ByteString and ByteString.Char8) which implement "laziness" for the ByteString type.

@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index.html" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index.html" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index.html" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts;  "elinks" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-sermonindex-net-modules-articles-index-php/www.sermonindex.net/modules/articles/index.html" "#" "<==" "bash"

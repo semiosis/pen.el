@@ -1,0 +1,26 @@
+title: code generator from description
+doc: Language agnostic
+prompt-version: 1
+tags: code
+engine: OpenAI Davinci
+# model: GPT-J-6B
+temperature: 0.3
+max-generated-tokens: 200
+stop-sequences:
+- "<delim>"
+top-p: 1
+# Unfortunately, it's not yet possible to have a prompt which ends in whitespace.
+# It would really help with suggesting the comments have finished.
+prompt: |+
+  Language: `(pen-detect-language)``(comment-line 3)`
+  Description: The following code is an implementation of <code description>:
+  Code:
+  >
+vars:
+- code description
+postprocessor: sed 1,3d | sed "/^[^>]/q" | sed -e "\$d" -e "s/^> *//"
+end-yas: on
+# The start will not be trimmed
+insertion: on
+# I guess that this would usually be done manually
+continuation-prompt: Generic completion 50 tokens

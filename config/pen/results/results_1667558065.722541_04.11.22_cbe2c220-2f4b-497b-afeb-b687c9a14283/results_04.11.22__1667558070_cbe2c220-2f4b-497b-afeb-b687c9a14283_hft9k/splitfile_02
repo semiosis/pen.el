@@ -1,0 +1,1 @@
+- haskell guru: unless is an infix function that is similar to if-else, but it takes the result of the condition as the condition.

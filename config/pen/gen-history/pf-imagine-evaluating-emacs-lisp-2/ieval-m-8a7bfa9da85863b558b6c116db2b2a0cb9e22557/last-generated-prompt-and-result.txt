@@ -1,0 +1,3 @@
+;; Run function define
+(message (eval '(define "watermelon")))
+--> "watermelon"

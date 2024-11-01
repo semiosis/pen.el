@@ -1,0 +1,7 @@
+
+class File
+  def self.getattr(path)
+    File.new(path).stat
+  end
+end
+

@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Galatians" "5:18" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Galatians" "5:18-23" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Galatians" "5:18-20" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Galatians" "5:18-21" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Galatians" "4:18-19" "#" "<==" "zsh"

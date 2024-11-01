@@ -1,0 +1,11 @@
+
+travelToSchool :: String -> IO ()
+travelToSchool weather = do
+    -- if weather == "sunny"
+    -- then putStrLn "I'm walking to school"
+    -- else putStrLn "I'm driving to school"
+    if weather == "sunny"
+    then putStrLn "I'm walking to school"
+    else if weather == "rainy"
+    then putStrLn "I'm driving to school"
+    else putStrLn "I'm driving to school"

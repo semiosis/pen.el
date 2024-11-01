@@ -1,0 +1,3 @@
+;; Run function make-short-story
+(message (eval '(make-short-story "hello")))
+--> 

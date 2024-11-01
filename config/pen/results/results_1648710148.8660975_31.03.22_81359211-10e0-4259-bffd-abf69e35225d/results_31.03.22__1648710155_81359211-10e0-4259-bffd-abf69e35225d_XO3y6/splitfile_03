@@ -1,0 +1,11 @@
+{-# LANGUAGE NoMonomorphismRestriction #-}
+
+module Test.HUnit where
+
+import Test.HUnit
+import Test.QuickCheck
+
+quickCheckWith stdArgs { maxSize = 10 } $
+  prop_reverse_reverse =
+    forAll $ \(x : [Int]) ->
+      x == reverse (reverse

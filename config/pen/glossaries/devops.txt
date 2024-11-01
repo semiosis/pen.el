@@ -1,0 +1,119 @@
+GitOps
+    [methodology]
+
+    https://about.gitlab.com/topics/gitops/
+
+    An operational framework that takes DevOps
+    best practices used for application
+    development such as version control,
+    collaboration, compliance, and CI/CD
+    tooling, and applies them to
+    infrastructure automation.
+
+    GitOps is not a single product, plugin, or
+    platform.
+    
+    There is no one-size-fits-all answer to
+    this question, as the best way for teams
+    to put GitOps into practice will vary
+    depending on the specific needs and goals
+    of the team.
+    
+    However, some tips on how to get started
+    with GitOps include:
+    - using a dedicated GitOps repository for
+      all team members to share configurations
+      and code,
+    - automating the deployment of code
+      changes, and
+    - setting up alerts to notify the team
+      when changes occur.
+
+Self-healing
+    The property that enables a system to
+    perceive that it is not operating
+    correctly and, without (or with) human
+    intervention, make the necessary
+    adjustments to restore itself to normalcy.
+
+swarm
+    [docker]
+
+    Example:
+    - Assign _N_ managers for the Docker Swarm
+    - Add _M_ nodes or ‘workers’ to the Swarm
+    - Run a test service across all machines
+
+    Anybody that is already familiar with
+    Docker knows the limitations of running
+    standalone containers in production.
+    
+    Containers are ephemeral and without
+    proper scheduling and orchestration they
+    may fail or stop running.
+    
+    Docker Swarm solves many of these
+    challenges by introducing powerful
+    container orchestration that allows
+    services to be scheduled across multiple
+    hosts.
+    
+    Services can be scheduled across multiple
+    hosts in the Swarm and each service may
+    run multiple containers, ensuring maximum
+    reliability and performance.
+
+Serverless computing
+    https://landscape.cncf.io/category=continuous-integration-delivery&format=serverless&grouping=no
+
+    A cloud computing execution model in which
+    the cloud provider runs the server, and
+    dynamically manages the allocation of
+    machine resources.
+    
+    Pricing is based on the actual amount of
+    resources consumed by an application,
+    rather than on pre-purchased units of
+    capacity.
+
+Kubernetes
+    An open-source system for automating
+    deployment, scaling, and management of
+    containerized applications.
+
+Docker
+    A container management that can
+    consistently run software as long as a
+    containerization system exists.
+
+overcommited
+    Oblige (someone) to do more than they are
+    capable of, especially to repay a loan
+    they cannot afford.
+
+    Allocate more (resources) to a purpose
+    than can be provided.
+
+    https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
+
+domain controller
+DC
+    A server computer that responds to
+    security authentication requests within a
+    computer domain.
+    
+    It is a server on a network that is
+    responsible for allowing host access to
+    domain resources.
+    
+    It authenticates users, stores user
+    account information and enforces security
+    policy for a domain.
+
+shift-left
+    Dev <-> Opts
+
+shift-right
+    Dev <-> Opts
+
+CICO

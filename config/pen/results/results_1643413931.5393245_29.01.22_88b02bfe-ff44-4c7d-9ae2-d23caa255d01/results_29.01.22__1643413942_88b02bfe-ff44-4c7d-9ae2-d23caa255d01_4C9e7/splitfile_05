@@ -1,0 +1,11 @@
+
+          (funcall fun)
+          (pen-complete-line-maybe preceding-text tv)))
+    (pen-complete-line preceding-text tv)))
+
+(defun pen-complete-word (preceding-text &optional tv)
+  "Word completion"
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-word-complete
+          (pen-complete

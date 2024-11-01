@@ -1,0 +1,9 @@
+;; Run function make-short-story
+(message (eval '(make-short-story)))
+--> "The quick brown fox jumps over the lazy dog."
+
+
+
+;; Run function make-short-story
+(message (eval '(make-short-story "hello")))
+--> 

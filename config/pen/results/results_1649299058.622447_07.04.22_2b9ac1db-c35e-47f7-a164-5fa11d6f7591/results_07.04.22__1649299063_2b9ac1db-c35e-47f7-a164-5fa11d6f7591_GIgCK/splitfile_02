@@ -1,0 +1,7 @@
+
+
+nvm install v0.10.36
+
+Use a specific node version::
+
+nvm use v0.10.36

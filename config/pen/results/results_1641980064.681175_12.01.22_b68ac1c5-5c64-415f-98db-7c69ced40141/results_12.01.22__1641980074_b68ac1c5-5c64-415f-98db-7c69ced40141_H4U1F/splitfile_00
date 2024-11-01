@@ -1,0 +1,19 @@
+
+
+'The time has come the walrus said
+To speak of many things:
+Of shoes and ships and sealing-wax
+Of cabbages and kings
+And why the sea is boiling hot
+And whether pigs have wings.'''
+import re
+
+
+def remove_duplicate_spaces(text):
+    return re.sub(' +', ' ', text.strip())
+
+
+def normalize_text(text, from_form='NFKD', to_form='NFKD'):
+    return text.translate({c: None for c in [i for i in range(128)] if chr(i).isascii()}) \
+        .translate({ord(char): None for char in '"`()[]{}!?@#$%^&*/|\\<>,.:;~1234567890'}) \
+        .translate({ord('\n'

@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "Matthew" "5" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "Matthew" "19" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Matthew" "25:1-13" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Matthew" "25:1-46" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Matthew" "25:1-13" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Matthew" "25:1-46" "#" "<==" "withopts"

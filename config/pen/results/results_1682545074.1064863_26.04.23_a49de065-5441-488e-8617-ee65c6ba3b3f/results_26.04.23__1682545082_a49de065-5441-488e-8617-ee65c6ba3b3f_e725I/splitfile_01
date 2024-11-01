@@ -1,0 +1,11 @@
+"ScopedTypeVariables" is a GHC extension that allows you to write type signatures that are more general than the type they are written in.
+
+For example, in the following code, the type signature for "f" is more general than the type of "f" itself.
+
+{-# LANGUAGE ScopedTypeVariables #-}
+
+f :: forall a. (Num a, Show a) => a -> String
+
+f x = show x
+
+The type signature for "

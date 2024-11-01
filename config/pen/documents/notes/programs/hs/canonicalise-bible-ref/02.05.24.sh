@@ -1,0 +1,8 @@
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/.pen/documents/agenda;  "canonicalise-bible-ref" "#" "<==" "bash"
+cd /root/.pen/documents/agenda;  "canonicalise-bible-ref" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "canonicalise-bible-ref" "#" "<==" "bash"

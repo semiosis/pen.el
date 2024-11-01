@@ -1,0 +1,65 @@
+ntpsec
+    https://www.ntpsec.org/
+
+    A secure, hardened, and improved
+    implementation of Network Time Protocol
+    derived from NTP Classic, Dave Mills’s
+    original.
+    
+    NTPsec, as its name implies, is a more
+    secure NTP.
+    
+    Our goal is to deliver code that can be
+    used with confidence in deployments with
+    the most stringent security, availability,
+    and assurance requirements.
+
+    v +/"11:28 < aidalgol> twb: How long did it take you to figure out what the minimum you need to allow is for core services like ntpsec?" "$NOTES/remember.org"
+
+Internet Security Research Group
+ISRG
+
+Let's Encrypt
+    A free, automated, and open certificate
+    authority brought to you by the nonprofit
+    ISRG.
+
+on-prem
+    On premesis.
+
+    ewwlinks +/"on-prem" "https://hackernoon.com/continuous-integration-circleci-vs-travis-ci-vs-jenkins-41a1c2bd95f5"
+
+jump server
+jump host
+jump box
+    A system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.
+
+docker for aws
+docker for azure
+    https://beta.docker.com/
+
+Docker Swarm
+Swarm mode
+    A Docker Swarm is a group of either
+    physical or VMs that are running the
+    Docker application and that have been
+    configured to join together in a cluster.
+    
+    Docker swarm is a container orchestration
+    tool, meaning that it allows the user to
+    manage multiple containers deployed across
+    multiple host machines.
+
+    The cluster management and orchestration
+    features embedded in the Docker engine.
+    
+    You can easily deploy to a swarm using a
+    file that declares your desired state for
+    the app.
+    
+    Swarm allows you to run your containers on
+    more than one machine.
+    
+    Alternately, you can use Docker Machine to
+    create a number of local nodes on your
+    development machine.

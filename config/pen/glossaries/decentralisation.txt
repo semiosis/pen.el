@@ -1,0 +1,47 @@
+decentralised
+federated
+    Applications whose main purpose is
+    fulfilled as part of a network, where that
+    network is not reliant on any preordained
+    nodes.
+
+distributed
+peer to peer
+    [decentralised]
+
+IPFS
+    IPFS allows users to host and receive
+    content in a manner similar to BitTorrent.
+    
+    As opposed to a centrally located server,
+    IPFS is built around a decentralized
+    system of user-operators who hold a
+    portion of the overall data, creating a
+    resilient system of file storage and
+    sharing.
+    
+    Any user in the network can serve a file
+    by its content address, and other peers in
+    the network can find and request that
+    content from any node who has it using a
+    distributed hash table (DHT).
+    
+    In contrast to BitTorrent, IPFS aims to
+    create a single global network.
+    
+    This means that if two users publish a
+    block of data with the same hash, the
+    peers downloading the content from "user
+    1" will also exchange data with the ones
+    downloading it from "user 2".
+    
+    IPFS aims to replace protocols used for
+    static webpage delivery by using gateways
+    which are accessible with HTTP.
+    
+    Users may choose not to install an IPFS
+    client on their device and instead use a
+    public gateway.
+    
+    A list of these gateways is maintained on
+    the IPFS GitHub page.

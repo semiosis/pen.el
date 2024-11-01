@@ -1,0 +1,2 @@
+The above code creates a data type called GameState with two fields, numberToGuess and numTries.
+The fields are both of type Integer.

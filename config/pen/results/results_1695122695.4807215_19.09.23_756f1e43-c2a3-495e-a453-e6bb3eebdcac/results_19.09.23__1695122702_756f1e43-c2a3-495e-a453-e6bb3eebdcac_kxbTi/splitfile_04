@@ -1,0 +1,11 @@
+ FLEET
+
+while true; do
+echo '
+
+'
+echo "The program has started"
+
+echo "Please wait until the program finishes"
+
+echo "Press CTRL+C to Interrupt the program"

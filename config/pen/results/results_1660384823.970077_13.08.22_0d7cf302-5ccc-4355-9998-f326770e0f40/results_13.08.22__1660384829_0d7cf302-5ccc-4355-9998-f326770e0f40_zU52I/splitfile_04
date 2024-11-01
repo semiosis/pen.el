@@ -1,0 +1,6 @@
+The above code is a Haskell module declaration. The module declaration is
+required for Haskell programs. The module declaration is a list of
+declarations, each declaration is a list of names of the form x1, x2, ..., xn
+where n >= 0. The names x1, x2, ..., xn are the names of the declarations in
+the module. The declarations are separated by commas. The declarations are
+optional. The module declaration is followed by a where keyword.

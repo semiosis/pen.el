@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: let deactivate-mark nil
+# group: 
+# key: dmn
+# --
+(let* ((deactivate-mark nil))
+`yas-selected-text`$0)

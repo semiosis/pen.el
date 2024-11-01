@@ -1,0 +1,21 @@
+dimension
+    https://github.com/facebook/duckling/blob/master/exe/CustomDimensionExample.hs
+
+    Learn to create custom dimensions.
+
+    cd "$MYGIT/facebook/duckling"; stack install
+    custom-dimension-example
+
+language
+    sp +/"To add a new language:" "$HOME/var/smulliga/source/git/facebook/duckling/README.md"
+
+
+locale
+    sp +/"To add a new locale:" "$HOME/var/smulliga/source/git/facebook/duckling/README.md"
+
+rule
+    Rules have a name, a pattern and a
+    production.
+
+corpus
+    vim +/"mkdir \"\$l/corpus\"" "$MYGIT/facebookarchive/duckling_old/bin/add-new-language.sh"

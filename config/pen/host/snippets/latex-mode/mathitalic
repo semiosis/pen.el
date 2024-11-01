@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: math gives text italic letters
+# group: math
+# key: mit
+# --
+\mathit{`yas-selected-text`$0}

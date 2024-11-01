@@ -1,0 +1,18 @@
+# pen-openai-list-engines
+# https://help.openai.com/en/articles/5832130-what-s-changed-with-engine-names-and-best-practices
+
+engine-title: OpenAI Davinci Instruct v3
+lm-command: "openai-complete.sh"
+# model: davinci-instruct-beta-v3
+model: text-davinci-001
+engine-delimiter: "\"\"\""
+foundation: true
+modes:
+- search
+- classification
+specialities:
+- nltask
+libre-dataset: no
+libre-model: no
+local: no
+upstream-engine: OpenAI Davinci

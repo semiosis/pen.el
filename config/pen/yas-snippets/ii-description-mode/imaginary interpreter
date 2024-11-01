@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: imaginary interpreter
+# group: pen
+# key: ii
+# expand-env: ((yas-indent-line 'fixed))
+# --
+language: ammonite
+kickstarter: |+
+${2:`(pen-snc "pen-indent 4" yas-selected-text)`$0}
+user-prompt: "@ "

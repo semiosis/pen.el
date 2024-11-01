@@ -1,0 +1,34 @@
+title: keyword extraction
+prompt-version: 7
+tags: epistemology alethiology
+prompt: |+
+  Text and keywords:
+  Text: Ethereum is a blockchain
+  Keywords: blockchain, smart contracts, Turing-complete, distributed ledger
+  <delim>
+  Text and keywords:
+  Text: <1>
+  Keywords:
+engine: OpenAI Davinci
+n-collate: 1
+n-completions: 3
+temperature: 0.3
+max-generated-tokens: 1000
+top-p: 1
+stop-sequences:
+- "\n"
+vars:
+- text
+var-defaults:
+- "(pen-words 40 (pen-selection-or-surrounding-context))"
+postprocessor: "pen-str commalist2list | head -n 5 | pen-str list2args"
+examples:
+- |-
+  GPT-3 showed that language can be used to instruct a large neural network
+  to perform a variety of text generation tasks. Image GPT showed that the
+  same type of neural network can also be used to generate images with high
+  fidelity. We extend these findings to show that manipulating visual
+  concepts through language is now within reach.
+external: extract-keyphrases
+# This should just be displayed if run interactively
+info: on

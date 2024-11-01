@@ -1,0 +1,7 @@
+
+# -*- mode: snippet -*-
+# name: around-advice-ignore-errors
+# group: advice
+# key: adi
+# --
+(advice-add '$1 :around #'ignore-errors-around-advice)

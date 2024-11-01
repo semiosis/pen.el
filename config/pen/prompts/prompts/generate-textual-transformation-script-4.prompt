@@ -1,0 +1,61 @@
+task: "Generate textual transformation script"
+doc: "Given some text input and output, generate a script to mimic the transformation"
+tags: code
+prompt-version: 1
+prompt: |+
+  # Input text:
+  input.txt <<EOD
+  <input>
+  EOD
+
+  # Expected output:
+  expected_output.txt <<EOD
+  <expected output>
+  EOD
+
+  # Test the program
+  cat input.txt | <sl:scripting language>_program > expected_output.txt
+
+  # Program instructions:
+  <instructions>
+
+  cat <sl:scripting language>_program <<EOD
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "EOD"
+cache: on
+# defs:
+# - language: "\"Python\""
+vars:
+- "input"
+- "expected output"
+- scripting language
+- instructions
+preprocessors:
+- cat
+- cat
+- cat
+- <shell-comment>
+pipelines:
+- shell-comment: pen-str shell-commentify
+examples:
+- "John Wesley was an English clergyman, theologian, and evangelist, who was a leader of a revival movement within the Church of England known as Methodism. The societies he founded became the dominant form of the independent Methodist movement that continues to this day."
+- |-
+    John Wesley
+         An English clergyman, theologian, and
+         evangelist, who was a leader of a revival
+         movement within the Church of England
+         known as Methodism.
+    
+         The societies he founded became the
+         dominant form of the independent
+         Methodist movement that continues to this
+         day.
+- Python
+- "Add a title and indent for each passage. The title is removed from the start of the passage."
+info: on
+completion: off
+insertion: off

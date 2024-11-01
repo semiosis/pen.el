@@ -1,0 +1,8 @@
+{
+    "n_stages": 3,
+    "stage_1": {
+        "name": "stage_1",
+        "thrust": 0.0,
+        "payload": 0.0,
+root@mele:/etc/init.d$ ps -ef |grep -i falcon9
+root     1501     1  0 05:00 ?        00:00:00 /usr/bin/python /usr/local/bin/falcon9 --config /etc/falcon9/falcon9.conf

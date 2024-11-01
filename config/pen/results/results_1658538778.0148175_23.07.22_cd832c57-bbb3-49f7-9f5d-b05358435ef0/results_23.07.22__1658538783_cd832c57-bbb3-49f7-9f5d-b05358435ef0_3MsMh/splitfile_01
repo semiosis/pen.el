@@ -1,0 +1,9 @@
+
+
+print :: ( Show a ) => a -> IO ()
+
+print x
+
+print is a function that takes an argument and puts it on the standard output.
+
+Because print takes a parameter, we have to write x where we

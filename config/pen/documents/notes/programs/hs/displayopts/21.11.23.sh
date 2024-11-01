@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "displayopts" "#" "<==" "zsh"

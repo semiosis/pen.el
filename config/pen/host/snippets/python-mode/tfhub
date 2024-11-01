@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: tfhub
+# key: tfhub
+# --
+import tensorflow_hub as hub
+import tensorflow as tf
+elmo = hub.Module("https://tfhub.dev/google/elmo/2", trainable=True)
+# By putting trainable=True we can finetune some parameters of the elmo module.
+# To turn any sentence into ELMo vector you just need to pass a list of string(s) in the object elmo.
+x = [“Nothing suits me like suit”] # Extract ELMo features 
+embeddings = elmo(x, signature=”default”, as_dict=True)[“elmo”] 
+embeddings.shape

@@ -1,0 +1,14 @@
+/* Color scheme B: New Zealand */
+.b-primary {
+background-color: #00A8C6;
+}
+.b-secondary {
+background-color: #00C0E9;
+}
+.b-ternary {
+background-color: #00E5FF;
+}
+.b-quaternary {
+background-color: #00F2F2;
+}
+

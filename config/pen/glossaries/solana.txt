@@ -1,0 +1,26 @@
+default signer
+    Error: Dynamic program error: No default
+    signer found, run:
+    "solana-keygen new -o /home/shane/.config/solana/id.json"
+    to create a new one
+
+faucet
+
+sendTransaction
+    [function]
+
+    sp +/"sendTransaction" "$HOME/var/smulliga/source/git/solana-labs/dapp-scaffold/src/contexts/connection.tsx"
+
+SOL
+    Solana's native digital asset.
+    
+    Can be passed to nodes in a Solana cluster
+    in exchange for running an on-chain
+    program of validating output.
+
+Lamport
+    A micropayments made by the system, that
+    consist of fractional SOLs.
+    
+    The value of a Lamport is set at
+    0.000000001 SOL.

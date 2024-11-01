@@ -1,0 +1,5 @@
+./documents/photos
+./documents/photos/image1.jpg
+./documents/photos/image2.jpg
+./documents/photos/image3.jpg
+

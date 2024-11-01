@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "lsof" "-p" "9732" "#" "<==" "pen-tm"
+cd /root/.pen/documents/notes;  "lsof" "-p" "9734" "#" "<==" "pen-tm"
+cd /root/.pen/documents/notes;  "lsof" "-p" "10004" "#" "<==" "pen-tm"
+cd /root/.pen/documents/notes;  "lsof" "-p" "10106" "#" "<==" "pen-tm"
+cd /root/.pen/documents/notes;  "lsof" "-p" "10109" "#" "<==" "pen-tm"

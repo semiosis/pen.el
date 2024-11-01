@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: update-multiple-state-variables
+# key: update-multiple-state-variables
+# --
+def fibonacci(n):
+x, y = 0, 1
+for i in range(n):
+print x
+x, y = y, x + y

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: hostname
+# key: hn
+# --
+hn, _ := os.Hostname()
+fmt.Println("hostname: " + hn)

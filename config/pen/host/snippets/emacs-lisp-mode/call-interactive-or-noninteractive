@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: call-any-function-interactive-or-noninteractive
+# group: interactive
+# key: call
+# --
+(defun my-lispy-eval-eval ()
+  "Evaluate sexp at point and then evaluate the result as a function."
+  (interactive)
+  (let ((result (str2sym (str (call-interactively 'lispy-eval)))))
+    (if (commandp result)
+        (call-interactively result)
+      (eval `(,result)))))

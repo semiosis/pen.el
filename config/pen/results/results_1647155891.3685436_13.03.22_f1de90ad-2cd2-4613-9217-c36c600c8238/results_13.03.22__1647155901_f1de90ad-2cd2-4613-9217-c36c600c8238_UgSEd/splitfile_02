@@ -1,0 +1,7 @@
+The above code is a simple backtracking program to solve the N-queens problem.
+The program is given a list of integers N1, N2, N3, N4, N5, N6, N7, N8, N9, and
+the program will find a solution to the problem where N1 is the row number of
+the queen in the first column, N2 is the row number of the queen in the second
+column, and so on.
+
+The

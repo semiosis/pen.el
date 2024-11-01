@@ -1,0 +1,9 @@
+ f <- getResourceWithExitCode getSomeResource -- bad style let f = ...
+
+newtype
+
+newtype
+
+newtype
+
+The newtype keyword is used to wrap a value of one type in a new type. It

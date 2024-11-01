@@ -1,0 +1,13 @@
+Telemetry
+    The collection of measurements or other
+    data at remote points and their automatic
+    transmission to receiving equipment for
+    monitoring.
+    
+    The word is derived from the Greek roots
+    tele, "remote", and metron, "measure".
+
+custom metric
+    A metric you design to accurately measure
+    an area of interest or monitor specific
+    data.

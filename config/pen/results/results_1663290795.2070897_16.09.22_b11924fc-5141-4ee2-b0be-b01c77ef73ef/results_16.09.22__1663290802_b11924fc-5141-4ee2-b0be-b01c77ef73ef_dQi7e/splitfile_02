@@ -1,0 +1,5 @@
+
+fibonacci () {
+echo $(( $1 + $2 ))
+}
+fibonacci $(seq -s '\-\*' 0 1 8)

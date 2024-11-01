@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: opt
+# group: 
+# key: opt
+# --
+while [ \$# -gt 0 ]
+do opt="\$1"
+case "\$opt" in
+"") { shift; }; ;;
+-n) {
+window_name="\$2"
+shift
+shift
+}
+;;
+
+*) break;
+esac
+done

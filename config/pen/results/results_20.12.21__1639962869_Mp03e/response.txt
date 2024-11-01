@@ -1,0 +1,8 @@
+.
+./bin
+./bin/sh
+./bin/sh.distrib
+./bin/sh.distrib/
+./bin/sh.distrib/install-sh
+./bin/sh.distrib/install-sh.distrib
+./bin/sh.

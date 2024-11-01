@@ -1,0 +1,6 @@
+"add" is a predicate.
+
+"add(X, Y, Z)" is a clause.
+
+"add(X, 0, X)" is a fact.
+

@@ -1,0 +1,19 @@
+* https://machinelearning.apple.com/research/inverse-text-normal
+
+* [[https://www.youtube.com/watch?v=YR5WdGrpoug][Maybe Not - Rich Hickey - YouTube]]
+- maps should be first class.
+- position oriented programming sucks
+- https://clojure.org/guides/spec
+* [[http://slebok.github.io/zoo/index.html][Grammar Zoo]]
+The objective of the Grammar Zoo is to
+accumulate grammars in a broad sense of
+various software languages, extracted and
+recovered from language documentation, parser
+specifications and other artefacts and make
+them available in a range of formats.
+* TODO probabilistic parsing with NLTK
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  ewwlinks +/"Probabilistic Parsers" "https://lost-contact.mit.edu/afs/cs.pitt.edu/projects/nltk/docs/tutorial/pcfg/nochunks.html"
+#+END_SRC
+
+* https://stackoverflow.com/q/6685916

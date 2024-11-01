@@ -1,0 +1,68 @@
+kubernetes
+k8s
+    An open-source container orchestration
+    system for automating application
+    deployment, scaling, and management. It
+    was originally designed by Google, and is
+    now maintained by the Cloud Native
+    Computing Foundation.
+
+Representational state transfer
+REST
+    An architectural style enforcing a
+    client/server model where the client acts
+    on a set of resources managed by the
+    server.
+    
+    The server provides a representation of
+    resources and actions that can either
+    manipulate or get a new representation of
+    resources.
+    
+    All communication must be stateless and
+    cacheable.
+
+IOPS
+    Input/output operations per second is an
+    input/output performance measurement used
+    to characterize computer storage devices
+    like hard disk drives, solid state drives,
+    and storage area networks.
+
+ingress filtering
+    Used to examine inbound traffic.
+
+    One type of packet filtering.
+
+egress filtering
+    Used to examine outbound traffic and only
+    allows packets to leave the network if
+    they meet predetermined policies set by an
+    administrator.
+
+OpenStack
+    A free open standard cloud computing
+    platform, mostly deployed as
+    infrastructure-as-a-service in both public
+    and private clouds where virtual servers
+    and other resources are made available to
+    users.
+
+RQ
+Redis Queue
+    A simple Python library for queueing jobs
+    and processing them in the background with
+    workers. It is backed by Redis and it is
+    designed to have a low barrier to entry.
+    It should be integrated in your web stack
+    easily.
+
+    RQ requires Redis >= 3.0.0.
+
+Service mesh
+    [#software architecture]
+
+    A dedicated infrastructure layer for
+    facilitating service-to-service
+    communications between microservices,
+    often using a sidecar proxy.

@@ -1,0 +1,9 @@
+
+digr lg2 128269
+" slash
+digr sl 100509
+" with-redefs
+digr WithRedefs? 69214
+" wh:
+digr wh- 0
+digr wh0

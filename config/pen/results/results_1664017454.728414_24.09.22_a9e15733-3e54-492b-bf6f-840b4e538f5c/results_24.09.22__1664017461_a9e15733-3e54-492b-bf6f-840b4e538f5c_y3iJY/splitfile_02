@@ -1,0 +1,9 @@
+ 
+
+(let [[a b] (seq coll)]
+
+(cond
+
+(empty? coll) [(list a b)]
+
+:else [(cons a (pair-consecutive b (rest coll))))]))

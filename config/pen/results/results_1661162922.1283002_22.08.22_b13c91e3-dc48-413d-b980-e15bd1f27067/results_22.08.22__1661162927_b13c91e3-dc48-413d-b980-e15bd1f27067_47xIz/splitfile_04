@@ -1,0 +1,3 @@
+: use braces and semicolons even if a single statement is all there is foo bar (x, y) <- return (1,2) foo x
+
+example2 = do foo bar -- bad style: no braces or semicolons

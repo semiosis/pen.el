@@ -1,0 +1,22 @@
+- 1. John McCarthy (1927-2011)
+- 2. Perl (1965-)
+- 3. R (1972-)
+- 4. Julia (2012-)
+"""
+
+    print(setup_func)
+
+    print("Test the papers")
+
+    papers = papers_from_strings(inp)
+
+    if papers:
+        print("succesfully set up papers list, length: {}".format(len(papers)))
+        for p in papers:
+            print(p)
+    else:
+        print("could not set up papers list, error with arguments and user input")
+
+    expected = ''''going further and further with the idea of a partitioned paper'''
+
+    print

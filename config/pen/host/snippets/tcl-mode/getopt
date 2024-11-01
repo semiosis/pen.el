@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: getopt
+# key: getopt
+# --
+set user [lindex $argv 0]
+set password [lindex $argv 1]

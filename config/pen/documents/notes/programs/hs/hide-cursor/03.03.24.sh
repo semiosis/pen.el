@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "hide-cursor" "tmux-choose-window" "-t" "localhost" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "hide-cursor" "tmux-choose-window" "-t" "localhost" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "hide-cursor" "tmux-choose-window" "-t" "localhost" "#" "<==" "tmux-shell"
+cd /root/.pen/documents/notes;  "hide-cursor" "tmux-choose-window" "-t" "localhost" "#" "<==" "tmux-shell"
+cd /root/.emacs.d/host/pen.el/scripts;  "hide-cursor" "telnet" "towel.blinkenlights.nl" "#" "<==" "pen-nvc"

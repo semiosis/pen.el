@@ -1,0 +1,27 @@
+Puppet
+    Open-source configuration management tool
+        
+    Puppet is probably made redundant by things like Docker and Kubernetes.
+
+Puppet language
+    https://puppet.com/docs/puppet/latest/puppet_language.html
+
+    Manage various stages of the IT
+    infrastructure lifecycle, including the
+    provisioning, patching, configuration, and
+    management of operating system and
+    application components across enterprise
+    data centers and cloud infrastructures.
+
+    Syntax
+        https://puppet.com/docs/puppet/latest/lang_visual_index.html
+
+Salt
+SaltStack
+    A remote execution tool and configuration
+    management system.
+    
+    The remote execution capabilities allow
+    administrators to run commands on various
+    machines in parallel with a flexible
+    targeting system.

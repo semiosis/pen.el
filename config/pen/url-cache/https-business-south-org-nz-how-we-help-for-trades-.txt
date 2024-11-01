@@ -1,0 +1,3718 @@
+HTTP/1.1 200 OK
+Date: Wed, 14 Aug 2024 21:39:26 GMT
+Server: Apache
+vary: X-Forwarded-Protocol,Accept-Encoding
+cache-control: no-cache, no-store, must-revalidate
+Set-Cookie: SECSESSID=hn2otassqjhvea179ju4h9s65s; path=/; secure; HttpOnly
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+Content-Length: 20477
+Keep-Alive: timeout=5, max=100
+Content-Type: text/html; charset=utf-8
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<base href="https://business-south.org.nz/">
+	<title>For Trades | Business South Inc.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="SilverStripe - https://www.silverstripe.org" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="For Trades supports young people into employment and to gain vocations skills, creating a better future. Contact the For Trades team and learn more here." /><meta property="og:title" content="For Trades | Business South Inc." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://business-south.org.nz/how-we-help/for-trades/" />
+<link rel="image_src" href="http://business-south.org.nz/assets/Header-Images/Woman_Watering_Plants_At_Dunedin_Botanic_Gardens.jpg" type="image/jpeg" />
+<meta property="og:image" content="http://business-south.org.nz/assets/Header-Images/Woman_Watering_Plants_At_Dunedin_Botanic_Gardens.jpg" />
+<meta property="og:image:secure_url" content="https://business-south.org.nz/assets/Header-Images/Woman_Watering_Plants_At_Dunedin_Botanic_Gardens.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:description" content="For Trades supports young people into employment and to gain vocations skills, creating a better future. Contact the For Trades team and learn more here." />
+<meta property="og:site_name" content="Business South Inc." />
+<meta property="og:locale" content="en_US" />
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/_resources/themes/business-south/images/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/_resources/themes/business-south/images/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/_resources/themes/business-south/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/_resources/themes/business-south/images/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/_resources/themes/business-south/images/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/_resources/themes/business-south/images/favicon/favicon-128.png" sizes="128x128" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/_resources/themes/business-south/images/favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/_resources/themes/business-south/images/favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/_resources/themes/business-south/images/favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/_resources/themes/business-south/images/favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/_resources/themes/business-south/images/favicon/mstile-310x310.png" />
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH6CQWNFVC"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10939673087"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JH6CQWNFVC');
+        gtag('config', 'AW-10939673087');
+
+        
+    </script>
+
+    
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '610432097320228');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src=https://www.facebook.com/tr?id=610432097320228&ev=PageView&noscript=1
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+<link rel="stylesheet" type="text/css" href="/_resources/themes/business-south/css/theme.css?m=1713415420" />
+<link rel="stylesheet" type="text/css" href="/_resources/themes/business-south/css/video-popup.css?m=1697416036" />
+<link rel="stylesheet" type="text/css" href="/_resources/vendor/firebrand/silverstripe-honeypot-fields/client/dist/styles/firebrand-silverstripe-honeypot.css?m=1655934416" />
+</head>
+
+<body class="ContentPage pt-nav preload">
+
+
+	<header class="header">
+    <div class="navbar navbar-expand-lg fixed-top d-flex flex-column navbar-light">
+        <div class="header-top-section d-flex flex-row justify-content-between">
+            <canvas id="gradient-canvas"></canvas>
+            <a class="navbar-brand" href="https://business-south.org.nz/">
+                <img src="/_resources/themes/business-south/images/BS-White.svg" alt="Business South Inc." class="navbar-logo">
+            </a>
+            <div class="right-contents d-flex flex-row justify-content-center align-items-center">
+                
+                <span class="advice-wrapper d-none d-lg-block order-lg-2"><a href="tel:0508656757" class="advice-line">Advice Line 0508 656 757</a></span>
+                
+                <a href="https://businesssouth.outreach.co.nz/forms/membership" target="_blank" class="btn btn-secondary ml-3 d-none d-lg-block order-lg-4"  >Become A Member</a>
+
+                <div class="nav-item search-button-wrapper order-lg-1 d-block d-lg-none">
+                    <a href="/how-we-help/for-trades/#" class="nav-link toggle-search"><i class="fa-regular fa-magnifying-glass"></i></a>
+                </div>
+                <div class="header-menu-button header-menu-toggle-btn header-menu-toggle d-block d-lg-none">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container header-navbar d-none d-lg-flex">
+            <div class="w-100">
+                <div class="collapse navbar-collapse justify-content-center" id="navbar">
+                    <ul class="navbar-nav top-level">
+                        
+                            
+                                <li class="nav-item dropdown megamenu-li">
+                                    <a class="nav-link dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        
+                                            <div class="tereo-title">Pēhea ana mātou e āwhina</div>
+                                        
+                                        How We Help <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu megamenu" aria-labelledby="dropdownMenu">
+                                        <ul class="megamenu-inner" data-menu="How We Help">
+                                            <div class="megamenu-menu">
+                                                
+    
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        Business Support
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="employment-relations" >
+                                        <span>Employment Law &amp; HR Support</span>
+                                        
+                                            <p class="intro">We provide legal &amp; HR advice on employment-related issues. Get support now.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="exportation-support" >
+                                        <span>Exportation Support</span>
+                                        
+                                            <p class="intro">Export documentation can be complex – but we’ll help you simplify it.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="regional-business-partners" >
+                                        <span>Business Strategy and Growth</span>
+                                        
+                                            <p class="intro">Looking to start, grow or develop your business? We can help.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="pathways-hub" >
+                                        <span>Pathways Hub</span>
+                                        
+                                            <p class="intro">4Trades, BMNZ, WFCD, MnM, YES.  All you&#039;ll ever need to attract, retain and develop your workforce.<br />
+</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            
+
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        Learning
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="training" >
+                                        <span>Training</span>
+                                        
+                                            <p class="intro">A comprehensive range of professional development training. </p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            
+
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        Advocacy
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="business-advocacy" >
+                                        <span>Business Advocacy</span>
+                                        
+                                            <p class="intro">We are proud to be the voice of business in the south. Have your say and be heard.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            
+
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        Sustainability
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="sustainability" >
+                                        <span>Sustainability</span>
+                                        
+                                            <p class="intro">Committed to sustainability. </p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            
+
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        Adviceline
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="adviceline" >
+                                        <span>AdviceLine</span>
+                                        
+                                            <p class="intro">Members can access the free advice line.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            
+
+        
+    
+
+
+                                                
+                                            </div>
+                                            <div class="tertiary-menu">
+    <ul>
+        
+            
+                        
+                            <li class="menu-title nav-item">
+                                Tools &amp; Resources
+                            </li>
+                            <ul>
+                                
+                                    <li class="nav-item">
+                                        <a href="business-health-check"  class="nav-link">
+                                            Business Health Check
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="membership-information"  class="nav-link">
+                                            Membership Information
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="resources"  class="nav-link">
+                                            Resources
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="phone-app"  class="nav-link">
+                                            Exclusive Business South Members Phone App
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="join-now" target="_blank" class="nav-link">
+                                            Join Now
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+            
+                        
+                            <li class="menu-title nav-item">
+                                Quick Links
+                            </li>
+                            <ul>
+                                
+                                    <li class="nav-item">
+                                        <a href="whats-on"  class="nav-link">
+                                            What&#039;s On
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="adviceline"  class="nav-link">
+                                            Adviceline
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="news-2"  class="nav-link">
+                                            News
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="contact-us"  class="nav-link">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+            
+        
+    </ul>
+</div>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="nav-item dropdown megamenu-li">
+                                    <a class="nav-link dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        
+                                            <div class="tereo-title">Ngā āhuatanga o te wā</div>
+                                        
+                                        What&#039;s On <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu megamenu" aria-labelledby="dropdownMenu">
+                                        <ul class="megamenu-inner" data-menu="What&#039;s On">
+                                            <div class="megamenu-menu">
+                                                
+    
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        What&#039;s On
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="calendar" >
+                                        <span>Calendar</span>
+                                        
+                                            <p class="intro">Check out our upcoming events and training. Register online now.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="leadershipacademy" >
+                                        <span>Leadership Academy</span>
+                                        
+                                            <p class="intro">Developing future Otago business leaders.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="ai-summit" target="_blank">
+                                        <span>AI Summit</span>
+                                        
+                                            <p class="intro">Unlock the future with executive insights into AI integration</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            
+
+        
+    
+
+
+                                                
+                                                    <div class="menu-events">
+                                                        <div class="menu-title">Featured Events</div>
+                                                        
+                                                            <div class="menu-event" data-toggle="modal" data-target="#event-modal-255257">
+                                                                <div>
+                                                                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Maniototo_Adventure_Park_BA5_web.png"/>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="topic">Networking</p>
+                                                                    <p class="title">Central Otago BA5: Hosted by Maniototo Adventure Park</p>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <div class="menu-event" data-toggle="modal" data-target="#event-modal-255805">
+                                                                <div>
+                                                                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Dunedin_Solar_Logo.png"/>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="topic">Networking</p>
+                                                                    <p class="title">Dunedin August BA5 hosted by Dunedin Solar</p>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <div class="menu-event" data-toggle="modal" data-target="#event-modal-257994">
+                                                                <div>
+                                                                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Outreach_Image_Template_Size_21.png"/>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="topic">Guest Speakers</p>
+                                                                    <p class="title">Shaping the Future of Tertiary Education: Insights from Hon Penny Simmonds</p>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                    </div>
+
+                                                    
+                                                        <div class="menu-events">
+                                                            <div class="menu-title">Featured Training</div>
+                                                                
+                                                                    <div class="menu-event" data-toggle="modal" data-target="#event-modal-236424">
+                                                                        <div>
+                                                                            <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Health_and_Safety_EDM.jpg"/>
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="topic">Health &amp; Safety</p>
+                                                                            <p class="title">Health and Safety Representative Training (Stage 1) - Dunedin</p>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                    <div class="menu-event" data-toggle="modal" data-target="#event-modal-252476">
+                                                                        <div>
+                                                                            <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Leaders_Guide-WEB.png"/>
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="topic">Management &amp; Leadership</p>
+                                                                            <p class="title">Effective Leadership - Dunedin</p>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                    <div class="menu-event" data-toggle="modal" data-target="#event-modal-252248">
+                                                                        <div>
+                                                                            <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Website_Leadership_Academy_Logo_790_×_400_px.png"/>
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="topic">Management &amp; Leadership</p>
+                                                                            <p class="title">Dunedin Leadership Academy starting 30 August 2024</p>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                        </div>
+                                                    
+                                                
+                                            </div>
+                                            <div class="tertiary-menu">
+    <ul>
+        
+            
+                        
+                            <li class="menu-title nav-item">
+                                Tools &amp; Resources
+                            </li>
+                            <ul>
+                                
+                                    <li class="nav-item">
+                                        <a href="business-health-check"  class="nav-link">
+                                            Business Health Check
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="membership-information"  class="nav-link">
+                                            Membership Information
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="resources"  class="nav-link">
+                                            Resources
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="phone-app"  class="nav-link">
+                                            Exclusive Business South Members Phone App
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="join-now" target="_blank" class="nav-link">
+                                            Join Now
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+            
+                        
+                            <li class="menu-title nav-item">
+                                Quick Links
+                            </li>
+                            <ul>
+                                
+                                    <li class="nav-item">
+                                        <a href="whats-on"  class="nav-link">
+                                            What&#039;s On
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="adviceline"  class="nav-link">
+                                            Adviceline
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="news-2"  class="nav-link">
+                                            News
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="contact-us"  class="nav-link">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+            
+        
+    </ul>
+</div>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="nav-item dropdown megamenu-li">
+                                    <a class="nav-link dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        
+                                            <div class="tereo-title">Ko wai mātou</div>
+                                        
+                                        About <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu megamenu" aria-labelledby="dropdownMenu">
+                                        <ul class="megamenu-inner" data-menu="About">
+                                            <div class="megamenu-menu">
+                                                
+    
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        About
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="our-story" >
+                                        <span>Our Story</span>
+                                        
+                                            <p class="intro">Learn about our history and our strategic framework.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="our-people" >
+                                        <span>Our People</span>
+                                        
+                                            <p class="intro">All the people that make it happen. </p>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="our-region" >
+                                        <span>Our Region</span>
+                                        
+                                            <p class="intro">Our region stretches from the Waitaki River to Rakiura/Stewart Island. Check out our regional breakdown. </p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            
+
+        
+            
+                <div class="menu-list">
+                    <li class="menu-title">
+                        Connect
+                    </li>
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a href="contact-us" >
+                                        <span>Contact Us</span>
+                                        
+                                            <p class="intro">Get in touch with us today.</p>
+                                        
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                        <div class="header-social-links">
+                            
+                                <a href="https://www.facebook.com/businesssouthnz" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            
+                            
+                                <a href="https://www.linkedin.com/company/businesssouthnz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    
+                </div>
+            
+
+        
+    
+
+
+                                                
+                                            </div>
+                                            <div class="tertiary-menu">
+    <ul>
+        
+            
+                        
+                            <li class="menu-title nav-item">
+                                Tools &amp; Resources
+                            </li>
+                            <ul>
+                                
+                                    <li class="nav-item">
+                                        <a href="business-health-check"  class="nav-link">
+                                            Business Health Check
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="membership-information"  class="nav-link">
+                                            Membership Information
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="resources"  class="nav-link">
+                                            Resources
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="phone-app"  class="nav-link">
+                                            Exclusive Business South Members Phone App
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="join-now" target="_blank" class="nav-link">
+                                            Join Now
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+            
+                        
+                            <li class="menu-title nav-item">
+                                Quick Links
+                            </li>
+                            <ul>
+                                
+                                    <li class="nav-item">
+                                        <a href="whats-on"  class="nav-link">
+                                            What&#039;s On
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="adviceline"  class="nav-link">
+                                            Adviceline
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="news-2"  class="nav-link">
+                                            News
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="contact-us"  class="nav-link">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+            
+        
+    </ul>
+</div>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="nav-item">
+                                    <a href="/tools-and-resources/membership-information/"  class="nav-link">
+                                        
+                                            <div class="tereo-title">Whakauru</div>
+                                        
+                                        Membership
+                                    </a>
+                                </li>
+                            
+                        
+                            
+                                <li class="nav-item">
+                                    <a href="/news/"  class="nav-link">
+                                        
+                                            <div class="tereo-title">Kawepūrongo</div>
+                                        
+                                        News
+                                    </a>
+                                </li>
+                            
+                        
+                            
+                                <li class="nav-item">
+                                    <a href="/tools-and-resources/business-health-check/"  class="nav-link">
+                                        
+                                            <div class="tereo-title">Te oranga ō tō pakihi</div>
+                                        
+                                        Business Health Check
+                                    </a>
+                                </li>
+                            
+                        
+                    </ul>
+                    <div class="nav-item search-button-wrapper order-lg-1 d-none d-lg-block">
+                        <a href="/how-we-help/for-trades/#" class="nav-link toggle-search"><i class="fa-regular fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<div class="navbar-search">
+    <div class="navbar-search-inner d-flex flex-column">
+        <form method="get" action="/search" class="">
+            <div class="container position-relative h-100 d-flex align-items-center">
+                <input type="search" name="q" placeholder="Search..." autocomplete="off" class="navbar-search-control">
+                <a href="/how-we-help/for-trades/#" class="navbar-search-close toggle-search"><i class="fas fa-times"></i></a>
+            </div>
+        </form>
+        <div class="search-terms">
+            <h3>Popular Search Terms</h3>
+            
+                <a href="search?q=Otago Business Awards" class="btn btn-primary">
+                    Otago Business Awards
+                </a>
+            
+                <a href="search?q=Advocacy" class="btn btn-primary">
+                    Advocacy
+                </a>
+            
+                <a href="search?q=Training" class="btn btn-primary">
+                    Training
+                </a>
+            
+                <a href="search?q=Contact Us" class="btn btn-primary">
+                    Contact Us
+                </a>
+            
+                <a href="search?q=Employment Relations" class="btn btn-primary">
+                    Employment Relations
+                </a>
+            
+                <a href="search?q=Regional Business Partners" class="btn btn-primary">
+                    Regional Business Partners
+                </a>
+            
+                <a href="search?q=Events" class="btn btn-primary">
+                    Events
+                </a>
+            
+        </div>
+    </div>
+</div>
+
+<div class="search-overlay toggle-search"></div>
+
+    
+<nav class="sidebar" aria-hidden="true">
+    <div class="sidebar-slider sidebar-menu-level-1">
+        <div class="sidebar-slide level-1">
+            <div class="sidebar-menu sidebar-menu-open" id="sidebar-main-menu">
+                <ul class="nav flex-column">
+                    
+                        <li class="nav-item has-children">
+                            <a href="/how-we-help/regional-business-partners/" tabindex="-1" class="nav-link d-flex align-items-end justify-content-between" aria-haspopup="true" aria-expanded="false" data-target="#sidebar-child-menu-5">
+                                <div class="nav-link-title d-flex flex-column">
+                                    
+                                        <span class="tereo-title">Pēhea ana mātou e āwhina</span>
+                                    
+                                    How We Help
+                                </div>
+                                 <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item has-children">
+                            <a href="/whats-on/calendar/" tabindex="-1" class="nav-link d-flex align-items-end justify-content-between" aria-haspopup="true" aria-expanded="false" data-target="#sidebar-child-menu-6">
+                                <div class="nav-link-title d-flex flex-column">
+                                    
+                                        <span class="tereo-title">Ngā āhuatanga o te wā</span>
+                                    
+                                    What&#039;s On
+                                </div>
+                                 <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item has-children">
+                            <a href="/about/our-story/" tabindex="-1" class="nav-link d-flex align-items-end justify-content-between" aria-haspopup="true" aria-expanded="false" data-target="#sidebar-child-menu-7">
+                                <div class="nav-link-title d-flex flex-column">
+                                    
+                                        <span class="tereo-title">Ko wai mātou</span>
+                                    
+                                    About
+                                </div>
+                                 <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a href="/tools-and-resources/membership-information/" tabindex="-1" class="nav-link d-flex align-items-end justify-content-between">
+                                <div class="nav-link-title d-flex flex-column">
+                                    
+                                        <span class="tereo-title">Whakauru</span>
+                                    
+                                    Membership
+                                </div>
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a href="/news/" tabindex="-1" class="nav-link d-flex align-items-end justify-content-between">
+                                <div class="nav-link-title d-flex flex-column">
+                                    
+                                        <span class="tereo-title">Kawepūrongo</span>
+                                    
+                                    News
+                                </div>
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a href="/tools-and-resources/business-health-check/" tabindex="-1" class="nav-link d-flex align-items-end justify-content-between">
+                                <div class="nav-link-title d-flex flex-column">
+                                    
+                                        <span class="tereo-title">Te oranga ō tō pakihi</span>
+                                    
+                                    Business Health Check
+                                </div>
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <div class="sidebar-menu-secondary">
+                    <div class="nav flex-column">
+                        
+                            <p>Tools &amp; Resources</p>
+                                <ul>
+                                    
+                                        
+                                            <li class="nav-item">
+                                                <a href="business-health-check" tabindex="-1" class="nav-link">
+                                                    Business Health Check
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a href="membership-information" tabindex="-1" class="nav-link">
+                                                    Membership Information
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a href="resources" tabindex="-1" class="nav-link">
+                                                    Resources
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a href="phone-app" tabindex="-1" class="nav-link">
+                                                    Exclusive Business South Members Phone App
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a href="join-now" tabindex="-1" class="nav-link">
+                                                    Join Now
+                                                </a>
+                                            </li>
+                                        
+                                    
+                                </ul>
+                        
+                            <p>Quick Links</p>
+                                <ul>
+                                    
+                                        
+                                            <li class="nav-item">
+                                                <a href="whats-on" tabindex="-1" class="nav-link">
+                                                    What&#039;s On
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a href="adviceline" tabindex="-1" class="nav-link">
+                                                    Adviceline
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a href="news-2" tabindex="-1" class="nav-link">
+                                                    News
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item">
+                                                <a href="contact-us" tabindex="-1" class="nav-link">
+                                                    Contact Us
+                                                </a>
+                                            </li>
+                                        
+                                    
+                                </ul>
+                        
+                    </div>
+                    
+                    <div style="padding-left: 5px; margin-bottom: 1rem;"><a style="color: #fff;" href="tel:0508656757" class="advice-line">Advice Line 0508 656 757</a></div>
+                    <div class="mobile-nav-buttons d-flex align-items-center justify-content-between w-100">
+                        
+                        <a href="https://businesssouth.outreach.co.nz/forms/membership" target="_blank"  class="btn btn-secondary">Become A Member</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-slide level-2">
+            <div class="sidebar-menu" id="sidebar-child-menu-36">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/how-we-help/for-trades/#" tabindex="-1" class="nav-link sidebar-menu-back" data-target="#sidebar-main-menu"><i class="fas fa-chevron-left"></i> Back</a>
+                    </li>
+                    <div id="accordion">
+                        
+                            
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-5">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            Business Support <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="employment-relations" tabindex="-1" class="nav-link" >
+                                        Employment Law &amp; HR Support
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="exportation-support" tabindex="-1" class="nav-link" >
+                                        Exportation Support
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="regional-business-partners" tabindex="-1" class="nav-link" >
+                                        Business Strategy and Growth
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="pathways-hub" tabindex="-1" class="nav-link" >
+                                        Pathways Hub
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                    </div>
+                
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-5">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            Learning <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="training" tabindex="-1" class="nav-link" >
+                                        Training
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                    </div>
+                
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-5">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                            Advocacy <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse5" class="collapse " aria-labelledby="heading5" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="business-advocacy" tabindex="-1" class="nav-link" >
+                                        Business Advocacy
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                    </div>
+                
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-5">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                            Sustainability <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse8" class="collapse " aria-labelledby="heading8" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="sustainability" tabindex="-1" class="nav-link" >
+                                        Sustainability
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                    </div>
+                
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-5">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
+                            Adviceline <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse17" class="collapse " aria-labelledby="heading17" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="adviceline" tabindex="-1" class="nav-link" >
+                                        AdviceLine
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                    </div>
+                
+            </div>
+        
+    
+
+
+                        
+                            
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-6">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between " data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                            What&#039;s On <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse10" class="collapse show" aria-labelledby="heading10" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="calendar" tabindex="-1" class="nav-link" >
+                                        Calendar
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="leadershipacademy" tabindex="-1" class="nav-link" >
+                                        Leadership Academy
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="ai-summit" tabindex="-1" class="nav-link" target="_blank">
+                                        AI Summit
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                    </div>
+                
+            </div>
+        
+    
+
+
+                        
+                            
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-7">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between " data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                            About <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse13" class="collapse show" aria-labelledby="heading13" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="our-story" tabindex="-1" class="nav-link" >
+                                        Our Story
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="our-people" tabindex="-1" class="nav-link" >
+                                        Our People
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="our-region" tabindex="-1" class="nav-link" >
+                                        Our Region
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                    </div>
+                
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-7">
+                
+                    <li class="menu-title">
+                        <div tabindex="-1" class="nav-link d-flex align-items-center justify-content-between " data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
+                            Connect <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </li>
+                    <div id="collapse14" class="collapse show" aria-labelledby="heading14" data-parent="#accordion">
+                        <ul>
+                            
+                                <li>
+                                    <a href="contact-us" tabindex="-1" class="nav-link" >
+                                        Contact Us
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        
+                            <div class="mobile-social-links">
+                                
+                                    <a href="https://www.facebook.com/businesssouthnz" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                
+                                
+                                    <a href="https://www.linkedin.com/company/businesssouthnz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        
+                    </div>
+                
+            </div>
+        
+    
+
+
+                        
+                            
+    
+
+
+                        
+                            
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="the-voice-of-southern-business">
+                        The Voice of Southern Business.
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="business-success">
+                        Business Success
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="high-performance">
+                        High Performance
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="maximise-your-membership">
+                        Maximise your membership
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="strengthening-trans-tasman-connections">
+                        Strengthening trans-Tasman connections
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="regional-business-partner-profile-222-photographic-studios">
+                        Regional Business Case Study: 222 Photographic Studios
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="waste-minimisation-funding-available">
+                        Waste Minimisation Funding Available
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="expert-advice-a-phone-call-away">
+                        Expert advice a phone call away
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="call-for-nominations-business-south-inc-board-20222023">
+                        Call For Nominations – Business South Inc. Board 2022/2023
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="introducing-our-new-innovation-navigator">
+                        Introducing our new Innovation Navigator
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="finalists-announced-for-the-grand-business-south-awards-2022">
+                        Finalists announced for The Grand Business South Awards 2022
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="become-a-food-rescue-champion">
+                        Become a Food Rescue Champion
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="resource-management-act-reform">
+                        Resource Management Reform
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="one-good-kiwi-initiative">
+                        One Good Kiwi Initiative - Vote for YES!
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="incorporated-societies-act-2022">
+                        Incorporated Societies Act Seminars
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="tourism-funding-support-for-queenstown">
+                        Tourism funding support for Queenstown
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="mike-collins-business-update-4-may-2023">
+                        Mike Collins&#039; Business Update
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="new-blog-post-2">
+                        Dunedin Golf Tournament: Scores and Prizes
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="2023-budget-update">
+                        2023 Budget Update
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="young-enterprise-scheme-student-fuelling-teenagers-lifestyles-and-learning">
+                        Young Enterprise Scheme Student Fuelling Teenagers’ Lifestyles … and Learning
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="voting-now-open-for">
+                        Abalro Nominated for YES Alumni Awards - Voting Open
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="homestay-hosts-needed">
+                        Homestay Hosts Needed
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="central-otago-golf-tournament-2023">
+                        Central Otago Golf Tournament 2023
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="november-2023-quarterly-southern-business-survey">
+                        November 2023 Quarterly Southern Business Survey
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="smoking-legis">
+                        Smoking Legislation Repeal by NZ&#039;s Coalition Government in 2024
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="a-sustainability-yarn">
+                        A Sustainability Yarn
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="regional-business-partner-profile-black-sheep">
+                        Regional Business Partner Case Study: Black Sheep
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="otago-polytechnic">
+                        Otago Polytechnic
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="regional-business-partner-profile-arrowtown-motel-apartments">
+                        Regional Business Case Study: Arrowtown Motel Apartments
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="sustainability-ready-steady-go">
+                        Sustainability…. ready steady go!
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="regional-business-partner-profile">
+                        Regional Business Partner Case Study: Addstaff Ltd
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="meaningful-connections">
+                        Meaningful Connections
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="chamber-history-summary">
+                        A Summary of Some Historical Points in the Chamber History
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="contribute-to-valuable-business-data-gathering">
+                        Contribute to valuable business data gathering
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="celebrating-business-excellence-in-style">
+                        Celebrating business excellence in style
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="does-tourism-matter-to-you-dunedin">
+                        Does tourism matter to you Dunedin?
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="sustainability-at-business-south">
+                        Sustainability at Business South
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="advice-for-business-award-entrants">
+                        Advice for Business Award entrants
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="celebrating-the-best-of-waitaki-business">
+                        Celebrating the best of Waitaki business
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="new-business-payment-practices-disclosure-regime">
+                        New Business Payment Practices disclosure regime
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="advocating-for-immigration-changes">
+                        Advocating for immigration changes
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="member-to-member-discounts">
+                        Member to member discounts
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="plastic-phase-out-guidance-for-sellers-and-manufacturers-on-products-now-bannednew-blog-post">
+                        Plastic Phase Out: Guidance for Sellers and Manufacturers on Products Now Banned
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="go-global-2022">
+                        Go Global 2022
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="2022-annual-report">
+                        2022 Annual Report
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="interested-in-hosting-a-ba5">
+                        Interested in hosting a BA5?
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="join-the-otago-central-rail-trail-network">
+                        Join the Otago Central Rail Trail Network
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="apprentices-available-now">
+                        Apprentices available now!
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="fair-pay-agreements-legislation-passes">
+                        Fair Pay Agreements legislation passes
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="oritain-global-named-supreme-grand-business-of-the-year">
+                        Oritain Global named Supreme Grand Business of the Year
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="fair-pay-agreements-information-and-support">
+                        Fair Pay Agreements - information and support
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="resource-management-act-reforms">
+                        Resource Management Act reforms
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="business-payment-practices-disclosure-scheme-update">
+                        Business Payment Practices disclosure scheme update
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="securing-success-through-adversity">
+                        Securing success through adversity
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="sharing-sustainability-successes">
+                        Sharing sustainability successes
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="fair-pay-agreements-come-into-effect">
+                        Fair Pay Agreements come into effect 
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="new-blootago-wins-young-enterprise-scheme-company-of-the-yearg-post">
+                        Otago wins Young Enterprise Scheme Company of the Year
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="tiaki-bees-benefits-from-management-capability-funding">
+                        Tiaki Bees benefits from Management Capability Funding
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="new-partnership-with-waitaki-district-council">
+                        New partnership with Waitaki District Council
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="introducing-our-new-business-navigator-in-central">
+                        Introducing our new Business Navigator in Central
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="innovation-funding-available-now">
+                        Innovation funding available now
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="quarterly-southern-business-survey-results-february-2023">
+                        Quarterly Southern Business Survey Results: February 2023
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="were-toitu-net-carbonzero-organisation-certified">
+                        We&#039;re Toitū Net Carbonzero Organisation Certified
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="new-blogmemorandum-of-cooperation-with-china-chamber-of-ccoic">
+                        Memorandum of Cooperation with CCOIC Signed
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="quarterly-southern-business-survey-results-may-2023">
+                        Quarterly Southern Business Survey Results: May 2023
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="applications-to-initiate-bargaining-for-an-fpa">
+                        Applications to Initiate Bargaining for an FPA
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="new-accredited">
+                        New HR Advisory Service Exclusively Available to Members
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="preens-partnered-with-ecca-to-continue-to-reduce-emissions-new-blog-post">
+                        Preens Partner with ECCA to Continue to Reduce Emissions
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="exports-crucial-to-nz-economy-exportnz-pre-election-report-released">
+                        Exports Crucial to NZ Economy: ExportNZ Pre-Election Report Released
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="business-health-check">
+                        Business Health Check Launches
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="september-quarterly-southern-business-survey-results">
+                        September Quarterly Southern Business Survey Results
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="spring-hr-23">
+                        Spring &#039;23: Regional HR Update
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="call-for-nominations-for-business-south-board-2023">
+                        Call for Nominations: Business South Board 2023 
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="annual-report-2023">
+                        Annual Report 2023
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="noel-leeming-and-warehouse-stationary-friends-and-family-sale">
+                        Noel Leeming &amp; Warehouse Stationary Friends and Family Sale
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="3-steps-to-developing-a-business-continuity-plan">
+                        3 Steps To Developing a Business Continuity Plan
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="grand-awards-2023">
+                        Grand Business South Awards 2023- Recap
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="sorec-stem-leonardo">
+                        SOREC- STEM Sessions with Leonardo Helicopters
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="presenting-the-business-south-phone-app">
+                        Presenting the Business South Phone App
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="march-2024-quarterly-southern-business-survey">
+                        March 2024 Quarterly Southern Business Survey
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="2degrees-joins-as-an-enterprise-partner">
+                        2degrees joins as an Enterprise Partner
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="discussions-with-hon-andrew-bayly-minister-for-manufacturing-and-small-business">
+                        Discussions with Hon. Andrew Bayly, Minister for Manufacturing and Small Business
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="the-five-dysfunctions-of-a-team">
+                        The Five Dysfunctions of a Team
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="central-otago-business-community-unites-under-business-south-central-otago-bsco">
+                        Central Otago Business Community Unites Under Business South Central Otago (BSCO)
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="corss-party-consensus-has-been-achieved-on-climate-adaptation">
+                        Cross-party consensus has been achieved on climate adaptation
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="bath-street-upgrade">
+                        Bath Street Upgrade
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="treasury-seminar-productivity-in-a-changing-world">
+                        Treasury Seminar - Productivity in a Changing World
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="meet-heidi-renata-host-for-the-ai-summit">
+                        Meet Heidi Renata - Host for the AI Summit
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="accelerate-your-business-with-the-healthcheck">
+                        Accelerate your business with the healthcheck
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="new-blog-what-the-202425-budget-means-for-our-region">
+                        What the 2024/25 Budget means for our region
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="incorporated-societies-act-regulations-update-recording">
+                        Incorporated Societies Act - Regulations Update Recording
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="major-health-and-safety-consultation-begins">
+                        Major health and safety consultation begins
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="may-2024-quarterly-business-survey-results">
+                        May 2024 - Quarterly Business Survey Results
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="saving-our-standards">
+                        Saving our Standards
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="submission-on-draft-gps-on-land-transport-2024">
+                        Submission on Draft GPS on Land Transport 2024
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="2024-newcomer-leadership-academy-scholarship-announcement">
+                        Leadership Academy 2024 - Scholarship announcement
+                    </a>
+                </li>
+            </div>
+        
+    
+        
+            <div class="sub-menu-group d-none" data-target="#sidebar-child-menu-8">
+                <li class="menu-title">
+                    <a href="letter-from-the-bsco-chair">
+                        Letter from the BSCO Chair
+                    </a>
+                </li>
+            </div>
+        
+    
+
+
+                        
+                            
+    
+
+
+                        
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="sidebar-overlay"></div>
+
+
+
+<main class="main-content">
+
+    
+
+
+	<div class="page-title">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6 image-left ">
+                
+                    
+                        <img src="/assets/Header-Images/Woman_Watering_Plants_At_Dunedin_Botanic_Gardens__ScaleMaxWidthWzEwMDBd.jpg" class="page-header-image" alt="Woman Watering Plants At Dunedin Botanic Gardens"/>
+                    
+                
+            </div>
+        
+        
+            <div class="col-12 content-right d-flex align-items-center col-lg-6 justify-content-start" style="">
+                <div class="page-title-content d-flex flex-column align-items-start justify-content-center">
+                    
+                        <img src="/assets/Partners/Logos/4Trades-Transparent-Background__ScaleMaxWidthWzUwMF0.png" alt="4Trades Transparent Background">
+                        <h1 class="d-none sr-only">For Trades</h1>
+                    
+                    <h2 class="h1">For Trades Apprenticeships</h2>
+                    <p><p>Supporting young people to pursue their vocational ambitions and providing the business community with the next generation of talent.</p></p>
+                    
+                    
+                        <div class="page-title-buttons d-flex flex-row align-items-center justify-content-start">
+                            
+                                <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x34;&#84;&#x72;&#97;&#x64;&#101;&#x73;&#64;&#x62;&#117;&#x73;&#105;&#x6e;&#101;&#x73;&#115;&#x2d;&#115;&#x6f;&#117;&#x74;&#104;&#x2e;&#111;&#x72;&#103;&#x2e;&#110;&#x7a;"  class="btn btn-outline-primary">Contact Us</a>
+                            
+                            
+                        </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="content-section">
+    
+    
+	   <section class="section stat-element">
+    <div class="" id="e328" style=" ">
+        <div class="container">
+            
+
+
+<div class="row d-block d-md-flex">
+    
+        <div class="stat-col col-12 col-md text-center">
+            
+                <h2><span class="counter">36</span></h2>
+            
+            <p>Apprentices Available</p>
+            
+        </div>
+    
+        <div class="stat-col col-12 col-md text-center">
+            
+                <h2><span class="counter">18</span></h2>
+            
+            <p>Current Hosts</p>
+            
+        </div>
+    
+        <div class="stat-col col-12 col-md text-center">
+            
+                <h2><span class="counter">1</span></h2>
+            
+            <p>Current Vacancies</p>
+            
+        </div>
+    
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+    
+	   <section class="section textimage-element">
+    <div class="element " id="e66" style=" ">
+        <div class="container">
+            <div class="row">
+    <div class="col-12 col-lg-6 pb-4 pb-lg-0 image-column d-flex order-1 order-lg-2">
+        
+            <img class="text-image-img" src="/assets/In-Page-Images/Woman-Doing-Construction-Work.jpg" alt="Woman Doing Construction Work"/>
+        
+    </div>
+    <div class="col-12 col-lg-6 text-column d-flex flex-column justify-content-center order-2 order-lg-1">
+        <div class="wr-80">
+            
+                <div class="section-title">
+                    <h4>Supporting Youth Into Trades</h4>
+                </div>
+            
+            
+            
+                <h2>Our Role...</h2><p>We are a nationally-recognised Group Training Scheme provider employing apprentices and trainees and connecting these enthusiastic young people to businesses.</p><p>As an organisation we:</p><ul>
+<li>seek available funding</li>
+<li>provide a high level of ongoing employment support</li>
+<li>ensure administration, registration and compliance support</li>
+<li>provide payroll and leave administration services</li>
+<li>provide coaching and pastoral care.</li>
+</ul><h2>Our Purpose...</h2><p>To support youth into employment.</p><h2>Our Vision...</h2><p>We assist our people to gain vocational skills, creating a better future.</p>
+            
+            
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+    
+	   <section class="section textimage-element">
+    <div class="element " id="e329" style=" ">
+        <div class="container">
+            <div class="row">
+    <div class="col-12 col-lg-6 pb-4 pb-lg-0 image-column d-flex order-1 ">
+        
+            <img class="text-image-img" src="/assets/Uploads/Balclutha-June-8-2021-1_Nico-Tuhura.jpg" alt="Balclutha June 8 2021 1 Nico Tuhura"/>
+        
+    </div>
+    <div class="col-12 col-lg-6 text-column d-flex flex-column justify-content-center order-2 ">
+        <div class="wr-80">
+            
+                <div class="section-title">
+                    <h4>Current Apprenticeship Candidates</h4>
+                </div>
+            
+            
+                <h2>We currently have the following people looking for an apprenticeship:<br />
+</h2>
+            
+            
+                <p>&nbsp;</p><ul>
+<li><strong>6 x </strong>looking for<strong> automotive/mechanic</strong> apprenticeships</li>
+<li><strong>7 x</strong>&nbsp;looking for&nbsp;<strong>building/carpentry</strong> apprenticeships</li>
+<li><strong>2 x</strong>&nbsp;looking for&nbsp;<strong>painting/decorating</strong> apprenticeships</li>
+<li><strong>6 x&nbsp;</strong>looking for<strong> electrical</strong> apprenticeships</li>
+<li><strong>2 x</strong>&nbsp;looking for&nbsp;<strong>engineering</strong> apprenticeships</li>
+<li><strong>9 x</strong>&nbsp;looking for&nbsp;<strong>horticulture</strong> apprenticeships</li>
+<li><strong>1 x&nbsp;</strong>looking for<strong> panel beating/painting</strong> apprenticeship</li>
+<li><strong>2 x</strong>&nbsp;looking for&nbsp;<strong>plumbing/gas-fitting</strong> apprenticeship</li>
+</ul>
+            
+            
+                <div class="d-flex flex-row align-items-center justify-content-start">
+                    
+                        <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x43;&#111;&#x6e;&#116;&#x61;&#99;&#x74;&#52;&#x54;&#114;&#x61;&#100;&#x65;&#115;&#x40;&#98;&#x75;&#115;&#x69;&#110;&#x65;&#115;&#x73;&#45;&#x73;&#111;&#x75;&#116;&#x68;&#46;&#x6f;&#114;&#x67;&#46;&#x6e;&#122;"  class="btn btn-outline-primary mr-3">Email us for more details</a>
+                    
+                    
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+    
+	   <section class="section tereo-textimage-element">
+    <div class="element " id="e159" style=" ">
+        <div class="container">
+            <div class="row">
+    <div class="col-12 col-lg-6 pb-4 pb-lg-0 image-column d-flex order-1 ">
+        
+            <img class="text-image-img" src="/assets/In-Page-Images/Boy-Using-Sander.jpg" alt="Boy Using Sander"/>
+        
+    </div>
+    <div class="col-12 col-lg-6 text-column d-flex flex-column justify-content-center order-2 ">
+        <div class="wr-80">
+            
+                <div class="section-title">
+                    <h4>Testimonial</h4>
+                </div>
+            
+            
+                <h2 class="secondary-text mb-3">&quot;Being an automotive refinisher most days it doesn’t feel like a job as I love doing it. I have a passion for cars and thank For Trades for the opportunity.&quot;</h2>
+            
+            
+                <h2 class="primary-text">Aidan McEwen</h2>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+    
+	   <section class="section popupitems-elemental">
+    <div class="element " id="e115" style=" ">
+        <div class="container">
+            
+    <div class="section-title full-width-title">
+        <h4>Our Team</h4>
+        <hr/>
+    </div>
+
+
+
+
+<div class="row">
+    
+        <div class="col-12 col-md-6 popup-col d-block d-lg-flex justify-content-start align-items-center">
+            
+                <img src="/assets/Team/Matt_Hogan_ForTrades__ScaleMaxWidthWzUwMF0.jpg" alt="Matt Hogan ForTrades" />
+            
+            <div class="icon-content">
+                <h3>Matt Hogan</h3>
+                <p>For Trades Manager</p>
+                
+                    <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x6d;&#97;&#x74;&#116;&#x2e;&#104;&#x6f;&#103;&#x61;&#110;&#x40;&#98;&#x75;&#115;&#x69;&#110;&#x65;&#115;&#x73;&#45;&#x73;&#111;&#x75;&#116;&#x68;&#46;&#x6f;&#114;&#x67;&#46;&#x6e;&#122;"  class="btn btn-primary">Contact Me</a>
+                
+            </div>
+        </div>
+    
+        <div class="col-12 col-md-6 popup-col d-block d-lg-flex justify-content-start align-items-center">
+            
+                <img src="/assets/Team/Mike_Idour_ForTrades__ScaleMaxWidthWzUwMF0.png" alt="Mike Idour ForTrades" />
+            
+            <div class="icon-content">
+                <h3>Mike Idour</h3>
+                <p>For Trades Facilitator</p>
+                
+                    <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x6d;&#105;&#x6b;&#101;&#x2e;&#105;&#x64;&#111;&#x75;&#114;&#x40;&#98;&#x75;&#115;&#x69;&#110;&#x65;&#115;&#x73;&#45;&#x73;&#111;&#x75;&#116;&#x68;&#46;&#x6f;&#114;&#x67;&#46;&#x6e;&#122;"  class="btn btn-primary">Contact Me</a>
+                
+            </div>
+        </div>
+    
+</div>
+
+
+    <div class="modal fade popup-window" id="infoWindow7" tabindex="-1" role="dialog" aria-labelledby="infoWindow" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark-large"></i>
+                </button>
+                <div class="modal-body">
+                    
+                        <div>
+                            <img src="/assets/Team/Matt_Hogan_ForTrades__ScaleMaxWidthWzEwMDBd.jpg" alt="Matt Hogan ForTrades" />
+                        </div>
+                    
+                    <h3>Matt Hogan</h3>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade popup-window" id="infoWindow8" tabindex="-1" role="dialog" aria-labelledby="infoWindow" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark-large"></i>
+                </button>
+                <div class="modal-body">
+                    
+                        <div>
+                            <img src="/assets/Team/Mike_Idour_ForTrades__ScaleMaxWidthWzEwMDBd.png" alt="Mike Idour ForTrades" />
+                        </div>
+                    
+                    <h3>Mike Idour</h3>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+        </div>
+    </div>
+</section>
+
+    
+	   <section class="video-section" id="e137">
+    <div class="container">
+        
+<div class="video-wrapper">
+    <div class="container container-small">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/722409512" allowfullscreen></iframe>
+        </div>
+        <div class="mt-4">
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+    
+	   <section class="section tereo-textimage-element">
+    <div class="element " id="e160" style=" ">
+        <div class="container">
+            <div class="row">
+    <div class="col-12 col-lg-6 pb-4 pb-lg-0 image-column d-flex order-1 ">
+        
+            <img class="text-image-img" src="/assets/In-Page-Images/Young-man-doing-construction-work.jpg" alt="Young man doing construction work"/>
+        
+    </div>
+    <div class="col-12 col-lg-6 text-column d-flex flex-column justify-content-center order-2 ">
+        <div class="wr-80">
+            
+                <div class="section-title">
+                    <h4>Testimonial</h4>
+                </div>
+            
+            
+                <h2 class="secondary-text mb-3">&quot;For Trades have given me a great opportunity to excel in my chosen profession through learning new skills that can one day lead me to own my own business.&quot; </h2>
+            
+            
+                <h2 class="primary-text">Tainui Little</h2>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+    
+	   <section class="section elemental-tabcontent">
+    <div class="element " id="e78" style=" ">
+        <div class="container">
+            
+    <div class="section-title full-width-title">
+        <h4>FAQs</h4>
+        <hr/>
+    </div>
+
+
+<div class="row">
+    <div class="col-12 col-lg-9">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            
+                <li class="nav-item">
+                    <button class="h3 nav-link active" id="FAQs for Apprentices-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="FAQs for Apprentices" aria-selected="true">
+                        FAQs for Apprentices
+                    </button>
+                </li>
+            
+                <li class="nav-item">
+                    <button class="h3 nav-link " id="FAQs for Employers-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="FAQs for Employers" aria-selected="true">
+                        FAQs for Employers
+                    </button>
+                </li>
+            
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            
+                <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="FAQs for Apprentices-tab">
+                    <p>We’ll support you through your learning journey to the successful completion of your trades qualification. Our completion and success rates are industry-leading.</p>
+                    
+                        <div class="question-anchor" id="q1"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            What opportunities are there?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>You’d be amazed! Apprenticeships and vocational training opportunities span a range of sectors, including building, electrical, plumbing, painting, horticulture, light engineering, retail and many more.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q2"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            Where will I work?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>We match you with a host business who will support you through your training. Many of our hosts have been with us for years and are well-respected in the region.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q3"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            How much study is there?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>Your learning will be a combination of on-the-job training and theory. You will be supported by a learning coach from an Industry Training Organisation. The pace of learning is designed to be manageable.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q4"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            How do I earn?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>You will earn while you learn as opposed to building up a student debt. You may start with a training wage, and our employers often recognise your learning and contribution to the workplace with wage increases.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q5"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            How do I find out more?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>We suggest we meet with you to discuss your trades career – your whānau are also welcome.</p>
+                                
+                                    <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x34;&#84;&#x72;&#97;&#x64;&#101;&#x73;&#64;&#x62;&#117;&#x73;&#105;&#x6e;&#101;&#x73;&#115;&#x2d;&#115;&#x6f;&#117;&#x74;&#104;&#x2e;&#111;&#x72;&#103;&#x2e;&#110;&#x7a;"  class="btn btn-primary">Contact Us</a>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="FAQs for Employers-tab">
+                    <p>We provide motivated apprentices and take care of the recruitment process, payroll, employment relations and pastoral care needs for you.</p>
+                    
+                        <div class="question-anchor" id="q6"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            Can you help me find apprentices?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>Absolutely! We are constantly meeting keen and capable young people in schools and through community organisations, employment events and via our own advertising.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q7"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            Who employs the apprentice?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>This is a managed apprenticeship, so For Trades is the employer. We place our apprentices in host businesses.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q8"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            What does it mean to be a host business?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>As a host business, you have an agreement with For Trades to support and train a young person for the term of the apprenticeship, as if they were a member of your own team.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q9"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            What are the benefits of being a For Trades host?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>There are many advantages that save you time and effort and make business easier for you! We:</p><ul>
+<li>manage the recruitment process, all employment agreements and all ongoing employment relations</li>
+<li>simplify payroll and financial compliance, taking care of pay, tax, Kiwisaver and ACC levies</li>
+<li>work with Industry Training Organisations to ensure the apprentice moves through their learning pathway</li>
+<li>invest a lot of time into mentoring and pastoral care.</li>
+</ul>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q10"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            Is there a cost?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>There is a small weekly fee for all services.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q11"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            What track record do you have?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>Some of our hosts have been with us for more than 15 years. We value our relationships with hosts and view these as partnerships.</p><p>In addition, we are governed by an independent board of trustees and managed by an experienced team within Business South.</p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="question-anchor" id="q12"></div>
+                        <div class="question">
+                            <img src="/_resources/themes/business-south/images/q.svg" alt="question">
+                            How do I learn more?
+                        </div>
+                        <div class="answer">
+                            <img src="/_resources/themes/business-south/images/a.svg" alt="question">
+                            <div>
+                                <p>We would welcome the opportunity to meet with you and discuss how to help your business.</p>
+                                
+                                    <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x34;&#84;&#x72;&#97;&#x64;&#101;&#x73;&#64;&#x62;&#117;&#x73;&#105;&#x6e;&#101;&#x73;&#115;&#x2d;&#115;&#x6f;&#117;&#x74;&#104;&#x2e;&#111;&#x72;&#103;&#x2e;&#110;&#x7a;"  class="btn btn-primary">Contact Us</a>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+    <div class="d-none d-lg-block col-3">
+        <div class="position-sticky" style="top: 90px;">
+            
+                <div data-nav="#tab1" class="tab-content-nav ">
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q1"><i class="fa-solid fa-angle-right"></i> What opportunities are there?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q2"><i class="fa-solid fa-angle-right"></i> Where will I work?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q3"><i class="fa-solid fa-angle-right"></i> How much study is there?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q4"><i class="fa-solid fa-angle-right"></i> How do I earn?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q5"><i class="fa-solid fa-angle-right"></i> How do I find out more?</a>
+                        </div>
+                    
+                </div>
+            
+                <div data-nav="#tab2" class="tab-content-nav d-none">
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q6"><i class="fa-solid fa-angle-right"></i> Can you help me find apprentices?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q7"><i class="fa-solid fa-angle-right"></i> Who employs the apprentice?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q8"><i class="fa-solid fa-angle-right"></i> What does it mean to be a host business?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q9"><i class="fa-solid fa-angle-right"></i> What are the benefits of being a For Trades host?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q10"><i class="fa-solid fa-angle-right"></i> Is there a cost?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q11"><i class="fa-solid fa-angle-right"></i> What track record do you have?</a>
+                        </div>
+                    
+                        <div>
+                            <a href="/how-we-help/for-trades/#q12"><i class="fa-solid fa-angle-right"></i> How do I learn more?</a>
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</section>
+
+    
+
+
+</div>
+
+
+	
+        
+    <section class="section footer-partners">
+        <div class="container">
+            <div class="section-title full-width-title">
+                <h4>Enterprise Partners</h4>
+                <hr>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center enterprise-partners">
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.2degrees.nz/"  target='_blank'>
+                                <img src="/assets/Uploads/Untitled-design.jpg" alt="2 Degrees" />
+                            </a>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+        
+    <section class="section footer-partners">
+        <div class="container">
+            <div class="section-title full-width-title">
+                <h4>Pivotal Partners</h4>
+                <hr>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center primary-partners">
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.businessnz.org.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/business-nz__PadWzM1MCwyNTAsIkZGRkZGRiIsMF0.png" alt="BusinessNZ" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.ema.co.nz/"  target='_blank'>
+                                <img src="/assets/Uploads/EMA_Black__PadWzM1MCwyNTAsIkZGRkZGRiIsMF0.png" alt="EMA" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.businesscentral.org.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/business_central__PadWzM1MCwyNTAsIkZGRkZGRiIsMF0.png" alt="BusinessCentral" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.cecc.org.nz/"  target='_blank'>
+                                <img src="/assets/Uploads/Untitled-design-2__PadWzM1MCwyNTAsIkZGRkZGRiIsMF0.png" alt="CECC" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.newzealandchambers.co.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/nzchamber__PadWzM1MCwyNTAsIkZGRkZGRiIsMF0.jpg" alt="New Zealand Chambers of Commerce" />
+                            </a>
+                        
+                    </div>
+                
+            </div>
+            <div class="row d-flex align-items-center justify-content-center justify-content-md-between secondary-partners">
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.z.co.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/Z_Energy_logo__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.png" alt="Z Energy" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.westpac.co.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/westpac-logo__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.png" alt="Westpac" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <img src="/assets/Uploads/trade-pos__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.png" alt="Bunnings Trade" />
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.torpedo7.co.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/torpedo7__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.png" alt="Torpedo7" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.electionz.com/home/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/electionz__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.jpg" alt="Electionz.com" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.inphysecsecurity.com/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/inphysec__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.jpg" alt="INPHYSEC" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.airnewzealand.co.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/Air_New_Zealand__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.png" alt="Air New Zealand" />
+                            </a>
+                        
+                    </div>
+                
+                    <div class="partner">
+                        
+                            <a href="https://www.officemax.co.nz/"  target='_blank'>
+                                <img src="/assets/Partners/Logos/officemax-new-zealand__PadWzQ1MCwyMDAsIkZGRkZGRiIsMF0.png" alt="OfficeMax" />
+                            </a>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+		<footer class="footer" style="">
+    <canvas id="footer-gradient-canvas"></canvas>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <div class="footer-brand d-flex flex-row align-items-center">
+                    <img src="/_resources/themes/business-south/images/bs-symbol.svg" alt="Steve." class="footer-logo">
+                    <p class="mb-0">Sign up to receive information on program events and special announcements.</p>
+                </div>
+                <form id="SubscribeForm_SubscribeForm" action="/how-we-help/for-trades/SubscribeForm/" method="post" enctype="application/x-www-form-urlencoded" class="form-horizontal js-ajax-form needs-validation email-signup-form">
+    
+    <div class="d-flex align-items-center justify-content-between mb-2">
+            <input type="text" name="FirstName" class="text form-control" id="signup-fname" placeholder="First Name" />
+            <input type="text" name="LastName" class="text form-control" id="signup-lname" required="required" aria-required="true" placeholder="Last Name" />
+    </div>
+    <div class="d-flex align-items-center justify-content-between">
+        <input type="email" name="Email" class="email text form-control" id="signup-email" required="required" aria-required="true" placeholder="Email Address" />
+        <button id="SubscribeForm_SubscribeForm_action_SubscribeFormSubmit" type="submit" name="action_SubscribeFormSubmit" class="action submit-button"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+
+    <input type="hidden" name="SecurityID" value="f9b18a3586c05da52258b09caa8e7fab26fcd425" class="hidden" id="SubscribeForm_SubscribeForm_SecurityID" />
+    
+    
+
+    
+
+    
+
+    
+
+    
+        <input type="text" name="email_" class="honeypotspamprotector hpfield4" id="SubscribeForm_SubscribeForm_check_email_" tabindex="-1" />
+    
+
+    
+        <input type="text" name="name_" class="honeypotspamprotector hpfield1" id="SubscribeForm_SubscribeForm_check_name_" tabindex="-1" />
+    
+
+    
+        <input type="text" name="address_" class="honeypotspamprotector hpfield2" id="SubscribeForm_SubscribeForm_check_address_" tabindex="-1" />
+    
+
+    
+        <input type="text" name="phone_" class="honeypotspamprotector hpfield3" id="SubscribeForm_SubscribeForm_check_phone_" tabindex="-1" />
+    
+
+    
+        <input type="hidden" name="f_st_t" value="1723671567" class="hidden" id="f_st_t" tabindex="-1" />
+    
+
+</form>
+
+                <div class="footer-contact-info">
+                    <h3>Connect. Navigate. Empower.</h3>
+                    
+                        <p><a href="tel:03 479 0181">03 479 0181</a></p>
+                        <p><a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x69;&#110;&#x66;&#111;&#x40;&#98;&#x75;&#115;&#x69;&#110;&#x65;&#115;&#x73;&#45;&#x73;&#111;&#x75;&#116;&#x68;&#46;&#x6f;&#114;&#x67;&#46;&#x6e;&#122;">&#105;&#x6e;&#102;&#x6f;&#64;&#x62;&#117;&#x73;&#105;&#x6e;&#101;&#x73;&#115;&#x2d;&#115;&#x6f;&#117;&#x74;&#104;&#x2e;&#111;&#x72;&#103;&#x2e;&#110;&#x7a;</a></p>
+                        
+                            <p><a href="https://www.google.com/maps/place/Business+South+-+Otago+Chamber+%26+Southern+Employers/@-45.8752988,170.5020333,17z/data=!4m9!1m2!2m1!1sLevel+3+Public+Trust+Building+442+Moray+Place,+Dunedin+9016!3m5!1s0xa82ead8f058591cd:0xd066f34e57a90a8!8m2!3d-45.8751907!4d170.5042419!15sCjtMZXZlbCAzIFB1YmxpYyBUcnVzdCBCdWlsZGluZyA0NDIgTW9yYXkgUGxhY2UsIER1bmVkaW4gOTAxNiIDiAEBWjwiOmxldmVsIDMgcHVibGljIHRydXN0IGJ1aWxkaW5nIDQ0MiBtb3JheSBwbGFjZSBkdW5lZGluIDkwMTaSARdub25fcHJvZml0X29yZ2FuaXphdGlvbg" target="_blank">Level 3 Public Trust Building <br />
+442 Moray Place, Dunedin 9016<br />
+PO Box 5713, Dunedin 9054</a></p>
+                        
+                    
+                    <div class="social-links">
+                        
+                            <a href="https://www.facebook.com/businesssouthnz" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        
+                        
+                            <a href="https://www.linkedin.com/company/businesssouthnz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 offset-lg-1 d-none d-lg-block">
+                
+                    
+                        <div class="footer-menu">
+                            <div class="title">
+                                <strong>Who We Help</strong>
+                            </div>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a href="small-business">
+                                                Small Business
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="medium-business">
+                                                Medium Business
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="growth">
+                                                Large Business
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="youth-opportunities">
+                                                Youth Opportunities 
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="individual">
+                                                Individuals
+                                            </a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </div>
+                    
+                
+                
+                    <div class="footer-menu">
+                        <div class="title">
+                            <strong>How We Help</strong>
+                        </div>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/how-we-help/training/">
+                                        Training
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/how-we-help/employment-relations/">
+                                        Employment Relations
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/how-we-help/regional-business-partners/">
+                                        Regional Business Partners
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/">
+                                        Workforce Development
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/how-we-help/adviceline/">
+                                        AdviceLine
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/how-we-help/business-advocacy/">
+                                        Business Advocacy
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/how-we-help/sustainability/">
+                                        Sustainability
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            
+                <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                    <div class="footer-menu">
+                        <div class="title">
+                            <strong>Popular</strong>
+                        </div>
+                        <ul>
+                        
+                            <li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/whats-on/calendar/">
+                                    Events
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/about/our-people/">
+                                    Our People
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/about/contact-us/">
+                                    Contact Us
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/assets/Media-Package-Business-South.pdf">
+                                    Advertise with us
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="footer-credits">
+            <div class="row">
+                <div class="col-lg text-left text-lg-left">
+                    <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/assets/Documents/BSi-Constitution-and-Rules-2022.pdf" target="_blank">Constitution and Rules</a></p>
+                </div>
+                <div class="col-lg text-left text-lg-right">
+                    <p>Business South Inc. &copy; 2024 - All rights reserved.
+                    <span class="dev-by-firebrand">
+                        Web design by <a href="https://firebrand.nz" target="_blank" rel="noopener"><img src="//s3-ap-southeast-2.amazonaws.com/firebrand-cdn/firebrand/firebrand-white.svg" alt="Firebrand" class="firebrand-logo"></a>
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+
+</main>
+
+
+    <div class="pulse-window pulse-hidden">
+    <div class="pulse-close">
+        <i class="fa-solid fa-xmark-large"></i>
+    </div>
+    <form id="PulseForm_PulseForm" action="/how-we-help/for-trades/PulseForm/" method="post" enctype="application/x-www-form-urlencoded" class="form-horizontal js-ajax-form needs-validation">
+    <div class="row">
+        <div class="col-md d-md-flex flex-column justify-content-between p-0 p-lg-3">
+            <h3>Our Pulse Check</h3>
+            <div class="pulse-select-row">
+                <div class="form-group custom-select-dropdown pulse-select">
+                    <select name="Region" class="dropdown form-control" id="PulseForm_PulseForm_Region" required="required" aria-required="true">
+
+	<option value=""
+		 selected="selected"
+		
+		>Region
+	</option>
+
+	<option value="1"
+		
+		
+		>Dunedin
+	</option>
+
+	<option value="4"
+		
+		
+		>Clutha
+	</option>
+
+	<option value="3"
+		
+		
+		>Central Otago
+	</option>
+
+	<option value="5"
+		
+		
+		>Queenstown Lakes
+	</option>
+
+	<option value="7"
+		
+		
+		>Waitaki
+	</option>
+
+	<option value="8"
+		
+		
+		>Southland
+	</option>
+
+</select>
+                    
+                        <div class="invalid-feedback">Region is required</div>
+                    
+                </div>
+                <div class="form-group custom-select-dropdown pulse-select">
+                    <select name="Industry" class="dropdown form-control" id="PulseForm_PulseForm_Industry" required="required" aria-required="true">
+
+	<option value=""
+		 selected="selected"
+		
+		>Select Industry
+	</option>
+
+	<option value="1"
+		
+		
+		>Arts and Recreational
+	</option>
+
+	<option value="2"
+		
+		
+		>Agriculture, Forestry and Fisheries
+	</option>
+
+	<option value="3"
+		
+		
+		>Banking and Financial
+	</option>
+
+	<option value="4"
+		
+		
+		>Construction
+	</option>
+
+	<option value="5"
+		
+		
+		>Education and Training
+	</option>
+
+	<option value="6"
+		
+		
+		>Health and Social Support
+	</option>
+
+	<option value="7"
+		
+		
+		>Hospitality, Events and Accommodation
+	</option>
+
+	<option value="8"
+		
+		
+		>Manufacturing
+	</option>
+
+	<option value="9"
+		
+		
+		>Retail
+	</option>
+
+	<option value="10"
+		
+		
+		>Technical
+	</option>
+
+	<option value="11"
+		
+		
+		>Transport, Postal and Warehouse
+	</option>
+
+	<option value="12"
+		
+		
+		>Other
+	</option>
+
+</select>
+                    
+                        <div class="invalid-feedback">Industry is required</div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md d-md-flex flex-column justify-content-between p-0 p-lg-3">
+            <h4>From a business industry perspective, is it clear in terms of what the region will be known for in 10 years&#039; time? </h4>
+            <div class="d-flex align-items-center">
+                <div class="pulse-check-options d-flex">
+                    <div class="custom-control custom-radio form-check">
+                        <input id="Form_PulseForm_Answer_No" class="form-check-input d-none" name="Answer" type="radio" value="No" required>
+                        <label class="form-check-label" for="Form_PulseForm_Answer_No">No</label>
+                        
+                            <div class="invalid-feedback">Answer is required</div>
+                        
+                    </div>
+                    <div class="custom-control custom-radio form-check">
+                        <input id="Form_PulseForm_Answer_Yes" class="form-check-input d-none" name="Answer" type="radio" value="Yes" required>
+                        <label class="form-check-label" for="Form_PulseForm_Answer_Yes">Yes</label>
+                    </div>
+                </div>
+                
+                    <input type="submit" name="action_doForm" value="Submit" class="action btn btn-secondary btn-outline-primary" id="PulseForm_PulseForm_action_doForm" />
+                
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" name="SecurityID" value="f9b18a3586c05da52258b09caa8e7fab26fcd425" class="hidden" id="PulseForm_PulseForm_SecurityID" />
+    <input type="hidden" name="QuestionID" value="26" class="hidden" id="PulseForm_PulseForm_QuestionID" />
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</form>
+
+</div>
+
+
+
+
+    <div class="modal modal-fullscreen modal-event-item fade" id="event-modal-255257" tabindex="-1" role="dialog" aria-labelledby="event-modal-255257-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark-large"></i>
+            </button>
+            <div class="modal-body">
+                <div class="event-item event-item-image">
+                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Maniototo_Adventure_Park_BA5_web.png  "/>
+                </div>
+                <div class="event-item-details">
+                    <div class="event-content-title">
+                        <h3>Central Otago BA5: Hosted by Maniototo Adventure Park</h3>
+                    </div>
+                    <div class="event-content-description">
+                        <p class="mb-2"><strong>22 Aug 2024</strong></p>
+                        <p>Join us on <strong>22nd August</strong> from <strong>5:15 PM to 7:00 PM</strong> at the stunning <a href="https://www.maniototoadventurepark.co.nz/" target="_new">Maniototo Adventure Park</a> in Naseby for an evening of networking, fun, and adventure!</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="event-button">
+                            <a href="https://businesssouth.outreach.co.nz/forms/register?event=255257" target="_blank" class="btn btn-primary event-button-click">Register</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="modal modal-fullscreen modal-event-item fade" id="event-modal-255805" tabindex="-1" role="dialog" aria-labelledby="event-modal-255805-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark-large"></i>
+            </button>
+            <div class="modal-body">
+                <div class="event-item event-item-image">
+                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Dunedin_Solar_Logo.png  "/>
+                </div>
+                <div class="event-item-details">
+                    <div class="event-content-title">
+                        <h3>Dunedin August BA5 hosted by Dunedin Solar</h3>
+                    </div>
+                    <div class="event-content-description">
+                        <p class="mb-2"><strong>22 Aug 2024</strong></p>
+                        <p>This BA5 is an opportunity to see firsthand how solar power can help local Dunedin businesses and homeowners.</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="event-button">
+                            <a href="https://businesssouth.outreach.co.nz/forms/register?event=255805" target="_blank" class="btn btn-primary event-button-click">Register</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="modal modal-fullscreen modal-event-item fade" id="event-modal-257994" tabindex="-1" role="dialog" aria-labelledby="event-modal-257994-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark-large"></i>
+            </button>
+            <div class="modal-body">
+                <div class="event-item event-item-image">
+                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Outreach_Image_Template_Size_21.png  "/>
+                </div>
+                <div class="event-item-details">
+                    <div class="event-content-title">
+                        <h3>Shaping the Future of Tertiary Education: Insights from Hon Penny Simmonds</h3>
+                    </div>
+                    <div class="event-content-description">
+                        <p class="mb-2"><strong>23 Aug 2024</strong></p>
+                        <p>Join us for an enlightening event where Hon Penny Simmonds will present an update on the Tertiary Education and Skills portfolio. &nbsp;This presentation will offer insights into the Minister&#39;s strategic direction for the tertiary education sector, including universities, polytechnics, and industry training organisations (ITOs).</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="event-button">
+                            <a href="https://businesssouth.outreach.co.nz/forms/register?event=257994" target="_blank" class="btn btn-primary event-button-click">Register</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="modal modal-fullscreen modal-event-item fade" id="event-modal-236424" tabindex="-1" role="dialog" aria-labelledby="event-modal-236424-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark-large"></i>
+            </button>
+            <div class="modal-body">
+                <div class="event-item event-item-image">
+                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Health_and_Safety_EDM.jpg  "/>
+                </div>
+                <div class="event-item-details">
+                    <div class="event-content-title">
+                        <h3>Health and Safety Representative Training (Stage 1) - Dunedin</h3>
+                    </div>
+                    <div class="event-content-description">
+                        <p class="mb-2"><strong>19 Aug 2024</strong></p>
+                        <p>Ensuring you and your colleagues remain free from injury at work takes not only care, but specific knowledge and skills. This two-day course will help you to understand the Health and Safety at Work Act, and its associated regulations, to maintain a safe working environment.<br />
+<br />
+<strong>Duration:</strong> 2 Days ► 9.00am - 4.30pm<br />
+<strong>Delivery: </strong>Business South, Training Room</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="event-button">
+                            <a href="https://businesssouth.outreach.co.nz/forms/register?event=236424" target="_blank" class="btn btn-primary event-button-click">Register</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="modal modal-fullscreen modal-event-item fade" id="event-modal-252476" tabindex="-1" role="dialog" aria-labelledby="event-modal-252476-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark-large"></i>
+            </button>
+            <div class="modal-body">
+                <div class="event-item event-item-image">
+                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Leaders_Guide-WEB.png  "/>
+                </div>
+                <div class="event-item-details">
+                    <div class="event-content-title">
+                        <h3>Effective Leadership - Dunedin</h3>
+                    </div>
+                    <div class="event-content-description">
+                        <p class="mb-2"><strong>27 Aug 2024</strong></p>
+                        <p>Effective leadership is the ability of a leader to execute the organisation&rsquo;s goals and create a work culture that allows employees to contribute meaningfully to the achievement of their employer&#39;s vision.<br />
+<br />
+<strong>Duration:</strong> 1 Day ► 9.00am - 4.30pm<br />
+<strong>Delivery:&nbsp;&nbsp;</strong>Business South, Training Room</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="event-button">
+                            <a href="https://businesssouth.outreach.co.nz/forms/register?event=252476" target="_blank" class="btn btn-primary event-button-click">Register</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="modal modal-fullscreen modal-event-item fade" id="event-modal-252248" tabindex="-1" role="dialog" aria-labelledby="event-modal-252248-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark-large"></i>
+            </button>
+            <div class="modal-body">
+                <div class="event-item event-item-image">
+                    <img src="https://businesssouth.outreach.co.nz/image/pictures/inline/Website_Leadership_Academy_Logo_790_×_400_px.png  "/>
+                </div>
+                <div class="event-item-details">
+                    <div class="event-content-title">
+                        <h3>Dunedin Leadership Academy starting 30 August 2024</h3>
+                    </div>
+                    <div class="event-content-description">
+                        <p class="mb-2"><strong>30 Aug 2024</strong></p>
+                        <p>This inspirational eight session programme is the catalyst that ignites relationship building with like-minded professional peers, fosters inspiration to take your leadership career to the next level and provides outstanding opportunities to learn from prominent Otago leaders. Led by senior executives from significant Otago-based businesses, participants will benefit from the opportunity to interact and build ongoing connections with the presenters.<br />
+<br />
+<strong>Duration:&nbsp;</strong> 2 hours ►&nbsp;9.00am - 11.00am<br />
+<strong>Delivery:</strong>&nbsp; Business South, Board Room</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="event-button">
+                            <a href="https://businesssouth.outreach.co.nz/forms/register?event=252248" target="_blank" class="btn btn-primary event-button-click">Register</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/jquery-3.3.1.min.js?m=1655934371"></script>
+<script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/custom-select.js?m=1655947282"></script>
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/gradient.js?m=1655934371"></script>
+<script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script type="application/javascript" src="//code.tidio.co/04svaz3pee0d3xsciqbvk0x9ys8sn9qc.js"></script>
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/theme.js?m=1713415420"></script>
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/video-popup.js?m=1697416036"></script>
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/jquery.countup.js?m=1655934371"></script>
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/subscribe-form.js?m=1655934371"></script>
+<script type="application/javascript" src="/_resources/themes/business-south/javascript/pulse-form.js?m=1694137390"></script>
+<script type="application/javascript">//<![CDATA[
+$('.counter').counterUp({delay: 20,time: 2000,startVal: 1});
+//]]></script>
+</body>
+</html>

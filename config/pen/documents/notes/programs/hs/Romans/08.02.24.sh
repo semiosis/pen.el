@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs;  "Romans" "6:23" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/docs;  "Romans" "3:25" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "Romans" "3" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Romans" "7:6" "#" "<==" "bash"
+cd /root/notes;  "Romans" "10:14-21" "#" "<==" "bash"

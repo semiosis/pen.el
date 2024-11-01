@@ -1,0 +1,7 @@
+ambiguous occurrence
+    Solution:
+    import qualified Data.Map as Map
+
+Exception: Prelude.head: empty list
+    Prelude> head []
+    *** Exception: Prelude.head: empty list

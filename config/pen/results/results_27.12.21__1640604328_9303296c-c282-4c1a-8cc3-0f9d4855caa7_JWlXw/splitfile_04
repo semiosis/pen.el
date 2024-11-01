@@ -1,0 +1,7 @@
+"Neural Radiance Fields" (NeRF) are a neural network architecture for
+reconstructing scenes from a single image. NeRFs are a generalization of the
+"radiance fields" introduced by Levin et al. [1] to multiple views.
+
+NeRFs are a generalization of the "radiance fields" introduced by Levin et al. [1] to multiple views.
+
+NeRFs are a generalization of the "radiance fields" introduced by Levin et al.

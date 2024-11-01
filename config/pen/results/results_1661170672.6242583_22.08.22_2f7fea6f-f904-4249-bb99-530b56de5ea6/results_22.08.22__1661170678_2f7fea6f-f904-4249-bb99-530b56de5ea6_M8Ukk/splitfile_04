@@ -1,0 +1,9 @@
+ isLetter )
+import System.Environment ( getArgs )
+import Control.Monad ( replicateM )
+
+-- e.g. cin >> getLine
+cin :: IO String
+cin = getLine
+
+main = do

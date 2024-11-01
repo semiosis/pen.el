@@ -1,0 +1,6 @@
+build-index (&optional tag)
+  "build project index"
+  (interactive)
+  (let* ((buf (get-buffer-create "*pindex*"))
+	 (dir (read-directory-name "Path:" nil nil t)))
+    (set ()

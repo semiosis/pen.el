@@ -1,0 +1,6 @@
+ | K | R | Farenheit
+deriving ( Show , Eq , Data , Typeable )
+
+newtype Fahrenheit = Fahrenheit { unFahrenheit :: Double }
+fahrenheit :: Double -> Fahrenheit
+fahrenheit =

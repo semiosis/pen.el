@@ -1,0 +1,79 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 18
+
+* D-Group weekly session notes
+Started working on it: <2024-05-01 Wed>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=9oVSJUk9wDg][The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano - YouTube]]
+
+| Scripture Memory NT | NT260 Passage       | Foundations260 Passage | Scripture Memory OT | OT260 Passage |
+|---------------------+---------------------+------------------------+---------------------+---------------|
+| [[sh:bible-read-passage nasb Matthew 5:36-37 ][Matthew 5:36-37]]     | [[sh:bible-study-passage nasb II Corinthians 8-12 ][II Corinthians 8-12]] | [[sh:bible-study-passage nasb II Samuel 24 ][II Samuel 24]]           | [[sh:bible-read-passage nasb Psalm 86:15 ][Psalm 86:15]]         | [[sh:bible-study-passage nasb Numbers 21-35 ][Numbers 21-35]] |
+|                     |                     | [[sh:bible-study-passage nasb Psalm 1 ][Psalm 1]]                |                     | [[sh:bible-study-passage nasb Psalm 86-90 ][Psalm 86-90]]   |
+|                     |                     | [[sh:bible-study-passage nasb Psalm 19 ][Psalm 19]]               |                     |               |
+|                     |                     | [[sh:bible-study-passage nasb Psalm 24 ][Psalm 24]]               |                     |               |
+|                     |                     | [[sh:bible-study-passage nasb Psalm 51 ][Psalm 51]]               |                     |               |
+|                     |                     | [[sh:bible-study-passage nasb Psalm 103 ][Psalm 103]]              |                     |               |
+|                     |                     | [[sh:bible-study-passage nasb Psalm 119 ][Psalm 119]]              |                     |               |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:36-37
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:36
+‾‾‾‾‾‾‾‾‾‾‾‾
+Nor shall you make an oath by your head, for you
+cannot make one hair white or black.
+
+Matthew 5:37
+‾‾‾‾‾‾‾‾‾‾‾‾
+But let your statement be, ‘Yes, yes’ or
+‘No, no’; anything beyond these is of evil.
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Psalm 86:15
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Psalms 86:15
+‾‾‾‾‾‾‾‾‾‾‾‾
+But You, O Lord, are a God merciful and gracious,
+Slow to anger and abundant in lovingkindness and
+truth.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

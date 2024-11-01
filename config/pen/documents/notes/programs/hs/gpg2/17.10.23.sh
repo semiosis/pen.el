@@ -1,0 +1,2 @@
+cd /volumes/home/shane/var/smulliga/source/git/sl4m/gnu_smalltalk_koans;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /volumes/home/shane/var/smulliga/source/git/sl4m/gnu_smalltalk_koans;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputPe9BS0" "--verify" "--" "/tmp/epg-signatureqr34A1" "-" "#" "<==" "emacs"

@@ -1,0 +1,7 @@
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 17:1" "#" "<==" "nem"
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 17:2" "#" "<==" "nem"
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 17:3" "#" "<==" "nem"
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 17:4" "#" "<==" "nem"
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 17:16" "#" "<==" "nem"
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 18:1" "#" "<==" "nem"
+cd /root/notes;  "nbd" "fast" "ebible" "-c" "-m" "NASB" "John 18:2" "#" "<==" "nem"

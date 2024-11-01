@@ -1,0 +1,78 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 22
+
+* D-Group weekly session notes
+Started working on it: <2024-06-01 Sat>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=9oVSJUk9wDg][The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano - YouTube]]
+
+| Scripture Memory NT | NT260 Passage | Foundations260 Passage | Scripture Memory OT | OT260 Passage |
+|---------------------+---------------+------------------------+---------------------+---------------|
+| [[sh:bible-read-passage nasb Matthew 5:45-46 ][Matthew 5:45-46]]     | [[sh:bible-study-passage nasb Mark 15-16 ][Mark 15-16]]    |                        | [[sh:bible-read-passage nasb Joshua 107:9 ][Joshua 107:9]]        | [[sh:bible-study-passage nasb Joshua 3-7 ][Joshua 3-7]]    |
+|                     | [[sh:bible-study-passage nasb Romans 1-3 ][Romans 1-3]]    |                        |                     | [[sh:bible-study-passage nasb Psalm 106-110 ][Psalm 106-110]] |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+*** NT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:45-46
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:45
+‾‾‾‾‾‾‾‾‾‾‾‾
+so that you may be sons of your Father who is in
+heaven; for He causes His sun to rise on the evil
+and the good, and sends rain on the righteous and
+the unrighteous.
+
+Matthew 5:46
+‾‾‾‾‾‾‾‾‾‾‾‾
+For if you love those who love you, what reward
+do you have? Do not even the tax collectors do
+the same?
+
+(NASB)
+#+end_src
+
+*** OT
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Joshua 107:9
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+I Kings 3:9
+‾‾‾‾‾‾‾‾‾‾‾
+So give Your servant an understanding heart to
+judge Your people to discern between good and
+evil. For who is able to judge this great people
+of Yours?”
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+hear

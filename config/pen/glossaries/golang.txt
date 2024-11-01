@@ -1,0 +1,7 @@
+:=
+    Shorthand for declaring and initializing a
+    variable, e.g.
+
+        f := "apple"
+    
+        for var f string = "apple"

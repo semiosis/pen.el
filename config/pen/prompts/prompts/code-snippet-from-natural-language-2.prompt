@@ -1,0 +1,49 @@
+title: code snippet from natural language
+tags: code hci
+future-titles:
+- Get code snippet
+- Get snippet
+next-version: get-code-snippet.prompt
+doc: Get a bash one liner from natural langauge
+prompt: |+
+    Language: Ruby
+    Task: Reverse lines from stdout
+    Code: while s = gets; puts s.chop.reverse; end
+    <delim>
+    Language: Haskell
+    Task: Multiple Each Item in a List by 2
+    Code:
+    map (*2) [1..10]
+    <delim>
+    Language: bash
+    Task: Recursively remove all "node_modules" folders
+    Code:
+    find . -name "node_modules" -exec rm -rf '{}' +
+    <delim>
+    Language: Haskell
+    Task: Apply a function to both bits of a tuple:
+    Code:
+    both :: (a -> b) -> (a, a) -> (b, b)
+    both = join (***)
+    <delim>
+    Language: Python
+    Task: Palindrome Python One-Liner
+    Code: phrase.find(phrase[::-1])
+    <delim>
+    Language: <1>    
+    Task: <2>
+    Code:
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- language
+- task
+var-defaults:
+- "(pen-detect-language-ask)"
+examples:
+- bash
+- suspend laptop

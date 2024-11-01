@@ -1,0 +1,27 @@
+---
+title: bad grammar
+tags: grammar prose
+prompt: |
+  These are some examples of bad grammar.
+
+  Output: Anna and Mike are going skiing.
+  Input: Anna and Mike is going skiing.
+  <delim>
+  Output: Anna and Pat are married; they have been together for 20 years.
+  Input: Anna and Pat are married; he has been together for 20 years.
+  <delim>
+  Output: I walked to the store and I bought milk.
+  Input: I walk to the store and I bought milk.
+  <delim>
+  Output: <1>
+  Input:
+engine: OpenAI Davinci
+temperature: 0.9
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- sentence
+examples:
+- She went to the market.

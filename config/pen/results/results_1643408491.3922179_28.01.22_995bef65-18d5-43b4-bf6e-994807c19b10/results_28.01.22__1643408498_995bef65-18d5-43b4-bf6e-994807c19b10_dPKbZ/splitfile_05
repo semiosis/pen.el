@@ -1,0 +1,11 @@
+cd 'harrys adventures'
+» ls
+ harry-1.txt  harry-2.txt  harry-3.txt  harry-4.txt  harry-5.txt
+» cd ..
+» cd core
+» ls
+ core.c   core.h   core.o   core.out   core.py   core.sh
+» cd ..
+» cd 'harrys adventures'
+» ls
+ harry-

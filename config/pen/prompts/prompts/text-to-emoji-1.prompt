@@ -1,0 +1,36 @@
+title: text to emoji
+tags: fun
+prompt-version: 2
+prompt: |+
+    Convert text into emojis.
+
+    Back to Future 👨👴🚗🕒
+    <delim>
+    Batman 🤵🦇
+    <delim>
+    Transformers 🚗🤖
+    <delim>
+    Wonder Woman 👸🏻👸🏼👸🏽👸🏾👸🏿
+    <delim>
+    Spider-Man 🕸🕷🕸🕸🕷🕸
+    <delim>
+    Winner the Pooh 🐻🐼🐻
+    <delim>
+    The Godfather 👨👩👧🕵👲💥
+    <delim>
+    Game of Thrones 🏹🗡🗡🏹
+    <delim>
+    <text>
+engine: OpenAI Davinci
+temperature: 0.4
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+quality: 0.3
+insertion: on
+filter: on
+vars:
+- text
+examples:
+- monty python holy grail

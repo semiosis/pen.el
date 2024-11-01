@@ -1,0 +1,9 @@
+"define-expression" is a custom command that allows you to define a new 
+expression. The expression can be used in a .sawsrc file.
+
+For example, the following command defines a new expression named "my-expression" 
+that returns the value of the environment variable named "MY_ENV_VAR":
+
+saws define-expression --name my-expression --value $MY_ENV_VAR
+
+You can then use the "my-expression" expression

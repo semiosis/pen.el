@@ -1,0 +1,1 @@
+ liftm s _ = Just s

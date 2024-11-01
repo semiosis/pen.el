@@ -1,0 +1,15 @@
+|
+    #!/bin/bash
+    awk '{print $1}'
+#+END_SRC
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Imagine an linter"
+  code: |
+    #!/bin/bash
+    awk '{print $1}'
+#+END_SRC
+
+  6: }
+  6:

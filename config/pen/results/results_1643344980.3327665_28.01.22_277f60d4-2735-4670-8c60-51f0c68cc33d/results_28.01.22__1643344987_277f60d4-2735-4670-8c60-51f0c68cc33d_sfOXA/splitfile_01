@@ -1,0 +1,10 @@
+"go-loop"
+(fn [n]
+  (loop [i 0]
+    (async/put! main-chan (str "i: " i))
+    (if (zero? i)
+      (recur (inc i))
+      (recur (inc i)))))))
+
+(defonce main-chan (async/chan 1 
+

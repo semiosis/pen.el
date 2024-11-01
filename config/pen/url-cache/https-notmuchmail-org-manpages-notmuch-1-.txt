@@ -1,0 +1,388 @@
+HTTP/1.1 200 OK
+Date: Wed, 13 Dec 2023 04:52:44 GMT
+Server: Apache/2.4.57 (Debian)
+Last-Modified: Sun, 06 Feb 2022 21:51:11 GMT
+ETag: "2c07-5d7607b75f5cd-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 3908
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>notmuch-1</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-1" />
+
+
+
+
+</head>
+<body>
+
+<div class="pageheader">
+<div class="header">
+<span>
+<span class="parentlinks">
+
+<a href="../../">notmuch</a>/ 
+
+<a href="../">manpages</a>/ 
+
+</span>
+<!--
+<span class="title">
+notmuch-1
+
+</span>
+-->
+</span><!--.header-->
+
+</div>
+
+<!--
+
+<div class="actions">
+<ul>
+
+<li><a href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-1" rel="nofollow">Edit</a></li>
+
+
+<li><a href="../../recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+<li><span class="createlink"><a href="/ikiwiki.cgi?do=create&amp;from=manpages%2Fnotmuch-1&amp;page=Discussion" rel="nofollow">?</a>Discussion</span><br /></li>
+
+
+</ul>
+</div>
+
+-->
+
+
+
+</div> <!-- .pageheader -->
+
+
+
+<div id="content">
+<h1>NOTMUCH(1)</h1>
+
+
+
+
+<h2>NAME</h2>
+
+
+<pre>
+       notmuch - thread-based email index, search, and tagging
+</pre>
+
+
+
+
+<h2>SYNOPSIS</h2>
+
+
+<pre>
+       <b>notmuch</b> [option ...] <b>command</b> [arg ...]
+</pre>
+
+
+
+
+<h2>DESCRIPTION</h2>
+
+
+<pre>
+       Notmuch  is a command-line based program for indexing, searching, read‐
+       ing, and tagging large collections of email messages.
+
+       This page describes how to get started using notmuch from  the  command
+       line,  and  gives  a brief overview of the commands available. For more
+       information on e.g. <b>notmuch</b> <b>show</b> consult the <a href="../notmuch-show-1/">notmuch-show</a>(1) man  page,
+       also accessible via <b>notmuch</b> <b>help</b> <b>show</b>
+
+       The  quickest  way  to get started with Notmuch is to simply invoke the
+       <b>notmuch</b> command with no arguments, which will interactively  guide  you
+       through the process of indexing your mail.
+</pre>
+
+
+
+
+<h2>NOTE</h2>
+
+
+<pre>
+       While the command-line program <b>notmuch</b> provides powerful functionality,
+       it does not provide the most convenient interface for that  functional‐
+       ity.  More  sophisticated interfaces are expected to be built on top of
+       either the command-line interface, or more likely, on top of  the  not‐
+       much  library interface. See <u>https://notmuchmail.org</u> for more about al‐
+       ternate interfaces to notmuch. The  emacs-based  interface  to  notmuch
+       (available under <b>emacs/</b> in the Notmuch source distribution) is probably
+       the most widely used at this time.
+</pre>
+
+
+
+
+<h2>OPTIONS</h2>
+
+
+<pre>
+       Supported global options for <b>notmuch</b> include
+
+       <b>--help</b> <b>[command-name]</b>
+              Print a synopsis of available commands and  exit.  With  an  op‐
+              tional command name, show the man page for that subcommand.
+
+       <b>--version</b>
+              Print the installed version of notmuch, and exit.
+
+       <b>--config=FILE</b>
+              Specify  the  configuration file to use. This overrides any con‐
+              figuration file specified by <u>NOTMUCH</u>_<u>CONFIG</u>. The empty string is
+              a permitted and sometimes useful value of <u>FILE</u>, which tells <b>not-</b>
+              <b>much</b> to use only configuration metadata from the database.
+
+       <b>--uuid=HEX</b>
+              Enforce that the database UUID (a unique identifier  which  per‐
+              sists until e.g. the database is compacted) is HEX; exit with an
+              error if it is not. This is useful to detect rollover in modifi‐
+              cation  counts  on  messages.  You can find this UUID using e.g.
+              <b>notmuch</b> <b>count</b> <b>--lastmod</b>
+
+       All global options except <b>--config</b> can also be specified after the com‐
+       mand.  For example, <b>notmuch</b> <b>subcommand</b> <b>--uuid=HEX</b> is equivalent to <b>not-</b>
+       <b>much</b> <b>--uuid=HEX</b> <b>subcommand</b>.
+</pre>
+
+
+
+
+<h2>COMMANDS</h2>
+
+
+
+
+<h3> &nbsp; SETUP</h3>
+
+
+<pre>
+       The <b>notmuch</b> <b>setup</b> command is used to configure Notmuch for  first  use,
+       (or to reconfigure it later).
+
+       The  setup  command  will prompt for your full name, your primary email
+       address, any alternate email addresses you use, and the directory  con‐
+       taining your email archives. Your answers will be written to a configu‐
+       ration file in <u>NOTMUCH</u>_<u>CONFIG</u> (if  set)  or  ${HOME}/.notmuch-config  .
+       This configuration file will be created with descriptive comments, mak‐
+       ing it easy to edit by hand later to change the configuration.  Or  you
+       can run <b>notmuch</b> <b>setup</b> again to change the configuration.
+
+       The  mail  directory you specify can contain any number of sub-directo‐
+       ries and should primarily contain only files with individual email mes‐
+       sages  (eg.  maildir  or  mh archives are perfect). If there are other,
+       non-email files (such as indexes maintained by  other  email  programs)
+       then notmuch will do its best to detect those and ignore them.
+
+       Mail  storage that uses mbox format, (where one mbox file contains many
+       messages), will not work with notmuch. If that&apos;s how your mail is  cur‐
+       rently stored, it is recommended you first convert it to maildir format
+       with a utility such as <b>mb2md</b>(1) before running <b>notmuch</b> <b>setup</b>.
+
+       Invoking <b>notmuch</b> with no command argument will run <b>setup</b> if  the  setup
+       command has not previously been completed.
+</pre>
+
+
+
+
+<h3> &nbsp; OTHER COMMANDS</h3>
+
+
+<pre>
+       Several  of the notmuch commands accept search terms with a common syn‐
+       tax. See <a href="../notmuch-search-terms-7/">notmuch-search-terms</a>(7) for more details on the supported syn‐
+       tax.
+
+       The  <a href="../notmuch-search-1/">notmuch-search</a>(1),  <a href="../notmuch-show-1/">notmuch-show</a>(1),  <a href="../notmuch-address-1/">notmuch-address</a>(1)  and <a href="../notmuch-count-1/">not‐</a>
+       <a href="../notmuch-count-1/">much-count</a>(1) commands are used to query the email database.
+
+       The <a href="../notmuch-reply-1/">notmuch-reply</a>(1) command is useful for preparing a template for  an
+       email reply.
+
+       The <a href="../notmuch-tag-1/">notmuch-tag</a>(1) command is the only command available for manipulat‐
+       ing database contents.
+
+       The <a href="../notmuch-dump-1/">notmuch-dump</a>(1) and <a href="../notmuch-restore-1/">notmuch-restore</a>(1) commands can be used to cre‐
+       ate  a  textual  dump of email tags for backup purposes, and to restore
+       from that dump.
+
+       The <a href="../notmuch-config-1/">notmuch-config</a>(1) command can be used to get or set settings in the
+       notmuch configuration file.
+</pre>
+
+
+
+
+<h3> &nbsp; CUSTOM COMMANDS</h3>
+
+
+<pre>
+       If  the given command is not known to notmuch, notmuch tries to execute
+       the external <b>notmuch-&lt;subcommand&gt;</b> in <b>PATH</b> instead. This allows users to
+       have their own notmuch related tools to be run via the notmuch command.
+       By design, this does not allow notmuch&apos;s own commands to be  overridden
+       using external commands.
+</pre>
+
+
+
+
+<h3> &nbsp; OPTION SYNTAX</h3>
+
+
+<pre>
+       All options accepting an argument can be used with &apos;=&apos; or &apos;:&apos; as a sep‐
+       arator. Except for boolean options (which would be ambiguous), a  space
+       can also be used as a separator. The following are all equivalent:
+
+          notmuch --config=alt-config config get user.name
+          notmuch --config:alt-config config get user.name
+          notmuch --config alt-config config get user.name
+</pre>
+
+
+
+
+<h2>ENVIRONMENT</h2>
+
+
+<pre>
+       The following environment variables can be used to control the behavior
+       of notmuch.
+
+       <b>NOTMUCH</b>_<b>CONFIG</b>
+              Specifies the location of the notmuch  configuration  file.  See
+              <a href="../notmuch-config-1/">notmuch-config</a>(1) for details.
+
+       <b>NOTMUCH</b>_<b>DATABASE</b>
+              Specifies the location of the notmuch database. See <a href="../notmuch-config-1/">notmuch-con‐</a>
+              <a href="../notmuch-config-1/">fig</a>(1) for details.
+
+       <b>NOTMUCH</b>_<b>PROFILE</b>
+              Selects among notmuch configurations. See <a href="../notmuch-config-1/">notmuch-config</a>(1)  for
+              details.
+
+       <b>NOTMUCH</b>_<b>TALLOC</b>_<b>REPORT</b>
+              Location  to  write a talloc memory usage report. See <b>talloc</b>_<b>en-</b>
+              <b>able</b>_<b>leak</b>_<b>report</b>_<b>full</b> in <b>talloc</b>(3) for more information.
+
+       <b>NOTMUCH</b>_<b>DEBUG</b>_<b>QUERY</b>
+              If set to a non-empty value, the notmuch library will print  (to
+              stderr) Xapian queries it constructs.
+</pre>
+
+
+
+
+<h2>SEE ALSO</h2>
+
+
+<pre>
+       <a href="../notmuch-address-1/">notmuch-address</a>(1),    <a href="../notmuch-compact-1/">notmuch-compact</a>(1),    <a href="../notmuch-config-1/">notmuch-config</a>(1),   <a href="../notmuch-count-1/">not‐</a>
+       <a href="../notmuch-count-1/">much-count</a>(1),  <a href="../notmuch-dump-1/">notmuch-dump</a>(1),  <a href="../notmuch-hooks-5/">notmuch-hooks</a>(5),  <a href="../notmuch-insert-1/">notmuch-insert</a>(1),
+       <a href="../notmuch-new-1/">notmuch-new</a>(1),  <a href="../notmuch-properties-7/">notmuch-properties</a>(7), <a href="../notmuch-reindex-1/">notmuch-reindex</a>(1), <a href="../notmuch-reply-1/">notmuch-re‐</a>
+       <a href="../notmuch-reply-1/">ply</a>(1), <a href="../notmuch-restore-1/">notmuch-restore</a>(1), <a href="../notmuch-search-1/">notmuch-search</a>(1), <a href="../notmuch-search-terms-7/">notmuch-search-terms</a>(7),
+       <a href="../notmuch-show-1/">notmuch-show</a>(1), <a href="../notmuch-tag-1/">notmuch-tag</a>(1)
+
+       The notmuch website: <b>https://notmuchmail.org</b>
+</pre>
+
+
+
+
+<h2>CONTACT</h2>
+
+
+<pre>
+       Feel  free to send questions, comments, or kudos to the notmuch mailing
+       list &lt;<u>notmuch@notmuchmail.org</u>&gt; . Subscription is  not  required  before
+       posting, but is available from the notmuchmail.org website.
+
+       Real-time  interaction  with the Notmuch community is available via IRC
+       (server: irc.libera.chat, channel: #notmuch).
+</pre>
+
+
+
+
+<h2>AUTHOR</h2>
+
+
+<pre>
+       Carl Worth and many others
+</pre>
+
+
+
+
+<h2>COPYRIGHT</h2>
+
+
+<pre>
+       2009-2022, Carl Worth and many others
+</pre>
+
+
+
+
+<h2>0.35</h2>
+
+
+</div>
+
+
+
+<div id="footer" class="pagefooter">
+<div id="pageinfo">
+
+
+
+
+
+
+
+
+
+<div class="pagedate">
+Last edited <span class="date">Sun Feb  6 13:51:11 2022</span>
+<!-- Created <span class="date">Fri Jun 22 00:08:32 2012</span> -->
+</div>
+
+</div><!-- #pageinfo -->
+
+<!-- from notmuch -->
+</div><!-- .pagefooter #footer -->
+
+</body>
+</html>

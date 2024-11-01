@@ -1,0 +1,27 @@
+
+  let records = records
+
+  -- Convert the list of records into a list of lists of strings.
+  records' = map (map T.unpack) records
+
+  -- Convert the list of lists of strings into a list of lists of numbers.
+  records'' = map (map (read :: String -> Double)) records'
+
+  -- Convert the list of lists of numbers into a matrix.
+  matrix = map (map (\xs -> fromList xs)) records''
+
+  -- Print the first row of the matrix.
+  print $ matrix !! 0
+EOD
+
+# haskell files
+
+cat draft.haskell <<EOD
+module Main where
+
+import Data.Text (Text)
+import qualified Data.Text as T
+import qualified Data.ByteString as B
+import qualified Data.ByteString.Lazy as L
+import qualified Data.ByteString.Char8 as BC8
+import Data.List

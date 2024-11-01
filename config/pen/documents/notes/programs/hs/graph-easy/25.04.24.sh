@@ -1,0 +1,6 @@
+cd /root/notes/ws/probability/reports;  "graph-easy" "--" "#" "<==" "show-dot"
+cd /root/notes/ws/probability/reports;  "graph-easy" "--" "#" "<==" "show-dot"
+cd /root/notes/ws/probability/reports;  "graph-easy" "--" "#" "<==" "show-dot"
+cd /;  "graph-easy" "--" "#" "<==" "show-dot"
+cd /root/notes/ws/probability/reports;  "graph-easy" "--" "#" "<==" "show-dot"
+cd /root/notes/ws/probability/reports;  "graph-easy" "--" "#" "<==" "show-dot"

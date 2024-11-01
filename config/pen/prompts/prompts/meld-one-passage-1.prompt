@@ -1,0 +1,49 @@
+task: "meld one passage"
+tags: nlp-task prose
+doc: "Given a fragmented passage, meld it internally"
+notes: |-
+  Don't ask me how Codex works better than Davinci, it just does.
+  But <delim> is required instead of \#\#\#.
+prompt-version: 1
+prompt: |+
+  <delim>
+  Broken passage:
+  <delim>
+  According to the BBC, they are unique in
+  that their content, they are unique in that
+  their content isn't directly tethered to the
+  problems of a real individual or identity.
+  <delim>
+  Correctly flowing passage:
+  <delim>
+  According to the BBC, they are unique in
+  that their content isn't directly tethered
+  to the problems of a real individual or
+  identity.
+  <delim>
+  Broken passage:
+  <delim>
+  <broken passage>
+  <delim>
+  Correctly flowing passage:
+  <delim>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+cache: on
+stop-sequences:
+- "<delim>"
+vars:
+- "broken passage"
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- |-
+    Virtual YouTubers, or VTubers, are online entertainers, who are typically
+    Japanese-speaking YouTubers or live streamers. Japanese-speaking YouTubers or live streamers.
+    They use avatars created with programs such as Live2D, portraying characters
+    designed by online artists.[3] VTubers are considered to have great appeal
+filter: on
+completion: off
+insertion: off

@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "readsubs"
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "readsubs"
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "readsubs"
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "readsubs"
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://www.youtube.com/watch?v=eEot02XA49E" "#" "<==" "readsubs"
+cd /root/.pen/documents/notes;  "youtube-get-subtitles" "https://youtube.com/watch?v=nqnYYt6kEN0&t=919" "#" "<==" "readsubs"

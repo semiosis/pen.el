@@ -1,0 +1,15 @@
+
+  (interactive)
+  (let ((nuke-list '("/home/shane/var/smulliga/source/git/semiosis/pen.el")))
+    (mapcar 'pen-nuke-file nuke-list))
+)
+
+(defun pen-nuke-file (file)
+  (let ((buf (find-buffer-visiting file)))
+    (if buf
+        (kill-buffer buf))
+
+    (delete-file file)
+  )
+)
+

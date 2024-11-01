@@ -1,0 +1,416 @@
+https://mathvault.ca/math-glossary/
+
+exponentiation
+    Only right-associative.
+        In a chain of such operations, they
+        group for evaluation purposes from the
+        right.
+
+            λ> 2^3^2 
+            512 
+            -- is the same as 
+            λ> 2^(3^2) 
+            512 
+            -- but not 
+            λ> (2^3)^2 
+            64 
+
+primorial
+#
+    [#mathematics]
+    [#number theory]
+
+    A function from natural numbers to natural
+    numbers similar to the factorial function,
+    but rather than successively multiplying
+    positive integers, the function only
+    multiplies prime numbers.
+
+    Factorial:
+    4! = 1*2*3*4=24
+
+    Primorial:
+    p4# = Π4 = 2*3*5*7=210
+
+    210 is the fourth primorial.
+
+factorization
+factorisation
+factoring
+    Consists of writing a number or another
+    mathematical object as a product of
+    several factors, usually smaller or
+    simpler objects of the same kind.
+
+module
+    https://en.wikipedia.org/wiki/Module_(mathematics)
+
+transcendental function
+    An analytic function that does not satisfy
+    a polynomial equation, in contrast to an
+    algebraic function.
+
+algebraic function
+    In contrast to an transcendental function.
+
+nomography
+    https://kartsci.org/kocomu/computer-history/the-art-of-nomography/
+
+nomogram
+    [#nomography]
+    [mathematical tool]
+
+    A nomogram, also called a nomograph,
+    alignment chart, or abaque, is a graphical
+    calculating device, a two-dimensional
+    diagram designed to allow the approximate
+    graphical computation of a mathematical
+    function
+
+Diagonalization Proof
+Cantor's Diagonalization Proof
+    https://youtu.be/HeQX2HjkcNo?t=381
+
+Gödel numbers
+Gödel numbering
+    https://www.youtube.com/watch?v=HeQX2HjkcNo
+
+    Can be interpreted as an encoding in which
+    a number is assigned to each symbol of a
+    mathematical notation, after which a
+    sequence of natural numbers can then
+    represent a sequence of symbols.
+
+    A function that assigns to each symbol and
+    well-formed formula of some formal
+    language a unique natural number, called
+    its Gödel number.
+    
+    The concept was used by Kurt Gödel for the
+    proof of his incompleteness theorems.
+
+Fourier
+    Said "four-ee-ay".
+
+surreal numbers
+    [[https://www.youtube.com/watch?v=mPn2AdMH7UQ][Surreal Numbers {writing the first book} - Numberphile - YouTube]]
+
+    Explanation:
+        https://youtu.be/mPn2AdMH7UQ?t=616
+        [[https://www.youtube.com/watch?v=aRUABAUcTiI][0.999... Repeating Is Equal To 1, But Something Like It Is Not {Introduction To The Surreal Numbers} - YouTube]]
+
+    With surreal numbers it makes sense to
+    talk about "infinity minus 3","infinity to
+    the third power", or "the square root of
+    infinity".
+
+autonomous differential equations
+    [[https://youtu.be/uzJXeluCKMs][Chaos Theory: the language of {in}stability - YouTube]]
+
+Transition matrix
+    - The matrix associated with a change of
+      basis for a vector space.
+    - Stochastic matrix.
+    - State-transition matrix.
+
+Stochastic matrix
+    A square matrix used to describe the
+    transitions of a Markov chain.
+
+State-transition matrix
+    A matrix whose product with the state
+    vector at an initial time gives at a later
+    time.
+
+Ordinary differential equation
+ODE
+    A differential equation containing one or
+    more functions of one independent variable
+    and the derivatives of those functions.
+
+Partial differential equation
+PDE
+    An equation which imposes relations
+    between the various partial derivatives of
+    a multivariable function.
+
+Lean
+    [#Microsoft research]
+    [programming language]
+
+    A theorem prover and programming language.
+    
+    It is based on the Calculus of
+    Constructions with inductive types.
+    
+    Lean has a number of features that
+    differentiate it from other interactive
+    theorem provers.
+    
+    Lean can be compiled to JavaScript and
+    accessed in a web browser.
+    
+    It has native support for Unicode symbols.
+
+Logistic function
+
+set comprehension
+    S = { 2 · x | x ∈  ℕ , x ≤ 10 }
+
+Logistic map
+    Do not confuse with `logistic function`.
+    Even though `map` is a posh word for
+    function.
+
+    Models population growth.
+
+    Predicts what the next year's population
+    is going to be.
+
+    The relative simplicity of the logistic
+    map makes it a widely used point of entry
+    into a consideration of the concept of
+    chaos
+
+Feigenbaum constants
+    There are two of them.
+
+    Both constants express ratios in a
+    bifurcation diagram for a non-linear map.
+
+    The ratio between the length of each
+    period with the last.
+
+    For example, the delta of x for the
+    four-cycle divided by the delta of x for
+    the two-cycle.
+
+One-cycle
+    Because it has a period of 1.
+
+Two-cycle
+    Because it has a period of 2.
+
+Four-cycle
+    Because it has a period of 4.
+
+Period doubling
+
+coinciding
+    Could be:
+    - co-occurring
+    - matching / fitting
+
+superposable
+    [#chemistry]
+
+    A term that describes the ability to
+    precisely overlap one object over another.
+    Only identical objects are superposable,
+    everything else is non-superposable.
+
+congruent
+    Harmonious.
+    The same.
+    Similar.
+    Superposable.
+
+inversive geometry
+    The study of those properties of figures
+    that are preserved by a generalization of
+    a type of transformation of the Euclidean
+    plane, called inversion.
+    
+    These transformations preserve angles and
+    map generalized circles into generalized
+    circles, where a generalized circle means
+    either a circle or a line (loosely
+    speaking, a circle with infinite radius).
+    
+    Many difficult problems in geometry become
+    much more tractable when an inversion is
+    applied.
+    
+    The concept of inversion can be
+    generalized to higher-dimensional spaces.
+
+circle inversion
+    https://www.youtube.com/watch?v=sG_6nlMZ8f4
+
+Pascal's triangle
+    http://mathforum.org/dr.cgi/pascal.html
+
+    $NOTES/ws/math/pascals-triangle.org
+
+parametric family
+parameterized family
+    A family of objects (a set of related
+    objects) whose differences depend only on
+    the chosen values for a set of parameters.
+
+    Common examples are parametrized (families
+    of) functions, probability distributions,
+    curves, shapes, etc.
+
+    https://youtu.be/GXhzZAem7k0?t=109
+
+alternating series
+    An infinite series.
+    
+    The signs of the general terms alternate
+    between positive and negative.
+    
+    Like any series, an alternating series
+    converges if and only if the associated
+    sequence of partial sums converges.
+
+N choose K
+{n \choose k}
+    Called so because there are (n/k) number
+    of ways to choose k elements, irrespective
+    of their order from a set of n elements.
+    
+    To calculate the number of happening of an
+    event, N choose K tool is used.
+    
+    N is the sum of data and K is the number
+    that we chose from the sum of data.
+
+    {n \choose k} = _{n}^{k}\textrm{C}= \frac{n!}{k!(n-k)!}
+
+arity
+    'of a function or operation'
+    
+    The number of arguments or operands the
+    function or operation accepts.
+
+angular distance
+angular separation
+apparent distance
+apparent separation
+    [...between two point objects as viewed
+    from a location different from either of
+    these objects]
+    
+    The angle of length between the two
+    directions originating from the observer
+    and pointing toward these two objects.
+
+vector field
+    [vector calculus]
+
+    An assignment of a vector to each point in
+    a subset of space.
+    
+    A vector field in the plane (for
+    instance), can be visualised as a
+    collection of arrows with a given
+    magnitude and direction, each attached to
+    a point in the plane.
+    
+    Vector fields are often used to model, for
+    example, the speed and direction of a
+    moving fluid throughout space, or the
+    strength and direction of some force, such
+    as the magnetic or gravitational force, as
+    it changes from one point to another
+    point.
+
+    https://en.wikipedia.org/wiki/Vector_field
+
+porism
+    A type of mathematical proposition
+    considered by Euclid, the meaning of which
+    is now obscure.
+
+    [[https://www.youtube.com/watch?v=n5bw-Y13pdY][Poncelet's Porism - Numberphile - YouTube]]
+
+    A mathematical proposition or corollary.
+    
+    In particular, the term porism has been
+    used to refer to a direct consequence of a
+    proof, analogous to how a corollary refers
+    to a direct consequence of a theorem.
+
+corollary
+    A proposition that follows from (and is
+    often appended to) one already proved.
+    
+    Forming a proposition that follows from
+    one already proved.
+
+conic
+ellipse
+
+long division
+                ___6_ <- quotient
+    divisor -> 4) 24  <- dividend
+
+quotient
+    A result obtained by dividing one quantity
+    by another.
+    
+    A degree or amount of a specified quality
+    or characteristic.
+
+holomorphic function
+    A complex-valued function of one or more
+    complex variables that is, at every point
+    of its domain, complex differentiable in a
+    neighborhood of the point.
+
+partial fraction decomposition
+    https://www.youtube.com/watch?v=P78LfZTIFJg
+
+laplace transform
+    An integral transform that converts a
+    function of a real variable t (often time)
+    to a function of a complex variable s
+    (complex frequency).
+    
+    The transform has many applications in
+    science and engineering because it is a
+    tool for solving differential equations.
+    
+    In particular, it transforms differential
+    equations into algebraic equations and
+    convolution into multiplication.
+
+inverse laplace transform
+    The inverse Laplace transform of a
+    function F(s) is the piecewise-continuous
+    and exponentially- restricted real
+    function f(t) which has the property: L {
+    f } ( s ) = L { f ( t ) } ( s ) = F ( s ),
+    where L denotes the Laplace transform.
+    
+    It can be proven that, if a function F(s)
+    has the inverse Laplace transform f(t),
+    then f(t) is uniquely determined
+    (considering functions which differ from
+    each other only on a point set having
+    Lebesgue measure zero as the same).
+        
+    The Laplace transform and the inverse
+    Laplace transform together have a number
+    of properties that make them useful for
+    analysing linear dynamical systems.
+
+Amenable group
+    [#mathematics]
+
+    A locally compact topological group G
+    carrying a kind of averaging operation on
+    bounded functions that is invariant under
+    translation by group elements.
+
+Topological group
+    [#mathematics]
+
+    Logically the combination of groups and
+    topological spaces, i.e. they are group
+    and topological spaces at the same time,
+    s.t. the continuity condition for the
+    group operations connect these two
+    structures together and consequently they
+    are not independent from each other.

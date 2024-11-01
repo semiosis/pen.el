@@ -1,0 +1,9 @@
+;; Run function author-of-open-source-project
+(message (eval '(author-of-open-source-project "vim")))
+--> "Vim is developed by Bram Moolenaar"
+
+
+
+;; Run function author-of-open-source-project
+(message (eval '(author-of-open-source-project "vim")))
+--> 

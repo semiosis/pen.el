@@ -1,0 +1,39 @@
+title: Explain error
+include: Generic tutor for any topic/2
+tags: code explain
+doc: "Select an error message and ask for an explanation"
+prompt-version: 3
+subprompts:
+- metaprompt: |
+    This is a conversation between a human and a brilliant AI.
+    The topic is "<topic>".
+- pretext: |
+    Human: Hello, are you my <topic> tutor?
+    <delim>
+    AI: Hi there.
+    Yes I am.
+    How can I help you?
+    <delim>
+prompt: |
+  <metaprompt>
+
+  <pretext>
+  Human: Thanks. I have a question.
+  What does the following error mean?
+  <error>
+  <delim>
+  AI: <:pp>This means 
+engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 300
+top-p: 1
+best-of: 3
+vars:
+- topic
+- error
+examples:
+- haskell
+- "• Couldn't match expected type ‘IO ()’"
+var-defaults:
+- "(pen-detect-language-ask)"
+- "(pen-selected-text)"

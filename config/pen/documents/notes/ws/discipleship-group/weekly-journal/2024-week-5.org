@@ -1,0 +1,772 @@
+#+TITLE: D-Group journal weekly entry for 2024, week 5
+
+* D-Group weekly session notes
+Started working on it: <2024-01-28 Sun>
+
+Listen to instrumental worship music:
+[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s&ab_channel=CHRISTIANPiano][Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene 🍁CHRISTIAN piano]]
+
+| Scripture Memory | NT260 Passage | Foundations260 Readings |
+|------------------+---------------+-------------------------|
+| [[sh:bible-read-passage nasb Matthew 5:9-10 ][Matthew 5:9-10]]   | [[sh:bible-study-passage nasb Luke 21-24 ][Luke 21-24]]    | [[sh:bible-study-passage nasb Genesis 39-47 ][Genesis 39-47]]           |
+|                  | [[sh:bible-study-passage nasb Acts 1 ][Acts 1]]        |                         |
+
+While doing the reading, write bullet points about the story.
+Take note of verses which stand out to me and think about what
+the writer may have been experiencing when they wrote those verses.
+Keep in mind the context of the verse.
+
+** Readings bullet points
+Write bullet points for each of the readings, and optionally sub-bullet-points applications for applying to or making comparisons to my own life.
+
+Story bullet points (over entire Foundations260 reading):
+- 
+
+Story bullet points (over entire NT260 Journals reading):
+- 
+
+** Scripture memory
+#+BEGIN_SRC bash -n :i bash :f "bible-show-verses -m NASB -pp" :async :results verbatim code :lang text
+  Matthew 5:9-10
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 5:9
+‾‾‾‾‾‾‾‾‾‾‾
+“Blessed are the peacemakers, for they shall be
+called sons of God.
+
+Matthew 5:10
+‾‾‾‾‾‾‾‾‾‾‾‾
+“Blessed are those who have been persecuted for
+the sake of righteousness, for theirs is the
+kingdom of heaven.
+
+(NASB)
+#+end_src
+
+** HEAR Journals
+Go over the reading and make hear journal entries for any verses
+that stood out for me.
+
++ H :: [h]ighlight a verse that stood out in the reading
++ E :: [e]xplain the context of the verse and what the writer/people in the story may have been experiencing when they wrote/experienced it
++ A :: write down how I can [a]pply this Bible verse in my own life
++ R :: [r]espond to the LORD in prayer
+
+*** H.E.A.R journal entry for verse [[sh:bible-study-passage nasb Luke 21-24 ][Luke 21-24]]
+**** H (highlight)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  nasb Luke 21-24
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Luke 21-24
+‾‾‾‾‾‾‾‾‾‾
+And He looked up and saw the rich putting
+their gifts into the treasury.
+
+And He saw a poor widow putting in two small
+copper coins.
+
+And He said, “Truly I say to you, this poor
+widow put in more than all of them; for they
+all out of their surplus put into the
+offering; but she out of her poverty put in
+all that she had to live on.” And while some
+were talking about the temple, that it was
+adorned with beautiful stones and votive
+gifts, He said, “As for these things which you
+are looking at, the days will come in which
+there will not be left one stone upon another
+which will not be torn down.” They questioned
+Him, saying, “Teacher, when therefore will
+these things happen?
+
+And what will be the sign when these things
+are about to take place?” And He said, “See to
+it that you are not misled; for many will come
+in My name, saying, ‘I am He,’ and, ‘The time
+is near.’ Do not go after them.
+
+When you hear of wars and disturbances, do not
+be terrified; for these things must take place
+first, but the end does not follow
+immediately.” Then He continued by saying to
+them, “Nation will rise against nation and
+kingdom against kingdom, and there will be
+great earthquakes, and in various places
+plagues and famines; and there will be terrors
+and great signs from heaven.
+
+“But before all these things, they will lay
+their hands on you and will persecute you,
+delivering you to the synagogues and prisons,
+bringing you before kings and governors for My
+name’s sake.
+
+It will lead to an opportunity for your
+testimony.
+
+So make up your minds not to prepare
+beforehand to defend yourselves; for I will
+give you utterance and wisdom which none of
+your opponents will be able to resist or
+refute.
+
+But you will be betrayed even by parents and
+brothers and relatives and friends, and they
+will put some of you to death, and you will be
+hated by all because of My name.
+
+Yet not a hair of your head will perish.
+
+By your endurance you will gain your lives.
+
+“But when you see Jerusalem surrounded by
+armies, then recognize that her desolation is
+near.
+
+Then those who are in Judea must flee to the
+mountains, and those who are in the midst of
+the city must leave, and those who are in the
+country must not enter the city; because these
+are days of vengeance, so that all things
+which are written will be fulfilled.
+
+Woe to those who are pregnant and to those who
+are nursing babies in those days; for there
+will be great distress upon the land and wrath
+to this people; and they will fall by the edge
+of the sword, and will be led captive into all
+the nations; and Jerusalem will be trampled
+under foot by the Gentiles until the times of
+the Gentiles are fulfilled.
+
+“There will be signs in sun and moon and
+stars, and on the earth dismay among nations,
+in perplexity at the roaring of the sea and
+the waves, men fainting from fear and the
+expectation of the things which are coming
+upon the world; for the powers of the heavens
+will be shaken.
+
+Then they will see the Son of Man coming in a
+cloud with power and great glory.
+
+But when these things begin to take place,
+straighten up and lift up your heads, because
+your redemption is drawing near.” Then He told
+them a parable: “Behold the fig tree and all
+the trees; as soon as they put forth leaves,
+you see it and know for yourselves that summer
+is now near.
+
+So you also, when you see these things
+happening, recognize that the kingdom of God
+is near.
+
+Truly I say to you, this generation will not
+pass away until all things take place.
+
+Heaven and earth will pass away, but My words
+will not pass away.
+
+“Be on guard, so that your hearts will not be
+weighted down with dissipation and drunkenness
+and the worries of life, and that day will not
+come on you suddenly like a trap; for it will
+come upon all those who dwell on the face of
+all the earth.
+
+But keep on the alert at all times, praying
+that you may have strength to escape all these
+things that are about to take place, and to
+stand before the Son of Man.” Now during the
+day He was teaching in the temple, but at
+evening He would go out and spend the night on
+the mount that is called Olivet.
+
+And all the people would get up early in the
+morning to come to Him in the temple to listen
+to Him.
+
+Now the Feast of Unleavened Bread, which is
+called the Passover, was approaching.
+
+The chief priests and the scribes were seeking
+how they might put Him to death; for they were
+afraid of the people.
+
+And Satan entered into Judas who was called
+Iscariot, belonging to the number of the
+twelve.
+
+And he went away and discussed with the chief
+priests and officers how he might betray Him
+to them.
+
+They were glad and agreed to give him money.
+
+So he consented, and began seeking a good
+opportunity to betray Him to them apart from
+the crowd.
+
+Then came the first day of Unleavened Bread on
+which the Passover lamb had to be sacrificed.
+
+And Jesus sent Peter and John, saying, “Go and
+prepare the Passover for us, so that we may
+eat it.” They said to Him, “Where do You want
+us to prepare it?” And He said to them, “When
+you have entered the city, a man will meet you
+carrying a pitcher of water; follow him into
+the house that he enters.
+
+And you shall say to the owner of the house,
+‘The Teacher says to you, “Where is the guest
+room in which I may eat the Passover with My
+disciples?”’ And he will show you a large,
+furnished upper room; prepare it there.” And
+they left and found everything just as He had
+told them; and they prepared the Passover.
+
+When the hour had come, He reclined at the
+table, and the apostles with Him.
+
+And He said to them, “I have earnestly desired
+to eat this Passover with you before I suffer;
+for I say to you, I shall never again eat it
+until it is fulfilled in the kingdom of God.”
+And when He had taken a cup and given thanks,
+He said, “Take this and share it among
+yourselves; for I say to you, I will not drink
+of the fruit of the vine from now on until the
+kingdom of God comes.” And when He had taken
+some bread and given thanks, He broke it and
+gave it to them, saying, “This is My body
+which is given for you; do this in remembrance
+of Me.” And in the same way He took the cup
+after they had eaten, saying, “This cup which
+is poured out for you is the new covenant in
+My blood.
+
+But behold, the hand of the one betraying Me
+is with Mine on the table.
+
+For indeed, the Son of Man is going as it has
+been determined; but woe to that man by whom
+He is betrayed!” And they began to discuss
+among themselves which one of them it might be
+who was going to do this thing.
+
+And there arose also a dispute among them as
+to which one of them was regarded to be
+greatest.
+
+And He said to them, “The kings of the
+Gentiles lord it over them; and those who have
+authority over them are called ‘Benefactors.’
+But it is not this way with you, but the one
+who is the greatest among you must become like
+the youngest, and the leader like the servant.
+
+For who is greater, the one who reclines at
+the table or the one who serves?
+
+Is it not the one who reclines at the table?
+
+But I am among you as the one who serves.
+
+“You are those who have stood by Me in My
+trials; and just as My Father has granted Me a
+kingdom, I grant you that you may eat and
+drink at My table in My kingdom, and you will
+sit on thrones judging the twelve tribes of
+Israel.
+
+“Simon, Simon, behold, Satan has demanded
+permission to sift you like wheat; but I have
+prayed for you, that your faith may not fail;
+and you, when once you have turned again,
+strengthen your brothers.” But he said to Him,
+“Lord, with You I am ready to go both to
+prison and to death!” And He said, “I say to
+you, Peter, the rooster will not crow today
+until you have denied three times that you
+know Me.” And He said to them, “When I sent
+you out without money belt and bag and
+sandals, you did not lack anything, did you?”
+They said, “No, nothing.” And He said to them,
+“But now, whoever has a money belt is to take
+it along, likewise also a bag, and whoever has
+no sword is to sell his coat and buy one.
+
+For I tell you that this which is written must
+be fulfilled in Me, ‘And He was numbered with
+transgressors’; for that which refers to Me
+has its fulfillment.” They said, “Lord, look,
+here are two swords.” And He said to them, “It
+is enough.” And He came out and proceeded as
+was His custom to the Mount of Olives; and the
+disciples also followed Him.
+
+When He arrived at the place, He said to them,
+“Pray that you may not enter into temptation.”
+And He withdrew from them about a stone’s
+throw, and He knelt down and began to pray,
+saying, “Father, if You are willing, remove
+this cup from Me; yet not My will, but Yours
+be done.” Now an angel from heaven appeared to
+Him, strengthening Him.
+
+And being in agony He was praying very
+fervently; and His sweat became like drops of
+blood, falling down upon the ground.
+
+When He rose from prayer, He came to the
+disciples and found them sleeping from sorrow,
+and said to them, “Why are you sleeping?
+
+Get up and pray that you may not enter into
+temptation.” While He was still speaking,
+behold, a crowd came, and the one called
+Judas, one of the twelve, was preceding them;
+and he approached Jesus to kiss Him.
+
+But Jesus said to him, “Judas, are you
+betraying the Son of Man with a kiss?” When
+those who were around Him saw what was going
+to happen, they said, “Lord, shall we strike
+with the sword?” And one of them struck the
+slave of the high priest and cut off his right
+ear.
+
+But Jesus answered and said, “Stop! No more of
+this.” And He touched his ear and healed him.
+
+Then Jesus said to the chief priests and
+officers of the temple and elders who had come
+against Him, “Have you come out with swords
+and clubs as you would against a robber?
+
+While I was with you daily in the temple, you
+did not lay hands on Me; but this hour and the
+power of darkness are yours.” Having arrested
+Him, they led Him away and brought Him to the
+house of the high priest; but Peter was
+following at a distance.
+
+After they had kindled a fire in the middle of
+the courtyard and had sat down together, Peter
+was sitting among them.
+
+And a servant-girl, seeing him as he sat in
+the firelight and looking intently at him,
+said, “This man was with Him too.” But he
+denied it, saying, “Woman, I do not know Him.”
+A little later, another saw him and said, “You
+are one of them too!” But Peter said, “Man, I
+am not!” After about an hour had passed,
+another man began to insist, saying,
+“Certainly this man also was with Him, for he
+is a Galilean too.” But Peter said, “Man, I do
+not know what you are talking about.”
+Immediately, while he was still speaking, a
+rooster crowed.
+
+The Lord turned and looked at Peter.
+
+And Peter remembered the word of the Lord, how
+He had told him, “Before a rooster crows
+today, you will deny Me three times.” And he
+went out and wept bitterly.
+
+Now the men who were holding Jesus in custody
+were mocking Him and beating Him, and they
+blindfolded Him and were asking Him, saying,
+“Prophesy, who is the one who hit You?” And
+they were saying many other things against
+Him, blaspheming.
+
+When it was day, the Council of elders of the
+people assembled, both chief priests and
+scribes, and they led Him away to their
+council chamber, saying, “If You are the
+Christ, tell us.” But He said to them, “If I
+tell you, you will not believe; and if I ask a
+question, you will not answer.
+
+But from now on the Son of Man will be seated
+at the right hand of the power of God.” And
+they all said, “Are You the Son of God, then?”
+And He said to them, “Yes, I am.” Then they
+said, “What further need do we have of
+testimony?
+
+For we have heard it ourselves from His own
+mouth.” Then the whole body of them got up and
+brought Him before Pilate.
+
+And they began to accuse Him, saying, “We
+found this man misleading our nation and
+forbidding to pay taxes to Caesar, and saying
+that He Himself is Christ, a King.” So Pilate
+asked Him, saying, “Are You the King of the
+Jews?” And He answered him and said, “It is as
+you say.” Then Pilate said to the chief
+priests and the crowds, “I find no guilt in
+this man.” But they kept on insisting, saying,
+“He stirs up the people, teaching all over
+Judea, starting from Galilee even as far as
+this place.” When Pilate heard it, he asked
+whether the man was a Galilean.
+
+And when he learned that He belonged to
+Herod’s jurisdiction, he sent Him to Herod,
+who himself also was in Jerusalem at that
+time.
+
+Now Herod was very glad when he saw Jesus; for
+he had wanted to see Him for a long time,
+because he had been hearing about Him and was
+hoping to see some sign performed by Him.
+
+And he questioned Him at some length; but He
+answered him nothing.
+
+And the chief priests and the scribes were
+standing there, accusing Him vehemently.
+
+And Herod with his soldiers, after treating
+Him with contempt and mocking Him, dressed Him
+in a gorgeous robe and sent Him back to
+Pilate.
+
+Now Herod and Pilate became friends with one
+another that very day; for before they had
+been enemies with each other.
+
+Pilate summoned the chief priests and the
+rulers and the people, and said to them, “You
+brought this man to me as one who incites the
+people to rebellion, and behold, having
+examined Him before you, I have found no guilt
+in this man regarding the charges which you
+make against Him.
+
+No, nor has Herod, for he sent Him back to us;
+and behold, nothing deserving death has been
+done by Him.
+
+Therefore I will punish Him and release Him.”
+[Now he was obliged to release to them at the
+feast one prisoner.] But they cried out all
+together, saying, “Away with this man, and
+release for us Barabbas!” (He was one who had
+been thrown into prison for an insurrection
+made in the city, and for murder.) Pilate,
+wanting to release Jesus, addressed them
+again, but they kept on calling out, saying,
+“Crucify, crucify Him!” And he said to them
+the third time, “Why, what evil has this man
+done?
+
+I have found in Him no guilt demanding death;
+therefore I will punish Him and release Him.”
+But they were insistent, with loud voices
+asking that He be crucified.
+
+And their voices began to prevail.
+
+And Pilate pronounced sentence that their
+demand be granted.
+
+And he released the man they were asking for
+who had been thrown into prison for
+insurrection and murder, but he delivered
+Jesus to their will.
+
+When they led Him away, they seized a man,
+Simon of Cyrene, coming in from the country,
+and placed on him the cross to carry behind
+Jesus.
+
+And following Him was a large crowd of the
+people, and of women who were mourning and
+lamenting Him.
+
+But Jesus turning to them said, “Daughters of
+Jerusalem, stop weeping for Me, but weep for
+yourselves and for your children.
+
+For behold, the days are coming when they will
+say, ‘Blessed are the barren, and the wombs
+that never bore, and the breasts that never
+nursed.’ Then they will begin to say to the
+mountains, ‘Fall on us,’ and to the hills,
+‘Cover us.’ For if they do these things when
+the tree is green, what will happen when it is
+dry?” Two others also, who were criminals,
+were being led away to be put to death with
+Him.
+
+When they came to the place called The Skull,
+there they crucified Him and the criminals,
+one on the right and the other on the left.
+
+But Jesus was saying, “Father, forgive them;
+for they do not know what they are doing.” And
+they cast lots, dividing up His garments among
+themselves.
+
+And the people stood by, looking on.
+
+And even the rulers were sneering at Him,
+saying, “He saved others; let Him save Himself
+if this is the Christ of God, His Chosen One.”
+The soldiers also mocked Him, coming up to
+Him, offering Him sour wine, and saying, “If
+You are the King of the Jews, save Yourself!”
+Now there was also an inscription above Him,
+“THIS IS THE KING OF THE JEWS.” One of the
+criminals who were hanged there was hurling
+abuse at Him, saying, “Are You not the Christ?
+
+Save Yourself and us!” But the other answered,
+and rebuking him said, “Do you not even fear
+God, since you are under the same sentence of
+condemnation?
+
+And we indeed are suffering justly, for we are
+receiving what we deserve for our deeds; but
+this man has done nothing wrong.” And he was
+saying, “Jesus, remember me when You come in
+Your kingdom!” And He said to him, “Truly I
+say to you, today you shall be with Me in
+Paradise.” It was now about the sixth hour,
+and darkness fell over the whole land until
+the ninth hour, because the sun was obscured;
+and the veil of the temple was torn in two.
+
+And Jesus, crying out with a loud voice, said,
+“Father, into Your hands I commit My spirit.”
+Having said this, He breathed His last.
+
+Now when the centurion saw what had happened,
+he began praising God, saying, “Certainly this
+man was innocent.” And all the crowds who came
+together for this spectacle, when they
+observed what had happened, began to return,
+beating their breasts.
+
+And all His acquaintances and the women who
+accompanied Him from Galilee were standing at
+a distance, seeing these things.
+
+And a man named Joseph, who was a member of
+the Council, a good and righteous man (he had
+not consented to their plan and action), a man
+from Arimathea, a city of the Jews, who was
+waiting for the kingdom of God; this man went
+to Pilate and asked for the body of Jesus.
+
+And he took it down and wrapped it in a linen
+cloth, and laid Him in a tomb cut into the
+rock, where no one had ever lain.
+
+It was the preparation day, and the Sabbath
+was about to begin.
+
+Now the women who had come with Him out of
+Galilee followed, and saw the tomb and how His
+body was laid.
+
+Then they returned and prepared spices and
+perfumes.
+
+And on the Sabbath they rested according to
+the commandment.
+
+But on the first day of the week, at early
+dawn, they came to the tomb bringing the
+spices which they had prepared.
+
+And they found the stone rolled away from the
+tomb, but when they entered, they did not find
+the body of the Lord Jesus.
+
+While they were perplexed about this, behold,
+two men suddenly stood near them in dazzling
+clothing; and as the women were terrified and
+bowed their faces to the ground, the men said
+to them, “Why do you seek the living One among
+the dead?
+
+He is not here, but He has risen.
+
+Remember how He spoke to you while He was
+still in Galilee, saying that the Son of Man
+must be delivered into the hands of sinful
+men, and be crucified, and the third day rise
+again.” And they remembered His words, and
+returned from the tomb and reported all these
+things to the eleven and to all the rest.
+
+Now they were Mary Magdalene and Joanna and
+Mary the mother of James; also the other women
+with them were telling these things to the
+apostles.
+
+But these words appeared to them as nonsense,
+and they would not believe them.
+
+But Peter got up and ran to the tomb; stooping
+and looking in, he saw the linen wrappings
+only; and he went away to his home, marveling
+at what had happened.
+
+And behold, two of them were going that very
+day to a village named Emmaus, which was about
+seven miles from Jerusalem.
+
+And they were talking with each other about
+all these things which had taken place.
+
+While they were talking and discussing, Jesus
+Himself approached and began traveling with
+them.
+
+But their eyes were prevented from recognizing
+Him.
+
+And He said to them, “What are these words
+that you are exchanging with one another as
+you are walking?” And they stood still,
+looking sad.
+
+One of them, named Cleopas, answered and said
+to Him, “Are You the only one visiting
+Jerusalem and unaware of the things which have
+happened here in these days?” And He said to
+them, “What things?” And they said to Him,
+“The things about Jesus the Nazarene, who was
+a prophet mighty in deed and word in the sight
+of God and all the people, and how the chief
+priests and our rulers delivered Him to the
+sentence of death, and crucified Him.
+
+But we were hoping that it was He who was
+going to redeem Israel.
+
+Indeed, besides all this, it is the third day
+since these things happened.
+
+But also some women among us amazed us.
+
+When they were at the tomb early in the
+morning, and did not find His body, they came,
+saying that they had also seen a vision of
+angels who said that He was alive.
+
+Some of those who were with us went to the
+tomb and found it just exactly as the women
+also had said; but Him they did not see.” And
+He said to them, “O foolish men and slow of
+heart to believe in all that the prophets have
+spoken! Was it not necessary for the Christ to
+suffer these things and to enter into His
+glory?” Then beginning with Moses and with all
+the prophets, He explained to them the things
+concerning Himself in all the Scriptures.
+
+And they approached the village where they
+were going, and He acted as though He were
+going farther.
+
+But they urged Him, saying, “Stay with us, for
+it is getting toward evening, and the day is
+now nearly over.” So He went in to stay with
+them.
+
+When He had reclined at the table with them,
+He took the bread and blessed it, and breaking
+it, He began giving it to them.
+
+Then their eyes were opened and they
+recognized Him; and He vanished from their
+sight.
+
+They said to one another, “Were not our hearts
+burning within us while He was speaking to us
+on the road, while He was explaining the
+Scriptures to us?” And they got up that very
+hour and returned to Jerusalem, and found
+gathered together the eleven and those who
+were with them, saying, “The Lord has really
+risen and has appeared to Simon.” They began
+to relate their experiences on the road and
+how He was recognized by them in the breaking
+of the bread.
+
+While they were telling these things, He
+Himself stood in their midst and said to them,
+“Peace be to you.” But they were startled and
+frightened and thought that they were seeing a
+spirit.
+
+And He said to them, “Why are you troubled,
+and why do doubts arise in your hearts?
+
+See My hands and My feet, that it is I Myself;
+touch Me and see, for a spirit does not have
+flesh and bones as you see that I have.” And
+when He had said this, He showed them His
+hands and His feet.
+
+While they still could not believe it because
+of their joy and amazement, He said to them,
+“Have you anything here to eat?” They gave Him
+a piece of a broiled fish; and He took it and
+ate it before them.
+
+Now He said to them, “These are My words which
+I spoke to you while I was still with you,
+that all things which are written about Me in
+the Law of Moses and the Prophets and the
+Psalms must be fulfilled.” Then He opened
+their minds to understand the Scriptures, and
+He said to them, “Thus it is written, that the
+Christ would suffer and rise again from the
+dead the third day, and that repentance for
+forgiveness of sins would be proclaimed in His
+name to all the nations, beginning from
+Jerusalem.
+
+You are witnesses of these things.
+
+And behold, I am sending forth the promise of
+My Father upon you; but you are to stay in the
+city until you are clothed with power from on
+high.” And He led them out as far as Bethany,
+and He lifted up His hands and blessed them.
+
+While He was blessing them, He parted from
+them and was carried up into heaven.
+
+And they, after worshiping Him, returned to
+Jerusalem with great joy, and were continually
+in the temple praising God.
+
+(NASB)
+#+end_src
+
+**** E (explain)
+
+**** A (apply)
+
+**** R (respond)
+
+Dear Heavenly Father, Almighty Jehovah God,

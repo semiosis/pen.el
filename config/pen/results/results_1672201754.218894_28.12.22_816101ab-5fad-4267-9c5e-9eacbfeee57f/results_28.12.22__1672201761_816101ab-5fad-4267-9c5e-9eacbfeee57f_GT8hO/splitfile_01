@@ -1,0 +1,4 @@
+
+" TODO: Use 'cursorline' and 'cursorcolumn' in the returned text
+return getline(visualline('.'), 1, '$') . "\<Esc>`<Esc>"
+endfunction

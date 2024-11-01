@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/docs/theology;  "II" "Corinthians" "8:3-5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "II" "Corinthians" "8:3-5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "II" "Corinthians" "8:3-5" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Thessalonians" "1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Thessalonians" "1:5-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Thessalonians" "1:9-12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Thessalonians" "1:1" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "II" "Thessalonians" "1:1-12" "#" "<==" "zsh"

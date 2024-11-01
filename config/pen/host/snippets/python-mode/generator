@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: generator
+# group: sot
+# key: g
+# --
+[${1:_} for ${2:_} in ${3:_}]$0

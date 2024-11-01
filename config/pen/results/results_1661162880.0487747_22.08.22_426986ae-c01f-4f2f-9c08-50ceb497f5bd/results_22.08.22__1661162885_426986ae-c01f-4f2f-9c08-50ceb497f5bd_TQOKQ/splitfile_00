@@ -1,0 +1,9 @@
+
+
+-- bad style
+
+number = read s ++ 2
+
+Because the do is unambiguous, it is considered good style to use it at all times.
+
+The second part of the do statement (the expression) must be a

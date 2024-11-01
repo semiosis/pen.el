@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: getargs
+# group: scripting
+# key: opt
+# --
+import System.Environment
+
+main = do
+  (which : vtime : tout : _) <- fmap (map read) getArgs
+  let cmd = "10 " ++ show vtime
+      tmicros = 1000000*tout :: Int
+  case which of
+    1 -> main1 cmd tmicros
+    2 -> main2 cmd tmicros
+    3 -> main3 cmd tmicros
+    _   -> error "huh?"

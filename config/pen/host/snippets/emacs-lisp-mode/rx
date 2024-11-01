@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rx
+# key: rx
+# --
+(rxt-elisp-to-pcre (rx-to-string (rxt-pcre-to-rx "^need\\.org$")))

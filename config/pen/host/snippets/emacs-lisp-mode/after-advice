@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: after-advice
+# group: advice
+# key: adaf
+# --
+(advice-add
+ 'wiki-summary
+ :after '(lambda
+           (&rest args)
+           (call-interactively
+            'other-window)))

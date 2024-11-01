@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: DartEditor
+# contributor: Toptal & contributors
+# key: darteditor
+# --
+
+### DartEditor ###
+
+.project
+.buildlog

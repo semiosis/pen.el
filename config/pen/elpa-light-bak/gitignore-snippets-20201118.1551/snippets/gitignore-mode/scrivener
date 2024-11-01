@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: Scrivener
+# contributor: Toptal & contributors
+# key: scrivener
+# --
+
+### Scrivener ###
+
+*/Files/binder.autosave
+*/Files/binder.backup
+*/Files/search.indexes
+*/Files/user.lock
+*/Files/Docs/docs.checksum
+*/Files/Data/docs.checksum
+*/QuickLook/
+*/Settings/ui.plist

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Kobalt
+# contributor: Toptal & contributors
+# key: kobalt
+# --
+
+### Kobalt ###
+
+.kobalt
+kobaltBuild/
+

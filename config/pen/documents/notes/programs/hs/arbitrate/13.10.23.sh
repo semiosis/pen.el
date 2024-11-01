@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el;  "arbitrate" "/root/.emacs.d/.cache/lsp/npm/vim-language-server/bin/vim-language-server" "--stdio" "#" "<==" "vimls"
+cd /root/.vim;  "arbitrate" "/root/.emacs.d/.cache/lsp/npm/vim-language-server/bin/vim-language-server" "--stdio" "#" "<==" "vimls"
+cd /root/.vim;  "arbitrate" "/root/.emacs.d/.cache/lsp/npm/vim-language-server/bin/vim-language-server" "--stdio" "#" "<==" "vimls"
+cd /root/.vim;  "arbitrate" "/root/.emacs.d/.cache/lsp/npm/vim-language-server/bin/vim-language-server" "--stdio" "#" "<==" "vimls"
+cd /root/notes;  "arbitrate" "#" "<==" "upd"

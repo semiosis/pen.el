@@ -1,0 +1,9 @@
+"coerce" is a function that converts a value of one type to another type.
+
+For example, it can be used to convert a string to an integer, or to convert a
+function that takes an integer to one that also takes a string.
+
+The "coerce" function is defined in the "Data.Coerce" module.
+
+The "coerce" function is used in the "Control.Monad.Coercible" module to make
+certain types instances of

@@ -1,0 +1,8 @@
+1. This is the main function of the program
+2. It takes in any number of arguments
+3. It then creates a new variable called port
+4. It then checks if there is a port environment variable
+5. If there is, it sets the port to the value of the environment variable
+6. If there isn't, it sets the port to 9837
+7. It then creates a new server with the port, thread count, and max body size
+8. It

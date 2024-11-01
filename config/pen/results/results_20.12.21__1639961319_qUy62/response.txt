@@ -1,0 +1,3 @@
+root@mele:/etc$ ls
+group-  hostname-  passwd-  shadow-  subgid-  subuid-
+group.d- hostname.d- passwd.d- shadow.d- subgid.d- subuid.

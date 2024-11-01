@@ -1,0 +1,10 @@
+*.el
+*.py
+*.cl
+*.clj
+*.c
+*.cpp
+*.h
+*.hpp
+*.rs
+*.pl

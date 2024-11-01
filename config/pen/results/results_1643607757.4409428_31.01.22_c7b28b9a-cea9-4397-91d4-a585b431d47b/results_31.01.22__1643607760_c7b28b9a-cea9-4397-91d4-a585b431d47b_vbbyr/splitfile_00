@@ -1,0 +1,7 @@
+: <passage>
+- context: |
+    The topic is "<in the context of>" in the context of "<topic>".
+    Topic: <topic>
+- question: |
+    <question>
+- answer:

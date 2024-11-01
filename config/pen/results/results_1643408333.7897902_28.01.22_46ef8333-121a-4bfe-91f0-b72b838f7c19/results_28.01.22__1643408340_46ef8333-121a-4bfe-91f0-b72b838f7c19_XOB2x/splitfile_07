@@ -1,0 +1,7 @@
+cd 'harrys adventures'
+» pwd
+/root/notes/harrys adventures
+» ls
+ harrys-adventures.txt  harrys-adventures.txt~  harrys-adventures.txt~1  harrys-adventures.txt~2  harrys-adventures.txt~3
+» ls
+ harrys-adventures.txt  harrys-adventures.txt~  harrys-adventures.txt~

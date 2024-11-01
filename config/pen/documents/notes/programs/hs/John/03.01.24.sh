@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "John" "3:18" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "5:24" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "18:20" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "John" "18:19-20" "#" "<==" "bash"
+cd /volumes/home/shane/notes/ws/bible-studies;  "John" "10:10" "#" "<==" "bash"

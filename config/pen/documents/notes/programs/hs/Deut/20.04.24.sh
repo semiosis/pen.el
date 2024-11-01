@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/docs;  "Deut" "7:6" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Deut" "26:18-19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Deut" "14:2" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Deut" "10:15" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs;  "Deut" "4:20" "#" "<==" "zsh"

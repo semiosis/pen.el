@@ -1,0 +1,8 @@
+covered that multimodal neurons are capable of learning complex
+    representations of multiple modalities, and that they can be used to
+    improve the performance of multimodal models.
+    https://arxiv.org/abs/1904.07751
+
+sparse attention
+    v +/"Sparse Attention" "$MYGIT/lucidrains/DALLE-pytorch/README.md"
+

@@ -1,0 +1,3 @@
+"async/alt!" is a transducer that takes a channel and a value and returns a channel.
+The returned channel will send the value to the channel when it closes.
+

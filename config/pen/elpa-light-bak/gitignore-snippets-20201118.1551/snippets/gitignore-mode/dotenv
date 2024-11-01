@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: dotenv
+# contributor: Toptal & contributors
+# key: dotenv
+# --
+
+### dotenv ###
+
+.env

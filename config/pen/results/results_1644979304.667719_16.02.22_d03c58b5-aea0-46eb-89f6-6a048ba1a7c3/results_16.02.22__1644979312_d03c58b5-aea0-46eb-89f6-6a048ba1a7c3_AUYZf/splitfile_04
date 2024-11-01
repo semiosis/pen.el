@@ -1,0 +1,3 @@
+"com.rpl/specter" is a library that provides a simple interface for
+running functional tests against a Clojure project.
+

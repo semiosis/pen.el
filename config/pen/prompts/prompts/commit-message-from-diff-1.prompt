@@ -1,0 +1,52 @@
+title: "Commit message from diff"
+doc: "Generate a commit message from a diff"
+info: on
+tags: code git
+prompt-version: 1
+prompt: |+
+    cat git-diff.txt <<EOD
+    git diff HEAD\^!
+    <diff>
+    EOD
+
+    git log HEAD\^! --oneline
+    5ebcee4 (HEAD -> master) 
+engine: "OpenAI Codex"
+temperature: 0.8
+max-generated-tokens: 60
+n-completions: 10
+top-p: 1.0
+cache: on
+vars:
+- "diff"
+preprocessors:
+- "sed 's/^/> /'"
+var-defaults:
+- "(pen-selected-text)"
+stop-sequences:
+- "\n"
+validator: "grep -qvP '(Initial commit)'"
+# validator: "wc -l | grep -qP '^1$'"
+examples:
+- |+
+    diff --git a/prompts/randomize-private-info.prompt b/prompts/randomize-private-info.prompt
+    index d4a21d1..4a4cc74 100644
+    --- a/prompts/randomize-private-info.prompt
+    +++ b/prompts/randomize-private-info.prompt
+    @@ -21,10 +21,10 @@ prompt: |+
+         Date:   Sun Apr 4 13:26:51 2021 +0200
+         EOD
+     
+    -    # The exact same data file but with different private details
+    -    cat data-fake.txt <<EOD
+    +    # The exact same data file but with different and fake private details
+    +    cat fake-data.txt <<EOD
+     engine: "OpenAI Codex"
+    -temperature: 0.8
+    +temperature: 0.9
+     max-tokens: "(* 2 prompt-length)"
+     stop-sequences:
+     - "EOD"
+filter: on
+completion: off
+insertion: off

@@ -1,0 +1,84 @@
+unwind-protect
+    An analogue of finally clause in Java or
+    Python, so it's not a catch-all clause,
+    that will intercept any unhandled
+    condition.
+
+numeric tower
+numerical tower
+    In Scheme and in Lisp dialects inspired by
+    it:
+
+    The set of data types that represent
+    numbers in a given programming language.
+
+    Example:
+
+        Integer
+       Rational .
+      Real       .
+     Complex      .
+    Number _______ .
+
+LISP 2
+    Functions and variables have separate
+    namespaces.
+
+    Examples:
+    - LFE
+      Lisp Flavored Erlang
+
+Homoinconic
+Homoinconicity
+    The program structure is similar to its
+    syntax, and therefore the program's
+    internal representation can be inferred by
+    reading the text's layout.
+
+    Some inferences from the above:
+    - A language that looks like the AST it
+      compiles to.
+    - data = code
+
+attraction of Lisp in AI research
+    https://www.quora.com/Would-Emacs-Lisp-be-a-good-start-in-learning-A-I
+
+    The original attraction of Lisp in AI
+    research was due to the fact that Lisp
+    programs are lists (i.e., lists of
+    instructions which can be treated like
+    data) and so Lisp programs can be written
+    (without much fuss) that rewrite
+    themselves (e.g., in response to
+    “learning”).
+    
+    Emacs Lisp is as good as any other
+    implementation in that regard.
+    
+    And the fact that John McCarthy (the guy
+    who gave us Lisp) was, probably, the first
+    computer scientist to state the main
+    problem of AI (i.e., the Qualification
+    problem) also helped Lisp’s reputation as
+    an AI tool.
+    
+    But AI has moved far beyond the simple
+    idea that a “state of AI” would be
+    achieved when programs could rewrite
+    themselves.
+    
+    What became obvious was that the real
+    problem of AI is in writing a program that
+    knows what it needs to change about itself
+    to improve itself (and so the ability of a
+    program to rewrite itself becomes
+    secondary).
+    
+    And, practically, modern AI research
+    focuses on things (e.g., ML) that don’t
+    require Lisp’s capabilities.
+    
+    Lisp is a fascinating language but it’s
+    not necessary (or, in some ways,
+    practical) for AI research (and I use it
+    only to write modifications to Emacs).

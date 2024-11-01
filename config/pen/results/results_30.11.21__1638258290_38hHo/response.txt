@@ -1,0 +1,4 @@
+
+  (if (null l)
+      0
+    (+ (car l) (reduce-with-addition (cdr l)))))

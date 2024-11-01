@@ -1,0 +1,27 @@
+title: English to Japanese
+tags: translation language grammar english japanese
+prompt-version: 2
+prompt: |
+  Translate to Japanese.
+
+  English: Give me a home among the gumtrees.
+  Japanese: ガムツリーの中に家をください。
+  <delim>
+  English: Could I have a baguette please?
+  Japanese: バゲットを頂けますか？
+  <delim>
+  English: See you later!
+  Japanese: じゃあまたね！
+  <delim>
+  English: <1>
+  Japanese:
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 100
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- english prose
+examples:
+- I love you.

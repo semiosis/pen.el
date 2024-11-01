@@ -1,0 +1,5 @@
+
+
+  -- We now have a list of ByteStrings. We need to decode them into text.
+  -- We use the T.Text type to represent text as a list of characters
+  let lines' = map decodeUtf8

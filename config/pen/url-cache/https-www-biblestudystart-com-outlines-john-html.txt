@@ -1,0 +1,718 @@
+HTTP/1.1 200 OK
+Date: Sat, 21 Oct 2023 20:33:43 GMT
+Server: Apache
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+﻿<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/SubPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.biblestudystart.com/img/books-large.jpg">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Outline of John | Free Bible Outlines</title>
+<!-- InstanceEndEditable -->
+<meta property="og:site_name" content="Bible Outlines" />
+<meta property="og:title" content="Outline of John | Free Bible Outlines" />
+<meta property="og:description" content="Bible outline of John. See what it's about from the first verse to the last." />
+<meta name="Description" content="Bible outline of John. See what it's about from the first verse to the last.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../layout/styles3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 240px;
+}
+@media (min-width: 500px) {
+.gresponsive, #google-responsiveside {
+	width: 468px;
+	height: 60px;
+}
+}
+@media (min-width: 601px) {
+.gresponsive, #google-responsiveside {
+	width: 120px;
+	height: 600px;
+}
+}
+@media (min-width: 1100px) {
+.gresponsive, #google-responsiveside {
+	width: 300px;
+	height: 600px;
+}
+}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="mainbackground">
+  <div id="header">
+    <div class="lowerglow innerdiv"> <!-- InstanceBeginEditable name="SubSiteTitle" -->
+      <div class="title"> <a href="https://www.biblestudystart.com/outlines/">Bible Outlines</a></div>
+      <div class="subtitle">Every book of the Bible outlined in section headings.</div>
+      <!-- InstanceEndEditable --> </div>
+  </div>
+  <div id="outer" class="innerdiv">
+    <div id="content"> 
+      <div class="bibleoutline">
+<h1>Outline of John</h1>
+<table>
+ <tr><td colspan="2" class="chapterheading">John chapter 1</td></tr>
+ <tr>
+  <td class="verses">Joh 1:1-14.</td>
+  <td class="summary">The divinity, humanity, office, and incarnation of Jesus Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 1:15-38.</td>
+  <td class="summary">The testimony of John.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 1:39-51.</td>
+  <td class="summary">The calling of Andrew, Peter, etc.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 2</td></tr>
+ <tr>
+  <td class="verses">Joh 2:1-11.</td>
+  <td class="summary">Christ turns water into wine;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 2:12.</td>
+  <td class="summary">departs into Capernaum,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 2:13.</td>
+  <td class="summary">and to Jerusalem,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 2:14-17.</td>
+  <td class="summary">where he purges the temple of buyers and sellers.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 2:18-22.</td>
+  <td class="summary">He foretells his death and resurrection.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 2:23-25.</td>
+  <td class="summary">Many believe because of his miracles, but he will not trust himself with them.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 3</td></tr>
+ <tr>
+  <td class="verses">Joh 3:1-13.</td>
+  <td class="summary">Christ teaches Nicodemus the necessity of regeneration,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 3:14-15.</td>
+  <td class="summary">of faith in his death,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 3:16-17.</td>
+  <td class="summary">the great love of God towards the world,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 3:18-21.</td>
+  <td class="summary">and the condemnation for unbelief.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 3:22.</td>
+  <td class="summary">Jesus baptizes in Judea.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 3:23-36.</td>
+  <td class="summary">The baptism, witness, and doctrine of John concerning Christ.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 4</td></tr>
+ <tr>
+  <td class="verses">Joh 4:1-26.</td>
+  <td class="summary">Christ talks with a woman of Samaria, and reveals himself unto her.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 4:27-30.</td>
+  <td class="summary">His disciples marvel.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 4:31-38.</td>
+  <td class="summary">He declares to them his zeal for God's glory.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 4:39-42.</td>
+  <td class="summary">Many Samaritans believe on him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 4:43-54.</td>
+  <td class="summary">He departs into Galilee, and heals the ruler's son that lay sick at Capernaum.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 5</td></tr>
+ <tr>
+  <td class="verses">Joh 5:1-9.</td>
+  <td class="summary">Jesus on the sabbath day cures him that was diseased eight and thirty years.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 5:10-16.</td>
+  <td class="summary">The Jews therefore cavil, and persecute him for it.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 5:17-30.</td>
+  <td class="summary">He answers for himself, and reproves them, shewing by the testimony of his Father,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 5:31-35.</td>
+  <td class="summary">of John,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 5:36-38.</td>
+  <td class="summary">of his works,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 5:39-47.</td>
+  <td class="summary">and of the scriptures, who he is.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 6</td></tr>
+ <tr>
+  <td class="verses">Joh 6:1-14.</td>
+  <td class="summary">Christ feeds five thousand men with five loaves and two fishes.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 6:15.</td>
+  <td class="summary">Thereupon the people would have made him king;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 6:16-25.</td>
+  <td class="summary">but withdrawing himself, he walks on the sea to his disciples;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 6:26-31.</td>
+  <td class="summary">reproves the people flocking after him, and all the fleshly hearers of his word;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 6:32-65.</td>
+  <td class="summary">declares himself to be the bread of life to believers.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 6:66-67.</td>
+  <td class="summary">Many disciples depart from him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 6:68-69.</td>
+  <td class="summary">Peter confesses him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 6:70-71.</td>
+  <td class="summary">Judas is a devil.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 7</td></tr>
+ <tr>
+  <td class="verses">Joh 7:1-9.</td>
+  <td class="summary">Jesus reproves the ambition and boldness of his kinsmen;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 7:10-13.</td>
+  <td class="summary">goes up from Galilee to the feast of tabernacles;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 7:14-39.</td>
+  <td class="summary">teaches in the temple.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 7:40-44.</td>
+  <td class="summary">Divers opinions of him among the people.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 7:45-53.</td>
+  <td class="summary">The Pharisees are angry that their officers took him not, and chide with Nicodemus for taking his part.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 8</td></tr>
+ <tr>
+  <td class="verses">Joh 8:1-11.</td>
+  <td class="summary">Christ delivers the woman taken in adultery.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 8:12-30.</td>
+  <td class="summary">He declares himself the light of the world, and justifies his doctrine;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 8:31-32.</td>
+  <td class="summary">promises freedom to those who believe;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 8:33-47.</td>
+  <td class="summary">answers the Jews that boasted of Abraham;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 8:48-58.</td>
+  <td class="summary">answers their reviling, by shewing his authority and dignity;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 8:59.</td>
+  <td class="summary">and conveys himself from their cruelty.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 9</td></tr>
+ <tr>
+  <td class="verses">Joh 9:1-7.</td>
+  <td class="summary">The man that was born blind restored to sight.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 9:8-12.</td>
+  <td class="summary">He is brought to the Pharisees.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 9:13-34.</td>
+  <td class="summary">They are offended at it, and excommunicate him;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 9:35-38.</td>
+  <td class="summary">but he is received of Jesus, and confesses him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 9:39-41.</td>
+  <td class="summary">Who they are whom Christ enlightens.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 10</td></tr>
+ <tr>
+  <td class="verses">Joh 10:1-18.</td>
+  <td class="summary">Christ is the door, and the good shepherd.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 10:19-22.</td>
+  <td class="summary">Divers opinions of him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 10:23-30.</td>
+  <td class="summary">He proves by his works that he is Christ the Son of God;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 10:31-38.</td>
+  <td class="summary">escapes the Jews;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 10:39-42.</td>
+  <td class="summary">and goes again beyond Jordan, where many believe on him.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 11</td></tr>
+ <tr>
+  <td class="verses">Joh 11:1-44.</td>
+  <td class="summary">Christ raises Lazarus, four days buried.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 11:45-46.</td>
+  <td class="summary">Many Jews believe.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 11:47-48.</td>
+  <td class="summary">The high priests and Pharisees gather a council against Christ.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 11:49-53.</td>
+  <td class="summary">Caiaphas prophesies.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 11:54.</td>
+  <td class="summary">Jesus hides himself.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 11:55-57.</td>
+  <td class="summary">At the passover they inquire after him, and lay wait for him.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 12</td></tr>
+ <tr>
+  <td class="verses">Joh 12:1-8.</td>
+  <td class="summary">Jesus excuses Mary anointing his feet.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:9.</td>
+  <td class="summary">The people flock to see Lazarus.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:10-11.</td>
+  <td class="summary">The chief priests consult to kill him.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:12-19.</td>
+  <td class="summary">Christ rides into Jerusalem.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:20-22.</td>
+  <td class="summary">Greeks desire to see Jesus.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:23-36.</td>
+  <td class="summary">He foretells his death.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:37-41.</td>
+  <td class="summary">The Jews are generally blinded;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:42-43.</td>
+  <td class="summary">yet many chief rulers believe, but do not confess him;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 12:44-50.</td>
+  <td class="summary">therefore Jesus calls earnestly for confession of faith.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 13</td></tr>
+ <tr>
+  <td class="verses">Joh 13:1-17.</td>
+  <td class="summary">Jesus washes the disciples' feet, and exhorts them to humility and charity.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 13:18-30.</td>
+  <td class="summary">He foretells and discovers to John by a token, that Judas should betray him;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 13:31-35.</td>
+  <td class="summary">commands them to love one another;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 13:36-38.</td>
+  <td class="summary">and forewarns Peter of his denials.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 14</td></tr>
+ <tr>
+  <td class="verses">Joh 14:1-4.</td>
+  <td class="summary">Christ comforts his disciples with the hope of heaven;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 14:5-12.</td>
+  <td class="summary">professes himself the way, the truth, and the life, and one with the Father;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 14:13-14.</td>
+  <td class="summary">assures their prayers to be effectual;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 14:15.</td>
+  <td class="summary">requires obedience;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 14:16-26.</td>
+  <td class="summary">promises the Comforter;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 14:27-31.</td>
+  <td class="summary">and leaves his peace with them.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 15</td></tr>
+ <tr>
+  <td class="verses">Joh 15:1-17.</td>
+  <td class="summary">The union of Christ and his members shown under the parable of a vine.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 15:18-25.</td>
+  <td class="summary">The hatred of the world.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 15:26-27.</td>
+  <td class="summary">The office of the Holy Ghost.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 16</td></tr>
+ <tr>
+  <td class="verses">Joh 16:1-22.</td>
+  <td class="summary">Christ comforts his disciples by the promise of the Holy Ghost, and his ascension;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 16:23-32.</td>
+  <td class="summary">assures their prayers made in his name to be acceptable.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 16:33.</td>
+  <td class="summary">Peace in Christ, and in the world affliction.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 17</td></tr>
+ <tr>
+  <td class="verses">Joh 17:1-26.</td>
+  <td class="summary">Christ prays to his Father.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 18</td></tr>
+ <tr>
+  <td class="verses">Joh 18:1-5.</td>
+  <td class="summary">Judas betrays Jesus.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:6-9.</td>
+  <td class="summary">The officers fall to the ground.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:10-11.</td>
+  <td class="summary">Peter smites off Malchus' ear.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:12-14.</td>
+  <td class="summary">Jesus is taken, and led unto Annas and Caiaphas.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:15-18.</td>
+  <td class="summary">Peter's denial.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:19-24.</td>
+  <td class="summary">Jesus examined before Caiaphas.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:25-27.</td>
+  <td class="summary">Peter's second and third denial.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:28-35.</td>
+  <td class="summary">Jesus arraigned before Pilate.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:36-39.</td>
+  <td class="summary">His kingdom.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 18:40.</td>
+  <td class="summary">The Jews prefer Barabbas.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 19</td></tr>
+ <tr>
+  <td class="verses">Joh 19:1-3.</td>
+  <td class="summary">Christ is scourged, crowned with thorns, and beaten.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 19:4-22.</td>
+  <td class="summary">Pilate is desirous to release him, but being overcome with the outrage of the Jews, he delivers him to be crucified.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 19:23-24.</td>
+  <td class="summary">They cast lots for his garments.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 19:25-27.</td>
+  <td class="summary">He commends his mother to John.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 19:28-30.</td>
+  <td class="summary">He dies.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 19:31-37.</td>
+  <td class="summary">His side is pierced.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 19:38-42.</td>
+  <td class="summary">He is buried by Joseph and Nicodemus.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 20</td></tr>
+ <tr>
+  <td class="verses">Joh 20:1-2.</td>
+  <td class="summary">Mary comes to the sepulchre;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 20:3-10.</td>
+  <td class="summary">so do Peter and John, ignorant of the resurrection.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 20:11-18.</td>
+  <td class="summary">Jesus appears to Mary Magdalene,</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 20:19-23.</td>
+  <td class="summary">and to his disciples.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 20:24-29.</td>
+  <td class="summary">The incredulity and confession of Thomas.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 20:30-31.</td>
+  <td class="summary">The Scripture is sufficient to salvation.</td>
+ </tr>
+ <tr><td colspan="2" class="chapterheading">John chapter 21</td></tr>
+ <tr>
+  <td class="verses">Joh 21:1-11.</td>
+  <td class="summary">Christ appearing again to his disciples is known of them by the great draught of fishes.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 21:12-14.</td>
+  <td class="summary">He dines with them;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 21:15-17.</td>
+  <td class="summary">earnestly commands Peter to feed his lambs and sheep;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 21:18-21.</td>
+  <td class="summary">foretells him of his death;</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 21:22-23.</td>
+  <td class="summary">rebukes his curiosity touching John.</td>
+ </tr>
+ <tr>
+  <td class="verses">Joh 21:24-25.</td>
+  <td class="summary">The conclusion.</td>
+ </tr>
+</table>
+
+</div> 
+    </div>
+    <div id="rightside">
+      <div id="rightsideinner"> <!-- InstanceBeginEditable name="EditNextPrev" --> 
+        <div class="nav"><div class="nav-prev"><a href="luke.html" rel="prev">&larr;&nbsp;Luke</a></div><div class="nav-next"><a href="acts.html" rel="next">Acts&nbsp;&rarr;</a></div></div> 
+        <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="EditIndexSelector" --> 
+        <div id="indexselector">
+        <select name="OutlinePages" onChange="window.open(this.options[this.selectedIndex].value,'_top')">
+<option selected value="/outlines/">Select a Book of the Bible</option>
+<option value="/outlines/">(About these outlines)</option>
+<option value="genesis.html">Genesis</option>
+<option value="exodus.html">Exodus</option>
+<option value="leviticus.html">Leviticus</option>
+<option value="numbers.html">Numbers</option>
+<option value="deuteronomy.html">Deuteronomy</option>
+<option value="joshua.html">Joshua</option>
+<option value="judges.html">Judges</option>
+<option value="ruth.html">Ruth</option>
+<option value="1samuel.html">1 Samuel</option>
+<option value="2samuel.html">2 Samuel</option>
+<option value="1kings.html">1 Kings</option>
+<option value="2kings.html">2 Kings</option>
+<option value="1chronicles.html">1 Chronicles</option>
+<option value="2chronicles.html">2 Chronicles</option>
+<option value="ezra.html">Ezra</option>
+<option value="nehemiah.html">Nehemiah</option>
+<option value="esther.html">Esther</option>
+<option value="job.html">Job</option>
+<option value="psalms.html">Psalms</option>
+<option value="proverbs.html">Proverbs</option>
+<option value="ecclesiastes.html">Ecclesiastes</option>
+<option value="songofsolomon.html">Song of Solomon</option>
+<option value="isaiah.html">Isaiah</option>
+<option value="jeremiah.html">Jeremiah</option>
+<option value="lamentations.html">Lamentations</option>
+<option value="ezekiel.html">Ezekiel</option>
+<option value="daniel.html">Daniel</option>
+<option value="hosea.html">Hosea</option>
+<option value="joel.html">Joel</option>
+<option value="amos.html">Amos</option>
+<option value="obadiah.html">Obadiah</option>
+<option value="jonah.html">Jonah</option>
+<option value="micah.html">Micah</option>
+<option value="nahum.html">Nahum</option>
+<option value="habakkuk.html">Habakkuk</option>
+<option value="zephaniah.html">Zephaniah</option>
+<option value="haggai.html">Haggai</option>
+<option value="zechariah.html">Zechariah</option>
+<option value="malachi.html">Malachi</option>
+<option value="matthew.html">Matthew</option>
+<option value="mark.html">Mark</option>
+<option value="luke.html">Luke</option>
+<option value="john.html">John</option>
+<option value="acts.html">Acts</option>
+<option value="romans.html">Romans</option>
+<option value="1corinthians.html">1 Corinthians</option>
+<option value="2corinthians.html">2 Corinthians</option>
+<option value="galatians.html">Galatians</option>
+<option value="ephesians.html">Ephesians</option>
+<option value="philippians.html">Philippians</option>
+<option value="colossians.html">Colossians</option>
+<option value="1thessalonians.html">1 Thessalonians</option>
+<option value="2thessalonians.html">2 Thessalonians</option>
+<option value="1timothy.html">1 Timothy</option>
+<option value="2timothy.html">2 Timothy</option>
+<option value="titus.html">Titus</option>
+<option value="philemon.html">Philemon</option>
+<option value="hebrews.html">Hebrews</option>
+<option value="james.html">James</option>
+<option value="1peter.html">1 Peter</option>
+<option value="2peter.html">2 Peter</option>
+<option value="1john.html">1 John</option>
+<option value="2john.html">2 John</option>
+<option value="3john.html">3 John</option>
+<option value="jude.html">Jude</option>
+<option value="revelation.html">Revelation</option>
+</select>
+ 
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="clearall">&nbsp;</div>
+        <div id="searchbox">
+          <form action="https://www.google.com" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="partner-pub-5275979875239567:3875486487">
+              <input type="hidden" name="ie" value="UTF-8">
+              <input type="text" name="q" size="20" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+        
+        <!--SS_AD_START-->
+        <div id="sssidebar" class="sidebar">
+          <div class="innersidebar">
+            <p>Your Bible study shouldn't be left to a web search.</p>
+            <div class="sslink">
+              <p><a href="https://www.swordsearcher.com">Better Bible Study
+                With<br>
+                SwordSearcher
+                Bible Software <br>
+                <img src="../img/swordsearcher.png" alt="SwordSearcher"></a> </p>
+            </div>
+            <p>The internet is good for many things, but it is not designed for studying God's word.</p>
+            <p>SwordSearcher is.</p>
+            <ul>
+              <li><a href="https://www.swordsearcher.com">Learn more.</a></li>
+              <li><a href="https://www.swordsearcher.com/video/3reasons.htm">Video: 3 Reasons to use SwordSearcher</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--SS_AD_END-->
+        
+        
+        <a href="https://www.bible-topics.com/" class="button">Bible Topics</a>
+		<a href="https://www.naves-topical-bible.com/" class="button">Nave's Topical Bible Concordance</a>
+		<a href="https://www.internationalstandardbible.com/" class="button">International Standard Bible Encyclopedia</a>
+  		<a href="https://www.biblicalcyclopedia.com/" class="button">McClintock and Strong Biblical Cyclopedia</a>
+		<a href="https://av1611.com/kjbp/kjv-bible-text/index.html" class="button">Online KJV Text</a>
+		<a href="https://av1611.com/kjbp/kjv-dictionary/kjv-dictionary-index.html" class="button">KJV Dictionary</a> 
+ 
+      </div>
+    </div>
+    <div class="clearall"> &nbsp; </div>
+  </div>
+</div>
+<div id="footer"> <!-- InstanceBeginEditable name="EditFooterIndex" --> 
+  <!--FOOTER_INDEX_DIV_START--> 
+  <!--FOOTER_INDEX_DIV_END--> 
+  <!-- InstanceEndEditable -->
+  <div class="innerdiv"> 
+    <!--FOOTER_START--> 
+    <a href="https://www.biblestudystart.com"><img src="../img/books-tiny.jpg" alt="Bible Study Start" class="bookspicture"></a> <!-- InstanceBeginEditable name="Footer" -->
+    <p>Source: <a href="https://www.swordsearcher.com/bible-study-library/bible-outlines.html">OutlinesBB</a> module from <a href="https://www.swordsearcher.com">SwordSearcher</a>.</p>
+    <!-- InstanceEndEditable -->
+    <p>Website HTML, editorial descriptions, and images &copy;2023 <a href="https://www.studylamp.com">StudyLamp Software LLC.</a> <br>
+      <a href="https://av1611.com/verseclick">Scripture linking and popups powered by VerseClick&trade;.</a> </p>
+    <!--FOOTER_END--> 
+  </div>
+</div>
+<div id="postfooter"> 
+  
+ 
+</div>
+
+
+<script src="https://av1611.com/verseclick/verseclick.js"></script> 
+
+<!-- AddThis Smart Layers BEGIN --> 
+<!-- Go to http://www.addthis.com/get/smart-layers to customize --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521e2b9213820e78"></script> 
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5,
+	  'mobile' : false
+    }   
+  });
+</script> 
+<!-- AddThis Smart Layers END --> 
+
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,125 @@
+Link: Excalibur Clan (alternate)
+Home arrow Forum
+_____________________
+Wednesday, September 15 2010
+o Home
+o Blog
+o Forum
+
+Other Menu               Link: help
+Link: search
+Tutorials                  Link: contents
+Rec. Games                 Link: - RSS (alternate)
+EX Members                 Link: previous
+Mac Newsfeeds              Link: next
+FAQs                       Link: index
+Links
+How to register             User Info                    Key Stats
+Welcome, Guest. Please       4036 Posts in 349 Topics by 166
+Recent Topics             login or register.           Members
+September 15, 2010,          Latest Member: niels
+o New Members (6) by      12:30:32 AM
+Ka$h                      ___________ ___________
+o Playing... (3) by           [ _______ ] [ Login ]
+niels                        Login with username,
+o hi everyone (2) by           password and session
+Citin                                      length
+o Funniest Story 2010
+(27) by Mantis         Search:
+o Killing/ Stealing      _____________________  
+sheep (17) by Leonidas [ Search ]   Advanced search
+o Your "go to" rush (5)
+by Leonidas            Home Help Search Login Register
+o Mouse Accuracy Trainer
+(2) by Ka$h             |  General  |  The pub / general discussion
+o How To Use Civs In DM  (Moderators: Leonidas, exc_imac)  |  Playing... << previous next >>
+(3) by Sinister_ROA
+o Pocket Strat (6) by    Pages: [1]                                                  Print
+Sinister_ROA
+o NEW 1V1 LADDER         Author    Topic: Playing...  (Read 95 times)
+http://tourney.ath.cx/
+(27) by OcToPuS         Citin    [IMG]     Playing...
+Newbie             << on: August 31, 2010, 05:27:19 PM >>
+Login Form                *
+Posts:
+Username                    35
+___________                          Hello guys. I'm on a vacation for 2 weeks. I was
+Password                    View     hopin' to be able to do some games. I got the network
+___________                 Profile  fixed at the place where I am now (ofcourse.. if not,
+[ ] Remember me                      you wouldn't be readin' this).
+[ Login ]
+Lost Password?                       Anyways.. the proxy on the network is blocking me from
+logging into Gameranger. I wonder if any of you fellas
+Who's Online                       know how to fix it. The "can't find proxy" thing pops
+up. I'd appreciate any help. Any ideas?
+We have 1 guest online
+spacer.png, 0 kB                     Best regards
+Pioneer / Citin / Shalafi / Warhawk
+Logged
+Mantis                     Re: Playing...
+Jr. Member           [IMG] << Reply #1 on: August 31, 2010,
+* *                        06:04:49 PM >>
+Posts: 60
+
+mullikine@gmail.com
+View Profile WWW     Hey buddy. Download a program called
+Proxifier. You may be able to connect to
+gameranger with that, although it might
+not let you play games unless you can get
+it to work for both gr and aoe at the same
+time. If you absolutely must play, you
+could do some research and get someone
+back at your house to install squid proxy
+one of their computers and set up port
+forwarding to it on port 3128 both tcp and
+udp. Then you can use a program called
+corkscrew (installable via macports) to
+make an ssh tunnel from your computer to
+the one at home. You need to know how to
+use ssh. Refer to this website:
+http://www.mtu.net/~engstrom/ssh-proxy.php
+. Assuming your interwebs is quite fast, u
+should be able to play pretty well like
+that. Good luck!
+Logged
+Citin          Re: Playing...
+Newbie   [IMG] << Reply #2 on: September 02, 2010, 01:20:32 PM
+*              >>
+Posts:
+35
+
+View     Ok Mantis. I've tried proxifier.. yet I'm no expert at
+Profile  this. The problem is that I can't do anything with the
+internet. The thing I need is something that fixes the
+proxy. I've been searchin' alot now for different
+solutions but never found. I downloaded proxifier, ran
+it, and then tried opening gameranger, but still
+didn't work. I guess I'll have to write in IP address
+and port number?
+
+Which address? And where do I find the port numbers
+Smiley?
+Logged
+niels           Re: Playing...
+Newbie    [IMG] << Reply #3 on: September 05, 2010, 10:10:16 PM
+*               >>
+Posts: 1
+
+View
+Profile   so you didn't quit :p good.
+
+see you when you get back on gr
+Logged
+
+Pages: [1]                                                 Print 
+
+<< previous next >>
+
+Jump to: [ _______________________________________ ]  [ go ]
+
+Powered by SMF 1.1 RC3 | SMF (c) 2001-2006, Lewis Media
+Joomla Bridge by JoomlaHacks.com
+Theme by Nesianstyles | Buttons by Andrea
+
+RSS 2.0
+

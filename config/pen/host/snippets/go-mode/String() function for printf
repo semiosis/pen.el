@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pf
+# key: pf
+# --
+fmt.Fprintln(os.Stdout, "string")

@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Crystal
+# contributor: Toptal & contributors
+# key: crystal
+# --
+
+### Crystal ###
+
+/docs/
+/lib/
+/bin/
+/.shards/
+*.dwarf
+
+# Libraries don't need dependency lock
+# Dependencies will be locked in application that uses them
+#/shard.lock

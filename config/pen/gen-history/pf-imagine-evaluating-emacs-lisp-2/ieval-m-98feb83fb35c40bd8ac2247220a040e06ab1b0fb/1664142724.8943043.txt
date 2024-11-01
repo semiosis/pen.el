@@ -1,0 +1,9 @@
+;; Run function distance-to
+(message (eval '(distance-to "Moon from Earth, in Kilometers")))
+--> "238857"
+
+
+
+;; Run function distance-to
+(message (eval '(distance-to "the moon from earth")))
+--> 

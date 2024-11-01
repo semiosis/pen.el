@@ -1,0 +1,7 @@
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Ps 96:13" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Rev 6:2" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Isa 11:3-5" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Ps 98:9" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Ps 50:6" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Rev 3:14" "#" "<==" "zsh"
+cd /;  "bible-tpop-lookup" "-c" "-m" "KJV" "Rev 3:14" "#" "<==" "zsh"

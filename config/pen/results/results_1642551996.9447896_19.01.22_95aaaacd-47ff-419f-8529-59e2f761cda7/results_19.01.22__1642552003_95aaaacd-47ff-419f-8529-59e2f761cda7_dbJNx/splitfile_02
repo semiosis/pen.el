@@ -1,0 +1,8 @@
+The above code is equivalent to the following:
+
+def member(s, col):
+    for e in col:
+        if e == s:
+            return True
+    return False
+

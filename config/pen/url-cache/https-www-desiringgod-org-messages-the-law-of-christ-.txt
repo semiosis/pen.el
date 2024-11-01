@@ -1,0 +1,630 @@
+HTTP/1.1 200 OK
+Date: Mon, 08 Jan 2024 10:53:04 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1704711184&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=A4OBSKuU6kahoBSEnydnst%2BO7lXMS0XScNTtxU%2FBTCk%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1704711184&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=A4OBSKuU6kahoBSEnydnst%2BO7lXMS0XScNTtxU%2FBTCk%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=2, public
+Etag: W/"3dbe48e70942700b3d951b19837f0fb0"
+Content-Security-Policy: frame-ancestors 'self'
+Set-Cookie: _desiringgod_session=trD3isesg23GN8Jx5BtDJmyRF%2BgD0bIn4VViY8cCQEIR1UYa7Lnn2ulV7tSitKT6pvkU0NZDROPKf8RiQeGzdnv0%2Fq5im%2BoalvFiCG1OM1WKsmZ0ZlD%2BeDYqFEcH4BRhIzM29MXg1mL1OUBybKAkgg1aE8uX%2BKS%2FoO%2B%2FzWDLIrEubeM6Q1XUhaGPZ%2BML%2FIKjV9GJFIZ3l1UOuh9Kr%2BBUeIBExArb1OEJ%2BFxDpD5%2BHby4JMBAAUdI5TC4NcoCMgANVkyS%2B%2Fd85rdv3L8b5kyW%2BD1lbyzU4TdE5MgMjKkJMSw%2BQFluDO7fOqpY0LDN5xdGjQhZpLoHspWQ%2F7ozSRTWAmrRVebQiiRsRCr1pPDFP17XvMohbf3Syds%3D--XvIFfx6gy3p6KH4l--tHFCYq1NcjnN6f9Ccv3U9Q%3D%3D; path=/; expires=Wed, 07 Feb 2024 10:53:04 GMT; secure; HttpOnly
+X-Request-Id: 92238943-2a96-45e9-b193-ef152ecc67a0
+X-Runtime: 0.017699
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8423e5040da750bf-AKL
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+  <head>
+    <title>
+        The Law of Christ | Desiring God
+    </title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport"/>
+    <meta content="DPR, Width, Viewport-Width" http-equiv="Accept-CH" >
+    <meta content="tZIb2aDts_msh2NgAQHPPExGlPxxavHA30DscdTJ6Oc" name="google-site-verification"/>
+    <meta content="7C4kUm-rQ1lSZ6wCFrpMIP-jOcKQ7gAbcOj8maRDIoE" name="google-site-verification"/>
+    <meta content="ef4cefa7bbe488db0cca8f4d6a9be146" name="p:domain_verify"/>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6GypWNeFVDptfuPQrQR+KgqNRqJ2LxCqFE8FzOK/YdM=" />
+
+      <link rel="stylesheet" media="all" href="/dist/application.0f0003c7.css" />
+
+
+    <link rel="canonical" href="/messages/the-law-of-christ" />
+      <meta property="og:site_name" content="Desiring God">
+<meta name="twitter:site" content="@desiringGod">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.desiringgod.org/messages/the-law-of-christ">
+<meta property="og:title" content="The Law of Christ">
+<meta name="twitter:title" content="The Law of Christ">
+
+<meta name="twitter:card" content="summary">
+
+  <meta property="og:updated_time" content="2023-11-09T22:49:09Z">
+
+  <meta property="og:description" content="If we really care about a person&#39;s ultimate welfare, we will confront them with their sin as well as comfort them in their trouble.">
+  <meta name="description" content="If we really care about a person&#39;s ultimate welfare, we will confront them with their sin as well as comfort them in their trouble.">
+  <meta name="twitter:description" content="If we really care about a person&#39;s ultimate welfare, we will confront them with their sin as well as comfort them in their trouble.">
+
+<meta property="article:publisher" content="https://www.facebook.com/DesiringGod">
+  <meta property="article:author" content="https://www.facebook.com/JohnPiper">
+  <meta property="article:published_time" content="1983-08-14">
+  <meta property="article:modified_time" content="2023-11-09T22:49:09Z">
+  <meta property="article:section" content="Sermons">
+
+
+  <meta name="twitter:creator" content="@JohnPiper">
+
+<meta property="og:image" content="https://www.desiringgod.org/assets/2/social/dg_logo_facebook_fallback-1b7a5ed0b26ad75e6bffa6faeb1be2784b7d189a0b13c4d2c7287b4dda2d71ab.png">
+<meta name="twitter:image" content="https://www.desiringgod.org/assets/2/social/dg_logo_facebook_fallback-1b7a5ed0b26ad75e6bffa6faeb1be2784b7d189a0b13c4d2c7287b4dda2d71ab.png">
+
+
+
+      <link href='/assets/2/badges/dg_icon_60x60-e01123da83aba718535ae330a87c24d9675c6a0ebf5ebcdb7f80e35f2f6e051d.png' rel='apple-touch-icon' sizes='60x60'>
+<link href='/assets/2/badges/dg_icon_76x76-ca7f3985f2faf359cbf3facd0f4f7a34ea59c9414eac5a06fefa465439476961.png' rel='apple-touch-icon' sizes='76x76'>
+<link href='/assets/2/badges/dg_icon_120x120-56a737bdb86b1cd8e9a54c187fbb4805f9b213f7324355ede0a04c05a8700181.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='/assets/2/badges/dg_icon_152x152-86eef022b0098acffb7bede4e3b6d4c41078103557c7ba2608c51fd4a6f84edc.png' rel='apple-touch-icon' sizes='152x152'>
+<link href='/assets/2/badges/dg_icon_16x16-23680bf44f694c8697d0f95a535731664c7574a622baf56a2f58d8105efd2483.png' rel='icon' sizes='16x16'>
+<link href='/assets/2/badges/dg_icon_32x32-cee74e20948eb0ca5e513ce106ac66d9f23905ede71e288ef65ec0636dfe2c68.png' rel='icon' sizes='32x32'>
+<link href='/assets/2/badges/dg_icon_60x60-e01123da83aba718535ae330a87c24d9675c6a0ebf5ebcdb7f80e35f2f6e051d.png' rel='icon' sizes='60x60'>
+<link href='/assets/2/badges/dg_icon_76x76-ca7f3985f2faf359cbf3facd0f4f7a34ea59c9414eac5a06fefa465439476961.png' rel='icon' sizes='76x76'>
+<link href='/assets/2/badges/dg_icon_120x120-56a737bdb86b1cd8e9a54c187fbb4805f9b213f7324355ede0a04c05a8700181.png' rel='icon' sizes='120x120'>
+<link href='/assets/2/badges/dg_icon_152x152-86eef022b0098acffb7bede4e3b6d4c41078103557c7ba2608c51fd4a6f84edc.png' rel='icon' sizes='152x152'>
+
+        <script>
+//<![CDATA[
+
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+    analytics.load("KdgX0Gk7WGsQNFIQszpuBU3RO350o6gf");
+    }}();
+
+//]]>
+</script>
+        <script type="text/javascript">
+    window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);
+    ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"4ab5b3e698",applicationID:"2483599",sa:1}
+  </script>
+
+
+    
+
+    <meta content="NOODP" name="robots"/>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  </head>
+
+
+  <body class="ix-set resources show" data-ui-mode="">
+
+    
+
+    
+
+      
+<header class="Header gpu js-header">
+
+  <nav class="Main-Nav gpu" data-segment="header-navigation">
+    <a href="/" class="logo"><div class="svg"><svg width="140px" height="22px" viewbox="0 0 140 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Desiring God Logo</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(1.000000, 1.000000)">
+                <path d="M115.326252,8.93098333 L115.326252,16.3798167 L113.923083,16.3798167 L113.923083,14.96265 L113.878305,14.96265 C113.092947,16.0569833 111.560896,16.5939833 109.858654,16.5939833 C106.367752,16.5939833 103.855367,14.0609833 103.855367,8.63131667 C103.855367,3.20098333 106.367752,0.667483333 109.858654,0.667483333 C112.454152,0.667483333 114.454146,1.91331667 115.390858,5.21765 L113.771894,5.53931667 C113.007521,3.07148333 111.7296,2.12731667 109.943088,2.12731667 C107.687642,2.12731667 105.558931,3.67281667 105.558931,8.63131667 C105.558931,13.58915 107.687642,15.13465 109.943088,15.13465 C112.454152,15.13465 113.624009,13.58915 113.624009,11.7004833 L113.624009,10.3908167 L110.156571,10.3908167 L110.156571,8.93098333 L115.326252,8.93098333 Z M122.519258,16.5939 C119.497125,16.5939 117.987215,14.0185667 117.987215,10.7980667 C117.987215,7.5794 119.497125,5.00356667 122.519258,5.00356667 C125.540233,5.00356667 127.051465,7.5794 127.051465,10.7980667 C127.051465,14.0185667 125.540233,16.5939 122.519258,16.5939 Z M122.519258,6.33356667 C120.689455,6.33356667 119.518275,7.92306667 119.518275,10.7980667 C119.518275,13.6749 120.689455,15.2629 122.519258,15.2629 C124.349226,15.2629 125.517927,13.6749 125.517927,10.7980667 C125.517927,7.92306667 124.349226,6.33356667 122.519258,6.33356667 Z M138,0.88215 L138,13.9334833 C138.010768,14.7479833 137.968634,15.56465 138.095368,16.37915 L136.691043,16.37915 L136.477561,15.2848167 C135.967648,15.99365 134.88206,16.5944833 133.564483,16.5944833 C131.606789,16.5944833 129.030127,15.2634833 129.030127,10.79865 C129.030127,6.46248333 131.606789,5.00298333 133.478726,5.00298333 C134.519867,5.00298333 135.54217,5.53981667 136.393291,6.24865 L136.477561,6.29065 L136.477561,3.35437012 L136.477561,0.88215 L138,0.88215 Z M136.477561,7.87998333 C135.648746,6.95748333 134.606615,6.33448333 133.691052,6.33448333 C131.903384,6.33448333 130.562344,7.51448333 130.562344,10.8849833 C130.562344,13.71815 131.775658,15.2634833 133.691052,15.2634833 C134.671221,15.2634833 135.393129,14.8338167 136.477561,13.7599833 L136.477561,7.87998333 L136.477561,7.87998333 Z" fill="#010201"></path>
+                <path d="M1.85978784,0 C1.17431783,0.554185077 0.551376626,1.18124516 1.66666667e-05,1.8692857 L3.49794215,5.36494042 L0,5.36494042 L0,8 L8.00001667,8 L8.00001667,0 L5.36324537,0 L5.36324537,3.50068059 L1.85978784,0 Z M1.85978784,19 C1.17431783,18.4458149 0.551376626,17.8187548 1.66666667e-05,17.1307143 L3.49794215,13.6350596 L0,13.6350596 L0,11 L8.00001667,11 L8.00001667,19 L5.36324537,19 L5.36324537,15.4993194 L1.85978784,19 Z M17.1402288,0 C17.8256988,0.554185077 18.44864,1.18124516 19,1.8692857 L15.5020745,5.36494042 L19.0000167,5.36494042 L19.0000167,8 L11,8 L11,0 L13.6367713,0 L13.6367713,3.50068059 L17.1402288,0 Z M17.1402288,19 C17.8256988,18.4458149 18.44864,17.8187548 19,17.1307143 L15.5020745,13.6350596 L19.0000167,13.6350596 L19.0000167,11 L11,11 L11,19 L13.6367713,19 L13.6367713,15.4993194 L17.1402288,19 Z M36.93115,0.88215 L36.93115,13.9334833 C36.93115,14.7479833 36.8893167,15.56465 37.0168167,16.37915 L35.60115,16.37915 L35.3858167,15.2848167 C34.8708167,15.99365 33.7764833,16.5944833 32.4449833,16.5944833 C30.4703167,16.5944833 27.87315,15.2634833 27.87315,10.79865 C27.87315,6.46248333 30.4703167,5.00298333 32.3593167,5.00298333 C33.4109833,5.00298333 34.4414833,5.53981667 35.2999833,6.24865 L35.3858167,6.29065 L35.3858167,0.88215 L36.93115,0.88215 Z M35.3858167,7.87998333 C34.54915,6.95748333 33.4974833,6.33448333 32.57465,6.33448333 C30.7713167,6.33448333 29.41865,7.51448333 29.41865,10.8849833 C29.41865,13.71815 30.6424833,15.2634833 32.57465,15.2634833 C33.5613167,15.2634833 34.2914833,14.8338167 35.3858167,13.7599833 L35.3858167,7.87998333 Z M48.6079,13.9965667 C47.8777333,15.2629 46.8472333,16.5945667 44.3155667,16.5945667 C41.8254,16.5945667 39.4640667,14.8767333 39.4640667,10.7985667 C39.4640667,7.19273333 41.2667333,5.0029 44.0140667,5.0029 C46.3322333,5.0029 48.2649,6.5059 48.2649,10.0692333 L48.2649,11.0997333 L41.0094,11.0997333 C41.0094,13.5460667 42.4687333,15.2629 44.3155667,15.2629 C45.6889,15.2629 46.7625667,14.5335667 47.4059,13.3739 L48.6079,13.9965667 Z M46.7194,9.76806667 C46.7194,7.70773333 45.7315667,6.33356667 44.0579,6.33356667 C42.1907333,6.33356667 41.1810667,7.70773333 41.0527333,9.76806667 L46.7194,9.76806667 Z M51.7207,13.54605 C52.4495333,14.5978833 53.5232,15.2628833 54.9192,15.2628833 C56.5922,15.2628833 57.3230333,14.3618833 57.3230333,13.4177167 C57.3230333,10.5847167 50.7120333,12.0862167 50.8402,8.00738333 C50.9040333,6.07655 52.3857,4.98221667 54.5318667,5.00288333 C55.9917,5.02421667 57.6022,5.81871667 58.3530333,6.95688333 L57.2792,7.90105 C56.4208667,6.84938333 55.6055333,6.33455 54.4035333,6.33455 C53.0940333,6.33455 52.3857,6.99888333 52.3857,7.98738333 C52.3857,10.4127167 58.8683667,9.16755 58.8683667,13.33205 C58.8683667,15.5002167 56.9795333,16.59455 54.9610333,16.59455 C53.2235333,16.59455 51.5272,15.8422167 50.4967,14.4682167 L51.7207,13.54605 Z M63.4185,2.51316667 L61.8731667,2.51316667 L61.8731667,0.666833333 L63.4185,0.666833333 L63.4185,2.51316667 Z M61.873,5.21816667 L63.4183333,5.21816667 L63.4183333,16.3798333 L61.873,16.3798333 L61.873,5.21816667 Z M66.9174,5.21816667 L68.4627333,5.21816667 L68.4627333,7.428 L68.5060667,7.428 C69.3639,5.9045 70.2872333,5.04616667 72.1317333,5.04616667 L72.1317333,6.59133333 C70.2022333,6.63533333 69.1929,7.901 68.4627333,10.1975 L68.4627333,16.3791667 L66.9174,16.3791667 L66.9174,5.21816667 Z M76.5341667,2.51316667 L74.9875,2.51316667 L74.9875,0.666833333 L76.5341667,0.666833333 L76.5341667,2.51316667 Z M74.9873333,5.21816667 L76.534,5.21816667 L76.534,16.3798333 L74.9873333,16.3798333 L74.9873333,5.21816667 Z M82.3280333,5.21816667 L82.3280333,6.72116667 L82.3718667,6.72116667 C83.2515333,5.73316667 84.4103667,5.00283333 85.6767,5.00283333 C87.3285333,5.00283333 88.8952,5.86266667 88.8952,8.26666667 L88.8952,16.3791667 L87.3512,16.3791667 L87.3512,8.3085 C87.3512,6.8275 86.6428667,6.33366667 85.5263667,6.33366667 C84.3677,6.33366667 83.0363667,7.2785 82.3280333,8.02933333 L82.3280333,16.3791667 L80.7838667,16.3791667 L80.7838667,5.21816667 L82.3280333,5.21816667 Z M101.3238,6.33455 C100.6808,6.33455 99.9924667,6.44205 99.6056333,6.63421667 C99.9286333,7.02088333 100.3803,7.87988333 100.3803,8.90988333 C100.3803,11.1202167 98.5559667,12.81705 96.3008,12.81705 C95.3998,12.81705 94.9268,12.6877167 94.3263,12.51555 C93.7254667,12.6877167 93.4463,13.05255 93.4463,13.54605 C93.4463,14.06105 93.8106333,14.36205 94.3689667,14.36205 C99.6494667,14.36205 101.346467,15.30555 101.346467,17.49555 C101.346467,19.1263833 99.7346333,20.50005 96.2583,20.50005 C93.1249667,20.50005 91.4504667,19.6413833 91.4504667,17.7963833 C91.4504667,16.68005 92.1388,16.1433833 93.3389667,15.5207167 C92.4816333,15.2628833 91.9436333,14.59805 91.9436333,13.9327167 C91.9436333,12.9667167 92.5893,12.5592167 93.4463,12.02255 C92.3941333,11.22805 91.9224667,10.13355 91.9224667,8.90988333 C91.9224667,6.54988333 93.7693,5.00288333 96.1508,5.00288333 C97.3533,5.00288333 98.1904667,5.26071667 98.9213,5.77705 C99.5858,5.30371667 100.487967,4.87455 101.3238,4.78905 L101.3238,6.33455 Z M96.0218,15.9073833 C93.5979667,15.9073833 92.9096333,16.98005 92.9096333,17.7743833 C92.9096333,18.61155 93.4251333,19.1703833 96.5161333,19.1703833 C98.3619667,19.1703833 99.8648,18.6548833 99.8873,17.56055 C99.8648,16.46505 98.7484667,15.9073833 96.0218,15.9073833 L96.0218,15.9073833 Z M96.0868,6.33455 C94.3263,6.33455 93.3828,7.45055 93.3828,8.90988333 C93.3828,10.3913833 94.5414667,11.4857167 96.2583,11.4857167 C98.0176333,11.4857167 98.9213,10.32705 98.9213,8.99538333 C98.9213,7.36421667 97.9751333,6.33455 96.0868,6.33455 L96.0868,6.33455 Z" fill="#C42026"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+</div></a>
+        <a class="-item" href="/articles">Articles</a>
+        <a class="-item current" href="/messages">Messages</a>
+        <a class="-item" href="/books/all">Books</a>
+        <a class="-item" href="/podcasts">Podcasts</a>
+        <button class="-btn" data-ix="ix-features-nav">Features</button>
+        <a class="-item" href="/about-us">About</a>
+        <a class="-item" data-segment-header-donate="" href="https://give.desiringgod.org">Give</a>
+  </nav>
+
+  <form class="Universal-Search gpu" method="get" action="/search/results" data-segment="header-search-submit" accept-charset="UTF-8">
+  <input name="utf8" type="hidden" value="✓">
+  <input class="universal-search__input js-universal-search-input" type="search" name="q" placeholder="Search 15,538 resources" autocomplete="off">
+</form>
+
+  <button class="Search-Btn gpu" data-ix="ix-universal-search" data-segment="header-search-trigger"></button>
+  <button class="Menu-Drawer-Btn gpu" data-ix="ix-menu-drawer" data-segment="menu-drawer-trigger"></button>
+
+</header>
+
+<div class="Features-Nav gpu">
+  <nav class="-features-nav" data-segment="header-navigation">
+        <a href="/ask-pastor-john">
+      <h3>Ask Pastor John</h3>
+      <p>Questions and answers with John Piper</p>
+    </a>
+    <a href="/labs">
+      <h3>Look at the Book</h3>
+      <p>Interactive Bible study with John Piper</p>
+    </a>
+    <a href="/solid-joys">
+      <h3>Solid Joys</h3>
+      <p>Daily devotional with John Piper</p>
+    </a>
+    <a href="/light-and-truth">
+      <h3>Light + Truth</h3>
+      <p>Classic sermons from John Piper</p>
+    </a>
+
+  </nav>
+</div>
+
+<div class="Menu-Drawer gpu" data-segment="main-menu-navigation">
+
+  <button class="-close-btn" data-ix="ix-menu-drawer" data-segment="menu-drawer-trigger">
+  </button>
+
+  <div class="-scroll-wrapper js-menu-drawer-scroll-wrapper">
+    <nav class="-main-menu">
+      <a class="-item" href="/articles">Articles</a>
+      <a class="-item current" href="/messages">Messages</a>
+      <a class="-item" href="/books/all">Books</a>
+      <a class="-item" href="/podcasts">Podcasts</a>
+
+  <a href="/resources/all" class="-filter-link">Filter Resources By</a>
+</nav>
+
+<nav class="-features-nav" data-segment="main-menu-navigation">
+      <a href="/ask-pastor-john">
+      <h3>Ask Pastor John</h3>
+      <p>Questions and answers with John Piper</p>
+    </a>
+    <a href="/labs">
+      <h3>Look at the Book</h3>
+      <p>Interactive Bible study with John Piper</p>
+    </a>
+    <a href="/solid-joys">
+      <h3>Solid Joys</h3>
+      <p>Daily devotional with John Piper</p>
+    </a>
+    <a href="/light-and-truth">
+      <h3>Light + Truth</h3>
+      <p>Classic sermons from John Piper</p>
+    </a>
+
+</nav>
+
+<div class="-about">
+  <p>Most people in the world have no experience of lasting joy in their lives. We’re on a mission to change that. All of our resources exist to guide you toward everlasting joy in Jesus Christ.</p>
+
+  <nav class="-actions">
+    <a href="/about-us">About</a>
+    <a href="https://account.desiringgod.org">Account</a>
+    <a href="https://give.desiringgod.org">Give</a>
+  </nav>
+</div>
+
+  </div>
+</div>
+
+
+<div class="Click-Off-Overlay gpu" data-ix=""></div>
+
+
+        <div class="Series-Drawer gpu js-series-drawer">
+      <img class="spinner js-series-drawer-spinner" style="display:none;" src="/assets/2/drawer_spinner-7a6f859719a6b1b6a77034a6f85d9f77600e299faf3e547dbee77b34372fface.gif" width="30" height="30" />
+    </div>
+
+
+    <div class="page-background gpu">
+      
+      
+
+<main class="resource" data-page-type="resource" role="main">
+  <div class='featured-top'>
+
+<div class='media-player no-reftagger'>
+<div class='audio-player constrain' id='full-audio'>
+<div class='audio-player__title'>
+The Law of Christ
+</div>
+<audio src="https://api.spreaker.com/v2/episodes/10830430/download.mp3" type="audio/mpeg" controls="controls" preload="none" style="width: 100%" />
+</div>
+</div>
+<ul class='media-menu js-media-menu'>
+<li class='media-menu__item media-menu__item--download js-download'>
+<div class='inner'>
+<a class='media-menu__link media-menu__link--download' href='#'>
+<div class="svg"><svg width="20" height="20" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Download</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#333333">
+            <path d="M11,13 L16,13 L17,13 L17,2 L4,2 L4,13 L10,13 L10,16.8810001 L7.254,14.1390001 L6.5,14.8950001 L10.492,18.8800001 L10.869,18.5040001 L14.486,14.8950001 L13.732,14.1390001 L11,16.8670001 L11,13 L11,13 L11,13 Z M10,12 L5,12 L5,3 L16,3 L16,12 L11,12 L11,5.99700011 L10,5.99700011 L10,12 L10,12 L10,12 Z" fill="#fff"></path>
+        </g>
+    </g>
+</svg>
+</div>
+<span>Download</span>
+</a>
+<ul class='media-menu--sub'>
+<li class='media-menu__item--sub'>
+<a class="media-menu__link" rel="nofollow" href="https://api.spreaker.com/v2/episodes/10830430/download.mp3">Audio (MP3)</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+  <script class="no-reftagger">
+  window.dg = window.dg || {};
+  window.dg.resource_metadata = {"resource-id":"1fs6rvxr","resource-type":"Messages","resource-date":"1983-08-14 15:00:00","resource-topics":["Fellowship \u0026 Hospitality"],"resource-authors":["John Piper"],"resource-collections":["Bethlehem Sermons","Messages by Desiring God"],"resource-scriptures":["Galatians 6:1–5"],"resource-series":"Galatians: Broken by His Cross, Healed by His Spirit","resource-word-count":3511};
+</script>
+
+  <div class='resource__wrapper'>
+<header class='resource__header'>
+<time class='resource__date' datetime='1983-08-14'>August 14, 1983</time>
+<h1 class='resource__title'>
+The Law of&nbsp;Christ
+</h1>
+<h2 class='resource__subtitle'>
+Bearing Each Other's Burdens
+</h2>
+<div class='resource__meta'>
+<ul>
+<li class='js-ga-authors' data-authors='john-piper' id='authors'>
+Resource by 
+<div class="resource__author js-modal-author-origin " id="modal-346-kjo7nmaz"><span>John Piper</span><div class="svg"><svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Modal</title>
+    <g stroke="none" fill="#333333" stroke-width="1" fill-rule="evenodd">
+      <path d="M6,6 L3,6 L3,7 L6,7 L6,13 L7,13 L7,7 L13,7 L13,6 L7,6 L7,4 L6,4 L6,6 Z M14,13 L14,6 L13,6 L13,13 L6,13 L6,14 L13,14 L13,16 L14,16 L14,14 L17,14 L17,13 L14,13 Z M3,16 L14,16 L14,17 L3,17 L3,16 Z M3,7 L4,7 L4,16 L3,16 L3,7 Z M6,3 L16,3 L16,4 L6,4 L6,3 Z M16,3 L17,3 L17,13 L16,13 L16,3 Z" fill="#aaa"></path>
+    </g>
+</svg>
+</div><div class='modal -author js-modal' data-id='modal-346-kjo7nmaz'>
+<a class='modal__close js-modal-close' href='javascript:;'>
+<div class="svg"><svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-close">
+    <title>Close</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#2E2E2C">
+            <path d="M16.1214739,4 L10.5004969,9.62097699 L4.87852611,4 L4,4.87852611 L9.6219708,10.4995031 L4,16.1214739 L4.87852611,17 L10.5004969,11.3780292 L16.1214739,17 L17,16.1214739 L11.379023,10.4995031 L17,4.87852611 L16.1214739,4 Z"></path>
+        </g>
+    </g>
+</svg>
+</div>
+<span class='visually-hidden'>Close</span>
+</a>
+<div class='modal__author-container js-modal-author-container'>
+<div class='card--author'>
+<div class='card--author__inner'>
+<div class='grid-m-3 grid-l-6'>
+<a href="/authors/john-piper"><div class='card--author__image'>
+<img alt="John Piper Photo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://dg.imgix.net/john-piper-t1zc1vhs-en/square/john-piper-t1zc1vhs-bb4f7ebdfa75335bd1534e50dc3bbc7c.jpg?ts=1549038789&amp;ixlib=rails-4.3.1&amp;auto=format%2Ccompress&amp;fit=min&amp;w=120&amp;h=120&amp;dpr=2&amp;ch=Width%2CDPR" class=" lazyload">
+</div>
+</a><h3 class='card--author__name'>
+John Piper
+<a class="card--author__twitter" href="https://twitter.com/JohnPiper"><div class="svg"><svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Twitter</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#333333">
+            <path d="M19,4.83999195 C18.8731929,4.99666575 18.739174,5.1662929 18.5997463,5.3488734 C18.4597175,5.53145389 18.313679,5.70108104 18.1610297,5.85775484 C18.0083804,6.01381182 17.8431104,6.17048562 17.6652199,6.32715943 C17.4873293,6.48383323 17.3094387,6.62755369 17.1315482,6.75770397 L17.1315482,6.87551774 C17.1315482,6.90142443 17.137558,6.94028447 17.1501786,6.99271468 C17.1634002,7.04514489 17.16941,7.08400492 17.16941,7.10991162 L17.16941,7.26658542 C17.16941,8.4928355 16.940436,9.75239419 16.483089,11.0440278 C16.0251411,12.3356615 15.3514407,13.4903597 14.4619879,14.5075058 C13.5719342,15.5252687 12.4727388,16.3672362 11.1631999,17.0321746 C9.85366098,17.6977299 8.3602217,18.0172457 6.68228106,17.991339 C6.14800841,18.0172457 5.63356816,17.9851708 5.13775834,17.8932637 C4.64194852,17.8019734 4.15214851,17.6915616 3.66956028,17.5607945 C3.18637107,17.4306442 2.72842309,17.254232 2.29631732,17.0321746 C1.86421155,16.8107341 1.43210577,16.5825084 1,16.3474977 C1.07632466,16.3215911 1.15264933,16.314806 1.22897399,16.3277593 C1.30469767,16.3407127 1.38102234,16.3474977 1.457347,16.3474977 C1.53367166,16.3474977 1.60999633,16.353666 1.68632099,16.3672362 C1.76264565,16.3801895 1.83897032,16.3734044 1.91529498,16.3474977 C2.34740075,16.3734044 2.76688591,16.3407127 3.17375046,16.2494224 C3.580615,16.1581322 3.97425795,16.0538886 4.35588127,15.9366916 C4.73690361,15.8188779 5.10590631,15.6492507 5.46168742,15.4278102 C5.81746853,15.2057528 6.16062903,14.9904806 6.49116891,14.7819934 C6.08490535,14.7295632 5.69667123,14.645058 5.32826951,14.5272442 C4.95986778,14.4100473 4.6227171,14.2274668 4.31741845,13.9795027 C4.01272078,13.7315387 3.75189476,13.4576679 3.53614237,13.1572737 C3.31978899,12.8574963 3.14790825,12.4985035 3.02110113,12.0809123 C3.07218457,12.1333425 3.12927782,12.1592492 3.19238089,12.1592492 C3.25608494,12.1592492 3.31978899,12.1660343 3.38349304,12.1789877 C3.44659611,12.191941 3.50429034,12.191941 3.5547728,12.1789877 C3.60585623,12.1660343 3.65693967,12.1722026 3.70742212,12.1987261 C3.80898801,12.1722026 3.89793329,12.1660343 3.97425795,12.1789877 C4.05058262,12.191941 4.13351808,12.1851559 4.22246336,12.1592492 C4.31140863,12.1333425 4.39374311,12.1203892 4.47006778,12.1203892 C4.54639244,12.1203892 4.6227171,12.0938657 4.69904177,12.0420523 C4.266936,11.9637154 3.87269206,11.8070416 3.51691095,11.5720309 C3.16112985,11.3370202 2.84922039,11.0631494 2.58238456,10.7504186 C2.31554873,10.437071 2.10580615,10.0719101 1.95315682,9.65431885 C1.8005075,9.23672765 1.72418283,8.80618311 1.72418283,8.36268522 L1.72418283,8.34294678 C1.72418283,8.35590013 1.72418283,8.34973187 1.72418283,8.32320835 L1.72418283,8.30408675 C1.72418283,8.31704009 1.72418283,8.31025501 1.72418283,8.28434831 C1.85159093,8.38859191 1.98500885,8.46076055 2.12503756,8.49962059 C2.26446529,8.53848062 2.40449401,8.58412575 2.54452272,8.63655596 C2.68395045,8.68898617 2.82397917,8.72167795 2.96400788,8.73463129 C3.10343561,8.74758464 3.25007512,8.76732307 3.40212347,8.79322976 C3.14790825,8.58412575 2.92554506,8.37563856 2.73503389,8.16715137 C2.54452272,7.95804736 2.37264198,7.71008331 2.21999265,7.42325922 C2.06794431,7.13643513 1.95315682,6.84899422 1.87683216,6.56217013 C1.8005075,6.27534604 1.76264565,5.94904509 1.76264565,5.5838841 C1.76264565,5.45311699 1.77526627,5.29644319 1.8005075,5.11386269 C1.8263497,4.9312822 1.85760075,4.76844013 1.89606357,4.62471968 C1.93452639,4.48099922 1.98500885,4.32432542 2.0487129,4.15469827 C2.11241695,3.98507112 2.18213081,3.84813575 2.25845548,3.74389215 C2.71580248,4.29225046 3.22423291,4.80730017 3.78374679,5.29027493 C4.34326066,5.77263286 4.94724717,6.17727071 5.59510534,6.50357166 C6.24356449,6.82987261 6.92387566,7.09695827 7.63543788,7.30606228 C8.34760108,7.51454947 9.08500551,7.63174641 9.84765116,7.65826993 C9.84765116,7.60583972 9.84104037,7.54045616 9.82841975,7.46211926 C9.81579914,7.38439919 9.80257754,7.31223054 9.78995693,7.24684699 C9.77733632,7.18208026 9.7713265,7.10991162 9.7713265,7.03157471 L9.7713265,6.83604087 C9.7713265,6.28829939 9.86628159,5.79237129 10.0573937,5.3488734 C10.2479049,4.9053755 10.5087309,4.50073765 10.8386698,4.13557666 C11.1692097,3.76979884 11.5634536,3.4959281 12.0214016,3.31334761 C12.4787486,3.13076711 12.9619378,3.02652352 13.4703683,3 C13.7245835,3.02652352 13.9787987,3.0592153 14.2330139,3.09807533 C14.4872291,3.13693537 14.7288237,3.21527227 14.9577977,3.33308604 C15.1861707,3.45028298 15.4025241,3.58105009 15.6056559,3.72415372 C15.8093887,3.86787418 15.9872792,4.04428641 16.1399285,4.2527736 C16.3430603,4.1744367 16.5467931,4.10905314 16.7499249,4.05723976 C16.9536576,4.00480955 17.1567894,3.93942599 17.3599212,3.86108909 C17.563654,3.78336902 17.7541651,3.69824703 17.9320557,3.60695678 C18.1099462,3.51566653 18.2878368,3.40463785 18.4663283,3.27448757 C18.4152449,3.53540497 18.3323094,3.7568455 18.2181229,3.93942599 C18.1039364,4.12200649 17.9831391,4.31137207 17.855731,4.50752274 C17.7289239,4.70305658 17.5762746,4.86589864 17.398384,4.99666575 C17.2204935,5.12681604 17.0426029,5.27053649 16.8641114,5.4272103 C17.0426029,5.37478009 17.2265033,5.33592005 17.4176154,5.30939653 C17.6081266,5.28348984 17.792628,5.23784472 17.9705185,5.17246116 C18.1484091,5.1070776 18.3196888,5.04847914 18.4849588,4.99666575 C18.6502287,4.94423554 18.8221094,4.87885199 19,4.80051508 L19,4.83999195"></path>
+        </g>
+    </g>
+</svg>
+</div>
+<span>@JohnPiper</span>
+</a></h3>
+<div class='card--author__bio'>
+John Piper is founder and teacher of desiringGod.org and chancellor of Bethlehem College &amp; Seminary. For 33 years, he served as pastor of Bethlehem Baptist Church, Minneapolis, Minnesota. He is author of <a href="https://www.desiringgod.org/books">more than 50 books</a>, including <a href="https://www.desiringgod.org/books/desiring-god"><em>Desiring God: Meditations of a Christian Hedonist</em></a> and most recently <a href="https://www.desiringgod.org/books/foundations-for-lifelong-learning"><em>Foundations for Lifelong Learning: Education in Serious Joy</em></a>.
+</div>
+</div>
+<div class='grid-m-3 grid-l-6'>
+<div class='card--author__recent-articles'>
+<div class='resource-list resource-list--card-space'>
+<div class='resource-list-item'>
+<a class="resource-list-item__inner" href="/labs/my-signature-my-chains-my-blessing"><h2 class='resource-list-item__title'>My Signature. My Chains. My Blessing.</h2>
+<span class='resource-list-item__data'>
+John Piper
+</span>
+<span class='resource-list-item__data'>
+Dec 8, 2023
+</span>
+</a></div>
+<div class='resource-list-item'>
+<a class="resource-list-item__inner" href="/light-and-truth/living-as-gods-chosen-people/living-as-free-people"><h2 class='resource-list-item__title'>Living as Free People</h2>
+<span class='resource-list-item__data'>
+John Piper
+</span>
+<span class='resource-list-item__data'>
+Dec 8, 2023
+</span>
+</a></div>
+<div class='resource-list-item'>
+<a class="resource-list-item__inner" href="/light-and-truth/living-as-gods-chosen-people/waging-war-against-fleshly-lusts"><h2 class='resource-list-item__title'>Waging War Against Fleshly Lusts</h2>
+<span class='resource-list-item__data'>
+John Piper
+</span>
+<span class='resource-list-item__data'>
+Dec 7, 2023
+</span>
+</a></div>
+<div class='resource-list-item'>
+<a class="resource-list-item__inner" href="/interviews/make-your-life-count-twelve-rules-for-teens"><h2 class='resource-list-item__title'>Make Your Life Count: Twelve Rules for Teens</h2>
+<span class='resource-list-item__data'>
+John Piper
+</span>
+<span class='resource-list-item__data'>
+Dec 7, 2023
+</span>
+</a></div>
+<div class='resource-list-item'>
+<a class="resource-list-item__inner" href="/light-and-truth/living-as-gods-chosen-people/proclaiming-the-excellencies-of-god"><h2 class='resource-list-item__title'>Proclaiming the Excellencies of God</h2>
+<span class='resource-list-item__data'>
+John Piper
+</span>
+<span class='resource-list-item__data'>
+Dec 6, 2023
+</span>
+</a></div>
+<div class='resource-list-item'>
+<a class="resource-list-item__inner" href="/light-and-truth/living-as-gods-chosen-people/offering-spiritual-sacrifices"><h2 class='resource-list-item__title'>Offering Spiritual Sacrifices</h2>
+<span class='resource-list-item__data'>
+John Piper
+</span>
+<span class='resource-list-item__data'>
+Dec 5, 2023
+</span>
+</a></div>
+
+</div>
+</div>
+</div>
+</div>
+<a class="card__cta-button modal__cta js-modal-cta" href="/authors/john-piper"><span>More by this author</span>
+<div class="svg"><svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#333333">
+            <path d="M12.5150732,6.35018478 C12.3229538,6.15543439 12.3232472,5.83997845 12.5157285,5.64559421 C12.7082098,5.45120998 13.0199903,5.45150681 13.2121097,5.6462572 L17.6528114,10.1477717 L18,10.4997148 L17.6528319,10.8516786 L13.2121302,15.3537221 C13.0200221,15.5484839 12.7082416,15.5487993 12.515749,15.3544265 C12.3232564,15.1600537 12.3229447,14.8445977 12.5150528,14.6498359 L16,11 L2,11 L2,10 L16,10 L12.5150732,6.35018478 L12.5150732,6.35018478 L12.5150732,6.35018478 Z"></path>
+        </g>
+    </g>
+</svg>
+</div>
+</a></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+Scripture:
+<a href="/scripture/galatians/6/messages">Galatians 6:1–5</a>
+&nbsp;&nbsp;
+Topic: 
+<a href="/topics/fellowship-and-hospitality">Fellowship &amp; Hospitality</a>
+</li>
+</ul>
+</div>
+
+</header>
+<div class='resource__content-row resource__content-row--abdg'>
+<div
+  class="subscribe-cta"
+  data-segment-context="Subscribe CTA"
+  
+  >
+  <div class="subscribe-cta__options-wrapper">
+    <h3>Subscribe</h3>
+    <div class="subscribe-cta__options">
+        <a target="_blank" rel="noopener noreferrer" data-segment="subscribe-outbound-click" data-segment-meta="Apple" href="https://itunes.apple.com/us/podcast/john-piper-messages-audio/id196050704">Apple</a>
+        <a target="_blank" rel="noopener noreferrer" data-segment="subscribe-outbound-click" data-segment-meta="Spotify" href="https://open.spotify.com/show/7uG272T6smri7v7ebi7jqG?si=MKpKmuygTHaKcms1gxyXjA">Spotify</a>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class='resource__body'>
+<p><p>Who is in danger in this passage of Scripture? According to verse 1 somebody has been overtaken in a trespass. Somebody&#39;s sin has come to light. He was caught spending the weekend with another woman. Her lie to the welfare people has been detected. His tax evasion was discovered. The source of the rumor has been found. Her constant belittling of her husband has spread for all to see. There is transgression in the church and people know about it. Who is in danger? Whom does Paul spend five verses warning about what might happen to them in this situation of discovery and restoration. The one who has fallen? Or the one who is about to help him stand? Every verse but one has a big yellow light flashing: Caution! Caution! And the message of warning is directed not to the one who has fallen, but to those who aim to help him.</p> <h2 id="the-virus-of-self-reliance" data-linkify="true">The Virus of Self-Reliance </h2><p>Someone asked me back in the spring, after I had preached several months from Galatians, why I was so preoccupied (even &quot;obsessed&quot;) with the issue of self-reliance and self-exaltation. I&#39;ve thought a lot about whether this is a theological hobbyhorse of mine, or whether it is the black thread woven through this book which Paul himself belabors. A text like today&#39;s is a strong confirmation to me that I am not weaving more black into the tapestry of my sermons than Paul did into his letter. If a doctor is going to address his medical students on the manifold diseases caused by a certain virus, he will refer very often (perhaps in every lecture) to that one virus.</p> <p>Pride, or self-exaltation, or self-reliance is the one virus that causes all the moral diseases of the world. This has been the case ever since Adam and Eve ate of the tree of the knowledge of good and evil because they wanted to be God instead of trust God. And it will be true until the final outburst of human pride is crushed at the battle of Armageddon. There is only one basic moral issue: how to overcome the relentless urge of the human heart to assert itself against the authority and grace of God. Why else would Paul write to spiritual people to bear the burdens of others and then spend most of the paragraph warning the spiritual people against the danger of their own pride?</p> <p>One other word before we look at how Paul does that. Paul described his pastoral labors in 2 Corinthians 1:24 like this: &quot;Not that we lord it over your faith, but we work with you <em>for your joy</em>.&quot; When Paul writes Galatians 6:1&ndash;5 and when I preach Galatians 6:1&ndash;5, our aim is your joy. The battle against pride and self-exaltation in our hearts is a battle for joy. What will keep the clear breezes of joy and peace and goodness blowing through the Bethlehem family? We will keep the windows of our fellowship open to the Spirit of joy by recognizing and doing battle with the window-slamming forces of self-sufficiency in our lives.</p> <blockquote><p>The Wind of joy will blow most clean<br /> When you and I have felt and seen<br /> That <em>sin</em> keeps joy from being wide<br /> And every sin takes root in pride.</p></blockquote> <h2 id="burden-bearing-and-the-law-of-christ" data-linkify="true">Burden-Bearing and the Law of Christ </h2><p>The main point of Galatians 6:1&ndash;5 is given in a general way in verse 2 and a specific way in verse 1. Verse 2: &quot;Bear one another&#39;s burdens, and so fulfill the law of Christ.&quot; If a Christian brother or sister is weighed down or menaced by some burden or threat, be alert to that and quickly do something to help. Don&#39;t let them be crushed. Don&#39;t let them be destroyed. Don&#39;t be like the scribes and Pharisees. Jesus said, &quot;They bind heavy burdens hard to bear and lay them on men&#39;s shoulders; but they themselves will not move them with their finger&quot; (Matthew 23:4). Don&#39;t increase burdens. Make them lighter for people. Some of you wonder what you are supposed to do with your life. Here is a vocation that will bring you more satisfaction than if you became a millionaire ten times over: Develop the extraordinary skill for detecting the burdens of others and devote yourself daily to making them lighter.</p> <p>In this way you fulfill the <em>law of Christ</em> (6:2). That&#39;s an odd phrase in a book that says (5:18): &quot;If you are led by the Spirit you are <em>not</em> under the law.&quot; And (3:13): &quot;Christ redeemed us from the curse of the law.&quot; Have we been freed from the curse and burden of the Mosaic law just to be burdened down with a more radical law of Christ? No. The difference is that Moses gave us a law but could not change our hearts so that we would freely obey. Our pride and rebellion was not conquered by Moses. But when Christ summons us to obey his law of love, he offers us himself to slay the dragon of our pride, change our hearts, empower us by his Spirit, and fulfill his law. </p> <p>That is why, even though Christ&#39;s law is more radical than the righteousness of the scribes and Pharisees, he can say, &quot;Come to me, all who labor and are heavy-laden, and I will give you rest. Take my yoke upon you and learn from me; for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light&quot; (Matthew 11:28&ndash;30). The law of Christ is not easy because it&#39;s greasy, or permissive. It is easy because when we are weak, he is strong. It&#39;s easy because he produces the fruit of love: &quot;I am crucified with Christ, it is no longer I who live, but Christ who lives in me&quot; (2:20). Christ never commands us to do anything that he wants us to do on our own. Therefore, every command in the law of Christ is a call to faith. Through <em>faith</em> God supplies the Spirit of Christ (Galatians 3:5); through the <em>Spirit</em> we produce the fruit of love (5:22); through <em>love</em> we fulfill the <em>law</em> of Christ (6:2). Therefore, if you <em>trust</em> him, you will fulfill his law of love. You will devote yourself to lifting the burdens of others.</p> <h2 id="the-burden-of-trespasses" data-linkify="true">The Burden of Trespasses </h2><p>That is the main point given in a general way in verse 2: bear each other&#39;s burdens. But in verse 1 Paul had given one specific kind of burden and how to help a person bear it. &quot;Brethren, if a man is overtaken in any trespass, you who are spiritual should restore him in a spirit of gentleness (or meekness).&quot; We tend to think of burdens as sickness, unemployment, loss of a loved one, loneliness, rejection, etc., and the people who bear them as victims. That is right. And if we are full of Christ, we will be about the business of bearing those burdens. But Paul shows us in verse 1 that burdens include trespasses, and those oppressed include culprits. We should probably define a burden, then, as anything that threatens to crush the joy of our faith&mdash;whether a tragedy that threatens to make us doubt God&#39;s goodness, or a sin that threatens to drag us into guilt and judgment.</p> <p>A person who is sinning needs our help. Paul says, &quot;Restore him.&quot; The word means, make things right. It&#39;s used for repairing nets that are torn (Matthew 4:21). Sin is a breakdown in the machinery of our life. It has to be repaired. If you find someone with a breakdown, do what you need to do in order to restore the person to good, godly running condition. In other words, nobody who lives by the law of Christ and in the power of Christ can say about a brother&#39;s or sister&#39;s sin: &quot;That&#39;s not my business. I don&#39;t have to add that to my burdens. It&#39;s his problem, not mine.&quot;</p> <p>But I have been around Bethlehem long enough to learn that that is exactly the attitude of some of you toward sin in the church. I know of some attitudes and behaviors in this church that are so clearly contrary to the Word of Christ they should have been confronted and repaired long ago by some of you. But, for whatever reason, an atmosphere of silence and neglect has been cultivated&mdash;not forgiveness, mind you, for behind closed doors those sins are talked about aplenty. It may take us a long time, but I pray that we can continue to cultivate an atmosphere at Bethlehem where love is so great that we take the <em>breakdown</em> of sin seriously and serve each other as merciful mechanics.</p> <p>Ultimately, only Christ can forgive and repair the breakdown of sin. Primarily, therefore, our job is to admonish or rebuke or warn each other about attitudes and habits and plans which are wrong, and then point each other to the Great Mechanic who can fix any broken-down jalopy.</p> <p>That&#39;s the main point of the passage, then: Bear each other&#39;s burdens; specifically, take on the trouble of helping people realize their sin and get it repaired. If it seems easy for you to help a person bear the burden of sickness, or unemployment, or loss of a loved one, or loneliness, or rejection, but too hard for you to bear the burden of confronting a person because of sin, meditate on this thought: a sinful attitude or a sinful habit is much more harmful to a person than any of those other burdens. Therefore, if we really care about a person&#39;s ultimate welfare, we will confront them with their sin as well as comfort them in their trouble. Wouldn&#39;t it be great to belong to a family of believers who loved each other so much that they simply could not look the other way while a brother or sister hardens into a habit of sin! Let&#39;s be that family! If we are not, we do not fulfill the law of Christ.</p> <h2>The Danger of Pride<br /></h2><p>Now, having made that main point, everything else in Galatians 6:1&ndash;5 is a warning against the danger of pride in those of us who take on the burden of correcting and restoring a fellow believer. Attention! It is not a warning against correcting and admonishing and restoring a person; it is a warning against doing it arrogantly. Unlike some of us, Paul will not throw out the baby of confrontation with the bath water of pride. Paul does not say, &quot;You are <em>all</em> proud  and sinful; therefore you have no business pointing out anyone else&#39;s sin.&quot; He says, &quot;Since you all struggle with pride, therefore make every effort to humble yourself when you point out someone else&#39;s sin.&quot; The dirty bath water of pride must go. <em>But</em> the clean and healthy baby of loving, humble confrontation must stay.</p> <p>So I assume that from here on out those of you who belong to Christ and long to follow his law of love will seek to bear each other&#39;s burdens and especially to correct and admonish each other about sins in each other&#39;s lives. So let&#39;s spend the rest of our time listening to Paul&#39;s instructions how to knock the legs out from under the ladder of our pride.</p> <p>In verse 1 he says that you should be &quot;spiritual&quot; before you take on the burden of confrontation. That simply means that you should be &quot;led by the Spirit&quot; (5:18), &quot;walking by the Spirit&quot; (5:16, 25), &quot;bearing the fruit of the Spirit&quot; (5:22). It is not a reference to upper-echelon Christianity, but normal Spirit-filled Christianity. Spiritual people are ordinary people relying on an extraordinary Spirit who produces through them love, joy, peace, patience, kindness, goodness, faithfulness, gentleness (or meekness). And there&#39;s the link between 5:22 and 6:1&mdash;gentleness (meekness). &quot;You who are spiritual restore him in a spirit of gentleness.&quot; The way to avoid pride as you confront a brother about his sin is to act only in the power of the Spirit. Look to yourself lest you fall prey to the temptation to rely on yourself, or exalt yourself. Remember you are a basket case of sin apart from God&#39;s gracious Spirit. Therefore, total reliance on him produces gentleness or meekness, and meekness is the twin sister of humility which is the opposite of pride and boasting.</p> <p>Paul said in 1 Corinthians 4:7, &quot;What do you have that you did not receive? And if you received it, why do you boast as though it were not a gift?&quot; Which implies that if you are trusting in the Spirit of God for the gift of guidance and power to love, you cannot boast or be arrogant about the maturity you have attained. It is all of God. Examine yourself, Paul says, to see if you are relying on the Spirit in meekness like a needy child, or whether you are puffed up with self-reliance. The spiritual person will help the erring brother or sister by pointing only to Christ where there is healing. The proud person will not help, because attention will be drawn to himself where there is no healing at all.</p> <h2 id="assertive-pride-and-timid-pride" data-linkify="true">Assertive Pride and Timid Pride </h2><p>Verse 3 is the most radical attack on pride in the passage, and it is given as a ground or basis for the meekness with which we bear the burden of loving confrontation: &quot;<em>For</em> if anyone thinks he is something, when he is nothing, he deceives himself.&quot; Paul&#39;s assessment of why people won&#39;t confront a brother taken in sin or why people do it without meekness is just the opposite of the 20th century assessment. If you don&#39;t have enough so-called assertiveness to confront someone, or if you do, but act arrogantly, most contemporary preachers and counselors (Christian and non-Christian) will tell you that your problem is lack of self-esteem. Paul says that your problem is that you think you are something, when in fact you are nothing.</p> <p>Someone may say, &quot;Oh, no. The reason I don&#39;t confront people is because I&#39;m afraid, not because I&#39;m proud.&quot; Listen to the Word of the Lord from Isaiah 51:12, 13, &quot;I, I am he that comforts you; who are you that you are afraid of man who dies, of the son of man who is made like grass, and have forgotten the Lord your Maker who stretched out the heavens?&quot; Who do you think you are to be afraid of mere man, when I am your God and have infinite power? The fear of man may feel humble, but it is rooted in pride, says the Lord. So the Word of God remains: our failure to fulfill the law of Christ is because we think we are something, when we are nothing.</p> <p>Paul is speaking morally here, not physically. Of course we exist, and in that sense we are something. What he means is that apart from the special grace of God in us we amount to a moral zero because of our sinfulness. &quot;There dwells in me, that is in my flesh, no good thing,&quot; Paul said in Romans 7:18. &quot;Apart from me you can do nothing,&quot; Jesus said in John 15:5. Again in 1 Corinthians 3:7 Paul says, &quot;Neither he who plants nor he who waters is anything, but only God who gives the growth.&quot; (Cf. also 2 Corinthians 3:5; Romans 15:17, 18; 1 Corinthians 13:2; 15:10.) As far as moral capacities are concerned, man without Christ can only say one thing honestly: I am nothing; God be merciful to me, a sinner.</p> <p>But then when God is merciful and Christ enters our life and enables us to love, we ought not to start talking about self-esteem but Christ-esteem. &quot;I am crucified with Christ, it is no longer I who live, but Christ lives in me&quot; (2:20). What we need to break out of the shackles of our <em>assertive</em> pride and our <em>timid</em> pride is not the bolstering of self-esteem, but a radical confidence in the incomparable Christ who came into the world to save utterly unworthy sinners! When you are looking wholly to Christ for your forgiveness, guidance, love, and joy, the sinner you admonish and restore will know you do not come in the spirit of pride.</p> <h2 id="testing-one-39-s-own-work" data-linkify="true">Testing One&#39;s Own Work </h2><p>Finally, in verses 4 and 5 Paul says, &quot;Let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each man will have to bear his own load.&quot; Verse 5 sounds just the opposite of verse 2 where we are to bear <em>each other&#39;s</em> burdens. And verse 4 sounds just the opposite of verse 3: are we or are we not supposed to boast in ourselves?</p> <p>Briefly, here is what I think these verses mean. Verse 4 means: in measuring the value of your own achievement, do not take the work of others as your standard of measurement. Don&#39;t get puffed up because a brother falls lower than you. Our pride loves to see people fall when <em>we</em> have stood. Paul says, stop feeding your pride by comparing yourself with those who sin. Don&#39;t measure your moral achievements by those of others; measure them, test them, by the laws of Christ. Then whatever there is in you to boast about will not be owing to another&#39;s inferiority.</p> <p>But can we boast of anything in ourselves? Ten verses later Paul says (6:14), &quot;Far be it from me to boast (same word as in v. 4) except in the cross of our Lord Jesus Christ.&quot; And in 1 Corinthians 1:31 he said, &quot;Let him who boasts boast in the Lord.&quot; And in Romans 15:17, 18, &quot;In Christ Jesus I have a reason for boasting in things pertaining to God. For I will not presume to speak of anything except what Christ has accomplished through me.&quot; The cross of Christ and the work of his Spirit in our hearts evaporate all the pride out of our boasting; the cross and the Spirit orient all boasting on the grace of God (1 Corinthians 15:10) and transform it into joyful exaltation in what God is merciful to do through us.</p> <p>Verse 5 is not a contradiction of verse 2. (&quot;For each man will have to bear his own load.&quot;) It is given as a ground for verse 4 (&quot;for&quot;). I think it means: Don&#39;t ever try to lighten the load of your own sin by comparing yourself to a failing brother or sister. Why? Because you are going to bear your own load in the judgment. When the final assessment comes and we are all measured by the law of Christ, no one will make your load lighter by being worse than you are. You will bear your own load in that day. The plea we hear so often&mdash;&quot;But I was as good as Jack!&quot; or &quot;I wasn&#39;t any worse than Jane!&quot;&mdash;will fall on deaf ears at the judgment. Don&#39;t bolster your pride by comparing yourself with others: you will bear your own load.</p> <p>Father, forgive us for the pride of our hearts that keeps us from meekly and lovingly admonishing and restoring each other when we sin. Transform Bethlehem into a people whose hate of sin and love for sinners creates a community of purity and peace and joy. Amen.</p> </p>
+</div>
+<footer class='resource__footer resource__author-blurb'>
+<a rel="author" href="/authors/john-piper">John Piper</a> (<a href="https://twitter.com/JohnPiper">@JohnPiper</a>) is founder and teacher of desiringGod.org and chancellor of Bethlehem College &amp; Seminary. For 33 years, he served as pastor of Bethlehem Baptist Church, Minneapolis, Minnesota. He is author of <a href="https://www.desiringgod.org/books">more than 50 books</a>, including <a href="https://www.desiringgod.org/books/desiring-god"><em>Desiring God: Meditations of a Christian Hedonist</em></a> and most recently <a href="https://www.desiringgod.org/books/foundations-for-lifelong-learning"><em>Foundations for Lifelong Learning: Education in Serious Joy</em></a>.
+</footer>
+</div>
+
+</main>
+
+
+
+  <div class="utility-bar  utility-bar--series">
+    <button class="series-bar-button" data-ix="ix-series-drawer" data-series-path="/series/galatians-broken-by-his-cross-healed-by-his-spirit/messages">
+  <div class="svg"><svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Series Icon</title>
+      <g fill="#333333">
+          <path d="M2,3 L13,3 L13,4 L2,4 L2,3 Z M3,10 L4,10 L4,11 L3,11 L3,10 Z M6,13 L7,13 L7,14 L6,14 L6,13 Z M15,7 L16,7 L16,8 L15,8 L15,7 Z M2,4 L3,4 L3,11 L2,11 L2,4 Z M12,4 L13,4 L13,5 L12,5 L12,4 Z M5,6 L16,6 L16,7 L5,7 L5,6 Z M5,7 L6,7 L6,14 L5,14 L5,7 Z M8,9 L18,9 L18,10 L8,10 L8,9 Z M8,17 L19,17 L19,18 L8,18 L8,17 Z M18,9 L19,9 L19,17 L18,17 L18,9 Z M8,10 L9,10 L9,17 L8,17 L8,10 Z"></path>
+      </g>
+</svg>
+</div>
+  <span class="series-bar-button__title">
+      <em>Series:</em>
+    Galatians: Broken by His Cross, Healed by His Spirit
+  </span>
+</button>
+
+  </div>
+
+<section class="daily-email">
+  <div class="grid-container">
+    <div class="daily-email__inner">
+      <div class="daily-email__proposition js-daily-email__proposition">
+        <h1>New Resources<br>in Your Inbox</h1>
+        <p>A digest from Desiring God</p>
+
+        <div class='Subscribe-Form js-Subscribe-Form'>
+    <form class="js-Subscribe-Form-form" data-segment-article-email-form-submit="" data-segment-subscribe-page-email-form-submit="" data-segment="homepage-email-form-submit" action="/cta/email_subscribe" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="6GypWNeFVDptfuPQrQR+KgqNRqJ2LxCqFE8FzOK/YdM=" />
+        <div class="Subscribe-Form-options" tabindex="-1">
+          <div class="checkbox" data-segment-meta="Daily">
+            <input id="blog-ca5126f1" type="checkbox" name="blog" value="1" checked>
+            <label for="blog-ca5126f1">Daily</label>
+          </div>
+          <div class="checkbox" data-segment-meta="Weekly">
+            <input id="blog-weekly-ca5126f1" type="checkbox" name="blog-weekly" value="1">
+            <label for="blog-weekly-ca5126f1">Weekly</label>
+          </div>
+        </div>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAAA7CAZh5PvQqLSN"></div> 
+      <div class="Subscribe-Form-inner">
+        <input type="email" name="email_address" class="Subscribe-Form-email js-Subscribe-Form-email" placeholder="Email Address" required>
+        <button type="submit" class="Subscribe-Form-button js-Subscribe-Form-button" data-disable-with="Subscribing...">Subscribe</button>
+      </div>
+</form>
+</div>
+
+      </div>
+
+      <div class="daily-email__device-holder">
+        <div class="daily-email__device">
+          <div class="daily-email__example">
+            <img lazy="true" src="/assets/2/daily_email_example-71b95e8ef41207d0a66793df8ee59f06139bdf92654e0effd8c7171efa715f44.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <footer id="footer">
+  <div class="grid-container">
+    <section class="grid-s-6 grid-m-3 grid-l-5 grid-xl-4 about">
+      <div class="svg footer-mark">
+        <div class="svg">
+<svg width="28px" height="28px" viewbox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mark - Large</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#333333">
+            <path d="M26.8662033,8.37880104 L22.18245,8.37880104 L26.9973936,3.56559513 C26.2397915,2.62119896 25.3831451,1.76020851 24.4396177,1 L19.6238054,5.81841877 L19.6238054,1.13466551 L16,1.13466551 L16,12 L26.8662033,12 L26.8662033,8.37880104 Z M26.8662033,19.621199 L22.18245,19.621199 L26.9973936,24.4344049 C26.2397915,25.378801 25.3831451,26.2397915 24.4396177,27 L19.6238054,22.1815812 L19.6238054,26.8653345 L16,26.8653345 L16,16 L26.8662033,16 L26.8662033,19.621199 Z M1.13119027,8.37880104 L5.81494353,8.37880104 L1,3.56559513 C1.75760209,2.62119896 2.61424848,1.76020851 3.55777585,1 L8.37358818,5.81841877 L8.37358818,1.13466551 L11.9973936,1.13466551 L11.9973936,12 L1.13119027,12 L1.13119027,8.37880104 Z M1.13119027,19.621199 L5.81494353,19.621199 L1,24.4344049 C1.75760209,25.378801 2.61424848,26.2397915 3.55777585,27 L8.37358818,22.1815812 L8.37358818,26.8653345 L11.9973936,26.8653345 L11.9973936,16 L1.13119027,16 L1.13119027,19.621199 Z"></path>
+        </g>
+    </g>
+</svg>
+</div>
+      </div>
+      <div class="about__body">
+        <h2>God is most glorified in us <br />when we are most <span></span>satisfied in him</h2>
+        <a class="button--learn-more" href="/about-us">
+          Learn more about Desiring God
+          <div class="svg"><svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#333333">
+            <path d="M12.5150732,6.35018478 C12.3229538,6.15543439 12.3232472,5.83997845 12.5157285,5.64559421 C12.7082098,5.45120998 13.0199903,5.45150681 13.2121097,5.6462572 L17.6528114,10.1477717 L18,10.4997148 L17.6528319,10.8516786 L13.2121302,15.3537221 C13.0200221,15.5484839 12.7082416,15.5487993 12.515749,15.3544265 C12.3232564,15.1600537 12.3229447,14.8445977 12.5150528,14.6498359 L16,11 L2,11 L2,10 L16,10 L12.5150732,6.35018478 L12.5150732,6.35018478 L12.5150732,6.35018478 Z"></path>
+        </g>
+    </g>
+</svg>
+</div>
+        </a>
+      </div>
+    </section>
+    <section class="social-follow grid-s-6 grid-m-3 grid-l-3 grid-xl-2" data-segment-dg-social-outbound>
+      <h3 class="label">Ways to Follow</h3>
+      <a class="social-follow__network" href="https://www.facebook.com/desiringGod" target="_blank">
+        <div class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+</svg>
+</div>
+        <span>Follow Desiring God on Facebook</span>
+      </a>
+      <a class="social-follow__network" href="https://instagram.com/desiringgod" target="_blank">
+        <div class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 16 16">
+	<path d="M8.3,6C8.2,6,8.1,6,8,6C7.9,6,7.8,6,7.7,6c-0.5,0.1-1,0.4-1.3,0.8C6.1,7.2,6,7.7,6.1,8.3c0.1,0.5,0.4,1,0.8,1.3 c0.4,0.3,1,0.4,1.5,0.4c1.1-0.2,1.8-1.2,1.7-2.3C9.9,6.8,9.2,6.1,8.3,6z"></path>
+	<path d="M11.3,1.3H4.7c-1.8,0-3.3,1.5-3.3,3.3v6.7c0,1.8,1.5,3.3,3.3,3.3h6.7c1.8,0,3.3-1.5,3.3-3.3V4.7 C14.7,2.8,13.2,1.3,11.3,1.3z M8.5,11.3c-0.2,0-0.3,0-0.5,0c-0.7,0-1.4-0.2-2-0.7c-0.7-0.5-1.2-1.3-1.3-2.2C4.6,7.6,4.8,6.7,5.4,6 c0.5-0.7,1.3-1.2,2.2-1.3c0.3,0,0.7,0,1,0C10,4.9,11.1,6,11.3,7.5v0C11.6,9.3,10.3,11,8.5,11.3z M11.7,5.1c-0.4,0-0.8-0.3-0.8-0.8 c0-0.4,0.3-0.8,0.8-0.8c0.4,0,0.8,0.3,0.8,0.8C12.4,4.7,12.1,5.1,11.7,5.1z"></path>
+</svg>
+</div>
+        <span>Follow Desiring God on Instagram</span>
+      </a>
+      <a class="social-follow__network" href="https://twitter.com/desiringGod" target="_blank">
+        <div class="svg"><svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Twitter</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#333333">
+            <path d="M19,4.83999195 C18.8731929,4.99666575 18.739174,5.1662929 18.5997463,5.3488734 C18.4597175,5.53145389 18.313679,5.70108104 18.1610297,5.85775484 C18.0083804,6.01381182 17.8431104,6.17048562 17.6652199,6.32715943 C17.4873293,6.48383323 17.3094387,6.62755369 17.1315482,6.75770397 L17.1315482,6.87551774 C17.1315482,6.90142443 17.137558,6.94028447 17.1501786,6.99271468 C17.1634002,7.04514489 17.16941,7.08400492 17.16941,7.10991162 L17.16941,7.26658542 C17.16941,8.4928355 16.940436,9.75239419 16.483089,11.0440278 C16.0251411,12.3356615 15.3514407,13.4903597 14.4619879,14.5075058 C13.5719342,15.5252687 12.4727388,16.3672362 11.1631999,17.0321746 C9.85366098,17.6977299 8.3602217,18.0172457 6.68228106,17.991339 C6.14800841,18.0172457 5.63356816,17.9851708 5.13775834,17.8932637 C4.64194852,17.8019734 4.15214851,17.6915616 3.66956028,17.5607945 C3.18637107,17.4306442 2.72842309,17.254232 2.29631732,17.0321746 C1.86421155,16.8107341 1.43210577,16.5825084 1,16.3474977 C1.07632466,16.3215911 1.15264933,16.314806 1.22897399,16.3277593 C1.30469767,16.3407127 1.38102234,16.3474977 1.457347,16.3474977 C1.53367166,16.3474977 1.60999633,16.353666 1.68632099,16.3672362 C1.76264565,16.3801895 1.83897032,16.3734044 1.91529498,16.3474977 C2.34740075,16.3734044 2.76688591,16.3407127 3.17375046,16.2494224 C3.580615,16.1581322 3.97425795,16.0538886 4.35588127,15.9366916 C4.73690361,15.8188779 5.10590631,15.6492507 5.46168742,15.4278102 C5.81746853,15.2057528 6.16062903,14.9904806 6.49116891,14.7819934 C6.08490535,14.7295632 5.69667123,14.645058 5.32826951,14.5272442 C4.95986778,14.4100473 4.6227171,14.2274668 4.31741845,13.9795027 C4.01272078,13.7315387 3.75189476,13.4576679 3.53614237,13.1572737 C3.31978899,12.8574963 3.14790825,12.4985035 3.02110113,12.0809123 C3.07218457,12.1333425 3.12927782,12.1592492 3.19238089,12.1592492 C3.25608494,12.1592492 3.31978899,12.1660343 3.38349304,12.1789877 C3.44659611,12.191941 3.50429034,12.191941 3.5547728,12.1789877 C3.60585623,12.1660343 3.65693967,12.1722026 3.70742212,12.1987261 C3.80898801,12.1722026 3.89793329,12.1660343 3.97425795,12.1789877 C4.05058262,12.191941 4.13351808,12.1851559 4.22246336,12.1592492 C4.31140863,12.1333425 4.39374311,12.1203892 4.47006778,12.1203892 C4.54639244,12.1203892 4.6227171,12.0938657 4.69904177,12.0420523 C4.266936,11.9637154 3.87269206,11.8070416 3.51691095,11.5720309 C3.16112985,11.3370202 2.84922039,11.0631494 2.58238456,10.7504186 C2.31554873,10.437071 2.10580615,10.0719101 1.95315682,9.65431885 C1.8005075,9.23672765 1.72418283,8.80618311 1.72418283,8.36268522 L1.72418283,8.34294678 C1.72418283,8.35590013 1.72418283,8.34973187 1.72418283,8.32320835 L1.72418283,8.30408675 C1.72418283,8.31704009 1.72418283,8.31025501 1.72418283,8.28434831 C1.85159093,8.38859191 1.98500885,8.46076055 2.12503756,8.49962059 C2.26446529,8.53848062 2.40449401,8.58412575 2.54452272,8.63655596 C2.68395045,8.68898617 2.82397917,8.72167795 2.96400788,8.73463129 C3.10343561,8.74758464 3.25007512,8.76732307 3.40212347,8.79322976 C3.14790825,8.58412575 2.92554506,8.37563856 2.73503389,8.16715137 C2.54452272,7.95804736 2.37264198,7.71008331 2.21999265,7.42325922 C2.06794431,7.13643513 1.95315682,6.84899422 1.87683216,6.56217013 C1.8005075,6.27534604 1.76264565,5.94904509 1.76264565,5.5838841 C1.76264565,5.45311699 1.77526627,5.29644319 1.8005075,5.11386269 C1.8263497,4.9312822 1.85760075,4.76844013 1.89606357,4.62471968 C1.93452639,4.48099922 1.98500885,4.32432542 2.0487129,4.15469827 C2.11241695,3.98507112 2.18213081,3.84813575 2.25845548,3.74389215 C2.71580248,4.29225046 3.22423291,4.80730017 3.78374679,5.29027493 C4.34326066,5.77263286 4.94724717,6.17727071 5.59510534,6.50357166 C6.24356449,6.82987261 6.92387566,7.09695827 7.63543788,7.30606228 C8.34760108,7.51454947 9.08500551,7.63174641 9.84765116,7.65826993 C9.84765116,7.60583972 9.84104037,7.54045616 9.82841975,7.46211926 C9.81579914,7.38439919 9.80257754,7.31223054 9.78995693,7.24684699 C9.77733632,7.18208026 9.7713265,7.10991162 9.7713265,7.03157471 L9.7713265,6.83604087 C9.7713265,6.28829939 9.86628159,5.79237129 10.0573937,5.3488734 C10.2479049,4.9053755 10.5087309,4.50073765 10.8386698,4.13557666 C11.1692097,3.76979884 11.5634536,3.4959281 12.0214016,3.31334761 C12.4787486,3.13076711 12.9619378,3.02652352 13.4703683,3 C13.7245835,3.02652352 13.9787987,3.0592153 14.2330139,3.09807533 C14.4872291,3.13693537 14.7288237,3.21527227 14.9577977,3.33308604 C15.1861707,3.45028298 15.4025241,3.58105009 15.6056559,3.72415372 C15.8093887,3.86787418 15.9872792,4.04428641 16.1399285,4.2527736 C16.3430603,4.1744367 16.5467931,4.10905314 16.7499249,4.05723976 C16.9536576,4.00480955 17.1567894,3.93942599 17.3599212,3.86108909 C17.563654,3.78336902 17.7541651,3.69824703 17.9320557,3.60695678 C18.1099462,3.51566653 18.2878368,3.40463785 18.4663283,3.27448757 C18.4152449,3.53540497 18.3323094,3.7568455 18.2181229,3.93942599 C18.1039364,4.12200649 17.9831391,4.31137207 17.855731,4.50752274 C17.7289239,4.70305658 17.5762746,4.86589864 17.398384,4.99666575 C17.2204935,5.12681604 17.0426029,5.27053649 16.8641114,5.4272103 C17.0426029,5.37478009 17.2265033,5.33592005 17.4176154,5.30939653 C17.6081266,5.28348984 17.792628,5.23784472 17.9705185,5.17246116 C18.1484091,5.1070776 18.3196888,5.04847914 18.4849588,4.99666575 C18.6502287,4.94423554 18.8221094,4.87885199 19,4.80051508 L19,4.83999195"></path>
+        </g>
+    </g>
+</svg>
+</div>
+        <span>Follow Desiring God on Twitter</span>
+      </a>
+      <a class="social-follow__network" href="https://www.youtube.com/user/desiringGod" target="_blank">
+        <div class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 16 16">
+	<path d="M15,4.3c-0.2-0.6-0.7-1.2-1.3-1.3C12.6,2.7,8,2.7,8,2.7S3.4,2.7,2.3,3C1.6,3.2,1.1,3.7,1,4.3C0.8,5.5,0.7,6.7,0.7,7.8 c0,1.2,0.1,2.4,0.3,3.6c0.2,0.6,0.7,1.1,1.3,1.3C3.4,13,8,13,8,13s4.6,0,5.7-0.3c0.6-0.2,1.1-0.7,1.3-1.3c0.2-1.2,0.3-2.3,0.3-3.5 C15.3,6.6,15.2,5.5,15,4.3z M6.5,10V5.7l3.8,2.2L6.5,10z"></path>
+</svg>
+</div>
+        <span>Follow Desiring God on YouTube</span>
+      </a>
+    </section>
+    <section class="subscribe grid-s-6 grid-m-3 grid-l-4 grid-xl-4 grid-right">
+      <h3 class="label">New Resources in Your Inbox</h3>
+      <div class='Subscribe-Form js-Subscribe-Form'>
+    <form class="js-Subscribe-Form-form" data-segment="footer-email-updates-form" action="/cta/email_subscribe" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="6GypWNeFVDptfuPQrQR+KgqNRqJ2LxCqFE8FzOK/YdM=" />
+        <div class="Subscribe-Form-options" tabindex="-1">
+          <div class="checkbox" data-segment-meta="Daily">
+            <input id="blog-36f09626" type="checkbox" name="blog" value="1" checked>
+            <label for="blog-36f09626">Daily</label>
+          </div>
+          <div class="checkbox" data-segment-meta="Weekly">
+            <input id="blog-weekly-36f09626" type="checkbox" name="blog-weekly" value="1">
+            <label for="blog-weekly-36f09626">Weekly</label>
+          </div>
+        </div>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAAA7CAZh5PvQqLSN"></div> 
+      <div class="Subscribe-Form-inner">
+        <input type="email" name="email_address" class="Subscribe-Form-email js-Subscribe-Form-email" placeholder="Email Address" required>
+        <button type="submit" class="Subscribe-Form-button js-Subscribe-Form-button" data-disable-with="Subscribing...">Subscribe</button>
+      </div>
+</form>
+</div>
+
+    </section>
+  </div>
+  <section class="footer__links">
+    <div class="grid-container">
+      <div class="grid-full">
+        <a href="/translations">
+          Translations
+        </a>
+        <a href="/permissions">
+          Permissions
+        </a>
+        <a href="/privacy-policy">
+          Privacy
+        </a>
+        <a class="footer__donate" href="https://give.desiringgod.org" data-segment-footer-donate>
+          Give
+        </a>
+      </div>
+    </div>
+  </section>
+</footer>
+
+    </div>
+
+    
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+    <script src="/dist/application.a78e8b54.js"></script>
+    
+    <script src="/dist/segment.b0220927.js"></script>
+  </body>
+
+</html>

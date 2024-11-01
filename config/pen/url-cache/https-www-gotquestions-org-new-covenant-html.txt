@@ -1,0 +1,185 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/html
+Last-Modified: Tue, 02 Jan 2024 17:21:17 GMT
+Accept-Ranges: bytes
+ETag: "80242518a03dda1:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self' https://*.gotquestions.org
+Date: Thu, 11 Jan 2024 03:09:29 GMT
+Content-Length: 6165
+
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+<head>
+<title>What is the New Covenant? | GotQuestions.org</title>
+<META name="keywords" itemprop="keywords" content="New Covenant"><META name="description" itemprop="description" property="og:description" content="What is the New Covenant? How is the New Covenant related to premillennialism and amillennialism?">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="image_src" itemprop="image" href="https://www.gotquestions.org/img/GQlogo.png"><link rel="canonical" itemprop="url mainEntityOfPage" href="https://www.gotquestions.org/new-covenant.html">
+<meta itemprop="author" content="GotQuestions.org">
+<meta itemprop="datePublished" content="2004-12-02">
+<meta property="og:image" content="https://www.gotquestions.org/img/OG/new-covenant.jpg">
+<meta property="og:site_name" content="GotQuestions.org">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.gotquestions.org/new-covenant.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7EVHFDMSZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M7EVHFDMSZ');
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-site-theme="light">
+<div class="fixed-button settings box-shadow"><img src="img/cogwheel.svg" alt="settings icon" onclick="settingsMenu(this)"></div>
+<div class="fixed-button sharebutton box-shadow"><img src="img/share.svg" alt="share icon" onclick="shareMenu(this)"></div>
+<header class="gradient-to-b" style="--color-start: var(--bgcolor-header-start);  --color-end: var(--bgcolor-header-end);">
+<div class="searchbox desktop-show"><div class="search"><div class='gq-ac-placeholder header'></div></div></div>
+<div class="logo-wrap"><a href="https://www.gotquestions.org" class="logo"><img src="img/logo_white.svg" alt="Bible Questions Answered"></a></div>
+<nav>
+<ul>
+<li><a href="whats-new.html">New</a></li>
+<li><a href="top20.html">Top 20</a></li>
+<li><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="extra-menu modal-menu box-shadow">
+<li class="mobile-show flex-half"><a href="whats-new.html">New</a></li>
+<li class="mobile-show flex-half"><a href="top20.html">Top 20</a></li>
+<li class="mobile-show flex-half"><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li class="mobile-show flex-half"><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="Gospel-presentations.html">The Gospel</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="Bible-Questions.html">Ask</a></li>
+<li><a href="crucial.html">Crucial Questions</a></li>
+<li><a href="content.html">Content Index</a></li>
+<li><a href="questweek.html">Question of the Week</a></li>
+<li><a href="international.html">International</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li class="mobile-show donate"><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="settings-menu modal-menu box-shadow">
+<li>
+<div class="toggle-wrap">
+<span>Light</span><input type="checkbox" checked id="toggle" class="checkbox" onclick="toggleTheme(this)" /><label for="toggle" class="switch"></label><span>Dark</span>
+</div>
+</li>
+<li><div id="bibleRefLinkSettings"><label for="bibleRefLinkVersion">Bible Version</label><select id="bibleRefLinkVersion" name="bibleRefLinkVersion" onchange="changeVersion();BibleRefLink.brlSavePrefs();"><option value="ESV">ESV</option><option value="CSB">CSB</option><option value="KJV">KJV</option><option value="NASB">NASB</option><option value="NIV" selected="selected">NIV</option><option value="NKJV">NKJV</option><option value="NLT">NLT</option></select></div></li>
+<li><label for="font">Font Family</label><select name="font" id="font" onchange="changeFont()"><option value="system-ui">Default</option><option value="Arial">Arial</option><option value="Verdana">Verdana</option><option value="Helvetica">Helvetica</option><option value="Tahoma">Tahoma</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option></select></li>
+<li><label for="lineheight">Line Height</label><select name="lineheight" id="lineheight" onchange="changeLineHeight()"><option value="1.4">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+<li><label for="fontsize">Font Size</label><select name="fontsize" id="fontsize" onchange="changeFontSize()"><option value="1">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+</ul>
+<ul class="final-menu modal-menu box-shadow">
+<li><a href="https://www.facebook.com/sharer.php?u=https://www.gotquestions.org/" class="fb"><img src="img/logo-fb-simple.svg" alt="Facebook icon">Facebook</a></li>
+<li><a href="http://twitter.com/share?url=https://www.gotquestions.org/" class="tw"><img src="img/logo-twitter.svg" alt="Twitter icon">Twitter</a></li>
+<li><a href="https://pinterest.com/pin/create/link/?url=https://www.gotquestions.org/" class="pi"><img src="img/logo-pinterest.svg" alt="Pinterest icon">Pinterest</a></li>
+<li><a class="SendEmail" href=""><img src="img/letter.svg" alt="Email icon">Email</a></li>
+<li class="mobile-show"><a class="SendSMS" href=""><img src="img/sms-icon.svg" alt="SMS icon">Text/SMS</a></li>
+</ul>
+<img src="img/menu.svg" class="menu-icon" alt="Menu icon" onclick="extraMenu(this)">
+</nav>
+</header>
+<div class="featured gradient-to-tr" style="--color-start: var(--bgcolor-featured-start); --color-end: var(--bgcolor-featured-end)">
+<div class="featured-left">
+<h5>Find Out</h5>
+<h4><a href="going-to-heaven.html">How to go to Heaven</a></h4>
+<h4><a href="get-right-with-God.html">How to get right with God</a></h4>
+</div>
+<div class="featured-right">
+<div class="desktop-hide gq-YT"><a href="https://www.youtube.com/gotquestionsorg" target="_blank"><img src="img/GQ-YT.png"></a></div>
+</div>
+</div>
+<main><div class="breadcrumb-wrapper">
+<span class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org"><span itemprop="name"><span class="home-icon"></span>Home</span></a><meta itemprop="position" content="1"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content.html"><span itemprop="name">Content Index</span></a><meta itemprop="position" content="2"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_theology.html"><span itemprop="name">Theology</span></a><meta itemprop="position" content="3"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_theology_God-Humanity.html"><span itemprop="name">God and Humanity</span></a><meta itemprop="position" content="4"></span> <span class="chevron-right"></span> New Covenant</span></div>
+<section class="content-wrap gradient-to-b" style="--color-start: var(--bgcolor-content-start); --color-end: var(--bgcolor-content-end);" ><div class="content">
+<div class="label gradient-to-tr" style="--color-start: #96445a; --color-end: #6f637e;">Question</div>
+<div class="sponsor-sidebar"><div class="desktop-show" align="center"><div class="adManager-placeholder"></div></div></div>
+<h1><span itemprop="name headline" property="og:title">What is the New Covenant?</span></h1>
+<div class="actions-wrap"><div class="actions">
+<a href="international.html" class="languages"><img src="img/translate-icon.svg" alt="translate" class="questionInteract"></a>
+<a target="_blank" rel="noopener" property="og:video" href="https://youtu.be/OXNnmwGs_ac" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'video'});"><img src="img/logo-youtube.svg" alt="video" class="questionInteract"></a>
+<a target="_blank" rel="noopener" href="https://printer.gotquestions.net/GeneratePF?articleId=217" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'print'});"><img src="img/print.svg" class="questionInteract" alt="New Covenant"></a>
+<span class="audio-icon"><img src="img/volume.svg" alt="audio" class="questionInteract"><audio controls preload="none" style="width:300px;height:25px"><source src="audio/new-covenant.mp3" type="audio/mpeg"></audio></span>
+</div></div>
+<div itemprop="articleBody">
+<div class="label  gradient-to-tr" style="--color-start: #29a699; --color-end: #749c5a;">Answer</div><br><br>
+The New Covenant is the promise that God will forgive sin and restore fellowship with those whose hearts are turned toward Him. Jesus Christ is the mediator of the New Covenant, and His death on the cross is the basis of the promise (Luke 22:20). The New Covenant was predicted while the <a href="old-covenant.html">Old Covenant</a> was still in effect&mdash;the prophets Moses, Jeremiah, and Ezekiel all allude to the New Covenant.<br><br>
+<div class="youtube-player" data-id="OXNnmwGs_ac"></div><br>
+The Old Covenant that God had established with His people required strict obedience to the Mosaic Law. Because the wages of sin is death (Romans 6:23), the Law required that Israel perform daily sacrifices in order to atone for sin. But Moses, through whom God established the Old Covenant, also anticipated the New Covenant. In one of his final addresses to the nation of Israel, Moses looks forward to a time when Israel would be given “a heart to understand” (Deuteronomy 29:4, ESV). Moses predicts that Israel would fail in keeping the Old Covenant (verses 22&ndash;28), but he then sees a time of restoration (Deuteronomy 30:1&ndash;5). At that time, Moses says, “The <span style="font-variant: small-caps;">Lord</span> your God will circumcise your hearts and the hearts of your descendants, so that you may love him with all your heart and with all your soul, and live” (verse 6). The New Covenant involves a total change of heart so that God’s people are naturally pleasing to Him.<br><br>
+The prophet Jeremiah also predicted the New Covenant. “‘The days are coming,’ declares the <span style="font-variant: small-caps;">Lord</span>, ‘when I will make a new covenant with the people of Israel and with the people of Judah. . . . This is the covenant I will make with the people of Israel after that time,’ declares the <span style="font-variant: small-caps;">Lord</span>. ‘I will put my law in their minds and write it on their hearts. I will be their God, and they will be my people.’” Jesus Christ came to fulfill the Law of Moses (Matthew 5:17) and to establish the New Covenant between God and His people. The Old Covenant was written in stone, but the New Covenant is written on hearts. Entering the New Covenant is made possible only by faith in Christ, who shed His blood to take away the sins of the world (John 1:29). Luke 22:20 relates how Jesus, at the Last Supper, takes the cup and says, “This cup that is poured out for you is the new covenant in my blood” (ESV).<br><br>
+The New Covenant is also mentioned in Ezekiel 36:26&ndash;27, “I will give you a new heart and put a new spirit in you; I will remove from you your heart of stone and give you a heart of flesh. And I will put my Spirit in you and move you to follow my decrees and be careful to keep my laws.” Ezekiel lists several aspects of the New Covenant here: a new heart, a new spirit, the <a href="indwelling-of-the-Holy-Spirit.html">indwelling Holy Spirit</a>, and true holiness. The Mosaic Law could provide none of these things (see Romans 3:20).<br><br>
+The New Covenant was originally given to Israel and includes a promise of fruitfulness, blessing, and a peaceful existence in the <a href="Israel-promised-land.html">Promised Land</a>. In Ezekiel 36:28&ndash;30 God says, “Then you will live in the land I gave your ancestors; you will be my people, and I will be your God. . . . I will call for the grain and make it plentiful and will not bring famine upon you. I will increase the fruit of the trees and the crops of the field, so that you will no longer suffer disgrace among the nations because of famine.” Deuteronomy 30:1&ndash;5 contains similar promises related to Israel under the New Covenant. After the resurrection of Christ, God in His grace brought the Gentiles into the blessing of the New Covenant, too (Acts 10; Ephesians 2:13&ndash;14). The fulfillment of the New Covenant will be seen in two places: on earth during the <a href="dispensation-of-Millennial-Kingdom.html">Millennial Kingdom</a>, and in heaven for all eternity.<br><br>
+We are no longer under the Law but under grace (Romans 6:14&ndash;15). The Old Covenant has served its <a href="Mosaic-Law.html">purpose</a>, and it has been replaced by “a better covenant” (Hebrews 7:22). “In fact the ministry Jesus has received is as superior to theirs as the covenant of which he is mediator is superior to the old one, since the new covenant is established on better promises” (Hebrews 8:6).<br><br>
+Under the New Covenant, we are given the opportunity to receive salvation as a free gift (Ephesians 2:8&ndash;9). Our responsibility is to exercise faith in Christ, the One who fulfilled the Law on our behalf and brought an end to the Law’s sacrifices through His own sacrificial death. Through the life-giving Holy Spirit who lives in all believers (Romans 8:9&ndash;11), we share in the inheritance of Christ and enjoy a permanent, unbroken relationship with God (Hebrews 9:15).<br><br>
+</div>
+<div class="related resources"><h4>For Further Study</h4>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'chrbook'});" href="https://www.christianbook.com/Christian/Books/product?event=AFF&p=1011693&item_no=411981">The Moody Handbook of Theology by Paul Enns</a><br><br>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'logos'});" href="https://www.logos.com/free-edition?utm_source=gotquestions&utm_medium=advertising_display&utm_content=more+insights+get+started&utm_campaign=promo-basic-fundamentals">More insights from your Bible study - Get Started with Logos Bible Software for Free!</a>
+</div>
+<div class="related topics"><h4>Related Articles</h4>
+<a href="old-covenant.html">What was the Old Covenant?</a><br><br>
+<a href="this-cup-new-covenant-my-blood.html">What did Jesus mean when He said, “This cup is the new covenant in my blood”?</a><br><br>
+<a href="covenant-theology.html">What is Covenant Theology and is it biblical?</a><br><br>
+<a href="old-covenant-vs-new-covenant.html">Old covenant vs new covenant—what are the differences?</a><br><br>
+<a href="Mosaic-covenant.html">What is the Mosaic Covenant?</a>
+</div>
+<center><strong class="return">Return to:<br><br>
+<a class="button-link box-shadow" href="questions_theology.html">Questions about Theology</a><br><br>
+What is the New Covenant?</strong></center>
+</div>
+</section>
+<section class="homepage-sponsor desktop-hide">
+<div class="desktop-hide" align="center"><div class="adManager-placeholder-mobile"></div></div>
+</section>
+<section class="subscribe gradient-to-br" style="--color-start: #153c59; --color-end: #1b537c">
+<div class="grid">
+<div class="gradient-to-br box-shadow" style="--color-start: #2c6482; --color-end: #64547b">
+<h5>Subscribe to the</h5>
+<h3>Question of the Week</h3>
+<p>Get our Question of the Week delivered right to your inbox!</p>
+<iframe src="scommon/qotw.htm" title="question of the week" frameborder="0" width="100%" height="100%"></iframe>
+</div></div>
+</section>
+<section class="share gradient-to-b" style="--color-start: #073D60; --color-end: #0A3652;">
+<span>Follow Us:</span>
+<a target="_blank" href="https://www.facebook.com/gotquestions.org"><img src="img/logo-fb-simple.svg" alt="Facebook icon"></a>
+<a target="_blank" href="https://twitter.com/gotquestions"><img src="img/logo-twitter.svg" alt="Twitter icon"></a>
+<a target="_blank" href="https://www.youtube.com/gotquestionsorg"><img src="img/logo-youtube.svg" alt="YouTube icon"></a>
+<a target="_blank" href="https://www.pinterest.com/gotquestionsmin/"><img src="img/logo-pinterest.svg" alt="Pinterest icon"></a>
+<a target="_blank" href="https://www.instagram.com/gotquestionsministries/"><img src="img/logo-instagram.svg" alt="Instagram icon"></a>
+</section>
+</main>
+<footer>
+<div class="grid"><div>
+<div class="logo"></div>
+<ul>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="citation.html">Citation</a></li>
+<li><a href="apply.html">Serve with Us</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="network">
+GotQuestions.org is the flagship site of Got Questions Ministries <a target="_blank" href="https://www.gqm.one"><img src="img/gqm-one.png"></a>
+</div>
+<div class="apps">
+<a href="https://apps.apple.com/us/app/got-questions/id366553550" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'ios-app'});"><img src="img/apple-appstore.svg" class="appSource"></a>
+<a href="https://play.google.com/store/apps/details?id=com.gotquestions.gqandapp&hl=en" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'android-app'});"><img src="img/google-play.svg" class="appSource"></a>
+<a href="https://www.amazon.com/gp/product/B07VX73L12" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'alexa-skill'});"><img src="img/amazon-alexa.svg" class="appSource"></a>
+</div>
+</div>
+</footer>
+<center><div class="bottom">&copy; Copyright 2002-2024 Got Questions Ministries. All rights reserved.&nbsp;<a href="privacy.html">Privacy Policy</a></div>
+<div itemprop="dateModified" content="2022-01-04">This page last updated: January 4, 2022</div></center>
+<script src="scripts.js"></script>
+<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="GotQuestions.org"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="url" content="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="width" content="400"><meta itemprop="height" content="79">
+</div></div>
+<div itemprop="video" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="embedURL" content="https://youtu.be/OXNnmwGs_ac"><meta itemprop="name" content="What is the New Covenant?"><meta itemprop="description" content="What is the New Covenant? How is the New Covenant related to the Old Covenant?"><meta itemprop="thumbnailUrl" content="https://www.gotquestions.org/img/video-thumbnails/new-covenant.jpg"><meta itemprop="uploadDate" content="2019-06-03"></div>
+</body>
+</html>

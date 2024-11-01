@@ -1,0 +1,11 @@
+
+            (or (pen-var-value-maybe 'engine-max-stop-sequence-size)
+                ',engine-max-stop-sequence-size)))
+
+          ;; These happen after the postprocessing
+          (final-end-split-patterns
+           (or (pen-var-value-maybe 'end-split-patterns)
+               ',end-split-patterns))
+
+          ;; These happen after the postprocessing
+          (final-

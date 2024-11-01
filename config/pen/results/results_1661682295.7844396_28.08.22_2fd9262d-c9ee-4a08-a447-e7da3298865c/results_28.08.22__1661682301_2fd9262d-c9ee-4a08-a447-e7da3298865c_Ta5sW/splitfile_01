@@ -1,0 +1,13 @@
+"cloudsearch" is a command line tool for searching AWS Cloudsearch.
+
+Usage:
+    cloudsearch define-expression
+    cloudsearch define-index-field
+    cloudsearch define-sdf-document
+    cloudsearch define-sdf-document-version
+    cloudsearch define-sort-field
+    cloudsearch describe-domains
+    cloudsearch describe-expressions
+    cloudsearch describe-index-fields
+    cloudsearch describe-scaling-parameters
+    cloud

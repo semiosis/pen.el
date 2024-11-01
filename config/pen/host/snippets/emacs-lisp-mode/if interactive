@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: if interactive
+# group: interactive
+# key: ifi
+# --
+(if (interactive-p))

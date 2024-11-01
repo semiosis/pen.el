@@ -1,0 +1,1 @@
+ aws logs filter-log-events --log-group-name /aws/lambda/lambda_name --filter-pattern "ERROR" --output table

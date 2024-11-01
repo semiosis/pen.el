@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: for ... in loop
+# group: vimsnippet
+# key: vs-for
+# --
+for ${1} in ${2}
+	${0:${VISUAL}}
+endfor

@@ -1,0 +1,654 @@
+HTTP/1.1 200 OK
+Date: Wed, 13 Dec 2023 04:52:20 GMT
+Server: Apache/2.4.57 (Debian)
+Last-Modified: Sun, 29 May 2022 10:05:30 GMT
+ETag: "52fc-5e023adf90629-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 6875
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>notmuch-search-terms-7</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-search-terms-7" />
+
+
+
+
+</head>
+<body>
+
+<div class="pageheader">
+<div class="header">
+<span>
+<span class="parentlinks">
+
+<a href="../../">notmuch</a>/ 
+
+<a href="../">manpages</a>/ 
+
+</span>
+<!--
+<span class="title">
+notmuch-search-terms-7
+
+</span>
+-->
+</span><!--.header-->
+
+</div>
+
+<!--
+
+<div class="actions">
+<ul>
+
+<li><a href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-search-terms-7" rel="nofollow">Edit</a></li>
+
+
+<li><a href="../../recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+<li><span class="createlink"><a href="/ikiwiki.cgi?do=create&amp;from=manpages%2Fnotmuch-search-terms-7&amp;page=Discussion" rel="nofollow">?</a>Discussion</span><br /></li>
+
+
+</ul>
+</div>
+
+-->
+
+
+
+</div> <!-- .pageheader -->
+
+
+
+<div id="content">
+<h1>NOTMUCH-SEARCH-TERMS(7)</h1>
+
+
+
+
+<h2>NAME</h2>
+
+
+<pre>
+       notmuch-search-terms - syntax for notmuch queries
+</pre>
+
+
+
+
+<h2>SYNOPSIS</h2>
+
+
+<pre>
+       <b>notmuch</b> <b>count</b> [option ...] &lt;<u>search-term</u>&gt; ...
+
+       <b>notmuch</b> <b>dump</b> [--gzip] [--format=(batch-tag|sup)] [--output=&lt;<u>file</u>&gt;] [--]
+       [&lt;<u>search-term</u>&gt; ...]
+
+       <b>notmuch</b> <b>reindex</b> [option ...] &lt;<u>search-term</u>&gt; ...
+
+       <b>notmuch</b> <b>search</b> [option ...] &lt;<u>search-term</u>&gt; ...
+
+       <b>notmuch</b> <b>show</b> [option ...] &lt;<u>search-term</u>&gt; ...
+
+       <b>notmuch</b> <b>tag</b> +&lt;<u>tag</u>&gt; ... -&lt;<u>tag</u>&gt; [--] &lt;<u>search-term</u>&gt; ...
+</pre>
+
+
+
+
+<h2>DESCRIPTION</h2>
+
+
+<pre>
+       Several notmuch commands accept a common syntax for search terms.
+
+       The search terms can consist of free-form  text  (and  quoted  phrases)
+       which   will   match  all  messages  that  contain  all  of  the  given
+       terms/phrases in the body, the subject, or any of the sender or recipi‐
+       ent headers.
+
+       As  a  special case, a search string consisting of exactly a single as‐
+       terisk (&quot;*&quot;) will match all messages.
+</pre>
+
+
+
+
+<h3> &nbsp; Search prefixes</h3>
+
+
+<pre>
+       In addition to free text, the following prefixes can be used  to  force
+       terms to match against specific portions of an email, (where &lt;brackets&gt;
+       indicate user-supplied values).
+
+       Some of the prefixes with &lt;regex&gt; forms can be also  used  to  restrict
+       the  results  to  those  whose  value matches a regular expression (see
+       <b>regex</b>(7)) delimited with //, for example:
+
+          notmuch search &apos;from:&quot;/bob@.*[.]example[.]com/&quot;&apos;
+
+       <b>body:&lt;word-or-quoted-phrase&gt;</b>
+              Match terms in the body of messages.
+
+       <b>from:&lt;name-or-address&gt;</b> <b>or</b> <b>from:/&lt;regex&gt;/</b>
+              The <b>from:</b> prefix is used to match the name  or  address  of  the
+              sender of an email message.
+
+       <b>to:&lt;name-or-address&gt;</b>
+              The  <b>to:</b>  prefix  is used to match the names or addresses of any
+              recipient of an email message, (whether To, Cc, or Bcc).
+
+       <b>subject:&lt;word-or-quoted-phrase&gt;</b> <b>or</b> <b>subject:/&lt;regex&gt;/</b>
+              Any term prefixed with <b>subject:</b> will match only  text  from  the
+              subject  of  an  email. Searching for a phrase in the subject is
+              supported by including quotation marks around the phrase,  imme‐
+              diately following <b>subject:</b>.
+
+       <b>attachment:&lt;word&gt;</b>
+              The  <b>attachment:</b> prefix can be used to search for specific file‐
+              names (or extensions) of attachments to email messages.
+
+       <b>mimetype:&lt;word&gt;</b>
+              The <b>mimetype:</b> prefix will be used to match text  from  the  con‐
+              tent-types  of MIME parts within email messages (as specified by
+              the sender).
+
+       <b>tag:&lt;tag&gt;</b> <b>or</b> <b>tag:/&lt;regex&gt;/</b> <b>or</b> <b>is:&lt;tag&gt;</b> <b>or</b> <b>is:/&lt;regex&gt;/</b>
+              For <b>tag:</b> and <b>is:</b> valid tag values include <b>inbox</b>  and  <b>unread</b>  by
+              default  for new messages added by <a href="../notmuch-new-1/">notmuch-new</a>(1) as well as any
+              other tag values added manually with <a href="../notmuch-tag-1/">notmuch-tag</a>(1).
+
+       <b>id:&lt;message-id&gt;</b> <b>or</b> <b>mid:&lt;message-id&gt;</b> <b>or</b> <b>mid:/&lt;regex&gt;/</b>
+              For <b>id:</b> and <b>mid:</b>, message ID values are the literal contents  of
+              the  Message-ID:  header of email messages, but without the &apos;&lt;&apos;,
+              &apos;&gt;&apos; delimiters.
+
+       <b>thread:&lt;thread-id&gt;</b>
+              The <b>thread:</b> prefix can be used with the thread  ID  values  that
+              are  generated internally by notmuch (and do not appear in email
+              messages). These thread ID values can be seen in the first  col‐
+              umn of output from <a href="../notmuch-search-1/">notmuch-search</a>(1)
+
+       <b>thread:{&lt;notmuch</b> <b>query&gt;}</b>
+              Threads may be searched for indirectly by providing an arbitrary
+              notmuch query in <b>{}</b>. For example, the following returns  threads
+              containing  a  message from mallory and one (not necessarily the
+              same message) with Subject containing the word &quot;crypto&quot;.
+
+                 % notmuch search &apos;thread:&quot;{from:mallory}&quot; and thread:&quot;{subject:crypto}&quot;&apos;
+
+              The performance of such queries can vary wildly.  To  understand
+              this, the user should think of the query <b>thread:{&lt;something&gt;}</b> as
+              expanding to all of the thread IDs which match <b>&lt;something&gt;</b>; not‐
+              much then performs a second search using the expanded query.
+
+       <b>path:&lt;directory-path&gt;</b> <b>or</b> <b>path:&lt;directory-path&gt;/**</b> <b>or</b> <b>path:/&lt;regex&gt;/</b>
+              The <b>path:</b> prefix searches for email messages that are in partic‐
+              ular directories within the mail store. The  directory  must  be
+              specified  relative  to  the  top-level maildir (and without the
+              leading slash). By default, <b>path:</b> matches messages in the speci‐
+              fied  directory only. The &quot;/**&quot; suffix can be used to match mes‐
+              sages in the specified directory and all its subdirectories  re‐
+              cursively.  <b>path:&quot;&quot;</b>  matches  messages  in  the root of the mail
+              store and, likewise, <b>path:**</b> matches all messages.
+
+              <b>path:</b> will find a message if <u>any</u> copy of that message is in  the
+              specific directory.
+
+       <b>folder:&lt;maildir-folder&gt;</b> <b>or</b> <b>folder:/&lt;regex&gt;/</b>
+              The  <b>folder:</b> prefix searches for email messages by maildir or MH
+              folder. For MH-style folders, this is equivalent to  <b>path:</b>.  For
+              maildir, this includes messages in the &quot;new&quot; and &quot;cur&quot; subdirec‐
+              tories. The exact syntax for maildir  folders  depends  on  your
+              mail  configuration.  For maildir++, <b>folder:&quot;&quot;</b> matches the inbox
+              folder (which is the root in maildir++), other folder names  al‐
+              ways  start  with &quot;.&quot;, and nested folders are separated by &quot;.&quot;s,
+              such as <b>folder:.classes.topology</b>. For &quot;file system&quot; maildir, the
+              inbox is typically <b>folder:INBOX</b> and nested folders are separated
+              by slashes, such as <b>folder:classes/topology</b>.
+
+              <b>folder:</b> will find a message if <u>any</u> copy of that  message  is  in
+              the specific folder.
+
+       <b>date:&lt;since&gt;..&lt;until&gt;</b> <b>or</b> <b>date:&lt;date&gt;</b>
+              The  <b>date:</b>  prefix  can  be used to restrict the results to only
+              messages within a particular time  range  (based  on  the  Date:
+              header).
+
+              See  <b>DATE</b> <b>AND</b> <b>TIME</b> <b>SEARCH</b> below for details on the range expres‐
+              sion, and supported syntax for &lt;since&gt; and &lt;until&gt; date and time
+              expressions.
+
+              The  time  range  can also be specified using timestamps without
+              including the date prefix using a syntax of:
+
+              &lt;initial-timestamp&gt;..&lt;final-timestamp&gt;
+
+              Each timestamp is a number representing the  number  of  seconds
+              since  1970-01-01 00:00:00 UTC. Specifying a time range this way
+              is considered legacy and predates the date prefix.
+
+       <b>lastmod:&lt;initial-revision&gt;..&lt;final-revision&gt;</b>
+              The <b>lastmod:</b> prefix can be used to restrict the  result  by  the
+              database  revision  number  of  when messages were last modified
+              (tags were added/removed or filenames changed). This is  usually
+              used   in   conjunction   with   the  <b>--uuid</b>  argument  to  <a href="../notmuch-search-1/">not‐</a>
+              <a href="../notmuch-search-1/">much-search</a>(1) to find messages that have changed since an  ear‐
+              lier query.
+
+       <b>query:&lt;name&gt;</b>
+              The  <b>query:</b>  prefix  allows queries to refer to previously saved
+              queries added with <a href="../notmuch-config-1/">notmuch-config</a>(1).
+
+       <b>property:&lt;key&gt;=&lt;value&gt;</b>
+              The <b>property:</b> prefix searches for  messages  with  a  particular
+              &lt;key&gt;=&lt;value&gt;  property  pair. Properties are used internally by
+              notmuch (and extensions) to add metadata to  messages.  A  given
+              key  can  be  present  on a given message with several different
+              values.  See <a href="../notmuch-properties-7/">notmuch-properties</a>(7) for more details.
+
+       User defined prefixes are also supported, see <a href="../notmuch-config-1/">notmuch-config</a>(1) for de‐
+       tails.
+</pre>
+
+
+
+
+<h3> &nbsp; Operators</h3>
+
+
+<pre>
+       In  addition  to  individual terms, multiple terms can be combined with
+       Boolean operators (<b>and</b>, <b>or</b>, <b>not</b>, and <b>xor</b>). Each term in the query  will
+       be  implicitly  connected  by  a logical AND if no explicit operator is
+       provided (except that terms with a common  prefix  will  be  implicitly
+       combined  with  OR).   The  shorthand  &apos;-&lt;term&gt;&apos;  can  be used for &apos;not
+       &lt;term&gt;&apos; but unfortunately this does not work at the start of an expres‐
+       sion.   Parentheses  can also be used to control the combination of the
+       Boolean operators, but will have to be protected from interpretation by
+       the shell, (such as by putting quotation marks around any parenthesized
+       expression).
+
+       In addition to the standard boolean operators, Xapian provides  several
+       operators specific to text searching.
+
+          notmuch search term1 NEAR term2
+
+       will  return  results  where  term1  is  within  10 words of term2. The
+       threshold can be set like this:
+
+          notmuch search term1 NEAR/2 term2
+
+       The search
+
+          notmuch search term1 ADJ term2
+
+       will return results where term1 is within 10 words of term2, but in the
+       same  order  as in the query. The threshold can be set the same as with
+       NEAR:
+
+          notmuch search term1 ADJ/7 term2
+</pre>
+
+
+
+
+<h3> &nbsp; Stemming</h3>
+
+
+<pre>
+       <b>Stemming</b> in notmuch means that these searches
+
+          notmuch search detailed
+          notmuch search details
+          notmuch search detail
+
+       will all return identical results, because Xapian first  &quot;reduces&quot;  the
+       term to the common stem (here &apos;detail&apos;) and then performs the search.
+
+       There  are  two  ways to turn this off: a search for a capitalized word
+       will be performed unstemmed, so that one can search for &quot;John&quot; and  not
+       get  results for &quot;Johnson&quot;; phrase searches are also unstemmed (see be‐
+       low for details).  Stemming is currently only  supported  for  English.
+       Searches for words in other languages will be performed unstemmed.
+</pre>
+
+
+
+
+<h3> &nbsp; Wildcards</h3>
+
+
+<pre>
+       It  is  possible  to  use  a  trailing  &apos;*&apos; as a wildcard. A search for
+       &apos;wildc*&apos; will match &apos;wildcard&apos;, &apos;wildcat&apos;, etc.
+</pre>
+
+
+
+
+<h3> &nbsp; Boolean and Probabilistic Prefixes</h3>
+
+
+<pre>
+       Xapian (and hence notmuch) prefixes are either <b>boolean</b>, supporting  ex‐
+       act matches like &quot;<u>tag:inbox</u>&quot; or <b>probabilistic</b>, supporting a more flexi‐
+       ble <b>term</b> based searching. Certain <b>special</b>  prefixes  are  processed  by
+       notmuch  in  a  way  not  strictly  fitting either of Xapian&apos;s built in
+       styles. The prefixes currently supported by notmuch are as follows.
+
+       <b>Boolean</b>
+              <b>tag:</b>, <b>id:</b>, <b>thread:</b>, <b>folder:</b>, <b>path:</b>, <b>property:</b>
+
+       <b>Probabilistic</b>
+              <b>body:</b>, <b>to:</b>, <b>attachment:</b>, <b>mimetype:</b>
+
+       <b>Special</b>
+              <b>from:</b>, <b>query:</b>, <b>subject:</b>
+</pre>
+
+
+
+
+<h3> &nbsp; Terms and phrases</h3>
+
+
+<pre>
+       In general Xapian distinguishes between lists  of  terms  and  <b>phrases</b>.
+       Phrases are indicated by double quotes (but beware you probably need to
+       protect those from your shell) and insist that  those  unstemmed  words
+       occur  in  that  order. One useful, but initially surprising feature is
+       that the following are equivalent ways to write the same phrase.
+
+       • &quot;a list of words&quot;
+
+       • a-list-of-words
+
+       • a/list/of/words
+
+       • a.list.of.words
+
+       Both parenthesised lists of terms and quoted phrases are ok with proba‐
+       bilistic prefixes such as <b>to:</b>, <b>from:</b>, and <b>subject:</b>. In particular
+
+          subject:(pizza free)
+
+       is equivalent to
+
+          subject:pizza and subject:free
+
+       Both of these will match a subject &quot;Free Delicious Pizza&quot; while
+
+          subject:&quot;pizza free&quot;
+
+       will not.
+</pre>
+
+
+
+
+<h3> &nbsp; Quoting</h3>
+
+
+<pre>
+       Double  quotes  are  also  used  by the notmuch query parser to protect
+       boolean terms, regular expressions, or subqueries containing spaces  or
+       other special characters, e.g.
+
+          tag:&quot;a tag&quot;
+
+          folder:&quot;/^.*/(Junk|Spam)$/&quot;
+
+          thread:&quot;{from:mallory and date:2009}&quot;
+
+       As  with  phrases, you need to protect the double quotes from the shell
+       e.g.
+
+          % notmuch search &apos;folder:&quot;/^.*/(Junk|Spam)$/&quot;&apos;
+          % notmuch search &apos;thread:&quot;{from:mallory and date:2009}&quot; and thread:{to:mallory}&apos;
+</pre>
+
+
+
+
+<h2>DATE AND TIME SEARCH</h2>
+
+
+<pre>
+       notmuch understands a variety of standard and natural ways of  express‐
+       ing dates and times, both in absolute terms (&quot;2012-10-24&quot;) and in rela‐
+       tive terms (&quot;yesterday&quot;). Any number of relative terms can be  combined
+       (&quot;1  hour  25  minutes&quot;) and an absolute date/time can be combined with
+       relative terms to further adjust it. A  non-exhaustive  description  of
+       the syntax supported for absolute and relative terms is given below.
+</pre>
+
+
+
+
+<h3> &nbsp; The range expression</h3>
+
+
+<pre>
+       date:&lt;since&gt;..&lt;until&gt;
+
+       The  above  expression  restricts  the  results  to  only messages from
+       &lt;since&gt; to &lt;until&gt;, based on the Date: header.
+
+       &lt;since&gt; and &lt;until&gt; can describe imprecise times, such as  &quot;yesterday&quot;.
+       In  this  case, &lt;since&gt; is taken as the earliest time it could describe
+       (the beginning of yesterday) and &lt;until&gt; is taken as the latest time it
+       could  describe (the end of yesterday). Similarly, date:january..febru‐
+       ary matches from the beginning of January to the end of February.
+
+       If specifying a time range using timestamps  in  conjunction  with  the
+       date  prefix,  each  timestamp must be preceded by @ (ASCII hex 40). As
+       above, each timestamp is a number representing the  number  of  seconds
+       since 1970-01-01 00:00:00 UTC. For example:
+          date:@&lt;initial-timestamp&gt;..@&lt;final-timestamp&gt;
+
+       Currently,  spaces  in range expressions are not supported. You can re‐
+       place the spaces with &apos;_&apos;, or (in most cases) &apos;-&apos;, or (in  some  cases)
+       leave  the  spaces out altogether. Examples in this man page use spaces
+       for clarity.
+
+       Open-ended  ranges  are  supported.  I.e.  it&apos;s  possible  to   specify
+       date:..&lt;until&gt;  or  date:&lt;since&gt;..  to not limit the start or end time,
+       respectively.
+</pre>
+
+
+
+
+<h3> &nbsp; Single expression</h3>
+
+
+<pre>
+       date:&lt;expr&gt; works as a shorthand for date:&lt;expr&gt;..&lt;expr&gt;.  For example,
+       date:monday  matches from the beginning of Monday until the end of Mon‐
+       day.
+</pre>
+
+
+
+
+<h3> &nbsp; Relative date and time</h3>
+
+
+<pre>
+       [N|number]         (years|months|weeks|days|hours|hrs|minutes|mins|sec‐
+       onds|secs) [...]
+
+       All refer to past, can be repeated and will be accumulated.
+
+       Units  can  be  abbreviated to any length, with the otherwise ambiguous
+       single m being m for minutes and M for months.
+
+       Number can also be written out one, two, ..., ten, dozen, hundred.  Ad‐
+       ditionally,  the  unit may be preceded by &quot;last&quot; or &quot;this&quot; (e.g., &quot;last
+       week&quot; or &quot;this month&quot;).
+
+       When combined with absolute date and time, the relative date  and  time
+       specification  will  be  relative  from the specified absolute date and
+       time.
+
+       Examples: 5M2d, two weeks
+</pre>
+
+
+
+
+<h3> &nbsp; Supported absolute time formats</h3>
+
+
+<pre>
+       • H[H]:MM[:SS] [(am|a.m.|pm|p.m.)]
+
+       • H[H] (am|a.m.|pm|p.m.)
+
+       • HHMMSS
+
+       • now
+
+       • noon
+
+       • midnight
+
+       • Examples: 17:05, 5pm
+</pre>
+
+
+
+
+<h3> &nbsp; Supported absolute date formats</h3>
+
+
+<pre>
+       • YYYY-MM[-DD]
+
+       • DD-MM[-[YY]YY]
+
+       • MM-YYYY
+
+       • M[M]/D[D][/[YY]YY]
+
+       • M[M]/YYYY
+
+       • D[D].M[M][.[YY]YY]
+
+       • D[D][(st|nd|rd|th)] Mon[thname] [YYYY]
+
+       • Mon[thname] D[D][(st|nd|rd|th)] [YYYY]
+
+       • Wee[kday]
+
+       Month names can be abbreviated at three or more characters.
+
+       Weekday names can be abbreviated at three or more characters.
+
+       Examples: 2012-07-31, 31-07-2012, 7/31/2012, August 3
+</pre>
+
+
+
+
+<h3> &nbsp; Time zones</h3>
+
+
+<pre>
+       • (+|-)HH:MM
+
+       • (+|-)HH[MM]
+
+       Some time zone codes, e.g. UTC, EET.
+</pre>
+
+
+
+
+<h2>SEE ALSO</h2>
+
+
+<pre>
+       <a href="../notmuch-1/">notmuch</a>(1), <a href="../notmuch-config-1/">notmuch-config</a>(1), <a href="../notmuch-count-1/">notmuch-count</a>(1), <a href="../notmuch-dump-1/">notmuch-dump</a>(1),  <a href="../notmuch-hooks-5/">not‐</a>
+       <a href="../notmuch-hooks-5/">much-hooks</a>(5),   <a href="../notmuch-insert-1/">notmuch-insert</a>(1),   <a href="../notmuch-new-1/">notmuch-new</a>(1),   <a href="../notmuch-properties-7/">notmuch-proper‐</a>
+       <a href="../notmuch-properties-7/">ties</a>(7), <a href="../notmuch-reindex-1/">notmuch-reindex</a>(1), <a href="../notmuch-reply-1/">notmuch-reply</a>(1), <a href="../notmuch-restore-1/">notmuch-restore</a>(1), <a href="../notmuch-search-1/">not‐</a>
+       <a href="../notmuch-search-1/">much-search</a>(1), <a href="../notmuch-show-1/">notmuch-show</a>(1), <a href="../notmuch-tag-1/">notmuch-tag</a>(1)
+</pre>
+
+
+
+
+<h2>AUTHOR</h2>
+
+
+<pre>
+       Carl Worth and many others
+</pre>
+
+
+
+
+<h2>COPYRIGHT</h2>
+
+
+<pre>
+       2009-2022, Carl Worth and many others
+</pre>
+
+
+
+
+<h2>0.35</h2>
+
+
+</div>
+
+
+
+<div id="footer" class="pagefooter">
+<div id="pageinfo">
+
+
+
+
+
+
+
+
+
+<div class="pagedate">
+Last edited <span class="date">Sun Feb  6 13:51:11 2022</span>
+<!-- Created <span class="date">Fri Jun 22 00:08:32 2012</span> -->
+</div>
+
+</div><!-- #pageinfo -->
+
+<!-- from notmuch -->
+</div><!-- .pagefooter #footer -->
+
+</body>
+</html>

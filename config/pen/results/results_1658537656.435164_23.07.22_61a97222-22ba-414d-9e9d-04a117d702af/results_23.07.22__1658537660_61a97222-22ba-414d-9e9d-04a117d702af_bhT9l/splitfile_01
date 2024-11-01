@@ -1,0 +1,8 @@
+
+  age <- getLine
+  putStrLn ("You are " ++ age ++ " years old.")
+EOD
+
+# ruby files
+cat draft.rb <<EOD
+puts "Please enter your age: "

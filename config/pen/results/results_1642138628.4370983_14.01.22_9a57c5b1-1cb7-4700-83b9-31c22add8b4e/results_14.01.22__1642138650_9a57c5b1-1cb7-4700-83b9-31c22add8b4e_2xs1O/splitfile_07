@@ -1,0 +1,37 @@
+# 
+# We have covered a lot of ground this semester. It is now time to synthesize some of the skills and techniques that we have learned into a project of your own.
+# 
+# Write a code that achieves the following:
+# - Select a random article from [Hacker News](https://news.ycombinator.com/) 
+# - Retrieve the article link and headline text 
+# - Open the headline text in a new Chrome browser tab 
+# - Open the link in a new Chrome browser tab 
+# 
+# You may use any method you have learned this semester, or Google for advice if you have a particular method in mind. You may also use any package you have learned this semester or Google for advice if you have a particular package in mind.
+# 
+# Don't forget to commit your code with git, and push to GitHub!
+# write your code here
+
+import json
+from bs4 import BeautifulSoup
+import requests
+import random
+from selenium import webdriver
+from time import sleep
+from selenium.webdriver.common.keys import Keys
+
+def random_article():
+    # Random number
+    num = random.randint(0, 1000)
+    # Connect to news API
+    url = "https://hacker-news.firebaseio.com/v0/topstories.json"
+    resp = requests.get(url)
+    ids = resp.json()
+    # Select a random article and print its details
+    counter = 0    
+    while counter < num:
+        article = ids[counter]
+        url2 = "https://hacker-news.firebaseio.com/v0/item/%s.json" % article
+        resp2 = requests.get(url2)
+        info = resp2.json()
+        print(

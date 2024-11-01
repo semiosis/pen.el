@@ -1,0 +1,114 @@
+Rasa X
+    A tool to learn from real conversations
+    and improve your assistant.
+    
+    Using it is totally optional.
+    
+    If you don’t want to, you can just use
+    Rasa on its own.
+
+Entities
+    [#wit.ai]
+    [#duckling]
+
+    https://wit.ai/docs/built-in-entities/20180601
+
+    Examples:
+        wit/datetime
+            Captures and resolves date and
+            time, like tomorrow at 6pm.
+
+            Supported by Duckling.
+
+context
+    [#contextual assistants]
+
+    https://blog.rasa.com/level-3-contextual-assistants-beyond-answering-simple-questions/
+
+    Key capabilities:
+    - User Profile:
+      Example:
+      - age,
+      - name,
+      - address, or
+      - which insurance policy they purchased.
+
+    - User Goal:
+      Usually the starting point of a
+      conversation.
+
+      Example:
+      - a specific problem.
+
+      All user goals are intents.
+      
+      Not all intents are user goals (e.g.
+      yes/no is not a user goal)
+
+    - Conversation History:
+      What has been said before contains a lot
+      of important contextual data, especially
+      to clarify what the user meant.
+      
+      For example, a pronoun like “it” might
+      refer to a noun before like “MacBook”
+      (coreference).
+
+    - User Response:
+      A user’s response can be directly
+      connected to the context it was asked in.
+      
+      For example, a “yes” answer in itself
+      doesn’t mean much but needs to be
+      connected to a specific question before.
+
+    - World Knowledge:
+      This is a tricky one as it is very broad.
+      
+      It could be anything from knowing the
+      location of the user so that "downtown"
+      means "Manhattan" if the user is in New
+      York or "rangers" means "New York Rangers"
+      because the conversation is about ice
+      hockey.
+      
+      It could also include data from sensors or
+      feeds (e.g. the prevailing weather or fuel
+      level in a car)
+
+conversational AI
+    [#2019]
+
+    Level 1 -- last 10 years
+        Notification Assistent
+    Level 2 -- Now
+        FAQ Assistant
+    Level 3 -- Within 2 years
+        Contextual Assistant
+    Level 4 -- In 3-5 years
+        Personalised Assistants
+    Level 5 -- In 10 years
+        Autonomous Organisation of Assistants
+
+Natural Language Understanding
+NLU
+Natural Language Interpretation
+NLI
+    [subtopic of NLP]
+
+    Deals with machine reading comprehension.
+
+    - Intent Recognition
+      How to better understand your users.
+
+    - Entity Extraction
+      Choose the right extractor for each
+      entity.
+
+duckling
+    [#facebook]
+    [probabilistic parser]
+
+    Written in Haskell.
+
+    Used in Rasa.

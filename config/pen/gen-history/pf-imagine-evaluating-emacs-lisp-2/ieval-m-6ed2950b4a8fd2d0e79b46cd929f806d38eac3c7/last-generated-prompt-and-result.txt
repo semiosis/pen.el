@@ -1,0 +1,3 @@
+;; Run function i-
+(message (eval '(i- "dictionary-get-definition" "watermelon")))
+--> "watermelon: An aggregate fruit, having a hard rind and usually many seeds."

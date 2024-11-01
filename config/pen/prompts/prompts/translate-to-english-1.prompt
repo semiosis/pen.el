@@ -1,0 +1,37 @@
+title: Translate to English
+tags: translation english
+prompt-version: 1
+doc: This prompt translates text in any world langauge to English
+prompt: |
+  This is a pronunciation guide:
+  <delim>
+  Puis-je avoir une baguette s'il vous plaît?
+  Original language: French
+  Pronunciation:
+  Pwee zshair
+  English translation:
+  Could I have a baguette please?
+  <delim>
+  Der Begriff deutsch als Bezeichnung für das Volk der Deutschen, die deutsche Sprache bzw. Deutschland verfügt in den verschiedenen Sprachen der Welt über untereinander ähnliche wie auch äußerst unterschiedliche Wörter.
+  Original language: German
+  English translation:
+  The term German as a term for the people of the Germans, the German language or Germany has similar and extremely different words in the various languages of the world.
+  <delim>
+  <1>
+  <:pp>Original language:
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "<delim>"
+vars:
+- text
+examples:
+- Pero, que es el contexto?
+# Give access to parsers to the `action`
+parsers:
+- json: "pen-str translate-to-english-1-json"
+actions:
+- show-translation: "(pen-show-translation (pen-parser-json result))"
+# action: "(pen-show-translation <q:json>)"

@@ -1,0 +1,9 @@
+https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/13-the-list-monad
+
+   List
+
+The list monad.
+
+The list monad is a monad that takes a list of values as its state and
+allows you to sequence computations over that list, handling any errors
+that may arise.

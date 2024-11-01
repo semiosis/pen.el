@@ -1,0 +1,35 @@
+ (T.unpack . T.pack) columns
+
+  -- Print the numbers, one per line.
+  print $ map (\n -> show n ++ "\n") numbers
+EOD
+
+# python files
+
+cat draft.py <<EOD
+import csv
+import sys
+import io
+import os.path
+import re
+import json
+from datetime import datetime, timedelta, timezone
+
+
+def main():
+
+    # Read the CSV from stdin and decode it into a list of lines.
+
+    lines = sys.stdin.buffer.readlines()
+
+    # Parse the CSV into a list of records, one for each line in the CSV file.
+
+    reader = csv.reader(lines)
+
+    records = []
+
+    for row in reader:
+
+        records += [row]
+
+    # Convert each record into a list of strings, one for each column in the record.

@@ -1,0 +1,9 @@
+https://docs.racket-lang.org/reference/if.html#(form._((lib._racket/private/letstx-scheme..rkt)._else))
+
+
+      (let ([x #f])
+        (if x
+            (let ([y 42])
+              y)
+            (let ([y (call/cc (lambda (throw)
+                                (throw #f y))))

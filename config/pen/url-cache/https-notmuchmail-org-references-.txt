@@ -1,0 +1,182 @@
+HTTP/1.1 200 OK
+Date: Thu, 07 Dec 2023 04:23:59 GMT
+Server: Apache/2.4.57 (Debian)
+Last-Modified: Thu, 25 May 2017 17:15:24 GMT
+ETag: "109b-5505c5dc8d11c-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 1525
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>references</title>
+
+<link rel="stylesheet" href="../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/ikiwiki.cgi?do=edit&amp;page=references" />
+
+
+
+
+</head>
+<body>
+
+<div class="pageheader">
+<div class="header">
+<span>
+<span class="parentlinks">
+
+<a href="../">notmuch</a>/ 
+
+</span>
+<!--
+<span class="title">
+references
+
+</span>
+-->
+</span><!--.header-->
+
+</div>
+
+<!--
+
+<div class="actions">
+<ul>
+
+<li><a href="/ikiwiki.cgi?do=edit&amp;page=references" rel="nofollow">Edit</a></li>
+
+
+<li><a href="../recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+<li><span class="createlink"><a href="/ikiwiki.cgi?do=create&amp;from=references&amp;page=Discussion" rel="nofollow">?</a>Discussion</span><br /></li>
+
+
+</ul>
+</div>
+
+-->
+
+
+
+</div> <!-- .pageheader -->
+
+
+
+<div id="content">
+<p><a href="../notmuch-logo.png"><img src="../notmuch-logo.png" width="58" height="50" alt="Notmuch logo" class="left" /></a></p>
+
+<h1><a name="index1h1"></a>References</h1>
+
+<div class="toc">
+<ol>
+	<li class="L1"><a href="#index1h1">References</a>
+	<ol>
+		<li class="L2"><a href="#index1h2">RFC</a>
+		</li>
+		<li class="L2"><a href="#index2h2">Maildir</a>
+		</li>
+		<li class="L2"><a href="#index3h2">Dependencies</a>
+		</li>
+	</ol>
+	</li>
+</ol>
+</div>
+
+
+<h2><a name="index1h2"></a>RFC</h2>
+
+<p>Some of the most important RFCs related to Notmuch development are:</p>
+
+<ul>
+<li><p><a href="https://tools.ietf.org/html/rfc822">822</a> - Standard for the Format of Arpa
+Internet Text Messages</p></li>
+<li><p><a href="https://tools.ietf.org/html/rfc1521">1521</a> - MIME (Multipurpose Internet Mail
+Extensions) Part One: Mechanisms for Specifying and Describing the Format of
+Internet Message Bodies</p></li>
+<li><p><a href="https://tools.ietf.org/html/rfc1847">1847</a> - Security Multiparts for MIME:
+Multipart/Signed and Multipart/Encrypted</p></li>
+<li><p><a href="https://tools.ietf.org/html/rfc2047">2047</a> - Multipurpose Internet Mail
+Extensions (MIME) Part Three: Message Header Extensions for Non-ASCII Text</p></li>
+<li><p><a href="https://tools.ietf.org/html/rfc2392">2392</a> - Content-ID and Message-ID
+Uniform Resource Locators</p></li>
+<li><p><a href="https://tools.ietf.org/html/rfc2822">2822</a> - Internet Message Format</p></li>
+<li><p><a href="https://tools.ietf.org/html/rfc3156">3156</a> - MIME Security with OpenPGP</p></li>
+</ul>
+
+
+<p>See the <a href="http://spruce.sourceforge.net/gmime/">GMime home page</a> for a more
+comprehensive list of relevant RFCs.</p>
+
+<h2><a name="index2h2"></a>Maildir</h2>
+
+<p><a href="http://cr.yp.to/proto/maildir.html">Maildir</a></p>
+
+<h2><a name="index3h2"></a>Dependencies</h2>
+
+<p><a href="http://xapian.org/">Xapian</a> <a href="http://xapian.org/docs/">documentation</a> and <a href="http://xapian.org/docs/apidoc/html/index.html">API
+reference</a></p>
+
+<p><a href="http://spruce.sourceforge.net/gmime/">GMime</a>
+<a href="http://spruce.sourceforge.net/gmime/tutorial/">tutorial</a> and <a href="https://developer.gnome.org/gmime/stable/">API
+reference</a></p>
+
+<p><a href="http://www.gtk.org/">Glib</a> <a href="https://developer.gnome.org/glib/stable/">API
+reference</a></p>
+
+<p><a href="http://talloc.samba.org/talloc/doc/html/libtalloc__tutorial.html">Talloc tutorial</a> and
+<a href="http://talloc.samba.org/talloc/doc/html/index.html">API reference</a></p>
+
+<p><a href="http://zlib.net/">Zlib</a> <a href="http://zlib.net/manual.html">API reference</a></p>
+
+</div>
+
+
+
+<div id="footer" class="pagefooter">
+<div id="pageinfo">
+
+
+
+
+<div id="backlinks">
+Links:
+
+<a href="../">index</a>
+
+
+</div><!-- #backlinks -->
+
+
+
+
+
+
+<div class="pagedate">
+Last edited <span class="date">Fri 02 May 2014 07:23:26 AM PDT</span>
+<!-- Created <span class="date">Fri 02 May 2014 07:23:26 AM PDT</span> -->
+</div>
+
+</div><!-- #pageinfo -->
+
+<!-- from notmuch -->
+</div><!-- .pagefooter #footer -->
+
+</body>
+</html>

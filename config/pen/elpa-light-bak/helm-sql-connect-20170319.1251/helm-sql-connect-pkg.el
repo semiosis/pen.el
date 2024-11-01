@@ -1,0 +1,2 @@
+;;; Generated package description from helm-sql-connect.el  -*- no-byte-compile: t -*-
+(define-package "helm-sql-connect" "20170319.1251" "Choose a database to connect to via Helm." '((helm "0.0.0")) :commit "5aead55b6f8636140945714d8c332b287ab9ef10" :authors '(("Eric Hansen" . "hansen.c.eric@gmail.com")) :maintainer '("Eric Hansen" . "hansen.c.eric@gmail.com") :keywords '("tools" "convenience" "comm") :url "https://github.com/eric-hansen/helm-sql-connect")

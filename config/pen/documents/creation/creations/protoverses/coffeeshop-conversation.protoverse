@@ -1,0 +1,32 @@
+name: Coffee-shop conversation
+
+# Beat Street cafe
+# Spookie Boogie cafe
+# venue will default to <venue>, which will take the value from dni
+venue: ~
+# If venue is empty, generate the venue name
+
+# defs should be loaded with d'ni
+# encapulate the load with variable scope for the protoverse keys
+
+el: |-
+  (defun get-venue-name()
+    (if (sor venue)
+        (concat "an awesome coffee shop named" venue)
+      (concat "an awesome coffee shop")))
+
+dni:
+- task: "Write a bio about <(get-venue-name)"
+
+- review: |-
+    Coffee shop review:
+    <(pf-instruct-an-ai-to-write-something/1 task)>
+
+# - <(ilist 10 \"Famous coffee shops\")>
+- venue: "<(if venue venue (pf-christen-something-with-a-name/1 review))>"
+- description: "<review>"
+
+# description will default to <description> which will get its value from dni
+description: ~
+
+intro: "This is the conversation that ensued at <venue>."

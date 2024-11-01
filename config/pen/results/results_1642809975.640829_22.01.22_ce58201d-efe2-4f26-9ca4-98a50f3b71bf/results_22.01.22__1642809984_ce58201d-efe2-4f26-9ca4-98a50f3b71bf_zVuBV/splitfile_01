@@ -1,0 +1,30 @@
+
+###
+Human: Especially those that you can install with the "--global" argument.
+###
+AI: There are multiple packages that can be installed globally with the "--global" argument.
+###
+Human: Can you list them?
+###
+AI: Sure.
+The following packages can be installed globally with the "--global" argument.
+###
+Human: Type them all out.
+###
+AI: vscode-snippet-manager
+vscode-scss-lint
+vscode-icons-team
+vscode-icons
+vscode-icons-team
+vscode-icon-theme
+vscode-icons
+###
+Human: What properties do they have?
+###
+AI: The following properties are common across all packages.
+###
+Human: What are their descriptions?
+###
+AI: The descriptions of packages are as follows.
+###
+Human: Can you

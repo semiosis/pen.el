@@ -1,0 +1,10 @@
+- 1. William O. Abbott (1902–1943)
+- 2. Virginia Apgar (1909–1974)
+- 3. Theresa Anderson (1872–1967)"""
+num_topics = 2
+help(ldamodel)
+ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=num_topics, id2word=dictionary, passes=10)
+# save model
+ldamodel.save('model_' + str(num_topics))
+# load model
+ldamodel = LdaModel.load('model_' + str(num_topics)) #

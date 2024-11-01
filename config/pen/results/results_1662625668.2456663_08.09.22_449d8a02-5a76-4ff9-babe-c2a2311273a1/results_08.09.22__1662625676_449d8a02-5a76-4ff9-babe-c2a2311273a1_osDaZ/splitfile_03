@@ -1,0 +1,7 @@
+https://clojuredocs.org/clojure.core/swap/
+
+                                                      swap
+
+   swap(x,y)
+
+   Swap the two top-most stack elements.

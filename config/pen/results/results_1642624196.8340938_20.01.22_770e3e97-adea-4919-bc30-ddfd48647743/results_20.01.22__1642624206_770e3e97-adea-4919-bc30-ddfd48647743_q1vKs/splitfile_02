@@ -1,0 +1,8 @@
+
+      (= "run" type) (run-command dir)
+      (= "run-file" type) (run-file dir)
+      (= "run-file-with-args" type) (run-file-with-args dir)
+      (= "run-file-with-args-and-env" type) (run-file-with-args-and-env dir)
+      (= "run-file-with-env" type) (run-file-with-env dir)
+      (= "run-file-with-env-and-args" type) (run-file-with-env-and-args dir)
+      (= "run-file-with-env

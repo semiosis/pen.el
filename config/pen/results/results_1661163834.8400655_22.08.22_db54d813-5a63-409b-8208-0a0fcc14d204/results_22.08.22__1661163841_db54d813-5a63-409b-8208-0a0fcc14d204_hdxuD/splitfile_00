@@ -1,0 +1,13 @@
+
+stack exec DoLetExample3
+stack exec FixedPointExample
+stack exec FibExample
+
+or use them as samples in a larger program:
+
+~~~~~~~~
+module Main where
+
+import CommonWords
+
+import DoLetExample

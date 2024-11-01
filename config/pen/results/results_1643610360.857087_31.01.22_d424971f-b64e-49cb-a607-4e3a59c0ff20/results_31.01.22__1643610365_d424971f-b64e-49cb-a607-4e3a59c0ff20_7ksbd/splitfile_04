@@ -1,0 +1,8 @@
+mode: off
+
+# If you're using a terminal for Emacs, use this setting instead
+
+# of the above one, since it works without X11.
+cardinal-emacs-pane-size: 80
+
+#

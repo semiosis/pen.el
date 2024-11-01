@@ -1,0 +1,8 @@
+cd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology;  "I" "Thessalonians" "4:6-7" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "John" "4:17" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "John" "4:16-17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Peter" "4:1-2" "#" "<==" "bash"
+cd /root/notes;  "I" "Peter" "4:12" "#" "<==" "zsh"
+cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers;  "I" "Peter" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Peter" "1:14-19" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/docs/theology;  "I" "Peter" "1:17-19" "#" "<==" "zsh"

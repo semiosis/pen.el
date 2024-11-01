@@ -1,0 +1,3 @@
+":db/cardinality" is a special attribute that can be used to enforce cardinality
+constraints on attributes.
+

@@ -1,0 +1,5 @@
+""large-file-warning-threshold" refers to the size at which
+Emacs will ask you whether you want to open a file in
+"large-file-mode" (a minor mode that increases buffer size and turns on
+auto-fill-mode) when you visit it.
+

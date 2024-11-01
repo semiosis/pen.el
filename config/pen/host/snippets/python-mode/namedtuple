@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: namedtuple
+# group: collections
+# key: nt
+# --
+# vim +/"direction" "$MYGIT/IpsumDominum/ascii-spaceinvaders/objects.py"
+from collections import namedtuple
+direction = namedtuple("direction","x y")

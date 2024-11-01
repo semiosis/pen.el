@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "slime" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "slime" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "slime" "#" "<==" "pen-pk"
+cd /root/.emacs.d/host/pen.el/src;  "slime" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "slime" "#" "<==" "zsh"

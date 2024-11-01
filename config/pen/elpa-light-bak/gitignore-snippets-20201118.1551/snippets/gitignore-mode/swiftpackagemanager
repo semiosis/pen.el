@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: SwiftPackageManager
+# contributor: Toptal & contributors
+# key: swiftpackagemanager
+# --
+
+### SwiftPackageManager ###
+
+Packages
+.build/
+xcuserdata
+DerivedData/
+*.xcodeproj
+

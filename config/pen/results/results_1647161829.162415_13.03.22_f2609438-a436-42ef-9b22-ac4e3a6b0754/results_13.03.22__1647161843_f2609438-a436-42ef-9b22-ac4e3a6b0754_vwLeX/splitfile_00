@@ -1,0 +1,26 @@
+ialization(main).
+
+:- prolog_flag(unknown,_,fail).
+
+:- use_module(library(lists)).
+:- use_module(library(ordsets)).
+:- use_module(library(random)).
+:- use_module(library(system)).
+:- use_module(library('linda/client')).
+:- use_module(library('linda/server')).
+:- use_module(library('system/files')).
+:- use_module(library('system/sysinfo')).
+:- use_module('$GRAPHITE').
+EOD
+
+  if ($prolog eq "sicstus") {  # SICStus specific code
+
+    print "SICStus specific code\n";
+
+    print "Loading runtime system: $runtime\n";
+
+    system("$runtime");
+
+    print "Starting server: $server\n";
+
+    system("

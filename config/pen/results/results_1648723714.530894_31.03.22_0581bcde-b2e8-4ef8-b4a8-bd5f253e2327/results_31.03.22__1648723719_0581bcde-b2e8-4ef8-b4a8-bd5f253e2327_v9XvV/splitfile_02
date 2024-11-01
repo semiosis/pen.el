@@ -1,0 +1,1 @@
+- Simon Peyton Jones (1957-): It's an optional flag that you can use in data declarations. It is a way of providing additional information about the type to automatically generate some of the code for you. The Show instance for GameState is for automatically generating a definition of the toString method.

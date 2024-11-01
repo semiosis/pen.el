@@ -1,0 +1,62 @@
+ade
+ADE Development Environment
+    A modular Docker-based tool to ensure that
+    all developers in a project have a common,
+    consistent development environment.
+
+    Encapsulates most of the options needed to
+    start and run the Docker container with
+    the correct docker run options.
+    
+    However, a power user of Docker may find
+    certain options missing.
+    
+    ade start allows users to pass additional
+    arguments to docker run.
+
+Docker
+    Allows the creation of containers with
+    isolated resources from the host OS:
+    
+    A computer program that performs
+    operating-system-level virtualization also
+    known as containerization.
+
+Image
+    Snapshots of the filesystem for a
+    container.
+    
+    They are based on a Dockerfile, and are
+    created using docker build.
+    
+    Images can be uploaded to a registry,
+    where they can be downloaded by others.
+
+Container
+    A running instance of an image.
+    
+    When a container is deleted, any changes
+    to its filesystem are usually discarded.
+    
+    A container can publish parts of its
+    filesystem as volumes, which can then be
+    mounted by other containers.
+
+Registry
+    A server-side application that stores pre-
+    built Docker images.
+
+Fully-qualified name
+FQN
+    The term for the full URL-like path that
+    describes an image.
+    
+    e.g. registry.gitlab.com/apexai/ade-atom:latest
+
+Tag
+    A specific version of an image. e.g.
+    latest in the FQN above
+
+Host
+    The native operating system on which
+    Docker is running.

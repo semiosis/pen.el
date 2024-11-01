@@ -1,0 +1,3 @@
+
+    set bufhidden=wipe
+    call termopen(['x-terminal-emulator', '-e', 'sh', '-c', 'TERM=screen-256color ~/.config/nvim/bin/

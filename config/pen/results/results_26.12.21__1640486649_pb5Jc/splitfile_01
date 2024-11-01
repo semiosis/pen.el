@@ -1,0 +1,5 @@
+"generating" functions is a bit of a misnomer,
+because they are not functions in the traditional
+sense. They are actually just commands that
+emacs can run.
+

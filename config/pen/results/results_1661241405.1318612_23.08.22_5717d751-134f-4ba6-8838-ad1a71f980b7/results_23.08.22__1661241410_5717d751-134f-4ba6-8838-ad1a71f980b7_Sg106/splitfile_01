@@ -1,0 +1,8 @@
+
+
+incrementState :: (MonadState Int m) => m Int
+incrementState = do
+
+Let us now go through this step-by-step. In the first part of the code, we have:
+
+In

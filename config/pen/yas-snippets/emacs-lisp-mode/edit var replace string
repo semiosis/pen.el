@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: edit var replace string
+# group: ev
+# key: evs
+# --
+(setq ${1:var} (s-replace-regexp "${2:rep}" "${3:string}" $1))

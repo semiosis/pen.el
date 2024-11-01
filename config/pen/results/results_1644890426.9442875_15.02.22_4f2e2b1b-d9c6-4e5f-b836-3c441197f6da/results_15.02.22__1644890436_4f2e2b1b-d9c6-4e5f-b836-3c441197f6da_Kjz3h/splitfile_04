@@ -1,0 +1,16 @@
+")
+
+poem5 = Poem.create(title: "The Room",
+    body:"It was a clean room. It had white wallpaper with white carpeting. The
+    bed was made neatly in the center of the room. No signs of life. The
+    curtains were hanging straight, held by invisible hands. On the white nightgown,
+    which hung on the closet door, a single black spot. It was of a small dog.
+
+    In the room, on one wall, there was a wardrobe of four doors, all white. The doors
+    were without handles, as if they were sewn into the wall. In front of them there was a mirror:
+    It was like looking at yourself from under water—four people looking at themselves with small
+    holes for eyes and mouths in their heads.")
+
+
+poem6 = Poem.create(title: "The Young Man",
+    body:"She lay in

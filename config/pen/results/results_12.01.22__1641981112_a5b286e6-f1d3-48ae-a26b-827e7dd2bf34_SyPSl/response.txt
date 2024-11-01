@@ -1,0 +1,20 @@
+"There are a lot of fakeumentaries!"
+"""
+
+def print_range(first, last):
+    if first >= last:
+        raise ValueError("first must be less than last")
+    while first <= last:
+        print(first)
+        first += 1
+
+
+if __name__ == "__main__":
+
+    import doctest
+
+    print("Testing...")
+
+    doctest.testmod()
+
+    print("Done.")

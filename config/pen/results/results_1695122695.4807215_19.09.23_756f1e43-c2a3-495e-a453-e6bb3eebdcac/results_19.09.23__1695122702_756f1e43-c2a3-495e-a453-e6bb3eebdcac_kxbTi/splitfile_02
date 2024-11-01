@@ -1,0 +1,5 @@
+ GY_PLUGIN
+
+while true; do
+
+$GY_CMD convert_env $GY_PLUGIN/gy_convert.cfg -m $GY_PLUGIN/gy_metadata.json -

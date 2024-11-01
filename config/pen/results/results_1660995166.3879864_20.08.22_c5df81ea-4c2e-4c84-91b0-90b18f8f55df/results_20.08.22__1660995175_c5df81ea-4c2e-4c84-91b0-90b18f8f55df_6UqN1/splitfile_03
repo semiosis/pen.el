@@ -1,0 +1,20 @@
+
+  (let ((char-int (string-to-number char)))
+    (cond ((and (>= char-int 1) (<= char-int 26))
+           (- char-int 1))
+          (t
+           nil))))
+
+(defun pen-modeline-buffer ()
+  "Return the name of the current buffer for the mode line.
+Uses `pen-modeline-buffer-alist' to determine how to shorten the name."
+  (let ((bn (buffer-name))
+        (case-fold-search nil) ; case sensitive matching
+        (shortenp t)
+        shortname)
+
+    ;; try to shorten the buffer name according to `pen-modeline-buffer-alist'
+
+    ;; first, remove trailing whitespace and find the first match in the alist
+
+    (setq bn (replace-regexp-in-string "[ \t\n

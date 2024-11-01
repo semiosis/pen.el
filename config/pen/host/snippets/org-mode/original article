@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: original article
+# group: def
+# key: oa
+# --
++ Original article :: ${0:https://instagram-engineering.com/python-at-scale-strict-modules-c0bb9245c834}

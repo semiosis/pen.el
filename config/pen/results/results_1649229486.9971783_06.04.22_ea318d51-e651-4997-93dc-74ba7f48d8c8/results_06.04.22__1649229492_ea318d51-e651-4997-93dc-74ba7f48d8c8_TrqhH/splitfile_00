@@ -1,0 +1,7 @@
+
+
+
+-- want to create a list of lists
+-- data ListOfLists a = LEList {listelems :: Ilist a}
+-- | LEList [] = Nil
+-- | LEList (x : x

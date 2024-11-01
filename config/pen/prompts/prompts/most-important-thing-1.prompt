@@ -1,0 +1,25 @@
+title: "most important thing"
+tags: fun chatbot
+doc: "What is the most important thing about this text?"
+prompt-version: 3
+prompt: |+
+  I was asked to think about the following sentence:
+  "<passage>".
+  That is important, but I think the more important thing is, in one sentence:
+  "
+engine: "OpenAI Davinci"
+temperature: 0.8
+max-generated-tokens: 200
+top-p: 1.0
+cache: on
+preprocessors:
+- chomp
+stop-sequences:
+- "\""
+vars:
+- "passage"
+examples:
+- "It is better to give than to receive."
+filter: yes
+postprocessor: sed -z -e "s/\\.*$//"
+frequency-penalty: 0.3

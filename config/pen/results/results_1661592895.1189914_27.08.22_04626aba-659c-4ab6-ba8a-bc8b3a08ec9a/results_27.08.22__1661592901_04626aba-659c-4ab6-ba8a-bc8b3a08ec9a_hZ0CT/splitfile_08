@@ -1,0 +1,9 @@
+
+  let maxWidths = maximumBy (comparing length) $ map width rows
+  forM_ rows $ \row -> do
+    let row' = map (\s -> " " ++ s ++ " ") (zip maxWidths row)
+    putStrLn $ T.pack $ map T.unpack row'
+
+width :: [String] -> Int
+width = length . maximumBy (comparing length)
+EOD

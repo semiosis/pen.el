@@ -1,0 +1,50 @@
+title: "Generate program from NL"
+doc: "Generate a NL description and a language, generate a program"
+tags: code
+# This prompt is for LMs that have not been trained on code
+utilises-code: no
+info: on
+prompt-version: 3
+subprompts:
+- metadata: |+
+    # Program task description: <q:nl>
+    # Simple implementation in <language>:
+    cat <sl:language>_program <<EOD
+    <context code>
+prompt: |+
+    <metadata>
+xlr-n-generate: 5
+engine: "OpenAI Codex"
+temperature: 0.2
+# TODO Use pen-preview-token-length
+max-generated-tokens: 50
+top-p: 1.0
+best-of: 1
+no-trim-start: off
+no-trim-end: off
+stop-sequences:
+- "EOD"
+yas: on
+vars:
+- context code
+- language
+- nl
+var-defaults:
+# - "(buffer-string-visible)"
+- "(sor (pen-selected-text t) (s-chompall (pen-preceding-text)))"
+- "(pen-detect-language-ask)"
+examples:
+- |
+    var myDraw = Draw(200, 200, true);
+    var x1 = randomInteger(200);
+    var y1 = randomInteger(200);
+    var x2 = randomInteger(200);
+    var y2 = randomInteger(200);
+    myDraw.line(x1, y1, x2, y2);
+n-test-runs: 5
+n-collate: 1
+# TODO If most of htese are the same, then say high accuracy
+n-completions: 10
+filter: no
+completion: off
+insertion: off

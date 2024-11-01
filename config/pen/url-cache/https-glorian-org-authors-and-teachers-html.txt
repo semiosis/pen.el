@@ -1,0 +1,761 @@
+HTTP/1.1 404 Not Found
+Connection: close
+set-cookie: f0aa9bbbfec6d3f376848f19e80ed19a=fddeb1db56e3e3400a204d8aefd56a26; path=/; secure; HttpOnly
+content-type: text/html; charset=utf-8
+cache-control: no-store, no-cache, no-transform
+expires: Wed, 17 Aug 2005 00:00:00 GMT
+x-4seo-generator: 4SEO
+transfer-encoding: chunked
+vary: Accept-Encoding
+date: Thu, 27 Oct 2022 21:22:10 GMT
+server: LiteSpeed
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+timing-allow-origin: *
+referrer-policy: unsafe-url
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+    <head>
+<script class="4SEO_analytics_rule_1858">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-57VXZ7F');
+</script>
+
+<script class="4SEO_analytics_rule_1859" async src="https://www.googletagmanager.com/gtag/js?id=G-X5TVST8Q49"></script>
+<script class="4SEO_analytics_rule_1859">
+    window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X5TVST8Q49');</script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="//glorianorg-rochen.netdna-ssl.com/images/favicon-96x96.png" sizes="any">
+                <link rel="apple-touch-icon" href="//glorianorg-rochen.netdna-ssl.com/images/apple-icon-180x180.png">
+        <meta charset="utf-8">
+	<base href="https://glorian.org/books/authors">
+	<meta name="description" content="Oops! that page cannot be found... We do not have any page at the address you requested. Sorry about the trouble!Please use the menu to navigate to other pages ...">
+	<meta name="generator" content="sunyata">
+	<title>Oops! that page cannot be found...</title>
+	<link href="https://glorian.org/search?format=opensearch" rel="search" title="Glorian" type="application/opensearchdescription+xml">
+<link href="//glorianorg-rochen.netdna-ssl.com/media/vendor/awesomplete/css/awesomplete.css?1.1.5" rel="stylesheet" />
+	<link href="//glorianorg-rochen.netdna-ssl.com/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet" />
+	<link href="//glorianorg-rochen.netdna-ssl.com/media/system/css/joomla-fontawesome.min.css?3.0.5" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+	<link href="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/css/theme.52.css?1665491592" rel="stylesheet" />
+<script src="//glorianorg-rochen.netdna-ssl.com/media/vendor/awesomplete/js/awesomplete.min.js?1.1.5" defer></script>
+	<script type="application/json" class="joomla-script-options new">{"finder-search":{"url":"\/component\/finder\/?task=suggestions.suggest&amp;format=json&amp;tmpl=component&amp;Itemid=13787"},"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/glorian.org\/","base":"","baseFull":"https:\/\/glorian.org\/"},"csrf.token":"29ecb5c56e012d91fea4cf5a966098b2"}</script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/system/js/core.min.js?bea7b244e267b04087cedcf531f6fe827a8e101f"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/com_finder/js/finder-es5.min.js?bad573eb3c559a3e1070529bf0ccb8d8745ba5f3" nomodule defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/system/js/messages-es5.min.js?70b6651d6deab46dc8a25f03338f66f540cc62e2" nomodule defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/com_finder/js/finder.min.js?29fe670bb180ec95c613a0e6aa6df738d9de97d4" type="module"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/system/js/messages.min.js?7425e8d1cb9e4f061d5e30271d6d99b085344117" type="module"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/media/com_widgetkit/js/maps.js" defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/vendor/yootheme/theme-cookie/app/cookie.min.js?3.0.5" defer></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?3.0.5"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-trek.min.js?3.0.5"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/templates/yootheme/js/theme.js?3.0.5"></script>
+	<script src="//glorianorg-rochen.netdna-ssl.com/plugins/system/yooessentials/modules/element/elements/social_sharing_item/assets/asset.js?1.8.1" defer></script>
+	<script>document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });</script>
+	<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=JCzaTM"></script>
+	<meta name="generator" content="SEO optimization by 4SEO" class="4SEO_generator_tag">
+	<script>(window.$load = window.$load || []).push(function(c,n) {try {consentGranted();
+} catch (e) {console.error(e)} n()});
+</script>
+	<script>var $theme = {"cookie":{"mode":"notification","template":"<div class=\"tm-cookie-banner uk-section uk-section-xsmall uk-section-primary uk-position-bottom uk-position-fixed\">\n        <div class=\"uk-container uk-container-expand uk-text-center\">\n\n            This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.\n                            <button type=\"button\" class=\"js-accept uk-button uk-button-secondary uk-margin-small-left\" data-uk-toggle=\"target: !.uk-section; animation: true\">I understand<\/button>\n            \n            \n        <\/div>\n    <\/div>","position":"bottom"}};</script>
+
+    
+<style type="text/css">input[name='my_name'] {display: none !important;}</style>
+
+<style type="text/css">input[name='your_address'] {display: none !important;}</style>
+</head>
+    <body class="">
+<noscript class="4SEO_analytics_rule_1858"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57VXZ7F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<div class="tm-header-mobile uk-hidden@m" uk-header>
+
+
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://glorian.org/" aria-label="Back to the homepage" class="uk-logo uk-navbar-item">
+    <img alt="Glorian" width="200" height="31" src="//glorianorg-rochen.netdna-ssl.com/images/svg/glorian-logo-tr-h.svg"></a>
+                        
+                                                    <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle uk-navbar-toggle-animate">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+                <span class="uk-margin-small-left uk-text-middle">Menu</span>
+        
+    </a>
+                        
+                    </div>
+                    
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+    
+    
+        <div id="tm-dialog-mobile" class="uk-dropbar uk-dropbar-top" uk-drop="{&quot;clsDrop&quot;:&quot;uk-dropbar&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header-mobile&quot;,&quot;target-y&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;target-x&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;stretch&quot;:true,&quot;bgScroll&quot;:&quot;false&quot;,&quot;animation&quot;:&quot;reveal-top&quot;,&quot;animateOut&quot;:true,&quot;duration&quot;:300,&quot;toggle&quot;:&quot;false&quot;}">
+
+        <div class="tm-height-min-1-1 uk-flex uk-flex-column">
+
+                        <div class="uk-margin-auto-bottom">
+                
+<div class="uk-grid uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-menu-dialog-mobile">
+
+    
+    
+<ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+    
+	<li class="item-13827"><a href="/books"> Books</a></li>
+	<li class="item-13829 js-accordion uk-parent"><a href> Learn <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-13830"><a href="/learn/courses-and-lectures"> Courses and Lectures</a></li>
+		<li class="item-13841"><a href="/learn/glossary"> Glossary</a></li>
+		<li class="item-13845"><a href="/learn/podcast-and-radio"> Podcast and Radio</a></li>
+		<li class="item-13842"><a href="/learn/scriptures"> Scriptures</a></li>
+		<li class="item-13900"><a href="/learn/topics"> Topics</a></li>
+		<li class="item-13834"><a href="/learn/video"> Video</a></li></ul></li>
+	<li class="item-13838 js-accordion uk-parent"><a href> Connect <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-13855"><a href="/connect/ask-instructor/forums/1-questions"> Ask Instructor</a></li>
+		<li class="item-13903"><a href="/connect/blog"> Blog</a></li>
+		<li class="item-13887"><a href="/connect/event-calendar"> Event Calendar</a></li></ul></li>
+	<li class="item-13839"><a href="https://shop.glorian.org" target="_blank"> Shop</a></li>
+	<li class="item-13938"><a href="/give/donate" class="button"> Donate</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-932">
+
+    
+    
+
+    <form id="search-932" action="/search" method="get" role="search" class="uk-search js-finder-searchform uk-search-default uk-width-1-1"><span uk-search-icon class="uk-position-z-index"></span><input name="q" class="js-finder-search-query uk-search-input" placeholder="Search" required type="search"><input type="hidden" name="2e0e53d529bbaa545bf7a1f2b9958d6b" value="1666905730"/></form>
+
+
+
+
+
+
+</div>
+</div></div>
+            </div>
+            
+            
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://glorian.org/" aria-label="Back to the homepage" class="uk-logo uk-navbar-item">
+    <img alt="Glorian" width="200" height="31" src="//glorianorg-rochen.netdna-ssl.com/images/svg/glorian-logo-tr-h.svg"></a>
+                        
+                        
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                        
+                                                    
+<ul class="uk-navbar-nav">
+    
+	<li class="item-13827"><a href="/books"> Books</a></li>
+	<li class="item-13829 uk-parent"><a role="button"> Learn</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-13830"><a href="/learn/courses-and-lectures"> Courses and Lectures</a></li>
+		<li class="item-13841"><a href="/learn/glossary"> Glossary</a></li>
+		<li class="item-13845"><a href="/learn/podcast-and-radio"> Podcast and Radio</a></li>
+		<li class="item-13842"><a href="/learn/scriptures"> Scriptures</a></li>
+		<li class="item-13900"><a href="/learn/topics"> Topics</a></li>
+		<li class="item-13834"><a href="/learn/video"> Video</a></li></ul></div></div></div></li>
+	<li class="item-13838 uk-parent"><a role="button"> Connect</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-13855"><a href="/connect/ask-instructor/forums/1-questions"> Ask Instructor</a></li>
+		<li class="item-13903"><a href="/connect/blog"> Blog</a></li>
+		<li class="item-13887"><a href="/connect/event-calendar"> Event Calendar</a></li></ul></div></div></div></li>
+	<li class="item-13839"><a href="https://shop.glorian.org" target="_blank"> Shop</a></li>
+	<li class="item-13938"><a href="/give/donate" class="button"> Donate</a></li></ul>
+
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-right">
+
+                        
+                                                    
+
+    <a class="uk-navbar-toggle" id="module-931" href="#search-931-modal" uk-search-icon uk-toggle></a>
+
+    <div id="search-931-modal" class="uk-modal-full" uk-modal="container: true">
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s"></button>
+            <div class="uk-search uk-search-large">
+                <form id="search-931" action="/search" method="get" role="search" class="uk-search js-finder-searchform uk-search-large"><input name="q" class="js-finder-search-query uk-search-input uk-text-center" placeholder="Search" required type="search" autofocus><input type="hidden" name="2e0e53d529bbaa545bf7a1f2b9958d6b" value="1666905730"/></form>            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</div>
+
+            
+            
+
+            
+            <div id="tm-main"  class="tm-main uk-section uk-section-default" uk-height-viewport="expand: true">
+                <div class="uk-container">
+
+                    
+                            
+            
+            <div id="system-message-container" aria-live="polite"></div>
+
+            <div id="forseo_error_page_content">
+	        <h1 class="forseo_error_page_title">Oops! that page cannot be found...</h1>
+				<p>We do not have any page at the address you requested. Sorry about the trouble!</p><p>Please use the menu to navigate to other pages of the site, or perform a search to find what you are looking for!</p>		        <hr/>
+		<p>We do have these pages that look similar to your request, maybe try them first?</p>        <ul class="forseo_error_page_suggested">
+			                <li class="forseo_error_page_suggested">
+                    <a href="/books/beyond-death"
+                       title="Beyond Death">Beyond Death</a>
+                </li>
+			                <li class="forseo_error_page_suggested">
+                    <a href="/books/beyond-death/ghosts"
+                       title="Ghosts">Ghosts</a>
+                </li>
+			                <li class="forseo_error_page_suggested">
+                    <a href="/books/aztec-christic-magic"
+                       title="Aztec Christic Magic">Aztec Christic Magic</a>
+                </li>
+			                <li class="forseo_error_page_suggested">
+                    <a href="/books"
+                       title="Glorian: Books by Samael Aun Weor">Glorian: Books by Samael Aun Weor</a>
+                </li>
+			        </ul>
+		        <hr/>
+        <small class="forseo_error_page_details">
+            <span class="forseo_error_page_details">
+                404: <em>Page not found</em>
+            </span>
+        </small>
+        <hr/>
+	</div>
+
+            
+                        
+                </div>
+            </div>
+            
+            
+<div id="module-894" class="builder"><!-- Builder #module-894 -->
+<div class="uk-section-default uk-section uk-padding-remove-top">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    <div class="uk-panel socialsharing uk-margin uk-text-right">Share This Page:</div>
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">    <div class="uk-child-width-auto uk-grid-small" uk-grid>
+        <div>
+<a rel="noreferrer" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fglorian.org%2Fbooks%2Fauthors" class="el-link uk-icon-button" uk-icon="icon: twitter;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fglorian.org%2Fbooks%2Fauthors" class="el-link uk-icon-button" uk-icon="icon: facebook;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://api.whatsapp.com/send?text=https%3A%2F%2Fglorian.org%2Fbooks%2Fauthors" class="el-link uk-icon-button" uk-icon="icon: whatsapp;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fglorian.org%2Fbooks%2Fauthors" class="el-link uk-icon-button" uk-icon="icon: linkedin;" target="_blank"></a></div>
+        <div>
+<a rel="noreferrer" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fglorian.org%2Fbooks%2Fauthors" class="el-link uk-icon-button" uk-icon="icon: pinterest;" target="_blank"></a></div>
+    
+    </div>
+</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+</div>
+
+            <!-- Builder #footer --><style class="uk-margin-remove-adjacent">#footer\#2-0-0 .uk-tile-xsmall {padding:15px;} </style>
+<div class="uk-section-muted uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div><div class="klaviyo-form-NMLwtA"></div></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-secondary uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-panel uk-margin-medium">
+    
+    
+
+    <div id="wk-grid789" class="uk-child-width-1-1 uk-grid-match uk-text-center " uk-height-match="target: &gt; div &gt; .uk-panel, &gt; div &gt; .uk-card; row: true" uk-grid >
+
+    
+        <div >
+            <div class="uk-panel">
+
+                
+                
+                
+                
+                    
+                        
+                        
+                                                <p class="uk-article-meta">Written on <time datetime="14-10-2022 19:05:10 +0000">2022-10-14</time></p>
+                        
+                        
+                                                <div class="uk-margin">“When one discovers the real cause of so much misery and bitterness, it becomes obvious that something can be done... ” —Samael Aun Weor, Great Rebellion <a href="http://ow.ly/xMwb50L6iaT">ow.ly/xMwb50L6iaT</a> </div>
+                        
+                        
+                        
+                    
+                
+            </div>
+        </div>
+
+    
+    </div>
+
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="footerlinks" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@s uk-width-1-4@m" id="footer#2-0-0">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <img src="//glorianorg-rochen.netdna-ssl.com/images/svg/glorian-logo-trajan.svg" width="300" height="234" class="el-image" alt="Glorian Publishing logo" loading="lazy">    
+    
+</div>
+<div class="uk-panel uk-text-small uk-margin"><p style="text-align: center;">A Non-profit Organization</p></div>
+<div class="uk-margin uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary" title="Contact Glorian" href="https://shop.glorian.org/pages/contact-us">
+    
+        Contact    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+<div class="uk-margin uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary uk-flex-inline uk-flex-center uk-flex-middle" title="Donate" href="https://glorian.org/give/donate">
+        <span class="uk-margin-small-right" uk-icon="heart"></span>    
+        Donate    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-remove-vertical">        Books    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/books" class="el-link uk-margin-remove-last-child"><p>Books</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><p>Books for Prisons</p></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/about/about-glorian/purchasing-for-education" class="el-link uk-margin-remove-last-child"><p>Books for Schools</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/about/about-glorian/wholesale" class="el-link uk-margin-remove-last-child"><p>Wholesale</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/gnostics" class="el-link uk-margin-remove-last-child"><p>Authors</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin uk-margin-remove-bottom">        Learn    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/learn/knowledge-is-power" class="el-link uk-margin-remove-last-child"><p>Knowledge is Power</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/courses-and-lectures" class="el-link uk-margin-remove-last-child"><p>Courses and Lectures</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/glossary" class="el-link uk-margin-remove-last-child">Glossary</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/podcast-and-radio" class="el-link uk-margin-remove-last-child"><p>Podcast and Radio</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/scriptures" class="el-link uk-margin-remove-last-child"><p>Scriptures</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/learn/topics" class="el-link uk-margin-remove-last-child">Topics</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/learn/video" class="el-link uk-margin-remove-last-child"><p>Videos</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-small">        Connect    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/connect/ask-instructor" class="el-link uk-margin-remove-last-child"><p>Ask an Instructor</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/connect/blog" class="el-link uk-margin-remove-last-child"><p>Blog</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/give/donate" class="el-link uk-margin-remove-last-child"><p>Donate</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/connect/event-calendar" class="el-link uk-margin-remove-last-child"><p>Event Calendar</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/pages/newsletter-signup" class="el-link uk-margin-remove-last-child"><p>Newsletter</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/give/volunteer" class="el-link uk-margin-remove-last-child"><p>Volunteer</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin uk-margin-remove-bottom">        About    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/about-glorian" class="el-link uk-margin-remove-last-child"><p>Glorian</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/gnostics" class="el-link uk-margin-remove-last-child"><p>Gnostics</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://glorian.org/about/gnostics/samael-aun-weor" class="el-link uk-margin-remove-last-child"><p>Samael Aun Weor</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<h5 class="uk-heading-divider uk-margin-remove-bottom">        Shop    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/collections/books" class="el-link uk-margin-remove-last-child">Books</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/collections/incense" class="el-link uk-margin-remove-last-child"><p>Incense</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/collections/posters" class="el-link uk-margin-remove-last-child"><p>Posters</p></a></div>            </li>
+</ul>
+<h5 class="uk-heading-divider uk-margin-remove-bottom">        Account    </h5>
+<ul class="uk-list uk-margin-small">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/connect/login" class="el-link uk-margin-remove-last-child">Login: Ask an Instructor </a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/account" class="el-link uk-margin-remove-last-child">Login: Store </a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.glorian.org/account" class="el-link uk-margin-remove-last-child"><p>Order Status</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="copyright" class="uk-section-secondary uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">    <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+            <div>
+<a class="el-link uk-icon-button" href="https://shop.glorian.org/pages/newsletter-signup" rel="noreferrer"><span uk-icon="icon: mail;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://www.facebook.com/GlorianPublishing" rel="noreferrer"><span uk-icon="icon: facebook;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="http://instagram.com/GlorianPublishing" rel="noreferrer"><span uk-icon="icon: instagram;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://twitter.com/GlorianPublishi" rel="noreferrer"><span uk-icon="icon: twitter;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://vimeo.com/glorianpublishing" rel="noreferrer"><span uk-icon="icon: vimeo;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://www.youtube.com/c/Glorian" rel="noreferrer"><span uk-icon="icon: youtube;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-button" href="https://glorian.org/learn/podcast-and-radio" rel="noreferrer"><span uk-icon="icon: play-circle;"></span></a></div>
+    
+    </div></div>
+<div class="uk-text-center">
+    <ul class="uk-margin-remove-bottom uk-subnav  uk-subnav-divider uk-flex-center" uk-margin>        <li class="el-item uk-active">
+    <a class="el-link" href="/about/about-glorian/about-copyrights">© 2022 Glorian Publishing. All Rights Reserved.</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="/about/about-glorian/about-copyrights">Copyrights</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="https://store.gnosticteachings.org/policies/privacy-policy">Privacy Policy</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="#" uk-scroll>Refund Policy</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="/more/sitemap">Sitemap</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="https://store.gnosticteachings.org/policies/terms-of-service">Terms of Service</a></li>
+        </ul>
+
+</div>
+<div><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57VXZ7F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+        </div>
+
+        
+        
+
+    </body>
+</html>

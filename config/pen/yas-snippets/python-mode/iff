@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: iff
+# group: test
+# key: iff
+# --
+import os.path
+if os.path.isfile(${1:"path"}):
+    $0

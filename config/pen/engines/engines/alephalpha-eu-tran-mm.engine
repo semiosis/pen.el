@@ -1,0 +1,31 @@
+engine-title: AlephAlpha EUTranMM
+include: AlephAlpha
+# model: EUTranMultimodal
+model: PreviewBetaMultimodal
+foundation: true
+engine-delimiter: "\"\"\""
+# For the API
+default-temperature: 0.0
+modes:
+- image-to-text
+# modes:
+# - search
+# - classification
+# 'layers' is like 'provides'. see glossary
+layers:
+- foundation
+- nl
+- code
+- vision
+# Pick this engine when you need 'just' NL ∩ Code
+specialities:
+- nl+vision
+# e.g. may also put finetuning labels at the end
+# - python
+engine-min-tokens: 0
+engine-whitespace-support: yes
+engine-max-tokens: 2048
+libre-dataset: no
+libre-model: no
+local: no
+upstream-engine: AlephAlpha gpt-neo-27b

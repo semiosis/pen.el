@@ -1,0 +1,5 @@
+cd /root/notes/ws/fani;  "pg" "hs" "#" "<==" "bash"
+cd /root/notes/ws/fani;  "pg" "hs" "#" "<==" "bash"
+cd /root/notes/ws/fani;  "pg" "hs" "#" "<==" "bash"
+cd /root/notes/ws/fani;  "pg" "hs" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "pg" "hs" "#" "<==" "bash"

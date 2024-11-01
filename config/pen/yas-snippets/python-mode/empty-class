@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: empty-class
+# group: syntax
+# key: emptyclass
+# --
+class ${1:ClassName}:
+    pass
+$0

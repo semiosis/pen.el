@@ -1,0 +1,13 @@
+  print number 
+ example2 :: IO Int 
+example2 = do
+
+example3 = do 
+
+example4 = do 
+
+example5 = do
+
+example6 = do
+
+example7 = do

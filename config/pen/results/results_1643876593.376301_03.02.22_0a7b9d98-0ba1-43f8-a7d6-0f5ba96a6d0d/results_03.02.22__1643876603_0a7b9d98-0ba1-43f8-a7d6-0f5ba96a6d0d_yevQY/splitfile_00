@@ -1,0 +1,5 @@
+
+(defun continuum-add-state (state)
+  (interactive (list (buffer-string-visible)))
+  (setq pen-terminal-states(cons state pen-terminal-states)))
+

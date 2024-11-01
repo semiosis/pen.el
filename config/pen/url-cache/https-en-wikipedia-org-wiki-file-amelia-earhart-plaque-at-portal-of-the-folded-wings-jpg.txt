@@ -1,0 +1,646 @@
+HTTP/1.1 200 OK
+date: Fri, 05 Jan 2024 05:13:25 GMT
+server: mw2329.codfw.wmnet
+x-content-type-options: nosniff
+content-language: en
+accept-ch: 
+vary: Accept-Encoding,Cookie
+content-type: text/html; charset=UTF-8
+age: 5
+x-cache: cp4039 miss, cp4039 hit/2
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp4039"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+set-cookie: WMF-Last-Access=05-Jan-2024;Path=/;HttpOnly;secure;Expires=Tue, 06 Feb 2024 00:00:00 GMT
+set-cookie: WMF-Last-Access-Global=05-Jan-2024;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Tue, 06 Feb 2024 00:00:00 GMT
+x-client-ip: 125.236.160.146
+cache-control: private, s-maxage=0, max-age=0, must-revalidate
+set-cookie: GeoIP=NZ:OTA:Dunedin:-45.84:170.50:v4; Path=/; secure; Domain=.wikipedia.org
+set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600
+accept-ranges: bytes
+content-length: 17400
+
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-toc-not-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>File:Amelia Earhart Plaque at Portal of the Folded Wings.jpg - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-toc-not-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"dd9365f9-25a1-4c7c-bce1-6b130515f206","wgCanonicalNamespace":"File","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":6,"wgPageName":"File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg","wgTitle":"Amelia Earhart Plaque at Portal of the Folded Wings.jpg","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg","wgRelevantArticleId":0,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionCreate":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},
+"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgULSCurrentAutonym":"English","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":true,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready",
+"skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","mediawiki.interface.helpers.styles":"ready","filepage":"ready","mediawiki.action.view.filepage":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","skins.vector.zebra.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["mediawiki.action.view.metadata","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface",
+"ext.cx.eventlogging.campaigns","ext.checkUser.clientHints"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%2Cfilepage%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.action.view.filepage%7Cmediawiki.interface.helpers.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.zebra.styles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<link rel="stylesheet" href="https://commons.wikimedia.org/w/index.php?title=MediaWiki:Filepage.css&amp;action=raw&amp;ctype=text/css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.42.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/1200px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1575">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/800px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="1050">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/640px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="840">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="File:Amelia Earhart Plaque at Portal of the Folded Wings.jpg - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://commons.wikimedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-6 ns-subject page-File_Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings_jpg rootpage-File_Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings_jpg skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools" role="navigation" >
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-client-prefs-landmark" aria-label="Theme">
+		
+		
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=File%3AAmelia+Earhart+Plaque+at+Portal+of+the+Folded+Wings.jpg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=File%3AAmelia+Earhart+Plaque+at+Portal+of+the+Folded+Wings.jpg" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=File%3AAmelia+Earhart+Plaque+at+Portal+of+the+Folded+Wings.jpg" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=File%3AAmelia+Earhart+Plaque+at+Portal+of+the+Folded+Wings.jpg" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">File:Amelia Earhart Plaque at Portal of the Folded Wings.jpg</h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang mw-portlet-lang-icon-only"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector-empty" aria-label="This article exist only in this language. Add the article for other languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-portlet-lang-heading-empty" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language mw-ui-icon-wikimedia-language"></span>
+
+<span class="vector-dropdown-label-text">Add languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="mw-portlet-empty-language-selector-body">
+						Page contents not supported in other languages.
+					</div>
+			
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-image" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" title="View the file page [c]" accesskey="c"><span>File</span></a></li><li id="ca-talk" class="new vector-tab-noicon mw-list-item"><a href="/w/index.php?title=File_talk:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg&amp;action=edit&amp;redlink=1" rel="discussion" title="Discuss improvements to the content page (page does not exist) [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg"><span>Read</span></a></li><li id="ca-view-foreign" class="vector-tab-noicon mw-list-item"><a href="https://commons.wikimedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg"><span>View on Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg"><span>Read</span></a></li><li id="ca-more-view-foreign" class="vector-more-collapsible-item mw-list-item"><a href="https://commons.wikimedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg"><span>View on Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AAmelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg"><span>Get shortened URL</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-client-prefs-landmark" aria-label="Theme">
+						</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		<div id="mw-indicator-commons-icon" class="mw-indicator"><span typeof="mw:File"><a href="https://commons.wikimedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" title="This is a file from the Wikimedia Commons"><img alt="This is a file from the Wikimedia Commons" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png" decoding="async" width="15" height="20" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/22px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a></span></div>
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><ul id="filetoc" role="navigation"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li>
+<li><a href="#globalusage">Global file usage</a></li>
+<li><a href="#metadata">Metadata</a></li></ul><div class="fullImageLink" id="file"><a href="//upload.wikimedia.org/wikipedia/commons/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg"><img alt="File:Amelia Earhart Plaque at Portal of the Folded Wings.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/457px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" decoding="async" width="457" height="600" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/686px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/914px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg 2x" data-file-width="1689" data-file-height="2217" /></a><div class="mw-filepage-resolutioninfo">Size of this preview: <a href="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/457px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="mw-thumbnail-link">457 × 600 pixels</a>. <span class="mw-filepage-other-resolutions">Other resolutions: <a href="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/183px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="mw-thumbnail-link">183 × 240 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/366px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="mw-thumbnail-link">366 × 480 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/585px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="mw-thumbnail-link">585 × 768 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/780px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="mw-thumbnail-link">780 × 1,024 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="mw-thumbnail-link">1,689 × 2,217 pixels</a>.</span></div></div>
+<div class="mw-content-ltr fullMedia" lang="en" dir="ltr"><p><a href="//upload.wikimedia.org/wikipedia/commons/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="internal" title="Amelia Earhart Plaque at Portal of the Folded Wings.jpg">Original file</a> &#8206;<span class="fileInfo">(1,689 × 2,217 pixels, file size: 1.03 MB, MIME type: <span class="mime-type">image/jpeg</span>)</span>
+</p></div><div class="sharedUploadNotice">
+<div class="mw-parser-output">
+<style data-mw-deduplicate="TemplateStyles:r1097275936">.mw-parser-output .fmbox{clear:both;margin:0.2em 0;width:100%;border:1px solid #a2a9b1;background-color:#f8f9fa;box-sizing:border-box}.mw-parser-output .fmbox-warning{border:1px solid #bb7070;background-color:#ffdbdb}.mw-parser-output .fmbox-editnotice{background-color:transparent}.mw-parser-output .fmbox .mbox-text{border:none;padding:0.25em 0.9em;width:100%}.mw-parser-output .fmbox .mbox-image{border:none;padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .fmbox .mbox-imageright{border:none;padding:2px 0.9em 2px 0;text-align:center}.mw-parser-output .fmbox .mbox-invalid-type{text-align:center}</style><table id="mw-sharedupload" class="plainlinks fmbox fmbox-system" role="presentation"><tbody><tr><td class="mbox-image"><span class="noviewer" typeof="mw:File"><span title="Wikimedia Commons logo"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span></td><td class="mbox-text" style="text-align: center;">This is a file from the <a href="https://commons.wikimedia.org/wiki/Main_Page" class="extiw" title="commons:Main Page">Wikimedia Commons</a>. Information from its <b><a href="https://commons.wikimedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" class="extiw" title="commons:File:Amelia Earhart Plaque at Portal of the Folded Wings.jpg">description page there</a></b> is shown below.<br /><span style="font-size: smaller;">Commons is a freely licensed media file repository. <a href="https://commons.wikimedia.org/wiki/Commons:Welcome" class="extiw" title="commons:Commons:Welcome">You can help</a>.</span></td></tr></tbody></table>
+</div>
+</div>
+<div id="shared-image-desc"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><h2><span class="mw-headline" id="Summary">Summary</span></h2>
+<div class="hproduct commons-file-information-table">
+<style data-mw-deduplicate="TemplateStyles:r773143704">.mw-parser-output table.commons-file-information-table,.mw-parser-output .fileinfotpl-type-information,.mw-parser-output .fileinfotpl-type-artwork{border:1px solid #a2a9b1;background-color:#f8f9fa;padding:5px;font-size:95%;border-spacing:2px;box-sizing:border-box;margin:0;width:100%}.mw-parser-output table.commons-file-information-table>tbody>tr,.mw-parser-output .fileinfotpl-type-information>tbody>tr,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr{vertical-align:top}.mw-parser-output table.commons-file-information-table>tbody>tr>td,.mw-parser-output table.commons-file-information-table>tbody>tr>th,.mw-parser-output .fileinfotpl-type-information>tbody>tr>td,.mw-parser-output .fileinfotpl-type-information>tbody>tr>th,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>td,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>th{padding:4px}.mw-parser-output .fileinfo-paramfield{background:#ccf;text-align:right;padding-right:0.4em;width:15%;font-weight:bold}.mw-parser-output .commons-file-information-table+table.commons-file-information-table,.mw-parser-output .commons-file-information-table+div.commons-file-information-table>table{border-top:0;padding-top:0;margin-top:-8px}@media only screen and (max-width:719px){.mw-parser-output table.commons-file-information-table,.mw-parser-output .commons-file-information-table .fileinfotpl-type-information,.mw-parser-output .commons-file-information-table .fileinfotpl-type-artwork{border-spacing:0;padding:0;word-break:break-word;width:100%!important}.mw-parser-output .commons-file-information-table>tbody,.mw-parser-output .fileinfotpl-type-information>tbody,.mw-parser-output .fileinfotpl-type-artwork>tbody{display:block}.mw-parser-output .commons-file-information-table>tbody>tr>td,.mw-parser-output .commons-file-information-table>tbody>tr>th,.mw-parser-output .fileinfotpl-type-information>tbody>tr>td,.mw-parser-output .fileinfotpl-type-information>tbody>tr>th,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>td,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>th{padding:0.2em 0.4em;text-align:left;text-align:start}.mw-parser-output .commons-file-information-table>tbody>tr,.mw-parser-output .fileinfotpl-type-information>tbody>tr,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr{display:flex;flex-direction:column}.mw-parser-output .commons-file-information-table+table.commons-file-information-table,.mw-parser-output .commons-file-information-table+div.commons-file-information-table>table{margin-top:-1px}.mw-parser-output .fileinfo-paramfield{box-sizing:border-box;flex:1 0 100%;width:100%}}</style>
+<table class="fileinfotpl-type-information vevent mw-content-ltr" style="direction: ltr;">
+
+<tbody><tr>
+<td id="fileinfotpl_desc" class="fileinfo-paramfield" lang="en">Description<span class="summary fn" style="display:none">Amelia Earhart Plaque at Portal of the Folded Wings.jpg</span></td>
+<td class="description">
+<div class="description mw-content-ltr en" dir="ltr" lang="en"><span class="language en" title="English"><b>English: </b></span> Amelia Earhart Plaque at Valhalla Memorial Park, North Hollywood, CA</div></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_date" class="fileinfo-paramfield" lang="en">Date</td>
+<td lang="en">
+<time class="dtstart" datetime="2008-03" lang="en" dir="ltr" style="white-space:nowrap">March 2008</time></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_src" class="fileinfo-paramfield" lang="en">Source</td>
+<td>
+<span class="int-own-work" lang="en">Own work</span> (<span lang="en" dir="ltr">Original text: <i><bdi lang="">self-made</bdi></i></span>)</td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_aut" class="fileinfo-paramfield" lang="en">Author</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/User:Cbl62" class="extiw" title="wikipedia:User:Cbl62">Cbl62</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a></td>
+</tr>
+
+
+</tbody></table>
+</div>
+<h2><span class="mw-headline" id="Licensing">Licensing</span></h2>
+<style data-mw-deduplicate="TemplateStyles:r666199556">.mw-parser-output .responsive-license-cc{clear:both;text-align:center;box-sizing:border-box;width:100%;justify-content:space-around;align-items:center;margin:0.5em auto;background-color:#f9f9f9;border:2px solid #e0e0e0;border-spacing:8px;display:flex}.mw-parser-output .responsive-license-cc div{margin:4px}.mw-parser-output .rlicense-text div{margin:0.5em auto}@media screen and (max-width:640px){.mw-parser-output .responsive-license-cc{flex-flow:column}.mw-parser-output .rlicense-text{order:1}}</style><div class="responsive-license-cc layouttemplate licensetpl mw-content-ltr" lang="en"><div class="rlicense-icons"><span typeof="mw:File"><span title="w:en:Creative Commons"><img alt="w:en:Creative Commons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/90px-CC_some_rights_reserved.svg.png" decoding="async" width="90" height="36" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/135px-CC_some_rights_reserved.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/180px-CC_some_rights_reserved.svg.png 2x" data-file-width="744" data-file-height="300"></span></span><br>
+<span typeof="mw:File"><span title="attribution"><img alt="attribution" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/24px-Cc-by_new_white.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/36px-Cc-by_new_white.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/48px-Cc-by_new_white.svg.png 2x" data-file-width="64" data-file-height="64"></span></span> <span typeof="mw:File"><span title="share alike"><img alt="share alike" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/24px-Cc-sa_white.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/36px-Cc-sa_white.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/48px-Cc-sa_white.svg.png 2x" data-file-width="64" data-file-height="64"></span></span></div><div class="rlicense-text"><div class="rlicense-declaration">This file is licensed under the <a href="https://en.wikipedia.org/wiki/en:Creative_Commons" class="extiw" title="w:en:Creative Commons">Creative Commons</a> <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Attribution-Share Alike 3.0 Unported</a> license.</div><div class="rlicense-desc" style="text-align:left;" lang="en">
+<dl><dd>You are free:
+<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>
+<li><b>to remix</b> – to adapt the work</li></ul></dd>
+<dd>Under the following conditions:
+<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
+<li><b>share alike</b> – If you remix, transform, or build upon the material, you must distribute your contributions under the <a rel="nofollow" class="external text" href="https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses">same or compatible license</a> as the original.</li></ul></dd></dl></div><span class="licensetpl_link" style="display:none;">https://creativecommons.org/licenses/by-sa/3.0</span><span class="licensetpl_short" style="display:none;">CC BY-SA 3.0 </span><span class="licensetpl_long" style="display:none;">Creative Commons Attribution-Share Alike 3.0 </span><span class="licensetpl_link_req" style="display:none;">true</span><span class="licensetpl_attr_req" style="display:none;">true</span></div></div>
+<div style="clear:both; margin:0.5em auto; background-color:#eee; border:2px solid #ddd; padding:8px; direction: ltr;" class="licensetpl_wrapper">
+<div class="center" style="font-weight:bold;"><div lang="en" dir="ltr" class="description en" style="display:inline;"><span class="licensetpl_aut"><a href="https://en.wikipedia.org/wiki/User:Cbl62" class="extiw" title="en:User:Cbl62">Cbl62</a> at the <a href="https://en.wikipedia.org/wiki/" class="extiw" title="en:">English Wikipedia</a></span>, the copyright holder of this work, hereby publishes it under the following license:</div></div>
+<table cellspacing="8" cellpadding="0" style="width:100%; clear:both; margin:0.5em auto; background-color:#f9f9f9; border:2px solid #e0e0e0; direction: ltr;" lang="en" class="layouttemplate licensetpl">
+<tbody><tr>
+<td><span class="noviewer" typeof="mw:File"><span title="GNU head"><img alt="GNU head" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Heckert_GNU_white.svg/64px-Heckert_GNU_white.svg.png" decoding="async" width="64" height="63" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Heckert_GNU_white.svg/96px-Heckert_GNU_white.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Heckert_GNU_white.svg/128px-Heckert_GNU_white.svg.png 2x" data-file-width="535" data-file-height="523"></span></span>
+</td>
+<td>Permission is granted to copy, distribute and/or modify this document under the terms of the <b><a href="https://en.wikipedia.org/wiki/en:GNU_Free_Documentation_License" class="extiw" title="w:en:GNU Free Documentation License">GNU Free Documentation License</a></b>, Version 1.2 or any later version published by the <a href="https://en.wikipedia.org/wiki/en:Free_Software_Foundation" class="extiw" title="w:en:Free Software Foundation">Free Software Foundation</a>; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled <i><a href="//commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License,_version_1.2" title="Commons:GNU Free Documentation License, version 1.2">GNU Free Documentation License</a></i>.<span class="licensetpl_link" style="display:none;">http://www.gnu.org/copyleft/fdl.html</span><span class="licensetpl_short" style="display:none;">GFDL</span><span class="licensetpl_long" style="display:none;">GNU Free Documentation License</span><span class="licensetpl_link_req" style="display:none;">true</span><span class="licensetpl_attr_req" style="display:none;">true</span>
+</td></tr></tbody></table>
+</div>
+<h2><span class="mw-headline" id="Original_upload_log">Original upload log</span></h2>
+<div lang="en" dir="ltr" class="description en" style="display:inline;">The original description page was <a class="external text" href="https://en.wikipedia.org/w/index.php?title=File:Amelia_Earhardt_Plaque_at_Portal_of_the_Folded_Wings.JPG">here</a>. All following user names refer to en.wikipedia.</div>
+<ul><li>2008-03-19 23:56 <a href="https://en.wikipedia.org/wiki/User:Cbl62" class="extiw" title="en:User:Cbl62">Cbl62</a> 1689×2217×8 (1081312 bytes) <i>{{Information |Description=Amelia Earhardt Plaque at Valhalla Memorial Park, North Hollywood, CA |Source=self-made |Date=March 2008 |Location=Valhalla Memorial Park, North Hollywood, CA |Author=~~~ |other_versions= }}</i></li></ul><h1 class="mw-slot-header"><mediainfoslotheader></mediainfoslotheader></h1><mediainfoview style="display: none"><mediainfoviewcaptions><div class="wbmi-entityview-captionsPanel oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><h3 class="wbmi-entityview-captions-header">Captions</h3><div class="wbmi-entityview-caption oo-ui-layout oo-ui-horizontalLayout"><label class="wbmi-language-label oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement-label oo-ui-labelElement oo-ui-labelWidget">English</label><div lang="en" dir="ltr" class="wbmi-caption-value wbmi-entityview-emptyCaption">Add a one-line explanation of what this file represents</div></div></div></mediainfoviewcaptions><mediainfoviewstatements><div id="P180" data-property="P180" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P180&quot;,&quot;hash&quot;:&quot;8545f3fb0693d91adbdb32d2d5fd01e2652aa113&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:7231495,&quot;id&quot;:&quot;Q7231495&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$FA5B0D5E-1D1A-4E6B-B5F7-70F50BD6C8BE&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:180,\&quot;id\&quot;:\&quot;P180\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P180\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P180\&quot;>depicts<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;depicts&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:7231495,\&quot;id\&quot;:\&quot;Q7231495\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P180&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q7231495\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q7231495\&quot;>Portal of the Folded Wings Shrine to Aviation<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P180&quot;:&quot;Portal of the Folded Wings Shrine to Aviation&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P180 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h3 class="wbmi-statements-title">Items portrayed in this file</h3><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P180" href="https://www.wikidata.org/wiki/Special:EntityPage/P180">depicts</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$FA5B0D5E-1D1A-4E6B-B5F7-70F50BD6C8BE" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q7231495" href="https://www.wikidata.org/wiki/Special:EntityPage/Q7231495">Portal of the Folded Wings Shrine to Aviation</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P6216" data-property="P6216" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P6216&quot;,&quot;hash&quot;:&quot;5570347fdc76d2a80732f51ea10ee4b144a084e0&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:50423863,&quot;id&quot;:&quot;Q50423863&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$B9D80BAF-E47F-4BF4-9DB1-895D36D07EB2&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:6216,\&quot;id\&quot;:\&quot;P6216\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P6216\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P6216\&quot;>copyright status<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;copyright status&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:50423863,\&quot;id\&quot;:\&quot;Q50423863\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P6216&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q50423863\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q50423863\&quot;>copyrighted<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P6216&quot;:&quot;copyrighted&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P6216 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P6216" href="https://www.wikidata.org/wiki/Special:EntityPage/P6216">copyright status</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$B9D80BAF-E47F-4BF4-9DB1-895D36D07EB2" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q50423863" href="https://www.wikidata.org/wiki/Special:EntityPage/Q50423863">copyrighted</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P275" data-property="P275" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P275&quot;,&quot;hash&quot;:&quot;4315b8c41a664bcb36dc3783262461e54b0ddf16&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:50829104,&quot;id&quot;:&quot;Q50829104&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$5A3EBC2E-395E-4DA9-B758-76578F413DB3&quot;,&quot;rank&quot;:&quot;normal&quot;},{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P275&quot;,&quot;hash&quot;:&quot;a35b4558d66c92eacbe2f569697ffb1934e0316e&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:14946043,&quot;id&quot;:&quot;Q14946043&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$E1FDE89E-1CAA-4021-A063-F9475236C16E&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:275,\&quot;id\&quot;:\&quot;P275\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P275\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P275\&quot;>copyright license<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;copyright license&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:50829104,\&quot;id\&quot;:\&quot;Q50829104\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P275&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q50829104\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q50829104\&quot;>GNU Free Documentation License, version 1.2 or later<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P275&quot;:&quot;GNU Free Documentation License, version 1.2 or later&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:14946043,\&quot;id\&quot;:\&quot;Q14946043\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P275&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q14946043\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q14946043\&quot;>Creative Commons Attribution-ShareAlike 3.0 Unported<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P275&quot;:&quot;Creative Commons Attribution-ShareAlike 3.0 Unported&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P275 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P275" href="https://www.wikidata.org/wiki/Special:EntityPage/P275">copyright license</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$5A3EBC2E-395E-4DA9-B758-76578F413DB3" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q50829104" href="https://www.wikidata.org/wiki/Special:EntityPage/Q50829104">GNU Free Documentation License, version 1.2 or later</a></bdi></h4></div></div></div></div></div><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$E1FDE89E-1CAA-4021-A063-F9475236C16E" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q14946043" href="https://www.wikidata.org/wiki/Special:EntityPage/Q14946043">Creative Commons Attribution-ShareAlike 3.0 Unported</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P571" data-property="P571" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P571&quot;,&quot;hash&quot;:&quot;538b8a81065e19f52f4478a36ca1deeb631d470e&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;time&quot;:&quot;+2008-03-01T00:00:00Z&quot;,&quot;timezone&quot;:0,&quot;before&quot;:0,&quot;after&quot;:0,&quot;precision&quot;:10,&quot;calendarmodel&quot;:&quot;http:\/\/www.wikidata.org\/entity\/Q1985727&quot;},&quot;type&quot;:&quot;time&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$01D54465-A47B-4406-9F26-87BDC60AA36C&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:571,\&quot;id\&quot;:\&quot;P571\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P571\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P571\&quot;>inception<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;inception&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;time\&quot;:\&quot;+2008-03-01T00:00:00Z\&quot;,\&quot;timezone\&quot;:0,\&quot;before\&quot;:0,\&quot;after\&quot;:0,\&quot;precision\&quot;:10,\&quot;calendarmodel\&quot;:\&quot;http:\\\/\\\/www.wikidata.org\\\/entity\\\/Q1985727\&quot;},\&quot;type\&quot;:\&quot;time\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P571&quot;:&quot;March 2008&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P571&quot;:&quot;March 2008&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P571 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P571" href="https://www.wikidata.org/wiki/Special:EntityPage/P571">inception</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$01D54465-A47B-4406-9F26-87BDC60AA36C" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>March 2008</bdi></h4></div></div></div></div></div></div></div></div><div id="P7482" data-property="P7482" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P7482&quot;,&quot;hash&quot;:&quot;83568a288a8b8b4714a68e7239d8406833762864&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:66458942,&quot;id&quot;:&quot;Q66458942&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$F8898243-E2C8-4C8C-8D73-0E00E2659012&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:7482,\&quot;id\&quot;:\&quot;P7482\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P7482\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P7482\&quot;>source of file<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;source of file&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:66458942,\&quot;id\&quot;:\&quot;Q66458942\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P7482&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q66458942\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q66458942\&quot;>original creation by uploader<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P7482&quot;:&quot;original creation by uploader&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P7482 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P7482" href="https://www.wikidata.org/wiki/Special:EntityPage/P7482">source of file</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$F8898243-E2C8-4C8C-8D73-0E00E2659012" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q66458942" href="https://www.wikidata.org/wiki/Special:EntityPage/Q66458942">original creation by uploader</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P1163" data-property="P1163" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P1163&quot;,&quot;hash&quot;:&quot;723d30b878d4a8deb968b0db429888e5353661a2&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;image\/jpeg&quot;,&quot;type&quot;:&quot;string&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$8F1D8166-633A-4EBC-9D1D-309A3676C04C&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:1163,\&quot;id\&quot;:\&quot;P1163\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P1163\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P1163\&quot;>MIME type<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;MIME type&quot;}}},&quot;{\&quot;value\&quot;:\&quot;image\\\/jpeg\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P1163&quot;:&quot;image\/jpeg&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P1163&quot;:&quot;image\/jpeg&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P1163 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P1163" href="https://www.wikidata.org/wiki/Special:EntityPage/P1163">MIME type</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$8F1D8166-633A-4EBC-9D1D-309A3676C04C" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>image/jpeg</bdi></h4></div></div></div></div></div></div></div></div><div id="P4092" data-property="P4092" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P4092&quot;,&quot;hash&quot;:&quot;2e18d29b45278a5f8480902abbfb76c50064a139&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;83b15a1c036fd46117e2e614aee6b9f58745286a&quot;,&quot;type&quot;:&quot;string&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;qualifiers&quot;:{&quot;P459&quot;:[{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P459&quot;,&quot;hash&quot;:&quot;75dff03c151b13fbab93742164121c16a6aa0de1&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:13414952,&quot;id&quot;:&quot;Q13414952&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}}]},&quot;qualifiers-order&quot;:[&quot;P459&quot;],&quot;id&quot;:&quot;M4217151$0363A371-F016-45B7-B1D5-19854F95CDDB&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:4092,\&quot;id\&quot;:\&quot;P4092\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P4092\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P4092\&quot;>checksum<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;checksum&quot;}}},&quot;{\&quot;value\&quot;:\&quot;83b15a1c036fd46117e2e614aee6b9f58745286a\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P4092&quot;:&quot;83b15a1c036fd46117e2e614aee6b9f58745286a&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P4092&quot;:&quot;83b15a1c036fd46117e2e614aee6b9f58745286a&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:459,\&quot;id\&quot;:\&quot;P459\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P459\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P459\&quot;>determination method<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;determination method&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:13414952,\&quot;id\&quot;:\&quot;Q13414952\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P459&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q13414952\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q13414952\&quot;>SHA-1<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P459&quot;:&quot;SHA-1&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P4092 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P4092" href="https://www.wikidata.org/wiki/Special:EntityPage/P4092">checksum</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$0363A371-F016-45B7-B1D5-19854F95CDDB" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>83b15a1c036fd46117e2e614aee6b9f58745286a</bdi></h4></div></div></div><div class="wbmi-item-qualifiers"><div class="wbmi-snaklist-container"><div class="wbmi-snaklist-content"><div class="wbmi-snak"><div class="wbmi-snak-value"><a target="_blank" title="d:Special:EntityPage/P459" href="https://www.wikidata.org/wiki/Special:EntityPage/P459">determination method</a><span class="wbmi-snak-value-separator">: </span><span class="wbmi-snak-value--value"><a target="_blank" title="d:Special:EntityPage/Q13414952" href="https://www.wikidata.org/wiki/Special:EntityPage/Q13414952">SHA-1</a></span></div></div></div></div></div></div></div></div></div></div><div id="P3575" data-property="P3575" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P3575&quot;,&quot;hash&quot;:&quot;6df598fe86e20feee1f91b882cf41a03ad93f3ea&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;+1081312&quot;,&quot;unit&quot;:&quot;http:\/\/www.wikidata.org\/entity\/Q8799&quot;},&quot;type&quot;:&quot;quantity&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$C6E55A1F-839F-43B7-A26B-9D489B3ACC61&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:3575,\&quot;id\&quot;:\&quot;P3575\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P3575\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P3575\&quot;>data size<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;data size&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;amount\&quot;:\&quot;+1081312\&quot;,\&quot;unit\&quot;:\&quot;http:\\\/\\\/www.wikidata.org\\\/entity\\\/Q8799\&quot;},\&quot;type\&quot;:\&quot;quantity\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P3575&quot;:&quot;1,081,312 <span class=\&quot;wb-unit\&quot;>byte<\/span>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P3575&quot;:&quot;1,081,312 byte&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P3575 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P3575" href="https://www.wikidata.org/wiki/Special:EntityPage/P3575">data size</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$C6E55A1F-839F-43B7-A26B-9D489B3ACC61" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>1,081,312 <span class="wb-unit">byte</span></bdi></h4></div></div></div></div></div></div></div></div><div id="P2048" data-property="P2048" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P2048&quot;,&quot;hash&quot;:&quot;feed827e94335c9e8536593c7817c95cf96db9e4&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;+2217&quot;,&quot;unit&quot;:&quot;http:\/\/www.wikidata.org\/entity\/Q355198&quot;},&quot;type&quot;:&quot;quantity&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$3478B796-AB11-4CDF-8D14-F254259A4164&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:2048,\&quot;id\&quot;:\&quot;P2048\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P2048\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P2048\&quot;>height<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;height&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;amount\&quot;:\&quot;+2217\&quot;,\&quot;unit\&quot;:\&quot;http:\\\/\\\/www.wikidata.org\\\/entity\\\/Q355198\&quot;},\&quot;type\&quot;:\&quot;quantity\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P2048&quot;:&quot;2,217 <span class=\&quot;wb-unit\&quot;>pixel<\/span>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P2048&quot;:&quot;2,217 pixel&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P2048 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P2048" href="https://www.wikidata.org/wiki/Special:EntityPage/P2048">height</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$3478B796-AB11-4CDF-8D14-F254259A4164" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>2,217 <span class="wb-unit">pixel</span></bdi></h4></div></div></div></div></div></div></div></div><div id="P2049" data-property="P2049" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P2049&quot;,&quot;hash&quot;:&quot;428cd6523883620dc1d093f364c8c028ffda5095&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;+1689&quot;,&quot;unit&quot;:&quot;http:\/\/www.wikidata.org\/entity\/Q355198&quot;},&quot;type&quot;:&quot;quantity&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M4217151$2B81BEC4-8856-43CA-B536-8253700987EF&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:2049,\&quot;id\&quot;:\&quot;P2049\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P2049\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P2049\&quot;>width<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;width&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;amount\&quot;:\&quot;+1689\&quot;,\&quot;unit\&quot;:\&quot;http:\\\/\\\/www.wikidata.org\\\/entity\\\/Q355198\&quot;},\&quot;type\&quot;:\&quot;quantity\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P2049&quot;:&quot;1,689 <span class=\&quot;wb-unit\&quot;>pixel<\/span>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P2049&quot;:&quot;1,689 pixel&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P2049 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P2049" href="https://www.wikidata.org/wiki/Special:EntityPage/P2049">width</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M4217151$2B81BEC4-8856-43CA-B536-8253700987EF" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>1,689 <span class="wb-unit">pixel</span></bdi></h4></div></div></div></div></div></div></div></div></mediainfoviewstatements></mediainfoview>
+<!-- 
+NewPP limit report
+Parsed by mw1480
+Cached time: 20231224012101
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.124 seconds
+Real time usage: 0.186 seconds
+Preprocessor visited node count: 2523/1000000
+Post‐expand include size: 19447/2097152 bytes
+Template argument size: 1650/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3525/5000000 bytes
+Lua time usage: 0.056/10.000 seconds
+Lua memory usage: 1495157/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  169.256      1 -total
+ 65.35%  110.605      1 Template:Information
+ 15.64%   26.476      1 Template:GFDL-user-en-no-disclaimers
+ 14.47%   24.486      1 Template:Self
+ 12.75%   21.573      2 Template:Autotranslate
+ 12.16%   20.576      1 Template:User_at_project
+ 12.11%   20.491      1 Template:Cc-by-sa-3.0
+ 11.29%   19.103      1 Template:User_at_project/core
+ 10.23%   17.319      1 Template:LangSwitch
+  8.97%   15.179      1 Template:Original_text
+-->
+
+<!-- Saved in parser cache with key commonswiki:pcache:idhash:4217151-0!wb=3!wbMobile=0 and timestamp 20231224012101 and revision id 790376945. Rendering was triggered because: page-view
+ -->
+</div></div>
+<h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class="filehistory-selected" style="white-space: nowrap;"><a href="//upload.wikimedia.org/wikipedia/commons/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg">15:48, 14 June 2008</a></td><td><a href="//upload.wikimedia.org/wikipedia/commons/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg"><img alt="Thumbnail for version as of 15:48, 14 June 2008" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg/91px-Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg" decoding="async" loading="lazy" width="91" height="120" data-file-width="1689" data-file-height="2217" /></a></td><td>1,689 × 2,217 <span style="white-space: nowrap;">(1.03 MB)</span></td><td>Finavon</td><td dir="ltr">{{Information |Description={{en|Amelia Earhart Plaque at Valhalla Memorial Park, North Hollywood, CA}} |Source=Transferred from [http://en.wikipedia.org en.wikipedia]&lt;br/&gt; (Original text : &#039;&#039;self-made&#039;&#039;) |Date=March 2008 |Author=Original uploader was [[:e</td></tr>
+</table>
+
+</div>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<div class="linkstoimage" id="linkstoimage">The following pages on the English Wikipedia use this file (pages on other projects are not listed):</div><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Amelia_Earhart" title="Amelia Earhart">Amelia Earhart</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Portal_of_the_Folded_Wings_Shrine_to_Aviation" title="Portal of the Folded Wings Shrine to Aviation">Portal of the Folded Wings Shrine to Aviation</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Valhalla_Memorial_Park_Cemetery" title="Valhalla Memorial Park Cemetery">Valhalla Memorial Park Cemetery</a></li>
+</ul>
+</div>
+<h2 id="globalusage">Global file usage</h2>
+<div id="mw-imagepage-section-globalusage"><p>The following other wikis use this file:
+</p><ul>
+<li class='mw-gu-onwiki-ar_wikipedia_org'>Usage on ar.wikipedia.org
+<ul>	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A3%D9%85%D9%8A%D9%84%D9%8A%D8%A7_%D8%A5%D9%8A%D8%B1%D9%87%D8%A7%D8%B1%D8%AA">أميليا إيرهارت</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-pt_wikipedia_org'>Usage on pt.wikipedia.org
+<ul>	<li><a class="external" href="https://pt.wikipedia.org/wiki/Valhalla_Memorial_Park_Cemetery">Valhalla Memorial Park Cemetery</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-zh_wikipedia_org'>Usage on zh.wikipedia.org
+<ul>	<li><a class="external" href="https://zh.wikipedia.org/wiki/%E9%98%BF%E6%A2%85%E8%8E%89%E4%BA%9A%C2%B7%E5%9F%83%E5%B0%94%E5%93%88%E7%89%B9">阿梅莉亚·埃尔哈特</a></li>
+</ul></li>
+</ul>
+</div><h2 id="metadata">Metadata</h2>
+<div class="mw-content-ltr mw-imagepage-section-metadata" lang="en" dir="ltr"><p>This file contains additional information, probably added from the digital camera or scanner used to create or digitize it.
+</p><p>
+If the file has been modified from its original state, some details may not fully reflect the modified file.</p><table id="mw_metadata" class="mw_metadata collapsed">
+<tbody><tr class="exif-make"><th>Camera manufacturer</th><td><a href="/wiki/PENTAX_Corporation" class="mw-redirect" title="PENTAX Corporation">PENTAX Corporation</a></td></tr><tr class="exif-model"><th>Camera model</th><td><a href="/w/index.php?title=PENTAX_Optio_V10&amp;action=edit&amp;redlink=1" class="new" title="PENTAX Optio V10 (page does not exist)">PENTAX Optio V10</a></td></tr><tr class="exif-exposuretime"><th><a href="/wiki/Shutter_speed" title="Shutter speed">Exposure time</a></th><td>1/60 sec (0.016666666666667)</td></tr><tr class="exif-fnumber"><th><a href="/wiki/F-number" title="F-number">F-number</a></th><td>f/3.9</td></tr><tr class="exif-isospeedratings"><th><a href="/wiki/Film_speed" title="Film speed">ISO speed</a> rating</th><td>64</td></tr><tr class="exif-datetimeoriginal"><th>Date and time of data generation</th><td>22:55, 6 January 2007</td></tr><tr class="exif-focallength"><th>Lens <a href="/wiki/Focal_length" title="Focal length">focal length</a></th><td>9.3 mm</td></tr><tr class="exif-software mw-metadata-collapsible"><th>Software used</th><td><a href="/w/index.php?title=Optio_V10_Ver_1.00&amp;action=edit&amp;redlink=1" class="new" title="Optio V10 Ver 1.00 (page does not exist)">Optio V10 Ver 1.00</a></td></tr><tr class="exif-datetime mw-metadata-collapsible"><th>File change date and time</th><td>22:55, 6 January 2007</td></tr><tr class="exif-ycbcrpositioning mw-metadata-collapsible"><th>Y and C positioning</th><td>Co-sited</td></tr><tr class="exif-exifversion mw-metadata-collapsible"><th><a href="/wiki/Exchangeable_image_file_format" class="mw-redirect" title="Exchangeable image file format">Exif</a> version</th><td>2.2</td></tr><tr class="exif-datetimedigitized mw-metadata-collapsible"><th>Date and time of digitizing</th><td>22:55, 6 January 2007</td></tr><tr class="exif-compressedbitsperpixel mw-metadata-collapsible"><th>Image compression mode</th><td>2</td></tr><tr class="exif-exposurebiasvalue mw-metadata-collapsible"><th><a href="/wiki/Exposure_compensation" title="Exposure compensation">Exposure bias</a></th><td>0</td></tr><tr class="exif-maxaperturevalue mw-metadata-collapsible"><th>Maximum land aperture</th><td>3.8 APEX (f/3.73)</td></tr><tr class="exif-meteringmode mw-metadata-collapsible"><th><a href="/wiki/Metering_mode" title="Metering mode">Metering mode</a></th><td>Pattern</td></tr><tr class="exif-flash mw-metadata-collapsible"><th><a href="/wiki/Flash_(photography)" title="Flash (photography)">Flash</a></th><td>Flash did not fire, compulsory flash suppression</td></tr><tr class="exif-colorspace mw-metadata-collapsible"><th><a href="/wiki/Color_space" title="Color space">Color space</a></th><td>sRGB</td></tr><tr class="exif-customrendered mw-metadata-collapsible"><th>Custom image processing</th><td>Normal process</td></tr><tr class="exif-exposuremode mw-metadata-collapsible"><th>Exposure mode</th><td>Auto exposure</td></tr><tr class="exif-whitebalance mw-metadata-collapsible"><th><a href="/wiki/Color_balance" title="Color balance">White balance</a></th><td>Auto white balance</td></tr><tr class="exif-digitalzoomratio mw-metadata-collapsible"><th><a href="/wiki/Digital_zoom" title="Digital zoom">Digital zoom</a> ratio</th><td>1</td></tr><tr class="exif-focallengthin35mmfilm mw-metadata-collapsible"><th>Focal length in 35 mm film</th><td>53 mm</td></tr><tr class="exif-scenecapturetype mw-metadata-collapsible"><th>Scene capture type</th><td>Standard</td></tr><tr class="exif-contrast mw-metadata-collapsible"><th><a href="/wiki/Contrast_(vision)" title="Contrast (vision)">Contrast</a></th><td>Normal</td></tr><tr class="exif-saturation mw-metadata-collapsible"><th><a href="/wiki/Colorfulness" title="Colorfulness">Saturation</a></th><td>Normal</td></tr><tr class="exif-sharpness mw-metadata-collapsible"><th><a href="/wiki/Acutance" title="Acutance">Sharpness</a></th><td>Normal</td></tr><tr class="exif-subjectdistancerange mw-metadata-collapsible"><th>Subject distance range</th><td>Close view</td></tr></tbody></table>
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg">https://en.wikipedia.org/wiki/File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg</a>"</div></div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=File:Amelia_Earhart_Plaque_at_Portal_of_the_Folded_Wings.jpg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw2329","wgBackendResponseTime":136,"wgPageParseReport":{"limitreport":{"cputime":"0.001","walltime":"0.001","ppvisitednodes":{"value":3,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"origin":"mw2329","timestamp":"20240105051325","ttl":2592000,"transientcontent":false}}});});</script>
+</body>
+</html>

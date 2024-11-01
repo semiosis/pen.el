@@ -1,0 +1,3 @@
+(->> (range 10)
+     (filter odd?)
+     (map * 2))

@@ -1,0 +1,46 @@
+title: Translate from world language X to Y
+tags: prose translation nlp-task
+prompt-version: 5
+doc: This prompt translates English text to any world language
+prompt: |
+  <delim>
+  # English: Hello
+  # Russian: Zdravstvuyte
+  # Italian: Salve
+  # Japanese: Konnichiwa
+  # German: Guten Tag
+  # French: Bonjour
+  # Spanish: Hola
+  <delim>
+  # English: Happy birthday!
+  # French: Bon anniversaire !
+  # German: Alles Gute zum Geburtstag!
+  # Italian: Buon compleanno!
+  # Indonesian: Selamat ulang tahun!
+  <delim>
+  # <2>: <1>
+  # <3>:
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 400
+top-p: 1
+stop-sequences:
+- "#"
+vars:
+- phrase
+- from-language
+- to-language
+preprocessors:
+- chomp | pen-str onelineify
+- cat
+- cat
+postprocessor: pen-str unonelineify
+examples:
+- Goodnight
+- English
+- French
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+- "(read-string-hist \"Pen to world language: \")"
+filter: on

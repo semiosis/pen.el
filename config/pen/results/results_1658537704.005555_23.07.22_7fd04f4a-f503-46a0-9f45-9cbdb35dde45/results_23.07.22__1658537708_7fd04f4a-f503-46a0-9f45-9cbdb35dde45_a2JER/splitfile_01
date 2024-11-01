@@ -1,0 +1,8 @@
+
+  putStrLn $ "You are " ++ show ageAsNumber ++ " years old."
+EOD
+
+# python files
+
+cat draft.py <<EOD
+#!/usr/bin/env python3

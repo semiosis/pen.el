@@ -1,0 +1,3 @@
+., return .. and ..
+    (true (readdir-list-files-base m (pensieve/get-directories) [])
+          (readdir-list-files-base m (pensieve/get

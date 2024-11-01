@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: printline
+# key: pl
+# --
+fmt.Fprintln(os.Stdout, usr.HomeDir)
+fmt.Println(usr.HomeDir)

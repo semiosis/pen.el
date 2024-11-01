@@ -1,0 +1,24 @@
+ (T.unpack . T.pack) columns
+
+  -- Print out the list of numbers.
+  print numbers
+EOD
+
+# python files
+
+cat draft.py <<EOD
+import csv, sys, math
+
+def main():
+
+    reader = csv.reader(sys.stdin)
+
+    # read the CSV file into a list of lists of strings, one for each column in the record
+    records = [r for r in reader]
+
+    # convert each column into a list of numbers and store it in a list of lists of numbers, one for each column in the record
+    numbers = [[float(n) for n in r] for r in records]
+
+    # print out the list of numbers
+    print(numbers)
+EOD

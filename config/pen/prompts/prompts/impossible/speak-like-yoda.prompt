@@ -1,0 +1,77 @@
+task: "Speak like Yoda"
+doc: "Transform some prose and make it sound like Yoda"
+in-development: true
+prompt-version: 6
+engine: OpenAI Davinci
+issues:
+- |+
+  I haven't found a useful prompt yet.
+not working:
+- prompt: |+
+      A voice actor was asked to say this passage in the style of Yoda (object-subject-verb).
+      Here is the passage:
+      <delim>
+      You still have a lot to learn.
+      <document>.
+      <delim>
+      The voice actor then said, in the style of Yoda:
+      <delim>
+      Much to learn, you still have.
+prompt: |+
+    A voice actor was asked to say this passage in the style of Yoda (object-subject-verb).
+    Here is the passage:
+    <delim>
+    You still have a lot to learn.
+    <document>.
+    <delim>
+    The voice actor then said, in the style of Yoda:
+    <delim>
+    Much to learn, you still have.
+xlr-n-generate: 5
+# <q:transformation>:
+temperature: 0.8
+# On each collated generation, rotate the temperature upwards by 0.1
+collation-temperature-stepper: "(pen-round-to-dec (+ 0.7 (mod (+ <temperature> 0.1) 0.3)))"
+max-generated-tokens: "prompt-length"
+top-p: 1.0
+best-of: 1
+cache: on
+stop-sequences:
+- "<delim>"
+vars:
+- document
+- transformation
+preprocessors:
+# - pen-str join ' '
+- <tidy-prose-input> | pen-qne
+- <tidy-prose-input>
+var-defaults:
+- "(pen-selected-text)"
+# Consider stripping code by correcting with GPT-3
+postprocessor: pen-pretty-paragraph
+examples:
+- "I want to ride my bicycle"
+# - "with empathy"
+- "in the 3rd person"
+n-test-runs: 5
+# n-collate is the min collations (requests)
+# while attempting to reach the target, go up to this point
+n-max-collate: 4
+# Try to generate this many results
+n-target: 10
+# The validator should be able to access the number of tokens in the prompt
+# TODO Test this. I only want results that match a particular length
+validator: "(< gen-length (* 2 prompt-length))"
+n-collate: 1
+n-completions: 5
+new-document: yes
+# pipelines, expressions are non-essential
+pipelines:
+- tidy-prose-input: pen-str tidy-prose-input | sed "s/\\.\$//"
+# these expressions are evaluated and the results are accessible
+# via the templating system
+expressions:
+# - tidy-prose-input: (pen-snc <q:tidy-prose-input> in)
+# - twice-prompt-length: "(* 2 prompt-length)"
+external-related:
+- "https://medium.com/@bri_valleskey/yes-yodas-grammar-is-technically-correct-daaf51eda31e"

@@ -1,0 +1,25 @@
+[[a]] -> IO ()
+tabularise rows = mapM_ putStrLn . unlines
+EOD
+
+# python files
+
+cat draft.python <<EOD
+import csv, sys, os, json, datetime, argparse
+import pandas as pd
+from collections import OrderedDict
+
+
+def csv_to_json(csv_file):
+
+    # Read the CSV file into a dataframe.
+    df = pd.read_csv(csv_file)
+
+    # Convert the dataframe into a list of dictionaries.
+    dicts = df.to_dict(orient='records')
+
+    # Convert the list of dictionaries into a single dictionary of lists.
+    d = {}
+    for k in dicts[0].keys(): d[k] = [v[k] for v in dicts]
+
+    # Convert the dictionary of lists into a

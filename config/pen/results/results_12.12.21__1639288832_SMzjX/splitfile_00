@@ -1,0 +1,4 @@
+""large-file-warning-threshold" refers to the warning
+threshold for files that are too large to be loaded into Emacs
+memory, which is set by default to 1048576 bytes.
+

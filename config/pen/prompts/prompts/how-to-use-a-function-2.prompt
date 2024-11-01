@@ -1,0 +1,37 @@
+title: How to use a function
+doc: Given a function name and a language, explain how to use the function
+utilises-code: no
+tags: code documentation help
+prompt-version: 2
+prompt: |
+  Given a function name and a language, explain how to use the function.
+
+  <delim>
+  Language: Python
+  Function: print
+  Usage:
+  Print("hello world")
+  <delim>
+  Language: Python
+  Function: print
+  Usage:
+  Print("hello world")
+  <delim>
+  Language: <language>
+  Function: <function name>
+  Usage:
+  
+engine: OpenAI Davinci
+temperature: 0.8
+max-generated-tokens: 60
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- "function name"
+- language
+examples:
+- fromMaybe
+- Haskell
+prefer-external: true

@@ -1,0 +1,11 @@
+
+main :: IO ()
+main = do
+  # getResults :: String -> IO [String]
+  # getResults "Weather" returns a list of strings
+  output <- getResults "Weather"
+  # unlines :: [String] -> String
+  # unlines ["a", "b"] -> "a\nb"
+  # unlines [] -> ""
+  print $ unlines $ fromMaybe [] output
+  # fromMaybe :: a -> (b -> a) -> b -> a

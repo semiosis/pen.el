@@ -1,0 +1,13 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+tags: interpreter
+language: ammonite
+prompt: |+
+    Loading...
+    Welcome to the Ammonite Repl 2.1.4 (Scala 2.13.2 Java 11.0.11)
+    @ <expression>
+vars:
+- "expression"
+examples:
+- "5 + 5"
+user-prompt: "@ "

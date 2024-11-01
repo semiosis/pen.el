@@ -1,0 +1,7 @@
+{}"
+""".format("\n-".join(business_ideas))
+
+# Define a small function that checks if input is an integer between 1 and 10
+def check_number(number):
+    if number.isdigit():
+        if int(number

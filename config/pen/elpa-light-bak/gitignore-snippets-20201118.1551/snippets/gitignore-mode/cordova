@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: Cordova
+# contributor: Toptal & contributors
+# key: cordova
+# --
+
+### Cordova ###
+
+# gitignore template for the Cordova framework
+# website: https://cordova.apache.org/
+#
+# Recommended template: Node.gitignore
+
+# App platform binaries and built files
+/platforms
+
+# Optional to ignore plugin Git clones
+#/plugins

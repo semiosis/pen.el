@@ -1,0 +1,8 @@
+08/25/2023 11:54:11.269 | INFO  | cli-chess | main_model._start_loggers | cli-chess v1.0.1 // python 3.8.2
+08/25/2023 11:54:11.269 | INFO  | cli-chess | main_model._start_loggers | System information: system=Linux // release=5.11.0-15.1-liquorix-amd64 // machine=x86_64
+08/25/2023 11:54:11.270 | DEBUG | cli-chess | argparse.parse_args | Parsed arguments: Namespace(print_config=False, reset_config=False, token='********')
+08/25/2023 11:54:12.258 | INFO  | cli-chess | token_manager_model.validate_token | Successfully authenticated with Lichess
+08/25/2023 11:54:12.259 | INFO  | cli-chess | token_manager_model.update_linked_account | Updating linked Lichess account
+08/25/2023 11:54:12.262 | INFO  | cli-chess | incoming_event_manger.run | Started listening to Lichess incoming events
+08/25/2023 11:54:12.289 | INFO  | cli-chess | token_manager_model.validate_token | Successfully authenticated with Lichess
+08/25/2023 11:54:12.306 | INFO  | cli-chess | incoming_event_manger.run | Started listening to Lichess incoming events

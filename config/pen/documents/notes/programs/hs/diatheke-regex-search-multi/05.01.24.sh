@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "to" "be" "grasped" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "entertained" "angels" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "trusting" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "repay" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "submitted" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "entrusting" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "diatheke-regex-search-multi" "-fv" "NASB" "works" "of" "the" "law" "#" "<==" "pen-ci"

@@ -1,0 +1,5 @@
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans/koans;  "xdg-open" "/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans/koans/numbers.rkt" "#" "<==" "broot"
+cd /volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans/koans;  "xdg-open" "/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans/koans/numbers.rkt" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el/src;  "xdg-open" "/root/.emacs.d/host/pen.el/src/pen-counsel.el" "#" "<==" "broot"
+cd /root/.emacs.d/host/pen.el/src;  "xdg-open" "/root/.emacs.d/host/pen.el/src/pen-melee.el" "#" "<==" "run.sh"
+cd /root/notes;  "xdg-open" "/root/.pen/documents/notes/directories.org" "#" "<==" "broot"

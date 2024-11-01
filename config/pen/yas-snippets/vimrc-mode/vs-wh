@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: while loop
+# group: vimsnippet
+# key: vs-wh
+# --
+while ${1}
+	${0:${VISUAL}}
+endw

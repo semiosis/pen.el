@@ -1,0 +1,10 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\t -> (t !! 0, t !! 1))) tuples
+
+  -- Tabularise the list of rows and print it to stdout.
+  print $ T.pack . T.intercalate "\t" $ T.unlines . map show rows
+EOD
+
+cat draft.haskell | ghci -e "main" | column -t | less

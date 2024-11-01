@@ -1,0 +1,6 @@
+The above code is a simple program that uses the getResults function to get the output from the Weather API.
+The getResults function takes a string as a parameter and returns a list of strings.
+The fromMaybe function is a function that takes a default value and a Maybe value.
+If the Maybe value is Nothing, it returns the default value.
+If the Maybe value is Just a, it returns a.
+The unlines function is a function that takes a list of strings and returns a string

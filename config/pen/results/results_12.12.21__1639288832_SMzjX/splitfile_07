@@ -1,0 +1,4 @@
+""large-file-warning-threshold" refers to the threshold at which
+Emacs will ask you whether to open a large file. You can customize this
+variable to change the default."
+

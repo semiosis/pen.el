@@ -1,0 +1,5 @@
+cd /root/repos/Genivia;  "ghb" "size"
+cd /root/repos/Genivia;  "ghb" "size"
+cd /root/repos/exiftool;  "ghb" "size"
+cd /root/repos/Genivia;  "ghb" "size"
+cd /root/repos/exiftool;  "ghb" "size"

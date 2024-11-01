@@ -1,0 +1,1 @@
+ statusline=\ %{expand(\"%:t\")} \ \ \ \ %{fugitive#statusline()}

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: boolfunc
+# key: boolfunc
+# --
+data Bool = False | True
+
+isZero :: Int -> Bool
+isZero 0 = True
+isZero _ = False
+
+toBeOrNotToBe :: Bool -> String
+toBeOrNotToBe True  = "Be"
+toBeOrNotToBe False = "Not to be"
+
+main = putStrLn (toBeOrNotToBe True)

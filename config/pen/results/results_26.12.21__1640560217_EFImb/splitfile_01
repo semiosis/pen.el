@@ -1,0 +1,14 @@
+- 1. Pythagoras (570-495 BC)
+- 2. Aristotle (384-322 BC)
+- 3. Immanuel Kant (1724-1804)
+"""
+        )
+
+    def test_get_documents_meta__subset_of_ids(self):
+        """
+        Test `get_documents` with a subset of the IDs in the index.
+
+        The "actual" documents are not returned, and only the document metadata is retrieved.
+        """
+
+        # Visualize the 

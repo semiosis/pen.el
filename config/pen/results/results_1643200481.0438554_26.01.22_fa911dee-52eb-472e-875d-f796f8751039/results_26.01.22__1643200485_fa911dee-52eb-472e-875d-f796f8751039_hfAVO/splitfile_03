@@ -1,0 +1,1 @@
+s/\(.*\)/#+BEGIN_EXPORT latex\n\1\n#+END_EXPORT

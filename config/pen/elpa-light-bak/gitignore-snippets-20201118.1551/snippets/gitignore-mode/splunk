@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: Splunk
+# contributor: Toptal & contributors
+# key: splunk
+# --
+
+### Splunk ###
+
+# gitignore template for Splunk apps
+# documentation: http://docs.splunk.com/Documentation/Splunk/6.2.3/admin/Defaultmetaconf
+
+# Splunk local meta file
+local.meta
+
+# Splunk local folder
+local

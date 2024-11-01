@@ -1,0 +1,15 @@
+"newtype" is a Haskell keyword.
+
+"Data.Text" is a Haskell library.
+
+"Text" is a type defined in "Data.Text".
+
+"Money" is a type defined in this module.
+
+"ProjectId" is a type defined in this module.
+
+"Project" is a type defined in this module.
+
+"unMoney" is a field of the type "Money".
+
+"unProjectId" is a field of the type "

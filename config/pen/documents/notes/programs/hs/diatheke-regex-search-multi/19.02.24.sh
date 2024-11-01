@@ -1,0 +1,5 @@
+cd /root/notes;  "diatheke-regex-search-multi" "-fv" "ESV" "come" "upon" "you" "#" "<==" "pen-ci"
+cd /root/notes;  "diatheke-regex-search-multi" "-fv" "ESV" "unbelieving" "#" "<==" "pen-ci"
+cd /root/notes;  "diatheke-regex-search-multi" "-fv" "ESV" "incorruptible" "#" "<==" "pen-ci"
+cd /root/notes;  "diatheke-regex-search-multi" "-fv" "ESV" "deposit" "#" "<==" "pen-ci"
+cd /root/notes;  "diatheke-regex-search-multi" "-fv" "ESV" "snatch" "#" "<==" "pen-ci"

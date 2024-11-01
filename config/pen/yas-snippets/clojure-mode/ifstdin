@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ifstdin
+# group: tty
+# key: ifstdin
+# --
+;; Can't check for stdin, so use a shell script wrapper

@@ -1,0 +1,25 @@
+
+
+  -- Map the tuples into a list of rows, one for each record.
+  rows <- map (map (\t -> t !! 1)) tuples
+
+  -- Print the rows
+  mapM_ putStrLn rows
+EOD
+
+cat draft.haskell <<EOD
+module Main where
+
+-- This program reads a CSV from stdin and stores inside
+-- a datastructure.
+-- It then tabularises and prints the output
+
+import qualified Data.ByteString.Lazy as L
+import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
+import Data.Map (Map)
+import qualified Data.Map as Map
+import Data.Set (Set)
+
+  -- Read the CSV from stdin and decode it into a list of lines.
+  -- We use the Lazy version of ByteString to avoid reading the whole file into memory.

@@ -1,0 +1,12 @@
+"async/go-loop" is a function that takes a channel and a function
+that takes a channel and returns a function.
+
+The function passed to async/go-loop will be called with a channel
+that will be used to send messages to the function passed to
+async/go-loop.
+
+The function passed to async/go-loop will be called repeatedly
+with a channel that will be used to send messages to the function
+passed to async/go-loop.
+
+The function

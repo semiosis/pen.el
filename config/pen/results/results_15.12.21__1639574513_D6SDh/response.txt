@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Welcome to Python 3.8's documentation!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-container w3-dark-grey w3-padding-32">
+<h1>Python</h1>
+<p><strong>Python</strong> is a programming language that lets you work quickly and integrate systems more effectively.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="w3-container w3-margin">
+  <h2 id="download"><a href="#download" class="anchor"><span></span></a>Download</h2><ul class="w3-ul w3-hoverable">
+    <li class="w3-padding"><a href="/downloads/" title="" class="" target="_blank">Python Software Foundation License</a></li><li class="w3-padding"><a href="/downloads/" title="" class="" target="_blank">Python 3.8.2 documentation</a></li><li class="w3-padding"><a href="/downloads/" title="" class="" target="_blank">Windows x86 executable installer (64 bit)</a></li><li class="w3-padding"><a href="/downloads/" title="" class="" target="_blank">Windows x86 executable installer (32 bit)</a></li><li class="w3-padding"><a href="/downloads/" title="" class="" target="_blank">Mac OS X 64 bit/32 bit installer package (Intel)</a></li><li class="w3-padding"><a href="/downloads/" title="" class="" target="

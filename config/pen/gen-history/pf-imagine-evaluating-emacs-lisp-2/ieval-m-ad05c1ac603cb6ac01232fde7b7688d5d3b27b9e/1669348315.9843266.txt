@@ -1,0 +1,9 @@
+;; Run function hexcolorof
+(message (eval '(hexcolorof "gold")))
+--> "ffffd700"
+
+
+
+;; Run function hexcolorof
+(message (eval '(hexcolorof "water")))
+--> 

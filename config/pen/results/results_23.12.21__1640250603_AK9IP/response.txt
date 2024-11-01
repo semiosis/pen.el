@@ -1,0 +1,12 @@
+/* Color scheme B: NASA */
+.b-primary {
+background-color: #0F4C81;
+}
+.b-secondary {
+background-color: #0B3F6E;
+}
+.b-ternary {
+background-color: #0E4A7F;
+}
+.b-quaternary {
+background-color: #0D3C72;

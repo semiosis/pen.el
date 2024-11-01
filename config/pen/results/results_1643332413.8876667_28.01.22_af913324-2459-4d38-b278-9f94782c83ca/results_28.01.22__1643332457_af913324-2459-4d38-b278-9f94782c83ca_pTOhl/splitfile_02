@@ -1,0 +1,6 @@
+stogram = {}
+with open('../alice_in_wonderland.dat') as f:
+    for line in f:
+        for word in line.split():
+            word = word.upper()
+            hist

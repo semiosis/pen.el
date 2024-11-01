@@ -1,0 +1,2 @@
+;;; Generated package description from git-time-metric.el  -*- no-byte-compile: t -*-
+(define-package "git-time-metric" "20181116.2011" "Provide function to record time with gtm ( git time metric )" 'nil :commit "287108ed1d6885dc795eb3bad4476aa08c626186" :authors '(("Anton Sivolapov" . "anton.sivolapov@gmail.com")) :maintainer '("Anton Sivolapov" . "anton.sivolapov@gmail.com") :keywords '("tools" "gtm" "productivity" "time") :url "https://github.com/c301/gtm-emacs-plugin")

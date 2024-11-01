@@ -1,0 +1,9 @@
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "watermelon")))
+--> "watermelon: n. A large melon with a hard rind and sweet juicy pulp."
+
+
+
+;; Run function dictionary-get-definition
+(message (eval '(dictionary-get-definition "watermelon")))
+--> 

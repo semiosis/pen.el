@@ -1,0 +1,402 @@
+HTTP/1.1 200 OK
+Date: Wed, 13 Dec 2023 04:53:05 GMT
+Server: Apache/2.4.57 (Debian)
+Last-Modified: Sun, 06 Feb 2022 21:51:11 GMT
+ETag: "3e45-5d7607b76a1ad-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 4978
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>notmuch-show-1</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-show-1" />
+
+
+
+
+</head>
+<body>
+
+<div class="pageheader">
+<div class="header">
+<span>
+<span class="parentlinks">
+
+<a href="../../">notmuch</a>/ 
+
+<a href="../">manpages</a>/ 
+
+</span>
+<!--
+<span class="title">
+notmuch-show-1
+
+</span>
+-->
+</span><!--.header-->
+
+</div>
+
+<!--
+
+<div class="actions">
+<ul>
+
+<li><a href="/ikiwiki.cgi?do=edit&amp;page=manpages%2Fnotmuch-show-1" rel="nofollow">Edit</a></li>
+
+
+<li><a href="../../recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+<li><span class="createlink"><a href="/ikiwiki.cgi?do=create&amp;from=manpages%2Fnotmuch-show-1&amp;page=Discussion" rel="nofollow">?</a>Discussion</span><br /></li>
+
+
+</ul>
+</div>
+
+-->
+
+
+
+</div> <!-- .pageheader -->
+
+
+
+<div id="content">
+<h1>NOTMUCH-SHOW(1)</h1>
+
+
+
+
+<h2>NAME</h2>
+
+
+<pre>
+       notmuch-show - show messages matching the given search terms
+</pre>
+
+
+
+
+<h2>SYNOPSIS</h2>
+
+
+<pre>
+       <b>notmuch</b> <b>show</b> [<u>option</u> ...] &lt;<u>search-term</u>&gt; ...
+</pre>
+
+
+
+
+<h2>DESCRIPTION</h2>
+
+
+<pre>
+       Shows all messages matching the search terms.
+
+       See  <a href="../notmuch-search-terms-7/">notmuch-search-terms</a>(7)  for  details  of the supported syntax for
+       &lt;search-terms&gt;.
+
+       The messages will be grouped and sorted based  on  the  threading  (all
+       replies to a particular message will appear immediately after that mes‐
+       sage in date order). The output is not indented by default,  but  depth
+       tags  are  printed  so  that  proper  indentation can be performed by a
+       post-processor (such as the emacs interface to notmuch).
+
+       Supported options for <b>show</b> include
+
+       <b>--entire-thread=(true|false)</b>
+              If true, <b>notmuch</b> <b>show</b> outputs all messages in the thread of  any
+              message matching the search terms; if false, it outputs only the
+              matching messages. For <b>--format=json</b> and <b>--format=sexp</b> this  de‐
+              faults to true. For other formats, this defaults to false.
+
+       <b>--format=(text|json|sexp|mbox|raw)</b>
+
+              <b>text</b> <b>(default</b> <b>for</b> <b>messages)</b>
+                     The  default  plain-text format has all text-content MIME
+                     parts decoded. Various components in  the  output,  (<b>mes-</b>
+                     <b>sage</b>,  <b>header</b>,  <b>body</b>, <b>attachment</b>, and MIME <b>part</b>), will be
+                     delimited by easily-parsed markers. Each marker  consists
+                     of  a Control-L character (ASCII decimal 12), the name of
+                     the marker, and then either an opening or closing  brace,
+                     (&apos;{&apos;  or &apos;}&apos;), to either open or close the component. For
+                     a multipart MIME message, these parts will be nested.
+
+              <b>json</b>   The output is formatted with Javascript  Object  Notation
+                     (JSON).  This  format is more robust than the text format
+                     for automated processing. The nested structure of  multi‐
+                     part MIME messages is reflected in nested JSON output. By
+                     default JSON output includes all messages in  a  matching
+                     thread;  that  is,  by  default, <b>--format=json</b> sets <b>--en-</b>
+                     <b>tire-thread</b>. The caller can  disable  this  behaviour  by
+                     setting <b>--entire-thread=false</b>.  The JSON output is always
+                     encoded as UTF-8 and any message content included in  the
+                     output will be charset-converted to UTF-8.
+
+              <b>sexp</b>   The  output  is formatted as the Lisp s-expression (sexp)
+                     equivalent of the JSON format above. Objects are  format‐
+                     ted  as  property  lists whose keys are keywords (symbols
+                     preceded by a colon). True is formatted  as  <b>t</b>  and  both
+                     false  and  null  are  formatted as <b>nil</b>. As for JSON, the
+                     s-expression output is always encoded as UTF-8.
+
+              <b>mbox</b>   All matching messages are output in the traditional, Unix
+                     mbox  format  with  each message being prefixed by a line
+                     beginning with &quot;From &quot; and a blank line  separating  each
+                     message.  Lines  in  the  message  content beginning with
+                     &quot;From &quot; (preceded by zero or more &apos;&gt;&apos; characters) have an
+                     additional  &apos;&gt;&apos; character added. This reversible escaping
+                     is termed &quot;mboxrd&quot; format and described in detail here:
+                        <u>http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/mail-mbox-formats.html</u>
+
+              <b>raw</b> <b>(default</b> <b>if</b> <b>--part</b> <b>is</b> <b>given)</b>
+                     Write  the  raw bytes of the given MIME part of a message
+                     to standard out. For this format, it is an error to spec‐
+                     ify a query that matches more than one message.
+
+                     If  the  specified  part is a leaf part, this outputs the
+                     body of the part after performing content transfer decod‐
+                     ing  (but  no  charset  conversion). This is suitable for
+                     saving attachments, for example.
+
+                     For a multipart or message part, the output includes  the
+                     part  headers  as  well  as the body (including all child
+                     parts). No decoding is performed  because  multipart  and
+                     message  parts  cannot  have non-trivial content transfer
+                     encoding. Consumers of this may need  to  implement  MIME
+                     decoding and similar functions.
+
+       <b>--format-version=N</b>
+              Use  the specified structured output format version. This is in‐
+              tended for programs that invoke <a href="../notmuch-1/">notmuch</a>(1) internally. If  omit‐
+              ted, the latest supported version will be used.
+
+       <b>--part=N</b>
+              Output  the  single decoded MIME part N of a single message. The
+              search terms must match only a single message. Message parts are
+              numbered  in  a  depth-first walk of the message MIME structure,
+              and are identified in the &apos;json&apos;, &apos;sexp&apos; or &apos;text&apos;  output  for‐
+              mats.
+
+              Note that even a message with no MIME structure or a single body
+              part still has two MIME parts:  part  0  is  the  whole  message
+              (headers and body) and part 1 is just the body.
+
+       <b>--sort=(newest-first|oldest-first)</b>
+              This option can be used to present results in either chronologi‐
+              cal order (<b>oldest-first</b>) or reverse  chronological  order  (<b>new-</b>
+              <b>est-first</b>).
+
+              Only  threads  as  a  whole are reordered.  Ordering of messages
+              within each thread will not be affected by this flag, since that
+              order is always determined by the thread&apos;s replies.
+
+              By  default,  results will be displayed in reverse chronological
+              order, (that is, the newest results will be displayed first).
+
+       <b>--verify</b>
+              Compute and report the validity of any MIME cryptographic signa‐
+              tures  found  in  the selected content (e.g., &quot;multipart/signed&quot;
+              parts). Status of the signature will be reported (currently only
+              supported  with <b>--format=json</b> and <b>--format=sexp</b>), and the multi‐
+              part/signed part will be replaced by the signed data.
+
+       <b>--decrypt=(false|auto|true|stash)</b>
+              If <b>true</b>, decrypt any MIME encrypted parts found in the  selected
+              content  (e.g.,  &quot;multipart/encrypted&quot; parts). Status of the de‐
+              cryption will be reported (currently only supported with  <b>--for-</b>
+              <b>mat=json</b>  and  <b>--format=sexp</b>)  and  on successful decryption the
+              multipart/encrypted part will be replaced by the decrypted  con‐
+              tent.
+
+              <b>stash</b>  behaves like <b>true</b>, but upon successful decryption it will
+              also stash the message&apos;s session key in the database, and  index
+              the  cleartext  of the message, enabling automatic decryption in
+              the future.
+
+              If <b>auto</b>, and a session key is already  known  for  the  message,
+              then  it  will  be decrypted, but notmuch will not try to access
+              the user&apos;s keys.
+
+              Use <b>false</b> to avoid even automatic decryption.
+
+              Non-automatic decryption (<b>stash</b> or <b>true</b>, in  the  absence  of  a
+              stashed  session key) expects a functioning <b>gpg-agent</b>(1) to pro‐
+              vide any needed credentials. Without one,  the  decryption  will
+              fail.
+
+              Note: setting either <b>true</b> or <b>stash</b> here implies <b>--verify</b>.
+
+              Here is a table that summarizes each of these policies:
+
+                       ┌──────────────┬───────┬──────┬──────┬───────┐
+                       │              │ false │ auto │ true │ stash │
+                       ├──────────────┼───────┼──────┼──────┼───────┤
+                       │Show  cleart‐ │       │ X    │ X    │ X     │
+                       │ext  if  ses‐ │       │      │      │       │
+                       │sion  key  is │       │      │      │       │
+                       │already known │       │      │      │       │
+                       ├──────────────┼───────┼──────┼──────┼───────┤
+                       │Use    secret │       │      │ X    │ X     │
+                       │keys  to show │       │      │      │       │
+                       │cleartext     │       │      │      │       │
+                       ├──────────────┼───────┼──────┼──────┼───────┤
+                       │Stash     any │       │      │      │ X     │
+                       │newly  recov‐ │       │      │      │       │
+                       │ered  session │       │      │      │       │
+                       │keys,   rein‐ │       │      │      │       │
+                       │dexing   mes‐ │       │      │      │       │
+                       │sage if found │       │      │      │       │
+                       └──────────────┴───────┴──────┴──────┴───────┘
+
+              Note:  <b>--decrypt=stash</b>  requires  write  access to the database.
+              Otherwise, <b>notmuch</b> <b>show</b> operates entirely in read-only mode.
+
+              Default: <b>auto</b>
+
+       <b>--exclude=(true|false)</b>
+              Specify  whether  to  omit  threads  only  matching   search.ex‐
+              clude_tags  from the search results (the default) or not. In ei‐
+              ther case the excluded message will be marked with  the  exclude
+              flag  (except  when output=mbox when there is nowhere to put the
+              flag).
+
+              If <b>--entire-thread</b> is specified then complete  threads  are  re‐
+              turned  regardless (with the excluded flag being set when appro‐
+              priate) but threads that only match in an excluded  message  are
+              not returned when <b>--exclude=true.</b>
+
+              The default is <b>--exclude=true.</b>
+
+       <b>--body=(true|false)</b>
+              If  true  (the  default) <b>notmuch</b> <b>show</b> includes the bodies of the
+              messages  in  the  output;  if  false,   bodies   are   omitted.
+              <b>--body=false</b>  is  only  implemented  for the text, json and sexp
+              formats and it is incompatible with <b>--part</b> <b>&gt;</b> <b>0.</b>
+
+              This is useful if the caller only needs the headers as body-less
+              output is much faster and substantially smaller.
+
+       <b>--include-html</b>
+              Include  &quot;text/html&quot; parts as part of the output (currently only
+              supported with <b>--format=text</b>, <b>--format=json</b> and  <b>--format=sexp</b>).
+              By default, unless <b>--part=N</b> is used to select a specific part or
+              <b>--include-html</b> is used to include all &quot;text/html&quot; parts, no part
+              with content type &quot;text/html&quot; is included in the output.
+
+       A  common  use  of  <b>notmuch</b> <b>show</b> is to display a single thread of email
+       messages. For this, use a search term of &quot;thread:&lt;thread-id&gt;&quot; as can be
+       seen in the first column of output from the <a href="../notmuch-search-1/">notmuch-search</a>(1) command.
+</pre>
+
+
+
+
+<h2>CONFIGURATION</h2>
+
+
+<pre>
+       Structured  output (json / sexp) is influenced by the configuration op‐
+       tion show.extra_headers. See <a href="../notmuch-config-1/">notmuch-config</a>(1) for details.
+</pre>
+
+
+
+
+<h2>EXIT STATUS</h2>
+
+
+<pre>
+       This command supports the following special exit status codes
+
+       <b>20</b>     The requested format version is too old.
+
+       <b>21</b>     The requested format version is too new.
+</pre>
+
+
+
+
+<h2>SEE ALSO</h2>
+
+
+<pre>
+       <a href="../notmuch-1/">notmuch</a>(1), <a href="../notmuch-config-1/">notmuch-config</a>(1), <a href="../notmuch-count-1/">notmuch-count</a>(1), <a href="../notmuch-dump-1/">notmuch-dump</a>(1),  <a href="../notmuch-hooks-5/">not‐</a>
+       <a href="../notmuch-hooks-5/">much-hooks</a>(5),   <a href="../notmuch-insert-1/">notmuch-insert</a>(1),  <a href="../notmuch-new-1/">notmuch-new</a>(1),  <a href="../notmuch-reply-1/">notmuch-reply</a>(1),
+       <a href="../notmuch-restore-1/">notmuch-restore</a>(1),  <a href="../notmuch-search-1/">notmuch-search</a>(1),  <a href="../notmuch-search-terms-7/">notmuch-search-terms</a>(7),  <a href="../notmuch-tag-1/">not‐</a>
+       <a href="../notmuch-tag-1/">much-tag</a>(1)
+</pre>
+
+
+
+
+<h2>AUTHOR</h2>
+
+
+<pre>
+       Carl Worth and many others
+</pre>
+
+
+
+
+<h2>COPYRIGHT</h2>
+
+
+<pre>
+       2009-2022, Carl Worth and many others
+</pre>
+
+
+
+
+<h2>0.35</h2>
+
+
+</div>
+
+
+
+<div id="footer" class="pagefooter">
+<div id="pageinfo">
+
+
+
+
+
+
+
+
+
+<div class="pagedate">
+Last edited <span class="date">Sun Feb  6 13:51:11 2022</span>
+<!-- Created <span class="date">Fri Jun 22 00:08:32 2012</span> -->
+</div>
+
+</div><!-- #pageinfo -->
+
+<!-- from notmuch -->
+</div><!-- .pagefooter #footer -->
+
+</body>
+</html>

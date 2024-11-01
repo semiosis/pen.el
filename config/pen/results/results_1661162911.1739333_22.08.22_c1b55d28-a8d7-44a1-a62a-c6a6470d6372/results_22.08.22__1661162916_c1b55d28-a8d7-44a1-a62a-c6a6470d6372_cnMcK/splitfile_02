@@ -1,0 +1,19 @@
+ in a do block
+
+a <- readLn
+
+return a
+
+
+
+example2 :: IO ()
+
+example2 = do -- still good style
+
+a <- readLn
+
+return a
+
+
+
+main = do

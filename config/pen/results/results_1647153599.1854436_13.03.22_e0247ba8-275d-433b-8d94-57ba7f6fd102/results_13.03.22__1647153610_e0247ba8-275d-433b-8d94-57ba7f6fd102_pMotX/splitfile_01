@@ -1,0 +1,9 @@
+"transpose" is a built-in function in CLPFD.
+
+transpose(Ls, Ts) :-
+        must_be(list(list), Ls),
+        maplist(same_length(Ls), Ls),
+        (   Ls == [] -> Ts = []
+        ;   Ls = [L|Ls1],
+            transpose(Ls1, Ts0),
+            Ts = [[L|T]|Ts

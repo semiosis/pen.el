@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: Geth
+# contributor: Toptal & contributors
+# key: geth
+# --
+
+### Geth ###
+
+# .gitignore for Geth 0.4.16
+
+# caches
+/geth
+/keystore
+history
+
+# logs
+*.out
+*.log

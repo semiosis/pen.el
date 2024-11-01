@@ -1,0 +1,17 @@
+"undef" is a special scalar value that is used to indicate an undefined value.
+
+It is used in the following ways:
+
+To indicate a missing value in a scalar context
+
+To indicate an undefined value in a list context
+
+To indicate an undefined value in a hash context
+
+To indicate an undefined value in a boolean context
+
+To indicate an undefined value in a subroutine return value
+
+To indicate an undefined value in an expression
+
+To indicate an undefined value in

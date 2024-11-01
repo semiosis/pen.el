@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: QML
+# contributor: Toptal & contributors
+# key: qml
+# --
+
+### QML ###
+
+### QML ###
+# Cached binary representations of QML and JS files
+*.qmlc
+*.jsc

@@ -1,0 +1,7 @@
+1. This function takes a hash map as an argument
+2. It then reads the path from the hash map
+3. It then checks if the path is empty
+4. If it is empty, it returns a list of all the files in the root directory
+5. If it is not empty, it checks if the path contains a "."
+6. If the path contains a ".", it returns a list of all the files in the directory
+7. If the path does not

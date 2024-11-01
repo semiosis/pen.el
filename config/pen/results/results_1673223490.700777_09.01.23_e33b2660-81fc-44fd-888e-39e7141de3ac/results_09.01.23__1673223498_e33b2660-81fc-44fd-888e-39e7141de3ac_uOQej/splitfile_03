@@ -1,0 +1,19 @@
+"sable" is a tool for creating HTML documents from markdown and code.
+
+## Installation
+
+```
+pip install sable
+```
+
+## Usage
+
+```
+sable <markdown file>
+```
+
+## Example
+
+```
+sable README.md
+```

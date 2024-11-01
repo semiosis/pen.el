@@ -1,0 +1,162 @@
+Filebeat
+elastic Filebeat
+    A lightweight shipper for forwarding and
+    centralizing log data.
+
+fuzziness
+    Character-level edit-distance.
+
+    We can search for terms that are similar
+    to, but not exactly like our search terms,
+    using the “fuzzy” operator:
+
+        quikc~ brwn~ foks~
+
+    This uses the Damerau-Levenshtein distance
+    to find all terms with a maximum of two
+    changes, where a change is the insertion,
+    deletion or substitution of a single
+    character, or transposition of two
+    adjacent characters.
+    
+    The default edit distance is 2, but an
+    edit distance of 1 should be sufficient to
+    catch 80% of all human misspellings.
+    
+    It can be specified as:
+
+        quikc~1
+
+proximity searches
+~
+    Word-level edit-distance.
+
+    While a phrase query (eg "john smith")
+    expects all of the terms in exactly the
+    same order, a proximity query allows the
+    specified words to be further apart or in
+    a different order.
+    
+    In the same way that fuzzy queries can
+    specify a maximum edit distance for
+    characters in a word, a proximity search
+    allows us to specify a maximum edit
+    distance of words in a phrase:
+
+    "fox quick"~5
+
+    The closer the text in a field is to the
+    original order specified in the query
+    string, the more relevant that document is
+    considered to be.
+    
+    When compared to the above example query,
+    the phrase "quick fox" would be considered
+    more relevant than "quick brown fox".
+
+boost
+^
+    [operator]
+
+Boosting
+    Use the boost operator ^ to make one term
+    more relevant than another.
+
+    Example:
+        If we want to find all documents about
+        foxes, but we are especially
+        interested in quick foxes:
+
+        quick^2 fox
+
+Node
+    It refers to a single running instance of
+    Elasticsearch.
+    
+    Single physical and virtual server
+    accommodates multiple nodes depending upon
+    the capabilities of their physical
+    resources like RAM, storage and processing
+    power.
+
+Cluster
+    It is a collection of one or more nodes.
+    
+    Cluster provides collective indexing and
+    search capabilities across all the nodes
+    for entire data.
+
+Index
+    It is a collection of different type of
+    documents and their properties.
+    
+    Index also uses the concept of shards to
+    improve the performance.
+    
+    For example, a set of document contains
+    data of a social networking application.
+
+Document
+    It is a collection of fields in a specific
+    manner defined in JSON format.
+    
+    Every document belongs to a type and
+    resides inside an index.
+    
+    Every document is associated with a unique
+    identifier called the UID.
+
+Shard
+    Indexes are horizontally subdivided into
+    shards.
+    
+    This means each shard contains all the
+    properties of document but contains less
+    number of JSON objects than index.
+    
+    The horizontal separation makes shard an
+    independent node, which can be store in
+    any node.
+    
+    Primary shard is the original horizontal
+    part of an index and then these primary
+    shards are replicated into replica shards.
+
+Replicas
+    Elasticsearch allows a user to create
+    replicas of their indexes and shards.
+    
+    Replication not only helps in increasing
+    the availability of data in case of
+    failure, but also improves the performance
+    of searching by carrying out a parallel
+    search operation in these replicas.
+
+percolate
+percolate query
+    The percolate query can be used to match
+    queries stored in an index.
+    
+    The percolate query itself contains the
+    document that will be used as query to
+    match with the stored queries.
+
+    Percolation is an exciting and innovative
+    feature that singlehandedly blows Solr
+    right out of the water.
+
+    https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-percolate-query.html
+
+push replication
+    Near real-time replicas.
+
+routing
+    Route a query to a specific shard.
+    
+    This can be tweaked as a heuristic to
+    improve performance.
+    
+    A document is routed to a particular shard
+    in an index using the following formula:
+
+        shard_num = hash(_routing) % num_primary_shards

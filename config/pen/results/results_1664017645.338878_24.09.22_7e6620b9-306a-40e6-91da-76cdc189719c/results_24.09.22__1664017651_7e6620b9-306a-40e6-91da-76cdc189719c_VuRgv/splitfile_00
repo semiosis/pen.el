@@ -1,0 +1,5 @@
+
+  (loop [reversed-list list]
+    (let [group (take 2 reversed-list)]
+      (when (>= (count list) 1)
+        (recur (drop 2 reversed-list))

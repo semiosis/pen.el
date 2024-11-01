@@ -1,0 +1,6 @@
+cd /;  "ebible" "-m" "NASB" "John 8:31-32" "#" "<==" "sh"
+cd /;  "ebible" "-m" "NASB" "1 Corinthians 6:1-7" "#" "<==" "sh"
+cd /;  "ebible" "-m" "NASB" "Matthew 22:37-39" "#" "<==" "sh"
+cd /;  "ebible" "-m" "NASB" "Matthew 22:37-40" "#" "<==" "sh"
+cd /;  "ebible" "-m" "NASB" "Luke 9:26" "#" "<==" "sh"
+cd /;  "ebible" "-m" "NASB" "Isaiah 53" "#" "<==" "sh"

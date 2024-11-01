@@ -1,0 +1,1263 @@
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 14969
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Thu, 27 Oct 2022 23:01:17 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"635b0dbd-1a6e3"
+expires: Thu, 27 Oct 2022 23:15:45 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 081F:763E:28359B:2D7BFB:635B0EC9
+Accept-Ranges: bytes
+Date: Thu, 27 Oct 2022 23:05:49 GMT
+Via: 1.1 varnish
+Age: 4
+X-Served-By: cache-akl10326-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1666911949.130310,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 834c4966f40443333d94c8af10a1d21cd0d3572c
+
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Identification in Jesus // Bodacious Blog</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.102.0-DEV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Shane Mulligan" />
+    <meta name="description" content="" />
+
+    
+
+    <link rel="stylesheet" href="https://mullikine.github.io/css/main.min.178808c029f85e13e6346d71adff02307495f8017d54a432a80c2d85f6e2784c.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Identification in Jesus"/>
+<meta name="twitter:description" content="Work in progress
+I&rsquo;m writing as I am learning, but sometimes it&rsquo;s good to listen from a great teacher.
+I remember what it was like to listen to videos such as this. It was so cryptic.
+I want to annotate videos, to learn and teach.
+That will be fun.
+Videos Video 1 Identification 12 of 20 - Born Again out of Death - YouTube Derek Prince says, &ldquo;B stands for Basement, baptism, burial."/>
+
+    <meta property="og:title" content="Identification in Jesus" />
+<meta property="og:description" content="Work in progress
+I&rsquo;m writing as I am learning, but sometimes it&rsquo;s good to listen from a great teacher.
+I remember what it was like to listen to videos such as this. It was so cryptic.
+I want to annotate videos, to learn and teach.
+That will be fun.
+Videos Video 1 Identification 12 of 20 - Born Again out of Death - YouTube Derek Prince says, &ldquo;B stands for Basement, baptism, burial." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mullikine.github.io/posts/identification-in-jesus/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-21T00:00:00+13:00" />
+<meta property="article:modified_time" content="2022-10-21T00:00:00+13:00" /><meta property="og:site_name" content="Bodacious Blog" />
+
+
+
+    <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=78a0d1b0"></script>
+  </head>
+  <body>
+
+    <header class="app-header">
+
+<a href="https://mullikine.github.io"><img class="app-header-avatar" src="http://mullikine.github.io/fievel.png" alt="Shane Mulligan" /></a>
+      <h1>Bodacious Blog</h1>
+      
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://linkedin.com/in/shane-mulligan-811b942b/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+          <a target="_blank" href="https://gitlab.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gitlab">
+  <title>gitlab</title>
+  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/mullikine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+        <a href="https://mullikine.github.io/cv/">CV</a>
+      </div>
+<div class="highlights">
+<a href="https://semiosis.github.io/">Semiosis</a>
+
+<br />
+<a href="https://mullikine.github.io/posts/parables-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Papables of Jesus</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-jesus/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Glorious Gospel</a>
+<br />
+<a href="https://mullikine.github.io/posts/the-tapestry-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Tapestry of Truth</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-thomas/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Thomas</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-matthew/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Matthew</a>
+<br />
+<a href="https://mullikine.github.io/posts/dialogue-of-the-savior/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Dialogue of the Savior</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-philip/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Philip</a>
+<br />
+<a href="https://mullikine.github.io/posts/the-gospel-of-truth/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of Truth</a>
+<br />
+<a href="https://mullikine.github.io/posts/gospel-of-john/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Gospel of John</a>
+<br />
+<a href="https://mullikine.github.io/posts/living-water/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Living Water of Truth</a>
+<br />
+<a href="https://mullikine.github.io/posts/the-pathway-to-gnosis/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">The Pathway to Gnosis</a>
+<br />
+<a href="https://mullikine.github.io/posts/revelation-of-redemption/" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Revelation of Redemption</a>
+<br />
+<a href="https://mullikine.github.io/posts/seek-first-the-kingdom-of-god//" style="color: gold; text-shadow: 0em -0.1em 0.3em #6666ff;">Holy Gospel of Jesus Christ</a>
+<br />
+<a href="https://mullikine.github.io/posts/generating-hyperlinks-for-glossaries-and-other-parsers-in-emacs/">Hyperlink generation in emacs</a>
+<br />
+<a href="https://mullikine.github.io/posts/github-search-with-bigquery/">Searching GitHub with BigQuery</a>
+
+<br />
+<a href="https://mullikine.github.io/posts/review-of-the-case-for-learned-index-structures/">Case for Learned Index Structures</a>
+<br />
+<a href="https://mullikine.github.io/posts/arbitrary-interpreters-for-babel/">Arbitrary Interpreters for Babel</a>
+<br />
+<a href="https://mullikine.github.io/glossary.html">Glossary A-Z (502 topics)</a> <a href="https://github.com/mullikine/glossaries-gh">code</a>
+<br />
+<a href="https://mullikine.github.io/posts/pen/">Prompt Engineering in Emacs</a>
+<br />
+<a href="https://mullikine.github.io/posts/dwarf-fortress-macros-with-emacs-and-tmux/">Automating Dwarf Fortress</a>
+<br />
+<a href="https://mullikine.github.io/posts/review-of-the-illustrated-transformer/">The Illustrated Transformer</a>
+<br />
+<a href="https://mullikine.github.io/posts/practical-macros-in-racket-and-how-to-work-with-them/">Practical macros in Racket</a>
+<br />
+<a href="https://mullikine.github.io/posts/imaginary-programming-with-gpt-3/">Imaginary Programming</a>
+<br />
+<a href="https://mullikine.github.io/codelingo-vs-linters/summary/">CodeLingo vs Linters</a>
+<br />
+
+<div class="taglist">
+  
+<a class="tag big" href="https://mullikine.github.io/tags/astral/">astral</a>
+<a class="tag big" href="https://mullikine.github.io/tags/ethereum/">Ethereum</a>
+<a class="tag big" href="https://mullikine.github.io/tags/imaginary/">Imaginary</a>
+<a class="tag big" href="https://mullikine.github.io/tags/אα/">אα</a>
+<a class="tag big" href="https://mullikine.github.io/tags/alethiology/">alethiology</a>
+<a class="tag big" href="https://mullikine.github.io/tags/epistemology/">epistemology</a>
+<a class="tag big" href="https://mullikine.github.io/tags/janus/">𔒯</a>
+<a class="tag big" href="https://mullikine.github.io/tags/reversible/">⇌</a>
+<a class="tag big" href="https://mullikine.github.io/tags/𝑖λ/">𝑖λ</a>
+<a class="tag big" href="https://mullikine.github.io/tags/𝑖web/">𝑖web</a>
+<a class="tag big" href="https://mullikine.github.io/tags/semiosis/">࿋ Semiosis</a>
+<a class="tag big" href="https://mullikine.github.io/tags/𝑖i/">𝑖i</a>
+<a class="tag big" href="https://mullikine.github.io/tags/pen/">Pen.el</a>
+<a class="tag" href="https://mullikine.github.io/tags/gpt/">GPT (Generative Pre-trained Transformer)</a>
+<a class="tag" href="https://mullikine.github.io/tags/biosemiotics/">biosemiotics</a>
+<a class="tag" href="https://mullikine.github.io/tags/xenolinguistics/">xenolinguistics</a>
+<a class="tag big" href="https://mullikine.github.io/tags/emacs/">emacs</a>
+<a class="tag" href="https://mullikine.github.io/tags/elisp/">elisp</a>
+<a class="tag" href="https://mullikine.github.io/tags/racket/">racket</a>
+<a class="tag" href="https://mullikine.github.io/tags/haskell/">haskell</a>
+<a class="tag" href="https://mullikine.github.io/tags/nlp/">NLP</a>
+<a class="tag" href="https://mullikine.github.io/tags/docker/">docker</a>
+
+<a class="tag big" href="https://mullikine.github.io/tags/ir/">IR</a>
+<a class="tag" href="https://mullikine.github.io/tags/dalle/">dalle</a>
+<a class="tag" href="https://mullikine.github.io/tags/games/">games</a>
+<a class="tag" href="https://mullikine.github.io/tags/data/">data</a>
+<a class="tag" href="https://mullikine.github.io/tags/info/">info theory</a>
+<a class="tag" href="https://mullikine.github.io/tags/probability/">probability</a>
+<a class="tag" href="https://mullikine.github.io/tags/problog/">problog</a>
+<a class="tag big" href="https://mullikine.github.io/tags/shell/">shell</a>
+
+<a class="tag" href="https://mullikine.github.io/tags/tooling/">tooling</a>
+<a class="tag" href="https://mullikine.github.io/tags/iac/">IaC</a>
+
+
+
+<a class="tag" href="https://mullikine.github.io/tags/babel/">babel</a>
+<a class="tag" href="https://mullikine.github.io/tags/journal/">journal</a>
+
+
+<a class="tag" href="https://mullikine.github.io/tags/parsers/">parsers</a>
+
+
+<a class="tag" href="https://mullikine.github.io/tags/review/">review</a>
+<a class="tag" href="https://mullikine.github.io/tags/dl/">deep learning</a>
+<a class="tag" href="https://mullikine.github.io/tags/dsl/">DSL</a>
+<a class="tag" href="https://mullikine.github.io/tags/music/">music</a>
+<a class="tag big" href="https://mullikine.github.io/tags/surreal/">surreal</a>
+<a class="tag" href="https://mullikine.github.io/tags/df/">dwarf fortress</a>
+<a class="tag" href="https://mullikine.github.io/tags/spacy/">spacy</a>
+<a class="tag" href="https://mullikine.github.io/tags/latex/">latex</a>
+<a class="tag" href="https://mullikine.github.io/tags/nix/">Nix</a>
+<a class="tag" href="https://mullikine.github.io/tags/diagrams/">diagrams</a>
+<a class="tag big" href="https://mullikine.github.io/tags/faith/">faith</a>
+<a class="tag" href="https://mullikine.github.io/tags/valentinianism/">valentinianism</a>
+<a class="tag" href="https://mullikine.github.io/tags/gnostic/">gnostic</a>
+<a class="tag" href="https://mullikine.github.io/tags/python/">python</a>
+<a class="tag" href="https://mullikine.github.io/tags/vim/">vim</a>
+<a class="tag big" href="https://mullikine.github.io/tags/journal/">journal</a>
+<a class="tag" href="https://mullikine.github.io/tags/neural-engineering/">neural-engineering</a>
+<a class="tag" href="https://mullikine.github.io/tags/golang/">golang</a>
+<a class="tag" href="https://mullikine.github.io/tags/perl/">perl</a>
+<a class="tag" href="https://mullikine.github.io/tags/telco/">telco</a>
+<a class="tag" href="https://mullikine.github.io/tags/automation/">automation</a>
+<a class="tag" href="https://mullikine.github.io/tags/elasticsearch/">ELK</a>
+<a class="tag" href="https://mullikine.github.io/tags/optimisation/">optimisation</a>
+<a class="tag" href="https://mullikine.github.io/tags/release/">release</a>
+<a class="tag" href="https://mullikine.github.io/tags/dotnet/">.NET</a>
+<a class="tag" href="https://mullikine.github.io/tags/csharp/">csharp</a>
+<a class="tag" href="https://mullikine.github.io/tags/math/">math</a>
+<a class="tag" href="https://mullikine.github.io/tags/terminals/">term</a>
+<a class="tag big" href="https://mullikine.github.io/tags/terminals/">poetry</a>
+<a class="tag big" href="https://mullikine.github.io/tags/codegen/">code-gen</a>
+<a class="tag" href="https://mullikine.github.io/tags/rosie/">rosie</a>
+<a class="tag" href="https://mullikine.github.io/tags/terraform/">Terraform</a>
+<a class="tag" href="https://mullikine.github.io/tags/semmle/">Semmle</a>
+<a class="tag" href="https://mullikine.github.io/tags/expect/">tcl/expect</a>
+<a class="tag" href="https://mullikine.github.io/tags/solr/">solr</a>
+<a class="tag" href="https://mullikine.github.io/tags/transformer/">transformer</a>
+
+<a class="tag" href="https://mullikine.github.io/tags/microsoft/">Microsoft</a>
+<a class="tag" href="https://mullikine.github.io/tags/neuralink/">Neuralink</a>
+<a class="tag" href="https://mullikine.github.io/tags/openai/">OpenAI</a>
+<a class="tag" href="https://mullikine.github.io/tags/uber/">Uber</a>
+<a class="tag" href="https://mullikine.github.io/tags/aws/">Amazon</a>
+<a class="tag" href="https://mullikine.github.io/tags/github/">GitHub</a>
+<a class="tag" href="https://mullikine.github.io/tags/facebook/">Facebook</a>
+<a class="tag" href="https://mullikine.github.io/tags/kaggle/">Kaggle</a>
+<a class="tag" href="https://mullikine.github.io/tags/kaggle/">EleutherAI</a>
+
+</div>
+
+
+
+</div>
+<div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <div class="post-footer phone">
+      <p>
+        <a href="https://mullikine.github.io/">Latest articles</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://github.com/semiosis/pen.el">Pen.el</a>
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/tags/">Site Map</a>
+      </p>
+    </div>
+    <header class="post-header">
+      <h1 class ="post-title">Identification in Jesus</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Oct 21, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          19 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://mullikine.github.io/tags/faith/">faith</a><a class="tag" href="http://mullikine.github.io/tags/christianity/">christianity</a></div></div>
+    </header>
+    
+
+<link rel="stylesheet" type="text/css" href="https://mullikine.github.io/css/magit.css"/>
+
+<script src="https://mullikine.github.io/js/mathjax-config.js"></script>
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+    <div class="post-content">
+      <p><em><strong>Work in progress</strong></em></p>
+<p>I&rsquo;m writing as I am learning, but sometimes
+it&rsquo;s good to listen from a great teacher.</p>
+<p>I remember what it was like to listen to videos such as this.
+It was so cryptic.</p>
+<p>I want to annotate videos, to learn and teach.</p>
+<p>That will be fun.</p>
+<h2 id="videos">Videos</h2>
+<h3 id="video-1">Video 1</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=VoLaN3L6214">Identification 12 of 20 - Born Again out of Death - YouTube</a></li>
+</ul>
+<p>Derek Prince says, &ldquo;B stands for Basement, baptism, burial.&rdquo;</p>
+<p>Burial:</p>
+<ul>
+<li><a href="https://mullikine.github.io/posts/astral-projection/">Astral Projection Part 1 - Death with Jesus // Bodacious Blog</a>
+<ul>
+<li>God made me alive, when I was dead</li>
+</ul>
+</li>
+</ul>
+<p>Resurrection:</p>
+<ul>
+<li><a href="https://mullikine.github.io/posts/astral-projection-pt-2/">Astral Projection Part 2 - Sacred Kiss, Healing, Resurrection // Bodacious Blog</a>
+<ul>
+<li>God resurrected us</li>
+<li>The rebirth</li>
+</ul>
+</li>
+</ul>
+<p>But we can ascend to the heights:</p>
+<ul>
+<li><a href="https://mullikine.github.io/posts/astral-projection-pt-3/">Astral Projection Part 3 - The Images and Place of Life/Truth // Bodacious Blog</a>
+<ul>
+<li>Enthroned us: God seated us with Him
+<ul>
+<li>On the right hand: <a href="https://mullikine.github.io/posts/a-vision-of-sin/">A Vision of Purification from Sin, and of Jesus // Bodacious Blog</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>No, really! We&rsquo;re going up!</p>
+<ul>
+<li><a href="https://mullikine.github.io/posts/dialogue-of-the-savior/">Dialogue of the Savior // Bodacious Blog</a></li>
+</ul>
+<p>Subtitles:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">185
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">186
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">187
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">188
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">189
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">190
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">191
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">192
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">193
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">194
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">195
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">196
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">197
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">198
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>I&#39;ve been explaining that to identify with
+</span></span><span style="display:flex;"><span>someone means to make yourself one with
+</span></span><span style="display:flex;"><span>someone and that at the cross in his death
+</span></span><span style="display:flex;"><span>Jesus identified himself with us he was
+</span></span><span style="display:flex;"><span>identified with us each of us individually
+</span></span><span style="display:flex;"><span>with our whole Fallen human race collectively
+</span></span><span style="display:flex;"><span>he was the last Adam the entire evil
+</span></span><span style="display:flex;"><span>inheritance that rose out of Adam&#39;s sin
+</span></span><span style="display:flex;"><span>compounded by the sin of every subsequent
+</span></span><span style="display:flex;"><span>human being who has ever lived all that was
+</span></span><span style="display:flex;"><span>visited Upon Jesus Isaiah 53 6 the Lord made
+</span></span><span style="display:flex;"><span>to meet together upon Him Jesus the iniquity
+</span></span><span style="display:flex;"><span>of us all our rebellion and all its evil
+</span></span><span style="display:flex;"><span>consequences God brought Upon Jesus in that
+</span></span><span style="display:flex;"><span>moment of identification all the evil that was
+</span></span><span style="display:flex;"><span>due by Justice to us that in return the way
+</span></span><span style="display:flex;"><span>might be open for us to receive all the good
+</span></span><span style="display:flex;"><span>that was due to Jesus the Lord opened the way
+</span></span><span style="display:flex;"><span>for us to be identified on our side with Jesus
+</span></span><span style="display:flex;"><span>not only in his death but in all that followed
+</span></span><span style="display:flex;"><span>his death burial resurrection and even
+</span></span><span style="display:flex;"><span>Ascension to the very Throne of God and at the
+</span></span><span style="display:flex;"><span>end of my talk yesterday I used a little
+</span></span><span style="display:flex;"><span>example which I want to return to today the
+</span></span><span style="display:flex;"><span>example of the elevator I mentioned how I&#39;d
+</span></span><span style="display:flex;"><span>found myself in an elevator in a large Hotel
+</span></span><span style="display:flex;"><span>on the ground floor just getting ready to go
+</span></span><span style="display:flex;"><span>up and how I&#39;d looked at the buttons that
+</span></span><span style="display:flex;"><span>selected the floor and I saw that above one
+</span></span><span style="display:flex;"><span>where I was there was M which was for
+</span></span><span style="display:flex;"><span>mezzanine and then there was two and three and
+</span></span><span style="display:flex;"><span>four all the way up I believe to the 15th
+</span></span><span style="display:flex;"><span>floor which was the top and so I was there
+</span></span><span style="display:flex;"><span>meditating on the gospel I was in that City to
+</span></span><span style="display:flex;"><span>preach and as I looked at those buttons and
+</span></span><span style="display:flex;"><span>considered my position in the Elevate I
+</span></span><span style="display:flex;"><span>thought that&#39;s just like entering by faith
+</span></span><span style="display:flex;"><span>into Christ entering into the elevator and
+</span></span><span style="display:flex;"><span>once you&#39;re in the elevator you go wherever
+</span></span><span style="display:flex;"><span>the elevator takes you you&#39;re not dependent on
+</span></span><span style="display:flex;"><span>your own power to get there you just depend on
+</span></span><span style="display:flex;"><span>the elevator to take you and I thought that&#39;s
+</span></span><span style="display:flex;"><span>like being in Christ and then as I looked at
+</span></span><span style="display:flex;"><span>the buttons again I saw below one another
+</span></span><span style="display:flex;"><span>button which had a letter on it the letter b
+</span></span><span style="display:flex;"><span>and I inwardly was asking myself well what
+</span></span><span style="display:flex;"><span>does B stand for and it was really almost
+</span></span><span style="display:flex;"><span>comical it was like immediately the Holy
+</span></span><span style="display:flex;"><span>Spirit gave me an inward answer and he said
+</span></span><span style="display:flex;"><span>this b stands for basement baptism and barium
+</span></span><span style="display:flex;"><span>and I saw it so vividly when we step into
+</span></span><span style="display:flex;"><span>Christ we don&#39;t Begin by going up but we begin
+</span></span><span style="display:flex;"><span>by going down that&#39;s the whole Lord of
+</span></span><span style="display:flex;"><span>spiritual progress everywhere in the universe
+</span></span><span style="display:flex;"><span>if you want to go up you start by going down
+</span></span><span style="display:flex;"><span>so we step into Christ by faith and we go down
+</span></span><span style="display:flex;"><span>with Christ into the basement which is baptism
+</span></span><span style="display:flex;"><span>which is burial when identified with him in
+</span></span><span style="display:flex;"><span>his burial but out of his burial we enter into
+</span></span><span style="display:flex;"><span>his resurrection and then we just press
+</span></span><span style="display:flex;"><span>whichever button we want and we go up to that
+</span></span><span style="display:flex;"><span>I was sharing this with a friend of mine a
+</span></span><span style="display:flex;"><span>businessman in the city where I was preaching
+</span></span><span style="display:flex;"><span>and he made a rather good comment he said
+</span></span><span style="display:flex;"><span>brother Prince he said that&#39;s a very Vivid
+</span></span><span style="display:flex;"><span>picture and I was emphasizing how we could
+</span></span><span style="display:flex;"><span>select any floor and go where we wanted in the
+</span></span><span style="display:flex;"><span>elevator and he said brother Prince that&#39;s a
+</span></span><span style="display:flex;"><span>very Vivid picture but isn&#39;t it a tragedy that
+</span></span><span style="display:flex;"><span>so many Christians when they get into the
+</span></span><span style="display:flex;"><span>elevator they just press M for mezzanine and
+</span></span><span style="display:flex;"><span>get off at the next floor they never go to the
+</span></span><span style="display:flex;"><span>heights that are available in Christ and I&#39;ve
+</span></span><span style="display:flex;"><span>always carried that thought with me well today
+</span></span><span style="display:flex;"><span>I&#39;m going to show you how this truth that I&#39;ve
+</span></span><span style="display:flex;"><span>Illustrated from the elevator is more fully
+</span></span><span style="display:flex;"><span>unfolded in various passages of the New
+</span></span><span style="display:flex;"><span>Testament first of all I&#39;d like to turn to
+</span></span><span style="display:flex;"><span>Ephesians chapter 2 verses 4 through 6.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>because of his great love for us God who is
+</span></span><span style="display:flex;"><span>rich in Mercy made us alive with Christ even
+</span></span><span style="display:flex;"><span>when we were dead in transgressions It Is by
+</span></span><span style="display:flex;"><span>Grace you have been saved and God raised us up
+</span></span><span style="display:flex;"><span>with Christ and seated us with him in the
+</span></span><span style="display:flex;"><span>Heavenly Realms in Christ Jesus there&#39;s one
+</span></span><span style="display:flex;"><span>key word there which is the little word with
+</span></span><span style="display:flex;"><span>it&#39;s with Christ with Christ with Christ it&#39;s
+</span></span><span style="display:flex;"><span>our identification with Christ that makes all
+</span></span><span style="display:flex;"><span>the difference and in the light of that
+</span></span><span style="display:flex;"><span>identification it says that God brings us
+</span></span><span style="display:flex;"><span>through into three successive experiences that
+</span></span><span style="display:flex;"><span>we share with Jesus the first one is God made
+</span></span><span style="display:flex;"><span>us alive when we were dead in transgressions
+</span></span><span style="display:flex;"><span>and sins God made us a lie second God raised
+</span></span><span style="display:flex;"><span>us up he resurrected us but third it says God
+</span></span><span style="display:flex;"><span>seated us with him still with him now where is
+</span></span><span style="display:flex;"><span>Christ seated we know the answer he&#39;s Seated
+</span></span><span style="display:flex;"><span>on the throne with God so if we are seated
+</span></span><span style="display:flex;"><span>with him where are we we&#39;re on the throne
+</span></span><span style="display:flex;"><span>there&#39;s one translation the new English Bible
+</span></span><span style="display:flex;"><span>that says God enthroned us with him that&#39;s the
+</span></span><span style="display:flex;"><span>truth now that&#39;s where you can go in that
+</span></span><span style="display:flex;"><span>elevator if you press that button alas as my
+</span></span><span style="display:flex;"><span>friend said so many Christians never realized
+</span></span><span style="display:flex;"><span>the possibilities that are open to them
+</span></span><span style="display:flex;"><span>through their identification with Jesus but
+</span></span><span style="display:flex;"><span>the scripture has given us this that we can
+</span></span><span style="display:flex;"><span>lay a hold of God made us alive with Christ he
+</span></span><span style="display:flex;"><span>resurrected us with Christ and he enthroned us
+</span></span><span style="display:flex;"><span>with Christ in other words when we enter into
+</span></span><span style="display:flex;"><span>Christ through faith when we share with him
+</span></span><span style="display:flex;"><span>and his burial then we are entitled to share
+</span></span><span style="display:flex;"><span>with him in everything that followed barrier
+</span></span><span style="display:flex;"><span>in being made alive in being resurrected and
+</span></span><span style="display:flex;"><span>in being raised up to the throne of God isn&#39;t
+</span></span><span style="display:flex;"><span>that amazing isn&#39;t that stupendous I want to
+</span></span><span style="display:flex;"><span>show you this also in Colossians chapter 1
+</span></span><span style="display:flex;"><span>verses 15 through 18 which says a picture of
+</span></span><span style="display:flex;"><span>who Jesus is and what he did there are seven
+</span></span><span style="display:flex;"><span>unique aspects of Jesus unfolded five relate
+</span></span><span style="display:flex;"><span>to his eternal nature and two the remaining
+</span></span><span style="display:flex;"><span>two to his Redemptive work beginning in verse
+</span></span><span style="display:flex;"><span>15 he is the image of the invisible God that&#39;s
+</span></span><span style="display:flex;"><span>the first second he&#39;s the firstborn before all
+</span></span><span style="display:flex;"><span>creation third for in him all things were
+</span></span><span style="display:flex;"><span>created and then every created thing is listed
+</span></span><span style="display:flex;"><span>by categories so he created all things fourth
+</span></span><span style="display:flex;"><span>he is before all things he&#39;s eternally
+</span></span><span style="display:flex;"><span>existent he was never created he exists
+</span></span><span style="display:flex;"><span>eternally before all things were created and
+</span></span><span style="display:flex;"><span>fifth in him all things hold together there
+</span></span><span style="display:flex;"><span>are five uh Eternal facts about Jesus first is
+</span></span><span style="display:flex;"><span>the image of the invisible God second he&#39;s the
+</span></span><span style="display:flex;"><span>firstborn before all creation third he created
+</span></span><span style="display:flex;"><span>all things fourth he is he exists eternally
+</span></span><span style="display:flex;"><span>before all things and fifth in him all things
+</span></span><span style="display:flex;"><span>hold together he holds the whole universe
+</span></span><span style="display:flex;"><span>together now the last two statements that we
+</span></span><span style="display:flex;"><span>have not yet looked at apply to that which
+</span></span><span style="display:flex;"><span>followed his atoning sacrificial death Verse
+</span></span><span style="display:flex;"><span>18 of Colossians chapter 1 he is also head of
+</span></span><span style="display:flex;"><span>the body of the church and he is the beginning
+</span></span><span style="display:flex;"><span>the firstborn from the dead so the sixth fact
+</span></span><span style="display:flex;"><span>is that Jesus is the head of the body the body
+</span></span><span style="display:flex;"><span>is the church and the seventh that he&#39;s the
+</span></span><span style="display:flex;"><span>beginning of a new order because he&#39;s the
+</span></span><span style="display:flex;"><span>firstborn from the dead in other words death
+</span></span><span style="display:flex;"><span>was in a certain sense the womb out of which
+</span></span><span style="display:flex;"><span>God brought forth a totally new order Jesus
+</span></span><span style="display:flex;"><span>being the first one in this order the head of
+</span></span><span style="display:flex;"><span>the body now let me illustrate this from
+</span></span><span style="display:flex;"><span>nature in a very beautiful way I believe in a
+</span></span><span style="display:flex;"><span>natural birth what part of the body comes
+</span></span><span style="display:flex;"><span>forth first we all know it&#39;s the head but when
+</span></span><span style="display:flex;"><span>the head emerges we all know the body is going
+</span></span><span style="display:flex;"><span>to follow and so in this spiritual birth out
+</span></span><span style="display:flex;"><span>of death Jesus the head of the body emerged
+</span></span><span style="display:flex;"><span>first but what does that tell us that we who
+</span></span><span style="display:flex;"><span>are united with him as our head will follow
+</span></span><span style="display:flex;"><span>him in that birth into that New Order of
+</span></span><span style="display:flex;"><span>creation we&#39;ll follow him into all that he
+</span></span><span style="display:flex;"><span>entered into through death and Resurrection
+</span></span><span style="display:flex;"><span>from the dead so with Jesus as our hand we as
+</span></span><span style="display:flex;"><span>the members of the body United with him follow
+</span></span><span style="display:flex;"><span>him in rebirth out of death into a totally new
+</span></span><span style="display:flex;"><span>order a totally new life into a union with him
+</span></span><span style="display:flex;"><span>that takes us wherever he goes not only into
+</span></span><span style="display:flex;"><span>Resurrection but into Ascension into Heaven&#39;s
+</span></span><span style="display:flex;"><span>Glory into the place of authority at God&#39;s
+</span></span><span style="display:flex;"><span>right hand listen to how Peter expresses this
+</span></span><span style="display:flex;"><span>in First Peter chapter 1 verses 3 and 4.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>blessed be the God and father of our Lord
+</span></span><span style="display:flex;"><span>Jesus Christ who according to his great Mercy
+</span></span><span style="display:flex;"><span>has caused us to be born again to a Living
+</span></span><span style="display:flex;"><span>Hope through the resurrection of Jesus Christ
+</span></span><span style="display:flex;"><span>from the dead that&#39;s the essence of the
+</span></span><span style="display:flex;"><span>message we are born again through the
+</span></span><span style="display:flex;"><span>resurrection of Jesus Christ we are identified
+</span></span><span style="display:flex;"><span>with Jesus in his death his burial and then
+</span></span><span style="display:flex;"><span>his resurrection and his resurrection is
+</span></span><span style="display:flex;"><span>called a rebirth it&#39;s a birth out of the old
+</span></span><span style="display:flex;"><span>order into a new order a new way of life a new
+</span></span><span style="display:flex;"><span>kind of life and it says in connection with
+</span></span><span style="display:flex;"><span>this in the next verse of First Peter to
+</span></span><span style="display:flex;"><span>obtain an inheritance which is imperishable
+</span></span><span style="display:flex;"><span>and undefiled and will not fade away reserved
+</span></span><span style="display:flex;"><span>in heaven for you so through our
+</span></span><span style="display:flex;"><span>identification with Jesus we pass through
+</span></span><span style="display:flex;"><span>death we are born again through his
+</span></span><span style="display:flex;"><span>resurrection into a new life and into a new
+</span></span><span style="display:flex;"><span>order and this order is totally different
+</span></span><span style="display:flex;"><span>there are three words used to describe it all
+</span></span><span style="display:flex;"><span>of which are not true of the old order of life
+</span></span><span style="display:flex;"><span>with which we&#39;ve been familiar it&#39;s an
+</span></span><span style="display:flex;"><span>inheritance which is imperishable and
+</span></span><span style="display:flex;"><span>undefiled and will not fade away it cannot be
+</span></span><span style="display:flex;"><span>touched by corruption by Decay by the
+</span></span><span style="display:flex;"><span>contamination of sin it cannot be defiled it
+</span></span><span style="display:flex;"><span>will never fade it&#39;s not subject to all the
+</span></span><span style="display:flex;"><span>evil corrupting forces that we have been
+</span></span><span style="display:flex;"><span>familiar with all through our lives that have
+</span></span><span style="display:flex;"><span>pulled us down that have defeated us we&#39;ve
+</span></span><span style="display:flex;"><span>passed out of that realm into a new realm in
+</span></span><span style="display:flex;"><span>Jesus Through identification with him we&#39;ve
+</span></span><span style="display:flex;"><span>been born again to a Living Hope</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="video-2">Video 2</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vz9LR1gUGvU">Identification 14 of 20 - A Kingdom of Priests - YouTube</a></li>
+</ul>
+<p>Subtitles:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">185
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">186
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">187
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">188
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">189
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">190
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">191
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">192
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">193
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">194
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">195
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">196
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">197
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">198
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">208
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">209
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">210
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>our theme at this Easter season is
+</span></span><span style="display:flex;"><span>identification as it expresses the two-way
+</span></span><span style="display:flex;"><span>relationship between Jesus and those who
+</span></span><span style="display:flex;"><span>believe in him we&#39;ve seen this as the two
+</span></span><span style="display:flex;"><span>opposite sides of a coin on the one side the
+</span></span><span style="display:flex;"><span>identification of Jesus with us and on the
+</span></span><span style="display:flex;"><span>other side our identification with Jesus as
+</span></span><span style="display:flex;"><span>Jesus hung on the cross as the last Adam God
+</span></span><span style="display:flex;"><span>made to meet together upon him the iniquity
+</span></span><span style="display:flex;"><span>the rebellion of us all and all its evil
+</span></span><span style="display:flex;"><span>consequences Jesus bore them all in that one
+</span></span><span style="display:flex;"><span>great atoning sacrifice he was identified with
+</span></span><span style="display:flex;"><span>all the evil that was due to us that we in
+</span></span><span style="display:flex;"><span>return might be able to enter in through his
+</span></span><span style="display:flex;"><span>death into all the good that was his by
+</span></span><span style="display:flex;"><span>Eternal right on the second side that&#39;s our
+</span></span><span style="display:flex;"><span>identification with Jesus we&#39;ve seen that
+</span></span><span style="display:flex;"><span>through his death the way is open for us to
+</span></span><span style="display:flex;"><span>follow him in each successive experience that
+</span></span><span style="display:flex;"><span>came after his death his burial his
+</span></span><span style="display:flex;"><span>resurrection and his Ascension in Ephesians
+</span></span><span style="display:flex;"><span>chapter 2 Paul says God made us alive with
+</span></span><span style="display:flex;"><span>Christ raised us up or resurrected us with
+</span></span><span style="display:flex;"><span>Christ and then it says made us sit together
+</span></span><span style="display:flex;"><span>with Christ I pointed out to you that Christ
+</span></span><span style="display:flex;"><span>is sitting on the throne with his father and
+</span></span><span style="display:flex;"><span>the new English Bible beautifully translates
+</span></span><span style="display:flex;"><span>that last phrase God enthroned us together
+</span></span><span style="display:flex;"><span>with Christ so when by faith we identify
+</span></span><span style="display:flex;"><span>ourselves with Jesus in his death for our sins
+</span></span><span style="display:flex;"><span>and we publicly identify ourselves with him in
+</span></span><span style="display:flex;"><span>his burial through our baptism then the way is
+</span></span><span style="display:flex;"><span>open for us to follow into everything that
+</span></span><span style="display:flex;"><span>succeeds we&#39;re Made Alive we&#39;re resurrected
+</span></span><span style="display:flex;"><span>and we are enthroned together with Jesus in my
+</span></span><span style="display:flex;"><span>talk yesterday I explained how this works out
+</span></span><span style="display:flex;"><span>practically in our daily living I quoted the
+</span></span><span style="display:flex;"><span>words of Jesus on the Resurrection Sunday
+</span></span><span style="display:flex;"><span>evening spoken to his disciples there when he
+</span></span><span style="display:flex;"><span>said peace be with you as the father has sent
+</span></span><span style="display:flex;"><span>me I am sending you just as Jesus was the
+</span></span><span style="display:flex;"><span>personal representative of the father on Earth
+</span></span><span style="display:flex;"><span>so before he went back to the Father in Heaven
+</span></span><span style="display:flex;"><span>he appointed his disciples to be his personal
+</span></span><span style="display:flex;"><span>Representatives on Earth they were related to
+</span></span><span style="display:flex;"><span>Jesus in the same way that Jesus was related
+</span></span><span style="display:flex;"><span>to the father and I pointed out three things
+</span></span><span style="display:flex;"><span>about the relationship of Jesus to the father
+</span></span><span style="display:flex;"><span>that Jesus did not speak his own words he
+</span></span><span style="display:flex;"><span>spoke words given by the father it was the
+</span></span><span style="display:flex;"><span>father in Jesus who did the works and that
+</span></span><span style="display:flex;"><span>those who had seen Jesus had seen the father
+</span></span><span style="display:flex;"><span>and I pointed out these should all apply to us
+</span></span><span style="display:flex;"><span>we should not speak our own words but the
+</span></span><span style="display:flex;"><span>words of Jesus it should not be we who do it
+</span></span><span style="display:flex;"><span>but Jesus dwelling in us and that anyone who
+</span></span><span style="display:flex;"><span>has seen us should in that have seen Jesus
+</span></span><span style="display:flex;"><span>today I want to take this one step further to
+</span></span><span style="display:flex;"><span>show you how we are identified not only with
+</span></span><span style="display:flex;"><span>the Resurrection Life and Ministry of Jesus
+</span></span><span style="display:flex;"><span>but also with his Ascension life and his
+</span></span><span style="display:flex;"><span>ministry in heaven you see When Jesus ascended
+</span></span><span style="display:flex;"><span>to heaven and took his place on the throne
+</span></span><span style="display:flex;"><span>with the father he entered into his two
+</span></span><span style="display:flex;"><span>supreme unique and final Ministries he became
+</span></span><span style="display:flex;"><span>king and priest and in this also we are
+</span></span><span style="display:flex;"><span>invited to identify ourselves with Jesus I&#39;ll
+</span></span><span style="display:flex;"><span>read a couple of passages from The Book of
+</span></span><span style="display:flex;"><span>Revelation which expressed this truth
+</span></span><span style="display:flex;"><span>Revelation 1 verses 5 and 6.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>to him who loves us and has freed us from our
+</span></span><span style="display:flex;"><span>sins by his blood and has made us to be a
+</span></span><span style="display:flex;"><span>kingdom and priest to serve his God and Father
+</span></span><span style="display:flex;"><span>to him be glory and power forever and ever
+</span></span><span style="display:flex;"><span>amen notice that when Jesus has freed us from
+</span></span><span style="display:flex;"><span>our sins by his own blood by that very act he
+</span></span><span style="display:flex;"><span>has made us to be a kingdom and Priests to God
+</span></span><span style="display:flex;"><span>and the father or Kings and Priests or a
+</span></span><span style="display:flex;"><span>kingdom of priests the same is brought out
+</span></span><span style="display:flex;"><span>again in Revelation 5 9 and 10.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>they sang a new song you are worthy to take
+</span></span><span style="display:flex;"><span>the scroll and to open its seals because these
+</span></span><span style="display:flex;"><span>words are addressed to Jesus because you were
+</span></span><span style="display:flex;"><span>slain and with your blood you purchased men
+</span></span><span style="display:flex;"><span>for God from every tribe and language and
+</span></span><span style="display:flex;"><span>people and Nation you have made them to be a
+</span></span><span style="display:flex;"><span>kingdom and priest to serve our god notice
+</span></span><span style="display:flex;"><span>when we are purchased or Redeemed by the blood
+</span></span><span style="display:flex;"><span>of Jesus through that we are made to be a
+</span></span><span style="display:flex;"><span>kingdom and Priests or a kingdom of priests to
+</span></span><span style="display:flex;"><span>God and then in First Peter chapter 2 verse 9
+</span></span><span style="display:flex;"><span>Peter States it very briefly and clearly
+</span></span><span style="display:flex;"><span>writing to Believers you are a chosen people a
+</span></span><span style="display:flex;"><span>royal priesthood a kingly priesthood you are
+</span></span><span style="display:flex;"><span>Kings and Priests a kingdom of priests as I&#39;ve
+</span></span><span style="display:flex;"><span>said already these are the two ministries of
+</span></span><span style="display:flex;"><span>Jesus in eternity at the throne he rules as
+</span></span><span style="display:flex;"><span>king he intercedes as priest what are the
+</span></span><span style="display:flex;"><span>special particular responsibilities of Kings
+</span></span><span style="display:flex;"><span>and Priests I think it&#39;s pretty clear with
+</span></span><span style="display:flex;"><span>regard to Kings the responsibility the task of
+</span></span><span style="display:flex;"><span>a king is to rule many people don&#39;t so clearly
+</span></span><span style="display:flex;"><span>see the task of a priest but it&#39;s made clear
+</span></span><span style="display:flex;"><span>in scripture the responsibility of priests is
+</span></span><span style="display:flex;"><span>to offer sacrifices only priests could offer
+</span></span><span style="display:flex;"><span>sacrifices to God in God&#39;s order so we are
+</span></span><span style="display:flex;"><span>made Kings to rule and Priests to offer
+</span></span><span style="display:flex;"><span>sacrifices with regard to our offering
+</span></span><span style="display:flex;"><span>sacrifices as priests I just quote another
+</span></span><span style="display:flex;"><span>passage from First Peter chapter 2 verse 5
+</span></span><span style="display:flex;"><span>just a few verses above the one already quoted
+</span></span><span style="display:flex;"><span>which said we are a chosen people a royal
+</span></span><span style="display:flex;"><span>priesthood in First Peter 2 5 he says this you
+</span></span><span style="display:flex;"><span>also like living stones are being built into a
+</span></span><span style="display:flex;"><span>spiritual house to be a holy priesthood
+</span></span><span style="display:flex;"><span>offering spiritual sacrifices acceptable to
+</span></span><span style="display:flex;"><span>God through Jesus Christ notice that that
+</span></span><span style="display:flex;"><span>moment we are called a holy priesthood the
+</span></span><span style="display:flex;"><span>next truth that comes out is that as priests
+</span></span><span style="display:flex;"><span>we must have sacrifices to offer to God
+</span></span><span style="display:flex;"><span>because that is the special Ministry confined
+</span></span><span style="display:flex;"><span>to priests to be able to offer sacrifices to
+</span></span><span style="display:flex;"><span>God and Peter says their spiritual sacrifices
+</span></span><span style="display:flex;"><span>in other words they&#39;re not like the sacrifices
+</span></span><span style="display:flex;"><span>of the Mosaic law they&#39;re not animals but we
+</span></span><span style="display:flex;"><span>offer spiritual sacrifices and particularly we
+</span></span><span style="display:flex;"><span>follow the example of Jesus who in heaven
+</span></span><span style="display:flex;"><span>offers to God the spiritual sacrifice of his
+</span></span><span style="display:flex;"><span>intercession and prayer on our behalf for it
+</span></span><span style="display:flex;"><span>says he ever liveth that he may make
+</span></span><span style="display:flex;"><span>intercession for those who come to God through
+</span></span><span style="display:flex;"><span>him you see Jesus Earthly Ministry only lasted
+</span></span><span style="display:flex;"><span>three and a half years but his ministry as a
+</span></span><span style="display:flex;"><span>king and a priest has already lasted nearly
+</span></span><span style="display:flex;"><span>two thousand years and it&#39;s going to go on
+</span></span><span style="display:flex;"><span>throughout eternity and we&#39;re invited not only
+</span></span><span style="display:flex;"><span>to share with Jesus his Earthly Ministry but
+</span></span><span style="display:flex;"><span>through our identification with him to enter
+</span></span><span style="display:flex;"><span>into his eternal Heavenly ministry as Kings
+</span></span><span style="display:flex;"><span>and Priests spiritually our identification
+</span></span><span style="display:flex;"><span>with Jesus makes us already citizens of the
+</span></span><span style="display:flex;"><span>Heavenly Zone this is not something that&#39;s
+</span></span><span style="display:flex;"><span>going to happen it&#39;s something that has
+</span></span><span style="display:flex;"><span>already taken place through our identification
+</span></span><span style="display:flex;"><span>with Jesus wherever you&#39;re listening right now
+</span></span><span style="display:flex;"><span>you may be in your kitchen you may be in your
+</span></span><span style="display:flex;"><span>living room you may be in your automobile you
+</span></span><span style="display:flex;"><span>may be in a factory that&#39;s your Earthly
+</span></span><span style="display:flex;"><span>location that&#39;s the location of your body you
+</span></span><span style="display:flex;"><span>may not realize it but your spirit has another
+</span></span><span style="display:flex;"><span>location your spirit is with Jesus your spirit
+</span></span><span style="display:flex;"><span>is on the throne in him you&#39;re already come to
+</span></span><span style="display:flex;"><span>the Mount Zion the Heavenly Zion this is so
+</span></span><span style="display:flex;"><span>beautifully stated in Hebrews chapter 12
+</span></span><span style="display:flex;"><span>verses 22-24 I want you to notice the tense
+</span></span><span style="display:flex;"><span>but you have come to Mount Zion this is
+</span></span><span style="display:flex;"><span>written to Believers on Earth but it doesn&#39;t
+</span></span><span style="display:flex;"><span>say you&#39;re going to come it says you have come
+</span></span><span style="display:flex;"><span>to Mount Zion to the Heavenly Jerusalem the
+</span></span><span style="display:flex;"><span>city of the Living God you have come to
+</span></span><span style="display:flex;"><span>thousands upon thousands of Angels in joyful
+</span></span><span style="display:flex;"><span>assembly to the Church of the firstborn whose
+</span></span><span style="display:flex;"><span>names are written in heaven there&#39;s a great
+</span></span><span style="display:flex;"><span>assembly of angels and there is also the
+</span></span><span style="display:flex;"><span>Church of the firstborn all those who&#39;ve been
+</span></span><span style="display:flex;"><span>born again out of death into a new creation
+</span></span><span style="display:flex;"><span>through faith in Jesus Christ the true church
+</span></span><span style="display:flex;"><span>is there in spirit you have come to God the
+</span></span><span style="display:flex;"><span>judge of all men to the spirits of righteous
+</span></span><span style="display:flex;"><span>men made perfect to Jesus the mediator of a
+</span></span><span style="display:flex;"><span>new covenant and to the sprinkled blood that
+</span></span><span style="display:flex;"><span>speaks a better word than the blood of Abel so
+</span></span><span style="display:flex;"><span>that&#39;s our spiritual location we&#39;re already
+</span></span><span style="display:flex;"><span>there in that glorious assembly with the
+</span></span><span style="display:flex;"><span>angels and all the firstborn in the Heavenly
+</span></span><span style="display:flex;"><span>Zion and out of the Heavenly Zion through our
+</span></span><span style="display:flex;"><span>identification with Jesus we rule on God&#39;s
+</span></span><span style="display:flex;"><span>behalf through our prayers we&#39;re a kingdom of
+</span></span><span style="display:flex;"><span>priests We Rule through prayer this is vividly
+</span></span><span style="display:flex;"><span>stated in Psalm 110 verses 1 and 2.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>the Lord says to my Lord sit at my right hand
+</span></span><span style="display:flex;"><span>until I make your enemies a footstool for your
+</span></span><span style="display:flex;"><span>feet that&#39;s perhaps one of the most quoted
+</span></span><span style="display:flex;"><span>passages of the Old Testament in the new and
+</span></span><span style="display:flex;"><span>it&#39;s always applied to Jesus God the Father
+</span></span><span style="display:flex;"><span>invited Jesus Christ the son our Lord to sit
+</span></span><span style="display:flex;"><span>at his right hand until his Dominion is
+</span></span><span style="display:flex;"><span>established over all his enemies the next
+</span></span><span style="display:flex;"><span>verse says the Lord will extend your Mighty
+</span></span><span style="display:flex;"><span>scepter from Zion rule in the midst of your
+</span></span><span style="display:flex;"><span>enemies you see Jesus is already ruling
+</span></span><span style="display:flex;"><span>although the enemies are still there and the
+</span></span><span style="display:flex;"><span>scepter of his authority is extended out of
+</span></span><span style="display:flex;"><span>Zion that&#39;s a spiritual scepter and as we take
+</span></span><span style="display:flex;"><span>our place in Zion through identification with
+</span></span><span style="display:flex;"><span>Jesus on the throne then through our prayers
+</span></span><span style="display:flex;"><span>in the power of the Holy Spirit we extend that
+</span></span><span style="display:flex;"><span>scepter of his kingdom over the Earth we
+</span></span><span style="display:flex;"><span>become identified with Jesus in his authority
+</span></span><span style="display:flex;"><span>over the Nations through our prayers we
+</span></span><span style="display:flex;"><span>exercise that Authority the rod of authority
+</span></span><span style="display:flex;"><span>is placed in the hands of God&#39;s people as they
+</span></span><span style="display:flex;"><span>take their place in Zion and out of Zion the
+</span></span><span style="display:flex;"><span>rod of authority Goes Forth over the nations
+</span></span><span style="display:flex;"><span>of the earth and we are thus identified with
+</span></span><span style="display:flex;"><span>Jesus even now in his two great final
+</span></span><span style="display:flex;"><span>Ministries as king and priest</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+    </div>
+    <div class="post-colophon">
+        Thanks for reading!
+        <br />
+        If this article appears incomplete, it may be intentional. Try prompting for a continuation.
+    </div>
+    <div class="post-footer">
+        <p>
+        <a href="https://mullikine.github.io/">Latest articles</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/about/">About this weblog</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://asciinema.org/~mullikine">Recordings</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/posts/the-pathway-to-gnosis/">How I met God</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/posts/statement-of-faith/">Statement of Faith</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/posts/dream-resume/">Dream Resumé</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/posts/blogs-and-vlogs/">Blogs and Vlogs</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/cv/">CV</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://github.com/semiosis/pen.el">Pen.el</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/tags/imaginary-programming">Im λ</a>
+        &nbsp;
+        ⚔
+        &nbsp;
+        <a href="https://mullikine.github.io/tags/">Site Map</a>
+        </p>
+    </div>
+  </article>
+
+    </main>
+
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/af7068a2-df42-4f2c-a3bb-688311904992.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+
+  </body>
+</html>

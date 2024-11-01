@@ -1,0 +1,4 @@
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com;  "catppt" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com/lyrics/umh096.ppt" "#" "<==" "firefox-esr"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com;  "catppt" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com/lyrics/umh096.ppt" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com;  "catppt" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com/lyrics/umh096.ppt" "#" "<==" "zsh"
+cd /volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com;  "catppt" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-hymnsite-com-/www.hymnsite.com/lyrics/umh096.ppt" "#" "<==" "zsh"

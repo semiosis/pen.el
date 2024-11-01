@@ -1,0 +1,76 @@
+Create a transient command."
+  (interactive "sName: \nsMethods: \nsBindings: ")
+  (let ((transient-prefix-map (make-sparse-keymap)))
+    (define-key transient-prefix-map (kbd "C-x") 'transient-quit-one)
+    (define-key transient-prefix-map (kbd "C-q") 'transient-quit-all)
+    (define-transient-command name ()
+      "docstring"
+      :transient-suffix 'transient-common-commands
+      :transient-non-suffix 'transient-common-commands
+      :transient-prefix transient-prefix-map
+      :transient-infix transient-prefix-map
+      :transient-suffix-format " [%s]"
+      :transient-non-suffix-format " [%s]"
+      :transient-show-common-commands nil
+      :transient-show-common-commands-in-help t
+      :transient-history t
+      :transient-history-file "~/.emacs.d/transient/history"
+      :transient-history-limit 10
+      :transient-keymap transient-prefix-map
+      :transient-keymap-alist
+      '(((nil . "C-x") . transient-quit-one)
+        ((nil . "C-q") . transient-quit-all))
+      :transient-suffixes
+      (list
+       (list "m" "methods"
+             (lambda ()
+               (interactive)
+               (transient-append-suffix 'transient-common-commands "m"
+                                        (list '("m" "methods" methods))))))
+      :transient-non-suffixes
+      (list
+       (list "b" "bindings"
+             (lambda ()
+               (interactive)
+               (transient-append-suffix 'transient-common-commands "b"
+                                        (list '("b" "bindings" bindings))))))
+      :transient-common-commands
+      (list
+       (list "c" "common"
+             (lambda ()
+               (interactive)
+               (transient-append-suffix 'transient-common-commands "c"
+                                        (list '("c" "common" "common"))))))
+      :transient-suffix-put
+      (lambda (suffix onoff)
+        (setq transient-show-common-commands onoff))
+      :transient-non-suffix-put
+      (lambda (suffix onoff)
+        (setq transient-show-common-commands onoff))
+      :transient-suffix-format
+      (lambda (suffix)
+        (let ((key (plist-get (nth 0 suffix) :key)))
+          (format " [%s]" (or (and (stringp key) key)
+                              (and (vectorp key) (key-description key))))))
+      :transient-non-suffix-format
+      (lambda (suffix)
+        (let ((key (plist-get (nth 0 suffix) :key)))
+          (format " [%s]" (or (and (stringp key) key)
+                              (and (vectorp key) (key-description key))))))
+      :transient-format-suffix
+      (lambda (suffix)
+        (let ((key (plist-get (nth 0 suffix) :key)))
+          (format " [%s]" (or (and (stringp key) key)
+                              (and (vectorp key) (key-description key))))))
+      :transient-format-non-suffix
+      (lambda (suffix)
+        (let ((key (plist-get (nth 0 suffix) :key)))
+          (format " [%s]" (or (and (stringp key) key)
+                              (and (vectorp key) (key-description key))))))
+      :transient-setup
+      (lambda (obj)
+        (transient-setup obj)
+        (setq transient-show-common-commands t))
+      :transient-suffix
+      (lambda (obj)
+        (let ((obj (transient--derive-

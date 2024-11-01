@@ -1,0 +1,96 @@
+VMware vSphere
+    VMware's cloud computing virtualization
+    platform.
+    
+    vSphere is a VMware cloud computing
+    platform for virtualization.
+
+FaaS
+Function as a Service
+
+openFaaS
+    Makes it easy for developers to deploy
+    event-driven functions and microservices
+    to k8s without repetitive, boiler-plate
+    coding.
+    
+    Package your code or an existing binary in
+    a Docker image to get a highly scalable
+    endpoint with auto-scaling and metrics.
+
+cloudinit
+    https://cloudinit.readthedocs.io/en/latest/
+
+    The industry standard multi-distribution
+    method for cross-platform cloud instance
+    initialization. It is supported across all
+    major public cloud providers, provisioning
+    systems for private cloud infrastructure,
+    and bare-metal installations.
+
+The Cloud Native Computing Foundation
+CNCF
+    A Linux Foundation project that was
+    founded in 2015 to help advance container
+    technology and align the tech industry
+    around its evolution.
+
+CNI
+Cloud native infrastructure
+    I coined this term.
+
+drone
+    https://docs.drone.io/pipeline/overview/
+
+    a modern CICD platform that empowers busy
+    teams to automate their build, test and
+    release workflows.
+    
+    Teams that harness Drone release software
+    more frequently and with fewer bugs.
+
+    https://docs.drone.io/pipeline/docker/examples/languages/python/
+
+Infrastructure automation
+    Automate provisioning, compliance and
+    management of cloud infrastructure using a
+    common workflow.
+
+    Example:
+    - Terraform
+
+Security automation
+    Manage secrets and protect sensitive data
+    based on user and workload identity.
+
+    Example:
+    - Vault
+
+Networking automation
+    Accelerate application delivery by
+    automating the network, including physical
+    devices, virtual appliances, and
+    distributed service mesh.
+
+    Example
+    - Consul
+
+Application automation
+    Deploy any application and iterate safely
+    with progressive delivery, failover
+    strategies, and integrated security and
+    network.
+
+    Example
+    - Nomad
+
+multitenancy
+shared hosting
+    A software architecture where a single
+    software instance can serve multiple,
+    distinct user groups.
+    
+    In cloud computing, multitenancy can also
+    refer to shared hosting, in which server
+    resources are divided among different
+    customers.

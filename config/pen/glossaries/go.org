@@ -1,0 +1,145 @@
+* [#A] goroutines
+Easy threads.
+
+[[gr:goroutines]]
+
+* variadic arguments
+Where a is the slice, and i is the index of the element you want to delete:
+
+#+BEGIN_SRC go
+  a = append(a[:i], a[i+1:]...)
+#+END_SRC
+... is syntax for variadic arguments in Go.
+
+Basically, when defining a function it puts
+all the arguments that you pass into one slice
+of that type. By doing that, you can pass as
+many arguments as you want (for example,
+fmt.Println can take as many arguments as you
+want).
+
+Now, when calling a function, ... does the
+opposite: it unpacks a slice and passes them
+as separate arguments to a variadic function.
+
+So what this line does:
+
+#+BEGIN_SRC sh
+  a = append(a[:0], a[1:]...)
+#+END_SRC
+is essentially:
+
+#+BEGIN_SRC go
+  a = append(a[:0], a[1], a[2])
+#+END_SRC
+Now, you may be wondering, why not just do
+
+#+BEGIN_SRC go
+  a = append(a[:1]...)
+#+END_SRC
+Well, the function definition of append is
+
+#+BEGIN_SRC go
+  func append(slice []Type, elems ...Type) []Type
+#+END_SRC
+
+So the first argument has to be a slice of the
+correct type, the second argument is the
+variadic, so we pass in an empty slice, and
+then unpack the rest of the slice to fill in
+the arguments.
+
+* [#A] channels -- useful. Easy concurrency / thread synchronization
+Used by goroutines to bring synchronization.
+
+[[gr:go channels]]
+
+A typed conduit through which you can send and receive values with the
+channel operator, <-.
+
+#+BEGIN_SRC go
+  ch <- v    // Send v to channel ch.
+  v := <-ch  // Receive from ch, and
+             // assign value to v.
+#+END_SRC
+
+(The data flows in the direction of the arrow.)
+
+Like maps and slices, channels must be created before use:
+
+#+BEGIN_SRC sh
+  ch := make(chan int)
+#+END_SRC
+
+** Default behavior
+Send and receives blocks until the other side is ready.
+
+*** Killer feature
+This allows goroutines to synchronize without explicit locks or condition variables.
+
+** example
+
+#+BEGIN_SRC go
+  package main
+
+  import "fmt"
+          sum := 0
+          for _, v := range s {
+                  sum += v
+          }
+          c <- sum // send sum to c
+  }
+
+  func main() {
+          s := []int{7, 2, 8, -9, 4, 0}
+
+          c := make(chan int)
+
+          // Sums the numbers in a slice, distributing the work between two goroutines.
+          go sum(s[:len(s)/2], c)
+          go sum(s[len(s)/2:], c)
+          x, y := <-c, <-c // receive from c
+
+          // Once both goroutines have completed their computation, it calculates the final result.
+          fmt.Println(x, y, x+y)
+  }
+#+END_SRC
+
+* Naked return
+#+BEGIN_SRC go
+  func ReturnId() (id int, err error) {
+     id = 10
+     return
+  }
+#+END_SRC
+
+This is what is called a naked return.
+
+I have removed the arguments from the return
+statement.
+
+The Go compiler automatically returns the
+current values in the return arguments local
+variables.
+
+Though this is really cool you need to watch
+for shadowing:
+
+#+BEGIN_SRC go
+  func ReturnId() (id int, err error) {
+     id = 10
+
+     if id == 10 {
+        err := fmt.Errorf("Invalid Id\n")
+        return
+     }
+
+     return
+  }
+#+END_SRC
+
+If you try to compile this you will get the following compiler error:
+
+#+BEGIN_SRC text
+  err is shadowed during return
+#+END_SRC
